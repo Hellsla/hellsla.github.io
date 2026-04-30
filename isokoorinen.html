@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isokoorinen tilanmuutos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Caveat', cursive; background: #ffffff; color: #171717; min-height: 100vh; }
+    .scene { display: flex; flex-direction: column; align-items: center; padding: 18px 12px 16px; gap: 12px; }
+    .canvas-wrap { width: 520px; height: 440px; background: #ffffff; }
+    canvas { display: block; }
+    .controls { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 620px; }
+    .slider-row { display: flex; align-items: center; gap: 14px; width: 100%; }
+    .mode-tag {
+      font-family: 'Caveat', cursive; font-size: 28px; font-weight: 700;
+      padding: 4px 14px; border-radius: 7px 10px 8px 9px;
+      border: 3px solid #141414; white-space: nowrap;
+      background: #ffffff; box-shadow: 2px 3px 0 rgba(0,0,0,0.08);
+    }
+    .mode-cold  { color:#0d66a7; transform:rotate(-1.4deg); background-image:repeating-linear-gradient(-18deg,rgba(21,135,212,0.16) 0 2px,transparent 2px 7px); }
+    .mode-hot   { color:#c53226; transform:rotate(1.2deg);  background-image:repeating-linear-gradient(18deg,rgba(226,68,51,0.16) 0 2px,transparent 2px 7px); }
+    .temp-row   { display:flex; align-items:center; gap:10px; }
+    .temp-label { font-family:'Caveat',cursive; font-size:30px; font-weight:700; color:#444; }
+    .temp-value { font-family:'Caveat',cursive; font-size:42px; font-weight:700; min-width:90px; }
+    input[type=range] {
+      -webkit-appearance:none; appearance:none; flex:1; height:10px; border-radius:99px;
+      background:#ffffff; border:3px solid #171717; outline:none; cursor:pointer;
+      box-shadow:inset 1px 1px 0 rgba(0,0,0,0.15);
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance:none; appearance:none; width:30px; height:30px; border-radius:50%;
+      background:#ffffff; cursor:pointer; border:4px solid #171717; box-shadow:2px 2px 0 rgba(0,0,0,0.14);
+    }
+    input[type=range]::-moz-range-thumb {
+      width:30px; height:30px; border-radius:50%; background:#ffffff; cursor:pointer; border:4px solid #171717;
+    }
+  </style>
+</head>
+<body>
+<div class="scene">
+  <div class="canvas-wrap"><canvas id="c" width="520" height="440"></canvas></div>
+  <div class="controls">
+    <div class="slider-row">
+      <span class="mode-tag mode-cold">❄️ Jäähdytä</span>
+      <input type="range" min="-30" max="100" value="20" id="tempSlider" step="1">
+      <span class="mode-tag mode-hot">🔥 Lämmitä</span>
+    </div>
+    <div class="temp-row">
+      <span class="temp-label">Lämpötila:</span>
+      <span class="temp-value" id="tempOut">20°C</span>
+    </div>
+  </div>
+</div>
+<script>
+const canvas=document.getElementById('c'), ctx=canvas.getContext('2d');
+const slider=document.getElementById('tempSlider'), tempOut=document.getElementById('tempOut');
+const W=520, H=440;
+
+// Container (rigid, no piston)
+const CONT_L=58, CONT_R=218, CONT_T=92, CONT_B=378, WALL=10;
+const CONT_W=CONT_R-CONT_L, CONT_H=CONT_B-CONT_T;
+
+// PV graph area
+const GR_L=272, GR_R=510, GR_T=68, GR_B=385;
+
+// Physics constants
+const T_REF=293;   // 20°C in Kelvin
+const P_REF=1.0;   // reference pressure at T_REF
+const NMOL=18, MOL_R_BASE=5.2;
+
+let temp=20;
+let molecules=[], bWobble=[], mWobble=[], paperDots=[];
+
+// Helpers
+function rnd(a,b){return a+Math.random()*(b-a);}
+function hash(n){return((Math.sin(n*127.1)*43758.5453)%1+1)%1;}
+function j(n,amp){return(hash(n)-0.5)*amp*2;}
+function rgba(rgb,alpha){
+  if(rgb.startsWith('rgb('))return rgb.replace('rgb','rgba').replace(')',','+alpha+')');
+  if(rgb.startsWith('#')){const n=parseInt(rgb.slice(1),16);return`rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${alpha})`;}
+  return rgb;
+}
+
+function tKelvin(tc){return tc+273;}
+function relP(tc){return P_REF*tKelvin(tc)/T_REF;}
+function getSpeed(tc){return 0.35+((tKelvin(tc)/T_REF)-0.83)*3.2;}
+
+function tempRatio(t){return(t+30)/130;}
+function gasCol(t){
+  const r=tempRatio(t);
+  const R=Math.round(55+r*195),G=Math.round(144-r*90),B=Math.round(225-r*185);
+  return{pencil:`rgb(${R},${G},${B})`,pale:`rgba(${R},${G},${B},0.11)`};
+}
+function molCol(t){
+  const r=tempRatio(t);
+  return`rgb(${Math.round(40+r*205)},${Math.round(125-r*90)},${Math.round(230-r*205)})`;
+}
+
+// Inner bounds of gas region
+function gasBounds(){
+  return{l:CONT_L+WALL+1,r:CONT_R-WALL-1,t:CONT_T+WALL+1,b:CONT_B-WALL-1};
+}
+
+// Init
+function initTexture(){
+  paperDots=Array.from({length:110},()=>({x:rnd(0,W),y:rnd(0,H),r:rnd(0.25,0.9),a:rnd(0.03,0.07)}));
+}
+function initWobble(){
+  bWobble=Array.from({length:48},()=>rnd(-1.6,1.6));
+  mWobble=Array.from({length:54},()=>rnd(-1.4,1.4));
+}
+function initMolecules(){
+  molecules=[];
+  const b=gasBounds();
+  for(let i=0;i<NMOL;i++){
+    const a=Math.random()*Math.PI*2,s=getSpeed(temp);
+    molecules.push({
+      x:b.l+6+Math.random()*(b.r-b.l-12),
+      y:b.t+6+Math.random()*(b.b-b.t-12),
+      vx:Math.cos(a)*s, vy:Math.sin(a)*s,
+      r:MOL_R_BASE, seed:i*19.7
+    });
+  }
+}
+
+// Physics — speed tracks temperature, volume fixed
+function updateMolecules(){
+  const spd=getSpeed(temp), b=gasBounds();
+  molecules.forEach(m=>{
+    m.x+=m.vx; m.y+=m.vy;
+    if(m.x-m.r<b.l){m.x=b.l+m.r;m.vx=Math.abs(m.vx);}
+    if(m.x+m.r>b.r){m.x=b.r-m.r;m.vx=-Math.abs(m.vx);}
+    if(m.y-m.r<b.t){m.y=b.t+m.r;m.vy=Math.abs(m.vy);}
+    if(m.y+m.r>b.b){m.y=b.b-m.r;m.vy=-Math.abs(m.vy);}
+    const cs=Math.sqrt(m.vx*m.vx+m.vy*m.vy);
+    if(Math.abs(cs-spd)>0.35){m.vx*=spd/(cs||1);m.vy*=spd/(cs||1);}
+  });
+}
+
+// Draw utils
+function roughLine(x1,y1,x2,y2,color='#141414',width=2.5,seed=1){
+  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle=color;
+  for(let p=0;p<2;p++){
+    const k=seed+p*23,mx=(x1+x2)/2+j(k,5),my=(y1+y2)/2+j(k+1,5);
+    ctx.beginPath();ctx.moveTo(x1+j(k+2,1.5),y1+j(k+3,1.5));
+    ctx.quadraticCurveTo(mx,my,x2+j(k+4,1.5),y2+j(k+5,1.5));
+    ctx.lineWidth=width-p*0.65;ctx.globalAlpha=p===0?1:0.6;ctx.stroke();
+  }
+  ctx.restore();
+}
+function roughStroke(fn,width=3,color='#141414',passes=2,alpha=1){
+  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';
+  for(let p=0;p<passes;p++){
+    ctx.save();ctx.translate(j(p+width,0.4),j(p+width+9,0.4));
+    fn();ctx.strokeStyle=rgba(color,alpha*(p===0?1:0.65));ctx.lineWidth=width-p*0.5;ctx.stroke();ctx.restore();
+  }
+  ctx.restore();
+}
+function hatchRect(x,y,w,h,color,spacing=8,angle=-0.55,seed=100,alpha=0.75){
+  ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();
+  ctx.translate(x+w/2,y+h/2);ctx.rotate(angle);ctx.translate(-x-w/2,-y-h/2);
+  for(let yy=y-h;yy<y+h*2;yy+=spacing)
+    roughLine(x-w*0.25,yy+j(yy+seed,3),x+w*1.25,yy+j(yy+seed+4,3),rgba(color,alpha),2.1,yy+seed);
+  ctx.restore();
+}
+function hatchInEllipse(cx,cy,rx,ry,color,spacing=9,angle=-0.55,alpha=0.78,cross=false){
+  function doHatch(a,so){
+    ctx.save();ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2);ctx.clip();
+    ctx.translate(cx,cy);ctx.rotate(a);ctx.translate(-cx,-cy);
+    for(let y=cy-ry*1.65;y<=cy+ry*1.65;y+=spacing)
+      roughLine(cx-rx*1.35,y+j(y+so,2.4),cx+rx*1.35,y+j(y+so+7,2.4),rgba(color,alpha),2.2,y+so);
+    ctx.restore();
+  }
+  doHatch(angle,300);if(cross)doHatch(angle+1.42,900);
+}
+function drawSketchDot(x,y,r,color,seed=1){
+  ctx.save();
+  ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();
+  hatchInEllipse(x,y,r-1,r-1,color,4,-0.55,0.95,false);
+  roughStroke(()=>{ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);},1.8,'#121212',2);
+  ctx.restore();
+}
+function drawArrow(x1,y1,x2,y2,color='#121212',seed=1){
+  roughLine(x1,y1,x2,y2,color,2.4,seed);
+  const a=Math.atan2(y2-y1,x2-x1),len=10;
+  roughLine(x2,y2,x2-Math.cos(a-0.62)*len,y2-Math.sin(a-0.62)*len,color,2.2,seed+4);
+  roughLine(x2,y2,x2-Math.cos(a+0.62)*len,y2-Math.sin(a+0.62)*len,color,2.2,seed+7);
+}
+
+// Pressure gauge (same style as Boyle's)
+function drawPressureGauge(t){
+  const GX=(CONT_L+CONT_R)/2, GY=CONT_T-8, GR=40;
+  const P=relP(t), Pmin=0.7, Pmax=1.45;
+  const startA=7*Math.PI/6, sweep=4*Math.PI/6;
+  const needleA=startA+Math.max(0,Math.min(1,(P-Pmin)/(Pmax-Pmin)))*sweep;
+  const col=gasCol(t);
+
+  ctx.save();
+  ctx.beginPath();ctx.arc(GX,GY,GR,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();
+  roughStroke(()=>{ctx.beginPath();ctx.arc(GX,GY,GR,0,Math.PI*2);},3,'#121212',2);
+
+  // Track
+  ctx.beginPath();ctx.arc(GX,GY,GR-10,startA,startA+sweep,false);
+  ctx.strokeStyle='rgba(0,0,0,0.12)';ctx.lineWidth=7;ctx.lineCap='round';ctx.stroke();
+
+  // Fill
+  ctx.beginPath();ctx.arc(GX,GY,GR-10,startA,needleA,false);
+  ctx.strokeStyle=col.pencil;ctx.lineWidth=6;ctx.lineCap='round';ctx.stroke();
+
+  // Ticks 0.75, 1.0, 1.25
+  const tickVals=[0.75,1.0,1.25];
+  tickVals.forEach((pv,i)=>{
+    const ta=startA+((pv-Pmin)/(Pmax-Pmin))*sweep;
+    roughLine(GX+Math.cos(ta)*(GR-18),GY+Math.sin(ta)*(GR-18),GX+Math.cos(ta)*(GR-8),GY+Math.sin(ta)*(GR-8),'#121212',i===1?2.2:1.4,400+i);
+    ctx.save();ctx.font='14px Caveat,cursive';ctx.fillStyle='#555';ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(pv.toFixed(2),GX+Math.cos(ta)*(GR-26),GY+Math.sin(ta)*(GR-26));ctx.restore();
+  });
+
+  roughLine(GX,GY,GX+Math.cos(needleA)*(GR-12),GY+Math.sin(needleA)*(GR-12),'#c53226',3,500);
+  ctx.beginPath();ctx.arc(GX,GY,5,0,Math.PI*2);ctx.fillStyle='#121212';ctx.fill();
+
+  ctx.font='bold 14px Caveat,cursive';ctx.textAlign='center';ctx.fillStyle='#121212';
+  ctx.fillText('Paine (atm)',GX,GY+GR+15);
+  ctx.restore();
+}
+
+// Rigid container — thick walls, rivets/bolts for pressure vessel look
+function drawContainer(t){
+  const b=gasBounds(), col=gasCol(t);
+  const lo=CONT_L, ro=CONT_R, to=CONT_T, bo=CONT_B;
+
+  // Gas fill + hatch inside
+  ctx.save();
+  ctx.beginPath();ctx.rect(b.l,b.t,b.r-b.l,b.b-b.t);
+  ctx.fillStyle=col.pale;ctx.fill();
+  hatchRect(b.l,b.t,b.r-b.l,b.b-b.t,col.pencil,10,-0.55,200,0.58);
+  ctx.restore();
+
+  // Thick walls — left
+  roughLine(lo,to,lo,bo,col.pencil,18,801);roughLine(lo,to,lo,bo,'#121212',11,802);
+  roughLine(lo+WALL,to,lo+WALL,bo,'#121212',2.2,803);
+  // Right
+  roughLine(ro,to,ro,bo,col.pencil,18,811);roughLine(ro,to,ro,bo,'#121212',11,812);
+  roughLine(ro-WALL,to,ro-WALL,bo,'#121212',2.2,813);
+  // Top
+  roughLine(lo,to,ro,to,col.pencil,18,821);roughLine(lo,to,ro,to,'#121212',11,822);
+  roughLine(lo,to+WALL,ro,to+WALL,'#121212',2.2,823);
+  // Bottom
+  roughLine(lo,bo,ro,bo,col.pencil,18,831);roughLine(lo,bo,ro,bo,'#121212',11,832);
+  roughLine(lo,bo-WALL,ro,bo-WALL,'#121212',2.2,833);
+
+  // Bolts/rivets — sketched circles at corners and mid-walls
+  const boltPos=[
+    [lo+6,to+6],[ro-6,to+6],[lo+6,bo-6],[ro-6,bo-6],
+    [(lo+ro)/2,to+5],[(lo+ro)/2,bo-5],
+    [lo+5,(to+bo)/2],[ro-5,(to+bo)/2],
+  ];
+  boltPos.forEach(([bx,by],i)=>{
+    ctx.save();
+    ctx.beginPath();ctx.arc(bx,by,4,0,Math.PI*2);ctx.fillStyle='#ccc';ctx.fill();
+    roughStroke(()=>{ctx.beginPath();ctx.arc(bx,by,4,0,Math.PI*2);},1.5,'#121212',1);
+    roughLine(bx-2.5,by-2.5,bx+2.5,by+2.5,'#888',1.2,900+i);
+    roughLine(bx+2.5,by-2.5,bx-2.5,by+2.5,'#888',1.2,910+i);
+    ctx.restore();
+  });
+
+  // Wall sheen
+  for(let i=0;i<3;i++)roughLine(lo+3+i*2,to+14,lo+3+i*2,to+60,'rgba(255,255,255,0.55)',2,880+i);
+
+  // Heat source at bottom when hot, ice when cold
+  if(t>40){
+    const flames=5;
+    for(let i=0;i<flames;i++){
+      const fx=lo+WALL+10+i*(CONT_W-WALL*2-20)/(flames-1);
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(fx,bo+2);
+      ctx.bezierCurveTo(fx-6,bo+14,fx+4,bo+22,fx,bo+30);
+      ctx.bezierCurveTo(fx-4,bo+20,fx+8,bo+10,fx,bo+2);
+      const fireRatio=(t-40)/60;
+      ctx.fillStyle=`rgba(${Math.round(230+20*fireRatio)},${Math.round(100-80*fireRatio)},20,${0.5+fireRatio*0.3})`;
+      ctx.fill();
+      roughStroke(()=>{
+        ctx.beginPath();ctx.moveTo(fx,bo+2);
+        ctx.bezierCurveTo(fx-6,bo+14,fx+4,bo+22,fx,bo+30);
+      },1.5,`rgb(${Math.round(200+20*fireRatio)},80,10)`,1,0.7);
+      ctx.restore();
+    }
+  }
+  if(t<0){
+    // Ice crystals below container
+    const icy=bo+8;
+    for(let i=0;i<6;i++){
+      const ix=lo+WALL+8+i*(CONT_W-WALL*2-16)/5;
+      roughLine(ix,icy,ix,icy+18,'#64b0e8',1.8,950+i);
+      roughLine(ix-7,icy+9,ix+7,icy+9,'#64b0e8',1.8,960+i);
+      roughLine(ix-5,icy+4,ix+5,icy+14,'#64b0e8',1.5,970+i);
+      roughLine(ix+5,icy+4,ix-5,icy+14,'#64b0e8',1.5,980+i);
+    }
+  }
+}
+
+function drawMolecules(t){
+  const b=gasBounds();
+  ctx.save();ctx.beginPath();ctx.rect(b.l+1,b.t+1,b.r-b.l-2,b.b-b.t-2);ctx.clip();
+  const mc=molCol(t), spd=getSpeed(t);
+  molecules.forEach((m,i)=>{
+    if(spd>1.2){
+      const len=Math.min(spd*3,15);
+      roughLine(m.x,m.y,m.x-m.vx/spd*len,m.y-m.vy/spd*len,rgba(mc,0.25),2.6,700+i);
+    }
+    drawSketchDot(m.x,m.y,m.r,mc,m.seed);
+  });
+  ctx.restore();
+}
+
+// Thermometer (same as other simulations)
+function drawThermometer(t){
+  const ratio=tempRatio(t),bh=130,bw=17,bx=20,by=120;
+  const R=Math.round(55+ratio*200),G=Math.round(145-ratio*90),B=Math.round(228-ratio*188);
+  const fill=`rgb(${R},${G},${B})`;
+  ctx.save();
+  ctx.beginPath();ctx.roundRect(bx,by,bw,bh,8);ctx.fillStyle='#ffffff';ctx.fill();
+  roughStroke(()=>{ctx.beginPath();ctx.roundRect(bx,by,bw,bh,8);},3,'#121212',2);
+  const fh=bh*ratio,fy=by+bh-fh;
+  ctx.save();ctx.beginPath();ctx.roundRect(bx+3,fy,bw-6,fh,6);ctx.clip();
+  ctx.fillStyle=rgba(fill,0.12);ctx.fillRect(bx+2,fy,bw-4,fh);
+  hatchRect(bx+2,fy,bw-4,fh,fill,5,-0.55,730,0.86);ctx.restore();
+  ctx.beginPath();ctx.arc(bx+bw/2,by+bh+10,14,0,Math.PI*2);
+  ctx.fillStyle='#ffffff';ctx.fill();
+  hatchInEllipse(bx+bw/2,by+bh+10,12,12,fill,5,-0.55,0.88,true);
+  roughStroke(()=>{ctx.beginPath();ctx.arc(bx+bw/2,by+bh+10,14,0,Math.PI*2);},3,'#121212',2);
+  ctx.font='19px Caveat,cursive';ctx.fillStyle='#444';ctx.textAlign='left';
+  [[-30,0],[0,0.23],[20,0.38],[60,0.69],[100,1]].forEach(([label,pos],i)=>{
+    const ty=by+bh*(1-pos);
+    roughLine(bx+bw,ty,bx+bw+7,ty,'#121212',1.5,770+i);
+    ctx.fillText(label+'°',bx+bw+9+j(i,1),ty+5+j(i+4,1));
+  });
+  ctx.restore();
+}
+
+// P-T graph (Gay-Lussac's Law — linear)
+const T_MIN=-30, T_MAX=100, P_GMIN=0.7, P_GMAX=1.45;
+function tpToGraph(tc,P){
+  return{
+    x:GR_L+(tc-T_MIN)/(T_MAX-T_MIN)*(GR_R-GR_L),
+    y:GR_B-(P-P_GMIN)/(P_GMAX-P_GMIN)*(GR_B-GR_T)
+  };
+}
+
+function drawPTGraph(t){
+  ctx.save();
+
+  // Axes
+  roughLine(GR_L,GR_T-12,GR_L,GR_B+8,'#121212',2.8,2001);
+  roughLine(GR_L-8,GR_B,GR_R+12,GR_B,'#121212',2.8,2002);
+  // Arrowheads
+  roughLine(GR_L,GR_T-12,GR_L-5,GR_T+8,'#121212',2,2003);
+  roughLine(GR_L,GR_T-12,GR_L+5,GR_T+8,'#121212',2,2004);
+  roughLine(GR_R+12,GR_B,GR_R-4,GR_B-5,'#121212',2,2005);
+  roughLine(GR_R+12,GR_B,GR_R-4,GR_B+5,'#121212',2,2006);
+
+  // Labels
+  ctx.font='bold 24px Caveat,cursive';ctx.fillStyle='#121212';
+  ctx.textAlign='center';ctx.fillText('T (°C)',GR_R+8,GR_B+40);
+  ctx.textAlign='right'; ctx.fillText('P',GR_L-9,GR_T-14);
+
+  // T ticks
+  ctx.font='17px Caveat,cursive';ctx.fillStyle='#777';
+  [-30,0,20,60,100].forEach((tv,i)=>{
+    const{x}=tpToGraph(tv,P_GMIN);
+    roughLine(x,GR_B-4,x,GR_B+6,'#121212',1.5,2020+i);
+    ctx.textAlign='center';ctx.fillText(tv+'°',x+j(i,1.5),GR_B+22+j(i+20,1.5));
+  });
+  // P ticks
+  [0.75,1.0,1.25].forEach((pv,i)=>{
+    const{y}=tpToGraph(T_MIN,pv);
+    roughLine(GR_L-6,y,GR_L+4,y,'#121212',1.5,2010+i);
+    ctx.textAlign='right';ctx.fillText(pv.toFixed(2),GR_L-9+j(i,1.5),y+5+j(i+10,1.5));
+  });
+
+  // Theoretical line P = P_REF * (T+273)/293
+  ctx.save();ctx.setLineDash([4,8]);
+  ctx.beginPath();
+  for(let ti=0;ti<=60;ti++){
+    const tc=T_MIN+(ti/60)*(T_MAX-T_MIN), P=relP(tc);
+    if(P<P_GMIN||P>P_GMAX)continue;
+    const g=tpToGraph(tc,P);
+    ti===0?ctx.moveTo(g.x,g.y):ctx.lineTo(g.x,g.y);
+  }
+  ctx.strokeStyle='rgba(0,0,0,0.11)';ctx.lineWidth=2.5;ctx.stroke();
+  ctx.restore();
+
+  // Single moving point
+  {
+    const g=tpToGraph(t,relP(t)), col=gasCol(t);
+    ctx.save();
+    ctx.beginPath();ctx.arc(g.x,g.y,8,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();
+    hatchInEllipse(g.x,g.y,7,7,col.pencil,4,-0.55,0.95,false);
+    roughStroke(()=>{ctx.beginPath();ctx.arc(g.x,g.y,8,0,Math.PI*2);},2.5,'#121212',2);
+    ctx.restore();
+  }
+
+  ctx.restore();
+}
+
+function drawBackground(){
+  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,W,H);
+  ctx.save();
+  paperDots.forEach(d=>{ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle=`rgba(0,0,0,${d.a})`;ctx.fill();});
+  ctx.restore();
+}
+
+function drawLabels(t){
+  const b=gasBounds();
+  // "kaasu" pointer
+  const lx=CONT_R+12, ly=(b.t+b.b)/2;
+  ctx.save();ctx.font='bold 20px Caveat,cursive';ctx.fillStyle='#121212';ctx.textAlign='left';
+  ctx.fillText('kaasu',lx+j(10,1),ly+j(11,1));ctx.restore();
+}
+
+function frame(){
+  ctx.clearRect(0,0,W,H);
+  updateMolecules();
+  drawBackground();
+  drawContainer(temp);
+  drawMolecules(temp);
+  drawPressureGauge(temp);
+  drawThermometer(temp);
+  drawPTGraph(temp);
+  drawLabels(temp);
+  requestAnimationFrame(frame);
+}
+
+slider.addEventListener('input',()=>{
+  temp=parseInt(slider.value);
+  const ratio=tempRatio(temp);
+  const R=Math.round(55+ratio*200),G=Math.round(145-ratio*90),B=Math.round(228-ratio*188);
+  tempOut.textContent=temp+'°C';
+  tempOut.style.color=`rgb(${Math.max(0,R-30)},${Math.max(0,G-20)},${Math.max(0,B-40)})`;
+});
+
+initTexture();initWobble();initMolecules();
+document.fonts.ready.then(()=>{frame();});
+</script>
+</body>
+</html>
