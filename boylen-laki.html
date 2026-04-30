@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boylen laki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Caveat', cursive; background: #ffffff; color: #171717; min-height: 100vh; }
+    .scene { display: flex; flex-direction: column; align-items: center; padding: 18px 12px 16px; gap: 12px; }
+    .canvas-wrap { width: 520px; height: 440px; background: #ffffff; }
+    canvas { display: block; }
+    .controls { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 620px; }
+    .slider-row { display: flex; align-items: center; gap: 14px; width: 100%; }
+    .mode-tag {
+      font-family: 'Caveat', cursive; font-size: 28px; font-weight: 700;
+      padding: 4px 14px; border-radius: 7px 10px 8px 9px;
+      border: 3px solid #141414; white-space: nowrap;
+      background: #ffffff; box-shadow: 2px 3px 0 rgba(0,0,0,0.08);
+    }
+    .mode-expand  { color:#0d66a7; transform:rotate(-1.4deg); background-image:repeating-linear-gradient(-18deg,rgba(21,135,212,0.16) 0 2px,transparent 2px 7px); }
+    .mode-compress{ color:#c53226; transform:rotate(1.2deg);  background-image:repeating-linear-gradient(18deg,rgba(226,68,51,0.16) 0 2px,transparent 2px 7px); }
+    input[type=range] {
+      -webkit-appearance:none; appearance:none; flex:1; height:10px; border-radius:99px;
+      background:#ffffff; border:3px solid #171717; outline:none; cursor:pointer;
+      box-shadow:inset 1px 1px 0 rgba(0,0,0,0.15);
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance:none; appearance:none; width:30px; height:30px; border-radius:50%;
+      background:#ffffff; cursor:pointer; border:4px solid #171717; box-shadow:2px 2px 0 rgba(0,0,0,0.14);
+    }
+    input[type=range]::-moz-range-thumb {
+      width:30px; height:30px; border-radius:50%; background:#ffffff; cursor:pointer; border:4px solid #171717;
+    }
+  </style>
+</head>
+<body>
+<div class="scene">
+  <div class="canvas-wrap"><canvas id="c" width="520" height="440"></canvas></div>
+  <div class="controls">
+    <div class="slider-row">
+      <span class="mode-tag mode-expand">⬅️ Laajenna</span>
+      <input type="range" min="0" max="100" value="25" id="compSlider" step="1">
+      <span class="mode-tag mode-compress">Pakkaa ➡️</span>
+    </div>
+  </div>
+</div>
+<script>
+const canvas=document.getElementById('c'), ctx=canvas.getContext('2d');
+const slider=document.getElementById('compSlider');
+const W=520,H=440;
+
+// Cylinder
+const CYL_L=60,CYL_R=215,CYL_T=80,CYL_B=375,WALL=9,PISTON_H=20;
+const CYL_W=CYL_R-CYL_L;
+
+// PV graph area
+const GR_L=272,GR_R=510,GR_T=70,GR_B=385;
+
+// State
+let compression=0.25;
+const NMOL=16, MOL_SPEED=2.0;
+let molecules=[],mWobble=[],paperDots=[];
+
+// Helpers
+function rnd(a,b){return a+Math.random()*(b-a);}
+function hash(n){return((Math.sin(n*127.1)*43758.5453)%1+1)%1;}
+function j(n,amp){return(hash(n)-0.5)*amp*2;}
+function rgba(rgb,alpha){
+  if(rgb.startsWith('rgb('))return rgb.replace('rgb','rgba').replace(')',','+alpha+')');
+  if(rgb.startsWith('#')){const n=parseInt(rgb.slice(1),16);return`rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${alpha})`;}
+  return rgb;
+}
+
+function pistonY(c){return CYL_T+PISTON_H+c*(CYL_B-CYL_T-PISTON_H*2-38);}
+function gasBounds(c){return{l:CYL_L+WALL+1,r:CYL_R-WALL-1,t:pistonY(c)+PISTON_H+1,b:CYL_B-WALL-1};}
+function relV(c){return 1-c*0.76;}
+function relP(c){return 1/relV(c);}
+// Isothermal — temperature constant, so colors never change
+const GAS_PENCIL='rgb(70,130,210)', GAS_PALE='rgba(70,130,210,0.11)', MOL_COLOR='rgb(50,110,200)';
+function gasCol(){ return{pencil:GAS_PENCIL,pale:GAS_PALE}; }
+function molCol(){ return MOL_COLOR; }
+
+// Init
+function initTexture(){paperDots=Array.from({length:110},()=>({x:rnd(0,W),y:rnd(0,H),r:rnd(0.25,0.9),a:rnd(0.03,0.07)}));}
+function initWobble(){mWobble=Array.from({length:54},()=>rnd(-1.4,1.4));}
+function initMolecules(){
+  molecules=[];
+  const b=gasBounds(compression);
+  for(let i=0;i<NMOL;i++){
+    const a=Math.random()*Math.PI*2;
+    molecules.push({x:b.l+5+Math.random()*(b.r-b.l-10),y:b.t+5+Math.random()*(b.b-b.t-10),vx:Math.cos(a)*MOL_SPEED,vy:Math.sin(a)*MOL_SPEED,r:5.2,seed:i*19.7});
+  }
+}
+
+// Physics — smooth: just clamp into new bounds, don't reset
+function updateMolecules(){
+  const b=gasBounds(compression);
+  molecules.forEach(m=>{
+    m.x+=m.vx; m.y+=m.vy;
+    if(m.x-m.r<b.l){m.x=b.l+m.r;m.vx=Math.abs(m.vx);}
+    if(m.x+m.r>b.r){m.x=b.r-m.r;m.vx=-Math.abs(m.vx);}
+    if(m.y-m.r<b.t){m.y=b.t+m.r;m.vy=Math.abs(m.vy);}
+    if(m.y+m.r>b.b){m.y=b.b-m.r;m.vy=-Math.abs(m.vy);}
+    const cs=Math.sqrt(m.vx*m.vx+m.vy*m.vy);
+    if(cs>0){m.vx*=MOL_SPEED/cs;m.vy*=MOL_SPEED/cs;}
+  });
+}
+
+// Draw utils
+function roughLine(x1,y1,x2,y2,color='#141414',width=2.5,seed=1){
+  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle=color;
+  for(let p=0;p<2;p++){
+    const k=seed+p*23,mx=(x1+x2)/2+j(k,5),my=(y1+y2)/2+j(k+1,5);
+    ctx.beginPath();ctx.moveTo(x1+j(k+2,1.5),y1+j(k+3,1.5));
+    ctx.quadraticCurveTo(mx,my,x2+j(k+4,1.5),y2+j(k+5,1.5));
+    ctx.lineWidth=width-p*0.65;ctx.globalAlpha=p===0?1:0.6;ctx.stroke();
+  }
+  ctx.restore();
+}
+function roughStroke(fn,width=3,color='#141414',passes=2,alpha=1){
+  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';
+  for(let p=0;p<passes;p++){
+    ctx.save();ctx.translate(j(p+width,0.4),j(p+width+9,0.4));
+    fn();ctx.strokeStyle=rgba(color,alpha*(p===0?1:0.65));ctx.lineWidth=width-p*0.5;ctx.stroke();ctx.restore();
+  }
+  ctx.restore();
+}
+function hatchRect(x,y,w,h,color,spacing=8,angle=-0.55,seed=100,alpha=0.75){
+  ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();
+  ctx.translate(x+w/2,y+h/2);ctx.rotate(angle);ctx.translate(-x-w/2,-y-h/2);
+  for(let yy=y-h;yy<y+h*2;yy+=spacing)
+    roughLine(x-w*0.25,yy+j(yy+seed,3),x+w*1.25,yy+j(yy+seed+4,3),rgba(color,alpha),2.1,yy+seed);
+  ctx.restore();
+}
+function hatchInEllipse(cx,cy,rx,ry,color,spacing=9,angle=-0.55,alpha=0.78,cross=false){
+  function doHatch(a,so){
+    ctx.save();ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2);ctx.clip();
+    ctx.translate(cx,cy);ctx.rotate(a);ctx.translate(-cx,-cy);
+    for(let y=cy-ry*1.65;y<=cy+ry*1.65;y+=spacing)
+      roughLine(cx-rx*1.35,y+j(y+so,2.4),cx+rx*1.35,y+j(y+so+7,2.4),rgba(color,alpha),2.2,y+so);
+    ctx.restore();
+  }
+  doHatch(angle,300);if(cross)doHatch(angle+1.42,900);
+}
+function drawSketchDot(x,y,r,color,seed=1){
+  ctx.save();
+  ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();
+  hatchInEllipse(x,y,r-1,r-1,color,4,-0.55,0.95,false);
+  roughStroke(()=>{ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);},1.8,'#121212',2);
+  ctx.restore();
+}
+
+// Pressure gauge
+// Arc from 210° → 330° clockwise (bottom half of circle)
+function drawPressureGauge(comp){
+  const GX=(CYL_L+CYL_R)/2, GY=CYL_T-6, GR=40;
+  const P=relP(comp), Pmax=5.0;
+  // 210° = 7π/6, 330° = 11π/6, sweep clockwise = 2π/3
+  const startA=7*Math.PI/6;
+  const sweep=4*Math.PI/6; // 120°
+  const needleA=startA+((P-1)/(Pmax-1))*sweep;
+
+  ctx.save();
+  // Face
+  ctx.beginPath();ctx.arc(GX,GY,GR,0,Math.PI*2);
+  ctx.fillStyle='#ffffff';ctx.fill();
+  roughStroke(()=>{ctx.beginPath();ctx.arc(GX,GY,GR,0,Math.PI*2);},3,'#121212',2);
+
+  // Grey track
+  ctx.beginPath();ctx.arc(GX,GY,GR-10,startA,startA+sweep,false);
+  ctx.strokeStyle='rgba(0,0,0,0.12)';ctx.lineWidth=7;ctx.lineCap='round';ctx.stroke();
+
+  // Coloured filled arc
+  ctx.beginPath();ctx.arc(GX,GY,GR-10,startA,needleA,false);
+  ctx.strokeStyle=gasCol().pencil;ctx.lineWidth=6;ctx.lineCap='round';ctx.stroke();
+
+  // 5 ticks (P=1..5)
+  ctx.font='16px Caveat,cursive';ctx.textAlign='center';ctx.textBaseline='middle';
+  for(let i=0;i<=4;i++){
+    const ta=startA+(i/4)*sweep;
+    const ir=GR-18,or2=GR-8;
+    roughLine(GX+Math.cos(ta)*ir,GY+Math.sin(ta)*ir,GX+Math.cos(ta)*or2,GY+Math.sin(ta)*or2,'#121212',i%2===0?2.1:1.3,400+i);
+    if(i===0||i===2||i===4){
+      ctx.save();ctx.fillStyle='#555';
+      ctx.fillText(i===0?'1':i===2?'3':'5',GX+Math.cos(ta)*(GR-25),GY+Math.sin(ta)*(GR-25));
+      ctx.restore();
+    }
+  }
+
+  // Needle
+  roughLine(GX,GY,GX+Math.cos(needleA)*(GR-12),GY+Math.sin(needleA)*(GR-12),'#c53226',3,500);
+  ctx.beginPath();ctx.arc(GX,GY,5,0,Math.PI*2);ctx.fillStyle='#121212';ctx.fill();
+
+  // Label
+  ctx.font='bold 14px Caveat,cursive';ctx.textAlign='center';ctx.fillStyle='#121212';
+  ctx.fillText('Paine (atm)',GX,GY+GR+15);
+  ctx.restore();
+}
+
+// Cylinder
+function drawCylinder(comp){
+  const py=pistonY(comp),col=gasCol(),b=gasBounds(comp);
+  const lo=CYL_L,ro=CYL_R,li=CYL_L+WALL,ri=CYL_R-WALL;
+
+  // Gas fill
+  ctx.save();
+  ctx.beginPath();ctx.rect(b.l,b.t,b.r-b.l,b.b-b.t);
+  ctx.fillStyle=col.pale;ctx.fill();
+  hatchRect(b.l,b.t,b.r-b.l,b.b-b.t,col.pencil,10,-0.55,200,0.58);
+  ctx.restore();
+
+  // Walls
+  roughLine(lo,CYL_T,lo,CYL_B,col.pencil,12,801);roughLine(lo,CYL_T,lo,CYL_B,'#121212',7,802);roughLine(li,CYL_T,li,CYL_B,'#121212',2.2,803);
+  roughLine(ro,CYL_T,ro,CYL_B,col.pencil,12,811);roughLine(ro,CYL_T,ro,CYL_B,'#121212',7,812);roughLine(ri,CYL_T,ri,CYL_B,'#121212',2.2,813);
+  roughLine(lo,CYL_B,ro,CYL_B,col.pencil,12,821);roughLine(lo,CYL_B,ro,CYL_B,'#121212',7,822);roughLine(li,CYL_B-WALL,ri,CYL_B-WALL,'#121212',2.2,823);
+  for(let i=0;i<3;i++)roughLine(lo+3+i*2,CYL_T+14,lo+3+i*2,CYL_T+58,'rgba(255,255,255,0.65)',2,880+i);
+
+  // Piston
+  ctx.save();
+  ctx.beginPath();ctx.rect(li,py,CYL_W-WALL*2,PISTON_H);ctx.fillStyle='#ffffff';ctx.fill();
+  hatchRect(li,py,CYL_W-WALL*2,PISTON_H,'#888',5,-0.35,300,0.72);
+  roughStroke(()=>{ctx.beginPath();ctx.rect(li,py,CYL_W-WALL*2,PISTON_H);},3,'#121212',2);
+  ctx.restore();
+
+  // Rod
+  const rodX=(CYL_L+CYL_R)/2;
+  roughLine(rodX,py,rodX,CYL_T-6,'#aaa',10,840);
+  roughLine(rodX,py,rodX,CYL_T-6,'#ddd',6,841);
+  roughLine(rodX,py,rodX,CYL_T-6,'#121212',2,842);
+  roughLine(rodX-22,CYL_T-10,rodX+22,CYL_T-10,'#121212',10,850);
+  roughLine(rodX-22,CYL_T-10,rodX+22,CYL_T-10,'#aaa',6,851);
+  roughLine(rodX-22,CYL_T-10,rodX+22,CYL_T-10,'#121212',2,852);
+
+  // Force arrow
+  if(comp>0.08){
+    const arrowLen=14+comp*18, ay=CYL_T-34;
+    roughLine(rodX,ay,rodX,ay+arrowLen,'#c53226',2.4,860);
+    roughLine(rodX,ay+arrowLen,rodX-7,ay+arrowLen-10,'#c53226',2.2,864);
+    roughLine(rodX,ay+arrowLen,rodX+7,ay+arrowLen-10,'#c53226',2.2,865);
+    ctx.save();ctx.font='bold 17px Caveat,cursive';ctx.fillStyle='#c53226';ctx.textAlign='left';
+    ctx.fillText('F',rodX+10+j(10,1),ay+4+j(11,1));ctx.restore();
+  }
+}
+
+function drawMolecules(){
+  const b=gasBounds(compression);
+  ctx.save();ctx.beginPath();ctx.rect(b.l+1,b.t+1,b.r-b.l-2,b.b-b.t-2);ctx.clip();
+  const mc=molCol();
+  molecules.forEach((m,i)=>{
+    roughLine(m.x,m.y,m.x-m.vx/MOL_SPEED*9,m.y-m.vy/MOL_SPEED*9,rgba(mc,0.22),2.6,700+i);
+    drawSketchDot(m.x,m.y,m.r,mc,m.seed);
+  });
+  ctx.restore();
+}
+
+// PV graph
+const V_MIN=0.22,V_MAX=1.0,P_MIN=1.0,P_MAX=5.2;
+function vpToGraph(V,P){
+  return{
+    x:GR_L+(V-V_MIN)/(V_MAX-V_MIN)*(GR_R-GR_L),
+    y:GR_B-(P-P_MIN)/(P_MAX-P_MIN)*(GR_B-GR_T)
+  };
+}
+
+function drawPVGraph(){
+  ctx.save();
+
+  // Axes
+  roughLine(GR_L,GR_T-12,GR_L,GR_B+8,'#121212',2.8,2001);
+  roughLine(GR_L-8,GR_B,GR_R+12,GR_B,'#121212',2.8,2002);
+  // Y arrow
+  roughLine(GR_L,GR_T-12,GR_L-5,GR_T+8,'#121212',2,2003);
+  roughLine(GR_L,GR_T-12,GR_L+5,GR_T+8,'#121212',2,2004);
+  // X arrow
+  roughLine(GR_R+12,GR_B,GR_R-4,GR_B-5,'#121212',2,2005);
+  roughLine(GR_R+12,GR_B,GR_R-4,GR_B+5,'#121212',2,2006);
+
+  // Axis labels
+  ctx.font='bold 24px Caveat,cursive';ctx.fillStyle='#121212';
+  ctx.textAlign='center';ctx.fillText('V',GR_R+20,GR_B+6);
+  ctx.textAlign='right'; ctx.fillText('P',GR_L-9,GR_T-14);
+
+  // P ticks 1–5
+  ctx.font='17px Caveat,cursive';ctx.fillStyle='#777';
+  for(let p=1;p<=5;p++){
+    const{y}=vpToGraph(V_MIN,p);
+    roughLine(GR_L-6,y,GR_L+4,y,'#121212',1.5,2010+p);
+    ctx.textAlign='right';ctx.fillText(p,GR_L-9+j(p,1.5),y+5+j(p+10,1.5));
+  }
+  // V ticks
+  ctx.textAlign='center';
+  [0.25,0.5,0.75,1.0].forEach((v,i)=>{
+    const{x}=vpToGraph(v,P_MIN);
+    roughLine(x,GR_B-4,x,GR_B+6,'#121212',1.5,2020+i);
+    ctx.fillText(v.toFixed(2),x+j(i,1.5),GR_B+20+j(i+20,1.5));
+  });
+
+  // Theoretical hyperbola (faint dashed)
+  ctx.save();ctx.setLineDash([4,8]);
+  ctx.beginPath();let first=true;
+  for(let vi=0;vi<=80;vi++){
+    const V=V_MIN+(vi/80)*(V_MAX-V_MIN),P=1/V;
+    if(P>P_MAX||P<P_MIN)continue;
+    const g=vpToGraph(V,P);
+    if(first){ctx.moveTo(g.x,g.y);first=false;}else ctx.lineTo(g.x,g.y);
+  }
+  ctx.strokeStyle='rgba(0,0,0,0.11)';ctx.lineWidth=2.5;ctx.stroke();
+  ctx.restore();
+
+  // Single moving point — follows the hyperbola as slider moves
+  {
+    const g=vpToGraph(relV(compression),relP(compression));
+    ctx.save();
+    ctx.beginPath();ctx.arc(g.x,g.y,8,0,Math.PI*2);
+    ctx.fillStyle='#ffffff';ctx.fill();
+    hatchInEllipse(g.x,g.y,7,7,GAS_PENCIL,4,-0.55,0.95,false);
+    roughStroke(()=>{ctx.beginPath();ctx.arc(g.x,g.y,8,0,Math.PI*2);},2.5,'#121212',2);
+    ctx.restore();
+  }
+
+  ctx.restore();
+}
+
+function drawBackground(){
+  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,W,H);
+  ctx.save();
+  paperDots.forEach(d=>{ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle=`rgba(0,0,0,${d.a})`;ctx.fill();});
+  ctx.restore();
+}
+
+function drawLabels(comp){
+  const b=gasBounds(comp);
+  const lx=CYL_R+10,ly=(b.t+b.b)/2;
+  ctx.save();ctx.font='bold 20px Caveat,cursive';ctx.fillStyle='#121212';ctx.textAlign='left';
+  ctx.fillText('kaasu',lx+j(10,1),ly+j(11,1));ctx.restore();
+}
+
+function frame(){
+  ctx.clearRect(0,0,W,H);
+  updateMolecules();
+  drawBackground();
+  drawCylinder(compression);
+  drawMolecules();
+  drawPressureGauge(compression);
+  drawPVGraph();
+  drawLabels(compression);
+  requestAnimationFrame(frame);
+}
+
+slider.addEventListener('input',()=>{
+  compression=parseInt(slider.value)/100;
+});
+
+initTexture();initWobble();initMolecules();
+document.fonts.ready.then(()=>{frame();});
+</script>
+</body>
+</html>
