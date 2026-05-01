@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Faasikaavio</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#2f2d29;
+    --soft:#706b63;
+    --grid:#ddd8cf;
+    --red:#d84a62;
+    --blue:#2e86a6;
+    --green:#4a8b5c;
+    --hatch:#ece7de;
+    --water:#eaf6fb;
+  }
+
+  html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    overflow:hidden;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+  }
+
+  body{ display:grid; place-items:center; }
+
+  .wrap{
+    position:relative;
+    width:100vw;
+    height:56.25vw;
+    max-width:177.78vh;
+    max-height:100vh;
+    background:#fff;
+  }
+
+  svg{
+    width:100%;
+    height:100%;
+    display:block;
+    touch-action:none;
+    user-select:none;
+  }
+
+  text{
+    fill:var(--ink);
+    font-size:16px;
+    font-weight:500;
+  }
+
+  .small{
+    fill:var(--soft);
+    font-size:13px;
+    font-weight:500;
+  }
+
+  .tiny{
+    fill:var(--soft);
+    font-size:11px;
+    font-weight:600;
+  }
+
+  .axis{
+    stroke:var(--ink);
+    stroke-width:2.2;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .tick{
+    stroke:var(--soft);
+    stroke-width:1.1;
+  }
+
+  .grid{
+    stroke:var(--grid);
+    stroke-width:1;
+    stroke-dasharray:3 7;
+    fill:none;
+  }
+
+  .phase-line{
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .melt-line{ stroke:var(--red); stroke-width:3; }
+  .vap-line{ stroke:var(--blue); stroke-width:3; }
+  .sub-line{ stroke:var(--green); stroke-width:2.8; }
+
+  .region-fill{
+    opacity:.18;
+    stroke:none;
+  }
+
+  .dot{
+    fill:#fff;
+    stroke:var(--red);
+    stroke-width:4.5;
+    cursor:grab;
+  }
+
+  .hit{
+    fill:transparent;
+    cursor:grab;
+  }
+
+  .marker-dot{
+    fill:#fff;
+    stroke:var(--ink);
+    stroke-width:2.2;
+  }
+
+  .sketch{
+    stroke:var(--ink);
+    stroke-width:2;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .thin{
+    stroke:var(--soft);
+    stroke-width:1.2;
+    fill:none;
+    stroke-linecap:round;
+  }
+
+  .surface{
+    stroke:var(--blue);
+    stroke-width:2;
+    fill:none;
+    stroke-linecap:round;
+    opacity:.75;
+  }
+
+  .liquid-fill{
+    fill:var(--water);
+    opacity:.35;
+    stroke:none;
+  }
+
+  .hud{
+    position:absolute;
+    left:66px;
+    top:18px;
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+
+  .btn{
+    border:2px solid var(--ink);
+    background:#fff;
+    color:var(--ink);
+    border-radius:999px;
+    padding:6px 14px;
+    font:600 14px system-ui,sans-serif;
+    cursor:pointer;
+  }
+
+  .btn.active{ background:#fff7dd; }
+  .btn:active{ transform:translateY(1px); }
+
+  .controls{
+    position:absolute;
+    left:86px;
+    bottom:22px;
+    width:340px;
+    display:grid;
+    gap:7px;
+  }
+
+  .row{
+    display:grid;
+    grid-template-columns:20px 1fr;
+    align-items:center;
+    gap:10px;
+    color:var(--ink);
+    font:600 14px system-ui,sans-serif;
+  }
+
+  input[type="range"]{
+    width:100%;
+    accent-color:var(--ink);
+  }
+
+  .molecule line{
+    stroke:var(--ink);
+    stroke-linecap:round;
+  }
+
+  .oxygen{
+    fill:#ffe7e7;
+    stroke:var(--ink);
+    stroke-width:1.2;
+  }
+
+  .hydrogen{
+    fill:#e8f5fb;
+    stroke:var(--ink);
+    stroke-width:1.1;
+  }
+
+  .carbon{
+    fill:#eef2f3;
+    stroke:var(--ink);
+    stroke-width:1.2;
+  }
+
+  .bond{
+    stroke:#cfc9bf;
+    stroke-width:1.15;
+    stroke-dasharray:4 6;
+    stroke-linecap:round;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hud">
+    <button id="waterBtn" class="btn active">Vesi</button>
+    <button id="co2Btn" class="btn">CO₂</button>
+    <button id="resetBtn" class="btn">Nollaa</button>
+  </div>
+
+  <div class="controls">
+    <div class="row"><span>T</span><input id="tempSlider" type="range"></div>
+    <div class="row"><span>P</span><input id="pressSlider" type="range"></div>
+  </div>
+
+  <svg id="svg" viewBox="0 0 960 540" aria-label="Faasikaavio">
+    <defs>
+      <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+        <path d="M0 10 L10 0" stroke="var(--hatch)" stroke-width="1"/>
+      </pattern>
+    </defs>
+
+    <g id="plot">
+      <path id="solidFill" class="region-fill" fill="url(#hatch)"></path>
+      <path id="liquidFill" class="region-fill" fill="#fff4c7"></path>
+      <path id="gasFill" class="region-fill" fill="#f7f7f7"></path>
+
+      <path id="xAxis" class="axis"></path>
+      <path id="yAxis" class="axis"></path>
+      <path id="xA1" class="axis"></path>
+      <path id="xA2" class="axis"></path>
+      <path id="yA1" class="axis"></path>
+      <path id="yA2" class="axis"></path>
+
+      <g id="gridLayer"></g>
+      <g id="tickLayer"></g>
+
+      <path id="subPath" class="phase-line sub-line"></path>
+      <path id="vapPath" class="phase-line vap-line"></path>
+      <path id="meltPath" class="phase-line melt-line"></path>
+
+      <circle id="tripleDot" class="marker-dot" r="4.7"></circle>
+      <text id="tripleLabel" class="tiny">Kolmoispiste</text>
+
+      <circle id="criticalDot" class="marker-dot" r="4.7"></circle>
+      <text id="criticalLabel" class="tiny">Kriittinen piste</text>
+
+      <text id="pRead" x="70" y="64">P = 101 kPa</text>
+      <text id="tRead" x="250" y="64">T = 20 °C</text>
+
+      <text x="265" y="438" class="small">T (°C)</text>
+      <text x="18" y="245" class="small" transform="rotate(-90 18 245)">P (kPa)</text>
+
+      <circle id="point" class="dot" r="10"></circle>
+      <circle id="hit" class="hit" r="32"></circle>
+    </g>
+
+    <g id="moleculeSide">
+      <path d="M585 88 C590 84, 597 85, 605 87 L865 87 C874 87, 880 91, 883 97
+               M603 87 C598 150, 597 241, 606 380
+               C660 396, 802 396, 856 380
+               C866 252, 864 149, 856 87"
+            class="sketch"/>
+      <path d="M618 355 L649 384 M655 358 L687 387 M693 360 L726 389 M732 359 L765 389 M772 357 L804 386 M810 352 L840 381"
+            class="thin" opacity=".45"/>
+      <path d="M612 381 C666 393, 797 394, 846 381" class="thin"/>
+
+      <path id="liquidShape" class="liquid-fill"></path>
+      <path id="surfaceLine" class="surface"></path>
+
+      <text id="phaseText" x="734" y="58" text-anchor="middle">Neste</text>
+      <g id="bondLayer"></g>
+      <g id="molLayer"></g>
+    </g>
+  </svg>
+</div>
+
+<script>
+(() => {
+  const NS = "http://www.w3.org/2000/svg";
+
+  const svg = document.getElementById("svg");
+  const pointEl = document.getElementById("point");
+  const hitEl = document.getElementById("hit");
+  const pReadEl = document.getElementById("pRead");
+  const tReadEl = document.getElementById("tRead");
+  const phaseTextEl = document.getElementById("phaseText");
+
+  const tickLayer = document.getElementById("tickLayer");
+  const gridLayer = document.getElementById("gridLayer");
+
+  const subPathEl = document.getElementById("subPath");
+  const vapPathEl = document.getElementById("vapPath");
+  const meltPathEl = document.getElementById("meltPath");
+
+  const solidFillEl = document.getElementById("solidFill");
+  const liquidFillEl = document.getElementById("liquidFill");
+  const gasFillEl = document.getElementById("gasFill");
+
+  const tripleDotEl = document.getElementById("tripleDot");
+  const tripleLabelEl = document.getElementById("tripleLabel");
+  const criticalDotEl = document.getElementById("criticalDot");
+  const criticalLabelEl = document.getElementById("criticalLabel");
+
+  const molLayer = document.getElementById("molLayer");
+  const bondLayer = document.getElementById("bondLayer");
+  const liquidShape = document.getElementById("liquidShape");
+  const surfaceLine = document.getElementById("surfaceLine");
+
+  const waterBtn = document.getElementById("waterBtn");
+  const co2Btn = document.getElementById("co2Btn");
+  const resetBtn = document.getElementById("resetBtn");
+  const tempSlider = document.getElementById("tempSlider");
+  const pressSlider = document.getElementById("pressSlider");
+
+  const plot = { x: 70, y: 82, w: 400, h: 330 };
+  const box = { x: 610, y: 106, w: 240, h: 240 };
+
+  const substances = {
+    water: {
+      key: "water",
+      defaultT: 20,
+      defaultP: 101.3,
+      Tmin: -80,
+      Tmax: 430,
+      Pmin: 0.001,
+      Pmax: 30000,
+      triple: { T: 0.01, P: 0.611, u: 0.36, v: 0.27 },
+      critical: { T: 374, P: 22064, u: 0.82, v: 0.80 },
+      tTicks: [-50, 0, 100, 200, 300, 400],
+      pTicks: [0.01, 0.1, 1, 10, 100, 1000, 10000],
+      subAnchors: [
+        [-80, 0.001],
+        [-60, 0.003],
+        [-45, 0.008],
+        [-25, 0.06],
+        [-10, 0.26],
+        [0.01, 0.611]
+      ],
+      vapAnchors: [
+        [0.01, 0.611],
+        [50, 12.3],
+        [100, 101.3],
+        [180, 1000],
+        [260, 4700],
+        [330, 13000],
+        [374, 22064]
+      ],
+      meltAnchors: [
+        [-42, 30000],
+        [-25, 7000],
+        [-10, 800],
+        [-2, 40],
+        [0.01, 0.611]
+      ]
+    },
+
+    co2: {
+      key: "co2",
+      defaultT: -20,
+      defaultP: 101.3,
+      Tmin: -120,
+      Tmax: 60,
+      Pmin: 0.01,
+      Pmax: 10000,
+      triple: { T: -56.6, P: 518, u: 0.39, v: 0.36 },
+      critical: { T: 31.0, P: 7380, u: 0.74, v: 0.76 },
+      tTicks: [-100, -50, 0, 25, 50],
+      pTicks: [0.1, 1, 10, 100, 1000, 10000],
+      subAnchors: [
+        [-120, 0.01],
+        [-100, 0.03],
+        [-90, 0.1],
+        [-78.5, 101.3],
+        [-67, 260],
+        [-56.6, 518]
+      ],
+      vapAnchors: [
+        [-56.6, 518],
+        [-40, 1000],
+        [-20, 2000],
+        [0, 3500],
+        [15, 5000],
+        [25, 6500],
+        [31, 7380]
+      ],
+      meltAnchors: [
+        [-56.6, 518],
+        [-43, 1200],
+        [-22, 3500],
+        [10, 10000]
+      ]
+    }
+  };
+
+  let current = substances.water;
+  let state = { T: current.defaultT, P: current.defaultP };
+  let drag = false;
+  let phaseMode = "";
+  let densityBucket = -1;
+  let boundarySamples = [];
+  let particles = [];
+  let lastTime = performance.now();
+
+  function log10(v){ return Math.log(v) / Math.LN10; }
+  function clamp(v,a,b){ return Math.max(a, Math.min(b, v)); }
+  function fmt(v,d=0){ return v.toFixed(d).replace(".", ","); }
+
+  function fmtPressure(P){
+    if(P < 0.01) return fmt(P, 3);
+    if(P < 0.1) return fmt(P, 2);
+    if(P < 10) return fmt(P, 1);
+    return fmt(P, 0);
+  }
+
+  function tMap(){
+    return [
+      [current.Tmin, 0],
+      [current.triple.T, current.triple.u],
+      [current.critical.T, current.critical.u],
+      [current.Tmax, 1]
+    ];
+  }
+
+  function pMap(){
+    return [
+      [log10(current.Pmin), 0],
+      [log10(current.triple.P), current.triple.v],
+      [log10(current.critical.P), current.critical.v],
+      [log10(current.Pmax), 1]
+    ];
+  }
+
+  function forward(value, map){
+    if(value <= map[0][0]) return map[0][1];
+    if(value >= map[map.length - 1][0]) return map[map.length - 1][1];
+
+    for(let i=0; i<map.length-1; i++){
+      const [x1,y1] = map[i];
+      const [x2,y2] = map[i+1];
+      if(value >= x1 && value <= x2){
+        const u = (value - x1) / (x2 - x1 || 1);
+        return y1 + u * (y2 - y1);
+      }
+    }
+    return 0;
+  }
+
+  function backward(value, map){
+    if(value <= map[0][1]) return map[0][0];
+    if(value >= map[map.length - 1][1]) return map[map.length - 1][0];
+
+    for(let i=0; i<map.length-1; i++){
+      const [x1,y1] = map[i];
+      const [x2,y2] = map[i+1];
+      if(value >= y1 && value <= y2){
+        const u = (value - y1) / (y2 - y1 || 1);
+        return x1 + u * (x2 - x1);
+      }
+    }
+    return map[0][0];
+  }
+
+  function uFromT(T){ return forward(T, tMap()); }
+  function vFromP(P){ return forward(log10(P), pMap()); }
+
+  function xFromT(T){ return plot.x + uFromT(T) * plot.w; }
+  function yFromP(P){ return plot.y + plot.h - vFromP(P) * plot.h; }
+
+  function TFromX(x){
+    const u = clamp((x - plot.x) / plot.w, 0, 1);
+    return backward(u, tMap());
+  }
+
+  function PFromY(y){
+    const v = clamp((plot.y + plot.h - y) / plot.h, 0, 1);
+    return Math.pow(10, backward(v, pMap()));
+  }
+
+  function pressureNorm(){
+    const a = log10(current.Pmin);
+    const b = log10(current.Pmax);
+    return clamp((log10(state.P) - a) / (b - a), 0, 1);
+  }
+
+  function tempNorm(){
+    return clamp((state.T - current.Tmin) / (current.Tmax - current.Tmin), 0, 1);
+  }
+
+  function interpLogPressure(T, anchors){
+    for(let i=0; i<anchors.length-1; i++){
+      const [t1,p1] = anchors[i];
+      const [t2,p2] = anchors[i+1];
+      if(T >= Math.min(t1,t2) && T <= Math.max(t1,t2)){
+        const u = (T - t1) / (t2 - t1 || 1);
+        return Math.pow(10, log10(p1) + u * (log10(p2) - log10(p1)));
+      }
+    }
+    return null;
+  }
+
+  function interpTempAtPressure(P, anchors){
+    const lp = log10(P);
+
+    for(let i=0; i<anchors.length-1; i++){
+      const [t1,p1] = anchors[i];
+      const [t2,p2] = anchors[i+1];
+      const lp1 = log10(p1);
+      const lp2 = log10(p2);
+      const lo = Math.min(lp1, lp2);
+      const hi = Math.max(lp1, lp2);
+
+      if(lp >= lo && lp <= hi){
+        const u = (lp - lp1) / (lp2 - lp1 || 1);
+        return t1 + u * (t2 - t1);
+      }
+    }
+
+    if(P < Math.min(...anchors.map(a => a[1]))) return anchors[anchors.length-1][0];
+    return anchors[0][0];
+  }
+
+  function makeTPSamples(anchors, mode, label, stepsPerSegment=28){
+    const pts = [];
+    for(let i=0; i<anchors.length-1; i++){
+      const [t1,p1] = anchors[i];
+      const [t2,p2] = anchors[i+1];
+      const lp1 = log10(p1);
+      const lp2 = log10(p2);
+
+      for(let j=0; j<stepsPerSegment; j++){
+        const u = j / stepsPerSegment;
+        const T = t1 + u * (t2 - t1);
+        const P = Math.pow(10, lp1 + u * (lp2 - lp1));
+        pts.push({ T, P, x:xFromT(T), y:yFromP(P), mode, label });
+      }
+    }
+
+    const last = anchors[anchors.length-1];
+    pts.push({
+      T:last[0],
+      P:last[1],
+      x:xFromT(last[0]),
+      y:yFromP(last[1]),
+      mode,
+      label
+    });
+
+    return pts;
+  }
+
+  function pathFromSamples(samples){
+    return samples.map((p,i)=>`${i ? "L" : "M"} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ");
+  }
+
+  function buildAxes(){
+    const x0 = plot.x;
+    const y0 = plot.y + plot.h;
+    const x1 = plot.x + plot.w;
+    const y1 = plot.y;
+
+    document.getElementById("xAxis").setAttribute("d", `M ${x0} ${y0} C ${x0+120} ${y0+2}, ${x0+270} ${y0-2}, ${x1} ${y0}`);
+    document.getElementById("yAxis").setAttribute("d", `M ${x0} ${y0} C ${x0-2} ${plot.y+260}, ${x0+1} ${plot.y+120}, ${x0} ${y1}`);
+
+    document.getElementById("xA1").setAttribute("d", `M ${x1} ${y0} L ${x1-11} ${y0-5}`);
+    document.getElementById("xA2").setAttribute("d", `M ${x1} ${y0} L ${x1-11} ${y0+5}`);
+    document.getElementById("yA1").setAttribute("d", `M ${x0} ${y1} L ${x0-5} ${y1+11}`);
+    document.getElementById("yA2").setAttribute("d", `M ${x0} ${y1} L ${x0+5} ${y1+11}`);
+  }
+
+  function buildTicks(){
+    tickLayer.innerHTML = "";
+    gridLayer.innerHTML = "";
+
+    current.tTicks.forEach(T => {
+      const x = xFromT(T);
+      if(x < plot.x || x > plot.x + plot.w) return;
+
+      const tick = document.createElementNS(NS,"path");
+      tick.setAttribute("d", `M ${x} ${plot.y+plot.h} L ${x} ${plot.y+plot.h+6}`);
+      tick.setAttribute("class", "tick");
+      tickLayer.appendChild(tick);
+
+      const grid = document.createElementNS(NS,"path");
+      grid.setAttribute("d", `M ${x} ${plot.y} L ${x} ${plot.y+plot.h}`);
+      grid.setAttribute("class", "grid");
+      gridLayer.appendChild(grid);
+
+      const label = document.createElementNS(NS,"text");
+      label.setAttribute("x", x);
+      label.setAttribute("y", plot.y+plot.h+22);
+      label.setAttribute("text-anchor", "middle");
+      label.setAttribute("class", "small");
+      label.textContent = String(T).replace(".", ",");
+      tickLayer.appendChild(label);
+    });
+
+    current.pTicks.forEach(P => {
+      const y = yFromP(P);
+      if(y < plot.y || y > plot.y + plot.h) return;
+
+      const tick = document.createElementNS(NS,"path");
+      tick.setAttribute("d", `M ${plot.x-6} ${y} L ${plot.x} ${y}`);
+      tick.setAttribute("class", "tick");
+      tickLayer.appendChild(tick);
+
+      const grid = document.createElementNS(NS,"path");
+      grid.setAttribute("d", `M ${plot.x} ${y} L ${plot.x+plot.w} ${y}`);
+      grid.setAttribute("class", "grid");
+      gridLayer.appendChild(grid);
+
+      const label = document.createElementNS(NS,"text");
+      label.setAttribute("x", plot.x-11);
+      label.setAttribute("y", y+4);
+      label.setAttribute("text-anchor", "end");
+      label.setAttribute("class", "small");
+      label.textContent = P < 1 ? String(P).replace(".", ",") : String(P);
+      tickLayer.appendChild(label);
+    });
+  }
+
+  function buildPhaseDiagram(){
+    const subSamples = makeTPSamples(current.subAnchors, "mixedSG", "Kiinteä–kaasu", 30);
+    const vapSamples = makeTPSamples(current.vapAnchors, "mixedLG", "Kaasu–neste", 26);
+    const meltSamplesRaw = makeTPSamples(current.meltAnchors, "mixedSL", "Kiinteä–neste", 30);
+
+    boundarySamples = [...subSamples, ...vapSamples, ...meltSamplesRaw];
+
+    subPathEl.setAttribute("d", pathFromSamples(subSamples));
+    vapPathEl.setAttribute("d", pathFromSamples(vapSamples));
+    meltPathEl.setAttribute("d", pathFromSamples(meltSamplesRaw));
+
+    const meltFromTriple = current.key === "water" ? meltSamplesRaw.slice().reverse() : meltSamplesRaw.slice();
+    const meltHigh = meltFromTriple[meltFromTriple.length - 1];
+
+    const leftBottom = [plot.x, plot.y+plot.h];
+    const rightBottom = [plot.x+plot.w, plot.y+plot.h];
+    const topLeft = [plot.x, plot.y];
+    const topRight = [plot.x+plot.w, plot.y];
+
+    const triple = [xFromT(current.triple.T), yFromP(current.triple.P)];
+    const critical = [xFromT(current.critical.T), yFromP(current.critical.P)];
+
+    const gasPath =
+      `M ${leftBottom[0]} ${leftBottom[1]} ` +
+      subSamples.map(p=>`L ${p.x} ${p.y}`).join(" ") + " " +
+      vapSamples.map(p=>`L ${p.x} ${p.y}`).join(" ") + " " +
+      `L ${rightBottom[0]} ${rightBottom[1]} Z`;
+
+    const liquidPath =
+      `M ${triple[0]} ${triple[1]} ` +
+      meltFromTriple.map(p=>`L ${p.x} ${p.y}`).join(" ") + " " +
+      `L ${topRight[0]} ${topRight[1]} L ${critical[0]} ${critical[1]} ` +
+      vapSamples.slice().reverse().map(p=>`L ${p.x} ${p.y}`).join(" ") +
+      " Z";
+
+    const solidPath =
+      `M ${topLeft[0]} ${topLeft[1]} L ${meltHigh.x} ${meltHigh.y} ` +
+      meltFromTriple.slice().reverse().map(p=>`L ${p.x} ${p.y}`).join(" ") + " " +
+      subSamples.slice().reverse().map(p=>`L ${p.x} ${p.y}`).join(" ") +
+      ` L ${leftBottom[0]} ${leftBottom[1]} L ${topLeft[0]} ${topLeft[1]} Z`;
+
+    gasFillEl.setAttribute("d", gasPath);
+    liquidFillEl.setAttribute("d", liquidPath);
+    solidFillEl.setAttribute("d", solidPath);
+
+    tripleDotEl.setAttribute("cx", triple[0]);
+    tripleDotEl.setAttribute("cy", triple[1]);
+    tripleLabelEl.setAttribute("x", triple[0]-7);
+    tripleLabelEl.setAttribute("y", triple[1]-8);
+    tripleLabelEl.setAttribute("text-anchor", "end");
+
+    criticalDotEl.setAttribute("cx", critical[0]);
+    criticalDotEl.setAttribute("cy", critical[1]);
+    criticalLabelEl.setAttribute("x", critical[0]-8);
+    criticalLabelEl.setAttribute("y", critical[1]-8);
+    criticalLabelEl.setAttribute("text-anchor", "end");
+  }
+
+  function nearestBoundary(x,y){
+    let best = null;
+    let bestD = Infinity;
+
+    for(const s of boundarySamples){
+      const d = Math.hypot(x - s.x, y - s.y);
+      if(d < bestD){
+        bestD = d;
+        best = s;
+      }
+    }
+
+    return { sample:best, distance:bestD };
+  }
+
+  function applySnap(x,y,T,P){
+    const tx = xFromT(current.triple.T);
+    const ty = yFromP(current.triple.P);
+    if(Math.hypot(x - tx, y - ty) < 34){
+      return { T:current.triple.T, P:current.triple.P };
+    }
+
+    const cx = xFromT(current.critical.T);
+    const cy = yFromP(current.critical.P);
+    if(Math.hypot(x - cx, y - cy) < 26){
+      return { T:current.critical.T, P:current.critical.P };
+    }
+
+    const near = nearestBoundary(x,y);
+    if(near.sample && near.distance < 22){
+      return { T:near.sample.T, P:near.sample.P };
+    }
+
+    return { T, P };
+  }
+
+  function classifyPhase(T,P){
+    const x = xFromT(T);
+    const y = yFromP(P);
+
+    if(Math.hypot(x - xFromT(current.triple.T), y - yFromP(current.triple.P)) < 9){
+      return { label:"Kolmoispiste", mode:"triple" };
+    }
+
+    if(Math.hypot(x - xFromT(current.critical.T), y - yFromP(current.critical.P)) < 9){
+      return { label:"Kriittinen piste", mode:"critical" };
+    }
+
+    const near = nearestBoundary(x,y);
+    if(near.sample && near.distance < 12){
+      return { label:near.sample.label, mode:near.sample.mode };
+    }
+
+    const pSub = interpLogPressure(T, current.subAnchors);
+    const pVap = interpLogPressure(T, current.vapAnchors);
+    const meltT = interpTempAtPressure(P, current.meltAnchors);
+
+    if(T >= current.critical.T && P >= current.critical.P){
+      return { label:"Ylikrit.", mode:"supercritical" };
+    }
+
+    if(P < current.triple.P){
+      if(T <= current.triple.T && pSub){
+        if(Math.abs(log10(P) - log10(pSub)) < 0.08){
+          return { label:"Kiinteä–kaasu", mode:"mixedSG" };
+        }
+        return P > pSub ? { label:"Kiinteä", mode:"solid" } : { label:"Kaasu", mode:"gas" };
+      }
+      return { label:"Kaasu", mode:"gas" };
+    }
+
+    if(T < current.triple.T){
+      if(pSub){
+        if(Math.abs(log10(P) - log10(pSub)) < 0.08){
+          return { label:"Kiinteä–kaasu", mode:"mixedSG" };
+        }
+        return P > pSub ? { label:"Kiinteä", mode:"solid" } : { label:"Kaasu", mode:"gas" };
+      }
+      return { label:"Kiinteä", mode:"solid" };
+    }
+
+    if(Math.abs(T - meltT) < 1.5){
+      return { label:"Kiinteä–neste", mode:"mixedSL" };
+    }
+
+    if(T < meltT){
+      return { label:"Kiinteä", mode:"solid" };
+    }
+
+    if(pVap && Math.abs(log10(P) - log10(pVap)) < 0.055){
+      return { label:"Kaasu–neste", mode:"mixedLG" };
+    }
+
+    if(pVap && P > pVap){
+      return { label:"Neste", mode:"liquid" };
+    }
+
+    return { label:"Kaasu", mode:"gas" };
+  }
+
+  function syncControls(){
+    tempSlider.value = state.T;
+    pressSlider.value = log10(state.P);
+  }
+
+  function updatePointerAndReadout(){
+    const cx = xFromT(state.T);
+    const cy = yFromP(state.P);
+
+    pointEl.setAttribute("cx", cx);
+    pointEl.setAttribute("cy", cy);
+    hitEl.setAttribute("cx", cx);
+    hitEl.setAttribute("cy", cy);
+
+    pReadEl.textContent = `P = ${fmtPressure(state.P)} kPa`;
+    tReadEl.textContent = `T = ${fmt(state.T, 0)} °C`;
+
+    const result = classifyPhase(state.T,state.P);
+    phaseTextEl.textContent = result.label;
+
+    const newBucket = Math.floor(pressureNorm() * 5);
+    if(result.mode !== phaseMode || newBucket !== densityBucket){
+      phaseMode = result.mode;
+      densityBucket = newBucket;
+      buildParticles();
+    }
+
+    syncControls();
+  }
+
+  function svgPoint(evt){
+    const pt = svg.createSVGPoint();
+    pt.x = evt.clientX;
+    pt.y = evt.clientY;
+    return pt.matrixTransform(svg.getScreenCTM().inverse());
+  }
+
+  function onPointerDown(evt){
+    drag = true;
+    evt.preventDefault();
+    onPointerMove(evt);
+  }
+
+  function onPointerMove(evt){
+    if(!drag) return;
+    const p = svgPoint(evt);
+    const rawT = clamp(TFromX(p.x), current.Tmin, current.Tmax);
+    const rawP = clamp(PFromY(p.y), current.Pmin, current.Pmax);
+    const snapped = applySnap(p.x, p.y, rawT, rawP);
+
+    state.T = clamp(snapped.T, current.Tmin, current.Tmax);
+    state.P = clamp(snapped.P, current.Pmin, current.Pmax);
+
+    updatePointerAndReadout();
+  }
+
+  function onPointerUp(){ drag = false; }
+
+  pointEl.addEventListener("pointerdown", onPointerDown);
+  hitEl.addEventListener("pointerdown", onPointerDown);
+  svg.addEventListener("pointermove", onPointerMove);
+  svg.addEventListener("pointerup", onPointerUp);
+  svg.addEventListener("pointerleave", onPointerUp);
+
+  function moleculeMarkup(id){
+    if(current.key === "water"){
+      return `
+        <g id="${id}" class="molecule">
+          <line x1="0" y1="0" x2="-8" y2="8" stroke-width="1.4"></line>
+          <line x1="0" y1="0" x2="9" y2="7" stroke-width="1.4"></line>
+          <circle class="oxygen" cx="0" cy="0" r="6"></circle>
+          <circle class="hydrogen" cx="-9" cy="8" r="3.1"></circle>
+          <circle class="hydrogen" cx="10" cy="7" r="3.1"></circle>
+        </g>`;
+    }
+
+    return `
+      <g id="${id}" class="molecule">
+        <line x1="-9" y1="0" x2="0" y2="0" stroke-width="1.5"></line>
+        <line x1="0" y1="0" x2="9" y2="0" stroke-width="1.5"></line>
+        <circle class="oxygen" cx="-12" cy="0" r="4.5"></circle>
+        <circle class="carbon" cx="0" cy="0" r="4.2"></circle>
+        <circle class="oxygen" cx="12" cy="0" r="4.5"></circle>
+      </g>`;
+  }
+
+  function liquidVisual(level){
+    if(level <= 0){
+      liquidShape.setAttribute("d", "");
+      surfaceLine.setAttribute("d", "");
+      return;
+    }
+
+    const y = box.y + box.h - level;
+    liquidShape.setAttribute("d",
+      `M ${box.x+12} ${y}
+       C ${box.x+70} ${y-5}, ${box.x+132} ${y+5}, ${box.x+228} ${y}
+       L ${box.x+220} ${box.y+box.h-10}
+       C ${box.x+165} ${box.y+box.h+2}, ${box.x+70} ${box.y+box.h+1}, ${box.x+18} ${box.y+box.h-10}
+       Z`
+    );
+    surfaceLine.setAttribute("d",
+      `M ${box.x+14} ${y}
+       C ${box.x+74} ${y-5}, ${box.x+142} ${y+5}, ${box.x+226} ${y}`
+    );
+  }
+
+  function clearParticles(){
+    particles = [];
+    molLayer.innerHTML = "";
+    bondLayer.innerHTML = "";
+  }
+
+  function addParticle(kind, zone, preset){
+    const id = `m${particles.length}`;
+    molLayer.insertAdjacentHTML("beforeend", moleculeMarkup(id));
+    particles.push({
+      id, kind, zone,
+      x:preset.x,
+      y:preset.y,
+      baseX:preset.baseX ?? preset.x,
+      baseY:preset.baseY ?? preset.y,
+      vx:preset.vx ?? 0,
+      vy:preset.vy ?? 0,
+      a:preset.a ?? 0,
+      va:preset.va ?? 0
+    });
+  }
+
+  function addSolidPile(zone, cols, rows){
+    const dx = zone.w / Math.max(1, cols-1);
+    const dy = zone.h / Math.max(1, rows-1);
+
+    for(let r=0; r<rows; r++){
+      for(let c=0; c<cols; c++){
+        const x = zone.x + c*dx + (r % 2 ? 8 : 0);
+        const y = zone.y + r*dy;
+        addParticle("solid", zone, {
+          x, y,
+          baseX:x,
+          baseY:y,
+          a:(c % 2 ? 15 : -15)
+        });
+      }
+    }
+  }
+
+  function addFluid(count, zone, speed, kind){
+    for(let i=0; i<count; i++){
+      const x = zone.x + 15 + Math.random() * Math.max(10, zone.w - 30);
+      const y = zone.y + 15 + Math.random() * Math.max(10, zone.h - 30);
+      addParticle(kind, zone, {
+        x, y,
+        vx:(Math.random() - .5) * speed,
+        vy:(Math.random() - .5) * speed,
+        a:Math.random() * 360,
+        va:(Math.random() - .5) * 80
+      });
+    }
+  }
+
+  function compressedFullZone(){
+    const q = pressureNorm();
+    const shrink = 0.34 * q;
+    return {
+      x: box.x + 8 + box.w * shrink * 0.5,
+      y: box.y + 10 + box.h * shrink * 0.35,
+      w: box.w - 16 - box.w * shrink,
+      h: box.h - 20 - box.h * shrink
+    };
+  }
+
+  function buildParticles(){
+    clearParticles();
+
+    const q = pressureNorm();
+    const gasCount = 10 + Math.round(q * 12);
+    const liquidCount = 24 + Math.round(q * 8);
+    const gasSpeed = 70 + tempNorm() * 70;
+
+    const full = compressedFullZone();
+    const gasTop = { x:box.x+14, y:box.y+12, w:box.w-28, h:118 - q*34 };
+    const liquidBottom = { x:box.x+14, y:box.y+155, w:box.w-28, h:74 };
+    const liquidLarge = { x:box.x+14, y:box.y+128, w:box.w-28, h:101 };
+    const solidBottom = { x:box.x+30, y:box.y+164, w:box.w-70, h:52 };
+
+    if(phaseMode === "solid"){
+      liquidVisual(0);
+      addSolidPile({ x:box.x+34, y:box.y+146, w:box.w-76, h:78 }, 5, 4);
+    } else if(phaseMode === "liquid"){
+      liquidVisual(105);
+      addFluid(liquidCount, liquidLarge, 24, "liquid");
+    } else if(phaseMode === "gas"){
+      liquidVisual(0);
+      addFluid(gasCount, full, gasSpeed, "gas");
+    } else if(phaseMode === "supercritical" || phaseMode === "critical"){
+      liquidVisual(0);
+      addFluid(22 + Math.round(q*8), compressedFullZone(), 48 + tempNorm()*55, "supercritical");
+    } else if(phaseMode === "mixedSG"){
+      liquidVisual(0);
+      addSolidPile(solidBottom, 4, 3);
+      addFluid(7 + Math.round(q*5), gasTop, gasSpeed, "gas");
+    } else if(phaseMode === "mixedSL"){
+      liquidVisual(76);
+      addSolidPile({ x:box.x+34, y:box.y+173, w:92, h:44 }, 3, 3);
+      addFluid(13 + Math.round(q*5), liquidBottom, 20, "liquid");
+    } else if(phaseMode === "mixedLG"){
+      liquidVisual(72);
+      addFluid(15 + Math.round(q*5), liquidBottom, 20, "liquid");
+      addFluid(7 + Math.round(q*5), gasTop, gasSpeed, "gas");
+    } else if(phaseMode === "triple"){
+      liquidVisual(48);
+      addSolidPile({ x:box.x+30, y:box.y+178, w:80, h:38 }, 3, 3);
+      addFluid(9, { x:box.x+118, y:box.y+170, w:92, h:50 }, 18, "liquid");
+      addFluid(7, gasTop, gasSpeed, "gas");
+    }
+  }
+
+  function drawBonds(){
+    bondLayer.innerHTML = "";
+    if(phaseMode === "gas") return;
+
+    let maxD = 0;
+    if(phaseMode === "solid") maxD = 42;
+    if(phaseMode === "liquid") maxD = 34;
+    if(phaseMode === "supercritical" || phaseMode === "critical") maxD = 32;
+    if(phaseMode === "mixedSL" || phaseMode === "mixedLG" || phaseMode === "mixedSG" || phaseMode === "triple") maxD = 34;
+    if(!maxD) return;
+
+    for(let i=0; i<particles.length; i++){
+      for(let j=i+1; j<particles.length; j++){
+        const a = particles[i];
+        const b = particles[j];
+        if(a.kind === "gas" || b.kind === "gas") continue;
+
+        const d = Math.hypot(a.x-b.x, a.y-b.y);
+        if(d < maxD){
+          const line = document.createElementNS(NS, "line");
+          line.setAttribute("class", "bond");
+          line.setAttribute("x1", a.x);
+          line.setAttribute("y1", a.y);
+          line.setAttribute("x2", b.x);
+          line.setAttribute("y2", b.y);
+          line.setAttribute("opacity", phaseMode === "solid" ? ".8" : ".42");
+          bondLayer.appendChild(line);
+        }
+      }
+    }
+  }
+
+  function constrainToZone(p){
+    const m = 12;
+    const minX = p.zone.x + m;
+    const maxX = p.zone.x + p.zone.w - m;
+    const minY = p.zone.y + m;
+    const maxY = p.zone.y + p.zone.h - m;
+
+    if(p.x < minX){ p.x = minX; p.vx *= -1; }
+    if(p.x > maxX){ p.x = maxX; p.vx *= -1; }
+    if(p.y < minY){ p.y = minY; p.vy *= -1; }
+    if(p.y > maxY){ p.y = maxY; p.vy *= -1; }
+  }
+
+  function animate(now){
+    const dt = Math.min(.04, (now-lastTime)/1000);
+    lastTime = now;
+
+    const heat = tempNorm();
+
+    particles.forEach((p,i)=>{
+      const el = document.getElementById(p.id);
+      if(!el) return;
+
+      if(p.kind === "solid"){
+        const amp = 1.1 + heat * 3.1;
+        p.x = p.baseX + Math.sin(now*.004+i*.9)*amp;
+        p.y = p.baseY + Math.cos(now*.0046+i*1.3)*amp;
+        p.a += Math.sin(now*.003+i*.2)*.5;
+      } else {
+        let speedFactor = 1;
+        if(p.kind === "liquid") speedFactor = .65 + heat*.85;
+        if(p.kind === "supercritical") speedFactor = .8 + heat*1.15;
+        if(p.kind === "gas") speedFactor = .75 + heat*1.45;
+
+        p.x += p.vx * dt * speedFactor;
+        p.y += p.vy * dt * speedFactor;
+        p.a += p.va * dt * speedFactor;
+
+        p.vx += (Math.random()-.5)*14*dt;
+        p.vy += (Math.random()-.5)*14*dt;
+
+        constrainToZone(p);
+      }
+
+      el.setAttribute("transform", `translate(${p.x.toFixed(1)} ${p.y.toFixed(1)}) rotate(${p.a.toFixed(1)})`);
+    });
+
+    drawBonds();
+    requestAnimationFrame(animate);
+  }
+
+  function configureControls(){
+    tempSlider.min = current.Tmin;
+    tempSlider.max = current.Tmax;
+    tempSlider.step = 0.1;
+
+    pressSlider.min = log10(current.Pmin);
+    pressSlider.max = log10(current.Pmax);
+    pressSlider.step = 0.001;
+
+    syncControls();
+  }
+
+  function refreshDiagram(){
+    buildAxes();
+    buildTicks();
+    buildPhaseDiagram();
+    configureControls();
+    updatePointerAndReadout();
+  }
+
+  function setSubstance(key){
+    current = substances[key];
+    state.T = current.defaultT;
+    state.P = current.defaultP;
+    phaseMode = "";
+    densityBucket = -1;
+
+    waterBtn.classList.toggle("active", key === "water");
+    co2Btn.classList.toggle("active", key === "co2");
+
+    refreshDiagram();
+  }
+
+  waterBtn.addEventListener("click", () => setSubstance("water"));
+  co2Btn.addEventListener("click", () => setSubstance("co2"));
+
+  resetBtn.addEventListener("click", () => {
+    state.T = current.defaultT;
+    state.P = current.defaultP;
+    updatePointerAndReadout();
+  });
+
+  tempSlider.addEventListener("input", () => {
+    state.T = Number(tempSlider.value);
+    updatePointerAndReadout();
+  });
+
+  pressSlider.addEventListener("input", () => {
+    state.P = Math.pow(10, Number(pressSlider.value));
+    updatePointerAndReadout();
+  });
+
+  setSubstance("water");
+  requestAnimationFrame(animate);
+})();
+</script>
+</body>
+</html>
