@@ -1,658 +1,479 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiinteä aine — lämpötilasimulaatio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Caveat', cursive;
-      background: #ffffff;
-      color: #171717;
-      min-height: 100vh;
-    }
-    .scene {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 18px 12px 20px;
-      gap: 14px;
-    }
-    .canvas-wrap {
-      position: relative;
-      width: 520px;
-      height: 440px;
-      background: #ffffff;
-    }
-    canvas { display: block; }
-    .controls {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      max-width: 620px;
-    }
-    .slider-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      width: 100%;
-    }
-    .mode-tag {
-      font-family: 'Caveat', cursive;
-      font-size: 28px;
-      font-weight: 700;
-      padding: 4px 14px;
-      border-radius: 7px 10px 8px 9px;
-      border: 3px solid #141414;
-      white-space: nowrap;
-      background: #ffffff;
-      box-shadow: 2px 3px 0 rgba(0,0,0,0.08);
-    }
-    .mode-cold {
-      color: #0d66a7;
-      transform: rotate(-1.4deg);
-      background-image: repeating-linear-gradient(-18deg, rgba(21,135,212,0.16) 0 2px, transparent 2px 7px);
-    }
-    .mode-hot {
-      color: #c53226;
-      transform: rotate(1.2deg);
-      background-image: repeating-linear-gradient(18deg, rgba(226,68,51,0.16) 0 2px, transparent 2px 7px);
-    }
-    .temp-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .temp-label {
-      font-family: 'Caveat', cursive;
-      font-size: 30px;
-      font-weight: 700;
-      color: #444;
-    }
-    .temp-value {
-      font-family: 'Caveat', cursive;
-      font-size: 42px;
-      font-weight: 700;
-      min-width: 90px;
-    }
-    .fact {
-      font-family: 'Caveat', cursive;
-      font-size: 26px;
-      font-weight: 700;
-      color: #171717;
-      text-align: center;
-      max-width: 620px;
-      line-height: 1.45;
-      padding: 10px 18px;
-      background: #ffffff;
-      border: 3px solid #141414;
-      border-radius: 12px 9px 14px 10px;
-      transform: rotate(-0.4deg);
-      box-shadow: 3px 3px 0 rgba(0,0,0,0.12);
-      background-image: repeating-linear-gradient(-12deg, rgba(245,202,46,0.22) 0 2px, transparent 2px 9px);
-    }
-    input[type=range] {
-      -webkit-appearance: none; appearance: none;
-      flex: 1; height: 10px; border-radius: 99px;
-      background: #ffffff; border: 3px solid #171717;
-      outline: none; cursor: pointer;
-      box-shadow: inset 1px 1px 0 rgba(0,0,0,0.15);
-    }
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none; appearance: none;
-      width: 30px; height: 30px; border-radius: 50%;
-      background: #ffffff; cursor: pointer;
-      border: 4px solid #171717;
-      box-shadow: 2px 2px 0 rgba(0,0,0,0.14);
-    }
-    input[type=range]::-moz-range-thumb {
-      width: 30px; height: 30px; border-radius: 50%;
-      background: #ffffff; cursor: pointer;
-      border: 4px solid #171717;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lämpölaajeneminen</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#3F3D39;
+    --muted:#8f8b84;
+    --hatch:#d8d8d8;
+    --cold:#2E86A6;
+    --coldSoft:#BFE9F5;
+    --warm:#D84A62;
+    --warm2:#F28C28;
+    --warmSoft:#FFD95A;
+    --bond:#bdb9b2;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+  }
+
+  .wrap{
+    width:100vw;
+    height:100vh;
+    min-height:360px;
+    display:grid;
+    grid-template-rows:1fr auto;
+    background:#fff;
+    overflow:hidden;
+  }
+
+  svg{
+    width:100%;
+    height:100%;
+    display:block;
+    background:#fff;
+  }
+
+  .controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:clamp(14px,3vw,34px);
+    flex-wrap:wrap;
+    padding:10px 18px 18px;
+  }
+
+  .sliderBox{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+
+  .sliderBox label{
+    font-size:clamp(15px,1.6vw,20px);
+  }
+
+  input[type="range"]{
+    width:min(390px,54vw);
+    accent-color:var(--ink);
+  }
+
+  button{
+    font:inherit;
+    font-size:clamp(14px,1.5vw,18px);
+    background:#fff;
+    color:var(--ink);
+    border:2px solid var(--ink);
+    border-radius:999px;
+    padding:6px 16px;
+    cursor:pointer;
+  }
+
+  button:active{ transform:translateY(1px); }
+
+  .sketch{
+    fill:none;
+    stroke:var(--ink);
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .thin{ stroke-width:1.8; }
+
+  .hatch{
+    stroke:var(--hatch);
+    stroke-width:1.1;
+    stroke-linecap:round;
+  }
+
+  .bond{
+    fill:none;
+    stroke:var(--bond);
+    stroke-width:1.5;
+    stroke-linecap:round;
+    opacity:.95;
+  }
+
+  .anchor{
+    fill:none;
+    stroke:#c3c0ba;
+    stroke-width:1.1;
+    stroke-dasharray:3 6;
+  }
+
+  .vibe{
+    fill:none;
+    stroke-width:1.4;
+    stroke-dasharray:4 5;
+    opacity:.9;
+  }
+
+  .atom{
+    stroke:var(--ink);
+    stroke-width:2.2;
+  }
+
+  .flow{
+    fill:none;
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:9 11;
+    opacity:.9;
+  }
+
+  .heatLine{
+    fill:none;
+    stroke:var(--warm);
+    stroke-width:2.1;
+    stroke-linecap:round;
+  }
+
+  .flameOuter{
+    fill:var(--warmSoft);
+    stroke:var(--ink);
+    stroke-width:2.2;
+  }
+
+  .flameInner{
+    fill:var(--warm2);
+    stroke:var(--ink);
+    stroke-width:1.8;
+  }
+
+  .iceShape{
+    fill:var(--coldSoft);
+    stroke:var(--ink);
+    stroke-width:2.1;
+    stroke-linejoin:round;
+  }
+
+  .iceLine{
+    fill:none;
+    stroke:var(--cold);
+    stroke-width:2;
+    stroke-linecap:round;
+  }
+
+  @media (max-width:700px){
+    input[type="range"]{ width:58vw; }
+  }
+</style>
 </head>
 <body>
-<div class="scene">
-  <div class="canvas-wrap">
-    <canvas id="c" width="520" height="440"></canvas>
-  </div>
+<div class="wrap">
+  <svg viewBox="0 0 960 520" aria-label="Lämpölaajeneminen mikrotasolla">
+    <defs>
+      <pattern id="diagHatch" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(22)">
+        <line x1="0" y1="0" x2="0" y2="14" class="hatch"></line>
+      </pattern>
+    </defs>
+
+    <g id="sampleGroup">
+      <rect id="sampleFill" x="210" y="78" width="540" height="304" rx="26" ry="26" fill="url(#diagHatch)"></rect>
+      <rect id="sampleRect" x="210" y="78" width="540" height="304" rx="26" ry="26" class="sketch"></rect>
+      <path id="sampleTop" class="sketch thin" d="M222 91 C340 84,476 90,618 86 S716 88,738 93"></path>
+      <path id="sampleBottom" class="sketch thin" d="M220 368 C346 376,512 370,642 374 S718 374,740 367"></path>
+    </g>
+
+    <g id="bondGroup"></g>
+    <g id="anchorGroup"></g>
+    <g id="vibeGroup"></g>
+    <g id="atomGroup"></g>
+
+    <g id="flowGroup">
+      <path id="flow1" class="flow" d=""></path>
+      <path id="flow2" class="flow" d=""></path>
+      <path id="flow3" class="flow" d=""></path>
+    </g>
+
+    <g id="iceGroup">
+      <path class="iceShape" d="M427 438 L454 407 L496 411 L525 441 L510 479 L466 490 L431 470 Z"></path>
+      <path class="iceLine" d="M455 423 L498 468"></path>
+      <path class="iceLine" d="M502 424 L456 471"></path>
+      <path class="iceLine" d="M477 411 L477 486"></path>
+      <path class="iceLine" d="M438 451 L517 451"></path>
+    </g>
+
+    <g id="heatGroup">
+      <path class="heatLine" d="M405 450 C392 428,420 418,406 394"></path>
+      <path class="heatLine" d="M480 452 C466 427,495 418,481 393"></path>
+      <path class="heatLine" d="M555 450 C541 427,570 418,556 394"></path>
+      <path class="flameOuter" d="M448 483 C406 466,418 425,441 407 C442 431,472 431,463 390 C503 417,521 468,479 484 C471 488,457 488,448 483 Z"></path>
+      <path class="flameInner" d="M461 482 C439 470,446 442,459 428 C461 445,479 446,476 421 C495 445,496 472,474 483 C470 485,465 485,461 482 Z"></path>
+    </g>
+  </svg>
+
   <div class="controls">
-    <div class="slider-row">
-      <span class="mode-tag mode-cold">❄️ Jäähdytä</span>
-      <input type="range" min="-30" max="100" value="20" id="tempSlider" step="1">
-      <span class="mode-tag mode-hot">🔥 Lämmitä</span>
+    <div class="sliderBox">
+      <label for="temp">Lämpötila</label>
+      <input id="temp" type="range" min="0" max="100" step="1" value="50">
     </div>
-    <div class="temp-row">
-      <span class="temp-label">Lämpötila:</span>
-      <span class="temp-value" id="tempOut">20°C</span>
-    </div>
+    <button id="reset">Nollaa</button>
   </div>
-  <div class="fact" id="factBox" style="display:none"></div>
 </div>
 
 <script>
-const canvas = document.getElementById('c');
-const ctx = canvas.getContext('2d');
-const slider = document.getElementById('tempSlider');
-const tempOut = document.getElementById('tempOut');
-const factBox = document.getElementById('factBox');
+(() => {
+  const svgNS = "http://www.w3.org/2000/svg";
 
-const W = 520, H = 440;
-const BLOCK_CX = 185, BLOCK_CY = 218;
-const MCX = 372, MCY = 210, MR = 82;
-const COLS = 5, ROWS = 4;
-const BASE_SX = 30, BASE_SY = 28;
-const BLOCK_PAD = 20;
-const MOL_R = 7.5;
+  const temp = document.getElementById("temp");
+  const reset = document.getElementById("reset");
 
-const facts = [
-  { min:-30, max:-10, text:"Jäätyminen! Atomit tuskin värisevät — aine supistuu ja kovettuu. 🥶" },
-  { min:-10, max:15,  text:"Kylmässä atomit värisevät vain vähän ja pysyvät tiukasti kidehilassaan. ❄️" },
-  { min:15,  max:30,  text:"Huoneenlämmössä atomit värisevät maltillisesti kidehilassaan — rakenne on vakaa. 😊" },
-  { min:30,  max:60,  text:"Kuumassa atomit värisevät voimakkaasti — aine laajenee lämpölaajenemisen myötä! 🌡️" },
-  { min:60,  max:101, text:"Erittäin kuumassa atomit värisevät rajusti — aine voi pian sulaa! 🔥🔥" }
-];
+  const sampleRect = document.getElementById("sampleRect");
+  const sampleFill = document.getElementById("sampleFill");
+  const sampleTop = document.getElementById("sampleTop");
+  const sampleBottom = document.getElementById("sampleBottom");
 
-let temp = 20;
-let molecules = [];
-let bWobble = [], mWobble = [], paperDots = [];
-let startTime = performance.now();
+  const bondGroup = document.getElementById("bondGroup");
+  const anchorGroup = document.getElementById("anchorGroup");
+  const vibeGroup = document.getElementById("vibeGroup");
+  const atomGroup = document.getElementById("atomGroup");
 
-function rnd(a, b) { return a + Math.random() * (b - a); }
-function hash(n) { return ((Math.sin(n * 127.1) * 43758.5453) % 1 + 1) % 1; }
-function j(n, amp) { return (hash(n) - 0.5) * amp * 2; }
-function rgba(rgb, alpha) {
-  if (rgb.startsWith('rgb(')) return rgb.replace('rgb', 'rgba').replace(')', ',' + alpha + ')');
-  if (rgb.startsWith('#')) {
-    const n = parseInt(rgb.slice(1), 16);
-    return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${alpha})`;
+  const flow1 = document.getElementById("flow1");
+  const flow2 = document.getElementById("flow2");
+  const flow3 = document.getElementById("flow3");
+
+  const heatGroup = document.getElementById("heatGroup");
+  const iceGroup = document.getElementById("iceGroup");
+
+  const cols = 7;
+  const rows = 5;
+  const neutral = 50;
+
+  const baseRect = { x:210, y:78, w:540, h:304 };
+  const centerX = baseRect.x + baseRect.w / 2;
+  const centerY = baseRect.y + baseRect.h / 2;
+
+  const atoms = [];
+  const bonds = [];
+
+  let time = 0;
+  let targetLevel = 50;
+  let currentLevel = 50;
+
+  function createNode(name, attrs = {}) {
+    const el = document.createElementNS(svgNS, name);
+    for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+    return el;
   }
-  return rgb;
-}
 
-function initTexture() {
-  paperDots = Array.from({length:115}, (_, i) => ({
-    x:rnd(0,W), y:rnd(0,H), r:rnd(0.25,0.9), a:rnd(0.03,0.075)
-  }));
-}
-function initWobble() {
-  bWobble = Array.from({length:48}, () => rnd(-1.4, 1.4));
-  mWobble = Array.from({length:54}, () => rnd(-1.4, 1.4));
-}
-
-function tempRatio(t) { return (t + 30) / 130; }
-
-function blockCol(t) {
-  const r = tempRatio(t);
-  const R = Math.round(55  + r * 195);
-  const G = Math.round(144 - r * 90);
-  const B = Math.round(225 - r * 185);
-  return { pencil: `rgb(${R},${G},${B})`, pale: `rgba(${R},${G},${B},0.08)` };
-}
-function molCol(t) {
-  const r = tempRatio(t);
-  const R = Math.round(40  + r * 205);
-  const G = Math.round(125 - r * 90);
-  const B = Math.round(230 - r * 205);
-  return `rgb(${R},${G},${B})`;
-}
-
-function getExpansion(t) { return 1 + tempRatio(t) * 0.18; }
-function getSpacing(t)   { const e = getExpansion(t); return { sx: BASE_SX*e, sy: BASE_SY*e }; }
-function getBlockDims(t) {
-  const { sx, sy } = getSpacing(t);
-  return { w: (COLS-1)*sx + BLOCK_PAD*2 + 14, h: (ROWS-1)*sy + BLOCK_PAD*2 + 10 };
-}
-function getMolBase(col, row, t) {
-  const { sx, sy } = getSpacing(t);
-  return {
-    x: BLOCK_CX + (col - (COLS-1)/2) * sx,
-    y: BLOCK_CY + (row - (ROWS-1)/2) * sy
-  };
-}
-
-function getVibAmp(t) { return 0.4 + tempRatio(t) * 9.2; }
-
-function initMolecules() {
-  molecules = [];
-  for (let row = 0; row < ROWS; row++) {
-    for (let col = 0; col < COLS; col++) {
-      molecules.push({
-        col, row,
-        phaseX: Math.random() * Math.PI * 2,
-        phaseY: Math.random() * Math.PI * 2,
-        freqX:  2.6 + Math.random() * 2.2,
-        freqY:  2.2 + Math.random() * 2.2,
-        seed:   (row * COLS + col) * 17.3,
-        cx: 0, cy: 0
-      });
-    }
+  function mixColor(a, b, t) {
+    const ah = a.replace("#", "");
+    const bh = b.replace("#", "");
+    const ar = parseInt(ah.slice(0,2), 16);
+    const ag = parseInt(ah.slice(2,4), 16);
+    const ab = parseInt(ah.slice(4,6), 16);
+    const br = parseInt(bh.slice(0,2), 16);
+    const bg = parseInt(bh.slice(2,4), 16);
+    const bb = parseInt(bh.slice(4,6), 16);
+    const rr = Math.round(ar + (br - ar) * t);
+    const rg = Math.round(ag + (bg - ag) * t);
+    const rb = Math.round(ab + (bb - ab) * t);
+    return `rgb(${rr},${rg},${rb})`;
   }
-}
 
-function updateMolecules(time) {
-  const amp = getVibAmp(temp);
-  molecules.forEach(m => {
-    const base = getMolBase(m.col, m.row, temp);
-    m.cx = base.x + Math.sin(time * m.freqX + m.phaseX) * amp;
-    m.cy = base.y + Math.cos(time * m.freqY + m.phaseY) * amp;
-  });
-}
+  function buildLattice() {
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const anchor = createNode("circle", { class:"anchor", r:3 });
+        const vibe = createNode("ellipse", { class:"vibe", rx:12, ry:9 });
+        const atom = createNode("circle", { class:"atom", r:10, fill:"#ffffff" });
 
-// ── Drawing utilities (same as balloon) ──────────────────────────────────────
+        anchorGroup.appendChild(anchor);
+        vibeGroup.appendChild(vibe);
+        atomGroup.appendChild(atom);
 
-function roughLine(x1, y1, x2, y2, color='#141414', width=2.5, seed=1) {
-  ctx.save();
-  ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = color;
-  for (let p = 0; p < 2; p++) {
-    const k = seed + p*23;
-    const mx = (x1+x2)/2 + j(k,6), my = (y1+y2)/2 + j(k+1,6);
-    ctx.beginPath();
-    ctx.moveTo(x1+j(k+2,1.7), y1+j(k+3,1.7));
-    ctx.quadraticCurveTo(mx, my, x2+j(k+4,1.7), y2+j(k+5,1.7));
-    ctx.lineWidth = width - p*0.7;
-    ctx.globalAlpha = p===0 ? 1 : 0.62;
-    ctx.stroke();
-  }
-  ctx.restore();
-}
+        atoms.push({
+          row:r,
+          col:c,
+          anchor,
+          vibe,
+          atom,
+          phaseX:Math.random() * Math.PI * 2,
+          phaseY:Math.random() * Math.PI * 2,
+          phaseR:Math.random() * Math.PI * 2,
+          x:0,
+          y:0
+        });
 
-function roughStroke(drawPath, width=3, color='#141414', passes=2, alpha=1) {
-  ctx.save();
-  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-  for (let p = 0; p < passes; p++) {
-    ctx.save();
-    ctx.translate(j(p+width,0.45), j(p+width+9,0.45));
-    drawPath();
-    ctx.strokeStyle = rgba(color, alpha * (p===0 ? 1 : 0.68));
-    ctx.lineWidth = width - p*0.55;
-    ctx.stroke();
-    ctx.restore();
-  }
-  ctx.restore();
-}
+        if (c < cols - 1) {
+          const line = createNode("line", { class:"bond" });
+          bondGroup.appendChild(line);
+          bonds.push({ type:"h", r, c, line });
+        }
 
-function hatchRect(x, y, w, h, color, spacing=8, angle=-0.55, seed=100, alpha=0.75) {
-  ctx.save();
-  ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-  ctx.translate(x+w/2, y+h/2); ctx.rotate(angle); ctx.translate(-x-w/2, -y-h/2);
-  for (let yy = y-h; yy < y+h*2; yy += spacing) {
-    roughLine(x-w*0.25, yy+j(yy+seed,3), x+w*1.25, yy+j(yy+seed+4,3), rgba(color,alpha), 2.1, yy+seed);
-  }
-  ctx.restore();
-}
-
-function hatchInEllipse(cx, cy, rx, ry, color, spacing=9, angle=-0.55, alpha=0.78, cross=false) {
-  function doHatch(a, so) {
-    ctx.save();
-    ctx.beginPath(); ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2); ctx.clip();
-    ctx.translate(cx,cy); ctx.rotate(a); ctx.translate(-cx,-cy);
-    for (let y=cy-ry*1.65; y<=cy+ry*1.65; y+=spacing) {
-      roughLine(cx-rx*1.35, y+j(y+so,2.4), cx+rx*1.35, y+j(y+so+7,2.4), rgba(color,alpha), 2.2, y+so);
-    }
-    ctx.restore();
-  }
-  doHatch(angle, 300);
-  if (cross) doHatch(angle+1.42, 900);
-}
-
-function wobblyEllipsePath(cx, cy, rx, ry, wobble, phase=0) {
-  const n = wobble.length;
-  ctx.beginPath();
-  for (let i=0; i<=n; i++) {
-    const angle = (i/n)*Math.PI*2;
-    const w = wobble[i%n] + j(i+phase, 0.35);
-    const x = cx + (rx+w)*Math.cos(angle);
-    const y = cy + (ry+w*0.75)*Math.sin(angle);
-    i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
-  }
-  ctx.closePath();
-}
-function wobblyCirclePath(cx, cy, r, wobble, phase=0) {
-  wobblyEllipsePath(cx, cy, r, r, wobble, phase);
-}
-
-// Wobbly rectangle path using stable hash-based jitter
-function wobblyRectPath(x, y, w, h, seed=0) {
-  const S = 10;
-  ctx.beginPath();
-  ctx.moveTo(x + j(seed, 2.5), y + j(seed+1, 2.5));
-  for (let i=1; i<=S; i++) ctx.lineTo(x+w*(i/S)+j(seed+i*4,1.5),    y+j(seed+i*4+2,2.5));
-  for (let i=1; i<=S; i++) ctx.lineTo(x+w+j(seed+100+i*4,2.5),       y+h*(i/S)+j(seed+100+i*4+2,1.5));
-  for (let i=1; i<=S; i++) ctx.lineTo(x+w-w*(i/S)+j(seed+200+i*4,1.5), y+h+j(seed+200+i*4+2,2.5));
-  for (let i=1; i<=S; i++) ctx.lineTo(x+j(seed+300+i*4,2.5),          y+h-h*(i/S)+j(seed+300+i*4+2,1.5));
-  ctx.closePath();
-}
-
-function hatchInRect(x, y, w, h, color, spacing=9, angle=-0.55, alpha=0.78, cross=false) {
-  function doHatch(a, so) {
-    ctx.save();
-    ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-    ctx.translate(x+w/2, y+h/2); ctx.rotate(a); ctx.translate(-x-w/2, -y-h/2);
-    for (let yy=y-h; yy<=y+h*2; yy+=spacing) {
-      roughLine(x-w*0.3, yy+j(yy+so,2.2), x+w*1.3, yy+j(yy+so+7,2.2), rgba(color,alpha), 2.2, yy+so);
-    }
-    ctx.restore();
-  }
-  doHatch(angle, 200);
-  if (cross) doHatch(angle+1.42, 800);
-}
-
-function drawSketchDot(x, y, r, color, seed=1) {
-  ctx.save();
-  ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2);
-  ctx.fillStyle = '#ffffff'; ctx.fill();
-  hatchInEllipse(x, y, r-1, r-1, color, 4, -0.55, 0.95, false);
-  roughStroke(() => { ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); }, 1.8, '#121212', 2);
-  ctx.restore();
-}
-
-function drawArrow(x1, y1, x2, y2, seed=1) {
-  roughLine(x1, y1, x2, y2, '#121212', 2.4, seed);
-  const a = Math.atan2(y2-y1, x2-x1), len=10;
-  roughLine(x2, y2, x2-Math.cos(a-0.62)*len, y2-Math.sin(a-0.62)*len, '#121212', 2.2, seed+4);
-  roughLine(x2, y2, x2-Math.cos(a+0.62)*len, y2-Math.sin(a+0.62)*len, '#121212', 2.2, seed+7);
-}
-
-// ── Scene drawing ─────────────────────────────────────────────────────────────
-
-function drawBackground() {
-  ctx.fillStyle = '#ffffff';
-  ctx.fillRect(0, 0, W, H);
-  ctx.save();
-  paperDots.forEach(d => {
-    ctx.beginPath(); ctx.arc(d.x, d.y, d.r, 0, Math.PI*2);
-    ctx.fillStyle = `rgba(0,0,0,${d.a})`; ctx.fill();
-  });
-  ctx.restore();
-}
-
-function drawSolidBlock(t) {
-  const { w, h } = getBlockDims(t);
-  const col = blockCol(t);
-  const x = BLOCK_CX - w/2, y = BLOCK_CY - h/2;
-  const depth = 14; // 3-D side depth
-
-  // ── Right side face ──
-  ctx.save();
-  ctx.beginPath();
-  ctx.moveTo(x+w,     y);
-  ctx.lineTo(x+w+depth, y-depth*0.55);
-  ctx.lineTo(x+w+depth, y+h-depth*0.55);
-  ctx.lineTo(x+w,     y+h);
-  ctx.closePath();
-  ctx.fillStyle = '#ffffff'; ctx.fill();
-  hatchInRect(x+w, y-depth, depth+4, h+depth, col.pencil, 6, 0.8, 0.55, false);
-  roughStroke(() => {
-    ctx.beginPath();
-    ctx.moveTo(x+w, y); ctx.lineTo(x+w+depth, y-depth*0.55);
-    ctx.lineTo(x+w+depth, y+h-depth*0.55); ctx.lineTo(x+w, y+h);
-  }, 2.5, '#121212', 2);
-  ctx.restore();
-
-  // ── Top face ──
-  ctx.save();
-  ctx.beginPath();
-  ctx.moveTo(x,         y);
-  ctx.lineTo(x+w,       y);
-  ctx.lineTo(x+w+depth, y-depth*0.55);
-  ctx.lineTo(x+depth,   y-depth*0.55);
-  ctx.closePath();
-  ctx.fillStyle = '#ffffff'; ctx.fill();
-  hatchInRect(x, y-depth, w+depth, depth+4, col.pencil, 6, -0.3, 0.5, false);
-  roughStroke(() => {
-    ctx.beginPath();
-    ctx.moveTo(x, y); ctx.lineTo(x+w, y);
-    ctx.lineTo(x+w+depth, y-depth*0.55); ctx.lineTo(x+depth, y-depth*0.55); ctx.closePath();
-  }, 2.5, '#121212', 2);
-  ctx.restore();
-
-  // ── Front face ──
-  ctx.save();
-  ctx.beginPath(); ctx.rect(x, y, w, h);
-  ctx.fillStyle = '#ffffff'; ctx.fill();
-  hatchInRect(x, y, w, h, col.pencil, Math.max(7, 13 - tempRatio(t)*5), -0.55, 0.72, temp > 55 || temp < -5);
-
-  // Shine strokes top-left area
-  ctx.save();
-  ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-  for (let i=0; i<8; i++) {
-    roughLine(x+i*9+4, y+4, x+i*9+22, y-4, 'rgba(255,255,255,0.72)', 2.2, 520+i);
-  }
-  ctx.restore();
-
-  roughStroke(() => wobblyRectPath(x, y, w, h, 11), 3.6, '#121212', 2);
-  ctx.restore();
-}
-
-function drawLatticeGridInBlock(t) {
-  // Draw faint grid lines connecting base molecule positions (inside block clip)
-  const { w, h } = getBlockDims(t);
-  const x = BLOCK_CX - w/2, y = BLOCK_CY - h/2;
-  ctx.save();
-  ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-  const col = blockCol(t);
-  // Horizontal lines
-  for (let row=0; row<ROWS; row++) {
-    for (let col2=0; col2<COLS-1; col2++) {
-      const a = getMolBase(col2,   row, t);
-      const b = getMolBase(col2+1, row, t);
-      roughLine(a.x, a.y, b.x, b.y, rgba(blockCol(t).pencil, 0.28), 1.4, 300+row*10+col2);
-    }
-  }
-  // Vertical lines
-  for (let col2=0; col2<COLS; col2++) {
-    for (let row=0; row<ROWS-1; row++) {
-      const a = getMolBase(col2, row,   t);
-      const b = getMolBase(col2, row+1, t);
-      roughLine(a.x, a.y, b.x, b.y, rgba(blockCol(t).pencil, 0.28), 1.4, 400+col2*10+row);
-    }
-  }
-  ctx.restore();
-}
-
-function drawMoleculesInBlock(t) {
-  const { w, h } = getBlockDims(t);
-  const x = BLOCK_CX - w/2, y = BLOCK_CY - h/2;
-  ctx.save();
-  ctx.beginPath(); ctx.rect(x+2, y+2, w-4, h-4); ctx.clip();
-  const mc = molCol(t);
-  const spd = getVibAmp(t);
-  molecules.forEach((m, i) => {
-    if (spd > 3) {
-      const base = getMolBase(m.col, m.row, t);
-      roughLine(base.x, base.y, m.cx, m.cy, rgba(mc, 0.22), 2.5, 700+i);
-    }
-    drawSketchDot(m.cx, m.cy, MOL_R, mc, m.seed);
-  });
-  ctx.restore();
-}
-
-function drawMagnifier(t) {
-  const lensWobble = mWobble;
-  const zoom = 2.5;
-
-  ctx.save();
-  const hx = MCX + MR*0.62, hy = MCY + MR*0.62;
-
-  // Handle
-  ctx.save();
-  ctx.translate(hx, hy); ctx.rotate(Math.PI/4);
-  ctx.beginPath(); ctx.roundRect(-10, -4, 70, 20, 9);
-  ctx.fillStyle = '#ffffff'; ctx.fill(); ctx.clip();
-  hatchRect(-10, -4, 72, 22, '#8a5a19', 7, -0.35, 655, 0.9);
-  ctx.restore();
-  roughLine(hx-3, hy-3, hx+48, hy+48, '#121212', 16, 611);
-  roughLine(hx-3, hy-3, hx+48, hy+48, '#9b671e', 10, 612);
-  roughLine(hx-3, hy-3, hx+48, hy+48, '#121212', 2.5, 613);
-
-  // Lens content
-  ctx.save();
-  wobblyCirclePath(MCX, MCY, MR-7, lensWobble, 4);
-  ctx.clip();
-  ctx.fillStyle = 'rgba(255,255,255,0.97)'; ctx.fillRect(MCX-MR, MCY-MR, MR*2, MR*2);
-  hatchInEllipse(MCX, MCY, MR-10, MR-10, '#64b7eb', 12, -0.6, 0.20, false);
-
-  // Bonds between adjacent molecules (zoomed)
-  molecules.forEach((m1, i1) => {
-    molecules.forEach((m2, i2) => {
-      if (i1 >= i2) return;
-      const dc = Math.abs(m1.col-m2.col), dr = Math.abs(m1.row-m2.row);
-      if (!((dc===1&&dr===0)||(dc===0&&dr===1))) return;
-      const ox1 = (m1.cx-BLOCK_CX)*zoom+MCX, oy1 = (m1.cy-BLOCK_CY)*zoom+MCY;
-      const ox2 = (m2.cx-BLOCK_CX)*zoom+MCX, oy2 = (m2.cy-BLOCK_CY)*zoom+MCY;
-      const d1 = Math.hypot(ox1-MCX, oy1-MCY), d2 = Math.hypot(ox2-MCX, oy2-MCY);
-      if (d1 < MR-8 || d2 < MR-8) {
-        // Color-code: stretched = warm, compressed = cool
-        const bLen = Math.hypot(ox2-ox1, oy2-oy1);
-        const restLen = BASE_SX * zoom * getExpansion(t);
-        const ratio = bLen / restLen;
-        const bc = ratio > 1.06 ? rgba(molCol(t), 0.7)
-                 : ratio < 0.94 ? 'rgba(60,100,220,0.55)'
-                 : 'rgba(100,100,110,0.55)';
-        roughLine(ox1, oy1, ox2, oy2, bc, 3.2, 2000+i1*20+i2);
+        if (r < rows - 1) {
+          const line = createNode("line", { class:"bond" });
+          bondGroup.appendChild(line);
+          bonds.push({ type:"v", r, c, line });
+        }
       }
+    }
+  }
+
+  function getAtom(row, col) {
+    return atoms[row * cols + col];
+  }
+
+  function getNodePoint(rect, row, col) {
+    const spacingX = rect.w / (cols + 1);
+    const spacingY = rect.h / (rows + 1);
+    return {
+      x: rect.x + spacingX * (col + 1),
+      y: rect.y + spacingY * (row + 1)
+    };
+  }
+
+  function updateSampleBox(level) {
+    const heat = Math.max(0, level - neutral) / neutral;
+    const cold = Math.max(0, neutral - level) / neutral;
+
+    const scaleX = 1 + heat * 0.14 - cold * 0.05;
+    const scaleY = 1 + heat * 0.11 - cold * 0.04;
+
+    const w = baseRect.w * scaleX;
+    const h = baseRect.h * scaleY;
+    const x = centerX - w / 2;
+    const y = centerY - h / 2;
+    const right = x + w;
+    const bottom = y + h;
+
+    sampleRect.setAttribute("x", x);
+    sampleRect.setAttribute("y", y);
+    sampleRect.setAttribute("width", w);
+    sampleRect.setAttribute("height", h);
+
+    sampleFill.setAttribute("x", x);
+    sampleFill.setAttribute("y", y);
+    sampleFill.setAttribute("width", w);
+    sampleFill.setAttribute("height", h);
+
+    sampleTop.setAttribute(
+      "d",
+      `M${x+12} ${y+13} C${x+118} ${y+5},${x+258} ${y+11},${x+396} ${y+7} S${right-35} ${y+9},${right-12} ${y+14}`
+    );
+
+    sampleBottom.setAttribute(
+      "d",
+      `M${x+10} ${bottom-14} C${x+130} ${bottom-6},${x+296} ${bottom-12},${x+426} ${bottom-8} S${right-30} ${bottom-8},${right-10} ${bottom-15}`
+    );
+
+    return { x, y, w, h, heat, cold, bottom };
+  }
+
+  function updateAtoms(rect, level, t) {
+    const heatLevel = level / 100;
+    const ampX = 1.6 + heatLevel * 11.5;
+    const ampY = 1.4 + heatLevel * 9.5;
+    const vibeRX = 10 + heatLevel * 22;
+    const vibeRY = 8 + heatLevel * 17;
+
+    const atomColor = mixColor("#2E86A6", "#D84A62", heatLevel);
+    const vibeColor = mixColor("#9fd8e8", "#f2a6b3", heatLevel);
+
+    for (const item of atoms) {
+      const base = getNodePoint(rect, item.row, item.col);
+
+      item.anchor.setAttribute("cx", base.x);
+      item.anchor.setAttribute("cy", base.y);
+
+      item.vibe.setAttribute("cx", base.x);
+      item.vibe.setAttribute("cy", base.y);
+      item.vibe.setAttribute("rx", vibeRX);
+      item.vibe.setAttribute("ry", vibeRY);
+      item.vibe.setAttribute("stroke", vibeColor);
+
+      const x = base.x + Math.sin(t * (0.035 + heatLevel * 0.06) + item.phaseX) * ampX;
+      const y = base.y + Math.cos(t * (0.04 + heatLevel * 0.055) + item.phaseY) * ampY;
+
+      item.x = x;
+      item.y = y;
+
+      item.atom.setAttribute("cx", x);
+      item.atom.setAttribute("cy", y);
+      item.atom.setAttribute("fill", atomColor);
+      item.atom.setAttribute("r", 9.6 + 0.25 * Math.sin(t * 0.05 + item.phaseR));
+    }
+  }
+
+  function updateBonds() {
+    for (const b of bonds) {
+      const a1 = getAtom(b.r, b.c);
+      const a2 = b.type === "h"
+        ? getAtom(b.r, b.c + 1)
+        : getAtom(b.r + 1, b.c);
+
+      b.line.setAttribute("x1", a1.x);
+      b.line.setAttribute("y1", a1.y);
+      b.line.setAttribute("x2", a2.x);
+      b.line.setAttribute("y2", a2.y);
+    }
+  }
+
+  function updateFlow(rect, level, t) {
+    const heat = Math.max(0, level - neutral) / neutral;
+    const cold = Math.max(0, neutral - level) / neutral;
+    const flowAmount = Math.max(heat, cold);
+
+    flow1.setAttribute("d", `M422 408 C430 376,432 347,436 ${rect.bottom - 6}`);
+    flow2.setAttribute("d", `M480 404 C480 372,480 344,480 ${rect.bottom - 6}`);
+    flow3.setAttribute("d", `M538 408 C530 376,528 347,524 ${rect.bottom - 6}`);
+
+    const color = heat >= cold ? "#D84A62" : "#2E86A6";
+    const dashShift = (heat >= cold ? -1 : 1) * t * (0.45 + flowAmount * 0.75);
+
+    [flow1, flow2, flow3].forEach((f, i) => {
+      f.setAttribute("stroke", color);
+      f.setAttribute("opacity", 0.12 + flowAmount * 0.88);
+      f.style.strokeDashoffset = String(dashShift - i * 9);
     });
-  });
-
-  // Zoomed molecules
-  const mc = molCol(t);
-  const vibAmp = getVibAmp(t);
-  molecules.forEach((m, i) => {
-    const ox = (m.cx-BLOCK_CX)*zoom+MCX;
-    const oy = (m.cy-BLOCK_CY)*zoom+MCY;
-    if (Math.hypot(ox-MCX, oy-MCY) < MR-18) {
-      if (vibAmp > 3) {
-        const base = getMolBase(m.col, m.row, t);
-        const box = (base.x-BLOCK_CX)*zoom+MCX, boy = (base.y-BLOCK_CY)*zoom+MCY;
-        roughLine(box, boy, ox, oy, rgba(mc, 0.28), 3.5, 880+i);
-      }
-      drawSketchDot(ox, oy, MOL_R*zoom*0.46, mc, 900+i);
-    }
-  });
-  ctx.restore();
-
-  // Glass rim
-  roughStroke(() => wobblyCirclePath(MCX, MCY, MR,   lensWobble, 2), 8.5, '#121212', 2);
-  roughStroke(() => wobblyCirclePath(MCX, MCY, MR-3,  lensWobble, 7), 4.6, '#c79617', 2, 0.92);
-  roughStroke(() => wobblyCirclePath(MCX, MCY, MR-8,  lensWobble, 10), 1.8, '#121212', 1, 0.82);
-
-  // Glare
-  roughLine(MCX-43, MCY-54, MCX-8,  MCY-68, 'rgba(255,255,255,0.9)', 4.5, 711);
-  roughLine(MCX-50, MCY-42, MCX-25, MCY-55, 'rgba(255,255,255,0.75)', 3,   712);
-  roughLine(MCX+32, MCY+48, MCX+53, MCY+28, 'rgba(120,165,205,0.25)', 3,   713);
-  ctx.restore();
-}
-
-function drawThermometer(t) {
-  const ratio = tempRatio(t);
-  const bh=130, bw=17, bx=20, by=120;
-  const R=Math.round(55+ratio*200), G=Math.round(145-ratio*90), B=Math.round(228-ratio*188);
-  const fill = `rgb(${R},${G},${B})`;
-  ctx.save();
-  ctx.beginPath(); ctx.roundRect(bx, by, bw, bh, 8);
-  ctx.fillStyle='#ffffff'; ctx.fill();
-  roughStroke(()=>{ctx.beginPath(); ctx.roundRect(bx,by,bw,bh,8);}, 3,'#121212',2);
-  const fh=bh*ratio, fy=by+bh-fh;
-  ctx.save();
-  ctx.beginPath(); ctx.roundRect(bx+3,fy,bw-6,fh,6); ctx.clip();
-  ctx.fillStyle=rgba(fill,0.12); ctx.fillRect(bx+2,fy,bw-4,fh);
-  hatchRect(bx+2,fy,bw-4,fh,fill,5,-0.55,730,0.86);
-  ctx.restore();
-  ctx.beginPath(); ctx.arc(bx+bw/2,by+bh+10,14,0,Math.PI*2);
-  ctx.fillStyle='#ffffff'; ctx.fill();
-  hatchInEllipse(bx+bw/2,by+bh+10,12,12,fill,5,-0.55,0.88,true);
-  roughStroke(()=>{ctx.beginPath(); ctx.arc(bx+bw/2,by+bh+10,14,0,Math.PI*2);},3,'#121212',2);
-  ctx.strokeStyle='#121212'; ctx.lineWidth=1.7;
-  ctx.font='19px Caveat, cursive'; ctx.fillStyle='#444'; ctx.textAlign='left';
-  [[-30,0],[0,0.23],[20,0.38],[60,0.69],[100,1]].forEach(([label,pos],i)=>{
-    const ty=by+bh*(1-pos);
-    roughLine(bx+bw,ty,bx+bw+7,ty,'#121212',1.5,770+i);
-    ctx.fillText(label+'°', bx+bw+9+j(i,1), ty+5+j(i+4,1));
-  });
-  ctx.restore();
-}
-
-function drawLabels(t) {
-  const { w, h } = getBlockDims(t);
-  const bx = BLOCK_CX - w/2, by = BLOCK_CY - h/2;
-  const state = t < 0 ? 'Jäätyminen!' : t < 15 ? 'Kylmä' : t < 35 ? 'Lämmin' : t < 65 ? 'Kuuma!' : 'ERITTÄIN KUUMA!!';
-  const sz = t < -15 || t > 60 ? 35 : 30;
-
-  ctx.save();
-  ctx.font = `bold ${sz}px Caveat, cursive`;
-  ctx.textAlign = 'center';
-  ctx.fillStyle = blockCol(t).pencil;
-  ctx.fillText(state, BLOCK_CX+j(t,1.2), by-22+j(t+1,1.2));
-  roughLine(BLOCK_CX-44, by-16, BLOCK_CX+44, by-18, rgba(blockCol(t).pencil, 0.45), 2, 1001);
-  ctx.restore();
-
-  // "kidehila" label pointing to block
-  ctx.save();
-  ctx.font = 'bold 20px Caveat, cursive';
-  ctx.fillStyle = '#121212'; ctx.textAlign = 'left';
-  ctx.fillText('kidehila', bx + w + 22 + j(10,1), BLOCK_CY + 6 + j(11,1));
-  drawArrow(bx + w + 20, BLOCK_CY, bx + w + 3, BLOCK_CY, 1060);
-  ctx.restore();
-
-  // Expansion arrows when hot or cold
-  if (t > 45) {
-    ctx.save();
-    ctx.font = 'bold 17px Caveat, cursive';
-    ctx.fillStyle = '#c53226'; ctx.textAlign = 'center';
-    ctx.fillText('laajenee!', BLOCK_CX, BLOCK_CY + h/2 + 26 + j(20,1));
-    drawArrow(BLOCK_CX - 30, BLOCK_CY + h/2 + 36, BLOCK_CX - 60, BLOCK_CY + h/2 + 36, 1090);
-    drawArrow(BLOCK_CX + 30, BLOCK_CY + h/2 + 36, BLOCK_CX + 60, BLOCK_CY + h/2 + 36, 1092);
-    ctx.restore();
   }
-  if (t < -5) {
-    ctx.save();
-    ctx.font = 'bold 17px Caveat, cursive';
-    ctx.fillStyle = '#0d66a7'; ctx.textAlign = 'center';
-    ctx.fillText('supistuu!', BLOCK_CX, BLOCK_CY + h/2 + 26 + j(20,1));
-    drawArrow(BLOCK_CX - 60, BLOCK_CY + h/2 + 36, BLOCK_CX - 30, BLOCK_CY + h/2 + 36, 1094);
-    drawArrow(BLOCK_CX + 60, BLOCK_CY + h/2 + 36, BLOCK_CX + 30, BLOCK_CY + h/2 + 36, 1096);
-    ctx.restore();
+
+  function updateIcons(rect) {
+    heatGroup.style.opacity = Math.max(0, rect.heat * 1.2);
+    iceGroup.style.opacity = Math.max(0, rect.cold * 1.2);
+
+    heatGroup.setAttribute("transform", `translate(0 ${rect.heat * -5})`);
+    iceGroup.setAttribute("transform", `translate(0 ${rect.cold * -4})`);
   }
-}
 
-function getFact(t) {
-  for (const f of facts) if (t >= f.min && t < f.max) return f.text;
-  return facts[facts.length-1].text;
-}
+  function tick() {
+    time += 1;
+    currentLevel += (targetLevel - currentLevel) * 0.08;
 
-function frame() {
-  const time = (performance.now() - startTime) / 1000;
-  ctx.clearRect(0, 0, W, H);
-  updateMolecules(time);
-  drawBackground();
-  drawSolidBlock(temp);
-  drawLatticeGridInBlock(temp);
-  drawMoleculesInBlock(temp);
-  drawMagnifier(temp);
-  drawThermometer(temp);
-  drawLabels(temp);
-  requestAnimationFrame(frame);
-}
+    const rect = updateSampleBox(currentLevel);
+    updateAtoms(rect, currentLevel, time);
+    updateBonds();
+    updateFlow(rect, currentLevel, time);
+    updateIcons(rect);
 
-slider.addEventListener('input', () => {
-  temp = parseInt(slider.value);
-  const ratio = tempRatio(temp);
-  const R=Math.round(55+ratio*200), G=Math.round(145-ratio*90), B=Math.round(228-ratio*188);
-  tempOut.textContent = temp + '°C';
-  tempOut.style.color = `rgb(${Math.max(0,R-30)},${Math.max(0,G-20)},${Math.max(0,B-40)})`;
-  factBox.textContent = getFact(temp);
-});
+    requestAnimationFrame(tick);
+  }
 
-initTexture();
-initWobble();
-initMolecules();
-document.fonts.ready.then(() => { frame(); });
+  temp.addEventListener("input", () => {
+    targetLevel = Number(temp.value);
+  });
+
+  reset.addEventListener("click", () => {
+    temp.value = 50;
+    targetLevel = 50;
+  });
+
+  buildLattice();
+  tick();
+})();
 </script>
 </body>
 </html>
