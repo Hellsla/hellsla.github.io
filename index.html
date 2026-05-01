@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lauri Hellsten — Physics Teacher</title>
+  <title>Lauri Hellsten — STEAM Teacher</title>
   <meta name="description" content="Lauri Hellsten's demo site: simulations, slides, flashcards, and course summaries from upper-secondary physics teaching." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,7 +62,7 @@
       z-index: 1;
       width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
-      padding: 26px 0 56px;
+      padding: 22px 0 42px;
     }
 
     /* ---------- Header ---------- */
@@ -70,8 +70,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 22px;
-      margin-bottom: 56px;
+      padding-bottom: 16px;
+      margin-bottom: 34px;
       border-bottom: 1px solid var(--line);
       gap: 16px;
     }
@@ -113,39 +113,28 @@
     }
     nav a:hover { color: var(--ink); background: var(--bg-tint); }
 
-    /* ---------- Lang toggle ---------- */
-    .lang {
+    .flag-link {
+      width: 36px;
+      height: 36px;
       display: inline-flex;
       align-items: center;
-      padding: 3px;
+      justify-content: center;
       border: 1px solid var(--line);
       border-radius: 999px;
       background: var(--surface);
+      font-size: 1.05rem;
+      transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
     }
 
-    .lang-link {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      padding: 5px 10px;
-      border-radius: 999px;
-      color: var(--ink-3);
-      transition: color 180ms ease, background 180ms ease;
+    .flag-link:hover {
+      border-color: var(--accent);
+      background: var(--bg-tint);
+      transform: translateY(-1px);
     }
-
-    .lang-link:hover { color: var(--ink); }
-
-    .lang-link.is-active {
-      color: var(--bg);
-      background: var(--accent-deep);
-    }
-
-    .lang-link.is-active:hover { color: var(--bg); }
 
     /* ---------- Hero ---------- */
     .hero {
-      padding: 12px 0 72px;
+      padding: 6px 0 42px;
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
     }
 
@@ -158,7 +147,7 @@
       color: var(--accent-deep);
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      margin-bottom: 32px;
+      margin-bottom: 22px;
     }
     .eyebrow::before {
       content: "";
@@ -168,7 +157,7 @@
     }
 
     .lede {
-      max-width: 30ch;
+      max-width: 36ch;
       margin: 0;
       color: var(--ink);
       font-family: var(--serif);
@@ -197,18 +186,18 @@
     /* ---------- Profile ---------- */
     .profile {
       display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 44px;
+      grid-template-columns: 190px 1fr;
+      gap: 34px;
       align-items: start;
-      padding: 44px 0;
+      padding: 32px 0;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 80ms both;
     }
 
     .portrait {
-      width: 220px;
-      height: 220px;
+      width: 190px;
+      height: 190px;
       border-radius: 22px;
       overflow: hidden;
       background: linear-gradient(135deg, #f7f3ec, #efeadd);
@@ -246,8 +235,16 @@
       margin-bottom: 14px;
     }
 
+    .profile-title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px;
+      flex-wrap: wrap;
+    }
+
     .profile h2 {
-      margin: 0 0 16px;
+      margin: 0;
       font-family: var(--serif);
       font-size: 1.92rem;
       font-weight: 400;
@@ -255,8 +252,14 @@
       line-height: 1.1;
     }
 
+    .profile .flag-link {
+      width: 32px;
+      height: 32px;
+      font-size: 0.98rem;
+    }
+
     .profile p {
-      margin: 0 0 22px;
+      margin: 0 0 16px;
       color: var(--ink-2);
       max-width: 64ch;
       line-height: 1.65;
@@ -267,7 +270,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin: 0 0 24px;
+      margin: 0 0 18px;
       padding: 0;
       list-style: none;
     }
@@ -320,12 +323,12 @@
 
     /* ---------- Materials ---------- */
     .materials {
-      padding: 56px 0 12px;
+      padding: 38px 0 8px;
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 160ms both;
     }
 
     .materials-note {
-      margin: 0 0 32px;
+      margin: 0 0 22px;
       font-family: var(--serif);
       font-style: italic;
       font-size: 1.02rem;
@@ -346,14 +349,14 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      gap: 14px;
     }
 
     .category {
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 18px;
-      padding: 28px;
+      padding: 22px;
       transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
       position: relative;
       overflow: hidden;
@@ -380,8 +383,8 @@
       align-items: flex-start;
       justify-content: space-between;
       gap: 14px;
-      margin-bottom: 22px;
-      padding-bottom: 18px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
       border-bottom: 1px solid var(--line-2);
     }
 
@@ -436,12 +439,51 @@
 
     .links { display: grid; }
 
+    .more-links {
+      margin-top: 4px;
+    }
+
+    .more-links summary {
+      width: fit-content;
+      margin-top: 12px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--accent-deep);
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+    }
+
+    .more-links summary:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      transform: translateY(-1px);
+    }
+
+    .more-links summary::marker,
+    .more-links summary::-webkit-details-marker {
+      display: none;
+      content: "";
+    }
+
+    .show-less-text { display: none; }
+    .more-links[open] .show-more-text { display: none; }
+    .more-links[open] .show-less-text { display: inline; }
+
+    .extra-links {
+      display: grid;
+      margin-top: 6px;
+    }
+
     .item {
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: center;
       gap: 12px;
-      padding: 14px 0;
+      padding: 11px 0;
       border-bottom: 1px solid var(--line-2);
       transition: padding 220ms ease;
     }
@@ -483,8 +525,8 @@
 
     /* ---------- Footer ---------- */
     footer {
-      margin-top: 64px;
-      padding-top: 28px;
+      margin-top: 42px;
+      padding-top: 20px;
       border-top: 1px solid var(--line);
       display: flex;
       justify-content: space-between;
@@ -519,16 +561,16 @@
     /* ---------- Responsive ---------- */
     @media (max-width: 760px) {
       .page { padding: 18px 0 40px; }
-      header { padding-bottom: 18px; margin-bottom: 36px; flex-wrap: wrap; }
+      header { padding-bottom: 14px; margin-bottom: 28px; flex-wrap: wrap; }
       .header-right { gap: 8px; }
-      .hero { padding: 8px 0 48px; }
+      .hero { padding: 6px 0 34px; }
       .profile {
         grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 32px 0;
+        gap: 22px;
+        padding: 26px 0;
       }
       .portrait { width: 140px; height: 140px; padding: 8px; }
-      .materials { padding-top: 48px; }
+      .materials { padding-top: 34px; }
       .grid { grid-template-columns: 1fr; }
       .category { padding: 22px; }
       nav a { padding: 7px 10px; font-size: 0.84rem; }
@@ -552,11 +594,7 @@
           <a href="#materials">Materials</a>
           <a href="mailto:lauri.k.hellsten@gmail.com">Contact</a>
         </nav>
-        <div class="lang" role="group" aria-label="Language">
-          <a class="lang-link" href="./fi.html" aria-label="Finnish">FI</a>
-          <a class="lang-link is-active" href="#" aria-current="true" aria-label="English">EN</a>
-        </div>
-      </div>
+</div>
     </header>
 
     <main id="top">
@@ -574,12 +612,15 @@
         </div>
         <div>
           <div class="profile-meta">§ 01 — About</div>
-          <h2>Lauri Hellsten</h2>
+          <div class="profile-title-row">
+            <h2>Lauri Hellsten</h2>
+            <a class="flag-link" href="https://en.wikipedia.org/wiki/Finland" target="_blank" rel="noopener noreferrer" aria-label="Finland on Wikipedia" title="Finland on Wikipedia">🇫🇮</a>
+          </div>
           <p>
-            I am a STEM teacher passionate about developing teaching practice. For the past 15 years, hands-on and student-activating pedagogical approaches have been at the heart of my work. As a teacher, I have developed STEM education, assessment, flipped learning pedagogy, and the meaningful use of ICT in teaching. I have also written and produced a wide range of learning materials for both teachers and students. STEM outreach and international projects are especially meaningful to me. I believe that together, we are more than the sum of our parts.
+            I am a STEAM teacher passionate about developing teaching practice. For the past 15 years, hands-on and student-activating pedagogical approaches have been at the heart of my work. As a teacher, I have developed STEAM education, assessment, flipped learning pedagogy, and the meaningful use of ICT in teaching. I have also written and produced a wide range of learning materials for both teachers and students. STEAM outreach and international projects are especially meaningful to me. I believe that together, we are more than the sum of our parts.
           </p>
           <ul class="facts" aria-label="Focus areas">
-            <li>STEM</li>
+            <li>STEAM</li>
             <li>Assessment</li>
             <li>Flipped learning</li>
             <li>ICT in education</li>
@@ -606,7 +647,7 @@
 
         <div class="grid">
           <!-- 01: Simulations -->
-          <article class="category">
+          <article class="category simulations-card">
             <div class="category-head">
               <div class="category-head-left">
                 <div class="category-icon" aria-hidden="true">
@@ -641,6 +682,85 @@
                 </div>
                 <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more simulations</span>
+                  <span class="show-less-text">Show fewer simulations</span>
+                </summary>
+                <div class="extra-links">
+                  <a class="item" href="FY03_Avogadro">
+                    <div>
+                      <div class="item-title">Avogadro's law</div>
+                      <div class="item-sub">FY03 · Gas laws</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="FY03_faasikaavio.html">
+                    <div>
+                      <div class="item-title">Phase diagram</div>
+                      <div class="item-sub">FY03 · States of matter</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="FY03_ideaalikaasulaki.html">
+                    <div>
+                      <div class="item-title">Changes of state</div>
+                      <div class="item-sub">FY03 · Ideal gas and phase changes</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="FY03_isobaarinen.html">
+                    <div>
+                      <div class="item-title">Isobaric process</div>
+                      <div class="item-sub">FY03 · Gas process at constant pressure</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="FY03_isokoorinen.html">
+                    <div>
+                      <div class="item-title">Isochoric process</div>
+                      <div class="item-sub">FY03 · Gas process at constant volume</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="FY03_isoterminen.html">
+                    <div>
+                      <div class="item-title">Boyle's law</div>
+                      <div class="item-sub">FY03 · Isothermal gas process</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="balloon-simulation.html">
+                    <div>
+                      <div class="item-title">Balloon simulation</div>
+                      <div class="item-sub">FY03 · Gas and temperature</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="balloon-simulation%20%281%29.html">
+                    <div>
+                      <div class="item-title">Balloon simulation — variant</div>
+                      <div class="item-sub">FY03 · Gas and temperature</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="ilmapallo.html">
+                    <div>
+                      <div class="item-title">Hot-air balloon</div>
+                      <div class="item-sub">FY03 · Buoyancy and warm air</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="item" href="ilmapallo1.html">
+                    <div>
+                      <div class="item-title">Hot-air balloon — variant</div>
+                      <div class="item-sub">FY03 · Buoyancy and warm air</div>
+                    </div>
+                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                </div>
+              </details>
             </div>
           </article>
 
