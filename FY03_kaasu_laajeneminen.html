@@ -1,522 +1,525 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaasu — ilmapallosimulaatio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Caveat', cursive;
-      background: #ffffff;
-      color: #171717;
-      min-height: 100vh;
-    }
-    .scene {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 18px 12px 20px;
-      gap: 14px;
-    }
-    .canvas-wrap {
-      position: relative;
-      width: 520px;
-      height: 440px;
-      background: #ffffff;
-    }
-    canvas { display: block; }
-    .controls {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      max-width: 620px;
-    }
-    .slider-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      width: 100%;
-    }
-    .mode-tag {
-      font-family: 'Caveat', cursive;
-      font-size: 28px;
-      font-weight: 700;
-      padding: 4px 14px;
-      border-radius: 7px 10px 8px 9px;
-      border: 3px solid #141414;
-      white-space: nowrap;
-      background: #ffffff;
-      box-shadow: 2px 3px 0 rgba(0,0,0,0.08);
-    }
-    .mode-cold {
-      color: #0d66a7;
-      transform: rotate(-1.4deg);
-      background-image: repeating-linear-gradient(-18deg, rgba(21,135,212,0.16) 0 2px, transparent 2px 7px);
-    }
-    .mode-hot {
-      color: #c53226;
-      transform: rotate(1.2deg);
-      background-image: repeating-linear-gradient(18deg, rgba(226,68,51,0.16) 0 2px, transparent 2px 7px);
-    }
-    .temp-row { display: flex; align-items: center; gap: 10px; }
-    .temp-label {
-      font-family: 'Caveat', cursive;
-      font-size: 30px;
-      font-weight: 700;
-      color: #444;
-    }
-    .temp-value {
-      font-family: 'Caveat', cursive;
-      font-size: 42px;
-      font-weight: 700;
-      min-width: 90px;
-    }
-    input[type=range] {
-      -webkit-appearance: none; appearance: none;
-      flex: 1; height: 10px; border-radius: 99px;
-      background: #ffffff; border: 3px solid #171717;
-      outline: none; cursor: pointer;
-      box-shadow: inset 1px 1px 0 rgba(0,0,0,0.15);
-    }
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none; appearance: none;
-      width: 30px; height: 30px; border-radius: 50%;
-      background: #ffffff; cursor: pointer;
-      border: 4px solid #171717;
-      box-shadow: 2px 2px 0 rgba(0,0,0,0.14);
-    }
-    input[type=range]::-moz-range-thumb {
-      width: 30px; height: 30px; border-radius: 50%;
-      background: #ffffff; cursor: pointer;
-      border: 4px solid #171717;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kaasu pallossa</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#3F3D39;
+    --hatch:#d8d8d8;
+    --cold:#2E86A6;
+    --warm:#D84A62;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+  }
+
+  .wrap{
+    width:100vw;
+    height:100vh;
+    min-height:360px;
+    display:grid;
+    grid-template-rows:1fr auto;
+    overflow:hidden;
+    background:#fff;
+  }
+
+  svg{
+    width:100%;
+    height:100%;
+    display:block;
+    background:#fff;
+  }
+
+  .controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:clamp(14px,2.6vw,32px);
+    flex-wrap:wrap;
+    padding:10px 18px 18px;
+  }
+
+  .sliderBox{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+
+  .sliderBox label{
+    font-size:clamp(15px,1.6vw,20px);
+  }
+
+  input[type="range"]{
+    width:min(410px,58vw);
+    accent-color:var(--ink);
+  }
+
+  button{
+    font:inherit;
+    font-size:clamp(14px,1.5vw,18px);
+    background:#fff;
+    color:var(--ink);
+    border:2px solid var(--ink);
+    border-radius:999px;
+    padding:6px 16px;
+    cursor:pointer;
+  }
+
+  button:active{ transform:translateY(1px); }
+
+  .sketch{
+    fill:none;
+    stroke:var(--ink);
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .thin{ stroke-width:1.8; }
+
+  .hatch{
+    stroke:var(--hatch);
+    stroke-width:1.1;
+    stroke-linecap:round;
+  }
+
+  .gasParticle{
+    stroke:var(--ink);
+    stroke-width:1.8;
+  }
+
+  .trail{
+    fill:none;
+    stroke-width:1.2;
+    stroke-linecap:round;
+    opacity:.35;
+  }
+
+  .energyRay{
+    fill:none;
+    stroke-width:4.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .arrowHead{
+    stroke:none;
+  }
+</style>
 </head>
 <body>
-<div class="scene">
-  <div class="canvas-wrap">
-    <canvas id="c" width="520" height="440"></canvas>
-  </div>
+<div class="wrap">
+  <svg viewBox="0 0 960 520" aria-label="Kaasu pallossa">
+    <defs>
+      <pattern id="diagHatch" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(22)">
+        <line x1="0" y1="0" x2="0" y2="14" class="hatch"></line>
+      </pattern>
+      <clipPath id="balloonClip">
+        <path id="balloonClipPath" d=""></path>
+      </clipPath>
+    </defs>
+
+    <g id="rayGroup"></g>
+
+    <g id="balloonGroup">
+      <path id="balloonFill" d="" fill="#f7f7f7"></path>
+      <path id="balloonHatch" d="" fill="url(#diagHatch)" opacity=".28"></path>
+
+      <g clip-path="url(#balloonClip)">
+        <g id="trailGroup"></g>
+        <g id="particleGroup"></g>
+      </g>
+
+      <path id="balloonOutline" class="sketch" d=""></path>
+      <path id="balloonHighlight" class="sketch thin" d=""></path>
+      <path id="string" class="sketch thin" d=""></path>
+    </g>
+  </svg>
+
   <div class="controls">
-    <div class="slider-row">
-      <span class="mode-tag mode-cold">❄️ Jäähdytä</span>
-      <input type="range" min="-30" max="100" value="20" id="tempSlider" step="1">
-      <span class="mode-tag mode-hot">🔥 Lämmitä</span>
+    <div class="sliderBox">
+      <label for="temp">Lämpötila</label>
+      <input id="temp" type="range" min="0" max="100" step="1" value="50">
     </div>
-    <div class="temp-row">
-      <span class="temp-label">Lämpötila:</span>
-      <span class="temp-value" id="tempOut">20°C</span>
-    </div>
+    <button id="reset">Nollaa</button>
   </div>
 </div>
 
 <script>
-const canvas = document.getElementById('c');
-const ctx    = canvas.getContext('2d');
-const slider = document.getElementById('tempSlider');
-const tempOut = document.getElementById('tempOut');
+(() => {
+  const temp = document.getElementById("temp");
+  const reset = document.getElementById("reset");
 
-const W = 520, H = 440;
-const BCX = 184, BCY_BASE = 224;
-const MCX = 372, MCY = 205, MR = 82;
-const NMOL = 20;
+  const balloonFill = document.getElementById("balloonFill");
+  const balloonHatch = document.getElementById("balloonHatch");
+  const balloonOutline = document.getElementById("balloonOutline");
+  const balloonHighlight = document.getElementById("balloonHighlight");
+  const balloonClipPath = document.getElementById("balloonClipPath");
+  const string = document.getElementById("string");
 
-let temp = 20;
-let molecules = [];
-let bWobble = [], mWobble = [], paperDots = [];
+  const particleGroup = document.getElementById("particleGroup");
+  const trailGroup = document.getElementById("trailGroup");
+  const rayGroup = document.getElementById("rayGroup");
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-function rnd(a, b) { return a + Math.random()*(b-a); }
-function hash(n)   { return ((Math.sin(n*127.1)*43758.5453)%1+1)%1; }
-function j(n, amp) { return (hash(n)-0.5)*amp*2; }
-function rgba(rgb, alpha) {
-  if (rgb.startsWith('rgb(')) return rgb.replace('rgb','rgba').replace(')',','+alpha+')');
-  if (rgb.startsWith('#')) {
-    const n=parseInt(rgb.slice(1),16);
-    return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${alpha})`;
+  const cx = 480;
+  const cy = 205;
+  const neutral = 50;
+  const baseRx = 150;
+  const baseRy = 128;
+
+  let time = 0;
+  let targetLevel = 50;
+  let currentLevel = 50;
+  let previousLevel = 50;
+
+  let heatFlow = 0;
+  let heatFlowTarget = 0;
+
+  const particles = [];
+  const rays = [];
+
+  function mixColor(a, b, t) {
+    const ah = a.replace("#", "");
+    const bh = b.replace("#", "");
+    const ar = parseInt(ah.slice(0,2), 16);
+    const ag = parseInt(ah.slice(2,4), 16);
+    const ab = parseInt(ah.slice(4,6), 16);
+    const br = parseInt(bh.slice(0,2), 16);
+    const bg = parseInt(bh.slice(2,4), 16);
+    const bb = parseInt(bh.slice(4,6), 16);
+    const rr = Math.round(ar + (br - ar) * t);
+    const rg = Math.round(ag + (bg - ag) * t);
+    const rb = Math.round(ab + (bb - ab) * t);
+    return `rgb(${rr},${rg},${rb})`;
   }
-  return rgb;
-}
 
-// ── Init ──────────────────────────────────────────────────────────────────────
-function initTexture() {
-  paperDots = Array.from({length:115},()=>({
-    x:rnd(0,W), y:rnd(0,H), r:rnd(0.25,0.9), a:rnd(0.03,0.075)
-  }));
-}
-function initWobble() {
-  bWobble = Array.from({length:52},()=>rnd(-1.8,1.8));
-  mWobble = Array.from({length:54},()=>rnd(-1.4,1.4));
-}
+  function createSvg(tag, attrs = {}) {
+    const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+    return el;
+  }
 
-// ── Physics ───────────────────────────────────────────────────────────────────
-function tempRatio(t) { return (t+30)/130; }
-function balloonR(t)  { return 56 + tempRatio(t)*60; }
-function getBCY(t)    { return BCY_BASE - balloonR(t)*0.12; }
+  function balloonPath(cx, cy, rx, ry, wobble = 0) {
+    const top = cy - ry + wobble;
+    const left = cx - rx;
+    const right = cx + rx;
+    const shoulderY = cy + ry * 0.54;
+    const lowerY = cy + ry * 0.93;
+    const knotBaseY = cy + ry * 1.02;
+    const knotTipY = cy + ry * 1.19;
 
-function balloonCol(t) {
-  const r=tempRatio(t);
-  const R=Math.round(55 +r*195), G=Math.round(144-r*90), B=Math.round(225-r*185);
-  return { pencil:`rgb(${R},${G},${B})`, pale:`rgba(${R},${G},${B},0.13)` };
-}
-function molCol(t) {
-  const r=tempRatio(t);
-  return `rgb(${Math.round(40+r*205)},${Math.round(125-r*90)},${Math.round(230-r*205)})`;
-}
-function getSpeed(t) { return 0.4 + tempRatio(t)*4.0; }
+    return `
+      M ${cx} ${top}
+      C ${cx - rx * 0.62} ${cy - ry * 0.98},
+        ${left - rx * 0.10} ${cy - ry * 0.10},
+        ${cx - rx * 0.83} ${shoulderY}
+      C ${cx - rx * 0.56} ${lowerY},
+        ${cx - rx * 0.22} ${cy + ry * 1.03},
+        ${cx - 20} ${knotBaseY}
+      L ${cx - 10} ${knotBaseY + 16}
+      L ${cx} ${knotTipY}
+      L ${cx + 10} ${knotBaseY + 16}
+      L ${cx + 20} ${knotBaseY}
+      C ${cx + rx * 0.22} ${cy + ry * 1.03},
+        ${cx + rx * 0.56} ${lowerY},
+        ${cx + rx * 0.83} ${shoulderY}
+      C ${right + rx * 0.10} ${cy - ry * 0.10},
+        ${cx + rx * 0.62} ${cy - ry * 0.98},
+        ${cx} ${top}
+      Z
+    `;
+  }
 
-function initMolecules() {
-  molecules = [];
-  const r = balloonR(temp) * 0.55;
-  const bcy = getBCY(temp);
-  for (let i=0; i<NMOL; i++) {
-    const a = Math.random()*Math.PI*2;
-    const d = Math.sqrt(Math.random())*r;
-    const s = getSpeed(temp);
-    molecules.push({
-      x: BCX + Math.cos(a)*d,
-      y: bcy + Math.sin(a)*d*0.9,
-      vx: Math.cos(Math.random()*Math.PI*2)*s,
-      vy: Math.sin(Math.random()*Math.PI*2)*s,
-      r: 5.5, seed: i*19.7
+  function randomInsideBody(rx, ry) {
+    const angle = Math.random() * Math.PI * 2;
+    const r = Math.sqrt(Math.random()) * 0.78;
+    return {
+      x: cx + Math.cos(angle) * rx * r,
+      y: cy + Math.sin(angle) * ry * r * 0.93
+    };
+  }
+
+  function buildParticles() {
+    for (let i = 0; i < 32; i++) {
+      const start = randomInsideBody(baseRx, baseRy);
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 0.8 + Math.random() * 1.1;
+
+      const trail = createSvg("path", { class: "trail", d: "" });
+      const node = createSvg("circle", {
+        class: "gasParticle",
+        cx: start.x,
+        cy: start.y,
+        r: 6,
+        fill: "#ffffff"
+      });
+
+      trailGroup.appendChild(trail);
+      particleGroup.appendChild(node);
+
+      particles.push({
+        x: start.x,
+        y: start.y,
+        oldX: start.x,
+        oldY: start.y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        node,
+        trail
+      });
+    }
+  }
+
+  function buildRays() {
+    const angles = [-155, -125, -95, -65, -25, 25, 65, 95, 125, 155];
+
+    angles.forEach((deg, i) => {
+      const group = createSvg("g");
+      rayGroup.appendChild(group);
+
+      const path = createSvg("path", { class: "energyRay", d: "" });
+      const head = createSvg("path", { class: "arrowHead", d: "" });
+
+      group.appendChild(path);
+      group.appendChild(head);
+
+      rays.push({
+        path,
+        head,
+        angle: deg * Math.PI / 180,
+        phase: i / angles.length
+      });
     });
   }
-}
 
-function updateMolecules() {
-  const spd = getSpeed(temp);
-  const r   = balloonR(temp);
-  const bcy = getBCY(temp);
-  const ry  = r * 1.18;
-  molecules.forEach(m => {
-    m.x += m.vx; m.y += m.vy;
-    // Ellipse collision (stretch y axis to circle, reflect, unstretch)
-    const dx = m.x - BCX, dy = (m.y - bcy) * (r/ry);
-    const dist = Math.sqrt(dx*dx + dy*dy);
-    if (dist + m.r > r - 5) {
-      const nx = dx/dist, ny = (dy/dist) * (r/ry);
-      const nlen = Math.sqrt(nx*nx+ny*ny);
-      const nxn = nx/nlen, nyn = ny/nlen;
-      const dot = m.vx*nxn + m.vy*nyn;
-      m.vx -= 2*dot*nxn; m.vy -= 2*dot*nyn;
-      const ov = dist + m.r - (r-5);
-      m.x -= (dx/dist)*ov; m.y -= (dy/dist)*(ry/r)*ov;
-    }
-    const cs = Math.sqrt(m.vx*m.vx+m.vy*m.vy);
-    if (Math.abs(cs-spd)>0.4) { m.vx*=spd/(cs||1); m.vy*=spd/(cs||1); }
-  });
-}
+  function updateBalloon(level, t) {
+    const heat = Math.max(0, level - neutral) / neutral;
+    const cold = Math.max(0, neutral - level) / neutral;
 
-// ── Drawing utilities ─────────────────────────────────────────────────────────
-function roughLine(x1,y1,x2,y2,color='#141414',width=2.5,seed=1) {
-  ctx.save(); ctx.lineCap='round'; ctx.lineJoin='round'; ctx.strokeStyle=color;
-  for (let p=0;p<2;p++) {
-    const k=seed+p*23, mx=(x1+x2)/2+j(k,6), my=(y1+y2)/2+j(k+1,6);
-    ctx.beginPath();
-    ctx.moveTo(x1+j(k+2,1.7),y1+j(k+3,1.7));
-    ctx.quadraticCurveTo(mx,my,x2+j(k+4,1.7),y2+j(k+5,1.7));
-    ctx.lineWidth=width-p*0.7; ctx.globalAlpha=p===0?1:0.62; ctx.stroke();
+    const rx = baseRx * (1 + heat * 0.26 - cold * 0.12);
+    const ry = baseRy * (1 + heat * 0.26 - cold * 0.10);
+    const wobble = Math.sin(t * 0.025) * (0.6 + heat * 1.8);
+
+    const d = balloonPath(cx, cy, rx, ry, wobble);
+    const fill = mixColor("#edf8fb", "#fff0f2", level / 100);
+
+    balloonFill.setAttribute("d", d);
+    balloonFill.setAttribute("fill", fill);
+    balloonHatch.setAttribute("d", d);
+    balloonOutline.setAttribute("d", d);
+    balloonClipPath.setAttribute("d", d);
+
+    balloonHighlight.setAttribute(
+      "d",
+      `M ${cx - rx * 0.30} ${cy - ry * 0.58}
+       C ${cx - rx * 0.47} ${cy - ry * 0.12},
+         ${cx - rx * 0.40} ${cy + ry * 0.28},
+         ${cx - rx * 0.12} ${cy + ry * 0.60}`
+    );
+
+    const knotY = cy + ry * 1.19;
+    string.setAttribute(
+      "d",
+      `M ${cx} ${knotY}
+       C ${cx - 10} ${knotY + 28},
+         ${cx + 16} ${knotY + 54},
+         ${cx + 2} ${knotY + 86}
+       C ${cx - 10} ${knotY + 114},
+         ${cx + 10} ${knotY + 142},
+         ${cx - 2} ${knotY + 170}`
+    );
+
+    return {
+      rx,
+      ry,
+      innerRx: rx * 0.74,
+      innerRy: ry * 0.72,
+      innerCy: cy - ry * 0.02
+    };
   }
-  ctx.restore();
-}
-function roughStroke(drawPath,width=3,color='#141414',passes=2,alpha=1) {
-  ctx.save(); ctx.lineCap='round'; ctx.lineJoin='round';
-  for (let p=0;p<passes;p++) {
-    ctx.save(); ctx.translate(j(p+width,0.45),j(p+width+9,0.45));
-    drawPath();
-    ctx.strokeStyle=rgba(color,alpha*(p===0?1:0.68));
-    ctx.lineWidth=width-p*0.55; ctx.stroke(); ctx.restore();
-  }
-  ctx.restore();
-}
-function hatchRect(x,y,w,h,color,spacing=8,angle=-0.55,seed=100,alpha=0.75) {
-  ctx.save(); ctx.beginPath(); ctx.rect(x,y,w,h); ctx.clip();
-  ctx.translate(x+w/2,y+h/2); ctx.rotate(angle); ctx.translate(-x-w/2,-y-h/2);
-  for (let yy=y-h;yy<y+h*2;yy+=spacing)
-    roughLine(x-w*0.25,yy+j(yy+seed,3),x+w*1.25,yy+j(yy+seed+4,3),rgba(color,alpha),2.1,yy+seed);
-  ctx.restore();
-}
-function hatchInEllipse(cx,cy,rx,ry,color,spacing=9,angle=-0.55,alpha=0.78,cross=false) {
-  function doHatch(a,so) {
-    ctx.save(); ctx.beginPath(); ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2); ctx.clip();
-    ctx.translate(cx,cy); ctx.rotate(a); ctx.translate(-cx,-cy);
-    for (let y=cy-ry*1.65;y<=cy+ry*1.65;y+=spacing)
-      roughLine(cx-rx*1.35,y+j(y+so,2.4),cx+rx*1.35,y+j(y+so+7,2.4),rgba(color,alpha),2.2,y+so);
-    ctx.restore();
-  }
-  doHatch(angle,300); if (cross) doHatch(angle+1.42,900);
-}
-function wobblyEllipsePath(cx,cy,rx,ry,wobble,phase=0) {
-  const n=wobble.length; ctx.beginPath();
-  for (let i=0;i<=n;i++) {
-    const angle=(i/n)*Math.PI*2, w=wobble[i%n]+j(i+phase,0.35);
-    const x=cx+(rx+w)*Math.cos(angle), y=cy+(ry+w*0.82)*Math.sin(angle);
-    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
-  }
-  ctx.closePath();
-}
-function wobblyCirclePath(cx,cy,r,wobble,phase=0) {
-  const n=wobble.length; ctx.beginPath();
-  for (let i=0;i<=n;i++) {
-    const angle=(i/n)*Math.PI*2, w=wobble[i%n]+j(i+phase,0.35);
-    const x=cx+(r+w)*Math.cos(angle), y=cy+(r+w*0.75)*Math.sin(angle);
-    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
-  }
-  ctx.closePath();
-}
-function drawSketchDot(x,y,r,color,seed=1) {
-  ctx.save();
-  ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2);
-  ctx.fillStyle='#ffffff'; ctx.fill();
-  hatchInEllipse(x,y,r-1,r-1,color,4,-0.55,0.95,false);
-  roughStroke(()=>{ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);},1.8,'#121212',2);
-  ctx.restore();
-}
-function drawArrow(x1,y1,x2,y2,seed=1) {
-  roughLine(x1,y1,x2,y2,'#121212',2.4,seed);
-  const a=Math.atan2(y2-y1,x2-x1),len=10;
-  roughLine(x2,y2,x2-Math.cos(a-0.62)*len,y2-Math.sin(a-0.62)*len,'#121212',2.2,seed+4);
-  roughLine(x2,y2,x2-Math.cos(a+0.62)*len,y2-Math.sin(a+0.62)*len,'#121212',2.2,seed+7);
-}
 
-// ── Scene ─────────────────────────────────────────────────────────────────────
-function drawBackground() {
-  ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,W,H);
-  ctx.save();
-  paperDots.forEach(d=>{
-    ctx.beginPath(); ctx.arc(d.x,d.y,d.r,0,Math.PI*2);
-    ctx.fillStyle=`rgba(0,0,0,${d.a})`; ctx.fill();
-  });
-  ctx.restore();
-}
+  function updateParticles(balloon, level) {
+    const heatLevel = level / 100;
+    const speedFactor = 0.45 + heatLevel * 1.55;
+    const particleColor = mixColor("#2E86A6", "#D84A62", heatLevel);
+    const trailColor = mixColor("#9fd8e8", "#f2a6b3", heatLevel);
 
-function drawBalloon(t) {
-  const r   = balloonR(t);
-  const bcy = getBCY(t);
-  const ry  = r * 1.18;
-  const col = balloonCol(t);
+    for (const p of particles) {
+      p.oldX = p.x;
+      p.oldY = p.y;
 
-  // White base fill
-  ctx.save();
-  wobblyEllipsePath(BCX, bcy, r, ry, bWobble, 0);
-  ctx.fillStyle = '#ffffff'; ctx.fill();
+      p.x += p.vx * speedFactor;
+      p.y += p.vy * speedFactor;
 
-  // Pencil hatching
-  hatchInEllipse(BCX, bcy, r-4, ry-4, col.pencil,
-    Math.max(7, 13 - tempRatio(t)*5), -0.55, 0.70,
-    temp > 55 || temp < -5);
+      const nx = (p.x - cx) / balloon.innerRx;
+      const ny = (p.y - balloon.innerCy) / balloon.innerRy;
+      const d = nx * nx + ny * ny;
 
-  // Shine strokes top-left
-  ctx.save();
-  ctx.beginPath(); ctx.ellipse(BCX,bcy,r-6,ry-6,0,0,Math.PI*2); ctx.clip();
-  for (let i=0;i<9;i++)
-    roughLine(BCX-r*0.48+i*9, bcy-ry*0.72+i*1.6,
-              BCX-r*0.16+i*8, bcy-ry*0.96+i*1.6, 'rgba(255,255,255,0.72)',2.2,520+i);
-  ctx.restore();
+      if (d > 1) {
+        const len = Math.sqrt(d);
+        const ex = nx / len;
+        const ey = ny / len;
 
-  // Outline
-  roughStroke(()=>wobblyEllipsePath(BCX,bcy,r,ry,bWobble,0), 3.6,'#121212',2);
-  ctx.restore();
+        p.x = cx + ex * balloon.innerRx * 0.985;
+        p.y = balloon.innerCy + ey * balloon.innerRy * 0.985;
 
-  // Knot
-  const ky = bcy + ry + 9;
-  ctx.save();
-  ctx.beginPath();
-  ctx.moveTo(BCX-9+j(1,1), bcy+ry*0.97);
-  ctx.lineTo(BCX+9+j(2,1), bcy+ry*0.97);
-  ctx.lineTo(BCX+6, ky); ctx.lineTo(BCX-6, ky+j(3,1));
-  ctx.closePath();
-  ctx.fillStyle='#ffffff'; ctx.fill();
-  hatchRect(BCX-10, bcy+ry*0.94, 20, 22, col.pencil, 6,-0.65,141,0.8);
-  roughStroke(()=>{
-    ctx.beginPath();
-    ctx.moveTo(BCX-9,bcy+ry*0.97); ctx.lineTo(BCX+9,bcy+ry*0.97);
-    ctx.lineTo(BCX+6,ky); ctx.lineTo(BCX-6,ky); ctx.closePath();
-  },2.5,'#121212',2);
-  ctx.restore();
+        const normalX = ex / balloon.innerRx;
+        const normalY = ey / balloon.innerRy;
+        const dot = p.vx * normalX + p.vy * normalY;
+        const denom = normalX * normalX + normalY * normalY;
 
-  // String
-  ctx.save();
-  ctx.beginPath();
-  ctx.moveTo(BCX,ky);
-  ctx.bezierCurveTo(BCX+12,ky+25,BCX-9,ky+52,BCX+7,ky+80);
-  ctx.strokeStyle='#121212'; ctx.lineWidth=2.3; ctx.lineCap='round'; ctx.stroke();
-  ctx.restore();
-}
-
-function drawMoleculesInBalloon(t) {
-  const r   = balloonR(t);
-  const bcy = getBCY(t);
-  const ry  = r * 1.18;
-  ctx.save();
-  ctx.beginPath(); ctx.ellipse(BCX,bcy,r-5,ry-5,0,0,Math.PI*2); ctx.clip();
-  const mc=molCol(t), spd=getSpeed(t);
-  molecules.forEach((m,i)=>{
-    if (spd>1.8) {
-      const len=Math.min(spd*3,14);
-      roughLine(m.x,m.y,m.x-m.vx/spd*len,m.y-m.vy/spd*len,rgba(mc,0.28),2.6,700+i);
-    }
-    drawSketchDot(m.x,m.y,m.r,mc,m.seed);
-  });
-  ctx.restore();
-}
-
-function drawMagnifier(t) {
-  const bcy = getBCY(t);
-  const zoom = 2.2;
-
-  ctx.save();
-  const hx=MCX+MR*0.62, hy=MCY+MR*0.62;
-
-  // Handle shadow
-  roughLine(hx-3,hy-3,hx+48,hy+48,'rgba(0,0,0,0.12)',18,609);
-  // Handle layers
-  ctx.save();
-  ctx.translate(hx,hy); ctx.rotate(Math.PI/4);
-  ctx.beginPath(); ctx.roundRect(-10,-4,70,20,9);
-  ctx.fillStyle='#ffffff'; ctx.fill(); ctx.clip();
-  hatchRect(-10,-4,72,22,'#8a5a19',7,-0.35,655,0.9);
-  ctx.restore();
-  roughLine(hx-3,hy-3,hx+48,hy+48,'#121212',16,611);
-  roughLine(hx-3,hy-3,hx+48,hy+48,'#9b671e',10,612);
-  roughLine(hx-3,hy-3,hx+48,hy+48,'#121212',2.5,613);
-
-  // Lens content
-  ctx.save();
-  wobblyCirclePath(MCX,MCY,MR-7,mWobble,4); ctx.clip();
-  ctx.fillStyle='rgba(255,255,255,0.97)'; ctx.fillRect(MCX-MR,MCY-MR,MR*2,MR*2);
-  hatchInEllipse(MCX,MCY,MR-10,MR-10,balloonCol(t).pencil,13,-0.6,0.17,false);
-
-  const mc=molCol(t), spd=getSpeed(t);
-  molecules.forEach((m,i)=>{
-    const ox=(m.x-BCX)*zoom+MCX, oy=(m.y-bcy)*zoom+MCY;
-    if (Math.hypot(ox-MCX,oy-MCY)<MR-18) {
-      if (spd>1.8) {
-        const len=Math.min(spd*4.5,22);
-        roughLine(ox,oy,ox-m.vx/spd*len,oy-m.vy/spd*len,rgba(mc,0.28),3.5,880+i);
+        p.vx -= 2 * dot * normalX / denom;
+        p.vy -= 2 * dot * normalY / denom;
       }
-      drawSketchDot(ox,oy,m.r*zoom*0.46,mc,900+i);
+
+      p.node.setAttribute("cx", p.x);
+      p.node.setAttribute("cy", p.y);
+      p.node.setAttribute("r", 5.5 + heatLevel * 1.7);
+      p.node.setAttribute("fill", particleColor);
+
+      p.trail.setAttribute("d", `M ${p.oldX} ${p.oldY} L ${p.x} ${p.y}`);
+      p.trail.setAttribute("stroke", trailColor);
+      p.trail.setAttribute("opacity", 0.14 + heatLevel * 0.32);
     }
-  });
-  ctx.restore();
-
-  // Glass rim
-  roughStroke(()=>wobblyCirclePath(MCX,MCY,MR,  mWobble,2),8.5,'#121212',2);
-  roughStroke(()=>wobblyCirclePath(MCX,MCY,MR-3, mWobble,7),4.6,'#c79617',2,0.92);
-  roughStroke(()=>wobblyCirclePath(MCX,MCY,MR-8, mWobble,10),1.8,'#121212',1,0.82);
-  roughLine(MCX-43,MCY-54,MCX-8, MCY-68,'rgba(255,255,255,0.9)',4.5,711);
-  roughLine(MCX-50,MCY-42,MCX-25,MCY-55,'rgba(255,255,255,0.75)',3,  712);
-  roughLine(MCX+32,MCY+48,MCX+53,MCY+28,'rgba(120,165,205,0.25)',3,  713);
-  ctx.restore();
-}
-
-function drawThermometer(t) {
-  const ratio=tempRatio(t),bh=130,bw=17,bx=20,by=120;
-  const R=Math.round(55+ratio*200),G=Math.round(145-ratio*90),B=Math.round(228-ratio*188);
-  const fill=`rgb(${R},${G},${B})`;
-  ctx.save();
-  ctx.beginPath(); ctx.roundRect(bx,by,bw,bh,8); ctx.fillStyle='#ffffff'; ctx.fill();
-  roughStroke(()=>{ctx.beginPath();ctx.roundRect(bx,by,bw,bh,8);},3,'#121212',2);
-  const fh=bh*ratio,fy=by+bh-fh;
-  ctx.save();
-  ctx.beginPath(); ctx.roundRect(bx+3,fy,bw-6,fh,6); ctx.clip();
-  ctx.fillStyle=rgba(fill,0.12); ctx.fillRect(bx+2,fy,bw-4,fh);
-  hatchRect(bx+2,fy,bw-4,fh,fill,5,-0.55,730,0.86);
-  ctx.restore();
-  ctx.beginPath(); ctx.arc(bx+bw/2,by+bh+10,14,0,Math.PI*2);
-  ctx.fillStyle='#ffffff'; ctx.fill();
-  hatchInEllipse(bx+bw/2,by+bh+10,12,12,fill,5,-0.55,0.88,true);
-  roughStroke(()=>{ctx.beginPath();ctx.arc(bx+bw/2,by+bh+10,14,0,Math.PI*2);},3,'#121212',2);
-  ctx.font='19px Caveat, cursive'; ctx.fillStyle='#444'; ctx.textAlign='left';
-  [[-30,0],[0,0.23],[20,0.38],[60,0.69],[100,1]].forEach(([label,pos],i)=>{
-    const ty=by+bh*(1-pos);
-    roughLine(bx+bw,ty,bx+bw+7,ty,'#121212',1.5,770+i);
-    ctx.fillText(label+'°',bx+bw+9+j(i,1),ty+5+j(i+4,1));
-  });
-  ctx.restore();
-}
-
-function drawLabels(t) {
-  const r   = balloonR(t);
-  const bcy = getBCY(t);
-  const ry  = r * 1.18;
-  const col = balloonCol(t);
-  const state = t<0?'Jäätyminen!':t<15?'Kylmä':t<35?'Lämmin':t<65?'Kuuma!':'ERITTÄIN KUUMA!!';
-  const sz = t<-15||t>60 ? 35 : 30;
-
-  // State label above balloon
-  ctx.save();
-  ctx.font=`bold ${sz}px Caveat, cursive`;
-  ctx.textAlign='center'; ctx.fillStyle=col.pencil;
-  ctx.fillText(state, BCX+j(t,1.2), bcy-ry-18+j(t+1,1.2));
-  roughLine(BCX-44,bcy-ry-12,BCX+44,bcy-ry-14,rgba(col.pencil,0.45),2,1001);
-  ctx.restore();
-
-  // "kaasu" → balloon
-  const labelX = BCX + r + 22;
-  ctx.save();
-  ctx.font='bold 20px Caveat, cursive'; ctx.fillStyle='#121212'; ctx.textAlign='left';
-  ctx.fillText('kaasu', labelX+j(10,1), bcy+j(11,1));
-  drawArrow(labelX-2,bcy,BCX+r+4,bcy,1060);
-  ctx.restore();
-
-  // Expansion / contraction
-  if (t > 40) {
-    ctx.save();
-    ctx.font='bold 17px Caveat, cursive'; ctx.fillStyle='#c53226'; ctx.textAlign='center';
-    ctx.fillText('laajenee!', BCX, bcy+ry+32+j(20,1));
-    drawArrow(BCX-28,bcy+ry+42,BCX-62,bcy+ry+42,1090);
-    drawArrow(BCX+28,bcy+ry+42,BCX+62,bcy+ry+42,1092);
-    ctx.restore();
   }
-  if (t < -5) {
-    ctx.save();
-    ctx.font='bold 17px Caveat, cursive'; ctx.fillStyle='#0d66a7'; ctx.textAlign='center';
-    ctx.fillText('supistuu!', BCX, bcy+ry+32+j(20,1));
-    drawArrow(BCX-62,bcy+ry+42,BCX-28,bcy+ry+42,1094);
-    drawArrow(BCX+62,bcy+ry+42,BCX+28,bcy+ry+42,1096);
-    ctx.restore();
+
+  function arrowPath(x, y, dirX, dirY, size) {
+    const px = -dirY;
+    const py = dirX;
+    const backX = x - dirX * size;
+    const backY = y - dirY * size;
+
+    return `
+      M ${x} ${y}
+      L ${backX + px * size * 0.45} ${backY + py * size * 0.45}
+      L ${backX - px * size * 0.45} ${backY - py * size * 0.45}
+      Z
+    `;
   }
-}
 
-function frame() {
-  ctx.clearRect(0,0,W,H);
-  updateMolecules();
-  drawBackground();
-  drawBalloon(temp);
-  drawMoleculesInBalloon(temp);
-  drawMagnifier(temp);
-  drawThermometer(temp);
-  drawLabels(temp);
-  requestAnimationFrame(frame);
-}
+  function updateRays(balloon, t) {
+    heatFlow += (heatFlowTarget - heatFlow) * 0.035;
 
-slider.addEventListener('input', () => {
-  temp = parseInt(slider.value);
-  const ratio=tempRatio(temp);
-  const R=Math.round(55+ratio*200),G=Math.round(145-ratio*90),B=Math.round(228-ratio*188);
-  tempOut.textContent = temp+'°C';
-  tempOut.style.color=`rgb(${Math.max(0,R-30)},${Math.max(0,G-20)},${Math.max(0,B-40)})`;
-  // Redistribute molecules inside the new balloon size
-  const r   = balloonR(temp) * 0.55;
-  const bcy = getBCY(temp);
-  molecules.forEach(m => {
-    const a=Math.random()*Math.PI*2, d=Math.sqrt(Math.random())*r;
-    m.x = BCX + Math.cos(a)*d;
-    m.y = bcy + Math.sin(a)*d*0.88;
-    const s=getSpeed(temp), va=Math.random()*Math.PI*2;
-    m.vx=Math.cos(va)*s; m.vy=Math.sin(va)*s;
+    const amount = Math.min(1, Math.abs(heatFlow));
+    const warming = heatFlow > 0;
+    const color = warming ? "#D84A62" : "#2E86A6";
+
+    const speed = 0.0045;
+
+    rays.forEach(ray => {
+      const a = ray.angle;
+      const ex = Math.cos(a);
+      const ey = Math.sin(a);
+
+      const edgeRadius = 1 / Math.sqrt(
+        (ex * ex) / (balloon.rx * balloon.rx) +
+        (ey * ey) / (balloon.ry * balloon.ry)
+      );
+
+      const edgeX = cx + ex * edgeRadius;
+      const edgeY = cy + ey * edgeRadius;
+
+      const gap = 20;
+      const track = 88;
+      const length = 44;
+
+      const p = (t * speed + ray.phase) % 1;
+
+      const centerDistance = warming
+        ? gap + (1 - p) * track
+        : gap + p * track;
+
+      const startDistance = centerDistance - length / 2;
+      const endDistance = centerDistance + length / 2;
+
+      const x1 = edgeX + ex * startDistance;
+      const y1 = edgeY + ey * startDistance;
+      const x2 = edgeX + ex * endDistance;
+      const y2 = edgeY + ey * endDistance;
+
+      const bend = 8;
+      const mx = (x1 + x2) / 2 + Math.sin(a) * bend;
+      const my = (y1 + y2) / 2 - Math.cos(a) * bend;
+
+      ray.path.setAttribute("d", `M ${x1} ${y1} Q ${mx} ${my} ${x2} ${y2}`);
+      ray.path.setAttribute("stroke", color);
+
+      const tipX = warming ? x1 : x2;
+      const tipY = warming ? y1 : y2;
+      const dirX = warming ? -ex : ex;
+      const dirY = warming ? -ey : ey;
+
+      ray.head.setAttribute("d", arrowPath(tipX, tipY, dirX, dirY, 14));
+      ray.head.setAttribute("fill", color);
+
+      const opacity = amount < 0.03 ? 0 : 0.18 + amount * 0.62;
+      ray.path.setAttribute("opacity", opacity);
+      ray.head.setAttribute("opacity", opacity);
+    });
+  }
+
+  function commitTemperature(value) {
+    if (value === targetLevel) return;
+
+    previousLevel = targetLevel;
+    targetLevel = value;
+
+    const delta = targetLevel - previousLevel;
+
+    if (Math.abs(delta) < 1) {
+      heatFlowTarget = 0;
+    } else {
+      heatFlowTarget = Math.max(-1, Math.min(1, delta / 35));
+    }
+  }
+
+  function tick() {
+    time += 1;
+
+    currentLevel += (targetLevel - currentLevel) * 0.035;
+
+    if (Math.abs(targetLevel - currentLevel) < 0.4) {
+      currentLevel = targetLevel;
+      heatFlowTarget *= 0.985;
+    }
+
+    const balloon = updateBalloon(currentLevel, time);
+    updateParticles(balloon, currentLevel);
+    updateRays(balloon, time);
+
+    requestAnimationFrame(tick);
+  }
+
+  temp.addEventListener("pointerup", () => {
+    commitTemperature(Number(temp.value));
   });
-});
 
-initTexture();
-initWobble();
-initMolecules();
-document.fonts.ready.then(()=>{ frame(); });
+  temp.addEventListener("pointercancel", () => {
+    commitTemperature(Number(temp.value));
+  });
+
+  temp.addEventListener("change", () => {
+    commitTemperature(Number(temp.value));
+  });
+
+  reset.addEventListener("click", () => {
+    temp.value = 50;
+    commitTemperature(50);
+  });
+
+  buildParticles();
+  buildRays();
+  tick();
+})();
 </script>
 </body>
 </html>
