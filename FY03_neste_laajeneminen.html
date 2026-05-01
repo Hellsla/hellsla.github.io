@@ -503,16 +503,26 @@
   }
 
   function updateSource(liquid) {
-    heatGroup.style.opacity = Math.max(0, liquid.heat * 1.25);
-    iceGroup.style.opacity = Math.max(0, liquid.cold * 1.25);
+    const amount = liquid.transferAmount;
 
-    heatGroup.setAttribute("transform", `translate(0 ${liquid.heat * -2})`);
-    iceGroup.setAttribute("transform", `translate(0 ${liquid.cold * 2})`);
+    heatGroup.style.opacity = liquid.warming ? amount : 0;
+    iceGroup.style.opacity = !liquid.warming ? amount : 0;
+
+    heatGroup.setAttribute("transform", `translate(0 ${amount * -2})`);
+    iceGroup.setAttribute("transform", `translate(0 ${amount * 2})`);
   }
 
   function updateRays(liquid, t) {
-    const amount = Math.max(liquid.heat, liquid.cold);
-    const warming = liquid.heat >= liquid.cold;
+    const amount = liquid.transferAmount;
+    const warming = liquid.warming;
+
+    if (amount <= 0) {
+      rays.forEach(lane => {
+        lane.segs.forEach(seg => seg.setAttribute("opacity", 0));
+      });
+      return;
+    }
+
     const color = warming ? "#D84A62" : "#2E86A6";
 
     const topY = vessel.bottom + 8;
@@ -540,16 +550,28 @@
              ${lane.x} ${y2}`
         );
         seg.setAttribute("stroke", color);
-        seg.setAttribute("opacity", amount < 0.03 ? 0.06 : 0.30 + amount * 0.60);
+        seg.setAttribute("opacity", 0.30 + amount * 0.60);
       });
     });
   }
 
   function tick() {
     time += 1;
-    currentLevel += (targetLevel - currentLevel) * 0.08;
+
+    const delta = targetLevel - currentLevel;
+    const reached = Math.abs(delta) < 0.08;
+
+    if (reached) {
+      currentLevel = targetLevel;
+    } else {
+      currentLevel += delta * 0.08;
+    }
 
     const liquid = updateLiquid(currentLevel, time);
+
+    liquid.transferAmount = reached ? 0 : Math.min(1, Math.abs(delta) / 12);
+    liquid.warming = delta >= 0;
+
     updateParticles(liquid, currentLevel, time);
     updateSource(liquid);
     updateRays(liquid, time);
