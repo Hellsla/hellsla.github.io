@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Olomuodon muutokset</title>
+<style>
+  :root {
+    --text: #3F3D39;
+    --line: #222222;
+    --blue: #2E86A6;
+    --red: #D84A62;
+    --pale-blue: #E7F4F5;
+    --light: #F4F4F4;
+  }
+
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text);
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .slide {
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    aspect-ratio: 16 / 9;
+    position: relative;
+    background: #FFFFFF;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  text {
+    fill: var(--text);
+    font-size: 19px;
+    font-weight: 520;
+  }
+
+  .small { font-size: 15px; }
+  .tiny { font-size: 13px; }
+
+  .sketch {
+    stroke: var(--line);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+
+  .thin { stroke-width: 2.4; }
+
+  .controls {
+    position: absolute;
+    left: 44px;
+    right: 44px;
+    bottom: 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 12px 16px;
+    align-items: end;
+  }
+
+  .control {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px 12px;
+    align-items: center;
+    font-size: clamp(14px, 1.8vw, 20px);
+  }
+
+  .control label {
+    grid-column: 1 / 2;
+    white-space: nowrap;
+  }
+
+  .control .value {
+    grid-column: 2 / 3;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 620;
+  }
+
+  .control input[type="range"] {
+    grid-column: 1 / 3;
+    width: 100%;
+    accent-color: var(--line);
+  }
+
+  .status {
+    position: absolute;
+    left: 470px;
+    top: 28px;
+    font-size: clamp(16px, 2.1vw, 22px);
+    font-weight: 620;
+    white-space: nowrap;
+  }
+
+  button {
+    border: 2px solid var(--line);
+    background: #FFFFFF;
+    color: var(--text);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font: inherit;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  button:active {
+    transform: translateY(1px);
+  }
+
+  @media (max-width: 900px) {
+    .controls {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .status {
+      left: 40px;
+      top: 24px;
+      font-size: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+<main class="slide" aria-label="Olomuodon muutosten simulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Painesäiliö, olomuoto ja faasidiagrammi">
+    <defs>
+      <pattern id="hatch" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="12" stroke="#222222" stroke-width="1.2" opacity="0.18"/>
+      </pattern>
+
+      <clipPath id="chamberClip">
+        <rect id="chamberClipRect" x="120" y="100" width="180" height="280" rx="14"/>
+      </clipPath>
+    </defs>
+
+    <g id="vessel">
+      <path d="M105 100 C160 94 258 95 315 100" class="sketch"/>
+      <path d="M105 380 C160 388 258 387 315 380" class="sketch"/>
+      <path d="M105 100 C97 172 97 308 105 380" class="sketch"/>
+      <path d="M315 100 C323 172 323 308 315 380" class="sketch"/>
+
+      <rect x="114" y="98" width="192" height="284" rx="14" fill="url(#hatch)" opacity="0.06"/>
+      <rect id="piston" x="104" y="246" width="212" height="18" rx="9" fill="#FFFFFF" stroke="#222222" stroke-width="4"/>
+      <rect id="pistonHatch" x="111" y="250" width="198" height="10" rx="5" fill="url(#hatch)" opacity="0.8"/>
+      <path id="pistonHandle" d="M316 255 C345 255 360 255 383 255" class="sketch thin"/>
+
+      <g clip-path="url(#chamberClip)">
+        <rect id="superFill" x="120" y="100" width="180" height="280" fill="#E7F4F5" opacity="0"/>
+        <rect id="solidBlock" x="120" y="380" width="180" height="0" fill="#F4F4F4" opacity="0"/>
+        <rect id="solidHatch" x="120" y="380" width="180" height="0" fill="url(#hatch)" opacity="0"/>
+        <path id="liquidShape" d="" fill="#E7F4F5" opacity="0"></path>
+        <g id="solidDots"></g>
+        <g id="liquidDots"></g>
+        <g id="gasDots"></g>
+      </g>
+    </g>
+
+    <g id="diagram">
+      <text x="570" y="72">p–T</text>
+      <path d="M520 390 L520 120" class="sketch thin"/>
+      <path d="M520 390 L900 390" class="sketch thin"/>
+      <text x="506" y="118" class="small">P</text>
+      <text x="900" y="412" class="small">T</text>
+
+      <path id="sublimationCurve" d="" fill="none" stroke="#222222" stroke-width="2.6" stroke-linecap="round"/>
+      <path id="vaporCurve" d="" fill="none" stroke="#222222" stroke-width="2.6" stroke-linecap="round"/>
+      <path id="meltingCurve" d="" fill="none" stroke="#222222" stroke-width="2.6" stroke-linecap="round"/>
+
+      <text x="548" y="210" class="tiny" opacity="0.78">kiinteä</text>
+      <text x="670" y="180" class="tiny" opacity="0.78">neste</text>
+      <text x="790" y="330" class="tiny" opacity="0.78">kaasu</text>
+
+      <circle id="statePoint" cx="0" cy="0" r="7" fill="#D84A62"></circle>
+      <line id="guideT" x1="0" y1="390" x2="0" y2="0" stroke="#222222" stroke-width="2" stroke-dasharray="5 7" opacity="0.35"/>
+      <line id="guideP" x1="520" y1="0" x2="0" y2="0" stroke="#222222" stroke-width="2" stroke-dasharray="5 7" opacity="0.35"/>
+    </g>
+  </svg>
+
+  <div id="phaseLabel" class="status">Olomuoto: kaasu</div>
+
+  <section class="controls" aria-label="Säätimet">
+    <div class="control">
+      <label for="pSlider">Paine</label>
+      <span id="pValue" class="value">P = 101 kPa</span>
+      <input id="pSlider" type="range" min="0" max="1000" step="1" />
+    </div>
+
+    <div class="control">
+      <label for="vSlider">Tilavuus</label>
+      <span id="vValue" class="value">V = 34,5 l</span>
+      <input id="vSlider" type="range" min="0" max="1000" step="1" />
+    </div>
+
+    <div class="control">
+      <label for="nSlider">Ainemäärä</label>
+      <span id="nValue" class="value">n = 1,0 mol</span>
+      <input id="nSlider" type="range" min="0.2" max="6.0" step="0.01" />
+    </div>
+
+    <div class="control">
+      <label for="tSlider">Lämpötila</label>
+      <span id="tValue" class="value">T = 420 K</span>
+      <input id="tSlider" type="range" min="160" max="650" step="1" />
+    </div>
+
+    <button id="resetButton" type="button">Nollaa</button>
+  </section>
+</main>
+
+<script>
+  const R = 8.314;
+
+  const T_TRIPLE = 240;
+  const P_TRIPLE = 14;
+  const T_CRIT = 610;
+  const P_CRIT = 6000;
+
+  const VM_SOLID = 0.018;
+  const VM_LIQ = 0.020;
+
+  const P_MIN = 0.1;
+  const P_MAX = 10000;
+  const V_MIN = 0.002;
+  const V_MAX = 5000;
+  const N_MIN = 0.2;
+  const N_MAX = 6.0;
+  const T_MIN = 160;
+  const T_MAX = 650;
+
+  const MELT_SLOPE = 24;
+  const MELT_BAND = 9;
+  const VAPOR_EXPONENT = 1.65;
+  const PHASE_BAND_LOG = 0.35;
+
+  const K_LIQ = 120000;
+  const K_SOLID = 220000;
+
+  const MAX_GAS = 140;
+  const MAX_LIQUID = 110;
+  const MAX_SOLID = 110;
+
+  const vessel = {
+    left: 120,
+    right: 300,
+    top: 100,
+    bottom: 380,
+    width: 180
+  };
+
+  const diagram = {
+    x0: 520,
+    x1: 900,
+    y0: 390,
+    y1: 120
+  };
+
+  const pSlider = document.getElementById("pSlider");
+  const vSlider = document.getElementById("vSlider");
+  const nSlider = document.getElementById("nSlider");
+  const tSlider = document.getElementById("tSlider");
+  const resetButton = document.getElementById("resetButton");
+
+  const pValue = document.getElementById("pValue");
+  const vValue = document.getElementById("vValue");
+  const nValue = document.getElementById("nValue");
+  const tValue = document.getElementById("tValue");
+  const phaseLabel = document.getElementById("phaseLabel");
+
+  const piston = document.getElementById("piston");
+  const pistonHatch = document.getElementById("pistonHatch");
+  const pistonHandle = document.getElementById("pistonHandle");
+  const chamberClipRect = document.getElementById("chamberClipRect");
+
+  const superFill = document.getElementById("superFill");
+  const solidBlock = document.getElementById("solidBlock");
+  const solidHatch = document.getElementById("solidHatch");
+  const liquidShape = document.getElementById("liquidShape");
+
+  const gasDotsGroup = document.getElementById("gasDots");
+  const liquidDotsGroup = document.getElementById("liquidDots");
+  const solidDotsGroup = document.getElementById("solidDots");
+
+  const sublimationCurve = document.getElementById("sublimationCurve");
+  const vaporCurve = document.getElementById("vaporCurve");
+  const meltingCurve = document.getElementById("meltingCurve");
+  const statePoint = document.getElementById("statePoint");
+  const guideT = document.getElementById("guideT");
+  const guideP = document.getElementById("guideP");
+
+  const state = {
+    P: 101.3,
+    V: 34.5,
+    n: 1.0,
+    T: 420,
+    phase: "kaasu",
+    comp: { solid: 0, liquid: 0, gas: 1 }
+  };
+
+  const gasParticles = [];
+  const liquidDots = [];
+  const solidDots = [];
+
+  function clamp(x, a, b) {
+    return Math.max(a, Math.min(b, x));
+  }
+
+  function lerp(a, b, t) {
+    return a + (b - a) * t;
+  }
+
+  function smoothstep(edge0, edge1, x) {
+    const t = clamp((x - edge0) / (edge1 - edge0), 0, 1);
+    return t * t * (3 - 2 * t);
+  }
+
+  function logMap01ToValue(t, min, max) {
+    const lo = Math.log(min);
+    const hi = Math.log(max);
+    return Math.exp(lo + t * (hi - lo));
+  }
+
+  function valueToLog01(value, min, max) {
+    const lo = Math.log(min);
+    const hi = Math.log(max);
+    return (Math.log(clamp(value, min, max)) - lo) / (hi - lo);
+  }
+
+  function sliderToLogValue(slider, min, max) {
+    return logMap01ToValue(Number(slider.value) / 1000, min, max);
+  }
+
+  function setLogSlider(slider, value, min, max) {
+    slider.value = Math.round(valueToLog01(value, min, max) * 1000);
+  }
+
+  function formatFi(value, decimals) {
+    return value.toFixed(decimals).replace(".", ",");
+  }
+
+  function smartFormat(value) {
+    const abs = Math.abs(value);
+    if (abs >= 1000) return formatFi(value, 0);
+    if (abs >= 100) return formatFi(value, 1);
+    if (abs >= 10) return formatFi(value, 1);
+    if (abs >= 1) return formatFi(value, 2);
+    return formatFi(value, 3);
+  }
+
+  function particleColorFromTemperature(T) {
+    const t = clamp((T - T_MIN) / (T_MAX - T_MIN), 0, 1);
+    const cool = { r: 46, g: 134, b: 166 };
+    const hot = { r: 216, g: 74, b: 98 };
+
+    return `rgb(${
+      Math.round(lerp(cool.r, hot.r, t))
+    }, ${
+      Math.round(lerp(cool.g, hot.g, t))
+    }, ${
+      Math.round(lerp(cool.b, hot.b, t))
+    })`;
+  }
+
+  function sublimationPressure(T) {
+    const u = (T - T_TRIPLE) / (T_TRIPLE - T_MIN);
+    return P_TRIPLE * Math.exp(5.6 * u);
+  }
+
+  function vaporPressure(T) {
+    if (T <= T_TRIPLE) return P_TRIPLE;
+    if (T >= T_CRIT) return P_CRIT;
+
+    const u = clamp((T - T_TRIPLE) / (T_CRIT - T_TRIPLE), 0, 1);
+    return P_TRIPLE * Math.exp(Math.log(P_CRIT / P_TRIPLE) * Math.pow(u, VAPOR_EXPONENT));
+  }
+
+  function meltingTemperature(P) {
+    return T_TRIPLE + MELT_SLOPE * Math.log(Math.max(P, 0.0001) / P_TRIPLE);
+  }
+
+  function meltingPressure(T) {
+    return P_TRIPLE * Math.exp((T - T_TRIPLE) / MELT_SLOPE);
+  }
+
+  function softCondensedFraction(P, boundaryP) {
+    const x = Math.log(P / boundaryP);
+    return smoothstep(-PHASE_BAND_LOG, PHASE_BAND_LOG, x);
+  }
+
+  function normalizeComposition(comp) {
+    const sum = comp.solid + comp.liquid + comp.gas;
+    if (sum <= 0) return { solid: 0, liquid: 0, gas: 1 };
+    return {
+      solid: comp.solid / sum,
+      liquid: comp.liquid / sum,
+      gas: comp.gas / sum
+    };
+  }
+
+  function phaseName(comp, supercritical) {
+    if (supercritical) return "ylikriittinen";
+
+    const s = comp.solid;
+    const l = comp.liquid;
+    const g = comp.gas;
+    const e = 0.08;
+
+    if (s > e && l > e) return "kiinteä + neste";
+    if (l > e && g > e) return "neste + kaasu";
+    if (s > e && g > e) return "kiinteä + kaasu";
+
+    if (s >= l && s >= g) return "kiinteä";
+    if (l >= s && l >= g) return "neste";
+    return "kaasu";
+  }
+
+  function compositionFromPT(P, T) {
+    if (T >= T_CRIT) {
+      return {
+        comp: { solid: 0, liquid: 0, gas: 1 },
+        supercritical: P >= P_CRIT
+      };
+    }
+
+    if (T < T_TRIPLE) {
+      const ps = sublimationPressure(T);
+      const condensed = softCondensedFraction(P, ps);
+
+      return {
+        comp: normalizeComposition({
+          solid: condensed,
+          liquid: 0,
+          gas: 1 - condensed
+        }),
+        supercritical: false
+      };
+    }
+
+    const pv = vaporPressure(T);
+    const condensed = softCondensedFraction(P, pv);
+
+    const tm = meltingTemperature(P);
+    const liquidShare = smoothstep(tm - MELT_BAND, tm + MELT_BAND, T);
+
+    return {
+      comp: normalizeComposition({
+        solid: condensed * (1 - liquidShare),
+        liquid: condensed * liquidShare,
+        gas: 1 - condensed
+      }),
+      supercritical: false
+    };
+  }
+
+  function volumeFromPT(P, T, n, comp) {
+    const solidV = n * VM_SOLID;
+    const liquidV = n * VM_LIQ;
+    let gasV = n * R * T / P;
+
+    if (comp.gas > 0.04 && (comp.liquid + comp.solid) > 0.04) {
+      const boundaryP = T < T_TRIPLE ? sublimationPressure(T) : vaporPressure(T);
+      gasV = n * R * T / boundaryP;
+    }
+
+    return comp.solid * solidV + comp.liquid * liquidV + comp.gas * gasV;
+  }
+
+  function buildStateFromPTn(P, T, n) {
+    const phaseData = compositionFromPT(P, T);
+    const comp = phaseData.comp;
+    const V = volumeFromPT(P, T, n, comp);
+
+    return {
+      P: clamp(P, P_MIN, P_MAX),
+      T: clamp(T, T_MIN, T_MAX),
+      n: clamp(n, N_MIN, N_MAX),
+      V: clamp(V, V_MIN, V_MAX),
+      comp,
+      phase: phaseName(comp, phaseData.supercritical)
+    };
+  }
+
+  function buildStateFromTVn(T, V, n) {
+    let P;
+    let comp;
+    let supercritical = false;
+
+    if (T >= T_CRIT) {
+      P = n * R * T / V;
+      comp = { solid: 0, liquid: 0, gas: 1 };
+      supercritical = P >= P_CRIT;
+
+      return {
+        P: clamp(P, P_MIN, P_MAX),
+        T: clamp(T, T_MIN, T_MAX),
+        n: clamp(n, N_MIN, N_MAX),
+        V: clamp(V, V_MIN, V_MAX),
+        comp,
+        phase: phaseName(comp, supercritical)
+      };
+    }
+
+    if (T < T_TRIPLE) {
+      const ps = sublimationPressure(T);
+      const solidV = n * VM_SOLID;
+      const gasSatV = n * R * T / ps;
+
+      if (V <= solidV * 0.995) {
+        P = ps + K_SOLID * (solidV / Math.max(V, 1e-9) - 1);
+        comp = { solid: 1, liquid: 0, gas: 0 };
+      } else if (V < gasSatV) {
+        const q = clamp((V - solidV) / (gasSatV - solidV), 0, 1);
+        comp = { solid: 1 - q, liquid: 0, gas: q };
+        P = ps;
+      } else {
+        P = n * R * T / V;
+        comp = { solid: 0, liquid: 0, gas: 1 };
+      }
+
+      comp = normalizeComposition(comp);
+
+      return {
+        P: clamp(P, P_MIN, P_MAX),
+        T: clamp(T, T_MIN, T_MAX),
+        n: clamp(n, N_MIN, N_MAX),
+        V: clamp(V, V_MIN, V_MAX),
+        comp,
+        phase: phaseName(comp, false)
+      };
+    }
+
+    const pv = vaporPressure(T);
+    const pm = meltingPressure(T);
+
+    const solidV = n * VM_SOLID;
+    const liquidV = n * VM_LIQ;
+    const gasSatV = n * R * T / pv;
+
+    if (V > gasSatV) {
+      P = n * R * T / V;
+      comp = { solid: 0, liquid: 0, gas: 1 };
+    } else if (V > liquidV) {
+      const q = clamp((V - liquidV) / (gasSatV - liquidV), 0, 1);
+      P = pv;
+      comp = { solid: 0, liquid: 1 - q, gas: q };
+    } else if (V > solidV && pm > pv) {
+      const l = clamp((V - solidV) / (liquidV - solidV), 0, 1);
+      P = pm;
+      comp = { solid: 1 - l, liquid: l, gas: 0 };
+    } else {
+      P = Math.max(pv, pm) + K_SOLID * (solidV / Math.max(V, 1e-9) - 1);
+      const phaseData = compositionFromPT(P, T);
+      comp = phaseData.comp;
+    }
+
+    comp = normalizeComposition(comp);
+
+    return {
+      P: clamp(P, P_MIN, P_MAX),
+      T: clamp(T, T_MIN, T_MAX),
+      n: clamp(n, N_MIN, N_MAX),
+      V: clamp(V, V_MIN, V_MAX),
+      comp,
+      phase: phaseName(comp, false)
+    };
+  }
+
+  function applyState(newState) {
+    state.P = newState.P;
+    state.V = newState.V;
+    state.n = newState.n;
+    state.T = newState.T;
+    state.phase = newState.phase;
+    state.comp = newState.comp;
+
+    syncControls();
+    updateLabels();
+    drawScene();
+    updateParticleTargets();
+    updateDiagramPoint();
+  }
+
+  function syncControls() {
+    setLogSlider(pSlider, state.P, P_MIN, P_MAX);
+    setLogSlider(vSlider, state.V, V_MIN, V_MAX);
+    nSlider.value = state.n;
+    tSlider.value = state.T;
+  }
+
+  function updateLabels() {
+    pValue.textContent = `P = ${smartFormat(state.P)} kPa`;
+    vValue.textContent = `V = ${smartFormat(state.V)} l`;
+    nValue.textContent = `n = ${formatFi(state.n, 1)} mol`;
+    tValue.textContent = `T = ${Math.round(state.T)} K`;
+    phaseLabel.textContent = `Olomuoto: ${state.phase}`;
+  }
+
+  function pistonYFromVolume(V) {
+    const t = valueToLog01(V, V_MIN, V_MAX);
+    return lerp(346, 110, t);
+  }
+
+  function getRegions() {
+    const pistonY = pistonYFromVolume(state.V);
+    const innerTop = pistonY + 8;
+    const innerBottom = vessel.bottom - 4;
+    const innerHeight = Math.max(8, innerBottom - innerTop);
+
+    const solidVol = state.comp.solid * state.n * VM_SOLID;
+    const liquidVol = state.comp.liquid * state.n * VM_LIQ;
+
+    let solidH;
+    let liquidH;
+
+    if (state.comp.gas < 0.05 && state.comp.solid + state.comp.liquid > 0.05) {
+      const sum = state.comp.solid + state.comp.liquid;
+      solidH = innerHeight * state.comp.solid / sum;
+      liquidH = innerHeight * state.comp.liquid / sum;
+    } else {
+      let solidFrac = solidVol / Math.max(state.V, 1e-9);
+      let liquidFrac = liquidVol / Math.max(state.V, 1e-9);
+      const condensedFrac = solidFrac + liquidFrac;
+
+      if (condensedFrac > 0 && condensedFrac < 0.08) {
+        const scale = 0.08 / condensedFrac;
+        solidFrac *= scale;
+        liquidFrac *= scale;
+      }
+
+      solidH = innerHeight * clamp(solidFrac, 0, 0.95);
+      liquidH = innerHeight * clamp(liquidFrac, 0, 0.95 - solidH / innerHeight);
+    }
+
+    const solidBottom = innerBottom;
+    const solidTop = solidBottom - solidH;
+    const liquidBottom = solidTop;
+    const liquidTop = liquidBottom - liquidH;
+
+    return {
+      pistonY,
+      innerTop,
+      innerBottom,
+      innerHeight,
+      solidTop,
+      solidBottom,
+      solidHeight: solidH,
+      liquidTop,
+      liquidBottom,
+      liquidHeight: liquidH,
+      gasTop: innerTop,
+      gasBottom: Math.min(liquidTop, solidTop, innerBottom),
+      left: vessel.left + 4,
+      right: vessel.right - 4,
+      width: vessel.width - 8
+    };
+  }
+
+  function drawScene() {
+    const reg = getRegions();
+
+    piston.setAttribute("y", reg.pistonY - 9);
+    pistonHatch.setAttribute("y", reg.pistonY - 5);
+    pistonHandle.setAttribute("d", `M316 ${reg.pistonY} C345 ${reg.pistonY} 360 ${reg.pistonY} 383 ${reg.pistonY}`);
+
+    chamberClipRect.setAttribute("x", reg.left);
+    chamberClipRect.setAttribute("y", reg.innerTop);
+    chamberClipRect.setAttribute("width", reg.width);
+    chamberClipRect.setAttribute("height", reg.innerBottom - reg.innerTop);
+
+    superFill.setAttribute("x", reg.left);
+    superFill.setAttribute("y", reg.innerTop);
+    superFill.setAttribute("width", reg.width);
+    superFill.setAttribute("height", reg.innerBottom - reg.innerTop);
+    superFill.setAttribute("opacity", state.phase === "ylikriittinen" ? "0.8" : "0");
+
+    if (reg.solidHeight > 1) {
+      solidBlock.setAttribute("x", reg.left);
+      solidBlock.setAttribute("y", reg.solidTop);
+      solidBlock.setAttribute("width", reg.width);
+      solidBlock.setAttribute("height", reg.solidHeight);
+
+      solidHatch.setAttribute("x", reg.left);
+      solidHatch.setAttribute("y", reg.solidTop);
+      solidHatch.setAttribute("width", reg.width);
+      solidHatch.setAttribute("height", reg.solidHeight);
+
+      solidBlock.setAttribute("opacity", state.comp.solid > 0.9 ? "0.9" : "0.55");
+      solidHatch.setAttribute("opacity", state.comp.solid > 0.9 ? "0.65" : "0.35");
+    } else {
+      solidBlock.setAttribute("height", "0");
+      solidHatch.setAttribute("height", "0");
+      solidBlock.setAttribute("opacity", "0");
+      solidHatch.setAttribute("opacity", "0");
+    }
+
+    if (reg.liquidHeight > 1) {
+      const x0 = reg.left;
+      const x1 = reg.right;
+      const y = reg.liquidTop;
+      const yb = reg.liquidBottom;
+      const wave = Math.min(8, Math.max(4, reg.liquidHeight * 0.10));
+
+      const d = [
+        `M ${x0} ${yb}`,
+        `L ${x0} ${y + wave}`,
+        `C ${x0 + reg.width * 0.20} ${y - wave}, ${x0 + reg.width * 0.35} ${y + wave}, ${x0 + reg.width * 0.50} ${y}`,
+        `C ${x0 + reg.width * 0.70} ${y - wave}, ${x0 + reg.width * 0.84} ${y + wave}, ${x1} ${y}`,
+        `L ${x1} ${yb}`,
+        "Z"
+      ].join(" ");
+
+      liquidShape.setAttribute("d", d);
+      liquidShape.setAttribute("opacity", state.comp.liquid > 0.9 ? "0.95" : "0.62");
+    } else {
+      liquidShape.setAttribute("d", "");
+      liquidShape.setAttribute("opacity", "0");
+    }
+  }
+
+  function createParticlePools() {
+    for (let i = 0; i < MAX_GAS; i++) {
+      const node = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      const r = 4 + Math.random() * 1.8;
+      node.setAttribute("r", r);
+      node.setAttribute("opacity", "0");
+      gasDotsGroup.appendChild(node);
+
+      gasParticles.push({
+        node,
+        r,
+        active: false,
+        x: lerp(vessel.left + 18, vessel.right - 18, Math.random()),
+        y: lerp(vessel.top + 18, vessel.bottom - 18, Math.random()),
+        vx: (Math.random() < 0.5 ? -1 : 1) * (0.45 + Math.random() * 0.7),
+        vy: (Math.random() < 0.5 ? -1 : 1) * (0.45 + Math.random() * 0.7)
+      });
+    }
+
+    for (let i = 0; i < MAX_LIQUID; i++) {
+      const node = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      node.setAttribute("r", 4.2);
+      node.setAttribute("opacity", "0");
+      liquidDotsGroup.appendChild(node);
+
+      liquidDots.push({
+        node,
+        active: false,
+        x: 210,
+        y: 330,
+        tx: 210,
+        ty: 330,
+        phase: Math.random() * Math.PI * 2,
+        jitterX: (Math.random() - 0.5) * 7,
+        jitterY: (Math.random() - 0.5) * 7
+      });
+    }
+
+    for (let i = 0; i < MAX_SOLID; i++) {
+      const node = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      node.setAttribute("r", 4.1);
+      node.setAttribute("opacity", "0");
+      solidDotsGroup.appendChild(node);
+
+      solidDots.push({
+        node,
+        active: false,
+        x: 210,
+        y: 330,
+        tx: 210,
+        ty: 330,
+        phase: Math.random() * Math.PI * 2
+      });
+    }
+  }
+
+  function particleCounts() {
+    const base = clamp(Math.round(12 + state.n * 13), 12, 96);
+
+    return {
+      gas: clamp(Math.round(base * state.comp.gas), 0, MAX_GAS),
+      liquid: clamp(Math.round(base * state.comp.liquid), 0, MAX_LIQUID),
+      solid: clamp(Math.round(base * state.comp.solid), 0, MAX_SOLID)
+    };
+  }
+
+  function setActiveParticles(list, count, opacity) {
+    for (let i = 0; i < list.length; i++) {
+      const p = list[i];
+      p.active = i < count;
+      p.node.setAttribute("opacity", p.active ? opacity : "0");
+    }
+  }
+
+  function assignTargets(list, count, x0, x1, y0, y1, type) {
+    if (count <= 0 || y1 <= y0 + 4) return;
+
+    const cols = Math.max(4, Math.round(Math.sqrt(count * 1.6)));
+    const rows = Math.max(3, Math.ceil(count / cols));
+
+    for (let i = 0; i < count; i++) {
+      const row = Math.floor(i / cols);
+      const col = i % cols;
+
+      let x = lerp(x0 + 14, x1 - 14, cols === 1 ? 0.5 : col / (cols - 1));
+      let y = lerp(y0 + 14, y1 - 14, rows === 1 ? 0.5 : row / (rows - 1));
+
+      if (type === "solid" && row % 2 !== 0) x += 8;
+      if (type === "liquid") {
+        x += list[i].jitterX;
+        y += list[i].jitterY;
+      }
+
+      const p = list[i];
+
+      if (!p.active) {
+        p.x = x;
+        p.y = y;
+      }
+
+      p.tx = x;
+      p.ty = y;
+    }
+  }
+
+  function updateParticleTargets() {
+    const reg = getRegions();
+    const counts = particleCounts();
+    const color = particleColorFromTemperature(state.T);
+
+    setActiveParticles(gasParticles, counts.gas, state.phase === "ylikriittinen" ? "0.86" : "0.78");
+    setActiveParticles(liquidDots, counts.liquid, state.comp.liquid > 0.9 ? "0.72" : "0.55");
+    setActiveParticles(solidDots, counts.solid, state.comp.solid > 0.9 ? "0.62" : "0.48");
+
+    assignTargets(liquidDots, counts.liquid, reg.left, reg.right, reg.liquidTop, reg.liquidBottom, "liquid");
+    assignTargets(solidDots, counts.solid, reg.left, reg.right, reg.solidTop, reg.solidBottom, "solid");
+
+    for (const p of gasParticles) p.node.setAttribute("fill", color);
+    for (const p of liquidDots) p.node.setAttribute("fill", color);
+    for (const p of solidDots) p.node.setAttribute("fill", color);
+  }
+
+  function diagramX(T) {
+    return lerp(diagram.x0 + 18, diagram.x1 - 10, (T - T_MIN) / (T_MAX - T_MIN));
+  }
+
+  function diagramY(P) {
+    const lo = Math.log(P_MIN);
+    const hi = Math.log(P_MAX);
+    const t = (Math.log(clamp(P, P_MIN, P_MAX)) - lo) / (hi - lo);
+    return lerp(diagram.y0 - 8, diagram.y1, t);
+  }
+
+  function pathFromSamples(samples) {
+    return samples
+      .map((pt, i) => `${i === 0 ? "M" : "L"} ${diagramX(pt.T).toFixed(1)} ${diagramY(pt.P).toFixed(1)}`)
+      .join(" ");
+  }
+
+  function drawPhaseDiagram() {
+    const sublimation = [];
+    for (let T = T_MIN; T <= T_TRIPLE; T += 3) {
+      sublimation.push({ T, P: sublimationPressure(T) });
+    }
+
+    const vapor = [];
+    for (let T = T_TRIPLE; T <= T_CRIT; T += 5) {
+      vapor.push({ T, P: vaporPressure(T) });
+    }
+
+    const melt = [];
+    const maxT = Math.min(T_MAX, meltingTemperature(P_MAX));
+    for (let T = T_TRIPLE; T <= maxT; T += 4) {
+      melt.push({ T, P: meltingPressure(T) });
+    }
+
+    sublimationCurve.setAttribute("d", pathFromSamples(sublimation));
+    vaporCurve.setAttribute("d", pathFromSamples(vapor));
+    meltingCurve.setAttribute("d", pathFromSamples(melt));
+  }
+
+  function updateDiagramPoint() {
+    const x = diagramX(state.T);
+    const y = diagramY(state.P);
+
+    statePoint.setAttribute("cx", x);
+    statePoint.setAttribute("cy", y);
+
+    guideT.setAttribute("x1", x);
+    guideT.setAttribute("x2", x);
+    guideT.setAttribute("y1", diagram.y0);
+    guideT.setAttribute("y2", y);
+
+    guideP.setAttribute("x1", diagram.x0);
+    guideP.setAttribute("x2", x);
+    guideP.setAttribute("y1", y);
+    guideP.setAttribute("y2", y);
+  }
+
+  function animate(time) {
+    const reg = getRegions();
+    const speedFactor = Math.sqrt(state.T / 300);
+
+    const gasTop = reg.gasTop + 8;
+    const gasBottom = reg.gasBottom - 8;
+    const gasLeft = reg.left + 8;
+    const gasRight = reg.right - 8;
+
+    for (const p of gasParticles) {
+      if (!p.active || gasBottom <= gasTop + 2 || gasRight <= gasLeft + 2) {
+        p.node.setAttribute("cx", -20);
+        p.node.setAttribute("cy", -20);
+        continue;
+      }
+
+      p.x += p.vx * speedFactor;
+      p.y += p.vy * speedFactor;
+
+      if (p.x - p.r < gasLeft) {
+        p.x = gasLeft + p.r;
+        p.vx *= -1;
+      }
+
+      if (p.x + p.r > gasRight) {
+        p.x = gasRight - p.r;
+        p.vx *= -1;
+      }
+
+      if (p.y - p.r < gasTop) {
+        p.y = gasTop + p.r;
+        p.vy *= -1;
+      }
+
+      if (p.y + p.r > gasBottom) {
+        p.y = gasBottom - p.r;
+        p.vy *= -1;
+      }
+
+      p.node.setAttribute("cx", p.x);
+      p.node.setAttribute("cy", p.y);
+    }
+
+    for (const p of liquidDots) {
+      if (!p.active) {
+        p.node.setAttribute("cx", -20);
+        p.node.setAttribute("cy", -20);
+        continue;
+      }
+
+      p.x += (p.tx - p.x) * 0.08;
+      p.y += (p.ty - p.y) * 0.08;
+
+      p.node.setAttribute("cx", p.x + Math.sin(time * 0.003 + p.phase) * 2.4);
+      p.node.setAttribute("cy", p.y + Math.cos(time * 0.0036 + p.phase) * 1.8);
+    }
+
+    for (const p of solidDots) {
+      if (!p.active) {
+        p.node.setAttribute("cx", -20);
+        p.node.setAttribute("cy", -20);
+        continue;
+      }
+
+      p.x += (p.tx - p.x) * 0.10;
+      p.y += (p.ty - p.y) * 0.10;
+
+      p.node.setAttribute("cx", p.x + Math.sin(time * 0.005 + p.phase) * 0.8);
+      p.node.setAttribute("cy", p.y + Math.cos(time * 0.005 + p.phase) * 0.8);
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  pSlider.addEventListener("input", () => {
+    state.P = sliderToLogValue(pSlider, P_MIN, P_MAX);
+    applyState(buildStateFromPTn(state.P, state.T, state.n));
+  });
+
+  vSlider.addEventListener("input", () => {
+    state.V = sliderToLogValue(vSlider, V_MIN, V_MAX);
+    applyState(buildStateFromTVn(state.T, state.V, state.n));
+  });
+
+  nSlider.addEventListener("input", () => {
+    state.n = Number(nSlider.value);
+    applyState(buildStateFromPTn(state.P, state.T, state.n));
+  });
+
+  tSlider.addEventListener("input", () => {
+    state.T = Number(tSlider.value);
+    applyState(buildStateFromPTn(state.P, state.T, state.n));
+  });
+
+  resetButton.addEventListener("click", () => {
+    applyState(buildStateFromPTn(101.3, 420, 1.0));
+  });
+
+  drawPhaseDiagram();
+  createParticlePools();
+  applyState(buildStateFromPTn(101.3, 420, 1.0));
+  requestAnimationFrame(animate);
+</script>
+</body>
+</html>
