@@ -3,86 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FY03 | Simulaatiot ja materiaalit</title>
-  <meta name="description" content="FY03-kurssin interaktiiviset materiaalit, simulaatiot ja tehtäväpohjat." />
+  <title>Lauri Hellsten | Materiaalipankki</title>
+  <meta name="description" content="Lauri Hellstenin materiaalipankki: simulaatioita, kalvoja, Quizlet-kortteja ja kurssitiivistelmiä." />
   <style>
     :root {
-      --bg: #080b14;
-      --bg-2: #0f172a;
-      --card: rgba(255, 255, 255, 0.075);
-      --card-strong: rgba(255, 255, 255, 0.12);
-      --text: #eef4ff;
-      --muted: #9fb0c8;
-      --line: rgba(255, 255, 255, 0.14);
-      --accent: #67e8f9;
-      --accent-2: #a78bfa;
-      --accent-3: #34d399;
-      --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
-      --radius: 28px;
-      --radius-sm: 18px;
-      --max: 1180px;
+      --bg: #f6f7fb;
+      --text: #151927;
+      --muted: #647084;
+      --card: rgba(255, 255, 255, 0.84);
+      --line: #e4e8f0;
+      --accent: #2563eb;
+      --accent-soft: #eaf1ff;
+      --radius: 24px;
+      --shadow: 0 18px 46px rgba(20, 31, 56, 0.10);
+      --max: 1020px;
     }
 
     * { box-sizing: border-box; }
 
-    html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 10% 10%, rgba(103, 232, 249, 0.26), transparent 28rem),
-        radial-gradient(circle at 88% 4%, rgba(167, 139, 250, 0.28), transparent 30rem),
-        radial-gradient(circle at 50% 105%, rgba(52, 211, 153, 0.18), transparent 34rem),
-        linear-gradient(135deg, var(--bg), var(--bg-2) 55%, #10111d);
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.65), transparent 76%);
+        radial-gradient(circle at 8% 0%, #dbeafe 0, transparent 28rem),
+        radial-gradient(circle at 92% 4%, #ede9fe 0, transparent 28rem),
+        var(--bg);
     }
 
     a { color: inherit; text-decoration: none; }
 
-    .shell {
+    .page {
       width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
-      position: relative;
-      z-index: 1;
+      padding: 34px 0 54px;
     }
 
     header {
-      padding: 28px 0 18px;
-    }
-
-    .topbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 18px;
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      background: rgba(8, 11, 20, 0.48);
-      backdrop-filter: blur(18px);
-      border-radius: 999px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
-      min-width: 0;
+      font-weight: 850;
+      letter-spacing: -0.035em;
     }
 
     .logo {
@@ -91,705 +61,356 @@
       border-radius: 14px;
       display: grid;
       place-items: center;
-      color: #07111f;
-      font-weight: 900;
-      letter-spacing: -0.05em;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 12px 30px rgba(103, 232, 249, 0.22);
-      flex: 0 0 auto;
+      color: white;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
     }
 
-    .brand-text strong {
-      display: block;
-      font-size: 0.98rem;
-      letter-spacing: -0.02em;
-      white-space: nowrap;
-    }
-
-    .brand-text span {
-      color: var(--muted);
-      font-size: 0.82rem;
-      white-space: nowrap;
-    }
-
-    .nav {
+    nav {
       display: flex;
-      align-items: center;
       gap: 8px;
-    }
-
-    .nav a {
       color: var(--muted);
-      font-size: 0.92rem;
-      padding: 10px 14px;
-      border-radius: 999px;
-      transition: 160ms ease;
+      font-size: 0.95rem;
     }
 
-    .nav a:hover {
-      color: var(--text);
-      background: rgba(255,255,255,0.08);
+    nav a {
+      padding: 9px 12px;
+      border-radius: 999px;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      background: rgba(37, 99, 235, 0.08);
     }
 
     .hero {
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      align-items: center;
-      gap: 42px;
-      padding: 76px 0 52px;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-bottom: 18px;
     }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: #dffbff;
-      background: rgba(103, 232, 249, 0.12);
-      border: 1px solid rgba(103, 232, 249, 0.28);
-      padding: 9px 13px;
+    .panel {
+      background: var(--card);
+      border: 1px solid rgba(228, 232, 240, 0.95);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .intro {
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag {
+      width: fit-content;
+      margin-bottom: 16px;
+      color: var(--accent);
+      background: var(--accent-soft);
       border-radius: 999px;
+      padding: 8px 12px;
       font-size: 0.9rem;
-      margin-bottom: 20px;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--accent-3);
-      box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.14);
+      font-weight: 760;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(3rem, 7vw, 6.8rem);
-      line-height: 0.92;
-      letter-spacing: -0.08em;
-      max-width: 900px;
+      font-size: clamp(2.35rem, 6vw, 4.8rem);
+      line-height: 0.96;
+      letter-spacing: -0.075em;
     }
 
-    .gradient-text {
-      background: linear-gradient(135deg, #ffffff 0%, #bdf7ff 38%, #d8ccff 72%, #b6ffe6 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .lead {
-      margin: 24px 0 0;
+    .intro p {
+      margin: 18px 0 0;
+      max-width: 620px;
       color: var(--muted);
-      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+      font-size: 1.06rem;
       line-height: 1.65;
-      max-width: 680px;
     }
 
-    .hero-actions {
+    .cv-card {
+      padding: 18px;
+    }
+
+    .portrait {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14);
+      margin-bottom: 18px;
+    }
+
+    .avatar-portrait {
+      object-fit: contain;
+      object-position: center;
+      padding: 10px;
+      background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    }
+
+    .cv-content {
+      padding: 0 6px 6px;
+    }
+
+    .cv-content h2 {
+      margin: 0;
+      font-size: 1.45rem;
+      letter-spacing: -0.045em;
+    }
+
+    .cv-content p {
+      margin: 10px 0 14px;
+      color: var(--muted);
+      line-height: 1.58;
+    }
+
+    .cv-facts {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 13px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      font-weight: 750;
-      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
-    }
-
-    .button.primary {
-      color: #06111e;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      border-color: transparent;
-    }
-
-    .button.secondary {
-      color: var(--text);
-      background: rgba(255,255,255,0.06);
-      backdrop-filter: blur(14px);
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .hero-card {
-      position: relative;
-      min-height: 440px;
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.13), rgba(255,255,255,0.055));
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      width: 280px;
-      height: 280px;
-      border-radius: 999px;
-      right: -90px;
-      top: -80px;
-      background: radial-gradient(circle, rgba(103,232,249,0.46), transparent 66%);
-    }
-
-    .mini-window {
-      position: relative;
-      z-index: 1;
-      border: 1px solid rgba(255,255,255,0.16);
-      background: rgba(7, 12, 24, 0.72);
-      border-radius: 22px;
-      overflow: hidden;
-      backdrop-filter: blur(18px);
-    }
-
-    .window-bar {
-      display: flex;
-      align-items: center;
       gap: 8px;
-      padding: 14px 16px;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .traffic {
-      width: 11px;
-      height: 11px;
+    .cv-facts li {
+      color: #334155;
+      background: #f8fafc;
+      border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(255,255,255,0.28);
+      padding: 8px 11px;
+      font-size: 0.9rem;
     }
 
-    .chart {
-      height: 230px;
-      padding: 20px;
-      display: grid;
-      place-items: center;
-    }
-
-    .phase-svg {
-      width: 100%;
-      max-width: 360px;
-      overflow: visible;
-    }
-
-    .phase-svg path,
-    .phase-svg line {
-      vector-effect: non-scaling-stroke;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 16px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .stat {
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.065);
-      border-radius: 18px;
-      padding: 14px;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.55rem;
-      letter-spacing: -0.05em;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 0.78rem;
-    }
-
-    section {
-      padding: 34px 0;
+    .materials-section {
+      padding: 28px;
+      margin-top: 18px;
     }
 
     .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 24px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
-    h2 {
+    .section-head h2 {
       margin: 0;
-      font-size: clamp(1.8rem, 3vw, 2.9rem);
+      font-size: 1.9rem;
       letter-spacing: -0.055em;
     }
 
     .section-head p {
-      margin: 10px 0 0;
+      margin: 6px 0 0;
       color: var(--muted);
-      line-height: 1.55;
-      max-width: 660px;
+      line-height: 1.5;
     }
 
-    .search-panel {
+    .category-grid {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 12px;
-      padding: 12px;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      background: rgba(255,255,255,0.065);
-      backdrop-filter: blur(18px);
-      margin-bottom: 22px;
-    }
-
-    .search {
-      width: 100%;
-      border: 0;
-      outline: 0;
-      color: var(--text);
-      background: rgba(3, 7, 18, 0.44);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 18px;
-      padding: 15px 16px;
-      font: inherit;
-    }
-
-    .search::placeholder { color: rgba(159,176,200,0.76); }
-
-    .filters {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .filter {
-      cursor: pointer;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.06);
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 10px 13px;
-      font: inherit;
-      font-size: 0.9rem;
-      transition: 160ms ease;
-    }
-
-    .filter:hover,
-    .filter.active {
-      color: #07111f;
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      group-name: material-card;
-      position: relative;
-      min-height: 240px;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 20px;
-      overflow: hidden;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.105), rgba(255,255,255,0.045)),
-        rgba(255,255,255,0.03);
-      box-shadow: 0 12px 48px rgba(0,0,0,0.18);
-      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: -1px;
-      opacity: 0;
-      background: radial-gradient(circle at 18% 0%, rgba(103,232,249,0.2), transparent 42%),
-                  radial-gradient(circle at 90% 10%, rgba(167,139,250,0.18), transparent 38%);
-      transition: opacity 180ms ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(103,232,249,0.34);
-      background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
-    }
-
-    .card:hover::before { opacity: 1; }
-
-    .card > * { position: relative; z-index: 1; }
-
-    .card-top {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
-      margin-bottom: 18px;
     }
 
-    .icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: rgba(103,232,249,0.12);
-      border: 1px solid rgba(103,232,249,0.24);
-      font-size: 1.45rem;
-    }
-
-    .pill {
-      color: #d8faff;
-      background: rgba(103,232,249,0.1);
-      border: 1px solid rgba(103,232,249,0.2);
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-size: 0.78rem;
-      white-space: nowrap;
-    }
-
-    .card h3 {
-      margin: 0;
-      font-size: 1.35rem;
-      letter-spacing: -0.04em;
-    }
-
-    .card p {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 10px 0 20px;
-    }
-
-    .card-footer {
-      margin-top: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      color: rgba(238,244,255,0.9);
-      font-weight: 760;
-    }
-
-    .arrow {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.08);
-      transition: transform 160ms ease, background 160ms ease;
-    }
-
-    .card:hover .arrow {
-      transform: translateX(3px);
-      background: rgba(103,232,249,0.18);
-    }
-
-    .empty {
-      display: none;
-      text-align: center;
-      color: var(--muted);
-      border: 1px dashed rgba(255,255,255,0.18);
-      border-radius: var(--radius);
-      padding: 42px 20px;
-      background: rgba(255,255,255,0.045);
-    }
-
-    .feature-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 14px;
-    }
-
-    .feature {
+    .category {
+      background: #fff;
       border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
       padding: 18px;
     }
 
-    .feature strong {
-      display: block;
-      margin-bottom: 8px;
-      letter-spacing: -0.02em;
+    .category h3 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 12px;
+      font-size: 1.13rem;
+      letter-spacing: -0.035em;
     }
 
-    .feature span {
-      color: var(--muted);
-      line-height: 1.5;
+    .category h3 span {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 10px;
       font-size: 0.95rem;
     }
 
-    footer {
-      padding: 58px 0 34px;
-      color: var(--muted);
+    .links {
+      display: grid;
+      gap: 8px;
     }
 
-    .footer-inner {
+    .item {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
-      border-top: 1px solid var(--line);
-      padding-top: 22px;
-      font-size: 0.92rem;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 12px;
+      color: #263247;
+      background: #f8fafc;
+      border: 1px solid transparent;
+      border-radius: 14px;
+      transition: transform 130ms ease, background 130ms ease, border-color 130ms ease;
     }
 
-    @media (max-width: 940px) {
-      .hero {
-        grid-template-columns: 1fr;
-        padding-top: 52px;
+    .item:hover {
+      transform: translateY(-1px);
+      background: #ffffff;
+      border-color: #bfdbfe;
+    }
+
+    .item small {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .item .go {
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .placeholder {
+      color: var(--muted);
+      background: #f8fafc;
+      border: 1px dashed #d8dee9;
+      border-radius: 14px;
+      padding: 12px;
+      line-height: 1.45;
+      font-size: 0.94rem;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
       }
 
-      .hero-card { min-height: auto; }
-      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .feature-row { grid-template-columns: 1fr; }
-      .search-panel { grid-template-columns: 1fr; }
-      .filters { justify-content: flex-start; }
-    }
+      .hero,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
 
-    @media (max-width: 640px) {
-      .shell { width: min(100% - 22px, var(--max)); }
-      .topbar { border-radius: 24px; align-items: flex-start; }
-      .nav { display: none; }
-      .hero { padding: 42px 0 34px; }
-      h1 { font-size: clamp(2.75rem, 15vw, 4.6rem); }
-      .stats { grid-template-columns: 1fr; }
-      .grid { grid-template-columns: 1fr; }
-      .section-head { display: block; }
-      .footer-inner { flex-direction: column; }
+      .intro,
+      .materials-section {
+        padding: 22px;
+      }
+
+      .cv-card {
+        padding: 14px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
 <body>
-  <header class="shell">
-    <nav class="topbar" aria-label="Päänavigaatio">
-      <a class="brand" href="#top" aria-label="FY03 etusivulle">
-        <span class="logo">F3</span>
-        <span class="brand-text">
-          <strong>FY03 Materiaalit</strong>
-          <span>Lämpö, kaasut ja olomuodot</span>
-        </span>
+  <div class="page">
+    <header>
+      <a class="brand" href="#top" aria-label="Etusivu">
+        <span class="logo">LH</span>
+        <span>Lauri Hellsten</span>
       </a>
-      <div class="nav">
-        <a href="#materiaalit">Materiaalit</a>
-        <a href="#opiskelu">Opiskelu</a>
-        <a href="#info">Info</a>
-      </div>
-    </nav>
-  </header>
+      <nav aria-label="Päänavigaatio">
+        <a href="#materiaalit">Materiaalipankki</a>
+        <a href="#cv">CV</a>
+      </nav>
+    </header>
 
-  <main id="top" class="shell">
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <div class="eyebrow"><span class="dot"></span> Interaktiiviset FY03-simulaatiot yhdessä paikassa</div>
-        <h1 id="hero-title"><span class="gradient-text">Tutki fysiikkaa.</span><br />Nopeammin.</h1>
-        <p class="lead">
-          Avaa kurssin simulaatiot, mallit ja visualisoinnit suoraan tästä koontisivusta.
-          Hae aihetta, suodata materiaalit ja jatka työskentelyä ilman turhaa klikkailua.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#materiaalit">Avaa materiaalit <span aria-hidden="true">→</span></a>
-          <a class="button secondary" href="#opiskelu">Katso opiskeluvinkit</a>
+    <main id="top">
+      <section class="hero">
+        <div class="panel intro">
+          <span class="tag">Materiaalipankki</span>
+          <h1>Opetusmateriaalit yhdessä paikassa.</h1>
+          <p>
+            Kokoan tänne opetuksessa käytettäviä materiaaleja eri kursseilta ja aihealueista.
+            Löydät sivulta simulaatioita, kalvoja, Quizlet-kortteja ja kurssitiivistelmiä sitä mukaa kun lisään niitä.
+          </p>
         </div>
-      </div>
 
-      <aside class="hero-card" aria-label="Esikatselu">
-        <div class="mini-window">
-          <div class="window-bar" aria-hidden="true">
-            <span class="traffic"></span>
-            <span class="traffic"></span>
-            <span class="traffic"></span>
+        <aside id="cv" class="panel cv-card" aria-label="CV-kortti">
+          <img class="portrait avatar-portrait" src="./lauri-avatar.png" alt="Lauri Hellsten" />
+          <div class="cv-content">
+            <h2>Lauri Hellsten</h2>
+            <p>
+              Opetuksen kehittäminen ja käytännönläheiset digitaaliset ratkaisut ovat työssäni tärkeitä.
+              Minua kiinnostavat erityisesti arviointi, flipped learning, tekoälyn hyödyntäminen opetuksessa,
+              GeoGebra sekä ICT:n mielekäs käyttö oppimisessa.
+            </p>
+            <ul class="cv-facts" aria-label="Keskeisiä tietoja">
+              <li>Arviointi</li>
+              <li>Flipped learning</li>
+              <li>AI opetuksessa</li>
+              <li>GeoGebra</li>
+              <li>ICT opetuksessa</li>
+              <li>Opettajankoulutus</li>
+              <li>FM, Helsingin yliopisto</li>
+            </ul>
           </div>
-          <div class="chart">
-            <svg class="phase-svg" viewBox="0 0 420 260" role="img" aria-label="Tyylitelty faasikaavio">
-              <defs>
-                <linearGradient id="lineGlow" x1="0" x2="1" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#67e8f9" />
-                  <stop offset="58%" stop-color="#a78bfa" />
-                  <stop offset="100%" stop-color="#34d399" />
-                </linearGradient>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="4" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-              <line x1="44" y1="216" x2="380" y2="216" stroke="rgba(255,255,255,.28)" stroke-width="2" />
-              <line x1="60" y1="230" x2="60" y2="28" stroke="rgba(255,255,255,.28)" stroke-width="2" />
-              <path d="M72 208 C116 166 128 124 156 102 C188 76 238 90 284 66 C320 48 344 34 374 30" fill="none" stroke="url(#lineGlow)" stroke-width="5" stroke-linecap="round" filter="url(#glow)" />
-              <path d="M154 102 C170 132 190 160 232 190 C260 210 300 216 358 216" fill="none" stroke="rgba(103,232,249,.72)" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 10" />
-              <circle cx="156" cy="102" r="7" fill="#ffffff" />
-              <text x="82" y="74" fill="rgba(238,244,255,.88)" font-size="18" font-weight="700">p</text>
-              <text x="348" y="203" fill="rgba(238,244,255,.88)" font-size="18" font-weight="700">T</text>
-              <text x="94" y="184" fill="rgba(159,176,200,.9)" font-size="14">kiinteä</text>
-              <text x="188" y="130" fill="rgba(159,176,200,.9)" font-size="14">neste</text>
-              <text x="292" y="96" fill="rgba(159,176,200,.9)" font-size="14">kaasu</text>
-            </svg>
-          </div>
+        </aside>
+      </section>
+
+      <section id="materiaalit" class="panel materials-section">
+        <div class="section-head">
+          <h2>Materiaalipankki</h2>
+          <p>Valitse materiaalityyppi ja avaa haluamasi sisältö.</p>
         </div>
-        <div class="stats" aria-label="Materiaalien määrä">
-          <div class="stat"><strong>8</strong><span>materiaalia</span></div>
-          <div class="stat"><strong>3</strong><span>laajenemista</span></div>
-          <div class="stat"><strong>4</strong><span>kaasuprosessia</span></div>
+
+        <div class="category-grid">
+          <section class="category" aria-labelledby="simulaatiot-title">
+            <h3 id="simulaatiot-title"><span>◆</span>Simulaatiot</h3>
+            <div class="links">
+              <a class="item" href="FY03_faasikaavio.html"><span>FY03 · Faasikaavio<br><small>Olomuodot, paine ja lämpötila</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_ideaalikaasulaki.html"><span>FY03 · Ideaalikaasulaki<br><small>Paine, tilavuus ja lämpötila</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_isobaarinen.html"><span>FY03 · Isobaarinen prosessi<br><small>Vakiopaineinen muutos</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_isokoorinen.html"><span>FY03 · Isokoorinen prosessi<br><small>Vakiotilavuuksinen muutos</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_isoterminen.html"><span>FY03 · Isoterminen prosessi<br><small>Vakiolämpötilainen muutos</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_kaasu_laajeneminen.html"><span>FY03 · Kaasun laajeneminen<br><small>Lämpölaajeneminen</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_kiintea_laajeneminen.html"><span>FY03 · Kiinteän aineen laajeneminen<br><small>Lämpölaajeneminen</small></span><span class="go">→</span></a>
+              <a class="item" href="FY03_neste_laajeneminen.html"><span>FY03 · Nesteen laajeneminen<br><small>Lämpölaajeneminen</small></span><span class="go">→</span></a>
+            </div>
+          </section>
+
+          <section class="category" aria-labelledby="kalvot-title">
+            <h3 id="kalvot-title"><span>▣</span>Kalvot</h3>
+            <div class="links">
+              <div class="placeholder">Lisää kalvolinkit tähän.</div>
+            </div>
+          </section>
+
+          <section class="category" aria-labelledby="quizlet-title">
+            <h3 id="quizlet-title"><span>?</span>Quizlet-kortit</h3>
+            <div class="links">
+              <a class="item" href="https://quizlet.com/fi/1159344781/fy01-ja-fy02-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer"><span>Käsitekortteja<br><small>FY01 ja FY02 · LOPS2019</small></span><span class="go">→</span></a>
+              <a class="item" href="https://quizlet.com/fi/1159337238/fy03-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer"><span>Käsitekortteja<br><small>FY03 · LOPS2019</small></span><span class="go">→</span></a>
+              <a class="item" href="https://quizlet.com/fi/1161257425/fy07-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer"><span>Käsitekortteja<br><small>FY07 · LOPS2019</small></span><span class="go">→</span></a>
+            </div>
+          </section>
+
+          <section class="category" aria-labelledby="summary-title">
+            <h3 id="summary-title"><span>≡</span>Kurssitiivistelmät</h3>
+            <div class="links">
+              <div class="placeholder">Lisää kurssitiivistelmät tähän.</div>
+            </div>
+          </section>
         </div>
-      </aside>
-    </section>
+      </section>
+    </main>
 
-    <section id="materiaalit" aria-labelledby="materials-title">
-      <div class="section-head">
-        <div>
-          <h2 id="materials-title">Materiaalit</h2>
-          <p>Valitse simulaatio tai teoriaosio. Kaikki linkit olettavat, että tämä index.html sijaitsee samassa kansiossa muiden HTML-tiedostojen kanssa.</p>
-        </div>
-      </div>
-
-      <div class="search-panel" role="search">
-        <input id="searchInput" class="search" type="search" placeholder="Hae esimerkiksi ideaalikaasu, isobaarinen tai laajeneminen…" aria-label="Hae materiaaleja" />
-        <div class="filters" aria-label="Suodattimet">
-          <button class="filter active" type="button" data-filter="all">Kaikki</button>
-          <button class="filter" type="button" data-filter="teoria">Teoria</button>
-          <button class="filter" type="button" data-filter="prosessi">Prosessit</button>
-          <button class="filter" type="button" data-filter="simulaatio">Simulaatiot</button>
-        </div>
-      </div>
-
-      <div class="grid" id="materialsGrid">
-        <a class="card" href="FY03_faasikaavio.html" data-category="teoria" data-keywords="faasikaavio olomuoto paine lämpötila kiinteä neste kaasu">
-          <div class="card-top"><span class="icon">◌</span><span class="pill">Teoria</span></div>
-          <h3>Faasikaavio</h3>
-          <p>Hahmota olomuodot sekä paineen ja lämpötilan vaikutus aineen käyttäytymiseen.</p>
-          <div class="card-footer"><span>Avaa materiaali</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_ideaalikaasulaki.html" data-category="teoria" data-keywords="ideaalikaasulaki ideaalikaasu p v n r t tilanyhtälö kaasulaki">
-          <div class="card-top"><span class="icon">PV</span><span class="pill">Teoria</span></div>
-          <h3>Ideaalikaasulaki</h3>
-          <p>Yhdistä paine, tilavuus, ainemäärä ja lämpötila selkeäksi kokonaisuudeksi.</p>
-          <div class="card-footer"><span>Avaa materiaali</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_isobaarinen.html" data-category="prosessi" data-keywords="isobaarinen vakiopaine paine lämpötila tilavuus kaasu prosessi">
-          <div class="card-top"><span class="icon">p</span><span class="pill">Prosessi</span></div>
-          <h3>Isobaarinen prosessi</h3>
-          <p>Tutki kaasun muutosta, kun paine pysyy vakiona ja tilavuus muuttuu.</p>
-          <div class="card-footer"><span>Avaa materiaali</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_isokoorinen.html" data-category="prosessi" data-keywords="isokoorinen vakiotilavuus tilavuus paine lämpötila kaasu prosessi">
-          <div class="card-top"><span class="icon">V</span><span class="pill">Prosessi</span></div>
-          <h3>Isokoorinen prosessi</h3>
-          <p>Visualisoi tilannetta, jossa kaasun tilavuus pysyy vakiona paineen muuttuessa.</p>
-          <div class="card-footer"><span>Avaa materiaali</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_isoterminen.html" data-category="prosessi" data-keywords="isoterminen vakiolämpötila lämpötila paine tilavuus boyle mariotte kaasu prosessi">
-          <div class="card-top"><span class="icon">T</span><span class="pill">Prosessi</span></div>
-          <h3>Isoterminen prosessi</h3>
-          <p>Seuraa paineen ja tilavuuden käänteistä suhdetta vakiolämpötilassa.</p>
-          <div class="card-footer"><span>Avaa materiaali</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_kaasu_laajeneminen.html" data-category="simulaatio" data-keywords="kaasu laajeneminen lämpölaajeneminen kaasun lämpötila simulaatio">
-          <div class="card-top"><span class="icon">↗</span><span class="pill">Simulaatio</span></div>
-          <h3>Kaasun laajeneminen</h3>
-          <p>Kokeile, miten lämpötila vaikuttaa kaasun tilavuuteen ja hiukkasten liikkeeseen.</p>
-          <div class="card-footer"><span>Avaa simulaatio</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_kiintea_laajeneminen.html" data-category="simulaatio" data-keywords="kiinteä kiintea laajeneminen lämpölaajeneminen pituuden muutos simulaatio">
-          <div class="card-top"><span class="icon">▭</span><span class="pill">Simulaatio</span></div>
-          <h3>Kiinteän aineen laajeneminen</h3>
-          <p>Tarkastele pituuden muutosta ja lämpölaajenemiskerrointa havainnollisesti.</p>
-          <div class="card-footer"><span>Avaa simulaatio</span><span class="arrow">→</span></div>
-        </a>
-
-        <a class="card" href="FY03_neste_laajeneminen.html" data-category="simulaatio" data-keywords="neste laajeneminen lämpölaajeneminen tilavuuden muutos simulaatio">
-          <div class="card-top"><span class="icon">≈</span><span class="pill">Simulaatio</span></div>
-          <h3>Nesteen laajeneminen</h3>
-          <p>Vertaile nesteen tilavuuden muutosta lämpötilan muuttuessa.</p>
-          <div class="card-footer"><span>Avaa simulaatio</span><span class="arrow">→</span></div>
-        </a>
-      </div>
-
-      <p id="emptyState" class="empty">Hakua vastaavia materiaaleja ei löytynyt. Kokeile toista hakusanaa tai näytä kaikki materiaalit.</p>
-    </section>
-
-    <section id="opiskelu" aria-labelledby="study-title">
-      <div class="section-head">
-        <div>
-          <h2 id="study-title">Näin saat sivusta eniten irti</h2>
-          <p>Nopea koontisivu toimii sekä tuntityöskentelyssä että itsenäisessä kertaamisessa.</p>
-        </div>
-      </div>
-      <div class="feature-row">
-        <div class="feature"><strong>1. Aloita ilmiöstä</strong><span>Avaa ensin simulaatio ja tee havaintoja ennen kaavojen käyttöä.</span></div>
-        <div class="feature"><strong>2. Kirjaa riippuvuudet</strong><span>Vertaa muuttujia: mikä pysyy vakiona, mikä muuttuu ja mihin suuntaan?</span></div>
-        <div class="feature"><strong>3. Yhdistä malliin</strong><span>Palaa teoriaosioon ja sido havainto ideaalikaasulakiin tai faasikaavioon.</span></div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="info" class="shell">
-    <div class="footer-inner">
-      <span>FY03 · Simulaatiot ja materiaalit</span>
-      <span>Päivitä materiaalikortteja lisäämällä linkit suoraan index.html-tiedostoon.</span>
-    </div>
-  </footer>
-
-  <script>
-    const searchInput = document.querySelector('#searchInput');
-    const cards = Array.from(document.querySelectorAll('.card'));
-    const filters = Array.from(document.querySelectorAll('.filter'));
-    const emptyState = document.querySelector('#emptyState');
-    let activeFilter = 'all';
-
-    function normalize(value) {
-      return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    }
-
-    function updateCards() {
-      const query = normalize(searchInput.value.trim());
-      let visibleCount = 0;
-
-      cards.forEach(card => {
-        const category = card.dataset.category;
-        const searchable = normalize(`${card.textContent} ${card.dataset.keywords || ''}`);
-        const matchesFilter = activeFilter === 'all' || category === activeFilter;
-        const matchesSearch = !query || searchable.includes(query);
-        const visible = matchesFilter && matchesSearch;
-
-        card.style.display = visible ? '' : 'none';
-        if (visible) visibleCount += 1;
-      });
-
-      emptyState.style.display = visibleCount ? 'none' : 'block';
-    }
-
-    filters.forEach(button => {
-      button.addEventListener('click', () => {
-        filters.forEach(item => item.classList.remove('active'));
-        button.classList.add('active');
-        activeFilter = button.dataset.filter;
-        updateCards();
-      });
-    });
-
-    searchInput.addEventListener('input', updateCards);
-  </script>
+    <footer>
+      © Lauri Hellsten · Materiaalipankki
+    </footer>
+  </div>
 </body>
 </html>
-
