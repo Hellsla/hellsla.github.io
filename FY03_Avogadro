@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avogadron laki</title>
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --ink:#222222;
+    --text:#3F3D39;
+    --red:#D84A62;
+    --blue:#2E86A6;
+    --light:#F4F4F4;
+  }
+
+  html, body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:var(--bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color:var(--text);
+  }
+
+  body{
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+  }
+
+  .slide{
+    width:min(100vw, calc(100vh * 16 / 9));
+    height:min(100vh, calc(100vw * 9 / 16));
+    aspect-ratio:16/9;
+    position:relative;
+    background:#FFFFFF;
+  }
+
+  svg{
+    width:100%;
+    height:100%;
+    display:block;
+  }
+
+  text{
+    fill:var(--text);
+    font-size:19px;
+    font-weight:520;
+  }
+
+  .small{ font-size:15px; }
+  .tiny{ font-size:13px; }
+
+  .sketch{
+    stroke:var(--ink);
+    stroke-width:4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    fill:none;
+  }
+
+  .thin{
+    stroke-width:2.4;
+  }
+
+  .controls{
+    position:absolute;
+    left:44px;
+    right:44px;
+    bottom:14px;
+    display:grid;
+    grid-template-columns: 1.4fr auto auto;
+    gap:14px 18px;
+    align-items:end;
+  }
+
+  .control{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:4px 12px;
+    align-items:center;
+    font-size:clamp(14px, 1.8vw, 20px);
+  }
+
+  .control label{
+    grid-column:1 / 2;
+    white-space:nowrap;
+  }
+
+  .control .value{
+    grid-column:2 / 3;
+    text-align:right;
+    white-space:nowrap;
+    font-weight:620;
+  }
+
+  .control input[type="range"]{
+    grid-column:1 / 3;
+    width:100%;
+    accent-color:var(--ink);
+  }
+
+  .readout{
+    align-self:center;
+    font-size:clamp(16px, 2vw, 22px);
+    font-weight:620;
+    white-space:nowrap;
+  }
+
+  button{
+    border:2px solid var(--ink);
+    background:#FFFFFF;
+    color:var(--text);
+    border-radius:999px;
+    padding:8px 16px;
+    font:inherit;
+    cursor:pointer;
+    align-self:center;
+  }
+
+  button:active{
+    transform:translateY(1px);
+  }
+
+  @media (max-width:900px){
+    .controls{
+      grid-template-columns:1fr 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<main class="slide" aria-label="Avogadron lain simulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Kaasusäiliö ja V-n -kuvaaja">
+    <defs>
+      <pattern id="hatch" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="12" stroke="#222222" stroke-width="1.1" opacity="0.18"/>
+      </pattern>
+      <clipPath id="chamberClip">
+        <rect id="clipRect" x="110" y="110" width="210" height="250" rx="14"></rect>
+      </clipPath>
+    </defs>
+
+    <!-- Säiliö -->
+    <g id="vessel">
+      <path d="M95 100 C155 94 270 94 335 100" class="sketch"/>
+      <path d="M95 380 C155 386 270 386 335 380" class="sketch"/>
+      <path d="M95 100 C87 176 87 305 95 380" class="sketch"/>
+      <path d="M335 100 C343 176 343 305 335 380" class="sketch"/>
+
+      <rect x="104" y="106" width="222" height="268" rx="14" fill="url(#hatch)" opacity="0.06"></rect>
+
+      <rect id="piston" x="94" y="226" width="242" height="18" rx="9" fill="#FFFFFF" stroke="#222222" stroke-width="4"></rect>
+      <rect id="pistonHatch" x="102" y="230" width="226" height="10" rx="5" fill="url(#hatch)" opacity="0.8"></rect>
+      <path id="pistonHandle" d="M336 235 C362 235 378 235 400 235" class="sketch thin"></path>
+
+      <g clip-path="url(#chamberClip)">
+        <g id="particles"></g>
+      </g>
+    </g>
+
+    <!-- Selkeä vakioehto -->
+    <g transform="translate(388 96)">
+      <rect x="0" y="0" width="112" height="58" rx="12" fill="#FFFFFF" stroke="#222222" stroke-width="2.6"></rect>
+      <rect x="6" y="6" width="100" height="46" rx="10" fill="url(#hatch)" opacity="0.14"></rect>
+      <text x="56" y="24" text-anchor="middle" class="small">P vakio</text>
+      <text x="56" y="44" text-anchor="middle" class="small">T vakio</text>
+    </g>
+
+    <!-- Kuvaaja -->
+    <g id="graph">
+      <path d="M520 390 L520 120" class="sketch thin"></path>
+      <path d="M520 390 L900 390" class="sketch thin"></path>
+
+      <text x="506" y="116" class="small">V</text>
+      <text x="902" y="412" class="small">n</text>
+
+      <path id="guideLine" d="" fill="none" stroke="#222222" stroke-width="2.6" stroke-linecap="round"></path>
+
+      <line id="guideX" x1="0" y1="390" x2="0" y2="0" stroke="#222222" stroke-width="2" stroke-dasharray="5 7" opacity="0.35"></line>
+      <line id="guideY" x1="520" y1="0" x2="0" y2="0" stroke="#222222" stroke-width="2" stroke-dasharray="5 7" opacity="0.35"></line>
+      <circle id="graphPoint" cx="0" cy="0" r="7" fill="#D84A62"></circle>
+
+      <text x="560" y="150" class="tiny" opacity="0.78">V ∝ n</text>
+    </g>
+  </svg>
+
+  <section class="controls" aria-label="Säätimet">
+    <div class="control">
+      <label for="nSlider">Ainemäärä</label>
+      <span id="nReadout" class="value">n = 1,0 mol</span>
+      <input id="nSlider" type="range" min="0.5" max="4.0" step="0.01" value="1.0">
+    </div>
+
+    <div id="vReadout" class="readout">V = 24,0 l</div>
+    <button id="resetButton" type="button">Nollaa</button>
+  </section>
+</main>
+
+<script>
+  const LITERS_PER_MOL = 24.0;
+  const N_MIN = 0.5;
+  const N_MAX = 4.0;
+  const MAX_PARTICLES = 64;
+
+  const vessel = {
+    left: 110,
+    right: 320,
+    top: 110,
+    bottom: 370
+  };
+
+  const graph = {
+    x0: 520,
+    x1: 890,
+    y0: 390,
+    y1: 130
+  };
+
+  const nSlider = document.getElementById("nSlider");
+  const nReadout = document.getElementById("nReadout");
+  const vReadout = document.getElementById("vReadout");
+  const resetButton = document.getElementById("resetButton");
+
+  const piston = document.getElementById("piston");
+  const pistonHatch = document.getElementById("pistonHatch");
+  const pistonHandle = document.getElementById("pistonHandle");
+  const clipRect = document.getElementById("clipRect");
+
+  const particlesGroup = document.getElementById("particles");
+
+  const guideLine = document.getElementById("guideLine");
+  const guideX = document.getElementById("guideX");
+  const guideY = document.getElementById("guideY");
+  const graphPoint = document.getElementById("graphPoint");
+
+  const state = {
+    n: 1.0,
+    V: 24.0
+  };
+
+  const particles = [];
+
+  function clamp(x, a, b){
+    return Math.max(a, Math.min(b, x));
+  }
+
+  function lerp(a, b, t){
+    return a + (b - a) * t;
+  }
+
+  function fmt(x, d){
+    return x.toFixed(d).replace(".", ",");
+  }
+
+  function nToV(n){
+    return LITERS_PER_MOL * n;
+  }
+
+  function pistonYFromN(n){
+    const t = (n - N_MIN) / (N_MAX - N_MIN);
+    return lerp(305, 125, t);
+  }
+
+  function graphX(n){
+    const t = (n - N_MIN) / (N_MAX - N_MIN);
+    return lerp(graph.x0 + 18, graph.x1 - 12, t);
+  }
+
+  function graphY(V){
+    const vMin = nToV(N_MIN);
+    const vMax = nToV(N_MAX);
+    const t = (V - vMin) / (vMax - vMin);
+    return lerp(graph.y0 - 8, graph.y1, t);
+  }
+
+  function updateReadouts(){
+    nReadout.textContent = `n = ${fmt(state.n, 1)} mol`;
+    vReadout.textContent = `V = ${fmt(state.V, 1)} l`;
+  }
+
+  function updatePiston(){
+    const y = pistonYFromN(state.n);
+
+    piston.setAttribute("y", y - 9);
+    pistonHatch.setAttribute("y", y - 5);
+    pistonHandle.setAttribute("d", `M336 ${y} C362 ${y} 378 ${y} 400 ${y}`);
+
+    const top = y + 8;
+    const height = vessel.bottom - top;
+
+    clipRect.setAttribute("x", vessel.left);
+    clipRect.setAttribute("y", top);
+    clipRect.setAttribute("width", vessel.right - vessel.left);
+    clipRect.setAttribute("height", height);
+  }
+
+  function updateGraph(){
+    const x0 = graphX(N_MIN);
+    const y0 = graphY(nToV(N_MIN));
+    const x1 = graphX(N_MAX);
+    const y1 = graphY(nToV(N_MAX));
+
+    guideLine.setAttribute("d", `M ${x0} ${y0} L ${x1} ${y1}`);
+
+    const px = graphX(state.n);
+    const py = graphY(state.V);
+
+    graphPoint.setAttribute("cx", px);
+    graphPoint.setAttribute("cy", py);
+
+    guideX.setAttribute("x1", px);
+    guideX.setAttribute("x2", px);
+    guideX.setAttribute("y1", graph.y0);
+    guideX.setAttribute("y2", py);
+
+    guideY.setAttribute("x1", graph.x0);
+    guideY.setAttribute("x2", px);
+    guideY.setAttribute("y1", py);
+    guideY.setAttribute("y2", py);
+  }
+
+  function createParticles(){
+    for(let i = 0; i < MAX_PARTICLES; i++){
+      const node = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      const r = 4 + Math.random() * 1.6;
+      node.setAttribute("r", r);
+      node.setAttribute("fill", "#2E86A6");
+      node.setAttribute("opacity", "0");
+      particlesGroup.appendChild(node);
+
+      particles.push({
+        node,
+        r,
+        active:false,
+        x: lerp(vessel.left + 16, vessel.right - 16, Math.random()),
+        y: lerp(vessel.top + 16, vessel.bottom - 16, Math.random()),
+        vx: (Math.random() < 0.5 ? -1 : 1) * (0.55 + Math.random() * 0.45),
+        vy: (Math.random() < 0.5 ? -1 : 1) * (0.55 + Math.random() * 0.45)
+      });
+    }
+  }
+
+  function updateParticles(){
+    const count = Math.round(lerp(10, MAX_PARTICLES, (state.n - N_MIN) / (N_MAX - N_MIN)));
+
+    for(let i = 0; i < particles.length; i++){
+      const p = particles[i];
+      p.active = i < count;
+      p.node.setAttribute("opacity", p.active ? "0.78" : "0");
+    }
+  }
+
+  function setState(n){
+    state.n = clamp(n, N_MIN, N_MAX);
+    state.V = nToV(state.n);
+    nSlider.value = state.n.toFixed(2);
+    updateReadouts();
+    updatePiston();
+    updateParticles();
+    updateGraph();
+  }
+
+  function animate(){
+    const y = pistonYFromN(state.n);
+    const left = vessel.left + 8;
+    const right = vessel.right - 8;
+    const top = y + 18;
+    const bottom = vessel.bottom - 8;
+
+    for(const p of particles){
+      if(!p.active || bottom <= top + 2){
+        p.node.setAttribute("cx", -20);
+        p.node.setAttribute("cy", -20);
+        continue;
+      }
+
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if(p.x - p.r < left){
+        p.x = left + p.r;
+        p.vx *= -1;
+      }
+      if(p.x + p.r > right){
+        p.x = right - p.r;
+        p.vx *= -1;
+      }
+      if(p.y - p.r < top){
+        p.y = top + p.r;
+        p.vy *= -1;
+      }
+      if(p.y + p.r > bottom){
+        p.y = bottom - p.r;
+        p.vy *= -1;
+      }
+
+      p.node.setAttribute("cx", p.x);
+      p.node.setAttribute("cy", p.y);
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  nSlider.addEventListener("input", () => {
+    setState(Number(nSlider.value));
+  });
+
+  resetButton.addEventListener("click", () => {
+    setState(1.0);
+  });
+
+  createParticles();
+  setState(1.0);
+  requestAnimationFrame(animate);
+</script>
+</body>
+</html>
