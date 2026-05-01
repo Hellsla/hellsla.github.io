@@ -134,11 +134,42 @@
 
     /* ---------- Hero ---------- */
     .hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
       padding: 6px 0 42px;
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
     }
 
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -82px;
+      right: -70px;
+      width: min(54vw, 650px);
+      height: 430px;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.18;
+      background-image: url("./lake-saimaa-bg.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: contain;
+
+      -webkit-mask-image:
+        linear-gradient(to right, transparent 0%, black 28%, black 100%),
+        linear-gradient(to bottom, black 0%, black 64%, transparent 100%);
+      -webkit-mask-composite: source-in;
+
+      mask-image:
+        linear-gradient(to right, transparent 0%, black 28%, black 100%),
+        linear-gradient(to bottom, black 0%, black 64%, transparent 100%);
+      mask-composite: intersect;
+    }
+
     .eyebrow {
+      position: relative;
+      z-index: 1;
       display: inline-flex;
       align-items: center;
       gap: 12px;
@@ -157,6 +188,8 @@
     }
 
     .lede {
+      position: relative;
+      z-index: 1;
       max-width: 36ch;
       margin: 0;
       color: var(--ink);
@@ -553,6 +586,13 @@
       header { padding-bottom: 14px; margin-bottom: 28px; flex-wrap: wrap; }
       .header-right { gap: 8px; }
       .hero { padding: 6px 0 34px; }
+      .hero::before {
+        top: -24px;
+        right: -160px;
+        width: 95vw;
+        height: 300px;
+        opacity: 0.11;
+      }
       .profile {
         grid-template-columns: 1fr;
         gap: 22px;
@@ -583,7 +623,7 @@
           <a href="#materials">Materials</a>
           <a href="mailto:lauri.k.hellsten@gmail.com">Contact</a>
         </nav>
-</div>
+      </div>
     </header>
 
     <main id="top">
