@@ -504,9 +504,12 @@
 
   function updateSource(liquid) {
     const amount = liquid.transferAmount;
+    const active = amount > 0;
 
-    heatGroup.style.opacity = liquid.warming ? amount : 0;
-    iceGroup.style.opacity = !liquid.warming ? amount : 0;
+    heatGroup.style.visibility = active && liquid.warming ? "visible" : "hidden";
+    iceGroup.style.visibility = active && !liquid.warming ? "visible" : "hidden";
+    heatGroup.style.opacity = active && liquid.warming ? amount : 0;
+    iceGroup.style.opacity = active && !liquid.warming ? amount : 0;
 
     heatGroup.setAttribute("transform", `translate(0 ${amount * -2})`);
     iceGroup.setAttribute("transform", `translate(0 ${amount * 2})`);
@@ -517,12 +520,14 @@
     const warming = liquid.warming;
 
     if (amount <= 0) {
+      rayGroup.style.visibility = "hidden";
       rays.forEach(lane => {
         lane.segs.forEach(seg => seg.setAttribute("opacity", 0));
       });
       return;
     }
 
+    rayGroup.style.visibility = "visible";
     const color = warming ? "#D84A62" : "#2E86A6";
 
     const topY = vessel.bottom + 8;
@@ -569,8 +574,10 @@
 
     const liquid = updateLiquid(currentLevel, time);
 
-    liquid.transferAmount = reached ? 0 : Math.min(1, Math.abs(delta) / 12);
-    liquid.warming = delta >= 0;
+    const remainingDelta = targetLevel - currentLevel;
+    const changingTemperature = Math.abs(remainingDelta) >= 0.08;
+    liquid.transferAmount = changingTemperature ? Math.min(1, Math.abs(remainingDelta) / 12) : 0;
+    liquid.warming = remainingDelta >= 0;
 
     updateParticles(liquid, currentLevel, time);
     updateSource(liquid);
