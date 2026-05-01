@@ -71,6 +71,10 @@
     opacity: 0.45;
   }
 
+  #heat {
+    transition: opacity 220ms ease;
+  }
+
   .controls {
     position: absolute;
     left: 74px;
@@ -164,8 +168,8 @@
         <path d="M633 231 C648 239 648 253 633 261" class="sketch thin"/>
       </g>
 
-      <!-- Lämpö -->
-      <g id="heat">
+      <!-- Lämpö: näkyy vain, kun lämpötilaa säädetään -->
+      <g id="heat" opacity="0">
         <path id="heatWave1" d="M220 393 C208 374 238 366 222 347" fill="none" stroke="#F28C28" stroke-width="4" stroke-linecap="round"/>
         <path id="heatWave2" d="M330 395 C315 374 348 364 332 344" fill="none" stroke="#F28C28" stroke-width="4" stroke-linecap="round"/>
         <path id="heatWave3" d="M440 393 C425 374 456 365 442 346" fill="none" stroke="#F28C28" stroke-width="4" stroke-linecap="round"/>
@@ -230,9 +234,11 @@
   const graphT = document.getElementById("graphT");
   const graphV = document.getElementById("graphV");
 
+  const heat = document.getElementById("heat");
   const heatWave1 = document.getElementById("heatWave1");
   const heatWave2 = document.getElementById("heatWave2");
   const heatWave3 = document.getElementById("heatWave3");
+  let heatHideTimeout = null;
 
   const T_MIN = 200;
   const T_MAX = 600;
@@ -304,6 +310,28 @@
 
   function getPistonX(temperature) {
     return map(temperature, T_MIN, T_MAX, chamber.pistonMin, chamber.pistonMax);
+  }
+
+  function showHeatFlow() {
+    heat.setAttribute("opacity", "1");
+
+    if (heatHideTimeout !== null) {
+      clearTimeout(heatHideTimeout);
+    }
+
+    heatHideTimeout = setTimeout(() => {
+      heat.setAttribute("opacity", "0");
+      heatHideTimeout = null;
+    }, 650);
+  }
+
+  function hideHeatFlow() {
+    if (heatHideTimeout !== null) {
+      clearTimeout(heatHideTimeout);
+      heatHideTimeout = null;
+    }
+
+    heat.setAttribute("opacity", "0");
   }
 
   function polar(cx, cy, r, deg) {
@@ -484,10 +512,14 @@
     requestAnimationFrame(animate);
   }
 
-  slider.addEventListener("input", updateScene);
+  slider.addEventListener("input", () => {
+    showHeatFlow();
+    updateScene();
+  });
 
   resetButton.addEventListener("click", () => {
     slider.value = T_DEFAULT;
+    hideHeatFlow();
     updateScene();
   });
 
@@ -495,6 +527,7 @@
   drawLineGraph();
   makeParticles();
   updateScene();
+  hideHeatFlow();
   animate();
 </script>
 </body>
