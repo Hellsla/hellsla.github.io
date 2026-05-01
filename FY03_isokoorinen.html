@@ -71,6 +71,11 @@
     opacity: 0.45;
   }
 
+  #heat,
+  #cooling {
+    transition: opacity 220ms ease;
+  }
+
   .controls {
     position: absolute;
     left: 74px;
@@ -159,12 +164,29 @@
 
       <g id="particles" clip-path="url(#gasClip)"></g>
 
-      <!-- Lämpö -->
-      <g id="heat">
+      <!-- Lämpö: näkyy vain, kun lämpötilaa nostetaan -->
+      <g id="heat" opacity="0">
         <path id="heatWave1" d="M220 393 C208 374 238 366 222 347" fill="none" stroke="#F28C28" stroke-width="4" stroke-linecap="round"/>
         <path id="heatWave2" d="M330 395 C315 374 348 364 332 344" fill="none" stroke="#F28C28" stroke-width="4" stroke-linecap="round"/>
         <path id="heatWave3" d="M440 393 C425 374 456 365 442 346" fill="none" stroke="#F28C28" stroke-width="4" stroke-linecap="round"/>
         <path d="M185 410 C260 421 430 421 505 410" class="sketch thin" opacity="0.35"/>
+      </g>
+
+      <!-- Jäähdytys: näkyy vain, kun lämpötilaa lasketaan -->
+      <g id="cooling" opacity="0">
+        <path id="coolLine1" d="M220 348 C208 366 238 374 222 395" fill="none" stroke="#2E86A6" stroke-width="4" stroke-linecap="round"/>
+        <path id="coolLine2" d="M330 346 C315 366 348 376 332 397" fill="none" stroke="#2E86A6" stroke-width="4" stroke-linecap="round"/>
+        <path id="coolLine3" d="M440 348 C425 366 456 374 442 395" fill="none" stroke="#2E86A6" stroke-width="4" stroke-linecap="round"/>
+        <rect x="190" y="407" width="64" height="28" rx="6" fill="#E7F4F5" stroke="#2E86A6" stroke-width="2.6" opacity="0.92"/>
+        <path d="M204 413 L242 413 M205 426 L237 426" stroke="#2E86A6" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+        <rect x="256" y="404" width="60" height="31" rx="6" fill="#FFFFFF" stroke="#2E86A6" stroke-width="2.6" opacity="0.92"/>
+        <path d="M267 411 L303 411 M269 425 L298 425" stroke="#2E86A6" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+        <g stroke="#2E86A6" stroke-width="2.2" stroke-linecap="round" opacity="0.92">
+          <line x1="352" y1="405" x2="352" y2="435"/>
+          <line x1="337" y1="420" x2="367" y2="420"/>
+          <line x1="341" y1="409" x2="363" y2="431"/>
+          <line x1="363" y1="409" x2="341" y2="431"/>
+        </g>
       </g>
 
       <!-- Painemittari -->
@@ -221,9 +243,16 @@
   const graphT = document.getElementById("graphT");
   const graphP = document.getElementById("graphP");
 
+  const heat = document.getElementById("heat");
+  const cooling = document.getElementById("cooling");
   const heatWave1 = document.getElementById("heatWave1");
   const heatWave2 = document.getElementById("heatWave2");
   const heatWave3 = document.getElementById("heatWave3");
+  const coolLine1 = document.getElementById("coolLine1");
+  const coolLine2 = document.getElementById("coolLine2");
+  const coolLine3 = document.getElementById("coolLine3");
+  let energyFlowHideTimeout = null;
+  let previousTemperature = getTemperature();
 
   const T_MIN = 200;
   const T_MAX = 600;
@@ -284,6 +313,29 @@
   // Isokoorinen muutos: kun tilavuus ja ainemäärä pysyvät vakioina, P/T on vakio.
   function getPressure(temperature) {
     return P_DEFAULT * temperature / T_DEFAULT;
+  }
+
+  function showEnergyFlow(direction) {
+    heat.setAttribute("opacity", direction === "heating" ? "1" : "0");
+    cooling.setAttribute("opacity", direction === "cooling" ? "1" : "0");
+
+    if (energyFlowHideTimeout !== null) {
+      clearTimeout(energyFlowHideTimeout);
+    }
+
+    energyFlowHideTimeout = setTimeout(() => {
+      hideEnergyFlow();
+    }, 650);
+  }
+
+  function hideEnergyFlow() {
+    if (energyFlowHideTimeout !== null) {
+      clearTimeout(energyFlowHideTimeout);
+      energyFlowHideTimeout = null;
+    }
+
+    heat.setAttribute("opacity", "0");
+    cooling.setAttribute("opacity", "0");
   }
 
   function polar(cx, cy, r, deg) {
@@ -413,6 +465,14 @@
       wave.setAttribute("transform", `translate(0 ${heatLift})`);
     }
 
+    const coolingOpacity = map(temperature, T_MIN, T_MAX, 1, 0.25);
+    const coolingDrop = map(temperature, T_MIN, T_MAX, -8, 4);
+
+    for (const line of [coolLine1, coolLine2, coolLine3]) {
+      line.setAttribute("opacity", coolingOpacity);
+      line.setAttribute("transform", `translate(0 ${coolingDrop})`);
+    }
+
     for (const p of particles) {
       p.node.setAttribute("fill", particleColor);
     }
@@ -458,10 +518,34 @@
     requestAnimationFrame(animate);
   }
 
-  slider.addEventListener("input", updateScene);
+  slider.addEventListener("input", () => {
+    const nextTemperature = getTemperature();
+
+    if (nextTemperature > previousTemperature) {
+      showEnergyFlow("heating");
+    } else if (nextTemperature < previousTemperature) {
+      showEnergyFlow("cooling");
+    } else {
+      hideEnergyFlow();
+    }
+
+    previousTemperature = nextTemperature;
+    updateScene();
+  });
 
   resetButton.addEventListener("click", () => {
+    const currentTemperature = getTemperature();
     slider.value = T_DEFAULT;
+
+    if (T_DEFAULT > currentTemperature) {
+      showEnergyFlow("heating");
+    } else if (T_DEFAULT < currentTemperature) {
+      showEnergyFlow("cooling");
+    } else {
+      hideEnergyFlow();
+    }
+
+    previousTemperature = T_DEFAULT;
     updateScene();
   });
 
@@ -469,6 +553,7 @@
   drawLineGraph();
   makeParticles();
   updateScene();
+  hideEnergyFlow();
   animate();
 </script>
 </body>
