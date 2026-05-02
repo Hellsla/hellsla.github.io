@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lauri Hellsten — STEAM Teacher</title>
-  <meta name="description" content="Lauri Hellsten's demo site: simulations, slides, flashcards, and course summaries from upper-secondary physics teaching." />
+  <meta name="description" content="Lauri Hellsten's teaching portfolio: simulations, slides, flashcards, course summaries, timetables, and international presentations from upper-secondary physics teaching." />
   <meta name="theme-color" content="#f7f3ec" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,16 +40,17 @@
       background: var(--bg);
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
-      line-height: 1.55;
+      line-height: 1.5;
       font-size: 16px;
       background-image:
         radial-gradient(circle at 18% 12%, rgba(26, 77, 46, 0.05), transparent 32rem),
-        radial-gradient(circle at 88% 0%, rgba(212, 156, 100, 0.05), transparent 28rem);
+        radial-gradient(circle at 88% 0%, rgba(26, 77, 46, 0.035), transparent 28rem);
     }
 
     body::before {
       content: "";
-      position: fixed; inset: 0;
+      position: fixed;
+      inset: 0;
       pointer-events: none;
       opacity: 0.32;
       z-index: 0;
@@ -76,6 +77,7 @@
       z-index: 20;
       font-size: 0.85rem;
     }
+
     .skip-link:focus { top: 12px; }
 
     .page {
@@ -83,7 +85,7 @@
       z-index: 1;
       width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
-      padding: 22px 0 42px;
+      padding: 18px 0 34px;
     }
 
     /* ---------- Header ---------- */
@@ -91,18 +93,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 16px;
-      margin-bottom: 34px;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
       border-bottom: 1px solid var(--line);
       gap: 16px;
     }
 
-    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
     .brand-mark {
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
       display: grid;
       place-items: center;
       background: var(--ink);
@@ -110,40 +116,52 @@
       font-family: var(--serif);
       font-style: italic;
       font-weight: 400;
-      font-size: 1.25rem;
+      font-size: 1.14rem;
       letter-spacing: -0.02em;
     }
 
     .brand-name {
       font-family: var(--serif);
-      font-size: 1.06rem;
+      font-size: 1.02rem;
       font-weight: 500;
       letter-spacing: -0.015em;
     }
 
-    .header-right { display: flex; align-items: center; gap: 12px; }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-    nav { display: flex; gap: 2px; align-items: center; }
+    nav {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
 
     nav a {
-      padding: 9px 14px;
-      font-size: 0.9rem;
+      padding: 7px 11px;
+      font-size: 0.86rem;
       color: var(--ink-2);
       border-radius: 999px;
       transition: color 180ms ease, background 180ms ease;
     }
-    nav a:hover { color: var(--ink); background: var(--bg-tint); }
+
+    nav a:hover {
+      color: var(--ink);
+      background: var(--bg-tint);
+    }
 
     .flag-link {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       border: 1px solid var(--line);
       border-radius: 999px;
       background: var(--surface);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
     }
 
@@ -158,7 +176,7 @@
       position: relative;
       isolation: isolate;
       overflow: hidden;
-      padding: 6px 0 42px;
+      padding: 2px 0 30px;
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
     }
 
@@ -171,7 +189,7 @@
       height: 430px;
       z-index: -1;
       pointer-events: none;
-      opacity: 0.18;
+      opacity: 0.16;
       background-image: url("./lake-saimaa-bg.png");
       background-repeat: no-repeat;
       background-position: top right;
@@ -193,17 +211,18 @@
       z-index: 1;
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       font-family: var(--mono);
-      font-size: 0.74rem;
+      font-size: 0.7rem;
       color: var(--accent-deep);
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      margin-bottom: 22px;
+      margin-bottom: 16px;
     }
+
     .eyebrow::before {
       content: "";
-      width: 32px;
+      width: 28px;
       height: 1px;
       background: currentColor;
     }
@@ -211,54 +230,45 @@
     .lede {
       position: relative;
       z-index: 1;
-      max-width: 36ch;
+      max-width: 32ch;
       margin: 0;
       color: var(--ink);
       font-family: var(--serif);
       font-variation-settings: "opsz" 144;
       font-weight: 360;
-      font-size: clamp(1.6rem, 4vw, 2.6rem);
-      line-height: 1.2;
+      font-size: clamp(1.45rem, 3.4vw, 2.3rem);
+      line-height: 1.15;
       letter-spacing: -0.025em;
-    }
-
-    .lede a {
-      color: var(--ink);
-      position: relative;
-      background-image: linear-gradient(var(--ink), var(--ink));
-      background-size: 100% 2px;
-      background-repeat: no-repeat;
-      background-position: 0 100%;
-      padding-bottom: 2px;
-      transition: color 200ms ease, background-image 200ms ease;
-    }
-    .lede a:hover {
-      color: var(--accent);
-      background-image: linear-gradient(var(--accent), var(--accent));
     }
 
     /* ---------- Profile ---------- */
     .profile {
       display: grid;
-      grid-template-columns: 190px 1fr;
-      gap: 34px;
+      grid-template-columns: 160px 1fr;
+      gap: 26px;
       align-items: start;
-      padding: 32px 0;
+      padding: 24px 0;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 80ms both;
     }
 
+    .profile-aside {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
     .portrait {
-      width: 190px;
-      height: 190px;
-      border-radius: 22px;
+      width: 160px;
+      height: 160px;
+      border-radius: 20px;
       overflow: hidden;
       background: linear-gradient(135deg, #f7f3ec, #efeadd);
       border: 1px solid var(--line);
       display: grid;
       place-items: center;
-      padding: 12px;
+      padding: 10px;
       position: relative;
     }
 
@@ -269,59 +279,84 @@
       display: block;
     }
 
+    .profile-quote {
+      margin: 0;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.72);
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.3;
+      color: var(--accent-deep);
+    }
+
     .profile-meta {
       font-family: var(--mono);
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       color: var(--accent-deep);
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     .profile-title-row {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin: 0 0 12px;
+      gap: 10px;
+      margin: 0 0 10px;
       flex-wrap: wrap;
     }
 
     .profile h2 {
       margin: 0;
       font-family: var(--serif);
-      font-size: 1.92rem;
+      font-size: 1.72rem;
       font-weight: 400;
       letter-spacing: -0.025em;
       line-height: 1.1;
     }
 
     .profile .flag-link {
-      width: 32px;
-      height: 32px;
-      font-size: 0.98rem;
+      width: 30px;
+      height: 30px;
+      font-size: 0.92rem;
     }
 
     .profile p {
-      margin: 0 0 16px;
+      margin: 0 0 13px;
       color: var(--ink-2);
-      max-width: 64ch;
-      line-height: 1.65;
-      font-size: 0.99rem;
+      max-width: 70ch;
+      line-height: 1.55;
+      font-size: 0.94rem;
+    }
+
+    .profile p a {
+      color: var(--accent-deep);
+      font-weight: 600;
+      border-bottom: 1px solid rgba(20, 83, 45, 0.35);
+      transition: color 180ms ease, border-color 180ms ease;
+    }
+
+    .profile p a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
     }
 
     .facts {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
-      margin: 0 0 18px;
+      gap: 5px;
+      margin: 0 0 14px;
       padding: 0;
       list-style: none;
     }
 
     .facts li {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       color: var(--ink-2);
-      padding: 6px 12px;
+      padding: 5px 9px;
       border: 1px solid var(--line);
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.55);
@@ -330,25 +365,32 @@
     .contact {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
     .email {
       font-family: var(--mono);
-      font-size: 0.86rem;
+      font-size: 0.82rem;
       color: var(--ink);
       padding-bottom: 2px;
       border-bottom: 1px solid var(--ink-3);
       transition: color 180ms ease, border-color 180ms ease;
     }
-    .email:hover { color: var(--accent); border-color: var(--accent); }
 
-    .icons { display: flex; gap: 8px; }
+    .email:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .icons {
+      display: flex;
+      gap: 7px;
+    }
 
     .icon-link {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       display: grid;
       place-items: center;
       border-radius: 999px;
@@ -357,49 +399,55 @@
       background: var(--surface);
       transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
     }
+
     .icon-link:hover {
       color: var(--accent);
       border-color: var(--accent);
       transform: translateY(-1px);
     }
-    .icon-link svg { width: 16px; height: 16px; fill: currentColor; }
+
+    .icon-link svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
 
     /* ---------- Materials ---------- */
     .materials {
-      padding: 38px 0 8px;
+      padding: 26px 0 4px;
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 160ms both;
     }
 
     .materials-note {
-      margin: 0 0 22px;
+      margin: 0 0 14px;
       font-family: var(--serif);
       font-style: italic;
-      font-size: 1.02rem;
+      font-size: 0.96rem;
       color: var(--ink-2);
       display: inline-flex;
       align-items: baseline;
-      gap: 10px;
+      gap: 9px;
     }
 
     .materials-note::before {
       content: "✱";
       color: var(--accent);
       font-style: normal;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       transform: translateY(-1px);
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
     }
 
     .category {
-      background: var(--surface);
+      background: rgba(255, 255, 255, 0.86);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 22px;
+      border-radius: 16px;
+      padding: 16px 18px;
       transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
       position: relative;
       overflow: hidden;
@@ -408,7 +456,8 @@
     .category::before {
       content: "";
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 0;
       height: 2px;
       background: var(--accent);
@@ -417,35 +466,42 @@
 
     .category:hover {
       border-color: #d8d0bd;
-      box-shadow: 0 1px 2px rgba(20, 23, 30, 0.04), 0 18px 40px -16px rgba(20, 23, 30, 0.10);
+      box-shadow: 0 1px 2px rgba(20, 23, 30, 0.04), 0 16px 32px -18px rgba(20, 23, 30, 0.10);
     }
+
     .category:hover::before { width: 100%; }
 
     .category-head {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 16px;
-      padding-bottom: 14px;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
       border-bottom: 1px solid var(--line-2);
     }
 
-    .category-head-left { display: flex; align-items: center; gap: 14px; }
+    .category-head-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
 
     .category-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
       background: var(--accent-soft);
       display: grid;
       place-items: center;
       color: var(--accent-deep);
       flex-shrink: 0;
     }
+
     .category-icon svg {
-      width: 20px;
-      height: 20px;
+      width: 17px;
+      height: 17px;
       stroke: currentColor;
       fill: none;
       stroke-width: 1.5;
@@ -456,47 +512,54 @@
     .category h3 {
       margin: 0;
       font-family: var(--serif);
-      font-size: 1.28rem;
+      font-size: 1.12rem;
       font-weight: 500;
       letter-spacing: -0.02em;
-      line-height: 1.2;
+      line-height: 1.16;
     }
 
     .category-tag {
       font-family: var(--mono);
-      font-size: 0.7rem;
+      font-size: 0.62rem;
       color: var(--accent);
       letter-spacing: 0.08em;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .category-num {
       font-family: var(--serif);
       font-style: italic;
-      font-size: 1.15rem;
+      font-size: 1.02rem;
       color: var(--accent-deep);
       font-weight: 400;
       flex-shrink: 0;
-      padding-top: 4px;
+      padding-top: 2px;
     }
 
-    .links { display: grid; }
+    .links,
+    .extra-links {
+      display: grid;
+    }
 
     .more-links {
-      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2px;
     }
 
     .more-links summary {
+      order: 2;
       width: fit-content;
-      margin-top: 12px;
-      padding: 7px 12px;
+      margin-top: 8px;
+      padding: 5px 10px;
       border: 1px solid var(--line);
       border-radius: 999px;
       background: var(--surface);
       color: var(--accent-deep);
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 600;
       cursor: pointer;
+      line-height: 1.15;
       transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
     }
 
@@ -517,72 +580,83 @@
     .more-links[open] .show-less-text { display: inline; }
 
     .extra-links {
-      display: grid;
-      margin-top: 6px;
+      order: 1;
+      margin-top: 5px;
     }
 
     .item {
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: center;
-      gap: 12px;
-      padding: 11px 0;
+      gap: 10px;
+      padding: 8px 0;
       border-bottom: 1px solid var(--line-2);
       transition: padding 220ms ease;
+      min-width: 0;
     }
+
     .item:last-child { border-bottom: none; }
-    .item:hover { padding-left: 6px; }
+
+    .item:hover { padding-left: 4px; }
 
     .item-title {
-      font-size: 0.96rem;
+      font-size: 0.9rem;
       color: var(--ink);
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: -0.005em;
+      line-height: 1.25;
     }
+
     .item-sub {
-      font-size: 0.81rem;
+      font-size: 0.74rem;
       color: var(--ink-3);
-      margin-top: 3px;
+      margin-top: 1px;
+      line-height: 1.25;
     }
 
     .item-arrow {
-      width: 30px;
-      height: 30px;
+      width: 24px;
+      height: 24px;
       display: grid;
       place-items: center;
       color: var(--ink-3);
       border-radius: 999px;
       transition: color 220ms ease, background 220ms ease, transform 220ms ease;
     }
+
     .item:hover .item-arrow {
       color: var(--bg);
       background: var(--ink);
       transform: translateX(2px);
     }
+
     .item-arrow svg {
-      width: 14px; height: 14px;
-      stroke: currentColor; fill: none;
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      fill: none;
       stroke-width: 1.8;
-      stroke-linecap: round; stroke-linejoin: round;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     /* ---------- Footer ---------- */
     footer {
-      margin-top: 42px;
-      padding-top: 20px;
+      margin-top: 32px;
+      padding-top: 16px;
       border-top: 1px solid var(--line);
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       color: var(--ink-3);
-      font-size: 0.86rem;
+      font-size: 0.82rem;
     }
 
     .footer-meta {
       font-family: var(--mono);
-      font-size: 0.7rem;
+      font-size: 0.66rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
     }
@@ -592,7 +666,7 @@
       font-style: italic;
       font-weight: 380;
       color: var(--ink-2);
-      font-size: 0.96rem;
+      font-size: 0.92rem;
     }
 
     /* ---------- Animation ---------- */
@@ -603,42 +677,78 @@
 
     /* ---------- Responsive ---------- */
     @media (max-width: 760px) {
-      .page { padding: 18px 0 40px; }
-      header { padding-bottom: 14px; margin-bottom: 28px; flex-wrap: wrap; }
+      .page {
+        width: min(var(--max), calc(100% - 24px));
+        padding: 14px 0 34px;
+      }
+
+      header {
+        padding-bottom: 12px;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+      }
+
       .header-right { gap: 8px; }
-      .hero { padding: 6px 0 34px; }
+
+      .hero { padding: 2px 0 28px; }
+
       .hero::before {
         top: -24px;
         right: -160px;
         width: 95vw;
         height: 300px;
-        opacity: 0.11;
+        opacity: 0.10;
       }
+
       .profile {
         grid-template-columns: 1fr;
-        gap: 22px;
-        padding: 26px 0;
+        gap: 18px;
+        padding: 22px 0;
       }
-      .portrait { width: 140px; height: 140px; padding: 8px; }
-      .materials { padding-top: 34px; }
+
+      .profile-aside { width: fit-content; }
+
+      .portrait {
+        width: 132px;
+        height: 132px;
+        padding: 8px;
+      }
+
+      .profile-quote {
+        font-size: 0.86rem;
+        padding: 8px 10px;
+      }
+
+      .materials { padding-top: 26px; }
+
       .grid { grid-template-columns: 1fr; }
-      .category { padding: 22px; }
-      nav a { padding: 7px 10px; font-size: 0.84rem; }
+
+      .category { padding: 15px 16px; }
+
+      nav a {
+        padding: 7px 9px;
+        font-size: 0.82rem;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation: none !important; transition: none !important; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
     }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#top">Skip to main content</a>
+
   <div class="page">
     <header>
       <a class="brand" href="#top" aria-label="Home">
         <span class="brand-mark">L</span>
         <span class="brand-name">Lauri Hellsten</span>
       </a>
+
       <div class="header-right">
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
@@ -650,41 +760,48 @@
 
     <main id="top" tabindex="-1">
       <section class="hero">
-        <span class="eyebrow">Demo site — Spring 2026</span>
-        <p class="lede">
-          A small selection of teaching materials I've produced for my own classes at
-          <a href="https://www.espoo.fi/fi/espoon-yhteislyseo" target="_blank" rel="noopener noreferrer">Espoo Yhteislyseo upper secondary school</a>
-        </p>
+        <span class="eyebrow">Teaching portfolio · 2026</span>
+        <p class="lede">Fifteen years of STEAM teaching — in materials, slides, and simulations.</p>
       </section>
 
       <section id="about" class="profile" aria-label="About">
-        <div class="portrait">
-          <img src="./lauri-avatar.png" alt="Lauri Hellsten" width="190" height="190" loading="lazy" decoding="async" />
+        <div class="profile-aside">
+          <div class="portrait">
+            <img src="./lauri-avatar.png" alt="Lauri Hellsten" width="160" height="160" loading="lazy" decoding="async" />
+          </div>
+          <blockquote class="profile-quote">“Still learning.”</blockquote>
         </div>
+
         <div>
           <div class="profile-meta">§ 01 — About</div>
+
           <div class="profile-title-row">
             <h2>Lauri Hellsten</h2>
             <a class="flag-link" href="https://en.wikipedia.org/wiki/Finland" target="_blank" rel="noopener noreferrer" aria-label="Finland on Wikipedia" title="Finland on Wikipedia">🇫🇮</a>
           </div>
+
           <p>
-            I am a STEAM teacher passionate about developing teaching practice. For the past 15 years, hands-on and student-activating pedagogical approaches have been at the heart of my work. As a teacher, I have developed STEAM education, assessment, flipped learning pedagogy, and the meaningful use of ICT in teaching. I have also written and produced a wide range of learning materials for both teachers and students. STEAM outreach and international projects are especially meaningful to me. I believe that together, we are more than the sum of our parts.
+            I am a STEAM teacher at <a href="https://www.espoo.fi/fi/espoon-yhteislyseo" target="_blank" rel="noopener noreferrer">Espoo Yhteislyseo upper secondary school</a>, passionate about developing teaching practice. For the past 15 years, hands-on and student-activating pedagogical approaches have been at the heart of my work. As a teacher, I have developed STEAM education, assessment, flipped learning pedagogy, and the meaningful use of ICT in teaching. I have also written and produced a wide range of learning materials for both teachers and students. STEAM outreach and international projects are especially meaningful to me. I believe that together, we are more than the sum of our parts.
           </p>
+
           <ul class="facts" aria-label="Focus areas">
+            <li>15 years teaching</li>
+            <li>Textbook author</li>
             <li>STEAM</li>
             <li>Assessment</li>
             <li>Flipped learning</li>
             <li>ICT in education</li>
-            <li>Textbook author</li>
-            <li>Learning materials</li>
             <li>International projects</li>
           </ul>
+
           <div class="contact">
             <a class="email" href="mailto:lauri.k.hellsten@gmail.com">lauri.k.hellsten@gmail.com</a>
+
             <div class="icons" aria-label="Social links">
               <a class="icon-link" href="https://www.linkedin.com/in/laurihellsten/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.38 8.02h4.24V23H.38V8.02zM8.1 8.02h4.06v2.05h.06c.56-1.06 1.94-2.18 4-2.18 4.28 0 5.07 2.82 5.07 6.48V23h-4.24v-7.64c0-1.82-.03-4.16-2.54-4.16-2.54 0-2.93 1.98-2.93 4.03V23H8.1V8.02z"/></svg>
               </a>
+
               <a class="icon-link" href="https://www.facebook.com/lauri.hellsten/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
               </a>
@@ -694,7 +811,7 @@
       </section>
 
       <section id="materials" class="materials">
-        <p class="materials-note">The materials linked below are in Finnish.</p>
+        <p class="materials-note">Most materials below are in Finnish; some presentations are in English.</p>
 
         <div class="grid">
           <!-- 01: Simulations -->
@@ -702,7 +819,12 @@
             <div class="category-head">
               <div class="category-head-left">
                 <div class="category-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="2"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                  </svg>
                 </div>
                 <div>
                   <div class="category-tag">Interactive</div>
@@ -711,27 +833,36 @@
               </div>
               <div class="category-num">01</div>
             </div>
+
             <div class="links">
               <a class="item" href="FY03_kaasu_laajeneminen.html">
                 <div>
                   <div class="item-title">Thermal expansion of gases</div>
                   <div class="item-sub">FY03 · Energy and heat</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="FY03_kiintea_laajeneminen.html">
                 <div>
                   <div class="item-title">Thermal expansion of solids</div>
                   <div class="item-sub">FY03 · Energy and heat</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="FY03_neste_laajeneminen.html">
                 <div>
                   <div class="item-title">Thermal expansion of liquids</div>
                   <div class="item-sub">FY03 · Energy and heat</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
 
               <details class="more-links">
@@ -739,76 +870,76 @@
                   <span class="show-more-text">Show more simulations</span>
                   <span class="show-less-text">Show fewer simulations</span>
                 </summary>
+
                 <div class="extra-links">
-                  <a class="item" href="FY03_Avogadro">
-                    <div>
-                      <div class="item-title">Avogadro's law</div>
-                      <div class="item-sub">FY03 · Gas laws</div>
-                    </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                  </a>
                   <a class="item" href="FY03_faasikaavio.html">
                     <div>
                       <div class="item-title">Phase diagram</div>
                       <div class="item-sub">FY03 · States of matter</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="FY03_ideaalikaasulaki.html">
                     <div>
                       <div class="item-title">Changes of state</div>
                       <div class="item-sub">FY03 · Ideal gas and phase changes</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="FY03_isobaarinen.html">
                     <div>
                       <div class="item-title">Isobaric process</div>
                       <div class="item-sub">FY03 · Gas process at constant pressure</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="FY03_isokoorinen.html">
                     <div>
                       <div class="item-title">Isochoric process</div>
                       <div class="item-sub">FY03 · Gas process at constant volume</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="FY03_isoterminen.html">
                     <div>
                       <div class="item-title">Boyle's law</div>
                       <div class="item-sub">FY03 · Isothermal gas process</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="balloon-simulation.html">
                     <div>
                       <div class="item-title">Balloon simulation</div>
                       <div class="item-sub">FY03 · Gas and temperature</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
-                  <a class="item" href="balloon-simulation%20%281%29.html">
-                    <div>
-                      <div class="item-title">Balloon simulation — variant</div>
-                      <div class="item-sub">FY03 · Gas and temperature</div>
-                    </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                  </a>
+
                   <a class="item" href="ilmapallo.html">
                     <div>
                       <div class="item-title">Hot-air balloon</div>
                       <div class="item-sub">FY03 · Buoyancy and warm air</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-                  </a>
-                  <a class="item" href="ilmapallo1.html">
-                    <div>
-                      <div class="item-title">Hot-air balloon — variant</div>
-                      <div class="item-sub">FY03 · Buoyancy and warm air</div>
-                    </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
                 </div>
               </details>
@@ -820,7 +951,11 @@
             <div class="category-head">
               <div class="category-head-left">
                 <div class="category-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 13l3-3 2 2 4-5"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="13" rx="2"/>
+                    <path d="M8 21h8M12 17v4"/>
+                    <path d="M7 13l3-3 2 2 4-5"/>
+                  </svg>
                 </div>
                 <div>
                   <div class="category-tag">Visual</div>
@@ -829,27 +964,36 @@
               </div>
               <div class="category-num">02</div>
             </div>
+
             <div class="links">
               <a class="item" href="https://slides.com/opetustv/fy3-1-voima/fullscreen?token=sg6cg6rM" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">Force</div>
                   <div class="item-sub">FY03 · Force and motion</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="https://slides.com/opetustv/fy3-2-energia/fullscreen?token=a3RHjUNp" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">Energy</div>
                   <div class="item-sub">FY03 · Energy and heat</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="https://slides.com/opetustv/fy03-3-tyo/fullscreen?token=LHozqMsk" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">Work</div>
                   <div class="item-sub">FY03 · Energy and work</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
 
               <details class="more-links">
@@ -857,34 +1001,46 @@
                   <span class="show-more-text">Show more slides</span>
                   <span class="show-less-text">Show fewer slides</span>
                 </summary>
+
                 <div class="extra-links">
                   <a class="item" href="https://slides.com/opetustv/fy03-4-lammon-siirtyminen/fullscreen?token=f_kWzj3E" target="_blank" rel="noopener noreferrer">
                     <div>
                       <div class="item-title">Heat transfer</div>
                       <div class="item-sub">FY03 · Energy and heat</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="https://slides.com/opetustv/fy03-5-termodynaaminen-systeemi/fullscreen?token=6HXRRb-j" target="_blank" rel="noopener noreferrer">
                     <div>
                       <div class="item-title">Thermodynamic system</div>
                       <div class="item-sub">FY03 · Energy and heat</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="https://slides.com/opetustv/fy03-6-paine/fullscreen?token=3rOq9BSA" target="_blank" rel="noopener noreferrer">
                     <div>
                       <div class="item-title">Pressure</div>
                       <div class="item-sub">FY03 · Pressure</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
+
                   <a class="item" href="https://slides.com/opetustv/fy03-9-aineen-olomuodot/fullscreen?token=kxAXXukO" target="_blank" rel="noopener noreferrer">
                     <div>
                       <div class="item-title">States of matter</div>
                       <div class="item-sub">FY03 · Energy and heat</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
                 </div>
               </details>
@@ -896,7 +1052,10 @@
             <div class="category-head">
               <div class="category-head-left">
                 <div class="category-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><rect x="3" y="7" width="14" height="13" rx="2"/><path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2h-2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="7" width="14" height="13" rx="2"/>
+                    <path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2h-2"/>
+                  </svg>
                 </div>
                 <div>
                   <div class="category-tag">Review</div>
@@ -905,27 +1064,36 @@
               </div>
               <div class="category-num">03</div>
             </div>
+
             <div class="links">
               <a class="item" href="https://quizlet.com/fi/1159344781/fy01-ja-fy02-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
                 <div>
-                  <div class="item-title">FY01 & FY02</div>
+                  <div class="item-title">FY01 &amp; FY02</div>
                   <div class="item-sub">Physics as a natural science · Environment and society</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="https://quizlet.com/fi/1159337238/fy03-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">FY03</div>
                   <div class="item-sub">Energy and heat</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="https://quizlet.com/fi/1161257425/fy07-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">FY07</div>
                   <div class="item-sub">Electromagnetism and light</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
             </div>
           </article>
@@ -935,7 +1103,10 @@
             <div class="category-head">
               <div class="category-head-left">
                 <div class="category-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/>
+                    <path d="M14 3v5h5M9 13h6M9 17h4"/>
+                  </svg>
                 </div>
                 <div>
                   <div class="category-tag">Condensed</div>
@@ -944,27 +1115,36 @@
               </div>
               <div class="category-num">04</div>
             </div>
+
             <div class="links">
               <a class="item" href="FY01FY02_K2026.pdf" target="_blank" rel="noopener noreferrer">
                 <div>
-                  <div class="item-title">FY01 & FY02</div>
+                  <div class="item-title">FY01 &amp; FY02</div>
                   <div class="item-sub">Physics as a natural science · Environment and society</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="FY03_K2026.pdf" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">FY03</div>
                   <div class="item-sub">Energy and heat</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
+
               <a class="item" href="FY04_K2026.pdf" target="_blank" rel="noopener noreferrer">
                 <div>
                   <div class="item-title">FY04</div>
                   <div class="item-sub">Force and motion</div>
                 </div>
-                <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
               </a>
 
               <details class="more-links">
@@ -972,16 +1152,114 @@
                   <span class="show-more-text">Show more summaries</span>
                   <span class="show-less-text">Show fewer summaries</span>
                 </summary>
+
                 <div class="extra-links">
                   <a class="item" href="FY07_K2026.pdf" target="_blank" rel="noopener noreferrer">
                     <div>
                       <div class="item-title">FY07</div>
                       <div class="item-sub">Electromagnetism and light</div>
                     </div>
-                    <span class="item-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
                   </a>
                 </div>
               </details>
+            </div>
+          </article>
+
+          <!-- 05: Course timetables -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M3 10h18M8 3v4M16 3v4"/>
+                    <path d="M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Structure</div>
+                  <h3>Course timetables</h3>
+                </div>
+              </div>
+              <div class="category-num">05</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="FY03_K2026_Timetable.pdf" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY03 · Energy and heat</div>
+                  <div class="item-sub">Weekly plan with learning objectives and self-assessment scale</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 06: International presentations -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M3 12h18"/>
+                    <path d="M12 3a14 14 0 010 18"/>
+                    <path d="M12 3a14 14 0 000 18"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Talks</div>
+                  <h3>Talks &amp; presentations</h3>
+                </div>
+              </div>
+              <div class="category-num">06</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="https://slides.com/opetustv/ai-for-reflective-education-b0827e/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">AI for Reflective Education</div>
+                  <div class="item-sub">Bridging mathematics and technology for deeper learning · Riga, 2026</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/geogebra-koulutus-k2025/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">GeoGebra training for teachers</div>
+                  <div class="item-sub">Teacher training · Finland · Spring 2025</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/flare1/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FLARE — Flipped Learning &amp; AI for Reflective Education</div>
+                  <div class="item-sub">Lead trainer · ASEFClassNet EmpowerED · 2025</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/ajatuksia-luma-aineiden-opetuksesta-educa/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">Reflections on teaching STEM subjects</div>
+                  <div class="item-sub">Educa · Finnish education fair</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
             </div>
           </article>
         </div>
@@ -989,8 +1267,8 @@
     </main>
 
     <footer>
-      <div class="footer-quote">© Lauri Hellsten</div>
-      <div class="footer-meta">Demo site · MMXXVI</div>
+      <div class="footer-quote">&copy; Lauri Hellsten</div>
+      <div class="footer-meta">Last updated · Spring 2026</div>
     </footer>
   </div>
 </body>
