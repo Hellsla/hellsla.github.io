@@ -325,11 +325,17 @@
     }
 
     .profile p {
-      margin: 0 0 13px;
+      margin: 0;
       color: var(--ink-2);
       max-width: 70ch;
-      line-height: 1.55;
+      line-height: 1.6;
       font-size: 0.94rem;
+    }
+
+    .bio-copy {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 16px;
     }
 
     .profile p a {
@@ -780,18 +786,30 @@
             <a class="flag-link" href="https://en.wikipedia.org/wiki/Finland" target="_blank" rel="noopener noreferrer" aria-label="Finland on Wikipedia" title="Finland on Wikipedia">🇫🇮</a>
           </div>
 
-          <p>
-            I am a STEAM teacher at <a href="https://www.espoo.fi/fi/espoon-yhteislyseo" target="_blank" rel="noopener noreferrer">Espoo Yhteislyseo upper secondary school</a>, passionate about developing teaching practice. For the past 15 years, hands-on and student-activating pedagogical approaches have been at the heart of my work. As a teacher, I have developed STEAM education, assessment, flipped learning pedagogy, and the meaningful use of ICT in teaching. I have also written and produced a wide range of learning materials for both teachers and students. STEAM outreach and international projects are especially meaningful to me. I believe that together, we are more than the sum of our parts.
-          </p>
+          <div class="bio-copy" aria-label="Biography">
+            <p>
+              I am a STEAM teacher at <a href="https://www.espoo.fi/fi/espoon-yhteislyseo" target="_blank" rel="noopener noreferrer">Espoo Yhteislyseo upper secondary school</a>, passionate about developing teaching practice. For the past 15 years, hands-on and student-activating pedagogical approaches have been at the heart of my work.
+            </p>
+
+            <p>
+              As a teacher, I have developed STEAM education, formative assessment, flipped learning pedagogy, and the meaningful use of ICT in teaching. I have also written and produced a wide range of learning materials for both teachers and students. Formative assessment is especially important to me: I aim to support each student within their zone of proximal development, with feedback, guidance, and challenges that help them move forward with confidence.
+            </p>
+
+            <p>
+              I also serve as the school’s international relations coordinator, working with Erasmus+, Nordplus, and other international projects. STEAM outreach and international collaboration are especially meaningful to me. I believe that together, we are more than the sum of our parts.
+            </p>
+          </div>
 
           <ul class="facts" aria-label="Focus areas">
             <li>15 years teaching</li>
             <li>Textbook author</li>
             <li>STEAM</li>
-            <li>Assessment</li>
+            <li>Formative assessment</li>
+            <li>Zone of proximal development</li>
             <li>Flipped learning</li>
             <li>ICT in education</li>
-            <li>International projects</li>
+            <li>International relations coordinator</li>
+            <li>Erasmus+ &amp; Nordplus</li>
           </ul>
 
           <div class="contact">
@@ -1271,15 +1289,24 @@
                 </span>
               </a>
 
-              <a class="item" href="https://slides.com/opetustv/ajatuksia-luma-aineiden-opetuksesta-educa/fullscreen" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <div class="item-title">Reflections on teaching STEM subjects</div>
-                  <div class="item-sub">Educa · Finnish education fair</div>
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more talks</span>
+                  <span class="show-less-text">Show fewer talks</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="https://slides.com/opetustv/ajatuksia-luma-aineiden-opetuksesta-educa/fullscreen" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">Reflections on teaching STEM subjects</div>
+                      <div class="item-sub">Educa · Finnish education fair</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
                 </div>
-                <span class="item-arrow">
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </span>
-              </a>
+              </details>
             </div>
           </article>
         </div>
