@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -150,6 +150,28 @@
     nav a:hover {
       color: var(--ink);
       background: var(--bg-tint);
+    }
+
+    .cv-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 7px 13px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      background: var(--accent-deep);
+      color: var(--surface);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .cv-link:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-1px);
     }
 
     .flag-link {
@@ -735,6 +757,12 @@
         padding: 7px 9px;
         font-size: 0.82rem;
       }
+
+      .cv-link {
+        min-height: 32px;
+        padding: 6px 11px;
+        font-size: 0.74rem;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -761,6 +789,10 @@
           <a href="#materials">Materials</a>
           <a href="mailto:lauri.k.hellsten@gmail.com">Contact</a>
         </nav>
+
+        <a class="cv-link" href="CV_Lauri_Hellsten_2026.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Lauri Hellsten CV as PDF">
+          CV
+        </a>
       </div>
     </header>
 
