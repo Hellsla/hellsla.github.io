@@ -3,35 +3,179 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lämpölaajeneminen</title>
+<title>Putken lämpölaajeneminen</title>
 <link rel="stylesheet" href="simulaatio-theme.css" />
 <style>
-
-
-
-
-
-
-  .sim-range{width:min(420px,48vw);accent-color:#3f3d39}
-
-  .sketch{fill:none;stroke:#3f3d39;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.thin{stroke-width:1.8}.hatch{stroke:#d8d8d8;stroke-width:1.1;stroke-linecap:round}.bond{fill:none;stroke:#bdb9b2;stroke-width:1.5;stroke-linecap:round;opacity:.95}.anchor{fill:none;stroke:#c3c0ba;stroke-width:1.1;stroke-dasharray:3 6}.vibe{fill:none;stroke-width:1.4;stroke-dasharray:4 5;opacity:.9}.atom{stroke:#3f3d39;stroke-width:2.2}.flow{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9 11;opacity:0}.heatLine{fill:none;stroke:#d84a62;stroke-width:2.1;stroke-linecap:round}.flameOuter{fill:#ffd95a;stroke:#3f3d39;stroke-width:2.2}.flameInner{fill:#f28c28;stroke:#3f3d39;stroke-width:1.8}.iceShape{fill:#bfe9f5;stroke:#3f3d39;stroke-width:2.1;stroke-linejoin:round}.iceLine{fill:none;stroke:#2e86a6;stroke-width:2;stroke-linecap:round}
-  @media(max-width:760px){.controls{left:22px;right:22px;gap:10px}.sliderBox{width:100%}input[type=range]{width:100%}}
+  .layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start}
+  .panel{background:#fff;border:1px solid #ddd2c2;border-radius:12px;padding:14px}
+  .controlsGrid{display:grid;grid-template-columns:repeat(2,minmax(180px,1fr));gap:10px}
+  .sim-btn{margin-top:8px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  svg{width:100%;height:auto}
+  #tableWrap{max-height:240px;overflow:auto;border:1px solid #e7ded1;border-radius:8px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{padding:6px 8px;border-bottom:1px solid #efe6d8;text-align:right}
+  th:first-child,td:first-child{text-align:center}
+  canvas{width:100%;height:280px;background:#fffdf7;border:1px solid #e3d8c7;border-radius:8px}
+  .eq{font-weight:600;color:#5a4a3d}
+  @media (max-width:860px){.layout{grid-template-columns:1fr}.controlsGrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="sim-body">
 <div class="wrap sim-wrap">
-<svg viewBox="0 0 960 520" aria-label="Lämpölaajeneminen mikrotasolla">
-<defs><pattern id="diagHatch" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(22)"><line x1="0" y1="0" x2="0" y2="14" class="hatch"></line></pattern></defs>
-<g id="sampleGroup"><rect id="sampleFill" x="210" y="78" width="540" height="304" rx="26" ry="26" fill="url(#diagHatch)"></rect><rect id="sampleRect" x="210" y="78" width="540" height="304" rx="26" ry="26" class="sketch"></rect><path id="sampleTop" class="sketch thin" d="M222 91 C340 84,476 90,618 86 S716 88,738 93"></path><path id="sampleBottom" class="sketch thin" d="M220 368 C346 376,512 370,642 374 S718 374,740 367"></path></g>
-<g id="bondGroup"></g><g id="anchorGroup"></g><g id="vibeGroup"></g><g id="atomGroup"></g>
-<g id="flowGroup"><path id="flow1" class="flow"></path><path id="flow2" class="flow"></path><path id="flow3" class="flow"></path></g>
-<g id="iceGroup" opacity="0"><path class="iceShape" d="M427 438 L454 407 L496 411 L525 441 L510 479 L466 490 L431 470 Z"></path><path class="iceLine" d="M455 423 L498 468"></path><path class="iceLine" d="M502 424 L456 471"></path><path class="iceLine" d="M477 411 L477 486"></path><path class="iceLine" d="M438 451 L517 451"></path></g>
-<g id="heatGroup" opacity="0"><path class="heatLine" d="M405 450 C392 428,420 418,406 394"></path><path class="heatLine" d="M480 452 C466 427,495 418,481 393"></path><path class="heatLine" d="M555 450 C541 427,570 418,556 394"></path><path class="flameOuter" d="M448 483 C406 466,418 425,441 407 C442 431,472 431,463 390 C503 417,521 468,479 484 C471 488,457 488,448 483 Z"></path><path class="flameInner" d="M461 482 C439 470,446 442,459 428 C461 445,479 446,476 421 C495 445,496 472,474 483 C470 485,465 485,461 482 Z"></path></g>
-</svg>
-<div class="controls sim-controls"><div class="sliderBox sim-sliderBox"><label for="temp">Lämpötila</label><input id="temp" type="range" class="sim-range" min="0" max="100" step="1" value="50"></div><button class="sim-btn" id="reset">Nollaa</button></div>
+  <h1 style="margin:0 0 12px 0">Lämpölaajeneminen: putki</h1>
+  <div class="layout">
+    <div class="panel">
+      <div class="controlsGrid">
+        <label>Materiaali
+          <select id="material">
+            <option value="copper">Kupari</option>
+            <option value="steel">Teräs</option>
+            <option value="aluminium">Alumiini</option>
+          </select>
+        </label>
+        <label>Alkupituus L₀ (m)
+          <input id="L0" type="number" min="0.2" max="5" step="0.1" value="1.0">
+        </label>
+        <label>Alkulämpötila (°C)
+          <input id="tStart" type="number" min="0" max="100" value="24">
+        </label>
+        <label>Loppulämpötila (°C)
+          <input id="tEnd" type="number" min="10" max="250" value="60">
+        </label>
+      </div>
+      <div class="row">
+        <button class="sim-btn" id="run">Käynnistä mittaus</button>
+        <button class="sim-btn" id="clear">Tyhjennä</button>
+      </div>
+      <svg viewBox="0 0 820 180" aria-label="Putki ja lämmitys">
+        <rect x="60" y="88" width="700" height="24" rx="10" fill="#dbb79f" stroke="#5f4332" stroke-width="2"/>
+        <rect id="heat" x="60" y="88" width="0" height="24" rx="10" fill="#f27d5f" opacity="0.85"/>
+        <line x1="60" y1="60" x2="760" y2="60" stroke="#d63f3f" stroke-width="3"/>
+        <polygon points="60,60 75,54 75,66" fill="#d63f3f"/>
+        <polygon points="760,60 745,54 745,66" fill="#d63f3f"/>
+        <text x="395" y="48" text-anchor="middle" font-size="28" fill="#cf2f2f" id="lenText">1.000 m</text>
+      </svg>
+      <p id="status">Valmis mittaukseen.</p>
+    </div>
+
+    <div class="panel">
+      <canvas id="plot" width="560" height="320"></canvas>
+      <p class="eq" id="fit">Sovitus: y = mx + b</p>
+      <div id="tableWrap">
+        <table>
+          <thead><tr><th>#</th><th>T (°C)</th><th>ΔL (mm)</th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 <script>
-(()=>{const svgNS="http://www.w3.org/2000/svg";const temp=document.getElementById("temp"),reset=document.getElementById("reset"),sampleRect=document.getElementById("sampleRect"),sampleFill=document.getElementById("sampleFill"),sampleTop=document.getElementById("sampleTop"),sampleBottom=document.getElementById("sampleBottom"),bondGroup=document.getElementById("bondGroup"),anchorGroup=document.getElementById("anchorGroup"),vibeGroup=document.getElementById("vibeGroup"),atomGroup=document.getElementById("atomGroup"),flow1=document.getElementById("flow1"),flow2=document.getElementById("flow2"),flow3=document.getElementById("flow3"),heatGroup=document.getElementById("heatGroup"),iceGroup=document.getElementById("iceGroup");const cols=7,rows=5,neutral=50,baseRect={x:210,y:78,w:540,h:304},centerX=480,centerY=230,atoms=[],bonds=[];let time=0,targetLevel=50,currentLevel=50;function createNode(name,attrs={}){const el=document.createElementNS(svgNS,name);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,v);return el}function mixColor(a,b,t){const ah=a.replace("#",""),bh=b.replace("#","");const ar=parseInt(ah.slice(0,2),16),ag=parseInt(ah.slice(2,4),16),ab=parseInt(ah.slice(4,6),16),br=parseInt(bh.slice(0,2),16),bg=parseInt(bh.slice(2,4),16),bb=parseInt(bh.slice(4,6),16);return`rgb(${Math.round(ar+(br-ar)*t)},${Math.round(ag+(bg-ag)*t)},${Math.round(ab+(bb-ab)*t)})`}function buildLattice(){for(let r=0;r<rows;r++){for(let c=0;c<cols;c++){const anchor=createNode("circle",{class:"anchor",r:3}),vibe=createNode("ellipse",{class:"vibe",rx:12,ry:9}),atom=createNode("circle",{class:"atom",r:10,fill:"#ffffff"});anchorGroup.appendChild(anchor);vibeGroup.appendChild(vibe);atomGroup.appendChild(atom);atoms.push({row:r,col:c,anchor,vibe,atom,phaseX:Math.random()*Math.PI*2,phaseY:Math.random()*Math.PI*2,phaseR:Math.random()*Math.PI*2,x:0,y:0});if(c<cols-1){const line=createNode("line",{class:"bond"});bondGroup.appendChild(line);bonds.push({type:"h",r,c,line})}if(r<rows-1){const line=createNode("line",{class:"bond"});bondGroup.appendChild(line);bonds.push({type:"v",r,c,line})}}}}function getAtom(row,col){return atoms[row*cols+col]}function getNodePoint(rect,row,col){return{x:rect.x+rect.w/(cols+1)*(col+1),y:rect.y+rect.h/(rows+1)*(row+1)}}function updateSampleBox(level){const heat=Math.max(0,level-neutral)/neutral,cold=Math.max(0,neutral-level)/neutral;const w=baseRect.w*(1+heat*.14-cold*.05),h=baseRect.h*(1+heat*.11-cold*.04),x=centerX-w/2,y=centerY-h/2,right=x+w,bottom=y+h;[sampleRect,sampleFill].forEach(el=>{el.setAttribute("x",x);el.setAttribute("y",y);el.setAttribute("width",w);el.setAttribute("height",h)});sampleTop.setAttribute("d",`M${x+12} ${y+13} C${x+118} ${y+5},${x+258} ${y+11},${x+396} ${y+7} S${right-35} ${y+9},${right-12} ${y+14}`);sampleBottom.setAttribute("d",`M${x+10} ${bottom-14} C${x+130} ${bottom-6},${x+296} ${bottom-12},${x+426} ${bottom-8} S${right-30} ${bottom-8},${right-10} ${bottom-15}`);return{x,y,w,h,heat,cold,bottom}}function updateAtoms(rect,level,t){const heatLevel=level/100,ampX=1.6+heatLevel*11.5,ampY=1.4+heatLevel*9.5,vibeRX=10+heatLevel*22,vibeRY=8+heatLevel*17,atomColor=mixColor("#2E86A6","#D84A62",heatLevel),vibeColor=mixColor("#9fd8e8","#f2a6b3",heatLevel);for(const item of atoms){const base=getNodePoint(rect,item.row,item.col);item.anchor.setAttribute("cx",base.x);item.anchor.setAttribute("cy",base.y);item.vibe.setAttribute("cx",base.x);item.vibe.setAttribute("cy",base.y);item.vibe.setAttribute("rx",vibeRX);item.vibe.setAttribute("ry",vibeRY);item.vibe.setAttribute("stroke",vibeColor);item.x=base.x+Math.sin(t*(.035+heatLevel*.06)+item.phaseX)*ampX;item.y=base.y+Math.cos(t*(.04+heatLevel*.055)+item.phaseY)*ampY;item.atom.setAttribute("cx",item.x);item.atom.setAttribute("cy",item.y);item.atom.setAttribute("fill",atomColor);item.atom.setAttribute("r",9.6+.25*Math.sin(t*.05+item.phaseR))}}function updateBonds(){for(const b of bonds){const a1=getAtom(b.r,b.c),a2=b.type==="h"?getAtom(b.r,b.c+1):getAtom(b.r+1,b.c);b.line.setAttribute("x1",a1.x);b.line.setAttribute("y1",a1.y);b.line.setAttribute("x2",a2.x);b.line.setAttribute("y2",a2.y)}}function updateFlow(rect,state,t){flow1.setAttribute("d",`M422 408 C430 376,432 347,436 ${rect.bottom-6}`);flow2.setAttribute("d",`M480 404 C480 372,480 344,480 ${rect.bottom-6}`);flow3.setAttribute("d",`M538 408 C530 376,528 347,524 ${rect.bottom-6}`);if(!state.active){[flow1,flow2,flow3].forEach(f=>{f.setAttribute("opacity",0);f.style.strokeDashoffset="0"});return}const color=state.direction>0?"#D84A62":"#2E86A6",dashShift=(state.direction>0?-1:1)*t*(.45+state.amount*.75);[flow1,flow2,flow3].forEach((f,i)=>{f.setAttribute("stroke",color);f.setAttribute("opacity",.12+state.amount*.88);f.style.strokeDashoffset=String(dashShift-i*9)})}function updateIcons(state){const heatOpacity=state.active&&state.direction>0?state.amount:0,coldOpacity=state.active&&state.direction<0?state.amount:0;heatGroup.setAttribute("opacity",heatOpacity);iceGroup.setAttribute("opacity",coldOpacity);heatGroup.setAttribute("transform",`translate(0 ${heatOpacity*-5})`);iceGroup.setAttribute("transform",`translate(0 ${coldOpacity*-4})`)}function tick(){time+=1;const tolerance=.15,deltaBefore=targetLevel-currentLevel;if(Math.abs(deltaBefore)<tolerance){currentLevel=targetLevel}else{currentLevel+=deltaBefore*.08}const deltaAfter=targetLevel-currentLevel,heatingState={active:Math.abs(deltaAfter)>=tolerance,direction:Math.sign(deltaAfter),amount:Math.min(1,Math.abs(deltaAfter)/12)},rect=updateSampleBox(currentLevel);updateAtoms(rect,currentLevel,time);updateBonds();updateFlow(rect,heatingState,time);updateIcons(heatingState);requestAnimationFrame(tick)}temp.addEventListener("input",()=>{targetLevel=Number(temp.value)});reset.addEventListener("click",()=>{temp.value=50;targetLevel=50});buildLattice();tick()})();
+(() => {
+  const alpha = { copper: 16.7e-6, steel: 12e-6, aluminium: 23e-6 };
+  const labels = { copper: 'Kupari', steel: 'Teräs', aluminium: 'Alumiini' };
+  const material = document.getElementById('material');
+  const L0 = document.getElementById('L0');
+  const tStart = document.getElementById('tStart');
+  const tEnd = document.getElementById('tEnd');
+  const run = document.getElementById('run');
+  const clear = document.getElementById('clear');
+  const tbody = document.getElementById('tbody');
+  const fit = document.getElementById('fit');
+  const status = document.getElementById('status');
+  const heat = document.getElementById('heat');
+  const lenText = document.getElementById('lenText');
+  const canvas = document.getElementById('plot');
+  const ctx = canvas.getContext('2d');
+
+  let data = [];
+
+  const randn = () => {
+    let u = 0, v = 0;
+    while (!u) u = Math.random();
+    while (!v) v = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  };
+
+  function lineFit(points) {
+    const n = points.length;
+    const sx = points.reduce((a,p) => a + p.T, 0);
+    const sy = points.reduce((a,p) => a + p.dL, 0);
+    const sxx = points.reduce((a,p) => a + p.T * p.T, 0);
+    const sxy = points.reduce((a,p) => a + p.T * p.dL, 0);
+    const m = (n * sxy - sx * sy) / (n * sxx - sx * sx);
+    const b = (sy - m * sx) / n;
+    return { m, b };
+  }
+
+  function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    const pad = {l:55,r:20,t:20,b:40};
+    const w = canvas.width - pad.l - pad.r;
+    const h = canvas.height - pad.t - pad.b;
+    ctx.strokeStyle = '#9f8c78';
+    ctx.strokeRect(pad.l,pad.t,w,h);
+    if (!data.length) return;
+    const Tmin = Math.min(...data.map(p=>p.T));
+    const Tmax = Math.max(...data.map(p=>p.T));
+    const ymin = Math.min(0,...data.map(p=>p.dL));
+    const ymax = Math.max(...data.map(p=>p.dL))*1.1;
+    const x = T => pad.l + (T-Tmin)/(Tmax-Tmin||1)*w;
+    const y = v => pad.t + h - (v-ymin)/(ymax-ymin||1)*h;
+
+    ctx.fillStyle='#5a493b';
+    ctx.font='14px sans-serif';
+    ctx.fillText('Lämpötila (°C)', pad.l + w/2 - 45, canvas.height-10);
+    ctx.save();ctx.translate(16,pad.t+h/2);ctx.rotate(-Math.PI/2);ctx.fillText('ΔL (mm)',0,0);ctx.restore();
+
+    ctx.fillStyle='#e6552d';
+    for (const p of data) {
+      ctx.beginPath(); ctx.arc(x(p.T), y(p.dL), 4, 0, Math.PI*2); ctx.fill();
+    }
+    if (data.length >= 2) {
+      const {m,b} = lineFit(data);
+      const y1 = m*Tmin + b, y2 = m*Tmax + b;
+      ctx.strokeStyle='#f0a088'; ctx.lineWidth=3;
+      ctx.beginPath(); ctx.moveTo(x(Tmin), y(y1)); ctx.lineTo(x(Tmax), y(y2)); ctx.stroke();
+      fit.textContent = `Sovitus (${labels[material.value]}): ΔL = ${m.toFixed(4)}·T + ${b.toFixed(4)} mm`;
+    }
+  }
+
+  function renderTable() {
+    tbody.innerHTML = data.map((p,i)=>`<tr><td>${i+1}</td><td>${p.T.toFixed(1)}</td><td>${p.dL.toFixed(3)}</td></tr>`).join('');
+  }
+
+  function runSimulation() {
+    data = [];
+    const mat = material.value;
+    const L = Number(L0.value);
+    const t0 = Number(tStart.value);
+    const t1 = Number(tEnd.value);
+    const steps = 12;
+    if (t1 <= t0) { status.textContent = 'Loppulämpötilan pitää olla suurempi kuin alkulämpötila.'; return; }
+    for (let i=0;i<steps;i++) {
+      const T = t0 + (i/(steps-1))*(t1-t0);
+      const trueDLmm = alpha[mat] * L * (T - t0) * 1000;
+      const measurementError = randn() * 0.012;
+      data.push({ T: T + randn()*0.15, dL: trueDLmm + measurementError });
+    }
+    renderTable(); draw();
+    const finalLen = L + (alpha[mat]*L*(t1-t0));
+    lenText.textContent = `${finalLen.toFixed(3)} m`;
+    heat.setAttribute('width', String(700));
+    status.textContent = `Mittaus valmis: ${labels[mat]}, α=${(alpha[mat]*1e6).toFixed(1)}×10⁻⁶ 1/°C.`;
+  }
+
+  run.addEventListener('click', runSimulation);
+  clear.addEventListener('click', () => {
+    data = []; tbody.innerHTML=''; draw(); heat.setAttribute('width','0');
+    fit.textContent = 'Sovitus: y = mx + b'; status.textContent='Tyhjennetty.';
+    lenText.textContent = `${Number(L0.value).toFixed(3)} m`;
+  });
+  L0.addEventListener('input', () => { lenText.textContent = `${Number(L0.value).toFixed(3)} m`; });
+  draw();
+})();
 </script>
 </body>
 </html>
