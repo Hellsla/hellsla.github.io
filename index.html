@@ -403,12 +403,6 @@
       color: var(--ink);
       padding-bottom: 2px;
       border-bottom: 1px solid var(--ink-3);
-      transition: color 180ms ease, border-color 180ms ease;
-    }
-
-    .email:hover {
-      color: var(--accent);
-      border-color: var(--accent);
     }
 
     .icons {
@@ -787,7 +781,7 @@
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#materials">Materials</a>
-          <a href="mailto:lauri.k.hellsten@gmail.com">Contact</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <a class="cv-link" href="CV_Lauri_Hellsten_2026.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Lauri Hellsten CV as PDF">
@@ -851,8 +845,8 @@
             <li>Educational Administration Qualification</li>
           </ul>
 
-          <div class="contact">
-            <a class="email" href="mailto:lauri.k.hellsten@gmail.com">lauri.k.hellsten@gmail.com</a>
+          <div id="contact" class="contact">
+            <span class="email" aria-label="Email address written to reduce automated scraping">lauri.k.hellsten [at] gmail.com</span>
 
             <div class="icons" aria-label="Social links">
               <a class="icon-link" href="https://www.linkedin.com/in/laurihellsten/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
