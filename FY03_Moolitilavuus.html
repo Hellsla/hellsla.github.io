@@ -64,9 +64,7 @@
     padding: 0.28rem 0.7rem;
   }
 
-  button {
-    cursor: pointer;
-  }
+  button { cursor: pointer; }
 
   .outline {
     fill: none;
@@ -90,7 +88,7 @@
 
   .bond {
     stroke: var(--ink);
-    stroke-width: 2.2;
+    stroke-width: 2.1;
     stroke-linecap: round;
   }
 
@@ -106,7 +104,7 @@
 </head>
 <body>
 <div class="wrap">
-  <svg id="scene" viewBox="0 0 960 520" aria-label="Kaasusimulaatio">
+  <svg viewBox="0 0 960 520" aria-label="Kaasusimulaatio">
     <defs>
       <clipPath id="gasClip">
         <rect x="250" y="105" width="430" height="300" rx="8"></rect>
@@ -161,7 +159,6 @@
 <script>
 (() => {
   const svgNS = "http://www.w3.org/2000/svg";
-
   const gasSelect = document.getElementById("gasSelect");
   const resetButton = document.getElementById("reset");
   const particleLayer = document.getElementById("particles");
@@ -180,21 +177,21 @@
   const gases = {
     N2: {
       label: "N₂",
-      radius: 18,
+      radius: 20,
       atoms: [
-        { x: -9, y: 0, r: 9, color: colors.N, text: "N" },
-        { x: 9, y: 0, r: 9, color: colors.N, text: "N" }
+        { x: -11, y: 0, r: 9, color: colors.N, text: "N" },
+        { x: 11, y: 0, r: 9, color: colors.N, text: "N" }
       ],
-      bonds: [[-3, 0, 3, 0]]
+      bonds: [{ x1: -4, y1: 0, x2: 4, y2: 0, order: 3 }]
     },
     O2: {
       label: "O₂",
-      radius: 18,
+      radius: 19,
       atoms: [
-        { x: -9, y: 0, r: 9, color: colors.O, text: "O" },
-        { x: 9, y: 0, r: 9, color: colors.O, text: "O" }
+        { x: -10, y: 0, r: 9, color: colors.O, text: "O" },
+        { x: 10, y: 0, r: 9, color: colors.O, text: "O" }
       ],
-      bonds: [[-3, 0, 3, 0]]
+      bonds: [{ x1: -4, y1: 0, x2: 4, y2: 0, order: 2 }]
     },
     Ar: {
       label: "Ar",
@@ -206,23 +203,29 @@
     },
     CO2: {
       label: "CO₂",
-      radius: 29,
+      radius: 31,
       atoms: [
-        { x: -21, y: 0, r: 9, color: colors.O, text: "O" },
+        { x: -22, y: 0, r: 9, color: colors.O, text: "O" },
         { x: 0, y: 0, r: 8, color: colors.C, text: "C" },
-        { x: 21, y: 0, r: 9, color: colors.O, text: "O" }
+        { x: 22, y: 0, r: 9, color: colors.O, text: "O" }
       ],
-      bonds: [[-13, 0, -7, 0], [7, 0, 13, 0]]
+      bonds: [
+        { x1: -14, y1: 0, x2: -7, y2: 0, order: 2 },
+        { x1: 7, y1: 0, x2: 14, y2: 0, order: 2 }
+      ]
     },
     H2O: {
       label: "H₂O",
-      radius: 26,
+      radius: 27,
       atoms: [
-        { x: 0, y: -3, r: 10, color: colors.O, text: "O" },
-        { x: -16, y: 13, r: 7, color: colors.H, text: "H" },
-        { x: 16, y: 13, r: 7, color: colors.H, text: "H" }
+        { x: 0, y: -4, r: 10, color: colors.O, text: "O" },
+        { x: -17, y: 14, r: 7, color: colors.H, text: "H" },
+        { x: 17, y: 14, r: 7, color: colors.H, text: "H" }
       ],
-      bonds: [[-7, 4, -12, 10], [7, 4, 12, 10]]
+      bonds: [
+        { x1: -7, y1: 4, x2: -12, y2: 10, order: 1 },
+        { x1: 7, y1: 4, x2: 12, y2: 10, order: 1 }
+      ]
     }
   };
 
@@ -237,16 +240,37 @@
     return node;
   }
 
-  function drawMolecule(parent, gas, scale = 1, labels = false) {
-    gas.bonds.forEach(b => {
+  function drawBond(parent, bond, scale) {
+    const x1 = bond.x1 * scale;
+    const y1 = bond.y1 * scale;
+    const x2 = bond.x2 * scale;
+    const y2 = bond.y2 * scale;
+
+    const dx = x2 - x1;
+    const dy = y2 - y1;
+    const len = Math.hypot(dx, dy) || 1;
+
+    const nx = -dy / len;
+    const ny = dx / len;
+    const gap = 3.2 * scale;
+
+    let offsets = [0];
+    if (bond.order === 2) offsets = [-gap, gap];
+    if (bond.order === 3) offsets = [-gap, 0, gap];
+
+    offsets.forEach(o => {
       parent.appendChild(el("line", {
-        x1: b[0] * scale,
-        y1: b[1] * scale,
-        x2: b[2] * scale,
-        y2: b[3] * scale,
+        x1: x1 + nx * o,
+        y1: y1 + ny * o,
+        x2: x2 + nx * o,
+        y2: y2 + ny * o,
         class: "bond"
       }));
     });
+  }
+
+  function drawMolecule(parent, gas, scale = 1, labels = false) {
+    gas.bonds.forEach(b => drawBond(parent, b, scale));
 
     gas.atoms.forEach(a => {
       parent.appendChild(el("circle", {
@@ -309,7 +333,7 @@
 
     const text = el("text", {
       x: 0,
-      y: 64,
+      y: 66,
       class: "txt",
       "text-anchor": "middle"
     });
