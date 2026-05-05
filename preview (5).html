@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>1 mol kaasu</title>
+<style>
+  :root {
+    --ink: #3f3d39;
+    --muted: #77736c;
+    --soft: #f4f4f4;
+    --N: #2e86a6;
+    --O: #4a8b5c;
+    --Ar: #8a6bb8;
+    --C: #3f3d39;
+    --H: #d84a62;
+  }
+
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    overflow: hidden;
+  }
+
+  .wrap {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: #ffffff;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.55rem 1rem 0.85rem;
+    font-size: clamp(14px, 1.6vw, 18px);
+  }
+
+  label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  select, button {
+    font: inherit;
+    background: #ffffff;
+    color: var(--ink);
+    border: 1.8px solid var(--ink);
+    border-radius: 999px;
+    padding: 0.28rem 0.7rem;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .outline {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .hatch {
+    stroke: var(--muted);
+    stroke-width: 1;
+    opacity: 0.35;
+  }
+
+  .txt {
+    fill: var(--ink);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .bond {
+    stroke: var(--ink);
+    stroke-width: 2.2;
+    stroke-linecap: round;
+  }
+
+  .symbol {
+    fill: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <svg id="scene" viewBox="0 0 960 520" aria-label="Kaasusimulaatio">
+    <defs>
+      <clipPath id="gasClip">
+        <rect x="250" y="105" width="430" height="300" rx="8"></rect>
+      </clipPath>
+    </defs>
+
+    <rect x="250" y="105" width="430" height="300" rx="8" fill="#ffffff" class="outline"/>
+    <path d="M250 105 L680 105 L680 128 L250 128 Z" fill="#f4f4f4" opacity="0.55"/>
+
+    <g class="hatch">
+      <path d="M270 122 l34 -15" />
+      <path d="M325 122 l34 -15" />
+      <path d="M380 122 l34 -15" />
+      <path d="M435 122 l34 -15" />
+      <path d="M490 122 l34 -15" />
+      <path d="M545 122 l34 -15" />
+      <path d="M600 122 l34 -15" />
+      <path d="M655 122 l20 -9" />
+      <path d="M265 392 l34 -15" />
+      <path d="M320 392 l34 -15" />
+      <path d="M375 392 l34 -15" />
+      <path d="M430 392 l34 -15" />
+      <path d="M485 392 l34 -15" />
+      <path d="M540 392 l34 -15" />
+      <path d="M595 392 l34 -15" />
+    </g>
+
+    <g id="particles" clip-path="url(#gasClip)"></g>
+
+    <text class="txt" x="80" y="145">n = 1 mol</text>
+    <text class="txt" x="80" y="185">V = 24,055 dm³</text>
+    <text class="txt" x="80" y="225">P = 101,3 kPa</text>
+    <text class="txt" x="80" y="265">T = 20 °C</text>
+
+    <g id="preview" transform="translate(785 235)"></g>
+  </svg>
+
+  <div class="controls">
+    <label>Kaasu
+      <select id="gasSelect">
+        <option value="N2">N₂</option>
+        <option value="O2">O₂</option>
+        <option value="Ar">Ar</option>
+        <option value="CO2">CO₂</option>
+        <option value="H2O">H₂O</option>
+      </select>
+    </label>
+    <button id="reset">Nollaa</button>
+  </div>
+</div>
+
+<script>
+(() => {
+  const svgNS = "http://www.w3.org/2000/svg";
+
+  const gasSelect = document.getElementById("gasSelect");
+  const resetButton = document.getElementById("reset");
+  const particleLayer = document.getElementById("particles");
+  const preview = document.getElementById("preview");
+
+  const box = { x: 250, y: 105, w: 430, h: 300 };
+
+  const colors = {
+    N: "#2e86a6",
+    O: "#4a8b5c",
+    Ar: "#8a6bb8",
+    C: "#3f3d39",
+    H: "#d84a62"
+  };
+
+  const gases = {
+    N2: {
+      label: "N₂",
+      radius: 18,
+      atoms: [
+        { x: -9, y: 0, r: 9, color: colors.N, text: "N" },
+        { x: 9, y: 0, r: 9, color: colors.N, text: "N" }
+      ],
+      bonds: [[-3, 0, 3, 0]]
+    },
+    O2: {
+      label: "O₂",
+      radius: 18,
+      atoms: [
+        { x: -9, y: 0, r: 9, color: colors.O, text: "O" },
+        { x: 9, y: 0, r: 9, color: colors.O, text: "O" }
+      ],
+      bonds: [[-3, 0, 3, 0]]
+    },
+    Ar: {
+      label: "Ar",
+      radius: 10,
+      atoms: [
+        { x: 0, y: 0, r: 10, color: colors.Ar, text: "Ar" }
+      ],
+      bonds: []
+    },
+    CO2: {
+      label: "CO₂",
+      radius: 29,
+      atoms: [
+        { x: -21, y: 0, r: 9, color: colors.O, text: "O" },
+        { x: 0, y: 0, r: 8, color: colors.C, text: "C" },
+        { x: 21, y: 0, r: 9, color: colors.O, text: "O" }
+      ],
+      bonds: [[-13, 0, -7, 0], [7, 0, 13, 0]]
+    },
+    H2O: {
+      label: "H₂O",
+      radius: 26,
+      atoms: [
+        { x: 0, y: -3, r: 10, color: colors.O, text: "O" },
+        { x: -16, y: 13, r: 7, color: colors.H, text: "H" },
+        { x: 16, y: 13, r: 7, color: colors.H, text: "H" }
+      ],
+      bonds: [[-7, 4, -12, 10], [7, 4, 12, 10]]
+    }
+  };
+
+  const particles = [];
+  const count = 34;
+
+  function el(name, attrs = {}) {
+    const node = document.createElementNS(svgNS, name);
+    for (const [key, value] of Object.entries(attrs)) {
+      node.setAttribute(key, value);
+    }
+    return node;
+  }
+
+  function drawMolecule(parent, gas, scale = 1, labels = false) {
+    gas.bonds.forEach(b => {
+      parent.appendChild(el("line", {
+        x1: b[0] * scale,
+        y1: b[1] * scale,
+        x2: b[2] * scale,
+        y2: b[3] * scale,
+        class: "bond"
+      }));
+    });
+
+    gas.atoms.forEach(a => {
+      parent.appendChild(el("circle", {
+        cx: a.x * scale,
+        cy: a.y * scale,
+        r: a.r * scale,
+        fill: "#ffffff",
+        stroke: a.color,
+        "stroke-width": 2.4
+      }));
+
+      if (labels) {
+        const t = el("text", {
+          x: a.x * scale,
+          y: a.y * scale + 0.5,
+          class: "symbol",
+          "font-size": 13 * scale
+        });
+        t.textContent = a.text;
+        parent.appendChild(t);
+      }
+    });
+  }
+
+  function makeParticle(gasKey) {
+    const gas = gases[gasKey];
+    const g = el("g");
+    drawMolecule(g, gas, 0.9, false);
+    particleLayer.appendChild(g);
+
+    return {
+      g,
+      x: box.x + 35 + Math.random() * (box.w - 70),
+      y: box.y + 35 + Math.random() * (box.h - 70),
+      vx: (Math.random() - 0.5) * 1.25,
+      vy: (Math.random() - 0.5) * 1.25,
+      angle: Math.random() * 360,
+      spin: (Math.random() - 0.5) * 1.2
+    };
+  }
+
+  function rebuildParticles() {
+    particleLayer.innerHTML = "";
+    particles.length = 0;
+
+    for (let i = 0; i < count; i++) {
+      particles.push(makeParticle(gasSelect.value));
+    }
+
+    drawPreview();
+  }
+
+  function drawPreview() {
+    preview.innerHTML = "";
+    const gas = gases[gasSelect.value];
+
+    const sketch = el("g");
+    drawMolecule(sketch, gas, 2.2, true);
+    preview.appendChild(sketch);
+
+    const text = el("text", {
+      x: 0,
+      y: 64,
+      class: "txt",
+      "text-anchor": "middle"
+    });
+    text.textContent = gas.label;
+    preview.appendChild(text);
+  }
+
+  function animate() {
+    const gas = gases[gasSelect.value];
+    const r = gas.radius;
+
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.angle += p.spin;
+
+      if (p.x < box.x + r) {
+        p.x = box.x + r;
+        p.vx = Math.abs(p.vx);
+      }
+      if (p.x > box.x + box.w - r) {
+        p.x = box.x + box.w - r;
+        p.vx = -Math.abs(p.vx);
+      }
+      if (p.y < box.y + r) {
+        p.y = box.y + r;
+        p.vy = Math.abs(p.vy);
+      }
+      if (p.y > box.y + box.h - r) {
+        p.y = box.y + box.h - r;
+        p.vy = -Math.abs(p.vy);
+      }
+
+      p.g.setAttribute("transform", `translate(${p.x} ${p.y}) rotate(${p.angle})`);
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  gasSelect.addEventListener("change", rebuildParticles);
+
+  resetButton.addEventListener("click", () => {
+    gasSelect.value = "N2";
+    rebuildParticles();
+  });
+
+  gasSelect.value = "N2";
+  rebuildParticles();
+  animate();
+})();
+</script>
+</body>
+</html>
