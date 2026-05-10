@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reaali- ja ideaalikaasu</title>
+  <style>
+    :root{
+      --ink:#2f2d2a;
+      --muted:#5b5750;
+      --light:#f4f4f4;
+      --red:#d84a62;
+      --blue:#2e86a6;
+      --oxygen:#d84a62;
+    }
+    *{ box-sizing:border-box; }
+    html,body{
+      margin:0;
+      width:100%;
+      min-height:100%;
+      background:#ffffff;
+      color:var(--ink);
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .sim{
+      width:100vw;
+      height:100vh;
+      max-width:1280px;
+      max-height:720px;
+      background:#fff;
+      display:flex;
+      flex-direction:column;
+      align-items:stretch;
+      justify-content:center;
+    }
+    svg{
+      width:100%;
+      height:auto;
+      flex:1 1 auto;
+      min-height:0;
+      display:block;
+      background:#fff;
+    }
+    .ui{
+      flex:0 0 auto;
+      padding:0.35rem 5.2vw 0.8rem;
+      display:grid;
+      grid-template-columns:1fr 1fr auto;
+      gap:1rem;
+      align-items:center;
+      background:#fff;
+    }
+    label{
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:0.65rem;
+      align-items:center;
+      font-size:clamp(13px,1.45vw,18px);
+      color:var(--ink);
+      white-space:nowrap;
+    }
+    .value{
+      font-variant-numeric:tabular-nums;
+      color:var(--muted);
+      min-width:5.8rem;
+      display:inline-block;
+    }
+    input[type="range"]{
+      width:100%;
+      accent-color:var(--ink);
+      cursor:pointer;
+    }
+    button{
+      appearance:none;
+      border:1.8px solid var(--ink);
+      background:#fff;
+      color:var(--ink);
+      padding:0.42rem 0.78rem;
+      border-radius:999px;
+      font-size:clamp(13px,1.35vw,17px);
+      cursor:pointer;
+      box-shadow:none;
+    }
+    button:active{ transform:translateY(1px); }
+    text{
+      fill:var(--ink);
+      paint-order:stroke;
+      stroke:#fff;
+      stroke-width:3px;
+      stroke-linejoin:round;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    .label{ font-size:22px; font-weight:520; }
+    .readout{ font-size:20px; font-variant-numeric:tabular-nums; }
+    .sketch{
+      fill:none;
+      stroke:var(--ink);
+      stroke-width:2.7;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      vector-effect:non-scaling-stroke;
+      filter:url(#rough);
+    }
+    .thin{
+      stroke-width:1.7;
+      vector-effect:non-scaling-stroke;
+    }
+    .piston{
+      fill:#ffffff;
+      stroke:var(--ink);
+      stroke-width:2.7;
+      stroke-linejoin:round;
+      filter:url(#rough);
+      vector-effect:non-scaling-stroke;
+    }
+    .hatchFill{
+      fill:url(#hatch);
+      opacity:0.55;
+    }
+    .particleIdeal{
+      fill:#ffffff;
+      stroke:var(--ink);
+      stroke-width:1.7;
+      vector-effect:non-scaling-stroke;
+    }
+    .waterO{
+      fill:#ffffff;
+      stroke:var(--oxygen);
+      stroke-width:1.8;
+      vector-effect:non-scaling-stroke;
+    }
+    .waterH{
+      fill:#ffffff;
+      stroke:var(--ink);
+      stroke-width:1.35;
+      vector-effect:non-scaling-stroke;
+    }
+    .bond{
+      stroke:var(--ink);
+      stroke-width:1.2;
+      stroke-linecap:round;
+      opacity:0.75;
+      vector-effect:non-scaling-stroke;
+    }
+    .halo{
+      fill:none;
+      stroke:var(--red);
+      stroke-width:1;
+      opacity:0.16;
+      vector-effect:non-scaling-stroke;
+    }
+    .link{
+      stroke:var(--red);
+      stroke-width:1.15;
+      stroke-linecap:round;
+      stroke-dasharray:2.5 5;
+      opacity:0.24;
+      vector-effect:non-scaling-stroke;
+    }
+    @media (max-width:700px){
+      .ui{
+        grid-template-columns:1fr;
+        gap:0.45rem;
+        padding:0.25rem 6vw 0.5rem;
+      }
+      label{ grid-template-columns:8.5rem 1fr; }
+      button{ justify-self:start; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sim" aria-label="Reaali- ja ideaalikaasun simulaatio">
+    <svg viewBox="0 0 960 500" role="img" aria-label="Kaksi kaasusäiliötä">
+      <defs>
+        <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="1" seed="7" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.55"/>
+        </filter>
+        <pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(-22)">
+          <line x1="0" y1="0" x2="0" y2="9" stroke="#2f2d2a" stroke-width="0.8" opacity="0.28"/>
+        </pattern>
+        <clipPath id="clipIdeal"><rect id="clipIdealRect" x="0" y="0" width="1" height="1"/></clipPath>
+        <clipPath id="clipReal"><rect id="clipRealRect" x="0" y="0" width="1" height="1"/></clipPath>
+      </defs>
+
+      <g id="idealBox">
+        <text class="label" x="118" y="78">Ideaalikaasu</text>
+        <text class="readout" id="idealP" x="118" y="108">P = 540 kPa</text>
+        <path id="idealChamber" class="sketch"></path>
+        <rect id="idealGasShade" class="hatchFill"></rect>
+        <g id="idealParticles" clip-path="url(#clipIdeal)"></g>
+        <rect id="idealPiston" class="piston"></rect>
+        <path id="idealPistonHatch" class="sketch thin"></path>
+      </g>
+
+      <g id="realBox">
+        <text class="label" x="550" y="78">H₂O</text>
+        <text class="readout" id="realP" x="550" y="108">P = 535 kPa</text>
+        <path id="realChamber" class="sketch"></path>
+        <rect id="realGasShade" class="hatchFill"></rect>
+        <g id="realLinks" clip-path="url(#clipReal)"></g>
+        <g id="realParticles" clip-path="url(#clipReal)"></g>
+        <rect id="realPiston" class="piston"></rect>
+        <path id="realPistonHatch" class="sketch thin"></path>
+      </g>
+
+      <path class="sketch thin" d="M92 390 C232 378, 386 380, 486 389 S710 405, 872 386" opacity="0.32"></path>
+    </svg>
+
+    <section class="ui">
+      <label>
+        <span>Tilavuus <span id="volumeValue" class="value">V = 3,0 l</span></span>
+        <input id="volume" type="range" min="1.00" max="5.50" step="0.01" value="3.00" aria-label="Tilavuus">
+      </label>
+      <label>
+        <span>Lämpötila <span id="tempValue" class="value">T = 650 K</span></span>
+        <input id="temperature" type="range" min="450" max="800" step="1" value="650" aria-label="Lämpötila">
+      </label>
+      <button id="reset" type="button">Nollaa</button>
+    </section>
+  </main>
+
+  <script>
+    const svgNS = "http://www.w3.org/2000/svg";
+
+    const volumeSlider = document.getElementById("volume");
+    const tempSlider = document.getElementById("temperature");
+    const resetButton = document.getElementById("reset");
+    const volumeValue = document.getElementById("volumeValue");
+    const tempValue = document.getElementById("tempValue");
+    const idealPText = document.getElementById("idealP");
+    const realPText = document.getElementById("realP");
+
+    const elements = {
+      idealChamber: document.getElementById("idealChamber"),
+      realChamber: document.getElementById("realChamber"),
+      idealShade: document.getElementById("idealGasShade"),
+      realShade: document.getElementById("realGasShade"),
+      idealPiston: document.getElementById("idealPiston"),
+      realPiston: document.getElementById("realPiston"),
+      idealPistonHatch: document.getElementById("idealPistonHatch"),
+      realPistonHatch: document.getElementById("realPistonHatch"),
+      idealParticles: document.getElementById("idealParticles"),
+      realParticles: document.getElementById("realParticles"),
+      realLinks: document.getElementById("realLinks"),
+      clipIdealRect: document.getElementById("clipIdealRect"),
+      clipRealRect: document.getElementById("clipRealRect")
+    };
+
+    const V_MIN = 1.00;
+    const V_MAX = 5.50;
+    const T_MIN = 450;
+    const T_MAX = 800;
+
+    // kPa, l, mol, K. H₂O is modeled as a simplified van der Waals gas.
+    const gas = {
+      n: 0.30,
+      R: 8.314,
+      h2oA: 553.6,
+      h2oB: 0.03049
+    };
+
+    const chamber = {
+      ideal: { x: 110, y: 145, minW: 135, maxW: 280, h: 180 },
+      real:  { x: 540, y: 145, minW: 135, maxW: 280, h: 180 }
+    };
+
+    const idealParticles = [];
+    const realParticles = [];
+
+    function seededRandom(seed){
+      let x = Math.sin(seed) * 10000;
+      return x - Math.floor(x);
+    }
+
+    function makeParticles(count, offset){
+      const particles = [];
+      for(let i=0;i<count;i++){
+        const a = seededRandom(i * 11.71 + offset) * Math.PI * 2;
+        const speed = 0.50 + seededRandom(i * 17.13 + offset) * 0.72;
+        particles.push({
+          nx: 0.09 + seededRandom(i * 3.13 + offset) * 0.82,
+          ny: 0.12 + seededRandom(i * 5.19 + offset) * 0.76,
+          vx: Math.cos(a) * speed,
+          vy: Math.sin(a) * speed,
+          spin: seededRandom(i * 9.41 + offset) * Math.PI * 2,
+          rot: (seededRandom(i * 4.83 + offset) - 0.5) * 0.004
+        });
+      }
+      return particles;
+    }
+
+    idealParticles.push(...makeParticles(28, 2));
+    realParticles.push(...makeParticles(22, 31));
+
+    function fmtComma(value, decimals=1){
+      return value.toFixed(decimals).replace(".", ",");
+    }
+
+    function pressureIdeal(V, T){
+      return gas.n * gas.R * T / V;
+    }
+
+    function pressureH2O(V, T){
+      const freeVolume = Math.max(V - gas.n * gas.h2oB, 0.04);
+      const repulsion = gas.n * gas.R * T / freeVolume;
+      const attraction = gas.h2oA * gas.n * gas.n / (V * V);
+      return Math.max(0, repulsion - attraction);
+    }
+
+    function chamberWidth(V){
+      const t = (V - V_MIN) / (V_MAX - V_MIN);
+      return chamber.ideal.minW + t * (chamber.ideal.maxW - chamber.ideal.minW);
+    }
+
+    function setRect(el, x, y, w, h){
+      el.setAttribute("x", x);
+      el.setAttribute("y", y);
+      el.setAttribute("width", w);
+      el.setAttribute("height", h);
+    }
+
+    function chamberPath(x, y, w, h){
+      return [
+        `M ${x} ${y}`,
+        `C ${x+18} ${y-5}, ${x+w-15} ${y+4}, ${x+w} ${y}`,
+        `L ${x+w} ${y+h}`,
+        `C ${x+w-24} ${y+h+6}, ${x+17} ${y+h-4}, ${x} ${y+h}`,
+        `Z`
+      ].join(" ");
+    }
+
+    function pistonHatchPath(x, y, w, h){
+      let d = "";
+      for(let i=0;i<6;i++){
+        const yy = y + 16 + i * 25;
+        d += `M ${x+5} ${yy} L ${x+w-5} ${yy-12} `;
+      }
+      return d.trim();
+    }
+
+    function drawParticles(group, particles, box, w, type){
+      group.innerHTML = "";
+      for(const p of particles){
+        const cx = box.x + 16 + p.nx * (w - 32);
+        const cy = box.y + 16 + p.ny * (box.h - 32);
+
+        if(type === "real"){
+          drawWaterMolecule(group, cx, cy, p.spin);
+        } else {
+          const c = document.createElementNS(svgNS, "circle");
+          c.setAttribute("class", "particleIdeal");
+          c.setAttribute("cx", cx);
+          c.setAttribute("cy", cy);
+          c.setAttribute("r", 3.6);
+          group.appendChild(c);
+        }
+      }
+    }
+
+    function drawWaterMolecule(group, cx, cy, angle){
+      const halo = document.createElementNS(svgNS, "circle");
+      halo.setAttribute("class", "halo");
+      halo.setAttribute("cx", cx);
+      halo.setAttribute("cy", cy);
+      halo.setAttribute("r", 14);
+      group.appendChild(halo);
+
+      const theta1 = angle - 0.95;
+      const theta2 = angle + 0.95;
+      const hDist = 9.2;
+      const h1 = { x: cx + Math.cos(theta1) * hDist, y: cy + Math.sin(theta1) * hDist };
+      const h2 = { x: cx + Math.cos(theta2) * hDist, y: cy + Math.sin(theta2) * hDist };
+
+      for(const h of [h1, h2]){
+        const line = document.createElementNS(svgNS, "line");
+        line.setAttribute("class", "bond");
+        line.setAttribute("x1", cx);
+        line.setAttribute("y1", cy);
+        line.setAttribute("x2", h.x);
+        line.setAttribute("y2", h.y);
+        group.appendChild(line);
+      }
+
+      const o = document.createElementNS(svgNS, "circle");
+      o.setAttribute("class", "waterO");
+      o.setAttribute("cx", cx);
+      o.setAttribute("cy", cy);
+      o.setAttribute("r", 5.3);
+      group.appendChild(o);
+
+      for(const h of [h1, h2]){
+        const hc = document.createElementNS(svgNS, "circle");
+        hc.setAttribute("class", "waterH");
+        hc.setAttribute("cx", h.x);
+        hc.setAttribute("cy", h.y);
+        hc.setAttribute("r", 3.0);
+        group.appendChild(hc);
+      }
+    }
+
+    function drawRealLinks(w){
+      elements.realLinks.innerHTML = "";
+      const box = chamber.real;
+      const lowT = 1 - (current.T - T_MIN) / (T_MAX - T_MIN);
+      const dense = 1 - (current.V - V_MIN) / (V_MAX - V_MIN);
+      const maxD = 42 + 18 * lowT + 12 * dense;
+      let drawn = 0;
+
+      for(let i=0;i<realParticles.length;i++){
+        const a = realParticles[i];
+        const ax = box.x + 16 + a.nx * (w - 32);
+        const ay = box.y + 16 + a.ny * (box.h - 32);
+        for(let j=i+1;j<realParticles.length;j++){
+          const b = realParticles[j];
+          const bx = box.x + 16 + b.nx * (w - 32);
+          const by = box.y + 16 + b.ny * (box.h - 32);
+          const d = Math.hypot(ax-bx, ay-by);
+          if(d < maxD && drawn < 24){
+            const line = document.createElementNS(svgNS, "line");
+            line.setAttribute("class", "link");
+            line.setAttribute("x1", ax);
+            line.setAttribute("y1", ay);
+            line.setAttribute("x2", bx);
+            line.setAttribute("y2", by);
+            line.style.opacity = String(0.08 + 0.28 * lowT + 0.10 * dense);
+            elements.realLinks.appendChild(line);
+            drawn++;
+          }
+        }
+      }
+    }
+
+    let current = {
+      V: Number(volumeSlider.value),
+      T: Number(tempSlider.value)
+    };
+
+    function updateStatic(){
+      current.V = Number(volumeSlider.value);
+      current.T = Number(tempSlider.value);
+
+      const V = current.V;
+      const T = current.T;
+      const w = chamberWidth(V);
+
+      const pIdeal = pressureIdeal(V, T);
+      const pReal = pressureH2O(V, T);
+
+      volumeValue.textContent = `V = ${fmtComma(V, 1)} l`;
+      tempValue.textContent = `T = ${Math.round(T)} K`;
+      idealPText.textContent = `P = ${Math.round(pIdeal)} kPa`;
+      realPText.textContent = `P = ${Math.round(pReal)} kPa`;
+
+      for(const key of ["ideal", "real"]){
+        const box = chamber[key];
+        const isIdeal = key === "ideal";
+        const chamberEl = isIdeal ? elements.idealChamber : elements.realChamber;
+        const shade = isIdeal ? elements.idealShade : elements.realShade;
+        const piston = isIdeal ? elements.idealPiston : elements.realPiston;
+        const pistonHatch = isIdeal ? elements.idealPistonHatch : elements.realPistonHatch;
+        const clip = isIdeal ? elements.clipIdealRect : elements.clipRealRect;
+
+        chamberEl.setAttribute("d", chamberPath(box.x, box.y, w, box.h));
+        setRect(shade, box.x + 2, box.y + 2, Math.max(w - 3, 1), box.h - 4);
+        shade.setAttribute("opacity", isIdeal ? "0.05" : "0.08");
+        setRect(piston, box.x + w - 7, box.y - 8, 16, box.h + 16);
+        pistonHatch.setAttribute("d", pistonHatchPath(box.x + w - 7, box.y - 8, 16, box.h + 16));
+        setRect(clip, box.x + 2, box.y + 2, Math.max(w - 5, 1), box.h - 4);
+      }
+    }
+
+    function stepParticles(particles, box, dt, real=false){
+      const tempSpeed = Math.sqrt(current.T / 650);
+      const denseSlow = real ? (0.78 + 0.30 * (current.V - V_MIN) / (V_MAX - V_MIN)) : 1;
+      const rate = 0.000094 * tempSpeed * denseSlow;
+      const w = chamberWidth(current.V);
+      const xMargin = (real ? 13 : 4) / Math.max(w, 1);
+      const yMargin = (real ? 13 : 4) / box.h;
+
+      for(const p of particles){
+        p.nx += p.vx * rate * dt;
+        p.ny += p.vy * rate * dt;
+        if(real) p.spin += p.rot * dt * tempSpeed;
+
+        if(p.nx < xMargin){
+          p.nx = xMargin;
+          p.vx = Math.abs(p.vx);
+        }
+        if(p.nx > 1 - xMargin){
+          p.nx = 1 - xMargin;
+          p.vx = -Math.abs(p.vx);
+        }
+        if(p.ny < yMargin){
+          p.ny = yMargin;
+          p.vy = Math.abs(p.vy);
+        }
+        if(p.ny > 1 - yMargin){
+          p.ny = 1 - yMargin;
+          p.vy = -Math.abs(p.vy);
+        }
+      }
+    }
+
+    let last = performance.now();
+
+    function animate(now){
+      const dt = Math.min(32, now - last);
+      last = now;
+
+      const w = chamberWidth(current.V);
+      stepParticles(idealParticles, chamber.ideal, dt, false);
+      stepParticles(realParticles, chamber.real, dt, true);
+      drawParticles(elements.idealParticles, idealParticles, chamber.ideal, w, "ideal");
+      drawRealLinks(w);
+      drawParticles(elements.realParticles, realParticles, chamber.real, w, "real");
+
+      requestAnimationFrame(animate);
+    }
+
+    volumeSlider.addEventListener("input", updateStatic);
+    tempSlider.addEventListener("input", updateStatic);
+
+    resetButton.addEventListener("click", () => {
+      volumeSlider.value = "3.00";
+      tempSlider.value = "650";
+      updateStatic();
+    });
+
+    updateStatic();
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
