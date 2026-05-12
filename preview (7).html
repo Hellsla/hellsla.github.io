@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lämpövoimakone</title>
+<style>
+:root{
+  --ink:#2B2A27;
+  --soft:#6F6C66;
+  --hot:#F28C28;
+  --hot-fill:#FFE4B8;
+  --cold:#2E86A6;
+  --cold-fill:#DCEFF4;
+  --work:#4A8B5C;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  background:#fff;
+  color:var(--ink);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+body{overflow:hidden}
+.sim{
+  width:100%;
+  height:100svh;
+  min-height:380px;
+  display:flex;
+  flex-direction:column;
+  background:#fff;
+}
+.stage{flex:1;min-height:0}
+svg{display:block;width:100%;height:100%}
+text{
+  fill:var(--ink);
+  font-size:24px;
+  font-weight:620;
+}
+.small{
+  font-size:28px;
+  font-weight:700;
+  fill:var(--ink);
+}
+.read{
+  font-size:30px;
+  font-weight:700;
+}
+.controls{
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  padding:10px 18px 20px;
+  background:#fff;
+  flex-wrap:wrap;
+}
+label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:18px;
+  color:var(--ink);
+  white-space:nowrap;
+}
+input[type="range"]{
+  width:128px;
+  accent-color:var(--ink);
+}
+button{
+  font:inherit;
+  font-size:18px;
+  color:var(--ink);
+  background:#fff;
+  border:1.8px solid var(--ink);
+  border-radius:999px;
+  padding:8px 18px;
+  cursor:pointer;
+}
+button:hover{background:#f6f6f6}
+@media(max-width:720px){
+  .controls{gap:12px 16px; min-height:120px}
+  input[type="range"]{width:104px}
+}
+</style>
+</head>
+<body>
+<div class="sim">
+  <div class="stage">
+    <svg viewBox="0 0 960 520" aria-label="Lämpövoimakoneen simulaatio">
+      <defs>
+        <pattern id="hotHatch" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+          <line x1="0" y1="0" x2="0" y2="11" stroke="#D97706" stroke-width="1" opacity="0.24"/>
+        </pattern>
+        <pattern id="coldHatch" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+          <line x1="0" y1="0" x2="0" y2="11" stroke="#1F6F8B" stroke-width="1" opacity="0.24"/>
+        </pattern>
+        <pattern id="greyHatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+          <line x1="0" y1="0" x2="0" y2="9" stroke="#2B2A27" stroke-width="0.9" opacity="0.12"/>
+        </pattern>
+      </defs>
+
+      <g>
+        <rect x="115" y="34" width="730" height="54" rx="8" fill="var(--hot-fill)" stroke="var(--ink)" stroke-width="2.2"/>
+        <rect x="123" y="42" width="714" height="38" rx="6" fill="url(#hotHatch)"/>
+        <path d="M123 43 C245 36, 360 48, 480 42 C600 36, 718 47, 837 42" fill="none" stroke="var(--ink)" stroke-width="1.1" opacity="0.28"/>
+        <text id="thText" x="480" y="68" text-anchor="middle">Tₕ = 800 K</text>
+      </g>
+
+      <g>
+        <rect x="115" y="426" width="730" height="54" rx="8" fill="var(--cold-fill)" stroke="var(--ink)" stroke-width="2.2"/>
+        <rect x="123" y="434" width="714" height="38" rx="6" fill="url(#coldHatch)"/>
+        <path d="M123 435 C245 428, 360 440, 480 434 C600 428, 718 439, 837 434" fill="none" stroke="var(--ink)" stroke-width="1.1" opacity="0.28"/>
+        <text id="tcText" x="480" y="460" text-anchor="middle">T𝚌 = 300 K</text>
+      </g>
+
+      <g>
+        <line id="qhLine" x1="430" y1="100" x2="430" y2="166" stroke="var(--hot)" stroke-linecap="round" opacity="0.88"/>
+        <polygon id="qhHead" fill="var(--hot)" opacity="0.88"/>
+        <text id="qhText" class="small" x="470" y="140">Qₕ = 1000 J</text>
+      </g>
+
+      <g>
+        <path d="M315 178
+                 C340 162, 430 160, 505 174
+                 C540 182, 558 210, 552 260
+                 C548 310, 518 338, 466 344
+                 C405 350, 340 342, 310 320
+                 C284 300, 286 210, 315 178 Z"
+              fill="#fff" stroke="var(--ink)" stroke-width="2.2"/>
+        <path d="M315 178
+                 C340 162, 430 160, 505 174
+                 C540 182, 558 210, 552 260
+                 C548 310, 518 338, 466 344
+                 C405 350, 340 342, 310 320
+                 C284 300, 286 210, 315 178 Z"
+              fill="url(#greyHatch)" opacity="0.78"/>
+
+        <rect x="344" y="218" width="154" height="72" rx="8" fill="#fff" stroke="var(--ink)" stroke-width="2.2"/>
+        <line x1="344" y1="236" x2="498" y2="236" stroke="var(--ink)" stroke-width="1" opacity="0.25"/>
+        <line x1="344" y1="272" x2="498" y2="272" stroke="var(--ink)" stroke-width="1" opacity="0.25"/>
+        <rect id="piston" x="386" y="221" width="18" height="66" rx="3" fill="var(--ink)"/>
+      </g>
+
+      <g>
+        <circle cx="642" cy="254" r="55" fill="#fff" stroke="var(--ink)" stroke-width="2.2"/>
+        <circle cx="642" cy="254" r="45" fill="none" stroke="var(--ink)" stroke-width="1.2" opacity="0.42"/>
+        <g id="wheel" transform="rotate(0 642 254)">
+          <line x1="600" y1="254" x2="684" y2="254" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="642" y1="212" x2="642" y2="296" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="612" y1="224" x2="672" y2="284" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="612" y1="284" x2="672" y2="224" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="642" cy="254" r="7" fill="var(--ink)"/>
+          <circle id="pin" cx="668" cy="254" r="5" fill="var(--work)"/>
+        </g>
+      </g>
+
+      <line id="rod" x1="404" y1="254" x2="668" y2="254" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <circle id="rodJoint" cx="404" cy="254" r="5" fill="#fff" stroke="var(--ink)" stroke-width="2"/>
+
+      <g>
+        <line id="qcLine" x1="430" y1="346" x2="430" y2="416" stroke="var(--cold)" stroke-linecap="round" opacity="0.88"/>
+        <polygon id="qcHead" fill="var(--cold)" opacity="0.88"/>
+        <text id="qcText" class="small" x="470" y="394">Q𝚌 = 375 J</text>
+      </g>
+
+      <g>
+        <line id="wLine" x1="704" y1="254" x2="818" y2="254" stroke="var(--work)" stroke-linecap="round" opacity="0.88"/>
+        <polygon id="wHead" fill="var(--work)" opacity="0.88"/>
+        <text id="wText" class="small" x="760" y="214" text-anchor="middle">W = 625 J</text>
+        <text id="effText" class="read" x="786" y="302" text-anchor="middle">η = 62,5 %</text>
+      </g>
+
+      <g id="particlesHot"></g>
+      <g id="particlesCold"></g>
+      <g id="particlesWork"></g>
+    </svg>
+  </div>
+
+  <div class="controls">
+    <label>Tₕ <input id="th" type="range" min="350" max="1200" step="10" value="800"></label>
+    <label>T𝚌 <input id="tc" type="range" min="200" max="500" step="10" value="300"></label>
+    <label>η <input id="quality" type="range" min="0" max="100" step="1" value="100"></label>
+    <label>Qₕ <input id="qh" type="range" min="200" max="2000" step="50" value="1000"></label>
+    <button id="play">Tauko</button>
+    <button id="reset">Nollaa</button>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+
+const defaults = {
+  th: 800,
+  tc: 300,
+  quality: 1,
+  qh: 1000,
+  playing: true,
+  angle: 0
+};
+
+const state = {...defaults};
+
+function createParticles(groupId, count, color){
+  const group = $(groupId);
+  const arr = [];
+  for(let i = 0; i < count; i++){
+    const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    c.setAttribute("r", "3.1");
+    c.setAttribute("fill", color);
+    c.setAttribute("opacity", "0.68");
+    group.appendChild(c);
+    arr.push({el:c, phase:i / count});
+  }
+  return arr;
+}
+
+const hotParticles = createParticles("particlesHot", 6, "#F28C28");
+const coldParticles = createParticles("particlesCold", 6, "#2E86A6");
+const workParticles = createParticles("particlesWork", 6, "#4A8B5C");
+
+function compute(){
+  const carnot = state.th > state.tc ? Math.max(0, 1 - state.tc / state.th) : 0;
+  const eff = carnot * state.quality;
+  return {
+    eff,
+    w: state.qh * eff,
+    qc: state.qh * (1 - eff)
+  };
+}
+
+function fmt(x){
+  return Math.round(x).toString();
+}
+
+function pct(x){
+  return (x * 100).toFixed(1).replace(".", ",") + " %";
+}
+
+function setDownArrow(lineId, headId, x, y1, y2, width){
+  $(lineId).setAttribute("stroke-width", width);
+  $(lineId).setAttribute("x1", x);
+  $(lineId).setAttribute("x2", x);
+  $(lineId).setAttribute("y1", y1);
+  $(lineId).setAttribute("y2", y2);
+
+  const half = width * 0.9 + 7;
+  const h = width * 0.9 + 10;
+  $(headId).setAttribute("points", `${x - half},${y2} ${x + half},${y2} ${x},${y2 + h}`);
+}
+
+function setRightArrow(lineId, headId, x1, x2, y, width){
+  $(lineId).setAttribute("stroke-width", width);
+  $(lineId).setAttribute("x1", x1);
+  $(lineId).setAttribute("x2", x2);
+  $(lineId).setAttribute("y1", y);
+  $(lineId).setAttribute("y2", y);
+
+  const half = width * 0.9 + 7;
+  const h = width * 0.9 + 11;
+  $(headId).setAttribute("points", `${x2},${y - half} ${x2},${y + half} ${x2 + h},${y}`);
+}
+
+function updateReadout(){
+  const c = compute();
+
+  $("thText").textContent = `Tₕ = ${state.th} K`;
+  $("tcText").textContent = `T𝚌 = ${state.tc} K`;
+  $("qhText").textContent = `Qₕ = ${fmt(state.qh)} J`;
+  $("qcText").textContent = `Q𝚌 = ${fmt(c.qc)} J`;
+  $("wText").textContent = `W = ${fmt(c.w)} J`;
+  $("effText").textContent = `η = ${pct(c.eff)}`;
+
+  const qhWidth = 8 + (state.qh - 200) / 1800 * 22;
+  const wWidth = Math.max(0.1, qhWidth * c.eff);
+  const qcWidth = Math.max(0.1, qhWidth * (1 - c.eff));
+
+  setDownArrow("qhLine", "qhHead", 430, 100, 166, qhWidth);
+  setDownArrow("qcLine", "qcHead", 430, 346, 416, qcWidth);
+  setRightArrow("wLine", "wHead", 704, 818, 254, wWidth);
+
+  const showWork = c.w > 1;
+  $("wLine").setAttribute("opacity", showWork ? "0.88" : "0");
+  $("wHead").setAttribute("opacity", showWork ? "0.88" : "0");
+  $("wText").setAttribute("opacity", showWork ? "1" : "0.35");
+}
+
+function updateMechanism(){
+  const crankR = 26;
+  const wheelCx = 642;
+  const wheelCy = 254;
+
+  const pinX = wheelCx + Math.cos(state.angle) * crankR;
+  const pinY = wheelCy + Math.sin(state.angle) * crankR;
+
+  const pistonX = 386 + Math.cos(state.angle) * 18;
+  const pistonMidX = pistonX + 18;
+  const pistonMidY = 254;
+
+  $("piston").setAttribute("x", pistonX);
+  $("rod").setAttribute("x1", pistonMidX);
+  $("rod").setAttribute("y1", pistonMidY);
+  $("rod").setAttribute("x2", pinX);
+  $("rod").setAttribute("y2", pinY);
+  $("rodJoint").setAttribute("cx", pistonMidX);
+  $("rodJoint").setAttribute("cy", pistonMidY);
+
+  $("wheel").setAttribute("transform", `rotate(${state.angle * 180 / Math.PI} ${wheelCx} ${wheelCy})`);
+}
+
+let last = performance.now();
+
+function animate(now){
+  const dt = Math.min(0.05, (now - last) / 1000);
+  last = now;
+
+  const c = compute();
+
+  if(state.playing){
+    const speed = c.eff > 0 ? 0.45 + c.eff * 5.3 : 0;
+    state.angle += speed * dt;
+    updateMechanism();
+
+    const flow = 0.28 + c.eff * 0.75;
+
+    hotParticles.forEach(p => {
+      p.phase = (p.phase + dt * flow) % 1;
+      p.el.setAttribute("cx", 430);
+      p.el.setAttribute("cy", 104 + p.phase * 72);
+    });
+
+    coldParticles.forEach(p => {
+      p.phase = (p.phase + dt * flow) % 1;
+      p.el.setAttribute("cx", 430);
+      p.el.setAttribute("cy", 348 + p.phase * 80);
+      p.el.setAttribute("opacity", c.qc > 1 ? "0.62" : "0");
+    });
+
+    workParticles.forEach(p => {
+      p.phase = (p.phase + dt * flow) % 1;
+      p.el.setAttribute("cx", 704 + p.phase * 124);
+      p.el.setAttribute("cy", 254);
+      p.el.setAttribute("opacity", c.w > 1 ? "0.62" : "0");
+    });
+  }
+
+  requestAnimationFrame(animate);
+}
+
+$("th").addEventListener("input", e => {
+  state.th = Number(e.target.value);
+  updateReadout();
+});
+
+$("tc").addEventListener("input", e => {
+  state.tc = Number(e.target.value);
+  updateReadout();
+});
+
+$("quality").addEventListener("input", e => {
+  state.quality = Number(e.target.value) / 100;
+  updateReadout();
+});
+
+$("qh").addEventListener("input", e => {
+  state.qh = Number(e.target.value);
+  updateReadout();
+});
+
+$("play").addEventListener("click", () => {
+  state.playing = !state.playing;
+  $("play").textContent = state.playing ? "Tauko" : "Jatka";
+});
+
+$("reset").addEventListener("click", () => {
+  Object.assign(state, defaults);
+  $("th").value = state.th;
+  $("tc").value = state.tc;
+  $("quality").value = state.quality * 100;
+  $("qh").value = state.qh;
+  $("play").textContent = "Tauko";
+  updateReadout();
+  updateMechanism();
+});
+
+updateReadout();
+updateMechanism();
+requestAnimationFrame(animate);
+</script>
+</body>
+</html>
