@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #2d2d2a;
+    --soft-ink: #5b5a55;
+    --line: #3f3d39;
+    --blue: #2e86a6;
+    --blue-soft: #cfeaf3;
+    --red: #d84a62;
+    --red-soft: #f5c4cb;
+    --orange: #f28c28;
+    --orange-soft: #ffdca3;
+    --purple: #7a62b7;
+    --green: #4a8b5c;
+    --pencil: #d9d9d9;
+  }
+
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  svg {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    background: var(--bg);
+  }
+
+  button {
+    position: fixed;
+    left: 18px;
+    bottom: 16px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1.7px solid var(--ink);
+    border-radius: 999px;
+    background: #ffffff;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
+
+  button svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  button:active {
+    transform: translateY(1px);
+  }
+
+  .label {
+    fill: var(--ink);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+  }
+
+  .small {
+    fill: var(--soft-ink);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .outline {
+    fill: #ffffff;
+    stroke: var(--line);
+    stroke-width: 2.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .thin {
+    fill: none;
+    stroke: var(--line);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .hatch line,
+  .hatch path {
+    stroke: var(--pencil);
+    stroke-width: 1.2;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .coil {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 8.5;
+    opacity: 0.86;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .coil-sketch {
+    fill: none;
+    stroke: var(--line);
+    stroke-width: 1.4;
+    opacity: 0.42;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .arrow {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.2;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .red-arrow {
+    stroke-width: 2.2;
+  }
+
+  .particle {
+    opacity: 1;
+    stroke: var(--line);
+    stroke-width: 1.15;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #compressor {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: compressorPulse 0.34s ease-in-out infinite alternate;
+  }
+
+  #compressorRotor {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rotorTurn 1.05s linear infinite;
+  }
+
+  .vibe {
+    fill: none;
+    stroke: var(--line);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    opacity: 0.58;
+    vector-effect: non-scaling-stroke;
+    animation: vibeBlink 0.48s ease-in-out infinite alternate;
+  }
+
+  .food-fill-red { fill: #f5c4cb; }
+  .food-fill-green { fill: #dcefdc; }
+  .food-fill-yellow { fill: #fff3b0; }
+  .food-fill-blue { fill: #e7f4f5; }
+
+  @keyframes compressorPulse {
+    from { transform: translate(-1px, 0.4px) rotate(-0.45deg); }
+    to   { transform: translate(1.2px, -0.4px) rotate(0.45deg); }
+  }
+
+  @keyframes rotorTurn {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  @keyframes vibeBlink {
+    from { opacity: 0.22; transform: translateX(-1px); }
+    to   { opacity: 0.72; transform: translateX(1px); }
+  }
+</style>
+</head>
+<body>
+<button id="reset" type="button">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M7.4 8.2 C9.1 6.1 12.1 5.4 14.7 6.5 C17.9 7.9 19.3 11.6 17.8 14.7 C16.4 17.8 12.7 19.2 9.6 17.8 C7.8 17 6.6 15.5 6.1 13.8" />
+    <path d="M7.4 8.2 L7.1 4.7" />
+    <path d="M7.4 8.2 L10.9 8.2" />
+  </svg>
+</button>
+
+<svg id="sim" viewBox="0 0 960 540" preserveAspectRatio="xMidYMid meet" role="img">
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2e86a6"></path>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#d84a62"></path>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#f28c28"></path>
+    </marker>
+  </defs>
+
+  <!-- jääkaapin kevyt luonnos -->
+  <g id="fridge">
+    <path class="outline" d="M512 58
+      C512 47 520 42 530 42
+      L892 42
+      C903 42 910 50 910 61
+      L910 462
+      C910 474 902 481 890 481
+      L530 481
+      C519 481 512 473 512 462
+      Z" />
+
+    <path class="thin" d="M526 86 C612 92 740 89 892 84" opacity="0.55" />
+    <path class="thin" d="M526 454 C628 448 752 450 892 456" opacity="0.4" />
+
+    <g class="hatch" opacity="0.45">
+      <line x1="543" y1="71" x2="890" y2="418" />
+      <line x1="587" y1="61" x2="900" y2="374" />
+      <line x1="631" y1="53" x2="902" y2="324" />
+      <line x1="679" y1="50" x2="904" y2="275" />
+      <line x1="727" y1="50" x2="903" y2="226" />
+    </g>
+  </g>
+
+  <!-- kylmäaineputket -->
+  <path id="coldPipe" class="coil" stroke="var(--blue-soft)"
+        d="M246 189 H872
+           V116
+           H570
+           V153
+           H872
+           V258
+           H485" />
+  <path class="coil-sketch"
+        d="M246 186 C390 190 580 184 872 190
+           M870 190 C876 160 874 138 872 116
+           M872 116 C784 112 671 119 570 116
+           M570 116 C566 131 572 142 570 153
+           M570 153 C668 149 778 156 872 153
+           M872 153 C878 192 866 223 872 258
+           M872 258 C752 263 626 254 485 258" />
+
+  <path id="hotPipe" class="coil" stroke="var(--red-soft)"
+        d="M246 260 V402" />
+  <path class="coil-sketch"
+        d="M243 260 C250 301 239 356 246 402" />
+
+  <path id="warmPipe" class="coil" stroke="var(--orange-soft)"
+        d="M246 402
+           H448
+           V438
+           H248
+           V420
+           H448
+           V258" />
+  <path class="coil-sketch"
+        d="M246 402 C298 398 375 407 448 402
+           M448 402 C452 414 444 425 448 438
+           M448 438 C386 442 314 433 248 438
+           M248 438 C244 431 252 426 248 420
+           M248 420 C314 416 384 423 448 420
+           M448 420 C453 365 443 307 448 258" />
+
+  <!-- höyrystin -->
+  <path class="outline" d="M568 111 H872 V154 H568 Z" opacity="0.96" />
+  <path class="thin" d="M586 125 H854 M586 140 H854" opacity="0.32" />
+
+  <!-- lauhdutin -->
+  <path class="thin" d="M265 402 H428 M265 420 H428 M265 438 H428" opacity="0.55" />
+
+  <!-- kompressori -->
+  <g id="compressor">
+    <path class="outline" d="M134 194
+      C134 183 143 177 154 178
+      L251 178
+      C262 178 270 186 270 197
+      L270 257
+      C270 268 261 275 250 275
+      L153 275
+      C142 275 134 268 134 257
+      Z" />
+    <path class="outline" d="M159 158 H236 V179 H159 Z" />
+    <g class="hatch" opacity="0.55">
+      <line x1="150" y1="199" x2="244" y2="267" />
+      <line x1="176" y1="186" x2="267" y2="252" />
+      <line x1="138" y1="233" x2="194" y2="274" />
+    </g>
+    <circle cx="202" cy="226" r="18" fill="#ffffff" stroke="var(--line)" stroke-width="2" />
+    <g id="compressorRotor">
+      <path class="thin" d="M202 210 V242 M186 226 H218" />
+      <circle cx="202" cy="226" r="3" fill="var(--line)" />
+    </g>
+  </g>
+  <path class="vibe" d="M119 205 C112 212 112 219 119 226" />
+  <path class="vibe" d="M285 205 C292 212 292 219 285 226" style="animation-delay:0.18s" />
+
+  <!-- työ sisään -->
+  <path d="M64 226 C89 221 105 224 130 226" class="arrow" stroke="var(--orange)" marker-end="url(#arrowOrange)" />
+
+  <!-- paisuntaventtiili -->
+  <g id="valve">
+    <path class="outline" d="M448 245 H490 V271 H448 Z" />
+    <path d="M454 251 L468 258 L454 265 Z" fill="none" stroke="var(--purple)" stroke-width="2.1" stroke-linejoin="round" />
+    <path d="M484 251 L470 258 L484 265 Z" fill="none" stroke="var(--purple)" stroke-width="2.1" stroke-linejoin="round" />
+  </g>
+
+  <!-- lämpönuolet -->
+  <g id="heatIn">
+    <path d="M664 276 C668 238 637 198 619 156" class="arrow" stroke="var(--blue)" marker-end="url(#arrowBlue)" />
+    <path d="M744 278 C746 238 723 196 721 157" class="arrow" stroke="var(--blue)" marker-end="url(#arrowBlue)" />
+    <path d="M824 276 C818 236 832 197 835 156" class="arrow" stroke="var(--blue)" marker-end="url(#arrowBlue)" />
+  </g>
+
+  <g id="heatOut">
+    <path d="M300 452 C300 472 300 492 300 512" class="arrow red-arrow" stroke="var(--red)" marker-end="url(#arrowRed)" />
+    <path d="M356 452 C356 472 356 492 356 512" class="arrow red-arrow" stroke="var(--red)" marker-end="url(#arrowRed)" />
+    <path d="M412 452 C412 472 412 492 412 512" class="arrow red-arrow" stroke="var(--red)" marker-end="url(#arrowRed)" />
+  </g>
+
+  <!-- ruokaa jääkaapissa, ilman tekstiselitteitä -->
+  <g id="food" opacity="0.96">
+    <path class="thin" d="M558 342 C639 338 755 340 880 343" opacity="0.35" />
+    <path class="thin" d="M558 442 C647 438 760 440 884 443" opacity="0.32" />
+
+    <!-- maitotölkki -->
+    <path d="M604 372 H646 L638 354 H612 Z" class="outline food-fill-blue" />
+    <path class="thin" d="M613 386 H638 M615 401 H636" opacity="0.45" />
+
+    <!-- pullo -->
+    <path d="M692 381
+      C692 372 698 366 707 366
+      L707 350
+      H724
+      L724 366
+      C733 366 739 372 739 381
+      L739 427
+      C739 438 730 446 716 446
+      C701 446 692 438 692 427 Z" class="outline food-fill-green" />
+    <path class="thin" d="M704 391 H727" opacity="0.45" />
+
+    <!-- juusto -->
+    <path d="M786 420 L849 401 L849 443 H786 Z" class="outline food-fill-yellow" />
+    <circle cx="820" cy="423" r="4" fill="#ffffff" stroke="var(--line)" stroke-width="1.2" />
+    <circle cx="837" cy="435" r="3" fill="#ffffff" stroke="var(--line)" stroke-width="1.2" />
+
+    <!-- kulho ja hedelmiä -->
+    <path d="M594 333 C612 350 656 350 674 333" fill="#ffffff" stroke="var(--line)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="619" cy="321" r="11" class="food-fill-red" stroke="var(--line)" stroke-width="1.7" />
+    <circle cx="641" cy="319" r="10" class="food-fill-yellow" stroke="var(--line)" stroke-width="1.7" />
+    <path d="M641 308 C645 301 651 299 656 303" class="thin" />
+
+    <!-- pieni rasia -->
+    <path d="M786 311 H840 V341 H786 Z" class="outline" />
+    <path class="thin" d="M793 320 C806 317 821 317 833 320" opacity="0.5" />
+  </g>
+
+  <g id="particles"></g>
+</svg>
+
+<script>
+(() => {
+  const svgNS = "http://www.w3.org/2000/svg";
+  const particlesLayer = document.getElementById("particles");
+  const resetButton = document.getElementById("reset");
+
+  let phase = 0;
+  let last = performance.now();
+
+  resetButton.addEventListener("click", () => {
+    phase = 0;
+  });
+
+  const route = [
+    { x: 246, y: 260, c: "#f5a6b3" },
+    { x: 246, y: 402, c: "#f5a6b3" },
+    { x: 448, y: 402, c: "#ffdca3" },
+    { x: 448, y: 438, c: "#ffdca3" },
+    { x: 248, y: 438, c: "#ffdca3" },
+    { x: 248, y: 420, c: "#ffdca3" },
+    { x: 448, y: 420, c: "#ffdca3" },
+    { x: 448, y: 258, c: "#ffdca3" },
+    { x: 485, y: 258, c: "#70bfe0" },
+    { x: 872, y: 258, c: "#70bfe0" },
+    { x: 872, y: 153, c: "#70bfe0" },
+    { x: 570, y: 153, c: "#70bfe0" },
+    { x: 570, y: 116, c: "#70bfe0" },
+    { x: 872, y: 116, c: "#70bfe0" },
+    { x: 872, y: 189, c: "#70bfe0" },
+    { x: 246, y: 189, c: "#70bfe0" },
+    { x: 246, y: 246, c: "#70bfe0" },
+    { x: 246, y: 260, c: "#f5a6b3" }
+  ];
+
+  const segments = [];
+  let totalLength = 0;
+
+  for (let i = 0; i < route.length - 1; i++) {
+    const a = route[i];
+    const b = route[i + 1];
+    const length = Math.hypot(b.x - a.x, b.y - a.y);
+    segments.push({ a, b, length, start: totalLength });
+    totalLength += length;
+  }
+
+  function pointAt(distance) {
+    const d = ((distance % totalLength) + totalLength) % totalLength;
+    const segment = segments.find(s => d >= s.start && d <= s.start + s.length) || segments[0];
+    const u = (d - segment.start) / segment.length;
+
+    return {
+      x: segment.a.x + (segment.b.x - segment.a.x) * u,
+      y: segment.a.y + (segment.b.y - segment.a.y) * u,
+      c: u > 0.82 ? segment.b.c : segment.a.c
+    };
+  }
+
+  const particles = [];
+  const count = 42;
+
+  for (let i = 0; i < count; i++) {
+    const dot = document.createElementNS(svgNS, "circle");
+    dot.setAttribute("r", i % 5 === 0 ? 5.6 : 4.2);
+    dot.setAttribute("class", "particle");
+    particlesLayer.appendChild(dot);
+
+    particles.push({
+      node: dot,
+      offset: (i / count) * totalLength,
+      wobble: Math.random() * Math.PI * 2
+    });
+  }
+
+  function animate(now) {
+    const dt = Math.min(0.04, (now - last) / 1000);
+    last = now;
+    phase += dt * 78;
+
+    particles.forEach(p => {
+      const pos = pointAt(phase + p.offset);
+      const wobble = Math.sin(now * 0.003 + p.wobble) * 0.55;
+
+      p.node.setAttribute("cx", pos.x + wobble);
+      p.node.setAttribute("cy", pos.y - wobble);
+      p.node.setAttribute("fill", pos.c);
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(animate);
+})();
+</script>
+</body>
+</html>
