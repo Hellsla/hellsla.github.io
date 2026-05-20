@@ -798,7 +798,6 @@
   pointer-events: none;
   opacity: 0.2;
   overflow: visible;
-  animation: robot-walk 32s linear infinite;
 }
 .robot-walker * {
   stroke: var(--accent);
@@ -813,7 +812,6 @@
 .robot-arm-r { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-arm-r 0.6s ease-in-out infinite; }
 .robot-leg-l { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-leg-l 0.6s ease-in-out infinite; }
 .robot-leg-r { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-leg-r 0.6s ease-in-out infinite; }
-@keyframes robot-walk { from { transform: translateX(-100px); } to { transform: translateX(calc(100vw + 100px)); } }
 @keyframes robot-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 @keyframes robot-leg-l { 0%, 100% { transform: rotate(20deg); } 50% { transform: rotate(-20deg); } }
 @keyframes robot-leg-r { 0%, 100% { transform: rotate(-20deg); } 50% { transform: rotate(20deg); } }
@@ -1450,5 +1448,26 @@
     <g class="robot-leg-r"><rect x="45" y="92" width="21" height="29" rx="4"/><rect x="45" y="116" width="25" height="9" rx="3"/></g>
   </g>
 </svg>
+  <script>
+(function () {
+  var robot = document.querySelector('.robot-walker');
+  if (!robot || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function walk() {
+    var vw = window.innerWidth;
+    var vh = window.innerHeight;
+    var bottom   = Math.random() * vh * 0.38 + 16;
+    var duration = (Math.random() * 22 + 16) * 1000;
+    var size     = Math.floor(Math.random() * 28 + 58);
+    robot.style.bottom = bottom + 'px';
+    robot.style.width  = size + 'px';
+    robot.animate(
+      [{ transform: 'translateX(-120px)' },
+       { transform: 'translateX(' + (vw + 120) + 'px)' }],
+      { duration: duration, easing: 'linear', fill: 'forwards' }
+    ).onfinish = walk;
+  }
+  walk();
+}());
+</script>
 </body>
 </html>
