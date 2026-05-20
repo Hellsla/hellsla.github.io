@@ -788,6 +788,38 @@
         transition: none !important;
       }
     }
+    /* ---------- Robot walker ---------- */
+.robot-walker {
+  position: fixed;
+  bottom: 24px;
+  left: 0;
+  width: 76px;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.08;
+  overflow: visible;
+  animation: robot-walk 32s linear infinite;
+}
+.robot-walker * {
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.robot-walker .robot-fill { fill: var(--accent); stroke: none; }
+.robot-bob { animation: robot-bob 0.6s ease-in-out infinite; }
+.robot-arm-l { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-arm-l 0.6s ease-in-out infinite; }
+.robot-arm-r { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-arm-r 0.6s ease-in-out infinite; }
+.robot-leg-l { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-leg-l 0.6s ease-in-out infinite; }
+.robot-leg-r { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-leg-r 0.6s ease-in-out infinite; }
+@keyframes robot-walk { from { transform: translateX(-100px); } to { transform: translateX(calc(100vw + 100px)); } }
+@keyframes robot-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes robot-leg-l { 0%, 100% { transform: rotate(20deg); } 50% { transform: rotate(-20deg); } }
+@keyframes robot-leg-r { 0%, 100% { transform: rotate(-20deg); } 50% { transform: rotate(20deg); } }
+@keyframes robot-arm-l { 0%, 100% { transform: rotate(-25deg); } 50% { transform: rotate(25deg); } }
+@keyframes robot-arm-r { 0%, 100% { transform: rotate(25deg); } 50% { transform: rotate(-25deg); } }
+@media (prefers-reduced-motion: reduce) { .robot-walker { display: none; } }
   </style>
 
   
@@ -1399,5 +1431,24 @@
       <div class="footer-meta">Last updated · Spring 2026</div>
     </footer>
   </div>
+  <svg class="robot-walker" viewBox="-10 -17 100 146" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g class="robot-bob">
+    <line x1="40" y1="5" x2="40" y2="-10"/><circle cx="40" cy="-13" r="3"/>
+    <rect x="16" y="5" width="48" height="37" rx="7"/>
+    <circle cx="29" cy="22" r="6.5"/><circle cx="51" cy="22" r="6.5"/>
+    <circle cx="29" cy="22" r="2.5" class="robot-fill"/><circle cx="51" cy="22" r="2.5" class="robot-fill"/>
+    <path d="M28 34 Q40 41 52 34"/>
+    <rect x="11" y="45" width="58" height="46" rx="5"/>
+    <circle cx="40" cy="68" r="9"/><circle cx="40" cy="68" r="3.5" class="robot-fill"/>
+    <line x1="40" y1="59" x2="40" y2="54"/><line x1="40" y1="77" x2="40" y2="82"/>
+    <line x1="31" y1="68" x2="26" y2="68"/><line x1="49" y1="68" x2="54" y2="68"/>
+    <line x1="34" y1="62" x2="31" y2="59"/><line x1="46" y1="62" x2="49" y2="59"/>
+    <line x1="34" y1="74" x2="31" y2="77"/><line x1="46" y1="74" x2="49" y2="77"/>
+    <g class="robot-arm-l"><rect x="-7" y="47" width="16" height="32" rx="5"/></g>
+    <g class="robot-arm-r"><rect x="71" y="47" width="16" height="32" rx="5"/></g>
+    <g class="robot-leg-l"><rect x="14" y="92" width="21" height="29" rx="4"/><rect x="10" y="116" width="25" height="9" rx="3"/></g>
+    <g class="robot-leg-r"><rect x="45" y="92" width="21" height="29" rx="4"/><rect x="45" y="116" width="25" height="9" rx="3"/></g>
+  </g>
+</svg>
 </body>
 </html>
