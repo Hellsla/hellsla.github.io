@@ -1,582 +1,1957 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miekkainsultti — Suomalainen Miekkataistelu</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suomalainen sananlaskumiekkailu</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --map-sand: #d6a35d;
+      --map-sand-dark: #9b6537;
+      --map-water: #10245d;
+      --map-road: #5a3a24;
+      --map-green: #2c6137;
+      --sky-1: #0b0d39;
+      --sky-2: #121b72;
+      --sky-3: #050617;
+      --ink: #03030a;
+      --ui-black: rgba(0, 0, 0, 0.86);
+      --choice: #d7a4ff;
+      --choice-hover: #ffffff;
+      --speech: #ffffff;
+      --dim: #aeb2d9;
+      --gold: #ffdc7a;
+      --danger: #ff7f9f;
+      --good: #93f0b5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #000;
+      color: var(--speech);
+      font-family: "Courier New", Courier, monospace;
+      overflow-x: hidden;
+    }
 
     body {
-      background: #0a0a1a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      font-family: 'Press Start 2P', monospace;
+      display: grid;
+      place-items: center;
+      padding: 12px;
     }
 
-    #game {
-      width: min(800px, 100vw);
-      height: min(600px, 75vw);
+    .game-shell {
+      width: min(1120px, 100%);
+      aspect-ratio: 16 / 10;
+      min-height: 560px;
       position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* ── Scene ── */
-    #scene {
-      flex: 0 0 55%;
-      position: relative;
-      background: linear-gradient(180deg,
-        #06061e 0%, #0d0d3a 35%, #1a1050 60%, #2a1a0a 85%, #1a0f05 100%);
-      overflow: hidden;
-    }
-
-    #ground {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 28%;
-      background: linear-gradient(180deg, #1e3a10 0%, #0f2008 100%);
-    }
-
-    /* cliff silhouette */
-    #cliff {
-      position: absolute;
-      bottom: 28%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 12%;
-      background: #0f2008;
-      clip-path: polygon(0% 100%, 0% 60%, 8% 55%, 15% 50%, 25% 52%, 38% 45%, 50% 40%, 62% 45%, 75% 50%, 85% 48%, 92% 52%, 100% 55%, 100% 100%);
-    }
-
-    #moon {
-      position: absolute;
-      top: 8%; right: 18%;
-      width: clamp(36px, 7%, 60px);
-      aspect-ratio: 1;
-      background: radial-gradient(circle at 40% 38%, #fffce0, #ffd54f 60%, #c8941a);
-      border-radius: 50%;
-      box-shadow: 0 0 clamp(10px, 2vw, 24px) #ffd54f99;
-    }
-
-    /* Health bars */
-    .hbar-wrap {
-      position: absolute;
-      top: 6px;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    #phbar { left: 8px; }
-    #ehbar { right: 8px; align-items: flex-end; }
-
-    .hbar-label {
-      font-size: clamp(4px, 0.9vw, 7px);
-      color: #ffcc00;
-      letter-spacing: 1px;
-    }
-
-    .hbar {
-      width: clamp(60px, 13vw, 110px);
-      height: clamp(7px, 1.4vw, 12px);
-      background: #111;
-      border: 2px solid #ffcc00;
-    }
-
-    .hfill {
-      height: 100%;
-      width: 100%;
-      background: #00cc44;
-      transition: width 0.3s ease, background 0.3s;
-    }
-
-    /* Characters */
-    #player-char, #enemy-char {
-      position: absolute;
-      bottom: 28%;
-      width: clamp(40px, 9vw, 76px);
-    }
-    #player-char { left: 12%; }
-    #enemy-char  { right: 12%; transform: scaleX(-1); }
-
-    @keyframes hit-shake {
-      0%   { transform: translateX(0); }
-      20%  { transform: translateX(-14px); }
-      50%  { transform: translateX(8px); }
-      75%  { transform: translateX(-4px); }
-      100% { transform: translateX(0); }
-    }
-    @keyframes hit-shake-r {
-      0%   { transform: scaleX(-1) translateX(0); }
-      20%  { transform: scaleX(-1) translateX(-14px); }
-      50%  { transform: scaleX(-1) translateX(8px); }
-      75%  { transform: scaleX(-1) translateX(-4px); }
-      100% { transform: scaleX(-1) translateX(0); }
-    }
-    .shake-l { animation: hit-shake   0.4s ease; }
-    .shake-r { animation: hit-shake-r 0.4s ease; }
-
-    /* torches */
-    .torch {
-      position: absolute;
-      bottom: 28%;
-      width: clamp(8px, 1.5vw, 14px);
-    }
-    #torch-l { left: 30%; }
-    #torch-r { right: 30%; }
-
-    .torch-flame {
-      width: 100%;
-      aspect-ratio: 1;
-      background: radial-gradient(ellipse at 50% 80%, #ff4400, #ffcc00 40%, transparent 70%);
-      animation: flicker 0.4s ease-in-out infinite alternate;
-      transform-origin: bottom center;
-    }
-    .torch-stick {
-      width: 30%;
-      margin: 0 auto;
-      height: 200%;
-      background: #5a3010;
-    }
-    @keyframes flicker {
-      from { transform: scaleX(1)   scaleY(1);   opacity: 0.9; }
-      to   { transform: scaleX(0.8) scaleY(1.15); opacity: 1;   }
-    }
-
-    /* ── UI panel ── */
-    #ui {
-      flex: 1;
       background: #000;
-      border-top: 3px solid #ffcc00;
-      display: flex;
-      flex-direction: column;
-      padding: clamp(6px, 1.2vw, 12px);
-      gap: clamp(4px, 0.8vw, 8px);
+      border: 4px solid #111830;
+      box-shadow: 0 18px 70px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      image-rendering: pixelated;
     }
 
-    #insult-box {
-      border: 2px solid #ffcc00;
-      padding: clamp(5px, 1vw, 10px) clamp(6px, 1.2vw, 12px);
-      color: #ffcc00;
-      font-size: clamp(5px, 0.95vw, 8.5px);
-      line-height: 1.9;
-      flex: 0 0 auto;
-      min-height: 30%;
+    .scene {
+      position: absolute;
+      inset: 0 0 22% 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 19% 8%, rgba(255,255,255,.92) 0 1px, transparent 2px),
+        radial-gradient(circle at 24% 15%, rgba(255,255,255,.78) 0 1px, transparent 2px),
+        radial-gradient(circle at 35% 9%, rgba(255,255,255,.7) 0 1px, transparent 2px),
+        radial-gradient(circle at 51% 13%, rgba(255,255,255,.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 66% 7%, rgba(255,255,255,.68) 0 1px, transparent 2px),
+        radial-gradient(circle at 84% 16%, rgba(255,255,255,.75) 0 1px, transparent 2px),
+        radial-gradient(ellipse at 49% 0%, rgba(58, 82, 255, 0.88) 0%, rgba(28, 38, 145, 0.94) 28%, rgba(7, 10, 48, 1) 73%),
+        linear-gradient(#111b76, #06081d 72%);
     }
 
-    #insult-prefix {
-      color: #ff7744;
-      display: block;
-      margin-bottom: 4px;
-      font-size: clamp(4px, 0.8vw, 7px);
-      letter-spacing: 1px;
-    }
-
-    #choices {
-      display: flex;
-      flex-direction: column;
-      gap: clamp(3px, 0.5vw, 5px);
-      flex: 1;
-    }
-
-    .cbtn {
-      font-family: 'Press Start 2P', monospace;
-      font-size: clamp(4px, 0.85vw, 7.5px);
-      background: #000;
-      color: #ccc;
-      border: 2px solid #333;
-      padding: clamp(4px, 0.8vw, 8px) clamp(6px, 1vw, 10px);
-      cursor: pointer;
-      text-align: left;
-      line-height: 1.7;
-      transition: background 0.1s, border-color 0.1s, color 0.1s;
-      flex: 1;
-    }
-    .cbtn:hover:not(:disabled) {
-      background: #0d0d3a;
-      border-color: #ffcc00;
-      color: #ffcc00;
-    }
-    .cbtn.correct {
-      background: #002a00;
-      border-color: #00ee55;
-      color: #00ee55;
-    }
-    .cbtn.wrong {
-      background: #2a0000;
-      border-color: #ee2200;
-      color: #ee2200;
-    }
-
-    #status {
-      font-size: clamp(4px, 0.8vw, 7px);
-      color: #ffffff;
-      text-align: center;
-      min-height: clamp(12px, 2vw, 18px);
-      letter-spacing: 1px;
-    }
-
-    /* ── Overlay ── */
-    #overlay {
+    .scene::before {
+      content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.92);
+      background:
+        radial-gradient(circle at 7% 6%, rgba(128, 156, 255, .65) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 11% 18%, rgba(255,255,255,.38) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 16% 2%, rgba(255,255,255,.48) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 28% 22%, rgba(255,255,255,.42) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 43% 5%, rgba(255,255,255,.42) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 74% 4%, rgba(255,255,255,.42) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 92% 12%, rgba(255,255,255,.42) 0 1px, transparent 1.8px);
+      opacity: .95;
+      pointer-events: none;
+    }
+
+    .moon-rock {
+      position: absolute;
+      left: 4.6%;
+      top: 31%;
+      width: 19%;
+      height: 22%;
+      border-radius: 55% 45% 42% 58%;
+      background:
+        radial-gradient(ellipse at 35% 40%, #9ca4c3 0 14%, transparent 15%),
+        radial-gradient(ellipse at 58% 52%, #7881a3 0 11%, transparent 12%),
+        linear-gradient(135deg, #d9d9e5 0%, #7d83a7 42%, #262c5f 78%, #070916 100%);
+      transform: rotate(-22deg);
+      box-shadow: inset -18px -22px 0 rgba(3, 4, 13, .38), 0 0 14px rgba(150,170,255,.12);
+    }
+
+    .far-hills,
+    .near-hills,
+    .ground,
+    .tree,
+    .tree-left {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .far-hills {
+      left: -4%;
+      right: -4%;
+      bottom: 23%;
+      height: 28%;
+      background:
+        radial-gradient(ellipse at 22% 85%, #0d123a 0 17%, transparent 18%),
+        radial-gradient(ellipse at 40% 82%, #0b1034 0 21%, transparent 22%),
+        radial-gradient(ellipse at 60% 85%, #0d123a 0 22%, transparent 23%),
+        radial-gradient(ellipse at 84% 82%, #070b28 0 20%, transparent 21%);
+    }
+
+    .near-hills {
+      left: -3%;
+      right: -3%;
+      bottom: 20%;
+      height: 22%;
+      background:
+        radial-gradient(ellipse at 17% 100%, #07091d 0 18%, transparent 19%),
+        radial-gradient(ellipse at 39% 98%, #080b23 0 20%, transparent 21%),
+        radial-gradient(ellipse at 68% 100%, #050718 0 26%, transparent 27%),
+        radial-gradient(ellipse at 91% 100%, #060819 0 20%, transparent 21%);
+    }
+
+    .ground {
+      left: -2%;
+      right: -2%;
+      bottom: 0;
+      height: 32%;
+      background:
+        radial-gradient(ellipse at 16% 26%, #303857 0 17%, transparent 18%),
+        radial-gradient(ellipse at 33% 38%, #1b2138 0 16%, transparent 17%),
+        radial-gradient(ellipse at 54% 30%, #252b45 0 20%, transparent 21%),
+        radial-gradient(ellipse at 78% 24%, #202742 0 16%, transparent 17%),
+        radial-gradient(ellipse at 92% 57%, #101529 0 19%, transparent 20%),
+        linear-gradient(#13172c 0%, #080912 75%);
+      box-shadow: inset 0 16px 20px rgba(0,0,0,.26);
+    }
+
+    .tree {
+      right: 5%;
+      bottom: 19%;
+      width: 3.4%;
+      height: 48%;
+      background: #02030a;
+      transform: rotate(3deg);
+      box-shadow: -18px 30px 0 -8px #02030a;
+    }
+
+    .tree::before,
+    .tree::after,
+    .tree-left::before,
+    .tree-left::after {
+      content: "";
+      position: absolute;
+      background: #02030a;
+      transform-origin: bottom center;
+    }
+
+    .tree::before {
+      left: -190%;
+      top: 6%;
+      width: 75%;
+      height: 72%;
+      transform: rotate(-46deg);
+      border-radius: 50% 50% 0 0;
+    }
+
+    .tree::after {
+      left: 48%;
+      top: -4%;
+      width: 74%;
+      height: 80%;
+      transform: rotate(43deg);
+      border-radius: 50% 50% 0 0;
+    }
+
+    .tree-left {
+      left: 0;
+      bottom: 22%;
+      width: 4%;
+      height: 33%;
+      background: #03040b;
+      transform: rotate(-9deg);
+    }
+
+    .tree-left::before {
+      left: 20%;
+      top: -26%;
+      width: 110%;
+      height: 85%;
+      transform: rotate(55deg);
+    }
+
+    .tree-left::after {
+      left: -100%;
+      top: -4%;
+      width: 105%;
+      height: 80%;
+      transform: rotate(-55deg);
+    }
+
+    .speech-line {
+      position: absolute;
+      top: 7.6%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 84%;
+      z-index: 8;
+      text-align: center;
+      color: #fff;
+      font-size: clamp(15px, 2.2vw, 26px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: .2px;
+      text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        0 4px 0 #000;
+    }
+
+    .fighters {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 13.5%;
+      height: 38%;
+      z-index: 7;
+    }
+
+    .fighter {
+      position: absolute;
+      bottom: 0;
+      width: min(9vw, 94px);
+      height: min(17vw, 178px);
+      min-width: 58px;
+      min-height: 116px;
+      transform-origin: bottom center;
+      filter: drop-shadow(0 10px 3px rgba(0,0,0,.52));
+      --skin: #f0ba82;
+      --skin-shadow: #c98055;
+      --hair: #8c4e22;
+      --shirt: #f4f1df;
+      --shirt-shadow: #cdd4e2;
+      --pants: #2e3a91;
+      --pants-shadow: #13194f;
+      --guard-color: #c68b3a;
+      --belt-color: #1c1210;
+      --boot-color: #17100b;
+      --hair-extra: transparent;
+    }
+
+    .fighter::before,
+    .fighter::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      display: none;
+    }
+
+    .fighter.player {
+      left: 36%;
+      --skin: #efbf90;
+      --skin-shadow: #c68459;
+      --hair: #7b4b24;
+      --shirt: #f4f1df;
+      --shirt-shadow: #cdd4e2;
+      --pants: #2e3a91;
+      --pants-shadow: #13194f;
+      --guard-color: #d29b3a;
+      --belt-color: #2b1a14;
+      --boot-color: #17100b;
+    }
+
+    .fighter.enemy { right: 35%; }
+    .fighter.hit-left { animation: hitLeft .18s steps(2); }
+    .fighter.hit-right { animation: hitRight .18s steps(2); }
+
+    @keyframes hitLeft {
+      0%,100% { transform: translateX(0); }
+      50% { transform: translateX(-14px); }
+    }
+
+    @keyframes hitRight {
+      0%,100% { transform: translateX(0); }
+      50% { transform: translateX(14px); }
+    }
+
+    .part { position: absolute; }
+
+    .head {
+      left: 38%; top: 5%;
+      width: 28%; height: 18%;
+      background: var(--skin);
+      box-shadow: inset -4px -2px 0 var(--skin-shadow);
+    }
+
+    .hair {
+      left: 33%; top: 1%;
+      width: 34%; height: 8%;
+      background: var(--hair);
+      box-shadow: 8px 3px 0 var(--hair-extra, var(--hair));
+    }
+
+    .torso {
+      left: 33%; top: 25%;
+      width: 36%; height: 31%;
+      background: var(--shirt);
+      box-shadow: inset -7px 0 0 var(--shirt-shadow);
+    }
+
+    .belt {
+      left: 31%; top: 53%;
+      width: 41%; height: 4%;
+      background: var(--belt-color);
+    }
+
+    .arm-a,
+    .arm-b {
+      top: 29%; width: 13%; height: 28%;
+      background: var(--skin);
+      box-shadow: inset -3px 0 0 var(--skin-shadow);
+    }
+
+    .player .arm-a { left: 22%; transform: rotate(18deg); }
+    .player .arm-b { left: 63%; width: 36%; height: 8%; top: 31%; transform: rotate(-8deg); }
+    .enemy .arm-a { left: 3%; width: 36%; height: 8%; top: 31%; transform: rotate(8deg); }
+    .enemy .arm-b { left: 66%; transform: rotate(-18deg); }
+
+    .leg-a,
+    .leg-b {
+      top: 57%; width: 14%; height: 30%;
+      background: var(--pants);
+      box-shadow: inset -3px 0 0 var(--pants-shadow);
+    }
+
+    .leg-a { left: 34%; transform: rotate(8deg); }
+    .leg-b { left: 52%; transform: rotate(-7deg); }
+
+    .shoe-a,
+    .shoe-b {
+      top: 85%; width: 21%; height: 6%;
+      background: var(--boot-color);
+    }
+
+    .shoe-a { left: 28%; }
+    .shoe-b { left: 51%; }
+
+    .sword {
+      position: absolute;
+      top: 33%;
+      height: 3.5%;
+      width: 66%;
+      background: linear-gradient(90deg, #f7fbff, #a1a7bc 70%, #555d83);
+      box-shadow: 0 0 8px rgba(255,255,255,.28);
+    }
+
+    .guard {
+      position: absolute;
+      top: 29%;
+      width: 8%;
+      height: 12%;
+      background: var(--guard-color);
+    }
+
+    .player .sword { left: 92%; transform: rotate(-8deg); transform-origin: left center; }
+    .player .guard { left: 89%; }
+    .enemy .sword { right: 92%; transform: rotate(188deg); transform-origin: right center; }
+    .enemy .guard { right: 89%; }
+
+    .look-captain {
+      --skin: #d8a17a;
+      --skin-shadow: #a86643;
+      --hair: #5e3a1f;
+      --shirt: #6f8ec6;
+      --shirt-shadow: #38537d;
+      --pants: #2f385c;
+      --pants-shadow: #171e36;
+      --guard-color: #a97a28;
+      --belt-color: #251710;
+    }
+
+    .look-captain::before {
+      display: block;
+      left: 28%;
+      top: -2%;
+      width: 44%;
+      height: 10%;
+      background: #2b1b16;
+      box-shadow: 0 8px 0 -3px #735339;
+    }
+
+    .look-captain::after {
+      display: block;
+      left: 32%;
+      top: 7%;
+      width: 36%;
+      height: 5%;
+      background: #7f9bc8;
+    }
+
+    .look-madame {
+      --skin: #e2b38f;
+      --skin-shadow: #b4765d;
+      --hair: #351530;
+      --hair-extra: #5f1f4f;
+      --shirt: #d47aa1;
+      --shirt-shadow: #8b3d61;
+      --pants: #5b3273;
+      --pants-shadow: #331c40;
+      --guard-color: #d6b055;
+      --belt-color: #3f1b2e;
+    }
+
+    .look-madame::before {
+      display: block;
+      left: 23%;
+      top: 0%;
+      width: 54%;
+      height: 14%;
+      background: linear-gradient(180deg, #5f1f4f 0 45%, #351530 46% 100%);
+      border-radius: 55% 55% 20% 20%;
+    }
+
+    .look-piru {
+      --skin: #c86f66;
+      --skin-shadow: #8f3c36;
+      --hair: #2a0909;
+      --shirt: #6a1717;
+      --shirt-shadow: #3b0a0a;
+      --pants: #22162f;
+      --pants-shadow: #110a18;
+      --guard-color: #c95d2d;
+      --belt-color: #1d0808;
+    }
+
+    .look-piru::before,
+    .look-piru::after {
+      display: block;
+      top: -3%;
+      width: 12%;
+      height: 12%;
+      background: #c95d2d;
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    }
+
+    .look-piru::before { left: 33%; transform: rotate(-12deg); }
+    .look-piru::after { left: 56%; transform: rotate(12deg); }
+
+    .look-harakka {
+      --skin: #c99a73;
+      --skin-shadow: #966746;
+      --hair: #151515;
+      --shirt: #5d6777;
+      --shirt-shadow: #303a4b;
+      --pants: #111722;
+      --pants-shadow: #05080d;
+      --guard-color: #9ca9b8;
+      --belt-color: #1b1b1b;
+    }
+
+    .look-harakka::before {
+      display: block;
+      left: 20%;
+      top: 3%;
+      width: 21%;
+      height: 12%;
+      background: #0a0a0a;
+      clip-path: polygon(0 0, 100% 42%, 0 100%);
+    }
+
+    .look-kissa {
+      --skin: #d4a27e;
+      --skin-shadow: #9d6d4f;
+      --hair: #82603e;
+      --shirt: #547f4d;
+      --shirt-shadow: #2f4b29;
+      --pants: #42532f;
+      --pants-shadow: #26311a;
+      --guard-color: #bca25b;
+      --belt-color: #2d2116;
+    }
+
+    .look-kissa::before,
+    .look-kissa::after {
+      display: block;
+      top: -2%;
+      width: 12%;
+      height: 10%;
+      background: #82603e;
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    }
+
+    .look-kissa::before { left: 31%; }
+    .look-kissa::after { left: 57%; }
+
+    .look-bosun {
+      --skin: #b98159;
+      --skin-shadow: #7f4f33;
+      --hair: #8d7d5b;
+      --shirt: #be9f4f;
+      --shirt-shadow: #6d5726;
+      --pants: #4a4a4a;
+      --pants-shadow: #242424;
+      --guard-color: #8f6b2f;
+      --belt-color: #2c271f;
+    }
+
+    .look-bosun::before {
+      display: block;
+      left: 29%;
+      top: 16%;
+      width: 42%;
+      height: 7%;
+      background: #7a5630;
+      border-radius: 0 0 40% 40%;
+    }
+
+    .look-ahne {
+      --skin: #e0b07c;
+      --skin-shadow: #ab764a;
+      --hair: #b07a1b;
+      --shirt: #3f7c45;
+      --shirt-shadow: #214127;
+      --pants: #6d4723;
+      --pants-shadow: #3d2612;
+      --guard-color: #f1cc59;
+      --belt-color: #2f2115;
+    }
+
+    .look-ahne::before {
+      display: block;
+      left: 24%;
+      top: 33%;
+      width: 19%;
+      height: 19%;
+      background: #f1cc59;
+      box-shadow: 4px 4px 0 rgba(0,0,0,.25), 24px 0 0 #f1cc59;
+    }
+
+    .look-sakki {
+      --skin: #d1a17f;
+      --skin-shadow: #94664c;
+      --hair: #59442f;
+      --shirt: #9872cb;
+      --shirt-shadow: #5f4691;
+      --pants: #244f81;
+      --pants-shadow: #14304f;
+      --guard-color: #dba7ff;
+      --belt-color: #301f42;
+    }
+
+    .look-sakki::before {
+      display: block;
+      left: 23%;
+      top: 1%;
+      width: 58%;
+      height: 10%;
+      background: #ece5f8;
+      transform: rotate(-4deg);
+      box-shadow: 0 7px 0 -3px #7c6ab0;
+    }
+
+    .fighter.clash {
+      z-index: 10;
+    }
+
+    .fighter.player.clash {
+      animation: playerClashBody .42s steps(4, end);
+    }
+
+    .fighter.enemy.clash {
+      animation: enemyClashBody .42s steps(4, end);
+    }
+
+    .player.clash .sword {
+      animation: playerSwordClash .42s steps(4, end);
+    }
+
+    .enemy.clash .sword {
+      animation: enemySwordClash .42s steps(4, end);
+    }
+
+    .player.clash .guard,
+    .enemy.clash .guard {
+      animation: guardJolt .42s steps(4, end);
+    }
+
+    @keyframes playerClashBody {
+      0%, 100% { transform: translateX(0); }
+      45%, 60% { transform: translateX(26px) translateY(-2px); }
+    }
+
+    @keyframes enemyClashBody {
+      0%, 100% { transform: translateX(0); }
+      45%, 60% { transform: translateX(-26px) translateY(-2px); }
+    }
+
+    @keyframes playerSwordClash {
+      0%, 100% { transform: rotate(-8deg); }
+      45%, 60% { transform: rotate(-28deg) scaleX(1.14); }
+    }
+
+    @keyframes enemySwordClash {
+      0%, 100% { transform: rotate(188deg); }
+      45%, 60% { transform: rotate(208deg) scaleX(1.14); }
+    }
+
+    @keyframes guardJolt {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    .clash-spark {
+      position: absolute;
+      left: 50%;
+      bottom: 35.5%;
+      z-index: 11;
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(.4) rotate(0deg);
+      background:
+        linear-gradient(90deg, transparent 42%, #fff5a6 43% 57%, transparent 58%),
+        linear-gradient(0deg, transparent 42%, #fff5a6 43% 57%, transparent 58%),
+        linear-gradient(45deg, transparent 43%, #ffce63 44% 56%, transparent 57%),
+        linear-gradient(-45deg, transparent 43%, #ffce63 44% 56%, transparent 57%);
+      filter: drop-shadow(0 0 7px #fff1a1);
+    }
+
+    .clash-spark.show {
+      animation: sparkBurst .42s steps(4, end);
+    }
+
+    @keyframes sparkBurst {
+      0% { opacity: 0; transform: translate(-50%, -50%) scale(.3) rotate(0deg); }
+      35% { opacity: 1; transform: translate(-50%, -50%) scale(1.7) rotate(30deg); }
+      68% { opacity: 1; transform: translate(-50%, -50%) scale(1.05) rotate(70deg); }
+      100% { opacity: 0; transform: translate(-50%, -50%) scale(.25) rotate(120deg); }
+    }
+
+    .fighter.disarmed .sword {
+      animation: swordDrop .85s steps(8, end) forwards;
+      filter: drop-shadow(0 8px 2px rgba(0,0,0,.65));
+    }
+
+    .fighter.disarmed .guard {
+      animation: guardDrop .85s steps(8, end) forwards;
+      filter: drop-shadow(0 6px 2px rgba(0,0,0,.65));
+    }
+
+    .fighter.player.disarmed .sword,
+    .fighter.player.disarmed .guard {
+      transform-origin: left center;
+    }
+
+    .fighter.enemy.disarmed .sword,
+    .fighter.enemy.disarmed .guard {
+      transform-origin: right center;
+    }
+
+    @keyframes swordDrop {
+      0% { opacity: 1; transform: translate(0,0) rotate(var(--drop-start, 0deg)); }
+      18% { opacity: 1; transform: translate(var(--clash-x, 0px), var(--clash-y, -4px)) rotate(var(--clash-rot, 0deg)) scaleX(1.18); }
+      34% { opacity: 1; transform: translate(var(--knock-x, 18px), var(--knock-y, -34px)) rotate(var(--knock-rot, 120deg)) scaleX(1); }
+      66% { opacity: 1; transform: translate(var(--drop-x, 18px), 22px) rotate(var(--drop-mid, 96deg)); }
+      100% { opacity: 1; transform: translate(var(--drop-x2, 35px), 96px) rotate(var(--drop-end, 156deg)); }
+    }
+
+    @keyframes guardDrop {
+      0% { opacity: 1; transform: translate(0,0) rotate(0deg); }
+      20% { opacity: 1; transform: translate(var(--clash-x, 0px), var(--clash-y, -4px)) rotate(18deg); }
+      38% { opacity: 1; transform: translate(var(--knock-x, 18px), var(--knock-y, -28px)) rotate(95deg); }
+      100% { opacity: 1; transform: translate(var(--guard-drop-x, 18px), 88px) rotate(140deg); }
+    }
+
+    .fighter.player.disarmed {
+      --drop-start: -8deg;
+      --clash-x: 34px;
+      --clash-y: -5px;
+      --clash-rot: -32deg;
+      --knock-x: 82px;
+      --knock-y: -56px;
+      --knock-rot: 150deg;
+      --drop-x: 62px;
+      --drop-x2: 42px;
+      --drop-mid: 245deg;
+      --drop-end: 310deg;
+      --guard-drop-x: 32px;
+    }
+
+    .fighter.enemy.disarmed {
+      --drop-start: 188deg;
+      --clash-x: -34px;
+      --clash-y: -5px;
+      --clash-rot: 212deg;
+      --knock-x: -82px;
+      --knock-y: -56px;
+      --knock-rot: 42deg;
+      --drop-x: -62px;
+      --drop-x2: -42px;
+      --drop-mid: -55deg;
+      --drop-end: -128deg;
+      --guard-drop-x: -32px;
+    }
+
+    .status-strip {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      z-index: 12;
+      color: #dbe4ff;
+      font-size: clamp(10px, 1.2vw, 13px);
+      text-transform: uppercase;
+      text-shadow: 1px 1px 0 #000;
+      pointer-events: none;
+      opacity: .92;
+    }
+
+    .status-pill {
+      background: rgba(0,0,0,.34);
+      border: 1px solid rgba(150,160,210,.38);
+      padding: 4px 7px;
+    }
+
+    .dialogue-ui {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 22%;
+      background: var(--ui-black);
+      border-top: 3px solid #070714;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 10px;
+      padding: 10px 12px 8px;
+    }
+
+    .choices {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: clamp(10px, 2vw, 20px);
-      z-index: 20;
-      padding: 20px;
-      text-align: center;
+      gap: 2px;
+      min-width: 0;
     }
 
-    #overlay-title {
-      font-size: clamp(9px, 2vw, 18px);
-      color: #ffcc00;
-      line-height: 2.2;
-      text-shadow: 3px 3px #4a1a00;
-    }
-
-    #overlay-sub {
-      font-size: clamp(5px, 1vw, 9px);
-      color: #aaa;
-      line-height: 2;
-      max-width: 80%;
-    }
-
-    #start-btn {
-      font-family: 'Press Start 2P', monospace;
-      font-size: clamp(7px, 1.4vw, 12px);
-      background: #1a3d28;
-      color: #ffcc00;
-      border: 3px solid #ffcc00;
-      padding: clamp(8px,1.5vw,12px) clamp(14px,2.5vw,24px);
+    .choice-btn {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--choice);
+      font: inherit;
+      font-weight: 700;
+      text-align: left;
       cursor: pointer;
-      transition: background 0.2s;
-    }
-    #start-btn:hover { background: #265c3c; }
-
-    #round-counter {
-      position: absolute;
-      top: 6px; left: 50%;
-      transform: translateX(-50%);
-      font-size: clamp(4px, 0.8vw, 7px);
-      color: #ffcc0088;
+      line-height: 1.11;
+      font-size: clamp(12px, 1.55vw, 18px);
+      text-shadow: 1px 1px 0 #000;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .choice-btn::before { content: ""; }
+
+    .choice-btn:hover,
+    .choice-btn:focus {
+      color: var(--choice-hover);
+      outline: none;
+    }
+
+    .choice-btn:hover::before,
+    .choice-btn:focus::before {
+      content: "> ";
+      color: var(--choice-hover);
+    }
+
+    .side-panel {
+      min-width: 0;
+      color: #c6cae9;
+      font-size: clamp(10px, 1.15vw, 13px);
+      line-height: 1.25;
+      border-left: 1px solid #252039;
+      padding-left: 10px;
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 6px;
+    }
+
+    .side-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .small-btn {
+      border: 1px solid #595174;
+      background: #171123;
+      color: #eee7ff;
+      font: inherit;
+      font-size: 11px;
+      padding: 4px 6px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .small-btn:hover { background: #2a1c3c; }
+
+    .meter {
+      height: 8px;
+      background: #08070e;
+      border: 1px solid #4c4267;
+      overflow: hidden;
+      margin-top: 2px;
+    }
+
+    .meter-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #8369ff, #ffd978);
+      transition: width .2s ease;
+    }
+
+    .feedback {
+      min-height: 2.5em;
+      color: #d8dbff;
+      overflow: hidden;
+    }
+
+    .feedback.good { color: var(--good); }
+    .feedback.bad { color: var(--danger); }
+
+    .learned-pop {
+      position: absolute;
+      left: 2%;
+      bottom: 23.4%;
+      z-index: 21;
+      max-width: 58%;
+      background: rgba(0,0,0,.72);
+      border: 1px solid rgba(211,164,255,.55);
+      color: #eee7ff;
+      padding: 7px 9px;
+      font-size: clamp(11px, 1.2vw, 14px);
+      line-height: 1.25;
+      transform: translateY(14px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .18s ease, opacity .18s ease;
+    }
+
+    .learned-pop.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .book-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.74);
+      z-index: 60;
+      display: none;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .book-overlay.open { display: grid; }
+
+    .book {
+      width: min(820px, 94%);
+      max-height: 86%;
+      overflow: auto;
+      background: #070712;
+      border: 3px solid #6d5c91;
+      padding: 14px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.65);
+      color: #e5e4ff;
+    }
+
+    .book h2 {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .book p, .book li { line-height: 1.35; }
+    .book ul { margin-top: 8px; padding-left: 19px; }
+
+    .learned-list {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .learned-card {
+      border-top: 1px solid #372d52;
+      padding-top: 8px;
+      color: #d7a4ff;
+      line-height: 1.3;
+    }
+
+    .learned-card small { color: #aeb2d9; }
+
+    .book-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      position: sticky;
+      bottom: 0;
+      background: #070712;
+      padding-top: 10px;
+    }
+
+    .map-book {
+      background:
+        radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.08), transparent 62%),
+        linear-gradient(180deg, #10245d 0%, #06112f 100%);
+      border-color: #917044;
+    }
+
+    .map-stage {
+      position: relative;
+      height: min(58vh, 470px);
+      min-height: 320px;
+      border: 3px solid #4b341f;
+      background:
+        radial-gradient(ellipse at 50% 47%, var(--map-sand) 0 36%, transparent 37%),
+        radial-gradient(ellipse at 38% 68%, var(--map-sand) 0 18%, transparent 19%),
+        radial-gradient(ellipse at 65% 67%, var(--map-sand) 0 16%, transparent 17%),
+        var(--map-water);
+      overflow: hidden;
+      box-shadow: inset 0 0 0 4px rgba(0,0,0,.28);
+      margin: 10px 0 12px;
+    }
+
+    .map-stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 50% 46%, transparent 0 32%, rgba(115,72,36,.55) 33% 35%, transparent 36%),
+        radial-gradient(ellipse at 38% 68%, transparent 0 15%, rgba(115,72,36,.48) 16% 18%, transparent 19%),
+        radial-gradient(ellipse at 65% 67%, transparent 0 13%, rgba(115,72,36,.48) 14% 16%, transparent 17%);
+      pointer-events: none;
+    }
+
+    .map-stage::after {
+      content: "";
+      position: absolute;
+      left: 31%;
+      top: 28%;
+      width: 42%;
+      height: 38%;
+      background:
+        linear-gradient(28deg, transparent 0 47%, var(--map-road) 48% 52%, transparent 53%),
+        linear-gradient(-18deg, transparent 0 48%, var(--map-road) 49% 53%, transparent 54%),
+        linear-gradient(82deg, transparent 0 48%, var(--map-road) 49% 53%, transparent 54%);
+      opacity: .9;
+      clip-path: polygon(8% 55%, 32% 29%, 52% 52%, 75% 24%, 94% 45%, 70% 72%, 42% 62%, 18% 83%);
+      pointer-events: none;
+    }
+
+    .map-deco {
+      position: absolute;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .map-tree {
+      width: 16px;
+      height: 24px;
+      background: var(--map-green);
+      clip-path: polygon(50% 0, 100% 66%, 65% 66%, 65% 100%, 35% 100%, 35% 66%, 0 66%);
+      filter: drop-shadow(2px 2px 0 rgba(0,0,0,.35));
+    }
+
+    .map-mountain {
+      width: 42px;
+      height: 32px;
+      background: linear-gradient(135deg, #7b675d 0 55%, #3d302d 56% 100%);
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+      filter: drop-shadow(2px 2px 0 rgba(0,0,0,.35));
+    }
+
+    .map-x {
+      position: absolute;
+      left: 47%;
+      top: 43%;
+      width: 28px;
+      height: 28px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .map-x::before,
+    .map-x::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: -2px;
+      width: 5px;
+      height: 34px;
+      background: #8a1d22;
+      box-shadow: 1px 1px 0 rgba(0,0,0,.35);
+    }
+
+    .map-x::before { transform: rotate(45deg); }
+    .map-x::after { transform: rotate(-45deg); }
+
+    .map-location {
+      position: absolute;
+      z-index: 4;
+      transform: translate(-50%, -50%);
+      border: 2px solid #3c2314;
+      background: rgba(255, 220, 122, .92);
+      color: #251109;
+      font: inherit;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 7px;
+      cursor: pointer;
+      box-shadow: 3px 3px 0 rgba(0,0,0,.35);
+    }
+
+    .map-location:hover,
+    .map-location:focus {
+      outline: none;
+      background: #fff3b7;
+      transform: translate(-50%, -50%) scale(1.04);
+    }
+
+    .map-note {
+      color: #d7c28e;
+      font-size: 13px;
+      line-height: 1.35;
+      margin: 0 0 8px;
+    }
+
+
+    .scene-accent {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .22s ease;
+      z-index: 2;
+    }
+
+    .scene-water {
+      left: -2%;
+      right: -2%;
+      bottom: 20%;
+      height: 13%;
+      background:
+        linear-gradient(180deg, rgba(143, 201, 255, .18), rgba(20, 44, 92, .7)),
+        repeating-linear-gradient(180deg, rgba(255,255,255,.16) 0 2px, rgba(255,255,255,0) 2px 6px);
+    }
+
+    .scene-dock {
+      right: 2%;
+      bottom: 20%;
+      width: 26%;
+      height: 13%;
+      background:
+        repeating-linear-gradient(90deg, #6c4b28 0 10%, #805934 10% 20%),
+        linear-gradient(180deg, #4c321d, #22150d);
+      clip-path: polygon(8% 18%, 100% 4%, 100% 70%, 16% 84%, 0 100%, 0 28%);
+      box-shadow: inset 0 -7px 0 rgba(0,0,0,.18);
+    }
+
+    .scene-dock::before {
+      content: "";
+      position: absolute;
+      left: 10%;
+      bottom: -26%;
+      width: 8%;
+      height: 70%;
+      background: #3b2414;
+      box-shadow: 68px 0 0 #3b2414, 132px 0 0 #3b2414;
+    }
+
+    .scene-pines {
+      left: 58%;
+      bottom: 18%;
+      width: 30%;
+      height: 28%;
+      background:
+        linear-gradient(transparent 0 100%),
+        conic-gradient(from 180deg at 10% 100%, transparent 0 50%, #07110a 0 100%);
+    }
+
+    .scene-pines::before,
+    .scene-pines::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 22%;
+      height: 90%;
+      background: #07110a;
+      clip-path: polygon(50% 0, 100% 36%, 72% 36%, 100% 66%, 66% 66%, 86% 100%, 14% 100%, 34% 66%, 0 66%, 28% 36%, 0 36%);
+    }
+
+    .scene-pines::before { left: 7%; }
+    .scene-pines::after { left: 44%; height: 100%; }
+
+    .scene-fog {
+      left: 0;
+      right: 0;
+      bottom: 18%;
+      height: 22%;
+      background: linear-gradient(180deg, rgba(255,255,255,0), rgba(218,236,220,.15) 45%, rgba(218,236,220,.32) 80%, rgba(218,236,220,.1));
+    }
+
+    .scene-lantern {
+      right: 13%;
+      top: 20%;
+      width: 11px;
+      height: 80px;
+      background: #120a07;
+    }
+
+    .scene-lantern::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 18px;
+      width: 30px;
+      height: 36px;
+      border: 2px solid #3a2416;
+      background: radial-gradient(circle at 50% 40%, rgba(255, 244, 179, .95) 0 32%, rgba(255,185,67,.75) 33% 60%, rgba(255,185,67,0) 61%);
+      box-shadow: 0 0 18px rgba(255,199,103,.55);
+    }
+
+    .scene-window {
+      right: 2%;
+      bottom: 20%;
+      width: 29%;
+      height: 26%;
+      background:
+        linear-gradient(90deg, #2d150f 0 6%, transparent 6% 94%, #2d150f 94% 100%),
+        linear-gradient(180deg, #432114 0 10%, transparent 10% 90%, #2b150e 90% 100%),
+        linear-gradient(90deg, transparent 0 47%, #2d150f 47% 53%, transparent 53% 100%),
+        linear-gradient(180deg, transparent 0 47%, #2d150f 47% 53%, transparent 53% 100%),
+        linear-gradient(180deg, rgba(255,227,141,.92), rgba(193,95,34,.72));
+      box-shadow: 0 0 24px rgba(255,194,104,.25);
+    }
+
+    .theme-clearing {
+      background:
+        radial-gradient(circle at 19% 8%, rgba(255,255,255,.92) 0 1px, transparent 2px),
+        radial-gradient(circle at 24% 15%, rgba(255,255,255,.78) 0 1px, transparent 2px),
+        radial-gradient(circle at 35% 9%, rgba(255,255,255,.7) 0 1px, transparent 2px),
+        radial-gradient(circle at 51% 13%, rgba(255,255,255,.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 66% 7%, rgba(255,255,255,.68) 0 1px, transparent 2px),
+        radial-gradient(circle at 84% 16%, rgba(255,255,255,.75) 0 1px, transparent 2px),
+        radial-gradient(ellipse at 49% 0%, rgba(58, 82, 255, 0.88) 0%, rgba(28, 38, 145, 0.94) 28%, rgba(7, 10, 48, 1) 73%),
+        linear-gradient(#111b76, #06081d 72%);
+    }
+
+    .theme-harbor {
+      background:
+        radial-gradient(circle at 14% 15%, rgba(255,231,166,.7) 0 1px, transparent 2px),
+        radial-gradient(circle at 22% 23%, rgba(255,240,185,.45) 0 1px, transparent 2px),
+        linear-gradient(180deg, #223f80 0%, #3b6cb2 36%, #15254e 78%, #09101f 100%);
+    }
+
+    .theme-harbor::before {
+      background:
+        radial-gradient(circle at 12% 15%, rgba(255,255,255,.25) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 28% 20%, rgba(255,255,255,.2) 0 1px, transparent 1.8px),
+        linear-gradient(180deg, rgba(255,210,122,.06), rgba(255,255,255,0));
+      opacity: .7;
+    }
+
+    .theme-harbor .moon-rock,
+    .theme-harbor .tree-left { opacity: .18; }
+    .theme-harbor .tree { opacity: .35; right: 1%; height: 32%; }
+    .theme-harbor .scene-water,
+    .theme-harbor .scene-dock { opacity: 1; }
+
+    .theme-forest {
+      background:
+        radial-gradient(circle at 16% 12%, rgba(255,255,255,.38) 0 1px, transparent 2px),
+        radial-gradient(circle at 83% 11%, rgba(255,255,255,.4) 0 1px, transparent 2px),
+        linear-gradient(180deg, #0b1f1d 0%, #14362e 42%, #07110d 100%);
+    }
+
+    .theme-forest::before {
+      background:
+        radial-gradient(circle at 7% 6%, rgba(128, 156, 255, .18) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 74% 4%, rgba(255,255,255,.2) 0 1px, transparent 1.8px),
+        linear-gradient(180deg, rgba(137,187,122,.06), rgba(0,0,0,0));
+      opacity: .65;
+    }
+
+    .theme-forest .moon-rock { opacity: .1; }
+    .theme-forest .tree,
+    .theme-forest .tree-left { opacity: .1; }
+    .theme-forest .scene-pines,
+    .theme-forest .scene-fog { opacity: 1; }
+    .theme-forest .ground {
+      background:
+        radial-gradient(ellipse at 16% 26%, #293925 0 17%, transparent 18%),
+        radial-gradient(ellipse at 33% 38%, #1b2a1a 0 16%, transparent 17%),
+        radial-gradient(ellipse at 54% 30%, #33452f 0 20%, transparent 21%),
+        radial-gradient(ellipse at 78% 24%, #23301f 0 16%, transparent 17%),
+        radial-gradient(ellipse at 92% 57%, #10190f 0 19%, transparent 20%),
+        linear-gradient(#1a2a17 0%, #081109 75%);
+    }
+
+    .theme-tavern {
+      background:
+        radial-gradient(circle at 22% 12%, rgba(255,243,198,.42) 0 1px, transparent 2px),
+        linear-gradient(180deg, #4b295a 0%, #2c1834 38%, #100a15 100%);
+    }
+
+    .theme-tavern::before {
+      background:
+        linear-gradient(180deg, rgba(255,194,104,.08), rgba(0,0,0,0)),
+        radial-gradient(circle at 20% 11%, rgba(255,255,255,.22) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 68% 10%, rgba(255,255,255,.12) 0 1px, transparent 1.8px);
+      opacity: .65;
+    }
+
+    .theme-tavern .moon-rock { opacity: 0; }
+    .theme-tavern .tree-left { opacity: .1; }
+    .theme-tavern .tree { opacity: .12; }
+    .theme-tavern .scene-lantern,
+    .theme-tavern .scene-window { opacity: 1; }
+
+    .map-location.active-location {
+      background: #fff3b7;
+      box-shadow: 0 0 0 2px rgba(255,255,255,.5), 3px 3px 0 rgba(0,0,0,.35);
+    }
+
+    @media (max-width: 780px) {
+      body {
+        padding: 0;
+      }
+
+      .game-shell {
+        width: 100%;
+        height: 100dvh;
+        min-height: 620px;
+        aspect-ratio: auto;
+        border-width: 0;
+      }
+
+      .dialogue-ui {
+        grid-template-columns: 1fr;
+        height: 38%;
+        overflow: auto;
+      }
+
+      .scene { inset: 0 0 38% 0; }
+      .side-panel {
+        display: grid;
+        border-left: 0;
+        border-top: 1px solid #252039;
+        padding-left: 0;
+        padding-top: 7px;
+      }
+      .fighter.player { left: 25%; }
+      .fighter.enemy { right: 23%; }
+      .choice-btn { white-space: normal; }
+      .speech-line { width: 94%; }
+      .learned-pop { max-width: 94%; bottom: 38.8%; }
     }
   </style>
 </head>
 <body>
-<div id="game">
+  <main class="game-shell" aria-label="Suomalainen sananlaskuihin perustuva miekkailupeli">
+    <section class="scene theme-clearing" id="scene" aria-live="polite">
+      <div class="moon-rock"></div>
+      <div class="scene-accent scene-water" aria-hidden="true"></div>
+      <div class="scene-accent scene-dock" aria-hidden="true"></div>
+      <div class="scene-accent scene-pines" aria-hidden="true"></div>
+      <div class="scene-accent scene-fog" aria-hidden="true"></div>
+      <div class="scene-accent scene-lantern" aria-hidden="true"></div>
+      <div class="scene-accent scene-window" aria-hidden="true"></div>
+      <div class="far-hills"></div>
+      <div class="near-hills"></div>
+      <div class="tree-left"></div>
+      <div class="tree"></div>
+      <div class="ground"></div>
+      <div class="clash-spark" id="clashSpark" aria-hidden="true"></div>
 
-  <!-- ── Scene ── -->
-  <div id="scene">
-    <div id="cliff"></div>
-    <div id="ground"></div>
-    <div id="moon"></div>
+      <div class="status-strip">
+        <div class="status-pill" id="hudLeft">Äly 5</div>
+        <div class="status-pill" id="hudCenter">Voitot 0 · Maakrapu</div>
+        <div class="status-pill" id="hudRight">Ylpeys 3</div>
+      </div>
 
-    <!-- torches -->
-    <div class="torch" id="torch-l">
-      <div class="torch-flame"></div>
-      <div class="torch-stick"></div>
-    </div>
-    <div class="torch" id="torch-r">
-      <div class="torch-flame" style="animation-delay:0.2s"></div>
-      <div class="torch-stick"></div>
-    </div>
+      <div class="speech-line" id="insultText">“Aloita uusi peli.”</div>
 
-    <!-- health bars -->
-    <div class="hbar-wrap" id="phbar">
-      <span class="hbar-label">SINÄ</span>
-      <div class="hbar"><div class="hfill" id="pfill"></div></div>
-    </div>
-    <div class="hbar-wrap" id="ehbar">
-      <span class="hbar-label">VIHOLLINEN</span>
-      <div class="hbar"><div class="hfill" id="efill"></div></div>
-    </div>
+      <div class="fighters">
+        <div class="fighter player" id="playerFighter" aria-hidden="true">
+          <div class="part hair"></div>
+          <div class="part head"></div>
+          <div class="part torso"></div>
+          <div class="part belt"></div>
+          <div class="part arm-a"></div>
+          <div class="part arm-b"></div>
+          <div class="part leg-a"></div>
+          <div class="part leg-b"></div>
+          <div class="part shoe-a"></div>
+          <div class="part shoe-b"></div>
+          <div class="guard"></div>
+          <div class="sword"></div>
+        </div>
 
-    <span id="round-counter"></span>
+        <div class="fighter enemy" id="enemyFighter" aria-hidden="true">
+          <div class="part hair"></div>
+          <div class="part head"></div>
+          <div class="part torso"></div>
+          <div class="part belt"></div>
+          <div class="part arm-a"></div>
+          <div class="part arm-b"></div>
+          <div class="part leg-a"></div>
+          <div class="part leg-b"></div>
+          <div class="part shoe-a"></div>
+          <div class="part shoe-b"></div>
+          <div class="guard"></div>
+          <div class="sword"></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Player – Guybrush-style -->
-    <div id="player-char">
-      <svg viewBox="0 0 32 52" xmlns="http://www.w3.org/2000/svg">
-        <!-- hair -->
-        <rect x="8" y="0" width="16" height="4" fill="#7a4010"/>
-        <!-- head -->
-        <rect x="9" y="3" width="14" height="12" fill="#f5c87a"/>
-        <!-- eyes -->
-        <rect x="12" y="7" width="2" height="2" fill="#1a1a1a"/>
-        <rect x="18" y="7" width="2" height="2" fill="#1a1a1a"/>
-        <!-- mouth -->
-        <rect x="14" y="12" width="4" height="1" fill="#c0703a"/>
-        <!-- body -->
-        <rect x="9" y="15" width="14" height="13" fill="#e8d06a"/>
-        <!-- belt -->
-        <rect x="8" y="27" width="16" height="3" fill="#8B4513"/>
-        <rect x="14" y="28" width="4" height="3" fill="#c8901a"/>
-        <!-- legs -->
-        <rect x="9"  y="30" width="6" height="14" fill="#2d3a6b"/>
-        <rect x="17" y="30" width="6" height="14" fill="#2d3a6b"/>
-        <!-- boots -->
-        <rect x="7"  y="42" width="8" height="6" fill="#111"/>
-        <rect x="17" y="42" width="8" height="6" fill="#111"/>
-        <!-- arm -->
-        <rect x="23" y="16" width="4" height="9" fill="#f5c87a"/>
-        <!-- sword blade -->
-        <rect x="26" y="6"  width="2" height="20" fill="#d0d8e8"/>
-        <rect x="25" y="10" width="4" height="1"  fill="#888"/>
-        <!-- guard -->
-        <rect x="23" y="18" width="8" height="2" fill="#8B4513"/>
-      </svg>
-    </div>
+    <div class="learned-pop" id="learnedPop"></div>
 
-    <!-- Enemy – ghost pirate -->
-    <div id="enemy-char">
-      <svg viewBox="0 0 32 52" xmlns="http://www.w3.org/2000/svg">
-        <!-- hat brim -->
-        <rect x="4"  y="2"  width="24" height="3" fill="#111"/>
-        <!-- hat top -->
-        <rect x="8"  y="-6" width="16" height="9" fill="#111"/>
-        <!-- skull decoration -->
-        <rect x="13" y="-2" width="6" height="4" fill="#e0e0e0"/>
-        <rect x="14" y="0"  width="2" height="2" fill="#111"/>
-        <rect x="17" y="0"  width="2" height="2" fill="#111"/>
-        <!-- head -->
-        <rect x="9"  y="5"  width="14" height="12" fill="#b8d8b8"/>
-        <!-- glowing eyes -->
-        <rect x="11" y="9"  width="3" height="3" fill="#ff3300"/>
-        <rect x="18" y="9"  width="3" height="3" fill="#ff3300"/>
-        <!-- scar -->
-        <rect x="16" y="8"  width="1" height="6" fill="#66000088"/>
-        <!-- coat -->
-        <rect x="7"  y="17" width="18" height="14" fill="#2d1a4e"/>
-        <rect x="13" y="17" width="2"  height="14" fill="#1a0a2e"/>
-        <!-- epaulette -->
-        <rect x="7"  y="17" width="4"  height="3" fill="#aa8800"/>
-        <rect x="21" y="17" width="4"  height="3" fill="#aa8800"/>
-        <!-- belt -->
-        <rect x="7"  y="30" width="18" height="3" fill="#ffcc00"/>
-        <!-- legs -->
-        <rect x="9"  y="33" width="6"  height="12" fill="#1a1a3e"/>
-        <rect x="17" y="33" width="6"  height="12" fill="#1a1a3e"/>
-        <!-- boots -->
-        <rect x="7"  y="43" width="8"  height="5" fill="#0a0a0a"/>
-        <rect x="17" y="43" width="8"  height="5" fill="#0a0a0a"/>
-        <!-- arm -->
-        <rect x="23" y="18" width="4"  height="9" fill="#b8d8b8"/>
-        <!-- sword -->
-        <rect x="26" y="7"  width="2"  height="21" fill="#b0b8c8"/>
-        <rect x="25" y="11" width="4"  height="1"  fill="#777"/>
-        <!-- guard -->
-        <rect x="23" y="20" width="8"  height="2" fill="#5a3a0a"/>
-      </svg>
-    </div>
-  </div>
+    <section class="dialogue-ui">
+      <div class="choices" id="answers"></div>
+      <aside class="side-panel">
+        <div>
+          <strong id="enemyName">Kapteeni Kataja</strong><br>
+          <span id="rankText">Arvo: Maakrapu</span><br>
+          <span id="locationText">Paikka: Kuutamoketo</span><br>
+          <span id="knownText">Opittu: 0 / 0</span>
+          <div class="meter"><div class="meter-fill" id="learnedMeter"></div></div>
+        </div>
+        <div class="side-actions">
+          <button class="small-btn" id="newGameBtn" type="button">Uusi peli</button>
+          <button class="small-btn" id="helpBtn" type="button">Ohje</button>
+          <button class="small-btn" id="challengeBtn" type="button">Haasta</button>
+          <button class="small-btn" id="mapBtn" type="button">Kartta</button>
+          <button class="small-btn" id="bookBtn" type="button">Vastaukset</button>
+        </div>
+        <div class="feedback" id="feedback">Valitse vastaus, joka torjuu sananlaskuivailun parhaiten.</div>
+      </aside>
+    </section>
 
-  <!-- ── UI panel ── -->
-  <div id="ui">
-    <div id="insult-box">
-      <span id="insult-prefix">VIHOLLINEN HUUTAA:</span>
-      <span id="insult-text"></span>
-    </div>
-    <div id="choices">
-      <button class="cbtn" id="btn0" onclick="choose(0)"></button>
-      <button class="cbtn" id="btn1" onclick="choose(1)"></button>
-      <button class="cbtn" id="btn2" onclick="choose(2)"></button>
-    </div>
-    <div id="status"></div>
-  </div>
+    <section class="book-overlay open" id="helpOverlay" aria-modal="true" role="dialog">
+      <div class="book">
+        <h2>Sananlaskumiekkailu</h2>
+        <p>Tämä versio jäljittelee klassista Monkey Island -kaksintaistelunäkymää: hahmot seisovat kuutamossa, vastustajan ivailu näkyy ylhäällä ja vastausvaihtoehdot mustassa keskustelualueessa alhaalla.</p>
+        <ul>
+          <li>Valitse vastaus, joka voittaa ivailun merkityksellään.</li>
+          <li>Väärät vastaukset vievät älyä.</li>
+          <li>Jos häviät kaksintaistelun, opitut vastaukset pysyvät muistissasi. Haasta uusi vastustaja jatkaaksesi.</li>
+          <li>Opit vastauksen vain silloin, kun vastustaja käyttää sitä.</li>
+          <li>Käytä <strong>Haasta</strong>-nappia heittääksesi ivailun vastustajalle; jos hän tietää vastauksen, opit sen.</li>
+          <li>Myös väärät vastaukset opettavat, kun vastustaja näyttää oikean vastauksen.</li>
+          <li>Voita kaksintaisteluja noustaksesi arvoasteikossa.</li>
+        </ul>
+        <div class="book-actions">
+          <button class="small-btn" id="closeHelpBtn" type="button">Vedä miekka</button>
+        </div>
+      </div>
+    </section>
 
-  <!-- ── Overlay ── -->
-  <div id="overlay">
-    <div id="overlay-title">⚔ MIEKKAINSULTTI ⚔<br>Suomalainen Miekkataistelu</div>
-    <div id="overlay-sub">
-      Vihollinen heittää loukkauksen.<br>
-      Valitse oikea vastaisku säilyttääksesi kunniasi!<br>
-      Väärä vastaus — sinä saat osumaa.<br>
-      Oikea vastaus — vihollinen saa osumaa.
-    </div>
-    <button id="start-btn" onclick="startGame()">ALOITA TAISTELU!</button>
-  </div>
+    <section class="book-overlay" id="mapOverlay" aria-modal="true" role="dialog">
+      <div class="book map-book">
+        <h2>Saaren kartta</h2>
+        <p class="map-note">Valitse paikka, johon matkustat. Jokaisella alueella on oma taustansa ja paikalliset vastustajansa.</p>
+        <div class="map-stage" aria-label="Sananlaskusaaren kartta">
+          <div class="map-deco map-mountain" style="left: 28%; top: 19%;"></div>
+          <div class="map-deco map-mountain" style="left: 35%; top: 16%; transform: scale(.8);"></div>
+          <div class="map-deco map-tree" style="left: 58%; top: 27%;"></div>
+          <div class="map-deco map-tree" style="left: 63%; top: 30%; transform: scale(.85);"></div>
+          <div class="map-deco map-tree" style="left: 68%; top: 24%; transform: scale(1.1);"></div>
+          <div class="map-deco map-tree" style="left: 33%; top: 66%; transform: scale(.95);"></div>
+          <div class="map-x" aria-hidden="true"></div>
+          <button class="map-location" type="button" style="left: 49%; top: 44%;" data-travel="Kuutamoketo">Keto</button>
+          <button class="map-location" type="button" style="left: 36%; top: 70%;" data-travel="Harakan satama">Satama</button>
+          <button class="map-location" type="button" style="left: 66%; top: 32%;" data-travel="Kissan metsä">Metsä</button>
+          <button class="map-location" type="button" style="left: 63%; top: 68%;" data-travel="Musta Kylki -krouvi">Krouvi</button>
+        </div>
+        <div class="book-actions">
+          <button class="small-btn" id="closeMapBtn" type="button">Sulje kartta</button>
+        </div>
+      </div>
+    </section>
 
-</div>
-<script>
-const duels = [
-  {
-    insult: '"Aina koski kohinassa ja aina tyhmä tohinassa."',
-    correct: '"Hullu huutaa, viisas kuulee vähemmänkin."',
-    wrong: [
-      '"Koski on voimallinen — ota se kehuna!"',
-      '"Tohinassani on tarmoa, etkä voi sitä kieltää!"'
-    ]
-  },
-  {
-    insult: '"Helppo tyhmä narrata."',
-    correct: '"Hullu vipuun käy, viisas viuhtoo sivutse."',
-    wrong: [
-      '"En ole tyhmä — olen erikoislaatuisen analyyttinen!"',
-      '"Narraaminen on häpeällinen tapa, kasvata tapasi ensin!"'
-    ]
-  },
-  {
-    insult: '"Joka kuuseen kurkottaa, se katajaan kapsahtaa."',
-    correct: '"Paree kumartaa kuin kurottaa."',
-    wrong: [
-      '"Minä kurkottelen kuusen latvaan ja pidän siellä kotini!"',
-      '"Kataja on arvokas kasvi enkä häpeä siihen kapsahtamista!"'
-    ]
-  },
-  {
-    insult: '"Ei haukkuva koira jänestä saa."',
-    correct: '"Ei haukkuva koira pure."',
-    wrong: [
-      '"Minä en hauku enkä myöskään jäniksiä tarvitse!"',
-      '"Jänikset ovat nopeita — asia erikseen, minä olen nopeampi!"'
-    ]
-  },
-  {
-    insult: '"Ahne ottaa rahat ja vie vielä kukkaronki."',
-    correct: '"Ahneella on paskanen loppu."',
-    wrong: [
-      '"Minä en ole ahne — olen vain tarkka taloudenpitäjä!"',
-      '"Kukkaroni pysyy minulla, se on lakiin kirjattu!"'
-    ]
-  },
-  {
-    insult: '"Laiska tyäs huomiseen lykkää."',
-    correct: '"Ahkera kaikki voittaa."',
-    wrong: [
-      '"Huominen on uusi päivä — silloin on enemmän energiaa!"',
-      '"Lykkääminen on viisautta, ajattele se strategiana!"'
-    ]
-  }
-];
+    <section class="book-overlay" id="bookOverlay" aria-modal="true" role="dialog">
+      <div class="book">
+        <h2>Opitut vastaukset</h2>
+        <div class="learned-list" id="learnedList"></div>
+        <div class="book-actions">
+          <button class="small-btn" id="closeBookBtn" type="button">Sulje</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
-let queue = [], idx = 0, php = 3, ehp = 3, locked = false;
+  <script>
+    const PAIRS = [
+      { insult: "Aina koski kohinassa ja aina tyhmä tohinassa.", win: "Hullu huutaa, viisas kuulee vähemmänkin.", reason: "Äänekäs tohina häviää rauhalliselle älylle." },
+      { insult: "Helppo tyhmä narrata.", win: "Hullu vipuun käy, viisas viuhtoo sivutse.", reason: "Todistat, ettet ole ansaan lankeava hölmö." },
+      { insult: "Joka kuuseen kurkottaa, se katajaan kapsahtaa.", win: "Paree kumartaa kuin kurottaa.", reason: "Nöyryys voittaa liiallisen kurkottelun." },
+      { insult: "Ei haukkuva koira jänestä saa.", win: "Ei haukkuva koira pure.", reason: "Muutat haukunnan harmittomaksi meteliksi." },
+      { insult: "Ahne ottaa rahat ja vie vielä kukkaronki.", win: "Ahneella on paskanen loppu.", reason: "Ahneus kaatuu omaan loppuunsa." },
+      { insult: "Laiska tyäs huomiseen lykkää.", win: "Ahkera kaikki voittaa.", reason: "Ahkeruus voittaa laiskuuden." },
+      { insult: "Hullu kaikki tietonsa sanoo.", win: "Suu säkkiä myöten.", reason: "Pidättyväisyys voittaa suunsoiton." },
+      { insult: "Oma suu on tikanpojan surma.", win: "Sana auttaa, sana painaa.", reason: "Sanat voivat haavoittaa, mutta mestari käyttää niitä oikein." },
+      { insult: "Pata kattilaa soimaa, musta kylki kummallakin.", win: "Pilkka sattuu omaan nilkkaan.", reason: "Tekopyhyys kimpoaa takaisin sanojaansa." },
+      { insult: "Kyl sillo hiiret ovat vallan pääl, ku kissa on kotua pois.", win: "Hiljaa hiiret, kissa on kotoon.", reason: "Kissa on palannut kotiin." },
+      { insult: "Piru pituuttaan kiittää, vaan matalalla maata kynnetään.", win: "Suutari pysyköön lestissään.", reason: "Kerskailu häviää käytännön taidolle." },
+      { insult: "Sanoista mies tunnetaan.", win: "Sanansa mies pitää.", reason: "Jos sanat paljastavat ihmisen, sanansa pitäminen todistaa laadun." },
+      { insult: "Yks hullu kysyy enempi kuin yhdeksän viisasta jaksaa vastata.", win: "Hullu pilaan suuttuu, viisas vastaa puolestansa.", reason: "Viisas vastaa vain silloin, kun sillä on väliä." },
+      { insult: "Ei harakka ole lintu.", win: "Äänelläs lintuki laulaa.", reason: "Oudollakin linnulla on oma äänensä." },
+      { insult: "Hullu toisen hulluksi luulee, varas varkaaks.", win: "Pata kattilaa soimaa, musta kylki kummallakin.", reason: "Syytös paljastaa syyttäjän itsensä." },
+      { insult: "Ei haukkuva koira pure.", win: "Ääni ei pelota, voimaa sitä olla pitää.", reason: "Pelkkä ääni ei ole voimaa." }
+    ];
 
-function rnd(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+    const STARTER_ANSWERS = [
+      "Taistelet kuin lehmä!",
+      "Haisee pahalta!",
+      "Olet ihan pöljä!",
+      "Minäpä huitaisen!"
+    ];
 
-function startGame() {
-  queue = rnd(duels);
-  idx = 0; php = 3; ehp = 3; locked = false;
-  document.getElementById('overlay').style.display = 'none';
-  updateHP();
-  loadDuel();
-}
+    const ENEMIES = [
+      { key: "captain", name: "Kapteeni Kataja", look: "look-captain" },
+      { key: "madame", name: "Rouva Musta Kylki", look: "look-madame" },
+      { key: "piru", name: "Piru Pituuttaan", look: "look-piru" },
+      { key: "harakka", name: "Sataman Harakka", look: "look-harakka" },
+      { key: "kissa", name: "Kissa Kotoon", look: "look-kissa" },
+      { key: "bosun", name: "Laiska pursimies", look: "look-bosun" },
+      { key: "ahne", name: "Ahne Antti", look: "look-ahne" },
+      { key: "sakki", name: "Merimies Säkki", look: "look-sakki" }
+    ];
 
-function updateHP() {
-  const pf = document.getElementById('pfill');
-  const ef = document.getElementById('efill');
-  pf.style.width = (php / 3 * 100) + '%';
-  ef.style.width = (ehp / 3 * 100) + '%';
-  pf.style.background = php > 1 ? '#00cc44' : '#ee2200';
-  ef.style.background = ehp > 1 ? '#00cc44' : '#ee2200';
-}
+    const LOCATIONS = {
+      "Kuutamoketo": {
+        theme: "clearing",
+        enemyPool: ["captain", "piru", "sakki"],
+        intro: "Keto hehkuu sinisenä kuun alla."
+      },
+      "Harakan satama": {
+        theme: "harbor",
+        enemyPool: ["harakka", "bosun", "sakki"],
+        intro: "Suolainen tuuli ja nariseva laituri kehystävät sataman kaksintaistelun."
+      },
+      "Kissan metsä": {
+        theme: "forest",
+        enemyPool: ["kissa", "captain", "piru"],
+        intro: "Tummat männyt ja matala sumu tekevät metsästä läheisen ja oudon."
+      },
+      "Musta Kylki -krouvi": {
+        theme: "tavern",
+        enemyPool: ["madame", "ahne", "bosun"],
+        intro: "Krouvin ikkunoiden lyhtyvalo tekee kaksintaistelusta lämpimän ja vaarallisen."
+      }
+    };
 
-let _opts = [], _correct = 0;
+    const RANKS = [
+      { wins: 0, name: "Maakrapu" },
+      { wins: 1, name: "Kannenkuuraaja" },
+      { wins: 3, name: "Sananlaskumerirosvo" },
+      { wins: 5, name: "Teräväkielinen miekkailija" },
+      { wins: 8, name: "Sananlaskujen mestari" }
+    ];
 
-function loadDuel() {
-  const d = queue[idx % queue.length];
-  _opts = rnd([
-    { t: d.correct, ok: true },
-    { t: d.wrong[0], ok: false },
-    { t: d.wrong[1], ok: false }
-  ]);
-  _correct = _opts.findIndex(o => o.ok);
+    const state = {
+      playerHp: 5,
+      enemyHp: 3,
+      wins: 0,
+      currentEnemy: ENEMIES[0],
+      currentLocation: "Kuutamoketo",
+      currentPair: null,
+      usedThisDuel: new Set(),
+      knownWins: new Set(),
+      gameOver: false,
+      duelOver: false
+    };
 
-  document.getElementById('insult-text').textContent = d.insult;
-  document.getElementById('status').textContent = '';
-  document.getElementById('round-counter').textContent =
-    'KIERROS ' + (idx + 1);
+    const els = {
+      scene: document.getElementById("scene"),
+      answers: document.getElementById("answers"),
+      insultText: document.getElementById("insultText"),
+      hudLeft: document.getElementById("hudLeft"),
+      hudCenter: document.getElementById("hudCenter"),
+      hudRight: document.getElementById("hudRight"),
+      enemyName: document.getElementById("enemyName"),
+      rankText: document.getElementById("rankText"),
+      locationText: document.getElementById("locationText"),
+      knownText: document.getElementById("knownText"),
+      learnedMeter: document.getElementById("learnedMeter"),
+      feedback: document.getElementById("feedback"),
+      playerFighter: document.getElementById("playerFighter"),
+      enemyFighter: document.getElementById("enemyFighter"),
+      helpOverlay: document.getElementById("helpOverlay"),
+      bookOverlay: document.getElementById("bookOverlay"),
+      mapOverlay: document.getElementById("mapOverlay"),
+      learnedList: document.getElementById("learnedList"),
+      learnedPop: document.getElementById("learnedPop"),
+      clashSpark: document.getElementById("clashSpark"),
+      challengeBtn: document.getElementById("challengeBtn")
+    };
 
-  ['btn0','btn1','btn2'].forEach((id, i) => {
-    const b = document.getElementById(id);
-    b.textContent = (i + 1) + '. ' + _opts[i].t;
-    b.className = 'cbtn';
-    b.disabled = false;
-  });
-  locked = false;
-}
+    function byId(id) { return document.getElementById(id); }
 
-function choose(i) {
-  if (locked) return;
-  locked = true;
-  ['btn0','btn1','btn2'].forEach(id => document.getElementById(id).disabled = true);
+    function bind(id, eventName, handler) {
+      const node = byId(id);
+      if (node) node.addEventListener(eventName, handler);
+    }
 
-  if (_opts[i].ok) {
-    document.getElementById('btn' + i).classList.add('correct');
-    ehp--;
-    document.getElementById('status').textContent = '⚔ OSUMA! Vihollinen ottaa osumaa!';
-    shake('enemy-char', true);
-  } else {
-    document.getElementById('btn' + i).classList.add('wrong');
-    document.getElementById('btn' + _correct).classList.add('correct');
-    php--;
-    document.getElementById('status').textContent = '💀 VÄÄRÄ! Vihollinen nauraa ja iskee!';
-    shake('player-char', false);
-  }
-  updateHP();
+    function shuffle(items) {
+      const out = [...items];
+      for (let i = out.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [out[i], out[j]] = [out[j], out[i]];
+      }
+      return out;
+    }
 
-  setTimeout(() => {
-    if (php <= 0) return endGame(false);
-    if (ehp <= 0) return endGame(true);
-    idx++;
-    if (idx >= queue.length) { queue = rnd(duels); idx = 0; }
-    loadDuel();
-  }, 2000);
-}
+    function sample(items) {
+      return items[Math.floor(Math.random() * items.length)];
+    }
 
-function shake(id, isEnemy) {
-  const el = document.getElementById(id);
-  el.classList.remove('shake-l', 'shake-r');
-  void el.offsetWidth;
-  el.classList.add(isEnemy ? 'shake-r' : 'shake-l');
-  setTimeout(() => el.classList.remove('shake-l','shake-r'), 450);
-}
+    function rankName() {
+      return RANKS.reduce((best, rank) => state.wins >= rank.wins ? rank : best, RANKS[0]).name;
+    }
 
-function endGame(won) {
-  const ov = document.getElementById('overlay');
-  ov.style.display = 'flex';
-  document.getElementById('overlay-title').innerHTML = won
-    ? '🏆 VOITTO! 🏆<br>Vihollinen on kukistettu!'
-    : '💀 TAPPIO 💀<br>Vihollisen sanat lävistivät sinut!';
-  document.getElementById('overlay-sub').textContent = won
-    ? 'Olet Suomen miekkainsulttikilpailun mestari!'
-    : 'Ehkä pitäisi kuunnella enemmän Tommi Läntistä harjoitellaksesi vastauksia...';
-  document.getElementById('start-btn').textContent = won
-    ? 'UUSI TAISTELU!'
-    : 'YRITÄ UUDELLEEN!';
-}
 
-// generate stars
-window.addEventListener('load', () => {
-  const scene = document.getElementById('scene');
-  for (let i = 0; i < 45; i++) {
-    const s = document.createElement('div');
-    const sz = Math.random() * 2 + 1;
-    s.style.cssText = `position:absolute;border-radius:50%;
-      width:${sz}px;height:${sz}px;
-      background:#fff;
-      top:${Math.random() * 58}%;
-      left:${Math.random() * 100}%;
-      opacity:${0.35 + Math.random() * 0.65}`;
-    scene.appendChild(s);
-  }
-});
-</script>
+    function enemyName() {
+      return state.currentEnemy && state.currentEnemy.name ? state.currentEnemy.name : "Kapteeni Kataja";
+    }
+
+    function currentLocationData() {
+      return LOCATIONS[state.currentLocation] || LOCATIONS["Kuutamoketo"];
+    }
+
+    function enemyByKey(key) {
+      return ENEMIES.find(enemy => enemy.key === key) || ENEMIES[0];
+    }
+
+    function pickEnemyForLocation() {
+      const pool = currentLocationData().enemyPool || [];
+      const enemies = pool.map(enemyByKey);
+      return sample(enemies.length ? enemies : ENEMIES);
+    }
+
+    function applySceneTheme() {
+      if (!els.scene) return;
+      const theme = currentLocationData().theme || "clearing";
+      els.scene.className = "scene theme-" + theme;
+    }
+
+    function renderFighters() {
+      const dynamicClasses = ["clash", "disarmed", "hit-left", "hit-right"];
+
+      if (els.playerFighter) {
+        const active = dynamicClasses.filter(className => els.playerFighter.classList.contains(className));
+        els.playerFighter.className = "fighter player look-hero";
+        active.forEach(className => els.playerFighter.classList.add(className));
+      }
+
+      if (els.enemyFighter) {
+        const look = state.currentEnemy && state.currentEnemy.look ? state.currentEnemy.look : "look-captain";
+        const active = dynamicClasses.filter(className => els.enemyFighter.classList.contains(className));
+        els.enemyFighter.className = "fighter enemy " + look;
+        active.forEach(className => els.enemyFighter.classList.add(className));
+      }
+    }
+
+    function renderMapSelection() {
+      document.querySelectorAll("[data-travel]").forEach(button => {
+        button.classList.toggle("active-location", button.dataset.travel === state.currentLocation);
+      });
+    }
+
+    function showPop(html) {
+      if (!els.learnedPop) return;
+      els.learnedPop.innerHTML = html;
+      els.learnedPop.classList.add("show");
+      clearTimeout(showPop.timer);
+      showPop.timer = setTimeout(() => els.learnedPop.classList.remove("show"), 2600);
+    }
+
+    function setFeedback(kind, html) {
+      if (!els.feedback) return;
+      els.feedback.className = "feedback " + kind;
+      els.feedback.innerHTML = html;
+    }
+
+    function flash(element, className) {
+      if (!element) return;
+      element.classList.remove(className);
+      void element.offsetWidth;
+      element.classList.add(className);
+      setTimeout(() => element.classList.remove(className), 220);
+    }
+
+    function clashSwords() {
+      if (!els.playerFighter || !els.enemyFighter || !els.clashSpark) return;
+      els.playerFighter.classList.remove("clash");
+      els.enemyFighter.classList.remove("clash");
+      els.clashSpark.classList.remove("show");
+      void els.playerFighter.offsetWidth;
+      els.playerFighter.classList.add("clash");
+      els.enemyFighter.classList.add("clash");
+      els.clashSpark.classList.add("show");
+      setTimeout(() => {
+        els.playerFighter.classList.remove("clash");
+        els.enemyFighter.classList.remove("clash");
+        els.clashSpark.classList.remove("show");
+      }, 440);
+    }
+
+    function dropSword(fighter) {
+      if (!fighter) return;
+      fighter.classList.remove("clash", "hit-left", "hit-right", "disarmed");
+      void fighter.offsetWidth;
+      fighter.classList.add("disarmed");
+    }
+
+    function disarmInClash(loser) {
+      if (!els.playerFighter || !els.enemyFighter || !els.clashSpark) {
+        dropSword(loser);
+        return;
+      }
+      els.playerFighter.classList.remove("clash", "hit-left", "hit-right");
+      els.enemyFighter.classList.remove("clash", "hit-left", "hit-right");
+      els.clashSpark.classList.remove("show");
+      void els.playerFighter.offsetWidth;
+      els.playerFighter.classList.add("clash");
+      els.enemyFighter.classList.add("clash");
+      els.clashSpark.classList.add("show");
+      setTimeout(() => dropSword(loser), 120);
+      setTimeout(() => {
+        els.playerFighter.classList.remove("clash");
+        els.enemyFighter.classList.remove("clash");
+        els.clashSpark.classList.remove("show");
+      }, 520);
+    }
+
+    function restoreSwords() {
+      if (els.playerFighter) els.playerFighter.classList.remove("disarmed", "clash", "hit-left", "hit-right");
+      if (els.enemyFighter) els.enemyFighter.classList.remove("disarmed", "clash", "hit-left", "hit-right");
+      if (els.clashSpark) els.clashSpark.classList.remove("show");
+    }
+
+    function startGame() {
+      state.playerHp = 5;
+      state.enemyHp = 3;
+      state.wins = 0;
+      state.currentLocation = "Kuutamoketo";
+      state.currentEnemy = pickEnemyForLocation();
+      state.currentPair = null;
+      state.usedThisDuel = new Set();
+      state.knownWins = new Set();
+      state.gameOver = false;
+      state.duelOver = false;
+      restoreSwords();
+      setFeedback("", "Valitse vastaus, joka torjuu sananlaskuivailun parhaiten — tai haasta vastustaja oppiaksesi uuden.");
+      showPop("Uusi peli: et osaa vielä yhtään oikeaa vastausta. Kokeile hölmöjä heittoja tai käytä Haasta-nappia.");
+      startDuel();
+      render();
+    }
+
+    function startDuel() {
+      state.playerHp = 5;
+      state.currentEnemy = pickEnemyForLocation();
+      state.enemyHp = Math.min(3 + Math.floor(state.wins / 3), 6);
+      state.usedThisDuel = new Set();
+      state.duelOver = false;
+      restoreSwords();
+      nextInsult();
+    }
+
+    function nextInsult() {
+      const available = PAIRS.filter(pair => !state.usedThisDuel.has(pair.insult));
+      state.currentPair = sample(available.length ? available : PAIRS);
+      state.usedThisDuel.add(state.currentPair.insult);
+      clashSwords();
+    }
+
+    function learnComebackFromOpponent(pair, introText) {
+      if (state.knownWins.has(pair.win)) {
+        showPop(introText + "<br>Hän vastaa: “" + pair.win + "”");
+        return false;
+      }
+      state.knownWins.add(pair.win);
+      showPop(introText + "<br>Hän vastaa: “" + pair.win + "”<br><strong>Opittu!</strong>");
+      return true;
+    }
+
+    function challengeOpponent() {
+      if (state.gameOver) return;
+      if (state.duelOver) {
+        startDuel();
+        setFeedback("", "Pyyhit pölyt vaatteistasi ja haastat vastustajan: " + enemyName() + ".");
+        render();
+        return;
+      }
+      const unlearned = PAIRS.filter(pair => !state.knownWins.has(pair.win));
+      const pair = unlearned.length ? sample(unlearned) : sample(PAIRS);
+      const learned = learnComebackFromOpponent(pair, "Haastat: “" + pair.insult + "”");
+      clashSwords();
+      setFeedback(learned ? "good" : "", learned ? enemyName() + " käyttää täydellistä vastausta. Painat sen mieleesi." : enemyName() + " käyttää vastausta, jonka jo osaat.");
+      render();
+    }
+
+    function getOptions() {
+      const correct = state.currentPair.win;
+      const options = new Set();
+
+      if (state.knownWins.size === 0) {
+        return shuffle(STARTER_ANSWERS).slice(0, 4);
+      }
+
+      if (state.knownWins.has(correct)) options.add(correct);
+
+      shuffle([...state.knownWins])
+        .filter(answer => answer !== correct)
+        .forEach(answer => { if (options.size < 4) options.add(answer); });
+
+      shuffle(PAIRS.map(pair => pair.win))
+        .filter(answer => answer !== correct)
+        .forEach(answer => { if (options.size < 4) options.add(answer); });
+
+      return shuffle([...options]).slice(0, 4);
+    }
+
+    function chooseAnswer(answer) {
+      if (state.gameOver || state.duelOver || !state.currentPair) return;
+      const correct = answer === state.currentPair.win;
+
+      if (correct) {
+        state.enemyHp -= 1;
+        flash(els.enemyFighter, "hit-right");
+        setFeedback("good", "Osuma! " + state.currentPair.reason);
+
+        if (state.enemyHp <= 0) {
+          state.wins += 1;
+          disarmInClash(els.enemyFighter);
+          setFeedback("good", enemyName() + " menettää miekkansa yhteenotossa. Kaksintaistelu voitettu!");
+          render();
+
+          if (state.knownWins.size === PAIRS.length && state.wins >= 8) {
+            state.gameOver = true;
+            setFeedback("good", "Olet Sananlaskujen mestari. Jokainen sananlasku on saanut vastauksensa.");
+            render();
+            return;
+          }
+
+          setTimeout(() => {
+            if (!state.gameOver) {
+              startDuel();
+              render();
+            }
+          }, 850);
+          return;
+        }
+
+        nextInsult();
+      } else {
+        state.playerHp -= 1;
+        flash(els.playerFighter, "hit-left");
+
+        if (!state.knownWins.has(state.currentPair.win)) {
+          learnComebackFromOpponent(state.currentPair, enemyName() + " näyttää oikean vastauksen");
+          setFeedback("bad", "Klang! Väärä vastaus — vastustaja käyttää oikeaa, joten opit sen.");
+        } else {
+          showPop(enemyName() + " muistuttaa: “" + state.currentPair.win + "”");
+          setFeedback("bad", "Klang! Oikea vastaus oli: “" + state.currentPair.win + "”");
+        }
+
+        if (state.playerHp <= 0) {
+          state.duelOver = true;
+          state.currentPair = null;
+          disarmInClash(els.playerFighter);
+          setFeedback("bad", "Älysi loppui ja hävisit tämän kaksintaistelun, mutta opitut vastaukset säilyvät. Haasta uusi vastustaja jatkaaksesi.");
+          render();
+          return;
+        }
+
+        nextInsult();
+      }
+
+      render();
+    }
+
+    function renderOptions() {
+      if (!els.answers) return;
+      els.answers.innerHTML = "";
+
+      if (state.gameOver) {
+        const btn = document.createElement("button");
+        btn.className = "choice-btn";
+        btn.type = "button";
+        btn.textContent = "Aloita uusi peli";
+        btn.addEventListener("click", startGame);
+        els.answers.appendChild(btn);
+        return;
+      }
+
+      if (state.duelOver) {
+        const rematchBtn = document.createElement("button");
+        rematchBtn.className = "choice-btn";
+        rematchBtn.type = "button";
+        rematchBtn.textContent = "Haasta uusi vastustaja";
+        rematchBtn.addEventListener("click", () => {
+          startDuel();
+          setFeedback("", "Uusi vastustaja astuu esiin. Valitse vastaus, joka torjuu sananlaskuivailun parhaiten.");
+          render();
+        });
+        els.answers.appendChild(rematchBtn);
+
+        const newGameBtn = document.createElement("button");
+        newGameBtn.className = "choice-btn";
+        newGameBtn.type = "button";
+        newGameBtn.textContent = "Aloita alusta";
+        newGameBtn.addEventListener("click", startGame);
+        els.answers.appendChild(newGameBtn);
+        return;
+      }
+
+      getOptions().forEach(option => {
+        const btn = document.createElement("button");
+        btn.className = "choice-btn";
+        btn.type = "button";
+        btn.textContent = option;
+        btn.title = option;
+        btn.addEventListener("click", () => chooseAnswer(option));
+        els.answers.appendChild(btn);
+      });
+    }
+
+    function renderLearned() {
+      if (!els.learnedList) return;
+      els.learnedList.innerHTML = "";
+      const learned = PAIRS.filter(pair => state.knownWins.has(pair.win));
+      if (!learned.length) {
+        els.learnedList.innerHTML = "<p>Et ole vielä oppinut vastauksia.</p>";
+        return;
+      }
+      learned.forEach(pair => {
+        const card = document.createElement("div");
+        card.className = "learned-card";
+        card.innerHTML = "<strong>“" + pair.win + "”</strong><br><small>voittaa ivailun “" + pair.insult + "”</small>";
+        els.learnedList.appendChild(card);
+      });
+    }
+
+    function render() {
+      const rank = rankName();
+      applySceneTheme();
+      renderFighters();
+      renderMapSelection();
+      if (els.hudLeft) els.hudLeft.textContent = "Äly " + state.playerHp;
+      if (els.hudCenter) els.hudCenter.textContent = "Voitot " + state.wins + " · " + rank;
+      if (els.hudRight) els.hudRight.textContent = "Ylpeys " + state.enemyHp;
+      if (els.challengeBtn) {
+        els.challengeBtn.disabled = state.gameOver || (!state.duelOver && state.knownWins.size >= PAIRS.length);
+        els.challengeBtn.textContent = state.duelOver ? "Seuraava kaksintaistelu" : "Haasta";
+      }
+      if (els.enemyName) els.enemyName.textContent = enemyName();
+      if (els.rankText) els.rankText.textContent = "Arvo: " + rank;
+      if (els.locationText) els.locationText.textContent = "Paikka: " + state.currentLocation;
+      if (els.knownText) els.knownText.textContent = "Opittu: " + state.knownWins.size + " / " + PAIRS.length;
+      if (els.learnedMeter) els.learnedMeter.style.width = ((state.knownWins.size / PAIRS.length) * 100) + "%";
+      if (els.insultText) {
+        els.insultText.textContent = state.currentPair ? "“" + state.currentPair.insult + "”" : (state.duelOver ? "“Tappio on vain opetus. Haasta uusi vastustaja.”" : "“Aloita uusi peli.”");
+      }
+      renderOptions();
+      renderLearned();
+    }
+
+    function openHelp() { if (els.helpOverlay) els.helpOverlay.classList.add("open"); }
+    function closeHelp() { if (els.helpOverlay) els.helpOverlay.classList.remove("open"); }
+    function openBook() { if (els.bookOverlay) els.bookOverlay.classList.add("open"); }
+    function closeBook() { if (els.bookOverlay) els.bookOverlay.classList.remove("open"); }
+    function openMap() { if (els.mapOverlay) els.mapOverlay.classList.add("open"); }
+    function closeMap() { if (els.mapOverlay) els.mapOverlay.classList.remove("open"); }
+    function travelTo(place) {
+      state.currentLocation = LOCATIONS[place] ? place : "Kuutamoketo";
+      state.currentEnemy = pickEnemyForLocation();
+      closeMap();
+
+      if (state.gameOver) {
+        setFeedback("", currentLocationData().intro + " Aloita uusi peli, kun olet valmis.");
+        showPop("Kartta: " + state.currentLocation);
+        render();
+        return;
+      }
+
+      if (state.duelOver) {
+        setFeedback("", currentLocationData().intro + " Haasta joku täällä, kun olet valmis.");
+        showPop("Kartta: " + state.currentLocation);
+        render();
+        return;
+      }
+
+      startDuel();
+      setFeedback("", currentLocationData().intro + " Uusi haastaja astuu esiin.");
+      showPop("Kartta: " + state.currentLocation);
+      render();
+    }
+
+    bind("newGameBtn", "click", startGame);
+    bind("helpBtn", "click", openHelp);
+    bind("challengeBtn", "click", challengeOpponent);
+    bind("bookBtn", "click", openBook);
+    bind("mapBtn", "click", openMap);
+    bind("closeHelpBtn", "click", closeHelp);
+    bind("closeBookBtn", "click", closeBook);
+    bind("closeMapBtn", "click", closeMap);
+
+    [els.helpOverlay, els.bookOverlay, els.mapOverlay].forEach(overlay => {
+      if (!overlay) return;
+      overlay.addEventListener("click", event => {
+        if (event.target === overlay) overlay.classList.remove("open");
+      });
+    });
+
+    document.querySelectorAll("[data-travel]").forEach(button => {
+      button.addEventListener("click", () => travelTo(button.dataset.travel || "toinen ranta"));
+    });
+
+    startGame();
+  </script>
 </body>
 </html>
