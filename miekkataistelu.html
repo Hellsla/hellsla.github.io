@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miekkainsultti — Suomalainen Miekkataistelu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    #game {
+      width: min(800px, 100vw);
+      height: min(600px, 75vw);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Scene ── */
+    #scene {
+      flex: 0 0 55%;
+      position: relative;
+      background: linear-gradient(180deg,
+        #06061e 0%, #0d0d3a 35%, #1a1050 60%, #2a1a0a 85%, #1a0f05 100%);
+      overflow: hidden;
+    }
+
+    #ground {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 28%;
+      background: linear-gradient(180deg, #1e3a10 0%, #0f2008 100%);
+    }
+
+    /* cliff silhouette */
+    #cliff {
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 12%;
+      background: #0f2008;
+      clip-path: polygon(0% 100%, 0% 60%, 8% 55%, 15% 50%, 25% 52%, 38% 45%, 50% 40%, 62% 45%, 75% 50%, 85% 48%, 92% 52%, 100% 55%, 100% 100%);
+    }
+
+    #moon {
+      position: absolute;
+      top: 8%; right: 18%;
+      width: clamp(36px, 7%, 60px);
+      aspect-ratio: 1;
+      background: radial-gradient(circle at 40% 38%, #fffce0, #ffd54f 60%, #c8941a);
+      border-radius: 50%;
+      box-shadow: 0 0 clamp(10px, 2vw, 24px) #ffd54f99;
+    }
+
+    /* Health bars */
+    .hbar-wrap {
+      position: absolute;
+      top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    #phbar { left: 8px; }
+    #ehbar { right: 8px; align-items: flex-end; }
+
+    .hbar-label {
+      font-size: clamp(4px, 0.9vw, 7px);
+      color: #ffcc00;
+      letter-spacing: 1px;
+    }
+
+    .hbar {
+      width: clamp(60px, 13vw, 110px);
+      height: clamp(7px, 1.4vw, 12px);
+      background: #111;
+      border: 2px solid #ffcc00;
+    }
+
+    .hfill {
+      height: 100%;
+      width: 100%;
+      background: #00cc44;
+      transition: width 0.3s ease, background 0.3s;
+    }
+
+    /* Characters */
+    #player-char, #enemy-char {
+      position: absolute;
+      bottom: 28%;
+      width: clamp(40px, 9vw, 76px);
+    }
+    #player-char { left: 12%; }
+    #enemy-char  { right: 12%; transform: scaleX(-1); }
+
+    @keyframes hit-shake {
+      0%   { transform: translateX(0); }
+      20%  { transform: translateX(-14px); }
+      50%  { transform: translateX(8px); }
+      75%  { transform: translateX(-4px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes hit-shake-r {
+      0%   { transform: scaleX(-1) translateX(0); }
+      20%  { transform: scaleX(-1) translateX(-14px); }
+      50%  { transform: scaleX(-1) translateX(8px); }
+      75%  { transform: scaleX(-1) translateX(-4px); }
+      100% { transform: scaleX(-1) translateX(0); }
+    }
+    .shake-l { animation: hit-shake   0.4s ease; }
+    .shake-r { animation: hit-shake-r 0.4s ease; }
+
+    /* torches */
+    .torch {
+      position: absolute;
+      bottom: 28%;
+      width: clamp(8px, 1.5vw, 14px);
+    }
+    #torch-l { left: 30%; }
+    #torch-r { right: 30%; }
+
+    .torch-flame {
+      width: 100%;
+      aspect-ratio: 1;
+      background: radial-gradient(ellipse at 50% 80%, #ff4400, #ffcc00 40%, transparent 70%);
+      animation: flicker 0.4s ease-in-out infinite alternate;
+      transform-origin: bottom center;
+    }
+    .torch-stick {
+      width: 30%;
+      margin: 0 auto;
+      height: 200%;
+      background: #5a3010;
+    }
+    @keyframes flicker {
+      from { transform: scaleX(1)   scaleY(1);   opacity: 0.9; }
+      to   { transform: scaleX(0.8) scaleY(1.15); opacity: 1;   }
+    }
+
+    /* ── UI panel ── */
+    #ui {
+      flex: 1;
+      background: #000;
+      border-top: 3px solid #ffcc00;
+      display: flex;
+      flex-direction: column;
+      padding: clamp(6px, 1.2vw, 12px);
+      gap: clamp(4px, 0.8vw, 8px);
+    }
+
+    #insult-box {
+      border: 2px solid #ffcc00;
+      padding: clamp(5px, 1vw, 10px) clamp(6px, 1.2vw, 12px);
+      color: #ffcc00;
+      font-size: clamp(5px, 0.95vw, 8.5px);
+      line-height: 1.9;
+      flex: 0 0 auto;
+      min-height: 30%;
+    }
+
+    #insult-prefix {
+      color: #ff7744;
+      display: block;
+      margin-bottom: 4px;
+      font-size: clamp(4px, 0.8vw, 7px);
+      letter-spacing: 1px;
+    }
+
+    #choices {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(3px, 0.5vw, 5px);
+      flex: 1;
+    }
+
+    .cbtn {
+      font-family: 'Press Start 2P', monospace;
+      font-size: clamp(4px, 0.85vw, 7.5px);
+      background: #000;
+      color: #ccc;
+      border: 2px solid #333;
+      padding: clamp(4px, 0.8vw, 8px) clamp(6px, 1vw, 10px);
+      cursor: pointer;
+      text-align: left;
+      line-height: 1.7;
+      transition: background 0.1s, border-color 0.1s, color 0.1s;
+      flex: 1;
+    }
+    .cbtn:hover:not(:disabled) {
+      background: #0d0d3a;
+      border-color: #ffcc00;
+      color: #ffcc00;
+    }
+    .cbtn.correct {
+      background: #002a00;
+      border-color: #00ee55;
+      color: #00ee55;
+    }
+    .cbtn.wrong {
+      background: #2a0000;
+      border-color: #ee2200;
+      color: #ee2200;
+    }
+
+    #status {
+      font-size: clamp(4px, 0.8vw, 7px);
+      color: #ffffff;
+      text-align: center;
+      min-height: clamp(12px, 2vw, 18px);
+      letter-spacing: 1px;
+    }
+
+    /* ── Overlay ── */
+    #overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(10px, 2vw, 20px);
+      z-index: 20;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #overlay-title {
+      font-size: clamp(9px, 2vw, 18px);
+      color: #ffcc00;
+      line-height: 2.2;
+      text-shadow: 3px 3px #4a1a00;
+    }
+
+    #overlay-sub {
+      font-size: clamp(5px, 1vw, 9px);
+      color: #aaa;
+      line-height: 2;
+      max-width: 80%;
+    }
+
+    #start-btn {
+      font-family: 'Press Start 2P', monospace;
+      font-size: clamp(7px, 1.4vw, 12px);
+      background: #1a3d28;
+      color: #ffcc00;
+      border: 3px solid #ffcc00;
+      padding: clamp(8px,1.5vw,12px) clamp(14px,2.5vw,24px);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #start-btn:hover { background: #265c3c; }
+
+    #round-counter {
+      position: absolute;
+      top: 6px; left: 50%;
+      transform: translateX(-50%);
+      font-size: clamp(4px, 0.8vw, 7px);
+      color: #ffcc0088;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+<div id="game">
+
+  <!-- ── Scene ── -->
+  <div id="scene">
+    <div id="cliff"></div>
+    <div id="ground"></div>
+    <div id="moon"></div>
+
+    <!-- torches -->
+    <div class="torch" id="torch-l">
+      <div class="torch-flame"></div>
+      <div class="torch-stick"></div>
+    </div>
+    <div class="torch" id="torch-r">
+      <div class="torch-flame" style="animation-delay:0.2s"></div>
+      <div class="torch-stick"></div>
+    </div>
+
+    <!-- health bars -->
+    <div class="hbar-wrap" id="phbar">
+      <span class="hbar-label">SINÄ</span>
+      <div class="hbar"><div class="hfill" id="pfill"></div></div>
+    </div>
+    <div class="hbar-wrap" id="ehbar">
+      <span class="hbar-label">VIHOLLINEN</span>
+      <div class="hbar"><div class="hfill" id="efill"></div></div>
+    </div>
+
+    <span id="round-counter"></span>
+
+    <!-- Player – Guybrush-style -->
+    <div id="player-char">
+      <svg viewBox="0 0 32 52" xmlns="http://www.w3.org/2000/svg">
+        <!-- hair -->
+        <rect x="8" y="0" width="16" height="4" fill="#7a4010"/>
+        <!-- head -->
+        <rect x="9" y="3" width="14" height="12" fill="#f5c87a"/>
+        <!-- eyes -->
+        <rect x="12" y="7" width="2" height="2" fill="#1a1a1a"/>
+        <rect x="18" y="7" width="2" height="2" fill="#1a1a1a"/>
+        <!-- mouth -->
+        <rect x="14" y="12" width="4" height="1" fill="#c0703a"/>
+        <!-- body -->
+        <rect x="9" y="15" width="14" height="13" fill="#e8d06a"/>
+        <!-- belt -->
+        <rect x="8" y="27" width="16" height="3" fill="#8B4513"/>
+        <rect x="14" y="28" width="4" height="3" fill="#c8901a"/>
+        <!-- legs -->
+        <rect x="9"  y="30" width="6" height="14" fill="#2d3a6b"/>
+        <rect x="17" y="30" width="6" height="14" fill="#2d3a6b"/>
+        <!-- boots -->
+        <rect x="7"  y="42" width="8" height="6" fill="#111"/>
+        <rect x="17" y="42" width="8" height="6" fill="#111"/>
+        <!-- arm -->
+        <rect x="23" y="16" width="4" height="9" fill="#f5c87a"/>
+        <!-- sword blade -->
+        <rect x="26" y="6"  width="2" height="20" fill="#d0d8e8"/>
+        <rect x="25" y="10" width="4" height="1"  fill="#888"/>
+        <!-- guard -->
+        <rect x="23" y="18" width="8" height="2" fill="#8B4513"/>
+      </svg>
+    </div>
+
+    <!-- Enemy – ghost pirate -->
+    <div id="enemy-char">
+      <svg viewBox="0 0 32 52" xmlns="http://www.w3.org/2000/svg">
+        <!-- hat brim -->
+        <rect x="4"  y="2"  width="24" height="3" fill="#111"/>
+        <!-- hat top -->
+        <rect x="8"  y="-6" width="16" height="9" fill="#111"/>
+        <!-- skull decoration -->
+        <rect x="13" y="-2" width="6" height="4" fill="#e0e0e0"/>
+        <rect x="14" y="0"  width="2" height="2" fill="#111"/>
+        <rect x="17" y="0"  width="2" height="2" fill="#111"/>
+        <!-- head -->
+        <rect x="9"  y="5"  width="14" height="12" fill="#b8d8b8"/>
+        <!-- glowing eyes -->
+        <rect x="11" y="9"  width="3" height="3" fill="#ff3300"/>
+        <rect x="18" y="9"  width="3" height="3" fill="#ff3300"/>
+        <!-- scar -->
+        <rect x="16" y="8"  width="1" height="6" fill="#66000088"/>
+        <!-- coat -->
+        <rect x="7"  y="17" width="18" height="14" fill="#2d1a4e"/>
+        <rect x="13" y="17" width="2"  height="14" fill="#1a0a2e"/>
+        <!-- epaulette -->
+        <rect x="7"  y="17" width="4"  height="3" fill="#aa8800"/>
+        <rect x="21" y="17" width="4"  height="3" fill="#aa8800"/>
+        <!-- belt -->
+        <rect x="7"  y="30" width="18" height="3" fill="#ffcc00"/>
+        <!-- legs -->
+        <rect x="9"  y="33" width="6"  height="12" fill="#1a1a3e"/>
+        <rect x="17" y="33" width="6"  height="12" fill="#1a1a3e"/>
+        <!-- boots -->
+        <rect x="7"  y="43" width="8"  height="5" fill="#0a0a0a"/>
+        <rect x="17" y="43" width="8"  height="5" fill="#0a0a0a"/>
+        <!-- arm -->
+        <rect x="23" y="18" width="4"  height="9" fill="#b8d8b8"/>
+        <!-- sword -->
+        <rect x="26" y="7"  width="2"  height="21" fill="#b0b8c8"/>
+        <rect x="25" y="11" width="4"  height="1"  fill="#777"/>
+        <!-- guard -->
+        <rect x="23" y="20" width="8"  height="2" fill="#5a3a0a"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ── UI panel ── -->
+  <div id="ui">
+    <div id="insult-box">
+      <span id="insult-prefix">VIHOLLINEN HUUTAA:</span>
+      <span id="insult-text"></span>
+    </div>
+    <div id="choices">
+      <button class="cbtn" id="btn0" onclick="choose(0)"></button>
+      <button class="cbtn" id="btn1" onclick="choose(1)"></button>
+      <button class="cbtn" id="btn2" onclick="choose(2)"></button>
+    </div>
+    <div id="status"></div>
+  </div>
+
+  <!-- ── Overlay ── -->
+  <div id="overlay">
+    <div id="overlay-title">⚔ MIEKKAINSULTTI ⚔<br>Suomalainen Miekkataistelu</div>
+    <div id="overlay-sub">
+      Vihollinen heittää loukkauksen.<br>
+      Valitse oikea vastaisku säilyttääksesi kunniasi!<br>
+      Väärä vastaus — sinä saat osumaa.<br>
+      Oikea vastaus — vihollinen saa osumaa.
+    </div>
+    <button id="start-btn" onclick="startGame()">ALOITA TAISTELU!</button>
+  </div>
+
+</div>
+<script>
+const duels = [
+  {
+    insult: '"Aina koski kohinassa ja aina tyhmä tohinassa."',
+    correct: '"Hullu huutaa, viisas kuulee vähemmänkin."',
+    wrong: [
+      '"Koski on voimallinen — ota se kehuna!"',
+      '"Tohinassani on tarmoa, etkä voi sitä kieltää!"'
+    ]
+  },
+  {
+    insult: '"Helppo tyhmä narrata."',
+    correct: '"Hullu vipuun käy, viisas viuhtoo sivutse."',
+    wrong: [
+      '"En ole tyhmä — olen erikoislaatuisen analyyttinen!"',
+      '"Narraaminen on häpeällinen tapa, kasvata tapasi ensin!"'
+    ]
+  },
+  {
+    insult: '"Joka kuuseen kurkottaa, se katajaan kapsahtaa."',
+    correct: '"Paree kumartaa kuin kurottaa."',
+    wrong: [
+      '"Minä kurkottelen kuusen latvaan ja pidän siellä kotini!"',
+      '"Kataja on arvokas kasvi enkä häpeä siihen kapsahtamista!"'
+    ]
+  },
+  {
+    insult: '"Ei haukkuva koira jänestä saa."',
+    correct: '"Ei haukkuva koira pure."',
+    wrong: [
+      '"Minä en hauku enkä myöskään jäniksiä tarvitse!"',
+      '"Jänikset ovat nopeita — asia erikseen, minä olen nopeampi!"'
+    ]
+  },
+  {
+    insult: '"Ahne ottaa rahat ja vie vielä kukkaronki."',
+    correct: '"Ahneella on paskanen loppu."',
+    wrong: [
+      '"Minä en ole ahne — olen vain tarkka taloudenpitäjä!"',
+      '"Kukkaroni pysyy minulla, se on lakiin kirjattu!"'
+    ]
+  },
+  {
+    insult: '"Laiska tyäs huomiseen lykkää."',
+    correct: '"Ahkera kaikki voittaa."',
+    wrong: [
+      '"Huominen on uusi päivä — silloin on enemmän energiaa!"',
+      '"Lykkääminen on viisautta, ajattele se strategiana!"'
+    ]
+  }
+];
+
+let queue = [], idx = 0, php = 3, ehp = 3, locked = false;
+
+function rnd(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function startGame() {
+  queue = rnd(duels);
+  idx = 0; php = 3; ehp = 3; locked = false;
+  document.getElementById('overlay').style.display = 'none';
+  updateHP();
+  loadDuel();
+}
+
+function updateHP() {
+  const pf = document.getElementById('pfill');
+  const ef = document.getElementById('efill');
+  pf.style.width = (php / 3 * 100) + '%';
+  ef.style.width = (ehp / 3 * 100) + '%';
+  pf.style.background = php > 1 ? '#00cc44' : '#ee2200';
+  ef.style.background = ehp > 1 ? '#00cc44' : '#ee2200';
+}
+
+let _opts = [], _correct = 0;
+
+function loadDuel() {
+  const d = queue[idx % queue.length];
+  _opts = rnd([
+    { t: d.correct, ok: true },
+    { t: d.wrong[0], ok: false },
+    { t: d.wrong[1], ok: false }
+  ]);
+  _correct = _opts.findIndex(o => o.ok);
+
+  document.getElementById('insult-text').textContent = d.insult;
+  document.getElementById('status').textContent = '';
+  document.getElementById('round-counter').textContent =
+    'KIERROS ' + (idx + 1);
+
+  ['btn0','btn1','btn2'].forEach((id, i) => {
+    const b = document.getElementById(id);
+    b.textContent = (i + 1) + '. ' + _opts[i].t;
+    b.className = 'cbtn';
+    b.disabled = false;
+  });
+  locked = false;
+}
+
+function choose(i) {
+  if (locked) return;
+  locked = true;
+  ['btn0','btn1','btn2'].forEach(id => document.getElementById(id).disabled = true);
+
+  if (_opts[i].ok) {
+    document.getElementById('btn' + i).classList.add('correct');
+    ehp--;
+    document.getElementById('status').textContent = '⚔ OSUMA! Vihollinen ottaa osumaa!';
+    shake('enemy-char', true);
+  } else {
+    document.getElementById('btn' + i).classList.add('wrong');
+    document.getElementById('btn' + _correct).classList.add('correct');
+    php--;
+    document.getElementById('status').textContent = '💀 VÄÄRÄ! Vihollinen nauraa ja iskee!';
+    shake('player-char', false);
+  }
+  updateHP();
+
+  setTimeout(() => {
+    if (php <= 0) return endGame(false);
+    if (ehp <= 0) return endGame(true);
+    idx++;
+    if (idx >= queue.length) { queue = rnd(duels); idx = 0; }
+    loadDuel();
+  }, 2000);
+}
+
+function shake(id, isEnemy) {
+  const el = document.getElementById(id);
+  el.classList.remove('shake-l', 'shake-r');
+  void el.offsetWidth;
+  el.classList.add(isEnemy ? 'shake-r' : 'shake-l');
+  setTimeout(() => el.classList.remove('shake-l','shake-r'), 450);
+}
+
+function endGame(won) {
+  const ov = document.getElementById('overlay');
+  ov.style.display = 'flex';
+  document.getElementById('overlay-title').innerHTML = won
+    ? '🏆 VOITTO! 🏆<br>Vihollinen on kukistettu!'
+    : '💀 TAPPIO 💀<br>Vihollisen sanat lävistivät sinut!';
+  document.getElementById('overlay-sub').textContent = won
+    ? 'Olet Suomen miekkainsulttikilpailun mestari!'
+    : 'Ehkä pitäisi kuunnella enemmän Tommi Läntistä harjoitellaksesi vastauksia...';
+  document.getElementById('start-btn').textContent = won
+    ? 'UUSI TAISTELU!'
+    : 'YRITÄ UUDELLEEN!';
+}
+
+// generate stars
+window.addEventListener('load', () => {
+  const scene = document.getElementById('scene');
+  for (let i = 0; i < 45; i++) {
+    const s = document.createElement('div');
+    const sz = Math.random() * 2 + 1;
+    s.style.cssText = `position:absolute;border-radius:50%;
+      width:${sz}px;height:${sz}px;
+      background:#fff;
+      top:${Math.random() * 58}%;
+      left:${Math.random() * 100}%;
+      opacity:${0.35 + Math.random() * 0.65}`;
+    scene.appendChild(s);
+  }
+});
+</script>
+</body>
+</html>
