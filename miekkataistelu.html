@@ -245,12 +245,13 @@
     .fighter {
       position: absolute;
       bottom: 0;
-      width: min(9vw, 94px);
-      height: min(17vw, 178px);
-      min-width: 58px;
-      min-height: 116px;
+      width: min(11vw, 112px);
+      height: min(20vw, 210px);
+      min-width: 70px;
+      min-height: 140px;
       transform-origin: bottom center;
       filter: drop-shadow(0 10px 3px rgba(0,0,0,.52));
+      transition: left 0.5s cubic-bezier(0.34,1.4,0.64,1), right 0.5s cubic-bezier(0.34,1.4,0.64,1);
       --skin: #f0ba82;
       --skin-shadow: #c98055;
       --hair: #8c4e22;
@@ -1255,6 +1256,33 @@
       box-shadow: 0 0 0 2px rgba(255,255,255,.5), 3px 3px 0 rgba(0,0,0,.35);
     }
 
+    /* ── POSITION PIPS ── */
+    .pips-row {
+      position: absolute;
+      bottom: 1.5%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: clamp(3px, 0.6vw, 6px);
+      z-index: 9;
+      pointer-events: none;
+    }
+    .pip-dot {
+      width: clamp(10px, 2vw, 18px);
+      height: clamp(5px, 1vw, 9px);
+      background: #08102a;
+      border: 1px solid #1a3070;
+      transition: background 0.2s;
+    }
+    .pip-dot.ps { background: #1e4ab0; }
+    .pip-dot.cur {
+      background: #ffffff;
+      border-radius: 50%;
+      width: clamp(7px, 1.4vw, 13px);
+      height: clamp(7px, 1.4vw, 13px);
+    }
+
     @media (max-width: 780px) {
       body {
         padding: 0;
@@ -1313,7 +1341,8 @@
         <div class="status-pill" id="hudRight">Ylpeys 3</div>
       </div>
 
-      <div class="speech-line" id="insultText">“Aloita uusi peli.”</div>
+      <div class=”pips-row” id=”pipsRow”></div>
+      <div class=”speech-line” id=”insultText”>”Aloita uusi peli.”</div>
 
       <div class="fighters">
         <div class="fighter player" id="playerFighter" aria-hidden="true">
@@ -1496,6 +1525,7 @@
     const state = {
       playerHp: 5,
       enemyHp: 3,
+      battlePos: 4,
       wins: 0,
       currentEnemy: ENEMIES[0],
       currentLocation: "Kuutamoketo",
@@ -1676,6 +1706,7 @@
     function startGame() {
       state.playerHp = 5;
       state.enemyHp = 3;
+      state.battlePos = 4;
       state.wins = 0;
       state.currentLocation = "Kuutamoketo";
       state.currentEnemy = pickEnemyForLocation();
@@ -1693,6 +1724,7 @@
 
     function startDuel() {
       state.playerHp = 5;
+      state.battlePos = 4;
       state.currentEnemy = pickEnemyForLocation();
       state.enemyHp = Math.min(3 + Math.floor(state.wins / 3), 6);
       state.usedThisDuel = new Set();
@@ -1761,6 +1793,7 @@
 
       if (correct) {
         state.enemyHp -= 1;
+        state.battlePos = Math.min(8, state.battlePos + 1);
         flash(els.enemyFighter, "hit-right");
         setFeedback("good", "Osuma! " + state.currentPair.reason);
 
@@ -1789,6 +1822,7 @@
         nextInsult();
       } else {
         state.playerHp -= 1;
+        state.battlePos = Math.max(0, state.battlePos - 1);
         flash(els.playerFighter, "hit-left");
 
         if (!state.knownWins.has(state.currentPair.win)) {
@@ -1884,6 +1918,23 @@
       if (els.hudLeft) els.hudLeft.textContent = "Äly " + state.playerHp;
       if (els.hudCenter) els.hudCenter.textContent = "Voitot " + state.wins + " · " + rank;
       if (els.hudRight) els.hudRight.textContent = "Ylpeys " + state.enemyHp;
+
+      /* advance / retreat */
+      const MAX_BP = 8;
+      const shift = (state.battlePos - 4) * 4;
+      if (els.playerFighter) els.playerFighter.style.left = (36 + shift) + '%';
+      if (els.enemyFighter)  els.enemyFighter.style.right  = (35 - shift) + '%';
+
+      /* pips */
+      const pipsRow = document.getElementById('pipsRow');
+      if (pipsRow) {
+        pipsRow.innerHTML = '';
+        for (let i = 0; i <= MAX_BP; i++) {
+          const d = document.createElement('div');
+          d.className = 'pip-dot' + (i < state.battlePos ? ' ps' : '') + (i === state.battlePos ? ' cur' : '');
+          pipsRow.appendChild(d);
+        }
+      }
       if (els.challengeBtn) {
         els.challengeBtn.disabled = state.gameOver || (!state.duelOver && state.knownWins.size >= PAIRS.length);
         els.challengeBtn.textContent = state.duelOver ? "Seuraava kaksintaistelu" : "Haasta";
