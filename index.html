@@ -218,38 +218,10 @@
 
     /* ---------- Hero ---------- */
     .hero {
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
       padding: 2px 0 30px;
       animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: -82px;
-      right: -70px;
-      width: min(54vw, 650px);
-      height: 430px;
-      z-index: -1;
-      pointer-events: none;
-      opacity: 0.16;
-      background-image: url("./lake-saimaa-bg.png");
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: contain;
-
-      -webkit-mask-image:
-        linear-gradient(to right, transparent 0%, black 28%, black 100%),
-        linear-gradient(to bottom, black 0%, black 64%, transparent 100%);
-      -webkit-mask-composite: source-in;
-
-      mask-image:
-        linear-gradient(to right, transparent 0%, black 28%, black 100%),
-        linear-gradient(to bottom, black 0%, black 64%, transparent 100%);
-      mask-composite: intersect;
-    }
 
     .eyebrow {
       position: relative;
@@ -736,14 +708,6 @@
       .header-right { gap: 8px; }
 
       .hero { padding: 2px 0 28px; }
-
-      .hero::before {
-        top: -24px;
-        right: -160px;
-        width: 95vw;
-        height: 300px;
-        opacity: 0.10;
-      }
 
       .profile {
         grid-template-columns: 1fr;
