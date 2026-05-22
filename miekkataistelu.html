@@ -5,408 +5,434 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Miekkainsultti — Suomalainen Miekkataistelu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #0a0a1a;
+      background: #000;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      font-family: 'Press Start 2P', monospace;
+      user-select: none;
     }
 
+    /* ── GAME SHELL ── */
     #game {
       width: min(800px, 100vw);
       height: min(600px, 75vw);
       position: relative;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      background: #000;
     }
 
-    /* ── Scene ── */
+    /* ── SCENE (top ~62%) ── */
     #scene {
-      flex: 0 0 55%;
-      position: relative;
-      background: linear-gradient(180deg,
-        #06061e 0%, #0d0d3a 35%, #1a1050 60%, #2a1a0a 85%, #1a0f05 100%);
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 62%;
       overflow: hidden;
     }
 
-    #ground {
+    #sky {
       position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 28%;
-      background: linear-gradient(180deg, #1e3a10 0%, #0f2008 100%);
+      inset: 0;
+      background: radial-gradient(ellipse 120% 100% at 25% 0%,
+        #0f2460 0%, #081440 25%, #040c28 55%, #020818 80%, #000510 100%);
     }
 
-    /* cliff silhouette */
-    #cliff {
+    /* tree + ground silhouette */
+    #landscape {
       position: absolute;
-      bottom: 28%;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    /* position pips */
+    #pos-bar {
+      position: absolute;
+      top: 5px;
       left: 50%;
       transform: translateX(-50%);
-      width: 100%;
-      height: 12%;
-      background: #0f2008;
-      clip-path: polygon(0% 100%, 0% 60%, 8% 55%, 15% 50%, 25% 52%, 38% 45%, 50% 40%, 62% 45%, 75% 50%, 85% 48%, 92% 52%, 100% 55%, 100% 100%);
-    }
-
-    #moon {
-      position: absolute;
-      top: 8%; right: 18%;
-      width: clamp(36px, 7%, 60px);
-      aspect-ratio: 1;
-      background: radial-gradient(circle at 40% 38%, #fffce0, #ffd54f 60%, #c8941a);
-      border-radius: 50%;
-      box-shadow: 0 0 clamp(10px, 2vw, 24px) #ffd54f99;
-    }
-
-    /* Health bars */
-    .hbar-wrap {
-      position: absolute;
-      top: 6px;
       display: flex;
-      flex-direction: column;
-      gap: 3px;
+      align-items: center;
+      gap: clamp(3px, 0.6vw, 6px);
+      z-index: 5;
     }
-    #phbar { left: 8px; }
-    #ehbar { right: 8px; align-items: flex-end; }
+    .pip {
+      width: clamp(12px, 2.4vw, 20px);
+      height: clamp(6px, 1.2vw, 10px);
+      background: #0a1030;
+      border: 1px solid #1a3080;
+      transition: background 0.25s;
+    }
+    .pip.won   { background: #2255cc; }
+    .pip.cur   { background: #fff; border-radius: 50%;
+                 width: clamp(8px, 1.6vw, 14px); height: clamp(8px, 1.6vw, 14px); }
 
-    .hbar-label {
-      font-size: clamp(4px, 0.9vw, 7px);
-      color: #ffcc00;
-      letter-spacing: 1px;
+    /* ── FIGHTERS (move left/right as one unit) ── */
+    #fighters-wrap {
+      position: absolute;
+      /* height and bottom set so characters stand on the ground line */
+      bottom: 16%;
+      width: 68%;
+      height: 75%;
+      transition: left 0.6s cubic-bezier(0.34, 1.3, 0.64, 1);
     }
 
-    .hbar {
-      width: clamp(60px, 13vw, 110px);
-      height: clamp(7px, 1.4vw, 12px);
-      background: #111;
-      border: 2px solid #ffcc00;
-    }
-
-    .hfill {
+    #fighters-svg {
+      width: 100%;
       height: 100%;
-      width: 100%;
-      background: #00cc44;
-      transition: width 0.3s ease, background 0.3s;
+      overflow: visible;
     }
 
-    /* Characters */
-    #player-char, #enemy-char {
+    /* individual character shake/advance */
+    #p-char, #e-char {
+      transition: transform 0.05s;
+    }
+
+    @keyframes p-advance {
+      0%  { transform: translateX(0); }
+      35% { transform: translateX(6px); }
+      100%{ transform: translateX(0); }
+    }
+    @keyframes p-retreat {
+      0%  { transform: translateX(0); }
+      20% { transform: translateX(-10px); }
+      55% { transform: translateX(5px); }
+      80% { transform: translateX(-3px); }
+      100%{ transform: translateX(0); }
+    }
+    @keyframes e-retreat {
+      0%  { transform: translateX(0); }
+      35% { transform: translateX(-6px); }
+      100%{ transform: translateX(0); }
+    }
+    @keyframes e-advance {
+      0%  { transform: translateX(0); }
+      20% { transform: translateX(10px); }
+      55% { transform: translateX(-5px); }
+      80% { transform: translateX(3px); }
+      100%{ transform: translateX(0); }
+    }
+    .p-adv { animation: p-advance 0.5s ease forwards; }
+    .p-ret { animation: p-retreat 0.45s ease forwards; }
+    .e-ret { animation: e-retreat 0.5s ease forwards; }
+    .e-adv { animation: e-advance 0.45s ease forwards; }
+
+    /* sword clash spark */
+    #clash-spark {
       position: absolute;
-      bottom: 28%;
-      width: clamp(40px, 9vw, 76px);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.05s;
     }
-    #player-char { left: 12%; }
-    #enemy-char  { right: 12%; transform: scaleX(-1); }
+    #clash-spark.show { opacity: 1; animation: spark-fade 0.45s ease forwards; }
+    @keyframes spark-fade {
+      0%  { opacity: 1; transform: scale(1); }
+      60% { opacity: 0.8; transform: scale(1.3); }
+      100%{ opacity: 0; transform: scale(0.5); }
+    }
 
-    @keyframes hit-shake {
-      0%   { transform: translateX(0); }
-      20%  { transform: translateX(-14px); }
-      50%  { transform: translateX(8px); }
-      75%  { transform: translateX(-4px); }
-      100% { transform: translateX(0); }
-    }
-    @keyframes hit-shake-r {
-      0%   { transform: scaleX(-1) translateX(0); }
-      20%  { transform: scaleX(-1) translateX(-14px); }
-      50%  { transform: scaleX(-1) translateX(8px); }
-      75%  { transform: scaleX(-1) translateX(-4px); }
-      100% { transform: scaleX(-1) translateX(0); }
-    }
-    .shake-l { animation: hit-shake   0.4s ease; }
-    .shake-r { animation: hit-shake-r 0.4s ease; }
-
-    /* torches */
-    .torch {
+    /* ── DIALOG BOX (bottom 38%) ── */
+    #dialog {
       position: absolute;
-      bottom: 28%;
-      width: clamp(8px, 1.5vw, 14px);
-    }
-    #torch-l { left: 30%; }
-    #torch-r { right: 30%; }
-
-    .torch-flame {
-      width: 100%;
-      aspect-ratio: 1;
-      background: radial-gradient(ellipse at 50% 80%, #ff4400, #ffcc00 40%, transparent 70%);
-      animation: flicker 0.4s ease-in-out infinite alternate;
-      transform-origin: bottom center;
-    }
-    .torch-stick {
-      width: 30%;
-      margin: 0 auto;
-      height: 200%;
-      background: #5a3010;
-    }
-    @keyframes flicker {
-      from { transform: scaleX(1)   scaleY(1);   opacity: 0.9; }
-      to   { transform: scaleX(0.8) scaleY(1.15); opacity: 1;   }
-    }
-
-    /* ── UI panel ── */
-    #ui {
-      flex: 1;
-      background: #000;
-      border-top: 3px solid #ffcc00;
+      bottom: 0; left: 0; right: 0;
+      height: 38%;
+      background: #000814;
+      border-top: 3px solid #1a2d80;
       display: flex;
       flex-direction: column;
-      padding: clamp(6px, 1.2vw, 12px);
+      padding: clamp(6px, 1.2vw, 14px) clamp(10px, 2vw, 22px);
       gap: clamp(4px, 0.8vw, 8px);
     }
 
-    #insult-box {
-      border: 2px solid #ffcc00;
-      padding: clamp(5px, 1vw, 10px) clamp(6px, 1.2vw, 12px);
-      color: #ffcc00;
-      font-size: clamp(5px, 0.95vw, 8.5px);
-      line-height: 1.9;
-      flex: 0 0 auto;
-      min-height: 30%;
+    #insult-text {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(8px, 1.45vw, 13px);
+      color: #dde8ff;
+      line-height: 1.6;
+      font-style: italic;
+      border-bottom: 1px solid #1a2560;
+      padding-bottom: clamp(4px, 0.7vw, 7px);
+      flex-shrink: 0;
     }
 
-    #insult-prefix {
-      color: #ff7744;
-      display: block;
-      margin-bottom: 4px;
-      font-size: clamp(4px, 0.8vw, 7px);
-      letter-spacing: 1px;
-    }
-
-    #choices {
+    #options {
       display: flex;
       flex-direction: column;
-      gap: clamp(3px, 0.5vw, 5px);
+      gap: clamp(2px, 0.4vw, 4px);
       flex: 1;
+      overflow: hidden;
     }
 
-    .cbtn {
-      font-family: 'Press Start 2P', monospace;
-      font-size: clamp(4px, 0.85vw, 7.5px);
-      background: #000;
-      color: #ccc;
-      border: 2px solid #333;
-      padding: clamp(4px, 0.8vw, 8px) clamp(6px, 1vw, 10px);
-      cursor: pointer;
+    .opt {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(7px, 1.25vw, 11px);
+      color: #88aadd;
+      background: transparent;
+      border: none;
       text-align: left;
-      line-height: 1.7;
-      transition: background 0.1s, border-color 0.1s, color 0.1s;
-      flex: 1;
+      padding: clamp(2px, 0.4vw, 4px) 0;
+      cursor: pointer;
+      line-height: 1.5;
+      transition: color 0.12s;
+      flex-shrink: 0;
     }
-    .cbtn:hover:not(:disabled) {
-      background: #0d0d3a;
-      border-color: #ffcc00;
-      color: #ffcc00;
-    }
-    .cbtn.correct {
-      background: #002a00;
-      border-color: #00ee55;
-      color: #00ee55;
-    }
-    .cbtn.wrong {
-      background: #2a0000;
-      border-color: #ee2200;
-      color: #ee2200;
-    }
+    .opt:hover:not(:disabled) { color: #ffffff; }
+    .opt.correct { color: #44ee88; }
+    .opt.wrong   { color: #ee4422; }
 
     #status {
-      font-size: clamp(4px, 0.8vw, 7px);
-      color: #ffffff;
+      font-family: 'VT323', monospace;
+      font-size: clamp(10px, 2vw, 18px);
+      color: #6677aa;
       text-align: center;
-      min-height: clamp(12px, 2vw, 18px);
+      min-height: 1.4em;
       letter-spacing: 1px;
     }
 
-    /* ── Overlay ── */
+    /* ── OVERLAY ── */
     #overlay {
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.92);
+      background: rgba(0, 5, 20, 0.93);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      gap: clamp(10px, 2vw, 20px);
-      z-index: 20;
+      justify-content: center;
+      gap: clamp(12px, 2.5vw, 26px);
+      z-index: 30;
       padding: 20px;
       text-align: center;
     }
 
-    #overlay-title {
-      font-size: clamp(9px, 2vw, 18px);
-      color: #ffcc00;
-      line-height: 2.2;
-      text-shadow: 3px 3px #4a1a00;
+    #ov-title {
+      font-family: 'VT323', monospace;
+      font-size: clamp(18px, 4vw, 40px);
+      color: #ffdd44;
+      letter-spacing: 3px;
+      text-shadow: 3px 3px #000, 0 0 20px #ff880044;
     }
 
-    #overlay-sub {
-      font-size: clamp(5px, 1vw, 9px);
-      color: #aaa;
-      line-height: 2;
-      max-width: 80%;
+    #ov-sub {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(9px, 1.6vw, 15px);
+      color: #7788aa;
+      max-width: 72%;
+      line-height: 1.9;
     }
 
-    #start-btn {
-      font-family: 'Press Start 2P', monospace;
-      font-size: clamp(7px, 1.4vw, 12px);
-      background: #1a3d28;
-      color: #ffcc00;
-      border: 3px solid #ffcc00;
-      padding: clamp(8px,1.5vw,12px) clamp(14px,2.5vw,24px);
+    #ov-btn {
+      font-family: 'VT323', monospace;
+      font-size: clamp(14px, 2.8vw, 26px);
+      letter-spacing: 2px;
+      background: transparent;
+      color: #ffdd44;
+      border: 2px solid #ffdd44;
+      padding: clamp(6px, 1.2vw, 12px) clamp(18px, 3.5vw, 36px);
       cursor: pointer;
-      transition: background 0.2s;
+      transition: background 0.2s, color 0.2s;
     }
-    #start-btn:hover { background: #265c3c; }
-
-    #round-counter {
-      position: absolute;
-      top: 6px; left: 50%;
-      transform: translateX(-50%);
-      font-size: clamp(4px, 0.8vw, 7px);
-      color: #ffcc0088;
-      white-space: nowrap;
-    }
+    #ov-btn:hover { background: #ffdd44; color: #000; }
   </style>
 </head>
 <body>
 <div id="game">
 
-  <!-- ── Scene ── -->
+  <!-- ── SCENE ── -->
   <div id="scene">
-    <div id="cliff"></div>
-    <div id="ground"></div>
-    <div id="moon"></div>
+    <div id="sky"></div>
 
-    <!-- torches -->
-    <div class="torch" id="torch-l">
-      <div class="torch-flame"></div>
-      <div class="torch-stick"></div>
-    </div>
-    <div class="torch" id="torch-r">
-      <div class="torch-flame" style="animation-delay:0.2s"></div>
-      <div class="torch-stick"></div>
-    </div>
+    <!-- Landscape silhouette (SVG) -->
+    <svg id="landscape" viewBox="0 0 800 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- distant low hills -->
+      <ellipse cx="200" cy="310" rx="280" ry="60" fill="#050a18"/>
+      <ellipse cx="600" cy="315" rx="300" ry="65" fill="#050a18"/>
+      <!-- far left tree cluster -->
+      <rect x="8"  y="170" width="12" height="150" fill="#03060f"/>
+      <polygon points="14,170 -10,215 38,215"  fill="#03060f"/>
+      <polygon points="14,142 -14,195 42,195"  fill="#03060f"/>
+      <polygon points="14,115 -12,165 40,165"  fill="#03060f"/>
+      <rect x="36" y="195" width="10" height="125" fill="#03060f"/>
+      <polygon points="41,195  18,235  64,235"  fill="#03060f"/>
+      <polygon points="41,168  16,215  66,215"  fill="#03060f"/>
+      <rect x="62" y="205" width="8"  height="115" fill="#03060f"/>
+      <polygon points="66,205  46,240  86,240"  fill="#03060f"/>
+      <polygon points="66,180  44,222  88,222"  fill="#03060f"/>
+      <rect x="84" y="188" width="11" height="132" fill="#03060f"/>
+      <polygon points="89,188  64,228 114,228"  fill="#03060f"/>
+      <polygon points="89,160  62,208 116,208"  fill="#03060f"/>
+      <polygon points="89,134  65,180 113,180"  fill="#03060f"/>
+      <!-- far right tree cluster (mirror) -->
+      <rect x="780" y="170" width="12" height="150" fill="#03060f"/>
+      <polygon points="786,170 762,215 810,215"  fill="#03060f"/>
+      <polygon points="786,142 758,195 814,195"  fill="#03060f"/>
+      <polygon points="786,115 760,165 812,165"  fill="#03060f"/>
+      <rect x="754" y="195" width="10" height="125" fill="#03060f"/>
+      <polygon points="759,195 736,235 782,235"  fill="#03060f"/>
+      <polygon points="759,168 734,215 784,215"  fill="#03060f"/>
+      <rect x="730" y="205" width="8"  height="115" fill="#03060f"/>
+      <polygon points="734,205 714,240 754,240"  fill="#03060f"/>
+      <polygon points="734,180 712,222 756,222"  fill="#03060f"/>
+      <rect x="705" y="188" width="11" height="132" fill="#03060f"/>
+      <polygon points="710,188 685,228 735,228"  fill="#03060f"/>
+      <polygon points="710,160 683,208 737,208"  fill="#03060f"/>
+      <polygon points="710,134 685,180 735,180"  fill="#03060f"/>
+      <!-- low bushes mid-screen -->
+      <ellipse cx="180" cy="275" rx="60" ry="22" fill="#03060f"/>
+      <ellipse cx="620" cy="272" rx="65" ry="24" fill="#03060f"/>
+      <!-- ground strip -->
+      <rect x="0" y="268" width="800" height="52" fill="#030610"/>
+    </svg>
 
-    <!-- health bars -->
-    <div class="hbar-wrap" id="phbar">
-      <span class="hbar-label">SINÄ</span>
-      <div class="hbar"><div class="hfill" id="pfill"></div></div>
-    </div>
-    <div class="hbar-wrap" id="ehbar">
-      <span class="hbar-label">VIHOLLINEN</span>
-      <div class="hbar"><div class="hfill" id="efill"></div></div>
-    </div>
+    <!-- position pips -->
+    <div id="pos-bar"></div>
 
-    <span id="round-counter"></span>
+    <!-- moon -->
+    <div id="moon" style="
+      position:absolute; top:8%; right:16%;
+      width:clamp(28px,6%,55px); aspect-ratio:1;
+      border-radius:50%;
+      background:radial-gradient(circle at 38% 35%, #fffde8, #ffd54f 55%, #c09020);
+      box-shadow:0 0 clamp(8px,2vw,20px) #ffd54f88;
+    "></div>
 
-    <!-- Player – Guybrush-style -->
-    <div id="player-char">
-      <svg viewBox="0 0 32 52" xmlns="http://www.w3.org/2000/svg">
-        <!-- hair -->
-        <rect x="8" y="0" width="16" height="4" fill="#7a4010"/>
-        <!-- head -->
-        <rect x="9" y="3" width="14" height="12" fill="#f5c87a"/>
-        <!-- eyes -->
-        <rect x="12" y="7" width="2" height="2" fill="#1a1a1a"/>
-        <rect x="18" y="7" width="2" height="2" fill="#1a1a1a"/>
-        <!-- mouth -->
-        <rect x="14" y="12" width="4" height="1" fill="#c0703a"/>
-        <!-- body -->
-        <rect x="9" y="15" width="14" height="13" fill="#e8d06a"/>
-        <!-- belt -->
-        <rect x="8" y="27" width="16" height="3" fill="#8B4513"/>
-        <rect x="14" y="28" width="4" height="3" fill="#c8901a"/>
-        <!-- legs -->
-        <rect x="9"  y="30" width="6" height="14" fill="#2d3a6b"/>
-        <rect x="17" y="30" width="6" height="14" fill="#2d3a6b"/>
-        <!-- boots -->
-        <rect x="7"  y="42" width="8" height="6" fill="#111"/>
-        <rect x="17" y="42" width="8" height="6" fill="#111"/>
-        <!-- arm -->
-        <rect x="23" y="16" width="4" height="9" fill="#f5c87a"/>
-        <!-- sword blade -->
-        <rect x="26" y="6"  width="2" height="20" fill="#d0d8e8"/>
-        <rect x="25" y="10" width="4" height="1"  fill="#888"/>
-        <!-- guard -->
-        <rect x="23" y="18" width="8" height="2" fill="#8B4513"/>
+    <!-- fighters wrap — this element slides left/right -->
+    <div id="fighters-wrap">
+      <svg id="fighters-svg" viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+
+        <!-- ─── PLAYER (left character, sword pointing right) ─── -->
+        <g id="p-char">
+          <!-- boots -->
+          <rect x="18" y="107" width="17" height="10" fill="#110a04" rx="2"/>
+          <rect x="34" y="107" width="17" height="10" fill="#110a04" rx="2"/>
+          <!-- legs -->
+          <rect x="20" y="82"  width="12" height="27" fill="#6b3218"/>
+          <rect x="34" y="82"  width="12" height="27" fill="#6b3218"/>
+          <!-- belt -->
+          <rect x="18" y="77"  width="32" height="6"  fill="#5a2e10"/>
+          <rect x="29" y="77"  width="10" height="6"  fill="#8B5e1a"/>
+          <!-- body / shirt -->
+          <rect x="18" y="46"  width="32" height="33" fill="#e0d8c8"/>
+          <!-- shirt seam -->
+          <rect x="33" y="46"  width="4"  height="33" fill="#ccc4b4"/>
+          <!-- back arm -->
+          <rect x="10" y="52"  width="9"  height="18" fill="#f5c87a" rx="2"/>
+          <!-- head -->
+          <rect x="20" y="20"  width="26" height="28" fill="#f5c87a" rx="3"/>
+          <!-- hair -->
+          <rect x="18" y="17"  width="30" height="9"  fill="#c89018" rx="2"/>
+          <rect x="18" y="17"  width="9"  height="18" fill="#c89018" rx="2"/>
+          <!-- eyes -->
+          <rect x="25" y="28"  width="4" height="4" fill="#1a1a1a"/>
+          <rect x="34" y="28"  width="4" height="4" fill="#1a1a1a"/>
+          <!-- determined brow -->
+          <rect x="24" y="25"  width="6" height="2" fill="#a07010"/>
+          <rect x="33" y="25"  width="6" height="2" fill="#a07010"/>
+          <!-- mouth -->
+          <rect x="27" y="40"  width="10" height="2" fill="#c07050"/>
+          <!-- sword arm (extended forward) -->
+          <rect x="49" y="58"  width="10" height="14" fill="#f5c87a" rx="1"/>
+          <!-- guard (crosspiece) -->
+          <rect x="57" y="54"  width="6"  height="22" fill="#8b6914" rx="1"/>
+          <!-- blade -->
+          <rect x="62" y="60"  width="90" height="4"  fill="#ccd8f0" rx="1"/>
+          <!-- tip -->
+          <polygon points="152,60 152,64 158,62" fill="#ccd8f0"/>
+        </g>
+
+        <!-- ─── ENEMY (right character, mirrored design, different colours) ─── -->
+        <g id="e-char">
+          <!-- boots -->
+          <rect x="249" y="107" width="17" height="10" fill="#080810" rx="2"/>
+          <rect x="265" y="107" width="17" height="10" fill="#080810" rx="2"/>
+          <!-- legs -->
+          <rect x="251" y="82" width="12" height="27" fill="#1e1e6a"/>
+          <rect x="265" y="82" width="12" height="27" fill="#1e1e6a"/>
+          <!-- belt -->
+          <rect x="249" y="77" width="32" height="6"  fill="#aa8800"/>
+          <rect x="260" y="77" width="10" height="6"  fill="#cc9900"/>
+          <!-- coat -->
+          <rect x="249" y="46" width="32" height="33" fill="#2e1650"/>
+          <!-- coat front panel -->
+          <rect x="264" y="46" width="5"  height="33" fill="#1e0a38"/>
+          <!-- epaulettes -->
+          <rect x="245" y="46" width="8"  height="7"  fill="#aa8800"/>
+          <rect x="279" y="46" width="8"  height="7"  fill="#aa8800"/>
+          <!-- back arm -->
+          <rect x="281" y="52" width="9"  height="18" fill="#b0c8a8" rx="2"/>
+          <!-- head -->
+          <rect x="254" y="20" width="26" height="28" fill="#b0c8a8" rx="3"/>
+          <!-- hat brim -->
+          <rect x="246" y="18" width="42" height="6"  fill="#0e0e0e"/>
+          <!-- hat crown -->
+          <rect x="252" y="-2"  width="30" height="22" fill="#0e0e0e"/>
+          <!-- hat skull -->
+          <rect x="259" y="2"  width="16" height="10" fill="#d8d8d0"/>
+          <rect x="261" y="5"  width="4"  height="5"  fill="#0e0e0e"/>
+          <rect x="269" y="5"  width="4"  height="5"  fill="#0e0e0e"/>
+          <rect x="264" y="10" width="2"  height="3"  fill="#0e0e0e"/>
+          <!-- eyes (red glow) -->
+          <rect x="257" y="28" width="5" height="5" fill="#dd1800" rx="1"/>
+          <rect x="268" y="28" width="5" height="5" fill="#dd1800" rx="1"/>
+          <!-- brow -->
+          <rect x="256" y="25" width="7" height="2" fill="#1a3a1a"/>
+          <rect x="267" y="25" width="7" height="2" fill="#1a3a1a"/>
+          <!-- mouth (smirk) -->
+          <path d="M260 40 Q267 45 274 40" fill="none" stroke="#3a6a3a" stroke-width="2"/>
+          <!-- sword arm (extended forward, going left) -->
+          <rect x="241" y="58" width="10" height="14" fill="#b0c8a8" rx="1"/>
+          <!-- guard -->
+          <rect x="237" y="54" width="6"  height="22" fill="#5a3a0a" rx="1"/>
+          <!-- blade going left -->
+          <rect x="148" y="60" width="90" height="4"  fill="#b8c0d8" rx="1"/>
+          <!-- tip -->
+          <polygon points="148,60 148,64 142,62" fill="#b8c0d8"/>
+        </g>
+
+        <!-- ─── SWORD CLASH SPARK (at ~x=155,y=62) ─── -->
+        <g id="clash-spark" transform="translate(152,62)" opacity="0">
+          <line x1="0" y1="0" x2="-8" y2="-8"  stroke="#ffee00" stroke-width="2"/>
+          <line x1="0" y1="0" x2="8"  y2="-8"  stroke="#ffee00" stroke-width="2"/>
+          <line x1="0" y1="0" x2="0"  y2="-10" stroke="#ffdd00" stroke-width="2"/>
+          <line x1="0" y1="0" x2="-6" y2="5"   stroke="#ffaa00" stroke-width="1.5"/>
+          <line x1="0" y1="0" x2="6"  y2="5"   stroke="#ffaa00" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="3" fill="#ffff88" opacity="0.9"/>
+        </g>
+
       </svg>
     </div>
+  </div><!-- end #scene -->
 
-    <!-- Enemy – ghost pirate -->
-    <div id="enemy-char">
-      <svg viewBox="0 0 32 52" xmlns="http://www.w3.org/2000/svg">
-        <!-- hat brim -->
-        <rect x="4"  y="2"  width="24" height="3" fill="#111"/>
-        <!-- hat top -->
-        <rect x="8"  y="-6" width="16" height="9" fill="#111"/>
-        <!-- skull decoration -->
-        <rect x="13" y="-2" width="6" height="4" fill="#e0e0e0"/>
-        <rect x="14" y="0"  width="2" height="2" fill="#111"/>
-        <rect x="17" y="0"  width="2" height="2" fill="#111"/>
-        <!-- head -->
-        <rect x="9"  y="5"  width="14" height="12" fill="#b8d8b8"/>
-        <!-- glowing eyes -->
-        <rect x="11" y="9"  width="3" height="3" fill="#ff3300"/>
-        <rect x="18" y="9"  width="3" height="3" fill="#ff3300"/>
-        <!-- scar -->
-        <rect x="16" y="8"  width="1" height="6" fill="#66000088"/>
-        <!-- coat -->
-        <rect x="7"  y="17" width="18" height="14" fill="#2d1a4e"/>
-        <rect x="13" y="17" width="2"  height="14" fill="#1a0a2e"/>
-        <!-- epaulette -->
-        <rect x="7"  y="17" width="4"  height="3" fill="#aa8800"/>
-        <rect x="21" y="17" width="4"  height="3" fill="#aa8800"/>
-        <!-- belt -->
-        <rect x="7"  y="30" width="18" height="3" fill="#ffcc00"/>
-        <!-- legs -->
-        <rect x="9"  y="33" width="6"  height="12" fill="#1a1a3e"/>
-        <rect x="17" y="33" width="6"  height="12" fill="#1a1a3e"/>
-        <!-- boots -->
-        <rect x="7"  y="43" width="8"  height="5" fill="#0a0a0a"/>
-        <rect x="17" y="43" width="8"  height="5" fill="#0a0a0a"/>
-        <!-- arm -->
-        <rect x="23" y="18" width="4"  height="9" fill="#b8d8b8"/>
-        <!-- sword -->
-        <rect x="26" y="7"  width="2"  height="21" fill="#b0b8c8"/>
-        <rect x="25" y="11" width="4"  height="1"  fill="#777"/>
-        <!-- guard -->
-        <rect x="23" y="20" width="8"  height="2" fill="#5a3a0a"/>
-      </svg>
-    </div>
-  </div>
-
-  <!-- ── UI panel ── -->
-  <div id="ui">
-    <div id="insult-box">
-      <span id="insult-prefix">VIHOLLINEN HUUTAA:</span>
-      <span id="insult-text"></span>
-    </div>
-    <div id="choices">
-      <button class="cbtn" id="btn0" onclick="choose(0)"></button>
-      <button class="cbtn" id="btn1" onclick="choose(1)"></button>
-      <button class="cbtn" id="btn2" onclick="choose(2)"></button>
+  <!-- ── DIALOG BOX ── -->
+  <div id="dialog">
+    <div id="insult-text">...</div>
+    <div id="options">
+      <button class="opt" id="opt0" onclick="choose(0)"></button>
+      <button class="opt" id="opt1" onclick="choose(1)"></button>
+      <button class="opt" id="opt2" onclick="choose(2)"></button>
     </div>
     <div id="status"></div>
   </div>
 
-  <!-- ── Overlay ── -->
+  <!-- ── OVERLAY ── -->
   <div id="overlay">
-    <div id="overlay-title">⚔ MIEKKAINSULTTI ⚔<br>Suomalainen Miekkataistelu</div>
-    <div id="overlay-sub">
-      Vihollinen heittää loukkauksen.<br>
-      Valitse oikea vastaisku säilyttääksesi kunniasi!<br>
-      Väärä vastaus — sinä saat osumaa.<br>
-      Oikea vastaus — vihollinen saa osumaa.
+    <div id="ov-title">⚔ MIEKKAINSULTTI ⚔</div>
+    <div id="ov-sub">
+      Vihollinen heittää loukkauksia.<br>
+      Valitse paras vastaisku — se joka todella osuu!<br>
+      Oikea vastaus → etenet.<br>
+      Väärä vastaus → vihollinen etenee.
     </div>
-    <button id="start-btn" onclick="startGame()">ALOITA TAISTELU!</button>
+    <button id="ov-btn" onclick="startGame()">ALOITA TAISTELU!</button>
   </div>
 
-</div>
+</div><!-- end #game -->
+
 <script>
 const duels = [
   {
@@ -459,122 +485,168 @@ const duels = [
   }
 ];
 
-let queue = [], idx = 0, php = 3, ehp = 3, locked = false;
+const MAX_POS = 8;
+let queue = [], qIdx = 0, pos = 4, locked = false;
+let opts = [], correctIdx = 0;
 
-function rnd(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
+function shuffle(a) {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+    [b[i], b[j]] = [b[j], b[i]];
   }
-  return a;
+  return b;
 }
 
+/* ── START ── */
 function startGame() {
-  queue = rnd(duels);
-  idx = 0; php = 3; ehp = 3; locked = false;
+  queue = shuffle(duels);
+  qIdx = 0; pos = 4; locked = false;
   document.getElementById('overlay').style.display = 'none';
-  updateHP();
+  buildPips();
+  placeFighters();
   loadDuel();
 }
 
-function updateHP() {
-  const pf = document.getElementById('pfill');
-  const ef = document.getElementById('efill');
-  pf.style.width = (php / 3 * 100) + '%';
-  ef.style.width = (ehp / 3 * 100) + '%';
-  pf.style.background = php > 1 ? '#00cc44' : '#ee2200';
-  ef.style.background = ehp > 1 ? '#00cc44' : '#ee2200';
+/* ── POSITION PIPS ── */
+function buildPips() {
+  const bar = document.getElementById('pos-bar');
+  bar.innerHTML = '';
+  for (let i = 0; i <= MAX_POS; i++) {
+    const d = document.createElement('div');
+    d.className = 'pip'; d.id = 'pip' + i;
+    bar.appendChild(d);
+  }
+  refreshPips();
 }
 
-let _opts = [], _correct = 0;
+function refreshPips() {
+  for (let i = 0; i <= MAX_POS; i++) {
+    const d = document.getElementById('pip' + i);
+    if (!d) continue;
+    d.className = 'pip';
+    if (i < pos)  d.classList.add('won');
+    if (i === pos) d.classList.add('cur');
+  }
+}
 
+/* ── FIGHTER POSITION ── */
+// fighters-wrap is 68% wide; left ranges 0 → 32%
+// at pos=4 (center): left = 16% (centres the 68% div)
+function placeFighters(animate) {
+  const fw = document.getElementById('fighters-wrap');
+  const leftPct = (pos / MAX_POS) * 32;
+  fw.style.left = leftPct + '%';
+}
+
+/* ── LOAD DUEL ── */
 function loadDuel() {
-  const d = queue[idx % queue.length];
-  _opts = rnd([
+  const d = queue[qIdx % queue.length];
+  opts = shuffle([
     { t: d.correct, ok: true },
     { t: d.wrong[0], ok: false },
     { t: d.wrong[1], ok: false }
   ]);
-  _correct = _opts.findIndex(o => o.ok);
+  correctIdx = opts.findIndex(o => o.ok);
 
   document.getElementById('insult-text').textContent = d.insult;
   document.getElementById('status').textContent = '';
-  document.getElementById('round-counter').textContent =
-    'KIERROS ' + (idx + 1);
 
-  ['btn0','btn1','btn2'].forEach((id, i) => {
+  ['opt0','opt1','opt2'].forEach((id, i) => {
     const b = document.getElementById(id);
-    b.textContent = (i + 1) + '. ' + _opts[i].t;
-    b.className = 'cbtn';
+    b.textContent = i + 1 + '.  ' + opts[i].t;
+    b.className = 'opt';
     b.disabled = false;
   });
   locked = false;
 }
 
+/* ── CHOICE ── */
 function choose(i) {
   if (locked) return;
   locked = true;
-  ['btn0','btn1','btn2'].forEach(id => document.getElementById(id).disabled = true);
+  document.querySelectorAll('.opt').forEach(b => b.disabled = true);
 
-  if (_opts[i].ok) {
-    document.getElementById('btn' + i).classList.add('correct');
-    ehp--;
-    document.getElementById('status').textContent = '⚔ OSUMA! Vihollinen ottaa osumaa!';
-    shake('enemy-char', true);
+  const won = opts[i].ok;
+  document.getElementById('opt' + i).classList.add(won ? 'correct' : 'wrong');
+  if (!won) document.getElementById('opt' + correctIdx).classList.add('correct');
+
+  showSpark(won);
+
+  if (won) {
+    pos = Math.min(MAX_POS, pos + 1);
+    document.getElementById('status').textContent = '— HYVIN SANOTTU! Vihollinen perääntyy! —';
+    anim('p-char', 'p-adv');
+    anim('e-char', 'e-ret');
   } else {
-    document.getElementById('btn' + i).classList.add('wrong');
-    document.getElementById('btn' + _correct).classList.add('correct');
-    php--;
-    document.getElementById('status').textContent = '💀 VÄÄRÄ! Vihollinen nauraa ja iskee!';
-    shake('player-char', false);
+    pos = Math.max(0, pos - 1);
+    document.getElementById('status').textContent = '— VÄÄRIN! Vihollinen etenee naureskellen! —';
+    anim('p-char', 'p-ret');
+    anim('e-char', 'e-adv');
   }
-  updateHP();
+
+  refreshPips();
+  setTimeout(placeFighters, 200);
 
   setTimeout(() => {
-    if (php <= 0) return endGame(false);
-    if (ehp <= 0) return endGame(true);
-    idx++;
-    if (idx >= queue.length) { queue = rnd(duels); idx = 0; }
+    if (pos >= MAX_POS) return endGame(true);
+    if (pos <= 0)       return endGame(false);
+    qIdx++;
+    if (qIdx >= queue.length) { queue = shuffle(duels); qIdx = 0; }
     loadDuel();
-  }, 2000);
+  }, 2100);
 }
 
-function shake(id, isEnemy) {
+function anim(id, cls) {
   const el = document.getElementById(id);
-  el.classList.remove('shake-l', 'shake-r');
+  el.classList.remove('p-adv','p-ret','e-ret','e-adv');
   void el.offsetWidth;
-  el.classList.add(isEnemy ? 'shake-r' : 'shake-l');
-  setTimeout(() => el.classList.remove('shake-l','shake-r'), 450);
+  el.classList.add(cls);
+  setTimeout(() => el.classList.remove(cls), 550);
 }
 
+function showSpark(won) {
+  const sp = document.getElementById('clash-spark');
+  sp.style.opacity = '0';
+  void sp.offsetWidth;
+  // colour: gold for win, red-ish for lose
+  const lines = sp.querySelectorAll('line');
+  lines.forEach(l => l.setAttribute('stroke', won ? '#ffee00' : '#ff8800'));
+  sp.querySelector('circle').setAttribute('fill', won ? '#ffff88' : '#ffaa44');
+  // trigger anim
+  sp.style.animation = 'none';
+  void sp.offsetWidth;
+  sp.style.animation = '';
+  sp.style.opacity = '1';
+  setTimeout(() => sp.style.opacity = '0', 400);
+}
+
+/* ── END GAME ── */
 function endGame(won) {
   const ov = document.getElementById('overlay');
   ov.style.display = 'flex';
-  document.getElementById('overlay-title').innerHTML = won
-    ? '🏆 VOITTO! 🏆<br>Vihollinen on kukistettu!'
-    : '💀 TAPPIO 💀<br>Vihollisen sanat lävistivät sinut!';
-  document.getElementById('overlay-sub').textContent = won
-    ? 'Olet Suomen miekkainsulttikilpailun mestari!'
-    : 'Ehkä pitäisi kuunnella enemmän Tommi Läntistä harjoitellaksesi vastauksia...';
-  document.getElementById('start-btn').textContent = won
-    ? 'UUSI TAISTELU!'
-    : 'YRITÄ UUDELLEEN!';
+  document.getElementById('ov-title').textContent = won ? '⚔ VOITTO!' : '💀 TAPPIO!';
+  document.getElementById('ov-sub').textContent = won
+    ? 'Olet karkoittanut vihollisen! Suomen miekkainsulttikilpailun mestari!'
+    : 'Olet hävinnyt! Harjoittele sanontoja enemmän ennen seuraavaa kohtaamista...';
+  document.getElementById('ov-btn').textContent = 'UUSI TAISTELU!';
 }
 
-// generate stars
+/* ── STARS ── */
 window.addEventListener('load', () => {
-  const scene = document.getElementById('scene');
-  for (let i = 0; i < 45; i++) {
+  const sky = document.getElementById('sky');
+  for (let i = 0; i < 90; i++) {
     const s = document.createElement('div');
-    const sz = Math.random() * 2 + 1;
-    s.style.cssText = `position:absolute;border-radius:50%;
-      width:${sz}px;height:${sz}px;
-      background:#fff;
-      top:${Math.random() * 58}%;
-      left:${Math.random() * 100}%;
-      opacity:${0.35 + Math.random() * 0.65}`;
-    scene.appendChild(s);
+    const big = Math.random() < 0.12;
+    const sz = big ? (Math.random() * 1.5 + 2) : (Math.random() * 1.2 + 0.4);
+    s.style.cssText = `
+      position:absolute; border-radius:50%;
+      width:${sz}px; height:${sz}px; background:#fff;
+      top:${Math.random() * 68}%; left:${Math.random() * 100}%;
+      opacity:${big ? 0.7 + Math.random()*0.3 : 0.3 + Math.random()*0.5};
+      ${big ? 'box-shadow:0 0 3px #fff8;' : ''}
+    `;
+    sky.parentElement.insertBefore(s, sky.nextSibling);
   }
 });
 </script>
