@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miekkainsultti — Suomalainen Miekkataistelu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      user-select: none;
+    }
+
+    #game {
+      width: min(800px, 100vw);
+      height: min(600px, 75vw);
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    /* ── SCENE (top 62%) ── */
+    #scene {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 62%;
+      overflow: hidden;
+    }
+
+    #sky {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 150% 120% at 20% 0%,
+        #183070 0%, #0c1e50 20%, #06102e 50%, #020c20 75%, #000510 100%);
+    }
+
+    #landscape {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      shape-rendering: crispEdges;
+    }
+
+    /* ── FIGHTERS ── */
+    #fighters-wrap {
+      position: absolute;
+      bottom: 15%;
+      width: 68%;
+      height: 76%;
+      transition: left 0.55s cubic-bezier(0.34, 1.4, 0.64, 1);
+    }
+
+    #fighters-svg {
+      width: 100%; height: 100%;
+      overflow: visible;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      shape-rendering: crispEdges;
+    }
+
+    /* ── SPARK ── */
+    #spark {
+      position: absolute;
+      left: 50%; top: 43%;
+      width: clamp(14px, 3vw, 28px);
+      height: clamp(14px, 3vw, 28px);
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 8;
+    }
+    @keyframes spark-pop {
+      0%   { transform: translate(-50%,-50%) scale(0.15); opacity: 1; }
+      28%  { transform: translate(-50%,-50%) scale(1.6);  opacity: 1; }
+      70%  { transform: translate(-50%,-50%) scale(0.9);  opacity: 0.6; }
+      100% { transform: translate(-50%,-50%) scale(0.4);  opacity: 0; }
+    }
+    #spark.flash { animation: spark-pop 0.42s ease forwards; }
+
+    /* ── POS BAR ── */
+    #pos-bar {
+      position: absolute;
+      top: 5px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; align-items: center;
+      gap: clamp(2px, 0.5vw, 5px);
+      z-index: 5;
+    }
+    .pip {
+      width: clamp(10px, 2.2vw, 18px);
+      height: clamp(5px, 1.1vw, 9px);
+      background: #08102a;
+      border: 1px solid #1a3070;
+    }
+    .pip.won { background: #1e4ab0; }
+    .pip.cur {
+      background: #fff;
+      border-radius: 50%;
+      width: clamp(7px, 1.5vw, 13px);
+      height: clamp(7px, 1.5vw, 13px);
+    }
+
+    /* ── DIALOG ── */
+    #dialog {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 38%;
+      background: #00040e;
+      border-top: 3px solid #1a2c70;
+      display: flex; flex-direction: column;
+      padding: clamp(6px,1.2vw,14px) clamp(12px,2.2vw,24px);
+      gap: clamp(3px,0.7vw,7px);
+    }
+
+    #insult-text {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(7.5px, 1.4vw, 13px);
+      color: #d8e8ff;
+      line-height: 1.55;
+      font-style: italic;
+      border-bottom: 1px solid #1a2560;
+      padding-bottom: clamp(3px,0.6vw,7px);
+      flex-shrink: 0;
+    }
+
+    #options {
+      display: flex; flex-direction: column;
+      gap: clamp(1px,0.3vw,4px);
+      flex: 1; overflow: hidden;
+    }
+
+    .opt {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(6.5px, 1.2vw, 11px);
+      color: #7a9fd4;
+      background: transparent; border: none;
+      text-align: left;
+      padding: clamp(1px,0.3vw,3px) 0;
+      cursor: pointer; line-height: 1.5;
+      transition: color 0.1s;
+      flex-shrink: 0;
+    }
+    .opt:hover:not(:disabled) { color: #eef4ff; }
+    .opt.correct { color: #3de87a; }
+    .opt.wrong   { color: #e84030; }
+
+    #status {
+      font-family: 'VT323', monospace;
+      font-size: clamp(10px, 1.9vw, 18px);
+      color: #556688;
+      text-align: center;
+      min-height: 1.3em;
+      letter-spacing: 1px;
+    }
+
+    /* ── OVERLAY ── */
+    #overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,2,15,0.93);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: clamp(10px,2.2vw,24px);
+      z-index: 30; padding: 20px; text-align: center;
+    }
+    #ov-title {
+      font-family: 'VT323', monospace;
+      font-size: clamp(16px, 3.8vw, 38px);
+      color: #ffdd44; letter-spacing: 3px;
+      text-shadow: 3px 3px #000, 0 0 18px #ff880055;
+    }
+    #ov-sub {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(8px, 1.5vw, 14px);
+      color: #6688aa; max-width: 74%; line-height: 1.9;
+    }
+    #ov-btn {
+      font-family: 'VT323', monospace;
+      font-size: clamp(13px, 2.6vw, 26px);
+      letter-spacing: 2px;
+      background: transparent; color: #ffdd44;
+      border: 2px solid #ffdd44;
+      padding: clamp(6px,1.2vw,12px) clamp(16px,3vw,32px);
+      cursor: pointer; transition: background 0.18s, color 0.18s;
+    }
+    #ov-btn:hover { background: #ffdd44; color: #000; }
+
+    /* ── MOON ── */
+    #moon {
+      position: absolute; top: 7%; right: 14%;
+      width: clamp(26px, 5.5%, 50px); aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle at 36% 34%, #fffde4, #ffd54f 55%, #b08020);
+      box-shadow: 0 0 clamp(6px,1.8vw,18px) #ffd54f99;
+    }
+  </style>
+</head>
+<body>
+<div id="game">
+
+  <!-- ── SCENE ── -->
+  <div id="scene">
+    <div id="sky"></div>
+
+    <!-- Pixel-crisp landscape silhouette -->
+    <svg id="landscape" viewBox="0 0 320 180" preserveAspectRatio="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <!-- ground base -->
+      <rect x="0" y="148" width="320" height="32" fill="#030810"/>
+      <!-- ground highlight strip (cliff edge) -->
+      <rect x="0" y="146" width="320" height="3" fill="#081428"/>
+      <!-- distant hills -->
+      <ellipse cx="70"  cy="158" rx="90"  ry="28" fill="#040c1c"/>
+      <ellipse cx="250" cy="160" rx="100" ry="30" fill="#040c1c"/>
+      <ellipse cx="160" cy="162" rx="120" ry="24" fill="#050e20"/>
+      <!-- rocky ground bumps -->
+      <rect x="90"  y="144" width="18" height="6" fill="#060e1c"/>
+      <rect x="210" y="143" width="22" height="7" fill="#060e1c"/>
+      <rect x="148" y="145" width="26" height="5" fill="#070f1e"/>
+
+      <!-- LEFT TREES -->
+      <!-- trunk 1 -->
+      <rect x="4"  y="90"  width="6"  height="58" fill="#020608"/>
+      <rect x="2"  y="62"  width="10" height="32" fill="#020608"/>
+      <!-- canopy tiers -->
+      <polygon points="7,62  -6,95  20,95"  fill="#020608"/>
+      <polygon points="7,46  -8,80  22,80"  fill="#020608"/>
+      <polygon points="7,32  -6,64  20,64"  fill="#020608"/>
+      <!-- trunk 2 -->
+      <rect x="22" y="104" width="5"  height="44" fill="#020608"/>
+      <polygon points="24,104  12,130  36,130" fill="#020608"/>
+      <polygon points="24,88   10,116  38,116" fill="#020608"/>
+      <!-- trunk 3 -->
+      <rect x="34" y="98"  width="6"  height="50" fill="#030709"/>
+      <polygon points="37,98  24,126  50,126"  fill="#030709"/>
+      <polygon points="37,80  22,112  52,112"  fill="#030709"/>
+      <polygon points="37,65  24,94   50,94"   fill="#030709"/>
+      <!-- trunk 4 -->
+      <rect x="50" y="108" width="5"  height="40" fill="#020608"/>
+      <polygon points="52,108  40,134  64,134"  fill="#020608"/>
+      <polygon points="52,92   38,120  66,120"  fill="#020608"/>
+      <!-- bush/shrub left -->
+      <ellipse cx="30" cy="148" rx="28" ry="12" fill="#030a10"/>
+      <ellipse cx="8"  cy="150" rx="16" ry="10" fill="#020809"/>
+
+      <!-- RIGHT TREES (mirror) -->
+      <rect x="310" y="90"  width="6"  height="58" fill="#020608"/>
+      <rect x="308" y="62"  width="10" height="32" fill="#020608"/>
+      <polygon points="313,62  302,95  326,95"  fill="#020608"/>
+      <polygon points="313,46  300,80  326,80"  fill="#020608"/>
+      <polygon points="313,32  302,64  324,64"  fill="#020608"/>
+      <rect x="293" y="104" width="5"  height="44" fill="#020608"/>
+      <polygon points="296,104  284,130  308,130" fill="#020608"/>
+      <polygon points="296,88   282,116  310,116" fill="#020608"/>
+      <rect x="280" y="98"  width="6"  height="50" fill="#030709"/>
+      <polygon points="283,98  270,126  296,126"  fill="#030709"/>
+      <polygon points="283,80  268,112  298,112"  fill="#030709"/>
+      <polygon points="283,65  270,94   296,94"   fill="#030709"/>
+      <rect x="265" y="108" width="5"  height="40" fill="#020608"/>
+      <polygon points="267,108  255,134  279,134"  fill="#020608"/>
+      <polygon points="267,92   253,120  281,120"  fill="#020608"/>
+      <ellipse cx="290" cy="148" rx="28" ry="12" fill="#030a10"/>
+      <ellipse cx="312" cy="150" rx="16" ry="10" fill="#020809"/>
+
+      <!-- small mid shrubs -->
+      <ellipse cx="120" cy="150" rx="20" ry="8" fill="#030a0e"/>
+      <ellipse cx="200" cy="151" rx="22" ry="8" fill="#030a0e"/>
+    </svg>
+
+    <div id="moon"></div>
+    <div id="pos-bar"></div>
+
+    <!-- fighters + spark -->
+    <div id="fighters-wrap">
+      <div id="spark"></div>
+
+      <!--
+        Combined fighter SVG — viewBox 160×80.
+        Displayed ~540px wide → each SVG unit ≈ 3.4 display px → visible pixels.
+        Player blade: x 30→78, y 34-36
+        Enemy blade:  x 82→130, y 34-36
+        Swords cross/overlap at x 78-82 (spark at 80,35)
+      -->
+      <svg id="fighters-svg" viewBox="0 0 160 80"
+           xmlns="http://www.w3.org/2000/svg" overflow="visible">
+
+        <!-- ═══ PLAYER (Guybrush-like, left) ═══ -->
+        <g id="p-char">
+          <!-- hair -->
+          <rect x="4"  y="2"  width="22" height="5" fill="#c89018"/>
+          <rect x="4"  y="2"  width="7"  height="14" fill="#c89018"/>
+          <!-- head -->
+          <rect x="5"  y="7"  width="18" height="14" fill="#f5c87a"/>
+          <!-- brows -->
+          <rect x="7"  y="9"  width="5"  height="2"  fill="#9a6c10"/>
+          <rect x="15" y="9"  width="5"  height="2"  fill="#9a6c10"/>
+          <!-- eyes -->
+          <rect x="7"  y="11" width="4"  height="3"  fill="#1a1a1a"/>
+          <rect x="15" y="11" width="4"  height="3"  fill="#1a1a1a"/>
+          <!-- eye whites -->
+          <rect x="8"  y="11" width="1"  height="1"  fill="#ffffff"/>
+          <rect x="16" y="11" width="1"  height="1"  fill="#ffffff"/>
+          <!-- nose -->
+          <rect x="11" y="15" width="2"  height="2"  fill="#d4a060"/>
+          <!-- mouth -->
+          <rect x="8"  y="18" width="8"  height="2"  fill="#c07050"/>
+          <!-- neck -->
+          <rect x="10" y="21" width="6"  height="4"  fill="#f5c87a"/>
+          <!-- back arm (behind body) -->
+          <rect x="0"  y="27" width="5"  height="16" fill="#f5c87a"/>
+          <rect x="0"  y="42" width="6"  height="4"  fill="#f0b860"/>
+          <!-- body / shirt -->
+          <rect x="4"  y="25" width="20" height="22" fill="#e8e0cc"/>
+          <!-- shirt detail -->
+          <rect x="12" y="25" width="3"  height="22" fill="#d4ccb8"/>
+          <!-- collar -->
+          <rect x="9"  y="25" width="8"  height="4"  fill="#d0c8b4"/>
+          <!-- belt -->
+          <rect x="3"  y="47" width="22" height="4"  fill="#5a2e10"/>
+          <rect x="11" y="47" width="6"  height="4"  fill="#8b5e14"/>
+          <!-- l-leg -->
+          <rect x="4"  y="51" width="8"  height="18" fill="#6b3218"/>
+          <!-- r-leg -->
+          <rect x="14" y="51" width="8"  height="18" fill="#6b3218"/>
+          <!-- l-boot -->
+          <rect x="2"  y="68" width="11" height="8"  fill="#100a04"/>
+          <!-- r-boot -->
+          <rect x="13" y="68" width="11" height="8"  fill="#100a04"/>
+          <!-- forward arm -->
+          <rect x="23" y="30" width="6"  height="14" fill="#f5c87a"/>
+          <!-- guard (crosspiece) -->
+          <rect x="27" y="26" width="4"  height="20" fill="#8b6914"/>
+          <!-- blade -->
+          <rect x="30" y="34" width="48" height="3"  fill="#c8d8f0"/>
+          <!-- tip (pointing right, past crossing point) -->
+          <polygon points="78,34 78,37 84,35.5" fill="#dde8ff"/>
+        </g>
+
+        <!-- ═══ ENEMY (ghost pirate, right) ═══ -->
+        <g id="e-char">
+          <!-- hat crown -->
+          <rect x="116" y="0"  width="28" height="10" fill="#0c0c0c"/>
+          <!-- hat skull badge -->
+          <rect x="122" y="1"  width="16" height="8"  fill="#d0d0c8"/>
+          <rect x="124" y="3"  width="4"  height="4"  fill="#0c0c0c"/>
+          <rect x="130" y="3"  width="4"  height="4"  fill="#0c0c0c"/>
+          <rect x="127" y="7"  width="2"  height="2"  fill="#0c0c0c"/>
+          <!-- hat brim -->
+          <rect x="110" y="10" width="40" height="5"  fill="#0c0c0c"/>
+          <!-- head -->
+          <rect x="114" y="15" width="24" height="14" fill="#b0c8a8"/>
+          <!-- brows -->
+          <rect x="116" y="17" width="6"  height="2"  fill="#1a3a1a"/>
+          <rect x="126" y="17" width="6"  height="2"  fill="#1a3a1a"/>
+          <!-- eyes (red) -->
+          <rect x="116" y="19" width="4"  height="4"  fill="#dd1800"/>
+          <rect x="126" y="19" width="4"  height="4"  fill="#dd1800"/>
+          <!-- eye glint -->
+          <rect x="117" y="19" width="1"  height="1"  fill="#ff8866"/>
+          <rect x="127" y="19" width="1"  height="1"  fill="#ff8866"/>
+          <!-- scar -->
+          <rect x="122" y="16" width="2"  height="12" fill="#8a3030" opacity="0.5"/>
+          <!-- mouth (smirk) -->
+          <rect x="118" y="26" width="4"  height="2"  fill="#2a5a2a"/>
+          <rect x="122" y="28" width="4"  height="2"  fill="#2a5a2a"/>
+          <rect x="126" y="26" width="4"  height="2"  fill="#2a5a2a"/>
+          <!-- neck -->
+          <rect x="122" y="29" width="6"  height="4"  fill="#b0c8a8"/>
+          <!-- back arm -->
+          <rect x="137" y="33" width="5"  height="16" fill="#b0c8a8"/>
+          <rect x="136" y="48" width="6"  height="4"  fill="#a0b898"/>
+          <!-- coat -->
+          <rect x="112" y="33" width="28" height="20" fill="#2e1650"/>
+          <!-- coat seam -->
+          <rect x="124" y="33" width="4"  height="20" fill="#1e0a38"/>
+          <!-- lapels -->
+          <rect x="120" y="33" width="5"  height="8"  fill="#3e2060"/>
+          <!-- epaulettes -->
+          <rect x="108" y="33" width="7"  height="7"  fill="#aa8800"/>
+          <rect x="137" y="33" width="7"  height="7"  fill="#aa8800"/>
+          <!-- belt -->
+          <rect x="111" y="53" width="30" height="4"  fill="#aa8800"/>
+          <rect x="123" y="53" width="6"  height="4"  fill="#ffcc00"/>
+          <!-- l-leg -->
+          <rect x="112" y="57" width="8"  height="18" fill="#1e1e6a"/>
+          <!-- r-leg -->
+          <rect x="122" y="57" width="8"  height="18" fill="#1e1e6a"/>
+          <!-- l-boot -->
+          <rect x="110" y="74" width="12" height="6"  fill="#080810"/>
+          <!-- r-boot -->
+          <rect x="121" y="74" width="12" height="6"  fill="#080810"/>
+          <!-- forward arm -->
+          <rect x="108" y="37" width="6"  height="14" fill="#b0c8a8"/>
+          <!-- guard -->
+          <rect x="105" y="33" width="4"  height="20" fill="#5a3a0a"/>
+          <!-- enemy blade (going left, tip at x=76) -->
+          <rect x="82"  y="34" width="24" height="3"  fill="#b8c0d8"/>
+          <!-- enemy tip (pointing left) -->
+          <polygon points="82,34 82,37 76,35.5" fill="#c8d0e4"/>
+        </g>
+
+        <!-- crossed blade overlap layer (drawn on top so both blades visible) -->
+        <rect x="78" y="34" width="5" height="3" fill="#d0daee" opacity="0.7"/>
+
+      </svg>
+    </div>
+  </div><!-- /scene -->
+
+  <!-- ── DIALOG ── -->
+  <div id="dialog">
+    <div id="insult-text">...</div>
+    <div id="options">
+      <button class="opt" id="opt0" onclick="choose(0)"></button>
+      <button class="opt" id="opt1" onclick="choose(1)"></button>
+      <button class="opt" id="opt2" onclick="choose(2)"></button>
+    </div>
+    <div id="status"></div>
+  </div>
+
+  <!-- ── OVERLAY ── -->
+  <div id="overlay">
+    <div id="ov-title">⚔ MIEKKAINSULTTI ⚔</div>
+    <div id="ov-sub">
+      Vihollinen heittää suomalaisia sananlaskuja loukkauksinaan.<br>
+      Vastaa oikealla vastaiskulla — se joka osuu!<br>
+      Oikea: etenet. Väärä: vihollinen etenee.
+    </div>
+    <button id="ov-btn" onclick="startGame()">ALOITA TAISTELU!</button>
+  </div>
+
+</div>
+
+<script>
+const duels = [
+  {
+    insult: '"Aina koski kohinassa ja aina tyhmä tohinassa."',
+    correct: '"Hullu huutaa, viisas kuulee vähemmänkin."',
+    wrong: ['"Koski on voimallinen — ota se kehuna!"',
+            '"Tohinassani on tarmoa, etkä voi sitä kieltää!"']
+  },
+  {
+    insult: '"Helppo tyhmä narrata."',
+    correct: '"Hullu vipuun käy, viisas viuhtoo sivutse."',
+    wrong: ['"En ole tyhmä — olen erikoislaatuisen analyyttinen!"',
+            '"Narraaminen on häpeällinen tapa, kasvata tapasi ensin!"']
+  },
+  {
+    insult: '"Joka kuuseen kurkottaa, se katajaan kapsahtaa."',
+    correct: '"Paree kumartaa kuin kurottaa."',
+    wrong: ['"Kurkottelen kuusen latvaan ja pidän siellä kotini!"',
+            '"Kataja on arvokas kasvi enkä häpeä siihen kapsahtamista!"']
+  },
+  {
+    insult: '"Ei haukkuva koira jänestä saa."',
+    correct: '"Ei haukkuva koira pure."',
+    wrong: ['"Minä en hauku enkä myöskään jäniksiä tarvitse!"',
+            '"Jänikset ovat nopeita — asia erikseen, minä olen nopeampi!"']
+  },
+  {
+    insult: '"Ahne ottaa rahat ja vie vielä kukkaronki."',
+    correct: '"Ahneella on paskanen loppu."',
+    wrong: ['"Minä en ole ahne — olen vain tarkka taloudenpitäjä!"',
+            '"Kukkaroni pysyy minulla, se on lakiin kirjattu!"']
+  },
+  {
+    insult: '"Laiska tyäs huomiseen lykkää."',
+    correct: '"Ahkera kaikki voittaa."',
+    wrong: ['"Huominen on uusi päivä — silloin on enemmän energiaa!"',
+            '"Lykkääminen on viisautta, ajattele se strategiana!"']
+  },
+  {
+    insult: '"Ei kukko kiekumalla päivä nouse."',
+    correct: '"Kiekuminen voi loppua — minun miekkani ei."',
+    wrong: ['"Kukot ovat arvosteluita eläimiä enkä salli niiden pilkkaamista!"',
+            '"Päivä nousee juuri kun minä sanon sen nousevan!"']
+  },
+  {
+    insult: '"Niin metsä vastaa kuin sinne huudetaan."',
+    correct: '"Metsäsi vastaa sinulle kohta: kaadu!"',
+    wrong: ['"Metsä on tärkeä ekosysteemi eikä se vastaa kenellekään!"',
+            '"Huusin metsään kerran — se ei vastannut mitään."']
+  },
+  {
+    insult: '"Tyhjä tynnyri pitää kovinta ääntä."',
+    correct: '"Täysi tynnyri kaatuu sitten kovimmin — kokeillaan!"',
+    wrong: ['"Minä en ole tyhjä tynnyri, olen täynnä potentiaalia!"',
+            '"Ääni on voiman merkki — kiitän kohteliaisuudesta!"']
+  },
+  {
+    insult: '"Jokainen on oman onnensa seppä."',
+    correct: '"Ja sinä olet takonut itsellesi häviön."',
+    wrong: ['"Olen kyllä opiskellut useita käsitöitä, mutta sepäntyötä en!"',
+            '"Onni on sattumaa — ei taikominen ketään auta!"']
+  },
+  {
+    insult: '"Älä myy nahkaa ennen kuin karhu on kaadettu."',
+    correct: '"Karhu on jo kaadettu — pue nyt nahkasi nopeasti."',
+    wrong: ['"Karhuja ei saa kaataa ilman asianmukaista kaatolupaa!"',
+            '"Nahka on arvokas raaka-aine, arvostan varovaisuuttasi!"']
+  },
+  {
+    insult: '"Parempi pyy pivossa kuin kymmenen oksalla."',
+    correct: '"Sinä olet se pyy — ja pivo on jo kiinni."',
+    wrong: ['"Pyyt ovat rauhoitettuja lintuja, en anna pyydystää niitä!"',
+            '"Kymmenellä oksalla on enemmän pyitä kuin yhdessä pivossa!"']
+  }
+];
+
+const MAX_POS = 8;
+let queue = [], qIdx = 0, pos = 4, locked = false;
+let opts = [], correctIdx = 0;
+
+function shuffle(a) {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
+
+/* ── START ── */
+function startGame() {
+  queue = shuffle(duels);
+  qIdx = 0; pos = 4; locked = false;
+  document.getElementById('overlay').style.display = 'none';
+  buildPips();
+  placeFighters(false);
+  loadDuel();
+}
+
+/* ── PIPS ── */
+function buildPips() {
+  const bar = document.getElementById('pos-bar');
+  bar.innerHTML = '';
+  for (let i = 0; i <= MAX_POS; i++) {
+    const d = document.createElement('div');
+    d.className = 'pip'; d.id = 'pip' + i;
+    bar.appendChild(d);
+  }
+  refreshPips();
+}
+
+function refreshPips() {
+  for (let i = 0; i <= MAX_POS; i++) {
+    const d = document.getElementById('pip' + i);
+    if (!d) continue;
+    d.className = 'pip';
+    if (i < pos)   d.classList.add('won');
+    if (i === pos) d.classList.add('cur');
+  }
+}
+
+/* ── FIGHTER POSITION ── */
+function placeFighters(instant) {
+  const fw = document.getElementById('fighters-wrap');
+  if (instant) fw.style.transition = 'none';
+  fw.style.left = (pos / MAX_POS * 32) + '%';
+  if (instant) setTimeout(() => fw.style.transition = '', 20);
+}
+
+/* ── LOAD DUEL ── */
+function loadDuel() {
+  const d = queue[qIdx % queue.length];
+  opts = shuffle([
+    { t: d.correct, ok: true },
+    { t: d.wrong[0], ok: false },
+    { t: d.wrong[1], ok: false }
+  ]);
+  correctIdx = opts.findIndex(o => o.ok);
+
+  document.getElementById('insult-text').textContent = d.insult;
+  document.getElementById('status').textContent = '';
+
+  ['opt0','opt1','opt2'].forEach((id, i) => {
+    const b = document.getElementById(id);
+    b.textContent = (i + 1) + '.  ' + opts[i].t;
+    b.className = 'opt';
+    b.disabled = false;
+  });
+  locked = false;
+}
+
+/* ── CHOICE ── */
+function choose(i) {
+  if (locked) return;
+  locked = true;
+  document.querySelectorAll('.opt').forEach(b => b.disabled = true);
+
+  const won = opts[i].ok;
+  document.getElementById('opt' + i).classList.add(won ? 'correct' : 'wrong');
+  if (!won) document.getElementById('opt' + correctIdx).classList.add('correct');
+
+  showSpark(won);
+
+  if (won) {
+    pos = Math.min(MAX_POS, pos + 1);
+    document.getElementById('status').textContent = '— HYVIN SANOTTU! Vihollinen perääntyy! —';
+    animChar('p-char', 'p-adv');
+    animChar('e-char', 'e-ret');
+  } else {
+    pos = Math.max(0, pos - 1);
+    document.getElementById('status').textContent = '— VÄÄRIN! Vihollinen etenee naureskellen! —';
+    animChar('p-char', 'p-ret');
+    animChar('e-char', 'e-adv');
+  }
+
+  refreshPips();
+  setTimeout(() => placeFighters(false), 180);
+
+  setTimeout(() => {
+    if (pos >= MAX_POS) return endGame(true);
+    if (pos <= 0)       return endGame(false);
+    qIdx++;
+    if (qIdx >= queue.length) { queue = shuffle(duels); qIdx = 0; }
+    loadDuel();
+  }, 2000);
+}
+
+/* ── SPARK ── */
+function showSpark(won) {
+  const sp = document.getElementById('spark');
+  sp.style.background = won
+    ? 'radial-gradient(circle, #fff 8%, #ffff44 35%, #ffcc00 65%, transparent 100%)'
+    : 'radial-gradient(circle, #fff 8%, #ff8800 35%, #ff4400 65%, transparent 100%)';
+  sp.className = '';
+  void sp.offsetWidth;
+  sp.className = 'flash';
+}
+
+/* ── CHARACTER ANIMATIONS ── */
+const charAnims = {
+  'p-adv': `@keyframes p-adv{0%{transform:translateX(0)}35%{transform:translateX(5px)}100%{transform:translateX(0)}}`,
+  'p-ret': `@keyframes p-ret{0%{transform:translateX(0)}22%{transform:translateX(-9px)}55%{transform:translateX(4px)}80%{transform:translateX(-2px)}100%{transform:translateX(0)}}`,
+  'e-ret': `@keyframes e-ret{0%{transform:translateX(0)}35%{transform:translateX(-5px)}100%{transform:translateX(0)}}`,
+  'e-adv': `@keyframes e-adv{0%{transform:translateX(0)}22%{transform:translateX(9px)}55%{transform:translateX(-4px)}80%{transform:translateX(2px)}100%{transform:translateX(0)}}`
+};
+
+/* inject keyframes once */
+const styleEl = document.createElement('style');
+styleEl.textContent = Object.values(charAnims).join('') +
+  `#p-char.p-adv{animation:p-adv 0.48s ease forwards}
+   #p-char.p-ret{animation:p-ret 0.44s ease forwards}
+   #e-char.e-ret{animation:e-ret 0.48s ease forwards}
+   #e-char.e-adv{animation:e-adv 0.44s ease forwards}`;
+document.head.appendChild(styleEl);
+
+function animChar(id, cls) {
+  const el = document.getElementById(id);
+  const all = ['p-adv','p-ret','e-ret','e-adv'];
+  all.forEach(c => el.classList.remove(c));
+  void el.offsetWidth;
+  el.classList.add(cls);
+  setTimeout(() => el.classList.remove(cls), 520);
+}
+
+/* ── END ── */
+function endGame(won) {
+  const ov = document.getElementById('overlay');
+  ov.style.display = 'flex';
+  document.getElementById('ov-title').textContent = won ? '⚔ VOITTO!' : '💀 TAPPIO!';
+  document.getElementById('ov-sub').textContent = won
+    ? 'Olet karkoittanut vihollisen! Suomen miekkainsulttikilpailun mestari!'
+    : 'Olet hävinnyt! Harjoittele sanontoja enemmän ennen seuraavaa kohtaamista...';
+  document.getElementById('ov-btn').textContent = 'UUSI TAISTELU!';
+}
+
+/* ── STARS ── */
+window.addEventListener('load', () => {
+  const scene = document.getElementById('scene');
+  for (let i = 0; i < 100; i++) {
+    const s = document.createElement('div');
+    const big = Math.random() < 0.1;
+    const sz = big ? Math.random() * 1.5 + 2 : Math.random() + 0.4;
+    s.style.cssText = `position:absolute;border-radius:50%;
+      width:${sz}px;height:${sz}px;background:#ffffff;
+      top:${Math.random() * 65}%;left:${Math.random() * 100}%;
+      opacity:${big ? 0.7 + Math.random() * 0.3 : 0.25 + Math.random() * 0.55};
+      ${big ? 'box-shadow:0 0 2px #fff9;' : ''}`;
+    scene.insertBefore(s, scene.firstChild.nextSibling);
+  }
+});
+</script>
+</body>
+</html>
