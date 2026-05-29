@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kalteva taso – voimat ja kitka</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root {
+    --ink: #3f3d39;
+    --soft: #f4f4f4;
+    --red: #d84a62;
+    --blue: #2e86a6;
+    --green: #4a8b5c;
+  }
+
+  .sketch { fill: none; stroke: var(--ink); stroke-linecap: round; stroke-linejoin: round; }
+  .thin  { stroke-width: 1.6; }
+  .mid   { stroke-width: 2.5; }
+  .thick { stroke-width: 4; }
+
+  .softFill { fill: var(--soft); stroke: var(--ink); stroke-width: 2.4; }
+  .hatch    { stroke: var(--ink); stroke-width: 1; opacity: 0.18; }
+
+  .weight    { stroke: var(--red);  stroke-width: 3.1; stroke-linecap: round; }
+  .component { stroke: var(--red);  stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 6 6; opacity: 0.9; }
+  .normal    { stroke: var(--green); stroke-width: 3;   stroke-linecap: round; }
+  .friction  { stroke: var(--blue);  stroke-width: 3;   stroke-linecap: round; }
+  .motion    { stroke: var(--ink);  stroke-width: 2.4; stroke-linecap: round; opacity: 0.65; }
+
+  .status {
+    font-size: clamp(14px, 1.55vw, 20px);
+    text-anchor: middle;
+    fill: var(--ink);
+  }
+  .forceLabel {
+    font-size: clamp(12px, 1.3vw, 17px);
+    fill: var(--ink);
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  .angleTxt {
+    font-size: clamp(12px, 1.3vw, 16px);
+    fill: var(--ink);
+    dominant-baseline: middle;
+    text-anchor: start;
+  }
+  .threshTxt {
+    font-size: clamp(11px, 1.15vw, 14px);
+    fill: var(--red);
+    dominant-baseline: middle;
+    text-anchor: start;
+    opacity: 0.85;
+  }
+  .velLabel {
+    font-size: clamp(11px, 1.15vw, 14px);
+    fill: var(--ink);
+    dominant-baseline: middle;
+    text-anchor: middle;
+    opacity: 0.7;
+  }
+
+  /* controls strip */
+  .sim-controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(110px, 1fr)) auto;
+    gap: 0.7rem 1rem;
+    align-items: center;
+  }
+  .sim-controls label {
+    font-size: clamp(13px, 1.4vw, 17px);
+    display: grid;
+    gap: 0.22rem;
+    letter-spacing: 0.01em;
+  }
+  .sim-controls input[type="range"] {
+    width: 100%;
+    accent-color: var(--ink);
+  }
+
+  @media (max-width: 760px) {
+    .sim-controls {
+      grid-template-columns: 1fr 1fr;
+      left: 12px;
+      right: 12px;
+      bottom: 10px;
+    }
+    .sim-controls button {
+      grid-column: span 2;
+      justify-self: start;
+    }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Kaltevan tason voimasimulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Kalteva taso – voimat ja kitka">
+    <defs>
+      <marker id="arrowRed"   viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d84a62"/></marker>
+      <marker id="arrowBlue"  viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e86a6"/></marker>
+      <marker id="arrowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4a8b5c"/></marker>
+      <marker id="arrowInk"   viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3f3d39"/></marker>
+    </defs>
+
+    <!-- floor lines -->
+    <path class="sketch mid"  d="M115 430 C245 426 372 432 514 429 C650 426 760 432 860 428" />
+    <path class="sketch thin" d="M118 435 C270 431 394 437 540 433 C668 431 764 436 858 432" opacity="0.55" />
+
+    <!-- ramp support fill + hatch -->
+    <path id="support" class="softFill" d="" />
+    <g id="supportHatch"></g>
+
+    <!-- ramp surface (two sketch strokes for texture) -->
+    <path id="plane1" class="sketch thick" d="" />
+    <path id="plane2" class="sketch mid"   d="" opacity="0.55" />
+
+    <!-- angle arc and threshold tick -->
+    <path id="angleArc"   class="sketch thin" d="" opacity="0.6" />
+    <path id="limitTick"  class="sketch mid"  d="" stroke="#d84a62" opacity="0.7" />
+
+    <!-- angle value label -->
+    <text id="angleTxt"  class="angleTxt">18°</text>
+    <!-- threshold label -->
+    <text id="threshTxt" class="threshTxt">θ<tspan baseline-shift="sub" font-size="0.75em">max</tspan></text>
+
+    <!-- block -->
+    <g id="block">
+      <rect id="blockRect" class="softFill" x="-42" y="-28" width="84" height="56" rx="5" />
+      <g id="blockHatch"></g>
+    </g>
+
+    <!-- force arrows -->
+    <line id="gArrow"    class="weight"    marker-end="url(#arrowRed)"   />
+    <line id="gParArrow" class="component" marker-end="url(#arrowRed)"   />
+    <line id="gPerpArrow" class="component" marker-end="url(#arrowRed)" />
+    <line id="nArrow"    class="normal"    marker-end="url(#arrowGreen)" />
+    <line id="fArrow"    class="friction"  marker-end="url(#arrowBlue)"  />
+    <line id="vArrow"    class="motion"    marker-end="url(#arrowInk)"   />
+
+    <!-- force value labels -->
+    <text id="gLabel"    class="forceLabel">G</text>
+    <text id="gParLabel" class="forceLabel">G<tspan baseline-shift="sub" font-size="0.8em">∥</tspan></text>
+    <text id="gPerpLabel" class="forceLabel">G<tspan baseline-shift="sub" font-size="0.8em">⊥</tspan></text>
+    <text id="nLabel"    class="forceLabel">N</text>
+    <text id="fLabel"    class="forceLabel">F<tspan baseline-shift="sub" font-size="0.8em">μ</tspan></text>
+    <text id="vLabel"    class="velLabel">v</text>
+
+    <text id="statusText" class="status" x="480" y="58">Kynnyskulma 24,2° · Pysyy paikallaan</text>
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <label><span id="angleLabel">Kulma 18°</span><input id="angle" type="range" min="0" max="55" step="1" value="18"></label>
+    <label><span id="muSLabel">μ<sub>s</sub> 0,45</span><input id="muS" type="range" min="0" max="1.2" step="0.01" value="0.45"></label>
+    <label><span id="muKLabel">μ<sub>k</sub> 0,30</span><input id="muK" type="range" min="0" max="1.2" step="0.01" value="0.30"></label>
+    <label><span id="massLabel">Massa 2,0 kg</span><input id="mass" type="range" min="0.5" max="10" step="0.1" value="2"></label>
+    <button id="reset" class="sim-btn" type="button">Nollaa</button>
+  </section>
+</main>
+
+<script>
+(() => {
+  const g = 9.81;
+  const pxPerMeter = 50;
+
+  const defaults = { angle: 18, muS: 0.45, muK: 0.30, mass: 2.0 };
+
+  const el = {
+    angle:      document.getElementById("angle"),
+    muS:        document.getElementById("muS"),
+    muK:        document.getElementById("muK"),
+    mass:       document.getElementById("mass"),
+    angleLabel: document.getElementById("angleLabel"),
+    muSLabel:   document.getElementById("muSLabel"),
+    muKLabel:   document.getElementById("muKLabel"),
+    massLabel:  document.getElementById("massLabel"),
+    reset:      document.getElementById("reset"),
+    support:    document.getElementById("support"),
+    supportHatch: document.getElementById("supportHatch"),
+    plane1:     document.getElementById("plane1"),
+    plane2:     document.getElementById("plane2"),
+    angleArc:   document.getElementById("angleArc"),
+    limitTick:  document.getElementById("limitTick"),
+    angleTxt:   document.getElementById("angleTxt"),
+    threshTxt:  document.getElementById("threshTxt"),
+    block:      document.getElementById("block"),
+    blockRect:  document.getElementById("blockRect"),
+    blockHatch: document.getElementById("blockHatch"),
+    gArrow:     document.getElementById("gArrow"),
+    gParArrow:  document.getElementById("gParArrow"),
+    gPerpArrow: document.getElementById("gPerpArrow"),
+    nArrow:     document.getElementById("nArrow"),
+    fArrow:     document.getElementById("fArrow"),
+    vArrow:     document.getElementById("vArrow"),
+    gLabel:     document.getElementById("gLabel"),
+    gParLabel:  document.getElementById("gParLabel"),
+    gPerpLabel: document.getElementById("gPerpLabel"),
+    nLabel:     document.getElementById("nLabel"),
+    fLabel:     document.getElementById("fLabel"),
+    vLabel:     document.getElementById("vLabel"),
+    statusText: document.getElementById("statusText"),
+  };
+
+  const A = { x: 185, y: 430 };
+  const rampLength = 560;
+
+  let state = { s: 350, v: 0, moving: false, lastTime: performance.now() };
+
+  function fmt(value, decimals = 2) {
+    return value.toFixed(decimals).replace(".", ",");
+  }
+
+  function fmtN(newtons) {
+    return fmt(newtons, 1) + " N";
+  }
+
+  function degToRad(deg) { return deg * Math.PI / 180; }
+
+  function polarPoint(origin, radius, angleRad) {
+    return { x: origin.x + radius * Math.cos(angleRad), y: origin.y - radius * Math.sin(angleRad) };
+  }
+
+  function arcPath(origin, radius, a0, a1) {
+    const p0 = polarPoint(origin, radius, a0);
+    const p1 = polarPoint(origin, radius, a1);
+    const large = Math.abs(a1 - a0) > Math.PI ? 1 : 0;
+    return `M ${p0.x} ${p0.y} A ${radius} ${radius} 0 ${large} 0 ${p1.x} ${p1.y}`;
+  }
+
+  function setLine(line, p1, p2, visible = true) {
+    line.setAttribute("x1", p1.x); line.setAttribute("y1", p1.y);
+    line.setAttribute("x2", p2.x); line.setAttribute("y2", p2.y);
+    line.style.opacity = visible ? "" : "0";
+  }
+
+  function setText(textEl, p, visible = true) {
+    textEl.setAttribute("x", p.x); textEl.setAttribute("y", p.y);
+    textEl.style.opacity = visible ? "1" : "0";
+  }
+
+  function readValues() {
+    let angle = Number(el.angle.value);
+    let muS   = Number(el.muS.value);
+    let muK   = Number(el.muK.value);
+    const mass = Number(el.mass.value);
+
+    if (muK > muS) { muK = muS; el.muK.value = String(muK); }
+
+    return { angle, muS, muK, mass };
+  }
+
+  function updateLabels(values, thresholdDeg, sliding, accel) {
+    el.angleLabel.textContent = `Kulma ${Math.round(values.angle)}°`;
+    el.muSLabel.textContent   = `μs ${fmt(values.muS)}`;
+    el.muKLabel.textContent   = `μk ${fmt(values.muK)}`;
+    el.massLabel.textContent  = `Massa ${fmt(values.mass, 1)} kg`;
+
+    let status;
+    if (sliding) {
+      const aStr = fmt(Math.abs(accel), 2);
+      status = `Kynnyskulma ${fmt(thresholdDeg, 1)}° · Liukuu · a = ${aStr} m/s²`;
+    } else {
+      status = `Kynnyskulma ${fmt(thresholdDeg, 1)}° · Pysyy paikallaan`;
+    }
+    el.statusText.textContent = status;
+  }
+
+  function drawHatching(container, lines) {
+    container.innerHTML = "";
+    const frag = document.createDocumentFragment();
+    for (const ln of lines) {
+      const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      line.setAttribute("class", "hatch");
+      line.setAttribute("x1", ln.x1); line.setAttribute("y1", ln.y1);
+      line.setAttribute("x2", ln.x2); line.setAttribute("y2", ln.y2);
+      frag.appendChild(line);
+    }
+    container.appendChild(frag);
+  }
+
+  function buildSupportHatch(B, theta) {
+    const lines = [];
+    const count = 13;
+    for (let i = 1; i <= count; i++) {
+      const t = i / (count + 1);
+      const xBase = A.x + (B.x - A.x) * t;
+      const yTop  = A.y + (B.y - A.y) * t;
+      lines.push({ x1: xBase + 8, y1: A.y - 4, x2: xBase - 22 * Math.sin(theta), y2: yTop + 6 });
+    }
+    return lines;
+  }
+
+  function buildBlockHatch(width, height) {
+    const lines = [];
+    for (let x = -width / 2 + 12; x < width / 2 - 6; x += 14) {
+      lines.push({ x1: x, y1: height / 2 - 7, x2: x + 18, y2: -height / 2 + 7 });
+    }
+    return lines;
+  }
+
+  function drawForces(center, blockH, values, theta, u, nOut, moving) {
+    const mg    = values.mass * g;
+    const gPar  = mg * Math.sin(theta);
+    const gPerp = mg * Math.cos(theta);
+    const fStatic  = Math.min(gPar, values.muS * gPerp);
+    const fKinetic = values.muK * gPerp;
+    const friction = moving ? fKinetic : fStatic;
+
+    const scale = 3.0;
+    const lenG    = Math.min(150, Math.max(36, mg    * scale));
+    const lenPar  = Math.min(130, gPar  * scale);
+    const lenPerp = Math.min(130, Math.max(24, gPerp * scale));
+    const lenN    = lenPerp;
+    const lenF    = Math.min(120, Math.max(12, friction * scale));
+
+    const c = center;
+    const contact = {
+      x: center.x - nOut.x * (blockH / 2 + 5),
+      y: center.y - nOut.y * (blockH / 2 + 5)
+    };
+
+    // Gravity arrow
+    const gEnd = { x: c.x, y: c.y + lenG };
+    setLine(el.gArrow, c, gEnd);
+    setText(el.gLabel, { x: gEnd.x + 22, y: gEnd.y - 3 });
+    setLabelText(el.gLabel, `G = ${fmtN(mg)}`);
+
+    // Parallel component
+    const parVisible = lenPar > 5;
+    const parStart = { x: c.x + nOut.x * 12, y: c.y + nOut.y * 12 };
+    const parEnd   = { x: parStart.x - u.x * lenPar, y: parStart.y - u.y * lenPar };
+    setLine(el.gParArrow, parStart, parEnd, parVisible);
+    setText(el.gParLabel, {
+      x: parEnd.x - 17 * u.x + 10 * nOut.x,
+      y: parEnd.y - 17 * u.y + 10 * nOut.y
+    }, parVisible);
+    setLabelText(el.gParLabel, `G∥ = ${fmtN(gPar)}`);
+
+    // Perpendicular component
+    const perpStart = { x: c.x - u.x * 12, y: c.y - u.y * 12 };
+    const perpEnd   = { x: perpStart.x - nOut.x * lenPerp, y: perpStart.y - nOut.y * lenPerp };
+    setLine(el.gPerpArrow, perpStart, perpEnd);
+    setText(el.gPerpLabel, {
+      x: perpEnd.x - 14 * nOut.x - 12 * u.x,
+      y: perpEnd.y - 14 * nOut.y - 12 * u.y
+    });
+    setLabelText(el.gPerpLabel, `G⊥ = ${fmtN(gPerp)}`);
+
+    // Normal force
+    const nStart = { x: contact.x + u.x * 20, y: contact.y + u.y * 20 };
+    const nEnd   = { x: nStart.x + nOut.x * lenN, y: nStart.y + nOut.y * lenN };
+    setLine(el.nArrow, nStart, nEnd);
+    setText(el.nLabel, { x: nEnd.x + 16 * nOut.x, y: nEnd.y + 16 * nOut.y });
+    setLabelText(el.nLabel, `N = ${fmtN(gPerp)}`);
+
+    // Friction force
+    const fStart = { x: contact.x - u.x * 18, y: contact.y - u.y * 18 };
+    const fEnd   = { x: fStart.x + u.x * lenF, y: fStart.y + u.y * lenF };
+    setLine(el.fArrow, fStart, fEnd);
+    setText(el.fLabel, {
+      x: fEnd.x + 18 * u.x + 10 * nOut.x,
+      y: fEnd.y + 18 * u.y + 10 * nOut.y
+    });
+    setLabelText(el.fLabel, `Fμ = ${fmtN(friction)}`);
+
+    // Velocity arrow
+    if (state.v > 0.08) {
+      const vLen   = Math.min(95, state.v * 25);
+      const vStart = { x: center.x - u.x * 4, y: center.y - 78 - u.y * 4 };
+      const vEnd   = { x: vStart.x - u.x * vLen, y: vStart.y - u.y * vLen };
+      setLine(el.vArrow, vStart, vEnd, true);
+      const vMid = { x: (vStart.x + vEnd.x) / 2 - nOut.x * 14, y: (vStart.y + vEnd.y) / 2 - nOut.y * 14 };
+      setText(el.vLabel, vMid, true);
+      el.vLabel.textContent = `v = ${fmt(state.v, 1)} m/s`;
+    } else {
+      setLine(el.vArrow, center, center, false);
+      el.vLabel.style.opacity = "0";
+    }
+  }
+
+  // Helper: set plain text content preserving SVG structure (no tspan children modified)
+  function setLabelText(textEl, content) {
+    // Remove existing child nodes, set a single text node
+    while (textEl.firstChild) textEl.removeChild(textEl.firstChild);
+    textEl.appendChild(document.createTextNode(content));
+  }
+
+  function render(values, sliding) {
+    const theta = degToRad(values.angle);
+    const u    = { x:  Math.cos(theta), y: -Math.sin(theta) };
+    const nOut = { x: -Math.sin(theta), y: -Math.cos(theta) };
+    const B = { x: A.x + rampLength * u.x, y: A.y + rampLength * u.y };
+    const C = { x: B.x, y: A.y };
+
+    el.support.setAttribute("d", `M ${A.x} ${A.y} L ${B.x} ${B.y} L ${C.x} ${C.y} Z`);
+    drawHatching(el.supportHatch, buildSupportHatch(B, theta));
+
+    el.plane1.setAttribute("d",
+      `M ${A.x-7} ${A.y+1} C ${A.x+110} ${A.y-2-110*Math.sin(theta)}, ${B.x-110} ${B.y+2+24*Math.cos(theta)}, ${B.x+7} ${B.y}`);
+    el.plane2.setAttribute("d",
+      `M ${A.x-4} ${A.y-3} C ${A.x+105} ${A.y-5-105*Math.sin(theta)}, ${B.x-105} ${B.y-1+18*Math.cos(theta)}, ${B.x+4} ${B.y-3}`);
+
+    el.angleArc.setAttribute("d", arcPath(A, 58, 0, theta));
+
+    // Angle label — just outside the arc midpoint
+    const arcMid = polarPoint(A, 72, theta / 2);
+    setText(el.angleTxt, { x: arcMid.x + 2, y: arcMid.y });
+    el.angleTxt.textContent = values.angle > 0 ? `${Math.round(values.angle)}°` : "";
+    el.angleTxt.style.opacity = values.angle >= 4 ? "1" : "0";
+
+    // Threshold (μs limit) tick and label
+    const limit = Math.atan(values.muS);
+    const t1 = polarPoint(A, 70,  limit);
+    const t2 = polarPoint(A, 92,  limit);
+    el.limitTick.setAttribute("d", `M ${t1.x} ${t1.y} L ${t2.x} ${t2.y}`);
+    const threshLabelPt = polarPoint(A, 98, limit);
+    setText(el.threshTxt, { x: threshLabelPt.x + 3, y: threshLabelPt.y });
+    el.threshTxt.textContent = `θ_max = ${fmt(limit * 180 / Math.PI, 1)}°`;
+
+    // Block
+    const size   = Math.sqrt(values.mass);
+    const blockW = 74 + size * 7;
+    const blockH = 48 + size * 3.5;
+
+    el.blockRect.setAttribute("x",      -blockW / 2);
+    el.blockRect.setAttribute("y",      -blockH / 2);
+    el.blockRect.setAttribute("width",   blockW);
+    el.blockRect.setAttribute("height",  blockH);
+    drawHatching(el.blockHatch, buildBlockHatch(blockW, blockH));
+
+    state.s = Math.max(42, Math.min(rampLength - 70, state.s));
+
+    const center = {
+      x: A.x + u.x * state.s + nOut.x * (blockH / 2 + 5),
+      y: A.y + u.y * state.s + nOut.y * (blockH / 2 + 5)
+    };
+
+    el.block.setAttribute("transform", `translate(${center.x} ${center.y}) rotate(${-values.angle})`);
+
+    drawForces(center, blockH, values, theta, u, nOut, sliding);
+  }
+
+  function step(now) {
+    const values       = readValues();
+    const theta        = degToRad(values.angle);
+    const thresholdDeg = Math.atan(values.muS) * 180 / Math.PI;
+
+    const staticLimitBroken = Math.sin(theta) > values.muS * Math.cos(theta) + 1e-6;
+    const accel = g * (Math.sin(theta) - values.muK * Math.cos(theta));
+
+    const dt = Math.min(0.035, (now - state.lastTime) / 1000);
+    state.lastTime = now;
+
+    if ((staticLimitBroken || state.moving) && accel > 0 && state.s > 43) {
+      state.moving = true;
+      state.v += accel * dt;
+      state.s -= state.v * pxPerMeter * dt;
+    } else if (state.moving && accel <= 0) {
+      state.v = Math.max(0, state.v + accel * dt);
+      state.s -= state.v * pxPerMeter * dt;
+      if (state.v <= 0.01) state.moving = false;
+    } else if (!staticLimitBroken) {
+      state.v = 0;
+      state.moving = false;
+    }
+
+    if (state.s <= 43) { state.s = 43; state.v = 0; state.moving = false; }
+
+    const sliding = state.moving || staticLimitBroken;
+    const displayAccel = state.moving ? accel : 0;
+    updateLabels(values, thresholdDeg, sliding, displayAccel);
+    render(values, sliding);
+
+    requestAnimationFrame(step);
+  }
+
+  function resetAll() {
+    el.angle.value = defaults.angle;
+    el.muS.value   = defaults.muS;
+    el.muK.value   = defaults.muK;
+    el.mass.value  = defaults.mass;
+    state.s = 350; state.v = 0; state.moving = false;
+  }
+
+  for (const input of [el.angle, el.muS, el.muK, el.mass]) {
+    input.addEventListener("input", () => {
+      const values = readValues();
+      const theta  = degToRad(values.angle);
+      if (!state.moving && Math.sin(theta) <= values.muS * Math.cos(theta)) state.v = 0;
+    });
+  }
+
+  el.reset.addEventListener("click", resetAll);
+  resetAll();
+  requestAnimationFrame(step);
+})();
+</script>
+</body>
+</html>
