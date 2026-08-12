@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kahden auton kilpailu</title>
+<style>
+  :root{
+    --ink:#3F3D39;
+    --muted:#77736d;
+    --red:#D84A62;
+    --blue:#2E86A6;
+    --green:#4A8B5C;
+    --road:#f4f4f4;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#fff;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+  body{display:grid;place-items:center}
+  .wrap{
+    width:min(100vw,1280px);
+    aspect-ratio:16/9;
+    position:relative;
+    overflow:hidden;
+    background:#fff;
+    padding:2.2%;
+  }
+  svg{width:100%;height:80%;display:block}
+  .controls{
+    height:20%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+  }
+  button{
+    appearance:none;
+    border:2px solid var(--ink);
+    background:#fff;
+    color:var(--ink);
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    box-shadow:2px 2px 0 #ddd;
+  }
+  button:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #ddd}
+  .distance{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+  }
+  input[type=range]{width:230px;accent-color:var(--ink)}
+  .readout{min-width:116px;text-align:right;font-variant-numeric:tabular-nums}
+  .sketch{stroke-linecap:round;stroke-linejoin:round}
+  .label{font-size:17px;fill:var(--ink)}
+  .small{font-size:14px;fill:var(--muted)}
+  .finishText{font-size:18px;font-weight:700;fill:var(--green)}
+  .axis{stroke:var(--ink);stroke-width:2}
+  .grid{stroke:#dedede;stroke-width:1}
+  .curve1{fill:none;stroke:var(--red);stroke-width:3}
+  .curve2{fill:none;stroke:var(--blue);stroke-width:3}
+  .cursor{stroke:#8e8a84;stroke-width:1.5;stroke-dasharray:5 5}
+  @media (max-width:720px){
+    button,.distance{font-size:15px}
+    input[type=range]{width:160px}
+    .label{font-size:14px}
+    .small{font-size:12px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<svg id="scene" viewBox="0 0 1200 540" role="img" aria-label="Kahden auton liikesimulaatio ja paikka ajan funktiona">
+
+  <defs>
+    <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#cfcfcf" stroke-width="1"/>
+    </pattern>
+    <clipPath id="plotClip">
+      <rect x="770" y="120" width="360" height="310"/>
+    </clipPath>
+  </defs>
+
+  <!-- Vasemman puolen ajoradat -->
+  <path d="M70 180 Q240 176 400 180 T690 180" fill="none" stroke="#d8d8d8" stroke-width="58" class="sketch"/>
+  <path d="M70 355 Q240 351 400 355 T690 355" fill="none" stroke="#d8d8d8" stroke-width="58" class="sketch"/>
+  <path d="M70 180 Q240 176 400 180 T690 180" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="22 18"/>
+  <path d="M70 355 Q240 351 400 355 T690 355" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="22 18"/>
+
+  <!-- lähtö / maali -->
+  <line x1="90" y1="122" x2="90" y2="415" stroke="#3F3D39" stroke-width="3"/>
+  <line x1="660" y1="122" x2="660" y2="415" stroke="#3F3D39" stroke-width="3"/>
+
+  <text x="105" y="92" class="label">Auto 1: 50 km/h</text>
+  <text x="105" y="455" class="label">Auto 2: 60 → 40 km/h</text>
+  <text id="winner" x="375" y="40" text-anchor="middle" class="finishText"></text>
+
+  <!-- puolimatkan merkki -->
+  <line x1="375" y1="300" x2="375" y2="410" stroke="#9a9690" stroke-width="2" stroke-dasharray="7 7"/>
+  <text x="375" y="294" text-anchor="middle" class="small">½ matka</text>
+
+  <!-- auto 1 -->
+  <g id="car1" transform="translate(90,180)">
+    <path d="M-34 6 L-25 -14 L8 -20 L28 -10 L38 7 Z" fill="#fff" stroke="#3F3D39" stroke-width="3" class="sketch"/>
+    <path d="M-18 -12 L5 -16 L18 -8 L-17 -7 Z" fill="url(#hatch)" stroke="#3F3D39" stroke-width="2"/>
+    <circle cx="-20" cy="10" r="8" fill="#fff" stroke="#3F3D39" stroke-width="3"/>
+    <circle cx="24" cy="10" r="8" fill="#fff" stroke="#3F3D39" stroke-width="3"/>
+    <line x1="-8" y1="-15" x2="2" y2="-18" stroke="#D84A62" stroke-width="3"/>
+  </g>
+
+  <!-- auto 2 -->
+  <g id="car2" transform="translate(90,355)">
+    <path d="M-34 6 L-25 -14 L8 -20 L28 -10 L38 7 Z" fill="#fff" stroke="#3F3D39" stroke-width="3" class="sketch"/>
+    <path d="M-18 -12 L5 -16 L18 -8 L-17 -7 Z" fill="url(#hatch)" stroke="#3F3D39" stroke-width="2"/>
+    <circle cx="-20" cy="10" r="8" fill="#fff" stroke="#3F3D39" stroke-width="3"/>
+    <circle cx="24" cy="10" r="8" fill="#fff" stroke="#3F3D39" stroke-width="3"/>
+    <line x1="-8" y1="-15" x2="2" y2="-18" stroke="#2E86A6" stroke-width="3"/>
+  </g>
+
+  <!-- (t,x)-koordinaatisto -->
+  <g id="plot">
+    <line x1="770" y1="430" x2="1140" y2="430" class="axis"/>
+    <line x1="770" y1="430" x2="770" y2="105" class="axis"/>
+    <text x="1144" y="454" class="label">t</text>
+    <text x="748" y="110" class="label">x</text>
+
+    <line x1="770" y1="327" x2="1130" y2="327" class="grid"/>
+    <line x1="770" y1="224" x2="1130" y2="224" class="grid"/>
+    <line x1="770" y1="121" x2="1130" y2="121" class="grid"/>
+
+    <line x1="890" y1="120" x2="890" y2="430" class="grid"/>
+    <line x1="1010" y1="120" x2="1010" y2="430" class="grid"/>
+    <line x1="1130" y1="120" x2="1130" y2="430" class="grid"/>
+
+    <path id="full1" class="curve1" opacity="0.18" clip-path="url(#plotClip)"/>
+    <path id="full2" class="curve2" opacity="0.18" clip-path="url(#plotClip)"/>
+    <path id="trace1" class="curve1" clip-path="url(#plotClip)"/>
+    <path id="trace2" class="curve2" clip-path="url(#plotClip)"/>
+
+    <line id="cursor" x1="770" y1="120" x2="770" y2="430" class="cursor"/>
+    <circle id="dot1" r="5" fill="#D84A62"/>
+    <circle id="dot2" r="5" fill="#2E86A6"/>
+
+    <text id="plotTime" x="780" y="476" class="small">t = 0,00 h</text>
+    <text id="plotX1" x="930" y="476" class="small">x₁ = 0 km</text>
+    <text id="plotX2" x="1030" y="476" class="small">x₂ = 0 km</text>
+  </g>
+</svg>
+
+<div class="controls">
+  <button id="play">Käynnistä</button>
+  <button id="reset">Nollaa</button>
+  <label class="distance">Matka
+    <input id="distance" type="range" min="40" max="200" step="10" value="100">
+    <span id="distanceValue" class="readout">100 km</span>
+  </label>
+</div>
+</div>
+
+<script>
+(() => {
+  const car1 = document.getElementById('car1');
+  const car2 = document.getElementById('car2');
+  const playBtn = document.getElementById('play');
+  const resetBtn = document.getElementById('reset');
+  const distanceSlider = document.getElementById('distance');
+  const distanceValue = document.getElementById('distanceValue');
+  const winner = document.getElementById('winner');
+
+  const trace1 = document.getElementById('trace1');
+  const trace2 = document.getElementById('trace2');
+  const full1 = document.getElementById('full1');
+  const full2 = document.getElementById('full2');
+  const cursor = document.getElementById('cursor');
+  const dot1 = document.getElementById('dot1');
+  const dot2 = document.getElementById('dot2');
+  const plotTime = document.getElementById('plotTime');
+  const plotX1 = document.getElementById('plotX1');
+  const plotX2 = document.getElementById('plotX2');
+
+  const x0 = 90, xFinish = 660, track = xFinish - x0;
+  const px0 = 770, px1 = 1130, py0 = 430, py1 = 120;
+  let running = false;
+  let elapsedReal = 0;
+  let last = 0;
+  const visualDuration = 8;
+
+  function fmt(n){ return n.toFixed(2).replace('.', ','); }
+
+  function stateAt(t, D){
+    const s1 = Math.min(50 * t, D);
+    const halfTime = (D/2) / 60;
+    let s2 = t <= halfTime ? 60*t : D/2 + 40*(t-halfTime);
+    s2 = Math.min(s2, D);
+    return {s1,s2};
+  }
+
+  function plotPoint(t, x, tMax, D){
+    const px = px0 + (t/tMax) * (px1-px0);
+    const py = py0 - (x/D) * (py0-py1);
+    return [px,py];
+  }
+
+  function makePath(D, tEnd, who){
+    const tMax = D/48; // hitaampi maaliintulo
+    const steps = 120;
+    let d = "";
+    for(let i=0;i<=steps;i++){
+      const t = tEnd * i/steps;
+      const s = stateAt(t,D);
+      const x = who===1 ? s.s1 : s.s2;
+      const [px,py] = plotPoint(t,x,tMax,D);
+      d += (i===0 ? "M" : "L") + px.toFixed(2) + " " + py.toFixed(2) + " ";
+    }
+    return d;
+  }
+
+  function render(){
+    const D = +distanceSlider.value;
+    const t1Finish = D/50;
+    const t2Finish = D/48;
+    const simHours = (elapsedReal / visualDuration) * t1Finish;
+    const current = Math.min(simHours, t2Finish);
+    const {s1,s2} = stateAt(current, D);
+
+    const cx1 = x0 + track*(s1/D);
+    const cx2 = x0 + track*(s2/D);
+    car1.setAttribute('transform', `translate(${cx1},180)`);
+    car2.setAttribute('transform', `translate(${cx2},355)`);
+
+    full1.setAttribute('d', makePath(D, t1Finish, 1));
+    full2.setAttribute('d', makePath(D, t2Finish, 2));
+    trace1.setAttribute('d', makePath(D, Math.min(current,t1Finish), 1));
+    trace2.setAttribute('d', makePath(D, Math.min(current,t2Finish), 2));
+
+    const [p1x,p1y] = plotPoint(Math.min(current,t1Finish), s1, t2Finish, D);
+    const [p2x,p2y] = plotPoint(Math.min(current,t2Finish), s2, t2Finish, D);
+    const cursorX = plotPoint(current,0,t2Finish,D)[0];
+
+    dot1.setAttribute('cx', p1x); dot1.setAttribute('cy', p1y);
+    dot2.setAttribute('cx', p2x); dot2.setAttribute('cy', p2y);
+    cursor.setAttribute('x1', cursorX); cursor.setAttribute('x2', cursorX);
+
+    plotTime.textContent = `t = ${fmt(current)} h`;
+    plotX1.textContent = `x₁ = ${Math.round(s1)} km`;
+    plotX2.textContent = `x₂ = ${Math.round(s2)} km`;
+
+    if(s1 >= D && current >= t1Finish){
+      winner.textContent = 'Auto 1 perillä';
+      if(current >= t2Finish || simHours >= t1Finish){
+        running = false;
+        playBtn.textContent = 'Käynnistä';
+      }
+    } else {
+      winner.textContent = '';
+    }
+  }
+
+  function loop(ts){
+    if(!running) return;
+    if(!last) last = ts;
+    elapsedReal += (ts-last)/1000;
+    last = ts;
+    render();
+    if(running) requestAnimationFrame(loop);
+  }
+
+  playBtn.addEventListener('click', () => {
+    const D = +distanceSlider.value;
+    const t1Finish = D/50;
+    if(!running){
+      if((elapsedReal/visualDuration)*t1Finish >= t1Finish) elapsedReal = 0;
+      running = true;
+      last = 0;
+      playBtn.textContent = 'Tauko';
+      requestAnimationFrame(loop);
+    } else {
+      running = false;
+      last = 0;
+      playBtn.textContent = 'Käynnistä';
+    }
+  });
+
+  resetBtn.addEventListener('click', () => {
+    running = false;
+    elapsedReal = 0;
+    last = 0;
+    playBtn.textContent = 'Käynnistä';
+    winner.textContent = '';
+    render();
+  });
+
+  distanceSlider.addEventListener('input', () => {
+    distanceValue.textContent = `${distanceSlider.value} km`;
+    running = false;
+    elapsedReal = 0;
+    last = 0;
+    playBtn.textContent = 'Käynnistä';
+    winner.textContent = '';
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
