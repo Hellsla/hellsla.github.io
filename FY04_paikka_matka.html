@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  :root{
+    --ink:#3f3d39;
+    --red:#d84a62;
+    --green:#4a8b5c;
+    --grid:#e9e9e9;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--ink);
+  }
+
+  #sim{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    touch-action:none;
+    user-select:none;
+    background:#ffffff;
+  }
+
+  svg{
+    width:100%;
+    height:100%;
+    display:block;
+  }
+
+  .grid{
+    stroke:var(--grid);
+    stroke-width:1;
+  }
+
+  .route-shadow{
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .route{
+    fill:none;
+    stroke:var(--red);
+    stroke-width:4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .displacement{
+    stroke:var(--green);
+    stroke-width:4;
+    stroke-linecap:round;
+  }
+
+  .start{
+    fill:#ffffff;
+    stroke:var(--ink);
+    stroke-width:3;
+  }
+
+  .object{
+    fill:#ffffff;
+    stroke:var(--ink);
+    stroke-width:3;
+    cursor:grab;
+  }
+
+  .object:active{
+    cursor:grabbing;
+  }
+
+  .hatch{
+    stroke:#b9b9b9;
+    stroke-width:1.5;
+  }
+
+  .math-label{
+    font-family:"Cambria Math","STIX Two Math","Times New Roman",serif;
+    font-style:italic;
+    font-weight:400;
+    pointer-events:none;
+    paint-order:stroke;
+    stroke:#ffffff;
+    stroke-width:5px;
+    stroke-linejoin:round;
+  }
+
+  #sLabel{
+    fill:var(--red);
+    font-size:31px;
+  }
+
+  #dxLabel{
+    fill:var(--green);
+    font-size:29px;
+  }
+
+  .position-label{
+    fill:var(--ink);
+    font-size:26px;
+  }
+
+  .subscript{
+    font-size:17px;
+    baseline-shift:sub;
+  }
+
+  .readout{
+    position:absolute;
+    top:24px;
+    left:28px;
+    font-size:clamp(18px,2.3vw,29px);
+    line-height:1.55;
+    font-weight:600;
+    pointer-events:none;
+  }
+
+  .distance-text{ color:var(--red); }
+  .shift-text{ color:var(--green); }
+
+  button{
+    position:absolute;
+    right:28px;
+    bottom:24px;
+    padding:8px 17px;
+    border:2px solid var(--ink);
+    border-radius:6px;
+    background:#ffffff;
+    color:var(--ink);
+    font-size:17px;
+    cursor:pointer;
+  }
+
+  button:hover{
+    background:#f5f5f5;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="sim">
+
+<svg id="svg"
+     viewBox="0 0 900 500"
+     preserveAspectRatio="xMidYMid meet">
+
+  <defs>
+
+    <pattern id="gridPattern"
+             width="55"
+             height="55"
+             patternUnits="userSpaceOnUse">
+      <path d="M 55 0 L 0 0 0 55"
+            fill="none"
+            class="grid"/>
+    </pattern>
+
+    <marker id="arrowGreen"
+            markerWidth="11"
+            markerHeight="11"
+            refX="9"
+            refY="5.5"
+            orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M0,0 L10,5.5 L0,11 L2.5,5.5 Z"
+            fill="#4a8b5c"/>
+    </marker>
+
+  </defs>
+
+  <!-- Kevyt ruudukko -->
+  <rect x="0"
+        y="0"
+        width="900"
+        height="500"
+        fill="url(#gridPattern)"
+        opacity="0.7"/>
+
+  <!-- Kuljettu matka -->
+  <path id="routeShadow"
+        class="route-shadow"
+        d=""/>
+
+  <path id="route"
+        class="route"
+        d=""/>
+
+  <!-- Matkan tunnus -->
+  <text id="sLabel"
+        class="math-label"
+        text-anchor="middle">
+    s
+  </text>
+
+  <!-- Siirtymä -->
+  <line id="shift"
+        class="displacement"
+        marker-end="url(#arrowGreen)"/>
+
+  <!-- Siirtymän tunnus -->
+  <text id="dxLabel"
+        class="math-label"
+        text-anchor="middle">
+    Δx
+  </text>
+
+  <!-- Alkupiste -->
+  <circle id="startPoint"
+          class="start"
+          cx="170"
+          cy="340"
+          r="7"/>
+
+  <!-- Alkupaikka x₁ -->
+  <text id="x1Label"
+        class="math-label position-label"
+        x="170"
+        y="380"
+        text-anchor="middle">
+    x<tspan class="subscript">1</tspan>
+  </text>
+
+  <!-- Loppupaikka x₂ -->
+  <text id="x2Label"
+        class="math-label position-label"
+        text-anchor="middle">
+    x<tspan class="subscript">2</tspan>
+  </text>
+
+  <!-- Liikutettava kappale -->
+  <g id="object"
+     transform="translate(170 340)">
+
+    <circle class="object"
+            cx="0"
+            cy="0"
+            r="23"/>
+
+    <line class="hatch" x1="-14" y1="-7" x2="-4" y2="-17"/>
+    <line class="hatch" x1="-16" y1="2"  x2="2"  y2="-16"/>
+    <line class="hatch" x1="-12" y1="11" x2="10" y2="-11"/>
+    <line class="hatch" x1="-4"  y1="16" x2="15" y2="-3"/>
+
+  </g>
+
+</svg>
+
+<div class="readout">
+  <div class="distance-text" id="distanceText">
+    Matka = 0,0 m
+  </div>
+
+  <div class="shift-text" id="shiftText">
+    Siirtymä = 0,0 m
+  </div>
+</div>
+
+<button id="reset">Nollaa</button>
+
+</div>
+
+<script>
+const svg = document.getElementById("svg");
+const object = document.getElementById("object");
+
+const route = document.getElementById("route");
+const routeShadow = document.getElementById("routeShadow");
+const shift = document.getElementById("shift");
+
+const sLabel = document.getElementById("sLabel");
+const dxLabel = document.getElementById("dxLabel");
+const x2Label = document.getElementById("x2Label");
+
+const distanceText = document.getElementById("distanceText");
+const shiftText = document.getElementById("shiftText");
+
+const resetButton = document.getElementById("reset");
+
+const start = {
+  x:170,
+  y:340
+};
+
+let pos = {...start};
+let previous = {...start};
+
+let distance = 0;
+let dragging = false;
+
+let pathData = `M ${start.x} ${start.y}`;
+
+const pixelsPerMeter = 55;
+
+
+function svgPoint(event){
+  const point = svg.createSVGPoint();
+
+  point.x = event.clientX;
+  point.y = event.clientY;
+
+  return point.matrixTransform(
+    svg.getScreenCTM().inverse()
+  );
+}
+
+
+function getRouteLabelPoint(){
+
+  const length = route.getTotalLength();
+
+  if(length < 20){
+    return {
+      x:start.x + 45,
+      y:start.y - 35
+    };
+  }
+
+  const targetLength = length * 0.55;
+
+  const p = route.getPointAtLength(targetLength);
+
+  const before = route.getPointAtLength(
+    Math.max(0, targetLength - 5)
+  );
+
+  const after = route.getPointAtLength(
+    Math.min(length, targetLength + 5)
+  );
+
+  const tangentX = after.x - before.x;
+  const tangentY = after.y - before.y;
+
+  const tangentLength =
+    Math.sqrt(
+      tangentX*tangentX +
+      tangentY*tangentY
+    ) || 1;
+
+  const normalX = -tangentY / tangentLength;
+  const normalY = tangentX / tangentLength;
+
+  return {
+    x:p.x + normalX * 22,
+    y:p.y + normalY * 22
+  };
+}
+
+
+function update(){
+
+  object.setAttribute(
+    "transform",
+    `translate(${pos.x} ${pos.y})`
+  );
+
+  route.setAttribute("d", pathData);
+  routeShadow.setAttribute("d", pathData);
+
+
+  /* x₂ seuraa loppupaikkaa */
+
+  x2Label.setAttribute(
+    "x",
+    pos.x
+  );
+
+  x2Label.setAttribute(
+    "y",
+    pos.y + 45
+  );
+
+
+  /* Siirtymä */
+
+  const dx = pos.x - start.x;
+  const dy = pos.y - start.y;
+
+  const pixelDisplacement =
+    Math.sqrt(dx*dx + dy*dy);
+
+  let arrowEndX = pos.x;
+  let arrowEndY = pos.y;
+
+  if(pixelDisplacement > 1){
+
+    const ux = dx / pixelDisplacement;
+    const uy = dy / pixelDisplacement;
+
+    arrowEndX =
+      pos.x - ux * 29;
+
+    arrowEndY =
+      pos.y - uy * 29;
+  }
+
+  shift.setAttribute("x1", start.x);
+  shift.setAttribute("y1", start.y);
+  shift.setAttribute("x2", arrowEndX);
+  shift.setAttribute("y2", arrowEndY);
+
+
+  /* Δx nuolen keskelle */
+
+  if(pixelDisplacement > 30){
+
+    const midX =
+      (start.x + arrowEndX) / 2;
+
+    const midY =
+      (start.y + arrowEndY) / 2;
+
+    const ux = dx / pixelDisplacement;
+    const uy = dy / pixelDisplacement;
+
+    const normalX = -uy;
+    const normalY = ux;
+
+    dxLabel.setAttribute(
+      "x",
+      midX + normalX * 18
+    );
+
+    dxLabel.setAttribute(
+      "y",
+      midY + normalY * 18
+    );
+
+    dxLabel.style.display = "block";
+
+  }else{
+
+    dxLabel.style.display = "none";
+  }
+
+
+  /* s punaisen reitin viereen */
+
+  const routeLabelPoint =
+    getRouteLabelPoint();
+
+  sLabel.setAttribute(
+    "x",
+    routeLabelPoint.x
+  );
+
+  sLabel.setAttribute(
+    "y",
+    routeLabelPoint.y
+  );
+
+  if(distance > 12){
+    sLabel.style.display = "block";
+  }else{
+    sLabel.style.display = "none";
+  }
+
+
+  /* Lukemat */
+
+  const displacement =
+    pixelDisplacement / pixelsPerMeter;
+
+  distanceText.textContent =
+    `Matka = ${(distance / pixelsPerMeter)
+      .toFixed(1)
+      .replace(".",",")} m`;
+
+  shiftText.textContent =
+    `Siirtymä = ${displacement
+      .toFixed(1)
+      .replace(".",",")} m`;
+}
+
+
+object.addEventListener(
+  "pointerdown",
+  event => {
+
+    dragging = true;
+
+    object.setPointerCapture(
+      event.pointerId
+    );
+
+    previous = {...pos};
+  }
+);
+
+
+object.addEventListener(
+  "pointermove",
+  event => {
+
+    if(!dragging) return;
+
+    const p = svgPoint(event);
+
+    const x =
+      Math.max(
+        35,
+        Math.min(865, p.x)
+      );
+
+    const y =
+      Math.max(
+        80,
+        Math.min(445, p.y)
+      );
+
+    const dx =
+      x - previous.x;
+
+    const dy =
+      y - previous.y;
+
+    const step =
+      Math.sqrt(dx*dx + dy*dy);
+
+    if(step > 2){
+
+      distance += step;
+
+      pos = {x,y};
+      previous = {x,y};
+
+      pathData +=
+        ` L ${x} ${y}`;
+
+      update();
+    }
+  }
+);
+
+
+object.addEventListener(
+  "pointerup",
+  () => {
+    dragging = false;
+  }
+);
+
+object.addEventListener(
+  "pointercancel",
+  () => {
+    dragging = false;
+  }
+);
+
+
+resetButton.addEventListener(
+  "click",
+  () => {
+
+    pos = {...start};
+    previous = {...start};
+
+    distance = 0;
+
+    pathData =
+      `M ${start.x} ${start.y}`;
+
+    update();
+  }
+);
+
+
+update();
+</script>
+
+</body>
+</html>
