@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Valosähköinen ilmiö</title>
+<style>
+  :root{
+    --ink:#2b2b2b;
+    --soft:#6b6b6b;
+    --red:#D84A62;
+    --blue:#2E86A6;
+    --green:#4A8B5C;
+    --yellow:#FFD95A;
+    --orange:#F28C28;
+    --light:#F4F4F4;
+  }
+  html,body{margin:0;width:100%;height:100%;background:#fff;font-family:Arial,Helvetica,sans-serif;color:var(--ink);overflow:hidden}
+  *{box-sizing:border-box}
+  .wrap{width:100%;height:100%;display:grid;grid-template-rows:1fr auto;gap:8px;padding:18px 22px 16px}
+  svg{width:100%;height:100%;min-height:0;display:block}
+  .controls{
+    display:grid;
+    grid-template-columns: 1.15fr 1fr 1fr auto;
+    gap:18px;
+    align-items:end;
+    max-width:1100px;
+    margin:0 auto;
+    width:100%;
+  }
+  .control{display:grid;grid-template-columns:1fr auto;column-gap:10px;row-gap:4px;align-items:center}
+  .control label{font-size:15px;font-weight:600}
+  .value{font-size:15px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  input[type=range]{
+    grid-column:1 / -1;
+    width:100%;
+    accent-color:var(--ink);
+  }
+  select,button{
+    border:1.7px solid var(--ink);
+    background:#fff;
+    color:var(--ink);
+    font-size:15px;
+    padding:7px 10px;
+    border-radius:8px;
+  }
+  button{cursor:pointer;font-weight:600}
+  .readout{
+    position:absolute;top:18px;right:22px;
+    font-size:16px;line-height:1.45;text-align:right;
+    background:rgba(255,255,255,.88);padding:4px 6px;
+  }
+  @media (max-width:760px){
+    .controls{grid-template-columns:1fr 1fr;gap:10px 14px}
+    .wrap{padding:12px}
+    .readout{top:10px;right:12px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="position:relative;min-height:0">
+    <svg id="sim" viewBox="0 0 1000 520" aria-label="Valosähköisen ilmiön simulaatio">
+      <defs>
+        <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+          <line x1="0" y1="0" x2="0" y2="8" stroke="#d8d8d8" stroke-width="1"/>
+        </pattern>
+        <filter id="rough">
+          <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="1" seed="5" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="0.55"/>
+        </filter>
+        <marker id="arrowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#2E86A6"/>
+        </marker>
+      </defs>
+
+      <!-- lamp -->
+      <g filter="url(#rough)">
+        <path d="M115 92 q28 -34 56 0 l-7 40 h-42 z" fill="#fff" stroke="#2b2b2b" stroke-width="3"/>
+        <rect x="125" y="130" width="36" height="24" rx="3" fill="url(#hatch)" stroke="#2b2b2b" stroke-width="3"/>
+        <line x1="118" y1="79" x2="99" y2="62" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="168" y1="79" x2="187" y2="62" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="143" y1="64" x2="143" y2="39" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- light rays -->
+      <g id="rays" stroke-linecap="round"></g>
+
+      <!-- tube -->
+      <g filter="url(#rough)">
+        <rect x="315" y="115" width="510" height="240" rx="40" fill="#fff" stroke="#2b2b2b" stroke-width="3"/>
+        <rect x="338" y="148" width="48" height="174" rx="8" fill="url(#hatch)" stroke="#2b2b2b" stroke-width="3"/>
+        <rect x="753" y="148" width="48" height="174" rx="8" fill="url(#hatch)" stroke="#2b2b2b" stroke-width="3"/>
+      </g>
+
+      <!-- circuit -->
+      <g fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M362 355 V430 H525"/>
+        <path d="M777 355 V430 H635"/>
+        <line x1="550" y1="408" x2="550" y2="452"/>
+        <line x1="580" y1="416" x2="580" y2="444"/>
+        <path d="M525 430 H550 M580 430 H635"/>
+      </g>
+
+      <!-- ammeter -->
+      <g filter="url(#rough)">
+        <circle cx="704" cy="430" r="36" fill="#fff" stroke="#2b2b2b" stroke-width="3"/>
+        <path d="M684 440 Q704 400 724 440" fill="none" stroke="#2b2b2b" stroke-width="2.5"/>
+        <line id="needle" x1="704" y1="438" x2="704" y2="414" stroke="#D84A62" stroke-width="3.3" stroke-linecap="round"/>
+      </g>
+
+      <!-- electrons -->
+      <g id="electrons"></g>
+
+      <!-- external circuit electrons -->
+      <g id="wireElectrons"></g>
+
+      <!-- labels kept minimal -->
+      <text id="leftPolarity" x="350" y="142" font-size="18" font-weight="700"></text>
+      <text id="rightPolarity" x="773" y="142" font-size="18" font-weight="700"></text>
+      <text x="540" y="487" font-size="15">Jännite</text>
+      <text x="686" y="487" font-size="15">Virta</text>
+    </svg>
+    <div class="readout">
+      <div id="energyReadout">E = 0,00 eV</div>
+      <div id="currentReadout">I = 0,00 µA</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="control">
+      <label for="wavelength">Aallonpituus</label>
+      <span class="value" id="wavelengthValue">450 nm</span>
+      <input id="wavelength" type="range" min="250" max="700" value="450" step="1">
+    </div>
+
+    <div class="control">
+      <label for="intensity">Intensiteetti</label>
+      <span class="value" id="intensityValue">60 %</span>
+      <input id="intensity" type="range" min="0" max="100" value="60" step="1">
+    </div>
+
+    <div class="control">
+      <label for="voltage">Jännite</label>
+      <span class="value" id="voltageValue">0,0 V</span>
+      <input id="voltage" type="range" min="-5" max="5" value="0" step="0.1">
+    </div>
+
+    <div style="display:flex;gap:8px;align-items:end">
+      <select id="material" aria-label="Metalli">
+        <option value="2.28">Na</option>
+        <option value="3.68">Mg</option>
+        <option value="4.31">Zn</option>
+        <option value="4.70">Cu</option>
+      </select>
+      <button id="reset">Nollaa</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const wavelength = document.getElementById('wavelength');
+  const intensity = document.getElementById('intensity');
+  const voltage = document.getElementById('voltage');
+  const material = document.getElementById('material');
+  const reset = document.getElementById('reset');
+
+  const wavelengthValue = document.getElementById('wavelengthValue');
+  const intensityValue = document.getElementById('intensityValue');
+  const voltageValue = document.getElementById('voltageValue');
+  const energyReadout = document.getElementById('energyReadout');
+  const currentReadout = document.getElementById('currentReadout');
+
+  const rays = document.getElementById('rays');
+  const electronsG = document.getElementById('electrons');
+  const needle = document.getElementById('needle');
+  const wireElectronsG = document.getElementById('wireElectrons');
+  const leftPolarity = document.getElementById('leftPolarity');
+  const rightPolarity = document.getElementById('rightPolarity');
+
+  const NS = 'http://www.w3.org/2000/svg';
+  let particles = [];
+  let last = performance.now();
+  let accumulator = 0;
+  let wirePhase = 0;
+
+  function fmt(x, digits=1){
+    return x.toFixed(digits).replace('.', ',');
+  }
+
+  function wavelengthColor(lambda){
+    if(lambda < 380) return '#7A55B6';
+    if(lambda < 440) return '#5144C6';
+    if(lambda < 490) return '#2E86D1';
+    if(lambda < 520) return '#3AAE78';
+    if(lambda < 570) return '#9CBF43';
+    if(lambda < 590) return '#E2B13C';
+    if(lambda < 630) return '#F28C28';
+    return '#D84A62';
+  }
+
+  function physics(){
+    const lam = +wavelength.value;
+    const phi = +material.value;
+    const photonE = 1240 / lam; // eV
+    const ke = Math.max(0, photonE - phi);
+    const V = +voltage.value;
+
+    // Collection fraction: retarding voltage suppresses current once e|V| reaches Kmax.
+    let collection = 0;
+    if(ke > 0 && +intensity.value > 0){
+      if(V >= 0){
+        // Attracting voltage increases collection toward a saturation plateau.
+        collection = Math.min(1, 0.60 + 0.16*V);
+      } else {
+        // Retarding voltage: current reaches zero at |V| = Kmax/e.
+        const r = Math.abs(V)/Math.max(ke,0.001);
+        collection = r >= 1 ? 0 : Math.pow(1-r, 1.35);
+      }
+    }
+    const current = (+intensity.value/100) * 5.0 * collection; // µA, illustrative scale
+    return {lam, phi, photonE, ke, V, current};
+  }
+
+  function updateRays(p){
+    rays.innerHTML = '';
+    const count = Math.max(0, Math.round(+intensity.value / 12));
+    const color = wavelengthColor(p.lam);
+    for(let i=0;i<count;i++){
+      const y = 98 + (i-(count-1)/2)*13;
+      const line = document.createElementNS(NS,'line');
+      line.setAttribute('x1','183');
+      line.setAttribute('y1',String(y));
+      line.setAttribute('x2','338');
+      line.setAttribute('y2',String(160 + (y-98)*0.35));
+      line.setAttribute('stroke',color);
+      line.setAttribute('stroke-width','3');
+      line.setAttribute('opacity','0.75');
+      rays.appendChild(line);
+    }
+  }
+
+  function spawnElectron(p){
+    // Photoemission depends on photon energy and light intensity, not on the applied voltage.
+    if(p.ke <= 0 || +intensity.value <= 0) return;
+
+    const c = document.createElementNS(NS,'circle');
+    c.setAttribute('r','5');
+    c.setAttribute('fill','#2E86A6');
+    c.setAttribute('stroke','#2b2b2b');
+    c.setAttribute('stroke-width','1.3');
+    electronsG.appendChild(c);
+
+    const y = 165 + Math.random()*140;
+
+    // Simplified energy spread: emitted electrons have kinetic energies from near 0 to Kmax.
+    // Under a retarding voltage, only electrons with enough kinetic energy reach the collector.
+    const energyFraction = 0.18 + 0.82*Math.random();
+    const electronKE = p.ke * energyFraction;
+    const canReach = (p.V >= 0) || (electronKE + p.V > 0); // energies in eV, V numerically matches eV/e
+
+    // Speed is only a visual scale; direction/turning behavior carries the physics.
+    const speed = 95 + 70*Math.sqrt(Math.max(electronKE,0.02));
+    particles.push({
+      el:c, x:392, y, vx:speed, age:0,
+      collected:canReach,
+      turnX: 430 + Math.random()*170
+    });
+  }
+
+
+  // Closed path around the external circuit:
+  // left plate -> down -> battery -> ammeter -> up -> right plate.
+  const wirePath = [
+    [362,355],[362,430],[525,430],[550,430],[580,430],
+    [635,430],[668,430],[704,430],[740,430],[777,430],[777,355]
+  ];
+
+  function pointAlongPath(t){
+    const segs = [];
+    let total = 0;
+    for(let i=0;i<wirePath.length-1;i++){
+      const a = wirePath[i], b = wirePath[i+1];
+      const len = Math.hypot(b[0]-a[0], b[1]-a[1]);
+      segs.push({a,b,len});
+      total += len;
+    }
+    let d = ((t % 1) + 1) % 1 * total;
+    for(const s of segs){
+      if(d <= s.len){
+        const u = s.len ? d/s.len : 0;
+        return [s.a[0] + (s.b[0]-s.a[0])*u, s.a[1] + (s.b[1]-s.a[1])*u];
+      }
+      d -= s.len;
+    }
+    return wirePath[wirePath.length-1];
+  }
+
+  function drawWireElectrons(current){
+    wireElectronsG.innerHTML = '';
+    const count = 12;
+    const visibility = Math.min(1, current / 0.25);
+    for(let i=0;i<count;i++){
+      const [x,y] = pointAlongPath(1 - wirePhase - i/count);
+      const c = document.createElementNS(NS,'circle');
+      c.setAttribute('cx',x.toFixed(1));
+      c.setAttribute('cy',y.toFixed(1));
+      c.setAttribute('r','4.2');
+      c.setAttribute('fill','#2E86A6');
+      c.setAttribute('stroke','#2b2b2b');
+      c.setAttribute('stroke-width','1');
+      c.setAttribute('opacity',(0.15 + 0.85*visibility).toFixed(2));
+      wireElectronsG.appendChild(c);
+    }
+  }
+
+  function update(){
+    const p = physics();
+    wavelengthValue.textContent = `${Math.round(p.lam)} nm`;
+    intensityValue.textContent = `${Math.round(+intensity.value)} %`;
+    voltageValue.textContent = `${fmt(p.V,1)} V`;
+    energyReadout.textContent = `Kₘₐₓ = ${fmt(p.ke,2)} eV`;
+    currentReadout.textContent = `I = ${fmt(p.current,2)} µA`;
+
+    if(p.V > 0.05){ leftPolarity.textContent = '−'; rightPolarity.textContent = '+'; }
+    else if(p.V < -0.05){ leftPolarity.textContent = '+'; rightPolarity.textContent = '−'; }
+    else { leftPolarity.textContent = ''; rightPolarity.textContent = ''; }
+
+    updateRays(p);
+
+    const angle = -35 + Math.min(1,p.current/5)*70;
+    const rad = angle*Math.PI/180;
+    const x2 = 704 + 24*Math.sin(rad);
+    const y2 = 438 - 24*Math.cos(rad);
+    needle.setAttribute('x2',x2.toFixed(1));
+    needle.setAttribute('y2',y2.toFixed(1));
+  }
+
+  function frame(now){
+    const dt = Math.min(0.04,(now-last)/1000);
+    last = now;
+    const p = physics();
+
+    // Make electron drift in the outer wire visible.
+    // Faster current -> faster drift; zero current -> stopped.
+    if(p.current > 0.001){
+      wirePhase += dt * (0.035 + 0.08 * Math.min(1, p.current/5));
+    }
+    drawWireElectrons(p.current);
+
+    // Emission rate follows light intensity (when photon energy exceeds the work function),
+    // independently of the external voltage.
+    const emissionRate = (p.ke > 0 ? (+intensity.value/100) * 18 : 0);
+    accumulator += dt * emissionRate;
+    while(accumulator >= 1){
+      spawnElectron(p);
+      accumulator -= 1;
+    }
+
+    const keep = [];
+    for(const q of particles){
+      q.age += dt;
+
+      if(q.collected){
+        // Positive voltage accelerates toward the collector; a mild retarding voltage slows motion.
+        const speedFactor = Math.max(0.35, 1 + 0.12*p.V);
+        q.x += q.vx * speedFactor * dt;
+      } else {
+        // Electron is emitted but turns back when the retarding field is too strong.
+        if(q.x < q.turnX && q.vx > 0){
+          q.x += q.vx * dt;
+        } else {
+          q.vx = -Math.abs(q.vx) * 0.85;
+          q.x += q.vx * dt;
+        }
+      }
+
+      q.el.setAttribute('cx',q.x.toFixed(1));
+      q.el.setAttribute('cy',(q.y + Math.sin(q.age*10)*2).toFixed(1));
+
+      const alive = q.collected ? (q.x < 748 && q.age < 4) : (q.x > 386 && q.age < 4);
+      if(alive) keep.push(q);
+      else q.el.remove();
+    }
+    particles = keep;
+    requestAnimationFrame(frame);
+  }
+
+  [wavelength,intensity,voltage,material].forEach(el => el.addEventListener('input', update));
+  reset.addEventListener('click',() => {
+    wavelength.value = 450;
+    intensity.value = 60;
+    voltage.value = 0;
+    material.value = 2.28;
+    particles.forEach(p=>p.el.remove());
+    particles = [];
+    accumulator = 0;
+    update();
+  });
+
+  update();
+  drawWireElectrons(physics().current);
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
