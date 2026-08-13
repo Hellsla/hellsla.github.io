@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FY8 – spektrit</title>
+
+<style>
+:root{
+  --ink:#3f3d39;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  background:#ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--ink);
+}
+
+#spectrumApp{
+  width:100%;
+  background:#ffffff;
+  padding:12px 8px;
+}
+
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:end;
+  gap:18px;
+  margin-bottom:8px;
+}
+
+label{
+  display:grid;
+  gap:4px;
+  font-size:14px;
+}
+
+select,
+button{
+  border:1.5px solid var(--ink);
+  background:#fff;
+  color:var(--ink);
+  border-radius:6px;
+  padding:6px 10px;
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+svg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.sketch{
+  stroke:var(--ink);
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  fill:none;
+}
+
+.thin{
+  stroke-width:1.25;
+}
+
+svg text{
+  fill:var(--ink);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+
+.small{
+  font-size:12px;
+}
+
+.lineHit{
+  cursor:pointer;
+}
+
+.photon{
+  stroke-width:3;
+  fill:none;
+  stroke-linecap:round;
+}
+</style>
+</head>
+
+<body>
+
+<div id="spectrumApp">
+
+<div class="controls">
+
+  <label>
+    Spektri
+    <select id="typeSelect">
+      <option value="continuous">Jatkuva</option>
+      <option value="emission">Emissio</option>
+      <option value="absorption">Absorptio</option>
+    </select>
+  </label>
+
+  <label id="elementLabel">
+    Kaasu
+    <select id="elementSelect">
+      <option value="H">Vety</option>
+      <option value="Na">Natrium</option>
+      <option value="Hg">Elohopea</option>
+    </select>
+  </label>
+
+  <button id="resetBtn" type="button">Nollaa</button>
+
+</div>
+
+<svg
+  viewBox="0 0 900 545"
+  role="img"
+  aria-label="Spektrien muodostuminen fotonien ja atomien energiatilojen avulla"
+>
+
+<defs>
+
+  <linearGradient id="visibleSpectrum" x1="0" x2="1">
+    <stop offset="0%" stop-color="#6b2aa6"/>
+    <stop offset="12%" stop-color="#334fc1"/>
+    <stop offset="28%" stop-color="#2587c8"/>
+    <stop offset="44%" stop-color="#2aa56f"/>
+    <stop offset="58%" stop-color="#d1c531"/>
+    <stop offset="72%" stop-color="#ef9c2f"/>
+    <stop offset="100%" stop-color="#cc3c3c"/>
+  </linearGradient>
+
+  <pattern
+    id="hatch"
+    width="8"
+    height="8"
+    patternUnits="userSpaceOnUse"
+    patternTransform="rotate(22)"
+  >
+    <line
+      x1="0"
+      y1="0"
+      x2="0"
+      y2="8"
+      stroke="#3f3d39"
+      stroke-opacity="0.11"
+      stroke-width="1"
+    />
+  </pattern>
+
+</defs>
+
+
+<!-- ===================================================== -->
+<!-- JATKUVA SPEKTRI                                       -->
+<!-- ===================================================== -->
+
+<g id="continuousScene">
+
+  <!-- Hehkuva kappale -->
+  <rect
+    x="70"
+    y="85"
+    width="105"
+    height="90"
+    rx="12"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+  <rect
+    x="70"
+    y="85"
+    width="105"
+    height="90"
+    rx="12"
+    fill="url(#hatch)"
+  />
+
+  <!-- Hehkuva lanka -->
+  <path
+    d="M90 142
+       Q99 112 108 142
+       Q117 112 126 142
+       Q135 112 144 142"
+    stroke="#d84a62"
+    stroke-width="4"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <text
+    x="123"
+    y="198"
+    text-anchor="middle"
+  >
+    Hehkuva aine
+  </text>
+
+
+  <!-- Eri energisiä fotoneja -->
+  <path
+    d="M185 105 q8 -10 16 0 t16 0 t16 0"
+    class="photon"
+    stroke="#7551b7"
+  />
+
+  <path
+    d="M185 125 q8 -10 16 0 t16 0 t16 0"
+    class="photon"
+    stroke="#278fc4"
+  />
+
+  <path
+    d="M185 145 q8 -10 16 0 t16 0 t16 0"
+    class="photon"
+    stroke="#d9c93d"
+  />
+
+  <path
+    d="M185 165 q8 -10 16 0 t16 0 t16 0"
+    class="photon"
+    stroke="#d94a4a"
+  />
+
+
+  <!-- Rako -->
+  <line
+    x1="245"
+    y1="135"
+    x2="320"
+    y2="135"
+    class="sketch thin"
+  />
+
+  <rect
+    x="320"
+    y="100"
+    width="13"
+    height="70"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+  <rect
+    x="325"
+    y="119"
+    width="3"
+    height="32"
+    fill="#3f3d39"
+  />
+
+
+  <!-- Prisma -->
+  <line
+    x1="333"
+    y1="135"
+    x2="380"
+    y2="135"
+    class="sketch thin"
+  />
+
+  <polygon
+    points="390,102 430,135 390,168"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+
+  <!-- Jatkuva värijakauma -->
+  <path
+    d="M430 135 L590 92 L590 178 Z"
+    fill="url(#visibleSpectrum)"
+    opacity="0.92"
+  />
+
+</g>
+
+
+
+<!-- ===================================================== -->
+<!-- EMISSIOSPEKTRI                                        -->
+<!-- ===================================================== -->
+
+<g id="emissionScene" opacity="0">
+
+  <!-- Atomi -->
+  <g transform="translate(70,80)">
+
+    <circle
+      cx="68"
+      cy="62"
+      r="46"
+      fill="#fff"
+      stroke="#3f3d39"
+      stroke-width="2"
+    />
+
+    <!-- Ydin -->
+    <circle
+      cx="68"
+      cy="62"
+      r="6"
+      fill="#3f3d39"
+    />
+
+    <!-- Energiatasojen havainnollistus -->
+    <ellipse
+      cx="68"
+      cy="62"
+      rx="24"
+      ry="14"
+      class="sketch thin"
+      opacity="0.6"
+    />
+
+    <ellipse
+      cx="68"
+      cy="62"
+      rx="38"
+      ry="27"
+      class="sketch thin"
+      opacity="0.6"
+    />
+
+    <!-- Elektroni ylemmällä tasolla -->
+    <circle
+      cx="104"
+      cy="62"
+      r="5"
+      fill="#2e86a6"
+    />
+
+    <!-- Siirtymä alas -->
+    <path
+      d="M96 49 L83 57"
+      stroke="#4a8b5c"
+      stroke-width="2.5"
+      fill="none"
+    />
+
+    <polygon
+      points="82,57 89,54 87,62"
+      fill="#4a8b5c"
+    />
+
+  </g>
+
+  <text
+    x="138"
+    y="198"
+    text-anchor="middle"
+  >
+    Kuuma kaasu
+  </text>
+
+
+  <!-- Emittoitu fotoni -->
+  <path
+    d="M181 116
+       q9 -11 18 0
+       t18 0
+       t18 0
+       t18 0"
+    class="photon"
+    stroke="#d94a4a"
+  />
+
+
+  <!-- Rako -->
+  <line
+    x1="260"
+    y1="116"
+    x2="320"
+    y2="116"
+    class="sketch thin"
+  />
+
+  <rect
+    x="320"
+    y="81"
+    width="13"
+    height="70"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+  <rect
+    x="325"
+    y="100"
+    width="3"
+    height="32"
+    fill="#3f3d39"
+  />
+
+
+  <!-- Prisma -->
+  <line
+    x1="333"
+    y1="116"
+    x2="380"
+    y2="116"
+    class="sketch thin"
+  />
+
+  <polygon
+    points="390,83 430,116 390,149"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+
+  <!-- Yksi sallittu aallonpituus -->
+  <line
+    x1="430"
+    y1="116"
+    x2="590"
+    y2="152"
+    stroke="#d94a4a"
+    stroke-width="4"
+  />
+
+</g>
+
+
+
+<!-- ===================================================== -->
+<!-- ABSORPTIOSPEKTRI                                      -->
+<!-- ===================================================== -->
+
+<g id="absorptionScene" opacity="0">
+
+  <!-- Jatkuvan valon lähde -->
+  <rect
+    x="60"
+    y="90"
+    width="72"
+    height="70"
+    rx="10"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+  <path
+    d="M76 140
+       Q84 112 92 140
+       Q100 112 108 140"
+    stroke="#d84a62"
+    stroke-width="4"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+
+  <!-- Fotoni kohti atomia -->
+  <path
+    d="M142 125
+       q8 -10 16 0
+       t16 0
+       t16 0"
+    class="photon"
+    stroke="#d94a4a"
+  />
+
+
+  <!-- Viileän kaasun atomi -->
+  <g transform="translate(205,80)">
+
+    <circle
+      cx="58"
+      cy="58"
+      r="42"
+      fill="#fff"
+      stroke="#3f3d39"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="58"
+      cy="58"
+      r="6"
+      fill="#3f3d39"
+    />
+
+    <ellipse
+      cx="58"
+      cy="58"
+      rx="22"
+      ry="13"
+      class="sketch thin"
+      opacity="0.6"
+    />
+
+    <ellipse
+      cx="58"
+      cy="58"
+      rx="35"
+      ry="25"
+      class="sketch thin"
+      opacity="0.6"
+    />
+
+    <!-- Elektroni alemmalla energiatasolla -->
+    <circle
+      cx="80"
+      cy="58"
+      r="5"
+      fill="#2e86a6"
+    />
+
+    <!-- Siirtymä ylös -->
+    <path
+      d="M85 52 L97 43"
+      stroke="#4a8b5c"
+      stroke-width="2.5"
+      fill="none"
+    />
+
+    <polygon
+      points="98,42 90,44 94,50"
+      fill="#4a8b5c"
+    />
+
+  </g>
+
+  <text
+    x="263"
+    y="198"
+    text-anchor="middle"
+  >
+    Viileä kaasu
+  </text>
+
+
+  <!-- Muut fotonit läpäisevät kaasun -->
+  <path
+    d="M315 104 q7 -9 14 0 t14 0 t14 0"
+    class="photon"
+    stroke="#7551b7"
+  />
+
+  <path
+    d="M315 126 q7 -9 14 0 t14 0 t14 0"
+    class="photon"
+    stroke="#278fc4"
+  />
+
+  <path
+    d="M315 148 q7 -9 14 0 t14 0 t14 0"
+    class="photon"
+    stroke="#d9c93d"
+  />
+
+
+  <!-- Rako -->
+  <rect
+    x="372"
+    y="88"
+    width="13"
+    height="70"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+  <rect
+    x="377"
+    y="107"
+    width="3"
+    height="32"
+    fill="#3f3d39"
+  />
+
+
+  <!-- Prisma -->
+  <line
+    x1="385"
+    y1="123"
+    x2="430"
+    y2="123"
+    class="sketch thin"
+  />
+
+  <polygon
+    points="440,90 480,123 440,156"
+    fill="#fff"
+    stroke="#3f3d39"
+    stroke-width="2"
+  />
+
+
+  <!-- Jatkuva spektri, josta yksi aallonpituus puuttuu -->
+  <path
+    d="M480 123 L610 89 L610 157 Z"
+    fill="url(#visibleSpectrum)"
+    opacity="0.92"
+  />
+
+  <line
+    x1="480"
+    y1="123"
+    x2="610"
+    y2="150"
+    stroke="#222"
+    stroke-width="3"
+  />
+
+</g>
+
+
+
+<!-- ===================================================== -->
+<!-- ALAOSAN SPEKTRI                                       -->
+<!-- ===================================================== -->
+
+<rect
+  x="85"
+  y="304"
+  width="730"
+  height="105"
+  rx="4"
+  fill="#111"
+  stroke="#3f3d39"
+  stroke-width="2"
+/>
+
+<rect
+  id="continuousBand"
+  x="85"
+  y="304"
+  width="730"
+  height="105"
+  rx="4"
+  fill="url(#visibleSpectrum)"
+/>
+
+<g id="spectralLines"></g>
+
+
+<!-- Aallonpituusakseli -->
+
+<line
+  x1="85"
+  y1="432"
+  x2="815"
+  y2="432"
+  class="sketch"
+/>
+
+<g id="axisTicks"></g>
+
+<text
+  x="450"
+  y="480"
+  text-anchor="middle"
+>
+  λ / nm
+</text>
+
+<text
+  id="readout"
+  x="450"
+  y="510"
+  text-anchor="middle"
+>
+  380–750 nm
+</text>
+
+</svg>
+
+</div>
+
+
+<script>
+
+const spectrumData = {
+
+  H: [
+    410.2,
+    434.0,
+    486.1,
+    656.3
+  ],
+
+  Na: [
+    568.3,
+    589.0,
+    589.6,
+    615.4
+  ],
+
+  Hg: [
+    404.7,
+    435.8,
+    546.1,
+    577.0,
+    579.1
+  ]
+
+};
+
+
+const typeSelect =
+  document.getElementById("typeSelect");
+
+const elementSelect =
+  document.getElementById("elementSelect");
+
+const elementLabel =
+  document.getElementById("elementLabel");
+
+const resetBtn =
+  document.getElementById("resetBtn");
+
+const spectralLines =
+  document.getElementById("spectralLines");
+
+const continuousBand =
+  document.getElementById("continuousBand");
+
+const readout =
+  document.getElementById("readout");
+
+const axisTicks =
+  document.getElementById("axisTicks");
+
+const continuousScene =
+  document.getElementById("continuousScene");
+
+const emissionScene =
+  document.getElementById("emissionScene");
+
+const absorptionScene =
+  document.getElementById("absorptionScene");
+
+
+const minLambda = 380;
+const maxLambda = 750;
+
+const spectrumX = 85;
+const spectrumWidth = 730;
+
+
+function xForWavelength(lambda){
+
+  return spectrumX +
+    (lambda - minLambda) /
+    (maxLambda - minLambda) *
+    spectrumWidth;
+
+}
+
+
+function wavelengthColor(lambda){
+
+  if(lambda < 430)
+    return "#7551b7";
+
+  if(lambda < 480)
+    return "#3e63c9";
+
+  if(lambda < 510)
+    return "#278fc4";
+
+  if(lambda < 565)
+    return "#32a56d";
+
+  if(lambda < 590)
+    return "#d9c93d";
+
+  if(lambda < 625)
+    return "#ee9634";
+
+  return "#d94a4a";
+
+}
+
+
+/* Aallonpituusakseli */
+
+[
+  400,
+  450,
+  500,
+  550,
+  600,
+  650,
+  700,
+  750
+
+].forEach(value => {
+
+  const x =
+    xForWavelength(value);
+
+
+  const tick =
+    document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "line"
+    );
+
+  tick.setAttribute("x1", x);
+  tick.setAttribute("x2", x);
+  tick.setAttribute("y1", "426");
+  tick.setAttribute("y2", "438");
+  tick.setAttribute("class", "sketch thin");
+
+  axisTicks.appendChild(tick);
+
+
+  const text =
+    document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "text"
+    );
+
+  text.setAttribute("x", x);
+  text.setAttribute("y", "460");
+  text.setAttribute("text-anchor", "middle");
+  text.setAttribute("class", "small");
+
+  text.textContent = value;
+
+  axisTicks.appendChild(text);
+
+});
+
+
+function drawSimulation(){
+
+  const spectrumType =
+    typeSelect.value;
+
+
+  spectralLines.innerHTML = "";
+
+
+  /* Näytä oikea muodostumiskuva */
+
+  continuousScene.setAttribute(
+    "opacity",
+    spectrumType === "continuous"
+      ? "1"
+      : "0"
+  );
+
+  emissionScene.setAttribute(
+    "opacity",
+    spectrumType === "emission"
+      ? "1"
+      : "0"
+  );
+
+  absorptionScene.setAttribute(
+    "opacity",
+    spectrumType === "absorption"
+      ? "1"
+      : "0"
+  );
+
+
+  /* Jatkuvassa spektrissä kaasua ei valita */
+
+  elementLabel.style.display =
+    spectrumType === "continuous"
+      ? "none"
+      : "grid";
+
+
+  /* Jatkuva spektri */
+
+  if(spectrumType === "continuous"){
+
+    continuousBand.setAttribute(
+      "opacity",
+      "1"
+    );
+
+    readout.textContent =
+      "380–750 nm";
+
+    return;
+
+  }
+
+
+  const wavelengths =
+    spectrumData[elementSelect.value];
+
+
+  /* Emissiossa tumma tausta,
+     absorptiossa jatkuva spektri */
+
+  continuousBand.setAttribute(
+    "opacity",
+    spectrumType === "absorption"
+      ? "1"
+      : "0"
+  );
+
+
+  wavelengths.forEach(lambda => {
+
+    const x =
+      xForWavelength(lambda);
+
+
+    const line =
+      document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "line"
+      );
+
+
+    line.setAttribute("x1", x);
+    line.setAttribute("x2", x);
+
+    line.setAttribute("y1", "310");
+    line.setAttribute("y2", "403");
+
+
+    if(spectrumType === "emission"){
+
+      line.setAttribute(
+        "stroke",
+        wavelengthColor(lambda)
+      );
+
+      line.setAttribute(
+        "stroke-width",
+        "5"
+      );
+
+    }else{
+
+      line.setAttribute(
+        "stroke",
+        "#171717"
+      );
+
+      line.setAttribute(
+        "stroke-width",
+        "4"
+      );
+
+    }
+
+
+    line.setAttribute(
+      "stroke-linecap",
+      "round"
+    );
+
+    line.setAttribute(
+      "class",
+      "lineHit"
+    );
+
+
+    /* Spektriviivaa klikkaamalla
+       näytetään aallonpituus ja fotonin energia */
+
+    line.addEventListener(
+      "click",
+      () => {
+
+        const energyEV =
+          1240 / lambda;
+
+        readout.textContent =
+          "λ = " +
+          lambda.toFixed(1) +
+          " nm   E = " +
+          energyEV.toFixed(2) +
+          " eV";
+
+      }
+    );
+
+
+    spectralLines.appendChild(line);
+
+  });
+
+
+  readout.textContent =
+    "λ = " +
+    Math.round(
+      wavelengths[
+        wavelengths.length - 1
+      ]
+    ) +
+    " nm";
+
+}
+
+
+typeSelect.addEventListener(
+  "change",
+  drawSimulation
+);
+
+elementSelect.addEventListener(
+  "change",
+  drawSimulation
+);
+
+resetBtn.addEventListener(
+  "click",
+  () => {
+
+    typeSelect.value =
+      "continuous";
+
+    elementSelect.value =
+      "H";
+
+    drawSimulation();
+
+  }
+);
+
+
+drawSimulation();
+
+</script>
+
+</body>
+</html>
