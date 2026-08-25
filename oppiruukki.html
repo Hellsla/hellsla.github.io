@@ -294,6 +294,14 @@
   }
   .monster-svg{ width:100%; height:100%; overflow:visible; }
   .monster-svg.measuring .armHammer{ animation:none !important; }
+
+  /* only the mood matching the current stage of the work is drawn */
+  .monster-svg .mood{ display:none; }
+  .monster-svg[data-mood="calm"]   .mood-calm,
+  .monster-svg[data-mood="focus"]  .mood-focus,
+  .monster-svg[data-mood="effort"] .mood-effort,
+  .monster-svg[data-mood="strain"] .mood-strain,
+  .monster-svg[data-mood="glee"]   .mood-glee{ display:block; }
   .monster-svg .idleBob{ animation: bob 2.6s ease-in-out infinite; transform-origin:center; }
   @keyframes bob{
     0%,100%{ transform:translateY(0); }
@@ -545,7 +553,7 @@
     <div class="scene" id="scene">
       <div class="quarry">
         <div class="monster-stage" id="monsterStage">
-          <svg class="monster-svg idleBob" id="monster" viewBox="0 0 200 200" role="img" aria-label="Ruukkimestari-kivihirviö">
+          <svg class="monster-svg idleBob" id="monster" data-mood="calm" viewBox="0 0 200 200" role="img" aria-label="Ruukkimestari-kivihirviö">
             <g class="lean">
               <g class="idleBob">
                 <!-- legs -->
@@ -560,14 +568,49 @@
                 <path d="M120,150 C126,138 142,132 156,134" fill="none" stroke="#6f6a5b" stroke-width="3" opacity=".6" stroke-linecap="round"/>
                 <!-- belly patch -->
                 <ellipse cx="104" cy="118" rx="34" ry="26" fill="#c9c0a9" opacity=".55"/>
-                <!-- face -->
-                <ellipse cx="80" cy="90" rx="9" ry="10" fill="#faf6ec"/>
-                <ellipse cx="112" cy="88" rx="9" ry="10" fill="#faf6ec"/>
-                <circle cx="82" cy="93" r="4" fill="#3a3530"/>
-                <circle cx="114" cy="91" r="4" fill="#3a3530"/>
-                <path d="M70,76 C75,71 84,71 88,75" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
-                <path d="M102,73 C107,69 116,69 121,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
-                <path d="M84,112 C94,120 108,120 118,111" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- face: one group per mood, swapped as the work gets harder -->
+                <g class="mood mood-calm">
+                  <ellipse cx="80" cy="90" rx="9" ry="10" fill="#faf6ec"/>
+                  <ellipse cx="112" cy="88" rx="9" ry="10" fill="#faf6ec"/>
+                  <circle cx="82" cy="93" r="4" fill="#3a3530"/>
+                  <circle cx="114" cy="91" r="4" fill="#3a3530"/>
+                  <path d="M70,76 C75,71 84,71 88,75" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M102,73 C107,69 116,69 121,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M84,112 C94,120 108,120 118,111" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+                </g>
+                <g class="mood mood-focus">
+                  <ellipse cx="80" cy="90" rx="9" ry="9.5" fill="#faf6ec"/>
+                  <ellipse cx="112" cy="88" rx="9" ry="9.5" fill="#faf6ec"/>
+                  <circle cx="83" cy="95" r="4" fill="#3a3530"/>
+                  <circle cx="115" cy="93" r="4" fill="#3a3530"/>
+                  <path d="M70,74 C76,72 84,75 88,79" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M102,79 C107,75 115,72 121,74" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M91,114 C98,112 106,112 113,113" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+                </g>
+                <g class="mood mood-effort">
+                  <ellipse cx="80" cy="91" rx="8.5" ry="8" fill="#faf6ec"/>
+                  <ellipse cx="112" cy="89" rx="8.5" ry="8" fill="#faf6ec"/>
+                  <circle cx="83" cy="94" r="3.8" fill="#3a3530"/>
+                  <circle cx="115" cy="92" r="3.8" fill="#3a3530"/>
+                  <path d="M69,72 C77,71 85,77 89,82" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M101,82 C105,77 114,71 122,72" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <ellipse cx="101" cy="116" rx="9" ry="6.5" fill="#3a3530"/>
+                </g>
+                <g class="mood mood-strain">
+                  <path d="M71,93 C76,86 85,86 89,92" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M103,91 C107,85 116,85 121,92" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M67,74 C76,72 86,79 90,84" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M100,84 C104,79 114,72 123,74" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M86,110 C94,121 108,121 116,110 Z" fill="#3a3530"/>
+                  <path d="M92,113 L94,117 M101,114 L101,118 M110,113 L108,117" stroke="#faf6ec" stroke-width="1.6" stroke-linecap="round"/>
+                </g>
+                <g class="mood mood-glee">
+                  <path d="M71,92 C76,84 85,84 90,92" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M102,90 C107,82 116,82 121,90" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M69,73 C76,68 86,68 91,72" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M100,72 C105,68 115,68 122,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M83,108 C93,124 109,124 119,107" fill="none" stroke="#3a3530" stroke-width="3.6" stroke-linecap="round"/>
+                </g>
                 <!-- front arm + hammer -->
                 <g class="armHammer">
                   <path d="M134,94 C150,94 162,104 164,120 C165,130 160,136 152,138" fill="none" stroke="#8f887a" stroke-width="16" stroke-linecap="round"/>
@@ -945,6 +988,24 @@
     for(var i3=0;i3<Math.round(4*s);i3++) spawnParticle("chip", cx, cy);
   }
 
+  // The creature's face tracks how far into the stone it is. A mood set with a
+  // hold sticks for that long, so the grin after a diamond isn't immediately
+  // overwritten by the next tick.
+  var MOODS = ["calm", "focus", "effort", "strain"];
+  var moodHoldUntil = 0;
+  function setMood(mood, holdMs){
+    if(holdMs){
+      moodHoldUntil = Date.now() + holdMs;
+    } else if(Date.now() < moodHoldUntil){
+      return;
+    }
+    monsterEl.setAttribute("data-mood", mood);
+  }
+  function clearMood(){
+    moodHoldUntil = 0;
+    monsterEl.setAttribute("data-mood", "calm");
+  }
+
   // The stone under the hammer splits further the longer it is worked, so the
   // 10 seconds read as steady progress rather than a sudden flip at the end.
   var CRACK_STEPS = [0.28, 0.52, 0.76];
@@ -954,6 +1015,7 @@
     var frac = (elapsed - processedBlocks * MS_PER_BLOCK) / MS_PER_BLOCK;
     var stage = 0;
     for(var i=0;i<CRACK_STEPS.length;i++){ if(frac >= CRACK_STEPS[i]) stage = i+1; }
+    setMood(MOODS[stage]);
     if(block.crackStage === stage) return;
     var deepened = stage > (block.crackStage || 0);
     block.crackStage = stage;
@@ -1025,6 +1087,7 @@
         if(myBuildId !== buildId) return;
         spawnParticles(block, 1.4);
         refineBlock(block, true, myBuildId);
+        setMood("glee", 1100); // a beat of delight before settling back to work
         if(nextBlock) nextBlock.classList.add("next");
         // let the squash read before the creature steps to the next stone
         setTimeout(function(){
@@ -1107,6 +1170,7 @@
     clearInterval(tickTimer); tickTimer = null;
     clearTimeout(swingTimeout);
     monsterEl.classList.remove("swinging","celebrate");
+    clearMood();
     state = "idle";
     hideCompletion();
     buildBlocks();
@@ -1123,6 +1187,7 @@
     progressTrack.setAttribute("aria-valuenow","100");
     monsterEl.classList.remove("swinging");
     monsterEl.classList.add("celebrate");
+    setMood("glee", 3600000); // stays pleased until the next session
     playMelody();
     showCompletion();
     setControlsState();
