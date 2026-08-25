@@ -285,10 +285,15 @@
     width:72px;
     height:72px;
     pointer-events:none;
+    /* the blocks set `filter`, which paints them in the same layer as this
+       positioned box, so it needs a z-index to stay in front when it steps
+       down onto a lower row */
+    z-index:3;
     transition: transform .45s cubic-bezier(.34,1.25,.64,1);
     will-change: transform;
   }
   .monster-svg{ width:100%; height:100%; overflow:visible; }
+  .monster-svg.measuring .armHammer{ animation:none !important; }
   .monster-svg .idleBob{ animation: bob 2.6s ease-in-out infinite; transform-origin:center; }
   @keyframes bob{
     0%,100%{ transform:translateY(0); }
@@ -379,7 +384,16 @@
   }
   .block.refined svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
 
-  /* squashed by the hammer, then springs back out as a finished diamond */
+  /* first blow: the stone shudders and splits open */
+  .block.cracking{ animation: shudder .42s ease-out; }
+  @keyframes shudder{
+    0%,100%{ transform: rotate(var(--rot,0deg)) translateX(0); }
+    18%{ transform: rotate(var(--rot,0deg)) translate(-1.5px,1px) scale(1.06); }
+    42%{ transform: rotate(var(--rot,0deg)) translate(1.5px,0) scale(1.03); }
+    68%{ transform: rotate(var(--rot,0deg)) translate(-1px,.5px); }
+  }
+
+  /* second blow: squashed, then springs back out as a finished diamond */
   .block.refining{ animation: refine .55s ease-in-out; }
   @keyframes refine{
     0%   { transform: rotate(var(--rot,0deg)) scale(1); }
@@ -446,6 +460,7 @@
     .monster-svg.celebrate .armHammer,
     .monster-svg.celebrate .idleBob,
     .block.next,
+    .block.cracking,
     .block.refining{
       animation:none !important;
     }
@@ -557,7 +572,7 @@
                   <path d="M134,94 C150,94 162,104 164,120 C165,130 160,136 152,138" fill="none" stroke="#8f887a" stroke-width="16" stroke-linecap="round"/>
                   <g transform="translate(152,138) rotate(28)">
                     <rect x="-5" y="-4" width="46" height="10" rx="4" fill="#7c5a3a"/>
-                    <rect x="36" y="-24" width="20" height="48" rx="5" fill="#726c5c" stroke="#3a3530" stroke-width="3"/>
+                    <rect class="hammerHead" x="36" y="-24" width="20" height="48" rx="5" fill="#726c5c" stroke="#3a3530" stroke-width="3"/>
                     <rect x="39" y="-19" width="6" height="38" fill="#8f887a" opacity=".6"/>
                   </g>
                 </g>
@@ -590,6 +605,11 @@
     <symbol id="roughRock" viewBox="0 0 40 40">
       <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
       <path d="M12,16 L20,12 M22,20 L30,24" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="crackedRock" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M19,3 L15,15 L23,20 L18,27 L21,38 M15,15 L5,12 M23,20 L35,16 M18,27 L7,30"
+            fill="none" stroke="rgba(0,0,0,.5)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="cutStone" viewBox="0 0 40 40">
       <path d="M14,7 L26,7 L36,16 L20,36 L4,16 Z"/>
@@ -712,15 +732,22 @@
   var hammerSpot = null;
   function measureHammer(){
     try{
-      var arm = monsterEl.querySelector(".armHammer");
-      var box = arm.getBBox();
-      var vb = monsterEl.viewBox.baseVal;
+      // Measure the hammer head itself, with the idle tap frozen so the
+      // reading is the arm's rest pose rather than wherever the tap happens
+      // to be mid-cycle.
+      monsterEl.classList.add("measuring");
+      var head = monsterEl.querySelector(".hammerHead");
+      var stageRect = monsterStage.getBoundingClientRect();
+      var headRect = head.getBoundingClientRect();
+      monsterEl.classList.remove("measuring");
+      if(!stageRect.width || !headRect.width) throw new Error("not laid out");
       hammerSpot = {
-        x: (box.x + box.width * 0.82) / vb.width,
-        y: (box.y + box.height) / vb.height
+        x: (headRect.left + headRect.width/2 - stageRect.left) / stageRect.width,
+        y: (headRect.bottom - stageRect.top) / stageRect.height
       };
     }catch(e){
-      hammerSpot = { x: 0.86, y: 0.78 };
+      monsterEl.classList.remove("measuring");
+      hammerSpot = { x: 0.86, y: 0.92 };
     }
   }
 
@@ -892,15 +919,25 @@
     setTimeout(function(){ if(el.parentNode) el.remove(); }, 700);
   }
 
-  function spawnParticles(originEl){
+  function spawnParticles(originEl, strength){
     if(!originEl || reducedMotion) return;
+    var s = strength || 1;
     var sceneRect = sceneEl.getBoundingClientRect();
     var r = originEl.getBoundingClientRect();
     var cx = r.left - sceneRect.left + r.width/2;
     var cy = r.top - sceneRect.top + r.height/2;
-    for(var i=0;i<6;i++) spawnParticle("dust", cx, cy);
-    for(var i2=0;i2<5;i2++) spawnParticle("spark", cx, cy);
-    for(var i3=0;i3<4;i3++) spawnParticle("chip", cx, cy);
+    for(var i=0;i<Math.round(6*s);i++) spawnParticle("dust", cx, cy);
+    for(var i2=0;i2<Math.round(5*s);i2++) spawnParticle("spark", cx, cy);
+    for(var i3=0;i3<Math.round(4*s);i3++) spawnParticle("chip", cx, cy);
+  }
+
+  // First blow: the stone splits but holds together.
+  function crackBlock(block){
+    if(!block) return;
+    block.classList.remove("next");
+    var useEl = block.querySelector("use");
+    if(useEl) useEl.setAttribute("href", "#crackedRock");
+    if(!reducedMotion) block.classList.add("cracking");
   }
 
   // Turn a boulder into a diamond where it already sits: swap the shape at the
@@ -918,6 +955,7 @@
       toDiamond();
       return;
     }
+    block.classList.remove("cracking");
     block.classList.add("refining");
     setTimeout(function(){
       if(myBuildId !== buildId) return;
@@ -945,17 +983,24 @@
     var nextBlock = blocks[idx+1];
 
     if(animated){
+      // two blows: the first cracks the stone open, the second finishes it
       triggerHammer();
       setTimeout(function(){
         if(myBuildId !== buildId) return;
-        spawnParticles(block);
-        refineBlock(block, true, myBuildId);
-        if(nextBlock) nextBlock.classList.add("next");
-        // let the squash read before the creature steps to the next stone
+        crackBlock(block);
+        spawnParticles(block, 0.5);
+        triggerHammer();
         setTimeout(function(){
-          if(myBuildId === buildId) positionMonster();
-        }, 200);
-        if(isFinalBlock) finishNow();
+          if(myBuildId !== buildId) return;
+          spawnParticles(block, 1.4);
+          refineBlock(block, true, myBuildId);
+          if(nextBlock) nextBlock.classList.add("next");
+          // let the squash read before the creature steps to the next stone
+          setTimeout(function(){
+            if(myBuildId === buildId) positionMonster();
+          }, 200);
+          if(isFinalBlock) finishNow();
+        }, HIT_DELAY);
       }, HIT_DELAY);
     } else {
       refineBlock(block, false, myBuildId);
