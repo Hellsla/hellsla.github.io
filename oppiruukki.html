@@ -293,7 +293,19 @@
     0%,100%{ transform:translateY(0); }
     50%{ transform:translateY(-4px); }
   }
-  .monster-svg .armHammer{ transform-origin: 134px 94px; }
+  .monster-svg .armHammer{
+    transform-origin: 134px 94px;
+    animation: tap 1.6s ease-in-out infinite;
+  }
+  /* idle busywork: two light taps, then a short rest */
+  @keyframes tap{
+    0%   { transform: rotate(-5deg); }
+    10%  { transform: rotate(2deg); }
+    18%  { transform: rotate(-3deg); }
+    28%  { transform: rotate(1deg); }
+    38%  { transform: rotate(-5deg); }
+    100% { transform: rotate(-5deg); }
+  }
   .monster-svg.swinging .armHammer{ animation: hammerSwing .65s cubic-bezier(.34,1.4,.4,1) 1; }
   .monster-svg.swinging .idleBob{ animation-play-state: paused; }
   .monster-svg.swinging .lean{ animation: lean .65s ease-in-out 1; }
@@ -460,6 +472,7 @@
 
   @media (prefers-reduced-motion: reduce){
     .monster-svg .idleBob,
+    .monster-svg .armHammer,
     .monster-svg.swinging .armHammer,
     .monster-svg.celebrate .armHammer,
     .monster-svg.celebrate .idleBob,
@@ -623,8 +636,8 @@
 
 <p class="visually-hidden">
   Oppiruukki on Kiviruukin lukion keskittymisajastin. Valitse jakson pituus, käynnistä ajastin
-  Aloita-painikkeella. Kivihirviö murskaa yhden kivenlohkareen jokaisen täyden minuutin kohdalla ja
-  rakentaa valmiista kivistä muuria. Tilailmoitukset luetaan tälle sivulle automaattisesti.
+  Aloita-painikkeella. Kivihirviö murskaa yhden kivenlohkareen kymmenen sekunnin välein ja
+  jalostaa siitä timantin. Tilailmoitukset luetaan tälle sivulle automaattisesti.
 </p>
 
 <script>
@@ -635,6 +648,7 @@
   var STORAGE_MIN = "oppiruukki_minutes";
   var STORAGE_SOUND = "oppiruukki_sound";
   var HIT_DELAY = 260; // ms into the swing animation when the hammer strikes
+  var MS_PER_BLOCK = 10000; // one boulder refined into a diamond per 10 seconds
 
   var minutes = 25;
   var soundOn = true;
@@ -709,7 +723,9 @@
     if(total<=20) return 28;
     if(total<=35) return 24;
     if(total<=60) return 18;
-    return 14;
+    if(total<=120) return 14;
+    if(total<=300) return 11;
+    return 9;
   }
 
   function announce(text){
@@ -735,8 +751,8 @@
 
   function buildBlocks(){
     buildId++;
-    totalBlocks = minutes;
     totalMs = minutes*60000;
+    totalBlocks = Math.round(totalMs / MS_PER_BLOCK);
     processedBlocks = 0;
     accumulatedMs = 0;
     queueEl.innerHTML = "";
@@ -747,20 +763,19 @@
     queueEl.style.setProperty("--size", size+"px");
     wallEl.style.setProperty("--size", size+"px");
 
+    // A 120-minute session is 720 blocks; building those one appendChild at a
+    // time locks the page up for seconds, so assemble the markup as one string
+    // and hand the parser a single pass per container.
+    var rocks = new Array(totalBlocks);
+    var slot = '<div class="wallSlot"><svg viewBox="0 0 40 40"><use href="#cutStone"></use></svg></div>';
     for(var i=0;i<totalBlocks;i++){
-      var rock = document.createElement("div");
-      rock.className = "rock";
-      rock.innerHTML = '<svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg>';
-      rock.style.setProperty("--rot", (Math.random()*30-15).toFixed(1)+"deg");
-      rock.style.setProperty("--hue", (Math.random()*24-12).toFixed(1)+"deg");
-      queueEl.appendChild(rock);
-
-      var slot = document.createElement("div");
-      slot.className = "wallSlot";
-      slot.innerHTML = '<svg viewBox="0 0 40 40"><use href="#cutStone"></use></svg>';
-      wallEl.appendChild(slot);
-      wallSlots.push(slot);
+      rocks[i] = '<div class="rock" style="--rot:' + (Math.random()*30-15).toFixed(1) +
+                 'deg;--hue:' + (Math.random()*24-12).toFixed(1) +
+                 'deg"><svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg></div>';
     }
+    queueEl.innerHTML = rocks.join("");
+    wallEl.innerHTML = new Array(totalBlocks + 1).join(slot);
+    wallSlots = Array.prototype.slice.call(wallEl.children);
 
     countEl.textContent = "0 / " + totalBlocks + " lohkaretta jalostettu";
     progressFill.style.width = "0%";
@@ -1015,7 +1030,7 @@
     progressFill.style.width = pct+"%";
     progressTrack.setAttribute("aria-valuenow", String(Math.round(pct)));
 
-    var targetBlock = Math.min(totalBlocks, Math.floor(clampedElapsed/60000));
+    var targetBlock = Math.min(totalBlocks, Math.floor(clampedElapsed/MS_PER_BLOCK));
     if(targetBlock > processedBlocks){
       while(processedBlocks < targetBlock){
         var isLast = (processedBlocks + 1 === targetBlock);
