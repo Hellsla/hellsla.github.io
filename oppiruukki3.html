@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#96392a" />
+<meta name="description" content="Oppiruukki – Kiviruukin lukion keskittymisajastin. Pomodoro-tyylinen opiskeluajastin, jossa kivihirviö murskaa lohkareita ja rakentaa muuria." />
+<meta name="robots" content="noindex, nofollow" />
+<title>Oppiruukki – Kiviruukin lukion keskittymisajastin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#efe8da;
+    --panel:#faf6ec;
+    --panel-2:#f2ecdd;
+    --ink:#3a3530;
+    --ink-soft:#6c6459;
+    --clay:#fca5c7;
+    --brick:#012169;
+    --brick-dark:#011a52;
+    --fire-orange:#e8863a;
+    --fire-yellow:#f2b705;
+    --green:#5f7a52;
+    --stone:#8f887a;
+    --stone-dark:#585245;
+    --stone-light:#cdc3ad;
+    --wall-stone-dark:#b7a67e;
+    --diamond:#8fc3ea;
+    --diamond-edge:#012169;
+    --ring: rgba(58,53,45,.5);
+    --radius:16px;
+    --shadow: 0 6px 18px rgba(58,54,47,.18);
+    --focus: #2e2a24;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html,body{
+    margin:0;
+    min-height:100%;
+    background:
+      radial-gradient(circle at 18% 22%, rgba(255,255,255,.55), transparent 42%),
+      radial-gradient(circle at 82% 68%, rgba(58,53,45,.05), transparent 45%),
+      var(--bg);
+    color:var(--ink);
+    font-family: "Karla", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+
+  .timer, .completion h2, .controls button, .preset-btn, #soundBtn, #resetBtn{
+    font-family: "Zilla Slab", Georgia, "Times New Roman", serif;
+  }
+
+  body{
+    display:flex;
+    justify-content:center;
+    padding:14px 12px 28px;
+  }
+
+  .app{
+    width:100%;
+    max-width:640px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  a, button, input{ font-family:inherit; }
+
+  button{ cursor:pointer; }
+  button:disabled{ cursor:not-allowed; opacity:.5; }
+
+  :focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  /* ---------- Header ---------- */
+  header.brand{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px 12px;
+    padding:6px 2px 0;
+  }
+  .brand-mark{ width:50px; height:31px; flex:0 0 auto; }
+  .brand-text{ min-width:0; }
+  .brand-text h1{ margin:0; line-height:0; }
+  .wordmark{ width:150px; height:auto; display:block; }
+  .brand-side{
+    margin-left:auto;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:8px;
+  }
+  /* ---------- Panels ---------- */
+  .panel{
+    background:var(--panel);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:14px;
+  }
+
+  /* ---------- Time picker ---------- */
+  .duration-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:center;
+  }
+  .duration-group legend, .group-label{
+    font-size:.78rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--ink-soft);
+    width:100%;
+    margin-bottom:2px;
+  }
+  .preset-btn{
+    border:2px solid var(--stone-light);
+    background:var(--panel-2);
+    color:var(--ink);
+    border-radius:999px;
+    padding:8px 14px;
+    font-size:.95rem;
+    font-weight:600;
+    transition: background .15s, border-color .15s, color .15s, transform .1s;
+  }
+  .preset-btn:hover:not(:disabled){ border-color:var(--clay); }
+  .preset-btn:active:not(:disabled){ transform: scale(.96); }
+  .preset-btn[aria-pressed="true"]{
+    background:var(--brick);
+    border-color:var(--brick);
+    color:#fff;
+  }
+  .custom-wrap{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:var(--panel-2);
+    border:2px solid var(--stone-light);
+    border-radius:999px;
+    padding:4px 5px 4px 10px;
+  }
+  .custom-wrap input{
+    width:62px;
+    border:none;
+    background:transparent;
+    font-size:.95rem;
+    color:var(--ink);
+    padding:6px 2px;
+  }
+  .custom-wrap button{
+    border:none;
+    background:var(--clay);
+    color:var(--brick);
+    border-radius:999px;
+    padding:7px 12px;
+    font-size:.85rem;
+    font-weight:700;
+  }
+  .custom-wrap button:hover:not(:disabled){ background:var(--brick); color:#fff; }
+
+  /* ---------- Timer ---------- */
+  .timer-panel{ text-align:center; }
+  .timer{
+    font-size:clamp(3rem, 15vw, 4.6rem);
+    font-weight:800;
+    letter-spacing:.02em;
+    color:var(--brick-dark);
+    font-variant-numeric: tabular-nums;
+    line-height:1;
+    margin:2px 0 6px;
+  }
+  .progressTrack{
+    height:12px;
+    border-radius:999px;
+    background:var(--panel-2);
+    box-shadow:inset 0 0 0 2px var(--stone-light);
+    overflow:hidden;
+    margin:8px 0 8px;
+  }
+  .progressFill{
+    height:100%;
+    width:0%;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--clay), var(--fire-orange), var(--fire-yellow));
+    transition:width .25s linear;
+  }
+  .blockCount{
+    margin:0;
+    font-size:1rem;
+    font-weight:600;
+    color:var(--ink-soft);
+  }
+  .status-live{
+    min-height:1.1em;
+    font-size:.85rem;
+    color:var(--green);
+    font-weight:600;
+    margin-top:4px;
+  }
+
+  /* ---------- Controls ---------- */
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+  }
+  .controls button, #soundBtn{
+    border:none;
+    border-radius:12px;
+    padding:12px 18px;
+    font-size:1rem;
+    font-weight:700;
+    box-shadow:var(--shadow);
+    transition: transform .1s, filter .15s;
+  }
+  .controls button:hover:not(:disabled), #soundBtn:hover{ filter:brightness(1.06); }
+  .controls button:active:not(:disabled), #soundBtn:active{ transform:scale(.97); }
+  #startBtn{ background:var(--brick); color:#fff; }
+  #pauseBtn{ background:var(--clay); color:var(--brick); }
+  #resetBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
+  #soundBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
+  button.icon-btn{
+    padding:10px;
+    min-width:44px;
+    min-height:44px;
+    font-size:1.25rem;
+    line-height:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* ---------- Completion banner ---------- */
+  .completion{
+    text-align:center;
+    background:linear-gradient(135deg, var(--fire-yellow), var(--fire-orange));
+    color:#3a2308;
+    border-radius:var(--radius);
+    padding:14px;
+    box-shadow:var(--shadow);
+    font-weight:700;
+  }
+  .completion[hidden]{ display:none; }
+  .completion h2{ margin:0 0 4px; font-size:1.3rem; }
+  .completion p{ margin:0; font-size:.95rem; font-weight:600; }
+  .completion-sub{
+    margin-top:4px !important;
+    font-size:.82rem !important;
+    font-weight:500 !important;
+    font-style:italic;
+    opacity:.85;
+  }
+
+  /* ---------- Scene ---------- */
+  .scene-panel{ padding:14px 10px; }
+  .scene{ position:relative; }
+
+  /* The ruukkimestari stands over the stone it is working on, so it is taken
+     out of flow and moved to the active block; the padding is its headroom. */
+  /* padding-top/left are set from script: they are the creature's headroom and
+     its reach to the left of its hammer, both of which scale with the stones */
+  .quarry{
+    position:relative;
+    padding-top:64px;
+    padding-left:46px;
+    min-width:0;
+  }
+
+  .monster-stage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:72px;
+    height:72px;
+    pointer-events:none;
+    /* the blocks set `filter`, which paints them in the same layer as this
+       positioned box, so it needs a z-index to stay in front when it steps
+       down onto a lower row */
+    z-index:3;
+    transition: transform .45s cubic-bezier(.34,1.25,.64,1);
+    will-change: transform;
+  }
+  .monster-svg{ width:100%; height:100%; overflow:visible; }
+  .monster-svg.measuring .armHammer{ animation:none !important; }
+
+  /* only the mood matching the current stage of the work is drawn */
+  .monster-svg .mood{ display:none; }
+  .monster-svg[data-mood="calm"]   .mood-calm,
+  .monster-svg[data-mood="focus"]  .mood-focus,
+  .monster-svg[data-mood="effort"] .mood-effort,
+  .monster-svg[data-mood="strain"] .mood-strain,
+  .monster-svg[data-mood="glee"]   .mood-glee{ display:block; }
+  .monster-svg .idleBob{ animation: bob 2.6s ease-in-out infinite; transform-origin:center; }
+  @keyframes bob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-4px); }
+  }
+  .monster-svg .armHammer{
+    transform-origin: 134px 94px;
+    animation: tap 1.6s ease-in-out infinite;
+  }
+  /* idle busywork: two light taps, then a short rest */
+  @keyframes tap{
+    0%   { transform: rotate(-5deg); }
+    10%  { transform: rotate(2deg); }
+    18%  { transform: rotate(-3deg); }
+    28%  { transform: rotate(1deg); }
+    38%  { transform: rotate(-5deg); }
+    100% { transform: rotate(-5deg); }
+  }
+  .monster-svg.swinging .armHammer{ animation: hammerSwing .65s cubic-bezier(.34,1.4,.4,1) 1; }
+  .monster-svg.swinging .idleBob{ animation-play-state: paused; }
+  .monster-svg.swinging .lean{ animation: lean .65s ease-in-out 1; }
+  @keyframes hammerSwing{
+    0%{ transform: rotate(-8deg); }
+    28%{ transform: rotate(-62deg); }
+    46%{ transform: rotate(30deg); }
+    70%{ transform: rotate(6deg); }
+    100%{ transform: rotate(-8deg); }
+  }
+  @keyframes lean{
+    0%,100%{ transform:translateX(0); }
+    40%{ transform:translateX(4px); }
+  }
+  .monster-svg.celebrate .armHammer{ animation: celebrateArm 1s ease-in-out infinite; }
+  .monster-svg.celebrate .idleBob{ animation: celebrateBob .5s ease-in-out infinite; }
+  @keyframes celebrateArm{
+    0%,100%{ transform: rotate(-105deg); }
+    50%{ transform: rotate(-125deg); }
+  }
+  @keyframes celebrateBob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-7px); }
+  }
+
+  .queue-label{
+    font-size:.75rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--ink-soft);
+    margin:0 0 6px;
+  }
+  /* Every stone of the session is on screen at once - the sizes are computed
+     to fit rather than clipped behind a scrollbar. */
+  .queue{
+    --size:26px;
+    --gap:6px;
+    position:relative; /* blocks measure their offsets against this box */
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    gap:var(--gap);
+    padding:4px;
+  }
+
+  /* One block per interval: starts as a rough boulder, is refined in place
+     into a diamond. Rough stones sit at random angles, cut ones sit straight. */
+  .block{
+    width:var(--size);
+    height:var(--size);
+    flex:0 0 auto;
+    transform: rotate(var(--rot,0deg));
+    filter: hue-rotate(var(--hue,0deg));
+    transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+  }
+  .block svg{ width:100%; height:100%; display:block; }
+  .block svg use{ fill:var(--stone); stroke:var(--stone-dark); stroke-width:1.5; }
+
+  /* the stone under the hammer keeps the same grey as the rest - the creature
+     standing over it and its spreading cracks are what mark it */
+  .block.next{ animation: ringPulse 1.6s ease-in-out infinite; }
+  @keyframes ringPulse{
+    0%,100%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 1px var(--ring)); }
+    50%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 5px var(--ring)); }
+  }
+
+  .block.refined{
+    transform: rotate(0deg);
+    filter: drop-shadow(0 1px 1.5px rgba(58,53,45,.35));
+  }
+  .block.refined svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
+
+  /* first blow: the stone shudders and splits open */
+  .block.cracking{ animation: shudder .42s ease-out; }
+  @keyframes shudder{
+    0%,100%{ transform: rotate(var(--rot,0deg)) translateX(0); }
+    18%{ transform: rotate(var(--rot,0deg)) translate(-1.5px,1px) scale(1.06); }
+    42%{ transform: rotate(var(--rot,0deg)) translate(1.5px,0) scale(1.03); }
+    68%{ transform: rotate(var(--rot,0deg)) translate(-1px,.5px); }
+  }
+
+  /* second blow: squashed, then springs back out as a finished diamond */
+  .block.refining{ animation: refine .55s ease-in-out; }
+  @keyframes refine{
+    0%   { transform: rotate(var(--rot,0deg)) scale(1); }
+    32%  { transform: rotate(var(--rot,0deg)) scale(.2); }
+    34%  { transform: rotate(0deg) scale(.2); }
+    70%  { transform: rotate(0deg) scale(1.18); }
+    100% { transform: rotate(0deg) scale(1); }
+  }
+
+  .particle{ position:absolute; pointer-events:none; z-index:6; transform:translate(-50%,-50%); }
+  .particle.dust{
+    width:10px; height:10px; border-radius:50%;
+    background: radial-gradient(circle, rgba(214,203,182,.95), rgba(214,203,182,0));
+    animation: dustPop .5s ease-out forwards;
+  }
+  .particle.spark{
+    width:14px; height:2px;
+    background: linear-gradient(90deg, var(--fire-yellow), var(--fire-orange));
+    animation: pop .35s ease-out forwards;
+  }
+  .particle.chip{
+    width:6px; height:6px; background:var(--stone-dark);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    animation: pop .5s ease-in forwards;
+  }
+  @keyframes dustPop{
+    to{ transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(2); opacity:0; }
+  }
+  @keyframes pop{
+    to{ transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot,0deg)); opacity:0; }
+  }
+
+  /* ---------- Explanation ---------- */
+  details.about{
+    background:var(--panel-2);
+    border-radius:var(--radius);
+    padding:10px 14px;
+  }
+  details.about summary{
+    cursor:pointer;
+    font-weight:700;
+    color:var(--brick);
+    font-size:.92rem;
+  }
+  details.about p{
+    font-size:.86rem;
+    color:var(--ink-soft);
+    line-height:1.5;
+    margin:8px 0 2px;
+  }
+
+  .visually-hidden{
+    position:absolute;
+    width:1px;height:1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    white-space:nowrap;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .monster-svg .idleBob,
+    .monster-svg .armHammer,
+    .monster-svg.swinging .armHammer,
+    .monster-svg.celebrate .armHammer,
+    .monster-svg.celebrate .idleBob,
+    .block.next,
+    .block.cracking,
+    .block.refining{
+      animation:none !important;
+    }
+    .particle{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="brand">
+    <svg class="brand-mark" viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukion tunnus">
+      <polygon fill="#000" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766.88 364.38 781.13 381.37 788.72 402.21 788.72 424.39 976.23 424.39 976.23 402.2 788.76 402.2"/>
+    </svg>
+    <div class="brand-text">
+      <h1>
+        <svg class="wordmark" viewBox="104.62 511.7 1246.61 335.72" role="img" aria-label="Kiviruukin lukio">
+          <path fill="#000" d="M155.7,587.45l-20.43,19.99v38.87h-22.65v-126.6h22.65v55.75h4.66l55.08-55.75h30.21l-49.75,48.42v7.33l46.42,70.85h-27.54l-38.65-58.86Z"/>
+          <path fill="#000" d="M305.82,625.43h27.99v20.88h-91.51v-20.88h27.98l6.66-6.66v-71.52l-6.66-6.66h-27.98v-20.88h91.51v20.88h-27.99l-6.66,6.66v71.52l6.66,6.66Z"/>
+          <path fill="#000" d="M399.47,646.31l-49.31-126.6h25.54l35.32,97.51h6.66l35.31-97.51h25.1l-49.53,126.6h-29.1Z"/>
+          <path fill="#000" d="M558.11,625.43h27.99v20.88h-91.51v-20.88h27.98l6.66-6.66v-71.52l-6.66-6.66h-27.98v-20.88h91.51v20.88h-27.99l-6.66,6.66v71.52l6.66,6.66Z"/>
+          <path fill="#000" d="M634.36,646.31h-22.65v-126.6h52.86c32.43,0,51.31,13.77,51.31,39.09,0,18.66-10,30.87-28.21,35.98v5.11l33.98,46.42h-27.1l-35.32-48.64h-24.88v48.64ZM641.03,540.58l-6.66,6.66v29.54h29.76c19.32,0,28.43-6.66,28.43-17.99s-9.11-18.21-28.43-18.21h-23.1Z"/>
+          <path fill="#000" d="M815.7,598.33v-78.63h22.65v81.74c0,28.43-23.1,47.97-51.53,47.97s-51.53-19.54-51.53-47.97v-81.74h22.65v78.85c0,17.55,12.44,29.76,28.88,29.76s28.87-12.22,28.87-29.98Z"/>
+          <path fill="#000" d="M944.37,598.33v-78.63h22.65v81.74c0,28.43-23.1,47.97-51.53,47.97s-51.53-19.54-51.53-47.97v-81.74h22.65v78.85c0,17.55,12.44,29.76,28.88,29.76s28.87-12.22,28.87-29.98Z"/>
+          <path fill="#000" d="M1036.91,587.45l-20.43,19.99v38.87h-22.65v-126.6h22.65v55.75h4.66l55.08-55.75h30.21l-49.75,48.42v7.33l46.42,70.85h-27.54l-38.65-58.86Z"/>
+          <path fill="#000" d="M1187.04,625.43h27.99v20.88h-91.51v-20.88h27.98l6.66-6.66v-71.52l-6.66-6.66h-27.98v-20.88h91.51v20.88h-27.99l-6.66,6.66v71.52l6.66,6.66Z"/>
+          <path fill="#000" d="M1317.24,646.31l-50.64-91.51h-6.66v91.51h-21.1v-126.6h30.65l45.98,84.62h6.66v-84.62h21.1v126.6h-25.99Z"/>
+          <path fill="#000" d="M467.45,815.43h64.41v20.88h-93.51v-126.6h22.43v99.06l6.66,6.66Z"/>
+          <path fill="#000" d="M629.46,788.33v-78.63h22.65v81.74c0,28.43-23.1,47.97-51.53,47.97s-51.53-19.54-51.53-47.97v-81.74h22.65v78.85c0,17.55,12.44,29.76,28.88,29.76s28.87-12.22,28.87-29.98Z"/>
+          <path fill="#000" d="M722,777.45l-20.43,19.99v38.87h-22.65v-126.6h22.65v55.75h4.66l55.08-55.75h30.21l-49.75,48.42v7.33l46.42,70.85h-27.54l-38.65-58.86Z"/>
+          <path fill="#000" d="M872.13,815.43h27.99v20.88h-91.51v-20.88h27.98l6.66-6.66v-71.52l-6.66-6.66h-27.98v-20.88h91.51v20.88h-27.99l-6.66,6.66v71.52l6.66,6.66Z"/>
+          <path fill="#000" d="M972.39,839.42c-35.98,0-58.86-29.32-58.86-66.41s22.88-66.41,58.86-66.41,58.86,29.32,58.86,66.41-22.88,66.41-58.86,66.41ZM972.39,727.92c-23.77,0-35.09,20.21-35.09,45.09s11.33,45.09,35.09,45.09,35.09-20.21,35.09-45.09-11.33-45.09-35.09-45.09Z"/>
+        </svg>
+      </h1>
+    </div>
+    <div class="brand-side">
+      <button type="button" id="soundBtn" class="icon-btn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="durationHeading">
+    <p id="durationHeading" class="group-label">Valitse jakson pituus</p>
+    <div class="duration-group" role="group" aria-label="Valitse jakson pituus minuutteina">
+      <button type="button" class="preset-btn" data-minutes="5" aria-pressed="false">5 min</button>
+      <button type="button" class="preset-btn" data-minutes="15" aria-pressed="false">15 min</button>
+      <button type="button" class="preset-btn" data-minutes="25" aria-pressed="false">25 min</button>
+      <button type="button" class="preset-btn" data-minutes="45" aria-pressed="false">45 min</button>
+      <button type="button" class="preset-btn" data-minutes="60" aria-pressed="false">60 min</button>
+      <div class="custom-wrap">
+        <label class="visually-hidden" for="customMinutes">Oma aika minuutteina, 1–120</label>
+        <input type="number" id="customMinutes" min="1" max="120" inputmode="numeric" placeholder="1–120" />
+        <button type="button" id="applyCustomBtn">Aseta</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel timer-panel" aria-label="Ajastin">
+    <div class="timer" id="timeDisplay" role="timer" aria-label="Jäljellä oleva aika">25:00</div>
+    <div class="progressTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Jakson eteneminen" id="progressTrack">
+      <div class="progressFill" id="progressFill"></div>
+    </div>
+    <p class="blockCount visually-hidden" id="blockCount">0 / 25 lohkaretta jalostettu</p>
+    <p class="status-live visually-hidden" id="statusLive" aria-live="polite"></p>
+  </section>
+
+  <section class="panel">
+    <div class="controls">
+      <button type="button" id="startBtn">▶ Aloita</button>
+      <button type="button" id="pauseBtn" class="icon-btn" disabled aria-label="Keskeytä">⏸</button>
+      <button type="button" id="resetBtn" class="icon-btn" aria-label="Nollaa">↺</button>
+    </div>
+  </section>
+
+  <div class="completion visually-hidden" id="completion" hidden aria-hidden="true">
+    <h2>Ruukki on valmis!</h2>
+    <p id="completionText">Jalostit 25 minuuttia osaamiseksi.</p>
+    <p class="completion-sub">Ruukki on valmis – aika jalostui osaamiseksi.</p>
+  </div>
+
+  <section class="panel scene-panel" aria-label="Kivenlouhimo">
+    <div class="scene" id="scene">
+      <div class="quarry">
+        <div class="monster-stage" id="monsterStage">
+          <svg class="monster-svg idleBob" id="monster" data-mood="calm" viewBox="0 0 200 200" role="img" aria-label="Ruukkimestari-kivihirviö">
+            <g class="lean">
+              <g class="idleBob">
+                <!-- legs -->
+                <ellipse cx="78" cy="168" rx="16" ry="10" fill="#585245"/>
+                <ellipse cx="118" cy="170" rx="17" ry="10" fill="#585245"/>
+                <!-- back arm stub -->
+                <ellipse cx="60" cy="110" rx="14" ry="18" fill="#75705f"/>
+                <!-- body -->
+                <path d="M40,120 C22,102 26,68 58,52 C76,38 100,30 126,36 C154,42 174,64 178,92 C182,118 166,142 140,152 C114,162 82,163 62,155 C44,148 34,138 40,120 Z" fill="#8f887a" stroke="#585245" stroke-width="4"/>
+                <path d="M56,60 C70,48 92,42 108,44 C98,50 84,58 76,72 C68,60 60,60 56,60 Z" fill="#a49c88" opacity=".8"/>
+                <path d="M60,110 C58,96 66,84 80,80" fill="none" stroke="#6f6a5b" stroke-width="3" opacity=".6" stroke-linecap="round"/>
+                <path d="M120,150 C126,138 142,132 156,134" fill="none" stroke="#6f6a5b" stroke-width="3" opacity=".6" stroke-linecap="round"/>
+                <!-- belly patch -->
+                <ellipse cx="104" cy="118" rx="34" ry="26" fill="#c9c0a9" opacity=".55"/>
+                <!-- face: one group per mood, swapped as the work gets harder -->
+                <g class="mood mood-calm">
+                  <ellipse cx="80" cy="90" rx="9" ry="10" fill="#faf6ec"/>
+                  <ellipse cx="112" cy="88" rx="9" ry="10" fill="#faf6ec"/>
+                  <circle cx="82" cy="93" r="4" fill="#3a3530"/>
+                  <circle cx="114" cy="91" r="4" fill="#3a3530"/>
+                  <path d="M70,76 C75,71 84,71 88,75" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M102,73 C107,69 116,69 121,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M84,112 C94,120 108,120 118,111" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+                </g>
+                <g class="mood mood-focus">
+                  <ellipse cx="80" cy="90" rx="9" ry="9.5" fill="#faf6ec"/>
+                  <ellipse cx="112" cy="88" rx="9" ry="9.5" fill="#faf6ec"/>
+                  <circle cx="83" cy="95" r="4" fill="#3a3530"/>
+                  <circle cx="115" cy="93" r="4" fill="#3a3530"/>
+                  <path d="M70,74 C76,72 84,75 88,79" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M102,79 C107,75 115,72 121,74" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M91,114 C98,112 106,112 113,113" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+                </g>
+                <g class="mood mood-effort">
+                  <ellipse cx="80" cy="91" rx="8.5" ry="8" fill="#faf6ec"/>
+                  <ellipse cx="112" cy="89" rx="8.5" ry="8" fill="#faf6ec"/>
+                  <circle cx="83" cy="94" r="3.8" fill="#3a3530"/>
+                  <circle cx="115" cy="92" r="3.8" fill="#3a3530"/>
+                  <path d="M69,72 C77,71 85,77 89,82" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M101,82 C105,77 114,71 122,72" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <ellipse cx="101" cy="116" rx="9" ry="6.5" fill="#3a3530"/>
+                </g>
+                <g class="mood mood-strain">
+                  <path d="M71,93 C76,86 85,86 89,92" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M103,91 C107,85 116,85 121,92" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M67,74 C76,72 86,79 90,84" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M100,84 C104,79 114,72 123,74" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M86,110 C94,121 108,121 116,110 Z" fill="#3a3530"/>
+                  <path d="M92,113 L94,117 M101,114 L101,118 M110,113 L108,117" stroke="#faf6ec" stroke-width="1.6" stroke-linecap="round"/>
+                </g>
+                <g class="mood mood-glee">
+                  <path d="M71,92 C76,84 85,84 90,92" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M102,90 C107,82 116,82 121,90" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                  <path d="M69,73 C76,68 86,68 91,72" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M100,72 C105,68 115,68 122,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M83,108 C93,124 109,124 119,107" fill="none" stroke="#3a3530" stroke-width="3.6" stroke-linecap="round"/>
+                </g>
+                <!-- ylioppilaslakki, worn at a slight tilt -->
+                <g class="cap" transform="translate(100,27) rotate(-8)">
+                  <ellipse cx="0" cy="10" rx="29" ry="9" fill="#191919"/>
+                  <path d="M-24,13 C-34,15 -33,24 -24,25 C-14,21 2,17 14,15 C6,10 -10,10 -24,13 Z" fill="#0e0e0e"/>
+                  <path d="M-22,14 C-14,12 2,12 12,15" fill="none" stroke="#5a5a5a" stroke-width="1.2" opacity=".5"/>
+                  <path d="M-28,6 C-32,-10 -14,-20 2,-19 C20,-18 32,-6 27,7 C14,13 -16,13 -28,6 Z"
+                        fill="#fbfbf9" stroke="#cfcabb" stroke-width="1.6"/>
+                  <path d="M-20,-4 C-8,-12 10,-12 20,-3" fill="none" stroke="#d8d4c8" stroke-width="1.3" opacity=".7"/>
+                  <g transform="translate(-1,9.5)">
+                    <circle r="5" fill="#e0b13c" stroke="#8a6415" stroke-width=".9"/>
+                    <path d="M-2.2,2 C-2.6,-1.5 -1.6,-3.4 0,-3.4 C1.6,-3.4 2.6,-1.5 2.2,2" fill="none" stroke="#8a6415" stroke-width=".8"/>
+                    <line x1="0" y1="-3.4" x2="0" y2="2.6" stroke="#8a6415" stroke-width=".8"/>
+                  </g>
+                </g>
+                <!-- front arm + hammer -->
+                <g class="armHammer">
+                  <path d="M134,94 C150,94 162,104 164,120 C165,130 160,136 152,138" fill="none" stroke="#8f887a" stroke-width="16" stroke-linecap="round"/>
+                  <g transform="translate(152,138) rotate(28)">
+                    <rect x="-5" y="-4" width="46" height="10" rx="4" fill="#7c5a3a"/>
+                    <rect class="hammerHead" x="36" y="-24" width="20" height="48" rx="5" fill="#726c5c" stroke="#3a3530" stroke-width="3"/>
+                    <rect x="39" y="-19" width="6" height="38" fill="#8f887a" opacity=".6"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p class="queue-label visually-hidden" id="queueLabel">Lohkareet ja niistä jalostetut timantit</p>
+        <div class="queue" id="queue" aria-labelledby="queueLabel"></div>
+      </div>
+    </div>
+  </section>
+
+  <details class="about">
+    <summary>Miksi Kiviruukki?</summary>
+    <p>
+      Kivi on kestävä perusta ja vähitellen rakentuva osaaminen. Ruukki juontuu ruotsin sanasta
+      <em>bruk</em> ja tarkoittaa paikkaa, jossa raaka-aine jalostetaan valmiiksi tuotteeksi —
+      Kiviruukin alueen historia liittyy Stensvikin tiilitehtaaseen ja sen käyttämään saveen.
+      Samalla tavalla Kiviruukin lukiossa opiskellaan tavoitteellisesti ja kokeillaan rohkeasti
+      uutta, yhdessä. Tässä sovelluksessa aika on raaka-aine, keskittyminen on työ ja jokainen
+      jalostettu lohkare on askel kohti omaa osaamista.
+    </p>
+  </details>
+
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="roughRock" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M12,16 L20,12 M22,20 L30,24" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- the same boulder, splitting further the longer it is worked -->
+    <symbol id="rockCrack1" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M12,16 L20,12 M22,20 L30,24" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      <path d="M19,3 L15,15 L23,20"
+            fill="none" stroke="rgba(0,0,0,.42)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="rockCrack2" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M12,16 L20,12" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      <path d="M19,3 L15,15 L23,20 L18,27 M15,15 L5,12"
+            fill="none" stroke="rgba(0,0,0,.46)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="rockCrack3" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M19,3 L15,15 L23,20 L18,27 L21,38 M15,15 L5,12 M23,20 L35,16 M18,27 L7,30"
+            fill="none" stroke="rgba(0,0,0,.5)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="cutStone" viewBox="0 0 40 40">
+      <path d="M14,7 L26,7 L36,16 L20,36 L4,16 Z"/>
+      <path d="M4,16 L36,16 M14,7 L20,16 M26,7 L20,16 M20,16 L20,36" fill="none" stroke-opacity=".4" stroke-width="1.2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<p class="visually-hidden">
+  Oppiruukki on Kiviruukin lukion keskittymisajastin. Valitse jakson pituus, käynnistä ajastin
+  Aloita-painikkeella. Kivihirviö murskaa yhden kivenlohkareen kymmenen sekunnin välein ja
+  jalostaa siitä timantin. Tilailmoitukset luetaan tälle sivulle automaattisesti.
+</p>
+
+<script>
+(function(){
+  "use strict";
+
+  var PRESETS = [5,15,25,45,60];
+  var STORAGE_MIN = "oppiruukki_minutes";
+  var STORAGE_SOUND = "oppiruukki_sound";
+  var HIT_DELAY = 260; // ms into the swing animation when the hammer strikes
+  var MS_PER_BLOCK = 10000; // one boulder refined into a diamond per 10 seconds
+
+  var minutes = 25;
+  var soundOn = true;
+  var state = "idle"; // idle | running | paused | finished
+  var totalMs = 0, accumulatedMs = 0, startEpoch = 0;
+  var totalBlocks = 0, processedBlocks = 0;
+  var buildId = 0;
+  var tickTimer = null, swingTimeout = null;
+  var blocks = [];
+  var audioCtx = null;
+  var reducedMotion = false;
+
+  var timeEl = document.getElementById("timeDisplay");
+  var progressTrack = document.getElementById("progressTrack");
+  var progressFill = document.getElementById("progressFill");
+  var countEl = document.getElementById("blockCount");
+  var statusEl = document.getElementById("statusLive");
+  var startBtn = document.getElementById("startBtn");
+  var pauseBtn = document.getElementById("pauseBtn");
+  var resetBtn = document.getElementById("resetBtn");
+  var soundBtn = document.getElementById("soundBtn");
+  var queueEl = document.getElementById("queue");
+  var quarryEl = document.querySelector(".quarry");
+  var sceneEl = document.getElementById("scene");
+  var monsterEl = document.getElementById("monster");
+  var monsterStage = document.getElementById("monsterStage");
+  var completionEl = document.getElementById("completion");
+  var completionText = document.getElementById("completionText");
+  var customInput = document.getElementById("customMinutes");
+  var applyCustomBtn = document.getElementById("applyCustomBtn");
+  var presetButtons = Array.prototype.slice.call(document.querySelectorAll(".preset-btn"));
+
+  try{
+    reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }catch(e){ reducedMotion = false; }
+
+  function loadMinutes(){
+    try{
+      var v = parseInt(localStorage.getItem(STORAGE_MIN), 10);
+      if(!isNaN(v) && v>=1 && v<=120) return v;
+    }catch(e){}
+    return null;
+  }
+  function saveMinutes(){
+    try{ localStorage.setItem(STORAGE_MIN, String(minutes)); }catch(e){}
+  }
+  function loadSound(){
+    try{
+      var v = localStorage.getItem(STORAGE_SOUND);
+      if(v === "0") return false;
+      if(v === "1") return true;
+    }catch(e){}
+    return true;
+  }
+  function saveSound(){
+    try{ localStorage.setItem(STORAGE_SOUND, soundOn ? "1" : "0"); }catch(e){}
+  }
+
+  function minuuttiTeksti(n){
+    return n === 1 ? "1 minuutin" : n + " minuuttia";
+  }
+
+  function formatTime(ms){
+    var totalSec = Math.max(0, Math.ceil(ms/1000));
+    var m = Math.floor(totalSec/60);
+    var s = totalSec % 60;
+    return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+  }
+
+  // Nothing scrolls, so the stones are sized to fit: take the largest stone
+  // whose rows still land inside the height budget. The creature is scaled off
+  // that same number, and the quarry's padding is its headroom and its reach to
+  // the left of the hammer, so a 120-minute grid of dots gets a small worker
+  // and a 5-minute row of boulders gets a big one.
+  var MAX_GRID_H = 240, MAX_STONE = 34, MIN_STONE = 6;
+  function applyScale(){
+    var n = blocks.length || totalBlocks || 1;
+    if(!hammerSpot) measureHammer();
+    var totalW = sceneEl.clientWidth || 320;
+    var pick = null;
+
+    for(var s = MAX_STONE; s >= MIN_STONE; s--){
+      var gap = Math.max(2, Math.round(s * 0.18));
+      var mon = Math.min(76, Math.max(22, Math.round(s * 2.2)));
+      var padL = Math.max(0, Math.ceil(hammerSpot.x * mon - 4 - s/2));
+      var perRow = Math.max(1, Math.floor((totalW - padL - 8 + gap) / (s + gap)));
+      var rows = Math.ceil(n / perRow);
+      if(rows * (s + gap) - gap <= MAX_GRID_H){
+        pick = { s:s, gap:gap, mon:mon, padL:padL };
+        break;
+      }
+    }
+    if(!pick){
+      var mon0 = 22;
+      pick = { s:MIN_STONE, gap:2, mon:mon0,
+               padL:Math.max(0, Math.ceil(hammerSpot.x * mon0 - 4 - MIN_STONE/2)) };
+    }
+
+    queueEl.style.setProperty("--size", pick.s + "px");
+    queueEl.style.setProperty("--gap", pick.gap + "px");
+    monsterStage.style.width = pick.mon + "px";
+    monsterStage.style.height = pick.mon + "px";
+    quarryEl.style.paddingLeft = pick.padL + "px";
+    quarryEl.style.paddingTop = Math.ceil(hammerSpot.y * pick.mon + 2) + "px";
+  }
+
+  function announce(text){
+    statusEl.textContent = text;
+  }
+
+  function hideCompletion(){
+    completionEl.hidden = true;
+    completionEl.setAttribute("aria-hidden","true");
+    monsterEl.classList.remove("celebrate");
+  }
+  function showCompletion(){
+    completionText.textContent = "Jalostit " + minuuttiTeksti(minutes) + " osaamiseksi.";
+    completionEl.hidden = false;
+    completionEl.setAttribute("aria-hidden","false");
+  }
+
+  // Where the hammer head sits inside the monster's box, as a fraction of it.
+  // Measured from the real artwork so the creature lines up over the stone
+  // however the SVG is later tweaked.
+  var hammerSpot = null;
+  function measureHammer(){
+    try{
+      // Measure the hammer head itself, with the idle tap frozen so the
+      // reading is the arm's rest pose rather than wherever the tap happens
+      // to be mid-cycle.
+      monsterEl.classList.add("measuring");
+      var head = monsterEl.querySelector(".hammerHead");
+      var stageRect = monsterStage.getBoundingClientRect();
+      var headRect = head.getBoundingClientRect();
+      monsterEl.classList.remove("measuring");
+      if(!stageRect.width || !headRect.width) throw new Error("not laid out");
+      hammerSpot = {
+        x: (headRect.left + headRect.width/2 - stageRect.left) / stageRect.width,
+        y: (headRect.bottom - stageRect.top) / stageRect.height
+      };
+    }catch(e){
+      monsterEl.classList.remove("measuring");
+      hammerSpot = { x: 0.86, y: 0.92 };
+    }
+  }
+
+  // Park the ruukkimestari directly above the stone it is about to work on.
+  function positionMonster(){
+    var block = blocks[Math.min(processedBlocks, blocks.length - 1)];
+    if(!block) return;
+    if(!hammerSpot) measureHammer();
+
+    var w = monsterStage.offsetWidth, h = monsterStage.offsetHeight;
+    var x = queueEl.offsetLeft + block.offsetLeft + block.offsetWidth/2 - hammerSpot.x * w;
+    var y = queueEl.offsetTop + block.offsetTop - hammerSpot.y * h;
+    var maxX = queueEl.offsetLeft + queueEl.clientWidth - w * 0.5;
+    x = Math.max(0, Math.min(x, maxX));
+    monsterStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+  }
+
+  var repositionTimer = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(repositionTimer);
+    repositionTimer = setTimeout(function(){
+      applyScale();
+      positionMonster();
+    }, 120);
+  });
+
+  function buildBlocks(){
+    buildId++;
+    totalMs = minutes*60000;
+    totalBlocks = Math.round(totalMs / MS_PER_BLOCK);
+    processedBlocks = 0;
+    accumulatedMs = 0;
+
+    // A 120-minute session is 720 blocks; building those one appendChild at a
+    // time locks the page up for seconds, so assemble the markup as one string
+    // and hand the parser a single pass.
+    var html = new Array(totalBlocks);
+    for(var i=0;i<totalBlocks;i++){
+      html[i] = '<div class="block" style="--rot:' + (Math.random()*30-15).toFixed(1) +
+                'deg;--hue:' + (Math.random()*24-12).toFixed(1) +
+                'deg"><svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg></div>';
+    }
+    queueEl.innerHTML = html.join("");
+    blocks = Array.prototype.slice.call(queueEl.children);
+    if(blocks[0]) blocks[0].classList.add("next");
+
+    countEl.textContent = "0 / " + totalBlocks + " lohkaretta jalostettu";
+    progressFill.style.width = "0%";
+    progressTrack.setAttribute("aria-valuenow","0");
+    timeEl.textContent = formatTime(totalMs);
+    applyScale();
+    positionMonster();
+  }
+
+  function ensureAudio(){
+    if(!audioCtx){
+      var Ctx = window.AudioContext || window.webkitAudioContext;
+      if(!Ctx) return null;
+      audioCtx = new Ctx();
+    }
+    if(audioCtx.state === "suspended"){
+      try{ audioCtx.resume(); }catch(e){}
+    }
+    return audioCtx;
+  }
+
+  // Browsers only let audio start from a real user gesture, and some (iOS
+  // Safari especially) stay muted until a buffer has actually been played.
+  // Prime the context on the first interaction so the end-of-session melody
+  // is guaranteed to be audible minutes later.
+  function primeAudio(){
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    try{
+      var buf = ctx.createBuffer(1, 1, ctx.sampleRate);
+      var src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+    }catch(e){}
+    if(ctx.state === "running"){
+      document.removeEventListener("pointerdown", primeAudio, true);
+      document.removeEventListener("keydown", primeAudio, true);
+    }
+  }
+  document.addEventListener("pointerdown", primeAudio, true);
+  document.addEventListener("keydown", primeAudio, true);
+
+  function playMelody(){
+    if(!soundOn) return;
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    // A suspended context silently drops anything scheduled on it, so wait for
+    // the resume to land before laying down the notes.
+    if(ctx.state === "suspended"){
+      try{ ctx.resume().then(scheduleMelody).catch(function(){}); }catch(e){}
+    } else {
+      scheduleMelody();
+    }
+
+    function scheduleMelody(){
+      var master = ctx.createGain();
+      master.gain.value = 1;
+      var warm = ctx.createBiquadFilter();
+      warm.type = "lowpass";
+      warm.frequency.value = 2600;
+      warm.Q.value = 0.7;
+      master.connect(warm).connect(ctx.destination);
+
+      // Soft bell: sine fundamental with a gentle attack and a long tail,
+      // plus a quiet octave above for a little shimmer.
+      function bell(freq, start, dur, peak){
+        var osc = ctx.createOscillator();
+        var gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.0001, start);
+        gain.gain.linearRampToValueAtTime(peak, start+0.06);
+        gain.gain.exponentialRampToValueAtTime(0.0001, start+dur);
+        osc.connect(gain).connect(master);
+        osc.start(start); osc.stop(start+dur+0.05);
+
+        var osc2 = ctx.createOscillator();
+        var gain2 = ctx.createGain();
+        osc2.type = "sine";
+        osc2.frequency.value = freq*2;
+        gain2.gain.setValueAtTime(0.0001, start);
+        gain2.gain.linearRampToValueAtTime(peak*0.16, start+0.06);
+        gain2.gain.exponentialRampToValueAtTime(0.0001, start+dur*0.6);
+        osc2.connect(gain2).connect(master);
+        osc2.start(start); osc2.stop(start+dur+0.05);
+      }
+
+      var t0 = ctx.currentTime + 0.06;
+      [523.25, 659.25, 783.99].forEach(function(f, i){
+        bell(f, t0 + i*0.26, 1.2, 0.22);
+      });
+      // settles into a warm C major chord
+      bell(1046.50, t0+0.78, 2.0, 0.18);
+      bell(659.25,  t0+0.78, 2.2, 0.12);
+      bell(392.00,  t0+0.78, 2.4, 0.10);
+    }
+  }
+
+  function spawnParticle(type, cx, cy){
+    if(reducedMotion) return;
+    var el = document.createElement("div");
+    el.className = "particle " + type;
+    var angle = Math.random()*Math.PI*2;
+    var dist = 18 + Math.random()*38;
+    var dx = Math.cos(angle)*dist;
+    var dy = Math.sin(angle)*dist - 12;
+    el.style.left = cx+"px";
+    el.style.top = cy+"px";
+    el.style.setProperty("--dx", dx.toFixed(1)+"px");
+    el.style.setProperty("--dy", dy.toFixed(1)+"px");
+    el.style.setProperty("--rot", (Math.random()*360).toFixed(0)+"deg");
+    sceneEl.appendChild(el);
+    el.addEventListener("animationend", function(){ el.remove(); }, {once:true});
+    setTimeout(function(){ if(el.parentNode) el.remove(); }, 700);
+  }
+
+  function spawnParticles(originEl, strength){
+    if(!originEl || reducedMotion) return;
+    var s = strength || 1;
+    var sceneRect = sceneEl.getBoundingClientRect();
+    var r = originEl.getBoundingClientRect();
+    var cx = r.left - sceneRect.left + r.width/2;
+    var cy = r.top - sceneRect.top + r.height/2;
+    for(var i=0;i<Math.round(6*s);i++) spawnParticle("dust", cx, cy);
+    for(var i2=0;i2<Math.round(5*s);i2++) spawnParticle("spark", cx, cy);
+    for(var i3=0;i3<Math.round(4*s);i3++) spawnParticle("chip", cx, cy);
+  }
+
+  // The creature's face tracks how far into the stone it is. A mood set with a
+  // hold sticks for that long, so the grin after a diamond isn't immediately
+  // overwritten by the next tick.
+  var MOODS = ["calm", "focus", "effort", "strain"];
+  var moodHoldUntil = 0;
+  function setMood(mood, holdMs){
+    if(holdMs){
+      moodHoldUntil = Date.now() + holdMs;
+    } else if(Date.now() < moodHoldUntil){
+      return;
+    }
+    monsterEl.setAttribute("data-mood", mood);
+  }
+  function clearMood(){
+    moodHoldUntil = 0;
+    monsterEl.setAttribute("data-mood", "calm");
+  }
+
+  // The stone under the hammer splits further the longer it is worked, so the
+  // 10 seconds read as steady progress rather than a sudden flip at the end.
+  var CRACK_STEPS = [0.28, 0.52, 0.76];
+  function updateCracks(elapsed){
+    var block = blocks[processedBlocks];
+    if(!block || block.classList.contains("refined") || block.classList.contains("refining")) return;
+    var frac = (elapsed - processedBlocks * MS_PER_BLOCK) / MS_PER_BLOCK;
+    var stage = 0;
+    for(var i=0;i<CRACK_STEPS.length;i++){ if(frac >= CRACK_STEPS[i]) stage = i+1; }
+    setMood(MOODS[stage]);
+    if(block.crackStage === stage) return;
+    var deepened = stage > (block.crackStage || 0);
+    block.crackStage = stage;
+
+    var useEl = block.querySelector("use");
+    if(useEl) useEl.setAttribute("href", stage ? "#rockCrack" + stage : "#roughRock");
+    if(!deepened || reducedMotion) return;
+
+    // each new fissure is the result of a blow, so swing for it
+    triggerHammer();
+    var myBuildId = buildId;
+    setTimeout(function(){
+      if(myBuildId !== buildId || block.classList.contains("refined")) return;
+      spawnParticles(block, 0.35);
+      block.classList.remove("cracking");
+      void block.offsetWidth;
+      block.classList.add("cracking");
+      setTimeout(function(){ block.classList.remove("cracking"); }, 430);
+    }, HIT_DELAY);
+  }
+
+  // Turn a boulder into a diamond where it already sits: swap the shape at the
+  // midpoint of the squash so it reads as one object being reworked, not as a
+  // stone vanishing and a gem appearing.
+  function refineBlock(block, animated, myBuildId){
+    if(!block) return;
+    var useEl = block.querySelector("use");
+    function toDiamond(){
+      if(useEl) useEl.setAttribute("href", "#cutStone");
+      block.classList.add("refined");
+    }
+    block.classList.remove("next");
+    if(!animated || reducedMotion){
+      toDiamond();
+      return;
+    }
+    block.classList.remove("cracking");
+    block.classList.add("refining");
+    setTimeout(function(){
+      if(myBuildId !== buildId) return;
+      toDiamond();
+    }, 180);
+    setTimeout(function(){
+      if(myBuildId !== buildId) return;
+      block.classList.remove("refining");
+    }, 560);
+  }
+
+  function triggerHammer(){
+    monsterEl.classList.remove("swinging");
+    void monsterEl.offsetWidth;
+    monsterEl.classList.add("swinging");
+    clearTimeout(swingTimeout);
+    swingTimeout = setTimeout(function(){ monsterEl.classList.remove("swinging"); }, 680);
+  }
+
+  function processBlock(animated, isFinalBlock){
+    var idx = processedBlocks;
+    var myBuildId = buildId;
+    processedBlocks++;
+    var block = blocks[idx];
+    var nextBlock = blocks[idx+1];
+
+    if(animated){
+      // the stone has been splitting all interval; this is the blow that frees
+      // the diamond
+      triggerHammer();
+      setTimeout(function(){
+        if(myBuildId !== buildId) return;
+        spawnParticles(block, 1.4);
+        refineBlock(block, true, myBuildId);
+        setMood("glee", 1100); // a beat of delight before settling back to work
+        if(nextBlock) nextBlock.classList.add("next");
+        // let the squash read before the creature steps to the next stone
+        setTimeout(function(){
+          if(myBuildId === buildId) positionMonster();
+        }, 200);
+        if(isFinalBlock) finishNow();
+      }, HIT_DELAY);
+    } else {
+      refineBlock(block, false, myBuildId);
+      positionMonster();
+      if(nextBlock) nextBlock.classList.add("next");
+      if(isFinalBlock) finishNow();
+    }
+  }
+
+  function setControlsState(){
+    var busy = (state === "running" || state === "paused");
+    startBtn.disabled = busy;
+    pauseBtn.disabled = (state === "idle" || state === "finished");
+    pauseBtn.textContent = state === "paused" ? "▶" : "⏸";
+    pauseBtn.setAttribute("aria-label", state === "paused" ? "Jatka" : "Keskeytä");
+    presetButtons.forEach(function(b){ b.disabled = busy; });
+    customInput.disabled = busy;
+    applyCustomBtn.disabled = busy;
+  }
+
+  function tick(){
+    var now = Date.now();
+    var elapsed = accumulatedMs + (state === "running" ? (now - startEpoch) : 0);
+    var clampedElapsed = Math.min(elapsed, totalMs);
+    var remaining = totalMs - clampedElapsed;
+
+    timeEl.textContent = formatTime(remaining);
+    var pct = totalMs > 0 ? (clampedElapsed/totalMs*100) : 0;
+    progressFill.style.width = pct+"%";
+    progressTrack.setAttribute("aria-valuenow", String(Math.round(pct)));
+
+    var targetBlock = Math.min(totalBlocks, Math.floor(clampedElapsed/MS_PER_BLOCK));
+    if(targetBlock > processedBlocks){
+      while(processedBlocks < targetBlock){
+        var isLast = (processedBlocks + 1 === targetBlock);
+        var isFinal = (processedBlocks + 1 === totalBlocks);
+        processBlock(isLast, isFinal);
+      }
+    }
+    countEl.textContent = processedBlocks + " / " + totalBlocks + " lohkaretta jalostettu";
+    if(state === "running") updateCracks(clampedElapsed);
+  }
+
+  function start(){
+    if(state === "running") return;
+    if(state === "idle" || state === "finished"){
+      hideCompletion();
+      buildBlocks();
+    }
+    state = "running";
+    startEpoch = Date.now();
+    ensureAudio();
+    if(!tickTimer) tickTimer = setInterval(tick, 250);
+    setControlsState();
+    announce("Ajastin käynnistyi. " + totalBlocks + " lohkaretta odottaa työstöä.");
+  }
+
+  function togglePause(){
+    if(state === "running"){
+      accumulatedMs += Date.now() - startEpoch;
+      state = "paused";
+      clearInterval(tickTimer); tickTimer = null;
+      announce("Ajastin keskeytetty.");
+    } else if(state === "paused"){
+      state = "running";
+      startEpoch = Date.now();
+      tickTimer = setInterval(tick, 250);
+      announce("Ajastin jatkuu.");
+    }
+    setControlsState();
+  }
+
+  function reset(){
+    clearInterval(tickTimer); tickTimer = null;
+    clearTimeout(swingTimeout);
+    monsterEl.classList.remove("swinging","celebrate");
+    clearMood();
+    state = "idle";
+    hideCompletion();
+    buildBlocks();
+    setControlsState();
+    announce("Ajastin nollattu.");
+  }
+
+  function finishNow(){
+    if(state === "finished") return;
+    clearInterval(tickTimer); tickTimer = null;
+    state = "finished";
+    timeEl.textContent = "00:00";
+    progressFill.style.width = "100%";
+    progressTrack.setAttribute("aria-valuenow","100");
+    monsterEl.classList.remove("swinging");
+    monsterEl.classList.add("celebrate");
+    setMood("glee", 3600000); // stays pleased until the next session
+    playMelody();
+    showCompletion();
+    setControlsState();
+    announce("Ruukki on valmis. Jalostit " + minuuttiTeksti(minutes) + " osaamiseksi.");
+  }
+
+  function selectPreset(activeBtn){
+    presetButtons.forEach(function(b){
+      b.setAttribute("aria-pressed", b === activeBtn ? "true" : "false");
+    });
+    if(activeBtn) customInput.value = "";
+  }
+
+  function applyMinutesChange(){
+    saveMinutes();
+    if(state !== "running" && state !== "paused"){
+      state = "idle";
+      hideCompletion();
+      buildBlocks();
+    }
+  }
+
+  presetButtons.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      minutes = parseInt(btn.dataset.minutes, 10);
+      selectPreset(btn);
+      applyMinutesChange();
+    });
+  });
+
+  function applyCustom(){
+    var v = parseInt(customInput.value, 10);
+    if(isNaN(v)) return;
+    v = Math.min(120, Math.max(1, v));
+    customInput.value = v;
+    minutes = v;
+    selectPreset(null);
+    applyMinutesChange();
+  }
+  applyCustomBtn.addEventListener("click", applyCustom);
+  customInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); applyCustom(); }
+  });
+
+  function updateSoundBtn(){
+    soundBtn.setAttribute("aria-pressed", soundOn ? "true" : "false");
+    soundBtn.textContent = soundOn ? "🔊" : "🔇";
+    soundBtn.setAttribute("aria-label", soundOn ? "Äänet päällä" : "Äänet pois");
+  }
+  soundBtn.addEventListener("click", function(){
+    soundOn = !soundOn;
+    updateSoundBtn();
+    saveSound();
+    if(soundOn) ensureAudio();
+  });
+
+  startBtn.addEventListener("click", start);
+  pauseBtn.addEventListener("click", togglePause);
+  resetBtn.addEventListener("click", reset);
+
+  function init(){
+    var savedMin = loadMinutes();
+    minutes = savedMin || 25;
+    soundOn = loadSound();
+    updateSoundBtn();
+
+    var matched = presetButtons.filter(function(b){ return parseInt(b.dataset.minutes,10) === minutes; })[0];
+    if(matched){
+      selectPreset(matched);
+    } else {
+      selectPreset(null);
+      customInput.value = minutes;
+    }
+
+    buildBlocks();
+    setControlsState();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
