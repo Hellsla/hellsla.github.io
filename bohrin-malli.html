@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bohrin malli – siirtymät ja spektri</title>
+
+<style>
+:root{
+  --ink:#2f2f2f;
+  --paper:#fff;
+  --muted:#5f5f5f;
+  --faint:#9a9a9a;
+  --blue:#2d5bc7;
+  --red:#e4433f;
+  --invisible:#8a8a8a;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  background:var(--paper);
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--ink);
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.wrap{
+  width:100%;
+  max-width:1250px;
+  padding:0 10px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+svg.stage{
+  width:100%;
+  height:auto;
+  display:block;
+  background:var(--paper);
+}
+
+.sr{
+  position:absolute;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* --- radat --- */
+.orbit{
+  fill:none;
+  stroke:var(--ink);
+  stroke-width:1.7;
+  opacity:.78;
+}
+
+.orbit2{
+  fill:none;
+  stroke:#777;
+  stroke-width:.7;
+  stroke-dasharray:3 8;
+  opacity:.35;
+}
+
+/* --- klikkausalueet --- */
+.hit{
+  fill:none;
+  stroke:transparent;
+  stroke-width:24;
+  cursor:pointer;
+  outline:none;
+}
+
+.hit:hover{stroke:rgba(45,91,199,.14)}
+.hit:focus-visible{stroke:rgba(45,91,199,.34)}
+
+.hitrect{
+  fill:transparent;
+  cursor:pointer;
+  outline:none;
+}
+
+.hitrect:hover{fill:rgba(45,91,199,.12)}
+.hitrect:focus-visible{fill:rgba(45,91,199,.26)}
+
+/* --- tekstit --- */
+.small{font-size:19px;fill:var(--muted)}
+.tiny{font-size:14px;fill:var(--faint)}
+.readout{font-size:24px;fill:var(--ink);font-weight:500}
+.sub{font-size:19px;fill:var(--muted)}
+.heading{font-size:16px;fill:var(--muted);letter-spacing:.08em}
+
+.orbit-label{
+  font-size:18px;
+  fill:var(--muted);
+  font-weight:600;
+  paint-order:stroke;
+  stroke:var(--paper);
+  stroke-width:4px;
+  stroke-linejoin:round;
+}
+
+/* --- energiakaavio --- */
+.energy-line{stroke:var(--ink);stroke-width:2}
+.energy-line.active{stroke-width:4.5}
+
+.energy-title{font-size:24px;fill:var(--ink);font-weight:600}
+.energy-zero{
+  font-size:18px;
+  fill:var(--ink);
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+}
+.energy-level-label{
+  font-size:18px;
+  fill:var(--ink);
+  font-weight:500;
+  letter-spacing:.01em;
+  font-variant-numeric:tabular-nums;
+}
+.energy-value{font-size:17px;fill:var(--muted)}
+
+.zero-line{
+  stroke:#666;
+  stroke-width:1.5;
+  stroke-dasharray:7 7;
+}
+
+.transition{
+  stroke-width:5;
+  stroke-linecap:round;
+}
+
+.photon{
+  fill:none;
+  stroke-width:6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+/* --- spektri --- */
+.spec-frame{
+  fill:none;
+  stroke:var(--ink);
+  stroke-width:1.6;
+}
+
+.spec-line{stroke-width:3;stroke-linecap:butt}
+.spec-tick{stroke:var(--faint);stroke-width:1}
+
+/* --- kontrollit --- */
+.controls{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px 14px;
+}
+
+button{
+  appearance:none;
+  background:var(--paper);
+  color:var(--ink);
+  border:1.8px solid var(--ink);
+  border-radius:5px;
+  font:inherit;
+  font-size:18px;
+  padding:9px 15px;
+  cursor:pointer;
+}
+
+button:hover:not(:disabled){background:#f5f5f5}
+button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+button:disabled{opacity:.32;cursor:default}
+
+.field{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:17px;
+  color:var(--muted);
+  border:1.8px solid #d5d5d5;
+  border-radius:5px;
+  padding:6px 12px;
+}
+
+input[type=range]{width:150px;accent-color:var(--blue)}
+input[type=checkbox]{width:19px;height:19px;accent-color:var(--blue)}
+label{cursor:pointer}
+
+@media(max-width:760px){
+  button{font-size:16px;padding:8px 12px}
+  .field{font-size:15px;padding:5px 10px}
+  input[type=range]{width:110px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<svg class="stage" viewBox="0 0 1150 760"
+     role="img"
+     aria-label="Vetyatomin Bohrin malli: elektronin radat, energiatasokaavio ja emissiospektri">
+
+<defs>
+  <clipPath id="protonClip">
+    <path d="M -27,-5 C -29,-20 -16,-30 0,-29 C 17,-30 29,-17 28,-1
+             C 30,16 16,29 0,28 C -17,30 -29,15 -27,-5 Z"/>
+  </clipPath>
+
+  <clipPath id="electronClip">
+    <path d="M -13,-2 C -14,-10 -7,-15 1,-14 C 10,-15 15,-8 14,1
+             C 14,10 7,15 -1,14 C -10,15 -15,7 -13,-2 Z"/>
+  </clipPath>
+
+  <pattern id="continuumHatch" width="8" height="8"
+           patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#b0b0b0" stroke-width="1"/>
+  </pattern>
+
+  <linearGradient id="visibleBand" x1="0" y1="0" x2="1" y2="0"/>
+</defs>
+
+<!-- ===== ATOMI ===== -->
+<g id="orbits"></g>
+<g id="orbitHits"></g>
+
+<g id="proton" transform="translate(340 310)">
+  <path d="M -27,-5 C -29,-20 -16,-30 0,-29 C 17,-30 29,-17 28,-1
+           C 30,16 16,29 0,28 C -17,30 -29,15 -27,-5 Z"
+        fill="#e4433f" stroke="#2e2e2e" stroke-width="2.2"/>
+  <path d="M -25,-7 C -27,-20 -14,-28 1,-27 C 16,-29 27,-16 26,0
+           C 28,15 14,27 -1,26 C -15,28 -27,13 -25,-7 Z"
+        fill="none" stroke="#711d1d" stroke-width=".8" opacity=".65"/>
+  <g clip-path="url(#protonClip)" opacity=".23">
+    <path d="M-34 17 L20 -37 M-26 28 L31 -29 M-37 6 L10 -41
+             M-18 34 L38 -22 M-40 -5 L0 -40 M-6 36 L40 -10"
+          stroke="#333" stroke-width="1"/>
+  </g>
+  <text x="0" y="8" text-anchor="middle" font-size="24"
+        fill="#fff" font-weight="700">+</text>
+</g>
+
+<path id="photon" class="photon" opacity="0"/>
+
+<g id="electron">
+  <path d="M -13,-2 C -14,-10 -7,-15 1,-14 C 10,-15 15,-8 14,1
+           C 14,10 7,15 -1,14 C -10,15 -15,7 -13,-2 Z"
+        fill="#2d5bc7" stroke="#292929" stroke-width="1.8"/>
+  <path d="M -11,-3 C -12,-9 -6,-13 1,-12 C 8,-13 13,-6 12,1
+           C 12,8 6,13 -1,12 C -8,13 -13,6 -11,-3 Z"
+        fill="none" stroke="#183276" stroke-width=".75" opacity=".75"/>
+  <g clip-path="url(#electronClip)" opacity=".28">
+    <path d="M-18 9 L10 -19 M-13 15 L16 -14 M-20 3 L5 -20 M-5 18 L19 -6"
+          stroke="#222" stroke-width=".8"/>
+  </g>
+  <text x="0" y="6" text-anchor="middle" font-size="18"
+        fill="#fff" font-weight="700">−</text>
+</g>
+
+<!-- ===== ENERGIATASOKAAVIO ===== -->
+<g id="energyDiagram">
+
+  <line x1="700" y1="26" x2="700" y2="596" stroke="#555" stroke-width="1.6"/>
+  <text x="674" y="38" class="energy-title" text-anchor="middle">E</text>
+
+  <rect x="760" y="30" width="250" height="70"
+        fill="url(#continuumHatch)" opacity=".5"/>
+
+  <line id="zeroLine" class="zero-line" x1="760" x2="1010" y1="100" y2="100"/>
+  <text x="752" y="93" text-anchor="end" class="energy-zero">0 eV</text>
+
+  <g id="energyLevels"></g>
+  <g id="levelHits"></g>
+
+  <line id="transitionArrow" class="transition" opacity="0"/>
+  <polygon id="arrowHead" opacity="0"/>
+
+  <g id="energyElectron">
+    <path d="M -9,-1 C -10,-7 -5,-10 1,-10 C 7,-10 10,-5 10,1
+             C 10,7 5,10 -1,10 C -7,10 -10,5 -9,-1 Z"
+          fill="#2d5bc7" stroke="#333" stroke-width="1.3"/>
+    <text x="0" y="5" text-anchor="middle" font-size="13"
+          fill="#fff" font-weight="700">−</text>
+  </g>
+</g>
+
+<!-- ===== LUKEMAT ===== -->
+<text id="stateText" class="readout" x="340" y="618" text-anchor="middle">n = 1</text>
+<text id="stateSub"  class="sub"     x="340" y="645" text-anchor="middle"></text>
+
+<text id="photonText" class="readout" x="880" y="618" text-anchor="middle"></text>
+<text id="regionText" class="sub"     x="880" y="645" text-anchor="middle"></text>
+
+<!-- ===== SPEKTRI ===== -->
+<g id="spectrum">
+  <text class="heading" x="130" y="674">EMISSIOSPEKTRI</text>
+  <g id="specBands"></g>
+  <rect id="specFrame" class="spec-frame" x="130" y="684" width="900" height="44"/>
+  <g id="specLines"></g>
+  <g id="specTicks"></g>
+</g>
+
+</svg>
+
+<div class="controls">
+
+  <div class="field">
+    <label for="photonEnergy">Fotonin energia</label>
+    <input id="photonEnergy" type="range" min="1" max="30" step="0.1" value="15">
+    <span id="photonEnergyOut" style="min-width:10ch">15,0 eV</span>
+  </div>
+
+  <button id="ionizeBtn">Ionisoi</button>
+
+  <div class="field">
+    <input id="cascade" type="checkbox">
+    <label for="cascade">Kaskadi</label>
+  </div>
+
+  <button id="clearSpecBtn">Tyhjennä spektri</button>
+  <button id="resetBtn">Palauta perustilaan</button>
+
+</div>
+
+</div>
+
+<div id="live" class="sr" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+
+const NS = "http://www.w3.org/2000/svg";
+
+/* ============ VAKIOT ============ */
+
+const ATOM = { cx: 340, cy: 310 };
+const R    = { 1: 70, 2: 114, 3: 155, 4: 193, 5: 228 };
+
+const DIAG = {
+  x1: 770, x2: 1000,
+  top: 100, bottom: 575,   /* 0 eV ... -13,6 eV */
+  eX: 965,
+  arrowX: 880,
+  contPx: 70,              /* jatkumon korkeus pikseleinä */
+  contMax: 20              /* ... vastaa 20 eV liike-energiaa */
+};
+
+const SPEC = {
+  x0: 130, w: 900, y: 684, h: 44,
+  lmin: 90, lmax: 4200
+};
+
+const HC = 1239.841984;          /* eV·nm */
+const E0 = 13.6;                 /* eV */
+const WAVE_LEN = 120;            /* fotonin aallon pituus px */
+const SPONTANEOUS_DELAY = 1800;  /* havainnollistava viive, ei oikea aikaskaala */
+
+const SERIES = { 1: "Lyman", 2: "Balmer", 3: "Paschen", 4: "Brackett" };
+
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ============ ELEMENTIT ============ */
+
+const $ = id => document.getElementById(id);
+
+const electron       = $("electron");
+const photon         = $("photon");
+const orbitsGroup    = $("orbits");
+const orbitHits      = $("orbitHits");
+const energyLevels   = $("energyLevels");
+const levelHits      = $("levelHits");
+const energyElectron = $("energyElectron");
+const transitionArrow= $("transitionArrow");
+const arrowHead      = $("arrowHead");
+const specBands      = $("specBands");
+const specLines      = $("specLines");
+const specTicks      = $("specTicks");
+
+const stateText  = $("stateText");
+const stateSub   = $("stateSub");
+const photonText = $("photonText");
+const regionText = $("regionText");
+const live       = $("live");
+
+const energySlider = $("photonEnergy");
+const energyOut    = $("photonEnergyOut");
+const cascadeBox   = $("cascade");
+const ionizeBtn    = $("ionizeBtn");
+const clearSpecBtn = $("clearSpecBtn");
+const resetBtn     = $("resetBtn");
+
+/* ============ TILA ============ */
+
+let level   = 1;
+let radius  = R[1];
+let angle   = -Math.PI / 2;
+let busy    = false;
+let ionized = false;
+let spontaneousTimer = null;
+
+const spectrum = new Map();
+let lastTime = performance.now();
+
+/* ============ FYSIIKKA ============ */
+
+const energy     = n => -E0 / (n * n);
+const photonE    = (a, b) => Math.abs(energy(b) - energy(a));
+const lambdaOf   = eV => HC / eV;
+const clamp      = (v, a, b) => Math.min(Math.max(v, a), b);
+
+function fmt(x, d) {
+  return x.toFixed(d).replace(".", ",");
+}
+
+/*
+  Näkyvän valon värit. UV ja IR eivät ole värejä lainkaan:
+  ne piirretään harmaana katkoviivana, jotta demo ei vahvista
+  käsitystä "violetista ultraviolettivalosta".
+*/
+const VIS = [
+  [440, "#6435cf"], [485, "#3261d8"], [500, "#169cb5"],
+  [565, "#3da856"], [590, "#dfb02c"], [625, "#ee7d25"],
+  [750, "#d83b33"]
+];
+
+function photonInfo(lambda) {
+  if (lambda < 380) return { color: "#8a8a8a", region: "UV", visible: false };
+  if (lambda > 750) return { color: "#8a8a8a", region: "IR", visible: false };
+  for (const [edge, color] of VIS) {
+    if (lambda <= edge) return { color, region: "näkyvä valo", visible: true };
+  }
+  return { color: "#d83b33", region: "näkyvä valo", visible: true };
+}
+
+/* ============ RADAT ============ */
+
+function makeOrbits() {
+  for (let n = 1; n <= 5; n++) {
+    const c = document.createElementNS(NS, "circle");
+    c.setAttribute("cx", ATOM.cx);
+    c.setAttribute("cy", ATOM.cy);
+    c.setAttribute("r", R[n]);
+    c.setAttribute("class", "orbit");
+    orbitsGroup.appendChild(c);
+
+    /* toinen, hieman siirtynyt "kynän veto" */
+    const c2 = document.createElementNS(NS, "ellipse");
+    c2.setAttribute("cx", ATOM.cx + (n % 2 ? 1.6 : -1.1));
+    c2.setAttribute("cy", ATOM.cy + (n % 2 ? -1.3 : 1.4));
+    c2.setAttribute("rx", R[n] + 1.1);
+    c2.setAttribute("ry", R[n] - 1.3);
+    c2.setAttribute("class", "orbit2");
+    orbitsGroup.appendChild(c2);
+
+    /* Merkinnät porrastetaan kuorten oikeaan yläreunaan. */
+    const labelAngle = -Math.PI / 4;
+    const label = document.createElementNS(NS, "text");
+    label.setAttribute("x", ATOM.cx + Math.cos(labelAngle) * R[n] + 9);
+    label.setAttribute("y", ATOM.cy + Math.sin(labelAngle) * R[n] + 6);
+    label.setAttribute("class", "orbit-label");
+    label.textContent = "n = " + n;
+    orbitsGroup.appendChild(label);
+
+    orbitHits.appendChild(makeHit(n));
+  }
+}
+
+function makeHit(n) {
+  const hit = document.createElementNS(NS, "circle");
+  hit.setAttribute("cx", ATOM.cx);
+  hit.setAttribute("cy", ATOM.cy);
+  hit.setAttribute("r", R[n]);
+  hit.setAttribute("class", "hit");
+  hit.setAttribute("tabindex", "0");
+  hit.setAttribute("role", "button");
+  hit.setAttribute("aria-label", "Siirrä elektroni tasolle n = " + n);
+  attachActivate(hit, n);
+  return hit;
+}
+
+function attachActivate(el, n) {
+  el.addEventListener("click", () => goToLevel(n));
+  el.addEventListener("keydown", e => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      goToLevel(n);
+    }
+  });
+}
+
+const electronPoint = (r = radius, a = angle) => ({
+  x: ATOM.cx + Math.cos(a) * r,
+  y: ATOM.cy + Math.sin(a) * r
+});
+
+function placeElectron() {
+  const p = electronPoint();
+  electron.setAttribute("transform", `translate(${p.x} ${p.y})`);
+}
+
+/* ============ ENERGIATASOT ============ */
+
+/* sidotut tilat: lineaarinen eV-asteikko */
+const energyY = n =>
+  DIAG.top + ((0 - energy(n)) / E0) * (DIAG.bottom - DIAG.top);
+
+/* vapaa elektroni: tiivistetty jatkumo 0 eV yläpuolella */
+const freeY = Ek =>
+  DIAG.top - DIAG.contPx * clamp(Ek / DIAG.contMax, 0, 1);
+
+function makeEnergyDiagram() {
+  for (let n = 1; n <= 5; n++) {
+    const y = energyY(n);
+
+    const line = document.createElementNS(NS, "line");
+    line.setAttribute("x1", DIAG.x1);
+    line.setAttribute("x2", DIAG.x2);
+    line.setAttribute("y1", y);
+    line.setAttribute("y2", y);
+    line.setAttribute("class", "energy-line");
+    line.setAttribute("id", "levelLine" + n);
+    energyLevels.appendChild(line);
+
+    /* Korkeimpien tasojen merkinnät porrastetaan selkeäksi sarakkeeksi. */
+    const labelY = n === 5 ? 122 : n === 4 ? 142 : n === 3 ? 162 : y + 7;
+    addText(energyLevels, 752, labelY,
+            "energy-level-label", "n = " + n, "end");
+
+    if (n <= 3) {
+      addText(energyLevels, 1016, y + 6, "energy-value", fmt(energy(n), 2) + " eV");
+    }
+
+    levelHits.appendChild(makeLevelHit(n, y));
+  }
+  updateEnergyElectron();
+}
+
+function addText(parent, x, y, cls, txt, anchor) {
+  const t = document.createElementNS(NS, "text");
+  t.setAttribute("x", x);
+  t.setAttribute("y", y);
+  t.setAttribute("class", cls);
+  if (anchor) t.setAttribute("text-anchor", anchor);
+  t.textContent = txt;
+  parent.appendChild(t);
+  return t;
+}
+
+function makeLevelHit(n, y) {
+  const h = n <= 3 ? 22 : 10;
+  const rect = document.createElementNS(NS, "rect");
+  rect.setAttribute("x", DIAG.x1);
+  rect.setAttribute("y", y - h / 2);
+  rect.setAttribute("width", DIAG.x2 - DIAG.x1);
+  rect.setAttribute("height", h);
+  rect.setAttribute("class", "hitrect");
+  rect.setAttribute("tabindex", "0");
+  rect.setAttribute("role", "button");
+  rect.setAttribute("aria-label", "Siirrä elektroni tasolle n = " + n);
+  attachActivate(rect, n);
+  return rect;
+}
+
+function updateEnergyElectron() {
+  if (ionized) return;
+  energyElectron.setAttribute("transform", `translate(${DIAG.eX} ${energyY(level)})`);
+  for (let n = 1; n <= 5; n++) {
+    $("levelLine" + n).classList.toggle("active", n === level);
+  }
+}
+
+/* ============ SPEKTRI ============ */
+
+const specX = l =>
+  SPEC.x0 + Math.log(clamp(l, SPEC.lmin, SPEC.lmax) / SPEC.lmin) /
+            Math.log(SPEC.lmax / SPEC.lmin) * SPEC.w;
+
+function makeSpectrumScale() {
+  const vis1 = specX(380), vis2 = specX(750);
+
+  /* UV- ja IR-vyöhykkeet: harmaita, koska niitä ei nähdä */
+  band(SPEC.x0, vis1 - SPEC.x0, "#efefef");
+  band(vis2, SPEC.x0 + SPEC.w - vis2, "#efefef");
+
+  /* näkyvä kaista: gradientti oikeilla aallonpituuksilla */
+  const grad = $("visibleBand");
+  const stops = [[380, "#6435cf"], ...VIS];
+  for (const [l, color] of stops) {
+    const s = document.createElementNS(NS, "stop");
+    s.setAttribute("offset", ((specX(l) - vis1) / (vis2 - vis1) * 100) + "%");
+    s.setAttribute("stop-color", color);
+    grad.appendChild(s);
+  }
+  const vb = band(vis1, vis2 - vis1, "url(#visibleBand)");
+  vb.setAttribute("opacity", ".2");
+
+  addText(specBands, (SPEC.x0 + vis1) / 2, SPEC.y - 10, "tiny", "UV", "middle");
+  addText(specBands, (vis1 + vis2) / 2, SPEC.y - 10, "tiny", "näkyvä", "middle");
+  addText(specBands, (vis2 + SPEC.x0 + SPEC.w) / 2, SPEC.y - 10, "tiny", "IR", "middle");
+
+  for (const l of [100, 200, 400, 800, 1600, 3200]) {
+    const x = specX(l);
+    const t = document.createElementNS(NS, "line");
+    t.setAttribute("x1", x); t.setAttribute("x2", x);
+    t.setAttribute("y1", SPEC.y + SPEC.h);
+    t.setAttribute("y2", SPEC.y + SPEC.h + 6);
+    t.setAttribute("class", "spec-tick");
+    specTicks.appendChild(t);
+    addText(specTicks, x, SPEC.y + SPEC.h + 22, "tiny", l, "middle");
+  }
+  addText(specTicks, SPEC.x0 + SPEC.w + 14, SPEC.y + SPEC.h + 22, "tiny", "nm");
+}
+
+function band(x, w, fill) {
+  const r = document.createElementNS(NS, "rect");
+  r.setAttribute("x", x); r.setAttribute("y", SPEC.y);
+  r.setAttribute("width", w); r.setAttribute("height", SPEC.h);
+  r.setAttribute("fill", fill);
+  specBands.appendChild(r);
+  return r;
+}
+
+function recordLine(lambda, from, to) {
+  const key = lambda.toFixed(2);
+  const rec = spectrum.get(key) || { lambda, from, to, count: 0 };
+  rec.count++;
+  spectrum.set(key, rec);
+  drawSpectrum();
+}
+
+function drawSpectrum() {
+  specLines.textContent = "";
+  for (const rec of spectrum.values()) {
+    const info = photonInfo(rec.lambda);
+    const x = specX(rec.lambda);
+    const l = document.createElementNS(NS, "line");
+    l.setAttribute("x1", x); l.setAttribute("x2", x);
+    l.setAttribute("y1", SPEC.y + 2);
+    l.setAttribute("y2", SPEC.y + SPEC.h - 2);
+    l.setAttribute("class", "spec-line");
+    l.setAttribute("stroke", info.visible ? info.color : "#8a8a8a");
+    if (!info.visible) l.setAttribute("stroke-dasharray", "4 4");
+    l.setAttribute("opacity", Math.min(1, 0.5 + 0.17 * rec.count));
+    const title = document.createElementNS(NS, "title");
+    title.textContent =
+      `n = ${rec.from} → ${rec.to} · ${fmt(rec.lambda, 1)} nm · ${info.region}`;
+    l.appendChild(title);
+    specLines.appendChild(l);
+  }
+}
+
+/* ============ FOTONI ============ */
+
+/* Aalto piirretään kerran x-akselin suuntaisena; liike hoidetaan
+   transformilla, jolloin polkua ei rakenneta uudelleen joka ruudulla. */
+function buildWave(length = WAVE_LEN, amplitude = 9, waves = 6, steps = 90) {
+  const pts = [];
+  for (let i = 0; i <= steps; i++) {
+    const t = i / steps;
+    pts.push((i ? "L" : "M") +
+      (length * t).toFixed(1) + " " +
+      (Math.sin(t * Math.PI * 2 * waves) * amplitude).toFixed(1));
+  }
+  photon.setAttribute("d", pts.join(" "));
+}
+
+function showPhoton(x, y, dirRad, info, opacity = 1) {
+  photon.setAttribute("transform",
+    `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(dirRad * 180 / Math.PI).toFixed(1)})`);
+  photon.setAttribute("stroke", info.color);
+  photon.setAttribute("stroke-dasharray", info.visible ? "none" : "9 7");
+  photon.setAttribute("opacity", opacity);
+}
+
+const hidePhoton = () => photon.setAttribute("opacity", 0);
+
+/* Saapuva fotoni: aallon KÄRKI pysähtyy elektroniin, ei sen ohi. */
+function flyPhotonIn(target, info, done) {
+  const startX = -WAVE_LEN;
+  const endX = target.x - WAVE_LEN;
+  animate(1050, e => showPhoton(startX + (endX - startX) * e, target.y, 0, info), () => {
+    hidePhoton();
+    done();
+  });
+}
+
+function flyPhotonOut(from, dirRad, info, done) {
+  animate(1300, (e, raw) => {
+    const d = 380 * e;
+    showPhoton(
+      from.x + Math.cos(dirRad) * d,
+      from.y + Math.sin(dirRad) * d,
+      dirRad, info,
+      raw < .12 ? raw / .12 : Math.max(0, 1 - (raw - .82) / .18)
+    );
+  }, () => { hidePhoton(); done(); });
+}
+
+/* ============ SIIRTYMÄNUOLI ============ */
+
+function showTransitionArrow(fromY, toY, color, progress) {
+  const x = DIAG.arrowX;
+  const current = fromY + (toY - fromY) * progress;
+
+  transitionArrow.setAttribute("x1", x);
+  transitionArrow.setAttribute("x2", x);
+  transitionArrow.setAttribute("y1", fromY);
+  transitionArrow.setAttribute("y2", current);
+  transitionArrow.setAttribute("stroke", color);
+  transitionArrow.setAttribute("opacity", 1);
+
+  const dir = toY < fromY ? -1 : 1;
+  arrowHead.setAttribute("points",
+    `${x},${current} ${x - 8},${current - dir * 14} ${x + 8},${current - dir * 14}`);
+  arrowHead.setAttribute("fill", color);
+  arrowHead.setAttribute("opacity", progress > .82 ? 1 : 0);
+}
+
+function fadeArrow() {
+  transitionArrow.setAttribute("opacity", .3);
+  arrowHead.setAttribute("opacity", .3);
+}
+
+function hideArrow() {
+  transitionArrow.setAttribute("opacity", 0);
+  arrowHead.setAttribute("opacity", 0);
+}
+
+/* ============ ANIMAATIO ============ */
+
+const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+function animate(duration, update, done) {
+  if (reduced || duration <= 0) {
+    update(1, 1);
+    if (done) done();
+    return;
+  }
+  const start = performance.now();
+  (function frame(now) {
+    const raw = Math.min((now - start) / duration, 1);
+    update(ease(raw), raw);
+    if (raw < 1) requestAnimationFrame(frame);
+    else if (done) done();
+  })(performance.now());
+}
+
+/* ============ LUKEMAT ============ */
+
+function setState() {
+  if (ionized) {
+    stateText.textContent = "Ionisoitunut";
+    return;
+  }
+  stateText.textContent = "n = " + level;
+  stateSub.textContent = "E = " + fmt(energy(level), 2) + " eV";
+  announce(`Taso n on ${level}, energia ${fmt(energy(level), 2)} elektronivolttia.`);
+}
+
+function cancelSpontaneousDecay() {
+  if (spontaneousTimer !== null) {
+    clearTimeout(spontaneousTimer);
+    spontaneousTimer = null;
+  }
+}
+
+function scheduleSpontaneousDecay() {
+  cancelSpontaneousDecay();
+  if (busy || ionized || level <= 1) return;
+
+  stateSub.textContent =
+    `E = ${fmt(energy(level), 2)} eV · viritystila (aika hidastettu)`;
+  announce(`Viritystila n = ${level}. Spontaani emissio alkaa hidastetusti.`);
+
+  spontaneousTimer = setTimeout(() => {
+    spontaneousTimer = null;
+    if (!busy && !ionized && level > 1) emission(1, true);
+  }, SPONTANEOUS_DELAY);
+}
+
+function setPhotonReadout(lambda, eV, info, from, to) {
+  photonText.textContent = "λ = " + fmt(lambda, 1) + " nm";
+  photonText.setAttribute("fill", info.visible ? info.color : "#4a4a4a");
+
+  const series = (to < from && SERIES[to]) ? " · " + SERIES[to] + "in sarja" : "";
+  regionText.textContent = `${fmt(eV, 2)} eV · ${info.region}${series}`;
+  regionText.setAttribute("fill", "#5f5f5f");
+}
+
+function announce(msg) {
+  live.textContent = msg;
+}
+
+function controls() {
+  const eV = Number(energySlider.value);
+  energyOut.textContent = fmt(eV, 1) + " eV";
+  ionizeBtn.disabled = busy || ionized || eV < Math.abs(energy(level));
+  ionizeBtn.title = ionizeBtn.disabled && !busy && !ionized
+    ? `Ionisaatioon tarvitaan vähintään ${fmt(Math.abs(energy(level)), 2)} eV`
+    : "";
+  energySlider.disabled = busy;
+  cascadeBox.disabled = busy;
+
+  for (const el of [...orbitHits.children, ...levelHits.children]) {
+    el.style.pointerEvents = (busy || ionized) ? "none" : "auto";
+  }
+}
+
+/* ============ SIIRTYMÄ ============ */
+
+function transitionElectron(from, to, color, duration, done) {
+  const startR = R[from], endR = R[to];
+  const startAngle = angle;
+  const extraAngle = 1.0 + Math.abs(to - from) * .25;
+  const y1 = energyY(from), y2 = energyY(to);
+
+  hideArrow();
+
+  animate(duration, e => {
+    radius = startR + (endR - startR) * e;
+    angle = startAngle + extraAngle * e;
+    placeElectron();
+    energyElectron.setAttribute("transform",
+      `translate(${DIAG.eX} ${y1 + (y2 - y1) * e})`);
+    showTransitionArrow(y1, y2, color, e);
+  }, () => {
+    radius = endR;
+    level = to;
+    setState();
+    updateEnergyElectron();
+    fadeArrow();
+    if (done) done();
+  });
+}
+
+function goToLevel(target) {
+  if (busy || ionized || target === level) return;
+  cancelSpontaneousDecay();
+  if (target > level) absorption(target);
+  else emission(target);
+}
+
+/* ---- absorptio ---- */
+
+function absorption(target) {
+  cancelSpontaneousDecay();
+  busy = true;
+  controls();
+
+  const from = level;
+  const eV = photonE(from, target);
+  const lambda = lambdaOf(eV);
+  const info = photonInfo(lambda);
+
+  setPhotonReadout(lambda, eV, info, from, target);
+  announce(`Absorptio n = ${from} tasolta n = ${target} tasolle, ${fmt(lambda, 1)} nanometriä.`);
+
+  flyPhotonIn(electronPoint(), info, () => {
+    transitionElectron(from, target, info.color,
+      900 + 100 * Math.abs(target - from), () => {
+        busy = false;
+        controls();
+        scheduleSpontaneousDecay();
+      });
+  });
+}
+
+/* ---- emissio (valinnaisesti kaskadina) ---- */
+
+function emission(target, spontaneous = false) {
+  cancelSpontaneousDecay();
+  busy = true;
+  controls();
+
+  if (spontaneous) {
+    stateSub.textContent = "spontaani emissio (aika hidastettu)";
+  }
+
+  const steps = [];
+  if (cascadeBox.checked) {
+    for (let n = level; n > target; n--) steps.push([n, n - 1]);
+  } else {
+    steps.push([level, target]);
+  }
+
+  (function next(i) {
+    if (i >= steps.length) {
+      busy = false;
+      controls();
+      scheduleSpontaneousDecay();
+      return;
+    }
+    emitStep(steps[i][0], steps[i][1], () => next(i + 1), spontaneous);
+  })(0);
+}
+
+function emitStep(from, to, done, spontaneous = false) {
+  const eV = photonE(from, to);
+  const lambda = lambdaOf(eV);
+  const info = photonInfo(lambda);
+
+  setPhotonReadout(lambda, eV, info, from, to);
+  announce(`${spontaneous ? "Spontaani emissio" : "Emissio"} n = ${from} tasolta n = ${to} tasolle, ${fmt(lambda, 1)} nanometriä, ${info.region}.`);
+
+  transitionElectron(from, to, info.color, 950 + 100 * Math.abs(to - from), () => {
+    recordLine(lambda, from, to);
+    flyPhotonOut(electronPoint(), angle, info, done);
+  });
+}
+
+/* ============ IONISAATIO ============ */
+
+function ionize() {
+  if (busy || ionized) return;
+
+  const eV = Number(energySlider.value);
+  const bind = Math.abs(energy(level));
+  if (eV < bind) return;
+
+  cancelSpontaneousDecay();
+  busy = true;
+  controls();
+
+  const from = level;
+  const Ek = eV - bind;
+  const lambda = lambdaOf(eV);
+  const info = photonInfo(lambda);
+
+  photonText.textContent = "λ = " + fmt(lambda, 1) + " nm";
+  photonText.setAttribute("fill", info.visible ? info.color : "#4a4a4a");
+  regionText.textContent =
+    `${fmt(eV, 2)} eV − ${fmt(bind, 2)} eV → Eₖ = ${fmt(Ek, 2)} eV`;
+  regionText.setAttribute("fill", "#5f5f5f");
+
+  announce(`Ionisaatio tasolta n = ${from}. Vapaan elektronin liike-energia ${fmt(Ek, 2)} elektronivolttia.`);
+
+  flyPhotonIn(electronPoint(), info, () => {
+    const startAngle = angle;
+    const startR = radius;
+    const y1 = energyY(from);
+    const y2 = freeY(Ek);
+
+    hideArrow();
+
+    animate(1550, e => {
+      angle = startAngle + .55 * e;
+      const r = startR + 400 * e;
+      electron.setAttribute("transform",
+        `translate(${ATOM.cx + Math.cos(angle) * r} ${ATOM.cy + Math.sin(angle) * r})`);
+
+      const p = Math.min(e * 1.15, 1);
+      energyElectron.setAttribute("transform",
+        `translate(${DIAG.eX + (e > .72 ? 60 * ((e - .72) / .28) : 0)} ${y1 + (y2 - y1) * p})`);
+      showTransitionArrow(y1, DIAG.top, info.color, p);
+    }, () => {
+      ionized = true;
+      stateText.textContent = "Ionisoitunut";
+      stateSub.textContent = `vapaa elektroni, Eₖ = ${fmt(Ek, 2)} eV`;
+      energyElectron.setAttribute("transform", `translate(${DIAG.eX + 60} ${y2})`);
+      fadeArrow();
+      for (let n = 1; n <= 5; n++) $("levelLine" + n).classList.remove("active");
+      busy = false;
+      controls();
+    });
+  });
+}
+
+/* ============ NOLLAUS ============ */
+
+function reset() {
+  cancelSpontaneousDecay();
+  busy = false;
+  ionized = false;
+  level = 1;
+  radius = R[1];
+  angle = -Math.PI / 2;
+
+  hidePhoton();
+  hideArrow();
+
+  photonText.textContent = "";
+  regionText.textContent = "";
+
+  placeElectron();
+  setState();
+  updateEnergyElectron();
+  controls();
+}
+
+function clearSpectrum() {
+  spectrum.clear();
+  drawSpectrum();
+  announce("Spektri tyhjennetty.");
+}
+
+/* ============ KIERTOLIIKE ============ */
+
+function orbitLoop(now) {
+  const dt = Math.min(now - lastTime, 40);
+  lastTime = now;
+  if (!busy && !ionized && !reduced) {
+    angle += (.00135 / Math.pow(level, .72)) * dt;
+    placeElectron();
+  }
+  requestAnimationFrame(orbitLoop);
+}
+
+/* ============ KÄYNNISTYS ============ */
+
+buildWave();
+makeOrbits();
+makeEnergyDiagram();
+makeSpectrumScale();
+reset();
+
+energySlider.addEventListener("input", controls);
+ionizeBtn.addEventListener("click", ionize);
+clearSpecBtn.addEventListener("click", clearSpectrum);
+resetBtn.addEventListener("click", reset);
+
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, button")) return;
+  const n = Number(e.key);
+  if (n >= 1 && n <= 5) goToLevel(n);
+  if (e.key.toLowerCase() === "r") reset();
+});
+
+requestAnimationFrame(orbitLoop);
+</script>
+
+</body>
+</html>
