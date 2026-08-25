@@ -265,15 +265,7 @@
 
   /* ---------- Scene ---------- */
   .scene-panel{ padding:14px 10px; }
-  .scene{
-    position:relative;
-    display:grid;
-    grid-template-columns: 1fr;
-    gap:14px;
-  }
-  @media (min-width: 640px){
-    .scene{ grid-template-columns: 1.25fr 1fr; }
-  }
+  .scene{ position:relative; }
 
   .quarry{
     display:flex;
@@ -332,8 +324,7 @@
   }
 
   .queue-wrap{ flex:1 1 auto; min-width:0; }
-  .queue-wrap[hidden]{ display:none; }
-  .queue-label, .wall-label{
+  .queue-label{
     font-size:.75rem;
     font-weight:700;
     text-transform:uppercase;
@@ -345,80 +336,51 @@
     --size:26px;
     display:flex;
     flex-wrap:wrap;
+    align-content:flex-start;
     gap:6px;
-    max-height:calc(var(--size) * 2 + 20px);
+    max-height:calc(var(--size) * 3 + 26px);
     overflow-y:auto;
     padding:4px;
     border-radius:10px;
     background:var(--panel-2);
     scrollbar-width:thin;
   }
-  .rock{
+
+  /* One block per interval: starts as a rough boulder, is refined in place
+     into a diamond. Rough stones sit at random angles, cut ones sit straight. */
+  .block{
     width:var(--size);
     height:var(--size);
     flex:0 0 auto;
     transform: rotate(var(--rot,0deg));
     filter: hue-rotate(var(--hue,0deg));
-    transition: transform .18s ease, opacity .18s ease;
+    transition: transform .3s cubic-bezier(.34,1.56,.64,1);
   }
-  .rock svg{ width:100%; height:100%; display:block; }
-  .rock svg use{ fill:var(--stone); stroke:var(--stone-dark); stroke-width:1.5; }
-  .queue > .rock:first-child{
-    filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 0 var(--ring));
-    animation: ringPulse 1.4s ease-in-out infinite;
-  }
-  .queue > .rock:first-child svg use{ fill:var(--clay); }
+  .block svg{ width:100%; height:100%; display:block; }
+  .block svg use{ fill:var(--stone); stroke:var(--stone-dark); stroke-width:1.5; }
+
+  .block.next{ animation: ringPulse 1.4s ease-in-out infinite; }
+  .block.next svg use{ fill:var(--clay); }
   @keyframes ringPulse{
     0%,100%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 2px var(--ring)); }
     50%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 7px var(--ring)); }
   }
-  .rock.smash{
-    animation: smash .28s ease-in forwards;
-  }
-  @keyframes smash{
-    to{ transform: rotate(var(--rot,0deg)) scale(.2); opacity:0; }
-  }
 
-  .wall-wrap{ min-width:0; }
-  .wall{
-    --size:26px;
-    display:flex;
-    flex-wrap:wrap;
-    align-content:flex-start;
-    gap:4px;
-    max-height:calc(var(--size) * 2 + 20px);
-    overflow-y:auto;
-    padding:6px;
-    border-radius:10px;
-    background: var(--panel-2);
-    box-shadow: inset 0 2px 6px rgba(58,53,45,.18);
-    scrollbar-width:thin;
-  }
-  .wallSlot{
-    width:var(--size);
-    height:var(--size);
-    flex:0 0 auto;
-    opacity:0;
-    transform:scale(.4);
-    transition: opacity .3s ease, transform .3s cubic-bezier(.34,1.56,.64,1);
-  }
-  .wallSlot svg{ width:100%; height:100%; display:block; }
-  .wallSlot svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
-  .wallSlot.placed{
-    opacity:1;
-    transform:scale(1);
+  .block.refined{
+    transform: rotate(0deg);
     filter: drop-shadow(0 1px 1.5px rgba(58,53,45,.35));
   }
+  .block.refined svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
 
-  .flyingStone{
-    position:absolute;
-    opacity:.9;
-    transition: transform .32s cubic-bezier(.3,.7,.4,1), opacity .32s ease;
-    pointer-events:none;
-    z-index:5;
+  /* squashed by the hammer, then springs back out as a finished diamond */
+  .block.refining{ animation: refine .55s ease-in-out; }
+  @keyframes refine{
+    0%   { transform: rotate(var(--rot,0deg)) scale(1); }
+    32%  { transform: rotate(var(--rot,0deg)) scale(.2); }
+    34%  { transform: rotate(0deg) scale(.2); }
+    70%  { transform: rotate(0deg) scale(1.18); }
+    100% { transform: rotate(0deg) scale(1); }
   }
-  .flyingStone svg{ width:100%; height:100%; }
-  .flyingStone svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
 
   .particle{ position:absolute; pointer-events:none; z-index:6; transform:translate(-50%,-50%); }
   .particle.dust{
@@ -476,7 +438,8 @@
     .monster-svg.swinging .armHammer,
     .monster-svg.celebrate .armHammer,
     .monster-svg.celebrate .idleBob,
-    .queue > .rock:first-child{
+    .block.next,
+    .block.refining{
       animation:none !important;
     }
     .particle{ display:none; }
@@ -596,13 +559,9 @@
           </svg>
         </div>
         <div class="queue-wrap">
-          <p class="queue-label visually-hidden" id="queueLabel">Käsiteltävät lohkareet</p>
+          <p class="queue-label visually-hidden" id="queueLabel">Lohkareet ja niistä jalostetut timantit</p>
           <div class="queue" id="queue" aria-labelledby="queueLabel"></div>
         </div>
-      </div>
-      <div class="wall-wrap">
-        <p class="wall-label visually-hidden" id="wallLabel">Valmistuva muuri</p>
-        <div class="wall" id="wall" aria-labelledby="wallLabel"></div>
       </div>
     </div>
   </section>
@@ -657,7 +616,7 @@
   var totalBlocks = 0, processedBlocks = 0;
   var buildId = 0;
   var tickTimer = null, swingTimeout = null;
-  var wallSlots = [];
+  var blocks = [];
   var audioCtx = null;
   var reducedMotion = false;
 
@@ -671,8 +630,6 @@
   var resetBtn = document.getElementById("resetBtn");
   var soundBtn = document.getElementById("soundBtn");
   var queueEl = document.getElementById("queue");
-  var queueWrapEl = document.querySelector(".queue-wrap");
-  var wallEl = document.getElementById("wall");
   var sceneEl = document.getElementById("scene");
   var monsterEl = document.getElementById("monster");
   var completionEl = document.getElementById("completion");
@@ -743,45 +700,33 @@
     completionEl.setAttribute("aria-hidden","false");
   }
 
-  // Once the last boulder has been refined the queue box is just an empty
-  // frame, so fold it away and let the wall take the full width.
-  function updateQueueVisibility(){
-    queueWrapEl.hidden = (queueEl.children.length === 0);
-  }
-
   function buildBlocks(){
     buildId++;
     totalMs = minutes*60000;
     totalBlocks = Math.round(totalMs / MS_PER_BLOCK);
     processedBlocks = 0;
     accumulatedMs = 0;
-    queueEl.innerHTML = "";
-    wallEl.innerHTML = "";
-    wallSlots = [];
 
     var size = rockSize(totalBlocks);
     queueEl.style.setProperty("--size", size+"px");
-    wallEl.style.setProperty("--size", size+"px");
 
     // A 120-minute session is 720 blocks; building those one appendChild at a
     // time locks the page up for seconds, so assemble the markup as one string
-    // and hand the parser a single pass per container.
-    var rocks = new Array(totalBlocks);
-    var slot = '<div class="wallSlot"><svg viewBox="0 0 40 40"><use href="#cutStone"></use></svg></div>';
+    // and hand the parser a single pass.
+    var html = new Array(totalBlocks);
     for(var i=0;i<totalBlocks;i++){
-      rocks[i] = '<div class="rock" style="--rot:' + (Math.random()*30-15).toFixed(1) +
-                 'deg;--hue:' + (Math.random()*24-12).toFixed(1) +
-                 'deg"><svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg></div>';
+      html[i] = '<div class="block" style="--rot:' + (Math.random()*30-15).toFixed(1) +
+                'deg;--hue:' + (Math.random()*24-12).toFixed(1) +
+                'deg"><svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg></div>';
     }
-    queueEl.innerHTML = rocks.join("");
-    wallEl.innerHTML = new Array(totalBlocks + 1).join(slot);
-    wallSlots = Array.prototype.slice.call(wallEl.children);
+    queueEl.innerHTML = html.join("");
+    blocks = Array.prototype.slice.call(queueEl.children);
+    if(blocks[0]) blocks[0].classList.add("next");
 
     countEl.textContent = "0 / " + totalBlocks + " lohkaretta jalostettu";
     progressFill.style.width = "0%";
     progressTrack.setAttribute("aria-valuenow","0");
     timeEl.textContent = formatTime(totalMs);
-    updateQueueVisibility();
   }
 
   function ensureAudio(){
@@ -937,34 +882,30 @@
     for(var i3=0;i3<4;i3++) spawnParticle("chip", cx, cy);
   }
 
-  function flyStoneToWall(idx, rock){
-    var slot = wallSlots[idx];
-    if(slot) slot.classList.add("placed");
-    if(!rock || !slot) return;
-
-    var sceneRect = sceneEl.getBoundingClientRect();
-    var fromRect = rock.getBoundingClientRect();
-    var toRect = slot.getBoundingClientRect();
-
-    var clone = document.createElement("div");
-    clone.className = "flyingStone";
-    clone.style.width = fromRect.width+"px";
-    clone.style.height = fromRect.height+"px";
-    clone.style.left = (fromRect.left - sceneRect.left)+"px";
-    clone.style.top = (fromRect.top - sceneRect.top)+"px";
-    clone.style.opacity = "0.6";
-    clone.innerHTML = '<svg viewBox="0 0 40 40"><use href="#cutStone"></use></svg>';
-    sceneEl.appendChild(clone);
-
-    requestAnimationFrame(function(){
-      var dx = (toRect.left - sceneRect.left) - (fromRect.left - sceneRect.left);
-      var dy = (toRect.top - sceneRect.top) - (fromRect.top - sceneRect.top);
-      var scale = toRect.width / fromRect.width;
-      clone.style.transform = "translate("+dx+"px,"+dy+"px) scale("+scale+")";
-      clone.style.opacity = "0.95";
-    });
-    clone.addEventListener("transitionend", function(){ clone.remove(); }, {once:true});
-    setTimeout(function(){ if(clone.parentNode) clone.remove(); }, 500);
+  // Turn a boulder into a diamond where it already sits: swap the shape at the
+  // midpoint of the squash so it reads as one object being reworked, not as a
+  // stone vanishing and a gem appearing.
+  function refineBlock(block, animated, myBuildId){
+    if(!block) return;
+    var useEl = block.querySelector("use");
+    function toDiamond(){
+      if(useEl) useEl.setAttribute("href", "#cutStone");
+      block.classList.add("refined");
+    }
+    block.classList.remove("next");
+    if(!animated || reducedMotion){
+      toDiamond();
+      return;
+    }
+    block.classList.add("refining");
+    setTimeout(function(){
+      if(myBuildId !== buildId) return;
+      toDiamond();
+    }, 180);
+    setTimeout(function(){
+      if(myBuildId !== buildId) return;
+      block.classList.remove("refining");
+    }, 560);
   }
 
   function triggerHammer(){
@@ -979,31 +920,22 @@
     var idx = processedBlocks;
     var myBuildId = buildId;
     processedBlocks++;
+    var block = blocks[idx];
+    var nextBlock = blocks[idx+1];
+
     if(animated){
-      var rock = queueEl.firstElementChild;
       triggerHammer();
       setTimeout(function(){
         if(myBuildId !== buildId) return;
-        spawnParticles(rock);
+        spawnParticles(block);
         playHit();
-        if(rock){ rock.classList.add("smash"); }
-        flyStoneToWall(idx, rock);
-        setTimeout(function(){
-          if(myBuildId !== buildId) return;
-          if(rock && rock.parentNode) rock.remove();
-          if(isFinalBlock) finishNow();
-          // let the stone land before the emptied queue folds away, so the
-          // wall doesn't shift mid-flight
-          setTimeout(function(){
-            if(myBuildId === buildId) updateQueueVisibility();
-          }, 220);
-        }, 220);
+        refineBlock(block, true, myBuildId);
+        if(nextBlock) nextBlock.classList.add("next");
+        if(isFinalBlock) finishNow();
       }, HIT_DELAY);
     } else {
-      var slot = wallSlots[idx];
-      if(slot) slot.classList.add("placed");
-      if(queueEl.firstElementChild) queueEl.firstElementChild.remove();
-      updateQueueVisibility();
+      refineBlock(block, false, myBuildId);
+      if(nextBlock) nextBlock.classList.add("next");
       if(isFinalBlock) finishNow();
     }
   }
