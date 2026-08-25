@@ -28,6 +28,8 @@
     --stone-dark:#585245;
     --stone-light:#cdc3ad;
     --wall-stone-dark:#b7a67e;
+    --diamond:#8fc3ea;
+    --diamond-edge:#012169;
     --ring: rgba(252,165,199,.65);
     --radius:16px;
     --shadow: 0 6px 18px rgba(58,54,47,.18);
@@ -291,7 +293,7 @@
     0%,100%{ transform:translateY(0); }
     50%{ transform:translateY(-4px); }
   }
-  .monster-svg .armHammer{ transform-origin: 132px 92px; }
+  .monster-svg .armHammer{ transform-origin: 134px 94px; }
   .monster-svg.swinging .armHammer{ animation: hammerSwing .65s cubic-bezier(.34,1.4,.4,1) 1; }
   .monster-svg.swinging .idleBob{ animation-play-state: paused; }
   .monster-svg.swinging .lean{ animation: lean .65s ease-in-out 1; }
@@ -309,8 +311,8 @@
   .monster-svg.celebrate .armHammer{ animation: celebrateArm 1s ease-in-out infinite; }
   .monster-svg.celebrate .idleBob{ animation: celebrateBob .5s ease-in-out infinite; }
   @keyframes celebrateArm{
-    0%,100%{ transform: rotate(-70deg); }
-    50%{ transform: rotate(-95deg); }
+    0%,100%{ transform: rotate(-105deg); }
+    50%{ transform: rotate(-125deg); }
   }
   @keyframes celebrateBob{
     0%,100%{ transform:translateY(0); }
@@ -388,7 +390,7 @@
     transition: opacity .3s ease, transform .3s cubic-bezier(.34,1.56,.64,1);
   }
   .wallSlot svg{ width:100%; height:100%; display:block; }
-  .wallSlot svg use{ fill:var(--wall-stone-dark); stroke:var(--stone-dark); stroke-width:1.6; }
+  .wallSlot svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
   .wallSlot.placed{
     opacity:1;
     transform:scale(1);
@@ -403,7 +405,7 @@
     z-index:5;
   }
   .flyingStone svg{ width:100%; height:100%; }
-  .flyingStone svg use{ fill:var(--wall-stone-dark); stroke:var(--stone-dark); stroke-width:1.6; }
+  .flyingStone svg use{ fill:var(--diamond); stroke:var(--diamond-edge); stroke-width:1.6; }
 
   .particle{ position:absolute; pointer-events:none; z-index:6; transform:translate(-50%,-50%); }
   .particle.dust{
@@ -559,17 +561,17 @@
                 <!-- belly patch -->
                 <ellipse cx="104" cy="118" rx="34" ry="26" fill="#c9c0a9" opacity=".55"/>
                 <!-- face -->
-                <ellipse cx="88" cy="90" rx="9" ry="10" fill="#faf6ec"/>
-                <ellipse cx="124" cy="88" rx="9" ry="10" fill="#faf6ec"/>
-                <circle cx="90" cy="93" r="4" fill="#3a3530"/>
-                <circle cx="126" cy="91" r="4" fill="#3a3530"/>
-                <path d="M78,76 C83,71 92,71 96,75" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
-                <path d="M114,73 C119,69 128,69 133,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
-                <path d="M92,112 C102,120 116,120 126,111" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+                <ellipse cx="80" cy="90" rx="9" ry="10" fill="#faf6ec"/>
+                <ellipse cx="112" cy="88" rx="9" ry="10" fill="#faf6ec"/>
+                <circle cx="82" cy="93" r="4" fill="#3a3530"/>
+                <circle cx="114" cy="91" r="4" fill="#3a3530"/>
+                <path d="M70,76 C75,71 84,71 88,75" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M102,73 C107,69 116,69 121,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M84,112 C94,120 108,120 118,111" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
                 <!-- front arm + hammer -->
                 <g class="armHammer">
-                  <path d="M132,92 C148,92 160,102 162,118 C163,128 158,134 150,136" fill="none" stroke="#8f887a" stroke-width="16" stroke-linecap="round"/>
-                  <g transform="translate(150,136) rotate(28)">
+                  <path d="M134,94 C150,94 162,104 164,120 C165,130 160,136 152,138" fill="none" stroke="#8f887a" stroke-width="16" stroke-linecap="round"/>
+                  <g transform="translate(152,138) rotate(28)">
                     <rect x="-5" y="-4" width="46" height="10" rx="4" fill="#7c5a3a"/>
                     <rect x="36" y="-24" width="20" height="48" rx="5" fill="#726c5c" stroke="#3a3530" stroke-width="3"/>
                     <rect x="39" y="-19" width="6" height="38" fill="#8f887a" opacity=".6"/>
@@ -765,10 +767,32 @@
       audioCtx = new Ctx();
     }
     if(audioCtx.state === "suspended"){
-      audioCtx.resume();
+      try{ audioCtx.resume(); }catch(e){}
     }
     return audioCtx;
   }
+
+  // Browsers only let audio start from a real user gesture, and some (iOS
+  // Safari especially) stay muted until a buffer has actually been played.
+  // Prime the context on the first interaction so the end-of-session melody
+  // is guaranteed to be audible minutes later.
+  function primeAudio(){
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    try{
+      var buf = ctx.createBuffer(1, 1, ctx.sampleRate);
+      var src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+    }catch(e){}
+    if(ctx.state === "running"){
+      document.removeEventListener("pointerdown", primeAudio, true);
+      document.removeEventListener("keydown", primeAudio, true);
+    }
+  }
+  document.addEventListener("pointerdown", primeAudio, true);
+  document.addEventListener("keydown", primeAudio, true);
 
   function playHit(){
     if(!soundOn) return;
@@ -782,8 +806,8 @@
     osc.frequency.setValueAtTime(190, t);
     osc.frequency.exponentialRampToValueAtTime(55, t+0.16);
     gain.gain.setValueAtTime(0.0001, t);
-    gain.gain.exponentialRampToValueAtTime(0.45, t+0.01);
-    gain.gain.exponentialRampToValueAtTime(0.0001, t+0.22);
+    gain.gain.exponentialRampToValueAtTime(0.3, t+0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t+0.26);
     osc.connect(gain).connect(ctx.destination);
     osc.start(t); osc.stop(t+0.24);
 
@@ -797,7 +821,7 @@
       var hp = ctx.createBiquadFilter();
       hp.type = "highpass"; hp.frequency.value = 900;
       var noiseGain = ctx.createGain();
-      noiseGain.gain.setValueAtTime(0.28, t);
+      noiseGain.gain.setValueAtTime(0.16, t);
       noiseGain.gain.exponentialRampToValueAtTime(0.001, t+0.08);
       noise.connect(hp).connect(noiseGain).connect(ctx.destination);
       noise.start(t);
@@ -808,20 +832,56 @@
     if(!soundOn) return;
     var ctx = ensureAudio();
     if(!ctx) return;
-    var notes = [392.00, 523.25, 659.25, 783.99, 1046.50];
-    var t0 = ctx.currentTime;
-    notes.forEach(function(f, i){
-      var start = t0 + i*0.16;
-      var osc = ctx.createOscillator();
-      var gain = ctx.createGain();
-      osc.type = "triangle";
-      osc.frequency.value = f;
-      gain.gain.setValueAtTime(0.0001, start);
-      gain.gain.exponentialRampToValueAtTime(0.26, start+0.02);
-      gain.gain.exponentialRampToValueAtTime(0.0001, start+0.55);
-      osc.connect(gain).connect(ctx.destination);
-      osc.start(start); osc.stop(start+0.6);
-    });
+    // A suspended context silently drops anything scheduled on it, so wait for
+    // the resume to land before laying down the notes.
+    if(ctx.state === "suspended"){
+      try{ ctx.resume().then(scheduleMelody).catch(function(){}); }catch(e){}
+    } else {
+      scheduleMelody();
+    }
+
+    function scheduleMelody(){
+      var master = ctx.createGain();
+      master.gain.value = 1;
+      var warm = ctx.createBiquadFilter();
+      warm.type = "lowpass";
+      warm.frequency.value = 2600;
+      warm.Q.value = 0.7;
+      master.connect(warm).connect(ctx.destination);
+
+      // Soft bell: sine fundamental with a gentle attack and a long tail,
+      // plus a quiet octave above for a little shimmer.
+      function bell(freq, start, dur, peak){
+        var osc = ctx.createOscillator();
+        var gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.0001, start);
+        gain.gain.linearRampToValueAtTime(peak, start+0.06);
+        gain.gain.exponentialRampToValueAtTime(0.0001, start+dur);
+        osc.connect(gain).connect(master);
+        osc.start(start); osc.stop(start+dur+0.05);
+
+        var osc2 = ctx.createOscillator();
+        var gain2 = ctx.createGain();
+        osc2.type = "sine";
+        osc2.frequency.value = freq*2;
+        gain2.gain.setValueAtTime(0.0001, start);
+        gain2.gain.linearRampToValueAtTime(peak*0.16, start+0.06);
+        gain2.gain.exponentialRampToValueAtTime(0.0001, start+dur*0.6);
+        osc2.connect(gain2).connect(master);
+        osc2.start(start); osc2.stop(start+dur+0.05);
+      }
+
+      var t0 = ctx.currentTime + 0.06;
+      [523.25, 659.25, 783.99].forEach(function(f, i){
+        bell(f, t0 + i*0.26, 1.2, 0.22);
+      });
+      // settles into a warm C major chord
+      bell(1046.50, t0+0.78, 2.0, 0.18);
+      bell(659.25,  t0+0.78, 2.2, 0.12);
+      bell(392.00,  t0+0.78, 2.4, 0.10);
+    }
   }
 
   function spawnParticle(type, cx, cy){
