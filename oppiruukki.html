@@ -267,17 +267,26 @@
   .scene-panel{ padding:14px 10px; }
   .scene{ position:relative; }
 
+  /* The ruukkimestari stands over the stone it is working on, so it is taken
+     out of flow and moved to the active block; the padding is its headroom. */
   .quarry{
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
+    position:relative;
+    padding-top:64px;
+    /* the creature reaches ~62px left of its hammer, so the stones are
+       indented enough for it to stand over the first one too */
+    padding-left:46px;
     min-width:0;
   }
 
   .monster-stage{
-    flex:0 0 auto;
-    width:96px;
-    height:96px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:72px;
+    height:72px;
+    pointer-events:none;
+    transition: transform .45s cubic-bezier(.34,1.25,.64,1);
+    will-change: transform;
   }
   .monster-svg{ width:100%; height:100%; overflow:visible; }
   .monster-svg .idleBob{ animation: bob 2.6s ease-in-out infinite; transform-origin:center; }
@@ -323,7 +332,6 @@
     50%{ transform:translateY(-7px); }
   }
 
-  .queue-wrap{ flex:1 1 auto; min-width:0; }
   .queue-label{
     font-size:.75rem;
     font-weight:700;
@@ -334,6 +342,7 @@
   }
   .queue{
     --size:26px;
+    position:relative; /* blocks measure their offsets against this box */
     display:flex;
     flex-wrap:wrap;
     align-content:flex-start;
@@ -521,7 +530,7 @@
   <section class="panel scene-panel" aria-label="Kivenlouhimo">
     <div class="scene" id="scene">
       <div class="quarry">
-        <div class="monster-stage">
+        <div class="monster-stage" id="monsterStage">
           <svg class="monster-svg idleBob" id="monster" viewBox="0 0 200 200" role="img" aria-label="Ruukkimestari-kivihirviö">
             <g class="lean">
               <g class="idleBob">
@@ -558,10 +567,8 @@
             </g>
           </svg>
         </div>
-        <div class="queue-wrap">
-          <p class="queue-label visually-hidden" id="queueLabel">Lohkareet ja niistä jalostetut timantit</p>
-          <div class="queue" id="queue" aria-labelledby="queueLabel"></div>
-        </div>
+        <p class="queue-label visually-hidden" id="queueLabel">Lohkareet ja niistä jalostetut timantit</p>
+        <div class="queue" id="queue" aria-labelledby="queueLabel"></div>
       </div>
     </div>
   </section>
@@ -632,6 +639,7 @@
   var queueEl = document.getElementById("queue");
   var sceneEl = document.getElementById("scene");
   var monsterEl = document.getElementById("monster");
+  var monsterStage = document.getElementById("monsterStage");
   var completionEl = document.getElementById("completion");
   var completionText = document.getElementById("completionText");
   var customInput = document.getElementById("customMinutes");
@@ -700,6 +708,53 @@
     completionEl.setAttribute("aria-hidden","false");
   }
 
+  // Where the hammer head sits inside the monster's box, as a fraction of it.
+  // Measured from the real artwork so the creature lines up over the stone
+  // however the SVG is later tweaked.
+  var hammerSpot = null;
+  function measureHammer(){
+    try{
+      var arm = monsterEl.querySelector(".armHammer");
+      var box = arm.getBBox();
+      var vb = monsterEl.viewBox.baseVal;
+      hammerSpot = {
+        x: (box.x + box.width * 0.82) / vb.width,
+        y: (box.y + box.height) / vb.height
+      };
+    }catch(e){
+      hammerSpot = { x: 0.86, y: 0.78 };
+    }
+  }
+
+  // Park the ruukkimestari directly above the stone it is about to work on,
+  // scrolling that row into view if the queue has grown past its box.
+  function positionMonster(){
+    var block = blocks[Math.min(processedBlocks, blocks.length - 1)];
+    if(!block) return;
+    if(!hammerSpot) measureHammer();
+
+    var top = block.offsetTop;
+    var bottom = top + block.offsetHeight;
+    if(top < queueEl.scrollTop){
+      queueEl.scrollTop = top;
+    } else if(bottom > queueEl.scrollTop + queueEl.clientHeight){
+      queueEl.scrollTop = bottom - queueEl.clientHeight;
+    }
+
+    var w = monsterStage.offsetWidth, h = monsterStage.offsetHeight;
+    var x = queueEl.offsetLeft + block.offsetLeft + block.offsetWidth/2 - hammerSpot.x * w;
+    var y = queueEl.offsetTop + block.offsetTop - queueEl.scrollTop - hammerSpot.y * h;
+    var maxX = queueEl.offsetLeft + queueEl.clientWidth - w * 0.5;
+    x = Math.max(0, Math.min(x, maxX));
+    monsterStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+  }
+
+  var repositionTimer = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(repositionTimer);
+    repositionTimer = setTimeout(positionMonster, 120);
+  });
+
   function buildBlocks(){
     buildId++;
     totalMs = minutes*60000;
@@ -727,6 +782,8 @@
     progressFill.style.width = "0%";
     progressTrack.setAttribute("aria-valuenow","0");
     timeEl.textContent = formatTime(totalMs);
+    queueEl.scrollTop = 0;
+    positionMonster();
   }
 
   function ensureAudio(){
@@ -762,40 +819,6 @@
   }
   document.addEventListener("pointerdown", primeAudio, true);
   document.addEventListener("keydown", primeAudio, true);
-
-  function playHit(){
-    if(!soundOn) return;
-    var ctx = ensureAudio();
-    if(!ctx) return;
-    var t = ctx.currentTime;
-
-    var osc = ctx.createOscillator();
-    var gain = ctx.createGain();
-    osc.type = "sine";
-    osc.frequency.setValueAtTime(190, t);
-    osc.frequency.exponentialRampToValueAtTime(55, t+0.16);
-    gain.gain.setValueAtTime(0.0001, t);
-    gain.gain.exponentialRampToValueAtTime(0.3, t+0.012);
-    gain.gain.exponentialRampToValueAtTime(0.0001, t+0.26);
-    osc.connect(gain).connect(ctx.destination);
-    osc.start(t); osc.stop(t+0.24);
-
-    try{
-      var bufferSize = Math.floor(ctx.sampleRate*0.08);
-      var buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-      var data = buffer.getChannelData(0);
-      for(var i=0;i<bufferSize;i++){ data[i] = (Math.random()*2-1) * (1 - i/bufferSize); }
-      var noise = ctx.createBufferSource();
-      noise.buffer = buffer;
-      var hp = ctx.createBiquadFilter();
-      hp.type = "highpass"; hp.frequency.value = 900;
-      var noiseGain = ctx.createGain();
-      noiseGain.gain.setValueAtTime(0.16, t);
-      noiseGain.gain.exponentialRampToValueAtTime(0.001, t+0.08);
-      noise.connect(hp).connect(noiseGain).connect(ctx.destination);
-      noise.start(t);
-    }catch(e){}
-  }
 
   function playMelody(){
     if(!soundOn) return;
@@ -928,13 +951,17 @@
       setTimeout(function(){
         if(myBuildId !== buildId) return;
         spawnParticles(block);
-        playHit();
         refineBlock(block, true, myBuildId);
         if(nextBlock) nextBlock.classList.add("next");
+        // let the squash read before the creature steps to the next stone
+        setTimeout(function(){
+          if(myBuildId === buildId) positionMonster();
+        }, 200);
         if(isFinalBlock) finishNow();
       }, HIT_DELAY);
     } else {
       refineBlock(block, false, myBuildId);
+      positionMonster();
       if(nextBlock) nextBlock.classList.add("next");
       if(isFinalBlock) finishNow();
     }
