@@ -97,15 +97,6 @@
     font-size:.82rem;
     color:var(--ink-soft);
   }
-  .tagline{
-    margin:2px 2px 0;
-    font-size:.85rem;
-    font-style:italic;
-    color:var(--ink-soft);
-    border-left:3px solid var(--fire-orange);
-    padding-left:8px;
-  }
-
   /* ---------- Panels ---------- */
   .panel{
     background:var(--panel);
@@ -238,6 +229,16 @@
   #pauseBtn{ background:var(--fire-orange); color:#3a2a12; }
   #resetBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
   #soundBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; margin-left:auto; }
+  .controls .icon-btn{
+    padding:10px;
+    min-width:44px;
+    min-height:44px;
+    font-size:1.25rem;
+    line-height:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
 
   /* ---------- Completion banner ---------- */
   .completion{
@@ -470,18 +471,21 @@
 <div class="app">
 
   <header class="brand">
-    <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="Oppiruukin tunnus">
-      <circle cx="16" cy="30" r="11" fill="#ff6a5f"/>
-      <circle cx="30" cy="26" r="14" fill="#c8433f"/>
-      <circle cx="24" cy="14" r="9" fill="#e8863a"/>
+    <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="Kiviruukin lukion tunnus">
+      <circle cx="6" cy="42" r="3.5" fill="#c8433f"/>
+      <g stroke="#c8433f" stroke-width="4.5" stroke-linecap="round" fill="none">
+        <line x1="6" y1="42" x2="32" y2="42"/>
+        <line x1="6" y1="42" x2="30" y2="32"/>
+        <line x1="6" y1="42" x2="24.4" y2="23.6"/>
+        <line x1="6" y1="42" x2="16" y2="18"/>
+        <line x1="6" y1="42" x2="6" y2="16"/>
+      </g>
     </svg>
     <div class="brand-text">
       <h1>OPPIRUUKKI</h1>
       <p>Kiviruukin lukion keskittymisajastin</p>
     </div>
   </header>
-
-  <p class="tagline">Kivi on perusta. Ruukissa työ jalostuu tulokseksi.</p>
 
   <section class="panel" aria-labelledby="durationHeading">
     <p id="durationHeading" class="group-label">Valitse jakson pituus</p>
@@ -504,16 +508,16 @@
     <div class="progressTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Jakson eteneminen" id="progressTrack">
       <div class="progressFill" id="progressFill"></div>
     </div>
-    <p class="blockCount" id="blockCount">0 / 25 lohkaretta jalostettu</p>
+    <p class="blockCount visually-hidden" id="blockCount">0 / 25 lohkaretta jalostettu</p>
     <p class="status-live" id="statusLive" aria-live="polite"></p>
   </section>
 
   <section class="panel">
     <div class="controls">
       <button type="button" id="startBtn">▶ Aloita</button>
-      <button type="button" id="pauseBtn" disabled>⏸ Keskeytä</button>
-      <button type="button" id="resetBtn">↺ Nollaa</button>
-      <button type="button" id="soundBtn" aria-pressed="true">🔊 Äänet päällä</button>
+      <button type="button" id="pauseBtn" class="icon-btn" disabled aria-label="Keskeytä">⏸</button>
+      <button type="button" id="resetBtn" class="icon-btn" aria-label="Nollaa">↺</button>
+      <button type="button" id="soundBtn" class="icon-btn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
     </div>
   </section>
 
@@ -564,12 +568,12 @@
           </svg>
         </div>
         <div class="queue-wrap">
-          <p class="queue-label" id="queueLabel">Käsiteltävät lohkareet</p>
+          <p class="queue-label visually-hidden" id="queueLabel">Käsiteltävät lohkareet</p>
           <div class="queue" id="queue" aria-labelledby="queueLabel"></div>
         </div>
       </div>
       <div class="wall-wrap">
-        <p class="wall-label" id="wallLabel">Valmistuva muuri</p>
+        <p class="wall-label visually-hidden" id="wallLabel">Valmistuva muuri</p>
         <div class="wall" id="wall" aria-labelledby="wallLabel"></div>
       </div>
     </div>
@@ -906,7 +910,8 @@
     var busy = (state === "running" || state === "paused");
     startBtn.disabled = busy;
     pauseBtn.disabled = (state === "idle" || state === "finished");
-    pauseBtn.textContent = state === "paused" ? "▶ Jatka" : "⏸ Keskeytä";
+    pauseBtn.textContent = state === "paused" ? "▶" : "⏸";
+    pauseBtn.setAttribute("aria-label", state === "paused" ? "Jatka" : "Keskeytä");
     presetButtons.forEach(function(b){ b.disabled = busy; });
     customInput.disabled = busy;
     applyCustomBtn.disabled = busy;
@@ -1029,7 +1034,8 @@
 
   function updateSoundBtn(){
     soundBtn.setAttribute("aria-pressed", soundOn ? "true" : "false");
-    soundBtn.textContent = soundOn ? "🔊 Äänet päällä" : "🔇 Äänet pois";
+    soundBtn.textContent = soundOn ? "🔊" : "🔇";
+    soundBtn.setAttribute("aria-label", soundOn ? "Äänet päällä" : "Äänet pois");
   }
   soundBtn.addEventListener("click", function(){
     soundOn = !soundOn;
