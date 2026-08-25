@@ -18,18 +18,17 @@
     --panel-2:#f2ecdd;
     --ink:#3a3530;
     --ink-soft:#6c6459;
-    --clay:#b1552e;
-    --brick:#96392a;
-    --brick-dark:#7c2e22;
+    --clay:#ff6a5f;
+    --brick:#c8433f;
+    --brick-dark:#9c2f2c;
     --fire-orange:#e8863a;
     --fire-yellow:#f2b705;
     --green:#5f7a52;
     --stone:#8f887a;
     --stone-dark:#585245;
     --stone-light:#cdc3ad;
-    --wall-stone:#d9c9a8;
     --wall-stone-dark:#b7a67e;
-    --ring: rgba(232,134,58,.55);
+    --ring: rgba(255,106,95,.55);
     --radius:16px;
     --shadow: 0 6px 18px rgba(58,54,47,.18);
     --focus: #2e2a24;
@@ -253,6 +252,13 @@
   .completion[hidden]{ display:none; }
   .completion h2{ margin:0 0 4px; font-size:1.3rem; }
   .completion p{ margin:0; font-size:.95rem; font-weight:600; }
+  .completion-sub{
+    margin-top:4px !important;
+    font-size:.82rem !important;
+    font-weight:500 !important;
+    font-style:italic;
+    opacity:.85;
+  }
 
   /* ---------- Scene ---------- */
   .scene-panel{ padding:14px 10px; }
@@ -368,8 +374,8 @@
     overflow-y:auto;
     padding:6px;
     border-radius:10px;
-    background: linear-gradient(180deg, var(--wall-stone) 0%, var(--wall-stone-dark) 100%);
-    box-shadow: inset 0 2px 6px rgba(58,53,45,.25);
+    background: var(--panel-2);
+    box-shadow: inset 0 2px 6px rgba(58,53,45,.18);
     scrollbar-width:thin;
   }
   .wallSlot{
@@ -381,8 +387,12 @@
     transition: opacity .3s ease, transform .3s cubic-bezier(.34,1.56,.64,1);
   }
   .wallSlot svg{ width:100%; height:100%; display:block; }
-  .wallSlot svg use{ fill:var(--stone-light); stroke:var(--stone-dark); stroke-width:1; }
-  .wallSlot.placed{ opacity:1; transform:scale(1); }
+  .wallSlot svg use{ fill:var(--wall-stone-dark); stroke:var(--stone-dark); stroke-width:1.6; }
+  .wallSlot.placed{
+    opacity:1;
+    transform:scale(1);
+    filter: drop-shadow(0 1px 1.5px rgba(58,53,45,.35));
+  }
 
   .flyingStone{
     position:absolute;
@@ -392,7 +402,7 @@
     z-index:5;
   }
   .flyingStone svg{ width:100%; height:100%; }
-  .flyingStone svg use{ fill:var(--stone-light); stroke:var(--stone-dark); stroke-width:1; }
+  .flyingStone svg use{ fill:var(--wall-stone-dark); stroke:var(--stone-dark); stroke-width:1.6; }
 
   .particle{ position:absolute; pointer-events:none; z-index:6; transform:translate(-50%,-50%); }
   .particle.dust{
@@ -461,8 +471,8 @@
 
   <header class="brand">
     <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="Oppiruukin tunnus">
-      <circle cx="16" cy="30" r="11" fill="#b1552e"/>
-      <circle cx="30" cy="26" r="14" fill="#96392a"/>
+      <circle cx="16" cy="30" r="11" fill="#ff6a5f"/>
+      <circle cx="30" cy="26" r="14" fill="#c8433f"/>
       <circle cx="24" cy="14" r="9" fill="#e8863a"/>
     </svg>
     <div class="brand-text">
@@ -510,6 +520,7 @@
   <div class="completion" id="completion" hidden aria-hidden="true">
     <h2>Ruukki on valmis!</h2>
     <p id="completionText">Jalostit 25 minuuttia osaamiseksi.</p>
+    <p class="completion-sub">Ruukki on valmis – aika jalostui osaamiseksi.</p>
   </div>
 
   <section class="panel scene-panel" aria-label="Kivenlouhimo">
@@ -568,9 +579,11 @@
     <summary>Miksi Kiviruukki?</summary>
     <p>
       Kivi on kestävä perusta ja vähitellen rakentuva osaaminen. Ruukki juontuu ruotsin sanasta
-      <em>bruk</em> ja tarkoittaa työpaikkaa, jossa raaka-aine jalostetaan valmiiksi tuotteeksi —
+      <em>bruk</em> ja tarkoittaa paikkaa, jossa raaka-aine jalostetaan valmiiksi tuotteeksi —
       Kiviruukin alueen historia liittyy Stensvikin tiilitehtaaseen ja sen käyttämään saveen.
-      Tässä sovelluksessa aika on raaka-aine, keskittyminen on työ ja osaaminen on valmis tuote.
+      Samalla tavalla Kiviruukin lukiossa opiskellaan tavoitteellisesti ja kokeillaan rohkeasti
+      uutta, yhdessä. Tässä sovelluksessa aika on raaka-aine, keskittyminen on työ ja jokainen
+      jalostettu lohkare on askel kohti omaa osaamista.
     </p>
   </details>
 
@@ -609,6 +622,7 @@
   var state = "idle"; // idle | running | paused | finished
   var totalMs = 0, accumulatedMs = 0, startEpoch = 0;
   var totalBlocks = 0, processedBlocks = 0;
+  var buildId = 0;
   var tickTimer = null, swingTimeout = null;
   var wallSlots = [];
   var audioCtx = null;
@@ -694,6 +708,7 @@
   }
 
   function buildBlocks(){
+    buildId++;
     totalBlocks = minutes;
     totalMs = minutes*60000;
     processedBlocks = 0;
@@ -860,23 +875,30 @@
     swingTimeout = setTimeout(function(){ monsterEl.classList.remove("swinging"); }, 680);
   }
 
-  function processBlock(animated){
+  function processBlock(animated, isFinalBlock){
     var idx = processedBlocks;
+    var myBuildId = buildId;
     processedBlocks++;
     if(animated){
       var rock = queueEl.firstElementChild;
       triggerHammer();
       setTimeout(function(){
+        if(myBuildId !== buildId) return;
         spawnParticles(rock);
         playHit();
         if(rock){ rock.classList.add("smash"); }
         flyStoneToWall(idx, rock);
-        setTimeout(function(){ if(rock && rock.parentNode) rock.remove(); }, 220);
+        setTimeout(function(){
+          if(myBuildId !== buildId) return;
+          if(rock && rock.parentNode) rock.remove();
+          if(isFinalBlock) finishNow();
+        }, 220);
       }, HIT_DELAY);
     } else {
       var slot = wallSlots[idx];
       if(slot) slot.classList.add("placed");
       if(queueEl.firstElementChild) queueEl.firstElementChild.remove();
+      if(isFinalBlock) finishNow();
     }
   }
 
@@ -905,14 +927,11 @@
     if(targetBlock > processedBlocks){
       while(processedBlocks < targetBlock){
         var isLast = (processedBlocks + 1 === targetBlock);
-        processBlock(isLast);
+        var isFinal = (processedBlocks + 1 === totalBlocks);
+        processBlock(isLast, isFinal);
       }
     }
     countEl.textContent = processedBlocks + " / " + totalBlocks + " lohkaretta jalostettu";
-
-    if(elapsed >= totalMs && state === "running"){
-      finish();
-    }
   }
 
   function start(){
@@ -955,8 +974,8 @@
     announce("Ajastin nollattu.");
   }
 
-  function finish(){
-    while(processedBlocks < totalBlocks){ processBlock(false); }
+  function finishNow(){
+    if(state === "finished") return;
     clearInterval(tickTimer); tickTimer = null;
     state = "finished";
     timeEl.textContent = "00:00";
