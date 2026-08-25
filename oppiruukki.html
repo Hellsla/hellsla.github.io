@@ -320,6 +320,7 @@
   }
 
   .queue-wrap{ flex:1 1 auto; min-width:0; }
+  .queue-wrap[hidden]{ display:none; }
   .queue-label, .wall-label{
     font-size:.75rem;
     font-weight:700;
@@ -656,6 +657,7 @@
   var resetBtn = document.getElementById("resetBtn");
   var soundBtn = document.getElementById("soundBtn");
   var queueEl = document.getElementById("queue");
+  var queueWrapEl = document.querySelector(".queue-wrap");
   var wallEl = document.getElementById("wall");
   var sceneEl = document.getElementById("scene");
   var monsterEl = document.getElementById("monster");
@@ -725,6 +727,12 @@
     completionEl.setAttribute("aria-hidden","false");
   }
 
+  // Once the last boulder has been refined the queue box is just an empty
+  // frame, so fold it away and let the wall take the full width.
+  function updateQueueVisibility(){
+    queueWrapEl.hidden = (queueEl.children.length === 0);
+  }
+
   function buildBlocks(){
     buildId++;
     totalBlocks = minutes;
@@ -758,6 +766,7 @@
     progressFill.style.width = "0%";
     progressTrack.setAttribute("aria-valuenow","0");
     timeEl.textContent = formatTime(totalMs);
+    updateQueueVisibility();
   }
 
   function ensureAudio(){
@@ -968,12 +977,18 @@
           if(myBuildId !== buildId) return;
           if(rock && rock.parentNode) rock.remove();
           if(isFinalBlock) finishNow();
+          // let the stone land before the emptied queue folds away, so the
+          // wall doesn't shift mid-flight
+          setTimeout(function(){
+            if(myBuildId === buildId) updateQueueVisibility();
+          }, 220);
         }, 220);
       }, HIT_DELAY);
     } else {
       var slot = wallSlots[idx];
       if(slot) slot.classList.add("placed");
       if(queueEl.firstElementChild) queueEl.firstElementChild.remove();
+      updateQueueVisibility();
       if(isFinalBlock) finishNow();
     }
   }
