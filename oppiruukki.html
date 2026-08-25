@@ -147,11 +147,10 @@
     background:var(--panel-2);
     border:2px solid var(--stone-light);
     border-radius:999px;
-    padding:4px 6px 4px 12px;
+    padding:4px 5px 4px 10px;
   }
-  .custom-wrap label{ font-size:.85rem; color:var(--ink-soft); white-space:nowrap; }
   .custom-wrap input{
-    width:56px;
+    width:62px;
     border:none;
     background:transparent;
     font-size:.95rem;
@@ -269,11 +268,11 @@
 
   /* The ruukkimestari stands over the stone it is working on, so it is taken
      out of flow and moved to the active block; the padding is its headroom. */
+  /* padding-top/left are set from script: they are the creature's headroom and
+     its reach to the left of its hammer, both of which scale with the stones */
   .quarry{
     position:relative;
     padding-top:64px;
-    /* the creature reaches ~62px left of its hammer, so the stones are
-       indented enough for it to stand over the first one too */
     padding-left:46px;
     min-width:0;
   }
@@ -353,17 +352,17 @@
     color:var(--ink-soft);
     margin:0 0 6px;
   }
+  /* Every stone of the session is on screen at once - the sizes are computed
+     to fit rather than clipped behind a scrollbar. */
   .queue{
     --size:26px;
+    --gap:6px;
     position:relative; /* blocks measure their offsets against this box */
     display:flex;
     flex-wrap:wrap;
     align-content:flex-start;
-    gap:6px;
-    max-height:calc(var(--size) * 3 + 26px);
-    overflow-y:auto;
+    gap:var(--gap);
     padding:4px;
-    scrollbar-width:thin;
   }
 
   /* One block per interval: starts as a rough boulder, is refined in place
@@ -519,8 +518,8 @@
       <button type="button" class="preset-btn" data-minutes="45" aria-pressed="false">45 min</button>
       <button type="button" class="preset-btn" data-minutes="60" aria-pressed="false">60 min</button>
       <div class="custom-wrap">
-        <label for="customMinutes">Oma aika (1–120 min)</label>
-        <input type="number" id="customMinutes" min="1" max="120" inputmode="numeric" placeholder="—" />
+        <label class="visually-hidden" for="customMinutes">Oma aika minuutteina, 1–120</label>
+        <input type="number" id="customMinutes" min="1" max="120" inputmode="numeric" placeholder="1–120" />
         <button type="button" id="applyCustomBtn">Aseta</button>
       </div>
     </div>
@@ -712,6 +711,7 @@
   var resetBtn = document.getElementById("resetBtn");
   var soundBtn = document.getElementById("soundBtn");
   var queueEl = document.getElementById("queue");
+  var quarryEl = document.querySelector(".quarry");
   var sceneEl = document.getElementById("scene");
   var monsterEl = document.getElementById("monster");
   var monsterStage = document.getElementById("monsterStage");
@@ -758,14 +758,41 @@
     return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;
   }
 
-  function rockSize(total){
-    if(total<=10) return 34;
-    if(total<=20) return 28;
-    if(total<=35) return 24;
-    if(total<=60) return 18;
-    if(total<=120) return 14;
-    if(total<=300) return 11;
-    return 9;
+  // Nothing scrolls, so the stones are sized to fit: take the largest stone
+  // whose rows still land inside the height budget. The creature is scaled off
+  // that same number, and the quarry's padding is its headroom and its reach to
+  // the left of the hammer, so a 120-minute grid of dots gets a small worker
+  // and a 5-minute row of boulders gets a big one.
+  var MAX_GRID_H = 240, MAX_STONE = 34, MIN_STONE = 6;
+  function applyScale(){
+    var n = blocks.length || totalBlocks || 1;
+    if(!hammerSpot) measureHammer();
+    var totalW = sceneEl.clientWidth || 320;
+    var pick = null;
+
+    for(var s = MAX_STONE; s >= MIN_STONE; s--){
+      var gap = Math.max(2, Math.round(s * 0.18));
+      var mon = Math.min(76, Math.max(22, Math.round(s * 2.2)));
+      var padL = Math.max(0, Math.ceil(hammerSpot.x * mon - 4 - s/2));
+      var perRow = Math.max(1, Math.floor((totalW - padL - 8 + gap) / (s + gap)));
+      var rows = Math.ceil(n / perRow);
+      if(rows * (s + gap) - gap <= MAX_GRID_H){
+        pick = { s:s, gap:gap, mon:mon, padL:padL };
+        break;
+      }
+    }
+    if(!pick){
+      var mon0 = 22;
+      pick = { s:MIN_STONE, gap:2, mon:mon0,
+               padL:Math.max(0, Math.ceil(hammerSpot.x * mon0 - 4 - MIN_STONE/2)) };
+    }
+
+    queueEl.style.setProperty("--size", pick.s + "px");
+    queueEl.style.setProperty("--gap", pick.gap + "px");
+    monsterStage.style.width = pick.mon + "px";
+    monsterStage.style.height = pick.mon + "px";
+    quarryEl.style.paddingLeft = pick.padL + "px";
+    quarryEl.style.paddingTop = Math.ceil(hammerSpot.y * pick.mon + 2) + "px";
   }
 
   function announce(text){
@@ -808,24 +835,15 @@
     }
   }
 
-  // Park the ruukkimestari directly above the stone it is about to work on,
-  // scrolling that row into view if the queue has grown past its box.
+  // Park the ruukkimestari directly above the stone it is about to work on.
   function positionMonster(){
     var block = blocks[Math.min(processedBlocks, blocks.length - 1)];
     if(!block) return;
     if(!hammerSpot) measureHammer();
 
-    var top = block.offsetTop;
-    var bottom = top + block.offsetHeight;
-    if(top < queueEl.scrollTop){
-      queueEl.scrollTop = top;
-    } else if(bottom > queueEl.scrollTop + queueEl.clientHeight){
-      queueEl.scrollTop = bottom - queueEl.clientHeight;
-    }
-
     var w = monsterStage.offsetWidth, h = monsterStage.offsetHeight;
     var x = queueEl.offsetLeft + block.offsetLeft + block.offsetWidth/2 - hammerSpot.x * w;
-    var y = queueEl.offsetTop + block.offsetTop - queueEl.scrollTop - hammerSpot.y * h;
+    var y = queueEl.offsetTop + block.offsetTop - hammerSpot.y * h;
     var maxX = queueEl.offsetLeft + queueEl.clientWidth - w * 0.5;
     x = Math.max(0, Math.min(x, maxX));
     monsterStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
@@ -834,7 +852,10 @@
   var repositionTimer = null;
   window.addEventListener("resize", function(){
     clearTimeout(repositionTimer);
-    repositionTimer = setTimeout(positionMonster, 120);
+    repositionTimer = setTimeout(function(){
+      applyScale();
+      positionMonster();
+    }, 120);
   });
 
   function buildBlocks(){
@@ -843,9 +864,6 @@
     totalBlocks = Math.round(totalMs / MS_PER_BLOCK);
     processedBlocks = 0;
     accumulatedMs = 0;
-
-    var size = rockSize(totalBlocks);
-    queueEl.style.setProperty("--size", size+"px");
 
     // A 120-minute session is 720 blocks; building those one appendChild at a
     // time locks the page up for seconds, so assemble the markup as one string
@@ -864,7 +882,7 @@
     progressFill.style.width = "0%";
     progressTrack.setAttribute("aria-valuenow","0");
     timeEl.textContent = formatTime(totalMs);
-    queueEl.scrollTop = 0;
+    applyScale();
     positionMonster();
   }
 
