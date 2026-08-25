@@ -81,14 +81,25 @@
   header.brand{
     display:flex;
     align-items:center;
-    gap:12px;
+    flex-wrap:wrap;
+    gap:8px 12px;
     padding:6px 2px 0;
   }
-  .brand-mark{ width:58px; height:36px; flex:0 0 auto; }
+  .brand-mark{ width:50px; height:31px; flex:0 0 auto; }
+  .brand-text{ min-width:0; }
   .brand-text h1{ margin:0; line-height:0; }
-  .wordmark{ width:180px; height:auto; display:block; }
-  .brand-text p{
-    margin:2px 0 0;
+  .wordmark{ width:150px; height:auto; display:block; }
+  .brand-side{
+    margin-left:auto;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:8px;
+  }
+  .brand-side p{
+    margin:0;
+    white-space:nowrap;
     font-size:.82rem;
     color:var(--ink-soft);
   }
@@ -209,7 +220,7 @@
     gap:8px;
     justify-content:center;
   }
-  .controls button{
+  .controls button, #soundBtn{
     border:none;
     border-radius:12px;
     padding:12px 18px;
@@ -218,13 +229,13 @@
     box-shadow:var(--shadow);
     transition: transform .1s, filter .15s;
   }
-  .controls button:hover:not(:disabled){ filter:brightness(1.06); }
-  .controls button:active:not(:disabled){ transform:scale(.97); }
+  .controls button:hover:not(:disabled), #soundBtn:hover{ filter:brightness(1.06); }
+  .controls button:active:not(:disabled), #soundBtn:active{ transform:scale(.97); }
   #startBtn{ background:var(--brick); color:#fff; }
-  #pauseBtn{ background:var(--fire-orange); color:#3a2a12; }
+  #pauseBtn{ background:var(--clay); color:var(--brick); }
   #resetBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
-  #soundBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; margin-left:auto; }
-  .controls .icon-btn{
+  #soundBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
+  button.icon-btn{
     padding:10px;
     min-width:44px;
     min-height:44px;
@@ -489,7 +500,10 @@
           <path fill="#000" d="M972.39,839.42c-35.98,0-58.86-29.32-58.86-66.41s22.88-66.41,58.86-66.41,58.86,29.32,58.86,66.41-22.88,66.41-58.86,66.41ZM972.39,727.92c-23.77,0-35.09,20.21-35.09,45.09s11.33,45.09,35.09,45.09,35.09-20.21,35.09-45.09-11.33-45.09-35.09-45.09Z"/>
         </svg>
       </h1>
+    </div>
+    <div class="brand-side">
       <p>Keskittymisajastin</p>
+      <button type="button" id="soundBtn" class="icon-btn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
     </div>
   </header>
 
@@ -523,7 +537,6 @@
       <button type="button" id="startBtn">▶ Aloita</button>
       <button type="button" id="pauseBtn" class="icon-btn" disabled aria-label="Keskeytä">⏸</button>
       <button type="button" id="resetBtn" class="icon-btn" aria-label="Nollaa">↺</button>
-      <button type="button" id="soundBtn" class="icon-btn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
     </div>
   </section>
 
