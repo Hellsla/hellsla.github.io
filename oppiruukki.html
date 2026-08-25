@@ -30,7 +30,7 @@
     --wall-stone-dark:#b7a67e;
     --diamond:#8fc3ea;
     --diamond-edge:#012169;
-    --ring: rgba(252,165,199,.65);
+    --ring: rgba(58,53,45,.5);
     --radius:16px;
     --shadow: 0 6px 18px rgba(58,54,47,.18);
     --focus: #2e2a24;
@@ -371,11 +371,12 @@
   .block svg{ width:100%; height:100%; display:block; }
   .block svg use{ fill:var(--stone); stroke:var(--stone-dark); stroke-width:1.5; }
 
-  .block.next{ animation: ringPulse 1.4s ease-in-out infinite; }
-  .block.next svg use{ fill:var(--clay); }
+  /* the stone under the hammer keeps the same grey as the rest - the creature
+     standing over it and its spreading cracks are what mark it */
+  .block.next{ animation: ringPulse 1.6s ease-in-out infinite; }
   @keyframes ringPulse{
-    0%,100%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 2px var(--ring)); }
-    50%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 7px var(--ring)); }
+    0%,100%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 1px var(--ring)); }
+    50%{ filter: hue-rotate(var(--hue,0deg)) drop-shadow(0 0 5px var(--ring)); }
   }
 
   .block.refined{
@@ -606,7 +607,20 @@
       <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
       <path d="M12,16 L20,12 M22,20 L30,24" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
     </symbol>
-    <symbol id="crackedRock" viewBox="0 0 40 40">
+    <!-- the same boulder, splitting further the longer it is worked -->
+    <symbol id="rockCrack1" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M12,16 L20,12 M22,20 L30,24" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      <path d="M19,3 L15,15 L23,20"
+            fill="none" stroke="rgba(0,0,0,.42)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="rockCrack2" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M12,16 L20,12" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      <path d="M19,3 L15,15 L23,20 L18,27 M15,15 L5,12"
+            fill="none" stroke="rgba(0,0,0,.46)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="rockCrack3" viewBox="0 0 40 40">
       <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
       <path d="M19,3 L15,15 L23,20 L18,27 L21,38 M15,15 L5,12 M23,20 L35,16 M18,27 L7,30"
             fill="none" stroke="rgba(0,0,0,.5)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
@@ -931,13 +945,34 @@
     for(var i3=0;i3<Math.round(4*s);i3++) spawnParticle("chip", cx, cy);
   }
 
-  // First blow: the stone splits but holds together.
-  function crackBlock(block){
-    if(!block) return;
-    block.classList.remove("next");
+  // The stone under the hammer splits further the longer it is worked, so the
+  // 10 seconds read as steady progress rather than a sudden flip at the end.
+  var CRACK_STEPS = [0.28, 0.52, 0.76];
+  function updateCracks(elapsed){
+    var block = blocks[processedBlocks];
+    if(!block || block.classList.contains("refined") || block.classList.contains("refining")) return;
+    var frac = (elapsed - processedBlocks * MS_PER_BLOCK) / MS_PER_BLOCK;
+    var stage = 0;
+    for(var i=0;i<CRACK_STEPS.length;i++){ if(frac >= CRACK_STEPS[i]) stage = i+1; }
+    if(block.crackStage === stage) return;
+    var deepened = stage > (block.crackStage || 0);
+    block.crackStage = stage;
+
     var useEl = block.querySelector("use");
-    if(useEl) useEl.setAttribute("href", "#crackedRock");
-    if(!reducedMotion) block.classList.add("cracking");
+    if(useEl) useEl.setAttribute("href", stage ? "#rockCrack" + stage : "#roughRock");
+    if(!deepened || reducedMotion) return;
+
+    // each new fissure is the result of a blow, so swing for it
+    triggerHammer();
+    var myBuildId = buildId;
+    setTimeout(function(){
+      if(myBuildId !== buildId || block.classList.contains("refined")) return;
+      spawnParticles(block, 0.35);
+      block.classList.remove("cracking");
+      void block.offsetWidth;
+      block.classList.add("cracking");
+      setTimeout(function(){ block.classList.remove("cracking"); }, 430);
+    }, HIT_DELAY);
   }
 
   // Turn a boulder into a diamond where it already sits: swap the shape at the
@@ -983,24 +1018,19 @@
     var nextBlock = blocks[idx+1];
 
     if(animated){
-      // two blows: the first cracks the stone open, the second finishes it
+      // the stone has been splitting all interval; this is the blow that frees
+      // the diamond
       triggerHammer();
       setTimeout(function(){
         if(myBuildId !== buildId) return;
-        crackBlock(block);
-        spawnParticles(block, 0.5);
-        triggerHammer();
+        spawnParticles(block, 1.4);
+        refineBlock(block, true, myBuildId);
+        if(nextBlock) nextBlock.classList.add("next");
+        // let the squash read before the creature steps to the next stone
         setTimeout(function(){
-          if(myBuildId !== buildId) return;
-          spawnParticles(block, 1.4);
-          refineBlock(block, true, myBuildId);
-          if(nextBlock) nextBlock.classList.add("next");
-          // let the squash read before the creature steps to the next stone
-          setTimeout(function(){
-            if(myBuildId === buildId) positionMonster();
-          }, 200);
-          if(isFinalBlock) finishNow();
-        }, HIT_DELAY);
+          if(myBuildId === buildId) positionMonster();
+        }, 200);
+        if(isFinalBlock) finishNow();
       }, HIT_DELAY);
     } else {
       refineBlock(block, false, myBuildId);
@@ -1041,6 +1071,7 @@
       }
     }
     countEl.textContent = processedBlocks + " / " + totalBlocks + " lohkaretta jalostettu";
+    if(state === "running") updateCracks(clampedElapsed);
   }
 
   function start(){
