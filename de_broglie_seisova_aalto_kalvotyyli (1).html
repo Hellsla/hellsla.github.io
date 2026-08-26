@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>de Broglie -aalto ympyräradalla</title>
+<style>
+  :root{
+    --ink:#3F3D39;
+    --soft:#8A8882;
+    --wave:#2E86A6;
+    --bad:#D84A62;
+    --paper:#FFFFFF;
+  }
+
+  *{box-sizing:border-box}
+
+  html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif;
+  }
+
+  body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+
+  .sim{
+    width:min(100vw,1000px);
+    height:min(100vh,580px);
+    padding:18px 24px 14px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  svg{
+    width:100%;
+    flex:1 1 auto;
+    min-height:0;
+    display:block;
+  }
+
+  .controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+    min-height:46px;
+  }
+
+  .group{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  label,.readout,button{
+    font-size:15px;
+    color:var(--ink);
+  }
+
+  .readout{
+    min-width:66px;
+    font-variant-numeric:tabular-nums;
+  }
+
+  input[type="range"]{
+    width:210px;
+    accent-color:var(--ink);
+  }
+
+  button{
+    appearance:none;
+    border:1.5px solid var(--ink);
+    background:#fff;
+    border-radius:7px;
+    padding:7px 12px;
+    cursor:pointer;
+    box-shadow:1px 1px 0 rgba(63,61,57,.16);
+  }
+
+  button:active{
+    transform:translate(1px,1px);
+    box-shadow:none;
+  }
+
+  .orbit{
+    fill:none;
+    stroke:var(--soft);
+    stroke-width:1.2;
+    stroke-dasharray:5 7;
+  }
+
+  .radius{
+    stroke:var(--soft);
+    stroke-width:1.1;
+  }
+
+  .wave{
+    fill:none;
+    stroke:var(--wave);
+    stroke-width:2.4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .tail{
+    fill:none;
+    stroke:var(--bad);
+    stroke-width:2;
+    stroke-dasharray:5 5;
+    stroke-linecap:round;
+  }
+
+  .nucleus{
+    fill:var(--ink);
+  }
+
+  .start{
+    fill:var(--wave);
+  }
+
+  .end{
+    fill:var(--bad);
+  }
+
+  .tiny{
+    font-size:13px;
+    fill:var(--soft);
+  }
+
+  @media (max-width:700px){
+    .sim{padding:10px 12px}
+    input[type="range"]{width:145px}
+    label,.readout,button{font-size:13px}
+  }
+</style>
+</head>
+<body>
+<div class="sim">
+  <svg viewBox="0 0 900 470" role="img" aria-labelledby="ttl dsc">
+    <title id="ttl">de Broglie -aalto ympyräradalla</title>
+    <desc id="dsc">Elektronin aineaalto kiertää ympyrärataa. Kokonaislukuisilla kierrosluvuilla aalto sulkeutuu itseensä.</desc>
+
+    <circle cx="450" cy="220" r="132" class="orbit"/>
+    <line x1="450" y1="220" x2="582" y2="220" class="radius"/>
+    <text x="516" y="210" text-anchor="middle" class="tiny">r</text>
+
+    <circle cx="450" cy="220" r="6" class="nucleus"/>
+
+    <path id="wave" class="wave"/>
+    <path id="tail" class="tail"/>
+
+    <circle id="startdot" cx="582" cy="220" r="4.5" class="start"/>
+    <circle id="enddot" cx="582" cy="220" r="4.5" class="end" opacity="0"/>
+  </svg>
+
+  <div class="controls">
+    <div class="group">
+      <label for="nslider">Kierrosluku n</label>
+      <input id="nslider" type="range" min="0.5" max="6" step="0.05" value="3">
+      <span id="nout" class="readout">n = 3,00</span>
+    </div>
+    <button id="snap">Kokonaisluku</button>
+    <button id="play">Pysäytä</button>
+    <button id="reset">Nollaa</button>
+  </div>
+</div>
+
+<script>
+(() => {
+  const cx = 450, cy = 220, R = 132, A = 28, TAU = Math.PI * 2;
+
+  const wave = document.getElementById("wave");
+  const tail = document.getElementById("tail");
+  const startdot = document.getElementById("startdot");
+  const enddot = document.getElementById("enddot");
+  const slider = document.getElementById("nslider");
+  const nout = document.getElementById("nout");
+  const playBtn = document.getElementById("play");
+
+  let n = 3;
+  let playing = true;
+  let t = 0;
+  let last = performance.now();
+
+  function point(theta, radialOffset){
+    const rr = R + radialOffset;
+    return [
+      cx + rr * Math.cos(theta),
+      cy - rr * Math.sin(theta)
+    ];
+  }
+
+  function buildPath(from, to, phase){
+    const pieces = [];
+    const N = 420;
+    for(let i=0;i<=N;i++){
+      const th = from + (to-from)*i/N;
+      const radialOffset = A * Math.sin(n*th) * phase;
+      const [x,y] = point(th, radialOffset);
+      pieces.push((i ? "L" : "M") + x.toFixed(2) + " " + y.toFixed(2));
+    }
+    return pieces.join(" ");
+  }
+
+  function isClosed(){
+    return Math.abs(n - Math.round(n)) < 0.03;
+  }
+
+  function draw(){
+    const phase = Math.cos(t);
+    wave.setAttribute("d", buildPath(0, TAU, phase));
+
+    const closed = isClosed();
+    const dEnd = A * Math.sin(n*TAU) * phase;
+    const [ex,ey] = point(0, dEnd);
+
+    enddot.setAttribute("cx", ex.toFixed(2));
+    enddot.setAttribute("cy", ey.toFixed(2));
+    enddot.setAttribute("opacity", closed ? "0" : "1");
+
+    startdot.setAttribute("cx", (cx+R).toFixed(2));
+    startdot.setAttribute("cy", cy.toFixed(2));
+
+    if(closed){
+      tail.setAttribute("d","");
+      tail.setAttribute("opacity","0");
+      wave.style.opacity = "1";
+    }else{
+      tail.setAttribute("d", buildPath(TAU, TAU+0.72, phase));
+      tail.setAttribute("opacity","0.82");
+      wave.style.opacity = "0.88";
+    }
+  }
+
+  function updateReadout(){
+    nout.textContent = "n = " + n.toFixed(2).replace(".",",");
+  }
+
+  function reset(){
+    n = 3;
+    slider.value = "3";
+    t = 0;
+    playing = true;
+    playBtn.textContent = "Pysäytä";
+    updateReadout();
+    draw();
+  }
+
+  slider.addEventListener("input", e => {
+    n = parseFloat(e.target.value);
+    updateReadout();
+    draw();
+  });
+
+  document.getElementById("snap").addEventListener("click", () => {
+    n = Math.max(1, Math.round(n));
+    slider.value = n;
+    updateReadout();
+    draw();
+  });
+
+  playBtn.addEventListener("click", () => {
+    playing = !playing;
+    playBtn.textContent = playing ? "Pysäytä" : "Käynnistä";
+  });
+
+  document.getElementById("reset").addEventListener("click", reset);
+
+  function loop(now){
+    const dt = (now-last)/1000;
+    last = now;
+    if(playing) t += dt*2.2;
+    draw();
+    requestAnimationFrame(loop);
+  }
+
+  reset();
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

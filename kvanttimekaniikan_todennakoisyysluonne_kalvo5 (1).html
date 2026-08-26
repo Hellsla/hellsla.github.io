@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kvanttimekaniikan todennäköisyysluonne</title>
+<style>
+  :root{
+    --ink:#3F3D39;
+    --soft:#8A8882;
+    --grid:#D8D7D2;
+    --paper:#FFFFFF;
+    --electron:#2E86A6;
+    --accent:#D84A62;
+    --shade:#F4F4F4;
+  }
+
+  *{box-sizing:border-box}
+  html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif;
+  }
+
+  body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+
+  .sim{
+    width:min(100vw,1100px);
+    height:min(100vh,620px);
+    padding:18px 24px 14px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  svg{
+    width:100%;
+    flex:1 1 auto;
+    min-height:0;
+    display:block;
+  }
+
+  .controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+    min-height:48px;
+  }
+
+  .group{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  label,.readout,button{
+    font-size:15px;
+    color:var(--ink);
+  }
+
+  .readout{
+    min-width:112px;
+    font-variant-numeric:tabular-nums;
+  }
+
+  button{
+    appearance:none;
+    border:1.5px solid var(--ink);
+    background:#fff;
+    border-radius:7px;
+    padding:7px 12px;
+    cursor:pointer;
+    box-shadow:1px 1px 0 rgba(63,61,57,.16);
+  }
+
+  button:active{transform:translate(1px,1px);box-shadow:none}
+
+  input[type="range"]{
+    width:170px;
+    accent-color:var(--ink);
+  }
+
+  .sketch{
+    fill:none;
+    stroke:var(--ink);
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .soft{
+    fill:none;
+    stroke:var(--soft);
+    stroke-width:1.2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .hatch{
+    stroke:var(--soft);
+    stroke-width:1;
+    opacity:.34;
+  }
+
+  .electron{fill:var(--electron)}
+  .hit{fill:var(--ink);opacity:.78}
+  .wave{
+    fill:none;
+    stroke:var(--electron);
+    stroke-width:1.5;
+    opacity:.24;
+  }
+
+  .density{
+    fill:none;
+    stroke:var(--accent);
+    stroke-width:2;
+    opacity:.55;
+  }
+
+  .sr-only{
+    position:absolute;
+    width:1px;height:1px;
+    padding:0;margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;border:0;
+  }
+
+  @media (max-width:720px){
+    .sim{padding:10px 12px}
+    .controls{gap:8px}
+    input[type="range"]{width:125px}
+    label,.readout,button{font-size:13px}
+  }
+</style>
+</head>
+<body>
+<div class="sim">
+  <div class="sr-only">Kaksoisrakokoe. Elektronit havaitaan yksittäisinä pisteinä, joista muodostuu vähitellen interferenssijakauma. Raon leveyden muuttaminen muuttaa jakauman leviämistä.</div>
+
+  <svg id="scene" viewBox="0 0 980 500" role="img" aria-labelledby="svgTitle svgDesc">
+    <title id="svgTitle">Elektronien kaksoisrakokoe</title>
+    <desc id="svgDesc">Elektronilähde vasemmalla, kaksoisrako keskellä ja havaintopisteet oikealla. Pisteet muodostavat vähitellen interferenssijakauman.</desc>
+
+    <defs>
+      <pattern id="pencilHatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(24)">
+        <line x1="0" y1="0" x2="0" y2="10" class="hatch"/>
+      </pattern>
+      <clipPath id="screenClip">
+        <rect x="744" y="52" width="150" height="394" rx="2"/>
+      </clipPath>
+    </defs>
+
+    <!-- lähde -->
+    <path d="M82 218 Q71 250 82 282" class="sketch"/>
+    <path d="M88 221 Q80 250 88 279" class="soft"/>
+    <circle cx="105" cy="250" r="7" class="electron"/>
+    <path d="M117 250 C165 247 194 253 238 250" class="soft" stroke-dasharray="4 7"/>
+
+    <!-- aaltojen kevyt hahmotelma -->
+    <path id="waveTop1" class="wave"/>
+    <path id="waveTop2" class="wave"/>
+    <path id="waveBot1" class="wave"/>
+    <path id="waveBot2" class="wave"/>
+
+    <!-- kaksoisrako -->
+    <g id="barrier">
+      <rect x="394" y="55" width="26" height="390" fill="url(#pencilHatch)" stroke="none"/>
+      <path d="M394 55 L394 445 M420 55 L420 445" class="sketch"/>
+      <rect id="slitTop" x="391" y="179" width="32" height="34" fill="#fff"/>
+      <rect id="slitBottom" x="391" y="287" width="32" height="34" fill="#fff"/>
+      <path id="slitTopA" class="sketch"/>
+      <path id="slitTopB" class="sketch"/>
+      <path id="slitBottomA" class="sketch"/>
+      <path id="slitBottomB" class="sketch"/>
+    </g>
+
+    <!-- havaintoruutu -->
+    <rect x="744" y="52" width="150" height="394" fill="#fff"/>
+    <path d="M744 52 Q747 250 744 446 M894 52 Q891 250 894 446" class="sketch"/>
+    <path d="M752 52 Q755 250 752 446 M886 52 Q883 250 886 446" class="soft"/>
+    <g id="hits" clip-path="url(#screenClip)"></g>
+
+    <!-- jakauman kevyt viiva -->
+    <path id="density" class="density"/>
+
+    <!-- yksi juuri havaittu elektroni -->
+    <circle id="flash" cx="805" cy="250" r="5" class="electron" opacity="0"/>
+  </svg>
+
+  <div class="controls">
+    <div class="group">
+      <label for="slitWidth">Raon leveys</label>
+      <input id="slitWidth" type="range" min="0.55" max="1.8" step="0.01" value="1.00">
+    </div>
+
+    <span id="count" class="readout">Havaintoja 0</span>
+
+    <div class="group">
+      <button id="one">Yksi</button>
+      <button id="many">100</button>
+      <button id="reset">Nollaa</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const svgNS = "http://www.w3.org/2000/svg";
+  const hits = document.getElementById("hits");
+  const count = document.getElementById("count");
+  const slit = document.getElementById("slitWidth");
+  const flash = document.getElementById("flash");
+  const density = document.getElementById("density");
+
+  const topRect = document.getElementById("slitTop");
+  const bottomRect = document.getElementById("slitBottom");
+  const topA = document.getElementById("slitTopA");
+  const topB = document.getElementById("slitTopB");
+  const bottomA = document.getElementById("slitBottomA");
+  const bottomB = document.getElementById("slitBottomB");
+
+  let observations = 0;
+  let flashTimer = null;
+
+  const screenTop = 64;
+  const screenBottom = 434;
+  const screenMid = (screenTop + screenBottom) / 2;
+  const screenHalf = (screenBottom - screenTop) / 2;
+
+  function sinc(x){
+    return Math.abs(x) < 1e-8 ? 1 : Math.sin(x)/x;
+  }
+
+  // Yksinkertaistettu kaksoisrakomalli:
+  // interferenssi * yhden raon diffraktiovaippa.
+  function probability(yNorm){
+    const width = parseFloat(slit.value);
+    const beta = 3.15 * width;
+    const envelope = Math.pow(sinc(beta * yNorm), 2);
+    const fringes = Math.pow(Math.cos(7.15 * Math.PI * yNorm), 2);
+    return envelope * fringes;
+  }
+
+  function sampleY(){
+    for(let i=0;i<5000;i++){
+      const y = Math.random()*2 - 1;
+      if(Math.random() < probability(y)) return y;
+    }
+    return 0;
+  }
+
+  function addObservation(showFlash=true){
+    const yNorm = sampleY();
+    const y = screenMid + yNorm*screenHalf;
+    const x = 766 + Math.random()*103;
+
+    const dot = document.createElementNS(svgNS,"circle");
+    dot.setAttribute("cx", x.toFixed(1));
+    dot.setAttribute("cy", y.toFixed(1));
+    dot.setAttribute("r", (1.5 + Math.random()*0.9).toFixed(1));
+    dot.setAttribute("class","hit");
+    hits.appendChild(dot);
+
+    observations++;
+    count.textContent = "Havaintoja " + observations;
+
+    if(showFlash){
+      flash.setAttribute("cx", x.toFixed(1));
+      flash.setAttribute("cy", y.toFixed(1));
+      flash.setAttribute("opacity","1");
+      clearTimeout(flashTimer);
+      flashTimer = setTimeout(() => flash.setAttribute("opacity","0"), 130);
+    }
+  }
+
+  function addMany(n){
+    let i = 0;
+    function batch(){
+      for(let j=0;j<10 && i<n;j++,i++) addObservation(i === n-1);
+      if(i<n) requestAnimationFrame(batch);
+    }
+    batch();
+  }
+
+  function reset(){
+    hits.innerHTML = "";
+    observations = 0;
+    count.textContent = "Havaintoja 0";
+    flash.setAttribute("opacity","0");
+  }
+
+  function drawSlits(){
+    const w = parseFloat(slit.value);
+    const h = 22 + w*22;
+    const topCenter = 196;
+    const bottomCenter = 304;
+    const tY = topCenter - h/2;
+    const bY = bottomCenter - h/2;
+
+    topRect.setAttribute("y",tY.toFixed(1));
+    topRect.setAttribute("height",h.toFixed(1));
+    bottomRect.setAttribute("y",bY.toFixed(1));
+    bottomRect.setAttribute("height",h.toFixed(1));
+
+    topA.setAttribute("d",`M394 55 L394 ${tY.toFixed(1)}`);
+    topB.setAttribute("d",`M394 ${(tY+h).toFixed(1)} L394 445`);
+    bottomA.setAttribute("d",`M420 55 L420 ${tY.toFixed(1)} M420 ${(tY+h).toFixed(1)} L420 ${bY.toFixed(1)}`);
+    bottomB.setAttribute("d",`M420 ${(bY+h).toFixed(1)} L420 445`);
+
+    drawDensity();
+    drawWaves();
+  }
+
+  function drawDensity(){
+    let d = "";
+    const scale = 58;
+    const points = 260;
+    for(let i=0;i<=points;i++){
+      const yNorm = -1 + 2*i/points;
+      const y = screenMid + yNorm*screenHalf;
+      const p = probability(yNorm);
+      const x = 739 - p*scale;
+      d += (i===0 ? "M" : "L") + x.toFixed(1) + " " + y.toFixed(1) + " ";
+    }
+    density.setAttribute("d",d);
+  }
+
+  function arcPath(cx,cy,r,start,end){
+    const x1 = cx + r*Math.cos(start), y1 = cy + r*Math.sin(start);
+    const x2 = cx + r*Math.cos(end), y2 = cy + r*Math.sin(end);
+    return `M${x1.toFixed(1)} ${y1.toFixed(1)} A${r} ${r} 0 0 1 ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+  }
+
+  function drawWaves(){
+    const top = {x:422,y:196};
+    const bot = {x:422,y:304};
+    const waveIds = ["waveTop1","waveTop2","waveBot1","waveBot2"];
+    const origins = [top,top,bot,bot];
+    const radii = [78,148,78,148];
+
+    waveIds.forEach((id,i)=>{
+      const o = origins[i];
+      const r = radii[i];
+      const angle = i < 2 ? 0.67 : -0.67;
+      const d = arcPath(o.x,o.y,r,-angle,angle);
+      document.getElementById(id).setAttribute("d",d);
+    });
+  }
+
+  document.getElementById("one").addEventListener("click",()=>addObservation(true));
+  document.getElementById("many").addEventListener("click",()=>addMany(100));
+  document.getElementById("reset").addEventListener("click",reset);
+  slit.addEventListener("input",()=>{
+    reset();
+    drawSlits();
+  });
+
+  drawSlits();
+})();
+</script>
+</body>
+</html>
