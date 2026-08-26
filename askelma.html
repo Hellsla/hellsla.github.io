@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#1f5f5b" />
+<meta name="description" content="Askelma – Matinkylän lukion keskittymisajastin. Hiiri kiipeää portaita, yksi askelma kymmenessä sekunnissa." />
+<meta name="robots" content="noindex, nofollow" />
+<title>Askelma – Matinkylän lukion keskittymisajastin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef1ea;
+    --panel:#f9fbf6;
+    --panel-2:#e8ede2;
+    --ink:#2f352f;
+    --ink-soft:#626b60;
+    --deep:#1f5f5b;
+    --deep-dark:#164a47;
+    --amber:#e0a02c;
+    --step-todo:#c9d1c4;
+    --step-done:#7fa88a;
+    --step-now:#e0a02c;
+    --mouse:#8d8b86;
+    --mouse-dark:#5f5d59;
+    --mouse-ear:#e0a9af;
+    --radius:16px;
+    --shadow: 0 6px 18px rgba(47,53,47,.16);
+    --focus:#26302a;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    min-height:100%;
+    background:
+      radial-gradient(circle at 18% 20%, rgba(255,255,255,.6), transparent 42%),
+      radial-gradient(circle at 84% 70%, rgba(31,95,91,.06), transparent 45%),
+      var(--bg);
+    color:var(--ink);
+    font-family:"Karla", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+
+  .timer, .completion h2, .controls button, .preset-btn, .brand-text h1{
+    font-family:"Nunito", system-ui, "Segoe UI", Arial, sans-serif;
+  }
+
+  body{ display:flex; justify-content:center; padding:14px 12px 28px; }
+
+  .app{
+    width:100%;
+    max-width:640px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  a, button, input{ font-family:inherit; }
+  button{ cursor:pointer; }
+  button:disabled{ cursor:not-allowed; opacity:.5; }
+
+  :focus-visible{
+    outline:3px solid var(--focus);
+    outline-offset:2px;
+    border-radius:6px;
+  }
+
+  /* ---------- Header ---------- */
+  header.brand{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px 12px;
+    padding:6px 2px 0;
+  }
+  .brand-mark{ width:46px; height:40px; flex:0 0 auto; }
+  .brand-text{ min-width:0; }
+  .brand-text h1{
+    margin:0;
+    font-size:1.3rem;
+    line-height:1.05;
+    letter-spacing:.02em;
+    color:var(--deep);
+    font-weight:800;
+  }
+  .brand-text p{
+    margin:2px 0 0;
+    font-size:.8rem;
+    color:var(--ink-soft);
+  }
+  .brand-side{ margin-left:auto; min-width:0; }
+
+  /* ---------- Panels ---------- */
+  .panel{
+    background:var(--panel);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:14px;
+  }
+
+  /* ---------- Time picker ---------- */
+  .duration-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:center;
+  }
+  .group-label{
+    font-size:.78rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--ink-soft);
+    width:100%;
+    margin:0 0 2px;
+  }
+  .preset-btn{
+    border:2px solid var(--step-todo);
+    background:var(--panel-2);
+    color:var(--ink);
+    border-radius:999px;
+    padding:8px 14px;
+    font-size:.95rem;
+    font-weight:700;
+    transition:background .15s, border-color .15s, color .15s, transform .1s;
+  }
+  .preset-btn:hover:not(:disabled){ border-color:var(--deep); }
+  .preset-btn:active:not(:disabled){ transform:scale(.96); }
+  .preset-btn[aria-pressed="true"]{
+    background:var(--deep);
+    border-color:var(--deep);
+    color:#fff;
+  }
+  .custom-wrap{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:var(--panel-2);
+    border:2px solid var(--step-todo);
+    border-radius:999px;
+    padding:4px 5px 4px 10px;
+  }
+  .custom-wrap input{
+    width:62px;
+    border:none;
+    background:transparent;
+    font-size:.95rem;
+    color:var(--ink);
+    padding:6px 2px;
+  }
+  .custom-wrap button{
+    border:none;
+    background:var(--amber);
+    color:#4a3208;
+    border-radius:999px;
+    padding:7px 12px;
+    font-size:.85rem;
+    font-weight:700;
+  }
+  .custom-wrap button:hover:not(:disabled){ background:var(--deep); color:#fff; }
+
+  /* ---------- Timer ---------- */
+  .timer-panel{ text-align:center; }
+  .timer{
+    font-size:clamp(3rem, 15vw, 4.6rem);
+    font-weight:800;
+    color:var(--deep-dark);
+    font-variant-numeric:tabular-nums;
+    line-height:1;
+    margin:2px 0 6px;
+  }
+  .progressTrack{
+    height:12px;
+    border-radius:999px;
+    background:var(--panel-2);
+    box-shadow:inset 0 0 0 2px var(--step-todo);
+    overflow:hidden;
+    margin:8px 0;
+  }
+  .progressFill{
+    height:100%;
+    width:0%;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--step-done), var(--amber));
+    transition:width .25s linear;
+  }
+
+  /* ---------- Controls ---------- */
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+  }
+  .controls button, #soundBtn{
+    border:none;
+    border-radius:12px;
+    padding:12px 18px;
+    font-size:1rem;
+    font-weight:700;
+    box-shadow:var(--shadow);
+    transition:transform .1s, filter .15s;
+  }
+  .controls button:hover:not(:disabled), #soundBtn:hover{ filter:brightness(1.06); }
+  .controls button:active:not(:disabled), #soundBtn:active{ transform:scale(.97); }
+  #startBtn{ background:var(--deep); color:#fff; }
+  #pauseBtn{ background:var(--amber); color:#4a3208; }
+  #resetBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--step-todo) !important; }
+  #soundBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--step-todo) !important; }
+  button.icon-btn{
+    padding:10px;
+    min-width:44px;
+    min-height:44px;
+    font-size:1.25rem;
+    line-height:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* ---------- Completion ---------- */
+  .completion{
+    text-align:center;
+    background:linear-gradient(135deg, var(--amber), var(--step-done));
+    color:#26301f;
+    border-radius:var(--radius);
+    padding:14px;
+    box-shadow:var(--shadow);
+    font-weight:700;
+  }
+  .completion[hidden]{ display:none; }
+  .completion h2{ margin:0 0 4px; font-size:1.3rem; }
+  .completion p{ margin:0; font-size:.95rem; font-weight:600; }
+
+  /* ---------- Stairwell ----------
+     The flights zig-zag: every other one runs back the other way, the way a
+     stairwell doubles back on itself, so a long session still fits on screen
+     without a scrollbar. Sizes are solved in script. */
+  .scene-panel{ padding:14px 10px; }
+  .stairwell{
+    position:relative;
+    min-width:0;
+  }
+  .stairs{
+    position:relative;
+    width:100%;
+  }
+  .step{
+    position:absolute;
+    border-radius:2px;
+    background:var(--step-todo);
+    transition:background .25s ease;
+  }
+  .step.done{ background:var(--step-done); }
+  .step.now{
+    background:linear-gradient(90deg, var(--step-now) var(--fill,0%), var(--step-todo) var(--fill,0%));
+  }
+  .step.now.rev{
+    background:linear-gradient(270deg, var(--step-now) var(--fill,0%), var(--step-todo) var(--fill,0%));
+  }
+
+  .mouse-stage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height:40px;
+    pointer-events:none;
+    z-index:3;
+    transition:transform .4s cubic-bezier(.34,1.2,.64,1);
+    will-change:transform;
+  }
+  .mouse-svg{ width:100%; height:100%; overflow:visible; }
+
+  .mouse-svg .body{ animation:breathe 2.4s ease-in-out infinite; transform-origin:50% 90%; }
+  @keyframes breathe{
+    0%,100%{ transform:scaleY(1); }
+    50%{ transform:scaleY(.97); }
+  }
+  .mouse-svg .tail{ animation:wag 1.8s ease-in-out infinite; transform-origin:26% 74%; }
+  @keyframes wag{
+    0%,100%{ transform:rotate(-4deg); }
+    50%{ transform:rotate(6deg); }
+  }
+  .mouse-svg.hopping .body{ animation:hop .45s ease-out 1; }
+  @keyframes hop{
+    0%{ transform:translateY(0) scaleY(1); }
+    30%{ transform:translateY(-26%) scaleY(1.06); }
+    65%{ transform:translateY(0) scaleY(.94); }
+    100%{ transform:translateY(0) scaleY(1); }
+  }
+  .mouse-svg.cheering .body{ animation:cheer .6s ease-in-out infinite; }
+  @keyframes cheer{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-18%); }
+  }
+
+  /* ---------- Explanation ---------- */
+  details.about{
+    background:var(--panel-2);
+    border-radius:var(--radius);
+    padding:10px 14px;
+  }
+  details.about summary{
+    cursor:pointer;
+    font-weight:700;
+    color:var(--deep);
+    font-size:.92rem;
+  }
+  details.about p{
+    font-size:.86rem;
+    color:var(--ink-soft);
+    line-height:1.5;
+    margin:8px 0 2px;
+  }
+
+  .visually-hidden{
+    position:absolute;
+    width:1px;height:1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    white-space:nowrap;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .mouse-svg .body,
+    .mouse-svg .tail,
+    .mouse-svg.hopping .body,
+    .mouse-svg.cheering .body{ animation:none !important; }
+    .mouse-stage{ transition:none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="brand">
+    <svg class="brand-mark" viewBox="0 0 46 40" role="img" aria-label="Askelman tunnus">
+      <rect x="2"  y="30" width="13" height="8" rx="2" fill="#1f5f5b"/>
+      <rect x="13" y="22" width="13" height="8" rx="2" fill="#3f7d6f"/>
+      <rect x="24" y="14" width="13" height="8" rx="2" fill="#7fa88a"/>
+      <rect x="33" y="6"  width="11" height="8" rx="2" fill="#e0a02c"/>
+    </svg>
+    <div class="brand-text">
+      <h1>ASKELMA</h1>
+      <p>Matinkylän lukion keskittymisajastin</p>
+    </div>
+    <div class="brand-side">
+      <button type="button" id="soundBtn" class="icon-btn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="durationHeading">
+    <p id="durationHeading" class="group-label">Valitse jakson pituus</p>
+    <div class="duration-group" role="group" aria-label="Valitse jakson pituus minuutteina">
+      <button type="button" class="preset-btn" data-minutes="5" aria-pressed="false">5 min</button>
+      <button type="button" class="preset-btn" data-minutes="15" aria-pressed="false">15 min</button>
+      <button type="button" class="preset-btn" data-minutes="25" aria-pressed="false">25 min</button>
+      <button type="button" class="preset-btn" data-minutes="45" aria-pressed="false">45 min</button>
+      <button type="button" class="preset-btn" data-minutes="60" aria-pressed="false">60 min</button>
+      <div class="custom-wrap">
+        <label class="visually-hidden" for="customMinutes">Oma aika minuutteina, 1–120</label>
+        <input type="number" id="customMinutes" min="1" max="120" inputmode="numeric" placeholder="1–120" />
+        <button type="button" id="applyCustomBtn">Aseta</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel timer-panel" aria-label="Ajastin">
+    <div class="timer" id="timeDisplay" role="timer" aria-label="Jäljellä oleva aika">25:00</div>
+    <div class="progressTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Jakson eteneminen" id="progressTrack">
+      <div class="progressFill" id="progressFill"></div>
+    </div>
+    <p class="visually-hidden" id="stepCount">0 / 150 askelmaa noustu</p>
+    <p class="visually-hidden" id="statusLive" aria-live="polite"></p>
+  </section>
+
+  <section class="panel">
+    <div class="controls">
+      <button type="button" id="startBtn">▶ Aloita</button>
+      <button type="button" id="pauseBtn" class="icon-btn" disabled aria-label="Keskeytä">⏸</button>
+      <button type="button" id="resetBtn" class="icon-btn" aria-label="Nollaa">↺</button>
+    </div>
+  </section>
+
+  <div class="completion visually-hidden" id="completion" hidden aria-hidden="true">
+    <h2>Perillä huipulla!</h2>
+    <p id="completionText">Nousit 25 minuuttia askel kerrallaan.</p>
+  </div>
+
+  <section class="panel scene-panel" aria-label="Portaikko">
+    <div class="stairwell" id="stairwell">
+      <p class="visually-hidden" id="stairsLabel">Portaikko, jota hiiri nousee</p>
+      <div class="stairs" id="stairs" aria-labelledby="stairsLabel"></div>
+      <div class="mouse-stage" id="mouseStage">
+        <svg class="mouse-svg" id="mouse" viewBox="0 0 100 100" role="img" aria-label="Portaita kiipeävä hiiri">
+          <g class="body">
+            <path class="tail" d="M26,74 C8,78 4,58 18,54" fill="none" stroke="#d9a0a6" stroke-width="4.5" stroke-linecap="round"/>
+            <circle cx="58" cy="33" r="12.5" fill="#75726d"/>
+            <ellipse cx="46" cy="62" rx="27" ry="21" fill="#8d8b86" stroke="#5f5d59" stroke-width="3"/>
+            <circle cx="71" cy="52" r="17" fill="#8d8b86" stroke="#5f5d59" stroke-width="3"/>
+            <circle cx="72" cy="31" r="11.5" fill="#8d8b86" stroke="#5f5d59" stroke-width="2.5"/>
+            <circle cx="72" cy="31" r="6" fill="#e0a9af"/>
+            <path d="M85,49 C94,51 96,58 89,62 C84,64 81,59 81,55 Z" fill="#8d8b86"/>
+            <circle cx="92" cy="57" r="3" fill="#3a3530"/>
+            <circle cx="76" cy="50" r="3.2" fill="#2f2c28"/>
+            <path d="M87,63 L98,67 M87,65 L96,72" stroke="#5f5d59" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <ellipse cx="32" cy="83" rx="8" ry="5" fill="#6e6b67"/>
+            <ellipse cx="56" cy="84" rx="8" ry="5" fill="#6e6b67"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <details class="about">
+    <summary>Miten Askelma toimii?</summary>
+    <p>
+      Jokainen kymmenen sekunnin keskittyminen on yksi askelma. Hiiri nousee portaita
+      askel kerrallaan, ja kuljettu matka jää näkyviin taaksesi: 25 minuutin jakso on
+      150 askelmaa. Portaikko kääntyy takaisin kuten oikeassa porrashuoneessa, joten
+      pitkäkin nousu mahtuu yhteen näkymään. Ylös ei pääse yhdellä loikalla — vain
+      askelma kerrallaan.
+    </p>
+  </details>
+
+</div>
+
+<p class="visually-hidden">
+  Askelma on Matinkylän lukion keskittymisajastin. Valitse jakson pituus ja käynnistä
+  ajastin Aloita-painikkeella. Hiiri nousee yhden askelman kymmenen sekunnin välein.
+  Tilailmoitukset luetaan tälle sivulle automaattisesti.
+</p>
+
+<script>
+(function(){
+  "use strict";
+
+  var STORAGE_MIN = "askelma_minutes";
+  var STORAGE_SOUND = "askelma_sound";
+  var MS_PER_STEP = 10000;   // one stair per ten seconds
+  var MAX_STAIR_H = 230;     // the whole climb has to fit inside this
+
+  var minutes = 25;
+  var soundOn = true;
+  var state = "idle";        // idle | running | paused | finished
+  var totalMs = 0, accumulatedMs = 0, startEpoch = 0;
+  var totalSteps = 0, climbedSteps = 0;
+  var buildId = 0;
+  var tickTimer = null, hopTimeout = null;
+  var steps = [];
+  var geom = null;           // current staircase geometry
+  var audioCtx = null;
+  var reducedMotion = false;
+
+  var timeEl = document.getElementById("timeDisplay");
+  var progressTrack = document.getElementById("progressTrack");
+  var progressFill = document.getElementById("progressFill");
+  var countEl = document.getElementById("stepCount");
+  var statusEl = document.getElementById("statusLive");
+  var startBtn = document.getElementById("startBtn");
+  var pauseBtn = document.getElementById("pauseBtn");
+  var resetBtn = document.getElementById("resetBtn");
+  var soundBtn = document.getElementById("soundBtn");
+  var stairsEl = document.getElementById("stairs");
+  var stairwellEl = document.getElementById("stairwell");
+  var mouseEl = document.getElementById("mouse");
+  var mouseStage = document.getElementById("mouseStage");
+  var completionEl = document.getElementById("completion");
+  var completionText = document.getElementById("completionText");
+  var customInput = document.getElementById("customMinutes");
+  var applyCustomBtn = document.getElementById("applyCustomBtn");
+  var presetButtons = Array.prototype.slice.call(document.querySelectorAll(".preset-btn"));
+
+  try{
+    reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }catch(e){ reducedMotion = false; }
+
+  function loadMinutes(){
+    try{
+      var v = parseInt(localStorage.getItem(STORAGE_MIN), 10);
+      if(!isNaN(v) && v>=1 && v<=120) return v;
+    }catch(e){}
+    return null;
+  }
+  function saveMinutes(){
+    try{ localStorage.setItem(STORAGE_MIN, String(minutes)); }catch(e){}
+  }
+  function loadSound(){
+    try{
+      var v = localStorage.getItem(STORAGE_SOUND);
+      if(v === "0") return false;
+      if(v === "1") return true;
+    }catch(e){}
+    return true;
+  }
+  function saveSound(){
+    try{ localStorage.setItem(STORAGE_SOUND, soundOn ? "1" : "0"); }catch(e){}
+  }
+
+  function minuuttiTeksti(n){
+    return n === 1 ? "1 minuutin" : n + " minuuttia";
+  }
+
+  function formatTime(ms){
+    var totalSec = Math.max(0, Math.ceil(ms/1000));
+    var m = Math.floor(totalSec/60);
+    var s = totalSec % 60;
+    return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+  }
+
+  function announce(text){ statusEl.textContent = text; }
+
+  function hideCompletion(){
+    completionEl.hidden = true;
+    completionEl.setAttribute("aria-hidden","true");
+    mouseEl.classList.remove("cheering");
+  }
+  function showCompletion(){
+    completionText.textContent = "Nousit " + minuuttiTeksti(minutes) + " askel kerrallaan.";
+    completionEl.hidden = false;
+    completionEl.setAttribute("aria-hidden","false");
+  }
+
+  // Solve the staircase: split the climb into flights that double back, so the
+  // run fits the width and the whole rise fits the height budget. Everything
+  // else - stair size, the mouse, the headroom above the top stair - follows
+  // from that, which is what keeps a 720-stair session on one screen.
+  function computeGeometry(n){
+    var availW = (stairwellEl.clientWidth || 320) - 4;
+    var flights = Math.max(2, Math.min(20, Math.round(Math.sqrt(n / 3))));
+    var perFlight = Math.max(2, Math.min(Math.ceil(n / flights), Math.floor(availW / 4)));
+    flights = Math.ceil(n / perFlight);
+
+    var stepW = Math.max(4, Math.floor(availW / perFlight));
+    var rise = Math.min(20, MAX_STAIR_H / n);
+    var treadH = Math.max(2, Math.min(Math.round(rise * 0.9), 12));
+    var gap = stepW > 10 ? Math.max(1, Math.round(stepW * 0.12)) : 1;
+    var mouseSize = Math.min(46, Math.max(16, Math.round(stepW * 1.6)));
+
+    return {
+      n:n, perFlight:perFlight, flights:flights,
+      stepW:stepW, rise:rise, treadH:treadH, gap:gap,
+      mouse:mouseSize,
+      totalH: Math.max(28, n * rise + treadH)
+    };
+  }
+
+  // Where a stair sits. Odd flights run right-to-left, so the climb turns at
+  // each landing instead of jumping back to the left edge.
+  function stepX(i, g){
+    var f = Math.floor(i / g.perFlight);
+    var j = i - f * g.perFlight;
+    var col = (f % 2 === 0) ? j : (g.perFlight - 1 - j);
+    return col * g.stepW;
+  }
+  function stepTop(i, g){
+    return g.totalH - (i + 1) * g.rise - g.treadH;
+  }
+  function isReversed(i, g){
+    return Math.floor(i / g.perFlight) % 2 === 1;
+  }
+
+  function buildStairs(){
+    buildId++;
+    totalMs = minutes * 60000;
+    totalSteps = Math.round(totalMs / MS_PER_STEP);
+    climbedSteps = 0;
+    accumulatedMs = 0;
+
+    geom = computeGeometry(totalSteps);
+
+    var html = new Array(totalSteps);
+    for(var i=0;i<totalSteps;i++){
+      html[i] = '<div class="step' + (isReversed(i, geom) ? ' rev' : '') + '" style="left:' +
+                stepX(i, geom).toFixed(1) + 'px;top:' + stepTop(i, geom).toFixed(1) +
+                'px;width:' + (geom.stepW - geom.gap) + 'px;height:' + geom.treadH + 'px"></div>';
+    }
+    stairsEl.innerHTML = html.join("");
+    steps = Array.prototype.slice.call(stairsEl.children);
+
+    stairsEl.style.height = Math.ceil(geom.totalH) + "px";
+    mouseStage.style.width = geom.mouse + "px";
+    mouseStage.style.height = geom.mouse + "px";
+    stairwellEl.style.paddingTop = Math.ceil(geom.mouse * 0.9) + "px";
+
+    if(steps[0]) steps[0].classList.add("now");
+
+    countEl.textContent = "0 / " + totalSteps + " askelmaa noustu";
+    progressFill.style.width = "0%";
+    progressTrack.setAttribute("aria-valuenow","0");
+    timeEl.textContent = formatTime(totalMs);
+    positionMouse();
+  }
+
+  // The mouse stands on the stair it is climbing: its feet sit at 90% down its
+  // own box, so that point is put on the tread.
+  function positionMouse(){
+    if(!geom || !steps.length) return;
+    var i = Math.min(climbedSteps, steps.length - 1);
+    var w = mouseStage.offsetWidth, h = mouseStage.offsetHeight;
+    var x = stairsEl.offsetLeft + stepX(i, geom) + (geom.stepW - geom.gap)/2 - w/2;
+    var y = stairsEl.offsetTop + stepTop(i, geom) - h * 0.9;
+    var maxX = stairsEl.offsetLeft + stairsEl.clientWidth - w * 0.6;
+    x = Math.max(-w * 0.2, Math.min(x, maxX));
+    mouseStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+  }
+
+  var resizeTimer = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function(){
+      if(!steps.length) return;
+      geom = computeGeometry(totalSteps);
+      for(var i=0;i<steps.length;i++){
+        var s = steps[i];
+        s.style.left = stepX(i, geom).toFixed(1) + "px";
+        s.style.top = stepTop(i, geom).toFixed(1) + "px";
+        s.style.width = (geom.stepW - geom.gap) + "px";
+        s.style.height = geom.treadH + "px";
+        s.classList.toggle("rev", isReversed(i, geom));
+      }
+      stairsEl.style.height = Math.ceil(geom.totalH) + "px";
+      mouseStage.style.width = geom.mouse + "px";
+      mouseStage.style.height = geom.mouse + "px";
+      stairwellEl.style.paddingTop = Math.ceil(geom.mouse * 0.9) + "px";
+      positionMouse();
+    }, 120);
+  });
+
+  function ensureAudio(){
+    if(!audioCtx){
+      var Ctx = window.AudioContext || window.webkitAudioContext;
+      if(!Ctx) return null;
+      audioCtx = new Ctx();
+    }
+    if(audioCtx.state === "suspended"){
+      try{ audioCtx.resume(); }catch(e){}
+    }
+    return audioCtx;
+  }
+
+  // Browsers only let audio start from a real user gesture, and some stay muted
+  // until a buffer has actually played, so prime it on first interaction.
+  function primeAudio(){
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    try{
+      var buf = ctx.createBuffer(1, 1, ctx.sampleRate);
+      var src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+    }catch(e){}
+    if(ctx.state === "running"){
+      document.removeEventListener("pointerdown", primeAudio, true);
+      document.removeEventListener("keydown", primeAudio, true);
+    }
+  }
+  document.addEventListener("pointerdown", primeAudio, true);
+  document.addEventListener("keydown", primeAudio, true);
+
+  function playMelody(){
+    if(!soundOn) return;
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    if(ctx.state === "suspended"){
+      try{ ctx.resume().then(schedule).catch(function(){}); }catch(e){}
+    } else {
+      schedule();
+    }
+
+    function schedule(){
+      var master = ctx.createGain();
+      master.gain.value = 1;
+      var warm = ctx.createBiquadFilter();
+      warm.type = "lowpass";
+      warm.frequency.value = 2600;
+      warm.Q.value = 0.7;
+      master.connect(warm).connect(ctx.destination);
+
+      function bell(freq, start, dur, peak){
+        var osc = ctx.createOscillator();
+        var gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.0001, start);
+        gain.gain.linearRampToValueAtTime(peak, start+0.06);
+        gain.gain.exponentialRampToValueAtTime(0.0001, start+dur);
+        osc.connect(gain).connect(master);
+        osc.start(start); osc.stop(start+dur+0.05);
+
+        var osc2 = ctx.createOscillator();
+        var gain2 = ctx.createGain();
+        osc2.type = "sine";
+        osc2.frequency.value = freq*2;
+        gain2.gain.setValueAtTime(0.0001, start);
+        gain2.gain.linearRampToValueAtTime(peak*0.16, start+0.06);
+        gain2.gain.exponentialRampToValueAtTime(0.0001, start+dur*0.6);
+        osc2.connect(gain2).connect(master);
+        osc2.start(start); osc2.stop(start+dur+0.05);
+      }
+
+      // a short rising figure, as if arriving at the top
+      var t0 = ctx.currentTime + 0.06;
+      [523.25, 659.25, 783.99].forEach(function(f, i){
+        bell(f, t0 + i*0.26, 1.2, 0.22);
+      });
+      bell(1046.50, t0+0.78, 2.0, 0.18);
+      bell(659.25,  t0+0.78, 2.2, 0.12);
+      bell(392.00,  t0+0.78, 2.4, 0.10);
+    }
+  }
+
+  function triggerHop(){
+    if(reducedMotion) return;
+    mouseEl.classList.remove("hopping");
+    void mouseEl.offsetWidth;
+    mouseEl.classList.add("hopping");
+    clearTimeout(hopTimeout);
+    hopTimeout = setTimeout(function(){ mouseEl.classList.remove("hopping"); }, 470);
+  }
+
+  function climbStep(animated, isFinalStep){
+    var idx = climbedSteps;
+    climbedSteps++;
+
+    var done = steps[idx];
+    if(done){
+      done.classList.remove("now", "rev");
+      done.style.removeProperty("--fill");
+      done.classList.add("done");
+    }
+    var next = steps[idx+1];
+    if(next){
+      next.classList.add("now");
+      if(isReversed(idx+1, geom)) next.classList.add("rev");
+    }
+
+    if(animated) triggerHop();
+    positionMouse();
+    if(isFinalStep) finishNow();
+  }
+
+  // The stair being climbed fills up across its ten seconds, so the wait reads
+  // as progress rather than a stair that flips over out of nowhere.
+  function updateStepFill(elapsed){
+    var step = steps[climbedSteps];
+    if(!step) return;
+    var frac = (elapsed - climbedSteps * MS_PER_STEP) / MS_PER_STEP;
+    frac = Math.max(0, Math.min(1, frac));
+    step.style.setProperty("--fill", (frac * 100).toFixed(1) + "%");
+  }
+
+  function setControlsState(){
+    var busy = (state === "running" || state === "paused");
+    startBtn.disabled = busy;
+    pauseBtn.disabled = (state === "idle" || state === "finished");
+    pauseBtn.textContent = state === "paused" ? "▶" : "⏸";
+    pauseBtn.setAttribute("aria-label", state === "paused" ? "Jatka" : "Keskeytä");
+    presetButtons.forEach(function(b){ b.disabled = busy; });
+    customInput.disabled = busy;
+    applyCustomBtn.disabled = busy;
+  }
+
+  function tick(){
+    var now = Date.now();
+    var elapsed = accumulatedMs + (state === "running" ? (now - startEpoch) : 0);
+    var clamped = Math.min(elapsed, totalMs);
+
+    timeEl.textContent = formatTime(totalMs - clamped);
+    var pct = totalMs > 0 ? (clamped/totalMs*100) : 0;
+    progressFill.style.width = pct+"%";
+    progressTrack.setAttribute("aria-valuenow", String(Math.round(pct)));
+
+    var target = Math.min(totalSteps, Math.floor(clamped / MS_PER_STEP));
+    while(climbedSteps < target){
+      var isLast = (climbedSteps + 1 === target);
+      var isFinal = (climbedSteps + 1 === totalSteps);
+      climbStep(isLast, isFinal);
+    }
+    countEl.textContent = climbedSteps + " / " + totalSteps + " askelmaa noustu";
+    if(state === "running") updateStepFill(clamped);
+  }
+
+  function start(){
+    if(state === "running") return;
+    if(state === "idle" || state === "finished"){
+      hideCompletion();
+      buildStairs();
+    }
+    state = "running";
+    startEpoch = Date.now();
+    ensureAudio();
+    if(!tickTimer) tickTimer = setInterval(tick, 250);
+    setControlsState();
+    announce("Ajastin käynnistyi. Edessä " + totalSteps + " askelmaa.");
+  }
+
+  function togglePause(){
+    if(state === "running"){
+      accumulatedMs += Date.now() - startEpoch;
+      state = "paused";
+      clearInterval(tickTimer); tickTimer = null;
+      announce("Ajastin keskeytetty.");
+    } else if(state === "paused"){
+      state = "running";
+      startEpoch = Date.now();
+      tickTimer = setInterval(tick, 250);
+      announce("Ajastin jatkuu.");
+    }
+    setControlsState();
+  }
+
+  function reset(){
+    clearInterval(tickTimer); tickTimer = null;
+    clearTimeout(hopTimeout);
+    mouseEl.classList.remove("hopping","cheering");
+    state = "idle";
+    hideCompletion();
+    buildStairs();
+    setControlsState();
+    announce("Ajastin nollattu.");
+  }
+
+  function finishNow(){
+    if(state === "finished") return;
+    clearInterval(tickTimer); tickTimer = null;
+    state = "finished";
+    timeEl.textContent = "00:00";
+    progressFill.style.width = "100%";
+    progressTrack.setAttribute("aria-valuenow","100");
+    mouseEl.classList.remove("hopping");
+    mouseEl.classList.add("cheering");
+    playMelody();
+    showCompletion();
+    setControlsState();
+    announce("Perillä huipulla. Nousit " + minuuttiTeksti(minutes) + " askel kerrallaan.");
+  }
+
+  function selectPreset(activeBtn){
+    presetButtons.forEach(function(b){
+      b.setAttribute("aria-pressed", b === activeBtn ? "true" : "false");
+    });
+    if(activeBtn) customInput.value = "";
+  }
+
+  function applyMinutesChange(){
+    saveMinutes();
+    if(state !== "running" && state !== "paused"){
+      state = "idle";
+      hideCompletion();
+      buildStairs();
+    }
+  }
+
+  presetButtons.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      minutes = parseInt(btn.dataset.minutes, 10);
+      selectPreset(btn);
+      applyMinutesChange();
+    });
+  });
+
+  function applyCustom(){
+    var v = parseInt(customInput.value, 10);
+    if(isNaN(v)) return;
+    v = Math.min(120, Math.max(1, v));
+    customInput.value = v;
+    minutes = v;
+    selectPreset(null);
+    applyMinutesChange();
+  }
+  applyCustomBtn.addEventListener("click", applyCustom);
+  customInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); applyCustom(); }
+  });
+
+  function updateSoundBtn(){
+    soundBtn.setAttribute("aria-pressed", soundOn ? "true" : "false");
+    soundBtn.textContent = soundOn ? "🔊" : "🔇";
+    soundBtn.setAttribute("aria-label", soundOn ? "Äänet päällä" : "Äänet pois");
+  }
+  soundBtn.addEventListener("click", function(){
+    soundOn = !soundOn;
+    updateSoundBtn();
+    saveSound();
+    if(soundOn) ensureAudio();
+  });
+
+  startBtn.addEventListener("click", start);
+  pauseBtn.addEventListener("click", togglePause);
+  resetBtn.addEventListener("click", reset);
+
+  function init(){
+    minutes = loadMinutes() || 25;
+    soundOn = loadSound();
+    updateSoundBtn();
+
+    var matched = presetButtons.filter(function(b){
+      return parseInt(b.dataset.minutes,10) === minutes;
+    })[0];
+    if(matched){
+      selectPreset(matched);
+    } else {
+      selectPreset(null);
+      customInput.value = minutes;
+    }
+
+    buildStairs();
+    setControlsState();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
