@@ -304,6 +304,7 @@
   }
   .stairs-base{ fill:var(--white); stroke:var(--ink); stroke-linejoin:round; stroke-linecap:round; }
   .stairs-done{ fill:var(--teal); stroke:var(--ink); stroke-linejoin:round; stroke-linecap:round; }
+  .stairs-risers{ fill:none; stroke:var(--ink); stroke-linecap:butt; }
 
   /* askelma jota hiiri parhaillaan kiipeää: sininen hehku ja vihreä täyttö,
      joka etenee kymmenen sekunnin aikana askelman poikki */
@@ -521,6 +522,7 @@
         <svg class="stairsSvg" id="stairsSvg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <path class="stairs-base" id="stairsBase" d=""></path>
           <path class="stairs-done" id="stairsDone" d=""></path>
+          <path class="stairs-risers" id="stairsRisers" d=""></path>
         </svg>
         <div class="stepMark" id="stepMark" hidden></div>
         <div class="goal" id="goal" hidden>
@@ -641,6 +643,7 @@
   var stairsSvg = document.getElementById("stairsSvg");
   var stairsBase = document.getElementById("stairsBase");
   var stairsDone = document.getElementById("stairsDone");
+  var stairsRisers = document.getElementById("stairsRisers");
   var stepMark = document.getElementById("stepMark");
   var goalEl = document.getElementById("goal");
   var sceneEl = document.getElementById("scene");
@@ -701,7 +704,7 @@
      portaiden kaltevuus pysyy samana, ja portaikko kääntyy takaisin kuin
      oikeassa porraskäytävässä kun leveys loppuu. Näin koko jakso on aina
      näkyvissä ilman vieritettävää laatikkoa. */
-  var MAX_RISE = 26, MIN_RISE = 0.4, MIN_STEP_W = 2.4, TREAD_RATIO = 1.7;
+  var MAX_RISE = 26, MIN_RISE = 0.4, MIN_STEP_W = 3, MAX_FLIGHTS = 8, TREAD_RATIO = 1.7;
 
   function heightBudget(){
     var h = 340;
@@ -713,14 +716,22 @@
     n = Math.max(1, n);
     var availW = Math.max(150, (sceneEl.clientWidth || 320) - 6);
     var rise = Math.max(MIN_RISE, Math.min(MAX_RISE, heightBudget() / n));
+    // Askelma saa aina vähintään muutaman pikselin leveyden, jotta sen
+    // nousupinta erottuu omana viivanaan silloinkin kun nousu on alle
+    // pikselin. Jos syöksyjä tulisi liikaa, askelmaa kavennetaan takaisin.
     var stepW = Math.max(MIN_STEP_W, rise * TREAD_RATIO);
+    if(Math.ceil(n / Math.floor(availW / stepW)) > MAX_FLIGHTS){
+      stepW = Math.max(1, availW * MAX_FLIGHTS / n);
+    }
     var maxPerFlight = Math.max(2, Math.floor(availW / stepW));
     var flights = Math.max(1, Math.ceil(n / maxPerFlight));
     var perFlight = Math.ceil(n / flights);
     var bw = Math.max(0.6, Math.min(1.6, rise * 0.22));
     // nauhan paksuus: aina vähintään pari pikseliä, jotta kiivetty osuus
     // erottuu turkoosina myös pienimmillä askelmilla
-    var thick = Math.max(3, rise * 1.35 + bw*2);
+    // nauha on suunnilleen yhden nousun paksuinen: näin syöksyjen taitteessa
+    // ylempi syöksy ei peitä alemman askelmaa ja jätä sinne ylimääräistä viivaa
+    var thick = Math.max(4.2, rise + bw*2);
     var mouse = Math.max(22, Math.min(54, rise * 3.4));
     return {
       n:n, rise:rise, stepW:stepW, perFlight:perFlight, flights:flights,
@@ -773,6 +784,22 @@
     return d;
   }
 
+  // Jokaisen askelman pystysuora nousupinta omana viivanaan. Pitkillä
+  // jaksoilla nousu on alle pikselin, jolloin pelkkä ääriviiva litistyisi
+  // suoraksi rampiksi - nämä viivat pitävät askelmat erillään loppuun asti.
+  function risersPath(g){
+    var d = "";
+    var len = Math.min(g.thick, Math.max(g.rise, g.thick * 0.8));
+    for(var i=0;i<g.n-1;i++){
+      var f = Math.floor(i / g.perFlight);
+      if(Math.floor((i+1) / g.perFlight) !== f) continue; // syöksyn kääntyessä ei pystyviivaa
+      var x = (f % 2 === 1) ? stepX(i, g) : stepX(i+1, g);
+      var y = stepTop(i+1, g);
+      d += "M" + x.toFixed(2) + "," + y.toFixed(2) + "V" + (y + len).toFixed(2);
+    }
+    return d;
+  }
+
   function placeGoal(g){
     var i = g.n - 1;
     var h = Math.max(20, Math.min(48, g.mouse * 0.95));
@@ -817,6 +844,8 @@
     mouseStage.style.height = geom.mouse.toFixed(1) + "px";
 
     stairsBase.setAttribute("d", stairsPath(0, geom.n, geom));
+    stairsRisers.setAttribute("d", risersPath(geom));
+    stairsRisers.style.strokeWidth = geom.bw.toFixed(2);
     drawClimbed();
     placeGoal(geom);
     placeStepMark();
