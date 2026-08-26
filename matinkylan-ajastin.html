@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="color-scheme" content="light" />
 <meta name="theme-color" content="#22aea2" />
-<meta name="description" content="Matinkylän lukion ajastin – keskittymisajastin, jossa pieni hiiri kiipeää yhden askelman kymmenessä sekunnissa." />
+<meta name="description" content="Matinkylän lukion ajastin – keskittymisajastin, jossa kala syö yhden planktonin kymmenessä sekunnissa ja kasvaa syödessään." />
 <meta name="robots" content="noindex, nofollow" />
 <title>Matinkylän lukion ajastin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -285,135 +285,86 @@
   .scene-panel{ padding:14px 8px; }
   .scene{ position:relative; }
 
-  /* Portaikko: yksi askelma per jakso, mitat lasketaan niin että koko
-     kiipeäminen mahtuu näkyviin - mitään ei piiloteta vierityspalkin taakse. */
-  .stairs{
+  /* Planktonpilvi: yksi plankton per jakso, ruudukon solu valitaan niin
+     suureksi kuin mahtuu, jotta koko jakso näkyy kerralla ilman vieritystä.
+     Reunoille jää tilaa kalan pituudelle, ettei kala valu kortin ulkopuolelle. */
+  .pond{
     position:relative;
     margin:0 auto;
   }
 
-  /* Portaat piirretään yhtenä nauhana, ei erillisinä laatikoina: näin
-     portaikko on yhtenäinen myös silloin kun askelmia on satoja ja yksittäinen
-     askelma on vain parin pikselin levyinen. */
-  .stairs svg.stairsSvg{
+  .pk{
     position:absolute;
-    left:0; top:0;
-    width:100%; height:100%;
-    display:block;
-    overflow:visible;
-  }
-  .stairs-base{ fill:var(--white); stroke:var(--ink); stroke-linejoin:round; stroke-linecap:round; }
-  .stairs-done{ fill:var(--teal); stroke:var(--ink); stroke-linejoin:round; stroke-linecap:round; }
-  .stairs-risers{ fill:none; stroke:var(--ink); stroke-linecap:butt; }
-
-  /* askelma jota hiiri parhaillaan kiipeää: sininen hehku ja vihreä täyttö,
-     joka etenee kymmenen sekunnin aikana askelman poikki */
-  .stepMark{
-    position:absolute;
-    background:var(--white);
-    border:var(--bw,1px) solid var(--ink);
-    z-index:2;
-    animation: stepPulse 1.8s ease-in-out infinite;
-  }
-  .stepMark[hidden]{ display:none; }
-  .stepMark::after{
-    content:"";
-    position:absolute;
-    left:0; top:0; bottom:0;
-    width:var(--p,0%);
+    border-radius:50%;
     background:var(--green);
+    border:var(--pkb,1px) solid var(--ink);
   }
-  /* takaisin kääntyvässä syöksyssä kiivetään oikealta vasemmalle, joten
-     täytön on kasvettava samaan suuntaan */
-  .stepMark.rev::after{ left:auto; right:0; }
-  .stepMark.landed{ animation: stepPulse 1.8s ease-in-out infinite, land .4s ease-out; }
-  @keyframes stepPulse{
-    0%,100%{ box-shadow:0 0 0 0 rgba(36,159,255,0); }
-    50%{ box-shadow:0 0 7px 1px rgba(36,159,255,.6); }
+  /* seuraavaksi syötävä plankton erottuu sinisenä ja sykkii */
+  .pk.next{
+    background:var(--blue);
+    z-index:2;
+    animation: pkPulse 1.7s ease-in-out infinite;
   }
-  @keyframes land{
-    0%{ transform:translateY(-3px); }
-    50%{ transform:translateY(1px); }
-    100%{ transform:translateY(0); }
+  @keyframes pkPulse{
+    0%,100%{ transform:scale(1); box-shadow:0 0 0 0 rgba(36,159,255,0); }
+    50%{ transform:scale(1.35); box-shadow:0 0 8px 2px rgba(36,159,255,.55); }
   }
+  .pk.gulp{ animation: gulp .38s ease-in forwards; }
+  @keyframes gulp{
+    0%{ transform:scale(1.3); opacity:1; }
+    100%{ transform:scale(0); opacity:0; }
+  }
+  .pk.eaten{ display:none; }
 
-  .goal{ position:absolute; pointer-events:none; }
-  .goal svg{ width:100%; height:100%; display:block; overflow:visible; }
-  .goal .pennant{ animation: wave 2.6s ease-in-out infinite; transform-origin:6px 12px; }
-  @keyframes wave{
-    0%,100%{ transform:skewY(0deg); }
-    50%{ transform:skewY(-6deg); }
-  }
-
-  /* Hiiri seisoo aina sen askelman päällä jota se on kiipeämässä, ja piirtyy
-     kaiken muun päälle. */
-  .mouse-stage{
+  /* Kala ui aina sen planktonin kohdalle jota se on syömässä, ja piirtyy
+     kaiken muun päälle. Leveys kasvaa syötyjen planktonien myötä. */
+  .fish-stage{
     position:absolute;
     top:0; left:0;
-    width:40px; height:40px;
+    width:40px; height:24px;
     pointer-events:none;
     z-index:3;
-    transition: transform .42s cubic-bezier(.34,1.22,.64,1);
+    transition: transform .5s cubic-bezier(.34,1.15,.64,1),
+                width .7s cubic-bezier(.34,1.3,.64,1),
+                height .7s cubic-bezier(.34,1.3,.64,1);
     will-change: transform;
   }
-  .mouse-svg{ width:100%; height:100%; overflow:visible; }
-  .mouse-stage.flip .mouse-svg{ transform: scaleX(-1); }
-  .mouse-svg.measuring .bob{ animation:none !important; }
+  .fish-svg{ width:100%; height:100%; overflow:visible; }
+  .fish-stage.flip .fish-svg{ transform: scaleX(-1); }
+  .fish-svg.measuring .body{ animation:none !important; }
 
-  .mouse-svg .mood{ display:none; }
-  .mouse-svg[data-mood="calm"]   .mood-calm,
-  .mouse-svg[data-mood="focus"]  .mood-focus,
-  .mouse-svg[data-mood="effort"] .mood-effort,
-  .mouse-svg[data-mood="strain"] .mood-strain,
-  .mouse-svg[data-mood="glee"]   .mood-glee{ display:block; }
+  .fish-svg .mood{ display:none; }
+  .fish-svg[data-mood="calm"]   .mood-calm,
+  .fish-svg[data-mood="focus"]  .mood-focus,
+  .fish-svg[data-mood="effort"] .mood-effort,
+  .fish-svg[data-mood="strain"] .mood-strain,
+  .fish-svg[data-mood="glee"]   .mood-glee{ display:block; }
 
-  .mouse-svg .bob{ animation: bob 2.4s ease-in-out infinite; }
-  @keyframes bob{
-    0%,100%{ transform:translateY(0); }
-    50%{ transform:translateY(-3px); }
+  .fish-svg .body{ animation: swim 3s ease-in-out infinite; transform-origin:110px 62px; }
+  @keyframes swim{
+    0%,100%{ transform:translateY(0) rotate(0deg); }
+    50%{ transform:translateY(-4px) rotate(-1.6deg); }
   }
-  .mouse-svg .tail{ animation: tailSway 2.2s ease-in-out infinite; transform-origin:48px 146px; }
-  @keyframes tailSway{
-    0%,100%{ transform:rotate(-5deg); }
-    50%{ transform:rotate(7deg); }
+  .fish-svg .tail{ animation: swish 1.2s ease-in-out infinite; transform-origin:48px 62px; }
+  @keyframes swish{
+    0%,100%{ transform:rotate(-9deg); }
+    50%{ transform:rotate(9deg); }
   }
-  /* kyykistyy vähän ennen kuin ponnistaa seuraavalle askelmalle */
-  .mouse-svg.crouch .bob{ animation:none; transform:translateY(4px) scaleY(.94); }
-  .mouse-svg.hopping .bob{ animation: hop .5s cubic-bezier(.3,1.35,.5,1) 1; }
-  @keyframes hop{
-    0%   { transform:translateY(3px) scaleY(.9); }
-    24%  { transform:translateY(-16px) scaleY(1.1); }
-    58%  { transform:translateY(-20px) scaleY(1.02); }
-    100% { transform:translateY(0) scaleY(1); }
+  /* juuri ennen puraisua kala jännittyy ja ottaa vauhtia */
+  .fish-svg.ready .body{ animation:none; transform:translateX(-5px) scaleX(.96); }
+  .fish-svg.darting .body{ animation: dart .5s cubic-bezier(.3,1.3,.5,1) 1; }
+  @keyframes dart{
+    0%   { transform:translateX(-6px) scaleX(.95); }
+    35%  { transform:translateX(6px) scaleX(1.06); }
+    100% { transform:translateX(0) scaleX(1); }
   }
-  .mouse-svg.celebrate .bob{ animation: cheer .52s ease-in-out infinite; }
+  .fish-svg.darting .tail{ animation: swish .3s ease-in-out infinite; }
+  .fish-svg.celebrate .body{ animation: cheer .6s ease-in-out infinite; }
   @keyframes cheer{
-    0%,100%{ transform:translateY(0) scaleY(1); }
-    45%{ transform:translateY(-14px) scaleY(1.06); }
+    0%,100%{ transform:translateY(0) rotate(-4deg); }
+    50%{ transform:translateY(-9px) rotate(4deg); }
   }
-
-  .particle{ position:absolute; pointer-events:none; z-index:6; transform:translate(-50%,-50%); }
-  .particle.dust{
-    width:9px; height:9px; border-radius:50%;
-    background: radial-gradient(circle, rgba(34,174,162,.55), rgba(34,174,162,0));
-    animation: dustPop .5s ease-out forwards;
-  }
-  .particle.chip{
-    width:5px; height:5px; border-radius:1px;
-    background: var(--green);
-    animation: pop .5s ease-in forwards;
-  }
-  .particle.spark{
-    width:5px; height:5px; border-radius:50%;
-    background: var(--blue);
-    animation: pop .45s ease-out forwards;
-  }
-  @keyframes dustPop{
-    to{ transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(2); opacity:0; }
-  }
-  @keyframes pop{
-    to{ transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot,0deg)); opacity:0; }
-  }
+  .fish-svg.celebrate .tail{ animation: swish .34s ease-in-out infinite; }
 
   /* ---------- Explanation ---------- */
   details.about{
@@ -444,13 +395,14 @@
   }
 
   @media (prefers-reduced-motion: reduce){
-    .mouse-svg .bob,
-    .mouse-svg .tail,
-    .mouse-svg.hopping .bob,
-    .mouse-svg.celebrate .bob,
-    .goal .pennant,
-    .stepMark,
-    .stepMark.landed{
+    .fish-svg .body,
+    .fish-svg .tail,
+    .fish-svg.darting .body,
+    .fish-svg.darting .tail,
+    .fish-svg.celebrate .body,
+    .fish-svg.celebrate .tail,
+    .pk.next,
+    .pk.gulp{
       animation:none !important;
     }
     .particle{ display:none; }
@@ -495,7 +447,7 @@
     <div class="progressTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Jakson eteneminen" id="progressTrack">
       <div class="progressFill" id="progressFill"></div>
     </div>
-    <p class="blockCount visually-hidden" id="blockCount">0 / 150 askelmaa kiivetty</p>
+    <p class="blockCount visually-hidden" id="blockCount">0 / 150 planktonia syöty</p>
     <p class="status-live visually-hidden" id="statusLive" aria-live="polite"></p>
   </section>
 
@@ -510,76 +462,58 @@
   </section>
 
   <div class="completion visually-hidden" id="completion" hidden aria-hidden="true">
-    <h2>Huipulla!</h2>
-    <p id="completionText">Kiipesit 25 minuuttia ylöspäin.</p>
-    <p class="completion-sub">Yksi askelma kerrallaan pääsee huipulle.</p>
+    <h2>Kala kasvoi!</h2>
+    <p id="completionText">Söit 25 minuuttia planktonia.</p>
+    <p class="completion-sub">Pieni pala kerrallaan kasvaa isoksi.</p>
   </div>
 
-  <section class="panel scene-panel" aria-label="Portaikko">
+  <section class="panel scene-panel" aria-label="Planktonpilvi">
     <div class="scene" id="scene">
-      <p class="visually-hidden" id="stairsLabel">Portaikko ja sitä kiipeävä hiiri</p>
-      <div class="stairs" id="stairs" aria-labelledby="stairsLabel">
-        <svg class="stairsSvg" id="stairsSvg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-          <path class="stairs-base" id="stairsBase" d=""></path>
-          <path class="stairs-done" id="stairsDone" d=""></path>
-          <path class="stairs-risers" id="stairsRisers" d=""></path>
-        </svg>
-        <div class="stepMark" id="stepMark" hidden></div>
-        <div class="goal" id="goal" hidden>
-          <svg viewBox="0 0 26 42" aria-hidden="true">
-            <path class="pennant" d="M6,4 L24,11 L6,18 Z" fill="#249fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/>
-            <path d="M6,2 L6,42" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="mouse-stage" id="mouseStage">
-          <svg class="mouse-svg" id="mouse" data-mood="calm" viewBox="0 0 200 200" role="img" aria-label="Portaita kiipeävä hiiri">
-            <g class="bob">
-              <!-- häntä piirtyy vartalon taakse -->
-              <path class="tail" d="M50,146 C26,152 10,136 16,118 C20,106 32,102 38,110"
-                    fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
-              <!-- korva vartalon takana, vain yläosa jää näkyviin -->
-              <circle cx="120" cy="70" r="25" fill="#fff" stroke="#000" stroke-width="6"/>
-              <circle cx="120" cy="70" r="13" fill="#bce18b"/>
-              <!-- jalat -->
-              <g class="feet">
-                <ellipse cx="74" cy="168" rx="15" ry="8" fill="#fff" stroke="#000" stroke-width="5"/>
-                <ellipse cx="118" cy="166" rx="14" ry="8" fill="#fff" stroke="#000" stroke-width="5"/>
-              </g>
-              <!-- vartalo, pää ja kuono yhtenä siluettina -->
-              <path d="M44,150 C34,120 44,84 78,72 C102,64 128,66 146,80
-                       C160,90 176,102 188,112 C174,120 160,124 150,126
-                       C140,134 130,142 114,150 C92,162 58,162 44,150 Z"
+      <p class="visually-hidden" id="pondLabel">Planktonpilvi ja sitä syövä kala</p>
+      <div class="pond" id="pond" aria-labelledby="pondLabel">
+        <div class="fish-stage" id="fishStage">
+          <svg class="fish-svg" id="fish" data-mood="calm" viewBox="0 0 200 124" role="img" aria-label="Planktonia syövä kala">
+            <!-- pyrstö heiluu erikseen vartalosta -->
+            <path class="tail" d="M52,62 C38,52 22,40 10,30 C5,26 0,31 3,37 L18,62 L3,87
+                                  C0,93 5,98 10,94 C22,84 38,72 52,62 Z"
+                  fill="#22aea2" stroke="#000" stroke-width="6" stroke-linejoin="round"/>
+            <g class="body">
+              <!-- selkäevä ja rintaevä -->
+              <path d="M94,24 C104,8 126,2 138,7 C127,14 116,20 110,28 Z"
+                    fill="#22aea2" stroke="#000" stroke-width="5.5" stroke-linejoin="round"/>
+              <path d="M108,74 C124,78 136,88 133,97 C118,94 105,86 100,76 Z"
+                    fill="#22aea2" stroke="#000" stroke-width="5.5" stroke-linejoin="round"/>
+              <!-- vartalo -->
+              <path d="M40,62 C44,32 76,16 114,20 C148,24 174,40 190,62
+                       C174,84 148,100 114,104 C76,108 44,92 40,62 Z"
                     fill="#fff" stroke="#000" stroke-width="6" stroke-linejoin="round"/>
-              <!-- kuonon kärki ja viikset -->
-              <circle cx="186" cy="112" r="6" fill="#249fff"/>
-              <path d="M176,118 C186,124 194,128 199,130 M176,120 C184,128 188,134 190,140"
-                    fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round" opacity=".75"/>
-              <!-- ilmeet: yksi ryhmä per työvaihe -->
+              <!-- raidat ja kidus -->
+              <path d="M76,29 C70,46 70,78 76,95 M96,23 C90,44 90,80 96,101"
+                    fill="none" stroke="#249fff" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+              <path d="M146,36 C139,48 139,76 146,88"
+                    fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round" opacity=".55"/>
+              <!-- silmä -->
+              <circle cx="160" cy="47" r="12" fill="#fff" stroke="#000" stroke-width="4"/>
+              <circle cx="162" cy="48" r="5.5" fill="#000"/>
+              <circle cx="164.5" cy="45.5" r="2" fill="#fff"/>
+              <!-- suu: yksi ryhmä per työvaihe, aukeaa kun puraisu lähestyy -->
               <g class="mood mood-calm">
-                <circle cx="156" cy="103" r="6.5" fill="#000"/>
-                <circle cx="158" cy="101" r="2" fill="#fff"/>
-                <path d="M150,118 C155,122 162,121 165,117" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+                <path d="M170,70 C176,75 184,73 188,68" fill="none" stroke="#000" stroke-width="3.6" stroke-linecap="round"/>
               </g>
               <g class="mood mood-focus">
-                <ellipse cx="156" cy="104" rx="6.5" ry="5" fill="#000"/>
-                <path d="M146,93 C151,89 159,89 164,92" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
-                <path d="M150,119 L165,118" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+                <ellipse cx="178" cy="68" rx="5.5" ry="4.5" fill="#000"/>
               </g>
               <g class="mood mood-effort">
-                <ellipse cx="156" cy="105" rx="6" ry="4" fill="#000"/>
-                <path d="M145,94 C151,88 160,89 165,94" fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round"/>
-                <ellipse cx="157" cy="119" rx="6" ry="4.5" fill="#000"/>
+                <ellipse cx="178" cy="67" rx="8" ry="7" fill="#000"/>
               </g>
               <g class="mood mood-strain">
-                <path d="M149,106 C153,100 160,100 164,106" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
-                <path d="M144,93 C151,87 161,88 166,94" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
-                <path d="M148,116 C154,124 163,124 168,115 Z" fill="#000"/>
-                <path d="M153,118 L154,122 M160,118 L160,122" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="177" cy="66" rx="11" ry="10" fill="#000"/>
               </g>
               <g class="mood mood-glee">
-                <path d="M149,104 C153,96 161,96 165,104" fill="none" stroke="#000" stroke-width="3.6" stroke-linecap="round"/>
-                <path d="M146,116 C153,127 164,126 169,114" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M166,62 C173,76 184,75 190,62" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
               </g>
+              <!-- mittapiste: tähän kohtaan plankton osuu -->
+              <circle class="mouthSpot" cx="192" cy="64" r="1.5" fill="none"/>
             </g>
           </svg>
         </div>
@@ -590,12 +524,12 @@
   <details class="about">
     <summary>Miten ajastin toimii?</summary>
     <p>
-      Yksi askelma on kymmenen sekuntia keskittymistä. Hiiri kiipeää portaikkoa ylöspäin
-      niin kauan kuin työskentelet, ja koko jakson portaat näkyvät kerralla: näet aina
-      montako askelmaa on takana ja montako huipulle on vielä matkaa. Ajastin mittaa
-      oikeaa kulunutta aikaa, joten jakso kestää täsmälleen valitun ajan, vaikka
-      välilehti olisi taustalla. Taukoa ei käynnisty automaattisesti — pidä se silloin
-      kun se sinulle sopii.
+      Yksi plankton on kymmenen sekuntia keskittymistä. Kala syö niitä yhden kerrallaan
+      ja kasvaa sitä mukaa: viiden minuutin syönnin jälkeen kala on selvästi isompi kuin
+      minuutin jälkeen. Koko jakson plankton näkyy kerralla, joten näet aina montako palaa
+      on syöty ja montako on vielä jäljellä. Ajastin mittaa oikeaa kulunutta aikaa, joten
+      jakso kestää täsmälleen valitun ajan, vaikka välilehti olisi taustalla. Taukoa ei
+      käynnisty automaattisesti — pidä se silloin kun se sinulle sopii.
     </p>
   </details>
 
@@ -603,8 +537,8 @@
 
 <p class="visually-hidden">
   Matinkylän lukion ajastin. Valitse jakson pituus ja käynnistä ajastin Aloita-painikkeella.
-  Hiiri kiipeää yhden askelman kymmenen sekunnin välein. Tilailmoitukset luetaan tälle
-  sivulle automaattisesti.
+  Kala syö yhden planktonin kymmenen sekunnin välein ja kasvaa syödessään. Tilailmoitukset
+  luetaan tälle sivulle automaattisesti.
 </p>
 
 <script>
@@ -614,16 +548,17 @@
   var PRESETS = [5,15,25,45,60];
   var STORAGE_MIN = "matinkyla_minutes";
   var STORAGE_SOUND = "matinkyla_sound";
-  var HOP_DELAY = 200;      // ms hypyn alusta siihen kun hiiri laskeutuu
-  var MS_PER_STEP = 10000;  // yksi askelma kymmenessä sekunnissa
+  var BITE_DELAY = 200;     // ms syöksyn alusta siihen kun kala nappaa
+  var MS_PER_BITE = 10000;  // yksi plankton kymmenessä sekunnissa
 
   var minutes = 25;
   var soundOn = true;
   var state = "idle"; // idle | running | paused | finished
   var totalMs = 0, accumulatedMs = 0, startEpoch = 0;
-  var totalSteps = 0, climbedSteps = 0;
+  var totalBites = 0, eatenBites = 0;
   var buildId = 0;
-  var tickTimer = null, hopTimeout = null;
+  var dots = [];
+  var tickTimer = null, dartTimeout = null;
   var geom = null;
   var audioCtx = null;
   var reducedMotion = false;
@@ -639,16 +574,10 @@
   var minusBtn = document.getElementById("minusBtn");
   var plusBtn = document.getElementById("plusBtn");
   var soundBtn = document.getElementById("soundBtn");
-  var stairsEl = document.getElementById("stairs");
-  var stairsSvg = document.getElementById("stairsSvg");
-  var stairsBase = document.getElementById("stairsBase");
-  var stairsDone = document.getElementById("stairsDone");
-  var stairsRisers = document.getElementById("stairsRisers");
-  var stepMark = document.getElementById("stepMark");
-  var goalEl = document.getElementById("goal");
+  var pondEl = document.getElementById("pond");
   var sceneEl = document.getElementById("scene");
-  var mouseEl = document.getElementById("mouse");
-  var mouseStage = document.getElementById("mouseStage");
+  var fishEl = document.getElementById("fish");
+  var fishStage = document.getElementById("fishStage");
   var completionEl = document.getElementById("completion");
   var completionText = document.getElementById("completionText");
   var customInput = document.getElementById("customMinutes");
@@ -684,8 +613,8 @@
   function minuuttiTeksti(n){
     return n === 1 ? "1 minuutin" : n + " minuuttia";
   }
-  function askelmaTeksti(n){
-    return n === 1 ? "1 askelma" : n + " askelmaa";
+  function planktonTeksti(n){
+    return n === 1 ? "1 plankton" : n + " planktonia";
   }
 
   function formatTime(ms){
@@ -697,14 +626,12 @@
 
   function announce(text){ statusEl.textContent = text; }
 
-  /* ---------- Portaikon geometria ----------
-     Yhtenäisen kiipeämisen korkeus on aina verrannollinen askelmien määrään,
-     joten 720 askelmaa ei mahdu ruudulle täysikokoisena. Nousu per askelma
-     lasketaan korkeusbudjetista, askelman leveys sidotaan nousuun niin että
-     portaiden kaltevuus pysyy samana, ja portaikko kääntyy takaisin kuin
-     oikeassa porraskäytävässä kun leveys loppuu. Näin koko jakso on aina
-     näkyvissä ilman vieritettävää laatikkoa. */
-  var MAX_RISE = 26, MIN_RISE = 0.4, MIN_STEP_W = 3, MAX_FLIGHTS = 8, TREAD_RATIO = 1.7;
+  /* ---------- Planktonpilven geometria ----------
+     Koko jakson plankton on kerralla näkyvissä: ruudukon solu valitaan niin
+     suureksi kuin korkeusbudjettiin mahtuu, ja jokainen plankton siirtyy
+     solunsa sisällä hitusen sivuun, jotta pilvi näyttää elävältä eikä
+     taulukolta. Reunoille varataan tilaa kalan pituudelle. */
+  var MAX_CELL = 80, MIN_CELL = 5;
 
   function heightBudget(){
     var h = 340;
@@ -712,219 +639,173 @@
     return h;
   }
 
+  // Kala kasvaa syötyjen planktonien mukaan, ei jakson etenemisen mukaan:
+  // viiden minuutin syönnin jälkeen kala on isompi kuin minuutin jälkeen,
+  // oli jakso sitten viisi minuuttia tai kaksi tuntia. Logaritmi pitää
+  // kasvun näkyvänä alussa ja hillittynä sadan planktonin jälkeen.
+  var FISH_MIN = 26, FISH_K = 13, FISH_MAX = 90, FISH_RATIO = 0.62;
+  function fishWidth(eaten){
+    return Math.min(FISH_MAX, FISH_MIN + FISH_K * Math.log(1 + Math.max(0, eaten) / 6));
+  }
+
+  // Sama plankton päätyy aina samaan kohtaan solussaan, joten pilvi ei hypi
+  // kun ruudukko piirretään uudelleen.
+  function jitter(i){
+    var x = Math.sin(i * 12.9898 + 4.1) * 43758.5453;
+    return x - Math.floor(x);
+  }
+
   function computeGeometry(n){
     n = Math.max(1, n);
+    var maxFish = fishWidth(n);
     var availW = Math.max(150, (sceneEl.clientWidth || 320) - 6);
-    var rise = Math.max(MIN_RISE, Math.min(MAX_RISE, heightBudget() / n));
-    // Askelma saa aina vähintään muutaman pikselin leveyden, jotta sen
-    // nousupinta erottuu omana viivanaan silloinkin kun nousu on alle
-    // pikselin. Jos syöksyjä tulisi liikaa, askelmaa kavennetaan takaisin.
-    var stepW = Math.max(MIN_STEP_W, rise * TREAD_RATIO);
-    if(Math.ceil(n / Math.floor(availW / stepW)) > MAX_FLIGHTS){
-      stepW = Math.max(1, availW * MAX_FLIGHTS / n);
-    }
-    var maxPerFlight = Math.max(2, Math.floor(availW / stepW));
-    var flights = Math.max(1, Math.ceil(n / maxPerFlight));
-    var perFlight = Math.ceil(n / flights);
-    var bw = Math.max(0.6, Math.min(1.6, rise * 0.22));
-    // nauhan paksuus: aina vähintään pari pikseliä, jotta kiivetty osuus
-    // erottuu turkoosina myös pienimmillä askelmilla
-    // nauha on suunnilleen yhden nousun paksuinen: näin syöksyjen taitteessa
-    // ylempi syöksy ei peitä alemman askelmaa ja jätä sinne ylimääräistä viivaa
-    var thick = Math.max(4.2, rise + bw*2);
-    var mouse = Math.max(22, Math.min(54, rise * 3.4));
+    var padX = Math.round(Math.min(maxFish * 0.85, availW * 0.3));
+    var padY = Math.round(maxFish * FISH_RATIO * 0.55);
+    var gridW = Math.max(80, availW - 2*padX);
+    var gridH = Math.max(80, heightBudget() - 2*padY);
+
+    // Pilvi mitoitetaan laatikon muotoiseksi: sarakkeita sen verran että
+    // ruudukko täyttää tilan, ja solu niin suureksi kuin siihen mahtuu. Näin
+    // kuuden planktonin jakso ei kutistu yhdeksi ohueksi riviksi eikä 720:n
+    // jakso karkaa laatikon ulkopuolelle.
+    var cols = Math.max(1, Math.min(n, Math.round(Math.sqrt(n * gridW / gridH))));
+    var rows = Math.ceil(n / cols);
+    var cell = Math.max(MIN_CELL, Math.min(MAX_CELL, gridW / cols, gridH / rows));
+    // plankton pysyy pikkuruisena kalaan nähden vaikka solu olisi iso
+    var dot = Math.max(3, Math.min(10, cell * 0.44));
+    return { n:n, cell:cell, cols:cols, rows:rows, dot:dot, padX:padX, padY:padY,
+             width: cols*cell, height: rows*cell };
+  }
+
+  // Kala kulkee riveittäin edestakaisin, kuten laiduntava kala.
+  function bitePos(i, g){
+    var row = Math.floor(i / g.cols);
+    var col = i - row * g.cols;
+    if(row % 2 === 1) col = g.cols - 1 - col;
     return {
-      n:n, rise:rise, stepW:stepW, perFlight:perFlight, flights:flights,
-      bw:bw, thick:thick, mouse:mouse,
-      totalH: n*rise + thick,
-      width: perFlight*stepW
+      x: col * g.cell + g.cell/2 + (jitter(i) - 0.5) * g.cell * 0.46,
+      y: row * g.cell + g.cell/2 + (jitter(i + 977) - 0.5) * g.cell * 0.46
     };
   }
 
-  function stepX(i, g){
-    var f = Math.floor(i / g.perFlight);
-    var j = i - f * g.perFlight;
-    var col = (f % 2 === 0) ? j : (g.perFlight - 1 - j);
-    return col * g.stepW;
-  }
-  function stepTop(i, g){ return g.totalH - (i+1) * g.rise - g.thick; }
-  function isReversed(i, g){ return Math.floor(i / g.perFlight) % 2 === 1; }
-
-  // Yhden porrassyöksyn nauha: askelmien yläprofiili nousevassa järjestyksessä,
-  // sitten sama profiili paksuuden verran alempaa takaisin. Näin portaikko on
-  // yksi yhtenäinen muoto ilman saumoja askelmien välissä silloinkin kun
-  // yksittäinen askelma on vain parin pikselin levyinen.
-  function flightRibbon(from, to, g){
-    if(to <= from) return "";
-    var f = Math.floor(from / g.perFlight);
-    var rev = (f % 2 === 1);
-    var pts = [];
-    for(var i=from;i<to;i++){
-      var x = stepX(i,g), y = stepTop(i,g);
-      if(rev){ pts.push([x+g.stepW, y]); pts.push([x, y]); }
-      else   { pts.push([x, y]);         pts.push([x+g.stepW, y]); }
+  function planktonMarkup(g){
+    var html = new Array(g.n);
+    var bw = Math.max(0.6, g.dot * 0.16).toFixed(2);
+    for(var i=0;i<g.n;i++){
+      var p = bitePos(i, g);
+      var cls = "pk";
+      if(i < eatenBites) cls += " eaten";
+      else if(i === eatenBites) cls += " next";
+      html[i] = '<i class="' + cls + '" style="left:' + (p.x - g.dot/2).toFixed(2) +
+                'px;top:' + (p.y - g.dot/2).toFixed(2) +
+                'px;width:' + g.dot.toFixed(2) + 'px;height:' + g.dot.toFixed(2) +
+                'px;border-width:' + bw + 'px"></i>';
     }
-    var d = "M" + pts[0][0].toFixed(2) + "," + pts[0][1].toFixed(2);
-    for(var a=1;a<pts.length;a++) d += "L" + pts[a][0].toFixed(2) + "," + pts[a][1].toFixed(2);
-    for(var b=pts.length-1;b>=0;b--) d += "L" + pts[b][0].toFixed(2) + "," + (pts[b][1]+g.thick).toFixed(2);
-    return d + "Z";
+    return html.join("");
   }
 
-  // Portaikko voi kääntyä takaisin useaan kertaan, joten jokainen syöksy
-  // piirretään omana osapolkunaan samaan polkuun.
-  function stairsPath(from, to, g){
-    var d = "";
-    var i = from;
-    while(i < to){
-      var f = Math.floor(i / g.perFlight);
-      var end = Math.min(to, (f+1) * g.perFlight);
-      d += flightRibbon(i, end, g);
-      i = end;
-    }
-    return d;
-  }
-
-  // Jokaisen askelman pystysuora nousupinta omana viivanaan. Pitkillä
-  // jaksoilla nousu on alle pikselin, jolloin pelkkä ääriviiva litistyisi
-  // suoraksi rampiksi - nämä viivat pitävät askelmat erillään loppuun asti.
-  function risersPath(g){
-    var d = "";
-    var len = Math.min(g.thick, Math.max(g.rise, g.thick * 0.8));
-    for(var i=0;i<g.n-1;i++){
-      var f = Math.floor(i / g.perFlight);
-      if(Math.floor((i+1) / g.perFlight) !== f) continue; // syöksyn kääntyessä ei pystyviivaa
-      var x = (f % 2 === 1) ? stepX(i, g) : stepX(i+1, g);
-      var y = stepTop(i+1, g);
-      d += "M" + x.toFixed(2) + "," + y.toFixed(2) + "V" + (y + len).toFixed(2);
-    }
-    return d;
-  }
-
-  function placeGoal(g){
-    var i = g.n - 1;
-    var h = Math.max(20, Math.min(48, g.mouse * 0.95));
-    var w = h * 0.62;
-    goalEl.hidden = false;
-    goalEl.style.left = (stepX(i,g) + g.stepW/2 - w*0.14).toFixed(2) + "px";
-    goalEl.style.top = (stepTop(i,g) - h).toFixed(2) + "px";
-    goalEl.style.width = w.toFixed(2) + "px";
-    goalEl.style.height = h.toFixed(2) + "px";
-  }
-
-  // Askelmamerkki kertoo mitä askelmaa hiiri parhaillaan kiipeää. Pienimmillä
-  // mitoilla se levitetään muutamaan pikseliin, jotta se ylipäätään näkyy.
-  function placeStepMark(){
-    if(!geom || climbedSteps >= geom.n){ stepMark.hidden = true; return; }
-    var g = geom, i = climbedSteps;
-    var w = Math.max(3, g.stepW), h = Math.max(3, g.thick);
-    stepMark.hidden = false;
-    stepMark.style.left = (stepX(i,g) + g.stepW/2 - w/2).toFixed(2) + "px";
-    stepMark.style.top = (stepTop(i,g) + g.thick/2 - h/2).toFixed(2) + "px";
-    stepMark.style.width = w.toFixed(2) + "px";
-    stepMark.style.height = h.toFixed(2) + "px";
-    stepMark.style.setProperty("--p", "0%");
-    stepMark.classList.toggle("rev", isReversed(i, g));
-  }
-
-  // Portaikko piirretään aina uudelleen nykyisestä tilasta (montako askelmaa
-  // kiivetty), joten sama funktio kelpaa rakentamiseen, ikkunan koon muutokseen
+  // Pilvi piirretään aina uudelleen nykyisestä tilasta (montako planktonia
+  // syöty), joten sama funktio kelpaa rakentamiseen, ikkunan koon muutokseen
   // ja jakson pituuden säätämiseen.
-  function renderStairs(){
-    geom = computeGeometry(totalSteps);
-    stairsEl.style.width = geom.width.toFixed(2) + "px";
-    stairsEl.style.height = geom.totalH.toFixed(2) + "px";
-    // lippu ja ylimmällä askelmalla seisova hiiri nousevat portaikon
-    // yläpuolelle, joten niille varataan tilaa laatikon päältä
-    stairsEl.style.marginTop = Math.ceil(Math.max(geom.mouse, Math.min(48, geom.mouse*0.95)) + 6) + "px";
-    stairsEl.style.setProperty("--bw", geom.bw.toFixed(2) + "px");
-    stairsSvg.setAttribute("viewBox", "0 0 " + geom.width.toFixed(2) + " " + geom.totalH.toFixed(2));
-    stairsBase.style.strokeWidth = geom.bw.toFixed(2);
-    stairsDone.style.strokeWidth = geom.bw.toFixed(2);
-    mouseStage.style.width = geom.mouse.toFixed(1) + "px";
-    mouseStage.style.height = geom.mouse.toFixed(1) + "px";
+  function renderPond(){
+    geom = computeGeometry(totalBites);
+    pondEl.style.width = geom.width.toFixed(2) + "px";
+    pondEl.style.height = geom.height.toFixed(2) + "px";
+    pondEl.style.margin = geom.padY + "px auto";
 
-    stairsBase.setAttribute("d", stairsPath(0, geom.n, geom));
-    stairsRisers.setAttribute("d", risersPath(geom));
-    stairsRisers.style.strokeWidth = geom.bw.toFixed(2);
-    drawClimbed();
-    placeGoal(geom);
-    placeStepMark();
-    positionMouse(true);
+    // 720 planktonia yksitellen appendChildillä jumittaisi sivun, joten
+    // ruudukko syntyy yhdellä kirjoituksella
+    pondEl.innerHTML = planktonMarkup(geom);
+    pondEl.appendChild(fishStage);
+    dots = Array.prototype.slice.call(pondEl.querySelectorAll(".pk"));
+    sizeFish();
+    positionFish(true);
   }
 
-  function drawClimbed(){
-    if(!geom) return;
-    stairsDone.setAttribute("d", climbedSteps > 0 ? stairsPath(0, climbedSteps, geom) : "");
+  function sizeFish(){
+    var w = fishWidth(eatenBites);
+    fishStage.style.width = w.toFixed(1) + "px";
+    fishStage.style.height = (w * FISH_RATIO).toFixed(1) + "px";
   }
 
   function buildSession(){
     buildId++;
     totalMs = minutes*60000;
-    totalSteps = Math.round(totalMs / MS_PER_STEP);
-    climbedSteps = 0;
+    totalBites = Math.round(totalMs / MS_PER_BITE);
+    eatenBites = 0;
     accumulatedMs = 0;
     markStage = -1;
-    renderStairs();
-    countEl.textContent = "0 / " + totalSteps + " askelmaa kiivetty";
+    facingLeft = false;
+    renderPond();
+    countEl.textContent = "0 / " + totalBites + " planktonia syöty";
     progressFill.style.width = "0%";
     progressTrack.setAttribute("aria-valuenow","0");
     timeEl.textContent = formatTime(totalMs);
   }
 
-  // Missä hiiren tassut ovat sen laatikon sisällä, osuutena laatikosta.
-  // Mitataan oikeasta kuvasta, jotta hiiri seisoo askelman päällä vaikka
-  // piirrosta myöhemmin muutettaisiin.
-  var footSpot = null;
-  function measureFeet(){
+  // Missä kalan suu on sen laatikon sisällä, osuutena laatikosta. Mitataan
+  // oikeasta kuvasta, jotta plankton osuu suuhun vaikka piirrosta muutettaisiin.
+  var mouthSpot = null;
+  function measureMouth(){
     try{
-      mouseEl.classList.add("measuring");
-      var wasFlipped = mouseStage.classList.contains("flip");
-      mouseStage.classList.remove("flip");
-      var feet = mouseEl.querySelector(".feet");
-      var stageRect = mouseStage.getBoundingClientRect();
-      var feetRect = feet.getBoundingClientRect();
-      mouseEl.classList.remove("measuring");
-      if(wasFlipped) mouseStage.classList.add("flip");
-      if(!stageRect.width || !feetRect.width) throw new Error("not laid out");
-      footSpot = {
-        x: (feetRect.left + feetRect.width/2 - stageRect.left) / stageRect.width,
-        y: (feetRect.bottom - stageRect.top) / stageRect.height
+      fishEl.classList.add("measuring");
+      var wasFlipped = fishStage.classList.contains("flip");
+      fishStage.classList.remove("flip");
+      var spot = fishEl.querySelector(".mouthSpot");
+      var stageRect = fishStage.getBoundingClientRect();
+      var spotRect = spot.getBoundingClientRect();
+      fishEl.classList.remove("measuring");
+      if(wasFlipped) fishStage.classList.add("flip");
+      if(!stageRect.width || !spotRect.width) throw new Error("not laid out");
+      mouthSpot = {
+        x: (spotRect.left + spotRect.width/2 - stageRect.left) / stageRect.width,
+        y: (spotRect.top + spotRect.height/2 - stageRect.top) / stageRect.height
       };
     }catch(e){
-      mouseEl.classList.remove("measuring");
-      footSpot = { x: 0.48, y: 0.88 };
+      fishEl.classList.remove("measuring");
+      mouthSpot = { x: 0.96, y: 0.52 };
     }
   }
 
-  function positionMouse(instant){
+  var facingLeft = false;
+  function positionFish(instant){
     if(!geom) return;
-    if(!footSpot) measureFeet();
-    var i = Math.min(climbedSteps, geom.n - 1);
-    var w = geom.mouse, h = geom.mouse;
-    var reversed = isReversed(i, geom);
-    // peilattuna tassujen vaakapaikka peilautuu myös
-    var fx = reversed ? (1 - footSpot.x) : footSpot.x;
-    var x = stepX(i, geom) + geom.stepW/2 - fx * w;
-    var y = stepTop(i, geom) - footSpot.y * h;
-    x = Math.max(-w*0.35, Math.min(x, geom.width - w*0.65));
-    mouseStage.classList.toggle("flip", reversed);
+    if(!mouthSpot) measureMouth();
+    var i = Math.min(eatenBites, geom.n - 1);
+    var p = bitePos(i, geom);
+    var w = parseFloat(fishStage.style.width) || fishWidth(eatenBites);
+    var h = parseFloat(fishStage.style.height) || w * FISH_RATIO;
+
+    // kala kääntyy siihen suuntaan johon se lähtee uimaan
+    var prevX = lastBiteX;
+    if(prevX !== null && Math.abs(p.x - prevX) > 0.5) facingLeft = (p.x < prevX);
+    lastBiteX = p.x;
+    fishStage.classList.toggle("flip", facingLeft);
+
+    // suu pysähtyy juuri planktonin eteen, ei sen päälle
+    var gap = geom.dot * 0.55 + 2;
+    var fx = facingLeft ? (1 - mouthSpot.x) : mouthSpot.x;
+    var x = (facingLeft ? p.x + gap : p.x - gap) - fx * w;
+    var y = p.y - mouthSpot.y * h;
     if(instant){
-      var prev = mouseStage.style.transition;
-      mouseStage.style.transition = "none";
-      mouseStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
-      void mouseStage.offsetWidth;
-      mouseStage.style.transition = prev;
+      var prev = fishStage.style.transition;
+      fishStage.style.transition = "none";
+      fishStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+      void fishStage.offsetWidth;
+      fishStage.style.transition = prev;
     } else {
-      mouseStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+      fishStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
     }
   }
+  var lastBiteX = null;
 
   var repositionTimer = null;
   window.addEventListener("resize", function(){
     clearTimeout(repositionTimer);
     repositionTimer = setTimeout(function(){
-      footSpot = null;
-      renderStairs();
+      mouthSpot = null;
+      lastBiteX = null;
+      renderPond();
     }, 120);
   });
 
@@ -1004,7 +885,7 @@
         osc2.start(start); osc2.stop(start+dur+0.05);
       }
 
-      // nouseva kolmisointu, kuin viimeiset askelmat huipulle
+      // nouseva kolmisointu jakson päätteeksi
       var t0 = ctx.currentTime + 0.06;
       [523.25, 659.25, 783.99].forEach(function(f, i){
         bell(f, t0 + i*0.26, 1.2, 0.22);
@@ -1034,13 +915,13 @@
     setTimeout(function(){ if(el.parentNode) el.remove(); }, 700);
   }
 
-  // Pöly nousee siitä askelmasta johon hiiri juuri laskeutui; koordinaatit
-  // lasketaan geometriasta, koska askelmat eivät ole omia elementtejään.
+  // Puraisun pyörre nousee siitä planktonista jonka kala juuri nappasi.
   function spawnParticlesAt(i, strength){
     if(reducedMotion || !geom) return;
     var s = strength || 1;
-    var cx = stairsEl.offsetLeft + stepX(i, geom) + geom.stepW/2;
-    var cy = stairsEl.offsetTop + stepTop(i, geom) + geom.thick/2;
+    var p = bitePos(i, geom);
+    var cx = pondEl.offsetLeft + p.x;
+    var cy = pondEl.offsetTop + p.y;
     for(var a=0;a<Math.round(5*s);a++) spawnParticle("dust", cx, cy);
     for(var b=0;b<Math.round(3*s);b++) spawnParticle("chip", cx, cy);
     for(var c=0;c<Math.round(2*s);c++) spawnParticle("spark", cx, cy);
@@ -1055,70 +936,70 @@
     } else if(Date.now() < moodHoldUntil){
       return;
     }
-    mouseEl.setAttribute("data-mood", mood);
+    fishEl.setAttribute("data-mood", mood);
   }
   function clearMood(){
     moodHoldUntil = 0;
-    mouseEl.setAttribute("data-mood", "calm");
+    fishEl.setAttribute("data-mood", "calm");
   }
 
-  // Askelma täyttyy vähitellen kymmenen sekunnin aikana ja hiiri kyykistyy
-  // ponnistusta varten, jotta odotus näkyy tasaisena etenemisenä eikä
-  // äkillisenä hyppynä jakson lopussa.
+  // Puraisu lähestyy: plankton sykkii, kalan suu aukeaa vaiheittain ja
+  // viimeisellä hetkellä kala ottaa vauhtia.
   var STAGES = [0.30, 0.58, 0.82];
   var markStage = -1;
-  function updateStepProgress(elapsed){
-    if(!geom || climbedSteps >= geom.n) return;
-    var frac = (elapsed - climbedSteps * MS_PER_STEP) / MS_PER_STEP;
+  function updateBiteProgress(elapsed){
+    if(!geom || eatenBites >= geom.n) return;
+    var frac = (elapsed - eatenBites * MS_PER_BITE) / MS_PER_BITE;
     frac = Math.max(0, Math.min(1, frac));
-    stepMark.style.setProperty("--p", (frac*100).toFixed(1) + "%");
-
     var stage = 0;
     for(var i=0;i<STAGES.length;i++){ if(frac >= STAGES[i]) stage = i+1; }
     setMood(MOODS[stage]);
     if(markStage === stage) return;
     markStage = stage;
     if(reducedMotion) return;
-    // viimeisellä hetkellä hiiri kyykistyy ponnistukseen
-    mouseEl.classList.toggle("crouch", stage === 3);
+    fishEl.classList.toggle("ready", stage === 3);
   }
 
-  function triggerHop(){
-    mouseEl.classList.remove("crouch");
-    mouseEl.classList.remove("hopping");
-    void mouseEl.offsetWidth;
-    mouseEl.classList.add("hopping");
-    clearTimeout(hopTimeout);
-    hopTimeout = setTimeout(function(){ mouseEl.classList.remove("hopping"); }, 540);
+  function triggerDart(){
+    fishEl.classList.remove("ready");
+    fishEl.classList.remove("darting");
+    void fishEl.offsetWidth;
+    fishEl.classList.add("darting");
+    clearTimeout(dartTimeout);
+    dartTimeout = setTimeout(function(){ fishEl.classList.remove("darting"); }, 540);
   }
 
-  function climbStep(animated, isFinalStep){
-    var idx = climbedSteps;
+  function eatBite(animated, isFinalBite){
+    var idx = eatenBites;
     var myBuildId = buildId;
-    climbedSteps++;
+    var dot = dots[idx];
+    eatenBites++;
     markStage = -1;
+    if(dot) dot.classList.remove("next");
 
     if(animated && !reducedMotion){
-      triggerHop();
-      // hiiri lähtee liikkeelle heti, laskeutuu askelmalle hypyn puolivälissä
-      positionMouse(false);
+      triggerDart();
       setTimeout(function(){
         if(myBuildId !== buildId) return;
-        drawClimbed();
-        placeStepMark();
-        spawnParticlesAt(idx, 1);
-        stepMark.classList.remove("landed");
-        void stepMark.offsetWidth;
-        stepMark.classList.add("landed");
-        setTimeout(function(){ stepMark.classList.remove("landed"); }, 420);
+        if(dot){
+          dot.classList.add("gulp");
+          spawnParticlesAt(idx, 1);
+          setTimeout(function(){
+            if(myBuildId === buildId) dot.classList.add("eaten");
+          }, 400);
+        }
+        if(dots[idx+1]) dots[idx+1].classList.add("next");
         setMood("glee", 900);
-        if(isFinalStep) finishNow();
-      }, HOP_DELAY);
+        sizeFish();
+        positionFish(false);
+        if(isFinalBite) finishNow();
+      }, BITE_DELAY);
     } else {
-      drawClimbed();
-      placeStepMark();
-      positionMouse(true);
-      if(isFinalStep) finishNow();
+      if(dot) dot.classList.add("eaten");
+      if(dots[idx+1]) dots[idx+1].classList.add("next");
+      sizeFish();
+      positionFish(true);
+      if(isFinalBite) finishNow();
     }
   }
 
@@ -1147,18 +1028,18 @@
     progressFill.style.width = pct+"%";
     progressTrack.setAttribute("aria-valuenow", String(Math.round(pct)));
 
-    var target = Math.min(totalSteps, Math.floor(clampedElapsed/MS_PER_STEP));
-    if(target > climbedSteps){
-      while(climbedSteps < target){
-        var isLast = (climbedSteps + 1 === target);
-        var isFinal = (climbedSteps + 1 === totalSteps);
-        climbStep(isLast, isFinal);
+    var target = Math.min(totalBites, Math.floor(clampedElapsed/MS_PER_BITE));
+    if(target > eatenBites){
+      while(eatenBites < target){
+        var isLast = (eatenBites + 1 === target);
+        var isFinal = (eatenBites + 1 === totalBites);
+        eatBite(isLast, isFinal);
       }
       // "−1 min" -lattia nousee sitä mukaa kun askelmia on kiivetty
       minusBtn.disabled = !canAdjust(-1);
     }
-    countEl.textContent = climbedSteps + " / " + totalSteps + " askelmaa kiivetty";
-    if(state === "running") updateStepProgress(clampedElapsed);
+    countEl.textContent = eatenBites + " / " + totalBites + " planktonia syöty";
+    if(state === "running") updateBiteProgress(clampedElapsed);
   }
 
   function start(){
@@ -1172,7 +1053,7 @@
     ensureAudio();
     if(!tickTimer) tickTimer = setInterval(tick, 250);
     setControlsState();
-    announce("Ajastin käynnistyi. Edessä " + askelmaTeksti(totalSteps) + ".");
+    announce("Ajastin käynnistyi. Vedessä on " + planktonTeksti(totalBites) + ".");
   }
 
   function togglePause(){
@@ -1180,7 +1061,7 @@
       accumulatedMs += Date.now() - startEpoch;
       state = "paused";
       clearInterval(tickTimer); tickTimer = null;
-      mouseEl.classList.remove("crouch");
+      fishEl.classList.remove("ready");
       announce("Ajastin keskeytetty.");
     } else if(state === "paused"){
       state = "running";
@@ -1193,8 +1074,8 @@
 
   function reset(){
     clearInterval(tickTimer); tickTimer = null;
-    clearTimeout(hopTimeout);
-    mouseEl.classList.remove("hopping","celebrate","crouch");
+    clearTimeout(dartTimeout);
+    fishEl.classList.remove("darting","celebrate","ready");
     clearMood();
     state = "idle";
     hideCompletion();
@@ -1206,11 +1087,11 @@
   function hideCompletion(){
     completionEl.hidden = true;
     completionEl.setAttribute("aria-hidden","true");
-    mouseEl.classList.remove("celebrate");
+    fishEl.classList.remove("celebrate");
   }
   function showCompletion(){
-    completionText.textContent = "Kiipesit " + minuuttiTeksti(minutes) + " — " +
-                                 askelmaTeksti(totalSteps) + " ylöspäin.";
+    completionText.textContent = "Söit " + minuuttiTeksti(minutes) + " planktonia — " +
+                                 planktonTeksti(totalBites) + ".";
     completionEl.hidden = false;
     completionEl.setAttribute("aria-hidden","false");
   }
@@ -1222,13 +1103,13 @@
     timeEl.textContent = "00:00";
     progressFill.style.width = "100%";
     progressTrack.setAttribute("aria-valuenow","100");
-    mouseEl.classList.remove("hopping","crouch");
-    mouseEl.classList.add("celebrate");
+    fishEl.classList.remove("darting","ready");
+    fishEl.classList.add("celebrate");
     setMood("glee", 3600000); // pysyy iloisena seuraavaan jaksoon asti
     playMelody();
     showCompletion();
     setControlsState();
-    announce("Huipulla! Kiipesit " + minuuttiTeksti(minutes) + " ylöspäin.");
+    announce("Valmis! Kala kasvoi " + minuuttiTeksti(minutes) + " syödessään.");
   }
 
   function selectPreset(activeBtn){
@@ -1246,22 +1127,21 @@
     if(!matched) customInput.value = minutes;
   }
 
-  // Montako askelmaa jakson pituus on, ja saako sinne siirtyä: jaksoa ei voi
-  // lyhentää jo kiivettyä matkaa lyhyemmäksi, ja yksi askelma on jätettävä
-  // jäljelle kiivettäväksi.
-  function stepsFor(mins){ return Math.round(mins * 60000 / MS_PER_STEP); }
+  // Montako planktonia jakson pituus on, ja saako sinne siirtyä: jaksoa ei voi
+  // lyhentää jo syödyn matkan alle, ja yksi plankton on jätettävä syötäväksi.
+  function bitesFor(mins){ return Math.round(mins * 60000 / MS_PER_BITE); }
 
   function canAdjust(delta){
     var next = minutes + delta;
     if(next < 1 || next > 120) return false;
     if(state === "running" || state === "paused"){
-      return stepsFor(next) >= climbedSteps + 1;
+      return bitesFor(next) >= eatenBites + 1;
     }
     return true;
   }
 
-  // Jakson venyttäminen tai lyhentäminen kesken kaiken: portaikkoon lisätään
-  // tai siitä poistetaan askelmia ylhäältä, kello pitää kuluneen aikansa.
+  // Jakson venyttäminen tai lyhentäminen kesken kaiken: pilveen lisätään tai
+  // siitä poistetaan planktonia, kello pitää kuluneen aikansa.
   function adjustMinutes(delta){
     if(!canAdjust(delta)) return;
     minutes += delta;
@@ -1278,12 +1158,13 @@
       return;
     }
 
-    totalSteps = stepsFor(minutes);
-    renderStairs();
-    countEl.textContent = climbedSteps + " / " + totalSteps + " askelmaa kiivetty";
+    totalBites = bitesFor(minutes);
+    lastBiteX = null;
+    renderPond();
+    countEl.textContent = eatenBites + " / " + totalBites + " planktonia syöty";
     tick();
     setControlsState();
-    announce("Jakso " + minuuttiTeksti(minutes) + ", " + askelmaTeksti(totalSteps) + ".");
+    announce("Jakso " + minuuttiTeksti(minutes) + ", " + planktonTeksti(totalBites) + ".");
   }
 
   function applyMinutesChange(){
