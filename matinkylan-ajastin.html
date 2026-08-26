@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#22aea2" />
+<meta name="description" content="Matinkylän lukion ajastin – keskittymisajastin, jossa pieni hiiri kiipeää yhden askelman kymmenessä sekunnissa." />
+<meta name="robots" content="noindex, nofollow" />
+<title>Matinkylän lukion ajastin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Koko sovellus käyttää vain näitä värejä: turkoosi, lehdenvihreä, sininen,
+     valkoinen ja musta. Vaaleat sävyt ovat samoja värejä valkoisella
+     laimennettuina, eivät uusia värejä. */
+  :root{
+    --teal:#22aea2;
+    --green:#bce18b;
+    --blue:#249fff;
+    --white:#ffffff;
+    --ink:#000000;
+    --ink-soft:#4a4a4a;
+
+    --teal-tint:#edf9f8;
+    --teal-line:#bce6e2;
+    --blue-tint:#e9f5ff;
+
+    --radius:16px;
+    --shadow: 0 6px 18px rgba(0,0,0,.12);
+    --focus:#000000;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html,body{
+    margin:0;
+    min-height:100%;
+    background:
+      radial-gradient(circle at 18% 22%, rgba(34,174,162,.10), transparent 44%),
+      radial-gradient(circle at 84% 70%, rgba(36,159,255,.10), transparent 46%),
+      var(--teal-tint);
+    color:var(--ink);
+    font-family: "Karla", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+
+  .timer, .completion h2, .controls button, .preset-btn, #soundBtn, #resetBtn, .brand-text h1{
+    font-family: "Zilla Slab", Georgia, "Times New Roman", serif;
+  }
+
+  body{
+    display:flex;
+    justify-content:center;
+    padding:14px 12px 28px;
+  }
+
+  .app{
+    width:100%;
+    max-width:640px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  a, button, input{ font-family:inherit; }
+  button{ cursor:pointer; }
+  button:disabled{ cursor:not-allowed; opacity:.45; }
+
+  :focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  /* ---------- Header ---------- */
+  header.brand{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px 12px;
+    padding:6px 2px 0;
+  }
+  .brand-mark{ width:52px; height:36px; flex:0 0 auto; }
+  .brand-text{ min-width:0; }
+  .brand-text h1{
+    margin:0;
+    font-size:clamp(1.05rem, 4.6vw, 1.45rem);
+    font-weight:700;
+    letter-spacing:.06em;
+    line-height:1.05;
+    color:var(--ink);
+  }
+  .brand-side{
+    margin-left:auto;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:8px;
+  }
+
+  /* ---------- Panels ---------- */
+  .panel{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:14px;
+  }
+
+  /* ---------- Time picker ---------- */
+  .duration-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:center;
+  }
+  .duration-group legend, .group-label{
+    font-size:.78rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--ink-soft);
+    width:100%;
+    margin-bottom:2px;
+  }
+  .preset-btn{
+    border:2px solid var(--teal-line);
+    background:var(--white);
+    color:var(--ink);
+    border-radius:999px;
+    padding:8px 14px;
+    font-size:.95rem;
+    font-weight:600;
+    transition: background .15s, border-color .15s, color .15s, transform .1s;
+  }
+  .preset-btn:hover:not(:disabled){ border-color:var(--teal); }
+  .preset-btn:active:not(:disabled){ transform: scale(.96); }
+  .preset-btn[aria-pressed="true"]{
+    background:var(--blue);
+    border-color:var(--ink);
+    color:var(--ink);
+  }
+  .custom-wrap{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:var(--white);
+    border:2px solid var(--teal-line);
+    border-radius:999px;
+    padding:4px 5px 4px 10px;
+  }
+  .custom-wrap input{
+    width:62px;
+    border:none;
+    background:transparent;
+    font-size:.95rem;
+    color:var(--ink);
+    padding:6px 2px;
+  }
+  .custom-wrap button{
+    border:none;
+    background:var(--green);
+    color:var(--ink);
+    border-radius:999px;
+    padding:7px 12px;
+    font-size:.85rem;
+    font-weight:700;
+  }
+  .custom-wrap button:hover:not(:disabled){ background:var(--teal); }
+
+  /* ---------- Timer ---------- */
+  .timer-panel{ text-align:center; }
+  .timer{
+    font-size:clamp(3rem, 15vw, 4.6rem);
+    font-weight:800;
+    letter-spacing:.02em;
+    color:var(--ink);
+    font-variant-numeric: tabular-nums;
+    line-height:1;
+    margin:2px 0 6px;
+  }
+  .progressTrack{
+    height:12px;
+    border-radius:999px;
+    background:var(--white);
+    box-shadow:inset 0 0 0 2px var(--teal-line);
+    overflow:hidden;
+    margin:8px 0 8px;
+  }
+  .progressFill{
+    height:100%;
+    width:0%;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--teal), var(--green), var(--blue));
+    transition:width .25s linear;
+  }
+  .blockCount{
+    margin:0;
+    font-size:1rem;
+    font-weight:600;
+    color:var(--ink-soft);
+  }
+  .status-live{
+    min-height:1.1em;
+    font-size:.85rem;
+    color:var(--ink-soft);
+    font-weight:600;
+    margin-top:4px;
+  }
+
+  /* ---------- Controls ---------- */
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+  }
+  .controls button, #soundBtn{
+    border:none;
+    border-radius:12px;
+    padding:12px 18px;
+    font-size:1rem;
+    font-weight:700;
+    box-shadow:var(--shadow);
+    transition: transform .1s, filter .15s;
+  }
+  .controls button:hover:not(:disabled), #soundBtn:hover{ filter:brightness(1.06); }
+  .controls button:active:not(:disabled), #soundBtn:active{ transform:scale(.97); }
+  /* mustaa tekstiä kirkkailla väreillä: kontrasti 7,6:1 – 14,2:1 */
+  #startBtn{ background:var(--teal); color:var(--ink); }
+  #pauseBtn{ background:var(--green); color:var(--ink); }
+  #resetBtn{ background:var(--white); color:var(--ink); border:2px solid var(--ink) !important; }
+  /* `.controls button` on tarkempi kuin pelkkä `.adjust-btn`, joten nämä on
+     rajattava tai yhteinen padding voittaa ja rivi ei mahdu puhelimeen */
+  .controls .adjust-btn{
+    background:var(--white);
+    color:var(--ink);
+    border:2px solid var(--ink) !important;
+    padding:12px 12px;
+    font-size:.92rem;
+    font-variant-numeric:tabular-nums;
+  }
+  .controls .adjust-btn:hover:not(:disabled){ background:var(--blue-tint) !important; }
+  @media (max-width: 439px){
+    .controls .adjust-btn .unit{ display:none; }
+    .controls .adjust-btn{ padding:12px 10px; }
+    .controls #startBtn{ padding:12px 14px; }
+  }
+  #soundBtn{ background:var(--white); color:var(--ink); border:2px solid var(--ink) !important; }
+  button.icon-btn{
+    padding:10px;
+    min-width:44px;
+    min-height:44px;
+    font-size:1.25rem;
+    line-height:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* ---------- Completion banner ---------- */
+  .completion{
+    text-align:center;
+    background:linear-gradient(135deg, var(--green), var(--teal));
+    color:var(--ink);
+    border-radius:var(--radius);
+    padding:14px;
+    box-shadow:var(--shadow);
+    font-weight:700;
+  }
+  .completion[hidden]{ display:none; }
+  .completion h2{ margin:0 0 4px; font-size:1.3rem; }
+  .completion p{ margin:0; font-size:.95rem; font-weight:600; }
+  .completion-sub{
+    margin-top:4px !important;
+    font-size:.82rem !important;
+    font-weight:500 !important;
+    font-style:italic;
+    opacity:.8;
+  }
+
+  /* ---------- Scene ---------- */
+  .scene-panel{ padding:14px 8px; }
+  .scene{ position:relative; }
+
+  /* Portaikko: yksi askelma per jakso, mitat lasketaan niin että koko
+     kiipeäminen mahtuu näkyviin - mitään ei piiloteta vierityspalkin taakse. */
+  .stairs{
+    position:relative;
+    margin:0 auto;
+  }
+
+  /* Portaat piirretään yhtenä nauhana, ei erillisinä laatikoina: näin
+     portaikko on yhtenäinen myös silloin kun askelmia on satoja ja yksittäinen
+     askelma on vain parin pikselin levyinen. */
+  .stairs svg.stairsSvg{
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:block;
+    overflow:visible;
+  }
+  .stairs-base{ fill:var(--white); stroke:var(--ink); stroke-linejoin:round; stroke-linecap:round; }
+  .stairs-done{ fill:var(--teal); stroke:var(--ink); stroke-linejoin:round; stroke-linecap:round; }
+
+  /* askelma jota hiiri parhaillaan kiipeää: sininen hehku ja vihreä täyttö,
+     joka etenee kymmenen sekunnin aikana askelman poikki */
+  .stepMark{
+    position:absolute;
+    background:var(--white);
+    border:var(--bw,1px) solid var(--ink);
+    z-index:2;
+    animation: stepPulse 1.8s ease-in-out infinite;
+  }
+  .stepMark[hidden]{ display:none; }
+  .stepMark::after{
+    content:"";
+    position:absolute;
+    left:0; top:0; bottom:0;
+    width:var(--p,0%);
+    background:var(--green);
+  }
+  /* takaisin kääntyvässä syöksyssä kiivetään oikealta vasemmalle, joten
+     täytön on kasvettava samaan suuntaan */
+  .stepMark.rev::after{ left:auto; right:0; }
+  .stepMark.landed{ animation: stepPulse 1.8s ease-in-out infinite, land .4s ease-out; }
+  @keyframes stepPulse{
+    0%,100%{ box-shadow:0 0 0 0 rgba(36,159,255,0); }
+    50%{ box-shadow:0 0 7px 1px rgba(36,159,255,.6); }
+  }
+  @keyframes land{
+    0%{ transform:translateY(-3px); }
+    50%{ transform:translateY(1px); }
+    100%{ transform:translateY(0); }
+  }
+
+  .goal{ position:absolute; pointer-events:none; }
+  .goal svg{ width:100%; height:100%; display:block; overflow:visible; }
+  .goal .pennant{ animation: wave 2.6s ease-in-out infinite; transform-origin:6px 12px; }
+  @keyframes wave{
+    0%,100%{ transform:skewY(0deg); }
+    50%{ transform:skewY(-6deg); }
+  }
+
+  /* Hiiri seisoo aina sen askelman päällä jota se on kiipeämässä, ja piirtyy
+     kaiken muun päälle. */
+  .mouse-stage{
+    position:absolute;
+    top:0; left:0;
+    width:40px; height:40px;
+    pointer-events:none;
+    z-index:3;
+    transition: transform .42s cubic-bezier(.34,1.22,.64,1);
+    will-change: transform;
+  }
+  .mouse-svg{ width:100%; height:100%; overflow:visible; }
+  .mouse-stage.flip .mouse-svg{ transform: scaleX(-1); }
+  .mouse-svg.measuring .bob{ animation:none !important; }
+
+  .mouse-svg .mood{ display:none; }
+  .mouse-svg[data-mood="calm"]   .mood-calm,
+  .mouse-svg[data-mood="focus"]  .mood-focus,
+  .mouse-svg[data-mood="effort"] .mood-effort,
+  .mouse-svg[data-mood="strain"] .mood-strain,
+  .mouse-svg[data-mood="glee"]   .mood-glee{ display:block; }
+
+  .mouse-svg .bob{ animation: bob 2.4s ease-in-out infinite; }
+  @keyframes bob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-3px); }
+  }
+  .mouse-svg .tail{ animation: tailSway 2.2s ease-in-out infinite; transform-origin:48px 146px; }
+  @keyframes tailSway{
+    0%,100%{ transform:rotate(-5deg); }
+    50%{ transform:rotate(7deg); }
+  }
+  /* kyykistyy vähän ennen kuin ponnistaa seuraavalle askelmalle */
+  .mouse-svg.crouch .bob{ animation:none; transform:translateY(4px) scaleY(.94); }
+  .mouse-svg.hopping .bob{ animation: hop .5s cubic-bezier(.3,1.35,.5,1) 1; }
+  @keyframes hop{
+    0%   { transform:translateY(3px) scaleY(.9); }
+    24%  { transform:translateY(-16px) scaleY(1.1); }
+    58%  { transform:translateY(-20px) scaleY(1.02); }
+    100% { transform:translateY(0) scaleY(1); }
+  }
+  .mouse-svg.celebrate .bob{ animation: cheer .52s ease-in-out infinite; }
+  @keyframes cheer{
+    0%,100%{ transform:translateY(0) scaleY(1); }
+    45%{ transform:translateY(-14px) scaleY(1.06); }
+  }
+
+  .particle{ position:absolute; pointer-events:none; z-index:6; transform:translate(-50%,-50%); }
+  .particle.dust{
+    width:9px; height:9px; border-radius:50%;
+    background: radial-gradient(circle, rgba(34,174,162,.55), rgba(34,174,162,0));
+    animation: dustPop .5s ease-out forwards;
+  }
+  .particle.chip{
+    width:5px; height:5px; border-radius:1px;
+    background: var(--green);
+    animation: pop .5s ease-in forwards;
+  }
+  .particle.spark{
+    width:5px; height:5px; border-radius:50%;
+    background: var(--blue);
+    animation: pop .45s ease-out forwards;
+  }
+  @keyframes dustPop{
+    to{ transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(2); opacity:0; }
+  }
+  @keyframes pop{
+    to{ transform:translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot,0deg)); opacity:0; }
+  }
+
+  /* ---------- Explanation ---------- */
+  details.about{
+    background:var(--white);
+    border:2px solid var(--teal-line);
+    border-radius:var(--radius);
+    padding:10px 14px;
+  }
+  details.about summary{
+    cursor:pointer;
+    font-weight:700;
+    color:var(--ink);
+    font-size:.92rem;
+  }
+  details.about p{
+    font-size:.86rem;
+    color:var(--ink-soft);
+    line-height:1.5;
+    margin:8px 0 2px;
+  }
+
+  .visually-hidden{
+    position:absolute;
+    width:1px;height:1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    white-space:nowrap;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .mouse-svg .bob,
+    .mouse-svg .tail,
+    .mouse-svg.hopping .bob,
+    .mouse-svg.celebrate .bob,
+    .goal .pennant,
+    .stepMark,
+    .stepMark.landed{
+      animation:none !important;
+    }
+    .particle{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="brand">
+    <svg class="brand-mark" viewBox="0 0 64 44" role="img" aria-label="Matinkylän lukion tunnus">
+      <rect x="2.5" y="29.5" width="19" height="12" fill="#22aea2" stroke="#000" stroke-width="3"/>
+      <rect x="21.5" y="19.5" width="19" height="22" fill="#bce18b" stroke="#000" stroke-width="3"/>
+      <rect x="40.5" y="7.5" width="19" height="34" fill="#249fff" stroke="#000" stroke-width="3"/>
+    </svg>
+    <div class="brand-text">
+      <h1>MATINKYLÄN LUKIO</h1>
+    </div>
+    <div class="brand-side">
+      <button type="button" id="soundBtn" class="icon-btn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="durationHeading">
+    <p id="durationHeading" class="group-label">Valitse jakson pituus</p>
+    <div class="duration-group" role="group" aria-label="Valitse jakson pituus minuutteina">
+      <button type="button" class="preset-btn" data-minutes="5" aria-pressed="false">5 min</button>
+      <button type="button" class="preset-btn" data-minutes="15" aria-pressed="false">15 min</button>
+      <button type="button" class="preset-btn" data-minutes="25" aria-pressed="false">25 min</button>
+      <button type="button" class="preset-btn" data-minutes="45" aria-pressed="false">45 min</button>
+      <button type="button" class="preset-btn" data-minutes="60" aria-pressed="false">60 min</button>
+      <div class="custom-wrap">
+        <label class="visually-hidden" for="customMinutes">Oma aika minuutteina, 1–120</label>
+        <input type="number" id="customMinutes" min="1" max="120" inputmode="numeric" placeholder="1–120" />
+        <button type="button" id="applyCustomBtn">Aseta</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel timer-panel" aria-label="Ajastin">
+    <div class="timer" id="timeDisplay" role="timer" aria-label="Jäljellä oleva aika">25:00</div>
+    <div class="progressTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Jakson eteneminen" id="progressTrack">
+      <div class="progressFill" id="progressFill"></div>
+    </div>
+    <p class="blockCount visually-hidden" id="blockCount">0 / 150 askelmaa kiivetty</p>
+    <p class="status-live visually-hidden" id="statusLive" aria-live="polite"></p>
+  </section>
+
+  <section class="panel">
+    <div class="controls">
+      <button type="button" id="minusBtn" class="adjust-btn" aria-label="Lyhennä jaksoa minuutilla">−1<span class="unit"> min</span></button>
+      <button type="button" id="startBtn">▶ Aloita</button>
+      <button type="button" id="pauseBtn" class="icon-btn" disabled aria-label="Keskeytä">⏸</button>
+      <button type="button" id="resetBtn" class="icon-btn" aria-label="Nollaa">↺</button>
+      <button type="button" id="plusBtn" class="adjust-btn" aria-label="Pidennä jaksoa minuutilla">+1<span class="unit"> min</span></button>
+    </div>
+  </section>
+
+  <div class="completion visually-hidden" id="completion" hidden aria-hidden="true">
+    <h2>Huipulla!</h2>
+    <p id="completionText">Kiipesit 25 minuuttia ylöspäin.</p>
+    <p class="completion-sub">Yksi askelma kerrallaan pääsee huipulle.</p>
+  </div>
+
+  <section class="panel scene-panel" aria-label="Portaikko">
+    <div class="scene" id="scene">
+      <p class="visually-hidden" id="stairsLabel">Portaikko ja sitä kiipeävä hiiri</p>
+      <div class="stairs" id="stairs" aria-labelledby="stairsLabel">
+        <svg class="stairsSvg" id="stairsSvg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="stairs-base" id="stairsBase" d=""></path>
+          <path class="stairs-done" id="stairsDone" d=""></path>
+        </svg>
+        <div class="stepMark" id="stepMark" hidden></div>
+        <div class="goal" id="goal" hidden>
+          <svg viewBox="0 0 26 42" aria-hidden="true">
+            <path class="pennant" d="M6,4 L24,11 L6,18 Z" fill="#249fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M6,2 L6,42" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="mouse-stage" id="mouseStage">
+          <svg class="mouse-svg" id="mouse" data-mood="calm" viewBox="0 0 200 200" role="img" aria-label="Portaita kiipeävä hiiri">
+            <g class="bob">
+              <!-- häntä piirtyy vartalon taakse -->
+              <path class="tail" d="M50,146 C26,152 10,136 16,118 C20,106 32,102 38,110"
+                    fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+              <!-- korva vartalon takana, vain yläosa jää näkyviin -->
+              <circle cx="120" cy="70" r="25" fill="#fff" stroke="#000" stroke-width="6"/>
+              <circle cx="120" cy="70" r="13" fill="#bce18b"/>
+              <!-- jalat -->
+              <g class="feet">
+                <ellipse cx="74" cy="168" rx="15" ry="8" fill="#fff" stroke="#000" stroke-width="5"/>
+                <ellipse cx="118" cy="166" rx="14" ry="8" fill="#fff" stroke="#000" stroke-width="5"/>
+              </g>
+              <!-- vartalo, pää ja kuono yhtenä siluettina -->
+              <path d="M44,150 C34,120 44,84 78,72 C102,64 128,66 146,80
+                       C160,90 176,102 188,112 C174,120 160,124 150,126
+                       C140,134 130,142 114,150 C92,162 58,162 44,150 Z"
+                    fill="#fff" stroke="#000" stroke-width="6" stroke-linejoin="round"/>
+              <!-- kuonon kärki ja viikset -->
+              <circle cx="186" cy="112" r="6" fill="#249fff"/>
+              <path d="M176,118 C186,124 194,128 199,130 M176,120 C184,128 188,134 190,140"
+                    fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round" opacity=".75"/>
+              <!-- ilmeet: yksi ryhmä per työvaihe -->
+              <g class="mood mood-calm">
+                <circle cx="156" cy="103" r="6.5" fill="#000"/>
+                <circle cx="158" cy="101" r="2" fill="#fff"/>
+                <path d="M150,118 C155,122 162,121 165,117" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+              </g>
+              <g class="mood mood-focus">
+                <ellipse cx="156" cy="104" rx="6.5" ry="5" fill="#000"/>
+                <path d="M146,93 C151,89 159,89 164,92" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+                <path d="M150,119 L165,118" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+              </g>
+              <g class="mood mood-effort">
+                <ellipse cx="156" cy="105" rx="6" ry="4" fill="#000"/>
+                <path d="M145,94 C151,88 160,89 165,94" fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round"/>
+                <ellipse cx="157" cy="119" rx="6" ry="4.5" fill="#000"/>
+              </g>
+              <g class="mood mood-strain">
+                <path d="M149,106 C153,100 160,100 164,106" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M144,93 C151,87 161,88 166,94" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M148,116 C154,124 163,124 168,115 Z" fill="#000"/>
+                <path d="M153,118 L154,122 M160,118 L160,122" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+              </g>
+              <g class="mood mood-glee">
+                <path d="M149,104 C153,96 161,96 165,104" fill="none" stroke="#000" stroke-width="3.6" stroke-linecap="round"/>
+                <path d="M146,116 C153,127 164,126 169,114" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <details class="about">
+    <summary>Miten ajastin toimii?</summary>
+    <p>
+      Yksi askelma on kymmenen sekuntia keskittymistä. Hiiri kiipeää portaikkoa ylöspäin
+      niin kauan kuin työskentelet, ja koko jakson portaat näkyvät kerralla: näet aina
+      montako askelmaa on takana ja montako huipulle on vielä matkaa. Ajastin mittaa
+      oikeaa kulunutta aikaa, joten jakso kestää täsmälleen valitun ajan, vaikka
+      välilehti olisi taustalla. Taukoa ei käynnisty automaattisesti — pidä se silloin
+      kun se sinulle sopii.
+    </p>
+  </details>
+
+</div>
+
+<p class="visually-hidden">
+  Matinkylän lukion ajastin. Valitse jakson pituus ja käynnistä ajastin Aloita-painikkeella.
+  Hiiri kiipeää yhden askelman kymmenen sekunnin välein. Tilailmoitukset luetaan tälle
+  sivulle automaattisesti.
+</p>
+
+<script>
+(function(){
+  "use strict";
+
+  var PRESETS = [5,15,25,45,60];
+  var STORAGE_MIN = "matinkyla_minutes";
+  var STORAGE_SOUND = "matinkyla_sound";
+  var HOP_DELAY = 200;      // ms hypyn alusta siihen kun hiiri laskeutuu
+  var MS_PER_STEP = 10000;  // yksi askelma kymmenessä sekunnissa
+
+  var minutes = 25;
+  var soundOn = true;
+  var state = "idle"; // idle | running | paused | finished
+  var totalMs = 0, accumulatedMs = 0, startEpoch = 0;
+  var totalSteps = 0, climbedSteps = 0;
+  var buildId = 0;
+  var tickTimer = null, hopTimeout = null;
+  var geom = null;
+  var audioCtx = null;
+  var reducedMotion = false;
+
+  var timeEl = document.getElementById("timeDisplay");
+  var progressTrack = document.getElementById("progressTrack");
+  var progressFill = document.getElementById("progressFill");
+  var countEl = document.getElementById("blockCount");
+  var statusEl = document.getElementById("statusLive");
+  var startBtn = document.getElementById("startBtn");
+  var pauseBtn = document.getElementById("pauseBtn");
+  var resetBtn = document.getElementById("resetBtn");
+  var minusBtn = document.getElementById("minusBtn");
+  var plusBtn = document.getElementById("plusBtn");
+  var soundBtn = document.getElementById("soundBtn");
+  var stairsEl = document.getElementById("stairs");
+  var stairsSvg = document.getElementById("stairsSvg");
+  var stairsBase = document.getElementById("stairsBase");
+  var stairsDone = document.getElementById("stairsDone");
+  var stepMark = document.getElementById("stepMark");
+  var goalEl = document.getElementById("goal");
+  var sceneEl = document.getElementById("scene");
+  var mouseEl = document.getElementById("mouse");
+  var mouseStage = document.getElementById("mouseStage");
+  var completionEl = document.getElementById("completion");
+  var completionText = document.getElementById("completionText");
+  var customInput = document.getElementById("customMinutes");
+  var applyCustomBtn = document.getElementById("applyCustomBtn");
+  var presetButtons = Array.prototype.slice.call(document.querySelectorAll(".preset-btn"));
+
+  try{
+    reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }catch(e){ reducedMotion = false; }
+
+  function loadMinutes(){
+    try{
+      var v = parseInt(localStorage.getItem(STORAGE_MIN), 10);
+      if(!isNaN(v) && v>=1 && v<=120) return v;
+    }catch(e){}
+    return null;
+  }
+  function saveMinutes(){
+    try{ localStorage.setItem(STORAGE_MIN, String(minutes)); }catch(e){}
+  }
+  function loadSound(){
+    try{
+      var v = localStorage.getItem(STORAGE_SOUND);
+      if(v === "0") return false;
+      if(v === "1") return true;
+    }catch(e){}
+    return true;
+  }
+  function saveSound(){
+    try{ localStorage.setItem(STORAGE_SOUND, soundOn ? "1" : "0"); }catch(e){}
+  }
+
+  function minuuttiTeksti(n){
+    return n === 1 ? "1 minuutin" : n + " minuuttia";
+  }
+  function askelmaTeksti(n){
+    return n === 1 ? "1 askelma" : n + " askelmaa";
+  }
+
+  function formatTime(ms){
+    var totalSec = Math.max(0, Math.ceil(ms/1000));
+    var m = Math.floor(totalSec/60);
+    var s = totalSec % 60;
+    return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+  }
+
+  function announce(text){ statusEl.textContent = text; }
+
+  /* ---------- Portaikon geometria ----------
+     Yhtenäisen kiipeämisen korkeus on aina verrannollinen askelmien määrään,
+     joten 720 askelmaa ei mahdu ruudulle täysikokoisena. Nousu per askelma
+     lasketaan korkeusbudjetista, askelman leveys sidotaan nousuun niin että
+     portaiden kaltevuus pysyy samana, ja portaikko kääntyy takaisin kuin
+     oikeassa porraskäytävässä kun leveys loppuu. Näin koko jakso on aina
+     näkyvissä ilman vieritettävää laatikkoa. */
+  var MAX_RISE = 26, MIN_RISE = 0.4, MIN_STEP_W = 2.4, TREAD_RATIO = 1.7;
+
+  function heightBudget(){
+    var h = 340;
+    try{ h = Math.max(220, Math.min(380, Math.round(window.innerHeight * 0.42))); }catch(e){}
+    return h;
+  }
+
+  function computeGeometry(n){
+    n = Math.max(1, n);
+    var availW = Math.max(150, (sceneEl.clientWidth || 320) - 6);
+    var rise = Math.max(MIN_RISE, Math.min(MAX_RISE, heightBudget() / n));
+    var stepW = Math.max(MIN_STEP_W, rise * TREAD_RATIO);
+    var maxPerFlight = Math.max(2, Math.floor(availW / stepW));
+    var flights = Math.max(1, Math.ceil(n / maxPerFlight));
+    var perFlight = Math.ceil(n / flights);
+    var bw = Math.max(0.6, Math.min(1.6, rise * 0.22));
+    // nauhan paksuus: aina vähintään pari pikseliä, jotta kiivetty osuus
+    // erottuu turkoosina myös pienimmillä askelmilla
+    var thick = Math.max(3, rise * 1.35 + bw*2);
+    var mouse = Math.max(22, Math.min(54, rise * 3.4));
+    return {
+      n:n, rise:rise, stepW:stepW, perFlight:perFlight, flights:flights,
+      bw:bw, thick:thick, mouse:mouse,
+      totalH: n*rise + thick,
+      width: perFlight*stepW
+    };
+  }
+
+  function stepX(i, g){
+    var f = Math.floor(i / g.perFlight);
+    var j = i - f * g.perFlight;
+    var col = (f % 2 === 0) ? j : (g.perFlight - 1 - j);
+    return col * g.stepW;
+  }
+  function stepTop(i, g){ return g.totalH - (i+1) * g.rise - g.thick; }
+  function isReversed(i, g){ return Math.floor(i / g.perFlight) % 2 === 1; }
+
+  // Yhden porrassyöksyn nauha: askelmien yläprofiili nousevassa järjestyksessä,
+  // sitten sama profiili paksuuden verran alempaa takaisin. Näin portaikko on
+  // yksi yhtenäinen muoto ilman saumoja askelmien välissä silloinkin kun
+  // yksittäinen askelma on vain parin pikselin levyinen.
+  function flightRibbon(from, to, g){
+    if(to <= from) return "";
+    var f = Math.floor(from / g.perFlight);
+    var rev = (f % 2 === 1);
+    var pts = [];
+    for(var i=from;i<to;i++){
+      var x = stepX(i,g), y = stepTop(i,g);
+      if(rev){ pts.push([x+g.stepW, y]); pts.push([x, y]); }
+      else   { pts.push([x, y]);         pts.push([x+g.stepW, y]); }
+    }
+    var d = "M" + pts[0][0].toFixed(2) + "," + pts[0][1].toFixed(2);
+    for(var a=1;a<pts.length;a++) d += "L" + pts[a][0].toFixed(2) + "," + pts[a][1].toFixed(2);
+    for(var b=pts.length-1;b>=0;b--) d += "L" + pts[b][0].toFixed(2) + "," + (pts[b][1]+g.thick).toFixed(2);
+    return d + "Z";
+  }
+
+  // Portaikko voi kääntyä takaisin useaan kertaan, joten jokainen syöksy
+  // piirretään omana osapolkunaan samaan polkuun.
+  function stairsPath(from, to, g){
+    var d = "";
+    var i = from;
+    while(i < to){
+      var f = Math.floor(i / g.perFlight);
+      var end = Math.min(to, (f+1) * g.perFlight);
+      d += flightRibbon(i, end, g);
+      i = end;
+    }
+    return d;
+  }
+
+  function placeGoal(g){
+    var i = g.n - 1;
+    var h = Math.max(20, Math.min(48, g.mouse * 0.95));
+    var w = h * 0.62;
+    goalEl.hidden = false;
+    goalEl.style.left = (stepX(i,g) + g.stepW/2 - w*0.14).toFixed(2) + "px";
+    goalEl.style.top = (stepTop(i,g) - h).toFixed(2) + "px";
+    goalEl.style.width = w.toFixed(2) + "px";
+    goalEl.style.height = h.toFixed(2) + "px";
+  }
+
+  // Askelmamerkki kertoo mitä askelmaa hiiri parhaillaan kiipeää. Pienimmillä
+  // mitoilla se levitetään muutamaan pikseliin, jotta se ylipäätään näkyy.
+  function placeStepMark(){
+    if(!geom || climbedSteps >= geom.n){ stepMark.hidden = true; return; }
+    var g = geom, i = climbedSteps;
+    var w = Math.max(3, g.stepW), h = Math.max(3, g.thick);
+    stepMark.hidden = false;
+    stepMark.style.left = (stepX(i,g) + g.stepW/2 - w/2).toFixed(2) + "px";
+    stepMark.style.top = (stepTop(i,g) + g.thick/2 - h/2).toFixed(2) + "px";
+    stepMark.style.width = w.toFixed(2) + "px";
+    stepMark.style.height = h.toFixed(2) + "px";
+    stepMark.style.setProperty("--p", "0%");
+    stepMark.classList.toggle("rev", isReversed(i, g));
+  }
+
+  // Portaikko piirretään aina uudelleen nykyisestä tilasta (montako askelmaa
+  // kiivetty), joten sama funktio kelpaa rakentamiseen, ikkunan koon muutokseen
+  // ja jakson pituuden säätämiseen.
+  function renderStairs(){
+    geom = computeGeometry(totalSteps);
+    stairsEl.style.width = geom.width.toFixed(2) + "px";
+    stairsEl.style.height = geom.totalH.toFixed(2) + "px";
+    // lippu ja ylimmällä askelmalla seisova hiiri nousevat portaikon
+    // yläpuolelle, joten niille varataan tilaa laatikon päältä
+    stairsEl.style.marginTop = Math.ceil(Math.max(geom.mouse, Math.min(48, geom.mouse*0.95)) + 6) + "px";
+    stairsEl.style.setProperty("--bw", geom.bw.toFixed(2) + "px");
+    stairsSvg.setAttribute("viewBox", "0 0 " + geom.width.toFixed(2) + " " + geom.totalH.toFixed(2));
+    stairsBase.style.strokeWidth = geom.bw.toFixed(2);
+    stairsDone.style.strokeWidth = geom.bw.toFixed(2);
+    mouseStage.style.width = geom.mouse.toFixed(1) + "px";
+    mouseStage.style.height = geom.mouse.toFixed(1) + "px";
+
+    stairsBase.setAttribute("d", stairsPath(0, geom.n, geom));
+    drawClimbed();
+    placeGoal(geom);
+    placeStepMark();
+    positionMouse(true);
+  }
+
+  function drawClimbed(){
+    if(!geom) return;
+    stairsDone.setAttribute("d", climbedSteps > 0 ? stairsPath(0, climbedSteps, geom) : "");
+  }
+
+  function buildSession(){
+    buildId++;
+    totalMs = minutes*60000;
+    totalSteps = Math.round(totalMs / MS_PER_STEP);
+    climbedSteps = 0;
+    accumulatedMs = 0;
+    markStage = -1;
+    renderStairs();
+    countEl.textContent = "0 / " + totalSteps + " askelmaa kiivetty";
+    progressFill.style.width = "0%";
+    progressTrack.setAttribute("aria-valuenow","0");
+    timeEl.textContent = formatTime(totalMs);
+  }
+
+  // Missä hiiren tassut ovat sen laatikon sisällä, osuutena laatikosta.
+  // Mitataan oikeasta kuvasta, jotta hiiri seisoo askelman päällä vaikka
+  // piirrosta myöhemmin muutettaisiin.
+  var footSpot = null;
+  function measureFeet(){
+    try{
+      mouseEl.classList.add("measuring");
+      var wasFlipped = mouseStage.classList.contains("flip");
+      mouseStage.classList.remove("flip");
+      var feet = mouseEl.querySelector(".feet");
+      var stageRect = mouseStage.getBoundingClientRect();
+      var feetRect = feet.getBoundingClientRect();
+      mouseEl.classList.remove("measuring");
+      if(wasFlipped) mouseStage.classList.add("flip");
+      if(!stageRect.width || !feetRect.width) throw new Error("not laid out");
+      footSpot = {
+        x: (feetRect.left + feetRect.width/2 - stageRect.left) / stageRect.width,
+        y: (feetRect.bottom - stageRect.top) / stageRect.height
+      };
+    }catch(e){
+      mouseEl.classList.remove("measuring");
+      footSpot = { x: 0.48, y: 0.88 };
+    }
+  }
+
+  function positionMouse(instant){
+    if(!geom) return;
+    if(!footSpot) measureFeet();
+    var i = Math.min(climbedSteps, geom.n - 1);
+    var w = geom.mouse, h = geom.mouse;
+    var reversed = isReversed(i, geom);
+    // peilattuna tassujen vaakapaikka peilautuu myös
+    var fx = reversed ? (1 - footSpot.x) : footSpot.x;
+    var x = stepX(i, geom) + geom.stepW/2 - fx * w;
+    var y = stepTop(i, geom) - footSpot.y * h;
+    x = Math.max(-w*0.35, Math.min(x, geom.width - w*0.65));
+    mouseStage.classList.toggle("flip", reversed);
+    if(instant){
+      var prev = mouseStage.style.transition;
+      mouseStage.style.transition = "none";
+      mouseStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+      void mouseStage.offsetWidth;
+      mouseStage.style.transition = prev;
+    } else {
+      mouseStage.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+    }
+  }
+
+  var repositionTimer = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(repositionTimer);
+    repositionTimer = setTimeout(function(){
+      footSpot = null;
+      renderStairs();
+    }, 120);
+  });
+
+  /* ---------- Ääni ---------- */
+  function ensureAudio(){
+    if(!audioCtx){
+      var Ctx = window.AudioContext || window.webkitAudioContext;
+      if(!Ctx) return null;
+      audioCtx = new Ctx();
+    }
+    if(audioCtx.state === "suspended"){
+      try{ audioCtx.resume(); }catch(e){}
+    }
+    return audioCtx;
+  }
+
+  // Selaimet päästävät äänen läpi vasta oikean kosketuksen jälkeen, ja osa
+  // (etenkin iOS Safari) vasta kun jotain on todella soitettu. Alustetaan
+  // konteksti ensimmäisestä kosketuksesta, jotta loppumelodia kuuluu varmasti.
+  function primeAudio(){
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    try{
+      var buf = ctx.createBuffer(1, 1, ctx.sampleRate);
+      var src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+    }catch(e){}
+    if(ctx.state === "running"){
+      document.removeEventListener("pointerdown", primeAudio, true);
+      document.removeEventListener("keydown", primeAudio, true);
+    }
+  }
+  document.addEventListener("pointerdown", primeAudio, true);
+  document.addEventListener("keydown", primeAudio, true);
+
+  function playMelody(){
+    if(!soundOn) return;
+    var ctx = ensureAudio();
+    if(!ctx) return;
+    // Keskeytetty konteksti nielaisee ajastetut äänet, joten odotetaan resume.
+    if(ctx.state === "suspended"){
+      try{ ctx.resume().then(scheduleMelody).catch(function(){}); }catch(e){}
+    } else {
+      scheduleMelody();
+    }
+
+    function scheduleMelody(){
+      var master = ctx.createGain();
+      master.gain.value = 1;
+      var warm = ctx.createBiquadFilter();
+      warm.type = "lowpass";
+      warm.frequency.value = 2600;
+      warm.Q.value = 0.7;
+      master.connect(warm).connect(ctx.destination);
+
+      function bell(freq, start, dur, peak){
+        var osc = ctx.createOscillator();
+        var gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.0001, start);
+        gain.gain.linearRampToValueAtTime(peak, start+0.06);
+        gain.gain.exponentialRampToValueAtTime(0.0001, start+dur);
+        osc.connect(gain).connect(master);
+        osc.start(start); osc.stop(start+dur+0.05);
+
+        var osc2 = ctx.createOscillator();
+        var gain2 = ctx.createGain();
+        osc2.type = "sine";
+        osc2.frequency.value = freq*2;
+        gain2.gain.setValueAtTime(0.0001, start);
+        gain2.gain.linearRampToValueAtTime(peak*0.16, start+0.06);
+        gain2.gain.exponentialRampToValueAtTime(0.0001, start+dur*0.6);
+        osc2.connect(gain2).connect(master);
+        osc2.start(start); osc2.stop(start+dur+0.05);
+      }
+
+      // nouseva kolmisointu, kuin viimeiset askelmat huipulle
+      var t0 = ctx.currentTime + 0.06;
+      [523.25, 659.25, 783.99].forEach(function(f, i){
+        bell(f, t0 + i*0.26, 1.2, 0.22);
+      });
+      bell(1046.50, t0+0.78, 2.0, 0.18);
+      bell(659.25,  t0+0.78, 2.2, 0.12);
+      bell(392.00,  t0+0.78, 2.4, 0.10);
+    }
+  }
+
+  /* ---------- Hiukkaset ---------- */
+  function spawnParticle(type, cx, cy){
+    if(reducedMotion) return;
+    var el = document.createElement("div");
+    el.className = "particle " + type;
+    var angle = Math.random()*Math.PI*2;
+    var dist = 14 + Math.random()*30;
+    var dx = Math.cos(angle)*dist;
+    var dy = Math.sin(angle)*dist - 10;
+    el.style.left = cx+"px";
+    el.style.top = cy+"px";
+    el.style.setProperty("--dx", dx.toFixed(1)+"px");
+    el.style.setProperty("--dy", dy.toFixed(1)+"px");
+    el.style.setProperty("--rot", (Math.random()*360).toFixed(0)+"deg");
+    sceneEl.appendChild(el);
+    el.addEventListener("animationend", function(){ el.remove(); }, {once:true});
+    setTimeout(function(){ if(el.parentNode) el.remove(); }, 700);
+  }
+
+  // Pöly nousee siitä askelmasta johon hiiri juuri laskeutui; koordinaatit
+  // lasketaan geometriasta, koska askelmat eivät ole omia elementtejään.
+  function spawnParticlesAt(i, strength){
+    if(reducedMotion || !geom) return;
+    var s = strength || 1;
+    var cx = stairsEl.offsetLeft + stepX(i, geom) + geom.stepW/2;
+    var cy = stairsEl.offsetTop + stepTop(i, geom) + geom.thick/2;
+    for(var a=0;a<Math.round(5*s);a++) spawnParticle("dust", cx, cy);
+    for(var b=0;b<Math.round(3*s);b++) spawnParticle("chip", cx, cy);
+    for(var c=0;c<Math.round(2*s);c++) spawnParticle("spark", cx, cy);
+  }
+
+  /* ---------- Ilme ---------- */
+  var MOODS = ["calm", "focus", "effort", "strain"];
+  var moodHoldUntil = 0;
+  function setMood(mood, holdMs){
+    if(holdMs){
+      moodHoldUntil = Date.now() + holdMs;
+    } else if(Date.now() < moodHoldUntil){
+      return;
+    }
+    mouseEl.setAttribute("data-mood", mood);
+  }
+  function clearMood(){
+    moodHoldUntil = 0;
+    mouseEl.setAttribute("data-mood", "calm");
+  }
+
+  // Askelma täyttyy vähitellen kymmenen sekunnin aikana ja hiiri kyykistyy
+  // ponnistusta varten, jotta odotus näkyy tasaisena etenemisenä eikä
+  // äkillisenä hyppynä jakson lopussa.
+  var STAGES = [0.30, 0.58, 0.82];
+  var markStage = -1;
+  function updateStepProgress(elapsed){
+    if(!geom || climbedSteps >= geom.n) return;
+    var frac = (elapsed - climbedSteps * MS_PER_STEP) / MS_PER_STEP;
+    frac = Math.max(0, Math.min(1, frac));
+    stepMark.style.setProperty("--p", (frac*100).toFixed(1) + "%");
+
+    var stage = 0;
+    for(var i=0;i<STAGES.length;i++){ if(frac >= STAGES[i]) stage = i+1; }
+    setMood(MOODS[stage]);
+    if(markStage === stage) return;
+    markStage = stage;
+    if(reducedMotion) return;
+    // viimeisellä hetkellä hiiri kyykistyy ponnistukseen
+    mouseEl.classList.toggle("crouch", stage === 3);
+  }
+
+  function triggerHop(){
+    mouseEl.classList.remove("crouch");
+    mouseEl.classList.remove("hopping");
+    void mouseEl.offsetWidth;
+    mouseEl.classList.add("hopping");
+    clearTimeout(hopTimeout);
+    hopTimeout = setTimeout(function(){ mouseEl.classList.remove("hopping"); }, 540);
+  }
+
+  function climbStep(animated, isFinalStep){
+    var idx = climbedSteps;
+    var myBuildId = buildId;
+    climbedSteps++;
+    markStage = -1;
+
+    if(animated && !reducedMotion){
+      triggerHop();
+      // hiiri lähtee liikkeelle heti, laskeutuu askelmalle hypyn puolivälissä
+      positionMouse(false);
+      setTimeout(function(){
+        if(myBuildId !== buildId) return;
+        drawClimbed();
+        placeStepMark();
+        spawnParticlesAt(idx, 1);
+        stepMark.classList.remove("landed");
+        void stepMark.offsetWidth;
+        stepMark.classList.add("landed");
+        setTimeout(function(){ stepMark.classList.remove("landed"); }, 420);
+        setMood("glee", 900);
+        if(isFinalStep) finishNow();
+      }, HOP_DELAY);
+    } else {
+      drawClimbed();
+      placeStepMark();
+      positionMouse(true);
+      if(isFinalStep) finishNow();
+    }
+  }
+
+  function setControlsState(){
+    var busy = (state === "running" || state === "paused");
+    startBtn.disabled = busy;
+    pauseBtn.disabled = (state === "idle" || state === "finished");
+    pauseBtn.textContent = state === "paused" ? "▶" : "⏸";
+    pauseBtn.setAttribute("aria-label", state === "paused" ? "Jatka" : "Keskeytä");
+    presetButtons.forEach(function(b){ b.disabled = busy; });
+    customInput.disabled = busy;
+    applyCustomBtn.disabled = busy;
+    // nämä pysyvät käytettävissä myös kesken jakson - se on koko idea
+    minusBtn.disabled = !canAdjust(-1);
+    plusBtn.disabled = !canAdjust(1);
+  }
+
+  function tick(){
+    var now = Date.now();
+    var elapsed = accumulatedMs + (state === "running" ? (now - startEpoch) : 0);
+    var clampedElapsed = Math.min(elapsed, totalMs);
+    var remaining = totalMs - clampedElapsed;
+
+    timeEl.textContent = formatTime(remaining);
+    var pct = totalMs > 0 ? (clampedElapsed/totalMs*100) : 0;
+    progressFill.style.width = pct+"%";
+    progressTrack.setAttribute("aria-valuenow", String(Math.round(pct)));
+
+    var target = Math.min(totalSteps, Math.floor(clampedElapsed/MS_PER_STEP));
+    if(target > climbedSteps){
+      while(climbedSteps < target){
+        var isLast = (climbedSteps + 1 === target);
+        var isFinal = (climbedSteps + 1 === totalSteps);
+        climbStep(isLast, isFinal);
+      }
+      // "−1 min" -lattia nousee sitä mukaa kun askelmia on kiivetty
+      minusBtn.disabled = !canAdjust(-1);
+    }
+    countEl.textContent = climbedSteps + " / " + totalSteps + " askelmaa kiivetty";
+    if(state === "running") updateStepProgress(clampedElapsed);
+  }
+
+  function start(){
+    if(state === "running") return;
+    if(state === "idle" || state === "finished"){
+      hideCompletion();
+      buildSession();
+    }
+    state = "running";
+    startEpoch = Date.now();
+    ensureAudio();
+    if(!tickTimer) tickTimer = setInterval(tick, 250);
+    setControlsState();
+    announce("Ajastin käynnistyi. Edessä " + askelmaTeksti(totalSteps) + ".");
+  }
+
+  function togglePause(){
+    if(state === "running"){
+      accumulatedMs += Date.now() - startEpoch;
+      state = "paused";
+      clearInterval(tickTimer); tickTimer = null;
+      mouseEl.classList.remove("crouch");
+      announce("Ajastin keskeytetty.");
+    } else if(state === "paused"){
+      state = "running";
+      startEpoch = Date.now();
+      tickTimer = setInterval(tick, 250);
+      announce("Ajastin jatkuu.");
+    }
+    setControlsState();
+  }
+
+  function reset(){
+    clearInterval(tickTimer); tickTimer = null;
+    clearTimeout(hopTimeout);
+    mouseEl.classList.remove("hopping","celebrate","crouch");
+    clearMood();
+    state = "idle";
+    hideCompletion();
+    buildSession();
+    setControlsState();
+    announce("Ajastin nollattu.");
+  }
+
+  function hideCompletion(){
+    completionEl.hidden = true;
+    completionEl.setAttribute("aria-hidden","true");
+    mouseEl.classList.remove("celebrate");
+  }
+  function showCompletion(){
+    completionText.textContent = "Kiipesit " + minuuttiTeksti(minutes) + " — " +
+                                 askelmaTeksti(totalSteps) + " ylöspäin.";
+    completionEl.hidden = false;
+    completionEl.setAttribute("aria-hidden","false");
+  }
+
+  function finishNow(){
+    if(state === "finished") return;
+    clearInterval(tickTimer); tickTimer = null;
+    state = "finished";
+    timeEl.textContent = "00:00";
+    progressFill.style.width = "100%";
+    progressTrack.setAttribute("aria-valuenow","100");
+    mouseEl.classList.remove("hopping","crouch");
+    mouseEl.classList.add("celebrate");
+    setMood("glee", 3600000); // pysyy iloisena seuraavaan jaksoon asti
+    playMelody();
+    showCompletion();
+    setControlsState();
+    announce("Huipulla! Kiipesit " + minuuttiTeksti(minutes) + " ylöspäin.");
+  }
+
+  function selectPreset(activeBtn){
+    presetButtons.forEach(function(b){
+      b.setAttribute("aria-pressed", b === activeBtn ? "true" : "false");
+    });
+    if(activeBtn) customInput.value = "";
+  }
+
+  function syncDurationUI(){
+    var matched = presetButtons.filter(function(b){
+      return parseInt(b.dataset.minutes, 10) === minutes;
+    })[0];
+    selectPreset(matched || null);
+    if(!matched) customInput.value = minutes;
+  }
+
+  // Montako askelmaa jakson pituus on, ja saako sinne siirtyä: jaksoa ei voi
+  // lyhentää jo kiivettyä matkaa lyhyemmäksi, ja yksi askelma on jätettävä
+  // jäljelle kiivettäväksi.
+  function stepsFor(mins){ return Math.round(mins * 60000 / MS_PER_STEP); }
+
+  function canAdjust(delta){
+    var next = minutes + delta;
+    if(next < 1 || next > 120) return false;
+    if(state === "running" || state === "paused"){
+      return stepsFor(next) >= climbedSteps + 1;
+    }
+    return true;
+  }
+
+  // Jakson venyttäminen tai lyhentäminen kesken kaiken: portaikkoon lisätään
+  // tai siitä poistetaan askelmia ylhäältä, kello pitää kuluneen aikansa.
+  function adjustMinutes(delta){
+    if(!canAdjust(delta)) return;
+    minutes += delta;
+    totalMs = minutes * 60000;
+    saveMinutes();
+    syncDurationUI();
+
+    if(state !== "running" && state !== "paused"){
+      state = "idle";
+      hideCompletion();
+      buildSession();
+      setControlsState();
+      announce("Jakso " + minuuttiTeksti(minutes) + ".");
+      return;
+    }
+
+    totalSteps = stepsFor(minutes);
+    renderStairs();
+    countEl.textContent = climbedSteps + " / " + totalSteps + " askelmaa kiivetty";
+    tick();
+    setControlsState();
+    announce("Jakso " + minuuttiTeksti(minutes) + ", " + askelmaTeksti(totalSteps) + ".");
+  }
+
+  function applyMinutesChange(){
+    saveMinutes();
+    if(state !== "running" && state !== "paused"){
+      state = "idle";
+      hideCompletion();
+      buildSession();
+    }
+  }
+
+  presetButtons.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      minutes = parseInt(btn.dataset.minutes, 10);
+      selectPreset(btn);
+      applyMinutesChange();
+    });
+  });
+
+  function applyCustom(){
+    var v = parseInt(customInput.value, 10);
+    if(isNaN(v)) return;
+    v = Math.min(120, Math.max(1, v));
+    customInput.value = v;
+    minutes = v;
+    selectPreset(null);
+    applyMinutesChange();
+  }
+  applyCustomBtn.addEventListener("click", applyCustom);
+  customInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); applyCustom(); }
+  });
+
+  function updateSoundBtn(){
+    soundBtn.setAttribute("aria-pressed", soundOn ? "true" : "false");
+    soundBtn.textContent = soundOn ? "🔊" : "🔇";
+    soundBtn.setAttribute("aria-label", soundOn ? "Äänet päällä" : "Äänet pois");
+  }
+  soundBtn.addEventListener("click", function(){
+    soundOn = !soundOn;
+    updateSoundBtn();
+    saveSound();
+    if(soundOn) ensureAudio();
+  });
+
+  startBtn.addEventListener("click", start);
+  pauseBtn.addEventListener("click", togglePause);
+  resetBtn.addEventListener("click", reset);
+  minusBtn.addEventListener("click", function(){ adjustMinutes(-1); });
+  plusBtn.addEventListener("click", function(){ adjustMinutes(1); });
+
+  function init(){
+    var savedMin = loadMinutes();
+    minutes = savedMin || 25;
+    soundOn = loadSound();
+    updateSoundBtn();
+
+    syncDurationUI();
+    buildSession();
+    setControlsState();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
