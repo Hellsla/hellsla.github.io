@@ -229,6 +229,25 @@
   #startBtn{ background:var(--brick); color:#fff; }
   #pauseBtn{ background:var(--clay); color:var(--brick); }
   #resetBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
+  /* stay usable mid-session: this is how you stretch or cut a session short */
+  /* `.controls button` is more specific than a bare `.adjust-btn`, so these
+     have to be qualified or the shared padding wins and the row overflows */
+  .controls .adjust-btn{
+    background:var(--panel-2);
+    color:var(--brick);
+    border:2px solid var(--stone-light) !important;
+    padding:12px 12px;
+    font-size:.92rem;
+    font-variant-numeric:tabular-nums;
+  }
+  .controls .adjust-btn:hover:not(:disabled){ border-color:var(--brick) !important; }
+  /* on a phone the row only fits if the unit drops; the aria-label still says
+     what the button does */
+  @media (max-width: 439px){
+    .controls .adjust-btn .unit{ display:none; }
+    .controls .adjust-btn{ padding:12px 10px; }
+    .controls #startBtn{ padding:12px 14px; }
+  }
   #soundBtn{ background:var(--panel-2); color:var(--ink); border:2px solid var(--stone-light) !important; }
   button.icon-btn{
     padding:10px;
@@ -536,9 +555,11 @@
 
   <section class="panel">
     <div class="controls">
+      <button type="button" id="minusBtn" class="adjust-btn" aria-label="Lyhennä jaksoa minuutilla">−1<span class="unit"> min</span></button>
       <button type="button" id="startBtn">▶ Aloita</button>
       <button type="button" id="pauseBtn" class="icon-btn" disabled aria-label="Keskeytä">⏸</button>
       <button type="button" id="resetBtn" class="icon-btn" aria-label="Nollaa">↺</button>
+      <button type="button" id="plusBtn" class="adjust-btn" aria-label="Pidennä jaksoa minuutilla">+1<span class="unit"> min</span></button>
     </div>
   </section>
 
@@ -709,6 +730,8 @@
   var startBtn = document.getElementById("startBtn");
   var pauseBtn = document.getElementById("pauseBtn");
   var resetBtn = document.getElementById("resetBtn");
+  var minusBtn = document.getElementById("minusBtn");
+  var plusBtn = document.getElementById("plusBtn");
   var soundBtn = document.getElementById("soundBtn");
   var queueEl = document.getElementById("queue");
   var quarryEl = document.querySelector(".quarry");
@@ -858,6 +881,16 @@
     }, 120);
   });
 
+  function blockMarkup(count){
+    var html = new Array(count);
+    for(var i=0;i<count;i++){
+      html[i] = '<div class="block" style="--rot:' + (Math.random()*30-15).toFixed(1) +
+                'deg;--hue:' + (Math.random()*24-12).toFixed(1) +
+                'deg"><svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg></div>';
+    }
+    return html.join("");
+  }
+
   function buildBlocks(){
     buildId++;
     totalMs = minutes*60000;
@@ -868,13 +901,7 @@
     // A 120-minute session is 720 blocks; building those one appendChild at a
     // time locks the page up for seconds, so assemble the markup as one string
     // and hand the parser a single pass.
-    var html = new Array(totalBlocks);
-    for(var i=0;i<totalBlocks;i++){
-      html[i] = '<div class="block" style="--rot:' + (Math.random()*30-15).toFixed(1) +
-                'deg;--hue:' + (Math.random()*24-12).toFixed(1) +
-                'deg"><svg viewBox="0 0 40 40"><use href="#roughRock"></use></svg></div>';
-    }
-    queueEl.innerHTML = html.join("");
+    queueEl.innerHTML = blockMarkup(totalBlocks);
     blocks = Array.prototype.slice.call(queueEl.children);
     if(blocks[0]) blocks[0].classList.add("next");
 
@@ -1130,6 +1157,9 @@
     presetButtons.forEach(function(b){ b.disabled = busy; });
     customInput.disabled = busy;
     applyCustomBtn.disabled = busy;
+    // these stay live while the timer runs - that is the point of them
+    minusBtn.disabled = !canAdjust(-1);
+    plusBtn.disabled = !canAdjust(1);
   }
 
   function tick(){
@@ -1150,6 +1180,8 @@
         var isFinal = (processedBlocks + 1 === totalBlocks);
         processBlock(isLast, isFinal);
       }
+      // the floor under "−1 min" rises as boulders get refined
+      minusBtn.disabled = !canAdjust(-1);
     }
     countEl.textContent = processedBlocks + " / " + totalBlocks + " lohkaretta jalostettu";
     if(state === "running") updateCracks(clampedElapsed);
@@ -1219,6 +1251,66 @@
     if(activeBtn) customInput.value = "";
   }
 
+  function syncDurationUI(){
+    var matched = presetButtons.filter(function(b){
+      return parseInt(b.dataset.minutes, 10) === minutes;
+    })[0];
+    selectPreset(matched || null);
+    if(!matched) customInput.value = minutes;
+  }
+
+  // How many blocks a given session length is worth, and whether we are allowed
+  // to move there: a session may never be cut shorter than the work already
+  // done, and at least one boulder has to be left to finish on.
+  function blocksFor(mins){ return Math.round(mins * 60000 / MS_PER_BLOCK); }
+
+  function canAdjust(delta){
+    var next = minutes + delta;
+    if(next < 1 || next > 120) return false;
+    if(state === "running" || state === "paused"){
+      return blocksFor(next) >= processedBlocks + 1;
+    }
+    return true;
+  }
+
+  // Stretch or shorten the session without disturbing it: boulders are added to
+  // or taken from the end of the row, and the clock keeps its elapsed time, so
+  // this works mid-session as well as before starting.
+  function adjustMinutes(delta){
+    if(!canAdjust(delta)) return;
+    minutes += delta;
+    totalMs = minutes * 60000;
+    saveMinutes();
+    syncDurationUI();
+
+    if(state !== "running" && state !== "paused"){
+      state = "idle";
+      hideCompletion();
+      buildBlocks();
+      setControlsState();
+      announce("Jakso " + minuuttiTeksti(minutes) + ".");
+      return;
+    }
+
+    var target = blocksFor(minutes);
+    if(target > totalBlocks){
+      queueEl.insertAdjacentHTML("beforeend", blockMarkup(target - totalBlocks));
+    } else if(target < totalBlocks){
+      for(var i = totalBlocks - 1; i >= target; i--){
+        if(blocks[i] && blocks[i].parentNode) blocks[i].parentNode.removeChild(blocks[i]);
+      }
+    }
+    blocks = Array.prototype.slice.call(queueEl.children);
+    totalBlocks = target;
+
+    countEl.textContent = processedBlocks + " / " + totalBlocks + " lohkaretta jalostettu";
+    applyScale();
+    positionMonster();
+    tick();
+    setControlsState();
+    announce("Jakso " + minuuttiTeksti(minutes) + ", " + totalBlocks + " lohkaretta.");
+  }
+
   function applyMinutesChange(){
     saveMinutes();
     if(state !== "running" && state !== "paused"){
@@ -1265,6 +1357,8 @@
   startBtn.addEventListener("click", start);
   pauseBtn.addEventListener("click", togglePause);
   resetBtn.addEventListener("click", reset);
+  minusBtn.addEventListener("click", function(){ adjustMinutes(-1); });
+  plusBtn.addEventListener("click", function(){ adjustMinutes(1); });
 
   function init(){
     var savedMin = loadMinutes();
@@ -1272,14 +1366,7 @@
     soundOn = loadSound();
     updateSoundBtn();
 
-    var matched = presetButtons.filter(function(b){ return parseInt(b.dataset.minutes,10) === minutes; })[0];
-    if(matched){
-      selectPreset(matched);
-    } else {
-      selectPreset(null);
-      customInput.value = minutes;
-    }
-
+    syncDurationUI();
     buildBlocks();
     setControlsState();
   }
