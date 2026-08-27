@@ -114,30 +114,117 @@ window.KORTIT = [
 ]},
 
 { id:"FY2", nimi:"Fysiikka, ympäristö ja yhteiskunta", aiheet:[
+  { nimi:"Energia ympäristössä ja yhteiskunnassa", kortit:[
+    ["Energialähde","Aine tai ilmiö, jota hyödynnetään käyttökelpoisen energian tuottamiseen."],
+    ["Uusiutuva energialähde","Luonnonvara tai ilmiö, jota syntyy jatkuvasti lisää ihmisen käytön kannalta riittävän nopeasti."],
+    ["Uusiutumaton energialähde","Luonnonvara, jota on rajallinen määrä eikä muodostu nopeasti lisää."],
+    ["Hiilineutraali energialähde","Sen käyttö ei lisää ilmakehän kasvihuonekaasujen pitoisuutta pitkällä aikavälillä."],
+    ["Säteilyenergia","Auringosta Maahan kulkeutuva energiamuoto, joka mahdollistaa suuren osan maapallon energiavirroista."],
+    ["Infrapunasäteily","Näkyvää valoa pitkäaaltoisempaa sähkömagneettista säteilyä, jota lämmin maanpinta lähettää."],
+    ["Absorptio","Säteily imeytyy aineeseen ja sen kuljettama energia siirtyy aineeseen."],
+    ["Heijastuminen","Säteily muuttaa pinnalla suuntaansa eikä sen energia absorboidu pintaan."]
+  ]},
+  { nimi:"Ilmastonmuutos", kortit:[
+    ["Kasvihuoneilmiö","Ilmakehän kaasut vähentävät Maan lähettämän lämpösäteilyn pääsyä suoraan avaruuteen."],
+    ["Kasvihuonekaasu","Ilmakehän kaasu, joka absorboi Maan lähettämää infrapunasäteilyä."],
+    ["Hiilidioksidi","Kasvihuonekaasu, jonka pitoisuutta fossiilisten polttoaineiden käyttö lisää."],
+    ["Metaani","Voimakas kasvihuonekaasu, jota vapautuu esimerkiksi maataloudessa ja fossiilisten polttoaineiden tuotannossa."],
+    ["Ilmastonmuutos","Maapallon ilmaston pitkäaikainen muutos, jonka nykyistä lämpenemistä ihmisen kasvihuonekaasupäästöt voimistavat."],
+    ["Hiilinielu","Järjestelmä, joka sitoo ilmakehästä hiilidioksidia enemmän kuin vapauttaa sitä."],
+    ["Takaisinkytkentä","Muutos käynnistää vaikutuksen, joka voi vahvistaa tai heikentää alkuperäistä muutosta."],
+    ["Päästövähennys","Kasvihuonekaasujen vapautumista ilmakehään pienennetään esimerkiksi muuttamalla energiantuotantoa ja kulutusta."]
+  ]},
+  { nimi:"Energia ja energialajit", kortit:[
+    ["Energia","Fysiikan keskeinen suure, joka säilyy kaikissa ilmiöissä mutta voi siirtyä ja muuntua."],
+    ["Joule","SI-järjestelmän energian yksikkö."],
+    ["Energialaji","Tapa kuvata, missä muodossa energia esiintyy tai varastoituu."],
+    ["Liike-energia","Kappaleella on tätä liikkeensä vuoksi, ja määrä kasvaa massan tai nopeuden kasvaessa."],
+    ["Potentiaalienergia","Vuorovaikutukseen liittyvä varastoitunut energiamuoto, jonka määrä riippuu kappaleiden asemasta."],
+    ["Mekaaninen energia","Liike-energian ja potentiaalienergian muodostama kokonaisuus."],
+    ["Kemiallinen energia","Atomien ja molekyylien vuorovaikutuksiin varastoitunut energiamuoto, jota vapautuu esimerkiksi palamisessa."],
+    ["Ydinenergia","Atomiytimien vuorovaikutuksiin liittyvä energiamuoto, jota vapautuu ydinreaktioissa."],
+    ["Sähköenergia","Sähköisiin vuorovaikutuksiin liittyvä energiamuoto, jota on helppo siirtää sähköverkossa."],
+    ["Sisäenergia","Aineen rakenneosasten liikkeeseen ja vuorovaikutuksiin liittyvä energiamuoto."]
+  ]},
+  { nimi:"Energian säilyminen", kortit:[
+    ["Energian säilymislaki","Energiaa ei synny eikä häviä, vaan sitä voi siirtyä tai muuntua muodosta toiseen."],
+    ["Energian muuntuminen","Yhden energialajin määrä pienenee samalla kun jonkin toisen määrä kasvaa."],
+    ["Energian siirtyminen","Energia kulkee kohteesta tai systeemistä toiseen muuttamatta säilymisen periaatetta."],
+    ["Energiakaavio","Esitys, jolla havainnollistetaan energialajeja sekä niiden muuntumista ja säilymistä."],
+    ["Lämpö","Energiaa, joka siirtyy lämpötilaeron vuoksi kuumemmasta kohteesta kylmempään."],
+    ["Hukkaenergia","Energiaa, joka muuntuu laitteen varsinaisen käyttötarkoituksen kannalta hyödyttömään muotoon."],
+    ["Hyötyenergia","Se osa laitteen ottamasta energiasta, joka saadaan haluttuun tarkoitukseen."]
+  ]},
+  { nimi:"Teho ja energiankulutus", kortit:[
+    ["Teho","Kertoo, kuinka nopeasti energiaa siirtyy tai muuntuu; P = ΔE/Δt."],
+    ["Watti","SI-järjestelmän tehon yksikkö, joka vastaa yhtä joulea sekunnissa."],
+    ["Ottoteho","Kertoo, kuinka nopeasti laite ottaa energiaa energialähteestään."],
+    ["Antoteho","Kertoo, kuinka nopeasti laite siirtää energiaa haluttuun käyttötarkoitukseen."],
+    ["Energiankulutus","Tietyssä ajassa käytetty energiamäärä voidaan laskea tehon avulla; E = PΔt."],
+    ["Kilowattitunti","Energiamäärä, joka siirtyy yhden kilowatin teholla yhden tunnin aikana."],
+    ["Arvokilpi","Laitteen merkintä, josta voidaan lukea esimerkiksi sen sähköverkosta ottama teho."],
+    ["Sähkön hinta","Käytetyn sähköenergian kustannus saadaan kertomalla kilowattitunnit energian yksikköhinnalla."]
+  ]},
+  { nimi:"Hyötysuhde ja lämpöarvo", kortit:[
+    ["Hyötysuhde","Kertoo, kuinka suuri osa otetusta energiasta saadaan hyödyksi; η = Eₐ/Eₒ."],
+    ["Tehohyötysuhde","Voidaan laskea anto- ja ottotehon suhteena; η = Pₐ/Pₒ."],
+    ["Ottoenergia","Kokonaisenergiamäärä, jonka laite ottaa toimintaansa varten."],
+    ["Antoenergia","Laitteen varsinaiseen tarkoitukseen siirtämä tai muuntama energiamäärä."],
+    ["Siirtohäviö","Energian siirrossa osa energiasta muuntuu hyödyntämättömään muotoon, yleensä lämmöksi."],
+    ["Lämpöarvo","Kertoo täydellisessä palamisessa vapautuvan energian polttoaineen massayksikköä kohti."],
+    ["Palamisenergia","Polttoaineesta vapautuva määrä voidaan laskea massan ja lämpöarvon avulla; E = Hm."],
+    ["Energiatehokkuus","Haluttu hyöty saavutetaan mahdollisimman pienellä energian kulutuksella ja vähäisillä häviöillä."]
+  ]},
   { nimi:"Energiantuotanto", kortit:[
-    ["Uusiutuva energialähde","Energialähde, joka uusiutuu luonnossa ihmisen aikaskaalassa, esimerkiksi tuuli ja aurinko."],
-    ["Fossiilinen polttoaine","Muinaisesta eloperäisestä aineksesta syntynyt polttoaine, kuten kivihiili tai maakaasu."],
-    ["Fissio","Raskaan atomiytimen halkeaminen, jossa vapautuu energiaa."],
-    ["Fuusio","Kevyiden ytimien yhtyminen raskaammaksi ytimeksi; Auringon energialähde."],
-    ["Hyötysuhde","Hyödyksi saadun energian osuus otetusta energiasta, η = W_hyöty / W_otettu."],
-    ["Energian säilymislaki","Energia ei häviä eikä synny tyhjästä, vaan muuttaa muodosta toiseen."],
-    ["Säätövoima","Nopeasti säädettävä sähköntuotanto, joka pitää tuotannon ja kulutuksen tasapainossa."],
-    ["Peruskuormatuotanto","Tasaisesti käyvä tuotanto, joka kattaa jatkuvan sähkön tarpeen."]
+    ["Energiantuotanto","Luonnossa olevan energian muuntamista ihmisille käyttökelpoiseen muotoon, kuten sähköksi tai lämmöksi."],
+    ["Voimalaitos","Tuotantolaitos, jossa energialähteen energiaa muunnetaan sähköksi, lämmöksi tai molemmiksi."],
+    ["Generaattori","Laite, joka muuntaa pyörimisliikkeen energiaa sähköenergiaksi."],
+    ["Turbiini","Virtaava vesi, ilma tai höyry saa tämän laitteen pyörimään ja käyttämään generaattoria."],
+    ["Lämpövoimalaitos","Lämpöenergiaa käytetään höyryn tuottamiseen, joka pyörittää turbiinia ja generaattoria."],
+    ["Lauhdutin","Jäähdyttää turbiinista tulevan höyryn takaisin vedeksi ja siirtää samalla lämpöä ympäristöön."],
+    ["Yhteistuotanto","Samassa laitoksessa tuotetaan sekä sähköä että hyödynnettävää lämpöä, jolloin hyötysuhde paranee."],
+    ["Kaukolämpö","Keskitetysti tuotettua lämpöenergiaa siirretään kuuman veden avulla rakennusten lämmitykseen."],
+    ["Lauhdutusvoima","Sähköntuotantoa, jossa turbiinin jälkeen jäävää lämpöä ei yleensä hyödynnetä kaukolämpönä."]
   ]},
-  { nimi:"Ilmasto ja ympäristö", kortit:[
-    ["Kasvihuoneilmiö","Ilmakehän kaasut päästävät auringon säteilyn läpi mutta hidastavat lämpösäteilyn karkaamista."],
-    ["Kasvihuonekaasu","Kaasu, joka absorboi maapallon lähettämää lämpösäteilyä, esimerkiksi CO₂ ja metaani."],
-    ["Albedo","Pinnan heijastussuhde eli se osuus säteilystä, joka heijastuu takaisin."],
-    ["Säteilypakote","Ilmakehän muutoksen aiheuttama muutos maapallon energiatasapainossa (W/m²)."],
-    ["Hiilijalanjälki","Toiminnan aiheuttamat kasvihuonekaasupäästöt hiilidioksidiekvivalentteina."],
-    ["Energiatehokkuus","Saman hyödyn tuottaminen pienemmällä energiamäärällä."]
+  { nimi:"Energiantuotantotavat", kortit:[
+    ["Aurinkovoima","Auringon säteilyenergiaa muunnetaan esimerkiksi aurinkopaneelissa suoraan sähköenergiaksi."],
+    ["Tuulivoima","Ilman liike-energia pyörittää turbiinia ja generaattoria, joka tuottaa sähköä."],
+    ["Vesivoima","Veden potentiaali- ja liike-energiaa muunnetaan turbiinin ja generaattorin avulla sähköksi."],
+    ["Bioenergia","Eloperäiseen aineeseen sitoutunutta kemiallista energiaa hyödynnetään esimerkiksi polttamalla."],
+    ["Fossiiliset polttoaineet","Kivihiili, öljy ja maakaasu ovat uusiutumattomia polttoaineita, joiden käyttö lisää hiilidioksidipäästöjä."],
+    ["Ydinvoima","Ydinreaktioissa vapautuvaa energiaa käytetään veden höyrystämiseen ja edelleen sähköntuotantoon."],
+    ["Maalämpö","Maaperään tai kallioon varastoitunutta lämpöenergiaa siirretään rakennusten lämmitykseen."],
+    ["Geoterminen energia","Maan sisäisestä lämmöstä peräisin olevaa energiaa hyödynnetään lämmön- tai sähköntuotannossa."]
   ]},
-  { nimi:"Sähkön käyttö", kortit:[
-    ["Kilowattitunti","Energiayksikkö, joka vastaa kilowatin tehoa tunnin ajan; 1 kWh = 3,6 MJ."],
-    ["Siirtohäviö","Sähköverkossa lämmöksi muuttuva osa siirretystä energiasta."],
-    ["Suurjännitesiirto","Siirto korkealla jännitteellä, jolloin virta ja siirtohäviöt pienenevät."],
-    ["Kulutushuippu","Hetki, jolloin sähkön kulutus on suurimmillaan."],
-    ["Energiavarasto","Järjestelmä, johon energiaa varastoidaan myöhempää käyttöä varten, esimerkiksi akku tai pumppuvoimalaitos."]
+  { nimi:"Ympäristövaikutukset", kortit:[
+    ["Elinkaari","Tuotantomuodon vaikutuksia tarkastellaan rakentamisesta ja käytöstä aina laitoksen poistamiseen asti."],
+    ["Hiilidioksidipäästö","Energiantuotannon ilmastovaikutusta voidaan vertailla vapautuvan hiilidioksidin määrän avulla."],
+    ["Maankäyttö","Eri tuotantotavat tarvitsevat erilaisia pinta-aloja voimaloille, polttoaineille ja siirtoyhteyksille."],
+    ["Luonnonvarat","Energiantuotanto käyttää materiaaleja ja polttoaineita, joiden saatavuus ja uusiutuminen vaihtelevat."],
+    ["Ekosysteemivaikutus","Energiantuotanto voi muuttaa eliöiden elinympäristöjä, vesistöjä ja luonnon monimuotoisuutta."],
+    ["Terveysvaikutus","Tuotantotapojen päästöt, onnettomuusriskit ja muut tekijät voivat vaikuttaa ihmisten terveyteen."],
+    ["Suuruusluokka","Tuotantotapoja voidaan vertailla esimerkiksi tehon, päästöjen, kustannusten tai pinta-alan mittakaavan avulla."]
+  ]},
+  { nimi:"Joustava energiajärjestelmä", kortit:[
+    ["Energiajärjestelmä","Kokonaisuus, johon kuuluvat energian tuotanto, siirto, varastointi ja kulutus."],
+    ["Hajautettu tuotanto","Energiaa tuotetaan useissa pienissä kohteissa lähellä kuluttajia suurten keskitettyjen laitosten lisäksi."],
+    ["Älykäs sähköverkko","Digitaalinen verkko ohjaa tuotantoa ja kulutusta sekä välittää tietoa molempiin suuntiin."],
+    ["Säätövoima","Sähköntuotantoa, jonka määrää voidaan muuttaa nopeasti tuotannon ja kulutuksen tasapainottamiseksi."],
+    ["Energiavarasto","Energiaa muunnetaan säilytettävään muotoon ja vapautetaan myöhemmin tarpeen mukaan."],
+    ["Lämpövarasto","Lämpöenergiaa säilytetään esimerkiksi vedessä, maaperässä tai rakennusten rakenteissa myöhempää käyttöä varten."],
+    ["Vesipumppuvoimala","Ylimääräisellä sähköllä vettä pumpataan ylemmäs, jolloin energia varastoituu veden potentiaalienergiaksi."],
+    ["Vauhtipyörä","Pyörivään kappaleeseen varastoidaan liike-energiaa, jota voidaan myöhemmin muuntaa takaisin sähköksi."],
+    ["Mikroverkko","Paikallinen energiaverkko yhdistää lähellä sijaitsevia tuottajia, varastoja ja kuluttajia."]
+  ]},
+  { nimi:"Kestävä energiatalous", kortit:[
+    ["Kestävä energiatalous","Energiantuotannossa ja kulutuksessa huomioidaan ekologiset, taloudelliset ja sosiaaliset vaikutukset."],
+    ["Ekologinen kestävyys","Luonnonvaroja käytetään niin, että ympäristön uusiutumis- ja kantokyky eivät vaarannu."],
+    ["Taloudellinen kestävyys","Energiaratkaisujen tulee olla kustannuksiltaan ja resurssien käytöltään pitkäjänteisesti toteuttamiskelpoisia."],
+    ["Sosiaalinen kestävyys","Energiaratkaisuissa huomioidaan ihmisten hyvinvointi, turvallisuus ja oikeudenmukaiset mahdollisuudet saada energiaa."],
+    ["Energian säästö","Turhaa kulutusta vähennetään muuttamalla toimintaa ja käyttämällä energiaa vain tarpeeseen."],
+    ["Hukkalämpö","Muuten käyttämättä jäävä lämpö voidaan kerätä talteen ja hyödyntää toisessa kohteessa."],
+    ["Energian varastointi","Tuotannon ja kulutuksen eriaikaisuutta tasataan säilyttämällä energiaa myöhempää käyttöä varten."],
+    ["Kestävä kulutus","Energiaa käytetään tarpeisiin tehokkaasti ja ympäristövaikutuksia pyritään vähentämään."]
   ]}
 ]},
 
