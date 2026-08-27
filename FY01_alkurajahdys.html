@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alkuräjähdyksestä nykyhetkeen</title>
+<style>
+  :root{
+    --ink:#2b2a28;
+    --muted:#7a7772;
+    --line:#bdb9b3;
+    --accent:#d84a62;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:100%;height:100%;background:#fff;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+  body{display:grid;place-items:center;overflow:hidden}
+  .sim{
+    width:min(100vw,1280px);
+    aspect-ratio:16/9;
+    position:relative;
+    background:#fff;
+    padding:2.5% 4% 3.5%;
+  }
+  svg{width:100%;height:80%;display:block}
+  .controls{
+    height:20%;
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    gap:18px;
+    padding:0 2%;
+  }
+  input[type=range]{
+    width:100%;
+    accent-color:var(--ink);
+  }
+  button{
+    border:2px solid var(--ink);
+    background:#fff;
+    color:var(--ink);
+    padding:9px 15px;
+    border-radius:9px;
+    font-size:clamp(14px,1.4vw,20px);
+    cursor:pointer;
+    box-shadow:2px 2px 0 #d8d5d0;
+    white-space:nowrap;
+  }
+  button:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #d8d5d0}
+  .sketch{stroke-linecap:round;stroke-linejoin:round}
+  text{font-family:Arial,Helvetica,sans-serif}
+
+  /* Hiukkasten värit vaihtuvat taustan kirkkauden mukaan (asetetaan JS:ssä). */
+  .gk-f  {fill:var(--pInk)}
+  .gk-s  {fill:none;stroke:var(--pInk)}
+  .gk-f2 {fill:var(--pDim)}
+  .gk-s2 {fill:none;stroke:var(--pDim)}
+  .gk-a  {fill:var(--pAcc)}
+  .gk-as {fill:none;stroke:var(--pAcc)}
+
+  .epochLabel{font-size:12.5px;fill:var(--muted);cursor:pointer}
+  .epochLabel:hover{fill:var(--ink);font-weight:700}
+  .epochLabel.on{fill:var(--ink);font-weight:700}
+
+  @media (max-width:700px){
+    .sim{padding:4% 3%}
+    .controls{grid-template-columns:auto 1fr;grid-template-rows:auto auto;gap:10px}
+    .controls input{grid-column:1 / -1;grid-row:2}
+  }
+</style>
+</head>
+<body>
+<div class="sim">
+<svg viewBox="0 0 1200 530" aria-label="Maailmankaikkeuden kehitys alkuräjähdyksestä nykyhetkeen">
+  <defs>
+    <filter id="rough" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency=".016" numOctaves="1" seed="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.4"/>
+    </filter>
+    <clipPath id="winClip">
+      <rect x="30" y="100" width="1140" height="262" rx="14"/>
+    </clipPath>
+    <linearGradient id="tempBand" x1="0" y1="0" x2="1" y2="0"></linearGradient>
+  </defs>
+
+  <!-- Otsikko ja kuvaus -->
+  <text id="epochTitle" x="30" y="38" font-size="30" font-weight="700">Planckin aika</text>
+  <text id="descA" x="30" y="63" font-size="16.5" fill="#7a7772"></text>
+  <text id="descB" x="30" y="85" font-size="16.5" fill="#7a7772"></text>
+
+  <!-- Aikalukema -->
+  <text x="1170" y="28" font-size="14" fill="#7a7772" text-anchor="end">Aika alkuräjähdyksestä</text>
+  <text id="timeBig" x="1170" y="64" font-size="32" font-weight="700" text-anchor="end">10⁻⁴³ s</text>
+
+  <!-- Ikkuna maailmankaikkeuteen -->
+  <rect id="winBg" x="30" y="100" width="1140" height="262" rx="14" fill="#efe9ff"/>
+  <g clip-path="url(#winClip)">
+    <g id="field"></g>
+    <text id="winCaption" x="48" y="350" font-size="13.5" class="gk-f" opacity="0.75">Sama avaruuden alue eri aikoina – kaikki etääntyy kaikesta</text>
+  </g>
+  <rect x="30" y="100" width="1140" height="262" rx="14" fill="none" stroke="#2b2a28" stroke-width="3.5" filter="url(#rough)"/>
+
+  <!-- Lukemat -->
+  <g id="readouts">
+    <text x="30"  y="386" font-size="14" fill="#7a7772">Lämpötila</text>
+    <text x="30"  y="412" font-size="22" font-weight="700" id="roT">–</text>
+    <text x="315" y="386" font-size="14" fill="#7a7772">Skaalatekijä a (koko nykyiseen verrattuna)</text>
+    <text x="315" y="412" font-size="22" font-weight="700" id="roA">–</text>
+    <text x="600" y="386" font-size="14" fill="#7a7772">Punasiirtymä z</text>
+    <text x="600" y="412" font-size="22" font-weight="700" id="roZ">–</text>
+    <text x="885" y="386" font-size="14" fill="#7a7772">Näkyvän universumin säde</text>
+    <text x="885" y="412" font-size="22" font-weight="700" id="roR">–</text>
+  </g>
+
+  <!-- Aikajana -->
+  <g id="timeline">
+    <g id="epochLabels"></g>
+    <rect x="60" y="464" width="1080" height="12" fill="url(#tempBand)" stroke="#bdb9b3" stroke-width="1"/>
+    <g id="epochTicks" stroke="#bdb9b3" stroke-width="1.5"></g>
+    <g id="decadeTicks"></g>
+    <g id="playhead">
+      <line id="phLine" x1="60" y1="460" x2="60" y2="486" stroke="#d84a62" stroke-width="3" class="sketch"/>
+      <path id="phMark" d="M-7 -9 L7 -9 L0 0 Z" fill="#d84a62" transform="translate(60,460)"/>
+    </g>
+    <text x="30" y="520" font-size="12.5" fill="#7a7772">Aika-akseli on venytetty niin, että jokainen vaihe näkyy. Akselin alapuolen merkit kertovat todellisen aikaskaalan (sekunteina).</text>
+  </g>
+</svg>
+
+<div class="controls">
+  <button id="playBtn" aria-label="Toista tai keskeytä">▶ Toista</button>
+  <input id="tSlider" type="range" min="0" max="1" step="0.0002" value="0" aria-label="Aika alkuräjähdyksestä">
+  <button id="resetBtn">Nollaa</button>
+</div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+
+  // ---------------------------------------------------------------
+  // Kosmologinen malli
+  //
+  // Skaalatekijä a(t) mallinnetaan kahdella potenssilailla:
+  //   säteilyn hallitsema aika:  a ~ t^(1/2)
+  //   aineen hallitsema aika:    a ~ t^(2/3)
+  // Malli on normeerattu niin, että a = 1 nykyhetkellä (13,8 mrd v).
+  // Se antaa oikeat suuruusluokat kaikille virstanpylväille, esim.
+  // rekombinaatio 380 000 v kohdalla lämpötilassa ~3000 K ja
+  // ydinsynteesi ~10^9 K:ssa muutaman minuutin kuluttua.
+  // Malli ei huomioi pimeän energian kiihdytystä eikä hiukkaslajien
+  // muutosten vaikutusta lämpötilaan – lukiotasolla ne eivät ole olennaisia.
+  // ---------------------------------------------------------------
+  const YR = 3.1557e7;              // sekuntia vuodessa
+  const T_NOW = 13.8e9 * YR;        // maailmankaikkeuden ikä sekunteina
+  const T_EQ = 51000 * YR;          // säteilyn ja aineen tasapainokohta
+  const A_EQ = Math.pow(T_EQ / T_NOW, 2 / 3);
+  const T_CMB = 2.725;              // taustasäteilyn lämpötila nyt (K)
+  const R_OBS_LY = 46.5e9;          // näkyvän universumin säde nyt (valovuotta)
+  const LY_KM = 9.4607e12;
+
+  function scaleFactor(t){
+    if (t >= T_EQ) return Math.pow(t / T_NOW, 2 / 3);
+    return A_EQ * Math.sqrt(t / T_EQ);
+  }
+  const temperature = t => T_CMB / scaleFactor(t);
+  const redshift    = t => 1 / scaleFactor(t) - 1;
+  const horizonLy   = t => R_OBS_LY * scaleFactor(t);
+
+  // ---------------------------------------------------------------
+  // Vaiheet. Kukin vaihe saa aikajanalta yhtä suuren siivun, jotta
+  // myös hyvin lyhyet varhaiset vaiheet ovat saavutettavissa.
+  // ---------------------------------------------------------------
+  const QC = ['#d84a62', '#2e86a6', '#f2a541']; // kvarkkien "värit"
+
+  const epochs = [
+    {
+      t0: 1e-43, name: 'Planckin aika', short: 'Planck', acc: '#6d4bd6',
+      desc: ['Maailmankaikkeus on käsittämättömän kuuma ja tiheä. Nykyiset fysiikan lait eivät',
+             'riitä kuvaamaan sitä, sillä painovoima ja kvantti-ilmiöt ovat yhtä aikaa merkittäviä.'],
+      density: 1, radial: false,
+      g: (i, R) => `<circle r="${(1.8 + R[0] * 2.2).toFixed(1)}" class="gk-a" opacity="0.85"/>` +
+                   `<circle cx="${(4 + R[1] * 5).toFixed(1)}" cy="${(-3 + R[2] * 7).toFixed(1)}" r="${(1 + R[0] * 1.2).toFixed(1)}" class="gk-f2"/>`
+    },
+    {
+      t0: 1e-36, name: 'Inflaatio', short: 'Inflaatio', acc: '#6d4bd6',
+      desc: ['Maailmankaikkeus laajenee hetkessä valtavan monikertaiseksi.',
+             'Pienet kvanttivaihtelut venyvät kooltaan tulevien galaksien siemeniksi.'],
+      density: 0.9, radial: true,
+      g: (i, R) => `<line x1="${(-8 - R[0] * 14).toFixed(1)}" y1="0" x2="${(8 + R[1] * 14).toFixed(1)}" y2="0" ` +
+                   `class="gk-as sketch" stroke-width="2.4" opacity="0.9"/>`
+    },
+    {
+      t0: 1e-32, name: 'Kvarkkiliemi', short: 'Kvarkkiliemi', acc: '#d84a62',
+      desc: ['Kvarkit ja gluonit liikkuvat vapaina kuumassa liemessä.',
+             'Aine ja antiaine syntyvät ja tuhoutuvat jatkuvasti säteilyksi.'],
+      density: 1, radial: false,
+      g: (i, R) => (i % 5 === 0
+        ? `<path d="M-9 0 q4 -5 8 0 q4 5 8 0" class="gk-s2 sketch" stroke-width="1.6"/>`
+        : `<circle r="3.2" fill="${QC[i % 3]}"/>`)
+    },
+    {
+      t0: 1e-6, name: 'Protonit ja neutronit', short: 'Hadronit', acc: '#d84a62',
+      desc: ['Liemi jäähtyy: kvarkit sitoutuvat kolmen ryhmiksi protoneiksi ja neutroneiksi.',
+             'Aineen ja antiaineen pienen epäsuhdan ansiosta ainetta jää jäljelle.'],
+      density: 0.85, radial: false,
+      g: () => `<circle r="8" class="gk-s" stroke-width="2"/>` +
+               `<circle cx="0" cy="-3.2" r="2.1" fill="${QC[0]}"/>` +
+               `<circle cx="-3" cy="2.4" r="2.1" fill="${QC[1]}"/>` +
+               `<circle cx="3" cy="2.4" r="2.1" fill="${QC[2]}"/>`
+    },
+    {
+      t0: 1, name: 'Leptonien aika', short: 'Leptonit', acc: '#2e86a6',
+      desc: ['Elektronit ja positronit tuhoavat toisensa säteilyksi.',
+             'Jäljelle jää hitunen elektroneja ja valtava määrä fotoneja.'],
+      density: 0.9, radial: true,
+      g: (i) => {
+        switch (i % 4){
+          case 0: return `<circle r="4.5" class="gk-f"/>`;
+          case 1: return `<circle r="2.8" fill="#2e86a6"/>`;
+          case 2: return `<circle r="2.8" fill="#d84a62"/>`;
+          default: return `<path d="M-11 0 l4 -5 l4 10 l4 -10 l4 5" class="gk-s2 sketch" stroke-width="1.8"/>`;
+        }
+      }
+    },
+    {
+      t0: 10, name: 'Alkuaineiden ydinsynteesi', short: 'Ydinsynteesi', acc: '#f28c28',
+      desc: ['Noin 10⁹ kelvinissä protonit ja neutronit sitoutuvat helium-4-ytimiksi.',
+             'Muutamassa minuutissa aineesta tulee noin neljännes heliumia, loput vetyä.'],
+      density: 0.85, radial: false,
+      g: (i) => {
+        if (i % 4 === 3){
+          return `<circle r="9" class="gk-s" stroke-width="2"/>` +
+                 `<circle cx="-3.4" cy="-3.4" r="2.6" fill="#d84a62"/>` +
+                 `<circle cx="3.4" cy="-3.4" r="2.6" class="gk-f2"/>` +
+                 `<circle cx="-3.4" cy="3.4" r="2.6" fill="#d84a62"/>` +
+                 `<circle cx="3.4" cy="3.4" r="2.6" class="gk-f2"/>`;
+        }
+        return i % 4 === 2 ? `<circle r="4" class="gk-f2"/>` : `<circle r="4" fill="#d84a62"/>`;
+      }
+    },
+    {
+      t0: 1200, name: 'Läpinäkymätön plasma', short: 'Plasma', acc: '#d84a62',
+      desc: ['Ytimet ja elektronit ovat yhä erillään. Fotonit siroavat jatkuvasti',
+             'vapaista elektroneista, joten maailmankaikkeus on läpinäkymätöntä sumua.'],
+      density: 1, radial: false,
+      g: (i) => {
+        switch (i % 4){
+          case 0: return `<circle r="4.5" fill="#d84a62"/>`;
+          case 1: return `<circle r="5" class="gk-s" stroke-width="1.8"/><circle r="1.8" fill="#d84a62"/>`;
+          case 2: return `<circle r="2.6" fill="#2e86a6"/>`;
+          default: return `<path d="M-12 0 l4 -6 l4 12 l4 -12 l4 6" class="gk-s sketch" stroke-width="2"/>`;
+        }
+      }
+    },
+    {
+      t0: 1.2e13, name: 'Rekombinaatio – taustasäteily vapautuu', short: 'Rekombinaatio', acc: '#f28c28',
+      desc: ['380 000 vuoden kohdalla noin 3000 K:ssa elektronit sitoutuvat ytimiin atomeiksi.',
+             'Fotonit pääsevät vapaiksi: syntyy kosminen taustasäteily, jonka näemme yhä.'],
+      density: 0.9, radial: true,
+      g: (i) => (i % 3 === 2
+        ? `<path d="M-15 0 h22" class="gk-as sketch" stroke-width="2.6"/>` +
+          `<path d="M2 -5 l6 5 l-6 5" class="gk-as sketch" stroke-width="2.6"/>`
+        : `<circle r="7" class="gk-s" stroke-width="2"/><circle r="2.6" fill="#d84a62"/>`)
+    },
+    {
+      t0: 3.15e13, name: 'Pimeä aika', short: 'Pimeä aika', acc: '#8e97b4',
+      desc: ['Tähtiä ei vielä ole. Neutraali vety- ja heliumkaasu jäähtyy ja tiivistyy',
+             'hitaasti pimeän aineen muodostamiin painovoimakuoppiin.'],
+      density: 0.8, radial: false,
+      g: (i) => (i % 3 === 0
+        ? `<circle r="6" class="gk-s2" stroke-width="1.8" opacity="0.85"/><circle r="2" class="gk-f2"/>`
+        : `<circle r="2.2" class="gk-f2" opacity="0.7"/>`)
+    },
+    {
+      t0: 5e15, name: 'Ensimmäiset tähdet', short: 'Tähdet', acc: '#ffd95a',
+      desc: ['Kaasupilvet romahtavat kokoon ja syttyvät: fuusio alkaa.',
+             'Tähdissä syntyvät ensimmäiset raskaammat alkuaineet, kuten happi ja hiili.'],
+      density: 0.8, radial: false,
+      g: (i) => (i % 3 === 0
+        ? `<circle r="3.2" fill="#fff6d6"/>` +
+          `<path d="M0 -10 V-5 M0 5 V10 M-10 0 H-5 M5 0 H10" class="gk-as sketch" stroke-width="1.8"/>`
+        : `<circle r="2.2" class="gk-f2" opacity="0.65"/>`)
+    },
+    {
+      t0: 3.15e16, name: 'Galaksit muodostuvat', short: 'Galaksit', acc: '#cfe0ff',
+      desc: ['Tähdet kokoontuvat galakseiksi ja galaksit edelleen parviksi.',
+             'Laajeneminen vie galaksijoukkoja koko ajan kauemmas toisistaan.'],
+      density: 0.6, radial: false,
+      g: (i) => (i % 2 === 0
+        ? `<ellipse rx="13" ry="5" class="gk-s" stroke-width="1.8" opacity="0.9"/>` +
+          `<ellipse rx="6.5" ry="2.6" class="gk-s" stroke-width="1.5" opacity="0.7"/>` +
+          `<circle r="1.8" class="gk-f"/>`
+        : `<circle r="2" class="gk-f" opacity="0.75"/>`)
+    },
+    {
+      t0: 2.9e17, name: 'Aurinkokunta syntyy', short: 'Aurinkokunta', acc: '#ffd95a',
+      desc: ['Aurinko ja Maa syntyvät 4,6 miljardia vuotta sitten kaasupilvestä,',
+             'joka sisältää aiempien tähtien tuottamia raskaita alkuaineita.'],
+      density: 0.55, radial: false,
+      g: (i) => {
+        if (i % 7 === 0){
+          return `<circle r="4" fill="#ffd95a"/>` +
+                 `<ellipse rx="13" ry="5" class="gk-as" stroke-width="1.6" opacity="0.9"/>` +
+                 `<circle cx="13" cy="0" r="2" class="gk-a"/>`;
+        }
+        return i % 2 === 0
+          ? `<ellipse rx="13" ry="5" class="gk-s" stroke-width="1.8" opacity="0.85"/>` +
+            `<circle r="1.8" class="gk-f"/>`
+          : `<circle r="2" class="gk-f" opacity="0.7"/>`;
+      }
+    },
+    {
+      t0: 4.2e17, name: 'Nykyhetki', short: 'Nyt', acc: '#cfe0ff',
+      desc: ['Taustasäteily on jäähtynyt 2,7 kelviniin ja galaksijoukot ovat kaukana toisistaan.',
+             'Laajeneminen kiihtyy pimeän energian vaikutuksesta.'],
+      density: 0.45, radial: false,
+      g: (i) => (i % 2 === 0
+        ? `<ellipse rx="15" ry="6" class="gk-s" stroke-width="1.8" opacity="0.9"/>` +
+          `<ellipse rx="7.5" ry="3" class="gk-s" stroke-width="1.5" opacity="0.7"/>` +
+          `<circle r="2" class="gk-f"/>`
+        : `<circle r="2.2" class="gk-f" opacity="0.75"/>`)
+    }
+  ];
+
+  const N = epochs.length;
+  const bounds = epochs.map(e => e.t0).concat([T_NOW]);
+  const logB = bounds.map(Math.log10);
+
+  // u (0…1) -> aika sekunteina. Jokainen vaihe saa yhtä leveän siivun.
+  function timeAt(u){
+    const x = Math.min(Math.max(u, 0), 1) * N;
+    const i = Math.min(Math.floor(x), N - 1);
+    const f = x - i;
+    return Math.pow(10, logB[i] + f * (logB[i + 1] - logB[i]));
+  }
+  // Käänteiskuvaus: aika -> u. Käytetään vain aikaskaalan merkkeihin.
+  function uAtTime(t){
+    const L = Math.log10(t);
+    if (L <= logB[0]) return 0;
+    for (let i = 0; i < N; i++){
+      if (L <= logB[i + 1]) return (i + (L - logB[i]) / (logB[i + 1] - logB[i])) / N;
+    }
+    return 1;
+  }
+  const epochIndexAt = u => Math.min(Math.floor(Math.min(Math.max(u, 0), 1) * N), N - 1);
+
+  // ---------------------------------------------------------------
+  // Mustan kappaleen väri lämpötilan mukaan (kuuma sinivalkoinen ->
+  // oranssi -> tumma). Interpoloidaan log10(T):n suhteen.
+  // ---------------------------------------------------------------
+  const COLORS = [
+    [ 0.435, [ 10,  12,  28]],
+    [ 1.0,   [ 18,  17,  41]],
+    [ 1.5,   [ 28,  20,  48]],
+    [ 2.0,   [ 59,  26,  44]],
+    [ 2.5,   [122,  47,  34]],
+    [ 3.0,   [212, 118,  63]],
+    [ 3.48,  [255, 201, 138]],
+    [ 3.78,  [255, 246, 234]],
+    [ 4.0,   [226, 235, 255]],
+    [ 4.5,   [205, 220, 255]],
+    [ 6.0,   [219, 232, 255]],
+    [ 8.0,   [230, 238, 255]],
+    [12.0,   [243, 246, 255]],
+    [32.0,   [239, 233, 255]]
+  ];
+
+  function colorForT(T){
+    const L = Math.log10(Math.max(T, 1e-3));
+    if (L <= COLORS[0][0]) return COLORS[0][1];
+    for (let i = 0; i < COLORS.length - 1; i++){
+      const [l0, c0] = COLORS[i], [l1, c1] = COLORS[i + 1];
+      if (L <= l1){
+        const f = (L - l0) / (l1 - l0);
+        return [0, 1, 2].map(k => Math.round(c0[k] + f * (c1[k] - c0[k])));
+      }
+    }
+    return COLORS[COLORS.length - 1][1];
+  }
+  const rgb = c => `rgb(${c[0]},${c[1]},${c[2]})`;
+  const luminance = c => (0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]) / 255;
+  const mix = (a, b, f) => a.map((v, k) => Math.round(v + f * (b[k] - v)));
+
+  // ---------------------------------------------------------------
+  // Numeroiden muotoilu
+  // ---------------------------------------------------------------
+  const SUP = {'-': '⁻', '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
+               '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹'};
+  const sup = n => String(n).split('').map(c => SUP[c] || c).join('');
+  const fmt = (n, d = 1) => n.toLocaleString('fi-FI', {minimumFractionDigits: d, maximumFractionDigits: d});
+
+  function sci(x, d = 1){
+    if (!isFinite(x) || x === 0) return '0';
+    const e = Math.floor(Math.log10(Math.abs(x)));
+    const m = x / Math.pow(10, e);
+    return (d === 0 || Math.abs(m - 1) < 0.05 ? '' : fmt(m, d) + '·') + '10' + sup(e);
+  }
+
+  function fmtTime(t){
+    if (t < 1e-3) return sci(t, 1) + ' s';
+    if (t < 1) return fmt(t, 3) + ' s';
+    if (t < 90) return fmt(t, t < 10 ? 1 : 0) + ' s';
+    if (t < 5400) return fmt(t / 60, 1) + ' min';
+    if (t < 2 * 86400) return fmt(t / 3600, 1) + ' h';
+    if (t < 0.5 * YR) return fmt(t / 86400, 0) + ' vrk';
+    const y = t / YR;
+    if (y < 1e6) return fmt(y, 0) + ' v';
+    if (y < 1e9) return fmt(y / 1e6, 0) + ' milj. v';
+    return fmt(y / 1e9, 2) + ' mrd v';
+  }
+
+  function fmtT(T){
+    if (T >= 1e4) return sci(T, 1) + ' K';
+    if (T >= 100) return fmt(T, 0) + ' K';
+    if (T >= 10) return fmt(T, 1) + ' K';
+    return fmt(T, 3) + ' K';
+  }
+  const fmtA = a => (a >= 0.01 ? fmt(a, 3) : sci(a, 2));
+  const fmtZ = z => (z < 1 ? fmt(z, 2) : z < 10 ? fmt(z, 1) : z < 1e4 ? fmt(z, 0) : sci(z, 1));
+
+  function fmtR(ly){
+    if (ly >= 1e9) return fmt(ly / 1e9, 1) + ' mrd vv';
+    if (ly >= 1e6) return fmt(ly / 1e6, 0) + ' milj. vv';
+    if (ly >= 1) return fmt(ly, 0) + ' vv';
+    const km = ly * LY_KM;
+    if (km >= 1) return sci(km, 1) + ' km';
+    const m = km * 1000;
+    if (m >= 1) return fmt(m, 1) + ' m';
+    if (m >= 1e-3) return fmt(m * 1000, 1) + ' mm';
+    return sci(m, 1) + ' m';
+  }
+
+  // ---------------------------------------------------------------
+  // Hiukkaskenttä. Hiukkaset virtaavat ulospäin keskeltä ja
+  // palautuvat kiertoon reunalta: kaikki etääntyy katsojasta,
+  // eikä laajenemisella ole keskipistettä.
+  // ---------------------------------------------------------------
+  const P_COUNT = 190;
+  const CX = 600, CY = 231, RX = 790, RY = 225;
+  const R_MIN = 0.14;   // hiukkaset ilmestyvät vasta tämän etäisyyden päähän
+  const R_POW = 1.2;    // > 1: mitä kauempana, sitä nopeammin etääntyy
+
+  // Pehmeä porras: 0 -> 1 välillä a…b.
+  function smooth(a, b, x){
+    const t = Math.min(Math.max((x - a) / (b - a), 0), 1);
+    return t * t * (3 - 2 * t);
+  }
+
+  const field = document.getElementById('field');
+  const parts = [];
+
+  // Deterministinen pseudosatunnaisuus, jotta kuva pysyy samana
+  // kun aikaa selataan edestakaisin.
+  function rand(seed){
+    let s = Math.sin(seed * 12.9898) * 43758.5453;
+    return s - Math.floor(s);
+  }
+
+  for (let i = 0; i < P_COUNT; i++){
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    field.appendChild(g);
+    parts.push({
+      node: g,
+      th: rand(i + 1) * Math.PI * 2,
+      phase: rand(i + 31),
+      scale: 0.8 + rand(i + 57) * 0.45,
+      spin: rand(i + 91) * 360,
+      wob: 0.72 + rand(i + 113) * 0.56,
+      R: [rand(i + 7), rand(i + 17), rand(i + 23)]
+    });
+  }
+
+  let drawnEpoch = -1;
+  function drawGlyphs(ei){
+    if (ei === drawnEpoch) return;
+    drawnEpoch = ei;
+    const ep = epochs[ei];
+    const shown = Math.round(P_COUNT * ep.density);
+    parts.forEach((p, i) => {
+      p.node.innerHTML = i < shown ? ep.g(i, p.R) : '';
+      p.hidden = i >= shown;
+    });
+  }
+
+  function layout(u, ep){
+    // Virtauksen vaihe kasvaa tasaisesti ajan kuluessa: hiukkaset
+    // liukuvat ulospäin sitä nopeammin mitä kauempana ne ovat.
+    const flow = u * 7;
+    parts.forEach(p => {
+      if (p.hidden) return;
+      const f = (p.phase + flow) % 1;
+      const r = R_MIN + (1 - R_MIN) * Math.pow(f, R_POW);
+      const x = CX + Math.cos(p.th) * r * RX * p.wob;
+      const y = CY + Math.sin(p.th) * r * RY * p.wob;
+      const rot = ep.radial ? p.th * 180 / Math.PI : p.spin;
+      // Häivytys sisään lähellä katsojaa ja ulos reunalla, jotta
+      // hiukkaset kiertävät huomaamatta uudelleen käyttöön.
+      const op = smooth(0, 0.13, f) * (1 - smooth(0.80, 1, f));
+      p.node.setAttribute('transform',
+        `translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${p.scale.toFixed(2)})`);
+      p.node.setAttribute('opacity', op.toFixed(3));
+    });
+  }
+
+  // ---------------------------------------------------------------
+  // Aikajanan rakentaminen
+  // ---------------------------------------------------------------
+  const X0 = 60, X1 = 1140, W = X1 - X0;
+  const xForU = u => X0 + u * W;
+
+  const grad = document.getElementById('tempBand');
+  for (let k = 0; k <= 60; k++){
+    const u = k / 60;
+    const st = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+    st.setAttribute('offset', (u * 100).toFixed(2) + '%');
+    st.setAttribute('stop-color', rgb(colorForT(temperature(timeAt(u)))));
+    grad.appendChild(st);
+  }
+
+  const labelLayer = document.getElementById('epochLabels');
+  const tickLayer = document.getElementById('epochTicks');
+  const labelNodes = [];
+
+  epochs.forEach((ep, i) => {
+    const uMid = (i + 0.5) / N;
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', xForU(uMid).toFixed(1));
+    t.setAttribute('y', i % 2 === 0 ? 440 : 456);
+    t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('class', 'epochLabel');
+    t.textContent = ep.short;
+    const ttl = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+    ttl.textContent = ep.name;
+    t.appendChild(ttl);
+    t.addEventListener('click', () => { setU(uMid); pause(); });
+    labelLayer.appendChild(t);
+    labelNodes.push(t);
+
+    const ln = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    ln.setAttribute('x1', xForU(i / N).toFixed(1));
+    ln.setAttribute('x2', xForU(i / N).toFixed(1));
+    ln.setAttribute('y1', 462); ln.setAttribute('y2', 478);
+    tickLayer.appendChild(ln);
+  });
+
+  // Todellinen aikaskaala akselin alapuolella.
+  const decLayer = document.getElementById('decadeTicks');
+  let lastX = -99;
+  for (let L = -40; L <= 17; L += 5){
+    const x = xForU(uAtTime(Math.pow(10, L)));
+    if (x - lastX < 34) continue;
+    lastX = x;
+    const ln = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    ln.setAttribute('x1', x.toFixed(1)); ln.setAttribute('x2', x.toFixed(1));
+    ln.setAttribute('y1', 476); ln.setAttribute('y2', 484);
+    ln.setAttribute('stroke', '#bdb9b3'); ln.setAttribute('stroke-width', '1.5');
+    decLayer.appendChild(ln);
+    const tx = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    tx.setAttribute('x', x.toFixed(1)); tx.setAttribute('y', 499);
+    tx.setAttribute('text-anchor', 'middle');
+    tx.setAttribute('font-size', '12'); tx.setAttribute('fill', '#7a7772');
+    tx.textContent = '10' + sup(L) + ' s';
+    decLayer.appendChild(tx);
+  }
+
+  // ---------------------------------------------------------------
+  // Päivitys
+  // ---------------------------------------------------------------
+  const slider = document.getElementById('tSlider');
+  const playBtn = document.getElementById('playBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const winBg = document.getElementById('winBg');
+  const titleEl = document.getElementById('epochTitle');
+  const descA = document.getElementById('descA');
+  const descB = document.getElementById('descB');
+  const timeBig = document.getElementById('timeBig');
+  const roT = document.getElementById('roT');
+  const roA = document.getElementById('roA');
+  const roZ = document.getElementById('roZ');
+  const roR = document.getElementById('roR');
+  const phLine = document.getElementById('phLine');
+  const phMark = document.getElementById('phMark');
+
+  const INK = [43, 42, 40], DIM_D = [122, 119, 114];
+  const LIGHT = [233, 236, 247], DIM_L = [142, 151, 180];
+
+  function update(){
+    const u = Number(slider.value);
+    const ei = epochIndexAt(u);
+    const ep = epochs[ei];
+    const t = timeAt(u);
+    const T = temperature(t);
+    const a = scaleFactor(t);
+
+    const bg = colorForT(T);
+    winBg.setAttribute('fill', rgb(bg));
+
+    // Hiukkasten väri vaihtuu pehmeästi taustan kirkkauden mukaan.
+    const dark = Math.min(Math.max((0.62 - luminance(bg)) / 0.24, 0), 1);
+    field.style.setProperty('--pInk', rgb(mix(INK, LIGHT, dark)));
+    field.style.setProperty('--pDim', rgb(mix(DIM_D, DIM_L, dark)));
+    field.style.setProperty('--pAcc', ep.acc);
+
+    drawGlyphs(ei);
+    layout(u, ep);
+
+    titleEl.textContent = ep.name;
+    descA.textContent = ep.desc[0] || '';
+    descB.textContent = ep.desc[1] || '';
+
+    timeBig.textContent = fmtTime(t);
+    roT.textContent = fmtT(T);
+    roA.textContent = fmtA(a);
+    roZ.textContent = fmtZ(redshift(t));
+    roR.textContent = fmtR(horizonLy(t));
+
+    const x = xForU(u);
+    phLine.setAttribute('x1', x.toFixed(1));
+    phLine.setAttribute('x2', x.toFixed(1));
+    phMark.setAttribute('transform', `translate(${x.toFixed(1)},460)`);
+
+    labelNodes.forEach((n, i) => n.classList.toggle('on', i === ei));
+  }
+
+  function setU(u){
+    slider.value = Math.min(Math.max(u, 0), 1);
+    update();
+  }
+
+  // ---------------------------------------------------------------
+  // Toisto: koko historia noin 48 sekunnissa.
+  // ---------------------------------------------------------------
+  const DURATION = 48;
+  let playing = false, prev = 0, raf = 0;
+
+  function tick(now){
+    if (!playing) return;
+    const dt = Math.min((now - prev) / 1000, 0.1);
+    prev = now;
+    let u = Number(slider.value) + dt / DURATION;
+    if (u >= 1){ u = 1; setU(u); pause(); return; }
+    setU(u);
+    raf = requestAnimationFrame(tick);
+  }
+
+  function play(){
+    if (Number(slider.value) >= 1) slider.value = 0;
+    playing = true;
+    playBtn.textContent = '⏸ Keskeytä';
+    prev = performance.now();
+    raf = requestAnimationFrame(tick);
+  }
+  function pause(){
+    playing = false;
+    playBtn.textContent = '▶ Toista';
+    cancelAnimationFrame(raf);
+  }
+
+  playBtn.addEventListener('click', () => (playing ? pause() : play()));
+  slider.addEventListener('input', () => { pause(); update(); });
+  resetBtn.addEventListener('click', () => { pause(); setU(0); });
+  document.addEventListener('keydown', e => {
+    if (e.code === 'Space'){ e.preventDefault(); playing ? pause() : play(); }
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>
