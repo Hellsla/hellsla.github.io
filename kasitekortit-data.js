@@ -434,7 +434,7 @@ window.KORTIT = [
   ]}
 ]},
 
-{ id:"FY5", nimi:"Jaksollinen liike ja aallot", aiheet:[
+{ id:"FY5", kesken:true, nimi:"Jaksollinen liike ja aallot", aiheet:[
   { nimi:"Ympyräliike ja gravitaatio", kortit:[
     ["Tasainen ympyräliike","Liike ympyrärataa pitkin vakionopeudella; nopeuden suunta muuttuu jatkuvasti."],
     ["Keskeiskiihtyvyys","Ympyrän keskipistettä kohti osoittava kiihtyvyys, a = v² / r."],
@@ -465,7 +465,7 @@ window.KORTIT = [
   ]}
 ]},
 
-{ id:"FY6", nimi:"Sähkö", aiheet:[
+{ id:"FY6", kesken:true, nimi:"Sähkö", aiheet:[
   { nimi:"Varaus ja kenttä", kortit:[
     ["Sähkövaraus","Aineen ominaisuus, joka aiheuttaa sähköisen vuorovaikutuksen; yksikkö coulombi."],
     ["Alkeisvaraus","Pienin vapaana esiintyvä varaus, e = 1,602 · 10⁻¹⁹ C."],
@@ -495,7 +495,7 @@ window.KORTIT = [
   ]}
 ]},
 
-{ id:"FY7", nimi:"Sähkömagnetismi ja valo", aiheet:[
+{ id:"FY7", kesken:true, nimi:"Sähkömagnetismi ja valo", aiheet:[
   { nimi:"Magnetismi", kortit:[
     ["Magneettikenttä","Alue, jossa magneettiseen aineeseen tai liikkuvaan varaukseen kohdistuu voima."],
     ["Magneettivuon tiheys","Magneettikentän voimakkuutta kuvaava suure B; yksikkö tesla."],
@@ -525,45 +525,184 @@ window.KORTIT = [
 ]},
 
 { id:"FY8", nimi:"Aine, säteily ja kvantittuminen", aiheet:[
-  { nimi:"Kvantittuminen", kortit:[
-    ["Fotoni","Sähkömagneettisen säteilyn energiakvantti, jonka energia on E = hf."],
-    ["Planckin vakio","Luonnonvakio h = 6,626 · 10⁻³⁴ Js, joka yhdistää energian ja taajuuden."],
-    ["Valosähköinen ilmiö","Elektronien irtoaminen metallista, kun siihen osuu riittävän suurienergistä valoa."],
-    ["Irrotustyö","Pienin energia, joka tarvitaan elektronin irrottamiseen metallista."],
-    ["Energiatasot","Atomin sallitut, kvantittuneet energia-arvot."],
-    ["Viivaspektri","Spektri, jossa esiintyy vain tiettyjä aallonpituuksia; syntyy energiatasojen välisistä siirtymistä."],
-    ["Bohrin atomimalli","Malli, jossa elektronit kiertävät ydintä vain tietyillä sallituilla radoilla."],
-    ["Ionisaatioenergia","Energia, joka tarvitaan elektronin irrottamiseen atomista kokonaan."]
+  { nimi:"Säteilyn kvantittuminen", kortit:[
+    ["Kvantti","Pienin määrä, jossa tietty fysikaalinen suure voi siirtyä vuorovaikutuksessa."],
+    ["Kvantittuminen","Energia voi tietyissä ilmiöissä saada tai siirtyä vain määrättyinä erinä."],
+    ["Fotoni","Sähkömagneettisen säteilykentän energiakvantti, jolla ei ole lepomassaa."],
+    ["Planckin vakio","Kvanttifysiikan perusvakio, joka yhdistää fotonin energian säteilyn taajuuteen."],
+    ["Fotonin energia","Kasvaa säteilyn taajuuden kasvaessa ja aallonpituuden pienentyessä; E = hf = hc/λ."],
+    ["Elektronivoltti","Energia, jonka alkeisvaraus saa yhden voltin jännitteessä; 1 eV ≈ 1,60·10⁻¹⁹ J."],
+    ["Musta kappale","Ideaalinen säteilijä, jonka lähettämän säteilyn spektri riippuu vain lämpötilasta."],
+    ["Jatkuva spektri","Sisältää yhtenäisen aallonpituusalueen ilman erillisiä spektriviivoja."]
   ]},
-  { nimi:"Aineen aaltoluonne", kortit:[
-    ["De Broglien aallonpituus","Hiukkasen aallonpituus, λ = h / p."],
-    ["Aalto-hiukkasdualismi","Aineella ja säteilyllä on sekä aalto- että hiukkasominaisuuksia."],
-    ["Epätarkkuusperiaate","Paikkaa ja liikemäärää ei voi tuntea samanaikaisesti mielivaltaisen tarkasti."],
-    ["Todennäköisyysluonne","Kvanttimekaniikka antaa vain todennäköisyyksiä mittaustuloksille."],
-    ["Tunneloituminen","Ilmiö, jossa hiukkanen läpäisee energiavallin, jonka yli se ei klassisesti pääsisi."],
-    ["Kaksoisrakokoe","Koe, jossa yksittäiset hiukkaset muodostavat interferenssikuvion."]
+  { nimi:"Valosähköilmiö", kortit:[
+    ["Valosähköilmiö","Riittävän suuritaajuinen sähkömagneettinen säteily voi irrottaa elektroneja aineen pinnasta."],
+    ["Irrotustyö","Pienin energia, joka tarvitaan elektronin irrottamiseen tietyn aineen pinnasta."],
+    ["Rajataajuus","Pienin säteilyn taajuus, jolla elektroneja voi irrota tietystä aineesta."],
+    ["Pysäytysjännite","Jännite, jolla nopeimmatkin pinnasta irronneet elektronit juuri pysähtyvät."],
+    ["Maksimiliike-energia","Nopeimman irronneen elektronin energia saadaan energian säilymisestä; Eₖ,max = hf − W₀."],
+    ["Einsteinin yhtälö","Fotonin energia kuluu irrotustyöhön ja elektronin liike-energiaksi; hf = W₀ + Eₖ,max."],
+    ["Säteilyn intensiteetti","Kertoo pinnalle saapuvan säteilyenergian määrän pinta-alaa ja aikaa kohti."]
   ]},
-  { nimi:"Ydinfysiikka", kortit:[
-    ["Nukleoni","Ytimen rakenneosa eli protoni tai neutroni."],
-    ["Isotooppi","Saman alkuaineen ydin, jossa on eri määrä neutroneja."],
-    ["Radioaktiivisuus","Epästabiilin ytimen hajoaminen, jossa lähtee säteilyä."],
-    ["Alfasäteily","Ytimestä lähtevä heliumydin; pysähtyy paperiin."],
-    ["Beetasäteily","Ytimestä lähtevä elektroni tai positroni; pysähtyy ohueen metallilevyyn."],
-    ["Gammasäteily","Ytimestä lähtevä suurienerginen sähkömagneettinen säteily."],
-    ["Puoliintumisaika","Aika, jossa puolet radioaktiivisista ytimistä on hajonnut."],
-    ["Aktiivisuus","Hajoamisten määrä aikayksikössä; yksikkö becquerel."],
-    ["Massavaje","Ytimen massan ja sen rakenneosien yhteismassan erotus."],
-    ["Sidosenergia","Energia, joka tarvitaan ytimen hajottamiseen nukleoneiksi; E = mc²."],
-    ["Ionisoiva säteily","Säteily, jolla on riittävästi energiaa irrottamaan elektroneja atomeista."],
-    ["Efektiivinen annos","Säteilyn terveysvaikutusta kuvaava suure; yksikkö sievert."]
+  { nimi:"Aaltohiukkasdualismi", kortit:[
+    ["Aaltohiukkasdualismi","Säteilyllä ja ainehiukkasilla voi olla sekä aaltomaisia että hiukkasmaisia ominaisuuksia."],
+    ["Fotonin liikemäärä","Massattomalla säteilykvantilla on liikemäärä; p = h/λ = E/c."],
+    ["Comptonin sironta","Fotonin törmäys elektroniin muuttaa fotonin energiaa ja aallonpituutta."],
+    ["Kaksoisrakokoe","Yksittäiset hiukkaset muodostavat vähitellen aaltoliikkeelle ominaisen interferenssikuvion."],
+    ["Aineaalto","Liikkuvaan ainehiukkaseen liittyvä aaltomainen ominaisuus."],
+    ["de Broglie","Hiukkasen aallonpituus riippuu sen liikemäärästä; λ = h/p."],
+    ["Interferenssi","Aaltojen yhdistyminen vahvistaa tai heikentää havaittua vaikutusta eri kohdissa."],
+    ["Elektronimikroskooppi","Elektronien lyhyt aallonpituus mahdollistaa näkyvää valoa tarkemman kuvantamisen."]
   ]},
-  { nimi:"Hiukkasfysiikka", kortit:[
-    ["Standardimalli","Teoria, joka kuvaa alkeishiukkaset ja niiden vuorovaikutukset gravitaatiota lukuun ottamatta."],
-    ["Kvarkki","Alkeishiukkanen, joista protonit ja neutronit koostuvat."],
-    ["Leptoni","Alkeishiukkasryhmä, johon kuuluvat muun muassa elektroni ja neutriino."],
-    ["Antihiukkanen","Hiukkanen, jolla on sama massa mutta vastakkainen varaus."],
-    ["Annihilaatio","Hiukkasen ja antihiukkasen häviäminen, jolloin syntyy säteilyä."],
-    ["Perusvuorovaikutukset","Gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus."]
+  { nimi:"Atomin energiatasot", kortit:[
+    ["Energiataso","Elektronilla voi atomissa olla vain tiettyjä sallittuja energioita."],
+    ["Perustila","Atomin matalin mahdollinen energiatila."],
+    ["Viritystila","Atomin tila, jossa elektronisysteemillä on enemmän energiaa kuin perustilassa."],
+    ["Virittyminen","Atomi vastaanottaa energiaa ja siirtyy korkeammalle energiatasolle."],
+    ["Emissio","Atomi luovuttaa energiaa fotonina siirtyessään alemmalle energiatasolle."],
+    ["Absorptio","Atomi vastaanottaa sopivan energisen fotonin ja siirtyy korkeammalle energiatasolle."],
+    ["Emissiospektri","Sisältää aallonpituudet, joita virittynyt aine lähettää energiatilojen purkautuessa."],
+    ["Absorptiospektri","Sisältää puuttuvia aallonpituuksia, jotka aine on absorboinut jatkuvasta spektristä."],
+    ["Viivaspektri","Koostuu erillisistä aallonpituuksista ja kertoo aineen kvantittuneista energiatiloista."],
+    ["Energiatasokaavio","Kuvaa järjestelmän sallitut energiat sekä niiden väliset siirtymät."],
+    ["Ionisaatioenergia","Pienin energia, jolla elektroni voidaan irrottaa atomista kokonaan."],
+    ["Vetyatomin energia","Elektronin sallittu energia riippuu pääkvanttiluvusta; Eₙ = −13,6 eV/n²."]
+  ]},
+  { nimi:"Kvanttimekaaninen atomimalli", kortit:[
+    ["Kvanttitila","Järjestelmän sallittu tila, johon liittyy tiettyjä fysikaalisia ominaisuuksia ja energia."],
+    ["Aaltofunktio","Matemaattinen kuvaus, jonka avulla voidaan määrittää hiukkasen havaitsemisen todennäköisyyksiä."],
+    ["Todennäköisyysjakauma","Kuvaa, kuinka todennäköisesti hiukkanen havaitaan eri alueilla."],
+    ["Orbitaali","Alue, jolla tiettyyn kvanttitilaan kuuluva elektroni havaitaan suurella todennäköisyydellä."],
+    ["Kvanttiluku","Luku, jolla kuvataan elektronin kvanttitilan ominaisuuksia atomissa."],
+    ["Elektronikuori","Ryhmä elektronitiloja, joilla on sama pääkvanttiluku."],
+    ["Paulin kieltosääntö","Atomissa kahdella elektronilla ei voi olla kaikkia kvanttilukuja samoina."],
+    ["Epätarkkuusperiaate","Hiukkasen paikkaa ja liikemäärää ei voida samanaikaisesti määrittää mielivaltaisen tarkasti."],
+    ["Tunneloituminen","Hiukkanen voi kvanttimekaniikan mukaan löytyä esteen toiselta puolelta ilman klassisesti riittävää energiaa."],
+    ["Seisova aalto","Aaltomuoto, joka pysyy paikallaan ja mahdollistaa vain tietyt elektronin kvanttitilat."]
+  ]},
+  { nimi:"Kvantti-ilmiöiden sovellukset", kortit:[
+    ["Puolijohde","Aine, jonka sähkönjohtavuutta voidaan hallita esimerkiksi seostamalla tai lämpötilaa muuttamalla."],
+    ["Seostaminen","Puolijohteeseen lisätään pieni määrä muita atomeja sen sähkönjohtavuuden muuttamiseksi."],
+    ["Diodi","Puolijohdekomponentti, joka johtaa sähkövirtaa pääasiassa yhteen suuntaan."],
+    ["Transistori","Puolijohdekomponentti, jolla voidaan ohjata tai vahvistaa sähkövirtaa."],
+    ["Aurinkokenno","Puolijohdelaite, joka muuntaa sähkömagneettisen säteilyn energiaa sähköenergiaksi."],
+    ["Luminesenssi","Valon syntymistä aineessa ilman aineen voimakasta kuumentamista."],
+    ["Fluoresenssi","Absorboidun energian jälkeen valo syntyy nopeasti viritystilan purkautuessa."],
+    ["Fosforenssi","Viritystila purkautuu hitaasti, joten aine voi lähettää valoa vielä virityksen päätyttyä."],
+    ["Stimuloitu emissio","Fotoni saa virittyneen atomin emittoimaan toisen samanenergisen fotonin."],
+    ["Laser","Tuottaa voimakkaasti suunnattua, lähes yksiväristä ja koherenttia sähkömagneettista säteilyä."],
+    ["Koherentti valo","Aallot värähtelevät keskenään vakiossa vaihe-erossa."]
+  ]},
+  { nimi:"Röntgensäteily", kortit:[
+    ["Röntgensäteily","Lyhytaaltoista ja suurienergistä ionisoivaa sähkömagneettista säteilyä."],
+    ["Röntgenputki","Elektronit kiihdytetään suurella jännitteellä ja törmäytetään anodiin säteilyn tuottamiseksi."],
+    ["Katodi","Röntgenputken elektrodi, josta elektroneja irrotetaan ja kiihdytetään kohti anodia."],
+    ["Anodi","Röntgenputken kohde, johon suurella nopeudella liikkuvat elektronit törmäävät."],
+    ["Jarrutussäteily","Syntyy elektronien hidastuessa atomiydinten sähkökentässä ja muodostaa jatkuvan röntgenspektrin."],
+    ["Karakteristinen säteily","Syntyy atomien elektronitilojen siirtymistä ja muodostaa aineelle ominaisia spektriviivoja."],
+    ["Röntgenspektri","Koostuu jatkuvasta jarrutussäteilystä ja sen päälle tulevista karakteristisista viivoista."],
+    ["Lyhyin aallonpituus","Röntgenputken suurienergisin fotoni syntyy, kun elektronin energia muuttuu kokonaan fotoniksi; λmin = hc/(eU)."]
+  ]},
+  { nimi:"Atomiydin", kortit:[
+    ["Nukleoni","Yhteisnimitys atomiytimen protoneille ja neutroneille."],
+    ["Protoni","Positiivisesti varautunut nukleoni, jonka lukumäärä määrää alkuaineen."],
+    ["Neutroni","Sähköisesti neutraali nukleoni, jonka lukumäärä voi vaihdella saman alkuaineen ytimissä."],
+    ["Järjestysluku","Protonien lukumäärä atomiytimessä."],
+    ["Massaluku","Protonien ja neutronien yhteenlaskettu lukumäärä ytimessä."],
+    ["Isotooppi","Saman alkuaineen ydin, jossa neutronien määrä poikkeaa toisesta saman alkuaineen ytimestä."],
+    ["Atomimassayksikkö","Atomien ja ydinten massojen yksikkö; 1 u ≈ 1,66·10⁻²⁷ kg."],
+    ["Massavaje","Sidotun ytimen massa on pienempi kuin sen erillisten nukleonien massojen summa."],
+    ["Sidosenergia","Energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi; E = Δmc²."],
+    ["Sidososuus","Sidosenergia jaettuna ytimen nukleonien lukumäärällä kuvaa ytimen pysyvyyttä."]
+  ]},
+  { nimi:"Ydinreaktiot", kortit:[
+    ["Ydinreaktio","Atomiydin muuttuu toiseksi ytimeksi tai ytimiksi vuorovaikutuksessa toisen hiukkasen kanssa."],
+    ["Reaktioenergia","Ydinreaktiossa vapautuva tai sitoutuva energia määräytyy alku- ja lopputilan massaerosta; Q = Δmc²."],
+    ["Fissio","Raskas atomiydin hajoaa kahdeksi kevyemmäksi ytimeksi ja vapauttaa energiaa."],
+    ["Ketjureaktio","Fissiossa vapautuneet neutronit aiheuttavat uusia fissioita."],
+    ["Fuusio","Kevyet atomiytimet yhdistyvät raskaammaksi ytimeksi ja voivat vapauttaa energiaa."],
+    ["Fuusioreaktio","Tähtien energia syntyy kevyiden ytimien yhdistyessä suuremmiksi ytimiksi."],
+    ["Ydinvoimala","Fission vapauttamaa energiaa käytetään lämmön kautta sähköenergian tuottamiseen."],
+    ["Kriittinen massa","Pienin fissioituvan aineen määrä, jolla itseään ylläpitävä ketjureaktio on mahdollinen."]
+  ]},
+  { nimi:"Radioaktiivisuus", kortit:[
+    ["Radioaktiivisuus","Epästabiili atomiydin muuttuu itsestään toiseksi ytimeksi ja lähettää samalla säteilyä."],
+    ["Emoydin","Radioaktiivisen hajoamisen alkuperäinen epästabiili ydin."],
+    ["Tytärydin","Radioaktiivisessa hajoamisessa syntyvä uusi atomiydin."],
+    ["Alfahajoaminen","Ydin lähettää kaksi protonia ja kaksi neutronia sisältävän heliumytimen."],
+    ["Beeta⁻-hajoaminen","Ytimen neutroni muuttuu protoniksi ja samalla syntyy elektroni sekä antineutriino."],
+    ["Beeta⁺-hajoaminen","Ytimen protoni muuttuu neutroniksi ja samalla syntyy positroni sekä neutriino."],
+    ["Elektronisieppaus","Ydin sieppaa elektronin, jolloin protoni muuttuu neutroniksi ja samalla syntyy neutriino."],
+    ["Gammahajoaminen","Viritystilassa oleva ydin siirtyy alemmalle energiatasolle lähettämällä suurienergisen fotonin."],
+    ["Alfasäteily","Koostuu heliumytimistä ja ionisoi voimakkaasti mutta läpäisee ainetta heikosti."],
+    ["Beetasäteily","Koostuu suurinopeuksisista elektroneista tai positroneista."],
+    ["Gammasäteily","Suurienergistä sähkömagneettista säteilyä, jolla on suuri läpäisykyky."],
+    ["Neutriino","Hyvin kevyt ja varaukseton hiukkanen, joka vuorovaikuttaa aineen kanssa erittäin heikosti."]
+  ]},
+  { nimi:"Hajoamislaki", kortit:[
+    ["Aktiivisuus","Kertoo radioaktiivisten hajoamisten määrän sekunnissa."],
+    ["Becquerel","Aktiivisuuden yksikkö, jossa yksi becquerel tarkoittaa yhtä hajoamista sekunnissa."],
+    ["Hajoamisvakio","Kuvaa yksittäisen radioaktiivisen ytimen hajoamisen todennäköisyyttä aikayksikössä."],
+    ["Puoliintumisaika","Aika, jossa radioaktiivisten ydinten lukumäärä ja näytteen aktiivisuus pienenevät puoleen."],
+    ["Hajoamislaki","Hajoamattomien ydinten lukumäärä pienenee eksponentiaalisesti; N = N₀e⁻λt."],
+    ["Aktiivisuuslaki","Näytteen aktiivisuus pienenee samalla eksponentiaalisella tavalla; A = A₀e⁻λt."],
+    ["Hajoamissarja","Peräkkäisten radioaktiivisten hajoamisten ketju päättyy lopulta stabiiliin ytimeen."]
+  ]},
+  { nimi:"Säteilyn heikkeneminen", kortit:[
+    ["Intensiteetti","Kuvaa säteilyn kuljettamaa tehoa pinta-alayksikköä kohti."],
+    ["Heikennyslaki","Gammasäteilyn intensiteetti pienenee aineessa eksponentiaalisesti; I = I₀e⁻μx."],
+    ["Heikennyskerroin","Kuvaa, kuinka voimakkaasti tietty aine heikentää tietyn energistä säteilyä."],
+    ["Puoliintumispaksuus","Ainekerroksen paksuus, joka pienentää säteilyn intensiteetin puoleen."],
+    ["Etäisyyslaki","Pistemäisen lähteen säteilyn intensiteetti on kääntäen verrannollinen etäisyyden neliöön; I ∝ 1/r²."],
+    ["Valosähköabsorptio","Fotoni luovuttaa kaiken energiansa aineen elektronille ja häviää."],
+    ["Comptoninsironta","Fotoni luovuttaa osan energiastaan elektronille ja jatkaa pienemmällä energialla."],
+    ["Parinmuodostus","Riittävän energinen fotoni voi ytimen lähellä muuttua elektroniksi ja positroniksi."]
+  ]},
+  { nimi:"Säteilyturvallisuus", kortit:[
+    ["Ionisoiva säteily","Säteily, jolla on riittävästi energiaa irrottamaan elektroneja atomeista tai molekyyleistä."],
+    ["Absorboitunut annos","Kertoo aineeseen siirtyneen säteilyenergian massayksikköä kohti."],
+    ["Gray","Absorboituneen annoksen yksikkö; 1 Gy = 1 J/kg."],
+    ["Ekvivalenttiannos","Huomioi absorboituneen energian lisäksi säteilylajin biologisen vaikutuksen."],
+    ["Sievert","Säteilyannoksen biologista haittaa kuvaavan annoksen yksikkö."],
+    ["Taustasäteily","Ympäristössä jatkuvasti esiintyvää ionisoivaa säteilyä luonnollisista ja keinotekoisista lähteistä."],
+    ["Radon","Maaperästä rakennuksiin kulkeutuva radioaktiivinen kaasu ja merkittävä säteilyannoksen lähde Suomessa."],
+    ["Säteilysuojaus","Altistusta vähennetään lyhentämällä aikaa, kasvattamalla etäisyyttä ja käyttämällä sopivaa suojausta."],
+    ["Säteilyvaurio","Ionisoiva säteily voi vaurioittaa soluja ja DNA:ta sekä lisätä syöpäriskiä."]
+  ]},
+  { nimi:"Säteilyn hyötykäyttö", kortit:[
+    ["Röntgenkuvaus","Kehon eri kudokset vaimentavat röntgensäteilyä eri tavoin, jolloin muodostuu kuva sisäisistä rakenteista."],
+    ["Tietokonetomografia","Useista röntgenkuvista muodostetaan tietokoneella kehon poikkileikkaus- tai kolmiulotteinen kuva."],
+    ["Isotooppilääketiede","Radioaktiivisia merkkiaineita käytetään elimistön toiminnan tutkimiseen ja sairauksien hoitoon."],
+    ["PET-kuvaus","Positronia lähettävän merkkiaineen avulla muodostetaan kuva elimistön aineenvaihdunnasta."],
+    ["Sädehoito","Ionisoivaa säteilyä kohdistetaan kasvaimeen syöpäsolujen vaurioittamiseksi."],
+    ["Radiohiiliajoitus","Orgaanisen näytteen ikää arvioidaan hiili-14-isotoopin jäljellä olevan määrän avulla."],
+    ["Palovaroitin","Joissakin ilmaisimissa radioaktiivinen aine ionisoi ilmaa ja mahdollistaa savun havaitsemisen."]
+  ]},
+  { nimi:"Standardimalli", kortit:[
+    ["Standardimalli","Teoria kuvaa materian perushiukkaset sekä vahvan, heikon ja sähkömagneettisen vuorovaikutuksen."],
+    ["Alkeishiukkanen","Hiukkanen, jolla ei nykyisen tiedon mukaan ole sisäistä rakennetta."],
+    ["Kvarkki","Materian perushiukkanen, josta esimerkiksi protonit ja neutronit rakentuvat."],
+    ["Leptoni","Perushiukkasten ryhmä, johon kuuluvat esimerkiksi elektroni ja neutriinot."],
+    ["Välittäjähiukkanen","Kvanttikentän hiukkanen, jonka avulla vuorovaikutusta voidaan kuvata."],
+    ["Gluoni","Vahvan vuorovaikutuksen välittäjähiukkanen."],
+    ["Välibosoni","W- ja Z-bosonit välittävät heikkoa vuorovaikutusta."],
+    ["Higgsin bosoni","Higgsin kenttään liittyvä hiukkanen, jonka havainto tukee hiukkasten massojen selitysmallia."],
+    ["Antihiukkanen","Hiukkasen vastinpari, jolla on sama massa mutta vastakkaisia ominaisuuksia, kuten sähkövaraus."],
+    ["Annihilaatio","Hiukkanen ja antihiukkanen voivat kohdatessaan muuttua säteilyenergiaksi."],
+    ["Vahva vuorovaikutus","Pitää kvarkit yhdessä hadroneissa ja sitoo protoneja sekä neutroneja atomiytimessä."],
+    ["Heikko vuorovaikutus","Aiheuttaa esimerkiksi beetahajoamista ja muuttaa hiukkasten tyyppiä."]
+  ]},
+  { nimi:"Maailmankaikkeus", kortit:[
+    ["Hiukkasfysiikka","Tutkii aineen pienimpiä tunnettuja rakenneosia ja niiden välisiä vuorovaikutuksia."],
+    ["Kosmologia","Tutkii maailmankaikkeutta kokonaisuutena sekä sen rakennetta, kehitystä ja ainesisältöä."],
+    ["Alkuräjähdys","Mallin mukaan maailmankaikkeus kehittyi erittäin kuumasta ja tiheästä alkutilasta."],
+    ["Kosminen inflaatio","Varhaisen maailmankaikkeuden erittäin nopea laajenemisvaihe."],
+    ["Nukleosynteesi","Varhaisessa maailmankaikkeudessa protonit ja neutronit muodostivat ensimmäisiä atomiytimiä."],
+    ["Rekombinaatio","Elektronit sitoutuivat ytimiin neutraaleiksi atomeiksi, minkä jälkeen säteily pääsi etenemään vapaasti."],
+    ["Pimeä aine","Tuntematon aineen muoto, jonka gravitaatiovaikutus havaitaan galaksien ja suurten rakenteiden liikkeissä."],
+    ["Pimeä energia","Nimitys ilmiölle, jolla selitetään maailmankaikkeuden laajenemisen kiihtymistä."],
+    ["Kosminen taustasäteily","Varhaisesta maailmankaikkeudesta peräisin oleva mikroaaltosäteily havaitaan kaikkialla avaruudessa."],
+    ["Punasiirtymä","Kaukaisten galaksien spektri siirtyy pidemmille aallonpituuksille maailmankaikkeuden laajenemisen vuoksi."]
   ]}
 ]}
 ];

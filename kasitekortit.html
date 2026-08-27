@@ -149,6 +149,16 @@
     font-weight:700;
   }
 
+  .tile.kesken{
+    background:var(--panel-2);
+    box-shadow:none;
+    opacity:.55;
+    cursor:default;
+  }
+  .tile.kesken:hover{ transform:none; box-shadow:none; border-color:transparent; }
+  .tile.kesken .code{ color:var(--ink-soft); }
+  .tile.kesken .count{ color:var(--ink-soft); }
+
   .tile .own{
     position:absolute;
     top:12px; right:12px;
@@ -756,10 +766,15 @@ function piirraKurssit(){
     b.innerHTML = (k.omat ? '<span class="own" aria-hidden="true"></span>' : '') +
                   '<span class="code"></span>' +
                   '<span class="name"></span>' +
-                  '<span class="count">' + korttiMaara(k) + ' korttia</span>';
+                  '<span class="count">' + (k.kesken ? "Tulossa" : korttiMaara(k) + " korttia") + '</span>';
     b.querySelector(".code").textContent = k.id;
     b.querySelector(".name").textContent = k.nimi;
-    b.addEventListener("click", () => valitseKurssi(k));
+    if(k.kesken){
+      b.classList.add("kesken");
+      b.disabled = true;
+    }else{
+      b.addEventListener("click", () => valitseKurssi(k));
+    }
     g.appendChild(b);
   });
   $("tyhjennaBtn").hidden = !KURSSIT.some(k => k.omat);
