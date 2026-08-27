@@ -1,7 +1,7 @@
-# Käsitekortit – miten teet omat kortit
+# Käsitetakomo – miten teet omat kortit
 
-Sovellus: **kasitekortit.html**
-Valmis sisältö: **kasitekortit-data.js**
+Sovellus: **kasitetakomo.html**
+Valmis sisältö: **kasitetakomo-data.js**
 
 Kortteja voi lisätä kolmella tavalla. Nopein on tapa 1.
 
@@ -10,7 +10,7 @@ Kortteja voi lisätä kolmella tavalla. Nopein on tapa 1.
 ## Tapa 1 – Tuo tiedosto selaimessa (nopein)
 
 1. Tee tekstitiedosto alla olevassa muodossa (esim. `kortit-fy9.txt`).
-2. Avaa `kasitekortit.html` ja paina kurssinäkymässä **"Tuo omia kortteja"**.
+2. Avaa `kasitetakomo.html` ja paina kurssinäkymässä **"Tuo omia kortteja"**.
 3. Valitse tiedosto (tai useita kerralla).
 
 Kortit tallentuvat **siihen selaimeen** ja näkyvät kurssilistassa pinkillä pisteellä
@@ -20,7 +20,7 @@ jos kortit halutaan kaikille, käytä tapaa 2 tai 3.
 ## Tapa 2 – Tekstitiedosto sivustolle (kaikille näkyvä)
 
 1. Tallenna tekstitiedosto samaan kansioon, esim. `omat-kortit.txt`.
-2. Lisää tiedoston nimi `kasitekortit.html`-tiedoston alussa olevaan listaan:
+2. Lisää tiedoston nimi `kasitetakomo.html`-tiedoston alussa olevaan listaan:
 
 ```js
 const LISATIEDOSTOT = [
@@ -33,7 +33,7 @@ Sivusto lataa tiedoston automaattisesti. (Toimii verkossa, ei paikallisesti
 
 ## Tapa 3 – Suoraan sisältötiedostoon
 
-Lisää kurssi `kasitekortit-data.js`-tiedostoon samassa muodossa kuin FY1–FY8.
+Lisää kurssi `kasitetakomo-data.js`-tiedostoon samassa muodossa kuin FY1–FY8.
 
 ---
 

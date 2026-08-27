@@ -1,5 +1,5 @@
 /* ===============================================================
-   Käsitekortit – sisältötiedosto
+   Käsitetakomo – sisältötiedosto
    ---------------------------------------------------------------
    Muoto:
    { id:"FY3", nimi:"Energia ja lämpö", aiheet:[
@@ -11,7 +11,7 @@
    Ohje uusien korttien tekemiseen: KORTTIOHJE.md
    =============================================================== */
 /* ---------------------------------------------------------------
-   Käsitekortit – sisältö
+   Käsitetakomo – sisältö
    Muoto: [käsite, määritelmä]
 ----------------------------------------------------------------*/
 window.KORTIT = [
