@@ -163,9 +163,23 @@ joiden pitäisi olla oikein. Vaadi silti: **ei tekstiä kuvaan**.
 >   `font-family="Karla, system-ui, sans-serif"`.
 > - Ei gradientteja, ei varjoja, ei kehystä.
 > - Fysiikan on oltava oikein: nuolten suunnat, kulmat ja mittasuhteet.
+>
+> Noudata suomalaisten oppimateriaalien merkintätapaa:
+> - Jokainen voima piirretään vaikutuspisteestään.
+> - **Paino** lähtee kappaleen massakeskipisteestä alaspäin.
+> - **Tukivoima** lähtee kosketuskohdasta eli tason ja kappaleen välistä,
+>   kohtisuoraan tasosta poispäin.
+> - **Kitkavoima** piirretään tason suuntaisesti niin, että kärki päättyy
+>   kappaleeseen.
+> - Suureiden tunnukset kursiivilla (*G*, *N*, *F*, *v*), alaindeksit pienemmällä.
+> - Yksiköt pystyllä kirjasimella, lukuarvon ja yksikön väliin välilyönti,
+>   desimaalierottimena pilkku.
+> - Kulma merkitään kaarella ja kreikkalaisella kirjaimella.
+> - Kuvaajissa akselit merkitään suureen tunnuksella ja yksiköllä, esim. *p* (kPa).
 
 Tallenna vastaus tiedostoksi `kuvat/[kurssi]-[käsite].svg` ja **katso se läpi** —
-avaa selaimessa ja tarkista nuolten suunnat.
+avaa selaimessa ja tarkista nuolten suunnat, vaikutuspisteet ja tunnusten kursivointi.
+Kielimalli piirtää sujuvasti myös väärin päin olevan kitkavoiman.
 
 ### Kehote havainnollistavalle kuvalle
 
