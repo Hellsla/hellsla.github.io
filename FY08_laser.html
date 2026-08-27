@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laserin toiminta – pumppaus, miehitysinversio ja indusoitu emissio</title>
+
+<style>
+:root{
+  --ink:#2f2f2f;
+  --paper:#fff;
+  --muted:#5f5f5f;
+  --faint:#9a9a9a;
+  --grid:#e8e7e4;
+  --blue:#2d5bc7;
+  --red:#e4433f;
+  --mirror:#3c3c3c;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  background:var(--paper);
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--ink);
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.wrap{
+  width:100%;
+  max-width:1280px;
+  padding:0 10px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+svg.stage{
+  width:100%;
+  height:auto;
+  display:block;
+  background:var(--paper);
+}
+
+.heading{font-size:15px;letter-spacing:1.6px;fill:var(--faint)}
+.lbl{font-size:15px;fill:var(--muted)}
+.lbl-s{font-size:13px;fill:var(--faint)}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.lbl-i{font-size:15px;fill:var(--ink)}
+.readout{font-size:19px;fill:var(--ink)}
+.big{font-size:22px;fill:var(--ink)}
+
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:14px 26px;
+  padding:4px 6px 0;
+}
+
+.field{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:16px;
+}
+
+.field input[type="range"]{
+  width:min(260px, 40vw);
+  accent-color:var(--ink);
+  cursor:pointer;
+}
+
+.field .out{
+  min-width:6ch;
+  font-variant-numeric:tabular-nums;
+  color:var(--muted);
+}
+
+label{cursor:pointer}
+
+button{
+  font:inherit;
+  font-size:16px;
+  background:#fff;
+  color:var(--ink);
+  border:1.6px solid var(--ink);
+  border-radius:999px;
+  padding:7px 17px;
+  cursor:pointer;
+}
+button:active{transform:translateY(1px)}
+
+.sr{
+  position:absolute;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
+@media (max-width:760px){
+  .controls{gap:10px 16px}
+  .field{font-size:14px}
+  button{font-size:14px;padding:6px 14px}
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<svg class="stage" viewBox="0 0 1280 720" role="img"
+     aria-label="Simulaatio laserin toiminnasta: pumppaus, miehitysinversio, indusoitu emissio ja optinen resonaattori">
+
+<defs>
+  <pattern id="mirrorHatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="var(--mirror)" stroke-width="3.2"/>
+  </pattern>
+  <pattern id="bandHatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="var(--faint)" stroke-width="1.4"/>
+  </pattern>
+  <marker id="arrowBlue" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+    <path d="M1 1 L8 4.5 L1 8 z" fill="var(--blue)"/>
+  </marker>
+  <marker id="arrowRed" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+    <path d="M1 1 L8 4.5 L1 8 z" fill="var(--red)"/>
+  </marker>
+  <marker id="arrowGrey" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+    <path d="M1 1 L8 4.5 L1 8 z" fill="var(--faint)"/>
+  </marker>
+  <marker id="arrowInk" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+    <path d="M1 1 L9 5 L1 9 z" fill="var(--red)"/>
+  </marker>
+</defs>
+
+<!-- ================= OPTINEN RESONAATTORI ================= -->
+<text class="heading" x="58" y="34">OPTINEN RESONAATTORI</text>
+
+<!-- peilien selitteet -->
+<text class="lbl-s" x="104" y="62" text-anchor="middle">täysin heijastava</text>
+<text class="lbl-s" x="104" y="79" text-anchor="middle">peili</text>
+<text class="lbl-s" x="908" y="62" text-anchor="middle">osittain läpäisevä</text>
+<text class="lbl-s" id="mirrorLabel" x="908" y="79" text-anchor="middle">peili, T = 8 %</text>
+
+<!-- aktiivinen aine -->
+<rect x="136" y="100" width="752" height="170" fill="#fbfbfa" stroke="var(--grid)" stroke-width="2"/>
+<text class="lbl-s" x="136" y="93">aktiivinen aine</text>
+
+<!-- peilit -->
+<rect x="96" y="100" width="16" height="170" fill="url(#mirrorHatch)" stroke="var(--mirror)" stroke-width="2.4"/>
+<rect x="900" y="100" width="16" height="170" fill="#fff" stroke="var(--mirror)" stroke-width="2.4"/>
+<rect id="outCouplerFill" x="900" y="100" width="16" height="170" fill="url(#mirrorHatch)" opacity="0.72"/>
+
+<g id="atomLayer"></g>
+<g id="photonLayer"></g>
+<g id="freeLayer"></g>
+
+<!-- ulostuleva lasersäde -->
+<g id="beamGroup" opacity="0">
+  <rect id="beam" x="916" y="177" width="290" height="16" fill="var(--red)" opacity="0.55"/>
+  <path id="beamTip" d="M1206 165 L1244 185 L1206 205 z" fill="var(--red)"/>
+</g>
+<text class="lbl" id="beamLabel" x="1060" y="140" text-anchor="middle" fill="var(--faint)">lasersäde</text>
+<text class="lbl-s" x="1060" y="232" text-anchor="middle">koherenttia valoa</text>
+<text class="lbl-s" x="1060" y="252" text-anchor="middle">λ = 633 nm</text>
+
+<!-- pumppaus -->
+<g id="pumpArrows">
+  <line x1="200" y1="316" x2="200" y2="282" stroke="var(--blue)" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <line x1="360" y1="316" x2="360" y2="282" stroke="var(--blue)" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <line x1="512" y1="316" x2="512" y2="282" stroke="var(--blue)" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <line x1="664" y1="316" x2="664" y2="282" stroke="var(--blue)" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <line x1="824" y1="316" x2="824" y2="282" stroke="var(--blue)" stroke-width="5" marker-end="url(#arrowBlue)"/>
+</g>
+<text class="lbl" x="512" y="342" text-anchor="middle">pumppaus – energiaa syötetään aktiiviseen aineeseen</text>
+
+<!-- värikoodin selite -->
+<g transform="translate(1000,296)">
+  <circle cx="0" cy="-5" r="9" fill="#fff" stroke="var(--faint)" stroke-width="2.2"/>
+  <text class="lbl-s" x="14" y="0">perustila E₁</text>
+  <circle cx="0" cy="25" r="9" fill="var(--red)"/>
+  <text class="lbl-s" x="14" y="30">metastabiili E₂</text>
+  <circle cx="140" cy="-5" r="9" fill="var(--blue)"/>
+  <text class="lbl-s" x="154" y="0">pumppaustaso E₃</text>
+</g>
+
+<line x1="58" y1="366" x2="1222" y2="366" stroke="var(--grid)" stroke-width="2"/>
+
+<!-- ================= ENERGIATASOT ================= -->
+<text class="heading" x="58" y="404">ENERGIATASOT · KOLMITASOLASER</text>
+
+<!-- tasot -->
+<rect x="150" y="434" width="280" height="10" fill="url(#bandHatch)"/>
+<line x1="150" y1="444" x2="430" y2="444" stroke="var(--ink)" stroke-width="2.6"/>
+<line x1="150" y1="520" x2="430" y2="520" stroke="var(--ink)" stroke-width="2.6"/>
+<line x1="150" y1="660" x2="430" y2="660" stroke="var(--ink)" stroke-width="2.6"/>
+
+<text class="lbl-i" x="442" y="440">E₃ = 2,60 eV</text>
+<text class="lbl-s" x="442" y="458">pumppaustaso, lyhyt elinaika</text>
+<text class="lbl-i" x="442" y="516">E₂ = 1,96 eV</text>
+<text class="lbl-s" id="metaCaption" x="442" y="534">metastabiili tila, pitkä elinaika</text>
+<text class="lbl-i" x="442" y="656">E₁ = 0 eV</text>
+<text class="lbl-s" x="442" y="674">perustila</text>
+
+<text class="readout" id="n3text" x="138" y="450" text-anchor="end">N₃ = 0</text>
+<text class="readout" id="n2text" x="138" y="526" text-anchor="end">N₂ = 0</text>
+<text class="readout" id="n1text" x="138" y="666" text-anchor="end">N₁ = 36</text>
+
+<!-- siirtymänuolet -->
+<line id="arrPump"  x1="190" y1="658" x2="190" y2="450" stroke="var(--blue)" stroke-width="3.4"
+      marker-end="url(#arrowBlue)" opacity="0.35"/>
+<line id="arrDecay" x1="258" y1="448" x2="258" y2="514" stroke="var(--faint)" stroke-width="3"
+      stroke-dasharray="7 6" marker-end="url(#arrowGrey)" opacity="0.35"/>
+<line id="arrSpont" x1="330" y1="524" x2="330" y2="654" stroke="var(--red)" stroke-width="2.4"
+      marker-end="url(#arrowRed)" opacity="0.3"/>
+<line id="arrStim"  x1="400" y1="524" x2="400" y2="654" stroke="var(--red)" stroke-width="4.4"
+      marker-end="url(#arrowRed)" opacity="0.3"/>
+
+<text class="lbl-s halo" x="204" y="554" text-anchor="middle" transform="rotate(-90 204 554)">pumppaus</text>
+<text class="lbl-s halo" x="272" y="481" text-anchor="middle" transform="rotate(-90 272 481)">säteilytön siirtymä</text>
+<text class="lbl-s halo" x="344" y="589" text-anchor="middle" transform="rotate(-90 344 589)">spontaani emissio</text>
+<text class="lbl-s halo" x="414" y="589" text-anchor="middle" transform="rotate(-90 414 589)">indusoitu emissio</text>
+
+<!-- indusoidun emission periaate -->
+<g transform="translate(150,692)">
+  <text class="lbl-s" x="0" y="0">Indusoitu emissio monistaa fotonin: yksi foton saa</text>
+  <text class="lbl-s" x="0" y="18">metastabiilin atomin emittoimaan samanlaisen toisen.</text>
+</g>
+
+<line x1="620" y1="386" x2="620" y2="700" stroke="var(--grid)" stroke-width="2"/>
+
+<!-- ================= MIEHITYSLUVUT JA KYNNYS ================= -->
+<text class="heading" x="660" y="404">MIEHITYSLUVUT JA KYNNYSEHTO</text>
+
+<text class="lbl" x="812" y="447" text-anchor="end">N₃ pumppaustaso</text>
+<rect x="822" y="430" width="378" height="20" fill="#f4f3f1"/>
+<rect id="bar3" x="822" y="430" width="0" height="20" fill="var(--blue)"/>
+
+<text class="lbl" x="812" y="489" text-anchor="end">N₂ metastabiili</text>
+<rect x="822" y="472" width="378" height="20" fill="#f4f3f1"/>
+<rect id="bar2" x="822" y="472" width="0" height="20" fill="var(--red)"/>
+
+<text class="lbl" x="812" y="531" text-anchor="end">N₁ perustila</text>
+<rect x="822" y="514" width="378" height="20" fill="#f4f3f1"/>
+<rect id="bar1" x="822" y="514" width="378" height="20" fill="var(--faint)"/>
+
+<!-- inversiomittari -->
+<text class="lbl" x="660" y="580">Miehitysinversio ΔN = N₂ − N₁</text>
+<rect id="thrZone" x="1010" y="598" width="190" height="16" fill="var(--red)" opacity="0.12"/>
+<line x1="700" y1="606" x2="1200" y2="606" stroke="var(--faint)" stroke-width="2"/>
+<line x1="950" y1="598" x2="950" y2="614" stroke="var(--faint)" stroke-width="2"/>
+<text class="lbl-s" x="950" y="634" text-anchor="middle">0</text>
+<line id="thrLine" x1="1010" y1="592" x2="1010" y2="622" stroke="var(--ink)" stroke-width="2" stroke-dasharray="5 5"/>
+<text class="lbl-s" id="thrLabel" x="1196" y="634" text-anchor="end">kynnysehto ylittyy →</text>
+<polygon id="dnMarker" points="950,600 942,586 958,586" fill="var(--red)"/>
+<text class="readout" id="dnText" x="1200" y="580" text-anchor="end">ΔN = −36</text>
+
+<text class="big" id="statusText" x="660" y="668" fill="var(--muted)">Ei miehitysinversiota – ei laservaloa</text>
+<text class="lbl" id="detailText" x="660" y="696">Fotoneja ontelossa: 0 · ulostuloteho: 0,0 fotonia/s</text>
+
+</svg>
+
+<div class="controls">
+  <div class="field">
+    <label for="pump">Pumppausteho</label>
+    <input id="pump" type="range" min="0" max="100" step="1" value="70">
+    <span class="out" id="pumpOut">70 %</span>
+  </div>
+
+  <div class="field">
+    <label for="trans">Ulostulopeilin läpäisy</label>
+    <input id="trans" type="range" min="6" max="30" step="1" value="8">
+    <span class="out" id="transOut">8 %</span>
+  </div>
+
+  <div class="field">
+    <input id="meta" type="checkbox" checked>
+    <label for="meta">metastabiili tila</label>
+  </div>
+
+  <div class="field">
+    <input id="slow" type="checkbox">
+    <label for="slow">hidastus</label>
+  </div>
+
+  <button id="playBtn">Pysäytä</button>
+  <button id="resetBtn">Nollaa</button>
+</div>
+
+<div id="live" class="sr" role="status" aria-live="polite"></div>
+
+</div>
+
+<script>
+(() => {
+"use strict";
+
+/* ---------- mallin parametrit ---------- */
+const NATOMS   = 36;
+const TAU3     = 0.05;   // s, pumppaustason elinaika (säteilytön siirtymä)
+const TAU2_LONG= 2.0;    // s, metastabiilin tilan elinaika
+const TAU2_SHORT=0.12;   // s, tavallinen viritystila
+const BSTIM    = 0.09;   // indusoidun emission ja absorption kerroin (1/(foton·s))
+const BETA     = 0.10;   // osuus spontaaneista fotoneista ontelon moodiin
+const RMAX     = 1.8;    // 1/s, suurin pumppausnopeus atomia kohti
+const TRAV     = 0.28;   // s, fotonin kulkuaika ontelon läpi
+const INTERNAL = 0.06;   // sisäinen häviö (absorptio, sironta) heijastusta kohti
+const MAXP     = 110;    // piirrettävien ontelofotonien enimmäismäärä
+const MAXFREE  = 34;     // piirrettävien spontaanien fotonien enimmäismäärä
+
+/* ---------- geometria ---------- */
+const MX_L = 112, MX_R = 900;         // peilien sisäpinnat
+const LANE_TOP = 150, LANE_BOT = 214; // ontelon moodin leveys: fotonit kulkevat akselin suunnassa
+const CAV = MX_R - MX_L;
+const SPEED = CAV / TRAV;
+
+/* ---------- DOM ---------- */
+const $ = id => document.getElementById(id);
+const atomLayer = $('atomLayer'), photonLayer = $('photonLayer'), freeLayer = $('freeLayer');
+const pump = $('pump'), trans = $('trans'), meta = $('meta'), slow = $('slow');
+const pumpOut = $('pumpOut'), transOut = $('transOut');
+const playBtn = $('playBtn'), resetBtn = $('resetBtn');
+const bar1 = $('bar1'), bar2 = $('bar2'), bar3 = $('bar3');
+const n1text = $('n1text'), n2text = $('n2text'), n3text = $('n3text');
+const dnText = $('dnText'), dnMarker = $('dnMarker'), thrLine = $('thrLine'), thrZone = $('thrZone');
+const statusText = $('statusText'), detailText = $('detailText');
+const beamGroup = $('beamGroup'), beam = $('beam'), beamTip = $('beamTip'), beamLabel = $('beamLabel');
+const arrPump = $('arrPump'), arrDecay = $('arrDecay'), arrSpont = $('arrSpont'), arrStim = $('arrStim');
+const pumpArrows = $('pumpArrows'), outCouplerFill = $('outCouplerFill');
+const mirrorLabel = $('mirrorLabel'), metaCaption = $('metaCaption'), live = $('live');
+
+const SVGNS = 'http://www.w3.org/2000/svg';
+const fmt = (x, d=1) => x.toFixed(d).replace('.', ',');
+
+/* ---------- atomit ---------- */
+function mulberry32(a){
+  return function(){
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+
+const atoms = [];
+const atomEls = [];
+const flashEls = [];
+
+(function buildAtoms(){
+  const rnd = mulberry32(20260827);
+  for(let r=0; r<4; r++){
+    for(let c=0; c<9; c++){
+      const x = 175 + c*82.5 + (rnd()-0.5)*18;
+      const y = 128 + r*40 + (rnd()-0.5)*14;
+      atoms.push({x, y, state:0, flash:0});
+
+      const flash = document.createElementNS(SVGNS,'circle');
+      flash.setAttribute('cx', x); flash.setAttribute('cy', y);
+      flash.setAttribute('r', 16); flash.setAttribute('fill','none');
+      flash.setAttribute('stroke','var(--red)'); flash.setAttribute('stroke-width','1.9');
+      flash.setAttribute('opacity','0');
+      atomLayer.appendChild(flash); flashEls.push(flash);
+
+      const el = document.createElementNS(SVGNS,'circle');
+      el.setAttribute('cx', x); el.setAttribute('cy', y); el.setAttribute('r', 11);
+      el.setAttribute('fill','#fff');
+      el.setAttribute('stroke','var(--faint)');
+      el.setAttribute('stroke-width','2.2');
+      atomLayer.appendChild(el); atomEls.push(el);
+    }
+  }
+})();
+
+/* ---------- fotonipoolit ---------- */
+const photons = [];
+const photonEls = [];
+for(let i=0;i<MAXP;i++){
+  const p = document.createElementNS(SVGNS,'path');
+  p.setAttribute('fill','none');
+  p.setAttribute('stroke','var(--red)');
+  p.setAttribute('stroke-width','2.4');
+  p.setAttribute('stroke-linecap','round');
+  p.setAttribute('opacity','0');
+  photonLayer.appendChild(p); photonEls.push(p);
+}
+
+const frees = [];
+const freeEls = [];
+for(let i=0;i<MAXFREE;i++){
+  const p = document.createElementNS(SVGNS,'path');
+  p.setAttribute('fill','none');
+  p.setAttribute('stroke','var(--red)');
+  p.setAttribute('stroke-width','1.8');
+  p.setAttribute('stroke-linecap','round');
+  p.setAttribute('opacity','0');
+  freeLayer.appendChild(p); freeEls.push(p);
+}
+
+// aaltopaketin muoto: 2,5 aallonpituutta, verhokäyrä keskellä
+function packetPath(phase){
+  let d = '';
+  for(let s=0; s<=30; s+=2.5){
+    const env = Math.exp(-Math.pow((s-15)/9, 2));
+    const y = 7 * env * Math.sin(2*Math.PI*s/15 + phase);
+    d += (s === 0 ? 'M' : 'L') + s.toFixed(1) + ' ' + y.toFixed(2) + ' ';
+  }
+  return d;
+}
+const PACKETS = [];
+for(let k=0;k<12;k++) PACKETS.push(packetPath(k*Math.PI/6));
+const packetFor = ph => PACKETS[((Math.round(ph/(Math.PI/6)) % 12) + 12) % 12];
+
+/* ---------- tila ---------- */
+let running = true;
+let outRate = 0;         // ulostulevia fotoneja sekunnissa (liukuva keskiarvo)
+let lasing = false;
+// miehitysluvut ja fotonimäärä liukuvina keskiarvoina: yksittäisen atomin
+// satunnainen siirtymä ei saa hypäyttää lukemia, vaikka atomit vilkkuvat
+let avg1 = NATOMS, avg2 = 0, avg3 = 0, avgN = 0;
+let pulse = {pump:0, decay:0, spont:0, stim:0};
+let lastTime = 0, readoutTimer = 0, liveTimer = 0;
+
+function tau2(){ return meta.checked ? TAU2_LONG : TAU2_SHORT; }
+function pumpRate(){ return (parseFloat(pump.value)/100) * RMAX; }
+function transmittance(){ return parseFloat(trans.value)/100; }
+function lossRate(){ return (transmittance() + 2*INTERNAL) / (2*TRAV); }  // 1/s
+function thresholdDN(){ return lossRate() / BSTIM; }
+
+function counts(){
+  let n1=0,n2=0,n3=0;
+  for(const a of atoms){ if(a.state===0) n1++; else if(a.state===2) n2++; else n3++; }
+  return {n1,n2,n3};
+}
+
+function nearestPhotonIndex(x){
+  let best=-1, bd=Infinity;
+  for(let i=0;i<photons.length;i++){
+    const d = Math.abs(photons[i].x - x);
+    if(d < bd){ bd = d; best = i; }
+  }
+  return best;
+}
+
+function spawnFree(a){
+  if(frees.length >= MAXFREE) return;
+  const ang = Math.random()*2*Math.PI;
+  frees.push({x:a.x, y:a.y, vx:Math.cos(ang)*230, vy:Math.sin(ang)*230,
+              phase:Math.random()*2*Math.PI, life:0.75, ang});
+}
+
+/* ---------- fysiikka-askel ---------- */
+function step(dt){
+  const R = pumpRate();
+  const T = transmittance();
+  const t2 = tau2();
+  const n = photons.length;
+  const pStim = 1 - Math.exp(-BSTIM*n*dt);
+  const pPump = 1 - Math.exp(-R*dt);
+  const pDecay3 = 1 - Math.exp(-dt/TAU3);
+  const pSpont = 1 - Math.exp(-dt/t2);
+
+  for(const a of atoms){
+    if(a.state === 0){
+      if(Math.random() < pPump){
+        a.state = 3; pulse.pump = 1;
+      } else if(n > 0 && Math.random() < pStim){
+        // absorptio: foton häviää, atomi virittyy tasolle E₂
+        const i = nearestPhotonIndex(a.x);
+        if(i >= 0){ photons.splice(i,1); a.state = 2; a.flash = 0.35; }
+      }
+    } else if(a.state === 3){
+      if(Math.random() < pDecay3){ a.state = 2; pulse.decay = 1; }
+    } else if(a.state === 2){
+      if(n > 0 && Math.random() < pStim){
+        // indusoitu emissio: uusi foton on samanlainen kuin sen laukaissut
+        const i = nearestPhotonIndex(a.x);
+        if(i >= 0){
+          const p = photons[i];
+          a.state = 0; a.flash = 0.45; pulse.stim = 1;
+          if(photons.length < MAXP){
+            // uusi foton syntyy atomin kohdalla ja on samanlainen kuin laukaisija:
+            // sama suunta ja sama vaihe -> koherenttia valoa
+            let y = a.y + (p.y > a.y ? -14 : 14);
+            y = Math.max(LANE_TOP, Math.min(LANE_BOT, y));
+            photons.push({x:a.x, y, dir:p.dir, phase:p.phase});
+          }
+        }
+      } else if(Math.random() < pSpont){
+        a.state = 0; a.flash = 0.35; pulse.spont = 1;
+        if(Math.random() < BETA && photons.length < MAXP){
+          const y0 = Math.max(LANE_TOP, Math.min(LANE_BOT, a.y));
+          photons.push({x:a.x, y:y0, dir:(Math.random()<0.5?-1:1), phase:Math.random()*2*Math.PI});
+        } else {
+          spawnFree(a);
+        }
+      }
+    }
+    if(a.flash > 0) a.flash = Math.max(0, a.flash - dt*1.6);
+  }
+
+  // ontelofotonit: liike, peiliheijastukset, häviöt
+  let escaped = 0;
+  for(let i=photons.length-1; i>=0; i--){
+    const p = photons[i];
+    p.x += p.dir * SPEED * dt;
+    if(p.x >= MX_R){
+      if(Math.random() < T){ photons.splice(i,1); escaped++; continue; }
+      p.x = MX_R - (p.x - MX_R); p.dir = -1;
+      if(Math.random() < INTERNAL){ photons.splice(i,1); continue; }
+    } else if(p.x <= MX_L){
+      p.x = MX_L + (MX_L - p.x); p.dir = 1;
+      if(Math.random() < INTERNAL){ photons.splice(i,1); continue; }
+    }
+  }
+
+  // spontaanit fotonit karkaavat sivuille
+  for(let i=frees.length-1; i>=0; i--){
+    const f = frees[i];
+    f.x += f.vx*dt; f.y += f.vy*dt; f.life -= dt;
+    if(f.life <= 0) frees.splice(i,1);
+  }
+
+  const inst = escaped/dt;
+  const k = 1 - Math.exp(-dt/0.8);
+  outRate += (inst - outRate)*k;
+
+  const c = counts();
+  const ka = 1 - Math.exp(-dt/0.8);
+  avg1 += (c.n1 - avg1)*ka;
+  avg2 += (c.n2 - avg2)*ka;
+  avg3 += (c.n3 - avg3)*ka;
+  avgN += (photons.length - avgN)*(1 - Math.exp(-dt/1.0));
+
+  for(const key in pulse) pulse[key] = Math.max(0, pulse[key] - dt*3.2);
+}
+
+/* ---------- piirto ---------- */
+const STATE_FILL = {0:'#fff', 2:'var(--red)', 3:'var(--blue)'};
+const STATE_STROKE = {0:'var(--faint)', 2:'var(--red)', 3:'var(--blue)'};
+
+function draw(){
+  for(let i=0;i<atoms.length;i++){
+    const a = atoms[i], el = atomEls[i], fl = flashEls[i];
+    el.setAttribute('fill', STATE_FILL[a.state]);
+    el.setAttribute('stroke', STATE_STROKE[a.state]);
+    if(a.flash > 0){
+      fl.setAttribute('opacity', (a.flash*1.6).toFixed(2));
+      fl.setAttribute('r', (12 + (0.45-a.flash)*20).toFixed(1));
+      fl.setAttribute('stroke', a.state === 2 ? 'var(--blue)' : 'var(--red)');
+    } else {
+      fl.setAttribute('opacity','0');
+    }
+  }
+
+  for(let i=0;i<MAXP;i++){
+    const el = photonEls[i];
+    if(i < photons.length){
+      const p = photons[i];
+      el.setAttribute('d', packetFor(p.phase));
+      el.setAttribute('transform',
+        `translate(${(p.x - p.dir*15).toFixed(1)} ${p.y.toFixed(1)})` + (p.dir < 0 ? ' scale(-1,1)' : ''));
+      el.setAttribute('opacity','0.92');
+    } else if(el.getAttribute('opacity') !== '0'){
+      el.setAttribute('opacity','0');
+    }
+  }
+
+  for(let i=0;i<MAXFREE;i++){
+    const el = freeEls[i];
+    if(i < frees.length){
+      const f = frees[i];
+      el.setAttribute('d', packetFor(f.phase));
+      el.setAttribute('transform',
+        `translate(${f.x.toFixed(1)} ${f.y.toFixed(1)}) rotate(${(f.ang*180/Math.PI).toFixed(1)})`);
+      el.setAttribute('opacity', Math.max(0, Math.min(0.6, f.life)).toFixed(2));
+    } else if(el.getAttribute('opacity') !== '0'){
+      el.setAttribute('opacity','0');
+    }
+  }
+
+  // ulostuleva säde näkyy vain, kun laser toimii
+  const bright = Math.min(1, outRate/8);
+  if(lasing && bright > 0.02){
+    const h = 6 + 14*bright;
+    beam.setAttribute('y', (185 - h/2).toFixed(1));
+    beam.setAttribute('height', h.toFixed(1));
+    beam.setAttribute('opacity', (0.35 + 0.55*bright).toFixed(2));
+    const tip = 9 + 13*bright;
+    beamTip.setAttribute('d', `M1206 ${185-tip} L1244 185 L1206 ${185+tip} z`);
+    beamGroup.setAttribute('opacity','1');
+    beamLabel.setAttribute('fill','var(--red)');
+  } else {
+    beamGroup.setAttribute('opacity','0');
+    beamLabel.setAttribute('fill','var(--faint)');
+  }
+
+  // siirtymänuolten korostus
+  arrPump.setAttribute('opacity',  (0.3 + 0.7*pulse.pump).toFixed(2));
+  arrDecay.setAttribute('opacity', (0.3 + 0.7*pulse.decay).toFixed(2));
+  arrSpont.setAttribute('opacity', (0.3 + 0.7*pulse.spont).toFixed(2));
+  arrStim.setAttribute('opacity',  (0.3 + 0.7*pulse.stim).toFixed(2));
+
+  pumpArrows.setAttribute('opacity', (0.15 + 0.85*(parseFloat(pump.value)/100)).toFixed(2));
+}
+
+function drawReadouts(){
+  const m1 = Math.round(avg1), m2 = Math.round(avg2), m3 = Math.round(avg3);
+  const dn = m2 - m1;
+  const W = 378/NATOMS;
+  bar1.setAttribute('width', (avg1*W).toFixed(1));
+  bar2.setAttribute('width', (avg2*W).toFixed(1));
+  bar3.setAttribute('width', (avg3*W).toFixed(1));
+  n1text.textContent = 'N₁ = ' + m1;
+  n2text.textContent = 'N₂ = ' + m2;
+  n3text.textContent = 'N₃ = ' + m3;
+
+  // inversiomittari: 950 = nolla, 6,9 px atomia kohti
+  const px = v => 950 + Math.max(-36, Math.min(36, v))*6.9;
+  const mx = px(dn);
+  dnMarker.setAttribute('points', `${mx.toFixed(1)},600 ${(mx-8).toFixed(1)},586 ${(mx+8).toFixed(1)},586`);
+  dnMarker.setAttribute('fill', dn > 0 ? 'var(--red)' : 'var(--faint)');
+  dnText.textContent = 'ΔN = ' + (dn > 0 ? '+' : '') + dn;
+
+  const thr = thresholdDN();
+  const tx = px(thr);
+  thrLine.setAttribute('x1', tx.toFixed(1)); thrLine.setAttribute('x2', tx.toFixed(1));
+  thrZone.setAttribute('x', tx.toFixed(1));
+  thrZone.setAttribute('width', Math.max(0, 1200 - tx).toFixed(1));
+
+  // laser käy, kun ontelossa pysyy fotoneja ja miehitysinversio vallitsee;
+  // hystereesi estää tekstin välkkymisen
+  lasing = lasing ? (avgN > 2 && dn >= 0) : (avgN > 6 && dn > 0);
+
+  if(lasing){
+    statusText.textContent = 'Kynnys ylitetty – laser toimii';
+    statusText.setAttribute('fill','var(--red)');
+  } else if(dn > 0){
+    statusText.textContent = 'Inversio syntynyt, mutta vahvistus < häviöt';
+    statusText.setAttribute('fill','var(--ink)');
+  } else {
+    statusText.textContent = 'Ei miehitysinversiota – ei laservaloa';
+    statusText.setAttribute('fill','var(--muted)');
+  }
+
+  detailText.textContent = 'Fotoneja ontelossa: ' + photons.length +
+    ' · ulostuloteho: ' + fmt(outRate) + ' fotonia/s' +
+    ' · kynnys ΔN = ' + fmt(thr);
+}
+
+/* ---------- animaatiosilmukka ---------- */
+function frame(now){
+  requestAnimationFrame(frame);
+  if(!lastTime) lastTime = now;
+  let dt = (now - lastTime)/1000;
+  lastTime = now;
+  if(dt > 0.05) dt = 0.05;
+  if(!running) dt = 0;
+
+  if(dt > 0) step(dt * (slow.checked ? 0.2 : 1));
+  draw();
+
+  readoutTimer += (now - readoutTimer > 1e6 ? 0 : 0);
+  if(now - liveTimer > 120){ drawReadouts(); liveTimer = now; }
+}
+
+/* ---------- ohjaimet ---------- */
+function syncLabels(){
+  pumpOut.textContent = pump.value + ' %';
+  transOut.textContent = trans.value + ' %';
+  mirrorLabel.textContent = 'peili, T = ' + trans.value + ' %';
+  outCouplerFill.setAttribute('opacity', (0.85 - 0.7*(parseFloat(trans.value)/30)).toFixed(2));
+  metaCaption.textContent = meta.checked
+    ? 'metastabiili tila, pitkä elinaika'
+    : 'tavallinen viritystila, lyhyt elinaika';
+  announce();
+}
+
+let announceTimer = null;
+function announce(){
+  clearTimeout(announceTimer);
+  announceTimer = setTimeout(() => {
+    const m1 = Math.round(avg1), m2 = Math.round(avg2);
+    live.textContent = 'Pumppausteho ' + pump.value + ' prosenttia, peilin läpäisy ' +
+      trans.value + ' prosenttia. N1 = ' + m1 + ', N2 = ' + m2 +
+      ', inversio ' + (m2 - m1) + '. ' + statusText.textContent + '.';
+  }, 400);
+}
+
+function reset(){
+  for(const a of atoms){ a.state = 0; a.flash = 0; }
+  photons.length = 0;
+  frees.length = 0;
+  outRate = 0;
+  lasing = false;
+  avg1 = NATOMS; avg2 = 0; avg3 = 0; avgN = 0;
+  for(const key in pulse) pulse[key] = 0;
+  drawReadouts();
+}
+
+pump.addEventListener('input', syncLabels);
+trans.addEventListener('input', syncLabels);
+meta.addEventListener('change', syncLabels);
+
+playBtn.addEventListener('click', () => {
+  running = !running;
+  playBtn.textContent = running ? 'Pysäytä' : 'Jatka';
+  announce();
+});
+
+resetBtn.addEventListener('click', () => {
+  pump.value = 70; trans.value = 8;
+  meta.checked = true; slow.checked = false;
+  running = true; playBtn.textContent = 'Pysäytä';
+  syncLabels();
+  reset();
+});
+
+syncLabels();
+drawReadouts();
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
