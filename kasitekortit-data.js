@@ -347,34 +347,90 @@ window.KORTIT = [
 ]},
 
 { id:"FY4", nimi:"Voima ja liike", aiheet:[
-  { nimi:"Liike", kortit:[
-    ["Keskinopeus","Kuljettu matka jaettuna siihen käytetyllä ajalla."],
-    ["Hetkellinen nopeus","Nopeus tietyllä hetkellä; paikkakuvaajan kulmakerroin."],
-    ["Kiihtyvyys","Nopeuden muutos aikayksikköä kohti, a = Δv / Δt."],
-    ["Tasainen liike","Liike, jossa nopeus pysyy vakiona."],
-    ["Tasaisesti kiihtyvä liike","Liike, jossa kiihtyvyys on vakio, s = v₀t + ½at²."],
-    ["Putoamiskiihtyvyys","Vapaasti putoavan kappaleen kiihtyvyys, maan pinnalla noin 9,81 m/s²."],
-    ["Heittoliike","Liike, jossa vaakasuunnassa liike on tasaista ja pystysuunnassa kiihtyvää."]
+  { nimi:"Liikkeen suureet", kortit:[
+    ["Paikka","Kertoo kappaleen sijainnin valitussa koordinaatistossa tiettynä ajanhetkenä."],
+    ["Matka","Kertoo kappaleen kulkeman reitin kokonaispituuden."],
+    ["Siirtymä","Kertoo kappaleen paikan muutoksen ja suunnan; Δx = x₂ − x₁."],
+    ["Nopeus","Kertoo paikan muuttumisnopeuden ja liikkeen suunnan."],
+    ["Vauhti","Kertoo liikkeen nopeuden suuruuden ilman tietoa suunnasta."],
+    ["Keskinopeus","Koko siirtymä jaetaan siihen kuluneella ajalla; vₖ = Δx/Δt."],
+    ["Hetkellinen nopeus","Kertoo kappaleen nopeuden tietyllä ajanhetkellä."],
+    ["Tasainen liike","Nopeus pysyy vakiona, joten paikka muuttuu yhtä paljon yhtä pitkissä aikaväleissä."]
   ]},
-  { nimi:"Newtonin lait", kortit:[
-    ["Newtonin I laki","Kappale jatkaa liiketilaansa, ellei siihen vaikuta nollasta poikkeava kokonaisvoima."],
-    ["Newtonin II laki","Kappaleen kiihtyvyys on suoraan verrannollinen kokonaisvoimaan ja kääntäen massaan, a = ΣF / m."],
-    ["Newtonin III laki","Voimaa vastaa aina yhtä suuri vastakkaissuuntainen vastavoima toisessa kappaleessa."],
+  { nimi:"Liikkeen kuvaajat", kortit:[
+    ["Paikan kuvaaja","Esittää kappaleen paikan ajan funktiona."],
+    ["Kuvaajan tangentti","Suora, joka koskettaa käyrää tarkasteltavassa pisteessä ja kertoo hetkellisen muutosnopeuden."],
+    ["Tangentin kulmakerroin","Paikan kuvaajassa se antaa kappaleen hetkellisen nopeuden."],
+    ["Nopeuden kuvaaja","Esittää kappaleen nopeuden ajan funktiona."],
+    ["Kuvaajan pinta-ala","Nopeuden aika-kuvaajan ja aika-akselin välinen etumerkillinen pinta-ala antaa siirtymän."],
+    ["Kiihtyvyyden kuvaaja","Esittää kappaleen kiihtyvyyden ajan funktiona."],
+    ["Nopeuden muutos","Kiihtyvyyden aika-kuvaajan etumerkillinen pinta-ala antaa nopeuden muutoksen."],
+    ["Graafinen derivointi","Kuvaajan kulmakertoimien avulla muodostetaan muuttumisnopeutta kuvaava uusi kuvaaja."]
+  ]},
+  { nimi:"Kiihtyvä liike", kortit:[
+    ["Kiihtyvyys","Kertoo nopeuden muuttumisnopeuden; a = Δv/Δt."],
+    ["Keskikiihtyvyys","Nopeuden kokonaismuutos jaetaan siihen kuluneella ajalla."],
+    ["Hetkellinen kiihtyvyys","Kertoo nopeuden muuttumisnopeuden tietyllä ajanhetkellä."],
+    ["Tasainen kiihtyvyys","Kiihtyvyys pysyy vakiona, joten nopeus muuttuu tasaisesti."],
+    ["Nopeusyhtälö","Tasaisesti kiihtyvässä liikkeessä nopeus saadaan ajan avulla; v = v₀ + at."],
+    ["Paikkayhtälö","Tasaisesti kiihtyvässä liikkeessä paikka voidaan laskea yhtälöllä x = x₀ + v₀t + ½at²."],
+    ["Putoamiskiihtyvyys","Maan lähellä vapaasti putoavan kappaleen kiihtyvyyden suuruus on noin 9,81 m/s²."],
+    ["Vapaa putoaminen","Liike, jossa kappaleeseen vaikuttaa vain gravitaatiovoima ja ilmanvastus jätetään huomiotta."]
+  ]},
+  { nimi:"Vuorovaikutus ja Newtonin lait", kortit:[
+    ["Vuorovaikutus","Kahden kappaleen välinen tapahtuma, jossa kappaleet voivat muuttaa toistensa liikettä tai muotoa."],
+    ["Voima","Kuvaa vuorovaikutuksen voimakkuutta, ja sen yksikkö on newton."],
+    ["Jatkavuuden laki","Kappale säilyttää liiketilansa, jos siihen vaikuttava kokonaisvoima on nolla."],
+    ["Hitaus","Kappaleen ominaisuus vastustaa liiketilansa muuttumista."],
+    ["Dynamiikan peruslaki","Kokonaisvoima aiheuttaa kappaleelle kiihtyvyyden; ΣF = ma."],
     ["Kokonaisvoima","Kappaleeseen vaikuttavien voimien vektorisumma."],
-    ["Hitaus","Kappaleen pyrkimys vastustaa liiketilan muutosta; mittana massa."],
-    ["Paino","Kappaleeseen kohdistuva painovoima, G = mg."],
-    ["Tasapaino","Tila, jossa kappaleeseen vaikuttava kokonaisvoima on nolla."]
+    ["Newtonin III laki","Vuorovaikutuksessa kappaleet kohdistavat toisiinsa yhtä suuret mutta vastakkaissuuntaiset voimat."],
+    ["Vastavoimapari","Kaksi yhtä suurta vastakkaissuuntaista voimaa vaikuttavat eri kappaleisiin samassa vuorovaikutuksessa."]
   ]},
-  { nimi:"Voimat ja liikemäärä", kortit:[
-    ["Normaalivoima","Tukipinnan kappaleeseen kohdistama pintaa vastaan kohtisuora voima."],
-    ["Lepokitka","Voima, joka estää paikallaan olevan kappaleen lähtemisen liikkeelle."],
-    ["Liikekitka","Liikettä vastustava voima liikkuvan kappaleen ja alustan välillä, F = μN."],
-    ["Hooken laki","Jousivoima on verrannollinen venymään, F = kx."],
-    ["Liikemäärä","Massan ja nopeuden tulo, p = mv."],
-    ["Liikemäärän säilymislaki","Suljetun systeemin kokonaisliikemäärä säilyy vuorovaikutuksissa."],
-    ["Impulssi","Voiman ja vaikutusajan tulo, joka vastaa liikemäärän muutosta."],
-    ["Kimmoinen törmäys","Törmäys, jossa sekä liikemäärä että liike-energia säilyvät."],
-    ["Kimmoton törmäys","Törmäys, jossa liikemäärä säilyy mutta osa liike-energiasta muuttuu muihin muotoihin."]
+  { nimi:"Voimat ja liikeyhtälö", kortit:[
+    ["Voimakuvio","Piirros, jossa esitetään kaikki tarkasteltavaan kappaleeseen vaikuttavat voimat nuolina."],
+    ["Paino","Maan kappaleeseen kohdistama gravitaatiovoima; G = mg."],
+    ["Tukivoima","Pinnan kappaleeseen kohdistama voima, joka suuntautuu kohtisuoraan pintaa vastaan."],
+    ["Jännitysvoima","Kireän langan tai narun kappaleeseen kohdistama voima suuntautuu langan suuntaisesti."],
+    ["Liikeyhtälö","Newtonin II lain sovellus, jossa kappaleeseen vaikuttavien voimien summa yhdistetään kiihtyvyyteen."],
+    ["Voimakomponentti","Voiman osa valitussa koordinaatiston suunnassa."],
+    ["Komponenttimuoto","Liikeyhtälö kirjoitetaan erikseen esimerkiksi vaaka- ja pystysuunnassa."],
+    ["Tasapainoehto","Etenemisliikkeen tasapainossa kappaleeseen vaikuttavien voimien vektorisumma on nolla; ΣF = 0."],
+    ["Kalteva taso","Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi ja jakamalla voimat komponentteihin."]
+  ]},
+  { nimi:"Kitka, vastusvoimat ja noste", kortit:[
+    ["Kitka","Kosketuksessa olevien pintojen välinen voima vastustaa niiden suhteellista liikettä tai liikkeelle lähtöä."],
+    ["Lepokitka","Estää pintojen liukumisen toistensa suhteen ja mukautuu tarvittavaan suuruuteen enimmäisarvoonsa asti."],
+    ["Liukukitka","Vastustaa toistensa suhteen liukuvien pintojen liikettä; Fₖ = μN."],
+    ["Kitkakerroin","Aineparista riippuva dimensioton luku, joka kuvaa pintojen välistä kitkaa."],
+    ["Väliaineen vastus","Kaasu tai neste kohdistaa liikkuvaan kappaleeseen liikkeen suuntaa vastustavan voiman."],
+    ["Ilmanvastus","Ilman kappaleeseen kohdistama vastusvoima kasvaa yleensä nopeuden kasvaessa."],
+    ["Rajanopeus","Vakionopeus, joka saavutetaan, kun vastusvoima ja muut liikkeen suuntaiset voimat kumoavat toisensa."],
+    ["Noste","Nesteen tai kaasun kappaleeseen kohdistama ylöspäin suuntautuva voima."]
+  ]},
+  { nimi:"Työ ja mekaaninen energia", kortit:[
+    ["Mekaaninen työ","Voima siirtää energiaa kappaleeseen tai siitä pois siirtymän aikana; W = Fs cos α."],
+    ["Liike-energia","Liikkeeseen liittyvä energia riippuu massasta ja nopeudesta; Eₖ = ½mv²."],
+    ["Potentiaalienergia","Konservatiiviseen vuorovaikutukseen liittyvä energia riippuu kappaleiden asemasta."],
+    ["Painon potentiaalienergia","Maan lähellä gravitaatioon liittyvä energia voidaan laskea Eₚ = mgh."],
+    ["Konservatiivinen voima","Voiman tekemä työ riippuu vain alku- ja loppuasemasta, ei kuljetusta reitistä."],
+    ["Mekaaninen energia","Liike-energian ja potentiaalienergian summa; Eₘ = Eₖ + Eₚ."],
+    ["Energian säilyminen","Eristetyssä systeemissä energian kokonaismäärä pysyy vakiona."],
+    ["Mekaaninen säilyminen","Mekaaninen energia säilyy, kun vain konservatiiviset voimat tekevät työtä."],
+    ["Energiaperiaate","Mekaanisen energian muutos on yhtä suuri kuin ei-konservatiivisten voimien tekemä työ; ΔEₘ = Wₑᵢ₋ₖ."],
+    ["Työperiaate","Kappaleeseen vaikuttavan kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos; W = ΔEₖ."]
+  ]},
+  { nimi:"Liikemäärä, impulssi ja törmäykset", kortit:[
+    ["Liikemäärä","Kappaleen massan ja nopeuden tulo on vektorisuure; p = mv."],
+    ["Impulssi","Kuvaa voiman kokonaisvaikutusta tietyn ajan kuluessa; I = FΔt vakioisella voimalla."],
+    ["Impulssiperiaate","Kappaleen saama impulssi on yhtä suuri kuin sen liikemäärän muutos; I = Δp."],
+    ["Voima-aikakuvaaja","Kuvaajan ja aika-akselin välinen pinta-ala antaa kappaleen saaman impulssin."],
+    ["Liikemäärän säilyminen","Eristetyn systeemin kokonaisliikemäärä pysyy vuorovaikutuksessa muuttumattomana."],
+    ["Törmäys","Lyhytkestoinen vuorovaikutus, jossa kappaleiden nopeudet ja liikemäärät voivat muuttua nopeasti."],
+    ["Kimmoisa törmäys","Kokonaisliikemäärän lisäksi myös kappaleiden yhteenlaskettu liike-energia säilyy."],
+    ["Kimmoton törmäys","Kokonaisliikemäärä säilyy, mutta osa liike-energiasta muuttuu muihin energiamuotoihin."],
+    ["Täysin kimmoton","Törmäyksen jälkeen kappaleet liikkuvat yhdessä samalla nopeudella."],
+    ["Yksiulotteinen törmäys","Kappaleiden liike tapahtuu samalla suoralla, joten liikemäärän suunnat voidaan käsitellä etumerkeillä."]
   ]}
 ]},
 
