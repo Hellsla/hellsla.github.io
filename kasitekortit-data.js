@@ -229,37 +229,120 @@ window.KORTIT = [
 ]},
 
 { id:"FY3", nimi:"Energia ja lämpö", aiheet:[
-  { nimi:"Työ ja energia", kortit:[
-    ["Työ","Energian siirto voiman vaikuttaessa siirtymän suuntaan, W = Fs cos α."],
-    ["Liike-energia","Liikkeestä johtuva energia, Eₖ = ½mv²."],
-    ["Potentiaalienergia","Asemasta johtuva energia; painovoimakentässä Eₚ = mgh."],
-    ["Mekaaninen energia","Liike-energian ja potentiaalienergian summa."],
-    ["Teho","Tehty työ aikayksikköä kohti, P = W / t."],
-    ["Hyötysuhde","Hyödyksi saadun energian suhde otettuun energiaan."]
+  { nimi:"Lämpötila ja termodynaaminen systeemi", kortit:[
+    ["Lämpötila","Kuvaa aineen rakenneosasten lämpöliikkeen voimakkuutta."],
+    ["Kelvinasteikko","Absoluuttinen lämpötila-asteikko, jonka nollakohta on alin mahdollinen lämpötila, 0 K."],
+    ["Absoluuttinen nollapiste","Alin mahdollinen lämpötila on 0 K eli −273,15 °C."],
+    ["Lämpöliike","Aineen rakenneosasten jatkuvaa satunnaista liikettä ja värähtelyä."],
+    ["Tilanmuuttuja","Systeemin tilaa kuvaava suure, kuten lämpötila, paine tai tilavuus."],
+    ["Termodynaaminen systeemi","Tarkasteltavaksi rajattu aine tai alue, jonka energian muutoksia tutkitaan."],
+    ["Avoin systeemi","Ympäristön kanssa voi vaihtua sekä ainetta että energiaa."],
+    ["Suljettu systeemi","Ympäristön kanssa voi vaihtua energiaa mutta ei ainetta."],
+    ["Eristetty systeemi","Ympäristön kanssa ei vaihdu ainetta eikä energiaa."],
+    ["Lämpötasapaino","Kosketuksissa olevien systeemien lämpötilat ovat tasoittuneet samoiksi."]
   ]},
-  { nimi:"Lämpö", kortit:[
-    ["Lämpötila","Suure, joka kuvaa aineen hiukkasten keskimääräistä liike-energiaa."],
-    ["Absoluuttinen nollapiste","Alin mahdollinen lämpötila, 0 K = −273,15 °C."],
-    ["Sisäenergia","Kappaleen hiukkasten liike- ja potentiaalienergian summa."],
-    ["Ominaislämpökapasiteetti","Energia, joka tarvitaan lämmittämään yksi kilogramma ainetta yhden kelvinin: Q = cmΔT."],
-    ["Ominaissulamislämpö","Energia, joka tarvitaan sulattamaan yksi kilogramma ainetta sulamislämpötilassa."],
-    ["Lämpölaajeneminen","Kappaleen mittojen kasvu lämpötilan noustessa."],
-    ["Johtuminen","Lämmön siirtyminen aineessa hiukkasten törmäysten välityksellä."],
-    ["Konvektio","Lämmön siirtyminen virtaavan nesteen tai kaasun mukana."],
-    ["Lämpösäteily","Lämmön siirtyminen sähkömagneettisena säteilynä ilman väliainetta."],
-    ["Lämpötasapaino","Tila, jossa kappaleiden lämpötilat ovat yhtä suuret eikä lämpöä siirry."]
+  { nimi:"Lämpölaajeneminen ja lämmön siirtyminen", kortit:[
+    ["Lämpölaajeneminen","Useimpien aineiden mitat kasvavat lämmetessä ja pienenevät jäähtyessä."],
+    ["Pituuden lämpölaajeneminen","Kappaleen pituuden muutos riippuu alkuperäisestä pituudesta, lämpötilan muutoksesta ja materiaalista; Δl = αl₀ΔT."],
+    ["Tilavuuden lämpölaajeneminen","Kappaleen tilavuuden muutos riippuu alkuperäisestä tilavuudesta, lämpötilan muutoksesta ja materiaalista; ΔV = γV₀ΔT."],
+    ["Lämpö","Energiaa, joka siirtyy lämpötilaeron vuoksi kuumemmasta systeemistä kylmempään."],
+    ["Johtuminen","Energia siirtyy aineen rakenneosasten vuorovaikutusten kautta ilman aineen kokonaisliikettä."],
+    ["Kuljettuminen","Energia siirtyy liikkuvan nesteen tai kaasun mukana."],
+    ["Lämpösäteily","Energia siirtyy sähkömagneettisena säteilynä eikä tarvitse väliainetta."],
+    ["Lämmönjohde","Aine, jossa energia siirtyy johtumalla tehokkaasti."],
+    ["Lämmöneriste","Aine, jossa energia siirtyy johtumalla hitaasti."],
+    ["Energiatasapaino","Systeemin energiamäärä pysyy vakiona, kun siihen tulee ja siitä poistuu yhtä paljon energiaa."]
   ]},
-  { nimi:"Kaasut ja termodynamiikka", kortit:[
-    ["Paine","Pinta-alaa kohti kohtisuoraan vaikuttava voima, p = F / A."],
-    ["Ideaalikaasu","Malli kaasusta, jonka hiukkasilla ei ole tilavuutta eikä keskinäisiä vuorovaikutuksia."],
-    ["Tilanyhtälö","Ideaalikaasun paineen, tilavuuden ja lämpötilan yhteys, pV = nRT."],
-    ["Isoterminen prosessi","Prosessi vakiolämpötilassa; pV = vakio."],
-    ["Isobaarinen prosessi","Prosessi vakiopaineessa; V / T = vakio."],
-    ["Isokoorinen prosessi","Prosessi vakiotilavuudessa; p / T = vakio."],
-    ["Termodynamiikan 1. pääsääntö","Systeemin sisäenergian muutos on siihen tuodun lämmön ja tehdyn työn summa, ΔU = Q + W."],
-    ["Termodynamiikan 2. pääsääntö","Lämpö siirtyy itsestään vain kuumemmasta kylmempään."],
-    ["Lämpövoimakone","Laite, joka muuttaa osan lämpöenergiasta työksi ja luovuttaa loput kylmempään."],
-    ["Lämpöpumppu","Laite, joka siirtää työn avulla lämpöä kylmemmästä lämpimämpään."]
+  { nimi:"Voima ja paine", kortit:[
+    ["Voima","Kuvaa kahden kappaleen välisen vuorovaikutuksen voimakkuutta."],
+    ["Paino","Maan ja kappaleen gravitaatiovuorovaikutuksen voimakkuus; G = mg."],
+    ["Paine","Kertoo pintaa vastaan kohtisuoran voiman pinta-alayksikköä kohti; p = F/A."],
+    ["Pascal","Paineen SI-yksikkö, joka vastaa yhtä newtonia neliömetrille."],
+    ["Ilmanpaine","Ilmakehän painosta ja kaasumolekyylien törmäyksistä aiheutuva paine."],
+    ["Normaalipaine","Sovittu vertailupaine, jonka arvo on noin 101 325 Pa."],
+    ["Hydrostaattinen paine","Nesteen oman painon aiheuttama paine kasvaa syvyyden mukana; pₕ = ρgh."],
+    ["Kokonaispaine","Nesteessä vallitseva paine on pinnan paineen ja hydrostaattisen paineen summa; p = p₀ + ρgh."],
+    ["Paine-ero","Kahden alueen erisuuruiset paineet voivat aiheuttaa kappaleeseen voiman."]
+  ]},
+  { nimi:"Kaasun tila ja tilanmuutokset", kortit:[
+    ["Kaasun paine","Rakenneosasten törmäykset säiliön seinämiin aiheuttavat makroskooppisesti havaittavan paineen."],
+    ["Ainemäärä","Kuvaa aineen rakenneosasten lukumäärää, ja sen yksikkö on mooli."],
+    ["Mooli","Ainemäärä, jossa on noin 6,02·10²³ rakenneosasta."],
+    ["Ideaalikaasu","Yksinkertaistettu kaasumalli, jossa hiukkasten oma tilavuus ja keskinäiset vuorovaikutukset sivuutetaan."],
+    ["Tilanyhtälö","Yhdistää ideaalikaasun paineen, tilavuuden, ainemäärän ja lämpötilan; pV = nRT."],
+    ["Isokoorinen muutos","Tilavuus pysyy vakiona, joten paine on suoraan verrannollinen absoluuttiseen lämpötilaan."],
+    ["Isobaarinen muutos","Paine pysyy vakiona, joten tilavuus on suoraan verrannollinen absoluuttiseen lämpötilaan."],
+    ["Isoterminen muutos","Lämpötila pysyy vakiona, joten paine ja tilavuus ovat kääntäen verrannolliset; pV = vakio."],
+    ["Boylen laki","Vakiolämpötilassa kaasun paine kasvaa tilavuuden pienentyessä; p₁V₁ = p₂V₂."],
+    ["Yleinen kaasulaki","Suljetun kaasumäärän tiloja voidaan verrata yhtälöllä p₁V₁/T₁ = p₂V₂/T₂."]
+  ]},
+  { nimi:"Lämpeneminen ja jäähtyminen", kortit:[
+    ["Lämpökapasiteetti","Kertoo energiamäärän, joka tarvitaan kappaleen lämpötilan nostamiseen yhdellä asteella."],
+    ["Ominaislämpökapasiteetti","Kertoo energiamäärän, joka tarvitaan yhden kilogramman lämpötilan nostamiseen yhdellä asteella."],
+    ["Lämpömäärä","Lämpötilan muutoksessa siirtyvä energia voidaan laskea massan ja ominaislämpökapasiteetin avulla; Q = cmΔT."],
+    ["Veden ominaislämpökapasiteetti","Suuri arvo tarkoittaa, että veden lämpötilan muuttamiseen tarvitaan paljon energiaa."],
+    ["Sekoituskoe","Eristetyssä systeemissä lämpenevien osien vastaanottama energia vastaa jäähtyvien osien luovuttamaa energiaa."],
+    ["Lämmitysteho","Kertoo, kuinka nopeasti energiaa siirtyy lämmitettävään kohteeseen; P = Q/Δt."],
+    ["Jäähtyminen","Systeemin lämpötila laskee, kun siitä siirtyy energiaa ympäristöön."],
+    ["Lämpeneminen","Systeemin lämpötila nousee, kun sen sisäenergia kasvaa ilman olomuodon muutosta."]
+  ]},
+  { nimi:"Olomuodon muutokset", kortit:[
+    ["Kiinteä aine","Rakenneosat ovat sidottuja paikoilleen ja värähtelevät tasapainoasemiensa ympärillä."],
+    ["Neste","Rakenneosat ovat lähekkäin mutta voivat liikkua toistensa suhteen."],
+    ["Kaasu","Rakenneosat liikkuvat lähes vapaasti ja täyttävät käytettävissä olevan tilan."],
+    ["Sulaminen","Kiinteä aine muuttuu nesteeksi ja vastaanottaa energiaa."],
+    ["Jähmettyminen","Neste muuttuu kiinteäksi ja luovuttaa energiaa ympäristöön."],
+    ["Höyrystyminen","Neste muuttuu kaasuksi ja vastaanottaa energiaa."],
+    ["Tiivistyminen","Kaasu muuttuu nesteeksi ja luovuttaa energiaa ympäristöön."],
+    ["Sublimoituminen","Kiinteä aine muuttuu suoraan kaasuksi ilman nestemäistä vaihetta."],
+    ["Härmistyminen","Kaasu muuttuu suoraan kiinteäksi aineeksi ilman nestemäistä vaihetta."],
+    ["Ominaissulamislämpö","Kertoo yhden kilogramman sulattamiseen tarvittavan energian sulamispisteessä; Q = sm."],
+    ["Ominaishöyrystymislämpö","Kertoo yhden kilogramman höyrystämiseen tarvittavan energian kiehumispisteessä; Q = rm."]
+  ]},
+  { nimi:"Faasikaavio ja kosteus", kortit:[
+    ["Faasikaavio","Esittää aineen olomuodon lämpötilan ja paineen funktiona."],
+    ["Kolmoispiste","Lämpötila ja paine, joissa kiinteä, neste ja kaasu voivat esiintyä tasapainossa yhtä aikaa."],
+    ["Kriittinen piste","Tämän lämpötilan yläpuolella kaasua ei voi nesteyttää pelkästään painetta kasvattamalla."],
+    ["Kiehuminen","Höyrystymistä tapahtuu koko nesteessä, kun höyrynpaine saavuttaa ympäristön paineen."],
+    ["Haihtuminen","Nesteen pinnalta tapahtuvaa höyrystymistä, jota voi tapahtua kaikissa lämpötiloissa."],
+    ["Kylläinen höyry","Kaasussa on tietyssä lämpötilassa suurin mahdollinen määrä kyseisen aineen höyryä."],
+    ["Suhteellinen kosteus","Kertoo vesihöyryn määrän suhteessa kyseisen lämpötilan suurimpaan mahdolliseen määrään."],
+    ["Kastepiste","Lämpötila, johon ilma on jäähdytettävä, jotta vesihöyry alkaa tiivistyä."],
+    ["Kiehumispiste","Lämpötila riippuu ympäristön paineesta ja nousee paineen kasvaessa."]
+  ]},
+  { nimi:"Mekaaninen työ ja sisäenergia", kortit:[
+    ["Mekaaninen työ","Voiman avulla siirtyvä energia saadaan voiman ja voiman suuntaisen matkan tulona; W = Fs."],
+    ["Sisäenergia","Rakenneosasten liike- ja vuorovaikutusenergioiden muodostama systeemin energiamäärä."],
+    ["Ensimmäinen pääsääntö","Sisäenergia muuttuu lämmön siirtymisen ja systeemiin tehdyn työn vaikutuksesta; ΔU = Q + W."],
+    ["Joulen koe","Mekaanisen työn muuttuminen sisäenergiaksi havaitaan veden lämpötilan nousuna."],
+    ["Kaasun työ","Laajeneva kaasu tekee työtä ympäristöön, kun sen tilavuus kasvaa."],
+    ["Tilavuustyö","Vakiopaineessa kaasun tekemän työn suuruus riippuu paineesta ja tilavuuden muutoksesta; W = pΔV."],
+    ["Adiabaattinen muutos","Systeemin ja ympäristön välillä ei siirry lämpöä, joten työ muuttaa sisäenergiaa."],
+    ["Isoterminen prosessi","Lämpötila ja ideaalikaasun sisäenergia pysyvät vakioina prosessin aikana."],
+    ["Energian säilyminen","Energia ei synny eikä häviä, vaan siirtyy ja muuntuu eri muotoihin."]
+  ]},
+  { nimi:"Lämpövoimakoneet", kortit:[
+    ["Lämpövoimakone","Muuntaa osan kuumasta systeemistä saadusta energiasta mekaaniseksi työksi."],
+    ["Kuumalähde","Korkeamman lämpötilan systeemi, josta kone vastaanottaa energiaa lämpönä."],
+    ["Kylmälähde","Matalamman lämpötilan systeemi, johon kone luovuttaa osan vastaanottamastaan energiasta."],
+    ["Hukkalämpö","Kylmempään ympäristöön siirtyvä energia, jota ei saada muutettua hyödylliseksi työksi."],
+    ["Hyötysuhde","Kertoo, kuinka suuri osa vastaanotetusta energiasta saadaan hyödylliseksi työksi."],
+    ["Kiertoprosessi","Systeemi käy läpi tilanmuutoksia ja palaa lopuksi alkuperäiseen tilaansa."],
+    ["Jäähdytyskone","Työn avulla siirtää energiaa kylmemmästä tilasta lämpimämpään ympäristöön."],
+    ["Lämpöpumppu","Siirtää ulkopuolisen työn avulla energiaa viileämmästä ympäristöstä lämmitettävään tilaan."],
+    ["Kompressori","Puristaa jäähdytysainetta, jolloin sen paine ja yleensä myös lämpötila kasvavat."]
+  ]},
+  { nimi:"Ilmasto ja lämpö", kortit:[
+    ["Säteilytasapaino","Maapallon lämpötila pysyy vakaana, kun vastaanotettu ja avaruuteen säteilevä teho ovat yhtä suuret."],
+    ["Kasvihuoneilmiö","Ilmakehä absorboi osan Maan lämpösäteilystä ja nostaa maanpinnan keskilämpötilaa."],
+    ["Kasvihuonekaasu","Ilmakehän kaasu, joka absorboi ja lähettää infrapunasäteilyä."],
+    ["Hiilidioksidi","Pitkäikäinen kasvihuonekaasu, jonka pitoisuutta fossiilisten polttoaineiden käyttö lisää."],
+    ["Albedo","Kertoo, kuinka suuri osa pintaan saapuvasta säteilystä heijastuu takaisin."],
+    ["Jääpalaute","Jään väheneminen pienentää heijastavuutta ja lisää Auringon energian absorboitumista."],
+    ["Merien lämpeneminen","Veden suuri ominaislämpökapasiteetti saa meret varastoimaan suuren määrän energiaa."],
+    ["Merenpinnan nousu","Johtuu erityisesti mannerjään sulamisesta ja meriveden lämpölaajenemisesta."],
+    ["Merijään sulaminen","Kelluvan jään sulaminen ei itsessään merkittävästi nosta merenpintaa."],
+    ["Ilmastonmuutos","Maapallon pitkäaikainen lämpeneminen muuttaa energiatasapainoa, jäätiköitä, meriä ja muita ilmastojärjestelmän osia."]
   ]}
 ]},
 
