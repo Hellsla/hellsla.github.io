@@ -157,36 +157,6 @@
   .tile.kesken .code{ color:var(--ink-soft); }
   .tile.kesken .count{ color:var(--ink-soft); }
 
-  .tile .own{
-    position:absolute;
-    top:12px; right:12px;
-    width:9px; height:9px;
-    border-radius:999px;
-    background:var(--clay);
-  }
-  .tile{ position:relative; }
-  .toolbar{
-    display:flex;
-    gap:14px;
-    align-items:center;
-    font-size:.78rem;
-    font-weight:700;
-    color:var(--ink-soft);
-  }
-  .toolbar button{ color:var(--ink-soft); text-decoration:underline; text-underline-offset:3px; }
-  .toolbar button:hover{ color:var(--brick); }
-  .note{
-    background:var(--panel-2);
-    border-radius:12px;
-    padding:12px 14px;
-    font-size:.82rem;
-    color:var(--ink-soft);
-    font-weight:600;
-    line-height:1.5;
-  }
-  .note code{ font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.9em; color:var(--brick); }
-  .note.err{ color:#8c3b2a; }
-
   /* ---------- Topic list ---------- */
   .list{ display:flex; flex-direction:column; gap:9px; }
   .row{
@@ -501,12 +471,6 @@
   <!-- 1. Kurssi -->
   <section class="screen on" id="screenKurssi" aria-label="Valitse kurssi">
     <div class="grid" id="kurssiGrid"></div>
-    <div class="toolbar">
-      <button type="button" id="tuoBtn">Tuo omia kortteja</button>
-      <button type="button" id="tyhjennaBtn" hidden>Poista omat kortit</button>
-      <input type="file" id="tuoInput" accept=".txt,.md,.csv,.tsv,.json" multiple hidden />
-    </div>
-    <p class="note" id="tuoNote" hidden></p>
   </section>
 
   <!-- 2. Aihe -->
@@ -580,7 +544,6 @@
 /* ---------------------------------------------------------------
    Sisältö: kasitetakomo-data.js (window.KORTIT)
    + tähän listaan lisätyt tekstitiedostot
-   + selaimeen tuodut omat kortit
    Muoto-ohje: KORTTIOHJE.md
 ----------------------------------------------------------------*/
 const LISATIEDOSTOT = [
@@ -609,9 +572,7 @@ function nayta(id){
   window.scrollTo({ top:0, behavior:"smooth" });
 }
 
-/* --------------------------- Korttien tuonti --------------------------- */
-const OMAT_AVAIN = "kasitetakomo-omat";
-const VANHA_OMAT_AVAIN = "kasitekortit-omat";   // ennen nimenvaihtoa tuodut kortit
+/* --------------------------- Korttitiedostojen luku --------------------------- */
 
 /* Tekstimuoto:
      # FY9 | Kurssin nimi
@@ -626,14 +587,14 @@ function jasennaTeksti(teksti, oletusNimi){
     if(!r || r.startsWith("//")) return;
     if(r.startsWith("##")){
       a = { nimi: r.replace(/^#+\s*/, "") || "Muut", kortit: [] };
-      if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [], omat: true }; kurssit.push(k); }
+      if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [] }; kurssit.push(k); }
       k.aiheet.push(a);
       return;
     }
     if(r.startsWith("#")){
       const otsikko = r.replace(/^#+\s*/, "");
       const osat = otsikko.split(/\s*[|·–-]\s*/);
-      k = { id: (osat[0] || oletusNimi).trim(), nimi: (osat.slice(1).join(" – ") || "").trim(), aiheet: [], omat: true };
+      k = { id: (osat[0] || oletusNimi).trim(), nimi: (osat.slice(1).join(" – ") || "").trim(), aiheet: [] };
       kurssit.push(k);
       a = null;
       return;
@@ -648,7 +609,7 @@ function jasennaTeksti(teksti, oletusNimi){
     const kasite = r.slice(0, i).trim();
     const maar = r.slice(i + erotin.length).trim();
     if(!kasite || !maar) return;
-    if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [], omat: true }; kurssit.push(k); }
+    if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [] }; kurssit.push(k); }
     if(!a){ a = { nimi: "Kortit", kortit: [] }; k.aiheet.push(a); }
     a.kortit.push([kasite, maar]);
   });
@@ -661,7 +622,6 @@ function jasennaJson(teksti, oletusNimi){
   return d.map((k, n) => ({
     id: (k.id || k.koodi || k.kurssi || oletusNimi + (d.length > 1 ? " " + (n + 1) : "")).toString(),
     nimi: (k.nimi || k.name || "").toString(),
-    omat: true,
     aiheet: (k.aiheet || k.topics || []).map(a => ({
       nimi: (a.nimi || a.name || "Kortit").toString(),
       kortit: (a.kortit || a.cards || []).map(c => Array.isArray(c)
@@ -679,69 +639,19 @@ function jasennaTiedosto(teksti, nimi){
   return jasennaTeksti(puhdas, oletus);
 }
 
-function lueOmat(){
-  try{
-    return JSON.parse(localStorage.getItem(OMAT_AVAIN)
-      || localStorage.getItem(VANHA_OMAT_AVAIN) || "[]");
-  }catch(e){ return []; }
-}
-function talletaOmat(lista){
-  try{ localStorage.setItem(OMAT_AVAIN, JSON.stringify(lista)); }catch(e){}
-}
-
-function viesti(teksti, virhe){
-  const n = $("tuoNote");
-  n.hidden = !teksti;
-  n.textContent = teksti || "";
-  n.classList.toggle("err", !!virhe);
-}
-
 function lisaaKurssit(uudet){
   uudet.forEach(u => {
-    const vanha = KURSSIT.findIndex(k => k.id === u.id && k.omat);
-    if(vanha >= 0) KURSSIT[vanha] = u; else KURSSIT.push(u);
+    const i = KURSSIT.findIndex(k => k.id === u.id);
+    if(i >= 0) KURSSIT[i] = u; else KURSSIT.push(u);
   });
 }
-
-$("tuoBtn").addEventListener("click", () => $("tuoInput").click());
-$("tuoInput").addEventListener("change", async (e) => {
-  const tiedostot = Array.from(e.target.files || []);
-  if(!tiedostot.length) return;
-  const omat = lueOmat();
-  let n = 0, virheet = [];
-  for(const f of tiedostot){
-    try{
-      const uudet = jasennaTiedosto(await f.text(), f.name);
-      if(!uudet.length){ virheet.push(f.name); continue; }
-      uudet.forEach(u => {
-        const i = omat.findIndex(k => k.id === u.id);
-        if(i >= 0) omat[i] = u; else omat.push(u);
-        n += u.aiheet.reduce((s, a) => s + a.kortit.length, 0);
-      });
-    }catch(err){ virheet.push(f.name); }
-  }
-  talletaOmat(omat);
-  lisaaKurssit(omat);
-  piirraKurssit();
-  e.target.value = "";
-  viesti(virheet.length
-    ? "Ei tunnistettu: " + virheet.join(", ") + ". Tarkista muoto: Käsite :: Määritelmä"
-    : n + " korttia tuotu. Kortit säilyvät tässä selaimessa.", virheet.length);
-});
-
-$("tyhjennaBtn").addEventListener("click", () => {
-  talletaOmat([]);
-  KURSSIT = KURSSIT.filter(k => !k.omat);
-  piirraKurssit();
-  viesti("Omat kortit poistettu.");
-});
 
 async function lataaLisatiedostot(){
   for(const nimi of LISATIEDOSTOT){
     try{
       const vast = await fetch(nimi);
       if(!vast.ok) continue;
-      lisaaKurssit(jasennaTiedosto(await vast.text(), nimi).map(k => ({ ...k, omat: false })));
+      lisaaKurssit(jasennaTiedosto(await vast.text(), nimi));
     }catch(e){ /* esim. paikallinen tiedostoselaus */ }
   }
 }
@@ -754,8 +664,7 @@ function piirraKurssit(){
     const b = document.createElement("button");
     b.type = "button";
     b.className = "tile";
-    b.innerHTML = (k.omat ? '<span class="own" aria-hidden="true"></span>' : '') +
-                  '<span class="code"></span>' +
+    b.innerHTML = '<span class="code"></span>' +
                   '<span class="name"></span>' +
                   '<span class="count">' + (k.kesken ? "Tulossa" : korttiMaara(k) + " korttia") + '</span>';
     b.querySelector(".code").textContent = k.id;
@@ -768,7 +677,6 @@ function piirraKurssit(){
     }
     g.appendChild(b);
   });
-  $("tyhjennaBtn").hidden = !KURSSIT.some(k => k.omat);
 }
 
 function valitseKurssi(k){
@@ -954,7 +862,6 @@ document.addEventListener("keydown", (e) => {
   if(e.key === "Escape") nayta("screenAihe");
 });
 
-lisaaKurssit(lueOmat());
 piirraKurssit();
 paivitaMode();
 lataaLisatiedostot().then(piirraKurssit);

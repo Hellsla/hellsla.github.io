@@ -3,37 +3,29 @@
 Sovellus: **kasitetakomo.html**
 Valmis sisältö: **kasitetakomo-data.js**
 
-Kortteja voi lisätä kolmella tavalla. Nopein on tapa 1.
+Kortteja voi lisätä kahdella tavalla.
 
 ---
 
-## Tapa 1 – Tuo tiedosto selaimessa (nopein)
+## Tapa 1 – Tekstitiedosto sivustolle
 
-1. Tee tekstitiedosto alla olevassa muodossa (esim. `kortit-fy9.txt`).
-2. Avaa `kasitetakomo.html` ja paina kurssinäkymässä **"Tuo omia kortteja"**.
-3. Valitse tiedosto (tai useita kerralla).
-
-Kortit tallentuvat **siihen selaimeen** ja näkyvät kurssilistassa pinkillä pisteellä
-merkittynä. **"Poista omat kortit"** tyhjentää ne. Tämä ei muuta sivustoa muille –
-jos kortit halutaan kaikille, käytä tapaa 2 tai 3.
-
-## Tapa 2 – Tekstitiedosto sivustolle (kaikille näkyvä)
-
-1. Tallenna tekstitiedosto samaan kansioon, esim. `omat-kortit.txt`.
+1. Tee tekstitiedosto alla olevassa muodossa ja tallenna se samaan kansioon,
+   esim. `kortit-fy9.txt`.
 2. Lisää tiedoston nimi `kasitetakomo.html`-tiedoston alussa olevaan listaan:
 
 ```js
 const LISATIEDOSTOT = [
-  "omat-kortit.txt"
+  "kortit-fy9.txt"
 ];
 ```
 
-Sivusto lataa tiedoston automaattisesti. (Toimii verkossa, ei paikallisesti
-`file://`-osoitteesta avattuna.)
+Sivusto lataa tiedoston automaattisesti ja kortit näkyvät kaikille. (Toimii
+verkossa, ei paikallisesti `file://`-osoitteesta avattuna.)
 
-## Tapa 3 – Suoraan sisältötiedostoon
+## Tapa 2 – Suoraan sisältötiedostoon
 
 Lisää kurssi `kasitetakomo-data.js`-tiedostoon samassa muodossa kuin FY1–FY8.
+Näin on tehty kaikki nykyiset kurssit.
 
 ---
 
@@ -109,7 +101,8 @@ Kopioi tämä ChatGPT:lle ja vaihda hakasulkeiden sisällöt:
 > - Kirjoita suomeksi lukiotasolla, älä käytä lihavointia tai luettelomerkkejä.
 > - Ei kaksoiskappaleita.
 
-Tallenna vastaus tiedostoksi `kortit-[kurssi].txt` (UTF-8) ja tuo se sovellukseen.
+Tallenna vastaus tiedostoksi `kortit-[kurssi].txt` (UTF-8) ja lisää se yllä
+kuvatulla tavalla.
 
 ---
 
