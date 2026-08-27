@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#efe8da" />
+<meta name="description" content="Käsitekortit – lukion fysiikan käsitteet ja määritelmät Anki-tyylisinä kertauskortteina. Valitse kurssi ja aihe, ja kertaus alkaa." />
+<meta name="robots" content="noindex, nofollow" />
+<title>Käsitekortit – lukion fysiikka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#efe8da;
+    --panel:#faf6ec;
+    --panel-2:#f2ecdd;
+    --ink:#3a3530;
+    --ink-soft:#6c6459;
+    --clay:#fca5c7;
+    --brick:#012169;
+    --brick-dark:#011a52;
+    --green:#5f7a52;
+    --fire-orange:#e8863a;
+    --stone-light:#cdc3ad;
+    --radius:18px;
+    --shadow: 0 6px 18px rgba(58,54,47,.18);
+    --shadow-lift: 0 12px 28px rgba(58,54,47,.22);
+    --focus:#2e2a24;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    min-height:100%;
+    background:
+      radial-gradient(circle at 18% 22%, rgba(255,255,255,.55), transparent 42%),
+      radial-gradient(circle at 82% 68%, rgba(58,53,45,.05), transparent 45%),
+      var(--bg);
+    color:var(--ink);
+    font-family:"Karla", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+
+  body{
+    display:flex;
+    justify-content:center;
+    padding:16px 14px 32px;
+    min-height:100vh;
+  }
+
+  .app{
+    width:100%;
+    max-width:660px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  a,button,input{ font-family:inherit; }
+  button{ cursor:pointer; border:none; background:none; color:inherit; }
+  :focus-visible{ outline:3px solid var(--focus); outline-offset:3px; border-radius:8px; }
+
+  .serif{ font-family:"Zilla Slab", Georgia, "Times New Roman", serif; }
+
+  /* ---------- Header ---------- */
+  header.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:4px 2px 0;
+  }
+  .brand-mark{ width:42px; height:26px; flex:0 0 auto; }
+  .brand-title{
+    font-family:"Zilla Slab", Georgia, serif;
+    font-size:1.05rem;
+    font-weight:700;
+    letter-spacing:.01em;
+    margin:0;
+  }
+  .brand-sub{
+    font-size:.72rem;
+    text-transform:uppercase;
+    letter-spacing:.09em;
+    color:var(--ink-soft);
+    font-weight:700;
+  }
+
+  /* ---------- Screens ---------- */
+  .screen{ display:none; flex-direction:column; gap:16px; }
+  .screen.on{ display:flex; animation:rise .28s ease both; }
+  @keyframes rise{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:none; } }
+
+  .step{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .step h2{
+    font-family:"Zilla Slab", Georgia, serif;
+    font-size:clamp(1.5rem, 6vw, 2rem);
+    margin:0;
+    font-weight:700;
+  }
+  .step .hint{
+    font-size:.8rem;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+
+  /* ---------- Course grid ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(148px, 1fr));
+    gap:12px;
+  }
+  .tile{
+    background:var(--panel);
+    border:2px solid transparent;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:16px 14px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+  }
+  .tile:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lift); border-color:var(--clay); }
+  .tile:active{ transform:translateY(0) scale(.985); }
+  .tile .code{
+    font-family:"Zilla Slab", Georgia, serif;
+    font-size:1.6rem;
+    font-weight:700;
+    color:var(--brick);
+    line-height:1;
+  }
+  .tile .name{ font-size:.86rem; color:var(--ink-soft); font-weight:600; line-height:1.25; }
+  .tile .count{
+    margin-top:6px;
+    font-size:.7rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    opacity:.75;
+    font-weight:700;
+  }
+
+  .tile.kesken{
+    background:var(--panel-2);
+    box-shadow:none;
+    opacity:.55;
+    cursor:default;
+  }
+  .tile.kesken:hover{ transform:none; box-shadow:none; border-color:transparent; }
+  .tile.kesken .code{ color:var(--ink-soft); }
+  .tile.kesken .count{ color:var(--ink-soft); }
+
+  .tile .own{
+    position:absolute;
+    top:12px; right:12px;
+    width:9px; height:9px;
+    border-radius:999px;
+    background:var(--clay);
+  }
+  .tile{ position:relative; }
+  .toolbar{
+    display:flex;
+    gap:14px;
+    align-items:center;
+    font-size:.78rem;
+    font-weight:700;
+    color:var(--ink-soft);
+  }
+  .toolbar button{ color:var(--ink-soft); text-decoration:underline; text-underline-offset:3px; }
+  .toolbar button:hover{ color:var(--brick); }
+  .note{
+    background:var(--panel-2);
+    border-radius:12px;
+    padding:12px 14px;
+    font-size:.82rem;
+    color:var(--ink-soft);
+    font-weight:600;
+    line-height:1.5;
+  }
+  .note code{ font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.9em; color:var(--brick); }
+  .note.err{ color:#8c3b2a; }
+
+  /* ---------- Topic list ---------- */
+  .list{ display:flex; flex-direction:column; gap:9px; }
+  .row{
+    background:var(--panel);
+    border:2px solid transparent;
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    display:flex;
+    align-items:center;
+    text-align:left;
+    transition:transform .14s ease, border-color .14s ease, background .14s ease;
+  }
+  .row:hover{ transform:translateX(3px); border-color:var(--clay); }
+  .row.valittu{ border-color:var(--clay); }
+  .rowmain{
+    flex:1;
+    min-width:0;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 16px;
+    text-align:left;
+  }
+  .pick{
+    flex:0 0 auto;
+    width:44px;
+    align-self:stretch;
+    display:grid;
+    place-items:center;
+    border-right:2px solid var(--panel-2);
+    border-radius:12px 0 0 12px;
+  }
+  .pick span{
+    width:24px;
+    height:24px;
+    border-radius:999px;
+    border:2px solid var(--stone-light);
+    background:var(--panel-2);
+    display:grid;
+    place-items:center;
+    font-size:.8rem;
+    font-weight:800;
+    color:transparent;
+    transition:background .14s, border-color .14s, color .14s;
+  }
+  .pick:hover span{ border-color:var(--clay); }
+  .row.valittu .pick span{ background:var(--clay); border-color:var(--clay); color:var(--brick); }
+  .startbar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .startbar button{
+    background:var(--brick);
+    color:#fff;
+    border-radius:14px;
+    padding:15px 18px;
+    font-weight:700;
+    font-size:1rem;
+    flex:1;
+    box-shadow:var(--shadow);
+    transition:filter .14s ease, transform .12s ease;
+  }
+  .startbar button:hover{ filter:brightness(1.15); }
+  .startbar button:active{ transform:scale(.99); }
+  .startbar .clear{
+    background:transparent;
+    color:var(--ink-soft);
+    box-shadow:none;
+    flex:0 0 auto;
+    font-size:.82rem;
+    font-weight:700;
+    text-decoration:underline;
+    text-underline-offset:3px;
+    padding:10px 4px;
+  }
+  .startbar .clear:hover{ color:var(--brick); filter:none; }
+  .vihje{
+    font-size:.75rem;
+    color:var(--ink-soft);
+    opacity:.7;
+    font-weight:600;
+    margin:0;
+  }
+  .row .label{ flex:1; font-weight:700; font-size:1rem; }
+  .row .n{
+    font-size:.75rem;
+    font-weight:700;
+    color:var(--ink-soft);
+    background:var(--panel-2);
+    border-radius:999px;
+    padding:3px 9px;
+  }
+  .row .go{ color:var(--brick); font-size:1.1rem; line-height:1; }
+  .row.all{ background:var(--brick); color:#fff; }
+  .row.all .n{ background:rgba(255,255,255,.16); color:#fff; }
+  .row.all .go{ color:var(--clay); }
+  .row.all:hover{ border-color:var(--clay); }
+
+  /* ---------- Mode toggle ---------- */
+  .mode{
+    display:flex;
+    gap:6px;
+    background:var(--panel-2);
+    border-radius:999px;
+    padding:5px;
+    align-self:flex-start;
+  }
+  .mode button{
+    border-radius:999px;
+    padding:8px 16px;
+    font-size:.85rem;
+    font-weight:700;
+    color:var(--ink-soft);
+    transition:background .15s, color .15s;
+  }
+  .mode button[aria-pressed="true"]{ background:var(--panel); color:var(--brick); box-shadow:0 2px 6px rgba(58,54,47,.12); }
+
+  .back{
+    align-self:flex-start;
+    font-size:.82rem;
+    font-weight:700;
+    color:var(--ink-soft);
+    padding:6px 2px;
+    letter-spacing:.02em;
+  }
+  .back:hover{ color:var(--brick); }
+
+  /* ---------- Study screen ---------- */
+  .studybar{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .studybar .crumb{
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    flex:1;
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .studybar .tally{
+    font-size:.8rem;
+    font-weight:700;
+    color:var(--brick);
+    font-variant-numeric:tabular-nums;
+  }
+  .track{
+    height:6px;
+    border-radius:999px;
+    background:var(--panel-2);
+    overflow:hidden;
+  }
+  .fill{
+    height:100%;
+    width:0%;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--clay), var(--fire-orange));
+    transition:width .3s ease;
+  }
+
+  .flip{
+    perspective:1400px;
+    height:clamp(280px, 48vh, 420px);
+  }
+  .flip-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transition:transform .5s cubic-bezier(.2,.8,.25,1);
+    cursor:pointer;
+  }
+  .flip.flipped .flip-inner{ transform:rotateY(180deg); }
+  .face{
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    background:var(--panel);
+    border-radius:22px;
+    box-shadow:var(--shadow-lift);
+    padding:46px 24px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:14px;
+    overflow:auto;
+  }
+  .face.back{
+    transform:rotateY(180deg);
+    background:linear-gradient(160deg, var(--brick) 0%, var(--brick-dark) 100%);
+    color:#fff;
+  }
+  .face.back .kind{ color:var(--clay); opacity:.9; }
+  .face.back .term{ color:#fff; }
+  .prompt{
+    font-size:.82rem;
+    font-weight:700;
+    color:rgba(255,255,255,.62);
+    margin:0;
+    max-width:34ch;
+    line-height:1.35;
+  }
+  .face .kind{
+    position:absolute;
+    top:16px;
+    left:0;
+    right:0;
+    font-size:.68rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-weight:800;
+    color:var(--ink-soft);
+    opacity:.7;
+  }
+  .face .text{
+    font-family:"Zilla Slab", Georgia, serif;
+    font-weight:600;
+    line-height:1.3;
+    margin:0;
+  }
+  .term{ font-size:clamp(1.7rem, 7.5vw, 2.6rem); color:var(--brick-dark); }
+  .def{ font-size:clamp(1.1rem, 4.4vw, 1.5rem); line-height:1.45; }
+  .face .tap{
+    position:absolute;
+    bottom:16px;
+    left:0; right:0;
+    font-size:.74rem;
+    color:var(--ink-soft);
+    opacity:.65;
+    font-weight:600;
+  }
+
+  .answers{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .2s ease;
+  }
+  .answers.on{ opacity:1; pointer-events:auto; }
+  .answers button{
+    border-radius:14px;
+    padding:15px 12px;
+    font-size:1rem;
+    font-weight:700;
+    box-shadow:var(--shadow);
+    transition:transform .12s ease, filter .12s ease;
+  }
+  .answers button:active{ transform:scale(.97); }
+  .again{ background:var(--panel); color:var(--ink); border:2px solid var(--stone-light); }
+  .again:hover{ border-color:var(--fire-orange); }
+  .good{ background:var(--brick); color:#fff; }
+  .good:hover{ filter:brightness(1.15); }
+
+  .keys{
+    text-align:center;
+    font-size:.72rem;
+    color:var(--ink-soft);
+    opacity:.6;
+    font-weight:600;
+  }
+
+  /* ---------- Done ---------- */
+  .done{
+    background:var(--panel);
+    border-radius:22px;
+    box-shadow:var(--shadow-lift);
+    padding:34px 24px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    align-items:center;
+  }
+  .done h2{ font-family:"Zilla Slab", Georgia, serif; font-size:2rem; margin:0; color:var(--brick-dark); }
+  .done p{ margin:0; color:var(--ink-soft); font-weight:600; }
+  .done .stats{ font-variant-numeric:tabular-nums; font-size:.95rem; }
+  .done .actions{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:14px; }
+  .done .actions button{
+    border-radius:999px;
+    padding:11px 20px;
+    font-weight:700;
+    font-size:.92rem;
+    background:var(--panel-2);
+    border:2px solid var(--stone-light);
+    transition:border-color .14s, background .14s, color .14s;
+  }
+  .done .actions button:hover{ border-color:var(--clay); }
+  .done .actions button.primary{ background:var(--brick); border-color:var(--brick); color:#fff; }
+  .done .actions button.primary:hover{ filter:brightness(1.15); }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="brand">
+    <svg class="brand-mark" viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukion tunnus">
+      <polygon fill="#012169" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766.88 364.38 781.13 381.37 788.72 402.21 788.72 424.39 976.23 424.39 976.23 402.2 788.76 402.2"/>
+    </svg>
+    <div>
+      <div class="brand-sub">Fysiikka</div>
+      <h1 class="brand-title">Käsitekortit</h1>
+    </div>
+  </header>
+
+  <!-- 1. Kurssi -->
+  <section class="screen on" id="screenKurssi" aria-labelledby="hKurssi">
+    <div class="step">
+      <h2 id="hKurssi">Valitse kurssi</h2>
+    </div>
+    <div class="grid" id="kurssiGrid"></div>
+    <div class="toolbar">
+      <button type="button" id="tuoBtn">Tuo omia kortteja</button>
+      <button type="button" id="tyhjennaBtn" hidden>Poista omat kortit</button>
+      <input type="file" id="tuoInput" accept=".txt,.md,.csv,.tsv,.json" multiple hidden />
+    </div>
+    <p class="note" id="tuoNote" hidden></p>
+  </section>
+
+  <!-- 2. Aihe -->
+  <section class="screen" id="screenAihe" aria-labelledby="hAihe">
+    <button class="back" id="backToKurssi" type="button">← Kurssit</button>
+    <div class="step">
+      <h2 id="hAihe">Valitse aihe</h2>
+      <span class="hint" id="kurssiHint"></span>
+    </div>
+    <div class="list" id="aiheList"></div>
+    <div class="startbar" id="startBar" hidden>
+      <button type="button" id="startBtn"></button>
+      <button type="button" class="clear" id="clearBtn">Tyhjennä</button>
+    </div>
+    <p class="vihje" id="yhdistaVihje">Yhdistä aiheita ympyröistä</p>
+    <div class="mode" role="group" aria-label="Kortin suunta">
+      <button type="button" data-mode="kasite" aria-pressed="true">Käsite ensin</button>
+      <button type="button" data-mode="maaritelma" aria-pressed="false">Määritelmä ensin</button>
+    </div>
+  </section>
+
+  <!-- 3. Kertaus -->
+  <section class="screen" id="screenKortti" aria-labelledby="hKortti">
+    <h2 id="hKortti" class="visually-hidden" style="position:absolute;left:-9999px;">Kertaus</h2>
+    <div class="studybar">
+      <button class="back" id="backToAihe" type="button" style="align-self:auto;">←</button>
+      <span class="crumb" id="crumb"></span>
+      <span class="tally" id="tally"></span>
+    </div>
+    <div class="track"><div class="fill" id="fill"></div></div>
+
+    <div class="flip" id="flip">
+      <div class="flip-inner" id="flipInner" role="button" tabindex="0" aria-label="Näytä vastaus">
+        <div class="face front">
+          <span class="kind" id="kindFront"></span>
+          <p class="text" id="frontText"></p>
+          <span class="tap">Napauta – näytä vastaus</span>
+        </div>
+        <div class="face back">
+          <span class="kind" id="kindBack"></span>
+          <p class="prompt" id="promptText"></p>
+          <p class="text" id="backText"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="answers" id="answers">
+      <button type="button" class="again" id="btnAgain">Kertaa uudestaan</button>
+      <button type="button" class="good" id="btnGood">Osasin</button>
+    </div>
+    <p class="keys">Väli = käännä · 1 = kertaa · 2 = osasin</p>
+  </section>
+
+  <!-- 4. Valmis -->
+  <section class="screen" id="screenValmis">
+    <div class="done">
+      <h2>Valmis</h2>
+      <p id="valmisAihe"></p>
+      <p class="stats" id="valmisStats"></p>
+      <div class="actions">
+        <button type="button" class="primary" id="againDeck">Sama uudestaan</button>
+        <button type="button" id="otherTopic">Toinen aihe</button>
+        <button type="button" id="otherCourse">Toinen kurssi</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="kasitekortit-data.js"></script>
+<script>
+/* ---------------------------------------------------------------
+   Sisältö: kasitekortit-data.js (window.KORTIT)
+   + tähän listaan lisätyt tekstitiedostot
+   + selaimeen tuodut omat kortit
+   Muoto-ohje: KORTTIOHJE.md
+----------------------------------------------------------------*/
+const LISATIEDOSTOT = [
+  // "omat-kortit.txt"
+];
+
+let KURSSIT = (window.KORTIT || []).slice();
+
+/* --------------------------- Tila --------------------------- */
+const $ = (id) => document.getElementById(id);
+let mode = "kasite";          // "kasite" | "maaritelma"
+let kurssi = null, valinta = null;      // valinta: { aiheet:[...], nimi:"..." }
+const valitut = new Set();               // monivalinnan aiheindeksit
+let deck = [], queue = [], nykyinen = null;
+let total = 0, valmiit = 0, kertaukset = 0, flipped = false;
+
+try{ const m = localStorage.getItem("kasitekortit-mode"); if(m) mode = m; }catch(e){}
+
+const korttiMaara = (k) => k.aiheet.reduce((s,a) => s + a.kortit.length, 0);
+
+function nayta(id){
+  document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id));
+  window.scrollTo({ top:0, behavior:"smooth" });
+}
+
+/* --------------------------- Korttien tuonti --------------------------- */
+const OMAT_AVAIN = "kasitekortit-omat";
+
+/* Tekstimuoto:
+     # FY9 | Kurssin nimi
+     ## Aiheen nimi
+     Käsite :: Määritelmä
+   Erottimena käy myös sarkain, | tai ; jos :: puuttuu. */
+function jasennaTeksti(teksti, oletusNimi){
+  const kurssit = [];
+  let k = null, a = null;
+  teksti.split(/\r?\n/).forEach(rivi => {
+    const r = rivi.trim();
+    if(!r || r.startsWith("//")) return;
+    if(r.startsWith("##")){
+      a = { nimi: r.replace(/^#+\s*/, "") || "Muut", kortit: [] };
+      if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [], omat: true }; kurssit.push(k); }
+      k.aiheet.push(a);
+      return;
+    }
+    if(r.startsWith("#")){
+      const otsikko = r.replace(/^#+\s*/, "");
+      const osat = otsikko.split(/\s*[|·–-]\s*/);
+      k = { id: (osat[0] || oletusNimi).trim(), nimi: (osat.slice(1).join(" – ") || "").trim(), aiheet: [], omat: true };
+      kurssit.push(k);
+      a = null;
+      return;
+    }
+    let erotin = null;
+    if(r.includes("::")) erotin = "::";
+    else if(r.includes("\t")) erotin = "\t";
+    else if(r.includes("|")) erotin = "|";
+    else if(r.includes(";")) erotin = ";";
+    if(!erotin) return;
+    const i = r.indexOf(erotin);
+    const kasite = r.slice(0, i).trim();
+    const maar = r.slice(i + erotin.length).trim();
+    if(!kasite || !maar) return;
+    if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [], omat: true }; kurssit.push(k); }
+    if(!a){ a = { nimi: "Kortit", kortit: [] }; k.aiheet.push(a); }
+    a.kortit.push([kasite, maar]);
+  });
+  return kurssit.filter(x => x.aiheet.some(t => t.kortit.length));
+}
+
+function jasennaJson(teksti, oletusNimi){
+  let d = JSON.parse(teksti);
+  if(!Array.isArray(d)) d = [d];
+  return d.map((k, n) => ({
+    id: (k.id || k.koodi || k.kurssi || oletusNimi + (d.length > 1 ? " " + (n + 1) : "")).toString(),
+    nimi: (k.nimi || k.name || "").toString(),
+    omat: true,
+    aiheet: (k.aiheet || k.topics || []).map(a => ({
+      nimi: (a.nimi || a.name || "Kortit").toString(),
+      kortit: (a.kortit || a.cards || []).map(c => Array.isArray(c)
+        ? [String(c[0]), String(c[1])]
+        : [String(c.kasite || c.käsite || c.term || ""), String(c.maaritelma || c.määritelmä || c.def || "")]
+      ).filter(c => c[0] && c[1])
+    })).filter(a => a.kortit.length)
+  })).filter(k => k.aiheet.length);
+}
+
+function jasennaTiedosto(teksti, nimi){
+  const puhdas = teksti.replace(/^\uFEFF/, "").trim();
+  const oletus = nimi.replace(/\.[a-z]+$/i, "");
+  if(puhdas.startsWith("[") || puhdas.startsWith("{")) return jasennaJson(puhdas, oletus);
+  return jasennaTeksti(puhdas, oletus);
+}
+
+function lueOmat(){
+  try{ return JSON.parse(localStorage.getItem(OMAT_AVAIN) || "[]"); }catch(e){ return []; }
+}
+function talletaOmat(lista){
+  try{ localStorage.setItem(OMAT_AVAIN, JSON.stringify(lista)); }catch(e){}
+}
+
+function viesti(teksti, virhe){
+  const n = $("tuoNote");
+  n.hidden = !teksti;
+  n.textContent = teksti || "";
+  n.classList.toggle("err", !!virhe);
+}
+
+function lisaaKurssit(uudet){
+  uudet.forEach(u => {
+    const vanha = KURSSIT.findIndex(k => k.id === u.id && k.omat);
+    if(vanha >= 0) KURSSIT[vanha] = u; else KURSSIT.push(u);
+  });
+}
+
+$("tuoBtn").addEventListener("click", () => $("tuoInput").click());
+$("tuoInput").addEventListener("change", async (e) => {
+  const tiedostot = Array.from(e.target.files || []);
+  if(!tiedostot.length) return;
+  const omat = lueOmat();
+  let n = 0, virheet = [];
+  for(const f of tiedostot){
+    try{
+      const uudet = jasennaTiedosto(await f.text(), f.name);
+      if(!uudet.length){ virheet.push(f.name); continue; }
+      uudet.forEach(u => {
+        const i = omat.findIndex(k => k.id === u.id);
+        if(i >= 0) omat[i] = u; else omat.push(u);
+        n += u.aiheet.reduce((s, a) => s + a.kortit.length, 0);
+      });
+    }catch(err){ virheet.push(f.name); }
+  }
+  talletaOmat(omat);
+  lisaaKurssit(omat);
+  piirraKurssit();
+  e.target.value = "";
+  viesti(virheet.length
+    ? "Ei tunnistettu: " + virheet.join(", ") + ". Tarkista muoto: Käsite :: Määritelmä"
+    : n + " korttia tuotu. Kortit säilyvät tässä selaimessa.", virheet.length);
+});
+
+$("tyhjennaBtn").addEventListener("click", () => {
+  talletaOmat([]);
+  KURSSIT = KURSSIT.filter(k => !k.omat);
+  piirraKurssit();
+  viesti("Omat kortit poistettu.");
+});
+
+async function lataaLisatiedostot(){
+  for(const nimi of LISATIEDOSTOT){
+    try{
+      const vast = await fetch(nimi);
+      if(!vast.ok) continue;
+      lisaaKurssit(jasennaTiedosto(await vast.text(), nimi).map(k => ({ ...k, omat: false })));
+    }catch(e){ /* esim. paikallinen tiedostoselaus */ }
+  }
+}
+
+/* --------------------------- 1. Kurssit --------------------------- */
+function piirraKurssit(){
+  const g = $("kurssiGrid");
+  g.innerHTML = "";
+  KURSSIT.forEach(k => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "tile";
+    b.innerHTML = (k.omat ? '<span class="own" aria-hidden="true"></span>' : '') +
+                  '<span class="code"></span>' +
+                  '<span class="name"></span>' +
+                  '<span class="count">' + (k.kesken ? "Tulossa" : korttiMaara(k) + " korttia") + '</span>';
+    b.querySelector(".code").textContent = k.id;
+    b.querySelector(".name").textContent = k.nimi;
+    if(k.kesken){
+      b.classList.add("kesken");
+      b.disabled = true;
+    }else{
+      b.addEventListener("click", () => valitseKurssi(k));
+    }
+    g.appendChild(b);
+  });
+  $("tyhjennaBtn").hidden = !KURSSIT.some(k => k.omat);
+}
+
+function valitseKurssi(k){
+  kurssi = k;
+  $("kurssiHint").textContent = k.nimi ? k.id + " · " + k.nimi : k.id;
+  const l = $("aiheList");
+  l.innerHTML = "";
+
+  valitut.clear();
+
+  const kaikki = document.createElement("div");
+  kaikki.className = "row all";
+  kaikki.innerHTML = '<button type="button" class="rowmain">' +
+                     '<span class="label">Kaikki aiheet</span>' +
+                     '<span class="n">' + korttiMaara(k) + '</span><span class="go">→</span></button>';
+  kaikki.querySelector(".rowmain").addEventListener("click",
+    () => aloita(k.aiheet, "Kaikki aiheet"));
+  l.appendChild(kaikki);
+
+  k.aiheet.forEach((a, i) => {
+    const rivi = document.createElement("div");
+    rivi.className = "row";
+    rivi.innerHTML =
+      '<button type="button" class="pick" aria-pressed="false"><span>✓</span></button>' +
+      '<button type="button" class="rowmain">' +
+      '<span class="label"></span>' +
+      '<span class="n">' + a.kortit.length + '</span><span class="go">→</span></button>';
+    rivi.querySelector(".label").textContent = a.nimi;
+    rivi.querySelector(".pick").setAttribute("aria-label", "Lisää valintaan: " + a.nimi);
+    rivi.querySelector(".pick").addEventListener("click", () => {
+      valitut.has(i) ? valitut.delete(i) : valitut.add(i);
+      rivi.classList.toggle("valittu", valitut.has(i));
+      rivi.querySelector(".pick").setAttribute("aria-pressed", String(valitut.has(i)));
+      paivitaValinta();
+    });
+    rivi.querySelector(".rowmain").addEventListener("click", () => aloita([a], a.nimi));
+    l.appendChild(rivi);
+  });
+
+  paivitaValinta();
+  paivitaMode();
+  nayta("screenAihe");
+}
+
+function valitutAiheet(){
+  return [...valitut].sort((a, b) => a - b).map(i => kurssi.aiheet[i]);
+}
+
+function paivitaValinta(){
+  const n = valitut.size;
+  const kortteja = valitutAiheet().reduce((s, a) => s + a.kortit.length, 0);
+  $("startBar").hidden = n === 0;
+  $("yhdistaVihje").hidden = n > 0;
+  if(n) $("startBtn").textContent = "Aloita · " + n + " aihetta · " + kortteja + " korttia";
+}
+
+$("startBtn").addEventListener("click", () => {
+  const aiheet = valitutAiheet();
+  if(!aiheet.length) return;
+  aloita(aiheet, aiheet.length === kurssi.aiheet.length
+    ? "Kaikki aiheet"
+    : (aiheet.length === 1 ? aiheet[0].nimi : aiheet.length + " aihetta"));
+});
+
+$("clearBtn").addEventListener("click", () => {
+  valitut.clear();
+  document.querySelectorAll("#aiheList .row.valittu").forEach(r => {
+    r.classList.remove("valittu");
+    r.querySelector(".pick").setAttribute("aria-pressed", "false");
+  });
+  paivitaValinta();
+});
+
+function paivitaMode(){
+  document.querySelectorAll(".mode button").forEach(b => {
+    b.setAttribute("aria-pressed", String(b.dataset.mode === mode));
+  });
+}
+
+document.querySelectorAll(".mode button").forEach(b => {
+  b.addEventListener("click", () => {
+    mode = b.dataset.mode;
+    try{ localStorage.setItem("kasitekortit-mode", mode); }catch(e){}
+    paivitaMode();
+  });
+});
+
+/* --------------------------- 2. Kertaus --------------------------- */
+function sekoita(a){
+  const x = a.slice();
+  for(let i = x.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [x[i], x[j]] = [x[j], x[i]];
+  }
+  return x;
+}
+
+function aloita(aiheet, nimi){
+  valinta = { aiheet, nimi };
+  deck = aiheet.flatMap(a => a.kortit);
+  queue = sekoita(deck);
+  total = queue.length;
+  valmiit = 0;
+  kertaukset = 0;
+  $("crumb").textContent = kurssi.id + " · " + nimi;
+  nayta("screenKortti");
+  seuraava();
+}
+
+function seuraava(){
+  if(queue.length === 0) return valmis();
+  nykyinen = queue[0];
+  flipped = false;
+  $("flip").classList.remove("flipped");
+  $("answers").classList.remove("on");
+  $("flipInner").setAttribute("aria-label", "Näytä vastaus");
+
+  const kasiteEnsin = mode === "kasite";
+  $("kindFront").textContent = kasiteEnsin ? "Käsite" : "Määritelmä";
+  $("kindBack").textContent  = kasiteEnsin ? "Määritelmä" : "Käsite";
+  $("frontText").textContent = kasiteEnsin ? nykyinen[0] : nykyinen[1];
+  $("backText").textContent  = kasiteEnsin ? nykyinen[1] : nykyinen[0];
+  $("promptText").textContent = kasiteEnsin ? nykyinen[0] : nykyinen[1];
+  $("frontText").className = "text " + (kasiteEnsin ? "term" : "def");
+  $("backText").className  = "text " + (kasiteEnsin ? "def" : "term");
+
+  $("tally").textContent = valmiit + " / " + total;
+  $("fill").style.width = (total ? (valmiit / total) * 100 : 0) + "%";
+}
+
+function kaanna(){
+  if(flipped) return;
+  flipped = true;
+  $("flip").classList.add("flipped");
+  $("answers").classList.add("on");
+  $("flipInner").setAttribute("aria-label", "Vastaus näkyvissä");
+}
+
+function vastaa(osasin){
+  if(!flipped) return;
+  const kortti = queue.shift();
+  if(osasin){
+    valmiit++;
+  }else{
+    kertaukset++;
+    const kohta = Math.min(queue.length, 4 + Math.floor(Math.random() * 3));
+    queue.splice(kohta, 0, kortti);
+  }
+  seuraava();
+}
+
+function valmis(){
+  $("valmisAihe").textContent = kurssi.id + " · " + valinta.nimi;
+  $("valmisStats").textContent = total + " korttia · " +
+    (kertaukset === 0 ? "ei kertauksia" : kertaukset + " kertausta");
+  nayta("screenValmis");
+}
+
+/* --------------------------- Tapahtumat --------------------------- */
+$("flipInner").addEventListener("click", kaanna);
+$("flipInner").addEventListener("keydown", (e) => {
+  if(e.key === " " || e.key === "Enter"){ e.preventDefault(); kaanna(); }
+});
+$("btnAgain").addEventListener("click", () => vastaa(false));
+$("btnGood").addEventListener("click", () => vastaa(true));
+
+$("backToKurssi").addEventListener("click", () => nayta("screenKurssi"));
+$("backToAihe").addEventListener("click", () => nayta("screenAihe"));
+$("againDeck").addEventListener("click", () => aloita(valinta.aiheet, valinta.nimi));
+$("otherTopic").addEventListener("click", () => nayta("screenAihe"));
+$("otherCourse").addEventListener("click", () => nayta("screenKurssi"));
+
+document.addEventListener("keydown", (e) => {
+  if(!$("screenKortti").classList.contains("on")) return;
+  if(e.key === " " || e.key === "Enter"){
+    if(document.activeElement && document.activeElement.tagName === "BUTTON") return;
+    e.preventDefault();
+    kaanna();
+  }
+  if(e.key === "1") vastaa(false);
+  if(e.key === "2") vastaa(true);
+  if(e.key === "Escape") nayta("screenAihe");
+});
+
+lisaaKurssit(lueOmat());
+piirraKurssit();
+paivitaMode();
+lataaLisatiedostot().then(piirraKurssit);
+</script>
+</body>
+</html>
