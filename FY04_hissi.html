@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liike hississä – tukivoima ja vaa'an lukema</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root {
+    --ink: #3f3d39;
+    --soft: #f4f4f4;
+    --red: #d84a62;
+    --blue: #2e86a6;
+    --green: #4a8b5c;
+    --data: #7b2d8e;
+    --grid: #d9d9d9;
+  }
+
+  .sketch { fill: none; stroke: var(--ink); stroke-linecap: round; stroke-linejoin: round; }
+  .thin  { stroke-width: 1.6; }
+  .mid   { stroke-width: 2.5; }
+  .thick { stroke-width: 3.6; }
+
+  .softFill { fill: var(--soft); stroke: var(--ink); stroke-width: 2.4; }
+  .carFill  { fill: #ffffff; stroke: var(--ink); stroke-width: 2.8; }
+  .wallMark { stroke: var(--ink); stroke-width: 1.4; opacity: 0.22; }
+
+  .force { stroke: var(--blue); stroke-width: 3.4; stroke-linecap: round; }
+  .accel { stroke: var(--green); stroke-width: 3.4; stroke-linecap: round; }
+  .person { fill: var(--ink); stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+
+  .status {
+    font-size: clamp(13px, 1.55vw, 19px);
+    font-weight: 600;
+    fill: var(--ink);
+  }
+  .readout {
+    font-size: clamp(11px, 1.3vw, 16px);
+    fill: var(--ink);
+    opacity: 0.85;
+  }
+  .forceLabel {
+    font-size: clamp(12px, 1.35vw, 17px);
+    font-style: italic;
+    fill: var(--blue);
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  .accelLabel { font-size: clamp(12px, 1.35vw, 17px); font-style: italic; fill: var(--green); dominant-baseline: middle; text-anchor: middle; }
+  .axisLabel  { font-size: clamp(12px, 1.35vw, 17px); font-style: italic; fill: var(--ink); }
+  .tickLabel  { font-size: clamp(10px, 1.15vw, 14px); fill: var(--ink); opacity: 0.8; }
+  .refLabel   { font-size: clamp(10px, 1.15vw, 14px); fill: var(--red); opacity: 0.9; }
+  .gridLine   { stroke: var(--grid); stroke-width: 1; }
+  .refLine    { stroke: var(--red); stroke-width: 1.6; stroke-dasharray: 7 6; opacity: 0.65; }
+
+  .sim-controls {
+    display: grid;
+    grid-template-columns: minmax(120px, 1.2fr) minmax(120px, 1.2fr) auto auto auto auto;
+    gap: 0.6rem 0.9rem;
+    align-items: center;
+  }
+  .sim-controls label {
+    font-size: clamp(12px, 1.35vw, 16px);
+    display: grid;
+    gap: 0.2rem;
+    letter-spacing: 0.01em;
+  }
+  .sim-controls input[type="range"] { width: 100%; accent-color: var(--ink); }
+  .sim-btn[aria-pressed="true"] { background: var(--ink); color: #fff; }
+
+  /* kapealla ruudulla ohjaimet kuvan alle, jotta ne eivat peita simulaatiota */
+  @media (max-width: 760px) {
+    html, body { height: auto; }
+    body.sim-body { display: block; }
+    .sim-wrap { width: 100%; height: auto; aspect-ratio: auto; overflow: visible; }
+    .sim-wrap > svg { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+    .sim-controls {
+      position: static;
+      margin: 12px 14px 18px;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.7rem;
+    }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Hissisimulaatio: tukivoima ja vaa'an lukema">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Hissi, voimakuvio ja tukivoiman kuvaaja ajan funktiona">
+    <defs>
+      <marker id="arrowBlue"  viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e86a6"/></marker>
+      <marker id="arrowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4a8b5c"/></marker>
+      <marker id="arrowInk"   viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3f3d39"/></marker>
+      <clipPath id="shaftClip"><rect x="80" y="64" width="220" height="372" /></clipPath>
+    </defs>
+
+    <!-- status -->
+    <text id="statusText" class="status" x="40" y="36">Hissi paikallaan – N = G</text>
+    <text id="valueText"  class="readout" x="40" y="58">N = 750 N · G = 750 N · vaaka näyttää 76,5 kg</text>
+
+    <!-- hissikuilu -->
+    <rect class="softFill" x="80" y="64" width="220" height="372" rx="4" />
+    <g clip-path="url(#shaftClip)">
+      <g id="wallMarks"></g>
+    </g>
+
+    <!-- kannatinvaijeri ja hissikori -->
+    <line class="sketch mid" x1="190" y1="64" x2="190" y2="150" />
+    <rect class="carFill" x="112" y="150" width="156" height="190" rx="5" />
+    <line class="sketch thin" x1="118" y1="332" x2="262" y2="332" />
+    <line class="sketch thin" x1="118" y1="164" x2="262" y2="164" opacity="0.5" />
+
+    <!-- henkilövaaka ja henkilö -->
+    <g id="rider">
+      <rect class="softFill" x="168" y="322" width="44" height="10" rx="2" />
+      <circle class="person" cx="190" cy="250" r="9" fill="#3f3d39" />
+      <path class="person" fill="none" d="M190 260 L190 294 M174 272 L206 272 M190 294 L180 320 M190 294 L200 320" />
+    </g>
+
+    <!-- voimavektorit -->
+    <line id="gArrow" class="force" marker-end="url(#arrowBlue)" x1="168" y1="248" x2="168" y2="312" />
+    <line id="nArrow" class="force" marker-end="url(#arrowBlue)" x1="214" y1="318" x2="214" y2="254" />
+    <text id="gLabel" class="forceLabel" x="146" y="280">G</text>
+    <text id="nLabel" class="forceLabel" x="236" y="286">N</text>
+
+    <!-- kiihtyvyysnuoli -->
+    <line id="aArrow" class="accel" marker-end="url(#arrowGreen)" x1="56" y1="230" x2="56" y2="270" opacity="0" />
+    <text id="aLabel" class="accelLabel" x="34" y="250" opacity="0">a</text>
+
+    <text id="motionText" class="readout" x="190" y="458" text-anchor="middle">v = 0,0 m/s · korkeus 0,0 m</text>
+
+    <!-- kuvaaja -->
+    <g id="grid"></g>
+    <line class="sketch mid" x1="490" y1="400" x2="945" y2="400" marker-end="url(#arrowInk)" />
+    <line class="sketch mid" x1="490" y1="400" x2="490" y2="92"  marker-end="url(#arrowInk)" />
+    <g id="axisBreak" class="sketch thin"></g>
+    <text class="axisLabel" x="503" y="104">F(N)</text>
+    <text class="axisLabel" x="938" y="388" text-anchor="end">t(s)</text>
+    <g id="yTicks"></g>
+    <g id="xTicks"></g>
+    <line id="refLine" class="refLine" x1="490" y1="300" x2="918" y2="300" />
+    <text id="refText" class="refLabel" x="918" y="292" text-anchor="end">G = 750 N</text>
+    <g id="dots"></g>
+    <circle id="head" r="4.5" fill="#241028" opacity="0" />
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <label><span id="massLabel">Massa 76,5 kg</span><input id="mass" type="range" min="30" max="120" step="0.5" value="76.5"></label>
+    <label><span id="accelLabel">Kiihtyvyys 1,0 m/s²</span><input id="accel" type="range" min="0.2" max="3" step="0.1" value="1"></label>
+    <button id="upBtn"   class="sim-btn" type="button">Matka ylös</button>
+    <button id="downBtn" class="sim-btn" type="button">Matka alas</button>
+    <button id="fallBtn" class="sim-btn" type="button">Vapaa pudotus</button>
+    <button id="resetBtn" class="sim-btn" type="button">Nollaa</button>
+  </section>
+</main>
+
+<script>
+(() => {
+  const g = 9.81;
+  const SVG_NS = "http://www.w3.org/2000/svg";
+  const PLOT = { x0: 490, x1: 918, yTop: 110, yBot: 400 };
+  const PX_PER_M = 30;
+  const MARK_SPACING = 40;
+  const SAMPLE_DT = 0.1;
+  const G_ARROW_PX = 62;
+
+  const el = {
+    mass:        document.getElementById("mass"),
+    accel:       document.getElementById("accel"),
+    massLabel:   document.getElementById("massLabel"),
+    accelLabel:  document.getElementById("accelLabel"),
+    upBtn:       document.getElementById("upBtn"),
+    downBtn:     document.getElementById("downBtn"),
+    fallBtn:     document.getElementById("fallBtn"),
+    resetBtn:    document.getElementById("resetBtn"),
+    statusText:  document.getElementById("statusText"),
+    valueText:   document.getElementById("valueText"),
+    motionText:  document.getElementById("motionText"),
+    wallMarks:   document.getElementById("wallMarks"),
+    rider:       document.getElementById("rider"),
+    gArrow:      document.getElementById("gArrow"),
+    nArrow:      document.getElementById("nArrow"),
+    gLabel:      document.getElementById("gLabel"),
+    nLabel:      document.getElementById("nLabel"),
+    aArrow:      document.getElementById("aArrow"),
+    aLabel:      document.getElementById("aLabel"),
+    grid:        document.getElementById("grid"),
+    axisBreak:   document.getElementById("axisBreak"),
+    yTicks:      document.getElementById("yTicks"),
+    xTicks:      document.getElementById("xTicks"),
+    refLine:     document.getElementById("refLine"),
+    refText:     document.getElementById("refText"),
+    dots:        document.getElementById("dots"),
+    head:        document.getElementById("head"),
+  };
+
+  let mass = 76.5;
+  let accelMag = 1.0;
+  let trip = null;          // ajossa oleva vaiheluettelo
+  let running = false;
+  let simT = 0, vel = 0, pos = 0, nextSample = 0;
+  let lastFrame = 0;
+  let axis = { yMin: 700, yMax: 800, yStep: 25, tMax: 16.5, tStep: 2 };
+  let current = { a: 0, N: mass * g, label: "Hissi paikallaan – N = G" };
+
+  function fmt(value, decimals = 1) {
+    return value.toFixed(decimals).replace(".", ",");
+  }
+
+  function make(tag, attrs) {
+    const node = document.createElementNS(SVG_NS, tag);
+    for (const key in attrs) node.setAttribute(key, attrs[key]);
+    return node;
+  }
+
+  function clear(node) {
+    while (node.firstChild) node.removeChild(node.firstChild);
+  }
+
+  /* ---------- matkan vaiheet ---------- */
+
+  function buildTrip(kind) {
+    if (kind === "fall") {
+      return [
+        { d: 2, a: 0,  label: "Hissi paikallaan – N = G" },
+        { d: 5, a: -g, label: "Vapaa pudotus: a = g alaspäin – N = 0 (näennäinen painottomuus)" },
+      ];
+    }
+    const s = kind === "up" ? 1 : -1;
+    return [
+      { d: 2.5, a: 0,           label: "Hissi paikallaan – N = G" },
+      { d: 3,   a: s * accelMag, label: s > 0 ? "Lähtö ylös: a ylöspäin – N > G (tuntuu raskaammalta)"
+                                              : "Lähtö alas: a alaspäin – N < G (tuntuu kevyemmältä)" },
+      { d: 5,   a: 0,           label: "Tasainen nopeus – N = G" },
+      { d: 3,   a: -s * accelMag, label: s > 0 ? "Jarrutus: a alaspäin – N < G (tuntuu kevyemmältä)"
+                                                : "Jarrutus: a ylöspäin – N > G (tuntuu raskaammalta)" },
+      { d: 2.5, a: 0,           label: "Hissi pysähtynyt – N = G" },
+    ];
+  }
+
+  function segmentAt(plan, t) {
+    let start = 0;
+    for (const seg of plan) {
+      if (t < start + seg.d) return seg;
+      start += seg.d;
+    }
+    return plan[plan.length - 1];
+  }
+
+  function tripDuration(plan) {
+    return plan.reduce((sum, seg) => sum + seg.d, 0);
+  }
+
+  /* ---------- akseliston mitoitus ---------- */
+
+  function niceStep(range) {
+    const steps = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
+    const target = range / 5;
+    return steps.find(s => s >= target) || 1000;
+  }
+
+  function setupAxis(plan) {
+    const forces = plan.map(seg => mass * (g + seg.a));
+    let lo = Math.min(...forces);
+    let hi = Math.max(...forces);
+    let span = hi - lo;
+    if (span < 1) span = mass * g * 0.08;
+    lo -= 0.3 * span;
+    hi += 0.3 * span;
+    if (lo < 0) lo = 0;
+
+    axis.yStep = niceStep(hi - lo);
+    axis.yMin = lo;
+    axis.yMax = hi;
+    axis.tMax = tripDuration(plan);
+    axis.tStep = axis.tMax > 12 ? 2 : 1;
+    drawAxis();
+  }
+
+  function xOf(t) {
+    return PLOT.x0 + (t / axis.tMax) * (PLOT.x1 - PLOT.x0);
+  }
+
+  function yOf(force) {
+    const frac = (force - axis.yMin) / (axis.yMax - axis.yMin);
+    return PLOT.yBot - frac * (PLOT.yBot - PLOT.yTop);
+  }
+
+  function drawAxis() {
+    clear(el.grid);
+    clear(el.yTicks);
+    clear(el.xTicks);
+    clear(el.axisBreak);
+
+    for (let f = Math.ceil(axis.yMin / axis.yStep) * axis.yStep; f <= axis.yMax; f += axis.yStep) {
+      const y = yOf(f);
+      if (y > PLOT.yBot || y < PLOT.yTop) continue;
+      el.grid.appendChild(make("line", { class: "gridLine", x1: PLOT.x0, y1: y, x2: PLOT.x1, y2: y }));
+      const label = make("text", { class: "tickLabel", x: PLOT.x0 - 10, y: y + 5, "text-anchor": "end" });
+      label.textContent = Math.round(f);
+      el.yTicks.appendChild(label);
+    }
+
+    for (let t = axis.tStep; t <= axis.tMax + 1e-6; t += axis.tStep) {
+      const x = xOf(t);
+      el.grid.appendChild(make("line", { class: "gridLine", x1: x, y1: PLOT.yTop, x2: x, y2: PLOT.yBot }));
+      el.xTicks.appendChild(make("line", { class: "sketch thin", x1: x, y1: PLOT.yBot, x2: x, y2: PLOT.yBot + 5 }));
+      const label = make("text", { class: "tickLabel", x: x, y: PLOT.yBot + 20, "text-anchor": "middle" });
+      label.textContent = Math.round(t);
+      el.xTicks.appendChild(label);
+    }
+
+    // katkoviivamerkki, jos akseli ei ala nollasta
+    if (axis.yMin > 0.5) {
+      el.axisBreak.appendChild(make("path", { d: "M482 396 L498 384" }));
+      el.axisBreak.appendChild(make("path", { d: "M482 390 L498 378" }));
+    }
+
+    const weight = mass * g;
+    const yWeight = yOf(weight);
+    const inside = yWeight >= PLOT.yTop && yWeight <= PLOT.yBot;
+    el.refLine.setAttribute("y1", yWeight);
+    el.refLine.setAttribute("y2", yWeight);
+    el.refLine.setAttribute("opacity", inside ? 0.65 : 0);
+    el.refText.setAttribute("y", yWeight - 8);
+    el.refText.setAttribute("opacity", inside ? 0.9 : 0);
+    el.refText.textContent = "G = " + fmt(weight, 0) + " N";
+  }
+
+  /* ---------- mittauspisteet ---------- */
+
+  function addSample(t, force) {
+    const noise = (Math.random() + Math.random() + Math.random() - 1.5) * (mass * g * 0.0022);
+    const x = xOf(t);
+    const y = yOf(force + noise);
+    if (y < PLOT.yTop - 4 || y > PLOT.yBot + 4) return;
+    el.dots.appendChild(make("circle", { cx: x, cy: y, r: 2.4, fill: "#7b2d8e", opacity: 0.9 }));
+    el.head.setAttribute("cx", x);
+    el.head.setAttribute("cy", y);
+    el.head.setAttribute("opacity", 1);
+  }
+
+  /* ---------- piirto ---------- */
+
+  function buildWallMarks() {
+    clear(el.wallMarks);
+    for (let i = -1; i < 12; i++) {
+      const y = 64 + i * MARK_SPACING;
+      el.wallMarks.appendChild(make("line", { class: "wallMark", x1: 84, y1: y, x2: 108, y2: y }));
+      el.wallMarks.appendChild(make("line", { class: "wallMark", x1: 272, y1: y, x2: 296, y2: y }));
+    }
+  }
+
+  function draw() {
+    const weight = mass * g;
+    const force = current.N;
+    const scale = G_ARROW_PX / weight;
+
+    const gLen = G_ARROW_PX;
+    el.gArrow.setAttribute("y1", 248);
+    el.gArrow.setAttribute("y2", 248 + gLen);
+    el.gLabel.setAttribute("y", 248 + gLen / 2);
+
+    const nLen = Math.max(0, force * scale);
+    el.nArrow.setAttribute("y1", 318);
+    el.nArrow.setAttribute("y2", 318 - nLen);
+    el.nArrow.setAttribute("opacity", nLen < 2 ? 0 : 1);
+    el.nLabel.setAttribute("y", 318 - nLen / 2);
+    el.nLabel.setAttribute("opacity", nLen < 12 ? 0 : 1);
+
+    const a = current.a;
+    if (Math.abs(a) < 1e-6) {
+      el.aArrow.setAttribute("opacity", 0);
+      el.aLabel.setAttribute("opacity", 0);
+    } else {
+      const len = Math.min(60, 18 + Math.abs(a) * 12);
+      // SVG:n y kasvaa alaspäin, joten ylöspäin osoittava kiihtyvyys piirtyy pienenevään y:hyn
+      const y1 = 250 + Math.sign(a) * len / 2;
+      const y2 = 250 - Math.sign(a) * len / 2;
+      el.aArrow.setAttribute("y1", y1);
+      el.aArrow.setAttribute("y2", y2);
+      el.aArrow.setAttribute("opacity", 1);
+      el.aLabel.setAttribute("y", 250);
+      el.aLabel.setAttribute("opacity", 1);
+    }
+
+    // vapaassa pudotuksessa henkilö irtoaa vaa'alta
+    const floating = force < weight * 0.05;
+    el.rider.setAttribute("transform", floating ? "translate(0,-9)" : "translate(0,0)");
+
+    const offset = ((pos * PX_PER_M) % MARK_SPACING + MARK_SPACING) % MARK_SPACING;
+    el.wallMarks.setAttribute("transform", "translate(0," + offset.toFixed(2) + ")");
+
+    el.statusText.textContent = current.label;
+    el.valueText.textContent =
+      "N = " + fmt(force, 0) + " N · G = " + fmt(weight, 0) + " N · vaaka näyttää " + fmt(force / g, 1) + " kg";
+    el.motionText.textContent = "v = " + fmt(vel, 1) + " m/s · korkeus " + fmt(pos, 1) + " m";
+  }
+
+  /* ---------- ajologiikka ---------- */
+
+  function frame(now) {
+    if (!running) return;
+    const dt = Math.min(0.05, (now - lastFrame) / 1000);
+    lastFrame = now;
+
+    const seg = segmentAt(trip, simT);
+    current.a = seg.a;
+    current.label = seg.label;
+    current.N = Math.max(0, mass * (g + seg.a));
+
+    simT += dt;
+    vel += seg.a * dt;
+    pos += vel * dt;
+
+    while (nextSample <= simT && nextSample <= axis.tMax) {
+      addSample(nextSample, Math.max(0, mass * (g + segmentAt(trip, nextSample).a)));
+      nextSample += SAMPLE_DT;
+    }
+
+    if (simT >= axis.tMax) {
+      simT = axis.tMax;
+      running = false;
+      const last = trip[trip.length - 1];
+      current.a = last.a;
+      current.N = Math.max(0, mass * (g + last.a));
+      current.label = last.label;
+      setButtons(null);
+    }
+
+    draw();
+    if (running) requestAnimationFrame(frame);
+  }
+
+  function setButtons(active) {
+    [["up", el.upBtn], ["down", el.downBtn], ["fall", el.fallBtn]].forEach(([kind, btn]) => {
+      btn.setAttribute("aria-pressed", kind === active ? "true" : "false");
+    });
+  }
+
+  function start(kind) {
+    trip = buildTrip(kind);
+    setupAxis(trip);
+    clear(el.dots);
+    el.head.setAttribute("opacity", 0);
+    simT = 0; vel = 0; pos = 0; nextSample = 0;
+    current = { a: 0, N: mass * g, label: trip[0].label };
+    running = true;
+    lastFrame = performance.now();
+    setButtons(kind);
+    draw();
+    requestAnimationFrame(frame);
+  }
+
+  function reset() {
+    running = false;
+    trip = null;
+    simT = 0; vel = 0; pos = 0; nextSample = 0;
+    current = { a: 0, N: mass * g, label: "Hissi paikallaan – N = G" };
+    clear(el.dots);
+    el.head.setAttribute("opacity", 0);
+    setButtons(null);
+    setupAxis(buildTrip("up"));
+    draw();
+  }
+
+  function syncLabels() {
+    el.massLabel.textContent = "Massa " + fmt(mass, 1) + " kg";
+    el.accelLabel.textContent = "Kiihtyvyys " + fmt(accelMag, 1) + " m/s²";
+  }
+
+  el.mass.addEventListener("input", () => {
+    mass = parseFloat(el.mass.value);
+    syncLabels();
+    reset();
+  });
+
+  el.accel.addEventListener("input", () => {
+    accelMag = parseFloat(el.accel.value);
+    syncLabels();
+    reset();
+  });
+
+  el.upBtn.addEventListener("click", () => start("up"));
+  el.downBtn.addEventListener("click", () => start("down"));
+  el.fallBtn.addEventListener("click", () => start("fall"));
+  el.resetBtn.addEventListener("click", reset);
+
+  buildWallMarks();
+  syncLabels();
+  reset();
+})();
+</script>
+</body>
+</html>
