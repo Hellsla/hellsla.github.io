@@ -16,33 +16,100 @@
 ----------------------------------------------------------------*/
 window.KORTIT = [
 { id:"FY1", nimi:"Fysiikka luonnontieteenä", aiheet:[
-  { nimi:"Mittaaminen", kortit:[
-    ["Suure","Ominaisuus, joka voidaan mitata ja ilmoittaa lukuarvon ja yksikön avulla."],
-    ["SI-järjestelmä","Kansainvälinen mittayksikköjärjestelmä, joka perustuu seitsemään perussuureeseen."],
-    ["Perussuure","Suure, josta muut suureet johdetaan, esimerkiksi pituus, massa ja aika."],
-    ["Merkitsevät numerot","Mittaustuloksen numerot, jotka kertovat tuloksen tarkkuuden."],
-    ["Mittausepävarmuus","Arvio siitä, kuinka paljon mittaustulos voi poiketa todellisesta arvosta."],
-    ["Systemaattinen virhe","Virhe, joka siirtää kaikkia mittaustuloksia samaan suuntaan."],
-    ["Satunnaisvirhe","Virhe, joka vaihtelee sattumanvaraisesti mittauksesta toiseen."],
-    ["Kymmenpotenssimuoto","Luvun esitys muodossa a · 10ⁿ, jossa 1 ≤ a < 10."],
-    ["Tarkkuus ja täsmällisyys","Tarkkuus kertoo, osuuko tulos oikeaan; täsmällisyys, toistuvatko mittaukset samanlaisina."]
+  { nimi:"Fysiikka ja tutkimusmenetelmä", kortit:[
+    ["Fysiikka","Kokeellinen luonnontiede, joka tutkii luonnon perusilmiöitä, rakenteita ja niitä kuvaavia lainalaisuuksia."],
+    ["Empiirinen tiede","Tieto perustuu havaintoihin, mittauksiin ja kokeisiin."],
+    ["Luonnontieteellinen menetelmä","Havaintoja, oletuksia, kokeita ja malleja yhdistävä tapa rakentaa luotettavaa tietoa."],
+    ["Hypoteesi","Perusteltu oletus, jota voidaan testata kokeellisesti."],
+    ["Fysiikan teoria","Laaja selityskokonaisuus, joka yhdistää havaintoja ja mahdollistaa uusien ilmiöiden ennustamisen."],
+    ["Malli","Yksinkertaistettu kuvaus todellisuudesta, jolla selitetään ilmiöitä tai tehdään ennusteita."],
+    ["Pätevyysalue","Olosuhteet ja rajat, joissa mallia voidaan käyttää luotettavasti."]
   ]},
-  { nimi:"Luonnontieteen menetelmä", kortit:[
-    ["Hypoteesi","Perusteltu ja testattavissa oleva oletus tutkittavasta ilmiöstä."],
-    ["Malli","Yksinkertaistettu kuvaus ilmiöstä, joka selittää havaintoja ja ennustaa uusia."],
-    ["Teoria","Laajasti testattu ja vahvistettu selitys, joka kokoaa yhteen joukon ilmiöitä."],
-    ["Kontrolloitu koe","Koe, jossa muutetaan vain yhtä muuttujaa kerrallaan ja muut pidetään vakioina."],
-    ["Riippumaton muuttuja","Muuttuja, jonka arvoa kokeessa muutetaan."],
-    ["Vertaisarviointi","Menettely, jossa muut alan tutkijat arvioivat tutkimuksen ennen julkaisua."],
-    ["Mallin pätevyysalue","Olosuhteet, joissa malli antaa riittävän tarkkoja ennusteita."]
+  { nimi:"Mittaaminen ja virheet", kortit:[
+    ["Suure","Mitattava ominaisuus, kuten pituus, massa tai aika."],
+    ["Yksikkö","Sovittu vertailuarvo, jonka avulla mitattu ominaisuus ilmaistaan."],
+    ["Mittaustulos","Lukuarvon ja mittayksikön muodostama suureen arvo."],
+    ["Mittausvirhe","Mitatun arvon poikkeama suureen todellisesta arvosta."],
+    ["Satunnainen virhe","Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittaus ja laskemalla keskiarvo."],
+    ["Systemaattinen virhe","Samaan suuntaan vaikuttava poikkeama, jonka syynä voi olla viallinen laite tai menetelmä."],
+    ["Karkea virhe","Selvä poikkeama, joka syntyy esimerkiksi lukuvirheestä, väärästä kirjauksesta tai laitteen virheellisestä käytöstä."],
+    ["Merkitsevät numerot","Luvun numerot, jotka kuvaavat mittaustuloksen käytettävissä olevaa tarkkuutta."],
+    ["Mittalaitteen tarkkuus","Kertoo, kuinka pieniä muutoksia mittavälineellä voidaan luotettavasti havaita."]
   ]},
-  { nimi:"Fysiikan peruskäsitteet", kortit:[
-    ["Nopeus","Paikan muutos aikayksikköä kohti, v = Δs / Δt."],
-    ["Tiheys","Massa tilavuutta kohti, ρ = m / V."],
-    ["Voima","Vuorovaikutuksen suure, joka muuttaa kappaleen liiketilaa tai muotoa."],
-    ["Energia","Suure, joka kuvaa kykyä tehdä työtä; se säilyy suljetussa systeemissä."],
-    ["Teho","Siirtynyt energia tai tehty työ aikayksikköä kohti, P = W / t."],
-    ["Vuorovaikutus","Kahden kappaleen välinen tapahtuma, joka muuttaa niiden liiketilaa tai rakennetta."]
+  { nimi:"SI-järjestelmä ja suuruusluokat", kortit:[
+    ["SI-järjestelmä","Kansainvälisesti sovittu mittayksikkökokonaisuus, jonka seitsemästä perusyksiköstä muut yksiköt muodostetaan."],
+    ["Perussuure","Yksi seitsemästä perustaksi valitusta mitattavasta ominaisuudesta, kuten pituus, massa tai aika."],
+    ["Perusyksikkö","Perustaksi valitulle suureelle sovittu yksikkö, kuten metri, kilogramma tai sekunti."],
+    ["Johdannaisyksikkö","Perusyksiköistä muodostettu yhdistelmä, kuten nopeuden m/s tai voiman N."],
+    ["Kerrannaisyksikkö","Etuliitteen avulla muodostettu käytännöllinen yksikkö hyvin suurille tai pienille arvoille."],
+    ["Etuliite","Yksikön edessä oleva merkintä kertoo kymmenpotenssikertoimen, kuten kilo 10³ tai milli 10⁻³."],
+    ["Kymmenpotenssi","Muoto 10ⁿ helpottaa erittäin suurten ja pienten lukujen kirjoittamista ja vertailua."],
+    ["Suuruusluokka","Kohteen kokoa kuvataan sopivan kymmenen potenssin avulla."]
+  ]},
+  { nimi:"Maailmankaikkeuden perusrakenteet", kortit:[
+    ["Perushiukkanen","Aineen pienimpiä tunnettuja rakenneosia, joihin kuuluvat kvarkit ja leptonit."],
+    ["Kvarkki","Protonien ja neutronien rakenneosa, joita näkyvässä aineessa ovat erityisesti ylös- ja alas-kvarkit."],
+    ["Leptoni","Perushiukkasten ryhmä, johon esimerkiksi elektroni kuuluu."],
+    ["Protoni","Positiivisesti varautunut atomin ytimen rakenneosa, joka koostuu kvarkeista."],
+    ["Neutroni","Sähköisesti neutraali atomin ytimen rakenneosa, joka koostuu kvarkeista."],
+    ["Atomin ydin","Tiivis keskiosa, jossa protonit ja neutronit sijaitsevat."],
+    ["Atomi","Ytimen ja sitä ympäröivien elektronien muodostama aineen rakenneosa."],
+    ["Molekyyli","Kahden tai useamman atomin muodostama sitoutunut kokonaisuus."],
+    ["Aurinkokunta","Tähti ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."],
+    ["Galaksi","Valtava tähtien, kaasun, pölyn ja muun aineen gravitaation sitoma järjestelmä."],
+    ["Galaksijoukko","Useiden galaksien gravitaation sitoma suuri rakenne."]
+  ]},
+  { nimi:"Avaruus ja maailmankaikkeuden kehitys", kortit:[
+    ["Alkuräjähdys","Malli, jonka mukaan aika ja avaruus kehittyivät hyvin kuumasta ja tiheästä alkutilasta."],
+    ["Maailmankaikkeuden laajeneminen","Galaksien keskimääräiset etäisyydet kasvavat ajan kuluessa."],
+    ["Punasiirtymä","Kaukaisen kohteen spektriviivat siirtyvät pidemmille aallonpituuksille, mikä kertoo sen etääntymisestä."],
+    ["Eksoplaneetta","Aurinkokunnan ulkopuolella toista tähteä kiertävä planeetta."],
+    ["Punainen jättiläinen","Kehitysvaihe, jossa tähti laajenee vedyn vähetessä ja raskaampien ytimien fuusioiden alkaessa."],
+    ["Valkoinen kääpiö","Keskikokoisen tähden jäljelle jäänyt tiivis ja kuuma ydin, joka vähitellen jäähtyy."],
+    ["Neutronitähti","Raskaan tähden luhistumisessa syntyvä erittäin tiheä jäännös, joka koostuu pääosin neutroneista."],
+    ["Musta aukko","Erittäin tiheä massakeskittymä, jonka gravitaatio on niin voimakas, ettei valokaan pääse pois."]
+  ]},
+  { nimi:"Mallintaminen ja kuvaajat", kortit:[
+    ["Fysikaalinen malli","Mittauksiin perustuva yksinkertaistus, joka kuvaa luonnon ilmiötä tai rakennetta."],
+    ["Graafinen malli","Suureiden välinen riippuvuus esitetään koordinaatiston kuvaajana."],
+    ["Matemaattinen malli","Suureiden välinen riippuvuus esitetään yhtälön avulla."],
+    ["Kvantitatiivinen malli","Lukuarvoihin perustuva kuvaus, jonka avulla voidaan tehdä numeerisia ennusteita."],
+    ["Lineaarinen malli","Tasaista muutosta kuvaava suora, jonka kulmakerroin pysyy vakiona."],
+    ["Suoran sovite","Mittauspisteisiin asetettu suora, joka kuvaa aineiston yleistä riippuvuutta."],
+    ["Kulmakerroin","Pystyakselin suureen muutos jaetaan vaaka-akselin suureen muutoksella."],
+    ["Fysikaalinen kulmakerroin","Kuvaajan kaltevuus tulkitaan suureeksi yksiköineen ja ilmiöön liittyvine merkityksineen."],
+    ["Interpolointi","Mallia käytetään arvon arvioimiseen mitattujen pisteiden väliltä."],
+    ["Ekstrapolointi","Mallia jatketaan mittausalueen ulkopuolelle, jolloin ennuste on yleensä epävarmempi."]
+  ]},
+  { nimi:"Tiheys ja liikeilmiöt", kortit:[
+    ["Tiheys","Kertoo, kuinka suuri massa aineella on tilavuusyksikköä kohti; ρ = m/V."],
+    ["Suoraan verrannollisuus","Toisen suureen kaksinkertaistuessa myös toinen kaksinkertaistuu, ja kuvaaja kulkee origon kautta."],
+    ["Paikka","Kertoo kappaleen sijainnin valitussa koordinaatistossa tiettynä hetkenä."],
+    ["Tasainen liike","Paikka muuttuu yhtä paljon yhtä pitkissä aikaväleissä."],
+    ["Nopeus","Kertoo paikan muutoksen aikayksikössä ja liikkeen suunnan."],
+    ["Keskinopeus","Koko siirtymä jaetaan siihen kuluneella ajalla."],
+    ["Kiihtyvyys","Kertoo nopeuden muutoksen aikayksikössä; a = Δv/Δt."],
+    ["Vapaa putoaminen","Liike, jossa ilmanvastus sivuutetaan ja kappaleeseen vaikuttaa vain painovoima."],
+    ["Putoamiskiihtyvyys","Maan lähellä nopeus muuttuu noin 9,81 m/s joka sekunti; g ≈ 9,81 m/s²."]
+  ]},
+  { nimi:"Kokeellinen tutkimus", kortit:[
+    ["Tutkimuskysymys","Täsmällinen kysymys, johon tutkimuksella pyritään vastaamaan."],
+    ["Koesuunnitelma","Etukäteen laadittu kuvaus mittauksista, välineistä ja tutkimuksen toteutuksesta."],
+    ["Mittaussarja","Samasta ilmiöstä järjestelmällisesti kerätty joukko mittaustuloksia."],
+    ["Toistettavuus","Hyvin kuvattu koe voidaan tehdä uudelleen ja saada samansuuntaisia tuloksia."],
+    ["Mittausaineisto","Kokeessa kerätyt arvot, havainnot, kuvat tai videot, joita analysoidaan."],
+    ["Tulosten analyysi","Aineistoa käsitellään laskuilla ja kuvaajilla riippuvuuksien löytämiseksi."],
+    ["Johtopäätös","Tuloksista tehty perusteltu vastaus tutkimuskysymykseen."],
+    ["Virhelähde","Tekijä, joka voi aiheuttaa mittaustulokseen poikkeamaa tai epävarmuutta."],
+    ["Luotettavuus","Arvio siitä, kuinka hyvin menetelmä ja tulokset tukevat tehtyä päätelmää."],
+    ["Tutkimusraportti","Kirjallinen kuvaus tutkimuskysymyksestä, menetelmästä, tuloksista, johtopäätöksistä ja arvioinnista."]
+  ]},
+  { nimi:"Tiedonhankinta", kortit:[
+    ["Tiedonhankinta","Luotettavan tiedon etsimistä esimerkiksi tutkimuksista, oppikirjoista, tietokannoista ja asiantuntijalähteistä."],
+    ["Tiedontuottaja","Tahon tausta ja tarkoitus vaikuttavat siihen, miten sen julkaisemaa tietoa kannattaa arvioida."],
+    ["Lähdekritiikki","Lähteen luotettavuutta arvioidaan tekijän, perustelujen, ajantasaisuuden ja muiden lähteiden avulla."],
+    ["Aineisto","Tutkittava teksti, kuva, taulukko, kuvaaja tai muu tietolähde, josta tehdään päätelmiä."],
+    ["Objektiivisuus","Tavoite kuvata havaintoja riippumatta tutkijan henkilökohtaisista mielipiteistä."]
   ]}
 ]},
 
