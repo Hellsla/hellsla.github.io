@@ -24,6 +24,8 @@
     --green:#5f7a52;
     --fire-orange:#e8863a;
     --stone-light:#cdc3ad;
+    --vastaus:#e9eef7;
+    --vastaus-reuna:rgba(1,33,105,.14);
     --radius:18px;
     --shadow: 0 6px 18px rgba(58,54,47,.18);
     --shadow-lift: 0 12px 28px rgba(58,54,47,.22);
@@ -72,20 +74,16 @@
     gap:12px;
     padding:4px 2px 0;
   }
-  .brand-mark{ width:42px; height:26px; flex:0 0 auto; }
+  .brand-mark{ width:46px; height:29px; flex:0 0 auto; }
   .brand-title{
-    font-family:"Zilla Slab", Georgia, serif;
-    font-size:1.05rem;
-    font-weight:700;
-    letter-spacing:.01em;
-    margin:0;
-  }
-  .brand-sub{
-    font-size:.72rem;
+    font-family:"Zilla Slab", Georgia, "Times New Roman", serif;
+    font-size:clamp(1.3rem, 5.6vw, 1.7rem);
+    font-weight:600;
     text-transform:uppercase;
-    letter-spacing:.09em;
-    color:var(--ink-soft);
-    font-weight:700;
+    letter-spacing:.055em;
+    line-height:1;
+    color:var(--brick-dark);
+    margin:0;
   }
 
   /* ---------- Screens ---------- */
@@ -389,15 +387,16 @@
   }
   .face.back{
     transform:rotateY(180deg);
-    background:linear-gradient(160deg, var(--brick) 0%, var(--brick-dark) 100%);
-    color:#fff;
+    background:var(--vastaus);
+    color:var(--brick-dark);
+    box-shadow:var(--shadow-lift), inset 0 0 0 2px var(--vastaus-reuna);
   }
-  .face.back .kind{ color:var(--clay); opacity:.9; }
-  .face.back .term{ color:#fff; }
+  .face.back .kind{ color:var(--brick); opacity:.75; }
+  .face.back .term{ color:var(--brick-dark); }
   .prompt{
     font-size:.82rem;
     font-weight:700;
-    color:rgba(255,255,255,.62);
+    color:rgba(1,33,105,.55);
     margin:0;
     max-width:34ch;
     line-height:1.35;
@@ -455,14 +454,6 @@
   .good{ background:var(--brick); color:#fff; }
   .good:hover{ filter:brightness(1.15); }
 
-  .keys{
-    text-align:center;
-    font-size:.72rem;
-    color:var(--ink-soft);
-    opacity:.6;
-    font-weight:600;
-  }
-
   /* ---------- Done ---------- */
   .done{
     background:var(--panel);
@@ -504,17 +495,11 @@
     <svg class="brand-mark" viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukion tunnus">
       <polygon fill="#012169" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766.88 364.38 781.13 381.37 788.72 402.21 788.72 424.39 976.23 424.39 976.23 402.2 788.76 402.2"/>
     </svg>
-    <div>
-      <div class="brand-sub">Fysiikka</div>
-      <h1 class="brand-title">Käsitetakomo</h1>
-    </div>
+    <h1 class="brand-title">Käsitetakomo</h1>
   </header>
 
   <!-- 1. Kurssi -->
-  <section class="screen on" id="screenKurssi" aria-labelledby="hKurssi">
-    <div class="step">
-      <h2 id="hKurssi">Valitse kurssi</h2>
-    </div>
+  <section class="screen on" id="screenKurssi" aria-label="Valitse kurssi">
     <div class="grid" id="kurssiGrid"></div>
     <div class="toolbar">
       <button type="button" id="tuoBtn">Tuo omia kortteja</button>
@@ -525,10 +510,10 @@
   </section>
 
   <!-- 2. Aihe -->
-  <section class="screen" id="screenAihe" aria-labelledby="hAihe">
+  <section class="screen" id="screenAihe" aria-label="Valitse aihe">
     <button class="back" id="backToKurssi" type="button">← Kurssit</button>
     <div class="step">
-      <h2 id="hAihe">Valitse aihe</h2>
+      <h2 id="hAihe"></h2>
       <span class="hint" id="kurssiHint"></span>
     </div>
     <div class="list" id="aiheList"></div>
@@ -572,7 +557,6 @@
       <button type="button" class="again" id="btnAgain">Kertaa uudestaan</button>
       <button type="button" class="good" id="btnGood">Osasin</button>
     </div>
-    <p class="keys">Väli = käännä · 1 = kertaa · 2 = osasin</p>
   </section>
 
   <!-- 4. Valmis -->
@@ -789,7 +773,8 @@ function piirraKurssit(){
 
 function valitseKurssi(k){
   kurssi = k;
-  $("kurssiHint").textContent = k.nimi ? k.id + " · " + k.nimi : k.id;
+  $("hAihe").textContent = k.id;
+  $("kurssiHint").textContent = k.nimi;
   const l = $("aiheList");
   l.innerHTML = "";
 
