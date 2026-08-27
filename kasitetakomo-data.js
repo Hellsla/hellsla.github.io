@@ -396,7 +396,7 @@ window.KORTIT = [
     ["Voimakomponentti","Voiman osa valitussa koordinaatiston suunnassa."],
     ["Komponenttimuoto","Liikeyhtälö kirjoitetaan erikseen esimerkiksi vaaka- ja pystysuunnassa."],
     ["Tasapainoehto","Etenemisliikkeen tasapainossa kappaleeseen vaikuttavien voimien vektorisumma on nolla; ΣF = 0."],
-    ["Kalteva taso","Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi ja jakamalla voimat komponentteihin."]
+    ["Kalteva taso","Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi ja jakamalla voimat komponentteihin.","kuvat/fy4-kalteva-taso.svg"]
   ]},
   { nimi:"Kitka, vastusvoimat ja noste", kortit:[
     ["Kitka","Kosketuksessa olevien pintojen välinen voima vastustaa niiden suhteellista liikettä tai liikkeelle lähtöä."],

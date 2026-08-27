@@ -112,3 +112,78 @@ kuvatulla tavalla.
 - Yksi kortti = yksi asia. Jos määritelmässä on "ja", harkitse kahta korttia.
 - Määritelmä ei saa alkaa samalla sanalla kuin käsite ("Lämpötila on lämpötila…").
 - Pituus enintään noin 20 sanaa, muuten kortti ei toimi kertauksessa.
+
+---
+
+## Kuvat kortteihin
+
+Kuva on kortin **valinnainen kolmas kenttä**. Se näkyy vastauspuolella,
+määritelmän yläpuolella. Kortti ilman kuvaa toimii kuten ennenkin, ja jos
+kuvatiedosto puuttuu, kortti näyttää pelkän tekstin — mikään ei hajoa.
+
+Sisältötiedostossa:
+
+```js
+["Kalteva taso","Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi ja jakamalla voimat komponentteihin.","kuvat/fy4-kalteva-taso.svg"]
+```
+
+Tekstitiedostossa kolmas kenttä samalla erottimella:
+
+```
+Kalteva taso :: Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi. :: kuvat/fy4-kalteva-taso.svg
+```
+
+Kuvat tallennetaan kansioon `kuvat/`. Tiedostonimi ilman ääkkösiä ja
+välilyöntejä, kurssitunnus alkuun: `fy4-kalteva-taso.svg`, `fy3-faasikaavio.svg`.
+
+### Kaksi kuvatyyppiä – valitse tilanteen mukaan
+
+**1. Kaaviot ja piirrokset → pyydä ChatGPT:ltä SVG-koodia, älä kuvaa.**
+Tämä on tärkein neuvo. Kuvageneraattori kirjoittaa kaavioihin sekaisia
+kirjaimia, keksii nuolia ja vääriä merkintöjä — juuri se osa, jonka pitäisi olla
+täsmällinen, menee pieleen. SVG tulee tekstinä, jolloin näet mitä siinä lukee,
+voit korjata yhden luvun editorissa, tiedosto on muutaman kilotavun kokoinen ja
+pysyy terävänä joka näytöllä. Näin on tehty `kuvat/fy4-kalteva-taso.svg`.
+
+**2. Havainnollistavat kuvat → kuvageneraattori käy.**
+Tuulivoimala, revontulet, höyryturbiini, hehkulanka. Näissä ei ole merkintöjä,
+joiden pitäisi olla oikein. Vaadi silti: **ei tekstiä kuvaan**.
+
+### Kehote SVG-kaaviolle
+
+> Piirrä SVG-kuva, joka havainnollistaa käsitteen **[kalteva taso]** lukion
+> fysiikan kurssilla **[FY4]**. Palauta pelkkä SVG-koodi, ei selitystä.
+>
+> Vaatimukset:
+> - `viewBox="0 0 400 250"`, ei kiinteää width/height-arvoa, tausta läpinäkyvä.
+> - Värit vain tästä paletista: viivat ja tekstit `#012169`, korostus `#e8863a`,
+>   toinen korostus `#5f7a52`, kappaleet `#fca5c7`, harmaa `#8f887a`.
+> - Viivanpaksuus 3, `stroke-linecap="round"`, nuolenkärjet `<marker>`-elementillä.
+> - Tekstiä vain suureiden tunnukset (G, N, F, α) — ei selittäviä lauseita,
+>   `font-family="Karla, system-ui, sans-serif"`.
+> - Ei gradientteja, ei varjoja, ei kehystä.
+> - Fysiikan on oltava oikein: nuolten suunnat, kulmat ja mittasuhteet.
+
+Tallenna vastaus tiedostoksi `kuvat/[kurssi]-[käsite].svg` ja **katso se läpi** —
+avaa selaimessa ja tarkista nuolten suunnat.
+
+### Kehote havainnollistavalle kuvalle
+
+> Luo kuva aiheesta **[tuulivoimala talvisessa maisemassa]**. Litteä
+> vektorimainen kuvitustyyli, rauhalliset murretut sävyt, tausta vaalea
+> beige (#efe8da), pääväri tummansininen (#012169), korostus oranssi (#e8863a).
+> Ei tekstiä, ei kirjaimia, ei numeroita kuvassa. Kuvasuhde 4:3. Yksinkertainen
+> ja selkeä, ei yksityiskohtien tulvaa.
+
+Tallenna **WebP**-muodossa noin 1200 px leveänä; pidä tiedosto alle 100 kt,
+jotta kortit latautuvat nopeasti myös puhelimella.
+
+### Kannattaa muistaa
+
+- **Älä tee kuvaa joka korttiin.** 30–50 hyvin valittua kuvaa auttaa enemmän
+  kuin 478 keskinkertaista. Aloita niistä, joissa kuva kertoo sen mitä teksti ei:
+  faasikaavio, kalteva taso, aaltoliike, energiatasot, ydinreaktiot.
+- **Kuva ei saa paljastaa vastausta etupuolella** — siksi se näkyy vain
+  vastauspuolella.
+- Kuvan `alt`-teksti on automaattisesti kortin käsite, joten ruudunlukija
+  kertoo mistä kuva on.

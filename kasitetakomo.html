@@ -391,6 +391,16 @@
   }
   .term{ font-size:clamp(1.7rem, 7.5vw, 2.6rem); color:var(--brick-dark); }
   .def{ font-size:clamp(1.1rem, 4.4vw, 1.5rem); line-height:1.45; }
+  .kuva{
+    max-width:100%;
+    max-height:44%;
+    width:auto;
+    border-radius:12px;
+    object-fit:contain;
+    flex:0 1 auto;
+  }
+  .kuva[hidden]{ display:none; }
+
   .face .tap{
     position:absolute;
     bottom:16px;
@@ -512,6 +522,7 @@
         <div class="face back">
           <span class="kind" id="kindBack"></span>
           <p class="prompt" id="promptText"></p>
+          <img class="kuva" id="kortinKuva" alt="" hidden />
           <p class="text" id="backText"></p>
         </div>
       </div>
@@ -607,11 +618,17 @@ function jasennaTeksti(teksti, oletusNimi){
     if(!erotin) return;
     const i = r.indexOf(erotin);
     const kasite = r.slice(0, i).trim();
-    const maar = r.slice(i + erotin.length).trim();
+    let maar = r.slice(i + erotin.length).trim();
+    let kuva = "";
+    const j = maar.indexOf(erotin);          // kolmas kenttä = kuvatiedosto
+    if(j >= 0){
+      kuva = maar.slice(j + erotin.length).trim();
+      maar = maar.slice(0, j).trim();
+    }
     if(!kasite || !maar) return;
     if(!k){ k = { id: oletusNimi, nimi: "", aiheet: [] }; kurssit.push(k); }
     if(!a){ a = { nimi: "Kortit", kortit: [] }; k.aiheet.push(a); }
-    a.kortit.push([kasite, maar]);
+    a.kortit.push(kuva ? [kasite, maar, kuva] : [kasite, maar]);
   });
   return kurssit.filter(x => x.aiheet.some(t => t.kortit.length));
 }
@@ -625,8 +642,10 @@ function jasennaJson(teksti, oletusNimi){
     aiheet: (k.aiheet || k.topics || []).map(a => ({
       nimi: (a.nimi || a.name || "Kortit").toString(),
       kortit: (a.kortit || a.cards || []).map(c => Array.isArray(c)
-        ? [String(c[0]), String(c[1])]
-        : [String(c.kasite || c.käsite || c.term || ""), String(c.maaritelma || c.määritelmä || c.def || "")]
+        ? [String(c[0]), String(c[1])].concat(c[2] ? [String(c[2])] : [])
+        : [String(c.kasite || c.käsite || c.term || ""),
+           String(c.maaritelma || c.määritelmä || c.def || "")]
+          .concat(c.kuva || c.image ? [String(c.kuva || c.image)] : [])
       ).filter(c => c[0] && c[1])
     })).filter(a => a.kortit.length)
   })).filter(k => k.aiheet.length);
@@ -804,6 +823,18 @@ function seuraava(){
   $("frontText").className = "text " + (kasiteEnsin ? "term" : "def");
   $("backText").className  = "text " + (kasiteEnsin ? "def" : "term");
 
+  const kuva = $("kortinKuva");
+  if(nykyinen[2]){
+    kuva.hidden = false;
+    kuva.loading = "lazy";
+    kuva.src = nykyinen[2];
+    kuva.alt = nykyinen[0];
+  }else{
+    kuva.hidden = true;
+    kuva.removeAttribute("src");
+    kuva.alt = "";
+  }
+
   $("tally").textContent = valmiit + " / " + total;
   $("fill").style.width = (total ? (valmiit / total) * 100 : 0) + "%";
 }
@@ -837,6 +868,8 @@ function valmis(){
 }
 
 /* --------------------------- Tapahtumat --------------------------- */
+$("kortinKuva").addEventListener("error", () => { $("kortinKuva").hidden = true; });
+
 $("flipInner").addEventListener("click", kaanna);
 $("flipInner").addEventListener("keydown", (e) => {
   if(e.key === " " || e.key === "Enter"){ e.preventDefault(); kaanna(); }
