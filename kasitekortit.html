@@ -186,15 +186,83 @@
     border:2px solid transparent;
     border-radius:14px;
     box-shadow:var(--shadow);
-    padding:14px 16px;
     display:flex;
     align-items:center;
-    gap:12px;
     text-align:left;
     transition:transform .14s ease, border-color .14s ease, background .14s ease;
   }
   .row:hover{ transform:translateX(3px); border-color:var(--clay); }
-  .row:active{ transform:none; }
+  .row.valittu{ border-color:var(--clay); }
+  .rowmain{
+    flex:1;
+    min-width:0;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 16px;
+    text-align:left;
+  }
+  .pick{
+    flex:0 0 auto;
+    width:44px;
+    align-self:stretch;
+    display:grid;
+    place-items:center;
+    border-right:2px solid var(--panel-2);
+    border-radius:12px 0 0 12px;
+  }
+  .pick span{
+    width:24px;
+    height:24px;
+    border-radius:999px;
+    border:2px solid var(--stone-light);
+    background:var(--panel-2);
+    display:grid;
+    place-items:center;
+    font-size:.8rem;
+    font-weight:800;
+    color:transparent;
+    transition:background .14s, border-color .14s, color .14s;
+  }
+  .pick:hover span{ border-color:var(--clay); }
+  .row.valittu .pick span{ background:var(--clay); border-color:var(--clay); color:var(--brick); }
+  .startbar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .startbar button{
+    background:var(--brick);
+    color:#fff;
+    border-radius:14px;
+    padding:15px 18px;
+    font-weight:700;
+    font-size:1rem;
+    flex:1;
+    box-shadow:var(--shadow);
+    transition:filter .14s ease, transform .12s ease;
+  }
+  .startbar button:hover{ filter:brightness(1.15); }
+  .startbar button:active{ transform:scale(.99); }
+  .startbar .clear{
+    background:transparent;
+    color:var(--ink-soft);
+    box-shadow:none;
+    flex:0 0 auto;
+    font-size:.82rem;
+    font-weight:700;
+    text-decoration:underline;
+    text-underline-offset:3px;
+    padding:10px 4px;
+  }
+  .startbar .clear:hover{ color:var(--brick); filter:none; }
+  .vihje{
+    font-size:.75rem;
+    color:var(--ink-soft);
+    opacity:.7;
+    font-weight:600;
+    margin:0;
+  }
   .row .label{ flex:1; font-weight:700; font-size:1rem; }
   .row .n{
     font-size:.75rem;
@@ -454,6 +522,11 @@
       <span class="hint" id="kurssiHint"></span>
     </div>
     <div class="list" id="aiheList"></div>
+    <div class="startbar" id="startBar" hidden>
+      <button type="button" id="startBtn"></button>
+      <button type="button" class="clear" id="clearBtn">Tyhjennä</button>
+    </div>
+    <p class="vihje" id="yhdistaVihje">Yhdistä aiheita ympyröistä</p>
     <div class="mode" role="group" aria-label="Kortin suunta">
       <button type="button" data-mode="kasite" aria-pressed="true">Käsite ensin</button>
       <button type="button" data-mode="maaritelma" aria-pressed="false">Määritelmä ensin</button>
@@ -525,7 +598,8 @@ let KURSSIT = (window.KORTIT || []).slice();
 /* --------------------------- Tila --------------------------- */
 const $ = (id) => document.getElementById(id);
 let mode = "kasite";          // "kasite" | "maaritelma"
-let kurssi = null, aihe = null;
+let kurssi = null, valinta = null;      // valinta: { aiheet:[...], nimi:"..." }
+const valitut = new Set();               // monivalinnan aiheindeksit
 let deck = [], queue = [], nykyinen = null;
 let total = 0, valmiit = 0, kertaukset = 0, flipped = false;
 
@@ -697,28 +771,70 @@ function valitseKurssi(k){
   const l = $("aiheList");
   l.innerHTML = "";
 
-  const kaikki = document.createElement("button");
-  kaikki.type = "button";
+  valitut.clear();
+
+  const kaikki = document.createElement("div");
   kaikki.className = "row all";
-  kaikki.innerHTML = '<span class="label">Kaikki aiheet</span>' +
-                     '<span class="n">' + korttiMaara(k) + '</span><span class="go">→</span>';
-  kaikki.addEventListener("click", () => aloita(null));
+  kaikki.innerHTML = '<button type="button" class="rowmain">' +
+                     '<span class="label">Kaikki aiheet</span>' +
+                     '<span class="n">' + korttiMaara(k) + '</span><span class="go">→</span></button>';
+  kaikki.querySelector(".rowmain").addEventListener("click",
+    () => aloita(k.aiheet, "Kaikki aiheet"));
   l.appendChild(kaikki);
 
-  k.aiheet.forEach(a => {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.className = "row";
-    b.innerHTML = '<span class="label"></span>' +
-                  '<span class="n">' + a.kortit.length + '</span><span class="go">→</span>';
-    b.querySelector(".label").textContent = a.nimi;
-    b.addEventListener("click", () => aloita(a));
-    l.appendChild(b);
+  k.aiheet.forEach((a, i) => {
+    const rivi = document.createElement("div");
+    rivi.className = "row";
+    rivi.innerHTML =
+      '<button type="button" class="pick" aria-pressed="false"><span>✓</span></button>' +
+      '<button type="button" class="rowmain">' +
+      '<span class="label"></span>' +
+      '<span class="n">' + a.kortit.length + '</span><span class="go">→</span></button>';
+    rivi.querySelector(".label").textContent = a.nimi;
+    rivi.querySelector(".pick").setAttribute("aria-label", "Lisää valintaan: " + a.nimi);
+    rivi.querySelector(".pick").addEventListener("click", () => {
+      valitut.has(i) ? valitut.delete(i) : valitut.add(i);
+      rivi.classList.toggle("valittu", valitut.has(i));
+      rivi.querySelector(".pick").setAttribute("aria-pressed", String(valitut.has(i)));
+      paivitaValinta();
+    });
+    rivi.querySelector(".rowmain").addEventListener("click", () => aloita([a], a.nimi));
+    l.appendChild(rivi);
   });
 
+  paivitaValinta();
   paivitaMode();
   nayta("screenAihe");
 }
+
+function valitutAiheet(){
+  return [...valitut].sort((a, b) => a - b).map(i => kurssi.aiheet[i]);
+}
+
+function paivitaValinta(){
+  const n = valitut.size;
+  const kortteja = valitutAiheet().reduce((s, a) => s + a.kortit.length, 0);
+  $("startBar").hidden = n === 0;
+  $("yhdistaVihje").hidden = n > 0;
+  if(n) $("startBtn").textContent = "Aloita · " + n + " aihetta · " + kortteja + " korttia";
+}
+
+$("startBtn").addEventListener("click", () => {
+  const aiheet = valitutAiheet();
+  if(!aiheet.length) return;
+  aloita(aiheet, aiheet.length === kurssi.aiheet.length
+    ? "Kaikki aiheet"
+    : (aiheet.length === 1 ? aiheet[0].nimi : aiheet.length + " aihetta"));
+});
+
+$("clearBtn").addEventListener("click", () => {
+  valitut.clear();
+  document.querySelectorAll("#aiheList .row.valittu").forEach(r => {
+    r.classList.remove("valittu");
+    r.querySelector(".pick").setAttribute("aria-pressed", "false");
+  });
+  paivitaValinta();
+});
 
 function paivitaMode(){
   document.querySelectorAll(".mode button").forEach(b => {
@@ -744,14 +860,14 @@ function sekoita(a){
   return x;
 }
 
-function aloita(a){
-  aihe = a;
-  deck = a ? a.kortit.slice() : kurssi.aiheet.flatMap(t => t.kortit);
+function aloita(aiheet, nimi){
+  valinta = { aiheet, nimi };
+  deck = aiheet.flatMap(a => a.kortit);
   queue = sekoita(deck);
   total = queue.length;
   valmiit = 0;
   kertaukset = 0;
-  $("crumb").textContent = kurssi.id + " · " + (a ? a.nimi : "Kaikki aiheet");
+  $("crumb").textContent = kurssi.id + " · " + nimi;
   nayta("screenKortti");
   seuraava();
 }
@@ -799,7 +915,7 @@ function vastaa(osasin){
 }
 
 function valmis(){
-  $("valmisAihe").textContent = kurssi.id + " · " + (aihe ? aihe.nimi : "Kaikki aiheet");
+  $("valmisAihe").textContent = kurssi.id + " · " + valinta.nimi;
   $("valmisStats").textContent = total + " korttia · " +
     (kertaukset === 0 ? "ei kertauksia" : kertaukset + " kertausta");
   nayta("screenValmis");
@@ -815,7 +931,7 @@ $("btnGood").addEventListener("click", () => vastaa(true));
 
 $("backToKurssi").addEventListener("click", () => nayta("screenKurssi"));
 $("backToAihe").addEventListener("click", () => nayta("screenAihe"));
-$("againDeck").addEventListener("click", () => aloita(aihe));
+$("againDeck").addEventListener("click", () => aloita(valinta.aiheet, valinta.nimi));
 $("otherTopic").addEventListener("click", () => nayta("screenAihe"));
 $("otherCourse").addEventListener("click", () => nayta("screenKurssi"));
 
