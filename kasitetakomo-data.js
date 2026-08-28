@@ -247,7 +247,7 @@ window.KORTIT = [
     ["Tilavuuden lämpölaajeneminen","Kappaleen tilavuuden muutos riippuu alkuperäisestä tilavuudesta, lämpötilan muutoksesta ja materiaalista; ΔV = γV₀ΔT."],
     ["Lämpö","Energiaa, joka siirtyy lämpötilaeron vuoksi kuumemmasta systeemistä kylmempään."],
     ["Johtuminen","Energia siirtyy aineen rakenneosasten vuorovaikutusten kautta ilman aineen kokonaisliikettä."],
-    ["Kuljettuminen","Energia siirtyy liikkuvan nesteen tai kaasun mukana."],
+    ["Kulkeutuminen","Energia siirtyy liikkuvan nesteen tai kaasun mukana; konvektio."],
     ["Lämpösäteily","Energia siirtyy sähkömagneettisena säteilynä eikä tarvitse väliainetta."],
     ["Lämmönjohde","Aine, jossa energia siirtyy johtumalla tehokkaasti."],
     ["Lämmöneriste","Aine, jossa energia siirtyy johtumalla hitaasti."],
@@ -269,7 +269,7 @@ window.KORTIT = [
     ["Ainemäärä","Kuvaa aineen rakenneosasten lukumäärää, ja sen yksikkö on mooli."],
     ["Mooli","Ainemäärä, jossa on noin 6,02·10²³ rakenneosasta."],
     ["Ideaalikaasu","Yksinkertaistettu kaasumalli, jossa hiukkasten oma tilavuus ja keskinäiset vuorovaikutukset sivuutetaan."],
-    ["Tilanyhtälö","Yhdistää ideaalikaasun paineen, tilavuuden, ainemäärän ja lämpötilan; pV = nRT."],
+    ["Ideaalikaasun tilanyhtälö","Yhdistää kaasun paineen, tilavuuden, ainemäärän ja lämpötilan; pV = nRT."],
     ["Isokoorinen muutos","Tilavuus pysyy vakiona, joten paine on suoraan verrannollinen absoluuttiseen lämpötilaan."],
     ["Isobaarinen muutos","Paine pysyy vakiona, joten tilavuus on suoraan verrannollinen absoluuttiseen lämpötilaan."],
     ["Isoterminen muutos","Lämpötila pysyy vakiona, joten paine ja tilavuus ovat kääntäen verrannolliset; pV = vakio."],
@@ -313,7 +313,7 @@ window.KORTIT = [
   { nimi:"Mekaaninen työ ja sisäenergia", kortit:[
     ["Mekaaninen työ","Voiman avulla siirtyvä energia saadaan voiman ja voiman suuntaisen matkan tulona; W = Fs."],
     ["Sisäenergia","Rakenneosasten liike- ja vuorovaikutusenergioiden muodostama systeemin energiamäärä."],
-    ["Ensimmäinen pääsääntö","Sisäenergia muuttuu lämmön siirtymisen ja systeemiin tehdyn työn vaikutuksesta; ΔU = Q + W."],
+    ["Termodynamiikan I pääsääntö","Sisäenergia muuttuu lämmön siirtymisen ja systeemiin tehdyn työn vaikutuksesta; ΔU = Q + W."],
     ["Joulen koe","Mekaanisen työn muuttuminen sisäenergiaksi havaitaan veden lämpötilan nousuna."],
     ["Kaasun työ","Laajeneva kaasu tekee työtä ympäristöön, kun sen tilavuus kasvaa."],
     ["Tilavuustyö","Vakiopaineessa kaasun tekemän työn suuruus riippuu paineesta ja tilavuuden muutoksesta; W = pΔV."],
@@ -372,17 +372,17 @@ window.KORTIT = [
     ["Keskikiihtyvyys","Nopeuden kokonaismuutos jaetaan siihen kuluneella ajalla."],
     ["Hetkellinen kiihtyvyys","Kertoo nopeuden muuttumisnopeuden tietyllä ajanhetkellä."],
     ["Tasainen kiihtyvyys","Kiihtyvyys pysyy vakiona, joten nopeus muuttuu tasaisesti."],
-    ["Nopeusyhtälö","Tasaisesti kiihtyvässä liikkeessä nopeus saadaan ajan avulla; v = v₀ + at."],
-    ["Paikkayhtälö","Tasaisesti kiihtyvässä liikkeessä paikka voidaan laskea yhtälöllä x = x₀ + v₀t + ½at²."],
+    ["Tasaisesti kiihtyvän liikkeen nopeus","Nopeus kasvaa tasaisesti ajan mukana; v = v₀ + at."],
+    ["Tasaisesti kiihtyvän liikkeen paikka","Paikka saadaan alkupaikan, alkunopeuden ja kiihtyvyyden avulla; x = x₀ + v₀t + ½at²."],
     ["Putoamiskiihtyvyys","Maan lähellä vapaasti putoavan kappaleen kiihtyvyyden suuruus on noin 9,81 m/s²."],
     ["Vapaa putoaminen","Liike, jossa kappaleeseen vaikuttaa vain gravitaatiovoima ja ilmanvastus jätetään huomiotta."]
   ]},
   { nimi:"Vuorovaikutus ja Newtonin lait", kortit:[
     ["Vuorovaikutus","Kahden kappaleen välinen tapahtuma, jossa kappaleet voivat muuttaa toistensa liikettä tai muotoa."],
     ["Voima","Kuvaa vuorovaikutuksen voimakkuutta, ja sen yksikkö on newton."],
-    ["Jatkavuuden laki","Kappale säilyttää liiketilansa, jos siihen vaikuttava kokonaisvoima on nolla."],
+    ["Newtonin I laki","Kappale säilyttää liiketilansa, jos siihen vaikuttava kokonaisvoima on nolla; jatkavuuden laki."],
     ["Hitaus","Kappaleen ominaisuus vastustaa liiketilansa muuttumista."],
-    ["Dynamiikan peruslaki","Kokonaisvoima aiheuttaa kappaleelle kiihtyvyyden; ΣF = ma."],
+    ["Newtonin II laki","Kokonaisvoima aiheuttaa kappaleelle kiihtyvyyden; dynamiikan peruslaki, ΣF = ma."],
     ["Kokonaisvoima","Kappaleeseen vaikuttavien voimien vektorisumma."],
     ["Newtonin III laki","Vuorovaikutuksessa kappaleet kohdistavat toisiinsa yhtä suuret mutta vastakkaissuuntaiset voimat."],
     ["Vastavoimapari","Kaksi yhtä suurta vastakkaissuuntaista voimaa vaikuttavat eri kappaleisiin samassa vuorovaikutuksessa."]
@@ -541,7 +541,7 @@ window.KORTIT = [
     ["Rajataajuus","Pienin säteilyn taajuus, jolla elektroneja voi irrota tietystä aineesta."],
     ["Pysäytysjännite","Jännite, jolla nopeimmatkin pinnasta irronneet elektronit juuri pysähtyvät."],
     ["Maksimiliike-energia","Nopeimman irronneen elektronin energia saadaan energian säilymisestä; Eₖ,max = hf − W₀."],
-    ["Einsteinin yhtälö","Fotonin energia kuluu irrotustyöhön ja elektronin liike-energiaksi; hf = W₀ + Eₖ,max."],
+    ["Valosähköilmiön energiayhtälö","Fotonin energia kuluu irrotustyöhön ja elektronin liike-energiaksi; hf = W₀ + Eₖ,max."],
     ["Säteilyn intensiteetti","Kertoo pinnalle saapuvan säteilyenergian määrän pinta-alaa ja aikaa kohti."]
   ]},
   { nimi:"Aaltohiukkasdualismi", kortit:[
@@ -576,7 +576,7 @@ window.KORTIT = [
     ["Kvanttiluku","Luku, jolla kuvataan elektronin kvanttitilan ominaisuuksia atomissa."],
     ["Elektronikuori","Ryhmä elektronitiloja, joilla on sama pääkvanttiluku."],
     ["Paulin kieltosääntö","Atomissa kahdella elektronilla ei voi olla kaikkia kvanttilukuja samoina."],
-    ["Epätarkkuusperiaate","Hiukkasen paikkaa ja liikemäärää ei voida samanaikaisesti määrittää mielivaltaisen tarkasti."],
+    ["Heisenbergin epätarkkuusperiaate","Hiukkasen paikkaa ja liikemäärää ei voida samanaikaisesti määrittää mielivaltaisen tarkasti."],
     ["Tunneloituminen","Hiukkanen voi kvanttimekaniikan mukaan löytyä esteen toiselta puolelta ilman klassisesti riittävää energiaa."],
     ["Seisova aalto","Aaltomuoto, joka pysyy paikallaan ja mahdollistaa vain tietyt elektronin kvanttitilat."]
   ]},
@@ -645,15 +645,15 @@ window.KORTIT = [
     ["Hajoamisvakio","Kuvaa yksittäisen radioaktiivisen ytimen hajoamisen todennäköisyyttä aikayksikössä."],
     ["Puoliintumisaika","Aika, jossa radioaktiivisten ydinten lukumäärä ja näytteen aktiivisuus pienenevät puoleen."],
     ["Hajoamislaki","Hajoamattomien ydinten lukumäärä pienenee eksponentiaalisesti; N = N₀e⁻λt."],
-    ["Aktiivisuuslaki","Näytteen aktiivisuus pienenee samalla eksponentiaalisella tavalla; A = A₀e⁻λt."],
+    ["Aktiivisuuden pieneneminen","Näytteen aktiivisuus pienenee samalla eksponentiaalisella tavalla; A = A₀e⁻λt."],
     ["Hajoamissarja","Peräkkäisten radioaktiivisten hajoamisten ketju päättyy lopulta stabiiliin ytimeen."]
   ]},
-  { nimi:"Säteilyn heikkeneminen", kortit:[
+  { nimi:"Säteilyn vaimeneminen", kortit:[
     ["Intensiteetti","Kuvaa säteilyn kuljettamaa tehoa pinta-alayksikköä kohti."],
-    ["Heikennyslaki","Gammasäteilyn intensiteetti pienenee aineessa eksponentiaalisesti; I = I₀e⁻μx."],
-    ["Heikennyskerroin","Kuvaa, kuinka voimakkaasti tietty aine heikentää tietyn energistä säteilyä."],
+    ["Säteilyn vaimeneminen","Gammasäteilyn intensiteetti pienenee aineessa eksponentiaalisesti; I = I₀e⁻μx."],
+    ["Vaimennuskerroin","Kuvaa, kuinka voimakkaasti tietty aine vaimentaa tietyn energistä säteilyä."],
     ["Puoliintumispaksuus","Ainekerroksen paksuus, joka pienentää säteilyn intensiteetin puoleen."],
-    ["Etäisyyslaki","Pistemäisen lähteen säteilyn intensiteetti on kääntäen verrannollinen etäisyyden neliöön; I ∝ 1/r²."],
+    ["Etäisyyden neliön laki","Pistemäisen lähteen säteilyn intensiteetti on kääntäen verrannollinen etäisyyden neliöön; I ∝ 1/r²."],
     ["Valosähköabsorptio","Fotoni luovuttaa kaiken energiansa aineen elektronille ja häviää."],
     ["Comptoninsironta","Fotoni luovuttaa osan energiastaan elektronille ja jatkaa pienemmällä energialla."],
     ["Parinmuodostus","Riittävän energinen fotoni voi ytimen lähellä muuttua elektroniksi ja positroniksi."]
