@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#012169">
+<meta name="description" content="Kiviruukin lukion Tiede- ja teknologia -diplomi: kaksi vuotta omaa polkua, oma diplomityö ja Tiedemessut.">
+<title>Tiede- ja teknologia -diplomi | Kiviruukin lukio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --navy:#012169;
+    --navy-deep:#010f38;
+    --pink:#fca5c7;
+    --paper:#ffffff;
+    --haze:#b9c3de;
+    --ink:#01102f;
+    --measure:62ch;
+    --step:clamp(18px,2.4vw,30px);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--navy-deep);
+    color:var(--paper);
+    font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:clamp(15px,1.05vw,17px);
+    line-height:1.55;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 var(--step)}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:500;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+  .hero{position:relative;background:var(--navy);overflow:hidden;isolation:isolate}
+  .hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+  .hero .wrap{position:relative;z-index:1;padding-top:clamp(22px,3.4vw,40px);padding-bottom:clamp(40px,6vw,84px)}
+  .brandrow{display:flex;align-items:center;gap:14px;margin-bottom:clamp(34px,7vw,86px)}
+  .seal{width:clamp(46px,5.4vw,64px);height:auto;flex:0 0 auto}
+  .brandrow .mono{color:var(--pink)}
+  h1{font-family:"Jost",Futura,"Century Gothic",system-ui,sans-serif;font-weight:700;font-size:clamp(2.7rem,10vw,6.4rem);line-height:.94;letter-spacing:-.02em;text-wrap:balance;margin:0 0 clamp(18px,2.4vw,28px);max-width:14ch}
+  h1 em{font-style:normal;color:var(--pink)}
+  .deck{max-width:46ch;margin:0;font-size:clamp(1.05rem,1.7vw,1.32rem);color:var(--paper)}
+  .deck b{font-weight:600;color:var(--pink)}
+  .tracks{background:var(--navy-deep);padding:clamp(42px,5.4vw,74px) 0 clamp(46px,6vw,86px)}
+  .tracks-grid{display:grid;gap:clamp(26px,3.4vw,44px);grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .track h2{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:600;font-size:1.42rem;letter-spacing:.01em;margin:0 0 .5rem;color:var(--pink)}
+  .track p{margin:0;color:var(--haze);font-size:.98rem;line-height:1.5;text-wrap:pretty}
+  .track p span{color:var(--paper)}
+  .also{margin-top:clamp(30px,3.6vw,48px);display:grid;gap:10px}
+  .also > .mono{color:var(--pink)}
+  .also > p{margin:0;max-width:62ch;font-size:clamp(1rem,1.5vw,1.16rem);line-height:1.5;color:var(--paper);text-wrap:pretty}
+  .courses{margin-top:6px;display:grid;gap:5px}
+  .courses .row{margin:0;font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:500;font-size:.75rem;line-height:1.5;color:var(--haze);text-wrap:pretty}
+  .courses .row b{color:var(--pink);font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin-right:.7em}
+  .courses .row span{color:var(--paper)}
+  .path{background:var(--navy);padding:clamp(46px,6vw,88px) 0}
+  .path-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 20px;margin-bottom:clamp(28px,3.4vw,44px)}
+  .path-head h2{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;font-size:clamp(1.7rem,3.4vw,2.5rem);margin:0;letter-spacing:-.01em}
+  .path-head .mono{color:var(--pink)}
+  .years{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(34px,4vw,64px)}
+  .year{display:grid;grid-template-columns:58px minmax(0,1fr);column-gap:18px;row-gap:5px;align-items:start}
+  .year .num{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;font-size:clamp(3rem,5vw,4.2rem);line-height:.8;color:var(--pink);grid-row:1 / span 3;font-variant-numeric:tabular-nums;width:58px}
+  .year h3{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:600;font-size:1.3rem;margin:0;letter-spacing:.01em}
+  .year .op{color:var(--pink);margin:0;font-size:.72rem;letter-spacing:.10em;white-space:nowrap}
+  .year p{margin:.35rem 0 0;color:var(--haze);font-size:.97rem;max-width:none;text-wrap:pretty;line-height:1.5}
+  .cta{background:var(--pink);color:var(--ink)}
+  .cta .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:14px 32px;padding-top:clamp(30px,3.6vw,44px);padding-bottom:clamp(30px,3.6vw,44px)}
+  .cta strong{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.01em}
+  @media (max-width:860px){.years{grid-template-columns:1fr;gap:34px}.year{grid-template-columns:52px minmax(0,1fr)}.year .num{width:52px}}
+  @media (max-width:520px){.year{grid-template-columns:1fr}.year .num{grid-row:auto;width:auto;font-size:2.6rem}.year .op{white-space:normal}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <canvas id="rays" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="brandrow">
+      <svg class="seal" viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukio">
+        <polygon fill="#fca5c7" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766.88 364.38 781.13 381.37 788.72 402.21 788.72 424.39 976.23 424.39 976.23 402.2 788.76 402.2"/>
+      </svg>
+      <span class="mono">Kiviruukin lukio</span>
+    </div>
+
+    <h1>Täällä taotaan <em>tulevaisuutta</em>.</h1>
+    <p class="deck">
+      <b>Tiede- ja teknologia -diplomi.</b> Kaksi vuotta omaa polkua, oma diplomityö &ndash;
+      ja Tiedemessut, joilla esittelet sen.
+    </p>
+  </div>
+</section>
+
+<section class="tracks">
+  <div class="wrap">
+   <div class="tracks-grid">
+    <div class="track">
+      <h2>Rakenna</h2>
+      <p><span>Makerspace</span> &middot; 3D-mallinnus ja -tulostus &middot; laser- ja vinyylileikkaus &middot; robotiikka ja Arduino &middot; dronet ja satelliitit &middot; VR ja pelinteko &middot; AV ja mediatuotanto</p>
+    </div>
+    <div class="track">
+      <h2>Koodaa</h2>
+      <p><span>Tekoäly ja kielimallit</span> &middot; data &middot; kyberturvallisuus ja eettinen hakkerointi &middot; pelijamit &middot; hackathonit</p>
+    </div>
+    <div class="track">
+      <h2>Tutki</h2>
+      <p><span>Bioteknologia</span> &middot; rikospaikkatutkinta &middot; lääkeaineanalytiikka &middot; terveysteknologia &middot; cleantech &middot; laboratoriotyöt</p>
+    </div>
+    <div class="track">
+      <h2>Näytä</h2>
+      <p><span>Portfolio</span> &middot; yritys- ja tutkimusyhteistyö &middot; tiede- ja teknologiakilpailut &middot; VEX-robotiikka &middot; Lasten tiedefestarit</p>
+    </div>
+   </div>
+
+   <div class="also">
+     <span class="mono">Ja opinnot, jotka valitsisit muutenkin</span>
+     <p>
+       Osan polustasi voit koota fysiikan, kemian, biologian, maantieteen ja
+       matematiikan opinnoista. Opintojaksojen projektit voit liittää portfolioosi.
+     </p>
+     <div class="courses">
+       <p class="row"><b>Mukana voivat olla esimerkiksi</b><span>FY3&ndash;FY8</span> &middot; <span>KE3&ndash;KE5</span> &middot; <span>BI5&ndash;BI6</span> &middot; <span>GE4</span> &middot; <span>MAA10&ndash;MAA11</span></p>
+     </div>
+   </div>
+  </div>
+</section>
+
+<section class="path">
+  <div class="wrap">
+    <div class="path-head">
+      <h2>Polku kulkee näin</h2>
+      <span class="mono">Kolme vuotta</span>
+    </div>
+    <div class="years">
+      <div class="year">
+        <div class="num">1</div>
+        <h3>Kokeile</h3>
+        <p class="mono op">8 op</p>
+        <p>Valitse kiinnostavia TT-opintoja ja aloita portfoliosi. Makerspace&nbsp;1:tä suositellaan aloitukseksi.</p>
+      </div>
+      <div class="year">
+        <div class="num">2</div>
+        <h3>Syvennä</h3>
+        <p class="mono op">8 op</p>
+        <p>Rakenna oma painotuksesi ja aloita diplomityö. Voit tehdä sen yhteistyössä yrityksen, korkeakoulun tai VTT Bioruukin kanssa.</p>
+      </div>
+      <div class="year">
+        <div class="num">3</div>
+        <h3>Esittele</h3>
+        <p class="mono op">2 op &middot; 1. periodi</p>
+        <p>Viimeistele diplomityösi ja esittele se Tiedemessuilla: posteri, prototyyppi, demo tai sovellus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <strong>Tuo oma kipinäsi.</strong>
+  </div>
+</section>
+
+
+<script>
+(function(){
+  "use strict";
+  var cv = document.getElementById("rays");
+  var ctx = cv.getContext("2d");
+  function draw(){
+    var host = cv.parentNode;
+    var w = host.clientWidth, h = host.clientHeight;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,w,h);
+    var cx = w*0.90, cy = h*1.14;
+    var n = 42, R = Math.hypot(w,h)*1.05;
+    for(var i=0;i<n;i++){
+      var t = i/(n-1);
+      var a = Math.PI + t*Math.PI*0.62;
+      var len = R*(0.42 + 0.58*Math.pow(Math.sin(t*Math.PI),0.65));
+      var inner = R*0.10;
+      ctx.beginPath();
+      ctx.moveTo(cx + Math.cos(a)*inner, cy + Math.sin(a)*inner);
+      ctx.lineTo(cx + Math.cos(a)*len,   cy + Math.sin(a)*len);
+      ctx.lineWidth = Math.max(1.5, w*0.0035);
+      ctx.lineCap = "round";
+      ctx.strokeStyle = "rgba(252,165,199," + (0.05 + 0.13*Math.sin(t*Math.PI)).toFixed(3) + ")";
+      ctx.stroke();
+    }
+  }
+  draw();
+  var t = null;
+  window.addEventListener("resize", function(){clearTimeout(t); t = setTimeout(draw, 120);});
+})();
+</script>
+</body>
+</html>
