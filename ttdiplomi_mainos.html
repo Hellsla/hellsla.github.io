@@ -33,44 +33,126 @@
   .wrap{max-width:1180px;margin:0 auto;padding:0 var(--step)}
   a{color:inherit}
   :focus-visible{outline:3px solid var(--pink);outline-offset:3px}
-  .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:500;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+
+  .mono{
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-weight:500;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
+  }
+
   .hero{position:relative;background:var(--navy);overflow:hidden;isolation:isolate}
   .hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
   .hero .wrap{position:relative;z-index:1;padding-top:clamp(22px,3.4vw,40px);padding-bottom:clamp(40px,6vw,84px)}
+
   .brandrow{display:flex;align-items:center;gap:14px;margin-bottom:clamp(34px,7vw,86px)}
   .seal{width:clamp(46px,5.4vw,64px);height:auto;flex:0 0 auto}
   .brandrow .mono{color:var(--pink)}
-  h1{font-family:"Jost",Futura,"Century Gothic",system-ui,sans-serif;font-weight:700;font-size:clamp(2.7rem,10vw,6.4rem);line-height:.94;letter-spacing:-.02em;text-wrap:balance;margin:0 0 clamp(18px,2.4vw,28px);max-width:14ch}
+
+  h1{
+    font-family:"Jost",Futura,"Century Gothic",system-ui,sans-serif;
+    font-weight:700;
+    font-size:clamp(2.7rem,10vw,6.4rem);
+    line-height:.94;
+    letter-spacing:-.02em;
+    text-wrap:balance;
+    margin:0 0 clamp(18px,2.4vw,28px);
+    max-width:14ch;
+  }
   h1 em{font-style:normal;color:var(--pink)}
-  .deck{max-width:46ch;margin:0;font-size:clamp(1.05rem,1.7vw,1.32rem);color:var(--paper)}
+  .deck{
+    max-width:46ch;margin:0;
+    font-size:clamp(1.05rem,1.7vw,1.32rem);
+    color:var(--paper);
+  }
   .deck b{font-weight:600;color:var(--pink)}
+
   .tracks{background:var(--navy-deep);padding:clamp(42px,5.4vw,74px) 0 clamp(46px,6vw,86px)}
-  .tracks-grid{display:grid;gap:clamp(26px,3.4vw,44px);grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-  .track h2{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:600;font-size:1.42rem;letter-spacing:.01em;margin:0 0 .5rem;color:var(--pink)}
-  .track p{margin:0;color:var(--haze);font-size:.98rem;line-height:1.5;text-wrap:pretty}
-  .track p span{color:var(--paper)}
-  .also{margin-top:clamp(30px,3.6vw,48px);display:grid;gap:10px}
+  .eyebrow{display:block;color:var(--pink);margin-bottom:clamp(16px,2vw,24px)}
+  .verbs{
+    margin:0;
+    font-family:"Jost",Futura,system-ui,sans-serif;
+    font-weight:600;letter-spacing:-.01em;line-height:1.12;
+    font-size:clamp(1.7rem,5vw,2.7rem);
+    color:var(--pink);text-wrap:balance;
+  }
+  .verbs em{font-style:normal;opacity:.42;padding:0 .12em}
+  .doing{
+    margin:.7rem 0 0;max-width:72ch;
+    color:var(--haze);line-height:1.5;text-wrap:pretty;
+    font-size:clamp(.95rem,1.4vw,1.08rem);
+  }
+
+  .also{
+    margin-top:clamp(30px,3.6vw,48px);
+    display:grid;gap:10px;
+  }
   .also > .mono{color:var(--pink)}
-  .also > p{margin:0;max-width:62ch;font-size:clamp(1rem,1.5vw,1.16rem);line-height:1.5;color:var(--paper);text-wrap:pretty}
-  .courses{margin-top:6px;display:grid;gap:5px}
-  .courses .row{margin:0;font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:500;font-size:.75rem;line-height:1.5;color:var(--haze);text-wrap:pretty}
-  .courses .row b{color:var(--pink);font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin-right:.7em}
-  .courses .row span{color:var(--paper)}
+  .also > p{
+    margin:0;max-width:70ch;
+    font-size:clamp(1rem,1.5vw,1.16rem);line-height:1.5;
+    color:var(--paper);text-wrap:pretty;
+  }
+  .chipgroup{display:grid;gap:7px;margin-top:4px}
+  .chipgroup .lbl{color:var(--haze)}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-weight:500;font-size:.74rem;line-height:1;letter-spacing:.02em;
+    color:var(--paper);
+    border:1px solid rgba(252,165,199,.42);
+    border-radius:999px;padding:7px 12px;
+  }
+  .also > p.note{
+    margin:2px 0 0;max-width:none;
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-weight:500;font-size:.74rem;letter-spacing:.06em;
+    color:var(--haze);opacity:.75;text-transform:none;
+  }
+  .codes{
+    margin:2px 0 0;color:var(--haze);
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-weight:500;font-size:.78rem;letter-spacing:.06em;line-height:1.7;
+  }
+  .codes b{color:var(--paper);font-weight:500}
+
   .path{background:var(--navy);padding:clamp(46px,6vw,88px) 0}
   .path-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 20px;margin-bottom:clamp(28px,3.4vw,44px)}
-  .path-head h2{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;font-size:clamp(1.7rem,3.4vw,2.5rem);margin:0;letter-spacing:-.01em}
+  .path-head h2{
+    font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;
+    font-size:clamp(1.7rem,3.4vw,2.5rem);margin:0;letter-spacing:-.01em;
+  }
   .path-head .mono{color:var(--pink)}
-  .years{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(34px,4vw,64px)}
-  .year{display:grid;grid-template-columns:58px minmax(0,1fr);column-gap:18px;row-gap:5px;align-items:start}
-  .year .num{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;font-size:clamp(3rem,5vw,4.2rem);line-height:.8;color:var(--pink);grid-row:1 / span 3;font-variant-numeric:tabular-nums;width:58px}
-  .year h3{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:600;font-size:1.3rem;margin:0;letter-spacing:.01em}
-  .year .op{color:var(--pink);margin:0;font-size:.72rem;letter-spacing:.10em;white-space:nowrap}
-  .year p{margin:.35rem 0 0;color:var(--haze);font-size:.97rem;max-width:none;text-wrap:pretty;line-height:1.5}
+  .years{display:grid;gap:clamp(28px,3vw,40px);grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .year{display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:4px;align-items:start}
+  .year .num{
+    font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;
+    font-size:clamp(3rem,5vw,4.2rem);line-height:.8;color:var(--pink);
+    grid-row:1 / span 3;font-variant-numeric:tabular-nums;
+  }
+  .year h3{
+    font-family:"Jost",Futura,system-ui,sans-serif;font-weight:600;
+    font-size:1.3rem;margin:0;letter-spacing:.01em;
+  }
+  .year .op{color:var(--pink);margin:0}
+  .year p{margin:.35rem 0 0;color:var(--haze);font-size:.97rem;max-width:34ch;text-wrap:pretty}
+
   .cta{background:var(--pink);color:var(--ink)}
-  .cta .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:14px 32px;padding-top:clamp(30px,3.6vw,44px);padding-bottom:clamp(30px,3.6vw,44px)}
-  .cta strong{font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.01em}
-  @media (max-width:860px){.years{grid-template-columns:1fr;gap:34px}.year{grid-template-columns:52px minmax(0,1fr)}.year .num{width:52px}}
-  @media (max-width:520px){.year{grid-template-columns:1fr}.year .num{grid-row:auto;width:auto;font-size:2.6rem}.year .op{white-space:normal}}
+  .cta .wrap{
+    display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+    gap:14px 32px;padding-top:clamp(30px,3.6vw,44px);padding-bottom:clamp(30px,3.6vw,44px);
+  }
+  .cta strong{
+    font-family:"Jost",Futura,system-ui,sans-serif;font-weight:700;
+    font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.01em;
+  }
+  .cta .mono{color:var(--ink);opacity:.75}
+
+  footer{background:var(--navy-deep);padding:22px 0 34px}
+  footer .mono{color:var(--haze);opacity:.8}
+
+  @media (max-width:520px){
+    .year{grid-template-columns:1fr}
+    .year .num{grid-row:auto;font-size:2.6rem}
+  }
 </style>
 </head>
 <body>
@@ -95,34 +177,41 @@
 
 <section class="tracks">
   <div class="wrap">
-   <div class="tracks-grid">
-    <div class="track">
-      <h2>Rakenna</h2>
-      <p><span>Makerspace</span> &middot; 3D-mallinnus ja -tulostus &middot; laser- ja vinyylileikkaus &middot; robotiikka ja Arduino &middot; dronet ja satelliitit &middot; VR ja pelinteko &middot; AV ja mediatuotanto</p>
-    </div>
-    <div class="track">
-      <h2>Koodaa</h2>
-      <p><span>Tekoäly ja kielimallit</span> &middot; data &middot; kyberturvallisuus ja eettinen hakkerointi &middot; pelijamit &middot; hackathonit</p>
-    </div>
-    <div class="track">
-      <h2>Tutki</h2>
-      <p><span>Bioteknologia</span> &middot; rikospaikkatutkinta &middot; lääkeaineanalytiikka &middot; terveysteknologia &middot; cleantech &middot; laboratoriotyöt</p>
-    </div>
-    <div class="track">
-      <h2>Näytä</h2>
-      <p><span>Portfolio</span> &middot; yritys- ja tutkimusyhteistyö &middot; tiede- ja teknologiakilpailut &middot; VEX-robotiikka &middot; Lasten tiedefestarit</p>
-    </div>
+   <span class="mono eyebrow">Mistä tulevaisuus taotaan</span>
+   <p class="verbs">Rakenna<em>&middot;</em>Koodaa<em>&middot;</em>Tutki<em>&middot;</em>Näytä</p>
+   <p class="doing">3D-tulostus &middot; laser- ja vinyylileikkaus &middot; robotit ja Arduino &middot; dronet &middot; VR ja pelinteko &middot; tekoäly ja kielimallit &middot; laboratoriotyöt &middot; VEX-kilpailut &middot; yritysyhteistyö &middot; portfolio</p>
+
+   <div class="also">
+     <span class="mono">Kiviruukin omat opintojaksot &middot; jokainen 2 op</span>
+     <div class="chipgroup">
+       <span class="mono lbl">1. vuosi</span>
+       <div class="chips">
+         <span class="chip">Makerspace 1</span>
+         <span class="chip">Robotiikka ja automaatio</span>
+         <span class="chip">Ohjelmointi, data ja tekoäly</span>
+         <span class="chip">Pelijamit</span>
+         <span class="chip">Kyberturvallisuus</span>
+         <span class="chip">Luova teknologia</span>
+       </div>
+     </div>
+     <div class="chipgroup">
+       <span class="mono lbl">2. vuosi</span>
+       <div class="chips">
+         <span class="chip">Makerspace 2</span>
+         <span class="chip">Bioteknologia ja terveysteknologia</span>
+         <span class="chip">Paikkatieto, dronet ja satelliitit</span>
+         <span class="chip">Rikospaikkatutkinta</span>
+         <span class="chip">Audiovisuaalinen teknologia</span>
+         <span class="chip">Teknologia työelämässä</span>
+       </div>
+     </div>
+     <p class="note">Tarjonta täydentyy lukuvuosittain</p>
    </div>
 
    <div class="also">
-     <span class="mono">Ja opinnot, jotka valitsisit muutenkin</span>
-     <p>
-       Osan polustasi voit koota fysiikan, kemian, biologian, maantieteen ja
-       matematiikan opinnoista. Opintojaksojen projektit voit liittää portfolioosi.
-     </p>
-     <div class="courses">
-       <p class="row"><b>Mukana voivat olla esimerkiksi</b><span>FY3&ndash;FY8</span> &middot; <span>KE3&ndash;KE5</span> &middot; <span>BI5&ndash;BI6</span> &middot; <span>GE4</span> &middot; <span>MAA10&ndash;MAA11</span></p>
-     </div>
+     <span class="mono">Mukana voivat olla esimerkiksi</span>
+     <p class="codes"><b>FY3&ndash;FY8</b> &middot; <b>KE3&ndash;KE5</b> &middot; <b>BI5&ndash;BI6</b> &middot; <b>GE4</b> &middot; <b>MAA10&ndash;MAA11</b></p>
+     <p class="note">Opintojaksojen projektit ja muut tuotokset voit liittää portfolioosi.</p>
    </div>
   </div>
 </section>
@@ -159,15 +248,20 @@
 <section class="cta">
   <div class="wrap">
     <strong>Tuo oma kipinäsi.</strong>
+    <span class="mono">Info lukuvuoden alussa &middot; kysy TT-polun koordinaattorilta</span>
   </div>
 </section>
 
+<footer>
+  <div class="wrap"><span class="mono">Tiede- ja teknologia -polku &middot; Kiviruukin lukio</span></div>
+</footer>
 
 <script>
 (function(){
   "use strict";
   var cv = document.getElementById("rays");
   var ctx = cv.getContext("2d");
+
   function draw(){
     var host = cv.parentNode;
     var w = host.clientWidth, h = host.clientHeight;
@@ -175,6 +269,7 @@
     cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr);
     ctx.setTransform(dpr,0,0,dpr,0,0);
     ctx.clearRect(0,0,w,h);
+
     var cx = w*0.90, cy = h*1.14;
     var n = 42, R = Math.hypot(w,h)*1.05;
     for(var i=0;i<n;i++){
@@ -191,9 +286,12 @@
       ctx.stroke();
     }
   }
+
   draw();
   var t = null;
-  window.addEventListener("resize", function(){clearTimeout(t); t = setTimeout(draw, 120);});
+  window.addEventListener("resize", function(){
+    clearTimeout(t); t = setTimeout(draw, 120);
+  });
 })();
 </script>
 </body>
