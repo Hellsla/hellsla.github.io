@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#012169">
+<meta name="description" content="Kiviruukin lukion diplomipolut: Tiede ja teknologia sekä Talous ja yrittäjyys.">
+<title>Kiviruukin diplomipolut | Kiviruukin lukio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+
+<style>
+:root{
+  --navy:#012169;
+  --navy-deep:#010f38;
+  --pink:#fca5c7;
+  --paper:#ffffff;
+  --haze:#b9c3de;
+  --ink:#01102f;
+  --tt:#7dd3fc;
+  --yr:#f6c453;
+  --step:clamp(18px,2.4vw,30px);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--navy-deep);
+  color:var(--paper);
+  font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:clamp(15px,1.05vw,17px);
+  line-height:1.55;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--step)}
+.mono{
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-weight:500;
+  font-size:.74rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+
+/* HERO */
+.hero{
+  position:relative;
+  background:var(--navy);
+  overflow:hidden;
+  isolation:isolate;
+}
+.hero canvas{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  display:block;
+}
+.hero .wrap{
+  position:relative;
+  z-index:1;
+  padding-top:clamp(22px,3.4vw,40px);
+  padding-bottom:clamp(42px,6vw,84px);
+}
+.brandrow{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:clamp(34px,7vw,84px);
+}
+.seal{width:clamp(46px,5.4vw,64px);height:auto;flex:0 0 auto}
+.brandrow .mono{color:var(--pink)}
+
+h1{
+  font-family:"Jost",Futura,"Century Gothic",system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(2.7rem,10vw,6.4rem);
+  line-height:.94;
+  letter-spacing:-.02em;
+  text-wrap:balance;
+  margin:0 0 clamp(18px,2.4vw,28px);
+  max-width:14ch;
+}
+h1 em{font-style:normal;color:var(--pink)}
+.deck{
+  max-width:54ch;
+  margin:0;
+  font-size:clamp(1.05rem,1.7vw,1.34rem);
+}
+.deck b{font-weight:600;color:var(--pink)}
+
+/* DIPLOMIPOLUT */
+.choice{
+  background:var(--navy-deep);
+  padding:clamp(46px,6vw,82px) 0;
+}
+.choice-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:12px 20px;
+  margin-bottom:clamp(28px,3.5vw,44px);
+}
+.choice-head h2{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(1.8rem,3.5vw,2.6rem);
+  margin:0;
+}
+.choice-head .mono{color:var(--pink)}
+
+.choice-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(220px,.44fr) minmax(0,1fr);
+  gap:clamp(16px,2vw,24px);
+  align-items:stretch;
+}
+
+.pathcard{
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:22px;
+  padding:clamp(22px,3vw,34px);
+  background:rgba(255,255,255,.025);
+  min-height:100%;
+}
+.pathcard.tt{box-shadow:inset 0 4px 0 var(--tt)}
+.pathcard.yr{box-shadow:inset 0 4px 0 var(--yr)}
+
+.kicker{display:block;margin-bottom:8px}
+.tt .kicker{color:var(--tt)}
+.yr .kicker{color:var(--yr)}
+
+.pathcard h3{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(1.65rem,3vw,2.25rem);
+  line-height:1.05;
+  margin:0 0 12px;
+}
+.verbs{
+  margin:0 0 16px;
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:600;
+  font-size:1.08rem;
+}
+.tt .verbs{color:var(--tt)}
+.yr .verbs{color:var(--yr)}
+
+.pathcard p{
+  margin:0 0 16px;
+  color:var(--haze);
+  max-width:52ch;
+}
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:18px 0 18px;
+}
+.chip{
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  padding:7px 11px;
+  font-size:.86rem;
+  line-height:1.15;
+  color:var(--paper);
+  background:rgba(255,255,255,.03);
+}
+.tt .chip{border-color:rgba(125,211,252,.35)}
+.yr .chip{border-color:rgba(246,196,83,.35)}
+
+.cardfoot{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px 18px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.12);
+  margin-top:24px;
+}
+.size{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:1.3rem;
+}
+.tt .size{color:var(--tt)}
+.yr .size{color:var(--yr)}
+.end{
+  color:var(--paper)!important;
+  font-size:.94rem;
+  margin:0!important;
+}
+
+/* MIDDLE COMMON CORE */
+.middle-core{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.commonband{
+  width:100%;
+  border:1px solid rgba(252,165,199,.28);
+  border-radius:22px;
+  padding:clamp(20px,2.8vw,28px);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)),
+    linear-gradient(180deg, rgba(125,211,252,.08), rgba(252,165,199,.08) 50%, rgba(246,196,83,.08));
+  text-align:center;
+}
+.common-head{
+  margin-bottom:16px;
+}
+.common-head h3{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(1.25rem,2.2vw,1.7rem);
+  line-height:1.1;
+  margin:0 0 8px;
+}
+.common-head .mono{color:var(--pink)}
+.commonchips{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  align-items:center;
+}
+.commonchip{
+  width:100%;
+  border:1px solid rgba(252,165,199,.42);
+  border-radius:999px;
+  padding:9px 14px;
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.78rem;
+  letter-spacing:.03em;
+  color:var(--paper);
+  background:rgba(255,255,255,.035);
+  text-align:center;
+}
+
+/* YHTEINEN ETENEMINEN */
+.shared{
+  background:var(--navy);
+  padding:clamp(46px,6vw,86px) 0;
+}
+.shared-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:12px 20px;
+  margin-bottom:clamp(28px,3.4vw,44px);
+}
+.shared-head h2{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(1.8rem,3.5vw,2.5rem);
+  margin:0;
+}
+.shared-head .mono{color:var(--pink)}
+
+.years{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(26px,3vw,40px);
+}
+.year{
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr);
+  column-gap:18px;
+  row-gap:5px;
+  align-items:start;
+}
+.year .num{
+  width:58px;
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(3rem,5vw,4.2rem);
+  line-height:.82;
+  color:var(--pink);
+  grid-row:1 / span 3;
+}
+.year h3{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:600;
+  font-size:1.3rem;
+  margin:0;
+}
+.year p{
+  margin:.32rem 0 0;
+  color:var(--haze);
+  font-size:.97rem;
+  max-width:none;
+  text-wrap:pretty;
+}
+
+/* HYÖDYT */
+.why{
+  background:var(--navy-deep);
+  padding:clamp(42px,5vw,72px) 0;
+}
+.why h2{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(1.7rem,3vw,2.35rem);
+  margin:0 0 22px;
+}
+.whygrid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+}
+.whyitem{
+  border-top:2px solid var(--pink);
+  padding-top:12px;
+}
+.whyitem strong{
+  display:block;
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-size:1.12rem;
+  margin-bottom:6px;
+}
+.whyitem p{
+  margin:0;
+  color:var(--haze);
+  font-size:.94rem;
+}
+
+/* CTA */
+.cta{background:var(--pink);color:var(--ink)}
+.cta .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:14px 32px;
+  padding-top:clamp(30px,3.6vw,44px);
+  padding-bottom:clamp(30px,3.6vw,44px);
+}
+.cta strong{
+  font-family:"Jost",Futura,system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(1.35rem,3vw,2rem);
+  letter-spacing:-.01em;
+}
+.cta .mono{opacity:.72}
+
+@media (max-width:980px){
+  .choice-grid{
+    grid-template-columns:1fr;
+  }
+  .middle-core{
+    order:2;
+  }
+  .pathcard.tt{order:1}
+  .pathcard.yr{order:3}
+  .commonchips{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .commonchip{
+    width:auto;
+  }
+}
+@media (max-width:820px){
+  .years{grid-template-columns:1fr}
+  .whygrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:520px){
+  .year{grid-template-columns:1fr}
+  .year .num{grid-row:auto;font-size:2.6rem}
+  .whygrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <canvas id="rays" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="brandrow">
+      <svg class="seal" viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukio">
+        <polygon fill="#fca5c7" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766...."></polygon>
+      </svg>
+      <span class="mono">Kiviruukin lukio</span>
+    </div>
+
+    <h1>Täällä taotaan <em>tulevaisuutta</em>.</h1>
+    <p class="deck">
+      <b>Valitse oma diplomipolkusi.</b> Rakenna kiinnostuksesi mukaan oma osaamiskokonaisuutesi,
+      kokoa näyttöjä osaamisestasi ja tee lopuksi oma diplomityö.
+    </p>
+  </div>
+</section>
+
+<section class="choice">
+  <div class="wrap">
+    <div class="choice-head">
+      <h2>Kaksi polkua. Sinun valintasi.</h2>
+    </div>
+
+    <div class="choice-grid">
+      <article class="pathcard tt">
+        <span class="mono kicker">Tiede &amp; teknologia</span>
+        <h3>Tiede- ja teknologia -diplomi</h3>
+        <p class="verbs">Rakenna · Koodaa · Tutki · Näytä</p>
+        <p>
+          Yhdistä luonnontieteitä, matematiikkaa ja teknologiaa käytännön tekemiseen,
+          tutkimiseen ja ongelmanratkaisuun.
+        </p>
+
+        <div class="chips">
+          <span class="chip">Makerspace</span>
+          <span class="chip">robotiikka</span>
+          <span class="chip">ohjelmointi</span>
+          <span class="chip">data</span>
+          <span class="chip">kyberturvallisuus</span>
+          <span class="chip">bioteknologia</span>
+          <span class="chip">terveysteknologia</span>
+          <span class="chip">dronet ja satelliitit</span>
+          <span class="chip">luonnontieteellinen tutkimus</span>
+        </div>
+
+        <div class="cardfoot">
+          <span class="size">väh. 16 op</span>
+          <p class="end">Diplomityö · Kiviruukkipäivä</p>
+        </div>
+      </article>
+
+      <div class="middle-core">
+        <div class="commonband">
+          <div class="common-head">
+            <h3>Yhteistä molemmille</h3>
+            <span class="mono">Yhteinen ydin</span>
+          </div>
+
+          <div class="commonchips">
+            <span class="commonchip">Innovaatiot</span>
+            <span class="commonchip">Tekoäly</span>
+            <span class="commonchip">Korkeakoulu- ja yritysyhteistyö</span>
+          </div>
+        </div>
+      </div>
+
+      <article class="pathcard yr">
+        <span class="mono kicker">Talous &amp; yrittäjyys</span>
+        <h3>Talous- ja yrittäjyysdiplomi</h3>
+        <p class="verbs">Ideoi · Kokeile · Verkostoidu · Kasva</p>
+        <p>
+          Kehitä talous-, työelämä- ja yrittäjyystaitojasi sekä opi viemään ideat
+          käytännön toiminnaksi.
+        </p>
+
+        <div class="chips">
+          <span class="chip">oma talous</span>
+          <span class="chip">työelämätaidot</span>
+          <span class="chip">yrittäjyys</span>
+          <span class="chip">sijoittaminen</span>
+          <span class="chip">yrittäjän matematiikka</span>
+          <span class="chip">media ja markkinointi</span>
+          <span class="chip">verkostoituminen</span>
+          <span class="chip">Global Business</span>
+          <span class="chip">Vuosi yrittäjänä</span>
+        </div>
+
+        <div class="cardfoot">
+          <span class="size">väh. 16 op</span>
+          <p class="end">Diplomityö · Kiviruukkipäivä</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="shared">
+  <div class="wrap">
+    <div class="shared-head">
+      <h2>Polku etenee näin</h2>
+      <span class="mono">Kolme vuotta</span>
+    </div>
+
+    <div class="years">
+      <div class="year">
+        <div class="num">1</div>
+        <h3>Kokeile</h3>
+        <p>Valitse kiinnostavia opintoja ja tutustu omaan alaasi.</p>
+      </div>
+
+      <div class="year">
+        <div class="num">2</div>
+        <h3>Syvennä</h3>
+        <p>Rakenna oma painotuksesi ja kokoa osaamistasi.</p>
+      </div>
+
+      <div class="year">
+        <div class="num">3</div>
+        <h3>Näytä</h3>
+        <p>Viimeistele diplomityösi ja esittele osaamisesi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <h2>Mitä saat diplomipolusta?</h2>
+
+    <div class="whygrid">
+      <div class="whyitem">
+        <strong>Oman painotuksen</strong>
+        <p>Rakenna kokonaisuus omien kiinnostuksenkohteidesi mukaan.</p>
+      </div>
+
+      <div class="whyitem">
+        <strong>Jatko-opintovalmiuksia</strong>
+        <p>Syvennä taitoja, joista on hyötyä korkeakouluissa ja työelämässä.</p>
+      </div>
+
+      <div class="whyitem">
+        <strong>Oikeita projekteja</strong>
+        <p>Tee yhteistyötä yritysten, korkeakoulujen ja muiden kumppaneiden kanssa.</p>
+      </div>
+
+      <div class="whyitem">
+        <strong>Näytön osaamisestasi</strong>
+        <p>Kokoa osaamisesi diplomityöhön ja esittele se muille.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <strong>Tuo oma kipinäsi.</strong>
+    <span class="mono">Valitse oma diplomipolkusi</span>
+  </div>
+</section>
+
+<script>
+(function(){
+  "use strict";
+  var cv = document.getElementById("rays");
+  var ctx = cv.getContext("2d");
+
+  function draw(){
+    var host = cv.parentNode;
+    var w = host.clientWidth, h = host.clientHeight;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    cv.width = Math.round(w*dpr);
+    cv.height = Math.round(h*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,w,h);
+
+    var cx = w*0.90, cy = h*1.14;
+    var n = 42, R = Math.hypot(w,h)*1.05;
+
+    for(var i=0;i<n;i++){
+      var t = i/(n-1);
+      var a = Math.PI + t*Math.PI*0.62;
+      var len = R*(0.42 + 0.58*Math.pow(Math.sin(t*Math.PI),0.65));
+      var inner = R*0.10;
+
+      ctx.beginPath();
+      ctx.moveTo(cx + Math.cos(a)*inner, cy + Math.sin(a)*inner);
+      ctx.lineTo(cx + Math.cos(a)*len, cy + Math.sin(a)*len);
+      ctx.lineWidth = Math.max(1.5, w*0.0035);
+      ctx.lineCap = "round";
+      ctx.strokeStyle = "rgba(252,165,199," + (0.05 + 0.13*Math.sin(t*Math.PI)).toFixed(3) + ")";
+      ctx.stroke();
+    }
+  }
+
+  draw();
+
+  var t = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(t);
+    t = setTimeout(draw, 120);
+  });
+})();
+</script>
+
+</body>
+</html>
