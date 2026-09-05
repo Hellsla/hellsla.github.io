@@ -900,6 +900,17 @@ const RHS = {
   x:'<span class="sym">ma<sub>x</sub></span>',
   y:'<span class="sym">ma<sub>y</sub></span>'
 };
+const ZERO   = '<span class="sym">0</span>';
+const ZEROV  = '<span class="sym"><span class="ov">0</span></span>';
+const MAVEC  = '<span class="sym">m<span class="ov">a</span></span>';
+/* Kokonaisvoiman suunnasta nähdään suoraan, kummassa suunnassa kiihtyvyys on nolla. */
+function accZero(sc,ax){
+  if(sc.net==="nolla") return true;
+  const pitkin = (sc.net==="ny"||sc.net==="na"||sc.net==="oi"||sc.net==="va");
+  return ax==="x" ? !pitkin : pitkin;
+}
+function rhsOf(sc,ax){ return accZero(sc,ax) ? ZERO : RHS[ax]; }
+function rhsVec(sc){ return sc.net==="nolla" ? ZEROV : MAVEC; }
 /* positiiviset termit ensin, jotta yhtälö ei ala turhaan miinuksella */
 function ordT(t){ return t.filter(x=>x.s>0).concat(t.filter(x=>x.s<0)); }
 function axTerms(sc,ax){
@@ -908,7 +919,7 @@ function axTerms(sc,ax){
 }
 /* oikea vaihtoehto + tyypilliset virheet */
 function eqOptions(sc,ax){
-  const mine=axTerms(sc,ax), other=axTerms(sc,ax==="x"?"y":"x"), rhs=RHS[ax];
+  const mine=axTerms(sc,ax), other=axTerms(sc,ax==="x"?"y":"x"), rhs=rhsOf(sc,ax);
   const out=[], seen=new Set();
   const push=(terms,ok)=>{ const h=eqStr(terms,rhs); if(seen.has(h))return; seen.add(h); out.push({html:h,ok:!!ok}); };
   push(mine,true);
@@ -923,7 +934,7 @@ function eqOptions(sc,ax){
 /* vektorimuotoinen NII */
 function vecEqOptions(sc){
   const ids=sc.forces.map(f=>f.sym);
-  const rhs='<span class="sym">m<span class="ov">a</span></span>';
+  const rhs=rhsVec(sc);
   const j=arr=>arr.map(sym).join('<span class="op"> + </span>');
   const out=[], seen=new Set();
   const push=(h,ok)=>{ if(seen.has(h))return; seen.add(h); out.push({html:h,ok:!!ok}); };
@@ -934,7 +945,10 @@ function vecEqOptions(sc){
     push(j(ids.slice(0,-1))+' <span class="op">=</span> '+rhs);
   }
   if(sc.forceD.length) push(j([...ids,sc.forceD[0].sym])+' <span class="op">=</span> '+rhs);
-  if(sc.net!=="nolla") push(j(ids)+' <span class="op">=</span> <span class="sym">0</span>');
+  /* kiihtyvässä liikkeessä nollavektori on aito virhe; levossa ma-muotoa ei tarjota,
+     koska se on sekin tosi — silloin harhoina ovat etumerkit ja puuttuvat voimat */
+  if(sc.net!=="nolla") push(j(ids)+' <span class="op">=</span> '+ZEROV);
+  if(sc.forceD.length>1) push(j([...ids,sc.forceD[1].sym])+' <span class="op">=</span> '+rhs);
   return out.slice(0,4);
 }
 
@@ -948,7 +962,8 @@ function scen(){ return SCEN[S.si]; }
 function buildPlan(sc){
   const p=["bodies","forces","dirs","komp"];
   if(sc.mag) p.push("mag");
-  p.push("net","n2","dim","n2xy");
+  p.push("net","n2","dim");
+  if(sc.dim===2) p.push("n2xy");
   return p;
 }
 function logErr(key,text){ if(!S.errors[key]) S.errors[key]={text,n:0}; S.errors[key].n++; }
@@ -1009,12 +1024,12 @@ function renderTask(){
   const sc=scen(), stepName=S.plan[S.step];
   let h=`<header><h1>${S.si+1}. ${sc.title}</h1><p class="sub">${sc.ryhma}</p></header>`;
 
-  const late = ["mag","net","n2","n2xy"].includes(stepName);
+  const late = ["mag","net","n2","dim","n2xy"].includes(stepName);
   const revealF = (late || (stepName==="komp"&&S.checked))
     ? sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym})) : null;
   const opt = {
-    comp: (stepName==="komp"&&S.checked) || ["net","n2","n2xy"].includes(stepName),
-    scaled: ["net","n2","n2xy"].includes(stepName)
+    comp: (stepName==="komp"&&S.checked) || ["net","n2","dim","n2xy"].includes(stepName),
+    scaled: ["net","n2","dim","n2xy"].includes(stepName)
   };
   h+=`<div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
       <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
@@ -1238,8 +1253,10 @@ function stepN2(sc){
        kaikki kappaleeseen vaikuttavat voimat lasketaan yhteen <b>vektoreina</b>, plusmerkeillä.
        Suunnat hoituvat vasta komponenttivaiheessa, jossa osa termeistä saa miinusmerkin.`
       +(sc.net==="nolla"
-        ? ` Tässä tilanteessa kiihtyvyys on nolla, joten oikea puoli on nolla.`
-        : ` Tässä tilanteessa kiihtyvyys ei ole nolla, joten oikeaa puolta ei saa merkitä nollaksi.`), ok);
+        ? ` Kappale on levossa tai tasaisessa liikkeessä, joten <span class="sym"><span class="ov">a</span></span> = ${ZEROV}
+           ja voimien summa on <b>nollavektori</b> — ei siis <span class="sym">m<span class="ov">a</span></span>-muotoa,
+           vaan suoraan ${ZEROV}.`
+        : ` Kiihtyvyys ei ole nolla, joten oikea puoli on ${MAVEC}. Sitä ei saa merkitä nollavektoriksi.`), ok);
     if(!ok) logOnce("n2_"+sc.id,"Newtonin II lain kirjoittaminen vektorimuodossa");
     h+=`</div>`;
   }
@@ -1249,8 +1266,9 @@ function stepN2(sc){
 /* --- vaihe: yksi- vai kaksiulotteinen tilanne --- */
 const DIM_WHY={
  1:`Kaikki kappaleeseen vaikuttavat voimat ovat samalla suoralla, tässä pystysuorassa.
-    Tilanne on <b>yksiulotteinen</b>: yksi komponenttiyhtälö riittää.
-    Vaakasuunnassa ei ole yhtään voimaa, joten siellä ei ole myöskään kiihtyvyyttä — nopeus vain säilyy.`,
+    Tilanne on <b>yksiulotteinen</b>: vektoriyhtälöstä luetaan suoraan yksi skalaariyhtälö,
+    eikä erillistä komponenttijakoa tarvita. Vaakasuunnassa ei ole yhtään voimaa,
+    joten siellä ei ole myöskään kiihtyvyyttä — nopeus vain säilyy.`,
  2:`Voimat osoittavat kahteen eri suuntaan, joten tilanne on <b>kaksiulotteinen</b>.
     Newtonin II laki kirjoitetaan erikseen x- ja y-suunnassa. Kumpikin yhtälö on skalaariyhtälö,
     ja yleensä molempia tarvitaan: y-yhtälöstä saadaan tukivoima, jota tarvitaan kitkaan x-yhtälössä.`};
@@ -1272,7 +1290,10 @@ function stepDim(sc){
   h+=`</div>`;
   if(S.checked){
     const ok=S.radio===String(sc.dim-1);
-    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim],ok)+`</div>`;
+    const lisa = sc.dim===1
+      ? `<span class="eqline">${eqStr(axTerms(sc,"y"),rhsOf(sc,"y"))}</span>${sc.eqWhy.y}`
+      : "";
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim]+lisa,ok)+`</div>`;
     if(!ok) logOnce("dim_"+sc.id,"Yksi- vai kaksiulotteinen tilanne");
   }
   return h;
@@ -1302,7 +1323,7 @@ function stepN2xy(sc){
     const ok = list[+S.radio] && list[+S.radio].ok;
     h+=`<div class="fb">`;
     h+=note(ok?"Oikein":"Katso uudelleen",
-      `<span class="eqline">${eqStr(axTerms(sc,ax),RHS[ax])}</span>${sc.eqWhy[ax]}`, ok);
+      `<span class="eqline">${eqStr(axTerms(sc,ax),rhsOf(sc,ax))}</span>${sc.eqWhy[ax]}`, ok);
     if(!ok) logOnce("eq_"+sc.id+"_"+ax,`Newtonin II laki ${ax}-suunnassa: etumerkit tai termit`);
     h+=`</div>`;
   }
@@ -1475,9 +1496,9 @@ function renderLab(){
   };
   h+=`<div class="eqbox">
     <span class="tag">${L.alpha<0.5&&Math.abs(L.F)<0.5?"Yksiulotteinen":"Kaksiulotteinen"} tilanne</span>
-    <span class="eqline">${ax_}${eqStr(tx,RHS.x)}</span>
+    <span class="eqline">${ax_}${eqStr(tx,Math.abs(c.a)<0.005?ZERO:RHS.x)}</span>
     <span class="numline">${numline(tx)} = ${num(L.m*c.a)} N</span>
-    <span class="eqline">${ay_}${eqStr(ty,RHS.y)}</span>
+    <span class="eqline">${ay_}${eqStr(ty,ZERO)}</span>
     <span class="numline">${numline(ty)} = 0 N &nbsp;(kappale ei irtoa tasosta)</span>
   </div>`;
   h+=`<div class="fb"><div class="note"><span class="head">Kokeile näitä</span>
@@ -1507,11 +1528,10 @@ function renderSummary(){
   sc.forces.forEach(f=>h+=note(`${sym(f.sym)} — ${f.name}`,f.dirWhy));
   if(sc.forces.some(f=>f.split)) h+=note("Komponenttijako",KOMP_INCL);
   h+=note("Kokonaisvoima",sc.netWhy,true);
-  const rhsv='<span class="sym">m<span class="ov">a</span></span>';
   h+=note("Newtonin II laki",
-    `<span class="eqline">${sc.forces.map(f=>sym(f.sym)).join('<span class="op"> + </span>')} <span class="op">=</span> ${rhsv}</span>
-     ${sc.dim===2?`<span class="eqline">${ax_}${eqStr(axTerms(sc,"x"),RHS.x)}</span>`:""}
-     <span class="eqline">${sc.dim===2?ay_:""}${eqStr(axTerms(sc,"y"),RHS.y)}</span>`,true);
+    `<span class="eqline">${sc.forces.map(f=>sym(f.sym)).join('<span class="op"> + </span>')} <span class="op">=</span> ${rhsVec(sc)}</span>
+     ${sc.dim===2?`<span class="eqline">${ax_}${eqStr(axTerms(sc,"x"),rhsOf(sc,"x"))}</span>`:""}
+     <span class="eqline">${sc.dim===2?ay_:""}${eqStr(axTerms(sc,"y"),rhsOf(sc,"y"))}</span>`,true);
   h+=note(sc.dim===1?"Yksiulotteinen tilanne":"Kaksiulotteinen tilanne",DIM_WHY[sc.dim]);
   if(sc.dim===2) h+=note("x-suunta",sc.eqWhy.x);
   h+=note(sc.dim===1?"Pystysuunta":"y-suunta",sc.eqWhy.y);
