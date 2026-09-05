@@ -361,10 +361,10 @@ const SCEN = [
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
    dirWhy:"Paino osoittaa aina kohti maan keskipistettä eli suoraan alas.",
-   cy:{s:-1,id:"G"}},
+   cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
    dirWhy:"Tukivoima on kohtisuorassa pintaa vastaan ja osoittaa pinnasta poispäin. Se piirretään päättymään kappaleeseen, hieman painon vektorista sivuun.",
-   cy:{s:1,id:"N"}}
+   cy:{s:1,id:"N"},rel:1}
  ],
  forceD:[FD.Fl],
  net:"nolla",
@@ -382,13 +382,13 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Pöydän pinta"},{id:"naru",name:"Naru"}],
  bodyD:[B.kasi,B.vauhti],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
-   dirWhy:"Kohtisuoraan pinnasta ulos, siis ylös. Nuoli päättyy laatikon alareunaan.",cy:{s:1,id:"N"}},
+   dirWhy:"Kohtisuoraan pinnasta ulos, siis ylös. Nuoli päättyy laatikon alareunaan.",cy:{s:1,id:"N"},rel:1},
   {id:"T",sym:"T",by:"naru",name:"Narun vetovoima",dir:"oi",
-   dirWhy:"Naru voi vain vetää, ei työntää — narua pitkin poispäin laatikosta.",cx:{s:1,id:"T"}},
+   dirWhy:"Naru voi vain vetää, ei työntää — narua pitkin poispäin laatikosta.",cx:{s:1,id:"T"},rel:0.55},
   {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pinnan liukukitkavoima",dir:"va",
-   dirWhy:"Liukukitka vastustaa pintojen liukumista, siis liikettä vastaan vasemmalle. Kitka piirretään kappaleen ja pinnan väliin.",cx:{s:-1,id:"Fmu"}}
+   dirWhy:"Liukukitka vastustaa pintojen liukumista, siis liikettä vastaan vasemmalle. Kitka piirretään kappaleen ja pinnan väliin.",cx:{s:-1,id:"Fmu"},rel:0.55}
  ],
  forceD:[FD.Fl],
  net:"nolla",
@@ -406,9 +406,9 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"},{id:"jaa",name:"Jään pinta"}],
  bodyD:[B.vauhti,{id:"maila",name:"Maila",why:"Maila ei enää kosketa kiekkoa. Kosketuksen päätyttyä sen voima päättyi."}],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"jaa",name:"Jään tukivoima",dir:"yl",
-   dirWhy:"Kohtisuoraan pinnasta ulos. Nuoli päättyy kiekkoon.",cy:{s:1,id:"N"}}
+   dirWhy:"Kohtisuoraan pinnasta ulos. Nuoli päättyy kiekkoon.",cy:{s:1,id:"N"},rel:1}
  ],
  forceD:[FD.Fl],
  net:"nolla",
@@ -426,12 +426,12 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"},{id:"tie",name:"Tien pinta"},{id:"ilma",name:"Ilma"}],
  bodyD:[B.moottori,B.vauhti],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"tie",name:"Tien tukivoima",dir:"yl",
-   dirWhy:"Kohtisuoraan pinnasta ulos, nuoli päättyy autoon.",cy:{s:1,id:"N"}},
+   dirWhy:"Kohtisuoraan pinnasta ulos, nuoli päättyy autoon.",cy:{s:1,id:"N"},rel:1},
   {id:"Fmu0",sym:"Fmu0",by:"tie",name:"Tien lepokitkavoima",dir:"oi",
-   dirWhy:"Rengas ei liu'u tiellä, joten kitka on lepokitkaa. Renkaat työntävät tietä taaksepäin, joten tie työntää autoa eteenpäin. Kitka lähtee renkaan ja tien väliltä.",cx:{s:1,id:"Fmu0"}},
-  {id:"Fi",sym:"Fi",by:"ilma",name:"Ilmanvastus",dir:"va",dirWhy:"Ilmanvastus vastustaa liikettä.",cx:{s:-1,id:"Fi"}}
+   dirWhy:"Rengas ei liu'u tiellä, joten kitka on lepokitkaa. Renkaat työntävät tietä taaksepäin, joten tie työntää autoa eteenpäin. Kitka lähtee renkaan ja tien väliltä.",cx:{s:1,id:"Fmu0"},rel:0.5},
+  {id:"Fi",sym:"Fi",by:"ilma",name:"Ilmanvastus",dir:"va",dirWhy:"Ilmanvastus vastustaa liikettä.",cx:{s:-1,id:"Fi"},rel:0.5}
  ],
  forceD:[FD.Fl],
  net:"nolla",
@@ -452,7 +452,7 @@ const SCEN = [
  bodyD:[B.vauhti,{id:"vaijeri",name:"Vaijeri",why:"Vaijeri koskettaa hissiä, ei laatikkoa. Voimakuvio piirretään vain laatikolle."}],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
-   dirWhy:"Suoraan alas. Paino ei muutu hissin liikkeen takia.",cy:{s:-1,id:"G"}},
+   dirWhy:"Suoraan alas. Paino ei muutu hissin liikkeen takia.",cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"lattia",name:"Lattian tukivoima",dir:"yl",
    dirWhy:"Kohtisuoraan lattiasta ulos, nuoli päättyy laatikkoon.",cy:{s:1,id:"N"},rel:1.35}
  ],
@@ -475,7 +475,7 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"},{id:"lattia",name:"Hissin lattia"}],
  bodyD:[B.vauhti],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"lattia",name:"Lattian tukivoima",dir:"yl",
    dirWhy:"Kohtisuoraan lattiasta ulos, nuoli päättyy laatikkoon.",cy:{s:1,id:"N"},rel:1.35}
  ],
@@ -498,7 +498,7 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"},{id:"vaaka",name:"Vaaka"}],
  bodyD:[B.vauhti,{id:"hissi",name:"Hissin seinä",why:"Seinä ei kosketa henkilöä. Vain vaaka koskettaa."}],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
   {id:"N",sym:"N",by:"vaaka",name:"Vaa'an tukivoima",dir:"yl",
    dirWhy:"Kohtisuoraan vaa'an pinnasta ulos. Nuoli päättyy henkilöön eli alkaa henkilön ja vaa'an väliltä.",cy:{s:1,id:"N"},rel:1.35}
  ],
@@ -524,7 +524,7 @@ const SCEN = [
  bodyD:[B.kasi,B.vauhti,B.ilma],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
-   dirWhy:"Suoraan alas — myös silloin kun pallo liikkuu ylöspäin.",cy:{s:-1,id:"G"}}
+   dirWhy:"Suoraan alas — myös silloin kun pallo liikkuu ylöspäin.",cy:{s:-1,id:"G"},rel:1}
  ],
  forceD:[FD.Fh,FD.Fl],
  net:"al",
@@ -542,7 +542,7 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"}],
  bodyD:[B.kasi,B.vauhti],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}}
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1}
  ],
  forceD:[FD.Fh,FD.Fl],
  net:"al",
@@ -560,7 +560,7 @@ const SCEN = [
  bodies:[{id:"maa",name:"Maa"}],
  bodyD:[B.vauhti,B.ilma],
  forces:[
-  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}}
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1}
  ],
  forceD:[FD.Fl],
  net:"al",
@@ -582,10 +582,10 @@ const SCEN = [
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
    dirWhy:"Paino osoittaa aina suoraan alas — ei tasoa pitkin. Vasta komponenttivaiheessa se jaetaan osiin.",
-   split:true,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
+   split:true,rel:1,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
   {id:"N",sym:"N",by:"pinta",name:"Tason tukivoima",dir:"ko",
    dirWhy:"Tukivoima on aina kohtisuorassa pintaa vastaan, ei pystysuora. Nuoli päättyy kappaleeseen.",
-   cy:{s:1,id:"N"}}
+   cy:{s:1,id:"N"},rel:0.906}
  ],
  forceD:[FD.Fl],
  net:"na",
@@ -604,12 +604,12 @@ const SCEN = [
  bodyD:[B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",
-   split:true,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
+   split:true,rel:1,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
   {id:"N",sym:"N",by:"pinta",name:"Tason tukivoima",dir:"ko",
-   dirWhy:"Kohtisuoraan pintaa vastaan, nuoli päättyy kappaleeseen.",cy:{s:1,id:"N"}},
+   dirWhy:"Kohtisuoraan pintaa vastaan, nuoli päättyy kappaleeseen.",cy:{s:1,id:"N"},rel:0.906},
   {id:"Fmu0",sym:"Fmu0",by:"pinta",name:"Pinnan lepokitkavoima",dir:"ny",
    dirWhy:"Lepokitka estää liukumista alas, joten se osoittaa pintaa pitkin ylös. Kitka piirretään kappaleen ja pinnan väliin.",
-   cx:{s:1,id:"Fmu0"}}
+   cx:{s:1,id:"Fmu0"},rel:0.423}
  ],
  forceD:[FD.Fl],
  net:"nolla",
@@ -628,12 +628,12 @@ const SCEN = [
  bodyD:[B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",
-   split:true,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
+   split:true,rel:1,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
   {id:"N",sym:"N",by:"pinta",name:"Tason tukivoima",dir:"ko",
-   dirWhy:"Kohtisuoraan pintaa vastaan, nuoli päättyy kappaleeseen.",cy:{s:1,id:"N"}},
+   dirWhy:"Kohtisuoraan pintaa vastaan, nuoli päättyy kappaleeseen.",cy:{s:1,id:"N"},rel:0.906},
   {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pinnan liukukitkavoima",dir:"ny",
    dirWhy:"Liukukitka vastustaa liikettä. Liike on alaspäin, joten kitka osoittaa pintaa pitkin ylös ja lähtee kappaleen ja pinnan välistä.",
-   cx:{s:1,id:"Fmu"}}
+   cx:{s:1,id:"Fmu"},rel:0.423}
  ],
  forceD:[FD.Fl],
  net:"nolla",
@@ -786,7 +786,7 @@ function sceneGeom(sc){
     if(sc.rope) g.rope={x:206,y:gy-21};
   }
   else if(sc.t==="elev"){
-    const fy=140; g.fy=fy; g.surf=0;
+    const fy=128; g.fy=fy; g.surf=0;
     if(sc.scale){ g.com={x:180,y:fy-33}; g.contact={x:180,y:fy-12}; g.halfw=28; }
     else { g.com={x:180,y:fy-17}; g.contact={x:180,y:fy}; g.halfw=26; }
   }
@@ -829,7 +829,7 @@ function anchorFor(f,g,ctx){
       return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"from"};
     }
     /* tukivoima päättyy kappaleeseen, hieman painon vektorista sivuun */
-    const off = (sgn>0 ? -1 : 1) * (g.surf?20:16);
+    const off = (sgn>0 ? -1 : 1) * (g.surf?26:16);
     return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"to"};
   }
   if(f.id==="T" && g.rope) return {x:g.rope.x, y:g.rope.y, mode:"from"};
@@ -872,7 +872,7 @@ function staticLabs(sc,g){
     a.push({x:214,y:g.com.y-4,need:N},{x:214,y:g.com.y+16,need:N},{x:214,y:g.com.y-24,need:N});
     return a;
   }
-  if(sc.t==="elev") return [{x:52,y:86,need:N},{x:28,y:62,need:N},{x:180,y:24,need:N},{x:150,y:24,need:N},{x:210,y:24,need:N}];
+  if(sc.t==="elev") return [{x:52,y:86,need:N},{x:28,y:62,need:N},{x:180,y:14,need:N},{x:150,y:14,need:N},{x:210,y:14,need:N}];
   if(sc.obj==="car") a.push({x:180,y:106,need:24});
   if(sc.v) a.push({x:273,y:26,need:N},{x:320,y:40,need:N});
   return a;
@@ -904,8 +904,8 @@ function drawScene(sc, forces, alpha, opt){
   }
   else if(sc.t==="elev"){
     const fy=g.fy;
-    s+=`<rect x="118" y="48" width="124" height="${fy-48}" fill="none" stroke="${INK}" stroke-width="2"/>`;
-    s+=`<line x1="180" y1="32" x2="180" y2="48" stroke="${INK}" stroke-width="1.5"/>`;
+    s+=`<rect x="118" y="36" width="124" height="${fy-36}" fill="none" stroke="${INK}" stroke-width="2"/>`;
+    s+=`<line x1="180" y1="20" x2="180" y2="36" stroke="${INK}" stroke-width="1.5"/>`;
     if(sc.scale){
       s+=`<rect x="152" y="${fy-12}" width="56" height="12" rx="3" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
       s+=`<circle cx="180" cy="${fy-46}" r="10" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
@@ -914,7 +914,7 @@ function drawScene(sc, forces, alpha, opt){
     } else {
       s+=`<rect x="154" y="${fy-34}" width="52" height="34" rx="6" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
     }
-    s+=txt(180,24,sc.motion,"middle");
+    s+=txt(180,14,sc.motion,"middle");
     s+=axes(52,86,0,90);
   }
   else if(sc.t==="air"){
@@ -943,13 +943,14 @@ function drawScene(sc, forces, alpha, opt){
   }
 
   if(showF){
-    const L0 = sc.t==="incline" ? 54 : 46;
+    const L0 = sc.t==="incline" ? 58 : 52;
+    const plen = rel => Math.max(22, L0*(opt.scaled ? (rel===undefined?1:rel) : 1));
     const main=[], sub=[]; let pts=[];
     const ctx={fricSign:fricSignOf(forces,alpha,g.surf)};
     forces.forEach(fo=>{
       const ang=dirAngle(fo.dir, alpha||0);
       const an=anchorFor(fo,g,ctx);
-      const len=L0*(opt.scaled&&fo.rel?fo.rel:1);
+      const len=plen(fo.rel);
       const lf = fo.id==="N" ? 0.72 : (fo.id==="G" ? 0.45 : 0.55);
       /* kaikki voimat piirretään samalla tyylillä — vain komponentit erottuvat */
       const p=vecParts(an.x,an.y,ang,len,fo.gl,{mode:an.mode,loff:labOff(fo,g,ang),lfrac:lf});
@@ -957,7 +958,7 @@ function drawScene(sc, forces, alpha, opt){
     });
     let labs=[];
     if(opt.comp) forces.filter(x=>x.split).forEach(fo=>{
-      const r=drawComps(fo,g,scObj,L0*(fo.rel||1)); s+=r.svg; labs=labs.concat(r.labs); pts=pts.concat(r.pts);
+      const r=drawComps(fo,g,scObj,plen(fo.rel)); s+=r.svg; labs=labs.concat(r.labs); pts=pts.concat(r.pts);
     });
     s+=placeLabels(labs.concat(main,sub), staticLabs(sc,g).concat(pts));
   }
@@ -1132,7 +1133,7 @@ function renderTask(){
     ? sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym})) : null;
   const opt = {
     comp: (stepName==="komp"&&S.checked) || ["net","n2","dim","n2xy"].includes(stepName),
-    scaled: ["net","n2","dim","n2xy"].includes(stepName)
+    scaled: ["net","n2","dim","n2xy"].includes(stepName) || (stepName==="komp" && !sc.mag)
   };
   h+=`<div class="task"><div class="colA"><div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
       <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div></div>`;
@@ -1317,7 +1318,7 @@ function stepNet(sc){
   const set = (sc.dirset==="incline"?INCL_SET:FLAT_SET);
   const opts = ["nolla",...set];
   let h=`<p class="q">Mihin suuntaan kokonaisvoima osoittaa?</p>
-   <p class="hint">Vertaa yllä olevaa voimakuviota liikkeen kuvaukseen.</p><div class="opts">`;
+   <p class="hint">Nuolet on piirretty oikeassa suhteessa: yhtä pitkät vastakkaiset nuolet kumoavat toisensa.</p><div class="opts">`;
   opts.forEach(tok=>{
     let cls="opt radio";
     if(S.checked){
