@@ -58,6 +58,22 @@
   :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
   .wrap{max-width:660px;margin:0 auto;padding:18px 14px 108px}
 
+  /* leveillä näytöillä kuva ja kysymys rinnakkain, jotta kaikki mahtuu ruudulle */
+  #app.wide{max-width:1040px}
+  @media (min-width:900px){
+    #app.wide .task{
+      display:grid;
+      grid-template-columns:minmax(330px,1fr) minmax(360px,1fr);
+      gap:30px;align-items:start;
+    }
+    #app.wide .task .scene{position:sticky;top:16px}
+    #app.wide .task .scene svg{max-width:none}
+    #app.wide .labgrid{grid-template-columns:1fr}
+  }
+  @media (min-width:900px) and (max-height:820px){
+    #app.wide .task .scene svg{max-width:470px}
+  }
+
   header{margin-bottom:18px}
   h1{
     font-family:var(--slab);font-size:clamp(1.5rem,6vw,2rem);font-weight:700;
@@ -76,7 +92,7 @@
     margin-bottom:16px;
     overflow:hidden;
   }
-  .scene svg{display:block;width:100%;height:auto}
+  .scene svg{display:block;width:100%;max-width:520px;height:auto;margin:0 auto}
   .caption{
     background:var(--panel-2);
     border-top:2px solid rgba(58,54,47,.08);
@@ -1071,6 +1087,7 @@ function renderMenu(){
       h+=`<div class="sumrow"><span>${e.text}</span><span class="n">${e.n}×</span></div>`;
     });
   }
+  app.classList.remove("wide");
   app.innerHTML=h;
   bar.innerHTML = S.done.size ? `<button class="act ghost" data-reset>Aloita alusta</button>` : "";
   app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{
@@ -1100,10 +1117,10 @@ function renderTask(){
     comp: (stepName==="komp"&&S.checked) || ["net","n2","dim","n2xy"].includes(stepName),
     scaled: ["net","n2","dim","n2xy"].includes(stepName)
   };
-  h+=`<div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
-      <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
+  h+=`<div class="task"><div class="colA"><div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
+      <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div></div>`;
   const pros=Math.round((S.step+(S.checked?1:0))/S.plan.length*100);
-  h+=`<p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>
+  h+=`<div class="colB"><p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>
       <div class="track"><div class="fill" style="width:${pros}%"></div></div>`;
 
   if(stepName==="bodies") h+=stepBodies(sc);
@@ -1115,7 +1132,9 @@ function renderTask(){
   if(stepName==="n2")     h+=stepN2(sc);
   if(stepName==="dim")    h+=stepDim(sc);
   if(stepName==="n2xy")   h+=stepN2xy(sc);
+  h+=`</div></div>`;
 
+  app.classList.add("wide");
   app.innerHTML=h;
   wire(sc,stepName);
 }
@@ -1533,12 +1552,17 @@ function slider(k,label,min,max,step,val,fmt){
 function renderLab(){
   const L=LAB, c=labCalc(L);
   let h=`<header><h1>Voimalabra</h1><p class="sub">Kokeile itse · FY4 Voima ja liike</p></header>`;
-  h+=`<div class="scene">${drawLab(L,c)}
+  h+=`<div class="task"><div class="colA"><div class="scene">${drawLab(L,c)}
       <div class="caption">${c.tila}<span class="ax">Koordinaatisto: <b>x</b> tasoa pitkin ylös, <b>y</b> kohtisuoraan tasosta ulos</span></div></div>`;
-  h+=`<p class="hint" style="margin-top:-6px">Nuolten pituudet ovat verrannollisia voimien suuruuksiin.
+  h+=`<p class="hint">Nuolten pituudet ovat verrannollisia voimien suuruuksiin.
       Voima <span class="sym">F</span> on positiivinen tasoa pitkin ylöspäin (x-akselin suuntaan) ja negatiivinen alaspäin.
-      Tarkastelu tehdään levosta lähtien.</p>`;
-  h+=`<div class="labgrid">
+      Tarkastelu tehdään levosta lähtien.</p>
+      <div class="fb"><div class="note"><span class="head">Kokeile näitä</span>
+      Nosta μ nollasta: milloin kappale pysähtyy paikalleen? Vertaa kulmaa arvoon, jolla μ = tan α.
+      Aseta μ = 0 ja katso, miten kiihtyvyys riippuu vain kulmasta — ei massasta.
+      Aseta α = 0 ja vedä voimalla F: silloin tilanne on yksiulotteinen vaakasuunnassa.</div></div>
+      </div><div class="colB">
+      <div class="labgrid">
     ${slider("alpha","Kallistuskulma α",0,40,1,L.alpha,num(L.alpha,0)+"°")}
     ${slider("F","Voima F tasoa pitkin",-40,40,1,L.F,num(L.F,0)+" N")}
     ${slider("m","Massa m",0.5,8,0.5,L.m,num(L.m)+" kg")}
@@ -1574,11 +1598,9 @@ function renderLab(){
     <span class="eqline">${ay_}${eqStr(ty,ZERO)}</span>
     <span class="numline">${numline(ty)} = 0 N &nbsp;(kappale ei irtoa tasosta)</span>
   </div>`;
-  h+=`<div class="fb"><div class="note"><span class="head">Kokeile näitä</span>
-    Nosta μ nollasta: milloin kappale pysähtyy paikalleen? Vertaa kulmaa arvoon, jolla μ = tan α.
-    Aseta μ = 0 ja katso, miten kiihtyvyys riippuu vain kulmasta — ei massasta.
-    Aseta α = 0 ja vedä voimalla F: silloin tilanne on yksiulotteinen vaakasuunnassa.</div></div>`;
+  h+=`</div></div>`;
 
+  app.classList.add("wide");
   app.innerHTML=h;
   bar.innerHTML=`<button class="act ghost" data-back>Tilanteet</button>
                  <button class="act" data-reset>Palauta arvot</button>`;
@@ -1595,9 +1617,9 @@ function renderSummary(){
   const sc=scen();
   const forces=sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym}));
   let h=`<header><h1>${sc.title}</h1><p class="sub">Valmis ratkaisu</p></header>
-   <div class="scene">${drawScene(sc.scene,forces,sc.alpha,{comp:true,scaled:true})}
-   <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
-  h+=`<div class="fb">`;
+   <div class="task"><div class="colA"><div class="scene">${drawScene(sc.scene,forces,sc.alpha,{comp:true,scaled:true})}
+   <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div></div>`;
+  h+=`<div class="colB"><div class="fb">`;
   sc.forces.forEach(f=>h+=note(`${sym(f.sym)} — ${f.name}`,f.dirWhy));
   if(sc.forces.some(f=>f.split)) h+=note("Komponenttijako",KOMP_INCL);
   h+=note("Kokonaisvoima",sc.netWhy,true);
@@ -1608,8 +1630,9 @@ function renderSummary(){
   h+=note(sc.dim===1?"Yksiulotteinen tilanne":"Kaksiulotteinen tilanne",DIM_WHY[sc.dim]);
   if(sc.dim===2) h+=note("x-suunta",sc.eqWhy.x);
   h+=note(sc.dim===1?"Pystysuunta":"y-suunta",sc.eqWhy.y);
-  h+=`</div>`;
+  h+=`</div></div></div>`;
   const next=SCEN[S.si+1];
+  app.classList.add("wide");
   app.innerHTML=h;
   bar.innerHTML=`<button class="act ghost" data-back>Tilanteet</button>`+
     (next?`<button class="act" data-next>Seuraava tilanne</button>`:"");
