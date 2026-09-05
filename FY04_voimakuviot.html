@@ -4,23 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Voimakuviot – Taso 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Archivo:wght@400;500;600&display=swap">
 <style>
   :root{
+    /* Kiviruukin brändivärit */
+    --navy:#012169;
+    --navy-deep:#010f38;
+    --pink:#fca5c7;
+    --haze:#b9c3de;
+
     --paper:#FFFFFF;
     --card:#FFFFFF;
-    --ink:#4A4A4A;
-    --ink-soft:#7A7A7A;
-    --head:#3D3D3D;
-    --rule:#DCDCDC;
+    --ink:#26314B;
+    --ink-soft:#5C6A8A;
+    --head:#012169;
+    --rule:#D8DFEE;
+    --tint:#E7EEFA;        /* vaalea navy */
+    --tint-pink:#FEF1F6;   /* vaalea pinkki */
+    --ok:#012169;
+
+    /* voimakuvion värit pidetään ennallaan */
     --vector:#F1786F;
     --accel:#7CB342;
-    --box-bg:#FDF6CE;
-    --box-br:#E0B325;
     --obj-bg:#FCEFA1;
     --obj-br:#E0A93B;
-    --steel:#E0B325;
-    --ok:#5C9E31;
-    --sans:"Nunito Sans","Source Sans Pro","Segoe UI",Roboto,-apple-system,system-ui,sans-serif;
+
+    --sans:"Archivo","Source Sans Pro","Segoe UI",Roboto,-apple-system,system-ui,sans-serif;
+    --title:"Jost",Futura,"Century Gothic","Archivo",system-ui,sans-serif;
     --math:"Latin Modern Roman","Computer Modern",Cambria,"Times New Roman",Times,serif;
   }
   *{box-sizing:border-box}
@@ -36,7 +48,7 @@
   .wrap{max-width:34rem;margin:0 auto;padding:20px 16px 96px}
 
   header{margin-bottom:20px}
-  h1{font-size:1.6rem;font-weight:800;color:var(--head);margin:0 0 2px;letter-spacing:-0.015em}
+  h1{font-family:var(--title);font-size:1.62rem;font-weight:700;color:var(--head);margin:0 0 2px;letter-spacing:-0.015em}
   .sub{color:var(--ink-soft);font-size:0.9rem;margin:0}
 
   /* ---- diagram panel ---- */
@@ -78,34 +90,34 @@
     cursor:pointer;
     width:100%;
   }
-  .opt:hover{border-color:var(--box-br)}
-  .opt:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
-  .opt[aria-pressed="true"]{border-color:var(--box-br);background:var(--box-bg)}
+  .opt:hover{border-color:var(--haze)}
+  .opt[aria-pressed="true"]{border-color:var(--navy);background:var(--tint)}
   .opt .mark{
     flex:0 0 15px;height:15px;border:1.5px solid var(--ink-soft);border-radius:3px;
     background:transparent;
   }
-  .opt[aria-pressed="true"] .mark{background:var(--box-br);border-color:var(--box-br)}
+  .opt[aria-pressed="true"] .mark{background:var(--navy);border-color:var(--navy)}
   .opt.radio .mark{border-radius:50%}
   .opt .txt{flex:1}
   .opt .arrowbox{flex:0 0 40px}
   .opt .arrowbox svg{display:block;width:40px;height:34px}
   .opt.eq .txt{font-size:1.02rem}
 
-  .opt.right{border-color:var(--ok);background:#F2F8EC}
-  .opt.wrong{border-color:var(--ink-soft);border-style:dashed;background:#fff}
-  .opt.missed{border-color:var(--ok);border-style:dashed;background:#fff}
+  .opt.right{border-color:var(--navy);background:var(--tint)}
+  .opt.wrong{border-color:var(--pink);border-style:dashed;background:var(--tint-pink)}
+  .opt.missed{border-color:var(--navy);border-style:dashed;background:#fff}
 
   /* ---- feedback: Studeon keltainen laatikko ---- */
   .fb{margin:0 0 18px;display:flex;flex-direction:column;gap:11px}
   .note{
-    background:var(--box-bg);
-    border:1.5px solid var(--box-br);
+    background:#F6F8FC;
+    border:1.5px solid var(--haze);
     border-radius:10px;
     padding:11px 14px;
     font-size:.95rem;
   }
-  .note.good{background:#F2F8EC;border-color:var(--ok)}
+  .note.good{background:var(--tint);border-color:var(--navy)}
+  .note.warn{background:var(--tint-pink);border-color:var(--pink)}
   .note .head{display:block;font-weight:700;color:var(--head);margin-bottom:2px}
   .note .eqline{display:block;margin:6px 0 2px;font-size:1.05rem;color:var(--head)}
 
@@ -114,13 +126,13 @@
        border-top:1px solid var(--rule);padding:11px 16px calc(11px + env(safe-area-inset-bottom))}
   .bar .inner{max-width:34rem;margin:0 auto;display:flex;gap:9px}
   button.act{
-    flex:1;font:inherit;font-size:1rem;font-weight:600;padding:12px;cursor:pointer;
+    flex:1;font-family:var(--title);font-size:1rem;font-weight:600;padding:12px;cursor:pointer;
     border-radius:8px;
-    background:var(--head);color:#fff;border:1.5px solid var(--head);
+    background:var(--navy);color:#fff;border:1.5px solid var(--navy);
   }
-  button.act.ghost{background:transparent;color:var(--head);border-color:var(--rule)}
+  button.act.ghost{background:transparent;color:var(--navy);border-color:var(--rule)}
   button.act[disabled]{opacity:.35;cursor:default}
-  button.act:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
+  :focus-visible{outline:3px solid var(--pink);outline-offset:3px}
 
   /* ---- symbols: LaTeX-tyylinen kursiivi ja vektoriviiva ---- */
   .sym{font-family:var(--math);font-style:italic;font-size:1.12em;white-space:nowrap}
@@ -133,30 +145,31 @@
   .sumrow{display:flex;justify-content:space-between;gap:12px;
           border-bottom:1px solid var(--rule);padding:9px 0;font-size:.95rem}
   .sumrow:last-child{border-bottom:0}
-  .sumrow .n{color:var(--vector);font-variant-numeric:tabular-nums}
+  .sumrow .n{color:var(--navy);font-weight:600;font-variant-numeric:tabular-nums}
 
   .picker{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
   .picker button{
     font:inherit;font-size:.9rem;padding:7px 12px;cursor:pointer;border-radius:20px;
     background:var(--card);border:1.5px solid var(--rule);color:var(--ink);
   }
-  .picker button[aria-pressed="true"]{background:var(--box-bg);color:var(--head);border-color:var(--box-br);font-weight:600}
-  .picker button:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
-  h2{font-size:1.08rem;font-weight:700;color:var(--head);margin:22px 0 8px}
+  .picker button[aria-pressed="true"]{background:var(--tint);color:var(--navy);border-color:var(--navy);font-weight:600}
+  .picker button[data-lab]{background:var(--tint-pink);border-color:var(--pink);color:var(--navy);font-weight:600}
+  h2{font-family:var(--title);font-size:1.1rem;font-weight:600;color:var(--head);margin:22px 0 8px;letter-spacing:-.005em}
 
   /* ---- voimalabran säätimet ---- */
   .ctl{margin:0 0 13px}
   .ctl .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:.92rem;margin-bottom:3px}
   .ctl .lab b{color:var(--head);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
   .ctl .lab>span:first-child{min-width:0}
-  .ctl input[type=range]{width:100%;accent-color:var(--box-br);margin:0}
+  .ctl input[type=range]{width:100%;accent-color:var(--navy);margin:0}
   .labgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
   @media (max-width:26rem){.labgrid{grid-template-columns:1fr}}
   .eqbox{background:var(--card);border:1.5px solid var(--rule);border-radius:10px;padding:11px 14px;margin:0 0 16px}
   .eqbox .eqline{display:block;margin:5px 0;font-size:1.05rem;color:var(--head)}
   .eqbox .numline{display:block;margin:0 0 8px;font-size:.92rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
-  .tag{display:inline-block;font-size:.8rem;padding:2px 9px;border-radius:20px;
-       background:var(--box-bg);border:1px solid var(--box-br);color:var(--head);margin-bottom:6px}
+  .tag{display:inline-block;font-family:var(--title);font-weight:500;font-size:.78rem;
+       letter-spacing:.04em;padding:3px 10px;border-radius:20px;
+       background:var(--tint);border:1px solid var(--haze);color:var(--navy);margin-bottom:6px}
   @media (prefers-reduced-motion:no-preference){
     .fb{animation:rise .18s ease-out}
     @keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
@@ -1069,8 +1082,8 @@ function stepBodies(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     list.forEach((b,i)=>{
-      if(S.sel.has(i)&&!b.ok){ h+=note(b.name,b.why); logOnce(b.id,b.why); }
-      if(!S.sel.has(i)&&b.ok) h+=note(b.name,"Tämä kappale on vuorovaikutuksessa tutkittavan kappaleen kanssa. Muista kirjoittaa vuorovaikutus molempiin suuntiin.");
+      if(S.sel.has(i)&&!b.ok){ h+=note(b.name,b.why,"warn"); logOnce(b.id,b.why); }
+      if(!S.sel.has(i)&&b.ok) h+=note(b.name,"Tämä kappale on vuorovaikutuksessa tutkittavan kappaleen kanssa. Muista kirjoittaa vuorovaikutus molempiin suuntiin.","warn");
     });
     if(allRight(list)) h+=note("Oikein","Nyt jokaiselle voimalle löytyy kappale, joka sen kohdistaa.",true);
     h+=`</div>`;
@@ -1101,10 +1114,10 @@ function stepForces(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     list.forEach((f,i)=>{
-      if(S.sel.has(i)&&!f.ok){ h+=note("Mikä kappale kohdistaa tämän voiman?",f.why); logOnce(f.id,f.why); }
+      if(S.sel.has(i)&&!f.ok){ h+=note("Mikä kappale kohdistaa tämän voiman?",f.why,"warn"); logOnce(f.id,f.why); }
       if(!S.sel.has(i)&&f.ok){
         const src=sc.forces.find(x=>x.id===f.id);
-        h+=note("Puuttuu",`${src.name} — tämä tulee kappaleelta, jonka valitsit vaiheessa 1.`);
+        h+=note("Puuttuu",`${src.name} — tämä tulee kappaleelta, jonka valitsit vaiheessa 1.`,"warn");
       }
     });
     if(allRight(list)) h+=note("Oikein","Jokainen voima on jäljitettävissä yhteen kappaleeseen.",true);
@@ -1134,7 +1147,7 @@ function stepDirs(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     if(S.radio===f.dir) h+=note("Oikein",f.dirWhy,true);
-    else { h+=note("Tarkista suunta",f.dirWhy); logOnce("dir_"+sc.id+"_"+f.id,`${f.name}: väärä suunta`); }
+    else { h+=note("Tarkista suunta",f.dirWhy,"warn"); logOnce("dir_"+sc.id+"_"+f.id,`${f.name}: väärä suunta`); }
     if(f.id==="N") h+=note("Piirtotapa","Tukivoima piirretään päättymään kappaleeseen: nuolen kärki on kappaleen pinnassa. Piirrä se hieman painon vektorista sivuun, jotta nuolet eivät mene päällekkäin.");
     if(f.id==="Fmu"||f.id==="Fmu0") h+=note("Piirtotapa","Kitkavoima alkaa tai päättyy kappaleen ja pinnan väliin — juuri siihen kohtaan, jossa pinnat koskettavat toisiaan.");
     h+=`</div>`;
@@ -1166,7 +1179,7 @@ function stepKomp(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     const ok=allRight(list);
-    h+=note(ok?"Oikein":"Katso uudelleen", anySplit?KOMP_INCL:KOMP_FLAT, ok);
+    h+=note(ok?"Oikein":"Katso uudelleen", anySplit?KOMP_INCL:KOMP_FLAT, ok?true:"warn");
     sc.forces.filter(f=>f.split).forEach(f=>{
       h+=note(`${sym(f.sym)} komponentteina`,
         `Kulma α on tason ja vaakatason välissä, joten sama kulma löytyy myös painon ja tason normaalin väliltä.
@@ -1196,7 +1209,7 @@ function stepMag(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     const ok = S.radio===String(sc.mag.correct);
-    h+=note(ok?"Oikein":"Katso uudelleen",sc.mag.why,ok);
+    h+=note(ok?"Oikein":"Katso uudelleen",sc.mag.why,ok?true:"warn");
     if(!ok) logOnce("mag_"+sc.id,"Voimien suuruusvertailu kiihtyvässä liikkeessä");
     h+=`</div>`;
   }
@@ -1223,7 +1236,7 @@ function stepNet(sc){
   h+=`</div>`;
   if(S.checked){
     const ok=S.radio===sc.net;
-    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",sc.netWhy,ok)+`</div>`;
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",sc.netWhy,ok?true:"warn")+`</div>`;
     if(!ok) logOnce("net_"+sc.id,"Kokonaisvoiman suunnan päättely");
   }
   return h;
@@ -1256,7 +1269,7 @@ function stepN2(sc){
         ? ` Kappale on levossa tai tasaisessa liikkeessä, joten <span class="sym"><span class="ov">a</span></span> = ${ZEROV}
            ja voimien summa on <b>nollavektori</b> — ei siis <span class="sym">m<span class="ov">a</span></span>-muotoa,
            vaan suoraan ${ZEROV}.`
-        : ` Kiihtyvyys ei ole nolla, joten oikea puoli on ${MAVEC}. Sitä ei saa merkitä nollavektoriksi.`), ok);
+        : ` Kiihtyvyys ei ole nolla, joten oikea puoli on ${MAVEC}. Sitä ei saa merkitä nollavektoriksi.`), ok?true:"warn");
     if(!ok) logOnce("n2_"+sc.id,"Newtonin II lain kirjoittaminen vektorimuodossa");
     h+=`</div>`;
   }
@@ -1293,7 +1306,7 @@ function stepDim(sc){
     const lisa = sc.dim===1
       ? `<span class="eqline">${eqStr(axTerms(sc,"y"),rhsOf(sc,"y"))}</span>${sc.eqWhy.y}`
       : "";
-    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim]+lisa,ok)+`</div>`;
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim]+lisa,ok?true:"warn")+`</div>`;
     if(!ok) logOnce("dim_"+sc.id,"Yksi- vai kaksiulotteinen tilanne");
   }
   return h;
@@ -1323,7 +1336,7 @@ function stepN2xy(sc){
     const ok = list[+S.radio] && list[+S.radio].ok;
     h+=`<div class="fb">`;
     h+=note(ok?"Oikein":"Katso uudelleen",
-      `<span class="eqline">${eqStr(axTerms(sc,ax),rhsOf(sc,ax))}</span>${sc.eqWhy[ax]}`, ok);
+      `<span class="eqline">${eqStr(axTerms(sc,ax),rhsOf(sc,ax))}</span>${sc.eqWhy[ax]}`, ok?true:"warn");
     if(!ok) logOnce("eq_"+sc.id+"_"+ax,`Newtonin II laki ${ax}-suunnassa: etumerkit tai termit`);
     h+=`</div>`;
   }
@@ -1331,8 +1344,10 @@ function stepN2xy(sc){
 }
 
 /* --- apurit --- */
-function note(head,body,good){
-  return `<div class="note${good?" good":""}"><span class="head">${head}</span>${body}</div>`;
+/* kind: true = oikein (navy), "warn" = tarkista (pinkki), muuten neutraali */
+function note(head,body,kind){
+  const c = (kind===true||kind==="good") ? " good" : (kind==="warn" ? " warn" : "");
+  return `<div class="note${c}"><span class="head">${head}</span>${body}</div>`;
 }
 function allRight(list){
   return list.every((x,i)=>x.ok===S.sel.has(i));
