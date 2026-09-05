@@ -4,162 +4,230 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Voimakuviot – Taso 1</title>
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#efe8da">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#FFFFFF;
-    --card:#FFFFFF;
-    --ink:#4A4A4A;
-    --ink-soft:#7A7A7A;
-    --head:#3D3D3D;
-    --rule:#DCDCDC;
+    /* Käsitetakomon / Kiviruukin yhteinen paletti */
+    --bg:#efe8da;
+    --panel:#faf6ec;
+    --panel-2:#f2ecdd;
+    --ink:#3a3530;
+    --ink-soft:#6c6459;
+    --clay:#fca5c7;
+    --brick:#012169;
+    --brick-dark:#011a52;
+    --green:#5f7a52;
+    --fire-orange:#e8863a;
+    --stone-light:#cdc3ad;
+    --vastaus:#e9eef7;
+    --vastaus-reuna:rgba(1,33,105,.14);
+    --warm:#fdf0e4;
+    --radius:18px;
+    --shadow:0 6px 18px rgba(58,54,47,.18);
+    --shadow-lift:0 12px 28px rgba(58,54,47,.22);
+    --focus:#2e2a24;
+
+    /* voimakuvion omat värit pidetään ennallaan */
     --vector:#F1786F;
     --accel:#7CB342;
-    --box-bg:#FDF6CE;
-    --box-br:#E0B325;
     --obj-bg:#FCEFA1;
     --obj-br:#E0A93B;
-    --steel:#E0B325;
-    --ok:#5C9E31;
-    --sans:"Nunito Sans","Source Sans Pro","Segoe UI",Roboto,-apple-system,system-ui,sans-serif;
+
+    --sans:"Karla",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    --slab:"Zilla Slab",Georgia,"Times New Roman",serif;
     --math:"Latin Modern Roman","Computer Modern",Cambria,"Times New Roman",Times,serif;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
+  html,body{margin:0;min-height:100%}
   body{
-    background:var(--paper);
+    background:
+      radial-gradient(circle at 18% 22%, rgba(255,255,255,.55), transparent 42%),
+      radial-gradient(circle at 82% 68%, rgba(58,53,45,.05), transparent 45%),
+      var(--bg);
     color:var(--ink);
     font-family:var(--sans);
     font-size:17px;
     line-height:1.5;
     -webkit-text-size-adjust:100%;
   }
-  .wrap{max-width:34rem;margin:0 auto;padding:20px 16px 96px}
+  button,input{font-family:inherit}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+  .wrap{max-width:660px;margin:0 auto;padding:18px 14px 108px}
 
-  header{margin-bottom:20px}
-  h1{font-size:1.6rem;font-weight:800;color:var(--head);margin:0 0 2px;letter-spacing:-0.015em}
-  .sub{color:var(--ink-soft);font-size:0.9rem;margin:0}
+  header{margin-bottom:18px}
+  h1{
+    font-family:var(--slab);font-size:clamp(1.5rem,6vw,2rem);font-weight:700;
+    color:var(--brick-dark);margin:0 0 3px;line-height:1.1;
+  }
+  .sub{color:var(--ink-soft);font-size:.82rem;font-weight:700;letter-spacing:.05em;
+       text-transform:uppercase;margin:0}
+  h2{font-family:var(--slab);font-size:1.25rem;font-weight:700;color:var(--brick-dark);margin:24px 0 9px}
 
-  /* ---- diagram panel ---- */
+  /* ---- kuvapaneeli ---- */
   .scene{
-    background:#FAFAFA;
-    border:1px solid var(--rule);
-    border-radius:6px;
-    margin-bottom:18px;
+    background:var(--panel);
+    border:2px solid transparent;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    margin-bottom:16px;
     overflow:hidden;
   }
   .scene svg{display:block;width:100%;height:auto}
   .caption{
-    background:#fff;
-    border-top:1px solid var(--rule);
-    padding:10px 13px;
-    font-size:0.92rem;
+    background:var(--panel-2);
+    border-top:2px solid rgba(58,54,47,.08);
+    padding:11px 15px;
+    font-size:.9rem;
     color:var(--ink-soft);
+    font-weight:600;
   }
-  .caption .ax{display:block;margin-top:4px;font-size:.85rem;color:var(--ink-soft)}
-  .caption .ax b{color:var(--head);font-weight:600}
+  .caption .ax{display:block;margin-top:4px;font-size:.8rem}
+  .caption .ax b{color:var(--brick);font-weight:800}
 
-  /* ---- progress ---- */
-  .steps{display:flex;gap:6px;align-items:baseline;margin:0 0 14px;font-size:.85rem;color:var(--ink-soft)}
-  .steps b{color:var(--ink);font-weight:600}
+  /* ---- eteneminen ---- */
+  .steps{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
+         color:var(--ink-soft);opacity:.75;margin:0 0 6px}
+  .steps b{color:var(--brick)}
+  .track{height:6px;border-radius:999px;background:var(--panel-2);overflow:hidden;margin:0 0 18px;
+         box-shadow:inset 0 1px 2px rgba(58,54,47,.1)}
+  .fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--clay),var(--fire-orange));
+        transition:width .3s ease}
 
-  /* ---- question ---- */
-  .q{font-size:1.08rem;margin:0 0 4px}
-  .hint{color:var(--ink-soft);font-size:.88rem;margin:0 0 14px}
+  /* ---- kysymys ---- */
+  .q{font-family:var(--slab);font-size:1.24rem;font-weight:600;color:var(--brick-dark);margin:0 0 5px;line-height:1.3}
+  .hint{color:var(--ink-soft);font-size:.85rem;font-weight:600;margin:0 0 14px}
 
-  .opts{display:flex;flex-direction:column;gap:7px;margin:0 0 18px}
+  .opts{display:flex;flex-direction:column;gap:9px;margin:0 0 18px}
   .opt{
-    display:flex;align-items:center;gap:11px;
-    background:var(--card);
-    border:1.5px solid var(--rule);
-    border-radius:8px;
-    padding:11px 13px;
+    display:flex;align-items:center;gap:12px;
+    background:var(--panel);
+    border:2px solid transparent;
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    padding:13px 15px;
     text-align:left;
     font:inherit;color:inherit;
     cursor:pointer;
     width:100%;
+    transition:transform .14s ease,border-color .14s ease,background .14s ease;
   }
-  .opt:hover{border-color:var(--box-br)}
-  .opt:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
-  .opt[aria-pressed="true"]{border-color:var(--box-br);background:var(--box-bg)}
+  .opt:hover{border-color:var(--clay);transform:translateX(3px)}
+  .opt[aria-pressed="true"]{border-color:var(--clay)}
   .opt .mark{
-    flex:0 0 15px;height:15px;border:1.5px solid var(--ink-soft);border-radius:3px;
-    background:transparent;
+    flex:0 0 22px;height:22px;border-radius:6px;
+    border:2px solid var(--stone-light);background:var(--panel-2);
+    transition:background .14s,border-color .14s;
   }
-  .opt[aria-pressed="true"] .mark{background:var(--box-br);border-color:var(--box-br)}
-  .opt.radio .mark{border-radius:50%}
-  .opt .txt{flex:1}
+  .opt[aria-pressed="true"] .mark{background:var(--clay);border-color:var(--clay)}
+  .opt.radio .mark{border-radius:999px}
+  .opt .txt{flex:1;font-weight:600}
   .opt .arrowbox{flex:0 0 40px}
   .opt .arrowbox svg{display:block;width:40px;height:34px}
-  .opt.eq .txt{font-size:1.02rem}
+  .opt.eq .txt{font-size:1.02rem;font-weight:500}
 
-  .opt.right{border-color:var(--ok);background:#F2F8EC}
-  .opt.wrong{border-color:var(--ink-soft);border-style:dashed;background:#fff}
-  .opt.missed{border-color:var(--ok);border-style:dashed;background:#fff}
+  .opt.right{border-color:var(--brick);background:var(--vastaus)}
+  .opt.wrong{border-color:var(--fire-orange);border-style:dashed;background:var(--warm)}
+  .opt.missed{border-color:var(--brick);border-style:dashed;background:var(--panel)}
+  .opt.right:hover,.opt.wrong:hover,.opt.missed:hover{transform:none}
 
-  /* ---- feedback: Studeon keltainen laatikko ---- */
+  /* ---- palauteruudut ---- */
   .fb{margin:0 0 18px;display:flex;flex-direction:column;gap:11px}
   .note{
-    background:var(--box-bg);
-    border:1.5px solid var(--box-br);
-    border-radius:10px;
-    padding:11px 14px;
-    font-size:.95rem;
+    background:var(--panel);
+    border:2px solid rgba(58,54,47,.12);
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    padding:13px 16px;
+    font-size:.94rem;
   }
-  .note.good{background:#F2F8EC;border-color:var(--ok)}
-  .note .head{display:block;font-weight:700;color:var(--head);margin-bottom:2px}
-  .note .eqline{display:block;margin:6px 0 2px;font-size:1.05rem;color:var(--head)}
+  .note.good{background:var(--vastaus);border-color:var(--brick)}
+  .note.warn{background:var(--warm);border-color:var(--fire-orange)}
+  .note .head{display:block;font-family:var(--slab);font-weight:700;font-size:1.02rem;
+              color:var(--brick-dark);margin-bottom:3px}
+  .note .eqline{display:block;margin:7px 0 3px;font-size:1.05rem;color:var(--brick-dark)}
 
-  /* ---- buttons ---- */
-  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--paper);
-       border-top:1px solid var(--rule);padding:11px 16px calc(11px + env(safe-area-inset-bottom))}
-  .bar .inner{max-width:34rem;margin:0 auto;display:flex;gap:9px}
+  /* ---- napit ---- */
+  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);
+       border-top:2px solid rgba(58,54,47,.1);box-shadow:0 -6px 18px rgba(58,54,47,.10);
+       padding:11px 14px calc(11px + env(safe-area-inset-bottom))}
+  .bar .inner{max-width:660px;margin:0 auto;display:flex;gap:10px}
   button.act{
-    flex:1;font:inherit;font-size:1rem;font-weight:600;padding:12px;cursor:pointer;
-    border-radius:8px;
-    background:var(--head);color:#fff;border:1.5px solid var(--head);
+    flex:1;font:inherit;font-size:1rem;font-weight:700;padding:15px 18px;cursor:pointer;
+    border-radius:14px;border:2px solid var(--brick);
+    background:var(--brick);color:#fff;box-shadow:var(--shadow);
+    transition:filter .14s ease,transform .12s ease;
   }
-  button.act.ghost{background:transparent;color:var(--head);border-color:var(--rule)}
-  button.act[disabled]{opacity:.35;cursor:default}
-  button.act:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
+  button.act:hover{filter:brightness(1.15)}
+  button.act:active{transform:scale(.99)}
+  button.act.ghost{background:var(--panel);color:var(--ink);border-color:var(--stone-light);box-shadow:none}
+  button.act.ghost:hover{filter:none;border-color:var(--clay)}
+  button.act[disabled]{opacity:.4;cursor:default;filter:none}
 
-  /* ---- symbols: LaTeX-tyylinen kursiivi ja vektoriviiva ---- */
+  /* ---- symbolit ---- */
   .sym{font-family:var(--math);font-style:italic;font-size:1.12em;white-space:nowrap}
   .sym .ov{text-decoration:overline}
   .sym sub{font-style:italic;font-size:.68em}
   .op{font-family:var(--math);font-style:normal;padding:0 .12em}
   .fn{font-family:var(--math);font-style:normal}
 
-  /* ---- summary ---- */
-  .sumrow{display:flex;justify-content:space-between;gap:12px;
-          border-bottom:1px solid var(--rule);padding:9px 0;font-size:.95rem}
+  /* ---- listat ---- */
+  .sumrow{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+          border-bottom:2px solid var(--panel-2);padding:10px 2px;font-size:.94rem;font-weight:600}
   .sumrow:last-child{border-bottom:0}
-  .sumrow .n{color:var(--vector);font-variant-numeric:tabular-nums}
+  .sumrow .n{color:var(--brick);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 
-  .picker{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
-  .picker button{
-    font:inherit;font-size:.9rem;padding:7px 12px;cursor:pointer;border-radius:20px;
-    background:var(--card);border:1.5px solid var(--rule);color:var(--ink);
+  /* ---- tilannelista ---- */
+  .list{display:flex;flex-direction:column;gap:9px;margin-bottom:4px}
+  .row{
+    display:flex;align-items:center;gap:12px;width:100%;
+    background:var(--panel);border:2px solid transparent;border-radius:14px;
+    box-shadow:var(--shadow);padding:13px 16px;
+    text-align:left;font:inherit;color:inherit;cursor:pointer;
+    transition:transform .14s ease,border-color .14s ease;
   }
-  .picker button[aria-pressed="true"]{background:var(--box-bg);color:var(--head);border-color:var(--box-br);font-weight:600}
-  .picker button:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
-  h2{font-size:1.08rem;font-weight:700;color:var(--head);margin:22px 0 8px}
+  .row:hover{transform:translateX(3px);border-color:var(--clay)}
+  .row:active{transform:translateX(0) scale(.995)}
+  .row .num{
+    flex:0 0 auto;min-width:27px;height:27px;padding:0 6px;border-radius:999px;
+    display:grid;place-items:center;background:var(--panel-2);
+    border:2px solid var(--stone-light);font-size:.76rem;font-weight:800;color:var(--ink-soft);
+  }
+  .row .label{flex:1;font-weight:700;font-size:.98rem}
+  .row .go{color:var(--brick);font-size:1.2rem;line-height:1}
+  .row.tehty .num{background:var(--brick);border-color:var(--brick);color:#fff}
+  .row.lab{background:var(--brick);color:#fff}
+  .row.lab .num{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.32);color:#fff}
+  .row.lab .go{color:var(--clay)}
+  .row.lab .label{font-family:var(--slab);font-size:1.05rem}
 
   /* ---- voimalabran säätimet ---- */
-  .ctl{margin:0 0 13px}
-  .ctl .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:.92rem;margin-bottom:3px}
-  .ctl .lab b{color:var(--head);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
+  .ctl{margin:0 0 14px}
+  .ctl .lab{display:flex;justify-content:space-between;align-items:baseline;
+            font-size:.88rem;font-weight:700;margin-bottom:4px}
+  .ctl .lab b{color:var(--brick);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
   .ctl .lab>span:first-child{min-width:0}
-  .ctl input[type=range]{width:100%;accent-color:var(--box-br);margin:0}
-  .labgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
-  @media (max-width:26rem){.labgrid{grid-template-columns:1fr}}
-  .eqbox{background:var(--card);border:1.5px solid var(--rule);border-radius:10px;padding:11px 14px;margin:0 0 16px}
-  .eqbox .eqline{display:block;margin:5px 0;font-size:1.05rem;color:var(--head)}
-  .eqbox .numline{display:block;margin:0 0 8px;font-size:.92rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
-  .tag{display:inline-block;font-size:.8rem;padding:2px 9px;border-radius:20px;
-       background:var(--box-bg);border:1px solid var(--box-br);color:var(--head);margin-bottom:6px}
+  .ctl input[type=range]{width:100%;accent-color:var(--brick);margin:0}
+  .labgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+  @media (max-width:30rem){.labgrid{grid-template-columns:1fr}}
+  .eqbox{background:var(--panel);border:2px solid transparent;border-radius:var(--radius);
+         box-shadow:var(--shadow);padding:14px 16px;margin:0 0 16px}
+  .eqbox .eqline{display:block;margin:6px 0;font-size:1.05rem;color:var(--brick-dark)}
+  .eqbox .numline{display:block;margin:0 0 10px;font-size:.9rem;color:var(--ink-soft);
+                  font-weight:600;font-variant-numeric:tabular-nums}
+  .tag{display:inline-block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+       font-weight:800;padding:4px 11px;border-radius:999px;
+       background:var(--panel-2);border:2px solid var(--stone-light);color:var(--brick);margin-bottom:8px}
+
   @media (prefers-reduced-motion:no-preference){
-    .fb{animation:rise .18s ease-out}
-    @keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+    .fb{animation:rise .22s ease-out}
+    @keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.01ms !important;transition-duration:.01ms !important}
   }
 </style>
 </head>
@@ -547,13 +615,13 @@ const SCEN = [
    PIIRTO
    ============================================================ */
 const W=360,H=205;
-const INK="#3D3D3D", VEC="#F1786F", VEC2="#F6AFA9", CMP="#5B85B8", GRN="#7CB342",
+const INK="#3a3530", VEC="#F1786F", VEC2="#F6AFA9", CMP="#7E776A", GRN="#7CB342",
       OBJ_BG="#FCEFA1", OBJ_BR="#E0A93B",
       MATH='"Latin Modern Roman",Cambria,"Times New Roman",Times,serif';
 
 function svgOpen(){
   return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img">
-    <rect width="${W}" height="${H}" fill="#FAFAFA"/>`;
+    <rect width="${W}" height="${H}" fill="#faf6ec"/>`;
 }
 function arrowDefs(){
   return `<defs>
@@ -592,7 +660,7 @@ function vecParts(x,y,ang,len,label,opt){
          k:k, label:label, col:col, fs:opt.fs||17, bar:!opt.novecbar};
   }
   const pts=[];
-  for(let t=0.12;t<=1.001;t+=0.18) pts.push({x:x1+ux*len*t, y:y1+uy*len*t, need:12});
+  for(let t=0.12;t<=1.001;t+=0.16) pts.push({x:x1+ux*len*t, y:y1+uy*len*t, need:14});
   return {line:line, lab:lab, pts:pts};
 }
 function vec(x,y,ang,len,label,opt){
@@ -728,7 +796,7 @@ function anchorFor(f,g,ctx){
       return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"from"};
     }
     /* tukivoima päättyy kappaleeseen, hieman painon vektorista sivuun */
-    const off = sgn>0 ? -15 : 15;
+    const off = (sgn>0 ? -1 : 1) * (g.surf?20:16);
     return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"to"};
   }
   if(f.id==="T" && g.rope) return {x:g.rope.x, y:g.rope.y, mode:"from"};
@@ -756,8 +824,8 @@ function drawComps(fo,g,sc,len){
   s+=`<line x1="${f(ex)}" y1="${f(ey)}" x2="${f(tx)}" y2="${f(ty)}" stroke="${CMP}" stroke-width="1.1" stroke-dasharray="4 3" opacity="0.75"/>`;
   s+=`<line x1="${f(ny_)}" y1="${f(my_)}" x2="${f(tx)}" y2="${f(ty)}" stroke="${CMP}" stroke-width="1.1" stroke-dasharray="4 3" opacity="0.75"/>`;
   let pts=[];
-  if(Math.abs(cx)>4){ const p=vecParts(x,y,axd,Math.abs(cx),glyph(fo.sym)+"_x",{col:CMP,mk:"ac",fs:16,loff:-15,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
-  if(Math.abs(cy)>4){ const p=vecParts(x,y,ayd,Math.abs(cy),glyph(fo.sym)+"_y",{col:CMP,mk:"ac",fs:16,loff:-15,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
+  if(Math.abs(cx)>4){ const p=vecParts(x,y,axd,Math.abs(cx),glyph(fo.sym)+"_x",{col:CMP,mk:"ac",w:2.1,dash:true,fs:15,loff:-14,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
+  if(Math.abs(cy)>4){ const p=vecParts(x,y,ayd,Math.abs(cy),glyph(fo.sym)+"_y",{col:CMP,mk:"ac",w:2.1,dash:true,fs:15,loff:-14,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
   return {svg:s, labs:labs, pts:pts};
 }
 
@@ -850,11 +918,9 @@ function drawScene(sc, forces, alpha, opt){
       const an=anchorFor(fo,g,ctx);
       const len=L0*(opt.scaled&&fo.rel?fo.rel:1);
       const lf = fo.id==="N" ? 0.72 : (fo.id==="G" ? 0.45 : 0.55);
-      const jaettu = opt.comp && fo.split;
-      const st = jaettu ? {w:1.8,dash:true,fs:15} : {};
-      const p=vecParts(an.x,an.y,ang,len,fo.gl,
-        Object.assign({mode:an.mode,loff:labOff(fo,g,ang),lfrac:lf},st));
-      s+=p.line; (jaettu?sub:main).push(p.lab); pts=pts.concat(p.pts);
+      /* kaikki voimat piirretään samalla tyylillä — vain komponentit erottuvat */
+      const p=vecParts(an.x,an.y,ang,len,fo.gl,{mode:an.mode,loff:labOff(fo,g,ang),lfrac:lf});
+      s+=p.line; (opt.comp&&fo.split?sub:main).push(p.lab); pts=pts.concat(p.pts);
     });
     let labs=[];
     if(opt.comp) forces.filter(x=>x.split).forEach(fo=>{
@@ -900,6 +966,17 @@ const RHS = {
   x:'<span class="sym">ma<sub>x</sub></span>',
   y:'<span class="sym">ma<sub>y</sub></span>'
 };
+const ZERO   = '<span class="sym">0</span>';
+const ZEROV  = '<span class="sym"><span class="ov">0</span></span>';
+const MAVEC  = '<span class="sym">m<span class="ov">a</span></span>';
+/* Kokonaisvoiman suunnasta nähdään suoraan, kummassa suunnassa kiihtyvyys on nolla. */
+function accZero(sc,ax){
+  if(sc.net==="nolla") return true;
+  const pitkin = (sc.net==="ny"||sc.net==="na"||sc.net==="oi"||sc.net==="va");
+  return ax==="x" ? !pitkin : pitkin;
+}
+function rhsOf(sc,ax){ return accZero(sc,ax) ? ZERO : RHS[ax]; }
+function rhsVec(sc){ return sc.net==="nolla" ? ZEROV : MAVEC; }
 /* positiiviset termit ensin, jotta yhtälö ei ala turhaan miinuksella */
 function ordT(t){ return t.filter(x=>x.s>0).concat(t.filter(x=>x.s<0)); }
 function axTerms(sc,ax){
@@ -908,7 +985,7 @@ function axTerms(sc,ax){
 }
 /* oikea vaihtoehto + tyypilliset virheet */
 function eqOptions(sc,ax){
-  const mine=axTerms(sc,ax), other=axTerms(sc,ax==="x"?"y":"x"), rhs=RHS[ax];
+  const mine=axTerms(sc,ax), other=axTerms(sc,ax==="x"?"y":"x"), rhs=rhsOf(sc,ax);
   const out=[], seen=new Set();
   const push=(terms,ok)=>{ const h=eqStr(terms,rhs); if(seen.has(h))return; seen.add(h); out.push({html:h,ok:!!ok}); };
   push(mine,true);
@@ -923,7 +1000,7 @@ function eqOptions(sc,ax){
 /* vektorimuotoinen NII */
 function vecEqOptions(sc){
   const ids=sc.forces.map(f=>f.sym);
-  const rhs='<span class="sym">m<span class="ov">a</span></span>';
+  const rhs=rhsVec(sc);
   const j=arr=>arr.map(sym).join('<span class="op"> + </span>');
   const out=[], seen=new Set();
   const push=(h,ok)=>{ if(seen.has(h))return; seen.add(h); out.push({html:h,ok:!!ok}); };
@@ -934,7 +1011,10 @@ function vecEqOptions(sc){
     push(j(ids.slice(0,-1))+' <span class="op">=</span> '+rhs);
   }
   if(sc.forceD.length) push(j([...ids,sc.forceD[0].sym])+' <span class="op">=</span> '+rhs);
-  if(sc.net!=="nolla") push(j(ids)+' <span class="op">=</span> <span class="sym">0</span>');
+  /* kiihtyvässä liikkeessä nollavektori on aito virhe; levossa ma-muotoa ei tarjota,
+     koska se on sekin tosi — silloin harhoina ovat etumerkit ja puuttuvat voimat */
+  if(sc.net!=="nolla") push(j(ids)+' <span class="op">=</span> '+ZEROV);
+  if(sc.forceD.length>1) push(j([...ids,sc.forceD[1].sym])+' <span class="op">=</span> '+rhs);
   return out.slice(0,4);
 }
 
@@ -948,7 +1028,8 @@ function scen(){ return SCEN[S.si]; }
 function buildPlan(sc){
   const p=["bodies","forces","dirs","komp"];
   if(sc.mag) p.push("mag");
-  p.push("net","n2","dim","n2xy");
+  p.push("net","n2","dim");
+  if(sc.dim===2) p.push("n2xy");
   return p;
 }
 function logErr(key,text){ if(!S.errors[key]) S.errors[key]={text,n:0}; S.errors[key].n++; }
@@ -968,16 +1049,19 @@ function render(){
 function renderMenu(){
   let groups={};
   SCEN.forEach((s,i)=>{ (groups[s.ryhma]=groups[s.ryhma]||[]).push([s,i]); });
-  let h=`<header><h1>Voimakuviot</h1><p class="sub">Tunnista · Komponentit · Newtonin II laki · FY4</p></header>
+  let h=`<header><h1>Voimakuviot</h1><p class="sub">FY4 · Voima ja liike</p></header>
    <p style="margin:0 0 20px">Valitse tilanne. Jokaisessa edetään samalla tavalla: ensin kappaleet, joiden kanssa
    tutkittava kappale on vuorovaikutuksessa, sitten voimat ja niiden suunnat, sitten komponenttijako
    ja lopuksi Newtonin II laki vektorimuodossa sekä yksi- tai kaksiulotteisena komponenttiyhtälönä.</p>
-   <h2>Voimalabra</h2>
-   <div class="picker"><button data-lab>Kokeile: kallista tasoa, vedä ja työnnä</button></div>`;
+   <div class="list"><button class="row lab" data-lab>
+     <span class="num">↯</span><span class="label">Voimalabra</span><span class="go">›</span></button></div>`;
   for(const g in groups){
-    h+=`<h2>${g}</h2><div class="picker">`;
+    h+=`<h2>${g}</h2><div class="list">`;
     groups[g].forEach(([s,i])=>{
-      h+=`<button data-go="${i}" aria-pressed="${S.done.has(s.id)}">${i+1}. ${s.title}</button>`;
+      const tehty=S.done.has(s.id);
+      h+=`<button class="row${tehty?" tehty":""}" data-go="${i}">
+        <span class="num">${tehty?"✓":(i+1)}</span>
+        <span class="label">${s.title}</span><span class="go">›</span></button>`;
     });
     h+=`</div>`;
   }
@@ -1009,16 +1093,18 @@ function renderTask(){
   const sc=scen(), stepName=S.plan[S.step];
   let h=`<header><h1>${S.si+1}. ${sc.title}</h1><p class="sub">${sc.ryhma}</p></header>`;
 
-  const late = ["mag","net","n2","n2xy"].includes(stepName);
+  const late = ["mag","net","n2","dim","n2xy"].includes(stepName);
   const revealF = (late || (stepName==="komp"&&S.checked))
     ? sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym})) : null;
   const opt = {
-    comp: (stepName==="komp"&&S.checked) || ["net","n2","n2xy"].includes(stepName),
-    scaled: ["net","n2","n2xy"].includes(stepName)
+    comp: (stepName==="komp"&&S.checked) || ["net","n2","dim","n2xy"].includes(stepName),
+    scaled: ["net","n2","dim","n2xy"].includes(stepName)
   };
   h+=`<div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
       <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
-  h+=`<p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>`;
+  const pros=Math.round((S.step+(S.checked?1:0))/S.plan.length*100);
+  h+=`<p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>
+      <div class="track"><div class="fill" style="width:${pros}%"></div></div>`;
 
   if(stepName==="bodies") h+=stepBodies(sc);
   if(stepName==="forces") h+=stepForces(sc);
@@ -1054,8 +1140,8 @@ function stepBodies(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     list.forEach((b,i)=>{
-      if(S.sel.has(i)&&!b.ok){ h+=note(b.name,b.why); logOnce(b.id,b.why); }
-      if(!S.sel.has(i)&&b.ok) h+=note(b.name,"Tämä kappale on vuorovaikutuksessa tutkittavan kappaleen kanssa. Muista kirjoittaa vuorovaikutus molempiin suuntiin.");
+      if(S.sel.has(i)&&!b.ok){ h+=note(b.name,b.why,"warn"); logOnce(b.id,b.why); }
+      if(!S.sel.has(i)&&b.ok) h+=note(b.name,"Tämä kappale on vuorovaikutuksessa tutkittavan kappaleen kanssa. Muista kirjoittaa vuorovaikutus molempiin suuntiin.","warn");
     });
     if(allRight(list)) h+=note("Oikein","Nyt jokaiselle voimalle löytyy kappale, joka sen kohdistaa.",true);
     h+=`</div>`;
@@ -1086,10 +1172,10 @@ function stepForces(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     list.forEach((f,i)=>{
-      if(S.sel.has(i)&&!f.ok){ h+=note("Mikä kappale kohdistaa tämän voiman?",f.why); logOnce(f.id,f.why); }
+      if(S.sel.has(i)&&!f.ok){ h+=note("Mikä kappale kohdistaa tämän voiman?",f.why,"warn"); logOnce(f.id,f.why); }
       if(!S.sel.has(i)&&f.ok){
         const src=sc.forces.find(x=>x.id===f.id);
-        h+=note("Puuttuu",`${src.name} — tämä tulee kappaleelta, jonka valitsit vaiheessa 1.`);
+        h+=note("Puuttuu",`${src.name} — tämä tulee kappaleelta, jonka valitsit vaiheessa 1.`,"warn");
       }
     });
     if(allRight(list)) h+=note("Oikein","Jokainen voima on jäljitettävissä yhteen kappaleeseen.",true);
@@ -1119,7 +1205,7 @@ function stepDirs(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     if(S.radio===f.dir) h+=note("Oikein",f.dirWhy,true);
-    else { h+=note("Tarkista suunta",f.dirWhy); logOnce("dir_"+sc.id+"_"+f.id,`${f.name}: väärä suunta`); }
+    else { h+=note("Tarkista suunta",f.dirWhy,"warn"); logOnce("dir_"+sc.id+"_"+f.id,`${f.name}: väärä suunta`); }
     if(f.id==="N") h+=note("Piirtotapa","Tukivoima piirretään päättymään kappaleeseen: nuolen kärki on kappaleen pinnassa. Piirrä se hieman painon vektorista sivuun, jotta nuolet eivät mene päällekkäin.");
     if(f.id==="Fmu"||f.id==="Fmu0") h+=note("Piirtotapa","Kitkavoima alkaa tai päättyy kappaleen ja pinnan väliin — juuri siihen kohtaan, jossa pinnat koskettavat toisiaan.");
     h+=`</div>`;
@@ -1151,13 +1237,13 @@ function stepKomp(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     const ok=allRight(list);
-    h+=note(ok?"Oikein":"Katso uudelleen", anySplit?KOMP_INCL:KOMP_FLAT, ok);
+    h+=note(ok?"Oikein":"Katso uudelleen", anySplit?KOMP_INCL:KOMP_FLAT, ok?true:"warn");
     sc.forces.filter(f=>f.split).forEach(f=>{
       h+=note(`${sym(f.sym)} komponentteina`,
         `Kulma α on tason ja vaakatason välissä, joten sama kulma löytyy myös painon ja tason normaalin väliltä.
          <span class="eqline">${compSym(f.sym,"x")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">sin</span> <span class="sym">α</span> &nbsp;(tasoa pitkin alas, siis −x)</span>
          <span class="eqline">${compSym(f.sym,"y")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">cos</span> <span class="sym">α</span> &nbsp;(tasoa vasten)</span>
-         Alkuperäistä ${sym(f.sym)}-vektoria ei enää lasketa mukaan yhtälöihin, kun sen komponentit ovat käytössä.`);
+         Komponentit piirretään harmaalla katkoviivalla, koska ne eivät ole uusia voimia vaan sama voima osiin jaettuna. Alkuperäistä ${sym(f.sym)}-vektoria ei enää lasketa mukaan yhtälöihin, kun sen komponentit ovat käytössä.`);
     });
     if(!ok) logOnce("komp_"+sc.id,"Komponenttijako: mikä voima on vino koordinaatistoon nähden");
     h+=`</div>`;
@@ -1181,7 +1267,7 @@ function stepMag(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     const ok = S.radio===String(sc.mag.correct);
-    h+=note(ok?"Oikein":"Katso uudelleen",sc.mag.why,ok);
+    h+=note(ok?"Oikein":"Katso uudelleen",sc.mag.why,ok?true:"warn");
     if(!ok) logOnce("mag_"+sc.id,"Voimien suuruusvertailu kiihtyvässä liikkeessä");
     h+=`</div>`;
   }
@@ -1208,7 +1294,7 @@ function stepNet(sc){
   h+=`</div>`;
   if(S.checked){
     const ok=S.radio===sc.net;
-    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",sc.netWhy,ok)+`</div>`;
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",sc.netWhy,ok?true:"warn")+`</div>`;
     if(!ok) logOnce("net_"+sc.id,"Kokonaisvoiman suunnan päättely");
   }
   return h;
@@ -1238,8 +1324,10 @@ function stepN2(sc){
        kaikki kappaleeseen vaikuttavat voimat lasketaan yhteen <b>vektoreina</b>, plusmerkeillä.
        Suunnat hoituvat vasta komponenttivaiheessa, jossa osa termeistä saa miinusmerkin.`
       +(sc.net==="nolla"
-        ? ` Tässä tilanteessa kiihtyvyys on nolla, joten oikea puoli on nolla.`
-        : ` Tässä tilanteessa kiihtyvyys ei ole nolla, joten oikeaa puolta ei saa merkitä nollaksi.`), ok);
+        ? ` Kappale on levossa tai tasaisessa liikkeessä, joten <span class="sym"><span class="ov">a</span></span> = ${ZEROV}
+           ja voimien summa on <b>nollavektori</b> — ei siis <span class="sym">m<span class="ov">a</span></span>-muotoa,
+           vaan suoraan ${ZEROV}.`
+        : ` Kiihtyvyys ei ole nolla, joten oikea puoli on ${MAVEC}. Sitä ei saa merkitä nollavektoriksi.`), ok?true:"warn");
     if(!ok) logOnce("n2_"+sc.id,"Newtonin II lain kirjoittaminen vektorimuodossa");
     h+=`</div>`;
   }
@@ -1249,8 +1337,9 @@ function stepN2(sc){
 /* --- vaihe: yksi- vai kaksiulotteinen tilanne --- */
 const DIM_WHY={
  1:`Kaikki kappaleeseen vaikuttavat voimat ovat samalla suoralla, tässä pystysuorassa.
-    Tilanne on <b>yksiulotteinen</b>: yksi komponenttiyhtälö riittää.
-    Vaakasuunnassa ei ole yhtään voimaa, joten siellä ei ole myöskään kiihtyvyyttä — nopeus vain säilyy.`,
+    Tilanne on <b>yksiulotteinen</b>: vektoriyhtälöstä luetaan suoraan yksi skalaariyhtälö,
+    eikä erillistä komponenttijakoa tarvita. Vaakasuunnassa ei ole yhtään voimaa,
+    joten siellä ei ole myöskään kiihtyvyyttä — nopeus vain säilyy.`,
  2:`Voimat osoittavat kahteen eri suuntaan, joten tilanne on <b>kaksiulotteinen</b>.
     Newtonin II laki kirjoitetaan erikseen x- ja y-suunnassa. Kumpikin yhtälö on skalaariyhtälö,
     ja yleensä molempia tarvitaan: y-yhtälöstä saadaan tukivoima, jota tarvitaan kitkaan x-yhtälössä.`};
@@ -1272,7 +1361,10 @@ function stepDim(sc){
   h+=`</div>`;
   if(S.checked){
     const ok=S.radio===String(sc.dim-1);
-    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim],ok)+`</div>`;
+    const lisa = sc.dim===1
+      ? `<span class="eqline">${eqStr(axTerms(sc,"y"),rhsOf(sc,"y"))}</span>${sc.eqWhy.y}`
+      : "";
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim]+lisa,ok?true:"warn")+`</div>`;
     if(!ok) logOnce("dim_"+sc.id,"Yksi- vai kaksiulotteinen tilanne");
   }
   return h;
@@ -1302,7 +1394,7 @@ function stepN2xy(sc){
     const ok = list[+S.radio] && list[+S.radio].ok;
     h+=`<div class="fb">`;
     h+=note(ok?"Oikein":"Katso uudelleen",
-      `<span class="eqline">${eqStr(axTerms(sc,ax),RHS[ax])}</span>${sc.eqWhy[ax]}`, ok);
+      `<span class="eqline">${eqStr(axTerms(sc,ax),rhsOf(sc,ax))}</span>${sc.eqWhy[ax]}`, ok?true:"warn");
     if(!ok) logOnce("eq_"+sc.id+"_"+ax,`Newtonin II laki ${ax}-suunnassa: etumerkit tai termit`);
     h+=`</div>`;
   }
@@ -1310,8 +1402,10 @@ function stepN2xy(sc){
 }
 
 /* --- apurit --- */
-function note(head,body,good){
-  return `<div class="note${good?" good":""}"><span class="head">${head}</span>${body}</div>`;
+/* kind: true = oikein (navy), "warn" = tarkista (pinkki), muuten neutraali */
+function note(head,body,kind){
+  const c = (kind===true||kind==="good") ? " good" : (kind==="warn" ? " warn" : "");
+  return `<div class="note${c}"><span class="head">${head}</span>${body}</div>`;
 }
 function allRight(list){
   return list.every((x,i)=>x.ok===S.sel.has(i));
@@ -1475,9 +1569,9 @@ function renderLab(){
   };
   h+=`<div class="eqbox">
     <span class="tag">${L.alpha<0.5&&Math.abs(L.F)<0.5?"Yksiulotteinen":"Kaksiulotteinen"} tilanne</span>
-    <span class="eqline">${ax_}${eqStr(tx,RHS.x)}</span>
+    <span class="eqline">${ax_}${eqStr(tx,Math.abs(c.a)<0.005?ZERO:RHS.x)}</span>
     <span class="numline">${numline(tx)} = ${num(L.m*c.a)} N</span>
-    <span class="eqline">${ay_}${eqStr(ty,RHS.y)}</span>
+    <span class="eqline">${ay_}${eqStr(ty,ZERO)}</span>
     <span class="numline">${numline(ty)} = 0 N &nbsp;(kappale ei irtoa tasosta)</span>
   </div>`;
   h+=`<div class="fb"><div class="note"><span class="head">Kokeile näitä</span>
@@ -1507,11 +1601,10 @@ function renderSummary(){
   sc.forces.forEach(f=>h+=note(`${sym(f.sym)} — ${f.name}`,f.dirWhy));
   if(sc.forces.some(f=>f.split)) h+=note("Komponenttijako",KOMP_INCL);
   h+=note("Kokonaisvoima",sc.netWhy,true);
-  const rhsv='<span class="sym">m<span class="ov">a</span></span>';
   h+=note("Newtonin II laki",
-    `<span class="eqline">${sc.forces.map(f=>sym(f.sym)).join('<span class="op"> + </span>')} <span class="op">=</span> ${rhsv}</span>
-     ${sc.dim===2?`<span class="eqline">${ax_}${eqStr(axTerms(sc,"x"),RHS.x)}</span>`:""}
-     <span class="eqline">${sc.dim===2?ay_:""}${eqStr(axTerms(sc,"y"),RHS.y)}</span>`,true);
+    `<span class="eqline">${sc.forces.map(f=>sym(f.sym)).join('<span class="op"> + </span>')} <span class="op">=</span> ${rhsVec(sc)}</span>
+     ${sc.dim===2?`<span class="eqline">${ax_}${eqStr(axTerms(sc,"x"),rhsOf(sc,"x"))}</span>`:""}
+     <span class="eqline">${sc.dim===2?ay_:""}${eqStr(axTerms(sc,"y"),rhsOf(sc,"y"))}</span>`,true);
   h+=note(sc.dim===1?"Yksiulotteinen tilanne":"Kaksiulotteinen tilanne",DIM_WHY[sc.dim]);
   if(sc.dim===2) h+=note("x-suunta",sc.eqWhy.x);
   h+=note(sc.dim===1?"Pystysuunta":"y-suunta",sc.eqWhy.y);
