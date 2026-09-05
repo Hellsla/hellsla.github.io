@@ -615,7 +615,7 @@ const SCEN = [
    PIIRTO
    ============================================================ */
 const W=360,H=205;
-const INK="#3a3530", VEC="#F1786F", VEC2="#F6AFA9", CMP="#5B85B8", GRN="#7CB342",
+const INK="#3a3530", VEC="#F1786F", VEC2="#F6AFA9", CMP="#7E776A", GRN="#7CB342",
       OBJ_BG="#FCEFA1", OBJ_BR="#E0A93B",
       MATH='"Latin Modern Roman",Cambria,"Times New Roman",Times,serif';
 
@@ -660,7 +660,7 @@ function vecParts(x,y,ang,len,label,opt){
          k:k, label:label, col:col, fs:opt.fs||17, bar:!opt.novecbar};
   }
   const pts=[];
-  for(let t=0.12;t<=1.001;t+=0.18) pts.push({x:x1+ux*len*t, y:y1+uy*len*t, need:12});
+  for(let t=0.12;t<=1.001;t+=0.16) pts.push({x:x1+ux*len*t, y:y1+uy*len*t, need:14});
   return {line:line, lab:lab, pts:pts};
 }
 function vec(x,y,ang,len,label,opt){
@@ -796,7 +796,7 @@ function anchorFor(f,g,ctx){
       return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"from"};
     }
     /* tukivoima päättyy kappaleeseen, hieman painon vektorista sivuun */
-    const off = sgn>0 ? -15 : 15;
+    const off = (sgn>0 ? -1 : 1) * (g.surf?20:16);
     return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"to"};
   }
   if(f.id==="T" && g.rope) return {x:g.rope.x, y:g.rope.y, mode:"from"};
@@ -824,8 +824,8 @@ function drawComps(fo,g,sc,len){
   s+=`<line x1="${f(ex)}" y1="${f(ey)}" x2="${f(tx)}" y2="${f(ty)}" stroke="${CMP}" stroke-width="1.1" stroke-dasharray="4 3" opacity="0.75"/>`;
   s+=`<line x1="${f(ny_)}" y1="${f(my_)}" x2="${f(tx)}" y2="${f(ty)}" stroke="${CMP}" stroke-width="1.1" stroke-dasharray="4 3" opacity="0.75"/>`;
   let pts=[];
-  if(Math.abs(cx)>4){ const p=vecParts(x,y,axd,Math.abs(cx),glyph(fo.sym)+"_x",{col:CMP,mk:"ac",fs:16,loff:-15,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
-  if(Math.abs(cy)>4){ const p=vecParts(x,y,ayd,Math.abs(cy),glyph(fo.sym)+"_y",{col:CMP,mk:"ac",fs:16,loff:-15,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
+  if(Math.abs(cx)>4){ const p=vecParts(x,y,axd,Math.abs(cx),glyph(fo.sym)+"_x",{col:CMP,mk:"ac",w:2.1,dash:true,fs:15,loff:-14,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
+  if(Math.abs(cy)>4){ const p=vecParts(x,y,ayd,Math.abs(cy),glyph(fo.sym)+"_y",{col:CMP,mk:"ac",w:2.1,dash:true,fs:15,loff:-14,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
   return {svg:s, labs:labs, pts:pts};
 }
 
@@ -918,11 +918,9 @@ function drawScene(sc, forces, alpha, opt){
       const an=anchorFor(fo,g,ctx);
       const len=L0*(opt.scaled&&fo.rel?fo.rel:1);
       const lf = fo.id==="N" ? 0.72 : (fo.id==="G" ? 0.45 : 0.55);
-      const jaettu = opt.comp && fo.split;
-      const st = jaettu ? {w:1.8,dash:true,fs:15} : {};
-      const p=vecParts(an.x,an.y,ang,len,fo.gl,
-        Object.assign({mode:an.mode,loff:labOff(fo,g,ang),lfrac:lf},st));
-      s+=p.line; (jaettu?sub:main).push(p.lab); pts=pts.concat(p.pts);
+      /* kaikki voimat piirretään samalla tyylillä — vain komponentit erottuvat */
+      const p=vecParts(an.x,an.y,ang,len,fo.gl,{mode:an.mode,loff:labOff(fo,g,ang),lfrac:lf});
+      s+=p.line; (opt.comp&&fo.split?sub:main).push(p.lab); pts=pts.concat(p.pts);
     });
     let labs=[];
     if(opt.comp) forces.filter(x=>x.split).forEach(fo=>{
@@ -1245,7 +1243,7 @@ function stepKomp(sc){
         `Kulma α on tason ja vaakatason välissä, joten sama kulma löytyy myös painon ja tason normaalin väliltä.
          <span class="eqline">${compSym(f.sym,"x")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">sin</span> <span class="sym">α</span> &nbsp;(tasoa pitkin alas, siis −x)</span>
          <span class="eqline">${compSym(f.sym,"y")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">cos</span> <span class="sym">α</span> &nbsp;(tasoa vasten)</span>
-         Alkuperäistä ${sym(f.sym)}-vektoria ei enää lasketa mukaan yhtälöihin, kun sen komponentit ovat käytössä.`);
+         Komponentit piirretään harmaalla katkoviivalla, koska ne eivät ole uusia voimia vaan sama voima osiin jaettuna. Alkuperäistä ${sym(f.sym)}-vektoria ei enää lasketa mukaan yhtälöihin, kun sen komponentit ovat käytössä.`);
     });
     if(!ok) logOnce("komp_"+sc.id,"Komponenttijako: mikä voima on vino koordinaatistoon nähden");
     h+=`</div>`;
