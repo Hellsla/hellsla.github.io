@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voimakuviot – Taso 1</title>
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --card:#FFFFFF;
+    --ink:#4A4A4A;
+    --ink-soft:#7A7A7A;
+    --head:#3D3D3D;
+    --rule:#DCDCDC;
+    --vector:#F1786F;
+    --accel:#7CB342;
+    --box-bg:#FDF6CE;
+    --box-br:#E0B325;
+    --obj-bg:#FCEFA1;
+    --obj-br:#E0A93B;
+    --steel:#E0B325;
+    --ok:#5C9E31;
+    --sans:"Nunito Sans","Source Sans Pro","Segoe UI",Roboto,-apple-system,system-ui,sans-serif;
+    --math:"Latin Modern Roman","Computer Modern",Cambria,"Times New Roman",Times,serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:34rem;margin:0 auto;padding:20px 16px 96px}
+
+  header{margin-bottom:20px}
+  h1{font-size:1.6rem;font-weight:800;color:var(--head);margin:0 0 2px;letter-spacing:-0.015em}
+  .sub{color:var(--ink-soft);font-size:0.9rem;margin:0}
+
+  /* ---- diagram panel ---- */
+  .scene{
+    background:#FAFAFA;
+    border:1px solid var(--rule);
+    border-radius:6px;
+    margin-bottom:18px;
+    overflow:hidden;
+  }
+  .scene svg{display:block;width:100%;height:auto}
+  .caption{
+    background:#fff;
+    border-top:1px solid var(--rule);
+    padding:10px 13px;
+    font-size:0.92rem;
+    color:var(--ink-soft);
+  }
+  .caption .ax{display:block;margin-top:4px;font-size:.85rem;color:var(--ink-soft)}
+  .caption .ax b{color:var(--head);font-weight:600}
+
+  /* ---- progress ---- */
+  .steps{display:flex;gap:6px;align-items:baseline;margin:0 0 14px;font-size:.85rem;color:var(--ink-soft)}
+  .steps b{color:var(--ink);font-weight:600}
+
+  /* ---- question ---- */
+  .q{font-size:1.08rem;margin:0 0 4px}
+  .hint{color:var(--ink-soft);font-size:.88rem;margin:0 0 14px}
+
+  .opts{display:flex;flex-direction:column;gap:7px;margin:0 0 18px}
+  .opt{
+    display:flex;align-items:center;gap:11px;
+    background:var(--card);
+    border:1.5px solid var(--rule);
+    border-radius:8px;
+    padding:11px 13px;
+    text-align:left;
+    font:inherit;color:inherit;
+    cursor:pointer;
+    width:100%;
+  }
+  .opt:hover{border-color:var(--box-br)}
+  .opt:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
+  .opt[aria-pressed="true"]{border-color:var(--box-br);background:var(--box-bg)}
+  .opt .mark{
+    flex:0 0 15px;height:15px;border:1.5px solid var(--ink-soft);border-radius:3px;
+    background:transparent;
+  }
+  .opt[aria-pressed="true"] .mark{background:var(--box-br);border-color:var(--box-br)}
+  .opt.radio .mark{border-radius:50%}
+  .opt .txt{flex:1}
+  .opt .arrowbox{flex:0 0 40px}
+  .opt .arrowbox svg{display:block;width:40px;height:34px}
+  .opt.eq .txt{font-size:1.02rem}
+
+  .opt.right{border-color:var(--ok);background:#F2F8EC}
+  .opt.wrong{border-color:var(--ink-soft);border-style:dashed;background:#fff}
+  .opt.missed{border-color:var(--ok);border-style:dashed;background:#fff}
+
+  /* ---- feedback: Studeon keltainen laatikko ---- */
+  .fb{margin:0 0 18px;display:flex;flex-direction:column;gap:11px}
+  .note{
+    background:var(--box-bg);
+    border:1.5px solid var(--box-br);
+    border-radius:10px;
+    padding:11px 14px;
+    font-size:.95rem;
+  }
+  .note.good{background:#F2F8EC;border-color:var(--ok)}
+  .note .head{display:block;font-weight:700;color:var(--head);margin-bottom:2px}
+  .note .eqline{display:block;margin:6px 0 2px;font-size:1.05rem;color:var(--head)}
+
+  /* ---- buttons ---- */
+  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--paper);
+       border-top:1px solid var(--rule);padding:11px 16px calc(11px + env(safe-area-inset-bottom))}
+  .bar .inner{max-width:34rem;margin:0 auto;display:flex;gap:9px}
+  button.act{
+    flex:1;font:inherit;font-size:1rem;font-weight:600;padding:12px;cursor:pointer;
+    border-radius:8px;
+    background:var(--head);color:#fff;border:1.5px solid var(--head);
+  }
+  button.act.ghost{background:transparent;color:var(--head);border-color:var(--rule)}
+  button.act[disabled]{opacity:.35;cursor:default}
+  button.act:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
+
+  /* ---- symbols: LaTeX-tyylinen kursiivi ja vektoriviiva ---- */
+  .sym{font-family:var(--math);font-style:italic;font-size:1.12em;white-space:nowrap}
+  .sym .ov{text-decoration:overline}
+  .sym sub{font-style:italic;font-size:.68em}
+  .op{font-family:var(--math);font-style:normal;padding:0 .12em}
+  .fn{font-family:var(--math);font-style:normal}
+
+  /* ---- summary ---- */
+  .sumrow{display:flex;justify-content:space-between;gap:12px;
+          border-bottom:1px solid var(--rule);padding:9px 0;font-size:.95rem}
+  .sumrow:last-child{border-bottom:0}
+  .sumrow .n{color:var(--vector);font-variant-numeric:tabular-nums}
+
+  .picker{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+  .picker button{
+    font:inherit;font-size:.9rem;padding:7px 12px;cursor:pointer;border-radius:20px;
+    background:var(--card);border:1.5px solid var(--rule);color:var(--ink);
+  }
+  .picker button[aria-pressed="true"]{background:var(--box-bg);color:var(--head);border-color:var(--box-br);font-weight:600}
+  .picker button:focus-visible{outline:2px solid var(--box-br);outline-offset:2px}
+  h2{font-size:1.08rem;font-weight:700;color:var(--head);margin:22px 0 8px}
+
+  /* ---- voimalabran säätimet ---- */
+  .ctl{margin:0 0 13px}
+  .ctl .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:.92rem;margin-bottom:3px}
+  .ctl .lab b{color:var(--head);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
+  .ctl .lab>span:first-child{min-width:0}
+  .ctl input[type=range]{width:100%;accent-color:var(--box-br);margin:0}
+  .labgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+  @media (max-width:26rem){.labgrid{grid-template-columns:1fr}}
+  .eqbox{background:var(--card);border:1.5px solid var(--rule);border-radius:10px;padding:11px 14px;margin:0 0 16px}
+  .eqbox .eqline{display:block;margin:5px 0;font-size:1.05rem;color:var(--head)}
+  .eqbox .numline{display:block;margin:0 0 8px;font-size:.92rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+  .tag{display:inline-block;font-size:.8rem;padding:2px 9px;border-radius:20px;
+       background:var(--box-bg);border:1px solid var(--box-br);color:var(--head);margin-bottom:6px}
+  @media (prefers-reduced-motion:no-preference){
+    .fb{animation:rise .18s ease-out}
+    @keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<div class="bar"><div class="inner" id="bar"></div></div>
+
+<script>
+/* ============================================================
+   VOIMAKUVIOT – TASO 1 (tunnista → komponentit → NII)
+   FY4 Voima ja liike
+   ============================================================ */
+
+const DIRS = {
+  yl:{a:90,  t:"ylös"},
+  al:{a:270, t:"alas"},
+  va:{a:180, t:"vasemmalle"},
+  oi:{a:0,   t:"oikealle"},
+  ny:{a:null,t:"pintaa pitkin ylös"},    // = alpha
+  na:{a:null,t:"pintaa pitkin alas"},    // = alpha+180
+  ko:{a:null,t:"kohtisuoraan pinnasta ulos"} // = alpha+90
+};
+function dirAngle(tok, alpha){
+  if(tok==="ny") return alpha;
+  if(tok==="na") return alpha+180;
+  if(tok==="ko") return alpha+90;
+  return DIRS[tok].a;
+}
+const FLAT_SET = ["yl","al","va","oi"];
+const INCL_SET = ["ko","ny","na","al"];
+
+/* --- vektorisymbolit (yläviiva) --- */
+function sym(s){
+  const m = {
+    G:'<span class="sym"><span class="ov">G</span></span>',
+    N:'<span class="sym"><span class="ov">N</span></span>',
+    T:'<span class="sym"><span class="ov">T</span></span>',
+    Fmu:'<span class="sym"><span class="ov">F</span><sub>μ</sub></span>',
+    Fmu0:'<span class="sym"><span class="ov">F</span><sub>μ0</sub></span>',
+    Fi:'<span class="sym"><span class="ov">F</span><sub>i</sub></span>',
+    Fl:'<span class="sym"><span class="ov">F</span><sub>l</sub></span>',
+    Fh:'<span class="sym"><span class="ov">F</span><sub>h</sub></span>',
+    Fk:'<span class="sym"><span class="ov">F</span><sub>k</sub></span>'
+  };
+  return m[s] || s;
+}
+/* --- skalaarisymbolit (ei yläviivaa): komponenttiyhtälöihin --- */
+function scal(s){
+  const m = {
+    G:'<span class="sym">G</span>',
+    N:'<span class="sym">N</span>',
+    T:'<span class="sym">T</span>',
+    Fmu:'<span class="sym">F<sub>μ</sub></span>',
+    Fmu0:'<span class="sym">F<sub>μ0</sub></span>',
+    Fi:'<span class="sym">F<sub>i</sub></span>',
+    Fl:'<span class="sym">F<sub>l</sub></span>'
+  };
+  return m[s] || '<span class="sym">'+s+'</span>';
+}
+function compSym(s,ax){
+  const b = {G:'G',N:'N',T:'T',Fmu:'F<sub>μ</sub>',Fmu0:'F<sub>μ0</sub>',Fi:'F<sub>i</sub>'}[s]||s;
+  return '<span class="sym">'+b+'<sub>'+ax+'</sub></span>';
+}
+
+/* ============================================================
+   TILANNEPANKKI
+   ============================================================ */
+
+const B = { // yleiset häiriökappaleet
+  ilma:{id:"ilma",name:"Ilma",why:"Ilmanvastus jätetään tässä huomiotta, joten ilmaa ei oteta mukaan."},
+  kasi:{id:"kasi",name:"Käsi",why:"Käsi ei enää kosketa kappaletta. Irronnut kappale ei kanna mukanaan sitä työntänyttä voimaa."},
+  aurinko:{id:"aurinko",name:"Aurinko",why:"Auringon vetovoima on olemassa, mutta se on niin pieni maanpinnalla tapahtuvassa tilanteessa, ettei sitä oteta mukaan."},
+  vauhti:{id:"vauhti",name:"Vauhti",why:"Vauhti ei ole kappale. Vain kappale voi kohdistaa voiman toiseen kappaleeseen."},
+  moottori:{id:"moottori",name:"Moottori",why:"Moottori on osa autoa. Kappale ei voi kohdistaa voimaa itseensä — auto saa liikevoimansa tien kitkasta."}
+};
+
+const FD = { // yleiset häiriövoimat
+  Fl:{id:"Fl",sym:"Fl",name:"Liikevoima",why:"Mikä kappale kohdistaisi tämän voiman? Vuorovaikutuskaaviossa ei ole sellaista. Liike ei vaadi voimaa — Newtonin I laki."},
+  Fh:{id:"Fh",sym:"Fh",name:"Heittovoima",why:"Heittäjä ei enää kosketa kappaletta. Voima päättyi silloin, kun kosketus päättyi."},
+  Fk:{id:"Fk",sym:"Fk",name:"Keskipakoisvoima",why:"Ei ole kappaletta, joka työntäisi ulospäin. Ympyräliikkeessä kiihtyvyys osoittaa kohti keskipistettä."}
+};
+
+const AX_FLAT = "<b>x</b> oikealle, <b>y</b> ylös";
+const AX_INCL = "<b>x</b> tasoa pitkin ylös, <b>y</b> kohtisuoraan tasosta ulos";
+const KOMP_FLAT = "Jokainen voima on joko x- tai y-akselin suuntainen, joten mitään ei tarvitse jakaa komponentteihin. Komponenttijako tehdään vain vinoille voimille.";
+const KOMP_INCL = "Kun x-akseli valitaan tason suuntaiseksi, tukivoima ja kitka ovat valmiiksi akselien suuntaisia. Vain paino on vino, joten vain se jaetaan komponentteihin.";
+
+const SCEN = [
+/* ---------- A. Lepo ja tasainen liike ---------- */
+{
+ id:"a1", dim:1, ryhma:"Lepo ja tasainen liike",
+ title:"Kirja pöydällä",
+ prompt:"Kirja on paikallaan vaakasuoralla pöydällä.",
+ scene:{t:"flat",obj:"book",surface:"table"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Pöydän pinta"}],
+ bodyD:[B.ilma,B.aurinko],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
+   dirWhy:"Paino osoittaa aina kohti maan keskipistettä eli suoraan alas.",
+   cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
+   dirWhy:"Tukivoima on kohtisuorassa pintaa vastaan ja osoittaa pinnasta poispäin. Se piirretään päättymään kappaleeseen, hieman painon vektorista sivuun.",
+   cy:{s:1,id:"N"}}
+ ],
+ forceD:[FD.Fl],
+ net:"nolla",
+ netWhy:"Kirja on levossa, joten kiihtyvyys on nolla ja NII antaa ΣF = 0. Tukivoima ja paino kumoavat toisensa.",
+ eqWhy:{
+  x:"Vaakasuunnassa ei vaikuta yhtään voimaa. Yhtälö on siis 0 = ma<sub>x</sub>, mistä a<sub>x</sub> = 0.",
+  y:"Tukivoima osoittaa +y-suuntaan ja paino −y-suuntaan. Kirja on levossa, joten a<sub>y</sub> = 0 ja siten N = G."}
+},
+{
+ id:"a2", dim:2, ryhma:"Lepo ja tasainen liike",
+ title:"Laatikkoa vedetään narulla",
+ prompt:"Laatikkoa vedetään narulla pöydän pintaa pitkin vakionopeudella oikealle.",
+ scene:{t:"flat",obj:"box",surface:"table",rope:true,v:"oikealle"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Pöydän pinta"},{id:"naru",name:"Naru"}],
+ bodyD:[B.kasi,B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan pinnasta ulos, siis ylös. Nuoli päättyy laatikon alareunaan.",cy:{s:1,id:"N"}},
+  {id:"T",sym:"T",by:"naru",name:"Narun vetovoima",dir:"oi",
+   dirWhy:"Naru voi vain vetää, ei työntää — narua pitkin poispäin laatikosta.",cx:{s:1,id:"T"}},
+  {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pinnan liukukitkavoima",dir:"va",
+   dirWhy:"Liukukitka vastustaa pintojen liukumista, siis liikettä vastaan vasemmalle. Kitka piirretään kappaleen ja pinnan väliin.",cx:{s:-1,id:"Fmu"}}
+ ],
+ forceD:[FD.Fl],
+ net:"nolla",
+ netWhy:"Vakionopeus tarkoittaa, että kiihtyvyys on nolla. Narun vetovoima ja kitka ovat yhtä suuret.",
+ eqWhy:{
+  x:"Naru vetää +x-suuntaan ja kitka −x-suuntaan. Vakionopeus ⇒ a<sub>x</sub> = 0, joten T = F<sub>μ</sub>.",
+  y:"Laatikko ei nouse eikä uppoa pöytään, joten a<sub>y</sub> = 0 ja N = G. Vasta tästä saadaan kitkalle arvo F<sub>μ</sub> = μN."}
+},
+{
+ id:"a3", dim:1, ryhma:"Lepo ja tasainen liike",
+ title:"Kiekko kitkattomalla jäällä",
+ prompt:"Kiekko liukuu vaakasuoralla, kitkattomalla jäällä oikealle. Ilmanvastus jätetään huomiotta.",
+ scene:{t:"flat",obj:"puck",surface:"ice",v:"oikealle"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"jaa",name:"Jään pinta"}],
+ bodyD:[B.vauhti,{id:"maila",name:"Maila",why:"Maila ei enää kosketa kiekkoa. Kosketuksen päätyttyä sen voima päättyi."}],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"jaa",name:"Jään tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan pinnasta ulos. Nuoli päättyy kiekkoon.",cy:{s:1,id:"N"}}
+ ],
+ forceD:[FD.Fl],
+ net:"nolla",
+ netWhy:"Vaakasuunnassa ei ole yhtään voimaa — silti kiekko liikkuu. Juuri tätä Newtonin I laki sanoo: liike jatkuu itsestään.",
+ eqWhy:{
+  x:"Vaakasuunnassa ei ole voimia: 0 = ma<sub>x</sub>, joten a<sub>x</sub> = 0. Nopeus säilyy, vaikka mikään ei työnnä.",
+  y:"N − G = 0, sillä kiekko ei liiku pystysuunnassa."}
+},
+{
+ id:"a4", dim:2, ryhma:"Lepo ja tasainen liike",
+ title:"Auto vakionopeudella",
+ prompt:"Auto ajaa vakionopeudella suoralla vaakasuoralla tiellä. Ilmanvastus otetaan huomioon.",
+ scene:{t:"flat",obj:"car",surface:"road",v:"oikealle"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"tie",name:"Tien pinta"},{id:"ilma",name:"Ilma"}],
+ bodyD:[B.moottori,B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"tie",name:"Tien tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan pinnasta ulos, nuoli päättyy autoon.",cy:{s:1,id:"N"}},
+  {id:"Fmu0",sym:"Fmu0",by:"tie",name:"Tien lepokitkavoima",dir:"oi",
+   dirWhy:"Rengas ei liu'u tiellä, joten kitka on lepokitkaa. Renkaat työntävät tietä taaksepäin, joten tie työntää autoa eteenpäin. Kitka lähtee renkaan ja tien väliltä.",cx:{s:1,id:"Fmu0"}},
+  {id:"Fi",sym:"Fi",by:"ilma",name:"Ilmanvastus",dir:"va",dirWhy:"Ilmanvastus vastustaa liikettä.",cx:{s:-1,id:"Fi"}}
+ ],
+ forceD:[FD.Fl],
+ net:"nolla",
+ netWhy:"Vakionopeus ⇒ ΣF = 0. Vertaa tilanteeseen 3: siellä ei ollut vaakavoimia lainkaan, tässä ne kumoavat toisensa. Molemmissa nopeus pysyy vakiona.",
+ eqWhy:{
+  x:"Kitka työntää eteenpäin (+x) ja ilmanvastus taaksepäin (−x). Vakionopeus ⇒ F<sub>μ0</sub> = F<sub>i</sub>.",
+  y:"Auto ei nouse tiestä: N − G = 0."}
+},
+
+/* ---------- B. Kiihtyvyys pystysuunnassa ---------- */
+{
+ id:"b1", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
+ title:"Hissi lähtee ylöspäin",
+ prompt:"Laatikko on hissin lattialla. Hissi lähtee liikkeelle ylöspäin, eli sen nopeus kasvaa ylöspäin.",
+ scene:{t:"elev",obj:"box",motion:"kiihtyy ylös"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"lattia",name:"Hissin lattia"}],
+ bodyD:[B.vauhti,{id:"vaijeri",name:"Vaijeri",why:"Vaijeri koskettaa hissiä, ei laatikkoa. Voimakuvio piirretään vain laatikolle."}],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
+   dirWhy:"Suoraan alas. Paino ei muutu hissin liikkeen takia.",cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"lattia",name:"Lattian tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan lattiasta ulos, nuoli päättyy laatikkoon.",cy:{s:1,id:"N"},rel:1.35}
+ ],
+ forceD:[FD.Fl],
+ mag:{q:"Vertaa tukivoiman ja painon suuruuksia.",
+      opts:["N &gt; G","N = G","N &lt; G"],correct:0,
+      why:"Kiihtyvyys osoittaa ylöspäin, joten kokonaisvoimankin on osoitettava ylöspäin. Se onnistuu vain jos N on suurempi kuin G."},
+ net:"yl",
+ netWhy:"Nopeus kasvaa ylöspäin ⇒ kiihtyvyys ylöspäin ⇒ ΣF ylöspäin. NII: N − G = ma.",
+ eqWhy:{
+  x:"Vaakasuunnassa ei ole voimia eikä kiihtyvyyttä.",
+  y:"N − G = ma<sub>y</sub>, ja a<sub>y</sub> &gt; 0. Siksi N &gt; G — nuoli piirretään pidemmäksi."}
+},
+{
+ id:"b2", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
+ title:"Hissi hidastuu tullessaan alas",
+ prompt:"Laatikko on hissin lattialla. Hissi liikkuu alaspäin ja hidastuu pysähtyäkseen.",
+ scene:{t:"elev",obj:"box",motion:"hidastuu, liike alas"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"lattia",name:"Hissin lattia"}],
+ bodyD:[B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"lattia",name:"Lattian tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan lattiasta ulos, nuoli päättyy laatikkoon.",cy:{s:1,id:"N"},rel:1.35}
+ ],
+ forceD:[FD.Fl],
+ mag:{q:"Vertaa tukivoiman ja painon suuruuksia.",
+      opts:["N &gt; G","N = G","N &lt; G"],correct:0,
+      why:"Liike on alaspäin mutta hidastuu, joten kiihtyvyys osoittaa ylöspäin. Siksi N &gt; G."},
+ net:"yl",
+ netWhy:"Sama voimakuvio kuin tilanteessa 5, vaikka liikesuunta on päinvastainen. Kiihtyvyyden suunta ratkaisee, ei nopeuden suunta.",
+ eqWhy:{
+  x:"Vaakasuunnassa ei ole voimia.",
+  y:"N − G = ma<sub>y</sub>. Liike on alaspäin mutta hidastuu, joten a<sub>y</sub> &gt; 0 ja N &gt; G."}
+},
+{
+ id:"b3", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
+ title:"Henkilö vaa'alla hississä",
+ prompt:"Henkilö seisoo vaa'alla hississä. Hissi kiihtyy ylöspäin. Vaaka näyttää suurempaa lukemaa kuin levossa.",
+ scene:{t:"elev",obj:"person",scale:true,motion:"kiihtyy ylös"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"},{id:"vaaka",name:"Vaaka"}],
+ bodyD:[B.vauhti,{id:"hissi",name:"Hissin seinä",why:"Seinä ei kosketa henkilöä. Vain vaaka koskettaa."}],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}},
+  {id:"N",sym:"N",by:"vaaka",name:"Vaa'an tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan vaa'an pinnasta ulos. Nuoli päättyy henkilöön eli alkaa henkilön ja vaa'an väliltä.",cy:{s:1,id:"N"},rel:1.35}
+ ],
+ forceD:[FD.Fl],
+ mag:{q:"Kumpi vaa'an lukemaa vastaa?",
+      opts:["Tukivoima N","Paino G","Kokonaisvoima ΣF"],correct:0,
+      why:"Vaaka mittaa sitä voimaa, jolla henkilö painaa sitä — ja Newtonin III lain mukaan se on yhtä suuri kuin vaa'an tukivoima N. Paino G ei muutu missään vaiheessa."},
+ net:"yl",
+ netWhy:"Kiihtyvyys ylöspäin ⇒ ΣF ylöspäin ⇒ N &gt; G. Tämän takia vaaka näyttää enemmän.",
+ eqWhy:{
+  x:"Vaakasuunnassa ei ole voimia.",
+  y:"N − G = ma<sub>y</sub>, a<sub>y</sub> &gt; 0 ⇒ N = m(g + a<sub>y</sub>) &gt; G."}
+},
+
+/* ---------- C. Heittoliike ---------- */
+{
+ id:"c1", dim:1, ryhma:"Heittoliike",
+ title:"Pallo matkalla ylöspäin",
+ prompt:"Pallo on heitetty suoraan ylöspäin ja on nyt matkalla ylös. Ilmanvastus jätetään huomiotta.",
+ scene:{t:"air",pos:"rising"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"}],
+ bodyD:[B.kasi,B.vauhti,B.ilma],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
+   dirWhy:"Suoraan alas — myös silloin kun pallo liikkuu ylöspäin.",cy:{s:-1,id:"G"}}
+ ],
+ forceD:[FD.Fh,FD.Fl],
+ net:"al",
+ netWhy:"Ainoa voima on paino, joten ΣF osoittaa alas. Pallo liikkuu ylöspäin mutta hidastuu.",
+ eqWhy:{
+  x:"Pallo heitettiin suoraan ylös, joten vaakasuunnassa ei ole voimia eikä liikettä.",
+  y:"−G = ma<sub>y</sub>, eli −mg = ma<sub>y</sub> ⇒ a<sub>y</sub> = −g. Kiihtyvyys osoittaa alas, vaikka nopeus osoittaa ylös."}
+},
+{
+ id:"c2", dim:1, ryhma:"Heittoliike",
+ title:"Pallo lakipisteessä",
+ prompt:"Sama pallo on nyt lakipisteessään. Sen nopeus on hetkellisesti nolla. Ilmanvastus jätetään huomiotta.",
+ scene:{t:"air",pos:"top"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"}],
+ bodyD:[B.kasi,B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}}
+ ],
+ forceD:[FD.Fh,FD.Fl],
+ net:"al",
+ netWhy:"Nopeus on nolla, mutta kiihtyvyys ei ole. ΣF osoittaa alas ja on yhtä suuri kuin lakipistettä ennen ja jälkeen.",
+ eqWhy:{
+  x:"Ei vaakasuoria voimia.",
+  y:"−G = ma<sub>y</sub> ⇒ a<sub>y</sub> = −g. Nopeus on nolla, mutta yhtälö on täsmälleen sama kuin nousussa ja laskussa."}
+},
+{
+ id:"c3", dim:1, ryhma:"Heittoliike",
+ title:"Pallo matkalla alas",
+ prompt:"Sama pallo putoaa nyt alaspäin, juuri ennen maahan osumista. Ilmanvastus jätetään huomiotta.",
+ scene:{t:"air",pos:"falling"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa"}],
+ bodyD:[B.vauhti,B.ilma],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"}}
+ ],
+ forceD:[FD.Fl],
+ net:"al",
+ netWhy:"Kolmessa peräkkäisessä tilanteessa (9, 8, 10) voimakuvio on täsmälleen sama. Vain nopeus muuttuu — voima ei.",
+ eqWhy:{
+  x:"Ei vaakasuoria voimia.",
+  y:"−G = ma<sub>y</sub> ⇒ a<sub>y</sub> = −g, sama kuin nousussa ja lakipisteessä."}
+},
+
+/* ---------- D. Kalteva taso ---------- */
+{
+ id:"d1", dim:2, ryhma:"Kalteva taso",
+ title:"Kitkaton kalteva taso",
+ prompt:"Kappale on kitkattomalla kaltevalla tasolla, jonka kallistuskulma on 25°. Kappale lähtee liukumaan.",
+ scene:{t:"incline",alpha:25,state:"liukuu alas"},
+ dirset:"incline",alpha:25,
+ bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Tason pinta"}],
+ bodyD:[B.vauhti,B.ilma],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
+   dirWhy:"Paino osoittaa aina suoraan alas — ei tasoa pitkin. Vasta komponenttivaiheessa se jaetaan osiin.",
+   split:true,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
+  {id:"N",sym:"N",by:"pinta",name:"Tason tukivoima",dir:"ko",
+   dirWhy:"Tukivoima on aina kohtisuorassa pintaa vastaan, ei pystysuora. Nuoli päättyy kappaleeseen.",
+   cy:{s:1,id:"N"}}
+ ],
+ forceD:[FD.Fl],
+ net:"na",
+ netWhy:"Tukivoima kumoaa vain painon pintaa vastaan kohtisuoran osan. Pintaa pitkin alaspäin jää kumoamaton osa, joten ΣF osoittaa tasoa pitkin alas.",
+ eqWhy:{
+  x:"Vain painon x-komponentti on tason suuntainen: −G sin α = ma<sub>x</sub>. Massa supistuu ⇒ a<sub>x</sub> = −g sin α ≈ −4,1 m/s². Miinusmerkki kertoo, että kiihtyvyys osoittaa x-akselin vastaiseen suuntaan eli tasoa pitkin alas.",
+  y:"Kappale ei irtoa tasosta eikä uppoa siihen, joten a<sub>y</sub> = 0 ja N = G cos α."}
+},
+{
+ id:"d2", dim:2, ryhma:"Kalteva taso",
+ title:"Kappale pysyy paikallaan",
+ prompt:"Kappale pysyy juuri ja juuri levossa kaltevalla tasolla, jonka kallistuskulma on 25°.",
+ scene:{t:"incline",alpha:25,state:"levossa"},
+ dirset:"incline",alpha:25,
+ bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Tason pinta"}],
+ bodyD:[B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",
+   split:true,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
+  {id:"N",sym:"N",by:"pinta",name:"Tason tukivoima",dir:"ko",
+   dirWhy:"Kohtisuoraan pintaa vastaan, nuoli päättyy kappaleeseen.",cy:{s:1,id:"N"}},
+  {id:"Fmu0",sym:"Fmu0",by:"pinta",name:"Pinnan lepokitkavoima",dir:"ny",
+   dirWhy:"Lepokitka estää liukumista alas, joten se osoittaa pintaa pitkin ylös. Kitka piirretään kappaleen ja pinnan väliin.",
+   cx:{s:1,id:"Fmu0"}}
+ ],
+ forceD:[FD.Fl],
+ net:"nolla",
+ netWhy:"Kappale on levossa ⇒ ΣF = 0. Tästä saadaan lepokitkakerroin: μ₀ = tan α = tan 25° ≈ 0,47.",
+ eqWhy:{
+  x:"F<sub>μ0</sub> − G sin α = 0. Lepokitka on juuri yhtä suuri kuin painon tasonsuuntainen komponentti, mutta vastakkaissuuntainen.",
+  y:"N − G cos α = 0. Yhdistämällä yhtälöt ja käyttämällä F<sub>μ0</sub> = μ₀N saadaan μ₀ = tan α."}
+},
+{
+ id:"d3", dim:2, ryhma:"Kalteva taso",
+ title:"Kappale liukuu alas tasaisesti",
+ prompt:"Kappale liukuu 25° kaltevaa tasoa alas vakionopeudella.",
+ scene:{t:"incline",alpha:25,state:"liukuu alas"},
+ dirset:"incline",alpha:25,
+ bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Tason pinta"}],
+ bodyD:[B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",
+   split:true,cx:{s:-1,id:"G",trig:"sin"},cy:{s:-1,id:"G",trig:"cos"}},
+  {id:"N",sym:"N",by:"pinta",name:"Tason tukivoima",dir:"ko",
+   dirWhy:"Kohtisuoraan pintaa vastaan, nuoli päättyy kappaleeseen.",cy:{s:1,id:"N"}},
+  {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pinnan liukukitkavoima",dir:"ny",
+   dirWhy:"Liukukitka vastustaa liikettä. Liike on alaspäin, joten kitka osoittaa pintaa pitkin ylös ja lähtee kappaleen ja pinnan välistä.",
+   cx:{s:1,id:"Fmu"}}
+ ],
+ forceD:[FD.Fl],
+ net:"nolla",
+ netWhy:"Vakionopeus ⇒ ΣF = 0, aivan kuten levossa. Voimakuvio on sama kuin tilanteessa 12, vain kitkan laji vaihtuu.",
+ eqWhy:{
+  x:"F<sub>μ</sub> − G sin α = 0, koska vakionopeus ⇒ a<sub>x</sub> = 0.",
+  y:"N − G cos α = 0. Näistä μ = tan α — sama tulos kuin juuri ja juuri levossa olevalle kappaleelle."}
+}
+];
+
+/* ============================================================
+   PIIRTO
+   ============================================================ */
+const W=360,H=205;
+const INK="#3D3D3D", VEC="#F1786F", VEC2="#F6AFA9", CMP="#5B85B8", GRN="#7CB342",
+      OBJ_BG="#FCEFA1", OBJ_BR="#E0A93B",
+      MATH='"Latin Modern Roman",Cambria,"Times New Roman",Times,serif';
+
+function svgOpen(){
+  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img">
+    <rect width="${W}" height="${H}" fill="#FAFAFA"/>`;
+}
+function arrowDefs(){
+  return `<defs>
+   <marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4.4" markerHeight="4.4" orient="auto-start-reverse">
+     <path d="M0 0 L10 5 L0 10 z" fill="${VEC}"/></marker>
+   <marker id="ah2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4.6" markerHeight="4.6" orient="auto-start-reverse">
+     <path d="M0 0 L10 5 L0 10 z" fill="${VEC2}"/></marker>
+   <marker id="ac" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4.4" markerHeight="4.4" orient="auto-start-reverse">
+     <path d="M0 0 L10 5 L0 10 z" fill="${CMP}"/></marker>
+   <marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+     <path d="M0 0 L10 5 L0 10 z" fill="${INK}"/></marker>
+   <marker id="ag" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+     <path d="M0 0 L10 5 L0 10 z" fill="${GRN}"/></marker>
+  </defs>`;
+}
+
+/* voimavektori.
+   opt.mode "from" = häntä pisteessä (x,y), "to" = kärki pisteessä (x,y)
+   opt.loff = tunnuksen sivusiirtymä, opt.lfrac = tunnuksen kohta nuolella
+   Palauttaa nuolen viivan ja sijoittamattoman tunnuksen erikseen, jotta
+   tunnukset voidaan asetella päällekkäisyyksiä välttäen.                */
+function vecParts(x,y,ang,len,label,opt){
+  opt=opt||{};
+  const r=ang*Math.PI/180, ux=Math.cos(r), uy=-Math.sin(r);
+  let x1,y1,x2,y2;
+  if(opt.mode==="to"){ x2=x; y2=y; x1=x-ux*len; y1=y-uy*len; }
+  else { x1=x; y1=y; x2=x+ux*len; y2=y+uy*len; }
+  const col=opt.col||VEC, mk=opt.mk||"ah";
+  const line=`<line x1="${f(x1)}" y1="${f(y1)}" x2="${f(x2)}" y2="${f(y2)}" stroke="${col}"
+     stroke-width="${opt.w||3.2}" stroke-linecap="butt" ${opt.dash?'stroke-dasharray="5 4"':""} marker-end="url(#${mk})"/>`;
+  let lab=null;
+  if(label){
+    const k=(opt.loff===undefined?15:opt.loff);
+    const lf=(opt.lfrac===undefined?0.55:opt.lfrac);
+    lab={x1:x1, y1:y1, ux:ux, uy:uy, len:len, lf:lf, px:Math.sin(r), py:Math.cos(r),
+         k:k, label:label, col:col, fs:opt.fs||17, bar:!opt.novecbar};
+  }
+  const pts=[];
+  for(let t=0.12;t<=1.001;t+=0.18) pts.push({x:x1+ux*len*t, y:y1+uy*len*t, need:12});
+  return {line:line, lab:lab, pts:pts};
+}
+function vec(x,y,ang,len,label,opt){
+  const p=vecParts(x,y,ang,len,label,opt);
+  return p.line + (p.lab?placeLabels([p.lab],[]):"");
+}
+/* asettelu: kokeillaan tunnukselle kumpaakin puolta ja tarvittaessa
+   suurempaa etäisyyttä, jotta kaksi tunnusta ei mene päällekkäin       */
+function placeLabels(labs,obst){
+  const placed=(obst||[]).slice();
+  let out="";
+  labs.forEach(L=>{
+    const cands=[];
+    [L.lf,0.9,0.28,1.14].forEach(lf=>{
+      [L.k,-L.k,L.k*1.8,-L.k*1.8,L.k*2.6,-L.k*2.6].forEach(k=>cands.push([lf,k]));
+    });
+    let best=null,bestD=-1;
+    for(const c of cands){
+      const x=L.x1+L.ux*L.len*c[0]+L.px*c[1], y=L.y1+L.uy*L.len*c[0]+L.py*c[1];
+      if(x<14||x>346||y<13||y>H-9) continue;
+      let d=1e9; placed.forEach(q=>{ d=Math.min(d,Math.hypot(x-q.x,y-q.y)-(q.need===undefined?26:q.need)); });
+      if(d>bestD){ bestD=d; best={x:x,y:y}; }
+      if(d>=0) break;
+    }
+    if(!best) best={x:L.x1+L.ux*L.len*L.lf+L.px*L.k, y:L.y1+L.uy*L.len*L.lf+L.py*L.k};
+    placed.push({x:best.x,y:best.y,need:26});
+    const base=L.label.replace(/_.*/,""), sub=(L.label.match(/_(.*)/)||[])[1]||"";
+    out+=`<text x="${f(best.x)}" y="${f(best.y)}" fill="${L.col}" font-size="${L.fs}" font-style="italic"
+      font-family=${JSON.stringify(MATH)} text-anchor="middle" dominant-baseline="middle">${base}${
+      sub?`<tspan font-size="${f(L.fs*0.65)}" dy="4">${sub}</tspan>`:""}</text>`;
+    if(L.bar)
+      out+=`<line x1="${f(best.x-6)}" y1="${f(best.y-10)}" x2="${f(best.x+6)}" y2="${f(best.y-10)}" stroke="${L.col}" stroke-width="1.4"/>`;
+  });
+  return out;
+}
+function f(n){ return Math.round(n*10)/10; }
+
+/* nopeus- tai kiihtyvyysvektori */
+function auxvec(x,y,ang,len,label,green){
+  const r=ang*Math.PI/180, col=green?GRN:INK;
+  return `<line x1="${f(x)}" y1="${f(y)}" x2="${f(x+Math.cos(r)*len)}" y2="${f(y-Math.sin(r)*len)}"
+     stroke="${col}" stroke-width="3" marker-end="url(#${green?"ag":"ai"})"/>
+   <text x="${f(x+Math.cos(r)*len*0.5)}" y="${f(y-Math.sin(r)*len*0.5-9)}" fill="${col}" font-size="15"
+     font-style="italic" font-family=${JSON.stringify(MATH)} text-anchor="middle">${label}</text>
+   <line x1="${f(x+Math.cos(r)*len*0.5-5)}" y1="${f(y-Math.sin(r)*len*0.5-22)}"
+         x2="${f(x+Math.cos(r)*len*0.5+5)}" y2="${f(y-Math.sin(r)*len*0.5-22)}" stroke="${col}" stroke-width="1.3"/>`;
+}
+/* vihreä kulmakaari kaltevalle tasolle */
+function angleArc(x,y,a,r){
+  const rad=a*Math.PI/180;
+  return `<path d="M${x+r} ${y} A${r} ${r} 0 0 0 ${f(x+r*Math.cos(rad))} ${f(y-r*Math.sin(rad))}"
+      fill="none" stroke="${GRN}" stroke-width="1.6"/>
+    <text x="${f(x+r*1.5*Math.cos(rad/2))}" y="${f(y-r*1.5*Math.sin(rad/2)+4)}" fill="${GRN}" font-size="14"
+      font-style="italic" font-family=${JSON.stringify(MATH)} text-anchor="middle">α</text>`;
+}
+/* koordinaatisto: x-akseli kulmassa ax, y-akseli kulmassa ay */
+function axes(x,y,ax,ay){
+  const L=24;
+  const p=a=>[x+Math.cos(a*Math.PI/180)*L, y-Math.sin(a*Math.PI/180)*L];
+  const [xx,xy]=p(ax), [yx,yy]=p(ay);
+  const lp=(a,d)=>[x+Math.cos(a*Math.PI/180)*(L+d), y-Math.sin(a*Math.PI/180)*(L+d)+4];
+  const [lxx,lxy]=lp(ax,9), [lyx,lyy]=lp(ay,9);
+  return `<line x1="${x}" y1="${y}" x2="${f(xx)}" y2="${f(xy)}" stroke="${INK}" stroke-width="1.4" marker-end="url(#ai)"/>
+   <line x1="${x}" y1="${y}" x2="${f(yx)}" y2="${f(yy)}" stroke="${INK}" stroke-width="1.4" marker-end="url(#ai)"/>
+   <text x="${f(lxx)}" y="${f(lxy)}" fill="${INK}" font-size="13" font-style="italic" text-anchor="middle"
+     font-family=${JSON.stringify(MATH)}>x</text>
+   <text x="${f(lyx)}" y="${f(lyy)}" fill="${INK}" font-size="13" font-style="italic" text-anchor="middle"
+     font-family=${JSON.stringify(MATH)}>y</text>`;
+}
+function txt(x,y,s,anchor){
+  return `<text x="${x}" y="${y}" fill="${INK}" font-size="13"
+     font-family="Nunito Sans, Segoe UI, sans-serif" text-anchor="${anchor||"start"}">${s}</text>`;
+}
+
+/* --- koordinaatiston akselikulmat --- */
+/* Yksi koordinaatisto kaikkialla: x pintaa pitkin ylös, y pinnasta ulos.
+   Vaakasuoralla pinnalla tämä on tavallinen x oikealle, y ylös.        */
+function frameAx(sc){ return sc.t==="incline" ? sc.alpha : 0; }    // x
+function frameAy(sc){ return sc.t==="incline" ? sc.alpha+90 : 90; } // y
+
+/* --- kappaleen kiinnityspisteet --- */
+function sceneGeom(sc){
+  const g={surf:0,contact:null,com:{x:180,y:100}};
+  if(sc.t==="flat"){
+    const gy=132; g.gy=gy; g.surf=0;
+    if(sc.obj==="car"){ g.com={x:180,y:gy-19}; g.contact={x:180,y:gy}; g.halfw=34; }
+    else if(sc.obj==="puck"){ g.com={x:180,y:gy-6}; g.contact={x:180,y:gy}; g.halfw=22; }
+    else if(sc.obj==="book"){ g.com={x:180,y:gy-9}; g.contact={x:180,y:gy}; g.halfw=32; }
+    else { g.com={x:180,y:gy-16}; g.contact={x:180,y:gy}; g.halfw=26; }
+    if(sc.rope) g.rope={x:206,y:gy-21};
+  }
+  else if(sc.t==="elev"){
+    const fy=140; g.fy=fy; g.surf=0;
+    if(sc.scale){ g.com={x:180,y:fy-33}; g.contact={x:180,y:fy-12}; g.halfw=28; }
+    else { g.com={x:180,y:fy-17}; g.contact={x:180,y:fy}; g.halfw=26; }
+  }
+  else if(sc.t==="air"){
+    let px=180,py=54;
+    if(sc.pos==="rising"){py=126;}
+    if(sc.pos==="top"){py=54;}
+    if(sc.pos==="falling"){py=100;}
+    g.com={x:px,y:py}; g.contact=null;
+  }
+  else if(sc.t==="incline"){
+    const a=sc.alpha, r=a*Math.PI/180;
+    const x0=30,y0=180,L=302,t=0.44,h=40;
+    const bx=x0+L*t, by=y0-L*t*Math.tan(r);
+    g.surf=a; g.x0=x0; g.y0=y0; g.L=L; g.bx=bx; g.by=by; g.h=h; g.w=58; g.halfw=29;
+    g.contact={x:bx,y:by};
+    g.com={x:bx-(h/2)*Math.sin(r), y:by-(h/2)*Math.cos(r)};
+  }
+  return g;
+}
+
+/* --- yhden voiman kiinnitys ja piirtotapa --- *
+ * N  : nuolen KÄRKI kappaleen alareunassa, häntä pinnan alla, hieman painosta sivussa
+ * Fμ : nuoli ALKAA kappaleen ja pinnan väliseltä kosketuspinnalta                     */
+function isFric(id){ return id==="Fmu"||id==="Fmu0"; }
+/* kitkan suuntamerkki pintaa pitkin: +1 = pintaa pitkin ylös / oikealle */
+function fricSignOf(forces,alpha,surf){
+  const f=(forces||[]).filter(x=>isFric(x.id))[0];
+  if(!f) return 0;
+  const d=dirAngle(f.dir,alpha||0)-(surf||0);
+  return Math.cos(d*Math.PI/180)>=0 ? 1 : -1;
+}
+function anchorFor(f,g,ctx){
+  const sgn=(ctx&&ctx.fricSign)||0;
+  if(g.contact && (isFric(f.id)||f.id==="N")){
+    const sr=g.surf*Math.PI/180, ux=Math.cos(sr), uy=-Math.sin(sr);
+    if(isFric(f.id)){
+      /* kitka lähtee kappaleen reunasta ulospäin — ei kappaleen alle */
+      const off=(sgn||1)*(g.halfw||24);
+      return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"from"};
+    }
+    /* tukivoima päättyy kappaleeseen, hieman painon vektorista sivuun */
+    const off = sgn>0 ? -15 : 15;
+    return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"to"};
+  }
+  if(f.id==="T" && g.rope) return {x:g.rope.x, y:g.rope.y, mode:"from"};
+  if(f.id==="Fv" && g.faceU){
+    const up=Math.cos((dirAngle(f.dir,g.surf)-g.surf)*Math.PI/180)>=0;
+    return up ? {x:g.faceU.x,y:g.faceU.y,mode:"from"} : {x:g.faceD.x,y:g.faceD.y,mode:"from"};
+  }
+  return {x:g.com.x, y:g.com.y, mode:"from"};
+}
+function labOff(f,g,ang){ return 15; }
+
+/* --- komponentit: jaettu voima katkoviivalla, komponentit kokoviivalla --- */
+function drawComps(fo,g,sc,len){
+  const ax=frameAx(sc), ay=frameAy(sc);
+  const th=dirAngle(fo.dir,sc.alpha||0);
+  const cx=len*Math.cos((th-ax)*Math.PI/180);
+  const cy=len*Math.cos((th-ay)*Math.PI/180);
+  const x=g.com.x, y=g.com.y;
+  const pt=(a,L)=>[x+Math.cos(a*Math.PI/180)*L, y-Math.sin(a*Math.PI/180)*L];
+  let s="", labs=[];
+  const axd = cx>=0?ax:ax+180, ayd = cy>=0?ay:ay+180;
+  const [tx,ty]=pt(th,len);
+  const [ex,ey]=pt(axd,Math.abs(cx));
+  const [ny_,my_]=pt(ayd,Math.abs(cy));
+  s+=`<line x1="${f(ex)}" y1="${f(ey)}" x2="${f(tx)}" y2="${f(ty)}" stroke="${CMP}" stroke-width="1.1" stroke-dasharray="4 3" opacity="0.75"/>`;
+  s+=`<line x1="${f(ny_)}" y1="${f(my_)}" x2="${f(tx)}" y2="${f(ty)}" stroke="${CMP}" stroke-width="1.1" stroke-dasharray="4 3" opacity="0.75"/>`;
+  let pts=[];
+  if(Math.abs(cx)>4){ const p=vecParts(x,y,axd,Math.abs(cx),glyph(fo.sym)+"_x",{col:CMP,mk:"ac",fs:16,loff:-15,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
+  if(Math.abs(cy)>4){ const p=vecParts(x,y,ayd,Math.abs(cy),glyph(fo.sym)+"_y",{col:CMP,mk:"ac",fs:16,loff:-15,lfrac:0.6}); s+=p.line; labs.push(p.lab); pts=pts.concat(p.pts); }
+  return {svg:s, labs:labs, pts:pts};
+}
+
+/* jo varatut tekstipaikat, joita voimatunnukset väistävät */
+function staticLabs(sc,g){
+  const N=22;
+  if(sc.t==="incline")
+    return [{x:288,y:134,need:N},{x:312,y:138,need:N},{x:288,y:110,need:N},{x:52,y:174,need:N},{x:45,y:24,need:N}];
+  const a=[{x:40,y:58,need:N},{x:16,y:34,need:N},{x:66,y:62,need:N}];
+  if(sc.t==="air"){
+    a.push({x:214,y:g.com.y-4,need:N},{x:214,y:g.com.y+16,need:N},{x:214,y:g.com.y-24,need:N});
+    return a;
+  }
+  if(sc.t==="elev") return [{x:52,y:86,need:N},{x:28,y:62,need:N},{x:180,y:24,need:N},{x:150,y:24,need:N},{x:210,y:24,need:N}];
+  if(sc.obj==="car") a.push({x:180,y:106,need:24});
+  if(sc.v) a.push({x:273,y:26,need:N},{x:320,y:40,need:N});
+  return a;
+}
+function drawScene(sc, forces, alpha, opt){
+  opt=opt||{};
+  const g=sceneGeom(sc), scObj={...sc, alpha:alpha};
+  let s=svgOpen()+arrowDefs();
+  const showF=!!forces;
+
+  if(sc.t==="flat"){
+    const gy=g.gy;
+    s+=`<line x1="20" y1="${gy}" x2="340" y2="${gy}" stroke="${INK}" stroke-width="2"/>`;
+    for(let x=24;x<340;x+=14) s+=`<line x1="${x}" y1="${gy}" x2="${x-7}" y2="${gy+8}" stroke="${INK}" stroke-width="1"/>`;
+    const cx=180;
+    if(sc.obj==="car"){
+      s+=`<rect x="${cx-34}" y="${gy-38}" width="68" height="38" rx="5" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+      s+=txt(cx,gy-26,"auto","middle");
+    } else if(sc.obj==="puck"){
+      s+=`<rect x="${cx-22}" y="${gy-12}" width="44" height="12" rx="4" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+    } else if(sc.obj==="book"){
+      s+=`<rect x="${cx-32}" y="${gy-18}" width="64" height="18" rx="4" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+    } else {
+      s+=`<rect x="${cx-26}" y="${gy-32}" width="52" height="32" rx="6" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+    }
+    if(sc.rope) s+=`<line x1="${cx+26}" y1="${gy-20}" x2="322" y2="${gy-20}" stroke="${INK}" stroke-width="1.8"/>`;
+    if(sc.v){ s+=auxvec(248,36,0,50,"v"); s+=txt(306,40,"= vakio"); }
+    s+=axes(40,58,0,90);
+  }
+  else if(sc.t==="elev"){
+    const fy=g.fy;
+    s+=`<rect x="118" y="48" width="124" height="${fy-48}" fill="none" stroke="${INK}" stroke-width="2"/>`;
+    s+=`<line x1="180" y1="32" x2="180" y2="48" stroke="${INK}" stroke-width="1.5"/>`;
+    if(sc.scale){
+      s+=`<rect x="152" y="${fy-12}" width="56" height="12" rx="3" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+      s+=`<circle cx="180" cy="${fy-46}" r="10" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+      s+=`<path d="M180 ${fy-36} v16 M168 ${fy-31} h24 M180 ${fy-20} l-9 8 M180 ${fy-20} l9 8"
+           fill="none" stroke="${OBJ_BR}" stroke-width="2.5" stroke-linecap="round"/>`;
+    } else {
+      s+=`<rect x="154" y="${fy-34}" width="52" height="34" rx="6" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+    }
+    s+=txt(180,24,sc.motion,"middle");
+    s+=axes(52,86,0,90);
+  }
+  else if(sc.t==="air"){
+    const px=g.com.x, py=g.com.y;
+    s+=`<line x1="${px}" y1="42" x2="${px}" y2="190" stroke="${INK}" stroke-width="1" stroke-dasharray="3 4"/>`;
+    s+=`<line x1="20" y1="192" x2="340" y2="192" stroke="${INK}" stroke-width="2"/>`;
+    for(let x=24;x<340;x+=14) s+=`<line x1="${x}" y1="192" x2="${x-7}" y2="200" stroke="${INK}" stroke-width="1"/>`;
+    s+=`<circle cx="${px}" cy="${py}" r="11" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+    if(sc.pos==="rising")  s+=auxvec(px+34,py+16,90,36,"v");
+    if(sc.pos==="falling") s+=auxvec(px+34,py-16,270,36,"v");
+    if(sc.pos==="top")     s+=txt(px+20,py+5,"v = 0");
+    s+=axes(40,58,0,90);
+  }
+  else if(sc.t==="incline"){
+    const a=sc.alpha, r=a*Math.PI/180;
+    const x1=g.x0+g.L, y1=g.y0-g.L*Math.tan(r);
+    s+=`<line x1="${g.x0}" y1="${g.y0}" x2="${x1}" y2="${g.y0}" stroke="#BFBFBF" stroke-width="1.4"/>`;
+    s+=`<line x1="${g.x0}" y1="${g.y0}" x2="${f(x1)}" y2="${f(y1)}" stroke="${INK}" stroke-width="2"/>`;
+    s+=angleArc(g.x0,g.y0,a,26);
+    const c=Math.cos(r), sn=Math.sin(r), w=g.w, h=g.h;
+    const p=(dx,dy)=>`${f(g.bx+dx*c-dy*sn)},${f(g.by-dx*sn-dy*c)}`;
+    s+=`<polygon points="${p(-w/2,0)} ${p(w/2,0)} ${p(w/2,h)} ${p(-w/2,h)}"
+        fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5" stroke-linejoin="round"/>`;
+    s+=txt(g.x0+6,24,sc.state);
+    s+=axes(288,134,a,a+90);
+  }
+
+  if(showF){
+    const L0 = sc.t==="incline" ? 54 : 46;
+    const main=[], sub=[]; let pts=[];
+    const ctx={fricSign:fricSignOf(forces,alpha,g.surf)};
+    forces.forEach(fo=>{
+      const ang=dirAngle(fo.dir, alpha||0);
+      const an=anchorFor(fo,g,ctx);
+      const len=L0*(opt.scaled&&fo.rel?fo.rel:1);
+      const lf = fo.id==="N" ? 0.72 : (fo.id==="G" ? 0.45 : 0.55);
+      const jaettu = opt.comp && fo.split;
+      const st = jaettu ? {w:1.8,dash:true,fs:15} : {};
+      const p=vecParts(an.x,an.y,ang,len,fo.gl,
+        Object.assign({mode:an.mode,loff:labOff(fo,g,ang),lfrac:lf},st));
+      s+=p.line; (jaettu?sub:main).push(p.lab); pts=pts.concat(p.pts);
+    });
+    let labs=[];
+    if(opt.comp) forces.filter(x=>x.split).forEach(fo=>{
+      const r=drawComps(fo,g,scObj,L0*(fo.rel||1)); s+=r.svg; labs=labs.concat(r.labs); pts=pts.concat(r.pts);
+    });
+    s+=placeLabels(labs.concat(main,sub), staticLabs(sc,g).concat(pts));
+  }
+  return s+"</svg>";
+}
+function glyph(id){
+  return {G:"G",N:"N",T:"T",Fmu:"F_μ",Fmu0:"F_μ0",Fi:"F_i",Fl:"F_l"}[id]||id;
+}
+function miniArrow(tok,alpha){
+  const ang=dirAngle(tok,alpha||0), r=ang*Math.PI/180;
+  const cx=20,cy=17,L=13, uid=tok+"_"+Math.round(alpha||0);
+  return `<svg viewBox="0 0 40 34" xmlns="http://www.w3.org/2000/svg">
+   <defs><marker id="m${uid}" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+   <path d="M0 0 L10 5 L0 10 z" fill="${VEC}"/></marker></defs>
+   <line x1="${f(cx-Math.cos(r)*L)}" y1="${f(cy+Math.sin(r)*L)}" x2="${f(cx+Math.cos(r)*L)}" y2="${f(cy-Math.sin(r)*L)}"
+     stroke="${VEC}" stroke-width="3.5" marker-end="url(#m${uid})"/></svg>`;
+}
+
+/* ============================================================
+   YHTÄLÖIDEN LADONTA
+   ============================================================ */
+function term(t,first){
+  let s = "";
+  if(first) s += (t.s<0?'<span class="op">−</span>':"");
+  else      s += (t.s<0?'<span class="op"> − </span>':'<span class="op"> + </span>');
+  s += scal(t.id);
+  if(t.trig) s += ' <span class="fn">'+t.trig+'</span> <span class="sym">α</span>';
+  return s;
+}
+function eqStr(terms,rhs){
+  if(!terms.length) return '<span class="sym">0</span> <span class="op">=</span> '+rhs;
+  let out="";
+  terms.forEach((t,i)=>out+=term(t,i===0));
+  return out+' <span class="op">=</span> '+rhs;
+}
+const ax_='<span class="sym">x</span><span class="op">:</span>&nbsp;&nbsp;';
+const ay_='<span class="sym">y</span><span class="op">:</span>&nbsp;&nbsp;';
+const RHS = {
+  x:'<span class="sym">ma<sub>x</sub></span>',
+  y:'<span class="sym">ma<sub>y</sub></span>'
+};
+/* positiiviset termit ensin, jotta yhtälö ei ala turhaan miinuksella */
+function ordT(t){ return t.filter(x=>x.s>0).concat(t.filter(x=>x.s<0)); }
+function axTerms(sc,ax){
+  const key = ax==="x" ? "cx" : "cy";
+  return ordT(sc.forces.filter(f=>f[key]).map(f=>({...f[key]})));
+}
+/* oikea vaihtoehto + tyypilliset virheet */
+function eqOptions(sc,ax){
+  const mine=axTerms(sc,ax), other=axTerms(sc,ax==="x"?"y":"x"), rhs=RHS[ax];
+  const out=[], seen=new Set();
+  const push=(terms,ok)=>{ const h=eqStr(terms,rhs); if(seen.has(h))return; seen.add(h); out.push({html:h,ok:!!ok}); };
+  push(mine,true);
+  if(mine.length) push(mine.map((t,i)=> i===mine.length-1?{...t,s:-t.s}:t));
+  if(mine.some(t=>t.trig)) push(mine.map(t=> t.trig?{...t,trig:t.trig==="sin"?"cos":"sin"}:t));
+  if(other.length) push([...mine,{...other[0],s:1}]);
+  if(mine.length>1) push(mine.map(t=>({...t,s:-t.s})));
+  if(other.length&&out.length<3) push(other);
+  if(other.length>1&&out.length<3) push([other[1]]);
+  return out.slice(0,4);
+}
+/* vektorimuotoinen NII */
+function vecEqOptions(sc){
+  const ids=sc.forces.map(f=>f.sym);
+  const rhs='<span class="sym">m<span class="ov">a</span></span>';
+  const j=arr=>arr.map(sym).join('<span class="op"> + </span>');
+  const out=[], seen=new Set();
+  const push=(h,ok)=>{ if(seen.has(h))return; seen.add(h); out.push({html:h,ok:!!ok}); };
+  push(j(ids)+' <span class="op">=</span> '+rhs, true);
+  if(ids.length>1){
+    const minus=ids.map(sym).join('<span class="op"> − </span>');
+    push(minus+' <span class="op">=</span> '+rhs);
+    push(j(ids.slice(0,-1))+' <span class="op">=</span> '+rhs);
+  }
+  if(sc.forceD.length) push(j([...ids,sc.forceD[0].sym])+' <span class="op">=</span> '+rhs);
+  if(sc.net!=="nolla") push(j(ids)+' <span class="op">=</span> <span class="sym">0</span>');
+  return out.slice(0,4);
+}
+
+/* ============================================================
+   TILA
+   ============================================================ */
+let S = {view:"menu", si:0, step:0, plan:[], sel:new Set(), radio:null,
+         dirIdx:0, axIdx:0, checked:false, errors:{}, done:new Set()};
+
+function scen(){ return SCEN[S.si]; }
+function buildPlan(sc){
+  const p=["bodies","forces","dirs","komp"];
+  if(sc.mag) p.push("mag");
+  p.push("net","n2","dim","n2xy");
+  return p;
+}
+function logErr(key,text){ if(!S.errors[key]) S.errors[key]={text,n:0}; S.errors[key].n++; }
+
+/* ============================================================
+   NÄKYMÄT
+   ============================================================ */
+const app=document.getElementById("app"), bar=document.getElementById("bar");
+
+function render(){
+  if(S.view==="menu") return renderMenu();
+  if(S.view==="lab") return renderLab();
+  if(S.view==="summary") return renderSummary();
+  renderTask();
+}
+
+function renderMenu(){
+  let groups={};
+  SCEN.forEach((s,i)=>{ (groups[s.ryhma]=groups[s.ryhma]||[]).push([s,i]); });
+  let h=`<header><h1>Voimakuviot</h1><p class="sub">Tunnista · Komponentit · Newtonin II laki · FY4</p></header>
+   <p style="margin:0 0 20px">Valitse tilanne. Jokaisessa edetään samalla tavalla: ensin kappaleet, joiden kanssa
+   tutkittava kappale on vuorovaikutuksessa, sitten voimat ja niiden suunnat, sitten komponenttijako
+   ja lopuksi Newtonin II laki vektorimuodossa sekä yksi- tai kaksiulotteisena komponenttiyhtälönä.</p>
+   <h2>Voimalabra</h2>
+   <div class="picker"><button data-lab>Kokeile: kallista tasoa, vedä ja työnnä</button></div>`;
+  for(const g in groups){
+    h+=`<h2>${g}</h2><div class="picker">`;
+    groups[g].forEach(([s,i])=>{
+      h+=`<button data-go="${i}" aria-pressed="${S.done.has(s.id)}">${i+1}. ${s.title}</button>`;
+    });
+    h+=`</div>`;
+  }
+  if(Object.keys(S.errors).length){
+    h+=`<h2>Toistuvat kompastuskohdat</h2>`;
+    Object.values(S.errors).sort((a,b)=>b.n-a.n).forEach(e=>{
+      h+=`<div class="sumrow"><span>${e.text}</span><span class="n">${e.n}×</span></div>`;
+    });
+  }
+  app.innerHTML=h;
+  bar.innerHTML = S.done.size ? `<button class="act ghost" data-reset>Aloita alusta</button>` : "";
+  app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{
+    S.si=+b.dataset.go; S.view="task"; S.step=0; S.plan=buildPlan(scen());
+    resetStep(); render(); window.scrollTo(0,0);
+  });
+  const lb=app.querySelector("[data-lab]");
+  if(lb) lb.onclick=()=>{S.view="lab";render();window.scrollTo(0,0);};
+  const rb=bar.querySelector("[data-reset]");
+  if(rb) rb.onclick=()=>{S.done=new Set();S.errors={};render();};
+}
+
+function resetStep(){ S.sel=new Set(); S.radio=null; S.checked=false; S.dirIdx=0; S.axIdx=0; }
+
+function axNote(sc){
+  return sc.dirset==="incline" ? AX_INCL : AX_FLAT;
+}
+
+function renderTask(){
+  const sc=scen(), stepName=S.plan[S.step];
+  let h=`<header><h1>${S.si+1}. ${sc.title}</h1><p class="sub">${sc.ryhma}</p></header>`;
+
+  const late = ["mag","net","n2","n2xy"].includes(stepName);
+  const revealF = (late || (stepName==="komp"&&S.checked))
+    ? sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym})) : null;
+  const opt = {
+    comp: (stepName==="komp"&&S.checked) || ["net","n2","n2xy"].includes(stepName),
+    scaled: ["net","n2","n2xy"].includes(stepName)
+  };
+  h+=`<div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
+      <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
+  h+=`<p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>`;
+
+  if(stepName==="bodies") h+=stepBodies(sc);
+  if(stepName==="forces") h+=stepForces(sc);
+  if(stepName==="dirs")   h+=stepDirs(sc);
+  if(stepName==="komp")   h+=stepKomp(sc);
+  if(stepName==="mag")    h+=stepMag(sc);
+  if(stepName==="net")    h+=stepNet(sc);
+  if(stepName==="n2")     h+=stepN2(sc);
+  if(stepName==="dim")    h+=stepDim(sc);
+  if(stepName==="n2xy")   h+=stepN2xy(sc);
+
+  app.innerHTML=h;
+  wire(sc,stepName);
+}
+
+/* --- vaihe 1: kappaleet --- */
+function stepBodies(sc){
+  const list=shuffleStable([...sc.bodies.map(b=>({...b,ok:true})), ...sc.bodyD.map(b=>({...b,ok:false}))], sc.id);
+  S._list=list;
+  let h=`<p class="q">Minkä kappaleiden kanssa tutkittava kappale on vuorovaikutuksessa?</p>
+   <p class="hint">Valitse kaikki sopivat.</p><div class="opts">`;
+  list.forEach((b,i)=>{
+    let cls="opt";
+    if(S.checked){
+      if(S.sel.has(i)&&b.ok) cls+=" right";
+      else if(S.sel.has(i)&&!b.ok) cls+=" wrong";
+      else if(!S.sel.has(i)&&b.ok) cls+=" missed";
+    }
+    h+=`<button class="${cls}" data-i="${i}" aria-pressed="${S.sel.has(i)}">
+      <span class="mark"></span><span class="txt">${b.name}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    h+=`<div class="fb">`;
+    list.forEach((b,i)=>{
+      if(S.sel.has(i)&&!b.ok){ h+=note(b.name,b.why); logOnce(b.id,b.why); }
+      if(!S.sel.has(i)&&b.ok) h+=note(b.name,"Tämä kappale on vuorovaikutuksessa tutkittavan kappaleen kanssa. Muista kirjoittaa vuorovaikutus molempiin suuntiin.");
+    });
+    if(allRight(list)) h+=note("Oikein","Nyt jokaiselle voimalle löytyy kappale, joka sen kohdistaa.",true);
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe 2: voimat --- */
+function stepForces(sc){
+  const list=shuffleStable([
+    ...sc.forces.map(f=>({id:f.id,label:`${sym(f.sym)} &nbsp;${f.name}`,ok:true,why:null})),
+    ...sc.forceD.map(f=>({id:f.id,label:`${sym(f.sym)} &nbsp;${f.name}`,ok:false,why:f.why}))
+  ], sc.id+"f");
+  S._list=list;
+  let h=`<p class="q">Mitkä voimat vaikuttavat tutkittavaan kappaleeseen?</p>
+   <p class="hint">Jokaisen voiman takana pitää olla kappale vaiheesta 1.</p><div class="opts">`;
+  list.forEach((f,i)=>{
+    let cls="opt";
+    if(S.checked){
+      if(S.sel.has(i)&&f.ok) cls+=" right";
+      else if(S.sel.has(i)&&!f.ok) cls+=" wrong";
+      else if(!S.sel.has(i)&&f.ok) cls+=" missed";
+    }
+    h+=`<button class="${cls}" data-i="${i}" aria-pressed="${S.sel.has(i)}">
+      <span class="mark"></span><span class="txt">${f.label}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    h+=`<div class="fb">`;
+    list.forEach((f,i)=>{
+      if(S.sel.has(i)&&!f.ok){ h+=note("Mikä kappale kohdistaa tämän voiman?",f.why); logOnce(f.id,f.why); }
+      if(!S.sel.has(i)&&f.ok){
+        const src=sc.forces.find(x=>x.id===f.id);
+        h+=note("Puuttuu",`${src.name} — tämä tulee kappaleelta, jonka valitsit vaiheessa 1.`);
+      }
+    });
+    if(allRight(list)) h+=note("Oikein","Jokainen voima on jäljitettävissä yhteen kappaleeseen.",true);
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe 3: suunnat --- */
+function stepDirs(sc){
+  const f=sc.forces[S.dirIdx];
+  const set = sc.dirset==="incline" ? INCL_SET : FLAT_SET;
+  const alpha = sc.alpha||0;
+  let h=`<p class="q">Mihin suuntaan ${sym(f.sym)} osoittaa?</p>
+   <p class="hint">${f.name} · voima ${S.dirIdx+1} / ${sc.forces.length}</p><div class="opts">`;
+  set.forEach(tok=>{
+    let cls="opt radio";
+    if(S.checked){
+      if(tok===f.dir) cls+=" right";
+      else if(tok===S.radio) cls+=" wrong";
+    }
+    h+=`<button class="${cls}" data-d="${tok}" aria-pressed="${S.radio===tok}">
+      <span class="mark"></span><span class="arrowbox">${miniArrow(tok,alpha)}</span>
+      <span class="txt">${DIRS[tok].t}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    h+=`<div class="fb">`;
+    if(S.radio===f.dir) h+=note("Oikein",f.dirWhy,true);
+    else { h+=note("Tarkista suunta",f.dirWhy); logOnce("dir_"+sc.id+"_"+f.id,`${f.name}: väärä suunta`); }
+    if(f.id==="N") h+=note("Piirtotapa","Tukivoima piirretään päättymään kappaleeseen: nuolen kärki on kappaleen pinnassa. Piirrä se hieman painon vektorista sivuun, jotta nuolet eivät mene päällekkäin.");
+    if(f.id==="Fmu"||f.id==="Fmu0") h+=note("Piirtotapa","Kitkavoima alkaa tai päättyy kappaleen ja pinnan väliin — juuri siihen kohtaan, jossa pinnat koskettavat toisiaan.");
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe 4: komponenttijako --- */
+function stepKomp(sc){
+  const anySplit = sc.forces.some(f=>f.split);
+  const list=[
+    ...sc.forces.map(f=>({id:f.id,label:`${sym(f.sym)} &nbsp;${f.name}`,ok:!!f.split})),
+    {id:"none",label:"Ei mitään — kaikki voimat ovat jo akselien suuntaisia",ok:!anySplit}
+  ];
+  S._list=list;
+  let h=`<p class="q">Mitkä voimat pitää jakaa x- ja y-komponentteihin?</p>
+   <p class="hint">Koordinaatisto: ${axNote(sc)}. Valitse kaikki sopivat.</p><div class="opts">`;
+  list.forEach((f,i)=>{
+    let cls="opt";
+    if(S.checked){
+      if(S.sel.has(i)&&f.ok) cls+=" right";
+      else if(S.sel.has(i)&&!f.ok) cls+=" wrong";
+      else if(!S.sel.has(i)&&f.ok) cls+=" missed";
+    }
+    h+=`<button class="${cls}" data-i="${i}" aria-pressed="${S.sel.has(i)}">
+      <span class="mark"></span><span class="txt">${f.label}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    h+=`<div class="fb">`;
+    const ok=allRight(list);
+    h+=note(ok?"Oikein":"Katso uudelleen", anySplit?KOMP_INCL:KOMP_FLAT, ok);
+    sc.forces.filter(f=>f.split).forEach(f=>{
+      h+=note(`${sym(f.sym)} komponentteina`,
+        `Kulma α on tason ja vaakatason välissä, joten sama kulma löytyy myös painon ja tason normaalin väliltä.
+         <span class="eqline">${compSym(f.sym,"x")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">sin</span> <span class="sym">α</span> &nbsp;(tasoa pitkin alas, siis −x)</span>
+         <span class="eqline">${compSym(f.sym,"y")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">cos</span> <span class="sym">α</span> &nbsp;(tasoa vasten)</span>
+         Alkuperäistä ${sym(f.sym)}-vektoria ei enää lasketa mukaan yhtälöihin, kun sen komponentit ovat käytössä.`);
+    });
+    if(!ok) logOnce("komp_"+sc.id,"Komponenttijako: mikä voima on vino koordinaatistoon nähden");
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe: suuruudet --- */
+function stepMag(sc){
+  let h=`<p class="q">${sc.mag.q}</p><p class="hint">Voimakuvio on nyt näkyvissä yllä.</p><div class="opts">`;
+  sc.mag.opts.forEach((o,i)=>{
+    let cls="opt radio";
+    if(S.checked){
+      if(i===sc.mag.correct) cls+=" right";
+      else if(String(i)===S.radio) cls+=" wrong";
+    }
+    h+=`<button class="${cls}" data-d="${i}" aria-pressed="${S.radio===String(i)}">
+      <span class="mark"></span><span class="txt">${o}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    h+=`<div class="fb">`;
+    const ok = S.radio===String(sc.mag.correct);
+    h+=note(ok?"Oikein":"Katso uudelleen",sc.mag.why,ok);
+    if(!ok) logOnce("mag_"+sc.id,"Voimien suuruusvertailu kiihtyvässä liikkeessä");
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe: kokonaisvoima --- */
+function stepNet(sc){
+  const set = (sc.dirset==="incline"?INCL_SET:FLAT_SET);
+  const opts = ["nolla",...set];
+  let h=`<p class="q">Mihin suuntaan kokonaisvoima osoittaa?</p>
+   <p class="hint">Vertaa yllä olevaa voimakuviota liikkeen kuvaukseen.</p><div class="opts">`;
+  opts.forEach(tok=>{
+    let cls="opt radio";
+    if(S.checked){
+      if(tok===sc.net) cls+=" right";
+      else if(tok===S.radio) cls+=" wrong";
+    }
+    const label = tok==="nolla" ? "Kokonaisvoima on nolla" : DIRS[tok].t;
+    const box = tok==="nolla" ? `<span class="arrowbox"></span>` : `<span class="arrowbox">${miniArrow(tok,sc.alpha||0)}</span>`;
+    h+=`<button class="${cls}" data-d="${tok}" aria-pressed="${S.radio===tok}">
+      <span class="mark"></span>${box}<span class="txt">${label}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    const ok=S.radio===sc.net;
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",sc.netWhy,ok)+`</div>`;
+    if(!ok) logOnce("net_"+sc.id,"Kokonaisvoiman suunnan päättely");
+  }
+  return h;
+}
+
+/* --- vaihe: NII vektorimuodossa --- */
+function stepN2(sc){
+  const list=shuffleStable(vecEqOptions(sc), sc.id+"n2");
+  S._list=list;
+  let h=`<p class="q">Kirjoita Newtonin II laki tälle kappaleelle vektorimuodossa.</p>
+   <p class="hint">Kaikki voimakuvion voimat, ei muuta.</p><div class="opts">`;
+  list.forEach((o,i)=>{
+    let cls="opt radio eq";
+    if(S.checked){
+      if(o.ok) cls+=" right";
+      else if(String(i)===S.radio) cls+=" wrong";
+    }
+    h+=`<button class="${cls}" data-d="${i}" aria-pressed="${S.radio===String(i)}">
+      <span class="mark"></span><span class="txt">${o.html}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    const ok = list[+S.radio] && list[+S.radio].ok;
+    h+=`<div class="fb">`;
+    h+=note(ok?"Oikein":"Katso uudelleen",
+      `Newtonin II laki on <span class="sym">Σ<span class="ov">F</span></span> <span class="op">=</span> <span class="sym">m<span class="ov">a</span></span>:
+       kaikki kappaleeseen vaikuttavat voimat lasketaan yhteen <b>vektoreina</b>, plusmerkeillä.
+       Suunnat hoituvat vasta komponenttivaiheessa, jossa osa termeistä saa miinusmerkin.`
+      +(sc.net==="nolla"
+        ? ` Tässä tilanteessa kiihtyvyys on nolla, joten oikea puoli on nolla.`
+        : ` Tässä tilanteessa kiihtyvyys ei ole nolla, joten oikeaa puolta ei saa merkitä nollaksi.`), ok);
+    if(!ok) logOnce("n2_"+sc.id,"Newtonin II lain kirjoittaminen vektorimuodossa");
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe: yksi- vai kaksiulotteinen tilanne --- */
+const DIM_WHY={
+ 1:`Kaikki kappaleeseen vaikuttavat voimat ovat samalla suoralla, tässä pystysuorassa.
+    Tilanne on <b>yksiulotteinen</b>: yksi komponenttiyhtälö riittää.
+    Vaakasuunnassa ei ole yhtään voimaa, joten siellä ei ole myöskään kiihtyvyyttä — nopeus vain säilyy.`,
+ 2:`Voimat osoittavat kahteen eri suuntaan, joten tilanne on <b>kaksiulotteinen</b>.
+    Newtonin II laki kirjoitetaan erikseen x- ja y-suunnassa. Kumpikin yhtälö on skalaariyhtälö,
+    ja yleensä molempia tarvitaan: y-yhtälöstä saadaan tukivoima, jota tarvitaan kitkaan x-yhtälössä.`};
+function stepDim(sc){
+  const opts=[
+    "Yksi yhtälö — kaikki voimat ovat samalla suoralla",
+    "Kaksi yhtälöä — x-suunta ja y-suunta erikseen"];
+  let h=`<p class="q">Montako komponenttiyhtälöä tästä voimakuviosta kirjoitetaan?</p>
+   <p class="hint">Katso, osoittavatko voimat yhteen vai kahteen eri suuntaan.</p><div class="opts">`;
+  opts.forEach((o,i)=>{
+    let cls="opt radio";
+    if(S.checked){
+      if(i===sc.dim-1) cls+=" right";
+      else if(String(i)===S.radio) cls+=" wrong";
+    }
+    h+=`<button class="${cls}" data-d="${i}" aria-pressed="${S.radio===String(i)}">
+      <span class="mark"></span><span class="txt">${o}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    const ok=S.radio===String(sc.dim-1);
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",DIM_WHY[sc.dim],ok)+`</div>`;
+    if(!ok) logOnce("dim_"+sc.id,"Yksi- vai kaksiulotteinen tilanne");
+  }
+  return h;
+}
+
+/* --- vaihe: NII x- ja y-suunnassa --- */
+function stepN2xy(sc){
+  const ax = sc.dim===1 ? "y" : (S.axIdx===0 ? "x" : "y");
+  const list=shuffleStable(eqOptions(sc,ax), sc.id+"eq"+ax);
+  S._list=list;
+  const dirTxt = sc.dirset==="incline"
+    ? (ax==="x"?"x-akseli on tasoa pitkin ylös":"y-akseli on kohtisuoraan tasosta ulos")
+    : (ax==="x"?"x-akseli on oikealle":"y-akseli on ylös");
+  let h=`<p class="q">Kirjoita Newtonin II laki <b>${ax}</b>-suunnassa.</p>
+   <p class="hint">${dirTxt}. Positiiviseen suuntaan osoittava voima saa plusmerkin. · ${sc.dim===1?"1 / 1":(S.axIdx+1)+" / 2"}</p><div class="opts">`;
+  list.forEach((o,i)=>{
+    let cls="opt radio eq";
+    if(S.checked){
+      if(o.ok) cls+=" right";
+      else if(String(i)===S.radio) cls+=" wrong";
+    }
+    h+=`<button class="${cls}" data-d="${i}" aria-pressed="${S.radio===String(i)}">
+      <span class="mark"></span><span class="txt">${o.html}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    const ok = list[+S.radio] && list[+S.radio].ok;
+    h+=`<div class="fb">`;
+    h+=note(ok?"Oikein":"Katso uudelleen",
+      `<span class="eqline">${eqStr(axTerms(sc,ax),RHS[ax])}</span>${sc.eqWhy[ax]}`, ok);
+    if(!ok) logOnce("eq_"+sc.id+"_"+ax,`Newtonin II laki ${ax}-suunnassa: etumerkit tai termit`);
+    h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- apurit --- */
+function note(head,body,good){
+  return `<div class="note${good?" good":""}"><span class="head">${head}</span>${body}</div>`;
+}
+function allRight(list){
+  return list.every((x,i)=>x.ok===S.sel.has(i));
+}
+function logOnce(key,text){
+  if(S._logged&&S._logged.has(key)) return;
+  S._logged=S._logged||new Set(); S._logged.add(key);
+  logErr(key,text);
+}
+function shuffleStable(arr,seed){
+  let h=0; for(let i=0;i<seed.length;i++) h=(h*31+seed.charCodeAt(i))>>>0;
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){ h=(h*1103515245+12345)>>>0; const j=h%(i+1); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+
+/* --- napit --- */
+function wire(sc,stepName){
+  app.querySelectorAll("[data-i]").forEach(b=>b.onclick=()=>{
+    if(S.checked) return;
+    const i=+b.dataset.i;
+    S.sel.has(i)?S.sel.delete(i):S.sel.add(i);
+    render();
+  });
+  app.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{
+    if(S.checked) return;
+    S.radio=b.dataset.d; render();
+  });
+
+  const multi = stepName==="bodies"||stepName==="forces"||stepName==="komp";
+  const canCheck = multi ? S.sel.size>0 : S.radio!==null;
+  const last = S.step===S.plan.length-1;
+  const dirsLeft = stepName==="dirs" && S.dirIdx<sc.forces.length-1;
+  const axLeft   = stepName==="n2xy" && sc.dim===2 && S.axIdx<1;
+
+  bar.innerHTML = S.checked
+    ? `<button class="act ghost" data-back>Tilanteet</button>
+       <button class="act" data-next>${(last&&!axLeft)?"Valmis":"Jatka"}</button>`
+    : `<button class="act ghost" data-back>Tilanteet</button>
+       <button class="act" data-check ${canCheck?"":"disabled"}>Tarkista</button>`;
+
+  const bk=bar.querySelector("[data-back]"); if(bk) bk.onclick=()=>{S.view="menu";S._logged=null;render();window.scrollTo(0,0);};
+  const ck=bar.querySelector("[data-check]"); if(ck) ck.onclick=()=>{S.checked=true;render();};
+  const nx=bar.querySelector("[data-next]"); if(nx) nx.onclick=()=>{
+    if(dirsLeft){ S.dirIdx++; S.checked=false; S.radio=null; render(); window.scrollTo(0,0); return; }
+    if(axLeft){ S.axIdx++; S.checked=false; S.radio=null; render(); window.scrollTo(0,0); return; }
+    if(last){ S.done.add(sc.id); S.view="summary"; S._logged=null; render(); window.scrollTo(0,0); return; }
+    S.step++; resetStep(); render(); window.scrollTo(0,0);
+  };
+}
+
+/* ============================================================
+   VOIMALABRA
+   ============================================================ */
+let LAB={alpha:20, m:2, mu:0.30, F:0};
+
+function labCalc(L){
+  const gg=9.81, r=L.alpha*Math.PI/180;
+  const G=L.m*gg, N=G*Math.cos(r), Gx=G*Math.sin(r);
+  const net=L.F-Gx;                    // + = pyrkii liikkumaan tasoa pitkin ylös
+  const fmax=L.mu*N;
+  let fx,a,laji,tila;
+  if(Math.abs(net)<=fmax+1e-9){
+    fx=-net; a=0; laji="Fmu0";
+    tila = Math.abs(net)<1e-9 && L.mu===0
+      ? "Kappale on tasapainossa ilman kitkaa."
+      : "Kappale pysyy levossa: lepokitka kumoaa muut tasonsuuntaiset voimat.";
+  } else {
+    fx=-Math.sign(net)*fmax; a=(net+fx)/L.m; laji="Fmu";
+    const su = L.alpha<3 ? (a>0?"oikealle":"vasemmalle") : (a>0?"tasoa pitkin ylös":"tasoa pitkin alas");
+    tila = "Kappale kiihtyy "+su+".";
+  }
+  return {G:G,N:N,Gx:Gx,net:net,fmax:fmax,fx:fx,a:a,laji:laji,tila:tila};
+}
+function labGeom(alpha){
+  const r=alpha*Math.PI/180, x0=40,y0=146,L=250,t=0.42,w=54,h=34;
+  const bx=x0+L*t, by=y0-L*t*Math.tan(r);
+  const c=Math.cos(r), sn=Math.sin(r);
+  const g={surf:alpha,x0:x0,y0:y0,L:L,bx:bx,by:by,w:w,h:h,halfw:w/2,
+    contact:{x:bx,y:by}, com:{x:bx-(h/2)*sn, y:by-(h/2)*c}};
+  g.faceU={x:g.com.x+c*(w/2), y:g.com.y-sn*(w/2)};
+  g.faceD={x:g.com.x-c*(w/2), y:g.com.y+sn*(w/2)};
+  return g;
+}
+function labForces(L,c){
+  const fs=[{id:"G",dir:"al",gl:"G",m:c.G},{id:"N",dir:"ko",gl:"N",m:c.N}];
+  if(Math.abs(L.F)>0.4) fs.push({id:"Fv",dir:L.F>0?"ny":"na",gl:"F",m:Math.abs(L.F)});
+  if(Math.abs(c.fx)>0.4) fs.push({id:c.laji,dir:c.fx>0?"ny":"na",
+       gl:c.laji==="Fmu0"?"F_μ0":"F_μ", m:Math.abs(c.fx)});
+  return fs;
+}
+function drawLab(L,c){
+  const g=labGeom(L.alpha), r=L.alpha*Math.PI/180;
+  let s=svgOpen()+arrowDefs();
+  const x1=g.x0+g.L, y1=g.y0-g.L*Math.tan(r);
+  s+=`<line x1="${g.x0}" y1="${g.y0}" x2="${x1}" y2="${g.y0}" stroke="#BFBFBF" stroke-width="1.4"/>`;
+  s+=`<line x1="${g.x0}" y1="${g.y0}" x2="${f(x1)}" y2="${f(y1)}" stroke="${INK}" stroke-width="2"/>`;
+  if(L.alpha>=3) s+=angleArc(g.x0,g.y0,L.alpha,24);
+  const cc=Math.cos(r), sn=Math.sin(r);
+  const p=(dx,dy)=>`${f(g.bx+dx*cc-dy*sn)},${f(g.by-dx*sn-dy*cc)}`;
+  s+=`<polygon points="${p(-g.w/2,0)} ${p(g.w/2,0)} ${p(g.w/2,g.h)} ${p(-g.w/2,g.h)}"
+      fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5" stroke-linejoin="round"/>`;
+  s+=axes(322,116,L.alpha,L.alpha+90);
+
+  const fs=labForces(L,c);
+  const mx=Math.max.apply(null,fs.map(x=>x.m).concat([0.001]));
+  const ctx={fricSign:fricSignOf(fs,L.alpha,g.surf)};
+  const labs=[]; let pts=[];
+  fs.forEach(fo=>{
+    const ang=dirAngle(fo.dir,L.alpha);
+    const an=anchorFor(fo,g,ctx);
+    const len=Math.max(10, 54*fo.m/mx);
+    const q=vecParts(an.x,an.y,ang,len,fo.gl,{mode:an.mode,loff:15,
+      lfrac: fo.id==="N"?0.72:(fo.id==="G"?0.45:0.55)});
+    s+=q.line; labs.push(q.lab); pts=pts.concat(q.pts);
+  });
+  s+=placeLabels(labs,[{x:322,y:116,need:20},{x:296,y:124,need:20},{x:310,y:92,need:20}].concat(pts));
+  return s+"</svg>";
+}
+function num(v,d){ return v.toFixed(d===undefined?1:d).replace(".",",").replace("-","\u2212"); }
+function slider(k,label,min,max,step,val,fmt){
+  return `<div class="ctl"><span class="lab"><span>${label}</span><b>${fmt}</b></span>
+    <input type="range" min="${min}" max="${max}" step="${step}" value="${val}" data-k="${k}"></div>`;
+}
+function renderLab(){
+  const L=LAB, c=labCalc(L);
+  let h=`<header><h1>Voimalabra</h1><p class="sub">Kokeile itse · FY4 Voima ja liike</p></header>`;
+  h+=`<div class="scene">${drawLab(L,c)}
+      <div class="caption">${c.tila}<span class="ax">Koordinaatisto: <b>x</b> tasoa pitkin ylös, <b>y</b> kohtisuoraan tasosta ulos</span></div></div>`;
+  h+=`<p class="hint" style="margin-top:-6px">Nuolten pituudet ovat verrannollisia voimien suuruuksiin.
+      Voima <span class="sym">F</span> on positiivinen tasoa pitkin ylöspäin (x-akselin suuntaan) ja negatiivinen alaspäin.
+      Tarkastelu tehdään levosta lähtien.</p>`;
+  h+=`<div class="labgrid">
+    ${slider("alpha","Kallistuskulma α",0,40,1,L.alpha,num(L.alpha,0)+"°")}
+    ${slider("F","Voima F tasoa pitkin",-40,40,1,L.F,num(L.F,0)+" N")}
+    ${slider("m","Massa m",0.5,8,0.5,L.m,num(L.m)+" kg")}
+    ${slider("mu","Kitkakerroin μ",0,0.8,0.05,L.mu,num(L.mu,2))}
+  </div>`;
+
+  h+=`<h2>Voimien suuruudet</h2>
+    <div class="sumrow"><span>Paino ${scal("G")} = mg</span><span class="n">${num(c.G)} N</span></div>
+    <div class="sumrow"><span>Tukivoima ${scal("N")} = G cos α</span><span class="n">${num(c.N)} N</span></div>
+    <div class="sumrow"><span>Painon tasonsuuntainen osa G sin α</span><span class="n">${num(c.Gx)} N</span></div>
+    <div class="sumrow"><span>${c.laji==="Fmu0"?"Lepokitka":"Liukukitka"} ${scal(c.laji)}${c.laji==="Fmu0"?" (enintään "+num(c.fmax)+" N)":" = μN"}</span>
+      <span class="n">${num(Math.abs(c.fx))} N</span></div>
+    <div class="sumrow"><span>Kiihtyvyys ${'<span class="sym">a<sub>x</sub></span>'}</span><span class="n">${num(c.a,2)} m/s²</span></div>`;
+
+  h+=`<h2>Newtonin II laki</h2>`;
+  const ty=[{s:1,id:"N"},{s:-1,id:"G",trig:"cos"}];
+  const tx0=[{s:-1,id:"G",trig:"sin"}];
+  if(Math.abs(L.F)>0.4) tx0.push({s:L.F>0?1:-1,id:"F"});
+  if(Math.abs(c.fx)>0.4) tx0.push({s:c.fx>0?1:-1,id:c.laji});
+  const tx=ordT(tx0);
+  const valOf=t=> t.id==="G" ? (t.trig==="sin"?c.Gx:c.N)
+                : t.id==="F" ? Math.abs(L.F)
+                : t.id==="N" ? c.N : Math.abs(c.fx);
+  const numline=terms=>{
+    let o="";
+    terms.forEach((t,i)=>{ o += (i===0?(t.s<0?"−":""):(t.s<0?" − ":" + ")) + num(valOf(t))+" N"; });
+    return o;
+  };
+  h+=`<div class="eqbox">
+    <span class="tag">${L.alpha<0.5&&Math.abs(L.F)<0.5?"Yksiulotteinen":"Kaksiulotteinen"} tilanne</span>
+    <span class="eqline">${ax_}${eqStr(tx,RHS.x)}</span>
+    <span class="numline">${numline(tx)} = ${num(L.m*c.a)} N</span>
+    <span class="eqline">${ay_}${eqStr(ty,RHS.y)}</span>
+    <span class="numline">${numline(ty)} = 0 N &nbsp;(kappale ei irtoa tasosta)</span>
+  </div>`;
+  h+=`<div class="fb"><div class="note"><span class="head">Kokeile näitä</span>
+    Nosta μ nollasta: milloin kappale pysähtyy paikalleen? Vertaa kulmaa arvoon, jolla μ = tan α.
+    Aseta μ = 0 ja katso, miten kiihtyvyys riippuu vain kulmasta — ei massasta.
+    Aseta α = 0 ja vedä voimalla F: silloin tilanne on yksiulotteinen vaakasuunnassa.</div></div>`;
+
+  app.innerHTML=h;
+  bar.innerHTML=`<button class="act ghost" data-back>Tilanteet</button>
+                 <button class="act" data-reset>Palauta arvot</button>`;
+  app.querySelectorAll("input[data-k]").forEach(inp=>{
+    const upd=()=>{ LAB[inp.dataset.k]=+inp.value; renderLab(); };
+    inp.oninput=upd; inp.onchange=upd;
+  });
+  bar.querySelector("[data-back]").onclick=()=>{S.view="menu";render();window.scrollTo(0,0);};
+  bar.querySelector("[data-reset]").onclick=()=>{LAB={alpha:20,m:2,mu:0.30,F:0};renderLab();};
+}
+
+/* --- yhteenveto --- */
+function renderSummary(){
+  const sc=scen();
+  const forces=sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym}));
+  let h=`<header><h1>${sc.title}</h1><p class="sub">Valmis ratkaisu</p></header>
+   <div class="scene">${drawScene(sc.scene,forces,sc.alpha,{comp:true,scaled:true})}
+   <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
+  h+=`<div class="fb">`;
+  sc.forces.forEach(f=>h+=note(`${sym(f.sym)} — ${f.name}`,f.dirWhy));
+  if(sc.forces.some(f=>f.split)) h+=note("Komponenttijako",KOMP_INCL);
+  h+=note("Kokonaisvoima",sc.netWhy,true);
+  const rhsv='<span class="sym">m<span class="ov">a</span></span>';
+  h+=note("Newtonin II laki",
+    `<span class="eqline">${sc.forces.map(f=>sym(f.sym)).join('<span class="op"> + </span>')} <span class="op">=</span> ${rhsv}</span>
+     ${sc.dim===2?`<span class="eqline">${ax_}${eqStr(axTerms(sc,"x"),RHS.x)}</span>`:""}
+     <span class="eqline">${sc.dim===2?ay_:""}${eqStr(axTerms(sc,"y"),RHS.y)}</span>`,true);
+  h+=note(sc.dim===1?"Yksiulotteinen tilanne":"Kaksiulotteinen tilanne",DIM_WHY[sc.dim]);
+  if(sc.dim===2) h+=note("x-suunta",sc.eqWhy.x);
+  h+=note(sc.dim===1?"Pystysuunta":"y-suunta",sc.eqWhy.y);
+  h+=`</div>`;
+  const next=SCEN[S.si+1];
+  app.innerHTML=h;
+  bar.innerHTML=`<button class="act ghost" data-back>Tilanteet</button>`+
+    (next?`<button class="act" data-next>Seuraava tilanne</button>`:"");
+  bar.querySelector("[data-back]").onclick=()=>{S.view="menu";render();window.scrollTo(0,0);};
+  const n=bar.querySelector("[data-next]");
+  if(n) n.onclick=()=>{S.si++;S.view="task";S.step=0;S.plan=buildPlan(scen());resetStep();render();window.scrollTo(0,0);};
+}
+render();
+</script>
+</body>
+</html>
