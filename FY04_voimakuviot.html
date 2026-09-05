@@ -4,175 +4,230 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Voimakuviot – Taso 1</title>
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#efe8da">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Archivo:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    /* Kiviruukin brändivärit */
-    --navy:#012169;
-    --navy-deep:#010f38;
-    --pink:#fca5c7;
-    --haze:#b9c3de;
+    /* Käsitetakomon / Kiviruukin yhteinen paletti */
+    --bg:#efe8da;
+    --panel:#faf6ec;
+    --panel-2:#f2ecdd;
+    --ink:#3a3530;
+    --ink-soft:#6c6459;
+    --clay:#fca5c7;
+    --brick:#012169;
+    --brick-dark:#011a52;
+    --green:#5f7a52;
+    --fire-orange:#e8863a;
+    --stone-light:#cdc3ad;
+    --vastaus:#e9eef7;
+    --vastaus-reuna:rgba(1,33,105,.14);
+    --warm:#fdf0e4;
+    --radius:18px;
+    --shadow:0 6px 18px rgba(58,54,47,.18);
+    --shadow-lift:0 12px 28px rgba(58,54,47,.22);
+    --focus:#2e2a24;
 
-    --paper:#FFFFFF;
-    --card:#FFFFFF;
-    --ink:#26314B;
-    --ink-soft:#5C6A8A;
-    --head:#012169;
-    --rule:#D8DFEE;
-    --tint:#E7EEFA;        /* vaalea navy */
-    --tint-pink:#FEF1F6;   /* vaalea pinkki */
-    --ok:#012169;
-
-    /* voimakuvion värit pidetään ennallaan */
+    /* voimakuvion omat värit pidetään ennallaan */
     --vector:#F1786F;
     --accel:#7CB342;
     --obj-bg:#FCEFA1;
     --obj-br:#E0A93B;
 
-    --sans:"Archivo","Source Sans Pro","Segoe UI",Roboto,-apple-system,system-ui,sans-serif;
-    --title:"Jost",Futura,"Century Gothic","Archivo",system-ui,sans-serif;
+    --sans:"Karla",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    --slab:"Zilla Slab",Georgia,"Times New Roman",serif;
     --math:"Latin Modern Roman","Computer Modern",Cambria,"Times New Roman",Times,serif;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
+  html,body{margin:0;min-height:100%}
   body{
-    background:var(--paper);
+    background:
+      radial-gradient(circle at 18% 22%, rgba(255,255,255,.55), transparent 42%),
+      radial-gradient(circle at 82% 68%, rgba(58,53,45,.05), transparent 45%),
+      var(--bg);
     color:var(--ink);
     font-family:var(--sans);
     font-size:17px;
     line-height:1.5;
     -webkit-text-size-adjust:100%;
   }
-  .wrap{max-width:34rem;margin:0 auto;padding:20px 16px 96px}
+  button,input{font-family:inherit}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+  .wrap{max-width:660px;margin:0 auto;padding:18px 14px 108px}
 
-  header{margin-bottom:20px}
-  h1{font-family:var(--title);font-size:1.62rem;font-weight:700;color:var(--head);margin:0 0 2px;letter-spacing:-0.015em}
-  .sub{color:var(--ink-soft);font-size:0.9rem;margin:0}
+  header{margin-bottom:18px}
+  h1{
+    font-family:var(--slab);font-size:clamp(1.5rem,6vw,2rem);font-weight:700;
+    color:var(--brick-dark);margin:0 0 3px;line-height:1.1;
+  }
+  .sub{color:var(--ink-soft);font-size:.82rem;font-weight:700;letter-spacing:.05em;
+       text-transform:uppercase;margin:0}
+  h2{font-family:var(--slab);font-size:1.25rem;font-weight:700;color:var(--brick-dark);margin:24px 0 9px}
 
-  /* ---- diagram panel ---- */
+  /* ---- kuvapaneeli ---- */
   .scene{
-    background:#FAFAFA;
-    border:1px solid var(--rule);
-    border-radius:6px;
-    margin-bottom:18px;
+    background:var(--panel);
+    border:2px solid transparent;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    margin-bottom:16px;
     overflow:hidden;
   }
   .scene svg{display:block;width:100%;height:auto}
   .caption{
-    background:#fff;
-    border-top:1px solid var(--rule);
-    padding:10px 13px;
-    font-size:0.92rem;
+    background:var(--panel-2);
+    border-top:2px solid rgba(58,54,47,.08);
+    padding:11px 15px;
+    font-size:.9rem;
     color:var(--ink-soft);
+    font-weight:600;
   }
-  .caption .ax{display:block;margin-top:4px;font-size:.85rem;color:var(--ink-soft)}
-  .caption .ax b{color:var(--head);font-weight:600}
+  .caption .ax{display:block;margin-top:4px;font-size:.8rem}
+  .caption .ax b{color:var(--brick);font-weight:800}
 
-  /* ---- progress ---- */
-  .steps{display:flex;gap:6px;align-items:baseline;margin:0 0 14px;font-size:.85rem;color:var(--ink-soft)}
-  .steps b{color:var(--ink);font-weight:600}
+  /* ---- eteneminen ---- */
+  .steps{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
+         color:var(--ink-soft);opacity:.75;margin:0 0 6px}
+  .steps b{color:var(--brick)}
+  .track{height:6px;border-radius:999px;background:var(--panel-2);overflow:hidden;margin:0 0 18px;
+         box-shadow:inset 0 1px 2px rgba(58,54,47,.1)}
+  .fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--clay),var(--fire-orange));
+        transition:width .3s ease}
 
-  /* ---- question ---- */
-  .q{font-size:1.08rem;margin:0 0 4px}
-  .hint{color:var(--ink-soft);font-size:.88rem;margin:0 0 14px}
+  /* ---- kysymys ---- */
+  .q{font-family:var(--slab);font-size:1.24rem;font-weight:600;color:var(--brick-dark);margin:0 0 5px;line-height:1.3}
+  .hint{color:var(--ink-soft);font-size:.85rem;font-weight:600;margin:0 0 14px}
 
-  .opts{display:flex;flex-direction:column;gap:7px;margin:0 0 18px}
+  .opts{display:flex;flex-direction:column;gap:9px;margin:0 0 18px}
   .opt{
-    display:flex;align-items:center;gap:11px;
-    background:var(--card);
-    border:1.5px solid var(--rule);
-    border-radius:8px;
-    padding:11px 13px;
+    display:flex;align-items:center;gap:12px;
+    background:var(--panel);
+    border:2px solid transparent;
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    padding:13px 15px;
     text-align:left;
     font:inherit;color:inherit;
     cursor:pointer;
     width:100%;
+    transition:transform .14s ease,border-color .14s ease,background .14s ease;
   }
-  .opt:hover{border-color:var(--haze)}
-  .opt[aria-pressed="true"]{border-color:var(--navy);background:var(--tint)}
+  .opt:hover{border-color:var(--clay);transform:translateX(3px)}
+  .opt[aria-pressed="true"]{border-color:var(--clay)}
   .opt .mark{
-    flex:0 0 15px;height:15px;border:1.5px solid var(--ink-soft);border-radius:3px;
-    background:transparent;
+    flex:0 0 22px;height:22px;border-radius:6px;
+    border:2px solid var(--stone-light);background:var(--panel-2);
+    transition:background .14s,border-color .14s;
   }
-  .opt[aria-pressed="true"] .mark{background:var(--navy);border-color:var(--navy)}
-  .opt.radio .mark{border-radius:50%}
-  .opt .txt{flex:1}
+  .opt[aria-pressed="true"] .mark{background:var(--clay);border-color:var(--clay)}
+  .opt.radio .mark{border-radius:999px}
+  .opt .txt{flex:1;font-weight:600}
   .opt .arrowbox{flex:0 0 40px}
   .opt .arrowbox svg{display:block;width:40px;height:34px}
-  .opt.eq .txt{font-size:1.02rem}
+  .opt.eq .txt{font-size:1.02rem;font-weight:500}
 
-  .opt.right{border-color:var(--navy);background:var(--tint)}
-  .opt.wrong{border-color:var(--pink);border-style:dashed;background:var(--tint-pink)}
-  .opt.missed{border-color:var(--navy);border-style:dashed;background:#fff}
+  .opt.right{border-color:var(--brick);background:var(--vastaus)}
+  .opt.wrong{border-color:var(--fire-orange);border-style:dashed;background:var(--warm)}
+  .opt.missed{border-color:var(--brick);border-style:dashed;background:var(--panel)}
+  .opt.right:hover,.opt.wrong:hover,.opt.missed:hover{transform:none}
 
-  /* ---- feedback: Studeon keltainen laatikko ---- */
+  /* ---- palauteruudut ---- */
   .fb{margin:0 0 18px;display:flex;flex-direction:column;gap:11px}
   .note{
-    background:#F6F8FC;
-    border:1.5px solid var(--haze);
-    border-radius:10px;
-    padding:11px 14px;
-    font-size:.95rem;
+    background:var(--panel);
+    border:2px solid rgba(58,54,47,.12);
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    padding:13px 16px;
+    font-size:.94rem;
   }
-  .note.good{background:var(--tint);border-color:var(--navy)}
-  .note.warn{background:var(--tint-pink);border-color:var(--pink)}
-  .note .head{display:block;font-weight:700;color:var(--head);margin-bottom:2px}
-  .note .eqline{display:block;margin:6px 0 2px;font-size:1.05rem;color:var(--head)}
+  .note.good{background:var(--vastaus);border-color:var(--brick)}
+  .note.warn{background:var(--warm);border-color:var(--fire-orange)}
+  .note .head{display:block;font-family:var(--slab);font-weight:700;font-size:1.02rem;
+              color:var(--brick-dark);margin-bottom:3px}
+  .note .eqline{display:block;margin:7px 0 3px;font-size:1.05rem;color:var(--brick-dark)}
 
-  /* ---- buttons ---- */
-  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--paper);
-       border-top:1px solid var(--rule);padding:11px 16px calc(11px + env(safe-area-inset-bottom))}
-  .bar .inner{max-width:34rem;margin:0 auto;display:flex;gap:9px}
+  /* ---- napit ---- */
+  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);
+       border-top:2px solid rgba(58,54,47,.1);box-shadow:0 -6px 18px rgba(58,54,47,.10);
+       padding:11px 14px calc(11px + env(safe-area-inset-bottom))}
+  .bar .inner{max-width:660px;margin:0 auto;display:flex;gap:10px}
   button.act{
-    flex:1;font-family:var(--title);font-size:1rem;font-weight:600;padding:12px;cursor:pointer;
-    border-radius:8px;
-    background:var(--navy);color:#fff;border:1.5px solid var(--navy);
+    flex:1;font:inherit;font-size:1rem;font-weight:700;padding:15px 18px;cursor:pointer;
+    border-radius:14px;border:2px solid var(--brick);
+    background:var(--brick);color:#fff;box-shadow:var(--shadow);
+    transition:filter .14s ease,transform .12s ease;
   }
-  button.act.ghost{background:transparent;color:var(--navy);border-color:var(--rule)}
-  button.act[disabled]{opacity:.35;cursor:default}
-  :focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+  button.act:hover{filter:brightness(1.15)}
+  button.act:active{transform:scale(.99)}
+  button.act.ghost{background:var(--panel);color:var(--ink);border-color:var(--stone-light);box-shadow:none}
+  button.act.ghost:hover{filter:none;border-color:var(--clay)}
+  button.act[disabled]{opacity:.4;cursor:default;filter:none}
 
-  /* ---- symbols: LaTeX-tyylinen kursiivi ja vektoriviiva ---- */
+  /* ---- symbolit ---- */
   .sym{font-family:var(--math);font-style:italic;font-size:1.12em;white-space:nowrap}
   .sym .ov{text-decoration:overline}
   .sym sub{font-style:italic;font-size:.68em}
   .op{font-family:var(--math);font-style:normal;padding:0 .12em}
   .fn{font-family:var(--math);font-style:normal}
 
-  /* ---- summary ---- */
-  .sumrow{display:flex;justify-content:space-between;gap:12px;
-          border-bottom:1px solid var(--rule);padding:9px 0;font-size:.95rem}
+  /* ---- listat ---- */
+  .sumrow{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+          border-bottom:2px solid var(--panel-2);padding:10px 2px;font-size:.94rem;font-weight:600}
   .sumrow:last-child{border-bottom:0}
-  .sumrow .n{color:var(--navy);font-weight:600;font-variant-numeric:tabular-nums}
+  .sumrow .n{color:var(--brick);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 
-  .picker{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
-  .picker button{
-    font:inherit;font-size:.9rem;padding:7px 12px;cursor:pointer;border-radius:20px;
-    background:var(--card);border:1.5px solid var(--rule);color:var(--ink);
+  /* ---- tilannelista ---- */
+  .list{display:flex;flex-direction:column;gap:9px;margin-bottom:4px}
+  .row{
+    display:flex;align-items:center;gap:12px;width:100%;
+    background:var(--panel);border:2px solid transparent;border-radius:14px;
+    box-shadow:var(--shadow);padding:13px 16px;
+    text-align:left;font:inherit;color:inherit;cursor:pointer;
+    transition:transform .14s ease,border-color .14s ease;
   }
-  .picker button[aria-pressed="true"]{background:var(--tint);color:var(--navy);border-color:var(--navy);font-weight:600}
-  .picker button[data-lab]{background:var(--tint-pink);border-color:var(--pink);color:var(--navy);font-weight:600}
-  h2{font-family:var(--title);font-size:1.1rem;font-weight:600;color:var(--head);margin:22px 0 8px;letter-spacing:-.005em}
+  .row:hover{transform:translateX(3px);border-color:var(--clay)}
+  .row:active{transform:translateX(0) scale(.995)}
+  .row .num{
+    flex:0 0 auto;min-width:27px;height:27px;padding:0 6px;border-radius:999px;
+    display:grid;place-items:center;background:var(--panel-2);
+    border:2px solid var(--stone-light);font-size:.76rem;font-weight:800;color:var(--ink-soft);
+  }
+  .row .label{flex:1;font-weight:700;font-size:.98rem}
+  .row .go{color:var(--brick);font-size:1.2rem;line-height:1}
+  .row.tehty .num{background:var(--brick);border-color:var(--brick);color:#fff}
+  .row.lab{background:var(--brick);color:#fff}
+  .row.lab .num{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.32);color:#fff}
+  .row.lab .go{color:var(--clay)}
+  .row.lab .label{font-family:var(--slab);font-size:1.05rem}
 
   /* ---- voimalabran säätimet ---- */
-  .ctl{margin:0 0 13px}
-  .ctl .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:.92rem;margin-bottom:3px}
-  .ctl .lab b{color:var(--head);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
+  .ctl{margin:0 0 14px}
+  .ctl .lab{display:flex;justify-content:space-between;align-items:baseline;
+            font-size:.88rem;font-weight:700;margin-bottom:4px}
+  .ctl .lab b{color:var(--brick);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
   .ctl .lab>span:first-child{min-width:0}
-  .ctl input[type=range]{width:100%;accent-color:var(--navy);margin:0}
-  .labgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
-  @media (max-width:26rem){.labgrid{grid-template-columns:1fr}}
-  .eqbox{background:var(--card);border:1.5px solid var(--rule);border-radius:10px;padding:11px 14px;margin:0 0 16px}
-  .eqbox .eqline{display:block;margin:5px 0;font-size:1.05rem;color:var(--head)}
-  .eqbox .numline{display:block;margin:0 0 8px;font-size:.92rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
-  .tag{display:inline-block;font-family:var(--title);font-weight:500;font-size:.78rem;
-       letter-spacing:.04em;padding:3px 10px;border-radius:20px;
-       background:var(--tint);border:1px solid var(--haze);color:var(--navy);margin-bottom:6px}
+  .ctl input[type=range]{width:100%;accent-color:var(--brick);margin:0}
+  .labgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+  @media (max-width:30rem){.labgrid{grid-template-columns:1fr}}
+  .eqbox{background:var(--panel);border:2px solid transparent;border-radius:var(--radius);
+         box-shadow:var(--shadow);padding:14px 16px;margin:0 0 16px}
+  .eqbox .eqline{display:block;margin:6px 0;font-size:1.05rem;color:var(--brick-dark)}
+  .eqbox .numline{display:block;margin:0 0 10px;font-size:.9rem;color:var(--ink-soft);
+                  font-weight:600;font-variant-numeric:tabular-nums}
+  .tag{display:inline-block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+       font-weight:800;padding:4px 11px;border-radius:999px;
+       background:var(--panel-2);border:2px solid var(--stone-light);color:var(--brick);margin-bottom:8px}
+
   @media (prefers-reduced-motion:no-preference){
-    .fb{animation:rise .18s ease-out}
-    @keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+    .fb{animation:rise .22s ease-out}
+    @keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.01ms !important;transition-duration:.01ms !important}
   }
 </style>
 </head>
@@ -560,13 +615,13 @@ const SCEN = [
    PIIRTO
    ============================================================ */
 const W=360,H=205;
-const INK="#3D3D3D", VEC="#F1786F", VEC2="#F6AFA9", CMP="#5B85B8", GRN="#7CB342",
+const INK="#3a3530", VEC="#F1786F", VEC2="#F6AFA9", CMP="#5B85B8", GRN="#7CB342",
       OBJ_BG="#FCEFA1", OBJ_BR="#E0A93B",
       MATH='"Latin Modern Roman",Cambria,"Times New Roman",Times,serif';
 
 function svgOpen(){
   return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img">
-    <rect width="${W}" height="${H}" fill="#FAFAFA"/>`;
+    <rect width="${W}" height="${H}" fill="#faf6ec"/>`;
 }
 function arrowDefs(){
   return `<defs>
@@ -996,16 +1051,19 @@ function render(){
 function renderMenu(){
   let groups={};
   SCEN.forEach((s,i)=>{ (groups[s.ryhma]=groups[s.ryhma]||[]).push([s,i]); });
-  let h=`<header><h1>Voimakuviot</h1><p class="sub">Tunnista · Komponentit · Newtonin II laki · FY4</p></header>
+  let h=`<header><h1>Voimakuviot</h1><p class="sub">FY4 · Voima ja liike</p></header>
    <p style="margin:0 0 20px">Valitse tilanne. Jokaisessa edetään samalla tavalla: ensin kappaleet, joiden kanssa
    tutkittava kappale on vuorovaikutuksessa, sitten voimat ja niiden suunnat, sitten komponenttijako
    ja lopuksi Newtonin II laki vektorimuodossa sekä yksi- tai kaksiulotteisena komponenttiyhtälönä.</p>
-   <h2>Voimalabra</h2>
-   <div class="picker"><button data-lab>Kokeile: kallista tasoa, vedä ja työnnä</button></div>`;
+   <div class="list"><button class="row lab" data-lab>
+     <span class="num">↯</span><span class="label">Voimalabra</span><span class="go">›</span></button></div>`;
   for(const g in groups){
-    h+=`<h2>${g}</h2><div class="picker">`;
+    h+=`<h2>${g}</h2><div class="list">`;
     groups[g].forEach(([s,i])=>{
-      h+=`<button data-go="${i}" aria-pressed="${S.done.has(s.id)}">${i+1}. ${s.title}</button>`;
+      const tehty=S.done.has(s.id);
+      h+=`<button class="row${tehty?" tehty":""}" data-go="${i}">
+        <span class="num">${tehty?"✓":(i+1)}</span>
+        <span class="label">${s.title}</span><span class="go">›</span></button>`;
     });
     h+=`</div>`;
   }
@@ -1046,7 +1104,9 @@ function renderTask(){
   };
   h+=`<div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
       <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div>`;
-  h+=`<p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>`;
+  const pros=Math.round((S.step+(S.checked?1:0))/S.plan.length*100);
+  h+=`<p class="steps">Vaihe <b>${S.step+1}</b> / ${S.plan.length}</p>
+      <div class="track"><div class="fill" style="width:${pros}%"></div></div>`;
 
   if(stepName==="bodies") h+=stepBodies(sc);
   if(stepName==="forces") h+=stepForces(sc);
