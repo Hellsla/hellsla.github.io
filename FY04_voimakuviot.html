@@ -58,20 +58,21 @@
   :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
   .wrap{max-width:660px;margin:0 auto;padding:18px 14px 108px}
 
-  /* leveillä näytöillä kuva ja kysymys rinnakkain, jotta kaikki mahtuu ruudulle */
-  #app.wide{max-width:1040px}
-  @media (min-width:900px){
+  /* leveillä näytöillä kuva vasemmalle, kysymys oikealle ja palaute kuvan alle,
+     jotta koko näkymä mahtuu ruudulle ilman vieritystä */
+  #app.wide{max-width:1060px}
+  @media (min-width:760px){
     #app.wide .task{
       display:grid;
-      grid-template-columns:minmax(330px,1fr) minmax(360px,1fr);
-      gap:30px;align-items:start;
+      grid-template-columns:minmax(300px,1fr) minmax(330px,1fr);
+      gap:16px 28px;align-items:start;
     }
-    #app.wide .task .scene{position:sticky;top:16px}
-    #app.wide .task .scene svg{max-width:none}
+    #app.wide .task>.colA{grid-column:1;grid-row:1}
+    #app.wide .task>.colB{grid-column:2;grid-row:1 / span 2}
+    #app.wide .task>.fb{grid-column:1;grid-row:2;margin:0}
+    #app.wide .task .scene{margin-bottom:0}
+    #app.wide .task .scene svg{max-width:min(100%,60vh)}
     #app.wide .labgrid{grid-template-columns:1fr}
-  }
-  @media (min-width:900px) and (max-height:820px){
-    #app.wide .task .scene svg{max-width:470px}
   }
 
   header{margin-bottom:18px}
@@ -92,7 +93,7 @@
     margin-bottom:16px;
     overflow:hidden;
   }
-  .scene svg{display:block;width:100%;max-width:520px;height:auto;margin:0 auto}
+  .scene svg{display:block;width:100%;max-width:min(520px,58vh);height:auto;margin:0 auto}
   .caption{
     background:var(--panel-2);
     border-top:2px solid rgba(58,54,47,.08);
@@ -242,6 +243,22 @@
     .fb{animation:rise .22s ease-out}
     @keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
   }
+  /* matala ikkuna: tiiviimpi pystyrytmi */
+  @media (min-width:760px) and (max-height:860px){
+    .wrap{padding-top:12px}
+    header{margin-bottom:12px}
+    h1{font-size:1.34rem}
+    .q{font-size:1.12rem}
+    .opts{gap:7px;margin-bottom:14px}
+    .opt{padding:10px 14px}
+    .caption{padding:9px 13px;font-size:.85rem}
+    .track{margin-bottom:14px}
+    .bar{padding:8px 14px calc(8px + env(safe-area-inset-bottom))}
+    button.act{padding:10px 16px;font-size:.96rem}
+    .note{padding:10px 13px;font-size:.9rem}
+    .fb{gap:9px}
+    #app.wide .task .scene svg{max-width:min(100%,54vh)}
+  }
   @media (prefers-reduced-motion:reduce){
     *{animation-duration:.01ms !important;transition-duration:.01ms !important}
   }
@@ -329,7 +346,7 @@ const FD = { // yleiset häiriövoimat
 const AX_FLAT = "<b>x</b> oikealle, <b>y</b> ylös";
 const AX_INCL = "<b>x</b> tasoa pitkin ylös, <b>y</b> kohtisuoraan tasosta ulos";
 const KOMP_FLAT = "Jokainen voima on joko x- tai y-akselin suuntainen, joten mitään ei tarvitse jakaa komponentteihin. Komponenttijako tehdään vain vinoille voimille.";
-const KOMP_INCL = "Kun x-akseli valitaan tason suuntaiseksi, tukivoima ja kitka ovat valmiiksi akselien suuntaisia. Vain paino on vino, joten vain se jaetaan komponentteihin.";
+const KOMP_INCL = "Tukivoima ja kitka ovat jo akselien suuntaisia. Vain paino on vino, joten vain se jaetaan komponentteihin.";
 
 const SCEN = [
 /* ---------- A. Lepo ja tasainen liike ---------- */
@@ -1136,6 +1153,9 @@ function renderTask(){
 
   app.classList.add("wide");
   app.innerHTML=h;
+  /* palaute omaan ruudukkosoluunsa kuvan alle, jottei oikea palsta veny */
+  const fb=app.querySelector(".colB > .fb");
+  if(fb) app.querySelector(".task").appendChild(fb);
   wire(sc,stepName);
 }
 
@@ -1256,14 +1276,13 @@ function stepKomp(sc){
   if(S.checked){
     h+=`<div class="fb">`;
     const ok=allRight(list);
-    h+=note(ok?"Oikein":"Katso uudelleen", anySplit?KOMP_INCL:KOMP_FLAT, ok?true:"warn");
+    let body = anySplit?KOMP_INCL:KOMP_FLAT;
     sc.forces.filter(f=>f.split).forEach(f=>{
-      h+=note(`${sym(f.sym)} komponentteina`,
-        `Kulma α on tason ja vaakatason välissä, joten sama kulma löytyy myös painon ja tason normaalin väliltä.
-         <span class="eqline">${compSym(f.sym,"x")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">sin</span> <span class="sym">α</span> &nbsp;(tasoa pitkin alas, siis −x)</span>
-         <span class="eqline">${compSym(f.sym,"y")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">cos</span> <span class="sym">α</span> &nbsp;(tasoa vasten)</span>
-         Komponentit piirretään harmaalla katkoviivalla, koska ne eivät ole uusia voimia vaan sama voima osiin jaettuna. Alkuperäistä ${sym(f.sym)}-vektoria ei enää lasketa mukaan yhtälöihin, kun sen komponentit ovat käytössä.`);
+      body += `<span class="eqline">${compSym(f.sym,"x")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">sin</span> <span class="sym">α</span> &nbsp;(tasoa pitkin alas)</span>
+        <span class="eqline">${compSym(f.sym,"y")} <span class="op">=</span> <span class="op">−</span>${scal(f.sym)} <span class="fn">cos</span> <span class="sym">α</span> &nbsp;(tasoa vasten)</span>
+        Sama kulma α löytyy painon ja tason normaalin väliltä. Komponentit piirretään harmaalla katkoviivalla: ne eivät ole uusia voimia, eikä ${sym(f.sym)}-vektoria enää lasketa yhtälöihin.`;
     });
+    h+=note(ok?"Oikein":"Katso uudelleen", body, ok?true:"warn");
     if(!ok) logOnce("komp_"+sc.id,"Komponenttijako: mikä voima on vino koordinaatistoon nähden");
     h+=`</div>`;
   }
