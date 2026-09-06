@@ -303,7 +303,10 @@ function sym(s){
     Fi:'<span class="sym"><span class="ov">F</span><sub>i</sub></span>',
     Fl:'<span class="sym"><span class="ov">F</span><sub>l</sub></span>',
     Fh:'<span class="sym"><span class="ov">F</span><sub>h</sub></span>',
-    Fk:'<span class="sym"><span class="ov">F</span><sub>k</sub></span>'
+    Fk:'<span class="sym"><span class="ov">F</span><sub>k</sub></span>',
+    Ft:'<span class="sym"><span class="ov">F</span><sub>t</sub></span>',
+    FA:'<span class="sym"><span class="ov">F</span><sub>A</sub></span>',
+    FB:'<span class="sym"><span class="ov">F</span><sub>B</sub></span>'
   };
   return m[s] || s;
 }
@@ -316,7 +319,10 @@ function scal(s){
     Fmu:'<span class="sym">F<sub>μ</sub></span>',
     Fmu0:'<span class="sym">F<sub>μ0</sub></span>',
     Fi:'<span class="sym">F<sub>i</sub></span>',
-    Fl:'<span class="sym">F<sub>l</sub></span>'
+    Fl:'<span class="sym">F<sub>l</sub></span>',
+    Ft:'<span class="sym">F<sub>t</sub></span>',
+    FA:'<span class="sym">F<sub>A</sub></span>',
+    FB:'<span class="sym">F<sub>B</sub></span>'
   };
   return m[s] || '<span class="sym">'+s+'</span>';
 }
@@ -351,12 +357,12 @@ const KOMP_INCL = "Tukivoima ja kitka ovat jo akselien suuntaisia. Vain paino on
 const SCEN = [
 /* ---------- A. Lepo ja tasainen liike ---------- */
 {
- id:"a1", dim:1, ryhma:"Lepo ja tasainen liike",
+ id:"a1", obj:"kirja", objIll:"kirjaan", n3f:"N", dim:1, ryhma:"Lepo ja tasainen liike",
  title:"Kirja pöydällä",
  prompt:"Kirja on paikallaan vaakasuoralla pöydällä.",
  scene:{t:"flat",obj:"book",surface:"table"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Pöydän pinta"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Pöydän pinta",ill:"pöydän pintaan"}],
  bodyD:[B.ilma,B.aurinko],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
@@ -374,12 +380,12 @@ const SCEN = [
   y:"Tukivoima osoittaa +y-suuntaan ja paino −y-suuntaan. Kirja on levossa, joten a<sub>y</sub> = 0 ja siten N = G."}
 },
 {
- id:"a2", dim:2, ryhma:"Lepo ja tasainen liike",
+ id:"a2", obj:"laatikko", objIll:"laatikkoon", n3f:"T", dim:2, ryhma:"Lepo ja tasainen liike",
  title:"Laatikkoa vedetään narulla",
  prompt:"Laatikkoa vedetään narulla pöydän pintaa pitkin vakionopeudella oikealle.",
  scene:{t:"flat",obj:"box",surface:"table",rope:true,v:"oikealle"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Pöydän pinta"},{id:"naru",name:"Naru"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Pöydän pinta",ill:"pöydän pintaan"},{id:"naru",name:"Naru",ill:"naruun"}],
  bodyD:[B.kasi,B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
@@ -398,12 +404,12 @@ const SCEN = [
   y:"Laatikko ei nouse eikä uppoa pöytään, joten a<sub>y</sub> = 0 ja N = G. Vasta tästä saadaan kitkalle arvo F<sub>μ</sub> = μN."}
 },
 {
- id:"a3", dim:1, ryhma:"Lepo ja tasainen liike",
+ id:"a3", obj:"kiekko", objIll:"kiekkoon", n3f:"N", dim:1, ryhma:"Lepo ja tasainen liike",
  title:"Kiekko kitkattomalla jäällä",
  prompt:"Kiekko liukuu vaakasuoralla, kitkattomalla jäällä oikealle. Ilmanvastus jätetään huomiotta.",
  scene:{t:"flat",obj:"puck",surface:"ice",v:"oikealle"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"jaa",name:"Jään pinta"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"jaa",name:"Jään pinta",ill:"jään pintaan"}],
  bodyD:[B.vauhti,{id:"maila",name:"Maila",why:"Maila ei enää kosketa kiekkoa. Kosketuksen päätyttyä sen voima päättyi."}],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
@@ -418,12 +424,12 @@ const SCEN = [
   y:"N − G = 0, sillä kiekko ei liiku pystysuunnassa."}
 },
 {
- id:"a4", dim:2, ryhma:"Lepo ja tasainen liike",
+ id:"a4", obj:"auto", objIll:"autoon", n3f:"Fmu0", dim:2, ryhma:"Lepo ja tasainen liike",
  title:"Auto vakionopeudella",
  prompt:"Auto ajaa vakionopeudella suoralla vaakasuoralla tiellä. Ilmanvastus otetaan huomioon.",
  scene:{t:"flat",obj:"car",surface:"road",v:"oikealle"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"tie",name:"Tien pinta"},{id:"ilma",name:"Ilma"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"tie",name:"Tien pinta",ill:"tien pintaan"},{id:"ilma",name:"Ilma",ill:"ilmaan"}],
  bodyD:[B.moottori,B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
@@ -443,12 +449,12 @@ const SCEN = [
 
 /* ---------- B. Kiihtyvyys pystysuunnassa ---------- */
 {
- id:"b1", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
+ id:"b1", obj:"laatikko", objIll:"laatikkoon", n3f:"N", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
  title:"Hissi lähtee ylöspäin",
  prompt:"Laatikko on hissin lattialla. Hissi lähtee liikkeelle ylöspäin, eli sen nopeus kasvaa ylöspäin.",
  scene:{t:"elev",obj:"box",motion:"kiihtyy ylös"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"lattia",name:"Hissin lattia"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"lattia",name:"Hissin lattia",ill:"hissin lattiaan"}],
  bodyD:[B.vauhti,{id:"vaijeri",name:"Vaijeri",why:"Vaijeri koskettaa hissiä, ei laatikkoa. Voimakuvio piirretään vain laatikolle."}],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
@@ -467,12 +473,12 @@ const SCEN = [
   y:"N − G = ma<sub>y</sub>, ja a<sub>y</sub> &gt; 0. Siksi N &gt; G — nuoli piirretään pidemmäksi."}
 },
 {
- id:"b2", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
+ id:"b2", obj:"laatikko", objIll:"laatikkoon", n3f:"N", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
  title:"Hissi hidastuu tullessaan alas",
  prompt:"Laatikko on hissin lattialla. Hissi liikkuu alaspäin ja hidastuu pysähtyäkseen.",
  scene:{t:"elev",obj:"box",motion:"hidastuu, liike alas"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"lattia",name:"Hissin lattia"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"lattia",name:"Hissin lattia",ill:"hissin lattiaan"}],
  bodyD:[B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
@@ -490,12 +496,12 @@ const SCEN = [
   y:"N − G = ma<sub>y</sub>. Liike on alaspäin mutta hidastuu, joten a<sub>y</sub> &gt; 0 ja N &gt; G."}
 },
 {
- id:"b3", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
+ id:"b3", obj:"henkilö", objIll:"henkilöön", n3f:"N", dim:1, ryhma:"Kiihtyvyys pystysuunnassa",
  title:"Henkilö vaa'alla hississä",
  prompt:"Henkilö seisoo vaa'alla hississä. Hissi kiihtyy ylöspäin. Vaaka näyttää suurempaa lukemaa kuin levossa.",
  scene:{t:"elev",obj:"person",scale:true,motion:"kiihtyy ylös"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"},{id:"vaaka",name:"Vaaka"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"vaaka",name:"Vaaka",ill:"vaa'an pintaan"}],
  bodyD:[B.vauhti,{id:"hissi",name:"Hissin seinä",why:"Seinä ei kosketa henkilöä. Vain vaaka koskettaa."}],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
@@ -515,12 +521,12 @@ const SCEN = [
 
 /* ---------- C. Heittoliike ---------- */
 {
- id:"c1", dim:1, ryhma:"Heittoliike",
+ id:"c1", obj:"pallo", objIll:"palloon", n3f:"G", dim:1, ryhma:"Heittoliike",
  title:"Pallo matkalla ylöspäin",
  prompt:"Pallo on heitetty suoraan ylöspäin ja on nyt matkalla ylös. Ilmanvastus jätetään huomiotta.",
  scene:{t:"air",pos:"rising"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"}],
  bodyD:[B.kasi,B.vauhti,B.ilma],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
@@ -534,12 +540,12 @@ const SCEN = [
   y:"−G = ma<sub>y</sub>, eli −mg = ma<sub>y</sub> ⇒ a<sub>y</sub> = −g. Kiihtyvyys osoittaa alas, vaikka nopeus osoittaa ylös."}
 },
 {
- id:"c2", dim:1, ryhma:"Heittoliike",
+ id:"c2", obj:"pallo", objIll:"palloon", n3f:"G", dim:1, ryhma:"Heittoliike",
  title:"Pallo lakipisteessä",
  prompt:"Sama pallo on nyt lakipisteessään. Sen nopeus on hetkellisesti nolla. Ilmanvastus jätetään huomiotta.",
  scene:{t:"air",pos:"top"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"}],
  bodyD:[B.kasi,B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1}
@@ -552,12 +558,12 @@ const SCEN = [
   y:"−G = ma<sub>y</sub> ⇒ a<sub>y</sub> = −g. Nopeus on nolla, mutta yhtälö on täsmälleen sama kuin nousussa ja laskussa."}
 },
 {
- id:"c3", dim:1, ryhma:"Heittoliike",
+ id:"c3", obj:"pallo", objIll:"palloon", n3f:"G", dim:1, ryhma:"Heittoliike",
  title:"Pallo matkalla alas",
  prompt:"Sama pallo putoaa nyt alaspäin, juuri ennen maahan osumista. Ilmanvastus jätetään huomiotta.",
  scene:{t:"air",pos:"falling"},
  dirset:"flat",
- bodies:[{id:"maa",name:"Maa"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"}],
  bodyD:[B.vauhti,B.ilma],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1}
@@ -572,12 +578,12 @@ const SCEN = [
 
 /* ---------- D. Kalteva taso ---------- */
 {
- id:"d1", dim:2, ryhma:"Kalteva taso",
+ id:"d1", obj:"kappale", objIll:"kappaleeseen", n3f:"N", dim:2, ryhma:"Kalteva taso",
  title:"Kitkaton kalteva taso",
  prompt:"Kappale on kitkattomalla kaltevalla tasolla, jonka kallistuskulma on 25°. Kappale lähtee liukumaan.",
  scene:{t:"incline",alpha:25,state:"liukuu alas"},
  dirset:"incline",alpha:25,
- bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Tason pinta"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Tason pinta",ill:"tason pintaan"}],
  bodyD:[B.vauhti,B.ilma],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",
@@ -595,12 +601,12 @@ const SCEN = [
   y:"Kappale ei irtoa tasosta eikä uppoa siihen, joten a<sub>y</sub> = 0 ja N = G cos α."}
 },
 {
- id:"d2", dim:2, ryhma:"Kalteva taso",
+ id:"d2", obj:"kappale", objIll:"kappaleeseen", n3f:"Fmu0", dim:2, ryhma:"Kalteva taso",
  title:"Kappale pysyy paikallaan",
  prompt:"Kappale pysyy juuri ja juuri levossa kaltevalla tasolla, jonka kallistuskulma on 25°.",
  scene:{t:"incline",alpha:25,state:"levossa"},
  dirset:"incline",alpha:25,
- bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Tason pinta"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Tason pinta",ill:"tason pintaan"}],
  bodyD:[B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",
@@ -619,12 +625,12 @@ const SCEN = [
   y:"N − G cos α = 0. Yhdistämällä yhtälöt ja käyttämällä F<sub>μ0</sub> = μ₀N saadaan μ₀ = tan α."}
 },
 {
- id:"d3", dim:2, ryhma:"Kalteva taso",
+ id:"d3", obj:"kappale", objIll:"kappaleeseen", n3f:"N", dim:2, ryhma:"Kalteva taso",
  title:"Kappale liukuu alas tasaisesti",
  prompt:"Kappale liukuu 25° kaltevaa tasoa alas vakionopeudella.",
  scene:{t:"incline",alpha:25,state:"liukuu alas"},
  dirset:"incline",alpha:25,
- bodies:[{id:"maa",name:"Maa"},{id:"pinta",name:"Tason pinta"}],
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Tason pinta",ill:"tason pintaan"}],
  bodyD:[B.vauhti],
  forces:[
   {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",
@@ -640,7 +646,113 @@ const SCEN = [
  netWhy:"Vakionopeus ⇒ ΣF = 0, aivan kuten levossa. Voimakuvio on sama kuin tilanteessa 12, vain kitkan laji vaihtuu.",
  eqWhy:{
   x:"F<sub>μ</sub> − G sin α = 0, koska vakionopeus ⇒ a<sub>x</sub> = 0.",
-  y:"N − G cos α = 0. Näistä μ = tan α — sama tulos kuin juuri ja juuri levossa olevalle kappaleelle."}
+  y:"N − G cos α = 0. Näistä μ = tan α — sama tulos kuin juuri ja juuri levossa olevalle kappaleelle."}},
+
+/* ---------- E. Kytketyt kappaleet ---------- */
+{
+ id:"e1", obj:"laatikko B", objIll:"laatikkoon B", n3f:"FA", dim:2, ryhma:"Kytketyt kappaleet",
+ title:"Kaksi laatikkoa: etummainen",
+ prompt:"Käsi työntää takimmaista laatikkoa A, ja molemmat laatikot kiihtyvät yhdessä oikealle vaakasuoralla pöydällä. Piirretään voimakuvio etummaiselle laatikolle B.",
+ scene:{t:"two",focus:"B",motion:"kiihtyy oikealle"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Pöydän pinta",ill:"pöydän pintaan"},
+         {id:"lA",name:"Laatikko A",ill:"laatikkoon A"}],
+ bodyD:[{id:"kasi2",name:"Käsi",why:"Käsi koskettaa vain laatikkoa A. Laatikkoon B vaikuttaa laatikon A työntövoima — käsi ei ulotu B:hen asti."},B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
+  {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan pinnasta ulos, nuoli päättyy laatikkoon.",cy:{s:1,id:"N"},rel:1},
+  {id:"FA",sym:"FA",by:"lA",name:"Laatikon A työntövoima",dir:"oi",
+   dirWhy:"Laatikko A koskettaa B:tä vasemmalta ja työntää sitä oikealle. Nuoli päättyy siihen kylkeen, jolta työntö tulee.",
+   cx:{s:1,id:"FA"},rel:0.65},
+  {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pöydän liukukitkavoima",dir:"va",
+   dirWhy:"Liukukitka vastustaa liikettä, joka on oikealle.",cx:{s:-1,id:"Fmu"},rel:0.35}
+ ],
+ forceD:[FD.Fl],
+ net:"oi",
+ netWhy:"Työntövoima on suurempi kuin kitka, joten ΣF osoittaa oikealle ja laatikko kiihtyy. Huomaa, ettei käden voima esiinny tässä kuviossa lainkaan — se vaikuttaa laatikkoon A.",
+ eqWhy:{
+  x:"F<sub>A</sub> − F<sub>μ</sub> = ma<sub>x</sub>. Tästä saadaan koko systeemin yhteinen kiihtyvyys, koska laatikot liikkuvat yhdessä.",
+  y:"N − G = 0, kuten aina vaakasuoralla pinnalla ilman pystysuoria lisävoimia."}
+},
+{
+ id:"e2", obj:"laatikko A", objIll:"laatikkoon A", n3f:"FB", dim:2, ryhma:"Kytketyt kappaleet",
+ title:"Kaksi laatikkoa: takimmainen",
+ prompt:"Sama tilanne, mutta nyt piirretään voimakuvio takimmaiselle laatikolle A, jota käsi työntää.",
+ scene:{t:"two",focus:"A",motion:"kiihtyy oikealle"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Pöydän pinta",ill:"pöydän pintaan"},
+         {id:"kasi",name:"Käsi",ill:"käteen"},{id:"lB",name:"Laatikko B",ill:"laatikkoon B"}],
+ bodyD:[B.vauhti,B.ilma],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
+  {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan pinnasta ulos.",cy:{s:1,id:"N"},rel:1},
+  {id:"Ft",sym:"Ft",by:"kasi",name:"Käden työntövoima",dir:"oi",
+   dirWhy:"Käsi koskettaa laatikon vasenta kylkeä ja työntää oikealle.",cx:{s:1,id:"Ft"},rel:1.3},
+  {id:"FB",sym:"FB",by:"lB",name:"Laatikon B työntövoima",dir:"va",
+   dirWhy:"Newtonin III laki: kun A työntää B:tä oikealle, B työntää A:ta yhtä suurella voimalla vasemmalle.",
+   cx:{s:-1,id:"FB"},rel:0.65},
+  {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pöydän liukukitkavoima",dir:"va",
+   dirWhy:"Liukukitka vastustaa liikettä.",cx:{s:-1,id:"Fmu"},rel:0.35}
+ ],
+ forceD:[FD.Fl],
+ net:"oi",
+ netWhy:"Käden työntövoima on suurempi kuin laatikon B vastavoima ja kitka yhteensä, joten A kiihtyy oikealle. Kiihtyvyys on sama kuin laatikolla B — muuten laatikot eroaisivat toisistaan.",
+ eqWhy:{
+  x:"F<sub>t</sub> − F<sub>B</sub> − F<sub>μ</sub> = ma<sub>x</sub>. Vertaa laatikon B yhtälöön: F<sub>A</sub> ja F<sub>B</sub> ovat yhtä suuret, koska ne ovat Newtonin III lain voimapari.",
+  y:"N − G = 0."}
+},
+{
+ id:"e3", obj:"punnus", objIll:"punnukseen", n3f:"T", dim:1, ryhma:"Kytketyt kappaleet",
+ title:"Talja: riippuva punnus",
+ prompt:"Laatikko on pöydällä ja siihen kiinnitetty naru kulkee pöydän reunalla olevan pyörän yli. Narun päässä riippuu punnus, joka laskee kiihtyen. Piirretään voimakuvio punnukselle.",
+ scene:{t:"pulley",focus:"weight",motion:"punnus laskee kiihtyen"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"naru",name:"Naru",ill:"naruun"}],
+ bodyD:[{id:"laatikko",name:"Laatikko",why:"Laatikko ei kosketa punnusta. Kappaleet ovat vuorovaikutuksessa vain narun välityksellä, joten laatikon vaikutus näkyy narun jännitysvoimana."},
+        {id:"poyta",name:"Pöytä",why:"Pöytä koskettaa laatikkoa, ei punnusta."},B.vauhti],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
+  {id:"T",sym:"T",by:"naru",name:"Narun jännitysvoima",dir:"yl",
+   dirWhy:"Naru voi vain vetää. Se on kiinni punnuksen yläpäässä ja vetää narua pitkin ylöspäin.",
+   cy:{s:1,id:"T"},rel:0.675}
+ ],
+ forceD:[FD.Fl],
+ mag:{q:"Vertaa narun jännitysvoiman ja painon suuruuksia.",
+      opts:["T &gt; G","T = G","T &lt; G"],correct:2,
+      why:"Punnus kiihtyy alaspäin, joten kokonaisvoiman on osoitettava alas — se onnistuu vain jos T &lt; G. Jännitysvoima ei siis ole yhtä suuri kuin paino, vaikka punnus riippuu narussa. Yhtä suuret ne olisivat vain, jos punnus olisi levossa tai liikkuisi vakionopeudella."},
+ net:"al",
+ netWhy:"G on suurempi kuin T, joten ΣF osoittaa alas ja punnus kiihtyy alaspäin. Sama kiihtyvyys on myös laatikolla, koska naru ei veny.",
+ eqWhy:{
+  x:"Vaakasuunnassa ei vaikuta voimia.",
+  y:"T − G = ma<sub>y</sub>, ja a<sub>y</sub> &lt; 0. Yhdistämällä tämä laatikon yhtälöön saadaan sekä kiihtyvyys että jännitysvoima."}
+},
+{
+ id:"e4", obj:"laatikko", objIll:"laatikkoon", n3f:"N", dim:2, ryhma:"Kytketyt kappaleet",
+ title:"Talja: laatikko pöydällä",
+ prompt:"Sama talja, mutta nyt piirretään voimakuvio pöydällä olevalle laatikolle, joka liukuu kiihtyen kohti pöydän reunaa.",
+ scene:{t:"pulley",focus:"box",motion:"laatikko kiihtyy oikealle"},
+ dirset:"flat",
+ bodies:[{id:"maa",name:"Maa",ill:"maahan"},{id:"pinta",name:"Pöydän pinta",ill:"pöydän pintaan"},
+         {id:"naru",name:"Naru",ill:"naruun"}],
+ bodyD:[{id:"punnus",name:"Punnus",why:"Punnus ei kosketa laatikkoa. Sen paino välittyy laatikkoon narun jännitysvoimana, joka on pienempi kuin punnuksen paino."},B.kasi],
+ forces:[
+  {id:"G",sym:"G",by:"maa",name:"Maan vetovoima",dir:"al",dirWhy:"Suoraan alas.",cy:{s:-1,id:"G"},rel:1},
+  {id:"N",sym:"N",by:"pinta",name:"Pöydän tukivoima",dir:"yl",
+   dirWhy:"Kohtisuoraan pöydän pinnasta ulos, nuoli päättyy laatikkoon.",cy:{s:1,id:"N"},rel:1},
+  {id:"T",sym:"T",by:"naru",name:"Narun jännitysvoima",dir:"oi",
+   dirWhy:"Naru vetää narua pitkin poispäin laatikosta, siis kohti pyörää. Nuoli alkaa narun kiinnityskohdasta.",
+   cx:{s:1,id:"T"},rel:0.675},
+  {id:"Fmu",sym:"Fmu",by:"pinta",name:"Pöydän liukukitkavoima",dir:"va",
+   dirWhy:"Liukukitka vastustaa liukumista, joka on oikealle.",cx:{s:-1,id:"Fmu"},rel:0.35}
+ ],
+ forceD:[FD.Fl],
+ net:"oi",
+ netWhy:"Jännitysvoima on suurempi kuin kitka, joten laatikko kiihtyy oikealle. Sama kiihtyvyys on punnuksella.",
+ eqWhy:{
+  x:"T − F<sub>μ</sub> = ma<sub>x</sub>. Jännitysvoima on sama kuin punnuksen yhtälössä, koska naru on kevyt eikä veny.",
+  y:"N − G = 0. Punnuksen paino ei kasvata tukivoimaa, koska punnus ei ole laatikon päällä."}
 }
 ];
 
@@ -796,6 +908,17 @@ function sceneGeom(sc){
     else { g.com={x:180,y:gy-16}; g.contact={x:180,y:gy}; g.halfw=26; }
     if(sc.rope) g.rope={x:206,y:gy-21};
   }
+  else if(sc.t==="two"){
+    const gy=132; g.gy=gy; g.surf=0; g.halfw=26; g.face=true;
+    g.com={x:180,y:gy-16}; g.contact={x:180,y:gy};
+    g.other = sc.focus==="A" ? {x:206,y:gy-32} : {x:102,y:gy-32};   // toisen laatikon vasen yläkulma
+    g.hand  = sc.focus==="A" ? {x:132,y:gy-26} : {x:80,y:gy-26};
+  }
+  else if(sc.t==="pulley"){
+    const ty=100; g.ty=ty; g.surf=0;
+    if(sc.focus==="box"){ g.com={x:150,y:87}; g.contact={x:150,y:ty}; g.halfw=24; g.rope={x:174,y:80}; }
+    else { g.com={x:263,y:141}; g.contact=null; g.rope={x:263,y:128}; }
+  }
   else if(sc.t==="elev"){
     const fy=128; g.fy=fy; g.surf=0;
     if(sc.scale){ g.com={x:180,y:fy-33}; g.contact={x:180,y:fy-12}; g.halfw=28; }
@@ -844,6 +967,10 @@ function anchorFor(f,g,ctx){
     return {x:g.contact.x+ux*off, y:g.contact.y+uy*off, mode:"to"};
   }
   if(f.id==="T" && g.rope) return {x:g.rope.x, y:g.rope.y, mode:"from"};
+  if(g.face && (f.id==="FA"||f.id==="FB"||f.id==="Ft")){
+    const r=dirAngle(f.dir,g.surf)*Math.PI/180;
+    return {x:g.com.x-Math.cos(r)*g.halfw, y:g.com.y+Math.sin(r)*g.halfw, mode:"to"};
+  }
   if(f.id==="Fv" && g.faceU){
     const up=Math.cos((dirAngle(f.dir,g.surf)-g.surf)*Math.PI/180)>=0;
     return up ? {x:g.faceU.x,y:g.faceU.y,mode:"from"} : {x:g.faceD.x,y:g.faceD.y,mode:"from"};
@@ -876,6 +1003,11 @@ function drawComps(fo,g,sc,len){
 /* jo varatut tekstipaikat, joita voimatunnukset väistävät */
 function staticLabs(sc,g){
   const N=22;
+  if(sc.t==="two")    return [{x:40,y:58,need:N},{x:16,y:34,need:N},{x:66,y:62,need:N},
+                              {x:160,y:18,need:N},{x:g.hand.x+10,y:g.hand.y-16,need:18},
+                              {x:g.other.x+26,y:87,need:20},{x:180,y:87,need:20}];
+  if(sc.t==="pulley") return [{x:46,y:172,need:N},{x:22,y:148,need:N},{x:72,y:176,need:N},
+                              {x:160,y:18,need:N},{x:150,y:66,need:20},{x:305,y:145,need:20}];
   if(sc.t==="incline")
     return [{x:288,y:134,need:N},{x:312,y:138,need:N},{x:288,y:110,need:N},{x:52,y:174,need:N},{x:45,y:24,need:N}];
   const a=[{x:40,y:58,need:N},{x:16,y:34,need:N},{x:66,y:62,need:N}];
@@ -912,6 +1044,40 @@ function drawScene(sc, forces, alpha, opt){
     if(sc.rope) s+=`<line x1="${cx+26}" y1="${gy-20}" x2="322" y2="${gy-20}" stroke="${INK}" stroke-width="1.8"/>`;
     if(sc.v){ s+=auxvec(248,36,0,50,"v"); s+=txt(306,40,"= vakio"); }
     s+=axes(40,58,0,90);
+  }
+  else if(sc.t==="two"){
+    const gy=g.gy;
+    s+=`<line x1="20" y1="${gy}" x2="340" y2="${gy}" stroke="${INK}" stroke-width="2"/>`;
+    for(let x=24;x<340;x+=14) s+=`<line x1="${x}" y1="${gy}" x2="${x-7}" y2="${gy+8}" stroke="${INK}" stroke-width="1"/>`;
+    const dim='fill="none" stroke="#B9B09A" stroke-width="2" stroke-dasharray="5 4"';
+    const oth=g.other, foc=sc.focus, muu=foc==="A"?"B":"A";
+    s+=`<rect x="${oth.x}" y="${oth.y}" width="52" height="32" rx="5" ${dim}/>`;
+    s+=`<text x="${oth.x+26}" y="${gy-45}" fill="#8f887a" font-size="15" font-weight="700"
+        font-family="Nunito Sans, Segoe UI, sans-serif" text-anchor="middle">${muu}</text>`;
+    s+=`<rect x="154" y="${gy-32}" width="52" height="32" rx="5" fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"/>`;
+    s+=`<text x="180" y="${gy-45}" fill="${OBJ_BR}" font-size="15" font-weight="700"
+        font-family="Nunito Sans, Segoe UI, sans-serif" text-anchor="middle">${foc}</text>`;
+    s+=`<rect x="${g.hand.x}" y="${g.hand.y}" width="20" height="18" rx="7" ${dim}/>`;
+    s+=`<text x="${g.hand.x+10}" y="${g.hand.y-16}" fill="#8f887a" font-size="11"
+        font-family="Nunito Sans, Segoe UI, sans-serif" text-anchor="middle">käsi</text>`;
+    s+=txt(130,18,sc.motion);
+    s+=axes(40,58,0,90);
+  }
+  else if(sc.t==="pulley"){
+    const ty=g.ty, boxF=sc.focus==="box";
+    const dim='fill="none" stroke="#B9B09A" stroke-width="2" stroke-dasharray="5 4"';
+    const on=`fill="${OBJ_BG}" stroke="${OBJ_BR}" stroke-width="2.5"`;
+    s+=`<line x1="20" y1="${ty}" x2="252" y2="${ty}" stroke="${INK}" stroke-width="2"/>`;
+    for(let x=24;x<252;x+=14) s+=`<line x1="${x}" y1="${ty}" x2="${x-7}" y2="${ty+8}" stroke="${INK}" stroke-width="1"/>`;
+    s+=`<path d="M174 80 H252 A11 11 0 0 1 263 91 V128" fill="none" stroke="${INK}" stroke-width="1.8"/>`;
+    s+=`<circle cx="252" cy="91" r="11" fill="none" stroke="${INK}" stroke-width="2"/>`;
+    s+=`<circle cx="252" cy="91" r="2.5" fill="${INK}"/>`;
+    s+=`<rect x="126" y="74" width="48" height="26" rx="5" ${boxF?on:dim}/>`;
+    s+=`<rect x="250" y="128" width="26" height="26" rx="5" ${boxF?dim:on}/>`;
+    s+=txt(150,66,"laatikko","middle");
+    s+=txt(288,145,"punnus");
+    s+=txt(130,18,sc.motion);
+    s+=axes(46,172,0,90);
   }
   else if(sc.t==="elev"){
     const fy=g.fy;
@@ -955,7 +1121,7 @@ function drawScene(sc, forces, alpha, opt){
 
   if(showF){
     const L0 = sc.t==="incline" ? 58 : 52;
-    const plen = rel => Math.max(22, L0*(opt.scaled ? (rel===undefined?1:rel) : 1));
+    const plen = rel => Math.max(16, L0*(opt.scaled ? (rel===undefined?1:rel) : 1));
     const main=[], sub=[]; let pts=[];
     const ctx={fricSign:fricSignOf(forces,alpha,g.surf)};
     forces.forEach(fo=>{
@@ -976,7 +1142,7 @@ function drawScene(sc, forces, alpha, opt){
   return s+"</svg>";
 }
 function glyph(id){
-  return {G:"G",N:"N",T:"T",Fmu:"F_μ",Fmu0:"F_μ0",Fi:"F_i",Fl:"F_l"}[id]||id;
+  return {G:"G",N:"N",T:"T",Fmu:"F_μ",Fmu0:"F_μ0",Fi:"F_i",Fl:"F_l",Ft:"F_t",FA:"F_A",FB:"F_B"}[id]||id;
 }
 function miniArrow(tok,alpha){
   const ang=dirAngle(tok,alpha||0), r=ang*Math.PI/180;
@@ -1071,7 +1237,7 @@ let S = {view:"menu", si:0, step:0, plan:[], sel:new Set(), radio:null,
 
 function scen(){ return SCEN[S.si]; }
 function buildPlan(sc){
-  const p=["bodies","forces","dirs","komp"];
+  const p=["bodies","forces","dirs","n3","komp"];
   if(sc.mag) p.push("mag");
   p.push("net","n2","dim");
   if(sc.dim===2) p.push("n2xy");
@@ -1139,12 +1305,12 @@ function renderTask(){
   const sc=scen(), stepName=S.plan[S.step];
   let h=`<header><h1>${S.si+1}. ${sc.title}</h1><p class="sub">${sc.ryhma}</p></header>`;
 
-  const late = ["mag","net","n2","dim","n2xy"].includes(stepName);
+  const late = ["n3","mag","net","n2","dim","n2xy"].includes(stepName);
   const revealF = (late || (stepName==="komp"&&S.checked))
     ? sc.forces.map(f=>({id:f.id,dir:f.dir,gl:glyph(f.sym),split:f.split,rel:f.rel,sym:f.sym})) : null;
   const opt = {
     comp: (stepName==="komp"&&S.checked) || ["net","n2","dim","n2xy"].includes(stepName),
-    scaled: ["net","n2","dim","n2xy"].includes(stepName) || (stepName==="komp" && !sc.mag)
+    scaled: ["net","n2","dim","n2xy"].includes(stepName) || (["komp","n3"].includes(stepName) && !sc.mag)
   };
   h+=`<div class="task"><div class="colA"><div class="scene">${drawScene(sc.scene,revealF,sc.alpha,opt)}
       <div class="caption">${sc.prompt}<span class="ax">Koordinaatisto: ${axNote(sc)}</span></div></div></div>`;
@@ -1155,6 +1321,7 @@ function renderTask(){
   if(stepName==="bodies") h+=stepBodies(sc);
   if(stepName==="forces") h+=stepForces(sc);
   if(stepName==="dirs")   h+=stepDirs(sc);
+  if(stepName==="n3")     h+=stepN3(sc);
   if(stepName==="komp")   h+=stepKomp(sc);
   if(stepName==="mag")    h+=stepMag(sc);
   if(stepName==="net")    h+=stepNet(sc);
@@ -1261,6 +1428,50 @@ function stepDirs(sc){
     if(f.id==="N") h+=note("Piirtotapa","Tukivoima piirretään päättymään kappaleeseen: nuolen kärki on kappaleen pinnassa. Piirrä se hieman painon vektorista sivuun, jotta nuolet eivät mene päällekkäin.");
     if(f.id==="Fmu"||f.id==="Fmu0") h+=note("Piirtotapa","Kitkavoima alkaa tai päättyy kappaleen ja pinnan väliin — juuri siihen kohtaan, jossa pinnat koskettavat toisiaan.");
     h+=`</div>`;
+  }
+  return h;
+}
+
+/* --- vaihe: voima ja vastavoima (Newtonin III laki) --- */
+/* vain alkukirjain pieneksi, jotta "Laatikko B" ei muutu muotoon "laatikko b" */
+function lcf(x){ return x.charAt(0).toLowerCase()+x.slice(1); }
+function n3Force(sc){ return sc.forces.find(f=>f.id===sc.n3f) || sc.forces[0]; }
+function n3Options(sc){
+  const f=n3Force(sc);
+  const b=sc.bodies.find(x=>x.id===f.by) || {name:"kappale",ill:"kappaleeseen"};
+  const muu=sc.forces.find(x=>x.id!==f.id);
+  const out=[{html:`Voima, jonka ${sc.obj} kohdistaa ${b.ill}`, ok:true}];
+  if(muu) out.push({html:`${sym(muu.sym)} — ${lcf(muu.name)}`});
+  out.push({html:`Voima, jonka ${lcf(b.name)} kohdistaa ${sc.objIll} päinvastaiseen suuntaan`});
+  out.push({html:`Vastavoimaa ei ole, sillä voimapari syntyy vain liikkuvien kappaleiden välille`});
+  return out;
+}
+function stepN3(sc){
+  const f=n3Force(sc);
+  const b=sc.bodies.find(x=>x.id===f.by) || {name:"kappale",ill:"kappaleeseen"};
+  const muu=sc.forces.find(x=>x.id!==f.id);
+  const list=shuffleStable(n3Options(sc), sc.id+"n3");
+  S._list=list;
+  let h=`<p class="q">Mikä on voiman ${sym(f.sym)} vastavoima?</p>
+   <p class="hint">${f.name} · Newtonin III laki: voima ja vastavoima ovat yhtä suuret ja vastakkaissuuntaiset.</p><div class="opts">`;
+  list.forEach((o,i)=>{
+    let cls="opt radio";
+    if(S.checked){
+      if(o.ok) cls+=" right";
+      else if(String(i)===S.radio) cls+=" wrong";
+    }
+    h+=`<button class="${cls}" data-d="${i}" aria-pressed="${S.radio===String(i)}">
+      <span class="mark"></span><span class="txt">${o.html}</span></button>`;
+  });
+  h+=`</div>`;
+  if(S.checked){
+    const ok=list[+S.radio] && list[+S.radio].ok;
+    let body=`Vastavoima vaikuttaa aina <b>eri kappaleeseen</b> kuin voima itse.
+      ${sym(f.sym)} vaikuttaa ${sc.objIll}, joten sen vastavoima vaikuttaa ${b.ill}.
+      Juuri siksi voima ja vastavoima eivät koskaan kumoa toisiaan eivätkä koskaan näy samassa voimakuviossa.`;
+    if(muu) body+=` ${sym(muu.sym)} ei ole sen vastavoima: molemmat vaikuttavat ${sc.objIll}.`;
+    h+=`<div class="fb">`+note(ok?"Oikein":"Katso uudelleen",body,ok?true:"warn")+`</div>`;
+    if(!ok) logOnce("n3_"+sc.id,"Voima ja vastavoima: vastavoima vaikuttaa eri kappaleeseen");
   }
   return h;
 }
@@ -1387,10 +1598,8 @@ function stepN2(sc){
 
 /* --- vaihe: yksi- vai kaksiulotteinen tilanne --- */
 const DIM_WHY={
- 1:`Kaikki kappaleeseen vaikuttavat voimat ovat samalla suoralla, tässä pystysuorassa.
-    Tilanne on <b>yksiulotteinen</b>: vektoriyhtälöstä luetaan suoraan yksi skalaariyhtälö,
-    eikä erillistä komponenttijakoa tarvita. Vaakasuunnassa ei ole yhtään voimaa,
-    joten siellä ei ole myöskään kiihtyvyyttä — nopeus vain säilyy.`,
+ 1:`Kaikki voimat ovat samalla suoralla, joten tilanne on <b>yksiulotteinen</b>: vektoriyhtälöstä
+    luetaan suoraan yksi skalaariyhtälö. Vaakasuunnassa ei ole voimia eikä kiihtyvyyttä.`,
  2:`Voimat osoittavat kahteen eri suuntaan, joten tilanne on <b>kaksiulotteinen</b>.
     Newtonin II laki kirjoitetaan erikseen x- ja y-suunnassa. Kumpikin yhtälö on skalaariyhtälö,
     ja yleensä molempia tarvitaan: y-yhtälöstä saadaan tukivoima, jota tarvitaan kitkaan x-yhtälössä.`};
