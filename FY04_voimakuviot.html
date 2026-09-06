@@ -60,12 +60,12 @@
 
   /* leveillä näytöillä kuva vasemmalle, kysymys oikealle ja palaute kuvan alle,
      jotta koko näkymä mahtuu ruudulle ilman vieritystä */
-  #app.wide{max-width:930px}
+  #app.wide{max-width:1020px}
   @media (min-width:760px){
     #app.wide .task{
       display:grid;
-      grid-template-columns:minmax(270px,0.9fr) minmax(310px,1fr);
-      gap:12px 24px;align-items:start;
+      grid-template-columns:minmax(300px,1fr) minmax(320px,1fr);
+      gap:12px 26px;align-items:start;
     }
     #app.wide .task>.colA{grid-column:1;grid-row:1}
     #app.wide .task>.colB{grid-column:2;grid-row:1 / span 2}
