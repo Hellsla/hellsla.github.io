@@ -56,16 +56,16 @@
   }
   button,input{font-family:inherit}
   :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
-  .wrap{max-width:660px;margin:0 auto;padding:18px 14px 108px}
+  .wrap{max-width:640px;margin:0 auto;padding:14px 14px 92px}
 
   /* leveillä näytöillä kuva vasemmalle, kysymys oikealle ja palaute kuvan alle,
      jotta koko näkymä mahtuu ruudulle ilman vieritystä */
-  #app.wide{max-width:1060px}
+  #app.wide{max-width:930px}
   @media (min-width:760px){
     #app.wide .task{
       display:grid;
-      grid-template-columns:minmax(300px,1fr) minmax(330px,1fr);
-      gap:16px 28px;align-items:start;
+      grid-template-columns:minmax(270px,0.9fr) minmax(310px,1fr);
+      gap:12px 24px;align-items:start;
     }
     #app.wide .task>.colA{grid-column:1;grid-row:1}
     #app.wide .task>.colB{grid-column:2;grid-row:1 / span 2}
@@ -75,14 +75,14 @@
     #app.wide .labgrid{grid-template-columns:1fr}
   }
 
-  header{margin-bottom:18px}
+  header{margin-bottom:12px}
   h1{
-    font-family:var(--slab);font-size:clamp(1.5rem,6vw,2rem);font-weight:700;
-    color:var(--brick-dark);margin:0 0 3px;line-height:1.1;
+    font-family:var(--slab);font-size:clamp(1.3rem,5vw,1.6rem);font-weight:700;
+    color:var(--brick-dark);margin:0 0 2px;line-height:1.15;
   }
   .sub{color:var(--ink-soft);font-size:.82rem;font-weight:700;letter-spacing:.05em;
        text-transform:uppercase;margin:0}
-  h2{font-family:var(--slab);font-size:1.25rem;font-weight:700;color:var(--brick-dark);margin:24px 0 9px}
+  h2{font-family:var(--slab);font-size:1.15rem;font-weight:700;color:var(--brick-dark);margin:18px 0 8px}
 
   /* ---- kuvapaneeli ---- */
   .scene{
@@ -90,15 +90,15 @@
     border:2px solid transparent;
     border-radius:var(--radius);
     box-shadow:var(--shadow);
-    margin-bottom:16px;
+    margin-bottom:12px;
     overflow:hidden;
   }
   .scene svg{display:block;width:100%;max-width:min(520px,58vh);height:auto;margin:0 auto}
   .caption{
     background:var(--panel-2);
     border-top:2px solid rgba(58,54,47,.08);
-    padding:11px 15px;
-    font-size:.9rem;
+    padding:9px 13px;
+    font-size:.88rem;
     color:var(--ink-soft);
     font-weight:600;
   }
@@ -109,23 +109,23 @@
   .steps{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
          color:var(--ink-soft);opacity:.75;margin:0 0 6px}
   .steps b{color:var(--brick)}
-  .track{height:6px;border-radius:999px;background:var(--panel-2);overflow:hidden;margin:0 0 18px;
+  .track{height:5px;border-radius:999px;background:var(--panel-2);overflow:hidden;margin:0 0 13px;
          box-shadow:inset 0 1px 2px rgba(58,54,47,.1)}
   .fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--clay),var(--fire-orange));
         transition:width .3s ease}
 
   /* ---- kysymys ---- */
-  .q{font-family:var(--slab);font-size:1.24rem;font-weight:600;color:var(--brick-dark);margin:0 0 5px;line-height:1.3}
-  .hint{color:var(--ink-soft);font-size:.85rem;font-weight:600;margin:0 0 14px}
+  .q{font-family:var(--slab);font-size:1.15rem;font-weight:600;color:var(--brick-dark);margin:0 0 4px;line-height:1.3}
+  .hint{color:var(--ink-soft);font-size:.83rem;font-weight:600;margin:0 0 11px}
 
-  .opts{display:flex;flex-direction:column;gap:9px;margin:0 0 18px}
+  .opts{display:flex;flex-direction:column;gap:7px;margin:0 0 14px}
   .opt{
     display:flex;align-items:center;gap:12px;
     background:var(--panel);
     border:2px solid transparent;
     border-radius:14px;
     box-shadow:var(--shadow);
-    padding:13px 15px;
+    padding:11px 14px;
     text-align:left;
     font:inherit;color:inherit;
     cursor:pointer;
@@ -152,14 +152,14 @@
   .opt.right:hover,.opt.wrong:hover,.opt.missed:hover{transform:none}
 
   /* ---- palauteruudut ---- */
-  .fb{margin:0 0 18px;display:flex;flex-direction:column;gap:11px}
+  .fb{margin:0 0 14px;display:flex;flex-direction:column;gap:9px}
   .note{
     background:var(--panel);
     border:2px solid rgba(58,54,47,.12);
     border-radius:14px;
     box-shadow:var(--shadow);
-    padding:13px 16px;
-    font-size:.94rem;
+    padding:11px 14px;
+    font-size:.92rem;
   }
   .note.good{background:var(--vastaus);border-color:var(--brick)}
   .note.warn{background:var(--warm);border-color:var(--fire-orange)}
@@ -170,10 +170,10 @@
   /* ---- napit ---- */
   .bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);
        border-top:2px solid rgba(58,54,47,.1);box-shadow:0 -6px 18px rgba(58,54,47,.10);
-       padding:11px 14px calc(11px + env(safe-area-inset-bottom))}
-  .bar .inner{max-width:660px;margin:0 auto;display:flex;gap:10px}
+       padding:9px 14px calc(9px + env(safe-area-inset-bottom))}
+  .bar .inner{max-width:640px;margin:0 auto;display:flex;gap:10px}
   button.act{
-    flex:1;font:inherit;font-size:1rem;font-weight:700;padding:15px 18px;cursor:pointer;
+    flex:1;font:inherit;font-size:.98rem;font-weight:700;padding:12px 18px;cursor:pointer;
     border-radius:14px;border:2px solid var(--brick);
     background:var(--brick);color:#fff;box-shadow:var(--shadow);
     transition:filter .14s ease,transform .12s ease;
@@ -193,7 +193,7 @@
 
   /* ---- listat ---- */
   .sumrow{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
-          border-bottom:2px solid var(--panel-2);padding:10px 2px;font-size:.94rem;font-weight:600}
+          border-bottom:2px solid var(--panel-2);padding:8px 2px;font-size:.92rem;font-weight:600}
   .sumrow:last-child{border-bottom:0}
   .sumrow .n{color:var(--brick);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 
@@ -202,7 +202,7 @@
   .row{
     display:flex;align-items:center;gap:12px;width:100%;
     background:var(--panel);border:2px solid transparent;border-radius:14px;
-    box-shadow:var(--shadow);padding:13px 16px;
+    box-shadow:var(--shadow);padding:11px 15px;
     text-align:left;font:inherit;color:inherit;cursor:pointer;
     transition:transform .14s ease,border-color .14s ease;
   }
@@ -653,8 +653,19 @@ const INK="#3a3530", VEC="#F1786F", VEC2="#F6AFA9", CMP="#7E776A", GRN="#7CB342"
       MATH='"Latin Modern Roman",Cambria,"Times New Roman",Times,serif';
 
 function svgOpen(){
-  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img">
-    <rect width="${W}" height="${H}" fill="#faf6ec"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img">`;
+}
+/* Rajaa kuvakehys pystysuunnassa siihen, mitä on todella piirretty.
+   Leveys pidetään vakiona, jotta teksti on kaikissa kuvissa samankokoista. */
+function fitScene(svg){
+  if(!svg) return;
+  try{
+    const bb=svg.getBBox();
+    if(!bb || !isFinite(bb.height) || bb.height<=0) return;
+    const m=7;
+    const y=Math.max(0, bb.y-m), h=Math.min(H-y, bb.height+2*m);
+    svg.setAttribute("viewBox", `0 ${Math.round(y)} ${W} ${Math.round(h)}`);
+  }catch(e){}
 }
 function arrowDefs(){
   return `<defs>
@@ -1157,6 +1168,7 @@ function renderTask(){
   /* palaute omaan ruudukkosoluunsa kuvan alle, jottei oikea palsta veny */
   const fb=app.querySelector(".colB > .fb");
   if(fb) app.querySelector(".task").appendChild(fb);
+  fitScene(app.querySelector(".scene svg"));
   wire(sc,stepName);
 }
 
@@ -1654,6 +1666,7 @@ function renderSummary(){
   const next=SCEN[S.si+1];
   app.classList.add("wide");
   app.innerHTML=h;
+  fitScene(app.querySelector(".scene svg"));
   bar.innerHTML=`<button class="act ghost" data-back>Tilanteet</button>`+
     (next?`<button class="act" data-next>Seuraava tilanne</button>`:"");
   bar.querySelector("[data-back]").onclick=()=>{S.view="menu";render();window.scrollTo(0,0);};
