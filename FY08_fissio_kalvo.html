@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ydinfissio (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --yellow:#FFD95A;
+    --grey:#9A958C;
+    --slate:#6E7A82;
+    --rod:#4A5A63;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+    --ok:#2E7D5B;
+  }
+
+  .scene{ width:100%; height:100%; }
+
+  /* SVG-typografia skaalautuu kalvon mukana */
+  .scene text{ font-family:inherit; }
+  .h    { font-size:14px; fill:var(--faint); letter-spacing:.12em; }
+  .note { font-size:14px; fill:var(--muted); }
+  .msg  { font-size:21px; fill:var(--muted); }
+  .eq   { font-size:24px; fill:var(--ink); }
+  .cap  { font-size:19px; fill:var(--muted); }
+  .name { font-size:22px; fill:var(--ink); font-weight:700; }
+  .huge { font-size:56px; fill:var(--ink); font-weight:700; font-variant-numeric:tabular-nums; }
+  .state{ font-size:27px; font-weight:700; }
+  .frame{ fill:none; stroke:var(--line); stroke-width:1.4; }
+
+  /* välilehdet kalvon oikeaan yläkulmaan */
+  .sim-tabs{
+    position:absolute; right:30px; top:16px;
+    display:flex; gap:8px;
+  }
+  .sim-tabs .sim-btn{
+    font-size:clamp(12px,1.15vw,15px);
+    padding:5px 13px;
+    border-color:#D8D4CC;
+    color:var(--muted);
+  }
+  .sim-tabs .sim-btn[aria-selected="true"]{
+    background:var(--ink); border-color:var(--ink); color:#fff;
+  }
+
+  .sim-controls{ gap:14px 22px; }
+  .sim-controls[hidden]{ display:none; }
+  .sim-controls .sim-range{ width:min(170px,18vw); }
+  .sim-controls .out{
+    min-width:3ch; text-align:right; font-weight:700; color:var(--ink);
+    font-size:clamp(15px,1.6vw,20px); font-variant-numeric:tabular-nums;
+  }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-btn.danger{ border-color:var(--red); color:var(--red); }
+  .sim-controls .sim-btn:disabled{ opacity:.34; cursor:default; }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Ydinfission simulaatio: halkeaminen, ketjureaktio ja ydinreaktori">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Ydinfission simulaatio kalvokäyttöön">
+
+<defs>
+  <radialGradient id="burstGrad">
+    <stop offset="0%"   stop-color="#FFD95A" stop-opacity="0.85"/>
+    <stop offset="60%"  stop-color="#F28C28" stop-opacity="0.32"/>
+    <stop offset="100%" stop-color="#F28C28" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="water" width="14" height="14" patternUnits="userSpaceOnUse">
+    <rect width="14" height="14" fill="#F2F7FA"/>
+    <circle cx="3.5" cy="3.5" r="1.1" fill="#CFE2EC"/>
+    <circle cx="10.5" cy="9.5" r="1.1" fill="#CFE2EC"/>
+  </pattern>
+  <clipPath id="fieldClip"><rect x="40" y="62" width="620" height="326" rx="8"/></clipPath>
+  <clipPath id="coreClip"><rect x="40" y="70" width="530" height="310" rx="10"/></clipPath>
+  <clipPath id="sparkClip"><rect x="601" y="233" width="318" height="98"/></clipPath>
+</defs>
+
+<!-- yhteinen viestirivi -->
+<text id="msg" x="480" y="420" text-anchor="middle" class="msg">Ammu neutroni uraani-235-ytimeen.</text>
+
+<!-- ============================ 1 · YKSI YDIN ============================ -->
+<g id="view1">
+  <text x="400" y="36" text-anchor="middle" class="eq" style="font-size:22px">²³⁵U + n  →  ¹⁴¹Ba + ⁹²Kr + 3 n</text>
+
+  <g>
+    <circle cx="38" cy="30" r="7" fill="var(--red)"/>
+    <text x="52" y="35" class="note">protoni</text>
+    <circle cx="128" cy="30" r="7" fill="var(--slate)"/>
+    <text x="142" y="35" class="note">neutroni</text>
+  </g>
+
+  <circle id="v1Burst" cx="480" cy="238" r="0" fill="url(#burstGrad)" opacity="0"/>
+  <g id="v1Nucleons"></g>
+  <g id="v1Free"></g>
+
+  <text id="v1Pop" x="480" y="112" text-anchor="middle" class="huge"
+        style="font-size:40px;fill:var(--orange)" opacity="0">≈ 200 MeV</text>
+
+  <g id="v1LabM">
+    <text x="480" y="346" text-anchor="middle" class="name">²³⁵U</text>
+  </g>
+  <g id="v1LabA" opacity="0">
+    <text x="0" y="0" text-anchor="middle" class="name" style="fill:var(--red)">¹⁴¹Ba</text>
+  </g>
+  <g id="v1LabB" opacity="0">
+    <text x="0" y="0" text-anchor="middle" class="name" style="fill:var(--orange)">⁹²Kr</text>
+  </g>
+</g>
+
+<!-- ============================ 2 · KETJUREAKTIO ============================ -->
+<g id="view2" style="display:none">
+  <rect x="40" y="62" width="620" height="326" rx="8" fill="#FCFCFB"
+        stroke="var(--line)" stroke-width="1.4" stroke-dasharray="6 6"/>
+
+  <g clip-path="url(#fieldClip)">
+    <g id="v2Nuclei"></g>
+    <g id="v2Frag"></g>
+    <g id="v2Neut"></g>
+    <g id="v2Flash"></g>
+  </g>
+
+  <text x="690" y="120" class="h">HALKEAMISIA</text>
+  <text id="v2Fis" x="690" y="176" class="huge">0</text>
+  <text x="690" y="206" class="cap">≈ 200 MeV kustakin</text>
+
+  <g>
+    <circle cx="699" cy="264" r="9" fill="var(--blue)"/>
+    <text x="716" y="270" class="note">²³⁵U · halkeaa</text>
+    <circle cx="699" cy="298" r="10" fill="var(--grey)"/>
+    <text x="716" y="304" class="note">²³⁸U · sieppaa neutronin</text>
+    <circle cx="699" cy="332" r="5" fill="var(--ink)"/>
+    <text x="716" y="338" class="note">neutroni</text>
+    <circle cx="695" cy="366" r="7" fill="var(--red)"/>
+    <circle cx="705" cy="366" r="6" fill="var(--orange)"/>
+    <text x="716" y="372" class="note">halkeamistuotteet</text>
+  </g>
+</g>
+
+<!-- ============================ 3 · YDINREAKTORI ============================ -->
+<g id="view3" style="display:none">
+  <rect x="40" y="70" width="530" height="310" rx="10" fill="url(#water)"
+        stroke="var(--ink)" stroke-width="3.4"/>
+  <text x="40" y="52" class="h">REAKTORISYDÄN</text>
+  <text x="570" y="52" text-anchor="end" class="note">vesi hidastaa neutronit</text>
+
+  <g clip-path="url(#coreClip)">
+    <g id="v3Fuel"></g>
+    <g id="v3Rods"></g>
+    <g id="v3Neut"></g>
+    <g id="v3Flash"></g>
+  </g>
+
+  <text id="v3State" x="600" y="114" class="state" style="fill:var(--muted)">Sammutettu</text>
+  <text id="v3Sub" x="600" y="138" class="note">reaktori ei ole käynnissä</text>
+
+  <text x="600" y="172" class="h">TEHO</text>
+  <rect x="600" y="182" width="320" height="18" rx="9" fill="#F0EEEA"/>
+  <rect id="v3Bar" x="600" y="182" width="0" height="18" rx="9" fill="var(--orange)"/>
+
+  <text x="600" y="224" class="h">TEHON KEHITYS</text>
+  <rect x="600" y="232" width="320" height="100" class="frame"/>
+  <g clip-path="url(#sparkClip)">
+    <polyline id="v3Spark" fill="none" stroke="var(--orange)" stroke-width="2.2"
+              stroke-linejoin="round" stroke-linecap="round" points=""/>
+  </g>
+
+  <g>
+    <rect x="600" y="350" width="13" height="13" rx="3" fill="var(--blue)"/>
+    <text x="620" y="361" class="note">polttoaine</text>
+    <rect x="770" y="350" width="13" height="13" rx="3" fill="var(--rod)"/>
+    <text x="790" y="361" class="note">säätösauva</text>
+    <circle cx="606" cy="381" r="5" fill="var(--orange)"/>
+    <text x="620" y="386" class="note">nopea neutroni</text>
+    <circle cx="776" cy="381" r="5.5" fill="var(--ink)"/>
+    <text x="790" y="386" class="note">hidas neutroni</text>
+  </g>
+</g>
+
+</svg>
+
+<div class="sim-tabs" role="tablist" aria-label="Simulaation osat">
+  <button class="sim-btn" type="button" role="tab" id="tab1" aria-controls="view1" aria-selected="true">1 · Yksi ydin</button>
+  <button class="sim-btn" type="button" role="tab" id="tab2" aria-controls="view2" aria-selected="false">2 · Ketjureaktio</button>
+  <button class="sim-btn" type="button" role="tab" id="tab3" aria-controls="view3" aria-selected="false">3 · Ydinreaktori</button>
+</div>
+
+<div class="sim-controls" id="ctrl1">
+  <button class="sim-btn primary" type="button" id="v1Fire">Ammu neutroni</button>
+  <button class="sim-btn" type="button" id="v1Reset">Nollaa</button>
+</div>
+
+<div class="sim-controls" id="ctrl2" hidden>
+  <div class="sim-sliderBox">
+    <label for="v2A">²³⁵U</label>
+    <input class="sim-range" id="v2A" type="range" min="0" max="90" step="1" value="60">
+    <span class="out" id="v2AOut">60</span>
+  </div>
+  <div class="sim-sliderBox">
+    <label for="v2B">²³⁸U</label>
+    <input class="sim-range" id="v2B" type="range" min="0" max="90" step="1" value="0">
+    <span class="out" id="v2BOut">0</span>
+  </div>
+  <button class="sim-btn primary" type="button" id="v2Fire">Ammu neutroni</button>
+  <button class="sim-btn" type="button" id="v2Reset">Uusi kenttä</button>
+</div>
+
+<div class="sim-controls" id="ctrl3" hidden>
+  <div class="sim-sliderBox">
+    <label for="v3Rod">Säätösauvat</label>
+    <input class="sim-range" id="v3Rod" type="range" min="0" max="100" step="1" value="52">
+    <span class="out" id="v3RodOut">52 %</span>
+  </div>
+  <button class="sim-btn primary" type="button" id="v3Run">Käynnistä</button>
+  <button class="sim-btn danger" type="button" id="v3Scram">Hätäpysäytys</button>
+  <button class="sim-btn" type="button" id="v3Reset">Nollaa</button>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+/* ---------------- yhteiset apuvälineet ---------------- */
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+
+function mk(tag, attrs){
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+}
+
+function rngFrom(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const lerp    = (a, b, t) => a + (b - a) * t;
+const clamp   = (v, a, b) => v < a ? a : (v > b ? b : v);
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+const UNSUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5",
+               "⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-","⁺":"+"};
+const isSup = c => Object.prototype.hasOwnProperty.call(UNSUP, c);
+
+/* Arialista puuttuu osa yläindeksimerkeistä, joten ne ladotaan tspaneilla. */
+function typeset(el, str){
+  if(el.__typeset === str) return;
+  el.__typeset = str;
+  while(el.firstChild) el.removeChild(el.firstChild);
+
+  const runs = [];
+  for(const ch of str){
+    const s = isSup(ch);
+    const last = runs[runs.length - 1];
+    if(last && last.sup === s) last.text += s ? UNSUP[ch] : ch;
+    else runs.push({ sup: s, text: s ? UNSUP[ch] : ch });
+  }
+
+  let raised = false;
+  for(const run of runs){
+    const t = document.createElementNS(NS, "tspan");
+    if(run.sup){
+      t.setAttribute("font-size", "0.66em");
+      t.setAttribute("dy", "-0.52em");
+      raised = true;
+    }else if(raised){
+      t.setAttribute("dy", "0.34em");
+      raised = false;
+    }
+    t.textContent = run.text;
+    el.appendChild(t);
+  }
+}
+
+const supHTML = s => s.replace(/[⁰¹²³⁴-⁹⁺⁻]+/g,
+  m => "<sup>" + Array.from(m).map(c => UNSUP[c]).join("") + "</sup>");
+
+const msgEl = $("msg");
+const setMsg = t => typeset(msgEl, t);
+
+/* tasainen pistejakauma ympyrään */
+function packDisc(n, R, jitter, rnd){
+  const pts = [];
+  const ga = Math.PI * (3 - Math.sqrt(5));
+  for(let i = 0; i < n; i++){
+    const r = R * Math.sqrt((i + 0.5) / n);
+    const a = i * ga;
+    pts.push({ x: r * Math.cos(a) + (rnd() - 0.5) * jitter,
+               y: r * Math.sin(a) + (rnd() - 0.5) * jitter, r0: r });
+  }
+  return pts;
+}
+
+/* ==================== 1 · YKSI YDIN ==================== */
+
+const V1 = (() => {
+  const CX = 480, CY = 238, R = 70, NR = 4.2;
+  const N_TOTAL = 236;
+  const R_BA = R * Math.pow(141 / 236, 1 / 3);
+  const R_KR = R * Math.pow(92 / 236, 1 / 3);
+  const AXIS = -8 * Math.PI / 180;
+  const V_KR = 78, V_BA = -V_KR * 92 / 141;
+  const T_FLY = 0.85, T_EXCITE = 2.0, T_SPLIT = 2.0;
+
+  const gNuc = $("v1Nucleons"), gFree = $("v1Free");
+  const burst = $("v1Burst"), pop = $("v1Pop");
+  const labM = $("v1LabM"), labA = $("v1LabA"), labB = $("v1LabB");
+
+  const rnd  = rngFrom(20250907);
+  const base = packDisc(N_TOTAL, R, 2.8, rnd);
+
+  const types = [];
+  for(let i = 0; i < 92; i++) types.push("p");
+  for(let i = 0; i < 143; i++) types.push("n");
+  for(let i = types.length - 1; i > 0; i--){
+    const j = Math.floor(rnd() * (i + 1));
+    [types[i], types[j]] = [types[j], types[i]];
+  }
+  types.push("n");                       // saapuva neutroni saa uloimman paikan
+
+  const nucleons = base.map((p, i) => {
+    const type = types[i];
+    const el = mk("circle", { r: NR, fill: type === "p" ? "var(--red)" : "var(--slate)",
+                              stroke: "#fff", "stroke-width": 0.6 });
+    gNuc.appendChild(el);
+    return { el, type, bx: p.x, by: p.y, r0: p.r0,
+             x: CX + p.x, y: CY + p.y, fromX: 0, fromY: 0, blend: 1,
+             frag: -1, free: false, vx: 0, vy: 0 };
+  });
+
+  const incoming = nucleons[N_TOTAL - 1];
+  const START = { x: 46, y: CY - 52 };
+  const ENTRY = { x: CX - R - 4, y: CY - 5 };
+
+  const fragA = { x: CX, y: CY, vx: 0, vy: 0 };
+  const fragB = { x: CX, y: CY, vx: 0, vy: 0 };
+
+  let state = "idle", t = 0, phase = 0;
+
+  function deform(x, y, e){
+    const pinch = 1 - e * 0.78 * (1 - Math.min(1, Math.abs(x) / R));
+    return { x: x * (1 + e * 0.9), y: y * pinch };
+  }
+
+  function beginBlend(n, dur){ n.fromX = n.x; n.fromY = n.y; n.blend = 0; n.blendDur = dur; }
+
+  function doSplit(){
+    const loose = nucleons
+      .filter(n => n.type === "n" && n !== incoming)
+      .sort((a, b) => b.r0 - a.r0)
+      .slice(0, 3);
+
+    loose.forEach((n, i) => {
+      n.free = true; n.frag = 2;
+      n.el.setAttribute("fill", "var(--ink)");
+      n.el.setAttribute("r", NR * 1.2);
+      const a = AXIS + (i - 1) * 1.15 + (rnd() - 0.5) * 0.5;
+      const v = 165 + rnd() * 55;
+      n.vx = Math.cos(a) * v; n.vy = Math.sin(a) * v;
+      gFree.appendChild(n.el);
+    });
+
+    const rest = nucleons.filter(n => !n.free);
+    const prot = rest.filter(n => n.type === "p").sort((a, b) => a.x - b.x);
+    const neut = rest.filter(n => n.type === "n").sort((a, b) => a.x - b.x);
+
+    const inA = new Set();
+    prot.slice(0, 56).forEach(n => inA.add(n));   // ¹⁴¹Ba: 56 protonia
+    neut.slice(0, 85).forEach(n => inA.add(n));   // ¹⁴¹Ba: 85 neutronia
+
+    const mA = rest.filter(n => inA.has(n));
+    const mB = rest.filter(n => !inA.has(n));
+
+    const centroid = arr => {
+      let sx = 0, sy = 0;
+      arr.forEach(n => { sx += n.x; sy += n.y; });
+      return { x: sx / arr.length, y: sy / arr.length };
+    };
+    const cA = centroid(mA), cB = centroid(mB);
+    fragA.x = cA.x; fragA.y = cA.y;
+    fragB.x = cB.x; fragB.y = cB.y;
+    fragA.vx = Math.cos(AXIS) * V_BA; fragA.vy = Math.sin(AXIS) * V_BA;
+    fragB.vx = Math.cos(AXIS) * V_KR; fragB.vy = Math.sin(AXIS) * V_KR;
+
+    const assign = (members, frag, radius, seed) => {
+      const slots = packDisc(members.length, radius, 2.6, rngFrom(seed))
+        .sort((a, b) => a.r0 - b.r0);
+      members.slice()
+        .sort((a, b) => Math.hypot(a.x - frag.x, a.y - frag.y) -
+                        Math.hypot(b.x - frag.x, b.y - frag.y))
+        .forEach((n, i) => { n.lx = slots[i].x; n.ly = slots[i].y; });
+    };
+    assign(mA, fragA, R_BA, 771);
+    assign(mB, fragB, R_KR, 4242);
+
+    mA.forEach(n => { n.frag = 0; beginBlend(n, 0.45); });
+    mB.forEach(n => { n.frag = 1; beginBlend(n, 0.45); });
+
+    labM.setAttribute("opacity", "0");
+    labA.setAttribute("opacity", "1");
+    labB.setAttribute("opacity", "1");
+  }
+
+  function reset(){
+    state = "idle"; t = 0; phase = 0;
+    nucleons.forEach(n => {
+      n.free = false; n.frag = -1; n.blend = 1; n.vx = n.vy = 0;
+      n.el.setAttribute("r", NR);
+      n.el.setAttribute("fill", n.type === "p" ? "var(--red)" : "var(--slate)");
+      n.el.setAttribute("opacity", "1");
+      if(n.el.parentNode !== gNuc) gNuc.appendChild(n.el);
+    });
+    incoming.el.setAttribute("fill", "var(--ink)");
+    incoming.el.setAttribute("r", NR * 1.2);
+    gFree.appendChild(incoming.el);
+    incoming.x = START.x; incoming.y = START.y;
+    incoming.el.setAttribute("cx", START.x);
+    incoming.el.setAttribute("cy", START.y);
+
+    labM.setAttribute("opacity", "1");
+    labA.setAttribute("opacity", "0");
+    labB.setAttribute("opacity", "0");
+    burst.setAttribute("opacity", "0"); burst.setAttribute("r", "0");
+    pop.setAttribute("opacity", "0");
+    $("v1Fire").disabled = false;
+    setMsg("Ammu neutroni uraani-235-ytimeen.");
+    step(0);
+  }
+
+  function fire(){
+    if(state !== "idle") return;
+    state = "fly"; t = 0;
+    $("v1Fire").disabled = true;
+    setMsg("Neutroni lähestyy ydintä.");
+  }
+
+  function step(dt){
+    t += dt;
+    let e = 0.018 * Math.sin(t * 1.6);
+
+    if(state === "fly"){
+      const k = clamp(t / T_FLY, 0, 1);
+      incoming.x = lerp(START.x, ENTRY.x, k);
+      incoming.y = lerp(START.y, ENTRY.y, k);
+      incoming.el.setAttribute("cx", incoming.x.toFixed(1));
+      incoming.el.setAttribute("cy", incoming.y.toFixed(1));
+      if(k >= 1){
+        state = "excite"; t = 0; phase = 0;
+        incoming.el.setAttribute("fill", "var(--slate)");
+        incoming.el.setAttribute("r", NR);
+        gNuc.appendChild(incoming.el);
+        beginBlend(incoming, 0.4);
+        setMsg("Ydin sieppasi neutronin ja alkaa värähdellä.");
+      }
+    }
+
+    if(state === "excite"){
+      const prog = clamp(t / T_EXCITE, 0, 1);
+      const amp  = 0.05 + 0.40 * prog * prog;
+      phase += dt * 2 * Math.PI * (1.4 + 2.2 * prog);
+      e = amp * Math.sin(phase);
+      if(t >= T_EXCITE){
+        e = amp; state = "split"; t = 0;
+        doSplit();
+        setMsg("Ydin halkesi kahdeksi kevyemmäksi ytimeksi.");
+      }
+    }
+
+    if(state === "split" || state === "done"){
+      e = 0;
+      if(state === "split"){
+        fragA.x += fragA.vx * dt; fragA.y += fragA.vy * dt;
+        fragB.x += fragB.vx * dt; fragB.y += fragB.vy * dt;
+
+        const b = clamp(t / 0.7, 0, 1);
+        burst.setAttribute("r", (b * 165).toFixed(0));
+        burst.setAttribute("opacity", (0.9 * (1 - b)).toFixed(3));
+
+        const q = clamp(t / 0.6, 0, 1);
+        pop.setAttribute("opacity", q.toFixed(3));
+        pop.setAttribute("y", (146 - 36 * easeOut(q)).toFixed(0));
+
+        if(t >= T_SPLIT){
+          state = "done";
+          setMsg("Samalla vapautui kolme neutronia ja runsaasti energiaa.");
+        }
+      }
+      labA.setAttribute("transform",
+        "translate(" + fragA.x.toFixed(1) + "," + (fragA.y + R_BA + 34).toFixed(1) + ")");
+      labB.setAttribute("transform",
+        "translate(" + fragB.x.toFixed(1) + "," + (fragB.y + R_KR + 34).toFixed(1) + ")");
+    }
+
+    for(const n of nucleons){
+      if(n.blend < 1) n.blend = clamp(n.blend + dt / (n.blendDur || 0.4), 0, 1);
+
+      if(n.free){
+        n.x += n.vx * dt; n.y += n.vy * dt;
+        n.el.setAttribute("cx", n.x.toFixed(1));
+        n.el.setAttribute("cy", n.y.toFixed(1));
+        if(n.x < 16 || n.x > 944 || n.y < 46 || n.y > 400) n.el.setAttribute("opacity", "0");
+        continue;
+      }
+      if(n === incoming && (state === "idle" || state === "fly")) continue;
+
+      let tx, ty;
+      if(n.frag === 0){      tx = fragA.x + n.lx; ty = fragA.y + n.ly; }
+      else if(n.frag === 1){ tx = fragB.x + n.lx; ty = fragB.y + n.ly; }
+      else { const d = deform(n.bx, n.by, e); tx = CX + d.x; ty = CY + d.y; }
+
+      if(n.blend < 1){
+        const k = easeOut(n.blend);
+        n.x = lerp(n.fromX, tx, k); n.y = lerp(n.fromY, ty, k);
+      }else{ n.x = tx; n.y = ty; }
+      n.el.setAttribute("cx", n.x.toFixed(1));
+      n.el.setAttribute("cy", n.y.toFixed(1));
+    }
+  }
+
+  $("v1Fire").addEventListener("click", fire);
+  $("v1Reset").addEventListener("click", reset);
+
+  return { step, reset };
+})();
+
+/* ==================== 2 · KETJUREAKTIO ==================== */
+
+const V2 = (() => {
+  const X0 = 40, Y0 = 62, W = 620, H = 326, PAD = 18;
+  const BX0 = X0 + 5, BX1 = X0 + W - 5, BY0 = Y0 + 5, BY1 = Y0 + H - 5;
+  const R235 = 9, R238 = 10, RN = 3.6;
+  const V_NEUTRON = 118, MAX_NEUTRONS = 400;
+
+  const gN = $("v2Nuclei"), gF = $("v2Frag"), gP = $("v2Neut"), gX = $("v2Flash");
+
+  let nuclei = [], neutrons = [], frags = [], flashes = [];
+  let fissions = 0, wasRunning = false;
+
+  const counts = () => ({ a: parseInt($("v2A").value, 10), b: parseInt($("v2B").value, 10) });
+  const clear = g => { while(g.firstChild) g.removeChild(g.firstChild); };
+
+  function build(){
+    [gN, gF, gP, gX].forEach(clear);
+    nuclei = []; neutrons = []; frags = []; flashes = [];
+    fissions = 0; wasRunning = false;
+
+    const { a, b } = counts();
+    $("v2AOut").textContent = a;
+    $("v2BOut").textContent = b;
+    const n = a + b;
+
+    if(n > 0){
+      const iw = W - 2 * PAD, ih = H - 2 * PAD;
+      const cols = Math.max(1, Math.round(Math.sqrt(n * iw / ih)));
+      const rows = Math.ceil(n / cols);
+      const cw = iw / cols, ch = ih / rows;
+      const jit = Math.min(cw, ch) * 0.26;
+      const rnd = rngFrom(1000 + a * 7919 + b * 104729);
+
+      const kinds = [];
+      for(let i = 0; i < a; i++) kinds.push("A");
+      for(let i = 0; i < b; i++) kinds.push("B");
+      for(let i = kinds.length - 1; i > 0; i--){
+        const j = Math.floor(rnd() * (i + 1));
+        [kinds[i], kinds[j]] = [kinds[j], kinds[i]];
+      }
+
+      for(let i = 0; i < n; i++){
+        const cx = X0 + PAD + (i % cols + 0.5) * cw + (rnd() - 0.5) * jit;
+        const cy = Y0 + PAD + (Math.floor(i / cols) + 0.5) * ch + (rnd() - 0.5) * jit;
+        const kind = kinds[i];
+        const r = kind === "A" ? R235 : R238;
+        const el = mk("circle", { cx: cx.toFixed(1), cy: cy.toFixed(1), r,
+                                  fill: kind === "A" ? "var(--blue)" : "var(--grey)",
+                                  stroke: "#fff", "stroke-width": 1.2 });
+        gN.appendChild(el);
+        nuclei.push({ x: cx, y: cy, r, kind, el, alive: true });
+      }
+    }
+    $("v2Fis").textContent = "0";
+    setMsg("Ammu neutroni. Vain ²³⁵U halkeaa — ²³⁸U sieppaa neutronin.");
+  }
+
+  function addNeutron(x, y, vx, vy){
+    if(neutrons.length >= MAX_NEUTRONS) return;
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: RN, fill: "var(--ink)" });
+    gP.appendChild(el);
+    neutrons.push({ x, y, vx, vy, el });
+  }
+
+  function addFrag(x, y, a, speed, color, r){
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r, fill: color, opacity: 0.95 });
+    gF.appendChild(el);
+    frags.push({ x, y, vx: Math.cos(a) * speed, vy: Math.sin(a) * speed, el, life: 0, max: 1.4 });
+  }
+
+  function addFlash(x, y){
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 4,
+                              fill: "none", stroke: "var(--yellow)", "stroke-width": 2.4 });
+    gX.appendChild(el);
+    flashes.push({ el, life: 0, max: 0.5 });
+  }
+
+  function fission(nu){
+    nu.alive = false;
+    nu.el.setAttribute("opacity", "0");
+    fissions++;
+    addFlash(nu.x, nu.y);
+    const a = Math.random() * Math.PI * 2;
+    addFrag(nu.x, nu.y, a, 49, "var(--red)", 6);
+    addFrag(nu.x, nu.y, a + Math.PI, 74, "var(--orange)", 5);
+    const emitted = Math.random() < 0.5 ? 2 : 3;
+    for(let i = 0; i < emitted; i++){
+      const ang = Math.random() * Math.PI * 2;
+      const v = V_NEUTRON * (0.8 + Math.random() * 0.45);
+      addNeutron(nu.x, nu.y, Math.cos(ang) * v, Math.sin(ang) * v);
+    }
+  }
+
+  function absorb(nu){
+    nu.alive = false;
+    nu.el.setAttribute("fill", "#6E6A63");
+    nu.el.setAttribute("stroke", "var(--ink)");
+    nu.el.setAttribute("stroke-dasharray", "2.5 2.5");
+  }
+
+  function fire(){
+    const targets = nuclei.filter(n => n.alive && n.kind === "A");
+    const y = Y0 + H / 2 + (Math.random() - 0.5) * H * 0.5;
+    let vx = V_NEUTRON, vy = (Math.random() - 0.5) * 30;
+    if(targets.length){
+      const tg = targets[Math.floor(Math.random() * targets.length)];
+      const a = Math.atan2(tg.y - y, tg.x - BX0) + (Math.random() - 0.5) * 0.05;
+      vx = Math.cos(a) * V_NEUTRON; vy = Math.sin(a) * V_NEUTRON;
+    }
+    addNeutron(BX0 + 2, y, vx, vy);
+    wasRunning = true;
+    setMsg("Ketjureaktio käynnissä: jokainen halkeaminen vapauttaa 2–3 neutronia.");
+  }
+
+  function step(dt){
+    for(let i = neutrons.length - 1; i >= 0; i--){
+      const p = neutrons[i];
+      p.x += p.vx * dt; p.y += p.vy * dt;
+
+      if(p.x < X0 - 14 || p.x > X0 + W + 14 || p.y < Y0 - 14 || p.y > Y0 + H + 14){
+        gP.removeChild(p.el); neutrons.splice(i, 1); continue;
+      }
+
+      let hit = null;
+      for(const nu of nuclei){
+        if(!nu.alive) continue;
+        const dx = p.x - nu.x, dy = p.y - nu.y;
+        if(dx * dx + dy * dy < (nu.r + RN) * (nu.r + RN)){ hit = nu; break; }
+      }
+      if(hit){
+        gP.removeChild(p.el); neutrons.splice(i, 1);
+        if(hit.kind === "A") fission(hit); else absorb(hit);
+        continue;
+      }
+      p.el.setAttribute("cx", p.x.toFixed(1));
+      p.el.setAttribute("cy", p.y.toFixed(1));
+    }
+
+    for(let i = frags.length - 1; i >= 0; i--){
+      const f = frags[i];
+      f.life += dt;
+      f.x += f.vx * dt; f.y += f.vy * dt;
+      f.vx *= 0.985; f.vy *= 0.985;
+      if(f.life >= f.max){ gF.removeChild(f.el); frags.splice(i, 1); continue; }
+      f.el.setAttribute("cx", f.x.toFixed(1));
+      f.el.setAttribute("cy", f.y.toFixed(1));
+      f.el.setAttribute("opacity", (0.95 * (1 - f.life / f.max)).toFixed(3));
+    }
+
+    for(let i = flashes.length - 1; i >= 0; i--){
+      const f = flashes[i];
+      f.life += dt;
+      if(f.life >= f.max){ gX.removeChild(f.el); flashes.splice(i, 1); continue; }
+      const k = f.life / f.max;
+      f.el.setAttribute("r", (4 + k * 24).toFixed(1));
+      f.el.setAttribute("opacity", (1 - k).toFixed(3));
+    }
+
+    $("v2Fis").textContent = fissions;
+
+    if(wasRunning && neutrons.length === 0){
+      wasRunning = false;
+      const left = nuclei.filter(n => n.alive && n.kind === "A").length;
+      if(fissions === 0)      setMsg("Ketju ei lähtenyt käyntiin. Kokeile uudelleen.");
+      else if(left === 0)     setMsg("Koko polttoaine haljennut.");
+      else                    setMsg("Ketjureaktio sammui: neutronit karkasivat tai ²³⁸U sieppasi ne.");
+    }
+  }
+
+  ["v2A", "v2B"].forEach(id => $(id).addEventListener("input", build));
+  $("v2Fire").addEventListener("click", fire);
+  $("v2Reset").addEventListener("click", build);
+
+  return { step, reset: build };
+})();
+
+/* ==================== 3 · YDINREAKTORI ==================== */
+
+const V3 = (() => {
+  const BX0 = 46, BX1 = 564, BY0 = 76, BY1 = 374;
+  const FX0 = 57, FW = 497, NFUEL = 7, STEP = FW / NFUEL;
+  const FUEL_W = 23, FUEL_Y0 = 179, FUEL_Y1 = 364;
+  const ROD_W = 30, ROD_TOP = 74;
+  const ROD_PARK = FUEL_Y0 - ROD_TOP;
+  const ROD_TRAVEL = FUEL_Y1 - FUEL_Y0;
+
+  const RN = 3.2, V_NEUTRON = 105, MAX_NEUTRONS = 260;
+  const FISSION_RATE = 6.5;     // 1/s polttoaineessa
+  const ABSORB_RATE  = 14;      // 1/s hitaalle neutronille säätösauvassa
+  const FAST_ABSORB  = 0.12;    // boori sieppaa nopeita huonosti (1/v-laki)
+  const MFP = 22;               // vapaa matka törmäysten välillä
+  const N_MOD = 2;              // törmäykset hidastimessa ennen hidastumista
+  const SOURCE_EVERY = 0.6;
+  const NOMINAL = 75;           // vertailuteho, fissiota sekunnissa
+
+  const gFuel = $("v3Fuel"), gRods = $("v3Rods"),
+        gNeut = $("v3Neut"), gFlash = $("v3Flash");
+
+  const fuel = [], rods = [];
+
+  for(let i = 0; i < NFUEL; i++){
+    const cx = FX0 + STEP * (i + 0.5);
+    gFuel.appendChild(mk("rect", { x: (cx - FUEL_W / 2).toFixed(1), y: FUEL_Y0, width: FUEL_W,
+                                   height: FUEL_Y1 - FUEL_Y0, rx: 6, fill: "var(--blue)" }));
+    for(let y = FUEL_Y0 + 13; y < FUEL_Y1 - 6; y += 18){
+      gFuel.appendChild(mk("circle", { cx: cx.toFixed(1), cy: y, r: 4.6, fill: "#fff", opacity: 0.22 }));
+    }
+    fuel.push({ x0: cx - FUEL_W / 2, x1: cx + FUEL_W / 2 });
+  }
+
+  for(let i = 0; i < NFUEL - 1; i++){
+    const cx = FX0 + STEP * (i + 1);
+    const el = mk("rect", { x: (cx - ROD_W / 2).toFixed(1), y: ROD_TOP, width: ROD_W,
+                            height: ROD_PARK, rx: 5, fill: "var(--rod)" });
+    gRods.appendChild(el);
+    rods.push({ x0: cx - ROD_W / 2, x1: cx + ROD_W / 2, el, bottom: ROD_TOP + ROD_PARK });
+  }
+
+  let neutrons = [], flashes = [];
+  let running = false, capped = false;
+  let fisWindow = 0, sampleT = 0, sourceT = 0, labelT = 0;
+  let rateS = 0, rateSlow = 0;
+  const history = [];
+  const HIST = 100, SAMPLE = 0.25;
+
+  const insertion = () => parseInt($("v3Rod").value, 10) / 100;
+
+  function drawRods(){
+    const ins = insertion();
+    const h = ROD_PARK + ins * ROD_TRAVEL;
+    rods.forEach(r => { r.el.setAttribute("height", h.toFixed(1)); r.bottom = ROD_TOP + h; });
+    $("v3RodOut").textContent = Math.round(ins * 100) + " %";
+  }
+
+  function addNeutron(x, y, a){
+    if(neutrons.length >= MAX_NEUTRONS){ capped = true; return; }
+    const v = V_NEUTRON * (0.85 + Math.random() * 0.35);
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: RN - 0.5, fill: "var(--orange)" });
+    gNeut.appendChild(el);
+    neutrons.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, el, fast: true, scat: 0 });
+  }
+
+  function addFlash(x, y){
+    if(flashes.length > 35) return;
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 4,
+                              fill: "none", stroke: "var(--yellow)", "stroke-width": 2.2 });
+    gFlash.appendChild(el);
+    flashes.push({ el, life: 0, max: 0.38 });
+  }
+
+  const inFuel = x => fuel.some(f => x > f.x0 && x < f.x1);
+  const inRod  = (x, y) => rods.some(r => x > r.x0 && x < r.x1 && y < r.bottom);
+
+  function setState(word, sub, color){
+    const el = $("v3State");
+    typeset(el, word);
+    el.style.fill = color;
+    typeset($("v3Sub"), sub);
+  }
+
+  function drawSpark(){
+    if(history.length < 2){ $("v3Spark").setAttribute("points", ""); return; }
+    let max = 0;
+    for(const v of history) if(v > max) max = v;
+    const scale = Math.max(8, max);
+    const x0 = 604, x1 = 916, yTop = 239, yBot = 326;
+    let pts = "";
+    for(let i = 0; i < history.length; i++){
+      const idx = i + (HIST - history.length);
+      const x = x0 + (idx / (HIST - 1)) * (x1 - x0);
+      const y = yBot - clamp(history[i] / scale, 0, 1) * (yBot - yTop);
+      pts += x.toFixed(1) + "," + y.toFixed(1) + " ";
+    }
+    $("v3Spark").setAttribute("points", pts.trim());
+  }
+
+  function step(dt){
+    drawRods();
+    let fisFrame = 0;
+
+    if(running){
+      sourceT += dt;
+      if(rateS < 2.5 && sourceT >= SOURCE_EVERY){
+        sourceT = 0;
+        addNeutron(FX0 + Math.random() * FW,
+                   FUEL_Y0 + Math.random() * (FUEL_Y1 - FUEL_Y0),
+                   Math.random() * Math.PI * 2);
+      }
+
+      const pFis  = 1 - Math.exp(-FISSION_RATE * dt);
+      const pAbs  = 1 - Math.exp(-ABSORB_RATE * dt);
+      const pAbsF = 1 - Math.exp(-ABSORB_RATE * FAST_ABSORB * dt);
+      const pScat = 1 - Math.exp(-(V_NEUTRON / MFP) * dt);
+      const born = [];
+
+      for(let i = neutrons.length - 1; i >= 0; i--){
+        const p = neutrons[i];
+        p.x += p.vx * dt; p.y += p.vy * dt;
+
+        if(p.x < BX0 || p.x > BX1 || p.y < BY0 || p.y > BY1){
+          gNeut.removeChild(p.el); neutrons.splice(i, 1); continue;
+        }
+        if(inRod(p.x, p.y) && Math.random() < (p.fast ? pAbsF : pAbs)){
+          gNeut.removeChild(p.el); neutrons.splice(i, 1); continue;
+        }
+        if(!p.fast && p.y > FUEL_Y0 && p.y < FUEL_Y1 && inFuel(p.x) && Math.random() < pFis){
+          gNeut.removeChild(p.el); neutrons.splice(i, 1);
+          fisWindow++; fisFrame++;
+          addFlash(p.x, p.y);
+          const emitted = Math.random() < 0.5 ? 2 : 3;
+          for(let k = 0; k < emitted; k++) born.push({ x: p.x, y: p.y });
+          continue;
+        }
+
+        /* törmäys satunnaistaa suunnan; hidastimessa se myös hidastaa neutronin */
+        if(Math.random() < pScat){
+          const a = Math.random() * Math.PI * 2;
+          const v = Math.hypot(p.vx, p.vy);
+          p.vx = Math.cos(a) * v; p.vy = Math.sin(a) * v;
+          if(p.fast && !inFuel(p.x) && !inRod(p.x, p.y) && ++p.scat >= N_MOD){
+            p.fast = false;
+            p.el.setAttribute("fill", "var(--ink)");
+            p.el.setAttribute("r", RN);
+          }
+        }
+
+        p.el.setAttribute("cx", p.x.toFixed(1));
+        p.el.setAttribute("cy", p.y.toFixed(1));
+      }
+
+      for(const b of born) addNeutron(b.x, b.y, Math.random() * Math.PI * 2);
+
+      sampleT += dt;
+      if(sampleT >= SAMPLE){
+        history.push(fisWindow / sampleT);
+        fisWindow = 0; sampleT = 0;
+        while(history.length > HIST) history.shift();
+        drawSpark();
+      }
+    }
+
+    const inst = fisFrame / Math.max(dt, 1e-4);
+    rateS    += (inst  - rateS)    * clamp(dt / 0.45, 0, 1);
+    rateSlow += (rateS - rateSlow) * clamp(dt / 2.2, 0, 1);
+
+    for(let i = flashes.length - 1; i >= 0; i--){
+      const f = flashes[i];
+      f.life += dt;
+      if(f.life >= f.max){ gFlash.removeChild(f.el); flashes.splice(i, 1); continue; }
+      const k = f.life / f.max;
+      f.el.setAttribute("r", (4 + k * 17).toFixed(1));
+      f.el.setAttribute("opacity", (1 - k).toFixed(3));
+    }
+
+    const rel = rateS / NOMINAL;
+    $("v3Bar").setAttribute("width", (clamp(rel / 1.6, 0, 1) * 320).toFixed(1));
+    $("v3Bar").setAttribute("fill", rel > 1.25 ? "var(--red)" : "var(--orange)");
+
+    labelT += dt;
+    if(labelT >= 0.4){
+      labelT = 0;
+      if(!running)
+        setState("Sammutettu", "reaktori ei ole käynnissä", "var(--muted)");
+      else if(neutrons.length === 0)
+        setState("Sammunut", "ketjureaktio loppui", "var(--muted)");
+      else if(neutrons.length >= MAX_NEUTRONS)
+        setState("Ylikriittinen", "teho karkaa käsistä", "var(--red)");
+      else if(rateS > rateSlow * 1.18 && rateS > 2)
+        setState("Ylikriittinen", "teho kasvaa", "var(--red)");
+      else if(rateS < rateSlow * 0.82)
+        setState("Alikriittinen", "teho laskee", "var(--muted)");
+      else if(rateS < 2.5)
+        setState("Alikriittinen", "reaktio hiipuu", "var(--muted)");
+      else
+        setState("Kriittinen", "teho pysyy vakiona", "var(--ok)");
+    }
+  }
+
+  function clearAll(){
+    while(gNeut.firstChild) gNeut.removeChild(gNeut.firstChild);
+    while(gFlash.firstChild) gFlash.removeChild(gFlash.firstChild);
+    neutrons = []; flashes = []; capped = false;
+    fisWindow = 0; sampleT = 0; sourceT = 0; labelT = 0;
+    rateS = 0; rateSlow = 0;
+    history.length = 0;
+    $("v3Spark").setAttribute("points", "");
+    $("v3Bar").setAttribute("width", "0");
+  }
+
+  function start(){
+    running = true;
+    $("v3Run").textContent = "Pysäytä";
+    for(let i = 0; i < 8; i++){
+      addNeutron(FX0 + Math.random() * FW,
+                 FUEL_Y0 + Math.random() * (FUEL_Y1 - FUEL_Y0),
+                 Math.random() * Math.PI * 2);
+    }
+    setMsg("Etsi säätösauvoille asento, jossa teho pysyy vakiona.");
+  }
+
+  function stop(){
+    running = false;
+    $("v3Run").textContent = "Käynnistä";
+    setMsg("Reaktori pysäytetty.");
+  }
+
+  function reset(){
+    running = false;
+    $("v3Run").textContent = "Käynnistä";
+    clearAll();
+    $("v3Rod").value = 52;
+    drawRods();
+    setState("Sammutettu", "reaktori ei ole käynnissä", "var(--muted)");
+    setMsg("Käynnistä reaktori ja säädä säätösauvojen syvyyttä.");
+  }
+
+  $("v3Run").addEventListener("click", () => running ? stop() : start());
+  $("v3Reset").addEventListener("click", reset);
+  $("v3Rod").addEventListener("input", drawRods);
+  $("v3Scram").addEventListener("click", () => {
+    $("v3Rod").value = 100;
+    drawRods();
+    setMsg("Hätäpysäytys: säätösauvat ajettiin kokonaan sisään.");
+  });
+
+  drawRods();
+
+  return { step, reset };
+})();
+
+/* ==================== VÄLILEHDET JA PÄÄSILMUKKA ==================== */
+
+const VIEWS = [
+  { view: $("view1"), ctrl: $("ctrl1"), tab: $("tab1"), mod: V1 },
+  { view: $("view2"), ctrl: $("ctrl2"), tab: $("tab2"), mod: V2 },
+  { view: $("view3"), ctrl: $("ctrl3"), tab: $("tab3"), mod: V3 }
+];
+
+let active = 0;
+
+function select(i){
+  active = i;
+  VIEWS.forEach((v, k) => {
+    v.view.style.display = k === i ? "" : "none";
+    v.ctrl.hidden = k !== i;
+    v.tab.setAttribute("aria-selected", k === i ? "true" : "false");
+  });
+  VIEWS[i].mod.reset();
+}
+
+VIEWS.forEach((v, i) => v.tab.addEventListener("click", () => select(i)));
+
+/* ladotaan kiinteät yläindeksit kerran */
+document.querySelectorAll(".scene text").forEach(el => typeset(el, el.textContent));
+document.querySelectorAll(".sim-sliderBox label").forEach(el => { el.innerHTML = supHTML(el.textContent); });
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  VIEWS[active].mod.step(dt);
+  requestAnimationFrame(frame);
+}
+
+select(0);
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
