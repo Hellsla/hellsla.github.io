@@ -36,13 +36,16 @@
   .frame{ fill:none; stroke:var(--line); stroke-width:1.4; }
 
   /* välilehdet kalvon oikeaan yläkulmaan */
+  /* mitat em-yksiköissä, jotta JS voi skaalata koko palkin kehyksen mukana */
   .sim-tabs{
-    position:absolute; right:30px; top:16px;
-    display:flex; gap:8px;
+    position:absolute; right:2.1em; top:1.1em;
+    display:flex; gap:.55em;
+    font-size:15px;
   }
   .sim-tabs .sim-btn{
-    font-size:clamp(12px,1.15vw,15px);
-    padding:5px 13px;
+    font-size:1em;
+    padding:.35em .9em;
+    border-width:1.5px;
     border-color:#D8D4CC;
     color:var(--muted);
   }
@@ -50,12 +53,22 @@
     background:var(--ink); border-color:var(--ink); color:#fff;
   }
 
-  .sim-controls{ gap:14px 22px; }
+  /* Sama skaalausperiaate kuin välilehdillä: mitat em-yksiköissä, jotta
+     ohjainrivi pysyy samassa suhteessa myös pienessä iframessa. Nämä
+     säännöt ohittavat teeman kiinteät px-arvot ja mobiilimediakyselyn. */
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.2em;
+  }
   .sim-controls[hidden]{ display:none; }
-  .sim-controls .sim-range{ width:min(170px,18vw); }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-sliderBox{ width:auto; gap:.6em; }
+  .sim-controls .sim-sliderBox label{ font-size:.94em; }
+  .sim-controls .sim-range{ width:9.5em; }
   .sim-controls .out{
     min-width:3ch; text-align:right; font-weight:700; color:var(--ink);
-    font-size:clamp(15px,1.6vw,20px); font-variant-numeric:tabular-nums;
+    font-size:.94em; font-variant-numeric:tabular-nums;
   }
   .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
   .sim-controls .sim-btn.danger{ border-color:var(--red); color:var(--red); }
@@ -89,13 +102,13 @@
 
 <!-- ============================ 1 · YKSI YDIN ============================ -->
 <g id="view1">
-  <text x="400" y="36" text-anchor="middle" class="eq" style="font-size:22px">²³⁵U + n  →  ¹⁴¹Ba + ⁹²Kr + 3 n</text>
+  <text x="40" y="38" class="eq" style="font-size:22px">²³⁵U + n  →  ¹⁴¹Ba + ⁹²Kr + 3 n</text>
 
   <g>
-    <circle cx="38" cy="30" r="7" fill="var(--red)"/>
-    <text x="52" y="35" class="note">protoni</text>
-    <circle cx="128" cy="30" r="7" fill="var(--slate)"/>
-    <text x="142" y="35" class="note">neutroni</text>
+    <circle cx="398" cy="368" r="6" fill="var(--red)"/>
+    <text x="410" y="373" class="note">protoni</text>
+    <circle cx="476" cy="368" r="6" fill="var(--slate)"/>
+    <text x="488" y="373" class="note">neutroni</text>
   </g>
 
   <circle id="v1Burst" cx="480" cy="238" r="0" fill="url(#burstGrad)" opacity="0"/>
@@ -149,8 +162,7 @@
 <g id="view3" style="display:none">
   <rect x="40" y="70" width="530" height="310" rx="10" fill="url(#water)"
         stroke="var(--ink)" stroke-width="3.4"/>
-  <text x="40" y="52" class="h">REAKTORISYDÄN</text>
-  <text x="570" y="52" text-anchor="end" class="note">vesi hidastaa neutronit</text>
+  <text x="40" y="52" class="h">REAKTORISYDÄN · VESI HIDASTAA NEUTRONIT</text>
 
   <g clip-path="url(#coreClip)">
     <g id="v3Fuel"></g>
@@ -996,6 +1008,23 @@ VIEWS.forEach((v, i) => v.tab.addEventListener("click", () => select(i)));
 /* ladotaan kiinteät yläindeksit kerran */
 document.querySelectorAll(".scene text").forEach(el => typeset(el, el.textContent));
 document.querySelectorAll(".sim-sliderBox label").forEach(el => { el.innerHTML = supHTML(el.textContent); });
+
+/* Välilehdet ovat HTML-elementtejä SVG:n päällä, joten ne eivät skaalaudu
+   viewBoxin mukana itsestään. Sidotaan niiden koko kehyksen leveyteen, jotta
+   ne pysyvät samassa suhteessa myös pienessä iframessa. */
+const wrapEl = document.querySelector(".sim-wrap");
+const tabsEl = document.querySelector(".sim-tabs");
+const ctrlEls = document.querySelectorAll(".sim-controls");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(!w) return;
+  const k = w / 960;
+  tabsEl.style.fontSize = (k * 15).toFixed(2) + "px";
+  ctrlEls.forEach(el => { el.style.fontSize = (k * 18).toFixed(2) + "px"; });
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
 
 let last = performance.now();
 function frame(now){
