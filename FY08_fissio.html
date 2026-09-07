@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ydinfissio – halkeaminen, ketjureaktio ja ydinreaktori</title>
+<meta name="description" content="Interaktiivinen simulaatio ydinfissiosta: yhden uraani-235-ytimen halkeaminen, ketjureaktio ja ydinreaktorin säätösauvat. Lukion fysiikka FY08.">
+
+<style>
+:root{
+  --paper:#FFFFFF;
+  --ink:#2C2B29;
+  --muted:#6B675F;
+  --faint:#9A958C;
+  --line:#DDDAD4;
+  --wash:#F6F5F3;
+
+  --u235:#2E86A6;
+  --u238:#9A958C;
+  --proton:#D84A62;
+  --neutron:#6E7A82;
+  --free:#2C2B29;
+  --fragA:#D84A62;
+  --fragB:#F28C28;
+  --energy:#E8A400;
+  --rod:#4A5A63;
+  --warn:#D84A62;
+  --ok:#2E7D5B;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  background:var(--paper);
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--ink);
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.wrap{
+  width:100%;
+  max-width:1280px;
+  padding:10px 12px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* ---------- yläpalkki ja välilehdet ---------- */
+.topbar{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px 16px;
+}
+
+h1{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:.01em;
+  margin:0;
+}
+
+h1 span{
+  font-weight:400;
+  color:var(--faint);
+  font-size:17px;
+  margin-left:10px;
+}
+
+.tabs{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.tab{
+  appearance:none;
+  font:inherit;
+  font-size:16px;
+  background:var(--paper);
+  color:var(--muted);
+  border:1.8px solid var(--line);
+  border-radius:999px;
+  padding:7px 16px;
+  cursor:pointer;
+}
+
+.tab:hover{background:var(--wash)}
+.tab:focus-visible{outline:3px solid var(--u235);outline-offset:2px}
+
+.tab[aria-selected="true"]{
+  background:var(--ink);
+  border-color:var(--ink);
+  color:#fff;
+}
+
+/* ---------- näyttämö ---------- */
+.stagebox{width:100%}
+
+svg.stage{
+  width:100%;
+  height:auto;
+  display:block;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+
+.stage text{font-family:Arial, Helvetica, sans-serif}
+
+.h    {font-size:15px;fill:var(--faint);letter-spacing:.13em}
+.lbl  {font-size:18px;fill:var(--muted)}
+.val  {font-size:20px;fill:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+.big  {font-size:36px;fill:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+.eq   {font-size:24px;fill:var(--ink)}
+.note {font-size:15px;fill:var(--faint)}
+.tick {font-size:13px;fill:var(--faint);font-variant-numeric:tabular-nums}
+
+.frame{fill:none;stroke:var(--line);stroke-width:1.6}
+.axis {stroke:var(--faint);stroke-width:1.4}
+
+/* ---------- tilarivi ---------- */
+.status{
+  min-height:44px;
+  margin:0;
+  font-size:17px;
+  line-height:1.4;
+  color:var(--muted);
+  border-left:4px solid var(--u235);
+  padding:7px 0 7px 13px;
+}
+
+.status b{color:var(--ink);font-weight:700}
+
+/* ---------- ohjaimet ---------- */
+.controls{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px 14px;
+}
+
+.controls[hidden]{display:none}
+
+button.act{
+  appearance:none;
+  background:var(--paper);
+  color:var(--ink);
+  border:1.8px solid var(--ink);
+  border-radius:999px;
+  font:inherit;
+  font-size:17px;
+  padding:9px 18px;
+  cursor:pointer;
+}
+
+button.act:hover:not(:disabled){background:var(--wash)}
+button.act:focus-visible{outline:3px solid var(--u235);outline-offset:2px}
+button.act:disabled{opacity:.34;cursor:default}
+button.act:active:not(:disabled){transform:translateY(1px)}
+
+button.act.primary{background:var(--ink);color:#fff}
+button.act.primary:hover:not(:disabled){background:#000}
+button.act.danger{border-color:var(--warn);color:var(--warn)}
+button.act.danger:hover:not(:disabled){background:#FDF2F4}
+
+.field{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:16px;
+  color:var(--muted);
+  border:1.8px solid var(--line);
+  border-radius:999px;
+  padding:6px 14px;
+}
+
+.field .out{
+  min-width:6ch;
+  text-align:right;
+  color:var(--ink);
+  font-weight:700;
+  font-variant-numeric:tabular-nums;
+}
+
+input[type=range]{width:150px;accent-color:var(--u235);cursor:pointer}
+input[type=checkbox]{width:18px;height:18px;accent-color:var(--u235);cursor:pointer}
+label{cursor:pointer}
+
+.legend-note{
+  font-size:14px;
+  color:var(--faint);
+  text-align:center;
+  margin:0;
+}
+
+@media (max-width:820px){
+  h1{font-size:19px}
+  h1 span{display:none}
+  .tab{font-size:14px;padding:6px 12px}
+  button.act{font-size:15px;padding:8px 14px}
+  .field{font-size:14px;padding:5px 11px}
+  input[type=range]{width:108px}
+  .status{font-size:15px}
+
+  /* teksti kutistuisi lukukelvottomaksi, joten näyttämöä vieritetään sivusuunnassa */
+  .stagebox{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  svg.stage{min-width:720px}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="topbar">
+    <h1>Ydinfissio <span>uraanin halkeaminen, ketjureaktio ja ydinreaktori</span></h1>
+    <div class="tabs" role="tablist" aria-label="Simulaation osat">
+      <button class="tab" role="tab" id="tab1" aria-controls="view1" aria-selected="true">1 · Yksi ydin</button>
+      <button class="tab" role="tab" id="tab2" aria-controls="view2" aria-selected="false">2 · Ketjureaktio</button>
+      <button class="tab" role="tab" id="tab3" aria-controls="view3" aria-selected="false">3 · Ydinreaktori</button>
+    </div>
+  </header>
+
+  <div class="stagebox">
+  <svg class="stage" viewBox="0 0 1280 720" role="img"
+       aria-label="Ydinfission simulaatio: yhden ytimen halkeaminen, ketjureaktio ja ydinreaktori">
+
+  <defs>
+    <radialGradient id="burstGrad">
+      <stop offset="0%"   stop-color="#FFD95A" stop-opacity="0.85"/>
+      <stop offset="60%"  stop-color="#F28C28" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#F28C28" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="waterHatch" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#F2F7FA"/>
+      <circle cx="4" cy="4" r="1.3" fill="#CFE2EC"/>
+      <circle cx="12" cy="11" r="1.3" fill="#CFE2EC"/>
+    </pattern>
+
+    <clipPath id="graphClip"><rect x="738" y="408" width="516" height="214"/></clipPath>
+    <clipPath id="fieldClip"><rect x="60" y="96" width="840" height="552" rx="10"/></clipPath>
+    <clipPath id="coreClip"><rect x="60" y="96" width="640" height="552" rx="10"/></clipPath>
+  </defs>
+
+  <!-- ============================================================= -->
+  <!-- NÄKYMÄ 1: YKSI YDIN                                           -->
+  <!-- ============================================================= -->
+  <g id="view1">
+
+    <!-- erotinviiva -->
+    <line x1="722" y1="86" x2="722" y2="656" stroke="var(--line)" stroke-width="1.6"/>
+
+    <!-- energiapurske ytimen kohdalla -->
+    <circle id="v1Burst" cx="400" cy="330" r="0" fill="url(#burstGrad)" opacity="0"/>
+
+    <!-- nukleonit (luodaan skriptissä) -->
+    <g id="v1Nucleons"></g>
+
+    <!-- lentävä neutroni -->
+    <g id="v1FreeNeutrons"></g>
+
+    <!-- nimiöt -->
+    <g id="v1LabMain">
+      <text x="400" y="470" text-anchor="middle" class="val" style="font-size:26px">²³⁵U</text>
+      <text x="400" y="494" text-anchor="middle" class="note">uraani-235 · 92 protonia, 143 neutronia</text>
+    </g>
+    <g id="v1LabA" opacity="0">
+      <text x="0" y="0" text-anchor="middle" class="val" style="font-size:24px;fill:var(--fragA)">¹⁴¹Ba</text>
+      <text x="0" y="22" text-anchor="middle" class="note">barium-141</text>
+    </g>
+    <g id="v1LabB" opacity="0">
+      <text x="0" y="0" text-anchor="middle" class="val" style="font-size:24px;fill:var(--fragB)">⁹²Kr</text>
+      <text x="0" y="22" text-anchor="middle" class="note">krypton-92</text>
+    </g>
+
+    <!-- energiateksti, joka nousee halkeamishetkellä -->
+    <text id="v1EnergyPop" x="400" y="240" text-anchor="middle" class="big"
+          style="fill:var(--energy)" opacity="0">≈ 200 MeV</text>
+
+    <!-- selite -->
+    <g>
+      <circle cx="78" cy="634" r="8" fill="var(--proton)"/>
+      <text x="94" y="640" class="note">protoni</text>
+      <circle cx="196" cy="634" r="8" fill="var(--neutron)"/>
+      <text x="212" y="640" class="note">neutroni ytimessä</text>
+      <circle cx="382" cy="634" r="8" fill="var(--free)"/>
+      <text x="398" y="640" class="note">vapaa neutroni</text>
+    </g>
+
+    <!-- ---------------- oikea paneeli ---------------- -->
+    <text x="755" y="108" class="h">REAKTIOYHTÄLÖ</text>
+    <text x="755" y="154" class="eq">²³⁵U + n  →  ²³⁶U*</text>
+    <text x="755" y="196" class="eq">²³⁶U*  →  ¹⁴¹Ba + ⁹²Kr + 3 n</text>
+    <text x="755" y="228" class="note">uraani-235 + neutroni → barium-141 + krypton-92 + 3 neutronia</text>
+
+    <g id="v1Energy" opacity="0.28">
+      <text x="755" y="296" class="h">VAPAUTUVA ENERGIA</text>
+      <text x="755" y="348" class="big">≈ 200 MeV</text>
+      <text x="755" y="384" class="lbl">≈ 3,2 · 10⁻¹¹ J yhtä halkeamista kohti</text>
+      <text x="755" y="416" class="note">Massavaje Δm ≈ 0,215 u, ja E = Δm c².</text>
+
+      <text x="755" y="474" class="h">MIHIN ENERGIA MENEE</text>
+      <g id="v1Bar">
+        <rect x="755" y="490" width="386.4" height="22" fill="var(--fragA)"/>
+        <rect x="1141.4" y="490" width="11.5"  height="22" fill="var(--free)"/>
+        <rect x="1152.9" y="490" width="16.1"  height="22" fill="var(--energy)"/>
+        <rect x="1169.0" y="490" width="46.0"  height="22" fill="var(--u235)"/>
+        <rect x="755" y="490" width="460" height="22" class="frame"/>
+      </g>
+      <g>
+        <rect x="755" y="536" width="12" height="12" fill="var(--fragA)"/>
+        <text x="775" y="547" class="note">168 MeV · halkeamistuotteiden liike-energia</text>
+        <rect x="755" y="562" width="12" height="12" fill="var(--free)"/>
+        <text x="775" y="573" class="note">5 MeV · vapaiden neutronien liike-energia</text>
+        <rect x="755" y="588" width="12" height="12" fill="var(--energy)"/>
+        <text x="775" y="599" class="note">7 MeV · välitön gammasäteily</text>
+        <rect x="755" y="614" width="12" height="12" fill="var(--u235)"/>
+        <text x="775" y="625" class="note">20 MeV · tuotteiden radioaktiivinen hajoaminen</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- NÄKYMÄ 2: KETJUREAKTIO                                        -->
+  <!-- ============================================================= -->
+  <g id="view2" style="display:none">
+
+    <rect x="60" y="96" width="840" height="552" rx="10" fill="#FCFCFB" stroke="var(--line)"
+          stroke-width="1.6" stroke-dasharray="7 7"/>
+    <rect id="v2Vessel" x="60" y="96" width="840" height="552" rx="10" fill="none"
+          stroke="var(--ink)" stroke-width="5" opacity="0"/>
+
+    <g clip-path="url(#fieldClip)">
+      <g id="v2Nuclei"></g>
+      <g id="v2Fragments"></g>
+      <g id="v2Neutrons"></g>
+      <g id="v2Flashes"></g>
+    </g>
+
+    <text x="72" y="82" class="h">POLTTOAINEKENTTÄ</text>
+    <text id="v2VesselNote" x="900" y="82" text-anchor="end" class="note" opacity="0">suojakuori päällä: neutronit kimpoavat takaisin</text>
+
+    <!-- paneeli -->
+    <line x1="915" y1="86" x2="915" y2="656" stroke="var(--line)" stroke-width="1.6"/>
+    <text x="940" y="108" class="h">TILANNE</text>
+
+    <text x="940"  y="156" class="lbl">Fissioita</text>
+    <text id="v2Fis"  x="1250" y="156" text-anchor="end" class="val">0</text>
+
+    <text x="940"  y="196" class="lbl">Energiaa</text>
+    <text id="v2MeV"  x="1250" y="196" text-anchor="end" class="val">0 MeV</text>
+
+    <text x="940"  y="236" class="lbl">Energiaa</text>
+    <text id="v2J"    x="1250" y="236" text-anchor="end" class="val">0 J</text>
+
+    <text x="940"  y="276" class="lbl">²³⁵U jäljellä</text>
+    <text id="v2Left" x="1250" y="276" text-anchor="end" class="val">0</text>
+
+    <text x="940"  y="316" class="lbl">²³⁸U siepannut</text>
+    <text id="v2Abs"  x="1250" y="316" text-anchor="end" class="val">0</text>
+
+    <text x="940"  y="356" class="lbl">Neutroneja</text>
+    <text id="v2N"    x="1250" y="356" text-anchor="end" class="val">0</text>
+
+    <text x="940" y="424" class="h">SELITE</text>
+    <g>
+      <circle cx="950" cy="456" r="11" fill="var(--u235)"/>
+      <text x="972" y="462" class="note">²³⁵U · halkeaa hitaasta neutronista</text>
+      <circle cx="950" cy="492" r="12" fill="var(--u238)"/>
+      <text x="972" y="498" class="note">²³⁸U · sieppaa neutronin, ei halkea</text>
+      <circle cx="950" cy="528" r="6" fill="var(--free)"/>
+      <text x="972" y="534" class="note">vapaa neutroni</text>
+      <circle cx="946" cy="564" r="8" fill="var(--fragA)"/>
+      <circle cx="958" cy="564" r="7" fill="var(--fragB)"/>
+      <text x="972" y="570" class="note">halkeamistuotteet</text>
+    </g>
+    <text x="940" y="620" class="note">Ketjureaktio jatkuu, kun jokainen</text>
+    <text x="940" y="640" class="note">halkeaminen aiheuttaa uuden halkeamisen.</text>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- NÄKYMÄ 3: YDINREAKTORI                                        -->
+  <!-- ============================================================= -->
+  <g id="view3" style="display:none">
+
+    <!-- painesäiliö ja hidastin -->
+    <rect x="60" y="96" width="640" height="552" rx="12" fill="url(#waterHatch)"
+          stroke="var(--ink)" stroke-width="4"/>
+    <text x="72" y="82" class="h">REAKTORISYDÄN</text>
+    <text x="688" y="82" text-anchor="end" class="note">vesi toimii hidastimena ja jäähdytteenä</text>
+
+    <g clip-path="url(#coreClip)">
+      <g id="v3Fuel"></g>
+      <g id="v3Rods"></g>
+      <g id="v3Neutrons"></g>
+      <g id="v3Flashes"></g>
+    </g>
+
+    <!-- paneeli -->
+    <line x1="716" y1="86" x2="716" y2="656" stroke="var(--line)" stroke-width="1.6"/>
+    <text x="740" y="108" class="h">REAKTORIN TILA</text>
+
+    <text x="740"  y="146" class="lbl">Neutroneja sydämessä</text>
+    <text id="v3N"     x="1250" y="146" text-anchor="end" class="val">0</text>
+
+    <text x="740"  y="184" class="lbl">Fissioita sekunnissa</text>
+    <text id="v3Rate"  x="1250" y="184" text-anchor="end" class="val">0</text>
+
+    <text x="740"  y="222" class="lbl">Teho nimellistehosta</text>
+    <text id="v3Power" x="1250" y="222" text-anchor="end" class="val">0 %</text>
+
+    <text x="740"  y="260" class="lbl">Säätösauvojen syvyys</text>
+    <text id="v3Ins"   x="1250" y="260" text-anchor="end" class="val">60 %</text>
+
+    <text x="740"  y="298" class="lbl">Vapautunut energia</text>
+    <text id="v3E"     x="1250" y="298" text-anchor="end" class="val">0 J</text>
+
+    <rect x="740" y="318" width="510" height="14" rx="7" fill="var(--wash)"/>
+    <rect id="v3PowerBar" x="740" y="318" width="0" height="14" rx="7" fill="var(--fragB)"/>
+
+    <text id="v3State" x="740" y="374" class="big" style="font-size:27px">Reaktori sammutettu</text>
+
+    <text x="740" y="398" class="h">TEHO · FISSIOITA SEKUNNISSA</text>
+    <rect x="740" y="410" width="510" height="210" class="frame"/>
+    <g clip-path="url(#graphClip)">
+      <line id="v3NomLine" x1="744" x2="1246" y1="0" y2="0" stroke="var(--ok)"
+            stroke-width="1.6" stroke-dasharray="6 6" opacity="0"/>
+      <polyline id="v3Graph" fill="none" stroke="var(--fragB)" stroke-width="2.4"
+                stroke-linejoin="round" stroke-linecap="round" points=""/>
+    </g>
+    <text id="v3GraphMax" x="746" y="428" class="tick">0</text>
+    <text x="746" y="614" class="tick">0</text>
+    <text id="v3NomLabel" x="1244" y="0" text-anchor="end" class="tick"
+          style="fill:var(--ok)" opacity="0">nimellisteho</text>
+    <text x="1244" y="638" text-anchor="end" class="tick">viimeiset 30 s</text>
+
+    <!-- selite -->
+    <g>
+      <rect x="740" y="652" width="14" height="14" rx="3" fill="var(--u235)"/>
+      <text x="762" y="664" class="note">polttoaine (²³⁵U)</text>
+      <rect x="926" y="652" width="14" height="14" rx="3" fill="var(--rod)"/>
+      <text x="948" y="664" class="note">säätösauva (boori)</text>
+      <circle cx="747" cy="690" r="4" fill="var(--fragB)"/>
+      <text x="762" y="695" class="note">nopea neutroni</text>
+      <circle cx="933" cy="690" r="5" fill="var(--free)"/>
+      <text x="948" y="695" class="note">hidas neutroni · vain tämä halkaisee ²³⁵U:n</text>
+    </g>
+  </g>
+
+  </svg>
+  </div>
+
+  <p class="status" id="status">Uraani-235 -ydin on paikallaan. Ammu hidas neutroni ytimeen ja katso, mitä tapahtuu.</p>
+
+  <!-- ---------------- ohjaimet ---------------- -->
+  <div class="controls" id="ctrl1">
+    <button class="act primary" id="v1Fire">Ammu neutroni</button>
+    <button class="act" id="v1Reset">Nollaa</button>
+    <div class="field">
+      <label for="v1Speed">Nopeus</label>
+      <input id="v1Speed" type="range" min="0.2" max="1.6" step="0.1" value="1">
+      <span class="out" id="v1SpeedOut">1,0×</span>
+    </div>
+  </div>
+
+  <div class="controls" id="ctrl2" hidden>
+    <div class="field">
+      <label for="v2U235">²³⁵U-ytimiä</label>
+      <input id="v2U235" type="range" min="0" max="120" step="1" value="45">
+      <span class="out" id="v2U235Out">45</span>
+    </div>
+    <div class="field">
+      <label for="v2U238">²³⁸U-ytimiä</label>
+      <input id="v2U238" type="range" min="0" max="120" step="1" value="0">
+      <span class="out" id="v2U238Out">0</span>
+    </div>
+    <div class="field">
+      <input id="v2Shell" type="checkbox">
+      <label for="v2Shell">Suojakuori</label>
+    </div>
+    <button class="act primary" id="v2Fire">Ammu neutroni</button>
+    <button class="act" id="v2Reset">Uusi kenttä</button>
+  </div>
+
+  <div class="controls" id="ctrl3" hidden>
+    <div class="field">
+      <label for="v3Rod">Säätösauvat</label>
+      <input id="v3Rod" type="range" min="0" max="100" step="1" value="60">
+      <span class="out" id="v3RodOut">60 %</span>
+    </div>
+    <button class="act primary" id="v3Run">Käynnistä</button>
+    <button class="act danger" id="v3Scram">Hätäpysäytys</button>
+    <button class="act" id="v3Reset">Nollaa</button>
+  </div>
+
+  <p class="legend-note" id="hint">Vinkki: säätösauvat ylhäällä = ketjureaktio kiihtyy, alhaalla = sammuu. Etsi asento, jossa teho pysyy vakiona.</p>
+
+</div>
+
+<script>
+(() => {
+"use strict";
+
+/* =================================================================
+   YHTEISET APUVÄLINEET
+   ================================================================= */
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+
+function mk(tag, attrs){
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+}
+
+/* siemenellinen satunnaisgeneraattori, jotta asettelu on toistettava */
+function rngFrom(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/* pilkku desimaalierottimena */
+const fmt = (n, d = 1) => n.toFixed(d).replace(".", ",");
+const int = n => Math.round(n).toLocaleString("fi-FI");
+
+const SUP = {"-":"⁻","0":"⁰","1":"¹","2":"²","3":"³","4":"⁴",
+             "5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹"};
+const sup = s => String(s).split("").map(c => SUP[c] || c).join("");
+
+const UNSUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5",
+               "⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-","⁺":"+"};
+const isSup = c => Object.prototype.hasOwnProperty.call(UNSUP, c);
+
+/* Arialista puuttuu osa yläindeksimerkeistä, joten ne ladotaan tspaneilla. */
+function typeset(el, str){
+  if(el.__typeset === str) return;
+  el.__typeset = str;
+  while(el.firstChild) el.removeChild(el.firstChild);
+
+  const runs = [];
+  for(const ch of str){
+    const s = isSup(ch);
+    const last = runs[runs.length - 1];
+    if(last && last.sup === s) last.text += s ? UNSUP[ch] : ch;
+    else runs.push({ sup: s, text: s ? UNSUP[ch] : ch });
+  }
+
+  let raised = false;
+  for(const run of runs){
+    const t = document.createElementNS(NS, "tspan");
+    if(run.sup){
+      t.setAttribute("font-size", "0.66em");
+      t.setAttribute("dy", "-0.52em");
+      raised = true;
+    }else if(raised){
+      t.setAttribute("dy", "0.34em");
+      raised = false;
+    }
+    t.textContent = run.text;
+    el.appendChild(t);
+  }
+}
+
+/* sama HTML-puolelle */
+const supHTML = s => s.replace(/[\u2070\u00b9\u00b2\u00b3\u2074-\u2079\u207a\u207b]+/g,
+  m => "<sup>" + Array.from(m).map(c => UNSUP[c]).join("") + "</sup>");
+
+/* 3,2 · 10⁻¹¹ */
+function sci(x, d = 1){
+  if(x === 0) return "0";
+  const e = Math.floor(Math.log10(Math.abs(x)));
+  const m = x / Math.pow(10, e);
+  return fmt(m, d) + " · 10" + sup(e);
+}
+
+const lerp  = (a, b, t) => a + (b - a) * t;
+const clamp = (v, a, b) => v < a ? a : (v > b ? b : v);
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+/* fissioenergia */
+const MEV_PER_FISSION = 200;
+const J_PER_MEV = 1.602176634e-13;
+
+/* tasainen pistejakauma ympyrään (auringonkukkakuvio + pieni satunnaisuus) */
+function packDisc(n, R, jitter, rnd){
+  const pts = [];
+  const ga = Math.PI * (3 - Math.sqrt(5));
+  for(let i = 0; i < n; i++){
+    const r = R * Math.sqrt((i + 0.5) / n);
+    const a = i * ga;
+    pts.push({
+      x: r * Math.cos(a) + (rnd() - 0.5) * jitter,
+      y: r * Math.sin(a) + (rnd() - 0.5) * jitter,
+      r0: r
+    });
+  }
+  return pts;
+}
+
+const statusEl = $("status");
+const hintEl   = $("hint");
+function setStatus(html){ statusEl.innerHTML = supHTML(html); }
+
+/* =================================================================
+   NÄKYMÄ 1 · YHDEN YTIMEN HALKEAMINEN
+   ================================================================= */
+
+const V1 = (() => {
+  const CX = 390, CY = 330, R = 88, NR = 5.2;
+  const N_TOTAL = 236;                 // ²³⁶U*
+  const N_P = 92, N_N = 144;           // protonit, neutronit (sieppauksen jälkeen)
+  const R_BA = R * Math.pow(141 / 236, 1 / 3);
+  const R_KR = R * Math.pow(92 / 236, 1 / 3);
+  const AXIS = -10 * Math.PI / 180;
+  const V_KR = 95, V_BA = -V_KR * 92 / 141;
+
+  const T_FLY = 0.85, T_EXCITE = 2.2, T_SPLIT = 2.0;
+
+  const gNuc  = $("v1Nucleons");
+  const gFree = $("v1FreeNeutrons");
+  const burst = $("v1Burst");
+  const pop   = $("v1EnergyPop");
+  const labM  = $("v1LabMain");
+  const labA  = $("v1LabA");
+  const labB  = $("v1LabB");
+  const panel = $("v1Energy");
+
+  const rnd  = rngFrom(20250907);
+  const base = packDisc(N_TOTAL, R, 3.4, rnd);
+
+  /* nukleonityypit: uloin paikka (indeksi 235) varataan saapuvalle neutronille */
+  const types = [];
+  for(let i = 0; i < 92; i++) types.push("p");
+  for(let i = 0; i < 143; i++) types.push("n");
+  for(let i = types.length - 1; i > 0; i--){
+    const j = Math.floor(rnd() * (i + 1));
+    [types[i], types[j]] = [types[j], types[i]];
+  }
+  types.push("n");                      // saapuva neutroni
+
+  const nucleons = base.map((p, i) => {
+    const type = types[i];
+    const el = mk("circle", {
+      r: NR,
+      fill: type === "p" ? "var(--proton)" : "var(--neutron)",
+      stroke: "#fff", "stroke-width": 0.7
+    });
+    gNuc.appendChild(el);
+    return { el, type, bx: p.x, by: p.y, r0: p.r0, idx: i,
+             x: CX + p.x, y: CY + p.y, fromX: 0, fromY: 0, blend: 1,
+             frag: -1, free: false, vx: 0, vy: 0 };
+  });
+
+  const incoming = nucleons[N_TOTAL - 1];
+  const ENTRY = { x: CX - R - 4, y: CY - 6 };
+  const START = { x: 52, y: CY - 62 };
+
+  const fragA = { x: CX, y: CY, vx: 0, vy: 0, R: R_BA, local: null };
+  const fragB = { x: CX, y: CY, vx: 0, vy: 0, R: R_KR, local: null };
+
+  let state = "idle", t = 0, phase = 0, speed = 1;
+
+  /* muodonmuutos: venyminen akselin suuntaan ja kuroutuminen keskeltä */
+  function deform(x, y, e){
+    const pinch = 1 - e * 0.78 * (1 - Math.min(1, Math.abs(x) / R));
+    return { x: x * (1 + e * 0.9), y: y * pinch };
+  }
+
+  function place(n, tx, ty){
+    if(n.blend < 1){
+      const k = easeOut(n.blend);
+      n.x = lerp(n.fromX, tx, k);
+      n.y = lerp(n.fromY, ty, k);
+    }else{
+      n.x = tx; n.y = ty;
+    }
+    n.el.setAttribute("cx", n.x.toFixed(1));
+    n.el.setAttribute("cy", n.y.toFixed(1));
+  }
+
+  function beginBlend(n, dur){
+    n.fromX = n.x; n.fromY = n.y; n.blend = 0; n.blendDur = dur;
+  }
+
+  /* --------- halkeaminen: jako Ba-141, Kr-92 ja 3 neutronia --------- */
+  function doSplit(){
+    /* kolme uloimmaista neutronia sinkoutuu vapaaksi (ei saapunutta neutronia) */
+    const loose = nucleons
+      .filter(n => n.type === "n" && n !== incoming)
+      .sort((a, b) => b.r0 - a.r0)
+      .slice(0, 3);
+
+    loose.forEach((n, i) => {
+      n.free = true;
+      n.frag = 2;
+      n.el.setAttribute("fill", "var(--free)");
+      n.el.setAttribute("r", NR * 1.15);
+      const a = AXIS + (i - 1) * 1.15 + (rnd() - 0.5) * 0.5;
+      const v = 210 + rnd() * 70;
+      n.vx = Math.cos(a) * v;
+      n.vy = Math.sin(a) * v;
+      gFree.appendChild(n.el);
+    });
+
+    const rest = nucleons.filter(n => !n.free);
+    const prot = rest.filter(n => n.type === "p").sort((a, b) => a.x - b.x);
+    const neut = rest.filter(n => n.type === "n").sort((a, b) => a.x - b.x);
+
+    const inA = new Set();
+    prot.slice(0, 56).forEach(n => inA.add(n));   // ¹⁴¹Ba: 56 p
+    neut.slice(0, 85).forEach(n => inA.add(n));   // ¹⁴¹Ba: 85 n
+
+    const membersA = rest.filter(n => inA.has(n));
+    const membersB = rest.filter(n => !inA.has(n));
+
+    const centroid = arr => {
+      let sx = 0, sy = 0;
+      arr.forEach(n => { sx += n.x; sy += n.y; });
+      return { x: sx / arr.length, y: sy / arr.length };
+    };
+
+    const cA = centroid(membersA), cB = centroid(membersB);
+    fragA.x = cA.x; fragA.y = cA.y;
+    fragB.x = cB.x; fragB.y = cB.y;
+    fragA.vx = Math.cos(AXIS) * V_BA; fragA.vy = Math.sin(AXIS) * V_BA;
+    fragB.vx = Math.cos(AXIS) * V_KR; fragB.vy = Math.sin(AXIS) * V_KR;
+
+    /* sisimmät nukleonit pysyvät sisimpinä myös uudessa ytimessä */
+    const assign = (members, frag, radius, seed) => {
+      const slots = packDisc(members.length, radius, 3.0, rngFrom(seed))
+        .sort((a, b) => a.r0 - b.r0);
+      const sorted = members.slice().sort((a, b) =>
+        Math.hypot(a.x - frag.x, a.y - frag.y) - Math.hypot(b.x - frag.x, b.y - frag.y));
+      sorted.forEach((n, i) => { n.lx = slots[i].x; n.ly = slots[i].y; });
+    };
+
+    assign(membersA, fragA, R_BA, 771);
+    assign(membersB, fragB, R_KR, 4242);
+
+    membersA.forEach(n => { n.frag = 0; beginBlend(n, 0.45); });
+    membersB.forEach(n => { n.frag = 1; beginBlend(n, 0.45); });
+
+    labM.setAttribute("opacity", "0");
+    labA.setAttribute("opacity", "1");
+    labB.setAttribute("opacity", "1");
+    panel.setAttribute("opacity", "1");
+    burst.setAttribute("cx", CX); burst.setAttribute("cy", CY);
+  }
+
+  function reset(){
+    state = "idle"; t = 0; phase = 0;
+    nucleons.forEach(n => {
+      n.free = false; n.frag = -1; n.blend = 1; n.vx = n.vy = 0;
+      n.el.setAttribute("r", NR);
+      n.el.setAttribute("fill", n.type === "p" ? "var(--proton)" : "var(--neutron)");
+      n.el.setAttribute("opacity", "1");
+      if(n.el.parentNode !== gNuc) gNuc.appendChild(n.el);
+    });
+    incoming.el.setAttribute("fill", "var(--free)");
+    incoming.el.setAttribute("r", NR * 1.15);
+    gFree.appendChild(incoming.el);
+    incoming.x = START.x; incoming.y = START.y;
+    incoming.el.setAttribute("cx", START.x);
+    incoming.el.setAttribute("cy", START.y);
+    labM.setAttribute("opacity", "1");
+    labA.setAttribute("opacity", "0");
+    labB.setAttribute("opacity", "0");
+    panel.setAttribute("opacity", "0.28");
+    burst.setAttribute("opacity", "0"); burst.setAttribute("r", "0");
+    pop.setAttribute("opacity", "0");
+    $("v1Fire").disabled = false;
+    setStatus("Uraani-235 -ydin on paikallaan. Ammu <b>hidas neutroni</b> ytimeen ja katso, mitä tapahtuu.");
+    step(0);
+  }
+
+  function fire(){
+    if(state !== "idle") return;
+    state = "fly"; t = 0;
+    $("v1Fire").disabled = true;
+    setStatus("Neutroni lähestyy ydintä. Hidas neutroni sieppautuu helposti juuri ²³⁵U-ytimeen.");
+  }
+
+  function step(dt){
+    dt *= speed;
+    t += dt;
+
+    let e = 0.018 * Math.sin(t * 1.6);      // pieni lepovärähtely
+
+    if(state === "fly"){
+      const k = clamp(t / T_FLY, 0, 1);
+      incoming.x = lerp(START.x, ENTRY.x, k);
+      incoming.y = lerp(START.y, ENTRY.y, k);
+      incoming.el.setAttribute("cx", incoming.x.toFixed(1));
+      incoming.el.setAttribute("cy", incoming.y.toFixed(1));
+      if(k >= 1){
+        state = "excite"; t = 0; phase = 0;
+        incoming.el.setAttribute("fill", "var(--neutron)");
+        incoming.el.setAttribute("r", NR);
+        gNuc.appendChild(incoming.el);
+        beginBlend(incoming, 0.4);
+        setStatus("Ydin sieppasi neutronin: syntyi <b>virittynyt ²³⁶U*-ydin</b>. Ylimääräinen energia saa ytimen värähtelemään ja venymään.");
+      }
+    }
+
+    if(state === "excite"){
+      const prog = clamp(t / T_EXCITE, 0, 1);
+      const amp  = 0.05 + 0.40 * prog * prog;
+      phase += dt * 2 * Math.PI * (1.4 + 2.2 * prog);
+      e = amp * Math.sin(phase);
+      if(t >= T_EXCITE){
+        e = amp;
+        state = "split"; t = 0;
+        doSplit();
+        setStatus("<b>Fissio!</b> Ydin kuroutui kahtia: syntyi ¹⁴¹Ba, ⁹²Kr, kolme vapaata neutronia ja noin 200 MeV energiaa.");
+      }
+    }
+
+    if(state === "split" || state === "done"){
+      e = 0;
+      if(state === "split"){
+        fragA.x += fragA.vx * dt; fragA.y += fragA.vy * dt;
+        fragB.x += fragB.vx * dt; fragB.y += fragB.vy * dt;
+
+        const b = clamp(t / 0.7, 0, 1);
+        burst.setAttribute("r", (b * 210).toFixed(0));
+        burst.setAttribute("opacity", (0.9 * (1 - b)).toFixed(3));
+
+        const p = clamp(t / 0.6, 0, 1);
+        pop.setAttribute("opacity", p.toFixed(3));
+        pop.setAttribute("y", (250 - 46 * easeOut(p)).toFixed(0));
+
+        if(t >= T_SPLIT){
+          state = "done";
+          $("v1Fire").disabled = true;
+          setStatus("Halkeamistuotteet sinkoutuvat erilleen, koska molemmat ovat positiivisia ja hylkivät toisiaan. <b>Energia näkyy tuotteiden liike-energiana.</b> Nollaa ja kokeile uudelleen.");
+        }
+      }
+      labA.setAttribute("transform", "translate(" + fragA.x.toFixed(1) + "," + (fragA.y + R_BA + 40).toFixed(1) + ")");
+      labB.setAttribute("transform", "translate(" + fragB.x.toFixed(1) + "," + (fragB.y + R_KR + 40).toFixed(1) + ")");
+    }
+
+    /* nukleonien piirto */
+    for(const n of nucleons){
+      if(n.blend < 1) n.blend = clamp(n.blend + dt / (n.blendDur || 0.4), 0, 1);
+
+      if(n.free){
+        n.x += n.vx * dt; n.y += n.vy * dt;
+        n.el.setAttribute("cx", n.x.toFixed(1));
+        n.el.setAttribute("cy", n.y.toFixed(1));
+        if(n.x < 20 || n.x > 706 || n.y < 70 || n.y > 668) n.el.setAttribute("opacity", "0");
+        continue;
+      }
+      if(n === incoming && (state === "idle" || state === "fly")) continue;
+
+      let tx, ty;
+      if(n.frag === 0){      tx = fragA.x + n.lx; ty = fragA.y + n.ly; }
+      else if(n.frag === 1){ tx = fragB.x + n.lx; ty = fragB.y + n.ly; }
+      else {
+        const d = deform(n.bx, n.by, e);
+        tx = CX + d.x; ty = CY + d.y;
+      }
+      place(n, tx, ty);
+    }
+  }
+
+  $("v1Fire").addEventListener("click", fire);
+  $("v1Reset").addEventListener("click", reset);
+  $("v1Speed").addEventListener("input", ev => {
+    speed = parseFloat(ev.target.value);
+    $("v1SpeedOut").textContent = fmt(speed, 1) + "×";
+  });
+
+  reset();
+
+  return { step, reset,
+    hint: "Vinkki: ²³⁵U halkeaa juuri <em>hitaista</em> neutroneista. Reaktiossa vapautuu kolme uutta neutronia — juuri se tekee ketjureaktion mahdolliseksi." };
+})();
+
+/* =================================================================
+   NÄKYMÄ 2 · KETJUREAKTIO
+   ================================================================= */
+
+const V2 = (() => {
+  const X0 = 60, Y0 = 96, W = 840, H = 552;
+  const PAD = 22;
+  const BX0 = X0 + 6, BX1 = X0 + W - 6, BY0 = Y0 + 6, BY1 = Y0 + H - 6;
+
+  const R235 = 11, R238 = 12, RN = 5;
+  const V_NEUTRON = 175, MAX_NEUTRONS = 500;
+
+  const gNuclei = $("v2Nuclei"), gFrag = $("v2Fragments"),
+        gNeut  = $("v2Neutrons"), gFlash = $("v2Flashes");
+  const vessel = $("v2Vessel"), vesselNote = $("v2VesselNote");
+
+  let nuclei = [], neutrons = [], frags = [], flashes = [];
+  let fissions = 0, absorbed = 0, wasRunning = false;
+
+  const sInput = () => ({
+    n235: parseInt($("v2U235").value, 10),
+    n238: parseInt($("v2U238").value, 10)
+  });
+
+  function clearGroup(g){ while(g.firstChild) g.removeChild(g.firstChild); }
+
+  function build(){
+    [gNuclei, gFrag, gNeut, gFlash].forEach(clearGroup);
+    nuclei = []; neutrons = []; frags = []; flashes = [];
+    fissions = 0; absorbed = 0; wasRunning = false;
+
+    const { n235, n238 } = sInput();
+    const n = n235 + n238;
+    $("v2U235Out").textContent = n235;
+    $("v2U238Out").textContent = n238;
+
+    if(n > 0){
+      const iw = W - 2 * PAD, ih = H - 2 * PAD;
+      const cols = Math.max(1, Math.round(Math.sqrt(n * iw / ih)));
+      const rows = Math.ceil(n / cols);
+      const cw = iw / cols, ch = ih / rows;
+      const jit = Math.min(cw, ch) * 0.26;
+      const rnd = rngFrom(1000 + n235 * 7919 + n238 * 104729);
+
+      const kinds = [];
+      for(let i = 0; i < n235; i++) kinds.push("U235");
+      for(let i = 0; i < n238; i++) kinds.push("U238");
+      for(let i = kinds.length - 1; i > 0; i--){
+        const j = Math.floor(rnd() * (i + 1));
+        [kinds[i], kinds[j]] = [kinds[j], kinds[i]];
+      }
+
+      for(let i = 0; i < n; i++){
+        const cx = X0 + PAD + (i % cols + 0.5) * cw + (rnd() - 0.5) * jit;
+        const cy = Y0 + PAD + (Math.floor(i / cols) + 0.5) * ch + (rnd() - 0.5) * jit;
+        const kind = kinds[i];
+        const r = kind === "U235" ? R235 : R238;
+        const el = mk("circle", {
+          cx: cx.toFixed(1), cy: cy.toFixed(1), r: r,
+          fill: kind === "U235" ? "var(--u235)" : "var(--u238)",
+          stroke: "#fff", "stroke-width": 1.4
+        });
+        gNuclei.appendChild(el);
+        nuclei.push({ x: cx, y: cy, r, kind, el, alive: true });
+      }
+    }
+    updateReadouts();
+    setStatus("Aseta ytimien määrät ja <b>ammu neutroni</b>. Vain ²³⁵U halkeaa hitaasta neutronista — ²³⁸U vain sieppaa neutronin ja pysäyttää ketjun.");
+  }
+
+  function addNeutron(x, y, vx, vy){
+    if(neutrons.length >= MAX_NEUTRONS) return;
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: RN, fill: "var(--free)" });
+    gNeut.appendChild(el);
+    neutrons.push({ x, y, vx, vy, el });
+  }
+
+  function addFragment(x, y, a, speed, color, r){
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: r, fill: color, opacity: 0.95 });
+    gFrag.appendChild(el);
+    frags.push({ x, y, vx: Math.cos(a) * speed, vy: Math.sin(a) * speed, el, life: 0, max: 1.5 });
+  }
+
+  function addFlash(x, y){
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 6,
+                              fill: "none", stroke: "var(--energy)", "stroke-width": 3 });
+    gFlash.appendChild(el);
+    flashes.push({ el, life: 0, max: 0.55 });
+  }
+
+  function fission(nu, idx){
+    nu.alive = false;
+    nu.el.setAttribute("opacity", "0");
+    fissions++;
+
+    addFlash(nu.x, nu.y);
+    const a = Math.random() * Math.PI * 2;
+    addFragment(nu.x, nu.y, a, 70, "var(--fragA)", 8);
+    addFragment(nu.x, nu.y, a + Math.PI, 105, "var(--fragB)", 7);
+
+    const emitted = Math.random() < 0.5 ? 2 : 3;
+    for(let i = 0; i < emitted; i++){
+      const ang = Math.random() * Math.PI * 2;
+      const v = V_NEUTRON * (0.8 + Math.random() * 0.45);
+      addNeutron(nu.x, nu.y, Math.cos(ang) * v, Math.sin(ang) * v);
+    }
+  }
+
+  function absorb(nu){
+    nu.alive = false;
+    absorbed++;
+    nu.el.setAttribute("fill", "#6E6A63");
+    nu.el.setAttribute("stroke", "var(--ink)");
+    nu.el.setAttribute("stroke-dasharray", "3 3");
+  }
+
+  function fire(){
+    const targets = nuclei.filter(n => n.alive && n.kind === "U235");
+    const y = Y0 + H / 2 + (Math.random() - 0.5) * H * 0.5;
+    let vx = V_NEUTRON, vy = (Math.random() - 0.5) * 40;
+    if(targets.length){
+      const t = targets[Math.floor(Math.random() * targets.length)];
+      const a = Math.atan2(t.y - y, t.x - BX0) + (Math.random() - 0.5) * 0.05;
+      vx = Math.cos(a) * V_NEUTRON; vy = Math.sin(a) * V_NEUTRON;
+    }
+    addNeutron(BX0 + 2, y, vx, vy);
+    wasRunning = true;
+    setStatus("Neutroni liikkeellä. Jokainen halkeaminen vapauttaa 2–3 uutta neutronia.");
+  }
+
+  function updateReadouts(){
+    const left = nuclei.filter(n => n.alive && n.kind === "U235").length;
+    $("v2Fis").textContent  = int(fissions);
+    $("v2MeV").textContent  = int(fissions * MEV_PER_FISSION) + " MeV";
+    typeset($("v2J"), (fissions ? sci(fissions * MEV_PER_FISSION * J_PER_MEV, 1) : "0") + " J");
+    $("v2Left").textContent = left + " / " + sInput().n235;
+    $("v2Abs").textContent  = int(absorbed);
+    $("v2N").textContent    = int(neutrons.length);
+  }
+
+  function step(dt){
+    const shell = $("v2Shell").checked;
+
+    for(let i = neutrons.length - 1; i >= 0; i--){
+      const p = neutrons[i];
+      p.x += p.vx * dt;
+      p.y += p.vy * dt;
+
+      if(shell){
+        if(p.x < BX0){ p.x = BX0; p.vx = Math.abs(p.vx); }
+        if(p.x > BX1){ p.x = BX1; p.vx = -Math.abs(p.vx); }
+        if(p.y < BY0){ p.y = BY0; p.vy = Math.abs(p.vy); }
+        if(p.y > BY1){ p.y = BY1; p.vy = -Math.abs(p.vy); }
+      }else if(p.x < X0 - 20 || p.x > X0 + W + 20 || p.y < Y0 - 20 || p.y > Y0 + H + 20){
+        gNeut.removeChild(p.el);
+        neutrons.splice(i, 1);
+        continue;
+      }
+
+      let hit = null;
+      for(const nu of nuclei){
+        if(!nu.alive) continue;
+        const dx = p.x - nu.x, dy = p.y - nu.y;
+        if(dx * dx + dy * dy < (nu.r + RN) * (nu.r + RN)){ hit = nu; break; }
+      }
+
+      if(hit){
+        gNeut.removeChild(p.el);
+        neutrons.splice(i, 1);
+        if(hit.kind === "U235") fission(hit);
+        else absorb(hit);
+        continue;
+      }
+
+      p.el.setAttribute("cx", p.x.toFixed(1));
+      p.el.setAttribute("cy", p.y.toFixed(1));
+    }
+
+    for(let i = frags.length - 1; i >= 0; i--){
+      const f = frags[i];
+      f.life += dt;
+      f.x += f.vx * dt; f.y += f.vy * dt;
+      f.vx *= 0.985; f.vy *= 0.985;
+      if(f.life >= f.max){ gFrag.removeChild(f.el); frags.splice(i, 1); continue; }
+      f.el.setAttribute("cx", f.x.toFixed(1));
+      f.el.setAttribute("cy", f.y.toFixed(1));
+      f.el.setAttribute("opacity", (0.95 * (1 - f.life / f.max)).toFixed(3));
+    }
+
+    for(let i = flashes.length - 1; i >= 0; i--){
+      const f = flashes[i];
+      f.life += dt;
+      if(f.life >= f.max){ gFlash.removeChild(f.el); flashes.splice(i, 1); continue; }
+      const k = f.life / f.max;
+      f.el.setAttribute("r", (6 + k * 34).toFixed(1));
+      f.el.setAttribute("opacity", (1 - k).toFixed(3));
+    }
+
+    updateReadouts();
+
+    if(wasRunning && neutrons.length === 0){
+      wasRunning = false;
+      const left = nuclei.filter(n => n.alive && n.kind === "U235").length;
+      const tot = sInput().n235;
+      if(fissions === 0){
+        setStatus("Ketju ei lähtenyt käyntiin: neutroni karkasi tai ²³⁸U sieppasi sen. Lisää ²³⁵U-ytimiä tai kytke suojakuori päälle.");
+      }else if(left === 0 && tot > 0){
+        setStatus("<b>Koko polttoaine haljennut.</b> " + fissions + " halkeamista vapautti noin " +
+                  int(fissions * MEV_PER_FISSION) + " MeV eli " +
+                  sci(fissions * MEV_PER_FISSION * J_PER_MEV, 1) + " J.");
+      }else{
+        setStatus("Ketjureaktio sammui: neutronit karkasivat tai ²³⁸U sieppasi ne. " + fissions +
+                  " halkeamista, " + left + " ²³⁵U-ydintä jäi ehjäksi.");
+      }
+    }
+  }
+
+  ["v2U235", "v2U238"].forEach(id => $(id).addEventListener("input", build));
+  $("v2Fire").addEventListener("click", fire);
+  $("v2Reset").addEventListener("click", build);
+  $("v2Shell").addEventListener("change", ev => {
+    vessel.setAttribute("opacity", ev.target.checked ? "1" : "0");
+    vesselNote.setAttribute("opacity", ev.target.checked ? "1" : "0");
+  });
+
+  build();
+
+  return { step, reset: build,
+    hint: "Vinkki: luonnonuraanista vain 0,7 % on ²³⁵U. Lisää ²³⁸U-ytimiä ja katso, miten ketjureaktio tukahtuu — siksi polttoaine on rikastettava." };
+})();
+
+/* =================================================================
+   NÄKYMÄ 3 · YDINREAKTORI
+   ================================================================= */
+
+const V3 = (() => {
+  const BX0 = 66, BX1 = 694, BY0 = 102, BY1 = 642;
+  const FX0 = 80, FW = 600, NFUEL = 7;
+  const STEP = FW / NFUEL;
+  const FUEL_W = 28, FUEL_Y0 = 290, FUEL_Y1 = 620;
+  const ROD_W = 36, ROD_TOP = 104;
+  const ROD_PARK   = FUEL_Y0 - ROD_TOP;    // sauvat lepäävät sydämen yläpuolella
+  const ROD_TRAVEL = FUEL_Y1 - FUEL_Y0;    // syvyys 0-100 % = sydämen korkeus
+
+  const RN = 4.5, V_NEUTRON = 150, MAX_NEUTRONS = 420;
+  const FISSION_RATE = 6.5;     // 1/s: halkeamisen todennäköisyys polttoaineessa
+  const ABSORB_RATE  = 14;      // 1/s: hitaan neutronin sieppaus säätösauvassa
+  const FAST_ABSORB  = 0.12;    // boori sieppaa nopeita neutroneja huonosti (1/v-laki)
+  const MFP = 32;               // keskimääräinen vapaa matka törmäysten välillä (px)
+  const N_MOD = 2;              // montako törmäystä hidastimessa hidastaa neutronin
+  const SOURCE_EVERY = 0.6;     // käynnistyslähde
+  const NOMINAL = 120;          // nimellisteho, fissiota sekunnissa
+
+  const gFuel = $("v3Fuel"), gRods = $("v3Rods"),
+        gNeut = $("v3Neutrons"), gFlash = $("v3Flashes");
+
+  const fuel = [], rods = [];
+
+  for(let i = 0; i < NFUEL; i++){
+    const cx = FX0 + STEP * (i + 0.5);
+    const x = cx - FUEL_W / 2;
+    gFuel.appendChild(mk("rect", { x: x.toFixed(1), y: FUEL_Y0, width: FUEL_W,
+                                   height: FUEL_Y1 - FUEL_Y0, rx: 8, fill: "var(--u235)" }));
+    for(let y = FUEL_Y0 + 18; y < FUEL_Y1 - 8; y += 26){
+      gFuel.appendChild(mk("circle", { cx: cx.toFixed(1), cy: y, r: 6.5, fill: "#fff", opacity: 0.22 }));
+    }
+    fuel.push({ x0: x, x1: x + FUEL_W });
+  }
+
+  for(let i = 0; i < NFUEL - 1; i++){
+    const cx = FX0 + STEP * (i + 1);
+    const el = mk("rect", { x: (cx - ROD_W / 2).toFixed(1), y: ROD_TOP, width: ROD_W,
+                            height: ROD_PARK, rx: 6, fill: "var(--rod)" });
+    gRods.appendChild(el);
+    rods.push({ x0: cx - ROD_W / 2, x1: cx + ROD_W / 2, el, bottom: ROD_TOP + ROD_PARK });
+  }
+
+  let neutrons = [], flashes = [];
+  let running = false, fissions = 0, capped = false;
+  let fisWindow = 0, sampleT = 0, sourceT = 0, labelT = 0;
+  let rateS = 0, rateSlow = 0;
+  const history = [];
+  const HIST = 120, SAMPLE = 0.25;
+
+  function insertion(){ return parseInt($("v3Rod").value, 10) / 100; }
+
+  function drawRods(){
+    const ins = insertion();
+    const h = ROD_PARK + ins * ROD_TRAVEL;
+    rods.forEach(r => { r.el.setAttribute("height", h.toFixed(1)); r.bottom = ROD_TOP + h; });
+    $("v3Ins").textContent = Math.round(ins * 100) + " %";
+    $("v3RodOut").textContent = Math.round(ins * 100) + " %";
+  }
+
+  /* Neutroni syntyy fissiossa nopeana. Vasta hidastimessa tapahtuvat törmäykset
+     hidastavat sen, ja vain hidas neutroni halkaisee ²³⁵U-ytimen. */
+  function addNeutron(x, y, a){
+    if(neutrons.length >= MAX_NEUTRONS){ capped = true; return; }
+    const v = V_NEUTRON * (0.85 + Math.random() * 0.35);
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: RN - 0.7, fill: "var(--fragB)" });
+    gNeut.appendChild(el);
+    neutrons.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, el, fast: true, scat: 0 });
+  }
+
+  function addFlash(x, y){
+    if(flashes.length > 45) return;
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 5,
+                              fill: "none", stroke: "var(--energy)", "stroke-width": 2.6 });
+    gFlash.appendChild(el);
+    flashes.push({ el, life: 0, max: 0.4 });
+  }
+
+  function inFuel(x){ return fuel.some(f => x > f.x0 && x < f.x1); }
+  function inRod(x, y){ return rods.some(r => x > r.x0 && x < r.x1 && y < r.bottom); }
+
+  function clearAll(){
+    while(gNeut.firstChild) gNeut.removeChild(gNeut.firstChild);
+    while(gFlash.firstChild) gFlash.removeChild(gFlash.firstChild);
+    neutrons = []; flashes = [];
+    fissions = 0; capped = false;
+    fisWindow = 0; sampleT = 0; sourceT = 0; labelT = 0;
+    rateS = 0; rateSlow = 0;
+    history.length = 0;
+    $("v3Graph").setAttribute("points", "");
+    $("v3NomLine").setAttribute("opacity", "0");
+    $("v3NomLabel").setAttribute("opacity", "0");
+  }
+
+  function start(){
+    running = true;
+    $("v3Run").textContent = "Pysäytä";
+    for(let i = 0; i < 10; i++){
+      addNeutron(FX0 + Math.random() * FW, FUEL_Y0 + Math.random() * (FUEL_Y1 - FUEL_Y0),
+                 Math.random() * Math.PI * 2);
+    }
+    setStatus("Reaktori käynnissä. Säädä <b>säätösauvojen syvyyttä</b> ja etsi asento, jossa teho pysyy vakiona.");
+  }
+
+  function stop(){
+    running = false;
+    $("v3Run").textContent = "Käynnistä";
+    setStatus("Reaktori pysäytetty.");
+  }
+
+  function setState(text, color){
+    const el = $("v3State");
+    el.textContent = text;
+    el.style.fill = color;
+  }
+
+  function drawGraph(){
+    if(history.length < 2){ $("v3Graph").setAttribute("points", ""); return; }
+    let max = 0;
+    for(const v of history) if(v > max) max = v;
+    const scale = Math.max(10, Math.ceil(max / 10) * 10);
+    $("v3GraphMax").textContent = scale;
+
+    const x0 = 744, x1 = 1246, yTop = 418, yBot = 614;
+    const n = HIST;
+    let pts = "";
+    for(let i = 0; i < history.length; i++){
+      const idx = i + (n - history.length);
+      const x = x0 + (idx / (n - 1)) * (x1 - x0);
+      const y = yBot - clamp(history[i] / scale, 0, 1) * (yBot - yTop);
+      pts += x.toFixed(1) + "," + y.toFixed(1) + " ";
+    }
+    $("v3Graph").setAttribute("points", pts.trim());
+
+    const yNom = yBot - clamp(NOMINAL / scale, 0, 1) * (yBot - yTop);
+    const show = NOMINAL <= scale;
+    $("v3NomLine").setAttribute("y1", yNom.toFixed(1));
+    $("v3NomLine").setAttribute("y2", yNom.toFixed(1));
+    $("v3NomLine").setAttribute("opacity", show ? "1" : "0");
+    $("v3NomLabel").setAttribute("y", (yNom - 6).toFixed(1));
+    $("v3NomLabel").setAttribute("opacity", show ? "1" : "0");
+  }
+
+  function step(dt){
+    drawRods();
+    let fisFrame = 0;
+
+    if(running){
+      sourceT += dt;
+      if(rateS < 2.5 && sourceT >= SOURCE_EVERY){
+        sourceT = 0;
+        addNeutron(FX0 + Math.random() * FW, FUEL_Y0 + Math.random() * (FUEL_Y1 - FUEL_Y0),
+                   Math.random() * Math.PI * 2);
+      }
+
+      const pFis  = 1 - Math.exp(-FISSION_RATE * dt);
+      const pAbs  = 1 - Math.exp(-ABSORB_RATE * dt);
+      const pAbsF = 1 - Math.exp(-ABSORB_RATE * FAST_ABSORB * dt);
+      const pScat = 1 - Math.exp(-(V_NEUTRON / MFP) * dt);
+      const born = [];
+
+      for(let i = neutrons.length - 1; i >= 0; i--){
+        const p = neutrons[i];
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+
+        if(p.x < BX0 || p.x > BX1 || p.y < BY0 || p.y > BY1){
+          gNeut.removeChild(p.el); neutrons.splice(i, 1); continue;
+        }
+
+        if(inRod(p.x, p.y) && Math.random() < (p.fast ? pAbsF : pAbs)){
+          gNeut.removeChild(p.el); neutrons.splice(i, 1); continue;
+        }
+
+        if(!p.fast && p.y > FUEL_Y0 && p.y < FUEL_Y1 && inFuel(p.x) && Math.random() < pFis){
+          gNeut.removeChild(p.el); neutrons.splice(i, 1);
+          fissions++; fisWindow++; fisFrame++;
+          addFlash(p.x, p.y);
+          const emitted = Math.random() < 0.5 ? 2 : 3;
+          for(let k = 0; k < emitted; k++) born.push({ x: p.x, y: p.y });
+          continue;
+        }
+
+        /* Törmäys satunnaistaa suunnan. Hidastimessa (vedessä) tapahtuvat
+           törmäykset myös hidastavat neutronin, jolloin siitä tulee fissiokelpoinen. */
+        if(Math.random() < pScat){
+          const a = Math.random() * Math.PI * 2;
+          const v = Math.hypot(p.vx, p.vy);
+          p.vx = Math.cos(a) * v;
+          p.vy = Math.sin(a) * v;
+
+          if(p.fast && !inFuel(p.x) && !inRod(p.x, p.y) && ++p.scat >= N_MOD){
+            p.fast = false;
+            p.el.setAttribute("fill", "var(--free)");
+            p.el.setAttribute("r", RN);
+          }
+        }
+
+        p.el.setAttribute("cx", p.x.toFixed(1));
+        p.el.setAttribute("cy", p.y.toFixed(1));
+      }
+
+      for(const b of born) addNeutron(b.x, b.y, Math.random() * Math.PI * 2);
+
+      sampleT += dt;
+      if(sampleT >= SAMPLE){
+        const rate = fisWindow / sampleT;
+        fisWindow = 0; sampleT = 0;
+        history.push(rate);
+        while(history.length > HIST) history.shift();
+        drawGraph();
+      }
+    }
+
+    const instRate = fisFrame / Math.max(dt, 1e-4);
+    rateS    += (instRate - rateS)  * clamp(dt / 0.45, 0, 1);
+    rateSlow += (rateS - rateSlow)  * clamp(dt / 2.2, 0, 1);
+
+    for(let i = flashes.length - 1; i >= 0; i--){
+      const f = flashes[i];
+      f.life += dt;
+      if(f.life >= f.max){ gFlash.removeChild(f.el); flashes.splice(i, 1); continue; }
+      const k = f.life / f.max;
+      f.el.setAttribute("r", (5 + k * 22).toFixed(1));
+      f.el.setAttribute("opacity", (1 - k).toFixed(3));
+    }
+
+    $("v3N").textContent    = int(neutrons.length) + (capped && neutrons.length >= MAX_NEUTRONS ? "+" : "");
+    $("v3Rate").textContent = fmt(rateS, 0);
+    $("v3Power").textContent = fmt(rateS / NOMINAL * 100, 0) + " %";
+    typeset($("v3E"), fissions ? sci(fissions * MEV_PER_FISSION * J_PER_MEV, 1) + " J" : "0 J");
+    const rel = rateS / NOMINAL;
+    $("v3PowerBar").setAttribute("width", (clamp(rel / 1.6, 0, 1) * 510).toFixed(1));
+    $("v3PowerBar").setAttribute("fill", rel > 1.25 ? "var(--warn)" : "var(--fragB)");
+
+    labelT += dt;
+    if(labelT >= 0.4){
+      labelT = 0;
+      if(!running)                       setState("Reaktori sammutettu", "var(--muted)");
+      else if(neutrons.length === 0)     setState("Ketjureaktio sammunut", "var(--muted)");
+      else if(neutrons.length >= MAX_NEUTRONS)
+                                         setState("Ylikriittinen · karkaa käsistä", "var(--warn)");
+      else if(rateS > rateSlow * 1.18 && rateS > 3)
+                                         setState("Ylikriittinen · teho kasvaa", "var(--warn)");
+      else if(rateS < rateSlow * 0.82)   setState("Alikriittinen · teho laskee", "var(--muted)");
+      else if(rateS < 4)                 setState("Alikriittinen · lähde ylläpitää", "var(--muted)");
+      else                               setState("Kriittinen · teho vakio", "var(--ok)");
+    }
+  }
+
+  function reset(){
+    stop();
+    clearAll();
+    $("v3Rod").value = 60;
+    drawRods();
+    setState("Reaktori sammutettu", "var(--muted)");
+    setStatus("Ydinreaktorissa ketjureaktiota säädetään <b>säätösauvoilla</b>, jotka sieppaavat neutroneja. Käynnistä reaktori.");
+  }
+
+  $("v3Run").addEventListener("click", () => running ? stop() : start());
+  $("v3Reset").addEventListener("click", reset);
+  $("v3Rod").addEventListener("input", drawRods);
+  $("v3Scram").addEventListener("click", () => {
+    $("v3Rod").value = 100;
+    drawRods();
+    setStatus("<b>Hätäpysäytys:</b> säätösauvat ajettiin kokonaan sisään. Ne sieppaavat neutronit ja ketjureaktio sammuu.");
+  });
+
+  drawRods();
+  setState("Reaktori sammutettu", "var(--muted)");
+
+  return { step, reset,
+    hint: "Vinkki: neutroni syntyy nopeana (oranssi) ja hidastuu vedessä (musta). Vain hidas neutroni halkaisee ²³⁵U:n — säätösauvat sieppaavat neutroneja matkalla. Etsi sauva-asento, jossa teho pysyy vakiona." };
+})();
+
+/* =================================================================
+   VÄLILEHDET JA PÄÄSILMUKKA
+   ================================================================= */
+
+const VIEWS = [
+  { view: $("view1"), ctrl: $("ctrl1"), tab: $("tab1"), mod: V1 },
+  { view: $("view2"), ctrl: $("ctrl2"), tab: $("tab2"), mod: V2 },
+  { view: $("view3"), ctrl: $("ctrl3"), tab: $("tab3"), mod: V3 }
+];
+
+let active = 0;
+
+function select(i){
+  active = i;
+  VIEWS.forEach((v, k) => {
+    v.view.style.display = k === i ? "" : "none";
+    v.ctrl.hidden = k !== i;
+    v.tab.setAttribute("aria-selected", k === i ? "true" : "false");
+  });
+  hintEl.innerHTML = supHTML(VIEWS[i].mod.hint);
+  VIEWS[i].mod.reset();
+}
+
+VIEWS.forEach((v, i) => v.tab.addEventListener("click", () => select(i)));
+
+/* ladotaan kaikki kiinteät yläindeksit kerran */
+document.querySelectorAll("svg text").forEach(el => typeset(el, el.textContent));
+document.querySelectorAll(".controls label").forEach(el => { el.innerHTML = supHTML(el.textContent); });
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  VIEWS[active].mod.step(dt);
+  requestAnimationFrame(frame);
+}
+
+select(0);
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
