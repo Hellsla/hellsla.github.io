@@ -31,13 +31,10 @@
   .rod     { stroke:var(--ink); stroke-width:2.6; stroke-linecap:round; }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .readout    { font-size:21px; font-weight:600; }
-  .readoutUnit{ font-size:16px; font-weight:500; opacity:.75; }
-  .note       { font-size:15px; opacity:.75; }
-  .panelTitle { font-size:18px; font-weight:650; letter-spacing:.03em; }
-  .rowName    { font-size:14.5px; }
-  .rowVal     { font-size:16.5px; font-weight:600; }
-  .tiny       { font-size:13.5px; opacity:.7; }
+  .readout    { font-size:27px; font-weight:600; }
+  .readoutUnit{ font-size:19px; font-weight:500; opacity:.75; }
+  .rowName    { font-size:23px; }
+  .rowVal     { font-size:24px; font-weight:600; font-variant-numeric:tabular-nums; }
   .barEdge    { stroke:var(--ink); stroke-width:1.6; }
 
   /* --- ohjaimet --- */
@@ -83,7 +80,6 @@
       <!-- vapaa pudotus -->
       <g id="sceneFall">
         <line id="fallGuide" class="guide" x1="320" y1="120" x2="320" y2="380" marker-start="url(#tickArrow)" marker-end="url(#tickArrow)"/>
-        <text id="fallGuideTxt" class="tiny" x="336" y="250">h</text>
         <circle id="fallBall" class="bodyFill" cx="320" cy="120" r="16"/>
       </g>
 
@@ -95,7 +91,6 @@
         <circle class="pivot" cx="330" cy="92" r="6"/>
         <circle id="pendBob" class="bodyFill" cx="330" cy="380" r="17"/>
         <line id="pendRef" class="guide" x1="60" y1="356" x2="620" y2="356"/>
-        <text id="pendRefTxt" class="tiny" x="60" y="350">vertailutaso h = 0</text>
         <line id="pendLevel" class="guide" x1="60" y1="200" x2="620" y2="200"/>
       </g>
 
@@ -104,7 +99,6 @@
         <path id="rampPath" class="sketch thick" d=""/>
         <g id="rampHatch"></g>
         <line id="rampLevel" class="guide" x1="60" y1="200" x2="620" y2="200"/>
-        <text id="rampAngle" class="tiny" x="344" y="406" text-anchor="middle">kourun kaltevuus 45°</text>
         <g id="rampBlock">
           <rect class="bodyFill" x="-18" y="-13" width="36" height="26" rx="5"/>
           <rect class="bodyTrim" x="-11" y="-8" width="22" height="6" rx="2"/>
@@ -114,53 +108,46 @@
       <!-- lukemat -->
       <text class="readout" x="40" y="62">h = <tspan id="hVal">0,00</tspan><tspan class="readoutUnit"> m</tspan></text>
       <text class="readout" x="40" y="92">v = <tspan id="vVal">0,0</tspan><tspan class="readoutUnit"> m/s</tspan></text>
-      <text id="noteTxt" class="note" x="40" y="120"></text>
     </g>
 
     <!-- ============ ENERGIAPANEELI ============ -->
     <g id="panel">
-      <text class="panelTitle" x="660" y="60">ENERGIAT</text>
-
-      <!-- E0-viiva -->
-      <line x1="656" y1="92" x2="946" y2="92" stroke="#3F3D39" stroke-width="1.6" stroke-dasharray="6 6" opacity=".55"/>
-      <text class="tiny" x="946" y="84" text-anchor="end">E₀ = alkuenergia (vakio)</text>
+      <!-- E0-taso -->
+      <line x1="652" y1="92" x2="946" y2="92" stroke="#3F3D39" stroke-width="1.6" stroke-dasharray="6 6" opacity=".55"/>
 
       <!-- pylväs -->
-      <rect x="666" y="92" width="50" height="280" fill="#efeae3" rx="4"/>
-      <rect id="barLoss" x="666" y="92"  width="50" height="0" fill="#F28C28"/>
-      <rect id="barPe"   x="666" y="272" width="50" height="0" fill="#D84A62"/>
-      <rect id="barKe"   x="666" y="372" width="50" height="0" fill="#2E86A6"/>
-      <rect x="666" y="92" width="50" height="280" fill="none" class="barEdge" rx="4"/>
+      <rect x="660" y="92" width="64" height="280" fill="#efeae3" rx="4"/>
+      <rect id="barLoss" x="660" y="92"  width="64" height="0" fill="#F28C28"/>
+      <rect id="barPe"   x="660" y="272" width="64" height="0" fill="#D84A62"/>
+      <rect id="barKe"   x="660" y="372" width="64" height="0" fill="#2E86A6"/>
+      <rect x="660" y="92" width="64" height="280" fill="none" class="barEdge" rx="4"/>
 
       <!-- mekaanisen energian raja pylväässä -->
-      <line id="mekLine" x1="658" y1="372" x2="724" y2="372" stroke="#3F3D39" stroke-width="2.4"/>
+      <line id="mekLine" x1="652" y1="372" x2="732" y2="372" stroke="#3F3D39" stroke-width="2.6"/>
 
-      <!-- numerot -->
+      <!-- suureet ja arvot -->
       <g id="rows">
-        <rect x="730" y="139" width="13" height="13" rx="3" fill="#2E86A6"/>
-        <text class="rowName" x="750" y="150">Liike-energia E<tspan baseline-shift="sub" font-size="0.8em">k</tspan></text>
-        <text class="rowVal"  id="keVal" x="946" y="151" text-anchor="end">0,0 J</text>
+        <rect x="752" y="144" width="17" height="17" rx="4" fill="#2E86A6"/>
+        <text class="rowName" x="780" y="159">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+        <text class="rowVal" id="keVal" x="946" y="159" text-anchor="end">0,0 J</text>
 
-        <rect x="730" y="175" width="13" height="13" rx="3" fill="#D84A62"/>
-        <text class="rowName" x="750" y="186">Potentiaalien. E<tspan baseline-shift="sub" font-size="0.8em">p</tspan></text>
-        <text class="rowVal"  id="peVal" x="946" y="187" text-anchor="end">0,0 J</text>
+        <rect x="752" y="199" width="17" height="17" rx="4" fill="#D84A62"/>
+        <text class="rowName" x="780" y="214">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+        <text class="rowVal" id="peVal" x="946" y="214" text-anchor="end">0,0 J</text>
 
-        <rect x="730" y="211" width="13" height="13" rx="3" fill="#F28C28"/>
-        <text class="rowName" x="750" y="222">Häviöt (kitkatyö)</text>
-        <text class="rowVal"  id="lossVal" x="946" y="223" text-anchor="end">0,0 J</text>
+        <rect x="752" y="254" width="17" height="17" rx="4" fill="#F28C28"/>
+        <text class="rowName" x="780" y="269">häviöt</text>
+        <text class="rowVal" id="lossVal" x="946" y="269" text-anchor="end">0,0 J</text>
 
-        <line x1="730" y1="243" x2="946" y2="243" stroke="#3F3D39" stroke-width="1.4" opacity=".35"/>
+        <line x1="752" y1="294" x2="946" y2="294" stroke="#3F3D39" stroke-width="1.4" opacity=".35"/>
 
-        <line x1="730" y1="269" x2="743" y2="269" stroke="#3F3D39" stroke-width="2.4"/>
-        <text class="rowName" x="750" y="273">Mekaaninen E<tspan baseline-shift="sub" font-size="0.8em">mek</tspan></text>
-        <text class="rowVal"  id="mekVal" x="946" y="274" text-anchor="end">0,0 J</text>
+        <line x1="752" y1="322" x2="769" y2="322" stroke="#3F3D39" stroke-width="2.6"/>
+        <text class="rowName" x="780" y="329">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
+        <text class="rowVal" id="mekVal" x="946" y="329" text-anchor="end">0,0 J</text>
 
-        <text class="rowName" x="750" y="309">Alkuenergia E<tspan baseline-shift="sub" font-size="0.8em">0</tspan></text>
-        <text class="rowVal"  id="e0Val" x="946" y="310" text-anchor="end">0,0 J</text>
+        <text class="rowName" x="780" y="372">E<tspan baseline-shift="sub" font-size="0.72em">0</tspan></text>
+        <text class="rowVal" id="e0Val" x="946" y="372" text-anchor="end">0,0 J</text>
       </g>
-
-      <text class="tiny" x="730" y="344">E<tspan baseline-shift="sub" font-size="0.8em">mek</tspan> = E<tspan baseline-shift="sub" font-size="0.8em">k</tspan> + E<tspan baseline-shift="sub" font-size="0.8em">p</tspan></text>
-      <text class="tiny" x="730" y="366">E₀ = E<tspan baseline-shift="sub" font-size="0.8em">k</tspan> + E<tspan baseline-shift="sub" font-size="0.8em">p</tspan> + häviöt</text>
     </g>
   </svg>
 
@@ -195,12 +182,12 @@
   const $ = (id) => document.getElementById(id);
   const el = {
     groundG: $("groundG"), groundHatch: $("groundHatch"),
-    sceneFall: $("sceneFall"), fallBall: $("fallBall"), fallGuide: $("fallGuide"), fallGuideTxt: $("fallGuideTxt"),
+    sceneFall: $("sceneFall"), fallBall: $("fallBall"), fallGuide: $("fallGuide"),
     scenePend: $("scenePend"), pendRod: $("pendRod"), pendBob: $("pendBob"), pendArc: $("pendArc"),
-    pendLevel: $("pendLevel"), pendRef: $("pendRef"), pendRefTxt: $("pendRefTxt"), pendVert: $("pendVert"),
+    pendLevel: $("pendLevel"), pendRef: $("pendRef"), pendVert: $("pendVert"),
     sceneRamp: $("sceneRamp"), rampPath: $("rampPath"), rampHatch: $("rampHatch"),
     rampBlock: $("rampBlock"), rampLevel: $("rampLevel"),
-    hVal: $("hVal"), vVal: $("vVal"), noteTxt: $("noteTxt"),
+    hVal: $("hVal"), vVal: $("vVal"),
     barKe: $("barKe"), barPe: $("barPe"), barLoss: $("barLoss"),
     mekLine: $("mekLine"),
     keVal: $("keVal"), peVal: $("peVal"), lossVal: $("lossVal"), mekVal: $("mekVal"), e0Val: $("e0Val"),
@@ -294,13 +281,13 @@
   })();
 
   /* ---------------- tila ---------------- */
-  const st = { y: 0, v: 0, th: 0, om: 0, u: 0, done: false, note: "" };
+  const st = { y: 0, v: 0, th: 0, om: 0, u: 0, done: false };
   let E0 = 1;
 
   function resetState() {
     running = false;
     el.play.textContent = "Käynnistä";
-    st.done = false; st.note = "";
+    st.done = false;
     if (mode === "fall") {
       st.y = startVal; st.v = 0;
       E0 = m * g * st.y;
@@ -334,7 +321,6 @@
     if (st.y <= 0) {
       st.done = true; running = false;
       el.play.textContent = "Uudelleen";
-      st.note = `Juuri ennen osumaa kaikki energia on liike-energiaa: v = ${fmt(Math.abs(st.v), 1)} m/s`;
     }
   }
 
@@ -355,7 +341,6 @@
         st.v = 0;
         st.done = true; running = false;
         el.play.textContent = "Uudelleen";
-        st.note = "Kappale pysähtyi: mekaaninen energia on muuttunut kokonaan häviöiksi.";
         return;
       }
       a = aG - Math.sign(aG) * fr;
@@ -403,7 +388,6 @@
 
     el.hVal.textContent = fmt(h, 2);
     el.vVal.textContent = fmt(speed, 1);
-    el.noteTxt.textContent = st.note;
 
     // näyttämö
     el.sceneFall.style.display = mode === "fall" ? "" : "none";
@@ -416,10 +400,7 @@
       el.fallBall.setAttribute("cy", cy);
       el.fallGuide.setAttribute("y1", Math.min(GROUND - 2, cy + 16));
       el.fallGuide.setAttribute("y2", GROUND);
-      el.fallGuideTxt.setAttribute("y", (cy + 16 + GROUND) / 2);
-      const showGuide = st.y > 0.25;
-      el.fallGuide.style.display = showGuide ? "" : "none";
-      el.fallGuideTxt.style.display = showGuide ? "" : "none";
+      el.fallGuide.style.display = st.y > 0.25 ? "" : "none";
     } else if (mode === "pend") {
       const R = PEND_L * PEND_SC;
       const bx = PIV_X + R * Math.sin(st.th), by = PIV_Y + R * Math.cos(st.th);
