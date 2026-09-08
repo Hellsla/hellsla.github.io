@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ydinfuusio (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --yellow:#FFD95A;
+    --grey:#9A958C;
+    --slate:#6E7A82;
+    --coil:#4A5A63;
+    --he:#2E7D5B;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+    --ok:#2E7D5B;
+  }
+
+  .scene{ width:100%; height:100%; }
+  .scene text{ font-family:inherit; }
+
+  .h    { font-size:14px; fill:var(--faint); letter-spacing:.12em; }
+  .note { font-size:14px; fill:var(--muted); }
+  .msg  { font-size:21px; fill:var(--muted); }
+  .eq   { font-size:24px; fill:var(--ink); }
+  .cap  { font-size:19px; fill:var(--muted); }
+  .name { font-size:22px; fill:var(--ink); font-weight:700; }
+  .huge { font-size:56px; fill:var(--ink); font-weight:700; font-variant-numeric:tabular-nums; }
+  .state{ font-size:27px; font-weight:700; }
+  .tick { font-size:13px; fill:var(--faint); }
+  .frame{ fill:none; stroke:var(--line); stroke-width:1.4; }
+
+  /* mitat em-yksiköissä: JS sitoo koon kehyksen leveyteen, jotta
+     upotus iframeen säilyttää mittasuhteet */
+  .sim-tabs{
+    position:absolute; right:2.1em; top:1.1em;
+    display:flex; gap:.55em;
+    font-size:15px;
+  }
+  .sim-tabs .sim-btn{
+    font-size:1em; padding:.35em .9em;
+    border-width:1.5px; border-color:#D8D4CC; color:var(--muted);
+  }
+  .sim-tabs .sim-btn[aria-selected="true"]{
+    background:var(--ink); border-color:var(--ink); color:#fff;
+  }
+
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.2em;
+  }
+  .sim-controls[hidden]{ display:none; }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-sliderBox{ width:auto; gap:.6em; }
+  .sim-controls .sim-sliderBox label{ font-size:.94em; }
+  .sim-controls .sim-range{ width:9.5em; }
+  .sim-controls .out{
+    min-width:3ch; text-align:right; font-weight:700; color:var(--ink);
+    font-size:.94em; font-variant-numeric:tabular-nums;
+  }
+  .sim-controls .out.wide{ min-width:8.5ch; }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Ydinfuusion simulaatio: yksi reaktio, plasma ja ITER-tokamak">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Ydinfuusion simulaatio kalvokäyttöön">
+
+<defs>
+  <radialGradient id="burst">
+    <stop offset="0%"   stop-color="#FFD95A" stop-opacity="0.9"/>
+    <stop offset="60%"  stop-color="#F28C28" stop-opacity="0.32"/>
+    <stop offset="100%" stop-color="#F28C28" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="plasmaGlow">
+    <stop offset="0%"   stop-color="#FFD95A" stop-opacity="0.85"/>
+    <stop offset="55%"  stop-color="#F28C28" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#D84A62" stop-opacity="0.15"/>
+  </radialGradient>
+  <clipPath id="fieldClip"><rect x="40" y="62" width="620" height="326" rx="8"/></clipPath>
+</defs>
+
+<text id="msg" x="480" y="420" text-anchor="middle" class="msg">Kuumenna ytimet ja törmäytä ne.</text>
+
+<!-- ==================== 1 · YKSI REAKTIO ==================== -->
+<g id="view1">
+  <text x="40" y="38" class="eq" style="font-size:22px">²H + ³H  →  ⁴He + n</text>
+  <text x="40" y="62" class="note">Fuusio onnistuu vasta yli 100 miljoonan asteen lämpötilassa.</text>
+
+  <circle id="v1Burst" cx="480" cy="235" r="0" fill="url(#burst)" opacity="0"/>
+
+  <g id="v1Nuc"></g>
+
+  <text id="v1Pop" x="480" y="120" text-anchor="middle" class="huge"
+        style="font-size:40px;fill:var(--orange)" opacity="0">17,6 MeV</text>
+
+  <g id="v1LabD">
+    <text x="0" y="0" text-anchor="middle" class="name">²H</text>
+    <text x="0" y="24" text-anchor="middle" class="note">deuterium</text>
+  </g>
+  <g id="v1LabT">
+    <text x="0" y="0" text-anchor="middle" class="name">³H</text>
+    <text x="0" y="24" text-anchor="middle" class="note">tritium</text>
+  </g>
+  <g id="v1LabHe" opacity="0">
+    <text x="0" y="0" text-anchor="middle" class="name" style="fill:var(--he)">⁴He</text>
+    <text x="0" y="24" text-anchor="middle" class="note">3,5 MeV</text>
+  </g>
+  <g id="v1LabN" opacity="0">
+    <text x="0" y="0" text-anchor="middle" class="name">n</text>
+    <text x="0" y="24" text-anchor="middle" class="note">14,1 MeV</text>
+  </g>
+
+  <g>
+    <circle cx="398" cy="368" r="6" fill="var(--red)"/>
+    <text x="410" y="373" class="note">protoni</text>
+    <circle cx="476" cy="368" r="6" fill="var(--slate)"/>
+    <text x="488" y="373" class="note">neutroni</text>
+  </g>
+</g>
+
+<!-- ==================== 2 · PLASMA ==================== -->
+<g id="view2" style="display:none">
+  <rect x="40" y="62" width="620" height="326" rx="8" fill="#FCFCFB"
+        stroke="var(--line)" stroke-width="1.4" stroke-dasharray="6 6"/>
+
+  <g clip-path="url(#fieldClip)">
+    <g id="v2Parts"></g>
+    <g id="v2Flash"></g>
+  </g>
+
+  <text x="690" y="120" class="h">FUUSIOITA</text>
+  <text id="v2Count" x="690" y="176" class="huge">0</text>
+  <text x="690" y="206" class="cap">17,6 MeV kustakin</text>
+
+  <g>
+    <circle cx="699" cy="264" r="9" fill="var(--blue)"/>
+    <text x="716" y="270" class="note">²H · deuterium</text>
+    <circle cx="699" cy="298" r="9" fill="var(--orange)"/>
+    <text x="716" y="304" class="note">³H · tritium</text>
+    <circle cx="699" cy="332" r="8" fill="var(--he)"/>
+    <text x="716" y="338" class="note">⁴He · heliumydin</text>
+    <circle cx="699" cy="366" r="5" fill="var(--ink)"/>
+    <text x="716" y="372" class="note">neutroni</text>
+  </g>
+</g>
+
+<!-- ==================== 3 · ITER-TOKAMAK ==================== -->
+<g id="view3" style="display:none">
+  <text x="40" y="52" class="h">ITER-TOKAMAKIN POIKKILEIKKAUS</text>
+
+  <line x1="150" y1="86" x2="150" y2="392" stroke="var(--faint)"
+        stroke-width="1.2" stroke-dasharray="5 6"/>
+  <text x="150" y="80" text-anchor="middle" class="tick">akseli</text>
+
+  <path id="v3Coil"   fill="none" stroke="var(--coil)" stroke-width="9" stroke-linejoin="round"/>
+  <path id="v3Vessel" fill="#FBFAF8" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round"/>
+  <path id="v3Plasma" fill="url(#plasmaGlow)" stroke="none" opacity="0.25"/>
+  <path id="v3PlasmaEdge" fill="none" stroke="var(--orange)" stroke-width="1.6"
+        stroke-dasharray="5 5" opacity="0.6"/>
+
+  <rect x="152" y="104" width="30" height="256" rx="5" fill="var(--coil)"/>
+  <text x="167" y="376" text-anchor="middle" class="tick">solenoidi</text>
+
+  <g id="v3Parts"></g>
+  <g id="v3Neut"></g>
+  <g id="v3Flash"></g>
+
+  <text x="480" y="104" class="h">ENERGIAKERROIN Q</text>
+  <text id="v3Q" x="480" y="162" class="huge">0,0</text>
+  <text id="v3State" x="480" y="200" class="state" style="fill:var(--muted)">Ei riitä</text>
+  <text id="v3Sub" x="480" y="226" class="note">plasma kuluttaa enemmän kuin tuottaa</text>
+
+  <text x="480" y="272" class="h">MATKA SYTTYMISEEN</text>
+  <rect x="480" y="284" width="440" height="16" rx="8" fill="#F0EEEA"/>
+  <rect id="v3Bar" x="480" y="284" width="0" height="16" rx="8" fill="var(--orange)"/>
+  <g id="v3Ticks"></g>
+
+  <g>
+    <circle cx="486" cy="366" r="7" fill="var(--blue)"/>
+    <text x="500" y="371" class="note">²H</text>
+    <circle cx="540" cy="366" r="7" fill="var(--orange)"/>
+    <text x="554" y="371" class="note">³H</text>
+    <circle cx="594" cy="366" r="6" fill="var(--he)"/>
+    <text x="608" y="371" class="note">⁴He</text>
+    <circle cx="664" cy="366" r="5" fill="var(--ink)"/>
+    <text x="678" y="371" class="note">neutroni vie energian seinämään</text>
+  </g>
+</g>
+
+</svg>
+
+<div class="sim-tabs" role="tablist" aria-label="Simulaation osat">
+  <button class="sim-btn" type="button" role="tab" id="tab1" aria-controls="view1" aria-selected="true">1 · Yksi reaktio</button>
+  <button class="sim-btn" type="button" role="tab" id="tab2" aria-controls="view2" aria-selected="false">2 · Plasma</button>
+  <button class="sim-btn" type="button" role="tab" id="tab3" aria-controls="view3" aria-selected="false">3 · ITER</button>
+</div>
+
+<div class="sim-controls" id="ctrl1">
+  <div class="sim-sliderBox">
+    <label for="v1T">Lämpötila</label>
+    <input class="sim-range" id="v1T" type="range" min="20" max="250" step="5" value="60">
+    <span class="out wide" id="v1TOut">60 milj. °C</span>
+  </div>
+  <button class="sim-btn primary" type="button" id="v1Fire">Törmäytä</button>
+  <button class="sim-btn" type="button" id="v1Reset">Nollaa</button>
+</div>
+
+<div class="sim-controls" id="ctrl2" hidden>
+  <div class="sim-sliderBox">
+    <label for="v2T">Lämpötila</label>
+    <input class="sim-range" id="v2T" type="range" min="20" max="250" step="5" value="150">
+    <span class="out wide" id="v2TOut">150 milj. °C</span>
+  </div>
+  <button class="sim-btn" type="button" id="v2Reset">Nollaa</button>
+</div>
+
+<div class="sim-controls" id="ctrl3" hidden>
+  <div class="sim-sliderBox">
+    <label for="v3T">Lämpötila</label>
+    <input class="sim-range" id="v3T" type="range" min="20" max="300" step="5" value="150">
+    <span class="out wide" id="v3TOut">150 milj. °C</span>
+  </div>
+  <div class="sim-sliderBox">
+    <label for="v3N">Tiheys</label>
+    <input class="sim-range" id="v3N" type="range" min="20" max="120" step="5" value="100">
+    <span class="out" id="v3NOut">100 %</span>
+  </div>
+  <button class="sim-btn" type="button" id="v3Reset">Nollaa</button>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+/* ---------------- yhteiset apuvälineet ---------------- */
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+
+function mk(tag, attrs){
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+}
+
+const lerp    = (a, b, t) => a + (b - a) * t;
+const clamp   = (v, a, b) => v < a ? a : (v > b ? b : v);
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+const fmt     = (n, d = 1) => n.toFixed(d).replace(".", ",");
+
+const UNSUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5",
+               "⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-","⁺":"+"};
+const isSup = c => Object.prototype.hasOwnProperty.call(UNSUP, c);
+
+/* Arialista puuttuu osa yläindeksimerkeistä, joten ne ladotaan tspaneilla. */
+function typeset(el, str){
+  if(el.__typeset === str) return;
+  el.__typeset = str;
+  while(el.firstChild) el.removeChild(el.firstChild);
+
+  const runs = [];
+  for(const ch of str){
+    const s = isSup(ch);
+    const last = runs[runs.length - 1];
+    if(last && last.sup === s) last.text += s ? UNSUP[ch] : ch;
+    else runs.push({ sup: s, text: s ? UNSUP[ch] : ch });
+  }
+
+  let raised = false;
+  for(const run of runs){
+    const t = document.createElementNS(NS, "tspan");
+    if(run.sup){
+      t.setAttribute("font-size", "0.66em");
+      t.setAttribute("dy", "-0.52em");
+      raised = true;
+    }else if(raised){
+      t.setAttribute("dy", "0.34em");
+      raised = false;
+    }
+    t.textContent = run.text;
+    el.appendChild(t);
+  }
+}
+
+const supHTML = s => s.replace(/[⁰¹²³⁴-⁹⁺⁻]+/g,
+  m => "<sup>" + Array.from(m).map(c => UNSUP[c]).join("") + "</sup>");
+
+const msgEl = $("msg");
+const setMsg = t => typeset(msgEl, t);
+
+/* fuusioon tarvittava lämpötila, miljoonaa astetta */
+const T_KYNNYS = 100;
+
+/* ==================== 1 · YKSI REAKTIO ==================== */
+
+const V1 = (() => {
+  const CY = 235, NR = 15;
+  const CM = 480;                 // massakeskipiste pysyy paikallaan
+  const D0 = 580;                 // aloitusetäisyys
+  const CONTACT = 62;             // ytimet koskettavat
+  const K = 6200;                 // Coulombin valli: kääntöetäisyys = K / T
+  const LAB_DY = 54;
+
+  const gNuc = $("v1Nuc"), burst = $("v1Burst"), pop = $("v1Pop");
+  const labD = $("v1LabD"), labT = $("v1LabT"),
+        labHe = $("v1LabHe"), labN = $("v1LabN");
+
+  /* deuteriumissa 1 p + 1 n, tritiumissa 1 p + 2 n */
+  const parts = [
+    { host: "D", type: "p", ox: -14, oy:  0 },
+    { host: "D", type: "n", ox:  14, oy:  0 },
+    { host: "T", type: "p", ox:   0, oy:-15 },
+    { host: "T", type: "n", ox: -14, oy: 10 },
+    { host: "T", type: "n", ox:  14, oy: 10, loose: true }   // tämä vapautuu
+  ].map(p => {
+    const el = mk("circle", { r: NR, fill: p.type === "p" ? "var(--red)" : "var(--slate)",
+                              stroke: "#fff", "stroke-width": 1.6 });
+    gNuc.appendChild(el);
+    return Object.assign({ el, x: 0, y: 0 }, p);
+  });
+
+  /* ⁴He: 2 p + 2 n */
+  const HE_SLOTS = [{ x:-16, y:0 }, { x:16, y:0 }, { x:0, y:-16 }, { x:0, y:16 }];
+
+  let state = "idle", d = D0, t = 0;
+  let he = { x: CM, y: CY, vx: 0, vy: 0 };
+  let nn = { x: CM, y: CY, vx: 0, vy: 0 };
+
+  const temp = () => parseInt($("v1T").value, 10);
+  const turnDist = T => K / T;
+
+  function place(p, cx, cy){
+    p.x = cx + p.ox; p.y = cy + p.oy;
+    p.el.setAttribute("cx", p.x.toFixed(1));
+    p.el.setAttribute("cy", p.y.toFixed(1));
+  }
+
+  function setLab(g, x, y, show){
+    g.setAttribute("transform", "translate(" + x.toFixed(1) + "," + y.toFixed(1) + ")");
+    g.setAttribute("opacity", show ? "1" : "0");
+  }
+
+  function reset(){
+    state = "idle"; d = D0; t = 0;
+    parts.forEach(p => { p.el.setAttribute("opacity", "1"); p.el.setAttribute("r", NR); });
+    burst.setAttribute("opacity", "0"); burst.setAttribute("r", "0");
+    burst.setAttribute("cx", CM); burst.setAttribute("cy", CY);
+    pop.setAttribute("opacity", "0");
+    labHe.setAttribute("opacity", "0");
+    labN.setAttribute("opacity", "0");
+    $("v1Fire").disabled = false;
+    setMsg("Valitse lämpötila ja törmäytä ytimet.");
+    draw();
+  }
+
+  function draw(){
+    if(state === "fusion" || state === "done"){
+      /* ⁴He: D:n protoni ja neutroni sekä T:n protoni ja toinen neutroni */
+      const heParts = [parts[0], parts[1], parts[2], parts[3]];
+      heParts.forEach((p, i) => {
+        p.el.setAttribute("cx", (he.x + HE_SLOTS[i].x).toFixed(1));
+        p.el.setAttribute("cy", (he.y + HE_SLOTS[i].y).toFixed(1));
+      });
+      const free = parts[4];
+      free.el.setAttribute("cx", nn.x.toFixed(1));
+      free.el.setAttribute("cy", nn.y.toFixed(1));
+
+      setLab(labD, 0, 0, false);
+      setLab(labT, 0, 0, false);
+      setLab(labHe, he.x, he.y + LAB_DY, true);
+      setLab(labN,  nn.x, nn.y + LAB_DY - 14, true);
+      return;
+    }
+
+    /* liikemäärän säilyminen: kevyempi deuterium liikkuu nopeammin */
+    const xD = CM - d * 0.6, xT = CM + d * 0.4;
+    parts.forEach(p => place(p, p.host === "D" ? xD : xT, CY));
+    setLab(labD, xD, CY + LAB_DY, true);
+    setLab(labT, xT, CY + LAB_DY, true);
+  }
+
+  function fire(){
+    if(state !== "idle") return;
+    state = "approach"; t = 0;
+    $("v1Fire").disabled = true;
+    setMsg("Ytimet lähestyvät toisiaan.");
+  }
+
+  function doFusion(){
+    state = "fusion"; t = 0;
+    he.x = CM; he.y = CY;
+    nn.x = CM; nn.y = CY;
+    /* liike-energiat 3,5 MeV ja 14,1 MeV suhtautuvat kuin 1 : 4,
+       joten neutroni saa nelinkertaisen nopeuden */
+    const a = -18 * Math.PI / 180;
+    he.vx = -Math.cos(a) * 55;  he.vy = -Math.sin(a) * 55;
+    nn.vx =  Math.cos(a) * 220; nn.vy =  Math.sin(a) * 220;
+    parts[4].el.setAttribute("fill", "var(--slate)");
+    burst.setAttribute("cx", CM); burst.setAttribute("cy", CY);
+    setMsg("Fuusio! Ytimet yhtyivät heliumytimeksi ja vapauttivat neutronin.");
+  }
+
+  function step(dt){
+    t += dt;
+    const T = temp();
+
+    if(state === "approach" || state === "bounce"){
+      const dmin = turnDist(T);
+      const v0 = 260 * Math.sqrt(T / 100);
+      const v = v0 * Math.sqrt(Math.max(0, 1 - dmin / Math.max(d, 1)));
+
+      if(state === "approach"){
+        if(dmin <= CONTACT && d <= CONTACT){ doFusion(); }
+        else if(v < 8){
+          state = "bounce";
+          setMsg("Liian kylmä: sähköinen poistovoima kääntää ytimet takaisin.");
+        }else{
+          d -= v * dt;
+        }
+      }else{
+        d += v * dt;
+        if(d >= D0){
+          d = D0; state = "idle";
+          $("v1Fire").disabled = false;
+          setMsg("Ytimet eivät päässeet tarpeeksi lähelle. Nosta lämpötilaa yli " +
+                 T_KYNNYS + " miljoonan asteen.");
+        }
+      }
+    }
+
+    if(state === "fusion"){
+      he.x += he.vx * dt; he.y += he.vy * dt;
+      nn.x += nn.vx * dt; nn.y += nn.vy * dt;
+
+      const b = clamp(t / 0.7, 0, 1);
+      burst.setAttribute("r", (b * 190).toFixed(0));
+      burst.setAttribute("opacity", (0.9 * (1 - b)).toFixed(3));
+
+      const q = clamp(t / 0.6, 0, 1);
+      pop.setAttribute("opacity", q.toFixed(3));
+      pop.setAttribute("y", (150 - 34 * easeOut(q)).toFixed(0));
+
+      if(t >= 1.6){
+        state = "done";
+        setMsg("Neutroni vie energiasta 14,1 MeV ja heliumydin 3,5 MeV.");
+      }
+    }
+
+    draw();
+  }
+
+  $("v1Fire").addEventListener("click", fire);
+  $("v1Reset").addEventListener("click", reset);
+  $("v1T").addEventListener("input", ev => {
+    $("v1TOut").textContent = ev.target.value + " milj. °C";
+  });
+
+  return { step, reset };
+})();
+
+/* ==================== 2 · PLASMA ==================== */
+
+const V2 = (() => {
+  const X0 = 46, X1 = 654, Y0 = 68, Y1 = 382;
+  const R_ION = 9, R_HE = 8, R_N = 5;
+  const N_D = 14, N_T = 14;
+
+  const gP = $("v2Parts"), gX = $("v2Flash");
+
+  let parts = [], flashes = [], count = 0;
+
+  const temp = () => parseInt($("v2T").value, 10);
+  const speed = () => 9 * Math.sqrt(temp());
+  const clear = g => { while(g.firstChild) g.removeChild(g.firstChild); };
+
+  function addIon(kind, x, y){
+    const v = speed() * (0.75 + Math.random() * 0.5);
+    const a = Math.random() * Math.PI * 2;
+    const el = mk("circle", { r: R_ION, fill: kind === "D" ? "var(--blue)" : "var(--orange)",
+                              stroke: "#fff", "stroke-width": 1.2 });
+    gP.appendChild(el);
+    parts.push({ kind, x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, r: R_ION, el });
+  }
+
+  function addProduct(kind, x, y, a, v, life){
+    const el = mk("circle", { r: kind === "He" ? R_HE : R_N,
+                              fill: kind === "He" ? "var(--he)" : "var(--ink)" });
+    gP.appendChild(el);
+    parts.push({ kind, x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v,
+                 r: kind === "He" ? R_HE : R_N, el, life: 0, max: life });
+  }
+
+  function addFlash(x, y){
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 5,
+                              fill: "none", stroke: "var(--yellow)", "stroke-width": 2.6 });
+    gX.appendChild(el);
+    flashes.push({ el, life: 0, max: 0.5 });
+  }
+
+  const rx = () => X0 + 20 + Math.random() * (X1 - X0 - 40);
+  const ry = () => Y0 + 20 + Math.random() * (Y1 - Y0 - 40);
+
+  function reset(){
+    clear(gP); clear(gX);
+    parts = []; flashes = []; count = 0;
+    for(let i = 0; i < N_D; i++) addIon("D", rx(), ry());
+    for(let i = 0; i < N_T; i++) addIon("T", rx(), ry());
+    $("v2Count").textContent = "0";
+    tempMsg();
+  }
+
+  function tempMsg(){
+    const T = temp();
+    $("v2TOut").textContent = T + " milj. °C";
+    if(T < 80)       setMsg("Liian kylmää: ytimet vain kimpoavat toisistaan.");
+    else if(T < 150) setMsg("Osa törmäyksistä johtaa jo fuusioon.");
+    else             setMsg("Kuumassa plasmassa fuusioita tapahtuu tiheään.");
+  }
+
+  function fuse(a, b){
+    const x = (a.x + b.x) / 2, y = (a.y + b.y) / 2;
+    count++;
+    addFlash(x, y);
+    const ang = Math.random() * Math.PI * 2;
+    addProduct("He", x, y, ang, 34, 2.4);
+    addProduct("n",  x, y, ang + Math.PI, 210, 4);
+    addIon("D", rx(), ry());     // polttoainetta syötetään jatkuvasti
+    addIon("T", rx(), ry());
+  }
+
+  function step(dt){
+    const T = temp();
+    const pFus = clamp((T - 60) / 220, 0, 0.92);
+    const dead = new Set();
+
+    for(const p of parts){
+      p.x += p.vx * dt;
+      p.y += p.vy * dt;
+
+      if(p.kind === "D" || p.kind === "T"){
+        if(p.x < X0 + p.r){ p.x = X0 + p.r; p.vx = Math.abs(p.vx); }
+        if(p.x > X1 - p.r){ p.x = X1 - p.r; p.vx = -Math.abs(p.vx); }
+        if(p.y < Y0 + p.r){ p.y = Y0 + p.r; p.vy = Math.abs(p.vy); }
+        if(p.y > Y1 - p.r){ p.y = Y1 - p.r; p.vy = -Math.abs(p.vy); }
+      }else{
+        p.life += dt;
+        if(p.life >= p.max || p.x < X0 - 20 || p.x > X1 + 20 ||
+           p.y < Y0 - 20 || p.y > Y1 + 20) dead.add(p);
+        p.el.setAttribute("opacity", clamp(1 - p.life / p.max, 0, 1).toFixed(2));
+      }
+    }
+
+    /* ionien törmäykset */
+    for(let i = 0; i < parts.length; i++){
+      const a = parts[i];
+      if(a.kind !== "D" && a.kind !== "T") continue;
+      if(dead.has(a)) continue;
+      for(let j = i + 1; j < parts.length; j++){
+        const b = parts[j];
+        if(b.kind !== "D" && b.kind !== "T") continue;
+        if(dead.has(b)) continue;
+
+        const dx = b.x - a.x, dy = b.y - a.y;
+        const dist = Math.hypot(dx, dy);
+        if(dist > a.r + b.r || dist === 0) continue;
+
+        const mixed = a.kind !== b.kind;
+        if(mixed && Math.random() < pFus){
+          dead.add(a); dead.add(b);
+          fuse(a, b);
+          break;
+        }
+
+        /* kimmoinen törmäys yhtä raskaille hiukkasille */
+        const nx = dx / dist, ny = dy / dist;
+        const rel = (b.vx - a.vx) * nx + (b.vy - a.vy) * ny;
+        if(rel < 0){
+          a.vx += rel * nx; a.vy += rel * ny;
+          b.vx -= rel * nx; b.vy -= rel * ny;
+        }
+        const push = (a.r + b.r - dist) / 2 + 0.5;
+        a.x -= nx * push; a.y -= ny * push;
+        b.x += nx * push; b.y += ny * push;
+      }
+    }
+
+    if(dead.size){
+      parts = parts.filter(p => {
+        if(dead.has(p)){ gP.removeChild(p.el); return false; }
+        return true;
+      });
+    }
+
+    for(const p of parts){
+      p.el.setAttribute("cx", p.x.toFixed(1));
+      p.el.setAttribute("cy", p.y.toFixed(1));
+    }
+
+    for(let i = flashes.length - 1; i >= 0; i--){
+      const f = flashes[i];
+      f.life += dt;
+      if(f.life >= f.max){ gX.removeChild(f.el); flashes.splice(i, 1); continue; }
+      const k = f.life / f.max;
+      f.el.setAttribute("r", (5 + k * 26).toFixed(1));
+      f.el.setAttribute("opacity", (1 - k).toFixed(3));
+    }
+
+    $("v2Count").textContent = count;
+  }
+
+  $("v2T").addEventListener("input", tempMsg);
+  $("v2Reset").addEventListener("click", reset);
+
+  return { step, reset };
+})();
+
+/* ==================== 3 · ITER-TOKAMAK ==================== */
+
+const V3 = (() => {
+  const CX = 310, CY = 232;
+  const gParts = $("v3Parts"), gNeut = $("v3Neut"), gFlash = $("v3Flash");
+
+  /* tokamakin poikkileikkaus: D-muoto, jossa venymä (kappa) ja kolmiomaisuus (delta) */
+  function dShape(a, kappa, delta, n = 72){
+    let d = "";
+    for(let i = 0; i <= n; i++){
+      const th = i / n * Math.PI * 2;
+      const x = CX + a * Math.cos(th + delta * Math.sin(th));
+      const y = CY + kappa * a * Math.sin(th);
+      d += (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+    }
+    return d + "Z";
+  }
+
+  $("v3Coil").setAttribute("d",   dShape(105, 1.45, 0.22));
+  $("v3Vessel").setAttribute("d", dShape(88,  1.45, 0.28));
+  const plasmaPath = dShape(70, 1.50, 0.35);
+  $("v3Plasma").setAttribute("d", plasmaPath);
+  $("v3PlasmaEdge").setAttribute("d", plasmaPath);
+
+  /* hiukkasten koossapito: plasman sisään sovitettu ellipsi */
+  const EA = 60, EB = 95;
+  const WA = 86, WB = 128;        // seinämä, johon neutronit törmäävät
+
+  let ions = [], neuts = [], flashes = [];
+  let emit = 0;
+
+  const temp    = () => parseInt($("v3T").value, 10);
+  const density = () => parseInt($("v3N").value, 10);
+  const Qvalue  = () => 10 * Math.pow(density() / 100, 2) * Math.pow(temp() / 150, 2);
+
+  const clear = g => { while(g.firstChild) g.removeChild(g.firstChild); };
+
+  function buildIons(){
+    clear(gParts);
+    ions = [];
+    const n = Math.round(10 + density() / 100 * 26);
+    for(let i = 0; i < n; i++){
+      const th = Math.random() * Math.PI * 2;
+      const rr = Math.sqrt(Math.random()) * 0.92;
+      const kind = i % 2 ? "T" : "D";
+      const el = mk("circle", { r: 4, fill: kind === "D" ? "var(--blue)" : "var(--orange)" });
+      gParts.appendChild(el);
+      ions.push({ x: CX + EA * rr * Math.cos(th), y: CY + EB * rr * Math.sin(th),
+                  vx: 0, vy: 0, el });
+    }
+    retarget();
+  }
+
+  function retarget(){
+    const v = 4 * Math.sqrt(temp());
+    ions.forEach(p => {
+      const a = Math.random() * Math.PI * 2;
+      p.vx = Math.cos(a) * v; p.vy = Math.sin(a) * v;
+    });
+  }
+
+  function addNeutron(){
+    const th = Math.random() * Math.PI * 2;
+    const rr = Math.sqrt(Math.random()) * 0.85;
+    const x = CX + EA * rr * Math.cos(th), y = CY + EB * rr * Math.sin(th);
+    const a = Math.random() * Math.PI * 2;
+    const el = mk("circle", { r: 3.6, fill: "var(--ink)" });
+    gNeut.appendChild(el);
+    neuts.push({ x, y, vx: Math.cos(a) * 175, vy: Math.sin(a) * 175, el });
+  }
+
+  function addFlash(x, y){
+    if(flashes.length > 30) return;
+    const el = mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 3,
+                              fill: "none", stroke: "var(--yellow)", "stroke-width": 2.2 });
+    gFlash.appendChild(el);
+    flashes.push({ el, life: 0, max: 0.4 });
+  }
+
+  /* asteikko Q = 0,1 ... 50 logaritmisena */
+  const BAR_X = 480, BAR_W = 440;
+  const qPos = q => clamp((Math.log10(Math.max(q, 0.05)) + 1) / (Math.log10(50) + 1), 0, 1);
+
+  (function buildTicks(){
+    const g = $("v3Ticks");
+    [[1, "Q = 1"], [10, "ITER: Q = 10"]].forEach(([q, label]) => {
+      const x = BAR_X + qPos(q) * BAR_W;
+      g.appendChild(mk("line", { x1: x.toFixed(1), x2: x.toFixed(1), y1: 279, y2: 305,
+                                 stroke: "var(--faint)", "stroke-width": 1.4 }));
+      const t = mk("text", { x: x.toFixed(1), y: 320, "text-anchor": "middle", class: "tick" });
+      t.textContent = label;
+      g.appendChild(t);
+    });
+  })();
+
+  function updatePanel(){
+    const Q = Qvalue();
+    $("v3TOut").textContent = temp() + " milj. °C";
+    $("v3NOut").textContent = density() + " %";
+    typeset($("v3Q"), Q >= 10 ? fmt(Q, 0) : fmt(Q, 1));
+
+    $("v3Bar").setAttribute("width", (qPos(Q) * BAR_W).toFixed(1));
+    $("v3Bar").setAttribute("fill", Q >= 10 ? "var(--ok)"
+                                  : Q >= 1  ? "var(--orange)" : "var(--grey)");
+
+    let word, sub, color, msg;
+    if(Q < 1){
+      word = "Ei riitä"; sub = "plasma kuluttaa enemmän kuin tuottaa"; color = "var(--muted)";
+      msg = "Plasma ei vielä tuota enempää energiaa kuin sen lämmittäminen kuluttaa.";
+    }else if(Q < 5){
+      word = "Energiatasapaino"; sub = "tuotto ylittää lämmityksen"; color = "var(--orange)";
+      msg = "Fuusio tuottaa jo enemmän energiaa kuin lämmitys kuluttaa.";
+    }else if(Q < 10){
+      word = "Lähellä tavoitetta"; sub = "Q lähestyy kymmentä"; color = "var(--orange)";
+      msg = "Lämpötila ja tiheys ovat lähes ITERin tavoitteessa.";
+    }else if(Q < 30){
+      word = "ITERin tavoite"; sub = "kymmenkertainen energiantuotto"; color = "var(--ok)";
+      msg = "ITERin tavoite: fuusio tuottaa kymmenkertaisesti lämmitykseen verrattuna.";
+    }else{
+      word = "Syttyminen"; sub = "plasma lämmittää itsensä"; color = "var(--ok)";
+      msg = "Plasma lämmittää itsensä: fuusio jatkuu ilman ulkoista lämmitystä.";
+    }
+    typeset($("v3State"), word);
+    $("v3State").style.fill = color;
+    typeset($("v3Sub"), sub);
+    setMsg(msg);
+
+    const glow = clamp(0.12 + Q / 20 * 0.6, 0.12, 0.85);
+    $("v3Plasma").setAttribute("opacity", glow.toFixed(2));
+  }
+
+  function step(dt){
+    const Q = Qvalue();
+
+    for(const p of ions){
+      p.x += p.vx * dt; p.y += p.vy * dt;
+      const dx = (p.x - CX) / EA, dy = (p.y - CY) / EB;
+      if(dx * dx + dy * dy > 1){
+        /* magneettikenttä pitää hiukkaset koossa: käännetään takaisin sisään */
+        const nx = dx / EA, ny = dy / EB;
+        const len = Math.hypot(nx, ny) || 1;
+        const ux = nx / len, uy = ny / len;
+        const rel = p.vx * ux + p.vy * uy;
+        if(rel > 0){ p.vx -= 2 * rel * ux; p.vy -= 2 * rel * uy; }
+      }
+      p.el.setAttribute("cx", p.x.toFixed(1));
+      p.el.setAttribute("cy", p.y.toFixed(1));
+    }
+
+    emit += dt * clamp(0.8 + Q * 1.6, 0, 26);
+    while(emit >= 1){ emit -= 1; addNeutron(); }
+
+    for(let i = neuts.length - 1; i >= 0; i--){
+      const p = neuts[i];
+      p.x += p.vx * dt; p.y += p.vy * dt;
+      const dx = (p.x - CX) / WA, dy = (p.y - CY) / WB;
+      if(dx * dx + dy * dy > 1){
+        addFlash(p.x, p.y);
+        gNeut.removeChild(p.el);
+        neuts.splice(i, 1);
+        continue;
+      }
+      p.el.setAttribute("cx", p.x.toFixed(1));
+      p.el.setAttribute("cy", p.y.toFixed(1));
+    }
+
+    for(let i = flashes.length - 1; i >= 0; i--){
+      const f = flashes[i];
+      f.life += dt;
+      if(f.life >= f.max){ gFlash.removeChild(f.el); flashes.splice(i, 1); continue; }
+      const k = f.life / f.max;
+      f.el.setAttribute("r", (3 + k * 15).toFixed(1));
+      f.el.setAttribute("opacity", (1 - k).toFixed(3));
+    }
+  }
+
+  function reset(){
+    $("v3T").value = 150;
+    $("v3N").value = 100;
+    clear(gNeut); clear(gFlash);
+    neuts = []; flashes = []; emit = 0;
+    buildIons();
+    updatePanel();
+  }
+
+  $("v3T").addEventListener("input", () => { retarget(); updatePanel(); });
+  $("v3N").addEventListener("input", () => { buildIons(); updatePanel(); });
+  $("v3Reset").addEventListener("click", reset);
+
+  buildIons();
+  updatePanel();
+
+  return { step, reset };
+})();
+
+/* ==================== VÄLILEHDET JA PÄÄSILMUKKA ==================== */
+
+const VIEWS = [
+  { view: $("view1"), ctrl: $("ctrl1"), tab: $("tab1"), mod: V1 },
+  { view: $("view2"), ctrl: $("ctrl2"), tab: $("tab2"), mod: V2 },
+  { view: $("view3"), ctrl: $("ctrl3"), tab: $("tab3"), mod: V3 }
+];
+
+let active = 0;
+
+function select(i){
+  active = i;
+  VIEWS.forEach((v, k) => {
+    v.view.style.display = k === i ? "" : "none";
+    v.ctrl.hidden = k !== i;
+    v.tab.setAttribute("aria-selected", k === i ? "true" : "false");
+  });
+  VIEWS[i].mod.reset();
+}
+
+VIEWS.forEach((v, i) => v.tab.addEventListener("click", () => select(i)));
+
+document.querySelectorAll(".scene text").forEach(el => typeset(el, el.textContent));
+document.querySelectorAll(".sim-sliderBox label").forEach(el => { el.innerHTML = supHTML(el.textContent); });
+
+/* välilehdet ja ohjainrivi ovat HTML:ää SVG:n päällä, joten sidotaan
+   niiden koko kehyksen leveyteen */
+const wrapEl = document.querySelector(".sim-wrap");
+const tabsEl = document.querySelector(".sim-tabs");
+const ctrlEls = document.querySelectorAll(".sim-controls");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(!w) return;
+  const k = w / 960;
+  tabsEl.style.fontSize = (k * 15).toFixed(2) + "px";
+  ctrlEls.forEach(el => { el.style.fontSize = (k * 18).toFixed(2) + "px"; });
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  VIEWS[active].mod.step(dt);
+  requestAnimationFrame(frame);
+}
+
+select(0);
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
