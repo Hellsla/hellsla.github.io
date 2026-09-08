@@ -31,10 +31,8 @@
   .rod     { stroke:var(--ink); stroke-width:2.6; stroke-linecap:round; }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .readout    { font-size:27px; font-weight:600; }
-  .readoutUnit{ font-size:19px; font-weight:500; opacity:.75; }
-  .rowName    { font-size:23px; }
-  .rowVal     { font-size:24px; font-weight:600; font-variant-numeric:tabular-nums; }
+  .segLabel   { font-size:25px; font-weight:600; fill:#fff; text-anchor:middle; }
+  .barTag     { font-size:25px; font-weight:600; }
   .barEdge    { stroke:var(--ink); stroke-width:1.6; }
 
   /* --- ohjaimet --- */
@@ -114,48 +112,30 @@
         </g>
       </g>
 
-      <!-- lukemat -->
-      <text class="readout" x="40" y="62">h = <tspan id="hVal">0,00</tspan><tspan class="readoutUnit"> m</tspan></text>
-      <text class="readout" x="40" y="92">v = <tspan id="vVal">0,0</tspan><tspan class="readoutUnit"> m/s</tspan></text>
     </g>
 
     <!-- ============ ENERGIAPANEELI ============ -->
     <g id="panel">
       <!-- E0-taso -->
-      <line x1="652" y1="92" x2="946" y2="92" stroke="#3F3D39" stroke-width="1.6" stroke-dasharray="6 6" opacity=".55"/>
+      <line x1="700" y1="92" x2="912" y2="92" stroke="#3F3D39" stroke-width="1.8" stroke-dasharray="7 6" opacity=".6"/>
+      <text class="barTag" x="694" y="100" text-anchor="end">E<tspan baseline-shift="sub" font-size="0.72em">0</tspan></text>
 
       <!-- pylväs -->
-      <rect x="660" y="92" width="64" height="280" fill="#efeae3" rx="4"/>
-      <rect id="barLoss" x="660" y="92"  width="64" height="0" fill="#F28C28"/>
-      <rect id="barPe"   x="660" y="272" width="64" height="0" fill="#D84A62"/>
-      <rect id="barKe"   x="660" y="372" width="64" height="0" fill="#2E86A6"/>
-      <rect x="660" y="92" width="64" height="280" fill="none" class="barEdge" rx="4"/>
+      <rect x="740" y="92" width="120" height="280" fill="#efeae3" rx="5"/>
+      <rect id="barLoss" x="740" y="92"  width="120" height="0" fill="#F28C28"/>
+      <rect id="barPe"   x="740" y="272" width="120" height="0" fill="#D84A62"/>
+      <rect id="barKe"   x="740" y="372" width="120" height="0" fill="#2E86A6"/>
+      <rect x="740" y="92" width="120" height="280" fill="none" class="barEdge" rx="5"/>
 
-      <!-- mekaanisen energian raja pylväässä -->
-      <line id="mekLine" x1="652" y1="372" x2="732" y2="372" stroke="#3F3D39" stroke-width="2.6"/>
+      <!-- osien nimet palkkien sisällä -->
+      <text id="keTxt"   class="segLabel" x="800" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+      <text id="peTxt"   class="segLabel" x="800" y="240">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+      <text id="lossTxt" class="segLabel" x="800" y="130">häviöt</text>
 
-      <!-- suureet ja arvot -->
-      <g id="rows">
-        <rect x="752" y="144" width="17" height="17" rx="4" fill="#2E86A6"/>
-        <text class="rowName" x="780" y="159">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
-        <text class="rowVal" id="keVal" x="946" y="159" text-anchor="end">0,0 J</text>
-
-        <rect x="752" y="199" width="17" height="17" rx="4" fill="#D84A62"/>
-        <text class="rowName" x="780" y="214">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
-        <text class="rowVal" id="peVal" x="946" y="214" text-anchor="end">0,0 J</text>
-
-        <rect x="752" y="254" width="17" height="17" rx="4" fill="#F28C28"/>
-        <text class="rowName" x="780" y="269">häviöt</text>
-        <text class="rowVal" id="lossVal" x="946" y="269" text-anchor="end">0,0 J</text>
-
-        <line x1="752" y1="294" x2="946" y2="294" stroke="#3F3D39" stroke-width="1.4" opacity=".35"/>
-
-        <line x1="752" y1="322" x2="769" y2="322" stroke="#3F3D39" stroke-width="2.6"/>
-        <text class="rowName" x="780" y="329">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
-        <text class="rowVal" id="mekVal" x="946" y="329" text-anchor="end">0,0 J</text>
-
-        <text class="rowName" x="780" y="372">E<tspan baseline-shift="sub" font-size="0.72em">0</tspan></text>
-        <text class="rowVal" id="e0Val" x="946" y="372" text-anchor="end">0,0 J</text>
+      <!-- mekaanisen energian taso -->
+      <g id="mekMark">
+        <line id="mekLine" x1="730" y1="372" x2="870" y2="372" stroke="#3F3D39" stroke-width="2.6"/>
+        <text id="mekTag" class="barTag" x="878" y="379">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
       </g>
     </g>
   </svg>
@@ -192,13 +172,12 @@
     groundG: $("groundG"), groundHatch: $("groundHatch"),
     sceneFall: $("sceneFall"), fallBall: $("fallBall"), fallGuide: $("fallGuide"),
     scenePend: $("scenePend"), pendRod: $("pendRod"), pendBob: $("pendBob"), pendArc: $("pendArc"),
-    pendLevel: $("pendLevel"), pendRef: $("pendRef"), pendVert: $("pendVert"),
+    pendLevel: $("pendLevel"),
     sceneRamp: $("sceneRamp"), rampPath: $("rampPath"), rampHatch: $("rampHatch"),
     rampBlock: $("rampBlock"), rampLevel: $("rampLevel"),
-    hVal: $("hVal"), vVal: $("vVal"),
     barKe: $("barKe"), barPe: $("barPe"), barLoss: $("barLoss"),
-    mekLine: $("mekLine"),
-    keVal: $("keVal"), peVal: $("peVal"), lossVal: $("lossVal"), mekVal: $("mekVal"), e0Val: $("e0Val"),
+    keTxt: $("keTxt"), peTxt: $("peTxt"), lossTxt: $("lossTxt"),
+    mekLine: $("mekLine"), mekMark: $("mekMark"), mekTag: $("mekTag"),
     loss: $("loss"), lossLbl: $("lossLbl"), lossBox: $("lossBox"),
     play: $("play"), reset: $("reset"),
     modeFall: $("modeFall"), modePend: $("modePend"), modeRamp: $("modeRamp")
@@ -276,7 +255,7 @@
   })();
 
   /* ---------------- tila ---------------- */
-  const st = { y: 0, v: 0, th: 0, om: 0, u: 0, done: false };
+  const st = { y: 0, v: 0, th: 0, om: 0, u: 0, dir: 1, wf: 0, done: false };
   let E0 = 1;
 
   function resetState() {
@@ -291,7 +270,7 @@
       E0 = m * g * PEND_L * (1 - Math.cos(st.th));
     } else {
       st.u = (R_H - startVal) * Math.SQRT2;   // vasemmalla rampilla korkeudella startVal
-      st.v = 0;
+      st.v = 0; st.dir = 1; st.wf = 0;
       E0 = m * g * startVal;
     }
     if (E0 < 1e-6) E0 = 1e-6;
@@ -325,64 +304,63 @@
     st.th += st.om * dt;
   }
 
+  // Kourun liike ratkaistaan suoraan energiataseesta E0 = E_p + E_k + kitkatyö.
+  // Näin rata ei voi tuottaa energiaa taitekohdissa, ja pylväs pysyy tarkalleen
+  // E0:n korkuisena myös useiden edestakaisten heilahdusten jälkeen.
   function stepRamp(dt) {
     if (st.done) return;
     const tr = trackAt(st.u);
-    const aG = -g * tr.uy;                 // painovoiman komponentti radan suuntaan
-    const fr = lossK * g * Math.abs(tr.ux); // kitkan hidastuvuus
-    let a;
-    if (Math.abs(st.v) < 1e-3) {
-      if (Math.abs(aG) <= fr) {
-        st.v = 0;
+    const sinT = Math.abs(tr.uy), cosT = Math.abs(tr.ux);
+    const Ek = E0 - m * g * tr.y - st.wf;
+
+    if (Ek <= 0) {
+      // liike-energia loppui: kääntyy alamäkeen tai jää paikalleen
+      if (sinT < 1e-9 || lossK * cosT >= sinT) {
         st.done = true; running = false;
         el.play.textContent = "Uudelleen";
         return;
       }
-      a = aG - Math.sign(aG) * fr;
-    } else {
-      a = aG - Math.sign(st.v) * fr;
+      st.dir = tr.uy < 0 ? 1 : -1;
+      st.u += st.dir * 0.004;   // irrotus kääntöpisteestä
+      return;
     }
-    const vNew = st.v + a * dt;
-    if (st.v !== 0 && Math.sign(vNew) !== Math.sign(st.v) && Math.abs(aG) <= fr) {
-      st.v = 0;
-    } else {
-      st.v = vNew;
-      st.u += st.v * dt;
-    }
-    if (st.u < 0) { st.u = 0; st.v = 0; }
-    if (st.u > rampTotal) { st.u = rampTotal; st.v = 0; }
+
+    const du = st.dir * Math.sqrt(2 * Ek / m) * dt;
+    st.wf += lossK * m * g * cosT * Math.abs(du);
+    st.u += du;
+    if (st.u < 0) { st.u = 0; st.dir = 1; }
+    if (st.u > rampTotal) { st.u = rampTotal; st.dir = -1; }
   }
 
   /* ---------------- energiat ---------------- */
   function energies() {
-    let Ek = 0, Ep = 0;
+    if (mode === "ramp") {
+      // kourussa kitkatyö on laskettu suoraan, ja E_k saadaan energiataseesta
+      const Ep = m * g * trackAt(st.u).y;
+      const Eloss = Math.min(st.wf, E0);
+      return { Ek: Math.max(0, E0 - Ep - Eloss), Ep, Eloss };
+    }
+    let Ek, Ep;
     if (mode === "fall") {
       Ek = 0.5 * m * st.v * st.v;
       Ep = m * g * st.y;
-    } else if (mode === "pend") {
+    } else {
       const v = PEND_L * st.om;
       Ek = 0.5 * m * v * v;
       Ep = m * g * PEND_L * (1 - Math.cos(st.th));
-    } else {
-      Ek = 0.5 * m * st.v * st.v;
-      Ep = m * g * trackAt(st.u).y;
     }
     // häviöt = se osa alkuenergiasta, joka ei ole enää mekaanista energiaa
-    const Eloss = Math.max(0, E0 - Ek - Ep);
-    return { Ek, Ep, Eloss };
+    return { Ek, Ep, Eloss: Math.max(0, E0 - Ek - Ep) };
   }
 
   /* ---------------- piirto ---------------- */
   function render() {
     const { Ek, Ep, Eloss } = energies();
 
-    let h = 0, speed = 0;
-    if (mode === "fall") { h = st.y; speed = Math.abs(st.v); }
-    else if (mode === "pend") { h = PEND_L * (1 - Math.cos(st.th)); speed = Math.abs(PEND_L * st.om); }
-    else { h = trackAt(st.u).y; speed = Math.abs(st.v); }
-
-    el.hVal.textContent = fmt(h, 2);
-    el.vVal.textContent = fmt(speed, 1);
+    let h = 0;
+    if (mode === "fall") h = st.y;
+    else if (mode === "pend") h = PEND_L * (1 - Math.cos(st.th));
+    else h = trackAt(st.u).y;
 
     // näyttämö
     el.sceneFall.style.display = mode === "fall" ? "" : "none";
@@ -424,14 +402,22 @@
     el.barPe.setAttribute("y", BAR_BOT - hk - hp); el.barPe.setAttribute("height", Math.max(0, hp));
     el.barLoss.setAttribute("y", BAR_BOT - hk - hp - hl); el.barLoss.setAttribute("height", Math.max(0, hl));
 
+    // nimet piirretään palkkien sisään, kun palkki on kyllin korkea
+    segLabel(el.keTxt,   BAR_BOT - hk, hk);
+    segLabel(el.peTxt,   BAR_BOT - hk - hp, hp);
+    segLabel(el.lossTxt, BAR_BOT - hk - hp - hl, hl);
+
+    // E_mek-taso näkyy vasta kun häviöitä on: muuten se on sama kuin E0-viiva
     const yMek = BAR_BOT - hk - hp;
     el.mekLine.setAttribute("y1", yMek); el.mekLine.setAttribute("y2", yMek);
+    el.mekTag.setAttribute("y", yMek + 8);
+    el.mekMark.style.display = hl > 8 ? "" : "none";
+  }
 
-    el.keVal.textContent = fmt(Ek, 1) + " J";
-    el.peVal.textContent = fmt(Ep, 1) + " J";
-    el.lossVal.textContent = fmt(Eloss, 1) + " J";
-    el.mekVal.textContent = fmt(Ek + Ep, 1) + " J";
-    el.e0Val.textContent = fmt(E0, 1) + " J";
+  function segLabel(t, top, height) {
+    if (height < 36) { t.style.display = "none"; return; }
+    t.style.display = "";
+    t.setAttribute("y", top + height / 2 + 9);
   }
 
   function drawPendArc() {
