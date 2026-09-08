@@ -44,6 +44,12 @@
   .ctrl-row input[type="range"]{ width:min(180px,19vw); height:clamp(12px,1.7vw,18px); accent-color:var(--ink); }
   .sim-btn{ padding:clamp(2px,0.6vw,6px) clamp(8px,1.5vw,15px); font-size:clamp(11px,1.45vw,18px); }
   .sim-btn.is-active{ background:var(--ink); color:#fff; }
+  #lossBox[data-hidden="true"]{ visibility:hidden; pointer-events:none; }
+  /* napit pysyvät keskellä, vaikka kitkasäädin näkyy vain kourussa */
+  .ctrl-main{ display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+    column-gap:clamp(8px,1.7vw,16px); width:100%; }
+  .ctrl-main #lossBox{ justify-self:end; }
+  .ctrl-buttons{ display:flex; gap:clamp(8px,1.7vw,16px); }
 
   /* Kapealla näytöllä 16:9-kehys jää matalaksi, joten ohjaimet siirretään
      kuvan alapuolelle normaaliin dokumenttivirtaan. */
@@ -57,6 +63,9 @@
     .ctrl-row input[type="range"]{ width:100%; }
     .ctrl-row label{ flex:1 1 45%; }
     .ctrl-row .sim-btn{ flex:0 0 auto; }
+    .ctrl-main{ display:flex; flex-wrap:wrap; justify-content:center; }
+    .ctrl-main #lossBox[data-hidden="true"]{ display:none; }
+    .ctrl-main > [aria-hidden="true"]{ display:none; }
   }
 </style>
 </head>
@@ -157,15 +166,14 @@
       <button id="modePend" class="sim-btn" type="button">Heiluri</button>
       <button id="modeRamp" class="sim-btn" type="button">Kouru</button>
     </div>
-    <div class="ctrl-row">
-      <label><span id="massLbl">Massa 2,0 kg</span>
-        <input id="mass" type="range" min="0.5" max="8" step="0.1" value="2" aria-label="Massa"></label>
-      <label><span id="startLbl">Lähtökorkeus 4,0 m</span>
-        <input id="start" type="range" min="0.5" max="5" step="0.1" value="4" aria-label="Lähtöarvo"></label>
-      <label><span id="lossLbl">Ilmanvastus 0,00</span>
-        <input id="loss" type="range" min="0" max="1" step="0.02" value="0" aria-label="Häviökerroin"></label>
-      <button id="play" class="sim-btn" type="button">Käynnistä</button>
-      <button id="reset" class="sim-btn" type="button">Nollaa</button>
+    <div class="ctrl-row ctrl-main">
+      <label id="lossBox"><span id="lossLbl">Kitkakerroin μ 0,00</span>
+        <input id="loss" type="range" min="0" max="0.6" step="0.01" value="0" aria-label="Kitkakerroin"></label>
+      <div class="ctrl-buttons">
+        <button id="play" class="sim-btn" type="button">Käynnistä</button>
+        <button id="reset" class="sim-btn" type="button">Nollaa</button>
+      </div>
+      <div aria-hidden="true"></div>
     </div>
   </section>
 </main>
@@ -191,39 +199,26 @@
     barKe: $("barKe"), barPe: $("barPe"), barLoss: $("barLoss"),
     mekLine: $("mekLine"),
     keVal: $("keVal"), peVal: $("peVal"), lossVal: $("lossVal"), mekVal: $("mekVal"), e0Val: $("e0Val"),
-    mass: $("mass"), start: $("start"), loss: $("loss"),
-    massLbl: $("massLbl"), startLbl: $("startLbl"), lossLbl: $("lossLbl"),
+    loss: $("loss"), lossLbl: $("lossLbl"), lossBox: $("lossBox"),
     play: $("play"), reset: $("reset"),
     modeFall: $("modeFall"), modePend: $("modePend"), modeRamp: $("modeRamp")
   };
 
   const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",");
 
-  /* ---------------- tilanteiden asetukset ---------------- */
+  /* ---------------- tilanteiden asetukset ----------------
+     Kiinteät lähtöarvot: kalvolla säädetään vain kourun kitkaa. */
+  const MASS = 2.0;                       // kg
   const MODES = {
-    fall: {
-      startLabel: (v) => `Lähtökorkeus ${fmt(v, 1)} m`,
-      lossLabel:  (v) => `Ilmanvastus ${fmt(v, 2)}`,
-      start: { min: 0.5, max: 5, step: 0.1, value: 4 },
-      loss:  { min: 0, max: 1, step: 0.02, value: 0 }
-    },
-    pend: {
-      startLabel: (v) => `Lähtökulma ${fmt(v, 0)}°`,
-      lossLabel:  (v) => `Ilmanvastus ${fmt(v, 2)}`,
-      start: { min: 10, max: 85, step: 1, value: 60 },
-      loss:  { min: 0, max: 1, step: 0.02, value: 0 }
-    },
-    ramp: {
-      startLabel: (v) => `Lähtökorkeus ${fmt(v, 1)} m`,
-      lossLabel:  (v) => `Kitkakerroin μ ${fmt(v, 2)}`,
-      start: { min: 0.5, max: 3, step: 0.1, value: 2.5 },
-      loss:  { min: 0, max: 0.6, step: 0.01, value: 0 }
-    }
+    fall: { start: 4.0, friction: false },  // lähtökorkeus 4,0 m
+    pend: { start: 60,  friction: false },  // lähtökulma 60°
+    ramp: { start: 2.5, friction: true  }   // lähtökorkeus 2,5 m
   };
 
   let mode = "fall";
   let running = false;
-  let m = 2.0, startVal = 4.0, lossK = 0.0;
+  const m = MASS;
+  let startVal = MODES.fall.start, lossK = 0.0;
 
   /* ---------------- geometria ---------------- */
   // vapaa pudotus
@@ -474,14 +469,11 @@
   /* ---------------- ohjaimet ---------------- */
   function applyModeConfig() {
     const c = MODES[mode];
-    for (const key of ["start", "loss"]) {
-      const inp = el[key], cfg = c[key];
-      inp.min = cfg.min; inp.max = cfg.max; inp.step = cfg.step; inp.value = cfg.value;
-    }
-    startVal = parseFloat(el.start.value);
-    lossK = parseFloat(el.loss.value);
-    el.startLbl.textContent = c.startLabel(startVal);
-    el.lossLbl.textContent = c.lossLabel(lossK);
+    startVal = c.start;
+    // kitka on säädettävissä vain kourussa; muissa tilanteissa liike on häviötön
+    lossK = c.friction ? parseFloat(el.loss.value) : 0;
+    el.lossBox.dataset.hidden = c.friction ? "false" : "true";
+    el.lossLbl.textContent = `Kitkakerroin μ ${fmt(lossK, 2)}`;
     el.modeFall.classList.toggle("is-active", mode === "fall");
     el.modePend.classList.toggle("is-active", mode === "pend");
     el.modeRamp.classList.toggle("is-active", mode === "ramp");
@@ -499,26 +491,9 @@
   el.modePend.addEventListener("click", () => setMode("pend"));
   el.modeRamp.addEventListener("click", () => setMode("ramp"));
 
-  el.mass.addEventListener("input", () => {
-    m = parseFloat(el.mass.value);
-    el.massLbl.textContent = `Massa ${fmt(m, 1)} kg`;
-    // massa ei vaikuta liikkeeseen, vain energioiden suuruuteen
-    if (mode === "fall") E0 = m * g * startVal;
-    else if (mode === "pend") E0 = m * g * PEND_L * (1 - Math.cos(startVal * Math.PI / 180));
-    else E0 = m * g * startVal;
-    render();
-  });
-
-  el.start.addEventListener("input", () => {
-    startVal = parseFloat(el.start.value);
-    el.startLbl.textContent = MODES[mode].startLabel(startVal);
-    drawPendArc();
-    resetState();
-  });
-
   el.loss.addEventListener("input", () => {
     lossK = parseFloat(el.loss.value);
-    el.lossLbl.textContent = MODES[mode].lossLabel(lossK);
+    el.lossLbl.textContent = `Kitkakerroin μ ${fmt(lossK, 2)}`;
     render();
   });
 
@@ -531,8 +506,6 @@
 
   el.reset.addEventListener("click", resetState);
 
-  m = parseFloat(el.mass.value);
-  el.massLbl.textContent = `Massa ${fmt(m, 1)} kg`;
   applyModeConfig();
   requestAnimationFrame(tick);
 })();
