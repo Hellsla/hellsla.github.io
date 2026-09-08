@@ -21,6 +21,10 @@
   .mekLevel{ stroke:var(--ink); stroke-width:2.2; stroke-dasharray:9 7; fill:none; }
 
   .cartBody{ fill:#f8fbff; stroke:var(--ink); stroke-width:2.6; }
+  #cart, #trackHit{ cursor:grab; touch-action:none; }
+  body.is-dragging #cart, body.is-dragging #trackHit{ cursor:grabbing; }
+  #cartHalo{ fill:var(--blue); opacity:0; transition:opacity .15s; }
+  #cart:hover #cartHalo, body.is-dragging #cartHalo{ opacity:.16; }
   .cartTrim{ fill:var(--blue); stroke:var(--ink); stroke-width:2; }
   .wheel   { fill:var(--ink); }
 
@@ -64,7 +68,12 @@
       <line id="mekLevel" class="mekLevel" x1="98" y1="100" x2="648" y2="100"/>
       <text id="mekLevelTag" class="barTag" x="90" y="107" font-size="20" text-anchor="end">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
 
+      <!-- läpinäkyvä tartunta-alue: vaunun voi raahata mihin tahansa radalle -->
+      <path id="trackHit" d="" fill="none" stroke="transparent" stroke-width="34" stroke-linecap="round"/>
+
       <g id="cart">
+        <circle id="cartHalo" cx="0" cy="-2" r="24"/>
+        <circle cx="0" cy="-2" r="24" fill="transparent"/>
         <rect class="cartBody" x="-19" y="-17" width="38" height="21" rx="7"/>
         <rect class="cartTrim" x="-12" y="-11" width="24" height="7" rx="3"/>
         <circle class="wheel" cx="-10" cy="7" r="4.6"/>
@@ -96,8 +105,6 @@
 
   <section class="sim-controls" aria-label="Säätimet">
     <div class="ctrl-row">
-      <label><span id="startLbl">Lähtökorkeus 9,0 m</span>
-        <input id="start" type="range" min="2" max="9" step="0.1" value="9" aria-label="Lähtökorkeus"></label>
       <label><span id="lossLbl">Kitkakerroin μ 0,00</span>
         <input id="loss" type="range" min="0" max="0.15" step="0.005" value="0" aria-label="Kitkakerroin"></label>
       <button id="play" class="sim-btn" type="button">Käynnistä</button>
@@ -122,8 +129,8 @@
     barKe: $("barKe"), barPe: $("barPe"), barLoss: $("barLoss"),
     keTxt: $("keTxt"), peTxt: $("peTxt"), lossTxt: $("lossTxt"),
     mekLine: $("mekLine"), mekMark: $("mekMark"), mekTag: $("mekTag"),
-    start: $("start"), loss: $("loss"),
-    startLbl: $("startLbl"), lossLbl: $("lossLbl"),
+    svg: document.querySelector("svg"), trackHit: $("trackHit"),
+    loss: $("loss"), lossLbl: $("lossLbl"),
     play: $("play"), reset: $("reset")
   };
 
@@ -179,8 +186,9 @@
 
   /* ---------------- staattinen grafiikka ---------------- */
   (function drawStatic() {
-    el.track.setAttribute("d",
-      P.map((p, i) => `${i ? "L" : "M"}${px(p.x).toFixed(1)} ${py(p.y).toFixed(1)}`).join(" "));
+    const d = P.map((p, i) => `${i ? "L" : "M"}${px(p.x).toFixed(1)} ${py(p.y).toFixed(1)}`).join(" ");
+    el.track.setAttribute("d", d);
+    el.trackHit.setAttribute("d", d);
 
     let sup = "";
     for (let i = 6; i < P.length; i += 26) {
@@ -194,18 +202,22 @@
   })();
 
   /* ---------------- tila ---------------- */
-  const st = { s: 0, dir: 1, wf: 0, done: false };
-  let running = false, startH = 9.0, mu = 0, E0 = 1;
+  const st = { s: 0, s0: 0, dir: 1, wf: 0, done: false };
+  let running = false, mu = 0, E0 = 1;
+
+  // oletuslähtö: ensimmäinen kohta laskevalla lähtörinteellä 9,0 metrissä
+  (function initStart() {
+    let i = 0;
+    while (i < P.length - 1 && P[i].y > 9.0) i++;
+    st.s0 = P[i].s;
+  })();
 
   function resetState() {
     running = false;
     el.play.textContent = "Käynnistä";
     st.done = false; st.dir = 1; st.wf = 0;
-    // ensimmäinen kohta laskevalla lähtörinteellä, jossa rata on lähtökorkeudella
-    let i = 0;
-    while (i < P.length - 1 && P[i].y > startH) i++;
-    st.s = P[i].s;
-    E0 = MASS * g * Math.max(0.01, at(st.s).y);
+    st.s = st.s0;
+    E0 = MASS * g * Math.max(0.05, at(st.s).y);
     render();
   }
 
@@ -295,11 +307,50 @@
   }
 
   /* ---------------- ohjaimet ---------------- */
-  el.start.addEventListener("input", () => {
-    startH = parseFloat(el.start.value);
-    el.startLbl.textContent = `Lähtökorkeus ${fmt(startH, 1)} m`;
+  /* ---------------- vaunun raahaus ----------------
+     Vaunu asetetaan lähelle osoitinta olevaan radan kohtaan ja jää siihen
+     levoksi: uusi lähtökorkeus määrää alkuenergian E0. */
+  let dragging = false;
+
+  function placeAt(clientX, clientY) {
+    const m = el.svg.getScreenCTM();
+    if (!m) return;
+    const pt = el.svg.createSVGPoint();
+    pt.x = clientX; pt.y = clientY;
+    const v = pt.matrixTransform(m.inverse());
+    let best = 0, bestD = Infinity;
+    for (let i = 0; i < P.length; i++) {
+      const dx = px(P[i].x) - v.x, dy = py(P[i].y) - v.y;
+      const dd = dx * dx + dy * dy;
+      if (dd < bestD) { bestD = dd; best = i; }
+    }
+    st.s0 = P[best].s;
     resetState();
-  });
+  }
+
+  function startDrag(e) {
+    dragging = true;
+    document.body.classList.add("is-dragging");
+    e.target.setPointerCapture(e.pointerId);
+    placeAt(e.clientX, e.clientY);
+    e.preventDefault();
+  }
+  function moveDrag(e) {
+    if (!dragging) return;
+    placeAt(e.clientX, e.clientY);
+    e.preventDefault();
+  }
+  function endDrag() {
+    dragging = false;
+    document.body.classList.remove("is-dragging");
+  }
+
+  for (const target of [el.cart, el.trackHit]) {
+    target.addEventListener("pointerdown", startDrag);
+    target.addEventListener("pointermove", moveDrag);
+    target.addEventListener("pointerup", endDrag);
+    target.addEventListener("pointercancel", endDrag);
+  }
 
   el.loss.addEventListener("input", () => {
     mu = parseFloat(el.loss.value);
@@ -316,7 +367,6 @@
 
   el.reset.addEventListener("click", resetState);
 
-  startH = parseFloat(el.start.value);
   mu = parseFloat(el.loss.value);
   resetState();
   requestAnimationFrame(tick);
