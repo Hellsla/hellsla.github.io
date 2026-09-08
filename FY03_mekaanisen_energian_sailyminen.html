@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mekaanisen energian säilyminen</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;   /* liike-energia */
+    --red:#D84A62;    /* potentiaalienergia */
+    --orange:#F28C28; /* häviöt */
+    --soft:#f4f4f4;
+    --muted:#bfb7aa;
+  }
+
+  /* --- SVG-tyylit (koot SVG-yksikköinä, skaalautuvat viewBoxin mukana) --- */
+  .sketch{ fill:none; stroke:var(--ink); stroke-linecap:round; stroke-linejoin:round; }
+  .thin { stroke-width:1.6; }
+  .mid  { stroke-width:2.6; }
+  .thick{ stroke-width:4.4; }
+
+  .ground{ stroke:var(--ink); stroke-width:3; stroke-linecap:round; }
+  .hatch { stroke:var(--ink); stroke-width:1.2; opacity:.28; }
+  .guide { stroke:var(--muted); stroke-width:1.6; stroke-dasharray:6 7; fill:none; }
+
+  .bodyFill{ fill:#f8fbff; stroke:var(--ink); stroke-width:2.6; }
+  .bodyTrim{ fill:var(--blue); stroke:var(--ink); stroke-width:2; }
+  .pivot   { fill:var(--ink); }
+  .rod     { stroke:var(--ink); stroke-width:2.6; stroke-linecap:round; }
+
+  text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  .readout    { font-size:21px; font-weight:600; }
+  .readoutUnit{ font-size:16px; font-weight:500; opacity:.75; }
+  .note       { font-size:15px; opacity:.75; }
+  .panelTitle { font-size:18px; font-weight:650; letter-spacing:.03em; }
+  .rowName    { font-size:14.5px; }
+  .rowVal     { font-size:16.5px; font-weight:600; }
+  .tiny       { font-size:13.5px; opacity:.7; }
+  .barEdge    { stroke:var(--ink); stroke-width:1.6; }
+
+  /* --- ohjaimet --- */
+  .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
+  .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(8px,1.7vw,16px); flex-wrap:wrap; }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(10px,1.35vw,16px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(180px,19vw); height:clamp(12px,1.7vw,18px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(2px,0.6vw,6px) clamp(8px,1.5vw,15px); font-size:clamp(11px,1.45vw,18px); }
+  .sim-btn.is-active{ background:var(--ink); color:#fff; }
+
+  /* Kapealla näytöllä 16:9-kehys jää matalaksi, joten ohjaimet siirretään
+     kuvan alapuolelle normaaliin dokumenttivirtaan. */
+  @media (max-width:560px){
+    body.sim-body{ place-items:start center; height:auto; min-height:100%; }
+    .sim-wrap{ width:100vw; height:auto; aspect-ratio:auto; }
+    .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
+    .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
+      width:100%; padding:12px 12px 18px; gap:8px; }
+    .ctrl-row{ gap:8px; }
+    .ctrl-row input[type="range"]{ width:100%; }
+    .ctrl-row label{ flex:1 1 45%; }
+    .ctrl-row .sim-btn{ flex:0 0 auto; }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Mekaanisen energian säilymisen simulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Mekaanisen energian säilyminen: liike-energia, potentiaalienergia ja häviöt">
+    <defs>
+      <marker id="tickArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#bfb7aa"/>
+      </marker>
+    </defs>
+
+    <!-- ============ NÄYTTÄMÖ ============ -->
+    <g id="scene">
+      <!-- maanpinta (vapaa pudotus / heiluri) -->
+      <g id="groundG">
+        <line class="ground" x1="40" y1="380" x2="648" y2="380"/>
+        <g id="groundHatch"></g>
+      </g>
+
+      <!-- vapaa pudotus -->
+      <g id="sceneFall">
+        <line id="fallGuide" class="guide" x1="320" y1="120" x2="320" y2="380" marker-start="url(#tickArrow)" marker-end="url(#tickArrow)"/>
+        <text id="fallGuideTxt" class="tiny" x="336" y="250">h</text>
+        <circle id="fallBall" class="bodyFill" cx="320" cy="120" r="16"/>
+      </g>
+
+      <!-- heiluri -->
+      <g id="scenePend">
+        <path id="pendArc" class="guide" d=""/>
+        <line id="pendVert" class="guide" x1="330" y1="92" x2="330" y2="356"/>
+        <line id="pendRod" class="rod" x1="330" y1="92" x2="330" y2="380"/>
+        <circle class="pivot" cx="330" cy="92" r="6"/>
+        <circle id="pendBob" class="bodyFill" cx="330" cy="380" r="17"/>
+        <line id="pendRef" class="guide" x1="60" y1="356" x2="620" y2="356"/>
+        <text id="pendRefTxt" class="tiny" x="60" y="350">vertailutaso h = 0</text>
+        <line id="pendLevel" class="guide" x1="60" y1="200" x2="620" y2="200"/>
+      </g>
+
+      <!-- kouru (kaksi kaltevaa tasoa) -->
+      <g id="sceneRamp">
+        <path id="rampPath" class="sketch thick" d=""/>
+        <g id="rampHatch"></g>
+        <line id="rampLevel" class="guide" x1="60" y1="200" x2="620" y2="200"/>
+        <text id="rampAngle" class="tiny" x="344" y="406" text-anchor="middle">kourun kaltevuus 45°</text>
+        <g id="rampBlock">
+          <rect class="bodyFill" x="-18" y="-13" width="36" height="26" rx="5"/>
+          <rect class="bodyTrim" x="-11" y="-8" width="22" height="6" rx="2"/>
+        </g>
+      </g>
+
+      <!-- lukemat -->
+      <text class="readout" x="40" y="62">h = <tspan id="hVal">0,00</tspan><tspan class="readoutUnit"> m</tspan></text>
+      <text class="readout" x="40" y="92">v = <tspan id="vVal">0,0</tspan><tspan class="readoutUnit"> m/s</tspan></text>
+      <text id="noteTxt" class="note" x="40" y="120"></text>
+    </g>
+
+    <!-- ============ ENERGIAPANEELI ============ -->
+    <g id="panel">
+      <text class="panelTitle" x="660" y="60">ENERGIAT</text>
+
+      <!-- E0-viiva -->
+      <line x1="656" y1="92" x2="946" y2="92" stroke="#3F3D39" stroke-width="1.6" stroke-dasharray="6 6" opacity=".55"/>
+      <text class="tiny" x="946" y="84" text-anchor="end">E₀ = alkuenergia (vakio)</text>
+
+      <!-- pylväs -->
+      <rect x="666" y="92" width="50" height="280" fill="#efeae3" rx="4"/>
+      <rect id="barLoss" x="666" y="92"  width="50" height="0" fill="#F28C28"/>
+      <rect id="barPe"   x="666" y="272" width="50" height="0" fill="#D84A62"/>
+      <rect id="barKe"   x="666" y="372" width="50" height="0" fill="#2E86A6"/>
+      <rect x="666" y="92" width="50" height="280" fill="none" class="barEdge" rx="4"/>
+
+      <!-- mekaanisen energian raja pylväässä -->
+      <line id="mekLine" x1="658" y1="372" x2="724" y2="372" stroke="#3F3D39" stroke-width="2.4"/>
+
+      <!-- numerot -->
+      <g id="rows">
+        <rect x="730" y="139" width="13" height="13" rx="3" fill="#2E86A6"/>
+        <text class="rowName" x="750" y="150">Liike-energia E<tspan baseline-shift="sub" font-size="0.8em">k</tspan></text>
+        <text class="rowVal"  id="keVal" x="946" y="151" text-anchor="end">0,0 J</text>
+
+        <rect x="730" y="175" width="13" height="13" rx="3" fill="#D84A62"/>
+        <text class="rowName" x="750" y="186">Potentiaalien. E<tspan baseline-shift="sub" font-size="0.8em">p</tspan></text>
+        <text class="rowVal"  id="peVal" x="946" y="187" text-anchor="end">0,0 J</text>
+
+        <rect x="730" y="211" width="13" height="13" rx="3" fill="#F28C28"/>
+        <text class="rowName" x="750" y="222">Häviöt (kitkatyö)</text>
+        <text class="rowVal"  id="lossVal" x="946" y="223" text-anchor="end">0,0 J</text>
+
+        <line x1="730" y1="243" x2="946" y2="243" stroke="#3F3D39" stroke-width="1.4" opacity=".35"/>
+
+        <line x1="730" y1="269" x2="743" y2="269" stroke="#3F3D39" stroke-width="2.4"/>
+        <text class="rowName" x="750" y="273">Mekaaninen E<tspan baseline-shift="sub" font-size="0.8em">mek</tspan></text>
+        <text class="rowVal"  id="mekVal" x="946" y="274" text-anchor="end">0,0 J</text>
+
+        <text class="rowName" x="750" y="309">Alkuenergia E<tspan baseline-shift="sub" font-size="0.8em">0</tspan></text>
+        <text class="rowVal"  id="e0Val" x="946" y="310" text-anchor="end">0,0 J</text>
+      </g>
+
+      <text class="tiny" x="730" y="344">E<tspan baseline-shift="sub" font-size="0.8em">mek</tspan> = E<tspan baseline-shift="sub" font-size="0.8em">k</tspan> + E<tspan baseline-shift="sub" font-size="0.8em">p</tspan></text>
+      <text class="tiny" x="730" y="366">E₀ = E<tspan baseline-shift="sub" font-size="0.8em">k</tspan> + E<tspan baseline-shift="sub" font-size="0.8em">p</tspan> + häviöt</text>
+    </g>
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <div class="ctrl-row" role="group" aria-label="Tilanne">
+      <button id="modeFall" class="sim-btn is-active" type="button">Vapaa pudotus</button>
+      <button id="modePend" class="sim-btn" type="button">Heiluri</button>
+      <button id="modeRamp" class="sim-btn" type="button">Kouru</button>
+    </div>
+    <div class="ctrl-row">
+      <label><span id="massLbl">Massa 2,0 kg</span>
+        <input id="mass" type="range" min="0.5" max="8" step="0.1" value="2" aria-label="Massa"></label>
+      <label><span id="startLbl">Lähtökorkeus 4,0 m</span>
+        <input id="start" type="range" min="0.5" max="5" step="0.1" value="4" aria-label="Lähtöarvo"></label>
+      <label><span id="lossLbl">Ilmanvastus 0,00</span>
+        <input id="loss" type="range" min="0" max="1" step="0.02" value="0" aria-label="Häviökerroin"></label>
+      <button id="play" class="sim-btn" type="button">Käynnistä</button>
+      <button id="reset" class="sim-btn" type="button">Nollaa</button>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+
+  const g = 9.81;
+  const GROUND = 380;          // maanpinnan y SVG-yksikköinä
+  const BAR_TOP = 92, BAR_BOT = 372, BAR_H = BAR_BOT - BAR_TOP;
+  const PEND_LOW = 356;        // heilurin alin kohta = vertailutaso h = 0
+
+  const $ = (id) => document.getElementById(id);
+  const el = {
+    groundG: $("groundG"), groundHatch: $("groundHatch"),
+    sceneFall: $("sceneFall"), fallBall: $("fallBall"), fallGuide: $("fallGuide"), fallGuideTxt: $("fallGuideTxt"),
+    scenePend: $("scenePend"), pendRod: $("pendRod"), pendBob: $("pendBob"), pendArc: $("pendArc"),
+    pendLevel: $("pendLevel"), pendRef: $("pendRef"), pendRefTxt: $("pendRefTxt"), pendVert: $("pendVert"),
+    sceneRamp: $("sceneRamp"), rampPath: $("rampPath"), rampHatch: $("rampHatch"),
+    rampBlock: $("rampBlock"), rampLevel: $("rampLevel"),
+    hVal: $("hVal"), vVal: $("vVal"), noteTxt: $("noteTxt"),
+    barKe: $("barKe"), barPe: $("barPe"), barLoss: $("barLoss"),
+    mekLine: $("mekLine"),
+    keVal: $("keVal"), peVal: $("peVal"), lossVal: $("lossVal"), mekVal: $("mekVal"), e0Val: $("e0Val"),
+    mass: $("mass"), start: $("start"), loss: $("loss"),
+    massLbl: $("massLbl"), startLbl: $("startLbl"), lossLbl: $("lossLbl"),
+    play: $("play"), reset: $("reset"),
+    modeFall: $("modeFall"), modePend: $("modePend"), modeRamp: $("modeRamp")
+  };
+
+  const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",");
+
+  /* ---------------- tilanteiden asetukset ---------------- */
+  const MODES = {
+    fall: {
+      startLabel: (v) => `Lähtökorkeus ${fmt(v, 1)} m`,
+      lossLabel:  (v) => `Ilmanvastus ${fmt(v, 2)}`,
+      start: { min: 0.5, max: 5, step: 0.1, value: 4 },
+      loss:  { min: 0, max: 1, step: 0.02, value: 0 }
+    },
+    pend: {
+      startLabel: (v) => `Lähtökulma ${fmt(v, 0)}°`,
+      lossLabel:  (v) => `Ilmanvastus ${fmt(v, 2)}`,
+      start: { min: 10, max: 85, step: 1, value: 60 },
+      loss:  { min: 0, max: 1, step: 0.02, value: 0 }
+    },
+    ramp: {
+      startLabel: (v) => `Lähtökorkeus ${fmt(v, 1)} m`,
+      lossLabel:  (v) => `Kitkakerroin μ ${fmt(v, 2)}`,
+      start: { min: 0.5, max: 3, step: 0.1, value: 2.5 },
+      loss:  { min: 0, max: 0.6, step: 0.01, value: 0 }
+    }
+  };
+
+  let mode = "fall";
+  let running = false;
+  let m = 2.0, startVal = 4.0, lossK = 0.0;
+
+  /* ---------------- geometria ---------------- */
+  // vapaa pudotus
+  const FALL_X = 320, FALL_SC = 58;               // px / m
+  // heiluri
+  const PIV_X = 330, PIV_Y = 92, PEND_L = 2.2;
+  const PEND_SC = (PEND_LOW - PIV_Y) / PEND_L;    // px / m
+  // kouru: 45° rampit, tasainen pohja 2·W
+  const R_H = 3.0, R_W = 0.5, R_CX = 344, R_SC = 82;
+  const rampPts = [
+    [-(R_W + R_H), R_H], [-R_W, 0], [R_W, 0], [R_W + R_H, R_H]
+  ];
+  const rx = (xm) => R_CX + xm * R_SC;
+  const ry = (ym) => GROUND - ym * R_SC;
+
+  // radan segmentit (kaarenpituusparametrisointi, u = 0 vasemman rampin huipulta)
+  const segs = [];
+  let rampTotal = 0;
+  for (let i = 0; i < rampPts.length - 1; i++) {
+    const [x0, y0] = rampPts[i], [x1, y1] = rampPts[i + 1];
+    const dx = x1 - x0, dy = y1 - y0;
+    const len = Math.hypot(dx, dy);
+    segs.push({ x0, y0, ux: dx / len, uy: dy / len, len, u0: rampTotal });
+    rampTotal += len;
+  }
+  function trackAt(u) {
+    u = Math.max(0, Math.min(rampTotal, u));
+    let i = 0;
+    while (i < segs.length - 1 && u > segs[i].u0 + segs[i].len) i++;
+    const s = segs[i], t = u - s.u0;
+    return { x: s.x0 + s.ux * t, y: s.y0 + s.uy * t, ux: s.ux, uy: s.uy };
+  }
+
+  /* ---------------- staattinen grafiikka ---------------- */
+  (function drawStatic() {
+    // maanpinnan viivoitus
+    let d = "";
+    for (let x = 46; x < 648; x += 22) d += `M${x} ${GROUND} l-10 12 `;
+    el.groundHatch.innerHTML = `<path class="hatch" d="${d}"/>`;
+
+    // kourun rata
+    let path = `M${rx(rampPts[0][0])} ${ry(rampPts[0][1])}`;
+    for (let i = 1; i < rampPts.length; i++) path += ` L${rx(rampPts[i][0])} ${ry(rampPts[i][1])}`;
+    el.rampPath.setAttribute("d", path);
+
+    // radan alapuolinen viivoitus (materiaali)
+    let hd = "";
+    for (let u = 0.16; u < rampTotal; u += 0.19) {
+      const t = trackAt(u);
+      // suunta: pinnan normaali materiaaliin päin + pieni kallistus
+      const dx = t.uy * 12 - t.ux * 3, dy = t.ux * 12 + t.uy * 3;
+      hd += `M${rx(t.x).toFixed(1)} ${ry(t.y).toFixed(1)} l${dx.toFixed(1)} ${dy.toFixed(1)} `;
+    }
+    el.rampHatch.innerHTML = `<path class="hatch" d="${hd}"/>`;
+  })();
+
+  /* ---------------- tila ---------------- */
+  const st = { y: 0, v: 0, th: 0, om: 0, u: 0, done: false, note: "" };
+  let E0 = 1;
+
+  function resetState() {
+    running = false;
+    el.play.textContent = "Käynnistä";
+    st.done = false; st.note = "";
+    if (mode === "fall") {
+      st.y = startVal; st.v = 0;
+      E0 = m * g * st.y;
+    } else if (mode === "pend") {
+      st.th = startVal * Math.PI / 180; st.om = 0;
+      E0 = m * g * PEND_L * (1 - Math.cos(st.th));
+    } else {
+      st.u = (R_H - startVal) * Math.SQRT2;   // vasemmalla rampilla korkeudella startVal
+      st.v = 0;
+      E0 = m * g * startVal;
+    }
+    if (E0 < 1e-6) E0 = 1e-6;
+    render();
+  }
+
+  /* ---------------- fysiikka ---------------- */
+  function stepFall(dt) {
+    if (st.done) return;
+    const a = -g - lossK * st.v;
+    const vNew = st.v + a * dt;
+    const yNew = st.y + 0.5 * (st.v + vNew) * dt;
+    if (yNew <= 0) {
+      // otetaan vain se osa askeleesta, jolla kappale ehtii maahan
+      const frac = st.y > 0 ? st.y / (st.y - yNew) : 0;
+      st.v = st.v + a * dt * frac;
+      st.y = 0;
+    } else {
+      st.v = vNew;
+      st.y = yNew;
+    }
+    if (st.y <= 0) {
+      st.done = true; running = false;
+      el.play.textContent = "Uudelleen";
+      st.note = `Juuri ennen osumaa kaikki energia on liike-energiaa: v = ${fmt(Math.abs(st.v), 1)} m/s`;
+    }
+  }
+
+  function stepPend(dt) {
+    const alpha = -(g / PEND_L) * Math.sin(st.th) - lossK * st.om;
+    st.om += alpha * dt;
+    st.th += st.om * dt;
+  }
+
+  function stepRamp(dt) {
+    if (st.done) return;
+    const tr = trackAt(st.u);
+    const aG = -g * tr.uy;                 // painovoiman komponentti radan suuntaan
+    const fr = lossK * g * Math.abs(tr.ux); // kitkan hidastuvuus
+    let a;
+    if (Math.abs(st.v) < 1e-3) {
+      if (Math.abs(aG) <= fr) {
+        st.v = 0;
+        st.done = true; running = false;
+        el.play.textContent = "Uudelleen";
+        st.note = "Kappale pysähtyi: mekaaninen energia on muuttunut kokonaan häviöiksi.";
+        return;
+      }
+      a = aG - Math.sign(aG) * fr;
+    } else {
+      a = aG - Math.sign(st.v) * fr;
+    }
+    const vNew = st.v + a * dt;
+    if (st.v !== 0 && Math.sign(vNew) !== Math.sign(st.v) && Math.abs(aG) <= fr) {
+      st.v = 0;
+    } else {
+      st.v = vNew;
+      st.u += st.v * dt;
+    }
+    if (st.u < 0) { st.u = 0; st.v = 0; }
+    if (st.u > rampTotal) { st.u = rampTotal; st.v = 0; }
+  }
+
+  /* ---------------- energiat ---------------- */
+  function energies() {
+    let Ek = 0, Ep = 0;
+    if (mode === "fall") {
+      Ek = 0.5 * m * st.v * st.v;
+      Ep = m * g * st.y;
+    } else if (mode === "pend") {
+      const v = PEND_L * st.om;
+      Ek = 0.5 * m * v * v;
+      Ep = m * g * PEND_L * (1 - Math.cos(st.th));
+    } else {
+      Ek = 0.5 * m * st.v * st.v;
+      Ep = m * g * trackAt(st.u).y;
+    }
+    // häviöt = se osa alkuenergiasta, joka ei ole enää mekaanista energiaa
+    const Eloss = Math.max(0, E0 - Ek - Ep);
+    return { Ek, Ep, Eloss };
+  }
+
+  /* ---------------- piirto ---------------- */
+  function render() {
+    const { Ek, Ep, Eloss } = energies();
+
+    let h = 0, speed = 0;
+    if (mode === "fall") { h = st.y; speed = Math.abs(st.v); }
+    else if (mode === "pend") { h = PEND_L * (1 - Math.cos(st.th)); speed = Math.abs(PEND_L * st.om); }
+    else { h = trackAt(st.u).y; speed = Math.abs(st.v); }
+
+    el.hVal.textContent = fmt(h, 2);
+    el.vVal.textContent = fmt(speed, 1);
+    el.noteTxt.textContent = st.note;
+
+    // näyttämö
+    el.sceneFall.style.display = mode === "fall" ? "" : "none";
+    el.scenePend.style.display = mode === "pend" ? "" : "none";
+    el.sceneRamp.style.display = mode === "ramp" ? "" : "none";
+    el.groundG.style.display = mode === "ramp" ? "none" : "";
+
+    if (mode === "fall") {
+      const cy = GROUND - st.y * FALL_SC - 16;
+      el.fallBall.setAttribute("cy", cy);
+      el.fallGuide.setAttribute("y1", Math.min(GROUND - 2, cy + 16));
+      el.fallGuide.setAttribute("y2", GROUND);
+      el.fallGuideTxt.setAttribute("y", (cy + 16 + GROUND) / 2);
+      const showGuide = st.y > 0.25;
+      el.fallGuide.style.display = showGuide ? "" : "none";
+      el.fallGuideTxt.style.display = showGuide ? "" : "none";
+    } else if (mode === "pend") {
+      const R = PEND_L * PEND_SC;
+      const bx = PIV_X + R * Math.sin(st.th), by = PIV_Y + R * Math.cos(st.th);
+      el.pendRod.setAttribute("x2", bx);
+      el.pendRod.setAttribute("y2", by);
+      el.pendBob.setAttribute("cx", bx);
+      el.pendBob.setAttribute("cy", by);
+      const yLevel = GROUND - h * PEND_SC;
+      el.pendLevel.setAttribute("y1", yLevel);
+      el.pendLevel.setAttribute("y2", yLevel);
+    } else {
+      const tr = trackAt(st.u);
+      const ang = Math.atan2(-tr.uy, tr.ux) * 180 / Math.PI;
+      el.rampBlock.setAttribute("transform",
+        `translate(${rx(tr.x)},${ry(tr.y)}) rotate(${ang}) translate(0,-14)`);
+      const yLevel = GROUND - h * R_SC;
+      el.rampLevel.setAttribute("y1", yLevel);
+      el.rampLevel.setAttribute("y2", yLevel);
+    }
+
+    // energiapylväs
+    let hk = Math.min(BAR_H, Math.max(0, (Ek / E0) * BAR_H));
+    let hp = Math.min(BAR_H - hk, Math.max(0, (Ep / E0) * BAR_H));
+    const hl = Math.min(BAR_H - hk - hp, Math.max(0, (Eloss / E0) * BAR_H));
+    el.barKe.setAttribute("y", BAR_BOT - hk); el.barKe.setAttribute("height", Math.max(0, hk));
+    el.barPe.setAttribute("y", BAR_BOT - hk - hp); el.barPe.setAttribute("height", Math.max(0, hp));
+    el.barLoss.setAttribute("y", BAR_BOT - hk - hp - hl); el.barLoss.setAttribute("height", Math.max(0, hl));
+
+    const yMek = BAR_BOT - hk - hp;
+    el.mekLine.setAttribute("y1", yMek); el.mekLine.setAttribute("y2", yMek);
+
+    el.keVal.textContent = fmt(Ek, 1) + " J";
+    el.peVal.textContent = fmt(Ep, 1) + " J";
+    el.lossVal.textContent = fmt(Eloss, 1) + " J";
+    el.mekVal.textContent = fmt(Ek + Ep, 1) + " J";
+    el.e0Val.textContent = fmt(E0, 1) + " J";
+  }
+
+  function drawPendArc() {
+    const R = PEND_L * PEND_SC;
+    const th0 = startVal * Math.PI / 180;
+    let d = "";
+    const N = 48;
+    for (let i = 0; i <= N; i++) {
+      const t = -th0 + (2 * th0) * (i / N);
+      const x = PIV_X + R * Math.sin(t), y = PIV_Y + R * Math.cos(t);
+      d += (i ? " L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+    }
+    el.pendArc.setAttribute("d", d);
+  }
+
+  /* ---------------- animaatio ---------------- */
+  let last = performance.now();
+  function tick(now) {
+    let dt = (now - last) / 1000;
+    last = now;
+    if (!isFinite(dt) || dt < 0) dt = 0;
+    dt = Math.min(dt, 0.05);
+    if (running) {
+      const sub = 8, h = dt / sub;              // aliaskellus vakauden vuoksi
+      for (let i = 0; i < sub && running; i++) {
+        if (mode === "fall") stepFall(h);
+        else if (mode === "pend") stepPend(h);
+        else stepRamp(h);
+      }
+      render();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------------- ohjaimet ---------------- */
+  function applyModeConfig() {
+    const c = MODES[mode];
+    for (const key of ["start", "loss"]) {
+      const inp = el[key], cfg = c[key];
+      inp.min = cfg.min; inp.max = cfg.max; inp.step = cfg.step; inp.value = cfg.value;
+    }
+    startVal = parseFloat(el.start.value);
+    lossK = parseFloat(el.loss.value);
+    el.startLbl.textContent = c.startLabel(startVal);
+    el.lossLbl.textContent = c.lossLabel(lossK);
+    el.modeFall.classList.toggle("is-active", mode === "fall");
+    el.modePend.classList.toggle("is-active", mode === "pend");
+    el.modeRamp.classList.toggle("is-active", mode === "ramp");
+    drawPendArc();
+    resetState();
+  }
+
+  function setMode(next) {
+    if (mode === next) return;
+    mode = next;
+    applyModeConfig();
+  }
+
+  el.modeFall.addEventListener("click", () => setMode("fall"));
+  el.modePend.addEventListener("click", () => setMode("pend"));
+  el.modeRamp.addEventListener("click", () => setMode("ramp"));
+
+  el.mass.addEventListener("input", () => {
+    m = parseFloat(el.mass.value);
+    el.massLbl.textContent = `Massa ${fmt(m, 1)} kg`;
+    // massa ei vaikuta liikkeeseen, vain energioiden suuruuteen
+    if (mode === "fall") E0 = m * g * startVal;
+    else if (mode === "pend") E0 = m * g * PEND_L * (1 - Math.cos(startVal * Math.PI / 180));
+    else E0 = m * g * startVal;
+    render();
+  });
+
+  el.start.addEventListener("input", () => {
+    startVal = parseFloat(el.start.value);
+    el.startLbl.textContent = MODES[mode].startLabel(startVal);
+    drawPendArc();
+    resetState();
+  });
+
+  el.loss.addEventListener("input", () => {
+    lossK = parseFloat(el.loss.value);
+    el.lossLbl.textContent = MODES[mode].lossLabel(lossK);
+    render();
+  });
+
+  el.play.addEventListener("click", () => {
+    if (st.done) { resetState(); }
+    running = !running;
+    if (running) last = performance.now();
+    el.play.textContent = running ? "Pysäytä" : "Jatka";
+  });
+
+  el.reset.addEventListener("click", resetState);
+
+  m = parseFloat(el.mass.value);
+  el.massLbl.textContent = `Massa ${fmt(m, 1)} kg`;
+  applyModeConfig();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
