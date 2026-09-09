@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#012169">
+<meta name="description" content="Kiviruukin lukion diplomipolut: Tiede ja teknologia sekä Talous ja yrittäjyys. Oma suunta, omat ideat ja opettajien tuki.">
+<title>Kiviruukin diplomipolut | Kiviruukin lukio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #012169;
+  --pink: #fca5c7;
+  --white: #ffffff;
+  --rule: rgba(1,33,105,.18);
+  --light-rule: rgba(255,255,255,.3);
+  --space: clamp(22px,4.6vw,64px);
+  --section: clamp(48px,6.2vw,84px);
+  --body: "Work Sans", Arial, Helvetica, sans-serif;
+  --heading: "Lato", Arial, Helvetica, sans-serif;
+}
+*,*::before,*::after {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%}
+body {margin:0;background:var(--white);color:var(--navy);font:400 17px/1.6 var(--body)}
+a {color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
+button,summary,a {-webkit-tap-highlight-color:transparent}
+a:focus-visible,summary:focus-visible {outline:3px solid currentColor;outline-offset:6px}
+svg {display:block;max-width:100%;height:auto}
+h1,h2,h3,p {margin:0}
+h1,h2,h3 {font-family:var(--heading);font-weight:900;line-height:1.08;letter-spacing:-.025em}
+h2 {font-size:clamp(32px,4.2vw,52px);text-wrap:balance}
+h3 {font-size:clamp(25px,2.8vw,34px)}
+p {text-wrap:pretty}
+strong {font-weight:600}
+.wrap {width:min(100%,1280px);margin-inline:auto;padding-inline:var(--space)}
+.eyebrow {display:block;font:600 13px/1.5 var(--body);text-transform:uppercase;letter-spacing:.12em}
+.skip {position:fixed;z-index:10;top:12px;left:12px;padding:12px 18px;background:var(--white);color:var(--navy);transform:translateY(-180%)}
+.skip:focus {transform:translateY(0)}
+.hero {background:var(--navy);color:var(--white)}
+.topbar {display:flex;justify-content:space-between;align-items:center;gap:30px;padding-block:30px 22px}
+.brand-logo {width:238px;flex:0 0 auto;color:var(--pink)}
+.navigation {display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;font-size:14px;font-weight:500}
+.navigation a {padding-block:8px;text-decoration:none}
+.navigation a:hover {text-decoration:underline;text-underline-offset:6px}
+.hero-main {display:grid;grid-template-columns:minmax(0,2.7fr) minmax(180px,1fr);align-items:center;gap:42px;padding-block:42px 40px}
+.hero-copy .eyebrow {color:var(--pink);margin-bottom:18px}
+h1 {font-size:clamp(45px,7.05vw,96px);line-height:1.01;font-weight:900;letter-spacing:-.035em}
+h1 .accent {display:block;color:var(--pink)}
+.deck {font-size:clamp(17px,1.6vw,20px);line-height:1.55;max-width:55ch;margin-top:24px}
+.hero-art {display:flex;flex-direction:column;gap:28px;align-items:center;text-align:center;padding-top:32px}
+.hero-spark {width:245px;color:var(--pink)}
+.hero-art p {font:700 23px/1.2 var(--heading);letter-spacing:-.02em}
+.hero-paths {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;padding-bottom:30px}
+.hero-path {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;padding:20px 0 4px;border-top:1px solid var(--light-rule);text-decoration:none}
+.hero-path .eyebrow {color:var(--pink);font-size:12px;margin-bottom:3px}
+.hero-path strong {display:block;font:700 clamp(18px,2.1vw,26px)/1.24 var(--heading);letter-spacing:-.02em}
+.hero-path .arrow {font-size:28px;line-height:1;transition:transform .18s ease}
+.hero-path:hover .arrow {transform:translateY(4px)}
+.hero-path:hover strong {text-decoration:underline;text-underline-offset:5px}
+
+/* Compact environment callout after both diploma introductions. */
+.makerspace {padding-block:clamp(32px,3.3vw,44px);border-bottom:1px solid var(--rule)}
+.maker-grid {display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,56px);align-items:start}
+.maker-title h2 {font-size:clamp(27px,2.4vw,32px);line-height:1.18}
+.maker-title h2 .place {display:block;margin-bottom:7px}
+.maker-title h2 .promise {display:block;font-weight:400}
+.maker-description p {font-size:16px;line-height:1.55}
+.maker-description .equipment-note {margin-top:14px;font-size:14px;line-height:1.55}
+
+/* Equal-weight diploma cards; neither path is a prerequisite for the other. */
+.paths {background:var(--navy);color:var(--white);padding-block:var(--section)}
+.section-heading {display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:32px}
+.section-heading .eyebrow {color:var(--pink);margin-bottom:12px}
+.section-heading > p {max-width:30ch;font-size:16px;line-height:1.5}
+.path-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}
+.path {min-width:0;color:var(--navy);padding:clamp(25px,3vw,40px);display:flex;flex-direction:column;scroll-margin-top:20px}
+.path-tt {background:var(--white)}
+.path-business {background:var(--pink)}
+.path .eyebrow {font-size:12px;margin-bottom:15px}
+.path h3 {font-size:clamp(29px,3.25vw,43px);line-height:1.08;letter-spacing:-.025em}
+.path h3 span {display:block}
+.path .verbs {font:700 18px/1.4 var(--heading);margin:18px 0 14px;letter-spacing:-.005em}
+.path-intro {font-size:16px;line-height:1.55}
+.project-example {border-left:3px solid var(--navy);padding-left:16px;margin-top:24px}
+.project-example strong {display:block;font:700 17px/1.3 var(--heading);margin-bottom:6px}
+.project-example p {font-size:15px;line-height:1.5}
+.path details {margin-top:22px;padding-bottom:23px}
+.path summary {display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;border-top:1px solid var(--rule);padding:15px 0 2px;font:600 14px/1.5 var(--body)}
+.path summary::-webkit-details-marker {display:none}
+.path summary::after {content:"+";font:400 26px/1 var(--body);flex:0 0 auto}
+.path details[open] summary::after {content:"\2212"}
+.path summary:hover {text-decoration:underline;text-underline-offset:5px}
+.topic-list {list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:15px 0 0;padding:0}
+.topic-list li {font-size:14px;line-height:1.3;padding:6px 10px;border:1px solid var(--rule);border-radius:3px}
+.extent {padding-top:20px;border-top:1px solid var(--rule);margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.extent .value {font:900 clamp(29px,3vw,39px)/1.12 var(--heading);letter-spacing:-.03em;white-space:nowrap}
+.extent .description {font-size:13px;line-height:1.4;max-width:14ch}
+.common {padding-top:34px;margin-top:34px;border-top:1px solid var(--light-rule);display:grid;grid-template-columns:1fr 2fr;gap:24px}
+.common h3 {font-size:26px;line-height:1.15;max-width:16ch}
+.common-items {list-style:none;margin:0;padding:0;display:flex;align-items:start;gap:22px 30px;flex-wrap:wrap}
+.common-items li {font:700 19px/1.3 var(--heading);color:var(--pink);max-width:20ch}
+.common-note {grid-column:2;margin-top:-4px;font-size:15px;max-width:65ch}
+
+.journey {padding-block:var(--section)}
+.journey .eyebrow {margin-bottom:12px}
+.years {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:36px}
+.year {border-top:4px solid var(--pink);padding-top:20px}
+.year .eyebrow {font-size:12px;letter-spacing:.08em;margin-bottom:12px}
+.year h3 {font-size:30px;margin-bottom:10px}
+.year p {font-size:16px;line-height:1.55;max-width:30ch}
+.takeaway {padding-top:32px;margin-top:40px;border-top:1px solid var(--rule)}
+.takeaway h3 {font-size:26px;margin-bottom:22px}
+.benefits {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.benefit strong {font:700 19px/1.25 var(--heading);display:block;margin-bottom:8px}
+.benefit p {font-size:14px;line-height:1.55}
+
+.join {background:var(--pink);color:var(--navy);position:relative;overflow:hidden}
+.join .wrap {padding-block:clamp(40px,5vw,68px)}
+.join-main {display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:45px;position:relative;z-index:1}
+.join h2 {font-size:clamp(36px,4.8vw,64px);max-width:14ch;line-height:1.04}
+.join-copy strong {display:block;font:700 22px/1.25 var(--heading);margin-bottom:12px}
+.join-copy p {max-width:39ch;font-size:16px;line-height:1.55}
+.contact-link {display:inline-block;margin-top:15px;font-weight:600}
+.footer {background:var(--navy);color:var(--white);padding-block:28px}
+.footer-inner {display:flex;justify-content:space-between;align-items:center;gap:24px}
+.footer .brand-logo {width:205px}
+.footer p {font-size:13px;line-height:1.5;text-align:right}
+.footer a {font-size:13px}
+
+@media (max-width:1000px) {
+  .hero-main {grid-template-columns:minmax(0,1fr) 205px;gap:30px}
+  h1 {font-size:clamp(44px,7vw,76px)}
+  .hero-art p {font-size:21px}
+  .common {grid-template-columns:1fr 2fr}
+  .benefits {grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px}
+}
+@media (max-width:760px) {
+  .maker-grid {grid-template-columns:1fr;gap:18px}
+  .maker-title h2 {font-size:27px}
+  .topbar {gap:20px;padding-top:24px}
+  .brand-logo {width:210px}
+  .navigation {gap:18px;font-size:13px}
+  .navigation .nav-paths {display:none}
+  .hero-main {display:block;padding-top:30px;padding-bottom:28px}
+  .hero-art {display:none}
+  h1 {font-size:clamp(43px,9.7vw,70px)}
+  .deck {max-width:52ch;font-size:17px;margin-top:20px}
+  .hero-paths {gap:24px;padding-bottom:27px}
+  .hero-path strong {font-size:19px}
+  .hero-path .eyebrow {font-size:10px;letter-spacing:.08em}
+  .hero-path .arrow {font-size:24px}
+  .path-grid {gap:18px}
+  .path {padding:25px}
+  .path h3 {font-size:28px}
+  .path .verbs {font-size:17px}
+  .path-intro {font-size:15px}
+  .extent {align-items:start;flex-direction:column;gap:5px}
+  .extent .description {max-width:none}
+  .common {grid-template-columns:1fr;gap:20px}
+  .common-note {grid-column:auto}
+  .common h3 {max-width:none}
+  .common-items {gap:15px 28px}
+  .years {gap:24px}
+  .join-main {gap:32px}
+}
+@media (max-width:560px) {
+  .topbar {align-items:start}
+  .brand-logo {width:195px;max-width:64%}
+  .navigation {gap:0}
+  .navigation a {padding-top:13px}
+  .hero-copy .eyebrow {font-size:11px;margin-bottom:15px}
+  h1 {font-size:clamp(37px,10.1vw,57px);line-height:1.05}
+  .hero-main {padding-top:23px}
+  .hero-paths {grid-template-columns:1fr;gap:0}
+  .hero-path {padding:16px 0;gap:14px}
+  .hero-path:last-child {padding-bottom:0}
+  .hero-path strong {font-size:23px}
+  .hero-path .eyebrow {font-size:11px}
+  .section-heading {display:block;margin-bottom:26px}
+  .section-heading > p {margin-top:16px;max-width:36ch}
+  .path-grid {grid-template-columns:1fr;gap:22px}
+  .path {padding:27px}
+  .path h3 {font-size:clamp(28px,7.75vw,41px)}
+  .path-intro {font-size:16px}
+  .path .verbs {font-size:18px}
+  .extent {flex-direction:row;align-items:center;gap:12px}
+  .extent .description {max-width:14ch;font-size:12px}
+  .extent .value {font-size:31px}
+  .common-items {display:grid;grid-template-columns:1fr;gap:12px}
+  .common-items li {max-width:none;font-size:21px}
+  .common-note {font-size:15px}
+  .years {grid-template-columns:1fr;gap:24px;margin-top:26px}
+  .year {padding-top:17px}
+  .year h3 {font-size:29px;margin-bottom:8px}
+  .year p {max-width:43ch}
+  .benefits {grid-template-columns:1fr;gap:22px}
+  .benefit p {font-size:15px;max-width:44ch}
+  .takeaway {margin-top:30px;padding-top:28px}
+  .join-main {grid-template-columns:1fr;gap:25px}
+  .join h2 {font-size:46px;max-width:13ch}
+  .join-copy strong {font-size:22px}
+  .footer-inner {flex-wrap:wrap;gap:24px}
+  .footer .brand-logo {width:190px;max-width:none}
+  .footer p {text-align:left}
+}
+@media (prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  *,*::before,*::after {transition:none!important}
+}
+@media print {
+  .makerspace {padding-block:22px;break-inside:avoid}
+  .maker-grid {grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px}
+  .maker-title h2 {font-size:22px}
+  .maker-description .equipment-note {font-size:9.5pt}
+  :root {--space:0;--section:24px}
+  @page {size:A4;margin:13mm}
+  body {font-size:11pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .skip,.navigation,.text-link,.hero-paths,.footer a {display:none}
+  .hero .wrap,.paths .wrap,.join .wrap,.footer .wrap {padding-inline:22px}
+  .topbar {padding-block:20px 10px}
+  .brand-logo {width:170px}
+  .hero-main {padding-block:18px 28px;grid-template-columns:2.5fr 1fr;gap:20px}
+  h1 {font-size:46px}
+  .deck {font-size:12pt}
+  .hero-art {display:flex}
+  .hero-spark {width:120px}
+  .hero-art p {font-size:16px}
+  h2 {font-size:30px}
+  .path-grid {grid-template-columns:1fr 1fr;gap:15px}
+  .path {padding:20px;break-inside:avoid}
+  .path h3 {font-size:27px}
+  .path summary {font-size:10pt}
+  .path-intro,.maker-description p,.year p {font-size:10.5pt}
+  .years,.benefits {gap:20px}
+  .join-main {grid-template-columns:1fr 1fr}
+  .join h2 {font-size:34px}
+  .join-copy strong {font-size:18px}
+  .year,.takeaway,.common,.join,.footer {break-inside:avoid}
+  .project-example p,.benefit p {font-size:9.5pt}
+  .paths,.makerspace,.journey {break-before:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#sisalto">Siirry sisältöön</a>
+<header class="hero" id="alku">
+  <div class="wrap">
+    <div class="topbar">
+      <!-- Original one-line logo and symbol from the graphic guide, p. 10. -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="426.4445 276.2750 116.3973 25.5079" class="brand-logo" role="img" aria-label="Kiviruukin lukio" focusable="false"><path fill="currentColor" fill-rule="nonzero" d="M438.2385 286.9630 L443.1465 285.2440 L442.8715 284.4880 L437.9635 286.2070 L443.4325 281.6180 L442.9145 281.0010 L437.4455 285.5900 L440.5045 280.5310 L439.8075 280.1290 L436.7485 285.1880 L437.9775 278.2170 L437.1855 278.0770 L435.9565 285.0480 L434.5565 276.7750 L433.7635 276.9150 L435.1635 285.1880 L432.4185 280.4330 L431.7215 280.8360 L434.4665 285.5900 L429.4415 281.3740 L428.9245 281.9910 L433.9495 286.2070 L429.7125 284.6650 L429.4375 285.4210 L433.6735 286.9630 L426.9445 286.9630 L426.9445 287.7680 L433.6755 287.7680 L433.6755 286.9630 L433.9505 286.2080 L434.4675 285.5910 L435.1645 285.1890 L435.9565 285.0500 L436.7485 285.1890 L437.4445 285.5910 L437.9615 286.2080 L438.2365 286.9630 L438.2365 287.7680 L445.0385 287.7680 L445.0385 286.9630 L438.2385 286.9630"/><path fill="currentColor" fill-rule="nonzero" d="M429.9184 297.5565 L428.6894 298.7585 L428.6894 301.0955 L427.3274 301.0955 L427.3274 293.4825 L428.6894 293.4825 L428.6894 296.8355 L428.9704 296.8355 L432.2824 293.4825 L434.0984 293.4825 L431.1074 296.3945 L431.1074 296.8355 L433.8984 301.0955 L432.2424 301.0955 L429.9184 297.5565"/><path fill="currentColor" fill-rule="nonzero" d="M438.9462 299.8403 L440.6292 299.8403 L440.6292 301.0963 L435.1262 301.0963 L435.1262 299.8403 L436.8092 299.8403 L437.2102 299.4393 L437.2102 295.1393 L436.8092 294.7383 L435.1262 294.7383 L435.1262 293.4823 L440.6292 293.4823 L440.6292 294.7383 L438.9462 294.7383 L438.5452 295.1393 L438.5452 299.4393 L438.9462 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M444.5776 301.0958 L441.6126 293.4828 L443.1486 293.4828 L445.2726 299.3458 L445.6726 299.3458 L447.7966 293.4828 L449.3056 293.4828 L446.3276 301.0958 L444.5776 301.0958"/><path fill="currentColor" fill-rule="nonzero" d="M454.1171 299.8403 L455.8001 299.8403 L455.8001 301.0963 L450.2971 301.0963 L450.2971 299.8403 L451.9801 299.8403 L452.3811 299.4393 L452.3811 295.1393 L451.9801 294.7383 L450.2971 294.7383 L450.2971 293.4823 L455.8001 293.4823 L455.8001 294.7383 L454.1171 294.7383 L453.7161 295.1393 L453.7161 299.4393 L454.1171 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M458.7026 301.0958 L457.3406 301.0958 L457.3406 293.4828 L460.5186 293.4828 C462.4686 293.4828 463.6046 294.3108 463.6046 295.8338 C463.6046 296.9558 463.0036 297.6898 461.9086 297.9968 L461.9086 298.3048 L463.9516 301.0958 L462.3226 301.0958 L460.1986 298.1708 L458.7026 298.1708 L458.7026 301.0958 M459.1036 294.7378 L458.7026 295.1388 L458.7026 296.9158 L460.4926 296.9158 C461.6546 296.9158 462.2016 296.5148 462.2016 295.8338 C462.2016 295.1388 461.6546 294.7378 460.4926 294.7378 L459.1036 294.7378"/><path fill="currentColor" fill-rule="nonzero" d="M469.6070 298.2109 L469.6070 293.4829 L470.9690 293.4829 L470.9690 298.3979 C470.9690 300.1079 469.5800 301.2829 467.8710 301.2829 C466.1610 301.2829 464.7720 300.1079 464.7720 298.3979 L464.7720 293.4829 L466.1340 293.4829 L466.1340 298.2239 C466.1340 299.2789 466.8820 300.0139 467.8710 300.0139 C468.8590 300.0139 469.6070 299.2789 469.6070 298.2109"/><path fill="currentColor" fill-rule="nonzero" d="M477.3447 298.2109 L477.3447 293.4829 L478.7067 293.4829 L478.7067 298.3979 C478.7067 300.1079 477.3177 301.2829 475.6087 301.2829 C473.8987 301.2829 472.5097 300.1079 472.5097 298.3979 L472.5097 293.4829 L473.8717 293.4829 L473.8717 298.2239 C473.8717 299.2789 474.6197 300.0139 475.6087 300.0139 C476.5967 300.0139 477.3447 299.2789 477.3447 298.2109"/><path fill="currentColor" fill-rule="nonzero" d="M482.9091 297.5565 L481.6801 298.7585 L481.6801 301.0955 L480.3181 301.0955 L480.3181 293.4825 L481.6801 293.4825 L481.6801 296.8355 L481.9611 296.8355 L485.2731 293.4825 L487.0891 293.4825 L484.0981 296.3945 L484.0981 296.8355 L486.8891 301.0955 L485.2331 301.0955 L482.9091 297.5565"/><path fill="currentColor" fill-rule="nonzero" d="M491.9370 299.8403 L493.6200 299.8403 L493.6200 301.0963 L488.1170 301.0963 L488.1170 299.8403 L489.8000 299.8403 L490.2010 299.4393 L490.2010 295.1393 L489.8000 294.7383 L488.1170 294.7383 L488.1170 293.4823 L493.6200 293.4823 L493.6200 294.7383 L491.9370 294.7383 L491.5360 295.1393 L491.5360 299.4393 L491.9370 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M499.7668 301.0958 L496.7218 295.5928 L496.3208 295.5928 L496.3208 301.0958 L495.0518 301.0958 L495.0518 293.4828 L496.8948 293.4828 L499.6598 298.5718 L500.0608 298.5718 L500.0608 293.4828 L501.3298 293.4828 L501.3298 301.0958 L499.7668 301.0958"/><path fill="currentColor" fill-rule="nonzero" d="M508.4387 299.8403 L512.3117 299.8403 L512.3117 301.0953 L506.6887 301.0953 L506.6887 293.4823 L508.0377 293.4823 L508.0377 299.4393 L508.4387 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M518.1810 298.2108 L518.1810 293.4828 L519.5430 293.4828 L519.5430 298.3978 C519.5430 300.1078 518.1541 301.2828 516.4450 301.2828 C514.7350 301.2828 513.3460 300.1078 513.3460 298.3978 L513.3460 293.4828 L514.7080 293.4828 L514.7080 298.2238 C514.7080 299.2798 515.4561 300.0138 516.4450 300.0138 C517.4330 300.0138 518.1810 299.2798 518.1810 298.2108"/><path fill="currentColor" fill-rule="nonzero" d="M523.7457 297.5563 L522.5167 298.7583 L522.5167 301.0953 L521.1547 301.0953 L521.1547 293.4823 L522.5167 293.4823 L522.5167 296.8353 L522.7977 296.8353 L526.1097 293.4823 L527.9268 293.4823 L524.9348 296.3943 L524.9348 296.8353 L527.7257 301.0953 L526.0697 301.0953 L523.7457 297.5563"/><path fill="currentColor" fill-rule="nonzero" d="M532.7734 299.8403 L534.4564 299.8403 L534.4564 301.0953 L528.9534 301.0953 L528.9534 299.8403 L530.6364 299.8403 L531.0374 299.4393 L531.0374 295.1393 L530.6364 294.7383 L528.9534 294.7383 L528.9534 293.4823 L534.4564 293.4823 L534.4564 294.7383 L532.7734 294.7383 L532.3724 295.1393 L532.3724 299.4393 L532.7734 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M538.8028 301.2827 C536.6388 301.2827 535.2638 299.5197 535.2638 297.2897 C535.2638 295.0587 536.6388 293.2957 538.8028 293.2957 C540.9668 293.2957 542.3418 295.0587 542.3418 297.2897 C542.3418 299.5197 540.9668 301.2827 538.8028 301.2827 M538.8028 294.5777 C537.3738 294.5777 536.6928 295.7937 536.6928 297.2897 C536.6928 298.7847 537.3738 300.0007 538.8028 300.0007 C540.2318 300.0007 540.9128 298.7847 540.9128 297.2897 C540.9128 295.7937 540.2318 294.5777 538.8028 294.5777"/></svg>
+      <nav class="navigation" aria-label="Sivun osiot">
+        <a class="nav-paths" href="#diplomipolut">Diplomipolut</a>
+        <a href="#mukaan">Mukaan ↓</a>
+      </nav>
+    </div>
+    <div class="hero-main">
+      <div class="hero-copy">
+        <p class="eyebrow">Kiviruukin diplomipolut</p>
+        <h1>Meillä taotaan <span class="accent">tulevaisuuksia.</span></h1>
+        <p class="deck"><strong>Valitse oma diplomipolkusi.</strong> Kehitä ideoitasi, rakenna kiinnostustesi mukaista osaamista ja tee oma diplomityö. Et tee sitä yksin.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="426.4451 477.1156 78.0200 47.7940" class="hero-spark" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="nonzero" d="M475.0201 520.9836 L495.9131 513.6666 L494.7411 510.4466 L473.8481 517.7646 L497.1291 498.2286 L494.9271 495.6036 L471.6461 515.1386 L484.6671 493.6046 L481.6991 491.8916 L468.6781 513.4266 L473.9111 483.7526 L470.5361 483.1576 L465.3041 512.8316 L459.3461 477.6156 L455.9721 478.2106 L461.9301 513.4266 L450.2451 493.1886 L447.2781 494.9016 L458.9631 515.1396 L437.5741 497.1926 L435.3721 499.8176 L456.7601 517.7636 L438.7281 511.2006 L437.5561 514.4206 L455.5881 520.9836 L426.9451 520.9836 L426.9451 524.4096 L455.5951 524.4096 L455.5951 520.9846 L456.7661 517.7676 L458.9671 515.1446 L461.9321 513.4326 L465.3041 512.8386 L468.6761 513.4326 L471.6411 515.1446 L473.8421 517.7676 L475.0131 520.9846 L475.0131 524.4096 L503.9651 524.4096 L503.9651 520.9836 L475.0201 520.9836"/></svg>
+        <p>Oma suunta.<br>Yhdessä eteenpäin.</p>
+      </div>
+    </div>
+    <div class="hero-paths" aria-label="Tutustu diplomeihin">
+      <a class="hero-path" href="#tt">
+        <span><span class="eyebrow">Tiede- ja teknologia -diplomi</span><strong>Tiede ja teknologia</strong></span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </a>
+      <a class="hero-path" href="#yrittajyys">
+        <span><span class="eyebrow">Talous- ja yrittäjyysdiplomi</span><strong>Talous ja yrittäjyys</strong></span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main id="sisalto">
+  <section class="paths" id="diplomipolut" aria-labelledby="paths-heading">
+    <div class="wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">Löydä oma suuntasi</p><h2 id="paths-heading">Kaksi polkua.<br>Sinun valintasi.</h2></div>
+        <p>Kokoa oma osaamiskokonaisuutesi ja näytä, mitä olet oppinut.</p>
+      </div>
+      <div class="path-grid">
+        <article class="path path-tt" id="tt" aria-labelledby="tt-heading">
+          <p class="eyebrow">Tiede & teknologia</p>
+          <h3 id="tt-heading"><span>Tiede- ja</span><span>teknologia -diplomi</span></h3>
+          <p class="verbs">Rakenna. Koodaa. Tutki. Näytä.</p>
+          <p class="path-intro">Yhdistä luonnontieteitä, matematiikkaa ja teknologiaa käytännön tekemiseen, tutkimiseen ja ongelmanratkaisuun. Työskentele Makerspacessa, kehitä omia sovelluksia tai syvenny luonnontieteelliseen tutkimukseen.</p>
+          <div class="project-example">
+            <strong>Millaisen työn sinä tekisit?</strong>
+            <p>Esimerkiksi oman sovelluksen, prototyypin tai luonnontieteellisen tutkimuksen.</p>
+          </div>
+          <details>
+            <summary>Tutustu polun sisältöihin</summary>
+            <ul class="topic-list" aria-label="Tiede ja teknologia -polun sisältöjä">
+              <li>Makerspace</li><li>Robotiikka</li><li>Ohjelmointi</li><li>Data</li><li>Kyberturvallisuus</li><li>Bioteknologia</li><li>Terveysteknologia</li><li>Dronet ja satelliitit</li><li>Luonnontieteellinen tutkimus</li>
+            </ul>
+          </details>
+          <div class="extent"><span class="value">6 op + 2 op</span><span class="description">Opinnot +<br>lukiodiplomi</span></div>
+        </article>
+        <article class="path path-business" id="yrittajyys" aria-labelledby="business-heading">
+          <p class="eyebrow">Talous & yrittäjyys</p>
+          <h3 id="business-heading"><span>Talous- ja</span><span>yrittäjyysdiplomi</span></h3>
+          <p class="verbs">Ideoi. Kokeile. Verkostoidu. Kasva.</p>
+          <p class="path-intro">Kehitä talous-, työelämä- ja yrittäjyystaitojasi ja opi viemään ideat käytännön toiminnaksi. Perehdy omaan talouteen, markkinointiin ja yrittäjyyteen – ja löydä oma tapasi tehdä ja vaikuttaa.</p>
+          <div class="project-example">
+            <strong>Mitä sinä haluaisit kokeilla?</strong>
+            <p>Esimerkiksi liikeidean kehittämistä, markkinoinnin suunnittelua tai yrittäjyyttä käytännössä.</p>
+          </div>
+          <details>
+            <summary>Tutustu polun sisältöihin</summary>
+            <ul class="topic-list" aria-label="Talous ja yrittäjyys -polun sisältöjä">
+              <li>Oma talous</li><li>Työelämätaidot</li><li>Yrittäjyys</li><li>Sijoittaminen</li><li>Yrittäjän matematiikka</li><li>Media ja markkinointi</li><li>Verkostoituminen</li><li>Global Business</li><li>Vuosi yrittäjänä</li>
+            </ul>
+          </details>
+          <div class="extent"><span class="value">6 op + 2 op</span><span class="description">Opinnot +<br>lukiodiplomi</span></div>
+        </article>
+      </div>
+      <div class="common">
+        <h3>Yhteistä molemmille</h3>
+        <ul class="common-items"><li>Innovaatiot</li><li>Tekoäly</li><li>Korkeakoulu- ja<br>yritysyhteistyö</li></ul>
+        <p class="common-note">Omia ideoita, uusia näkökulmia ja yhdessä tekemistä. Yhteistyöprojektit voivat tuoda opintoihin myös tosielämän haasteita.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="makerspace" id="makerspace" aria-labelledby="maker-heading">
+    <div class="wrap">
+      <div class="maker-grid">
+        <div class="maker-title">
+          <h2 id="maker-heading"><span class="place">Oma Makerspace.</span><span class="promise">Tilaa tehdä ideasta totta.</span></h2>
+        </div>
+        <div class="maker-description">
+          <p>Kiviruukin lukion omassa Makerspacessa suunnitellaan, kokeillaan ja rakennetaan. Opettajien tuella kehität ideoita ja testaat ratkaisuja yhdessä muiden kanssa.</p>
+          <p class="equipment-note"><strong>STEAM-opinnoissa esimerkiksi:</strong> 3D-tulostusta, robotiikkaa ja elektroniikkaa sekä laser- ja vinyylileikkaamista.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journey" aria-labelledby="journey-heading">
+    <div class="wrap">
+      <p class="eyebrow">Näin diplomipolku etenee</p>
+      <h2 id="journey-heading">Kiinnostuksesta osaamiseksi.</h2>
+      <div class="years">
+        <div class="year"><p class="eyebrow">1. opiskeluvuosi</p><h3>Tutustu</h3><p>Valitse kiinnostavia opintoja, kokeile uutta ja etsi oma suuntasi.</p></div>
+        <div class="year"><p class="eyebrow">2. opiskeluvuosi</p><h3>Syvennä</h3><p>Kokoa oma painotuksesi, kerää näyttöjä osaamisestasi ja aloita diplomityö.</p></div>
+        <div class="year"><p class="eyebrow">3. opiskeluvuosi</p><h3>Esittele</h3><p>Viimeistele diplomityösi ja tuo se Kiviruukkipäivän messuille.</p></div>
+      </div>
+      <div class="takeaway">
+        <h3>Mitä saat diplomipolusta?</h3>
+        <div class="benefits">
+          <div class="benefit"><strong>Oman painotuksen</strong><p>Rakenna kokonaisuus omien kiinnostuksenkohteidesi mukaan.</p></div>
+          <div class="benefit"><strong>Taitoja jatkoon</strong><p>Syvennä taitoja korkeakouluopintoja ja työelämää varten.</p></div>
+          <div class="benefit"><strong>Käytännön projekteja</strong><p>Vie ideoita toteutuksiksi ja harjoittele yhteistyötä.</p></div>
+          <div class="benefit"><strong>Näytön osaamisestasi</strong><p>Kokoa osaamistasi ja tee se näkyväksi omassa diplomityössä.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="mukaan" aria-labelledby="join-heading">
+    <div class="wrap">
+      <div class="join-main">
+        <h2 id="join-heading">Tuo oma<br>kipinäsi.</h2>
+        <div class="join-copy">
+          <strong>Ensimmäinen askel?<br>Tule lukuvuoden alun infoon.</strong>
+          <p>Kysy diplomipolkujen koordinaattorilta, miten pääset alkuun ja rakennat oman polkusi.</p>
+          <!-- YHTEYSTIETO: Add the confirmed coordinator name and a mailto link here.
+               For example: <a class="contact-link" href="mailto:...">...</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="426.4445 276.2750 116.3973 25.5079" class="brand-logo" role="img" aria-label="Kiviruukin lukio" focusable="false"><path fill="currentColor" fill-rule="nonzero" d="M438.2385 286.9630 L443.1465 285.2440 L442.8715 284.4880 L437.9635 286.2070 L443.4325 281.6180 L442.9145 281.0010 L437.4455 285.5900 L440.5045 280.5310 L439.8075 280.1290 L436.7485 285.1880 L437.9775 278.2170 L437.1855 278.0770 L435.9565 285.0480 L434.5565 276.7750 L433.7635 276.9150 L435.1635 285.1880 L432.4185 280.4330 L431.7215 280.8360 L434.4665 285.5900 L429.4415 281.3740 L428.9245 281.9910 L433.9495 286.2070 L429.7125 284.6650 L429.4375 285.4210 L433.6735 286.9630 L426.9445 286.9630 L426.9445 287.7680 L433.6755 287.7680 L433.6755 286.9630 L433.9505 286.2080 L434.4675 285.5910 L435.1645 285.1890 L435.9565 285.0500 L436.7485 285.1890 L437.4445 285.5910 L437.9615 286.2080 L438.2365 286.9630 L438.2365 287.7680 L445.0385 287.7680 L445.0385 286.9630 L438.2385 286.9630"/><path fill="currentColor" fill-rule="nonzero" d="M429.9184 297.5565 L428.6894 298.7585 L428.6894 301.0955 L427.3274 301.0955 L427.3274 293.4825 L428.6894 293.4825 L428.6894 296.8355 L428.9704 296.8355 L432.2824 293.4825 L434.0984 293.4825 L431.1074 296.3945 L431.1074 296.8355 L433.8984 301.0955 L432.2424 301.0955 L429.9184 297.5565"/><path fill="currentColor" fill-rule="nonzero" d="M438.9462 299.8403 L440.6292 299.8403 L440.6292 301.0963 L435.1262 301.0963 L435.1262 299.8403 L436.8092 299.8403 L437.2102 299.4393 L437.2102 295.1393 L436.8092 294.7383 L435.1262 294.7383 L435.1262 293.4823 L440.6292 293.4823 L440.6292 294.7383 L438.9462 294.7383 L438.5452 295.1393 L438.5452 299.4393 L438.9462 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M444.5776 301.0958 L441.6126 293.4828 L443.1486 293.4828 L445.2726 299.3458 L445.6726 299.3458 L447.7966 293.4828 L449.3056 293.4828 L446.3276 301.0958 L444.5776 301.0958"/><path fill="currentColor" fill-rule="nonzero" d="M454.1171 299.8403 L455.8001 299.8403 L455.8001 301.0963 L450.2971 301.0963 L450.2971 299.8403 L451.9801 299.8403 L452.3811 299.4393 L452.3811 295.1393 L451.9801 294.7383 L450.2971 294.7383 L450.2971 293.4823 L455.8001 293.4823 L455.8001 294.7383 L454.1171 294.7383 L453.7161 295.1393 L453.7161 299.4393 L454.1171 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M458.7026 301.0958 L457.3406 301.0958 L457.3406 293.4828 L460.5186 293.4828 C462.4686 293.4828 463.6046 294.3108 463.6046 295.8338 C463.6046 296.9558 463.0036 297.6898 461.9086 297.9968 L461.9086 298.3048 L463.9516 301.0958 L462.3226 301.0958 L460.1986 298.1708 L458.7026 298.1708 L458.7026 301.0958 M459.1036 294.7378 L458.7026 295.1388 L458.7026 296.9158 L460.4926 296.9158 C461.6546 296.9158 462.2016 296.5148 462.2016 295.8338 C462.2016 295.1388 461.6546 294.7378 460.4926 294.7378 L459.1036 294.7378"/><path fill="currentColor" fill-rule="nonzero" d="M469.6070 298.2109 L469.6070 293.4829 L470.9690 293.4829 L470.9690 298.3979 C470.9690 300.1079 469.5800 301.2829 467.8710 301.2829 C466.1610 301.2829 464.7720 300.1079 464.7720 298.3979 L464.7720 293.4829 L466.1340 293.4829 L466.1340 298.2239 C466.1340 299.2789 466.8820 300.0139 467.8710 300.0139 C468.8590 300.0139 469.6070 299.2789 469.6070 298.2109"/><path fill="currentColor" fill-rule="nonzero" d="M477.3447 298.2109 L477.3447 293.4829 L478.7067 293.4829 L478.7067 298.3979 C478.7067 300.1079 477.3177 301.2829 475.6087 301.2829 C473.8987 301.2829 472.5097 300.1079 472.5097 298.3979 L472.5097 293.4829 L473.8717 293.4829 L473.8717 298.2239 C473.8717 299.2789 474.6197 300.0139 475.6087 300.0139 C476.5967 300.0139 477.3447 299.2789 477.3447 298.2109"/><path fill="currentColor" fill-rule="nonzero" d="M482.9091 297.5565 L481.6801 298.7585 L481.6801 301.0955 L480.3181 301.0955 L480.3181 293.4825 L481.6801 293.4825 L481.6801 296.8355 L481.9611 296.8355 L485.2731 293.4825 L487.0891 293.4825 L484.0981 296.3945 L484.0981 296.8355 L486.8891 301.0955 L485.2331 301.0955 L482.9091 297.5565"/><path fill="currentColor" fill-rule="nonzero" d="M491.9370 299.8403 L493.6200 299.8403 L493.6200 301.0963 L488.1170 301.0963 L488.1170 299.8403 L489.8000 299.8403 L490.2010 299.4393 L490.2010 295.1393 L489.8000 294.7383 L488.1170 294.7383 L488.1170 293.4823 L493.6200 293.4823 L493.6200 294.7383 L491.9370 294.7383 L491.5360 295.1393 L491.5360 299.4393 L491.9370 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M499.7668 301.0958 L496.7218 295.5928 L496.3208 295.5928 L496.3208 301.0958 L495.0518 301.0958 L495.0518 293.4828 L496.8948 293.4828 L499.6598 298.5718 L500.0608 298.5718 L500.0608 293.4828 L501.3298 293.4828 L501.3298 301.0958 L499.7668 301.0958"/><path fill="currentColor" fill-rule="nonzero" d="M508.4387 299.8403 L512.3117 299.8403 L512.3117 301.0953 L506.6887 301.0953 L506.6887 293.4823 L508.0377 293.4823 L508.0377 299.4393 L508.4387 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M518.1810 298.2108 L518.1810 293.4828 L519.5430 293.4828 L519.5430 298.3978 C519.5430 300.1078 518.1541 301.2828 516.4450 301.2828 C514.7350 301.2828 513.3460 300.1078 513.3460 298.3978 L513.3460 293.4828 L514.7080 293.4828 L514.7080 298.2238 C514.7080 299.2798 515.4561 300.0138 516.4450 300.0138 C517.4330 300.0138 518.1810 299.2798 518.1810 298.2108"/><path fill="currentColor" fill-rule="nonzero" d="M523.7457 297.5563 L522.5167 298.7583 L522.5167 301.0953 L521.1547 301.0953 L521.1547 293.4823 L522.5167 293.4823 L522.5167 296.8353 L522.7977 296.8353 L526.1097 293.4823 L527.9268 293.4823 L524.9348 296.3943 L524.9348 296.8353 L527.7257 301.0953 L526.0697 301.0953 L523.7457 297.5563"/><path fill="currentColor" fill-rule="nonzero" d="M532.7734 299.8403 L534.4564 299.8403 L534.4564 301.0953 L528.9534 301.0953 L528.9534 299.8403 L530.6364 299.8403 L531.0374 299.4393 L531.0374 295.1393 L530.6364 294.7383 L528.9534 294.7383 L528.9534 293.4823 L534.4564 293.4823 L534.4564 294.7383 L532.7734 294.7383 L532.3724 295.1393 L532.3724 299.4393 L532.7734 299.8403"/><path fill="currentColor" fill-rule="nonzero" d="M538.8028 301.2827 C536.6388 301.2827 535.2638 299.5197 535.2638 297.2897 C535.2638 295.0587 536.6388 293.2957 538.8028 293.2957 C540.9668 293.2957 542.3418 295.0587 542.3418 297.2897 C542.3418 299.5197 540.9668 301.2827 538.8028 301.2827 M538.8028 294.5777 C537.3738 294.5777 536.6928 295.7937 536.6928 297.2897 C536.6928 298.7847 537.3738 300.0007 538.8028 300.0007 C540.2318 300.0007 540.9128 298.7847 540.9128 297.2897 C540.9128 295.7937 540.2318 294.5777 538.8028 294.5777"/></svg>
+    <p>Kiviruukin diplomipolut<br>Tiede ja teknologia · Talous ja yrittäjyys</p>
+    <a href="#alku">Takaisin alkuun ↑</a>
+  </div>
+</footer>
+</body>
+</html>
