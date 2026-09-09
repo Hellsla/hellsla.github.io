@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alfahajoaminen ja liikemäärän säilyminen (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --slate:#6E7A82;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+  }
+
+  .scene{ width:100%; height:100%; }
+  .scene text{ font-family:inherit; }
+
+  .h    { font-size:14px; fill:var(--faint); letter-spacing:.12em; }
+  .note { font-size:15px; fill:var(--muted); }
+  .msg  { font-size:21px; fill:var(--muted); }
+  .eq   { font-size:23px; fill:var(--ink); }
+  .name { font-size:21px; fill:var(--ink); font-weight:700; }
+  .num  { font-size:16px; fill:var(--muted); font-variant-numeric:tabular-nums; }
+
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.2em;
+  }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-btn:disabled{ opacity:.34; cursor:default; }
+  .sim-controls .sim-sliderBox{ width:auto; gap:.6em; }
+  .sim-controls .sim-sliderBox label{ font-size:.94em; }
+  .sim-controls .sim-range{ width:8.5em; }
+  .sim-controls .out{
+    min-width:4ch; text-align:right; font-weight:700; color:var(--ink);
+    font-size:.94em; font-variant-numeric:tabular-nums;
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Alfahajoamisen simulaatio ja liikemäärän säilyminen">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Radium-226 hajoaa radoniksi ja alfahiukkaseksi, liikemäärä säilyy">
+
+<text x="40" y="38" class="eq">²²⁶Ra  →  ²²²Rn + ⁴He</text>
+
+<text x="920" y="34" text-anchor="end" class="num">m(²²²Rn) = 222 u</text>
+<text x="920" y="56" text-anchor="end" class="num">m(⁴He) = 4 u</text>
+<text x="920" y="78" text-anchor="end" class="num">v(α) = 55 · v(Rn)</text>
+<text x="920" y="100" text-anchor="end" class="num">p(Rn) + p(α) = 0</text>
+
+<!-- alkuperäinen paikka, jotta pieni takapotku näkyy -->
+<line x1="480" y1="116" x2="480" y2="252" stroke="var(--faint)"
+      stroke-width="1.2" stroke-dasharray="4 6"/>
+<text x="480" y="106" text-anchor="middle" class="h">ALKUPERÄINEN PAIKKA</text>
+
+<!-- ytimet -->
+<circle id="core" cx="480" cy="180" r="52" fill="#EAF1F5"
+        stroke="var(--blue)" stroke-width="2.6"/>
+<g id="alpha"></g>
+
+<text id="coreName"  x="480" y="256" text-anchor="middle" class="name">²²⁶Ra</text>
+<text id="alphaName" x="480" y="256" text-anchor="middle" class="name" opacity="0">⁴He</text>
+
+<!-- vertailurivit: vektorit lähtevät samasta pisteestä, joten ne pysyvät kuvassa -->
+<text x="40" y="304" class="h">NOPEUS v</text>
+<line x1="480" y1="288" x2="480" y2="308" stroke="var(--line)" stroke-width="2"/>
+<g id="vRn" opacity="0">
+  <line stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>
+  <polygon fill="var(--blue)"/>
+</g>
+<g id="vHe" opacity="0">
+  <line stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>
+  <polygon fill="var(--blue)"/>
+</g>
+<text id="vRnLab" x="464" y="304" text-anchor="end" class="note" opacity="0">v(Rn) · 55× lyhyempi</text>
+<text id="vHeLab" x="669" y="304" class="note" opacity="0">v(α)</text>
+
+<text x="40" y="364" class="h">LIIKEMÄÄRÄ  p = m · v</text>
+<line x1="480" y1="348" x2="480" y2="368" stroke="var(--line)" stroke-width="2"/>
+<g id="pRn" opacity="0">
+  <line stroke="var(--orange)" stroke-width="5" stroke-linecap="round"/>
+  <polygon fill="var(--orange)"/>
+</g>
+<g id="pHe" opacity="0">
+  <line stroke="var(--orange)" stroke-width="5" stroke-linecap="round"/>
+  <polygon fill="var(--orange)"/>
+</g>
+<text id="pRnLab" x="336" y="364" text-anchor="end" class="note" opacity="0">p(Rn)</text>
+<text id="pHeLab" x="626" y="364" class="note" opacity="0">p(α)</text>
+<text id="pZero"  x="480" y="392" text-anchor="middle" class="note">levossa: p = 0</text>
+<text id="pNote"  x="480" y="392" text-anchor="middle" class="note" opacity="0">yhtä suuret, vastakkaissuuntaiset</text>
+
+<text id="msg" x="480" y="420" text-anchor="middle" class="msg">Radium-226-ydin on levossa: sen liikemäärä on nolla.</text>
+
+</svg>
+
+<div class="sim-controls">
+  <button class="sim-btn primary" type="button" id="decay">Hajoa</button>
+  <button class="sim-btn" type="button" id="reset">Nollaa</button>
+  <div class="sim-sliderBox">
+    <label for="speed">Nopeus</label>
+    <input class="sim-range" id="speed" type="range" min="0.2" max="1.5" step="0.1" value="1">
+    <span class="out" id="speedOut">1,0×</span>
+  </div>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+const mk = (tag, attrs) => {
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+};
+const clamp = (v, a, b) => v < a ? a : (v > b ? b : v);
+const fmt = (n, d = 1) => n.toFixed(d).replace(".", ",");
+
+/* yläindeksit tspaneilla: Arialista puuttuu osa unicode-merkeistä */
+const UNSUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5",
+               "⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-","⁺":"+"};
+const isSup = c => Object.prototype.hasOwnProperty.call(UNSUP, c);
+function typeset(el, str){
+  if(el.__typeset === str) return;
+  el.__typeset = str;
+  while(el.firstChild) el.removeChild(el.firstChild);
+  const runs = [];
+  for(const ch of str){
+    const s = isSup(ch);
+    const last = runs[runs.length - 1];
+    if(last && last.sup === s) last.text += s ? UNSUP[ch] : ch;
+    else runs.push({ sup: s, text: s ? UNSUP[ch] : ch });
+  }
+  let raised = false;
+  for(const run of runs){
+    const t = document.createElementNS(NS, "tspan");
+    if(run.sup){ t.setAttribute("font-size","0.66em"); t.setAttribute("dy","-0.52em"); raised = true; }
+    else if(raised){ t.setAttribute("dy","0.34em"); raised = false; }
+    t.textContent = run.text;
+    el.appendChild(t);
+  }
+}
+
+/* --- massat ja nopeudet --- */
+const M_RN = 222, M_HE = 4;
+const CX = 480, CY = 180;
+const V_HE = 190;                       // px/s
+const V_RN = V_HE * M_HE / M_RN;        // liikemäärän säilyminen
+const P_LEN = 132;                      // liikemäärävektorin pituus (yhtä suuret)
+const V_LEN_HE = 186;
+const V_LEN_RN = V_LEN_HE * M_HE / M_RN;
+
+/* alfahiukkanen: 2 protonia ja 2 neutronia */
+const gAlpha = $("alpha");
+const AL = [
+  { x:-7.5, y:0,    t:"p" }, { x:7.5, y:0,    t:"p" },
+  { x:0,    y:-7.5, t:"n" }, { x:0,   y:7.5,  t:"n" }
+].map(s => {
+  const el = mk("circle", { r: 8, fill: s.t === "p" ? "var(--red)" : "var(--slate)",
+                            stroke: "#fff", "stroke-width": 1.2 });
+  gAlpha.appendChild(el);
+  return { el, ox: s.x, oy: s.y };
+});
+
+let state = "idle", t = 0, speed = 1;
+let rnX = CX, heX = CX + 34, heOpacity = 1;
+
+function setArrow(g, x, y, len, dir){
+  const line = g.querySelector("line"), head = g.querySelector("polygon");
+  const hl = Math.min(15, Math.max(2, len * 0.55));
+  const hw = Math.min(8,  Math.max(1.2, len * 0.3));
+  const x2 = x + dir * len;
+  const xb = x2 - dir * hl;
+  line.setAttribute("x1", x.toFixed(1));  line.setAttribute("y1", y);
+  line.setAttribute("x2", xb.toFixed(1)); line.setAttribute("y2", y);
+  head.setAttribute("points",
+    x2.toFixed(1) + "," + y + " " +
+    xb.toFixed(1) + "," + (y - hw).toFixed(1) + " " +
+    xb.toFixed(1) + "," + (y + hw).toFixed(1));
+}
+
+const VEC = ["vRn", "vHe", "pRn", "pHe", "vRnLab", "vHeLab", "pRnLab", "pHeLab"];
+
+function draw(){
+  $("core").setAttribute("cx", rnX.toFixed(1));
+  AL.forEach(p => {
+    p.el.setAttribute("cx", (heX + p.ox).toFixed(1));
+    p.el.setAttribute("cy", (CY + p.oy).toFixed(1));
+    p.el.setAttribute("opacity", heOpacity.toFixed(2));
+  });
+
+  $("coreName").setAttribute("x", rnX.toFixed(1));
+  $("alphaName").setAttribute("x", clamp(heX, 60, 900).toFixed(1));
+  $("alphaName").setAttribute("opacity", state === "idle" ? "0" : heOpacity.toFixed(2));
+
+  if(state === "idle"){
+    VEC.forEach(id => $(id).setAttribute("opacity", "0"));
+    return;
+  }
+
+  /* vektorit piirretään samasta origosta, jolloin pituuksia voi verrata
+     suoraan eivätkä ne valu kuvan ulkopuolelle alfan lentäessä */
+  setArrow($("vRn"), CX, 298, V_LEN_RN, -1);
+  setArrow($("vHe"), CX, 298, V_LEN_HE,  1);
+  setArrow($("pRn"), CX, 358, P_LEN, -1);
+  setArrow($("pHe"), CX, 358, P_LEN,  1);
+  VEC.forEach(id => $(id).setAttribute("opacity", "1"));
+}
+
+function reset(){
+  state = "idle"; t = 0;
+  rnX = CX; heX = CX + 34; heOpacity = 1;
+  $("pZero").setAttribute("opacity", "1");
+  $("pNote").setAttribute("opacity", "0");
+  typeset($("coreName"), "²²⁶Ra");
+  $("core").setAttribute("r", 52);
+  $("decay").disabled = false;
+  typeset($("msg"), "Radium-226-ydin on levossa: sen liikemäärä on nolla.");
+  draw();
+}
+
+function decay(){
+  if(state !== "idle") return;
+  state = "fly"; t = 0;
+  $("decay").disabled = true;
+  $("core").setAttribute("r", 51.7);
+  typeset($("coreName"), "²²²Rn");
+  $("pZero").setAttribute("opacity", "0");
+  $("pNote").setAttribute("opacity", "1");
+  typeset($("msg"), "Alfahiukkanen sinkoutuu oikealle ja ydin saa yhtä suuren liikemäärän vasemmalle.");
+  draw();
+}
+
+function step(dt){
+  dt *= speed;
+  if(state === "fly"){
+    t += dt;
+    heX += V_HE * dt;
+    rnX -= V_RN * dt;
+    if(heX > 900) heOpacity = clamp(heOpacity - dt * 1.6, 0, 1);
+    if(t >= 7){
+      state = "done";
+      typeset($("msg"), "Alfahiukkanen on jo kaukana, ydin liikkui vain vähän: se on 55 kertaa raskaampi.");
+    }
+    draw();
+  }
+}
+
+$("decay").addEventListener("click", decay);
+$("reset").addEventListener("click", reset);
+$("speed").addEventListener("input", ev => {
+  speed = parseFloat(ev.target.value);
+  $("speedOut").textContent = fmt(speed, 1) + "×";
+});
+
+document.querySelectorAll(".scene text").forEach(el => typeset(el, el.textContent.trim()));
+
+const wrapEl = document.querySelector(".sim-wrap");
+const ctrlEl = document.querySelector(".sim-controls");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(w) ctrlEl.style.fontSize = (w / 960 * 18).toFixed(2) + "px";
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
+
+reset();
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  step(dt);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>

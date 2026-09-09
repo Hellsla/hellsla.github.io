@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Geiger-mittari (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --yellow:#FFD95A;
+    --grey:#9A958C;
+    --slate:#6E7A82;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+  }
+
+  .scene{ width:100%; height:100%; }
+  .scene text{ font-family:inherit; }
+
+  .h    { font-size:14px; fill:var(--faint); letter-spacing:.12em; }
+  .note { font-size:14px; fill:var(--muted); }
+  .msg  { font-size:21px; fill:var(--muted); }
+  .cap  { font-size:17px; fill:var(--muted); }
+  .huge { font-size:56px; fill:var(--ink); font-weight:700; font-variant-numeric:tabular-nums; }
+  .val  { font-size:24px; fill:var(--ink); font-weight:700; font-variant-numeric:tabular-nums; }
+  .frame{ fill:none; stroke:var(--line); stroke-width:1.6; }
+
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.1em;
+  }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-sliderBox{ width:auto; gap:.6em; }
+  .sim-controls .sim-sliderBox label{ font-size:.94em; }
+  .sim-controls .sim-range{ width:8.5em; }
+  .sim-controls .out{
+    min-width:5ch; text-align:right; font-weight:700; color:var(--ink);
+    font-size:.94em; font-variant-numeric:tabular-nums;
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Geiger-mittarin simulaatio">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Geiger-Müller-mittari, säteilylähde ja suojamateriaali">
+
+<defs>
+  <clipPath id="stage"><rect x="0" y="60" width="960" height="330"/></clipPath>
+</defs>
+
+<text x="40" y="40" class="h">GEIGER–MÜLLER-MITTARI</text>
+
+<g clip-path="url(#stage)">
+  <g id="rays"></g>
+</g>
+
+<!-- laskurin näyttö: valkoinen tausta peittää ohilentävät hiukkaset -->
+<rect id="box" x="636" y="52" width="288" height="126" rx="10"
+      fill="#fff" stroke="var(--line)" stroke-width="1.6"/>
+<text x="658" y="82" class="h">PULSSEJA SEKUNNISSA</text>
+<text id="rate" x="658" y="146" class="huge">0</text>
+<text x="902" y="106" text-anchor="end" class="h">YHTEENSÄ</text>
+<text id="total" x="902" y="146" text-anchor="end" class="val">0</text>
+
+<!-- johto putkelta laskurille -->
+<path id="wire" fill="none" stroke="var(--slate)" stroke-width="2.4"/>
+
+<!-- säteilylähde -->
+<g>
+  <rect x="150" y="198" width="98" height="74" rx="7" fill="var(--slate)"/>
+  <rect x="238" y="226" width="14" height="18" fill="#FBFAF8"/>
+  <circle cx="196" cy="235" r="11" fill="var(--yellow)"/>
+  <text x="199" y="292" text-anchor="middle" class="note">säteilylähde</text>
+</g>
+
+<!-- suojalevy -->
+<g id="shield" opacity="0">
+  <rect id="shieldPlate" x="254" y="186" width="15" height="98" rx="3" fill="var(--grey)"/>
+  <text id="shieldName" x="261" y="176" text-anchor="middle" class="note">paperi</text>
+</g>
+
+<!-- GM-putki -->
+<g id="tube">
+  <rect x="0" y="207" width="112" height="56" rx="9" fill="#FBFAF8"
+        stroke="var(--ink)" stroke-width="2.6"/>
+  <line x1="3" y1="212" x2="3" y2="258" stroke="var(--blue)" stroke-width="5"/>
+  <line x1="16" y1="235" x2="98" y2="235" stroke="var(--slate)"
+        stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="56" y="292" text-anchor="middle" class="note">GM-putki</text>
+</g>
+<circle id="hitFlash" cx="0" cy="235" r="10" fill="none"
+        stroke="var(--yellow)" stroke-width="3" opacity="0"/>
+
+<!-- etäisyysmitta -->
+<g>
+  <line x1="250" y1="332" x2="250" y2="348" stroke="var(--faint)" stroke-width="1.2"/>
+  <line id="dimEnd" x1="0" y1="332" x2="0" y2="348" stroke="var(--faint)" stroke-width="1.2"/>
+  <line id="dimLine" x1="250" y1="340" x2="0" y2="340" stroke="var(--faint)"
+        stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text id="dimText" x="0" y="364" text-anchor="middle" class="note">12 cm</text>
+</g>
+
+<text id="msg" x="480" y="420" text-anchor="middle" class="msg">Siirrä mittaria kauemmas ja katso, miten pulssit harvenevat.</text>
+
+</svg>
+
+<div class="sim-controls">
+  <div class="sim-sliderBox">
+    <label for="dist">Etäisyys</label>
+    <input class="sim-range" id="dist" type="range" min="2" max="30" step="1" value="12">
+    <span class="out" id="distOut">12 cm</span>
+  </div>
+  <button class="sim-btn" type="button" id="type">Säteily: gamma</button>
+  <button class="sim-btn" type="button" id="shieldBtn">Suoja: ei suojaa</button>
+  <button class="sim-btn" type="button" id="sound">Ääni: pois</button>
+  <button class="sim-btn" type="button" id="reset">Nollaa</button>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+const mk = (tag, attrs) => {
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+};
+const clamp = (v, a, b) => v < a ? a : (v > b ? b : v);
+
+/* --- geometria --- */
+const SRC_X = 250, SRC_Y = 235;      // lähteen aukko
+const PXCM  = 550 / 28;              // 2 cm -> x=289, 30 cm -> x=800
+const WIN_H = 28;                    // putken ikkunan puolikorkeus
+const CONE  = 15 * Math.PI / 180;    // lyijykotelo kollimoi säteilyn
+const SPEED = 620;
+const EMIT  = 100;                   // hiukkasta sekunnissa
+const BG    = 0.7;                   // taustasäteily, pulssia sekunnissa
+const ALPHA_RANGE = 4 * PXCM;        // alfan kantama ilmassa, n. 4 cm
+
+const TYPES = [
+  { id: "alfa",  name: "alfa",  color: "var(--red)",
+    trans: { ei: 1, paperi: 0,    alumiini: 0,    lyijy: 0    } },
+  { id: "beeta", name: "beeta", color: "var(--blue)",
+    trans: { ei: 1, paperi: 0.85, alumiini: 0.08, lyijy: 0    } },
+  { id: "gamma", name: "gamma", color: "var(--orange)",
+    trans: { ei: 1, paperi: 0.99, alumiini: 0.75, lyijy: 0.12 } }
+];
+
+const SHIELDS = [
+  { id: "ei",       name: "ei suojaa", fill: null },
+  { id: "paperi",   name: "paperi",    fill: "#E8E0CE" },
+  { id: "alumiini", name: "alumiini",  fill: "#C4C9CD" },
+  { id: "lyijy",    name: "lyijy",     fill: "#5C666D" }
+];
+
+let typeIdx = 2, shieldIdx = 0, soundOn = false;
+let total = 0, hits = [], rays = [], flashUntil = 0, emitAcc = 0, bgAcc = 0;
+let lastClick = 0;
+
+const gRays = $("rays"), tube = $("tube"), hitFlash = $("hitFlash");
+
+const tubeX = () => SRC_X + parseInt($("dist").value, 10) * PXCM;
+const T = () => TYPES[typeIdx];
+const S = () => SHIELDS[shieldIdx];
+
+/* --- ääni --- */
+let actx = null;
+function click(now){
+  if(!soundOn || now - lastClick < 40) return;
+  lastClick = now;
+  try{
+    if(!actx) actx = new (window.AudioContext || window.webkitAudioContext)();
+    if(actx.state === "suspended") actx.resume();
+    const t0 = actx.currentTime;
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = "square"; o.frequency.value = 1500;
+    g.gain.setValueAtTime(0.12, t0);
+    g.gain.exponentialRampToValueAtTime(0.001, t0 + 0.03);
+    o.connect(g); g.connect(actx.destination);
+    o.start(t0); o.stop(t0 + 0.035);
+  }catch(e){ /* ääni ei ole käytettävissä */ }
+}
+
+function count(now){
+  total++;
+  hits.push(now);
+  flashUntil = now + 130;
+  click(now);
+}
+
+/* --- hiukkasten emissio --- */
+function emit(){
+  /* suunta arvotaan kolmiulotteisesti (cos(theta) tasajakauma), jolloin
+     ikkunaan osuvien osuus noudattaa etäisyyden neliön käänteislakia */
+  const cosT = 1 - Math.random() * (1 - Math.cos(CONE));
+  const th = Math.acos(clamp(cosT, -1, 1));
+  const ang = th * (Math.random() < 0.5 ? 1 : -1);
+
+  const gap = tubeX() - SRC_X;
+  const willHit = gap * Math.tan(th) < WIN_H;
+
+  /* suojan läpäisy ja alfan kantama ilmassa */
+  const tr = T().trans[S().id];
+  const blocked = Math.random() >= tr;
+  const stopX = blocked ? 261
+              : (T().id === "alfa" ? SRC_X + ALPHA_RANGE : Infinity);
+
+  const el = mk("circle", { cx: SRC_X, cy: SRC_Y, r: 4, fill: T().color });
+  gRays.appendChild(el);
+  rays.push({ x: SRC_X, y: SRC_Y, vx: Math.cos(ang) * SPEED, vy: Math.sin(ang) * SPEED,
+              el, hit: willHit, stopX, fade: 0 });
+}
+
+function step(dt, now){
+  const tx = tubeX();
+
+  emitAcc += dt * EMIT;
+  while(emitAcc >= 1){ emitAcc -= 1; emit(); }
+
+  bgAcc += dt * BG;
+  while(bgAcc >= 1){ bgAcc -= 1; count(now); }
+
+  for(let i = rays.length - 1; i >= 0; i--){
+    const p = rays[i];
+
+    if(p.fade > 0){
+      p.fade -= dt;
+      p.el.setAttribute("opacity", clamp(p.fade / 0.25, 0, 1).toFixed(2));
+      if(p.fade <= 0){ gRays.removeChild(p.el); rays.splice(i, 1); }
+      continue;
+    }
+
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+
+    if(p.x >= p.stopX){                 // suoja tai ilman jarrutus pysäyttää
+      p.x = p.stopX; p.fade = 0.25;
+      p.el.setAttribute("cx", p.x.toFixed(1));
+      p.el.setAttribute("cy", p.y.toFixed(1));
+      continue;
+    }
+
+    if(p.hit && p.x >= tx){              // osui ikkunaan
+      count(now);
+      gRays.removeChild(p.el); rays.splice(i, 1);
+      continue;
+    }
+
+    if(p.x > 950 || p.y < 60 || p.y > 390){
+      gRays.removeChild(p.el); rays.splice(i, 1);
+      continue;
+    }
+
+    p.el.setAttribute("cx", p.x.toFixed(1));
+    p.el.setAttribute("cy", p.y.toFixed(1));
+  }
+
+  /* pulssitaajuus viiden sekunnin ikkunasta, jotta lukema on vakaa */
+  while(hits.length && now - hits[0] > 5000) hits.shift();
+  $("rate").textContent = Math.round(hits.length / 5);
+  $("total").textContent = total;
+
+  const on = now < flashUntil;
+  hitFlash.setAttribute("opacity", on ? "0.95" : "0");
+  $("box").setAttribute("stroke", on ? "var(--yellow)" : "var(--line)");
+  $("box").setAttribute("stroke-width", on ? "3" : "1.6");
+}
+
+/* --- asettelu ja tekstit --- */
+function layout(){
+  const r = parseInt($("dist").value, 10);
+  const tx = tubeX();
+
+  tube.setAttribute("transform", "translate(" + tx.toFixed(1) + ",0)");
+  hitFlash.setAttribute("cx", tx.toFixed(1));
+  $("wire").setAttribute("d",
+    "M" + (tx + 96).toFixed(1) + " 207 C " + (tx + 110).toFixed(1) + " 170, 740 200, 780 178");
+
+  $("dimEnd").setAttribute("x1", tx.toFixed(1));
+  $("dimEnd").setAttribute("x2", tx.toFixed(1));
+  $("dimLine").setAttribute("x2", tx.toFixed(1));
+  $("dimText").setAttribute("x", ((SRC_X + tx) / 2).toFixed(1));
+  $("dimText").textContent = r + " cm";
+  $("distOut").textContent = r + " cm";
+
+  const sh = S();
+  $("type").textContent = "Säteily: " + T().name;
+  $("shieldBtn").textContent = "Suoja: " + sh.name;
+  $("shield").setAttribute("opacity", sh.fill ? "1" : "0");
+  if(sh.fill){
+    $("shieldPlate").setAttribute("fill", sh.fill);
+    $("shieldName").textContent = sh.name;
+  }
+
+  const tr = T().trans[sh.id];
+  let m;
+  if(T().id === "alfa" && r >= 4)
+    m = "Alfahiukkaset pysähtyvät jo muutamaan senttimetriin ilmaa — mittari näyttää vain taustasäteilyä.";
+  else if(tr === 0)
+    m = sh.name.charAt(0).toUpperCase() + sh.name.slice(1) + " pysäyttää " + T().name + "säteilyn kokonaan.";
+  else if(tr < 0.5)
+    m = sh.name.charAt(0).toUpperCase() + sh.name.slice(1) + " vaimentaa " + T().name + "säteilyä voimakkaasti.";
+  else
+    m = "Kaksinkertainen etäisyys neljännestää pulssit. Yksittäiset pulssit tulevat satunnaisesti.";
+  $("msg").textContent = m;
+}
+
+function reset(){
+  total = 0; hits = []; emitAcc = 0; bgAcc = 0; flashUntil = 0;
+  rays.forEach(p => gRays.removeChild(p.el));
+  rays = [];
+  $("rate").textContent = "0";
+  $("total").textContent = "0";
+}
+
+$("dist").addEventListener("input", layout);
+$("type").addEventListener("click", () => { typeIdx = (typeIdx + 1) % TYPES.length; layout(); });
+$("shieldBtn").addEventListener("click", () => { shieldIdx = (shieldIdx + 1) % SHIELDS.length; layout(); });
+$("sound").addEventListener("click", () => {
+  soundOn = !soundOn;
+  $("sound").textContent = "Ääni: " + (soundOn ? "päällä" : "pois");
+});
+$("reset").addEventListener("click", reset);
+
+/* ohjainrivi on HTML:ää SVG:n päällä, joten sidotaan koko kehyksen leveyteen */
+const wrapEl = document.querySelector(".sim-wrap");
+const ctrlEl = document.querySelector(".sim-controls");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(w) ctrlEl.style.fontSize = (w / 960 * 18).toFixed(2) + "px";
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
+
+layout();
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  step(dt, now);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
