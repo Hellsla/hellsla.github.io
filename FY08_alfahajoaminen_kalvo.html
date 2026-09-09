@@ -20,12 +20,11 @@
   .scene{ width:100%; height:100%; }
   .scene text{ font-family:inherit; }
 
-  .h    { font-size:14px; fill:var(--faint); letter-spacing:.12em; }
-  .note { font-size:15px; fill:var(--muted); }
-  .msg  { font-size:21px; fill:var(--muted); }
-  .eq   { font-size:23px; fill:var(--ink); }
-  .name { font-size:21px; fill:var(--ink); font-weight:700; }
-  .num  { font-size:16px; fill:var(--muted); font-variant-numeric:tabular-nums; }
+  .h    { font-size:18px; fill:var(--faint); letter-spacing:.1em; }
+  .note { font-size:20px; fill:var(--muted); }
+  .msg  { font-size:25px; fill:var(--muted); }
+  .eq   { font-size:30px; fill:var(--ink); }
+  .name { font-size:27px; fill:var(--ink); font-weight:700; }
 
   .sim-controls{
     font-size:18px;
@@ -52,26 +51,20 @@
 
 <text x="40" y="38" class="eq">²²⁶Ra  →  ²²²Rn + ⁴He</text>
 
-<text x="920" y="34" text-anchor="end" class="num">m(²²²Rn) = 222 u</text>
-<text x="920" y="56" text-anchor="end" class="num">m(⁴He) = 4 u</text>
-<text x="920" y="78" text-anchor="end" class="num">v(α) = 55 · v(Rn)</text>
-<text x="920" y="100" text-anchor="end" class="num">p(Rn) + p(α) = 0</text>
-
 <!-- alkuperäinen paikka, jotta pieni takapotku näkyy -->
 <line x1="480" y1="116" x2="480" y2="252" stroke="var(--faint)"
       stroke-width="1.2" stroke-dasharray="4 6"/>
-<text x="480" y="106" text-anchor="middle" class="h">ALKUPERÄINEN PAIKKA</text>
 
 <!-- ytimet -->
 <circle id="core" cx="480" cy="180" r="52" fill="#EAF1F5"
         stroke="var(--blue)" stroke-width="2.6"/>
 <g id="alpha"></g>
 
-<text id="coreName"  x="480" y="256" text-anchor="middle" class="name">²²⁶Ra</text>
-<text id="alphaName" x="480" y="256" text-anchor="middle" class="name" opacity="0">⁴He</text>
+<text id="coreName"  x="480" y="262" text-anchor="middle" class="name">²²⁶Ra</text>
+<text id="alphaName" x="480" y="262" text-anchor="middle" class="name" opacity="0">⁴He</text>
 
 <!-- vertailurivit: vektorit lähtevät samasta pisteestä, joten ne pysyvät kuvassa -->
-<text x="40" y="304" class="h">NOPEUS v</text>
+<text x="40" y="305" class="h">NOPEUS</text>
 <line x1="480" y1="288" x2="480" y2="308" stroke="var(--line)" stroke-width="2"/>
 <g id="vRn" opacity="0">
   <line stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>
@@ -81,10 +74,10 @@
   <line stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>
   <polygon fill="var(--blue)"/>
 </g>
-<text id="vRnLab" x="464" y="304" text-anchor="end" class="note" opacity="0">v(Rn) · 55× lyhyempi</text>
+<text id="vRnLab" x="462" y="305" text-anchor="end" class="note" opacity="0">v(Rn)</text>
 <text id="vHeLab" x="669" y="304" class="note" opacity="0">v(α)</text>
 
-<text x="40" y="364" class="h">LIIKEMÄÄRÄ  p = m · v</text>
+<text x="40" y="365" class="h">LIIKEMÄÄRÄ</text>
 <line x1="480" y1="348" x2="480" y2="368" stroke="var(--line)" stroke-width="2"/>
 <g id="pRn" opacity="0">
   <line stroke="var(--orange)" stroke-width="5" stroke-linecap="round"/>
@@ -97,7 +90,7 @@
 <text id="pRnLab" x="336" y="364" text-anchor="end" class="note" opacity="0">p(Rn)</text>
 <text id="pHeLab" x="626" y="364" class="note" opacity="0">p(α)</text>
 <text id="pZero"  x="480" y="392" text-anchor="middle" class="note">levossa: p = 0</text>
-<text id="pNote"  x="480" y="392" text-anchor="middle" class="note" opacity="0">yhtä suuret, vastakkaissuuntaiset</text>
+<text id="pNote"  x="480" y="392" text-anchor="middle" class="note" opacity="0"></text>
 
 <text id="msg" x="480" y="420" text-anchor="middle" class="msg">Radium-226-ydin on levossa: sen liikemäärä on nolla.</text>
 
@@ -240,7 +233,7 @@ function decay(){
   typeset($("coreName"), "²²²Rn");
   $("pZero").setAttribute("opacity", "0");
   $("pNote").setAttribute("opacity", "1");
-  typeset($("msg"), "Alfahiukkanen sinkoutuu oikealle ja ydin saa yhtä suuren liikemäärän vasemmalle.");
+  typeset($("msg"), "Alfahiukkanen sinkoutuu oikealle, ydin vasemmalle.");
   draw();
 }
 
@@ -253,7 +246,7 @@ function step(dt){
     if(heX > 900) heOpacity = clamp(heOpacity - dt * 1.6, 0, 1);
     if(t >= 7){
       state = "done";
-      typeset($("msg"), "Alfahiukkanen on jo kaukana, ydin liikkui vain vähän: se on 55 kertaa raskaampi.");
+      typeset($("msg"), "Ydin liikkui vain vähän: se on 55 kertaa raskaampi.");
     }
     draw();
   }
