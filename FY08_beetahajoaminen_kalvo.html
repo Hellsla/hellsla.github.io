@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beetahajoaminen ja elektronisieppaus (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --yellow:#FFD95A;
+    --slate:#6E7A82;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+  }
+
+  .scene{ width:100%; height:100%; }
+  .scene text{ font-family:inherit; }
+
+  .h    { font-size:18px; fill:var(--faint); letter-spacing:.1em; }
+  .note { font-size:20px; fill:var(--muted); }
+  .msg  { font-size:25px; fill:var(--muted); }
+  .eq   { font-size:30px; fill:var(--ink); }
+  .name { font-size:27px; fill:var(--ink); font-weight:700; }
+
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.2em;
+  }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-btn:disabled{ opacity:.34; cursor:default; }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Beetahajoamisen ja elektronisieppauksen simulaatio">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Beeta-miinus- ja beeta-plus-hajoaminen sekä elektronisieppaus">
+
+<text id="eq" x="40" y="42" class="eq">¹⁴C  →  ¹⁴N + e⁻ + ν̄</text>
+
+<!-- elektroniverho, vain elektronisieppauksessa -->
+<circle id="shell" cx="330" cy="210" r="86" fill="none" stroke="var(--faint)"
+        stroke-width="1.4" stroke-dasharray="5 7" opacity="0"/>
+<g id="shellE" opacity="0">
+  <circle r="9" fill="var(--blue)"/>
+  <text x="0" y="5" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">−</text>
+</g>
+
+<circle id="burst" cx="330" cy="210" r="0" fill="var(--yellow)" opacity="0"/>
+<g id="nucleons"></g>
+<g id="emitted"></g>
+
+<text id="coreName" x="330" y="312" text-anchor="middle" class="name">¹⁴C</text>
+
+<circle id="dotP" cx="210" cy="342" r="9" fill="var(--red)"/>
+<text id="cntP" x="228" y="349" class="note">6 protonia</text>
+<circle id="dotN" cx="352" cy="342" r="9" fill="var(--slate)"/>
+<text id="cntN" x="370" y="349" class="note">8 neutronia</text>
+
+<text id="msg" x="480" y="424" text-anchor="middle" class="msg">Ytimessä on liikaa neutroneja.</text>
+
+</svg>
+
+<div class="sim-controls">
+  <button class="sim-btn" type="button" id="mode">Hajoamistapa: β⁻</button>
+  <button class="sim-btn primary" type="button" id="go">Hajoa</button>
+  <button class="sim-btn" type="button" id="reset">Nollaa</button>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+const mk = (tag, attrs) => {
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+};
+const clamp = (v, a, b) => v < a ? a : (v > b ? b : v);
+const lerp  = (a, b, t) => a + (b - a) * t;
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+/* yläindeksit tspaneilla: Arialista puuttuu osa unicode-merkeistä */
+const UNSUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5",
+               "⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-","⁺":"+"};
+const isSup = c => Object.prototype.hasOwnProperty.call(UNSUP, c);
+function typeset(el, str){
+  if(el.__typeset === str) return;
+  el.__typeset = str;
+  while(el.firstChild) el.removeChild(el.firstChild);
+  const runs = [];
+  for(const ch of str){
+    const s = isSup(ch);
+    const last = runs[runs.length - 1];
+    if(last && last.sup === s) last.text += s ? UNSUP[ch] : ch;
+    else runs.push({ sup: s, text: s ? UNSUP[ch] : ch });
+  }
+  let raised = false;
+  for(const run of runs){
+    const t = document.createElementNS(NS, "tspan");
+    if(run.sup){ t.setAttribute("font-size","0.66em"); t.setAttribute("dy","-0.52em"); raised = true; }
+    else if(raised){ t.setAttribute("dy","0.34em"); raised = false; }
+    t.textContent = run.text;
+    el.appendChild(t);
+  }
+}
+
+function rngFrom(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function packDisc(n, R, jitter, rnd){
+  const pts = [], ga = Math.PI * (3 - Math.sqrt(5));
+  for(let i = 0; i < n; i++){
+    const r = R * Math.sqrt((i + 0.5) / n), a = i * ga;
+    pts.push({ x: r * Math.cos(a) + (rnd() - 0.5) * jitter,
+               y: r * Math.sin(a) + (rnd() - 0.5) * jitter, r0: r });
+  }
+  return pts;
+}
+
+/* ---------------- hajoamistavat ---------------- */
+const CX = 330, CY = 210, NR = 17;
+
+const MODES = [
+  {
+    id: "bm", label: "β⁻",
+    A: 14, p: 6, n: 8, converts: "n",
+    parent: "¹⁴C", daughter: "¹⁴N",
+    eq: "¹⁴C  →  ¹⁴N + e⁻ + ν̄",
+    idle: "Ytimessä on liikaa neutroneja.",
+    act:  "Neutroni muuttui protoniksi: ulos lähti elektroni ja antineutriino.",
+    shell: false,
+    emits: [
+      { sym: "e⁻", color: "var(--blue)",  r: 9, ang: -18, v: 175, sign: "−" },
+      { sym: "ν̄",  color: "var(--faint)", r: 7, ang:  16, v: 215, sign: "" }
+    ]
+  },
+  {
+    id: "bp", label: "β⁺",
+    A: 11, p: 6, n: 5, converts: "p",
+    parent: "¹¹C", daughter: "¹¹B",
+    eq: "¹¹C  →  ¹¹B + e⁺ + ν",
+    idle: "Ytimessä on liikaa protoneja.",
+    act:  "Protoni muuttui neutroniksi: ulos lähti positroni ja neutriino.",
+    shell: false,
+    emits: [
+      { sym: "e⁺", color: "var(--orange)", r: 9, ang: -18, v: 175, sign: "+" },
+      { sym: "ν",  color: "var(--faint)",  r: 7, ang:  16, v: 215, sign: "" }
+    ]
+  },
+  {
+    id: "ec", label: "elektronisieppaus",
+    A: 7, p: 4, n: 3, converts: "p",
+    parent: "⁷Be", daughter: "⁷Li",
+    eq: "⁷Be + e⁻  →  ⁷Li + ν",
+    idle: "Ydin voi siepata elektronin verhosta.",
+    act:  "Ydin sieppasi elektronin: protoni muuttui neutroniksi.",
+    shell: true,
+    emits: [
+      { sym: "ν", color: "var(--faint)", r: 7, ang: 16, v: 215, sign: "" }
+    ]
+  }
+];
+
+const DONE_MSG = "Massaluku pysyy samana, järjestysluku muuttuu yhdellä.";
+
+/* ---------------- nukleonit ---------------- */
+const gNuc = $("nucleons"), gEmit = $("emitted");
+const MAXA = 14;
+const nucleons = [];
+for(let i = 0; i < MAXA; i++){
+  const g = mk("g", { opacity: 0 });
+  const c = mk("circle", { r: NR, stroke: "#fff", "stroke-width": 1.6 });
+  const t = mk("text", { x: 0, y: 6, "text-anchor": "middle",
+                         "font-size": 17, fill: "#fff", "font-weight": 700 });
+  g.appendChild(c); g.appendChild(t);
+  gNuc.appendChild(g);
+  nucleons.push({ g, c, t });
+}
+
+let mode = 0, state = "idle", t = 0;
+let slots = [], chosen = -1, pNow = 0, nNow = 0;
+let emits = [], shellAng = 0, shellR = 86;
+
+const M = () => MODES[mode];
+
+function paint(i, type){
+  const nu = nucleons[i];
+  nu.c.setAttribute("fill", type === "p" ? "var(--red)" : "var(--slate)");
+  nu.t.textContent = type === "p" ? "+" : "";
+}
+
+function counts(){
+  typeset($("cntP"), pNow + " protonia");
+  typeset($("cntN"), nNow + " neutronia");
+}
+
+function build(){
+  const m = M();
+  const R = NR * Math.sqrt(m.A / 0.8);
+  const rnd = rngFrom(4711 + m.A);
+  slots = packDisc(m.A, R, 4, rnd);
+
+  /* tyypit sekoitetaan, jotta ydin näyttää luonnolliselta */
+  const types = [];
+  for(let i = 0; i < m.p; i++) types.push("p");
+  for(let i = 0; i < m.n; i++) types.push("n");
+  for(let i = types.length - 1; i > 0; i--){
+    const j = Math.floor(rnd() * (i + 1));
+    [types[i], types[j]] = [types[j], types[i]];
+  }
+
+  /* muuttuva nukleoni valitaan pinnalta, jotta muutos näkyy */
+  chosen = -1;
+  let best = -1;
+  for(let i = 0; i < m.A; i++){
+    if(types[i] === m.converts && slots[i].r0 > best){ best = slots[i].r0; chosen = i; }
+  }
+
+  nucleons.forEach((nu, i) => {
+    if(i < m.A){
+      nu.g.setAttribute("opacity", "1");
+      nu.g.setAttribute("transform",
+        "translate(" + (CX + slots[i].x).toFixed(1) + "," + (CY + slots[i].y).toFixed(1) + ")");
+      nu.type = types[i];
+      paint(i, types[i]);
+    }else{
+      nu.g.setAttribute("opacity", "0");
+    }
+  });
+
+  pNow = m.p; nNow = m.n;
+  counts();
+  typeset($("eq"), m.eq);
+  typeset($("coreName"), m.parent);
+  typeset($("msg"), m.idle);
+
+  $("shell").setAttribute("opacity", m.shell ? "1" : "0");
+  $("shellE").setAttribute("opacity", m.shell ? "1" : "0");
+  shellAng = -0.6; shellR = 86;
+  drawShell();
+}
+
+function drawShell(){
+  $("shellE").setAttribute("transform",
+    "translate(" + (CX + Math.cos(shellAng) * shellR).toFixed(1) + "," +
+                   (CY + Math.sin(shellAng) * shellR).toFixed(1) + ")");
+}
+
+function clearEmits(){
+  emits.forEach(e => gEmit.removeChild(e.g));
+  emits = [];
+}
+
+function convert(){
+  const m = M();
+  const to = m.converts === "n" ? "p" : "n";
+  paint(chosen, to);
+  if(to === "p"){ pNow++; nNow--; } else { pNow--; nNow++; }
+  counts();
+  typeset($("coreName"), m.daughter);
+  typeset($("msg"), m.act);
+
+  const px = CX + slots[chosen].x, py = CY + slots[chosen].y;
+  $("burst").setAttribute("cx", px);
+  $("burst").setAttribute("cy", py);
+
+  for(const e of m.emits){
+    const g = mk("g", {});
+    const c = mk("circle", { r: e.r, fill: e.color });
+    g.appendChild(c);
+    if(e.sign){
+      const s = mk("text", { x: 0, y: 5, "text-anchor": "middle",
+                             "font-size": 13, fill: "#fff", "font-weight": 700 });
+      s.textContent = e.sign;
+      g.appendChild(s);
+    }
+    const lab = mk("text", { x: 0, y: e.r + 26, "text-anchor": "middle", class: "name" });
+    lab.setAttribute("style", "font-size:24px;fill:" + e.color);
+    typeset(lab, e.sym);
+    g.appendChild(lab);
+    gEmit.appendChild(g);
+    const a = e.ang * Math.PI / 180;
+    emits.push({ g, x: px, y: py, vx: Math.cos(a) * e.v, vy: Math.sin(a) * e.v });
+  }
+  drawEmits();
+}
+
+function drawEmits(){
+  emits.forEach(e => e.g.setAttribute("transform",
+    "translate(" + e.x.toFixed(1) + "," + e.y.toFixed(1) + ")"));
+}
+
+/* ---------------- animaatio ---------------- */
+const T_CAPTURE = 1.0;   // elektronin matka verhosta ytimeen
+const T_FLY     = 2.2;
+
+function step(dt){
+  if(M().shell && state === "idle") shellAng += dt * 0.8;
+
+  if(state === "capture"){
+    t += dt;
+    const k = clamp(t / T_CAPTURE, 0, 1);
+    shellAng += dt * 2.4;
+    shellR = 86 * (1 - easeOut(k));
+    if(k >= 1){
+      $("shellE").setAttribute("opacity", "0");
+      $("shell").setAttribute("opacity", "0.35");
+      state = "fly"; t = 0;
+      convert();
+    }
+  }else if(state === "fly"){
+    t += dt;
+    emits.forEach(e => { e.x += e.vx * dt; e.y += e.vy * dt; });
+    drawEmits();
+    const b = clamp(t / 0.55, 0, 1);
+    $("burst").setAttribute("r", (b * 90).toFixed(0));
+    $("burst").setAttribute("opacity", (0.55 * (1 - b)).toFixed(3));
+    if(t >= T_FLY){
+      state = "done";
+      typeset($("msg"), DONE_MSG);
+    }
+  }
+
+  if(M().shell) drawShell();
+}
+
+function go(){
+  if(state !== "idle") return;
+  $("go").disabled = true;
+  t = 0;
+  if(M().shell){
+    state = "capture";
+    typeset($("msg"), "Elektroni putoaa verhosta ytimeen.");
+  }else{
+    state = "fly";
+    convert();
+  }
+}
+
+function reset(){
+  state = "idle"; t = 0;
+  clearEmits();
+  $("burst").setAttribute("opacity", "0");
+  $("burst").setAttribute("r", "0");
+  $("go").disabled = false;
+  build();
+}
+
+$("go").addEventListener("click", go);
+$("reset").addEventListener("click", reset);
+$("mode").addEventListener("click", () => {
+  mode = (mode + 1) % MODES.length;
+  $("mode").innerHTML = "Hajoamistapa: " + M().label
+    .replace("β⁻", "β<sup>−</sup>").replace("β⁺", "β<sup>+</sup>");
+  reset();
+});
+
+/* ohjainrivi skaalautuu kehyksen mukana */
+const wrapEl = document.querySelector(".sim-wrap");
+const ctrlEl = document.querySelector(".sim-controls");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(w) ctrlEl.style.fontSize = (w / 960 * 18).toFixed(2) + "px";
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
+
+$("mode").innerHTML = "Hajoamistapa: β<sup>−</sup>";
+reset();
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  step(dt);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
