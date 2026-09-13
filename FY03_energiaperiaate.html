@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Energiaperiaate: E_alku + W = E_loppu</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;   /* liike-energia */
+    --red:#D84A62;    /* potentiaalienergia */
+    --green:#4A8B5C;  /* positiivinen työ */
+    --orange:#F28C28; /* negatiivinen työ */
+    --muted:#bfb7aa;
+  }
+
+  .track  { fill:none; stroke:var(--ink); stroke-width:4.4; stroke-linecap:round; stroke-linejoin:round; }
+  .support{ stroke:var(--ink); stroke-width:1.5; opacity:.18; }
+  .ground { stroke:var(--ink); stroke-width:3; stroke-linecap:round; }
+  .hatch  { stroke:var(--ink); stroke-width:1.2; opacity:.28; }
+
+  .boxFill{ fill:#f8fbff; stroke:var(--ink); stroke-width:2.6; }
+  .boxTrim{ fill:var(--blue); stroke:var(--ink); stroke-width:2; }
+
+  text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  .segLabel{ font-size:23px; font-weight:600; fill:#fff; text-anchor:middle; }
+  .eqLabel { font-size:24px; font-weight:600; text-anchor:middle; }
+  .axis    { stroke:var(--ink); stroke-width:2; }
+  .link    { stroke:var(--ink); stroke-width:1.6; stroke-dasharray:5 5; opacity:.6; }
+
+  /* --- ohjaimet --- */
+  .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
+  .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,20px); flex-wrap:wrap; }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(10px,1.35vw,16px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(160px,17vw); height:clamp(12px,1.7vw,18px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(2px,0.6vw,6px) clamp(8px,1.5vw,15px); font-size:clamp(11px,1.45vw,18px); }
+
+  @media (max-width:560px){
+    body.sim-body{ place-items:start center; height:auto; min-height:100%; }
+    .sim-wrap{ width:100vw; height:auto; aspect-ratio:auto; }
+    .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
+    .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
+      width:100%; padding:12px 12px 18px; gap:8px; }
+    .ctrl-row input[type="range"]{ width:100%; }
+    .ctrl-row label{ flex:1 1 45%; }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Energiaperiaatteen simulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Energiaperiaate: alkuenergia plus työ on yhtä kuin loppuenergia">
+    <defs>
+      <marker id="wUp" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#4A8B5C"/>
+      </marker>
+      <marker id="wDown" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#F28C28"/>
+      </marker>
+      <marker id="fArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#4A8B5C"/>
+      </marker>
+      <marker id="fArrowBack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#F28C28"/>
+      </marker>
+    </defs>
+
+    <!-- ============ NÄYTTÄMÖ ============ -->
+    <g id="scene">
+      <line class="ground" x1="60" y1="400" x2="580" y2="400"/>
+      <g id="groundHatch"></g>
+      <g id="supports"></g>
+      <path id="track" class="track" d=""/>
+      <line id="forceArrow" class="axis" stroke="#4A8B5C" stroke-width="4" marker-end="url(#fArrow)"/>
+      <g id="box">
+        <rect class="boxFill" x="-17" y="-15" width="34" height="26" rx="5"/>
+        <rect class="boxTrim" x="-10" y="-9" width="20" height="6" rx="2"/>
+      </g>
+    </g>
+
+    <!-- ============ ENERGIATASE ============ -->
+    <g id="panel">
+      <line class="axis" x1="608" y1="372" x2="930" y2="372"/>
+
+      <!-- alkuenergia -->
+      <rect id="aPe" x="630" y="372" width="84" height="0" fill="#D84A62"/>
+      <rect id="aKe" x="630" y="372" width="84" height="0" fill="#2E86A6"/>
+      <rect id="aEdge" x="630" y="372" width="84" height="0" fill="none" stroke="#3F3D39" stroke-width="1.6"/>
+      <text id="aKeTxt" class="segLabel" x="672" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+      <text id="aPeTxt" class="segLabel" x="672" y="300">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+
+      <!-- työ -->
+      <line id="linkA" class="link" x1="714" y1="372" x2="772" y2="372"/>
+      <line id="linkB" class="link" x1="772" y1="372" x2="830" y2="372"/>
+      <line id="wArrow" x1="772" y1="372" x2="772" y2="372" stroke="#4A8B5C" stroke-width="5" marker-end="url(#wUp)"/>
+
+      <!-- loppuenergia -->
+      <rect id="bPe" x="830" y="372" width="84" height="0" fill="#D84A62"/>
+      <rect id="bKe" x="830" y="372" width="84" height="0" fill="#2E86A6"/>
+      <rect id="bEdge" x="830" y="372" width="84" height="0" fill="none" stroke="#3F3D39" stroke-width="1.6"/>
+      <text id="bKeTxt" class="segLabel" x="872" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+      <text id="bPeTxt" class="segLabel" x="872" y="300">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+
+      <!-- yhtälö -->
+      <text class="eqLabel" x="672" y="404">E<tspan baseline-shift="sub" font-size="0.72em">alku</tspan></text>
+      <text class="eqLabel" x="772" y="404">+ W</text>
+      <text class="eqLabel" x="872" y="404">= E<tspan baseline-shift="sub" font-size="0.72em">loppu</tspan></text>
+    </g>
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <div class="ctrl-row">
+      <label><span id="v1Lbl">Lähtönopeus 5,0 m/s</span>
+        <input id="v1" type="range" min="0" max="8" step="0.5" value="5" aria-label="Lähtönopeus"></label>
+      <label><span id="dhLbl">Korkeusero +2,0 m</span>
+        <input id="dh" type="range" min="-3" max="3" step="0.1" value="2" aria-label="Korkeusero"></label>
+      <label><span id="wLbl">Työ W +50 J</span>
+        <input id="w" type="range" min="-80" max="80" step="5" value="50" aria-label="Työ"></label>
+      <button id="play" class="sim-btn" type="button">Käynnistä</button>
+      <button id="reset" class="sim-btn" type="button">Nollaa</button>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+
+  const g = 9.81;
+  const MASS = 2.0;                 // kg
+  const H1 = 3.0;                   // lähtökorkeus (m)
+  const RUN = 8.0;                  // vaakasuora matka A -> B (m)
+  const SC = 48, GROUND = 400, XA1 = 130;   // px/m ja rampin alkupiste
+
+  // Kiinteä asteikko, jotta pylväiden korkeudet ovat vertailukelpoisia
+  // myös eri säätöjen välillä. 205 J on suurin saavutettava loppuenergia.
+  const BAR_BOT = 372, BAR_H = 280, FULL_J = 205;
+  const jpx = (E) => Math.max(0, (E / FULL_J) * BAR_H);
+
+  const $ = (id) => document.getElementById(id);
+  const el = {
+    track: $("track"), supports: $("supports"), groundHatch: $("groundHatch"),
+    box: $("box"), forceArrow: $("forceArrow"),
+    aKe: $("aKe"), aPe: $("aPe"), aEdge: $("aEdge"), aKeTxt: $("aKeTxt"), aPeTxt: $("aPeTxt"),
+    bKe: $("bKe"), bPe: $("bPe"), bEdge: $("bEdge"), bKeTxt: $("bKeTxt"), bPeTxt: $("bPeTxt"),
+    linkA: $("linkA"), linkB: $("linkB"), wArrow: $("wArrow"),
+    v1: $("v1"), dh: $("dh"), w: $("w"),
+    v1Lbl: $("v1Lbl"), dhLbl: $("dhLbl"), wLbl: $("wLbl"),
+    play: $("play"), reset: $("reset")
+  };
+
+  const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",");
+  const sgn = (x, d = 0) => (x >= 0 ? "+" : "−") + fmt(Math.abs(x), d);
+  const xm = (x) => XA1 + x * SC;
+  const ym = (h) => GROUND - h * SC;
+
+  /* ---------------- tila ---------------- */
+  let v1 = 5, dh = 2, W = 50;
+  let L = 6, accel = 0, sEnd = 6;
+  let running = false;
+  const st = { t: 0, s: 0, v: 0, done: false };
+
+  const hAt = (s) => H1 + dh * (s / L);
+
+  function configure() {
+    L = Math.hypot(RUN, dh);
+    const F = W / L;                          // vakiovoima radan suunnassa
+    accel = (F - MASS * g * (dh / L)) / MASS; // vakiokiihtyvyys
+    // pysähtyykö kappale ennen B:tä?
+    sEnd = L;
+    if (accel < 0) {
+      const sStop = (0.5 * MASS * v1 * v1) / (-accel * MASS);
+      if (sStop < L) sEnd = sStop;
+    }
+  }
+
+  function resetState() {
+    running = false;
+    el.play.textContent = "Käynnistä";
+    st.t = 0; st.s = 0; st.v = v1; st.done = (sEnd <= 0);
+    render();
+  }
+
+  /* ---------------- liike ----------------
+     Kiihtyvyys on vakio, joten käytetään tarkkoja liikeyhtälöitä:
+     s = v1·t + ½at²,  v = v1 + at. Tällöin E_alku + W = E_loppu pätee
+     tarkalleen ilman integrointivirhettä. */
+  function step(dt) {
+    if (st.done) return;
+    st.t += dt;
+    st.s = v1 * st.t + 0.5 * accel * st.t * st.t;
+    st.v = v1 + accel * st.t;
+    if (st.s >= sEnd || st.v <= 0) {
+      st.s = sEnd;
+      st.v = Math.max(0, v1 + accel * st.t);
+      if (sEnd < L) st.v = 0;
+      st.done = true; running = false;
+      el.play.textContent = "Uudelleen";
+    }
+  }
+
+  /* ---------------- piirto ---------------- */
+  function drawTrack() {
+    const h2 = H1 + dh;
+    const d = `M60 ${ym(H1)} L${XA1} ${ym(H1)} L${xm(RUN)} ${ym(h2)} L580 ${ym(h2)}`;
+    el.track.setAttribute("d", d);
+
+    let sup = "";
+    for (let x = 76; x <= 578; x += 34) {
+      let h;
+      if (x <= XA1) h = H1;
+      else if (x >= xm(RUN)) h = h2;
+      else h = H1 + dh * (x - XA1) / (xm(RUN) - XA1);
+      if (GROUND - ym(h) > 6) sup += `M${x} ${ym(h)} L${x} ${GROUND} `;
+    }
+    el.supports.innerHTML = `<path class="support" d="${sup}"/>`;
+  }
+
+  (function groundHatch() {
+    let hd = "";
+    for (let x = 70; x < 580; x += 22) hd += `M${x} ${GROUND} l-10 12 `;
+    el.groundHatch.innerHTML = `<path class="hatch" d="${hd}"/>`;
+  })();
+
+  function stack(keRect, peRect, edgeRect, keTxt, peTxt, Ek, Ep) {
+    const hk = jpx(Ek), hp = jpx(Ep);
+    keRect.setAttribute("y", BAR_BOT - hk); keRect.setAttribute("height", hk);
+    peRect.setAttribute("y", BAR_BOT - hk - hp); peRect.setAttribute("height", hp);
+    edgeRect.setAttribute("y", BAR_BOT - hk - hp); edgeRect.setAttribute("height", hk + hp);
+    segLabel(keTxt, BAR_BOT - hk, hk);
+    segLabel(peTxt, BAR_BOT - hk - hp, hp);
+    return BAR_BOT - hk - hp;     // pylvään yläreuna
+  }
+
+  function segLabel(txt, top, height) {
+    if (height < 34) { txt.style.display = "none"; return; }
+    txt.style.display = "";
+    txt.setAttribute("y", top + height / 2 + 8);
+  }
+
+  function render() {
+    const Ek1 = 0.5 * MASS * v1 * v1, Ep1 = MASS * g * H1;
+    const h = hAt(st.s);
+    const Ek2 = 0.5 * MASS * st.v * st.v, Ep2 = MASS * g * h;
+
+    // kappale radalla
+    const bx = xm(RUN * (st.s / L)), by = ym(h);
+    const ang = Math.atan2(-dh, RUN) * 180 / Math.PI;
+    el.box.setAttribute("transform", `translate(${bx.toFixed(1)},${by.toFixed(1)}) rotate(${ang.toFixed(1)}) translate(0,-15)`);
+
+    // voimanuoli radan suunnassa
+    const F = W / L;
+    if (Math.abs(F) > 0.4 && !st.done) {
+      const len = Math.min(70, 14 + Math.abs(F) * 1.8) * Math.sign(F);
+      const c = Math.cos(ang * Math.PI / 180), s = Math.sin(ang * Math.PI / 180);
+      const ox = -s * 26, oy = c * -26;      // nuoli kappaleen yläpuolelle
+      el.forceArrow.setAttribute("x1", bx + ox); el.forceArrow.setAttribute("y1", by + oy);
+      el.forceArrow.setAttribute("x2", bx + ox + c * len); el.forceArrow.setAttribute("y2", by + oy + s * len);
+      const col = F > 0 ? "#4A8B5C" : "#F28C28";
+      el.forceArrow.setAttribute("stroke", col);
+      el.forceArrow.setAttribute("marker-end", F > 0 ? "url(#fArrow)" : "url(#fArrowBack)");
+      el.forceArrow.style.display = "";
+    } else {
+      el.forceArrow.style.display = "none";
+    }
+
+    // pylväät
+    const yA = stack(el.aKe, el.aPe, el.aEdge, el.aKeTxt, el.aPeTxt, Ek1, Ep1);
+    const yB = stack(el.bKe, el.bPe, el.bEdge, el.bKeTxt, el.bPeTxt, Ek2, Ep2);
+
+    // työnuoli pylväiden välissä
+    el.linkA.setAttribute("y1", yA); el.linkA.setAttribute("y2", yA);
+    el.linkB.setAttribute("y1", yB); el.linkB.setAttribute("y2", yB);
+    const up = yB < yA;
+    el.wArrow.setAttribute("y1", yA); el.wArrow.setAttribute("y2", yB);
+    el.wArrow.setAttribute("stroke", up ? "#4A8B5C" : "#F28C28");
+    el.wArrow.setAttribute("marker-end", up ? "url(#wUp)" : "url(#wDown)");
+    el.wArrow.style.display = Math.abs(yA - yB) > 3 ? "" : "none";
+  }
+
+  /* ---------------- animaatio ---------------- */
+  let last = performance.now();
+  function tick(now) {
+    let dt = (now - last) / 1000;
+    last = now;
+    if (!isFinite(dt) || dt < 0) dt = 0;
+    dt = Math.min(dt, 0.05);
+    if (running) {
+      const sub = 8, hstep = dt / sub;
+      for (let i = 0; i < sub && running; i++) step(hstep);
+      render();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------------- ohjaimet ---------------- */
+  function onInput() {
+    v1 = parseFloat(el.v1.value);
+    dh = parseFloat(el.dh.value);
+    W = parseFloat(el.w.value);
+    el.v1Lbl.textContent = `Lähtönopeus ${fmt(v1, 1)} m/s`;
+    el.dhLbl.textContent = `Korkeusero ${sgn(dh, 1)} m`;
+    el.wLbl.textContent = `Työ W ${sgn(W, 0)} J`;
+    configure();
+    drawTrack();
+    resetState();
+  }
+  for (const id of ["v1", "dh", "w"]) el[id].addEventListener("input", onInput);
+
+  el.play.addEventListener("click", () => {
+    if (st.done) resetState();
+    if (sEnd <= 0) return;
+    running = !running;
+    if (running) last = performance.now();
+    el.play.textContent = running ? "Pysäytä" : "Jatka";
+  });
+  el.reset.addEventListener("click", resetState);
+
+  onInput();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
