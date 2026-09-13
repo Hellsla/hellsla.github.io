@@ -29,16 +29,16 @@
   .wheel   { fill:var(--ink); }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .segLabel{ font-size:25px; font-weight:600; fill:#fff; text-anchor:middle; }
-  .barTag  { font-size:25px; font-weight:600; }
+  .segLabel{ font-size:29px; font-weight:600; fill:#fff; text-anchor:middle; }
+  .barTag  { font-size:31px; font-weight:600; }
   .barEdge { stroke:var(--ink); stroke-width:1.6; }
 
   /* --- ohjaimet --- */
   .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
   .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,22px); flex-wrap:wrap; }
-  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(10px,1.35vw,16px); justify-items:start; line-height:1.25; }
-  .ctrl-row input[type="range"]{ width:min(180px,19vw); height:clamp(12px,1.7vw,18px); accent-color:var(--ink); }
-  .sim-btn{ padding:clamp(2px,0.6vw,6px) clamp(8px,1.5vw,15px); font-size:clamp(11px,1.45vw,18px); }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(11px,1.65vw,20px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(170px,18vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.7vw,17px); font-size:clamp(12px,1.7vw,21px); }
 
   /* Kapealla näytöllä 16:9-kehys jää matalaksi, joten ohjaimet siirretään
      kuvan alapuolelle normaaliin dokumenttivirtaan. */
@@ -65,8 +65,8 @@
       <path id="track" class="track" d=""/>
 
       <!-- korkeus, johon mekaaninen energia vielä riittää -->
-      <line id="mekLevel" class="mekLevel" x1="98" y1="100" x2="648" y2="100"/>
-      <text id="mekLevelTag" class="barTag" x="90" y="107" font-size="20" text-anchor="end">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
+      <line id="mekLevel" class="mekLevel" x1="98" y1="100" x2="638" y2="100"/>
+      <text id="mekLevelTag" class="barTag" x="90" y="107" font-size="24" text-anchor="end">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
 
       <!-- läpinäkyvä tartunta-alue: vaunun voi raahata mihin tahansa radalle -->
       <path id="trackHit" d="" fill="none" stroke="transparent" stroke-width="34" stroke-linecap="round"/>
@@ -83,22 +83,22 @@
 
     <!-- ============ ENERGIAPYLVÄS ============ -->
     <g id="panel">
-      <line x1="700" y1="92" x2="912" y2="92" stroke="#3F3D39" stroke-width="1.8" stroke-dasharray="7 6" opacity=".6"/>
-      <text class="barTag" x="694" y="100" text-anchor="end">E<tspan baseline-shift="sub" font-size="0.72em">0</tspan></text>
+      <line x1="690" y1="92" x2="902" y2="92" stroke="#3F3D39" stroke-width="1.8" stroke-dasharray="7 6" opacity=".6"/>
+      <text class="barTag" x="684" y="100" text-anchor="end">E<tspan baseline-shift="sub" font-size="0.72em">0</tspan></text>
 
-      <rect x="740" y="92" width="120" height="280" fill="#efeae3" rx="5"/>
-      <rect id="barLoss" x="740" y="92"  width="120" height="0" fill="#F28C28"/>
-      <rect id="barPe"   x="740" y="272" width="120" height="0" fill="#D84A62"/>
-      <rect id="barKe"   x="740" y="372" width="120" height="0" fill="#2E86A6"/>
-      <rect x="740" y="92" width="120" height="280" fill="none" class="barEdge" rx="5"/>
+      <rect x="730" y="92" width="120" height="280" fill="#efeae3" rx="5"/>
+      <rect id="barLoss" x="730" y="92"  width="120" height="0" fill="#F28C28"/>
+      <rect id="barPe"   x="730" y="272" width="120" height="0" fill="#D84A62"/>
+      <rect id="barKe"   x="730" y="372" width="120" height="0" fill="#2E86A6"/>
+      <rect x="730" y="92" width="120" height="280" fill="none" class="barEdge" rx="5"/>
 
-      <text id="keTxt"   class="segLabel" x="800" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
-      <text id="peTxt"   class="segLabel" x="800" y="240">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
-      <text id="lossTxt" class="segLabel" x="800" y="130">häviöt</text>
+      <text id="keTxt"   class="segLabel" x="790" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+      <text id="peTxt"   class="segLabel" x="790" y="240">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+      <text id="lossTxt" class="segLabel" x="790" y="130">häviöt</text>
 
       <g id="mekMark">
-        <line id="mekLine" x1="730" y1="372" x2="870" y2="372" stroke="#3F3D39" stroke-width="2.6"/>
-        <text id="mekTag" class="barTag" x="878" y="379">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
+        <line id="mekLine" x1="720" y1="372" x2="860" y2="372" stroke="#3F3D39" stroke-width="2.6"/>
+        <text id="mekTag" class="barTag" x="868" y="379">E<tspan baseline-shift="sub" font-size="0.72em">mek</tspan></text>
       </g>
     </g>
   </svg>
@@ -288,7 +288,7 @@
   function segLabel(txt, top, height) {
     if (height < 36) { txt.style.display = "none"; return; }
     txt.style.display = "";
-    txt.setAttribute("y", top + height / 2 + 9);
+    txt.setAttribute("y", top + height / 2 + 10);
   }
 
   /* ---------------- animaatio ---------------- */
