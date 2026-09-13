@@ -24,17 +24,17 @@
   .boxTrim{ fill:var(--blue); stroke:var(--ink); stroke-width:2; }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .segLabel{ font-size:23px; font-weight:600; fill:#fff; text-anchor:middle; }
-  .eqLabel { font-size:24px; font-weight:600; text-anchor:middle; }
+  .segLabel{ font-size:29px; font-weight:600; fill:#fff; text-anchor:middle; }
+  .eqLabel { font-size:31px; font-weight:600; text-anchor:middle; }
   .axis    { stroke:var(--ink); stroke-width:2; }
   .link    { stroke:var(--ink); stroke-width:1.6; stroke-dasharray:5 5; opacity:.6; }
 
   /* --- ohjaimet --- */
   .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
   .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,20px); flex-wrap:wrap; }
-  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(10px,1.35vw,16px); justify-items:start; line-height:1.25; }
-  .ctrl-row input[type="range"]{ width:min(160px,17vw); height:clamp(12px,1.7vw,18px); accent-color:var(--ink); }
-  .sim-btn{ padding:clamp(2px,0.6vw,6px) clamp(8px,1.5vw,15px); font-size:clamp(11px,1.45vw,18px); }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(11px,1.65vw,20px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(170px,18vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.7vw,17px); font-size:clamp(12px,1.7vw,21px); }
 
   @media (max-width:560px){
     body.sim-body{ place-items:start center; height:auto; min-height:100%; }
@@ -80,38 +80,38 @@
 
     <!-- ============ ENERGIATASE ============ -->
     <g id="panel">
-      <line class="axis" x1="608" y1="372" x2="930" y2="372"/>
+      <line class="axis" x1="594" y1="372" x2="946" y2="372"/>
 
       <!-- alkuenergia -->
-      <rect id="aPe" x="630" y="372" width="84" height="0" fill="#D84A62"/>
-      <rect id="aKe" x="630" y="372" width="84" height="0" fill="#2E86A6"/>
-      <rect id="aEdge" x="630" y="372" width="84" height="0" fill="none" stroke="#3F3D39" stroke-width="1.6"/>
-      <text id="aKeTxt" class="segLabel" x="672" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
-      <text id="aPeTxt" class="segLabel" x="672" y="300">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+      <rect id="aPe" x="606" y="372" width="92" height="0" fill="#D84A62"/>
+      <rect id="aKe" x="606" y="372" width="92" height="0" fill="#2E86A6"/>
+      <rect id="aEdge" x="606" y="372" width="92" height="0" fill="none" stroke="#3F3D39" stroke-width="1.6"/>
+      <text id="aKeTxt" class="segLabel" x="652" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+      <text id="aPeTxt" class="segLabel" x="652" y="300">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
 
       <!-- työ -->
-      <line id="linkA" class="link" x1="714" y1="372" x2="772" y2="372"/>
-      <line id="linkB" class="link" x1="772" y1="372" x2="830" y2="372"/>
-      <line id="wArrow" x1="772" y1="372" x2="772" y2="372" stroke="#4A8B5C" stroke-width="5" marker-end="url(#wUp)"/>
+      <line id="linkA" class="link" x1="698" y1="372" x2="770" y2="372"/>
+      <line id="linkB" class="link" x1="770" y1="372" x2="842" y2="372"/>
+      <line id="wArrow" x1="770" y1="372" x2="770" y2="372" stroke="#4A8B5C" stroke-width="5" marker-end="url(#wUp)"/>
 
       <!-- loppuenergia -->
-      <rect id="bPe" x="830" y="372" width="84" height="0" fill="#D84A62"/>
-      <rect id="bKe" x="830" y="372" width="84" height="0" fill="#2E86A6"/>
-      <rect id="bEdge" x="830" y="372" width="84" height="0" fill="none" stroke="#3F3D39" stroke-width="1.6"/>
-      <text id="bKeTxt" class="segLabel" x="872" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
-      <text id="bPeTxt" class="segLabel" x="872" y="300">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
+      <rect id="bPe" x="842" y="372" width="92" height="0" fill="#D84A62"/>
+      <rect id="bKe" x="842" y="372" width="92" height="0" fill="#2E86A6"/>
+      <rect id="bEdge" x="842" y="372" width="92" height="0" fill="none" stroke="#3F3D39" stroke-width="1.6"/>
+      <text id="bKeTxt" class="segLabel" x="888" y="360">E<tspan baseline-shift="sub" font-size="0.72em">k</tspan></text>
+      <text id="bPeTxt" class="segLabel" x="888" y="300">E<tspan baseline-shift="sub" font-size="0.72em">p</tspan></text>
 
       <!-- yhtälö -->
-      <text class="eqLabel" x="672" y="404">E<tspan baseline-shift="sub" font-size="0.72em">alku</tspan></text>
-      <text class="eqLabel" x="772" y="404">+ W</text>
-      <text class="eqLabel" x="872" y="404">= E<tspan baseline-shift="sub" font-size="0.72em">loppu</tspan></text>
+      <text class="eqLabel" x="652" y="410">E<tspan baseline-shift="sub" font-size="0.72em">alku</tspan></text>
+      <text class="eqLabel" x="770" y="410">+ W =</text>
+      <text class="eqLabel" x="888" y="410">E<tspan baseline-shift="sub" font-size="0.72em">loppu</tspan></text>
     </g>
   </svg>
 
   <section class="sim-controls" aria-label="Säätimet">
     <div class="ctrl-row">
-      <label><span id="v1Lbl">Lähtönopeus 5,0 m/s</span>
-        <input id="v1" type="range" min="0" max="8" step="0.5" value="5" aria-label="Lähtönopeus"></label>
+      <label><span id="v1Lbl">Lähtönopeus 6,0 m/s</span>
+        <input id="v1" type="range" min="0" max="8" step="0.5" value="6" aria-label="Lähtönopeus"></label>
       <label><span id="dhLbl">Korkeusero +2,0 m</span>
         <input id="dh" type="range" min="-3" max="3" step="0.1" value="2" aria-label="Korkeusero"></label>
       <label><span id="wLbl">Työ W +50 J</span>
@@ -155,7 +155,7 @@
   const ym = (h) => GROUND - h * SC;
 
   /* ---------------- tila ---------------- */
-  let v1 = 5, dh = 2, W = 50;
+  let v1 = 6, dh = 2, W = 50;
   let L = 6, accel = 0, sEnd = 6;
   let running = false;
   const st = { t: 0, s: 0, v: 0, done: false };
@@ -233,9 +233,9 @@
   }
 
   function segLabel(txt, top, height) {
-    if (height < 34) { txt.style.display = "none"; return; }
+    if (height < 36) { txt.style.display = "none"; return; }
     txt.style.display = "";
-    txt.setAttribute("y", top + height / 2 + 8);
+    txt.setAttribute("y", top + height / 2 + 10);
   }
 
   function render() {
