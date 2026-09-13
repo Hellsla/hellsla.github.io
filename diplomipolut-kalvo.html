@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>Kiviruukin diplomipolut · kalvo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --navy:#012169; --navy-deep:#010f38; --pink:#fca5c7;
+    --paper:#ffffff; --haze:#b9c3de;
+    --tt:#8fc3ea; --yr:#fca5c7;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#000}
+  /* Kalvo on kiinteä pinta, ei responsiivinen sivu: 1920x1080 = 16:9 */
+  .slide{
+    position:relative; width:1920px; height:1080px; overflow:hidden;
+    background:var(--navy);
+    color:var(--paper);
+    font-family:"Archivo",system-ui,sans-serif;
+    display:grid; grid-template-rows:auto auto 1fr auto;
+    padding:52px 64px 0;
+  }
+  .slide canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  .slide > *{position:relative;z-index:1}
+  .mono{font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.13em;text-transform:uppercase}
+
+  /* --- ylätunniste --- */
+  header{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+  .brand{display:flex;align-items:center;gap:16px}
+  .brand svg{width:66px;height:auto}
+  .brand .mono{color:var(--pink);font-size:15px}
+  h1{
+    font-family:"Jost",Futura,sans-serif;font-weight:700;
+    font-size:62px;line-height:1;letter-spacing:-.02em;margin:0;text-align:right;
+  }
+  h1 span{display:block;font-size:20px;font-weight:500;letter-spacing:.01em;color:var(--haze);margin-top:10px}
+
+  /* --- kaksi korttia ja yhteinen ydin --- */
+  .grid{
+    --cgap:26px;
+    display:grid;grid-template-columns:1fr 300px 1fr;gap:var(--cgap);
+    align-items:stretch;margin:34px 0 0;
+  }
+  .card{
+    border:1px solid rgba(255,255,255,.16);border-radius:24px;
+    padding:38px 36px;background:rgba(255,255,255,.03);
+    display:flex;flex-direction:column;
+  }
+  .card.tt{box-shadow:inset 0 4px 0 var(--tt)}
+  .card.yr{box-shadow:inset 0 4px 0 var(--yr)}
+  .kicker{font-size:14px;display:block;margin-bottom:8px}
+  .tt .kicker{color:var(--tt)} .yr .kicker{color:var(--yr)}
+  .card h2{font-family:"Jost",Futura,sans-serif;font-weight:700;font-size:43px;line-height:1.04;margin:0 0 10px}
+  .verbs{font-family:"Jost",Futura,sans-serif;font-weight:600;font-size:23px;margin:0 0 14px}
+  .tt .verbs{color:var(--tt)} .yr .verbs{color:var(--yr)}
+  .card > p{margin:0 0 16px;color:var(--haze);font-size:21px;line-height:1.45;max-width:46ch}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    border:1px solid rgba(255,255,255,.2);border-radius:999px;
+    padding:9px 14px;font-size:18px;line-height:1.1;background:rgba(255,255,255,.03);
+  }
+  .tt .chip{border-color:rgba(143,195,234,.4)} .yr .chip{border-color:rgba(252,165,199,.42)}
+  .foot{
+    margin-top:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);
+    display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  }
+  .size{font-family:"Jost",Futura,sans-serif;font-weight:700;font-size:26px}
+  .tt .size{color:var(--tt)} .yr .size{color:var(--yr)}
+  .foot span:last-child{font-size:17px;color:var(--haze)}
+
+  /* ydin: silta, ei kolmas kortti */
+  .core{position:relative;display:flex;align-items:center;justify-content:center}
+  .core::before,.core::after{
+    content:"";position:absolute;top:50%;width:calc(var(--cgap) + 2px);height:1px;
+    background:linear-gradient(90deg,rgba(143,195,234,.7),rgba(252,165,199,.7));
+  }
+  .core::before{left:calc(-1 * var(--cgap) - 1px)} .core::after{right:calc(-1 * var(--cgap) - 1px)}
+  .coreband{
+    width:100%;border:1px dashed rgba(255,255,255,.24);border-radius:22px;
+    padding:26px 18px;text-align:center;
+    background:linear-gradient(180deg,rgba(143,195,234,.09),rgba(252,165,199,.09));
+  }
+  .coreband h3{font-family:"Jost",Futura,sans-serif;font-weight:700;font-size:25px;line-height:1.1;margin:0 0 6px}
+  .coreband .mono{color:var(--pink);font-size:13px}
+  .corechips{display:flex;flex-direction:column;gap:9px;margin-top:16px}
+  .corechip{
+    border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:10px 12px;
+    font-family:"IBM Plex Mono",monospace;font-size:15px;background:var(--navy);
+  }
+
+  /* --- mitä saat --- */
+  .why{align-self:center;padding:52px 0 44px}
+  .why h3{
+    font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.13em;
+    text-transform:uppercase;font-size:15px;color:var(--pink);margin:0 0 18px;text-align:center;
+  }
+  .whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
+  .whyitem{border-top:1px solid rgba(255,255,255,.18);padding-top:14px}
+  .whyitem b{font-family:"Jost",Futura,sans-serif;font-weight:600;font-size:24px;display:block;margin-bottom:5px}
+  .whyitem small{display:block;color:var(--haze);font-size:18px;line-height:1.4}
+
+  /* --- alaosa: kolme vuotta ja kehotus --- */
+  footer{margin:0 -64px;padding:0}
+  .years{
+    display:grid;grid-template-columns:repeat(3,1fr) auto;gap:34px;align-items:center;
+    padding:26px 64px 24px;
+  }
+  .year{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:baseline}
+  .year .num{font-family:"Jost",Futura,sans-serif;font-weight:700;font-size:46px;line-height:.9;color:var(--pink)}
+  .year b{font-family:"Jost",Futura,sans-serif;font-weight:600;font-size:23px;display:block}
+  .year small{display:block;color:var(--haze);font-size:17px;line-height:1.35;margin-top:2px}
+  .scope{
+    font-family:"Jost",Futura,sans-serif;font-weight:700;font-size:24px;color:var(--pink);
+    border-left:1px solid rgba(255,255,255,.18);padding-left:30px;white-space:nowrap;
+  }
+  .scope small{display:block;font-family:"Archivo",sans-serif;font-weight:400;font-size:15px;color:var(--haze);margin-top:4px}
+  .cta{
+    background:var(--pink);color:#01102f;
+    display:flex;align-items:baseline;justify-content:space-between;gap:30px;
+    padding:20px 64px;
+  }
+  .cta strong{font-family:"Jost",Futura,sans-serif;font-weight:700;font-size:30px}
+  .cta .mono{font-size:14px;opacity:.75}
+</style>
+</head>
+<body>
+<div class="slide">
+  <canvas id="rays" aria-hidden="true"></canvas>
+
+  <header>
+    <div class="brand">
+      <svg viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukio">
+        <polygon fill="#fca5c7" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766.88 364.38 781.13 381.37 788.72 402.21 788.72 424.39 976.23 424.39 976.23 402.2 788.76 402.2"/>
+      </svg>
+      <span class="mono">Kiviruukin lukio</span>
+    </div>
+    <h1>Kaksi diplomipolkua.<span>Täällä taotaan tulevaisuutta.</span></h1>
+  </header>
+
+  <div class="grid">
+    <article class="card tt">
+      <span class="mono kicker">Tiede &amp; teknologia</span>
+      <h2>Tiede- ja teknologia -diplomi</h2>
+      <p class="verbs">Rakenna · Koodaa · Tutki · Näytä</p>
+      <p>Yhdistä luonnontieteitä, matematiikkaa ja teknologiaa tekemiseen, tutkimiseen ja ongelmanratkaisuun.</p>
+      <div class="chips">
+        <span class="chip">Makerspace</span><span class="chip">robotiikka</span>
+        <span class="chip">ohjelmointi</span><span class="chip">data</span>
+        <span class="chip">kyberturvallisuus</span><span class="chip">bioteknologia</span><span class="chip">terveysteknologia</span>
+        <span class="chip">dronet ja satelliitit</span><span class="chip">luonnontieteellinen tutkimus</span>
+      </div>
+      <div class="foot"><span class="size">6 op + 2 op</span><span>Lukiodiplomi · Kiviruukkipäivä</span></div>
+    </article>
+
+    <div class="core">
+      <div class="coreband">
+        <h3>Yhteistä molemmille</h3>
+        <span class="mono">Yhteinen ydin</span>
+        <div class="corechips">
+          <span class="corechip">Innovaatiot</span>
+          <span class="corechip">Tekoäly</span>
+          <span class="corechip">Korkeakoulu- ja<br>yritysyhteistyö</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="card yr">
+      <span class="mono kicker">Talous &amp; yrittäjyys</span>
+      <h2>Talous- ja yrittäjyysdiplomi</h2>
+      <p class="verbs">Ideoi · Kokeile · Verkostoidu · Kasva</p>
+      <p>Kehitä talous-, työelämä- ja yrittäjyystaitojasi ja opi viemään ideat käytännön toiminnaksi.</p>
+      <div class="chips">
+        <span class="chip">oma talous</span><span class="chip">työelämätaidot</span>
+        <span class="chip">yrittäjyys</span><span class="chip">sijoittaminen</span><span class="chip">yrittäjän matematiikka</span>
+        <span class="chip">media ja markkinointi</span><span class="chip">verkostoituminen</span>
+        <span class="chip">Global Business</span><span class="chip">Vuosi yrittäjänä</span>
+      </div>
+      <div class="foot"><span class="size">6 op + 2 op</span><span>Diplomi · Kiviruukkipäivä</span></div>
+    </article>
+  </div>
+
+  <section class="why">
+    <h3>Mitä saat diplomipolusta?</h3>
+    <div class="whygrid">
+      <div class="whyitem"><b>Oman painotuksen</b><small>Rakenna kokonaisuus omien kiinnostuksenkohteidesi mukaan.</small></div>
+      <div class="whyitem"><b>Jatko-opintovalmiuksia</b><small>Syvennä taitoja, joista on hyötyä korkeakouluissa ja työelämässä.</small></div>
+      <div class="whyitem"><b>Oikeita projekteja</b><small>Tee yhteistyötä yritysten, korkeakoulujen ja muiden kumppaneiden kanssa.</small></div>
+      <div class="whyitem"><b>Näytön osaamisestasi</b><small>Kokoa osaamisesi diplomityöhön ja esittele se muille.</small></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="years">
+      <div class="year"><span class="num">1</span><span><b>Tutustu</b><small>Valitse kiinnostavia opintoja ja etsi oma suuntasi.</small></span></div>
+      <div class="year"><span class="num">2</span><span><b>Syvennä</b><small>Kokoa oma painotuksesi ja aloita diplomityö.</small></span></div>
+      <div class="year"><span class="num">3</span><span><b>Esittele</b><small>Diplomityö, portfolio ja esittely Kiviruukkipäivänä.</small></span></div>
+      <div class="scope">6 op + 2 op<small>opintoja + lukiodiplomi</small></div>
+    </div>
+    <div class="cta">
+      <strong>Tuo oma kipinäsi.</strong>
+      <span class="mono">Info lukuvuoden alussa · kysy diplomipolkujen koordinaattorilta</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var cv=document.getElementById("rays"),ctx=cv.getContext("2d");
+  var w=1920,h=1080,dpr=2;
+  cv.width=w*dpr;cv.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+  var cx=w*0.93,cy=h*1.22,n=42,R=Math.hypot(w,h)*1.05;
+  for(var i=0;i<n;i++){
+    var t=i/(n-1),a=Math.PI+t*Math.PI*0.62;
+    var len=R*(0.42+0.58*Math.pow(Math.sin(t*Math.PI),0.65));
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*R*0.10,cy+Math.sin(a)*R*0.10);
+    ctx.lineTo(cx+Math.cos(a)*len,cy+Math.sin(a)*len);
+    ctx.lineWidth=Math.max(1.5,w*0.0028);ctx.lineCap="round";
+    ctx.strokeStyle="rgba(252,165,199,"+(0.05+0.13*Math.sin(t*Math.PI)).toFixed(3)+")";
+    ctx.stroke();
+  }
+})();
+</script>
+</body>
+</html>

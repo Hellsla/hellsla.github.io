@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hiukkaset sähkö- ja magneettikentässä (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --slate:#6E7A82;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+    --field:#8FA8B5;
+  }
+
+  .scene{ width:100%; height:100%; }
+  .scene text{ font-family:inherit; }
+
+  .h    { font-size:17px; fill:var(--faint); letter-spacing:.1em; }
+  .note { font-size:17px; fill:var(--muted); }
+  .msg  { font-size:25px; fill:var(--muted); }
+  .name { font-size:20px; fill:var(--ink); font-weight:700; }
+  .qty  { font-size:18px; fill:var(--muted); font-variant-numeric:tabular-nums; }
+  .tiny { font-size:15px; fill:var(--faint); }
+
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.3em;
+  }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-sliderBox{ width:auto; gap:.6em; }
+  .sim-controls .sim-sliderBox label{ font-size:1.05em; font-style:italic; font-weight:700; color:var(--ink); }
+  .sim-controls .sim-range{ width:9em; }
+  .sim-controls .out{
+    min-width:6ch; text-align:right; font-weight:700; color:var(--ink);
+    font-size:.94em; font-variant-numeric:tabular-nums;
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Varattujen hiukkasten radat sähkö- ja magneettikentässä">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Alfa-, beeta- ja gammahiukkasten radat sähkö- ja magneettikentässä">
+
+<defs>
+  <clipPath id="chamber"><rect x="60" y="66" width="580" height="330" rx="6"/></clipPath>
+</defs>
+
+<!-- kammio -->
+<rect x="60" y="66" width="580" height="330" rx="6" fill="#FCFCFB"
+      stroke="var(--ink)" stroke-width="2.6"/>
+
+<g clip-path="url(#chamber)">
+  <g id="bfield"></g>
+  <g id="efield"></g>
+  <g id="trails"></g>
+  <g id="parts"></g>
+</g>
+
+<!-- levyt reunoilla, kun sähkökenttä on päällä -->
+<g id="plates" opacity="0">
+  <rect x="61" y="80" width="9" height="302" fill="var(--slate)"/>
+  <rect x="630" y="80" width="9" height="302" fill="var(--slate)"/>
+  <text id="plateL" x="84" y="238" text-anchor="middle" class="name" fill="var(--slate)">+</text>
+  <text id="plateR" x="616" y="238" text-anchor="middle" class="name" fill="var(--slate)">−</text>
+</g>
+
+<!-- lähde kammion pohjalla -->
+<rect x="322" y="356" width="56" height="38" rx="4" fill="var(--slate)"/>
+<rect x="344" y="348" width="12" height="12" fill="#FCFCFB"/>
+<text x="350" y="386" text-anchor="middle" class="tiny" fill="#fff">lähde</text>
+
+<!-- oikea paneeli -->
+<text x="680" y="92" class="h">HIUKKASET</text>
+
+<g id="legend">
+  <circle cx="690" cy="126" r="9" fill="var(--red)"/>
+  <text x="710" y="133" class="name">α</text>
+  <text x="736" y="133" class="qty">alfahiukkanen</text>
+  <text x="930" y="133" text-anchor="end" class="qty">+2e</text>
+
+  <circle cx="690" cy="170" r="6" fill="var(--orange)"/>
+  <text x="710" y="177" class="name">β⁺</text>
+  <text x="748" y="177" class="qty">positroni</text>
+  <text x="930" y="177" text-anchor="end" class="qty">+e</text>
+
+  <circle cx="690" cy="214" r="6" fill="var(--blue)"/>
+  <text x="710" y="221" class="name">β⁻</text>
+  <text x="748" y="221" class="qty">elektroni</text>
+  <text x="930" y="221" text-anchor="end" class="qty">−e</text>
+
+  <circle cx="690" cy="258" r="6" fill="var(--slate)"/>
+  <text x="710" y="265" class="name">γ</text>
+  <text x="736" y="265" class="qty">fotoni</text>
+  <text x="930" y="265" text-anchor="end" class="qty">0</text>
+</g>
+
+<text x="680" y="294" class="tiny">Mittakaava kaaviomainen.</text>
+
+<text x="680" y="330" class="h">KENTTIEN SUUNTA</text>
+<g id="bdir">
+  <text x="680" y="360" class="qty">B</text>
+  <g id="bsym" transform="translate(714,354)"></g>
+  <text id="btext" x="742" y="360" class="qty">ei kenttää</text>
+</g>
+<text x="680" y="386" class="qty">E</text>
+<text id="etext" x="714" y="386" class="qty">ei kenttää</text>
+
+<text id="msg" x="480" y="424" text-anchor="middle" class="msg">Säädä kenttiä ja katso, miten radat eroavat.</text>
+
+</svg>
+
+<div class="sim-controls">
+  <div class="sim-sliderBox">
+    <label for="B">B</label>
+    <input class="sim-range" id="B" type="range" min="-100" max="100" step="5" value="0">
+    <span class="out" id="BOut">0</span>
+  </div>
+  <div class="sim-sliderBox">
+    <label for="E">E</label>
+    <input class="sim-range" id="E" type="range" min="-100" max="100" step="5" value="0">
+    <span class="out" id="EOut">0</span>
+  </div>
+  <button class="sim-btn primary" type="button" id="run">Käynnistä</button>
+  <button class="sim-btn" type="button" id="reset">Alusta</button>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+const mk = (tag, attrs) => {
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+};
+const clamp = (v, a, b) => v < a ? a : (v > b ? b : v);
+
+/* ---------------- kammio ja lähde ---------------- */
+const X0 = 60, X1 = 640, Y0 = 66, Y1 = 396;
+const SRC_X = 350, SRC_Y = 350;
+const V0 = 210;                 // lähtönopeus, px/s
+const B_MAX = 2.6, E_MAX = 180; // skaalattu niin että radat mahtuvat kammioon
+const EMIT_EVERY = 0.85;
+const MAX_LIFE = 2.6;
+
+/* Massat ovat kaaviomaisia: oikeilla massoilla beetan rata olisi
+   tuhansia kertoja tiukempi kuin alfan eikä mahtuisi samaan kuvaan.
+   Suuruusjärjestys ja suunnat ovat oikein. */
+const KINDS = [
+  { id: "a",  q:  2, m: 4,   r: 9, color: "var(--red)",    dx: -21 },
+  { id: "bp", q:  1, m: 0.5, r: 6, color: "var(--orange)", dx:  -7 },
+  { id: "bm", q: -1, m: 0.5, r: 6, color: "var(--blue)",   dx:   7 },
+  { id: "g",  q:  0, m: 1,   r: 6, color: "var(--slate)",  dx:  21 }
+];
+
+const gB = $("bfield"), gE = $("efield"),
+      gTrails = $("trails"), gParts = $("parts");
+
+/* ---------------- kenttien piirto ---------------- */
+const marks = [];
+for(let cx = X0 + 46; cx < X1 - 20; cx += 66){
+  for(let cy = Y0 + 34; cy < Y1 - 20; cy += 62){
+    const g = mk("g", { transform: "translate(" + cx + "," + cy + ")" });
+    const cross = mk("path", { d: "M-6 -6 L6 6 M-6 6 L6 -6", stroke: "var(--field)",
+                               "stroke-width": 1.8, fill: "none" });
+    const dot = mk("g", {});
+    dot.appendChild(mk("circle", { r: 6.5, fill: "none", stroke: "var(--field)", "stroke-width": 1.8 }));
+    dot.appendChild(mk("circle", { r: 2.2, fill: "var(--field)" }));
+    g.appendChild(cross); g.appendChild(dot);
+    gB.appendChild(g);
+    marks.push({ cross, dot });
+  }
+}
+
+const arrows = [];
+for(const y of [120, 231, 342]){
+  const line = mk("line", { x1: 96, y1: y, x2: 604, y2: y,
+                            stroke: "var(--field)", "stroke-width": 1.8 });
+  const head = mk("polygon", { fill: "var(--field)" });
+  gE.appendChild(line); gE.appendChild(head);
+  arrows.push({ line, head, y });
+}
+
+/* symboli oikeaan paneeliin */
+const bsym = $("bsym");
+const symCross = mk("path", { d: "M-7 -7 L7 7 M-7 7 L7 -7", stroke: "var(--field)",
+                              "stroke-width": 2.2, fill: "none" });
+const symDot = mk("g", {});
+symDot.appendChild(mk("circle", { r: 7.5, fill: "none", stroke: "var(--field)", "stroke-width": 2.2 }));
+symDot.appendChild(mk("circle", { r: 2.6, fill: "var(--field)" }));
+bsym.appendChild(symCross); bsym.appendChild(symDot);
+
+const Bval = () => parseInt($("B").value, 10) / 100;
+const Eval = () => parseInt($("E").value, 10) / 100;
+
+function drawFields(){
+  const b = Bval(), e = Eval();
+
+  /* B > 0 = kenttä paperiin sisään (×), B < 0 = ulos (·) */
+  const bo = Math.min(1, Math.abs(b)) * 0.85;
+  marks.forEach(m => {
+    m.cross.setAttribute("opacity", b > 0 ? bo : 0);
+    m.dot.setAttribute("opacity",   b < 0 ? bo : 0);
+  });
+  symCross.setAttribute("opacity", b > 0 ? 1 : 0);
+  symDot.setAttribute("opacity",   b < 0 ? 1 : 0);
+  $("btext").textContent = b === 0 ? "ei kenttää" : (b > 0 ? "paperiin sisään" : "paperista ulos");
+  $("btext").setAttribute("x", b === 0 ? 714 : 742);
+  $("bsym").setAttribute("opacity", b === 0 ? "0" : "1");
+
+  /* E > 0 osoittaa oikealle */
+  const eo = Math.min(1, Math.abs(e)) * 0.7;
+  arrows.forEach(a => {
+    const dir = e >= 0 ? 1 : -1;
+    const tipX = e >= 0 ? 604 : 96;
+    const baseX = tipX - dir * 16;
+    a.line.setAttribute("opacity", eo);
+    a.head.setAttribute("opacity", eo);
+    a.head.setAttribute("points",
+      tipX + "," + a.y + " " + baseX + "," + (a.y - 7) + " " + baseX + "," + (a.y + 7));
+  });
+  $("plates").setAttribute("opacity", e === 0 ? "0" : "1");
+  $("plateL").textContent = e > 0 ? "+" : "−";
+  $("plateR").textContent = e > 0 ? "−" : "+";
+  $("etext").textContent = e === 0 ? "ei kenttää" : (e > 0 ? "oikealle" : "vasemmalle");
+
+  $("BOut").textContent = parseInt($("B").value, 10);
+  $("EOut").textContent = parseInt($("E").value, 10);
+
+  let m;
+  if(b === 0 && e === 0)      m = "Säädä kenttiä ja katso, miten radat eroavat.";
+  else if(e === 0)            m = "Varaus määrää kaarron suunnan, massa sen jyrkkyyden.";
+  else if(b === 0)            m = "Sähkökenttä poikkeuttaa varatut hiukkaset sivuun.";
+  else                        m = "Sähkö- ja magneettikentän voimat voivat kumota toisensa.";
+  $("msg").textContent = m;
+}
+
+/* ---------------- hiukkaset ---------------- */
+let parts = [], running = false, emitT = 0;
+
+function emit(){
+  for(const k of KINDS){
+    const el = mk("circle", { r: k.r, fill: k.color });
+    gParts.appendChild(el);
+    const trail = mk("path", { fill: "none", stroke: k.color, "stroke-width": 2.6,
+                               "stroke-linecap": "round", "stroke-linejoin": "round",
+                               opacity: 0.9 });
+    gTrails.appendChild(trail);
+    parts.push({ k, x: SRC_X + k.dx, y: SRC_Y, vx: 0, vy: -V0,
+                 el, trail, pts: [], life: 0, gone: 0 });
+  }
+}
+
+function step(dt){
+  const bz = -Bval() * B_MAX;    // z-komponentti matemaattisessa koordinaatistossa
+  const ex =  Eval() * E_MAX;
+
+  if(running){
+    emitT -= dt;
+    if(emitT <= 0){ emitT = EMIT_EVERY; emit(); }
+  }
+
+  for(let i = parts.length - 1; i >= 0; i--){
+    const p = parts[i];
+
+    if(p.gone > 0){
+      p.gone -= dt;
+      p.trail.setAttribute("opacity", clamp(p.gone / 1.2, 0, 1) * 0.9);
+      if(p.gone <= 0){ gTrails.removeChild(p.trail); parts.splice(i, 1); }
+      continue;
+    }
+
+    /* Lorentzin voima: F = q(E + v x B) */
+    const qm = p.k.q / p.k.m;
+    const ax = qm * (ex + (-p.vy) * bz);
+    const ay = qm * ( 0  + ( p.vx) * bz);
+    p.vx += ax * dt;
+    p.vy += ay * dt;
+    p.x  += p.vx * dt;
+    p.y  += p.vy * dt;
+    p.life += dt;
+
+    p.pts.push(p.x.toFixed(1) + " " + p.y.toFixed(1));
+    if(p.pts.length > 900) p.pts.shift();
+    p.trail.setAttribute("d", "M" + p.pts.join(" L"));
+    p.el.setAttribute("cx", p.x.toFixed(1));
+    p.el.setAttribute("cy", p.y.toFixed(1));
+
+    const out = p.x < X0 - 10 || p.x > X1 + 10 || p.y < Y0 - 10 || p.y > Y1 + 10;
+    if(out || p.life > MAX_LIFE){
+      gParts.removeChild(p.el);
+      p.gone = 1.2;
+    }
+  }
+}
+
+function reset(){
+  parts.forEach(p => {
+    if(p.gone <= 0) gParts.removeChild(p.el);
+    gTrails.removeChild(p.trail);
+  });
+  parts = [];
+  emitT = 0;
+}
+
+$("B").addEventListener("input", () => { drawFields(); reset(); });
+$("E").addEventListener("input", () => { drawFields(); reset(); });
+$("run").addEventListener("click", () => {
+  running = !running;
+  $("run").textContent = running ? "Pysäytä" : "Käynnistä";
+  if(running && !parts.length) emitT = 0;
+});
+$("reset").addEventListener("click", () => {
+  running = false;
+  $("run").textContent = "Käynnistä";
+  $("B").value = 0; $("E").value = 0;
+  drawFields(); reset();
+});
+
+/* ohjainrivi skaalautuu kehyksen mukana */
+const wrapEl = document.querySelector(".sim-wrap");
+const ctrlEl = document.querySelector(".sim-controls");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(w) ctrlEl.style.fontSize = (w / 960 * 18).toFixed(2) + "px";
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
+
+drawFields();
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  step(dt);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
