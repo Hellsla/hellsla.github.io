@@ -105,8 +105,8 @@
 
   <section class="sim-controls" aria-label="Säätimet">
     <div class="ctrl-row">
-      <label><span id="lossLbl">Kitkakerroin μ 0,00</span>
-        <input id="loss" type="range" min="0" max="0.15" step="0.005" value="0" aria-label="Kitkakerroin"></label>
+      <label><span id="lossLbl">Kitka 0 %</span>
+        <input id="loss" type="range" min="0" max="100" step="5" value="0" aria-label="Kitka"></label>
       <button id="play" class="sim-btn" type="button">Käynnistä</button>
       <button id="reset" class="sim-btn" type="button">Nollaa</button>
     </div>
@@ -134,7 +134,6 @@
     play: $("play"), reset: $("reset")
   };
 
-  const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",");
   const px = (xm) => X0 + xm * SC;
   const py = (ym) => GROUND - ym * SC;
 
@@ -203,6 +202,9 @@
 
   /* ---------------- tila ---------------- */
   const st = { s: 0, s0: 0, dir: 1, wf: 0, done: false };
+  // Säädin on 0-100 %, ei kitkakerroin: kaarevalla radalla tukivoimaa
+  // hallitsee v²/R eikä mg·cosθ, joten μ:n lukuarvo ei olisi mitattava suure.
+  const MU_MAX = 0.15;
   let running = false, mu = 0, E0 = 1;
 
   // oletuslähtö: ensimmäinen kohta laskevalla lähtörinteellä 9,0 metrissä
@@ -236,8 +238,11 @@
         el.play.textContent = "Uudelleen";
         return;
       }
-      st.dir = t.uy < 0 ? 1 : -1;     // kääntyy alamäkeen
-      st.s += st.dir * 0.02;
+      // kääntyy alamäkeen; kitkatyö kertyy myös tältä lyhyeltä askeleelta
+      st.dir = t.uy < 0 ? 1 : -1;
+      const nudge = 0.02;
+      st.wf += mu * MASS * g * cosT * nudge;
+      st.s += st.dir * nudge;
       return;
     }
 
@@ -353,8 +358,9 @@
   }
 
   el.loss.addEventListener("input", () => {
-    mu = parseFloat(el.loss.value);
-    el.lossLbl.textContent = `Kitkakerroin μ ${fmt(mu, 2)}`;
+    const pct = parseFloat(el.loss.value);
+    mu = (pct / 100) * MU_MAX;
+    el.lossLbl.textContent = `Kitka ${pct.toFixed(0)} %`;
     render();
   });
 
@@ -367,7 +373,7 @@
 
   el.reset.addEventListener("click", resetState);
 
-  mu = parseFloat(el.loss.value);
+  mu = (parseFloat(el.loss.value) / 100) * MU_MAX;
   resetState();
   requestAnimationFrame(tick);
 })();
