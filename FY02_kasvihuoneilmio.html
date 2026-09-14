@@ -113,15 +113,18 @@
       <!-- säteilyvirrat -->
       <path id="aSun"   class="arrowSun" fill="#F2A81E"/>
       <path id="aRefl"  class="arrowSun" fill="#F8D189"/>
-      <path id="aSurf"  class="arrowIr"  fill="#D84A62"/>
-      <path id="aSpace" class="arrowIr"  fill="#D84A62"/>
-      <path id="aBack"  class="arrowIr"  fill="#D84A62"/>
+      <path id="aAbs"    class="arrowSun" fill="#F2A81E"/>
+      <path id="aSurf"   class="arrowIr"  fill="#D84A62"/>
+      <path id="aWindow" class="arrowIr"  fill="#D84A62"/>
+      <path id="aUp"     class="arrowIr"  fill="#D84A62"/>
+      <path id="aBack"   class="arrowIr"  fill="#D84A62"/>
 
       <text id="reflLbl" class="flowLabel" x="268" y="96" fill="#7A5206">Heijastus</text>
-      <text class="flowLabel" x="360" y="46" text-anchor="middle" fill="#9C2F44">Avaruuteen</text>
-      <text class="flowLabel" x="706" y="222" text-anchor="end" fill="#514B42">Ilmakehä</text>
+      <text id="winLbl" class="flowLabel" x="360" y="46" text-anchor="middle" fill="#9C2F44">Ikkunasta suoraan</text>
+      <text id="upLbl" class="flowLabel" x="630" y="46" text-anchor="middle" fill="#9C2F44">Ilmakehästä ylös</text>
+      <text class="flowLabel" x="500" y="222" text-anchor="middle" fill="#514B42">Ilmakehä</text>
       <text class="flowLabel" x="404" y="290" fill="#9C2F44">Maan lämpösäteily</text>
-      <text id="backLbl" class="flowLabel" x="636" y="324" text-anchor="end" fill="#9C2F44">Takaisinsäteily</text>
+      <text id="backLbl" class="flowLabel" x="602" y="324" text-anchor="end" fill="#9C2F44">Ilmakehästä alas</text>
     </g>
     <rect class="card" x="24" y="24" width="724" height="416" rx="18"/>
 
@@ -172,8 +175,9 @@
   const el = {
     land: $("land"), crust: $("crust"), snowL: $("snowL"), snowR: $("snowR"),
     hazeFill: $("hazeFill"), scaleTicks: $("scaleTicks"),
-    aSun: $("aSun"), aRefl: $("aRefl"), aSurf: $("aSurf"), aSpace: $("aSpace"), aBack: $("aBack"),
-    reflLbl: $("reflLbl"), backLbl: $("backLbl"),
+    aSun: $("aSun"), aRefl: $("aRefl"), aAbs: $("aAbs"), aSurf: $("aSurf"),
+    aWindow: $("aWindow"), aUp: $("aUp"), aBack: $("aBack"),
+    reflLbl: $("reflLbl"), backLbl: $("backLbl"), upLbl: $("upLbl"), winLbl: $("winLbl"),
     merc: $("merc"), tempTxt: $("tempTxt"),
     eps: $("eps"), alb: $("alb"), epsLbl: $("epsLbl"), albLbl: $("albLbl"), reset: $("reset")
   };
@@ -242,9 +246,11 @@
     const refl = alb * inSun;              // heijastuva
     const F = inSun - refl;                // absorboituva = avaruuteen palaava
     const surf = F / (1 - eps / 2);        // maanpinnan lämpösäteily
-    const back = eps * surf / 2;           // takaisinsäteily
+    const back = eps * surf / 2;           // ilmakehästä alas
+    const layerUp = back;                  // ilmakehästä ylös - yhtä suuri kuin alas
+    const windowUp = (1 - eps) * surf;     // ilmakehän ikkunasta suoraan avaruuteen
     const T = Math.pow(surf / SIGMA, 0.25) - 273.15;
-    return { inSun, refl, F, surf, back, T };
+    return { inSun, refl, F, surf, back, layerUp, windowUp, T };
   }
 
   /* ---------------- piirto ---------------- */
@@ -258,14 +264,24 @@
     el.snowL.setAttribute("d", sL);
     el.snowR.setAttribute("d", sR);
 
-    el.aSun.setAttribute("d",   arrowPath(102, 92, 152, surfY(152) - 2, w(m.inSun)));
-    el.aRefl.setAttribute("d",  arrowPath(176, surfY(176) - 2, 252, 58, w(m.refl)));
-    el.aSurf.setAttribute("d",  arrowPath(360, surfY(360) - 2, 360, 252, w(m.surf)));
-    el.aSpace.setAttribute("d", arrowPath(360, 180, 360, 52, w(m.F)));
-    el.aBack.setAttribute("d",  arrowPath(660, 252, 660, surfY(660) - 2, w(m.back)));
+    // auringon säde maahan; absorboitunut osa jatkaa samaan suuntaan maan sisään
+    const sx = 102, sy = 92, hx = 152, hy = surfY(152) - 2;
+    const dl = Math.hypot(hx - sx, hy - sy);
+    el.aSun.setAttribute("d",  arrowPath(sx, sy, hx, hy, w(m.inSun)));
+    el.aAbs.setAttribute("d",  arrowPath(hx, hy, hx + (hx - sx) / dl * 40, hy + (hy - sy) / dl * 40, w(m.F)));
+    el.aRefl.setAttribute("d", arrowPath(176, surfY(176) - 2, 252, 58, w(m.refl)));
+
+    // maasta lähtevä lämpösäteily jakautuu ikkunaan ja ilmakehän absorboimaan osaan;
+    // ilmakehä säteilee absorboimansa puoliksi ylös ja puoliksi alas
+    el.aSurf.setAttribute("d",   arrowPath(360, surfY(360) - 2, 360, 252, w(m.surf)));
+    el.aWindow.setAttribute("d", arrowPath(360, 180, 360, 52, w(m.windowUp)));
+    el.aUp.setAttribute("d",     arrowPath(630, 180, 630, 52, w(m.layerUp)));
+    el.aBack.setAttribute("d",   arrowPath(630, 252, 630, surfY(630) - 2, w(m.back)));
 
     el.reflLbl.style.display = m.refl * PX_PER_W < 2 ? "none" : "";
     el.backLbl.style.display = m.back * PX_PER_W < 2 ? "none" : "";
+    el.upLbl.style.display   = m.layerUp * PX_PER_W < 2 ? "none" : "";
+    el.winLbl.style.display  = m.windowUp * PX_PER_W < 2 ? "none" : "";
 
     // utu tiivistyy kasvihuonekaasujen määrän mukana
     el.hazeFill.setAttribute("opacity", (0.06 + 0.46 * eps).toFixed(3));
