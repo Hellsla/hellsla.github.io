@@ -8,25 +8,27 @@
 <style>
   :root{
     --ink:#3F3D39;
-    --sun:#F2A81E;     /* auringon säteily */
-    --sunPale:#F7C96B; /* heijastunut osuus */
-    --ir:#D84A62;      /* lämpösäteily */
+    --sun:#F2A81E;
+    --sunEdge:#C4860E;
+    --sunPale:#F8D189;
+    --ir:#D84A62;
+    --irEdge:#AE3A4E;
   }
 
-  .card   { fill:#F1F7FB; stroke:#DCD7CD; stroke-width:2; }
-  .land   { fill:#88A277; stroke:var(--ink); stroke-width:2.4; }
-  .snow   { fill:#FFFFFF; stroke:var(--ink); stroke-width:2.2; }
-  .layer  { stroke:var(--ink); stroke-width:2; stroke-dasharray:8 6; }
-  .sunDisc{ fill:var(--sun); stroke:var(--ink); stroke-width:2.4; }
-  .sunRay { stroke:var(--sun); stroke-width:4; stroke-linecap:round; }
-  .tube   { fill:#fff; stroke:var(--ink); stroke-width:2.6; }
+  .card    { fill:none; stroke:#C7D4DD; stroke-width:2; }
+  .landEdge{ fill:none; stroke:#4A6340; stroke-width:2.6; stroke-linecap:round; }
+  .snow    { stroke:#5E7A8A; stroke-width:2.2; stroke-linejoin:round; }
+  .haze    { stroke:#6E675C; stroke-opacity:.28; stroke-width:1.6; }
+  .tube    { fill:#fff; stroke:var(--ink); stroke-width:2.6; }
   .tubeLine{ fill:none; stroke:var(--ink); stroke-width:2.6; }
-  .tick   { stroke:var(--ink); stroke-width:1.6; opacity:.55; }
+  .tick    { stroke:var(--ink); stroke-width:1.6; opacity:.5; }
+  .arrowSun{ stroke:var(--sunEdge); stroke-width:1.6; stroke-linejoin:round; }
+  .arrowIr { stroke:var(--irEdge);  stroke-width:1.6; stroke-linejoin:round; }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
   .flowLabel{ font-size:19px; font-weight:600; }
-  .tempBig  { font-size:46px; font-weight:700; text-anchor:middle; }
-  .tickTxt  { font-size:16px; opacity:.7; }
+  .tempBig  { font-size:38px; font-weight:700; text-anchor:middle; }
+  .tickTxt  { font-size:15px; opacity:.65; }
 
   /* --- ohjaimet --- */
   .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
@@ -50,54 +52,88 @@
 <main class="sim-wrap" aria-label="Kasvihuoneilmiön simulaatio">
   <svg viewBox="0 0 960 540" role="img" aria-label="Kasvihuoneilmiö: säteilytasapaino, lumipeite ja maapallon lämpötila">
     <defs>
-      <clipPath id="cardClip"><rect x="24" y="24" width="732" height="416" rx="18"/></clipPath>
+      <clipPath id="cardClip"><rect x="24" y="24" width="724" height="416" rx="18"/></clipPath>
+
+      <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0"    stop-color="#8FB6D4"/>
+        <stop offset="0.38" stop-color="#C6DEED"/>
+        <stop offset="0.78" stop-color="#DCEBF5"/>
+        <stop offset="1"    stop-color="#E6F1F8"/>
+      </linearGradient>
+
+      <linearGradient id="landGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#80A06B"/>
+        <stop offset="1" stop-color="#5A7A4C"/>
+      </linearGradient>
+
+      <linearGradient id="snowGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" stop-color="#C6DDEC"/>
+      </linearGradient>
+
+      <radialGradient id="sunGlow">
+        <stop offset="0"    stop-color="#F2A81E" stop-opacity="0.55"/>
+        <stop offset="0.45" stop-color="#F2A81E" stop-opacity="0.22"/>
+        <stop offset="1"    stop-color="#F2A81E" stop-opacity="0"/>
+      </radialGradient>
+
+      <linearGradient id="hazeGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0"    stop-color="#7E7768" stop-opacity="0"/>
+        <stop offset="0.3"  stop-color="#7E7768" stop-opacity="1"/>
+        <stop offset="0.7"  stop-color="#7E7768" stop-opacity="1"/>
+        <stop offset="1"    stop-color="#7E7768" stop-opacity="0"/>
+      </linearGradient>
+
+      <linearGradient id="mercGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0"   stop-color="#C6404F"/>
+        <stop offset="0.4" stop-color="#E46074"/>
+        <stop offset="1"   stop-color="#C6404F"/>
+      </linearGradient>
     </defs>
 
     <!-- ============ MAISEMA ============ -->
-    <rect class="card" x="24" y="24" width="732" height="416" rx="18"/>
-
     <g clip-path="url(#cardClip)">
-      <!-- ilmakehäkerros -->
-      <rect id="layerFill" x="40" y="190" width="700" height="52" rx="10" fill="#9A958C" opacity="0.1"/>
-      <rect class="layer" x="40" y="190" width="700" height="52" rx="10" fill="none"/>
+      <rect x="24" y="24" width="724" height="416" fill="url(#skyGrad)"/>
 
-      <!-- maapallon pinta ja lumipeite -->
-      <path id="land" class="land" d=""/>
-      <path id="snowL" class="snow" d=""/>
-      <path id="snowR" class="snow" d=""/>
-
-      <!-- aurinko -->
-      <g id="sun">
-        <g class="sunRay">
-          <line x1="62" y1="10" x2="62" y2="20"/><line x1="62" y1="76" x2="62" y2="86"/>
-          <line x1="24" y1="48" x2="34" y2="48"/><line x1="90" y1="48" x2="100" y2="48"/>
-          <line x1="35" y1="21" x2="42" y2="28"/><line x1="82" y1="68" x2="89" y2="75"/>
-          <line x1="35" y1="75" x2="42" y2="68"/><line x1="82" y1="28" x2="89" y2="21"/>
-        </g>
-        <circle class="sunDisc" cx="62" cy="48" r="24"/>
+      <!-- kasvihuonekaasukerros -->
+      <g id="hazeG">
+        <rect id="hazeFill" x="40" y="180" width="692" height="72" rx="30" fill="url(#hazeGrad)" opacity="0.2"/>
       </g>
 
-      <!-- säteilyvirrat -->
-      <path id="aSun"   fill="#F2A81E"/>
-      <path id="aRefl"  fill="#F7C96B"/>
-      <path id="aSurf"  fill="#D84A62"/>
-      <path id="aSpace" fill="#D84A62"/>
-      <path id="aBack"  fill="#D84A62"/>
+      <!-- maapallon pinta ja lumipeite -->
+      <path id="land"  fill="url(#landGrad)"/>
+      <path id="crust" class="landEdge"/>
+      <path id="snowL" class="snow" fill="url(#snowGrad)"/>
+      <path id="snowR" class="snow" fill="url(#snowGrad)"/>
 
-      <text id="reflLbl" class="flowLabel" x="268" y="96" fill="#8A5E08">Heijastus</text>
-      <text class="flowLabel" x="360" y="46" text-anchor="middle" fill="#A8384C">Avaruuteen</text>
-      <text class="flowLabel" x="712" y="223" text-anchor="end" opacity=".75">Ilmakehä</text>
-      <text class="flowLabel" x="404" y="286" fill="#A8384C">Maan lämpösäteily</text>
-      <text id="backLbl" class="flowLabel" x="636" y="320" text-anchor="end" fill="#A8384C">Takaisinsäteily</text>
+      <!-- aurinko -->
+      <circle cx="70" cy="56" r="52" fill="url(#sunGlow)"/>
+      <circle cx="70" cy="56" r="25" fill="#F2A81E" stroke="#C4860E" stroke-width="2.4"/>
+
+      <!-- säteilyvirrat -->
+      <path id="aSun"   class="arrowSun" fill="#F2A81E"/>
+      <path id="aRefl"  class="arrowSun" fill="#F8D189"/>
+      <path id="aSurf"  class="arrowIr"  fill="#D84A62"/>
+      <path id="aSpace" class="arrowIr"  fill="#D84A62"/>
+      <path id="aBack"  class="arrowIr"  fill="#D84A62"/>
+
+      <text id="reflLbl" class="flowLabel" x="268" y="96" fill="#7A5206">Heijastus</text>
+      <text class="flowLabel" x="360" y="46" text-anchor="middle" fill="#9C2F44">Avaruuteen</text>
+      <text class="flowLabel" x="706" y="222" text-anchor="end" fill="#514B42">Ilmakehä</text>
+      <text class="flowLabel" x="404" y="290" fill="#9C2F44">Maan lämpösäteily</text>
+      <text id="backLbl" class="flowLabel" x="636" y="324" text-anchor="end" fill="#9C2F44">Takaisinsäteily</text>
     </g>
+    <rect class="card" x="24" y="24" width="724" height="416" rx="18"/>
 
     <!-- ============ LÄMPÖMITTARI ============ -->
+    <rect x="764" y="24" width="180" height="416" rx="18" fill="#FAFCFD"/>
+    <rect class="card" x="764" y="24" width="180" height="416" rx="18"/>
     <g id="thermo">
-      <text id="tempTxt" class="tempBig" x="855" y="104">+15 °C</text>
-      <rect class="tube" x="832" y="140" width="30" height="250" rx="15"/>
-      <rect id="merc" x="838" y="245" width="18" height="167" fill="#D84A62"/>
-      <circle cx="847" cy="408" r="22" fill="#D84A62" stroke="#3F3D39" stroke-width="2.6"/>
-      <rect class="tubeLine" x="832" y="140" width="30" height="250" rx="15"/>
+      <text id="tempTxt" class="tempBig" x="854" y="90">+15 °C</text>
+      <rect class="tube" x="810" y="130" width="30" height="250" rx="15"/>
+      <rect id="merc" x="816" y="236" width="18" height="166" fill="url(#mercGrad)"/>
+      <circle cx="825" cy="398" r="22" fill="url(#mercGrad)" stroke="#3F3D39" stroke-width="2.6"/>
+      <rect class="tubeLine" x="810" y="130" width="30" height="250" rx="15"/>
       <g id="scaleTicks"></g>
     </g>
   </svg>
@@ -122,20 +158,20 @@
   const EPS0 = 78, ALB0 = 30; // nykyistä maapalloa vastaavat arvot
 
   // maapallon pinta: loiva kaari, jonka alla maa-aines
-  const X0 = 24, X1 = 756, BOT = 440, EDGE_Y = 380, SAG = 34;
+  const X0 = 24, X1 = 748, BOT = 440, EDGE_Y = 372, SAG = 34;
   const surfY = (x) => EDGE_Y - SAG * Math.sin(Math.PI * (x - X0) / (X1 - X0));
-  const SNOW_H = 17;          // lumipeitteen paksuus, px
+  const SNOW_H = 32;          // lumi- ja jääpeitteen paksuus, px
 
   // lämpömittarin asteikko
-  const T_MIN = -60, T_MAX = 60, TY_BOT = 383, TY_TOP = 148;
+  const T_MIN = -60, T_MAX = 60, TY_BOT = 373, TY_TOP = 138;
   const ty = (t) => TY_BOT - (t - T_MIN) / (T_MAX - T_MIN) * (TY_BOT - TY_TOP);
 
   const PX_PER_W = 0.108;     // nuolen leveys: pikseliä per W/m²
 
   const $ = (id) => document.getElementById(id);
   const el = {
-    land: $("land"), snowL: $("snowL"), snowR: $("snowR"),
-    layerFill: $("layerFill"), scaleTicks: $("scaleTicks"),
+    land: $("land"), crust: $("crust"), snowL: $("snowL"), snowR: $("snowR"),
+    hazeFill: $("hazeFill"), scaleTicks: $("scaleTicks"),
     aSun: $("aSun"), aRefl: $("aRefl"), aSurf: $("aSurf"), aSpace: $("aSpace"), aBack: $("aBack"),
     reflLbl: $("reflLbl"), backLbl: $("backLbl"),
     merc: $("merc"), tempTxt: $("tempTxt"),
@@ -146,39 +182,38 @@
 
   /* ---------------- staattinen grafiikka ---------------- */
   (function drawStatic() {
-    let land = `M${X0} ${BOT}`;
-    for (let x = X0; x <= X1; x += 6) land += ` L${x} ${surfY(x).toFixed(1)}`;
-    land += ` L${X1} ${surfY(X1).toFixed(1)} L${X1} ${BOT} Z`;
-    el.land.setAttribute("d", land);
+    const pts = [];
+    for (let x = X0; x <= X1; x += 6) pts.push(`${x} ${surfY(x).toFixed(1)}`);
+    pts.push(`${X1} ${surfY(X1).toFixed(1)}`);
+    el.land.setAttribute("d", `M${X0} ${BOT} L${pts.join(" L")} L${X1} ${BOT} Z`);
+    el.crust.setAttribute("d", `M${pts.join(" L")}`);
 
     let ticks = "";
     for (let t = T_MIN; t <= T_MAX; t += 20) {
       const y = ty(t).toFixed(1);
-      ticks += `<line class="tick" x1="862" y1="${y}" x2="880" y2="${y}"/>`;
-      ticks += `<text class="tickTxt" x="886" y="${(+y + 6).toFixed(1)}">${t > 0 ? "+" + t : t}</text>`;
+      ticks += `<line class="tick" x1="840" y1="${y}" x2="856" y2="${y}"/>`;
+      ticks += `<text class="tickTxt" x="862" y="${(+y + 5).toFixed(1)}">${t > 0 ? "+" + t : t}</text>`;
     }
     el.scaleTicks.innerHTML = ticks;
   })();
 
-  /* ---------------- lumikalotit navoilta sisäänpäin ---------------- */
+  /* ---------------- lumipeite navoilta sisäänpäin ---------------- */
   function snowPaths(alb) {
-    const capW = Math.min(0.5, (alb / 0.6) * 0.5) * (X1 - X0);
+    // kalotit eivät aivan kohtaa keskellä, jolloin kavennukset eivät mene
+    // päällekkäin ja keskelle jää kapea sula vyöhyke
+    const capW = Math.min(0.46, (alb / 0.6) * 0.46) * (X1 - X0);
     if (capW < 3) return ["", ""];
-    // kiila: yläreuna lumen pinta, alareuna maan pinta -> kapenee nollaan sisäreunassa
+    // lumi- ja jääpeite lepää maan päällä ja kapenee sisäreunassa
     const wedge = (from, dir) => {
-      const pts = [];
+      const top = [], base = [];
       for (let k = 0; k <= 40; k++) {
         const u = k / 40;                           // 0 navalla, 1 sisäreunassa
         const x = from + dir * capW * u;
-        const t = u < 0.8 ? 1 : (1 - u) / 0.2;      // tasapaksu, kapenee vasta lopussa
-        pts.push(`${x.toFixed(1)} ${(surfY(x) - SNOW_H * t).toFixed(1)}`);
+        const t = u < 0.82 ? 1 : (1 - u) / 0.18;    // tasapaksu, kapenee vasta lopussa
+        top.push(`${x.toFixed(1)} ${(surfY(x) - SNOW_H * t).toFixed(1)}`);
+        base.unshift(`${x.toFixed(1)} ${surfY(x).toFixed(1)}`);
       }
-      const back = [];
-      for (let k = 40; k >= 0; k--) {
-        const x = from + dir * capW * (k / 40);
-        back.push(`${x.toFixed(1)} ${surfY(x).toFixed(1)}`);
-      }
-      return `M${pts.join(" L")} L${back.join(" L")} Z`;
+      return `M${top.join(" L")} L${base.join(" L")} Z`;
     };
     return [wedge(X0, 1), wedge(X1, -1)];
   }
@@ -223,22 +258,22 @@
     el.snowL.setAttribute("d", sL);
     el.snowR.setAttribute("d", sR);
 
-    el.aSun.setAttribute("d",   arrowPath(96, 84, 152, surfY(152) - 2, w(m.inSun)));
+    el.aSun.setAttribute("d",   arrowPath(102, 92, 152, surfY(152) - 2, w(m.inSun)));
     el.aRefl.setAttribute("d",  arrowPath(176, surfY(176) - 2, 252, 58, w(m.refl)));
-    el.aSurf.setAttribute("d",  arrowPath(360, surfY(360) - 2, 360, 248, w(m.surf)));
-    el.aSpace.setAttribute("d", arrowPath(360, 184, 360, 52, w(m.F)));
-    el.aBack.setAttribute("d",  arrowPath(660, 248, 660, surfY(660) - 2, w(m.back)));
+    el.aSurf.setAttribute("d",  arrowPath(360, surfY(360) - 2, 360, 252, w(m.surf)));
+    el.aSpace.setAttribute("d", arrowPath(360, 180, 360, 52, w(m.F)));
+    el.aBack.setAttribute("d",  arrowPath(660, 252, 660, surfY(660) - 2, w(m.back)));
 
     el.reflLbl.style.display = m.refl * PX_PER_W < 2 ? "none" : "";
     el.backLbl.style.display = m.back * PX_PER_W < 2 ? "none" : "";
 
-    // ilmakehän sävy tummenee kasvihuonekaasujen määrän mukana
-    el.layerFill.setAttribute("opacity", (0.06 + 0.42 * eps).toFixed(3));
+    // utu tiivistyy kasvihuonekaasujen määrän mukana
+    el.hazeFill.setAttribute("opacity", (0.06 + 0.46 * eps).toFixed(3));
 
     // lämpömittari
     const yT = ty(Math.max(T_MIN, Math.min(T_MAX, m.T)));
     el.merc.setAttribute("y", yT.toFixed(1));
-    el.merc.setAttribute("height", (412 - yT).toFixed(1));
+    el.merc.setAttribute("height", (402 - yT).toFixed(1));
     el.tempTxt.textContent = `${m.T >= 0 ? "+" : "−"}${fmt(Math.abs(m.T), 0)} °C`;
   }
 
