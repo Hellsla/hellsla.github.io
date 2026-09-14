@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kasvihuoneilmiö</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --sun:#F2A81E;     /* auringon säteily */
+    --sunPale:#F7C96B; /* heijastunut osuus */
+    --ir:#D84A62;      /* lämpösäteily */
+    --muted:#bfb7aa;
+  }
+
+  .ground { stroke:var(--ink); stroke-width:3.4; stroke-linecap:round; }
+  .hatch  { stroke:var(--ink); stroke-width:1.2; opacity:.28; }
+  .layer  { stroke:var(--ink); stroke-width:2; stroke-dasharray:8 6; }
+  .tube   { fill:#fff; stroke:var(--ink); stroke-width:2.6; }
+  .tubeLine{ fill:none; stroke:var(--ink); stroke-width:2.6; }
+  .tick   { stroke:var(--ink); stroke-width:1.6; opacity:.55; }
+
+  text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  .flowLabel{ font-size:19px; font-weight:600; }
+  .tempBig  { font-size:46px; font-weight:700; text-anchor:middle; }
+  .tickTxt  { font-size:16px; opacity:.7; }
+
+  /* --- ohjaimet --- */
+  .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
+  .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,22px); flex-wrap:wrap; }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(11px,1.65vw,20px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(190px,20vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.7vw,17px); font-size:clamp(12px,1.7vw,21px); }
+
+  @media (max-width:560px){
+    body.sim-body{ place-items:start center; height:auto; min-height:100%; }
+    .sim-wrap{ width:100vw; height:auto; aspect-ratio:auto; }
+    .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
+    .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
+      width:100%; padding:12px 12px 18px; gap:8px; }
+    .ctrl-row input[type="range"]{ width:100%; }
+    .ctrl-row label{ flex:1 1 45%; }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Kasvihuoneilmiön simulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Kasvihuoneilmiö: säteilytasapaino ja maapallon lämpötila">
+
+    <!-- ============ ILMAKEHÄ JA MAANPINTA ============ -->
+    <rect id="layerFill" x="50" y="250" width="680" height="52" rx="10" fill="#9A958C" opacity="0.1"/>
+    <rect class="layer" x="50" y="250" width="680" height="52" rx="10" fill="none"/>
+    <text class="flowLabel" x="712" y="283" text-anchor="end" opacity=".75">Ilmakehä</text>
+
+    <line class="ground" x1="40" y1="430" x2="740" y2="430"/>
+    <g id="groundHatch"></g>
+
+    <!-- ============ SÄTEILYVIRRAT ============ -->
+    <path id="aSun"   fill="#F2A81E"/>
+    <path id="aRefl"  fill="#F7C96B"/>
+    <path id="aSurf"  fill="#D84A62"/>
+    <path id="aSpace" fill="#D84A62"/>
+    <path id="aBack"  fill="#D84A62"/>
+
+    <text class="flowLabel" x="44"  y="46" fill="#B07A10">Auringon säteily</text>
+    <text id="reflLbl" class="flowLabel" x="262" y="92" fill="#B07A10">Heijastus</text>
+    <text class="flowLabel" x="360" y="46" text-anchor="middle" fill="#A8384C">Avaruuteen</text>
+    <text class="flowLabel" x="404" y="334" fill="#A8384C">Maan lämpösäteily</text>
+    <text id="backLbl" class="flowLabel" x="636" y="406" text-anchor="end" fill="#A8384C">Takaisinsäteily</text>
+
+    <!-- ============ LÄMPÖMITTARI ============ -->
+    <g id="thermo">
+      <text id="tempTxt" class="tempBig" x="845" y="110">+15 °C</text>
+      <rect class="tube" x="830" y="150" width="30" height="252" rx="15"/>
+      <rect id="merc" x="836" y="245" width="18" height="180" fill="#D84A62"/>
+      <circle cx="845" cy="420" r="24" fill="#D84A62" stroke="#3F3D39" stroke-width="2.6"/>
+      <rect class="tubeLine" x="830" y="150" width="30" height="252" rx="15"/>
+      <g id="scaleTicks"></g>
+    </g>
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <div class="ctrl-row">
+      <label><span id="epsLbl">Kasvihuonekaasut 78 %</span>
+        <input id="eps" type="range" min="0" max="100" step="1" value="78" aria-label="Kasvihuonekaasut"></label>
+      <label><span id="albLbl">Albedo 30 %</span>
+        <input id="alb" type="range" min="0" max="60" step="1" value="30" aria-label="Albedo"></label>
+      <button id="reset" class="sim-btn" type="button">Nykyinen maapallo</button>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+
+  const S0 = 1361;            // aurinkovakio, W/m²
+  const SIGMA = 5.670e-8;     // Stefanin-Boltzmannin vakio
+  const EPS0 = 78, ALB0 = 30; // nykyistä maapalloa vastaavat arvot
+
+  // lämpömittarin asteikko
+  const T_MIN = -60, T_MAX = 60, TY_BOT = 395, TY_TOP = 158;
+  const ty = (t) => TY_BOT - (t - T_MIN) / (T_MAX - T_MIN) * (TY_BOT - TY_TOP);
+
+  const PX_PER_W = 0.108;     // nuolen leveys: pikseliä per W/m²
+
+  const $ = (id) => document.getElementById(id);
+  const el = {
+    groundHatch: $("groundHatch"), layerFill: $("layerFill"), scaleTicks: $("scaleTicks"),
+    aSun: $("aSun"), aRefl: $("aRefl"), aSurf: $("aSurf"), aSpace: $("aSpace"), aBack: $("aBack"),
+    reflLbl: $("reflLbl"), backLbl: $("backLbl"),
+    merc: $("merc"), tempTxt: $("tempTxt"),
+    eps: $("eps"), alb: $("alb"), epsLbl: $("epsLbl"), albLbl: $("albLbl"), reset: $("reset")
+  };
+
+  const fmt = (x, d = 0) => x.toFixed(d).replace(".", ",");
+
+  /* ---------------- staattinen grafiikka ---------------- */
+  (function drawStatic() {
+    let hd = "";
+    for (let x = 46; x < 740; x += 22) hd += `M${x} 430 l-10 12 `;
+    el.groundHatch.innerHTML = `<path class="hatch" d="${hd}"/>`;
+
+    let ticks = "";
+    for (let t = T_MIN; t <= T_MAX; t += 20) {
+      const y = ty(t).toFixed(1);
+      ticks += `<line class="tick" x1="860" y1="${y}" x2="878" y2="${y}"/>`;
+      ticks += `<text class="tickTxt" x="884" y="${(+y + 6).toFixed(1)}">${t > 0 ? "+" + t : t}</text>`;
+    }
+    el.scaleTicks.innerHTML = ticks;
+  })();
+
+  /* ---------------- kärjellinen nuoli, leveys = energiavirta ---------------- */
+  function arrowPath(x1, y1, x2, y2, w) {
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy);
+    if (L < 1 || w < 0.8) return "";
+    const ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
+    const hw = Math.max(w * 0.8, 8);               // kärjen puolileveys
+    const hl = Math.min(30, L * 0.35);             // kärjen pituus
+    const bx = x2 - ux * hl, by = y2 - uy * hl;
+    const P = (px, py) => `${px.toFixed(1)} ${py.toFixed(1)}`;
+    return `M${P(x1 + nx * w / 2, y1 + ny * w / 2)} L${P(bx + nx * w / 2, by + ny * w / 2)} `
+         + `L${P(bx + nx * hw, by + ny * hw)} L${P(x2, y2)} L${P(bx - nx * hw, by - ny * hw)} `
+         + `L${P(bx - nx * w / 2, by - ny * w / 2)} L${P(x1 - nx * w / 2, y1 - ny * w / 2)} Z`;
+  }
+
+  /* ---------------- yksikerroksinen ilmakehämalli ----------------
+     Ilmakehä läpäisee auringon säteilyn mutta absorboi osuuden eps
+     maasta lähtevästä lämpösäteilystä ja säteilee sen puoliksi ylös,
+     puoliksi alas. Tasapainossa:
+         sigma·Ts^4 = F / (1 - eps/2),   F = S0(1 - albedo)/4          */
+  function model(eps, alb) {
+    const inSun = S0 / 4;                  // ilmakehän ylärajalle tuleva
+    const refl = alb * inSun;              // heijastuva
+    const F = inSun - refl;                // absorboituva = avaruuteen palaava
+    const surf = F / (1 - eps / 2);        // maanpinnan lämpösäteily
+    const back = eps * surf / 2;           // takaisinsäteily
+    const T = Math.pow(surf / SIGMA, 0.25) - 273.15;
+    return { inSun, refl, F, surf, back, T };
+  }
+
+  /* ---------------- piirto ---------------- */
+  function render() {
+    const eps = parseFloat(el.eps.value) / 100;
+    const alb = parseFloat(el.alb.value) / 100;
+    const m = model(eps, alb);
+    const w = (flux) => flux * PX_PER_W;
+
+    el.aSun.setAttribute("d",   arrowPath(75, 62, 150, 430, w(m.inSun)));
+    el.aRefl.setAttribute("d",  arrowPath(168, 430, 243, 62, w(m.refl)));
+    el.aSurf.setAttribute("d",  arrowPath(360, 430, 360, 306, w(m.surf)));
+    el.aSpace.setAttribute("d", arrowPath(360, 246, 360, 62, w(m.F)));
+    el.aBack.setAttribute("d",  arrowPath(660, 306, 660, 430, w(m.back)));
+
+    el.reflLbl.style.display = m.refl * PX_PER_W < 2 ? "none" : "";
+    el.backLbl.style.display = m.back * PX_PER_W < 2 ? "none" : "";
+
+    // ilmakehän sävy tummenee kasvihuonekaasujen määrän mukana
+    el.layerFill.setAttribute("opacity", (0.06 + 0.42 * eps).toFixed(3));
+
+    // lämpömittari
+    const yT = ty(Math.max(T_MIN, Math.min(T_MAX, m.T)));
+    el.merc.setAttribute("y", yT.toFixed(1));
+    el.merc.setAttribute("height", (425 - yT).toFixed(1));
+    el.tempTxt.textContent = `${m.T >= 0 ? "+" : "−"}${fmt(Math.abs(m.T), 0)} °C`;
+  }
+
+  /* ---------------- ohjaimet ---------------- */
+  function onInput() {
+    el.epsLbl.textContent = `Kasvihuonekaasut ${el.eps.value} %`;
+    el.albLbl.textContent = `Albedo ${el.alb.value} %`;
+    render();
+  }
+  el.eps.addEventListener("input", onInput);
+  el.alb.addEventListener("input", onInput);
+  el.reset.addEventListener("click", () => {
+    el.eps.value = EPS0; el.alb.value = ALB0;
+    onInput();
+  });
+
+  onInput();
+})();
+</script>
+</body>
+</html>
