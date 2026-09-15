@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lauri Hellsten — STEAM Teacher</title>
-  <meta name="description" content="Lauri Hellsten's teaching portfolio: simulations, slides, flashcards, course summaries, timetables, and international presentations from upper-secondary physics teaching." />
+  <title>Lauri Hellsten — Mathematics, Physics &amp; STEAM Education</title>
+  <meta name="description" content="Portfolio of Lauri Hellsten — upper-secondary mathematics and physics teacher, teacher trainer and educational content author. Simulations, slides, course structures, flashcards and international talks." />
   <meta name="theme-color" content="#f7f3ec" />
 
   
@@ -14,15 +14,15 @@
   <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://hellsla.github.io/" />
-  <meta property="og:title" content="Lauri Hellsten — STEAM Teacher" />
-  <meta property="og:description" content="Lauri Hellsten's teaching portfolio: simulations, slides, flashcards, course summaries, timetables, and international presentations from upper-secondary physics teaching." />
+  <meta property="og:title" content="Lauri Hellsten — Mathematics, Physics &amp; STEAM Education" />
+  <meta property="og:description" content="Portfolio of Lauri Hellsten — upper-secondary mathematics and physics teacher, teacher trainer and educational content author. Simulations, slides, course structures, flashcards and international talks." />
   <meta property="og:image" content="https://hellsla.github.io/lauri-avatar.png" />
   <meta property="og:locale" content="en_GB" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lauri Hellsten — STEAM Teacher" />
-  <meta name="twitter:description" content="Lauri Hellsten's teaching portfolio: simulations, slides, flashcards, course summaries, timetables, and international presentations from upper-secondary physics teaching." />
+  <meta name="twitter:title" content="Lauri Hellsten — Mathematics, Physics &amp; STEAM Education" />
+  <meta name="twitter:description" content="Portfolio of Lauri Hellsten — upper-secondary mathematics and physics teacher, teacher trainer and educational content author. Simulations, slides, course structures, flashcards and international talks." />
   <meta name="twitter:image" content="https://hellsla.github.io/lauri-avatar.png" />
 
   <!-- DNS prefetch for linked services -->
@@ -258,6 +258,145 @@
       letter-spacing: -0.025em;
     }
 
+    .hero-roles {
+      position: relative;
+      z-index: 1;
+      margin: 14px 0 0;
+      color: var(--ink-2);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    /* ---------- Credentials ---------- */
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px 18px;
+      padding: 18px 0 24px;
+      border-top: 1px solid var(--line);
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 40ms both;
+    }
+
+    .credential {
+      display: grid;
+      gap: 3px;
+      align-content: start;
+    }
+
+    .credential-value {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.05;
+      color: var(--ink);
+    }
+
+    .credential-label {
+      font-size: 0.76rem;
+      color: var(--ink-3);
+      line-height: 1.35;
+    }
+
+    .credentials-note {
+      grid-column: 1 / -1;
+      margin: 2px 0 0;
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      line-height: 1.6;
+      letter-spacing: 0.04em;
+      color: var(--ink-2);
+    }
+
+    /* ---------- Section labels ---------- */
+    .section-label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--accent-deep);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    /* ---------- Featured work ---------- */
+    .featured {
+      padding: 26px 0 4px;
+      border-top: 1px solid var(--line);
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms both;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .featured-card {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+      transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+    }
+
+    .featured-card:hover {
+      border-color: #d8d0bd;
+      transform: translateY(-2px);
+      box-shadow: 0 1px 2px rgba(20, 23, 30, 0.04), 0 16px 32px -18px rgba(20, 23, 30, 0.10);
+    }
+
+    .featured-kicker {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .featured-card h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 1.12rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.16;
+    }
+
+    .featured-card p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
+    .featured-cta {
+      margin-top: auto;
+      padding-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--accent-deep);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .featured-cta svg {
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: transform 220ms ease;
+    }
+
+    .featured-card:hover .featured-cta svg { transform: translateX(3px); }
+
     /* ---------- Profile ---------- */
     .profile {
       display: grid;
@@ -457,6 +596,7 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
       gap: 12px;
     }
 
@@ -728,6 +868,19 @@
         padding: 8px 10px;
       }
 
+      .credentials {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 16px 0 22px;
+      }
+
+      .credential-value { font-size: 1.16rem; }
+
+      .featured { padding-top: 24px; }
+
+      .featured-grid { grid-template-columns: 1fr; }
+
+      .featured-card { padding: 15px 16px; }
+
       .materials { padding-top: 26px; }
 
       .grid { grid-template-columns: 1fr; }
@@ -790,8 +943,8 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Lauri Hellsten",
-    "jobTitle": "STEAM Teacher",
-    "description": "Upper-secondary physics and STEAM teacher with 15 years of experience, based in Finland.",
+    "jobTitle": ["Mathematics and Physics Teacher", "Teacher Trainer", "Educational Content Author"],
+    "description": "Mathematics and physics teacher, teacher trainer and educational content author with 15 years of experience in upper-secondary education, assessment and digital pedagogy. Based in Espoo, Finland.",
     "url": "https://hellsla.github.io/",
     "image": "https://hellsla.github.io/lauri-avatar.png",
     "sameAs": [
@@ -802,7 +955,11 @@
       "@type": "EducationalOrganization",
       "name": "Espoo Yhteislyseo"
     },
-    "knowsAbout": ["Physics", "STEAM education", "Formative assessment", "Flipped learning", "ICT in education"]
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Helsinki"
+    },
+    "knowsAbout": ["Mathematics", "Physics", "STEAM education", "Formative assessment", "Flipped learning", "Dynamic geometry", "GeoGebra", "ICT and AI in education"]
   }
   </script>
 
@@ -821,6 +978,7 @@
       <div class="header-right">
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
+          <a href="#work">Work</a>
           <a href="#materials">Materials</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -833,8 +991,33 @@
 
     <main id="top" tabindex="-1">
       <section class="hero">
-        <span class="eyebrow">Teaching portfolio · 2026</span>
-        <p class="lede">Fifteen years of STEAM teaching — in materials, slides, and simulations.</p>
+        <span class="eyebrow">Mathematics · Physics · STEAM · Digital pedagogy</span>
+        <p class="lede">Teaching mathematics and physics. Designing learning. Sharing what works.</p>
+        <p class="hero-roles">Upper-secondary teacher · Teacher trainer · Educational content author</p>
+      </section>
+
+      <section class="credentials" aria-label="Professional summary">
+        <div class="credential">
+          <span class="credential-value">15+ years</span>
+          <span class="credential-label">Teaching mathematics and physics in upper secondary school</span>
+        </div>
+
+        <div class="credential">
+          <span class="credential-value">40+</span>
+          <span class="credential-label">Digital textbooks and learning materials for e-Oppi, MFKA and Studeo</span>
+        </div>
+
+        <div class="credential">
+          <span class="credential-value">400+</span>
+          <span class="credential-label">Mathematics and physics videos produced for Opetus.tv</span>
+        </div>
+
+        <div class="credential">
+          <span class="credential-value">Since 2013</span>
+          <span class="credential-label">In-service teacher trainer and international speaker</span>
+        </div>
+
+        <p class="credentials-note">Assistant member, Matriculation Examination Board · Part-time teacher, University of Helsinki · Physics Teacher of the Year 2025</p>
       </section>
 
       <section id="about" class="profile" aria-label="About">
@@ -855,33 +1038,27 @@
 
           <div class="bio-copy" aria-label="Biography">
             <p>
-              I am a STEAM teacher at <a href="https://www.espoo.fi/fi/espoon-yhteislyseo" target="_blank" rel="noopener noreferrer">Espoo Yhteislyseo upper secondary school</a> with a strong commitment to developing teaching practice. For the past 15 years, hands-on, student-activating pedagogy has been at the heart of my work.
+              I am a mathematics and physics teacher, teacher trainer and educational content author based in Espoo, Finland. I teach at <a href="https://www.espoo.fi/fi/espoon-yhteislyseo" target="_blank" rel="noopener noreferrer">Espoo Yhteislyseo upper secondary school</a>, teach dynamic geometry courses at the University of Helsinki, and serve as an assistant member of the Matriculation Examination Board.
             </p>
 
             <p>
-              As a teacher, I have actively developed STEAM education, formative assessment, flipped learning, and the meaningful use of ICT in teaching and learning. I have also written and produced a wide range of learning materials for both teachers and students.
+              My work focuses on STEAM education, formative assessment, flipped learning and meaningful uses of technology and AI in teaching. I am especially interested in designing learning environments where students can experiment, receive feedback within their zone of proximal development, and gradually take more responsibility for their own learning.
             </p>
 
             <p>
-              Formative assessment is especially important to me. I aim to support each student within their zone of proximal development by offering feedback, guidance, and appropriately challenging tasks that help them move forward with confidence.
-            </p>
-
-            <p>
-              In addition to my teaching role, I serve as the school’s international relations coordinator, working with Erasmus+, Nordplus, and other international projects. STEAM outreach and international collaboration are particularly meaningful to me, as I believe that together we are more than the sum of our parts.
-            </p>
-
-            <p>
-              I have also completed the Finnish Educational Administration Qualification, which has strengthened my understanding of school governance, educational legislation, public administration, finance, data protection, and the leadership responsibilities involved in school management.
+              I also coordinate my school’s international work — Erasmus+, Nordplus and other projects — because together we are more than the sum of our parts.
             </p>
           </div>
 
           <ul class="facts" aria-label="Focus areas">
+            <li>Mathematics &amp; physics</li>
             <li>Textbook author</li>
+            <li>Teacher trainer</li>
             <li>STEAM</li>
             <li>Formative assessment</li>
             <li>Zone of proximal development</li>
             <li>Flipped learning</li>
-            <li>ICT in education</li>
+            <li>ICT and AI in education</li>
             <li>International relations coordinator</li>
             <li>Educational Administration Qualification</li>
           </ul>
@@ -902,7 +1079,35 @@
         </div>
       </section>
 
+      <section id="work" class="featured" aria-label="Selected work">
+        <span class="section-label">§ 02 — Selected work</span>
+
+        <div class="featured-grid">
+          <a class="featured-card" href="FY03_mekaanisen_energian_sailyminen.html">
+            <span class="featured-kicker">Interactive physics</span>
+            <h3>Conservation of mechanical energy</h3>
+            <p>A simulation for watching kinetic and potential energy trade places — in free fall, on a pendulum and along a track — with friction the student can adjust.</p>
+            <span class="featured-cta">Open the simulation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="featured-card" href="https://slides.com/opetustv/flare1/fullscreen" target="_blank" rel="noopener noreferrer">
+            <span class="featured-kicker">AI and reflective learning</span>
+            <h3>FLARE</h3>
+            <p>Flipped Learning and AI for Reflective Education: an international teacher-development project I led for the ASEFClassNet EmpowerED network in 2025.</p>
+            <span class="featured-cta">View the presentation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="featured-card" href="FY03_K2026_Timetable.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="featured-kicker">Formative assessment</span>
+            <h3>Course learning structures</h3>
+            <p>Weekly plans that build learning objectives, self-assessment and feedback into the ordinary rhythm of a course rather than bolting them on at the end.</p>
+            <span class="featured-cta">Open an example (PDF) <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </section>
+
       <section id="materials" class="materials">
+        <span class="section-label">§ 03 — Materials</span>
         <p class="materials-note">Most materials below are in Finnish; some presentations are in English.</p>
 
         <div class="grid">
@@ -1271,7 +1476,50 @@
             </div>
           </article>
 
-          <!-- 02: Slides -->
+          <!-- 02: Mathematics -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 7h7M7.5 3.5v7"/>
+                    <path d="M13 7h7"/>
+                    <path d="M4 17h7M4 20.5l7-7"/>
+                    <path d="M13 15.5h7M13 19h7"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Mathematics</div>
+                  <h3>Mathematics &amp; learning design</h3>
+                </div>
+              </div>
+              <div class="category-num">02</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="https://opetus.tv" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">Opetus.tv</div>
+                  <div class="item-sub">400+ mathematics and physics videos for upper-secondary courses</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/geogebra-koulutus-k2025/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">GeoGebra training for teachers</div>
+                  <div class="item-sub">Dynamic geometry in the classroom · In-service training · Spring 2025</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 03: Slides -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -1287,7 +1535,7 @@
                   <h3>Slides</h3>
                 </div>
               </div>
-              <div class="category-num">02</div>
+              <div class="category-num">03</div>
             </div>
 
             <div class="links">
@@ -1372,7 +1620,7 @@
             </div>
           </article>
 
-          <!-- 03: Flashcards -->
+          <!-- 04: Flashcards -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -1387,7 +1635,7 @@
                   <h3>Flashcards</h3>
                 </div>
               </div>
-              <div class="category-num">03</div>
+              <div class="category-num">04</div>
             </div>
 
             <div class="links">
@@ -1442,7 +1690,7 @@
             </div>
           </article>
 
-          <!-- 04: Course summaries -->
+          <!-- 05: Course summaries -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -1457,7 +1705,7 @@
                   <h3>Course summaries</h3>
                 </div>
               </div>
-              <div class="category-num">04</div>
+              <div class="category-num">05</div>
             </div>
 
             <div class="links">
@@ -1512,7 +1760,7 @@
             </div>
           </article>
 
-          <!-- 05: Course timetables -->
+          <!-- 06: Course timetables -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -1528,7 +1776,7 @@
                   <h3>Course timetables</h3>
                 </div>
               </div>
-              <div class="category-num">05</div>
+              <div class="category-num">06</div>
             </div>
 
             <div class="links">
@@ -1573,7 +1821,7 @@
             </div>
           </article>
 
-          <!-- 06: International presentations -->
+          <!-- 07: International presentations -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -1590,7 +1838,7 @@
                   <h3>Talks &amp; presentations</h3>
                 </div>
               </div>
-              <div class="category-num">06</div>
+              <div class="category-num">07</div>
             </div>
 
             <div class="links">
@@ -1598,16 +1846,6 @@
                 <div>
                   <div class="item-title">AI for Reflective Education</div>
                   <div class="item-sub">Bridging mathematics and technology for deeper learning · Riga, 2026</div>
-                </div>
-                <span class="item-arrow">
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </span>
-              </a>
-
-              <a class="item" href="https://slides.com/opetustv/geogebra-koulutus-k2025/fullscreen" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <div class="item-title">GeoGebra training for teachers</div>
-                  <div class="item-sub">Teacher training · Finland · Spring 2025</div>
                 </div>
                 <span class="item-arrow">
                   <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -1645,7 +1883,7 @@
             </div>
           </article>
 
-          <!-- 07: Classroom tools -->
+          <!-- 08: Classroom tools -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -1661,7 +1899,7 @@
                   <h3>Classroom tools</h3>
                 </div>
               </div>
-              <div class="category-num">07</div>
+              <div class="category-num">08</div>
             </div>
 
             <div class="links">
@@ -1682,7 +1920,7 @@
 
     <footer>
       <div class="footer-quote">&copy; Lauri Hellsten</div>
-      <div class="footer-meta">Last updated · Spring 2026</div>
+      <div class="footer-meta">Updated · September 2026</div>
     </footer>
   </div>
   <svg class="robot-walker" viewBox="-10 -17 100 146" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
