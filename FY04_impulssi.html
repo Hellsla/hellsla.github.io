@@ -20,6 +20,7 @@
   .cartBody{ fill:#f8fbff; stroke:var(--ink); stroke-width:2.6; }
   .cartTrim{ fill:var(--blue); stroke:var(--ink); stroke-width:2; }
   .wheel  { fill:var(--ink); }
+  .cartName{ font-size:17px; font-weight:700; text-anchor:middle; fill:var(--ink); }
   .padEdge{ stroke:var(--ink); stroke-width:2.4; stroke-linejoin:round; }
   .padRib { stroke:var(--ink); stroke-width:1.2; opacity:.35; }
 
@@ -30,8 +31,8 @@
   .box    { fill:none; stroke:var(--ink); stroke-width:2; }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .lbl     { font-size:18px; font-weight:600; }
-  .small   { font-size:16px; }
+  .lbl     { font-size:20px; font-weight:600; }
+  .small   { font-size:18px; }
   .result  { font-size:21px; font-weight:700; }
   .axisName{ font-size:22px; font-weight:700; }
 
@@ -42,6 +43,9 @@
   .ctrl-row input[type="range"]{ width:min(165px,17vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
   .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.6vw,16px); font-size:clamp(12px,1.6vw,20px); }
   .sim-btn.is-active{ background:var(--ink); color:#fff; }
+  .softEnds{ display:flex; justify-content:space-between; width:min(165px,17vw);
+    font-size:clamp(10px,1.45vw,18px); opacity:.65; letter-spacing:.04em; }
+  #m2Box[data-hidden="true"]{ visibility:hidden; pointer-events:none; }
 
   @media (max-width:560px){
     body.sim-body{ place-items:start center; height:auto; min-height:100%; }
@@ -49,7 +53,8 @@
     .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
     .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
       width:100%; padding:12px 12px 18px; gap:8px; }
-    .ctrl-row input[type="range"]{ width:100%; }
+    .ctrl-row input[type="range"], .softEnds{ width:100%; }
+    #m2Box[data-hidden="true"]{ display:none; }
     .ctrl-row label{ flex:1 1 45%; }
   }
 </style>
@@ -63,7 +68,7 @@
       <line class="ground" x1="40" y1="330" x2="392" y2="330"/>
       <g id="groundHatch"></g>
 
-      <rect class="wall" x="352" y="120" width="40" height="210" rx="4"/>
+      <rect id="wall" class="wall" x="352" y="120" width="40" height="210" rx="4"/>
 
       <path id="pad" class="padEdge"/>
       <g id="padRibs"></g>
@@ -73,6 +78,14 @@
         <rect class="cartTrim" x="-20" y="-27" width="40" height="9" rx="3"/>
         <circle class="wheel" cx="-16" cy="-1" r="7"/>
         <circle class="wheel" cx="16" cy="-1" r="7"/>
+        <text class="cartName" x="0" y="-12">A</text>
+      </g>
+      <g id="cartB">
+        <rect class="cartBody" x="0" y="-34" width="60" height="30" rx="7"/>
+        <rect class="cartTrim" x="10" y="-27" width="40" height="9" rx="3"/>
+        <circle class="wheel" cx="14" cy="-1" r="7"/>
+        <circle class="wheel" cx="46" cy="-1" r="7"/>
+        <text class="cartName" x="30" y="-12">B</text>
       </g>
 
       <!-- vastavoimaparin nuolet -->
@@ -83,10 +96,10 @@
 
       <!-- tulokset -->
       <g id="results">
-        <rect id="boxI"  class="box" x="40" y="56" width="302" height="36" rx="8"/>
-        <text id="txtI"  class="result" x="52" y="81">I (pinta-ala) = –</text>
-        <rect id="boxP"  class="box" x="40" y="100" width="302" height="36" rx="8"/>
-        <text id="txtP"  class="result" x="52" y="125">Δp = m·v₀ = –</text>
+        <rect id="boxI"  class="box" x="40" y="54" width="320" height="38" rx="8"/>
+        <text id="txtI"  class="result" x="54" y="80">I (pinta-ala) = –</text>
+        <rect id="boxP"  class="box" x="40" y="100" width="320" height="38" rx="8"/>
+        <text id="txtP"  class="result" x="54" y="126">Δp = m·v₀ = –</text>
       </g>
     </g>
 
@@ -112,15 +125,22 @@
 
   <section class="sim-controls" aria-label="Säätimet">
     <div class="ctrl-row">
+      <button id="modeWall" class="sim-btn is-active" type="button">Seinä</button>
+      <button id="modeCart" class="sim-btn" type="button">Kaksi vaunua</button>
+      <button id="play" class="sim-btn" type="button">Käynnistä</button>
+      <button id="clear" class="sim-btn" type="button">Tyhjennä</button>
+      <button id="react" class="sim-btn" type="button">Näytä vastavoima</button>
+    </div>
+    <div class="ctrl-row">
       <label><span id="vLbl">Alkunopeus 4,0 m/s</span>
         <input id="v0" type="range" min="2" max="6" step="0.5" value="4" aria-label="Alkunopeus"></label>
       <label><span id="mLbl">Massa 2,0 kg</span>
         <input id="mass" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Massa"></label>
-      <label><span id="dtLbl">KOVA ← Pysähtymisaika 0,15 s → PEHMEÄ</span>
-        <input id="dt" type="range" min="0.05" max="0.30" step="0.01" value="0.15" aria-label="Pysähtymisaika"></label>
-      <button id="play" class="sim-btn" type="button">Käynnistä</button>
-      <button id="clear" class="sim-btn" type="button">Tyhjennä</button>
-      <button id="react" class="sim-btn" type="button">Näytä vastavoima</button>
+      <label id="m2Box"><span id="m2Lbl">Massa B 2,0 kg</span>
+        <input id="mass2" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Massa B"></label>
+      <label><span id="dtLbl">Pehmeys: Δt = 0,15 s</span>
+        <input id="dt" type="range" min="0.05" max="0.30" step="0.01" value="0.15" aria-label="Pysähtymisaika">
+        <span class="softEnds"><span>KOVA</span><span>PEHMEÄ</span></span></label>
     </div>
   </section>
 </main>
@@ -130,8 +150,9 @@
   "use strict";
 
   /* ---------------- mitat ---------------- */
-  const PX_M = 200;                 // pikseliä metriä kohti
+  const PX_M = 110;                 // pikseliä metriä kohti
   const WALL_X = 352, GROUND = 330;
+  const B_X0 = 250, CART_W = 60, SCENE_R = 450;   // toisen vaunun lähtöpaikka
   const RUNWAY = 0.35;              // kiihdytysmatka ennen kosketusta, m
   const SLOWMO = 8;                 // 1 s fysiikkaa = 8 s ruudulla
 
@@ -140,11 +161,12 @@
 
   const $ = (id) => document.getElementById(id);
   const el = {};
-  for (const id of ["groundHatch","pad","padRibs","cart","pairArrows","arrOnCart","arrOnWall",
+  for (const id of ["groundHatch","pad","padRibs","cart","cartB","wall","pairArrows","arrOnCart","arrOnWall",
                     "boxI","txtI","boxP","txtP","areaPrev","areaNow","areaReact",
                     "curvePrev","curveNow","curveReact","axisT","axisF","nameF","nameT",
                     "legNow","legPrev","legReact",
-                    "v0","mass","dt","vLbl","mLbl","dtLbl","play","clear","react"]) el[id] = $(id);
+                    "v0","mass","mass2","dt","vLbl","mLbl","m2Lbl","m2Box","dtLbl",
+                    "play","clear","react","modeWall","modeCart"]) el[id] = $(id);
 
   const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",");
 
@@ -158,25 +180,31 @@
      Puolisiniheräte F(t) = Fmax·sin(pi·t/dt) antaa sileän, realistisen
      voimapulssin. Siitä seuraa v(t) = v0(1 + cos(pi·t/dt))/2, joka menee
      nollaan täsmälleen hetkellä dt, ja tunkeuma s(dt) = v0·dt/2.       */
-  function buildRun(v0, m, dt) {
-    const Fmax = Math.PI * m * v0 / (2 * dt);
-    const N = 240, ts = [], Fs = [], ss = [];
+  function buildRun(v0, m1, m2, dt, two) {
+    // seinä on erikoistapaus m2 -> ääretön: silloin I = m1·v0
+    const I0 = two ? (m1 * m2 * v0) / (m1 + m2) : m1 * v0;
+    const Fmax = Math.PI * I0 / (2 * dt);
+    const N = 240, ts = [], Fs = [], s1 = [], s2 = [];
     for (let i = 0; i <= N; i++) {
       const t = dt * i / N;
+      const G = t / 2 - (dt / (2 * Math.PI)) * Math.sin(Math.PI * t / dt);  // integroitu vaimennus
       ts.push(t);
       Fs.push(Fmax * Math.sin(Math.PI * t / dt));
-      ss.push(v0 * (t / 2 + (dt / (2 * Math.PI)) * Math.sin(Math.PI * t / dt)));
+      s1.push(v0 * t - (I0 / m1) * G);
+      s2.push(two ? (I0 / m2) * G : 0);
     }
     // impulssi lasketaan kuvaajan pinta-alana (puolisuunnikassääntö),
     // ei kaavasta - näin "I = pinta-ala" on tosi eikä pelkkä väite
     let I = 0;
     for (let i = 1; i <= N; i++) I += (Fs[i] + Fs[i - 1]) / 2 * (ts[i] - ts[i - 1]);
-    return { v0, m, dt, Fmax, ts, Fs, ss, I, dp: m * v0, depth: v0 * dt / 2 };
+    return { v0, m1, m2, dt, two, Fmax, ts, Fs, s1, s2, I, dp: I0,
+             u: two ? m1 * v0 / (m1 + m2) : 0, depth: v0 * dt / 2 };
   }
 
   /* ---------------- tila ---------------- */
   let run = null, prev = null, lastDone = null;
-  let phase = "idle", tw = 0, showReact = false;
+  let phase = "idle", tw = 0, showReact = false, twoCarts = false;
+  let aFront = 0, bLeft = WALL_X;      // vaunun A etureuna ja esteen vasen reuna
 
   const gx = (t) => GX0 + (t / T_AXIS) * (GX1 - GX0);
   let FSCALE = 1, GY0 = GBOT, AMP = GBOT - GTOP;
@@ -207,11 +235,15 @@
   }
 
   /* ---------------- näyttämön piirto ---------------- */
-  function drawScene(pen, F) {
-    const T0 = run ? run.depth * PX_M : 40;          // suojan paksuus = koko tunkeuma
-    const padNow = Math.max(4, T0 - pen * PX_M);     // jäljellä oleva paksuus
-    const x0 = WALL_X - padNow;
-    el.pad.setAttribute("d", `M${x0.toFixed(1)} 168 L${WALL_X} 168 L${WALL_X} ${GROUND} L${x0.toFixed(1)} ${GROUND} Z`);
+  function drawScene(F) {
+    const two = !!(run && run.two);
+    el.wall.style.display = two ? "none" : "";
+    el.cartB.style.display = two ? "" : "none";
+
+    const padNow = Math.max(3, bLeft - aFront);
+    const padTop = two ? GROUND - 36 : 168;
+    el.pad.setAttribute("d",
+      `M${aFront.toFixed(1)} ${padTop} L${bLeft.toFixed(1)} ${padTop} L${bLeft.toFixed(1)} ${GROUND} L${aFront.toFixed(1)} ${GROUND} Z`);
     // pehmeä suoja on vaaleampi, kova tummempi
     const soft = run ? (run.dt - 0.05) / 0.25 : 0.5;
     const mix = (a, b) => Math.round(a + (b - a) * soft);
@@ -219,20 +251,21 @@
 
     let ribs = "";
     for (let k = 1; k <= 6; k++) {
-      const rx = x0 + (padNow * k) / 7;
-      ribs += `M${rx.toFixed(1)} 174 L${rx.toFixed(1)} ${GROUND - 6} `;
+      const rx = aFront + (padNow * k) / 7;
+      ribs += `M${rx.toFixed(1)} ${padTop + 6} L${rx.toFixed(1)} ${GROUND - 6} `;
     }
     el.padRibs.innerHTML = `<path class="padRib" d="${ribs}"/>`;
 
-    const cartFront = x0;
-    el.cart.setAttribute("transform", `translate(${(cartFront - 30).toFixed(1)},${GROUND - 8})`);
+    el.cart.setAttribute("transform", `translate(${(aFront - 30).toFixed(1)},${GROUND - 8})`);
+    if (two) el.cartB.setAttribute("transform", `translate(${bLeft.toFixed(1)},${GROUND - 8})`);
 
     // vastavoimapari
     if (showReact && F > 0) {
       const L = 18 + (F / FSCALE) * 80;
-      const ay = GROUND - 22;                        // vaunun ja seinän korkeudella
-      el.arrOnCart.setAttribute("d", arrow(cartFront - 64, ay, cartFront - 64 - L, ay, 13));
-      el.arrOnWall.setAttribute("d", arrow(WALL_X + 4, ay, WALL_X + 4 + Math.min(L, 46), ay, 13));
+      const ay = GROUND - 22;
+      el.arrOnCart.setAttribute("d", arrow(aFront - 64, ay, aFront - 64 - L, ay, 13));
+      const wx = two ? bLeft + CART_W + 4 : WALL_X + 4;
+      el.arrOnWall.setAttribute("d", arrow(wx, ay, wx + Math.min(L, 46), ay, 13));
       el.pairArrows.style.display = "";
     } else {
       el.pairArrows.style.display = "none";
@@ -252,7 +285,7 @@
   }
 
   /* ---------------- kokonaispiirto ---------------- */
-  function render(idx, pen, F) {
+  function render(idx, F) {
     layoutGraph();
 
     el.curveNow.setAttribute("d", run ? curvePath(run, idx, 1) : "");
@@ -269,19 +302,38 @@
     el.legReact.setAttribute("y", GTOP + 68);
     el.legNow.textContent = run ? `nyt:  F max ${fmt(run.Fmax, 0)} N,  Δt ${fmt(run.dt, 2)} s,  I ${fmt(run.I, 2)} Ns` : "";
     el.legPrev.textContent = prev ? `edellinen:  F max ${fmt(prev.Fmax, 0)} N,  Δt ${fmt(prev.dt, 2)} s,  I ${fmt(prev.I, 2)} Ns` : "";
-    el.legReact.textContent = showR ? `vaunu → seinä:  I = −${fmt(run.I, 2)} Ns` : "";
+    el.legReact.textContent = showR
+      ? (run.two ? `vaunu A → B:  I = −${fmt(run.I, 2)} Ns` : `vaunu → seinä:  I = −${fmt(run.I, 2)} Ns`)
+      : "";
 
-    drawScene(pen, F);
+    drawScene(F);
   }
 
   function showResults(done) {
     if (!run || !done) {
       el.txtI.textContent = "I (pinta-ala) = –";
-      el.txtP.textContent = "Δp = m·v₀ = –";
+      el.txtP.textContent = twoCarts ? "|Δp₁| = |Δp₂| = –" : "Δp = m·v₀ = –";
       return;
     }
     el.txtI.textContent = `I (pinta-ala) = ${fmt(run.I, 2)} Ns`;
-    el.txtP.textContent = `Δp = m·v₀ = ${fmt(run.dp, 2)} Ns`;
+    el.txtP.textContent = run.two
+      ? `|Δp₁| = |Δp₂| = ${fmt(run.dp, 2)} Ns`
+      : `Δp = m·v₀ = ${fmt(run.dp, 2)} Ns`;
+  }
+
+  /* ---------------- paikat ---------------- */
+  function setPos(idx, gap, drift) {
+    const two = !!(run && run.two);
+    const anchor = two ? B_X0 : WALL_X;              // esteen lähtöpaikka
+    const T0 = (run ? run.depth : 0.2) * PX_M;
+    const dr = (drift || 0) * PX_M;
+    if (gap) {                                       // lähestymisvaihe
+      aFront = anchor - T0 + gap * PX_M;
+      bLeft = anchor;
+    } else {
+      aFront = anchor - T0 + run.s1[idx] * PX_M + dr;
+      bLeft = anchor + run.s2[idx] * PX_M + dr;
+    }
   }
 
   /* ---------------- animaatio ---------------- */
@@ -293,53 +345,80 @@
 
     if (phase === "approach") {
       tw += d;
-      const total = (RUNWAY / run.v0) * SLOWMO;
-      const f = Math.min(1, tw / total);
-      const pen = -(RUNWAY * (1 - f));           // negatiivinen = ei vielä kosketuksissa
-      render(0, pen, 0);
+      const f = Math.min(1, tw / ((RUNWAY / run.v0) * SLOWMO));
+      setPos(0, -(RUNWAY * (1 - f)));
+      render(0, 0);
       if (f >= 1) { phase = "impact"; tw = 0; }
     } else if (phase === "impact") {
       tw += d;
       const tPhys = tw / SLOWMO;
       const N = run.ts.length - 1;
       if (tPhys >= run.dt) {
-        render(N, run.ss[N], 0);
+        setPos(N, 0);
+        render(N, 0);
         showResults(true);
         lastDone = run;
-        phase = "done";
-        el.play.textContent = "Käynnistä";
+        phase = run.two ? "drift" : "done";
+        tw = 0;
+        if (phase === "done") el.play.textContent = "Käynnistä";
       } else {
         const idx = Math.min(N, Math.round((tPhys / run.dt) * N));
-        render(idx, run.ss[idx], run.Fs[idx]);
+        setPos(idx, 0);
+        render(idx, run.Fs[idx]);
       }
+    } else if (phase === "drift") {
+      // törmäyksen jälkeen vaunut liikkuvat yhdessä nopeudella u
+      tw += d;
+      const N = run.ts.length - 1;
+      setPos(N, 0, (tw / SLOWMO) * run.u);
+      render(N, 0);
+      if (tw > 1.0 || bLeft + CART_W > SCENE_R) { phase = "done"; el.play.textContent = "Käynnistä"; }
     }
     requestAnimationFrame(tick);
   }
 
   /* ---------------- ohjaimet ---------------- */
+  const newRun = () => buildRun(parseFloat(el.v0.value), parseFloat(el.mass.value),
+                                parseFloat(el.mass2.value), parseFloat(el.dt.value), twoCarts);
+
   function start() {
     prev = lastDone;                            // edellinen valmistunut ajo jää vertailuksi
-    run = buildRun(parseFloat(el.v0.value), parseFloat(el.mass.value), parseFloat(el.dt.value));
+    run = newRun();
     phase = "approach"; tw = 0;
     showResults(false);
-    render(0, -RUNWAY, 0);
+    setPos(0, -RUNWAY);
+    render(0, 0);
     el.play.textContent = "Ajossa…";
     last = performance.now();
   }
 
   function onInput() {
     el.vLbl.textContent = `Alkunopeus ${fmt(+el.v0.value, 1)} m/s`;
-    el.mLbl.textContent = `Massa ${fmt(+el.mass.value, 1)} kg`;
-    el.dtLbl.textContent = `KOVA ← Pysähtymisaika ${fmt(+el.dt.value, 2)} s → PEHMEÄ`;
+    el.mLbl.textContent = twoCarts ? `Massa A ${fmt(+el.mass.value, 1)} kg` : `Massa ${fmt(+el.mass.value, 1)} kg`;
+    el.m2Lbl.textContent = `Massa B ${fmt(+el.mass2.value, 1)} kg`;
+    el.dtLbl.textContent = `Pehmeys: Δt = ${fmt(+el.dt.value, 2)} s`;
+    el.m2Box.dataset.hidden = twoCarts ? "false" : "true";
     if (phase === "idle" || phase === "done") {
-      run = buildRun(parseFloat(el.v0.value), parseFloat(el.mass.value), parseFloat(el.dt.value));
+      run = newRun();
       prev = lastDone;                          // vertailukäyrä jää näkyviin
       phase = "idle";
       showResults(false);
-      render(0, -RUNWAY, 0);
+      setPos(0, -RUNWAY);
+      render(0, 0);
     }
   }
-  for (const id of ["v0", "mass", "dt"]) el[id].addEventListener("input", onInput);
+  for (const id of ["v0", "mass", "mass2", "dt"]) el[id].addEventListener("input", onInput);
+
+  function setMode(two) {
+    if (twoCarts === two) return;
+    twoCarts = two;
+    el.modeWall.classList.toggle("is-active", !two);
+    el.modeCart.classList.toggle("is-active", two);
+    prev = null; lastDone = null; phase = "idle";   // tilanteet eivät ole vertailukelpoisia
+    onInput();
+  }
+  el.modeWall.addEventListener("click", () => setMode(false));
+  el.modeCart.addEventListener("click", () => setMode(true));
 
   el.play.addEventListener("click", () => { if (phase !== "approach" && phase !== "impact") start(); });
   el.clear.addEventListener("click", () => {
@@ -348,7 +427,7 @@
   el.react.addEventListener("click", () => {
     showReact = !showReact;
     el.react.classList.toggle("is-active", showReact);
-    render(phase === "done" ? run.ts.length - 1 : 0, phase === "done" ? run.depth : -RUNWAY, 0);
+    render(phase === "done" ? run.ts.length - 1 : 0, 0);
     showResults(phase === "done");
   });
 
