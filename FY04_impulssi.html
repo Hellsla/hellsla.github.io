@@ -31,9 +31,9 @@
   .box    { fill:none; stroke:var(--ink); stroke-width:2; }
 
   text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .lbl     { font-size:20px; font-weight:600; }
-  .small   { font-size:18px; }
-  .result  { font-size:21px; font-weight:700; }
+  .peak    { font-size:21px; font-weight:700; text-anchor:middle; }
+  .areaL   { font-size:22px; font-weight:700; text-anchor:middle; }
+  .result  { font-size:24px; font-weight:700; }
   .axisName{ font-size:22px; font-weight:700; }
 
   /* --- ohjaimet --- */
@@ -96,10 +96,10 @@
 
       <!-- tulokset -->
       <g id="results">
-        <rect id="boxI"  class="box" x="40" y="54" width="320" height="38" rx="8"/>
-        <text id="txtI"  class="result" x="54" y="80">I (pinta-ala) = –</text>
-        <rect id="boxP"  class="box" x="40" y="100" width="320" height="38" rx="8"/>
-        <text id="txtP"  class="result" x="54" y="126">Δp = m·v₀ = –</text>
+        <rect id="boxI"  class="box" x="40" y="54" width="232" height="40" rx="8"/>
+        <text id="txtI"  class="result" x="54" y="80">I = –</text>
+        <rect id="boxP"  class="box" x="40" y="102" width="232" height="40" rx="8"/>
+        <text id="txtP"  class="result" x="54" y="126">Δp = –</text>
       </g>
     </g>
 
@@ -117,9 +117,11 @@
       <text id="nameF" class="axisName" x="446" y="96">F</text>
       <text id="nameT" class="axisName" x="928" y="0">t</text>
 
-      <text id="legNow"  class="lbl"   x="480" y="0" fill="#A8384C"></text>
-      <text id="legPrev" class="small" x="480" y="0" fill="#6F6A62"></text>
-      <text id="legReact" class="small" x="480" y="0" fill="#22687F"></text>
+      <text id="peakNow"  class="peak" fill="#A8384C"></text>
+      <text id="peakPrev" class="peak" fill="#6F6A62"></text>
+      <text id="areaNowL" class="areaL" fill="#A8384C"></text>
+      <text id="areaPrevL" class="areaL" fill="#6F6A62"></text>
+      <text id="areaReactL" class="areaL" fill="#22687F"></text>
     </g>
   </svg>
 
@@ -132,13 +134,13 @@
       <button id="react" class="sim-btn" type="button">Näytä vastavoima</button>
     </div>
     <div class="ctrl-row">
-      <label><span id="vLbl">Alkunopeus 4,0 m/s</span>
+      <label><span id="vLbl">v₀ = 4,0 m/s</span>
         <input id="v0" type="range" min="2" max="6" step="0.5" value="4" aria-label="Alkunopeus"></label>
-      <label><span id="mLbl">Massa 2,0 kg</span>
+      <label><span id="mLbl">m = 2,0 kg</span>
         <input id="mass" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Massa"></label>
-      <label id="m2Box"><span id="m2Lbl">Massa B 2,0 kg</span>
+      <label id="m2Box"><span id="m2Lbl">m₂ = 2,0 kg</span>
         <input id="mass2" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Massa B"></label>
-      <label><span id="dtLbl">Pehmeys: Δt = 0,15 s</span>
+      <label><span id="dtLbl">Δt = 0,15 s</span>
         <input id="dt" type="range" min="0.05" max="0.30" step="0.01" value="0.15" aria-label="Pysähtymisaika">
         <span class="softEnds"><span>KOVA</span><span>PEHMEÄ</span></span></label>
     </div>
@@ -164,7 +166,7 @@
   for (const id of ["groundHatch","pad","padRibs","cart","cartB","wall","pairArrows","arrOnCart","arrOnWall",
                     "boxI","txtI","boxP","txtP","areaPrev","areaNow","areaReact",
                     "curvePrev","curveNow","curveReact","axisT","axisF","nameF","nameT",
-                    "legNow","legPrev","legReact",
+                    "peakNow","peakPrev","areaNowL","areaPrevL","areaReactL",
                     "v0","mass","mass2","dt","vLbl","mLbl","m2Lbl","m2Box","dtLbl",
                     "play","clear","react","modeWall","modeCart"]) el[id] = $(id);
 
@@ -297,28 +299,50 @@
     el.curvePrev.setAttribute("d", prev ? curvePath(prev, prev.ts.length - 1, 1) : "");
     el.areaPrev.setAttribute("d", prev ? areaPath(prev, prev.ts.length - 1, 1) : "");
 
-    el.legNow.setAttribute("y", GTOP + 22);
-    el.legPrev.setAttribute("y", GTOP + 46);
-    el.legReact.setAttribute("y", GTOP + 68);
-    el.legNow.textContent = run ? `nyt:  F max ${fmt(run.Fmax, 0)} N,  Δt ${fmt(run.dt, 2)} s,  I ${fmt(run.I, 2)} Ns` : "";
-    el.legPrev.textContent = prev ? `edellinen:  F max ${fmt(prev.Fmax, 0)} N,  Δt ${fmt(prev.dt, 2)} s,  I ${fmt(prev.I, 2)} Ns` : "";
-    el.legReact.textContent = showR
-      ? (run.two ? `vaunu A → B:  I = −${fmt(run.I, 2)} Ns` : `vaunu → seinä:  I = −${fmt(run.I, 2)} Ns`)
-      : "";
+    // huippuvoima kunkin käyrän huipun päälle, impulssi pinta-alan sisään
+    // kapean piikin kohdalla nimike rajataan kuvaajan sisään
+    const lx = (r) => Math.max(GX0 + 64, Math.min(GX1 - 64, gx(r.dt / 2)));
+    const peak = (node, r, shown) => {
+      if (!r || !shown) { node.textContent = ""; return; }
+      node.setAttribute("x", lx(r).toFixed(1));
+      node.setAttribute("y", (gy(r.Fmax) - 12).toFixed(1));
+      node.textContent = `${fmt(r.Fmax, 0)} N`;
+    };
+    const areaLbl = (node, r, shown, dy, sign) => {
+      if (!r || !shown) { node.textContent = ""; return; }
+      node.setAttribute("x", lx(r).toFixed(1));
+      node.setAttribute("y", (GY0 + dy).toFixed(1));
+      node.textContent = `${sign < 0 ? "−" : ""}${fmt(r.I, 2)} Ns`;
+    };
+    const finished = idx >= (run ? run.ts.length - 1 : 0);
+    if (showR) {
+      // vastavoimatilassa käyrät ovat matalampia: nimikkeet käyrien ulkopuolelle
+      peak(el.peakNow, null, false);
+      peak(el.peakPrev, null, false);
+      areaLbl(el.areaNowL, run, finished, gy(run.Fmax) - GY0 - 12, 1);
+      areaLbl(el.areaPrevL, null, false, 0, 1);
+      areaLbl(el.areaReactL, run, finished, GY0 - gy(run.Fmax) + 28, -1);
+    } else {
+      peak(el.peakNow, run, finished);
+      peak(el.peakPrev, prev, true);
+      areaLbl(el.areaNowL, run, finished, -14, 1);
+      areaLbl(el.areaPrevL, prev, true, -42, 1);
+      areaLbl(el.areaReactL, null, false, 0, -1);
+    }
 
     drawScene(F);
   }
 
   function showResults(done) {
     if (!run || !done) {
-      el.txtI.textContent = "I (pinta-ala) = –";
-      el.txtP.textContent = twoCarts ? "|Δp₁| = |Δp₂| = –" : "Δp = m·v₀ = –";
+      el.txtI.textContent = "I = –";
+      el.txtP.textContent = twoCarts ? "|Δp| = –" : "Δp = –";
       return;
     }
-    el.txtI.textContent = `I (pinta-ala) = ${fmt(run.I, 2)} Ns`;
+    el.txtI.textContent = `I = ${fmt(run.I, 2)} Ns`;
     el.txtP.textContent = run.two
-      ? `|Δp₁| = |Δp₂| = ${fmt(run.dp, 2)} Ns`
-      : `Δp = m·v₀ = ${fmt(run.dp, 2)} Ns`;
+      ? `|Δp| = ${fmt(run.dp, 2)} Ns`
+      : `Δp = ${fmt(run.dp, 2)} Ns`;
   }
 
   /* ---------------- paikat ---------------- */
@@ -393,10 +417,10 @@
   }
 
   function onInput() {
-    el.vLbl.textContent = `Alkunopeus ${fmt(+el.v0.value, 1)} m/s`;
-    el.mLbl.textContent = twoCarts ? `Massa A ${fmt(+el.mass.value, 1)} kg` : `Massa ${fmt(+el.mass.value, 1)} kg`;
-    el.m2Lbl.textContent = `Massa B ${fmt(+el.mass2.value, 1)} kg`;
-    el.dtLbl.textContent = `Pehmeys: Δt = ${fmt(+el.dt.value, 2)} s`;
+    el.vLbl.textContent = `v₀ = ${fmt(+el.v0.value, 1)} m/s`;
+    el.mLbl.textContent = twoCarts ? `m₁ = ${fmt(+el.mass.value, 1)} kg` : `m = ${fmt(+el.mass.value, 1)} kg`;
+    el.m2Lbl.textContent = `m₂ = ${fmt(+el.mass2.value, 1)} kg`;
+    el.dtLbl.textContent = `Δt = ${fmt(+el.dt.value, 2)} s`;
     el.m2Box.dataset.hidden = twoCarts ? "false" : "true";
     if (phase === "idle" || phase === "done") {
       run = newRun();
