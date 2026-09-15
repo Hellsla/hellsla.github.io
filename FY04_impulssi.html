@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Impulssi: miten kappale pysähtyy</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --ir:#D84A62;
+    --grey:#9A958C;
+    --muted:#bfb7aa;
+  }
+
+  .ground { stroke:var(--ink); stroke-width:3; stroke-linecap:round; }
+  .hatch  { stroke:var(--ink); stroke-width:1.2; opacity:.3; }
+  .wall   { fill:#8C8578; stroke:var(--ink); stroke-width:2.6; }
+  .cartBody{ fill:#f8fbff; stroke:var(--ink); stroke-width:2.6; }
+  .cartTrim{ fill:var(--blue); stroke:var(--ink); stroke-width:2; }
+  .wheel  { fill:var(--ink); }
+  .padEdge{ stroke:var(--ink); stroke-width:2.4; stroke-linejoin:round; }
+  .padRib { stroke:var(--ink); stroke-width:1.2; opacity:.35; }
+
+  .axis   { stroke:var(--ink); stroke-width:2.2; stroke-linecap:round; }
+  .curNow { fill:none; stroke:var(--ir); stroke-width:3.4; stroke-linejoin:round; }
+  .curPrev{ fill:none; stroke:var(--grey); stroke-width:3; stroke-dasharray:7 5; }
+  .curReact{ fill:none; stroke:var(--blue); stroke-width:3.4; stroke-linejoin:round; }
+  .box    { fill:none; stroke:var(--ink); stroke-width:2; }
+
+  text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  .lbl     { font-size:18px; font-weight:600; }
+  .small   { font-size:16px; }
+  .result  { font-size:21px; font-weight:700; }
+  .axisName{ font-size:22px; font-weight:700; }
+
+  /* --- ohjaimet --- */
+  .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
+  .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,20px); flex-wrap:wrap; }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(11px,1.6vw,19px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(165px,17vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.6vw,16px); font-size:clamp(12px,1.6vw,20px); }
+  .sim-btn.is-active{ background:var(--ink); color:#fff; }
+
+  @media (max-width:560px){
+    body.sim-body{ place-items:start center; height:auto; min-height:100%; }
+    .sim-wrap{ width:100vw; height:auto; aspect-ratio:auto; }
+    .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
+    .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
+      width:100%; padding:12px 12px 18px; gap:8px; }
+    .ctrl-row input[type="range"]{ width:100%; }
+    .ctrl-row label{ flex:1 1 45%; }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Impulssisimulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Törmäys seinään: voima-aika-kuvaaja ja impulssi">
+
+    <!-- ============ NÄYTTÄMÖ ============ -->
+    <g id="scene">
+      <line class="ground" x1="40" y1="330" x2="392" y2="330"/>
+      <g id="groundHatch"></g>
+
+      <rect class="wall" x="352" y="120" width="40" height="210" rx="4"/>
+
+      <path id="pad" class="padEdge"/>
+      <g id="padRibs"></g>
+
+      <g id="cart">
+        <rect class="cartBody" x="-30" y="-34" width="60" height="30" rx="7"/>
+        <rect class="cartTrim" x="-20" y="-27" width="40" height="9" rx="3"/>
+        <circle class="wheel" cx="-16" cy="-1" r="7"/>
+        <circle class="wheel" cx="16" cy="-1" r="7"/>
+      </g>
+
+      <!-- vastavoimaparin nuolet -->
+      <g id="pairArrows">
+        <path id="arrOnCart" fill="#D84A62" stroke="#AE3A4E" stroke-width="1.4"/>
+        <path id="arrOnWall" fill="#2E86A6" stroke="#22687F" stroke-width="1.4"/>
+      </g>
+
+      <!-- tulokset -->
+      <g id="results">
+        <rect id="boxI"  class="box" x="40" y="56" width="302" height="36" rx="8"/>
+        <text id="txtI"  class="result" x="52" y="81">I (pinta-ala) = –</text>
+        <rect id="boxP"  class="box" x="40" y="100" width="302" height="36" rx="8"/>
+        <text id="txtP"  class="result" x="52" y="125">Δp = m·v₀ = –</text>
+      </g>
+    </g>
+
+    <!-- ============ F(t)-KUVAAJA ============ -->
+    <g id="graph">
+      <path id="areaPrev"  fill="#9A958C" opacity="0.18"/>
+      <path id="areaNow"   fill="#D84A62" opacity="0.22"/>
+      <path id="areaReact" fill="#2E86A6" opacity="0.18"/>
+      <path id="curvePrev" class="curPrev"/>
+      <path id="curveNow"  class="curNow"/>
+      <path id="curveReact" class="curReact"/>
+
+      <line id="axisT" class="axis"/>
+      <line id="axisF" class="axis"/>
+      <text id="nameF" class="axisName" x="446" y="96">F</text>
+      <text id="nameT" class="axisName" x="928" y="0">t</text>
+
+      <text id="legNow"  class="lbl"   x="480" y="0" fill="#A8384C"></text>
+      <text id="legPrev" class="small" x="480" y="0" fill="#6F6A62"></text>
+      <text id="legReact" class="small" x="480" y="0" fill="#22687F"></text>
+    </g>
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <div class="ctrl-row">
+      <label><span id="vLbl">Alkunopeus 4,0 m/s</span>
+        <input id="v0" type="range" min="2" max="6" step="0.5" value="4" aria-label="Alkunopeus"></label>
+      <label><span id="mLbl">Massa 2,0 kg</span>
+        <input id="mass" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Massa"></label>
+      <label><span id="dtLbl">KOVA ← Pysähtymisaika 0,15 s → PEHMEÄ</span>
+        <input id="dt" type="range" min="0.05" max="0.30" step="0.01" value="0.15" aria-label="Pysähtymisaika"></label>
+      <button id="play" class="sim-btn" type="button">Käynnistä</button>
+      <button id="clear" class="sim-btn" type="button">Tyhjennä</button>
+      <button id="react" class="sim-btn" type="button">Näytä vastavoima</button>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+
+  /* ---------------- mitat ---------------- */
+  const PX_M = 200;                 // pikseliä metriä kohti
+  const WALL_X = 352, GROUND = 330;
+  const RUNWAY = 0.35;              // kiihdytysmatka ennen kosketusta, m
+  const SLOWMO = 8;                 // 1 s fysiikkaa = 8 s ruudulla
+
+  const GX0 = 470, GX1 = 920, T_AXIS = 0.32;   // aika-akseli 0...0,32 s
+  const GTOP = 96, GBOT = 402;
+
+  const $ = (id) => document.getElementById(id);
+  const el = {};
+  for (const id of ["groundHatch","pad","padRibs","cart","pairArrows","arrOnCart","arrOnWall",
+                    "boxI","txtI","boxP","txtP","areaPrev","areaNow","areaReact",
+                    "curvePrev","curveNow","curveReact","axisT","axisF","nameF","nameT",
+                    "legNow","legPrev","legReact",
+                    "v0","mass","dt","vLbl","mLbl","dtLbl","play","clear","react"]) el[id] = $(id);
+
+  const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",");
+
+  (function groundHatch() {
+    let hd = "";
+    for (let x = 46; x < 392; x += 22) hd += `M${x} ${GROUND} l-10 12 `;
+    el.groundHatch.innerHTML = `<path class="hatch" d="${hd}"/>`;
+  })();
+
+  /* ---------------- törmäysmalli ----------------
+     Puolisiniheräte F(t) = Fmax·sin(pi·t/dt) antaa sileän, realistisen
+     voimapulssin. Siitä seuraa v(t) = v0(1 + cos(pi·t/dt))/2, joka menee
+     nollaan täsmälleen hetkellä dt, ja tunkeuma s(dt) = v0·dt/2.       */
+  function buildRun(v0, m, dt) {
+    const Fmax = Math.PI * m * v0 / (2 * dt);
+    const N = 240, ts = [], Fs = [], ss = [];
+    for (let i = 0; i <= N; i++) {
+      const t = dt * i / N;
+      ts.push(t);
+      Fs.push(Fmax * Math.sin(Math.PI * t / dt));
+      ss.push(v0 * (t / 2 + (dt / (2 * Math.PI)) * Math.sin(Math.PI * t / dt)));
+    }
+    // impulssi lasketaan kuvaajan pinta-alana (puolisuunnikassääntö),
+    // ei kaavasta - näin "I = pinta-ala" on tosi eikä pelkkä väite
+    let I = 0;
+    for (let i = 1; i <= N; i++) I += (Fs[i] + Fs[i - 1]) / 2 * (ts[i] - ts[i - 1]);
+    return { v0, m, dt, Fmax, ts, Fs, ss, I, dp: m * v0, depth: v0 * dt / 2 };
+  }
+
+  /* ---------------- tila ---------------- */
+  let run = null, prev = null, lastDone = null;
+  let phase = "idle", tw = 0, showReact = false;
+
+  const gx = (t) => GX0 + (t / T_AXIS) * (GX1 - GX0);
+  let FSCALE = 1, GY0 = GBOT, AMP = GBOT - GTOP;
+  const gy = (F) => GY0 - (F / FSCALE) * AMP;
+
+  function layoutGraph() {
+    if (showReact) { GY0 = (GTOP + GBOT) / 2; AMP = (GBOT - GTOP) / 2; }
+    else { GY0 = GBOT; AMP = GBOT - GTOP; }
+    FSCALE = Math.max(run ? run.Fmax : 0, prev ? prev.Fmax : 0, 1) * 1.12;
+    el.axisT.setAttribute("x1", GX0 - 14); el.axisT.setAttribute("y1", GY0);
+    el.axisT.setAttribute("x2", GX1 + 16); el.axisT.setAttribute("y2", GY0);
+    el.axisF.setAttribute("x1", GX0); el.axisF.setAttribute("y1", GY0 + (showReact ? AMP + 8 : 8));
+    el.axisF.setAttribute("x2", GX0); el.axisF.setAttribute("y2", GTOP - 4);
+    el.nameT.setAttribute("y", GY0 - 12);
+    el.nameF.setAttribute("x", GX0 - 26); el.nameF.setAttribute("y", GTOP + 4);
+  }
+
+  /* ---------------- käyrien piirto ---------------- */
+  function curvePath(r, upTo, sign) {
+    let d = "";
+    for (let i = 0; i <= upTo; i++) d += (i ? " L" : "M") + gx(r.ts[i]).toFixed(1) + " " + gy(sign * r.Fs[i]).toFixed(1);
+    return d;
+  }
+  function areaPath(r, upTo, sign) {
+    if (upTo < 1) return "";
+    return `M${gx(0).toFixed(1)} ${GY0} ` + curvePath(r, upTo, sign).slice(1)
+         + ` L${gx(r.ts[upTo]).toFixed(1)} ${GY0} Z`;
+  }
+
+  /* ---------------- näyttämön piirto ---------------- */
+  function drawScene(pen, F) {
+    const T0 = run ? run.depth * PX_M : 40;          // suojan paksuus = koko tunkeuma
+    const padNow = Math.max(4, T0 - pen * PX_M);     // jäljellä oleva paksuus
+    const x0 = WALL_X - padNow;
+    el.pad.setAttribute("d", `M${x0.toFixed(1)} 168 L${WALL_X} 168 L${WALL_X} ${GROUND} L${x0.toFixed(1)} ${GROUND} Z`);
+    // pehmeä suoja on vaaleampi, kova tummempi
+    const soft = run ? (run.dt - 0.05) / 0.25 : 0.5;
+    const mix = (a, b) => Math.round(a + (b - a) * soft);
+    el.pad.setAttribute("fill", `rgb(${mix(110, 242)},${mix(122, 200)},${mix(130, 120)})`);
+
+    let ribs = "";
+    for (let k = 1; k <= 6; k++) {
+      const rx = x0 + (padNow * k) / 7;
+      ribs += `M${rx.toFixed(1)} 174 L${rx.toFixed(1)} ${GROUND - 6} `;
+    }
+    el.padRibs.innerHTML = `<path class="padRib" d="${ribs}"/>`;
+
+    const cartFront = x0;
+    el.cart.setAttribute("transform", `translate(${(cartFront - 30).toFixed(1)},${GROUND - 8})`);
+
+    // vastavoimapari
+    if (showReact && F > 0) {
+      const L = 18 + (F / FSCALE) * 80;
+      const ay = GROUND - 22;                        // vaunun ja seinän korkeudella
+      el.arrOnCart.setAttribute("d", arrow(cartFront - 64, ay, cartFront - 64 - L, ay, 13));
+      el.arrOnWall.setAttribute("d", arrow(WALL_X + 4, ay, WALL_X + 4 + Math.min(L, 46), ay, 13));
+      el.pairArrows.style.display = "";
+    } else {
+      el.pairArrows.style.display = "none";
+    }
+  }
+
+  function arrow(x1, y1, x2, y2, w) {
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy);
+    if (L < 6) return "";
+    const ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
+    const hw = w * 0.95, hl = Math.min(20, L * 0.4);
+    const bx = x2 - ux * hl, by = y2 - uy * hl;
+    const P = (a, b) => `${a.toFixed(1)} ${b.toFixed(1)}`;
+    return `M${P(x1 + nx * w / 2, y1 + ny * w / 2)} L${P(bx + nx * w / 2, by + ny * w / 2)} `
+         + `L${P(bx + nx * hw, by + ny * hw)} L${P(x2, y2)} L${P(bx - nx * hw, by - ny * hw)} `
+         + `L${P(bx - nx * w / 2, by - ny * w / 2)} L${P(x1 - nx * w / 2, y1 - ny * w / 2)} Z`;
+  }
+
+  /* ---------------- kokonaispiirto ---------------- */
+  function render(idx, pen, F) {
+    layoutGraph();
+
+    el.curveNow.setAttribute("d", run ? curvePath(run, idx, 1) : "");
+    el.areaNow.setAttribute("d", run ? areaPath(run, idx, 1) : "");
+    const showR = showReact && run;
+    el.curveReact.setAttribute("d", showR ? curvePath(run, idx, -1) : "");
+    el.areaReact.setAttribute("d", showR ? areaPath(run, idx, -1) : "");
+
+    el.curvePrev.setAttribute("d", prev ? curvePath(prev, prev.ts.length - 1, 1) : "");
+    el.areaPrev.setAttribute("d", prev ? areaPath(prev, prev.ts.length - 1, 1) : "");
+
+    el.legNow.setAttribute("y", GTOP + 22);
+    el.legPrev.setAttribute("y", GTOP + 46);
+    el.legReact.setAttribute("y", GTOP + 68);
+    el.legNow.textContent = run ? `nyt:  F max ${fmt(run.Fmax, 0)} N,  Δt ${fmt(run.dt, 2)} s,  I ${fmt(run.I, 2)} Ns` : "";
+    el.legPrev.textContent = prev ? `edellinen:  F max ${fmt(prev.Fmax, 0)} N,  Δt ${fmt(prev.dt, 2)} s,  I ${fmt(prev.I, 2)} Ns` : "";
+    el.legReact.textContent = showR ? `vaunu → seinä:  I = −${fmt(run.I, 2)} Ns` : "";
+
+    drawScene(pen, F);
+  }
+
+  function showResults(done) {
+    if (!run || !done) {
+      el.txtI.textContent = "I (pinta-ala) = –";
+      el.txtP.textContent = "Δp = m·v₀ = –";
+      return;
+    }
+    el.txtI.textContent = `I (pinta-ala) = ${fmt(run.I, 2)} Ns`;
+    el.txtP.textContent = `Δp = m·v₀ = ${fmt(run.dp, 2)} Ns`;
+  }
+
+  /* ---------------- animaatio ---------------- */
+  let last = performance.now();
+  function tick(now) {
+    let d = (now - last) / 1000; last = now;
+    if (!isFinite(d) || d < 0) d = 0;
+    d = Math.min(d, 0.05);
+
+    if (phase === "approach") {
+      tw += d;
+      const total = (RUNWAY / run.v0) * SLOWMO;
+      const f = Math.min(1, tw / total);
+      const pen = -(RUNWAY * (1 - f));           // negatiivinen = ei vielä kosketuksissa
+      render(0, pen, 0);
+      if (f >= 1) { phase = "impact"; tw = 0; }
+    } else if (phase === "impact") {
+      tw += d;
+      const tPhys = tw / SLOWMO;
+      const N = run.ts.length - 1;
+      if (tPhys >= run.dt) {
+        render(N, run.ss[N], 0);
+        showResults(true);
+        lastDone = run;
+        phase = "done";
+        el.play.textContent = "Käynnistä";
+      } else {
+        const idx = Math.min(N, Math.round((tPhys / run.dt) * N));
+        render(idx, run.ss[idx], run.Fs[idx]);
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------------- ohjaimet ---------------- */
+  function start() {
+    prev = lastDone;                            // edellinen valmistunut ajo jää vertailuksi
+    run = buildRun(parseFloat(el.v0.value), parseFloat(el.mass.value), parseFloat(el.dt.value));
+    phase = "approach"; tw = 0;
+    showResults(false);
+    render(0, -RUNWAY, 0);
+    el.play.textContent = "Ajossa…";
+    last = performance.now();
+  }
+
+  function onInput() {
+    el.vLbl.textContent = `Alkunopeus ${fmt(+el.v0.value, 1)} m/s`;
+    el.mLbl.textContent = `Massa ${fmt(+el.mass.value, 1)} kg`;
+    el.dtLbl.textContent = `KOVA ← Pysähtymisaika ${fmt(+el.dt.value, 2)} s → PEHMEÄ`;
+    if (phase === "idle" || phase === "done") {
+      run = buildRun(parseFloat(el.v0.value), parseFloat(el.mass.value), parseFloat(el.dt.value));
+      prev = lastDone;                          // vertailukäyrä jää näkyviin
+      phase = "idle";
+      showResults(false);
+      render(0, -RUNWAY, 0);
+    }
+  }
+  for (const id of ["v0", "mass", "dt"]) el[id].addEventListener("input", onInput);
+
+  el.play.addEventListener("click", () => { if (phase !== "approach" && phase !== "impact") start(); });
+  el.clear.addEventListener("click", () => {
+    prev = null; lastDone = null; phase = "idle"; onInput();
+  });
+  el.react.addEventListener("click", () => {
+    showReact = !showReact;
+    el.react.classList.toggle("is-active", showReact);
+    render(phase === "done" ? run.ts.length - 1 : 0, phase === "done" ? run.depth : -RUNWAY, 0);
+    showResults(phase === "done");
+  });
+
+  onInput();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
