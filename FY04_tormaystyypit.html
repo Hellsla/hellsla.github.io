@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Täysin kimmoisa ja täysin kimmoton törmäys</title>
+<style>
+:root{
+  --ink:#3F3D39;
+  --muted:#7A7771;
+  --paper:#FFFFFF;
+  --grid:#E9E7E2;
+  --frame:#CFCCC6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:var(--paper);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}
+body{overflow:hidden}
+.sim{width:100vw;height:100vh;min-height:360px;display:grid;grid-template-rows:1fr auto;background:#fff}
+.stage{position:relative;min-height:0}
+svg{display:block;width:100%;height:100%}
+
+.controls{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 18px 14px}
+button{
+  appearance:none;border:1.8px solid var(--ink);background:#fff;color:var(--ink);
+  border-radius:999px;padding:7px 15px;cursor:pointer;
+  font:600 clamp(13px,1.6vh,17px)/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+button:hover:not(:disabled){background:#F7F7F5}
+button.active{background:var(--ink);color:#fff}
+button:disabled{opacity:.4;cursor:default}
+
+/* Varsinainen puhelinasettelu vasta selvästi kapeammalla, jottei tavallinen
+   700 px:n upotus muutu vierivaksi sivuksi. */
+@media (max-width:820px){ .controls{gap:9px;padding:5px 10px 12px} }
+@media (max-width:560px){
+  body{overflow:auto}
+  .sim{height:auto;min-height:100vh;grid-template-rows:auto auto}
+  .stage{height:min(70vw,540px);min-height:330px}
+  .controls{padding:8px 10px 16px}
+  button{font-size:14px;padding:6px 12px}
+}
+</style>
+</head>
+<body>
+<main class="sim" aria-label="Täysin kimmoisan ja täysin kimmottoman törmäyksen simulaatio">
+  <div class="stage">
+    <svg viewBox="0 0 960 540" role="img"
+         aria-label="Ylhäällä kaksi yhtä suurta palloa törmää täysin kimmoisasti, alhaalla auto törmää kuorma-autoon täysin kimmottomasti">
+      <defs>
+        <radialGradient id="greenBall" cx="34%" cy="28%" r="72%">
+          <stop offset="0%"  stop-color="#9DF09D"/>
+          <stop offset="55%" stop-color="#3FBE55"/>
+          <stop offset="100%" stop-color="#1B7F33"/>
+        </radialGradient>
+        <radialGradient id="tennisBall" cx="34%" cy="28%" r="72%">
+          <stop offset="0%"  stop-color="#F3F79A"/>
+          <stop offset="55%" stop-color="#D5E23C"/>
+          <stop offset="100%" stop-color="#94A517"/>
+        </radialGradient>
+        <linearGradient id="carPaint" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#E7B98A"/>
+          <stop offset="100%" stop-color="#B87D45"/>
+        </linearGradient>
+        <linearGradient id="cabPaint" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#E8533F"/>
+          <stop offset="100%" stop-color="#B3231A"/>
+        </linearGradient>
+        <linearGradient id="boxPaint" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#D5D3CE"/>
+          <stop offset="100%" stop-color="#9E9B95"/>
+        </linearGradient>
+        <marker id="vHead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="3" markerHeight="3" orient="auto">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#3F3D39"/>
+        </marker>
+        <clipPath id="clipA"><rect x="30" y="54" width="900" height="198"/></clipPath>
+        <clipPath id="clipB"><rect x="30" y="324" width="900" height="198"/></clipPath>
+      </defs>
+
+      <!-- ===== ylempi: täysin kimmoisa ===== -->
+      <text x="480" y="38" text-anchor="middle" font-size="29" font-weight="700" fill="#3F3D39">Täysin kimmoisa törmäys</text>
+      <g stroke="var(--grid)" stroke-width="1.2">
+        <line x1="180" y1="54" x2="180" y2="252"/><line x1="330" y1="54" x2="330" y2="252"/>
+        <line x1="480" y1="54" x2="480" y2="252"/><line x1="630" y1="54" x2="630" y2="252"/>
+        <line x1="780" y1="54" x2="780" y2="252"/>
+        <line x1="30" y1="120" x2="930" y2="120"/><line x1="30" y1="186" x2="930" y2="186"/>
+      </g>
+      <rect x="30" y="54" width="900" height="198" fill="none" stroke="var(--frame)" stroke-width="1.6"/>
+      <text id="pA" x="916" y="76" text-anchor="end" font-size="16" font-weight="650" fill="#7A7771"></text>
+
+      <g clip-path="url(#clipA)">
+        <g id="ball1">
+          <circle r="26" fill="url(#greenBall)" stroke="#3F3D39" stroke-width="2"/>
+          <ellipse cx="-8" cy="-10" rx="8.5" ry="5.5" fill="#fff" fill-opacity=".42" transform="rotate(-28)"/>
+        </g>
+        <g id="ball2">
+          <circle r="26" fill="url(#tennisBall)" stroke="#3F3D39" stroke-width="2"/>
+          <path d="M-24.5,-9 C-12,-3.5 -12,3.5 -24.5,9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M24.5,-9 C12,-3.5 12,3.5 24.5,9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+          <ellipse cx="-8" cy="-10" rx="8" ry="5" fill="#fff" fill-opacity=".38" transform="rotate(-28)"/>
+        </g>
+      </g>
+      <g font-size="17" font-weight="700" text-anchor="middle" fill="#3F3D39">
+        <text id="vTxtA1"></text><text id="vTxtA2"></text>
+      </g>
+      <line id="vArrA1" y1="126" y2="126" stroke="#3F3D39" stroke-width="2.6" stroke-linecap="round" marker-end="url(#vHead)"/>
+      <line id="vArrA2" y1="126" y2="126" stroke="#3F3D39" stroke-width="2.6" stroke-linecap="round" marker-end="url(#vHead)"/>
+      <g font-size="16" font-weight="650" text-anchor="middle" fill="#7A7771">
+        <text id="mTxtA1" y="216">1,0 kg</text><text id="mTxtA2" y="216">1,0 kg</text>
+      </g>
+
+      <!-- ===== alempi: täysin kimmoton ===== -->
+      <text x="480" y="308" text-anchor="middle" font-size="29" font-weight="700" fill="#3F3D39">Täysin kimmoton törmäys</text>
+      <g stroke="var(--grid)" stroke-width="1.2">
+        <line x1="180" y1="324" x2="180" y2="522"/><line x1="330" y1="324" x2="330" y2="522"/>
+        <line x1="480" y1="324" x2="480" y2="522"/><line x1="630" y1="324" x2="630" y2="522"/>
+        <line x1="780" y1="324" x2="780" y2="522"/>
+        <line x1="30" y1="390" x2="930" y2="390"/>
+      </g>
+      <rect x="30" y="324" width="900" height="198" fill="none" stroke="var(--frame)" stroke-width="1.6"/>
+      <text id="pB" x="916" y="346" text-anchor="end" font-size="16" font-weight="650" fill="#7A7771"></text>
+      <line x1="30" y1="480" x2="930" y2="480" stroke="#3F3D39" stroke-width="2.6"/>
+
+      <g clip-path="url(#clipB)">
+        <!-- henkilöauto, nokka oikealle; origo vasen alakulma maassa -->
+        <g id="car">
+          <path d="M5,-7 L5,-17 C5,-22 9,-25 15,-26 L31,-27
+                   C37,-36 45,-40 57,-40 C69,-40 78,-36 85,-28
+                   L98,-25 C105,-23 108,-19 108,-11 L108,-7 Z"
+                fill="url(#carPaint)" stroke="#3F3D39" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M36,-28 C40,-34 46,-37 55,-37 L55,-28 Z" fill="#CFE4EC" stroke="#3F3D39" stroke-width="1.4"/>
+          <path d="M60,-37 C68,-37 75,-34 80,-28 L60,-28 Z" fill="#CFE4EC" stroke="#3F3D39" stroke-width="1.4"/>
+          <circle cx="28" cy="-9.5" r="9.5" fill="#33312E" stroke="#3F3D39" stroke-width="1.6"/>
+          <circle cx="28" cy="-9.5" r="3.6" fill="#D8D6D1"/>
+          <circle cx="88" cy="-9.5" r="9.5" fill="#33312E" stroke="#3F3D39" stroke-width="1.6"/>
+          <circle cx="88" cy="-9.5" r="3.6" fill="#D8D6D1"/>
+        </g>
+        <!-- kuorma-auto, nokka vasemmalle; origo vasen alakulma maassa -->
+        <g id="truck">
+          <rect x="8" y="-20" width="176" height="9" fill="#4A4742"/>
+          <rect x="58" y="-64" width="126" height="46" rx="3"
+                fill="url(#boxPaint)" stroke="#3F3D39" stroke-width="2"/>
+          <g stroke="#6E6B65" stroke-width="2">
+            <line x1="76" y1="-60" x2="76" y2="-22"/><line x1="97" y1="-60" x2="97" y2="-22"/>
+            <line x1="118" y1="-60" x2="118" y2="-22"/><line x1="139" y1="-60" x2="139" y2="-22"/>
+            <line x1="160" y1="-60" x2="160" y2="-22"/>
+          </g>
+          <path d="M6,-18 L6,-44 C6,-50 9,-54 15,-56 L20,-70 L52,-70 L52,-18 Z"
+                fill="url(#cabPaint)" stroke="#3F3D39" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M23,-66 L49,-66 L49,-52 L14,-52 C14,-56 16,-60 23,-66 Z"
+                fill="#CFE4EC" stroke="#3F3D39" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="28" cy="-14" r="14" fill="#33312E" stroke="#3F3D39" stroke-width="1.8"/>
+          <circle cx="28" cy="-14" r="5.4" fill="#D8D6D1"/>
+          <circle cx="124" cy="-14" r="14" fill="#33312E" stroke="#3F3D39" stroke-width="1.8"/>
+          <circle cx="124" cy="-14" r="5.4" fill="#D8D6D1"/>
+          <circle cx="158" cy="-14" r="14" fill="#33312E" stroke="#3F3D39" stroke-width="1.8"/>
+          <circle cx="158" cy="-14" r="5.4" fill="#D8D6D1"/>
+        </g>
+      </g>
+      <g font-size="17" font-weight="700" text-anchor="middle" fill="#3F3D39">
+        <text id="vTxtB1"></text><text id="vTxtB2"></text>
+      </g>
+      <line id="vArrB1" y1="432" y2="432" stroke="#3F3D39" stroke-width="2.6" stroke-linecap="round" marker-end="url(#vHead)"/>
+      <line id="vArrB2" y1="398" y2="398" stroke="#3F3D39" stroke-width="2.6" stroke-linecap="round" marker-end="url(#vHead)"/>
+      <g font-size="16" font-weight="650" text-anchor="middle" fill="#7A7771">
+        <text id="mTxtB1" y="504">1000 kg</text><text id="mTxtB2" y="504">8000 kg</text>
+      </g>
+    </svg>
+  </div>
+
+  <section class="controls" aria-label="Säätimet">
+    <button id="play" type="button">Aloita</button>
+    <button id="pause" type="button" disabled>Pysäytä</button>
+    <button id="reset" type="button">Nollaa</button>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const el = {};
+  ["ball1","ball2","car","truck","pA","pB",
+   "vArrA1","vArrA2","vTxtA1","vTxtA2","mTxtA1","mTxtA2",
+   "vArrB1","vArrB2","vTxtB1","vTxtB2","mTxtB1","mTxtB2",
+   "play","pause","reset"].forEach(id => el[id] = $(id));
+
+  const fmt = (x, d = 1) =>
+    (Math.abs(x) < 0.0005 ? 0 : x).toFixed(d).replace(".", ",").replace("-", "−");
+
+  /* ---------- Täysin kimmoisa: kaksi yhtä suurta palloa ----------
+     Yhtä suurilla massoilla kimmoisa törmäys vaihtaa nopeudet:
+     u1 = v2 ja u2 = v1. Tässä v1 = 2,0 m/s ja v2 = 0. */
+  const A = {
+    m: 1.0, v: 2.0, r: 26, y: 160,
+    pxPerM: 110,                 // piirron mittakaava
+    x1: 90, x2: 640,             // keskipisteiden alkupaikat
+    arrowPerMs: 30               // nuolen pituus nopeusyksikköä kohti
+  };
+  A.speed  = A.v * A.pxPerM;                  // px/s ennen törmäystä
+  A.tHit   = (A.x2 - 2 * A.r - A.x1) / A.speed;
+  A.xStop2 = 930 - A.r - 18;                   // pallo 2 pysähtyy kehykseen
+  A.tEnd   = A.tHit + (A.xStop2 - A.x2) / A.speed;
+
+  /* ---------- Täysin kimmoton: auto ja kuorma-auto ----------
+     Kappaleet jäävät yhteen, joten yhteinen nopeus on
+     u = (m1 v1 + m2 v2) / (m1 + m2). */
+  const B = {
+    m1: 1000, m2: 8000, v1: 12, v2: 0,
+    carW: 110, truckW: 190, ground: 480,
+    pxPerM: 30,
+    x1: 70, x2: 620,             // vasemmat reunat
+    arrowPerMs: 10
+  };
+  B.u      = (B.m1 * B.v1 + B.m2 * B.v2) / (B.m1 + B.m2);
+  B.speed  = B.v1 * B.pxPerM;
+  B.after  = B.u * B.pxPerM;
+  B.tHit   = (B.x2 - B.carW - B.x1) / B.speed;
+  B.xStop  = 930 - 18 - B.truckW - B.carW;     // yhdistelmä pysähtyy kehykseen
+  B.tEnd   = B.tHit + (B.xStop - (B.x2 - B.carW)) / B.after;
+
+  const T_END = Math.max(A.tEnd, B.tEnd);
+
+  let t = 0, running = false, last = 0;
+
+  /* Nopeusnuoli ja sen lukema kappaleen yläpuolelle. Nuoli osoittaa
+     liikesuuntaan ja sen pituus on verrannollinen vauhtiin. */
+  const LEFT = 38, RIGHT = 922;
+
+  // Keskitetty teksti kehyksen sisään: muuten lukema leikkautuu, kun
+  // kappale on aivan reunassa.
+  function centerText(node, x){
+    node.setAttribute("x", x.toFixed(1));
+    const half = node.getComputedTextLength() / 2;
+    const fit = Math.min(RIGHT - half, Math.max(LEFT + half, x));
+    node.setAttribute("x", fit.toFixed(1));
+  }
+
+  function setV(arrow, label, cx, y, v, perMs){
+    label.setAttribute("y", y - 16);
+    label.textContent = fmt(v) + " m/s";
+    centerText(label, cx);
+    const L = Math.abs(v) * perMs;
+    if (L < 3){ arrow.style.display = "none"; return; }
+    arrow.style.display = "";
+    const s = Math.sign(v);
+    const mid = Math.min(RIGHT - L / 2, Math.max(LEFT + L / 2, cx));
+    arrow.setAttribute("x1", (mid - s * L / 2).toFixed(1));
+    arrow.setAttribute("x2", (mid + s * L / 2).toFixed(1));
+    arrow.setAttribute("y1", y); arrow.setAttribute("y2", y);
+  }
+
+  function draw(){
+    /* --- kimmoisa --- */
+    const hitA = t >= A.tHit;
+    const c1 = hitA ? A.x2 - 2 * A.r : A.x1 + A.speed * t;
+    const c2 = hitA ? Math.min(A.xStop2, A.x2 + A.speed * (t - A.tHit)) : A.x2;
+    el.ball1.setAttribute("transform", `translate(${c1.toFixed(1)},${A.y})`);
+    el.ball2.setAttribute("transform", `translate(${c2.toFixed(1)},${A.y})`);
+    const u1 = hitA ? 0 : A.v, u2 = hitA ? A.v : 0;
+    setV(el.vArrA1, el.vTxtA1, c1, 126, u1, A.arrowPerMs);
+    setV(el.vArrA2, el.vTxtA2, c2, 126, u2, A.arrowPerMs);
+    centerText(el.mTxtA1, c1);
+    centerText(el.mTxtA2, c2);
+    el.pA.textContent = `p = ${fmt(A.m * A.v)} kg·m/s`;
+
+    /* --- kimmoton --- */
+    const hitB = t >= B.tHit;
+    const carL = hitB
+      ? Math.min(B.xStop, B.x2 - B.carW + B.after * (t - B.tHit))
+      : B.x1 + B.speed * t;
+    const truckL = hitB ? carL + B.carW : B.x2;
+    el.car.setAttribute("transform", `translate(${carL.toFixed(1)},${B.ground})`);
+    el.truck.setAttribute("transform", `translate(${truckL.toFixed(1)},${B.ground})`);
+    const w1 = hitB ? B.u : B.v1, w2 = hitB ? B.u : B.v2;
+    setV(el.vArrB1, el.vTxtB1, carL + B.carW / 2, 432, w1, B.arrowPerMs);
+    setV(el.vArrB2, el.vTxtB2, truckL + B.truckW / 2, 398, w2, B.arrowPerMs);
+    centerText(el.mTxtB1, carL + B.carW / 2);
+    centerText(el.mTxtB2, truckL + B.truckW / 2);
+    el.pB.textContent = `p = ${(B.m1 * B.v1 + B.m2 * B.v2).toLocaleString("fi-FI")} kg·m/s`;
+  }
+
+  function frame(now){
+    if (!running) return;
+    const dt = Math.min(0.05, (now - last) / 1000);
+    last = now;
+    t = Math.min(T_END, t + dt);
+    draw();
+    if (t >= T_END){ stop(); return; }
+    requestAnimationFrame(frame);
+  }
+
+  function start(){
+    if (running) return;
+    if (t >= T_END) t = 0;
+    running = true;
+    el.play.disabled = true;
+    el.pause.disabled = false;
+    last = performance.now();
+    requestAnimationFrame(frame);
+  }
+  function stop(){
+    running = false;
+    el.play.disabled = false;
+    el.pause.disabled = true;
+  }
+  function reset(){ stop(); t = 0; draw(); }
+
+  el.play.addEventListener("click", start);
+  el.pause.addEventListener("click", stop);
+  el.reset.addEventListener("click", reset);
+  window.addEventListener("keydown", e => {
+    if (e.code === "Space"){ e.preventDefault(); running ? stop() : start(); }
+  });
+
+  draw();
+})();
+</script>
+</body>
+</html>
