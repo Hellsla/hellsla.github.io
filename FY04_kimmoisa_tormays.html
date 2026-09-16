@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Täysin kimmoisa törmäys</title>
+<style>
+:root{
+  --ink:#3F3D39;
+  --muted:#7A7771;
+  --paper:#FFFFFF;
+  --grid:#E9E7E2;
+  --frame:#CFCCC6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:var(--paper);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}
+body{overflow:hidden}
+.sim{width:100vw;height:100vh;min-height:320px;display:grid;grid-template-rows:1fr auto;background:#fff}
+.stage{position:relative;min-height:0}
+svg{display:block;width:100%;height:100%}
+
+.controls{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 18px 14px}
+button{
+  appearance:none;border:1.8px solid var(--ink);background:#fff;color:var(--ink);
+  border-radius:999px;padding:7px 15px;cursor:pointer;
+  font:600 clamp(13px,1.8vh,18px)/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+button:hover:not(:disabled){background:#F7F7F5}
+button:disabled{opacity:.4;cursor:default}
+
+@media (max-width:820px){ .controls{gap:9px;padding:5px 10px 12px} }
+/* Varsinainen puhelinasettelu vasta selvästi kapeammalla, jottei tavallinen
+   700 px:n upotus muutu vierivaksi sivuksi. */
+@media (max-width:560px){
+  body{overflow:auto}
+  .sim{height:auto;min-height:100vh;grid-template-rows:auto auto}
+  .stage{height:min(58vw,470px);min-height:250px}
+  .controls{padding:8px 10px 16px}
+  button{font-size:14px;padding:6px 12px}
+}
+</style>
+</head>
+<body>
+<main class="sim" aria-label="Täysin kimmoisan törmäyksen simulaatio">
+  <div class="stage">
+    <svg viewBox="0 0 960 540" role="img"
+         aria-label="Kaksi yhtä suurta palloa törmää täysin kimmoisasti: liikkuva pysähtyy ja levossa ollut lähtee liikkeelle">
+      <defs>
+        <radialGradient id="greenBall" cx="34%" cy="28%" r="72%">
+          <stop offset="0%"  stop-color="#9DF09D"/>
+          <stop offset="55%" stop-color="#3FBE55"/>
+          <stop offset="100%" stop-color="#1B7F33"/>
+        </radialGradient>
+        <radialGradient id="tennisBall" cx="34%" cy="28%" r="72%">
+          <stop offset="0%"  stop-color="#F3F79A"/>
+          <stop offset="55%" stop-color="#D5E23C"/>
+          <stop offset="100%" stop-color="#94A517"/>
+        </radialGradient>
+        <marker id="vHead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#3F3D39"/>
+        </marker>
+        <clipPath id="clipScene"><rect x="40" y="92" width="880" height="378"/></clipPath>
+      </defs>
+
+      <text x="480" y="56" text-anchor="middle" font-size="38" font-weight="700" fill="#3F3D39">Täysin kimmoisa törmäys</text>
+
+      <g stroke="var(--grid)" stroke-width="1.3">
+        <line x1="186" y1="92" x2="186" y2="470"/><line x1="333" y1="92" x2="333" y2="470"/>
+        <line x1="480" y1="92" x2="480" y2="470"/><line x1="626" y1="92" x2="626" y2="470"/>
+        <line x1="773" y1="92" x2="773" y2="470"/>
+        <line x1="40" y1="218" x2="920" y2="218"/><line x1="40" y1="344" x2="920" y2="344"/>
+      </g>
+      <rect x="40" y="92" width="880" height="378" fill="none" stroke="var(--frame)" stroke-width="1.8"/>
+      <text id="pTxt" x="902" y="126" text-anchor="end" font-size="20" font-weight="650" fill="#7A7771"></text>
+
+      <g clip-path="url(#clipScene)">
+        <g id="ball1">
+          <circle r="40" fill="url(#greenBall)" stroke="#3F3D39" stroke-width="2.4"/>
+          <ellipse cx="-12" cy="-15" rx="13" ry="8.5" fill="#fff" fill-opacity=".42" transform="rotate(-28)"/>
+        </g>
+        <g id="ball2">
+          <circle r="40" fill="url(#tennisBall)" stroke="#3F3D39" stroke-width="2.4"/>
+          <path d="M-37.5,-14 C-18,-5.5 -18,5.5 -37.5,14" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/>
+          <path d="M37.5,-14 C18,-5.5 18,5.5 37.5,14" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/>
+          <ellipse cx="-12" cy="-15" rx="12" ry="7.5" fill="#fff" fill-opacity=".38" transform="rotate(-28)"/>
+        </g>
+      </g>
+
+      <g font-size="22" font-weight="700" text-anchor="middle" fill="#3F3D39">
+        <!-- lukemat eri korkeuksille, muuten ne menevät päällekkäin
+             sillä hetkellä kun pallot koskettavat toisiaan -->
+        <text id="vTxt1" y="170"></text><text id="vTxt2" y="214"></text>
+      </g>
+      <line id="vArr1" y1="192" y2="192" stroke="#3F3D39" stroke-width="3" stroke-linecap="round" marker-end="url(#vHead)"/>
+      <line id="vArr2" y1="236" y2="236" stroke="#3F3D39" stroke-width="3" stroke-linecap="round" marker-end="url(#vHead)"/>
+      <g font-size="20" font-weight="650" text-anchor="middle" fill="#7A7771">
+        <text id="mTxt1" y="392">1,0 kg</text><text id="mTxt2" y="392">1,0 kg</text>
+      </g>
+    </svg>
+  </div>
+
+  <section class="controls" aria-label="Säätimet">
+    <button id="play" type="button">Aloita</button>
+    <button id="pause" type="button" disabled>Pysäytä</button>
+    <button id="reset" type="button">Nollaa</button>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const el = {};
+  ["ball1","ball2","pTxt","vArr1","vArr2","vTxt1","vTxt2","mTxt1","mTxt2",
+   "play","pause","reset"].forEach(id => el[id] = $(id));
+
+  const fmt = (x, d = 1) =>
+    (Math.abs(x) < 0.0005 ? 0 : x).toFixed(d).replace(".", ",").replace("-", "−");
+
+  /* Yhtä suurilla massoilla täysin kimmoisa törmäys vaihtaa nopeudet:
+     u1 = v2 ja u2 = v1. Tässä v1 = 2,0 m/s ja v2 = 0, joten liikkuva
+     pallo pysähtyy ja levossa ollut lähtee samalla nopeudella. */
+  const m = 1.0, v = 2.0, R = 40, CY = 300;
+  const PX_PER_M = 110, ARROW_PER_MS = 44;
+  const X1 = 130, X2 = 600;
+  const LEFT = 50, RIGHT = 910;
+
+  const speed = v * PX_PER_M;
+  const tHit  = (X2 - 2 * R - X1) / speed;
+  const xStop = RIGHT - R - 10;
+  const T_END = tHit + (xStop - X2) / speed;
+
+  let t = 0, running = false, last = 0;
+
+  // Keskitetty teksti kehyksen sisään: muuten lukema leikkautuu, kun
+  // pallo on aivan reunassa.
+  function centerText(node, x){
+    node.setAttribute("x", x.toFixed(1));
+    const half = node.getComputedTextLength() / 2;
+    node.setAttribute("x", Math.min(RIGHT - half, Math.max(LEFT + half, x)).toFixed(1));
+  }
+
+  function setV(arrow, label, cx, u){
+    label.textContent = fmt(u) + " m/s";
+    centerText(label, cx);
+    const L = Math.abs(u) * ARROW_PER_MS;
+    if (L < 3){ arrow.style.display = "none"; return; }
+    arrow.style.display = "";
+    const s = Math.sign(u);
+    const mid = Math.min(RIGHT - L / 2, Math.max(LEFT + L / 2, cx));
+    arrow.setAttribute("x1", (mid - s * L / 2).toFixed(1));
+    arrow.setAttribute("x2", (mid + s * L / 2).toFixed(1));
+  }
+
+  function draw(){
+    const hit = t >= tHit;
+    const c1 = hit ? X2 - 2 * R : X1 + speed * t;
+    const c2 = hit ? Math.min(xStop, X2 + speed * (t - tHit)) : X2;
+    el.ball1.setAttribute("transform", `translate(${c1.toFixed(1)},${CY})`);
+    el.ball2.setAttribute("transform", `translate(${c2.toFixed(1)},${CY})`);
+    setV(el.vArr1, el.vTxt1, c1, hit ? 0 : v);
+    setV(el.vArr2, el.vTxt2, c2, hit ? v : 0);
+    centerText(el.mTxt1, c1);
+    centerText(el.mTxt2, c2);
+    el.pTxt.textContent = `p = ${fmt(m * v)} kg·m/s`;
+  }
+
+  function frame(now){
+    if (!running) return;
+    t = Math.min(T_END, t + Math.min(0.05, (now - last) / 1000));
+    last = now;
+    draw();
+    if (t >= T_END){ stop(); return; }
+    requestAnimationFrame(frame);
+  }
+  function start(){
+    if (running) return;
+    if (t >= T_END) t = 0;
+    running = true;
+    el.play.disabled = true; el.pause.disabled = false;
+    last = performance.now();
+    requestAnimationFrame(frame);
+  }
+  function stop(){
+    running = false;
+    el.play.disabled = false; el.pause.disabled = true;
+  }
+  function reset(){ stop(); t = 0; draw(); }
+
+  el.play.addEventListener("click", start);
+  el.pause.addEventListener("click", stop);
+  el.reset.addEventListener("click", reset);
+  window.addEventListener("keydown", e => {
+    if (e.code === "Space"){ e.preventDefault(); running ? stop() : start(); }
+  });
+
+  draw();
+})();
+</script>
+</body>
+</html>
