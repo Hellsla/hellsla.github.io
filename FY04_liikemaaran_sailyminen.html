@@ -92,16 +92,10 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
           <rect width="8" height="8" fill="#FFF2E5"/>
           <line x1="0" y1="0" x2="0" y2="8" stroke="#F28C28" stroke-opacity=".22" stroke-width="1.2"/>
         </pattern>
-        <marker id="arrowBlue" viewBox="0 0 10 10" refX="8.3" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto">
+        <marker id="arrowBlue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto">
           <path d="M0 0 L10 5 L0 10 Z" fill="#2E86A6"/>
         </marker>
-        <marker id="arrowOrange" viewBox="0 0 10 10" refX="8.3" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto">
-          <path d="M0 0 L10 5 L0 10 Z" fill="#F28C28"/>
-        </marker>
-        <marker id="pBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto">
-          <path d="M0 0 L10 5 L0 10 Z" fill="#2E86A6"/>
-        </marker>
-        <marker id="pOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto">
+        <marker id="arrowOrange" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto">
           <path d="M0 0 L10 5 L0 10 Z" fill="#F28C28"/>
         </marker>
       </defs>
@@ -131,15 +125,19 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
         <line id="vA2" stroke="#F28C28" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
       </g>
 
-      <!-- liikemäärät ketjuna: p2 alkaa siitä mihin p1 päättyy -->
+      <!-- liikemäärät ketjuna: p2 alkaa siitä mihin p1 päättyy.
+           Nuolet ovat polkuja, jotta kärki osuu tarkalleen vektorin päähän;
+           marker-end piirtäisi kärjen viivan pään yli. -->
       <g>
-        <text x="52" y="328" font-size="17" font-weight="650" fill="#7A7771">ennen</text>
-        <text x="52" y="397" font-size="17" font-weight="650" fill="#7A7771">jälkeen</text>
+        <text x="52" y="322" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
+        <text x="52" y="343" font-size="17" font-weight="650" fill="#7A7771">aluksi</text>
+        <text x="52" y="391" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
+        <text x="52" y="412" font-size="17" font-weight="650" fill="#7A7771">lopuksi</text>
         <line x1="480" y1="292" x2="480" y2="418" stroke="#3F3D39" stroke-opacity=".22" stroke-width="1.4" stroke-dasharray="5 6"/>
-        <line id="p1before" y1="316" y2="316" stroke="#2E86A6" stroke-width="9" stroke-linecap="butt" marker-end="url(#pBlue)"/>
-        <line id="p2before" y1="340" y2="340" stroke="#F28C28" stroke-width="9" stroke-linecap="butt" marker-end="url(#pOrange)"/>
-        <line id="p1after"  y1="385" y2="385" stroke="#2E86A6" stroke-width="9" stroke-linecap="butt" marker-end="url(#pBlue)"/>
-        <line id="p2after"  y1="409" y2="409" stroke="#F28C28" stroke-width="9" stroke-linecap="butt" marker-end="url(#pOrange)"/>
+        <path id="p1before" fill="#2E86A6"/>
+        <path id="p2before" fill="#F28C28"/>
+        <path id="p1after"  fill="#2E86A6"/>
+        <path id="p2after"  fill="#F28C28"/>
         <line id="totalMark" x1="480" y1="298" x2="480" y2="424" stroke="#3F3D39" stroke-width="2.8" stroke-linecap="round"/>
       </g>
     </svg>
@@ -237,32 +235,46 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
   const canCollide = () => v1 > v2 + 1e-9;
 
   /* ---- liikemäärät ketjutettuina: p2 alkaa p1:n kärjestä, jolloin
-          ketjun loppu osuu kokonaisliikemäärän merkkiviivaan ---- */
-  function setMomentumLine(node, from, p, y){
+          ketjun loppu osuu kokonaisliikemäärän merkkiviivaan.
+          Nuoli piirretään polkuna: kärki on tarkalleen kohdassa x1, ja
+          kärki kuuluu vektorin pituuteen. marker-end piirtäisi kärjen
+          viivan pään yli, jolloin ketju ylittäisi merkkiviivan. ---- */
+  const P_SHAFT = 4.5;             // varren puolikorkeus
+  const P_WING  = 9.5;             // kärjen puolikorkeus
+  const P_HEAD  = 19;              // kärjen pituus
+
+  function setMomentumArrow(node, from, p, y){
     const x0 = ZERO + from * pScale;
-    const x1 = x0 + p * pScale;
-    node.setAttribute("x1", x0.toFixed(1));
-    node.setAttribute("x2", x1.toFixed(1));
-    node.setAttribute("y1", y);
-    node.setAttribute("y2", y);
-    node.style.display = Math.abs(p * pScale) < 5 ? "none" : "";
+    const len = p * pScale;
+    if (Math.abs(len) < 4){ node.style.display = "none"; return; }
+    node.style.display = "";
+    const s = Math.sign(len);
+    const tip = x0 + len;
+    const head = Math.min(P_HEAD, Math.abs(len));   // lyhyt vektori: pelkkä kärki
+    const base = tip - s * head;
+    const f = n => n.toFixed(1);
+    node.setAttribute("d",
+      `M${f(x0)} ${y - P_SHAFT} L${f(base)} ${y - P_SHAFT} L${f(base)} ${y - P_WING} ` +
+      `L${f(tip)} ${y} L${f(base)} ${y + P_WING} L${f(base)} ${y + P_SHAFT} L${f(x0)} ${y + P_SHAFT} Z`);
   }
 
   function drawMomentum(showAfter){
     const p1 = m1 * v1, p2 = m2 * v2;
     const q1 = m1 * u1, q2 = m2 * u2;
-    const extent = Math.max(Math.abs(p1), Math.abs(p1 + p2),
-                            Math.abs(q1), Math.abs(q1 + q2), 0.8);
-    pScale = Math.min(50, 340 / extent);
+    // Mittakaava molemmilta puolilta: vasemmalle jää tilaa otsikoille.
+    const ends = [0, p1, p1 + p2, q1, q1 + q2];
+    const right = Math.max(...ends, 0.8);
+    const left  = Math.max(...ends.map(x => -x), 0);
+    pScale = Math.min(50, 420 / right, left > 0 ? 262 / left : Infinity);
 
-    setMomentumLine(el.p1before, 0, p1, 316);
-    setMomentumLine(el.p2before, p1, p2, 340);
+    setMomentumArrow(el.p1before, 0, p1, 316);
+    setMomentumArrow(el.p2before, p1, p2, 340);
 
     el.p1after.style.display = showAfter ? "" : "none";
     el.p2after.style.display = showAfter ? "" : "none";
     if (showAfter){
-      setMomentumLine(el.p1after, 0, q1, 385);
-      setMomentumLine(el.p2after, q1, q2, 409);
+      setMomentumArrow(el.p1after, 0, q1, 385);
+      setMomentumArrow(el.p2after, q1, q2, 409);
     }
 
     const totalX = (ZERO + (p1 + p2) * pScale).toFixed(1);
