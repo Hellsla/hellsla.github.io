@@ -1,150 +1,162 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Liikemäärän säilyminen</title>
-<link rel="stylesheet" href="simulaatio-theme.css" />
 <style>
-  :root{
-    --ink:#3F3D39;
-    --c1:#2E86A6;  --c1d:#1F5E74;
-    --c2:#F28C28;  --c2d:#B9660F;
-  }
+:root{
+  --ink:#3F3D39;
+  --muted:#7A7771;
+  --blue:#2E86A6;
+  --orange:#F28C28;
+  --red:#D84A62;
+  --paper:#FFFFFF;
+  --line:#D8D6D1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:var(--paper);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}
+body{overflow:hidden}
+.sim{width:100vw;height:100vh;min-height:360px;display:grid;grid-template-rows:1fr auto;background:#fff}
+.stage{position:relative;min-height:0}
+svg{display:block;width:100%;height:100%}
 
-  .card    { stroke:#C7D4DD; stroke-width:2; }
-  .railTop { stroke:#5A6670; stroke-width:5; stroke-linecap:round; }
-  .railLow { stroke:#9AA6AE; stroke-width:2.4; stroke-linecap:round; opacity:.7; }
-  .cartEdge{ stroke-width:2.6; }
-  .wheel   { fill:#3A3A3A; stroke:#22262A; stroke-width:1.6; }
-  .hub     { fill:#C9D2D8; }
-  .barEdge { stroke:var(--ink); stroke-width:1.8; stroke-linejoin:round; }
-  .zeroLn  { stroke:var(--ink); stroke-width:1.8; stroke-dasharray:6 6; opacity:.45; }
-  .totLn   { stroke:var(--ink); stroke-width:3.6; stroke-linecap:round; }
-  .box     { fill:#FFFFFF; stroke:var(--ink); stroke-width:2; }
+.controls{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;padding:6px 18px 14px}
+.group{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+button{
+  appearance:none;border:1.8px solid var(--ink);background:#fff;color:var(--ink);
+  border-radius:999px;padding:7px 13px;cursor:pointer;
+  font:600 clamp(13px,1.6vh,17px)/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+button:hover:not(:disabled){background:#F7F7F5}
+button.active{background:var(--ink);color:#fff}
+button:disabled{opacity:.4;cursor:default}
 
-  text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .result { font-size:24px; font-weight:700; }
-  .rowLbl { font-size:20px; font-weight:600; opacity:.75; }
-  .vLbl   { font-size:18px; font-weight:700; text-anchor:middle; }
-  .cartNo { font-size:17px; font-weight:700; text-anchor:middle; fill:#fff; }
-  .hint   { font-size:21px; font-weight:600; fill:#A8384C; text-anchor:middle; }
+.math-label{display:inline-flex;align-items:baseline;gap:.22em;white-space:nowrap}
+.math-label math{font-family:"STIX Two Math","Cambria Math","Times New Roman",serif;font-size:1.08em}
+.math-label .unit{font-weight:600}
 
-  /* --- ohjaimet --- */
-  .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
-  .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,20px); flex-wrap:wrap; }
-  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(11px,1.6vw,19px); justify-items:start; line-height:1.25; }
-  .ctrl-row input[type="range"]{ width:min(150px,16vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
-  .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.6vw,16px); font-size:clamp(12px,1.6vw,20px); }
-  .sim-btn.is-active{ background:var(--ink); color:#fff; }
+/* Lukemat skaalautuvat kehyksen korkeuden mukana, jotta ne pysyvät
+   samassa suhteessa piirrokseen myös projektorilla ja upotettuna. */
+.readout-math{
+  position:absolute;left:4.6%;top:4.5%;
+  display:none;align-items:baseline;gap:clamp(10px,2.4vh,22px);
+  color:var(--ink);pointer-events:none;
+}
+.readout-math .primary{font-size:clamp(17px,4.9vh,32px);font-weight:700}
+.readout-math .secondary{font-size:clamp(13px,3.5vh,23px);font-weight:600;color:var(--muted)}
+.readout-math math{font-family:"STIX Two Math","Cambria Math","Times New Roman",serif}
 
-  @media (max-width:560px){
-    body.sim-body{ place-items:start center; height:auto; min-height:100%; }
-    .sim-wrap{ width:100vw; height:auto; aspect-ratio:auto; }
-    .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
-    .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
-      width:100%; padding:12px 12px 18px; gap:8px; }
-    .ctrl-row input[type="range"]{ width:100%; }
-    .ctrl-row label{ flex:1 1 45%; }
-  }
+.control{display:grid;grid-template-columns:auto 118px;gap:7px;align-items:center;
+  font-size:clamp(12px,1.55vh,16px);font-weight:600;white-space:nowrap}
+input[type="range"]{width:118px;accent-color:var(--ink)}
+
+/* Kapeahkossa upotuksessa kavennetaan säätimiä, jotta ohjainrivi ei kasva
+   ja vie tilaa piirrokselta. */
+@media (max-width:820px){
+  .control{grid-template-columns:auto 92px}
+  input[type="range"]{width:92px}
+  .controls{gap:10px;padding:5px 10px 12px}
+}
+/* Varsinainen puhelinasettelu vasta selvästi kapeammalla, jottei tavallinen
+   700 px:n upotus muutu vierivaksi sivuksi. */
+@media (max-width:560px){
+  body{overflow:auto}
+  .sim{height:auto;min-height:100vh;grid-template-rows:auto auto}
+  .stage{height:min(62vw,470px);min-height:310px}
+  .controls{padding:8px 10px 16px;gap:10px}
+  .control{grid-template-columns:auto 104px}
+  input[type="range"]{width:104px}
+  .readout-math .primary{font-size:19px}
+  .readout-math .secondary{font-size:15px}
+  button{font-size:14px}
+  .control{font-size:13px}
+}
 </style>
 </head>
-<body class="sim-body">
-<main class="sim-wrap" aria-label="Liikemäärän säilymisen simulaatio">
-  <svg viewBox="0 0 960 540" role="img" aria-label="Kahden vaunun törmäys ja liikemäärän säilyminen">
-    <defs>
-      <linearGradient id="gCart1" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#5FB2CE"/><stop offset="1" stop-color="#22687F"/>
-      </linearGradient>
-      <linearGradient id="gCart2" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#FFB864"/><stop offset="1" stop-color="#D3730F"/>
-      </linearGradient>
-      <linearGradient id="gBar1" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#4FA3C0"/><stop offset="1" stop-color="#256F88"/>
-      </linearGradient>
-      <linearGradient id="gBar2" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#FFAB4E"/><stop offset="1" stop-color="#CE7412"/>
-      </linearGradient>
-      <linearGradient id="gScene" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#EEF5FA"/><stop offset="1" stop-color="#FAFCFE"/>
-      </linearGradient>
-      <radialGradient id="gShadow">
-        <stop offset="0" stop-color="#3F3D39" stop-opacity="0.28"/>
-        <stop offset="1" stop-color="#3F3D39" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-
-    <!-- ============ TULOKSET (näkyviin vasta törmäyksen jälkeen) ============ -->
-    <g id="results" style="display:none">
-      <rect class="box" x="40" y="28" width="300" height="42" rx="9"/>
-      <text id="txtP" class="result" x="56" y="57">p = –</text>
-      <rect class="box" x="40" y="78" width="300" height="42" rx="9"/>
-      <text id="txtE" class="result" x="56" y="107">Eₖ = –</text>
-    </g>
-    <text id="hint" class="hint" x="480" y="80"></text>
-
-    <!-- ============ RATA JA VAUNUT ============ -->
-    <rect class="card" x="24" y="132" width="912" height="136" rx="16" fill="url(#gScene)"/>
-    <ellipse id="sh1" fill="url(#gShadow)" cy="250" rx="46" ry="8"/>
-    <ellipse id="sh2" fill="url(#gShadow)" cy="250" rx="46" ry="8"/>
-    <line class="railTop" x1="40" y1="246" x2="920" y2="246"/>
-    <line class="railLow" x1="40" y1="253" x2="920" y2="253"/>
-
-    <g id="cart1">
-      <rect id="body1" class="cartEdge" stroke="#1F5E74" fill="url(#gCart1)" x="0" y="-40" width="70" height="32" rx="8"/>
-      <circle id="w1a" class="wheel" cy="-3" r="8"/><circle id="w1b" class="wheel" cy="-3" r="8"/>
-      <circle id="h1a" class="hub" cy="-3" r="3"/><circle id="h1b" class="hub" cy="-3" r="3"/>
-      <text id="no1" class="cartNo" y="-19">1</text>
-      <line id="vA1" stroke="#1F5E74" stroke-width="4.5" marker-end="url(#vArr1)"/>
-      <text id="vT1" class="vLbl" fill="#1F5E74"></text>
-    </g>
-    <g id="cart2">
-      <rect id="body2" class="cartEdge" stroke="#B9660F" fill="url(#gCart2)" x="0" y="-40" width="70" height="32" rx="8"/>
-      <circle id="w2a" class="wheel" cy="-3" r="8"/><circle id="w2b" class="wheel" cy="-3" r="8"/>
-      <circle id="h2a" class="hub" cy="-3" r="3"/><circle id="h2b" class="hub" cy="-3" r="3"/>
-      <text id="no2" class="cartNo" y="-19">2</text>
-      <line id="vA2" stroke="#B9660F" stroke-width="4.5" marker-end="url(#vArr2)"/>
-      <text id="vT2" class="vLbl" fill="#B9660F"></text>
-    </g>
-    <defs>
-      <marker id="vArr1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M0 0 L10 5 L0 10 z" fill="#1F5E74"/></marker>
-      <marker id="vArr2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M0 0 L10 5 L0 10 z" fill="#B9660F"/></marker>
-    </defs>
-
-    <!-- ============ LIIKEMÄÄRÄNUOLET ============ -->
-    <rect class="card" x="24" y="284" width="912" height="128" rx="16" fill="#FBFBF9"/>
-    <g id="bars">
-      <line id="zeroLn" class="zeroLn" x1="520" y1="290" x2="520" y2="406"/>
-      <text class="rowLbl" x="40" y="322">ennen</text>
-      <text class="rowLbl" x="40" y="380">jälkeen</text>
-
-      <path id="b1a" class="barEdge" fill="url(#gBar1)"/>
-      <path id="b2a" class="barEdge" fill="url(#gBar2)"/>
-      <path id="b1b" class="barEdge" fill="url(#gBar1)"/>
-      <path id="b2b" class="barEdge" fill="url(#gBar2)"/>
-
-      <line id="totLn" class="totLn" x1="520" y1="288" x2="520" y2="408"/>
-    </g>
-  </svg>
-
-  <section class="sim-controls" aria-label="Säätimet">
-    <div class="ctrl-row">
-      <button id="modeIne" class="sim-btn is-active" type="button">Kimmoton</button>
-      <button id="modeEla" class="sim-btn" type="button">Kimmoisa</button>
-      <button id="play" class="sim-btn" type="button">Käynnistä</button>
-      <button id="reset" class="sim-btn" type="button">Nollaa</button>
+<body>
+<main class="sim" aria-label="Liikemäärän säilymisen simulaatio">
+  <div class="stage">
+    <div id="mathReadout" class="readout-math" aria-live="polite">
+      <span id="pMath" class="primary math-label"></span>
+      <span id="eMath" class="secondary math-label"></span>
     </div>
-    <div class="ctrl-row">
-      <label><span id="m1Lbl">m₁ = 2,0 kg</span>
-        <input id="m1" type="range" min="0.5" max="3" step="0.1" value="2" aria-label="Massa 1"></label>
-      <label><span id="v1Lbl">v₁ = 2,0 m/s</span>
-        <input id="v1" type="range" min="-3" max="3" step="0.1" value="2" aria-label="Nopeus 1"></label>
-      <label><span id="m2Lbl">m₂ = 1,0 kg</span>
-        <input id="m2" type="range" min="0.5" max="3" step="0.1" value="1" aria-label="Massa 2"></label>
-      <label><span id="v2Lbl">v₂ = 0,0 m/s</span>
-        <input id="v2" type="range" min="-3" max="3" step="0.1" value="0" aria-label="Nopeus 2"></label>
+    <svg viewBox="0 0 960 470" role="img" aria-label="Kahden vaunun yksiulotteinen törmäys">
+      <defs>
+        <pattern id="hatchBlue" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+          <rect width="8" height="8" fill="#EAF5F8"/>
+          <line x1="0" y1="0" x2="0" y2="8" stroke="#2E86A6" stroke-opacity=".20" stroke-width="1.2"/>
+        </pattern>
+        <pattern id="hatchOrange" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+          <rect width="8" height="8" fill="#FFF2E5"/>
+          <line x1="0" y1="0" x2="0" y2="8" stroke="#F28C28" stroke-opacity=".22" stroke-width="1.2"/>
+        </pattern>
+        <marker id="arrowBlue" viewBox="0 0 10 10" refX="8.3" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#2E86A6"/>
+        </marker>
+        <marker id="arrowOrange" viewBox="0 0 10 10" refX="8.3" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#F28C28"/>
+        </marker>
+        <marker id="pBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#2E86A6"/>
+        </marker>
+        <marker id="pOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#F28C28"/>
+        </marker>
+      </defs>
+
+      <text id="hint" x="480" y="55" text-anchor="middle" font-size="18" font-weight="650" fill="#D84A62"></text>
+
+      <!-- rata -->
+      <line x1="54" y1="230" x2="906" y2="230" stroke="#3F3D39" stroke-width="3.2" stroke-linecap="round"/>
+      <line x1="54" y1="237" x2="906" y2="237" stroke="#A7A39B" stroke-width="1.4" stroke-linecap="round"/>
+      <g id="ties" opacity=".45" stroke="#8C8880" stroke-width="1"></g>
+
+      <g id="cart1">
+        <rect id="body1" x="0" y="-42" width="70" height="34" rx="4" fill="url(#hatchBlue)" stroke="#3F3D39" stroke-width="2.3"/>
+        <line id="strip1" x1="6" y1="-14" x2="64" y2="-14" stroke="#2E86A6" stroke-opacity=".35" stroke-width="1.4"/>
+        <circle id="w1a" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
+        <circle id="w1b" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
+        <text id="no1" y="-20" text-anchor="middle" font-size="16" font-weight="750" fill="#3F3D39">1</text>
+        <line id="vA1" stroke="#2E86A6" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+      </g>
+
+      <g id="cart2">
+        <rect id="body2" x="0" y="-42" width="70" height="34" rx="4" fill="url(#hatchOrange)" stroke="#3F3D39" stroke-width="2.3"/>
+        <line id="strip2" x1="6" y1="-14" x2="64" y2="-14" stroke="#F28C28" stroke-opacity=".38" stroke-width="1.4"/>
+        <circle id="w2a" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
+        <circle id="w2b" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
+        <text id="no2" y="-20" text-anchor="middle" font-size="16" font-weight="750" fill="#3F3D39">2</text>
+        <line id="vA2" stroke="#F28C28" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+      </g>
+
+      <!-- liikemäärät ketjuna: p2 alkaa siitä mihin p1 päättyy -->
+      <g>
+        <text x="52" y="328" font-size="17" font-weight="650" fill="#7A7771">ennen</text>
+        <text x="52" y="397" font-size="17" font-weight="650" fill="#7A7771">jälkeen</text>
+        <line x1="480" y1="292" x2="480" y2="418" stroke="#3F3D39" stroke-opacity=".22" stroke-width="1.4" stroke-dasharray="5 6"/>
+        <line id="p1before" y1="316" y2="316" stroke="#2E86A6" stroke-width="9" stroke-linecap="butt" marker-end="url(#pBlue)"/>
+        <line id="p2before" y1="340" y2="340" stroke="#F28C28" stroke-width="9" stroke-linecap="butt" marker-end="url(#pOrange)"/>
+        <line id="p1after"  y1="385" y2="385" stroke="#2E86A6" stroke-width="9" stroke-linecap="butt" marker-end="url(#pBlue)"/>
+        <line id="p2after"  y1="409" y2="409" stroke="#F28C28" stroke-width="9" stroke-linecap="butt" marker-end="url(#pOrange)"/>
+        <line id="totalMark" x1="480" y1="298" x2="480" y2="424" stroke="#3F3D39" stroke-width="2.8" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+
+  <section class="controls" aria-label="Säätimet">
+    <div class="group">
+      <button id="modeIne" class="active" type="button">Kimmoton</button>
+      <button id="modeEla" type="button">Kimmoisa</button>
+      <button id="play" type="button">Käynnistä</button>
+      <button id="reset" type="button">Nollaa</button>
+    </div>
+    <div class="group">
+      <label class="control"><span id="m1Lbl" class="math-label"></span><input id="m1" type="range" min="0.5" max="3" step="0.1" value="2" aria-label="Massa 1"></label>
+      <label class="control"><span id="v1Lbl" class="math-label"></span><input id="v1" type="range" min="-3" max="3" step="0.1" value="2" aria-label="Nopeus 1"></label>
+      <label class="control"><span id="m2Lbl" class="math-label"></span><input id="m2" type="range" min="0.5" max="3" step="0.1" value="1" aria-label="Massa 2"></label>
+      <label class="control"><span id="v2Lbl" class="math-label"></span><input id="v2" type="range" min="-3" max="3" step="0.1" value="0" aria-label="Nopeus 2"></label>
     </div>
   </section>
 </main>
@@ -153,157 +165,215 @@
 (() => {
   "use strict";
 
-  const SC = 45;                 // pikseliä metriä kohti radalla
-  let PSC = 22;                  // pikseliä yksikköä (kg·m/s) kohti; sovitetaan tilanteeseen
-  const MEET = 480, RAIL = 246, ZERO = 520;
-  const T_APP = 1.0, T_POST = 1.0;
-
-  const $ = (id) => document.getElementById(id);
+  const $ = id => document.getElementById(id);
   const el = {};
-  for (const id of ["results","txtP","txtE","hint","sh1","sh2",
-                    "cart1","body1","w1a","w1b","h1a","h1b","no1","vA1","vT1",
-                    "cart2","body2","w2a","w2b","h2a","h2b","no2","vA2","vT2",
-                    "b1a","b2a","b1b","b2b","totLn","zeroLn",
-                    "m1","v1","m2","v2","m1Lbl","v1Lbl","m2Lbl","v2Lbl",
-                    "modeIne","modeEla","play","reset"]) el[id] = $(id);
+  [
+    "hint","ties",
+    "cart1","body1","strip1","w1a","w1b","no1","vA1",
+    "cart2","body2","strip2","w2a","w2b","no2","vA2",
+    "p1before","p2before","p1after","p2after","totalMark",
+    "m1","v1","m2","v2","m1Lbl","v1Lbl","m2Lbl","v2Lbl",
+    "modeIne","modeEla","play","reset","mathReadout","pMath","eMath"
+  ].forEach(id => el[id] = $(id));
 
-  const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",").replace("-", "−");
-  const cartW = (m) => 44 + 16 * m;
+  const MEET = 480;
+  const RAIL = 230;
+  const ZERO = 480;
+  const SCENE_SCALE = 45;          // pikseliä metriä kohti
+  const T_MAX = 1.8;
+  // Kesto sovitetaan nopeuteen: nopea vaunu ei ehdi ulos radalta eikä hidas
+  // jää paikalleen. Raja lasketaan vaunun reunasta, ei keskipisteestä.
+  const maxTravel = () => 415 - Math.max(cartW(m1), cartW(m2));
+  const legTime = (...vs) => {
+    const top = Math.max(...vs.map(Math.abs), 0.05);
+    return Math.min(T_MAX, maxTravel() / (top * SCENE_SCALE));
+  };
+  let tApproach = T_MAX, tAfter = T_MAX;
 
-  /* ---------------- törmäysmalli ----------------
-     Palautuskerroin e: e = 0 kimmoton, e = 1 kimmoisa.            */
-  function solve(m1, v1, m2, v2, e) {
+  let elastic = false;
+  let phase = "idle";
+  let t = 0;
+  let last = performance.now();
+
+  let m1 = 2, v1 = 2, m2 = 1, v2 = 0, u1 = 0, u2 = 0;
+  let pScale = 28;
+
+  const fmt = (x, d = 1) => {
+    const z = Math.abs(x) < 0.0005 ? 0 : x;
+    return z.toFixed(d).replace(".", ",").replace("-", "−");
+  };
+  const cartW = m => 44 + 16 * m;
+  const energy = (a, b, c, d) => 0.5 * a * b * b + 0.5 * c * d * d;
+
+  (function sleepers(){
+    let s = "";
+    for (let x = 95; x <= 875; x += 30) s += `<line x1="${x}" y1="239" x2="${x - 10}" y2="247"/>`;
+    el.ties.innerHTML = s;
+  })();
+
+  /* MathML kirjoitetaan suoraan, joten tiedosto pysyy itsenäisenä eikä
+     tarvitse ulkoista kirjastoa. */
+  const mathVar = (symbol, sub) =>
+    `<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>${symbol}</mi><mn>${sub}</mn></msub></math>`;
+
+  function setControlMath(node, symbol, sub, value, unit){
+    node.innerHTML = `${mathVar(symbol, sub)}<span>= ${fmt(value)}</span><span class="unit">${unit}</span>`;
+  }
+
+  function setResultMath(){
+    const P = m1 * v1 + m2 * v2;
+    const E0 = energy(m1, v1, m2, v2);
+    const E1 = energy(m1, u1, m2, u2);
+    el.pMath.innerHTML =
+      `<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mn>${fmt(P)}</mn></math><span class="unit">kg·m/s</span>`;
+    el.eMath.innerHTML =
+      `<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>E</mi><mi>k</mi></msub><mo>=</mo><mn>${fmt(E0)}</mn><mo>→</mo><mn>${fmt(E1)}</mn></math><span class="unit">J</span>`;
+  }
+
+  function solve(m1, v1, m2, v2, e){
     const P = m1 * v1 + m2 * v2, M = m1 + m2;
     return { u1: (P + m2 * e * (v2 - v1)) / M, u2: (P + m1 * e * (v1 - v2)) / M };
   }
-  const Ek = (m1, v1, m2, v2) => 0.5 * m1 * v1 * v1 + 0.5 * m2 * v2 * v2;
-
-  let elastic = false, phase = "idle", t = 0;
-  let m1 = 2, v1 = 2, m2 = 1, v2 = 0, u1 = 0, u2 = 0;
   const canCollide = () => v1 > v2 + 1e-9;
 
-  /* ---------------- liikemäärä nuolena ---------------- */
-  const BAR_H = 18;
-  function setBar(node, from, p, yTop) {
-    const x0 = ZERO + from * PSC, w = p * PSC;
-    if (Math.abs(w) < 1.5) { node.setAttribute("d", ""); return; }
-    const x1 = x0 + w, s = Math.sign(w);
-    const head = Math.min(18, Math.abs(w) * 0.45);
-    const bx = x1 - s * head;
-    const yc = yTop + BAR_H / 2, hh = BAR_H / 2, hw = hh + 5;
-    const P = (a, c) => `${a.toFixed(1)} ${c.toFixed(1)}`;
-    node.setAttribute("d",
-      `M${P(x0, yc - hh)} L${P(bx, yc - hh)} L${P(bx, yc - hw)} L${P(x1, yc)} `
-      + `L${P(bx, yc + hw)} L${P(bx, yc + hh)} L${P(x0, yc + hh)} Z`);
+  /* ---- liikemäärät ketjutettuina: p2 alkaa p1:n kärjestä, jolloin
+          ketjun loppu osuu kokonaisliikemäärän merkkiviivaan ---- */
+  function setMomentumLine(node, from, p, y){
+    const x0 = ZERO + from * pScale;
+    const x1 = x0 + p * pScale;
+    node.setAttribute("x1", x0.toFixed(1));
+    node.setAttribute("x2", x1.toFixed(1));
+    node.setAttribute("y1", y);
+    node.setAttribute("y2", y);
+    node.style.display = Math.abs(p * pScale) < 5 ? "none" : "";
   }
 
-  function drawBars(showAfter) {
+  function drawMomentum(showAfter){
     const p1 = m1 * v1, p2 = m2 * v2;
-    setBar(el.b1a, 0, p1, 300);
-    setBar(el.b2a, p1, p2, 322);
     const q1 = m1 * u1, q2 = m2 * u2;
-    el.b1b.style.display = el.b2b.style.display = showAfter ? "" : "none";
-    if (showAfter) { setBar(el.b1b, 0, q1, 358); setBar(el.b2b, q1, q2, 380); }
-    const tx = (ZERO + (p1 + p2) * PSC).toFixed(1);
-    el.totLn.setAttribute("x1", tx); el.totLn.setAttribute("x2", tx);
+    const extent = Math.max(Math.abs(p1), Math.abs(p1 + p2),
+                            Math.abs(q1), Math.abs(q1 + q2), 0.8);
+    pScale = Math.min(50, 340 / extent);
+
+    setMomentumLine(el.p1before, 0, p1, 316);
+    setMomentumLine(el.p2before, p1, p2, 340);
+
+    el.p1after.style.display = showAfter ? "" : "none";
+    el.p2after.style.display = showAfter ? "" : "none";
+    if (showAfter){
+      setMomentumLine(el.p1after, 0, q1, 385);
+      setMomentumLine(el.p2after, q1, q2, 409);
+    }
+
+    const totalX = (ZERO + (p1 + p2) * pScale).toFixed(1);
+    el.totalMark.setAttribute("x1", totalX);
+    el.totalMark.setAttribute("x2", totalX);
   }
 
-  /* ---------------- näyttämö ---------------- */
-  function placeCart(g, body, wa, wb, ha, hb, no, va, vt, sh, xLeft, m, v, yArrow) {
+  function placeCart(g, body, strip, wA, wB, no, arrow, xLeft, m, v, arrowY){
     const w = cartW(m);
     body.setAttribute("width", w);
-    for (const [n, cx] of [[wa, 16], [wb, w - 16], [ha, 16], [hb, w - 16]]) n.setAttribute("cx", cx);
+    strip.setAttribute("x2", w - 6);
+    wA.setAttribute("cx", 16);
+    wB.setAttribute("cx", w - 16);
     no.setAttribute("x", w / 2);
     g.setAttribute("transform", `translate(${xLeft.toFixed(1)},${RAIL})`);
-    sh.setAttribute("cx", (xLeft + w / 2).toFixed(1));
-    sh.setAttribute("rx", (w / 2 + 6).toFixed(1));
-    const L = Math.abs(v) * 26;
-    if (L > 6) {
-      const x0 = w / 2;
-      va.setAttribute("x1", x0 - Math.sign(v) * L / 2); va.setAttribute("y1", yArrow);
-      va.setAttribute("x2", x0 + Math.sign(v) * L / 2); va.setAttribute("y2", yArrow);
-      va.style.display = "";
-    } else va.style.display = "none";
-    vt.setAttribute("x", w / 2); vt.setAttribute("y", yArrow - 14);
-    vt.textContent = `${fmt(v, 1)} m/s`;
+
+    const L = Math.abs(v) * 22;
+    if (L < 6){ arrow.style.display = "none"; return; }
+    const c = w / 2;
+    arrow.style.display = "";
+    arrow.setAttribute("x1", c - Math.sign(v) * L / 2);
+    arrow.setAttribute("x2", c + Math.sign(v) * L / 2);
+    arrow.setAttribute("y1", arrowY);
+    arrow.setAttribute("y2", arrowY);
   }
 
-  function drawScene(tRel, after) {
-    const a = after ? u1 : v1, b = after ? u2 : v2;
-    const x1r = MEET + a * SC * tRel, x2l = MEET + b * SC * tRel;
-    placeCart(el.cart1, el.body1, el.w1a, el.w1b, el.h1a, el.h1b, el.no1, el.vA1, el.vT1, el.sh1,
-              x1r - cartW(m1), m1, a, -88);
-    placeCart(el.cart2, el.body2, el.w2a, el.w2b, el.h2a, el.h2b, el.no2, el.vA2, el.vT2, el.sh2,
-              x2l, m2, b, -56);
+  function drawScene(tRel, after){
+    const a = after ? u1 : v1;
+    const b = after ? u2 : v2;
+    const x1Right = MEET + a * SCENE_SCALE * tRel;
+    const x2Left  = MEET + b * SCENE_SCALE * tRel;
+    // nuolet eri korkeuksille, muuten ne menevät päällekkäin vaunujen koskettaessa
+    placeCart(el.cart1, el.body1, el.strip1, el.w1a, el.w1b, el.no1, el.vA1,
+              x1Right - cartW(m1), m1, a, -86);
+    placeCart(el.cart2, el.body2, el.strip2, el.w2a, el.w2b, el.no2, el.vA2,
+              x2Left, m2, b, -58);
   }
 
-  /* ---------------- tulokset: esiin vasta törmäyksen jälkeen ---------------- */
-  function showResults(after) {
-    el.results.style.display = after ? "" : "none";
-    if (!after) return;
-    el.txtP.textContent = `p = ${fmt(m1 * v1 + m2 * v2, 1)} kg·m/s`;
-    el.txtE.textContent = `Eₖ ${fmt(Ek(m1, v1, m2, v2), 1)} → ${fmt(Ek(m1, u1, m2, u2), 1)} J`;
+  function updateReadout(show){
+    el.mathReadout.style.display = show ? "flex" : "none";
+    if (show) setResultMath();
   }
 
-  /* ---------------- animaatio ---------------- */
-  let last = performance.now();
-  function tick(now) {
-    let d = (now - last) / 1000; last = now;
-    if (!isFinite(d) || d < 0) d = 0;
-    d = Math.min(d, 0.05);
-    if (phase === "before") {
-      t += d;
-      drawScene(-(T_APP - t), false);
-      if (t >= T_APP) { phase = "after"; t = 0; drawBars(true); showResults(true); }
-    } else if (phase === "after") {
-      t += d;
-      drawScene(t, true);
-      if (t >= T_POST) { phase = "done"; el.play.textContent = "Käynnistä"; }
-    }
-    requestAnimationFrame(tick);
-  }
-
-  /* ---------------- ohjaimet ---------------- */
-  function readInputs() {
-    m1 = +el.m1.value; v1 = +el.v1.value; m2 = +el.m2.value; v2 = +el.v2.value;
+  function readInputs(){
+    m1 = +el.m1.value; v1 = +el.v1.value;
+    m2 = +el.m2.value; v2 = +el.v2.value;
     const r = solve(m1, v1, m2, v2, elastic ? 1 : 0);
     u1 = r.u1; u2 = r.u2;
-    const extent = Math.max(Math.abs(m1 * v1) + Math.abs(m2 * v2),
-                            Math.abs(m1 * u1) + Math.abs(m2 * u2), 0.5);
-    PSC = Math.min(58, 385 / extent);
-    el.m1Lbl.textContent = `m₁ = ${fmt(m1, 1)} kg`;
-    el.v1Lbl.textContent = `v₁ = ${fmt(v1, 1)} m/s`;
-    el.m2Lbl.textContent = `m₂ = ${fmt(m2, 1)} kg`;
-    el.v2Lbl.textContent = `v₂ = ${fmt(v2, 1)} m/s`;
-    el.hint.textContent = canCollide() ? "" : "vaunut eivät kohtaa";
+    tApproach = legTime(v1, v2);
+    tAfter = legTime(u1, u2);
+    setControlMath(el.m1Lbl, "m", "1", m1, "kg");
+    setControlMath(el.v1Lbl, "v", "1", v1, "m/s");
+    setControlMath(el.m2Lbl, "m", "2", m2, "kg");
+    setControlMath(el.v2Lbl, "v", "2", v2, "m/s");
+    el.hint.textContent = canCollide() ? "" : "Vaunut eivät kohtaa";
+    el.play.disabled = !canCollide();
   }
 
-  function reset() {
+  function reset(){
     readInputs();
     phase = "idle"; t = 0;
     el.play.textContent = "Käynnistä";
-    drawScene(-T_APP, false);
-    drawBars(false);
-    showResults(false);
+    drawScene(-tApproach, false);
+    drawMomentum(false);
+    updateReadout(false);
   }
 
-  for (const id of ["m1", "v1", "m2", "v2"]) el[id].addEventListener("input", reset);
-  function setMode() {
-    el.modeIne.classList.toggle("is-active", !elastic);
-    el.modeEla.classList.toggle("is-active", elastic);
+  function setMode(value){
+    elastic = value;
+    el.modeIne.classList.toggle("active", !elastic);
+    el.modeEla.classList.toggle("active", elastic);
     reset();
   }
-  el.modeIne.addEventListener("click", () => { elastic = false; setMode(); });
-  el.modeEla.addEventListener("click", () => { elastic = true; setMode(); });
+
+  ["m1","v1","m2","v2"].forEach(id => el[id].addEventListener("input", reset));
+  el.modeIne.addEventListener("click", () => setMode(false));
+  el.modeEla.addEventListener("click", () => setMode(true));
+  el.reset.addEventListener("click", reset);
+
   el.play.addEventListener("click", () => {
-    if (phase === "before" || phase === "after" || !canCollide()) return;
+    if (!canCollide() || phase === "before" || phase === "after") return;
     readInputs();
     phase = "before"; t = 0;
-    drawBars(false); showResults(false);
     el.play.textContent = "Ajossa…";
+    drawMomentum(false);
+    updateReadout(false);
     last = performance.now();
   });
-  el.reset.addEventListener("click", reset);
+
+  function tick(now){
+    let dt = (now - last) / 1000;
+    last = now;
+    if (!Number.isFinite(dt) || dt < 0) dt = 0;
+    dt = Math.min(dt, .05);
+
+    if (phase === "before"){
+      t += dt;
+      drawScene(-(tApproach - t), false);
+      if (t >= tApproach){
+        phase = "after"; t = 0;
+        drawScene(0, true);
+        drawMomentum(true);
+        updateReadout(true);
+      }
+    } else if (phase === "after"){
+      t += dt;
+      drawScene(t, true);
+      if (t >= tAfter){ phase = "done"; el.play.textContent = "Käynnistä"; }
+    }
+    requestAnimationFrame(tick);
+  }
 
   reset();
   requestAnimationFrame(tick);
