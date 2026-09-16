@@ -129,16 +129,25 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
            Nuolet ovat polkuja, jotta kärki osuu tarkalleen vektorin päähän;
            marker-end piirtäisi kärjen viivan pään yli. -->
       <g>
-        <text x="52" y="322" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
-        <text x="52" y="343" font-size="17" font-weight="650" fill="#7A7771">aluksi</text>
-        <text x="52" y="391" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
-        <text x="52" y="412" font-size="17" font-weight="650" fill="#7A7771">lopuksi</text>
-        <line x1="480" y1="292" x2="480" y2="418" stroke="#3F3D39" stroke-opacity=".22" stroke-width="1.4" stroke-dasharray="5 6"/>
+        <text x="52" y="317" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
+        <text x="52" y="338" font-size="17" font-weight="650" fill="#7A7771">aluksi</text>
+        <text x="52" y="409" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
+        <text x="52" y="430" font-size="17" font-weight="650" fill="#7A7771">lopuksi</text>
+        <line x1="480" y1="280" x2="480" y2="448" stroke="#3F3D39" stroke-opacity=".22" stroke-width="1.4" stroke-dasharray="5 6"/>
         <path id="p1before" fill="#2E86A6"/>
         <path id="p2before" fill="#F28C28"/>
         <path id="p1after"  fill="#2E86A6"/>
         <path id="p2after"  fill="#F28C28"/>
-        <line id="totalMark" x1="480" y1="298" x2="480" y2="424" stroke="#3F3D39" stroke-width="2.8" stroke-linecap="round"/>
+        <line id="totalMark" x1="480" y1="284" x2="480" y2="452" stroke="#3F3D39" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- lyhyt lasku nuolen päällä: m . v = p. Valkoinen reunus pitää
+             tekstin luettavana nollaviivan ja merkkiviivan päällä. -->
+        <g font-size="15" font-weight="700" text-anchor="middle"
+           paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round">
+          <text id="calc1before" fill="#1F6B88"></text>
+          <text id="calc2before" fill="#C06B10"></text>
+          <text id="calc1after"  fill="#1F6B88"></text>
+          <text id="calc2after"  fill="#C06B10"></text>
+        </g>
       </g>
     </svg>
   </div>
@@ -170,6 +179,7 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
     "cart1","body1","strip1","w1a","w1b","no1","vA1",
     "cart2","body2","strip2","w2a","w2b","no2","vA2",
     "p1before","p2before","p1after","p2after","totalMark",
+    "calc1before","calc2before","calc1after","calc2after",
     "m1","v1","m2","v2","m1Lbl","v1Lbl","m2Lbl","v2Lbl",
     "modeIne","modeEla","play","reset","mathReadout","pMath","eMath"
   ].forEach(id => el[id] = $(id));
@@ -243,10 +253,29 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
   const P_WING  = 9.5;             // kärjen puolikorkeus
   const P_HEAD  = 19;              // kärjen pituus
 
-  function setMomentumArrow(node, from, p, y){
+  /* Lyhyt lasku: m . v = p, esim. "1,0 · (−1,0) = −1,0".
+     Negatiivinen nopeus sulkeisiin, jotta kertolasku pysyy luettavana. */
+  function calcText(m, v){
+    // Tulo lasketaan pyöristetyistä tekijöistä, muuten ruudulla lukisi
+    // esimerkiksi "2,0 · 1,3 = 2,7" kun 2,0 · 1,3 = 2,6. Nuolten pituudet
+    // ja merkkiviiva käyttävät edelleen tarkkoja arvoja.
+    const mr = Math.round(m * 10) / 10;
+    const vr = Math.round(v * 10) / 10;
+    const prod = Math.round(mr * vr * 100) / 100;
+    const shown = fmt(prod, 2).replace(/0$/, "");   // 4,00 -> 4,0 ; 0,25 jää
+    const factor = vr < 0 ? `(${fmt(vr)})` : fmt(vr);
+    return `${fmt(mr)} · ${factor} = ${shown}`;
+  }
+
+  function setMomentumArrow(node, label, from, m, v, y){
+    const p = m * v;
     const x0 = ZERO + from * pScale;
     const len = p * pScale;
-    if (Math.abs(len) < 4){ node.style.display = "none"; return; }
+    if (Math.abs(len) < 4){
+      node.style.display = "none";
+      label.style.display = "none";
+      return;
+    }
     node.style.display = "";
     const s = Math.sign(len);
     const tip = x0 + len;
@@ -256,6 +285,14 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
     node.setAttribute("d",
       `M${f(x0)} ${y - P_SHAFT} L${f(base)} ${y - P_SHAFT} L${f(base)} ${y - P_WING} ` +
       `L${f(tip)} ${y} L${f(base)} ${y + P_WING} L${f(base)} ${y + P_SHAFT} L${f(x0)} ${y + P_SHAFT} Z`);
+
+    label.style.display = "";
+    label.textContent = calcText(m, v);
+    label.setAttribute("y", y - 15);
+    // keskelle nuolta, mutta niin ettei mene rivin otsikon eikä reunan yli
+    const half = label.getComputedTextLength() / 2;
+    const mid = Math.min(900 - half, Math.max(180 + half, (x0 + tip) / 2));
+    label.setAttribute("x", mid.toFixed(1));
   }
 
   function drawMomentum(showAfter){
@@ -267,14 +304,17 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
     const left  = Math.max(...ends.map(x => -x), 0);
     pScale = Math.min(50, 420 / right, left > 0 ? 262 / left : Infinity);
 
-    setMomentumArrow(el.p1before, 0, p1, 316);
-    setMomentumArrow(el.p2before, p1, p2, 340);
+    setMomentumArrow(el.p1before, el.calc1before, 0,  m1, v1, 302);
+    setMomentumArrow(el.p2before, el.calc2before, p1, m2, v2, 344);
 
-    el.p1after.style.display = showAfter ? "" : "none";
-    el.p2after.style.display = showAfter ? "" : "none";
+    const after = showAfter ? "" : "none";
+    el.p1after.style.display = after;
+    el.p2after.style.display = after;
+    el.calc1after.style.display = after;
+    el.calc2after.style.display = after;
     if (showAfter){
-      setMomentumArrow(el.p1after, 0, q1, 385);
-      setMomentumArrow(el.p2after, q1, q2, 409);
+      setMomentumArrow(el.p1after, el.calc1after, 0,  m1, u1, 394);
+      setMomentumArrow(el.p2after, el.calc2after, q1, m2, u2, 436);
     }
 
     const totalX = (ZERO + (p1 + p2) * pScale).toFixed(1);
