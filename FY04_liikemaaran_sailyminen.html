@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liikemäärän säilyminen</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --c1:#2E86A6;   /* vaunu 1 */
+    --c1d:#22687F;
+    --c2:#F28C28;   /* vaunu 2 */
+    --c2d:#C46E14;
+    --muted:#bfb7aa;
+  }
+
+  .ground { stroke:var(--ink); stroke-width:3; stroke-linecap:round; }
+  .hatch  { stroke:var(--ink); stroke-width:1.2; opacity:.3; }
+  .cartEdge{ stroke:var(--ink); stroke-width:2.6; }
+  .wheel  { fill:var(--ink); }
+  .barEdge{ stroke:var(--ink); stroke-width:1.8; }
+  .zeroLn { stroke:var(--ink); stroke-width:1.8; stroke-dasharray:6 6; opacity:.5; }
+  .totLn  { stroke:var(--ink); stroke-width:3.4; stroke-linecap:round; }
+  .box    { fill:none; stroke:var(--ink); stroke-width:2; }
+
+  text{ fill:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  .result { font-size:24px; font-weight:700; }
+  .rowLbl { font-size:20px; font-weight:600; opacity:.8; }
+  .vLbl   { font-size:18px; font-weight:600; text-anchor:middle; }
+  .cartNo { font-size:17px; font-weight:700; text-anchor:middle; fill:#fff; }
+  .hint   { font-size:21px; font-weight:600; fill:#A8384C; text-anchor:middle; }
+
+  /* --- ohjaimet --- */
+  .sim-controls{ flex-direction:column; gap:clamp(4px,0.9vw,9px); bottom:clamp(6px,1.4vw,14px); }
+  .ctrl-row{ display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,20px); flex-wrap:wrap; }
+  .ctrl-row label{ display:grid; gap:1px; font-size:clamp(11px,1.6vw,19px); justify-items:start; line-height:1.25; }
+  .ctrl-row input[type="range"]{ width:min(150px,16vw); height:clamp(13px,1.9vw,20px); accent-color:var(--ink); }
+  .sim-btn{ padding:clamp(3px,0.7vw,7px) clamp(9px,1.6vw,16px); font-size:clamp(12px,1.6vw,20px); }
+  .sim-btn.is-active{ background:var(--ink); color:#fff; }
+
+  @media (max-width:560px){
+    body.sim-body{ place-items:start center; height:auto; min-height:100%; }
+    .sim-wrap{ width:100vw; height:auto; aspect-ratio:auto; }
+    .sim-wrap > svg{ width:100%; height:auto; aspect-ratio:16/9; }
+    .sim-controls{ position:static; left:auto; right:auto; bottom:auto;
+      width:100%; padding:12px 12px 18px; gap:8px; }
+    .ctrl-row input[type="range"]{ width:100%; }
+    .ctrl-row label{ flex:1 1 45%; }
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Liikemäärän säilymisen simulaatio">
+  <svg viewBox="0 0 960 540" role="img" aria-label="Kahden vaunun törmäys ja liikemäärän säilyminen">
+    <defs>
+      <marker id="vArr1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#22687F"/>
+      </marker>
+      <marker id="vArr2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#C46E14"/>
+      </marker>
+    </defs>
+
+    <!-- ============ TULOKSET ============ -->
+    <rect id="boxP" class="box" x="40" y="34" width="286" height="40" rx="8"/>
+    <text id="txtP" class="result" x="54" y="62">p = –</text>
+    <rect id="boxE" class="box" x="40" y="82" width="286" height="40" rx="8"/>
+    <text id="txtE" class="result" x="54" y="110">Eₖ = –</text>
+    <text id="hint" class="hint" x="480" y="110"></text>
+
+    <!-- ============ RATA JA VAUNUT ============ -->
+    <line class="ground" x1="40" y1="238" x2="920" y2="238"/>
+    <g id="groundHatch"></g>
+
+    <g id="cart1">
+      <rect id="body1" class="cartEdge" fill="#2E86A6" x="0" y="-40" width="70" height="32" rx="7"/>
+      <circle id="w1a" class="wheel" cy="-2" r="7"/><circle id="w1b" class="wheel" cy="-2" r="7"/>
+      <text id="no1" class="cartNo" y="-19">1</text>
+      <line id="vA1" stroke="#22687F" stroke-width="4" marker-end="url(#vArr1)"/>
+      <text id="vT1" class="vLbl" fill="#22687F"></text>
+    </g>
+    <g id="cart2">
+      <rect id="body2" class="cartEdge" fill="#F28C28" x="0" y="-40" width="70" height="32" rx="7"/>
+      <circle id="w2a" class="wheel" cy="-2" r="7"/><circle id="w2b" class="wheel" cy="-2" r="7"/>
+      <text id="no2" class="cartNo" y="-19">2</text>
+      <line id="vA2" stroke="#C46E14" stroke-width="4" marker-end="url(#vArr2)"/>
+      <text id="vT2" class="vLbl" fill="#C46E14"></text>
+    </g>
+
+    <!-- ============ LIIKEMÄÄRÄPALKIT ============ -->
+    <g id="bars">
+      <line id="zeroLn" class="zeroLn" x1="460" y1="280" x2="460" y2="400"/>
+      <text class="rowLbl" x="44" y="311">ennen</text>
+      <text class="rowLbl" x="44" y="371">jälkeen</text>
+
+      <path id="b1a" class="barEdge" fill="#2E86A6"/>
+      <path id="b2a" class="barEdge" fill="#F28C28"/>
+      <path id="b1b" class="barEdge" fill="#2E86A6"/>
+      <path id="b2b" class="barEdge" fill="#F28C28"/>
+
+      <line id="totLn" class="totLn" x1="460" y1="280" x2="460" y2="400"/>
+    </g>
+  </svg>
+
+  <section class="sim-controls" aria-label="Säätimet">
+    <div class="ctrl-row">
+      <button id="modeIne" class="sim-btn is-active" type="button">Kimmoton</button>
+      <button id="modeEla" class="sim-btn" type="button">Kimmoisa</button>
+      <button id="play" class="sim-btn" type="button">Käynnistä</button>
+      <button id="reset" class="sim-btn" type="button">Nollaa</button>
+    </div>
+    <div class="ctrl-row">
+      <label><span id="m1Lbl">m₁ = 2,0 kg</span>
+        <input id="m1" type="range" min="0.5" max="3" step="0.1" value="2" aria-label="Massa 1"></label>
+      <label><span id="v1Lbl">v₁ = 2,0 m/s</span>
+        <input id="v1" type="range" min="-3" max="3" step="0.1" value="2" aria-label="Nopeus 1"></label>
+      <label><span id="m2Lbl">m₂ = 1,0 kg</span>
+        <input id="m2" type="range" min="0.5" max="3" step="0.1" value="1" aria-label="Massa 2"></label>
+      <label><span id="v2Lbl">v₂ = 0,0 m/s</span>
+        <input id="v2" type="range" min="-3" max="3" step="0.1" value="0" aria-label="Nopeus 2"></label>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+
+  const SC = 45;                 // pikseliä metriä kohti radalla
+  let PSC = 22;                  // pikseliä yksikköä (kg·m/s) kohti; sovitetaan tilanteeseen
+  const MEET = 480, GROUND = 238, ZERO = 460;
+  const T_APP = 1.0, T_POST = 1.0;   // sekuntia ennen ja jälkeen törmäyksen
+
+  const $ = (id) => document.getElementById(id);
+  const el = {};
+  for (const id of ["groundHatch","boxP","txtP","boxE","txtE","hint",
+                    "cart1","body1","w1a","w1b","no1","vA1","vT1",
+                    "cart2","body2","w2a","w2b","no2","vA2","vT2",
+                    "b1a","b2a","b1b","b2b","totLn","zeroLn",
+                    "m1","v1","m2","v2","m1Lbl","v1Lbl","m2Lbl","v2Lbl",
+                    "modeIne","modeEla","play","reset"]) el[id] = $(id);
+
+  const fmt = (x, d = 1) => x.toFixed(d).replace(".", ",").replace("-", "−");
+  const cartW = (m) => 44 + 16 * m;
+
+  (function groundHatch() {
+    let hd = "";
+    for (let x = 46; x < 920; x += 22) hd += `M${x} ${GROUND} l-10 12 `;
+    el.groundHatch.innerHTML = `<path class="hatch" d="${hd}"/>`;
+  })();
+
+  /* ---------------- törmäysmalli ----------------
+     Palautuskerroin e: e = 0 kimmoton (vaunut jäävät yhteen),
+     e = 1 kimmoisa. Liikemäärä säilyy molemmissa.                */
+  function solve(m1, v1, m2, v2, e) {
+    const P = m1 * v1 + m2 * v2, M = m1 + m2;
+    return { u1: (P + m2 * e * (v2 - v1)) / M, u2: (P + m1 * e * (v1 - v2)) / M };
+  }
+  const Ek = (m1, v1, m2, v2) => 0.5 * m1 * v1 * v1 + 0.5 * m2 * v2 * v2;
+
+  /* ---------------- tila ---------------- */
+  let elastic = false, phase = "idle", t = 0;
+  let m1 = 2, v1 = 2, m2 = 1, v2 = 0, u1 = 0, u2 = 0;
+
+  const canCollide = () => v1 > v2 + 1e-9;
+
+  /* ---------------- palkit ---------------- */
+  const BAR_H = 20;
+  function setBar(node, from, p, yTop) {
+    const x0 = ZERO + from * PSC, w = p * PSC;
+    if (Math.abs(w) < 1.5) { node.setAttribute("d", ""); return; }
+    const x1 = x0 + w, s = Math.sign(w);
+    const head = Math.min(18, Math.abs(w) * 0.45);
+    const bx = x1 - s * head;                      // kärjen tyvi
+    const yc = yTop + BAR_H / 2, hh = BAR_H / 2, hw = hh + 6;
+    const P = (a, c) => `${a.toFixed(1)} ${c.toFixed(1)}`;
+    node.setAttribute("d",
+      `M${P(x0, yc - hh)} L${P(bx, yc - hh)} L${P(bx, yc - hw)} L${P(x1, yc)} `
+      + `L${P(bx, yc + hw)} L${P(bx, yc + hh)} L${P(x0, yc + hh)} Z`);
+  }
+
+  function drawBars(showAfter) {
+    const p1 = m1 * v1, p2 = m2 * v2;
+    setBar(el.b1a, 0, p1, 288);
+    setBar(el.b2a, p1, p2, 312);
+    const q1 = m1 * u1, q2 = m2 * u2;
+    el.b1b.style.display = el.b2b.style.display = showAfter ? "" : "none";
+    if (showAfter) { setBar(el.b1b, 0, q1, 348); setBar(el.b2b, q1, q2, 372); }
+    const tx = (ZERO + (p1 + p2) * PSC).toFixed(1);
+    el.totLn.setAttribute("x1", tx); el.totLn.setAttribute("x2", tx);
+  }
+
+  /* ---------------- näyttämö ---------------- */
+  function placeCart(g, body, wa, wb, no, va, vt, xLeft, m, v, yArrow) {
+    const w = cartW(m);
+    body.setAttribute("width", w);
+    wa.setAttribute("cx", 16); wb.setAttribute("cx", w - 16);
+    no.setAttribute("x", w / 2);
+    g.setAttribute("transform", `translate(${xLeft.toFixed(1)},${GROUND})`);
+    // nopeusnuoli kappaleen yläpuolella
+    const L = Math.abs(v) * 26;
+    if (L > 6) {
+      const x0 = w / 2, y0 = yArrow;
+      va.setAttribute("x1", x0 - Math.sign(v) * L / 2); va.setAttribute("y1", y0);
+      va.setAttribute("x2", x0 + Math.sign(v) * L / 2); va.setAttribute("y2", y0);
+      va.style.display = "";
+    } else va.style.display = "none";
+    vt.setAttribute("x", w / 2); vt.setAttribute("y", yArrow - 16);
+    vt.textContent = `${fmt(v, 1)} m/s`;
+  }
+
+  function drawScene(tRel, after) {
+    const a = after ? u1 : v1, b = after ? u2 : v2;
+    const x1r = MEET + a * SC * tRel;            // vaunun 1 oikea reuna
+    const x2l = MEET + b * SC * tRel;            // vaunun 2 vasen reuna
+    placeCart(el.cart1, el.body1, el.w1a, el.w1b, el.no1, el.vA1, el.vT1, x1r - cartW(m1), m1, a, -96);
+    placeCart(el.cart2, el.body2, el.w2a, el.w2b, el.no2, el.vA2, el.vT2, x2l, m2, b, -58);
+  }
+
+  /* ---------------- tulokset ---------------- */
+  function showResults(after) {
+    const p = m1 * v1 + m2 * v2;
+    el.txtP.textContent = `p = ${fmt(p, 1)} kg·m/s`;
+    const e0 = Ek(m1, v1, m2, v2);
+    el.txtE.textContent = after
+      ? `Eₖ ${fmt(e0, 1)} → ${fmt(Ek(m1, u1, m2, u2), 1)} J`
+      : `Eₖ = ${fmt(e0, 1)} J`;
+    el.hint.textContent = canCollide() ? "" : "vaunut eivät kohtaa";
+  }
+
+  /* ---------------- animaatio ---------------- */
+  let last = performance.now();
+  function tick(now) {
+    let d = (now - last) / 1000; last = now;
+    if (!isFinite(d) || d < 0) d = 0;
+    d = Math.min(d, 0.05);
+    if (phase === "before") {
+      t += d;
+      drawScene(-(T_APP - t), false);
+      if (t >= T_APP) { phase = "after"; t = 0; drawBars(true); showResults(true); }
+    } else if (phase === "after") {
+      t += d;
+      drawScene(t, true);
+      if (t >= T_POST) { phase = "done"; el.play.textContent = "Käynnistä"; }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------------- ohjaimet ---------------- */
+  function readInputs() {
+    m1 = +el.m1.value; v1 = +el.v1.value; m2 = +el.m2.value; v2 = +el.v2.value;
+    const r = solve(m1, v1, m2, v2, elastic ? 1 : 0);
+    u1 = r.u1; u2 = r.u2;
+    // sama mittakaava molemmille riveille, mutta sovitettuna tähän tilanteeseen
+    const extent = Math.max(Math.abs(m1 * v1) + Math.abs(m2 * v2),
+                            Math.abs(m1 * u1) + Math.abs(m2 * u2), 0.5);
+    PSC = Math.min(60, 380 / extent);
+    el.m1Lbl.textContent = `m₁ = ${fmt(m1, 1)} kg`;
+    el.v1Lbl.textContent = `v₁ = ${fmt(v1, 1)} m/s`;
+    el.m2Lbl.textContent = `m₂ = ${fmt(m2, 1)} kg`;
+    el.v2Lbl.textContent = `v₂ = ${fmt(v2, 1)} m/s`;
+  }
+
+  function reset() {
+    readInputs();
+    phase = "idle"; t = 0;
+    el.play.textContent = "Käynnistä";
+    drawScene(-T_APP, false);
+    drawBars(false);
+    showResults(false);
+  }
+
+  for (const id of ["m1", "v1", "m2", "v2"]) el[id].addEventListener("input", reset);
+  el.modeIne.addEventListener("click", () => { elastic = false; setMode(); });
+  el.modeEla.addEventListener("click", () => { elastic = true; setMode(); });
+  function setMode() {
+    el.modeIne.classList.toggle("is-active", !elastic);
+    el.modeEla.classList.toggle("is-active", elastic);
+    reset();
+  }
+  el.play.addEventListener("click", () => {
+    if (phase === "before" || phase === "after") return;
+    if (!canCollide()) return;
+    readInputs();
+    phase = "before"; t = 0;
+    drawBars(false); showResults(false);
+    el.play.textContent = "Ajossa…";
+    last = performance.now();
+  });
+  el.reset.addEventListener("click", reset);
+
+  reset();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
