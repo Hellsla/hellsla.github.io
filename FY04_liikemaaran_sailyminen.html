@@ -27,7 +27,7 @@ svg{display:block;width:100%;height:100%}
 button{
   appearance:none;border:1.8px solid var(--ink);background:#fff;color:var(--ink);
   border-radius:999px;padding:7px 13px;cursor:pointer;
-  font:600 clamp(13px,1.6vh,17px)/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font:600 clamp(14px,2vh,20px)/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 button:hover:not(:disabled){background:#F7F7F5}
 button.active{background:var(--ink);color:#fff}
@@ -44,12 +44,12 @@ button:disabled{opacity:.4;cursor:default}
   display:none;align-items:baseline;gap:clamp(10px,2.4vh,22px);
   color:var(--ink);pointer-events:none;
 }
-.readout-math .primary{font-size:clamp(17px,4.9vh,32px);font-weight:700}
-.readout-math .secondary{font-size:clamp(13px,3.5vh,23px);font-weight:600;color:var(--muted)}
+.readout-math .primary{font-size:clamp(19px,5.6vh,38px);font-weight:700}
+.readout-math .secondary{font-size:clamp(15px,4vh,28px);font-weight:600;color:var(--muted)}
 .readout-math math{font-family:"STIX Two Math","Cambria Math","Times New Roman",serif}
 
 .control{display:grid;grid-template-columns:auto 118px;gap:7px;align-items:center;
-  font-size:clamp(12px,1.55vh,16px);font-weight:600;white-space:nowrap}
+  font-size:clamp(13px,1.9vh,20px);font-weight:600;white-space:nowrap}
 input[type="range"]{width:118px;accent-color:var(--ink)}
 
 /* Kapeahkossa upotuksessa kavennetaan säätimiä, jotta ohjainrivi ei kasva
@@ -68,11 +68,21 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
   .controls{padding:8px 10px 16px;gap:10px}
   .control{grid-template-columns:auto 104px}
   input[type="range"]{width:104px}
-  .readout-math .primary{font-size:19px}
-  .readout-math .secondary{font-size:15px}
-  button{font-size:14px}
-  .control{font-size:13px}
+  .readout-math .primary{font-size:21px}
+  .readout-math .secondary{font-size:17px}
+  button{font-size:15px}
+  .control{font-size:14px}
 }
+
+/* Laskut ladotaan MathML:llä foreignObjectin sisällä: muuttuja kursiivilla,
+   yksiköt pystyssä. Valkoinen reunus pitää tekstin luettavana nollaviivan
+   ja merkkiviivan päällä. */
+.calcwrap{display:flex;align-items:flex-end;justify-content:center;
+  height:100%;width:100%;white-space:nowrap}
+.calc{font-size:20px;font-weight:700;line-height:1;
+  paint-order:stroke;-webkit-text-stroke:3.4px #fff;
+  font-family:"STIX Two Math","Cambria Math","Times New Roman",serif}
+.calc math{font-family:inherit}
 </style>
 </head>
 <body>
@@ -112,7 +122,7 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
         <line id="strip1" x1="6" y1="-14" x2="64" y2="-14" stroke="#2E86A6" stroke-opacity=".35" stroke-width="1.4"/>
         <circle id="w1a" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
         <circle id="w1b" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
-        <text id="no1" y="-20" text-anchor="middle" font-size="16" font-weight="750" fill="#3F3D39">1</text>
+        <text id="no1" y="-20" text-anchor="middle" font-size="19" font-weight="750" fill="#3F3D39">1</text>
         <line id="vA1" stroke="#2E86A6" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
       </g>
 
@@ -121,7 +131,7 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
         <line id="strip2" x1="6" y1="-14" x2="64" y2="-14" stroke="#F28C28" stroke-opacity=".38" stroke-width="1.4"/>
         <circle id="w2a" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
         <circle id="w2b" cy="-2" r="7.5" fill="#fff" stroke="#3F3D39" stroke-width="2"/>
-        <text id="no2" y="-20" text-anchor="middle" font-size="16" font-weight="750" fill="#3F3D39">2</text>
+        <text id="no2" y="-20" text-anchor="middle" font-size="19" font-weight="750" fill="#3F3D39">2</text>
         <line id="vA2" stroke="#F28C28" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
       </g>
 
@@ -129,25 +139,21 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
            Nuolet ovat polkuja, jotta kärki osuu tarkalleen vektorin päähän;
            marker-end piirtäisi kärjen viivan pään yli. -->
       <g>
-        <text x="52" y="317" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
-        <text x="52" y="338" font-size="17" font-weight="650" fill="#7A7771">aluksi</text>
-        <text x="52" y="409" font-size="17" font-weight="650" fill="#7A7771">Liikemäärät</text>
-        <text x="52" y="430" font-size="17" font-weight="650" fill="#7A7771">lopuksi</text>
-        <line x1="480" y1="280" x2="480" y2="448" stroke="#3F3D39" stroke-opacity=".22" stroke-width="1.4" stroke-dasharray="5 6"/>
+        <text x="52" y="310" font-size="22" font-weight="650" fill="#7A7771">Liikemäärät</text>
+        <text x="52" y="334" font-size="22" font-weight="650" fill="#7A7771">aluksi</text>
+        <text x="52" y="414" font-size="22" font-weight="650" fill="#7A7771">Liikemäärät</text>
+        <text x="52" y="438" font-size="22" font-weight="650" fill="#7A7771">lopuksi</text>
+        <line x1="480" y1="248" x2="480" y2="458" stroke="#3F3D39" stroke-opacity=".22" stroke-width="1.4" stroke-dasharray="5 6"/>
         <path id="p1before" fill="#2E86A6"/>
         <path id="p2before" fill="#F28C28"/>
         <path id="p1after"  fill="#2E86A6"/>
         <path id="p2after"  fill="#F28C28"/>
-        <line id="totalMark" x1="480" y1="284" x2="480" y2="452" stroke="#3F3D39" stroke-width="2.8" stroke-linecap="round"/>
-        <!-- lyhyt lasku nuolen päällä: m . v = p. Valkoinen reunus pitää
-             tekstin luettavana nollaviivan ja merkkiviivan päällä. -->
-        <g font-size="15" font-weight="700" text-anchor="middle"
-           paint-order="stroke" stroke="#fff" stroke-width="3.6" stroke-linejoin="round">
-          <text id="calc1before" fill="#1F6B88"></text>
-          <text id="calc2before" fill="#C06B10"></text>
-          <text id="calc1after"  fill="#1F6B88"></text>
-          <text id="calc2after"  fill="#C06B10"></text>
-        </g>
+        <line id="totalMark" x1="480" y1="252" x2="480" y2="462" stroke="#3F3D39" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- lasku nuolen päällä, esim. p1 = 2,0 kg · 2,0 m/s = 4,0 kg·m/s -->
+        <foreignObject id="calc1before" width="10" height="26" overflow="visible"></foreignObject>
+        <foreignObject id="calc2before" width="10" height="26" overflow="visible"></foreignObject>
+        <foreignObject id="calc1after"  width="10" height="26" overflow="visible"></foreignObject>
+        <foreignObject id="calc2after"  width="10" height="26" overflow="visible"></foreignObject>
       </g>
     </svg>
   </div>
@@ -255,7 +261,16 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
 
   /* Lyhyt lasku: m . v = p, esim. "1,0 · (−1,0) = −1,0".
      Negatiivinen nopeus sulkeisiin, jotta kertolasku pysyy luettavana. */
-  function calcText(m, v){
+  /* Lasku ladotaan MathML:llä: p1 = 2,0 kg · 2,0 m/s = 4,0 kg·m/s.
+     Muuttuja kursiivilla, luvut ja yksiköt pystyssä, yksikön eteen ohut
+     väli kuten fysiikan merkinnässä kuuluu. */
+  const NBSP_THIN = "\u2009";
+  const EQ  = '<mo lspace="0.24em" rspace="0.24em">=</mo>';
+  const DOT = '<mo lspace="0.2em" rspace="0.2em">\u22C5</mo>';
+  const qty = (value, unit) =>
+    `<mn>${value}</mn><mtext>${NBSP_THIN}${unit}</mtext>`;
+
+  function calcMath(sub, m, v, color){
     // Tulo lasketaan pyöristetyistä tekijöistä, muuten ruudulla lukisi
     // esimerkiksi "2,0 · 1,3 = 2,7" kun 2,0 · 1,3 = 2,6. Nuolten pituudet
     // ja merkkiviiva käyttävät edelleen tarkkoja arvoja.
@@ -263,11 +278,28 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
     const vr = Math.round(v * 10) / 10;
     const prod = Math.round(mr * vr * 100) / 100;
     const shown = fmt(prod, 2).replace(/0$/, "");   // 4,00 -> 4,0 ; 0,25 jää
-    const factor = vr < 0 ? `(${fmt(vr)})` : fmt(vr);
-    return `${fmt(mr)} · ${factor} = ${shown}`;
+    const speed = vr < 0
+      ? `<mo form="prefix" stretchy="false">(</mo>${qty(fmt(vr), "m/s")}<mo form="postfix" stretchy="false">)</mo>`
+      : qty(fmt(vr), "m/s");
+    return `<div xmlns="http://www.w3.org/1999/xhtml" class="calcwrap">` +
+      `<span class="calc" style="color:${color}">` +
+      `<math xmlns="http://www.w3.org/1998/Math/MathML">` +
+      `<msub><mi>p</mi><mn>${sub}</mn></msub>${EQ}` +
+      qty(fmt(mr), "kg") + DOT + speed + EQ + qty(shown, "kg\u00B7m/s") +
+      `</math></span></div>`;
   }
 
-  function setMomentumArrow(node, label, from, m, v, y){
+  /* Tekstin leveys SVG-yksiköissä. Mitataan ladotusta sisällöstä, koska
+     foreignObjectilla ei ole getComputedTextLength-vastinetta. */
+  function userWidth(node){
+    const svg = node.ownerSVGElement;
+    const scale = svg.getBoundingClientRect().width / 960;
+    const span = node.querySelector(".calc");
+    if (!span || !(scale > 0)) return 0;
+    return span.getBoundingClientRect().width / scale;
+  }
+
+  function setMomentumArrow(node, label, from, m, v, y, sub, color){
     const p = m * v;
     const x0 = ZERO + from * pScale;
     const len = p * pScale;
@@ -287,12 +319,14 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
       `L${f(tip)} ${y} L${f(base)} ${y + P_WING} L${f(base)} ${y + P_SHAFT} L${f(x0)} ${y + P_SHAFT} Z`);
 
     label.style.display = "";
-    label.textContent = calcText(m, v);
-    label.setAttribute("y", y - 15);
+    label.innerHTML = calcMath(sub, m, v, color);
+    label.setAttribute("y", (y - 38).toFixed(1));
     // keskelle nuolta, mutta niin ettei mene rivin otsikon eikä reunan yli
-    const half = label.getComputedTextLength() / 2;
-    const mid = Math.min(900 - half, Math.max(180 + half, (x0 + tip) / 2));
-    label.setAttribute("x", mid.toFixed(1));
+    const w = userWidth(label) || 300;
+    const half = w / 2;
+    const mid = Math.min(904 - half, Math.max(206 + half, (x0 + tip) / 2));
+    label.setAttribute("width", (w + 6).toFixed(1));
+    label.setAttribute("x", (mid - half - 3).toFixed(1));
   }
 
   function drawMomentum(showAfter){
@@ -302,10 +336,10 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
     const ends = [0, p1, p1 + p2, q1, q1 + q2];
     const right = Math.max(...ends, 0.8);
     const left  = Math.max(...ends.map(x => -x), 0);
-    pScale = Math.min(50, 420 / right, left > 0 ? 262 / left : Infinity);
+    pScale = Math.min(50, 420 / right, left > 0 ? 256 / left : Infinity);
 
-    setMomentumArrow(el.p1before, el.calc1before, 0,  m1, v1, 302);
-    setMomentumArrow(el.p2before, el.calc2before, p1, m2, v2, 344);
+    setMomentumArrow(el.p1before, el.calc1before, 0,  m1, v1, 292, 1, "#1F6B88");
+    setMomentumArrow(el.p2before, el.calc2before, p1, m2, v2, 342, 2, "#C06B10");
 
     const after = showAfter ? "" : "none";
     el.p1after.style.display = after;
@@ -313,8 +347,8 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
     el.calc1after.style.display = after;
     el.calc2after.style.display = after;
     if (showAfter){
-      setMomentumArrow(el.p1after, el.calc1after, 0,  m1, u1, 394);
-      setMomentumArrow(el.p2after, el.calc2after, q1, m2, u2, 436);
+      setMomentumArrow(el.p1after, el.calc1after, 0,  m1, u1, 396, 1, "#1F6B88");
+      setMomentumArrow(el.p2after, el.calc2after, q1, m2, u2, 446, 2, "#C06B10");
     }
 
     const totalX = (ZERO + (p1 + p2) * pScale).toFixed(1);
@@ -428,6 +462,15 @@ input[type="range"]{width:118px;accent-color:var(--ink)}
   }
 
   reset();
+
+  /* Laskujen leveys mitataan ladotusta MathML:stä, joten se vaatii valmiin
+     asettelun. Piirretään kerran uudelleen heti latauksen jälkeen ja aina
+     kun kehyksen koko muuttuu. */
+  const redraw = () => drawMomentum(phase === "after" || phase === "done");
+  requestAnimationFrame(redraw);
+  window.addEventListener("load", redraw);
+  window.addEventListener("resize", redraw);
+
   requestAnimationFrame(tick);
 })();
 </script>
