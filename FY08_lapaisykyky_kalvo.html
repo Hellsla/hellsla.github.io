@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Säteilyn läpäisykyky (kalvoversio)</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
+<style>
+  :root{
+    --ink:#3F3D39;
+    --blue:#2E86A6;
+    --red:#D84A62;
+    --orange:#F28C28;
+    --yellow:#FFD95A;
+    --slate:#6E7A82;
+    --muted:#6B675F;
+    --faint:#9A958C;
+    --line:#DDDAD4;
+  }
+
+  .scene{ width:100%; height:100%; }
+  .scene text{ font-family:inherit; }
+
+  .h    { font-size:17px; fill:var(--faint); letter-spacing:.1em; }
+  .fine { font-size:15px; fill:var(--faint); }
+  .note { font-size:19px; fill:var(--muted); }
+  .msg  { font-size:25px; fill:var(--muted); }
+  .matName { font-size:19px; fill:var(--ink); font-weight:700; }
+  .sym  { font-size:24px; font-weight:700; }
+  .name { font-size:20px; fill:var(--ink); font-weight:700; }
+  .sub  { font-size:14px; fill:var(--muted); }
+  .val  { font-size:26px; fill:var(--ink); font-weight:700; font-variant-numeric:tabular-nums; }
+  .pc   { font-size:16px; fill:var(--muted); font-variant-numeric:tabular-nums; }
+
+  .sim-toggles{
+    position:absolute; right:2.1em; top:1.1em;
+    display:flex; align-items:center; gap:.55em;
+    font-size:15px;
+  }
+  .sim-toggles .lab{
+    font-size:.86em; color:var(--faint); letter-spacing:.1em; text-transform:uppercase;
+  }
+  .sim-toggles .sim-btn{
+    font-size:1em; padding:.35em .9em;
+    border-width:1.5px; border-color:#D8D4CC; color:var(--muted);
+  }
+  .sim-toggles .sim-btn[aria-pressed="true"]{
+    background:var(--ink); border-color:var(--ink); color:#fff;
+  }
+
+  .sim-controls{
+    font-size:18px;
+    left:2em; right:2em; bottom:1em;
+    gap:.7em 1.1em;
+  }
+  .sim-controls .sim-btn{ font-size:.94em; padding:.36em .95em; border-width:1.6px; }
+  .sim-controls .sim-btn.primary{ background:var(--ink); color:#fff; }
+  .sim-controls .sim-sliderBox{ width:auto; gap:.6em; }
+  .sim-controls .sim-sliderBox label{ font-size:.94em; }
+  .sim-controls .sim-range{ width:8em; }
+  .sim-controls .out{
+    min-width:4ch; text-align:right; font-weight:700; color:var(--ink);
+    font-size:.94em; font-variant-numeric:tabular-nums;
+  }
+</style>
+</head>
+<body class="sim-body">
+<main class="sim-wrap" aria-label="Simulaatio alfa-, beeta-, gamma- ja neutronisäteilyn läpäisykyvystä">
+
+<svg class="scene" viewBox="0 0 960 540" role="img"
+     aria-label="Alfa-, beeta-, gamma- ja neutronisäteily kohtaavat paperin, alumiinin, lyijyn ja veden; ilmaisimet laskevat läpäisseet hiukkaset">
+
+<text x="30" y="38" class="h">SÄTEILYN LÄPÄISYKYKY</text>
+<text x="30" y="62" class="fine">Suojien paksuudet eivät ole mittakaavassa.</text>
+
+<text x="788" y="92"  class="h">ILMAISIMET</text>
+<text x="788" y="110" class="fine">läpäisseet hiukkaset</text>
+
+<g id="lanes"></g>
+<!-- alfan kantama ilmassa: muutama senttimetri riittää pysäyttämään sen -->
+<line x1="338" y1="130" x2="338" y2="174" stroke="var(--faint)"
+      stroke-width="1.4" stroke-dasharray="2 5" opacity="0.8"/>
+<text x="338" y="191" text-anchor="middle" class="fine">ilma</text>
+<g id="mats"></g>
+<g id="parts"></g>
+<g id="fx"></g>
+<g id="chips"></g>
+<g id="dets"></g>
+
+<text id="msg" x="480" y="424" text-anchor="middle" class="msg"></text>
+<text id="why" x="480" y="456" text-anchor="middle" class="note"></text>
+
+</svg>
+
+<div class="sim-toggles" role="group" aria-label="Suojamateriaalit">
+  <span class="lab">Suoja</span>
+  <button class="sim-btn" type="button" id="tog_paperi"   aria-pressed="false">Paperi</button>
+  <button class="sim-btn" type="button" id="tog_alumiini" aria-pressed="false">Alumiini</button>
+  <button class="sim-btn" type="button" id="tog_lyijy"    aria-pressed="false">Lyijy</button>
+  <button class="sim-btn" type="button" id="tog_vesi"     aria-pressed="false">Vesi</button>
+</div>
+
+<div class="sim-controls">
+  <button class="sim-btn primary" type="button" id="run">Pysäytä</button>
+  <button class="sim-btn" type="button" id="one">Yksi hiukkanen</button>
+  <div class="sim-sliderBox">
+    <label for="speed">Nopeus</label>
+    <input class="sim-range" id="speed" type="range" min="0.2" max="1.5" step="0.1" value="1">
+    <span class="out" id="speedOut">1,0×</span>
+  </div>
+  <button class="sim-btn" type="button" id="reset">Nollaa</button>
+</div>
+
+</main>
+
+<script>
+(() => {
+"use strict";
+
+const NS = "http://www.w3.org/2000/svg";
+const $  = id => document.getElementById(id);
+const mk = (tag, attrs) => {
+  const el = document.createElementNS(NS, tag);
+  for(const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+};
+const clamp = (v, a, b) => v < a ? a : (v > b ? b : v);
+const rnd = (a, b) => a + Math.random() * (b - a);
+const fmt = (n, d = 1) => n.toFixed(d).replace(".", ",");
+
+/* yläindeksit tspaneilla: Arialista puuttuu osa unicode-merkeistä */
+const UNSUP = {"⁰":"0","¹":"1","²":"2","³":"3","⁴":"4","⁵":"5",
+               "⁶":"6","⁷":"7","⁸":"8","⁹":"9","⁻":"-","⁺":"+"};
+const isSup = c => Object.prototype.hasOwnProperty.call(UNSUP, c);
+function typeset(el, str){
+  if(el.__typeset === str) return;
+  el.__typeset = str;
+  while(el.firstChild) el.removeChild(el.firstChild);
+  const runs = [];
+  for(const ch of str){
+    const s = isSup(ch);
+    const last = runs[runs.length - 1];
+    if(last && last.sup === s) last.text += s ? UNSUP[ch] : ch;
+    else runs.push({ sup: s, text: s ? UNSUP[ch] : ch });
+  }
+  let raised = false;
+  for(const run of runs){
+    const t = document.createElementNS(NS, "tspan");
+    if(run.sup){ t.setAttribute("font-size","0.66em"); t.setAttribute("dy","-0.52em"); raised = true; }
+    else if(raised){ t.setAttribute("dy","0.34em"); raised = false; }
+    t.textContent = run.text;
+    el.appendChild(t);
+  }
+}
+
+/* ==================== geometria ==================== */
+
+const LANE_Y = [152, 220, 288, 356];
+const BAND_Y = 124, BAND_H = 260;
+const X_SRC = 180;                 // hiukkaset lähtevät lähteen reunasta
+const X_DET = 788, DET_W = 136, DET_H = 52;
+const ALPHA_AIR = 158;             // alfan kantama ilmassa (muutama senttimetri)
+const WAVE = "M0 0 q 6 -6 12 0 t 12 0";   // gammafotonin aaltoviiva
+const WAVE_LEN = 24;
+const RATE = 7;                    // hiukkasta sekunnissa lähdettä kohti
+
+const TYPES = [
+  { id:"alfa",     sym:"α",  name:"alfa",     sub:"varaus 2+, raskas",
+    color:"var(--red)",    v:250, r:8.5, shape:"disc" },
+  { id:"beeta",    sym:"β⁻", name:"beeta",    sub:"varaus 1−, kevyt",
+    color:"var(--blue)",   v:330, r:5,   shape:"disc" },
+  { id:"gamma",    sym:"γ",  name:"gamma",    sub:"ei varausta, fotoni",
+    color:"var(--orange)", v:430, r:0,   shape:"wave" },
+  { id:"neutroni", sym:"n",  name:"neutroni", sub:"ei varausta, raskas",
+    color:"var(--slate)",  v:300, r:7,   shape:"ring" }
+];
+
+const MATS = [
+  { id:"paperi",   name:"paperi",   thick:"0,1 mm", x:286, w:10,  fill:"#EDE4CE", stroke:"#CBBFA0" },
+  { id:"alumiini", name:"alumiini", thick:"5 mm",   x:364, w:28,  fill:"#C4C9CD", stroke:"#98A1A7" },
+  { id:"lyijy",    name:"lyijy",    thick:"5 cm",   x:460, w:64,  fill:"#6B757C", stroke:"#4F585E" },
+  { id:"vesi",     name:"vesi",     thick:"30 cm",  x:590, w:164, fill:"#D8ECF4", stroke:"#9CC9D9" }
+];
+
+/* Osuus, joka läpäisee kerroksen. Suuruusluokat vastaavat noin 1 MeV:n
+   säteilyä: alfa pysähtyy kaikkeen kiinteään, beeta muutamaan milliin
+   metallia, gamma vaimenee parhaiten tiheässä lyijyssä ja neutroni vasta
+   vetypitoisessa vedessä – lyijyn läpi se menee lähes esteettä. */
+const TRANS = {
+  alfa:     { paperi:0,     alumiini:0,    lyijy:0,    vesi:0    },
+  beeta:    { paperi:0.90,  alumiini:0.02, lyijy:0,    vesi:0    },
+  gamma:    { paperi:0.995, alumiini:0.93, lyijy:0.03, vesi:0.12 },
+  neutroni: { paperi:0.99,  alumiini:0.97, lyijy:0.60, vesi:0.05 }
+};
+
+/* ==================== kohtaus ==================== */
+
+const gLanes = $("lanes"), gMats = $("mats"), gParts = $("parts"),
+      gFx = $("fx"), gChips = $("chips"), gDets = $("dets");
+
+LANE_Y.forEach(y => gLanes.appendChild(mk("line", {
+  x1:X_SRC, y1:y, x2:X_DET - 18, y2:y,
+  stroke:"var(--line)", "stroke-width":1.6, "stroke-dasharray":"3 7" })));
+
+const matEls = MATS.map(m => {
+  const cx = m.x + m.w / 2;
+  const rect = mk("rect", { x:m.x, y:BAND_Y, width:m.w, height:BAND_H, rx:3 });
+  const name = mk("text", { x:cx, y:100, "text-anchor":"middle", class:"matName" });
+  const th   = mk("text", { x:cx, y:117, "text-anchor":"middle", class:"fine" });
+  name.textContent = m.name;
+  th.textContent = m.thick;
+  gMats.appendChild(rect); gMats.appendChild(name); gMats.appendChild(th);
+  return { rect, name, th };
+});
+
+TYPES.forEach((t, i) => {
+  const y = LANE_Y[i];
+  gChips.appendChild(mk("rect", { x:26, y:y - 27, width:152, height:54, rx:12,
+                                  fill:"#fff", stroke:t.color, "stroke-width":2.2 }));
+  const sym  = mk("text", { x:46, y:y - 4,  class:"sym", fill:t.color });
+  const name = mk("text", { x:76, y:y - 4,  class:"name" });
+  const sub  = mk("text", { x:46, y:y + 18, class:"sub" });
+  sym.textContent = t.sym; name.textContent = t.name; sub.textContent = t.sub;
+  gChips.appendChild(sym); gChips.appendChild(name); gChips.appendChild(sub);
+});
+
+const detEls = LANE_Y.map(y => {
+  const box  = mk("rect", { x:X_DET, y:y - DET_H / 2, width:DET_W, height:DET_H, rx:8,
+                            fill:"#fff", stroke:"var(--line)", "stroke-width":1.6 });
+  const num  = mk("text", { x:X_DET + 14, y:y + 9, class:"val" });
+  const pc   = mk("text", { x:X_DET + DET_W - 12, y:y + 8, "text-anchor":"end", class:"pc" });
+  const glow = mk("circle", { cx:X_DET - 12, cy:y, r:9, fill:"none",
+                              stroke:"var(--yellow)", "stroke-width":3, opacity:0 });
+  gDets.appendChild(box); gDets.appendChild(glow);
+  gDets.appendChild(num); gDets.appendChild(pc);
+  return { box, num, pc, glow };
+});
+
+/* ==================== tila ==================== */
+
+const on = { paperi:false, alumiini:false, lyijy:false, vesi:false };
+const stats = LANE_Y.map(() => ({ emitted:0, passed:0 }));
+const emitAcc = [0, 0, 0, 0];
+const glowT = [0, 0, 0, 0];
+let parts = [], flashes = [];
+let running = true, speed = 1;
+
+const MSG_ON = {
+  paperi:   "Paperiarkki riittää pysäyttämään alfasäteilyn.",
+  alumiini: "Muutama millimetri alumiinia pysäyttää beetasäteilyn.",
+  lyijy:    "Lyijy vaimentaa gammaa, mutta neutronit menevät läpi.",
+  vesi:     "Vesi pysäyttää neutronit – kevyt aine, ei tiheä."
+};
+const MSG_OFF = {
+  paperi:   "Ilman paperia alfa jatkaa, mutta pysähtyy jo ilmaan.",
+  alumiini: "Ilman alumiinia beeta jatkaa seuraavaan kerrokseen.",
+  lyijy:    "Ilman lyijyä gammasäteily läpäisee suojan helposti.",
+  vesi:     "Ilman vettä neutronit pääsevät ilmaisimeen asti."
+};
+const WHY = {
+  paperi:   "Alfahiukkanen on raskas ja varattu 2+: se ionisoi voimakkaasti ja pysähtyy heti.",
+  alumiini: "Beetahiukkanen on kevyt elektroni: se siroaa ja pysähtyy metallissa nopeasti.",
+  lyijy:    "Gammafotoni vaimenee eksponentiaalisesti: tiheä aine vaimentaa parhaiten.",
+  vesi:     "Neutroni on varaukseton: se hidastuu törmäämällä vedyn kevyisiin ytimiin."
+};
+const MSG_NONE = {
+  msg:"Lisää suojia oikealta ylhäältä: mikä säteily pysähtyy mihin?",
+  why:"Alfa pysähtyy jo ilmaan, beeta, gamma ja neutroni tavoittavat ilmaisimen."
+};
+const MSG_ALL = {
+  msg:"Lyijy ja vesi yhdessä: läpi pääsee enää harva hiukkanen.",
+  why:"Gammalle tarvitaan tiheää ainetta, neutronille vetypitoista."
+};
+
+/* ==================== fysiikka ==================== */
+
+/* Kerroksen sisällä pysähtymissyvyys. Kun läpäisyosuus on tr, vaimennus on
+   e^(-mu*w), ja absorptiokohta arvotaan tästä jakaumasta kerroksen sisältä. */
+function absorbDepth(tr, w){
+  if(tr <= 0) return rnd(2, 5);                 // pysähtyy pintaan
+  const mu = -Math.log(tr) / w;
+  const u  = Math.random() * (1 - tr);
+  return Math.min(w, -Math.log(1 - u) / mu);
+}
+
+function stopAt(i, fromX){
+  const t = TYPES[i];
+  for(const m of MATS){
+    if(!on[m.id] || m.x + m.w <= fromX) continue;
+    if(t.id === "alfa" && m.x > X_SRC + ALPHA_AIR) break;   // pysähtyi jo ilmaan
+    const tr = TRANS[t.id][m.id];
+    if(tr >= 1) continue;
+    if(Math.random() < tr) continue;                        // läpäisi kerroksen
+    return Math.max(fromX, m.x) + absorbDepth(tr, m.w);
+  }
+  if(t.id === "alfa") return X_SRC + ALPHA_AIR;
+  return Infinity;                                          // pääsi ilmaisimeen
+}
+
+function emit(i){
+  const t = TYPES[i];
+  const y = LANE_Y[i] + rnd(-7, 7);
+  let el;
+  if(t.shape === "wave"){
+    el = mk("path", { d:WAVE, fill:"none", stroke:t.color,
+                      "stroke-width":3.2, "stroke-linecap":"round" });
+  }else if(t.shape === "ring"){
+    el = mk("circle", { r:t.r, fill:"#fff", stroke:t.color, "stroke-width":3 });
+  }else{
+    el = mk("circle", { r:t.r, fill:t.color, stroke:"#fff", "stroke-width":1.2 });
+  }
+  gParts.appendChild(el);
+  const p = { i, x:X_SRC, y, v:t.v, stop:stopAt(i, X_SRC), el, wave:t.shape === "wave", fade:0 };
+  place(p);
+  parts.push(p);
+}
+
+function place(p){
+  if(p.wave) p.el.setAttribute("transform",
+    "translate(" + (p.x - WAVE_LEN).toFixed(1) + "," + p.y.toFixed(1) + ")");
+  else { p.el.setAttribute("cx", p.x.toFixed(1)); p.el.setAttribute("cy", p.y.toFixed(1)); }
+}
+
+function addFlash(x, y, color){
+  const el = mk("circle", { cx:x.toFixed(1), cy:y.toFixed(1), r:4, fill:"none",
+                            stroke:color, "stroke-width":2.6 });
+  gFx.appendChild(el);
+  flashes.push({ el, t:0 });
+}
+
+function drop(k){
+  gParts.removeChild(parts[k].el);
+  parts.splice(k, 1);
+}
+
+function step(dt){
+  if(running){
+    for(let i = 0; i < TYPES.length; i++){
+      emitAcc[i] += dt * RATE;
+      while(emitAcc[i] >= 1){ emitAcc[i] -= 1; emit(i); }
+    }
+  }
+
+  for(let k = parts.length - 1; k >= 0; k--){
+    const p = parts[k];
+    if(p.fade > 0){
+      p.fade -= dt;
+      p.el.setAttribute("opacity", clamp(p.fade / 0.26, 0, 1).toFixed(2));
+      if(p.fade <= 0) drop(k);
+      continue;
+    }
+    p.x += p.v * dt;
+    if(p.x >= p.stop){
+      p.x = p.stop;
+      p.fade = 0.26;
+      stats[p.i].emitted++;
+      addFlash(p.x, p.y, TYPES[p.i].color);
+      place(p);
+      continue;
+    }
+    if(p.x >= X_DET - 16){
+      stats[p.i].emitted++;
+      stats[p.i].passed++;
+      glowT[p.i] = 0.18;
+      drop(k);
+      continue;
+    }
+    place(p);
+  }
+
+  for(let k = flashes.length - 1; k >= 0; k--){
+    const f = flashes[k];
+    f.t += dt;
+    if(f.t >= 0.34){ gFx.removeChild(f.el); flashes.splice(k, 1); continue; }
+    f.el.setAttribute("r", (4 + f.t * 34).toFixed(1));
+    f.el.setAttribute("opacity", (1 - f.t / 0.34).toFixed(2));
+  }
+
+  for(let i = 0; i < LANE_Y.length; i++){
+    if(glowT[i] > 0) glowT[i] = Math.max(0, glowT[i] - dt);
+    const a = glowT[i] / 0.18;
+    detEls[i].glow.setAttribute("opacity", a.toFixed(2));
+    detEls[i].glow.setAttribute("r", (9 + (1 - a) * 4).toFixed(1));
+    detEls[i].box.setAttribute("stroke", a > 0.1 ? "var(--ink)" : "var(--line)");
+  }
+
+  readouts();
+}
+
+function pct(passed, emitted){
+  if(!emitted) return "–";
+  const v = passed / emitted * 100;
+  if(passed > 0 && v < 1) return "<1 %";
+  return Math.round(v) + " %";
+}
+
+function readouts(){
+  for(let i = 0; i < LANE_Y.length; i++){
+    typeset(detEls[i].num, String(stats[i].passed));
+    typeset(detEls[i].pc,  pct(stats[i].passed, stats[i].emitted));
+  }
+}
+
+/* ==================== ohjaimet ==================== */
+
+function paintMats(){
+  MATS.forEach((m, k) => {
+    const e = matEls[k], act = on[m.id];
+    e.rect.setAttribute("fill", act ? m.fill : "none");
+    e.rect.setAttribute("stroke", act ? m.stroke : "var(--line)");
+    e.rect.setAttribute("stroke-width", act ? 1.6 : 1.4);
+    e.rect.setAttribute("stroke-dasharray", act ? "none" : "5 6");
+    e.name.setAttribute("opacity", act ? "1" : "0.3");
+    e.th.setAttribute("opacity",   act ? "1" : "0.3");
+    $("tog_" + m.id).setAttribute("aria-pressed", act ? "true" : "false");
+  });
+}
+
+function setText(msg, why){
+  typeset($("msg"), msg);
+  typeset($("why"), why);
+}
+
+function say(matId, act){
+  const count = MATS.filter(m => on[m.id]).length;
+  if(count === 0)            setText(MSG_NONE.msg, MSG_NONE.why);
+  else if(count === MATS.length) setText(MSG_ALL.msg, MSG_ALL.why);
+  else if(matId)             setText(act ? MSG_ON[matId] : MSG_OFF[matId], WHY[matId]);
+}
+
+function toggle(m){
+  on[m.id] = !on[m.id];
+  paintMats();
+  /* Kerroksen jo ohittaneet hiukkaset poistetaan, kun suoja lisätään: ne eivät
+     ole kulkeneet uuden suojan läpi, joten ne vääristäisivät läpäisyosuutta.
+     Muut saavat uuden pysähtymiskohdan, jottei mikään pysähdy kerrokseen,
+     jota ei enää ole. */
+  for(let k = parts.length - 1; k >= 0; k--){
+    const p = parts[k];
+    if(on[m.id] && p.x > m.x) drop(k);
+    else if(p.fade <= 0) p.stop = stopAt(p.i, p.x);
+  }
+  zero();                       // uusi suoja = uusi mittaus
+  say(m.id, on[m.id]);
+}
+
+function zero(){
+  stats.forEach(s => { s.emitted = 0; s.passed = 0; });
+  readouts();
+}
+
+function reset(){
+  while(parts.length) drop(parts.length - 1);
+  while(flashes.length){ gFx.removeChild(flashes[0].el); flashes.shift(); }
+  emitAcc.fill(0);
+  glowT.fill(0);
+  zero();
+  say(null);
+}
+
+MATS.forEach(m => $("tog_" + m.id).addEventListener("click", () => toggle(m)));
+
+$("run").addEventListener("click", () => {
+  running = !running;
+  $("run").textContent = running ? "Pysäytä" : "Jatka";
+});
+
+$("one").addEventListener("click", () => {
+  for(let i = 0; i < TYPES.length; i++) emit(i);
+});
+
+$("reset").addEventListener("click", reset);
+
+$("speed").addEventListener("input", ev => {
+  speed = parseFloat(ev.target.value);
+  $("speedOut").textContent = fmt(speed, 1) + "×";
+});
+
+document.querySelectorAll(".scene text").forEach(el => typeset(el, el.textContent.trim()));
+
+const wrapEl = document.querySelector(".sim-wrap");
+const ctrlEl = document.querySelector(".sim-controls");
+const togEl  = document.querySelector(".sim-toggles");
+function scaleChrome(){
+  const w = wrapEl.getBoundingClientRect().width;
+  if(!w) return;
+  ctrlEl.style.fontSize = (w / 960 * 18).toFixed(2) + "px";
+  togEl.style.fontSize  = (w / 960 * 15).toFixed(2) + "px";
+}
+if(typeof ResizeObserver === "function") new ResizeObserver(scaleChrome).observe(wrapEl);
+window.addEventListener("resize", scaleChrome);
+scaleChrome();
+
+paintMats();
+reset();
+
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000;
+  last = now;
+  if(dt > 0.05) dt = 0.05;
+  step(dt * speed);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
