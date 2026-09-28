@@ -11,12 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Karla:wght@500;700&display=swap" rel="stylesheet">
 <!--
   Oppiruukin kevyt versio iframe-upotukseen.
-  Oletusaika 2 min; toisen ajan saa URL-parametrilla, esim. oppiruukki-mini.html?min=5
+  Oletusaika 60 s; toisen ajan saa URL-parametrilla, esim. oppiruukki-mini.html?min=5
   (myös desimaalit käyvät: ?min=0.5 = 30 s). Välilyönti käynnistää / pysäyttää.
 -->
 <style>
   :root{
-    --bg:#efe8da;
+    --bg:#ffffff;
     --panel:#faf6ec;
     --panel-2:#f2ecdd;
     --ink:#3a3530;
@@ -53,7 +53,7 @@
   .time{
     font-family:"Zilla Slab", Georgia, serif;
     font-weight:700;
-    font-size:clamp(2.6rem, 22vmin, 7rem);
+    font-size:clamp(2.4rem, 13vmin, 5rem);
     line-height:1;
     color:var(--brick-dark);
     font-variant-numeric:tabular-nums;
@@ -111,18 +111,220 @@
     min-width:7.5em;
   }
   #soundBtn{ padding:10px; min-width:44px; }
+
+  /* ---------- Scene: the ruukkimestari taps stones on a conveyor belt ---------- */
+  .scene{
+    position:relative;
+    height:132px;
+    margin:0 0 10px;
+    overflow:hidden;
+    border-radius:12px;
+    background:linear-gradient(#fff 0%, var(--panel-2) 100%);
+  }
+  /* 110px creature; its hammer lands at (84px, 99px) of this box, which is
+     centred on the scene so stones are struck in the middle of the belt */
+  .monster-stage{
+    position:absolute;
+    left:calc(50% - 84px);
+    top:4px;
+    width:110px;
+    height:110px;
+    z-index:1;
+  }
+  .monster-svg{ width:100%; height:100%; overflow:visible; display:block; }
+  .monster-svg .mood{ display:none; }
+  .monster-svg[data-mood="calm"]   .mood-calm,
+  .monster-svg[data-mood="focus"]  .mood-focus,
+  .monster-svg[data-mood="effort"] .mood-effort,
+  .monster-svg[data-mood="strain"] .mood-strain,
+  .monster-svg[data-mood="glee"]   .mood-glee{ display:block; }
+  .monster-svg .idleBob{ animation: bob 2.6s ease-in-out infinite; transform-origin:center; }
+  @keyframes bob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-4px); }
+  }
+  .monster-svg .armHammer{
+    transform-origin: 134px 94px;
+    animation: tap 1.6s ease-in-out infinite;
+  }
+  @keyframes tap{
+    0%   { transform: rotate(-5deg); }
+    10%  { transform: rotate(2deg); }
+    18%  { transform: rotate(-3deg); }
+    28%  { transform: rotate(1deg); }
+    38%  { transform: rotate(-5deg); }
+    100% { transform: rotate(-5deg); }
+  }
+  .monster-svg.swinging .armHammer{ animation: hammerSwing .65s cubic-bezier(.34,1.4,.4,1) 1; }
+  .monster-svg.swinging .idleBob{ animation-play-state: paused; }
+  .monster-svg.swinging .lean{ animation: lean .65s ease-in-out 1; }
+  @keyframes hammerSwing{
+    0%{ transform: rotate(-8deg); }
+    28%{ transform: rotate(-62deg); }
+    46%{ transform: rotate(30deg); }
+    70%{ transform: rotate(6deg); }
+    100%{ transform: rotate(-8deg); }
+  }
+  @keyframes lean{
+    0%,100%{ transform:translateX(0); }
+    40%{ transform:translateX(4px); }
+  }
+  .monster-svg.celebrate .armHammer{ animation: celebrateArm 1s ease-in-out infinite; }
+  .monster-svg.celebrate .idleBob{ animation: celebrateBob .5s ease-in-out infinite; }
+  @keyframes celebrateArm{
+    0%,100%{ transform: rotate(-105deg); }
+    50%{ transform: rotate(-125deg); }
+  }
+  @keyframes celebrateBob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-7px); }
+  }
+
+  /* the belt runs in front of the creature's feet */
+  .belt{
+    position:absolute;
+    left:0; right:0;
+    top:121px;
+    height:11px;
+    z-index:2;
+    background:
+      repeating-linear-gradient(90deg, #585245 0 3px, #75705f 3px 18px);
+    border-top:2px solid #3a3530;
+  }
+  .items{ position:absolute; inset:0; z-index:3; pointer-events:none; }
+  .item{
+    position:absolute;
+    top:95px;
+    left:0;
+    width:26px;
+    height:26px;
+    will-change:transform;
+  }
+  .item svg{
+    width:100%; height:100%; display:block;
+    transform:rotate(var(--rot,0deg));
+    transition:transform .3s cubic-bezier(.34,1.56,.64,1);
+  }
+  .item svg use{ fill:#8f887a; stroke:#585245; stroke-width:1.5; }
+  .item.diamond svg{ transform:rotate(0deg); filter:drop-shadow(0 1px 1.5px rgba(58,53,45,.35)); }
+  .item.diamond svg use{ fill:#8fc3ea; stroke:#012169; stroke-width:1.6; }
+  .item.refining svg{ animation: refine .45s ease-in-out; }
+  @keyframes refine{
+    0%   { transform: rotate(var(--rot,0deg)) scale(1); }
+    30%  { transform: rotate(0deg) scale(.3); }
+    70%  { transform: rotate(0deg) scale(1.2); }
+    100% { transform: rotate(0deg) scale(1); }
+  }
+  .spark{
+    position:absolute;
+    top:100px;
+    width:12px; height:2px;
+    z-index:4;
+    pointer-events:none;
+    background:linear-gradient(90deg, var(--fire-yellow), var(--fire-orange));
+    animation: spark .35s ease-out forwards;
+  }
+  @keyframes spark{
+    from{ transform:translate(-50%,0) rotate(var(--a)); opacity:1; }
+    to{ transform:translate(calc(-50% + var(--dx)), var(--dy)) rotate(var(--a)); opacity:0; }
+  }
   .visually-hidden{
     position:absolute; width:1px; height:1px;
     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;
   }
   @media (prefers-reduced-motion: reduce){
-    .fill, button{ transition:none; }
+    .fill, button, .item svg{ transition:none; }
+    .monster-svg .idleBob,
+    .monster-svg .armHammer,
+    .monster-svg.swinging .armHammer,
+    .monster-svg.swinging .lean,
+    .monster-svg.celebrate .armHammer,
+    .monster-svg.celebrate .idleBob,
+    .item.refining svg,
+    .spark{ animation:none; }
+    .spark{ display:none; }
   }
 </style>
 </head>
 <body>
 <main class="card" id="card">
-  <div class="time" id="time" role="timer" aria-label="Jäljellä oleva aika">2:00</div>
+  <div class="scene" id="scene" aria-hidden="true">
+    <div class="monster-stage">
+        <svg class="monster-svg" id="monster" data-mood="calm" viewBox="0 0 200 200" role="img" aria-label="Ruukkimestari-kivihirviö">
+          <g class="lean">
+            <g class="idleBob">
+              <!-- legs -->
+              <ellipse cx="78" cy="168" rx="16" ry="10" fill="#585245"/>
+              <ellipse cx="118" cy="170" rx="17" ry="10" fill="#585245"/>
+              <!-- back arm stub -->
+              <ellipse cx="60" cy="110" rx="14" ry="18" fill="#75705f"/>
+              <!-- body -->
+              <path d="M40,120 C22,102 26,68 58,52 C76,38 100,30 126,36 C154,42 174,64 178,92 C182,118 166,142 140,152 C114,162 82,163 62,155 C44,148 34,138 40,120 Z" fill="#8f887a" stroke="#585245" stroke-width="4"/>
+              <path d="M56,60 C70,48 92,42 108,44 C98,50 84,58 76,72 C68,60 60,60 56,60 Z" fill="#a49c88" opacity=".8"/>
+              <path d="M60,110 C58,96 66,84 80,80" fill="none" stroke="#6f6a5b" stroke-width="3" opacity=".6" stroke-linecap="round"/>
+              <path d="M120,150 C126,138 142,132 156,134" fill="none" stroke="#6f6a5b" stroke-width="3" opacity=".6" stroke-linecap="round"/>
+              <!-- belly patch -->
+              <ellipse cx="104" cy="118" rx="34" ry="26" fill="#c9c0a9" opacity=".55"/>
+              <!-- face: one group per mood, swapped as the work gets harder -->
+              <g class="mood mood-calm">
+                <ellipse cx="80" cy="90" rx="9" ry="10" fill="#faf6ec"/>
+                <ellipse cx="112" cy="88" rx="9" ry="10" fill="#faf6ec"/>
+                <circle cx="82" cy="93" r="4" fill="#3a3530"/>
+                <circle cx="114" cy="91" r="4" fill="#3a3530"/>
+                <path d="M70,76 C75,71 84,71 88,75" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M102,73 C107,69 116,69 121,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M84,112 C94,120 108,120 118,111" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+              </g>
+              <g class="mood mood-focus">
+                <ellipse cx="80" cy="90" rx="9" ry="9.5" fill="#faf6ec"/>
+                <ellipse cx="112" cy="88" rx="9" ry="9.5" fill="#faf6ec"/>
+                <circle cx="83" cy="95" r="4" fill="#3a3530"/>
+                <circle cx="115" cy="93" r="4" fill="#3a3530"/>
+                <path d="M70,74 C76,72 84,75 88,79" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M102,79 C107,75 115,72 121,74" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M91,114 C98,112 106,112 113,113" fill="none" stroke="#3a3530" stroke-width="3.5" stroke-linecap="round"/>
+              </g>
+              <g class="mood mood-effort">
+                <ellipse cx="80" cy="91" rx="8.5" ry="8" fill="#faf6ec"/>
+                <ellipse cx="112" cy="89" rx="8.5" ry="8" fill="#faf6ec"/>
+                <circle cx="83" cy="94" r="3.8" fill="#3a3530"/>
+                <circle cx="115" cy="92" r="3.8" fill="#3a3530"/>
+                <path d="M69,72 C77,71 85,77 89,82" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                <path d="M101,82 C105,77 114,71 122,72" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                <ellipse cx="101" cy="116" rx="9" ry="6.5" fill="#3a3530"/>
+              </g>
+              <g class="mood mood-strain">
+                <path d="M71,93 C76,86 85,86 89,92" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                <path d="M103,91 C107,85 116,85 121,92" fill="none" stroke="#3a3530" stroke-width="3.2" stroke-linecap="round"/>
+                <path d="M67,74 C76,72 86,79 90,84" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M100,84 C104,79 114,72 123,74" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M86,110 C94,121 108,121 116,110 Z" fill="#3a3530"/>
+                <path d="M92,113 L94,117 M101,114 L101,118 M110,113 L108,117" stroke="#faf6ec" stroke-width="1.6" stroke-linecap="round"/>
+              </g>
+              <g class="mood mood-glee">
+                <path d="M71,92 C76,84 85,84 90,92" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M102,90 C107,82 116,82 121,90" fill="none" stroke="#3a3530" stroke-width="3.4" stroke-linecap="round"/>
+                <path d="M69,73 C76,68 86,68 91,72" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M100,72 C105,68 115,68 122,73" fill="none" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/>
+                <path d="M83,108 C93,124 109,124 119,107" fill="none" stroke="#3a3530" stroke-width="3.6" stroke-linecap="round"/>
+              </g>
+              <!-- front arm + hammer -->
+              <g class="armHammer">
+                <path d="M134,94 C150,94 162,104 164,120 C165,130 160,136 152,138" fill="none" stroke="#8f887a" stroke-width="16" stroke-linecap="round"/>
+                <g transform="translate(152,138) rotate(28)">
+                  <rect x="-5" y="-4" width="46" height="10" rx="4" fill="#7c5a3a"/>
+                  <rect class="hammerHead" x="36" y="-24" width="20" height="48" rx="5" fill="#726c5c" stroke="#3a3530" stroke-width="3"/>
+                  <rect x="39" y="-19" width="6" height="38" fill="#8f887a" opacity=".6"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+    </div>
+    <div class="belt" id="belt"></div>
+    <div class="items" id="items"></div>
+  </div>
+  <div class="time" id="time" role="timer" aria-label="Jäljellä oleva aika">1:00</div>
   <div class="track" role="progressbar" aria-label="Eteneminen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="track">
     <div class="fill" id="fill"></div>
   </div>
@@ -136,11 +338,24 @@
   </div>
 </main>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="roughRock" viewBox="0 0 40 40">
+      <path d="M4,22 C2,13 8,5 18,4 C29,2 37,9 37,19 C38,29 30,37 20,38 C10,39 5,31 4,22 Z" />
+      <path d="M12,16 L20,12 M22,20 L30,24" stroke="rgba(0,0,0,.18)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cutStone" viewBox="0 0 40 40">
+      <path d="M14,7 L26,7 L36,16 L20,36 L4,16 Z"/>
+      <path d="M4,16 L36,16 M14,7 L20,16 M26,7 L20,16 M20,16 L20,36" fill="none" stroke-opacity=".4" stroke-width="1.2"/>
+    </symbol>
+  </defs>
+</svg>
+
 <script>
 (function(){
   "use strict";
 
-  var DEFAULT_MIN = 2;
+  var DEFAULT_MIN = 1;
   var param = parseFloat(new URLSearchParams(location.search).get("min"));
   var startMs = Math.round((param > 0 && param <= 180 ? param : DEFAULT_MIN) * 60000);
 
@@ -158,6 +373,104 @@
   var tick = null;
   var soundOn = true;
   var audio = null;
+
+  // --- conveyor belt: rough stones ride in from the left, get tapped into
+  // diamonds under the hammer (centre of the scene) and ride out right ---
+  var sceneEl = document.getElementById("scene");
+  var beltEl = document.getElementById("belt");
+  var itemsEl = document.getElementById("items");
+  var monsterEl = document.getElementById("monster");
+  var SPEED = 36;        // px/s
+  var GAP = 64;          // px between stones
+  var ITEM = 26;         // stone size, px
+  var SWING_LEAD = 0.3;  // s from swing start to the hammer landing
+  var items = [];
+  var beltOffset = 0;
+  var beltOn = false;
+  var lastFrame = 0;
+  var moodTimer = null;
+
+  function makeItem(x, diamond){
+    var el = document.createElement("div");
+    el.className = "item" + (diamond ? " diamond" : "");
+    el.style.setProperty("--rot", (Math.random() * 60 - 30).toFixed(0) + "deg");
+    el.innerHTML = '<svg viewBox="0 0 40 40"><use href="#' + (diamond ? "cutStone" : "roughRock") + '"/></svg>';
+    itemsEl.appendChild(el);
+    var it = { el: el, x: x, swung: diamond, struck: diamond };
+    place(it);
+    return it;
+  }
+
+  function place(it){ it.el.style.transform = "translateX(" + it.x.toFixed(1) + "px)"; }
+
+  function fillBelt(){
+    itemsEl.textContent = "";
+    items = [];
+    var hitX = sceneEl.clientWidth / 2;
+    for (var x = -ITEM; x < sceneEl.clientWidth; x += GAP){
+      items.push(makeItem(x, x + ITEM / 2 >= hitX));
+    }
+  }
+
+  function setMood(m){ monsterEl.setAttribute("data-mood", m); }
+
+  function swing(){
+    monsterEl.classList.remove("swinging");
+    void monsterEl.getBoundingClientRect();   // restart the animation
+    monsterEl.classList.add("swinging");
+  }
+
+  function strike(it, hitX){
+    it.struck = true;
+    it.el.classList.add("diamond", "refining");
+    it.el.querySelector("use").setAttribute("href", "#cutStone");
+    setTimeout(function(){ it.el.classList.remove("refining"); }, 500);
+    for (var i = 0; i < 4; i++){
+      var sp = document.createElement("div");
+      sp.className = "spark";
+      sp.style.left = hitX + "px";
+      var a = -150 + Math.random() * 120;
+      sp.style.setProperty("--a", a.toFixed(0) + "deg");
+      sp.style.setProperty("--dx", (Math.cos(a * Math.PI / 180) * 22).toFixed(1) + "px");
+      sp.style.setProperty("--dy", (Math.sin(a * Math.PI / 180) * 22).toFixed(1) + "px");
+      sceneEl.appendChild(sp);
+      setTimeout(sp.remove.bind(sp), 400);
+    }
+    setMood("glee");
+    clearTimeout(moodTimer);
+    moodTimer = setTimeout(function(){ if (beltOn) setMood("focus"); }, 450);
+  }
+
+  function beltFrame(now){
+    if (!beltOn) return;
+    var dt = Math.min(0.1, (now - (lastFrame || now)) / 1000);
+    lastFrame = now;
+    var width = sceneEl.clientWidth;
+    var hitX = width / 2;
+    var d = SPEED * dt;
+    beltOffset += d;
+    beltEl.style.backgroundPosition = beltOffset.toFixed(1) + "px 0";
+
+    for (var i = items.length - 1; i >= 0; i--){
+      var it = items[i];
+      it.x += d;
+      var c = it.x + ITEM / 2;
+      if (!it.swung && c >= hitX - SPEED * SWING_LEAD){ it.swung = true; swing(); }
+      if (!it.struck && c >= hitX) strike(it, hitX);
+      if (it.x > width){ it.el.remove(); items.splice(i, 1); continue; }
+      place(it);
+    }
+    var first = items.length ? Math.min.apply(null, items.map(function(t){ return t.x; })) : Infinity;
+    if (first > -ITEM) items.push(makeItem(first - GAP, false));
+    requestAnimationFrame(beltFrame);
+  }
+
+  function setBelt(on){
+    if (on === beltOn) return;
+    beltOn = on;
+    lastFrame = 0;
+    if (on) requestAnimationFrame(beltFrame);
+  }
 
   function fmt(ms){
     var s = Math.ceil(ms / 1000);
@@ -191,6 +504,9 @@
     endAt = Date.now() + remainingMs;
     tick = setInterval(update, 250);
     startBtn.textContent = "⏸ Tauko";
+    monsterEl.classList.remove("celebrate");
+    setMood("focus");
+    setBelt(true);
     render();
   }
 
@@ -198,7 +514,11 @@
     if (!running()) return;
     update();
     clearInterval(tick); tick = null;
-    if (remainingMs > 0) startBtn.textContent = "▶ Jatka";
+    if (remainingMs > 0){
+      startBtn.textContent = "▶ Jatka";
+      setBelt(false);
+      setMood("calm");
+    }
     render();
   }
 
@@ -209,6 +529,9 @@
     card.classList.remove("done");
     msgEl.textContent = "";
     startBtn.textContent = "▶ Aloita";
+    setBelt(false);
+    monsterEl.classList.remove("celebrate");
+    setMood("calm");
     render();
   }
 
@@ -218,6 +541,10 @@
     card.classList.add("done");
     msgEl.textContent = "Ruukki on valmis!";
     startBtn.textContent = "▶ Uudelleen";
+    setBelt(false);
+    clearTimeout(moodTimer);
+    setMood("glee");
+    monsterEl.classList.add("celebrate");
     render();
     chime();
   }
@@ -233,6 +560,8 @@
       card.classList.remove("done");
       msgEl.textContent = "";
       startBtn.textContent = "▶ Aloita";
+      monsterEl.classList.remove("celebrate");
+      setMood("calm");
     }
     render();
   }
@@ -290,6 +619,8 @@
   // background tabs throttle intervals; resync when the page becomes visible
   document.addEventListener("visibilitychange", function(){ if (running()) update(); });
 
+  fillBelt();
+  window.addEventListener("resize", function(){ if (!beltOn) fillBelt(); });
   render();
 })();
 </script>
