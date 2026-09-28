@@ -824,6 +824,17 @@
       gap: 12px;
     }
 
+    /* Masonry: odd cards stack in the left column, even in the right.
+       The script below sets each card's row span from its height. */
+    .grid.is-masonry {
+      grid-auto-rows: 1px;
+      grid-auto-flow: row dense;
+      row-gap: 0;
+    }
+
+    .grid.is-masonry > .category:nth-child(odd) { grid-column: 1; }
+    .grid.is-masonry > .category:nth-child(even) { grid-column: 2; }
+
     .category {
       background: rgba(255, 255, 255, 0.86);
       border: 1px solid var(--line);
@@ -2342,6 +2353,33 @@
     <g class="robot-leg-r"><rect x="45" y="92" width="21" height="29" rx="4"/><rect x="45" y="116" width="25" height="9" rx="3"/></g>
   </g>
 </svg>
+  <script>
+(function () {
+  var grid = document.querySelector('#materials .grid');
+  if (!grid || !('ResizeObserver' in window)) return;
+  var cards = Array.prototype.slice.call(grid.children);
+  var twoColumns = window.matchMedia('(min-width: 761px)');
+  var GAP = 12;
+  function setSpan(card) {
+    card.style.gridRowEnd = 'span ' + Math.ceil(card.getBoundingClientRect().height + GAP);
+  }
+  var observer = new ResizeObserver(function (entries) {
+    entries.forEach(function (entry) { setSpan(entry.target); });
+  });
+  function update() {
+    if (twoColumns.matches) {
+      grid.classList.add('is-masonry');
+      cards.forEach(function (card) { setSpan(card); observer.observe(card); });
+    } else {
+      observer.disconnect();
+      grid.classList.remove('is-masonry');
+      cards.forEach(function (card) { card.style.gridRowEnd = ''; });
+    }
+  }
+  twoColumns.addEventListener('change', update);
+  update();
+}());
+</script>
   <script>
 (function () {
   var robot = document.querySelector('.robot-walker');
