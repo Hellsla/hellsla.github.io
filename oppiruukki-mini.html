@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Oppiruukki mini – ajastin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Karla:wght@500;700&display=swap" rel="stylesheet">
+<!--
+  Oppiruukin kevyt versio iframe-upotukseen.
+  Oletusaika 2 min; toisen ajan saa URL-parametrilla, esim. oppiruukki-mini.html?min=5
+  (myös desimaalit käyvät: ?min=0.5 = 30 s). Välilyönti käynnistää / pysäyttää.
+-->
+<style>
+  :root{
+    --bg:#efe8da;
+    --panel:#faf6ec;
+    --panel-2:#f2ecdd;
+    --ink:#3a3530;
+    --ink-soft:#6c6459;
+    --clay:#fca5c7;
+    --brick:#012169;
+    --brick-dark:#011a52;
+    --fire-orange:#e8863a;
+    --fire-yellow:#f2b705;
+    --stone-light:#cdc3ad;
+    --shadow:0 4px 12px rgba(58,54,47,.16);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; height:100%; }
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Karla", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+    overflow:hidden;
+  }
+  .card{
+    width:100%;
+    max-width:520px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    padding:clamp(12px, 4vmin, 24px);
+    text-align:center;
+  }
+  .time{
+    font-family:"Zilla Slab", Georgia, serif;
+    font-weight:700;
+    font-size:clamp(2.6rem, 22vmin, 7rem);
+    line-height:1;
+    color:var(--brick-dark);
+    font-variant-numeric:tabular-nums;
+    margin:0 0 .15em;
+  }
+  .card.done .time{ color:var(--fire-orange); }
+  .track{
+    height:12px;
+    border-radius:999px;
+    background:var(--panel-2);
+    box-shadow:inset 0 0 0 2px var(--stone-light);
+    overflow:hidden;
+  }
+  .fill{
+    height:100%;
+    width:0%;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--clay), var(--fire-orange), var(--fire-yellow));
+    transition:width .25s linear;
+  }
+  .msg{
+    min-height:1.3em;
+    margin:.5em 0 .6em;
+    font-weight:700;
+    color:var(--ink-soft);
+  }
+  .card.done .msg{ color:#8a4a12; }
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+  }
+  button{
+    font-family:"Zilla Slab", Georgia, serif;
+    font-size:1rem;
+    font-weight:700;
+    border:2px solid var(--stone-light);
+    background:var(--panel-2);
+    color:var(--brick);
+    border-radius:12px;
+    padding:10px 14px;
+    min-height:44px;
+    cursor:pointer;
+    font-variant-numeric:tabular-nums;
+    transition:transform .1s, filter .15s;
+  }
+  button:hover{ filter:brightness(1.05); }
+  button:active{ transform:scale(.97); }
+  button:focus-visible{ outline:3px solid var(--ink); outline-offset:2px; }
+  #startBtn{
+    background:var(--brick);
+    border-color:var(--brick);
+    color:#fff;
+    min-width:7.5em;
+  }
+  #soundBtn{ padding:10px; min-width:44px; }
+  .visually-hidden{
+    position:absolute; width:1px; height:1px;
+    overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .fill, button{ transition:none; }
+  }
+</style>
+</head>
+<body>
+<main class="card" id="card">
+  <div class="time" id="time" role="timer" aria-label="Jäljellä oleva aika">2:00</div>
+  <div class="track" role="progressbar" aria-label="Eteneminen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="track">
+    <div class="fill" id="fill"></div>
+  </div>
+  <p class="msg" id="msg" aria-live="polite"></p>
+  <div class="controls">
+    <button type="button" id="minusBtn" aria-label="Vähennä minuutti">−1</button>
+    <button type="button" id="startBtn">▶ Aloita</button>
+    <button type="button" id="resetBtn" aria-label="Nollaa">↺</button>
+    <button type="button" id="plusBtn" aria-label="Lisää minuutti">+1</button>
+    <button type="button" id="soundBtn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
+  </div>
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  var DEFAULT_MIN = 2;
+  var param = parseFloat(new URLSearchParams(location.search).get("min"));
+  var startMs = Math.round((param > 0 && param <= 180 ? param : DEFAULT_MIN) * 60000);
+
+  var card = document.getElementById("card");
+  var timeEl = document.getElementById("time");
+  var fillEl = document.getElementById("fill");
+  var trackEl = document.getElementById("track");
+  var msgEl = document.getElementById("msg");
+  var startBtn = document.getElementById("startBtn");
+  var soundBtn = document.getElementById("soundBtn");
+
+  var totalMs = startMs;   // session length, adjustable with ±1
+  var remainingMs = startMs;
+  var endAt = 0;           // wall-clock end while running
+  var tick = null;
+  var soundOn = true;
+  var audio = null;
+
+  function fmt(ms){
+    var s = Math.ceil(ms / 1000);
+    var m = Math.floor(s / 60);
+    s = s % 60;
+    return m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  function render(){
+    timeEl.textContent = fmt(remainingMs);
+    var pct = totalMs > 0 ? Math.min(100, Math.max(0, (1 - remainingMs / totalMs) * 100)) : 0;
+    fillEl.style.width = pct + "%";
+    trackEl.setAttribute("aria-valuenow", Math.round(pct));
+    document.title = (tick ? fmt(remainingMs) + " – " : "") + "Oppiruukki mini";
+  }
+
+  function running(){ return tick !== null; }
+
+  function update(){
+    remainingMs = Math.max(0, endAt - Date.now());
+    render();
+    if (remainingMs <= 0) finish();
+  }
+
+  function start(){
+    if (running()) return;
+    if (remainingMs <= 0) reset();
+    unlockAudio();
+    card.classList.remove("done");
+    msgEl.textContent = "";
+    endAt = Date.now() + remainingMs;
+    tick = setInterval(update, 250);
+    startBtn.textContent = "⏸ Tauko";
+    render();
+  }
+
+  function pause(){
+    if (!running()) return;
+    update();
+    clearInterval(tick); tick = null;
+    if (remainingMs > 0) startBtn.textContent = "▶ Jatka";
+    render();
+  }
+
+  function reset(){
+    clearInterval(tick); tick = null;
+    totalMs = startMs;
+    remainingMs = startMs;
+    card.classList.remove("done");
+    msgEl.textContent = "";
+    startBtn.textContent = "▶ Aloita";
+    render();
+  }
+
+  function finish(){
+    clearInterval(tick); tick = null;
+    remainingMs = 0;
+    card.classList.add("done");
+    msgEl.textContent = "Ruukki on valmis!";
+    startBtn.textContent = "▶ Uudelleen";
+    render();
+    chime();
+  }
+
+  function adjust(deltaMs){
+    if (running()) update();
+    var next = remainingMs + deltaMs;
+    if (next < 1000 && deltaMs < 0) return;   // don't let −1 end the session
+    remainingMs = Math.min(next, 180 * 60000);
+    totalMs = Math.max(remainingMs, totalMs + deltaMs);
+    if (running()) endAt = Date.now() + remainingMs;
+    if (remainingMs > 0 && card.classList.contains("done")){
+      card.classList.remove("done");
+      msgEl.textContent = "";
+      startBtn.textContent = "▶ Aloita";
+    }
+    render();
+  }
+
+  // --- sound: short three-note chime via Web Audio ---
+  function unlockAudio(){
+    if (!soundOn) return;
+    try{
+      if (!audio){
+        var Ctx = window.AudioContext || window.webkitAudioContext;
+        if (Ctx) audio = new Ctx();
+      }
+      if (audio && audio.state === "suspended") audio.resume();
+    }catch(e){}
+  }
+
+  function chime(){
+    if (!soundOn || !audio) return;
+    try{
+      var t = audio.currentTime + 0.05;
+      [659.25, 783.99, 1046.5].forEach(function(f, i){
+        var o = audio.createOscillator();
+        var g = audio.createGain();
+        o.type = "sine";
+        o.frequency.value = f;
+        var s = t + i * 0.22;
+        g.gain.setValueAtTime(0.0001, s);
+        g.gain.exponentialRampToValueAtTime(0.25, s + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, s + 0.9);
+        o.connect(g).connect(audio.destination);
+        o.start(s); o.stop(s + 1);
+      });
+    }catch(e){}
+  }
+
+  startBtn.addEventListener("click", function(){ running() ? pause() : start(); });
+  document.getElementById("resetBtn").addEventListener("click", reset);
+  document.getElementById("minusBtn").addEventListener("click", function(){ adjust(-60000); });
+  document.getElementById("plusBtn").addEventListener("click", function(){ adjust(60000); });
+  soundBtn.addEventListener("click", function(){
+    soundOn = !soundOn;
+    soundBtn.textContent = soundOn ? "🔊" : "🔇";
+    soundBtn.setAttribute("aria-pressed", String(soundOn));
+    soundBtn.setAttribute("aria-label", soundOn ? "Äänet päällä" : "Äänet pois");
+    if (soundOn) unlockAudio();
+  });
+
+  document.addEventListener("keydown", function(e){
+    if (e.code === "Space" && !(e.target instanceof HTMLButtonElement)){
+      e.preventDefault();
+      running() ? pause() : start();
+    }
+  });
+
+  // background tabs throttle intervals; resync when the page becomes visible
+  document.addEventListener("visibilitychange", function(){ if (running()) update(); });
+
+  render();
+})();
+</script>
+</body>
+</html>
