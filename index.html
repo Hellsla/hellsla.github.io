@@ -397,6 +397,138 @@
 
     .featured-card:hover .featured-cta svg { transform: translateX(3px); }
 
+    /* ---------- Classroom case study ---------- */
+    .classroom {
+      padding: 26px 0 4px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 140ms both;
+    }
+
+    .case-study {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+      gap: 26px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px 22px;
+    }
+
+    .case-study-kicker {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .case-study h3 {
+      margin: 0 0 12px;
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.16;
+    }
+
+    .case-study-body {
+      display: grid;
+      gap: 12px;
+    }
+
+    .case-study-body p {
+      margin: 0;
+      color: var(--ink-2);
+      max-width: 68ch;
+      line-height: 1.6;
+      font-size: 0.94rem;
+    }
+
+    .case-study-body .case-study-reflection {
+      margin-top: 4px;
+      padding-left: 14px;
+      border-left: 2px solid var(--accent);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 380;
+      font-size: 1.02rem;
+      line-height: 1.5;
+    }
+
+    .case-study-aside {
+      display: grid;
+      gap: 16px;
+      align-self: start;
+      padding: 16px 18px;
+      border-radius: 12px;
+      background: var(--accent-soft);
+    }
+
+    .case-study-stat {
+      display: grid;
+      gap: 4px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(20, 83, 45, 0.15);
+    }
+
+    .case-study-stat-value {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--accent-deep);
+    }
+
+    .case-study-stat-value small {
+      font-size: 1.1rem;
+      color: var(--ink-2);
+    }
+
+    .case-study-stat-label {
+      font-size: 0.78rem;
+      color: var(--ink-2);
+      line-height: 1.4;
+    }
+
+    .case-study-list-title {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: var(--accent-deep);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .case-study-list {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .case-study-list li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.84rem;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .case-study-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
     /* ---------- Profile ---------- */
     .profile {
       display: grid;
@@ -881,6 +1013,16 @@
 
       .featured-card { padding: 15px 16px; }
 
+      .classroom { padding-top: 24px; }
+
+      .case-study {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 16px;
+      }
+
+      .case-study h3 { font-size: 1.24rem; }
+
       .materials { padding-top: 26px; }
 
       .grid { grid-template-columns: 1fr; }
@@ -1106,8 +1248,55 @@
         </div>
       </section>
 
+      <section id="classroom" class="classroom" aria-labelledby="classroom-title">
+        <span class="section-label">§ 03 — From the classroom</span>
+
+        <article class="case-study">
+          <div>
+            <span class="case-study-kicker">Case study · Introductory physics · Autumn 2026</span>
+            <h3 id="classroom-title">Flipped Learning and Self-Assessment</h3>
+
+            <div class="case-study-body">
+              <p>
+                In my introductory physics course, I used a flipped and flexible learning approach that combined independent work, weekly deadlines, collaborative learning, and regular feedback. Students could plan their work within each week, while I monitored their progress and provided short individual feedback to help them reflect on their learning.
+              </p>
+
+              <p>
+                Student feedback was very positive: 26 respondents gave the course an overall average of 4.38/5. In particular, students valued the learning materials, the supportive classroom atmosphere, flexible pacing, and assessment that was not centred solely on the final exam. Many students said that weekly progress checks helped them study more regularly and understand how their learning was developing.
+              </p>
+
+              <p>
+                Randomly changing table groups also supported participation and community building. Some students reported that working with different classmates helped them become more active, confident, and socially connected.
+              </p>
+
+              <p class="case-study-reflection">
+                The experience strengthened my view that learner autonomy works best when it is supported by clear structure, regular feedback, and opportunities for self-assessment and reflection.
+              </p>
+            </div>
+          </div>
+
+          <aside class="case-study-aside" aria-label="Course at a glance">
+            <div class="case-study-stat">
+              <span class="case-study-stat-value">4.38<small> / 5</small></span>
+              <span class="case-study-stat-label">Overall course rating from 26 student respondents</span>
+            </div>
+
+            <div>
+              <div class="case-study-list-title">Course design</div>
+              <ul class="case-study-list">
+                <li>Independent work with weekly deadlines</li>
+                <li>Flexible pacing within each week</li>
+                <li>Weekly progress checks and short individual feedback</li>
+                <li>Self-assessment and reflection</li>
+                <li>Randomly changing table groups</li>
+              </ul>
+            </div>
+          </aside>
+        </article>
+      </section>
+
       <section id="materials" class="materials">
-        <span class="section-label">§ 03 — Materials</span>
+        <span class="section-label">§ 04 — Materials</span>
         <p class="materials-note">Most materials below are in Finnish; some presentations are in English.</p>
 
         <div class="grid">
