@@ -529,6 +529,98 @@
       background: var(--accent);
     }
 
+    .agree-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .agree-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 5px 10px;
+      align-items: baseline;
+    }
+
+    .agree-label {
+      font-size: 0.8rem;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .agree-value {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .agree-track {
+      grid-column: 1 / -1;
+      display: block;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(26, 77, 46, 0.13);
+      overflow: hidden;
+    }
+
+    .agree-fill {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .case-study-voices {
+      grid-column: 1 / -1;
+      padding-top: 18px;
+      border-top: 1px solid var(--line-2);
+    }
+
+    .voices-note {
+      text-transform: none;
+      letter-spacing: 0.02em;
+      color: var(--ink-3);
+    }
+
+    .voices-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .voice {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+      padding: 14px 16px;
+      border: 1px solid var(--line-2);
+      border-radius: 12px;
+      background: var(--bg);
+    }
+
+    .voice blockquote {
+      margin: 0;
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 380;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    .voice figcaption {
+      margin-top: auto;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
     /* ---------- Profile ---------- */
     .profile {
       display: grid;
@@ -1023,6 +1115,8 @@
 
       .case-study h3 { font-size: 1.24rem; }
 
+      .voices-grid { grid-template-columns: 1fr; }
+
       .materials { padding-top: 26px; }
 
       .grid { grid-template-columns: 1fr; }
@@ -1262,7 +1356,7 @@
               </p>
 
               <p>
-                Student feedback was very positive: 26 respondents gave the course an overall average of 4.38/5. In particular, students valued the learning materials, the supportive classroom atmosphere, flexible pacing, and assessment that was not centred solely on the final exam. Many students said that weekly progress checks helped them study more regularly and understand how their learning was developing.
+                Student feedback was very positive: 28 respondents gave the course an overall average of 4.33/5. In particular, students valued the learning materials, the supportive classroom atmosphere, flexible pacing, and assessment that was not centred solely on the final exam. Many students said that weekly progress checks helped them study more regularly and understand how their learning was developing.
               </p>
 
               <p>
@@ -1277,8 +1371,39 @@
 
           <aside class="case-study-aside" aria-label="Course at a glance">
             <div class="case-study-stat">
-              <span class="case-study-stat-value">4.38<small> / 5</small></span>
-              <span class="case-study-stat-label">Overall course rating from 26 student respondents</span>
+              <span class="case-study-stat-value">4.33<small> / 5</small></span>
+              <span class="case-study-stat-label">Average across 12 feedback statements (scale 1–5) · 28 students</span>
+            </div>
+
+            <div>
+              <div class="case-study-list-title">Students who agreed</div>
+              <ul class="agree-list">
+                <li class="agree-row">
+                  <span class="agree-label">The teacher’s materials supported my learning</span>
+                  <span class="agree-value">96%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 96%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">It was nice to come to lessons</span>
+                  <span class="agree-value">96%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 96%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">I liked that assessment did not centre on the exam</span>
+                  <span class="agree-value">93%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 93%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">Working at my own pace within the week suits me</span>
+                  <span class="agree-value">86%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 86%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">Group work supported my learning</span>
+                  <span class="agree-value">82%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 82%"></span></span>
+                </li>
+              </ul>
             </div>
 
             <div>
@@ -1292,6 +1417,42 @@
               </ul>
             </div>
           </aside>
+
+          <div class="case-study-voices">
+            <div class="case-study-list-title">In students’ words <span class="voices-note">· translated from Finnish</span></div>
+
+            <div class="voices-grid">
+              <figure class="voice">
+                <blockquote>“Following our tasks every week was a really good method: you kept up much better, and the course was broken down into separate topics. I wish the same method were used in other courses too.”</blockquote>
+                <figcaption>Weekly progress checks</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“This was really nice, because you could work whenever you had time but still keep the same pace as everyone else.”</blockquote>
+                <figcaption>Flexible pacing</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“It was nice that there was no homework and the tasks had deadlines, so there was no stress about whether the homework was done or not.”</blockquote>
+                <figcaption>Weekly deadlines</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“The weekly feedback was a nice extra boost!”</blockquote>
+                <figcaption>Individual feedback</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“I made new friends, and I managed to be more active. I wasn’t shy anymore.”</blockquote>
+                <figcaption>Table groups</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“I’m not very talkative and don’t always dare to speak in groups, so it was a bit challenging for me – but I was still able to do it.”</blockquote>
+                <figcaption>Table groups</figcaption>
+              </figure>
+            </div>
+          </div>
         </article>
       </section>
 
