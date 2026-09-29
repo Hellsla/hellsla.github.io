@@ -1754,7 +1754,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       const d = new Date(), pad = n => String(n).padStart(2, '0');
-      a.download = 'taulu.' + d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + '.json'; // local date
+      a.download = 'taulu.' + pad(d.getDate()) + '-' + pad(d.getMonth() + 1) + '.json'; // local date, DD-MM
       document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 10000);
     }
