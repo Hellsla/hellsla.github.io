@@ -22,7 +22,7 @@
   --radius:26px;
 }
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%;overflow:hidden}
 html{background:var(--surface)}
 body{
   margin:0;
@@ -38,7 +38,7 @@ button,input,textarea{font:inherit}
 button{touch-action:manipulation}
 button:focus-visible,input:focus-visible,[contenteditable="true"]:focus-visible{outline:3px solid var(--pink-strong);outline-offset:3px}
 
-.app{min-height:100dvh;display:flex;flex-direction:column}
+.app{height:100dvh;display:flex;flex-direction:column}
 .topbar{
   min-height:68px;
   padding:12px clamp(14px,2vw,28px);
@@ -78,6 +78,7 @@ button:hover{filter:brightness(.975)}
   flex:1;
   position:relative;
   display:flex;
+  overflow:hidden;
   padding:clamp(12px,1.6vw,22px);
   min-height:0;
 }
@@ -106,13 +107,16 @@ button:hover{filter:brightness(.975)}
 .widget-tools button{padding:7px 10px;font-size:13px}
 
 .note-widget{flex:1;display:flex;flex-direction:column}
-.note-body{flex:1;min-height:0;position:relative;overflow:auto}
+.note-body{flex:1;min-height:0;position:relative;overflow-x:hidden;overflow-y:auto;scrollbar-gutter:stable}
 .editor{
+  position:relative;
+  z-index:0;
   min-height:100%;
   display:flow-root;
   padding:clamp(24px,4vw,58px);
   font-family:Lato,Arial,sans-serif;
-  font-size:clamp(34px,5.1vw,76px);
+  --fs:clamp(34px,5.1vw,76px);
+  font-size:var(--fs);
   font-weight:400;
   line-height:1.15;
   letter-spacing:-.01em;
@@ -121,12 +125,19 @@ button:hover{filter:brightness(.975)}
 }
 .editor:empty::before{content:attr(data-placeholder);color:rgba(1,33,105,.26)}
 .editor p,.editor div{margin:.15em 0}
+.editor ul,.editor ol{margin:.1em 0;padding-left:1.1em}
+.editor li{margin:.05em 0}
+.editor ul li::marker{color:var(--pink-strong)}
 .note-footer{display:none;padding:8px 18px 14px;font-size:12px;color:#b3124f;font-weight:700}
 .note-footer.warn{display:block}
 .note-widget .widget-head{height:auto;min-height:54px;flex-wrap:wrap;padding:8px 18px}
 .note-widget .widget-head{justify-content:flex-start}
 .note-widget .widget-tools{flex-wrap:wrap;justify-content:flex-start}
 .widget-tools button.on{background:var(--pink)}
+.fmt-group{display:flex;align-items:center;gap:4px;padding-right:8px;margin-right:4px;border-right:1px solid var(--line);flex-wrap:wrap}
+.fmt-group button{min-width:32px;padding:6px 8px}
+.fmt-group .fmt-swatch{width:22px;min-width:22px;height:22px;padding:0;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.fmt-group select{border:1px solid var(--line);border-radius:999px;padding:5px 8px;font:700 13px "Work Sans",Arial,sans-serif;color:var(--navy);background:#eef1f7;cursor:pointer}
 
 /* --- Abitti-style math toolbar ------------------------------------------ */
 .math-toolbar{display:none;flex-direction:column;gap:8px;padding:10px 18px;border-bottom:1px solid var(--line);background:#f8f9fc;max-height:42%;overflow:auto}
@@ -164,6 +175,8 @@ button:hover{filter:brightness(.975)}
 .editor .img-wrap>img{display:block;width:100%;height:auto}
 .editor .img-wrap.selected{outline:4px solid var(--pink-strong);outline-offset:2px;border-radius:10px}
 .editor .img-wrap{float:left;margin:.1em .45em .15em 0}
+.editor .img-wrap.free{position:absolute;z-index:-1;float:none;margin:0;cursor:move;touch-action:none}
+.editor .img-wrap.free.selected{z-index:1}
 .editor .img-wrap.inline{float:none;margin:.05em 0}
 .editor .img-wrap.float-right{float:right;margin:.1em 0 .15em .45em}
 .editor .img-wrap.own-line{float:none;display:block;margin:.15em auto;clear:both}
@@ -178,6 +191,8 @@ button:hover{filter:brightness(.975)}
 /* image resize handle */
 .img-handle{position:absolute;z-index:7;display:none;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--pink-strong);border:4px solid #fff;box-shadow:0 2px 10px rgba(1,33,105,.3);cursor:nwse-resize;touch-action:none}
 .img-handle.show{display:block}
+.img-move{position:absolute;z-index:7;display:none;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:var(--navy);color:#fff;border:3px solid #fff;box-shadow:0 2px 10px rgba(1,33,105,.3);cursor:move;touch-action:none;font-size:18px;line-height:28px;text-align:center;user-select:none}
+.img-move.show{display:block}
 
 /* pen tool */
 .draw-canvas{position:absolute;left:0;top:0;pointer-events:none;z-index:3}
@@ -203,6 +218,7 @@ button:hover{filter:brightness(.975)}
 /* --- Floating cards (clock, timer, calculator) on top of the text ------ */
 .card{position:absolute;z-index:20;display:flex;flex-direction:column;min-width:0;min-height:0;cursor:grab;touch-action:none;box-shadow:0 14px 42px rgba(1,33,105,.16)}
 .card.hidden{display:none!important}
+.card.picked{outline:3px solid var(--pink-strong);outline-offset:2px}
 .card.dragging{cursor:grabbing;box-shadow:0 26px 60px rgba(1,33,105,.3)}
 .card.dragging,.card.dragging *{user-select:none}
 .card button,.card input{cursor:pointer;touch-action:manipulation}
@@ -255,7 +271,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
 @media(max-width:700px){
   .topbar{align-items:flex-start}
   .toolbar-group.bg-group{display:none}
-  .editor{font-size:clamp(32px,10vw,58px)}
+  .editor{--fs:clamp(32px,10vw,58px)}
 }
 </style>
 </head>
@@ -282,6 +298,28 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     <section class="widget note-widget" id="widget-note">
       <div class="widget-head">
         <div class="widget-tools">
+          <div class="fmt-group" id="fmtBar" role="toolbar" aria-label="Tekstin muotoilu">
+            <button data-cmd="bold" title="Lihavointi (Ctrl+B)"><b>B</b></button>
+            <button data-cmd="italic" title="Kursiivi (Ctrl+I)"><i style="font-family:Georgia,serif">I</i></button>
+            <button data-cmd="underline" title="Alleviivaus (Ctrl+U)"><u>U</u></button>
+            <button class="fmt-swatch" data-color="#012169" style="background:#012169" title="Tummansininen" aria-label="Tummansininen"></button>
+            <button class="fmt-swatch" data-color="#f35f9f" style="background:#f35f9f" title="Pinkki" aria-label="Pinkki"></button>
+            <button class="fmt-swatch" data-color="#e11d48" style="background:#e11d48" title="Punainen" aria-label="Punainen"></button>
+            <button class="fmt-swatch" data-color="#16a34a" style="background:#16a34a" title="Vihreä" aria-label="Vihreä"></button>
+            <button class="fmt-swatch" data-color="#2563eb" style="background:#2563eb" title="Sininen" aria-label="Sininen"></button>
+            <button class="fmt-swatch" data-color="#f59e0b" style="background:#f59e0b" title="Oranssi" aria-label="Oranssi"></button>
+            <button class="fmt-swatch" data-color="#111111" style="background:#111111" title="Musta" aria-label="Musta"></button>
+            <button data-cmd="insertUnorderedList" title="Luettelo">• Lista</button>
+            <button data-cmd="insertOrderedList" title="Numeroitu luettelo">1. Lista</button>
+            <select id="fmtSize" title="Valitun tekstin koko" aria-label="Valitun tekstin koko">
+              <option value="">Koko</option>
+              <option value="0.5">Pieni</option>
+              <option value="0.75">Pienempi</option>
+              <option value="1">Normaali</option>
+              <option value="1.5">Suuri</option>
+              <option value="2">Suurempi</option>
+            </select>
+          </div>
           <button id="addMathBtn" title="Lisää kaava (Ctrl+E)">Σ Kaava</button>
           <button id="toolbarBtn" title="Näytä erikoismerkit ja kaavapainikkeet">Merkit</button>
           <button id="addImageBtn" title="Lisää kuva (tai liitä Ctrl+V)">Kuva</button>
@@ -315,11 +353,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         <canvas class="draw-canvas" id="drawCanvas" aria-hidden="true"></canvas>
       </div>
       <div class="img-handle" id="imgHandle" title="Muuta kuvan kokoa vetämällä"></div>
+      <div class="img-move" id="imgMove" title="Siirrä kuvaa vetämällä">✥</div>
       <div class="img-bar" id="imgBar" role="toolbar" aria-label="Kuvan asetukset">
         <button data-img="smaller" title="Pienennä kuvaa">−</button>
         <button data-img="larger" title="Suurenna kuvaa">+</button>
         <button data-img="full" title="Täysi leveys">100 %</button>
         <span class="sep"></span>
+        <button data-img="free" title="Vapaa: kuvan voi vetää minne tahansa, teksti kulkee sen päällä">✥ Vapaa</button>
         <button data-img="float-left" title="Kuva vasemmalle, teksti sen oikealle puolelle">⇤ Vasen</button>
         <button data-img="inline" title="Kuva tekstirivin sisällä">Rivissä</button>
         <button data-img="own-line" title="Kuva omalle rivilleen keskelle">Oma rivi</button>
@@ -381,7 +421,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
 
   function applyEditorSize(){
     const base = Math.max(26, Math.min(120, editorSize || 0));
-    editor.style.fontSize = base ? `${base}px` : '';
+    if (base) editor.style.setProperty('--fs', `${base}px`); else editor.style.removeProperty('--fs');
   }
   $('#textLarger').addEventListener('click', () => {
     const current = parseFloat(getComputedStyle(editor).fontSize);
@@ -403,6 +443,79 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     editor.innerHTML=''; localStorage.removeItem('kiviruukki.note'); editor.focus();
   });
   if (editorSize) applyEditorSize();
+
+  // --- Text formatting: bold / italic / underline, colour, lists, size -----
+  const fmtBar = $('#fmtBar');
+  const fmtSize = $('#fmtSize');
+  let fmtRange = null; // selection to restore after using the size menu
+  function textTarget(){
+    // the text being edited: the note itself or a text label on an image
+    const a = document.activeElement;
+    return a && (a === editor || a.classList.contains('lbl-text')) ? a : null;
+  }
+  function ensureTextFocus(){
+    if (textTarget()) return;
+    editor.focus();
+    if (fmtRange){ const sel = getSelection(); sel.removeAllRanges(); sel.addRange(fmtRange); }
+    else { const r = editorRange(); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+  }
+  document.addEventListener('selectionchange', () => {
+    const sel = getSelection();
+    if (sel.rangeCount && editor.contains(sel.anchorNode) && !(sel.anchorNode.parentElement && sel.anchorNode.parentElement.closest('.math-editor'))){
+      fmtRange = sel.getRangeAt(0).cloneRange();
+      fmtBar.querySelectorAll('[data-cmd]').forEach(b => {
+        try{ b.classList.toggle('on', document.queryCommandState(b.dataset.cmd)); }catch(_){}
+      });
+    }
+  });
+  fmtBar.addEventListener('mousedown', e => { if (e.target.closest('button')) e.preventDefault(); }); // keep the selection
+  fmtBar.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (active) closeMath(true);
+    ensureTextFocus();
+    if (b.dataset.cmd){
+      document.execCommand('styleWithCSS', false, false);
+      document.execCommand(b.dataset.cmd);
+      b.classList.toggle('on', document.queryCommandState(b.dataset.cmd));
+    } else if (b.dataset.color){
+      document.execCommand('styleWithCSS', false, true);
+      document.execCommand('foreColor', false, b.dataset.color);
+    }
+    save();
+  });
+  fmtSize.addEventListener('change', () => {
+    const v = fmtSize.value; fmtSize.value = '';
+    if (!v) return;
+    if (active) closeMath(true);
+    ensureTextFocus();
+    // sizes are relative to the base text size (--fs), so "Normaali" really is normal
+    const size = `calc(var(--fs) * ${v})`;
+    const sel = getSelection();
+    if (sel.rangeCount && sel.getRangeAt(0).collapsed){
+      // nothing selected: start a sized span at the caret for the text typed next
+      const r = sel.getRangeAt(0);
+      const span = document.createElement('span');
+      span.style.fontSize = size;
+      const t = document.createTextNode('\u200B');
+      span.append(t);
+      r.insertNode(span);
+      const nr = document.createRange(); nr.setStart(t, 1); nr.collapse(true);
+      sel.removeAllRanges(); sel.addRange(nr);
+      save(); return;
+    }
+    // execCommand only knows sizes 1–7: mark the text with size 7, then swap
+    // those <font> tags for spans with the chosen size
+    document.execCommand('styleWithCSS', false, false);
+    document.execCommand('fontSize', false, '7');
+    editor.querySelectorAll('font[size="7"]').forEach(f => {
+      const span = document.createElement('span');
+      span.style.fontSize = size;
+      span.append(...f.childNodes);
+      f.replaceWith(span);
+      span.querySelectorAll('span[style*="font-size"]').forEach(inner => { inner.style.fontSize = ''; if (!inner.getAttribute('style')) inner.replaceWith(...inner.childNodes); });
+    });
+    save();
+  });
 
   // --- Saving ------------------------------------------------------------
   // Equations are stored as <span class="math" data-latex="…"> and rendered
@@ -713,6 +826,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   }
   async function insertImages(files, range){
     const r = range || editorRange();
+    let placed = 0;
     for (const f of files){
       const img = document.createElement('img');
       img.alt = 'Liitetty kuva';
@@ -722,9 +836,17 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       wrap.className = 'img-wrap';
       wrap.contentEditable = 'false';
       wrap.append(img);
-      wrap.style.width = Math.min(100, Math.round((img.naturalWidth || 400) / editorContentWidth() * 100)) + '%';
-      insertNodeAtCaret(wrap, r.cloneRange());
-      r.setStartAfter(wrap); r.collapse(true);
+      wrap.classList.add('free');
+      wrap.style.width = Math.min(100, Math.round((img.naturalWidth || 400) / editor.clientWidth * 100)) + '%';
+      // place it where the caret is; free images live at the start of the editor
+      // so typing and deleting around the caret never removes them
+      const er = editor.getBoundingClientRect();
+      let cr = r.getBoundingClientRect();
+      if (!cr.width && !cr.height && !cr.top) cr = {left: er.left + parseFloat(getComputedStyle(editor).paddingLeft), top: er.top + parseFloat(getComputedStyle(editor).paddingTop)};
+      editor.prepend(wrap);
+      setFreePos(wrap, cr.left - er.left, cr.top - er.top + placed * 30);
+      placed++;
+      selectImg(wrap);
     }
     saveNow();
   }
@@ -820,11 +942,11 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   let activeLabel = null;
   const imgHandle = $('#imgHandle');
   const noteBody = $('#noteBody');
-  function hideImgBar(){ if (selectedImg) selectedImg.classList.remove('selected'); selectedImg = null; imgBar.classList.remove('show'); imgHandle.classList.remove('show'); }
+  function hideImgBar(){ if (selectedImg) selectedImg.classList.remove('selected'); selectedImg = null; imgBar.classList.remove('show'); imgHandle.classList.remove('show'); imgMove.classList.remove('show'); }
   function syncImgBar(){
     if (!selectedImg) return;
-    const place = ['inline','float-right','own-line'].find(c => selectedImg.classList.contains(c)) || 'float-left';
-    imgBar.querySelectorAll('[data-img="float-left"],[data-img="float-right"],[data-img="own-line"],[data-img="inline"]').forEach(b => b.classList.toggle('on', b.dataset.img === place));
+    const place = ['free','inline','float-right','own-line'].find(c => selectedImg.classList.contains(c)) || 'float-left';
+    imgBar.querySelectorAll('[data-img="free"],[data-img="float-left"],[data-img="float-right"],[data-img="own-line"],[data-img="inline"]').forEach(b => b.classList.toggle('on', b.dataset.img === place));
     imgBar.classList.toggle('has-labels', !!selectedImg.querySelector('.img-label'));
     const lbl = activeLabel && selectedImg.contains(activeLabel) ? activeLabel : selectedImg.querySelector('.img-label');
     imgBar.querySelector('[data-img="lbl-box"]').classList.toggle('on', !!lbl && lbl.classList.contains('boxed'));
@@ -836,12 +958,14 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     imgBar.style.left = Math.max(8, Math.min(i.left - w.left + 8, w.width - imgBar.offsetWidth - 8)) + 'px';
     const above = i.top - w.top - imgBar.offsetHeight - 8;
     imgBar.style.top = (above > 60 ? above : Math.max(8, i.bottom - w.top + 10)) + 'px';
+    imgMove.style.left = (i.left - w.left + i.width / 2) + 'px';
+    imgMove.style.top = (i.top - w.top + i.height / 2) + 'px';
     imgHandle.style.left = (i.right - w.left) + 'px';
     imgHandle.style.top = (i.bottom - w.top) + 'px';
   }
   function selectImg(wrap){
     if (selectedImg !== wrap){ hideImgBar(); selectedImg = wrap; wrap.classList.add('selected'); }
-    imgBar.classList.add('show'); imgHandle.classList.add('show');
+    imgBar.classList.add('show'); imgHandle.classList.add('show'); imgMove.classList.add('show');
     syncImgBar(); placeImgBar();
   }
   function editorContentWidth(){
@@ -861,10 +985,45 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     el.addEventListener('pointercancel', up);
   }
   // Drag the pink corner handle to resize the selected image
+  // Free images: left in % of the editor width, top in em of the text size,
+  // so they keep their place relative to the text on other screens.
+  function setFreePos(wrap, x, y){
+    const maxX = Math.max(0, editor.clientWidth - wrap.offsetWidth);
+    x = Math.max(0, Math.min(maxX, x)); y = Math.max(0, y);
+    const em = parseFloat(getComputedStyle(editor).fontSize) || 16;
+    wrap.style.left = (x / editor.clientWidth * 100).toFixed(2) + '%';
+    wrap.style.top = (y / em).toFixed(3) + 'em';
+  }
+  function makeFree(wrap){
+    if (wrap.classList.contains('free')) return;
+    const er = editor.getBoundingClientRect(), wr = wrap.getBoundingClientRect();
+    const w = wr.width;
+    wrap.classList.remove('float-left','float-right','own-line','inline');
+    wrap.classList.add('free');
+    if (wrap.parentNode !== editor || editor.firstChild !== wrap) editor.prepend(wrap);
+    wrap.style.width = Math.min(100, w / editor.clientWidth * 100).toFixed(1) + '%';
+    setFreePos(wrap, wr.left - er.left, wr.top - er.top);
+  }
+  function unFree(wrap){ wrap.classList.remove('free'); wrap.style.left = wrap.style.top = ''; }
+  function startMove(wrap, e, captureEl){
+    e.preventDefault();
+    makeFree(wrap);
+    const sx = e.clientX, sy = e.clientY, ox = wrap.offsetLeft, oy = wrap.offsetTop;
+    dragWith(captureEl, e, ev => { setFreePos(wrap, ox + ev.clientX - sx, oy + ev.clientY - sy); placeImgBar(); }, () => { placeImgBar(); saveNow(); });
+  }
+  const imgMove = $('#imgMove');
+  imgMove.addEventListener('pointerdown', e => { if (selectedImg) startMove(selectedImg, e, imgMove); });
+  editor.addEventListener('pointerdown', e => {
+    const wrap = e.target.closest('.img-wrap.free');
+    if (!wrap || e.button !== 0 || e.target.closest('.lbl-text,.lbl-grip')) return;
+    selectImg(wrap);
+    startMove(wrap, e, wrap);
+  });
   imgHandle.addEventListener('pointerdown', e => {
     if (!selectedImg) return;
     e.preventDefault();
-    const wrap = selectedImg, startX = e.clientX, startW = wrap.getBoundingClientRect().width, box = editorContentWidth();
+    const wrap = selectedImg, startX = e.clientX, startW = wrap.getBoundingClientRect().width;
+    const box = wrap.classList.contains('free') ? editor.clientWidth : editorContentWidth();
     dragWith(imgHandle, e, ev => {
       const w = Math.max(40, Math.min(box, startW + ev.clientX - startX));
       wrap.style.width = (w / box * 100).toFixed(1) + '%';
@@ -912,12 +1071,20 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     }
   });
   editor.addEventListener('click', e => {
-    const wrap = e.target.closest('.img-wrap');
+    let wrap = e.target.closest('.img-wrap');
+    if (!wrap) wrap = [...editor.querySelectorAll('.img-wrap.free')].reverse().find(w => {
+      const r = w.getBoundingClientRect();
+      return e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+    });
     if (!wrap){ hideImgBar(); return; }
     selectImg(wrap);
   });
   noteBody.addEventListener('scroll', placeImgBar);
-  editor.addEventListener('keydown', e => { if (!e.target.closest('.img-label')) hideImgBar(); else requestAnimationFrame(placeImgBar); });
+  editor.addEventListener('keydown', e => {
+    if (e.target.closest('.img-label')){ requestAnimationFrame(placeImgBar); return; }
+    if (selectedImg && (e.key === 'Delete' || e.key === 'Backspace')) return; // handled below: removes the image
+    hideImgBar();
+  });
   imgBar.addEventListener('mousedown', e => e.preventDefault());
   imgBar.addEventListener('click', e => {
     const act = e.target.dataset.img; if (!act || !selectedImg) return;
@@ -934,12 +1101,19 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       });
       syncImgBar(); saveNow(); return;
     }
+    if (act === 'free'){ makeFree(wrap); syncImgBar(); requestAnimationFrame(placeImgBar); saveNow(); return; }
     if (['float-left','float-right','own-line','inline'].includes(act)){
+      if (wrap.classList.contains('free')){
+        // back into the text flow: put it at the caret (or the start of the text)
+        unFree(wrap);
+        const w = parseFloat(wrap.style.width) || 50;
+        wrap.style.width = Math.min(100, w * editor.clientWidth / editorContentWidth()).toFixed(1) + '%';
+      }
       wrap.classList.remove('float-left','float-right','own-line','inline');
       if (act !== 'float-left') wrap.classList.add(act);
       syncImgBar(); requestAnimationFrame(placeImgBar); saveNow(); return;
     }
-    const box = editorContentWidth();
+    const box = wrap.classList.contains('free') ? editor.clientWidth : editorContentWidth();
     let pct = wrap.style.width ? parseFloat(wrap.style.width) : Math.round(wrap.getBoundingClientRect().width / box * 100);
     if (act === 'full') pct = 100;
     else pct = Math.max(10, Math.min(100, pct + (act === 'larger' ? 10 : -10)));
@@ -1038,9 +1212,17 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     saveCards();
   }
   function raiseCard(k){ cardEls[k].style.zIndex = ++zTop; }
+  let pickedCard = null; // card clicked last: Delete hides it
+  function pickCard(k){
+    if (pickedCard) cardEls[pickedCard].classList.remove('picked');
+    pickedCard = k;
+    if (k){ cardEls[k].classList.add('picked'); hideImgBar(); }
+  }
+  document.addEventListener('pointerdown', e => { if (pickedCard && !e.target.closest('.card')) pickCard(null); }, true);
   function setCard(k, open){
     cardState[k].open = open;
     applyCard(k); saveCards();
+    if (!open && pickedCard === k) pickCard(null);
     if (open){
       raiseCard(k);
       if (k === 'calc') setTimeout(() => { try{ calcFrame.contentWindow.focus(); }catch(_){} }, 50);
@@ -1053,8 +1235,11 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     // Drag from anywhere on the card except its controls
     el.addEventListener('pointerdown', e => {
       raiseCard(k);
+      pickCard(k);
       if (e.button !== 0 || e.target.closest('button,input,textarea,select,iframe,.card-resize')) return;
       e.preventDefault();
+      // take focus off the text so Delete acts on the card, not on the text
+      if (document.activeElement && document.activeElement !== document.body && !el.contains(document.activeElement)) document.activeElement.blur();
       const sx = e.clientX, sy = e.clientY, ox = el.offsetLeft, oy = el.offsetTop;
       const W = workspace.clientWidth, H = workspace.clientHeight;
       el.classList.add('dragging');
@@ -1099,6 +1284,11 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   $('#fullscreenBtn').addEventListener('click',toggleFullscreen);
 
   document.addEventListener('keydown',e=>{
+    // Delete / Backspace removes the clicked image, or hides the clicked card
+    if((e.key==='Delete'||e.key==='Backspace') && !e.target.closest('input,textarea,select,.lbl-text,.math-editor')){
+      if(selectedImg && !e.defaultPrevented){ e.preventDefault(); selectedImg.remove(); hideImgBar(); saveNow(); return; }
+      if(pickedCard && !(e.target.isContentEditable && e.target!==editor)){ e.preventDefault(); setCard(pickedCard,false); return; }
+    }
     if((e.ctrlKey||e.metaKey) && !e.altKey && e.key.toLowerCase()==='e' && (editor.contains(e.target)||e.target===editor) && !e.target.closest('.img-label')){
       e.preventDefault(); active ? closeMath(true) : openMath('');
       return;
