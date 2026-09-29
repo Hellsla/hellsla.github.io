@@ -113,9 +113,9 @@ button:hover{filter:brightness(.975)}
   padding:clamp(24px,4vw,58px);
   font-family:Lato,Arial,sans-serif;
   font-size:clamp(34px,5.1vw,76px);
-  font-weight:800;
-  line-height:1.1;
-  letter-spacing:-.035em;
+  font-weight:400;
+  line-height:1.15;
+  letter-spacing:-.01em;
   white-space:pre-wrap;
   overflow-wrap:anywhere;
 }
@@ -199,7 +199,6 @@ button:hover{filter:brightness(.975)}
 .img-bar .lbl-only{display:none}
 .img-bar.has-labels .lbl-only{display:inline-block}
 
-.timer-bar{display:none}
 
 /* --- Floating cards (clock, timer, calculator) on top of the text ------ */
 .card{position:absolute;z-index:20;display:flex;flex-direction:column;min-width:0;min-height:0;cursor:grab;touch-action:none;box-shadow:0 14px 42px rgba(1,33,105,.16)}
@@ -211,14 +210,14 @@ button:hover{filter:brightness(.975)}
 .card-bar{position:absolute;top:0;left:0;right:0;z-index:5;height:32px;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:0 6px 0 16px;border-radius:var(--radius) var(--radius) 0 0;background:linear-gradient(rgba(255,255,255,.97),rgba(255,255,255,.75));opacity:0;transition:opacity .15s;user-select:none}
 .card:hover .card-bar,.card.dragging .card-bar,.card:focus-within .card-bar{opacity:1}
 @media(hover:none){.card-bar{opacity:1}}
-.card-grip{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card-grip{white-space:nowrap;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .card-close{width:26px;height:26px;padding:0;font-size:15px;line-height:1}
 .card-resize{position:absolute;right:0;bottom:0;z-index:6;width:26px;height:26px;cursor:nwse-resize;touch-action:none;border-bottom-right-radius:var(--radius);background:linear-gradient(135deg,transparent 55%,rgba(1,33,105,.28) 55%,rgba(1,33,105,.28) 62%,transparent 62%,transparent 72%,rgba(1,33,105,.28) 72%,rgba(1,33,105,.28) 79%,transparent 79%)}
 .calc{background:#fff;color:var(--navy);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .calc .card-bar{position:static;opacity:1;height:auto;padding:8px 10px 8px 16px;border-radius:0;background:var(--navy);color:#fff;cursor:grab}
 .calc .card-grip{color:#fff}
 .calc .card-close{background:rgba(255,255,255,.16);color:#fff}
-.calc.dragging .calc-frame{pointer-events:none}
+.card.dragging iframe{pointer-events:none}
 
 .calc-frame{display:block;width:100%;flex:1;min-height:0;border:0;background:#f5f5f5}
 
@@ -228,45 +227,12 @@ button:hover{filter:brightness(.975)}
 .clock-date{margin-top:5cqh;font-size:min(6cqw,12cqh);font-weight:650;color:var(--muted);text-transform:capitalize}
 .clock-seconds{font-size:.38em;vertical-align:top;letter-spacing:-.02em;margin-left:.12em;color:var(--pink-strong)}
 
-.timer-widget{container:timer/size}
-.timer-body{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:5cqw;padding:5cqh 5cqw}
-.timer-visual{position:relative;aspect-ratio:1;flex:0 0 auto;width:min(52cqw,90cqh);container-type:inline-size}
-.timer-controls{flex:1 1 0;max-width:300px;min-width:0}
-
-.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
-.ring circle{fill:none;stroke-width:14}
-.ring-track{stroke:var(--pink-track)}
-.ring-progress{stroke:var(--pink-strong);stroke-linecap:round;transition:stroke-dashoffset .18s linear}
-.timer-center{position:absolute;inset:7%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:2%}
-.timer-widget .forge{width:72%;display:flex;flex-direction:column;align-items:center;line-height:0;margin-top:1%}
-.timer-widget .rays{width:100%;height:auto;color:var(--pink);transform-origin:50% 100%;opacity:1}
-.timer-widget .anvil{display:block;width:100%;height:auto;margin-top:-.4%;user-select:none;-webkit-user-drag:none}
-.timer-time{margin-top:1%;font-family:Lato,Arial,sans-serif;font-size:21cqw;font-weight:900;line-height:.9;letter-spacing:-.06em;font-variant-numeric:tabular-nums lining-nums;text-align:center;min-width:4.2ch}
-.timer-status{margin-top:3cqw;font-size:max(9px,3.6cqw);letter-spacing:.1em;text-transform:uppercase;font-weight:800;opacity:.55;height:1.2em}
-.timer-running .rays{animation:forgePulse 900ms ease-in-out infinite alternate}
-.timer-finished .rays{animation:finishFlash 250ms ease-in-out 7 alternate}
-@keyframes forgePulse{from{opacity:.3}to{opacity:1}}
-@keyframes finishFlash{from{opacity:.18}to{opacity:1}}
-.timer-controls{display:flex;flex-direction:column;align-items:stretch;gap:9px}
-.timer-adjust{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.timer-adjust button{font-size:15px;padding:10px 6px}
-.timer-set{display:grid;grid-template-columns:1fr auto;gap:8px}
-.timer-set input{min-width:0;border:1px solid var(--line);border-radius:999px;padding:9px 12px;color:var(--navy);background:#fff;text-align:center;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
-.timer-set button{font-size:13px}
-.timer-controls .start{background:var(--navy);color:#fff;padding:12px;font-size:15px}
-.timer-controls .reset{font-size:13px}
-/* small timer cards: fewer controls, ring above the start button when narrow */
-@container timer (max-height:300px){
-  .timer-set,.timer-controls .reset{display:none}
-}
-@container timer (max-width:380px){
-  .timer-body{flex-direction:column;gap:8px;padding:30px 10px 10px}
-  .timer-visual{width:min(86cqw,calc(100cqh - 136px))}
-  .timer-controls{flex:0 0 auto;width:100%;max-width:none;gap:6px}
-  .timer-set,.timer-controls .reset{display:none}
-  .timer-adjust button{padding:7px 4px;font-size:13px}
-  .timer-controls .start{padding:9px}
-}
+.timer-widget{background:#fff}
+.timer-frame{display:block;width:100%;flex:1;min-height:0;border:0;border-radius:var(--radius);background:#fff}
+.timer-widget .card-bar{padding-left:14px}
+.timer-set{display:flex;align-items:center;gap:5px;margin-left:auto}
+.timer-set input{width:64px;border:1px solid var(--line);border-radius:999px;padding:3px 8px;color:var(--navy);background:#fff;text-align:center;font-weight:800;font-size:13px;font-variant-numeric:tabular-nums}
+.timer-set button{padding:4px 10px;font-size:12px}
 
 body.bg-navy{--surface:#012169;--panel:#fff;--shadow:0 14px 42px rgba(0,0,0,.18)}
 body.bg-navy{background:var(--navy)}
@@ -291,7 +257,6 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   .toolbar-group.bg-group{display:none}
   .editor{font-size:clamp(32px,10vw,58px)}
 }
-@media(prefers-reduced-motion:reduce){.timer-running .rays,.timer-finished .rays{animation:none}.ring-progress{transition:none}}
 </style>
 </head>
 <body>
@@ -382,38 +347,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     </section>
 
     <section class="widget card timer-widget" id="widget-timer" data-card="timer" aria-label="Ajastin">
-      <div class="card-bar"><span class="card-grip">⠿ Ajastin</span><button class="card-close" title="Piilota ajastin" aria-label="Piilota ajastin">×</button></div>
-      <div class="timer-body">
-        <div class="timer-visual" aria-label="Ajastin">
-          <svg class="ring" viewBox="0 0 360 360" aria-hidden="true">
-            <circle class="ring-track" cx="180" cy="180" r="164"></circle>
-            <circle class="ring-progress" id="progress" cx="180" cy="180" r="164"></circle>
-          </svg>
-          <div class="timer-center">
-            <div class="forge" aria-hidden="true">
-        <svg class="rays" viewBox="426.4451 477.1156 78.0200 47.7940" preserveAspectRatio="xMidYMax meet">
-          <path fill="currentColor" fill-rule="nonzero" d="M475.0201 520.9836 L495.9131 513.6666 L494.7411 510.4466 L473.8481 517.7646 L497.1291 498.2286 L494.9271 495.6036 L471.6461 515.1386 L484.6671 493.6046 L481.6991 491.8916 L468.6781 513.4266 L473.9111 483.7526 L470.5361 483.1576 L465.3041 512.8316 L459.3461 477.6156 L455.9721 478.2106 L461.9301 513.4266 L450.2451 493.1886 L447.2781 494.9016 L458.9631 515.1396 L437.5741 497.1926 L435.3721 499.8176 L456.7601 517.7636 L438.7281 511.2006 L437.5561 514.4206 L455.5881 520.9836 L426.9451 520.9836 L426.9451 524.4096 L455.5951 524.4096 L455.5951 520.9846 L456.7661 517.7676 L458.9671 515.1446 L461.9321 513.4326 L465.3041 512.8386 L468.6761 513.4326 L471.6411 515.1446 L473.8421 517.7676 L475.0131 520.9846 L475.0131 524.4096 L503.9651 524.4096 L503.9651 520.9836 L475.0201 520.9836"></path>
-        </svg>
-        <img class="anvil" alt="" src="data:image/png;base64,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">
-      </div>
-            <div class="timer-time" id="timerTime" role="timer">05:00</div>
-            <div class="timer-status" id="timerStatus">Valmis</div>
-            <div class="timer-bar" aria-hidden="true"><i id="timerBar"></i></div>
-          </div>
-        </div>
-        <div class="timer-controls">
-          <div class="timer-adjust">
-            <button id="minusMin" title="Vähennä minuutti (−)">−1 min</button>
-            <button id="plusMin" title="Lisää minuutti (+)">+1 min</button>
-          </div>
-          <div class="timer-set">
-            <input id="timeInput" type="text" inputmode="decimal" value="05:00" aria-label="Aseta aika (min tai mm:ss)" title="Kirjoita minuutit (esim. 5 tai 2:30) ja paina Enter">
-            <button id="setTime">Aseta</button>
-          </div>
-          <button class="start" id="startPause">Käynnistä</button>
-          <button class="reset" id="resetTimer" title="Palauta aika alkuun (R)">Nollaa</button>
-        </div>
-      </div>
+      <div class="card-bar"><span class="card-grip">⠿ Ajastin</span>
+        <span class="timer-set"><input id="timeInput" type="text" inputmode="decimal" value="5:00" aria-label="Aseta aika (min tai mm:ss)" title="Kirjoita minuutit (esim. 5 tai 2:30) ja paina Enter"><button id="setTime">Aseta</button></span>
+        <button class="card-close" title="Piilota ajastin" aria-label="Piilota ajastin">×</button></div>
+      <iframe class="timer-frame" id="timerFrame" title="Ahjo-kehäajastin"></iframe>
       <div class="card-resize" title="Muuta kokoa vetämällä"></div>
     </section>
     <section class="card calc" id="calc" data-card="calc" aria-label="Laskin">
@@ -576,7 +513,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       autoOperatorNames: 'sin cos tan arcsin arccos arctan sinh cosh tanh ln log lg exp lim max min det',
       handlers: {
         edit(f){ if (field.contains(document.activeElement)){ ta.value = f.latex(); ta.classList.remove('error'); } },
-        enter(){ mathEnter(); }
+        enter(){ mathEnter(); },
+        // arrow key past the edge of the equation: leave it and keep typing text
+        moveOutOf(dir){ closeMath(true, dir === MQ.L ? 'before' : 'after'); }
       }
     });
     mq.latex(latex);
@@ -608,7 +547,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     document.execCommand('insertParagraph');
     openMath('');
   }
-  function closeMath(focusAfter = true){
+  function closeMath(focusAfter = true, side = 'after'){
     if (!active) return;
     const {wrap, ta} = active;
     active = null;
@@ -618,7 +557,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     if (latex){
       const s = mathSpan(latex);
       wrap.replaceWith(s);
-      if (focusAfter){ editor.focus(); caretAfter(s); }
+      if (focusAfter){
+        editor.focus();
+        if (side === 'before'){
+          const r = document.createRange(); r.setStartBefore(s); r.collapse(true);
+          const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        } else caretAfter(s);
+      }
     } else {
       const r = document.createRange(); r.setStartBefore(wrap); r.collapse(true);
       wrap.remove();
@@ -1019,42 +964,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   updateClock();
   setInterval(updateClock, 250);
 
-  // --- Timer ---------------------------------------------------------------
-  const timerWidget = $('#widget-timer');
-  const timerTime = $('#timerTime');
-  const timerStatus = $('#timerStatus');
-  const progress = $('#progress');
-  const timerBar = $('#timerBar');
-  const startPauseBtn = $('#startPause');
-  const resetTimerBtn = $('#resetTimer');
+  // --- Timer: the Ahjo-kehäajastin page (ahjo-kehaajastin.html) in the card ---
+  // The set time is passed as ?min=…; the page's own buttons do the rest.
+  const timerFrame = $('#timerFrame');
   const timeInput = $('#timeInput');
-  const radius = 164;
-  const circumference = 2 * Math.PI * radius;
-  progress.style.strokeDasharray = `${circumference} ${circumference}`;
-
-  let durationMs = Number(localStorage.getItem('kiviruukki.timerMinutes') || 5) * 60000;
-  if (!Number.isFinite(durationMs) || durationMs <= 0) durationMs = 5 * 60000;
-  let setMs = durationMs; // what Nollaa returns to
-  let remainingMs = durationMs;
-  let running = false;
-  let endAt = 0;
-  let raf = 0;
-  const soundOn = true;
-  let audioCtx = null;
-
-  function formatTime(ms){
-    const total = Math.max(0, Math.ceil(ms/1000));
-    const mins = Math.floor(total/60);
-    const secs = total%60;
-    return `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
-  }
-  function renderTimer(){
-    timerTime.textContent = formatTime(remainingMs);
-    const ratio = durationMs ? Math.max(0, Math.min(1, remainingMs/durationMs)) : 0;
-    progress.style.strokeDashoffset = String(circumference * (1-ratio));
-    timerBar.style.width = (ratio * 100).toFixed(2) + '%';
-  }
-  const MAX_MS = 180 * 60000;
   // "5" = 5 min, "2:30" = 2 min 30 s, "1,5" = 1.5 min
   function parseTime(text){
     const t = String(text).trim().replace(',', '.');
@@ -1062,119 +975,33 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     if (m) return (Number(m[1]) * 60 + Number(m[2])) / 60;
     return Number(t);
   }
-  function setDuration(minutes){
-    if (running) pauseTimer();
-    const safe = Math.max(10/60, Math.min(180, Number(minutes) || 5));
-    durationMs = Math.round(safe * 60) * 1000;
-    setMs = durationMs;
-    remainingMs = durationMs;
-    timeInput.value = formatTime(durationMs);
-    localStorage.setItem('kiviruukki.timerMinutes', String(durationMs / 60000));
-    timerWidget.classList.remove('timer-finished');
-    timerStatus.textContent='Valmis';
-    startPauseBtn.textContent='Käynnistä';
-    renderTimer();
+  function fmtMin(min){
+    const s = Math.round(min * 60);
+    return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
   }
-  function tick(now){
-    if (!running) return;
-    remainingMs = Math.max(0, endAt-now);
-    renderTimer();
-    if (remainingMs<=0){ finishTimer(); return; }
-    raf = requestAnimationFrame(tick);
-  }
-  function startTimer(){
-    if (running || remainingMs<=0) return;
-    running=true;
-    endAt=performance.now()+remainingMs;
-    timerWidget.classList.add('timer-running');
-    timerWidget.classList.remove('timer-finished');
-    timerStatus.textContent='Ahjo käy';
-    startPauseBtn.textContent='Tauko';
-    raf=requestAnimationFrame(tick);
-  }
-  function pauseTimer(){
-    if(!running) return;
-    remainingMs=Math.max(0,endAt-performance.now());
-    running=false;
-    cancelAnimationFrame(raf);
-    timerWidget.classList.remove('timer-running');
-    timerStatus.textContent='Tauko';
-    startPauseBtn.textContent='Jatka';
-    renderTimer();
-  }
-  function resetTimer(){
-    running=false;
-    cancelAnimationFrame(raf);
-    durationMs=setMs;
-    remainingMs=durationMs;
-    timerWidget.classList.remove('timer-running','timer-finished');
-    timerStatus.textContent='Valmis';
-    startPauseBtn.textContent='Käynnistä';
-    renderTimer();
-  }
-  function toggleTimer(){
-    if(remainingMs<=0) resetTimer();
-    running ? pauseTimer() : startTimer();
-  }
-  function finishTimer(){
-    running=false;
-    remainingMs=0;
-    cancelAnimationFrame(raf);
-    timerWidget.classList.remove('timer-running');
-    timerWidget.classList.add('timer-finished');
-    timerStatus.textContent='Aika';
-    startPauseBtn.textContent='Käynnistä';
-    renderTimer();
-    if(soundOn) beep();
-  }
-  function beep(){
-    try{
-      audioCtx ||= new (window.AudioContext||window.webkitAudioContext)();
-      const t=audioCtx.currentTime;
-      [0,.22,.44].forEach((delay,i)=>{
-        const o=audioCtx.createOscillator();
-        const g=audioCtx.createGain();
-        o.type='sine';
-        o.frequency.setValueAtTime(i===2?740:660,t+delay);
-        g.gain.setValueAtTime(.0001,t+delay);
-        g.gain.exponentialRampToValueAtTime(.13,t+delay+.015);
-        g.gain.exponentialRampToValueAtTime(.0001,t+delay+.16);
-        o.connect(g).connect(audioCtx.destination);
-        o.start(t+delay); o.stop(t+delay+.18);
-      });
-    }catch(_){ }
-  }
-  // +/− one minute. Before the timer has started (or after it has finished)
-  // this changes the set time; while running or paused it changes the time left.
-  function adjustTime(deltaMs){
-    const now = performance.now();
-    if (running) remainingMs = Math.max(0, endAt - now);
-    const fresh = !running && (remainingMs === durationMs || remainingMs <= 0);
-    if (fresh){
-      setDuration(Math.max(60000, Math.min(MAX_MS, (remainingMs <= 0 ? 0 : remainingMs) + deltaMs)) / 60000);
-      return;
-    }
-    remainingMs = Math.max(0, Math.min(MAX_MS, remainingMs + deltaMs));
-    durationMs = Math.max(durationMs, remainingMs);
-    if (running){
-      endAt = now + remainingMs;
-      if (remainingMs <= 0){ finishTimer(); return; }
-    }
-    renderTimer();
+  let timerMin = Number(localStorage.getItem('kiviruukki.timerMinutes')) || 5;
+  function loadTimer(){
+    timeInput.value = fmtMin(timerMin);
+    timerFrame.src = 'ahjo-kehaajastin.html?min=' + encodeURIComponent(String(+timerMin.toFixed(4)));
   }
   function applyTimeInput(){
     const v = parseTime(timeInput.value);
-    if (Number.isFinite(v) && v > 0) setDuration(v); else timeInput.value = formatTime(durationMs);
+    if (Number.isFinite(v) && v > 0 && v <= 180){
+      timerMin = v;
+      localStorage.setItem('kiviruukki.timerMinutes', String(v));
+      loadTimer();
+    } else timeInput.value = fmtMin(timerMin);
   }
-  startPauseBtn.addEventListener('click',toggleTimer);
-  resetTimerBtn.addEventListener('click',resetTimer);
-  $('#plusMin').addEventListener('click',()=>adjustTime(60000));
-  $('#minusMin').addEventListener('click',()=>adjustTime(-60000));
-  $('#setTime').addEventListener('click',applyTimeInput);
-  timeInput.addEventListener('keydown',e=>{if(e.key==='Enter'){applyTimeInput();timeInput.blur();}});
-  timeInput.addEventListener('focus',()=>timeInput.select());
-  timeInput.value=formatTime(durationMs);
-  renderTimer();
+  $('#setTime').addEventListener('click', applyTimeInput);
+  timeInput.addEventListener('keydown', e => { if (e.key === 'Enter'){ e.preventDefault(); applyTimeInput(); timeInput.blur(); } });
+  timeInput.addEventListener('focus', () => timeInput.select());
+  function pressTimer(id){
+    try{ timerFrame.contentDocument.getElementById(id).click(); }catch(_){}
+  }
+  const toggleTimer = () => pressTimer('startBtn');
+  const resetTimer = () => pressTimer('resetBtn');
+  const adjustTime = d => pressTimer(d > 0 ? 'plusBtn' : 'minusBtn');
+  loadTimer();
 
   // --- Floating cards: clock, timer and calculator on top of the text ---
   // Position and size are stored in % of the workspace so the layout carries
@@ -1183,10 +1010,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   const cardEls = {clock:$('#widget-clock'), timer:$('#widget-timer'), calc:$('#calc')};
   const CARD_DEFAULTS = {
     clock:{x:73, y:11, w:25, h:26, open:true},
-    timer:{x:67, y:40, w:31, h:38, open:true},
+    timer:{x:70, y:40, w:28, h:48, open:true},
     calc:{x:46, y:11, w:24, h:86, open:false}
   };
-  const CARD_MIN = {clock:[170,100], timer:[170,240], calc:[384,420]};
+  const CARD_MIN = {clock:[170,100], timer:[330,360], calc:[384,420]};
   let cardState = {};
   try{ cardState = JSON.parse(localStorage.getItem('kiviruukki.cards') || '{}'); }catch(_){ cardState = {}; }
   Object.keys(cardEls).forEach(k => { cardState[k] = Object.assign({}, CARD_DEFAULTS[k], cardState[k]); });
@@ -1428,11 +1255,6 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   canvasObserver.observe(editor);
   sizeCanvas();
 
-  document.addEventListener('visibilitychange',()=>{
-    if(document.hidden || !running) return;
-    remainingMs=Math.max(0,endAt-performance.now());
-    if(remainingMs<=0) finishTimer(); else renderTimer();
-  });
 })();
 </script>
 </body>
