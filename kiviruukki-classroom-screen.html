@@ -362,6 +362,12 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       </div>
       <div class="math-toolbar" id="mathToolbar" aria-label="Erikoismerkit ja kaavat"></div>
       <div class="pen-bar" id="penBar" role="toolbar" aria-label="Kynän asetukset">
+        <button class="tool on" data-tool="pen" title="Kynä: vapaa piirto">✎ Kynä</button>
+        <button class="tool" data-tool="ellipse" title="Ympyrä: vedä ympyrä kohteen ympärille (Shift = täysi ympyrä)">◯ Ympyrä</button>
+        <button class="tool" data-tool="rect" title="Suorakulmio: vedä laatikko kohteen ympärille (Shift = neliö)">▭ Suorakulmio</button>
+        <button class="tool" data-tool="line" title="Viiva (Shift = vaaka, pysty tai 45°)">╱ Viiva</button>
+        <button class="tool" data-tool="arrow" title="Nuoli: vedä kohteeseen päin (Shift = vaaka, pysty tai 45°)">➜ Nuoli</button>
+        <span class="tb-sep"></span>
         <button class="swatch on" data-color="#012169" style="background:#012169" title="Tummansininen" aria-label="Tummansininen"></button>
         <button class="swatch" data-color="#f35f9f" style="background:#f35f9f" title="Pinkki" aria-label="Pinkki"></button>
         <button class="swatch" data-color="#e11d48" style="background:#e11d48" title="Punainen" aria-label="Punainen"></button>
@@ -1507,6 +1513,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   let penSize = Number(localStorage.getItem('kiviruukki.penSize') || 6);
   let erasing = false;
   let current = null;
+  // freehand strokes have no .s; shapes have s = 'ellipse' | 'rect' | 'line' | 'arrow' and p = [start, end]
+  const TOOLS = ['pen', 'ellipse', 'rect', 'line', 'arrow'];
+  let penTool = TOOLS.includes(localStorage.getItem('kiviruukki.penTool')) ? localStorage.getItem('kiviruukki.penTool') : 'pen';
 
   function saveDrawing(){
     if (boardStore){ boardStore.save({strokes}); return; }
@@ -1524,10 +1533,39 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     redraw();
   }
+  function drawShape(st){
+    const [[x1, y1], [x2, y2]] = st.p;
+    ctx.beginPath();
+    if (st.s === 'ellipse'){
+      ctx.ellipse((x1 + x2) / 2, (y1 + y2) / 2, Math.abs(x2 - x1) / 2, Math.abs(y2 - y1) / 2, 0, 0, Math.PI * 2);
+    } else if (st.s === 'rect'){
+      ctx.rect(Math.min(x1, x2), Math.min(y1, y2), Math.abs(x2 - x1), Math.abs(y2 - y1));
+    } else {
+      ctx.moveTo(x1, y1); ctx.lineTo(x2, y2);
+      if (st.s === 'arrow'){
+        const a = Math.atan2(y2 - y1, x2 - x1), head = Math.max(14, st.w * 3.2);
+        for (const d of [-0.45, 0.45]){ ctx.moveTo(x2, y2); ctx.lineTo(x2 - head * Math.cos(a + d), y2 - head * Math.sin(a + d)); }
+      }
+    }
+    ctx.stroke();
+  }
+  // points along a shape's outline, used by the eraser
+  function outline(st){
+    if (!st.s) return st.p;
+    const [[x1, y1], [x2, y2]] = st.p;
+    if (st.s === 'rect') return [[x1, y1], [x2, y1], [x2, y2], [x1, y2], [x1, y1]];
+    if (st.s === 'ellipse'){
+      const cx = (x1 + x2) / 2, cy = (y1 + y2) / 2, rx = Math.abs(x2 - x1) / 2, ry = Math.abs(y2 - y1) / 2, pts = [];
+      for (let i = 0; i <= 48; i++){ const t = i / 48 * Math.PI * 2; pts.push([cx + rx * Math.cos(t), cy + ry * Math.sin(t)]); }
+      return pts;
+    }
+    return st.p;
+  }
   function drawStroke(st){
     const pts = st.p;
     ctx.strokeStyle = st.c; ctx.fillStyle = st.c;
     ctx.lineWidth = st.w; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    if (st.s){ drawShape(st); return; }
     if (pts.length === 1){ ctx.beginPath(); ctx.arc(pts[0][0], pts[0][1], st.w / 2, 0, Math.PI * 2); ctx.fill(); return; }
     ctx.beginPath();
     ctx.moveTo(pts[0][0], pts[0][1]);
@@ -1558,8 +1596,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const before = strokes.length;
     strokes = strokes.filter(st => {
       const r = st.w / 2 + 12;
-      if (st.p.length === 1) return Math.hypot(pt[0]-st.p[0][0], pt[1]-st.p[0][1]) > r;
-      for (let i = 1; i < st.p.length; i++) if (segDist(pt, st.p[i-1], st.p[i]) <= r) return false;
+      const o = outline(st);
+      if (o.length === 1) return Math.hypot(pt[0]-o[0][0], pt[1]-o[0][1]) > r;
+      for (let i = 1; i < o.length; i++) if (segDist(pt, o[i-1], o[i]) <= r) return false;
       return true;
     });
     if (strokes.length !== before) redraw();
@@ -1571,14 +1610,27 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const pt = pointFrom(e);
     const eraser = erasing || e.button === 5 || (e.buttons & 32);
     if (eraser){ current = {erase: true}; eraseAt(pt); return; }
+    if (penTool !== 'pen'){ current = {s: penTool, c: penColor, w: penSize, p: [pt, pt]}; redraw(); return; }
     const w = e.pointerType === 'pen' && e.pressure ? penSize * (0.6 + e.pressure * 0.8) : penSize;
     current = {c: penColor, w: Math.round(w * 10) / 10, p: [pt]};
     redraw();
   });
+  // shape end point; Shift makes a circle / square, or snaps a line to 45° steps
+  function shapeEnd(start, pt, shift){
+    if (!shift) return pt;
+    let dx = pt[0] - start[0], dy = pt[1] - start[1];
+    if (current.s === 'ellipse' || current.s === 'rect'){
+      const m = Math.max(Math.abs(dx), Math.abs(dy));
+      return [start[0] + Math.sign(dx || 1) * m, start[1] + Math.sign(dy || 1) * m];
+    }
+    const len = Math.hypot(dx, dy), a = Math.round(Math.atan2(dy, dx) / (Math.PI / 4)) * (Math.PI / 4);
+    return [start[0] + len * Math.cos(a), start[1] + len * Math.sin(a)];
+  }
   canvas.addEventListener('pointermove', e => {
     if (!current) return;
     const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     if (current.erase){ events.forEach(ev => eraseAt(pointFrom(ev))); return; }
+    if (current.s){ current.p[1] = shapeEnd(current.p[0], pointFrom(e), e.shiftKey); redraw(); return; }
     events.forEach(ev => {
       const pt = pointFrom(ev), last = current.p[current.p.length - 1];
       if (Math.hypot(pt[0] - last[0], pt[1] - last[1]) >= 1.5) current.p.push(pt);
@@ -1587,7 +1639,11 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   });
   function endStroke(){
     if (!current) return;
-    if (!current.erase) strokes.push(current);
+    const tiny = current.s && Math.hypot(current.p[1][0] - current.p[0][0], current.p[1][1] - current.p[0][1]) < 4;
+    if (!current.erase && !tiny){
+      if (current.s) current.p = current.p.map(q => [Math.round(q[0] * 10) / 10, Math.round(q[1] * 10) / 10]);
+      strokes.push(current);
+    }
     current = null;
     redraw(); saveDrawing();
   }
@@ -1603,6 +1659,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   function setEraser(on){
     erasing = on;
     eraserBtn.classList.toggle('on', on);
+    $$('#penBar .tool').forEach(x => x.classList.toggle('on', !on && x.dataset.tool === penTool));
     noteWidget.classList.toggle('erasing', on);
   }
   function undoDrawing(){ if (strokes.length){ strokes.pop(); redraw(); saveDrawing(); } }
@@ -1611,6 +1668,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   eraserBtn.addEventListener('click', () => setEraser(!erasing));
   $('#undoDrawBtn').addEventListener('click', undoDrawing);
   $('#clearDrawBtn').addEventListener('click', async () => { if (strokes.length && await askConfirm('Poistetaanko kaikki piirrokset?', '', 'Poista')) clearDrawing(); });
+  function setTool(t){
+    penTool = t; localStorage.setItem('kiviruukki.penTool', t);
+    $$('#penBar .tool').forEach(x => x.classList.toggle('on', x.dataset.tool === t));
+    setEraser(false);
+  }
+  $$('#penBar .tool').forEach(b => b.addEventListener('click', () => setTool(b.dataset.tool)));
+  $$('#penBar .tool').forEach(x => x.classList.toggle('on', x.dataset.tool === penTool));
   $$('#penBar .swatch').forEach(b => {
     b.classList.toggle('on', b.dataset.color === penColor);
     b.addEventListener('click', () => {
