@@ -1792,7 +1792,8 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       const blob = new Blob([JSON.stringify(data)], {type: 'application/json'});
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = 'taulut-' + new Date().toISOString().slice(0, 10) + '.json';
+      const d = new Date(), pad = n => String(n).padStart(2, '0');
+      a.download = 'taulu.' + pad(d.getDate()) + '-' + pad(d.getMonth() + 1) + '.json'; // local date, DD-MM
       document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 10000);
     }
