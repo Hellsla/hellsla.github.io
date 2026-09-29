@@ -147,6 +147,7 @@ button:hover{filter:brightness(.975)}
   white-space:pre-wrap;
   overflow-wrap:anywhere;
 }
+.editor:focus-visible{outline:none}
 .editor:empty::before{content:attr(data-placeholder);color:rgba(1,33,105,.26)}
 .editor p,.editor div{margin:.15em 0}
 .editor ul,.editor ol{margin:.1em 0;padding-left:1.1em}
@@ -505,8 +506,25 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     }
   });
   fmtBar.addEventListener('mousedown', e => { if (e.target.closest('button')) e.preventDefault(); }); // keep the selection
+  // Colour inside an equation: the selected part gets \textcolor{…}{…};
+  // with nothing selected the whole equation is coloured.
+  function colorMath(color){
+    const {mq, ta, wrap} = active;
+    let sel = null;
+    try{ sel = mq.__controller.cursor.selection; }catch(_){}
+    if (sel){
+      const inner = sel.join('latex');
+      mq.write('\\textcolor{' + color + '}{' + inner + '}');
+    } else {
+      wrap.style.color = color;
+    }
+    ta.value = mq.latex();
+    mq.focus();
+    save();
+  }
   fmtBar.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
+    if (active && b.dataset.color){ colorMath(b.dataset.color); return; }
     if (active) closeMath(true);
     ensureTextFocus();
     if (b.dataset.cmd){
@@ -516,6 +534,12 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     } else if (b.dataset.color){
       document.execCommand('styleWithCSS', false, true);
       document.execCommand('foreColor', false, b.dataset.color);
+      // equations inside the selected text take the colour too
+      const sel = getSelection();
+      if (sel.rangeCount && !sel.isCollapsed){
+        const r = sel.getRangeAt(0);
+        editor.querySelectorAll('.math').forEach(m => { if (r.intersectsNode(m)) m.style.color = b.dataset.color; });
+      }
     }
     save();
   });
@@ -586,7 +610,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const clone = editor.cloneNode(true);
     clone.querySelectorAll('.math-editor').forEach(w => {
       const latex = w.querySelector('.latex-src')?.value.trim() || '';
-      if (latex) w.replaceWith(mathSpan(latex, false)); else w.remove();
+      if (latex){ const ms = mathSpan(latex, false); if (w.style.color) ms.style.color = w.style.color; w.replaceWith(ms); } else w.remove();
     });
     clone.querySelectorAll('.math').forEach(m => { m.textContent = ''; m.className = 'math'; });
     clone.querySelectorAll('.selected').forEach(i => i.classList.remove('selected'));
@@ -671,7 +695,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     hint.textContent = 'Enter = uusi kaavarivi · Esc = valmis · muokkaa kaavaa ylhäällä tai LaTeXia tässä';
     wrap.append(field, ta, hint);
 
-    if (replaceNode) replaceNode.replaceWith(wrap);
+    if (replaceNode){ wrap.style.color = replaceNode.style.color; replaceNode.replaceWith(wrap); }
     else {
       const r = editorRange();
       const selected = r.toString();
@@ -729,6 +753,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     if (!wrap.isConnected){ return; }
     if (latex){
       const s = mathSpan(latex);
+      if (wrap.style.color) s.style.color = wrap.style.color;
       wrap.replaceWith(s);
       if (focusAfter){
         editor.focus();
@@ -751,7 +776,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   });
   // Clicking anywhere outside the equation editor (except the toolbar) finishes it.
   document.addEventListener('mousedown', e => {
-    if (active && !active.wrap.contains(e.target) && !e.target.closest('#mathToolbar,#addMathBtn')) closeMath(false);
+    if (active && !active.wrap.contains(e.target) && !e.target.closest('#mathToolbar,#addMathBtn,#fmtBar')) closeMath(false);
   }, true);
 
   // Toolbar: special characters + Abitti equation buttons
