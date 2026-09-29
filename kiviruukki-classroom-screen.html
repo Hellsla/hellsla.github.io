@@ -770,6 +770,12 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     saveNow();
   }
 
+  // a rendered equation is replaced by the editor on click: keep MathQuill's own
+  // mouse selection off it, or it would keep working on the removed element
+  editor.addEventListener('mousedown', e => {
+    const m = e.target.closest && e.target.closest('.math');
+    if (m && editor.contains(m)) e.stopPropagation();
+  }, true);
   editor.addEventListener('click', e => {
     const m = e.target.closest('.math');
     if (m && editor.contains(m)){ e.preventDefault(); openMath(m.dataset.latex || '', m); }
@@ -950,6 +956,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         if (tag === 'BR'){ out.append(document.createElement('br')); return; }
         if (tag === 'IMG'){
           const src = n.getAttribute('src') || '';
+          // equation images (Abitti / rich-text-editor): data-latex="…" or …?latex=…
+          let latex = n.getAttribute('data-latex');
+          if (!latex){ const m = /[?&]latex=([^&#]*)/.exec(src); if (m){ try{ latex = decodeURIComponent(m[1].replace(/\+/g, ' ')); }catch(_){ latex = null; } } }
+          if (latex && latex.trim()){ out.append(mathSpan(latex.trim())); return; }
           if (/^(data:image\/|https?:)/i.test(src)){ const i = document.createElement('img'); i.src = src; i.alt = n.getAttribute('alt') || ''; out.append(i); }
           return;
         }
@@ -987,7 +997,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const dt = e.clipboardData; if (!dt) return;
     const files = clipboardImages(dt);
     if (files.length){ e.preventDefault(); insertImages(files); return; }
-    const html = dt.getData('text/html');
+    let html = dt.getData('text/html');
+    const text = dt.getData('text/plain');
+    // HTML code pasted as plain text (e.g. copied from a page's source) is read as HTML
+    if (!/data-latex|[?&]latex=/i.test(html) && /<img[^>]*(data-latex|[?&]latex=)/i.test(text)) html = text;
     if (html && /<img|data-latex/i.test(html)){
       e.preventDefault();
       const frag = sanitize(html);
@@ -997,7 +1010,6 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       if (lastNode) caretAfter(lastNode);
       saveNow(); return;
     }
-    const text = dt.getData('text/plain');
     if (text){ e.preventDefault(); document.execCommand('insertText', false, text); }
   });
   editor.addEventListener('dragover', e => { if ([...e.dataTransfer.items].some(i => i.kind === 'file')) e.preventDefault(); });
