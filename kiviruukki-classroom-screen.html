@@ -1207,7 +1207,8 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   const CARD_MIN = {clock:[170,100], timer:[330,360], calc:[384,420]};
   let cardState = {};
   try{ cardState = JSON.parse(localStorage.getItem('kiviruukki.cards') || '{}'); }catch(_){ cardState = {}; }
-  Object.keys(cardEls).forEach(k => { cardState[k] = Object.assign({}, CARD_DEFAULTS[k], cardState[k]); });
+  // the page opens clean: every card starts hidden (position and size are remembered)
+  Object.keys(cardEls).forEach(k => { cardState[k] = Object.assign({}, CARD_DEFAULTS[k], cardState[k], {open: false}); });
   let zTop = 20;
   function saveCards(){ try{ localStorage.setItem('kiviruukki.cards', JSON.stringify(cardState)); }catch(_){} }
   function applyCard(k){
@@ -1485,6 +1486,15 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       current.html = serialize(); current.strokes = strokes.slice(); current.updated = Date.now();
       return put(current);
     }
+    function nextName(){
+      let i = list.length + 1;
+      while (list.some(b => b.name === 'Taulu ' + i)) i++;
+      return 'Taulu ' + i;
+    }
+    function isEmpty(b){
+      const t = document.createElement('div'); t.innerHTML = b.html || '';
+      return !(b.strokes && b.strokes.length) && !t.querySelector('img,.math') && !t.textContent.replace(/[\s\u200B]/g, '');
+    }
     function uid(){ return 'b' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
     function render(){
       nav.textContent = '';
@@ -1530,7 +1540,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       render();
     }
     async function create(){
-      const name = (prompt('Uuden taulun nimi:', 'Taulu ' + (list.length + 1)) || '').trim();
+      const name = (prompt('Uuden taulun nimi:', nextName()) || '').trim();
       if (!name) return;
       const b = {id: uid(), name, html: '', strokes: [], created: Date.now()};
       list.push(b);
@@ -1566,11 +1576,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         list = (await req(tx('readonly').getAll()).catch(() => [])).sort((a, b) => a.created - b.created);
         if (!list.length){
           // first run: move the existing note and drawing into "Taulu 1"
-          const b = {id: uid(), name: 'Taulu 1', html: serialize(), strokes: strokes.slice(), created: Date.now()};
-          list.push(b); await put(b);
+          const old = {id: uid(), name: 'Taulu 1', html: serialize(), strokes: strokes.slice(), created: Date.now()};
+          if (!isEmpty(old)){ list.push(old); await put(old); }
         }
-        const want = localStorage.getItem('kiviruukki.board');
-        const b = list.find(x => x.id === want) || list[0];
+        localStorage.removeItem('kiviruukki.note'); localStorage.removeItem('kiviruukki.drawing');
+        // the page opens on a clean board: reuse an empty one, or start a new one
+        let b = list.find(isEmpty);
+        if (!b){ b = {id: uid(), name: nextName(), html: '', strokes: [], created: Date.now()}; list.push(b); await put(b); }
         show(b); current = b;
         localStorage.setItem('kiviruukki.board', b.id);
         boardStore = {
