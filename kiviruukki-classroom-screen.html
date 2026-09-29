@@ -112,6 +112,7 @@ button:hover{filter:brightness(.975)}
 .note-body{flex:1;min-height:0;position:relative;overflow:auto}
 .editor{
   min-height:100%;
+  display:flow-root;
   padding:clamp(24px,4vw,58px);
   font-family:Lato,Arial,sans-serif;
   font-size:clamp(34px,5.1vw,76px);
@@ -164,9 +165,10 @@ button:hover{filter:brightness(.975)}
 .editor .img-wrap{position:relative;display:inline-block;vertical-align:middle;max-width:100%;line-height:1.1;letter-spacing:0;container-type:inline-size;white-space:normal}
 .editor .img-wrap>img{display:block;width:100%;height:auto}
 .editor .img-wrap.selected{outline:4px solid var(--pink-strong);outline-offset:2px;border-radius:10px}
-.editor .img-wrap.float-left{float:left;margin:.1em .45em .15em 0}
+.editor .img-wrap{float:left;margin:.1em .45em .15em 0}
+.editor .img-wrap.inline{float:none;margin:.05em 0}
 .editor .img-wrap.float-right{float:right;margin:.1em 0 .15em .45em}
-.editor .img-wrap.own-line{display:block;margin:.15em auto}
+.editor .img-wrap.own-line{float:none;display:block;margin:.15em auto;clear:both}
 .img-label{position:absolute;transform:translate(-50%,-50%);max-width:96%;font-family:Lato,Arial,sans-serif;font-size:7cqw;font-weight:900;line-height:1.1;color:var(--navy);text-align:center;white-space:pre-wrap;text-shadow:0 0 .08em #fff,0 0 .08em #fff,0 0 .15em #fff,0 0 .25em #fff}
 .img-label .lbl-text{display:block;min-width:.6em;padding:.05em .2em;border-radius:.15em;outline:none;cursor:text}
 .img-label .lbl-text:empty::before{content:"Kirjoita…";opacity:.45}
@@ -202,6 +204,30 @@ button:hover{filter:brightness(.975)}
 /* --- Calculator (Abicus-style) ------------------------------------------ */
 .calc{position:fixed;z-index:60;right:24px;bottom:24px;width:min(340px,calc(100vw - 32px));display:none;flex-direction:column;background:#fff;color:var(--navy);border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 60px rgba(1,33,105,.25);overflow:hidden}
 .calc.open{display:flex}
+.timer-bar{display:none}
+
+/* Calculator docked: it takes the clock's place, the timer shrinks to one row */
+body.calc-open:not(.focused) .workspace{grid-template-rows:auto minmax(0,1fr);grid-template-areas:"note timer" "note calc"}
+body.calc-open:not(.focused) #widget-clock{display:none!important}
+body.calc-open .calc{position:relative;inset:auto!important;grid-area:calc;width:auto;min-height:0;z-index:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
+body.calc-open .calc-head{cursor:default}
+body.calc-open .calc-history{flex:1;height:auto;min-height:70px}
+body.calc-open .calc-keys button{height:clamp(34px,5dvh,48px);font-size:15px}
+body.calc-open.focused .workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,380px);grid-template-rows:calc(100dvh - 108px);grid-template-areas:"main calc"}
+body.calc-open.focused .focus-target{grid-area:main;height:auto!important}
+body.calc-open.focused .calc{height:100%}
+body.calc-open:not(.focused) .timer-widget .timer-body{display:flex;align-items:center;gap:12px;padding:12px 56px 12px 16px}
+body.calc-open:not(.focused) .timer-widget .timer-visual{aspect-ratio:auto;width:auto;flex:0 0 auto}
+body.calc-open:not(.focused) .timer-widget .ring,body.calc-open:not(.focused) .timer-widget .forge,body.calc-open:not(.focused) .timer-widget .timer-status{display:none}
+body.calc-open:not(.focused) .timer-widget .timer-center{position:static;padding:0;align-items:stretch}
+body.calc-open:not(.focused) .timer-widget .timer-time{margin:0;font-size:clamp(34px,3vw,48px);text-align:left}
+body.calc-open:not(.focused) .timer-widget .timer-bar{display:block;height:6px;margin-top:6px;border-radius:3px;background:var(--pink-track);overflow:hidden}
+body.calc-open:not(.focused) .timer-widget .timer-bar i{display:block;height:100%;background:var(--pink-strong)}
+body.calc-open:not(.focused) .timer-widget .timer-controls{flex:1;display:grid;grid-template-columns:auto auto 1fr;gap:6px}
+body.calc-open:not(.focused) .timer-widget .timer-adjust{display:contents}
+body.calc-open:not(.focused) .timer-widget .timer-adjust button{padding:9px 10px;font-size:13px}
+body.calc-open:not(.focused) .timer-widget .timer-set,body.calc-open:not(.focused) .timer-widget .reset{display:none}
+body.calc-open:not(.focused) .timer-widget .start{padding:9px;font-size:14px}
 .calc-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px 8px 16px;background:var(--navy);color:#fff;cursor:grab;touch-action:none;user-select:none}
 .calc-head:active{cursor:grabbing}
 .calc-head .widget-title{font-size:13px}
@@ -290,11 +316,15 @@ body:fullscreen .topbar,body:-webkit-full-screen .topbar{opacity:.06;transition:
 body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-full-screen .topbar:hover,body:-webkit-full-screen .topbar:focus-within{opacity:1}
 
 @media(max-width:980px){
+  body.calc-open:not(.focused) .workspace{grid-template-rows:minmax(360px,1.2fr) auto auto;grid-template-areas:"note note" "timer timer" "calc calc"}
+  body.calc-open:not(.focused) .calc{min-height:520px}
   .workspace{grid-template-columns:1fr 1fr;grid-template-rows:minmax(360px,1.2fr) auto;grid-template-areas:"note note" "clock timer"}
   .timer-body{grid-template-columns:1fr}
   .timer-visual{width:min(40vw,230px)}
 }
 @media(max-width:700px){
+  body.calc-open.focused .workspace{grid-template-columns:1fr;grid-template-rows:calc(100dvh - 108px) auto;grid-template-areas:"main" "calc"}
+  body.calc-open.focused .calc{height:auto;min-height:520px}
   .topbar{align-items:flex-start}
   .brand small{display:none}
   .workspace{display:flex;flex-direction:column;min-height:auto}
@@ -416,6 +446,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       </div>
             <div class="timer-time" id="timerTime" role="timer">05:00</div>
             <div class="timer-status" id="timerStatus">Valmis</div>
+            <div class="timer-bar" aria-hidden="true"><i id="timerBar"></i></div>
           </div>
         </div>
         <div class="timer-controls">
@@ -432,59 +463,59 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         </div>
       </div>
     </section>
+    <section class="calc" id="calc" aria-label="Laskin">
+      <div class="calc-head" id="calcHead">
+        <div class="widget-title">Laskin</div>
+        <div class="widget-tools">
+          <button id="angleBtn" title="Kulmayksikkö: asteet / radiaanit">DEG</button>
+          <button class="close" id="calcClose" title="Sulje laskin" aria-label="Sulje laskin">×</button>
+        </div>
+      </div>
+      <div class="calc-history" id="calcHistory" aria-live="polite"></div>
+      <div class="calc-input-wrap">
+        <input class="calc-input" id="calcInput" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" placeholder="esim. 2·sin(30)+√(16)" aria-label="Laskutoimitus">
+      </div>
+      <div class="calc-out" id="calcOut" aria-live="polite"></div>
+      <div class="calc-keys" id="calcKeys">
+        <button class="fn" data-ins="sin(">sin</button>
+        <button class="fn" data-ins="cos(">cos</button>
+        <button class="fn" data-ins="tan(">tan</button>
+        <button class="fn" data-ins="ln(">ln</button>
+        <button class="fn" data-ins="log(">log</button>
+        <button class="fn" data-ins="asin(">sin⁻¹</button>
+        <button class="fn" data-ins="acos(">cos⁻¹</button>
+        <button class="fn" data-ins="atan(">tan⁻¹</button>
+        <button class="fn" data-ins="√(">√</button>
+        <button class="fn" data-ins="^">xʸ</button>
+        <button class="fn" data-ins="^2">x²</button>
+        <button class="fn" data-ins="(">(</button>
+        <button class="fn" data-ins=")">)</button>
+        <button class="fn" data-ins="π">π</button>
+        <button class="fn" data-ins="e">e</button>
+        <button data-ins="7">7</button>
+        <button data-ins="8">8</button>
+        <button data-ins="9">9</button>
+        <button class="op" data-ins="/">÷</button>
+        <button class="clr" data-act="clear" title="Tyhjennä">C</button>
+        <button data-ins="4">4</button>
+        <button data-ins="5">5</button>
+        <button data-ins="6">6</button>
+        <button class="op" data-ins="·">×</button>
+        <button class="fn" data-act="back" title="Poista merkki" aria-label="Poista merkki">⌫</button>
+        <button data-ins="1">1</button>
+        <button data-ins="2">2</button>
+        <button data-ins="3">3</button>
+        <button class="op" data-ins="−">−</button>
+        <button class="fn" data-ins="ans" title="Edellinen tulos">ans</button>
+        <button data-ins="0">0</button>
+        <button data-ins=",">,</button>
+        <button class="fn" data-ins="·10^" title="Kymmenpotenssi">·10ˣ</button>
+        <button class="op" data-ins="+">+</button>
+        <button class="eq" data-act="eval">=</button>
+      </div>
+    </section>
   </main>
 
-  <section class="calc" id="calc" aria-label="Laskin">
-    <div class="calc-head" id="calcHead">
-      <div class="widget-title">Laskin</div>
-      <div class="widget-tools">
-        <button id="angleBtn" title="Kulmayksikkö: asteet / radiaanit">DEG</button>
-        <button class="close" id="calcClose" title="Sulje laskin" aria-label="Sulje laskin">×</button>
-      </div>
-    </div>
-    <div class="calc-history" id="calcHistory" aria-live="polite"></div>
-    <div class="calc-input-wrap">
-      <input class="calc-input" id="calcInput" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" placeholder="esim. 2·sin(30)+√(16)" aria-label="Laskutoimitus">
-    </div>
-    <div class="calc-out" id="calcOut" aria-live="polite"></div>
-    <div class="calc-keys" id="calcKeys">
-      <button class="fn" data-ins="sin(">sin</button>
-      <button class="fn" data-ins="cos(">cos</button>
-      <button class="fn" data-ins="tan(">tan</button>
-      <button class="fn" data-ins="ln(">ln</button>
-      <button class="fn" data-ins="log(">log</button>
-      <button class="fn" data-ins="asin(">sin⁻¹</button>
-      <button class="fn" data-ins="acos(">cos⁻¹</button>
-      <button class="fn" data-ins="atan(">tan⁻¹</button>
-      <button class="fn" data-ins="√(">√</button>
-      <button class="fn" data-ins="^">xʸ</button>
-      <button class="fn" data-ins="^2">x²</button>
-      <button class="fn" data-ins="(">(</button>
-      <button class="fn" data-ins=")">)</button>
-      <button class="fn" data-ins="π">π</button>
-      <button class="fn" data-ins="e">e</button>
-      <button data-ins="7">7</button>
-      <button data-ins="8">8</button>
-      <button data-ins="9">9</button>
-      <button class="op" data-ins="/">÷</button>
-      <button class="clr" data-act="clear" title="Tyhjennä">C</button>
-      <button data-ins="4">4</button>
-      <button data-ins="5">5</button>
-      <button data-ins="6">6</button>
-      <button class="op" data-ins="·">×</button>
-      <button class="fn" data-act="back" title="Poista merkki" aria-label="Poista merkki">⌫</button>
-      <button data-ins="1">1</button>
-      <button data-ins="2">2</button>
-      <button data-ins="3">3</button>
-      <button class="op" data-ins="−">−</button>
-      <button class="fn" data-ins="ans" title="Edellinen tulos">ans</button>
-      <button data-ins="0">0</button>
-      <button data-ins=",">,</button>
-      <button class="fn" data-ins="·10^" title="Kymmenpotenssi">·10ˣ</button>
-      <button class="op" data-ins="+">+</button>
-      <button class="eq" data-act="eval">=</button>
-    </div>
-  </section>
 </div>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/mathquill/mathquill.min.js"></script>
@@ -931,7 +962,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   function hideImgBar(){ if (selectedImg) selectedImg.classList.remove('selected'); selectedImg = null; imgBar.classList.remove('show'); imgHandle.classList.remove('show'); }
   function syncImgBar(){
     if (!selectedImg) return;
-    const place = ['float-left','float-right','own-line'].find(c => selectedImg.classList.contains(c)) || 'inline';
+    const place = ['inline','float-right','own-line'].find(c => selectedImg.classList.contains(c)) || 'float-left';
     imgBar.querySelectorAll('[data-img="float-left"],[data-img="float-right"],[data-img="own-line"],[data-img="inline"]').forEach(b => b.classList.toggle('on', b.dataset.img === place));
     imgBar.classList.toggle('has-labels', !!selectedImg.querySelector('.img-label'));
     const lbl = activeLabel && selectedImg.contains(activeLabel) ? activeLabel : selectedImg.querySelector('.img-label');
@@ -1043,8 +1074,8 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       syncImgBar(); saveNow(); return;
     }
     if (['float-left','float-right','own-line','inline'].includes(act)){
-      wrap.classList.remove('float-left','float-right','own-line');
-      if (act !== 'inline') wrap.classList.add(act);
+      wrap.classList.remove('float-left','float-right','own-line','inline');
+      if (act !== 'float-left') wrap.classList.add(act);
       syncImgBar(); requestAnimationFrame(placeImgBar); saveNow(); return;
     }
     const box = editorContentWidth();
@@ -1077,6 +1108,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   const timerTime = $('#timerTime');
   const timerStatus = $('#timerStatus');
   const progress = $('#progress');
+  const timerBar = $('#timerBar');
   const startPauseBtn = $('#startPause');
   const resetTimerBtn = $('#resetTimer');
   const timeInput = $('#timeInput');
@@ -1104,6 +1136,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     timerTime.textContent = formatTime(remainingMs);
     const ratio = durationMs ? Math.max(0, Math.min(1, remainingMs/durationMs)) : 0;
     progress.style.strokeDashoffset = String(circumference * (1-ratio));
+    timerBar.style.width = (ratio * 100).toFixed(2) + '%';
   }
   const MAX_MS = 180 * 60000;
   // "5" = 5 min, "2:30" = 2 min 30 s, "1,5" = 1.5 min
@@ -1642,6 +1675,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
 
   const calcBtn = $('#calcBtn');
   function clampCalc(){
+    if (getComputedStyle(calc).position !== 'fixed') return;
     const r = calc.getBoundingClientRect();
     const x = Math.min(Math.max(8, r.left), innerWidth - r.width - 8);
     const y = Math.min(Math.max(8, r.top), innerHeight - 60);
@@ -1650,6 +1684,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   function toggleCalc(force){
     const open = typeof force === 'boolean' ? force : !calc.classList.contains('open');
     calc.classList.toggle('open', open);
+    document.body.classList.toggle('calc-open', open);
     calcBtn.classList.toggle('pink', open);
     localStorage.setItem('kiviruukki.calcOpen', open ? '1' : '0');
     if (open){
@@ -1665,7 +1700,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   }catch(_){}
   const calcHead = $('#calcHead');
   calcHead.addEventListener('pointerdown', e => {
-    if (e.target.closest('button')) return;
+    if (e.target.closest('button') || getComputedStyle(calc).position !== 'fixed') return;
     const r = calc.getBoundingClientRect();
     const dx = e.clientX - r.left, dy = e.clientY - r.top;
     calcHead.setPointerCapture(e.pointerId);
@@ -1686,7 +1721,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   });
   window.addEventListener('resize', () => { if (calc.classList.contains('open') && calc.style.left) clampCalc(); });
   renderHistory();
-  if (localStorage.getItem('kiviruukki.calcOpen') === '1'){ calc.classList.add('open'); calcBtn.classList.add('pink'); requestAnimationFrame(() => { if (calc.style.left) clampCalc(); }); }
+  if (localStorage.getItem('kiviruukki.calcOpen') === '1'){ calc.classList.add('open'); document.body.classList.add('calc-open'); calcBtn.classList.add('pink'); requestAnimationFrame(() => { if (calc.style.left) clampCalc(); }); }
 
   document.addEventListener('visibilitychange',()=>{
     if(document.hidden || !running) return;
