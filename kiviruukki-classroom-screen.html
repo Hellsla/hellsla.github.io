@@ -485,6 +485,52 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   });
   if (editorSize) applyEditorSize();
 
+  // --- Tab / Shift+Tab: indent the current or selected lines (equations too) ---
+  const INDENT_EM = 1, INDENT_MAX = 10;
+  const BLOCKS = new Set(['DIV', 'P', 'LI', 'UL', 'OL', 'BLOCKQUOTE', 'H1', 'H2', 'H3']);
+  function isLineBlock(n){ return n && n.nodeType === 1 && ['DIV', 'P', 'LI', 'H1', 'H2', 'H3'].includes(n.nodeName) && !n.classList.contains('math-editor'); }
+  // the line a node is on; text sitting directly in the editor is wrapped into a <div> first
+  function lineOf(node, offset = 0){
+    if (node === editor) node = editor.childNodes[offset] || editor.childNodes[offset - 1] || null;
+    if (!node) return null;
+    for (let el = node.nodeType === 1 ? node : node.parentNode; el && el !== editor; el = el.parentNode) if (isLineBlock(el)) return el;
+    if (isLineBlock(node)) return node;
+    let top = node;
+    while (top && top.parentNode !== editor) top = top.parentNode;
+    if (!top) return null;
+    const isStop = x => !x || (x.nodeType === 1 && (BLOCKS.has(x.nodeName) || x.classList.contains('free')));
+    let a = top, b = top;
+    while (!isStop(a.previousSibling) && a.previousSibling.nodeName !== 'BR') a = a.previousSibling;
+    while (!isStop(b.nextSibling) && b.nodeName !== 'BR') b = b.nextSibling;
+    const div = document.createElement('div');
+    a.before(div);
+    let cur = a;
+    while (cur){ const next = cur === b ? null : cur.nextSibling; div.append(cur); cur = next; }
+    if (div.lastChild && div.lastChild.nodeName === 'BR' && div.childNodes.length > 1) div.lastChild.remove();
+    return div;
+  }
+  function indentLines(range, dir){
+    const sel = getSelection();
+    // plain values: the text nodes survive being moved into a new line <div>
+    const pos = [range.startContainer, range.startOffset, range.endContainer, range.endOffset];
+    const lines = new Set();
+    const s = lineOf(range.startContainer, range.startOffset), e2 = range.collapsed ? s : lineOf(range.endContainer, range.endOffset);
+    [s, e2].forEach(l => l && lines.add(l));
+    if (!range.collapsed) editor.querySelectorAll('div,p,li,h1,h2,h3').forEach(el => { if (isLineBlock(el) && range.intersectsNode(el)) lines.add(el); });
+    // indent only the innermost lines (a line holding other selected lines is skipped)
+    const inner = [...lines].filter(l => ![...lines].some(o => o !== l && l.contains(o)));
+    inner.forEach(l => {
+      const cur = Math.round((parseFloat(l.style.marginLeft) || 0) / INDENT_EM);
+      const next = Math.max(0, Math.min(INDENT_MAX, cur + dir));
+      l.style.marginLeft = next ? (next * INDENT_EM) + 'em' : '';
+      if (!l.getAttribute('style')) l.removeAttribute('style');
+    });
+    if (document.activeElement === editor){
+      try{ const r = document.createRange(); r.setStart(pos[0], pos[1]); r.setEnd(pos[2], pos[3]); sel.removeAllRanges(); sel.addRange(r); }catch(_){}
+    }
+    save();
+  }
+
   // --- Text formatting: bold / italic / underline, colour, lists, size -----
   const fmtBar = $('#fmtBar');
   const fmtSize = $('#fmtSize');
@@ -732,6 +778,15 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       if (e.key === 'Escape'){ e.preventDefault(); closeMath(true); }
       else if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); mathEnter(); }
     });
+    // Tab while editing an equation indents its line (and keeps the equation open);
+    // caught before MathQuill, which would otherwise move the cursor out
+    wrap.addEventListener('keydown', e => {
+      if (e.key !== 'Tab' || e.ctrlKey || e.altKey || e.metaKey) return;
+      e.preventDefault(); e.stopPropagation();
+      const line = lineOf(wrap);
+      if (line){ const lr = document.createRange(); lr.selectNodeContents(line); lr.collapse(true); indentLines(lr, e.shiftKey ? -1 : 1); }
+      if (e.target === ta) ta.focus(); else mq.focus();
+    }, true);
     wrap.addEventListener('keydown', e => {
       if (e.key === 'Escape' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'e')){ e.preventDefault(); closeMath(true); }
       e.stopPropagation();
@@ -1206,6 +1261,12 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   noteBody.addEventListener('scroll', placeImgBar);
   editor.addEventListener('keydown', e => {
     if (e.target.closest('.img-label')){ requestAnimationFrame(placeImgBar); return; }
+    if (e.key === 'Tab' && !e.ctrlKey && !e.altKey && !e.metaKey && !e.target.closest('.math-editor')){
+      e.preventDefault();
+      const sel = getSelection();
+      if (sel.rangeCount) indentLines(sel.getRangeAt(0), e.shiftKey ? -1 : 1);
+      return;
+    }
     if (selectedImg && (e.key === 'Delete' || e.key === 'Backspace')) return; // handled below: removes the image
     hideImgBar();
   });
