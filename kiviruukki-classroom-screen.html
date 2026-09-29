@@ -264,7 +264,9 @@ button:hover{filter:brightness(.975)}
 .calc .card-close{background:rgba(255,255,255,.16);color:#fff}
 .card.dragging iframe{pointer-events:none}
 
-.calc-frame{display:block;width:100%;flex:1;min-height:0;border:0;background:#f5f5f5}
+.calc-body{flex:1;min-height:0;position:relative;overflow:hidden;background:#f5f5f5}
+/* Abicus has a fixed layout (416 × 616): shown at that size and scaled to fit the card */
+.calc-frame{position:absolute;left:50%;top:0;width:416px;height:616px;border:0;background:#f5f5f5;transform-origin:top center}
 
 .clock-widget{container-type:size}
 .clock-body{flex:1;display:grid;place-items:center;text-align:center;padding:4cqh 3cqw}
@@ -431,7 +433,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     </section>
     <section class="card calc" id="calc" data-card="calc" aria-label="Laskin">
       <div class="card-bar"><span class="card-grip">⠿ Laskin · Abicus</span><button class="card-close" title="Sulje laskin" aria-label="Sulje laskin">×</button></div>
-      <iframe class="calc-frame" id="calcFrame" title="Abicus-laskin" data-src="lib/abicus/index.html"></iframe>
+      <div class="calc-body" id="calcBody"><iframe class="calc-frame" id="calcFrame" title="Abicus-laskin" data-src="lib/abicus/index.html"></iframe></div>
       <div class="card-resize" title="Muuta kokoa vetämällä"></div>
     </section>
   </main>
@@ -1372,17 +1374,32 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   // Position and size are stored in % of the workspace so the layout carries
   // over between a laptop and the classroom projector.
   const calcFrame = $('#calcFrame');
+  const calcBody = $('#calcBody');
+  const ABICUS_W = 416, ABICUS_H = 616;
+  function fitCalc(){
+    const bw = calcBody.clientWidth, bh = calcBody.clientHeight;
+    if (!bw || !bh) return;
+    const k = Math.min(bw / ABICUS_W, bh / ABICUS_H);
+    calcFrame.style.top = Math.max(0, (bh - ABICUS_H * k) / 2) + 'px';
+    calcFrame.style.transform = `translateX(-50%) scale(${k})`;
+  }
+  new ResizeObserver(fitCalc).observe(calcBody);
   const cardEls = {clock:$('#widget-clock'), timer:$('#widget-timer'), calc:$('#calc')};
   const CARD_DEFAULTS = {
     clock:{x:73, y:11, w:25, h:26, open:true},
     timer:{x:70, y:40, w:28, h:48, open:true},
-    calc:{x:46, y:11, w:24, h:86, open:false}
+    calc:{x:52, y:11, w:21, h:66, open:false}
   };
-  const CARD_MIN = {clock:[170,100], timer:[330,360], calc:[384,420]};
+  const CARD_MIN = {clock:[170,100], timer:[330,360], calc:[180,260]};
   let cardState = {};
   try{ cardState = JSON.parse(localStorage.getItem('kiviruukki.cards') || '{}'); }catch(_){ cardState = {}; }
   // the page opens clean: every card starts hidden (position and size are remembered)
   Object.keys(cardEls).forEach(k => { cardState[k] = Object.assign({}, CARD_DEFAULTS[k], cardState[k], {open: false}); });
+  // the calculator now scales: give an old, oversized saved calculator the new default size once
+  if (localStorage.getItem('kiviruukki.calcScaled') !== '1'){
+    Object.assign(cardState.calc, {w: CARD_DEFAULTS.calc.w, h: CARD_DEFAULTS.calc.h});
+    localStorage.setItem('kiviruukki.calcScaled', '1');
+  }
   let zTop = 20;
   function saveCards(){ try{ localStorage.setItem('kiviruukki.cards', JSON.stringify(cardState)); }catch(_){} }
   function applyCard(k){
