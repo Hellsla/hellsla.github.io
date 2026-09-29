@@ -152,6 +152,7 @@ button:hover{filter:brightness(.975)}
   overflow-wrap:anywhere;
 }
 .editor:focus-visible{outline:none}
+.editor.all-selected .math,.editor.all-selected .img-wrap{background:rgba(37,99,235,.28);outline:3px solid rgba(37,99,235,.55)}
 .editor:empty::before{content:attr(data-placeholder);color:rgba(1,33,105,.26)}
 .editor p,.editor div{margin:.15em 0}
 .editor ul,.editor ol{margin:.1em 0;padding-left:1.1em}
@@ -1267,8 +1268,50 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     selectImg(wrap);
   });
   noteBody.addEventListener('scroll', placeImgBar);
+  // --- Ctrl+A on the board: select everything; Delete / Backspace / typing then
+  // clears the whole board (text, equations, images, drawings). The browser's own
+  // select-all selects nothing once a board has an image, so it is done here.
+  // Ctrl+Z right after brings it all back.
+  let allSelected = false, clearedBoard = null;
+  function selectWholeBoard(){
+    const r = document.createRange(); r.selectNodeContents(editor);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    setAllSelected(true);
+  }
+  function setAllSelected(on){ allSelected = on; editor.classList.toggle('all-selected', on); }
+  function boardIsEmpty(){ return !editor.textContent.replace(/[\s\u200B]/g, '') && !editor.querySelector('img,.math') && !strokes.length; }
+  function clearWholeBoard(){
+    if (!boardIsEmpty()) clearedBoard = {html: serialize(), strokes: strokes.slice()};
+    closeMath(false); hideImgBar();
+    editor.innerHTML = '';
+    strokes = []; current = null; redraw(); saveDrawing();
+    saveNow();
+    editor.focus();
+    setAllSelected(false);
+  }
+  function restoreClearedBoard(){
+    if (!clearedBoard || !boardIsEmpty()) return false;
+    editor.innerHTML = clearedBoard.html;
+    editor.querySelectorAll('.math').forEach(m => { m.contentEditable = 'false'; renderMath(m); });
+    normalizeImages();
+    strokes = clearedBoard.strokes; clearedBoard = null;
+    sizeCanvas(); saveDrawing(); saveNow();
+    return true;
+  }
+  editor.addEventListener('mousedown', () => setAllSelected(false));
+  editor.addEventListener('blur', () => setAllSelected(false));
   editor.addEventListener('keydown', e => {
     if (e.target.closest('.img-label')){ requestAnimationFrame(placeImgBar); return; }
+    const mod = e.ctrlKey || e.metaKey;
+    if (!e.target.closest('.math-editor')){
+      if (mod && !e.altKey && e.key.toLowerCase() === 'a'){ e.preventDefault(); selectWholeBoard(); return; }
+      if (mod && !e.altKey && !e.shiftKey && e.key.toLowerCase() === 'z' && restoreClearedBoard()){ e.preventDefault(); return; }
+      if (allSelected && !getSelection().isCollapsed){
+        if (e.key === 'Delete' || e.key === 'Backspace'){ e.preventDefault(); clearWholeBoard(); return; }
+        if (e.key.length === 1 && !mod && !e.altKey) clearWholeBoard(); // the typed letter replaces everything
+      }
+      if (!['Shift', 'Control', 'Meta', 'Alt'].includes(e.key)) setAllSelected(false);
+    }
     if (e.key === 'Tab' && !e.ctrlKey && !e.altKey && !e.metaKey && !e.target.closest('.math-editor')){
       e.preventDefault();
       const sel = getSelection();
