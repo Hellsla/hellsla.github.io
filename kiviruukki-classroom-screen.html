@@ -63,6 +63,10 @@ button:focus-visible,input:focus-visible,[contenteditable="true"]:focus-visible{
 .board-tab.on .bt-act{display:block}
 .board-tab .bt-act:hover{opacity:1;filter:none}
 .board-add{flex:0 0 auto;width:34px;height:34px;padding:0;font-size:18px;line-height:1}
+.board-io{flex:0 0 auto;background:none;padding:6px 6px;font-size:12px;font-weight:600;color:var(--muted);opacity:.75}
+.board-io:first-of-type{margin-left:6px}
+.board-io:hover{opacity:1;filter:none;text-decoration:underline}
+body.bg-navy .board-io{color:#fff}
 body.bg-navy .board-tab{background:rgba(255,255,255,.14)}
 body.bg-navy .board-tab>button{color:#fff}
 body.bg-navy .board-tab.on{background:#fff}
@@ -580,12 +584,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   // --- In-page dialogs (instead of the browser's prompt / confirm) --------
   const uiDialog = $('#uiDialog'), uiTitle = $('#uiTitle'), uiText = $('#uiText'), uiInput = $('#uiInput'), uiOk = $('#uiOk');
   let uiResolve = null;
-  function uiOpen({title, text = '', value = null, ok = 'OK', danger = false}){
+  function uiOpen({title, text = '', value = null, ok = 'OK', danger = false, info = false}){
     if (uiResolve) uiResolve(null);
     uiTitle.textContent = title;
     uiText.textContent = text; uiText.hidden = !text;
     uiInput.hidden = value === null; uiInput.value = value ?? '';
     uiOk.textContent = ok; uiOk.classList.toggle('danger', danger);
+    $('#uiCancel').hidden = info;
     uiDialog.showModal();
     if (value !== null){ uiInput.focus(); uiInput.select(); } else uiOk.focus();
     return new Promise(res => { uiResolve = res; });
@@ -597,6 +602,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   uiDialog.addEventListener('click', e => { if (e.target === uiDialog) uiClose(null); }); // click on the backdrop
   uiDialog.addEventListener('keydown', e => e.stopPropagation()); // keep page shortcuts out of the dialog
   const askText = (title, value, ok = 'Tallenna') => uiOpen({title, value, ok});
+  const showInfo = (title, text = '') => uiOpen({title, text, info: true});
   const askConfirm = (title, text, ok = 'Poista') => uiOpen({title, text, ok, danger: true}).then(Boolean);
 
   // --- Saving ------------------------------------------------------------
@@ -1620,6 +1626,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       add.className = 'board-add'; add.textContent = '+'; add.title = 'Uusi taulu'; add.setAttribute('aria-label', 'Uusi taulu');
       add.addEventListener('click', create);
       nav.append(add);
+      const exp = document.createElement('button');
+      exp.className = 'board-io'; exp.textContent = 'Tallenna'; exp.title = 'Tallenna kaikki taulut tiedostoon (varmuuskopio)';
+      exp.addEventListener('click', exportBoards);
+      const imp = document.createElement('button');
+      imp.className = 'board-io'; imp.textContent = 'Avaa'; imp.title = 'Avaa taulut tallennetusta tiedostosta';
+      imp.addEventListener('click', () => importInput.click());
+      nav.append(exp, imp);
       nav.querySelector('.board-tab.on')?.scrollIntoView({inline: 'nearest', block: 'nearest'});
     }
     function show(b){
@@ -1668,7 +1681,56 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       }
       render();
     }
+    // --- Tallenna / Avaa: all boards to and from one file ---
+    const importInput = document.createElement('input');
+    importInput.type = 'file'; importInput.accept = '.json,application/json'; importInput.hidden = true;
+    document.body.append(importInput);
+    async function exportBoards(){
+      await flush();
+      const data = {app: 'kiviruukki-classroom', version: 1, exported: new Date().toISOString(),
+        boards: list.map(b => ({id: b.id, name: b.name, html: b.html || '', strokes: b.strokes || [], created: b.created, updated: b.updated}))};
+      const blob = new Blob([JSON.stringify(data)], {type: 'application/json'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'taulut-' + new Date().toISOString().slice(0, 10) + '.json';
+      document.body.append(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+    }
+    importInput.addEventListener('change', async () => {
+      const file = importInput.files[0]; importInput.value = '';
+      if (!file) return;
+      let data;
+      try{ data = JSON.parse(await file.text()); }catch(_){ data = null; }
+      if (!data || data.app !== 'kiviruukki-classroom' || !Array.isArray(data.boards)){
+        showInfo('Tiedostoa ei voitu avata', 'Valitse Tallenna-napilla tehty taulutiedosto.'); return;
+      }
+      await flush();
+      let added = 0, first = null;
+      for (const src of data.boards){
+        if (!src || typeof src.html !== 'string') continue;
+        const strokesIn = Array.isArray(src.strokes) ? src.strokes : [];
+        const same = list.find(b => b.id === src.id);
+        // the same board with the same content is already here: nothing to do
+        if (same && same.html === src.html && JSON.stringify(same.strokes || []) === JSON.stringify(strokesIn)) continue;
+        const b = {id: same ? uid() : (src.id || uid()), name: String(src.name || nextName()).slice(0, 80),
+          html: src.html, strokes: strokesIn, created: Date.now() + added, updated: src.updated || Date.now()};
+        list.push(b); await put(b); added++;
+        if (!first) first = b;
+      }
+      // drop the automatic empty board if the file brought real ones
+      if (added && current && isEmpty(current) && !data.boards.some(x => x.id === current.id)){
+        const empty = current; current = null;
+        await req(tx('readwrite').delete(empty.id)).catch(() => {});
+        list = list.filter(x => x.id !== empty.id);
+      }
+      if (first) await open(first.id); else render();
+      showInfo(added ? 'Avattu ' + added + (added === 1 ? ' taulu' : ' taulua') : 'Kaikki taulut olivat jo täällä',
+        added ? 'Löydät ne ylhäältä välilehdistä.' : '');
+    });
+
     function init(){
+      // ask the browser not to clear the boards on its own when disk space runs low
+      try{ navigator.storage && navigator.storage.persist && navigator.storage.persist(); }catch(_){}
       const r = indexedDB.open(DB, 1);
       r.onupgradeneeded = () => r.result.createObjectStore(STORE, {keyPath: 'id'});
       r.onerror = () => warn('Taulujen tallennus ei ole käytössä tässä selaimessa; teksti tallentuu vain yhteen tauluun.');
