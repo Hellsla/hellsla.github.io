@@ -949,7 +949,14 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const BLOCK = /^(P|DIV|LI|H[1-6]|TR|BLOCKQUOTE|PRE|UL|OL|TABLE)$/;
     function walk(node, out){
       node.childNodes.forEach(n => {
-        if (n.nodeType === 3){ out.append(n.data.replace(/\s+/g, ' ')); return; }
+        if (n.nodeType === 3){
+          let t = n.data.replace(/\s+/g, ' ');
+          // no space at the start of a line (source indentation, &nbsp; before the first word)
+          const prev = out.lastChild;
+          if (!prev || prev.nodeName === 'BR' || prev.nodeName === 'DIV') t = t.replace(/^ /, '');
+          if (t) out.append(t);
+          return;
+        }
         if (n.nodeType !== 1) return;
         const tag = n.tagName;
         if (/^(SCRIPT|STYLE|META|LINK|TITLE|NOSCRIPT|TEMPLATE)$/.test(tag)) return;
@@ -964,11 +971,25 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
           return;
         }
         if (n.classList.contains('math') && n.dataset.latex){ out.append(mathSpan(n.dataset.latex)); return; }
-        if (BLOCK.test(tag)){ const d = document.createElement('div'); walk(n, d); if (d.childNodes.length) out.append(d); return; }
+        if (BLOCK.test(tag)){
+          // a space left before a new line (between paragraphs) is dropped
+          if (out.lastChild && out.lastChild.nodeType === 3) out.lastChild.data = out.lastChild.data.replace(/ $/, '');
+          if (out.lastChild && out.lastChild.nodeType === 3 && !out.lastChild.data) out.lastChild.remove();
+          const d = document.createElement('div'); walk(n, d); trimEnd(d);
+          if (d.childNodes.length) out.append(d);
+          return;
+        }
         walk(n, out);
       });
     }
+    function trimEnd(el){
+      const last = el.lastChild;
+      if (last && last.nodeType === 3){ last.data = last.data.replace(/ $/, ''); if (!last.data) last.remove(); }
+    }
     walk(doc.body, frag);
+    trimEnd(frag);
+    // the first pasted paragraph continues the line the cursor is on
+    if (frag.firstChild && frag.firstChild.nodeName === 'DIV') frag.firstChild.replaceWith(...frag.firstChild.childNodes);
     return frag;
   }
 
