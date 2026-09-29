@@ -67,6 +67,16 @@ body.bg-navy .board-tab{background:rgba(255,255,255,.14)}
 body.bg-navy .board-tab>button{color:#fff}
 body.bg-navy .board-tab.on{background:#fff}
 body.bg-navy .board-tab.on>button,body.bg-navy .board-tab.on .bt-act{color:var(--navy)}
+.ui-dialog{border:0;padding:0;border-radius:22px;box-shadow:0 30px 80px rgba(1,33,105,.35);width:min(420px,calc(100vw - 32px));color:var(--navy);background:#fff}
+.ui-dialog::backdrop{background:rgba(1,33,105,.28);backdrop-filter:blur(3px)}
+.ui-dialog form{display:flex;flex-direction:column;gap:14px;padding:22px 22px 18px}
+.ui-dialog h2{margin:0;font:900 19px/1.25 Lato,Arial,sans-serif}
+.ui-dialog p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
+.ui-dialog input{border:2px solid var(--line);border-radius:12px;padding:10px 12px;font:700 16px "Work Sans",Arial,sans-serif;color:var(--navy)}
+.ui-dialog input:focus{border-color:var(--pink-strong);outline:none}
+.ui-dialog .ui-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:4px}
+.ui-dialog .ui-ok{background:var(--navy);color:#fff}
+.ui-dialog .ui-ok.danger{background:#d11d5a}
 .brand{display:flex;align-items:center;gap:11px;font-family:Lato,Arial,sans-serif;font-weight:900;letter-spacing:-.02em;white-space:nowrap}
 .brand-mark{width:42px;color:var(--pink-strong)}
 .brand small{display:block;font-family:"Work Sans",Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.62;margin-top:1px}
@@ -414,6 +424,17 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       <div class="card-resize" title="Muuta kokoa vetämällä"></div>
     </section>
   </main>
+  <dialog class="ui-dialog" id="uiDialog">
+    <form method="dialog">
+      <h2 id="uiTitle"></h2>
+      <p id="uiText"></p>
+      <input id="uiInput" type="text" autocomplete="off" spellcheck="false">
+      <div class="ui-actions">
+        <button type="button" id="uiCancel">Peruuta</button>
+        <button type="submit" class="ui-ok" id="uiOk" value="ok">OK</button>
+      </div>
+    </form>
+  </dialog>
 
 </div>
 <script src="lib/jquery.min.js"></script>
@@ -450,9 +471,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     localStorage.setItem('kiviruukki.editorSize', String(editorSize));
     applyEditorSize();
   });
-  $('#clearText').addEventListener('click', () => {
+  $('#clearText').addEventListener('click', async () => {
     if (editor.textContent.trim() || editor.querySelector('img,.math') || strokes.length) {
-      if (!confirm('Tyhjennetäänkö teksti, kaavat, kuvat ja piirrokset?')) return;
+      if (!await askConfirm('Tyhjennetäänkö taulu?', 'Teksti, kaavat, kuvat ja piirrokset poistetaan.', 'Tyhjennä')) return;
     }
     closeMath(false); hideImgBar(); clearDrawing();
     editor.innerHTML=''; saveNow(); editor.focus();
@@ -531,6 +552,28 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     });
     save();
   });
+
+  // --- In-page dialogs (instead of the browser's prompt / confirm) --------
+  const uiDialog = $('#uiDialog'), uiTitle = $('#uiTitle'), uiText = $('#uiText'), uiInput = $('#uiInput'), uiOk = $('#uiOk');
+  let uiResolve = null;
+  function uiOpen({title, text = '', value = null, ok = 'OK', danger = false}){
+    if (uiResolve) uiResolve(null);
+    uiTitle.textContent = title;
+    uiText.textContent = text; uiText.hidden = !text;
+    uiInput.hidden = value === null; uiInput.value = value ?? '';
+    uiOk.textContent = ok; uiOk.classList.toggle('danger', danger);
+    uiDialog.showModal();
+    if (value !== null){ uiInput.focus(); uiInput.select(); } else uiOk.focus();
+    return new Promise(res => { uiResolve = res; });
+  }
+  function uiClose(result){ const r = uiResolve; uiResolve = null; if (uiDialog.open) uiDialog.close(); if (r) r(result); }
+  uiDialog.querySelector('form').addEventListener('submit', e => { e.preventDefault(); uiClose(uiInput.hidden ? true : uiInput.value.trim()); });
+  $('#uiCancel').addEventListener('click', () => uiClose(null));
+  uiDialog.addEventListener('cancel', e => { e.preventDefault(); uiClose(null); }); // Esc
+  uiDialog.addEventListener('click', e => { if (e.target === uiDialog) uiClose(null); }); // click on the backdrop
+  uiDialog.addEventListener('keydown', e => e.stopPropagation()); // keep page shortcuts out of the dialog
+  const askText = (title, value, ok = 'Tallenna') => uiOpen({title, value, ok});
+  const askConfirm = (title, text, ok = 'Poista') => uiOpen({title, text, ok, danger: true}).then(Boolean);
 
   // --- Saving ------------------------------------------------------------
   // Equations are stored as <span class="math" data-latex="…"> and rendered
@@ -1442,7 +1485,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   $('#penDoneBtn').addEventListener('click', () => setPen(false));
   eraserBtn.addEventListener('click', () => setEraser(!erasing));
   $('#undoDrawBtn').addEventListener('click', undoDrawing);
-  $('#clearDrawBtn').addEventListener('click', () => { if (strokes.length && confirm('Poistetaanko kaikki piirrokset?')) clearDrawing(); });
+  $('#clearDrawBtn').addEventListener('click', async () => { if (strokes.length && await askConfirm('Poistetaanko kaikki piirrokset?', '', 'Poista')) clearDrawing(); });
   $$('#penBar .swatch').forEach(b => {
     b.classList.toggle('on', b.dataset.color === penColor);
     b.addEventListener('click', () => {
@@ -1540,7 +1583,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       render();
     }
     async function create(){
-      const name = (prompt('Uuden taulun nimi:', nextName()) || '').trim();
+      const name = (await askText('Uusi taulu', nextName(), 'Luo taulu')) || '';
       if (!name) return;
       const b = {id: uid(), name, html: '', strokes: [], created: Date.now()};
       list.push(b);
@@ -1548,15 +1591,15 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       await open(b.id);
       editor.focus();
     }
-    function rename(id){
+    async function rename(id){
       const b = list.find(x => x.id === id); if (!b) return;
-      const name = (prompt('Taulun nimi:', b.name) || '').trim();
+      const name = (await askText('Nimeä taulu', b.name)) || '';
       if (!name || name === b.name) return;
       b.name = name; put(b); render();
     }
     async function remove(id){
       const b = list.find(x => x.id === id); if (!b) return;
-      if (!confirm('Poistetaanko taulu "' + b.name + '"? Sen sisältö häviää.')) return;
+      if (!await askConfirm('Poistetaanko taulu "' + b.name + '"?', 'Sen sisältö häviää pysyvästi.')) return;
       await req(tx('readwrite').delete(id)).catch(() => {});
       list = list.filter(x => x.id !== id);
       if (current && current.id === id){
