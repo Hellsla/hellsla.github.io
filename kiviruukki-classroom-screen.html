@@ -45,7 +45,7 @@ button:focus-visible,input:focus-visible,[contenteditable="true"]:focus-visible{
   display:flex;
   gap:12px;
   align-items:center;
-  justify-content:flex-end;
+  justify-content:space-between;
   border-bottom:1px solid var(--line);
   background:rgba(255,255,255,.9);
   backdrop-filter:blur(16px);
@@ -53,6 +53,20 @@ button:focus-visible,input:focus-visible,[contenteditable="true"]:focus-visible{
   top:0;
   z-index:30;
 }
+.boards{display:flex;align-items:center;gap:6px;min-width:0;overflow-x:auto;scrollbar-width:none;padding:2px}
+.boards::-webkit-scrollbar{display:none}
+.board-tab{display:flex;align-items:center;flex:0 0 auto;border-radius:999px;background:#eef1f7}
+.board-tab>button{background:transparent;padding:8px 13px;font-size:13px;white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis}
+.board-tab.on{background:var(--navy)}
+.board-tab.on>button{color:#fff}
+.board-tab .bt-act{display:none;padding:6px 8px;font-size:12px;color:#fff;opacity:.8}
+.board-tab.on .bt-act{display:block}
+.board-tab .bt-act:hover{opacity:1;filter:none}
+.board-add{flex:0 0 auto;width:34px;height:34px;padding:0;font-size:18px;line-height:1}
+body.bg-navy .board-tab{background:rgba(255,255,255,.14)}
+body.bg-navy .board-tab>button{color:#fff}
+body.bg-navy .board-tab.on{background:#fff}
+body.bg-navy .board-tab.on>button,body.bg-navy .board-tab.on .bt-act{color:var(--navy)}
 .brand{display:flex;align-items:center;gap:11px;font-family:Lato,Arial,sans-serif;font-weight:900;letter-spacing:-.02em;white-space:nowrap}
 .brand-mark{width:42px;color:var(--pink-strong)}
 .brand small{display:block;font-family:"Work Sans",Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.62;margin-top:1px}
@@ -278,6 +292,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
 <body>
 <div class="app" id="app">
   <header class="topbar">
+    <nav class="boards" id="boards" aria-label="Taulut"></nav>
     <div class="toolbar" aria-label="Näkymän asetukset">
       <div class="toolbar-group" aria-label="Näytä widgetit">
         <button class="widget-toggle on" data-widget="timer">Ajastin</button>
@@ -440,7 +455,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       if (!confirm('Tyhjennetäänkö teksti, kaavat, kuvat ja piirrokset?')) return;
     }
     closeMath(false); hideImgBar(); clearDrawing();
-    editor.innerHTML=''; localStorage.removeItem('kiviruukki.note'); editor.focus();
+    editor.innerHTML=''; saveNow(); editor.focus();
   });
   if (editorSize) applyEditorSize();
 
@@ -534,8 +549,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     clone.querySelectorAll('.selected').forEach(i => i.classList.remove('selected'));
     return clone.innerHTML;
   }
+  let boardStore = null; // set once the board database (IndexedDB) is open
   function saveNow(){
     clearTimeout(saveTimer);
+    if (boardStore){ boardStore.save({html: serialize()}); return; }
     try{
       localStorage.setItem('kiviruukki.note', serialize());
       noteFooter.textContent = footerText; noteFooter.classList.remove('warn');
@@ -1323,6 +1340,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   let current = null;
 
   function saveDrawing(){
+    if (boardStore){ boardStore.save({strokes}); return; }
     try{ localStorage.setItem('kiviruukki.drawing', JSON.stringify(strokes)); }
     catch(_){ noteFooter.textContent = 'Piirroksen tallennus ei onnistunut: selaimen muisti on täynnä.'; noteFooter.classList.add('warn'); }
   }
@@ -1445,6 +1463,130 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   canvasObserver.observe(editor);
   sizeCanvas();
 
+  // --- Boards (taulut): several named boards stored in this browser ---------
+  // Each board keeps its own text, equations, images and pen drawing. They are
+  // kept in IndexedDB, which has room for images (localStorage fills up fast).
+  (function boards(){
+    const nav = $('#boards');
+    const DB = 'kiviruukki-classroom', STORE = 'boards';
+    let db = null, list = [], current = null;
+    function req(r){ return new Promise((res, rej) => { r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); }
+    function tx(mode){ return db.transaction(STORE, mode).objectStore(STORE); }
+    function warn(msg){ noteFooter.textContent = msg; noteFooter.classList.add('warn'); }
+    function put(board){
+      return req(tx('readwrite').put(board)).then(() => { noteFooter.classList.remove('warn'); noteFooter.textContent = ''; })
+        .catch(() => warn('Taulun tallennus ei onnistunut: selaimen tallennustila on täynnä. Poista kuvia tai vanhoja tauluja.'));
+    }
+    function flush(){
+      // capture what is on screen right now (typing may still be waiting for its debounced save)
+      clearTimeout(saveTimer);
+      if (!current) return Promise.resolve();
+      if (active) closeMath(false);
+      current.html = serialize(); current.strokes = strokes.slice(); current.updated = Date.now();
+      return put(current);
+    }
+    function uid(){ return 'b' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+    function render(){
+      nav.textContent = '';
+      list.forEach(b => {
+        const tab = document.createElement('div');
+        tab.className = 'board-tab' + (current && b.id === current.id ? ' on' : '');
+        const name = document.createElement('button');
+        name.textContent = b.name;
+        name.title = b.id === (current && current.id) ? 'Nimeä uudelleen: tuplaklikkaa' : 'Avaa taulu';
+        name.addEventListener('click', () => open(b.id));
+        name.addEventListener('dblclick', () => rename(b.id));
+        const ren = document.createElement('button');
+        ren.className = 'bt-act'; ren.textContent = '✎'; ren.title = 'Nimeä taulu uudelleen'; ren.setAttribute('aria-label', 'Nimeä taulu uudelleen');
+        ren.addEventListener('click', () => rename(b.id));
+        const del = document.createElement('button');
+        del.className = 'bt-act'; del.textContent = '×'; del.title = 'Poista taulu'; del.setAttribute('aria-label', 'Poista taulu');
+        del.addEventListener('click', () => remove(b.id));
+        tab.append(name, ren, del);
+        nav.append(tab);
+      });
+      const add = document.createElement('button');
+      add.className = 'board-add'; add.textContent = '+'; add.title = 'Uusi taulu'; add.setAttribute('aria-label', 'Uusi taulu');
+      add.addEventListener('click', create);
+      nav.append(add);
+      nav.querySelector('.board-tab.on')?.scrollIntoView({inline: 'nearest', block: 'nearest'});
+    }
+    function show(b){
+      closeMath(false); hideImgBar();
+      if (noteWidget.classList.contains('drawing')) setPen(false);
+      editor.innerHTML = b.html || '';
+      editor.querySelectorAll('.math').forEach(m => { m.contentEditable = 'false'; renderMath(m); });
+      normalizeImages();
+      strokes = Array.isArray(b.strokes) ? b.strokes : [];
+      current = null; sizeCanvas();
+      noteBody.scrollTop = 0;
+    }
+    async function open(id){
+      if (current && current.id === id) return;
+      await flush();
+      const b = list.find(x => x.id === id); if (!b) return;
+      show(b); current = b;
+      localStorage.setItem('kiviruukki.board', id);
+      render();
+    }
+    async function create(){
+      const name = (prompt('Uuden taulun nimi:', 'Taulu ' + (list.length + 1)) || '').trim();
+      if (!name) return;
+      const b = {id: uid(), name, html: '', strokes: [], created: Date.now()};
+      list.push(b);
+      await put(b);
+      await open(b.id);
+      editor.focus();
+    }
+    function rename(id){
+      const b = list.find(x => x.id === id); if (!b) return;
+      const name = (prompt('Taulun nimi:', b.name) || '').trim();
+      if (!name || name === b.name) return;
+      b.name = name; put(b); render();
+    }
+    async function remove(id){
+      const b = list.find(x => x.id === id); if (!b) return;
+      if (!confirm('Poistetaanko taulu "' + b.name + '"? Sen sisältö häviää.')) return;
+      await req(tx('readwrite').delete(id)).catch(() => {});
+      list = list.filter(x => x.id !== id);
+      if (current && current.id === id){
+        current = null;
+        if (!list.length){ const nb = {id: uid(), name: 'Taulu 1', html: '', strokes: [], created: Date.now()}; list.push(nb); await put(nb); }
+        const next = list[0]; show(next); current = next;
+        localStorage.setItem('kiviruukki.board', next.id);
+      }
+      render();
+    }
+    function init(){
+      const r = indexedDB.open(DB, 1);
+      r.onupgradeneeded = () => r.result.createObjectStore(STORE, {keyPath: 'id'});
+      r.onerror = () => warn('Taulujen tallennus ei ole käytössä tässä selaimessa; teksti tallentuu vain yhteen tauluun.');
+      r.onsuccess = async () => {
+        db = r.result;
+        list = (await req(tx('readonly').getAll()).catch(() => [])).sort((a, b) => a.created - b.created);
+        if (!list.length){
+          // first run: move the existing note and drawing into "Taulu 1"
+          const b = {id: uid(), name: 'Taulu 1', html: serialize(), strokes: strokes.slice(), created: Date.now()};
+          list.push(b); await put(b);
+        }
+        const want = localStorage.getItem('kiviruukki.board');
+        const b = list.find(x => x.id === want) || list[0];
+        show(b); current = b;
+        localStorage.setItem('kiviruukki.board', b.id);
+        boardStore = {
+          save(fields){
+            if (!current) return;
+            Object.assign(current, fields, {updated: Date.now()});
+            put(current); // callers already debounce typing
+          }
+        };
+        window.addEventListener('pagehide', flush);
+        document.addEventListener('visibilitychange', () => { if (document.hidden) flush(); });
+        render();
+      };
+    }
+    if (window.indexedDB) init();
+  })();
 })();
 </script>
 </body>
