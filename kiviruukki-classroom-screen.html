@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#012169">
+<title>Kiviruukki Classroom Screen</title>
+<link rel="stylesheet" href="lib/mathquill/mathquill.css">
+<style>
+:root{
+  --navy:#012169;
+  --pink:#fca5c7;
+  --pink-strong:#f35f9f;
+  --pink-track:#fde2ee;
+  --white:#ffffff;
+  --ink:#012169;
+  --muted:#66718d;
+  --panel:#ffffff;
+  --surface:#f4f6fa;
+  --line:rgba(1,33,105,.14);
+  --shadow:0 14px 42px rgba(1,33,105,.10);
+  --radius:26px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+html{background:var(--surface)}
+body{
+  margin:0;
+  min-height:100dvh;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 92% 8%, rgba(252,165,199,.22), transparent 23rem),
+    var(--surface);
+  font-family:"Work Sans",Arial,Helvetica,sans-serif;
+  overflow-x:hidden;
+}
+button,input,textarea{font:inherit}
+button{touch-action:manipulation}
+button:focus-visible,input:focus-visible,[contenteditable="true"]:focus-visible{outline:3px solid var(--pink-strong);outline-offset:3px}
+
+.app{min-height:100dvh;display:flex;flex-direction:column}
+.topbar{
+  min-height:68px;
+  padding:12px clamp(14px,2vw,28px);
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(16px);
+  position:sticky;
+  top:0;
+  z-index:30;
+}
+.brand{display:flex;align-items:center;gap:11px;font-family:Lato,Arial,sans-serif;font-weight:900;letter-spacing:-.02em;white-space:nowrap}
+.brand-mark{width:42px;color:var(--pink-strong)}
+.brand small{display:block;font-family:"Work Sans",Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.62;margin-top:1px}
+.toolbar{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.toolbar-group{display:flex;align-items:center;gap:6px;padding:4px;background:#eef1f7;border-radius:999px}
+button{
+  border:0;
+  border-radius:999px;
+  padding:9px 14px;
+  background:#eef1f7;
+  color:var(--navy);
+  cursor:pointer;
+  font-weight:750;
+}
+button:hover{filter:brightness(.975)}
+.toolbar-group button{background:transparent;padding:7px 11px;font-size:13px}
+.toolbar-group button.on{background:var(--white);box-shadow:0 2px 8px rgba(1,33,105,.08)}
+.primary{background:var(--navy);color:#fff}
+.pink{background:var(--pink)}
+.icon-btn{width:40px;height:40px;padding:0;display:grid;place-items:center;font-size:18px}
+
+.workspace{
+  flex:1;
+  display:grid;
+  grid-template-columns:minmax(0,1.75fr) minmax(320px,.95fr);
+  grid-template-rows:minmax(260px,.78fr) minmax(390px,1.22fr);
+  grid-template-areas:"note clock" "note timer";
+  gap:clamp(12px,1.6vw,22px);
+  padding:clamp(12px,1.6vw,22px);
+  min-height:0;
+}
+.widget{
+  min-width:0;
+  min-height:0;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  position:relative;
+}
+.widget.hidden{display:none!important}
+.widget-head{
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:0 18px;
+  border-bottom:1px solid var(--line);
+}
+.widget-title{font-family:Lato,Arial,sans-serif;font-size:15px;font-weight:900;letter-spacing:.02em;text-transform:uppercase}
+.widget-tools{display:flex;align-items:center;gap:6px}
+.widget-tools button{padding:7px 10px;font-size:13px}
+
+.note-widget{grid-area:note;display:flex;flex-direction:column}
+.editor{
+  flex:1;
+  min-height:0;
+  padding:clamp(24px,4vw,58px);
+  overflow:auto;
+  font-family:Lato,Arial,sans-serif;
+  font-size:clamp(34px,5.1vw,76px);
+  font-weight:800;
+  line-height:1.1;
+  letter-spacing:-.035em;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
+.editor:empty::before{content:attr(data-placeholder);color:rgba(1,33,105,.26)}
+.editor p,.editor div{margin:.15em 0}
+.note-footer{padding:8px 18px 14px;color:var(--muted);font-size:12px}
+.note-footer.warn{color:#b3124f;font-weight:700}
+.note-widget .widget-head{height:auto;min-height:54px;flex-wrap:wrap;padding:8px 18px}
+.note-widget .widget-tools{flex-wrap:wrap;justify-content:flex-end}
+.widget-tools button.on{background:var(--pink)}
+
+/* --- Abitti-style math toolbar ------------------------------------------ */
+.math-toolbar{display:none;flex-direction:column;gap:8px;padding:10px 18px;border-bottom:1px solid var(--line);background:#f8f9fc;max-height:42%;overflow:auto}
+.math-toolbar.open,.note-widget.math-active .math-toolbar{display:flex}
+.tb-row{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.tb-row button{min-width:36px;height:36px;padding:0 8px;border-radius:10px;background:#fff;border:1px solid var(--line);font-family:"Times New Roman",Symbola,serif;font-size:19px;font-weight:400;line-height:1}
+.tb-row button:hover{background:var(--pink-track);filter:none}
+.tb-row .tb-more{font-family:"Work Sans",Arial,sans-serif;font-size:12px;font-weight:750}
+.tb-extra{display:none}
+.math-toolbar.more .tb-extra{display:flex}
+.tb-basic{max-height:36px;overflow:hidden}
+.math-toolbar.more .tb-basic{max-height:none}
+.tb-eq{display:none}
+.note-widget.math-active .tb-eq{display:flex}
+.tb-eq button{height:42px;min-width:42px;padding:0 7px}
+.tb-eq img{display:block;height:24px;width:auto;max-width:78px}
+.tb-label{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.tb-sep{width:1px;height:24px;background:var(--line);margin:0 4px}
+
+/* rendered equations and the inline equation editor */
+.editor .math{display:inline-block;vertical-align:middle;letter-spacing:0;font-weight:400;cursor:pointer;border-radius:.12em;padding:0 .04em;white-space:nowrap}
+.editor .math:hover{background:var(--pink-track)}
+.editor .math.raw{font-family:ui-monospace,Consolas,monospace;font-size:.5em}
+.editor .math .mq-math-mode,.math-editor .mq-math-mode{font-size:1em}
+.editor .math-editor{display:inline-flex;flex-direction:column;gap:.12em;vertical-align:middle;max-width:100%;padding:.08em .16em .16em;margin:0 .05em;border:3px solid var(--pink-strong);border-radius:16px;background:#fff;letter-spacing:0;font-weight:400;white-space:normal}
+.math-editor .mq-editable-field{min-width:1.2em;border:0!important;box-shadow:none!important;padding:.05em .1em}
+.math-editor .mq-editable-field.mq-focused{box-shadow:none}
+.math-editor textarea.latex-src{display:block;width:min(100%,40rem);min-width:16rem;min-height:2.6em;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:6px 9px;font:15px/1.35 ui-monospace,Consolas,monospace;color:var(--navy);background:#f8f9fc}
+.math-editor textarea.latex-src.error{border-color:#d11d5a;background:#fff0f5}
+.math-editor .me-hint{font:600 11px/1.2 "Work Sans",Arial,sans-serif;color:var(--muted);letter-spacing:.02em}
+
+/* pasted images */
+.editor img{max-width:100%;height:auto;vertical-align:middle;border-radius:10px}
+.editor img.selected{outline:4px solid var(--pink-strong);outline-offset:2px}
+.img-bar{position:absolute;z-index:6;display:none;gap:6px;padding:6px;border-radius:999px;background:var(--navy);box-shadow:var(--shadow)}
+.img-bar.show{display:flex}
+.img-bar button{padding:6px 11px;font-size:13px;background:#fff}
+
+/* --- Calculator (Abicus-style) ------------------------------------------ */
+.calc{position:fixed;z-index:60;right:24px;bottom:24px;width:min(340px,calc(100vw - 32px));display:none;flex-direction:column;background:#fff;color:var(--navy);border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 60px rgba(1,33,105,.25);overflow:hidden}
+.calc.open{display:flex}
+.calc-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px 8px 16px;background:var(--navy);color:#fff;cursor:grab;touch-action:none;user-select:none}
+.calc-head:active{cursor:grabbing}
+.calc-head .widget-title{font-size:13px}
+.calc-head button{padding:5px 10px;font-size:12px;background:rgba(255,255,255,.16);color:#fff}
+.calc-head button.close{width:30px;height:30px;padding:0;font-size:16px}
+.calc-history{height:130px;overflow:auto;padding:8px 12px;display:flex;flex-direction:column;gap:2px;background:#f8f9fc;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.calc-history:empty::before{content:"Laskuhistoria näkyy tässä. Klikkaa riviä käyttääksesi sitä uudelleen.";color:var(--muted);font-size:12px;margin:auto 0}
+.calc-row{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:3px 6px;border-radius:8px;cursor:pointer;font-size:13px}
+.calc-row:hover{background:var(--pink-track)}
+.calc-row .ex{color:var(--muted);overflow-wrap:anywhere}
+.calc-row .res{font-weight:800;white-space:nowrap}
+.calc-input-wrap{padding:10px 12px 4px}
+.calc-input{width:100%;border:2px solid var(--line);border-radius:12px;padding:9px 11px;font:700 18px/1.2 ui-monospace,Consolas,monospace;color:var(--navy);background:#fff}
+.calc-input::placeholder{font-size:14px;font-weight:500;color:#9aa3ba}
+.calc-input:focus{border-color:var(--pink-strong);outline:none}
+.calc-out{min-height:28px;padding:2px 14px 6px;text-align:right;font:900 20px/1.3 Lato,Arial,sans-serif;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.calc-out.err{color:#d11d5a;font-size:13px;font-weight:700}
+.calc-keys{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;padding:4px 12px 12px}
+.calc-keys button{padding:0;height:38px;border-radius:10px;font-size:14px;font-weight:700}
+.calc-keys .fn{background:#e4e8f2;font-size:13px}
+.calc-keys .op{background:var(--pink-track)}
+.calc-keys .eq{background:var(--navy);color:#fff}
+.calc-keys .clr{background:var(--pink)}
+
+.clock-widget{grid-area:clock;display:flex;flex-direction:column}
+.clock-body{flex:1;display:grid;place-items:center;text-align:center;padding:18px}
+.clock-time{font-family:Lato,Arial,sans-serif;font-weight:900;font-size:clamp(62px,8vw,126px);line-height:.9;letter-spacing:-.065em;font-variant-numeric:tabular-nums lining-nums}
+.clock-date{margin-top:12px;font-size:clamp(15px,1.7vw,24px);font-weight:650;color:var(--muted);text-transform:capitalize}
+.clock-seconds{font-size:.38em;vertical-align:top;letter-spacing:-.02em;margin-left:.12em;color:var(--pink-strong)}
+
+.timer-widget{grid-area:timer;display:flex;flex-direction:column}
+.timer-body{flex:1;min-height:0;display:grid;grid-template-columns:minmax(230px,.95fr) minmax(210px,.75fr);align-items:center;gap:10px;padding:14px 18px 18px}
+.timer-visual{position:relative;aspect-ratio:1;width:min(100%,430px);justify-self:center}
+.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:14}
+.ring-track{stroke:var(--pink-track)}
+.ring-progress{stroke:var(--pink-strong);stroke-linecap:round;transition:stroke-dashoffset .18s linear}
+.timer-center{position:absolute;inset:7%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:2%}
+.timer-widget .forge{width:72%;display:flex;flex-direction:column;align-items:center;line-height:0;margin-top:1%}
+.timer-widget .rays{width:100%;height:auto;color:var(--pink);transform-origin:50% 100%;opacity:1}
+.timer-widget .anvil{display:block;width:100%;height:auto;margin-top:-.4%;user-select:none;-webkit-user-drag:none}
+.timer-time{margin-top:1%;font-family:Lato,Arial,sans-serif;font-size:clamp(42px,5.7vw,82px);font-weight:900;line-height:.9;letter-spacing:-.06em;font-variant-numeric:tabular-nums lining-nums;text-align:center;min-width:4.2ch}
+.timer-status{margin-top:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;opacity:.55;height:1.2em}
+.timer-running .rays{animation:forgePulse 900ms ease-in-out infinite alternate}
+.timer-finished .rays{animation:finishFlash 250ms ease-in-out 7 alternate}
+@keyframes forgePulse{from{opacity:.3}to{opacity:1}}
+@keyframes finishFlash{from{opacity:.18}to{opacity:1}}
+.timer-controls{display:flex;flex-direction:column;align-items:stretch;gap:11px;padding-right:2px}
+.preset-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.preset-grid button{padding:9px 7px;font-size:13px}
+.preset-grid button.active{background:var(--pink)}
+.custom-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}
+.custom-row label{font-size:12px;font-weight:800;color:var(--muted)}
+.custom-row input{width:88px;border:1px solid var(--line);border-radius:999px;padding:8px 10px;color:var(--navy);background:#fff;text-align:center;font-weight:800}
+.timer-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.timer-actions .start{grid-column:1/-1;background:var(--navy);color:#fff;padding:11px}
+.timer-actions button{font-size:13px}
+.keyboard-hint{font-size:11px;line-height:1.4;color:var(--muted)}
+
+body.bg-navy{--surface:#012169;--panel:#fff;--shadow:0 14px 42px rgba(0,0,0,.18)}
+body.bg-navy{background:var(--navy)}
+body.bg-navy .topbar{background:rgba(1,33,105,.92);color:#fff;border-bottom-color:rgba(255,255,255,.18)}
+body.bg-navy .brand small{color:#fff}
+body.bg-navy .toolbar-group{background:rgba(255,255,255,.14)}
+body.bg-navy .toolbar-group button{color:#fff}
+body.bg-navy .toolbar-group button.on{background:#fff;color:var(--navy)}
+body.bg-pink{--surface:#fca5c7}
+body.bg-pink{background:var(--pink)}
+
+.focused .workspace{display:block;padding:clamp(12px,1.5vw,20px)}
+.focused .widget{display:none!important;height:calc(100dvh - 108px)}
+.focused .widget.focus-target{display:flex!important}
+.focused .note-widget.focus-target{display:flex!important}
+.focused .clock-widget.focus-target{display:flex!important}
+.focused .timer-widget.focus-target{display:flex!important}
+.focused .timer-widget .timer-body{grid-template-columns:minmax(380px,1.2fr) minmax(270px,.6fr);max-width:1100px;width:100%;margin:auto}
+.focused .timer-widget .timer-visual{width:min(60dvh,560px)}
+.focused .clock-time{font-size:clamp(120px,20vw,330px)}
+.focused .clock-date{font-size:clamp(24px,3vw,46px)}
+.focused .editor{font-size:clamp(58px,7vw,120px)}
+
+.presentation .topbar{opacity:.06;transition:opacity .18s ease}
+.presentation .topbar:hover,.presentation .topbar:focus-within{opacity:1}
+.presentation .workspace{padding-top:6px}
+
+body:fullscreen .app,body:-webkit-full-screen .app{min-height:100dvh}
+body:fullscreen .topbar,body:-webkit-full-screen .topbar{opacity:.06;transition:opacity .18s ease}
+body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-full-screen .topbar:hover,body:-webkit-full-screen .topbar:focus-within{opacity:1}
+
+@media(max-width:980px){
+  .workspace{grid-template-columns:1fr 1fr;grid-template-rows:minmax(360px,1.2fr) minmax(290px,.8fr);grid-template-areas:"note note" "clock timer"}
+  .timer-body{grid-template-columns:1fr;overflow:auto}
+  .timer-visual{width:min(54vw,310px)}
+  .timer-controls{padding:0 10px 8px}
+}
+@media(max-width:700px){
+  .topbar{align-items:flex-start}
+  .brand small{display:none}
+  .workspace{display:flex;flex-direction:column;min-height:auto}
+  .widget{min-height:390px}
+  .note-widget{min-height:56dvh}
+  .clock-widget{min-height:330px}
+  .timer-widget{min-height:700px}
+  .timer-body{display:flex;flex-direction:column}
+  .timer-visual{width:min(88vw,390px)}
+  .toolbar-group.bg-group{display:none}
+  .editor{font-size:clamp(32px,10vw,58px)}
+}
+@media(prefers-reduced-motion:reduce){.timer-running .rays,.timer-finished .rays{animation:none}.ring-progress{transition:none}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="brand" aria-label="Kiviruukki Classroom Screen">
+      <svg class="brand-mark" viewBox="426.4451 477.1156 78.0200 47.7940" aria-hidden="true"><path fill="currentColor" d="M475.0201 520.9836 L495.9131 513.6666 L494.7411 510.4466 L473.8481 517.7646 L497.1291 498.2286 L494.9271 495.6036 L471.6461 515.1386 L484.6671 493.6046 L481.6991 491.8916 L468.6781 513.4266 L473.9111 483.7526 L470.5361 483.1576 L465.3041 512.8316 L459.3461 477.6156 L455.9721 478.2106 L461.9301 513.4266 L450.2451 493.1886 L447.2781 494.9016 L458.9631 515.1396 L437.5741 497.1926 L435.3721 499.8176 L456.7601 517.7636 L438.7281 511.2006 L437.5561 514.4206 L455.5881 520.9836 L426.9451 520.9836 L426.9451 524.4096 L455.5951 524.4096 L455.5951 520.9846 L456.7661 517.7676 L458.9671 515.1446 L461.9321 513.4326 L465.3041 512.8386 L468.6761 513.4326 L471.6411 515.1446 L473.8421 517.7676 L475.0131 520.9846 L475.0131 524.4096 L503.9651 524.4096 L503.9651 520.9836 L475.0201 520.9836"/></svg>
+      <div>Kiviruukki<small>Classroom Screen</small></div>
+    </div>
+    <div class="toolbar" aria-label="Näkymän asetukset">
+      <div class="toolbar-group" aria-label="Näytä widgetit">
+        <button class="widget-toggle on" data-widget="note">Teksti</button>
+        <button class="widget-toggle on" data-widget="timer">Ajastin</button>
+        <button class="widget-toggle on" data-widget="clock">Kello</button>
+      </div>
+      <div class="toolbar-group bg-group" aria-label="Taustaväri">
+        <button class="bg-btn on" data-bg="light" title="Vaalea tausta">○</button>
+        <button class="bg-btn" data-bg="navy" title="Yönsininen tausta">●</button>
+        <button class="bg-btn" data-bg="pink" title="Marjapuuro-tausta">◉</button>
+      </div>
+      <button id="calcBtn" title="Avaa laskin (L)">Laskin</button>
+      <button id="presentationBtn" title="Piilota työkalupalkki">Esitystila</button>
+      <button class="pink" id="fullscreenBtn">Koko näyttö</button>
+    </div>
+  </header>
+
+  <main class="workspace" id="workspace">
+    <section class="widget note-widget" id="widget-note">
+      <div class="widget-head">
+        <div class="widget-title">Teksti</div>
+        <div class="widget-tools">
+          <button id="addMathBtn" title="Lisää kaava (Ctrl+E)">Σ Kaava</button>
+          <button id="toolbarBtn" title="Näytä erikoismerkit ja kaavapainikkeet">Merkit</button>
+          <button id="addImageBtn" title="Lisää kuva (tai liitä Ctrl+V)">Kuva</button>
+          <input id="imageInput" type="file" accept="image/*" multiple hidden>
+          <button id="textSmaller" title="Pienennä tekstiä">A−</button>
+          <button id="textLarger" title="Suurenna tekstiä">A+</button>
+          <button data-focus="note">Suurenna</button>
+          <button id="clearText">Tyhjennä</button>
+        </div>
+      </div>
+      <div class="math-toolbar" id="mathToolbar" aria-label="Erikoismerkit ja kaavat"></div>
+      <div class="editor" id="editor" contenteditable="true" spellcheck="true" data-placeholder="Kirjoita tähän…" aria-label="Luokan näytölle kirjoitettava teksti"></div>
+      <div class="img-bar" id="imgBar" role="toolbar" aria-label="Kuvan koko">
+        <button data-img="smaller" title="Pienennä kuvaa">−</button>
+        <button data-img="larger" title="Suurenna kuvaa">+</button>
+        <button data-img="full" title="Täysi leveys">100 %</button>
+        <button data-img="delete" title="Poista kuva">Poista</button>
+      </div>
+      <div class="note-footer" id="noteFooter">Ctrl+E = kaava (LaTeX) · Ctrl+V liittää kuvan · Teksti tallentuu automaattisesti tähän selaimeen.</div>
+    </section>
+
+    <section class="widget clock-widget" id="widget-clock">
+      <div class="widget-head">
+        <div class="widget-title">Kello</div>
+        <div class="widget-tools"><button data-focus="clock">Suurenna</button></div>
+      </div>
+      <div class="clock-body">
+        <div>
+          <div class="clock-time" id="clockTime">--:--<span class="clock-seconds">--</span></div>
+          <div class="clock-date" id="clockDate"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="widget timer-widget" id="widget-timer">
+      <div class="widget-head">
+        <div class="widget-title">Ahjo-ajastin</div>
+        <div class="widget-tools"><button data-focus="timer">Suurenna</button></div>
+      </div>
+      <div class="timer-body">
+        <div class="timer-visual" aria-label="Ajastin">
+          <svg class="ring" viewBox="0 0 360 360" aria-hidden="true">
+            <circle class="ring-track" cx="180" cy="180" r="164"></circle>
+            <circle class="ring-progress" id="progress" cx="180" cy="180" r="164"></circle>
+          </svg>
+          <div class="timer-center">
+            <div class="forge" aria-hidden="true">
+        <svg class="rays" viewBox="426.4451 477.1156 78.0200 47.7940" preserveAspectRatio="xMidYMax meet">
+          <path fill="currentColor" fill-rule="nonzero" d="M475.0201 520.9836 L495.9131 513.6666 L494.7411 510.4466 L473.8481 517.7646 L497.1291 498.2286 L494.9271 495.6036 L471.6461 515.1386 L484.6671 493.6046 L481.6991 491.8916 L468.6781 513.4266 L473.9111 483.7526 L470.5361 483.1576 L465.3041 512.8316 L459.3461 477.6156 L455.9721 478.2106 L461.9301 513.4266 L450.2451 493.1886 L447.2781 494.9016 L458.9631 515.1396 L437.5741 497.1926 L435.3721 499.8176 L456.7601 517.7636 L438.7281 511.2006 L437.5561 514.4206 L455.5881 520.9836 L426.9451 520.9836 L426.9451 524.4096 L455.5951 524.4096 L455.5951 520.9846 L456.7661 517.7676 L458.9671 515.1446 L461.9321 513.4326 L465.3041 512.8386 L468.6761 513.4326 L471.6411 515.1446 L473.8421 517.7676 L475.0131 520.9846 L475.0131 524.4096 L503.9651 524.4096 L503.9651 520.9836 L475.0201 520.9836"></path>
+        </svg>
+        <img class="anvil" alt="" src="data:image/png;base64,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">
+      </div>
+            <div class="timer-time" id="timerTime" role="timer">05:00</div>
+            <div class="timer-status" id="timerStatus">Valmis</div>
+          </div>
+        </div>
+        <div class="timer-controls">
+          <div class="preset-grid" aria-label="Ajastimen pikavalinnat">
+            <button class="preset" data-minutes="1">1 min</button>
+            <button class="preset" data-minutes="3">3 min</button>
+            <button class="preset active" data-minutes="5">5 min</button>
+            <button class="preset" data-minutes="10">10 min</button>
+            <button class="preset" data-minutes="15">15 min</button>
+            <button class="preset" data-minutes="20">20 min</button>
+          </div>
+          <div class="custom-row">
+            <label for="customMinutes">Muu aika (min)</label>
+            <input id="customMinutes" type="number" min="0.1" max="180" step="0.5" value="5" inputmode="decimal">
+          </div>
+          <div class="timer-actions">
+            <button class="start" id="startPause">Käynnistä</button>
+            <button id="resetTimer">Nollaa</button>
+            <button id="soundBtn" aria-pressed="true">Ääni: päällä</button>
+          </div>
+          <div class="keyboard-hint">Välilyönti = käynnistä/tauko · R = nollaa · F = koko näyttö</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="calc" id="calc" aria-label="Laskin">
+    <div class="calc-head" id="calcHead">
+      <div class="widget-title">Laskin</div>
+      <div class="widget-tools">
+        <button id="angleBtn" title="Kulmayksikkö: asteet / radiaanit">DEG</button>
+        <button class="close" id="calcClose" title="Sulje laskin" aria-label="Sulje laskin">×</button>
+      </div>
+    </div>
+    <div class="calc-history" id="calcHistory" aria-live="polite"></div>
+    <div class="calc-input-wrap">
+      <input class="calc-input" id="calcInput" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" placeholder="esim. 2·sin(30)+√(16)" aria-label="Laskutoimitus">
+    </div>
+    <div class="calc-out" id="calcOut" aria-live="polite"></div>
+    <div class="calc-keys" id="calcKeys">
+      <button class="fn" data-ins="sin(">sin</button>
+      <button class="fn" data-ins="cos(">cos</button>
+      <button class="fn" data-ins="tan(">tan</button>
+      <button class="fn" data-ins="ln(">ln</button>
+      <button class="fn" data-ins="log(">log</button>
+      <button class="fn" data-ins="asin(">sin⁻¹</button>
+      <button class="fn" data-ins="acos(">cos⁻¹</button>
+      <button class="fn" data-ins="atan(">tan⁻¹</button>
+      <button class="fn" data-ins="√(">√</button>
+      <button class="fn" data-ins="^">xʸ</button>
+      <button class="fn" data-ins="^2">x²</button>
+      <button class="fn" data-ins="(">(</button>
+      <button class="fn" data-ins=")">)</button>
+      <button class="fn" data-ins="π">π</button>
+      <button class="fn" data-ins="e">e</button>
+      <button data-ins="7">7</button>
+      <button data-ins="8">8</button>
+      <button data-ins="9">9</button>
+      <button class="op" data-ins="/">÷</button>
+      <button class="clr" data-act="clear" title="Tyhjennä">C</button>
+      <button data-ins="4">4</button>
+      <button data-ins="5">5</button>
+      <button data-ins="6">6</button>
+      <button class="op" data-ins="·">×</button>
+      <button class="fn" data-act="back" title="Poista merkki" aria-label="Poista merkki">⌫</button>
+      <button data-ins="1">1</button>
+      <button data-ins="2">2</button>
+      <button data-ins="3">3</button>
+      <button class="op" data-ins="−">−</button>
+      <button class="fn" data-ins="ans" title="Edellinen tulos">ans</button>
+      <button data-ins="0">0</button>
+      <button data-ins=",">,</button>
+      <button class="fn" data-ins="·10^" title="Kymmenpotenssi">·10ˣ</button>
+      <button class="op" data-ins="+">+</button>
+      <button class="eq" data-act="eval">=</button>
+    </div>
+  </section>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mathquill/mathquill.min.js"></script>
+<script src="lib/abitti-math-toolbar.js"></script>
+<script>
+(() => {
+  'use strict';
+
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const app = $('#app');
+  const editor = $('#editor');
+  const workspace = $('#workspace');
+
+  // --- Notes ---------------------------------------------------------------
+  let editorSize = Number(localStorage.getItem('kiviruukki.editorSize') || 0);
+  const savedNote = localStorage.getItem('kiviruukki.note');
+  if (savedNote) editor.innerHTML = savedNote;
+
+  function applyEditorSize(){
+    const base = Math.max(26, Math.min(120, editorSize || 0));
+    editor.style.fontSize = base ? `${base}px` : '';
+  }
+  $('#textLarger').addEventListener('click', () => {
+    const current = parseFloat(getComputedStyle(editor).fontSize);
+    editorSize = Math.min(120, current + 6);
+    localStorage.setItem('kiviruukki.editorSize', String(editorSize));
+    applyEditorSize();
+  });
+  $('#textSmaller').addEventListener('click', () => {
+    const current = parseFloat(getComputedStyle(editor).fontSize);
+    editorSize = Math.max(26, current - 6);
+    localStorage.setItem('kiviruukki.editorSize', String(editorSize));
+    applyEditorSize();
+  });
+  $('#clearText').addEventListener('click', () => {
+    if (editor.textContent.trim() || editor.querySelector('img,.math')) {
+      if (!confirm('Tyhjennetäänkö teksti, kaavat ja kuvat?')) return;
+    }
+    closeMath(false); hideImgBar();
+    editor.innerHTML=''; localStorage.removeItem('kiviruukki.note'); editor.focus();
+  });
+  if (editorSize) applyEditorSize();
+
+  // --- Saving ------------------------------------------------------------
+  // Equations are stored as <span class="math" data-latex="…"> and rendered
+  // again on load, so the saved HTML stays small and independent of MathQuill.
+  const noteWidget = $('#widget-note');
+  const noteFooter = $('#noteFooter');
+  const footerText = noteFooter.textContent;
+  let saveTimer = 0;
+  function serialize(){
+    const clone = editor.cloneNode(true);
+    clone.querySelectorAll('.math-editor').forEach(w => {
+      const latex = w.querySelector('.latex-src')?.value.trim() || '';
+      if (latex) w.replaceWith(mathSpan(latex, false)); else w.remove();
+    });
+    clone.querySelectorAll('.math').forEach(m => { m.textContent = ''; m.className = 'math'; });
+    clone.querySelectorAll('img.selected').forEach(i => i.classList.remove('selected'));
+    return clone.innerHTML;
+  }
+  function saveNow(){
+    clearTimeout(saveTimer);
+    try{
+      localStorage.setItem('kiviruukki.note', serialize());
+      noteFooter.textContent = footerText; noteFooter.classList.remove('warn');
+    }catch(_){
+      noteFooter.textContent = 'Tallennus ei onnistunut: kuvat vievät liikaa tilaa selaimen muistista. Poista tai pienennä kuvia.';
+      noteFooter.classList.add('warn');
+    }
+  }
+  function save(){ clearTimeout(saveTimer); saveTimer = setTimeout(saveNow, 300); }
+  editor.addEventListener('input', save);
+  window.addEventListener('beforeunload', saveNow);
+
+  // --- Equations (Abitti-style: MathQuill + LaTeX source side by side) ----
+  const MQ = window.MathQuill ? window.MathQuill.getInterface(2) : null;
+  const MATH = window.ABITTI_MATH || {chars:{BASIC:[],ALGEBRA:[],GEOMETRY:[],SET_THEORY:[]},shortcuts:[]};
+  let active = null; // {wrap, mq, ta}
+
+  function renderMath(span){
+    const latex = span.dataset.latex || '';
+    span.textContent = '';
+    span.classList.remove('raw');
+    if (MQ){
+      const inner = document.createElement('span');
+      span.appendChild(inner);
+      MQ.StaticMath(inner).latex(latex);
+    } else {
+      span.textContent = latex; span.classList.add('raw');
+    }
+  }
+  function mathSpan(latex, render = true){
+    const s = document.createElement('span');
+    s.className = 'math';
+    s.contentEditable = 'false';
+    s.dataset.latex = latex;
+    s.title = 'Muokkaa kaavaa klikkaamalla';
+    if (render) renderMath(s);
+    return s;
+  }
+  editor.querySelectorAll('.math').forEach(s => { s.contentEditable = 'false'; renderMath(s); });
+
+  function editorRange(){
+    const sel = getSelection();
+    if (sel.rangeCount){
+      const r = sel.getRangeAt(0);
+      if (editor.contains(r.commonAncestorContainer) && !r.commonAncestorContainer.closest?.('.math-editor')) return r;
+    }
+    const r = document.createRange();
+    r.selectNodeContents(editor); r.collapse(false);
+    return r;
+  }
+  function caretAfter(node){
+    let next = node.nextSibling;
+    if (!next || next.nodeType !== 3){ next = document.createTextNode('​'); node.after(next); }
+    const r = document.createRange();
+    r.setStart(next, next.data.startsWith('​') ? 1 : 0); r.collapse(true);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+  }
+
+  function openMath(latex = '', replaceNode = null){
+    if (!MQ){ noteFooter.textContent = 'Kaavaeditori ei latautunut (lib/mathquill puuttuu).'; noteFooter.classList.add('warn'); return; }
+    closeMath(false);
+    const wrap = document.createElement('span');
+    wrap.className = 'math-editor';
+    wrap.contentEditable = 'false';
+    const field = document.createElement('span');
+    const ta = document.createElement('textarea');
+    ta.className = 'latex-src';
+    ta.spellcheck = false;
+    ta.placeholder = 'LaTeX';
+    ta.setAttribute('aria-label', 'Kaavan LaTeX-koodi');
+    const hint = document.createElement('span');
+    hint.className = 'me-hint';
+    hint.textContent = 'Enter tai Esc = valmis · muokkaa kaavaa ylhäällä tai LaTeXia tässä';
+    wrap.append(field, ta, hint);
+
+    if (replaceNode) replaceNode.replaceWith(wrap);
+    else {
+      const r = editorRange();
+      const selected = r.toString();
+      if (!latex && selected) latex = selected;
+      r.deleteContents();
+      r.insertNode(wrap);
+    }
+
+    const mq = MQ.MathField(field, {
+      spaceBehavesLikeTab: false,
+      autoCommands: 'pi sqrt sum int nthroot',
+      autoOperatorNames: 'sin cos tan arcsin arccos arctan sinh cosh tanh ln log lg exp lim max min det',
+      handlers: {
+        edit(f){ if (field.contains(document.activeElement)){ ta.value = f.latex(); ta.classList.remove('error'); } },
+        enter(){ closeMath(true); }
+      }
+    });
+    mq.latex(latex);
+    ta.value = latex;
+    ta.addEventListener('input', () => {
+      mq.latex(ta.value);
+      ta.classList.toggle('error', mq.latex() === '' && ta.value.trim() !== '');
+      save();
+    });
+    ta.addEventListener('keydown', e => {
+      if (e.key === 'Escape' || (e.key === 'Enter' && !e.shiftKey)){ e.preventDefault(); closeMath(true); }
+    });
+    wrap.addEventListener('keydown', e => {
+      if (e.key === 'Escape' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'e')){ e.preventDefault(); closeMath(true); }
+      e.stopPropagation();
+    });
+    active = {wrap, mq, ta};
+    noteWidget.classList.add('math-active');
+    mq.focus();
+  }
+
+  function closeMath(focusAfter = true){
+    if (!active) return;
+    const {wrap, ta} = active;
+    active = null;
+    noteWidget.classList.remove('math-active');
+    const latex = ta.value.trim();
+    if (!wrap.isConnected){ return; }
+    if (latex){
+      const s = mathSpan(latex);
+      wrap.replaceWith(s);
+      if (focusAfter){ editor.focus(); caretAfter(s); }
+    } else {
+      const r = document.createRange(); r.setStartBefore(wrap); r.collapse(true);
+      wrap.remove();
+      if (focusAfter){ editor.focus(); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+    }
+    saveNow();
+  }
+
+  editor.addEventListener('click', e => {
+    const m = e.target.closest('.math');
+    if (m && editor.contains(m)){ e.preventDefault(); openMath(m.dataset.latex || '', m); }
+  });
+  // Clicking anywhere outside the equation editor (except the toolbar) finishes it.
+  document.addEventListener('mousedown', e => {
+    if (active && !active.wrap.contains(e.target) && !e.target.closest('#mathToolbar,#addMathBtn')) closeMath(false);
+  }, true);
+
+  // Toolbar: special characters + Abitti equation buttons
+  const toolbar = $('#mathToolbar');
+  function tbButton(label, title, onClick){
+    const b = document.createElement('button');
+    b.type = 'button';
+    if (label instanceof Node) b.append(label); else b.textContent = label;
+    if (title) b.title = title;
+    b.addEventListener('mousedown', e => e.preventDefault()); // keep caret where it is
+    b.addEventListener('click', onClick);
+    return b;
+  }
+  function insertChar(ch){
+    if (active){
+      ch.useCommand ? active.mq.cmd(ch.latex || ch.label) : active.mq.write(ch.latex || ch.label);
+      active.ta.value = active.mq.latex();
+      active.mq.focus();
+      save();
+      return;
+    }
+    if (!editor.contains(document.activeElement) && document.activeElement !== editor){
+      editor.focus();
+      const r = editorRange(); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    }
+    document.execCommand('insertText', false, ch.label);
+  }
+  function applyShortcut(sc){
+    if (!active) openMath('');
+    if (!active) return;
+    active.mq[sc.fn || 'cmd'](sc.action);
+    active.ta.value = active.mq.latex();
+    active.mq.focus();
+    save();
+  }
+  function buildToolbar(){
+    const basic = document.createElement('div');
+    basic.className = 'tb-row tb-basic';
+    const more = tbButton('Lisää merkkejä ▾', 'Näytä lisää erikoismerkkejä', () => {
+      toolbar.classList.toggle('more');
+      more.textContent = toolbar.classList.contains('more') ? 'Vähemmän ▴' : 'Lisää merkkejä ▾';
+    });
+    more.classList.add('tb-more');
+    basic.append(more);
+    MATH.chars.BASIC.forEach(ch => basic.append(tbButton(ch.label, ch.latex || ch.label, () => insertChar(ch))));
+    const extra = document.createElement('div');
+    extra.className = 'tb-row tb-extra';
+    ['ALGEBRA','GEOMETRY','SET_THEORY'].forEach((k, i) => {
+      if (i) { const sep = document.createElement('span'); sep.className = 'tb-sep'; extra.append(sep); }
+      MATH.chars[k].forEach(ch => extra.append(tbButton(ch.label, ch.latex || ch.label, () => insertChar(ch))));
+    });
+    const eq = document.createElement('div');
+    eq.className = 'tb-row tb-eq';
+    const lbl = document.createElement('span'); lbl.className = 'tb-label'; lbl.textContent = 'Kaava';
+    eq.append(lbl);
+    MATH.shortcuts.forEach(sc => {
+      const img = document.createElement('img');
+      img.src = sc.svg; img.alt = sc.label || sc.action;
+      eq.append(tbButton(img, (sc.label || sc.action).replace(/\n/g,' '), () => applyShortcut(sc)));
+    });
+    toolbar.append(basic, extra, eq);
+  }
+  buildToolbar();
+
+  const toolbarBtn = $('#toolbarBtn');
+  function setToolbar(open){
+    toolbar.classList.toggle('open', open);
+    toolbarBtn.classList.toggle('on', open);
+    localStorage.setItem('kiviruukki.toolbar', open ? 'open' : 'closed');
+  }
+  setToolbar(localStorage.getItem('kiviruukki.toolbar') === 'open');
+  toolbarBtn.addEventListener('click', () => setToolbar(!toolbar.classList.contains('open')));
+  const addMathBtn = $('#addMathBtn');
+  addMathBtn.addEventListener('mousedown', e => e.preventDefault());
+  addMathBtn.addEventListener('click', () => active ? closeMath(true) : openMath(''));
+
+  // --- Images: paste (Ctrl+V), drag & drop, or file picker ----------------
+  const MAX_SIDE = 1600;
+  function readAsDataURL(blob){
+    return new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.onerror = rej; fr.readAsDataURL(blob); });
+  }
+  async function imageToDataURL(file){
+    if (file.type === 'image/gif' || file.type === 'image/svg+xml') return readAsDataURL(file);
+    try{
+      const bmp = await createImageBitmap(file);
+      const scale = Math.min(1, MAX_SIDE / Math.max(bmp.width, bmp.height));
+      if (scale === 1 && file.size < 900 * 1024) return readAsDataURL(file);
+      const c = document.createElement('canvas');
+      c.width = Math.round(bmp.width * scale); c.height = Math.round(bmp.height * scale);
+      const ctx = c.getContext('2d');
+      ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, c.width, c.height);
+      ctx.drawImage(bmp, 0, 0, c.width, c.height);
+      let url = c.toDataURL('image/webp', .85);
+      if (!url.startsWith('data:image/webp')) url = c.toDataURL('image/jpeg', .88);
+      return url;
+    }catch(_){ return readAsDataURL(file); }
+  }
+  function insertNodeAtCaret(node, range){
+    const r = range || editorRange();
+    r.deleteContents();
+    r.insertNode(node);
+    editor.focus();
+    const last = node.nodeType === 11 ? null : node;
+    if (last) caretAfter(last);
+  }
+  async function insertImages(files, range){
+    const r = range || editorRange();
+    for (const f of files){
+      const img = document.createElement('img');
+      img.alt = 'Liitetty kuva';
+      img.src = await imageToDataURL(f);
+      insertNodeAtCaret(img, r.cloneRange());
+      r.setStartAfter(img); r.collapse(true);
+    }
+    saveNow();
+  }
+
+  // Pasted HTML is reduced to text, line breaks, images and equations.
+  function sanitize(html){
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const frag = document.createDocumentFragment();
+    const BLOCK = /^(P|DIV|LI|H[1-6]|TR|BLOCKQUOTE|PRE|UL|OL|TABLE)$/;
+    function walk(node, out){
+      node.childNodes.forEach(n => {
+        if (n.nodeType === 3){ out.append(n.data.replace(/\s+/g, ' ')); return; }
+        if (n.nodeType !== 1) return;
+        const tag = n.tagName;
+        if (/^(SCRIPT|STYLE|META|LINK|TITLE|NOSCRIPT|TEMPLATE)$/.test(tag)) return;
+        if (tag === 'BR'){ out.append(document.createElement('br')); return; }
+        if (tag === 'IMG'){
+          const src = n.getAttribute('src') || '';
+          if (/^(data:image\/|https?:)/i.test(src)){ const i = document.createElement('img'); i.src = src; i.alt = n.getAttribute('alt') || ''; out.append(i); }
+          return;
+        }
+        if (n.classList.contains('math') && n.dataset.latex){ out.append(mathSpan(n.dataset.latex)); return; }
+        if (BLOCK.test(tag)){ const d = document.createElement('div'); walk(n, d); if (d.childNodes.length) out.append(d); return; }
+        walk(n, out);
+      });
+    }
+    walk(doc.body, frag);
+    return frag;
+  }
+
+  editor.addEventListener('paste', e => {
+    if (e.target.closest && e.target.closest('.math-editor')) return; // MathQuill / LaTeX field handle their own paste
+    const dt = e.clipboardData; if (!dt) return;
+    const files = [...dt.files].filter(f => f.type.startsWith('image/'));
+    if (files.length){ e.preventDefault(); insertImages(files); return; }
+    const html = dt.getData('text/html');
+    if (html && /<img|data-latex/i.test(html)){
+      e.preventDefault();
+      const frag = sanitize(html);
+      const lastNode = frag.lastChild;
+      const r = editorRange(); r.deleteContents(); r.insertNode(frag);
+      if (lastNode) caretAfter(lastNode);
+      saveNow(); return;
+    }
+    const text = dt.getData('text/plain');
+    if (text){ e.preventDefault(); document.execCommand('insertText', false, text); }
+  });
+  editor.addEventListener('dragover', e => { if ([...e.dataTransfer.items].some(i => i.kind === 'file')) e.preventDefault(); });
+  editor.addEventListener('drop', e => {
+    const files = [...e.dataTransfer.files].filter(f => f.type.startsWith('image/'));
+    if (!files.length) return;
+    e.preventDefault();
+    let r = null;
+    if (document.caretRangeFromPoint) r = document.caretRangeFromPoint(e.clientX, e.clientY);
+    else if (document.caretPositionFromPoint){ const p = document.caretPositionFromPoint(e.clientX, e.clientY); if (p){ r = document.createRange(); r.setStart(p.offsetNode, p.offset); } }
+    if (r && !editor.contains(r.startContainer)) r = null;
+    insertImages(files, r);
+  });
+  const imageInput = $('#imageInput');
+  let pickRange = null;
+  $('#addImageBtn').addEventListener('mousedown', () => { pickRange = editorRange().cloneRange(); });
+  $('#addImageBtn').addEventListener('click', () => imageInput.click());
+  imageInput.addEventListener('change', () => {
+    const files = [...imageInput.files].filter(f => f.type.startsWith('image/'));
+    if (files.length) insertImages(files, pickRange);
+    imageInput.value = '';
+  });
+
+  // Image size bar
+  const imgBar = $('#imgBar');
+  let selectedImg = null;
+  function hideImgBar(){ if (selectedImg) selectedImg.classList.remove('selected'); selectedImg = null; imgBar.classList.remove('show'); }
+  function placeImgBar(){
+    if (!selectedImg) return;
+    const w = noteWidget.getBoundingClientRect(), i = selectedImg.getBoundingClientRect();
+    imgBar.style.left = Math.max(8, i.left - w.left + 8) + 'px';
+    imgBar.style.top = Math.max(8, i.top - w.top + 8) + 'px';
+  }
+  editor.addEventListener('click', e => {
+    const img = e.target.closest('img');
+    if (!img){ hideImgBar(); return; }
+    hideImgBar();
+    selectedImg = img; img.classList.add('selected');
+    imgBar.classList.add('show'); placeImgBar();
+  });
+  editor.addEventListener('scroll', placeImgBar);
+  editor.addEventListener('keydown', () => hideImgBar());
+  imgBar.addEventListener('mousedown', e => e.preventDefault());
+  imgBar.addEventListener('click', e => {
+    const act = e.target.dataset.img; if (!act || !selectedImg) return;
+    if (act === 'delete'){ selectedImg.remove(); hideImgBar(); saveNow(); return; }
+    const box = editor.clientWidth - parseFloat(getComputedStyle(editor).paddingLeft) - parseFloat(getComputedStyle(editor).paddingRight);
+    let pct = selectedImg.style.width ? parseFloat(selectedImg.style.width) : Math.round(selectedImg.getBoundingClientRect().width / box * 100);
+    if (act === 'full') pct = 100;
+    else pct = Math.max(10, Math.min(100, pct + (act === 'larger' ? 10 : -10)));
+    selectedImg.style.width = pct + '%';
+    requestAnimationFrame(placeImgBar);
+    saveNow();
+  });
+
+  // --- Clock ---------------------------------------------------------------
+  const clockTime = $('#clockTime');
+  const clockDate = $('#clockDate');
+  const dateFmt = new Intl.DateTimeFormat('fi-FI', {weekday:'long', day:'numeric', month:'long'});
+  function updateClock(){
+    const d = new Date();
+    const hh = String(d.getHours()).padStart(2,'0');
+    const mm = String(d.getMinutes()).padStart(2,'0');
+    const ss = String(d.getSeconds()).padStart(2,'0');
+    clockTime.innerHTML = `${hh}:${mm}<span class="clock-seconds">${ss}</span>`;
+    clockDate.textContent = dateFmt.format(d);
+  }
+  updateClock();
+  setInterval(updateClock, 250);
+
+  // --- Timer ---------------------------------------------------------------
+  const timerWidget = $('#widget-timer');
+  const timerTime = $('#timerTime');
+  const timerStatus = $('#timerStatus');
+  const progress = $('#progress');
+  const startPauseBtn = $('#startPause');
+  const resetTimerBtn = $('#resetTimer');
+  const soundBtn = $('#soundBtn');
+  const customMinutes = $('#customMinutes');
+  const presetButtons = $$('.preset');
+  const radius = 164;
+  const circumference = 2 * Math.PI * radius;
+  progress.style.strokeDasharray = `${circumference} ${circumference}`;
+
+  let durationMs = Number(localStorage.getItem('kiviruukki.timerMinutes') || 5) * 60000;
+  if (!Number.isFinite(durationMs) || durationMs <= 0) durationMs = 5 * 60000;
+  let remainingMs = durationMs;
+  let running = false;
+  let endAt = 0;
+  let raf = 0;
+  let soundOn = localStorage.getItem('kiviruukki.sound') !== 'off';
+  let audioCtx = null;
+
+  function formatTime(ms){
+    const total = Math.max(0, Math.ceil(ms/1000));
+    const mins = Math.floor(total/60);
+    const secs = total%60;
+    return `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+  }
+  function renderTimer(){
+    timerTime.textContent = formatTime(remainingMs);
+    const ratio = durationMs ? Math.max(0, Math.min(1, remainingMs/durationMs)) : 0;
+    progress.style.strokeDashoffset = String(circumference * (1-ratio));
+  }
+  function setDuration(minutes){
+    if (running) pauseTimer();
+    const safe = Math.max(.1, Math.min(180, Number(minutes) || 5));
+    durationMs = safe * 60000;
+    remainingMs = durationMs;
+    customMinutes.value = Number.isInteger(safe) ? String(safe) : safe.toFixed(1);
+    localStorage.setItem('kiviruukki.timerMinutes', String(safe));
+    presetButtons.forEach(b => b.classList.toggle('active', Number(b.dataset.minutes)===safe));
+    timerWidget.classList.remove('timer-finished');
+    timerStatus.textContent='Valmis';
+    startPauseBtn.textContent='Käynnistä';
+    renderTimer();
+  }
+  function tick(now){
+    if (!running) return;
+    remainingMs = Math.max(0, endAt-now);
+    renderTimer();
+    if (remainingMs<=0){ finishTimer(); return; }
+    raf = requestAnimationFrame(tick);
+  }
+  function startTimer(){
+    if (running || remainingMs<=0) return;
+    running=true;
+    endAt=performance.now()+remainingMs;
+    timerWidget.classList.add('timer-running');
+    timerWidget.classList.remove('timer-finished');
+    timerStatus.textContent='Ahjo käy';
+    startPauseBtn.textContent='Tauko';
+    raf=requestAnimationFrame(tick);
+  }
+  function pauseTimer(){
+    if(!running) return;
+    remainingMs=Math.max(0,endAt-performance.now());
+    running=false;
+    cancelAnimationFrame(raf);
+    timerWidget.classList.remove('timer-running');
+    timerStatus.textContent='Tauko';
+    startPauseBtn.textContent='Jatka';
+    renderTimer();
+  }
+  function resetTimer(){
+    running=false;
+    cancelAnimationFrame(raf);
+    remainingMs=durationMs;
+    timerWidget.classList.remove('timer-running','timer-finished');
+    timerStatus.textContent='Valmis';
+    startPauseBtn.textContent='Käynnistä';
+    renderTimer();
+  }
+  function toggleTimer(){
+    if(remainingMs<=0) resetTimer();
+    running ? pauseTimer() : startTimer();
+  }
+  function finishTimer(){
+    running=false;
+    remainingMs=0;
+    cancelAnimationFrame(raf);
+    timerWidget.classList.remove('timer-running');
+    timerWidget.classList.add('timer-finished');
+    timerStatus.textContent='Aika';
+    startPauseBtn.textContent='Käynnistä';
+    renderTimer();
+    if(soundOn) beep();
+  }
+  function beep(){
+    try{
+      audioCtx ||= new (window.AudioContext||window.webkitAudioContext)();
+      const t=audioCtx.currentTime;
+      [0,.22,.44].forEach((delay,i)=>{
+        const o=audioCtx.createOscillator();
+        const g=audioCtx.createGain();
+        o.type='sine';
+        o.frequency.setValueAtTime(i===2?740:660,t+delay);
+        g.gain.setValueAtTime(.0001,t+delay);
+        g.gain.exponentialRampToValueAtTime(.13,t+delay+.015);
+        g.gain.exponentialRampToValueAtTime(.0001,t+delay+.16);
+        o.connect(g).connect(audioCtx.destination);
+        o.start(t+delay); o.stop(t+delay+.18);
+      });
+    }catch(_){ }
+  }
+  startPauseBtn.addEventListener('click',toggleTimer);
+  resetTimerBtn.addEventListener('click',resetTimer);
+  soundBtn.addEventListener('click',()=>{
+    soundOn=!soundOn;
+    localStorage.setItem('kiviruukki.sound',soundOn?'on':'off');
+    soundBtn.textContent=`Ääni: ${soundOn?'päällä':'pois'}`;
+    soundBtn.setAttribute('aria-pressed',String(soundOn));
+  });
+  presetButtons.forEach(b=>b.addEventListener('click',()=>setDuration(Number(b.dataset.minutes))));
+  customMinutes.addEventListener('change',()=>setDuration(customMinutes.value));
+  customMinutes.addEventListener('keydown',e=>{if(e.key==='Enter'){setDuration(customMinutes.value);customMinutes.blur();}});
+  soundBtn.textContent=`Ääni: ${soundOn?'päällä':'pois'}`;
+  customMinutes.value=String(durationMs/60000);
+  presetButtons.forEach(b=>b.classList.toggle('active',Number(b.dataset.minutes)===durationMs/60000));
+  renderTimer();
+
+  // --- Widget visibility / focus ------------------------------------------
+  const toggleButtons = $$('.widget-toggle');
+  const widgets = {note:$('#widget-note'),timer:$('#widget-timer'),clock:$('#widget-clock')};
+  const savedVisible = JSON.parse(localStorage.getItem('kiviruukki.visible') || '{}');
+  Object.keys(widgets).forEach(k=>{
+    if(savedVisible[k]===false){ widgets[k].classList.add('hidden'); const b=$(`.widget-toggle[data-widget="${k}"]`); if(b)b.classList.remove('on'); }
+  });
+  function saveVisible(){
+    const state={}; Object.entries(widgets).forEach(([k,w])=>state[k]=!w.classList.contains('hidden'));
+    localStorage.setItem('kiviruukki.visible',JSON.stringify(state));
+  }
+  toggleButtons.forEach(b=>b.addEventListener('click',()=>{
+    const key=b.dataset.widget; widgets[key].classList.toggle('hidden'); b.classList.toggle('on',!widgets[key].classList.contains('hidden')); saveVisible();
+  }));
+
+  let focusKey=null;
+  $$('[data-focus]').forEach(b=>b.addEventListener('click',()=>{
+    const key=b.dataset.focus;
+    if(focusKey===key){
+      document.body.classList.remove('focused'); widgets[key].classList.remove('focus-target'); b.textContent='Suurenna'; focusKey=null;
+    }else{
+      Object.values(widgets).forEach(w=>w.classList.remove('focus-target'));
+      $$('[data-focus]').forEach(x=>x.textContent='Suurenna');
+      focusKey=key; widgets[key].classList.add('focus-target'); document.body.classList.add('focused'); b.textContent='Palauta';
+    }
+  }));
+
+  // --- Background, presentation and fullscreen ---------------------------
+  const bgButtons=$$('.bg-btn');
+  function setBg(bg){
+    document.body.classList.remove('bg-navy','bg-pink');
+    if(bg==='navy') document.body.classList.add('bg-navy');
+    if(bg==='pink') document.body.classList.add('bg-pink');
+    bgButtons.forEach(b=>b.classList.toggle('on',b.dataset.bg===bg));
+    localStorage.setItem('kiviruukki.bg',bg);
+  }
+  bgButtons.forEach(b=>b.addEventListener('click',()=>setBg(b.dataset.bg)));
+  setBg(localStorage.getItem('kiviruukki.bg')||'light');
+
+  $('#presentationBtn').addEventListener('click',()=>document.body.classList.toggle('presentation'));
+  async function toggleFullscreen(){
+    try{ if(!document.fullscreenElement) await document.documentElement.requestFullscreen(); else await document.exitFullscreen(); }catch(_){ }
+  }
+  $('#fullscreenBtn').addEventListener('click',toggleFullscreen);
+
+  document.addEventListener('keydown',e=>{
+    if((e.ctrlKey||e.metaKey) && !e.altKey && e.key.toLowerCase()==='e' && (editor.contains(e.target)||e.target===editor)){
+      e.preventDefault(); active ? closeMath(true) : openMath('');
+      return;
+    }
+    const typing=e.target.isContentEditable || e.target.closest('input,textarea,select,[contenteditable="true"],.math-editor');
+    if(typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if(e.code==='Space'){e.preventDefault();toggleTimer();}
+    else if(e.key.toLowerCase()==='r') resetTimer();
+    else if(e.key.toLowerCase()==='f') toggleFullscreen();
+    else if(e.key.toLowerCase()==='l') toggleCalc();
+    else if(e.key==='Escape' && focusKey){
+      document.body.classList.remove('focused'); widgets[focusKey].classList.remove('focus-target'); $$('[data-focus]').forEach(x=>x.textContent='Suurenna'); focusKey=null;
+    }
+  });
+
+  // --- Calculator (Abicus-style) -----------------------------------------
+  // A small expression calculator: decimal comma, implicit multiplication,
+  // degrees/radians, ans and a clickable history. No eval().
+  const calc = $('#calc');
+  const calcInput = $('#calcInput');
+  const calcOut = $('#calcOut');
+  const calcHistory = $('#calcHistory');
+  const angleBtn = $('#angleBtn');
+  let degrees = localStorage.getItem('kiviruukki.calcAngle') !== 'rad';
+  let ans = 0;
+  let history = [];
+  try{ history = JSON.parse(localStorage.getItem('kiviruukki.calcHistory') || '[]'); }catch(_){ history = []; }
+  if (history.length) ans = history[history.length-1].value;
+  let recall = -1;
+
+  function tokenize(src){
+    const s = src.replace(/[×·*⋅]/g,'*').replace(/[÷:]/g,'/').replace(/[−–]/g,'-').replace(/²/g,'^2').replace(/³/g,'^3').replace(/\s+/g,'');
+    const out = [];
+    let i = 0;
+    while (i < s.length){
+      const c = s[i];
+      const num = /^(\d+(?:[.,]\d*)?|[.,]\d+)(?:[eE](?![a-zA-Z])[+-]?\d+)?/.exec(s.slice(i));
+      if (num){ out.push({t:'num', v:parseFloat(num[0].replace(',', '.'))}); i += num[0].length; continue; }
+      const id = /^[a-zA-Zπ√]+/.exec(s.slice(i));
+      if (id){
+        let w = id[0];
+        // split things like "sin" + "x" is not needed; but allow "2pi", "pie" etc. by greedy known-name match
+        while (w){
+          const name = ['asin','acos','atan','arcsin','arccos','arctan','sinh','cosh','tanh','sin','cos','tan','sqrt','abs','exp','ln','log','lg','ans','pi','π','√','e'].find(n => w.toLowerCase().startsWith(n));
+          if (!name) throw new Error('Tuntematon nimi: ' + w);
+          out.push({t:'id', v:name}); w = w.slice(name.length); i += name.length;
+        }
+        continue;
+      }
+      if ('+-*/^()!%'.includes(c)){ out.push({t:'op', v:c}); i++; continue; }
+      throw new Error('Tuntematon merkki: ' + c);
+    }
+    return out;
+  }
+  const FUNCS = {
+    sin: x => Math.sin(toRad(x)), cos: x => Math.cos(toRad(x)), tan: x => {
+      if (degrees && Math.abs(((x % 180) + 180) % 180 - 90) < 1e-12) throw new Error('tan ei ole määritelty');
+      return Math.tan(toRad(x));
+    },
+    asin: x => fromRad(Math.asin(x)), acos: x => fromRad(Math.acos(x)), atan: x => fromRad(Math.atan(x)),
+    sinh: Math.sinh, cosh: Math.cosh, tanh: Math.tanh,
+    sqrt: Math.sqrt, '√': Math.sqrt, abs: Math.abs, exp: Math.exp, ln: Math.log, log: Math.log10, lg: Math.log10
+  };
+  FUNCS.arcsin = FUNCS.asin; FUNCS.arccos = FUNCS.acos; FUNCS.arctan = FUNCS.atan;
+  function toRad(x){ return degrees ? x * Math.PI / 180 : x; }
+  function fromRad(x){ return degrees ? x * 180 / Math.PI : x; }
+  function factorial(n){
+    if (n < 0 || !Number.isInteger(n)) throw new Error('Kertoma vain luonnollisille luvuille');
+    if (n > 170) return Infinity;
+    let r = 1; for (let k = 2; k <= n; k++) r *= k; return r;
+  }
+  function evaluate(src){
+    const tk = tokenize(src);
+    let p = 0;
+    const peek = () => tk[p];
+    const isOp = v => peek() && peek().t === 'op' && peek().v === v;
+    // implicit multiplication starts with a number, name or "("
+    const startsFactor = () => peek() && (peek().t === 'num' || peek().t === 'id' || (peek().t === 'op' && peek().v === '('));
+    function expr(){
+      let v = term();
+      while (isOp('+') || isOp('-')){ const o = tk[p++].v; const r = term(); v = o === '+' ? v + r : v - r; }
+      return v;
+    }
+    function term(){
+      let v = unary();
+      for (;;){
+        if (isOp('*') || isOp('/')){ const o = tk[p++].v; const r = unary(); v = o === '*' ? v * r : v / r; }
+        else if (startsFactor()) v *= power();
+        else return v;
+      }
+    }
+    function unary(){
+      if (isOp('-')){ p++; return -unary(); }
+      if (isOp('+')){ p++; return unary(); }
+      return power();
+    }
+    function power(){
+      const b = postfix();
+      if (isOp('^')){ p++; return Math.pow(b, unary()); }
+      return b;
+    }
+    function postfix(){
+      let v = primary();
+      for (;;){
+        if (isOp('!')){ p++; v = factorial(v); }
+        else if (isOp('%')){ p++; v = v / 100; }
+        else return v;
+      }
+    }
+    function primary(){
+      const t = tk[p++];
+      if (!t) throw new Error('Lauseke loppuu kesken');
+      if (t.t === 'num') return t.v;
+      if (t.t === 'op' && t.v === '('){ const v = expr(); if (isOp(')')) p++; return v; } // missing ")" is forgiven
+      if (t.t === 'id'){
+        if (t.v === 'pi' || t.v === 'π') return Math.PI;
+        if (t.v === 'e') return Math.E;
+        if (t.v === 'ans') return ans;
+        const f = FUNCS[t.v];
+        if (isOp('(')) return f(primary());
+        return f(power()); // e.g. √2, sin30
+      }
+      throw new Error('Odottamaton merkki: ' + t.v);
+    }
+    const v = expr();
+    if (p < tk.length) throw new Error('Odottamaton merkki: ' + tk[p].v);
+    if (Number.isNaN(v)) throw new Error('Ei määritelty');
+    return v;
+  }
+  function fmt(v){
+    if (!Number.isFinite(v)) return v > 0 ? '∞' : v < 0 ? '−∞' : 'Ei määritelty';
+    if (v === 0) return '0';
+    if (Math.abs(v) < 1e-12) v = 0;
+    const a = Math.abs(v);
+    let s;
+    if (a !== 0 && (a >= 1e12 || a < 1e-6)){
+      const [m, ex] = v.toExponential(9).split('e');
+      s = m.replace(/\.?0+$/, '') + '·10^' + Number(ex);
+    } else {
+      s = String(Number(v.toPrecision(12)));
+    }
+    return s.replace('.', ',').replace(/-/g, '−');
+  }
+  function renderHistory(){
+    calcHistory.innerHTML = '';
+    history.slice(-50).forEach(h => {
+      const row = document.createElement('div');
+      row.className = 'calc-row';
+      row.title = 'Käytä tulosta';
+      const ex = document.createElement('span'); ex.className = 'ex'; ex.textContent = h.expr;
+      const res = document.createElement('span'); res.className = 'res'; res.textContent = '= ' + fmt(h.value);
+      row.append(ex, res);
+      row.addEventListener('click', () => insertCalc(fmt(h.value).replace('−', '-')));
+      calcHistory.append(row);
+    });
+    calcHistory.scrollTop = calcHistory.scrollHeight;
+  }
+  function runCalc(){
+    const src = calcInput.value.trim();
+    if (!src) return;
+    try{
+      const v = evaluate(src);
+      ans = v;
+      history.push({expr: src, value: v});
+      if (history.length > 50) history = history.slice(-50);
+      try{ localStorage.setItem('kiviruukki.calcHistory', JSON.stringify(history)); }catch(_){}
+      calcOut.classList.remove('err');
+      calcOut.textContent = '= ' + fmt(v);
+      calcInput.value = '';
+      recall = -1;
+      renderHistory();
+    }catch(err){
+      calcOut.classList.add('err');
+      calcOut.textContent = err.message || 'Virhe';
+    }
+  }
+  function insertCalc(text){
+    const a = calcInput.selectionStart ?? calcInput.value.length, b = calcInput.selectionEnd ?? a;
+    // starting a new line with an operator continues from the previous result
+    if (!calcInput.value && /^[+·*/^−-]/.test(text) && history.length && text !== '−') text = 'ans' + text;
+    calcInput.setRangeText(text, a, b, 'end');
+    calcInput.focus();
+  }
+  function setAngle(deg){
+    degrees = deg;
+    angleBtn.textContent = deg ? 'DEG' : 'RAD';
+    angleBtn.title = deg ? 'Kulmat asteina – vaihda radiaaneihin' : 'Kulmat radiaaneina – vaihda asteisiin';
+    localStorage.setItem('kiviruukki.calcAngle', deg ? 'deg' : 'rad');
+  }
+  setAngle(degrees);
+  angleBtn.addEventListener('click', () => setAngle(!degrees));
+  $('#calcKeys').addEventListener('mousedown', e => { if (e.target.closest('button')) e.preventDefault(); });
+  $('#calcKeys').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.ins) insertCalc(b.dataset.ins);
+    else if (b.dataset.act === 'eval') runCalc();
+    else if (b.dataset.act === 'back'){
+      const a = calcInput.selectionStart, z = calcInput.selectionEnd;
+      if (a !== z) calcInput.setRangeText('', a, z, 'end');
+      else if (a > 0) calcInput.setRangeText('', a - 1, a, 'end');
+      calcInput.focus();
+    }
+    else if (b.dataset.act === 'clear'){
+      if (!calcInput.value && !calcOut.textContent){ history = []; localStorage.removeItem('kiviruukki.calcHistory'); renderHistory(); }
+      calcInput.value = ''; calcOut.textContent = ''; calcOut.classList.remove('err'); calcInput.focus();
+    }
+  });
+  calcInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter'){ e.preventDefault(); runCalc(); }
+    else if (e.key === 'Escape'){ toggleCalc(false); }
+    else if (e.key === 'ArrowUp' && history.length){
+      e.preventDefault();
+      recall = recall < 0 ? history.length - 1 : Math.max(0, recall - 1);
+      calcInput.value = history[recall].expr;
+    } else if (e.key === 'ArrowDown' && recall >= 0){
+      e.preventDefault();
+      recall++;
+      calcInput.value = recall < history.length ? history[recall].expr : '';
+      if (recall >= history.length) recall = -1;
+    }
+  });
+
+  const calcBtn = $('#calcBtn');
+  function clampCalc(){
+    const r = calc.getBoundingClientRect();
+    const x = Math.min(Math.max(8, r.left), innerWidth - r.width - 8);
+    const y = Math.min(Math.max(8, r.top), innerHeight - 60);
+    calc.style.left = x + 'px'; calc.style.top = y + 'px'; calc.style.right = 'auto'; calc.style.bottom = 'auto';
+  }
+  function toggleCalc(force){
+    const open = typeof force === 'boolean' ? force : !calc.classList.contains('open');
+    calc.classList.toggle('open', open);
+    calcBtn.classList.toggle('pink', open);
+    localStorage.setItem('kiviruukki.calcOpen', open ? '1' : '0');
+    if (open){
+      if (calc.style.left) clampCalc();
+      calcInput.focus();
+    }
+  }
+  calcBtn.addEventListener('click', () => toggleCalc());
+  $('#calcClose').addEventListener('click', () => toggleCalc(false));
+  try{
+    const pos = JSON.parse(localStorage.getItem('kiviruukki.calcPos') || 'null');
+    if (pos){ calc.style.left = pos.x + 'px'; calc.style.top = pos.y + 'px'; calc.style.right = 'auto'; calc.style.bottom = 'auto'; }
+  }catch(_){}
+  const calcHead = $('#calcHead');
+  calcHead.addEventListener('pointerdown', e => {
+    if (e.target.closest('button')) return;
+    const r = calc.getBoundingClientRect();
+    const dx = e.clientX - r.left, dy = e.clientY - r.top;
+    calcHead.setPointerCapture(e.pointerId);
+    const move = ev => {
+      calc.style.left = Math.min(Math.max(0, ev.clientX - dx), innerWidth - r.width) + 'px';
+      calc.style.top = Math.min(Math.max(0, ev.clientY - dy), innerHeight - 50) + 'px';
+      calc.style.right = 'auto'; calc.style.bottom = 'auto';
+    };
+    const up = () => {
+      calcHead.removeEventListener('pointermove', move);
+      calcHead.removeEventListener('pointerup', up);
+      calcHead.removeEventListener('pointercancel', up);
+      localStorage.setItem('kiviruukki.calcPos', JSON.stringify({x: parseFloat(calc.style.left), y: parseFloat(calc.style.top)}));
+    };
+    calcHead.addEventListener('pointermove', move);
+    calcHead.addEventListener('pointerup', up);
+    calcHead.addEventListener('pointercancel', up);
+  });
+  window.addEventListener('resize', () => { if (calc.classList.contains('open') && calc.style.left) clampCalc(); });
+  renderHistory();
+  if (localStorage.getItem('kiviruukki.calcOpen') === '1'){ calc.classList.add('open'); calcBtn.classList.add('pink'); requestAnimationFrame(() => { if (calc.style.left) clampCalc(); }); }
+
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden || !running) return;
+    remainingMs=Math.max(0,endAt-performance.now());
+    if(remainingMs<=0) finishTimer(); else renderTimer();
+  });
+})();
+</script>
+</body>
+</html>
