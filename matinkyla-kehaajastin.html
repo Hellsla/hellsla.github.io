@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+<title>Kehäajastin | Matinkylän lukio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Overpass:wght@700;800&display=swap" rel="stylesheet">
+<!--
+  Kevyt kehäajastin iframe-upotukseen, Matinkylän lukion ilmeellä.
+  Oletusaika 60 s; toisen ajan saa URL-parametrilla, esim. ?min=5
+  (myös desimaalit käyvät: ?min=0.5 = 30 s). Välilyönti käynnistää / pysäyttää.
+-->
+<style>
+  :root{
+    /* Matinkylän lukion brändivärit (RGB): turkoosi, vihreä, sininen, valkoinen, musta.
+       Vaaleat sävyt ovat samoja värejä valkoiseen laimennettuina. */
+    --teal:#22aea2;
+    --green:#bce18b;
+    --blue:#249fff;
+    --white:#ffffff;
+    --ink:#231f20;
+    --track:var(--green);   /* jäljellä oleva aika */
+    --tint:#eaf7f5;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; height:100%; }
+
+  body{
+    background:var(--white);
+    color:var(--ink);
+    font-family:"Overpass", Arial, Helvetica, sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:6px;
+    overflow:hidden;
+  }
+
+  .card{
+    width:100%;
+    max-width:520px;
+    padding:clamp(6px, 2vmin, 16px);
+    text-align:center;
+  }
+
+  /* ---------- Kehä: säteittäiset viivat ajan ympärillä ---------- */
+  .scene{
+    position:relative;
+    width:min(100%, calc(100vh - 100px));
+    aspect-ratio:1 / 1;
+    margin:0 auto 12px;
+    container-type:inline-size;
+  }
+
+  .ring{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:visible;
+  }
+
+  .ring line{
+    stroke:var(--track);
+    stroke-width:1.9;
+    stroke-linecap:round;
+    transform-origin:100px 100px;
+    transition:stroke .3s ease;
+  }
+
+  /* kulunut aika täyttyy myötäpäivään klo 12:sta; sininen viiva on "nyt" */
+  .ring line.on{ stroke:var(--teal); }
+  .ring line.head{ stroke:var(--blue); }
+
+  .card.done .ring line{
+    animation:ripple 1s ease-out calc(var(--i) * 7ms) 2;
+  }
+
+  @keyframes ripple{
+    0%,100%{ transform:scale(1); }
+    30%{ transform:scale(1.07); stroke:var(--blue); }
+    60%{ stroke:var(--green); }
+  }
+
+  .time{
+    position:absolute;
+    left:0;
+    right:0;
+    top:45%;
+    transform:translateY(-50%);
+    font-family:"Josefin Sans", "Century Gothic", Futura, Arial, sans-serif;
+    font-weight:700;
+    font-size:18cqw;
+    line-height:1;
+    white-space:nowrap;
+    color:var(--ink);
+  }
+
+  /* Josefinissa ei ole tasalevyisiä numeroita: jokainen numero saa oman
+     yhtä leveän lokeron, ettei aika hypi sekuntien vaihtuessa. */
+  .time .d{
+    display:inline-block;
+    width:.58em;
+    text-align:center;
+  }
+
+  .card.done .time{ color:var(--teal); }
+
+  /* ---------- Aallot: liikkuvat, kun aika kuluu ---------- */
+  .waves{
+    position:absolute;
+    left:50%;
+    top:63%;
+    width:34cqw;
+    height:auto;
+    transform:translateX(-50%);
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+    mask-image:linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+  }
+
+  .waves path{
+    fill:none;
+    stroke-width:1.7;
+    stroke-linecap:round;
+  }
+
+  .waves .w1{ stroke:var(--teal); }
+  .waves .w2{ stroke:var(--blue); }
+
+  .flow{
+    animation:flow 2.8s linear infinite;
+    animation-play-state:paused;
+  }
+
+  .flow.w2{ animation-duration:4.2s; }
+
+  .card.running .flow{ animation-play-state:running; }
+
+  @keyframes flow{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-20px); }
+  }
+
+  /* ---------- Painikkeet ---------- */
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+    justify-content:center;
+  }
+
+  button{
+    font-family:"Overpass", Arial, Helvetica, sans-serif;
+    font-size:.95rem;
+    font-weight:800;
+    line-height:1.1;
+    border:2px solid var(--teal);
+    background:var(--white);
+    color:var(--ink);
+    border-radius:999px;
+    padding:9px 10px;
+    min-width:40px;
+    min-height:44px;
+    cursor:pointer;
+    font-variant-numeric:tabular-nums;
+    transition:transform .1s ease, background-color .15s ease, border-color .15s ease;
+  }
+
+  button:hover{ background:var(--tint); }
+  button:active{ transform:scale(.97); }
+
+  button:focus-visible{
+    outline:3px solid var(--blue);
+    outline-offset:3px;
+  }
+
+  #startBtn{
+    background:var(--teal);
+    min-width:6.6em;
+  }
+
+  #startBtn:hover{
+    background:var(--green);
+    border-color:var(--green);
+  }
+
+  #soundBtn{ padding:9px; }
+
+  .visually-hidden{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    white-space:nowrap;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    button,.ring line{ transition:none; }
+    .card.done .ring line,
+    .flow{ animation:none; }
+  }
+</style>
+</head>
+<body>
+<main class="card" id="card">
+  <div class="scene" id="scene" role="progressbar" aria-label="Aikaa kulunut" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+      <g id="ticks"></g>
+    </svg>
+    <div class="time" id="time" role="timer" aria-label="Jäljellä oleva aika">0:00</div>
+    <svg class="waves" viewBox="0 0 60 16" aria-hidden="true">
+      <path class="flow w1" d="M0 5q5-4 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+      <path class="flow w2" d="M0 12q5-4 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    </svg>
+  </div>
+  <p class="visually-hidden" id="msg" aria-live="polite"></p>
+  <div class="controls">
+    <button type="button" id="minusBtn" aria-label="Vähennä minuutti">−1</button>
+    <button type="button" id="startBtn">▶ Aloita</button>
+    <button type="button" id="resetBtn" aria-label="Nollaa">↺</button>
+    <button type="button" id="plusBtn" aria-label="Lisää minuutti">+1</button>
+    <button type="button" id="soundBtn" aria-pressed="true" aria-label="Äänet päällä">🔊</button>
+  </div>
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  var DEFAULT_MIN = 1;
+  var param = parseFloat(new URLSearchParams(location.search).get("min"));
+  var startMs = Math.round((param > 0 && param <= 180 ? param : DEFAULT_MIN) * 60000);
+
+  var card = document.getElementById("card");
+  var timeEl = document.getElementById("time");
+  var progressEl = document.getElementById("scene");
+  var msgEl = document.getElementById("msg");
+  var startBtn = document.getElementById("startBtn");
+  var soundBtn = document.getElementById("soundBtn");
+
+  var totalMs = startMs;   // session length, adjustable with ±1
+  var remainingMs = startMs;
+  var endAt = 0;           // wall-clock end while running
+  var tick = null;
+  var soundOn = true;
+  var audio = null;
+  var raf = null;
+
+  // --- the ring: N radial lines between an inner circle and a gently
+  // wavy outer edge. Line i stands for the i-th N:th of the session. ---
+  var N = 120, C = 100, R_IN = 71;
+  var ticks = [];
+  (function buildRing(){
+    var g = document.getElementById("ticks");
+    for (var i = 0; i < N; i++){
+      var a = i / N * Math.PI * 2;   // 0 = 12 o'clock, clockwise
+      var rOut = 86 + 5 * Math.sin(3 * a + 0.6) + 3 * Math.sin(5 * a + 2.1) + 1.6 * Math.sin(9 * a + 0.3);
+      var sx = Math.sin(a), sy = -Math.cos(a);
+      var ln = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      ln.setAttribute("x1", (C + R_IN * sx).toFixed(2));
+      ln.setAttribute("y1", (C + R_IN * sy).toFixed(2));
+      ln.setAttribute("x2", (C + rOut * sx).toFixed(2));
+      ln.setAttribute("y2", (C + rOut * sy).toFixed(2));
+      ln.style.setProperty("--i", i);
+      g.appendChild(ln);
+      ticks.push(ln);
+    }
+  })();
+
+  function fmt(ms){
+    var s = Math.ceil(ms / 1000);
+    var m = Math.floor(s / 60);
+    s = s % 60;
+    return m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  // Kehä täyttyy myötäpäivään klo 12:sta kuin kellon viisari: turkoosit viivat
+  // ovat kulunutta aikaa, vaaleat jäljellä olevaa aikaa.
+  var litCount = -1, headIndex = -1;
+  function drawRing(ms){
+    var pct = totalMs > 0 ? Math.min(100, Math.max(0, (1 - ms / totalMs) * 100)) : 100;
+    var lit = Math.min(N, Math.floor(pct / 100 * N + 1e-9));
+    if (lit !== litCount){
+      for (var i = 0; i < N; i++) ticks[i].classList.toggle("on", i < lit);
+      litCount = lit;
+    }
+    var head = running() && lit < N ? lit : -1;
+    if (head !== headIndex){
+      if (headIndex >= 0) ticks[headIndex].classList.remove("head");
+      if (head >= 0) ticks[head].classList.add("head");
+      headIndex = head;
+    }
+    return pct;
+  }
+
+  function animateRing(){
+    if (!running()){ raf = null; return; }
+    drawRing(Math.max(0, endAt - Date.now()));
+    raf = requestAnimationFrame(animateRing);
+  }
+
+  var shownTime = "";
+  function render(){
+    var t = fmt(remainingMs);
+    if (t !== shownTime){
+      timeEl.innerHTML = t.replace(/\d/g, '<span class="d">$&</span>');
+      shownTime = t;
+    }
+    var pct = drawRing(remainingMs);
+    progressEl.setAttribute("aria-valuenow", Math.round(pct));
+    document.title = (tick ? t + " – " : "") + "Kehäajastin | Matinkylän lukio";
+  }
+
+  function running(){ return tick !== null; }
+
+  function update(){
+    remainingMs = Math.max(0, endAt - Date.now());
+    render();
+    if (remainingMs <= 0) finish();
+  }
+
+  function start(){
+    if (running()) return;
+    if (remainingMs <= 0) reset();
+    unlockAudio();
+    card.classList.remove("done");
+    msgEl.textContent = "";
+    endAt = Date.now() + remainingMs;
+    tick = setInterval(update, 250);
+    if (!raf) raf = requestAnimationFrame(animateRing);
+    card.classList.add("running");
+    startBtn.textContent = "⏸ Tauko";
+    render();
+  }
+
+  function pause(){
+    if (!running()) return;
+    update();
+    clearInterval(tick); tick = null;
+    card.classList.remove("running");
+    if (remainingMs > 0) startBtn.textContent = "▶ Jatka";
+    render();
+  }
+
+  function reset(){
+    clearInterval(tick); tick = null;
+    totalMs = startMs;
+    remainingMs = startMs;
+    card.classList.remove("done", "running");
+    msgEl.textContent = "";
+    startBtn.textContent = "▶ Aloita";
+    render();
+  }
+
+  function finish(){
+    clearInterval(tick); tick = null;
+    remainingMs = 0;
+    card.classList.remove("running");
+    card.classList.add("done");
+    msgEl.textContent = "Aika loppui.";
+    startBtn.textContent = "▶ Uudelleen";
+    render();
+    chime();
+  }
+
+  function adjust(deltaMs){
+    if (running()) update();
+    var next = remainingMs + deltaMs;
+    if (next < 1000 && deltaMs < 0) return;   // don't let −1 end the session
+    remainingMs = Math.min(next, 180 * 60000);
+    totalMs = Math.max(remainingMs, totalMs + deltaMs);
+    if (running()) endAt = Date.now() + remainingMs;
+    if (remainingMs > 0 && card.classList.contains("done")){
+      card.classList.remove("done");
+      msgEl.textContent = "";
+      startBtn.textContent = "▶ Aloita";
+    }
+    render();
+  }
+
+  // --- sound: short three-note chime via Web Audio ---
+  function unlockAudio(){
+    if (!soundOn) return;
+    try{
+      if (!audio){
+        var Ctx = window.AudioContext || window.webkitAudioContext;
+        if (Ctx) audio = new Ctx();
+      }
+      if (audio && audio.state === "suspended") audio.resume();
+    }catch(e){}
+  }
+
+  function chime(){
+    if (!soundOn || !audio) return;
+    try{
+      var t = audio.currentTime + 0.05;
+      [659.25, 783.99, 1046.5].forEach(function(f, i){
+        var o = audio.createOscillator();
+        var g = audio.createGain();
+        o.type = "sine";
+        o.frequency.value = f;
+        var s = t + i * 0.22;
+        g.gain.setValueAtTime(0.0001, s);
+        g.gain.exponentialRampToValueAtTime(0.25, s + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, s + 0.9);
+        o.connect(g).connect(audio.destination);
+        o.start(s); o.stop(s + 1);
+      });
+    }catch(e){}
+  }
+
+  startBtn.addEventListener("click", function(){ running() ? pause() : start(); });
+  document.getElementById("resetBtn").addEventListener("click", reset);
+  document.getElementById("minusBtn").addEventListener("click", function(){ adjust(-60000); });
+  document.getElementById("plusBtn").addEventListener("click", function(){ adjust(60000); });
+  soundBtn.addEventListener("click", function(){
+    soundOn = !soundOn;
+    soundBtn.textContent = soundOn ? "🔊" : "🔇";
+    soundBtn.setAttribute("aria-pressed", String(soundOn));
+    soundBtn.setAttribute("aria-label", soundOn ? "Äänet päällä" : "Äänet pois");
+    if (soundOn) unlockAudio();
+  });
+
+  document.addEventListener("keydown", function(e){
+    if (e.code === "Space" && !(e.target instanceof HTMLButtonElement)){
+      e.preventDefault();
+      running() ? pause() : start();
+    }
+  });
+
+  // background tabs throttle intervals; resync when the page becomes visible
+  document.addEventListener("visibilitychange", function(){ if (running()) update(); });
+
+  reset();
+})();
+</script>
+</body>
+</html>
