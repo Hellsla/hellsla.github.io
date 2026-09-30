@@ -21,9 +21,10 @@
     /* Kohtaus on suunniteltu 230 × 208 px:n kokoiseksi, kuten ajastimessa.
        --s skaalaa sen upotuksen kokoon. */
     --s:min(calc((100vw - 4px) / 230), calc((100vh - 4px) / 208));
-    /* Sama rytmi kuin ajastimessa: isku, säteet 0,81 s, hidas himmeneminen,
-       uusi isku 2,08 s:n välein. */
-    --cycle:2.08s;
+    /* Ajastimen rytmi 1,5-kertaisena (50 % hitaampi) esitystä varten:
+       isku, säteet 1,2 s, hidas himmeneminen, uusi isku 3,12 s:n välein.
+       Ajastimen alkuperäinen tahti on 2.08s. */
+    --cycle:3.12s;
     --first-hit:.5s;
   }
 
@@ -62,8 +63,8 @@
     animation:rays var(--cycle) var(--first-hit) infinite both;
   }
 
-  /* 0 %: isku ja nopea välähdys (0,12 s), 38,9 %: säteet alkavat himmetä
-     hitaasti (1,2 s), 96,6 %: säteet poissa ennen seuraavaa iskua. */
+  /* 0 %: isku ja nopea välähdys (0,18 s), 38,9 %: säteet alkavat himmetä
+     hitaasti (1,8 s), 96,6 %: säteet poissa ennen seuraavaa iskua. */
   @keyframes rays{
     0%{ opacity:0; animation-timing-function:linear; }
     5.769%{ opacity:1; }
@@ -82,7 +83,7 @@
     animation:spark var(--cycle) var(--first-hit) infinite both;
   }
 
-  /* Kipinä lentää 0,48 s ja on sitten piilossa seuraavaan iskuun asti. */
+  /* Kipinä lentää 0,72 s ja on sitten piilossa seuraavaan iskuun asti. */
   @keyframes spark{
     0%{
       opacity:0;
