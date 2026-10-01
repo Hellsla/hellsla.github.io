@@ -27,7 +27,8 @@
     ?s=4                  sanan vaihtoväli sekunteina (oletus 2.8)
     ?kipinat              lisää iskuun valkoiset kipinät
     ?kerran (tai ?once)   sanat käydään läpi yhden kerran, ja animaatio pysähtyy
-                          takaisin ensimmäiseen sanaan (oletuksena tulevaisuuksia.)
+                          takaisin ensimmäiseen sanaan (oletuksena tulevaisuuksia.);
+                          viimeisen iskun jälkeen Ahjo häipyy säteiden mukana
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -362,10 +363,11 @@
   // välähtävät ja vanha sana lähtee, uusi sana syntyy. ?kipinat lisää kipinät.
   var forge = document.getElementById("forge");
   var rays = document.getElementById("rays");
+  var anvil = forge.querySelector(".anvil");
   var sparks = forge.querySelectorAll(".spark");
   var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var IMPACT = 90;                                    // ms iskun alusta osumaan
-  var rayAnim = null, first = true, i = 0;
+  var rayAnim = null, first = true, finale = false, i = 0;
 
   function changeWord(){
     if (first){                                       // ensimmäinen sana: vain esiin
@@ -395,6 +397,14 @@
         { opacity: 0, offset: 0.9 },
         { opacity: 0 }
       ], { duration: seconds * 1000, fill: "both" });
+      if (finale){                                    // ?kerran: viimeisen iskun jälkeen alasin häipyy säteiden mukana
+        anvil.animate([
+          { opacity: 1 },
+          { opacity: 1, offset: 0.3, easing: "ease-out" },
+          { opacity: 0, offset: 0.9 },
+          { opacity: 0 }
+        ], { duration: seconds * 1000, fill: "forwards" });
+      }
       if (lively && !calm){
         var reach = sceneW * 0.2;
         for (var k = 0; k < sparks.length; k++){
@@ -434,8 +444,8 @@
     if (words.length < 2) return;
     var left = once ? words.length : Infinity;       // ?kerran: yksi kierros takaisin ensimmäiseen sanaan
     var timer = setInterval(function(){
+      if (--left <= 0){ clearInterval(timer); finale = true; }
       strike();
-      if (--left <= 0) clearInterval(timer);
     }, seconds * 1000);
   }, 700);
 })();
