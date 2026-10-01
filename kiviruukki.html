@@ -1,0 +1,3285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lauri Hellsten — STEAM &amp; Ahjo Makerspace · Kiviruukin lukio</title>
+  <meta name="description" content="Lauri Hellsten — STEAM teacher and Ahjo Makerspace teacher at Kiviruukin lukio, Espoo. Physics and mathematics, makerspace learning, simulations, course structures and international talks." />
+  <meta name="theme-color" content="#012169" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://hellsla.github.io/kiviruukki.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://hellsla.github.io/kiviruukki.html" />
+  <meta property="og:title" content="Lauri Hellsten — STEAM &amp; Ahjo Makerspace · Kiviruukin lukio" />
+  <meta property="og:description" content="STEAM teacher and Ahjo Makerspace teacher at Kiviruukin lukio, Espoo. Physics and mathematics, makerspace learning, simulations, course structures and international talks." />
+  <meta property="og:image" content="https://hellsla.github.io/lauri-avatar.png" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lauri Hellsten — STEAM &amp; Ahjo Makerspace · Kiviruukin lukio" />
+  <meta name="twitter:description" content="STEAM teacher and Ahjo Makerspace teacher at Kiviruukin lukio, Espoo. Physics and mathematics, makerspace learning, simulations, course structures and international talks." />
+  <meta name="twitter:image" content="https://hellsla.github.io/lauri-avatar.png" />
+
+  <!-- DNS prefetch for linked services -->
+  <link rel="dns-prefetch" href="https://slides.com" />
+  <link rel="dns-prefetch" href="https://quizlet.com" />
+
+  <!-- Kiviruukin lukio brand fonts: Lato for headings, Work Sans for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* Kiviruukin lukio brand colours (graphic guide v1 2026):
+       Yönsininen #012169 and Marjapuuro #FCA5C7, with plenty of white. */
+    :root {
+      --navy: #012169;
+      --navy-deep: #00174f;
+      --pink: #fca5c7;
+      --pink-tint: #fff0f6;
+      --pink-line: #f8d3e2;
+
+      --bg: #ffffff;
+      --bg-tint: #f3f5f9;
+      --surface: #ffffff;
+      --ink: #0b1638;
+      --ink-2: #3c4563;
+      --ink-3: #626b88;
+      --line: #dfe5eb;
+      --line-2: #ecf0f4;
+
+      --head: 'Lato', Arial, sans-serif;
+      --body: 'Work Sans', Arial, sans-serif;
+
+      --max: 1100px;
+    }
+
+    html, body { margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--body);
+      color: var(--ink);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid var(--navy);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .hero a:focus-visible,
+    footer a:focus-visible { outline-color: var(--pink); }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -44px;
+      background: var(--navy);
+      color: var(--surface);
+      padding: 8px 12px;
+      border-radius: 8px;
+      z-index: 20;
+      font-size: 0.85rem;
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 16px 0 28px;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--pink);
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .brand-name {
+      font-family: var(--head);
+      font-size: 1.04rem;
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: -0.005em;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+
+    nav a {
+      padding: 7px 11px;
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--ink-2);
+      border-radius: 999px;
+      transition: color 180ms ease, background 180ms ease;
+    }
+
+    nav a:hover {
+      color: var(--navy);
+      background: var(--pink-tint);
+    }
+
+    .cv-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: var(--surface);
+      font-family: var(--head);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+
+    .cv-link:hover {
+      background: var(--pink);
+      color: var(--navy);
+      transform: translateY(-1px);
+    }
+
+    .flag-link {
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      font-size: 0.92rem;
+      transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+    }
+
+    .flag-link:hover {
+      border-color: var(--navy);
+      background: var(--pink-tint);
+      transform: translateY(-1px);
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      min-height: 500px;
+      padding: 34px 40px 40px;
+      border-radius: 28px;
+      background: var(--navy);
+      color: var(--surface);
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    .hero-shape {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      fill: var(--pink);
+    }
+
+    .hero-shape-small { display: none; }
+
+    .hero-avatar {
+      position: absolute;
+      right: 3%;
+      bottom: 0;
+      height: 90%;
+      max-height: min(450px, 42vw);
+      width: auto;
+      z-index: -1;
+      filter: drop-shadow(0 18px 30px rgba(0, 18, 60, 0.28));
+    }
+
+    .hero-copy {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: min(560px, 52%);
+    }
+
+    .hero-lockup {
+      display: block;
+      width: 128px;
+      height: auto;
+      margin-bottom: 52px;
+      fill: var(--surface);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.74rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--pink);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: clamp(2.6rem, 6.2vw, 4.6rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .forge-line {
+      display: block;
+      height: 1.08em;
+      overflow: hidden;
+      color: var(--pink);
+    }
+
+    .forge-word {
+      display: inline-block;
+      transition: transform 420ms cubic-bezier(0.2, 0.7, 0.2, 1), opacity 420ms ease;
+    }
+
+    .forge-word.is-out {
+      transform: translateY(-0.55em);
+      opacity: 0;
+    }
+
+    .forge-word.is-in {
+      transform: translateY(0.55em);
+      opacity: 0;
+      transition: none;
+    }
+
+    .hero-intro {
+      margin: 22px 0 0;
+      max-width: 46ch;
+      font-size: 1.04rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .hero-intro strong {
+      color: var(--surface);
+      font-weight: 600;
+    }
+
+    .hero-roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero-roles li {
+      padding: 5px 11px;
+      border: 1px solid rgba(252, 165, 199, 0.55);
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 500;
+      color: var(--surface);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 0.88rem;
+      letter-spacing: 0.01em;
+      transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+    }
+
+    .btn svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .btn-pink {
+      background: var(--pink);
+      color: var(--navy);
+    }
+
+    .btn-pink:hover {
+      background: var(--surface);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--surface);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--surface);
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-1px);
+    }
+
+    /* ---------- Credentials ---------- */
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px 22px;
+      padding: 28px 4px 26px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 40ms both;
+    }
+
+    .credential {
+      display: grid;
+      gap: 4px;
+      align-content: start;
+      padding-left: 14px;
+      border-left: 3px solid var(--pink);
+    }
+
+    .credential-value {
+      font-family: var(--head);
+      font-size: 1.6rem;
+      font-weight: 900;
+      line-height: 1.05;
+      color: var(--navy);
+    }
+
+    .credential-label {
+      font-size: 0.8rem;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .credentials-note {
+      grid-column: 1 / -1;
+      margin: 4px 0 0;
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: var(--ink-2);
+    }
+
+    /* ---------- Section labels ---------- */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.74rem;
+      color: var(--navy);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .section-label::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: var(--pink);
+    }
+
+    section + section:not(.credentials) { border-top: 1px solid var(--line); }
+
+    /* ---------- Profile ---------- */
+    .profile {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.6fr);
+      gap: 36px;
+      align-items: start;
+      padding: 30px 0;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 80ms both;
+    }
+
+    .profile-aside {
+      display: grid;
+      gap: 18px;
+      align-content: start;
+    }
+
+    .profile-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .profile h2 {
+      margin: 0;
+      font-family: var(--head);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.05;
+      color: var(--navy);
+    }
+
+    .profile-quote {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 22px 22px 24px;
+      border-radius: 20px;
+      background: var(--pink);
+      color: var(--navy);
+      font-family: var(--head);
+      font-style: italic;
+      font-weight: 900;
+      font-size: 1.6rem;
+      line-height: 1.1;
+    }
+
+    .profile-quote small {
+      display: block;
+      margin-top: 8px;
+      font-family: var(--body);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    .bio-copy {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .bio-copy p {
+      margin: 0;
+      color: var(--ink-2);
+      max-width: 68ch;
+      line-height: 1.65;
+      font-size: 0.96rem;
+    }
+
+    .bio-copy a {
+      color: var(--navy);
+      font-weight: 600;
+      border-bottom: 1px solid rgba(1, 33, 105, 0.35);
+      transition: border-color 180ms ease;
+    }
+
+    .bio-copy a:hover { border-color: var(--pink); }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .facts li {
+      font-size: 0.74rem;
+      color: var(--ink-2);
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+    }
+
+    .facts li.is-new {
+      border-color: var(--pink);
+      background: var(--pink-tint);
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .email {
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--ink);
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--ink-3);
+    }
+
+    .icons {
+      display: flex;
+      gap: 7px;
+    }
+
+    .icon-link {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--navy);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .icon-link:hover {
+      background: var(--pink-tint);
+      border-color: var(--pink);
+      transform: translateY(-1px);
+    }
+
+    .icon-link svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    /* ---------- Ahjo Makerspace ---------- */
+    .ahjo {
+      padding: 30px 0 8px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 100ms both;
+    }
+
+    .ahjo-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .ahjo-kicker {
+      display: block;
+      margin-bottom: 8px;
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .ahjo h2 {
+      margin: 0 0 14px;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: clamp(1.8rem, 3.6vw, 2.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    .ahjo-text p {
+      margin: 0 0 12px;
+      max-width: 60ch;
+      color: var(--ink-2);
+      font-size: 0.97rem;
+      line-height: 1.65;
+    }
+
+    .ahjo-verbs {
+      margin: 18px 0 0;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+      line-height: 1.25;
+      color: var(--navy);
+    }
+
+    .ahjo-verbs span { white-space: nowrap; }
+
+    .ahjo-verbs b {
+      color: var(--pink);
+      font-weight: 900;
+    }
+
+    .forge-panel {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      gap: 6px;
+      margin: 0;
+      padding: 26px 22px 24px;
+      text-align: center;
+      border-radius: 24px;
+      background: var(--bg-tint);
+    }
+
+    .forge-panel iframe {
+      display: block;
+      width: min(100%, 300px);
+      aspect-ratio: 230 / 208;
+      height: auto;
+      border: 0;
+      background: transparent;
+    }
+
+    .forge-name {
+      margin-top: 6px;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 2.4rem;
+      line-height: 1;
+      color: var(--navy);
+    }
+
+    .forge-sub {
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+
+    .forge-note {
+      margin: 6px 0 0;
+      max-width: 34ch;
+      text-align: center;
+      font-size: 0.76rem;
+      line-height: 1.45;
+      color: var(--ink-3);
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tool {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4px 14px;
+      align-items: start;
+      align-content: start;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .tool:hover {
+      border-color: var(--pink);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px -22px rgba(1, 33, 105, 0.35);
+    }
+
+    .tool-icon {
+      grid-row: span 2;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--pink-tint);
+      color: var(--navy);
+    }
+
+    .tool-icon svg {
+      width: 21px;
+      height: 21px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .tool-title {
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    .tool-sub {
+      font-size: 0.8rem;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .ahjo-practice {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .approach {
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--surface);
+    }
+
+    .block-title {
+      margin: 0 0 16px;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1.3rem;
+      line-height: 1.15;
+      color: var(--navy);
+    }
+
+    .principles {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .principle {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 2px 14px;
+    }
+
+    .principle-num {
+      grid-row: span 2;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--navy);
+      color: var(--pink);
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 0.86rem;
+    }
+
+    .principle h4 {
+      margin: 0;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--navy);
+      line-height: 1.25;
+      padding-top: 2px;
+    }
+
+    .principle p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .pathway {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      padding: 22px 24px 24px;
+      border-radius: 22px;
+      background: var(--navy);
+      color: var(--surface);
+    }
+
+    .pathway-shape {
+      position: absolute;
+      right: -92px;
+      bottom: -112px;
+      width: 230px;
+      height: auto;
+      z-index: -1;
+      fill: var(--pink);
+      transform: rotate(-14deg);
+    }
+
+    .pathway .block-title { color: var(--surface); }
+
+    .pathway .block-title small {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--pink);
+    }
+
+    .steps {
+      display: grid;
+      gap: 12px;
+      margin: 0 0 18px;
+      padding: 0;
+      list-style: none;
+      max-width: 34ch;
+    }
+
+    .step {
+      display: grid;
+      gap: 2px;
+      padding-left: 14px;
+      border-left: 2px solid var(--pink);
+    }
+
+    .step-year {
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.66rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--pink);
+    }
+
+    .step-title {
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1.05rem;
+    }
+
+    .step p {
+      margin: 0;
+      font-size: 0.84rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .pathway-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pathway-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--navy);
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 0.78rem;
+      transition: background 180ms ease, transform 180ms ease;
+    }
+
+    .pathway-links a:hover {
+      background: var(--pink);
+      transform: translateY(-1px);
+    }
+
+    .pathway-links svg {
+      width: 12px;
+      height: 12px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ---------- Featured work ---------- */
+    .featured {
+      padding: 30px 0 8px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms both;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .featured-card {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 20px;
+      transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+    }
+
+    .featured-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--pink);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .featured-card:hover {
+      border-color: #cbd3de;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px -20px rgba(1, 33, 105, 0.3);
+    }
+
+    .featured-card:hover::before { transform: scaleX(1); }
+
+    .featured-kicker {
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.66rem;
+      color: var(--ink-3);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .featured-card h3 {
+      margin: 0;
+      font-family: var(--head);
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--navy);
+    }
+
+    .featured-card p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 0.87rem;
+      line-height: 1.55;
+    }
+
+    .featured-cta {
+      margin-top: auto;
+      padding-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--navy);
+      font-family: var(--head);
+      font-size: 0.84rem;
+      font-weight: 900;
+    }
+
+    .featured-cta svg {
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: transform 220ms ease;
+    }
+
+    .featured-card:hover .featured-cta svg { transform: translateX(3px); }
+
+    /* ---------- Classroom case study ---------- */
+    .classroom {
+      padding: 30px 0 8px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 140ms both;
+    }
+
+    .case-study {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+      gap: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px 24px;
+    }
+
+    .case-study + .case-study { margin-top: 12px; }
+
+    .case-study-kicker {
+      display: block;
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.66rem;
+      color: var(--ink-3);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .case-study h3 {
+      margin: 0 0 12px;
+      font-family: var(--head);
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 1.12;
+      color: var(--navy);
+    }
+
+    .case-study-body {
+      display: grid;
+      gap: 12px;
+    }
+
+    .case-study-body p {
+      margin: 0;
+      color: var(--ink-2);
+      max-width: 68ch;
+      line-height: 1.65;
+      font-size: 0.95rem;
+    }
+
+    .case-study-body .case-study-reflection {
+      margin-top: 4px;
+      padding-left: 16px;
+      border-left: 3px solid var(--pink);
+      color: var(--navy);
+      font-family: var(--head);
+      font-style: italic;
+      font-weight: 700;
+      font-size: 1.04rem;
+      line-height: 1.5;
+    }
+
+    .case-study-aside {
+      display: grid;
+      gap: 16px;
+      align-self: start;
+      padding: 18px 18px;
+      border-radius: 16px;
+      background: var(--pink-tint);
+    }
+
+    .case-study-stat {
+      display: grid;
+      gap: 4px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--pink-line);
+    }
+
+    .case-study-stat-value {
+      font-family: var(--head);
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--navy);
+    }
+
+    .case-study-stat-value small {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink-2);
+    }
+
+    .case-study-stat-label {
+      font-size: 0.78rem;
+      color: var(--ink-2);
+      line-height: 1.4;
+    }
+
+    .case-study-list-title {
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.66rem;
+      color: var(--navy);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .case-study-list {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .case-study-list li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.84rem;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .case-study-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.45em;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--navy);
+    }
+
+    .agree-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .agree-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 5px 10px;
+      align-items: baseline;
+    }
+
+    .agree-label {
+      font-size: 0.8rem;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .agree-value {
+      font-family: var(--head);
+      font-size: 0.86rem;
+      font-weight: 900;
+      color: var(--navy);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .agree-track {
+      grid-column: 1 / -1;
+      display: block;
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(1, 33, 105, 0.1);
+      overflow: hidden;
+    }
+
+    .agree-fill {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: var(--navy);
+    }
+
+    .case-study-voices {
+      grid-column: 1 / -1;
+      padding-top: 18px;
+      border-top: 1px solid var(--line-2);
+    }
+
+    .voices-note {
+      text-transform: none;
+      letter-spacing: 0.02em;
+      font-weight: 400;
+      color: var(--ink-3);
+    }
+
+    .voices-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .voice {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+      padding: 15px 17px;
+      border-radius: 14px;
+      background: var(--bg-tint);
+    }
+
+    .voice blockquote {
+      margin: 0;
+      font-family: var(--head);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.98rem;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    .voice figcaption {
+      margin-top: auto;
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ---------- Materials ---------- */
+    .materials {
+      padding: 30px 0 8px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 160ms both;
+    }
+
+    .materials-note {
+      margin: 0 0 16px;
+      font-size: 0.9rem;
+      color: var(--ink-2);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: 12px;
+    }
+
+    /* Masonry: odd cards stack in the left column, even in the right.
+       The script below sets each card's row span from its height. */
+    .grid.is-masonry {
+      grid-auto-rows: 1px;
+      grid-auto-flow: row dense;
+      row-gap: 0;
+    }
+
+    .grid.is-masonry > .category:nth-child(odd) { grid-column: 1; }
+    .grid.is-masonry > .category:nth-child(even) { grid-column: 2; }
+
+    .category {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+      transition: border-color 220ms ease, box-shadow 220ms ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background: var(--pink);
+      transition: width 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .category:hover {
+      border-color: #cbd3de;
+      box-shadow: 0 16px 32px -22px rgba(1, 33, 105, 0.3);
+    }
+
+    .category:hover::before { width: 100%; }
+
+    .category-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line-2);
+    }
+
+    .category-head-left {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 0;
+    }
+
+    .category-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      background: var(--pink-tint);
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    .category-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .category h3 {
+      margin: 0;
+      font-family: var(--head);
+      font-size: 1.14rem;
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--navy);
+    }
+
+    .category-tag {
+      font-family: var(--head);
+      font-weight: 700;
+      font-size: 0.62rem;
+      color: var(--ink-3);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .category-num {
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--navy);
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .links,
+    .extra-links {
+      display: grid;
+    }
+
+    .more-links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2px;
+    }
+
+    .more-links summary {
+      order: 2;
+      width: fit-content;
+      margin-top: 8px;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--navy);
+      font-family: var(--head);
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      line-height: 1.15;
+      transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+    }
+
+    .more-links summary:hover {
+      border-color: var(--pink);
+      background: var(--pink-tint);
+      transform: translateY(-1px);
+    }
+
+    .more-links summary::marker,
+    .more-links summary::-webkit-details-marker {
+      display: none;
+      content: "";
+    }
+
+    .show-less-text { display: none; }
+    .more-links[open] .show-more-text { display: none; }
+    .more-links[open] .show-less-text { display: inline; }
+
+    .extra-links {
+      order: 1;
+      margin-top: 5px;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line-2);
+      transition: padding 220ms ease;
+      min-width: 0;
+    }
+
+    .item:last-child { border-bottom: none; }
+
+    .item:hover { padding-left: 4px; }
+
+    .item-title {
+      font-size: 0.9rem;
+      color: var(--ink);
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .item-sub {
+      font-size: 0.75rem;
+      color: var(--ink-3);
+      margin-top: 1px;
+      line-height: 1.3;
+    }
+
+    .item-arrow {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      color: var(--ink-3);
+      border-radius: 999px;
+      transition: color 220ms ease, background 220ms ease, transform 220ms ease;
+    }
+
+    .item:hover .item-arrow {
+      color: var(--surface);
+      background: var(--navy);
+      transform: translateX(2px);
+    }
+
+    .item-arrow svg {
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 18px 28px;
+      margin-top: 34px;
+      padding: 28px 32px;
+      border-radius: 24px;
+      background: var(--navy);
+      color: var(--surface);
+    }
+
+    .footer-shape {
+      position: absolute;
+      right: -40px;
+      top: -120px;
+      width: 300px;
+      height: auto;
+      z-index: -1;
+      fill: var(--pink);
+      transform: rotate(18deg);
+    }
+
+    .footer-lockup {
+      display: block;
+      width: 118px;
+      height: auto;
+      fill: var(--surface);
+    }
+
+    .footer-slogan {
+      margin: 16px 0 0;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1.3rem;
+      line-height: 1.15;
+    }
+
+    .footer-slogan span {
+      display: block;
+      margin-top: 4px;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 0.86rem;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .footer-meta {
+      display: grid;
+      gap: 3px;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.82);
+      text-align: right;
+      margin-right: 150px;
+    }
+
+    .footer-meta a {
+      color: var(--surface);
+      border-bottom: 1px solid rgba(252, 165, 199, 0.7);
+    }
+
+    .footer-meta a:hover { border-color: var(--surface); }
+
+    /* ---------- Animation ---------- */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1100px) {
+      .hero-copy { max-width: min(560px, 47%); }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        min-height: 0;
+        padding: 30px 32px 330px;
+      }
+
+      .hero-copy { max-width: 600px; }
+
+      .hero-shape { display: none; }
+
+      .hero-shape-small {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -80px;
+        width: 380px;
+        height: auto;
+        z-index: -1;
+        fill: var(--pink);
+        transform: translateX(-50%) rotate(-8deg);
+      }
+
+      .hero-avatar {
+        height: 320px;
+        max-height: none;
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      .ahjo-intro { grid-template-columns: 1fr; }
+      .forge-panel { grid-template-columns: auto 1fr; justify-items: start; align-items: center; gap: 4px 18px; }
+      .forge-panel iframe { grid-row: span 3; width: 160px; }
+      .forge-name { margin-top: 0; }
+      .forge-panel figcaption,
+      .forge-note { text-align: left; }
+      .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .ahjo-practice { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(var(--max), calc(100% - 24px));
+        padding: 12px 0 28px;
+      }
+
+      header {
+        margin-bottom: 14px;
+        flex-wrap: wrap;
+      }
+
+      .header-right { gap: 8px; }
+
+      nav a {
+        padding: 7px 8px;
+        font-size: 0.82rem;
+      }
+
+      .cv-link {
+        min-height: 32px;
+        padding: 6px 11px;
+        font-size: 0.76rem;
+      }
+
+      .hero {
+        padding: 24px 20px 300px;
+        border-radius: 22px;
+      }
+
+      .hero-shape-small {
+        bottom: -70px;
+        width: 340px;
+      }
+
+      .hero-avatar { height: 290px; }
+
+      .hero-lockup {
+        width: 104px;
+        margin-bottom: 34px;
+      }
+
+      .credentials {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 22px 2px 22px;
+      }
+
+      .credential-value { font-size: 1.3rem; }
+
+      .profile {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 26px 0;
+      }
+
+      .profile-quote { font-size: 1.35rem; }
+
+      .forge-panel { grid-template-columns: 1fr; justify-items: center; }
+      .forge-panel iframe { grid-row: auto; width: min(100%, 220px); }
+      .forge-panel figcaption,
+      .forge-note { text-align: center; }
+
+      .tools { gap: 10px; }
+
+      .tool {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 14px;
+      }
+
+      .tool-icon {
+        grid-row: auto;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 6px;
+      }
+
+      .approach,
+      .pathway { padding: 18px; }
+
+      .featured-grid { grid-template-columns: 1fr; }
+
+      .featured-card { padding: 16px 17px; }
+
+      .case-study {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 17px;
+      }
+
+      .case-study h3 { font-size: 1.28rem; }
+
+      .voices-grid { grid-template-columns: 1fr; }
+
+      .grid { grid-template-columns: 1fr; }
+
+      .category { padding: 15px 16px; }
+
+      footer {
+        padding: 24px 20px 26px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-meta {
+        text-align: left;
+        margin-right: 0;
+      }
+
+      .footer-shape {
+        width: 190px;
+        right: -70px;
+        top: -70px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* ---------- Robot walker ---------- */
+    .robot-walker {
+      position: fixed;
+      bottom: 24px;
+      left: 0;
+      width: 76px;
+      z-index: 5;
+      pointer-events: none;
+      opacity: 0.18;
+      overflow: visible;
+    }
+    .robot-walker * {
+      stroke: var(--navy);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .robot-walker .robot-fill { fill: var(--navy); stroke: none; }
+    .robot-bob { animation: robot-bob 0.6s ease-in-out infinite; }
+    .robot-arm-l { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-arm-l 0.6s ease-in-out infinite; }
+    .robot-arm-r { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-arm-r 0.6s ease-in-out infinite; }
+    .robot-leg-l { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-leg-l 0.6s ease-in-out infinite; }
+    .robot-leg-r { transform-box: fill-box; transform-origin: 50% 0%; animation: robot-leg-r 0.6s ease-in-out infinite; }
+    @keyframes robot-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+    @keyframes robot-leg-l { 0%, 100% { transform: rotate(20deg); } 50% { transform: rotate(-20deg); } }
+    @keyframes robot-leg-r { 0%, 100% { transform: rotate(-20deg); } 50% { transform: rotate(20deg); } }
+    @keyframes robot-arm-l { 0%, 100% { transform: rotate(-25deg); } 50% { transform: rotate(25deg); } }
+    @keyframes robot-arm-r { 0%, 100% { transform: rotate(25deg); } 50% { transform: rotate(-25deg); } }
+    @media (prefers-reduced-motion: reduce) { .robot-walker { display: none; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lauri Hellsten",
+    "jobTitle": ["STEAM Teacher", "Makerspace Teacher (Ahjo)", "Teacher Trainer", "Educational Content Author"],
+    "description": "STEAM teacher and Ahjo Makerspace teacher at Kiviruukin lukio in Espoo, Finland. Physics and mathematics teacher, teacher trainer and educational content author with 15 years of experience in upper-secondary education, assessment and digital pedagogy.",
+    "url": "https://hellsla.github.io/kiviruukki.html",
+    "image": "https://hellsla.github.io/lauri-avatar.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurihellsten/",
+      "https://www.facebook.com/lauri.hellsten/"
+    ],
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Kiviruukin lukio",
+      "alternateName": "Kiviruukki General Upper Secondary School",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Espoo",
+        "addressCountry": "FI"
+      }
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Helsinki"
+    },
+    "knowsAbout": ["STEAM education", "Makerspace learning", "Physics", "Mathematics", "Formative assessment", "Flipped learning", "Dynamic geometry", "GeoGebra", "ICT and AI in education"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to main content</a>
+
+  <div class="page">
+    <header>
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-name">Lauri Hellsten</span>
+      </a>
+
+      <div class="header-right">
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#ahjo">Ahjo</a>
+          <a href="#work">Work</a>
+          <a href="#materials">Materials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="cv-link" href="CV_Lauri_Hellsten_2026.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Lauri Hellsten CV as PDF">
+          CV
+        </a>
+      </div>
+    </header>
+
+    <main id="top" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <svg class="hero-shape" viewBox="-210.86 -52.08 841.89 595.28" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false"><path d="M544.41 806.54C544.41 806.54 621.31 910.36 722.64 833.93C823.98 757.48 840.05 608.29 829.67 506.94C822.82 439.96 856.61 427.41 938.44 380.39C1058.47 311.4 1077.25 62.27 846.38 31.13C615.49 0 451.79 110.41 453.94 233.15C456.07 355.91 462.51 356 389.19 327.21C315.89 298.41 162.03 330.03 151.74 489.72C141.46 649.39 164.14 690.48 96.5 777.64C0.66 901.16 0 1037 87.32 1096.19C189.23 1165.25 232.94 1054.55 286.27 1062.02C339.61 1069.5 385.86 1170.63 489.77 1087.3C615.42 986.55 544.41 806.54 544.41 806.54"/></svg>
+        <svg class="hero-shape-small" viewBox="0 0 74.2 78.81" aria-hidden="true" focusable="false"><path d="M0.56 37.23C0 52.1 5.73 64.63 17.58 70.45C34.59 78.81 53.79 70.39 60.88 71.61C67.98 72.82 70.8 77.71 70.92 69.53C71.03 61.34 74.2 43.12 70.8 29.39C68.46 19.96 63.04 12.13 56.72 8.52C51 5.25 48.19 6.92 45.75 6.3C41.63 5.25 38.36 0 28.36 1.95C16.83 4.2 1.39 15.23 0.56 37.23"/></svg>
+        <img class="hero-avatar" src="./lauri-avatar.png" alt="" width="1254" height="1254" decoding="async" />
+
+        <div class="hero-copy">
+          <svg class="hero-lockup" viewBox="0 0 216.29 105.05" role="img" aria-label="Kiviruukin lukio"><title>Kiviruukin lukio</title><path d="M32.98 29.75L47.32 24.73L46.51 22.52L32.18 27.54L48.15 14.14L46.64 12.34L30.67 25.74L39.6 10.97L37.57 9.79L28.63 24.57L32.22 4.21L29.91 3.8L26.32 24.16L22.23 0L19.91 0.41L24 24.57L15.98 10.68L13.95 11.86L21.96 25.74L7.29 13.43L5.78 15.23L20.45 27.54L8.08 23.04L7.28 25.25L19.65 29.75L0 29.75L0 32.11L19.66 32.11L19.66 29.75L20.46 27.55L21.97 25.75L24 24.57L26.32 24.16L28.63 24.57L30.66 25.75L32.18 27.55L32.98 29.75L32.98 32.11L52.84 32.11L52.84 29.75ZM32.98 29.75"/><path d="M7.57 60.76L3.98 64.27L3.98 71.11L0 71.11L0 48.86L3.98 48.86L3.98 58.65L4.8 58.65L14.48 48.86L19.79 48.86L11.04 57.37L11.04 58.65L19.2 71.11L14.36 71.11ZM7.57 60.76"/><path d="M33.96 67.44L38.88 67.44L38.88 71.11L22.79 71.11L22.79 67.44L27.71 67.44L28.88 66.27L28.88 53.7L27.71 52.52L22.79 52.52L22.79 48.86L38.88 48.86L38.88 52.52L33.96 52.52L32.79 53.7L32.79 66.27ZM33.96 67.44"/><path d="M50.41 71.11L41.75 48.86L46.24 48.86L52.45 65.99L53.62 65.99L59.82 48.86L64.23 48.86L55.53 71.11ZM50.41 71.11"/><path d="M78.3 67.44L83.21 67.44L83.21 71.11L67.13 71.11L67.13 67.44L72.05 67.44L73.22 66.27L73.22 53.7L72.05 52.52L67.13 52.52L67.13 48.86L83.21 48.86L83.21 52.52L78.3 52.52L77.12 53.7L77.12 66.27ZM78.3 67.44"/><path d="M91.7 71.11L87.72 71.11L87.72 48.86L97.01 48.86C102.71 48.86 106.02 51.28 106.02 55.73C106.02 59 104.27 61.15 101.07 62.05L101.07 62.95L107.04 71.11L102.28 71.11L96.07 62.56L91.7 62.56ZM92.87 52.52L91.7 53.7L91.7 58.89L96.93 58.89C100.33 58.89 101.93 57.72 101.93 55.73C101.93 53.7 100.33 52.52 96.93 52.52ZM92.87 52.52"/><path d="M123.57 62.68L123.57 48.86L127.55 48.86L127.55 63.22C127.55 68.22 123.49 71.65 118.49 71.65C113.5 71.65 109.44 68.22 109.44 63.22L109.44 48.86L113.42 48.86L113.42 62.71C113.42 65.8 115.61 67.95 118.49 67.95C121.38 67.95 123.57 65.8 123.57 62.68"/><path d="M146.18 62.68L146.18 48.86L150.16 48.86L150.16 63.22C150.16 68.22 146.11 71.65 141.11 71.65C136.11 71.65 132.05 68.22 132.05 63.22L132.05 48.86L136.04 48.86L136.04 62.71C136.04 65.8 138.22 67.95 141.11 67.95C144 67.95 146.18 65.8 146.18 62.68"/><path d="M162.45 60.76L158.86 64.27L158.86 71.11L154.88 71.11L154.88 48.86L158.86 48.86L158.86 58.65L159.68 58.65L169.36 48.86L174.66 48.86L165.92 57.37L165.92 58.65L174.08 71.11L169.24 71.11ZM162.45 60.76"/><path d="M188.83 67.44L193.75 67.44L193.75 71.11L177.67 71.11L177.67 67.44L182.59 67.44L183.76 66.27L183.76 53.7L182.59 52.52L177.67 52.52L177.67 48.86L193.75 48.86L193.75 52.52L188.83 52.52L187.66 53.7L187.66 66.27ZM188.83 67.44"/><path d="M211.72 71.11L202.82 55.02L201.64 55.02L201.64 71.11L197.94 71.11L197.94 48.86L203.32 48.86L211.41 63.73L212.57 63.73L212.57 48.86L216.29 48.86L216.29 71.11ZM211.72 71.11"/><path d="M5.11 100.83L16.43 100.83L16.43 104.5L0 104.5L0 82.25L3.94 82.25L3.94 99.66ZM5.11 100.83"/><path d="M33.59 96.07L33.59 82.25L37.57 82.25L37.57 96.61C37.57 101.61 33.51 105.05 28.51 105.05C23.52 105.05 19.46 101.61 19.46 96.61L19.46 82.25L23.44 82.25L23.44 96.11C23.44 99.19 25.62 101.34 28.51 101.34C31.4 101.34 33.59 99.19 33.59 96.07"/><path d="M49.85 94.16L46.26 97.67L46.26 104.5L42.28 104.5L42.28 82.25L46.26 82.25L46.26 92.05L47.08 92.05L56.76 82.25L62.07 82.25L53.32 90.76L53.32 92.05L61.48 104.5L56.64 104.5ZM49.85 94.16"/><path d="M76.23 100.83L81.15 100.83L81.15 104.5L65.07 104.5L65.07 100.83L69.99 100.83L71.16 99.66L71.16 87.09L69.99 85.92L65.07 85.92L65.07 82.25L81.15 82.25L81.15 85.92L76.23 85.92L75.07 87.09L75.07 99.66ZM76.23 100.83"/><path d="M93.86 105.05C87.53 105.05 83.51 99.89 83.51 93.37C83.51 86.86 87.53 81.7 93.86 81.7C100.18 81.7 104.2 86.86 104.2 93.37C104.2 99.89 100.18 105.05 93.86 105.05M93.86 85.45C89.68 85.45 87.69 89 87.69 93.37C87.69 97.75 89.68 101.3 93.86 101.3C98.04 101.3 100.02 97.75 100.02 93.37C100.02 89 98.04 85.45 93.86 85.45"/></svg>
+
+          <span class="eyebrow">STEAM · Ahjo Makerspace · Physics · Mathematics</span>
+
+          <h1 id="hero-title">
+            We forge
+            <span class="forge-line"><span class="sr-only">futures.</span><span class="forge-word" aria-hidden="true">futures.</span></span>
+          </h1>
+
+          <p class="hero-intro">
+            I’m <strong>Lauri Hellsten</strong>, STEAM teacher and Ahjo Makerspace teacher at Kiviruukin lukio — Espoo’s newest general upper secondary school, next to Kivenlahti metro station. I help students turn sparks of curiosity into ideas, prototypes and real understanding.
+          </p>
+
+          <ul class="hero-roles" aria-label="Roles">
+            <li>STEAM teacher</li>
+            <li>Ahjo Makerspace teacher</li>
+            <li>Teacher trainer</li>
+            <li>Educational content author</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-pink" href="#ahjo">Step into Ahjo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+            <a class="btn btn-ghost" href="#materials">Browse materials</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="credentials" aria-label="Professional summary">
+        <div class="credential">
+          <span class="credential-value">15+ years</span>
+          <span class="credential-label">Teaching physics and mathematics in upper secondary school</span>
+        </div>
+
+        <div class="credential">
+          <span class="credential-value">40+</span>
+          <span class="credential-label">Digital textbooks and learning materials for Studeo, e-Oppi and MFKA</span>
+        </div>
+
+        <div class="credential">
+          <span class="credential-value">400+</span>
+          <span class="credential-label">Physics and mathematics videos produced for Opetus.tv</span>
+        </div>
+
+        <div class="credential">
+          <span class="credential-value">Since 2013</span>
+          <span class="credential-label">In-service teacher trainer and international speaker</span>
+        </div>
+
+        <p class="credentials-note">Assistant member, Matriculation Examination Board · Part-time teacher, University of Helsinki · Physics Teacher of the Year 2025</p>
+      </section>
+
+      <section id="about" class="profile" aria-label="About">
+        <div class="profile-aside">
+          <span class="section-label">01 — About</span>
+
+          <div class="profile-title-row">
+            <h2>Lauri Hellsten</h2>
+            <a class="flag-link" href="https://en.wikipedia.org/wiki/Finland" target="_blank" rel="noopener noreferrer" aria-label="Finland on Wikipedia" title="Finland on Wikipedia">🇫🇮</a>
+          </div>
+
+          <blockquote class="profile-quote">“Still learning.”<small>Every spark can grow into a flame — with hard work, good feedback and a strong community.</small></blockquote>
+
+          <div id="contact" class="contact">
+            <span class="email" aria-label="Email address written to reduce automated scraping">lauri.k.hellsten [at] gmail.com</span>
+
+            <div class="icons" aria-label="Social links">
+              <a class="icon-link" href="https://www.linkedin.com/in/laurihellsten/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.38 8.02h4.24V23H.38V8.02zM8.1 8.02h4.06v2.05h.06c.56-1.06 1.94-2.18 4-2.18 4.28 0 5.07 2.82 5.07 6.48V23h-4.24v-7.64c0-1.82-.03-4.16-2.54-4.16-2.54 0-2.93 1.98-2.93 4.03V23H8.1V8.02z"/></svg>
+              </a>
+
+              <a class="icon-link" href="https://www.facebook.com/lauri.hellsten/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bio-copy" aria-label="Biography">
+            <p>
+              I am a STEAM teacher, teacher trainer and educational content author based in Espoo, Finland. At <a href="https://www.espoo.fi/en/kiviruukin-lukio" target="_blank" rel="noopener noreferrer">Kiviruukin lukio</a> I teach physics and mathematics and work in Ahjo, our makerspace, where science, technology, design and entrepreneurship meet hands-on making. I also teach dynamic geometry courses at the University of Helsinki and serve as an assistant member of the Matriculation Examination Board.
+            </p>
+
+            <p>
+              My work focuses on STEAM education, formative assessment, flipped learning and meaningful uses of technology and AI in teaching. I am especially interested in designing learning environments where students can experiment, receive feedback within their zone of proximal development, and gradually take more responsibility for their own learning.
+            </p>
+
+            <p>
+              Kiviruukin lukio is the new name and new home of Espoo Yhteislyseo, which moves into the Cleantech Garden building in Kivenlahti in August 2027. I also coordinate the school’s international work — Erasmus+, Nordplus and other projects — because together we are more than the sum of our parts.
+            </p>
+          </div>
+
+          <ul class="facts" aria-label="Focus areas">
+            <li class="is-new">STEAM</li>
+            <li class="is-new">Ahjo Makerspace</li>
+            <li>Physics &amp; mathematics</li>
+            <li>Textbook author</li>
+            <li>Teacher trainer</li>
+            <li>Formative assessment</li>
+            <li>Zone of proximal development</li>
+            <li>Flipped learning</li>
+            <li>ICT and AI in education</li>
+            <li>International projects</li>
+            <li>Educational Administration Qualification</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="ahjo" class="ahjo" aria-labelledby="ahjo-title">
+        <span class="section-label">02 — Ahjo Makerspace</span>
+
+        <div class="ahjo-intro">
+          <div class="ahjo-text">
+            <span class="ahjo-kicker">Kiviruukki’s makerspace</span>
+            <h2 id="ahjo-title">Space to turn ideas into reality.</h2>
+
+            <p>
+              An <em>ahjo</em> is the forge hearth at the heart of an ironworks. Kiviruukki takes its name from the old <em>ruukki</em>, where water power and fire turned iron into tools — and a tight-knit village grew around the work. Today we forge knowledge instead of iron.
+            </p>
+
+            <p>
+              Ahjo is our makerspace and a cross-disciplinary STEAM learning environment. It brings together science, mathematics, programming, design, entrepreneurship and hands-on making. My job is to help students plan, build, test and improve their own projects, and to connect what they make with the physics and mathematics behind it.
+            </p>
+
+            <p class="ahjo-verbs" aria-label="Design. Experiment. Build. Develop.">
+              <span>Design<b>.</b></span> <span>Experiment<b>.</b></span> <span>Build<b>.</b></span> <span>Develop<b>.</b></span>
+            </p>
+          </div>
+
+          <figure class="forge-panel">
+            <iframe src="ahjo-animaatio.html" title="Ahjo animation: a spark flies from the anvil" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+            <figcaption>
+              <div class="forge-name">Ahjo</div>
+              <div class="forge-sub">Kiviruukin Makerspace</div>
+              <p class="forge-note">Explore. Build. Develop.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ul class="tools" aria-label="What students can do in Ahjo">
+          <li class="tool">
+            <span class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 21V4h16v17"/><path d="M3 21h18"/><path d="M4 8h16"/><path d="M10 8v3l2 2 2-2V8"/><path d="M8 18h8"/></svg>
+            </span>
+            <span class="tool-title">3D printing</span>
+            <span class="tool-sub">From a sketch to a printed prototype</span>
+          </li>
+
+          <li class="tool">
+            <span class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="2.5"/><path d="M12 8V5"/><circle cx="12" cy="4" r="1"/><circle cx="9.5" cy="13" r="1.2"/><circle cx="14.5" cy="13" r="1.2"/><path d="M10 16.5h4"/><path d="M3 12v4M21 12v4"/></svg>
+            </span>
+            <span class="tool-title">Robotics</span>
+            <span class="tool-sub">Sensors, motors and code working together</span>
+          </li>
+
+          <li class="tool">
+            <span class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/><circle cx="12" cy="12" r="1.5"/></svg>
+            </span>
+            <span class="tool-title">Electronics</span>
+            <span class="tool-sub">Circuits, microcontrollers and measurement</span>
+          </li>
+
+          <li class="tool">
+            <span class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="5" rx="1"/><path d="M12 8v8"/><path d="M8.5 14.5L7 13.5M15.5 14.5l1.5-1"/><path d="M3 19h3M9 19h3M15 19h3M21 19h0"/></svg>
+            </span>
+            <span class="tool-title">Laser cutting</span>
+            <span class="tool-sub">Precise parts from wood and acrylic</span>
+          </li>
+
+          <li class="tool">
+            <span class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v8l-6 6H6a2 2 0 01-2-2z"/><path d="M14 20v-4a2 2 0 012-2h4"/><path d="M8 9h6M8 12.5h3"/></svg>
+            </span>
+            <span class="tool-title">Vinyl cutting</span>
+            <span class="tool-sub">Stickers, stencils and textile prints</span>
+          </li>
+
+          <li class="tool">
+            <span class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>
+            </span>
+            <span class="tool-title">Programming &amp; data</span>
+            <span class="tool-sub">Apps, measurements and automation</span>
+          </li>
+        </ul>
+
+        <div class="ahjo-practice">
+          <div class="approach">
+            <h3 class="block-title">How I teach in Ahjo</h3>
+            <ol class="principles">
+              <li class="principle">
+                <span class="principle-num" aria-hidden="true">01</span>
+                <h4>Start from a real challenge</h4>
+                <p>Projects begin with a question worth solving. Collaboration with partners such as VTT Bioruukki brings real-world projects and competitions within students’ reach.</p>
+              </li>
+              <li class="principle">
+                <span class="principle-num" aria-hidden="true">02</span>
+                <h4>Make, test, improve</h4>
+                <p>Students prototype early, measure what happens and iterate. Short check-ins and timely feedback keep the next step within their zone of proximal development.</p>
+              </li>
+              <li class="principle">
+                <span class="principle-num" aria-hidden="true">03</span>
+                <h4>Let every spark grow into a flame</h4>
+                <p>Clear structure, self-assessment and a supportive community let students take more ownership over time — from a first experiment to a diploma project.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="pathway">
+            <svg class="pathway-shape" viewBox="0 0 74.2 78.81" aria-hidden="true" focusable="false"><path d="M0.56 37.23C0 52.1 5.73 64.63 17.58 70.45C34.59 78.81 53.79 70.39 60.88 71.61C67.98 72.82 70.8 77.71 70.92 69.53C71.03 61.34 74.2 43.12 70.8 29.39C68.46 19.96 63.04 12.13 56.72 8.52C51 5.25 48.19 6.92 45.75 6.3C41.63 5.25 38.36 0 28.36 1.95C16.83 4.2 1.39 15.23 0.56 37.23"/></svg>
+            <h3 class="block-title"><small>Science &amp; Technology Diploma</small>From curiosity to capability</h3>
+            <ol class="steps">
+              <li class="step">
+                <span class="step-year">Year 1</span>
+                <span class="step-title">Explore</span>
+                <p>Students try studies that interest them and discover what the pathways offer.</p>
+              </li>
+              <li class="step">
+                <span class="step-year">Year 2</span>
+                <span class="step-title">Deepen</span>
+                <p>They build their own focus, collect evidence of their skills and begin a diploma project.</p>
+              </li>
+              <li class="step">
+                <span class="step-year">Year 3</span>
+                <span class="step-title">Showcase</span>
+                <p>They complete the project and present it at Kiviruukki Day.</p>
+              </li>
+            </ol>
+            <div class="pathway-links">
+              <a href="kiviruukki_diplomi_en.html">Diploma pathways <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="kiviruukki_diplomi.html" hreflang="fi">In Finnish <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="featured" aria-label="Selected work">
+        <span class="section-label">03 — Selected work</span>
+
+        <div class="featured-grid">
+          <a class="featured-card" href="FY03_mekaanisen_energian_sailyminen.html">
+            <span class="featured-kicker">Interactive physics</span>
+            <h3>Conservation of mechanical energy</h3>
+            <p>A simulation for watching kinetic and potential energy trade places — in free fall, on a pendulum and along a track — with friction the student can adjust.</p>
+            <span class="featured-cta">Open the simulation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="featured-card" href="https://slides.com/opetustv/flare1/fullscreen" target="_blank" rel="noopener noreferrer">
+            <span class="featured-kicker">AI and reflective learning</span>
+            <h3>FLARE</h3>
+            <p>Flipped Learning and AI for Reflective Education: an international teacher-development project I led for the ASEFClassNet EmpowerED network in 2025.</p>
+            <span class="featured-cta">View the presentation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="featured-card" href="FY03_K2026_Timetable.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="featured-kicker">Formative assessment</span>
+            <h3>Course learning structures</h3>
+            <p>Weekly plans that build learning objectives, self-assessment and feedback into the ordinary rhythm of a course rather than bolting them on at the end.</p>
+            <span class="featured-cta">Open an example (PDF) <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </section>
+
+      <section id="classroom" class="classroom" aria-labelledby="classroom-title">
+        <span class="section-label">04 — From the classroom</span>
+
+        <article class="case-study">
+          <div>
+            <span class="case-study-kicker">Case study · Introductory physics · Autumn 2026</span>
+            <h3 id="classroom-title">Flipped Learning and Self-Assessment</h3>
+
+            <div class="case-study-body">
+              <p>
+                In my introductory physics course, I used a flipped and flexible learning approach that combined independent work, weekly deadlines, collaborative learning, and regular feedback. Students could plan their work within each week, while I monitored their progress and provided short individual feedback to help them reflect on their learning.
+              </p>
+
+              <p>
+                Student feedback was very positive: 28 respondents gave the course an overall average of 4.33/5. In particular, students valued the learning materials, the supportive classroom atmosphere, flexible pacing, and assessment that was not centred solely on the final exam. Many students said that weekly progress checks helped them study more regularly and understand how their learning was developing.
+              </p>
+
+              <p>
+                Randomly changing table groups also supported participation and community building. Some students reported that working with different classmates helped them become more active, confident, and socially connected.
+              </p>
+
+              <p class="case-study-reflection">
+                The experience strengthened my view that learner autonomy works best when it is supported by clear structure, regular feedback, and opportunities for self-assessment and reflection.
+              </p>
+            </div>
+          </div>
+
+          <aside class="case-study-aside" aria-label="Course at a glance">
+            <div class="case-study-stat">
+              <span class="case-study-stat-value">4.33<small> / 5</small></span>
+              <span class="case-study-stat-label">Average across 12 feedback statements (scale 1–5) · 28 students</span>
+            </div>
+
+            <div>
+              <div class="case-study-list-title">Students who agreed</div>
+              <ul class="agree-list">
+                <li class="agree-row">
+                  <span class="agree-label">The teacher’s materials supported my learning</span>
+                  <span class="agree-value">96%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 96%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">It was nice to come to lessons</span>
+                  <span class="agree-value">96%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 96%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">I liked that assessment did not centre on the exam</span>
+                  <span class="agree-value">93%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 93%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">Working at my own pace within the week suits me</span>
+                  <span class="agree-value">86%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 86%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">Group work supported my learning</span>
+                  <span class="agree-value">82%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 82%"></span></span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="case-study-list-title">Course design</div>
+              <ul class="case-study-list">
+                <li>Independent work with weekly deadlines</li>
+                <li>Flexible pacing within each week</li>
+                <li>Weekly progress checks and short individual feedback</li>
+                <li>Self-assessment and reflection</li>
+                <li>Randomly changing table groups</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="case-study-voices">
+            <div class="case-study-list-title">In students’ words <span class="voices-note">· translated from Finnish</span></div>
+
+            <div class="voices-grid">
+              <figure class="voice">
+                <blockquote>“Following our tasks every week was a really good method: you kept up much better, and the course was broken down into separate topics. I wish the same method were used in other courses too.”</blockquote>
+                <figcaption>Weekly progress checks</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“This was really nice, because you could work whenever you had time but still keep the same pace as everyone else.”</blockquote>
+                <figcaption>Flexible pacing</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“I made new friends, and I managed to be more active. I wasn’t shy anymore.”</blockquote>
+                <figcaption>Table groups</figcaption>
+              </figure>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="case-study">
+          <div>
+            <span class="case-study-kicker">Case study · Force and motion (FY04) · Autumn 2026</span>
+            <h3>Knowledge Checks and Weekly Feedback</h3>
+
+            <div class="case-study-body">
+              <p>
+                In my force and motion course, I kept the same flipped and flexible structure of weekly deadlines, independent work, group tasks, and short individual feedback, and added regular knowledge checks. Their purpose was to help students see what they had already mastered and what they still needed to practise, while I followed their progress each week.
+              </p>
+
+              <p>
+                Student feedback was positive, though more mixed than in the introductory course: 26 respondents gave the course an overall average of 3.98/5. Students especially enjoyed coming to lessons and felt that the teaching and guidance met their needs. Most found the number and rhythm of the knowledge checks appropriate, and many wrote that the weekly follow-up helped them study regularly, revise, and see what they still needed to work on.
+              </p>
+
+              <p>
+                The feedback also pointed to clear areas for development. Some students found the tasks within a chapter too similar, which lowered their motivation, and some wished for more time to practise at the end of lessons. These are concrete things I will change in the next implementation.
+              </p>
+
+              <p class="case-study-reflection">
+                The course showed me that regular self-assessment helps students see their own progress, but it works best when the tasks around it are varied and there is time to act on what the checks reveal.
+              </p>
+            </div>
+          </div>
+
+          <aside class="case-study-aside" aria-label="Course at a glance">
+            <div class="case-study-stat">
+              <span class="case-study-stat-value">3.98<small> / 5</small></span>
+              <span class="case-study-stat-label">Average across 14 feedback statements (scale 1–5) · 26 students</span>
+            </div>
+
+            <div>
+              <div class="case-study-list-title">Students who agreed</div>
+              <ul class="agree-list">
+                <li class="agree-row">
+                  <span class="agree-label">It was nice to come to lessons</span>
+                  <span class="agree-value">88%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 88%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">I received teaching and guidance that met my needs</span>
+                  <span class="agree-value">85%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 85%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">The number and rhythm of knowledge checks were right</span>
+                  <span class="agree-value">81%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 81%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">I understood better how mathematics describes physical situations</span>
+                  <span class="agree-value">77%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 77%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">Knowledge checks helped me see what I know and what to practise</span>
+                  <span class="agree-value">69%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 69%"></span></span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="case-study-list-title">Next time</div>
+              <ul class="case-study-list">
+                <li>More varied tasks within each chapter</li>
+                <li>More time for practice at the end of lessons</li>
+                <li>Group-task instructions in Wilma for absent students</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="case-study-voices">
+            <div class="case-study-list-title">In students’ words <span class="voices-note">· translated from Finnish</span></div>
+
+            <div class="voices-grid">
+              <figure class="voice">
+                <blockquote>“The way you told us every week how the week had gone was really good. It motivated me.”</blockquote>
+                <figcaption>Weekly feedback</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“Yes, it helped, and it helped me understand what I already knew and what was still worth revising.”</blockquote>
+                <figcaption>Knowledge checks</figcaption>
+              </figure>
+
+              <figure class="voice">
+                <blockquote>“It helped me work regularly and made me revise things.”</blockquote>
+                <figcaption>Regular study</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="materials" class="materials">
+        <span class="section-label">05 — Materials</span>
+        <p class="materials-note">Most materials below are in Finnish; some presentations are in English.</p>
+
+        <div class="grid">
+          <!-- 01: Simulations -->
+          <article class="category simulations-card">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="2"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Interactive</div>
+                  <h3>Simulations</h3>
+                </div>
+              </div>
+              <div class="category-num">01</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="FY03_mekaanisen_energian_sailyminen.html">
+                <div>
+                  <div class="item-title">Conservation of mechanical energy</div>
+                  <div class="item-sub">FY03 · Energy principle</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="FY08_lapaisykyky_kalvo.html">
+                <div>
+                  <div class="item-title">Penetrating power of radiation</div>
+                  <div class="item-sub">FY08 · Alpha, beta, gamma and neutrons</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="FY04_liikemaaran_sailyminen.html">
+                <div>
+                  <div class="item-title">Conservation of momentum</div>
+                  <div class="item-sub">FY04 · Elastic and inelastic collisions</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="FY04_kimmoisa_tormays.html">
+                <div>
+                  <div class="item-title">Perfectly elastic collision</div>
+                  <div class="item-sub">FY04 · Two equal balls exchange velocity</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more simulations</span>
+                  <span class="show-less-text">Show fewer simulations</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="FY04_kimmoton_tormays.html">
+                    <div>
+                      <div class="item-title">Perfectly inelastic collision</div>
+                      <div class="item-sub">FY04 · A car and a truck stick together</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY04_impulssi.html">
+                    <div>
+                      <div class="item-title">Impulse: how a body stops</div>
+                      <div class="item-sub">FY04 · Impulse and momentum</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY02_kasvihuoneilmio.html">
+                    <div>
+                      <div class="item-title">Greenhouse effect</div>
+                      <div class="item-sub">FY02 · Radiation balance and climate</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_energiaperiaate.html">
+                    <div>
+                      <div class="item-title">Energy principle: E₁ + W = E₂</div>
+                      <div class="item-sub">FY03 · Work and energy</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_vuoristorata_kalvo.html">
+                    <div>
+                      <div class="item-title">Roller coaster energy lab</div>
+                      <div class="item-sub">FY03 · Energy principle</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_kiintea_laajeneminen.html">
+                    <div>
+                      <div class="item-title">Thermal expansion of solids</div>
+                      <div class="item-sub">FY03 · Energy and heat</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_kaasu_laajeneminen.html">
+                    <div>
+                      <div class="item-title">Thermal expansion of gases</div>
+                      <div class="item-sub">FY03 · Energy and heat</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY01_alkurajahdys.html">
+                    <div>
+                      <div class="item-title">From the Big Bang to the present</div>
+                      <div class="item-sub">FY01 · History of the universe</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY01_kalteva_taso.html">
+                    <div>
+                      <div class="item-title">Inclined plane</div>
+                      <div class="item-sub">FY01 · Forces and friction</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY01_voyager1.html">
+                    <div>
+                      <div class="item-title">Voyager 1</div>
+                      <div class="item-sub">FY01 · Distances in space</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_neste_laajeneminen.html">
+                    <div>
+                      <div class="item-title">Thermal expansion of liquids</div>
+                      <div class="item-sub">FY03 · Energy and heat</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_faasikaavio.html">
+                    <div>
+                      <div class="item-title">Phase diagram</div>
+                      <div class="item-sub">FY03 · States of matter</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_ideaalikaasulaki.html">
+                    <div>
+                      <div class="item-title">Changes of state</div>
+                      <div class="item-sub">FY03 · Ideal gas and phase changes</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_isobaarinen.html">
+                    <div>
+                      <div class="item-title">Isobaric process</div>
+                      <div class="item-sub">FY03 · Gas process at constant pressure</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_isokoorinen.html">
+                    <div>
+                      <div class="item-title">Isochoric process</div>
+                      <div class="item-sub">FY03 · Gas process at constant volume</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_isoterminen.html">
+                    <div>
+                      <div class="item-title">Boyle's law</div>
+                      <div class="item-sub">FY03 · Isothermal gas process</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_Avogadro.html">
+                    <div>
+                      <div class="item-title">Avogadro's law</div>
+                      <div class="item-sub">FY03 · Ideal gas</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_Moolitilavuus.html">
+                    <div>
+                      <div class="item-title">Molar volume</div>
+                      <div class="item-sub">FY03 · One mole of gas</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_ideaali_ja_reaalikaasu.html">
+                    <div>
+                      <div class="item-title">Real and ideal gas</div>
+                      <div class="item-sub">FY03 · Gas models</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_lampovoimakone.html">
+                    <div>
+                      <div class="item-title">Heat engine</div>
+                      <div class="item-sub">FY03 · Efficiency</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_jaahdytyskone.html">
+                    <div>
+                      <div class="item-title">Refrigeration cycle</div>
+                      <div class="item-sub">FY03 · Heat pumps</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY03_jaakaappi.html">
+                    <div>
+                      <div class="item-title">Inside a refrigerator</div>
+                      <div class="item-sub">FY03 · Heat pumps</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY04_paikka_matka.html">
+                    <div>
+                      <div class="item-title">Distance and displacement</div>
+                      <div class="item-sub">FY04 · Describing motion</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY04_kaksi_autoa.html">
+                    <div>
+                      <div class="item-title">Race between two cars</div>
+                      <div class="item-sub">FY04 · Motion graphs</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY04_avaruusluotain.html">
+                    <div>
+                      <div class="item-title">Space probe</div>
+                      <div class="item-sub">FY04 · Newton's first law</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY04_voimakuviot.html">
+                    <div>
+                      <div class="item-title">Force diagrams</div>
+                      <div class="item-sub">FY04 · Free-body diagrams</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_fissio.html">
+                    <div>
+                      <div class="item-title">Nuclear fission</div>
+                      <div class="item-sub">FY08 · Chain reaction and nuclear reactor</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_valosahkoinen.html">
+                    <div>
+                      <div class="item-title">Photoelectric effect</div>
+                      <div class="item-sub">FY08 · Quantisation of light</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_spektri.html">
+                    <div>
+                      <div class="item-title">Emission and absorption spectra</div>
+                      <div class="item-sub">FY08 · Atomic spectra</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_bohr.html">
+                    <div>
+                      <div class="item-title">Bohr model</div>
+                      <div class="item-sub">FY08 · Transitions and spectra</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_debroglie.html">
+                    <div>
+                      <div class="item-title">de Broglie wave</div>
+                      <div class="item-sub">FY08 · Matter waves</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_kaksoisrako.html">
+                    <div>
+                      <div class="item-title">Double-slit experiment</div>
+                      <div class="item-sub">FY08 · Quantum probability</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY08_tunneloituminen.html">
+                    <div>
+                      <div class="item-title">Quantum tunnelling</div>
+                      <div class="item-sub">FY08 · Barrier penetration</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  
+
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 02: Mathematics -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 7h7M7.5 3.5v7"/>
+                    <path d="M13 7h7"/>
+                    <path d="M4 17h7M4 20.5l7-7"/>
+                    <path d="M13 15.5h7M13 19h7"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Mathematics</div>
+                  <h3>Mathematics &amp; learning design</h3>
+                </div>
+              </div>
+              <div class="category-num">02</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="https://opetus.tv" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">Opetus.tv</div>
+                  <div class="item-sub">400+ mathematics and physics videos for upper-secondary courses</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/geogebra-koulutus-k2025/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">GeoGebra training for teachers</div>
+                  <div class="item-sub">Dynamic geometry in the classroom · In-service training · Spring 2025</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 03: Slides -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="13" rx="2"/>
+                    <path d="M8 21h8M12 17v4"/>
+                    <path d="M7 13l3-3 2 2 4-5"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Visual</div>
+                  <h3>Slides</h3>
+                </div>
+              </div>
+              <div class="category-num">03</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="https://slides.com/opetustv/fy3-1-voima/fullscreen?token=sg6cg6rM" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">Force</div>
+                  <div class="item-sub">FY03 · Force and motion</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/fy3-2-energia/fullscreen?token=a3RHjUNp" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">Energy</div>
+                  <div class="item-sub">FY03 · Energy and heat</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more slides</span>
+                  <span class="show-less-text">Show fewer slides</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="https://slides.com/opetustv/fy03-3-tyo/fullscreen?token=LHozqMsk" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">Work</div>
+                      <div class="item-sub">FY03 · Energy and work</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="https://slides.com/opetustv/fy03-4-lammon-siirtyminen/fullscreen?token=f_kWzj3E" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">Heat transfer</div>
+                      <div class="item-sub">FY03 · Energy and heat</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="https://slides.com/opetustv/fy03-5-termodynaaminen-systeemi/fullscreen?token=6HXRRb-j" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">Thermodynamic system</div>
+                      <div class="item-sub">FY03 · Energy and heat</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="https://slides.com/opetustv/fy03-6-paine/fullscreen?token=3rOq9BSA" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">Pressure</div>
+                      <div class="item-sub">FY03 · Pressure</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="https://slides.com/opetustv/fy03-9-aineen-olomuodot/fullscreen?token=kxAXXukO" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">States of matter</div>
+                      <div class="item-sub">FY03 · Energy and heat</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 04: Flashcards -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="7" width="14" height="13" rx="2"/>
+                    <path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2h-2"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Review</div>
+                  <h3>Flashcards</h3>
+                </div>
+              </div>
+              <div class="category-num">04</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="kasitetakomo.html">
+                <div>
+                  <div class="item-title">Käsitetakomo</div>
+                  <div class="item-sub">My own concept cards · 478 cards across 5 courses</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://quizlet.com/fi/1159344781/fy01-ja-fy02-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY01 &amp; FY02</div>
+                  <div class="item-sub">Physics as a natural science · Environment and society</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://quizlet.com/fi/1159337238/fy03-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY03</div>
+                  <div class="item-sub">Energy and heat</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more flashcards</span>
+                  <span class="show-less-text">Show fewer flashcards</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="https://quizlet.com/fi/1161257425/fy07-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">FY07</div>
+                      <div class="item-sub">Electromagnetism and light</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 05: Course summaries -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/>
+                    <path d="M14 3v5h5M9 13h6M9 17h4"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Condensed</div>
+                  <h3>Course summaries</h3>
+                </div>
+              </div>
+              <div class="category-num">05</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="FY01FY02_K2026.pdf" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY01 &amp; FY02</div>
+                  <div class="item-sub">Physics as a natural science · Environment and society</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="FY03_K2026.pdf" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY03</div>
+                  <div class="item-sub">Energy and heat</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more summaries</span>
+                  <span class="show-less-text">Show fewer summaries</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="FY04_K2026.pdf" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">FY04</div>
+                      <div class="item-sub">Force and motion</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="FY07_K2026.pdf" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">FY07</div>
+                      <div class="item-sub">Electromagnetism and light</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 06: Course timetables -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M3 10h18M8 3v4M16 3v4"/>
+                    <path d="M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Structure</div>
+                  <h3>Course timetables</h3>
+                </div>
+              </div>
+              <div class="category-num">06</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="FY03_K2026_Timetable.pdf" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY03 · Energy and heat</div>
+                  <div class="item-sub">Weekly plan with learning objectives and self-assessment scale</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="FY05_S2026_Timetable.pdf" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FY05 · Periodic motion and waves</div>
+                  <div class="item-sub">Course timetable and weekly learning structure</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more timetables</span>
+                  <span class="show-less-text">Show fewer timetables</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="FY06_S2025_Timetable.pdf" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">FY06 · Electricity</div>
+                      <div class="item-sub">Course timetable and weekly learning structure</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 07: International presentations -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M3 12h18"/>
+                    <path d="M12 3a14 14 0 010 18"/>
+                    <path d="M12 3a14 14 0 000 18"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Talks</div>
+                  <h3>Talks &amp; presentations</h3>
+                </div>
+              </div>
+              <div class="category-num">07</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="https://slides.com/opetustv/flare-short/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">FLARE — short version</div>
+                  <div class="item-sub">Flipped Learning &amp; AI for Reflective Education · ASEFClassNet19 · 2026</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://slides.com/opetustv/ai-for-reflective-education-b0827e/fullscreen" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">AI for Reflective Education</div>
+                  <div class="item-sub">Bridging mathematics and technology for deeper learning · Riga, 2026</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <details class="more-links">
+                <summary>
+                  <span class="show-more-text">Show more talks</span>
+                  <span class="show-less-text">Show fewer talks</span>
+                </summary>
+
+                <div class="extra-links">
+                  <a class="item" href="https://slides.com/opetustv/flare1/fullscreen" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">FLARE — Flipped Learning &amp; AI for Reflective Education</div>
+                      <div class="item-sub">Lead trainer · ASEFClassNet EmpowerED · 2025</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+
+                  <a class="item" href="https://slides.com/opetustv/ajatuksia-luma-aineiden-opetuksesta-educa/fullscreen" target="_blank" rel="noopener noreferrer">
+                    <div>
+                      <div class="item-title">Reflections on teaching STEM subjects</div>
+                      <div class="item-sub">Educa · Finnish education fair</div>
+                    </div>
+                    <span class="item-arrow">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 08: Classroom tools -->
+          <article class="category">
+            <div class="category-head">
+              <div class="category-head-left">
+                <div class="category-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="13" r="8"/>
+                    <path d="M12 13V9"/>
+                    <path d="M9 2h6"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="category-tag">Focus</div>
+                  <h3>Classroom tools</h3>
+                </div>
+              </div>
+              <div class="category-num">08</div>
+            </div>
+
+            <div class="links">
+              <a class="item" href="oppiruukki.html">
+                <div>
+                  <div class="item-title">Oppiruukki</div>
+                  <div class="item-sub">Pomodoro focus timer · Kiviruukin lukio</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="kiviruukki-classroom-screen.html">
+                <div>
+                  <div class="item-title">Kiviruukki Classroom Screen</div>
+                  <div class="item-sub">Board with maths editor, timer and calculator · Kiviruukin lukio</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <svg class="footer-shape" viewBox="0 0 80.71 72.96" aria-hidden="true" focusable="false"><path d="M12.72 54.05C18.15 60.7 32.63 72.96 52.4 67.16C59.85 64.97 66.17 60.02 70.78 53.85C74.6 48.74 80.71 39.33 80.48 24.14C80.43 20.82 80.39 5.8 69.98 1.57C66.12 0 62.57 1.36 59.39 3.59C53.66 7.6 48.21 15.44 42.28 18.97C37.96 21.54 33.66 20.67 28.93 19.17C22.62 17.18 7.33 6.58 3.16 19.44C0 29.21 6.48 46.34 12.71 54.04"/></svg>
+      <div>
+        <svg class="footer-lockup" viewBox="0 0 216.29 105.05" role="img" aria-label="Kiviruukin lukio"><title>Kiviruukin lukio</title><path d="M32.98 29.75L47.32 24.73L46.51 22.52L32.18 27.54L48.15 14.14L46.64 12.34L30.67 25.74L39.6 10.97L37.57 9.79L28.63 24.57L32.22 4.21L29.91 3.8L26.32 24.16L22.23 0L19.91 0.41L24 24.57L15.98 10.68L13.95 11.86L21.96 25.74L7.29 13.43L5.78 15.23L20.45 27.54L8.08 23.04L7.28 25.25L19.65 29.75L0 29.75L0 32.11L19.66 32.11L19.66 29.75L20.46 27.55L21.97 25.75L24 24.57L26.32 24.16L28.63 24.57L30.66 25.75L32.18 27.55L32.98 29.75L32.98 32.11L52.84 32.11L52.84 29.75ZM32.98 29.75"/><path d="M7.57 60.76L3.98 64.27L3.98 71.11L0 71.11L0 48.86L3.98 48.86L3.98 58.65L4.8 58.65L14.48 48.86L19.79 48.86L11.04 57.37L11.04 58.65L19.2 71.11L14.36 71.11ZM7.57 60.76"/><path d="M33.96 67.44L38.88 67.44L38.88 71.11L22.79 71.11L22.79 67.44L27.71 67.44L28.88 66.27L28.88 53.7L27.71 52.52L22.79 52.52L22.79 48.86L38.88 48.86L38.88 52.52L33.96 52.52L32.79 53.7L32.79 66.27ZM33.96 67.44"/><path d="M50.41 71.11L41.75 48.86L46.24 48.86L52.45 65.99L53.62 65.99L59.82 48.86L64.23 48.86L55.53 71.11ZM50.41 71.11"/><path d="M78.3 67.44L83.21 67.44L83.21 71.11L67.13 71.11L67.13 67.44L72.05 67.44L73.22 66.27L73.22 53.7L72.05 52.52L67.13 52.52L67.13 48.86L83.21 48.86L83.21 52.52L78.3 52.52L77.12 53.7L77.12 66.27ZM78.3 67.44"/><path d="M91.7 71.11L87.72 71.11L87.72 48.86L97.01 48.86C102.71 48.86 106.02 51.28 106.02 55.73C106.02 59 104.27 61.15 101.07 62.05L101.07 62.95L107.04 71.11L102.28 71.11L96.07 62.56L91.7 62.56ZM92.87 52.52L91.7 53.7L91.7 58.89L96.93 58.89C100.33 58.89 101.93 57.72 101.93 55.73C101.93 53.7 100.33 52.52 96.93 52.52ZM92.87 52.52"/><path d="M123.57 62.68L123.57 48.86L127.55 48.86L127.55 63.22C127.55 68.22 123.49 71.65 118.49 71.65C113.5 71.65 109.44 68.22 109.44 63.22L109.44 48.86L113.42 48.86L113.42 62.71C113.42 65.8 115.61 67.95 118.49 67.95C121.38 67.95 123.57 65.8 123.57 62.68"/><path d="M146.18 62.68L146.18 48.86L150.16 48.86L150.16 63.22C150.16 68.22 146.11 71.65 141.11 71.65C136.11 71.65 132.05 68.22 132.05 63.22L132.05 48.86L136.04 48.86L136.04 62.71C136.04 65.8 138.22 67.95 141.11 67.95C144 67.95 146.18 65.8 146.18 62.68"/><path d="M162.45 60.76L158.86 64.27L158.86 71.11L154.88 71.11L154.88 48.86L158.86 48.86L158.86 58.65L159.68 58.65L169.36 48.86L174.66 48.86L165.92 57.37L165.92 58.65L174.08 71.11L169.24 71.11ZM162.45 60.76"/><path d="M188.83 67.44L193.75 67.44L193.75 71.11L177.67 71.11L177.67 67.44L182.59 67.44L183.76 66.27L183.76 53.7L182.59 52.52L177.67 52.52L177.67 48.86L193.75 48.86L193.75 52.52L188.83 52.52L187.66 53.7L187.66 66.27ZM188.83 67.44"/><path d="M211.72 71.11L202.82 55.02L201.64 55.02L201.64 71.11L197.94 71.11L197.94 48.86L203.32 48.86L211.41 63.73L212.57 63.73L212.57 48.86L216.29 48.86L216.29 71.11ZM211.72 71.11"/><path d="M5.11 100.83L16.43 100.83L16.43 104.5L0 104.5L0 82.25L3.94 82.25L3.94 99.66ZM5.11 100.83"/><path d="M33.59 96.07L33.59 82.25L37.57 82.25L37.57 96.61C37.57 101.61 33.51 105.05 28.51 105.05C23.52 105.05 19.46 101.61 19.46 96.61L19.46 82.25L23.44 82.25L23.44 96.11C23.44 99.19 25.62 101.34 28.51 101.34C31.4 101.34 33.59 99.19 33.59 96.07"/><path d="M49.85 94.16L46.26 97.67L46.26 104.5L42.28 104.5L42.28 82.25L46.26 82.25L46.26 92.05L47.08 92.05L56.76 82.25L62.07 82.25L53.32 90.76L53.32 92.05L61.48 104.5L56.64 104.5ZM49.85 94.16"/><path d="M76.23 100.83L81.15 100.83L81.15 104.5L65.07 104.5L65.07 100.83L69.99 100.83L71.16 99.66L71.16 87.09L69.99 85.92L65.07 85.92L65.07 82.25L81.15 82.25L81.15 85.92L76.23 85.92L75.07 87.09L75.07 99.66ZM76.23 100.83"/><path d="M93.86 105.05C87.53 105.05 83.51 99.89 83.51 93.37C83.51 86.86 87.53 81.7 93.86 81.7C100.18 81.7 104.2 86.86 104.2 93.37C104.2 99.89 100.18 105.05 93.86 105.05M93.86 85.45C89.68 85.45 87.69 89 87.69 93.37C87.69 97.75 89.68 101.3 93.86 101.3C98.04 101.3 100.02 97.75 100.02 93.37C100.02 89 98.04 85.45 93.86 85.45"/></svg>
+        <p class="footer-slogan" lang="fi">Meillä taotaan tulevaisuuksia.<span lang="en">We forge futures.</span></p>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; Lauri Hellsten</span>
+        <span>Updated · October 2026</span>
+      </div>
+    </footer>
+  </div>
+  <svg class="robot-walker" viewBox="-10 -17 100 146" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g class="robot-bob">
+    <line x1="40" y1="5" x2="40" y2="-10"/><circle cx="40" cy="-13" r="3"/>
+    <rect x="16" y="5" width="48" height="37" rx="7"/>
+    <circle cx="29" cy="22" r="6.5"/><circle cx="51" cy="22" r="6.5"/>
+    <circle cx="29" cy="22" r="2.5" class="robot-fill"/><circle cx="51" cy="22" r="2.5" class="robot-fill"/>
+    <path d="M28 34 Q40 41 52 34"/>
+    <rect x="11" y="45" width="58" height="46" rx="5"/>
+    <circle cx="40" cy="68" r="9"/><circle cx="40" cy="68" r="3.5" class="robot-fill"/>
+    <line x1="40" y1="59" x2="40" y2="54"/><line x1="40" y1="77" x2="40" y2="82"/>
+    <line x1="31" y1="68" x2="26" y2="68"/><line x1="49" y1="68" x2="54" y2="68"/>
+    <line x1="34" y1="62" x2="31" y2="59"/><line x1="46" y1="62" x2="49" y2="59"/>
+    <line x1="34" y1="74" x2="31" y2="77"/><line x1="46" y1="74" x2="49" y2="77"/>
+    <g class="robot-arm-l"><rect x="-7" y="47" width="16" height="32" rx="5"/></g>
+    <g class="robot-arm-r"><rect x="71" y="47" width="16" height="32" rx="5"/></g>
+    <g class="robot-leg-l"><rect x="14" y="92" width="21" height="29" rx="4"/><rect x="10" y="116" width="25" height="9" rx="3"/></g>
+    <g class="robot-leg-r"><rect x="45" y="92" width="21" height="29" rx="4"/><rect x="45" y="116" width="25" height="9" rx="3"/></g>
+  </g>
+</svg>
+  <script>
+(function () {
+  // The slogan lives and changes with its use: "Meillä taotaan tulevaisuuksia / tietoa / yhdessä …"
+  var word = document.querySelector('.forge-word');
+  if (!word || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var words = ['futures.', 'knowledge.', 'ideas.', 'prototypes.', 'together.'];
+  var i = 0;
+  setInterval(function () {
+    word.classList.add('is-out');
+    setTimeout(function () {
+      i = (i + 1) % words.length;
+      word.textContent = words[i];
+      word.classList.remove('is-out');
+      word.classList.add('is-in');
+      void word.offsetWidth;
+      word.classList.remove('is-in');
+    }, 420);
+  }, 2800);
+}());
+</script>
+  <script>
+(function () {
+  var grid = document.querySelector('#materials .grid');
+  if (!grid || !('ResizeObserver' in window)) return;
+  var cards = Array.prototype.slice.call(grid.children);
+  var twoColumns = window.matchMedia('(min-width: 761px)');
+  var GAP = 12;
+  function setSpan(card) {
+    card.style.gridRowEnd = 'span ' + Math.ceil(card.getBoundingClientRect().height + GAP);
+  }
+  var observer = new ResizeObserver(function (entries) {
+    entries.forEach(function (entry) { setSpan(entry.target); });
+  });
+  function update() {
+    if (twoColumns.matches) {
+      grid.classList.add('is-masonry');
+      cards.forEach(function (card) { setSpan(card); observer.observe(card); });
+    } else {
+      observer.disconnect();
+      grid.classList.remove('is-masonry');
+      cards.forEach(function (card) { card.style.gridRowEnd = ''; });
+    }
+  }
+  twoColumns.addEventListener('change', update);
+  update();
+}());
+</script>
+  <script>
+(function () {
+  var robot = document.querySelector('.robot-walker');
+  if (!robot || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function walk() {
+    var vw = window.innerWidth;
+    var vh = window.innerHeight;
+    var bottom   = Math.random() * vh * 0.38 + 16;
+    var duration = (Math.random() * 22 + 16) * 1000;
+    var size     = Math.floor(Math.random() * 28 + 58);
+    robot.style.bottom = bottom + 'px';
+    robot.style.width  = size + 'px';
+    robot.animate(
+      [{ transform: 'translateX(-120px)' },
+       { transform: 'translateX(' + (vw + 120) + 'px)' }],
+      { duration: duration, easing: 'linear', fill: 'forwards' }
+    ).onfinish = walk;
+  }
+  walk();
+}());
+</script>
+</body>
+</html>
