@@ -26,6 +26,8 @@
     ?lead=Meillä%20taotaan  oma valkoinen alkuosa
     ?s=4                  sanan vaihtoväli sekunteina (oletus 2.8)
     ?kipinat              lisää iskuun valkoiset kipinät
+    ?kerran (tai ?once)   sanat käydään läpi yhden kerran, ja animaatio pysähtyy
+                          takaisin ensimmäiseen sanaan (oletuksena tulevaisuuksia.)
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -241,6 +243,7 @@
   }
   var lively = params.has("kipinat");
   if (lively) document.documentElement.classList.add("ahjo-kipinat");
+  var once = params.has("kerran") || params.has("once");
   var seconds = parseFloat(params.get("s"));
   if (!(seconds >= 1)) seconds = 2.8;
 
@@ -428,7 +431,12 @@
 
   setTimeout(function(){
     strike();
-    if (words.length > 1) setInterval(strike, seconds * 1000);
+    if (words.length < 2) return;
+    var left = once ? words.length : Infinity;       // ?kerran: yksi kierros takaisin ensimmäiseen sanaan
+    var timer = setInterval(function(){
+      strike();
+      if (--left <= 0) clearInterval(timer);
+    }, seconds * 1000);
   }, 700);
 })();
 </script>
