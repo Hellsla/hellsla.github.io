@@ -15,7 +15,7 @@
             width="960" height="540" style="border:0"></iframe>
 
   URL-parametrit:
-    ?lang=fi              Meillä taotaan tulevaisuuksia. / tietoa. / uria ja unelmia. / yhdessä.
+    ?lang=fi              Meillä taotaan tulevaisuuksia. / ideoita. / prototyyppejä. / ratkaisuja. / yhdessä.
     ?words=a,b,c          omat vaihtuvat sanat (pilkulla erotettuina)
     ?lead=Meillä%20taotaan  oma valkoinen alkuosa
     ?s=4                  sanan vaihtoväli sekunteina (oletus 2.8)
@@ -50,11 +50,12 @@
     fill:var(--pink);
   }
 
+  /* Sijoittelu ja mittasuhteet kuten kiviruukki.html-sivun hero-osassa:
+     tekstin yläpuolelle ja alle jää tilaa. */
   .slogan{
     position:absolute;
-    left:7%;
-    top:37%;
-    transform:translateY(-50%);
+    left:4%;
+    top:26%;
     color:var(--white);
     font-weight:900;
     font-size:64px;              /* fit() asettaa oikean koon */
@@ -68,10 +69,11 @@
 
   .line{
     display:block;
-    height:1.12em;
+    height:1em;
   }
 
   .changing{
+    height:1.08em;
     overflow:hidden;
     color:var(--pink);
   }
@@ -87,7 +89,7 @@
   /* Pysty- ja neliömäisissä upotuksissa teksti ylös, muoto alaosaan. */
   @media (max-aspect-ratio:1/1){
     .cloud{ top:auto; height:58%; }
-    .slogan{ top:24%; }
+    .slogan{ left:6%; top:16%; }
   }
 
   /* Vähennetty liike: sana vaihtuu pelkällä häivytyksellä. */
@@ -124,11 +126,11 @@
   var lead = "We forge";
   var words = ["futures.", "knowledge.", "ideas.", "prototypes.", "together."];
 
-  // Graafisen ohjeiston elävä slogan: "Meillä taotaan tulevaisuuksia. / tietoa. / …"
+  // Graafisen ohjeiston elävä slogan Ahjon sanoin: "Meillä taotaan tulevaisuuksia. / ideoita. / …"
   if ((params.get("lang") || "").toLowerCase() === "fi"){
     document.documentElement.lang = "fi";
     lead = "Meillä taotaan";
-    words = ["tulevaisuuksia.", "tietoa.", "uria ja unelmia.", "yhdessä."];
+    words = ["tulevaisuuksia.", "ideoita.", "prototyyppejä.", "ratkaisuja.", "yhdessä."];
   }
   if (params.get("lead")) lead = params.get("lead");
   if (params.get("words")){
@@ -168,7 +170,8 @@
     return edge;
   }
 
-  // Fonttikoko niin, että pisin sana mahtuu muodon vasemmalle puolelle.
+  // Fonttikoko heron mittasuhteilla (n. 10,7 % korkeudesta); pienennetään
+  // vain, jos pisin sana ulottuisi muotoon asti.
   function fit(){
     var w = window.innerWidth, h = window.innerHeight;
     var tall = h >= w;
@@ -177,7 +180,8 @@
       probe.textContent = t;
       widest = Math.max(widest, probe.getBoundingClientRect().width / 100);
     });
-    var size = Math.min(w * (tall ? 0.86 : 0.55) / widest, h * (tall ? 0.32 : 0.5) / 2.24);
+    var size = tall ? Math.min(h * 0.07, w * 0.86 / widest)
+                    : Math.min(h * 0.107, w * 0.067, w * 0.9 / widest);
     for (var k = 0; k < 4; k++){
       slogan.style.fontSize = size.toFixed(1) + "px";
       var box = slogan.getBoundingClientRect();
