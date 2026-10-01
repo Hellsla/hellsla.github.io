@@ -15,7 +15,7 @@
             width="960" height="540" style="border:0"></iframe>
 
   URL-parametrit:
-    ?lang=fi              Meillä taotaan tulevaisuuksia. / tietoa. / uria ja unelmia. / yhdessä.
+    ?lang=fi              Meillä taotaan tulevaisuuksia. / ideoita. / prototyyppejä. / ratkaisuja. / yhdessä.
     ?words=a,b,c          omat vaihtuvat sanat (pilkulla erotettuina)
     ?lead=Meillä%20taotaan  oma valkoinen alkuosa
     ?s=4                  sanan vaihtoväli sekunteina (oletus 2.8)
@@ -124,11 +124,11 @@
   var lead = "We forge";
   var words = ["futures.", "knowledge.", "ideas.", "prototypes.", "together."];
 
-  // Graafisen ohjeiston elävä slogan: "Meillä taotaan tulevaisuuksia. / tietoa. / …"
+  // Graafisen ohjeiston elävä slogan Ahjon sanoin: "Meillä taotaan tulevaisuuksia. / ideoita. / …"
   if ((params.get("lang") || "").toLowerCase() === "fi"){
     document.documentElement.lang = "fi";
     lead = "Meillä taotaan";
-    words = ["tulevaisuuksia.", "tietoa.", "uria ja unelmia.", "yhdessä."];
+    words = ["tulevaisuuksia.", "ideoita.", "prototyyppejä.", "ratkaisuja.", "yhdessä."];
   }
   if (params.get("lead")) lead = params.get("lead");
   if (params.get("words")){
