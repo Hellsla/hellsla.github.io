@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FY05 · Jaksollinen liike ja aallot – simulaatiot</title>
+<style>
+  :root{ --bg:#fafaf8; --card:#fff; --ink:#2f3237; --ink-2:#5c6168; --line:#e4e4e0; --accent:#2f6f9f; --accent-soft:#e7eff6;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--font);-webkit-font-smoothing:antialiased}
+  main{max-width:980px;margin:0 auto;padding:32px 20px 48px}
+  h1{font-size:24px;font-weight:650;margin:0 0 4px}
+  .lead{color:var(--ink-2);margin:0 0 24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+  .card h2{font-size:16px;font-weight:650;margin:0}
+  .card p{margin:0;color:var(--ink-2);font-size:14px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+  a.btn,button.btn{font:inherit;font-size:13px;display:inline-flex;align-items:center;min-height:32px;padding:0 12px;border-radius:8px;
+    border:1px solid #cfcfca;background:#fff;color:var(--ink);text-decoration:none;cursor:pointer}
+  a.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  button.btn.done{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .note{margin-top:28px;font-size:13px;color:var(--ink-2)}
+  code{font-size:12.5px;background:#f1f1ee;padding:1px 4px;border-radius:4px}
+</style>
+</head>
+<body>
+<main>
+  <h1>FY05 · Jaksollinen liike ja aallot</h1>
+  <p class="lead">Interaktiiviset simulaatiot opetuskalvoille. Jokainen simulaatio on oma sivunsa, jonka voi upottaa kalvoon iframe-elementillä.</p>
+  <div class="grid" id="grid"></div>
+  <p class="note">Upotuskoodi kopioituu painikkeesta. Oletuskorkeus on <code>620</code> px; simulaatiot mukautuvat myös muihin kokoihin.</p>
+</main>
+<script>
+(() => {
+  'use strict';
+  const SIMS = [
+    ['momentti', 'Momentti ja tasapaino', 'Miten voiman suuruus ja etäisyys pyörimisakselista vaikuttavat vääntövaikutukseen?'],
+    ['ympyraliike', 'Tasainen ympyräliike', 'Miksi tasaisessa ympyräliikkeessä on kiihtyvyyttä, vaikka vauhti ei muutu?'],
+    ['kiertorata', 'Gravitaatio ja kiertorata', 'Miten jatkuva putoaminen voi muodostaa kiertoradan?'],
+    ['harmoninen-varahtely', 'Ympyräliike ja harmoninen värähtely', 'Sinimuotoinen värähtely tasaisen ympyräliikkeen projektiona.'],
+    ['aalto-langassa', 'Aalto langassa', 'Mitä aallossa todella etenee? Miten taajuus vaikuttaa aallonpituuteen?'],
+    ['interferenssi', 'Kahden aallon interferenssi', 'Mistä vahvistavat ja heikentävät kohdat syntyvät?'],
+    ['seisova-aalto', 'Seisova aalto', 'Miksi vain tietyt taajuudet muodostavat pysyvän seisovan aallon?'],
+    ['doppler', 'Doppler-ilmiö', 'Miksi havaittu taajuus muuttuu, vaikka lähteen taajuus pysyy samana?'],
+  ];
+  const base = new URL('.', location.href).href;
+  const grid = document.getElementById('grid');
+  for (const [dir, title, q] of SIMS) {
+    const url = base + dir + '/';
+    const code = `<iframe\n  src="${url}"\n  title="${title}"\n  width="100%"\n  height="620"\n  style="border:0;"\n  loading="lazy">\n</iframe>`;
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.innerHTML = `<h2></h2><p></p><div class="row"><a class="btn primary" href="${dir}/">Avaa</a><button class="btn" type="button">Kopioi upotuskoodi</button></div>`;
+    card.querySelector('h2').textContent = title;
+    card.querySelector('p').textContent = q;
+    const btn = card.querySelector('button');
+    btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(code); }
+      catch (e) { window.prompt('Kopioi upotuskoodi:', code); return; }
+      btn.textContent = 'Kopioitu'; btn.classList.add('done');
+      setTimeout(() => { btn.textContent = 'Kopioi upotuskoodi'; btn.classList.remove('done'); }, 1600);
+    });
+    grid.appendChild(card);
+  }
+})();
+</script>
+</body>
+</html>

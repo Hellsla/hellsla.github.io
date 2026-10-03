@@ -152,6 +152,7 @@ button:hover{filter:brightness(.975)}
   overflow-wrap:anywhere;
 }
 .editor:focus-visible{outline:none}
+.editor.all-selected .math,.editor.all-selected .img-wrap{background:rgba(37,99,235,.28);outline:3px solid rgba(37,99,235,.55)}
 .editor:empty::before{content:attr(data-placeholder);color:rgba(1,33,105,.26)}
 .editor p,.editor div{margin:.15em 0}
 .editor ul,.editor ol{margin:.1em 0;padding-left:1.1em}
@@ -211,7 +212,7 @@ button:hover{filter:brightness(.975)}
 .editor .img-wrap.own-line{float:none;display:block;margin:.15em auto;clear:both}
 .img-label{position:absolute;transform:translate(-50%,-50%);max-width:96%;font-family:Lato,Arial,sans-serif;font-size:7cqw;font-weight:900;line-height:1.1;color:var(--navy);text-align:center;white-space:pre-wrap;text-shadow:0 0 .08em #fff,0 0 .08em #fff,0 0 .15em #fff,0 0 .25em #fff}
 .img-label .lbl-text{display:block;min-width:.6em;padding:.05em .2em;border-radius:.15em;outline:none;cursor:text}
-.img-label .lbl-text:empty::before{content:"Kirjoita…";opacity:.45}
+.img-label .lbl-text:empty::before{content:var(--ph-label,"Kirjoita…");opacity:.45}
 .img-label .lbl-text div{margin:0}
 .img-label.boxed .lbl-text{background:rgba(255,255,255,.88);text-shadow:none}
 .img-wrap.selected .img-label .lbl-text{outline:2px dashed rgba(243,95,159,.9)}
@@ -264,7 +265,9 @@ button:hover{filter:brightness(.975)}
 .calc .card-close{background:rgba(255,255,255,.16);color:#fff}
 .card.dragging iframe{pointer-events:none}
 
-.calc-frame{display:block;width:100%;flex:1;min-height:0;border:0;background:#f5f5f5}
+.calc-body{flex:1;min-height:0;position:relative;overflow:hidden;background:#f5f5f5}
+/* Abicus has a fixed layout (416 × 616): shown at that size and scaled to fit the card */
+.calc-frame{position:absolute;left:50%;top:0;width:416px;height:616px;border:0;background:#f5f5f5;transform-origin:top center}
 
 .clock-widget{container-type:size}
 .clock-body{flex:1;display:grid;place-items:center;text-align:center;padding:4cqh 3cqw}
@@ -319,7 +322,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         <button class="bg-btn" data-bg="pink" title="Marjapuuro-tausta">◉</button>
       </div>
       <button class="widget-toggle" data-widget="calc" title="Laskin (L)">Laskin</button>
-      <button id="presentationBtn" title="Piilota työkalupalkki">Esitystila</button>
+      <button id="langBtn" title="In English">EN</button>
       <button class="pink" id="fullscreenBtn">Koko näyttö</button>
     </div>
   </header>
@@ -362,6 +365,12 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       </div>
       <div class="math-toolbar" id="mathToolbar" aria-label="Erikoismerkit ja kaavat"></div>
       <div class="pen-bar" id="penBar" role="toolbar" aria-label="Kynän asetukset">
+        <button class="tool on" data-tool="pen" title="Kynä: vapaa piirto">✎ Kynä</button>
+        <button class="tool" data-tool="ellipse" title="Ympyrä: vedä ympyrä kohteen ympärille (Shift = täysi ympyrä)">◯ Ympyrä</button>
+        <button class="tool" data-tool="rect" title="Suorakulmio: vedä laatikko kohteen ympärille (Shift = neliö)">▭ Suorakulmio</button>
+        <button class="tool" data-tool="line" title="Viiva (Shift = vaaka, pysty tai 45°)">╱ Viiva</button>
+        <button class="tool" data-tool="arrow" title="Nuoli: vedä kohteeseen päin (Shift = vaaka, pysty tai 45°)">➜ Nuoli</button>
+        <span class="tb-sep"></span>
         <button class="swatch on" data-color="#012169" style="background:#012169" title="Tummansininen" aria-label="Tummansininen"></button>
         <button class="swatch" data-color="#f35f9f" style="background:#f35f9f" title="Pinkki" aria-label="Pinkki"></button>
         <button class="swatch" data-color="#e11d48" style="background:#e11d48" title="Punainen" aria-label="Punainen"></button>
@@ -379,7 +388,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         <button id="penDoneBtn" title="Lopeta piirtäminen (Esc)">Valmis</button>
       </div>
       <div class="note-body" id="noteBody">
-        <div class="editor" id="editor" contenteditable="true" spellcheck="true" data-placeholder="Kirjoita tähän…" aria-label="Luokan näytölle kirjoitettava teksti"></div>
+        <div class="editor" id="editor" data-noi18n contenteditable="true" spellcheck="true" data-placeholder="Kirjoita tähän…" aria-label="Luokan näytölle kirjoitettava teksti"></div>
         <canvas class="draw-canvas" id="drawCanvas" aria-hidden="true"></canvas>
       </div>
       <div class="img-handle" id="imgHandle" title="Muuta kuvan kokoa vetämällä"></div>
@@ -407,7 +416,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
 
     <section class="widget card clock-widget" id="widget-clock" data-card="clock" aria-label="Kello">
       <div class="card-bar"><span class="card-grip">⠿ Kello</span><button class="card-close" title="Piilota kello" aria-label="Piilota kello">×</button></div>
-      <div class="clock-body">
+      <div class="clock-body" data-noi18n>
         <div>
           <div class="clock-time" id="clockTime">--:--<span class="clock-seconds">--</span></div>
           <div class="clock-date" id="clockDate"></div>
@@ -425,7 +434,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     </section>
     <section class="card calc" id="calc" data-card="calc" aria-label="Laskin">
       <div class="card-bar"><span class="card-grip">⠿ Laskin · Abicus</span><button class="card-close" title="Sulje laskin" aria-label="Sulje laskin">×</button></div>
-      <iframe class="calc-frame" id="calcFrame" title="Abicus-laskin" data-src="lib/abicus/index.html"></iframe>
+      <div class="calc-body" id="calcBody"><iframe class="calc-frame" id="calcFrame" title="Abicus-laskin" data-src="lib/abicus/index.html"></iframe></div>
       <div class="card-resize" title="Muuta kokoa vetämällä"></div>
     </section>
   </main>
@@ -455,6 +464,182 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   const editor = $('#editor');
   const workspace = $('#workspace');
 
+  // --- Language (FI / EN) ------------------------------------------------
+  // The page is written in Finnish; EN maps each Finnish UI text to English
+  // and FI is the reverse, so texts can be switched in either direction.
+  const EN = {
+    "Taulut": "Boards",
+    "Uusi taulu": "New board",
+    "Tallenna kaikki taulut tiedostoon (varmuuskopio)": "Save all boards to a file (backup)",
+    "Tallenna": "Save",
+    "Avaa taulut tallennetusta tiedostosta": "Open boards from a saved file",
+    "Avaa": "Open",
+    "Näkymän asetukset": "View settings",
+    "Näytä widgetit": "Show widgets",
+    "Ajastin": "Timer",
+    "Kello": "Clock",
+    "Taustaväri": "Background colour",
+    "Vaalea tausta": "Light background",
+    "Yönsininen tausta": "Navy background",
+    "Marjapuuro-tausta": "Pink background",
+    "Laskin (L)": "Calculator (L)",
+    "Laskin": "Calculator",
+    "Koko näyttö": "Full screen",
+    "Nimeä taulu uudelleen": "Rename board",
+    "Poista taulu": "Delete board",
+    "Avaa taulu": "Open board",
+    "Nimeä uudelleen: tuplaklikkaa": "Double-click to rename",
+    "Taulu": "Board",
+    "taulu": "board",
+    "Tekstin muotoilu": "Text formatting",
+    "Lihavointi (Ctrl+B)": "Bold (Ctrl+B)",
+    "Kursiivi (Ctrl+I)": "Italic (Ctrl+I)",
+    "Alleviivaus (Ctrl+U)": "Underline (Ctrl+U)",
+    "Tummansininen": "Navy",
+    "Pinkki": "Pink",
+    "Punainen": "Red",
+    "Vihreä": "Green",
+    "Sininen": "Blue",
+    "Oranssi": "Orange",
+    "Musta": "Black",
+    "Luettelo": "Bulleted list",
+    "• Lista": "• List",
+    "Numeroitu luettelo": "Numbered list",
+    "1. Lista": "1. List",
+    "Valitun tekstin koko": "Size of the selected text",
+    "Koko": "Size",
+    "Pieni": "Small",
+    "Pienempi": "Smaller",
+    "Normaali": "Normal",
+    "Suuri": "Large",
+    "Suurempi": "Larger",
+    "Lisää kaava (Ctrl+E)": "Insert equation (Ctrl+E)",
+    "Σ Kaava": "Σ Equation",
+    "Näytä erikoismerkit ja kaavapainikkeet": "Show special characters and equation buttons",
+    "Merkit": "Symbols",
+    "Lisää kuva (tai liitä Ctrl+V)": "Insert image (or paste with Ctrl+V)",
+    "Kuva": "Image",
+    "Kynä: piirrä näytölle (P)": "Pen: draw on the screen (P)",
+    "✎ Kynä": "✎ Pen",
+    "Pienennä tekstiä": "Smaller text",
+    "Suurenna tekstiä": "Larger text",
+    "Tyhjennä": "Clear",
+    "Erikoismerkit ja kaavat": "Special characters and equations",
+    "Kaava": "Equation",
+    "Lisää merkkejä ▾": "More symbols ▾",
+    "Vähemmän ▴": "Fewer ▴",
+    "Näytä lisää erikoismerkkejä": "Show more special characters",
+    "Kirjoita tähän…": "Type here…",
+    "Luokan näytölle kirjoitettava teksti": "Text shown on the classroom screen",
+    "Kirjoita…": "Type…",
+    "Muokkaa kaavaa klikkaamalla": "Click to edit the equation",
+    "Kaavan LaTeX-koodi": "LaTeX code of the equation",
+    "Enter = uusi kaavarivi · Esc = valmis · muokkaa kaavaa ylhäällä tai LaTeXia tässä": "Enter = new equation line · Esc = done · edit the equation above or the LaTeX here",
+    "Kaavaeditori ei latautunut (lib/mathquill puuttuu).": "The equation editor did not load (lib/mathquill is missing).",
+    "Kynän asetukset": "Pen settings",
+    "Kynä: vapaa piirto": "Pen: freehand",
+    "Ympyrä: vedä ympyrä kohteen ympärille (Shift = täysi ympyrä)": "Circle: drag a circle around something (Shift = perfect circle)",
+    "◯ Ympyrä": "◯ Circle",
+    "Suorakulmio: vedä laatikko kohteen ympärille (Shift = neliö)": "Rectangle: drag a box around something (Shift = square)",
+    "▭ Suorakulmio": "▭ Rectangle",
+    "Viiva (Shift = vaaka, pysty tai 45°)": "Line (Shift = horizontal, vertical or 45°)",
+    "╱ Viiva": "╱ Line",
+    "Nuoli: vedä kohteeseen päin (Shift = vaaka, pysty tai 45°)": "Arrow: drag towards the target (Shift = horizontal, vertical or 45°)",
+    "➜ Nuoli": "➜ Arrow",
+    "Ohut": "Thin",
+    "Keskikokoinen": "Medium",
+    "Paksu": "Thick",
+    "Pyyhekumi: pyyhi viivoja": "Eraser: erase lines",
+    "Pyyhekumi": "Eraser",
+    "Kumoa viimeisin viiva (Ctrl+Z)": "Undo the last line (Ctrl+Z)",
+    "Kumoa": "Undo",
+    "Poista kaikki piirrokset": "Delete all drawings",
+    "Tyhjennä piirros": "Clear drawing",
+    "Lopeta piirtäminen (Esc)": "Stop drawing (Esc)",
+    "Valmis": "Done",
+    "Muuta kuvan kokoa vetämällä": "Drag to resize the image",
+    "Siirrä kuvaa vetämällä": "Drag to move the image",
+    "Kuvan asetukset": "Image settings",
+    "Pienennä kuvaa": "Smaller image",
+    "Suurenna kuvaa": "Larger image",
+    "Täysi leveys": "Full width",
+    "Vapaa: kuvan voi vetää minne tahansa, teksti kulkee sen päällä": "Free: drag the image anywhere, text flows over it",
+    "✥ Vapaa": "✥ Free",
+    "Kuva vasemmalle, teksti sen oikealle puolelle": "Image on the left, text to its right",
+    "⇤ Vasen": "⇤ Left",
+    "Kuva tekstirivin sisällä": "Image inside the line of text",
+    "Rivissä": "In line",
+    "Kuva omalle rivilleen keskelle": "Image centred on its own line",
+    "Oma rivi": "Own line",
+    "Kuva oikealle, teksti sen vasemmalle puolelle": "Image on the right, text to its left",
+    "Oikea ⇥": "Right ⇥",
+    "Kirjoita tekstiä kuvan päälle": "Write text on the image",
+    "T+ Teksti kuvaan": "T+ Text on image",
+    "Pienennä kuvan tekstiä": "Smaller image text",
+    "Suurenna kuvan tekstiä": "Larger image text",
+    "Valkoinen tausta tekstille": "White background for the text",
+    "Tausta": "Background",
+    "Poista kuva": "Delete image",
+    "Poista": "Delete",
+    "Siirrä tekstiä vetämällä": "Drag to move the text",
+    "⠿ Kello": "⠿ Clock",
+    "Piilota kello": "Hide clock",
+    "Muuta kokoa vetämällä": "Drag to resize",
+    "⠿ Ajastin": "⠿ Timer",
+    "Kirjoita minuutit (esim. 5 tai 2:30) ja paina Enter": "Type minutes (e.g. 5 or 2:30) and press Enter",
+    "Aseta aika (min tai mm:ss)": "Set time (min or mm:ss)",
+    "Aseta": "Set",
+    "Piilota ajastin": "Hide timer",
+    "⠿ Laskin · Abicus": "⠿ Calculator · Abicus",
+    "Sulje laskin": "Close calculator",
+    "Peruuta": "Cancel",
+    "Tyhjennetäänkö taulu?": "Clear the board?",
+    "Teksti, kaavat, kuvat ja piirrokset poistetaan.": "Text, equations, images and drawings will be deleted.",
+    "Poistetaanko kaikki piirrokset?": "Delete all drawings?",
+    "Luo taulu": "Create board",
+    "Nimeä taulu": "Rename board",
+    "Poistetaanko taulu": "Delete board",
+    "Sen sisältö häviää pysyvästi.": "Its content will be lost permanently.",
+    "Tiedostoa ei voitu avata": "The file could not be opened",
+    "Valitse Tallenna-napilla tehty taulutiedosto.": "Choose a board file made with the Save button.",
+    "Kaikki taulut olivat jo täällä": "All boards were already here",
+    "Löydät ne ylhäältä välilehdistä.": "You will find them in the tabs at the top.",
+    "Tallennus ei onnistunut: kuvat vievät liikaa tilaa selaimen muistista. Poista tai pienennä kuvia.": "Saving failed: the images take too much of the browser's storage. Delete or shrink some images.",
+    "Piirroksen tallennus ei onnistunut: selaimen muisti on täynnä.": "Saving the drawing failed: the browser storage is full.",
+    "Taulun tallennus ei onnistunut: selaimen tallennustila on täynnä. Poista kuvia tai vanhoja tauluja.": "Saving the board failed: the browser storage is full. Delete images or old boards.",
+    "Taulujen tallennus ei ole käytössä tässä selaimessa; teksti tallentuu vain yhteen tauluun.": "Boards cannot be saved in this browser; the text is kept in a single board only.",
+    "▶ Aloita": "▶ Start",
+    "⏸ Tauko": "⏸ Pause",
+    "▶ Jatka": "▶ Resume",
+    "▶ Uudelleen": "▶ Again",
+    "Vähennä minuutti": "Minus one minute",
+    "Nollaa": "Reset",
+    "Lisää minuutti": "Plus one minute",
+    "Äänet päällä": "Sound on",
+    "Äänet pois": "Sound off",
+    "Aikaa kulunut": "Time elapsed",
+    "Jäljellä oleva aika": "Time left",
+    "Kiviruukin teollinen Ahjo-maskotti": "The Kiviruukki Ahjo mascot"
+    };
+  const FI = Object.fromEntries(Object.entries(EN).map(([f, e]) => [e, f]));
+  let lang = localStorage.getItem('kiviruukki.lang') === 'en' ? 'en' : 'fi';
+  const t = fi => lang === 'en' ? (EN[fi] ?? fi) : fi;
+  function tr(v){ const k = v.trim(); const m = lang === 'en' ? EN[k] : FI[k]; return m ? v.replace(k, m) : v; }
+  // translate texts and tooltips under root; [data-noi18n] (the board text, board names, clock) is left alone
+  function translateTree(root){
+    const walk = el => {
+      if (el.nodeType !== 1 || el.matches('script,style,iframe,[data-noi18n]')) return;
+      for (const a of ['title', 'aria-label', 'placeholder', 'data-placeholder']){
+        const v = el.getAttribute(a); if (v){ const n = tr(v); if (n !== v) el.setAttribute(a, n); }
+      }
+      el.childNodes.forEach(n => {
+        if (n.nodeType === 3){ if (n.data.trim()){ const x = tr(n.data); if (x !== n.data) n.data = x; } }
+        else walk(n);
+      });
+    };
+    walk(root);
+  }
+
   // --- Notes ---------------------------------------------------------------
   let editorSize = Number(localStorage.getItem('kiviruukki.editorSize') || 0);
   const savedNote = localStorage.getItem('kiviruukki.note');
@@ -478,7 +663,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   });
   $('#clearText').addEventListener('click', async () => {
     if (editor.textContent.trim() || editor.querySelector('img,.math') || strokes.length) {
-      if (!await askConfirm('Tyhjennetäänkö taulu?', 'Teksti, kaavat, kuvat ja piirrokset poistetaan.', 'Tyhjennä')) return;
+      if (!await askConfirm(t('Tyhjennetäänkö taulu?'), t('Teksti, kaavat, kuvat ja piirrokset poistetaan.'), t('Tyhjennä'))) return;
     }
     closeMath(false); hideImgBar(); clearDrawing();
     editor.innerHTML=''; saveNow(); editor.focus();
@@ -647,9 +832,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   uiDialog.addEventListener('cancel', e => { e.preventDefault(); uiClose(null); }); // Esc
   uiDialog.addEventListener('click', e => { if (e.target === uiDialog) uiClose(null); }); // click on the backdrop
   uiDialog.addEventListener('keydown', e => e.stopPropagation()); // keep page shortcuts out of the dialog
-  const askText = (title, value, ok = 'Tallenna') => uiOpen({title, value, ok});
+  const askText = (title, value, ok = t('Tallenna')) => uiOpen({title, value, ok});
   const showInfo = (title, text = '') => uiOpen({title, text, info: true});
-  const askConfirm = (title, text, ok = 'Poista') => uiOpen({title, text, ok, danger: true}).then(Boolean);
+  const askConfirm = (title, text, ok = t('Poista')) => uiOpen({title, text, ok, danger: true}).then(Boolean);
 
   // --- Saving ------------------------------------------------------------
   // Equations are stored as <span class="math" data-latex="…"> and rendered
@@ -676,7 +861,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       localStorage.setItem('kiviruukki.note', serialize());
       noteFooter.textContent = footerText; noteFooter.classList.remove('warn');
     }catch(_){
-      noteFooter.textContent = 'Tallennus ei onnistunut: kuvat vievät liikaa tilaa selaimen muistista. Poista tai pienennä kuvia.';
+      noteFooter.textContent = t('Tallennus ei onnistunut: kuvat vievät liikaa tilaa selaimen muistista. Poista tai pienennä kuvia.');
       noteFooter.classList.add('warn');
     }
   }
@@ -706,7 +891,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     s.className = 'math';
     s.contentEditable = 'false';
     s.dataset.latex = latex;
-    s.title = 'Muokkaa kaavaa klikkaamalla';
+    s.title = t('Muokkaa kaavaa klikkaamalla');
     if (render) renderMath(s);
     return s;
   }
@@ -731,7 +916,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   }
 
   function openMath(latex = '', replaceNode = null){
-    if (!MQ){ noteFooter.textContent = 'Kaavaeditori ei latautunut (lib/mathquill puuttuu).'; noteFooter.classList.add('warn'); return; }
+    if (!MQ){ noteFooter.textContent = t('Kaavaeditori ei latautunut (lib/mathquill puuttuu).'); noteFooter.classList.add('warn'); return; }
     closeMath(false);
     const wrap = document.createElement('span');
     wrap.className = 'math-editor';
@@ -741,10 +926,10 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     ta.className = 'latex-src';
     ta.spellcheck = false;
     ta.placeholder = 'LaTeX';
-    ta.setAttribute('aria-label', 'Kaavan LaTeX-koodi');
+    ta.setAttribute('aria-label', t('Kaavan LaTeX-koodi'));
     const hint = document.createElement('span');
     hint.className = 'me-hint';
-    hint.textContent = 'Enter = uusi kaavarivi · Esc = valmis · muokkaa kaavaa ylhäällä tai LaTeXia tässä';
+    hint.textContent = t('Enter = uusi kaavarivi · Esc = valmis · muokkaa kaavaa ylhäällä tai LaTeXia tässä');
     wrap.append(field, ta, hint);
 
     if (replaceNode){ wrap.style.color = replaceNode.style.color; replaceNode.replaceWith(wrap); }
@@ -778,17 +963,17 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       if (e.key === 'Escape'){ e.preventDefault(); closeMath(true); }
       else if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); mathEnter(); }
     });
-    // Tab while editing an equation indents its line (and keeps the equation open);
-    // caught before MathQuill, which would otherwise move the cursor out
-    wrap.addEventListener('keydown', e => {
-      if (e.key !== 'Tab' || e.ctrlKey || e.altKey || e.metaKey) return;
-      e.preventDefault(); e.stopPropagation();
-      const line = lineOf(wrap);
-      if (line){ const lr = document.createRange(); lr.selectNodeContents(line); lr.collapse(true); indentLines(lr, e.shiftKey ? -1 : 1); }
-      if (e.target === ta) ta.focus(); else mq.focus();
-    }, true);
+    // Tab inside an equation is MathQuill's own: next cell of a matrix / table,
+    // and in the last column a new column. In the LaTeX box Tab types the column separator &.
+    ta.addEventListener('keydown', e => {
+      if (e.key !== 'Tab' || e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      ta.setRangeText(' & ', ta.selectionStart, ta.selectionEnd, 'end');
+      ta.dispatchEvent(new Event('input'));
+    });
     wrap.addEventListener('keydown', e => {
       if (e.key === 'Escape' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'e')){ e.preventDefault(); closeMath(true); }
+      if (e.key === 'Tab') e.preventDefault(); // never move keyboard focus off the board
       e.stopPropagation();
     });
     active = {wrap, mq, ta};
@@ -882,9 +1067,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   function buildToolbar(){
     const basic = document.createElement('div');
     basic.className = 'tb-row tb-basic';
-    const more = tbButton('Lisää merkkejä ▾', 'Näytä lisää erikoismerkkejä', () => {
+    const more = tbButton(t('Lisää merkkejä ▾'), t('Näytä lisää erikoismerkkejä'), () => {
       toolbar.classList.toggle('more');
-      more.textContent = toolbar.classList.contains('more') ? 'Vähemmän ▴' : 'Lisää merkkejä ▾';
+      more.textContent = toolbar.classList.contains('more') ? t('Vähemmän ▴') : t('Lisää merkkejä ▾');
     });
     more.classList.add('tb-more');
     basic.append(more);
@@ -897,7 +1082,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     });
     const eq = document.createElement('div');
     eq.className = 'tb-row tb-eq';
-    const lbl = document.createElement('span'); lbl.className = 'tb-label'; lbl.textContent = 'Kaava';
+    const lbl = document.createElement('span'); lbl.className = 'tb-label'; lbl.textContent = t('Kaava');
     eq.append(lbl);
     MATH.shortcuts.forEach(sc => {
       const img = document.createElement('img');
@@ -1216,7 +1401,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     lbl.className = 'img-label';
     lbl.style.left = x + '%'; lbl.style.top = y + '%';
     const grip = document.createElement('span');
-    grip.className = 'lbl-grip'; grip.contentEditable = 'false'; grip.title = 'Siirrä tekstiä vetämällä';
+    grip.className = 'lbl-grip'; grip.contentEditable = 'false'; grip.title = t('Siirrä tekstiä vetämällä');
     const text = document.createElement('span');
     text.className = 'lbl-text'; text.contentEditable = 'true'; text.spellcheck = true;
     lbl.append(grip, text);
@@ -1259,8 +1444,50 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     selectImg(wrap);
   });
   noteBody.addEventListener('scroll', placeImgBar);
+  // --- Ctrl+A on the board: select everything; Delete / Backspace / typing then
+  // clears the whole board (text, equations, images, drawings). The browser's own
+  // select-all selects nothing once a board has an image, so it is done here.
+  // Ctrl+Z right after brings it all back.
+  let allSelected = false, clearedBoard = null;
+  function selectWholeBoard(){
+    const r = document.createRange(); r.selectNodeContents(editor);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    setAllSelected(true);
+  }
+  function setAllSelected(on){ allSelected = on; editor.classList.toggle('all-selected', on); }
+  function boardIsEmpty(){ return !editor.textContent.replace(/[\s\u200B]/g, '') && !editor.querySelector('img,.math') && !strokes.length; }
+  function clearWholeBoard(){
+    if (!boardIsEmpty()) clearedBoard = {html: serialize(), strokes: strokes.slice()};
+    closeMath(false); hideImgBar();
+    editor.innerHTML = '';
+    strokes = []; current = null; redraw(); saveDrawing();
+    saveNow();
+    editor.focus();
+    setAllSelected(false);
+  }
+  function restoreClearedBoard(){
+    if (!clearedBoard || !boardIsEmpty()) return false;
+    editor.innerHTML = clearedBoard.html;
+    editor.querySelectorAll('.math').forEach(m => { m.contentEditable = 'false'; renderMath(m); });
+    normalizeImages();
+    strokes = clearedBoard.strokes; clearedBoard = null;
+    sizeCanvas(); saveDrawing(); saveNow();
+    return true;
+  }
+  editor.addEventListener('mousedown', () => setAllSelected(false));
+  editor.addEventListener('blur', () => setAllSelected(false));
   editor.addEventListener('keydown', e => {
     if (e.target.closest('.img-label')){ requestAnimationFrame(placeImgBar); return; }
+    const mod = e.ctrlKey || e.metaKey;
+    if (!e.target.closest('.math-editor')){
+      if (mod && !e.altKey && e.key.toLowerCase() === 'a'){ e.preventDefault(); selectWholeBoard(); return; }
+      if (mod && !e.altKey && !e.shiftKey && e.key.toLowerCase() === 'z' && restoreClearedBoard()){ e.preventDefault(); return; }
+      if (allSelected && !getSelection().isCollapsed){
+        if (e.key === 'Delete' || e.key === 'Backspace'){ e.preventDefault(); clearWholeBoard(); return; }
+        if (e.key.length === 1 && !mod && !e.altKey) clearWholeBoard(); // the typed letter replaces everything
+      }
+      if (!['Shift', 'Control', 'Meta', 'Alt'].includes(e.key)) setAllSelected(false);
+    }
     if (e.key === 'Tab' && !e.ctrlKey && !e.altKey && !e.metaKey && !e.target.closest('.math-editor')){
       e.preventDefault();
       const sel = getSelection();
@@ -1311,7 +1538,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   // --- Clock ---------------------------------------------------------------
   const clockTime = $('#clockTime');
   const clockDate = $('#clockDate');
-  const dateFmt = new Intl.DateTimeFormat('fi-FI', {weekday:'long', day:'numeric', month:'long'});
+  let dateFmt = new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'fi-FI', {weekday:'long', day:'numeric', month:'long'});
   function updateClock(){
     const d = new Date();
     const hh = String(d.getHours()).padStart(2,'0');
@@ -1366,17 +1593,32 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   // Position and size are stored in % of the workspace so the layout carries
   // over between a laptop and the classroom projector.
   const calcFrame = $('#calcFrame');
+  const calcBody = $('#calcBody');
+  const ABICUS_W = 416, ABICUS_H = 616;
+  function fitCalc(){
+    const bw = calcBody.clientWidth, bh = calcBody.clientHeight;
+    if (!bw || !bh) return;
+    const k = Math.min(bw / ABICUS_W, bh / ABICUS_H);
+    calcFrame.style.top = Math.max(0, (bh - ABICUS_H * k) / 2) + 'px';
+    calcFrame.style.transform = `translateX(-50%) scale(${k})`;
+  }
+  new ResizeObserver(fitCalc).observe(calcBody);
   const cardEls = {clock:$('#widget-clock'), timer:$('#widget-timer'), calc:$('#calc')};
   const CARD_DEFAULTS = {
     clock:{x:73, y:11, w:25, h:26, open:true},
     timer:{x:70, y:40, w:28, h:48, open:true},
-    calc:{x:46, y:11, w:24, h:86, open:false}
+    calc:{x:52, y:11, w:21, h:66, open:false}
   };
-  const CARD_MIN = {clock:[170,100], timer:[330,360], calc:[384,420]};
+  const CARD_MIN = {clock:[170,100], timer:[330,360], calc:[180,260]};
   let cardState = {};
   try{ cardState = JSON.parse(localStorage.getItem('kiviruukki.cards') || '{}'); }catch(_){ cardState = {}; }
   // the page opens clean: every card starts hidden (position and size are remembered)
   Object.keys(cardEls).forEach(k => { cardState[k] = Object.assign({}, CARD_DEFAULTS[k], cardState[k], {open: false}); });
+  // the calculator now scales: give an old, oversized saved calculator the new default size once
+  if (localStorage.getItem('kiviruukki.calcScaled') !== '1'){
+    Object.assign(cardState.calc, {w: CARD_DEFAULTS.calc.w, h: CARD_DEFAULTS.calc.h});
+    localStorage.setItem('kiviruukki.calcScaled', '1');
+  }
   let zTop = 20;
   function saveCards(){ try{ localStorage.setItem('kiviruukki.cards', JSON.stringify(cardState)); }catch(_){} }
   function applyCard(k){
@@ -1463,7 +1705,6 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   bgButtons.forEach(b=>b.addEventListener('click',()=>setBg(b.dataset.bg)));
   setBg(localStorage.getItem('kiviruukki.bg')||'light');
 
-  $('#presentationBtn').addEventListener('click',()=>document.body.classList.toggle('presentation'));
   async function toggleFullscreen(){
     try{ if(!document.fullscreenElement) await document.documentElement.requestFullscreen(); else await document.exitFullscreen(); }catch(_){ }
   }
@@ -1507,11 +1748,14 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   let penSize = Number(localStorage.getItem('kiviruukki.penSize') || 6);
   let erasing = false;
   let current = null;
+  // freehand strokes have no .s; shapes have s = 'ellipse' | 'rect' | 'line' | 'arrow' and p = [start, end]
+  const TOOLS = ['pen', 'ellipse', 'rect', 'line', 'arrow'];
+  let penTool = TOOLS.includes(localStorage.getItem('kiviruukki.penTool')) ? localStorage.getItem('kiviruukki.penTool') : 'pen';
 
   function saveDrawing(){
     if (boardStore){ boardStore.save({strokes}); return; }
     try{ localStorage.setItem('kiviruukki.drawing', JSON.stringify(strokes)); }
-    catch(_){ noteFooter.textContent = 'Piirroksen tallennus ei onnistunut: selaimen muisti on täynnä.'; noteFooter.classList.add('warn'); }
+    catch(_){ noteFooter.textContent = t('Piirroksen tallennus ei onnistunut: selaimen muisti on täynnä.'); noteFooter.classList.add('warn'); }
   }
   function sizeCanvas(){
     const maxY = strokes.reduce((m, st) => Math.max(m, ...st.p.map(q => q[1] + st.w)), 0);
@@ -1524,10 +1768,39 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     redraw();
   }
+  function drawShape(st){
+    const [[x1, y1], [x2, y2]] = st.p;
+    ctx.beginPath();
+    if (st.s === 'ellipse'){
+      ctx.ellipse((x1 + x2) / 2, (y1 + y2) / 2, Math.abs(x2 - x1) / 2, Math.abs(y2 - y1) / 2, 0, 0, Math.PI * 2);
+    } else if (st.s === 'rect'){
+      ctx.rect(Math.min(x1, x2), Math.min(y1, y2), Math.abs(x2 - x1), Math.abs(y2 - y1));
+    } else {
+      ctx.moveTo(x1, y1); ctx.lineTo(x2, y2);
+      if (st.s === 'arrow'){
+        const a = Math.atan2(y2 - y1, x2 - x1), head = Math.max(14, st.w * 3.2);
+        for (const d of [-0.45, 0.45]){ ctx.moveTo(x2, y2); ctx.lineTo(x2 - head * Math.cos(a + d), y2 - head * Math.sin(a + d)); }
+      }
+    }
+    ctx.stroke();
+  }
+  // points along a shape's outline, used by the eraser
+  function outline(st){
+    if (!st.s) return st.p;
+    const [[x1, y1], [x2, y2]] = st.p;
+    if (st.s === 'rect') return [[x1, y1], [x2, y1], [x2, y2], [x1, y2], [x1, y1]];
+    if (st.s === 'ellipse'){
+      const cx = (x1 + x2) / 2, cy = (y1 + y2) / 2, rx = Math.abs(x2 - x1) / 2, ry = Math.abs(y2 - y1) / 2, pts = [];
+      for (let i = 0; i <= 48; i++){ const t = i / 48 * Math.PI * 2; pts.push([cx + rx * Math.cos(t), cy + ry * Math.sin(t)]); }
+      return pts;
+    }
+    return st.p;
+  }
   function drawStroke(st){
     const pts = st.p;
     ctx.strokeStyle = st.c; ctx.fillStyle = st.c;
     ctx.lineWidth = st.w; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    if (st.s){ drawShape(st); return; }
     if (pts.length === 1){ ctx.beginPath(); ctx.arc(pts[0][0], pts[0][1], st.w / 2, 0, Math.PI * 2); ctx.fill(); return; }
     ctx.beginPath();
     ctx.moveTo(pts[0][0], pts[0][1]);
@@ -1558,8 +1831,9 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const before = strokes.length;
     strokes = strokes.filter(st => {
       const r = st.w / 2 + 12;
-      if (st.p.length === 1) return Math.hypot(pt[0]-st.p[0][0], pt[1]-st.p[0][1]) > r;
-      for (let i = 1; i < st.p.length; i++) if (segDist(pt, st.p[i-1], st.p[i]) <= r) return false;
+      const o = outline(st);
+      if (o.length === 1) return Math.hypot(pt[0]-o[0][0], pt[1]-o[0][1]) > r;
+      for (let i = 1; i < o.length; i++) if (segDist(pt, o[i-1], o[i]) <= r) return false;
       return true;
     });
     if (strokes.length !== before) redraw();
@@ -1571,14 +1845,27 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     const pt = pointFrom(e);
     const eraser = erasing || e.button === 5 || (e.buttons & 32);
     if (eraser){ current = {erase: true}; eraseAt(pt); return; }
+    if (penTool !== 'pen'){ current = {s: penTool, c: penColor, w: penSize, p: [pt, pt]}; redraw(); return; }
     const w = e.pointerType === 'pen' && e.pressure ? penSize * (0.6 + e.pressure * 0.8) : penSize;
     current = {c: penColor, w: Math.round(w * 10) / 10, p: [pt]};
     redraw();
   });
+  // shape end point; Shift makes a circle / square, or snaps a line to 45° steps
+  function shapeEnd(start, pt, shift){
+    if (!shift) return pt;
+    let dx = pt[0] - start[0], dy = pt[1] - start[1];
+    if (current.s === 'ellipse' || current.s === 'rect'){
+      const m = Math.max(Math.abs(dx), Math.abs(dy));
+      return [start[0] + Math.sign(dx || 1) * m, start[1] + Math.sign(dy || 1) * m];
+    }
+    const len = Math.hypot(dx, dy), a = Math.round(Math.atan2(dy, dx) / (Math.PI / 4)) * (Math.PI / 4);
+    return [start[0] + len * Math.cos(a), start[1] + len * Math.sin(a)];
+  }
   canvas.addEventListener('pointermove', e => {
     if (!current) return;
     const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     if (current.erase){ events.forEach(ev => eraseAt(pointFrom(ev))); return; }
+    if (current.s){ current.p[1] = shapeEnd(current.p[0], pointFrom(e), e.shiftKey); redraw(); return; }
     events.forEach(ev => {
       const pt = pointFrom(ev), last = current.p[current.p.length - 1];
       if (Math.hypot(pt[0] - last[0], pt[1] - last[1]) >= 1.5) current.p.push(pt);
@@ -1587,7 +1874,11 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   });
   function endStroke(){
     if (!current) return;
-    if (!current.erase) strokes.push(current);
+    const tiny = current.s && Math.hypot(current.p[1][0] - current.p[0][0], current.p[1][1] - current.p[0][1]) < 4;
+    if (!current.erase && !tiny){
+      if (current.s) current.p = current.p.map(q => [Math.round(q[0] * 10) / 10, Math.round(q[1] * 10) / 10]);
+      strokes.push(current);
+    }
     current = null;
     redraw(); saveDrawing();
   }
@@ -1603,6 +1894,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   function setEraser(on){
     erasing = on;
     eraserBtn.classList.toggle('on', on);
+    $$('#penBar .tool').forEach(x => x.classList.toggle('on', !on && x.dataset.tool === penTool));
     noteWidget.classList.toggle('erasing', on);
   }
   function undoDrawing(){ if (strokes.length){ strokes.pop(); redraw(); saveDrawing(); } }
@@ -1610,7 +1902,14 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
   $('#penDoneBtn').addEventListener('click', () => setPen(false));
   eraserBtn.addEventListener('click', () => setEraser(!erasing));
   $('#undoDrawBtn').addEventListener('click', undoDrawing);
-  $('#clearDrawBtn').addEventListener('click', async () => { if (strokes.length && await askConfirm('Poistetaanko kaikki piirrokset?', '', 'Poista')) clearDrawing(); });
+  $('#clearDrawBtn').addEventListener('click', async () => { if (strokes.length && await askConfirm(t('Poistetaanko kaikki piirrokset?'), '', t('Poista'))) clearDrawing(); });
+  function setTool(t){
+    penTool = t; localStorage.setItem('kiviruukki.penTool', t);
+    $$('#penBar .tool').forEach(x => x.classList.toggle('on', x.dataset.tool === t));
+    setEraser(false);
+  }
+  $$('#penBar .tool').forEach(b => b.addEventListener('click', () => setTool(b.dataset.tool)));
+  $$('#penBar .tool').forEach(x => x.classList.toggle('on', x.dataset.tool === penTool));
   $$('#penBar .swatch').forEach(b => {
     b.classList.toggle('on', b.dataset.color === penColor);
     b.addEventListener('click', () => {
@@ -1644,7 +1943,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     function warn(msg){ noteFooter.textContent = msg; noteFooter.classList.add('warn'); }
     function put(board){
       return req(tx('readwrite').put(board)).then(() => { noteFooter.classList.remove('warn'); noteFooter.textContent = ''; })
-        .catch(() => warn('Taulun tallennus ei onnistunut: selaimen tallennustila on täynnä. Poista kuvia tai vanhoja tauluja.'));
+        .catch(() => warn(t('Taulun tallennus ei onnistunut: selaimen tallennustila on täynnä. Poista kuvia tai vanhoja tauluja.')));
     }
     function flush(){
       // capture what is on screen right now (typing may still be waiting for its debounced save)
@@ -1656,8 +1955,8 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     }
     function nextName(){
       let i = list.length + 1;
-      while (list.some(b => b.name === 'Taulu ' + i)) i++;
-      return 'Taulu ' + i;
+      while (list.some(b => b.name === t('Taulu') + ' ' + i)) i++;
+      return t('Taulu') + ' ' + i;
     }
     function isEmpty(b){
       const t = document.createElement('div'); t.innerHTML = b.html || '';
@@ -1671,27 +1970,28 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         tab.className = 'board-tab' + (current && b.id === current.id ? ' on' : '');
         const name = document.createElement('button');
         name.textContent = b.name;
-        name.title = b.id === (current && current.id) ? 'Nimeä uudelleen: tuplaklikkaa' : 'Avaa taulu';
+        name.title = b.id === (current && current.id) ? t('Nimeä uudelleen: tuplaklikkaa') : t('Avaa taulu');
+        name.setAttribute('data-noi18n', '');
         name.addEventListener('click', () => open(b.id));
         name.addEventListener('dblclick', () => rename(b.id));
         const ren = document.createElement('button');
-        ren.className = 'bt-act'; ren.textContent = '✎'; ren.title = 'Nimeä taulu uudelleen'; ren.setAttribute('aria-label', 'Nimeä taulu uudelleen');
+        ren.className = 'bt-act'; ren.textContent = '✎'; ren.title = t('Nimeä taulu uudelleen'); ren.setAttribute('aria-label', t('Nimeä taulu uudelleen'));
         ren.addEventListener('click', () => rename(b.id));
         const del = document.createElement('button');
-        del.className = 'bt-act'; del.textContent = '×'; del.title = 'Poista taulu'; del.setAttribute('aria-label', 'Poista taulu');
+        del.className = 'bt-act'; del.textContent = '×'; del.title = t('Poista taulu'); del.setAttribute('aria-label', t('Poista taulu'));
         del.addEventListener('click', () => remove(b.id));
         tab.append(name, ren, del);
         nav.append(tab);
       });
       const add = document.createElement('button');
-      add.className = 'board-add'; add.textContent = '+'; add.title = 'Uusi taulu'; add.setAttribute('aria-label', 'Uusi taulu');
+      add.className = 'board-add'; add.textContent = '+'; add.title = t('Uusi taulu'); add.setAttribute('aria-label', t('Uusi taulu'));
       add.addEventListener('click', create);
       nav.append(add);
       const exp = document.createElement('button');
-      exp.className = 'board-io'; exp.textContent = 'Tallenna'; exp.title = 'Tallenna kaikki taulut tiedostoon (varmuuskopio)';
+      exp.className = 'board-io'; exp.textContent = t('Tallenna'); exp.title = t('Tallenna kaikki taulut tiedostoon (varmuuskopio)');
       exp.addEventListener('click', exportBoards);
       const imp = document.createElement('button');
-      imp.className = 'board-io'; imp.textContent = 'Avaa'; imp.title = 'Avaa taulut tallennetusta tiedostosta';
+      imp.className = 'board-io'; imp.textContent = t('Avaa'); imp.title = t('Avaa taulut tallennetusta tiedostosta');
       imp.addEventListener('click', () => importInput.click());
       nav.append(exp, imp);
       nav.querySelector('.board-tab.on')?.scrollIntoView({inline: 'nearest', block: 'nearest'});
@@ -1715,7 +2015,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       render();
     }
     async function create(){
-      const name = (await askText('Uusi taulu', nextName(), 'Luo taulu')) || '';
+      const name = (await askText(t('Uusi taulu'), nextName(), t('Luo taulu'))) || '';
       if (!name) return;
       const b = {id: uid(), name, html: '', strokes: [], created: Date.now()};
       list.push(b);
@@ -1725,13 +2025,13 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     }
     async function rename(id){
       const b = list.find(x => x.id === id); if (!b) return;
-      const name = (await askText('Nimeä taulu', b.name)) || '';
+      const name = (await askText(t('Nimeä taulu'), b.name)) || '';
       if (!name || name === b.name) return;
       b.name = name; put(b); render();
     }
     async function remove(id){
       const b = list.find(x => x.id === id); if (!b) return;
-      if (!await askConfirm('Poistetaanko taulu "' + b.name + '"?', 'Sen sisältö häviää pysyvästi.')) return;
+      if (!await askConfirm(t('Poistetaanko taulu') + ' "' + b.name + '"?', t('Sen sisältö häviää pysyvästi.'))) return;
       await req(tx('readwrite').delete(id)).catch(() => {});
       list = list.filter(x => x.id !== id);
       if (current && current.id === id){
@@ -1754,7 +2054,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       const d = new Date(), pad = n => String(n).padStart(2, '0');
-      a.download = 'taulu.' + pad(d.getDate()) + '-' + pad(d.getMonth() + 1) + '.json'; // local date, DD-MM
+      a.download = t('taulu') + '.' + pad(d.getDate()) + '-' + pad(d.getMonth() + 1) + '.json'; // local date, DD-MM
       document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 10000);
     }
@@ -1764,7 +2064,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       let data;
       try{ data = JSON.parse(await file.text()); }catch(_){ data = null; }
       if (!data || data.app !== 'kiviruukki-classroom' || !Array.isArray(data.boards)){
-        showInfo('Tiedostoa ei voitu avata', 'Valitse Tallenna-napilla tehty taulutiedosto.'); return;
+        showInfo(t('Tiedostoa ei voitu avata'), t('Valitse Tallenna-napilla tehty taulutiedosto.')); return;
       }
       await flush();
       let added = 0, first = null;
@@ -1786,16 +2086,17 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         list = list.filter(x => x.id !== empty.id);
       }
       if (first) await open(first.id); else render();
-      showInfo(added ? 'Avattu ' + added + (added === 1 ? ' taulu' : ' taulua') : 'Kaikki taulut olivat jo täällä',
-        added ? 'Löydät ne ylhäältä välilehdistä.' : '');
+      const opened = lang === 'en' ? 'Opened ' + added + (added === 1 ? ' board' : ' boards') : 'Avattu ' + added + (added === 1 ? ' taulu' : ' taulua');
+      showInfo(added ? opened : t('Kaikki taulut olivat jo täällä'), added ? t('Löydät ne ylhäältä välilehdistä.') : '');
     });
 
+    document.addEventListener('langchange', () => render());
     function init(){
       // ask the browser not to clear the boards on its own when disk space runs low
       try{ navigator.storage && navigator.storage.persist && navigator.storage.persist(); }catch(_){}
       const r = indexedDB.open(DB, 1);
       r.onupgradeneeded = () => r.result.createObjectStore(STORE, {keyPath: 'id'});
-      r.onerror = () => warn('Taulujen tallennus ei ole käytössä tässä selaimessa; teksti tallentuu vain yhteen tauluun.');
+      r.onerror = () => warn(t('Taulujen tallennus ei ole käytössä tässä selaimessa; teksti tallentuu vain yhteen tauluun.'));
       r.onsuccess = async () => {
         db = r.result;
         list = (await req(tx('readonly').getAll()).catch(() => [])).sort((a, b) => a.created - b.created);
@@ -1824,6 +2125,41 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     }
     if (window.indexedDB) init();
   })();
+
+  // --- Language button and the embedded timer page -------------------------
+  const langBtn = $('#langBtn');
+  let timerObs = null;
+  function translateTimer(){
+    let doc; try{ doc = timerFrame.contentDocument; }catch(_){ return; }
+    if (!doc || !doc.body) return;
+    translateTree(doc.body);
+    if (!timerObs || timerObs.doc !== doc){
+      // the timer page changes its button texts while it runs: translate them as they appear
+      if (timerObs) timerObs.disconnect();
+      timerObs = new MutationObserver(() => translateTree(doc.body)); timerObs.doc = doc;
+      timerObs.observe(doc.body, {subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['aria-label', 'title']});
+    }
+  }
+  timerFrame.addEventListener('load', translateTimer);
+  function applyLang(){
+    document.documentElement.lang = lang;
+    translateTree(document.body);
+    editor.dataset.placeholder = t('Kirjoita tähän…');
+    editor.setAttribute('aria-label', t('Luokan näytölle kirjoitettava teksti'));
+    document.body.style.setProperty('--ph-label', JSON.stringify(t('Kirjoita…')));
+    langBtn.textContent = lang === 'en' ? 'FI' : 'EN';
+    langBtn.title = lang === 'en' ? 'Suomeksi' : 'In English';
+    dateFmt = new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'fi-FI', {weekday: 'long', day: 'numeric', month: 'long'});
+    updateClock();
+    translateTimer();
+    document.dispatchEvent(new Event('langchange'));
+  }
+  langBtn.addEventListener('click', () => {
+    lang = lang === 'en' ? 'fi' : 'en';
+    localStorage.setItem('kiviruukki.lang', lang);
+    applyLang();
+  });
+  applyLang();
 })();
 </script>
 </body>

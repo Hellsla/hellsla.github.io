@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Momentti ja tasapaino · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ---------- */
+  :root{
+    --bg:#ffffff; --panel:#f8f8f6;
+    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
+    --line:#e4e4e0; --line-2:#cfcfca;
+    --accent:#2f6f9f; --accent-soft:#e7eff6;
+    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    font:14px/1.35 var(--font);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:clamp(212px,24vw,262px);background:var(--panel);border-left:1px solid var(--line);
+    padding:12px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 26px;padding:9px 18px 11px}
+  .group{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-2);white-space:nowrap}
+  .ctl-head > span:first-child{white-space:normal;min-width:0}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;margin:0;background:transparent;cursor:pointer;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:6px}
+  input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-7px;border-radius:50%;
+    background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  .chk{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;user-select:none;min-height:26px;white-space:nowrap}
+  .chk input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .btns{display:flex;gap:6px;flex-wrap:wrap}
+  .btn{font:inherit;font-size:13px;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    min-height:32px;padding:0 11px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:14px;height:14px;flex:none}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:13px;border:0;background:transparent;padding:0 12px;min-height:30px;color:var(--ink-2);cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  @media (max-height:500px),(max-width:700px){        /* pienet upotukset: tiiviimmät säätimet */
+    .panel{padding:8px 10px;gap:7px}
+    .app.is-bottom .panel{padding:6px 12px 8px;gap:5px 14px}
+    .group{gap:2px}
+    .ctl-head{font-size:12px}
+    input[type=range]{height:20px}
+    .btn{min-height:28px;padding:0 9px;font-size:12.5px}
+    .seg button{min-height:26px;padding:0 9px;font-size:12.5px}
+    .chk{min-height:21px;font-size:12.5px}
+  }
+  @media (max-aspect-ratio:4/5),(max-width:560px){
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .panel .side{flex:1 1 170px;max-width:330px}
+  .app.is-bottom .panel{gap:8px 18px}
+  .panel .mid{flex:0 1 auto;display:grid;grid-template-columns:auto auto;gap:6px 16px;align-items:center;justify-items:start}
+  @media (max-width:700px){
+    .panel .side{flex:1 1 40%}
+    .panel .mid{order:3;flex:1 1 100%;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 14px}
+  }
+</style>
+</head>
+<body>
+<div class="app is-bottom">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Vaakasuora palkki, joka voi kiertyä keskellä olevan tukipisteen ympäri. Palkkiin vaikuttaa kaksi alaspäin suuntautuvaa voimaa."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <div class="group side">
+      <label class="ctl"><span class="ctl-head"><span><span class="nm1">Voima</span> <span class="sym q1">F</span><sub>1</sub></span><b data-for="q1"></b></span>
+        <input id="q1" type="range" min="0" max="50" step="1" value="20" aria-label="Vasemman voiman suuruus"></label>
+      <label class="ctl"><span class="ctl-head"><span>Etäisyys <span class="sym">r</span><sub>1</sub></span><b data-for="r1"></b></span>
+        <input id="r1" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="Vasemman voiman etäisyys tukipisteestä"></label>
+    </div>
+
+    <div class="group mid">
+      <div class="seg" role="group" aria-label="Kuormitus">
+        <button type="button" data-mode="force" aria-pressed="true">Voimat</button><button type="button" data-mode="mass" aria-pressed="false">Punnukset</button>
+      </div>
+      <button class="btn" id="reset" type="button" title="Palauta alkutilanne">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <label class="chk"><input type="checkbox" id="showM"> Näytä momentit</label>
+      <label class="chk"><input type="checkbox" id="lock"> Lukitse palkki</label>
+    </div>
+
+    <div class="group side">
+      <label class="ctl"><span class="ctl-head"><span><span class="nm2">Voima</span> <span class="sym q2">F</span><sub>2</sub></span><b data-for="q2"></b></span>
+        <input id="q2" type="range" min="0" max="50" step="1" value="30" aria-label="Oikean voiman suuruus"></label>
+      <label class="ctl"><span class="ctl-head"><span>Etäisyys <span class="sym">r</span><sub>2</sub></span><b data-for="r2"></b></span>
+        <input id="r2" type="range" min="0" max="1" step="0.05" value="0.4" aria-label="Oikean voiman etäisyys tukipisteestä"></label>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    view.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    view.W = Math.max(1, r.width); view.H = Math.max(1, r.height);
+    cv.width = Math.round(view.W * view.dpr); cv.height = Math.round(view.H * view.dpr);
+    if (onResize) onResize(view);
+  };
+  new ResizeObserver(resize).observe(cv);
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: palkki, joka kiertyy keskeltä tuetun akselin ympäri
+   ===================================================================== */
+const g = 9.81;          // putoamiskiihtyvyys, m/s²
+const HALF = 1.0;        // palkin puolikkaan pituus, m (palkki 2,0 m)
+const TH_MAX = 8 * Math.PI / 180;   // suurin kallistus: palkki nojaa tukeen
+const I_BEAM = 3.0;      // palkin hitausmomentti, kg·m² (vain liikkeen rauhallisuutta varten)
+const DAMP = 1.6;        // vaimennus, 1/s (laakerin kitka ja ilmanvastus)
+
+const DEF = { force: [20, 30], mass: [2.0, 3.0], r: [0.6, 0.4] };
+const S = {
+  mode: 'force',                // 'force' = voimat nuolina, 'mass' = riippuvat punnukset
+  F: DEF.force.slice(),         // voimat N (voimatila)
+  m: DEF.mass.slice(),          // massat kg (punnustila)
+  r: DEF.r.slice(),             // etäisyydet tukipisteestä, m
+  th: 0, om: 0,                 // kallistuskulma (rad, vastapäivään +) ja kulmanopeus
+  hold: 0,                      // palkkia pidetään vaakasuorassa (s) säätämisen ajan
+  lock: false, showM: false,
+  drag: -1, hover: -1,
+};
+
+/** Voimien suuruudet, N. Punnustilassa F = mg. */
+const forces = () => S.mode === 'force' ? [S.F[0], S.F[1]] : [S.m[0] * g, S.m[1] * g];
+
+/** Momentit kohtisuorien voimien tapauksessa: M = rF.
+    Etumerkki: vastapäivään kiertävä momentti on positiivinen.
+    Vasen voima kiertää palkkia vastapäivään, oikea myötäpäivään. */
+function moments() {
+  const [F1, F2] = forces();
+  const M1 = S.r[0] * F1, M2 = -S.r[1] * F2;
+  return { M1, M2, sum: M1 + M2 };
+}
+/** Tasapainon tarkistus kokonaisluvuilla (r senttimetreinä, F newtoneina tai m hehtogrammoina),
+    jotta liukulukujen pyöristys ei estä tarkkaa tasapainoa ΣM = 0. */
+function exactSign() {
+  const r1 = Math.round(S.r[0] * 100), r2 = Math.round(S.r[1] * 100);
+  const q1 = S.mode === 'force' ? Math.round(S.F[0]) : Math.round(S.m[0] * 10);
+  const q2 = S.mode === 'force' ? Math.round(S.F[1]) : Math.round(S.m[1] * 10);
+  return Math.sign(r1 * q1 - r2 * q2);
+}
+
+/** Yksi aika-askel. Liikeyhtälö kiertoliikkeelle: I·α = ΣM.
+    Pystysuorien voimien momenttivarsi kallistetussa palkissa on r·cos θ. */
+function step(dt) {
+  if (S.lock || S.drag >= 0 || S.hold > 0) {
+    S.hold = Math.max(0, S.hold - dt);
+    S.th = 0; S.om = 0;
+    return;
+  }
+  const sgn = exactSign();
+  const sumM = sgn === 0 ? 0 : moments().sum;
+  let I = I_BEAM;
+  if (S.mode === 'mass') I += S.m[0] * S.r[0] ** 2 + S.m[1] * S.r[1] ** 2;   // punnukset lisäävät hitautta
+  const alpha = sumM * Math.cos(S.th) / I - DAMP * S.om;
+  S.om += alpha * dt;                 // puoli-implisiittinen Euler
+  S.th += S.om * dt;
+  if (Math.abs(S.th) > TH_MAX) {      // palkki osuu tukeen ja pomppaa hieman
+    S.th = Math.sign(S.th) * TH_MAX;
+    if (S.om * S.th > 0) S.om *= -0.25;
+    if (Math.abs(S.om) < 0.02) S.om = 0;
+  }
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};   // asettelu (px)
+const view = setupCanvas(cv, layout);
+
+function layout(v) {
+  const { W, H } = v;
+  const fs = clamp(Math.min(W / 62, H / 32), 12, 16);
+  const s = Math.min(W * 0.41, H * 1.1) / HALF;           // pikseliä metriä kohti
+  const t = Math.max(12, Math.round(s * 0.034));           // palkin paksuus, px
+  const cx = Math.round(W / 2);
+  const ground = H - Math.max(10, H * 0.03);
+  const boxBottom = fs * 4.9;                               // momenttilaatikon alareuna
+  // Voimatilassa nuolet ovat palkin yläpuolella, punnustilassa punnukset roikkuvat alapuolella:
+  // palkin korkeus valitaan niin, että tilaa jää kummassakin tapauksessa.
+  const cyF = Math.round(H * 0.56), cyM = Math.round(H * 0.36);
+  const cy = S.mode === 'force' ? cyF : cyM;
+  // Voima-asteikko (px/N): voimatilassa 50 N:n nuoli mahtuu palkin yläpuolelle,
+  // punnustilassa naru + suurin punnus + nimiö + kallistuksen aiheuttama lasku mahtuvat maan yläpuolelle.
+  const upRoom = cyF - t / 2 - boxBottom - fs * 1.5;
+  const downRoom = ground - cyM - t / 2 - 6 - blockSide(5) - fs * 1.8 - HALF * s * Math.sin(TH_MAX) - 8;
+  const kF = Math.max(0.4, upRoom) / 50, kFm = Math.max(0.4, downRoom) / 50;
+  L = { W, H, fs, s, cx, cy, ground, kF, kFm, t };
+}
+/** Punnuksen sivun pituus (px): tilavuus ∝ massa, joten sivu ∝ ∛m. */
+function blockSide(m) { return m > 0 ? 16 + 18 * Math.cbrt(m) : 0; }
+
+/** Palkin piste etäisyydellä u (m, vasen negatiivinen) ja sivusiirtymällä n (px, ylös +). */
+function beamPt(u, n = 0) {
+  const c = Math.cos(S.th), sn = Math.sin(S.th);
+  return { x: L.cx + u * L.s * c - n * sn, y: L.cy - u * L.s * sn - n * c };
+}
+/** Voiman vaikutuspiste (voimatilassa yläpinta, punnustilassa koukku alapinnassa). */
+function attach(i) {
+  const u = (i === 0 ? -1 : 1) * S.r[i];
+  return beamPt(u, S.mode === 'force' ? L.t / 2 : -L.t / 2);
+}
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs, s, cx, cy, t } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const [F1, F2] = forces();
+  const colF = [COL.blue, COL.red];
+
+  // --- jalusta: maa, pylväs ja tukipalkki, johon kallistunut palkki nojaa ---
+  const crossW = 0.22 * s, gap = crossW * Math.tan(TH_MAX);
+  const crossY = cy + t / 2 + gap;
+  ctx.strokeStyle = COL.line2; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(cx - 0.62 * s, L.ground + 0.5); ctx.lineTo(cx + 0.62 * s, L.ground + 0.5); ctx.stroke();
+  ctx.fillStyle = '#ecebe7'; ctx.strokeStyle = '#b7b5ae'; ctx.lineWidth = 1;
+  roundRect(ctx, cx - 5, crossY, 10, L.ground - crossY, 2); ctx.fill(); ctx.stroke();
+  roundRect(ctx, cx - 46, L.ground - 7, 92, 7, 3); ctx.fill(); ctx.stroke();
+  roundRect(ctx, cx - crossW - 4, crossY, 2 * crossW + 8, 6, 3); ctx.fill(); ctx.stroke();
+  if (S.lock) {                     // lukitus: kiilat täyttävät raon palkin ja tuen välissä
+    ctx.fillStyle = COL.ink3;
+    for (const sx of [-1, 1]) {
+      ctx.beginPath();
+      ctx.moveTo(cx + sx * (crossW - 14), crossY); ctx.lineTo(cx + sx * crossW, crossY);
+      ctx.lineTo(cx + sx * crossW, cy + t / 2); ctx.lineTo(cx + sx * (crossW - 14), cy + t / 2); ctx.closePath(); ctx.fill();
+    }
+  }
+
+  // --- palkki ---
+  ctx.save();
+  ctx.translate(cx, cy); ctx.rotate(-S.th);
+  ctx.fillStyle = '#f3f1ea'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.3;
+  roundRect(ctx, -HALF * s - 6, -t / 2, 2 * HALF * s + 12, t, 3); ctx.fill(); ctx.stroke();
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1;     // asteikko 0,1 m välein
+  ctx.beginPath();
+  for (let k = -10; k <= 10; k++) {
+    if (k === 0) continue;
+    const x = k * 0.1 * s, len = (k % 5 === 0) ? t * 0.62 : t * 0.32;
+    ctx.moveTo(x, -t / 2); ctx.lineTo(x, -t / 2 + len);
+  }
+  ctx.stroke();
+  ctx.restore();
+
+  // --- punnukset ---
+  if (S.mode === 'mass') {
+    for (let i = 0; i < 2; i++) {
+      const p = attach(i), m = S.m[i];
+      const strLen = 50 * L.kFm;                        // narun pituus = suurimman nuolen pituus
+      const side = blockSide(m);
+      ctx.strokeStyle = COL.ink2; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p.x, p.y + strLen + (m > 0 ? 6 : 0)); ctx.stroke();
+      if (m > 0) {
+        const y0 = p.y + strLen + 6;
+        ctx.fillStyle = '#e9e7e1'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.2;
+        roundRect(ctx, p.x - side / 2, y0, side, side * 0.95, 3); ctx.fill(); ctx.stroke();
+        drawRich(ctx, fmt(m, 1) + NBSP + 'kg', p.x, y0 + side * 0.95 + fs * 0.85, { size: fs * 0.86, color: COL.ink2, align: 'center' });
+      }
+    }
+  }
+
+  // --- voimat nuolina ---
+  for (let i = 0; i < 2; i++) {
+    const p = attach(i), F = i ? F2 : F1, lbl = `{F}_${i + 1} = ${fmt(F, S.mode === 'force' ? 0 : 1)}${NBSP}N`;
+    if (S.mode === 'force') {
+      const len = F * L.kF;
+      if (F > 0) arrow(ctx, p.x, p.y - len, p.x, p.y, colF[i], { width: 3 });
+      drawRich(ctx, lbl, p.x, p.y - len - fs * 0.95, { size: fs, color: colF[i], align: 'center', halo: true });
+    } else {
+      const len = F * L.kFm;
+      if (F > 0) arrow(ctx, p.x, p.y, p.x, p.y + len, colF[i], { width: 3 });
+      drawRich(ctx, lbl, p.x + (i ? 12 : -12), p.y + Math.max(len, 20) * 0.5 + 6, { size: fs * 0.95, color: colF[i], align: i ? 'left' : 'right', halo: true });
+    }
+  }
+
+  // --- momenttivarret mittaviivoina ---
+  const off = S.mode === 'force' ? -(t / 2 + fs * 1.5) : (t / 2 + fs * 1.4);
+  for (let i = 0; i < 2; i++) {
+    const u = (i ? 1 : -1) * S.r[i];
+    if (S.r[i] < 0.001) continue;
+    const a = beamPt(0, off), b = beamPt(u, off);
+    const c = Math.cos(S.th), sn = Math.sin(S.th), nx = -sn * 5, ny = -c * 5;
+    ctx.strokeStyle = colF[i]; ctx.globalAlpha = 0.75; ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+    ctx.moveTo(a.x - nx, a.y - ny); ctx.lineTo(a.x + nx, a.y + ny);
+    ctx.moveTo(b.x - nx, b.y - ny); ctx.lineTo(b.x + nx, b.y + ny);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+    const mid = beamPt(u / 2, off + (off < 0 ? -fs * 0.85 : fs * 0.85));
+    drawRich(ctx, `{r}_${i + 1} = ${fmt(S.r[i], 2)}${NBSP}m`, mid.x, mid.y, { size: fs * 0.92, color: colF[i], align: 'center', halo: true });
+  }
+
+  // --- tukipiste (akseli) ---
+  ctx.fillStyle = '#fff'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(cx, cy, Math.max(4.5, t * 0.42), 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(cx, cy, 1.6, 0, 2 * Math.PI); ctx.fill();
+
+  // --- vaikutuspisteet (raahattavat kahvat) ---
+  for (let i = 0; i < 2; i++) {
+    const p = attach(i), active = S.drag === i || S.hover === i;
+    ctx.fillStyle = '#fff'; ctx.strokeStyle = colF[i]; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(p.x, p.y, active ? 7 : 5.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+    if (active || S.drag < 0) {                // pienet nuolet vihjaavat raahattavuudesta
+      const q = beamPt((i ? 1 : -1) * S.r[i], S.mode === 'force' ? L.t / 2 + 7 : -L.t / 2 - 7);
+      ctx.globalAlpha = active ? 0.9 : 0.35; ctx.strokeStyle = colF[i]; ctx.lineWidth = 1.4;
+      const c = Math.cos(S.th), sn = -Math.sin(S.th);
+      for (const d of [-1, 1]) {
+        const tx = q.x + d * 13 * c, ty = q.y + d * 13 * sn;
+        ctx.beginPath();
+        ctx.moveTo(tx - d * 4 * c - 3 * sn, ty - d * 4 * sn + 3 * c);
+        ctx.lineTo(tx, ty);
+        ctx.lineTo(tx - d * 4 * c + 3 * sn, ty - d * 4 * sn - 3 * c);
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  if (S.showM) drawMoments();
+}
+
+/** Kaarinuoli tukipisteen ympäri. Kaari alkaa ylhäältä ja kiertyy momentin suuntaan;
+    kaaren pituus on verrannollinen momentin suuruuteen (4° / Nm). */
+function torqueArc(R, M, color, width) {
+  const { ctx } = view, { cx, cy } = L;
+  const sweep = Math.min(170, 4 * Math.abs(M)) * Math.PI / 180;
+  if (sweep < 0.03) return;
+  const ccw = M > 0;                       // vastapäivään: näytön kulma pienenee
+  const a0 = -Math.PI / 2, a1 = a0 + (ccw ? -sweep : sweep);
+  const headA = Math.min(sweep * 0.6, 11 / R);
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = width; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.arc(cx, cy, R, a0, a1 + (ccw ? headA : -headA), ccw); ctx.stroke();
+  const ex = cx + R * Math.cos(a1), ey = cy + R * Math.sin(a1);
+  const tx = (ccw ? 1 : -1) * Math.sin(a1), ty = (ccw ? -1 : 1) * Math.cos(a1);   // liikesuunnan tangentti
+  const bx = ex - tx * 11, by = ey - ty * 11;
+  ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(bx - ty * 5.5, by + tx * 5.5); ctx.lineTo(bx + ty * 5.5, by - tx * 5.5); ctx.closePath(); ctx.fill();
+}
+
+function drawMoments() {
+  const { ctx } = view, { fs, cx } = L;
+  const { M1, M2, sum } = moments();
+  const balanced = exactSign() === 0;
+  torqueArc(fs * 3.2, M1, COL.blue, 2.4);
+  torqueArc(fs * 3.2, M2, COL.red, 2.4);
+  torqueArc(fs * 4.6, balanced ? 0 : sum, COL.ink, 2.8);
+
+  // lukuarvot ylhäällä keskellä: nimi | = | arvo (tasattu oikealle)
+  const rows = [
+    [`{M}_1 = {r}_1{F}_1`, M1, COL.blue],
+    [`{M}_2 = ${MINUS}{r}_2{F}_2`, M2, COL.red],
+    [`Σ{M} = {M}_1 + {M}_2`, balanced ? 0 : sum, balanced ? COL.green : COL.ink],
+  ];
+  const f = fs * 0.98, lh = f * 1.42, y0 = f * 1.05;
+  const wl = Math.max(...rows.map((r) => drawRich(ctx, r[0], 0, 0, { size: f, measure: true })));
+  const vals = rows.map((r) => `${fmt(r[1], 2)}${NBSP}Nm`);
+  const wv = Math.max(...vals.map((v) => drawRich(ctx, v, 0, 0, { size: f, measure: true, weight: 600 })),
+                      drawRich(ctx, `${MINUS}00,00${NBSP}Nm`, 0, 0, { size: f, measure: true, weight: 600 }));
+  const weq = drawRich(ctx, '=', 0, 0, { size: f, measure: true });
+  const total = wl + f * 0.5 + weq + f * 0.7 + wv, x0 = Math.max(8, cx - total / 2);
+  rows.forEach(([lab, , col], k) => {
+    const y = y0 + k * lh;
+    drawRich(ctx, lab, x0, y, { size: f, color: col, halo: true });
+    drawRich(ctx, '=', x0 + wl + f * 0.5, y, { size: f, color: col, halo: true });
+    drawRich(ctx, vals[k], x0 + total, y, { size: f, color: col, align: 'right', weight: 600, halo: true });
+  });
+  drawRich(ctx, balanced ? '✓ tasapaino' : '(vastapäivään +)', x0 + total + f * 0.7, y0 + 2 * lh,
+    { size: f * 0.84, color: balanced ? COL.green : COL.ink3, weight: balanced ? 600 : 400 });
+}
+
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const held = () => { S.th = 0; S.om = 0; S.hold = 0.35; };   // säätäessä palkkia pidetään vaakasuorassa
+const showQ = (v) => S.mode === 'force' ? fmt(v, 0) + NBSP + 'N' : fmt(v, 1) + NBSP + 'kg';
+const q1 = bindRange('q1', showQ, (v) => { (S.mode === 'force' ? S.F : S.m)[0] = v; held(); });
+const q2 = bindRange('q2', showQ, (v) => { (S.mode === 'force' ? S.F : S.m)[1] = v; held(); });
+const r1 = bindRange('r1', (v) => fmt(v, 2) + NBSP + 'm', (v) => { S.r[0] = v; held(); });
+const r2 = bindRange('r2', (v) => fmt(v, 2) + NBSP + 'm', (v) => { S.r[1] = v; held(); });
+
+function applyMode() {
+  const force = S.mode === 'force';
+  document.querySelectorAll('[data-mode]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.mode === S.mode)));
+  for (const [ctl, i] of [[q1, 0], [q2, 1]]) {
+    Object.assign(ctl.el, force ? { min: 0, max: 50, step: 1 } : { min: 0, max: 5, step: 0.1 });
+    ctl.set(force ? S.F[i] : S.m[i]);
+  }
+  document.querySelectorAll('.nm1,.nm2').forEach((e) => { e.textContent = force ? 'Voima' : 'Massa'; });
+  document.querySelector('.q1').textContent = force ? 'F' : 'm';
+  document.querySelector('.q2').textContent = force ? 'F' : 'm';
+  held();
+}
+document.querySelectorAll('[data-mode]').forEach((b) => b.addEventListener('click', () => { S.mode = b.dataset.mode; layout(view); applyMode(); }));
+document.getElementById('showM').addEventListener('change', (e) => { S.showM = e.target.checked; });
+document.getElementById('lock').addEventListener('change', (e) => { S.lock = e.target.checked; held(); });
+document.getElementById('reset').addEventListener('click', () => {
+  S.F = DEF.force.slice(); S.m = DEF.mass.slice(); S.r = DEF.r.slice();
+  r1.set(S.r[0]); r2.set(S.r[1]);
+  applyMode();
+});
+
+/* Raahaus: vaikutuspisteen paikka projisoidaan palkin suuntaiselle akselille. */
+function hit(p) {
+  let best = -1, bd = 22;
+  for (let i = 0; i < 2; i++) {
+    const a = attach(i);
+    let d = Math.hypot(p.x - a.x, p.y - a.y);
+    const F = forces()[i];
+    if (S.mode === 'force') {             // myös nuolen varresta saa tarttua
+      const top = a.y - F * L.kF;
+      if (Math.abs(p.x - a.x) < 12 && p.y > top - 8 && p.y < a.y) d = Math.min(d, Math.abs(p.x - a.x));
+    } else {
+      const bot = a.y + 50 * L.kFm + 50;
+      if (Math.abs(p.x - a.x) < 22 && p.y > a.y && p.y < bot) d = Math.min(d, Math.abs(p.x - a.x));
+    }
+    if (d < bd) { bd = d; best = i; }
+  }
+  return best;
+}
+function pos(e) { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+function dragTo(p) {
+  const u = (p.x - L.cx) / L.s;                       // palkki on raahatessa vaakasuorassa
+  const r = Math.round(clamp(S.drag === 0 ? -u : u, 0, HALF) * 20) / 20;   // 0,05 m:n välein
+  S.r[S.drag] = r;
+  (S.drag === 0 ? r1 : r2).set(r);
+}
+cv.addEventListener('pointerdown', (e) => {
+  const i = hit(pos(e));
+  if (i < 0) return;
+  S.drag = i; S.th = 0; S.om = 0;
+  cv.setPointerCapture(e.pointerId);
+  dragTo(pos(e));
+  e.preventDefault();
+});
+cv.addEventListener('pointermove', (e) => {
+  if (S.drag >= 0) { dragTo(pos(e)); return; }
+  S.hover = hit(pos(e));
+  cv.style.cursor = S.hover >= 0 ? 'grab' : 'default';
+});
+const endDrag = () => { if (S.drag >= 0) { S.drag = -1; S.hold = 0.15; } };
+cv.addEventListener('pointerup', endDrag);
+cv.addEventListener('pointercancel', endDrag);
+cv.addEventListener('pointerleave', () => { if (S.drag < 0) S.hover = -1; });
+
+applyMode();
+startLoop({ dt: 1 / 240, step, draw, running: () => true });
+})();
+</script>
+</body>
+</html>
