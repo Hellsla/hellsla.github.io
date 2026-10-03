@@ -8,7 +8,8 @@
 <title>Ahjo – isku | Kiviruukin lukio</title>
 <!--
   Pelkkä Ahjo iframe-upotukseen, esim. kiviruukki.html-sivun Ahjo-paneeliin:
-  alasin hytkähtää kuin siihen isketään, ja säteet välähtävät.
+  vasara heilahtaa alas ja iskee alasimeen, alasin hytkähtää, säteet välähtävät
+  ja iskukohdasta lentää kipinöitä; sitten vasara nousee seuraavaan iskuun.
   Sama isku kuin meilla-taotaan-ahjo3.html:ssä, mutta ilman sloganta ja
   läpinäkyvällä taustalla. Kohtaus täyttää upotuksen (mittasuhde 230 × 208).
 
@@ -26,6 +27,7 @@
     --pink:#fca5c7;
     --ahjo-body:var(--navy);     /* alasin */
     --ahjo-glow:var(--pink);     /* ahjon suu ja säteet: näkyvät vaalealla pohjalla */
+    --hammer:#004fbf;            /* vasaran pää (Ahjo-kuvituksen sininen), kahva --ahjo-glow */
   }
 
   *{ box-sizing:border-box; }
@@ -89,6 +91,31 @@
     mask:url("data:image/png;base64,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") 0 0 / 100% 100% no-repeat;
   }
 
+  /* Vasara ja kipinät ovat kohtauksen omissa koordinaateissa (230 × 208).
+     Vasara kääntyy kahvan pään ympäri, kuin kuvan ulkopuolella oleva käsi
+     pitäisi sitä; levossa se on nostettuna 55°. */
+  .tools{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    overflow:visible;
+  }
+
+  .hammer{
+    transform-box:view-box;
+    transform-origin:203px 128.5px;
+    transform:rotate(55deg);
+  }
+
+  /* Kipinät ovat valkoisia, jotta ne erottuvat vaaleanpunaisen välähdyksen päällä. */
+  .spark{
+    stroke:#fff;
+    stroke-width:3.4;
+    stroke-linecap:round;
+    opacity:0;
+  }
+
   /* Vähennetty liike: ei iskuja, säteet näkyvät himmeinä paikallaan. */
   @media (prefers-reduced-motion:reduce){
     .rays{ opacity:.45; }
@@ -101,6 +128,19 @@
     <div class="rays" id="rays"></div>
     <div class="anvil"><div class="anvil-body"></div><div class="anvil-hearth"></div></div>
   </div>
+  <svg class="tools" viewBox="0 0 230 208" focusable="false">
+    <g id="sparks">
+      <line class="spark" x1="0" y1="0" x2="14" y2="0"/><line class="spark" x1="0" y1="0" x2="14" y2="0"/>
+      <line class="spark" x1="0" y1="0" x2="14" y2="0"/><line class="spark" x1="0" y1="0" x2="14" y2="0"/>
+      <line class="spark" x1="0" y1="0" x2="14" y2="0"/><line class="spark" x1="0" y1="0" x2="14" y2="0"/>
+      <line class="spark" x1="0" y1="0" x2="14" y2="0"/><line class="spark" x1="0" y1="0" x2="14" y2="0"/>
+      <line class="spark" x1="0" y1="0" x2="14" y2="0"/>
+    </g>
+    <g class="hammer" id="hammer">
+      <rect x="134" y="125" width="76" height="7" rx="3.5" fill="var(--ahjo-glow)"/>
+      <rect x="118" y="117" width="20" height="26" rx="3" fill="var(--hammer)"/>
+    </g>
+  </svg>
 </div>
 
 <script>
@@ -114,13 +154,50 @@
 
   var forge = document.getElementById("forge");
   var rays = document.getElementById("rays");
+  var hammer = document.getElementById("hammer");
+  var sparks = document.querySelectorAll(".spark");
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !forge.animate) return;
 
-  var IMPACT = 90;                                    // ms iskun alusta osumaan
+  var SWING = 260;                                    // ms vasaran heilahdus alas osumaan
+  var IMPACT = 0;                                     // ms osumasta säteiden välähdykseen
+  var HIT = { x: 128, y: 142 };                       // iskukohta alasimen pinnalla
 
-  // Isku kuten meilla-taotaan-ahjo3.html:ssä: alasin painuu kokoon kuin siihen
-  // lyötäisiin; osuman hetkellä säteet välähtävät ja hiipuvat.
+  // Vasara: heilahdus alas kiihtyen, pieni ponnahdus ylös ja hidas nosto.
+  function swing(){
+    hammer.animate([
+      { transform: "rotate(55deg)", easing: "cubic-bezier(.55,0,1,.45)" },
+      { transform: "rotate(0deg)", offset: 0.2, easing: "cubic-bezier(.2,.8,.4,1)" },
+      { transform: "rotate(14deg)", offset: 0.31, easing: "ease-in-out" },
+      { transform: "rotate(55deg)" }
+    ], { duration: SWING / 0.2, fill: "both" });
+  }
+
+  // Kipinät lentävät iskukohdasta ylös ja sivuille ja sammuvat.
+  function fly(){
+    for (var i = 0; i < sparks.length; i++){
+      var left = i % 2 === 0;                         // puolet kumpaankin suuntaan
+      var a = left ? -175 + Math.random() * 70 : -75 + Math.random() * 70;
+      var x0 = HIT.x + (left ? -10 : 10), y0 = HIT.y - 1;
+      var reach = 36 + Math.random() * 30;
+      var dx = x0 + Math.cos(a * Math.PI / 180) * reach;
+      var dy = y0 + Math.sin(a * Math.PI / 180) * reach;
+      sparks[i].animate([
+        { opacity: 1, transform: "translate(" + x0 + "px," + y0 + "px) rotate(" + a + "deg) scale(.5, 1)" },
+        { opacity: 1, offset: 0.35, transform: "translate(" + (x0 + (dx - x0) * 0.6).toFixed(1) + "px," + (y0 + (dy - y0) * 0.6).toFixed(1) + "px) rotate(" + a + "deg) scale(1, 1)" },
+        { opacity: 0, transform: "translate(" + dx.toFixed(1) + "px," + dy.toFixed(1) + "px) rotate(" + a + "deg) scale(.6, 1)" }
+      ], { duration: 560 + Math.random() * 240, easing: "cubic-bezier(.2,.6,.4,1)" });
+    }
+  }
+
+  // Osuma kuten meilla-taotaan-ahjo3.html:ssä: alasin painuu kokoon kuin siihen
+  // lyötäisiin; säteet välähtävät ja hiipuvat.
   function strike(){
+    swing();
+    setTimeout(impact, SWING);
+  }
+
+  function impact(){
+    fly();
     forge.animate([
       { transform: "scale(1, 1)", easing: "ease-in" },
       { transform: "scale(1.035, 0.93)", offset: 0.15, easing: "ease-out" },
@@ -130,7 +207,7 @@
     setTimeout(function(){
       rays.animate([
         { opacity: 0, easing: "linear" },
-        { opacity: 1, offset: 0.04 },
+        { opacity: 1, offset: 0.02 },
         { opacity: 1, offset: 0.3, easing: "ease-out" },
         { opacity: 0, offset: 0.9 },
         { opacity: 0 }
@@ -138,14 +215,14 @@
     }, IMPACT);
   }
 
-  setTimeout(function(){
+  setTimeout(function(){                             // ensimmäinen osuma noin 0,7 s kohdalla
     strike();
     var left = once ? 4 : Infinity;                   // ?kerran: viisi iskua yhteensä
     var timer = setInterval(function(){
       strike();
       if (--left <= 0) clearInterval(timer);
     }, seconds * 1000);
-  }, 700);
+  }, 700 - SWING);
 })();
 </script>
 </body>
