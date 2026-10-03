@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravitaatio ja kiertorata · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ---------- */
+  :root{
+    --bg:#ffffff; --panel:#f8f8f6;
+    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
+    --line:#e4e4e0; --line-2:#cfcfca;
+    --accent:#2f6f9f; --accent-soft:#e7eff6;
+    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    font:14px/1.35 var(--font);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:clamp(212px,24vw,262px);background:var(--panel);border-left:1px solid var(--line);
+    padding:12px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 26px;padding:9px 18px 11px}
+  .group{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-2);white-space:nowrap}
+  .ctl-head > span:first-child{white-space:normal;min-width:0}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;margin:0;background:transparent;cursor:pointer;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:6px}
+  input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-7px;border-radius:50%;
+    background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  .chk{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;user-select:none;min-height:26px;white-space:nowrap}
+  .chk input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .btns{display:flex;gap:6px;flex-wrap:wrap}
+  .btn{font:inherit;font-size:13px;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    min-height:32px;padding:0 11px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:14px;height:14px;flex:none}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:13px;border:0;background:transparent;padding:0 12px;min-height:30px;color:var(--ink-2);cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  @media (max-height:500px),(max-width:700px){        /* pienet upotukset: tiiviimmät säätimet */
+    .panel{padding:8px 10px;gap:7px}
+    .app.is-bottom .panel{padding:6px 12px 8px;gap:5px 14px}
+    .group{gap:2px}
+    .ctl-head{font-size:12px}
+    input[type=range]{height:20px}
+    .btn{min-height:28px;padding:0 9px;font-size:12.5px}
+    .seg button{min-height:26px;padding:0 9px;font-size:12.5px}
+    .chk{min-height:21px;font-size:12.5px}
+  }
+  @media (max-aspect-ratio:4/5),(max-width:560px){
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1f2226}
+  .btn.wide{width:100%}
+  .btns .btn{flex:1 1 0}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  details.adv{font-size:13px;color:var(--ink-2)}
+  details.adv summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;min-height:26px;user-select:none}
+  details.adv summary::-webkit-details-marker{display:none}
+  details.adv summary::before{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s;margin:0 3px 0 2px}
+  details.adv[open] summary::before{transform:rotate(45deg)}
+  details.adv .ctl{margin-top:4px}
+  .linkbtn{font:inherit;font-size:12.5px;color:var(--accent);background:none;border:0;padding:2px 0;cursor:pointer;text-align:left}
+  .linkbtn:hover{text-decoration:underline}
+  .linkbtn[hidden]{display:none}
+  .key{display:inline-block;width:20px;height:10px;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:5px;top:4px;height:2px;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:1px;border-left:7px solid var(--c);border-top:4px solid transparent;border-bottom:4px solid transparent}
+  .legend{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:8px}
+  .legend[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Maa keskellä ja satelliitti, jonka rata piirtyy liikkeen edetessä."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <button class="btn primary wide" id="play" type="button"></button>
+    <div class="btns">
+      <button class="btn" id="reset" type="button" title="Satelliitti takaisin lähtöpaikkaan">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <button class="btn" id="vec" type="button" aria-pressed="false">Näytä vektorit</button>
+    </div>
+
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Alkunopeus <span class="sym">v</span><sub>0</sub></span><b data-for="v0"></b></span>
+        <input id="v0" type="range" min="0" max="12" step="0.05" value="6" aria-label="Satelliitin alkunopeus"></label>
+      <label class="ctl"><span class="ctl-head"><span>Alkukorkeus <span class="sym">h</span></span><b data-for="h"></b></span>
+        <input id="h" type="range" min="100" max="5000" step="100" value="1000" aria-label="Satelliitin alkukorkeus Maan pinnasta"></label>
+    </div>
+
+    <details class="adv">
+      <summary>Lisäasetukset</summary>
+      <label class="ctl"><span class="ctl-head"><span>Maan massa <span class="sym">M</span></span><b data-for="M"></b></span>
+        <input id="M" type="range" min="0.5" max="2" step="0.1" value="1" aria-label="Maan massa Maan todellisen massan monikertana"></label>
+    </details>
+
+    <div class="legend" id="legend" hidden>
+      <span><span class="key" style="--c:var(--c-blue)"></span>nopeus <span class="sym">v</span></span>
+      <span><span class="key" style="--c:var(--c-red)"></span>gravitaatiovoima <span class="sym">F</span></span>
+    </div>
+    <button class="linkbtn" id="clear" type="button" hidden>Pyyhi aiemmat radat</button>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    view.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    view.W = Math.max(1, r.width); view.H = Math.max(1, r.height);
+    cv.width = Math.round(view.W * view.dpr); cv.height = Math.round(view.H * view.dpr);
+    if (onResize) onResize(view);
+  };
+  new ResizeObserver(resize).observe(cv);
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: satelliitti Maan gravitaatiokentässä
+   Newtonin gravitaatiolaki: F = G·M·m / r², suunta kohti Maan keskipistettä.
+   Satelliitin kiihtyvyys a = F/m = G·M / r² (ei riipu satelliitin massasta).
+   Liike lasketaan numeerisesti (nopeus-Verlet-menetelmä), joten rata syntyy
+   askel askeleelta – valmista ellipsiä ei piirretä.
+   Kaikki laskenta SI-yksiköissä (m, s, kg).
+   ===================================================================== */
+const G = 6.674e-11;           // gravitaatiovakio, N·m²/kg²
+const M_E = 5.972e24;          // Maan massa, kg
+const R_E = 6.371e6;           // Maan säde, m
+const VIEW_CAP = 25 * R_E;     // näkymä loitontuu enintään tähän säteeseen
+const S = {
+  v0: 6000, h: 1.0e6, Mfac: 1,            // alkunopeus m/s, alkukorkeus m, Maan massa × M_E
+  x: 0, y: 0, vx: 0, vy: 0, t: 0,
+  state: 'ready',                          // ready | run | pause | crash | escape
+  trail: [], ghosts: [], crashAt: null,
+  rMax: 0, view: 0, view0: 0, k0: 1,
+  showVec: false,
+};
+const mu = () => G * M_E * S.Mfac;       // G·M, m³/s²
+
+/** Alkutila: satelliitti lähtöpaikalla Maan "yläpuolella", nopeus vaakasuoraan. */
+function init() {
+  S.x = 0; S.y = R_E + S.h; S.vx = S.v0; S.vy = 0; S.t = 0;
+  S.trail = [{ x: S.x, y: S.y }]; S.crashAt = null;
+  S.rMax = S.y;
+  S.view0 = Math.max(1.6 * R_E, 1.25 * S.y);
+  if (!S.view) S.view = S.view0;
+  // aikaskaala: lähtökorkeuden ympyräradan kierros kestää ruudulla noin 10 s
+  S.k0 = 2 * Math.PI * Math.sqrt(S.y ** 3 / mu()) / 10;
+  S.state = 'ready';
+}
+/** Gravitaatiokiihtyvyys pisteessä (x, y): a⃗ = −G·M·r⃗ / r³. */
+function accel(x, y) {
+  const r2 = x * x + y * y, k = -mu() / (r2 * Math.sqrt(r2));
+  return [k * x, k * y];
+}
+/** Nopeus-Verlet: säilyttää energian hyvin pitkissäkin ratalaskuissa. */
+function verlet(dt) {
+  let [ax, ay] = accel(S.x, S.y);
+  S.vx += 0.5 * dt * ax; S.vy += 0.5 * dt * ay;
+  S.x += dt * S.vx; S.y += dt * S.vy;
+  [ax, ay] = accel(S.x, S.y);
+  S.vx += 0.5 * dt * ax; S.vy += 0.5 * dt * ay;
+  S.t += dt;
+}
+/** Simulaation nopeus: kun näkymä loitontuu, aika kulkee nopeammin (Keplerin 3. lain mukaisesti ∝ R^1,5),
+    jotta suuretkin radat ehtivät piirtyä kohtuullisessa ajassa. */
+const timeScale = () => S.k0 * Math.pow(S.view / S.view0, 1.5);
+
+function advance(realDt) {
+  if (S.state !== 'run') return;
+  let left = realDt * timeScale();
+  let guard = 0;
+  while (left > 0 && guard++ < 20000) {
+    const r = Math.hypot(S.x, S.y);
+    // aika-askel noin 1/3000 paikallisesta kiertoajasta → tarkka myös lähellä Maata
+    const dt = Math.min(left, 0.002 * Math.sqrt(r ** 3 / mu()));
+    const px = S.x, py = S.y;
+    verlet(dt); left -= dt;
+    const r1 = Math.hypot(S.x, S.y);
+    if (r1 <= R_E) {                          // törmäys: haetaan pinnan leikkauspiste janalta
+      const dx = S.x - px, dy = S.y - py;
+      const A = dx * dx + dy * dy, B = 2 * (px * dx + py * dy), C = px * px + py * py - R_E * R_E;
+      const s = A > 0 ? clamp((-B - Math.sqrt(Math.max(0, B * B - 4 * A * C))) / (2 * A), 0, 1) : 0;
+      S.x = px + s * dx; S.y = py + s * dy; S.vx = 0; S.vy = 0;
+      S.trail.push({ x: S.x, y: S.y });
+      S.crashAt = { x: S.x, y: S.y };
+      S.state = 'crash'; paintPlay();
+      return;
+    }
+    if (r1 > S.rMax) S.rMax = r1;
+    const last = S.trail[S.trail.length - 1];
+    if (Math.hypot(S.x - last.x, S.y - last.y) > 0.003 * S.view) {
+      S.trail.push({ x: S.x, y: S.y });
+      if (S.trail.length > 8000) S.trail = S.trail.filter((p, i) => i % 2 === 0 || i === S.trail.length - 1);
+    }
+    const E = 0.5 * (S.vx ** 2 + S.vy ** 2) - mu() / r1;   // ominaisenergia, J/kg
+    if (E >= 0 && r1 > 1.08 * VIEW_CAP) { S.state = 'escape'; paintPlay(); return; }
+  }
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const m = Math.min(v.W, v.H);
+  L = { W: v.W, H: v.H, cx: v.W / 2, cy: v.H / 2, half: m / 2 - 14,
+        kv: 0.022 * m / 1000,          // px / (m/s)
+        kg: 0.018 * m,                 // px / (m/s²)  (gravitaatiovoima ∝ g)
+        fs: clamp(Math.min(v.W / 46, v.H / 36), 12, 16) };
+});
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, cx, cy, fs } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  // näkymän säde seuraa kauimmaista saavutettua etäisyyttä (pehmeä, aikaan sidottu loitonnus)
+  const now = performance.now(), dtr = Math.min(0.1, (now - (L.last || now)) / 1000);
+  L.last = now;
+  const target = Math.min(VIEW_CAP, Math.max(S.view0, 1.12 * S.rMax));
+  S.view += (target - S.view) * (1 - Math.exp(-dtr / 0.35));
+  const sc = L.half / S.view;                               // px / m
+  const P = (x, y) => [cx + x * sc, cy - y * sc];
+
+  // aiemmat radat haaleina vertailua varten
+  ctx.lineWidth = 1.6; ctx.strokeStyle = '#cfd3d8'; ctx.lineJoin = 'round';
+  for (const gh of S.ghosts) polyline(ctx, gh, P);
+
+  // Maa
+  ctx.fillStyle = '#dde9f2'; ctx.strokeStyle = '#9fbad0'; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.arc(cx, cy, R_E * sc, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  if (R_E * sc > 30) drawRich(ctx, 'Maa', cx, cy, { size: fs * 0.95, color: '#6f8ba1', align: 'center' });
+
+  // lähtökorkeus h
+  {
+    const [x0, y0] = P(0, R_E), [x1, y1] = P(0, R_E + S.h);
+    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1; ctx.setLineDash([3, 3]);
+    ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); ctx.setLineDash([]);
+    if (y0 - y1 > fs * 1.2) drawRich(ctx, '{h}', x0 - 7, (y0 + y1) / 2, { size: fs * 0.9, color: COL.ink2, align: 'right' });
+  }
+
+  // nykyinen rata
+  ctx.lineWidth = 2; ctx.strokeStyle = '#555c66';
+  polyline(ctx, S.trail, P);
+
+  // satelliitti
+  const [sx, sy] = P(S.x, S.y);
+  if (S.crashAt) {
+    ctx.strokeStyle = COL.red; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(sx - 5, sy - 5); ctx.lineTo(sx + 5, sy + 5); ctx.moveTo(sx + 5, sy - 5); ctx.lineTo(sx - 5, sy + 5); ctx.stroke();
+    const ox = sx - cx, oy = sy - cy, d = Math.hypot(ox, oy) || 1;
+    drawRich(ctx, 'törmäsi Maahan', sx + ox / d * fs * 1.6, sy + oy / d * fs * 1.6,
+      { size: fs * 0.9, color: COL.red, align: ox < -10 ? 'right' : ox > 10 ? 'left' : 'center', halo: true });
+  } else {
+    ctx.fillStyle = COL.ink; ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(sx, sy, 5.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  }
+
+  // vektorit (lähtötilassa alkunopeus näkyy aina)
+  const r = Math.hypot(S.x, S.y);
+  if (!S.crashAt && (S.showVec || S.state === 'ready')) {
+    const lv = L.kv, ux = S.vx, uy = S.vy;
+    if (Math.hypot(ux, uy) > 1) {
+      const ex = sx + ux * lv, ey = sy - uy * lv;
+      arrow(ctx, sx, sy, ex, ey, COL.blue, { width: 2.6 });
+      const d = Math.hypot(ux, uy);
+      drawRich(ctx, S.state === 'ready' ? '{->v}_0' : '{->v}', ex + ux / d * fs * 0.9, ey - uy / d * fs * 0.9 - fs * 0.2,
+        { size: fs, color: COL.blue, align: 'center', halo: true });
+    }
+  }
+  if (!S.crashAt && S.showVec) {
+    const g = mu() / (r * r), lg = g * L.kg;        // gravitaatiovoima ∝ G·M / r²
+    const ex = sx - S.x / r * lg, ey = sy + S.y / r * lg;
+    arrow(ctx, sx, sy, ex, ey, COL.red, { width: 2.6 });
+    drawRich(ctx, '{->F}', ex - S.x / r * fs * 0.9 + (S.y / r) * fs * 0.6, ey + S.y / r * fs * 0.9 + (S.x / r) * fs * 0.6,
+      { size: fs, color: COL.red, align: 'center', halo: true });
+  }
+
+  // lukemat
+  let y = 14 + fs * 0.6;
+  drawRich(ctx, `{t} = ${fmtTime(S.t)}`, 14, y, { size: fs * 0.95, color: COL.ink2, halo: true });
+  if (S.showVec && !S.crashAt) {
+    y += fs * 1.5;
+    drawRich(ctx, `{v} = ${fmt(Math.hypot(S.vx, S.vy) / 1000, 2)}${NBSP}km/s`, 14, y, { size: fs * 0.95, color: COL.blue, halo: true });
+    y += fs * 1.5;
+    drawRich(ctx, `{h} = ${fmtKm(r - R_E)}`, 14, y, { size: fs * 0.95, color: COL.ink2, halo: true });
+  }
+  if (S.state === 'escape') {
+    drawRich(ctx, 'Avoin rata: satelliitti ei palaa', cx, H - fs * 1.4, { size: fs, color: COL.ink, align: 'center', halo: true });
+  }
+  if (S.view > S.view0 * 1.05) {         // mittakaavajana, kun näkymä on loitontunut
+    const bar = niceDist(S.view * 0.35), len = bar * sc;
+    const bx = W - 18 - len, by = H - 18;
+    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(bx, by - 4); ctx.lineTo(bx, by); ctx.lineTo(bx + len, by); ctx.lineTo(bx + len, by - 4); ctx.stroke();
+    drawRich(ctx, fmtKm(bar), bx + len / 2, by - fs * 0.8, { size: fs * 0.85, color: COL.ink2, align: 'center' });
+  }
+}
+function polyline(ctx, pts, P) {
+  if (pts.length < 2) return;
+  ctx.beginPath();
+  pts.forEach((p, i) => { const [x, y] = P(p.x, p.y); if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); });
+  ctx.stroke();
+}
+function niceDist(d) {
+  const e = Math.pow(10, Math.floor(Math.log10(d))), m = d / e;
+  return (m >= 5 ? 5 : m >= 2 ? 2 : 1) * e;
+}
+function fmtKm(m) { return fmt(Math.round(m / 1000), 0) + NBSP + 'km'; }
+function fmtTime(t) {
+  const min = Math.floor(t / 60), h = Math.floor(min / 60);
+  if (h >= 48) return `${fmt(t / 86400, 1)}${NBSP}vrk`;
+  return `${h}${NBSP}h ${String(min % 60).padStart(2, '0')}${NBSP}min`;
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+const playBtn = document.getElementById('play');
+function paintPlay() {
+  const done = S.state === 'crash' || S.state === 'escape';
+  playBtn.innerHTML = S.state === 'run' ? ICON_PAUSE + 'Tauko' : ICON_PLAY + (done ? 'Uusi laukaisu' : 'Käynnistä');
+}
+playBtn.addEventListener('click', () => {
+  if (S.state === 'run') S.state = 'pause';
+  else if (S.state === 'crash' || S.state === 'escape') { keepGhost(); init(); S.state = 'run'; }
+  else S.state = 'run';
+  paintPlay();
+});
+/** Edellinen rata jää haaleana näkyviin, jotta eri alkunopeuksia voi verrata. */
+function keepGhost() {
+  if (S.trail.length > 2) {
+    S.ghosts.push(S.trail);
+    if (S.ghosts.length > 5) S.ghosts.shift();
+  }
+  document.getElementById('clear').hidden = S.ghosts.length === 0;
+}
+function restart() { keepGhost(); init(); paintPlay(); }
+document.getElementById('reset').addEventListener('click', restart);
+document.getElementById('clear').addEventListener('click', () => {
+  S.ghosts = []; document.getElementById('clear').hidden = true;
+});
+const vecBtn = document.getElementById('vec');
+vecBtn.addEventListener('click', () => {
+  S.showVec = !S.showVec;
+  vecBtn.setAttribute('aria-pressed', String(S.showVec));
+  document.getElementById('legend').hidden = !S.showVec;
+});
+
+const SUP = { '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻' };
+function sci(x, d = 2) {                 // 5,97·10²⁴
+  const e = Math.floor(Math.log10(x)), m = x / Math.pow(10, e);
+  return `${fmt(m, d)}·10${String(e).replace(/./g, (c) => SUP[c])}`;
+}
+// liukusäätimen muutos asettaa uuden lähtötilanteen (edellinen rata jää vertailuksi)
+const onParam = () => { if (S.state !== 'ready') keepGhost(); init(); paintPlay(); };
+bindRange('v0', (x) => fmt(x, 2) + NBSP + 'km/s', (x) => { S.v0 = x * 1000; onParam(); });
+bindRange('h', (x) => fmt(x, 0) + NBSP + 'km', (x) => { S.h = x * 1000; S.view = 0; onParam(); });
+bindRange('M', (x) => sci(x * M_E) + NBSP + 'kg', (x) => { S.Mfac = x; onParam(); });
+
+init();
+paintPlay();
+startLoop({ dt: 1 / 240, step: advance, draw, running: () => S.state === 'run' });
+})();
+</script>
+</body>
+</html>
