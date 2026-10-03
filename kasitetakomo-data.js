@@ -480,7 +480,8 @@ window.KORTIT = [
     ["Poikkeama","Värähtelijän etäisyys tasapainoasemasta suunta huomioiden."],
     ["Amplitudi","Värähtelijän suurin poikkeama tasapainoasemasta."],
     ["Jaksonaika","Yhteen kokonaiseen värähdykseen kuluva aika; T = 1/f."],
-    ["Taajuus","Kokonaisten värähdysten lukumäärä aikayksikössä; f = 1/T."]
+    ["Taajuus","Kokonaisten värähdysten lukumäärä aikayksikössä; f = 1/T."],
+    ["Vaimeneminen","Värähtelyn amplitudin pieneneminen, kun energiaa siirtyy ympäristöön esimerkiksi kitkan tai väliaineen vastuksen vuoksi."]
   ]},
   { nimi:"Harmoninen värähtely", kortit:[
     ["Jousivoima","Jousen muodonmuutoksesta syntyvä palauttava voima."],
@@ -491,6 +492,7 @@ window.KORTIT = [
     ["Harmoninen värähtelijä","Värähtelijä, jonka jaksonaika ei riipu amplitudista, koska palauttava voima on suoraan verrannollinen poikkeamaan."],
     ["Jousivärähtelijä","Jousen ja siihen kiinnitetyn kappaleen muodostama värähtelevä systeemi; T = 2π√(m/k)."],
     ["Heiluri","Ripustettu kappale, joka heilahtelee tasapainoasemansa molemmin puolin painonsa vaikutuksesta."],
+    ["Matemaattinen heiluri","Massattoman langan varassa heilahteleva pistemäinen kappale; pienillä poikkeamakulmilla T = 2π√(l/g)."],
     ["Ominaistaajuus","Taajuus, jolla systeemi värähtelee vapaasti häiriön jälkeen."],
     ["Resonanssi","Amplitudin voimakas kasvu, kun ulkoisen herätteen taajuus vastaa systeemin ominaistaajuutta."],
     ["Jousen potentiaalienergia","Venytettyyn tai puristettuun jouseen varastoitunut energia; Eₚ = ½kx²."]
