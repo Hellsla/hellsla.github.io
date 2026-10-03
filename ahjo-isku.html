@@ -8,7 +8,7 @@
 <title>Ahjo – isku | Kiviruukin lukio</title>
 <!--
   Pelkkä Ahjo iframe-upotukseen, esim. kiviruukki.html-sivun Ahjo-paneeliin:
-  alasin hytkähtää ja tärähtää kuin siihen isketään, ja säteet välähtävät.
+  alasin hytkähtää kuin siihen isketään, ja säteet välähtävät.
   Sama isku kuin meilla-taotaan-ahjo3.html:ssä, mutta ilman sloganta ja
   läpinäkyvällä taustalla. Kohtaus täyttää upotuksen (mittasuhde 230 × 208).
 
@@ -37,7 +37,7 @@
     background:transparent;
   }
 
-  /* Kohtaus 94 % leveydestä, jotta isku ja tärähdys mahtuvat upotukseen. */
+  /* Kohtaus 94 % leveydestä, jotta isku mahtuu upotukseen. */
   .ahjo{
     position:absolute;
     left:3%;
@@ -118,17 +118,15 @@
 
   var IMPACT = 90;                                    // ms iskun alusta osumaan
 
-  // Isku: alasin painuu kokoon kuin siihen lyötäisiin ja tärähtää vähän
-  // sivuttain; osuman hetkellä säteet välähtävät ja hiipuvat.
+  // Isku kuten meilla-taotaan-ahjo3.html:ssä: alasin painuu kokoon kuin siihen
+  // lyötäisiin; osuman hetkellä säteet välähtävät ja hiipuvat.
   function strike(){
     forge.animate([
-      { transform: "translateX(0) rotate(0deg) scale(1, 1)", easing: "ease-in" },
-      { transform: "translateX(0) rotate(0deg) scale(1.035, 0.93)", offset: 0.13, easing: "ease-out" },
-      { transform: "translateX(-1.2%) rotate(-1.1deg) scale(0.985, 1.03)", offset: 0.36 },
-      { transform: "translateX(1%) rotate(0.9deg) scale(1, 1)", offset: 0.55 },
-      { transform: "translateX(-0.5%) rotate(-0.4deg) scale(1, 1)", offset: 0.74 },
-      { transform: "translateX(0) rotate(0deg) scale(1, 1)" }
-    ], { duration: 720 });
+      { transform: "scale(1, 1)", easing: "ease-in" },
+      { transform: "scale(1.035, 0.93)", offset: 0.15, easing: "ease-out" },
+      { transform: "scale(0.985, 1.03)", offset: 0.42 },
+      { transform: "scale(1, 1)" }
+    ], { duration: 600 });
     setTimeout(function(){
       rays.animate([
         { opacity: 0, easing: "linear" },
