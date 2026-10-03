@@ -434,34 +434,116 @@ window.KORTIT = [
   ]}
 ]},
 
-{ id:"FY5", kesken:true, nimi:"Jaksollinen liike ja aallot", aiheet:[
-  { nimi:"Ympyräliike ja gravitaatio", kortit:[
-    ["Tasainen ympyräliike","Liike ympyrärataa pitkin vakionopeudella; nopeuden suunta muuttuu jatkuvasti."],
-    ["Keskeiskiihtyvyys","Ympyrän keskipistettä kohti osoittava kiihtyvyys, a = v² / r."],
-    ["Keskeisvoima","Kokonaisvoima, joka pitää kappaleen ympyräradalla; osoittaa keskipisteeseen."],
-    ["Jaksonaika","Aika, jossa tapahtuu yksi täysi kierros tai värähdys."],
-    ["Taajuus","Värähdysten tai kierrosten määrä aikayksikössä, f = 1 / T."],
-    ["Gravitaatiolaki","Kahden massan välinen vetovoima, F = G·m₁m₂ / r²."],
-    ["Ratanopeus","Nopeus, jolla satelliitti kiertää keskuskappaletta vakiokorkeudella."]
+{ id:"FY5", nimi:"Jaksollinen liike ja aallot", aiheet:[
+  { nimi:"Momentti ja tasapaino", kortit:[
+    ["Statiikka","Mekaniikan osa-alue, jossa tutkitaan paikallaan pysyvien kappaleiden tasapainoa."],
+    ["Tasapaino","Tila, jossa kappaleen etenemis- ja pyörimisliike eivät muutu."],
+    ["Momentti","Suure, joka kuvaa voiman vääntövaikutusta; M = Fr."],
+    ["Vääntövaikutus","Voiman vaikutus, joka pyrkii kiertämään kappaletta."],
+    ["Kiertoakseli","Suora, jonka ympäri kappale pyörii tai voisi pyöriä."],
+    ["Voiman vaikutussuora","Suora, joka kulkee voiman vaikutuspisteen kautta voiman suuntaisesti."],
+    ["Momenttivarsi","Kiertoakselin ja voiman vaikutussuoran välinen kohtisuora eli lyhin etäisyys."],
+    ["Kokonaismomentti","Kappaleeseen vaikuttavien voimien momenttien summa valitun kiertoakselin suhteen."],
+    ["Etenemisen tasapainoehto","Kappale ei kiihdy, kun siihen vaikuttavien voimien vektorisumma on nolla; ΣF = 0."],
+    ["Pyörimisen tasapainoehto","Kappaleen pyörimisliike ei muutu, kun siihen vaikuttavien momenttien summa on nolla; ΣM = 0."],
+    ["Painopiste","Piste, johon kappaleen painon voidaan ajatella kokonaisuudessaan vaikuttavan."],
+    ["Tukipinta","Kappaleen alustaa koskettavien kohtien rajaama alue, jonka yläpuolella painopisteen on oltava, jotta kappale ei kaadu."]
   ]},
-  { nimi:"Värähtely", kortit:[
-    ["Harmoninen värähtely","Värähtely, jossa palauttava voima on verrannollinen poikkeamaan tasapainoasemasta."],
-    ["Amplitudi","Suurin poikkeama tasapainoasemasta."],
-    ["Vaimeneminen","Värähtelyn amplitudin pieneneminen energian siirtyessä ympäristöön."],
-    ["Resonanssi","Voimakas värähtely, kun herätteen taajuus vastaa systeemin ominaistaajuutta."],
-    ["Ominaistaajuus","Taajuus, jolla systeemi värähtelee vapaasti."],
-    ["Matemaattinen heiluri","Malli heilurista, jonka jaksonaika pienillä kulmilla on T = 2π√(l/g)."]
+  { nimi:"Ympyräliike", kortit:[
+    ["Ympyräliike","Liike, jossa kappaleen rata on ympyränmuotoinen."],
+    ["Tasainen ympyräliike","Liike ympyräradalla niin, että nopeuden suuruus pysyy vakiona mutta sen suunta muuttuu jatkuvasti."],
+    ["Ratanopeus","Ympyrärataa pitkin liikkuvan kappaleen nopeuden suuruus; v = 2πr/T."],
+    ["Normaalikiihtyvyys","Ympyrän keskipistettä kohti suuntautuva kiihtyvyys; aₙ = v²/r."],
+    ["Ympyräradan säde","Etäisyys radan keskipisteestä radalla liikkuvaan kappaleeseen."],
+    ["Pyörähdys","Yksi kokonainen kierros ympyräradalla."],
+    ["Ympyräliikkeen kokonaisvoima","Tasaisessa ympyräliikkeessä keskipistettä kohti suuntautuva voimien summa, joka aiheuttaa normaalikiihtyvyyden; ΣF = mv²/r."]
   ]},
-  { nimi:"Aallot ja ääni", kortit:[
-    ["Aallonpituus","Kahden peräkkäisen samassa vaiheessa olevan kohdan etäisyys."],
-    ["Aaltoliikkeen perusyhtälö","Aallon etenemisnopeus on taajuuden ja aallonpituuden tulo, v = fλ."],
-    ["Poikittainen aalto","Aalto, jossa väliaine värähtelee kohtisuoraan etenemissuuntaa vastaan."],
-    ["Pitkittäinen aalto","Aalto, jossa väliaine värähtelee etenemissuunnassa, esimerkiksi ääni."],
-    ["Interferenssi","Kahden aallon yhteisvaikutus, joka vahvistaa tai kumoaa värähtelyä."],
-    ["Diffraktio","Aallon taipuminen esteen reunan tai raon takana."],
-    ["Seisova aalto","Kahden vastakkain etenevän aallon summa, jossa on paikallaan pysyviä solmuja."],
-    ["Dopplerin ilmiö","Havaitun taajuuden muuttuminen, kun lähde ja havaitsija liikkuvat toistensa suhteen."],
-    ["Äänen intensiteetti","Ääniaallon teho pinta-alaa kohti; desibeliasteikko on sen logaritminen mitta."]
+  { nimi:"Gravitaatio ja planetaarinen liike", kortit:[
+    ["Gravitaatiovuorovaikutus","Massallisten kappaleiden välinen aina vetävä vuorovaikutus."],
+    ["Gravitaatiovoima","Voima, jolla kaksi massallista kappaletta vetävät toisiaan puoleensa."],
+    ["Yleinen gravitaatiolaki","Gravitaatiovoima on verrannollinen kappaleiden massojen tuloon ja kääntäen verrannollinen etäisyyden neliöön; F = Gm₁m₂/r²."],
+    ["Gravitaatiovakio","Luonnonvakio, joka määrää gravitaatiovuorovaikutuksen voimakkuuden; G ≈ 6,67·10⁻¹¹ N·m²/kg²."],
+    ["Gravitaatiokenttä","Massallisen kappaleen ympärillä oleva alue, jossa toiseen kappaleeseen vaikuttaa gravitaatiovoima."],
+    ["Gravitaatiokentän voimakkuus","Kertoo kappaleeseen vaikuttavan gravitaatiovoiman massayksikköä kohti; g = F/m."],
+    ["Planetaarinen liike","Taivaankappaleen tai satelliitin liikettä, jota gravitaatiovuorovaikutus hallitsee."],
+    ["Satelliitti","Kappale, joka kiertää gravitaation vaikutuksesta toista kappaletta."],
+    ["Kiertorata","Reitti, jota satelliitti tai taivaankappale kulkee keskuskappaleensa ympäri."],
+    ["Kiertoaika","Yhteen kokonaiseen kierrokseen keskuskappaleen ympäri kuluva aika."],
+    ["Geostationaarinen rata","Päiväntasaajan yläpuolinen ympyrärata, jolla satelliitin kiertoaika on vuorokausi, joten se näyttää pysyvän paikallaan taivaalla."]
+  ]},
+  { nimi:"Värähdysliike", kortit:[
+    ["Jaksollinen liike","Liike, jossa sama liiketila toistuu säännöllisin aikavälein."],
+    ["Värähdysliike","Jaksollinen edestakainen liike tasapainoaseman ympärillä."],
+    ["Heilahdusliike","Jaksollinen liike, jossa kappale liikkuu edestakaisin kaarevaa rataa pitkin."],
+    ["Värähtelijä","Kappale tai systeemi, joka tekee värähdysliikettä."],
+    ["Tasapainoasema","Asento tai paikka, jossa värähtelijään vaikuttava kokonaisvoima on nolla."],
+    ["Poikkeama","Värähtelijän etäisyys tasapainoasemasta suunta huomioiden."],
+    ["Amplitudi","Värähtelijän suurin poikkeama tasapainoasemasta."],
+    ["Jaksonaika","Yhteen kokonaiseen värähdykseen kuluva aika; T = 1/f."],
+    ["Taajuus","Kokonaisten värähdysten lukumäärä aikayksikössä; f = 1/T."]
+  ]},
+  { nimi:"Harmoninen värähtely", kortit:[
+    ["Jousivoima","Jousen muodonmuutoksesta syntyvä palauttava voima."],
+    ["Hooken laki","Jousivoima on suoraan verrannollinen jousen venymään tai puristumaan; F = −kx."],
+    ["Jousivakio","Jousen jäykkyyttä kuvaava suure; mitä suurempi k, sitä jäykempi jousi."],
+    ["Harmoninen voima","Palauttava voima, joka on suoraan verrannollinen poikkeamaan ja suuntautuu kohti tasapainoasemaa."],
+    ["Harmoninen värähtely","Värähdysliike, jossa poikkeama vaihtelee ajan funktiona sinimuotoisesti."],
+    ["Harmoninen värähtelijä","Värähtelijä, jonka jaksonaika ei riipu amplitudista, koska palauttava voima on suoraan verrannollinen poikkeamaan."],
+    ["Jousivärähtelijä","Jousen ja siihen kiinnitetyn kappaleen muodostama värähtelevä systeemi; T = 2π√(m/k)."],
+    ["Heiluri","Ripustettu kappale, joka heilahtelee tasapainoasemansa molemmin puolin painonsa vaikutuksesta."],
+    ["Ominaistaajuus","Taajuus, jolla systeemi värähtelee vapaasti häiriön jälkeen."],
+    ["Resonanssi","Amplitudin voimakas kasvu, kun ulkoisen herätteen taajuus vastaa systeemin ominaistaajuutta."],
+    ["Jousen potentiaalienergia","Venytettyyn tai puristettuun jouseen varastoitunut energia; Eₚ = ½kx²."]
+  ]},
+  { nimi:"Aaltoliikkeen perusteet", kortit:[
+    ["Aaltoliike","Värähtelyn etenemistä paikasta toiseen niin, että energiaa siirtyy mutta aine ei siirry mukana."],
+    ["Mekaaninen aaltoliike","Värähtelyn etenemistä aineellisessa väliaineessa rakenneosasta toiseen."],
+    ["Aaltolähde","Värähtelijä, joka synnyttää ympäröivään väliaineeseen aaltoliikkeen."],
+    ["Väliaine","Kaasu, neste tai kiinteä aine, jossa mekaaninen aaltoliike etenee rakenneosien vuorovaikutusten välityksellä."],
+    ["Pulssi","Yksittäinen häiriö, joka etenee väliaineessa."],
+    ["Poikittainen aaltoliike","Aaltoliike, jossa väliaine värähtelee kohtisuoraan aallon etenemissuuntaan nähden."],
+    ["Pitkittäinen aaltoliike","Aaltoliike, jossa väliaine värähtelee aallon etenemissuunnan suuntaisesti."],
+    ["Aallonpituus","Kahden vierekkäisen samassa värähdysvaiheessa olevan kohdan välinen etäisyys."],
+    ["Aallon etenemisnopeus","Nopeus, jolla häiriö etenee väliaineessa; se riippuu väliaineen ominaisuuksista."],
+    ["Aaltoliikkeen perusyhtälö","Aallon etenemisnopeuden, taajuuden ja aallonpituuden yhteys; v = λf."]
+  ]},
+  { nimi:"Aaltoliikkeen ilmiöt", kortit:[
+    ["Heijastuminen","Aallon suunnan muuttuminen rajapinnassa niin, että aalto palaa alkuperäiseen väliaineeseen."],
+    ["Diffraktio","Aallon taipuminen ja leviäminen esteen reunan tai kapean aukon kohdalla."],
+    ["Interferenssi","Kahden tai useamman aallon yhteisvaikutus niiden kohdatessa."],
+    ["Vahvistava interferenssi","Samassa vaiheessa kohtaavien aaltojen poikkeamat ovat samansuuntaiset, joten summa-aallon amplitudi kasvaa."],
+    ["Heikentävä interferenssi","Vastakkaisissa vaiheissa kohtaavien aaltojen poikkeamat ovat vastakkaissuuntaiset, joten summa-aallon amplitudi pienenee."],
+    ["Summa-aalto","Kahden tai useamman samassa paikassa kohtaavan aallon yhteisvaikutuksesta muodostuva aalto."],
+    ["Spektri","Esitys siitä, mitä taajuuksia värähtely tai aaltoliike sisältää ja kuinka voimakkaita ne ovat."],
+    ["Huojunta","Kahden taajuudeltaan lähekkäisen aallon interferenssistä syntyvä äänen voimakkuuden jaksollinen vaihtelu."]
+  ]},
+  { nimi:"Seisovat aallot", kortit:[
+    ["Seisova aalto","Kahden vastakkaisiin suuntiin etenevän samanlaisen aallon interferenssistä syntyvä aaltokuvio, jossa solmut pysyvät paikallaan."],
+    ["Solmu","Seisovan aallon kohta, jossa värähtelyn amplitudi on nolla."],
+    ["Kupu","Seisovan aallon kohta, jossa värähtelyn amplitudi on suurimmillaan."],
+    ["Perustaajuus","Värähtelevän systeemin pienin mahdollinen ominaistaajuus."],
+    ["Ylätaajuus","Perustaajuutta suurempi systeemin sallima ominaistaajuus."],
+    ["Ominaisaallonpituus","Aallonpituus, jolla systeemiin voi muodostua sen reunaehtoihin sopiva seisova aalto."],
+    ["Puoliavoin putki","Putki, jonka toinen pää on suljettu ja toinen avoin; suljettuun päähän muodostuu solmu ja avoimeen kupu."],
+    ["Avoin putki","Putki, jonka molemmat päät ovat avoimia, joten kumpaankin päähän muodostuu seisovan aallon kupu."]
+  ]},
+  { nimi:"Ääni", kortit:[
+    ["Ääni","Mekaanista aaltoliikettä, joka etenee kaasussa, nesteessä tai kiinteässä aineessa mutta ei tyhjiössä."],
+    ["Ääniaalto","Väliaineessa etenevä tihentymien ja harventumien muodostama pitkittäinen aaltoliike."],
+    ["Äänen korkeus","Kuuloaistimus, joka määräytyy pääasiassa äänen taajuuden perusteella."],
+    ["Äänen voimakkuus","Kuuloaistimus, johon vaikuttavat erityisesti äänen intensiteettitaso ja taajuus."],
+    ["Äänenväri","Ominaisuus, jonka avulla erotetaan toisistaan samalla korkeudella soivat erilaiset äänilähteet."],
+    ["Äänes","Äänen yksittäinen tietyntaajuinen värähtelykomponentti."],
+    ["Dopplerin ilmiö","Havaitun taajuuden muuttuminen, kun äänilähde ja havaitsija liikkuvat toistensa suhteen."]
+  ]},
+  { nimi:"Äänen intensiteetti ja kuuleminen", kortit:[
+    ["Äänen intensiteetti","Kertoo pinta-alayksikön läpi aikayksikössä siirtyvän äänienergian; I = P/A."],
+    ["Intensiteettitaso","Desibeleinä ilmoitettava logaritminen suure, joka vertaa äänen intensiteettiä kuulokynnykseen; L = 10 dB · lg(I/I₀)."],
+    ["Kuulokynnys","Pienin äänen intensiteetti, jonka ihminen pystyy tietyllä taajuudella kuulemaan; 1 kHz:n taajuudella I₀ ≈ 10⁻¹² W/m²."],
+    ["Kuuloalue","Taajuusalue, jonka ihminen kykenee kuulemaan; noin 16 Hz – 20 kHz."],
+    ["Melu","Ei-toivottua tai häiritsevää ääntä."],
+    ["Infraääni","Ääntä, jonka taajuus on ihmisen kuuloalueen alarajaa pienempi."],
+    ["Ultraääni","Ääntä, jonka taajuus on ihmisen kuuloalueen ylärajaa suurempi."]
   ]}
 ]},
 
