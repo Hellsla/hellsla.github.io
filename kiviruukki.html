@@ -204,6 +204,49 @@
       transform: translateY(-1px);
     }
 
+    .style-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 34px;
+      padding: 6px 12px 6px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--ink-2);
+      font-family: var(--head);
+      font-size: 0.78rem;
+      font-weight: 700;
+      view-transition-name: style-switch;
+      transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+
+    .style-switch:hover {
+      border-color: var(--navy);
+      color: var(--navy);
+      transform: translateY(-1px);
+    }
+
+    .style-switch-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #1a4d2e 50%, #f7f3ec 50%);
+      box-shadow: inset 0 0 0 1px rgba(11, 22, 56, 0.18);
+    }
+
+    .brand-mark { view-transition-name: brand-mark; }
+
+    /* Switching between this page and the classic portfolio morphs one into the other. */
+    @view-transition { navigation: auto; }
+
+    ::view-transition-old(root),
+    ::view-transition-new(root) { animation-duration: 420ms; }
+
+    @media (prefers-reduced-motion: reduce) {
+      @view-transition { navigation: none; }
+    }
+
     .flag-link {
       width: 30px;
       height: 30px;
@@ -619,6 +662,73 @@
       height: 15px;
       fill: currentColor;
     }
+
+    /* ---------- Building Kiviruukki ---------- */
+    .school {
+      padding: 30px 0 8px;
+      animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 90ms both;
+    }
+
+    .school-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .school h2 {
+      margin: 0 0 14px;
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: clamp(1.8rem, 3.6vw, 2.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    .school-text p {
+      margin: 0 0 12px;
+      max-width: 60ch;
+      color: var(--ink-2);
+      font-size: 0.97rem;
+      line-height: 1.65;
+    }
+
+    .school-facts {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      padding: 24px 26px;
+      border-radius: 24px;
+      background: var(--navy);
+      color: var(--surface);
+    }
+
+    .school-fact {
+      display: grid;
+      gap: 2px;
+      padding-left: 14px;
+      border-left: 2px solid var(--pink);
+    }
+
+    .school-fact dt {
+      font-family: var(--head);
+      font-weight: 900;
+      font-size: 1.6rem;
+      line-height: 1.05;
+      color: var(--pink);
+    }
+
+    .school-fact dd {
+      margin: 0;
+      font-size: 0.86rem;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .school-focus { margin-top: 22px; }
+
+    .school-focus li { display: grid; }
 
     /* ---------- Ahjo Makerspace ---------- */
     .ahjo {
@@ -1624,6 +1734,8 @@
       }
 
       .ahjo-intro { grid-template-columns: 1fr; }
+      .school-intro { grid-template-columns: 1fr; gap: 22px; }
+      .tools.school-focus { grid-template-columns: 1fr; }
       .forge-panel { grid-template-columns: auto 1fr; justify-items: start; align-items: center; gap: 4px 18px; }
       .forge-panel iframe { grid-row: span 3; width: 160px; }
       .forge-name { margin-top: 0; }
@@ -1644,7 +1756,10 @@
         flex-wrap: wrap;
       }
 
-      .header-right { gap: 8px; }
+      .header-right {
+        gap: 8px;
+        flex-wrap: wrap;
+      }
 
       nav a {
         padding: 7px 8px;
@@ -1838,6 +1953,11 @@
           <a href="#contact">Contact</a>
         </nav>
 
+        <a class="style-switch" href="index.html" title="Switch to the classic portfolio style">
+          <span class="style-switch-dot" aria-hidden="true"></span>
+          <span><span class="sr-only">Switch to </span>Classic<span class="sr-only"> style</span></span>
+        </a>
+
         <a class="cv-link" href="CV_Lauri_Hellsten_2026.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Lauri Hellsten CV as PDF">
           CV
         </a>
@@ -1959,8 +2079,68 @@
         </div>
       </section>
 
+      <section id="school" class="school" aria-labelledby="school-title">
+        <span class="section-label">02 — Building Kiviruukki</span>
+
+        <div class="school-intro">
+          <div class="school-text">
+            <span class="ahjo-kicker">Kiviruukin lukio · Espoo</span>
+            <h2 id="school-title">Shaping a new school.</h2>
+            <p>
+              Kiviruukin lukio is the new name and new home of Espoo Yhteislyseo. As a long-time member of Espoo Yhteislyseo’s leadership team, I have taken part in planning the new school and the focus it is built around.
+            </p>
+            <p>
+              That focus is learning by doing: STEAM and the Ahjo makerspace, diploma pathways that let students build their own direction, and international projects that connect our students with schools abroad.
+            </p>
+          </div>
+
+          <dl class="school-facts">
+            <div class="school-fact">
+              <dt>2 diplomas</dt>
+              <dd>Science &amp; Technology and Business &amp; Entrepreneurship pathways</dd>
+            </div>
+            <div class="school-fact">
+              <dt>2027</dt>
+              <dd>Move into the Cleantech Garden building in Kivenlahti</dd>
+            </div>
+          </dl>
+        </div>
+
+        <ul class="tools school-focus" aria-label="The school’s focus areas">
+          <li>
+            <a class="tool" href="#ahjo">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 14h12l2-4H6z"/><path d="M8 14v3h8v-3"/><path d="M6 21h12"/><path d="M12 17v4"/><path d="M14 6l2-3M17 7l3-1"/></svg>
+              </span>
+              <span class="tool-title">STEAM &amp; Ahjo Makerspace</span>
+              <span class="tool-sub">A cross-disciplinary makerspace at the heart of the school</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="tool" href="kiviruukki_diplomi_en.html">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M7 10.5V15c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5"/><path d="M21 8v6"/></svg>
+              </span>
+              <span class="tool-title">Diploma pathways</span>
+              <span class="tool-sub">Students choose a direction, try something new and build their skills</span>
+            </a>
+          </li>
+
+          <li>
+            <div class="tool">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18"/><path d="M12 3a14 14 0 000 18"/></svg>
+              </span>
+              <span class="tool-title">International work</span>
+              <span class="tool-sub">Erasmus+, Nordplus and other projects I coordinate</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
       <section id="ahjo" class="ahjo" aria-labelledby="ahjo-title">
-        <span class="section-label">02 — Ahjo Makerspace</span>
+        <span class="section-label">03 — Ahjo Makerspace</span>
 
         <div class="ahjo-intro">
           <div class="ahjo-text">
@@ -2091,7 +2271,7 @@
       </section>
 
       <section id="work" class="featured" aria-label="Selected work">
-        <span class="section-label">03 — Selected work</span>
+        <span class="section-label">04 — Selected work</span>
 
         <div class="featured-grid">
           <a class="featured-card" href="FY03_mekaanisen_energian_sailyminen.html">
@@ -2118,7 +2298,7 @@
       </section>
 
       <section id="classroom" class="classroom" aria-labelledby="classroom-title">
-        <span class="section-label">04 — From the classroom</span>
+        <span class="section-label">05 — From the classroom</span>
 
         <article class="case-study">
           <div>
@@ -2223,15 +2403,15 @@
 
             <div class="case-study-body">
               <p>
-                In my force and motion course, I kept the same flipped and flexible structure of weekly deadlines, independent work, group tasks, and short individual feedback, and added regular knowledge checks. Their purpose was to help students see what they had already mastered and what they still needed to practise, while I followed their progress each week.
+                In my force and motion course, taught to two groups, I kept the same flipped and flexible structure of weekly deadlines, independent work, group tasks, and short individual feedback, and added regular knowledge checks. Their purpose was to help students see what they had already mastered and what they still needed to practise, while I followed their progress each week.
               </p>
 
               <p>
-                Student feedback was positive, though more mixed than in the introductory course: 26 respondents gave the course an overall average of 3.98/5. Students especially enjoyed coming to lessons and felt that the teaching and guidance met their needs. Most found the number and rhythm of the knowledge checks appropriate, and many wrote that the weekly follow-up helped them study regularly, revise, and see what they still needed to work on.
+                Student feedback was positive: 47 respondents across the two groups gave the course an overall average of 4.05/5. Students especially enjoyed coming to lessons and felt that the teaching, guidance, and materials met their needs. Most said the knowledge checks and weekly task follow-up helped them see what they already knew and what they still needed to practise, and many wrote that the quick feedback helped them study regularly and revise.
               </p>
 
               <p>
-                The feedback also pointed to clear areas for development. Some students found the tasks within a chapter too similar, which lowered their motivation, and some wished for more time to practise at the end of lessons. These are concrete things I will change in the next implementation.
+                The feedback also pointed to clear areas for development. Individual students found the tasks within a chapter too similar, wished for more time to practise, or felt that feedback on the knowledge checks did not always explain why points were lost. These are concrete things I will change in the next implementation.
               </p>
 
               <p class="case-study-reflection">
@@ -2242,8 +2422,8 @@
 
           <aside class="case-study-aside" aria-label="Course at a glance">
             <div class="case-study-stat">
-              <span class="case-study-stat-value">3.98<small> / 5</small></span>
-              <span class="case-study-stat-label">Average across 14 feedback statements (scale 1–5) · 26 students</span>
+              <span class="case-study-stat-value">79<small>%</small></span>
+              <span class="case-study-stat-label">of 47 students said knowledge checks and task follow-up helped them see what they know and what to practise</span>
             </div>
 
             <div>
@@ -2251,28 +2431,28 @@
               <ul class="agree-list">
                 <li class="agree-row">
                   <span class="agree-label">It was nice to come to lessons</span>
-                  <span class="agree-value">88%</span>
-                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 88%"></span></span>
+                  <span class="agree-value">91%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 91%"></span></span>
                 </li>
                 <li class="agree-row">
                   <span class="agree-label">I received teaching and guidance that met my needs</span>
-                  <span class="agree-value">85%</span>
-                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 85%"></span></span>
+                  <span class="agree-value">89%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 89%"></span></span>
                 </li>
                 <li class="agree-row">
-                  <span class="agree-label">The number and rhythm of knowledge checks were right</span>
+                  <span class="agree-label">The teacher’s materials supported my learning</span>
+                  <span class="agree-value">87%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 87%"></span></span>
+                </li>
+                <li class="agree-row">
+                  <span class="agree-label">I understood better how mathematics describes physical situations</span>
                   <span class="agree-value">81%</span>
                   <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 81%"></span></span>
                 </li>
                 <li class="agree-row">
-                  <span class="agree-label">I understood better how mathematics describes physical situations</span>
-                  <span class="agree-value">77%</span>
-                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 77%"></span></span>
-                </li>
-                <li class="agree-row">
-                  <span class="agree-label">Knowledge checks helped me see what I know and what to practise</span>
-                  <span class="agree-value">69%</span>
-                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 69%"></span></span>
+                  <span class="agree-label">The number and rhythm of knowledge checks were right</span>
+                  <span class="agree-value">74%</span>
+                  <span class="agree-track" aria-hidden="true"><span class="agree-fill" style="width: 74%"></span></span>
                 </li>
               </ul>
             </div>
@@ -2281,6 +2461,7 @@
               <div class="case-study-list-title">Next time</div>
               <ul class="case-study-list">
                 <li>More varied tasks within each chapter</li>
+                <li>Clearer explanations in knowledge-check feedback</li>
                 <li>More time for practice at the end of lessons</li>
                 <li>Group-task instructions in Wilma for absent students</li>
               </ul>
@@ -2297,7 +2478,7 @@
               </figure>
 
               <figure class="voice">
-                <blockquote>“Yes, it helped, and it helped me understand what I already knew and what was still worth revising.”</blockquote>
+                <blockquote>“The knowledge checks were a good addition, because they were a good way to revise earlier tasks. They’re worth keeping, though I’d like them every two weeks.”</blockquote>
                 <figcaption>Knowledge checks</figcaption>
               </figure>
 
@@ -2311,7 +2492,7 @@
       </section>
 
       <section id="materials" class="materials">
-        <span class="section-label">05 — Materials</span>
+        <span class="section-label">06 — Materials</span>
         <p class="materials-note">Most materials below are in Finnish; some presentations are in English.</p>
 
         <div class="grid">

@@ -197,6 +197,60 @@
       transform: translateY(-1px);
     }
 
+    .style-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 34px;
+      padding: 6px 12px 6px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--ink-2);
+      font-size: 0.78rem;
+      font-weight: 600;
+      view-transition-name: style-switch;
+      transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+
+    .style-switch:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+      transform: translateY(-1px);
+    }
+
+    .style-switch-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #012169 50%, #fca5c7 50%);
+      box-shadow: inset 0 0 0 1px rgba(20, 23, 30, 0.12);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .brand-mark { view-transition-name: brand-mark; }
+
+    /* Switching between this page and the Kiviruukin lukio version morphs one into the other. */
+    @view-transition { navigation: auto; }
+
+    ::view-transition-old(root),
+    ::view-transition-new(root) { animation-duration: 420ms; }
+
+    @media (prefers-reduced-motion: reduce) {
+      @view-transition { navigation: none; }
+    }
+
     .flag-link {
       width: 34px;
       height: 34px;
@@ -1082,7 +1136,10 @@
         flex-wrap: wrap;
       }
 
-      .header-right { gap: 8px; }
+      .header-right {
+        gap: 8px;
+        flex-wrap: wrap;
+      }
 
       .hero { padding: 2px 0 28px; }
 
@@ -1231,6 +1288,11 @@
           <a href="#materials">Materials</a>
           <a href="#contact">Contact</a>
         </nav>
+
+        <a class="style-switch" href="kiviruukki.html" title="Switch to the Kiviruukin lukio style">
+          <span class="style-switch-dot" aria-hidden="true"></span>
+          <span><span class="sr-only">Switch to </span>Kiviruukki<span class="sr-only"> style</span></span>
+        </a>
 
         <a class="cv-link" href="CV_Lauri_Hellsten_2026.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Lauri Hellsten CV as PDF">
           CV
