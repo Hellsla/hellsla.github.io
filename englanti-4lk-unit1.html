@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Englannin kokeen kertauspaketti</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<!--
+  Englannin kokeen kertauspaketti, 4. luokka, Unit 1 (kappaleet 1–3).
+  Lapsi tekee tehtävät yksi kerrallaan ja saa heti palautteen. Väärin menneet
+  kerätään "Kertaa virheet" -listaan. Edistyminen tallentuu selaimeen (localStorage).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Grandstander:wght@600;800&display=swap">
+<style>
+/* Layout: ruutuvihko – one centred column on squared exercise-book paper; the home page lists the
+   worksheet's five topics, a practice run shows one task card at a time under a sticky progress bar. */
+:root{
+  --paper:#f3f6fb;
+  --grid:#e1e8f3;
+  --card:#ffffff;
+  --sunk:#edf1f8;
+  --ink:#17213b;
+  --ink-2:#55607c;
+  --line:#cdd6e5;
+  --pen:#2453cc;
+  --pen-2:#1a3d9e;
+  --on-pen:#ffffff;
+  --swipe:#ffe65a;
+  --hl:#ffe65a;
+  --hl-ink:#17213b;
+  --star:#f0b000;
+  --good:#167a44;
+  --good-bg:#e1f3e8;
+  --bad:#bf352e;
+  --bad-bg:#fde6e3;
+  --past-bg:#dcf1e4;
+  --to-bg:#ffe8d2;
+  --t1:#2e6be0;
+  --t2:#0f8a72;
+  --t3:#7a4fd8;
+  --t4:#cf6810;
+  --t5:#cc3473;
+  --on-t:#ffffff;
+  --shadow:0 1px 0 rgba(23,33,59,.05), 0 10px 24px -14px rgba(23,33,59,.35);
+  --f-display:"Grandstander","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --radius:16px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1426; --grid:#172039; --card:#172038; --sunk:#111a31; --ink:#e7ecf8; --ink-2:#a2adca;
+    --line:#2a3553; --pen:#8aa9ff; --pen-2:#abc2ff; --on-pen:#0e1426; --swipe:#6b5a0d; --hl:#ffe14a;
+    --hl-ink:#17213b; --star:#ffc933; --good:#66d397; --good-bg:#12331f; --bad:#ff8e85; --bad-bg:#3b191b;
+    --past-bg:#153524; --to-bg:#3d2a14; --t1:#7ea6ff; --t2:#46d0b0; --t3:#b597ff; --t4:#ffad5c; --t5:#ff7eb3;
+    --on-t:#0e1426; --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 26px -14px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1426; --grid:#172039; --card:#172038; --sunk:#111a31; --ink:#e7ecf8; --ink-2:#a2adca;
+  --line:#2a3553; --pen:#8aa9ff; --pen-2:#abc2ff; --on-pen:#0e1426; --swipe:#6b5a0d; --hl:#ffe14a;
+  --hl-ink:#17213b; --star:#ffc933; --good:#66d397; --good-bg:#12331f; --bad:#ff8e85; --bad-bg:#3b191b;
+  --past-bg:#153524; --to-bg:#3d2a14; --t1:#7ea6ff; --t2:#46d0b0; --t3:#b597ff; --t4:#ffad5c; --t5:#ff7eb3;
+  --on-t:#0e1426; --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 26px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+*{ box-sizing:border-box; }
+[hidden]{ display:none !important; }
+html{ -webkit-text-size-adjust:100%; }
+body{
+  margin:0;
+  background-color:var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:22px 22px;
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:17px;
+  line-height:1.5;
+}
+.wrap{ max-width:46rem; margin:0 auto; padding-inline:16px; padding-block:18px 56px; }
+h1,h2,h3{ font-family:var(--f-display); text-wrap:balance; margin:0; line-height:1.15; }
+h1{ font-size:clamp(2rem, 1.3rem + 3vw, 2.75rem); font-weight:800; letter-spacing:-.01em; }
+h2{ font-size:1.45rem; font-weight:800; }
+p{ margin:0; }
+button{ font:inherit; color:inherit; }
+:focus-visible{ outline:3px solid var(--pen); outline-offset:2px; }
+.sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.ic{ display:inline-grid; place-items:center; }
+.ic svg{ width:1.25em; height:1.25em; display:block; }
+
+.swipe{
+  background:linear-gradient(transparent 56%, var(--swipe) 56%, var(--swipe) 90%, transparent 90%);
+  padding:0 .12em; -webkit-box-decoration-break:clone; box-decoration-break:clone;
+}
+.eyebrow{ font-size:.8rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2); font-weight:700; }
+
+/* buttons */
+.btn{
+  appearance:none; border:2px solid var(--line); background:var(--card); color:var(--ink);
+  border-radius:12px; padding:.55em 1.05em; font-weight:700; cursor:pointer; min-height:48px;
+  display:inline-flex; align-items:center; justify-content:center; gap:.5em; text-align:center;
+}
+.btn:hover:not(:disabled){ border-color:var(--pen); }
+.btn.primary{ background:var(--pen); border-color:var(--pen); color:var(--on-pen); }
+.btn.primary:hover:not(:disabled){ background:var(--pen-2); border-color:var(--pen-2); }
+.btn.danger{ border-color:var(--bad); color:var(--bad); }
+.btn:disabled{ opacity:.5; cursor:default; }
+.btn.ghost{ border-color:transparent; background:transparent; padding-inline:.5em; }
+.btn.ghost:hover{ border-color:var(--line); }
+.linkbtn{ appearance:none; border:0; background:none; color:var(--ink-2); text-decoration:underline; cursor:pointer; padding:.4em 0; }
+.iconbtn{
+  appearance:none; border:2px solid var(--line); background:var(--card); color:var(--ink);
+  border-radius:999px; min-height:40px; padding:0 .8em; display:inline-flex; align-items:center; gap:.4em;
+  cursor:pointer; font-size:.85rem; font-weight:700; white-space:nowrap;
+}
+.iconbtn[aria-pressed="false"]{ color:var(--ink-2); }
+.say{
+  appearance:none; border:0; background:var(--sunk); color:var(--pen); width:40px; height:40px;
+  border-radius:50%; display:inline-grid; place-items:center; cursor:pointer; vertical-align:middle; flex:none;
+}
+.say:hover{ background:var(--line); }
+.say svg{ width:20px; height:20px; }
+
+/* home */
+.hero{ display:grid; gap:12px; padding-block:6px 4px; }
+.toprow{ display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.namerow{ display:flex; align-items:baseline; gap:10px; margin-top:4px; }
+.namerow label{ font-weight:700; color:var(--ink-2); }
+.namerow input{
+  font-family:var(--f-display); font-weight:600; font-size:1.3rem; color:var(--pen);
+  border:0; border-bottom:2px solid var(--ink-2); background:transparent; padding:.05em .2em;
+  min-width:0; flex:0 1 16rem; border-radius:0;
+}
+.namerow input:focus{ outline:none; border-bottom-color:var(--pen); }
+.overview{ margin-top:20px; display:grid; gap:16px; }
+.ovtop{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+.ovnum{ font-family:var(--f-display); font-weight:800; font-size:2rem; line-height:1; display:flex; align-items:center; gap:.25em; font-variant-numeric:tabular-nums; }
+.ovnum .ic{ color:var(--star); }
+.ovnum small{ font-size:1rem; color:var(--ink-2); font-weight:600; }
+.ovlabel{ color:var(--ink-2); font-size:.9rem; }
+.ovtop .prog{ flex:1 1 10rem; }
+.ovact{ display:flex; gap:10px; flex-wrap:wrap; }
+.ovact .btn{ flex:1 1 11rem; }
+.ovnote{ color:var(--ink-2); font-size:.9rem; }
+.group{ margin-top:30px; }
+.ghead{ display:flex; align-items:baseline; gap:.2rem .7rem; flex-wrap:wrap; }
+.ghead h2{ color:var(--tc); }
+.gsub{ color:var(--ink-2); font-size:.95rem; }
+.exlist{ list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+.exrow{
+  width:100%; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:14px;
+  text-align:left; background:var(--card); border:2px solid var(--line); border-radius:var(--radius);
+  padding:10px 14px; cursor:pointer; min-height:62px; color:var(--ink);
+}
+.exrow:hover{ border-color:var(--tc); }
+.extitle{ font-weight:700; min-width:0; }
+.extitle small{ display:block; font-weight:400; color:var(--ink-2); font-size:.85rem; }
+.num{
+  display:inline-grid; place-items:center; min-width:2.3rem; height:2.3rem; padding:0 .4rem;
+  border-radius:10px; background:var(--tc, var(--pen)); color:var(--on-t); font-family:var(--f-display);
+  font-weight:800; font-size:1.05rem; line-height:1; flex:none;
+}
+.num.sm{ min-width:1.8rem; height:1.8rem; font-size:.9rem; border-radius:8px; }
+.stars{ display:inline-flex; gap:1px; color:var(--line); }
+.stars .on{ color:var(--star); }
+.stars svg path{ fill:currentColor; }
+.tip{ margin-top:30px; padding:14px 16px; border-radius:var(--radius); background:var(--card); border:2px dashed var(--line); }
+.tip strong{ font-family:var(--f-display); }
+.key{ margin-top:16px; background:var(--card); border:2px solid var(--line); border-radius:var(--radius); padding:0 16px; }
+.key > summary{ cursor:pointer; font-weight:700; padding:14px 0; }
+.key h3{ font-size:1.05rem; margin:14px 0 6px; }
+.key ol{ margin:0 0 8px; padding-left:1.4em; }
+.key li{ margin:2px 0; }
+.reset{ margin-top:14px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; color:var(--ink-2); }
+
+/* run */
+.runbar{
+  position:sticky; top:env(safe-area-inset-top, 0px); z-index:5; background:var(--paper);
+  display:flex; align-items:center; gap:8px; padding-block:8px; margin-top:-8px;
+}
+.runtitle{ flex:1; min-width:0; font-weight:700; display:flex; align-items:center; gap:8px; }
+.runtitle span.t{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.count{ font-variant-numeric:tabular-nums; color:var(--ink-2); font-weight:700; white-space:nowrap; }
+.prog{ height:10px; background:var(--sunk); border-radius:99px; overflow:hidden; border:1px solid var(--line); }
+.prog i{ display:block; height:100%; background:var(--tc, var(--pen)); border-radius:99px; transition:width .35s ease; }
+.runbody{ display:grid; gap:14px; margin-top:14px; }
+.card{
+  background:var(--card); border:2px solid var(--line); border-radius:20px;
+  padding:clamp(16px, 4vw, 28px); box-shadow:var(--shadow);
+}
+.from{ display:flex; align-items:center; gap:8px; color:var(--ink-2); font-weight:700; font-size:.9rem; margin-bottom:8px; }
+.instr{ color:var(--ink-2); margin-bottom:12px; }
+.prompt{
+  font-size:clamp(1.35rem, 1.05rem + 1.5vw, 1.8rem); font-weight:700; line-height:1.35;
+  margin:0 0 16px; overflow-wrap:anywhere;
+}
+.prompt.center{ text-align:center; }
+.blank{
+  display:inline-block; min-width:3.2em; border-bottom:3px solid var(--ink-2); margin:0 .12em;
+  text-align:center; line-height:1.15;
+}
+.blank.filled{ border-color:var(--good); color:var(--good); }
+.fi{ margin:-6px 0 16px; }
+.fi p{ color:var(--ink-2); font-style:italic; }
+.alabel{ display:block; font-weight:700; font-size:.9rem; color:var(--ink-2); margin-bottom:6px; }
+.answer{
+  width:100%; font:inherit; font-size:1.35rem; padding:.5em .7em; border:2px solid var(--line);
+  border-radius:12px; background:var(--sunk); color:var(--ink);
+}
+.answer:focus{ outline:none; border-color:var(--pen); background:var(--card); }
+.answer.good{ border-color:var(--good); background:var(--good-bg); color:var(--ink); }
+.answer.bad{ border-color:var(--bad); background:var(--bad-bg); color:var(--ink); }
+.hint{ margin-top:10px; padding:8px 12px; border-radius:10px; background:var(--sunk); color:var(--ink); }
+.hint b{ color:var(--pen); }
+.hintline{ letter-spacing:.14em; font-weight:700; }
+.actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+.actions .btn{ flex:1 1 9rem; }
+.fbwrap:empty{ display:none; }
+.fbwrap{ margin-top:16px; }
+.fb{ border-radius:12px; padding:12px 14px; }
+.fbt{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:1.1rem; }
+.fbt .mark{ font-size:1.3rem; line-height:1; }
+.fb.good{ background:var(--good-bg); color:var(--good); }
+.fb.bad{ background:var(--bad-bg); color:var(--bad); }
+.fb.info{ background:var(--sunk); color:var(--ink); }
+.fb .more{ color:var(--ink); margin-top:6px; }
+.fb .more strong{ color:var(--ink); }
+.selfok{ margin-top:8px; }
+
+.choices{ display:grid; grid-template-columns:repeat(var(--cols, 2), minmax(0,1fr)); gap:10px; }
+.choice{
+  min-height:58px; font-size:1.25rem; font-weight:700; border:2px solid var(--line); background:var(--card);
+  color:var(--ink); border-radius:14px; cursor:pointer; padding:.35em .5em; overflow-wrap:anywhere;
+}
+.choice:hover:not(:disabled){ border-color:var(--pen); }
+.choice:disabled{ cursor:default; }
+.choice.good{ background:var(--good-bg); border-color:var(--good); color:var(--good); }
+.choice.bad{ background:var(--bad-bg); border-color:var(--bad); color:var(--bad); }
+.choices.box{ display:flex; flex-wrap:wrap; gap:8px; }
+.choices.box .choice{ font-size:1.05rem; min-height:46px; padding:.25em .85em; flex:0 1 auto; }
+.choice.used{ text-decoration:line-through; opacity:.4; }
+.boxlabel{ font-weight:700; font-size:.9rem; color:var(--ink-2); margin-bottom:8px; }
+
+.match{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px 12px; }
+.mcol{ display:grid; gap:8px; align-content:start; }
+.mhead{ font-weight:700; font-size:.85rem; color:var(--ink-2); text-transform:uppercase; letter-spacing:.08em; }
+.mbtn{
+  min-height:50px; border:2px solid var(--line); background:var(--card); color:var(--ink); border-radius:12px;
+  font-weight:700; font-size:1.05rem; cursor:pointer; padding:.3em .5em; text-align:left; overflow-wrap:anywhere;
+}
+.mbtn .mn{ color:var(--ink-2); font-weight:400; font-variant-numeric:tabular-nums; }
+.mbtn:hover:not(:disabled){ border-color:var(--pen); }
+.mbtn.sel{ border-color:var(--pen); background:var(--sunk); box-shadow:inset 0 0 0 2px var(--pen); }
+.mbtn.done{ background:var(--good-bg); border-color:var(--good); color:var(--good); cursor:default; }
+.mbtn.wrong{ border-color:var(--bad); background:var(--bad-bg); color:var(--bad); animation:shake .4s; }
+.matchinfo{ color:var(--ink-2); margin-top:14px; font-weight:700; }
+
+/* clock */
+.clock{ width:100%; max-width:260px; aspect-ratio:1; display:block; margin:0 auto; }
+.clock .face{ fill:var(--card); stroke:var(--ink); stroke-width:3; }
+.clock .tk{ stroke:var(--ink-2); stroke-width:1; }
+.clock .tk5{ stroke:var(--ink); stroke-width:2.6; stroke-linecap:round; }
+.clock .nums{ fill:var(--ink); font-family:var(--f-body); font-weight:700; font-size:16px; }
+.clock .hh{ stroke:var(--ink); stroke-width:7; stroke-linecap:round; }
+.clock .mh{ stroke:var(--pen); stroke-width:4.5; stroke-linecap:round; }
+.clock .hit{ stroke:transparent; stroke-width:26; stroke-linecap:round; }
+.clock .hub{ fill:var(--ink); }
+.clock .reg-past{ fill:var(--past-bg); }
+.clock .reg-to{ fill:var(--to-bg); }
+.clock .rlab{ fill:var(--ink); font-family:var(--f-display); font-weight:800; font-size:15px; }
+.clock .rlab.sm{ font-size:11px; font-family:var(--f-body); font-weight:700; fill:var(--ink-2); }
+.clock.live{ touch-action:none; cursor:grab; user-select:none; -webkit-user-select:none; }
+.clock.live .hand{ cursor:grab; }
+.clock.live:active{ cursor:grabbing; }
+.clockrow{ display:flex; align-items:center; justify-content:center; gap:10px 28px; flex-wrap:wrap; margin-bottom:16px; }
+.clockrow .clock{ max-width:190px; margin:0; }
+.digital{ font-family:var(--f-display); font-weight:800; font-size:2.6rem; font-variant-numeric:tabular-nums; }
+.steppers{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:14px; }
+.stepper{ display:flex; align-items:center; gap:6px; background:var(--sunk); border-radius:14px; padding:4px; }
+.stepper button{
+  width:46px; height:46px; border-radius:10px; border:2px solid var(--line); background:var(--card);
+  color:var(--ink); font-size:1.4rem; font-weight:700; cursor:pointer; line-height:1;
+}
+.stepper button:hover{ border-color:var(--pen); }
+.stepper span{ min-width:6.2em; text-align:center; font-weight:700; font-size:.95rem; }
+
+/* theory */
+.muista{ border:2px dashed var(--tc, var(--pen)); border-radius:var(--radius); background:var(--card); padding:0 16px; }
+.muista > summary{ cursor:pointer; font-family:var(--f-display); font-weight:800; padding:12px 0; color:var(--tc, var(--pen)); }
+.theory{ padding-bottom:14px; display:grid; gap:10px; }
+.betable{ display:grid; grid-template-columns:repeat(2, minmax(0, max-content)); gap:2px 28px; font-size:1.15rem; }
+.betable b{ color:var(--tc, var(--pen)); }
+.rules{ margin:0; padding-left:1.2em; display:grid; gap:4px; }
+.theoryclock{ display:flex; gap:12px 20px; align-items:center; flex-wrap:wrap; }
+.theoryclock .clock{ max-width:190px; margin:0; flex:none; }
+.theoryclock .rules{ flex:1 1 14rem; min-width:0; }
+
+/* reading */
+.storybox > summary{ cursor:pointer; font-family:var(--f-display); font-weight:800; font-size:1.2rem; }
+.storytools{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:12px 0 10px; color:var(--ink-2); font-size:.9rem; }
+.story{ font-size:1.15rem; line-height:1.8; }
+.story .w{ cursor:pointer; border-radius:4px; padding:0 1px; }
+.story .w.hl{ background:var(--hl); color:var(--hl-ink); }
+.story .s.ev{ text-decoration:underline wavy var(--pen); text-decoration-thickness:2px; text-underline-offset:6px; }
+
+.tfbtns{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+/* flashcards */
+.chips{ display:flex; flex-wrap:wrap; gap:8px; }
+.chip{
+  appearance:none; border:2px solid var(--line); background:var(--card); color:var(--ink); border-radius:999px;
+  padding:.35em .9em; font-weight:700; cursor:pointer; min-height:40px;
+}
+.chip[aria-pressed="true"]{ background:var(--tc, var(--pen)); border-color:var(--tc, var(--pen)); color:var(--on-t); }
+.fcard{ text-align:center; display:grid; place-items:center; gap:14px; min-height:230px; align-content:center; }
+.fcard .front{ font-family:var(--f-display); font-weight:800; font-size:clamp(1.8rem, 1.2rem + 3vw, 2.6rem); line-height:1.2; overflow-wrap:anywhere; }
+.fcard .back{ font-size:1.6rem; font-weight:700; color:var(--pen); display:flex; align-items:center; gap:10px; overflow-wrap:anywhere; }
+.fcard .side{ font-size:.8rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2); font-weight:700; }
+
+/* free writing */
+.wordchips{ margin-bottom:14px; }
+.freerow{ display:grid; gap:6px; margin-top:12px; }
+.freerow .fb{ padding:8px 12px; }
+.freerow .fbt{ font-size:1rem; }
+
+/* result */
+.result{ text-align:center; display:grid; gap:12px; justify-items:center; }
+.result h2{ font-size:clamp(1.6rem, 1.2rem + 2vw, 2.2rem); }
+.bigstars{ display:flex; gap:6px; color:var(--line); }
+.bigstars .on{ color:var(--star); }
+.bigstars svg{ width:58px; height:58px; }
+.bigstars svg path{ fill:currentColor; }
+.score{ font-size:1.15rem; }
+.score b{ font-variant-numeric:tabular-nums; }
+.misslist{ text-align:left; width:100%; display:grid; gap:6px; margin:4px 0 0; padding:0; list-style:none; }
+.misslist li{ background:var(--sunk); border-radius:10px; padding:8px 12px; }
+.misslist .ma{ color:var(--good); font-weight:700; }
+.result .actions{ width:100%; }
+
+@keyframes shake{ 0%,100%{ transform:translateX(0); } 25%{ transform:translateX(-6px); } 75%{ transform:translateX(6px); } }
+.shake{ animation:shake .4s; }
+#confetti{ position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:50; }
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; }
+}
+@media (max-width:420px){
+  .iconbtn .lbl{ display:none; }
+  .runbar .back .lbl{ display:none; }
+  .mbtn{ font-size:.98rem; }
+}
+</style>
+</head>
+<body>
+<main class="wrap" id="app">
+  <noscript><p>Tämä kertauspaketti tarvitsee JavaScriptin toimiakseen.</p></noscript>
+</main>
+<canvas id="confetti" hidden aria-hidden="true"></canvas>
+<script>
+(function(){
+'use strict';
+document.documentElement.lang = 'fi';
+
+/* ============ tallennus ============ */
+const KEY = 'eng4-unit1-kertaus';
+const DEF = () => ({ name:'', best:{}, mistakes:[], challenge:['','',''], sound:true, mockBest:null });
+let store = DEF();
+try {
+  const raw = localStorage.getItem(KEY);
+  if (raw) store = Object.assign(DEF(), JSON.parse(raw));
+} catch (e) {}
+if (!Array.isArray(store.mistakes)) store.mistakes = [];
+if (!Array.isArray(store.challenge)) store.challenge = ['','',''];
+if (!store.best || typeof store.best !== 'object') store.best = {};
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+function addMistake(k){ if (k && !store.mistakes.includes(k)) store.mistakes.push(k); }
+function dropMistake(k){ store.mistakes = store.mistakes.filter(x => x !== k); }
+
+/* ============ DOM-apurit ============ */
+const app = document.getElementById('app');
+function h(tag, attrs, ...kids){
+  const el = document.createElement(tag);
+  if (attrs) for (const k in attrs){
+    const v = attrs[k];
+    if (v == null || v === false) continue;
+    if (k === 'class') el.className = v;
+    else if (k === 'html') el.innerHTML = v;
+    else if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  for (const c of kids.flat(Infinity)) if (c != null && c !== false) el.append(c);
+  return el;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function s(tag, attrs){ const el = document.createElementNS(SVGNS, tag); for (const k in attrs) el.setAttribute(k, attrs[k]); return el; }
+const shuffle = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const pad = m => String(m).padStart(2, '0');
+const reduceMotion = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = () => window.matchMedia && matchMedia('(pointer: fine)').matches;
+
+const ICONS = {
+  sound:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  mute:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  star:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.1l-5.7 3.2 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>',
+  cards:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6.5" width="13" height="14.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 3.5h10.5A2.5 2.5 0 0 1 21 6v12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+  pen:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 0l.5.5a2.1 2.1 0 0 1 0 3L8.5 19 4 20z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>'
+};
+const icon = name => h('span', { class:'ic', html:ICONS[name] });
+function starsNode(n, big){
+  return h('span', { class: big ? 'bigstars' : 'stars', 'aria-label': `${n} / 3 tähteä` },
+    [0,1,2].map(i => h('span', { class:'ic' + (i < n ? ' on' : ''), html:ICONS.star })));
+}
+
+/* ============ ääni ja puhe ============ */
+let voice = null;
+function pickVoice(){
+  try {
+    const vs = speechSynthesis.getVoices();
+    voice = vs.find(v => /en[-_]GB/i.test(v.lang)) || vs.find(v => /^en/i.test(v.lang)) || null;
+  } catch (e) {}
+}
+if ('speechSynthesis' in window){ pickVoice(); try { speechSynthesis.onvoiceschanged = pickVoice; } catch (e) {} }
+function speak(text, force){
+  if (!text || (!force && !store.sound) || !('speechSynthesis' in window)) return;
+  try {
+    const u = new SpeechSynthesisUtterance(String(text).replace(/_+/g, ' '));
+    u.lang = voice ? voice.lang : 'en-GB';
+    if (voice) u.voice = voice;
+    u.rate = 0.88;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+function speakLater(text){ setTimeout(() => speak(text), 280); }
+function stopSpeech(){ try { speechSynthesis.cancel(); } catch (e) {} }
+let actx = null;
+function tone(freqs, dur, type, vol){
+  if (!store.sound) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const t0 = actx.currentTime;
+    freqs.forEach((f, i) => {
+      const o = actx.createOscillator(), g = actx.createGain();
+      o.type = type; o.frequency.value = f;
+      const st = t0 + i * dur;
+      g.gain.setValueAtTime(0.0001, st);
+      g.gain.linearRampToValueAtTime(vol, st + 0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, st + dur);
+      o.connect(g); g.connect(actx.destination);
+      o.start(st); o.stop(st + dur + 0.03);
+    });
+  } catch (e) {}
+}
+const ding = () => tone([660, 880], 0.11, 'sine', 0.07);
+const bonk = () => tone([196], 0.2, 'triangle', 0.06);
+function sayBtn(text){
+  return h('button', { class:'say', type:'button', title:'Kuuntele', 'aria-label':'Kuuntele: ' + text,
+    onclick: ev => { ev.stopPropagation(); speak(text, true); } }, h('span', { html:ICONS.sound }));
+}
+function soundBtn(){
+  const b = h('button', { class:'iconbtn', type:'button', 'aria-pressed': String(!!store.sound) });
+  const draw = () => {
+    b.setAttribute('aria-pressed', String(!!store.sound));
+    b.replaceChildren(icon(store.sound ? 'sound' : 'mute'), h('span', { class:'lbl' }, store.sound ? 'Ääni päällä' : 'Ääni pois'));
+    b.title = store.sound ? 'Ääni päällä' : 'Ääni pois';
+    b.setAttribute('aria-label', b.title);
+  };
+  b.addEventListener('click', () => { store.sound = !store.sound; save(); if (!store.sound) stopSpeech(); draw(); });
+  draw();
+  return b;
+}
+
+/* ============ vastausten tarkistus ============ */
+function norm(str, time){
+  let n = String(str).toLowerCase().normalize('NFC')
+    .replace(/[’‘`´ʼ]/g, "'")
+    .replace(/[“”"«»]/g, ' ')
+    .replace(/\./g, '')
+    .replace(/[,!?;:()]/g, ' ')
+    .replace(/-/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+  n = n.replace(/\bi'm\b/g, 'i am')
+       .replace(/\bisn't\b/g, 'is not')
+       .replace(/\baren't\b/g, 'are not')
+       .replace(/\b(he|she|it|that|what|there)'s\b/g, '$1 is')
+       .replace(/\b(you|we|they)'re\b/g, '$1 are')
+       .replace(/\b([a-z]+)'s (\w+ing)\b/g, '$1 is $2')
+       .replace(/\bo ?'? ?clock\b/g, "o'clock")
+       .replace(/\boclock\b/g, "o'clock")
+       .replace(/\ba quarter\b/g, 'quarter');
+  if (time) n = n.replace(/\bminutes?\b/g, ' ').replace(/\s+/g, ' ').trim();
+  return n;
+}
+function lev(a, b){
+  const m = a.length, n = b.length;
+  if (!m) return n; if (!n) return m;
+  let prev = Array.from({ length:n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++){
+    const cur = [i];
+    for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    prev = cur;
+  }
+  return prev[n];
+}
+const letterHint = ans => ans.replace(/[A-Za-z]+/g, w => w[0] + '_'.repeat(w.length - 1));
+const fillBlank = (q, a) => q.replace('___', a).replace(/\*\*/g, '');
+const plain = q => q.replace(/\*\*/g, '').replace(/___/g, '…');
+function rich(text, fill){
+  const out = [];
+  text.split(/(___|\*\*[^*]+\*\*)/).forEach(part => {
+    if (!part) return;
+    if (part === '___') out.push(h('span', { class:'blank' + (fill != null ? ' filled' : '') }, fill != null ? fill : ' '));
+    else if (part.startsWith('**')) out.push(h('strong', null, part.slice(2, -2)));
+    else out.push(part);
+  });
+  return out;
+}
+
+/* ============ kellonajat ============ */
+const NUM = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
+const FI_NUM = ['nolla','yksi','kaksi','kolme','neljä','viisi','kuusi','seitsemän','kahdeksan','yhdeksän','kymmenen','yksitoista','kaksitoista'];
+const MINW = { 5:'five', 10:'ten', 15:'quarter', 20:'twenty', 25:'twenty-five', 30:'half' };
+const nextH = hr => hr % 12 + 1;
+function timeWords(hr, m){
+  if (m === 0) return `${NUM[hr]} o'clock`;
+  if (m <= 30) return `${MINW[m]} past ${NUM[hr]}`;
+  return `${MINW[60 - m]} to ${NUM[nextH(hr)]}`;
+}
+function clockHint(hr, m){
+  if (m === 0) return `Tasatunti: tunti + o'clock.`;
+  if (m === 15) return `15 minuuttia yli = quarter past + tunti.`;
+  if (m === 30){ const e = hr === 3 ? 5 : 3; return `30 minuuttia yli = half past + tunti. Esimerkki: ${e}.30 = half past ${NUM[e]} (suomeksi puoli ${FI_NUM[nextH(e)]}).`; }
+  if (m === 45) return `15 minuuttia vaille = quarter to + seuraava tunti.`;
+  if (m < 30) return `${m} minuuttia yli = ${MINW[m]} past + tunti.`;
+  return `${60 - m} minuuttia vaille = ${MINW[60 - m]} to + seuraava tunti.`;
+}
+function clockTrap(n, hr, m){
+  if (/\d/.test(n)) return 'Kirjoita kellonaika sanoilla, esim. nine o’clock.';
+  const last = n.split(' ').pop();
+  if (m === 0 && n === NUM[hr]) return 'Tasatuntiin lisätään o’clock.';
+  if (m === 30 && n === `half past ${NUM[nextH(hr)]}`) return `Huom! Suomeksi ${hr}.30 on puoli ${FI_NUM[nextH(hr)]}, mutta englanniksi kerrotaan, paljonko on mennyt yli: half past ${NUM[hr]}.`;
+  if (m > 30 && / to /.test(n) && last === NUM[hr]) return `Muista: to = vaille. ${hr}.${pad(m)} on ${60 - m} minuuttia vaille ${nextH(hr)}.`;
+  if (m > 30 && / past /.test(n)) return 'Kun minuutteja on yli 30, käytetään to (vaille) ja seuraavaa tasatuntia.';
+  if (m > 0 && m < 30 && / to /.test(n)) return 'Kun minuutteja on alle 30, käytetään past (yli).';
+  if ((m === 15 || m === 45) && /fifteen/.test(n)) return '15 minuuttia = quarter (vartti).';
+  if (m === 30 && /thirty/.test(n)) return '30 minuuttia yli = half past.';
+  return null;
+}
+function clockWriteItem(hr, m){
+  return { kind:'type', clock:{ h:hr, m }, q:`${hr}.${pad(m)}`, answers:[timeWords(hr, m)], hint:clockHint(hr, m),
+    time:true, trap:n => clockTrap(n, hr, m), instr:'Kirjoita kellonaika englanniksi.', label:'Englanniksi' };
+}
+function clockSetItem(phrase, hr, m){
+  return { kind:'clock', q:phrase, h:hr, m, instr:'Siirrä viisarit oikeaan kohtaan. Pitkä viisari näyttää minuutit, lyhyt tunnit.' };
+}
+
+/* ============ tehtävät ============ */
+const ADJ = [['shy','ujo'],['funny','hauska'],['brave','rohkea'],['kind','ystävällinen'],['clever','älykäs'],['creative','luova'],
+  ['sporty','urheilullinen'],['calm','rauhallinen'],['clumsy','kömpelö'],['lazy','laiska'],['active','aktiivinen'],['curious','utelias']];
+const BOX = ['first','lesson','remember','ready','push','pull','coin','outside','dangerous','breaktime','next','clue','dark','gate','mask','back'];
+const STORY = [
+  'It is Friday morning.', 'Ella and Leo are at school.', 'Their first lesson is English at nine o’clock.',
+  'Ella is curious and active.', 'Leo is funny and kind.', 'At breaktime they go outside.',
+  'Leo is throwing a ball and Ella is looking for her friend Mia.', 'Then they hear a strange sound near the gate.',
+  '‘What is that?’ asks Ella.', 'They find Mia behind the gate.', 'She is wearing a funny monster mask.',
+  '‘It’s just a joke!’ she says.', 'The children laugh and hurry back inside.', 'Their next lesson is music at quarter past ten.'
+];
+
+const T = (q, answers, o) => Object.assign({ kind:'type', q, answers:[].concat(answers) }, o || {});
+const C = (q, options, answer, o) => Object.assign({ kind:'choice', q, options, answer }, o || {});
+
+function beTrap(n){
+  if (/\bi (is|are)\b/.test(n)) return 'Muista: I am.';
+  if (/\b(he|she|it|sofia|tommy|emma|nadir) (am|are)\b/.test(n)) return 'Yksi henkilö (he, she, Sofia…) → is.';
+  if (/\b(we|you|they|children|and \w+) (am|is)\b/.test(n)) return 'Monta henkilöä (we, you, they, Emma and Alex) → are.';
+  if (/\brideing\b/.test(n)) return 'e putoaa pois: ride → riding.';
+  if (/\b(am|is|are)( not)? (paint|climb|play|watch|sleep|throw|ride|look|catch|open)\b/.test(n)) return 'Muista -ing-pääte: is painting, are playing…';
+  if (/\b\w+ing\b/.test(n) && !/\b(am|is|are)\b/.test(n)) return 'Muista olla-verbi ennen -ing-muotoa: am, is tai are.';
+  return null;
+}
+
+const EXS = [
+  { id:'e1', num:'1', group:'sanasto', title:'Adjektiivit – yhdistä', mode:'match', pairs:ADJ,
+    instr:'Napauta englanninkielistä adjektiivia ja sitten sen suomennosta.',
+    items: ADJ.map(([en, fi]) => ({ kind:'choice', q:`Mitä tarkoittaa **${en}**?`, answer:fi, pool:ADJ.map(p => p[1]),
+      sayQ:en, say:en, show:`${en} = ${fi}` })) },
+
+  { id:'e2', num:'2', group:'sanasto', title:'Kuka on millainen?', plang:'en',
+    instr:'Valitse lauseeseen sopiva adjektiivi.',
+    items:[
+      C('Ella always helps others. She is ___.', ['kind','lazy','clumsy','shy'], 'kind', { shuffle:true, fi:'Ella auttaa aina muita.' }),
+      C('Leo loves running and football. He is ___.', ['sporty','shy','calm','lazy'], 'sporty', { shuffle:true, fi:'Leo rakastaa juoksemista ja jalkapalloa.' }),
+      C('Mila asks lots of questions. She is ___.', ['curious','lazy','sporty','clumsy'], 'curious', { shuffle:true, fi:'Mila kysyy paljon kysymyksiä.' }),
+      C('Noah is not afraid of the dark. He is ___.', ['brave','shy','lazy','clumsy'], 'brave', { shuffle:true, fi:'Noah ei pelkää pimeää.' }),
+      C('Aino makes funny jokes. She is ___.', ['funny','calm','shy','lazy'], 'funny', { shuffle:true, fi:'Aino kertoo hauskoja vitsejä.' })
+    ] },
+
+  { id:'e3', num:'3', group:'sanasto', title:'Verbit – kirjoita englanniksi', label:'Englanniksi',
+    instr:'Kirjoita verbi englanniksi.',
+    items:[
+      T('ajaa pyörällä', 'ride a bike', { alt:['ride a bicycle','ride'], note:'Kirjassa: ride a bike', verb:true }),
+      T('nukkua', 'sleep', { verb:true }),
+      T('kiivetä', 'climb', { verb:true }),
+      T('etsiä', 'look for', { alt:['search','search for'], note:'Kirjassa: look for', verb:true }),
+      T('olla piilossa', 'hide', { alt:['be hiding','be hidden','hiding'], note:'Kirjassa: hide', verb:true }),
+      T('ajaa autoa', 'drive a car', { alt:['drive'], note:'Kirjassa: drive a car', verb:true }),
+      T('heittää', 'throw', { verb:true }),
+      T('ottaa kiinni', 'catch', { verb:true }),
+      T('maalata', 'paint', { verb:true }),
+      T('katsella', 'watch', { alt:['look at'], note:'Kirjassa: watch', verb:true }),
+      T('avata', 'open', { verb:true }),
+      T('sulkea', 'close', { alt:['shut'], note:'Kirjassa: close', verb:true })
+    ] },
+
+  { id:'e4', num:'4', group:'sanasto', title:'Kouluaineet', label:'Englanniksi',
+    instr:'Kirjoita kouluaine englanniksi.',
+    items:[
+      T('matematiikka', ['maths'], { alt:['math','mathematics'], note:'Brittienglanniksi: maths' }),
+      T('liikunta', ['PE'], { alt:['physical education'], note:'Lyhenne: PE', say:'P. E.' }),
+      T('englanti', ['English'], { cap:'English' }),
+      T('musiikki', ['music']),
+      T('suomen kieli', ['Finnish', 'Finnish language'], { cap:'Finnish' }),
+      T('uskonto', ['RE'], { alt:['religion','religious education'], note:'Lyhenne: RE (religious education)', say:'R. E.' }),
+      T('elämänkatsomustieto', ['ethics']),
+      T('ympäristöoppi', ['science'], { alt:['environmental studies','environmental science'], note:'Kirjassa: science' }),
+      T('kuvataide', ['art'], { alt:['visual arts','visual art','arts'], note:'Kirjassa: art' }),
+      T('yhteiskuntaoppi', ['civics'], { alt:['social studies'], note:'Kirjassa: civics' }),
+      T('käsityöt', ['crafts'], { alt:['craft','handicraft','handicrafts'], note:'Kirjassa: crafts' }),
+      T('historia', ['history'])
+    ] },
+
+  { id:'e5', num:'5', group:'sanasto', title:'Kappaleiden sanat', mode:'wordbox', box:BOX,
+    instr:'Valitse sanalaatikosta oikea englanninkielinen sana.',
+    items:[['oppitunti','lesson'],['muistaa','remember'],['valmis','ready'],['työntää','push'],['vetää','pull'],['kolikko','coin'],
+      ['ulkona','outside'],['vaarallinen','dangerous'],['välitunti','breaktime'],['seuraava','next'],['vihje','clue'],
+      ['pimeä / pimeässä','dark'],['portti','gate'],['naamio','mask'],['takaisin','back'],['ensimmäinen','first']]
+      .map(([fi, en]) => ({ kind:'choice', q:`${fi} = ___`, answer:en, pool:BOX, word:fi, en, say:en, show:`${fi} = ${en}` })) },
+
+  { id:'e5b', num:'5b', group:'sanasto', title:'Fraaseja kappaleista', label:'Englanniksi',
+    instr:'Kirjoita englanniksi.',
+    items:[
+      T('Mitä sinä teet? (juuri nyt)', 'What are you doing?', { sentence:true, qmark:true }),
+      T('Varo!', 'Watch out!', { sentence:true }),
+      T('Olen valmis.', 'I am ready.', { sentence:true }),
+      T('pimeässä', 'in the dark'),
+      T('perjantaina', 'on Friday', { cap:'Friday' }),
+      T('hirviö', ['a monster', 'monster']),
+      T('ääni', ['a sound', 'sound']),
+      T('Juuri ajoissa.', 'Just in time.', { sentence:true })
+    ] },
+
+  { id:'e6', num:'6', group:'olla', title:'Täydennä am, is tai are', theory:'olla', plang:'en',
+    instr:'Valitse oikea olla-verbin muoto.',
+    items:[
+      C('I ___ curious.', ['am','is','are'], 'am', { why:'I → am' }),
+      C('She ___ kind.', ['am','is','are'], 'is', { why:'she → is' }),
+      C('We ___ ready.', ['am','is','are'], 'are', { why:'we → are' }),
+      C('They ___ outside.', ['am','is','are'], 'are', { why:'they → are' }),
+      C('He ___ not lazy.', ['am','is','are'], 'is', { why:'he → is' }),
+      C('You ___ very funny.', ['am','is','are'], 'are', { why:'you → are' }),
+      C('It ___ dark.', ['am','is','are'], 'is', { why:'it → is' }),
+      C('I ___ not scared.', ['am','is','are'], 'am', { why:'I → am' })
+    ] },
+
+  { id:'e7', num:'7', group:'olla', title:'Muuta kielteiseksi', theory:'olla', plang:'en', label:'Kielteisenä', sentence:true, sayPrompt:true,
+    instr:'Kirjoita lause kielteisenä.', hint:'Lisää not olla-verbin perään: is → is not.',
+    trap: n => /\bnot (am|is|are)\b/.test(n) ? 'not tulee olla-verbin jälkeen: is not, are not, am not.'
+      : /\b(don't|doesn't|do not|does not)\b/.test(n) ? 'Olla-verbin kanssa ei tarvita don’t-sanaa. Lisää vain not: is not.'
+      : !/\bnot\b/.test(n) ? 'Kielteisestä lauseesta puuttuu not.'
+      : !/\b(am|is|are)\b/.test(n) ? 'Muista olla-verbi: is not, are not, am not.' : null,
+    items:[
+      T('She is sporty.', 'She is not sporty.'),
+      T('They are ready.', 'They are not ready.'),
+      T('I am tired.', 'I am not tired.'),
+      T('He is outside.', 'He is not outside.')
+    ] },
+
+  { id:'e8', num:'8', group:'olla', title:'Tee kysymys', theory:'olla', plang:'en', label:'Kysymys', sentence:true, qmark:true,
+    instr:'Tee sanoista kysymys. Olla-verbi siirtyy lauseen alkuun.', hint:'Aloita olla-verbillä: Are … ? tai Is … ?',
+    trap: n => /^(you|she|they|he) (is|are|am)\b/.test(n) ? 'Tämä on väitelause. Kysymyksessä olla-verbi tulee ensin: Is she …?'
+      : /^(is (you|they)|are (she|he)|am (you|she|he|they))\b/.test(n) ? 'Tarkista olla-verbi: you / they → are, he / she → is.' : null,
+    items:[
+      T('you / ready', 'Are you ready?'),
+      T('she / brave', 'Is she brave?'),
+      T('they / outside', 'Are they outside?'),
+      T('he / funny', 'Is he funny?')
+    ] },
+
+  { id:'e9', num:'9', group:'olla', title:'Valitse oikea vaihtoehto', theory:'olla', plang:'en',
+    instr:'Valitse oikea olla-verbin muoto.',
+    items:[
+      C('I ___ clever.', ['am','is','are'], 'am', { why:'I → am' }),
+      C('___ she kind?', ['Am','Is','Are'], 'Is', { why:'she → is. Kysymyksessä olla-verbi on ensimmäisenä.' }),
+      C('They ___ not lazy.', ['am','is','are'], 'are', { why:'they → are' }),
+      C('___ you ready?', ['Am','Is','Are'], 'Are', { why:'you → are. Kysymyksessä olla-verbi on ensimmäisenä.' }),
+      C('He ___ curious.', ['am','is','are'], 'is', { why:'he → is' })
+    ] },
+
+  { id:'haaste', icon:'pen', group:'olla', title:'Pieni haaste: kerro itsestäsi', mode:'free',
+    instr:'Kirjoita kolme lausetta itsestäsi. Käytä ainakin yhtä adjektiivia.' },
+
+  { id:'e10', num:'10', group:'ing', title:'Muodosta -ing-muoto', theory:'ing', plang:'en', label:'-ing-muoto', sayPrompt:true,
+    instr:'Lisää verbiin -ing.', hint:'Lisää verbin loppuun -ing.',
+    trap: n => /eing$/.test(n) ? 'Muista: e putoaa pois ennen -ing-päätettä. ride → riding.' : !/ing$/.test(n) ? 'Muista lisätä loppuun -ing.' : null,
+    items: [['play','playing'],['sleep','sleeping'],['climb','climbing'],['look','looking'],['throw','throwing'],['catch','catching'],
+      ['paint','painting'],['watch','watching'],['open','opening'],
+      ['ride','riding', { hint:'Jos verbi loppuu e-kirjaimeen, e putoaa pois: rid + ing.', why:'ride → riding (e putoaa pois)' }]]
+      .map(([v, a, o]) => T(v, a, o)) },
+
+  { id:'e11', num:'11', group:'ing', title:'Täydennä', theory:'ing', plang:'en', label:'Puuttuvat sanat',
+    instr:'Kirjoita olla-verbi ja verbin -ing-muoto.', hint:'olla-verbi (am / is / are) + verbi-ing',
+    trap: (n, it) => {
+      const a = norm(it.answers[0]).split(' '), w = n.split(' ');
+      if (n === norm(it.ing) || n === norm(it.ing).split(' ')[0]) return 'Muista olla-verbi eteen: am, is tai are.';
+      if (/eing\b/.test(n)) return 'e putoaa pois: ride → riding.';
+      if (w.length === a.length && w.slice(1).join(' ') === a.slice(1).join(' ') && /^(am|is|are)$/.test(w[0])) return 'Tarkista olla-verbi: I → am, he / she → is, we / you / they → are.';
+      if (it.answers[0].endsWith(' for') && !n.endsWith('for')) return 'Muista: look for (etsiä) → looking for.';
+      if (w[0] === a[0] && !/ing\b/.test(n)) return 'Muista -ing-pääte.';
+      return null;
+    },
+    items:[
+      T('Emma ___ (sleep).', 'is sleeping', { full:'Emma is sleeping.', ing:'sleeping' }),
+      T('The children ___ (play) outside.', 'are playing', { full:'The children are playing outside.', ing:'playing' }),
+      T('I ___ (look for) my bag.', 'am looking for', { full:'I am looking for my bag.', ing:'looking for' }),
+      T('Nadir ___ (throw) a ball.', 'is throwing', { full:'Nadir is throwing a ball.', ing:'throwing' }),
+      T('We ___ (watch) a funny video.', 'are watching', { full:'We are watching a funny video.', ing:'watching' }),
+      T('You ___ (ride) a bike.', 'are riding', { full:'You are riding a bike.', ing:'riding' })
+    ] },
+
+  { id:'e12', num:'12', group:'ing', title:'Mitä he tekevät?', theory:'ing', plang:'en', label:'Kokonainen lause', sentence:true,
+    instr:'Kirjoita kokonainen lause.', hint:'Kuka + am / is / are + verbi-ing.', trap:beTrap,
+    items:[
+      T('Sofia / paint', 'Sofia is painting.'),
+      T('Tommy / climb', 'Tommy is climbing.'),
+      T('Emma and Alex / play', 'Emma and Alex are playing.'),
+      T('I / watch TV', 'I am watching TV.')
+    ] },
+
+  { id:'e13', num:'13', group:'ing', title:'Korjaa virhe', theory:'ing', plang:'en', label:'Korjattu lause', sentence:true,
+    instr:'Lauseessa on yksi virhe. Kirjoita lause oikein.',
+    trap: (n, it) => n === norm(it.q) ? 'Lause on vielä sama. Etsi virhe ja korjaa se!' : beTrap(n),
+    items:[
+      T('She are sleeping.', 'She is sleeping.', { hint:'Tarkista olla-verbi: she → ?' }),
+      T('They is playing.', 'They are playing.', { hint:'Tarkista olla-verbi: they → ?' }),
+      T('I am watch TV.', 'I am watching TV.', { hint:'Tarkista verbi: am + verbi-ing.' }),
+      T('He is throw a ball.', 'He is throwing a ball.', { hint:'Tarkista verbi: is + verbi-ing.' })
+    ] },
+
+  { id:'e14', num:'14', group:'kello', title:'Kirjoita kellonaika englanniksi', theory:'kello', label:'Englanniksi',
+    items: [[8,0],[9,15],[10,30],[11,45],[7,20],[6,50]].map(([hr, m]) => clockWriteItem(hr, m)) },
+
+  { id:'e15', num:'15', group:'kello', title:'Piirrä viisarit', theory:'kello', plang:'en',
+    items:[clockSetItem('half past eight', 8, 30), clockSetItem('quarter past nine', 9, 15), clockSetItem('ten to eleven', 10, 50),
+      clockSetItem('twenty past seven', 7, 20), clockSetItem('quarter to five', 4, 45), clockSetItem("six o'clock", 6, 0)] },
+
+  { id:'e16', num:'16', group:'kello', title:'Koulupäivä', theory:'kello', label:'Englanniksi', sentence:true, time:true,
+    instr:'Kirjoita lause englanniksi.',
+    trap: n => /\d/.test(n) ? 'Kirjoita kellonaika sanoilla, esim. nine o’clock.'
+      : /half past eleven/.test(n) ? 'Puoli yksitoista = half past ten. Englanniksi kerrotaan, paljonko on mennyt yli edellisen tasatunnin.'
+      : /quarter to eleven/.test(n) ? 'Varttia vaille kaksitoista = quarter to twelve.'
+      : /\b(start|begin)\b/.test(n) ? 'Muista s-pääte: Maths starts …'
+      : (!/\bat\b/.test(n) && /(o'clock|past|to)/.test(n)) ? 'Muista sana at: … starts at nine o’clock.' : null,
+    items:[
+      T('Matematiikka alkaa kello yhdeksän.', "Maths starts at nine o'clock.", { re:/^(the )?(maths?|mathematics)( lesson| class)? (starts|begins) at nine( o'clock)?$/, hint:'Maths starts at … (kello yhdeksän = nine o’clock)' }),
+      T('Englanti alkaa varttia yli kymmenen.', 'English starts at quarter past ten.', { re:/^(the )?english( lesson| class)? (starts|begins) at quarter past ten$/, hint:'varttia yli = quarter past', cap:'English' }),
+      T('Välitunti on puoli yhdeltätoista.', 'Breaktime is at half past ten.', { re:/^(the )?(breaktime|break time|break|recess) (is|starts|begins) at half past ten$/, hint:'puoli yksitoista = half past ten (puoli tuntia yli kymmenen)' }),
+      T('Musiikki alkaa varttia vaille kaksitoista.', 'Music starts at quarter to twelve.', { re:/^(the )?music( lesson| class)? (starts|begins) at quarter to twelve$/, hint:'varttia vaille = quarter to' })
+    ] },
+
+  { id:'kt', icon:'clock', group:'kello', title:'Kellotreeni', sub:'10 arvottua kellonaikaa', theory:'kello', drill:true, items:[] },
+
+  { id:'e17', num:'17', group:'luku', title:'Lue ja vastaa', mode:'reading', plang:'en',
+    instr:'Vastaa englanniksi tai suomeksi.',
+    items:[
+      { kind:'read', q:'What day is it?', fi:'Mikä päivä on?', re:/fri|perjant/, model:'It is Friday. (perjantai)', ev:[0], hint:'Katso tekstin ensimmäistä lausetta.' },
+      { kind:'read', q:'What is the first lesson?', fi:'Mikä on ensimmäinen oppitunti?', re:/engl/, model:'English. (englanti)', ev:[2], hint:'Etsi tekstistä sana first.' },
+      { kind:'read', q:'What time does the first lesson start?', fi:'Mihin aikaan ensimmäinen oppitunti alkaa?', re:/nine|\b9\b|yhdeks/, model:'At nine o’clock. (kello yhdeksän)', ev:[2], hint:'Etsi tekstistä sana o’clock.' },
+      { kind:'read', q:'What is Leo doing at breaktime?', fi:'Mitä Leo tekee välitunnilla?', re:/throw|heit|ball|pallo/, model:'He is throwing a ball. (heittää palloa)', ev:[6], hint:'Etsi sana breaktime ja lue sitä seuraava lause.' },
+      { kind:'read', q:'What is Ella doing?', fi:'Mitä Ella tekee?', re:/look|etsi|search|\bmia/, model:'She is looking for her friend Mia. (etsii ystäväänsä Miaa)', ev:[6], hint:'Etsi lause, jossa on sekä Leo että Ella.' },
+      { kind:'read', q:'Where do they hear a sound?', fi:'Missä he kuulevat äänen?', re:/gate|portt|portin|porti/, model:'Near the gate. (portin lähellä)', ev:[7], hint:'Etsi tekstistä sana sound.' },
+      { kind:'read', q:'Who is wearing a monster mask?', fi:'Kenellä on hirviönaamio?', re:/\bmia/, model:'Mia.', ev:[9,10], hint:'Etsi tekstistä sana mask.' },
+      { kind:'read', q:'What time is the music lesson?', fi:'Mihin aikaan on musiikkitunti?', re:/quarter past (ten|10)|10[.:]15|vart\w* yli (kymmen|10)/, model:'At quarter past ten. (varttia yli kymmenen, 10.15)', ev:[13], hint:'Katso tekstin viimeistä lausetta.' }
+    ] },
+
+  { id:'e18', num:'18', group:'luku', title:'Totta vai tarua?', mode:'reading', plang:'en',
+    instr:'Valitse T (totta) tai F (tarua). Korjaa väärä väite.',
+    items:[
+      { kind:'tf', q:'Ella is lazy.', answer:false, fix:/curious|active|not lazy|isn't lazy|utelia|aktiivi|ei ole laiska|ei laiska/, model:'Ella is curious and active.', fixHint:'Millainen Ella on tekstin mukaan?', ev:[3] },
+      { kind:'tf', q:'Leo is kind.', answer:true, ev:[4] },
+      { kind:'tf', q:'Mia is behind the gate.', answer:true, ev:[9] },
+      { kind:'tf', q:'The next lesson is maths.', answer:false, fix:/music|musiik/, model:'The next lesson is music.', fixHint:'Katso tekstin viimeistä lausetta.', ev:[13] }
+    ] }
+];
+const EXM = {}; EXS.forEach(e => { EXM[e.id] = e; });
+
+const GROUPS = [
+  { id:'sanasto', title:'Sanasto', sub:'adjektiivit, verbit, kouluaineet, kappaleiden sanat', color:'--t1', ex:['e1','e2','e3','e4','e5','e5b'], cards:true },
+  { id:'olla', title:'Olla-verbi', sub:'am / is / are', color:'--t2', ex:['e6','e7','e8','e9','haaste'] },
+  { id:'ing', title:'Kestopreesens', sub:'mitä tapahtuu juuri nyt?', color:'--t3', ex:['e10','e11','e12','e13'] },
+  { id:'kello', title:'Kellonajat', sub:'o’clock, past, to', color:'--t4', ex:['e14','e15','e16','kt'] },
+  { id:'luku', title:'Lukutehtävä', sub:'perjantaiaamu koulussa', color:'--t5', ex:['e17','e18'] }
+];
+const ORDER = GROUPS.flatMap(g => g.ex);
+const groupOf = e => GROUPS.find(g => g.id === e.group);
+const MOCK_PLAN = [['e1',2],['e2',1],['e3',1],['e4',1],['e5',1],['e5b',1],['e6',1],['e7',1],['e8',1],['e9',1],
+  ['e10',1],['e11',1],['e12',1],['e13',1],['e14',1],['e15',1],['e16',1],['e17',1],['e18',1]];
+const MOCK_N = MOCK_PLAN.reduce((a, p) => a + p[1], 0);
+
+const DECKS = [
+  { id:'adj', name:'Adjektiivit', cards: ADJ.map(([en, fi]) => ({ fi, en })) },
+  { id:'verb', name:'Verbit', cards: EXM.e3.items.map(it => ({ fi:it.q, en:it.answers[0] })) },
+  { id:'subj', name:'Kouluaineet', cards: EXM.e4.items.map(it => ({ fi:it.q, en:it.answers[0], say:it.say })) },
+  { id:'word', name:'Kappaleiden sanat', cards: EXM.e5.items.map(it => ({ fi:it.word, en:it.en })) },
+  { id:'phr', name:'Fraasit', cards: EXM.e5b.items.map(it => ({ fi:it.q, en:it.answers[0] })) }
+];
+
+function resolve(key){
+  const [id, i] = String(key).split(':');
+  const e = EXM[id];
+  const it = e && e.items && e.items[+i];
+  return it ? { ex:e, item:it, key } : null;
+}
+function answerText(it){
+  switch (it.kind){
+    case 'choice': return it.show || fillBlank(it.q, it.answer);
+    case 'type':
+      if (it.clock) return `${it.q} = ${it.answers[0]}`;
+      return `${plain(it.q)} → ${it.full || it.answers[0]}`;
+    case 'clock': return `${it.q} = ${it.h}.${pad(it.m)}`;
+    case 'read': return `${it.q} → ${it.model}`;
+    case 'tf': return `${it.q} → ${it.answer ? 'T (totta)' : 'F (tarua). ' + it.model}`;
+  }
+  return '';
+}
+function genClockDrill(){
+  const mins = [0,15,30,45,0,15,30,45,5,10,20,25,35,40,50,55];
+  const times = [];
+  while (times.length < 10){
+    const t = { h:1 + Math.floor(Math.random() * 12), m:pick(mins) };
+    if (!times.some(x => x.h === t.h && x.m === t.m)) times.push(t);
+  }
+  return times.map((t, i) => Object.assign(i % 2 === 0 ? clockWriteItem(t.h, t.m) : clockSetItem(timeWords(t.h, t.m), t.h, t.m), { noReview:true }));
+}
+
+/* ============ kellotaulu ============ */
+function clockSVG(o){
+  o = o || {};
+  const svg = s('svg', { viewBox:'0 0 200 200', class:'clock' + (o.live ? ' live' : ''), role:'img', 'aria-label':o.label || 'Kellotaulu' });
+  svg.append(s('circle', { cx:100, cy:100, r:95, class:'face' }));
+  if (o.regions){
+    svg.append(s('path', { d:'M100 100 L100 6.5 A93.5 93.5 0 0 1 100 193.5 Z', class:'reg-past' }));
+    svg.append(s('path', { d:'M100 100 L100 193.5 A93.5 93.5 0 0 1 100 6.5 Z', class:'reg-to' }));
+  }
+  for (let i = 0; i < 60; i++){
+    const a = i * 6 * Math.PI / 180, r1 = i % 5 ? 85 : 80, r2 = 89;
+    svg.append(s('line', { x1:100 + r1 * Math.sin(a), y1:100 - r1 * Math.cos(a), x2:100 + r2 * Math.sin(a), y2:100 - r2 * Math.cos(a), class:i % 5 ? 'tk' : 'tk5' }));
+  }
+  for (let n = 1; n <= 12; n++){
+    const a = n * 30 * Math.PI / 180;
+    const t = s('text', { x:100 + 68 * Math.sin(a), y:100 - 68 * Math.cos(a), class:'nums', 'text-anchor':'middle', 'dominant-baseline':'central' });
+    t.textContent = n; svg.append(t);
+  }
+  if (o.regions){
+    const lab = (x, y, txt, cls) => { const t = s('text', { x, y, class:'rlab' + (cls ? ' ' + cls : ''), 'text-anchor':'middle', 'dominant-baseline':'central' }); t.textContent = txt; svg.append(t); };
+    lab(134, 100, 'past'); lab(66, 100, 'to');
+    lab(100, 57, "o'clock", 'sm'); lab(100, 143, 'half past', 'sm');
+  }
+  const st = { h:o.h != null ? o.h : 12, m:o.m != null ? o.m : 0 };
+  let hh = null, mh = null;
+  if (!o.noHands){
+    hh = s('g', { class:'hand', 'data-hand':'h' });
+    hh.append(s('line', { x1:100, y1:108, x2:100, y2:52, class:'hh' }), s('line', { x1:100, y1:100, x2:100, y2:50, class:'hit' }));
+    mh = s('g', { class:'hand', 'data-hand':'m' });
+    mh.append(s('line', { x1:100, y1:112, x2:100, y2:21, class:'mh' }), s('line', { x1:100, y1:100, x2:100, y2:20, class:'hit' }));
+    svg.append(hh, mh, s('circle', { cx:100, cy:100, r:5.5, class:'hub' }));
+  }
+  function draw(){
+    if (!hh) return;
+    hh.setAttribute('transform', `rotate(${((st.h % 12) + st.m / 60) * 30} 100 100)`);
+    mh.setAttribute('transform', `rotate(${st.m * 6} 100 100)`);
+  }
+  function setMinute(m, wrap){
+    m = ((m % 60) + 60) % 60;
+    if (wrap){
+      if (st.m >= 45 && m < 15) st.h = nextH(st.h);
+      else if (st.m < 15 && m >= 45) st.h = ((st.h + 10) % 12) + 1;
+    }
+    st.m = m;
+  }
+  const changed = () => { draw(); if (o.onChange) o.onChange(st.h, st.m); };
+  let locked = false;
+  const api = {
+    el:svg,
+    lock(){ locked = true; svg.classList.remove('live'); },
+    set(hr, m){ st.h = hr; st.m = m; draw(); },
+    step(which, d){
+      if (which === 'h') st.h = ((st.h - 1 + d) % 12 + 12) % 12 + 1;
+      else setMinute(st.m + d, true);
+      changed();
+    },
+    get(){ return { h:st.h, m:st.m }; }
+  };
+  if (o.live){
+    let drag = null, moved = false;
+    const pt = e => { const r = svg.getBoundingClientRect(); return { x:(e.clientX - r.left) * 200 / r.width, y:(e.clientY - r.top) * 200 / r.height }; };
+    const move = p => {
+      let a = Math.atan2(p.x - 100, -(p.y - 100)) * 180 / Math.PI;
+      if (a < 0) a += 360;
+      if (drag === 'm') setMinute(Math.round(a / 30) * 5, moved);
+      else { let hr = Math.round(a / 30 - st.m / 60); hr = ((hr % 12) + 12) % 12; st.h = hr === 0 ? 12 : hr; }
+      changed();
+    };
+    svg.addEventListener('pointerdown', e => {
+      if (locked) return;
+      const p = pt(e), d = Math.hypot(p.x - 100, p.y - 100);
+      if (d > 100) return;
+      const handEl = e.target.closest && e.target.closest('[data-hand]');
+      drag = handEl ? handEl.getAttribute('data-hand') : (d > 58 ? 'm' : 'h');
+      if (drag === 'm' && d <= 54){
+        // Lyhyt viisari minuuttiviisarin alla: tartu tuntiviisariin, jos osoitin on sen suunnassa.
+        let a = Math.atan2(p.x - 100, -(p.y - 100)) * 180 / Math.PI; if (a < 0) a += 360;
+        const ha = ((st.h % 12) + st.m / 60) * 30, diff = Math.abs(a - ha);
+        if (Math.min(diff, 360 - diff) < 25) drag = 'h';
+      }
+      moved = !!handEl;
+      try { svg.setPointerCapture(e.pointerId); } catch (err) {}
+      move(p); moved = true;
+      e.preventDefault();
+    });
+    svg.addEventListener('pointermove', e => { if (drag && !locked) move(pt(e)); });
+    const end = () => { drag = null; };
+    svg.addEventListener('pointerup', end);
+    svg.addEventListener('pointercancel', end);
+  }
+  draw();
+  return api;
+}
+
+/* ============ muistisäännöt ============ */
+function theoryNode(id){
+  const d = h('div', { class:'theory' });
+  if (id === 'olla'){
+    d.append(
+      h('div', { class:'betable', lang:'en' },
+        h('span', null, h('b', null, 'I'), ' am'), h('span', null, h('b', null, 'we'), ' are'),
+        h('span', null, h('b', null, 'you'), ' are'), h('span', null, h('b', null, 'you'), ' are'),
+        h('span', null, h('b', null, 'he / she / it'), ' is'), h('span', null, h('b', null, 'they'), ' are')),
+      h('ul', { class:'rules' },
+        h('li', null, 'Kielteinen: lisää ', h('b', null, 'not'), ' olla-verbin perään. She is not sporty. (isn’t, aren’t)'),
+        h('li', null, 'Kysymys: olla-verbi lauseen alkuun. ', h('b', null, 'Are'), ' you ready? ', h('b', null, 'Is'), ' she brave?')));
+  } else if (id === 'ing'){
+    d.append(h('ul', { class:'rules' },
+      h('li', null, 'Rakenne: ', h('b', null, 'am / is / are + verbi + -ing'), '.'),
+      h('li', { lang:'en' }, 'She is reading. They are playing. I am watching TV.'),
+      h('li', null, 'Jos verbi loppuu e-kirjaimeen, e putoaa pois: ride → riding.'),
+      h('li', null, 'Kestopreesensillä kerrotaan, mitä tapahtuu juuri nyt.')));
+  } else if (id === 'kello'){
+    d.append(h('div', { class:'theoryclock' },
+      clockSVG({ regions:true, noHands:true, label:'Kellotaulun oikea puoli on past, vasen puoli to' }).el,
+      h('ul', { class:'rules' },
+        h('li', null, h('b', null, 'o’clock'), ' = tasatunti: eight o’clock = 8.00'),
+        h('li', null, h('b', null, 'past'), ' = yli: twenty past seven = 7.20'),
+        h('li', null, h('b', null, 'to'), ' = vaille: ten to seven = 6.50'),
+        h('li', null, h('b', null, 'quarter past / to'), ' = varttia yli / vaille'),
+        h('li', null, h('b', null, 'half past'), ' = puoli. Huom! half past ten = 10.30 = puoli yksitoista'))));
+  }
+  return d;
+}
+
+/* ============ sessio ============ */
+let S = null;
+function newSession(type, queue, extra){
+  return Object.assign({ type, queue, i:0, res:[], oneShot:type === 'mock', used:new Set(), hl:new Set(), theoryOpen:type === 'ex' }, extra || {});
+}
+function record(first, given){
+  const q = S.queue[S.i];
+  S.res[S.i] = { first, given };
+  if (q.key && !q.item.noReview){ if (first) dropMistake(q.key); else addMistake(q.key); }
+  save();
+}
+function startExercise(id){
+  const e = EXM[id];
+  stopSpeech();
+  if (e.mode === 'match') return renderMatch(e);
+  if (e.mode === 'free') return renderFree(e);
+  const items = e.drill ? genClockDrill() : e.items;
+  S = newSession('ex', items.map((it, i) => ({ ex:e, item:it, key:it.noReview ? null : `${e.id}:${i}` })), { ex:e });
+  renderRun();
+}
+function startReview(entries){
+  const list = entries || store.mistakes.map(resolve).filter(Boolean)
+    .sort((a, b) => ORDER.indexOf(a.ex.id) - ORDER.indexOf(b.ex.id) || a.ex.items.indexOf(a.item) - b.ex.items.indexOf(b.item));
+  if (!list.length) return renderHome();
+  S = newSession('review', list);
+  renderRun();
+}
+function startMock(){
+  const q = [];
+  MOCK_PLAN.forEach(([id, k]) => {
+    const e = EXM[id];
+    shuffle(e.items.map((it, i) => i)).slice(0, k).sort((a, b) => a - b).forEach(i => q.push({ ex:e, item:e.items[i], key:`${id}:${i}` }));
+  });
+  S = newSession('mock', q);
+  renderRun();
+}
+
+function praise(){
+  const p = pick(['Oikein!', 'Hienoa!', 'Mahtavaa!', 'Juuri niin!', 'Loistavaa!', 'Upeaa!', 'Hyvä!']);
+  const nm = (store.name || '').trim().split(/\s+/)[0];
+  return nm && Math.random() < 0.3 ? `${p.replace('!', '')}, ${nm}!` : p;
+}
+
+function topBar(label, count, pct, tc){
+  return [
+    h('div', { class:'runbar' },
+      h('button', { class:'btn ghost back', type:'button', 'aria-label':'Valikko', onclick:renderHome }, '←', h('span', { class:'lbl' }, ' Valikko')),
+      h('div', { class:'runtitle' }, label),
+      count != null ? h('span', { class:'count' }, count) : null,
+      soundBtn()),
+    pct != null ? h('div', { class:'prog', role:'progressbar', 'aria-valuemin':'0', 'aria-valuemax':'100', 'aria-valuenow':String(Math.round(pct)) },
+      h('i', { style:`width:${pct}%` })) : null
+  ];
+}
+const titleNode = e => [e.num ? h('span', { class:'num sm' }, e.num) : h('span', { class:'num sm' }, icon(e.icon)), h('span', { class:'t' }, e.title)];
+
+function renderRun(){
+  const q = S.queue[S.i];
+  const e = q.ex, g = groupOf(e);
+  const label = S.type === 'ex' ? titleNode(e) : h('span', { class:'t' }, S.type === 'mock' ? 'Koeharjoitus' : 'Virheiden kertaus');
+  const body = h('div', { class:'runbody' });
+  const theoryId = e.theory && S.type !== 'mock' ? e.theory : null;
+  if (theoryId){
+    const open = S.type === 'ex' && (S.i === 0 ? S.theoryOpen : !!S.theoryPinned);
+    const det = h('details', { class:'muista', open }, h('summary', null, 'Muista'), theoryNode(theoryId));
+    det.addEventListener('toggle', () => { if (S && S.type === 'ex'){ if (S.i === 0) S.theoryOpen = det.open; else S.theoryPinned = det.open; } });
+    body.append(det);
+  }
+  if (e.mode === 'reading') body.append(textPanel());
+  body.append(itemCard(q));
+  const wrap = h('div', { class:'run', style:`--tc:var(${g.color})` },
+    topBar(label, `${S.i + 1} / ${S.queue.length}`, S.i / S.queue.length * 100), body);
+  app.replaceChildren(wrap);
+  if (S.i === 0 || e.mode !== 'reading') window.scrollTo(0, 0);
+}
+
+function textPanel(){
+  let wi = 0;
+  const story = h('p', { class:'story', lang:'en' });
+  STORY.forEach((sent, si) => {
+    const sp = h('span', { class:'s', 'data-s':si });
+    sent.split(' ').forEach((w, k) => {
+      if (k) sp.append(' ');
+      const id = wi++;
+      sp.append(h('span', { class:'w' + (S.hl.has(id) ? ' hl' : ''), 'data-w':id }, w));
+    });
+    story.append(sp, ' ');
+  });
+  story.addEventListener('click', ev => {
+    const w = ev.target.closest('.w');
+    if (!w) return;
+    const id = +w.getAttribute('data-w');
+    if (S.hl.has(id)) S.hl.delete(id); else S.hl.add(id);
+    w.classList.toggle('hl');
+  });
+  const listen = h('button', { class:'btn', type:'button', onclick:() => speak(STORY.join(' ').replace(/[‘’]/g, "'"), true) }, icon('sound'), 'Kuuntele teksti');
+  return h('details', { class:'card storybox', open:true },
+    h('summary', null, 'Lukuteksti'),
+    h('div', { class:'storytools' }, listen, h('span', null, 'Napauta sanaa, niin se maalautuu keltaiseksi. Alleviivaa niin vastaukset löytyvät.')),
+    story);
+}
+function markEvidence(ev){
+  document.querySelectorAll('.story .s').forEach(sp => sp.classList.toggle('ev', ev.includes(+sp.getAttribute('data-s'))));
+}
+
+function feedback(ctx, kind, title, more, sayText){
+  const box = h('div', { class:'fb ' + kind },
+    h('div', { class:'fbt' }, h('span', { class:'mark', 'aria-hidden':'true' }, kind === 'good' ? '✓' : kind === 'bad' ? '✗' : '•'),
+      h('span', null, title), sayText ? sayBtn(sayText) : null));
+  (more || []).filter(Boolean).forEach(m => box.append(h('div', { class:'more' }, m)));
+  ctx.fb.replaceChildren(box);
+}
+function fiToggle(text){
+  const p = h('p', { hidden:true }, text);
+  const b = h('button', { class:'linkbtn', type:'button', onclick:() => { p.hidden = !p.hidden; b.textContent = p.hidden ? 'Näytä suomeksi' : 'Piilota suomennos'; } }, 'Näytä suomeksi');
+  return h('div', { class:'fi' }, b, p);
+}
+
+function itemCard(q){
+  const e = q.ex, it = q.item;
+  const card = h('div', { class:'card item' });
+  if (S.type !== 'ex') card.append(h('div', { class:'from', style:`--tc:var(${groupOf(e).color})` }, titleNode(e)));
+  const instr = it.instr || e.instr;
+  if (instr) card.append(h('p', { class:'instr' }, instr));
+  const body = h('div');
+  const fb = h('div', { class:'fbwrap', 'aria-live':'polite' });
+  const actions = h('div', { class:'actions' });
+  card.append(body, fb, actions);
+  const ctx = {
+    card, body, fb, actions, attempts:0,
+    max: S.oneShot ? 1 : (it.kind === 'choice' || it.kind === 'tf' ? 1 : 2),
+    finish(first, given){
+      record(first, given);
+      const last = S.i >= S.queue.length - 1;
+      const next = h('button', { class:'btn primary', type:'button', onclick:() => { stopSpeech(); if (last) renderResult(); else { S.i++; renderRun(); } } },
+        last ? 'Näytä tulos' : 'Seuraava →');
+      actions.replaceChildren(next);
+      setTimeout(() => next.focus({ preventScroll:true }), 60);
+    }
+  };
+  KIND[it.kind](q, ctx);
+  return card;
+}
+
+const KIND = {};
+
+KIND.choice = (q, ctx) => {
+  const e = q.ex, it = q.item;
+  const boxMode = S.type === 'ex' && e.mode === 'wordbox';
+  const promptEl = h('p', { class:'prompt', lang:e.plang || null });
+  const drawPrompt = fill => {
+    promptEl.replaceChildren(...rich(it.q, fill));
+    if (it.sayQ) promptEl.append(' ', sayBtn(it.sayQ));
+  };
+  drawPrompt();
+  ctx.body.append(promptEl);
+  if (it.fi && !S.oneShot) ctx.body.append(fiToggle(it.fi));
+  let opts;
+  if (boxMode) opts = e.box;
+  else if (it.options) opts = it.shuffle ? shuffle(it.options) : it.options;
+  else opts = shuffle([it.answer, ...shuffle(it.pool.filter(x => x !== it.answer)).slice(0, 3)]);
+  const grid = h('div', { class:'choices' + (boxMode ? ' box' : ''), style:boxMode ? null : `--cols:${opts.length === 4 ? 2 : opts.length}`, lang:boxMode ? 'en' : null });
+  const btns = opts.map(o => {
+    const b = h('button', { class:'choice', type:'button' }, o);
+    b.addEventListener('click', () => choose(o, b));
+    if (boxMode && S.used.has(o)){ b.classList.add('used'); b.disabled = true; }
+    return b;
+  });
+  if (boxMode) ctx.body.append(h('p', { class:'boxlabel' }, 'Sanalaatikko'));
+  grid.append(...btns);
+  ctx.body.append(grid);
+  function choose(o, b){
+    btns.forEach(x => { x.disabled = true; });
+    const ok = o === it.answer;
+    const right = btns.find(x => x.textContent === it.answer);
+    if (right) right.classList.add('good');
+    if (!ok) b.classList.add('bad');
+    if (it.q.includes('___')) drawPrompt(it.answer);
+    if (boxMode) S.used.add(it.answer);
+    const sayText = it.say || fillBlank(it.q, it.answer);
+    if (ok){ ding(); feedback(ctx, 'good', praise(), [it.why, it.sayQ ? it.show : null], sayText); }
+    else { bonk(); feedback(ctx, 'bad', h('span', null, 'Oikea vastaus: ', h('strong', null, it.answer)), [it.why, it.sayQ ? it.show : null], sayText); }
+    speakLater(sayText);
+    ctx.finish(ok, o);
+  }
+};
+
+function checkType(it, e, raw){
+  const time = it.time || e.time;
+  const nz = x => { let n = norm(x, time); if (it.verb) n = n.replace(/^to /, ''); return n; };
+  const n = nz(raw);
+  if (!n) return { empty:true };
+  const acc = it.answers.map(nz);
+  if (it.full) acc.push(nz(it.full));
+  let ok = acc.includes(n) || (it.re && it.re.test(n));
+  let note = null;
+  if (!ok && it.alt && it.alt.map(nz).includes(n)){ ok = true; note = it.note; }
+  if (ok){
+    const notes = [];
+    if (note) notes.push(note);
+    if (it.cap && !raw.includes(it.cap)) notes.push(`Muista iso alkukirjain: ${it.cap}`);
+    if ((it.qmark || e.qmark) && !raw.includes('?')) notes.push('Muista kysymysmerkki loppuun.');
+    return { ok:true, notes, same:n === nz(it.full || it.answers[0]) || !!note };
+  }
+  const trap = it.trap || e.trap;
+  let msg = trap ? trap(n, it) : null;
+  if (!msg){
+    const best = Math.min(...acc.map(a => lev(a, n)));
+    if (best > 0 && best <= (n.length > 8 ? 2 : 1)) msg = 'Lähellä! Tarkista kirjoitusasu.';
+  }
+  return { ok:false, msg };
+}
+function hintNode(it, e){
+  const custom = it.hint || e.hint;
+  return h('div', { class:'hint' }, h('b', null, 'Vihje: '), custom ? custom : h('span', { class:'hintline', lang:'en' }, letterHint(it.answers[0])));
+}
+function answerInput(ctx, label, sentence){
+  const id = 'ans-' + S.type + '-' + S.i;
+  const inp = h('input', { class:'answer', id, type:'text', autocomplete:'off', autocapitalize:sentence ? 'sentences' : 'none',
+    autocorrect:'off', spellcheck:'false', enterkeyhint:'done' });
+  ctx.body.append(h('label', { class:'alabel', for:id }, label), inp);
+  if (finePointer()) setTimeout(() => inp.focus({ preventScroll:true }), 40);
+  return inp;
+}
+function shake(el){ el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
+
+KIND.type = (q, ctx) => {
+  const e = q.ex, it = q.item;
+  if (it.clock){
+    ctx.body.append(h('div', { class:'clockrow' }, clockSVG({ h:it.clock.h, m:it.clock.m, label:'Kello ' + it.q }).el, h('div', { class:'digital' }, it.q)));
+  } else {
+    const pr = h('p', { class:'prompt', lang:e.plang || null }, ...rich(it.q));
+    if (e.sayPrompt) pr.append(' ', sayBtn(it.q));
+    ctx.body.append(pr);
+  }
+  const inp = answerInput(ctx, it.label || e.label || 'Vastaus', it.sentence || e.sentence);
+  const hintBox = h('div', { hidden:true });
+  ctx.body.append(hintBox);
+  const showHint = () => { hintBox.hidden = false; hintBox.replaceChildren(hintNode(it, e)); };
+  const checkBtn = h('button', { class:'btn primary', type:'button', onclick:check }, 'Tarkista');
+  const hintBtn = S.oneShot ? null : h('button', { class:'btn', type:'button', onclick:showHint }, 'Vihje');
+  ctx.actions.append(...[checkBtn, hintBtn].filter(Boolean));
+  inp.addEventListener('keydown', ev => { if (ev.key === 'Enter' && !inp.readOnly){ ev.preventDefault(); check(); } });
+  const model = it.full || it.answers[0];
+  const sayText = it.say || model;
+  function check(){
+    if (inp.readOnly) return;
+    const raw = inp.value;
+    const r = checkType(it, e, raw);
+    if (r.empty){ feedback(ctx, 'info', 'Kirjoita vastaus ensin.'); inp.focus(); return; }
+    ctx.attempts++;
+    if (r.ok){
+      inp.classList.remove('bad'); inp.classList.add('good'); inp.readOnly = true; ding();
+      const more = [];
+      if (!r.same) more.push(h('span', null, 'Malli: ', h('strong', { lang:'en' }, model)));
+      r.notes.forEach(n => more.push(n));
+      if (it.why) more.push(it.why);
+      feedback(ctx, 'good', praise(), more, sayText);
+      speakLater(sayText);
+      ctx.finish(ctx.attempts === 1, raw);
+    } else if (ctx.attempts < ctx.max){
+      bonk(); inp.classList.add('bad'); shake(inp);
+      feedback(ctx, 'bad', r.msg || 'Ei aivan. Yritä vielä kerran!', r.msg ? ['Yritä vielä kerran.'] : null);
+      showHint();
+      inp.focus(); inp.select();
+    } else {
+      bonk(); inp.classList.add('bad'); inp.readOnly = true;
+      feedback(ctx, 'bad', h('span', null, 'Oikea vastaus: ', h('strong', { lang:'en' }, model)), [r.msg, it.why], sayText);
+      speakLater(sayText);
+      ctx.finish(false, raw);
+    }
+  }
+};
+
+KIND.clock = (q, ctx) => {
+  const it = q.item;
+  ctx.body.append(h('p', { class:'prompt center', lang:'en' }, it.q, ' ', sayBtn(it.q)));
+  const ck = clockSVG({ h:12, m:0, live:true, label:'Kello, jonka viisareita voi siirtää' });
+  const stepper = (lbl, which, d) => h('div', { class:'stepper' },
+    h('button', { type:'button', 'aria-label':`${lbl} taaksepäin`, onclick:() => ck.step(which, -d) }, '−'),
+    h('span', null, lbl),
+    h('button', { type:'button', 'aria-label':`${lbl} eteenpäin`, onclick:() => ck.step(which, d) }, '+'));
+  ctx.body.append(ck.el, h('div', { class:'steppers' }, stepper('Tunnit', 'h', 1), stepper('Minuutit', 'm', 5)),
+    h('p', { class:'instr', style:'text-align:center; margin:10px 0 0' }, 'Vedä viisaria sormella tai käytä nappeja.'));
+  const hintBox = h('div', { hidden:true });
+  ctx.body.append(hintBox);
+  const showHint = () => { hintBox.hidden = false; hintBox.replaceChildren(h('div', { class:'hint' }, h('b', null, 'Vihje: '), `${it.q} = ${it.h}.${pad(it.m)}`)); };
+  const checkBtn = h('button', { class:'btn primary', type:'button', onclick:check }, 'Tarkista');
+  const hintBtn = S.oneShot ? null : h('button', { class:'btn', type:'button', onclick:showHint }, 'Vihje');
+  ctx.actions.append(...[checkBtn, hintBtn].filter(Boolean));
+  const done = () => { ck.lock(); ctx.body.querySelectorAll('.stepper button').forEach(b => { b.disabled = true; }); };
+  function check(){
+    const st = ck.get();
+    const hOk = st.h % 12 === it.h % 12, mOk = st.m === it.m;
+    ctx.attempts++;
+    if (hOk && mOk){
+      ding(); done();
+      feedback(ctx, 'good', praise(), [`${it.q} = ${it.h}.${pad(it.m)}`], it.q);
+      ctx.finish(ctx.attempts === 1, `${st.h}.${pad(st.m)}`);
+      return;
+    }
+    let msg;
+    if (mOk && st.h % 12 === nextH(it.h) % 12) msg = `Melkein! ${it.q} = ${it.h}.${pad(it.m)}. Tunti on vielä ${it.h}, joten lyhyt viisari on ${it.m ? `${it.h}:n ja ${nextH(it.h)}:n välissä` : `${it.h}:n kohdalla`}.`;
+    else if (mOk) msg = 'Minuuttiviisari on oikein. Tarkista tuntiviisari (lyhyt viisari).';
+    else if (hOk) msg = 'Tuntiviisari on oikein. Tarkista minuuttiviisari (pitkä viisari).';
+    else msg = 'Tarkista molemmat viisarit. Pitkä viisari näyttää minuutit, lyhyt tunnit.';
+    bonk();
+    if (ctx.attempts < ctx.max){
+      feedback(ctx, 'bad', msg, ['Yritä vielä kerran.']);
+      showHint();
+    } else {
+      ck.set(it.h, it.m); done();
+      feedback(ctx, 'bad', h('span', null, 'Oikea aika: ', h('strong', null, `${it.h}.${pad(it.m)}`)), [msg, 'Kellossa näkyy nyt oikea aika.'], it.q);
+      ctx.finish(false, `${st.h}.${pad(st.m)}`);
+    }
+  }
+};
+
+function selfOk(ctx){
+  const b = h('button', { class:'linkbtn selfok', type:'button', onclick:() => {
+    record(true, 'itse tarkistettu');
+    b.replaceWith(h('div', { class:'more' }, 'Merkitty oikeaksi.'));
+  } }, 'Vastasin saman asian omin sanoin');
+  return b;
+}
+
+KIND.read = (q, ctx) => {
+  const it = q.item;
+  ctx.body.append(h('p', { class:'prompt', lang:'en' }, it.q, ' ', sayBtn(it.q)));
+  if (!S.oneShot) ctx.body.append(fiToggle(it.fi));
+  const inp = answerInput(ctx, 'Vastaus englanniksi tai suomeksi', true);
+  const hintBox = h('div', { hidden:true });
+  ctx.body.append(hintBox);
+  const showHint = () => { hintBox.hidden = false; hintBox.replaceChildren(h('div', { class:'hint' }, h('b', null, 'Vihje: '), it.hint)); };
+  const checkBtn = h('button', { class:'btn primary', type:'button', onclick:check }, 'Tarkista');
+  const hintBtn = S.oneShot ? null : h('button', { class:'btn', type:'button', onclick:showHint }, 'Vihje');
+  ctx.actions.append(...[checkBtn, hintBtn].filter(Boolean));
+  inp.addEventListener('keydown', ev => { if (ev.key === 'Enter' && !inp.readOnly){ ev.preventDefault(); check(); } });
+  function check(){
+    if (inp.readOnly) return;
+    const raw = inp.value.trim();
+    if (!raw){ feedback(ctx, 'info', 'Kirjoita vastaus ensin.'); inp.focus(); return; }
+    ctx.attempts++;
+    if (it.re.test(raw.toLowerCase())){
+      ding(); inp.classList.remove('bad'); inp.classList.add('good'); inp.readOnly = true; markEvidence(it.ev);
+      feedback(ctx, 'good', praise(), [h('span', null, 'Malli: ', h('strong', null, it.model)), 'Vastaus on alleviivattu tekstissä.']);
+      ctx.finish(ctx.attempts === 1, raw);
+    } else if (ctx.attempts < ctx.max){
+      bonk(); inp.classList.add('bad'); shake(inp);
+      feedback(ctx, 'bad', 'Ei aivan. Lue teksti uudelleen ja yritä vielä kerran!');
+      showHint(); inp.focus(); inp.select();
+    } else {
+      bonk(); inp.classList.add('bad'); inp.readOnly = true; markEvidence(it.ev);
+      feedback(ctx, 'bad', h('span', null, 'Mallivastaus: ', h('strong', null, it.model)), ['Vastaus on alleviivattu tekstissä.']);
+      ctx.finish(false, raw);
+      ctx.fb.firstChild.append(selfOk(ctx));
+    }
+  }
+};
+
+KIND.tf = (q, ctx) => {
+  const it = q.item;
+  ctx.body.append(h('p', { class:'prompt', lang:'en' }, it.q, ' ', sayBtn(it.q)));
+  const bT = h('button', { class:'choice', type:'button' }, 'T · totta');
+  const bF = h('button', { class:'choice', type:'button' }, 'F · tarua');
+  ctx.body.append(h('div', { class:'tfbtns' }, bT, bF));
+  bT.addEventListener('click', () => choose(true));
+  bF.addEventListener('click', () => choose(false));
+  function choose(v){
+    bT.disabled = bF.disabled = true;
+    const ok = v === it.answer;
+    (it.answer ? bT : bF).classList.add('good');
+    if (!ok) (v ? bT : bF).classList.add('bad');
+    markEvidence(it.ev);
+    if (!ok){
+      bonk();
+      feedback(ctx, 'bad', it.answer ? 'Väite on totta.' : 'Väite on tarua.', [it.answer ? null : h('span', null, 'Oikein olisi: ', h('strong', { lang:'en' }, it.model)), 'Katso alleviivattua kohtaa tekstissä.']);
+      ctx.finish(false, v ? 'T' : 'F');
+      return;
+    }
+    ding();
+    if (it.answer){
+      feedback(ctx, 'good', praise() + ' Väite on totta.');
+      ctx.finish(true, 'T');
+      return;
+    }
+    feedback(ctx, 'good', 'Oikein, väite on tarua! Korjaa se vielä englanniksi.');
+    const inp = answerInput(ctx, 'Korjattu väite', true);
+    if (!finePointer()) inp.focus({ preventScroll:true });
+    let tries = 0;
+    const max = S.oneShot ? 1 : 2;
+    const checkBtn = h('button', { class:'btn primary', type:'button', onclick:fix }, 'Tarkista');
+    ctx.actions.replaceChildren(checkBtn);
+    inp.addEventListener('keydown', ev => { if (ev.key === 'Enter' && !inp.readOnly){ ev.preventDefault(); fix(); } });
+    function fix(){
+      if (inp.readOnly) return;
+      const raw = inp.value.trim();
+      if (!raw){ feedback(ctx, 'info', 'Kirjoita korjattu väite ensin.'); return; }
+      tries++;
+      if (it.fix.test(raw.toLowerCase())){
+        ding(); inp.classList.add('good'); inp.readOnly = true;
+        feedback(ctx, 'good', praise(), [h('span', null, 'Malli: ', h('strong', { lang:'en' }, it.model))], it.model);
+        ctx.finish(tries === 1, 'F: ' + raw);
+      } else if (tries < max){
+        bonk(); inp.classList.add('bad'); shake(inp);
+        feedback(ctx, 'bad', 'Ei aivan. ' + it.fixHint, ['Yritä vielä kerran.']);
+      } else {
+        bonk(); inp.classList.add('bad'); inp.readOnly = true;
+        feedback(ctx, 'bad', h('span', null, 'Malli: ', h('strong', { lang:'en' }, it.model)), null, it.model);
+        ctx.finish(false, 'F: ' + raw);
+        ctx.fb.firstChild.append(selfOk(ctx));
+      }
+    }
+  }
+};
+
+/* ============ yhdistämistehtävä ============ */
+function renderMatch(e){
+  S = newSession('ex', e.items.map((it, i) => ({ ex:e, item:it, key:`${e.id}:${i}` })), { ex:e });
+  const g = groupOf(e);
+  const L = e.pairs.map((p, i) => ({ en:p[0], fi:p[1], i }));
+  const R = shuffle(L);
+  const missed = new Set();
+  let sel = null, done = 0, errors = 0;
+  const countEl = h('span', { class:'count' }, `0 / ${L.length}`);
+  const info = h('p', { class:'matchinfo' }, 'Virheitä: 0');
+  const bars = topBar(titleNode(e), null, 0);
+  bars[0].insertBefore(countEl, bars[0].lastChild);
+  const bar = bars[1].firstChild;
+  const mk = (p, side) => {
+    const b = h('button', { class:'mbtn', type:'button', lang:side === 'en' ? 'en' : 'fi', 'aria-pressed':'false' },
+      side === 'en' ? [h('span', { class:'mn' }, `${p.i + 1}.`), ' ', p.en] : p.fi);
+    b.addEventListener('click', () => tap(p, side, b));
+    return b;
+  };
+  const unselect = () => { if (sel){ sel.b.classList.remove('sel'); sel.b.setAttribute('aria-pressed', 'false'); } };
+  function tap(p, side, b){
+    if (b.disabled) return;
+    if (!sel || sel.side === side){
+      const same = sel && sel.b === b;
+      unselect();
+      if (same){ sel = null; return; }
+      sel = { p, side, b };
+      b.classList.add('sel'); b.setAttribute('aria-pressed', 'true');
+      if (side === 'en') speak(p.en);
+      return;
+    }
+    const a = sel; unselect(); sel = null;
+    if (a.p.i === p.i){
+      [a.b, b].forEach(x => { x.classList.add('done'); x.disabled = true; });
+      done++; ding();
+      countEl.textContent = `${done} / ${L.length}`;
+      bar.style.width = `${done / L.length * 100}%`;
+      if (done === L.length) setTimeout(() => {
+        S.res = L.map(x => ({ first:!missed.has(x.i) }));
+        L.forEach(x => { const k = `${e.id}:${x.i}`; if (missed.has(x.i)) addMistake(k); else dropMistake(k); });
+        save();
+        renderResult();
+      }, 650);
+    } else {
+      missed.add(a.p.i); errors++; bonk();
+      [a.b, b].forEach(x => { x.classList.remove('wrong'); void x.offsetWidth; x.classList.add('wrong'); setTimeout(() => x.classList.remove('wrong'), 600); });
+      info.textContent = `Virheitä: ${errors}`;
+    }
+  }
+  const card = h('div', { class:'card' },
+    h('p', { class:'instr' }, e.instr),
+    h('div', { class:'match' },
+      h('div', { class:'mcol' }, h('div', { class:'mhead' }, 'English'), L.map(p => mk(p, 'en'))),
+      h('div', { class:'mcol' }, h('div', { class:'mhead' }, 'Suomi'), R.map(p => mk(p, 'fi')))),
+    info);
+  app.replaceChildren(h('div', { class:'run', style:`--tc:var(${g.color})` }, bars, h('div', { class:'runbody' }, card)));
+  window.scrollTo(0, 0);
+}
+
+/* ============ pieni haaste ============ */
+const ADJ_ALL = ['shy','funny','brave','kind','clever','creative','sporty','calm','clumsy','lazy','active','curious','happy','sad','tired',
+  'ready','scared','nice','friendly','tall','short','small','big','strong','fast','quick','smart','cool','busy','hungry','good','great',
+  'helpful','quiet','loud','young','old','silly','cute','angry','excited','careful','polite','honest','sleepy','sweet','cheerful','fun',
+  'artistic','musical','hard-working','slow','little','beautiful','pretty','lucky','calm'];
+function checkFree(raw){
+  const t = raw.trim();
+  if (!t) return null;
+  const n = norm(t);
+  const bad = [], tips = [];
+  if (/(^|[\s,.!?])i([\s,.!?']|$)/.test(t)) bad.push('Minä = I, aina isolla kirjaimella.');
+  if (/\bi (is|are)\b/.test(n)) bad.push('Muista: I am (ei I is tai I are).');
+  if (/\b(he|she|it) (am|are)\b/.test(n)) bad.push('he / she / it → is.');
+  if (/\b(we|you|they) (am|is)\b/.test(n)) bad.push('we / you / they → are.');
+  const found = ADJ_ALL.filter(a => new RegExp('\\b' + a.replace('-', ' ') + '\\b').test(n));
+  if (t[0] !== t[0].toUpperCase()) tips.push('Aloita lause isolla kirjaimella.');
+  if (!/[.!?]$/.test(t)) tips.push('Muista piste lauseen loppuun.');
+  return { ok:!bad.length && found.length > 0, found:[...new Set(found)], bad, tips };
+}
+function renderFree(e){
+  S = null;
+  const g = groupOf(e);
+  let last = null;
+  const rows = [0,1,2].map(i => {
+    const id = 'haaste-' + i;
+    const inp = h('input', { class:'answer', id, type:'text', autocomplete:'off', autocapitalize:'sentences', autocorrect:'off', spellcheck:'false', lang:'en', value:store.challenge[i] || '' });
+    inp.addEventListener('focus', () => { last = inp; });
+    inp.addEventListener('input', () => { store.challenge[i] = inp.value.slice(0, 200); save(); });
+    const out = h('div');
+    return { inp, out, el:h('div', { class:'freerow' }, h('label', { class:'alabel', for:id }, `Lause ${i + 1}`), inp, out) };
+  });
+  last = rows[0].inp;
+  const chips = h('div', { class:'chips wordchips', lang:'en' }, ADJ.map(([en]) => h('button', { class:'chip', type:'button', onclick:() => {
+    const inp = last || rows[0].inp;
+    const v = inp.value;
+    const pos = inp.selectionStart != null ? inp.selectionStart : v.length;
+    const before = v.slice(0, pos), after = v.slice(pos);
+    const ins = (before && !/\s$/.test(before) ? ' ' : '') + en + (after && !/^\s/.test(after) ? ' ' : '');
+    inp.value = before + ins + after;
+    inp.dispatchEvent(new Event('input'));
+    inp.focus();
+    const c = (before + ins).length;
+    try { inp.setSelectionRange(c, c); } catch (err) {}
+  } }, en)));
+  const starsBox = h('div');
+  const examples = h('div', { class:'hint', hidden:true, lang:'en' },
+    h('b', null, 'Esimerkkejä: '), 'I am kind and sporty. I am not lazy. My best friend is funny.');
+  function check(){
+    let good = 0, any = false;
+    rows.forEach(r => {
+      const res = checkFree(r.inp.value);
+      if (!res){ r.out.replaceChildren(); return; }
+      any = true;
+      if (res.ok) good++;
+      const kind = res.bad.length ? 'bad' : res.found.length ? 'good' : 'info';
+      const title = res.bad.length ? res.bad[0] : res.found.length ? `Hienoa! Adjektiivi: ${res.found.join(', ')}` : 'Lisää lauseeseen adjektiivi, esim. I am kind.';
+      r.out.replaceChildren(h('div', { class:'fb ' + kind }, h('div', { class:'fbt' },
+        h('span', { class:'mark', 'aria-hidden':'true' }, kind === 'good' ? '✓' : kind === 'bad' ? '✗' : '•'), h('span', null, title)),
+        res.bad.slice(1).concat(res.tips).map(t => h('div', { class:'more' }, t))));
+    });
+    if (!any){ starsBox.replaceChildren(h('p', { class:'instr' }, 'Kirjoita ensin vähintään yksi lause.')); return; }
+    const prev = store.best[e.id];
+    if (!prev || good > prev.stars) store.best[e.id] = { stars:good, pct:good / 3 };
+    save();
+    if (good) ding();
+    if (good === 3) confetti();
+    starsBox.replaceChildren(h('div', { class:'result' }, starsNode(good, true),
+      h('p', { class:'score' }, good === 3 ? 'Kolme hyvää lausetta!' : `${good} / 3 lausetta valmiina. Täydennä loput.`)));
+  }
+  const card = h('div', { class:'card' },
+    h('p', { class:'instr' }, e.instr),
+    h('p', { class:'boxlabel' }, 'Napauta adjektiivia, niin se lisätään lauseeseen.'),
+    chips,
+    rows.map(r => r.el),
+    examples,
+    h('div', { class:'actions' },
+      h('button', { class:'btn primary', type:'button', onclick:check }, 'Tarkista'),
+      h('button', { class:'btn', type:'button', onclick:() => { examples.hidden = !examples.hidden; } }, 'Näytä esimerkkejä')),
+    starsBox);
+  app.replaceChildren(h('div', { class:'run', style:`--tc:var(${g.color})` },
+    topBar(titleNode(e), null, null),
+    h('div', { class:'runbody' }, h('details', { class:'muista' }, h('summary', null, 'Muista'), theoryNode('olla')), card)));
+  window.scrollTo(0, 0);
+}
+
+/* ============ tulos ============ */
+function renderResult(){
+  const n = S.queue.length;
+  const firsts = S.res.filter(r => r && r.first).length;
+  const pct = n ? firsts / n : 0;
+  let stars = null;
+  const nm = (store.name || '').trim().split(/\s+/)[0];
+  if (S.type === 'ex'){
+    stars = pct === 1 ? 3 : pct >= 0.75 ? 2 : 1;
+    const b = store.best[S.ex.id];
+    if (!b || stars > b.stars || (stars === b.stars && pct > b.pct)) store.best[S.ex.id] = { stars, pct };
+  }
+  if (S.type === 'mock') store.mockBest = Math.max(store.mockBest || 0, pct);
+  save();
+  if (stars === 3 || (S.type !== 'ex' && pct >= 0.9)) confetti();
+  const missed = S.queue.map((q, i) => ({ q, r:S.res[i] })).filter(x => !(x.r && x.r.first));
+  const head = pct === 1 ? 'Täydet pisteet!' : pct >= 0.75 ? 'Hienoa työtä!' : pct >= 0.5 ? 'Hyvä yritys!' : 'Harjoitellaan lisää!';
+  const title = nm && pct >= 0.5 ? `${head.replace('!', '')}, ${nm}!` : head;
+  const g = S.type === 'ex' ? groupOf(S.ex) : null;
+  const sess = S;
+  const actions = h('div', { class:'actions' });
+  if (missed.length) actions.append(h('button', { class:'btn primary', type:'button', onclick:() => startReview(missed.map(x => x.q)) }, `Harjoittele virheet (${missed.length})`));
+  if (sess.type === 'ex'){
+    actions.append(h('button', { class:'btn', type:'button', onclick:() => startExercise(sess.ex.id) }, 'Tee uudelleen'));
+    const ni = ORDER.indexOf(sess.ex.id) + 1;
+    if (ni < ORDER.length){
+      const nx = EXM[ORDER[ni]];
+      actions.append(h('button', { class:'btn' + (missed.length ? '' : ' primary'), type:'button', onclick:() => startExercise(nx.id) }, `Seuraava: ${nx.title} →`));
+    }
+  }
+  if (sess.type === 'mock') actions.append(h('button', { class:'btn', type:'button', onclick:startMock }, 'Uusi koeharjoitus'));
+  actions.append(h('button', { class:'btn', type:'button', onclick:renderHome }, 'Valikkoon'));
+  const label = sess.type === 'ex' ? titleNode(sess.ex) : h('span', { class:'t' }, sess.type === 'mock' ? 'Koeharjoitus' : 'Virheiden kertaus');
+  app.replaceChildren(h('div', { class:'run', style:g ? `--tc:var(${g.color})` : null },
+    topBar(label, null, 100),
+    h('div', { class:'runbody' },
+      h('div', { class:'card result' },
+        stars != null ? starsNode(stars, true) : null,
+        h('h2', null, title),
+        h('p', { class:'score' }, h('b', null, `${firsts} / ${n}`),
+          sess.type === 'mock' ? ` oikein (${Math.round(pct * 100)} %)` : ' oikein ensimmäisellä yrityksellä'),
+        sess.type === 'review' ? h('p', { class:'instr' }, store.mistakes.length ? `Kerrattavia virheitä jäljellä: ${store.mistakes.length}` : 'Kaikki virheet on nyt kerrattu.') : null,
+        missed.length ? h('div', { style:'width:100%; text-align:left' },
+          h('p', { class:'boxlabel' }, 'Nämä kannattaa vielä kerrata:'),
+          h('ul', { class:'misslist' }, missed.map(x => h('li', null, h('span', { class:'ma' }, answerText(x.q.item)))))) : null,
+        actions))));
+  window.scrollTo(0, 0);
+}
+
+/* ============ sanakortit ============ */
+let FC = null;
+function renderCards(deckId, dir){
+  stopSpeech();
+  S = null;
+  deckId = deckId || (FC && FC.deckId) || 'adj';
+  dir = dir || (FC && FC.dir) || 'fi';
+  const deck = DECKS.find(d => d.id === deckId);
+  FC = { deckId, dir, queue:shuffle(deck.cards), total:deck.cards.length, known:0, flipped:false };
+  drawCards();
+}
+function drawCards(){
+  const deck = DECKS.find(d => d.id === FC.deckId);
+  const deckChips = h('div', { class:'chips' }, DECKS.map(d => h('button', { class:'chip', type:'button', 'aria-pressed':String(d.id === FC.deckId), onclick:() => renderCards(d.id, FC.dir) }, d.name)));
+  const dirChips = h('div', { class:'chips' },
+    h('button', { class:'chip', type:'button', 'aria-pressed':String(FC.dir === 'fi'), onclick:() => renderCards(FC.deckId, 'fi') }, 'suomi → englanti'),
+    h('button', { class:'chip', type:'button', 'aria-pressed':String(FC.dir === 'en'), onclick:() => renderCards(FC.deckId, 'en') }, 'englanti → suomi'));
+  let card;
+  const actions = h('div', { class:'actions' });
+  if (!FC.queue.length){
+    card = h('div', { class:'card fcard' }, starsNode(3, true), h('h2', null, 'Kaikki kortit osattu!'), h('p', { class:'instr' }, `${deck.name}: ${FC.total} korttia`));
+    actions.append(h('button', { class:'btn primary', type:'button', onclick:() => renderCards(FC.deckId, FC.dir) }, 'Uudestaan'),
+      h('button', { class:'btn', type:'button', onclick:renderHome }, 'Valikkoon'));
+  } else {
+    const c = FC.queue[0];
+    const enFront = FC.dir === 'en';
+    const front = enFront ? c.en : c.fi, back = enFront ? c.fi : c.en;
+    card = h('div', { class:'card fcard' },
+      h('span', { class:'side' }, enFront ? 'englanniksi' : 'suomeksi'),
+      h('div', { class:'front', lang:enFront ? 'en' : 'fi' }, front, enFront ? [' ', sayBtn(c.say || c.en)] : null),
+      FC.flipped ? h('div', { class:'back', lang:enFront ? 'fi' : 'en' }, back, enFront ? null : sayBtn(c.say || c.en)) : null);
+    if (!FC.flipped){
+      actions.append(h('button', { class:'btn primary', type:'button', onclick:() => { FC.flipped = true; if (!enFront) speak(c.say || c.en); drawCards(); } }, 'Käännä kortti'));
+    } else {
+      actions.append(
+        h('button', { class:'btn primary', type:'button', onclick:() => { FC.queue.shift(); FC.known++; FC.flipped = false; ding(); drawCards(); } }, '✓ Osasin'),
+        h('button', { class:'btn', type:'button', onclick:() => { FC.queue.push(FC.queue.shift()); FC.flipped = false; drawCards(); } }, 'Harjoittelen vielä'));
+    }
+  }
+  app.replaceChildren(h('div', { class:'run', style:'--tc:var(--t1)' },
+    topBar([h('span', { class:'num sm' }, icon('cards')), h('span', { class:'t' }, 'Sanakortit')], `${FC.known} / ${FC.total}`, FC.known / FC.total * 100),
+    h('div', { class:'runbody' },
+      h('div', { class:'card', style:'display:grid; gap:12px' },
+        h('p', { class:'instr', style:'margin:0' }, 'Sano sana ääneen tai mielessäsi ja käännä sitten kortti. Kortit, joita et vielä osaa, tulevat uudelleen.'),
+        deckChips, dirChips),
+      h('div', null, card, actions))));
+  const btn = actions.querySelector('.btn');
+  if (btn && finePointer()) btn.focus({ preventScroll:true });
+}
+
+/* ============ koeharjoitus ============ */
+function renderMockIntro(){
+  stopSpeech(); S = null;
+  app.replaceChildren(h('div', { class:'run' },
+    topBar(h('span', { class:'t' }, 'Koeharjoitus'), null, null),
+    h('div', { class:'runbody' }, h('div', { class:'card result' },
+      h('h2', null, 'Koeharjoitus'),
+      h('p', { class:'score' }, `${MOCK_N} tehtävää kaikista aiheista, kuten oikeassa kokeessa.`),
+      h('ul', { class:'rules', style:'text-align:left' },
+        h('li', null, 'Jokaiseen tehtävään on yksi yritys.'),
+        h('li', null, 'Vihjeitä ja muistisääntöjä ei näytetä.'),
+        h('li', null, 'Lopuksi näet tuloksen. Väärin menneet siirtyvät virheiden kertaukseen.')),
+      store.mockBest != null ? h('p', { class:'instr' }, `Paras tuloksesi tähän asti: ${Math.round(store.mockBest * 100)} %`) : null,
+      h('div', { class:'actions' },
+        h('button', { class:'btn primary', type:'button', onclick:startMock }, 'Aloita koeharjoitus'),
+        h('button', { class:'btn', type:'button', onclick:renderHome }, 'Takaisin'))))));
+  window.scrollTo(0, 0);
+}
+
+/* ============ etusivu ============ */
+function exRow(e){
+  const b = store.best[e.id];
+  const count = e.mode === 'match' ? `${e.pairs.length} paria` : e.mode === 'free' ? '3 lausetta' : e.sub ? e.sub : `${e.items.length} kohtaa`;
+  return h('button', { class:'exrow', type:'button', onclick:() => startExercise(e.id) },
+    e.num ? h('span', { class:'num' }, e.num) : h('span', { class:'num' }, icon(e.icon)),
+    h('span', { class:'extitle' }, e.title, h('small', null, count)),
+    starsNode(b ? b.stars : 0));
+}
+function answerKey(){
+  const det = h('details', { class:'key' }, h('summary', null, 'Vastausavain aikuiselle'));
+  det.addEventListener('toggle', () => {
+    if (!det.open || det.dataset.built) return;
+    det.dataset.built = '1';
+    ORDER.map(id => EXM[id]).filter(e => e.items && e.items.length).forEach(e => {
+      det.append(h('h3', null, `${e.num}. ${e.title}`),
+        h('ol', { lang:'en' }, e.items.map(it => h('li', null, answerText(it)))));
+    });
+  });
+  return det;
+}
+function renderHome(){
+  stopSpeech();
+  S = null;
+  const starEx = EXS;
+  const total = starEx.length * 3;
+  const got = starEx.reduce((a, e) => a + ((store.best[e.id] && store.best[e.id].stars) || 0), 0);
+  const nm = store.mistakes.filter(k => resolve(k)).length;
+  const resetBox = h('div', { class:'reset' });
+  const drawReset = confirming => {
+    resetBox.replaceChildren(...(confirming
+      ? [h('span', null, 'Poistetaanko kaikki tähdet ja kerättävät virheet?'),
+         h('button', { class:'btn danger', type:'button', onclick:() => { store.best = {}; store.mistakes = []; store.mockBest = null; store.challenge = ['','','']; save(); renderHome(); } }, 'Kyllä, nollaa'),
+         h('button', { class:'btn', type:'button', onclick:() => drawReset(false) }, 'Peruuta')]
+      : [h('button', { class:'linkbtn', type:'button', onclick:() => drawReset(true) }, 'Nollaa edistyminen')]));
+  };
+  drawReset(false);
+  const nameInput = h('input', { id:'nimi', type:'text', autocomplete:'off', autocapitalize:'words', spellcheck:'false', value:store.name || '', placeholder:'kirjoita nimesi' });
+  nameInput.addEventListener('input', () => { store.name = nameInput.value.slice(0, 40); save(); });
+  app.replaceChildren(
+    h('header', { class:'hero' },
+      h('div', { class:'toprow' }, h('span', { class:'eyebrow' }, '4. luokka · Unit 1 · kappaleet 1–3'), soundBtn()),
+      h('h1', null, 'Englannin kokeen ', h('span', { class:'swipe' }, 'kertauspaketti')),
+      h('div', { class:'namerow' }, h('label', { for:'nimi' }, 'Nimi'), nameInput)),
+    h('section', { class:'card overview', 'aria-label':'Edistyminen' },
+      h('div', { class:'ovtop' },
+        h('div', null, h('div', { class:'ovnum' }, icon('star'), String(got), h('small', null, `/ ${total}`)), h('div', { class:'ovlabel' }, 'tähteä kerätty')),
+        h('div', { class:'prog' }, h('i', { style:`width:${got / total * 100}%` }))),
+      h('div', { class:'ovact' },
+        h('button', { class:'btn primary', type:'button', onclick:renderMockIntro }, `Koeharjoitus · ${MOCK_N} tehtävää`),
+        h('button', { class:'btn', type:'button', disabled:nm === 0, onclick:() => startReview() }, `Kertaa virheet (${nm})`),
+        h('button', { class:'btn', type:'button', onclick:() => renderCards() }, icon('cards'), 'Sanakortit')),
+      h('p', { class:'ovnote' }, nm === 0
+        ? 'Väärin menneet tehtävät kerätään tänne, ja voit harjoitella niitä uudelleen.'
+        : 'Kun vastaat kerrattavaan tehtävään oikein, se poistuu listalta.')),
+    ...GROUPS.map(g => h('section', { class:'group', style:`--tc:var(${g.color})` },
+      h('div', { class:'ghead' }, h('h2', null, g.title), h('span', { class:'gsub' }, g.sub)),
+      h('ul', { class:'exlist' },
+        g.ex.map(id => h('li', null, exRow(EXM[id]))),
+        g.cards ? h('li', null, h('button', { class:'exrow', type:'button', onclick:() => renderCards() },
+          h('span', { class:'num' }, icon('cards')),
+          h('span', { class:'extitle' }, 'Sanakortit', h('small', null, 'kaikki sanat kortteina, myös ääneen luettuna'))),
+          h('span')) : null))),
+    h('p', { class:'tip' }, h('strong', null, 'Kertausvinkki. '),
+      'Tee tehtävät ensin ilman kirjaa. Tarkista sitten vastaukset ja harjoittele uudelleen vain ne kohdat, joissa tuli virheitä. Sovellus kerää ne valmiiksi kohtaan Kertaa virheet.'),
+    answerKey(),
+    resetBox);
+}
+
+/* ============ konfetti ============ */
+function confetti(){
+  if (reduceMotion()) return;
+  const c = document.getElementById('confetti');
+  const ctx = c.getContext && c.getContext('2d');
+  if (!ctx) return;
+  const W = window.innerWidth, H = window.innerHeight, dpr = Math.min(2, window.devicePixelRatio || 1);
+  c.width = W * dpr; c.height = H * dpr; c.hidden = false;
+  const cs = getComputedStyle(document.documentElement);
+  const cols = ['--t1','--t2','--t3','--t4','--t5','--star'].map(v => cs.getPropertyValue(v).trim() || '#f0b000');
+  const P = Array.from({ length:110 }, () => ({ x:W / 2 + (Math.random() - 0.5) * 140, y:H * 0.32, vx:(Math.random() - 0.5) * 10, vy:-Math.random() * 10 - 3,
+    r:Math.random() * Math.PI, vr:(Math.random() - 0.5) * 0.3, w:6 + Math.random() * 6, hh:4 + Math.random() * 4, c:pick(cols) }));
+  const t0 = performance.now();
+  (function frame(t){
+    const el = t - t0;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalAlpha = Math.max(0, 1 - el / 2300);
+    P.forEach(p => {
+      p.vy += 0.25; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.vx *= 0.99;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.fillStyle = p.c; ctx.fillRect(-p.w / 2, -p.hh / 2, p.w, p.hh); ctx.restore();
+    });
+    if (el < 2300) requestAnimationFrame(frame); else { ctx.clearRect(0, 0, W, H); c.hidden = true; }
+  })(t0);
+}
+
+renderHome();
+})();
+</script>
+</body>
+</html>
