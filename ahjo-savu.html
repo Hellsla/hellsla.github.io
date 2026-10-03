@@ -9,8 +9,7 @@
 <!--
   Ahjo ja siitä nouseva kolmivärinen savu iframe-upotukseen, esim. Slides.com-
   esitykseen: violetti, sininen ja vaaleanpunainen nauha kasvavat ulos ahjosta
-  ja aaltoilevat kuin höyry. Nauhojen päät haihtuvat ilmaan, ja niistä irtoaa
-  pieniä savupilviä, jotka nousevat ja häviävät. Alla harmaa polku. Kohtaus on 1672 × 941
+  ja aaltoilevat kuin höyry. Nauhojen päät haihtuvat ilmaan. Alla harmaa polku. Kohtaus on 1672 × 941
   (n. 16:9) ja mahtuu upotukseen kokonaan; tausta on läpinäkyvä.
 
     <iframe src="https://hellsla.github.io/ahjo-savu.html"
@@ -114,7 +113,6 @@
       <path id="pinkStrand" fill="var(--pink)"/>
       <use href="#violet" clip-path="url(#violetFront)"/>
     </g></g>
-    <g id="puffs"></g>
   </svg>
   <div class="anvil"><div class="anvil-body"></div><div class="anvil-hearth"></div></div>
 </div>
@@ -251,54 +249,6 @@
   var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (calm){ draw(0, true); return; }
 
-  // Savupilvet: nauhojen päistä irtoaa pieniä pilviä (kolme päällekkäistä
-  // ympyrää), jotka nousevat ylös ja oikealle, kasvavat ja haihtuvat.
-  var SVGNS = "http://www.w3.org/2000/svg";
-  var puffLayer = document.getElementById("puffs");
-  var sources = [
-    { id: "violet", color: "var(--violet)", xa: 1440, xb: 1540 },
-    { id: "blue",   color: "var(--blue)",   xa: 1460, xb: 1560 },
-    { id: "pink",   color: "var(--pink)",   xa: 1470, xb: 1570 }
-  ];
-  var puffs = [];
-  for (var n = 0; n < 10; n++){
-    var g = document.createElementNS(SVGNS, "g");
-    [[0, 0, 1], [0.95, -0.25, 0.8], [-0.85, -0.15, 0.72], [0.35, -0.75, 0.68], [-0.4, 0.45, 0.6]].forEach(function(c){
-      var circle = document.createElementNS(SVGNS, "circle");
-      circle.setAttribute("cx", c[0]); circle.setAttribute("cy", c[1]); circle.setAttribute("r", c[2]);
-      g.appendChild(circle);
-    });
-    g.setAttribute("opacity", "0");
-    puffLayer.appendChild(g);
-    puffs.push({ el: g, alive: false });
-  }
-  function rand(a, b){ return a + Math.random() * (b - a); }
-  function tailOpacity(x){ return Math.max(0.55, Math.min(1, (1665 - x) / (1665 - 1400))); }
-  var nextPuff = 2.0;                                 // ensimmäinen pilvi, kun nauhat ovat kasvaneet
-  function puffsAt(t){
-    if (t >= nextPuff){
-      var p = puffs.filter(function(q){ return !q.alive; })[0];
-      if (p){
-        var src = sources[Math.floor(Math.random() * sources.length)], R = byId[src.id];
-        var x = rand(src.xa, src.xb);
-        p.x0 = x; p.y0 = (edgeY(R.now.top, x) + edgeY(R.now.bottom, x)) / 2;
-        p.dx = rand(30, 80); p.dy = -rand(90, 150); p.size = rand(18, 26);
-        p.t0 = t; p.dur = rand(3.0, 4.5); p.max = 0.8 * tailOpacity(x); p.alive = true;
-        p.el.setAttribute("fill", src.color);
-      }
-      nextPuff = t + rand(0.45, 0.75);
-    }
-    puffs.forEach(function(p){
-      if (!p.alive) return;
-      var k = (t - p.t0) / p.dur;
-      if (k >= 1){ p.alive = false; p.el.setAttribute("opacity", "0"); return; }
-      var e = 1 - (1 - k) * (1 - k);
-      var x = p.x0 + p.dx * e, y = p.y0 + p.dy * e, sc = p.size * (0.7 + 1.2 * e);
-      p.el.setAttribute("transform", "translate(" + x.toFixed(1) + " " + y.toFixed(1) + ") scale(" + sc.toFixed(2) + ")");
-      p.el.setAttribute("opacity", (p.max * Math.min(1, k * 6) * Math.pow(1 - k, 1.5)).toFixed(3));
-    });
-  }
-
   // Alussa savu kasvaa ulos ahjosta pehmeällä reunalla, sitten aaltoilee.
   var fade = document.getElementById("revealFade");
   var GROW = 2200, start = null;
@@ -312,7 +262,6 @@
     var g = Math.min(1, ms / GROW);
     reveal(600 + (1672 + 160 - 600) * (1 - Math.pow(1 - g, 3)));
     draw(ms / 1000, false);
-    puffsAt(ms / 1000);
     requestAnimationFrame(frame);
   }
   reveal(600);
