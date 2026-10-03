@@ -91,6 +91,7 @@
         <stop offset="0" stop-color="#fff"/>
         <stop offset="1" stop-color="#000"/>
       </linearGradient>
+      <clipPath id="violetFront"><rect x="1000" y="0" width="672" height="941"/></clipPath>
       <mask id="reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="1672" height="941">
         <rect x="0" y="0" width="1672" height="941" fill="url(#revealFade)"/>
       </mask>
@@ -103,6 +104,7 @@
       <path id="blueCurl" fill="var(--blue)"/>
       <path id="pink" fill="var(--pink)"/>
       <path id="pinkStrand" fill="var(--pink)"/>
+      <use href="#violet" clip-path="url(#violetFront)"/>
     </g>
   </svg>
   <div class="anvil"><div class="anvil-body"></div><div class="anvil-hearth"></div></div>
@@ -139,15 +141,17 @@
       [1520,394,478],[1560,374,468],[1600,366,454],[1650,355,426]] }
   ];
 
-  // Ohuet säikeet kulkevat nauhasta toiseen: alkupää on kiinni from-nauhan
-  // alareunassa ja loppupää to-nauhan yläreunassa joka kuvassa. Päät menevät
-  // hieman nauhan sisään (overlap), jottei väliin jää rakoa liikkeessäkään.
+  // Ohuet säikeet kulkevat nauhasta toiseen. Alkuosa (x:stä holdFrom asti)
+  // seuraa tarkasti from-nauhan alareunaa ja loppuosa (holdTo:sta alkaen)
+  // to-nauhan yläreunaa; vain välissä oleva vapaa osa taipuu. Kiinni olevilla
+  // osilla säie ulottuu 6 yksikköä nauhan sisään (piiloon), jottei rakoa synny.
+  var OVERLAP = 6;
   var strands = [
-    { id: "violetHook", from: "violet", to: "blue", overlapFrom: 5, overlapTo: 5, knots: [
+    { id: "violetHook", from: "violet", to: "blue", holdFrom: 1162, holdTo: 1138, knots: [
       [1198,214,219],[1180,220,246],[1160,233,272],[1140,262,290],[1120,281,299],[1090,294,301],[1062,299,302]] },
-    { id: "blueCurl", from: "blue", to: "pink", overlapFrom: 5, overlapTo: 5, knots: [
+    { id: "blueCurl", from: "blue", to: "pink", holdFrom: 1254, holdTo: 1188, knots: [
       [1300,368,384],[1270,380,404],[1240,401,423],[1200,420,437],[1160,430,439],[1112,436,440]] },
-    { id: "pinkStrand", from: "violet", to: "pink", overlapFrom: 1.5, overlapTo: 5, knots: [
+    { id: "pinkStrand", from: "violet", to: "pink", holdFrom: 1322, holdTo: 1518, knots: [
       [1196,216,219],[1240,215,229],[1280,218,246],[1320,231,274],[1360,265,306],[1400,304,336],
       [1440,334,358],[1480,354,374],[1520,365,384],[1560,371,388]] }
   ];
@@ -216,14 +220,15 @@
     strands.forEach(function(r){
       var F = byId[r.from], T = byId[r.to];
       var last = r.knots.length - 1, xa = r.knots[0][0], xb = r.knots[last][0];
+      var vFrom = (r.holdFrom - xa) / (xb - xa), vTo = (r.holdTo - xa) / (xb - xa);
       var top = [], bottom = [];
-      r.knots.forEach(function(k, i){
-        var x = k[0], u = (x - xa) / (xb - xa);
+      r.knots.forEach(function(k){
+        var x = k[0], v = (x - xa) / (xb - xa);
         var sf = edgeY(F.now.bottom, x) - edgeY(F.rest.bottom, x);   // from-nauhan alareunan siirtymä
         var st = edgeY(T.now.top, x) - edgeY(T.rest.top, x);         // to-nauhan yläreunan siirtymä
-        var shift = sf + (st - sf) * u;
-        top.push([x, k[1] + shift - (i === 0 ? r.overlapFrom : 0)]);
-        bottom.push([x, k[2] + shift + (i === last ? r.overlapTo : 0)]);
+        var shift = sf + (st - sf) * smooth((v - vFrom) / (vTo - vFrom));
+        top.push([x, k[1] + shift - (v <= vFrom ? OVERLAP : 0)]);
+        bottom.push([x, k[2] + shift + (v >= vTo ? OVERLAP : 0)]);
       });
       paint(r, { top: top, bottom: bottom });
     });
