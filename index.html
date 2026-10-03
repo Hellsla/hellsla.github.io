@@ -27,7 +27,6 @@
 
   <!-- DNS prefetch for linked services -->
   <link rel="dns-prefetch" href="https://slides.com" />
-  <link rel="dns-prefetch" href="https://quizlet.com" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -880,16 +879,13 @@
       gap: 12px;
     }
 
-    /* Masonry: odd cards stack in the left column, even in the right.
-       The script below sets each card's row span from its height. */
+    /* Masonry: the script below puts each card in the shorter column when
+       the page loads and sets its row span from its height. */
     .grid.is-masonry {
       grid-auto-rows: 1px;
       grid-auto-flow: row dense;
       row-gap: 0;
     }
-
-    .grid.is-masonry > .category:nth-child(odd) { grid-column: 1; }
-    .grid.is-masonry > .category:nth-child(even) { grid-column: 2; }
 
     .category {
       background: rgba(255, 255, 255, 0.86);
@@ -2165,77 +2161,7 @@
             </div>
           </article>
 
-          <!-- 04: Flashcards -->
-          <article class="category">
-            <div class="category-head">
-              <div class="category-head-left">
-                <div class="category-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <rect x="3" y="7" width="14" height="13" rx="2"/>
-                    <path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2h-2"/>
-                  </svg>
-                </div>
-                <div>
-                  <div class="category-tag">Review</div>
-                  <h3>Flashcards</h3>
-                </div>
-              </div>
-              <div class="category-num">04</div>
-            </div>
-
-            <div class="links">
-              <a class="item" href="kasitetakomo.html">
-                <div>
-                  <div class="item-title">Käsitetakomo</div>
-                  <div class="item-sub">My own concept cards · 478 cards across 5 courses</div>
-                </div>
-                <span class="item-arrow">
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </span>
-              </a>
-
-              <a class="item" href="https://quizlet.com/fi/1159344781/fy01-ja-fy02-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <div class="item-title">FY01 &amp; FY02</div>
-                  <div class="item-sub">Physics as a natural science · Environment and society</div>
-                </div>
-                <span class="item-arrow">
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </span>
-              </a>
-
-              <a class="item" href="https://quizlet.com/fi/1159337238/fy03-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
-                <div>
-                  <div class="item-title">FY03</div>
-                  <div class="item-sub">Energy and heat</div>
-                </div>
-                <span class="item-arrow">
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </span>
-              </a>
-
-              <details class="more-links">
-                <summary>
-                  <span class="show-more-text">Show more flashcards</span>
-                  <span class="show-less-text">Show fewer flashcards</span>
-                </summary>
-
-                <div class="extra-links">
-                  <a class="item" href="https://quizlet.com/fi/1161257425/fy07-lops2019-flash-cards/?i=6tjxh&x=1jqt" target="_blank" rel="noopener noreferrer">
-                    <div>
-                      <div class="item-title">FY07</div>
-                      <div class="item-sub">Electromagnetism and light</div>
-                    </div>
-                    <span class="item-arrow">
-                      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                    </span>
-                  </a>
-                </div>
-              </details>
-            </div>
-          </article>
-
-          <!-- 05: Course summaries -->
+          <!-- 04: Course summaries -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -2250,7 +2176,7 @@
                   <h3>Course summaries</h3>
                 </div>
               </div>
-              <div class="category-num">05</div>
+              <div class="category-num">04</div>
             </div>
 
             <div class="links">
@@ -2305,7 +2231,7 @@
             </div>
           </article>
 
-          <!-- 06: Course timetables -->
+          <!-- 05: Course timetables -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -2321,7 +2247,7 @@
                   <h3>Course timetables</h3>
                 </div>
               </div>
-              <div class="category-num">06</div>
+              <div class="category-num">05</div>
             </div>
 
             <div class="links">
@@ -2366,7 +2292,7 @@
             </div>
           </article>
 
-          <!-- 07: International presentations -->
+          <!-- 06: International presentations -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -2383,7 +2309,7 @@
                   <h3>Talks &amp; presentations</h3>
                 </div>
               </div>
-              <div class="category-num">07</div>
+              <div class="category-num">06</div>
             </div>
 
             <div class="links">
@@ -2438,7 +2364,7 @@
             </div>
           </article>
 
-          <!-- 08: Classroom tools -->
+          <!-- 07: Classroom tools -->
           <article class="category">
             <div class="category-head">
               <div class="category-head-left">
@@ -2454,10 +2380,20 @@
                   <h3>Classroom tools</h3>
                 </div>
               </div>
-              <div class="category-num">08</div>
+              <div class="category-num">07</div>
             </div>
 
             <div class="links">
+              <a class="item" href="kasitetakomo.html">
+                <div>
+                  <div class="item-title">Käsitetakomo</div>
+                  <div class="item-sub">Concept flashcards · 611 cards across 8 physics courses</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
               <a class="item" href="oppiruukki.html">
                 <div>
                   <div class="item-title">Oppiruukki</div>
@@ -2522,16 +2458,24 @@
   });
   function update() {
     if (twoColumns.matches) {
+      // Columns are chosen once, so opening "Show more" only lengthens its own column.
+      var heights = [0, 0];
+      cards.forEach(function (card) {
+        var col = heights[0] <= heights[1] ? 0 : 1;
+        card.style.gridColumn = String(col + 1);
+        heights[col] += card.getBoundingClientRect().height + GAP;
+      });
       grid.classList.add('is-masonry');
       cards.forEach(function (card) { setSpan(card); observer.observe(card); });
     } else {
       observer.disconnect();
       grid.classList.remove('is-masonry');
-      cards.forEach(function (card) { card.style.gridRowEnd = ''; });
+      cards.forEach(function (card) { card.style.gridRowEnd = ''; card.style.gridColumn = ''; });
     }
   }
   twoColumns.addEventListener('change', update);
   update();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(update);
 }());
 </script>
   <script>
