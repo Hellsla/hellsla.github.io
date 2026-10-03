@@ -297,6 +297,13 @@ button{ font:inherit; color:inherit; }
 .betable{ display:grid; grid-template-columns:repeat(2, minmax(0, max-content)); gap:2px 28px; font-size:1.15rem; }
 .betable b{ color:var(--tc, var(--pen)); }
 .rules{ margin:0; padding-left:1.2em; display:grid; gap:4px; }
+.tscroll{ overflow-x:auto; }
+.ttable{ border-collapse:collapse; font-size:.95rem; width:100%; }
+.ttable th{ text-align:left; font-weight:700; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); padding:0 14px 4px 0; white-space:nowrap; }
+.ttable td{ padding:4px 12px 4px 0; border-top:1px solid var(--line); vertical-align:top; }
+.ttable td small{ display:block; color:var(--ink-2); font-size:.82rem; }
+.ttable b{ color:var(--tc, var(--pen)); }
+.src{ display:flex; align-items:center; gap:6px; color:var(--ink-2); font-weight:700; font-size:.9rem; margin-bottom:6px; }
 .theoryclock{ display:flex; gap:12px 20px; align-items:center; flex-wrap:wrap; }
 .theoryclock .clock{ max-width:190px; margin:0; flex:none; }
 .theoryclock .rules{ flex:1 1 14rem; min-width:0; }
@@ -410,6 +417,8 @@ const ICONS = {
   star:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.1l-5.7 3.2 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>',
   clock:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>',
   cards:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6.5" width="13" height="14.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 3.5h10.5A2.5 2.5 0 0 1 21 6v12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+  book:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c2.6-1 6-1 9 1 3-2 6.4-2 9-1V19c-2.6-1-6-1-9 1-3-2-6.4-2-9-1z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M12 6.5V20" stroke="currentColor" stroke-width="2.1"/></svg>',
+  calendar:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
   pen:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 0l.5.5a2.1 2.1 0 0 1 0 3L8.5 19 4 20z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>'
 };
 const icon = name => h('span', { class:'ic', html:ICONS[name] });
@@ -562,7 +571,7 @@ function clockSetItem(phrase, hr, m){
 }
 
 /* ============ tehtävät ============ */
-const ADJ = [['shy','ujo'],['funny','hauska'],['brave','rohkea'],['kind','ystävällinen'],['clever','älykäs'],['creative','luova'],
+const ADJ = [['shy','ujo'],['funny','hassu, hauska'],['brave','rohkea'],['kind','ystävällinen'],['clever','älykäs'],['creative','luova'],
   ['sporty','urheilullinen'],['calm','rauhallinen'],['clumsy','kömpelö'],['lazy','laiska'],['active','aktiivinen'],['curious','utelias']];
 const BOX = ['first','lesson','remember','ready','push','pull','coin','outside','dangerous','breaktime','next','clue','dark','gate','mask','back'];
 const STORY = [
@@ -573,8 +582,46 @@ const STORY = [
   '‘It’s just a joke!’ she says.', 'The children laugh and hurry back inside.', 'Their next lesson is music at quarter past ten.'
 ];
 
+/* Kirjan sanalistat (Kuuntele ja toista). Kolmas arvo 1 = lihavoitu eli tärkeä sana. */
+const K1 = [
+  ['just','vain',1], ["it's time",'on aika',0], ['the first','ensimmäinen',1], ['a lesson','oppitunti',1],
+  ['remember','muistaa',1], ['really','oikeasti',0], ['What do you think?','Mitä mieltä olette?',0], ['look at','katsoa',1],
+  ["What's going on?",'Mitä tapahtuu?',0], ['push','työntää',1], ['pull','vetää',1], ['a song','laulu',1],
+  ['flip','heittää (kolikkoa)',0], ['a coin','kolikko',1], ['Here we go!','Aloitetaan!',0],
+  ['adventurous','seikkailunhaluinen',0], ['show','näyttää',1]
+];
+const K2 = [
+  ['What are you doing?','Mitä olet tekemässä?',1], ['The sun is shining.','Aurinko paistaa.',0], ['a class','luokka',1],
+  ['outside','ulkona',1], ["Can't you see?",'Etkö näe?',0], ['look','näyttää joltakin',0], ['dangerous','vaarallinen',1],
+  ['is that','onko tuo',0], ['over there','tuolla',0], ['Watch out!','Varo!',1], ['joke','vitsailla',0],
+  ['an end','loppu',0], ['breaktime','välitunti',1], ['still','vielä',0], ['next','seuraava',1], ['music','musiikki',1],
+  ['underwater','veden alla',0], ["I'm done.",'Olen valmis.',0]
+];
+const K3 = [
+  ['haunted','kummitus-',0], ['a hunt','(aarteen)metsästys',0], ['night school','yökoulu',0], ['on Friday','perjantaina',1,'Friday'],
+  ['all','kaikki',1], ['a light','valo',0], ['out','sammutettu',0], ['children','lapset',1], ['hurry','kiirehtiä',1],
+  ['a monster','hirviö',1], ['slimy','limainen',0], ['crazy','hullu',1], ['Me too.','Minulla myös.',0], ['but','mutta',1],
+  ['a clue','vihje',1], ['to find','löydettävänä',0], ['in the dark','pimeässä',1], ['late','myöhäistä',0], ['near','lähellä',0],
+  ['a gate','portti',1], ['a sound','ääni',0], ["There's that sound again.",'Taas se ääni kuuluu.',0], ['a mask','naamio',1],
+  ['Just in time.','Juuri ajoissa.',0], ['back','takaisin',1]
+];
+const DAYS = [['Monday','maanantai'],['Tuesday','tiistai'],['Wednesday','keskiviikko'],['Thursday','torstai'],
+  ['Friday','perjantai'],['Saturday','lauantai'],['Sunday','sunnuntai']];
+
 const T = (q, answers, o) => Object.assign({ kind:'type', q, answers:[].concat(answers) }, o || {});
 const C = (q, options, answer, o) => Object.assign({ kind:'choice', q, options, answer }, o || {});
+
+// Lihavoidut sanat kirjoitetaan, muut valitaan saman kappaleen sanoista.
+function vocabItems(list){
+  const pool = list.map(v => v[0]);
+  return list.map(([en, fi, bold, cap]) => bold
+    ? T(fi, /^(a|an|the) /.test(en) ? [en, en.replace(/^(a|an|the) /, '')] : [en],
+        { say:en, show:`${fi} = ${en}`, cap, qmark:/\?$/.test(en), sentence:/^[A-Z]/.test(en) })
+    : { kind:'choice', q:`${fi} = ___`, answer:en, pool, word:fi, en, say:en, show:`${fi} = ${en}` });
+}
+function normExact(str){
+  return String(str).toLowerCase().replace(/[’‘`´ʼ]/g, "'").replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '').trim();
+}
 
 function beTrap(n){
   if (/\bi (is|are)\b/.test(n)) return 'Muista: I am.';
@@ -624,19 +671,19 @@ const EXS = [
     items:[
       T('matematiikka', ['maths'], { alt:['math','mathematics'], note:'Brittienglanniksi: maths' }),
       T('liikunta', ['PE'], { alt:['physical education'], note:'Lyhenne: PE', say:'P. E.' }),
-      T('englanti', ['English'], { cap:'English' }),
+      T('englanti (englannin kieli)', ['English'], { cap:'English' }),
       T('musiikki', ['music']),
       T('suomen kieli', ['Finnish', 'Finnish language'], { cap:'Finnish' }),
       T('uskonto', ['RE'], { alt:['religion','religious education'], note:'Lyhenne: RE (religious education)', say:'R. E.' }),
       T('elämänkatsomustieto', ['ethics']),
       T('ympäristöoppi', ['science'], { alt:['environmental studies','environmental science'], note:'Kirjassa: science' }),
-      T('kuvataide', ['art'], { alt:['visual arts','visual art','arts'], note:'Kirjassa: art' }),
+      T('kuvaamataito (kuvataide)', ['art'], { alt:['visual arts','visual art','arts'], note:'Kirjassa: art' }),
       T('yhteiskuntaoppi', ['civics'], { alt:['social studies'], note:'Kirjassa: civics' }),
       T('käsityöt', ['crafts'], { alt:['craft','handicraft','handicrafts'], note:'Kirjassa: crafts' }),
       T('historia', ['history'])
     ] },
 
-  { id:'e5', num:'5', group:'sanasto', title:'Kappaleiden sanat', mode:'wordbox', box:BOX,
+  { id:'e5', num:'5', group:'sanasto', title:'Sanalaatikko: kappaleiden sanat', mode:'wordbox', box:BOX,
     instr:'Valitse sanalaatikosta oikea englanninkielinen sana.',
     items:[['oppitunti','lesson'],['muistaa','remember'],['valmis','ready'],['työntää','push'],['vetää','pull'],['kolikko','coin'],
       ['ulkona','outside'],['vaarallinen','dangerous'],['välitunti','breaktime'],['seuraava','next'],['vihje','clue'],
@@ -646,9 +693,9 @@ const EXS = [
   { id:'e5b', num:'5b', group:'sanasto', title:'Fraaseja kappaleista', label:'Englanniksi',
     instr:'Kirjoita englanniksi.',
     items:[
-      T('Mitä sinä teet? (juuri nyt)', 'What are you doing?', { sentence:true, qmark:true }),
+      T('Mitä olet tekemässä?', 'What are you doing?', { sentence:true, qmark:true }),
       T('Varo!', 'Watch out!', { sentence:true }),
-      T('Olen valmis.', 'I am ready.', { sentence:true }),
+      T('Olen valmis.', ['I am ready.', 'I am done.'], { sentence:true, why:'Kirjan sanalistassa: I’m done. = Olen valmis. Myös I’m ready. käy.' }),
       T('pimeässä', 'in the dark'),
       T('perjantaina', 'on Friday', { cap:'Friday' }),
       T('hirviö', ['a monster', 'monster']),
@@ -796,29 +843,151 @@ const EXS = [
       { kind:'tf', q:'Leo is kind.', answer:true, ev:[4] },
       { kind:'tf', q:'Mia is behind the gate.', answer:true, ev:[9] },
       { kind:'tf', q:'The next lesson is maths.', answer:false, fix:/music|musiik/, model:'The next lesson is music.', fixHint:'Katso tekstin viimeistä lausetta.', ev:[13] }
+    ] },
+
+  /* ---- kirjan sivuilta ---- */
+  { id:'vk', icon:'calendar', group:'sanasto', title:'Viikonpäivät', label:'Englanniksi', sub:'kappale 3, lukujärjestys · 7 päivää',
+    instr:'Kirjoita viikonpäivä englanniksi. Viikonpäivät kirjoitetaan englanniksi isolla alkukirjaimella.',
+    items: DAYS.map(([en, fi]) => T(fi, en, { cap:en })) },
+
+  { id:'k1', icon:'book', group:'sanasto', title:'Kappale 1: It’s just a game', label:'Englanniksi', sub:`kirjan sanalista · ${K1.length} sanaa`,
+    instr:'Lihavoidut (tärkeät) sanat kirjoitetaan, muut valitaan vaihtoehdoista.', items: vocabItems(K1) },
+  { id:'k2', icon:'book', group:'sanasto', title:'Kappale 2: What are you doing?', label:'Englanniksi', sub:`kirjan sanalista · ${K2.length} sanaa`,
+    instr:'Lihavoidut (tärkeät) sanat kirjoitetaan, muut valitaan vaihtoehdoista.', items: vocabItems(K2) },
+  { id:'k3', icon:'book', group:'sanasto', title:'Kappale 3: Haunted History Hunt', label:'Englanniksi', sub:`kirjan sanalista · ${K3.length} sanaa`,
+    instr:'Lihavoidut (tärkeät) sanat kirjoitetaan, muut valitaan vaihtoehdoista.', items: vocabItems(K3) },
+
+  { id:'ob1', icon:'book', group:'olla', title:'Olla-verbi suomesta englanniksi', theory:'olla', label:'Englanniksi', sub:'kirjan taulukko · 13 kohtaa',
+    instr:'Kirjoita englanniksi. Voit käyttää myös lyhyitä muotoja (I’m, isn’t).',
+    trap: (n, it) => it.qmark && /^(i|you|he|she|it|we|they) (am|is|are)$/.test(n) ? 'Kysymyksessä olla-verbi tulee ensin: Are you?' : beTrap(n),
+    items:[
+      T('minä olen', 'I am'), T('sinä olet', 'you are'), T('hän on (tyttö)', 'she is'), T('se on', 'it is'),
+      T('me olemme', 'we are'), T('te olette', 'you are'), T('he ovat', 'they are'),
+      T('minä en ole', 'I am not'), T('hän ei ole (poika)', 'he is not'), T('he eivät ole', 'they are not'),
+      T('Olenko minä?', 'Am I?', { qmark:true, sentence:true }), T('Onko hän? (poika)', 'Is he?', { qmark:true, sentence:true }),
+      T('Ovatko he?', 'Are they?', { qmark:true, sentence:true })
+    ] },
+
+  { id:'ob2', icon:'book', group:'olla', title:'Lyhyet muodot', theory:'olla', plang:'en', label:'Lyhyt muoto', sub:'I’m, you’re, isn’t, aren’t · 12 kohtaa',
+    instr:'Kirjoita lyhyt muoto heittomerkin kanssa.', hint:'Heittomerkki ’ korvaa poisjääneen kirjaimen: I am → I’m. Puhelimessa heittomerkki löytyy numeronäppäimistöstä.',
+    trap: (n, it) => {
+      const a = normExact(it.answers[0]);
+      if (n.replace(/'/g, '') === a.replace(/'/g, '')) return `Muista heittomerkki: ${it.answers[0]}`;
+      if (norm(n) === norm(a)) return 'Tämä on pitkä muoto. Kirjoita lyhyt muoto heittomerkillä.';
+      return null;
+    },
+    items:[
+      T('I am', "I'm", { exact:true }), T('you are', "you're", { exact:true }), T('he is', "he's", { exact:true }),
+      T('she is', "she's", { exact:true }), T('it is', "it's", { exact:true }), T('we are', "we're", { exact:true }),
+      T('they are', "they're", { exact:true }), T('I am not', "I'm not", { exact:true }),
+      T('you are not', "you aren't", { exact:true, alt:["you're not"], note:'Kirjassa: you aren’t' }),
+      T('she is not', "she isn't", { exact:true, alt:["she's not"], note:'Kirjassa: she isn’t' }),
+      T('it is not', "it isn't", { exact:true, alt:["it's not"], note:'Kirjassa: it isn’t' }),
+      T('they are not', "they aren't", { exact:true, alt:["they're not"], note:'Kirjassa: they aren’t' })
+    ] },
+
+  { id:'ib1', icon:'book', group:'ing', title:'-ing-muodon erikoistapaukset', theory:'ing', plang:'en', label:'-ing-muoto', sayPrompt:true, sub:'hiding, swimming, running · 9 kohtaa',
+    instr:'Muodosta -ing-muoto. Huomaa: e putoaa pois, ja joskus viimeinen kirjain kahdentuu.',
+    trap: (n, it) => /eing$/.test(n) ? 'Jos verbi loppuu e-kirjaimeen, e putoaa pois: hide → hiding.'
+      : it.dbl && n === it.q + 'ing' ? `Viimeinen kirjain kahdentuu: ${it.q} → ${it.answers[0]}.`
+      : !/ing$/.test(n) ? 'Muista -ing-pääte.' : null,
+    items:[
+      T('hide', 'hiding', { hint:'e putoaa pois.' }), T('ride', 'riding', { hint:'e putoaa pois.' }),
+      T('swim', 'swimming', { dbl:true, hint:'Viimeinen kirjain kahdentuu.' }), T('run', 'running', { dbl:true, hint:'Viimeinen kirjain kahdentuu.' }),
+      T('shine', 'shining', { hint:'e putoaa pois. (The sun is shining.)' }), T('joke', 'joking', { hint:'e putoaa pois. (Are you joking?)' }),
+      T('have', 'having', { hint:'e putoaa pois. (The class is having night school.)' }),
+      T('listen', 'listening', { hint:'Lisää vain -ing.' }), T('talk', 'talking', { hint:'Lisää vain -ing.' })
+    ] },
+
+  { id:'ib2', icon:'book', group:'ing', title:'Kestopreesens: kielteinen ja kysymys', theory:'ing', plang:'en', label:'Uusi lause', sentence:true, sub:'You are not painting. Are you painting? · 8 kohtaa',
+    instr:'Muuta lause kielteiseksi tai kysymykseksi.',
+    trap: (n, it) => /\bnot (am|is|are)\b/.test(n) ? 'not tulee olla-verbin jälkeen: are not painting.'
+      : it.task === 'q' && /^(i|you|he|she|it|we|they|sofia|tommy) (am|is|are)\b/.test(n) ? 'Kysymyksessä olla-verbi tulee ensin: Are you painting?'
+      : it.task === 'neg' && !/\bnot\b/.test(n) ? 'Kielteisestä lauseesta puuttuu not.' : beTrap(n),
+    items:[
+      T('**Kielteinen:** You are painting.', 'You are not painting.', { task:'neg' }),
+      T('**Kysymys:** You are painting.', 'Are you painting?', { task:'q', qmark:true }),
+      T('**Kysymys:** Sofia is riding a bike.', 'Is Sofia riding a bike?', { task:'q', qmark:true }),
+      T('**Kielteinen:** I am painting.', 'I am not painting.', { task:'neg' }),
+      T('**Kysymys:** He is listening to a flower.', 'Is he listening to a flower?', { task:'q', qmark:true }),
+      T('**Kielteinen:** We are looking for Sofia.', 'We are not looking for Sofia.', { task:'neg' }),
+      T('**Kysymys:** You are joking.', 'Are you joking?', { task:'q', qmark:true }),
+      T('**Kielteinen:** Tommy is hiding.', 'Tommy is not hiding.', { task:'neg' })
+    ] },
+
+  { id:'kf', icon:'book', group:'kello', title:'Kellonaikafraasit', theory:'kello', label:'Englanniksi', sentence:true, time:true, sub:'What time is it? · 6 kohtaa',
+    instr:'Kirjoita englanniksi.',
+    trap: n => /\d/.test(n) ? 'Kirjoita kellonaika sanoilla, esim. nine o’clock.' : beTrap(n),
+    items:[
+      T('Mitä kello on?', 'What time is it?', { qmark:true }),
+      T('Kello on kaksi.', "It's two o'clock."),
+      T('Milloin sinulla on matematiikkaa?', 'When do you have maths?', { qmark:true, alt:['When do you have math?'], note:'Kirjassa: maths' }),
+      T('Yhdeksältä. (kello yhdeksän)', "At nine o'clock."),
+      T('Kello on puoli yhdeksän.', "It's half past eight.", { hint:'puoli yhdeksän = half past eight' }),
+      T('Minulla on matematiikkaa kello yhdeksän.', "I have maths at nine o'clock.", { alt:["I have math at nine o'clock."], note:'Kirjassa: maths' })
+    ] },
+
+  { id:'tl', icon:'book', group:'luku', title:'Kappaleiden tärkeät lauseet', label:'Englanniksi', sentence:true, sub:'kappaleiden lihavoidut lauseet · 12 kohtaa',
+    instr:'Kirjoita lause englanniksi. Lauseet ovat kirjan kappaleista 1–3.', trap:beTrap,
+    items:[
+      T('Olen ujo.', "I'm shy."),
+      T('Hän (tyttö) on ujo.', "She's shy."),
+      T('Sinä et ole ujo!', "You aren't shy!"),
+      T('Onko hän (poika) urheilullinen?', 'Is he sporty?', { qmark:true }),
+      T('Olette todella ystävällisiä.', 'You are very kind.'),
+      T('Olen maalaamassa.', "I'm painting."),
+      T('Mitä olet tekemässä?', 'What are you doing?', { qmark:true }),
+      T('Sofia ja Nadir ajavat pyörällä.', 'Sofia and Nadir are riding a bike.', { alt:['Sofia and Nadir are riding bikes.'] }),
+      T('Kuunteleeko hän (poika) kukkaa?', 'Is he listening to a flower?', { qmark:true, alt:['Is he listening to the flower?'] }),
+      T('Vitsailetko?', 'Are you joking?', { qmark:true }),
+      T('Minulla on hirviömatematiikkaa kello yhdeksän.', "I have monster maths at nine o'clock.", { alt:["I have monster math at nine o'clock."], note:'Kirjassa: monster maths' }),
+      T('Mitä sinulla on varttia yli kymmenen?', 'What do you have at quarter past ten?', { qmark:true })
+    ] },
+
+  { id:'kq', icon:'book', group:'luku', title:'Kysymyksiä kappaleista', sub:'lue kirjasta kappaleet 1–3 · 14 kysymystä',
+    instr:'Lue kappale kirjasta ja vastaa englanniksi tai suomeksi. Kirja saa olla auki.',
+    items:[
+      { kind:'read', src:'Kappale 1 · It’s just a game', q:'What time is it at the beginning?', fi:'Mitä kello on kappaleen alussa?', re:/eight|\b8\b|kahdeks/, model:'It’s eight o’clock. (kello kahdeksan)', hint:'Katso otsikon alla olevaa johdantoa.' },
+      { kind:'read', src:'Kappale 1 · It’s just a game', q:'Who is late?', fi:'Kuka on myöhässä?', re:/venn|teacher|opettaj/, model:'Mr Venn.', hint:'Katso Emman ensimmäistä repliikkiä.' },
+      { kind:'read', src:'Kappale 1 · It’s just a game', q:'Is Emma really shy?', fi:'Onko Emma oikeasti ujo?', re:/\bno\b|\bei\b|not|n't/, model:'No, she isn’t. It’s just a game. (Ei ole. Se on vain peliä.)', hint:'Mitä Emma sanoo: I’m not really …' },
+      { kind:'read', src:'Kappale 1 · It’s just a game', q:'Who is sporty?', fi:'Kuka on urheilullinen?', re:/nadir/, model:'Nadir.', hint:'Etsi sana sporty.' },
+      { kind:'read', src:'Kappale 1 · It’s just a game', q:'How do they choose between a song and a game?', fi:'Miten he valitsevat laulun ja pelin välillä?', re:/coin|kolik|flip|heit|arpo/, model:'They flip a coin. (heittävät kolikkoa)', hint:'Mitä Mrs Green sanoo? Let’s flip a …' },
+      { kind:'read', src:'Kappale 2 · What are you doing?', q:'Where does the class have lessons today?', fi:'Missä luokalla on oppitunteja tänään?', re:/outside|ulko/, model:'Outside. (ulkona)', hint:'Katso otsikon alla olevaa johdantoa.' },
+      { kind:'read', src:'Kappale 2 · What are you doing?', q:'What is Tommy doing?', fi:'Mitä Tommy tekee?', re:/paint|maala/, model:'He is painting. (maalaa)', hint:'Mitä Tommy vastaa Emmalle?' },
+      { kind:'read', src:'Kappale 2 · What are you doing?', q:'What are Sofia and Nadir doing?', fi:'Mitä Sofia ja Nadir tekevät?', re:/rid|bike|pyör/, model:'They are riding a bike. (ajavat pyörällä)', hint:'Etsi nimet Sofia ja Nadir.' },
+      { kind:'read', src:'Kappale 2 · What are you doing?', q:'What is the next lesson?', fi:'Mikä on seuraava oppitunti?', re:/music|musiik/, model:'Music underwater. (musiikkia veden alla)', hint:'Etsi sana next.' },
+      { kind:'read', src:'Kappale 3 · Haunted History Hunt', q:'When is the night school?', fi:'Milloin on yökoulu?', re:/fri|sat|perjant|lauant/, model:'On Friday and Saturday. (perjantaina ja lauantaina)', hint:'Katso otsikon alla olevaa johdantoa.' },
+      { kind:'read', src:'Kappale 3 · Haunted History Hunt', q:'What does Sofia have at nine o’clock?', fi:'Mitä Sofialla on kello yhdeksän?', re:/math|matem|matik/, model:'Monster maths. (hirviömatematiikkaa)', hint:'Etsi sana nine.' },
+      { kind:'read', src:'Kappale 3 · Haunted History Hunt', q:'What do they have at quarter past ten?', fi:'Mitä heillä on varttia yli kymmenen?', re:/craft|käsity|kasity/, model:'Crafts. Crazy crafts. (käsitöitä)', hint:'Etsi sanat quarter past ten.' },
+      { kind:'read', src:'Kappale 3 · Haunted History Hunt', q:'Where is the clue?', fi:'Missä vihje on?', re:/gate|portt|portin/, model:'Near the gate. (portin lähellä)', hint:'Etsi sana clue.' },
+      { kind:'read', src:'Kappale 3 · Haunted History Hunt', q:'What is the clue?', fi:'Mikä vihje on?', re:/mask|naami/, model:'The mask. (naamio)', hint:'Mitä Emma sanoo lopussa?' }
     ] }
 ];
 const EXM = {}; EXS.forEach(e => { EXM[e.id] = e; });
 
 const GROUPS = [
-  { id:'sanasto', title:'Sanasto', sub:'adjektiivit, verbit, kouluaineet, kappaleiden sanat', color:'--t1', ex:['e1','e2','e3','e4','e5','e5b'], cards:true },
-  { id:'olla', title:'Olla-verbi', sub:'am / is / are', color:'--t2', ex:['e6','e7','e8','e9','haaste'] },
-  { id:'ing', title:'Kestopreesens', sub:'mitä tapahtuu juuri nyt?', color:'--t3', ex:['e10','e11','e12','e13'] },
-  { id:'kello', title:'Kellonajat', sub:'o’clock, past, to', color:'--t4', ex:['e14','e15','e16','kt'] },
-  { id:'luku', title:'Lukutehtävä', sub:'perjantaiaamu koulussa', color:'--t5', ex:['e17','e18'] }
+  { id:'sanasto', title:'Sanasto', sub:'adjektiivit, verbit, kouluaineet, kappaleiden sanat', color:'--t1', ex:['e1','e2','e3','e4','vk','e5','e5b','k1','k2','k3'], cards:true },
+  { id:'olla', title:'Olla-verbi', sub:'am / is / are', color:'--t2', ex:['e6','e7','e8','e9','ob1','ob2','haaste'] },
+  { id:'ing', title:'Kestopreesens', sub:'mitä tapahtuu juuri nyt?', color:'--t3', ex:['e10','e11','e12','e13','ib1','ib2'] },
+  { id:'kello', title:'Kellonajat', sub:'o’clock, past, to', color:'--t4', ex:['e14','e15','e16','kf','kt'] },
+  { id:'luku', title:'Lukeminen', sub:'monisteen teksti ja kirjan kappaleet 1–3', color:'--t5', ex:['e17','e18','tl','kq'] }
 ];
 const ORDER = GROUPS.flatMap(g => g.ex);
 const groupOf = e => GROUPS.find(g => g.id === e.group);
-const MOCK_PLAN = [['e1',2],['e2',1],['e3',1],['e4',1],['e5',1],['e5b',1],['e6',1],['e7',1],['e8',1],['e9',1],
-  ['e10',1],['e11',1],['e12',1],['e13',1],['e14',1],['e15',1],['e16',1],['e17',1],['e18',1]];
+const MOCK_PLAN = [['e1',1],['e2',1],['e3',1],['e4',1],['e5b',1],['k1',1],['k2',1],['k3',1],
+  ['e6',1],['e7',1],['e8',1],['ob2',1],['e10',1],['ib1',1],['e11',1],['e12',1],['e13',1],['ib2',1],
+  ['e14',1],['e15',1],['e16',1],['kf',1],['e17',1],['e18',1],['kq',1]];
 const MOCK_N = MOCK_PLAN.reduce((a, p) => a + p[1], 0);
 
 const DECKS = [
   { id:'adj', name:'Adjektiivit', cards: ADJ.map(([en, fi]) => ({ fi, en })) },
   { id:'verb', name:'Verbit', cards: EXM.e3.items.map(it => ({ fi:it.q, en:it.answers[0] })) },
   { id:'subj', name:'Kouluaineet', cards: EXM.e4.items.map(it => ({ fi:it.q, en:it.answers[0], say:it.say })) },
-  { id:'word', name:'Kappaleiden sanat', cards: EXM.e5.items.map(it => ({ fi:it.word, en:it.en })) },
-  { id:'phr', name:'Fraasit', cards: EXM.e5b.items.map(it => ({ fi:it.q, en:it.answers[0] })) }
+  { id:'days', name:'Viikonpäivät', cards: DAYS.map(([en, fi]) => ({ fi, en })) },
+  { id:'k1', name:'Kappale 1', cards: K1.map(([en, fi]) => ({ fi, en })) },
+  { id:'k2', name:'Kappale 2', cards: K2.map(([en, fi]) => ({ fi, en })) },
+  { id:'k3', name:'Kappale 3', cards: K3.map(([en, fi]) => ({ fi, en })) },
+  { id:'phr', name:'Monisteen fraasit', cards: EXM.e5b.items.map(it => ({ fi:it.q, en:it.answers[0] })) }
 ];
 
 function resolve(key){
@@ -947,20 +1116,25 @@ function clockSVG(o){
 function theoryNode(id){
   const d = h('div', { class:'theory' });
   if (id === 'olla'){
+    const rows = [['I am','minä olen','I am not','Am I?'], ['you are','sinä olet','you are not','Are you?'],
+      ['he / she is','hän on','he / she is not','Is he? Is she?'], ['it is','se on','it is not','Is it?'],
+      ['we are','me olemme','we are not','Are we?'], ['you are','te olette','you are not','Are you?'], ['they are','he ovat','they are not','Are they?']];
     d.append(
-      h('div', { class:'betable', lang:'en' },
-        h('span', null, h('b', null, 'I'), ' am'), h('span', null, h('b', null, 'we'), ' are'),
-        h('span', null, h('b', null, 'you'), ' are'), h('span', null, h('b', null, 'you'), ' are'),
-        h('span', null, h('b', null, 'he / she / it'), ' is'), h('span', null, h('b', null, 'they'), ' are')),
+      h('div', { class:'tscroll' }, h('table', { class:'ttable' },
+        h('thead', null, h('tr', null, h('th', null, 'myönteinen'), h('th', null, 'kielteinen'), h('th', null, 'kysymys'))),
+        h('tbody', null, rows.map(r => h('tr', null,
+          h('td', null, h('b', { lang:'en' }, r[0]), h('small', null, r[1])), h('td', { lang:'en' }, r[2]), h('td', { lang:'en' }, r[3])))))),
       h('ul', { class:'rules' },
-        h('li', null, 'Kielteinen: lisää ', h('b', null, 'not'), ' olla-verbin perään. She is not sporty. (isn’t, aren’t)'),
-        h('li', null, 'Kysymys: olla-verbi lauseen alkuun. ', h('b', null, 'Are'), ' you ready? ', h('b', null, 'Is'), ' she brave?')));
+        h('li', null, 'Kielteinen lause tehdään not-sanalla olla-verbin perään: She is not sporty.'),
+        h('li', null, 'Kysymyksessä sanat vaihtavat paikkaa: You are ready. → ', h('b', null, 'Are you'), ' ready?'),
+        h('li', { lang:'en' }, 'Lyhyet muodot: I’m, you’re, he’s, she’s, it’s, we’re, they’re · I’m not, you aren’t, he isn’t, she isn’t, it isn’t, we aren’t, they aren’t')));
   } else if (id === 'ing'){
     d.append(h('ul', { class:'rules' },
-      h('li', null, 'Rakenne: ', h('b', null, 'am / is / are + verbi + -ing'), '.'),
-      h('li', { lang:'en' }, 'She is reading. They are playing. I am watching TV.'),
-      h('li', null, 'Jos verbi loppuu e-kirjaimeen, e putoaa pois: ride → riding.'),
-      h('li', null, 'Kestopreesensillä kerrotaan, mitä tapahtuu juuri nyt.')));
+      h('li', null, 'Kun kerrotaan, mitä joku on tekemässä juuri nyt, käytetään kestopreesensiä.'),
+      h('li', null, 'Rakenne: ', h('b', null, 'am / is / are + verbi + -ing'), '. ', h('span', { lang:'en' }, 'You are painting.')),
+      h('li', null, 'Kielteinen: not olla-verbin perään. ', h('span', { lang:'en' }, 'You are not painting.')),
+      h('li', null, 'Kysymys: sanat vaihtavat paikkaa. ', h('span', { lang:'en' }, 'Are you painting?')),
+      h('li', null, 'Huomaa: hide → hiding, ride → riding (e putoaa pois), swim → swimming, run → running (viimeinen kirjain kahdentuu).')));
   } else if (id === 'kello'){
     d.append(h('div', { class:'theoryclock' },
       clockSVG({ regions:true, noHands:true, label:'Kellotaulun oikea puoli on past, vasen puoli to' }).el,
@@ -969,7 +1143,9 @@ function theoryNode(id){
         h('li', null, h('b', null, 'past'), ' = yli: twenty past seven = 7.20'),
         h('li', null, h('b', null, 'to'), ' = vaille: ten to seven = 6.50'),
         h('li', null, h('b', null, 'quarter past / to'), ' = varttia yli / vaille'),
-        h('li', null, h('b', null, 'half past'), ' = puoli. Huom! half past ten = 10.30 = puoli yksitoista'))));
+        h('li', null, h('b', null, 'half past'), ' = puoli (yli). Huom! half past ten = 10.30 = puoli yksitoista'),
+        h('li', null, 'five, ten, quarter, twenty, twenty-five + past / to'),
+        h('li', { lang:'en' }, 'What time is it? – It’s two o’clock. When do you have maths? – At nine o’clock.'))));
   }
   return d;
 }
@@ -1163,7 +1339,13 @@ KIND.choice = (q, ctx) => {
 
 function checkType(it, e, raw){
   const time = it.time || e.time;
-  const nz = x => { let n = norm(x, time); if (it.verb) n = n.replace(/^to /, ''); return n; };
+  const nz = x => {
+    if (it.exact) return normExact(x);
+    let n = norm(x, time);
+    if (it.verb) n = n.replace(/^to /, '');
+    if (time) n = n.replace(/^(it is|at) /, '');
+    return n;
+  };
   const n = nz(raw);
   if (!n) return { empty:true };
   const acc = it.answers.map(nz);
@@ -1176,7 +1358,7 @@ function checkType(it, e, raw){
     if (note) notes.push(note);
     if (it.cap && !raw.includes(it.cap)) notes.push(`Muista iso alkukirjain: ${it.cap}`);
     if ((it.qmark || e.qmark) && !raw.includes('?')) notes.push('Muista kysymysmerkki loppuun.');
-    return { ok:true, notes, same:n === nz(it.full || it.answers[0]) || !!note };
+    return { ok:true, notes, same:n === nz(it.full || it.answers[0]) || (!it.full && it.answers.map(nz).includes(n)) || !!note };
   }
   const trap = it.trap || e.trap;
   let msg = trap ? trap(n, it) : null;
@@ -1302,6 +1484,7 @@ function selfOk(ctx){
 
 KIND.read = (q, ctx) => {
   const it = q.item;
+  if (it.src) ctx.body.append(h('p', { class:'src' }, icon('book'), it.src));
   ctx.body.append(h('p', { class:'prompt', lang:'en' }, it.q, ' ', sayBtn(it.q)));
   if (!S.oneShot) ctx.body.append(fiToggle(it.fi));
   const inp = answerInput(ctx, 'Vastaus englanniksi tai suomeksi', true);
@@ -1318,16 +1501,16 @@ KIND.read = (q, ctx) => {
     if (!raw){ feedback(ctx, 'info', 'Kirjoita vastaus ensin.'); inp.focus(); return; }
     ctx.attempts++;
     if (it.re.test(raw.toLowerCase())){
-      ding(); inp.classList.remove('bad'); inp.classList.add('good'); inp.readOnly = true; markEvidence(it.ev);
-      feedback(ctx, 'good', praise(), [h('span', null, 'Malli: ', h('strong', null, it.model)), 'Vastaus on alleviivattu tekstissä.']);
+      ding(); inp.classList.remove('bad'); inp.classList.add('good'); inp.readOnly = true; markEvidence(it.ev || []);
+      feedback(ctx, 'good', praise(), [h('span', null, 'Malli: ', h('strong', null, it.model)), it.ev ? 'Vastaus on alleviivattu tekstissä.' : null]);
       ctx.finish(ctx.attempts === 1, raw);
     } else if (ctx.attempts < ctx.max){
       bonk(); inp.classList.add('bad'); shake(inp);
-      feedback(ctx, 'bad', 'Ei aivan. Lue teksti uudelleen ja yritä vielä kerran!');
+      feedback(ctx, 'bad', it.ev ? 'Ei aivan. Lue teksti uudelleen ja yritä vielä kerran!' : 'Ei aivan. Lue kappale kirjasta uudelleen ja yritä vielä kerran!');
       showHint(); inp.focus(); inp.select();
     } else {
-      bonk(); inp.classList.add('bad'); inp.readOnly = true; markEvidence(it.ev);
-      feedback(ctx, 'bad', h('span', null, 'Mallivastaus: ', h('strong', null, it.model)), ['Vastaus on alleviivattu tekstissä.']);
+      bonk(); inp.classList.add('bad'); inp.readOnly = true; markEvidence(it.ev || []);
+      feedback(ctx, 'bad', h('span', null, 'Mallivastaus: ', h('strong', null, it.model)), [it.ev ? 'Vastaus on alleviivattu tekstissä.' : null]);
       ctx.finish(false, raw);
       ctx.fb.firstChild.append(selfOk(ctx));
     }
@@ -1667,7 +1850,7 @@ function answerKey(){
     if (!det.open || det.dataset.built) return;
     det.dataset.built = '1';
     ORDER.map(id => EXM[id]).filter(e => e.items && e.items.length).forEach(e => {
-      det.append(h('h3', null, `${e.num}. ${e.title}`),
+      det.append(h('h3', null, `${e.num ? e.num + '. ' : ''}${e.title}`),
         h('ol', { lang:'en' }, e.items.map(it => h('li', null, answerText(it)))));
     });
   });
@@ -1716,7 +1899,8 @@ function renderHome(){
           h('span', { class:'extitle' }, 'Sanakortit', h('small', null, 'kaikki sanat kortteina, myös ääneen luettuna'))),
           h('span')) : null))),
     h('p', { class:'tip' }, h('strong', null, 'Kertausvinkki. '),
-      'Tee tehtävät ensin ilman kirjaa. Tarkista sitten vastaukset ja harjoittele uudelleen vain ne kohdat, joissa tuli virheitä. Sovellus kerää ne valmiiksi kohtaan Kertaa virheet.'),
+      'Tee tehtävät ensin ilman kirjaa. Tarkista sitten vastaukset ja harjoittele uudelleen vain ne kohdat, joissa tuli virheitä. Sovellus kerää ne valmiiksi kohtaan Kertaa virheet. ',
+      'Numeroidut tehtävät ovat kertausmonisteesta, kirjamerkillä merkityt kirjan sivuilta.'),
     answerKey(),
     resetBox);
 }
