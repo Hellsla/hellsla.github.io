@@ -118,36 +118,42 @@
   if (params.get("polku") === "0") document.documentElement.classList.add("no-trail");
 
   // Nauhat kuvasta mitattuina: [x, yläreuna, alareuna]. Ahjon kohdalla
-  // alareuna jatkuu alasimen taakse, jotta nauha näyttää nousevan ahjosta.
-  // Ohuet säikeet (koukku, kiehkura, säie) liikkuvat kummastakin päästä sen
-  // nauhan mukana, johon ne kiinnittyvät (from = ensimmäinen, to = viimeinen piste).
-  var ribbons = [
+  // alareuna jatkuu alasimen taakse, jotta nauha näyttää nousevan ahjosta;
+  // violetin tyvi jatkuu samoin sinisen taakse.
+  var mains = [
     { id: "violet", x0: 770, amp: 18, len: 560, period: 4.8, phase: 0.0, cap: 18, knots: [
-      [770,345,362],[800,314,341],[840,276,331],[880,247,322],[920,226,314],[960,211,281],
+      [770,345,380],[800,314,360],[840,276,350],[880,247,340],[920,226,325],[960,211,281],
       [1000,198,257],[1040,188,239],[1080,179,227],[1120,173,221],[1160,167,218],[1200,163,216],
       [1240,159,214],[1280,155,217],[1320,151,226],[1360,147,230],[1400,142,231],[1440,135,228],
       [1480,125,221],[1520,112,210],[1560,97,196],[1600,81,174],[1628,72,140]] },
-    { id: "violetHook", from: "violet", to: "blue", knots: [
-      [1198,214,219],[1180,220,246],[1160,233,272],[1140,262,290],[1120,281,299],[1090,294,301],[1062,299,302]] },
     { id: "blue", x0: 590, amp: 16, len: 640, period: 4.2, phase: 2.1, cap: 18, knots: [
       [585,486,520],[600,460,520],[640,416,520],[680,386,520],[720,367,520],[760,353,520],[800,342,520],
       [840,333,450],[880,324,419],[920,316,400],[960,310,387],[1000,306,377],[1040,302,371],
       [1080,301,367],[1120,303,367],[1160,305,369],[1200,305,372],[1240,304,374],[1280,301,377],
       [1320,297,377],[1360,292,377],[1400,285,375],[1440,276,370],[1480,265,360],[1520,252,352],
       [1560,239,338],[1600,224,321],[1648,207,290]] },
-    { id: "blueCurl", from: "blue", to: "blue", knots: [
-      [1300,368,384],[1270,380,404],[1240,401,423],[1200,420,437],[1160,430,439],[1112,436,440]] },
     { id: "pink", x0: 820, amp: 18, len: 600, period: 4.5, phase: 4.2, cap: 20, knots: [
       [818,479,520],[840,461,520],[880,443,520],[920,431,520],[960,424,469],[1000,422,461],
       [1040,424,459],[1080,429,462],[1120,436,467],[1160,442,474],[1200,444,481],[1240,445,487],
       [1280,444,491],[1320,440,493],[1360,435,494],[1400,427,493],[1440,417,490],[1480,406,485],
-      [1520,394,478],[1560,374,468],[1600,366,454],[1650,355,426]] },
-    { id: "pinkStrand", from: "violet", to: "pink", knots: [
+      [1520,394,478],[1560,374,468],[1600,366,454],[1650,355,426]] }
+  ];
+
+  // Ohuet säikeet kulkevat nauhasta toiseen: alkupää on kiinni from-nauhan
+  // alareunassa ja loppupää to-nauhan yläreunassa joka kuvassa. Päät menevät
+  // hieman nauhan sisään (overlap), jottei väliin jää rakoa liikkeessäkään.
+  var strands = [
+    { id: "violetHook", from: "violet", to: "blue", overlapFrom: 5, overlapTo: 5, knots: [
+      [1198,214,219],[1180,220,246],[1160,233,272],[1140,262,290],[1120,281,299],[1090,294,301],[1062,299,302]] },
+    { id: "blueCurl", from: "blue", to: "pink", overlapFrom: 5, overlapTo: 5, knots: [
+      [1300,368,384],[1270,380,404],[1240,401,423],[1200,420,437],[1160,430,439],[1112,436,440]] },
+    { id: "pinkStrand", from: "violet", to: "pink", overlapFrom: 1.5, overlapTo: 5, knots: [
       [1196,216,219],[1240,215,229],[1280,218,246],[1320,231,274],[1360,265,306],[1400,304,336],
       [1440,334,358],[1480,354,374],[1520,365,384],[1560,371,388]] }
   ];
+
   var byId = {};
-  ribbons.forEach(function(r){ byId[r.id] = r; r.el = document.getElementById(r.id); });
+  mains.concat(strands).forEach(function(r){ byId[r.id] = r; r.el = document.getElementById(r.id); });
 
   function smooth(v){ v = Math.max(0, Math.min(1, v)); return v * v * (3 - 2 * v); }
 
@@ -155,47 +161,78 @@
   function wave(r, x, t){
     var ramp = smooth((x - r.x0) / 620);
     var a = 2 * Math.PI * (x / r.len - t / r.period) + r.phase;
-    return {
-      dy: r.amp * ramp * Math.sin(a),
-      grow: 1 + 0.12 * ramp * Math.sin(a * 0.7 + 1.3)
-    };
+    return { dy: r.amp * ramp * Math.sin(a), grow: 1 + 0.12 * ramp * Math.sin(a * 0.7 + 1.3) };
   }
 
-  // Catmull–Rom-käyrä pisteiden läpi Bézier-paloina.
-  function curve(pts, first){
-    var d = first ? "M" + pts[0][0].toFixed(1) + " " + pts[0][1].toFixed(1) : "L" + pts[0][0].toFixed(1) + " " + pts[0][1].toFixed(1);
+  // Pääkaistan reunat: { top: [[x, y]…], bottom: [[x, y]…] }.
+  function edges(r, t, still){
+    var top = [], bottom = [], last = r.knots.length - 1;
+    r.knots.forEach(function(k, i){
+      var w = still ? { dy: 0, grow: 1 } : wave(r, k[0], t);
+      var mid = (k[1] + k[2]) / 2, half = (k[2] - k[1]) / 2 * w.grow;
+      top.push([k[0], mid - half + w.dy]);
+      bottom.push([i === last && r.cap ? k[0] - r.cap : k[0], mid + half + w.dy]);
+    });
+    return { top: top, bottom: bottom };
+  }
+
+  // Catmull–Rom-kontrollipisteet pisteen i ja i+1 välille.
+  function ctrl(pts, i){
+    var p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+    return [[p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6],
+            [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6]];
+  }
+
+  // Reunan korkeus kohdassa x täsmälleen samaa käyrää pitkin kuin se piirretään.
+  function edgeY(pts, x){
     for (var i = 0; i < pts.length - 1; i++){
-      var p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
-      d += "C" + (p1[0] + (p2[0] - p0[0]) / 6).toFixed(1) + " " + (p1[1] + (p2[1] - p0[1]) / 6).toFixed(1) + " " +
-                 (p2[0] - (p3[0] - p1[0]) / 6).toFixed(1) + " " + (p2[1] - (p3[1] - p1[1]) / 6).toFixed(1) + " " +
-                 p2[0].toFixed(1) + " " + p2[1].toFixed(1);
+      var xa = pts[i][0], xb = pts[i + 1][0];
+      if ((x - xa) * (x - xb) <= 0){
+        var s = xb === xa ? 0 : (x - xa) / (xb - xa), m = 1 - s, c = ctrl(pts, i);
+        return m * m * m * pts[i][1] + 3 * m * m * s * c[0][1] + 3 * m * s * s * c[1][1] + s * s * s * pts[i + 1][1];
+      }
+    }
+    return x < pts[0][0] ? pts[0][1] : pts[pts.length - 1][1];
+  }
+
+  function curve(pts, cmd){
+    var d = cmd + pts[0][0].toFixed(1) + " " + pts[0][1].toFixed(1);
+    for (var i = 0; i < pts.length - 1; i++){
+      var c = ctrl(pts, i);
+      d += "C" + c[0][0].toFixed(1) + " " + c[0][1].toFixed(1) + " " + c[1][0].toFixed(1) + " " + c[1][1].toFixed(1) +
+           " " + pts[i + 1][0].toFixed(1) + " " + pts[i + 1][1].toFixed(1);
     }
     return d;
   }
 
+  function paint(r, e){
+    r.el.setAttribute("d", curve(e.top, "M") + curve(e.bottom.slice().reverse(), "L") + "Z");
+  }
+
+  mains.forEach(function(r){ r.rest = edges(r, 0, true); });
+
   function draw(t, still){
-    ribbons.forEach(function(r){
-      var top = [], bottom = [], last = r.knots.length - 1;
+    mains.forEach(function(r){ r.now = edges(r, t, still); paint(r, r.now); });
+    strands.forEach(function(r){
+      var F = byId[r.from], T = byId[r.to];
+      var last = r.knots.length - 1, xa = r.knots[0][0], xb = r.knots[last][0];
+      var top = [], bottom = [];
       r.knots.forEach(function(k, i){
-        var w = { dy: 0, grow: 1 };
-        if (!still && !r.from) w = wave(r, k[0], t);
-        if (!still && r.from){
-          var a = wave(byId[r.from], k[0], t), b = wave(byId[r.to], k[0], t), u = i / last;
-          w = { dy: a.dy + (b.dy - a.dy) * u, grow: a.grow + (b.grow - a.grow) * u };
-        }
-        var mid = (k[1] + k[2]) / 2, half = (k[2] - k[1]) / 2 * w.grow;
-        var bx = (i === last && r.cap) ? k[0] - r.cap : k[0];
-        top.push([k[0], mid - half + w.dy]);
-        bottom.push([bx, mid + half + w.dy]);
+        var x = k[0], u = (x - xa) / (xb - xa);
+        var sf = edgeY(F.now.bottom, x) - edgeY(F.rest.bottom, x);   // from-nauhan alareunan siirtymä
+        var st = edgeY(T.now.top, x) - edgeY(T.rest.top, x);         // to-nauhan yläreunan siirtymä
+        var shift = sf + (st - sf) * u;
+        top.push([x, k[1] + shift - (i === 0 ? r.overlapFrom : 0)]);
+        bottom.push([x, k[2] + shift + (i === last ? r.overlapTo : 0)]);
       });
-      r.el.setAttribute("d", curve(top, true) + curve(bottom.reverse(), false) + "Z");
+      paint(r, { top: top, bottom: bottom });
     });
   }
 
   var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (calm){ draw(0, true); return; }
 
-  // Alussa savu kasvaa ulos ahjosta vasemmalta oikealle, sitten aaltoilee.
+  // Alussa savu kasvaa ulos ahjosta pehmeällä reunalla, sitten aaltoilee.
   var fade = document.getElementById("revealFade");
   var GROW = 2200, start = null;
   function reveal(edge){                              // pehmeä reuna 160 yksikköä
@@ -206,13 +243,12 @@
     if (start === null) start = now;
     var ms = now - start;
     var g = Math.min(1, ms / GROW);
-    var eased = 1 - Math.pow(1 - g, 3);
-    reveal(600 + (1672 + 160 - 600) * eased);
+    reveal(600 + (1672 + 160 - 600) * (1 - Math.pow(1 - g, 3)));
     draw(ms / 1000, false);
     requestAnimationFrame(frame);
   }
-  draw(0, false);
   reveal(600);
+  draw(0, false);
   requestAnimationFrame(frame);
 })();
 </script>
