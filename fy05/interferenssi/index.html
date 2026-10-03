@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kahden aallon interferenssi · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ---------- */
+  :root{
+    --bg:#ffffff; --panel:#f8f8f6;
+    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
+    --line:#e4e4e0; --line-2:#cfcfca;
+    --accent:#2f6f9f; --accent-soft:#e7eff6;
+    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    font:14px/1.35 var(--font);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:clamp(212px,24vw,262px);background:var(--panel);border-left:1px solid var(--line);
+    padding:12px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 26px;padding:9px 18px 11px}
+  .group{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-2);white-space:nowrap}
+  .ctl-head > span:first-child{white-space:normal;min-width:0}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;margin:0;background:transparent;cursor:pointer;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:6px}
+  input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-7px;border-radius:50%;
+    background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  .chk{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;user-select:none;min-height:26px;white-space:nowrap}
+  .chk input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .btns{display:flex;gap:6px;flex-wrap:wrap}
+  .btn{font:inherit;font-size:13px;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    min-height:32px;padding:0 11px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:14px;height:14px;flex:none}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:13px;border:0;background:transparent;padding:0 12px;min-height:30px;color:var(--ink-2);cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  @media (max-height:500px),(max-width:700px){        /* pienet upotukset: tiiviimmät säätimet */
+    .panel{padding:8px 10px;gap:7px}
+    .app.is-bottom .panel{padding:6px 12px 8px;gap:5px 14px}
+    .group{gap:2px}
+    .ctl-head{font-size:12px}
+    input[type=range]{height:20px}
+    .btn{min-height:28px;padding:0 9px;font-size:12.5px}
+    .seg button{min-height:26px;padding:0 9px;font-size:12.5px}
+    .chk{min-height:21px;font-size:12.5px}
+  }
+  @media (max-aspect-ratio:4/5),(max-width:560px){
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1f2226}
+  .btn.wide{width:100%}
+  .btns .btn{flex:1 1 0}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  details.adv{font-size:13px;color:var(--ink-2)}
+  details.adv summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;min-height:26px;user-select:none}
+  details.adv summary::-webkit-details-marker{display:none}
+  details.adv summary::before{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s;margin:0 3px 0 2px}
+  details.adv[open] summary::before{transform:rotate(45deg)}
+  details.adv .ctl{margin-top:4px}
+  .linkbtn{font:inherit;font-size:12.5px;color:var(--accent);background:none;border:0;padding:2px 0;cursor:pointer;text-align:left}
+  .linkbtn:hover{text-decoration:underline}
+  .linkbtn[hidden]{display:none}
+  .key{display:inline-block;width:20px;height:10px;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:5px;top:4px;height:2px;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:1px;border-left:7px solid var(--c);border-top:4px solid transparent;border-bottom:4px solid transparent}
+  .legend{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:8px}
+  .legend[hidden]{display:none}
+  .scale{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-2)}
+  .scale i.bar{display:block;height:10px;flex:1;border-radius:3px;
+    background:linear-gradient(to right,#3d74a8,#f6f5f1 50%,#c65a46)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Kaksi pistelähdettä tuottaa ympyräaaltoja, jotka muodostavat interferenssikuvion. Kuvaa napauttamalla näkee pisteen etäisyydet lähteisiin."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <button class="btn primary wide" id="play" type="button"></button>
+    <div class="btns">
+      <button class="btn" id="reset" type="button" title="Aallot alkavat uudelleen lähteistä">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <button class="btn" id="slow" type="button" aria-pressed="false" title="Animaatio neljäsosanopeudella">Hidastus</button>
+    </div>
+
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Taajuus <span class="sym">f</span></span><b data-for="f"></b></span>
+        <input id="f" type="range" min="0.5" max="2" step="0.05" value="1" aria-label="Lähteiden taajuus"></label>
+      <label class="ctl"><span class="ctl-head"><span>Aallon nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
+        <input id="v" type="range" min="0.8" max="2" step="0.05" value="1" aria-label="Aallon nopeus"></label>
+      <label class="ctl"><span class="ctl-head"><span>Lähteiden etäisyys <span class="sym">d</span></span><b data-for="d"></b></span>
+        <input id="d" type="range" min="0.5" max="5" step="0.1" value="3" aria-label="Lähteiden välinen etäisyys"></label>
+      <label class="ctl"><span class="ctl-head"><span>Vaihe-ero <span class="sym">Δφ</span></span><b data-for="dp"></b></span>
+        <input id="dp" type="range" min="0" max="24" step="1" value="0" aria-label="Lähteiden välinen vaihe-ero"></label>
+    </div>
+
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="src" checked> Näytä lähteet</label>
+      <label class="chk"><input type="checkbox" id="fronts"> Näytä aaltorintamat</label>
+      <label class="chk"><input type="checkbox" id="nodes"> Näytä solmulinjat</label>
+      <label class="chk"><input type="checkbox" id="cond"> Näytä ehdot</label>
+    </div>
+    <div class="scale" aria-hidden="true"><span>−</span><i class="bar"></i><span>+</span></div>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    view.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    view.W = Math.max(1, r.width); view.H = Math.max(1, r.height);
+    cv.width = Math.round(view.W * view.dpr); cv.height = Math.round(view.H * view.dpr);
+    if (onResize) onResize(view);
+  };
+  new ResizeObserver(resize).observe(cv);
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: kahden koherentin pistelähteen interferenssi
+   Lähteet S₁ ja S₂ värähtelevät samalla taajuudella f; S₂:n vaihe on Δφ edellä.
+   Pisteessä P, jonka etäisyydet lähteisiin ovat s₁ ja s₂, poikkeama on aaltojen summa
+     u = A·sin(ωt − k·s₁) + A·sin(ωt − k·s₂ + Δφ),   ω = 2πf,  k = 2π/λ,  λ = v/f.
+   Kirjoitetaan u = A·[C·sin ωt + D·cos ωt], jolloin C ja D lasketaan kerran jokaiselle
+   kuvapisteelle ja animaatio vaatii vain kaksi kertolaskua pistettä kohti.
+   Vahvistava interferenssi: Δs = nλ, heikentävä: Δs = (n + ½)λ (kun Δφ = 0).
+   Aallot lähtevät liikkeelle hetkellä t = 0: kumpikin vaikuttaa vain alueella s < v·t.
+   ===================================================================== */
+const S = {
+  f: 1.0, v: 1.0, d: 3.0, k: 0,            // k = vaihe-ero π/12:n monikertoina
+  t: 0, th: 0, playing: true, slow: false,     // t = aika (aaltorintamat), th = ωt (vaihe integroidaan)
+  show: { src: true, fronts: false, nodes: false, cond: false },
+  P: null, hinted: false, drag: false,
+};
+const lam = () => S.v / S.f;
+const dphi = () => S.k * Math.PI / 12;
+function phaseText(k) {
+  if (k === 0) return '0';
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a), dd = gcd(k, 12), n = k / dd, m = 12 / dd;
+  return (n === 1 ? '' : n) + 'π' + (m === 1 ? '' : '/' + m);
+}
+
+/* ---------- kenttä hilassa ---------- */
+const CELL = 3;                                   // hilan solu, px
+let grid = null;                                  // {gw, gh, r1, r2, C1, D1, C2, D2}
+let off = document.createElement('canvas'), offCtx = off.getContext('2d'), img = null;
+
+/* Värikartta: negatiivinen poikkeama sininen, tasapainoasema vaalea, positiivinen lämmin. */
+const LUT = (() => {
+  const neg = [61, 116, 168], mid = [246, 245, 241], pos = [198, 90, 70], lut = new Uint8ClampedArray(256 * 3);
+  for (let i = 0; i < 256; i++) {
+    const u = i / 255 * 2 - 1, a = Math.pow(Math.abs(u), 0.85), c = u < 0 ? neg : pos;
+    for (let j = 0; j < 3; j++) lut[i * 3 + j] = mid[j] + (c[j] - mid[j]) * a;
+  }
+  return lut;
+})();
+
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 46, v.H / 36), 12, 16);
+  L = { W: v.W, H: v.H, fs, s: v.W / 12.5, sx: v.W * 0.3, sy: v.H / 2 };   // s = px/m, (sx, sy) = lähteiden keskipiste
+  buildGrid();
+});
+function toWorld(px, py) { return { x: (px - L.sx) / L.s, y: (L.sy - py) / L.s }; }
+function toScr(x, y) { return { x: L.sx + x * L.s, y: L.sy - y * L.s }; }
+function src1() { return { x: 0, y: S.d / 2 }; }        // S₁ ylempänä
+function src2() { return { x: 0, y: -S.d / 2 }; }       // S₂ alempana
+
+/** Etäisyydet lähteisiin jokaisesta hilan pisteestä (muuttuvat vain d:n tai koon muuttuessa). */
+function buildGrid() {
+  const gw = Math.ceil(L.W / CELL), gh = Math.ceil(L.H / CELL), n = gw * gh;
+  grid = { gw, gh, r1: new Float32Array(n), r2: new Float32Array(n),
+           C1: new Float32Array(n), D1: new Float32Array(n), C2: new Float32Array(n), D2: new Float32Array(n), rMax: 0 };
+  off.width = gw; off.height = gh; img = offCtx.createImageData(gw, gh);
+  for (let i = 3; i < img.data.length; i += 4) img.data[i] = 255;
+  buildDist();
+}
+function buildDist() {
+  const { gw, gh, r1, r2 } = grid, a = src1(), b = src2();
+  let rMax = 0;
+  for (let j = 0; j < gh; j++) for (let i = 0; i < gw; i++) {
+    const w = toWorld((i + 0.5) * CELL, (j + 0.5) * CELL), q = j * gw + i;
+    r1[q] = Math.hypot(w.x - a.x, w.y - a.y); r2[q] = Math.hypot(w.x - b.x, w.y - b.y);
+    rMax = Math.max(rMax, r1[q], r2[q]);
+  }
+  grid.rMax = rMax;
+  buildPhase();
+}
+/** sin(ωt − ks + φ) = sin ωt·cos(φ − ks) + cos ωt·sin(φ − ks)  →  C = cos(φ − ks), D = sin(φ − ks). */
+function buildPhase() {
+  const { r1, r2, C1, D1, C2, D2 } = grid, kk = 2 * Math.PI / lam(), p2 = dphi();
+  for (let q = 0; q < r1.length; q++) {
+    const a1 = -kk * r1[q], a2 = p2 - kk * r2[q];
+    C1[q] = Math.cos(a1); D1[q] = Math.sin(a1); C2[q] = Math.cos(a2); D2[q] = Math.sin(a2);
+  }
+}
+function renderField() {
+  const { r1, r2, C1, D1, C2, D2 } = grid, sw = Math.sin(S.th), cw = Math.cos(S.th);
+  const front = S.v * S.t, full = front > grid.rMax, data = img.data;
+  for (let q = 0, p = 0; q < r1.length; q++, p += 4) {
+    let u = 0;
+    if (full || r1[q] < front) u += C1[q] * sw + D1[q] * cw;
+    if (full || r2[q] < front) u += C2[q] * sw + D2[q] * cw;
+    const idx = ((u * 0.25 + 0.5) * 255) | 0;     // u ∈ [−2, 2] → 0…255
+    data[p] = LUT[idx * 3]; data[p + 1] = LUT[idx * 3 + 1]; data[p + 2] = LUT[idx * 3 + 2];
+  }
+  offCtx.putImageData(img, 0, 0);
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+function draw() {
+  const { ctx, dpr } = view, { H, fs, s } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  renderField();
+  ctx.imageSmoothingEnabled = true;
+  ctx.drawImage(off, 0, 0, grid.gw * CELL, grid.gh * CELL);
+
+  const A = toScr(0, S.d / 2), B = toScr(0, -S.d / 2), l = lam();
+  if (S.show.fronts) {                             // aallonharjat: S₁ yhtenäinen, S₂ katkoviiva
+    const front = S.v * S.t;
+    for (const [c, ph, dash] of [[A, 0, []], [B, dphi(), [5, 4]]]) {
+      // harja: ωt − ks + φ = π/2 + 2πn  →  s = (ωt + φ − π/2)/k − nλ
+      const s0 = (S.th + ph - Math.PI / 2) / (2 * Math.PI) * l;
+      ctx.strokeStyle = 'rgba(40,44,50,0.55)'; ctx.lineWidth = 1.2; ctx.setLineDash(dash);
+      for (let n = Math.floor((s0 - Math.min(front, grid.rMax)) / l); ; n++) {
+        const r = s0 - n * l;
+        if (r <= 0) break;
+        if (r > Math.min(front, grid.rMax)) continue;
+        ctx.beginPath(); ctx.arc(c.x, c.y, r * s, 0, 2 * Math.PI); ctx.stroke();
+      }
+      ctx.setLineDash([]);
+    }
+  }
+  if (S.show.nodes) drawNodal();
+
+  if (S.show.src) {
+    for (const [c, name] of [[A, '{S}_1'], [B, '{S}_2']]) {
+      ctx.fillStyle = '#fff'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(c.x, c.y, 5.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+      drawRich(ctx, name, c.x - 12, c.y, { size: fs, color: COL.ink, align: 'right', halo: true, weight: 600 });
+    }
+  }
+
+  // aallonpituuden mittajana
+  {
+    const x0 = 14, y0 = H - 16, len = l * s;
+    ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(x0, y0 - 5); ctx.lineTo(x0, y0); ctx.lineTo(x0 + len, y0); ctx.lineTo(x0 + len, y0 - 5); ctx.stroke();
+    drawRich(ctx, `λ = ${fmt(l, 2)}${NBSP}m`, x0 + len + 8, y0 - 2, { size: fs * 0.9, color: COL.ink, halo: true });
+  }
+
+  if (S.P) drawPoint(A, B);
+  else if (!S.hinted) drawRich(ctx, 'Napauta kuvaa: näet pisteen etäisyydet lähteisiin.', 14, fs * 1.1,
+    { size: fs * 0.85, color: COL.ink2, halo: true });
+  if (S.show.cond) drawConditions();
+}
+
+/** Solmulinjat: pisteet, joissa aallot ovat aina vastakkaisessa vaiheessa.
+    s₁ − s₂ = (m + ½ − Δφ/2π)·λ  →  hyperbelit, joiden polttopisteet ovat lähteissä. */
+function drawNodal() {
+  const { ctx } = view, { W } = L, l = lam(), c = S.d / 2;
+  ctx.strokeStyle = 'rgba(30,33,38,0.6)'; ctx.lineWidth = 1.3; ctx.setLineDash([6, 4]);
+  const xMin = toWorld(0, 0).x, xMax = toWorld(W, 0).x;
+  for (let m = -40; m <= 40; m++) {
+    const D = (m + 0.5 - dphi() / (2 * Math.PI)) * l;     // D = s₁ − s₂
+    if (Math.abs(D) >= S.d - 1e-6) continue;
+    const a = Math.abs(D) / 2, b = Math.sqrt(c * c - a * a), sg = D > 0 ? -1 : 1;   // s₁ > s₂ → lähempänä S₂:ta (alhaalla)
+    ctx.beginPath();
+    for (let i = 0; i <= 160; i++) {
+      const x = xMin + (xMax - xMin) * i / 160, y = sg * a * Math.sqrt(1 + (x * x) / (b * b));
+      const p = toScr(x, y);
+      if (i) ctx.lineTo(p.x, p.y); else ctx.moveTo(p.x, p.y);
+    }
+    ctx.stroke();
+  }
+  ctx.setLineDash([]);
+}
+
+function drawPoint(A, B) {
+  const { ctx } = view, { fs, W, H } = L, l = lam();
+  const p = toScr(S.P.x, S.P.y);
+  const s1 = Math.hypot(S.P.x, S.P.y - S.d / 2), s2 = Math.hypot(S.P.x, S.P.y + S.d / 2);
+  ctx.strokeStyle = 'rgba(30,33,38,0.85)'; ctx.lineWidth = 1.4;
+  ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+  ctx.setLineDash([5, 4]); ctx.beginPath(); ctx.moveTo(B.x, B.y); ctx.lineTo(p.x, p.y); ctx.stroke(); ctx.setLineDash([]);
+  drawRich(ctx, '{s}_1', (A.x + p.x) / 2, (A.y + p.y) / 2 - fs * 0.7, { size: fs * 0.95, color: COL.ink, align: 'center', halo: true });
+  drawRich(ctx, '{s}_2', (B.x + p.x) / 2, (B.y + p.y) / 2 + fs * 0.7, { size: fs * 0.95, color: COL.ink, align: 'center', halo: true });
+  ctx.fillStyle = '#fff'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  drawRich(ctx, '{P}', p.x + 9, p.y - 10, { size: fs * 0.9, color: COL.ink, halo: true, weight: 600 });
+
+  // lukemat laatikossa pisteen vieressä
+  const ds = Math.abs(s1 - s2), q = ds / l;
+  const rows = [
+    `{s}_1 = ${fmt(s1, 2)}${NBSP}m`,
+    `{s}_2 = ${fmt(s2, 2)}${NBSP}m`,
+    `Δ{s} = |{s}_1 ${MINUS} {s}_2| = ${fmt(ds, 2)}${NBSP}m = ${fmt(q, 2)}${NBSP}λ`,
+  ];
+  let verdict = null;
+  if (S.show.cond) {
+    // kokonaisvaihe-ero pisteessä: 2π(s₁ − s₂)/λ + Δφ (lähteiden vaihe-ero mukaan lukien)
+    const z = (s1 - s2) / l + dphi() / (2 * Math.PI), frac = Math.abs(z - Math.round(z));
+    if (frac < 0.08) verdict = ['vahvistava interferenssi', COL.red];
+    else if (Math.abs(frac - 0.5) < 0.08) verdict = ['heikentävä interferenssi', COL.blue];
+    else verdict = ['osittain vahvistava', COL.ink2];
+  }
+  const f = fs * 0.88, lh = f * 1.45;
+  const w = Math.max(...rows.map((r) => drawRich(ctx, r, 0, 0, { size: f, measure: true })),
+                     verdict ? drawRich(ctx, verdict[0], 0, 0, { size: f, measure: true, weight: 600 }) : 0) + 20;
+  const h = lh * (rows.length + (verdict ? 1 : 0)) + 10;
+  let bx = p.x + 16, by = p.y + 14;
+  if (bx + w > W - 6) bx = p.x - 16 - w;
+  if (by + h > H - 30) by = p.y - 14 - h;
+  bx = clamp(bx, 6, W - w - 6); by = clamp(by, 6, H - h - 6);
+  ctx.fillStyle = 'rgba(255,255,255,0.93)'; ctx.strokeStyle = COL.line2; ctx.lineWidth = 1;
+  roundRect(ctx, bx, by, w, h, 6); ctx.fill(); ctx.stroke();
+  rows.forEach((r, i) => drawRich(ctx, r, bx + 10, by + 5 + lh * (i + 0.5), { size: f, color: COL.ink }));
+  if (verdict) drawRich(ctx, verdict[0], bx + 10, by + 5 + lh * (rows.length + 0.5), { size: f, color: verdict[1], weight: 600 });
+}
+
+function drawConditions() {
+  const { ctx } = view, { fs, W } = L;
+  const f = fs * 0.9, lh = f * 1.5, rows = [
+    ['vahvistava:', 'Δ{s} = {n}λ'],
+    ['heikentävä:', 'Δ{s} = ({n} + ½)λ'],
+  ];
+  const w1 = Math.max(...rows.map((r) => drawRich(ctx, r[0], 0, 0, { size: f, measure: true, weight: 600 })));
+  const w2 = Math.max(...rows.map((r) => drawRich(ctx, r[1], 0, 0, { size: f, measure: true })));
+  const note = S.k ? 'kun lähteet ovat samassa vaiheessa' : '{n} = 0, 1, 2, …';
+  const wn = drawRich(ctx, note, 0, 0, { size: f * 0.85, measure: true });
+  const w = Math.max(w1 + w2 + 10, wn) + 20, h = lh * 3 + 8, bx = W - w - 10, by = 10;
+  ctx.fillStyle = 'rgba(255,255,255,0.93)'; ctx.strokeStyle = COL.line2; ctx.lineWidth = 1;
+  roundRect(ctx, bx, by, w, h, 6); ctx.fill(); ctx.stroke();
+  rows.forEach(([a, b], i) => {
+    const y = by + 4 + lh * (i + 0.5);
+    drawRich(ctx, a, bx + 10, y, { size: f, color: i ? COL.blue : COL.red, weight: 600 });
+    drawRich(ctx, b, bx + 18 + w1, y, { size: f, color: COL.ink });
+  });
+  drawRich(ctx, note, bx + 10, by + 4 + lh * 2.5, { size: f * 0.85, color: COL.ink2 });
+}
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+const playBtn = document.getElementById('play');
+const paintPlay = () => { playBtn.innerHTML = S.playing ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; };
+playBtn.addEventListener('click', () => { S.playing = !S.playing; paintPlay(); });
+document.getElementById('reset').addEventListener('click', () => { S.t = 0; S.th = 0; });
+const slowBtn = document.getElementById('slow');
+slowBtn.addEventListener('click', () => { S.slow = !S.slow; slowBtn.setAttribute('aria-pressed', String(S.slow)); });
+
+bindRange('f', (x) => fmt(x, 2) + NBSP + 'Hz', (x) => { S.f = x; buildPhase(); });
+bindRange('v', (x) => fmt(x, 2) + NBSP + 'm/s', (x) => { S.v = x; buildPhase(); });
+bindRange('d', (x) => fmt(x, 1) + NBSP + 'm', (x) => { S.d = x; buildDist(); });
+bindRange('dp', (k) => `${phaseText(k)} (${k * 15}°)`, (k) => { S.k = k; buildPhase(); });
+for (const id of ['src', 'fronts', 'nodes', 'cond']) {
+  const el = document.getElementById(id);
+  el.addEventListener('change', () => { S.show[id] = el.checked; });
+}
+
+function pos(e) { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+cv.addEventListener('pointerdown', (e) => {
+  const p = pos(e);
+  S.P = toWorld(p.x, p.y); S.hinted = true; S.drag = true;
+  cv.setPointerCapture(e.pointerId); e.preventDefault();
+});
+cv.addEventListener('pointermove', (e) => {
+  const p = pos(e);
+  if (S.drag) S.P = toWorld(clamp(p.x, 0, L.W), clamp(p.y, 0, L.H));
+  cv.style.cursor = 'crosshair';
+});
+const endDrag = () => { S.drag = false; };
+cv.addEventListener('pointerup', endDrag);
+cv.addEventListener('pointercancel', endDrag);
+
+paintPlay();
+startLoop({
+  dt: 1 / 240,
+  step: (dt) => {
+    const h = dt * (S.slow ? 0.25 : 1);
+    S.t += h;
+    S.th += 2 * Math.PI * S.f * h;               // vaihe ωt integroidaan: taajuuden muutos ei hypäytä kuviota
+  },
+  draw,
+  running: () => S.playing,
+});
+})();
+</script>
+</body>
+</html>

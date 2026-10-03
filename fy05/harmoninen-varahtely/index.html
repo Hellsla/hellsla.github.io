@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ympyräliike ja harmoninen värähtely · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ---------- */
+  :root{
+    --bg:#ffffff; --panel:#f8f8f6;
+    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
+    --line:#e4e4e0; --line-2:#cfcfca;
+    --accent:#2f6f9f; --accent-soft:#e7eff6;
+    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    font:14px/1.35 var(--font);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:clamp(212px,24vw,262px);background:var(--panel);border-left:1px solid var(--line);
+    padding:12px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 26px;padding:9px 18px 11px}
+  .group{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-2);white-space:nowrap}
+  .ctl-head > span:first-child{white-space:normal;min-width:0}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;margin:0;background:transparent;cursor:pointer;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:6px}
+  input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-7px;border-radius:50%;
+    background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  .chk{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;user-select:none;min-height:26px;white-space:nowrap}
+  .chk input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .btns{display:flex;gap:6px;flex-wrap:wrap}
+  .btn{font:inherit;font-size:13px;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    min-height:32px;padding:0 11px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:14px;height:14px;flex:none}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:13px;border:0;background:transparent;padding:0 12px;min-height:30px;color:var(--ink-2);cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  @media (max-height:500px),(max-width:700px){        /* pienet upotukset: tiiviimmät säätimet */
+    .panel{padding:8px 10px;gap:7px}
+    .app.is-bottom .panel{padding:6px 12px 8px;gap:5px 14px}
+    .group{gap:2px}
+    .ctl-head{font-size:12px}
+    input[type=range]{height:20px}
+    .btn{min-height:28px;padding:0 9px;font-size:12.5px}
+    .seg button{min-height:26px;padding:0 9px;font-size:12.5px}
+    .chk{min-height:21px;font-size:12.5px}
+  }
+  @media (max-aspect-ratio:4/5),(max-width:560px){
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1f2226}
+  .btn.wide{width:100%}
+  .btns .btn{flex:1 1 0}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  details.adv{font-size:13px;color:var(--ink-2)}
+  details.adv summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;min-height:26px;user-select:none}
+  details.adv summary::-webkit-details-marker{display:none}
+  details.adv summary::before{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s;margin:0 3px 0 2px}
+  details.adv[open] summary::before{transform:rotate(45deg)}
+  details.adv .ctl{margin-top:4px}
+  .linkbtn{font:inherit;font-size:12.5px;color:var(--accent);background:none;border:0;padding:2px 0;cursor:pointer;text-align:left}
+  .linkbtn:hover{text-decoration:underline}
+  .linkbtn[hidden]{display:none}
+  .key{display:inline-block;width:20px;height:10px;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:5px;top:4px;height:2px;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:1px;border-left:7px solid var(--c);border-top:4px solid transparent;border-bottom:4px solid transparent}
+  .legend{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:8px}
+  .legend[hidden]{display:none}
+  .chk.wrap{white-space:normal;align-items:flex-start;line-height:1.3}
+  .chk.wrap input{margin-top:1px}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Ylhäällä tasaisesti ympyrää kiertävä piste, sen alla vaakasuoralla suoralla värähtelevä projektiopiste ja alimpana reaaliaikaisesti piirtyvä paikan kuvaaja x(t), jossa aika kulkee alaspäin."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <button class="btn primary wide" id="play" type="button"></button>
+    <div class="btns">
+      <button class="btn" id="reset" type="button" title="Aika takaisin nollaan">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <button class="btn" id="slow" type="button" aria-pressed="false" title="Animaatio neljäsosanopeudella">Hidas liike</button>
+    </div>
+
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Amplitudi <span class="sym">A</span></span><b data-for="A"></b></span>
+        <input id="A" type="range" min="0.05" max="0.2" step="0.01" value="0.15" aria-label="Amplitudi"></label>
+      <label class="ctl"><span class="ctl-head"><span>Taajuus <span class="sym">f</span></span><b data-for="f"></b></span>
+        <input id="f" type="range" min="0.1" max="1" step="0.05" value="0.5" aria-label="Taajuus"></label>
+      <label class="ctl"><span class="ctl-head"><span>Vaihe <span class="sym">φ</span></span><b data-for="ph"></b></span>
+        <input id="ph" type="range" min="0" max="24" step="1" value="0" aria-label="Vaihekulma"></label>
+    </div>
+
+    <div class="group">
+      <label class="chk wrap"><input type="checkbox" id="link"> Näytä yhteys ympyräliikkeeseen</label>
+      <label class="chk"><input type="checkbox" id="formula"> Näytä kaava</label>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    view.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    view.W = Math.max(1, r.width); view.H = Math.max(1, r.height);
+    cv.width = Math.round(view.W * view.dpr); cv.height = Math.round(view.H * view.dpr);
+    if (onResize) onResize(view);
+  };
+  new ResizeObserver(resize).observe(cv);
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: tasaisen ympyräliikkeen projektio = harmoninen värähtely
+   Piste P kiertää r = A -säteistä ympyrää vastapäivään tasaisella kulmanopeudella ω = 2πf.
+   Kiertokulma hetkellä t: θ(t) = ωt + φ.
+   P:n projektio vaakasuoralle akselille: x(t) = A·cos(ωt + φ)  → harmoninen värähtely.
+   Kaikki kolme esitystä lasketaan samasta ajasta t, joten ne ovat täsmälleen tahdissa.
+   Kun A, f tai φ muuttuu, aika aloitetaan alusta (t = 0), jotta kaava pätee
+   piirrettyyn kuvaajaan sellaisenaan. Edellinen käyrä jää haaleaksi vertailukäyräksi.
+   ===================================================================== */
+const A_MAX = 0.20;            // suurin amplitudi, m (määrää mittakaavan)
+const T_WIN = 6;               // kuvaajan aikaikkuna, s
+const S = {
+  A: 0.15, f: 0.5, k: 0,       // k = vaihe π/12:n monikertoina (0…24)
+  t: 0, playing: true, slow: false,
+  ghost: null,                 // edellinen käyrä {A, f, ph, tEnd}
+  adjusting: false,
+  link: false, formula: false,
+};
+const phase = () => S.k * Math.PI / 12;
+const omega = () => 2 * Math.PI * S.f;
+const xAt = (t, A = S.A, f = S.f, ph = phase()) => A * Math.cos(2 * Math.PI * f * t + ph);
+
+/** φ murtolukuna: 0, π/12, π/6, π/4 … 2π */
+function phaseText(k) {
+  if (k === 0) return '0';
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a), d = gcd(k, 12), n = k / d, m = 12 / d;
+  return (n === 1 ? '' : n) + 'π' + (m === 1 ? '' : '/' + m);
+}
+
+/* =====================================================================
+   Asettelu: ympyrä ylhäällä, värähtelysuora keskellä, x(t)-kuvaaja alhaalla.
+   Kaikilla kolmella on sama vaakasuora mittakaava ja nollakohta, joten
+   pisteen P, projektiopisteen ja kuvaajan kynän x-koordinaatit ovat samat.
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, layout);
+function layout(v) {
+  const { W, H } = v;
+  const fs = clamp(Math.min(W / 46, H / 38), 11.5, 15.5);
+  const top = 12, band = fs * 3.6, gap = 8, tLab = fs * 1.9, bottom = 6;
+  const avail = H - top - band - 2 * gap - tLab - bottom;
+  const leftNeed = 14 + fs * 3.0, rightNeed = 20 + fs * 3.4;   // aika-akselin luvut vasemmalla, "x (m)" oikealla
+  const R = Math.max(36, Math.min(avail * 0.27, (W - leftNeed - rightNeed) / 2));   // suurimman amplitudin säde, px
+  const circleH = 2 * R + 10;
+  const graphTop = top + circleH + gap + band + gap;
+  const graphBot = H - tLab - bottom;
+  const formulaW = fs * 15;
+  // kuvio keskelle; jos kaavalle ei jää tilaa oikealle, siirretään kuviota vasemmalle
+  let cx = W / 2;
+  if (W - (cx + R + 20) < formulaW) cx = Math.max(R + leftNeed, W - formulaW - R - 30);
+  cx = Math.min(cx, W - R - rightNeed);
+  L = { W, H, fs, R, s: R / A_MAX, cx, cyCircle: top + 5 + R, yLine: top + circleH + gap + band * 0.42,
+        graphTop, graphBot, formulaX: cx + R + 28 };
+}
+const X = (x) => L.cx + x * L.s;                          // paikka x (m) → näytön x
+const Y = (t, t0) => L.graphTop + (t - t0) / T_WIN * (L.graphBot - L.graphTop);   // aika → näytön y
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs, cx, s } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const th = omega() * S.t + phase();
+  const x = S.A * Math.cos(th), y = S.A * Math.sin(th);
+  const Rnow = S.A * s, cyc = L.cyCircle;
+  const P = { x: cx + x * s, y: cyc - y * s };
+  const t0 = Math.max(0, S.t - T_WIN);                    // kuvaajan ikkunan alku (vierittyy)
+  const pen = { x: X(x), y: Y(S.t, t0) };
+
+  /* ---------- ympyrä ---------- */
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1;          // vaakasuora akseli ympyrän läpi
+  ctx.beginPath(); ctx.moveTo(X(-A_MAX) - 14, cyc); ctx.lineTo(X(A_MAX) + 14, cyc); ctx.stroke();
+  ctx.strokeStyle = COL.line2; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(cx, cyc, Rnow, 0, 2 * Math.PI); ctx.stroke();
+  ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(cx, cyc, 2.4, 0, 2 * Math.PI); ctx.fill();
+
+  if (S.link) {
+    // säde ja kiertokulma ωt + φ
+    ctx.strokeStyle = COL.blue; ctx.lineWidth = 1.4; ctx.globalAlpha = 0.8;
+    ctx.beginPath(); ctx.moveTo(cx, cyc); ctx.lineTo(P.x, P.y); ctx.stroke();
+    const thm = ((th % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+    const ra = Math.min(Rnow * 0.38, 26);
+    ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.arc(cx, cyc, ra, 0, -thm, true); ctx.stroke();
+    ctx.globalAlpha = 1;
+    const am = -thm / 2, lx = cx + Math.cos(am) * (ra + fs * 1.7), ly = cyc + Math.sin(am) * (ra + fs * 1.1);
+    if (thm > 0.35) drawRich(ctx, '{ω}{t} + {φ}', lx, ly, { size: fs * 0.82, color: COL.blue, align: 'center', halo: true });
+    // projektiolinja: P → akseli → värähtelysuora → kuvaajan kynä
+    ctx.strokeStyle = COL.ink2; ctx.lineWidth = 1.2; ctx.setLineDash([5, 4]);
+    ctx.beginPath(); ctx.moveTo(P.x, P.y); ctx.lineTo(pen.x, pen.y); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = COL.orange;                            // projektio ympyrän akselilla
+    ctx.beginPath(); ctx.arc(P.x, cyc, 3.6, 0, 2 * Math.PI); ctx.fill();
+  }
+  // kiertävä piste P
+  ctx.fillStyle = COL.blue; ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(P.x, P.y, 7, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+
+  /* ---------- värähtelysuora = x-akseli ---------- */
+  const yl = L.yLine;
+  ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.moveTo(X(-A_MAX) - 14, yl); ctx.lineTo(X(A_MAX) + 14, yl); ctx.stroke();
+  for (let k = -4; k <= 4; k++) {                          // asteikko 0,05 m välein
+    const xx = X(k * 0.05), big = k % 2 === 0;
+    ctx.beginPath(); ctx.moveTo(xx, yl - (big ? 5 : 3)); ctx.lineTo(xx, yl + (big ? 5 : 3)); ctx.stroke();
+    if (big) drawRich(ctx, fmt(k * 0.05, 1), xx, yl + fs * 1.05, { size: fs * 0.8, color: COL.ink2, align: 'center' });
+  }
+  drawRich(ctx, '{x} (m)', X(A_MAX) + 20, yl, { size: fs * 0.88, color: COL.ink2 });
+  // kääntöpisteet ±A
+  ctx.strokeStyle = COL.orange; ctx.lineWidth = 1.5; ctx.globalAlpha = 0.6;
+  for (const sg of [-1, 1]) { const xx = X(sg * S.A); ctx.beginPath(); ctx.moveTo(xx, yl - 9); ctx.lineTo(xx, yl - 3); ctx.stroke(); }
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = COL.orange; ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(X(x), yl, 7, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  if (S.formula) drawRich(ctx, `{x} = ${fmt(x, 2)}${NBSP}m`, X(x), yl - fs * 1.25, { size: fs * 0.85, color: COL.orange, align: 'center', halo: true });
+
+  /* ---------- x(t)-kuvaaja, aika kulkee alaspäin ---------- */
+  const gT = L.graphTop, gB = L.graphBot, gl = X(-A_MAX) - 14, gr = X(A_MAX) + 14;
+  ctx.strokeStyle = COL.line2; ctx.lineWidth = 1; ctx.setLineDash([3, 4]);   // tasapainoasema x = 0
+  ctx.beginPath(); ctx.moveTo(X(0), gT); ctx.lineTo(X(0), gB); ctx.stroke(); ctx.setLineDash([]);
+  ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.moveTo(gr, gT); ctx.lineTo(gl, gT); ctx.lineTo(gl, gB + 4); ctx.stroke();   // akselit
+  ctx.fillStyle = COL.ink;                                  // t-akselin nuolenkärki (alas)
+  ctx.beginPath(); ctx.moveTo(gl, gB + 10); ctx.lineTo(gl - 4, gB + 1); ctx.lineTo(gl + 4, gB + 1); ctx.closePath(); ctx.fill();
+  for (let tt = Math.ceil(t0); tt <= t0 + T_WIN + 1e-9; tt++) {        // aika-asteikko 1 s välein
+    const yy = Y(tt, t0);
+    ctx.beginPath(); ctx.moveTo(gl - 4, yy); ctx.lineTo(gl, yy); ctx.stroke();
+    if (yy > gT + fs * 0.6 || tt === 0) drawRich(ctx, String(tt), gl - 8, yy, { size: fs * 0.8, color: COL.ink2, align: 'right' });
+  }
+  drawRich(ctx, '{t} (s)', gl - 8, gB + fs * 1.1, { size: fs * 0.88, color: COL.ink2, align: 'right' });
+
+  ctx.save();
+  ctx.beginPath(); ctx.rect(gl, gT - 2, gr - gl + 2, gB - gT + 4); ctx.clip();
+  if (S.ghost) {                                            // edellinen käyrä vertailuksi
+    const gh = S.ghost;
+    curve(ctx, t0, Math.min(gh.tEnd, t0 + T_WIN), (t) => xAt(t, gh.A, gh.f, gh.ph), t0, '#c7cbd0', 1.6);
+  }
+  curve(ctx, t0, S.t, (t) => xAt(t), t0, COL.orange, 2.2);
+  ctx.restore();
+  ctx.fillStyle = COL.orange;                               // kuvaajan kynä
+  ctx.beginPath(); ctx.arc(pen.x, pen.y, 4, 0, 2 * Math.PI); ctx.fill();
+
+  if (S.formula) drawFormula();
+}
+/** Piirtää käyrän x(t) aikaväliltä [ta, tb] (analyyttinen → täsmälleen sama kuin animaatio). */
+function curve(ctx, ta, tb, fx, t0, color, width) {
+  if (tb <= ta) return;
+  const n = Math.max(2, Math.ceil((Y(tb, t0) - Y(ta, t0)) / 1.5));
+  ctx.strokeStyle = color; ctx.lineWidth = width; ctx.lineJoin = 'round';
+  ctx.beginPath();
+  for (let i = 0; i <= n; i++) {
+    const t = ta + (tb - ta) * i / n, px = X(fx(t)), py = Y(t, t0);
+    if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py);
+  }
+  ctx.stroke();
+}
+function drawFormula() {
+  const { ctx } = view, { fs, W } = L;
+  const f = fs * 0.95, lh = f * 1.6;
+  let x0 = L.formulaX, y = L.cyCircle - L.R * 0.75;
+  if (x0 + f * 13 > W) { x0 = 12; y = 14 + f * 0.6; }
+  drawRich(ctx, '{x}({t}) = {A} cos({ω}{t} + {φ})', x0, y, { size: f * 1.08, color: COL.ink, weight: 600, halo: true });
+  y += lh * 1.15;
+  const rows = [
+    `{A} = ${fmt(S.A, 2)}${NBSP}m`,
+    `{f} = ${fmt(S.f, 2)}${NBSP}Hz`,
+    `{T} = 1/{f} = ${fmt(1 / S.f, 2)}${NBSP}s`,
+    `{ω} = 2π{f} = ${fmt(omega(), 2)}${NBSP}rad/s`,
+    `{φ} = ${phaseText(S.k)}`,
+  ];
+  for (const r of rows) { drawRich(ctx, r, x0, y, { size: f, color: COL.ink2, halo: true }); y += lh; }
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+const playBtn = document.getElementById('play');
+const paintPlay = () => { playBtn.innerHTML = S.playing ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; };
+playBtn.addEventListener('click', () => { S.playing = !S.playing; paintPlay(); });
+document.getElementById('reset').addEventListener('click', () => { S.t = 0; S.ghost = null; });
+const slowBtn = document.getElementById('slow');
+slowBtn.addEventListener('click', () => { S.slow = !S.slow; slowBtn.setAttribute('aria-pressed', String(S.slow)); });
+
+/** Parametrin muutos: nykyinen käyrä talteen haamuksi ja aika alkuun. */
+function paramChanged() {
+  if (!S.adjusting) {
+    if (S.t > 0.3) S.ghost = { A: S.A0, f: S.f0, ph: S.ph0, tEnd: S.t };
+    S.adjusting = true;
+  }
+  S.t = 0;
+}
+function snapshot() { S.A0 = S.A; S.f0 = S.f; S.ph0 = phase(); }
+for (const id of ['A', 'f', 'ph']) {
+  document.getElementById(id).addEventListener('change', () => { S.adjusting = false; snapshot(); });
+}
+bindRange('A', (v) => fmt(v, 2) + NBSP + 'm', (v) => { paramChanged(); S.A = v; });
+bindRange('f', (v) => fmt(v, 2) + NBSP + 'Hz', (v) => { paramChanged(); S.f = v; });
+bindRange('ph', (k) => `${phaseText(k)} (${Math.round(k * 15)}°)`, (k) => { paramChanged(); S.k = k; });
+document.getElementById('link').addEventListener('change', (e) => { S.link = e.target.checked; });
+document.getElementById('formula').addEventListener('change', (e) => { S.formula = e.target.checked; });
+
+snapshot();
+paintPlay();
+startLoop({
+  dt: 1 / 240,
+  step: (dt) => { S.t += dt * (S.slow ? 0.25 : 1); },
+  draw,
+  running: () => S.playing && !S.adjusting,
+});
+})();
+</script>
+</body>
+</html>
