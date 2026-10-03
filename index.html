@@ -351,6 +351,14 @@
       line-height: 1.35;
     }
 
+    .credential-label a {
+      color: inherit;
+      border-bottom: 1px solid currentColor;
+      transition: color 180ms ease;
+    }
+
+    .credential-label a:hover { color: var(--accent-deep); }
+
     .credentials-note {
       grid-column: 1 / -1;
       margin: 2px 0 0;
@@ -1311,7 +1319,7 @@
 
         <div class="credential">
           <span class="credential-value">40+</span>
-          <span class="credential-label">Digital textbooks and learning materials for Studeo, e-Oppi and MFKA</span>
+          <span class="credential-label">Digital textbooks and learning materials for <a href="https://www.studeo.fi/" target="_blank" rel="noopener noreferrer">Studeo</a>, <a href="https://www.e-oppi.fi/" target="_blank" rel="noopener noreferrer">e-Oppi</a> and MFKA</span>
         </div>
 
         <div class="credential">
@@ -2054,8 +2062,28 @@
 
               <a class="item" href="https://slides.com/opetustv/geogebra-koulutus-k2025/fullscreen" target="_blank" rel="noopener noreferrer">
                 <div>
-                  <div class="item-title">GeoGebra training for teachers</div>
-                  <div class="item-sub">Dynamic geometry in the classroom · In-service training · Spring 2025</div>
+                  <div class="item-title">Dynamic geometry with GeoGebra</div>
+                  <div class="item-sub">My course at the University of Helsinki · Spring 2025</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://www.studeo.fi/" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">Studeo</div>
+                  <div class="item-sub">Digital textbooks and learning materials · Author</div>
+                </div>
+                <span class="item-arrow">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </a>
+
+              <a class="item" href="https://www.e-oppi.fi/" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="item-title">e-Oppi</div>
+                  <div class="item-sub">Digital textbooks and learning materials · Author</div>
                 </div>
                 <span class="item-arrow">
                   <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

@@ -482,6 +482,14 @@
       line-height: 1.4;
     }
 
+    .credential-label a {
+      color: inherit;
+      border-bottom: 1px solid currentColor;
+      transition: color 180ms ease;
+    }
+
+    .credential-label a:hover { color: var(--navy); }
+
     .credentials-note {
       grid-column: 1 / -1;
       margin: 4px 0 0;
@@ -1433,7 +1441,7 @@
 
         <div class="credential">
           <span class="credential-value">40+</span>
-          <span class="credential-label">Digital textbooks and learning materials for Studeo, e-Oppi and MFKA</span>
+          <span class="credential-label">Digital textbooks and learning materials for <a href="https://www.studeo.fi/" target="_blank" rel="noopener noreferrer">Studeo</a>, <a href="https://www.e-oppi.fi/" target="_blank" rel="noopener noreferrer">e-Oppi</a> and MFKA</span>
         </div>
 
         <div class="credential">
