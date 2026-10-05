@@ -102,7 +102,7 @@
 <body>
 <div class="app is-bottom">
   <div class="stage">
-    <canvas id="cv" role="img" aria-label="Pyörä alustalla. Pyörään kohdistuvan voiman vaikutuspistettä ja suuntaa voi raahata. Voiman momentti kosketuspisteen suhteen saa pyörän vierimään."></canvas>
+    <canvas id="cv" role="img" aria-label="Pyörä alustalla. Pyörään kohdistuvan voiman vaikutuspistettä ja suuntaa voi raahata. Voiman ja lepokitkan momentit painopisteen suhteen saavat pyörän vierimään; vertailupisteeksi voi valita myös kosketuspisteen."></canvas>
   </div>
 
   <div class="panel" aria-label="Säätimet">
@@ -120,8 +120,13 @@
         <button class="btn" id="reset" type="button" title="Pyörä takaisin alkuun">
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
       </div>
-      <label class="chk"><input type="checkbox" id="showMom" checked> Näytä momentti</label>
-      <label class="chk"><input type="checkbox" id="showForces"> Muut voimat</label>
+      <div class="grp"><span>Momentit</span>
+        <div class="seg" role="group" aria-label="Momenttien vertailupiste">
+          <button type="button" data-ref="cm" aria-pressed="true">painopiste</button><button type="button" data-ref="P" aria-pressed="false">kosketuspiste</button>
+        </div>
+      </div>
+      <label class="chk"><input type="checkbox" id="showMom" checked> Näytä momentit</label>
+      <label class="chk"><input type="checkbox" id="showForces"> Paino ja tukivoima</label>
       <label class="chk"><input type="checkbox" id="showVel"> Pisteiden nopeudet</label>
       <label class="chk"><input type="checkbox" id="showVal"> Näytä arvot</label>
     </div>
@@ -291,15 +296,20 @@ function startLoop({ dt, step, draw, running }) {
 
 /* =====================================================================
    Fysiikka: vieriminen ja voiman momentti
-   Alustalla lepäävään pyörään (umpinainen kiekko, I_cm = ½·m·r²) vaikuttaa voima F⃗
-   pisteessä A. Pyörä vierii luistamatta, joten se kiertyy hetkellisesti kosketus-
-   pisteen P ympäri. Voiman momentti P:n suhteen
-       M = F·d,   d = P:n etäisyys F:n vaikutussuorasta,
-   määrää, alkaako pyörä vieriä ja mihin suuntaan:
-       I_P·α = M,  I_P = I_cm + m·r² = 3/2·m·r²,  a = α·r.
-   Jos vaikutussuora kulkee P:n kautta (d = 0), momenttia ei ole eikä pyörä ala vieriä.
-   Paino ja tukivoima vaikuttavat P:n kautta kulkevilla suorilla, joten niillä ei ole
-   momenttia P:n suhteen. Kitkavoima vaikuttaa P:ssä: f = m·a − F_x (tarvittava lepokitka).
+   Alustalla lepäävään pyörään (umpinainen kiekko, I = ½·m·r²) vaikuttaa voima F⃗
+   pisteessä A. Pyörä vierii luistamatta. Liikettä voi tarkastella kahdella tavalla:
+
+   1) Momentit painopisteen C suhteen (oletus):
+        m·a = F_x + f                       (etenemisliike)
+        I·α = M_F + M_f,  M_F = F·d,  M_f = f·r   (pyörimisliike)
+      missä d on C:n etäisyys F:n vaikutussuorasta ja f lepokitka kosketuspisteessä P.
+      Painon ja tukivoiman vaikutussuorat kulkevat C:n kautta, joten niillä ei ole momenttia.
+      Jos F vaikuttaa akselin kautta (d = 0), pyörän pyörittää yksin kitkan momentti f·r.
+   2) Momentit kosketuspisteen P suhteen:
+        I_P·α = F·d_P,  I_P = I + m·r² = 3/2·m·r²
+      missä d_P on P:n etäisyys F:n vaikutussuorasta. Kitkalla ja tukivoimalla ei ole
+      momenttia P:n suhteen. Molemmat tavat antavat saman kulmakiihtyvyyden.
+   Vierimisehto a = α·r sitoo liikkeet toisiinsa; siitä seuraa f = m·a − F_x.
    ===================================================================== */
 const g = 9.81;
 const S = {
@@ -307,27 +317,35 @@ const S = {
   An: { x: 0, y: 1 },                   // vaikutuspiste keskipisteen suhteen, säteen yksiköissä (oletus: ylin piste)
   phi: 0,                               // voiman suunta, rad (0 = oikealle, y ylös)
   x: 0, om: 0, th: 0,                   // keskipisteen siirtymä (m), kulmanopeus (rad/s, myötäpäivään +), kiertokulma
+  ref: 'cm',                            // momenttien vertailupiste: 'cm' = painopiste, 'P' = kosketuspiste
   playing: false, out: false,
   show: { mom: true, forces: false, vel: false, val: false },
   drag: null, hover: null,
 };
 const unit = () => ({ x: Math.cos(S.phi), y: Math.sin(S.phi) });
-/** Momentti kosketuspisteen suhteen (myötäpäivään positiivinen): M = (y_A + r)·F_x − x_A·F_y. */
-function moment() {
-  const u = unit(), ax = S.An.x * S.r, ay = S.An.y * S.r;
-  return (ay + S.r) * S.F * u.x - ax * S.F * u.y;
+/** Momentti vertailupisteen suhteen (myötäpäivään positiivinen) voimalle F⃗ pisteessä (ax, ay). */
+const momentAbout = (ax, ay, Fx, Fy) => ay * Fx - ax * Fy;
+/** Kaikki liikkeen suureet nykyisessä tilanteessa. */
+function dynamics() {
+  const u = unit(), Fx = S.F * u.x, Fy = S.F * u.y, r = S.r;
+  const A = { x: S.An.x * r, y: S.An.y * r };
+  const MP = momentAbout(A.x, A.y + r, Fx, Fy);     // P:n suhteen (P = (0, −r) keskipisteestä)
+  const IP = 1.5 * S.m * r * r, alpha = MP / IP;    // kulmakiihtyvyys, myötäpäivään +
+  const a = alpha * r, f = S.m * a - Fx;            // vierimisehto → tarvittava lepokitka
+  const MF = momentAbout(A.x, A.y, Fx, Fy);         // F:n momentti painopisteen suhteen
+  const Mf = momentAbout(0, -r, f, 0);              // kitkan momentti painopisteen suhteen = −r·f
+  const N = Math.max(0, S.m * g - Fy);
+  return { u, A, MP, MF, Mf, alpha, a, f, N, I: 0.5 * S.m * r * r, IP };
 }
-/** Vaikutussuoran lähin piste kosketuspisteestä P (keskipisteen suhteen, m) ja momenttivarsi d. */
-function leverArm() {
-  const u = unit(), A = { x: S.An.x * S.r, y: S.An.y * S.r }, P = { x: 0, y: -S.r };
-  const t = (P.x - A.x) * u.x + (P.y - A.y) * u.y;
+/** Vaikutussuoran lähin piste O:sta (keskipisteen suhteen, m) ja etäisyys. */
+function leverArm(O) {
+  const u = unit(), A = { x: S.An.x * S.r, y: S.An.y * S.r };
+  const t = (O.x - A.x) * u.x + (O.y - A.y) * u.y;
   const Q = { x: A.x + t * u.x, y: A.y + t * u.y };
-  return { Q, d: Math.hypot(P.x - Q.x, P.y - Q.y) };
+  return { Q, d: Math.hypot(O.x - Q.x, O.y - Q.y) };
 }
 function step(dt) {
-  const I = 1.5 * S.m * S.r * S.r;       // hitausmomentti kosketuspisteen suhteen
-  const alpha = moment() / I;
-  S.om += alpha * dt;
+  S.om += dynamics().alpha * dt;
   S.th += S.om * dt;
   S.x += S.om * S.r * dt;               // vierimisehto: v = ω r
   const cx = L.x0 + S.x * L.s, R = S.r * L.s;
@@ -343,18 +361,134 @@ let L = {};
 const view = setupCanvas(cv, (v) => {
   const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
   const ground = v.H - fs * 2.7;
-  L = { W: v.W, H: v.H, fs, ground, s: Math.min(v.W / 4.2, (ground - 12) / 1.25), x0: v.W * 0.42, kF: 2.0 };   // s: px/m, kF: px/N
+  L = { W: v.W, H: v.H, fs, ground, s: Math.min(v.W / 5, (ground - 12) / 1.25), x0: v.W * 0.5, kF: 2.0 };   // s: px/m, kF: px/N
 });
+const turn = (M) => (M > 0.05 ? ' (myötäpäivään)' : M < -0.05 ? ' (vastapäivään)' : '');
+/** Momentin etumerkki: myötäpäivään positiivinen. */
+const signed = (M, d) => (Math.abs(M) < 0.05 ? fmt(0, d) : (M > 0 ? '+' : MINUS) + fmt(Math.abs(M), d));
 
 function draw() {
-  const { ctx, dpr } = view, { W, H, fs, s, ground, kF } = L;
+  const { ctx, dpr } = view, { W, fs, s, ground, kF } = L;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  ctx.clearRect(0, 0, W, H);
+  ctx.clearRect(0, 0, W, L.H);
   const r = S.r, R = r * s, cx = L.x0 + S.x * s, cy = ground - R;
   const C = (q) => ({ x: cx + q.x * s, y: cy - q.y * s });      // keskipisteen suhteen (m) → ruutu
-  const u = unit(), A = C({ x: S.An.x * r, y: S.An.y * r }), P = { x: cx, y: ground };
-  const M = moment(), { Q, d } = leverArm(), Qs = C(Q);
+  const D = dynamics(), u = D.u, A = C(D.A), P = { x: cx, y: ground };
+  const cm = S.ref === 'cm', val = S.show.val;
+  const us = { x: u.x, y: -u.y }, pn = { x: -u.y, y: -u.x };   // voiman suunta ja sen vasen normaali ruudulla
+  const len = S.F * kF, hd = Math.max(len, fs * 2.4);           // suuntakahva vähintään 2,4 em kärjestä
+  const tail = { x: A.x - us.x * hd, y: A.y - us.y * hd };
+  const fShown = (cm || S.show.forces) && Math.abs(D.f) > 0.3;
 
+  /* ---- nimiöiden sijoittelu: jokaiselle nimiölle ehdokaspaikat, joista valitaan ensimmäinen vapaa ---- */
+  const arcs = [];
+  const boxes = [{ x0: A.x - 8, x1: A.x + 8, y0: A.y - 8, y1: A.y + 8 }, { x0: tail.x - 7, x1: tail.x + 7, y0: tail.y - 7, y1: tail.y + 7 }];
+  const boxOf = (txt, size, c) => {
+    const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
+    const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
+    return { x0, x1: x0 + w, y0: c.y - h / 2, y1: c.y + h / 2 };
+  };
+  const clash = (b) => arcs.some((k) => arcHit(b, k)) || boxes.some((o) => o.x0 < b.x1 && b.x0 < o.x1 && o.y0 < b.y1 && b.y0 < o.y1);
+  const labels = [];
+  const label = (txt, size, color, cands) => {
+    let pick = cands[0];
+    for (const c of cands) { if (!clash(boxOf(txt, size, c))) { pick = c; break; } }
+    boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
+  };
+  const side = (sgn) => (sgn > 0 ? 'left' : 'right');
+
+  // momenttiyhtälöt vasemmassa yläkulmassa (arvot vain pyydettäessä); laatikko varataan ennen muita nimiöitä
+  const ef = fs * 0.95, elh = ef * 1.45;
+  const rows = !(S.show.mom || val) ? [] : cm ? [
+    [val ? `{M}_F = {F}{d} = ${signed(D.MF, 1)}${NBSP}Nm` : '{M}_F = {F}{d}', COL.red],
+    [val ? `{M}_f = {f}{r} = ${signed(D.Mf, 1)}${NBSP}Nm` : '{M}_f = {f}{r}', COL.orange],
+    [val ? `{α} = ({M}_F + {M}_f)/{I} = ${fmt(Math.abs(D.alpha), 2)}${NBSP}rad/s^2${turn(D.alpha)}` : '{I}{α} = {M}_F + {M}_f', COL.ink2],
+  ] : [
+    [val ? `{M} = {F}{d} = ${signed(D.MP, 1)}${NBSP}Nm` : '{M} = {F}{d}', COL.red],
+    [val ? `{α} = {M}/{I}_P = ${fmt(Math.abs(D.alpha), 2)}${NBSP}rad/s^2${turn(D.alpha)}` : '{I}_P{α} = {M}', COL.ink2],
+  ];
+  if (val) rows.push([`{v} = {ω}{r} = ${fmt(Math.abs(S.om * r), 2)}${NBSP}m/s`, COL.violet]);
+  if (rows.length) {
+    const ew = Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true })));
+    boxes.push({ x0: 14, x1: 14 + ew, y0: 14, y1: 14 + rows.length * elh });
+  }
+
+  // momenttivarret ja kaarinuolet: kaari alkaa momenttivarren suunnasta ja kiertää voiman suuntaan
+  let lever = null, fArc = null;
+  if (S.show.mom && S.F > 0) {
+    const O = cm ? { x: cx, y: cy } : P;                           // vertailupiste ruudulla
+    const { Q, d } = leverArm(cm ? { x: 0, y: 0 } : { x: 0, y: -r }), Qs = C(Q), M = cm ? D.MF : D.MP;
+    const aQ = Math.atan2(Qs.y - O.y, Qs.x - O.x);
+    lever = { O, Qs, d, M, arc: arcGeom(O.x, O.y, fs * 1.75, M, aQ, !cm) };   // P:n suhteen kaari pysyy alustan yläpuolella
+    if (lever.arc) arcs.push(lever.arc);
+  }
+  if (S.show.mom && cm && Math.abs(D.f) > 0.3) {
+    fArc = arcGeom(cx, cy, fs * 1.2, D.Mf, Math.PI / 2, false);    // kitkan momentin kaari alkaa P:n suunnasta
+    if (fArc) arcs.push(fArc);
+  }
+  const rPref = D.Mf > 0 ? 1 : -1;                                 // kitkan kaari kiertää vasemmalle, kun M_f myötäpäivään → r-nimiö oikealle
+
+  // 1) momenttivarren d nimiö kaaren vastakkaiselle puolelle vartta (myötäpäivään kiertävä kaari on varren oikealla puolella)
+  if (lever && lever.d > 0.01) {
+    const { O, Qs, d, M } = lever, ds = d * s;
+    const ax = (Qs.x - O.x) / ds, ay = (Qs.y - O.y) / ds, sg = M >= 0 ? 1 : -1, ox = sg * ay, oy = -sg * ax;
+    const txt = val ? `{d} = ${fmt(d, 2)}${NBSP}m` : '{d}', size = fs * 0.95, cands = [];
+    if (Math.abs(ox) >= 0.3) {                                     // pysty tai vino varsi: nimiö varren viereen
+      for (const sgn of [1, -1]) for (const t of [0.5, 0.3, 0.72]) cands.push({ x: O.x + ax * ds * t + sgn * ox * fs * 0.7, y: O.y + ay * ds * t + sgn * oy * fs * 0.7, align: side(sgn * ox) });
+    } else {                                                       // vaakavarsi: nimiö varren päälle/alle, päättyy ennen vaikutussuoraa
+      const w = drawRich(ctx, txt, 0, 0, { size, measure: true });
+      const c = ds - fs * 0.4 - w / 2, off = fs * (1.0 + (c - w / 2 < fs * 1.9 ? 0.8 : 0));
+      for (const sgn of [1, -1]) for (const [o2, c2] of [[off, c], [off, c - fs * 1.2], [off + fs, c]]) cands.push({ x: O.x + ax * c2 + sgn * ox * o2, y: O.y + ay * c2 + sgn * oy * o2, align: 'center' });
+    }
+    label(txt, size, COL.red, cands);
+  }
+  // 2) kitkan momenttivarren r nimiö
+  if (S.show.mom && cm && Math.abs(D.f) > 0.3) {
+    const cands = [];
+    for (const yy of [0.75, 0.5]) for (const sgn of [rPref, -rPref]) cands.push({ x: cx + sgn * fs * 0.6, y: cy + R * yy, align: side(sgn) });
+    label(val ? `{r} = ${fmt(r, 2)}${NBSP}m` : '{r}', fs * 0.95, COL.orange, cands);
+  }
+  // 3) voiman F nimiö kannan taakse vaikutussuoran sivuun
+  {
+    const al = pn.x < -0.3 ? 'right' : pn.x > 0.3 ? 'left' : 'center', cands = [];
+    for (const [back, sgn] of [[0.5, 1], [2.0, 1], [0.5, -1], [3.5, 1], [2.0, -1]]) {
+      cands.push({ x: tail.x - us.x * fs * back + sgn * pn.x * fs * 0.8, y: tail.y - us.y * fs * back + sgn * pn.y * fs * 0.8, align: sgn > 0 ? al : al === 'left' ? 'right' : al === 'right' ? 'left' : 'center' });
+    }
+    label(val ? `{->F} = ${fmt(S.F, 0)}${NBSP}N` : '{->F}', fs, COL.red, cands);
+  }
+  // 4) tukivoima, kitka, paino
+  if (S.show.forces) {
+    const cands = [];
+    for (const yy of [0.6, 2.2, 3.4]) for (const sgn of [-rPref, rPref]) cands.push({ x: P.x + sgn * fs * 0.6, y: ground - fs * yy, align: side(sgn) });
+    label(val ? `{->N} = ${fmt(D.N, 1)}${NBSP}N` : '{->N}', fs, COL.green, cands);
+  }
+  if (fShown) {
+    const fx = P.x + D.f * kF + Math.sign(D.f) * fs * 0.5, al = side(D.f);
+    label(val ? `{->f} = ${fmt(Math.abs(D.f), 1)}${NBSP}N` : '{->f}', fs, COL.orange,
+      [{ x: fx, y: P.y + fs * 0.9, align: al }, { x: fx, y: P.y + fs * 2.0, align: al }, { x: fx, y: P.y - fs * 0.9, align: al }]);
+  }
+  const gy = cy + S.m * g * kF;
+  if (S.show.forces) {
+    const txt = val ? `{->G} = ${fmt(S.m * g, 1)}${NBSP}N` : '{->G}';
+    if (gy > ground + fs * 0.6) {                                  // kärki alustan alla: nimiö alareunaan nuolen viereen
+      label(txt, fs, COL.blue, [{ x: cx + fs * 0.6, y: L.H - fs * 0.6, align: 'left' }, { x: cx - fs * 0.6, y: L.H - fs * 0.6, align: 'right' }]);
+    } else {
+      const yy = Math.min(gy - fs * 0.1, ground - fs * 1.7);
+      label(txt, fs, COL.blue, [{ x: cx - rPref * fs * 0.6, y: yy, align: side(-rPref) }, { x: cx + rPref * fs * 0.6, y: yy, align: side(rPref) }]);
+    }
+  }
+  // 5) pisteiden nopeudet vierittäessä: ylin 2v, keskipiste v, kosketuspiste 0
+  const vel = S.show.vel && Math.abs(S.om) > 0.05, v = S.om * r, kv = clamp(60 / Math.max(Math.abs(v), 0.5), 8, 30);   // keskipisteen nuoli enintään 60 px
+  if (vel) {
+    const sv = v >= 0 ? 1 : -1, zs = fShown && D.f < -0.3 ? 1 : -1;   // nollanimiö kitkan nimiön vastakkaiselle puolelle
+    label('{v}', fs, COL.violet, [{ x: cx + v * kv + sv * fs * 0.8, y: cy - fs * 0.2, align: 'center' }, { x: cx + v * kv + sv * fs * 0.3, y: cy - fs * 1.15, align: side(sv) }, { x: cx + v * kv + sv * fs * 0.3, y: cy + fs * 1.15, align: side(sv) }]);
+    label('2{v}', fs, COL.violet, [{ x: cx + 2 * v * kv + sv * fs * 1.1, y: cy - R - fs * 0.2, align: 'center' }, { x: cx + 2 * v * kv + sv * fs * 0.3, y: cy - R - fs * 1.15, align: side(sv) }, { x: cx + 2 * v * kv + sv * fs * 0.3, y: cy - R + fs * 1.15, align: side(sv) }]);
+    label('0', fs, COL.violet, [{ x: P.x + zs * fs * 0.6, y: P.y + fs * 0.8, align: side(zs) }, { x: P.x - zs * fs * 0.6, y: P.y + fs * 0.8, align: side(-zs) }, { x: P.x + zs * fs * 0.6, y: P.y - fs * 0.8, align: side(zs) }]);
+  }
+  // 6) kosketuspisteen nimi
+  label('P', fs * 0.85, COL.ink2, [{ x: P.x - fs * 0.5, y: P.y + fs * 1.95, align: 'right' }, { x: P.x + fs * 0.5, y: P.y + fs * 1.95, align: 'left' }, { x: P.x - fs * 0.5, y: P.y + fs * 0.9, align: 'right' }]);
+
+  /* ---- piirtäminen ---- */
   // alusta
   ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.6;
   ctx.beginPath(); ctx.moveTo(0, ground); ctx.lineTo(W, ground); ctx.stroke();
@@ -368,96 +502,83 @@ function draw() {
   ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.beginPath();
   for (let k = 0; k < 6; k++) { const a = S.th + k * Math.PI / 3; ctx.moveTo(cx, cy); ctx.lineTo(cx + R * Math.sin(a), cy + R * Math.cos(a)); }
   ctx.stroke();
-  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(cx, cy, 3.5, 0, 2 * Math.PI); ctx.fill();
 
-  // momentin havainnollistus: vaikutussuora, momenttivarsi d ja kaarinuoli P:ssä
-  if (S.show.mom && S.F > 0) {
-    const ext = 2 * R + fs * 2;
+  // vaikutussuora, momenttivarsi ja suoran kulman merkki
+  if (lever) {
+    const { O, Qs, d } = lever, ext = 2 * R + fs * 2;
     ctx.strokeStyle = COL.red; ctx.lineWidth = 1.2; ctx.setLineDash([5, 4]);
-    ctx.beginPath(); ctx.moveTo(A.x - u.x * ext, A.y + u.y * ext); ctx.lineTo(A.x + u.x * ext, A.y - u.y * ext); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(A.x - us.x * ext, A.y - us.y * ext); ctx.lineTo(A.x + us.x * ext, A.y + us.y * ext); ctx.stroke();
     ctx.setLineDash([]);
     if (d > 0.01) {
-      ctx.strokeStyle = COL.ink2; ctx.lineWidth = 1.4;
-      ctx.beginPath(); ctx.moveTo(P.x, P.y); ctx.lineTo(Qs.x, Qs.y); ctx.stroke();
-      // suoran kulman merkki Q:ssa
-      const nx = (P.x - Qs.x) / (d * s), ny = (P.y - Qs.y) / (d * s), q = 7;
-      ctx.beginPath(); ctx.moveTo(Qs.x + nx * q, Qs.y + ny * q); ctx.lineTo(Qs.x + nx * q + u.x * q, Qs.y + ny * q - u.y * q); ctx.lineTo(Qs.x + u.x * q, Qs.y - u.y * q); ctx.stroke();
-      // nimiö varren viereen (kohtisuoraan varresta poispäin)
-      const ox = -ny, oy = nx, mx = (P.x + Qs.x) / 2 + ox * fs * 0.7, my = (P.y + Qs.y) / 2 + oy * fs * 0.7;
-      drawRich(ctx, S.show.val ? `{d} = ${fmt(d, 2)}${NBSP}m` : '{d}', mx, my,
-        { size: fs * 0.95, color: COL.ink2, align: ox < -0.3 ? 'right' : ox > 0.3 ? 'left' : 'center', halo: true });
+      ctx.strokeStyle = COL.red; ctx.lineWidth = 1.4;
+      ctx.beginPath(); ctx.moveTo(O.x, O.y); ctx.lineTo(Qs.x, Qs.y); ctx.stroke();
+      const nx = (O.x - Qs.x) / (d * s), ny = (O.y - Qs.y) / (d * s), q = 7;
+      ctx.beginPath(); ctx.moveTo(Qs.x + nx * q, Qs.y + ny * q); ctx.lineTo(Qs.x + nx * q + us.x * q, Qs.y + ny * q + us.y * q); ctx.lineTo(Qs.x + us.x * q, Qs.y + us.y * q); ctx.stroke();
     }
-    torqueArc(P.x, P.y, fs * 1.7, Math.abs(M), M > 0, COL.red);
-    const mt = S.show.val ? `{M} = {F}{d} = ${fmt(Math.abs(M), 1)}${NBSP}Nm` : '{M} = {F}{d}';
-    const fits = P.x + fs * 2.1 + drawRich(ctx, mt, 0, 0, { size: fs, measure: true }) < W - 6;   // reunan lähellä nimiö P:n vasemmalle puolelle
-    drawRich(ctx, mt, P.x + (fits ? 1 : -1) * fs * 2.1, P.y + fs * 1.95, { size: fs, color: COL.red, align: fits ? 'left' : 'right', halo: true });
+    if (lever.arc) drawArc(lever.arc, COL.red);
   }
-  // kosketuspiste
-  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(P.x, P.y, 4, 0, 2 * Math.PI); ctx.fill();
-  drawRich(ctx, 'P', P.x - fs * 0.5, P.y + fs * 1.95, { size: fs * 0.85, color: COL.ink2, align: 'right', halo: true });
+  if (S.show.mom && cm && Math.abs(D.f) > 0.3) {                   // kitkan momenttivarsi painopisteestä kosketuspisteeseen
+    ctx.strokeStyle = COL.orange; ctx.lineWidth = 1.4; ctx.setLineDash([4, 4]);
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(P.x, P.y); ctx.stroke(); ctx.setLineDash([]);
+    if (fArc) drawArc(fArc, COL.orange);
+  }
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(cx, cy, 3.5, 0, 2 * Math.PI); ctx.fill();   // napa
+  ctx.beginPath(); ctx.arc(P.x, P.y, 4, 0, 2 * Math.PI); ctx.fill();                              // kosketuspiste
 
-  // muut voimat: paino, tukivoima ja kitka
+  // lepokitka kosketuspisteessä (painopistenäkymässä aina, muuten muiden voimien kanssa), paino ja tukivoima
+  if (fShown) arrow(ctx, P.x, P.y, P.x + D.f * kF, P.y, COL.orange, { width: 2.8 });
   if (S.show.forces) {
-    const Fy = S.F * u.y, N = Math.max(0, S.m * g - Fy);
-    const I = 1.5 * S.m * r * r, a = M / I * r, f = S.m * a - S.F * u.x;
-    arrow(ctx, cx, cy, cx, cy + S.m * g * kF, COL.blue, { width: 2.6 });
-    // G:n nimiö nuolen oikealla puolella: kärjen kohdalla tai viimeistään alustan tasolla
-    drawRich(ctx, S.show.val ? `{->G} = ${fmt(S.m * g, 1)}${NBSP}N` : '{->G}', cx + fs * 0.6, Math.min(cy + S.m * g * kF + fs * 0.2, ground - fs * 0.45), { size: fs, color: COL.blue, halo: true });
-    arrow(ctx, P.x, P.y, P.x, P.y - N * kF, COL.green, { width: 2.6 });
-    drawRich(ctx, S.show.val ? `{->N} = ${fmt(N, 1)}${NBSP}N` : '{->N}', P.x + fs * 0.6, P.y - Math.max(N * kF - fs * 0.35, fs * 1.6), { size: fs, color: COL.green, halo: true });
-    if (Math.abs(f) > 0.3) {                       // kitkan nimiö alustan alle nuolen kärjen kohdalle
-      arrow(ctx, P.x, P.y, P.x + f * kF, P.y, COL.orange, { width: 2.6 });
-      drawRich(ctx, S.show.val ? `{->f} = ${fmt(Math.abs(f), 1)}${NBSP}N` : '{->f}', P.x + f * kF + Math.sign(f) * fs * 0.5, P.y + fs * 0.9,
-        { size: fs, color: COL.orange, align: f > 0 ? 'left' : 'right', halo: true });
-    }
+    arrow(ctx, cx, cy, cx, gy, COL.blue, { width: 2.6 });
+    arrow(ctx, P.x, P.y, P.x, P.y - D.N * kF, COL.green, { width: 2.6 });
   }
-
-  // pisteiden nopeudet vierittäessä: ylin 2v, keskipiste v, kosketuspiste 0
-  if (S.show.vel && Math.abs(S.om) > 0.05) {
-    const v = S.om * r, kv = clamp(60 / Math.max(Math.abs(v), 0.5), 8, 30);   // keskipisteen nuoli enintään 60 px
+  if (vel) {
     arrow(ctx, cx, cy, cx + v * kv, cy, COL.violet, { width: 2.6 });
     arrow(ctx, cx, cy - R, cx + 2 * v * kv, cy - R, COL.violet, { width: 2.6 });
-    drawRich(ctx, '{v}', cx + v * kv + Math.sign(v) * fs * 0.8, cy - fs * 0.2, { size: fs, color: COL.violet, align: 'center', halo: true });
-    drawRich(ctx, '2{v}', cx + 2 * v * kv + Math.sign(v) * fs * 1.1, cy - R - fs * 0.2, { size: fs, color: COL.violet, align: 'center', halo: true });
     ctx.strokeStyle = COL.violet; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(P.x, P.y, 6, 0, 2 * Math.PI); ctx.stroke();
-    drawRich(ctx, '0', P.x - fs * 0.8, P.y - fs * 0.7, { size: fs, color: COL.violet, align: 'right', halo: true });
   }
 
   // voima F: nuoli kärki vaikutuspisteessä A; kärki ja kanta ovat raahattavia
-  const len = S.F * kF, hd = Math.max(len, fs * 2.4);              // suuntakahva vähintään 2,4 em kärjestä
-  const tail = { x: A.x - u.x * hd, y: A.y + u.y * hd };
   if (hd > len + 1) {                                             // ohut jatke kahvasta nuolen kantaan
     ctx.strokeStyle = COL.red; ctx.lineWidth = 1; ctx.globalAlpha = 0.5;
-    ctx.beginPath(); ctx.moveTo(tail.x, tail.y); ctx.lineTo(A.x - u.x * len, A.y + u.y * len); ctx.stroke(); ctx.globalAlpha = 1;
+    ctx.beginPath(); ctx.moveTo(tail.x, tail.y); ctx.lineTo(A.x - us.x * len, A.y - us.y * len); ctx.stroke(); ctx.globalAlpha = 1;
   }
-  if (S.F > 0) arrow(ctx, A.x - u.x * len, A.y + u.y * len, A.x, A.y, COL.red, { width: 3 });
-  drawRich(ctx, S.show.val ? `{->F} = ${fmt(S.F, 0)}${NBSP}N` : '{->F}', tail.x - u.x * fs * 0.9 - u.y * fs * 0.9, tail.y + u.y * fs * 0.9 - u.x * fs * 0.9,
-    { size: fs, color: COL.red, align: 'center', halo: true });
+  if (S.F > 0) arrow(ctx, A.x - us.x * len, A.y - us.y * len, A.x, A.y, COL.red, { width: 3 });
   const actTip = S.drag === 'tip' || S.hover === 'tip', actTail = S.drag === 'tail' || S.hover === 'tail';
   ctx.fillStyle = actTip ? COL.red : '#fff'; ctx.strokeStyle = COL.red; ctx.lineWidth = 2;
   ctx.beginPath(); ctx.arc(A.x, A.y, actTip ? 7 : 5.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
   ctx.fillStyle = actTail ? COL.red : '#fff'; ctx.globalAlpha = actTail ? 1 : 0.7;
   ctx.beginPath(); ctx.arc(tail.x, tail.y, actTail ? 6 : 4.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke(); ctx.globalAlpha = 1;
 
-  // lukemat
-  if (S.show.val) {
-    const f = fs * 0.95, lh = f * 1.45;
-    let y = 14 + f * 0.6;
-    for (const [t, c] of [
-      [`{M} = {F}{d} = ${fmt(Math.abs(M), 1)}${NBSP}Nm ${M > 0.05 ? '(myötäpäivään)' : M < -0.05 ? '(vastapäivään)' : ''}`, COL.red],
-      [`{α} = {M}/{I}_P = ${fmt(Math.abs(M) / (1.5 * S.m * r * r), 2)}${NBSP}rad/s^2`, COL.ink2],
-      [`{v} = {ω}{r} = ${fmt(Math.abs(S.om * r), 2)}${NBSP}m/s`, COL.violet],
-    ]) { drawRich(ctx, t, 14, y, { size: f, color: c, halo: true }); y += lh; }
-  }
+  // nimiöt päällimmäisiksi
+  for (const l of labels) drawRich(ctx, l.txt, l.c.x, l.c.y, { size: l.size, color: l.color, align: l.c.align, halo: true });
+  let ey = 14 + ef * 0.6;
+  for (const [t, c] of rows) { drawRich(ctx, t, 14, ey, { size: ef, color: c, halo: true }); ey += elh; }
   if (S.out) drawRich(ctx, 'Pyörä poistui kuvasta – paina Alusta', W - 14, 14 + fs * 0.6 + fs * 1.4, { size: fs * 0.9, color: COL.ink2, align: 'right', halo: true });
   drawRich(ctx, 'aika hidastettu 3-kertaisesti', W - 14, 14 + fs * 0.6, { size: fs * 0.78, color: COL.ink3, align: 'right', halo: true });
 }
-/** Kaarinuoli pisteen (x, y) ympäri; kaaren pituus ∝ momentti, suunta myötä- tai vastapäivään. */
-function torqueArc(x, y, R, M, cw, color) {
-  const { ctx } = view;
-  const sweep = Math.min(150, 7 * Math.abs(M)) * Math.PI / 180;
-  if (sweep < 0.05) return;
-  const a0 = -Math.PI / 2, a1 = a0 + (cw ? sweep : -sweep);
+/** Kaarinuolen geometria: alkaa kulmasta a0 (ruudun kulma) ja kiertää momentin suuntaan; pituus kasvaa momentin mukana.
+ *  aboveGround: kaarta lyhennetään niin, ettei se laskeudu keskipisteensä vaakatason alapuolelle (kosketuspisteen kaari). */
+function arcGeom(x, y, R, M, a0, aboveGround) {
+  if (Math.abs(M) < 0.05) return null;
+  const cw = M > 0;
+  let sweep = Math.min(135, 25 + 12 * Math.abs(M)) * Math.PI / 180;
+  if (aboveGround && a0 <= 0) sweep = Math.max(0.35, Math.min(sweep, cw ? -a0 : a0 + Math.PI));
+  return { x, y, R, a0, a1: a0 + (cw ? sweep : -sweep), cw, sweep };
+}
+/** Osuuko kaarinuoli laatikkoon? Näytepisteitä kaaren varrelta marginaalin m verran sisä- ja ulkopuolelta. */
+function arcHit(b, k, m = 6) {
+  const n = 16;
+  for (let i = 0; i <= n; i++) {
+    const a = k.a0 + (k.a1 - k.a0) * i / n;
+    for (const rr of [k.R - m, k.R, k.R + m]) {
+      const px = k.x + rr * Math.cos(a), py = k.y + rr * Math.sin(a);
+      if (px >= b.x0 && px <= b.x1 && py >= b.y0 && py <= b.y1) return true;
+    }
+  }
+  return false;
+}
+function drawArc(k, color) {
+  const { ctx } = view, { x, y, R, a0, a1, cw, sweep } = k;
   const headA = Math.min(sweep * 0.6, 10 / R);
   ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 2.2; ctx.lineCap = 'butt';
   ctx.beginPath(); ctx.arc(x, y, R, a0, a1 + (cw ? -headA : headA), !cw); ctx.stroke();
@@ -479,6 +600,10 @@ document.getElementById('reset').addEventListener('click', () => { resetMotion()
 bindRange('F', (x) => fmt(x, 0) + NBSP + 'N', (x) => { S.F = x; });
 bindRange('m', (x) => fmt(x, 1) + NBSP + 'kg', (x) => { S.m = x; });
 bindRange('r', (x) => fmt(x, 2) + NBSP + 'm', (x) => { S.r = x; resetMotion(); });
+document.querySelectorAll('[data-ref]').forEach((b) => b.addEventListener('click', () => {
+  S.ref = b.dataset.ref;
+  document.querySelectorAll('[data-ref]').forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+}));
 for (const [id, key] of [['showMom', 'mom'], ['showForces', 'forces'], ['showVel', 'vel'], ['showVal', 'val']]) {
   const el = document.getElementById(id);
   S.show[key] = el.checked;
