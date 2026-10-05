@@ -5,97 +5,91 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kahden aallon interferenssi · FY05</title>
 <style>
-  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ---------- */
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
   :root{
-    --bg:#ffffff; --panel:#f8f8f6;
-    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
-    --line:#e4e4e0; --line-2:#cfcfca;
-    --accent:#2f6f9f; --accent-soft:#e7eff6;
-    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
     --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
   }
   *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
   html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
-    font:14px/1.35 var(--font);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
   .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
   .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
   .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
   #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
     user-select:none;-webkit-user-select:none}
-  .panel{width:clamp(212px,24vw,262px);background:var(--panel);border-left:1px solid var(--line);
-    padding:12px 14px;display:flex;flex-direction:column;gap:10px;overflow:auto}
-  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
-    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 26px;padding:9px 18px 11px}
-  .group{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
   .ctl{display:flex;flex-direction:column;gap:0}
-  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--ink-2);white-space:nowrap}
-  .ctl-head > span:first-child{white-space:normal;min-width:0}
-  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
   .sym{font-style:italic}
   sub{font-size:.72em;line-height:0}
-  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;margin:0;background:transparent;cursor:pointer;--p:50%}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
   input[type=range]:focus{outline:none}
-  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:6px}
-  input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
     background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
-  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-7px;border-radius:50%;
-    background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:var(--line-2)}
-  input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:var(--accent)}
-  input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  .chk{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;user-select:none;min-height:26px;white-space:nowrap}
-  .chk input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
-  .btns{display:flex;gap:6px;flex-wrap:wrap}
-  .btn{font:inherit;font-size:13px;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;
-    min-height:32px;padding:0 11px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
     cursor:pointer;touch-action:manipulation;white-space:nowrap}
   .btn:hover{border-color:var(--ink-3)}
   .btn:active{background:#f1f1ee}
-  .btn svg{width:14px;height:14px;flex:none}
-  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#fff}
-  .seg button{font:inherit;font-size:13px;border:0;background:transparent;padding:0 12px;min-height:30px;color:var(--ink-2);cursor:pointer;touch-action:manipulation}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
   .seg button+button{border-left:1px solid var(--line-2)}
   .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
-  @media (max-height:500px),(max-width:700px){        /* pienet upotukset: tiiviimmät säätimet */
-    .panel{padding:8px 10px;gap:7px}
-    .app.is-bottom .panel{padding:6px 12px 8px;gap:5px 14px}
-    .group{gap:2px}
-    .ctl-head{font-size:12px}
-    input[type=range]{height:20px}
-    .btn{min-height:28px;padding:0 9px;font-size:12.5px}
-    .seg button{min-height:26px;padding:0 9px;font-size:12.5px}
-    .chk{min-height:21px;font-size:12.5px}
-  }
-  @media (max-aspect-ratio:4/5),(max-width:560px){
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
     html,body{overflow:auto}
     .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
     .stage{height:58vh;min-height:300px}
-    .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
   }
 
   /* ---------- tämän simulaation omat ---------- */
-  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
-  .btn.primary:hover{background:#1f2226}
-  .btn.wide{width:100%}
-  .btns .btn{flex:1 1 0}
-  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
-  details.adv{font-size:13px;color:var(--ink-2)}
-  details.adv summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;min-height:26px;user-select:none}
-  details.adv summary::-webkit-details-marker{display:none}
-  details.adv summary::before{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s;margin:0 3px 0 2px}
-  details.adv[open] summary::before{transform:rotate(45deg)}
-  details.adv .ctl{margin-top:4px}
-  .linkbtn{font:inherit;font-size:12.5px;color:var(--accent);background:none;border:0;padding:2px 0;cursor:pointer;text-align:left}
-  .linkbtn:hover{text-decoration:underline}
-  .linkbtn[hidden]{display:none}
-  .key{display:inline-block;width:20px;height:10px;flex:none;position:relative}
-  .key::before{content:"";position:absolute;left:0;right:5px;top:4px;height:2px;background:var(--c)}
-  .key::after{content:"";position:absolute;right:0;top:1px;border-left:7px solid var(--c);border-top:4px solid transparent;border-bottom:4px solid transparent}
-  .legend{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--ink-2)}
-  .legend span{display:flex;align-items:center;gap:8px}
-  .legend[hidden]{display:none}
-  .scale{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-2)}
-  .scale i.bar{display:block;height:10px;flex:1;border-radius:3px;
+  .scale{display:flex;align-items:center;gap:.5em;font-size:.85em;color:var(--ink-2)}
+  .scale i.bar{display:block;height:.7em;flex:1;border-radius:.2em;
     background:linear-gradient(to right,#3d74a8,#f6f5f1 50%,#c65a46)}
 </style>
 </head>
@@ -118,7 +112,7 @@
         <input id="f" type="range" min="0.5" max="2" step="0.05" value="1" aria-label="Lähteiden taajuus"></label>
       <label class="ctl"><span class="ctl-head"><span>Aallon nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
         <input id="v" type="range" min="0.8" max="2" step="0.05" value="1" aria-label="Aallon nopeus"></label>
-      <label class="ctl"><span class="ctl-head"><span>Lähteiden etäisyys <span class="sym">d</span></span><b data-for="d"></b></span>
+      <label class="ctl"><span class="ctl-head"><span>Lähteiden väli <span class="sym">d</span></span><b data-for="d"></b></span>
         <input id="d" type="range" min="0.5" max="5" step="0.1" value="3" aria-label="Lähteiden välinen etäisyys"></label>
       <label class="ctl"><span class="ctl-head"><span>Vaihe-ero <span class="sym">Δφ</span></span><b data-for="dp"></b></span>
         <input id="dp" type="range" min="0" max="24" step="1" value="0" aria-label="Lähteiden välinen vaihe-ero"></label>
@@ -235,17 +229,34 @@ function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
   ctx.beginPath(); ctx.moveTo(x2, y2);
   ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
 }
-/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta. */
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
 function setupCanvas(cv, onResize) {
-  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1 };
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
   const resize = () => {
     const r = cv.getBoundingClientRect();
-    view.dpr = Math.min(window.devicePixelRatio || 1, 2);
-    view.W = Math.max(1, r.width); view.H = Math.max(1, r.height);
-    cv.width = Math.round(view.W * view.dpr); cv.height = Math.round(view.H * view.dpr);
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
     if (onResize) onResize(view);
   };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
   new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
   resize();
   return view;
 }
@@ -303,7 +314,7 @@ function phaseText(k) {
 }
 
 /* ---------- kenttä hilassa ---------- */
-const CELL = 3;                                   // hilan solu, px
+const CELL = 2;                                   // hilan solu, px
 let grid = null;                                  // {gw, gh, r1, r2, C1, D1, C2, D2}
 let off = document.createElement('canvas'), offCtx = off.getContext('2d'), img = null;
 
@@ -320,7 +331,7 @@ const LUT = (() => {
 const cv = document.getElementById('cv');
 let L = {};
 const view = setupCanvas(cv, (v) => {
-  const fs = clamp(Math.min(v.W / 46, v.H / 36), 12, 16);
+  const fs = clamp(Math.min(v.W / 26, v.H / 20), 12, 18);
   L = { W: v.W, H: v.H, fs, s: v.W / 12.5, sx: v.W * 0.3, sy: v.H / 2 };   // s = px/m, (sx, sy) = lähteiden keskipiste
   buildGrid();
 });
@@ -415,8 +426,11 @@ function draw() {
   }
 
   if (S.P) drawPoint(A, B);
-  else if (!S.hinted) drawRich(ctx, 'Napauta kuvaa: näet pisteen etäisyydet lähteisiin.', 14, fs * 1.1,
-    { size: fs * 0.85, color: COL.ink2, halo: true });
+  else if (!S.hinted && !S.show.cond) {          // vihje näkyy, kunnes kuvaa on napautettu
+    const o = { size: fs * 0.85, color: COL.ink2, halo: true }, line = 'Napauta kuvaa: näet pisteen etäisyydet lähteisiin.';
+    if (drawRich(ctx, line, 0, 0, { ...o, measure: true }) < L.W - 28) drawRich(ctx, line, 14, fs * 1.1, o);
+    else { drawRich(ctx, 'Napauta kuvaa: näet pisteen', 14, fs * 1.1, o); drawRich(ctx, 'etäisyydet lähteisiin.', 14, fs * 2.25, o); }
+  }
   if (S.show.cond) drawConditions();
 }
 
@@ -530,7 +544,7 @@ for (const id of ['src', 'fronts', 'nodes', 'cond']) {
   el.addEventListener('change', () => { S.show[id] = el.checked; });
 }
 
-function pos(e) { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+const pos = (e) => view.pt(e);                 // osoitin loogisina pikseleinä
 cv.addEventListener('pointerdown', (e) => {
   const p = pos(e);
   S.P = toWorld(p.x, p.y); S.hinted = true; S.drag = true;
