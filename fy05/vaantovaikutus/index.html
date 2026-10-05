@@ -550,7 +550,10 @@ function drawBox() {
   const Nlen = B.th > 0 ? G * kF * Math.cos(B.th) : G * kF;
   if (Nlen > 2) {
     arrow(ctx, nx, ground, nx, ground - Nlen, COL.green, { width: 3 });
-    drawRich(ctx, S.showVal ? `{->N} = ${fmt(G, 1)}${NBSP}N` : '{->N}', nx - fs * 0.55, ground - Nlen + fs * 0.5, { size: fs, color: COL.green, align: 'right', halo: true });
+    // nimiö reunan P puolella, kun N on kaukana reunasta; muuten nuolen vasemmalla puolella
+    const right = B.th === 0 && dN > B.w / 4;
+    drawRich(ctx, S.showVal ? `{->N} = ${fmt(G, 1)}${NBSP}N` : '{->N}', nx + (right ? 1 : -1) * fs * 0.55, ground - Nlen + fs * 0.5,
+      { size: fs, color: COL.green, align: right ? 'left' : 'right', halo: true });
   }
   if (B.F > 0) arrow(ctx, Ap.x - B.F * kF, Ap.y, Ap.x, Ap.y, COL.red, { width: 3 });
   drawRich(ctx, S.showVal ? `{->F} = ${fmt(B.F, 0)}${NBSP}N` : '{->F}', Ap.x - B.F * kF - fs * 0.5, Ap.y - fs * 0.9, { size: fs, color: COL.red, align: 'right', halo: true });
