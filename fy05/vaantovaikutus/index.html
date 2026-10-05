@@ -101,13 +101,13 @@
 
   <div class="panel" aria-label="Säätimet">
     <div class="seg" role="group" aria-label="Tilanne">
-      <button type="button" data-scene="piste" aria-pressed="false">Piste</button><button type="button" data-scene="pallo" aria-pressed="false">Pallo</button><button type="button" data-scene="laatikko" aria-pressed="true">Laatikko</button>
+      <button type="button" data-scene="piste" aria-pressed="true">Piste</button><button type="button" data-scene="pallo" aria-pressed="false">Pallo</button><button type="button" data-scene="laatikko" aria-pressed="false">Laatikko</button>
     </div>
     <button class="btn primary wide" id="play" type="button"></button>
     <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
 
-    <div class="group" data-scene="piste" hidden>
+    <div class="group" data-scene="piste">
       <label class="ctl"><span class="ctl-head"><span>Massa <span class="sym">m</span></span><b data-for="ptM"></b></span>
         <input id="ptM" type="range" min="1" max="10" step="0.5" value="4" aria-label="Kappaleen massa"></label>
       <label class="chk"><input type="checkbox" id="ptSum"><span class="key" style="--c:var(--c-violet)"></span><span>Näytä Σ<i class="sym">F</i></span></label>
@@ -121,7 +121,7 @@
       <label class="chk"><input type="checkbox" id="bDist"> Painon jakauma</label>
     </div>
 
-    <div class="group" data-scene="laatikko">
+    <div class="group" data-scene="laatikko" hidden>
       <label class="ctl"><span class="ctl-head"><span>Voima <span class="sym">F</span></span><b data-for="xF"></b></span>
         <input id="xF" type="range" min="0" max="60" step="1" value="8" aria-label="Työntövoima"></label>
       <label class="ctl"><span class="ctl-head"><span>Massa <span class="sym">m</span></span><b data-for="xM"></b></span>
@@ -315,7 +315,7 @@ function startLoop({ dt, step, draw, running }) {
    ===================================================================== */
 const g = 9.81;
 const S = {
-  scene: 'laatikko', playing: false, showVal: false,
+  scene: 'piste', playing: false, showVal: false,
   pt: { m: 4, F: [{ x: -20, y: 0 }, { x: 0, y: -30 }, { x: 28, y: 28 }], pos: { x: 0, y: 0 }, vel: { x: 0, y: 0 }, trail: [], showSum: false, drag: -1, hover: -1, out: false },
   ball: { m: 0.2, k: 0.004, y: 0, v: 0, dist: false },
   box: { m: 5, w: 0.4, h: 1.0, F: 8, hF: 0.9, th: 0, om: 0, fallen: false, moments: false, dist: false, drag: false, hover: false },
