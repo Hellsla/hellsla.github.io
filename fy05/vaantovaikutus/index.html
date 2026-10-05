@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voiman vääntövaikutus · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .seg{align-self:stretch}
+  .seg button{flex:1 1 0;padding:0 .4em}
+  .group[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Kolme tilannetta: pistemäinen kappale, putoava pallo ja pöydällä seisova laatikko, johon kohdistuu voima. Voimien vektorit ja niiden vääntövaikutus."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <div class="seg" role="group" aria-label="Tilanne">
+      <button type="button" data-scene="piste" aria-pressed="false">Piste</button><button type="button" data-scene="pallo" aria-pressed="false">Pallo</button><button type="button" data-scene="laatikko" aria-pressed="true">Laatikko</button>
+    </div>
+    <button class="btn primary wide" id="play" type="button"></button>
+    <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+
+    <div class="group" data-scene="piste" hidden>
+      <label class="ctl"><span class="ctl-head"><span>Massa <span class="sym">m</span></span><b data-for="ptM"></b></span>
+        <input id="ptM" type="range" min="1" max="10" step="0.5" value="4" aria-label="Kappaleen massa"></label>
+      <label class="chk"><input type="checkbox" id="ptSum"><span class="key" style="--c:var(--c-violet)"></span><span>Näytä Σ<i class="sym">F</i></span></label>
+    </div>
+
+    <div class="group" data-scene="pallo" hidden>
+      <label class="ctl"><span class="ctl-head"><span>Massa <span class="sym">m</span></span><b data-for="bM"></b></span>
+        <input id="bM" type="range" min="0.05" max="1" step="0.05" value="0.2" aria-label="Pallon massa"></label>
+      <label class="ctl"><span class="ctl-head"><span>Ilmanvastus <span class="sym">k</span></span><b data-for="bK"></b></span>
+        <input id="bK" type="range" min="0.001" max="0.02" step="0.001" value="0.004" aria-label="Ilmanvastuskerroin"></label>
+      <label class="chk"><input type="checkbox" id="bDist"> Painon jakauma</label>
+    </div>
+
+    <div class="group" data-scene="laatikko">
+      <label class="ctl"><span class="ctl-head"><span>Voima <span class="sym">F</span></span><b data-for="xF"></b></span>
+        <input id="xF" type="range" min="0" max="60" step="1" value="8" aria-label="Työntövoima"></label>
+      <label class="ctl"><span class="ctl-head"><span>Massa <span class="sym">m</span></span><b data-for="xM"></b></span>
+        <input id="xM" type="range" min="1" max="10" step="0.5" value="5" aria-label="Laatikon massa"></label>
+      <label class="ctl"><span class="ctl-head"><span>Leveys <span class="sym">w</span></span><b data-for="xW"></b></span>
+        <input id="xW" type="range" min="0.2" max="0.8" step="0.05" value="0.4" aria-label="Laatikon leveys"></label>
+      <label class="chk"><input type="checkbox" id="xMom"> Näytä momentit</label>
+      <label class="chk"><input type="checkbox" id="xDist"> Painon jakauma</label>
+    </div>
+
+    <label class="chk"><input type="checkbox" id="showVal"> Näytä arvot</label>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: voiman vääntövaikutus – kolme tilannetta
+   1) Pistemäinen kappale: voimat vaikuttavat samaan pisteeseen, joten niillä ei ole
+      vääntövaikutusta; kappale saa kiihtyvyyden a⃗ = ΣF⃗ / m.
+   2) Putoava pallo: paino G = mg kohdistuu jokaiseen pallon pisteeseen ja sen
+      resultantti kulkee painopisteen kautta; ilmanvastus F_v = k·v² kulkee sekin
+      painopisteen kautta → ei vääntövaikutusta, pallo ei ala pyöriä.
+      Liikeyhtälö: m·a = mg − k·v²  → rajanopeus v_t = √(mg/k).
+   3) Laatikko pöydällä: paino G kohdistuu painopisteeseen, tukivoima N alapintaan
+      ja työntövoima F yhteen pisteeseen korkeudella h_F. Momentit kaatumisreunan P
+      (alaoikea kulma) suhteen: M_F = F·h_F kaataa, M_G = G·(w/2) pitää pystyssä.
+      Niin kauan kuin F·h_F < G·w/2, tukivoiman vaikutuspiste siirtyy kohti reunaa:
+      d_N = (G·w/2 − F·h_F)/G (momenttiehto P:n suhteen). Kun F·h_F > G·w/2,
+      laatikko alkaa kiertyä P:n ympäri: I_P·α = F·y_A + G·x_cm, missä I_P = m(w²+h²)/3.
+      Kitkan oletetaan estävän liukumisen.
+   ===================================================================== */
+const g = 9.81;
+const S = {
+  scene: 'laatikko', playing: false, showVal: false,
+  pt: { m: 4, F: [{ x: -20, y: 0 }, { x: 0, y: -30 }, { x: 28, y: 28 }], pos: { x: 0, y: 0 }, vel: { x: 0, y: 0 }, trail: [], showSum: false, drag: -1, hover: -1, out: false },
+  ball: { m: 0.2, k: 0.004, y: 0, v: 0, dist: false },
+  box: { m: 5, w: 0.4, h: 1.0, F: 8, hF: 0.9, th: 0, om: 0, fallen: false, moments: false, dist: false, drag: false, hover: false },
+};
+const sumF = () => S.pt.F.reduce((a, f) => ({ x: a.x + f.x, y: a.y + f.y }), { x: 0, y: 0 });
+
+/** Laatikon pisteen paikka kaatumisreunan P suhteen (m, y ylös), kun laatikko on kiertynyt kulman θ myötäpäivään. */
+function boxPt(bx, by) {
+  const c = Math.cos(S.box.th), s = Math.sin(S.box.th);
+  return { x: bx * c + by * s, y: -bx * s + by * c };
+}
+/** Kaatavan ja pystyssä pitävän momentin varret ja momentit P:n suhteen. */
+function boxMoments() {
+  const B = S.box, G = B.m * g;
+  const A = boxPt(-B.w, B.hF), cm = boxPt(-B.w / 2, B.h / 2);
+  return { G, dF: A.y, dG: -cm.x, MF: B.F * A.y, MG: G * -cm.x, A, cm };
+}
+
+function step(dt) {
+  if (S.scene === 'piste') {
+    const P = S.pt, F = sumF();
+    P.vel.x += F.x / P.m * dt; P.vel.y += F.y / P.m * dt;
+    P.pos.x += P.vel.x * dt; P.pos.y += P.vel.y * dt;
+    const last = P.trail[P.trail.length - 1];
+    if (!last || Math.hypot(P.pos.x - last.x, P.pos.y - last.y) > 0.05) P.trail.push({ ...P.pos });
+    const sc = L.pxm, px = L.cx + P.pos.x * sc, py = L.cy - P.pos.y * sc;
+    if (px < -20 || px > L.W + 20 || py < -20 || py > L.H + 20) { P.out = true; S.playing = false; paintPlay(); }
+  } else if (S.scene === 'pallo') {
+    const B = S.ball;
+    const a = g - B.k * B.v * B.v / B.m;          // m·a = mg − k·v²
+    B.v += a * dt; B.y += B.v * dt;
+  } else {
+    const B = S.box;
+    if (B.fallen) return;
+    const { G, MF, MG } = boxMoments();
+    const tau = MF - MG;                           // myötäpäivään positiivinen
+    if (B.th <= 0 && B.om <= 0 && tau <= 0) { B.th = 0; B.om = 0; return; }   // pysyy pöydällä
+    const I = B.m * (B.w * B.w + B.h * B.h) / 3;   // hitausmomentti kulman P suhteen
+    B.om += tau / I * dt;
+    B.th += B.om * dt;
+    if (B.th < 0) { B.th = 0; B.om = Math.abs(B.om) < 0.05 ? 0 : -0.2 * B.om; }   // palaa pöydälle
+    if (B.th >= Math.PI / 2) { B.th = Math.PI / 2; B.om = 0; B.fallen = true; S.playing = false; paintPlay(); }
+    void G;
+  }
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 26, v.H / 20), 12, 18);
+  L = { W: v.W, H: v.H, fs, cx: v.W / 2, cy: v.H / 2,
+        pxm: Math.min(v.W, v.H) / 9,                 // piste: px / m
+        kF: 2.2,                                     // piste: px / N
+        kB: clamp(Math.min(v.W, v.H) * 0.11, 24, 48), // pallon säde, px
+        pxb: clamp(v.H * 0.42, 60, 200),             // laatikko: px / m (korkeus 1 m)
+        ground: v.H * 0.8 };
+});
+
+function draw() {
+  const { ctx, dpr } = view, { W, H } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  if (S.scene === 'piste') drawPoint();
+  else if (S.scene === 'pallo') drawBall();
+  else drawBox();
+}
+
+/* ---------- 1) pistemäinen kappale ---------- */
+function drawPoint() {
+  const { ctx } = view, { W, H, fs, cx, cy, pxm, kF } = L, P = S.pt;
+  const ox = cx + P.pos.x * pxm, oy = cy - P.pos.y * pxm;
+  // rata
+  if (P.trail.length > 1) {
+    ctx.strokeStyle = COL.line2; ctx.lineWidth = 2; ctx.beginPath();
+    P.trail.forEach((p, i) => { const x = cx + p.x * pxm, y = cy - p.y * pxm; if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); });
+    ctx.lineTo(ox, oy); ctx.stroke();
+  }
+  const cols = [COL.blue, COL.green, COL.orange];
+  P.F.forEach((f, i) => {
+    const tx = ox + f.x * kF, ty = oy - f.y * kF, len = Math.hypot(f.x, f.y);
+    if (len > 0.5) arrow(ctx, ox, oy, tx, ty, cols[i], { width: 3 });
+    const ux = len ? f.x / len : 1, uy = len ? f.y / len : 0;
+    drawRich(ctx, S.showVal ? `{->F}_${i + 1} = ${fmt(len, 0)}${NBSP}N` : `{->F}_${i + 1}`, tx + ux * fs * 1.1 + (S.showVal ? ux * fs * 1.4 : 0), ty - uy * fs * 1.1,
+      { size: fs, color: cols[i], align: 'center', halo: true });
+    // raahattava kärki
+    const act = P.drag === i || P.hover === i;
+    ctx.fillStyle = act ? cols[i] : '#fff'; ctx.strokeStyle = cols[i]; ctx.lineWidth = 1.5; ctx.globalAlpha = act ? 1 : 0.6;
+    ctx.beginPath(); ctx.arc(tx, ty, act ? 7 : 5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke(); ctx.globalAlpha = 1;
+  });
+  if (P.showSum) {
+    const F = sumF(), len = Math.hypot(F.x, F.y);
+    ctx.setLineDash([6, 4]);
+    if (len > 0.5) arrow(ctx, ox, oy, ox + F.x * kF, oy - F.y * kF, COL.violet, { width: 2.6 });
+    ctx.setLineDash([]);
+    const ux = len ? F.x / len : 0, uy = len ? F.y / len : 1;
+    drawRich(ctx, S.showVal ? `Σ{->F} = ${fmt(len, 0)}${NBSP}N` : 'Σ{->F}', ox + F.x * kF + ux * fs * 1.3 + uy * fs * 0.9, oy - F.y * kF - uy * fs * 1.3 + ux * fs * 0.9,
+      { size: fs, color: COL.violet, align: 'center', halo: true });
+  }
+  ctx.fillStyle = COL.ink; ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(ox, oy, 7, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  if (S.showVal) {
+    const F = sumF(), len = Math.hypot(F.x, F.y), f = fs * 0.95;
+    drawRich(ctx, `{m} = ${fmt(P.m, 1)}${NBSP}kg`, 14, 14 + f * 0.6, { size: f, color: COL.ink2, halo: true });
+    drawRich(ctx, `{a} = Σ{F}/{m} = ${fmt(len / P.m, 2)}${NBSP}m/s^2`, 14, 14 + f * 2.05, { size: f, color: COL.violet, halo: true });
+    drawRich(ctx, `{v} = ${fmt(Math.hypot(P.vel.x, P.vel.y), 2)}${NBSP}m/s`, 14, 14 + f * 3.5, { size: f, color: COL.ink2, halo: true });
+  }
+  if (P.out) drawRich(ctx, 'Kappale poistui kuvasta – paina Alusta', W / 2, H - fs * 1.2, { size: fs * 0.9, color: COL.ink2, align: 'center', halo: true });
+}
+
+/* ---------- 2) putoava pallo ---------- */
+function drawBall() {
+  const { ctx } = view, { W, H, fs, cx, kB } = L, B = S.ball;
+  const cy = H * 0.5, pxm = 30;                     // kamera seuraa palloa; 30 px / m
+  // korkeusasteikko vasemmassa reunassa (1 m välein, liikkuu pallon pudotessa)
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(16, 0); ctx.lineTo(16, H); ctx.stroke();
+  const k0 = Math.floor(B.y - cy / pxm), k1 = Math.ceil(B.y + (H - cy) / pxm);
+  for (let k = Math.max(0, k0); k <= k1; k++) {
+    const y = cy + (k - B.y) * pxm;
+    ctx.beginPath(); ctx.moveTo(10, y); ctx.lineTo(22, y); ctx.stroke();
+    if (k % 5 === 0) drawRich(ctx, `${k}${NBSP}m`, 26, y, { size: fs * 0.75, color: COL.ink3 });
+  }
+  const G = B.m * g, Fv = B.k * B.v * B.v, LG = fs * 4.4;   // G:n nuolen pituus kiinteä, F_v suhteessa siihen
+  // pallo (sauma osoittaa, ettei pallo pyöri)
+  ctx.fillStyle = '#dfe3a2'; ctx.strokeStyle = '#9a9c5e'; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(cx, cy, kB, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  ctx.strokeStyle = '#fff'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.arc(cx - kB * 0.95, cy, kB * 0.9, -0.9, 0.9); ctx.stroke();
+  ctx.beginPath(); ctx.arc(cx + kB * 0.95, cy, kB * 0.9, Math.PI - 0.9, Math.PI + 0.9); ctx.stroke();
+  if (B.dist) {                                      // paino kohdistuu jokaiseen pisteeseen
+    ctx.globalAlpha = 0.75;
+    const st = kB / 3;
+    for (let x = -kB; x <= kB; x += st) for (let y = -kB; y <= kB; y += st) {
+      if (x * x + y * y > (kB - 6) * (kB - 6)) continue;
+      arrow(ctx, cx + x, cy + y, cx + x, cy + y + st * 0.75, COL.blue, { width: 1.4, head: 5 });
+    }
+    ctx.globalAlpha = 1;
+  }
+  arrow(ctx, cx, cy, cx, cy + LG, COL.blue, { width: 3 });
+  drawRich(ctx, S.showVal ? `{->G} = ${fmt(G, 2)}${NBSP}N` : '{->G}', cx + fs * 0.8, cy + LG - fs * 0.2, { size: fs, color: COL.blue, halo: true });
+  if (Fv > 0.01 * G) {
+    const Lv = LG * Fv / G;
+    arrow(ctx, cx, cy, cx, cy - Lv, COL.red, { width: 3 });
+    drawRich(ctx, S.showVal ? `{->F}_v = ${fmt(Fv, 2)}${NBSP}N` : '{->F}_v', cx + fs * 0.8, cy - Lv + fs * 0.2, { size: fs, color: COL.red, halo: true });
+  }
+  if (S.showVal) {
+    const f = fs * 0.95;
+    drawRich(ctx, `{v} = ${fmt(B.v, 1)}${NBSP}m/s`, W - 14, 14 + f * 0.6, { size: f, color: COL.ink, align: 'right', halo: true });
+    drawRich(ctx, `{v}_t = √({m}{g}/{k}) = ${fmt(Math.sqrt(G / B.k), 1)}${NBSP}m/s`, W - 14, 14 + f * 2.05, { size: f, color: COL.ink2, align: 'right', halo: true });
+  }
+  drawRich(ctx, 'aika hidastettu 2-kertaisesti', W - 14, H - 14, { size: fs * 0.78, color: COL.ink3, align: 'right' });
+}
+
+/* ---------- 3) laatikko pöydällä ---------- */
+function drawBox() {
+  const { ctx } = view, { W, fs, pxb, ground } = L, B = S.box;
+  const G = B.m * g, kF = pxb / 120;                // nuolet: 120 N = laatikon korkeus
+  const px = W * 0.5 + B.w * pxb / 2;              // kaatumisreunan P paikka ruudulla
+  const P2 = (q) => ({ x: px + q.x * pxb, y: ground - q.y * pxb });   // P:n suhteen (m) → ruutu
+  // pöytä
+  ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.6;
+  ctx.beginPath(); ctx.moveTo(W * 0.08, ground); ctx.lineTo(W * 0.92, ground); ctx.stroke();
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1; ctx.beginPath();
+  for (let x = W * 0.08; x < W * 0.92; x += 14) { ctx.moveTo(x, ground + 1); ctx.lineTo(x - 7, ground + 8); }
+  ctx.stroke();
+  // laatikko
+  const corners = [boxPt(-B.w, 0), boxPt(0, 0), boxPt(0, B.h), boxPt(-B.w, B.h)].map(P2);
+  ctx.fillStyle = '#e6d3b8'; ctx.strokeStyle = '#8c6d4b'; ctx.lineWidth = 1.6;
+  ctx.beginPath(); corners.forEach((c, i) => (i ? ctx.lineTo(c.x, c.y) : ctx.moveTo(c.x, c.y))); ctx.closePath(); ctx.fill(); ctx.stroke();
+  const { dF, dG, MF, MG, A, cm } = boxMoments();
+  const Acm = P2(cm), Ap = P2(A);
+  const dN = Math.max(0, (G * B.w / 2 - B.F * B.hF) / G);   // tukivoiman vaikutuspisteen etäisyys reunasta P
+
+  if (B.dist) {                                     // paino jokaisessa pisteessä, tukivoima alapinnan pisteissä
+    ctx.globalAlpha = 0.7;
+    const st = B.w / 4;
+    for (let bx = -B.w + st / 2; bx < 0; bx += st) for (let by = st / 2; by < B.h; by += st) {
+      const q = P2(boxPt(bx, by));
+      arrow(ctx, q.x, q.y, q.x, q.y + st * pxb * 0.6, COL.blue, { width: 1.3, head: 5 });
+    }
+    if (B.th === 0) {
+      // lineaarinen painejakauma, jonka resultantti on kohdassa d_N: puolisuunnikas tai kolmio
+      const uc = 1 - dN / B.w, n = 9;
+      for (let i = 0; i < n; i++) {
+        const u = (i + 0.5) / n;                    // 0 = vasen reuna, 1 = P
+        let q;
+        if (uc <= 2 / 3) q = (2 - 3 * uc) + (6 * uc - 3) * u;            // q / (G/w)
+        else { const b = 3 * (1 - uc); q = u < 1 - b ? 0 : (2 / b) * (u - (1 - b)) / b; }
+        if (q <= 0.02) continue;
+        const x = px - (1 - u) * B.w * pxb, len = clamp(q, 0, 4) * st * pxb * 0.5;
+        arrow(ctx, x, ground + len, x, ground + 1, COL.green, { width: 1.3, head: 5 });
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // momenttien havainnollistus: vaikutussuorat ja momenttivarret P:n suhteen
+  if (B.moments && !B.fallen) {
+    ctx.setLineDash([5, 4]); ctx.lineWidth = 1.2;
+    ctx.strokeStyle = COL.red;                      // F:n vaikutussuora (vaakasuora) ja varsi d_F
+    ctx.beginPath(); ctx.moveTo(Ap.x - B.F * kF - fs, Ap.y); ctx.lineTo(px + fs * 1.4, Ap.y); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.strokeStyle = COL.red; ctx.beginPath(); ctx.moveTo(px + fs * 0.9, ground); ctx.lineTo(px + fs * 0.9, Ap.y); ctx.stroke();
+    drawRich(ctx, S.showVal ? `{d}_F = ${fmt(dF, 2)}${NBSP}m` : '{d}_F', px + fs * 1.3, (ground + Ap.y) / 2, { size: fs * 0.9, color: COL.red, halo: true });
+    ctx.setLineDash([5, 4]);
+    ctx.strokeStyle = COL.blue;                     // G:n vaikutussuora (pystysuora) ja varsi d_G
+    ctx.beginPath(); ctx.moveTo(Acm.x, Acm.y); ctx.lineTo(Acm.x, ground + fs * 2.4); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(Acm.x, ground + fs * 2.0); ctx.lineTo(px, ground + fs * 2.0); ctx.stroke();
+    drawRich(ctx, S.showVal ? `{d}_G = ${fmt(dG, 2)}${NBSP}m` : '{d}_G', (Acm.x + px) / 2, ground + fs * 2.95, { size: fs * 0.9, color: COL.blue, align: 'center', halo: true });
+    // kaarinuoli P:ssä näyttää, kumpaan suuntaan momentit yhteensä kiertävät
+    const net = MF - MG;
+    torqueArc(px, ground, fs * 1.9, Math.abs(net), net > 0, net > 0 ? COL.red : COL.blue);
+    const f = fs * 0.95, lh = f * 1.45;
+    drawRich(ctx, S.showVal ? `{M}_F = {F}{d}_F = ${fmt(MF, 1)}${NBSP}Nm` : '{M}_F = {F}{d}_F', 14, 14 + f * 0.6, { size: f, color: COL.red, halo: true });
+    drawRich(ctx, S.showVal ? `{M}_G = {G}{d}_G = ${fmt(MG, 1)}${NBSP}Nm` : '{M}_G = {G}{d}_G', 14, 14 + f * 0.6 + lh, { size: f, color: COL.blue, halo: true });
+    drawRich(ctx, MF > MG ? '{M}_F > {M}_G' : '{M}_F < {M}_G', 14, 14 + f * 0.6 + 2 * lh, { size: f, color: MF > MG ? COL.red : COL.green, weight: 600, halo: true });
+  }
+
+  // kaatumisreuna
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(px, ground, 3.5, 0, 2 * Math.PI); ctx.fill();
+  if (B.moments) drawRich(ctx, 'P', px + fs * 0.35, ground + fs * 0.75, { size: fs * 0.85, color: COL.ink2, halo: true });
+
+  // voimat: G painopisteessä (nuoli jatkuu pöydän alle), N alapinnasta ylöspäin, F vaikutuspisteessä
+  arrow(ctx, Acm.x, Acm.y, Acm.x, Acm.y + G * kF, COL.blue, { width: 3 });
+  drawRich(ctx, S.showVal ? `{->G} = ${fmt(G, 1)}${NBSP}N` : '{->G}', Acm.x - fs * 0.6, Acm.y + G * kF - fs * 0.2, { size: fs, color: COL.blue, align: 'right', halo: true });
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(Acm.x, Acm.y, 3, 0, 2 * Math.PI); ctx.fill();
+  const nx = B.th === 0 ? px - dN * pxb : px;
+  const Nlen = B.th > 0 ? G * kF * Math.cos(B.th) : G * kF;
+  if (Nlen > 2) {
+    arrow(ctx, nx, ground, nx, ground - Nlen, COL.green, { width: 3 });
+    // nimiö reunan P puolella, kun N on kaukana reunasta; muuten nuolen vasemmalla puolella
+    const right = B.th === 0 && dN > B.w / 4;
+    drawRich(ctx, S.showVal ? `{->N} = ${fmt(G, 1)}${NBSP}N` : '{->N}', nx + (right ? 1 : -1) * fs * 0.55, ground - Nlen + fs * 0.5,
+      { size: fs, color: COL.green, align: right ? 'left' : 'right', halo: true });
+  }
+  if (B.F > 0) arrow(ctx, Ap.x - B.F * kF, Ap.y, Ap.x, Ap.y, COL.red, { width: 3 });
+  drawRich(ctx, S.showVal ? `{->F} = ${fmt(B.F, 0)}${NBSP}N` : '{->F}', Ap.x - B.F * kF - fs * 0.5, Ap.y - fs * 0.9, { size: fs, color: COL.red, align: 'right', halo: true });
+  // vaikutuspisteen kahva (raahattava, kun laatikko on pystyssä)
+  const act = B.drag || B.hover;
+  ctx.fillStyle = act ? COL.red : '#fff'; ctx.strokeStyle = COL.red; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.arc(Ap.x, Ap.y, act ? 7 : 5.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  if (B.th === 0 && !B.drag) {                      // vihje: ylös/alas
+    ctx.strokeStyle = COL.red; ctx.globalAlpha = act ? 0.9 : 0.4; ctx.lineWidth = 1.4;
+    for (const d of [-1, 1]) {
+      const ty = Ap.y + d * 14;
+      ctx.beginPath(); ctx.moveTo(Ap.x - 4, ty - d * 4); ctx.lineTo(Ap.x, ty); ctx.lineTo(Ap.x + 4, ty - d * 4); ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+  if (S.showVal) drawRich(ctx, `{h}_F = ${fmt(B.hF, 2)}${NBSP}m`, Ap.x - B.F * kF - fs * 0.5, Ap.y + fs * 0.95, { size: fs * 0.9, color: COL.red, align: 'right', halo: true });
+  if (B.fallen) drawRich(ctx, 'Laatikko kaatui – paina Alusta', 14, fs * 1.2, { size: fs * 0.9, color: COL.ink2, halo: true });
+}
+/** Kaarinuoli pisteen (x, y) ympäri; kaaren pituus ∝ momentti, suunta myötä- tai vastapäivään. */
+function torqueArc(x, y, R, M, cw, color) {
+  const { ctx } = view;
+  const sweep = Math.min(150, 5 * Math.abs(M)) * Math.PI / 180;
+  if (sweep < 0.05) return;
+  const a0 = -Math.PI / 2, a1 = a0 + (cw ? sweep : -sweep);
+  const headA = Math.min(sweep * 0.6, 10 / R);
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 2.2; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.arc(x, y, R, a0, a1 + (cw ? -headA : headA), !cw); ctx.stroke();
+  const ex = x + R * Math.cos(a1), ey = y + R * Math.sin(a1);
+  const tx = (cw ? -1 : 1) * Math.sin(a1), ty = (cw ? 1 : -1) * Math.cos(a1);
+  const bx = ex - tx * 10, by = ey - ty * 10;
+  ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(bx - ty * 5, by + tx * 5); ctx.lineTo(bx + ty * 5, by - tx * 5); ctx.closePath(); ctx.fill();
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+const playBtn = document.getElementById('play');
+function paintPlay() { playBtn.innerHTML = S.playing ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; }
+playBtn.addEventListener('click', () => {
+  if ((S.scene === 'piste' && S.pt.out) || (S.scene === 'laatikko' && S.box.fallen)) resetScene();
+  S.playing = !S.playing; paintPlay();
+});
+function resetScene() {
+  if (S.scene === 'piste') Object.assign(S.pt, { pos: { x: 0, y: 0 }, vel: { x: 0, y: 0 }, trail: [], out: false });
+  else if (S.scene === 'pallo') Object.assign(S.ball, { y: 0, v: 0 });
+  else Object.assign(S.box, { th: 0, om: 0, fallen: false });
+}
+document.getElementById('reset').addEventListener('click', () => { resetScene(); S.playing = false; paintPlay(); });
+
+document.querySelectorAll('[data-scene]').forEach((el) => {
+  if (el.tagName !== 'BUTTON') return;
+  el.addEventListener('click', () => {
+    S.scene = el.dataset.scene; S.playing = false; paintPlay(); resetScene();
+    document.querySelectorAll('button[data-scene]').forEach((b) => b.setAttribute('aria-pressed', String(b === el)));
+    document.querySelectorAll('.group[data-scene]').forEach((gp) => { gp.hidden = gp.dataset.scene !== S.scene; });
+  });
+});
+bindRange('ptM', (x) => fmt(x, 1) + NBSP + 'kg', (x) => { S.pt.m = x; });
+document.getElementById('ptSum').addEventListener('change', (e) => { S.pt.showSum = e.target.checked; });
+bindRange('bM', (x) => fmt(x, 2) + NBSP + 'kg', (x) => { S.ball.m = x; });
+bindRange('bK', (x) => fmt(x, 3) + NBSP + 'kg/m', (x) => { S.ball.k = x; });
+document.getElementById('bDist').addEventListener('change', (e) => { S.ball.dist = e.target.checked; });
+bindRange('xF', (x) => fmt(x, 0) + NBSP + 'N', (x) => { S.box.F = x; });
+bindRange('xM', (x) => fmt(x, 1) + NBSP + 'kg', (x) => { S.box.m = x; });
+bindRange('xW', (x) => fmt(x, 2) + NBSP + 'm', (x) => { S.box.w = x; });
+document.getElementById('xMom').addEventListener('change', (e) => { S.box.moments = e.target.checked; });
+document.getElementById('xDist').addEventListener('change', (e) => { S.box.dist = e.target.checked; });
+document.getElementById('showVal').addEventListener('change', (e) => { S.showVal = e.target.checked; });
+
+/* raahaus: pisteen voimien kärjet; laatikon voiman vaikutuspiste */
+const pos = (e) => view.pt(e);
+function hit(p) {
+  if (S.scene === 'piste') {
+    const P = S.pt, ox = L.cx + P.pos.x * L.pxm, oy = L.cy - P.pos.y * L.pxm;
+    let best = -1, bd = 18;
+    P.F.forEach((f, i) => { const d = Math.hypot(p.x - (ox + f.x * L.kF), p.y - (oy - f.y * L.kF)); if (d < bd) { bd = d; best = i; } });
+    return best;
+  }
+  if (S.scene === 'laatikko' && S.box.th === 0) {
+    const B = S.box, px = L.W * 0.5 + B.w * L.pxb / 2, Ap = { x: px - B.w * L.pxb, y: L.ground - B.hF * L.pxb };
+    return Math.hypot(p.x - Ap.x, p.y - Ap.y) < 20 ? 0 : -1;
+  }
+  return -1;
+}
+cv.addEventListener('pointerdown', (e) => {
+  const i = hit(pos(e));
+  if (i < 0) return;
+  if (S.scene === 'piste') S.pt.drag = i; else S.box.drag = true;
+  cv.setPointerCapture(e.pointerId); e.preventDefault();
+});
+cv.addEventListener('pointermove', (e) => {
+  const p = pos(e);
+  if (S.scene === 'piste' && S.pt.drag >= 0) {
+    const P = S.pt, ox = L.cx + P.pos.x * L.pxm, oy = L.cy - P.pos.y * L.pxm;
+    let fx = (p.x - ox) / L.kF, fy = (oy - p.y) / L.kF, len = Math.hypot(fx, fy);
+    if (len > 60) { fx *= 60 / len; fy *= 60 / len; }               // enintään 60 N
+    P.F[P.drag] = { x: Math.round(fx), y: Math.round(fy) };
+    return;
+  }
+  if (S.scene === 'laatikko' && S.box.drag) {
+    S.box.hF = clamp(Math.round((L.ground - p.y) / L.pxb * 20) / 20, 0.05, S.box.h - 0.05);   // 0,05 m välein
+    return;
+  }
+  const h = hit(p);
+  if (S.scene === 'piste') S.pt.hover = h; else S.box.hover = h >= 0;
+  cv.style.cursor = h >= 0 ? 'grab' : 'default';
+});
+const endDrag = () => { S.pt.drag = -1; S.box.drag = false; };
+cv.addEventListener('pointerup', endDrag);
+cv.addEventListener('pointercancel', endDrag);
+
+paintPlay();
+startLoop({ dt: 1 / 240, step: (dt) => step(S.scene === 'pallo' ? dt / 2 : dt), draw, running: () => S.playing });
+})();
+</script>
+</body>
+</html>
