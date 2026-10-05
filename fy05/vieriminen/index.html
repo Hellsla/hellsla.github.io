@@ -500,7 +500,7 @@ function draw() {
   ctx.fillStyle = 'rgba(240,241,238,0.92)'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 3;
   ctx.beginPath(); ctx.arc(cx, cy, R, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
   ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.beginPath();
-  for (let k = 0; k < 6; k++) { const a = S.th + k * Math.PI / 3; ctx.moveTo(cx, cy); ctx.lineTo(cx + R * Math.sin(a), cy + R * Math.cos(a)); }
+  for (let k = 0; k < 6; k++) { const a = S.th + k * Math.PI / 3; ctx.moveTo(cx, cy); ctx.lineTo(cx + R * Math.sin(a), cy - R * Math.cos(a)); }   // kulma myötäpäivään ylhäältä
   ctx.stroke();
 
   // vaikutussuora, momenttivarsi ja suoran kulman merkki
