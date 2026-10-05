@@ -6,80 +6,81 @@
 <title>Aalto langassa · FY05</title>
 <style>
   /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
-     Peruskoko seuraa ikkunan kokoa ja kaikki mitat ovat em-yksiköissä, joten koko
-     käyttöliittymä suurenee samassa suhteessa kuin näyttö (luokan näyttö, projektori). */
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
   :root{
-    --bg:#ffffff; --panel:#f8f8f6;
-    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
-    --line:#e4e4e0; --line-2:#cfcfca;
-    --accent:#2f6f9f; --accent-soft:#e7eff6;
-    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
     --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
   }
   *{box-sizing:border-box}
-  html{font-size:clamp(11px,min(1.9vw,3.1vh),36px)}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
   html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
     -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
-  body{font-family:var(--font);font-size:1rem;line-height:1.35}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
   .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
   .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
   .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
   #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
     user-select:none;-webkit-user-select:none}
-  .panel{width:15em;background:var(--panel);border-left:1px solid var(--line);
-    padding:.75em .85em;display:flex;flex-direction:column;gap:.6em;overflow:auto}
-  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
-    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5em 1.3em;padding:.55em 1.1em .65em}
-  .group{display:flex;flex-direction:column;gap:.35em;min-width:0}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
   .ctl{display:flex;flex-direction:column;gap:0}
-  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:.6em;font-size:.95em;color:var(--ink-2);white-space:nowrap}
-  .ctl-head > span:first-child{white-space:normal;min-width:0}
-  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
   .sym{font-style:italic}
   sub{font-size:.72em;line-height:0}
-  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.55em;margin:0;background:transparent;
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
     cursor:pointer;font-size:inherit;--p:50%}
   input[type=range]:focus{outline:none}
   input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
-  input[type=range]::-webkit-slider-runnable-track{height:.26em;border-radius:.2em;
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
     background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
-  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.15em;height:1.15em;margin-top:-.445em;border-radius:50%;
-    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  input[type=range]::-moz-range-track{height:.26em;border-radius:.2em;background:var(--line-2)}
-  input[type=range]::-moz-range-progress{height:.26em;border-radius:.2em;background:var(--accent)}
-  input[type=range]::-moz-range-thumb{width:1.05em;height:1.05em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  .chk{display:flex;align-items:center;gap:.5em;font-size:.95em;cursor:pointer;user-select:none;min-height:1.75em;white-space:nowrap}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
   .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
-  .chk.wrap{white-space:normal;align-items:flex-start;line-height:1.3}
+  .chk.wrap{white-space:normal;align-items:flex-start}
   .chk.wrap input{margin-top:.1em}
-  .btns{display:flex;gap:.4em;flex-wrap:wrap}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
   .btns .btn{flex:1 1 0}
-  .btn{font:inherit;font-size:.95em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.4em;
-    min-height:2.15em;padding:0 .75em;border-radius:.55em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
     cursor:pointer;touch-action:manipulation;white-space:nowrap}
   .btn:hover{border-color:var(--ink-3)}
   .btn:active{background:#f1f1ee}
   .btn svg{width:1em;height:1em;flex:none}
   .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
-  .btn.primary:hover{background:#1f2226}
+  .btn.primary:hover{background:#1c1f23}
   .btn.wide{width:100%}
   .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
   .btn:disabled{opacity:.45;cursor:default}
-  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.55em;overflow:hidden;background:#fff}
-  .seg button{font:inherit;font-size:.95em;border:0;background:transparent;padding:0 .8em;min-height:2.05em;color:var(--ink-2);
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
     cursor:pointer;touch-action:manipulation}
   .seg button+button{border-left:1px solid var(--line-2)}
   .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
   .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
-  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .07em);height:.14em;background:var(--c)}
-  .key::after{content:"";position:absolute;right:0;top:calc(50% - .28em);border-left:.5em solid var(--c);
-    border-top:.28em solid transparent;border-bottom:.28em solid transparent}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
   .key.none{visibility:hidden}
-  .legend{display:flex;flex-direction:column;gap:.2em;font-size:.9em;color:var(--ink-2)}
-  .legend span{display:flex;align-items:center;gap:.55em}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
   .legend[hidden]{display:none}
   @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
-    html{font-size:clamp(13px,3.7vw,18px)}
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
     html,body{overflow:auto}
     .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
     .stage{height:58vh;min-height:300px}
@@ -107,10 +108,10 @@
   <div class="panel" aria-label="Säätimet">
     <div class="sliders">
       <label class="ctl"><span class="ctl-head"><span>Amplitudi <span class="sym">A</span></span><b data-for="A"></b></span>
-        <input id="A" type="range" min="0.05" max="0.4" step="0.01" value="0.2" aria-label="Amplitudi"></label>
+        <input id="A" type="range" min="0.05" max="0.3" step="0.01" value="0.2" aria-label="Amplitudi"></label>
       <label class="ctl"><span class="ctl-head"><span>Taajuus <span class="sym">f</span></span><b data-for="f"></b></span>
         <input id="f" type="range" min="0.2" max="3" step="0.1" value="1" aria-label="Taajuus"></label>
-      <label class="ctl"><span class="ctl-head"><span>Aallon nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
+      <label class="ctl"><span class="ctl-head"><span>Nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
         <input id="v" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Aallon etenemisnopeus"></label>
     </div>
     <div class="row">
@@ -122,18 +123,19 @@
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
         <button class="btn" id="slow" type="button" aria-pressed="false" title="Animaatio neljäsosanopeudella">Hidastus</button>
       </div>
+      <label class="chk"><input type="checkbox" id="lam"> Näytä λ ja <span class="sym">T</span></label>
+    </div>
+    <div class="row">
       <div class="grp"><span>Lähde</span>
         <div class="seg" role="group" aria-label="Lähteen värähtely">
-          <button type="button" data-src="cont" aria-pressed="true">Jatkuva</button><button type="button" data-src="pulse" aria-pressed="false">Pulssi</button>
+          <button type="button" data-src="cont" aria-pressed="true">Jatkuva</button><button type="button" data-src="pulse" aria-pressed="false">Lähetä pulssi</button>
         </div>
-        <button class="btn" id="pulse" type="button" disabled>Lähetä pulssi</button>
       </div>
       <div class="grp"><span>Oikea pää</span>
         <div class="seg" role="group" aria-label="Langan oikea pää">
           <button type="button" data-end="open" aria-pressed="true">Avoin</button><button type="button" data-end="fixed" aria-pressed="false">Kiinteä</button><button type="button" data-end="free" aria-pressed="false">Vapaa</button>
         </div>
       </div>
-      <label class="chk"><input type="checkbox" id="lam"> Näytä λ ja <span class="sym">T</span></label>
     </div>
   </div>
 </div>
@@ -239,15 +241,24 @@ function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
   ctx.beginPath(); ctx.moveTo(x2, y2);
   ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
 }
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
 /** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
     Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
-    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa. */
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
 function setupCanvas(cv, onResize) {
   const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
   const resize = () => {
     const r = cv.getBoundingClientRect();
     const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
-    const dev = Math.min(window.devicePixelRatio || 1, 2);
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
     view.u = base / 15;
     view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
     view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
@@ -322,7 +333,7 @@ const fAt = (i) => F[mod(i - S.n, M)];
 const gAt = (i) => Gb[mod(i + S.n, M)];
 const yAt = (i) => fAt(i) + gAt(i);
 const R_END = { open: 0, fixed: -1, free: 1 };
-const YR = 0.85, YR2 = 0.9, YR3 = 1.0;        // pystysuuntainen piirtoalue (m): 2·A_max mahtuu
+const YR = 0.66, YR2 = 0.72, YR3 = 0.8;        // pystysuuntainen piirtoalue (m): 2·A_max mahtuu
 
 /** Lähteen poikkeama tällä hetkellä. Vaihe integroidaan, joten taajuuden muutos ei aiheuta hyppyä. */
 function source(dt) {
@@ -357,7 +368,7 @@ function resetString() { F.fill(0); Gb.fill(0); S.n = 0; S.t = 0; S.acc = 0; S.s
 const cv = document.getElementById('cv');
 let L = {};
 const view = setupCanvas(cv, (v) => {
-  const fs = clamp(Math.min(v.W / 40, v.H / 22), 12, 18);
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
   let x0 = Math.max(46, v.W * 0.06), x1 = v.W - Math.max(64, v.W * 0.075);
   // sama mittakaava pysty- ja vaakasuunnassa; matalassa näkymässä lanka lyhenee ja keskitetään
   const s = Math.min((x1 - x0) / LEN, (v.H - fs * 5.2) / (YR + YR2));
@@ -490,11 +501,10 @@ document.getElementById('step').addEventListener('click', () => {
 document.getElementById('reset').addEventListener('click', resetString);
 const slowBtn = document.getElementById('slow');
 slowBtn.addEventListener('click', () => { S.slow = !S.slow; slowBtn.setAttribute('aria-pressed', String(S.slow)); });
-const pulseBtn = document.getElementById('pulse');
-pulseBtn.addEventListener('click', () => {
+function sendPulse() {
   S.pulses.push({ t0: S.t, tau: 1 / (2 * S.f), A: S.A });
   if (!S.playing) { S.playing = true; paintPlay(); }
-});
+}
 function segment(attr, key, after) {
   document.querySelectorAll(`[data-${attr}]`).forEach((b) => b.addEventListener('click', () => {
     S[key] = b.dataset[attr];
@@ -502,7 +512,7 @@ function segment(attr, key, after) {
     if (after) after();
   }));
 }
-segment('src', 'src', () => { pulseBtn.disabled = S.src !== 'pulse'; });
+segment('src', 'src', () => { if (S.src === 'pulse') sendPulse(); });   // "Lähetä pulssi" lähettää pulssin joka painalluksella
 segment('end', 'end');
 bindRange('A', (x) => fmt(x, 2) + NBSP + 'm', (x) => { S.A = x; });
 bindRange('f', (x) => fmt(x, 1) + NBSP + 'Hz', (x) => { S.f = x; });

@@ -6,80 +6,81 @@
 <title>Momentti ja tasapaino · FY05</title>
 <style>
   /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
-     Peruskoko seuraa ikkunan kokoa ja kaikki mitat ovat em-yksiköissä, joten koko
-     käyttöliittymä suurenee samassa suhteessa kuin näyttö (luokan näyttö, projektori). */
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
   :root{
-    --bg:#ffffff; --panel:#f8f8f6;
-    --ink:#2f3237; --ink-2:#5c6168; --ink-3:#8f949a;
-    --line:#e4e4e0; --line-2:#cfcfca;
-    --accent:#2f6f9f; --accent-soft:#e7eff6;
-    --c-blue:#2e7fae; --c-red:#c4485c; --c-orange:#d9822b; --c-green:#3f8f62; --c-violet:#7a62b0;
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
     --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
   }
   *{box-sizing:border-box}
-  html{font-size:clamp(11px,min(1.9vw,3.1vh),36px)}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
   html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
     -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
-  body{font-family:var(--font);font-size:1rem;line-height:1.35}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
   .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
   .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
   .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
   #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
     user-select:none;-webkit-user-select:none}
-  .panel{width:15em;background:var(--panel);border-left:1px solid var(--line);
-    padding:.75em .85em;display:flex;flex-direction:column;gap:.6em;overflow:auto}
-  .app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);flex-direction:row;
-    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5em 1.3em;padding:.55em 1.1em .65em}
-  .group{display:flex;flex-direction:column;gap:.35em;min-width:0}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
   .ctl{display:flex;flex-direction:column;gap:0}
-  .ctl-head{display:flex;justify-content:space-between;align-items:baseline;gap:.6em;font-size:.95em;color:var(--ink-2);white-space:nowrap}
-  .ctl-head > span:first-child{white-space:normal;min-width:0}
-  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
   .sym{font-style:italic}
   sub{font-size:.72em;line-height:0}
-  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.55em;margin:0;background:transparent;
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
     cursor:pointer;font-size:inherit;--p:50%}
   input[type=range]:focus{outline:none}
   input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
-  input[type=range]::-webkit-slider-runnable-track{height:.26em;border-radius:.2em;
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
     background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
-  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.15em;height:1.15em;margin-top:-.445em;border-radius:50%;
-    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  input[type=range]::-moz-range-track{height:.26em;border-radius:.2em;background:var(--line-2)}
-  input[type=range]::-moz-range-progress{height:.26em;border-radius:.2em;background:var(--accent)}
-  input[type=range]::-moz-range-thumb{width:1.05em;height:1.05em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  .chk{display:flex;align-items:center;gap:.5em;font-size:.95em;cursor:pointer;user-select:none;min-height:1.75em;white-space:nowrap}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
   .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
-  .chk.wrap{white-space:normal;align-items:flex-start;line-height:1.3}
+  .chk.wrap{white-space:normal;align-items:flex-start}
   .chk.wrap input{margin-top:.1em}
-  .btns{display:flex;gap:.4em;flex-wrap:wrap}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
   .btns .btn{flex:1 1 0}
-  .btn{font:inherit;font-size:.95em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.4em;
-    min-height:2.15em;padding:0 .75em;border-radius:.55em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
     cursor:pointer;touch-action:manipulation;white-space:nowrap}
   .btn:hover{border-color:var(--ink-3)}
   .btn:active{background:#f1f1ee}
   .btn svg{width:1em;height:1em;flex:none}
   .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
-  .btn.primary:hover{background:#1f2226}
+  .btn.primary:hover{background:#1c1f23}
   .btn.wide{width:100%}
   .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
   .btn:disabled{opacity:.45;cursor:default}
-  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.55em;overflow:hidden;background:#fff}
-  .seg button{font:inherit;font-size:.95em;border:0;background:transparent;padding:0 .8em;min-height:2.05em;color:var(--ink-2);
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
     cursor:pointer;touch-action:manipulation}
   .seg button+button{border-left:1px solid var(--line-2)}
   .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
   .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
-  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .07em);height:.14em;background:var(--c)}
-  .key::after{content:"";position:absolute;right:0;top:calc(50% - .28em);border-left:.5em solid var(--c);
-    border-top:.28em solid transparent;border-bottom:.28em solid transparent}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
   .key.none{visibility:hidden}
-  .legend{display:flex;flex-direction:column;gap:.2em;font-size:.9em;color:var(--ink-2)}
-  .legend span{display:flex;align-items:center;gap:.55em}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
   .legend[hidden]{display:none}
   @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
-    html{font-size:clamp(13px,3.7vw,18px)}
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
     html,body{overflow:auto}
     .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
     .stage{height:58vh;min-height:300px}
@@ -87,44 +88,38 @@
   }
 
   /* ---------- tämän simulaation omat ---------- */
-  .panel .side{flex:1 1 11em;max-width:20em}
-  .panel .mid{flex:0 1 auto;display:grid;grid-template-columns:auto auto;gap:.4em 1em;align-items:center;justify-items:start}
-  @media (max-width:640px){
-    .panel .side{flex:1 1 40%}
-    .panel .mid{order:3;flex:1 1 100%;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;gap:.4em 1em}
-  }
+  .seg{align-self:stretch}
+  .seg button{flex:1 1 0}
 </style>
 </head>
 <body>
-<div class="app is-bottom">
+<div class="app">
   <div class="stage">
     <canvas id="cv" role="img" aria-label="Vaakasuora palkki, joka voi kiertyä keskellä olevan tukipisteen ympäri. Palkkiin vaikuttaa kaksi alaspäin suuntautuvaa voimaa."></canvas>
   </div>
 
   <div class="panel" aria-label="Säätimet">
-    <div class="group side">
+    <div class="seg" role="group" aria-label="Kuormitus">
+      <button type="button" data-mode="force" aria-pressed="true">Voimat</button><button type="button" data-mode="mass" aria-pressed="false">Punnukset</button>
+    </div>
+    <div class="group">
       <label class="ctl"><span class="ctl-head"><span><span class="nm1">Voima</span> <span class="sym q1">F</span><sub>1</sub></span><b data-for="q1"></b></span>
         <input id="q1" type="range" min="0" max="50" step="1" value="20" aria-label="Vasemman voiman suuruus"></label>
       <label class="ctl"><span class="ctl-head"><span>Etäisyys <span class="sym">r</span><sub>1</sub></span><b data-for="r1"></b></span>
         <input id="r1" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="Vasemman voiman etäisyys tukipisteestä"></label>
     </div>
-
-    <div class="group mid">
-      <div class="seg" role="group" aria-label="Kuormitus">
-        <button type="button" data-mode="force" aria-pressed="true">Voimat</button><button type="button" data-mode="mass" aria-pressed="false">Punnukset</button>
-      </div>
-      <button class="btn" id="reset" type="button" title="Palauta alkutilanne">
-        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
-      <label class="chk"><input type="checkbox" id="showM"> Näytä momentit</label>
-      <label class="chk"><input type="checkbox" id="lock"> Lukitse palkki</label>
-    </div>
-
-    <div class="group side">
+    <div class="group">
       <label class="ctl"><span class="ctl-head"><span><span class="nm2">Voima</span> <span class="sym q2">F</span><sub>2</sub></span><b data-for="q2"></b></span>
         <input id="q2" type="range" min="0" max="50" step="1" value="30" aria-label="Oikean voiman suuruus"></label>
       <label class="ctl"><span class="ctl-head"><span>Etäisyys <span class="sym">r</span><sub>2</sub></span><b data-for="r2"></b></span>
         <input id="r2" type="range" min="0" max="1" step="0.05" value="0.4" aria-label="Oikean voiman etäisyys tukipisteestä"></label>
     </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showM"> Näytä momentit</label>
+      <label class="chk"><input type="checkbox" id="lock"> Lukitse palkki</label>
+    </div>
+    <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
   </div>
 </div>
 
@@ -229,15 +224,24 @@ function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
   ctx.beginPath(); ctx.moveTo(x2, y2);
   ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
 }
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
 /** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
     Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
-    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa. */
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
 function setupCanvas(cv, onResize) {
   const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
   const resize = () => {
     const r = cv.getBoundingClientRect();
     const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
-    const dev = Math.min(window.devicePixelRatio || 1, 2);
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
     view.u = base / 15;
     view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
     view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
@@ -285,7 +289,7 @@ function startLoop({ dt, step, draw, running }) {
    ===================================================================== */
 const g = 9.81;          // putoamiskiihtyvyys, m/s²
 const HALF = 1.0;        // palkin puolikkaan pituus, m (palkki 2,0 m)
-const TH_MAX = 8 * Math.PI / 180;   // suurin kallistus: palkki nojaa tukeen
+const TH_MAX = 6 * Math.PI / 180;   // suurin kallistus: palkki nojaa tukeen
 const I_BEAM = 3.0;      // palkin hitausmomentti, kg·m² (vain liikkeen rauhallisuutta varten)
 const DAMP = 1.6;        // vaimennus, 1/s (laakerin kitka ja ilmanvastus)
 
@@ -352,27 +356,27 @@ const view = setupCanvas(cv, layout);
 
 function layout(v) {
   const { W, H } = v;
-  const fs = clamp(Math.min(W / 34, H / 22), 12, 18);
+  const fs = clamp(Math.min(W / 26, H / 20), 12, 18);
   const s = Math.min(W * 0.41, H * 1.1) / HALF;           // pikseliä metriä kohti
   const t = Math.max(12, Math.round(s * 0.034));           // palkin paksuus, px
   const cx = Math.round(W / 2);
   const ground = H - Math.max(10, H * 0.03);
-  const boxBottom = fs * 4.6;                               // momenttilaatikon alareuna
+  const boxBottom = fs * 3.0;                               // momenttilukemien alareuna (2 riviä)
   // Voimatilassa nuolet ovat palkin yläpuolella, punnustilassa punnukset roikkuvat alapuolella:
   // palkin korkeus valitaan niin, että tilaa jää kummassakin tapauksessa.
   // Punnustilassa palkin yläpuolelle mahtuvat momenttilaatikko, kaarinuolet ja mittaviivat.
-  const above = Math.max(4.1 * fs + 3, t / 2 + 2.85 * fs + 0.5 * s * Math.sin(TH_MAX));
+  const above = Math.max(4.1 * fs + 3, t / 2 + 4.6 * fs + 0.5 * s * Math.sin(TH_MAX));   // mittaviivat nimiöineen
   const cyF = Math.round(H * 0.62), cyM = Math.round(Math.max(H * 0.36, boxBottom + 8 + above));
   const cy = S.mode === 'force' ? cyF : cyM;
   // Voima-asteikko (px/N): voimatilassa 50 N:n nuoli mahtuu palkin yläpuolelle,
   // punnustilassa naru + suurin punnus + nimiö + kallistuksen aiheuttama lasku mahtuvat maan yläpuolelle.
   const upRoom = cyF - t / 2 - boxBottom - fs * 1.5;
-  const downRoom = ground - cyM - t / 2 - 6 - blockSide(5) - fs * 1.8 - HALF * s * Math.sin(TH_MAX) - 8;
+  const downRoom = ground - cyM - t / 2 - 6 - blockSide(5) - HALF * s * Math.sin(TH_MAX) - 8;
   const kF = Math.max(0.4, upRoom) / 50, kFm = Math.max(0.4, downRoom) / 50;
   L = { W, H, fs, s, cx, cy, ground, kF, kFm, t };
 }
 /** Punnuksen sivun pituus (px): tilavuus ∝ massa, joten sivu ∝ ∛m. */
-function blockSide(m) { return m > 0 ? 16 + 18 * Math.cbrt(m) : 0; }
+function blockSide(m) { return m > 0 ? 12 + 13 * Math.cbrt(m) : 0; }
 
 /** Palkin piste etäisyydellä u (m, vasen negatiivinen) ja sivusiirtymällä n (px, ylös +). */
 function beamPt(u, n = 0) {
@@ -437,12 +441,12 @@ function draw() {
         const y0 = p.y + strLen + 6;
         ctx.fillStyle = '#e9e7e1'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.2;
         roundRect(ctx, p.x - side / 2, y0, side, side * 0.95, 3); ctx.fill(); ctx.stroke();
-        drawRich(ctx, fmt(m, 1) + NBSP + 'kg', p.x, y0 + side * 0.95 + fs * 0.85, { size: fs * 0.86, color: COL.ink2, align: 'center' });
       }
     }
   }
 
   // --- voimat nuolina ---
+  const massLabels = [];
   for (let i = 0; i < 2; i++) {
     const p = attach(i), F = i ? F2 : F1, lbl = `{F}_${i + 1} = ${fmt(F, S.mode === 'force' ? 0 : 1)}${NBSP}N`;
     if (S.mode === 'force') {
@@ -450,17 +454,35 @@ function draw() {
       if (F > 0) arrow(ctx, p.x, p.y - len, p.x, p.y, colF[i], { width: 3 });
       drawRich(ctx, lbl, p.x, p.y - len - fs * 0.95, { size: fs, color: colF[i], align: 'center', halo: true });
     } else {
-      const len = F * L.kFm;
+      const len = F * L.kFm, strLen = 50 * L.kFm, side = blockSide(S.m[i]);
       if (F > 0) arrow(ctx, p.x, p.y, p.x, p.y + len, colF[i], { width: 3 });
-      drawRich(ctx, lbl, p.x + (i ? 12 : -12), p.y + Math.max(len, 20) * 0.5 + 6, { size: fs * 0.95, color: colF[i], align: i ? 'left' : 'right', halo: true });
+      // voiman ja massan lukemat punnuksen vieressä; puoli valitaan alla niin, etteivät ne mene päällekkäin
+      massLabels.push({ i, x: p.x, y: p.y + strLen + 6 + side * 0.48, half: side / 2 + 7, lbl,
+                        lw: drawRich(ctx, lbl, 0, 0, { size: fs * 0.95, measure: true }) });
+    }
+  }
+  if (massLabels.length === 2) {
+    // oletus: lukemat tukipisteen puolella (kaarinuolet ovat tukipisteen alla); jos ne törmäisivät, siirretään ulkopuolelle
+    const [a, b] = massLabels;                                   // +1 = oikealle, −1 = vasemmalle
+    const outerA = a.x - a.half - a.lw >= 4, outerB = b.x + b.half + b.lw <= W - 4;   // mahtuuko ulkopuolelle
+    let sideA = a.x + a.half + a.lw + 4 <= b.x - b.half ? 1 : (outerA ? -1 : 1);     // sisäpuolella vain, jos ei osu toiseen punnukseen
+    let sideB = b.x - b.half - b.lw - 4 >= a.x + a.half ? -1 : (outerB ? 1 : -1);
+    if (sideA === 1 && sideB === -1 && a.x + a.half + a.lw + 6 > b.x - b.half - b.lw) {   // molemmat sisäpuolella ja päällekkäin
+      if (outerA) sideA = -1; else if (outerB) sideB = 1;
+    }
+    for (const [m, sd] of [[a, sideA], [b, sideB]]) {
+      const bx = m.x + sd * m.half, align = sd > 0 ? 'left' : 'right';
+      drawRich(ctx, m.lbl, bx, m.y - fs * 0.5, { size: fs * 0.95, color: colF[m.i], align, halo: true });
+      drawRich(ctx, fmt(S.m[m.i], 1) + NBSP + 'kg', bx, m.y + fs * 0.55, { size: fs * 0.86, color: COL.ink2, align, halo: true });
     }
   }
 
-  // --- momenttivarret mittaviivoina ---
-  const off = S.mode === 'force' ? -(t / 2 + fs * 1.5) : (t / 2 + fs * 1.4);
+  // --- momenttivarret mittaviivoina (kahdella tasolla, jotta nimiöt eivät mene päällekkäin) ---
+  const sgn = S.mode === 'force' ? -1 : 1;          // voimatilassa palkin alla, punnustilassa yläpuolella
   for (let i = 0; i < 2; i++) {
     const u = (i ? 1 : -1) * S.r[i];
     if (S.r[i] < 0.001) continue;
+    const off = sgn * (t / 2 + fs * (i ? 3.3 : 1.5));
     const a = beamPt(0, off), b = beamPt(u, off);
     const c = Math.cos(S.th), sn = Math.sin(S.th), nx = -sn * 5, ny = -c * 5;
     ctx.strokeStyle = colF[i]; ctx.globalAlpha = 0.75; ctx.lineWidth = 1.2;
@@ -470,7 +492,7 @@ function draw() {
     ctx.moveTo(b.x - nx, b.y - ny); ctx.lineTo(b.x + nx, b.y + ny);
     ctx.stroke();
     ctx.globalAlpha = 1;
-    const mid = beamPt(u / 2, off + (off < 0 ? -fs * 0.85 : fs * 0.85));
+    const mid = beamPt(u / 2, off + sgn * fs * 0.8);     // nimiö viivan ulkopuolella
     drawRich(ctx, `{r}_${i + 1} = ${fmt(S.r[i], 2)}${NBSP}m`, mid.x, mid.y, { size: fs * 0.92, color: colF[i], align: 'center', halo: true });
   }
 
@@ -510,7 +532,8 @@ function torqueArc(R, M, color, width) {
   const sweep = Math.min(170, 4 * Math.abs(M)) * Math.PI / 180;
   if (sweep < 0.03) return;
   const ccw = M > 0;                       // vastapäivään: näytön kulma pienenee
-  const a0 = -Math.PI / 2, a1 = a0 + (ccw ? -sweep : sweep);
+  // voimatilassa kaari on palkin yläpuolella, punnustilassa alapuolella (mittaviivat ovat yläpuolella)
+  const a0 = S.mode === 'force' ? -Math.PI / 2 : Math.PI / 2, a1 = a0 + (ccw ? -sweep : sweep);
   const headA = Math.min(sweep * 0.6, 11 / R);
   ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = width; ctx.lineCap = 'butt';
   ctx.beginPath(); ctx.arc(cx, cy, R, a0, a1 + (ccw ? headA : -headA), ccw); ctx.stroke();
@@ -528,27 +551,28 @@ function drawMoments() {
   torqueArc(fs * 2.9, M2, COL.red, 2.4);
   torqueArc(fs * 4.1, balanced ? 0 : sum, COL.ink, 2.8);
 
-  // lukuarvot ylhäällä keskellä: nimi | = | arvo (tasattu oikealle)
-  const rows = [
-    [`{M}_1 = {r}_1{F}_1`, M1, COL.blue],
-    [`{M}_2 = ${MINUS}{r}_2{F}_2`, M2, COL.red],
-    [`Σ{M} = {M}_1 + {M}_2`, balanced ? 0 : sum, balanced ? COL.green : COL.ink],
-  ];
-  const f = fs * 0.98, lh = f * 1.34, y0 = f * 1.0;
-  const wl = Math.max(...rows.map((r) => drawRich(ctx, r[0], 0, 0, { size: f, measure: true })));
-  const vals = rows.map((r) => `${fmt(r[1], 2)}${NBSP}Nm`);
-  const wv = Math.max(...vals.map((v) => drawRich(ctx, v, 0, 0, { size: f, measure: true, weight: 600 })),
-                      drawRich(ctx, `${MINUS}00,00${NBSP}Nm`, 0, 0, { size: f, measure: true, weight: 600 }));
-  const weq = drawRich(ctx, '=', 0, 0, { size: f, measure: true });
-  const total = wl + f * 0.5 + weq + f * 0.7 + wv, x0 = Math.max(8, cx - total / 2);
-  rows.forEach(([lab, , col], k) => {
-    const y = y0 + k * lh;
-    drawRich(ctx, lab, x0, y, { size: f, color: col, halo: true });
-    drawRich(ctx, '=', x0 + wl + f * 0.5, y, { size: f, color: col, halo: true });
-    drawRich(ctx, vals[k], x0 + total, y, { size: f, color: col, align: 'right', weight: 600, halo: true });
-  });
-  drawRich(ctx, balanced ? '✓ tasapaino' : '(vastapäivään +)', x0 + total + f * 0.7, y0 + 2 * lh,
-    { size: f * 0.84, color: balanced ? COL.green : COL.ink3, weight: balanced ? 600 : 400 });
+  // lukuarvot ylhäällä: M₁ ja M₂ vierekkäin, summa toisella rivillä
+  const f = fs * 0.95, lh = f * 1.35, y0 = f * 0.95;
+  const col1 = `{M}_1 = {r}_1{F}_1 = ${fmt(M1, 2)}${NBSP}Nm`;
+  const col2 = `{M}_2 = ${MINUS}{r}_2{F}_2 = ${fmt(M2, 2)}${NBSP}Nm`;
+  const sumT = `Σ{M} = {M}_1 + {M}_2 = ${fmt(balanced ? 0 : sum, 2)}${NBSP}Nm`;
+  const note = balanced ? '✓ tasapaino' : '(vastapäivään +)';
+  const w1 = drawRich(ctx, col1, 0, 0, { size: f, measure: true }), w2 = drawRich(ctx, col2, 0, 0, { size: f, measure: true });
+  const gapW = f * 1.6, total = w1 + gapW + w2;
+  if (total < L.W - 16) {
+    const x0 = cx - total / 2;
+    drawRich(ctx, col1, x0, y0, { size: f, color: COL.blue, halo: true });
+    drawRich(ctx, col2, x0 + w1 + gapW, y0, { size: f, color: COL.red, halo: true });
+    const ws = drawRich(ctx, sumT, 0, 0, { size: f, measure: true, weight: 600 });
+    const wn = drawRich(ctx, note, 0, 0, { size: f * 0.84, measure: true });
+    const xs = cx - (ws + f * 0.6 + wn) / 2;
+    drawRich(ctx, sumT, xs, y0 + lh, { size: f, color: balanced ? COL.green : COL.ink, weight: 600, halo: true });
+    drawRich(ctx, note, xs + ws + f * 0.6, y0 + lh, { size: f * 0.84, color: balanced ? COL.green : COL.ink3, weight: balanced ? 600 : 400, halo: true });
+  } else {                                     // kapea näkymä: kolme riviä vasemmalle tasattuna
+    drawRich(ctx, col1, 8, y0, { size: f * 0.9, color: COL.blue, halo: true });
+    drawRich(ctx, col2, 8, y0 + lh * 0.9, { size: f * 0.9, color: COL.red, halo: true });
+    drawRich(ctx, sumT + ' ' + note, 8, y0 + lh * 1.8, { size: f * 0.9, color: balanced ? COL.green : COL.ink, weight: 600, halo: true });
+  }
 }
 
 function roundRect(ctx, x, y, w, h, r) {
