@@ -293,8 +293,8 @@ function startLoop({ dt, step, draw, running }) {
    enemmän kuin tukin koko painon.
    ===================================================================== */
 const g = 9.81, LEN = 4.0, MINSEP = 0.3;        // tukin pituus (m) ja kantajien pienin väli (m)
-const DEF = [3.5, 1.0];
-const S = { x: DEF.slice(), m: 40, showM: false, showVal: false, showEq: false, drag: -1, hover: -1 };   // momentit, arvot ja yhtälöt piilossa oletuksena
+const DEF = [3.5, 1.0], M0 = 40, M_MAX = 100;    // kantajien alkupaikat (m), oletusmassa ja massasäätimen yläraja (kg)
+const S = { x: DEF.slice(), m: M0, showM: false, showVal: false, showEq: false, drag: -1, hover: -1 };   // momentit, arvot ja yhtälöt piilossa oletuksena
 const colF = [COL.blue, COL.red];
 
 /** Tasapainon vaatimat voimat ja momentit painopisteen suhteen (vastapäivään +). */
@@ -320,7 +320,15 @@ let L = {};
 const view = setupCanvas(cv, (v) => {
   const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18), pad = fs * 1.3;
   const s = (v.W - 2 * pad) / LEN;                                 // px/m
-  L = { W: v.W, H: v.H, fs, pad, s, ly: Math.round(v.H * 0.56), lt: Math.max(14, 0.25 * s), ground: v.H - fs };
+  const ly = Math.round(v.H * 0.42), ground = v.H - fs;               // tukki keskikohdan yläpuolella: painolle tilaa alas
+  // Voimien mittakaava (px/N) riippuu vain ikkunan koosta: suurimman massan painonuolen kärki yltää juuri kankaan
+  // alareunaan, joten pienemmillä massoilla G jää sen yläpuolelle (40 kg ≈ 23 % kankaan korkeudesta).
+  const kF = (v.H - ly - fs * 0.3) / (M_MAX * g);
+  // Kantajan mittayksikkö: kasvaa kirjasinkoosta, kun tukin ja maan välissä on tilaa, jotta jalat eivät veny;
+  // vartalon on silti mahduttava kantajien pienimpään väliin.
+  const lt = Math.max(14, 0.25 * s), bot = ly + lt / 2;
+  const fe = clamp((ground - bot) / 11.1, fs, Math.max(fs, Math.min(1.25 * fs, (MINSEP * s - 2) / 1.6)));
+  L = { W: v.W, H: v.H, fs, pad, s, ly, lt, ground, kF, fe };
 });
 const px = (x) => L.pad + x * L.s;
 /** Voima tekstinä: negatiivinen sulkeissa, jotta summa luetaan oikein. */
@@ -378,9 +386,10 @@ function draw() {
   const elh = ef * 1.4, ey0 = 14, blockBottom = rows.length ? ey0 + rows.length * elh : 10;
   if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: blockBottom });
 
-  // Painon nuoli on aina saman pituinen (3,7 em) massasta ja kantajien paikoista riippumatta; kantajien
-  // voimat piirretään samassa mittakaavassa painon kanssa. Pitkä nuoli saa jatkua ruudun ulkopuolelle.
-  const kF = fs * 3.7 / G;
+  // Kiinteä mittakaava: painon nuoli kasvaa massan mukana eikä muutu kantajia siirrettäessä. Kantajien voimat
+  // piirretään samassa mittakaavassa, joten massan kasvaessa myös F₁ ja F₂ pitenevät. Pitkä nuoli saa jatkua
+  // ruudun ulkopuolelle.
+  const { kF } = L;
   const lenF = F.map((f) => Math.abs(f) * kF), lenG = G * kF;
 
   // momenttikaaret P:ssä (vastapäivään, kun M > 0)
@@ -457,27 +466,27 @@ function draw() {
 /** Kantaja kohdassa x: pää, paita kantajan värillä ja numerolla, tummat raajat; kädet pisteessä (x ± 0,32 em, handY).
     Kädet piirretään erikseen tukin päälle (hands), jotta ote näkyy myös silloin, kun kantaja painaa tukkia ylhäältä. */
 function figure(ctx, x, handY, i) {
-  const { fs, ground } = L, act = S.drag === i || S.hover === i, col = colF[i];
+  const { fe, ground } = L, act = S.drag === i || S.hover === i, col = colF[i];
   const g = figGeom(x);
   ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   // jalat ja jalkaterät
-  ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = fs * 0.3;
+  ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = fe * 0.3;
   ctx.beginPath();
   ctx.moveTo(x - g.tw * 0.22, g.tBot - 2); ctx.lineTo(x - g.tw * 0.38, ground - 2); ctx.lineTo(x - g.tw * 0.72, ground - 2);
   ctx.moveTo(x + g.tw * 0.22, g.tBot - 2); ctx.lineTo(x + g.tw * 0.38, ground - 2); ctx.lineTo(x + g.tw * 0.72, ground - 2);
   ctx.stroke();
   // kädet olkapäistä otteeseen (tukki peittää ylimmän osan, kun ote on tukin alla)
-  ctx.lineWidth = fs * 0.27;
+  ctx.lineWidth = fe * 0.27;
   ctx.beginPath();
-  ctx.moveTo(x - g.tw * 0.42, g.tTop + fs * 0.3); ctx.lineTo(x - fs * 0.32, handY);
-  ctx.moveTo(x + g.tw * 0.42, g.tTop + fs * 0.3); ctx.lineTo(x + fs * 0.32, handY);
+  ctx.moveTo(x - g.tw * 0.42, g.tTop + fe * 0.3); ctx.lineTo(x - fe * 0.32, handY);
+  ctx.moveTo(x + g.tw * 0.42, g.tTop + fe * 0.3); ctx.lineTo(x + fe * 0.32, handY);
   ctx.stroke();
   // kaula
-  ctx.lineWidth = fs * 0.24; ctx.beginPath(); ctx.moveTo(x, g.hy + g.headR - 1); ctx.lineTo(x, g.tTop + 2); ctx.stroke();
+  ctx.lineWidth = fe * 0.24; ctx.beginPath(); ctx.moveTo(x, g.hy + g.headR - 1); ctx.lineTo(x, g.tTop + 2); ctx.stroke();
   // paita ja numero
   ctx.fillStyle = col; ctx.strokeStyle = act ? COL.ink : 'rgba(0,0,0,0.18)'; ctx.lineWidth = act ? 2 : 1;
-  roundRect(ctx, x - g.tw / 2, g.tTop, g.tw, g.tBot - g.tTop, fs * 0.45); ctx.fill(); ctx.stroke();
-  ctx.fillStyle = '#fff'; ctx.font = `700 ${Math.round(fs * 0.95)}px ${FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  roundRect(ctx, x - g.tw / 2, g.tTop, g.tw, g.tBot - g.tTop, fe * 0.45); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = '#fff'; ctx.font = `700 ${Math.round(fe * 0.95)}px ${FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   ctx.fillText(String(i + 1), x, (g.tTop + g.tBot) / 2 + 0.5);
   // pää
   ctx.fillStyle = '#f3ddc4'; ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = 1.4;
@@ -486,13 +495,15 @@ function figure(ctx, x, handY, i) {
 }
 /** Kädet otteessa, piirretään tukin päälle. */
 function hands(ctx, x, handY, i) {
-  const { fs } = L, act = S.drag === i || S.hover === i;
+  const { fe } = L, act = S.drag === i || S.hover === i;
   ctx.fillStyle = '#f3ddc4'; ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = 1.3;
-  for (const sx of [-1, 1]) { ctx.beginPath(); ctx.arc(x + sx * fs * 0.32, handY, fs * 0.21, 0, 2 * Math.PI); ctx.fill(); ctx.stroke(); }
+  for (const sx of [-1, 1]) { ctx.beginPath(); ctx.arc(x + sx * fe * 0.32, handY, fe * 0.21, 0, 2 * Math.PI); ctx.fill(); ctx.stroke(); }
 }
 function figGeom(x) {
-  const { fs } = L, bot = L.ly + L.lt / 2, headR = fs * 0.6;
-  const hy = bot + fs * 2.9 + headR, tw = fs * 1.6, tTop = hy + headR + fs * 0.3, tBot = tTop + fs * 2.7;   // pää mittaviivojen alapuolella
+  const { fe, ground } = L, bot = L.ly + L.lt / 2, headR = fe * 0.6;
+  const extra = Math.max(0, ground - bot - fe * 11.1);                 // ylimääräinen korkeus jaetaan käsille, vartalolle ja jaloille
+  const hy = bot + fe * 2.9 + extra * 0.4 + headR;                     // pää mittaviivojen alapuolella
+  const tw = fe * 1.6, tTop = hy + headR + fe * 0.3, tBot = tTop + fe * 2.7 + extra * 0.2;
   return { x, headR, hy, tw, tTop, tBot };
 }
 function roundRect(ctx, x, y, w, h, r) {
