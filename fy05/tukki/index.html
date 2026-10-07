@@ -377,9 +377,10 @@ function draw() {
   const elh = ef * 1.4, ey0 = 14, blockBottom = ey0 + rows.length * elh;
   boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: blockBottom });
 
-  // voimien mittakaava on kiinteä (px/N): painon nuoli kasvaa massan mukana eikä muutu kantajia siirrettäessä.
-  // Nuoli, joka ei mahdu lohkon ja tukin väliin tai maan yläpuolelle, katkaistaan ja merkitään katkoviivalla.
-  const kF = fs * 3.7 / (40 * g);
+  // Painon nuoli on aina saman pituinen (3,7 em) massasta ja kantajien paikoista riippumatta; kantajien
+  // voimat piirretään samassa mittakaavassa painon kanssa. Nuoli, joka ei mahdu lohkon ja tukin väliin
+  // tai maan yläpuolelle, katkaistaan ja merkitään katkaisumerkillä; arvo lukee nimiössä.
+  const kF = fs * 3.7 / G;
   const upRoom = Math.max(fs * 1.5, top - blockBottom - fs * 1.0), downRoom = ground - bot - fs * 0.6;
   const lenF = F.map((f, i) => Math.min(Math.abs(f) * kF, neg[i] ? downRoom + lt : upRoom)), cutF = F.map((f, i) => Math.abs(f) * kF > lenF[i] + 1e-6);
   const lenG = Math.min(G * kF, downRoom), cutG = G * kF > lenG + 1e-6;
