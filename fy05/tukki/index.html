@@ -107,8 +107,9 @@
         <input id="m" type="range" min="20" max="100" step="5" value="40" aria-label="Tukin massa"></label>
     </div>
     <div class="group">
-      <label class="chk"><input type="checkbox" id="showM" checked> Näytä momentit</label>
-      <label class="chk"><input type="checkbox" id="showVal" checked> Näytä arvot</label>
+      <label class="chk"><input type="checkbox" id="showM"> Näytä momentit</label>
+      <label class="chk"><input type="checkbox" id="showVal"> Näytä arvot</label>
+      <label class="chk"><input type="checkbox" id="showEq"> Näytä yhtälöt</label>
     </div>
     <p class="hint">Kantajia voi myös raahata tukin alla.</p>
     <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
@@ -293,7 +294,7 @@ function startLoop({ dt, step, draw, running }) {
    ===================================================================== */
 const g = 9.81, LEN = 4.0, MINSEP = 0.3;        // tukin pituus (m) ja kantajien pienin väli (m)
 const DEF = [3.5, 1.0];
-const S = { x: DEF.slice(), m: 40, showM: true, showVal: true, drag: -1, hover: -1 };
+const S = { x: DEF.slice(), m: 40, showM: false, showVal: false, showEq: false, drag: -1, hover: -1 };   // momentit, arvot ja yhtälöt piilossa oletuksena
 const colF = [COL.blue, COL.red];
 
 /** Tasapainon vaatimat voimat ja momentit painopisteen suhteen (vastapäivään +). */
@@ -349,20 +350,20 @@ function draw() {
     boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
   };
 
-  // yhtälöt vasempaan yläkulmaan (rivit lyhyitä, jotta ne mahtuvat kapeallekin kankaalle)
+  // yhtälöt ja selitys vasempaan yläkulmaan vain pyydettäessä (rivit lyhyitä, jotta ne mahtuvat kapeallekin kankaalle)
   const rows = [];
-  if (val) {
+  if (S.showEq && val) {
     rows.push([`{F}_1 + {F}_2 = ${Ftxt(F[0])} + ${Ftxt(F[1])} = ${fmt(G, 0)}${NBSP}N = {G}`, COL.ink2]);
     if (S.showM) {
       for (let i = 0; i < 2; i++) rows.push([`{M}_${i + 1} = {F}_${i + 1}{r}_${i + 1} = ${Ftxt(F[i])} · ${r[i] < 0 ? `(${fmt(r[i], 2)}${NBSP}m)` : `${fmt(r[i], 2)}${NBSP}m`} = ${signed(M[i])}${NBSP}Nm`, colF[i]]);
       rows.push(['Σ{M}_P = {M}_1 + {M}_2 = 0   (vastapäivään +)', COL.ink2]);
     }
-  } else {
+  } else if (S.showEq) {
     rows.push(['Σ{F} = 0:   {F}_1 + {F}_2 = {G}', COL.ink2]);
     if (S.showM) { rows.push(['Σ{M}_P = 0:   {F}_1{r}_1 + {F}_2{r}_2 = 0', COL.ink2]); rows.push(['({r} oikealle +, momentti vastapäivään +)', COL.ink3]); }
   }
   const far = Math.abs(r[0]) >= Math.abs(r[1]) ? 0 : 1;             // kauempana painopisteestä
-  if (neg[0] || neg[1]) {
+  if (!S.showEq) { /* ei selitystä */ } else if (neg[0] || neg[1]) {
     const a = neg[0] ? 0 : 1;
     rows.push([`Molemmat samalla puolella P:tä: kantaja ${a + 1} painaa alas,`, COL.red]);
     rows.push([`kantaja ${2 - a} kantaa enemmän kuin tukin koko painon`, COL.red]);
@@ -372,17 +373,15 @@ function draw() {
     rows.push([`Lähempänä P:tä oleva kantaja ${2 - far} kantaa enemmän`, COL.ink2]);
   }
   let ef = fs * 0.88;
-  let ew = Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true })));
+  let ew = rows.length ? Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))) : 0;
   if (ew > W - 28) { ef *= (W - 28) / ew; ew = W - 28; }            // kapea kangas: pienennetään kirjasinta
-  const elh = ef * 1.4, ey0 = 14, blockBottom = ey0 + rows.length * elh;
-  boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: blockBottom });
+  const elh = ef * 1.4, ey0 = 14, blockBottom = rows.length ? ey0 + rows.length * elh : 10;
+  if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: blockBottom });
 
-  // voimien mittakaava on kiinteä (px/N): painon nuoli kasvaa massan mukana eikä muutu kantajia siirrettäessä.
-  // Nuoli, joka ei mahdu lohkon ja tukin väliin tai maan yläpuolelle, katkaistaan ja merkitään katkoviivalla.
-  const kF = fs * 3.7 / (40 * g);
-  const upRoom = Math.max(fs * 1.5, top - blockBottom - fs * 1.0), downRoom = ground - bot - fs * 0.6;
-  const lenF = F.map((f, i) => Math.min(Math.abs(f) * kF, neg[i] ? downRoom + lt : upRoom)), cutF = F.map((f, i) => Math.abs(f) * kF > lenF[i] + 1e-6);
-  const lenG = Math.min(G * kF, downRoom), cutG = G * kF > lenG + 1e-6;
+  // Painon nuoli on aina saman pituinen (3,7 em) massasta ja kantajien paikoista riippumatta; kantajien
+  // voimat piirretään samassa mittakaavassa painon kanssa. Pitkä nuoli saa jatkua ruudun ulkopuolelle.
+  const kF = fs * 3.7 / G;
+  const lenF = F.map((f) => Math.abs(f) * kF), lenG = G * kF;
 
   // momenttikaaret P:ssä (vastapäivään, kun M > 0)
   if (S.showM) for (let i = 0; i < 2; i++) { const k = arcGeom(xp, ly, fs * (1.3 + 0.6 * i), M[i]); if (k) { k.ci = i; arcs.push(k); } }
@@ -396,8 +395,10 @@ function draw() {
   // nimiöt tärkeysjärjestyksessä: voimat, momenttivarret, paino, P
   for (let i = 0; i < 2; i++) {
     const txt = val ? `{->F}_${i + 1} = ${fmt(F[i], 0)}${NBSP}N` : `{->F}_${i + 1}`, x = xs[i], y = tips[i];
-    if (neg[i]) label(txt, fs, colF[i], [{ x, y: top - fs * 0.85, align: 'center' }, { x: x + fs * 0.6, y: y - fs * 0.2, align: 'left' }, { x: x - fs * 0.6, y: y - fs * 0.2, align: 'right' }, { x, y: y + fs * 0.9, align: 'center' }]);
-    else label(txt, fs, colF[i], [{ x, y: Math.min(y, top) - fs * 0.85, align: 'center' }, { x: x + fs * 0.6, y: y + fs * 0.4, align: 'left' }, { x: x - fs * 0.6, y: y + fs * 0.4, align: 'right' }]);   // lyhyt nuoli: nimiö silti tukin yläpuolelle
+    if (neg[i]) label(txt, fs, colF[i], [{ x, y: top - fs * 0.85, align: 'center' }, { x: x + fs * 0.6, y: y - fs * 0.2, align: 'left' }, { x: x - fs * 0.6, y: y - fs * 0.2, align: 'right' }, { x, y: y + fs * 0.9, align: 'center' },
+      { x: x + fs * 0.6, y: H - fs * 0.8, align: 'left' }, { x: x - fs * 0.6, y: H - fs * 0.8, align: 'right' }]);   // kärki ruudun alapuolella: nimiö varren viereen alareunaan
+    else label(txt, fs, colF[i], [{ x, y: Math.min(y, top) - fs * 0.85, align: 'center' }, { x: x + fs * 0.6, y: y + fs * 0.4, align: 'left' }, { x: x - fs * 0.6, y: y + fs * 0.4, align: 'right' },
+      { x: x + fs * 0.6, y: fs * 0.9, align: 'left' }, { x: x - fs * 0.6, y: fs * 0.9, align: 'right' }]);   // lyhyt nuoli: nimiö tukin yläpuolelle; kärki ruudun yläpuolella: varren viereen yläreunaan
   }
   const dimY = [bot + fs * 1.25, bot + fs * 2.45];                  // mittaviivat tukin alla kahdella tasolla
   if (S.showM) for (let i = 0; i < 2; i++) {
@@ -408,7 +409,8 @@ function draw() {
     label(txt, fs * 0.9, colF[i], i === 0 ? [above, end, below] : [below, above, end]);   // r₁ viivan yläpuolelle, r₂ alapuolelle
   }
   label(val ? `{->G} = ${fmt(G, 0)}${NBSP}N` : '{->G}', fs, COL.green, [{ x: xp + fs * 0.6, y: gy - fs * 0.3, align: 'left' }, { x: xp - fs * 0.6, y: gy - fs * 0.3, align: 'right' },
-    { x: xp, y: gy + fs * 0.9, align: 'center' }, { x: xp + fs * 0.6, y: gy - fs * 1.5, align: 'left' }, { x: xp - fs * 0.6, y: gy - fs * 1.5, align: 'right' }]);
+    { x: xp, y: gy + fs * 0.9, align: 'center' }, { x: xp + fs * 0.6, y: gy - fs * 1.5, align: 'left' }, { x: xp - fs * 0.6, y: gy - fs * 1.5, align: 'right' },
+    { x: xp + fs * 0.6, y: H - fs * 0.8, align: 'left' }, { x: xp - fs * 0.6, y: H - fs * 0.8, align: 'right' }]);
   label('P', fs * 0.9, COL.ink, [{ x: xp, y: top - fs * (S.showM ? 2.3 : 0.75), align: 'center' }, { x: xp - fs * 2.6, y: ly, align: 'right' }, { x: xp + fs * 2.6, y: ly, align: 'left' }, { x: xp - fs * 0.7, y: top - fs * 0.75, align: 'right' }]);
 
   /* ---- piirtäminen ---- */
@@ -426,6 +428,7 @@ function draw() {
   for (const f of [0.3, 0.55, 0.78]) { ctx.moveTo(px(0) + lt * 0.6, top + lt * f); ctx.lineTo(px(LEN) - lt * 0.6, top + lt * f); }
   ctx.stroke();
   ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(xp, ly, 3.5, 0, 2 * Math.PI); ctx.fill();   // painopiste P
+  for (let i = 0; i < 2; i++) hands(ctx, xs[i], neg[i] ? top : bot, i);
 
   // mittaviivat r₁ ja r₂ painopisteestä kantajien kohdalle
   if (S.showM) for (let i = 0; i < 2; i++) {
@@ -441,12 +444,9 @@ function draw() {
 
   // voimat: paino painopisteestä alas, kantajien voimat käsien kohdalta
   arrow(ctx, xp, ly, xp, gy, COL.green, { width: 3 });
-  if (cutG) breakMark(ctx, xp, ly + lenG * 0.55, COL.green);
   for (let i = 0; i < 2; i++) {
     if (Math.abs(F[i]) < 1e-6) continue;
-    const y0 = neg[i] ? top : bot;
-    arrow(ctx, xs[i], y0, xs[i], tips[i], colF[i], { width: 3 });
-    if (cutF[i]) breakMark(ctx, xs[i], y0 + (tips[i] - y0) * 0.55, colF[i]);
+    arrow(ctx, xs[i], neg[i] ? top : bot, xs[i], tips[i], colF[i], { width: 3 });
   }
 
   // nimiöt ja yhtälöt päällimmäisiksi
@@ -454,30 +454,46 @@ function draw() {
   let ey = ey0 + ef * 0.6;
   for (const [t, c] of rows) { drawRich(ctx, t, 14, ey, { size: ef, color: c, halo: true }); ey += elh; }
 }
-/** Tikku-ukko kohdassa x; kädet pisteessä (x ± 0,3 em, handY). Numero rinnassa. */
+/** Kantaja kohdassa x: pää, paita kantajan värillä ja numerolla, tummat raajat; kädet pisteessä (x ± 0,32 em, handY).
+    Kädet piirretään erikseen tukin päälle (hands), jotta ote näkyy myös silloin, kun kantaja painaa tukkia ylhäältä. */
 function figure(ctx, x, handY, i) {
-  const { fs, ground } = L, act = S.drag === i || S.hover === i;
-  const bot = L.ly + L.lt / 2, headR = fs * 0.55, headY = bot + fs * 2.9 + headR, shY = headY + headR + fs * 0.35, hipY = shY + (ground - shY) * 0.47;
-  ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = act ? 2.6 : 2.2; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  const { fs, ground } = L, act = S.drag === i || S.hover === i, col = colF[i];
+  const g = figGeom(x);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  // jalat ja jalkaterät
+  ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = fs * 0.3;
   ctx.beginPath();
-  ctx.moveTo(x, shY); ctx.lineTo(x, hipY);                           // vartalo
-  ctx.moveTo(x, hipY); ctx.lineTo(x - fs * 0.7, ground);              // jalat
-  ctx.moveTo(x, hipY); ctx.lineTo(x + fs * 0.7, ground);
-  ctx.moveTo(x - fs * 0.35, shY); ctx.lineTo(x - fs * 0.3, handY);    // kädet
-  ctx.moveTo(x + fs * 0.35, shY); ctx.lineTo(x + fs * 0.3, handY);
+  ctx.moveTo(x - g.tw * 0.22, g.tBot - 2); ctx.lineTo(x - g.tw * 0.38, ground - 2); ctx.lineTo(x - g.tw * 0.72, ground - 2);
+  ctx.moveTo(x + g.tw * 0.22, g.tBot - 2); ctx.lineTo(x + g.tw * 0.38, ground - 2); ctx.lineTo(x + g.tw * 0.72, ground - 2);
   ctx.stroke();
-  ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(x, headY, headR, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();   // pää
-  const by = (shY + hipY) / 2;                                        // numero rinnassa
-  ctx.fillStyle = colF[i]; ctx.beginPath(); ctx.arc(x, by, fs * 0.6, 0, 2 * Math.PI); ctx.fill();
-  ctx.fillStyle = '#fff'; ctx.font = `700 ${Math.round(fs * 0.78)}px ${FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-  ctx.fillText(String(i + 1), x, by + 0.5);
+  // kädet olkapäistä otteeseen (tukki peittää ylimmän osan, kun ote on tukin alla)
+  ctx.lineWidth = fs * 0.27;
+  ctx.beginPath();
+  ctx.moveTo(x - g.tw * 0.42, g.tTop + fs * 0.3); ctx.lineTo(x - fs * 0.32, handY);
+  ctx.moveTo(x + g.tw * 0.42, g.tTop + fs * 0.3); ctx.lineTo(x + fs * 0.32, handY);
+  ctx.stroke();
+  // kaula
+  ctx.lineWidth = fs * 0.24; ctx.beginPath(); ctx.moveTo(x, g.hy + g.headR - 1); ctx.lineTo(x, g.tTop + 2); ctx.stroke();
+  // paita ja numero
+  ctx.fillStyle = col; ctx.strokeStyle = act ? COL.ink : 'rgba(0,0,0,0.18)'; ctx.lineWidth = act ? 2 : 1;
+  roundRect(ctx, x - g.tw / 2, g.tTop, g.tw, g.tBot - g.tTop, fs * 0.45); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = '#fff'; ctx.font = `700 ${Math.round(fs * 0.95)}px ${FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillText(String(i + 1), x, (g.tTop + g.tBot) / 2 + 0.5);
+  // pää
+  ctx.fillStyle = '#f3ddc4'; ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = 1.4;
+  ctx.beginPath(); ctx.arc(x, g.hy, g.headR, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
   ctx.lineCap = 'butt';
 }
-/** Katkaisumerkki pystynuolen varressa: nuoli on todellista lyhyempi, arvo lukee nimiössä. */
-function breakMark(ctx, x, y, color) {
-  ctx.strokeStyle = '#fff'; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(x - 6, y + 4); ctx.lineTo(x + 6, y - 4); ctx.stroke();
-  ctx.strokeStyle = color; ctx.lineWidth = 1.8; ctx.beginPath();
-  ctx.moveTo(x - 7, y + 1); ctx.lineTo(x + 5, y - 7); ctx.moveTo(x - 5, y + 7); ctx.lineTo(x + 7, y - 1); ctx.stroke();
+/** Kädet otteessa, piirretään tukin päälle. */
+function hands(ctx, x, handY, i) {
+  const { fs } = L, act = S.drag === i || S.hover === i;
+  ctx.fillStyle = '#f3ddc4'; ctx.strokeStyle = act ? COL.ink : COL.ink2; ctx.lineWidth = 1.3;
+  for (const sx of [-1, 1]) { ctx.beginPath(); ctx.arc(x + sx * fs * 0.32, handY, fs * 0.21, 0, 2 * Math.PI); ctx.fill(); ctx.stroke(); }
+}
+function figGeom(x) {
+  const { fs } = L, bot = L.ly + L.lt / 2, headR = fs * 0.6;
+  const hy = bot + fs * 2.9 + headR, tw = fs * 1.6, tTop = hy + headR + fs * 0.3, tBot = tTop + fs * 2.7;   // pää mittaviivojen alapuolella
+  return { x, headR, hy, tw, tTop, tBot };
 }
 function roundRect(ctx, x, y, w, h, r) {
   ctx.beginPath(); ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.arcTo(x + w, y, x + w, y + r, r); ctx.lineTo(x + w, y + h - r);
@@ -523,6 +539,7 @@ bindRange('m', (v) => fmt(v, 0) + NBSP + 'kg', (v) => { S.m = v; });
 function syncX() { for (let i = 0; i < 2; i++) if (Math.abs(+ctlX[i].el.value - S.x[i]) > 1e-9) ctlX[i].set(S.x[i]); }
 document.getElementById('showM').addEventListener('change', (e) => { S.showM = e.target.checked; });
 document.getElementById('showVal').addEventListener('change', (e) => { S.showVal = e.target.checked; });
+document.getElementById('showEq').addEventListener('change', (e) => { S.showEq = e.target.checked; });
 document.getElementById('reset').addEventListener('click', () => { S.x = DEF.slice(); syncX(); });
 
 /* Raahaus: kantajaan tartutaan tukin alta ja siirretään vaakasuunnassa. */
