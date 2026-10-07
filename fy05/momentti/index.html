@@ -95,24 +95,24 @@
 <body>
 <div class="app">
   <div class="stage">
-    <canvas id="cv" role="img" aria-label="Vaakasuora palkki, joka voi kiertyä keskellä olevan tukipisteen ympäri. Palkkiin vaikuttaa kaksi alaspäin suuntautuvaa voimaa."></canvas>
+    <canvas id="cv" role="img" aria-label="Vaakasuora palkki, joka voi kiertyä keskellä olevan tukipisteen ympäri. Palkista riippuu kaksi punnusta, tai siihen vaikuttaa kaksi alaspäin suuntautuvaa voimaa."></canvas>
   </div>
 
   <div class="panel" aria-label="Säätimet">
     <div class="seg" role="group" aria-label="Kuormitus">
-      <button type="button" data-mode="force" aria-pressed="true">Voimat</button><button type="button" data-mode="mass" aria-pressed="false">Punnukset</button>
+      <button type="button" data-mode="mass" aria-pressed="true">Punnukset</button><button type="button" data-mode="force" aria-pressed="false">Voimat</button>
     </div>
     <div class="group">
-      <label class="ctl"><span class="ctl-head"><span><span class="nm1">Voima</span> <span class="sym q1">F</span><sub>1</sub></span><b data-for="q1"></b></span>
-        <input id="q1" type="range" min="0" max="50" step="1" value="20" aria-label="Vasemman voiman suuruus"></label>
+      <label class="ctl"><span class="ctl-head"><span><span class="nm1">Massa</span> <span class="sym q1">m</span><sub>1</sub></span><b data-for="q1"></b></span>
+        <input id="q1" type="range" min="0" max="5" step="0.1" value="1" aria-label="Vasen massa tai voima"></label>
       <label class="ctl"><span class="ctl-head"><span>Etäisyys <span class="sym">r</span><sub>1</sub></span><b data-for="r1"></b></span>
-        <input id="r1" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="Vasemman voiman etäisyys tukipisteestä"></label>
+        <input id="r1" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Vasemman kuorman etäisyys tukipisteestä"></label>
     </div>
     <div class="group">
-      <label class="ctl"><span class="ctl-head"><span><span class="nm2">Voima</span> <span class="sym q2">F</span><sub>2</sub></span><b data-for="q2"></b></span>
-        <input id="q2" type="range" min="0" max="50" step="1" value="30" aria-label="Oikean voiman suuruus"></label>
+      <label class="ctl"><span class="ctl-head"><span><span class="nm2">Massa</span> <span class="sym q2">m</span><sub>2</sub></span><b data-for="q2"></b></span>
+        <input id="q2" type="range" min="0" max="5" step="0.1" value="2" aria-label="Oikea massa tai voima"></label>
       <label class="ctl"><span class="ctl-head"><span>Etäisyys <span class="sym">r</span><sub>2</sub></span><b data-for="r2"></b></span>
-        <input id="r2" type="range" min="0" max="1" step="0.05" value="0.4" aria-label="Oikean voiman etäisyys tukipisteestä"></label>
+        <input id="r2" type="range" min="0" max="1" step="0.05" value="0.4" aria-label="Oikean kuorman etäisyys tukipisteestä"></label>
     </div>
     <div class="group">
       <label class="chk"><input type="checkbox" id="showM"> Näytä momentit</label>
@@ -293,9 +293,9 @@ const TH_MAX = 6 * Math.PI / 180;   // suurin kallistus: palkki nojaa tukeen
 const I_BEAM = 3.0;      // palkin hitausmomentti, kg·m² (vain liikkeen rauhallisuutta varten)
 const DAMP = 1.6;        // vaimennus, 1/s (laakerin kitka ja ilmanvastus)
 
-const DEF = { force: [20, 30], mass: [2.0, 3.0], r: [0.6, 0.4] };
+const DEF = { force: [20, 40], mass: [1.0, 2.0], r: [0.8, 0.4] };   // tasapainossa: puolet massasta kaksinkertaisella etäisyydellä
 const S = {
-  mode: 'force',                // 'force' = voimat nuolina, 'mass' = riippuvat punnukset
+  mode: 'mass',                 // 'mass' = riippuvat punnukset (oletus), 'force' = voimat nuolina
   F: DEF.force.slice(),         // voimat N (voimatila)
   m: DEF.mass.slice(),          // massat kg (punnustila)
   r: DEF.r.slice(),             // etäisyydet tukipisteestä, m
@@ -375,8 +375,8 @@ function layout(v) {
   const kF = Math.max(0.4, upRoom) / 50, kFm = Math.max(0.4, downRoom) / 50;
   L = { W, H, fs, s, cx, cy, ground, kF, kFm, t };
 }
-/** Punnuksen sivun pituus (px): tilavuus ∝ massa, joten sivu ∝ ∛m. */
-function blockSide(m) { return m > 0 ? 12 + 13 * Math.cbrt(m) : 0; }
+/** Punnuksen sivun pituus (px): piirroksen pinta-ala ∝ massa, jotta massojen ero erottuu. */
+function blockSide(m) { return m > 0 ? 10 + 15 * Math.sqrt(m) : 0; }
 
 /** Palkin piste etäisyydellä u (m, vasen negatiivinen) ja sivusiirtymällä n (px, ylös +). */
 function beamPt(u, n = 0) {
