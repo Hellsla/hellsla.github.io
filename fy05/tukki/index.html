@@ -109,6 +109,7 @@
     <div class="group">
       <label class="chk"><input type="checkbox" id="showM" checked> Näytä momentit</label>
       <label class="chk"><input type="checkbox" id="showVal" checked> Näytä arvot</label>
+      <label class="chk"><input type="checkbox" id="showEq"> Näytä yhtälöt</label>
     </div>
     <p class="hint">Kantajia voi myös raahata tukin alla.</p>
     <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
@@ -293,7 +294,7 @@ function startLoop({ dt, step, draw, running }) {
    ===================================================================== */
 const g = 9.81, LEN = 4.0, MINSEP = 0.3;        // tukin pituus (m) ja kantajien pienin väli (m)
 const DEF = [3.5, 1.0];
-const S = { x: DEF.slice(), m: 40, showM: true, showVal: true, drag: -1, hover: -1 };
+const S = { x: DEF.slice(), m: 40, showM: true, showVal: true, showEq: false, drag: -1, hover: -1 };   // yhtälöt ja selitykset piilossa oletuksena
 const colF = [COL.blue, COL.red];
 
 /** Tasapainon vaatimat voimat ja momentit painopisteen suhteen (vastapäivään +). */
@@ -349,20 +350,20 @@ function draw() {
     boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
   };
 
-  // yhtälöt vasempaan yläkulmaan (rivit lyhyitä, jotta ne mahtuvat kapeallekin kankaalle)
+  // yhtälöt ja selitys vasempaan yläkulmaan vain pyydettäessä (rivit lyhyitä, jotta ne mahtuvat kapeallekin kankaalle)
   const rows = [];
-  if (val) {
+  if (S.showEq && val) {
     rows.push([`{F}_1 + {F}_2 = ${Ftxt(F[0])} + ${Ftxt(F[1])} = ${fmt(G, 0)}${NBSP}N = {G}`, COL.ink2]);
     if (S.showM) {
       for (let i = 0; i < 2; i++) rows.push([`{M}_${i + 1} = {F}_${i + 1}{r}_${i + 1} = ${Ftxt(F[i])} · ${r[i] < 0 ? `(${fmt(r[i], 2)}${NBSP}m)` : `${fmt(r[i], 2)}${NBSP}m`} = ${signed(M[i])}${NBSP}Nm`, colF[i]]);
       rows.push(['Σ{M}_P = {M}_1 + {M}_2 = 0   (vastapäivään +)', COL.ink2]);
     }
-  } else {
+  } else if (S.showEq) {
     rows.push(['Σ{F} = 0:   {F}_1 + {F}_2 = {G}', COL.ink2]);
     if (S.showM) { rows.push(['Σ{M}_P = 0:   {F}_1{r}_1 + {F}_2{r}_2 = 0', COL.ink2]); rows.push(['({r} oikealle +, momentti vastapäivään +)', COL.ink3]); }
   }
   const far = Math.abs(r[0]) >= Math.abs(r[1]) ? 0 : 1;             // kauempana painopisteestä
-  if (neg[0] || neg[1]) {
+  if (!S.showEq) { /* ei selitystä */ } else if (neg[0] || neg[1]) {
     const a = neg[0] ? 0 : 1;
     rows.push([`Molemmat samalla puolella P:tä: kantaja ${a + 1} painaa alas,`, COL.red]);
     rows.push([`kantaja ${2 - a} kantaa enemmän kuin tukin koko painon`, COL.red]);
@@ -372,10 +373,10 @@ function draw() {
     rows.push([`Lähempänä P:tä oleva kantaja ${2 - far} kantaa enemmän`, COL.ink2]);
   }
   let ef = fs * 0.88;
-  let ew = Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true })));
+  let ew = rows.length ? Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))) : 0;
   if (ew > W - 28) { ef *= (W - 28) / ew; ew = W - 28; }            // kapea kangas: pienennetään kirjasinta
-  const elh = ef * 1.4, ey0 = 14, blockBottom = ey0 + rows.length * elh;
-  boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: blockBottom });
+  const elh = ef * 1.4, ey0 = 14, blockBottom = rows.length ? ey0 + rows.length * elh : 10;
+  if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: blockBottom });
 
   // Painon nuoli on aina saman pituinen (3,7 em) massasta ja kantajien paikoista riippumatta; kantajien
   // voimat piirretään samassa mittakaavassa painon kanssa. Nuoli, joka ei mahdu lohkon ja tukin väliin
@@ -547,6 +548,7 @@ bindRange('m', (v) => fmt(v, 0) + NBSP + 'kg', (v) => { S.m = v; });
 function syncX() { for (let i = 0; i < 2; i++) if (Math.abs(+ctlX[i].el.value - S.x[i]) > 1e-9) ctlX[i].set(S.x[i]); }
 document.getElementById('showM').addEventListener('change', (e) => { S.showM = e.target.checked; });
 document.getElementById('showVal').addEventListener('change', (e) => { S.showVal = e.target.checked; });
+document.getElementById('showEq').addEventListener('change', (e) => { S.showEq = e.target.checked; });
 document.getElementById('reset').addEventListener('click', () => { S.x = DEF.slice(); syncX(); });
 
 /* Raahaus: kantajaan tartutaan tukin alta ja siirretään vaakasuunnassa. */
