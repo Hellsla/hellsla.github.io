@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tasapaino ja painopiste · FY05</title>
+<title>Tasapaino kaltevalla tasolla · FY05</title>
 <style>
   /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
      Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
@@ -88,30 +88,30 @@
   }
 
   /* ---------- tämän simulaation omat ---------- */
-  .seg{align-self:stretch}
-  .seg button{flex:1 1 0;padding:0 .4em;font-size:.84em}
   .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
 </style>
 </head>
 <body>
 <div class="app">
   <div class="stage">
-    <canvas id="cv" role="img" aria-label="Kappale riippuu tukipisteestä, jota voi siirtää kappaleen sisällä. Kun tuki on painopisteessä, kappale pysyy tasapainossa missä asennossa tahansa. Muualta tuettu kappale kääntyy, kunnes painopiste on tukipisteen alapuolella."></canvas>
+    <canvas id="cv" role="img" aria-label="Laatikko kaltevalla tasolla, jonka kaltevuutta voi kasvattaa. Painopisteestä piirretty painon vaikutussuora leikkaa tukipinnan, kun laatikko pysyy pystyssä. Kun vaikutussuora ei enää leikkaa tukipintaa, laatikko kaatuu alemman kulmansa ympäri."></canvas>
   </div>
 
   <div class="panel" aria-label="Säätimet">
-    <div class="seg" role="group" aria-label="Kappaleen muoto">
-      <button type="button" data-shape="box" aria-pressed="true">Laatikko</button><button type="button" data-shape="plank" aria-pressed="false">Lauta</button><button type="button" data-shape="tri" aria-pressed="false">Kolmio</button>
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Kaltevuus <span class="sym">θ</span></span><b data-for="th"></b></span>
+        <input id="th" type="range" min="0" max="60" step="1" value="10" aria-label="Tason kaltevuuskulma"></label>
+      <label class="ctl"><span class="ctl-head"><span>Laatikon korkeus <span class="sym">h</span></span><b data-for="h"></b></span>
+        <input id="h" type="range" min="0.3" max="1.4" step="0.1" value="1" aria-label="Laatikon korkeus"></label>
     </div>
     <div class="group">
-      <label class="chk"><input type="checkbox" id="showF" checked> Näytä voimat</label>
-      <label class="chk"><input type="checkbox" id="showM"> Näytä momenttivarsi</label>
+      <label class="chk"><input type="checkbox" id="showN"> Näytä tukivoimat</label>
       <label class="chk"><input type="checkbox" id="showVal"> Näytä arvot</label>
     </div>
-    <p class="hint">Raahaa tukipistettä (rengas) tai käännä kappaletta raahaamalla.</p>
-    <button class="btn wide" id="toP" type="button" title="Siirrä tukipiste painopisteeseen">Tuki painopisteeseen</button>
-    <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
+    <button class="btn primary wide" id="tilt" type="button" title="Kasvata kaltevuutta hitaasti"></button>
+    <button class="btn wide" id="reset" type="button" title="Laatikko takaisin pystyyn, kaltevuus alkuun">
       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+    <p class="hint">Laatikon leveys on 0,60 m. Oletetaan, että kitka estää liukumisen.</p>
   </div>
 </div>
 
@@ -277,82 +277,74 @@ function startLoop({ dt, step, draw, running }) {
 }
 
 /* =====================================================================
-   Fysiikka: painopisteestään tuettu kappale
-   Tasapaksu kappale (massa m) riippuu tukipisteestä Q, joka voi olla missä tahansa
-   kappaleen kohdassa. Tukivoima N = G on ylöspäin Q:ssa ja paino G alaspäin
-   painopisteessä P. Voimien summa on nolla aina; momentti Q:n suhteen on
-        M = G·d,   d = painopisteen vaakasuora etäisyys tukipisteestä.
-   Jos Q on painopisteessä, d = 0 kaikissa asennoissa: kappale on tasapainossa
-   missä asennossa tahansa. Muuten kappale kääntyy (I_Q·α = M, pieni vaimennus),
-   kunnes painopiste on tukipisteen alapuolella ja d = 0.
-   Kappaleen hitausmomentti lasketaan monikulmion kaavoilla: I_Q = I_P + m·|QP|².
+   Fysiikka: laatikko kaltevalla tasolla, joka kallistuu
+   Laatikko (leveys w, korkeus h, massa m) seisoo tasolla, jonka kaltevuus θ kasvaa.
+   Kitkan oletetaan estävän liukumisen. Paino G = m·g vaikuttaa painopisteessä P
+   laatikon keskellä. Tason tukivoiman ja kitkan resultantti vaikuttaa siinä
+   tukipinnan kohdassa X, jossa painon vaikutussuora leikkaa tukipinnan:
+        N = G·cos θ (kohtisuoraan tasoa vastaan),  f = G·sin θ (tasoa pitkin ylös).
+   Vaikutussuora leikkaa tukipinnan, kun  (h/2)·tan θ ≤ w/2  eli  tan θ ≤ w/h.
+   Kun θ ylittää kaatumiskulman arctan(w/h), painon momentti alemman kulman C
+   suhteen kaataa laatikon: I_C·α = G·d, missä d on P:n vaakasuora etäisyys C:stä
+   ja I_C = m(w² + h²)/3. Laatikko kaatuu kyljelleen tasolle (törmäys täysin
+   kimmoton), minkä jälkeen sen tukipinta on entinen kylki.
    ===================================================================== */
-const g = 9.81, MASS = 2.0, DAMP = 1.3;      // kg, vaimennus 1/s (laakerikitka, ilmanvastus)
-/** Muodot kärkipisteinä (m, y ylöspäin). Painopiste lasketaan. */
-const SHAPES = {
-  box: { name: 'laatikko', pts: [[-0.3, -0.5], [0.3, -0.5], [0.3, 0.5], [-0.3, 0.5]] },
-  plank: { name: 'lauta', pts: [[-0.8, -0.06], [0.8, -0.06], [0.8, 0.06], [-0.8, 0.06]] },
-  tri: { name: 'kolmio', pts: [[-0.5, -0.4], [0.5, -0.4], [0, 0.6]] },
-};
-/** Monikulmion pinta-ala, painopiste ja hitausmomentti painopisteen suhteen (massa MASS). */
-function polyProps(pts) {
-  let A = 0, cx = 0, cy = 0, J = 0;
-  for (let i = 0; i < pts.length; i++) {
-    const [x0, y0] = pts[i], [x1, y1] = pts[(i + 1) % pts.length], c = x0 * y1 - x1 * y0;
-    A += c / 2; cx += (x0 + x1) * c / 6; cy += (y0 + y1) * c / 6;
-    J += (x0 * x0 + x0 * x1 + x1 * x1 + y0 * y0 + y0 * y1 + y1 * y1) * c / 12;
-  }
-  cx /= A; cy /= A;
-  const I0 = MASS / A * J;                              // origon suhteen
-  return { A, P: { x: cx, y: cy }, I: I0 - MASS * (cx * cx + cy * cy) };
-}
+const g = 9.81, MASS = 4.0, WIDTH = 0.6, LPLANE = 3.0, L0 = 1.7, TILT_RATE = 5 * Math.PI / 180;   // m, m, m saranasta ylöspäin, rad/s
 const S = {
-  shape: 'box', th: 0, om: 0,                           // kiertokulma (rad, myötäpäivään +) ja kulmanopeus
-  Qb: { x: 0, y: 0 },                                   // tukipiste kappaleen koordinaateissa (m, y ylös); alussa painopisteessä
-  Qw: null,                                             // tukipiste ruudulla (px); asetetaan ensimmäisessä piirrossa
-  show: { F: true, M: false, val: false },
-  drag: null, hover: null,                              // 'pin' | 'rot'
+  th: 10 * Math.PI / 180,               // tason kaltevuus
+  w: WIDTH, h: 1.0,                     // laatikon leveys (tasoa pitkin) ja korkeus
+  s0: L0,                               // tukipinnan keskikohdan etäisyys saranasta tasoa pitkin (m)
+  phi: 0, om: 0, tipping: false,        // kaatumiskulma alemman kulman ympäri, kulmanopeus
+  tilting: false,                       // "Kallista": kaltevuus kasvaa hitaasti
+  show: { N: false, val: false },
 };
-let prop = polyProps(SHAPES[S.shape].pts);
-const G = MASS * g;
-/** Kappaleen piste (m, y ylös) → ruutu (px, y alas), kun kappale on kiertynyt kulman θ tukipisteen ympäri. */
-function toWorld(b) {
-  const dx = b.x - S.Qb.x, dy = -(b.y - S.Qb.y), c = Math.cos(S.th), sn = Math.sin(S.th);
-  return { x: S.Qw.x + (dx * c - dy * sn) * L.s, y: S.Qw.y + (dx * sn + dy * c) * L.s };
-}
-/** Ruudun piste → kappaleen koordinaatit (m, y ylös). */
-function toBody(w) {
-  const dx = (w.x - S.Qw.x) / L.s, dy = (w.y - S.Qw.y) / L.s, c = Math.cos(S.th), sn = Math.sin(S.th);
-  return { x: S.Qb.x + dx * c + dy * sn, y: S.Qb.y - (-dx * sn + dy * c) };
-}
-const atP = () => Math.hypot(S.Qb.x - prop.P.x, S.Qb.y - prop.P.y) < 1e-6;
-/** Painon momentti tukipisteen suhteen (Nm, myötäpäivään +) ja momenttivarsi d (m, oikealle +). */
-function moment() {
-  const Pw = toWorld(prop.P), d = (Pw.x - S.Qw.x) / L.s;
-  return { d, M: G * d, Pw };
+const G = () => MASS * g;
+const critical = () => Math.atan(S.w / S.h);           // kaatumiskulma
+
+/* Geometria ruudulla (px). Sarana on oikealla alhaalla; taso nousee vasemmalle. */
+function geom() {
+  const { s, hinge } = L, c = Math.cos(S.th), sn = Math.sin(S.th);
+  const e = { x: c, y: sn };                            // tasoa pitkin alaspäin (oikealle)
+  const n = { x: sn, y: -c };                           // tasosta poispäin (ylös)
+  const at = (along, up) => ({ x: hinge.x - along * s * c + up * s * sn, y: hinge.y - along * s * sn - up * s * c });   // (m saranasta tasoa pitkin ylös, m tasosta ylös)
+  const B0 = at(S.s0, 0), CL = at(S.s0 + S.w / 2, 0), CR = at(S.s0 - S.w / 2, 0);          // tukipinnan keskikohta, ylä- ja alakulma
+  let corners = [CL, CR, at(S.s0 - S.w / 2, S.h), at(S.s0 + S.w / 2, S.h)];
+  let P = at(S.s0, S.h / 2);
+  if (S.phi > 0) {                                      // kaatuminen: kierto alemman kulman CR ympäri myötäpäivään
+    const cp = Math.cos(S.phi), sp = Math.sin(S.phi);
+    const rot = (p) => { const vx = p.x - CR.x, vy = p.y - CR.y; return { x: CR.x + vx * cp - vy * sp, y: CR.y + vx * sp + vy * cp }; };
+    corners = corners.map(rot); P = rot(P);
+  }
+  const top = at(LPLANE, 0);
+  // painon vaikutussuoran ja tukipinnan (tason) leikkauspiste X: tasoa pitkin B0:sta alaspäin sX = (h/2)·tan θ
+  const sX = (S.h / 2) * Math.tan(S.th);
+  const X = at(S.s0 - sX, 0), inside = Math.abs(sX) <= S.w / 2 + 1e-9;
+  return { e, n, B0, CL, CR, corners, P, top, X, sX, inside };
 }
 function step(dt) {
-  if (S.drag || !S.Qw) return;
-  const { M } = moment();
-  const r2 = (S.Qb.x - prop.P.x) ** 2 + (S.Qb.y - prop.P.y) ** 2;
-  const IQ = prop.I + MASS * r2;
-  const alpha = (atP() ? 0 : M / IQ) - DAMP * S.om;
-  S.om += alpha * dt;
-  S.th += S.om * dt;
-  if (Math.abs(S.om) < 2e-4 && (atP() || Math.abs(M) < 1e-3)) S.om = 0;
-}
-function setShape(key) {
-  S.shape = key; prop = polyProps(SHAPES[key].pts);
-  S.Qb = { ...prop.P }; S.th = 0; S.om = 0;
-  if (L.W) S.Qw = { x: L.W * 0.5, y: L.H * 0.42 };
-}
-function pointInPoly(b, pts) {
-  let inside = false;
-  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
-    const [xi, yi] = pts[i], [xj, yj] = pts[j];
-    if ((yi > b.y) !== (yj > b.y) && b.x < (xj - xi) * (b.y - yi) / (yj - yi) + xi) inside = !inside;
+  if (S.tilting && !S.tipping) {
+    S.th = Math.min(60 * Math.PI / 180, S.th + TILT_RATE * dt);
+    syncTh();
+    if (S.th >= 60 * Math.PI / 180 - 1e-9) { S.tilting = false; paintTilt(); }
   }
-  return inside;
+  if (!S.tipping && S.phi === 0 && Math.tan(S.th) > S.w / S.h + 1e-9) { S.tipping = true; S.om = 0; S.tilting = false; paintTilt(); }
+  if (S.tipping) {
+    const gm = geom(), d = (gm.P.x - gm.CR.x) / L.s;    // momenttivarsi alemman kulman suhteen (m, oikealle +)
+    const IC = MASS * (S.w * S.w + S.h * S.h) / 3;
+    S.om += G() * d / IC * dt;
+    S.phi += S.om * dt;
+    if (S.phi >= Math.PI / 2) {                         // kylki osuu tasoon: uusi tukipinta on entinen kylki
+      const w = S.w, h = S.h;
+      S.s0 = S.s0 - w / 2 - h / 2; S.w = h; S.h = w;
+      S.phi = 0; S.om = 0; S.tipping = false;
+      if (S.s0 - S.w / 2 < 0) S.s0 = S.w / 2;           // ei saranan ohi
+    }
+  }
+}
+function resetBox(keepTh) {
+  S.w = WIDTH; S.h = +document.getElementById('h').value; S.s0 = L0; S.phi = 0; S.om = 0; S.tipping = false; S.tilting = false;
+  if (!keepTh) { S.th = 10 * Math.PI / 180; syncTh(); }
+  paintTilt();
 }
 
 /* =====================================================================
@@ -361,186 +353,131 @@ function pointInPoly(b, pts) {
 const cv = document.getElementById('cv');
 let L = {};
 const view = setupCanvas(cv, (v) => {
-  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
-  const prev = L.W ? { fx: S.Qw ? S.Qw.x / L.W : 0.5, fy: S.Qw ? S.Qw.y / L.H : 0.42 } : { fx: 0.5, fy: 0.42 };
-  L = { W: v.W, H: v.H, fs, s: Math.min(v.W, v.H) * 0.33 };   // s: px/m
-  S.Qw = { x: v.W * prev.fx, y: v.H * prev.fy };            // tukipiste pysyy suhteellisesti paikallaan
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18), pad = fs * 1.2;
+  const ground = v.H - fs * 1.6;
+  const s = Math.min((v.W - 2 * pad - fs * 3) / (LPLANE + 0.2), (ground - fs * 2.2) / 2.75);   // mahtuu 60°:een asti
+  L = { W: v.W, H: v.H, fs, s, ground, hinge: { x: v.W - pad - fs * 0.5, y: ground } };
 });
 
 function draw() {
-  const { ctx, dpr } = view, { W, H, fs } = L;
+  const { ctx, dpr } = view, { W, H, fs, ground, hinge } = L;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, W, H);
-  const pts = SHAPES[S.shape].pts.map(([x, y]) => toWorld({ x, y }));
-  const { d, M, Pw } = moment(), Q = S.Qw, val = S.show.val, pinned = atP();
+  const gm = geom(), { e, n, corners, P, top, X, inside } = gm, val = S.show.val;
+  const stable = inside && !S.tipping, Gv = G();
+  const col = stable ? COL.green : COL.red;
 
   /* ---- nimiöiden sijoittelu ---- */
-  const arcs = [], boxes = [], labels = [];
+  const boxes = [], labels = [];
   const boxOf = (txt, size, c) => {
     const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
     const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
     return { x0, x1: x0 + w, y0: c.y - h / 2, y1: c.y + h / 2 };
   };
   const clash = (b) => b.x0 < 2 || b.x1 > W - 2 || b.y0 < 2 || b.y1 > H - 2
-    || arcs.some((k) => arcHit(b, k)) || boxes.some((o) => o.x0 < b.x1 + 3 && b.x0 < o.x1 + 3 && o.y0 < b.y1 + 1 && b.y0 < o.y1 + 1);
+    || boxes.some((o) => o.x0 < b.x1 + 3 && b.x0 < o.x1 + 3 && o.y0 < b.y1 + 1 && b.y0 < o.y1 + 1);
   const label = (txt, size, color, cands) => {
     let pick = cands[0];
     for (const c of cands) { if (!clash(boxOf(txt, size, c))) { pick = c; break; } }
     boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
   };
 
-  // tila ja yhtälöt vasempaan yläkulmaan vain momenttivarren kanssa
-  const ef = fs * 0.88, elh = ef * 1.4, rows = [];
-  if (S.show.M) {
-    rows.push([val ? `{M} = {G}{d} = ${fmt(G, 1)}${NBSP}N · ${fmt(Math.abs(d), 2)}${NBSP}m = ${fmt(Math.abs(M), 1)}${NBSP}Nm` : '{M} = {G}{d}', COL.ink2]);
-    if (pinned) rows.push(['Tuki painopisteessä: {d} = 0 ja {M} = 0 kaikissa asennoissa', COL.green]);
-    else if (Math.abs(d) < 0.005 && Math.abs(S.om) < 0.03) rows.push(['Painopiste on tukipisteen alapuolella: {d} = 0, tasapaino', COL.green]);
-    else rows.push(['Momentti kääntää kappaletta, kunnes painopiste on tukipisteen alla', COL.ink2]);
+  // arvot vasempaan yläkulmaan
+  const ef = fs * 0.88, rows = [];
+  if (val) {
+    rows.push([`{θ} = ${fmt(S.th * 180 / Math.PI, 0)}°`, COL.ink2]);
+    rows.push([`kaatuu, kun tan {θ} > {w}/{h}  eli  {θ} > ${fmt(critical() * 180 / Math.PI, 0)}°`, COL.ink2]);
+    rows.push([S.tipping ? 'Kaatuu' : inside ? 'Vaikutussuora leikkaa tukipinnan: pysyy pystyssä' : 'Vaikutussuora ohittaa tukipinnan: kaatuu', col]);
+    if (S.show.N) rows.push([`{N} = {G} cos {θ} = ${fmt(Gv * Math.cos(S.th), 1)}${NBSP}N,   {f} = {G} sin {θ} = ${fmt(Gv * Math.sin(S.th), 1)}${NBSP}N`, COL.ink2]);
   }
-  let ew = rows.length ? Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))) : 0;
-  let efx = ef;
+  let efx = ef, ew = rows.length ? Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))) : 0;
   if (ew > W - 28) { efx = ef * (W - 28) / ew; ew = W - 28; }
-  if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: 14 + rows.length * elh });
+  if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: 14 + rows.length * efx * 1.4 });
 
-  // voimien mittakaava: paino 3,2 em
-  const kF = fs * 3.2 / G;
-  const Gt = { x: Pw.x, y: Pw.y + G * kF }, Nt = { x: Q.x, y: Q.y - G * kF };
-  if (S.show.M && !pinned && Math.abs(d) > 0.005) { const k = arcGeom(Q.x, Q.y, fs * 1.6, M); if (k) arcs.push(k); }
-  boxes.push({ x0: Q.x - 10, x1: Q.x + 10, y0: Q.y - 10, y1: Q.y + 10 });                     // tukipisteen rengas
-  if (S.show.F) {
-    boxes.push({ x0: Pw.x - 3, x1: Pw.x + 3, y0: Pw.y, y1: Gt.y });
-    boxes.push({ x0: Q.x - 3, x1: Q.x + 3, y0: Nt.y, y1: Q.y });
+  // voimat
+  const kF = fs * 3.0 / Gv;
+  const Gt = { x: P.x, y: P.y + Gv * kF };
+  const Nt = { x: X.x + n.x * Gv * Math.cos(S.th) * kF, y: X.y + n.y * Gv * Math.cos(S.th) * kF };
+  const ft = { x: X.x - e.x * Gv * Math.sin(S.th) * kF, y: X.y - e.y * Gv * Math.sin(S.th) * kF };
+  boxes.push({ x0: P.x - 3, x1: P.x + 3, y0: P.y, y1: Gt.y });
+  const showN = S.show.N && !S.tipping;
+  if (showN) boxes.push({ x0: Math.min(X.x, Nt.x) - 3, x1: Math.max(X.x, Nt.x) + 3, y0: Math.min(X.y, Nt.y), y1: Math.max(X.y, Nt.y) });
+
+  // nimiöt
+  label('P', fs * 0.9, COL.ink, [{ x: P.x + fs * 0.55, y: P.y - fs * 0.45, align: 'left' }, { x: P.x - fs * 0.55, y: P.y - fs * 0.45, align: 'right' }]);
+  label(val ? `{->G} = ${fmt(Gv, 1)}${NBSP}N` : '{->G}', fs, COL.blue, [{ x: Gt.x + fs * 0.6, y: Gt.y - fs * 0.3, align: 'left' }, { x: Gt.x - fs * 0.6, y: Gt.y - fs * 0.3, align: 'right' }, { x: Gt.x, y: Gt.y + fs * 0.9, align: 'center' }]);
+  if (showN) {
+    label(val ? `{->N} = ${fmt(Gv * Math.cos(S.th), 1)}${NBSP}N` : '{->N}', fs, COL.green, [{ x: Nt.x + n.x * fs * 0.9, y: Nt.y + n.y * fs * 0.9, align: 'center' }, { x: Nt.x + fs * 0.6, y: Nt.y, align: 'left' }, { x: Nt.x - fs * 0.6, y: Nt.y, align: 'right' }]);
+    if (S.th > 0.01) label(val ? `{->f} = ${fmt(Gv * Math.sin(S.th), 1)}${NBSP}N` : '{->f}', fs, COL.orange, [{ x: ft.x - e.x * fs * 0.3, y: ft.y + fs * 0.95, align: 'right' }, { x: ft.x - e.x * fs * 0.6, y: ft.y - fs * 0.8, align: 'right' }, { x: ft.x, y: ft.y + fs * 2.0, align: 'right' }]);
   }
-  // nimiöt: P, Q, voimat, d
-  label('P', fs * 0.9, COL.ink, [{ x: Pw.x + fs * 0.6, y: Pw.y - fs * 0.5, align: 'left' }, { x: Pw.x - fs * 0.6, y: Pw.y - fs * 0.5, align: 'right' }, { x: Pw.x + fs * 0.6, y: Pw.y + fs * 0.6, align: 'left' }]);
-  if (!pinned) label('Q', fs * 0.9, COL.red, [{ x: Q.x - fs * 0.75, y: Q.y - fs * 0.6, align: 'right' }, { x: Q.x + fs * 0.75, y: Q.y - fs * 0.6, align: 'left' }, { x: Q.x - fs * 0.75, y: Q.y + fs * 0.7, align: 'right' }]);
-  if (S.show.F) {
-    label(val ? `{->G} = ${fmt(G, 1)}${NBSP}N` : '{->G}', fs, COL.blue, [{ x: Gt.x + fs * 0.6, y: Gt.y - fs * 0.2, align: 'left' }, { x: Gt.x - fs * 0.6, y: Gt.y - fs * 0.2, align: 'right' }, { x: Gt.x, y: Gt.y + fs * 0.9, align: 'center' }]);
-    label(val ? `{->N} = ${fmt(G, 1)}${NBSP}N` : '{->N}', fs, COL.green, [{ x: Nt.x + fs * 0.6, y: Nt.y + fs * 0.2, align: 'left' }, { x: Nt.x - fs * 0.6, y: Nt.y + fs * 0.2, align: 'right' }, { x: Nt.x, y: Nt.y - fs * 0.9, align: 'center' }]);
-  }
-  if (S.show.M && !pinned && Math.abs(d) > 0.005) {
-    const mx = (Q.x + Pw.x) / 2, yd = Math.max(Q.y, Pw.y) + fs * 1.1;
-    label(val ? `{d} = ${fmt(Math.abs(d), 2)}${NBSP}m` : '{d}', fs * 0.95, COL.red, [{ x: mx, y: yd + fs * 0.7, align: 'center' }, { x: mx, y: yd - fs * 0.7, align: 'center' }]);
+  if (S.th > 0.01) {
+    const ra = fs * 2.1, am = Math.PI + S.th / 2;
+    label(val ? `{θ} = ${fmt(S.th * 180 / Math.PI, 0)}°` : '{θ}', fs * 0.95, COL.ink2,
+      [{ x: hinge.x + (ra + fs * 0.5) * Math.cos(am), y: Math.min(hinge.y + (ra + fs * 0.5) * Math.sin(am) - fs * 0.1, ground - fs * 0.7), align: 'right' },
+        { x: hinge.x + fs * 0.6, y: ground - fs * 0.7, align: 'left' }, { x: hinge.x - ra - fs * 2.5, y: ground - fs * 0.7, align: 'right' }]);
   }
 
   /* ---- piirtäminen ---- */
-  // ripustus: ohut tanko kankaan yläreunasta tukipisteeseen
-  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 3; ctx.lineCap = 'butt';
-  ctx.beginPath(); ctx.moveTo(Q.x, 0); ctx.lineTo(Q.x, Q.y); ctx.stroke();
-  // kappale
+  // maa ja viivoitus
+  ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.6;
+  ctx.beginPath(); ctx.moveTo(0, ground); ctx.lineTo(W, ground); ctx.stroke();
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1; ctx.beginPath();
+  for (let x = 0; x < W; x += 14) { ctx.moveTo(x, ground + 1); ctx.lineTo(x - 7, ground + 8); }
+  ctx.stroke();
+  // kulman merkki saranassa
+  if (S.th > 0.01) { ctx.strokeStyle = COL.ink2; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.arc(hinge.x, hinge.y, fs * 2.1, Math.PI, Math.PI + S.th); ctx.stroke(); }
+  // taso: lauta saranasta yläpäähän
+  ctx.strokeStyle = '#8b6b45'; ctx.lineWidth = 6; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(hinge.x, hinge.y); ctx.lineTo(top.x, top.y); ctx.stroke(); ctx.lineCap = 'butt';
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(hinge.x, hinge.y, 4, 0, 2 * Math.PI); ctx.fill();
+  // laatikko
   ctx.fillStyle = 'rgba(232,238,243,0.95)'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 2; ctx.lineJoin = 'round';
-  ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y))); ctx.closePath(); ctx.fill(); ctx.stroke();
-  // momenttivarsi: vaikutussuorat katkoviivoina ja vaakasuora d
-  if (S.show.M) {
-    const yd = Math.max(Q.y, Pw.y) + fs * 1.1;
-    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([5, 4]);
-    ctx.beginPath(); ctx.moveTo(Q.x, Q.y); ctx.lineTo(Q.x, yd + fs * 0.3); ctx.moveTo(Pw.x, Pw.y); ctx.lineTo(Pw.x, yd + fs * 0.3); ctx.stroke();
-    ctx.setLineDash([]);
-    if (!pinned && Math.abs(d) > 0.005) {
-      ctx.strokeStyle = COL.red; ctx.lineWidth = 1.6;
-      ctx.beginPath(); ctx.moveTo(Q.x, yd); ctx.lineTo(Pw.x, yd); ctx.stroke();
-      for (const x of [Q.x, Pw.x]) { ctx.beginPath(); ctx.moveTo(x, yd - 4); ctx.lineTo(x, yd + 4); ctx.stroke(); }
+  ctx.beginPath(); corners.forEach((p, i) => (i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y))); ctx.closePath(); ctx.fill(); ctx.stroke();
+  // tukipinta korostettuna: vihreä, kun painon vaikutussuora leikkaa sen
+  if (!S.tipping) { ctx.strokeStyle = col; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(gm.CL.x, gm.CL.y); ctx.lineTo(gm.CR.x, gm.CR.y); ctx.stroke(); }
+  // painon vaikutussuora painopisteestä alaspäin maahan asti
+  ctx.strokeStyle = col; ctx.lineWidth = 1.4; ctx.setLineDash([6, 5]);
+  ctx.beginPath(); ctx.moveTo(P.x, P.y); ctx.lineTo(P.x, Math.max(ground, P.y + fs)); ctx.stroke(); ctx.setLineDash([]);
+  // leikkauspiste tukipinnan kanssa (tai sen jatkeella)
+  if (!S.tipping) {
+    ctx.fillStyle = inside ? '#fff' : 'rgba(255,255,255,0.7)'; ctx.strokeStyle = col; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(X.x, X.y, 5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+    if (!inside) {                                        // vaikutussuora ohittaa tukipinnan: näytetään ohitus tason jatkeella
+      ctx.strokeStyle = col; ctx.lineWidth = 1.2; ctx.setLineDash([3, 4]);
+      ctx.beginPath(); ctx.moveTo(gm.CR.x, gm.CR.y); ctx.lineTo(X.x, X.y); ctx.stroke(); ctx.setLineDash([]);
     }
-    for (const k of arcs) drawArc(k, COL.red);
   }
-  // painopiste ja tukipiste
-  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(Pw.x, Pw.y, 4, 0, 2 * Math.PI); ctx.fill();
-  const act = S.drag === 'pin' || S.hover === 'pin';
-  ctx.fillStyle = act ? COL.red : '#fff'; ctx.strokeStyle = COL.red; ctx.lineWidth = 2.2;
-  ctx.beginPath(); ctx.arc(Q.x, Q.y, act ? 8 : 7, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
-  ctx.fillStyle = act ? '#fff' : COL.red; ctx.beginPath(); ctx.arc(Q.x, Q.y, 2.4, 0, 2 * Math.PI); ctx.fill();
-  // voimat
-  if (S.show.F) {
-    arrow(ctx, Pw.x, Pw.y, Gt.x, Gt.y, COL.blue, { width: 3 });
-    arrow(ctx, Q.x, Q.y, Nt.x, Nt.y, COL.green, { width: 3 });
+  // painopiste ja voimat
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(P.x, P.y, 4, 0, 2 * Math.PI); ctx.fill();
+  arrow(ctx, P.x, P.y, Gt.x, Gt.y, COL.blue, { width: 3 });
+  if (showN) {
+    arrow(ctx, X.x, X.y, Nt.x, Nt.y, COL.green, { width: 2.8 });
+    if (S.th > 0.01) arrow(ctx, X.x, X.y, ft.x, ft.y, COL.orange, { width: 2.8 });
   }
-  // nimiöt ja tekstit
+  // nimiöt ja arvot
   for (const l of labels) drawRich(ctx, l.txt, l.c.x, l.c.y, { size: l.size, color: l.color, align: l.c.align, halo: true });
   let ey = 14 + efx * 0.6;
   for (const [t, c] of rows) { drawRich(ctx, t, 14, ey, { size: efx, color: c, halo: true }); ey += efx * 1.4; }
-}
-/** Kaarinuoli tukipisteen ympäri: alkaa ylhäältä ja kiertää momentin suuntaan; pituus kasvaa momentin mukana. */
-function arcGeom(x, y, R, M) {
-  if (Math.abs(M) < 0.05) return null;
-  const cw = M > 0, sweep = Math.min(150, 30 + 12 * Math.abs(M)) * Math.PI / 180, a0 = -Math.PI / 2;
-  return { x, y, R, a0, a1: a0 + (cw ? sweep : -sweep), cw, sweep };
-}
-function arcHit(b, k, m = 6) {
-  const n = 16;
-  for (let i = 0; i <= n; i++) {
-    const a = k.a0 + (k.a1 - k.a0) * i / n;
-    for (const rr of [k.R - m, k.R, k.R + m]) {
-      const qx = k.x + rr * Math.cos(a), qy = k.y + rr * Math.sin(a);
-      if (qx >= b.x0 && qx <= b.x1 && qy >= b.y0 && qy <= b.y1) return true;
-    }
-  }
-  return false;
-}
-function drawArc(k, color) {
-  const { ctx } = view, { x, y, R, a0, a1, cw, sweep } = k;
-  const headA = Math.min(sweep * 0.6, 10 / R);
-  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 2.2; ctx.lineCap = 'butt';
-  ctx.beginPath(); ctx.arc(x, y, R, a0, a1 + (cw ? -headA : headA), !cw); ctx.stroke();
-  const ex = x + R * Math.cos(a1), ey = y + R * Math.sin(a1);
-  const tx = (cw ? -1 : 1) * Math.sin(a1), ty = (cw ? 1 : -1) * Math.cos(a1);
-  const bx = ex - tx * 10, by = ey - ty * 10;
-  ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(bx - ty * 5, by + tx * 5); ctx.lineTo(bx + ty * 5, by - tx * 5); ctx.closePath(); ctx.fill();
 }
 
 /* =====================================================================
    Käyttöliittymä
    ===================================================================== */
-document.querySelectorAll('[data-shape]').forEach((b) => b.addEventListener('click', () => {
-  setShape(b.dataset.shape);
-  document.querySelectorAll('[data-shape]').forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
-}));
-for (const [id, key] of [['showF', 'F'], ['showM', 'M'], ['showVal', 'val']]) {
+const thCtl = bindRange('th', (v) => fmt(v, 0) + '°', (v) => { S.th = v * Math.PI / 180; });
+bindRange('h', (v) => fmt(v, 2) + NBSP + 'm', () => { resetBox(true); });
+function syncTh() { const v = S.th * 180 / Math.PI; if (Math.abs(+thCtl.el.value - v) > 0.01) thCtl.set(v); }
+const tiltBtn = document.getElementById('tilt');
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+function paintTilt() { tiltBtn.innerHTML = S.tilting ? ICON_PAUSE + 'Pysäytä' : ICON_PLAY + 'Kallista'; }
+tiltBtn.addEventListener('click', () => { S.tilting = !S.tilting; paintTilt(); });
+document.getElementById('reset').addEventListener('click', () => resetBox(false));
+for (const [id, key] of [['showN', 'N'], ['showVal', 'val']]) {
   const el = document.getElementById(id);
   S.show[key] = el.checked;
   el.addEventListener('change', () => { S.show[key] = el.checked; });
 }
-document.getElementById('toP').addEventListener('click', () => {
-  // tukipiste painopisteeseen: kappale pysyy paikallaan, tuki siirtyy sen sisällä
-  const Pw = toWorld(prop.P);
-  S.Qb = { ...prop.P }; S.Qw = Pw; S.om = 0;
-});
-document.getElementById('reset').addEventListener('click', () => setShape(S.shape));
-
-/* Raahaus: rengas siirtää tukipistettä kappaleen sisällä (napsahtaa painopisteeseen), muualta kappaletta käännetään. */
-const pos = (e) => view.pt(e);
-let rot0 = 0;
-function hit(p) {
-  if (Math.hypot(p.x - S.Qw.x, p.y - S.Qw.y) < 16) return 'pin';
-  if (pointInPoly(toBody(p), SHAPES[S.shape].pts)) return 'rot';
-  return null;
-}
-cv.addEventListener('pointerdown', (e) => {
-  const p = pos(e), h = hit(p);
-  if (!h) return;
-  S.drag = h; S.om = 0;
-  if (h === 'rot') rot0 = S.th - Math.atan2(p.y - S.Qw.y, p.x - S.Qw.x);
-  cv.setPointerCapture(e.pointerId); e.preventDefault();
-});
-cv.addEventListener('pointermove', (e) => {
-  const p = pos(e);
-  if (S.drag === 'pin') {                                   // tukipiste seuraa osoitinta kappaleen sisällä
-    const b = toBody(p);
-    if (pointInPoly(b, SHAPES[S.shape].pts)) {
-      const snap = Math.hypot(b.x - prop.P.x, b.y - prop.P.y) < 0.05;
-      const nb = snap ? { ...prop.P } : { x: Math.round(b.x * 100) / 100, y: Math.round(b.y * 100) / 100 };
-      S.Qw = toWorld(nb); S.Qb = nb;                       // kappale pysyy paikallaan, tuki siirtyy
-    }
-    return;
-  }
-  if (S.drag === 'rot') { S.th = rot0 + Math.atan2(p.y - S.Qw.y, p.x - S.Qw.x); return; }
-  S.hover = hit(p);
-  cv.style.cursor = S.hover === 'pin' ? 'grab' : S.hover === 'rot' ? 'grab' : 'default';
-});
-const endDrag = () => { S.drag = null; S.om = 0; };
-cv.addEventListener('pointerup', endDrag);
-cv.addEventListener('pointercancel', endDrag);
-
-setShape('box');
+paintTilt();
 startLoop({ dt: 1 / 240, step, draw, running: () => true });
 })();
 </script>
