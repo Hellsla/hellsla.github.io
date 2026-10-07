@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasapaino ja painopiste · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .seg{align-self:stretch}
+  .seg button{flex:1 1 0;padding:0 .4em;font-size:.84em}
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Kappale riippuu tukipisteestä, jota voi siirtää kappaleen sisällä. Kun tuki on painopisteessä, kappale pysyy tasapainossa missä asennossa tahansa. Muualta tuettu kappale kääntyy, kunnes painopiste on tukipisteen alapuolella."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <div class="seg" role="group" aria-label="Kappaleen muoto">
+      <button type="button" data-shape="box" aria-pressed="true">Laatikko</button><button type="button" data-shape="plank" aria-pressed="false">Lauta</button><button type="button" data-shape="tri" aria-pressed="false">Kolmio</button>
+    </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showF" checked> Näytä voimat</label>
+      <label class="chk"><input type="checkbox" id="showM"> Näytä momenttivarsi</label>
+      <label class="chk"><input type="checkbox" id="showVal"> Näytä arvot</label>
+    </div>
+    <p class="hint">Raahaa tukipistettä (rengas) tai käännä kappaletta raahaamalla.</p>
+    <button class="btn wide" id="toP" type="button" title="Siirrä tukipiste painopisteeseen">Tuki painopisteeseen</button>
+    <button class="btn wide" id="reset" type="button" title="Palauta alkutilanne">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: painopisteestään tuettu kappale
+   Tasapaksu kappale (massa m) riippuu tukipisteestä Q, joka voi olla missä tahansa
+   kappaleen kohdassa. Tukivoima N = G on ylöspäin Q:ssa ja paino G alaspäin
+   painopisteessä P. Voimien summa on nolla aina; momentti Q:n suhteen on
+        M = G·d,   d = painopisteen vaakasuora etäisyys tukipisteestä.
+   Jos Q on painopisteessä, d = 0 kaikissa asennoissa: kappale on tasapainossa
+   missä asennossa tahansa. Muuten kappale kääntyy (I_Q·α = M, pieni vaimennus),
+   kunnes painopiste on tukipisteen alapuolella ja d = 0.
+   Kappaleen hitausmomentti lasketaan monikulmion kaavoilla: I_Q = I_P + m·|QP|².
+   ===================================================================== */
+const g = 9.81, MASS = 2.0, DAMP = 1.3;      // kg, vaimennus 1/s (laakerikitka, ilmanvastus)
+/** Muodot kärkipisteinä (m, y ylöspäin). Painopiste lasketaan. */
+const SHAPES = {
+  box: { name: 'laatikko', pts: [[-0.3, -0.5], [0.3, -0.5], [0.3, 0.5], [-0.3, 0.5]] },
+  plank: { name: 'lauta', pts: [[-0.8, -0.06], [0.8, -0.06], [0.8, 0.06], [-0.8, 0.06]] },
+  tri: { name: 'kolmio', pts: [[-0.5, -0.4], [0.5, -0.4], [0, 0.6]] },
+};
+/** Monikulmion pinta-ala, painopiste ja hitausmomentti painopisteen suhteen (massa MASS). */
+function polyProps(pts) {
+  let A = 0, cx = 0, cy = 0, J = 0;
+  for (let i = 0; i < pts.length; i++) {
+    const [x0, y0] = pts[i], [x1, y1] = pts[(i + 1) % pts.length], c = x0 * y1 - x1 * y0;
+    A += c / 2; cx += (x0 + x1) * c / 6; cy += (y0 + y1) * c / 6;
+    J += (x0 * x0 + x0 * x1 + x1 * x1 + y0 * y0 + y0 * y1 + y1 * y1) * c / 12;
+  }
+  cx /= A; cy /= A;
+  const I0 = MASS / A * J;                              // origon suhteen
+  return { A, P: { x: cx, y: cy }, I: I0 - MASS * (cx * cx + cy * cy) };
+}
+const S = {
+  shape: 'box', th: 0, om: 0,                           // kiertokulma (rad, myötäpäivään +) ja kulmanopeus
+  Qb: { x: 0, y: 0 },                                   // tukipiste kappaleen koordinaateissa (m, y ylös); alussa painopisteessä
+  Qw: null,                                             // tukipiste ruudulla (px); asetetaan ensimmäisessä piirrossa
+  show: { F: true, M: false, val: false },
+  drag: null, hover: null,                              // 'pin' | 'rot'
+};
+let prop = polyProps(SHAPES[S.shape].pts);
+const G = MASS * g;
+/** Kappaleen piste (m, y ylös) → ruutu (px, y alas), kun kappale on kiertynyt kulman θ tukipisteen ympäri. */
+function toWorld(b) {
+  const dx = b.x - S.Qb.x, dy = -(b.y - S.Qb.y), c = Math.cos(S.th), sn = Math.sin(S.th);
+  return { x: S.Qw.x + (dx * c - dy * sn) * L.s, y: S.Qw.y + (dx * sn + dy * c) * L.s };
+}
+/** Ruudun piste → kappaleen koordinaatit (m, y ylös). */
+function toBody(w) {
+  const dx = (w.x - S.Qw.x) / L.s, dy = (w.y - S.Qw.y) / L.s, c = Math.cos(S.th), sn = Math.sin(S.th);
+  return { x: S.Qb.x + dx * c + dy * sn, y: S.Qb.y - (-dx * sn + dy * c) };
+}
+const atP = () => Math.hypot(S.Qb.x - prop.P.x, S.Qb.y - prop.P.y) < 1e-6;
+/** Painon momentti tukipisteen suhteen (Nm, myötäpäivään +) ja momenttivarsi d (m, oikealle +). */
+function moment() {
+  const Pw = toWorld(prop.P), d = (Pw.x - S.Qw.x) / L.s;
+  return { d, M: G * d, Pw };
+}
+function step(dt) {
+  if (S.drag || !S.Qw) return;
+  const { M } = moment();
+  const r2 = (S.Qb.x - prop.P.x) ** 2 + (S.Qb.y - prop.P.y) ** 2;
+  const IQ = prop.I + MASS * r2;
+  const alpha = (atP() ? 0 : M / IQ) - DAMP * S.om;
+  S.om += alpha * dt;
+  S.th += S.om * dt;
+  if (Math.abs(S.om) < 2e-4 && (atP() || Math.abs(M) < 1e-3)) S.om = 0;
+}
+function setShape(key) {
+  S.shape = key; prop = polyProps(SHAPES[key].pts);
+  S.Qb = { ...prop.P }; S.th = 0; S.om = 0;
+  if (L.W) S.Qw = { x: L.W * 0.5, y: L.H * 0.42 };
+}
+function pointInPoly(b, pts) {
+  let inside = false;
+  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+    const [xi, yi] = pts[i], [xj, yj] = pts[j];
+    if ((yi > b.y) !== (yj > b.y) && b.x < (xj - xi) * (b.y - yi) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
+  const prev = L.W ? { fx: S.Qw ? S.Qw.x / L.W : 0.5, fy: S.Qw ? S.Qw.y / L.H : 0.42 } : { fx: 0.5, fy: 0.42 };
+  L = { W: v.W, H: v.H, fs, s: Math.min(v.W, v.H) * 0.33 };   // s: px/m
+  S.Qw = { x: v.W * prev.fx, y: v.H * prev.fy };            // tukipiste pysyy suhteellisesti paikallaan
+});
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const pts = SHAPES[S.shape].pts.map(([x, y]) => toWorld({ x, y }));
+  const { d, M, Pw } = moment(), Q = S.Qw, val = S.show.val, pinned = atP();
+
+  /* ---- nimiöiden sijoittelu ---- */
+  const arcs = [], boxes = [], labels = [];
+  const boxOf = (txt, size, c) => {
+    const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
+    const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
+    return { x0, x1: x0 + w, y0: c.y - h / 2, y1: c.y + h / 2 };
+  };
+  const clash = (b) => b.x0 < 2 || b.x1 > W - 2 || b.y0 < 2 || b.y1 > H - 2
+    || arcs.some((k) => arcHit(b, k)) || boxes.some((o) => o.x0 < b.x1 + 3 && b.x0 < o.x1 + 3 && o.y0 < b.y1 + 1 && b.y0 < o.y1 + 1);
+  const label = (txt, size, color, cands) => {
+    let pick = cands[0];
+    for (const c of cands) { if (!clash(boxOf(txt, size, c))) { pick = c; break; } }
+    boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
+  };
+
+  // tila ja yhtälöt vasempaan yläkulmaan vain momenttivarren kanssa
+  const ef = fs * 0.88, elh = ef * 1.4, rows = [];
+  if (S.show.M) {
+    rows.push([val ? `{M} = {G}{d} = ${fmt(G, 1)}${NBSP}N · ${fmt(Math.abs(d), 2)}${NBSP}m = ${fmt(Math.abs(M), 1)}${NBSP}Nm` : '{M} = {G}{d}', COL.ink2]);
+    if (pinned) rows.push(['Tuki painopisteessä: {d} = 0 ja {M} = 0 kaikissa asennoissa', COL.green]);
+    else if (Math.abs(d) < 0.005 && Math.abs(S.om) < 0.03) rows.push(['Painopiste on tukipisteen alapuolella: {d} = 0, tasapaino', COL.green]);
+    else rows.push(['Momentti kääntää kappaletta, kunnes painopiste on tukipisteen alla', COL.ink2]);
+  }
+  let ew = rows.length ? Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))) : 0;
+  let efx = ef;
+  if (ew > W - 28) { efx = ef * (W - 28) / ew; ew = W - 28; }
+  if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 10, y1: 14 + rows.length * elh });
+
+  // voimien mittakaava: paino 3,2 em
+  const kF = fs * 3.2 / G;
+  const Gt = { x: Pw.x, y: Pw.y + G * kF }, Nt = { x: Q.x, y: Q.y - G * kF };
+  if (S.show.M && !pinned && Math.abs(d) > 0.005) { const k = arcGeom(Q.x, Q.y, fs * 1.6, M); if (k) arcs.push(k); }
+  boxes.push({ x0: Q.x - 10, x1: Q.x + 10, y0: Q.y - 10, y1: Q.y + 10 });                     // tukipisteen rengas
+  if (S.show.F) {
+    boxes.push({ x0: Pw.x - 3, x1: Pw.x + 3, y0: Pw.y, y1: Gt.y });
+    boxes.push({ x0: Q.x - 3, x1: Q.x + 3, y0: Nt.y, y1: Q.y });
+  }
+  // nimiöt: P, Q, voimat, d
+  label('P', fs * 0.9, COL.ink, [{ x: Pw.x + fs * 0.6, y: Pw.y - fs * 0.5, align: 'left' }, { x: Pw.x - fs * 0.6, y: Pw.y - fs * 0.5, align: 'right' }, { x: Pw.x + fs * 0.6, y: Pw.y + fs * 0.6, align: 'left' }]);
+  if (!pinned) label('Q', fs * 0.9, COL.red, [{ x: Q.x - fs * 0.75, y: Q.y - fs * 0.6, align: 'right' }, { x: Q.x + fs * 0.75, y: Q.y - fs * 0.6, align: 'left' }, { x: Q.x - fs * 0.75, y: Q.y + fs * 0.7, align: 'right' }]);
+  if (S.show.F) {
+    label(val ? `{->G} = ${fmt(G, 1)}${NBSP}N` : '{->G}', fs, COL.blue, [{ x: Gt.x + fs * 0.6, y: Gt.y - fs * 0.2, align: 'left' }, { x: Gt.x - fs * 0.6, y: Gt.y - fs * 0.2, align: 'right' }, { x: Gt.x, y: Gt.y + fs * 0.9, align: 'center' }]);
+    label(val ? `{->N} = ${fmt(G, 1)}${NBSP}N` : '{->N}', fs, COL.green, [{ x: Nt.x + fs * 0.6, y: Nt.y + fs * 0.2, align: 'left' }, { x: Nt.x - fs * 0.6, y: Nt.y + fs * 0.2, align: 'right' }, { x: Nt.x, y: Nt.y - fs * 0.9, align: 'center' }]);
+  }
+  if (S.show.M && !pinned && Math.abs(d) > 0.005) {
+    const mx = (Q.x + Pw.x) / 2, yd = Math.max(Q.y, Pw.y) + fs * 1.1;
+    label(val ? `{d} = ${fmt(Math.abs(d), 2)}${NBSP}m` : '{d}', fs * 0.95, COL.red, [{ x: mx, y: yd + fs * 0.7, align: 'center' }, { x: mx, y: yd - fs * 0.7, align: 'center' }]);
+  }
+
+  /* ---- piirtäminen ---- */
+  // ripustus: ohut tanko kankaan yläreunasta tukipisteeseen
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 3; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(Q.x, 0); ctx.lineTo(Q.x, Q.y); ctx.stroke();
+  // kappale
+  ctx.fillStyle = 'rgba(232,238,243,0.95)'; ctx.strokeStyle = COL.ink; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+  ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y))); ctx.closePath(); ctx.fill(); ctx.stroke();
+  // momenttivarsi: vaikutussuorat katkoviivoina ja vaakasuora d
+  if (S.show.M) {
+    const yd = Math.max(Q.y, Pw.y) + fs * 1.1;
+    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([5, 4]);
+    ctx.beginPath(); ctx.moveTo(Q.x, Q.y); ctx.lineTo(Q.x, yd + fs * 0.3); ctx.moveTo(Pw.x, Pw.y); ctx.lineTo(Pw.x, yd + fs * 0.3); ctx.stroke();
+    ctx.setLineDash([]);
+    if (!pinned && Math.abs(d) > 0.005) {
+      ctx.strokeStyle = COL.red; ctx.lineWidth = 1.6;
+      ctx.beginPath(); ctx.moveTo(Q.x, yd); ctx.lineTo(Pw.x, yd); ctx.stroke();
+      for (const x of [Q.x, Pw.x]) { ctx.beginPath(); ctx.moveTo(x, yd - 4); ctx.lineTo(x, yd + 4); ctx.stroke(); }
+    }
+    for (const k of arcs) drawArc(k, COL.red);
+  }
+  // painopiste ja tukipiste
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(Pw.x, Pw.y, 4, 0, 2 * Math.PI); ctx.fill();
+  const act = S.drag === 'pin' || S.hover === 'pin';
+  ctx.fillStyle = act ? COL.red : '#fff'; ctx.strokeStyle = COL.red; ctx.lineWidth = 2.2;
+  ctx.beginPath(); ctx.arc(Q.x, Q.y, act ? 8 : 7, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = act ? '#fff' : COL.red; ctx.beginPath(); ctx.arc(Q.x, Q.y, 2.4, 0, 2 * Math.PI); ctx.fill();
+  // voimat
+  if (S.show.F) {
+    arrow(ctx, Pw.x, Pw.y, Gt.x, Gt.y, COL.blue, { width: 3 });
+    arrow(ctx, Q.x, Q.y, Nt.x, Nt.y, COL.green, { width: 3 });
+  }
+  // nimiöt ja tekstit
+  for (const l of labels) drawRich(ctx, l.txt, l.c.x, l.c.y, { size: l.size, color: l.color, align: l.c.align, halo: true });
+  let ey = 14 + efx * 0.6;
+  for (const [t, c] of rows) { drawRich(ctx, t, 14, ey, { size: efx, color: c, halo: true }); ey += efx * 1.4; }
+}
+/** Kaarinuoli tukipisteen ympäri: alkaa ylhäältä ja kiertää momentin suuntaan; pituus kasvaa momentin mukana. */
+function arcGeom(x, y, R, M) {
+  if (Math.abs(M) < 0.05) return null;
+  const cw = M > 0, sweep = Math.min(150, 30 + 12 * Math.abs(M)) * Math.PI / 180, a0 = -Math.PI / 2;
+  return { x, y, R, a0, a1: a0 + (cw ? sweep : -sweep), cw, sweep };
+}
+function arcHit(b, k, m = 6) {
+  const n = 16;
+  for (let i = 0; i <= n; i++) {
+    const a = k.a0 + (k.a1 - k.a0) * i / n;
+    for (const rr of [k.R - m, k.R, k.R + m]) {
+      const qx = k.x + rr * Math.cos(a), qy = k.y + rr * Math.sin(a);
+      if (qx >= b.x0 && qx <= b.x1 && qy >= b.y0 && qy <= b.y1) return true;
+    }
+  }
+  return false;
+}
+function drawArc(k, color) {
+  const { ctx } = view, { x, y, R, a0, a1, cw, sweep } = k;
+  const headA = Math.min(sweep * 0.6, 10 / R);
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 2.2; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.arc(x, y, R, a0, a1 + (cw ? -headA : headA), !cw); ctx.stroke();
+  const ex = x + R * Math.cos(a1), ey = y + R * Math.sin(a1);
+  const tx = (cw ? -1 : 1) * Math.sin(a1), ty = (cw ? 1 : -1) * Math.cos(a1);
+  const bx = ex - tx * 10, by = ey - ty * 10;
+  ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(bx - ty * 5, by + tx * 5); ctx.lineTo(bx + ty * 5, by - tx * 5); ctx.closePath(); ctx.fill();
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+document.querySelectorAll('[data-shape]').forEach((b) => b.addEventListener('click', () => {
+  setShape(b.dataset.shape);
+  document.querySelectorAll('[data-shape]').forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+}));
+for (const [id, key] of [['showF', 'F'], ['showM', 'M'], ['showVal', 'val']]) {
+  const el = document.getElementById(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+document.getElementById('toP').addEventListener('click', () => {
+  // tukipiste painopisteeseen: kappale pysyy paikallaan, tuki siirtyy sen sisällä
+  const Pw = toWorld(prop.P);
+  S.Qb = { ...prop.P }; S.Qw = Pw; S.om = 0;
+});
+document.getElementById('reset').addEventListener('click', () => setShape(S.shape));
+
+/* Raahaus: rengas siirtää tukipistettä kappaleen sisällä (napsahtaa painopisteeseen), muualta kappaletta käännetään. */
+const pos = (e) => view.pt(e);
+let rot0 = 0;
+function hit(p) {
+  if (Math.hypot(p.x - S.Qw.x, p.y - S.Qw.y) < 16) return 'pin';
+  if (pointInPoly(toBody(p), SHAPES[S.shape].pts)) return 'rot';
+  return null;
+}
+cv.addEventListener('pointerdown', (e) => {
+  const p = pos(e), h = hit(p);
+  if (!h) return;
+  S.drag = h; S.om = 0;
+  if (h === 'rot') rot0 = S.th - Math.atan2(p.y - S.Qw.y, p.x - S.Qw.x);
+  cv.setPointerCapture(e.pointerId); e.preventDefault();
+});
+cv.addEventListener('pointermove', (e) => {
+  const p = pos(e);
+  if (S.drag === 'pin') {                                   // tukipiste seuraa osoitinta kappaleen sisällä
+    const b = toBody(p);
+    if (pointInPoly(b, SHAPES[S.shape].pts)) {
+      const snap = Math.hypot(b.x - prop.P.x, b.y - prop.P.y) < 0.05;
+      const nb = snap ? { ...prop.P } : { x: Math.round(b.x * 100) / 100, y: Math.round(b.y * 100) / 100 };
+      S.Qw = toWorld(nb); S.Qb = nb;                       // kappale pysyy paikallaan, tuki siirtyy
+    }
+    return;
+  }
+  if (S.drag === 'rot') { S.th = rot0 + Math.atan2(p.y - S.Qw.y, p.x - S.Qw.x); return; }
+  S.hover = hit(p);
+  cv.style.cursor = S.hover === 'pin' ? 'grab' : S.hover === 'rot' ? 'grab' : 'default';
+});
+const endDrag = () => { S.drag = null; S.om = 0; };
+cv.addEventListener('pointerup', endDrag);
+cv.addEventListener('pointercancel', endDrag);
+
+setShape('box');
+startLoop({ dt: 1 / 240, step, draw, running: () => true });
+})();
+</script>
+</body>
+</html>
