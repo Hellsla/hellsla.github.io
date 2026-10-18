@@ -97,7 +97,7 @@
 <body>
 <div class="app">
   <div class="stage">
-    <canvas id="cv" role="img" aria-label="Erilaisia liikkeitä: suoraviivainen liike, heittoliike, karuselli, pyöräilijä velodromilla ja polkimen liike. Kappaleen rata piirtyy, ja x- ja y-koordinaatin muutoksia voi seurata kuvaajasta."></canvas>
+    <canvas id="cv" role="img" aria-label="Erilaisia liikkeitä: karuselli, pyöräilijä velodromilla, polkimen kampi, kellon viisari, suoraviivainen liike ja heitto. Kappaleen merkin paikka näyttää kappaleen paikan ja nuoli sen asennon. Ympyräliikkeessä paikka ja asento muuttuvat, pyörimisliikkeessä vain asento."></canvas>
   </div>
 
   <div class="panel" aria-label="Säätimet">
@@ -106,6 +106,7 @@
       <button class="btn" type="button" data-m="carousel">Karuselli</button>
       <button class="btn" type="button" data-m="cyclist">Pyöräilijä</button>
       <button class="btn" type="button" data-m="pedal">Poljin</button>
+      <button class="btn" type="button" data-m="clock">Kello</button>
       <button class="btn" type="button" data-m="line">Suora</button>
       <button class="btn" type="button" data-m="throw">Heitto</button>
     </div>
@@ -113,11 +114,11 @@
     <button class="btn wide" id="reset" type="button" title="Kappale lähtöpaikkaan ja rata tyhjäksi">
       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
     <div class="group">
-      <label class="chk"><input type="checkbox" id="showPath" checked><span class="key" style="--c:var(--c-blue)"></span>Näytä rata</label>
-      <label class="chk"><input type="checkbox" id="showXY"><span class="key none"></span>Näytä koordinaatit</label>
-      <label class="chk"><input type="checkbox" id="showCirc"><span class="key" style="--c:var(--c-orange)"></span>Korosta ympyrärata</label>
+      <label class="chk"><input type="checkbox" id="showPath" checked><span class="key" style="--c:var(--c-blue)"></span>Rata</label>
+      <label class="chk"><input type="checkbox" id="showXY"><span class="key none"></span>Paikka ja asento</label>
+      <label class="chk"><input type="checkbox" id="showKind"><span class="key" style="--c:var(--c-orange)"></span>Liikkeen laji</label>
     </div>
-    <p class="hint">Koordinaatit näyttävät, muuttuuko paikka yhdessä vai kahdessa ulottuvuudessa.</p>
+    <p class="hint">Merkin paikka on kappaleen paikka ja nuoli sen asento.</p>
   </div>
 </div>
 
@@ -283,46 +284,52 @@ function startLoop({ dt, step, draw, running }) {
 }
 
 /* =====================================================================
-   Erilaisia liikkeitä: rata ja paikan koordinaatit
-   Kappaleen paikka (x, y) lasketaan suoraan ajan funktiona:
-     Karuselli:  ympyrä, r = 1,5 m, T = 4,0 s          x = r cos(2πt/T),  y = r sin(2πt/T)
-     Pyöräilijä: velodromi, suorat 4,0 m ja kaarteet (puoliympyrät, r = 1,5 m), vauhti 3,0 m/s
-     Poljin:     kampi r = 0,17 m, T = 2,0 s (myötäpäivään, pyörä kulkee oikealle)
-     Suora:      x = vt, y = 0, v = 2,0 m/s (8 m, sitten alusta)
-     Heitto:     v₀ = 10 m/s, 60°: x = v₀ cos 60° · t, y = v₀ sin 60° · t − ½gt²
-   Suoraviivaisessa liikkeessä vain x muuttuu (yksi ulottuvuus); ympyräliikkeessä ja heitossa
-   muuttuvat sekä x että y (tasoliike, kaksi ulottuvuutta).
+   Erilaisia liikkeitä: paikka ja asento
+   Kappaleen tila on sen paikka (x, y) ja asento (kulma θ vastapäivään x-akselilta).
+     Ympyräliike:        paikka kiertää ympyrää ja asento muuttuu (karuselli, pyöräilijä kaarteessa)
+     Pyörimisliike:      paikka pysyy, vain asento muuttuu (polkimen kampi ja ratas, kellon viisari)
+     Suoraviivainen:     vain paikka muuttuu yhteen suuntaan (auto suoralla, pyöräilijä suoralla)
+     Heittoliike:        paikka muuttuu kahdessa ulottuvuudessa, asento pysyy (ei pyörimistä)
+   Karuselli r = 1,5 m, T = 4,0 s; velodromi: suorat 4,0 m, kaarteet r = 1,5 m, vauhti 3,0 m/s;
+   kampi r = 0,17 m, T = 2,0 s; kellon minuuttiviisari kiertää nopeutettuna 6 s:ssa;
+   heitto v₀ = 10 m/s, 60°; suora v = 2,0 m/s.
    ===================================================================== */
 const TAU = 2 * Math.PI, g = 9.81;
 const SL = 4, SR = 1.5, LT = 2 * SL + TAU * SR, VC = 3;            // velodromin suorat, kaarteen säde, kierroksen pituus, vauhti
 const VX = 10 * Math.cos(Math.PI / 3), VY = 10 * Math.sin(Math.PI / 3), TF = 2 * VY / g;   // heitto
 const mod = (a, b) => ((a % b) + b) % b;
-/** Velodromin keskiviiva matkan s funktiona (vastapäivään, alkaa alasuoran vasemmasta päästä). */
+/** Velodromin keskiviiva matkan s funktiona (vastapäivään, alkaa alasuoran vasemmasta päästä); th = kulkusuunta. */
 function stadium(s) {
   s = mod(s, LT);
-  if (s < SL) return { x: -SL / 2 + s, y: -SR, curve: false };
+  if (s < SL) return { x: -SL / 2 + s, y: -SR, th: 0, curve: false };
   s -= SL;
-  if (s < Math.PI * SR) { const a = -Math.PI / 2 + s / SR; return { x: SL / 2 + SR * Math.cos(a), y: SR * Math.sin(a), curve: true }; }
+  if (s < Math.PI * SR) { const a = -Math.PI / 2 + s / SR; return { x: SL / 2 + SR * Math.cos(a), y: SR * Math.sin(a), th: a + Math.PI / 2, curve: true }; }
   s -= Math.PI * SR;
-  if (s < SL) return { x: SL / 2 - s, y: SR, curve: false };
+  if (s < SL) return { x: SL / 2 - s, y: SR, th: Math.PI, curve: false };
   s -= SL;
   const a = Math.PI / 2 + s / SR;
-  return { x: -SL / 2 + SR * Math.cos(a), y: SR * Math.sin(a), curve: true };
+  return { x: -SL / 2 + SR * Math.cos(a), y: SR * Math.sin(a), th: a + Math.PI / 2, curve: true };
 }
 const MOTIONS = {
-  carousel: { box: [-2.1, 2.1, -2.1, 2.1], vr: [-1.7, 1.7], period: 4, pos: (t) => ({ x: 1.5 * Math.cos(TAU * t / 4), y: 1.5 * Math.sin(TAU * t / 4) }),
-    status: () => 'Ympyräliike: rata on ympyrä' },
-  cyclist: { box: [-SL / 2 - SR - 0.55, SL / 2 + SR + 0.55, -SR - 0.6, SR + 0.6], vr: [-3.7, 3.7], period: LT / VC, pos: (t) => stadium(VC * t),
-    status: (p) => (p.curve ? 'Kaarteessa ympyräliike' : 'Suoralla suoraviivainen liike') },
-  pedal: { box: [-0.24, 0.24, -0.24, 0.24], vr: [-0.2, 0.2], period: 2, pos: (t) => ({ x: 0.17 * Math.cos(-TAU * t / 2), y: 0.17 * Math.sin(-TAU * t / 2) }),
-    status: () => 'Ympyräliike: rata on ympyrä' },
-  line: { box: [-0.6, 8.6, -1.2, 1.2], vr: [-1, 9], wrap: 4.6, pos: (t) => ({ x: 2 * Math.min(mod(t, 4.6), 4), y: 0 }),
-    status: () => 'Suoraviivainen liike: vain x muuttuu' },
-  throw: { box: [-0.6, 9.6, -0.7, 4.4], vr: [-1, 10], wrap: 2.6, pos: (t) => { const s = Math.min(mod(t, 2.6), TF); return { x: VX * s, y: VY * s - g * s * s / 2 }; },
-    status: () => 'Tasoliike, mutta rata ei ole ympyrä' },
+  carousel: { box: [-2.1, 2.1, -2.1, 2.1], vr: [-1.7, 1.7], period: 4,
+    pose: (t) => { const a = TAU * t / 4; return { x: 1.5 * Math.cos(a), y: 1.5 * Math.sin(a), th: a + Math.PI / 2 }; },
+    kind: () => 'Ympyräliike: paikka ja asento muuttuvat' },
+  cyclist: { box: [-SL / 2 - SR - 0.55, SL / 2 + SR + 0.55, -SR - 0.6, SR + 0.6], vr: [-3.7, 3.7], period: LT / VC, pose: (t) => stadium(VC * t),
+    kind: (p) => (p.curve ? 'Kaarteessa ympyräliike: paikka ja asento muuttuvat' : 'Suoralla suoraviivainen liike: vain paikka muuttuu') },
+  pedal: { box: [-0.24, 0.24, -0.24, 0.24], vr: [-0.2, 0.2], period: 2, rot: true,
+    pose: (t) => ({ x: 0, y: 0, th: -TAU * t / 2 }),                   // kampi kiertää myötäpäivään akselinsa ympäri
+    kind: () => 'Pyörimisliike: vain asento muuttuu' },
+  clock: { box: [-0.19, 0.19, -0.19, 0.19], vr: [-0.2, 0.2], period: 6, rot: true,
+    pose: (t) => ({ x: 0, y: 0, th: Math.PI / 2 - TAU * t / 6 }),       // minuuttiviisari, aika nopeutettu
+    kind: () => 'Pyörimisliike: vain asento muuttuu' },
+  line: { box: [-0.6, 8.6, -1.2, 1.2], vr: [-1, 9], wrap: 4.6, pose: (t) => ({ x: 2 * Math.min(mod(t, 4.6), 4), y: 0, th: 0 }),
+    kind: () => 'Suoraviivainen liike: vain paikka muuttuu' },
+  throw: { box: [-0.6, 9.6, -0.7, 4.4], vr: [-1, 10], wrap: 2.6,
+    pose: (t) => { const s = Math.min(mod(t, 2.6), TF); return { x: VX * s, y: VY * s - g * s * s / 2, th: 0 }; },
+    kind: () => 'Heittoliike: vain paikka muuttuu, rata ei ole ympyrä' },
 };
-const CX = COL.red, CY = COL.green, CPATH = COL.blue, CCIRC = COL.orange;
-const S = { m: 'carousel', t: 0, running: false, show: { path: true, xy: false, circ: false } };
+const CX = COL.red, CY = COL.green, CPATH = COL.blue, CKIND = COL.orange, CTH = COL.violet;
+const S = { m: 'carousel', t: 0, running: false, show: { path: true, xy: false, kind: false } };
 
 function step(dt) { if (S.running) S.t += dt; }
 
@@ -341,17 +348,17 @@ function draw() {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, W, H);
 
-  // alueet: liike ylhäällä, kuvaaja alhaalla (kun koordinaatit näytetään)
+  // alueet: liike ylhäällä, kuvaaja ja asentomittari alhaalla (kun paikka ja asento näytetään)
   const gh = S.show.xy ? clamp(H * 0.3, fs * 4.5, fs * 9) : 0;
   const sx0 = pad, sx1 = W - pad, sy0 = band, sy1 = H - pad * 0.6 - (gh ? gh + fs * 1.2 : 0);
   const [bx0, bx1, by0, by1] = mo.box;
   const s = Math.min((sx1 - sx0) / (bx1 - bx0), (sy1 - sy0) / (by1 - by0));
   const ox = (sx0 + sx1) / 2 - (bx0 + bx1) / 2 * s, oy = (sy0 + sy1) / 2 + (by0 + by1) / 2 * s;
   const X = (x) => ox + x * s, Y = (y) => oy - y * s;
-  const p = mo.pos(t), P = { x: X(p.x), y: Y(p.y) };
+  const p = mo.pose(t), P = { x: X(p.x), y: Y(p.y) };
 
   // ruudukko ja akselit
-  const range = Math.max(bx1 - bx0, by1 - by0), gs = [0.05, 0.1, 0.2, 0.5, 1, 2].find((d) => range / d <= 12);
+  const range = Math.max(bx1 - bx0, by1 - by0), gs = [0.02, 0.05, 0.1, 0.2, 0.5, 1, 2].find((d) => range / d <= 12);
   ctx.strokeStyle = COL.line; ctx.lineWidth = 1; ctx.beginPath();
   for (let x = Math.ceil(bx0 / gs) * gs; x <= bx1 + 1e-9; x += gs) { ctx.moveTo(X(x), Y(by0)); ctx.lineTo(X(x), Y(by1)); }
   for (let y = Math.ceil(by0 / gs) * gs; y <= by1 + 1e-9; y += gs) { ctx.moveTo(X(bx0), Y(y)); ctx.lineTo(X(bx1), Y(y)); }
@@ -364,13 +371,12 @@ function draw() {
   drawRich(ctx, '{x}', X(bx1) - fs * 0.2, Y(0) + fs * 0.85, { size: fs, color: COL.ink2, align: 'right', halo: true });
   drawRich(ctx, '{y}', X(0) + fs * 0.55, Y(by1) + fs * 0.4, { size: fs, color: COL.ink2, halo: true });
 
-  // ympyrärata korostettuna
-  if (S.show.circ) {
-    ctx.strokeStyle = CCIRC; ctx.fillStyle = CCIRC;
+  // ympyrärata korostettuna (liikkeen laji)
+  if (S.show.kind) {
+    ctx.strokeStyle = CKIND; ctx.fillStyle = CKIND;
     const dot = (x, y) => { ctx.beginPath(); ctx.arc(X(x), Y(y), 3.5, 0, TAU); ctx.fill(); };
-    if (S.m === 'carousel' || S.m === 'pedal') {
-      const r = S.m === 'carousel' ? 1.5 : 0.17;
-      ctx.lineWidth = 6; ctx.globalAlpha = 0.55; ctx.beginPath(); ctx.arc(X(0), Y(0), r * s, 0, TAU); ctx.stroke(); ctx.globalAlpha = 1; dot(0, 0);
+    if (S.m === 'carousel') {
+      ctx.lineWidth = 6; ctx.globalAlpha = 0.55; ctx.beginPath(); ctx.arc(X(0), Y(0), 1.5 * s, 0, TAU); ctx.stroke(); ctx.globalAlpha = 1; dot(0, 0);
     } else if (S.m === 'cyclist') {
       for (const c of [-1, 1]) {
         const cx = X(c * SL / 2), cy = Y(0), a0 = c > 0 ? -Math.PI / 2 : Math.PI / 2;
@@ -381,18 +387,18 @@ function draw() {
     }
   }
 
-  // rata: kuljettu reitti (jaksollisissa viimeisin kierros, muissa tämä suoritus)
-  if (S.show.path) {
+  // rata: kappaleen paikan kulkema reitti (pyörimisliikkeessä paikka ei muutu, joten rataa ei synny)
+  if (S.show.path && !mo.rot) {
     const tA = mo.period ? Math.max(0, t - 0.985 * mo.period) : Math.floor(t / mo.wrap) * mo.wrap, n = 180;
     ctx.strokeStyle = CPATH; ctx.lineWidth = 3; ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.beginPath();
-    for (let i = 0; i <= n; i++) { const q = mo.pos(tA + (t - tA) * i / n); if (i) ctx.lineTo(X(q.x), Y(q.y)); else ctx.moveTo(X(q.x), Y(q.y)); }
+    for (let i = 0; i <= n; i++) { const q = mo.pose(tA + (t - tA) * i / n); if (i) ctx.lineTo(X(q.x), Y(q.y)); else ctx.moveTo(X(q.x), Y(q.y)); }
     if (t > tA) ctx.stroke();
     ctx.lineCap = 'butt';
   }
 
-  // koordinaatit: projektiot akseleille ja lukemat
+  // paikka: projektiot akseleille
   const dec = range < 1 ? 2 : 1;
-  if (S.show.xy) {
+  if (S.show.xy && !mo.rot) {
     ctx.lineWidth = 1.6; ctx.setLineDash([5, 4]);
     ctx.strokeStyle = CX; ctx.beginPath(); ctx.moveTo(P.x, P.y); ctx.lineTo(P.x, Y(0)); ctx.stroke();
     ctx.strokeStyle = CY; ctx.beginPath(); ctx.moveTo(P.x, P.y); ctx.lineTo(X(0), P.y); ctx.stroke();
@@ -401,26 +407,37 @@ function draw() {
     ctx.fillStyle = CY; ctx.beginPath(); ctx.arc(X(0), P.y, 4.5, 0, TAU); ctx.fill();
   }
 
-  // kappale
+  // kappaleen merkki: paikka ja asento (nuoli)
+  const rt = fs * 0.82, ux = Math.cos(p.th), uy = -Math.sin(p.th);
   ctx.fillStyle = '#222'; ctx.strokeStyle = '#fff'; ctx.lineWidth = 2;
-  ctx.beginPath(); ctx.arc(P.x, P.y, fs * 0.5, 0, TAU); ctx.fill(); ctx.stroke();
+  ctx.beginPath(); ctx.arc(P.x, P.y, rt, 0, TAU); ctx.fill(); ctx.stroke();
+  arrow(ctx, P.x - ux * rt * 0.6, P.y - uy * rt * 0.6, P.x + ux * rt * 0.78, P.y + uy * rt * 0.78, '#fff', { width: 2.4, head: rt * 0.75 });
 
   if (S.show.xy) {
     const xt = `{x} = ${fmt(p.x, dec)}${NBSP}m`, yt = `{y} = ${fmt(p.y, dec)}${NBSP}m`, sz = fs * 0.95;
     const wy = drawRich(ctx, yt, 0, 0, { size: sz, measure: true }), wx = drawRich(ctx, xt, 0, 0, { size: sz, measure: true });
-    // lukemat kulkevat kappaleen mukana akselin sillä puolella, jolla kappale ei ole (eivät peitä kappaletta)
-    const xx = clamp(P.x, sx0 + wx / 2, sx1 - wx / 2), yy = clamp(P.y, sy0 + fs * 0.6, sy1 - fs * 0.6);
-    const below = P.y <= Y(0) + 1, ylft = (P.x >= X(0) - 1 || X(0) + fs * 0.6 + wy > W - 2) && X(0) - wy - fs * 0.6 >= 2;
-    drawRich(ctx, xt, xx, Y(0) + (below ? fs * 0.95 : -fs * 0.95), { size: sz, color: CX, align: 'center', halo: true });
-    drawRich(ctx, yt, ylft ? X(0) - fs * 0.6 : X(0) + fs * 0.6, yy, { size: sz, color: CY, align: ylft ? 'right' : 'left', halo: true });
-    drawGraph(ctx, mo, t, pad, H - gh - pad * 0.6, W - pad, H - pad * 0.6);
+    if (mo.rot) {                                                   // paikka pysyy: lukemat vasempaan yläkulmaan (ei rattaan tai kellotaulun päälle)
+      drawRich(ctx, xt, 14, band + fs * (S.show.kind ? 0.5 : -0.2), { size: sz, color: CX, halo: true });
+      drawRich(ctx, yt, 14, band + fs * (S.show.kind ? 1.6 : 0.9), { size: sz, color: CY, halo: true });
+    } else {
+      // lukemat kulkevat kappaleen mukana akselin sillä puolella, jolla kappale ei ole
+      const xx = clamp(P.x, sx0 + wx / 2, sx1 - wx / 2), yy = clamp(P.y, sy0 + fs * 0.6, sy1 - fs * 0.6);
+      const below = P.y <= Y(0) + 1, ylft = (P.x >= X(0) - 1 || X(0) + fs * 0.6 + wy > W - 2) && X(0) - wy - fs * 0.6 >= 2;
+      drawRich(ctx, xt, xx, Y(0) + (below ? fs * 0.95 : -fs * 0.95), { size: sz, color: CX, align: 'center', halo: true });
+      drawRich(ctx, yt, ylft ? X(0) - fs * 0.6 : X(0) + fs * 0.6, yy, { size: sz, color: CY, align: ylft ? 'right' : 'left', halo: true });
+    }
+    drawGraph(ctx, mo, t, p, pad, H - gh - pad * 0.6, W - pad, H - pad * 0.6);
   }
+  if (S.m === 'clock') drawRich(ctx, 'aika nopeutettu', X(0), Y(by0) - fs * 0.1, { size: fs * 0.75, color: COL.ink3, align: 'center' });
 
-  // tila ylhäällä
-  if (S.show.circ) drawRich(ctx, mo.status(p), 14, 10 + fs * 0.7, { size: fs, color: CCIRC, halo: true, weight: 600 });
+  // liikkeen laji ylhäällä
+  if (S.show.kind) {
+    const txt = mo.kind(p), w = drawRich(ctx, txt, 0, 0, { size: fs, weight: 600, measure: true }), sz = w > W - 28 ? fs * (W - 28) / w : fs;
+    drawRich(ctx, txt, 14, 10 + fs * 0.7, { size: sz, color: CKIND, halo: true, weight: 600 });
+  }
 }
 
-/** Liikkeen taustakuva (karuselli, velodromi, ketjuratas ja kampi, tie, maa) maailman koordinaateissa. */
+/** Liikkeen taustakuva maailman koordinaateissa: karuselli, velodromi, ketjuratas ja kampi, kello, tie, maa. */
 function drawScene(ctx, X, Y, s, t, p) {
   if (S.m === 'carousel') {
     const a = TAU * t / 4;
@@ -442,16 +459,32 @@ function drawScene(ctx, X, Y, s, t, p) {
     track(-0.6); ctx.strokeStyle = '#8dbde3'; ctx.lineWidth = 0.22 * s; ctx.stroke();
     ctx.strokeStyle = '#c9b48f'; ctx.lineWidth = 1.2; track(0.5); ctx.stroke(); track(-0.5); ctx.stroke();
   } else if (S.m === 'pedal') {
+    const c = Math.cos(p.th), sn = Math.sin(p.th);
     ctx.fillStyle = '#3a3d42'; ctx.strokeStyle = '#3a3d42'; ctx.lineWidth = Math.max(1.5, 0.012 * s);
-    ctx.beginPath();
-    for (let k = 0; k < 32; k++) { const b = k * TAU / 32; ctx.moveTo(X(0.108 * Math.cos(b)), Y(0.108 * Math.sin(b))); ctx.lineTo(X(0.124 * Math.cos(b)), Y(0.124 * Math.sin(b))); }
+    ctx.beginPath();                                                // hampaat pyörivät rattaan mukana
+    for (let k = 0; k < 32; k++) { const b = p.th + k * TAU / 32; ctx.moveTo(X(0.108 * Math.cos(b)), Y(0.108 * Math.sin(b))); ctx.lineTo(X(0.124 * Math.cos(b)), Y(0.124 * Math.sin(b))); }
     ctx.stroke();
     ctx.beginPath(); ctx.arc(X(0), Y(0), 0.11 * s, 0, TAU); ctx.fill();
-    ctx.fillStyle = '#5b6067'; ctx.beginPath(); ctx.arc(X(0), Y(0), 0.07 * s, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#5b6067';
+    for (let k = 0; k < 5; k++) { const b = p.th + Math.PI / 5 + k * TAU / 5; ctx.beginPath(); ctx.arc(X(0.07 * Math.cos(b)), Y(0.07 * Math.sin(b)), 0.022 * s, 0, TAU); ctx.fill(); }
     ctx.strokeStyle = '#1f2226'; ctx.lineWidth = 0.032 * s; ctx.lineCap = 'round';
-    ctx.beginPath(); ctx.moveTo(X(0), Y(0)); ctx.lineTo(X(p.x), Y(p.y)); ctx.stroke(); ctx.lineCap = 'butt';
-    ctx.fillStyle = '#c7cbd0'; ctx.beginPath(); ctx.arc(X(0), Y(0), 0.022 * s, 0, TAU); ctx.fill();
-    ctx.fillStyle = '#4a4e54'; ctx.fillRect(X(p.x) - 0.05 * s, Y(p.y) - 0.016 * s, 0.1 * s, 0.032 * s);   // poljin pysyy vaakasuorassa
+    ctx.beginPath(); ctx.moveTo(X(0), Y(0)); ctx.lineTo(X(0.17 * c), Y(0.17 * sn)); ctx.stroke(); ctx.lineCap = 'butt';
+    ctx.fillStyle = '#4a4e54'; ctx.fillRect(X(0.17 * c) - 0.05 * s, Y(0.17 * sn) - 0.016 * s, 0.1 * s, 0.032 * s);
+  } else if (S.m === 'clock') {
+    const R = 0.15;
+    ctx.fillStyle = '#fff'; ctx.strokeStyle = COL.ink2; ctx.lineWidth = Math.max(2.5, 0.012 * s);
+    ctx.beginPath(); ctx.arc(X(0), Y(0), R * s, 0, TAU); ctx.fill(); ctx.stroke();
+    ctx.strokeStyle = COL.ink2; ctx.beginPath();
+    for (let k = 0; k < 60; k++) {
+      const b = k * TAU / 60, r0 = k % 5 ? 0.137 : 0.122;
+      ctx.lineWidth = k % 5 ? 1 : Math.max(2, 0.008 * s);
+      ctx.moveTo(X(r0 * Math.cos(b)), Y(r0 * Math.sin(b))); ctx.lineTo(X(0.146 * Math.cos(b)), Y(0.146 * Math.sin(b)));
+      if (k % 5 === 0) { ctx.stroke(); ctx.beginPath(); }
+    }
+    ctx.lineWidth = 1; ctx.stroke();
+    const hand = (th, len, w, col) => { ctx.strokeStyle = col; ctx.lineWidth = w * s; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(X(-0.02 * Math.cos(th)), Y(-0.02 * Math.sin(th))); ctx.lineTo(X(len * Math.cos(th)), Y(len * Math.sin(th))); ctx.stroke(); ctx.lineCap = 'butt'; };
+    hand(Math.PI / 2 - TAU * t / 72, 0.075, 0.011, '#3a3d42');      // tuntiviisari (12 kertaa hitaampi)
+    hand(p.th, 0.12, 0.007, '#1f2226');                            // minuuttiviisari
   } else if (S.m === 'line') {
     ctx.fillStyle = '#e7e7e3'; ctx.fillRect(X(-0.6), Y(0.45), 9.2 * s, 0.9 * s);
     ctx.strokeStyle = '#c9c9c3'; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(X(-0.6), Y(0.45)); ctx.lineTo(X(8.6), Y(0.45)); ctx.moveTo(X(-0.6), Y(-0.45)); ctx.lineTo(X(8.6), Y(-0.45)); ctx.stroke();
@@ -463,32 +496,49 @@ function drawScene(ctx, X, Y, s, t, p) {
   }
 }
 
-/** x(t) ja y(t) viimeisten 8 sekunnin ajalta. */
-function drawGraph(ctx, mo, t, x0, y0, x1, y1) {
+/** x(t) ja y(t) viimeisten 8 sekunnin ajalta sekä asentomittari (merkin nuolen suunta). */
+function drawGraph(ctx, mo, t, p, x0, y0, x1, y1) {
   const { fs } = L, span = 8, tA = Math.max(0, t - span), [v0, v1] = mo.vr;
-  const lx = x0 + fs * 2.2, rx = x1 - fs * 1.4;
+  const dial = y1 - y0, gx1 = x1 - dial - fs * 0.6;               // mittari oikealla, kuvaaja vasemmalla
+  const lx = x0 + fs * 2.6, rx = gx1 - fs * 1.4;
   const TX = (tt) => lx + (tt - tA) / span * (rx - lx), VY = (v) => y1 - fs * 0.3 - (v - v0) / (v1 - v0) * (y1 - y0 - fs * 0.6);
   ctx.fillStyle = '#fafaf8'; ctx.strokeStyle = COL.line; ctx.lineWidth = 1;
-  ctx.fillRect(x0, y0, x1 - x0, y1 - y0); ctx.strokeRect(x0 + 0.5, y0 + 0.5, x1 - x0 - 1, y1 - y0 - 1);
-  // akselit: aika vaakasuoraan, paikka pystysuoraan
+  ctx.fillRect(x0, y0, gx1 - x0, y1 - y0); ctx.strokeRect(x0 + 0.5, y0 + 0.5, gx1 - x0 - 1, y1 - y0 - 1);
   ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(lx, y0 + fs * 0.3); ctx.lineTo(lx, y1 - fs * 0.3); ctx.stroke();
   arrow(ctx, lx, VY(0), rx + fs * 0.6, VY(0), COL.ink3, { width: 1.2, head: 7 });
   drawRich(ctx, '{t}', rx + fs * 0.7, VY(0) - fs * 0.6, { size: fs * 0.85, color: COL.ink2, align: 'center' });
   drawRich(ctx, '0', lx - fs * 0.3, VY(0), { size: fs * 0.75, color: COL.ink3, align: 'right' });
   const st = v1 - v0 < 1 ? 0.05 : 0.5, dec = st < 0.1 ? 2 : 1;           // asteikko: pyöreä arvo alueen sisältä
-  for (const v of [v0, v1]) { const vv = Math.sign(v) * Math.floor(Math.abs(v) * 0.95 / st) * st; if (Math.abs(VY(vv) - VY(0)) > fs) {
-    ctx.strokeStyle = COL.line; ctx.beginPath(); ctx.moveTo(lx, VY(vv)); ctx.lineTo(rx, VY(vv)); ctx.stroke();
-    drawRich(ctx, `${fmt(vv, dec)}${NBSP}m`, lx - fs * 0.3, VY(vv), { size: fs * 0.7, color: COL.ink3, align: 'right' }); } }
-  if (t <= 0) return;
-  const n = 220, line = (key, color) => {
-    ctx.strokeStyle = color; ctx.lineWidth = 2.4; ctx.lineJoin = 'round'; ctx.beginPath();
-    for (let i = 0; i <= n; i++) { const tt = tA + (t - tA) * i / n, q = mo.pos(tt); if (i) ctx.lineTo(TX(tt), VY(q[key])); else ctx.moveTo(TX(tt), VY(q[key])); }
-    ctx.stroke();
-  };
-  line('x', CX); line('y', CY);
-  const q = mo.pos(t), ex = TX(t) + fs * 0.45, yx = VY(q.x), yy = VY(q.y), sep = Math.abs(yx - yy) < fs ? (yx < yy ? -fs / 2 : fs / 2) : 0;
-  drawRich(ctx, '{x}', ex, yx + sep, { size: fs * 0.9, color: CX, halo: true });
-  drawRich(ctx, '{y}', ex, yy - sep, { size: fs * 0.9, color: CY, halo: true });
+  for (const v of [v0, v1]) {
+    const vv = Math.sign(v) * Math.floor(Math.abs(v) * 0.95 / st) * st;
+    if (Math.abs(VY(vv) - VY(0)) > fs) {
+      ctx.strokeStyle = COL.line; ctx.beginPath(); ctx.moveTo(lx, VY(vv)); ctx.lineTo(rx, VY(vv)); ctx.stroke();
+      drawRich(ctx, `${fmt(vv, dec)}${NBSP}m`, lx - fs * 0.3, VY(vv), { size: fs * 0.7, color: COL.ink3, align: 'right' });
+    }
+  }
+  if (t > 0) {
+    const n = 220, line = (key, color) => {
+      ctx.strokeStyle = color; ctx.lineWidth = 2.4; ctx.lineJoin = 'round'; ctx.beginPath();
+      for (let i = 0; i <= n; i++) { const tt = tA + (t - tA) * i / n, q = mo.pose(tt); if (i) ctx.lineTo(TX(tt), VY(q[key])); else ctx.moveTo(TX(tt), VY(q[key])); }
+      ctx.stroke();
+    };
+    line('x', CX); line('y', CY);
+    const ex = TX(t) + fs * 0.45, yx = VY(p.x), yy = VY(p.y), sep = Math.abs(yx - yy) < fs ? (yx <= yy ? -fs / 2 : fs / 2) : 0;
+    drawRich(ctx, '{x}', ex, yx + sep, { size: fs * 0.9, color: CX, halo: true });
+    drawRich(ctx, '{y}', ex, yy - sep, { size: fs * 0.9, color: CY, halo: true });
+  }
+  // asentomittari: kehä, neljännekset ja nuoli kappaleen asennon suuntaan
+  const cx = x1 - dial / 2, cy = y0 + dial / 2 + fs * 0.35, r = dial / 2 - fs * 1.05;
+  ctx.fillStyle = '#fafaf8'; ctx.strokeStyle = COL.line; ctx.lineWidth = 1;
+  ctx.fillRect(x1 - dial, y0, dial, dial); ctx.strokeRect(x1 - dial + 0.5, y0 + 0.5, dial - 1, dial - 1);
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.arc(cx, cy, r, 0, TAU); ctx.stroke();
+  ctx.beginPath();
+  for (let k = 0; k < 4; k++) { const b = k * Math.PI / 2; ctx.moveTo(cx + (r - 4) * Math.cos(b), cy - (r - 4) * Math.sin(b)); ctx.lineTo(cx + r * Math.cos(b), cy - r * Math.sin(b)); }
+  ctx.stroke();
+  arrow(ctx, cx, cy, cx + r * 0.85 * Math.cos(p.th), cy - r * 0.85 * Math.sin(p.th), CTH, { width: 2.6 });
+  ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(cx, cy, 2.5, 0, TAU); ctx.fill();
+  const deg = mod(Math.round(p.th * 180 / Math.PI), 360);
+  drawRich(ctx, `asento ${deg}°`, cx, y0 + fs * 0.62, { size: fs * 0.8, color: CTH, align: 'center' });
 }
 
 /* =====================================================================
@@ -503,14 +553,14 @@ const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y=
 function paintPlay() { playBtn.innerHTML = S.running ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; }
 playBtn.addEventListener('click', () => { S.running = !S.running; paintPlay(); });
 document.getElementById('reset').addEventListener('click', () => { S.t = 0; S.running = false; paintPlay(); });
-for (const [id, key] of [['showPath', 'path'], ['showXY', 'xy'], ['showCirc', 'circ']]) {
+for (const [id, key] of [['showPath', 'path'], ['showXY', 'xy'], ['showKind', 'kind']]) {
   const el = document.getElementById(id);
   S.show[key] = el.checked;
   el.addEventListener('change', () => { S.show[key] = el.checked; });
 }
-/* ?liike=karuselli | pyorailija | poljin | suora | heitto valitsee aloitusliikkeen. */
+/* ?liike=karuselli | pyorailija | poljin | kello | suora | heitto valitsee aloitusliikkeen. */
 (() => {
-  const map = { karuselli: 'carousel', pyorailija: 'cyclist', 'pyöräilijä': 'cyclist', poljin: 'pedal', suora: 'line', heitto: 'throw' };
+  const map = { karuselli: 'carousel', pyorailija: 'cyclist', 'pyöräilijä': 'cyclist', poljin: 'pedal', kello: 'clock', suora: 'line', heitto: 'throw' };
   const q = (new URLSearchParams(location.search).get('liike') || '').toLowerCase();
   setMotion(map[q] || 'carousel');
 })();
