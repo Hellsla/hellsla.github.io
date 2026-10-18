@@ -367,6 +367,10 @@ const turn = (M) => (M > 0.05 ? ' (myötäpäivään)' : M < -0.05 ? ' (vastapä
 /** Momentin etumerkki: myötäpäivään positiivinen. */
 const signed = (M, d) => (Math.abs(M) < 0.05 ? fmt(0, d) : (M > 0 ? '+' : MINUS) + fmt(Math.abs(M), d));
 
+/* Nimiöiden hystereesi: nimiön tunnus → { valittu ehdokas, ruutu jolloin valittiin }. */
+const LMEMO = new Map();
+let lFrame = 0, lInput = -1e9;
+document.addEventListener('input', (e) => { if (e.target.type === 'range') lInput = performance.now(); }, true);   // liukusäädintä liikutetaan
 function draw() {
   const { ctx, dpr } = view, { W, fs, s, ground, kF } = L;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -390,9 +394,21 @@ function draw() {
   };
   const clash = (b) => arcs.some((k) => arcHit(b, k)) || boxes.some((o) => o.x0 < b.x1 && b.x0 < o.x1 && o.y0 < b.y1 && b.y0 < o.y1);
   const labels = [];
+  lFrame++;
+  const lUsed = new Set(), moving = S.playing || S.drag !== null || performance.now() - lInput < 400;
   const label = (txt, size, color, cands) => {
-    let pick = cands[0];
-    for (const c of cands) { if (!clash(boxOf(txt, size, c))) { pick = c; break; } }
+    const base = txt.replace(/ = .*/, '');
+    let id = base, n = 2;
+    while (lUsed.has(id)) id = base + '#' + n++;
+    lUsed.add(id);
+    let k = cands.findIndex((c) => !clash(boxOf(txt, size, c)));
+    // Liikkeen aikana nimiö pysyy edellisessä paikassaan, jos se on yhä vapaa, jos mikään paikka ei ole vapaa
+    // tai jos nimiö siirtyi alle 15 ruutua sitten. Näin nimiöt eivät vilku ehdokkaiden välillä.
+    const m = LMEMO.get(id), prev = m && m.k < cands.length ? m.k : -1;
+    if (moving && prev >= 0 && prev !== k && (k < 0 || !clash(boxOf(txt, size, cands[prev])) || lFrame - m.at < 15)) k = prev;
+    if (k < 0) k = 0;
+    LMEMO.set(id, k === prev && m ? m : { k, at: lFrame });
+    const pick = cands[k];
     boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
   };
   const side = (sgn) => (sgn > 0 ? 'left' : 'right');

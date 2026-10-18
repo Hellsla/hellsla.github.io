@@ -321,6 +321,7 @@ const S = {
   t: 0, playing: false,                  // animaatio: aika alusta (s)
   show: { a: false, val: false },
   drag: null, hover: null,
+  input: -1e9,                           // viimeisimmän säätimen liikutuksen hetki (ms)
 };
 
 const T = () => (S.mode === 'line' ? DT_LINE : S.dt);    // tarkasteltava aikaväli
@@ -406,13 +407,17 @@ function valueRows() {
     [`Vektorien {->v}_1 ja Δ{->v} välinen kulma ${fmt(90 + f * 90 / Math.PI, 1)}°`, COL.ink2]];
 }
 
+const memo = new Map();                 // nimiön tunnus → { valittu ehdokas, ruutu jolloin valittiin } (estää vilkkumisen)
+let frame = 0;
 function draw() {
+  frame++;
   const { ctx, dpr } = view, { W, H } = L;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, W, H);
 
   /* ---- nimiöiden sijoittelu: ensin esteet, sitten nimiöt ensimmäiseen vapaaseen ehdokaspaikkaan ---- */
-  const boxes = [], labels = [], ops = [];
+  const boxes = [], labels = [], ops = [], used = new Set();
+  const moving = S.playing || S.drag !== null || performance.now() - S.input < 400;
   const boxOf = (txt, size, c) => {
     const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
     const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
@@ -431,13 +436,23 @@ function draw() {
   const P = {
     ops,
     label(txt, size, color, cands) {                               // ensimmäinen vapaa ehdokas, muuten vähiten peittävä
-      let pick = cands[0], best = Infinity;
-      for (const c of cands) {
-        const sc = score(boxOf(txt, size, c));
-        if (sc < best) { best = sc; pick = c; }
-        if (sc === 0) break;
+      const base = txt.replace(/ = .*/, '');
+      let id = base, n = 2;
+      while (used.has(id)) id = base + '#' + n++;
+      used.add(id);
+      const sc = cands.map((c) => score(boxOf(txt, size, c)));
+      let k = sc.findIndex((s) => s === 0);
+      if (k < 0) k = sc.indexOf(Math.min(...sc));
+      // Liikkeen aikana nimiö pysyy edellisessä paikassaan, kun se on yhä vapaa (tai lähes yhtä hyvä),
+      // joten se ei hypi ehdokkaiden välillä ruudusta toiseen. Levossa nimiö palaa ensisijaiseen paikkaansa.
+      // Juuri siirtynyt nimiö pysyy uudessa paikassaan vähintään 12 ruutua ja 24 ruutua, ellei sitä peitetä pahasti.
+      const m = memo.get(id), prev = m && m.k < cands.length ? m.k : -1;
+      if (moving && prev >= 0 && prev !== k) {
+        const b = boxOf(txt, size, cands[prev]), area = (b.x1 - b.x0) * (b.y1 - b.y0), age = frame - m.at;
+        if ((sc[prev] <= sc[k] * 1.3 + 20 && (sc[prev] === 0 || sc[k] > 0)) || age < 12 || (age < 24 && sc[prev] < area * 0.35)) k = prev;
       }
-      boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
+      memo.set(id, k === prev && m ? m : { k, at: frame });
+      boxes.push(boxOf(txt, size, cands[k])); labels.push({ txt, size, color, c: cands[k], k });
     },
     block(x0, y0, x1, y1) { boxes.push({ x0: Math.min(x0, x1), x1: Math.max(x0, x1), y0: Math.min(y0, y1), y1: Math.max(y0, y1) }); },
     seg(x1, y1, x2, y2, p, w = 1) {                                // vino jana esteeksi pieninä laatikoina
@@ -666,9 +681,10 @@ function sgnRange(id, color, onInput) {
   return c;
 }
 const stop = () => { S.playing = false; };
-const ctlV1 = sgnRange('v1', C1, (v) => { S.v1 = v; stop(); paintPresets(); });
-const ctlV2 = sgnRange('v2', C2, (v) => { S.v2 = v; stop(); paintPresets(); });
-const ctlDt = bindRange('dt', (v) => fmt(v, 2) + NBSP + 's', (v) => { S.dt = v; stop(); });
+const touched = () => { S.playing = false; S.input = performance.now(); };   // säädintä liikutetaan jatkuvasti
+const ctlV1 = sgnRange('v1', C1, (v) => { S.v1 = v; touched(); paintPresets(); });
+const ctlV2 = sgnRange('v2', C2, (v) => { S.v2 = v; touched(); paintPresets(); });
+const ctlDt = bindRange('dt', (v) => fmt(v, 2) + NBSP + 's', (v) => { S.dt = v; touched(); });
 
 const modeBtns = [...document.querySelectorAll('#mode button')], presetBtns = [...document.querySelectorAll('#presets button')];
 const hint = document.getElementById('hint');
