@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiihtyvyyden suunta · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .seg.wide{display:flex;width:100%}
+  .seg.wide button{flex:1 1 0;padding:0 .25em;white-space:nowrap}
+  .seg.small button{font-size:.8em;min-height:2.1em}
+  .panel [hidden]{display:none !important}
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+  /* nopeussäätimet: positiivinen suunta vasemmalle kuten kuvassa, täyttö nollasta peukaloon */
+  .rev input[type=range]{direction:rtl}
+  .rev input[type=range]::-webkit-slider-runnable-track{background:var(--trk,var(--line-2))}
+  .rev input[type=range]::-moz-range-track{background:var(--trk,var(--line-2))}
+  .rev input[type=range]::-moz-range-progress{background:transparent}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Nopeuden muutos ja kiihtyvyyden suunta. Suoraviivaisessa liikkeessä alku- ja loppunopeuden erotus Δv näytetään vektorikuvana; kiihtyvyys on Δv:n suuntainen. Kaarreliikkeessä nopeuden suunta kääntyy, ja aikavälin lyhentyessä nopeuden muutos kääntyy kohtisuoraan nopeuteen nähden kohti radan keskipistettä."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <div class="seg wide" id="mode" role="group" aria-label="Liikkeen rata">
+      <button type="button" data-mode="line">Suora</button>
+      <button type="button" data-mode="curve">Kaarre</button>
+    </div>
+    <div class="group" id="gLine">
+      <div class="seg wide small" id="presets" role="group" aria-label="Esimerkkitilanne">
+        <button type="button" data-p="acc">Kiihtyy</button>
+        <button type="button" data-p="dec">Hidastuu</button>
+        <button type="button" data-p="rev">Kääntyy</button>
+      </div>
+      <label class="ctl rev"><span class="ctl-head"><span>Alkunopeus <span class="sym">v</span><sub>1</sub></span><b data-for="v1"></b></span>
+        <input id="v1" type="range" min="-4" max="4" step="0.5" value="1.5" aria-label="Alkunopeus, positiivinen suunta vasemmalle"></label>
+      <label class="ctl rev"><span class="ctl-head"><span>Loppunopeus <span class="sym">v</span><sub>2</sub></span><b data-for="v2"></b></span>
+        <input id="v2" type="range" min="-4" max="4" step="0.5" value="3" aria-label="Loppunopeus, positiivinen suunta vasemmalle"></label>
+    </div>
+    <div class="group" id="gCurve" hidden>
+      <label class="ctl"><span class="ctl-head"><span>Aikaväli Δ<span class="sym">t</span></span><b data-for="dt"></b></span>
+        <input id="dt" type="range" min="0.05" max="2.8" step="0.05" value="1.5" aria-label="Aikaväli, jonka kuluessa nopeus muuttuu"></label>
+    </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showA"><span class="key" style="--c:var(--c-violet)"></span>Näytä kiihtyvyys</label>
+      <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Näytä arvot</label>
+    </div>
+    <div class="btns">
+      <button class="btn primary" id="play" type="button" title="Näytä liike alusta loppuun"></button>
+      <button class="btn" id="reset" type="button" title="Palauta alkutilanne">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+    </div>
+    <p class="hint" id="hint"></p>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: nopeuden muutos ja kiihtyvyyden suunta
+   Keskikiihtyvyys aikavälillä Δt on  a⃗ = Δv⃗ / Δt,  missä  Δv⃗ = v⃗₂ − v⃗₁.
+   Kiihtyvyys on siis aina nopeuden muutoksen suuntainen.
+   Suora: positiivinen suunta on vasemmalle (kuten kalvon kuvassa). Kiihtyvyys on vakio
+        a = (v₂ − v₁) / Δt,  Δt = 2,0 s,   x(t) = v₁t + ½at²,   v(t) = v₁ + at.
+   Kaarre: kappale kulkee ympyrärataa (r = 2,0 m) vakiovauhdilla v = 2,0 m/s, joten
+        ω = v / r = 1 rad/s ja aikavälillä Δt nopeuden suunta kääntyy kulman Δφ = ωΔt.
+        |Δv⃗| = 2v sin(Δφ/2), ja Δv⃗ osoittaa kaaren keskikohdasta kohti radan keskipistettä.
+        Vektorien v⃗₁ ja Δv⃗ välinen kulma on 90° + Δφ/2 → 90°, kun Δt → 0:
+        hetkellinen kiihtyvyys on kohtisuorassa nopeuteen nähden (normaalikiihtyvyys aₙ = v²/r).
+   ===================================================================== */
+const DT_LINE = 2.0, VMAX = 4, V_C = 2.0, R_C = 2.0, RATE = 0.6;   // s, m/s, m/s, m, animaation hidastus
+const PRESETS = { acc: [1.5, 3.0], dec: [3.0, 1.0], rev: [1.5, -2.5] };   // kalvon tilanne A, hidastuva, tilanne B
+const DEF_DT = 1.5;
+const C1 = '#2f8a8f', C2 = '#7a9c33', CD = '#c8693f', CA = COL.violet, CV = COL.blue, CAX = '#7fb8d6', GREY = '#a3a3a3';
+const S = {
+  mode: 'line', v1: PRESETS.acc[0], v2: PRESETS.acc[1], dt: DEF_DT,
+  t: 0, playing: false,                  // animaatio: aika alusta (s)
+  show: { a: false, val: false },
+  drag: null, hover: null,
+};
+
+const T = () => (S.mode === 'line' ? DT_LINE : S.dt);    // tarkasteltava aikaväli
+const tNow = () => (S.playing ? S.t : T());               // levossa näytetään lopputilanne
+// suora liike
+const accL = () => (S.v2 - S.v1) / DT_LINE;
+const xL = (t) => S.v1 * t + 0.5 * accL() * t * t;
+const vL = (t) => S.v1 + accL() * t;
+// kaarre: kulma vastapäivään x-akselilta, alku- ja loppukohta symmetrisesti radan ylimmän kohdan molemmin puolin
+const dPhi = () => S.dt * V_C / R_C;
+const phi1 = () => Math.PI / 2 - dPhi() / 2;
+const phiAt = (t) => phi1() + V_C / R_C * t;
+
+function step(dt) {
+  if (!S.playing) return;
+  S.t += dt * RATE;
+  if (S.t >= T()) { S.t = T(); S.playing = false; }
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18), ef = fs * 0.85;
+  L = { W: v.W, H: v.H, fs, ef, pad: fs * 1.1, band: 12 + 3 * ef * 1.4 + 6 };   // band: arvorivien alue ylhäällä
+});
+
+/** Suoran liikkeen sijoittelu: radan yläpuolella v⃗₁ (alkukohdassa) ja v⃗₂ (loppukohdassa) omilla riveillään,
+    radan alla kiihtyvyys, sitten suuntamerkki ja vektorien erotuskuva kolmella rivillä. */
+function lineGeom() {
+  const { W, H, fs, pad, band } = L;
+  const gaps = [1.7, 1.9, 1.6, 1.9, 2.0, 2.4, 2.2, 2.2, 0.8];
+  const sum = gaps.reduce((s, x) => s + x, 0) * fs, k = Math.min(1.4, (H - band) / sum);
+  let y = band + Math.max(0, (H - band - sum * k) / 2);           // ylimääräinen korkeus jaetaan ylä- ja alapuolelle
+  const ys = gaps.map((gp) => (y += gp * fs * k));
+  const kv = Math.min((W / 2 - pad - fs * 0.4) / VMAX, fs * 3.2), rb = fs * 0.85;   // px / (m/s), pallon säde
+  const a = accL(), tTurn = Math.abs(a) > 1e-9 ? -S.v1 / a : -1, turns = tTurn > 1e-6 && tTurn < DT_LINE - 1e-6;
+  const xEnd = xL(DT_LINE), xTurn = turns ? xL(tTurn) : 0;
+  const xmin = Math.min(0, xEnd, xTurn), span = Math.max(0, xEnd, xTurn) - xmin;
+  // nuolet piirretään pallon kohdalle keskitettyinä, joten reunoille jätetään puolen pisimmän nuolen verran tilaa
+  const m = Math.max(Math.abs(S.v1), Math.abs(S.v2), Math.abs(a)) * kv / 2 + rb + fs * 0.3;
+  const kt = Math.max(10, W - 2 * pad - 2 * m) / Math.max(span, 1.5);
+  const xRight = W / 2 + span * kt / 2;
+  return { yHi: ys[0], yArr: ys[1], yBall: ys[2], yAcc: ys[3], yAxis: ys[4], yD: ys.slice(5, 8), kv, rb, a, tTurn, turns, xTurn,
+    sx: (x) => xRight - (x - xmin) * kt, X0: W / 2 };
+}
+/** Kaarteen sijoittelu: rata vasemmalla, vektorikuva (yhteinen alkupiste) oikealla. */
+function curveGeom() {
+  const { W, H, fs, pad, band } = L, vr = 0.62;                   // nopeusnuolen pituus / säde
+  const sideL = fs * 2.0, gap = fs * 3.2, sideR = fs * 0.8, top0 = band + fs * 2.6, bot = fs * 1.6;
+  const R = Math.max(30, Math.min((W - 2 * pad - sideL - gap - sideR) / (2 + vr), (H - top0 - bot) / (1 + vr)));
+  const vlen = vr * R, total = sideL + 2 * R + gap + vlen + sideR, x0 = (W - total) / 2;
+  const top = top0 + Math.max(0, (H - top0 - bot - (1 + vr) * R) / 2);   // pystynäytössä kuva keskelle
+  const cx = x0 + sideL + R, cy = top + R;
+  return { R, cx, cy, vlen, kv: vlen / V_C, ka: 0.55 * R * R_C / (V_C * V_C), ox: cx + R + gap + vlen, oy: cy - R + vlen + fs * 0.4 };
+}
+const ptC = (g, f) => ({ x: g.cx + g.R * Math.cos(f), y: g.cy - g.R * Math.sin(f) });
+const velC = (g, f) => ({ x: -Math.sin(f) * V_C * g.kv, y: -Math.cos(f) * V_C * g.kv });   // ruudun y alaspäin
+
+const ms = (v) => `${fmt(v, 1)}${NBSP}m/s`;
+const msp = (v) => (v < 0 ? `(${ms(v)})` : ms(v));                 // negatiivinen vähentäjä sulkeisiin
+
+function valueRows() {
+  if (!S.show.val) return [];
+  if (S.mode === 'line') {
+    const dv = S.v2 - S.v1, a = accL(), { v1, v2 } = S;
+    let st;
+    if (Math.abs(dv) < 1e-9) st = 'Nopeus ei muutu: kiihtyvyys on nolla';
+    else if (v1 * v2 < 0) st = 'Liikkeen suunta kääntyy: kiihtyvyys on alkunopeutta vastaan';
+    else if (v1 === 0) st = 'Lähtee levosta: kiihtyvyys on liikkeen suuntainen';
+    else if (v2 === 0) st = 'Pysähtyy: kiihtyvyys on liikettä vastaan';
+    else if (Math.abs(v2) > Math.abs(v1)) st = 'Vauhti kasvaa: kiihtyvyys on liikkeen suuntainen';
+    else st = 'Vauhti pienenee: kiihtyvyys on liikettä vastaan';
+    return [[`Δ{->v} = {->v}_2 ${MINUS} {->v}_1 = ${ms(v2)} ${MINUS} ${msp(v1)} = ${ms(dv)}`, CD],
+      [`{->a} = Δ{->v} / Δ{t} = ${ms(dv)} / ${fmt(DT_LINE, 1)}${NBSP}s = ${fmt(a, 2)}${NBSP}m/s^2`, CA],
+      [st, COL.ink2]];
+  }
+  const f = dPhi(), dv = 2 * V_C * Math.sin(f / 2);
+  return [[`|{->v}_1| = |{->v}_2| = ${ms(V_C)},   Δ{t} = ${fmt(S.dt, 2)}${NBSP}s,   Δ{φ} = ${fmt(f * 180 / Math.PI, 0)}°`, COL.ink2],
+    [`|Δ{->v}| = ${fmt(dv, 2)}${NBSP}m/s,   {a}_k = |Δ{->v}| / Δ{t} = ${fmt(dv / S.dt, 2)}${NBSP}m/s^2`, CD],
+    [`Vektorien {->v}_1 ja Δ{->v} välinen kulma ${fmt(90 + f * 90 / Math.PI, 1)}°`, COL.ink2]];
+}
+
+function draw() {
+  const { ctx, dpr } = view, { W, H } = L;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  /* ---- nimiöiden sijoittelu: ensin esteet, sitten nimiöt ensimmäiseen vapaaseen ehdokaspaikkaan ---- */
+  const boxes = [], labels = [], ops = [];
+  const boxOf = (txt, size, c) => {
+    const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
+    const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
+    return { x0, x1: x0 + w, y0: c.y - h / 2, y1: c.y + h / 2 };
+  };
+  /** Pisteet ehdokkaalle: kankaan ulkopuolelle jäävä osa painaa eniten, sitten peitetty pinta-ala (ohuet katkoviivat kevyesti). */
+  const score = (b) => {
+    const out = Math.max(0, 2 - b.x0) + Math.max(0, b.x1 - W + 2) + Math.max(0, 2 - b.y0) + Math.max(0, b.y1 - H + 2);
+    let ov = 0;
+    for (const o of boxes) {
+      const ix = Math.min(b.x1 + 3, o.x1) - Math.max(b.x0 - 3, o.x0), iy = Math.min(b.y1 + 1, o.y1) - Math.max(b.y0 - 1, o.y0);
+      if (ix > 0 && iy > 0) ov += ix * iy * (o.w || 1);
+    }
+    return out * 1e4 + ov;
+  };
+  const P = {
+    ops,
+    label(txt, size, color, cands) {                               // ensimmäinen vapaa ehdokas, muuten vähiten peittävä
+      let pick = cands[0], best = Infinity;
+      for (const c of cands) {
+        const sc = score(boxOf(txt, size, c));
+        if (sc < best) { best = sc; pick = c; }
+        if (sc === 0) break;
+      }
+      boxes.push(boxOf(txt, size, pick)); labels.push({ txt, size, color, c: pick });
+    },
+    block(x0, y0, x1, y1) { boxes.push({ x0: Math.min(x0, x1), x1: Math.max(x0, x1), y0: Math.min(y0, y1), y1: Math.max(y0, y1) }); },
+    seg(x1, y1, x2, y2, p, w = 1) {                                // vino jana esteeksi pieninä laatikoina
+      const n = Math.max(1, Math.ceil(Math.hypot(x2 - x1, y2 - y1) / 8));
+      for (let i = 0; i <= n; i++) { const x = x1 + (x2 - x1) * i / n, y = y1 + (y2 - y1) * i / n; boxes.push({ x0: x - p, x1: x + p, y0: y - p, y1: y + p, w }); }
+    },
+    arrow(x1, y1, x2, y2, color, w) {
+      if (Math.hypot(x2 - x1, y2 - y1) < 0.5) return;
+      P.seg(x1, y1, x2, y2, w / 2 + 3);
+      const hw = (10 + w * 1.2) * 0.58 + 2;                        // kärjen leveys
+      boxes.push({ x0: x2 - hw, x1: x2 + hw, y0: y2 - hw, y1: y2 + hw });
+      ops.push(() => arrow(ctx, x1, y1, x2, y2, color, { width: w }));
+    },
+  };
+
+  const rows = valueRows();
+  let ef = L.ef, ew = rows.length ? Math.max(...rows.map(([t]) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))) : 0;
+  if (ew > W - 28) { ef *= (W - 28) / ew; ew = W - 28; }
+  if (rows.length) boxes.push({ x0: 10, x1: 14 + ew, y0: 8, y1: 14 + rows.length * ef * 1.4 });
+
+  if (S.mode === 'line') sceneLine(ctx, P); else sceneCurve(ctx, P);
+
+  for (const op of ops) op();
+  for (const l of labels) drawRich(ctx, l.txt, l.c.x, l.c.y, { size: l.size, color: l.color, align: l.c.align, halo: true });
+  let ey = 14 + ef * 0.6;
+  for (const [t, c] of rows) { drawRich(ctx, t, 14, ey, { size: ef, color: c, halo: true }); ey += ef * 1.4; }
+}
+
+function ghost(ctx, x, y, r) {
+  ctx.fillStyle = '#fff'; ctx.strokeStyle = GREY; ctx.lineWidth = 2; ctx.setLineDash([4, 3]);
+  ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI); ctx.fill(); ctx.stroke(); ctx.setLineDash([]);
+}
+function ball(ctx, x, y, r, act) {
+  ctx.fillStyle = '#222'; ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI); ctx.fill();
+  if (act) { ctx.strokeStyle = COL.ink3; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, y, r + 4, 0, 2 * Math.PI); ctx.stroke(); }
+}
+
+/* ---- suora liike ---- */
+function sceneLine(ctx, P) {
+  const { fs } = L, g = lineGeom(), { sx, kv, rb, yHi, yArr, yBall, yAcc, yAxis, yD, X0 } = g, val = S.show.val, anim = S.playing;
+  const t = tNow(), vc = vL(t), gx = sx(0), bx = sx(xL(t));
+  const big = fs * 1.05, dv = vc - S.v1;
+  const lab = (txt, color, xa, xb, y, below) => {
+    const cx = (xa + xb) / 2, l = Math.min(xa, xb), r = Math.max(xa, xb);
+    const up = { x: cx, y: y - fs * 0.95, align: 'center' }, dn = { x: cx, y: y + fs * 0.95, align: 'center' };
+    P.label(txt, big, color, [below ? dn : up, { x: l - fs * 0.5, y, align: 'right' }, { x: r + fs * 0.5, y, align: 'left' }, below ? up : dn]);
+  };
+  const vtxt = (name, v) => (val ? `${name} = ${ms(v)}` : Math.abs(v) < 1e-9 ? `${name} = 0` : name);
+
+  // rata (katkoviiva, kääntyessä hiusneulan muotoinen kuten kalvolla), haamu alkukohdassa ja pallo
+  ops(P, () => {
+    const gap = rb * 0.55;
+    ctx.strokeStyle = GREY; ctx.lineWidth = 2; ctx.setLineDash([6, 5]);
+    ctx.beginPath(); ctx.moveTo(gx, yBall);
+    if (!g.turns || t <= g.tTurn) ctx.lineTo(bx, yBall);
+    else {
+      const xt = sx(g.xTurn);
+      ctx.lineTo(xt, yBall);
+      ctx.arc(xt, yBall + gap / 2, gap / 2, -Math.PI / 2, Math.PI / 2, S.v1 > 0);   // kääntyy: kaari ulospäin liikkeen suuntaan
+      ctx.lineTo(bx, yBall + gap);
+    }
+    ctx.stroke(); ctx.setLineDash([]);
+    ghost(ctx, gx, yBall, rb);
+    ball(ctx, bx, yBall, rb);
+  });
+  P.block(gx - rb, yBall - rb, gx + rb, yBall + rb); P.block(bx - rb, yBall - rb, bx + rb, yBall + rb);
+
+  // nopeudet radalla: nuoli keskitettynä pallon kohdalle (positiivinen = vasemmalle)
+  const ends = (cx, v, k = kv) => [cx + v * k / 2, cx - v * k / 2];      // [häntä, kärki]
+  const [a1, b1] = ends(gx, S.v1), [a2, b2] = ends(bx, vc), [aa, ba] = ends(bx, g.a);
+  P.arrow(a1, yHi, b1, yHi, C1, 4);
+  P.arrow(a2, yArr, b2, yArr, anim ? CV : C2, 4);
+  if (S.show.a) P.arrow(aa, yAcc, ba, yAcc, CA, 3.5);
+
+  // positiivinen suunta (kuten kalvolla: + vasemmalla)
+  const hw = fs * 2.6;
+  ops(P, () => {
+    arrow(ctx, X0, yAxis, X0 - hw, yAxis, CAX, { width: 2.2, head: 9 });
+    arrow(ctx, X0, yAxis, X0 + hw, yAxis, CAX, { width: 2.2, head: 9 });
+    ctx.fillStyle = CAX; ctx.font = `700 ${Math.round(fs * 1.25)}px ${FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('+', X0 - hw * 0.8, yAxis - fs * 0.85); ctx.fillText(MINUS, X0 + hw * 0.8, yAxis - fs * 0.85);
+  });
+  P.block(X0 - hw - 4, yAxis - fs * 1.5, X0 + hw + 4, yAxis + 6);
+
+  // vektorien erotus: v⃗₁ ja v⃗₂ samasta alkupisteestä, Δv⃗ v⃗₁:n kärjestä v⃗₂:n kärkeen
+  const t1 = X0 - S.v1 * kv, t2 = X0 - vc * kv;
+  ops(P, () => {
+    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([2, 4]);
+    ctx.beginPath();
+    ctx.moveTo(X0, yD[0] - fs * 0.7); ctx.lineTo(X0, yD[1] + fs * 0.5);
+    ctx.moveTo(t1, yD[0]); ctx.lineTo(t1, yD[2]);
+    ctx.moveTo(t2, yD[1]); ctx.lineTo(t2, yD[2]);
+    ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(X0, yD[0], 2.6, 0, 2 * Math.PI); ctx.arc(X0, yD[1], 2.6, 0, 2 * Math.PI); ctx.fill();
+  });
+  P.arrow(X0, yD[0], t1, yD[0], C1, 3.5);
+  P.arrow(X0, yD[1], t2, yD[1], anim ? CV : C2, 3.5);
+  P.arrow(t1, yD[2], t2, yD[2], CD, 3.5);
+
+  // nimiöt
+  lab(vtxt('{->v}_1', S.v1), C1, a1, b1, yHi);
+  lab(vtxt(anim ? '{->v}' : '{->v}_2', vc), anim ? CV : C2, a2, b2, yArr);
+  if (S.show.a) lab(val ? `{->a} = ${fmt(g.a, 2)}${NBSP}m/s^2` : Math.abs(g.a) < 1e-9 ? '{->a} = 0' : '{->a}', CA, aa, ba, yAcc, true);
+  lab(Math.abs(S.v1) < 1e-9 ? '{->v}_1 = 0' : '{->v}_1', C1, X0, t1, yD[0]);
+  lab(anim ? (Math.abs(vc) < 1e-9 ? '{->v} = 0' : '{->v}') : Math.abs(vc) < 1e-9 ? '{->v}_2 = 0' : '{->v}_2', anim ? CV : C2, X0, t2, yD[1]);
+  lab(Math.abs(dv) < 1e-9 ? 'Δ{->v} = 0' : 'Δ{->v}', CD, t1, t2, yD[2], true);
+}
+function ops(P, f) { P.ops.push(f); }
+
+/* ---- kaarre ---- */
+/** Nimiön ehdokaspaikat pisteen Q ympärillä: suositusjärjestyksessä, ja ylä- ja alapuolelle myös sivuun siirrettyinä,
+    jotta pitkä nimiö mahtuu kankaan reunan lähellä. */
+function around(Q, prefer, fs) {
+  const c = {
+    up: [{ x: Q.x, y: Q.y - fs * 1.3, align: 'center' }, { x: Q.x - fs * 0.6, y: Q.y - fs * 1.3, align: 'left' }, { x: Q.x + fs * 0.6, y: Q.y - fs * 1.3, align: 'right' }],
+    dn: [{ x: Q.x, y: Q.y + fs * 1.3, align: 'center' }, { x: Q.x - fs * 0.6, y: Q.y + fs * 1.3, align: 'left' }, { x: Q.x + fs * 0.6, y: Q.y + fs * 1.3, align: 'right' }],
+    l: [{ x: Q.x - fs * 1.0, y: Q.y, align: 'right' }], r: [{ x: Q.x + fs * 1.0, y: Q.y, align: 'left' }],
+  };
+  return prefer.flatMap((k) => c[k]);
+}
+function sceneCurve(ctx, P) {
+  const { fs } = L, g = curveGeom(), { R, cx, cy, ka, ox, oy } = g, val = S.show.val, anim = S.playing;
+  const p1 = phi1(), t = tNow(), pc = phiAt(t), big = fs * 1.05, f = pc - p1;
+  const P1 = ptC(g, p1), Pc = ptC(g, pc), V1 = velC(g, p1), Vc = velC(g, pc), rb = fs * 0.8;
+  const Q1 = { x: P1.x + V1.x, y: P1.y + V1.y }, Qc = { x: Pc.x + Vc.x, y: Pc.y + Vc.y };
+  const A = { x: ox + V1.x, y: oy + V1.y }, B = { x: ox + Vc.x, y: oy + Vc.y };
+  const dvx = B.x - A.x, dvy = B.y - A.y, dvl = Math.hypot(dvx, dvy);
+  const colC = anim ? CV : C2, nameC = anim ? '{->v}' : '{->v}_2';
+
+  /* esteet ja piirtokomennot */
+  ops(P, () => {
+    ctx.strokeStyle = COL.line2; ctx.lineWidth = 1.3; ctx.setLineDash([3, 5]);
+    ctx.beginPath(); ctx.arc(cx, cy, R, 0, 2 * Math.PI); ctx.stroke();
+    ctx.strokeStyle = GREY; ctx.lineWidth = 2; ctx.setLineDash([6, 5]);
+    ctx.beginPath(); ctx.arc(cx, cy, R, -p1, -pc, true); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(cx, cy, 3.2, 0, 2 * Math.PI); ctx.fill();
+  });
+  P.block(cx - 5, cy - 5, cx + 5, cy + 5);
+  if (val) {                                                       // säteet ja kääntymiskulma Δφ keskipisteessä
+    ops(P, () => {
+      ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([4, 4]);
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(P1.x, P1.y); ctx.moveTo(cx, cy); ctx.lineTo(Pc.x, Pc.y); ctx.stroke(); ctx.setLineDash([]);
+      if (f > 0.02) { ctx.lineWidth = 1.4; ctx.beginPath(); ctx.arc(cx, cy, fs * 1.7, -p1, -pc, true); ctx.stroke(); }
+    });
+    P.seg(cx, cy, P1.x, P1.y, 3, 0.2); P.seg(cx, cy, Pc.x, Pc.y, 3, 0.2);
+  }
+  // kiihtyvyys: levossa keskikiihtyvyys Δv⃗/Δt kaaren keskikohdassa, animaation aikana hetkellinen kiihtyvyys pallossa
+  let aLab = null;
+  if (S.show.a) {
+    const M = anim ? Pc : ptC(g, Math.PI / 2);
+    const amag = anim ? V_C * V_C / R_C : 2 * V_C * Math.sin(dPhi() / 2) / S.dt, ux = (cx - M.x) / R, uy = (cy - M.y) / R;
+    const E = { x: M.x + ux * amag * ka, y: M.y + uy * amag * ka };
+    ops(P, () => {
+      ctx.strokeStyle = CA; ctx.globalAlpha = 0.45; ctx.lineWidth = 1.2; ctx.setLineDash([4, 4]);
+      ctx.beginPath(); ctx.moveTo(E.x, E.y); ctx.lineTo(cx, cy); ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1;
+    });
+    P.seg(E.x, E.y, cx, cy, 3, 0.2);
+    P.arrow(M.x, M.y, E.x, E.y, CA, 3.5);
+    aLab = { txt: (anim ? '{->a}' : '{->a}_k') + (val ? ` = ${fmt(amag, 2)}${NBSP}m/s^2` : ''), M, E };
+  }
+  ops(P, () => { ghost(ctx, P1.x, P1.y, rb); ball(ctx, Pc.x, Pc.y, rb, !anim && (S.drag === 2 || S.hover === 2)); });
+  P.block(P1.x - rb, P1.y - rb, P1.x + rb, P1.y + rb); P.block(Pc.x - rb, Pc.y - rb, Pc.x + rb, Pc.y + rb);
+  P.arrow(P1.x, P1.y, Q1.x, Q1.y, C1, 4);                         // nopeudet radalla
+  P.arrow(Pc.x, Pc.y, Qc.x, Qc.y, colC, 4);
+  // vektorikuva: yhteinen alkupiste, Δv⃗ v⃗₁:n kärjestä toisen kärkeen
+  ops(P, () => { ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(ox, oy, 2.8, 0, 2 * Math.PI); ctx.fill(); });
+  P.arrow(ox, oy, A.x, A.y, C1, 3.5);
+  P.arrow(ox, oy, B.x, B.y, colC, 3.5);
+  P.arrow(A.x, A.y, B.x, B.y, CD, 3.5);
+  let angLab = null;
+  if (val && dvl > 0.5) {                                          // vektorien v⃗₁ ja Δv⃗ välinen kulma, v⃗₁:n jatke katkoviivana
+    const th1 = Math.atan2(V1.y, V1.x), thd = Math.atan2(dvy, dvx);
+    let d = thd - th1; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI;
+    const ra = fs * 1.4, ext = fs * 2.3, am = th1 + d / 2;
+    ops(P, () => {
+      ctx.strokeStyle = C1; ctx.lineWidth = 1.3; ctx.setLineDash([4, 4]);
+      ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(A.x + Math.cos(th1) * ext, A.y + Math.sin(th1) * ext); ctx.stroke(); ctx.setLineDash([]);
+      ctx.strokeStyle = COL.ink2; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.arc(A.x, A.y, ra, th1, th1 + d, d < 0); ctx.stroke();
+    });
+    P.seg(A.x, A.y, A.x + Math.cos(th1) * ext, A.y + Math.sin(th1) * ext, 3, 0.3);
+    angLab = { txt: `${fmt(Math.abs(d) * 180 / Math.PI, 1)}°`, am, ra };
+  }
+
+  /* nimiöt tärkeysjärjestyksessä */
+  const vt = (name) => (val ? `${name} = ${ms(V_C)}` : name);
+  P.label(vt('{->v}_1'), big, C1, around(Q1, ['up', 'r', 'l', 'dn'], fs));
+  P.label(vt(nameC), big, colC, around(Qc, ['dn', 'l', 'r', 'up'], fs));
+  if (aLab) {
+    const { M, E } = aLab, mx = (M.x + E.x) / 2, my = (M.y + E.y) / 2;
+    P.label(aLab.txt, big, CA, [{ x: mx + fs * 0.6, y: my, align: 'left' }, { x: mx - fs * 0.6, y: my, align: 'right' },
+      { x: E.x + fs * 0.6, y: E.y, align: 'left' }, { x: E.x - fs * 0.6, y: E.y, align: 'right' }, { x: E.x, y: E.y + fs * 0.9, align: 'center' }]);
+  }
+  if (angLab) {
+    const { am, ra } = angLab, at = (r) => ({ x: A.x + Math.cos(am) * r, y: A.y + Math.sin(am) * r, align: 'center' });
+    const c = Math.cos(am), side = { x: A.x + c * (ra + fs * 0.4), y: A.y + Math.sin(am) * (ra + fs * 0.4) + fs * 0.25, align: c < -0.3 ? 'right' : c > 0.3 ? 'left' : 'center' };
+    P.label(angLab.txt, fs * 0.95, COL.ink2, [at(ra + fs * 1.3), side, at(ra + fs * 2.1), { x: A.x - fs * 0.5, y: A.y - fs * 1.5, align: 'right' }, { x: A.x + fs * 0.5, y: A.y - fs * 1.5, align: 'left' }]);
+  }
+  P.label('{->v}_1', big, C1, around(A, ['up', 'l', 'r', 'dn'], fs));
+  P.label(nameC, big, colC, around(B, ['dn', 'l', 'r', 'up'], fs));
+  const mid = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2 };
+  const ring = [[-0.7, 0, 'right'], [0.7, 0, 'left'], [-1.3, -1.3, 'right'], [-1.3, 1.3, 'right'], [-2.4, 0, 'right'], [0, 2.4, 'center'], [-1.6, 2.6, 'right'], [0, -2.6, 'center']];
+  P.label(dvl < 0.5 ? 'Δ{->v} = 0' : 'Δ{->v}', big, CD, ring.map(([dx, dy, align]) => ({ x: mid.x + dx * fs, y: mid.y + dy * fs, align })));
+  P.label('O', fs * 0.95, COL.ink2, [{ x: cx - fs * 0.5, y: cy + fs * 0.2, align: 'right' }, { x: cx + fs * 0.5, y: cy + fs * 0.6, align: 'left' }]);
+  if (val && f > 0.02) {
+    const txt = `Δ{φ} = ${fmt(f * 180 / Math.PI, 0)}°`;
+    P.label(txt, fs * 0.95, COL.ink2, [{ x: cx, y: cy - fs * 2.7, align: 'center' }, { x: cx, y: cy - fs * 3.7, align: 'center' },
+      { x: cx, y: cy + fs * 1.2, align: 'center' }, { x: cx + fs * 0.5, y: cy + fs * 1.2, align: 'left' }, { x: cx - fs * 0.5, y: cy + fs * 1.2, align: 'right' }]);
+  }
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const LINE2 = COL.line2;
+function sgnRange(id, color, onInput) {
+  const c = bindRange(id, (v) => ms(v), onInput);
+  const paintTrk = () => {
+    const el = c.el, a = +el.min, b = +el.max, pos = 100 - (+el.value - a) / (b - a) * 100;   // rtl: suurin arvo vasemmalla
+    const lo = Math.min(50, pos), hi = Math.max(50, pos);
+    el.style.setProperty('--trk', `linear-gradient(to right, ${LINE2} 0 ${lo}%, ${color} ${lo}% ${hi}%, ${LINE2} ${hi}% 100%)`);
+  };
+  c.el.addEventListener('input', paintTrk);
+  paintTrk();
+  const set = c.set.bind(c);
+  c.set = (v) => { set(v); paintTrk(); };
+  return c;
+}
+const stop = () => { S.playing = false; };
+const ctlV1 = sgnRange('v1', C1, (v) => { S.v1 = v; stop(); paintPresets(); });
+const ctlV2 = sgnRange('v2', C2, (v) => { S.v2 = v; stop(); paintPresets(); });
+const ctlDt = bindRange('dt', (v) => fmt(v, 2) + NBSP + 's', (v) => { S.dt = v; stop(); });
+
+const modeBtns = [...document.querySelectorAll('#mode button')], presetBtns = [...document.querySelectorAll('#presets button')];
+const hint = document.getElementById('hint');
+function setMode(m) {
+  S.mode = m; stop();
+  for (const b of modeBtns) b.setAttribute('aria-pressed', String(b.dataset.mode === m));
+  document.getElementById('gLine').hidden = m !== 'line';
+  document.getElementById('gCurve').hidden = m !== 'curve';
+  hint.textContent = m === 'line' ? 'Positiivinen suunta on vasemmalle. Alaosan nuolten kärkiä voi raahata.'
+    : 'Vauhti pysyy samana, vain nopeuden suunta muuttuu. Palloa voi raahata radalla.';
+}
+function applyPreset(p) {
+  [S.v1, S.v2] = PRESETS[p]; stop();
+  ctlV1.set(S.v1); ctlV2.set(S.v2); paintPresets();
+}
+function paintPresets() {
+  for (const b of presetBtns) { const [a, c] = PRESETS[b.dataset.p]; b.setAttribute('aria-pressed', String(a === S.v1 && c === S.v2)); }
+}
+for (const b of modeBtns) b.addEventListener('click', () => setMode(b.dataset.mode));
+for (const b of presetBtns) b.addEventListener('click', () => applyPreset(b.dataset.p));
+
+const playBtn = document.getElementById('play');
+playBtn.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>Liikuta';
+playBtn.addEventListener('click', () => { S.t = 0; S.playing = true; });
+document.getElementById('reset').addEventListener('click', () => {
+  if (S.mode === 'line') applyPreset('acc'); else { S.dt = DEF_DT; ctlDt.set(DEF_DT); stop(); }
+});
+for (const [id, key] of [['showA', 'a'], ['showVal', 'val']]) {
+  const el = document.getElementById(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+
+/* Raahaus: suorassa erotuskuvan v⃗₁:n ja v⃗₂:n kärjet, kaarteessa pallo tai haamu radalla. */
+function hit(p) {
+  const { fs } = L;
+  if (S.playing) return null;
+  if (S.mode === 'line') {
+    const g = lineGeom(), tips = [[1, g.X0 - S.v1 * g.kv, g.yD[0]], [2, g.X0 - S.v2 * g.kv, g.yD[1]]];
+    let best = null, bd = fs * 1.3;
+    for (const [i, x, y] of tips) { const d = Math.hypot(p.x - x, p.y - y); if (d < bd) { bd = d; best = i; } }
+    return best;
+  }
+  const g = curveGeom(), P1 = ptC(g, phi1()), P2 = ptC(g, phiAt(S.dt)), r = fs * 1.4;
+  if (Math.hypot(p.x - P2.x, p.y - P2.y) < r) return 2;
+  if (Math.hypot(p.x - P1.x, p.y - P1.y) < r) return 1;
+  return null;
+}
+function dragTo(p) {
+  if (S.mode === 'line') {
+    const g = lineGeom(), v = clamp(Math.round((g.X0 - p.x) / g.kv * 2) / 2, -VMAX, VMAX);
+    if (S.drag === 1) { S.v1 = v; ctlV1.set(v); } else { S.v2 = v; ctlV2.set(v); }
+    paintPresets();
+    return;
+  }
+  const g = curveGeom(), f = Math.atan2(g.cy - p.y, p.x - g.cx);   // osoittimen kulma radalla
+  let d = S.drag === 2 ? 2 * (f - Math.PI / 2) : 2 * (Math.PI / 2 - f);
+  if (d < -Math.PI) d += 4 * Math.PI;                              // osoitin radan alaosassa vasemmalla
+  const dt = clamp(Math.round(d * R_C / V_C / 0.05) * 0.05, +ctlDt.el.min, +ctlDt.el.max);
+  S.dt = dt; ctlDt.set(dt);
+}
+cv.addEventListener('pointerdown', (e) => {
+  const h = hit(view.pt(e));
+  if (h === null) return;
+  S.drag = h; cv.setPointerCapture(e.pointerId); e.preventDefault();
+});
+cv.addEventListener('pointermove', (e) => {
+  const p = view.pt(e);
+  if (S.drag !== null) { dragTo(p); return; }
+  S.hover = hit(p);
+  cv.style.cursor = S.hover !== null ? 'grab' : 'default';
+});
+const endDrag = () => { S.drag = null; };
+cv.addEventListener('pointerup', endDrag);
+cv.addEventListener('pointercancel', endDrag);
+
+/* Osoitteen parametrit: ?tila=kaarre avaa kaarteen, ?tilanne=b (tai kiihtyy / hidastuu / kaantyy) valitsee esimerkin. */
+(() => {
+  const q = new URLSearchParams(location.search), tila = (q.get('tila') || '').toLowerCase(), tl = (q.get('tilanne') || '').toLowerCase();
+  const map = { a: 'acc', kiihtyy: 'acc', hidastuu: 'dec', b: 'rev', kaantyy: 'rev', 'kääntyy': 'rev' };
+  if (map[tl]) applyPreset(map[tl]);
+  setMode(tila === 'kaarre' ? 'curve' : 'line');
+})();
+paintPresets();
+startLoop({ dt: 1 / 240, step, draw, running: () => S.playing });
+})();
+</script>
+</body>
+</html>
