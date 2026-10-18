@@ -318,14 +318,14 @@ const DEF_DT = 1.5;
 const C1 = '#2f8a8f', C2 = '#7a9c33', CD = '#c8693f', CA = COL.violet, CV = COL.blue, CAX = '#7fb8d6', GREY = '#a3a3a3';
 const S = {
   mode: 'line', v1: PRESETS.acc[0], v2: PRESETS.acc[1], dt: DEF_DT,
-  t: 0, playing: false,                  // animaatio: aika alusta (s)
+  t: 0, phase: 'start',                  // 'start' = lähtötilanne, 'run' = liike käynnissä, 'end' = liike tehty; t = aika alusta (s)
   show: { a: false, val: false },
   drag: null, hover: null,
   input: -1e9,                           // viimeisimmän säätimen liikutuksen hetki (ms)
 };
 
 const T = () => (S.mode === 'line' ? DT_LINE : S.dt);    // tarkasteltava aikaväli
-const tNow = () => (S.playing ? S.t : T());               // levossa näytetään lopputilanne
+const tNow = () => (S.phase === 'start' ? 0 : S.phase === 'run' ? S.t : T());   // aluksi vain lähtötilanne, loppu vasta liikkeen jälkeen
 // suora liike
 const accL = () => (S.v2 - S.v1) / DT_LINE;
 const xL = (t) => S.v1 * t + 0.5 * accL() * t * t;
@@ -336,9 +336,9 @@ const phi1 = () => Math.PI / 2 - dPhi() / 2;
 const phiAt = (t) => phi1() + V_C / R_C * t;
 
 function step(dt) {
-  if (!S.playing) return;
+  if (S.phase !== 'run') return;
   S.t += dt * RATE;
-  if (S.t >= T()) { S.t = T(); S.playing = false; }
+  if (S.t >= T()) { S.t = T(); S.phase = 'end'; }
 }
 
 /* =====================================================================
@@ -388,6 +388,22 @@ const msp = (v) => (v < 0 ? `(${ms(v)})` : ms(v));                 // negatiivin
 
 function valueRows() {
   if (!S.show.val) return [];
+  if (S.mode === 'line' && S.phase !== 'end') {                     // ennen loppua vain alkunopeus ja hetkellinen nopeus
+    const rows = [[`{->v}_1 = ${ms(S.v1)},   Δ{t} = ${fmt(DT_LINE, 1)}${NBSP}s`, COL.ink2]];
+    if (S.phase === 'run') {
+      const v = vL(S.t);
+      rows[0] = [`{->v}_1 = ${ms(S.v1)},   {->v} = ${ms(v)},   {t} = ${fmt(S.t, 1)}${NBSP}s`, COL.ink2];
+      rows.push([`Δ{->v} = {->v} ${MINUS} {->v}_1 = ${ms(v)} ${MINUS} ${msp(S.v1)} = ${ms(v - S.v1)}`, CD]);
+    }
+    return rows;
+  }
+  if (S.mode === 'curve' && S.phase !== 'end') {
+    if (S.phase === 'start') return [[`|{->v}_1| = ${ms(V_C)},   Δ{t} = ${fmt(S.dt, 2)}${NBSP}s`, COL.ink2]];
+    const f = V_C / R_C * S.t;
+    return [[`|{->v}_1| = |{->v}| = ${ms(V_C)},   {t} = ${fmt(S.t, 2)}${NBSP}s,   Δ{φ} = ${fmt(f * 180 / Math.PI, 0)}°`, COL.ink2],
+      [`|Δ{->v}| = ${fmt(2 * V_C * Math.sin(f / 2), 2)}${NBSP}m/s`, CD],
+      [`Vektorien {->v}_1 ja Δ{->v} välinen kulma ${fmt(90 + f * 90 / Math.PI, 1)}°`, COL.ink2]];
+  }
   if (S.mode === 'line') {
     const dv = S.v2 - S.v1, a = accL(), { v1, v2 } = S;
     let st;
@@ -417,7 +433,7 @@ function draw() {
 
   /* ---- nimiöiden sijoittelu: ensin esteet, sitten nimiöt ensimmäiseen vapaaseen ehdokaspaikkaan ---- */
   const boxes = [], labels = [], ops = [], used = new Set();
-  const moving = S.playing || S.drag !== null || performance.now() - S.input < 400;
+  const moving = S.phase === 'run' || S.drag !== null || performance.now() - S.input < 400;
   const boxOf = (txt, size, c) => {
     const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
     const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
@@ -492,7 +508,8 @@ function ball(ctx, x, y, r, act) {
 
 /* ---- suora liike ---- */
 function sceneLine(ctx, P) {
-  const { fs } = L, g = lineGeom(), { sx, kv, rb, yHi, yArr, yBall, yAcc, yAxis, yD, X0 } = g, val = S.show.val, anim = S.playing;
+  const { fs } = L, g = lineGeom(), { sx, kv, rb, yHi, yArr, yBall, yAcc, yAxis, yD, X0 } = g, val = S.show.val;
+  const anim = S.phase === 'run', start = S.phase === 'start';     // lähtötilanteessa vain pallo ja v⃗₁
   const t = tNow(), vc = vL(t), gx = sx(0), bx = sx(xL(t));
   const big = fs * 1.05, dv = vc - S.v1;
   const lab = (txt, color, xa, xb, y, below) => {
@@ -504,6 +521,7 @@ function sceneLine(ctx, P) {
 
   // rata (katkoviiva, kääntyessä hiusneulan muotoinen kuten kalvolla), haamu alkukohdassa ja pallo
   ops(P, () => {
+    if (start) { ball(ctx, bx, yBall, rb); return; }
     const gap = rb * 0.55;
     ctx.strokeStyle = GREY; ctx.lineWidth = 2; ctx.setLineDash([6, 5]);
     ctx.beginPath(); ctx.moveTo(gx, yBall);
@@ -524,7 +542,7 @@ function sceneLine(ctx, P) {
   const ends = (cx, v, k = kv) => [cx + v * k / 2, cx - v * k / 2];      // [häntä, kärki]
   const [a1, b1] = ends(gx, S.v1), [a2, b2] = ends(bx, vc), [aa, ba] = ends(bx, g.a);
   P.arrow(a1, yHi, b1, yHi, C1, 4);
-  P.arrow(a2, yArr, b2, yArr, anim ? CV : C2, 4);
+  if (!start) P.arrow(a2, yArr, b2, yArr, anim ? CV : C2, 4);
   if (S.show.a) P.arrow(aa, yAcc, ba, yAcc, CA, 3.5);
 
   // positiivinen suunta (kuten kalvolla: + vasemmalla)
@@ -540,6 +558,7 @@ function sceneLine(ctx, P) {
   // vektorien erotus: v⃗₁ ja v⃗₂ samasta alkupisteestä, Δv⃗ v⃗₁:n kärjestä v⃗₂:n kärkeen
   const t1 = X0 - S.v1 * kv, t2 = X0 - vc * kv;
   ops(P, () => {
+    if (start) { ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(X0, yD[0], 2.6, 0, 2 * Math.PI); ctx.fill(); return; }
     ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([2, 4]);
     ctx.beginPath();
     ctx.moveTo(X0, yD[0] - fs * 0.7); ctx.lineTo(X0, yD[1] + fs * 0.5);
@@ -549,14 +568,17 @@ function sceneLine(ctx, P) {
     ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(X0, yD[0], 2.6, 0, 2 * Math.PI); ctx.arc(X0, yD[1], 2.6, 0, 2 * Math.PI); ctx.fill();
   });
   P.arrow(X0, yD[0], t1, yD[0], C1, 3.5);
-  P.arrow(X0, yD[1], t2, yD[1], anim ? CV : C2, 3.5);
-  P.arrow(t1, yD[2], t2, yD[2], CD, 3.5);
+  if (!start) {
+    P.arrow(X0, yD[1], t2, yD[1], anim ? CV : C2, 3.5);
+    P.arrow(t1, yD[2], t2, yD[2], CD, 3.5);
+  }
 
   // nimiöt
   lab(vtxt('{->v}_1', S.v1), C1, a1, b1, yHi);
-  lab(vtxt(anim ? '{->v}' : '{->v}_2', vc), anim ? CV : C2, a2, b2, yArr);
+  if (!start) lab(vtxt(anim ? '{->v}' : '{->v}_2', vc), anim ? CV : C2, a2, b2, yArr);
   if (S.show.a) lab(val ? `{->a} = ${fmt(g.a, 2)}${NBSP}m/s^2` : Math.abs(g.a) < 1e-9 ? '{->a} = 0' : '{->a}', CA, aa, ba, yAcc, true);
   lab(Math.abs(S.v1) < 1e-9 ? '{->v}_1 = 0' : '{->v}_1', C1, X0, t1, yD[0]);
+  if (start) return;
   lab(anim ? (Math.abs(vc) < 1e-9 ? '{->v} = 0' : '{->v}') : Math.abs(vc) < 1e-9 ? '{->v}_2 = 0' : '{->v}_2', anim ? CV : C2, X0, t2, yD[1]);
   lab(Math.abs(dv) < 1e-9 ? 'Δ{->v} = 0' : 'Δ{->v}', CD, t1, t2, yD[2], true);
 }
@@ -574,7 +596,8 @@ function around(Q, prefer, fs) {
   return prefer.flatMap((k) => c[k]);
 }
 function sceneCurve(ctx, P) {
-  const { fs } = L, g = curveGeom(), { R, cx, cy, ka, ox, oy } = g, val = S.show.val, anim = S.playing;
+  const { fs } = L, g = curveGeom(), { R, cx, cy, ka, ox, oy } = g, val = S.show.val;
+  const anim = S.phase === 'run', start = S.phase === 'start';     // lähtötilanteessa vain pallo ja v⃗₁
   const p1 = phi1(), t = tNow(), pc = phiAt(t), big = fs * 1.05, f = pc - p1;
   const P1 = ptC(g, p1), Pc = ptC(g, pc), V1 = velC(g, p1), Vc = velC(g, pc), rb = fs * 0.8;
   const Q1 = { x: P1.x + V1.x, y: P1.y + V1.y }, Qc = { x: Pc.x + Vc.x, y: Pc.y + Vc.y };
@@ -599,11 +622,11 @@ function sceneCurve(ctx, P) {
     });
     P.seg(cx, cy, P1.x, P1.y, 3, 0.2); P.seg(cx, cy, Pc.x, Pc.y, 3, 0.2);
   }
-  // kiihtyvyys: levossa keskikiihtyvyys Δv⃗/Δt kaaren keskikohdassa, animaation aikana hetkellinen kiihtyvyys pallossa
+  // kiihtyvyys: liikkeen jälkeen keskikiihtyvyys Δv⃗/Δt kaaren keskikohdassa, muuten hetkellinen kiihtyvyys pallossa
   let aLab = null;
   if (S.show.a) {
-    const M = anim ? Pc : ptC(g, Math.PI / 2);
-    const amag = anim ? V_C * V_C / R_C : 2 * V_C * Math.sin(dPhi() / 2) / S.dt, ux = (cx - M.x) / R, uy = (cy - M.y) / R;
+    const inst = S.phase !== 'end', M = inst ? Pc : ptC(g, Math.PI / 2);
+    const amag = inst ? V_C * V_C / R_C : 2 * V_C * Math.sin(dPhi() / 2) / S.dt, ux = (cx - M.x) / R, uy = (cy - M.y) / R;
     const E = { x: M.x + ux * amag * ka, y: M.y + uy * amag * ka };
     ops(P, () => {
       ctx.strokeStyle = CA; ctx.globalAlpha = 0.45; ctx.lineWidth = 1.2; ctx.setLineDash([4, 4]);
@@ -611,17 +634,19 @@ function sceneCurve(ctx, P) {
     });
     P.seg(E.x, E.y, cx, cy, 3, 0.2);
     P.arrow(M.x, M.y, E.x, E.y, CA, 3.5);
-    aLab = { txt: (anim ? '{->a}' : '{->a}_k') + (val ? ` = ${fmt(amag, 2)}${NBSP}m/s^2` : ''), M, E };
+    aLab = { txt: (inst ? '{->a}' : '{->a}_k') + (val ? ` = ${fmt(amag, 2)}${NBSP}m/s^2` : ''), M, E };
   }
-  ops(P, () => { ghost(ctx, P1.x, P1.y, rb); ball(ctx, Pc.x, Pc.y, rb, !anim && (S.drag === 2 || S.hover === 2)); });
+  ops(P, () => { if (!start) ghost(ctx, P1.x, P1.y, rb); ball(ctx, Pc.x, Pc.y, rb); });
   P.block(P1.x - rb, P1.y - rb, P1.x + rb, P1.y + rb); P.block(Pc.x - rb, Pc.y - rb, Pc.x + rb, Pc.y + rb);
   P.arrow(P1.x, P1.y, Q1.x, Q1.y, C1, 4);                         // nopeudet radalla
-  P.arrow(Pc.x, Pc.y, Qc.x, Qc.y, colC, 4);
+  if (!start) P.arrow(Pc.x, Pc.y, Qc.x, Qc.y, colC, 4);
   // vektorikuva: yhteinen alkupiste, Δv⃗ v⃗₁:n kärjestä toisen kärkeen
   ops(P, () => { ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(ox, oy, 2.8, 0, 2 * Math.PI); ctx.fill(); });
   P.arrow(ox, oy, A.x, A.y, C1, 3.5);
-  P.arrow(ox, oy, B.x, B.y, colC, 3.5);
-  P.arrow(A.x, A.y, B.x, B.y, CD, 3.5);
+  if (!start) {
+    P.arrow(ox, oy, B.x, B.y, colC, 3.5);
+    P.arrow(A.x, A.y, B.x, B.y, CD, 3.5);
+  }
   let angLab = null;
   if (val && dvl > 0.5) {                                          // vektorien v⃗₁ ja Δv⃗ välinen kulma, v⃗₁:n jatke katkoviivana
     const th1 = Math.atan2(V1.y, V1.x), thd = Math.atan2(dvy, dvx);
@@ -639,7 +664,7 @@ function sceneCurve(ctx, P) {
   /* nimiöt tärkeysjärjestyksessä */
   const vt = (name) => (val ? `${name} = ${ms(V_C)}` : name);
   P.label(vt('{->v}_1'), big, C1, around(Q1, ['up', 'r', 'l', 'dn'], fs));
-  P.label(vt(nameC), big, colC, around(Qc, ['dn', 'l', 'r', 'up'], fs));
+  if (!start) P.label(vt(nameC), big, colC, around(Qc, ['dn', 'l', 'r', 'up'], fs));
   if (aLab) {
     const { M, E } = aLab, mx = (M.x + E.x) / 2, my = (M.y + E.y) / 2;
     P.label(aLab.txt, big, CA, [{ x: mx + fs * 0.6, y: my, align: 'left' }, { x: mx - fs * 0.6, y: my, align: 'right' },
@@ -651,10 +676,12 @@ function sceneCurve(ctx, P) {
     P.label(angLab.txt, fs * 0.95, COL.ink2, [at(ra + fs * 1.3), side, at(ra + fs * 2.1), { x: A.x - fs * 0.5, y: A.y - fs * 1.5, align: 'right' }, { x: A.x + fs * 0.5, y: A.y - fs * 1.5, align: 'left' }]);
   }
   P.label('{->v}_1', big, C1, around(A, ['up', 'l', 'r', 'dn'], fs));
-  P.label(nameC, big, colC, around(B, ['dn', 'l', 'r', 'up'], fs));
-  const mid = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2 };
-  const ring = [[-0.7, 0, 'right'], [0.7, 0, 'left'], [-1.3, -1.3, 'right'], [-1.3, 1.3, 'right'], [-2.4, 0, 'right'], [0, 2.4, 'center'], [-1.6, 2.6, 'right'], [0, -2.6, 'center']];
-  P.label(dvl < 0.5 ? 'Δ{->v} = 0' : 'Δ{->v}', big, CD, ring.map(([dx, dy, align]) => ({ x: mid.x + dx * fs, y: mid.y + dy * fs, align })));
+  if (!start) {
+    P.label(nameC, big, colC, around(B, ['dn', 'l', 'r', 'up'], fs));
+    const mid = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2 };
+    const ring = [[-0.7, 0, 'right'], [0.7, 0, 'left'], [-1.3, -1.3, 'right'], [-1.3, 1.3, 'right'], [-2.4, 0, 'right'], [0, 2.4, 'center'], [-1.6, 2.6, 'right'], [0, -2.6, 'center']];
+    P.label(dvl < 0.5 ? 'Δ{->v} = 0' : 'Δ{->v}', big, CD, ring.map(([dx, dy, align]) => ({ x: mid.x + dx * fs, y: mid.y + dy * fs, align })));
+  }
   P.label('O', fs * 0.95, COL.ink2, [{ x: cx - fs * 0.5, y: cy + fs * 0.2, align: 'right' }, { x: cx + fs * 0.5, y: cy + fs * 0.6, align: 'left' }]);
   if (val && f > 0.02) {
     const txt = `Δ{φ} = ${fmt(f * 180 / Math.PI, 0)}°`;
@@ -680,24 +707,25 @@ function sgnRange(id, color, onInput) {
   c.set = (v) => { set(v); paintTrk(); };
   return c;
 }
-const stop = () => { S.playing = false; };
-const touched = () => { S.playing = false; S.input = performance.now(); };   // säädintä liikutetaan jatkuvasti
+/** Takaisin lähtötilanteeseen: vain pallo ja alkunopeus näkyvät, muut nuolet syntyvät vasta liikkeessä. */
+const toStart = () => { S.phase = 'start'; S.t = 0; };
+const touched = () => { toStart(); S.input = performance.now(); };   // säädintä liikutetaan jatkuvasti
 const ctlV1 = sgnRange('v1', C1, (v) => { S.v1 = v; touched(); paintPresets(); });
 const ctlV2 = sgnRange('v2', C2, (v) => { S.v2 = v; touched(); paintPresets(); });
-const ctlDt = bindRange('dt', (v) => fmt(v, 2) + NBSP + 's', (v) => { S.dt = v; touched(); });
+bindRange('dt', (v) => fmt(v, 2) + NBSP + 's', (v) => { S.dt = v; touched(); });
 
 const modeBtns = [...document.querySelectorAll('#mode button')], presetBtns = [...document.querySelectorAll('#presets button')];
 const hint = document.getElementById('hint');
 function setMode(m) {
-  S.mode = m; stop();
+  S.mode = m; toStart();
   for (const b of modeBtns) b.setAttribute('aria-pressed', String(b.dataset.mode === m));
   document.getElementById('gLine').hidden = m !== 'line';
   document.getElementById('gCurve').hidden = m !== 'curve';
-  hint.textContent = m === 'line' ? 'Positiivinen suunta on vasemmalle. Alaosan nuolten kärkiä voi raahata.'
-    : 'Vauhti pysyy samana, vain nopeuden suunta muuttuu. Palloa voi raahata radalla.';
+  hint.textContent = m === 'line' ? 'Positiivinen suunta on vasemmalle. Liikuta näyttää, miten nopeus muuttuu.'
+    : 'Vauhti pysyy samana, vain nopeuden suunta muuttuu.';
 }
 function applyPreset(p) {
-  [S.v1, S.v2] = PRESETS[p]; stop();
+  [S.v1, S.v2] = PRESETS[p]; toStart();
   ctlV1.set(S.v1); ctlV2.set(S.v2); paintPresets();
 }
 function paintPresets() {
@@ -708,43 +736,24 @@ for (const b of presetBtns) b.addEventListener('click', () => applyPreset(b.data
 
 const playBtn = document.getElementById('play');
 playBtn.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>Liikuta';
-playBtn.addEventListener('click', () => { S.t = 0; S.playing = true; });
-document.getElementById('reset').addEventListener('click', () => {
-  if (S.mode === 'line') applyPreset('acc'); else { S.dt = DEF_DT; ctlDt.set(DEF_DT); stop(); }
-});
+playBtn.addEventListener('click', () => { S.t = 0; S.phase = 'run'; });
+document.getElementById('reset').addEventListener('click', toStart);   // takaisin lähtötilanteeseen, valitut arvot säilyvät
 for (const [id, key] of [['showA', 'a'], ['showVal', 'val']]) {
   const el = document.getElementById(id);
   S.show[key] = el.checked;
   el.addEventListener('change', () => { S.show[key] = el.checked; });
 }
 
-/* Raahaus: suorassa erotuskuvan v⃗₁:n ja v⃗₂:n kärjet, kaarteessa pallo tai haamu radalla. */
+/* Raahaus: suorassa erotuskuvan v⃗₁:n kärki (loppunopeus ei näy ennen liikettä, joten sitä säädetään liukusäätimellä). */
 function hit(p) {
-  const { fs } = L;
-  if (S.playing) return null;
-  if (S.mode === 'line') {
-    const g = lineGeom(), tips = [[1, g.X0 - S.v1 * g.kv, g.yD[0]], [2, g.X0 - S.v2 * g.kv, g.yD[1]]];
-    let best = null, bd = fs * 1.3;
-    for (const [i, x, y] of tips) { const d = Math.hypot(p.x - x, p.y - y); if (d < bd) { bd = d; best = i; } }
-    return best;
-  }
-  const g = curveGeom(), P1 = ptC(g, phi1()), P2 = ptC(g, phiAt(S.dt)), r = fs * 1.4;
-  if (Math.hypot(p.x - P2.x, p.y - P2.y) < r) return 2;
-  if (Math.hypot(p.x - P1.x, p.y - P1.y) < r) return 1;
-  return null;
+  if (S.phase === 'run' || S.mode !== 'line') return null;
+  const g = lineGeom();
+  return Math.hypot(p.x - (g.X0 - S.v1 * g.kv), p.y - g.yD[0]) < L.fs * 1.3 ? 1 : null;
 }
 function dragTo(p) {
-  if (S.mode === 'line') {
-    const g = lineGeom(), v = clamp(Math.round((g.X0 - p.x) / g.kv * 2) / 2, -VMAX, VMAX);
-    if (S.drag === 1) { S.v1 = v; ctlV1.set(v); } else { S.v2 = v; ctlV2.set(v); }
-    paintPresets();
-    return;
-  }
-  const g = curveGeom(), f = Math.atan2(g.cy - p.y, p.x - g.cx);   // osoittimen kulma radalla
-  let d = S.drag === 2 ? 2 * (f - Math.PI / 2) : 2 * (Math.PI / 2 - f);
-  if (d < -Math.PI) d += 4 * Math.PI;                              // osoitin radan alaosassa vasemmalla
-  const dt = clamp(Math.round(d * R_C / V_C / 0.05) * 0.05, +ctlDt.el.min, +ctlDt.el.max);
-  S.dt = dt; ctlDt.set(dt);
+  const g = lineGeom(), v = clamp(Math.round((g.X0 - p.x) / g.kv * 2) / 2, -VMAX, VMAX);
+  if (v !== S.v1) { S.v1 = v; ctlV1.set(v); paintPresets(); }
+  toStart();
 }
 cv.addEventListener('pointerdown', (e) => {
   const h = hit(view.pt(e));
@@ -769,7 +778,7 @@ cv.addEventListener('pointercancel', endDrag);
   setMode(tila === 'kaarre' ? 'curve' : 'line');
 })();
 paintPresets();
-startLoop({ dt: 1 / 240, step, draw, running: () => S.playing });
+startLoop({ dt: 1 / 240, step, draw, running: () => S.phase === 'run' });
 })();
 </script>
 </body>
