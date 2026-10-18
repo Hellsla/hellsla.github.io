@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ratanopeus ja jaksonaika · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .seg.wide{display:flex;width:100%}
+  .seg.wide button{flex:1 1 0;padding:0 .25em;white-space:nowrap}
+  .lbl{font-size:.82em;color:var(--ink-2);line-height:1.2}
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+  .ctl.locked{opacity:.55}
+  .ctl.locked .ctl-head>span::after{content:" (vakio)";font-style:normal}
+  input[type=range]:disabled{cursor:default}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Kappale kiertää ympyrärataa tasaisella vauhdilla. Säde, jaksonaika ja ratanopeus riippuvat toisistaan: yksi pidetään vakiona ja kahta muuta voi muuttaa. Sekuntikello ja kierroslaskuri mittaavat kierrosajan, ja vertailurata näyttää toisen kappaleen samaan aikaan."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <button class="btn primary wide" id="play" type="button"></button>
+    <div class="btns">
+      <button class="btn" id="reset" type="button" title="Kello nollaan ja kappaleet lähtöviivalle">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <button class="btn" id="ref" type="button" aria-pressed="false" title="Tallenna nykyinen rata vertailuradaksi (uusi painallus poistaa sen)">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2.4 1.8"/><circle cx="8" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Vertailu</button>
+    </div>
+    <div class="group">
+      <span class="lbl">Pidä vakiona</span>
+      <div class="seg wide" id="lock" role="group" aria-label="Vakiona pidettävä suure">
+        <button type="button" data-q="r" title="Säde pysyy vakiona"><span class="sym">r</span></button>
+        <button type="button" data-q="T" title="Jaksonaika pysyy vakiona"><span class="sym">T</span></button>
+        <button type="button" data-q="v" title="Ratanopeus pysyy vakiona"><span class="sym">v</span></button>
+      </div>
+    </div>
+    <div class="group">
+      <label class="ctl" id="c-r"><span class="ctl-head"><span>Säde <span class="sym">r</span></span><b data-for="r"></b></span>
+        <input id="r" type="range" min="0.5" max="3" step="any" value="1.5" aria-label="Radan säde"></label>
+      <label class="ctl" id="c-T"><span class="ctl-head"><span>Jaksonaika <span class="sym">T</span></span><b data-for="T"></b></span>
+        <input id="T" type="range" min="1" max="10" step="any" value="4" aria-label="Jaksonaika eli yhden kierroksen aika"></label>
+      <label class="ctl" id="c-v"><span class="ctl-head"><span>Ratanopeus <span class="sym">v</span></span><b data-for="v"></b></span>
+        <input id="v" type="range" min="0.5" max="10" step="any" value="2.36" aria-label="Ratanopeus"></label>
+    </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showV" checked><span class="key" style="--c:var(--c-blue)"></span>Näytä nopeus</label>
+      <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Näytä arvot</label>
+    </div>
+    <p class="hint">Kierrokset lasketaan lähtöviivalta. Vertailu jättää nykyisen radan näkyviin.</p>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: tasainen ympyräliike, säde, jaksonaika ja ratanopeus
+   Yhden kierroksen aikana (jaksonaika T) kappale kulkee ympyrän kehän 2πr, joten
+        v = 2πr / T,        T = 2πr / v,        r = vT / (2π),        f = 1 / T.
+   Kolmesta suureesta yksi pidetään vakiona; kun toista muutetaan, kolmas määräytyy
+   yhtälöstä. Kulma kasvaa tasaisesti: φ(t) = 2πt / T (vastapäivään lähtöviivalta).
+   ===================================================================== */
+const TAU = 2 * Math.PI;
+const RANGE = { r: [0.5, 3], T: [1, 10], v: [0.5, 10] };          // m, s, m/s
+const STEP = { r: 0.1, T: 0.1, v: 0.1 };                           // käyttäjän säätämän suureen pyöristys
+const UNIT = { r: 'm', T: 's', v: 'm/s' };
+const CV = COL.blue, CARC = COL.green, CREF = '#9aa0a6';
+const S = {
+  r: 1.5, T: 4, lock: 'T',
+  phi: 0, t: 0, laps: 0, lapStart: 0, lastLap: null,               // kulma (rad), kello (s), kierrokset, viimeisin kierrosaika
+  running: false, ref: null,                                       // vertailurata { r, T, phi, laps }
+  show: { v: true, val: false }, input: -1e9,
+};
+const vOf = (r, T) => TAU * r / T;
+const solve = { r: (q) => q.v * q.T / TAU, T: (q) => TAU * q.r / q.v, v: (q) => TAU * q.r / q.T };
+
+/** Kello nollaan ja kappaleet lähtöviivalle; liike jatkuu, jos se oli käynnissä. */
+function restart() {
+  S.phi = 0; S.t = 0; S.laps = 0; S.lapStart = 0; S.lastLap = null;
+  if (S.ref) { S.ref.phi = 0; S.ref.laps = 0; }
+}
+function step(dt) {
+  if (!S.running) return;
+  const w = TAU / S.T;
+  S.t += dt; S.phi += w * dt;
+  if (S.phi >= TAU * (S.laps + 1)) {                               // kierros täyttyi: tarkka ylitysaika interpoloimalla
+    const tc = S.t - (S.phi - TAU * (S.laps + 1)) / w;
+    S.lastLap = tc - S.lapStart; S.lapStart = tc; S.laps++;
+  }
+  if (S.ref) { S.ref.phi += TAU / S.ref.T * dt; S.ref.laps = Math.floor(S.ref.phi / TAU + 1e-9); }
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18), ef = fs * 0.85, pad = fs * 1.1;
+  const top = 10 + fs * 1.4 + ef * 1.5, bottom = 8 + 3 * ef * 1.4;  // kello ylhäällä, arvot alhaalla
+  const Rmax = Math.max(30, Math.min((v.H - top - bottom) / 2 - fs * 0.5, v.W / 2 - pad - fs * 1.2));
+  L = { W: v.W, H: v.H, fs, ef, pad, top, bottom, Rmax, cx: v.W / 2, cy: top + (v.H - top - bottom) / 2, k: Rmax / RANGE.r[1], kv: Rmax * 0.11 };
+});
+
+const memo = new Map();                 // nimiön tunnus → { ehdokas, ruutu } (estää vilkkumisen liikkeen aikana)
+let frame = 0;
+function draw() {
+  frame++;
+  const { ctx, dpr } = view, { W, H, fs, ef, cx, cy, k, kv, bottom } = L, val = S.show.val;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  /* ---- nimiöiden sijoittelu (sama menetelmä kuin muissa simulaatioissa) ---- */
+  const boxes = [], labels = [], used = new Set();
+  const moving = S.running || performance.now() - S.input < 400;
+  const boxOf = (txt, size, c) => {
+    const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15;
+    const x0 = c.align === 'center' ? c.x - w / 2 : c.align === 'right' ? c.x - w : c.x;
+    return { x0, x1: x0 + w, y0: c.y - h / 2, y1: c.y + h / 2 };
+  };
+  /** Pisteet ehdokkaalle: s = peitetty pinta-ala (kankaan ulkopuoli painaa eniten). Ehdokas kelpaa (ok), kun se ei peitä
+      muita nimiöitä, nuolia tai palloja ja ohuisiin viivoihin (paino < 1) osuu vain hipaisu. */
+  const score = (b) => {
+    const out = Math.max(0, 2 - b.x0) + Math.max(0, b.x1 - W + 2) + Math.max(0, 2 - b.y0) + Math.max(0, b.y1 - H + 2);
+    let ov = 0, hv = 0;
+    for (const o of boxes) {
+      const ix = Math.min(b.x1 + 3, o.x1) - Math.max(b.x0 - 3, o.x0), iy = Math.min(b.y1 + 1, o.y1) - Math.max(b.y0 - 1, o.y0);
+      if (ix > 0 && iy > 0) { ov += ix * iy * (o.w || 1); if (!o.w || o.w >= 1) hv += ix * iy; }
+    }
+    return { s: out * 1e4 + ov, ok: out === 0 && hv === 0 && ov < 30 };
+  };
+  const label = (txt, size, color, cands) => {
+    const base = txt.replace(/ = .*/, '');
+    let id = base, n = 2;
+    while (used.has(id)) id = base + '#' + n++;
+    used.add(id);
+    const sc = cands.map((c) => score(boxOf(txt, size, c)));
+    let i = sc.findIndex((x) => x.ok);
+    if (i < 0) { const best = Math.min(...sc.map((x) => x.s)); i = sc.findIndex((x) => x.s === best); }
+    const m = memo.get(id), prev = m && m.k < cands.length ? m.k : -1;   // liikkeen aikana pysytään edellisessä paikassa
+    if (moving && prev >= 0 && prev !== i) {
+      const b = boxOf(txt, size, cands[prev]), area = (b.x1 - b.x0) * (b.y1 - b.y0), age = frame - m.at;
+      if (sc[prev].ok || (!sc[i].ok && sc[prev].s <= sc[i].s * 1.3 + 20) || age < 12 || (age < 24 && sc[prev].s < area * 0.35)) i = prev;
+    }
+    memo.set(id, i === prev && m ? m : { k: i, at: frame });
+    boxes.push(boxOf(txt, size, cands[i])); labels.push({ txt, size, color, c: cands[i] });
+  };
+  const seg = (x1, y1, x2, y2, p, w = 1) => {
+    const n = Math.max(1, Math.ceil(Math.hypot(x2 - x1, y2 - y1) / 8));
+    for (let j = 0; j <= n; j++) { const x = x1 + (x2 - x1) * j / n, y = y1 + (y2 - y1) * j / n; boxes.push({ x0: x - p, x1: x + p, y0: y - p, y1: y + p, w }); }
+  };
+
+  /* ---- kello ja arvot ---- */
+  const v = vOf(S.r, S.T);
+  const top1 = `{t} = ${fmt(S.t, 1)}${NBSP}s      kierroksia ${S.laps}`;
+  const top2 = [S.lastLap !== null ? `kierrosaika ${fmt(S.lastLap, 2)}${NBSP}s` : '', S.ref ? `vertailu: kierroksia ${S.ref.laps}` : ''].filter(Boolean).join('      ');
+  const rows = [];
+  if (val) {
+    rows.push([`{v} = 2π{r} / {T} = 2π · ${fmt(S.r, 2)}${NBSP}m / ${fmt(S.T, 2)}${NBSP}s = ${fmt(v, 2)}${NBSP}m/s`, CV]);
+    rows.push([`{f} = 1 / {T} = ${fmt(1 / S.T, 2)}${NBSP}Hz,      ympärysmitta 2π{r} = ${fmt(TAU * S.r, 2)}${NBSP}m`, COL.ink2]);
+    if (S.ref) rows.push([`vertailu: {r} = ${fmt(S.ref.r, 2)}${NBSP}m,  {T} = ${fmt(S.ref.T, 2)}${NBSP}s,  {v} = ${fmt(vOf(S.ref.r, S.ref.T), 2)}${NBSP}m/s`, CREF]);
+  }
+  const fitSize = (texts, size, maxW) => { const w = Math.max(0, ...texts.map((t) => drawRich(ctx, t, 0, 0, { size, measure: true }))); return w > maxW ? size * maxW / w : size; };
+  const s1 = fitSize([top1], fs * 1.05, W - 28), s2 = fitSize([top2], ef, W - 28);
+  boxes.push({ x0: 10, x1: 14 + drawRich(ctx, top1, 0, 0, { size: s1, measure: true }), y0: 6, y1: 14 + s1 * 1.4 + (top2 ? s2 * 1.4 : 0) });
+  const rs = fitSize(rows.map(([t]) => t), ef, W - 28), ry0 = H - bottom + 4;
+  if (rows.length) boxes.push({ x0: 10, x1: W - 10, y0: ry0, y1: ry0 + rows.length * rs * 1.4 + 4 });
+
+  /* ---- geometria ---- */
+  const R = S.r * k, at = (rr, f) => ({ x: cx + rr * Math.cos(f), y: cy - rr * Math.sin(f) });
+  const P = at(R, S.phi), tan = { x: -Math.sin(S.phi), y: -Math.cos(S.phi) }, Q = { x: P.x + tan.x * v * kv, y: P.y + tan.y * v * kv };
+  const rb = fs * 0.75;
+  let RP = null, RQ = null, RR = 0;
+  if (S.ref) {
+    RR = S.ref.r * k; RP = at(RR, S.ref.phi);
+    const vr = vOf(S.ref.r, S.ref.T);
+    RQ = { x: RP.x - Math.sin(S.ref.phi) * vr * kv, y: RP.y - Math.cos(S.ref.phi) * vr * kv };
+  }
+  const arrowObs = (a, b, w) => { seg(a.x, a.y, b.x, b.y, w / 2 + 3); const hw = (10 + w * 1.2) * 0.58 + 2; boxes.push({ x0: b.x - hw, x1: b.x + hw, y0: b.y - hw, y1: b.y + hw }); };
+  boxes.push({ x0: P.x - rb, x1: P.x + rb, y0: P.y - rb, y1: P.y + rb }, { x0: cx - 5, x1: cx + 5, y0: cy - 5, y1: cy + 5 });
+  seg(cx, cy, P.x, P.y, 3, 0.3);
+  for (const rr of S.ref ? [R, RR] : [R]) {                       // ratojen kehät kevyinä esteinä
+    const n = Math.max(24, Math.ceil(TAU * rr / 10));
+    for (let j = 0; j < n; j++) { const p = at(rr, TAU * j / n); boxes.push({ x0: p.x - 3, x1: p.x + 3, y0: p.y - 3, y1: p.y + 3, w: 0.4 }); }
+  }
+  if (S.show.v) arrowObs(P, Q, 3.5);
+  if (S.ref) { boxes.push({ x0: RP.x - rb, x1: RP.x + rb, y0: RP.y - rb, y1: RP.y + rb }); if (S.show.v) arrowObs(RP, RQ, 3); }
+
+  /* ---- nimiöt ---- */
+  const big = fs * 1.05;
+
+  // Nimiöt kiertävät säteen ja pallon mukana: etäisyys lasketaan niin, ettei laatikko osu viivaan missään asennossa.
+  const clear = (txt, size, ux, uy) => { const w = drawRich(ctx, txt, 0, 0, { size, measure: true }), h = size * 1.15; return (Math.abs(ux) * w + Math.abs(uy) * h) / 2; };
+  if (S.show.v) {                                                 // nopeuden nimiö nuolen kärjen jatkeelle, kärjen ulkopuolelle
+    const txt = '{->v}', hw = (10 + 3.5 * 1.2) * 0.58 + 2;   // kärjen esteen puolileveys
+    const along = clear(txt, big, tan.x, tan.y) + hw * (Math.abs(tan.x) + Math.abs(tan.y)) + 5;     // nimiö ja kärjen neliö eivät koske
+    const ux = (P.x - cx) / Math.max(R, 1), uy = (P.y - cy) / Math.max(R, 1), side = clear(txt, big, ux, uy) + 10;   // varren vieressä radan ulko- tai sisäpuolella
+    const M = { x: (P.x + Q.x) / 2, y: (P.y + Q.y) / 2 };
+    label(txt, big, CV, [{ x: Q.x + tan.x * along, y: Q.y + tan.y * along, align: 'center' },
+      { x: M.x + ux * side, y: M.y + uy * side, align: 'center' }, { x: M.x - ux * side, y: M.y - uy * side, align: 'center' }]);
+  }
+  const rTxt = '{r}';                                            // lukuarvot ovat alarivien yhtälössä
+  const nx = (P.y - cy) / Math.max(R, 1), ny = -(P.x - cx) / Math.max(R, 1);   // säteen normaali (liikkeen takapuolelle)
+  const dr = clear(rTxt, fs, nx, ny) + 9;                          // viivan este ulottuu 3 px + nimiön marginaali
+  const rAt = (f, s) => ({ x: cx + (P.x - cx) * f + nx * dr * s, y: cy + (P.y - cy) * f + ny * dr * s, align: 'center' });   // f = osuus säteestä
+  label(rTxt, fs, COL.ink2, [rAt(0.5, 1), rAt(0.3, 1), rAt(0.5, -1), rAt(0.3, -1), rAt(0.7, 1), rAt(0.7, -1)]);
+  if (S.ref) {
+    // ensisijaisesti pallon taakse radan suuntaisesti (oma nopeusnuoli on edessä, säteet eivät osu), sitten säteen suuntaan
+    const tx = -Math.sin(S.ref.phi), ty = -Math.cos(S.ref.phi), ux = (RP.x - cx) / Math.max(RR, 1), uy = (RP.y - cy) / Math.max(RR, 1);
+    const dt = clear('vertailu', fs * 0.85, tx, ty) + rb + 6, du = clear('vertailu', fs * 0.85, ux, uy) + rb + 9;
+    label('vertailu', fs * 0.85, CREF, [{ x: RP.x - tx * dt, y: RP.y - ty * dt, align: 'center' }, { x: RP.x + ux * du, y: RP.y + uy * du, align: 'center' },
+      { x: RP.x - ux * du, y: RP.y - uy * du, align: 'center' }]);
+  }
+
+  /* ---- piirtäminen ---- */
+  const circle = (rr, dash, color, wdt) => { ctx.strokeStyle = color; ctx.lineWidth = wdt; ctx.setLineDash(dash); ctx.beginPath(); ctx.arc(cx, cy, rr, 0, TAU); ctx.stroke(); ctx.setLineDash([]); };
+  if (S.ref) circle(RR, [5, 5], CREF, 1.6);
+  circle(R, [], COL.line2, 2);
+  // lähtöviiva radan oikealla puolella (kierrokset lasketaan tästä)
+  const rIn = Math.min(R, S.ref ? RR : R) - 9, rOut = Math.max(R, S.ref ? RR : R) + 9;
+  ctx.strokeStyle = COL.ink2; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(cx + rIn, cy); ctx.lineTo(cx + rOut, cy); ctx.stroke();
+  // kuljettu matka tämän kierroksen aikana
+  const lapPhi = S.phi - TAU * S.laps;
+  if (lapPhi > 0.005) { ctx.strokeStyle = CARC; ctx.lineWidth = 5; ctx.lineCap = 'round'; ctx.beginPath(); ctx.arc(cx, cy, R, 0, -lapPhi, true); ctx.stroke(); ctx.lineCap = 'butt'; }
+  // säde
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.4; ctx.setLineDash([5, 4]);
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(P.x, P.y); ctx.stroke(); ctx.setLineDash([]);
+  ctx.fillStyle = COL.ink2; ctx.beginPath(); ctx.arc(cx, cy, 3.2, 0, TAU); ctx.fill();
+  // vertailukappale ja kappale
+  if (S.ref) {
+    ctx.fillStyle = 'rgba(154,160,166,0.55)'; ctx.strokeStyle = CREF; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(RP.x, RP.y, rb, 0, TAU); ctx.fill(); ctx.stroke();
+    if (S.show.v) arrow(ctx, RP.x, RP.y, RQ.x, RQ.y, CREF, { width: 3 });
+  }
+  ctx.fillStyle = '#222'; ctx.beginPath(); ctx.arc(P.x, P.y, rb, 0, TAU); ctx.fill();
+  if (S.show.v) arrow(ctx, P.x, P.y, Q.x, Q.y, CV, { width: 3.5 });
+
+  for (const l of labels) drawRich(ctx, l.txt, l.c.x, l.c.y, { size: l.size, color: l.color, align: l.c.align, halo: true });
+  drawRich(ctx, top1, 14, 12 + s1 * 0.6, { size: s1, color: COL.ink, halo: true });
+  if (top2) drawRich(ctx, top2, 14, 12 + s1 * 1.4 + s2 * 0.55, { size: s2, color: COL.ink2, halo: true });
+  let ey = ry0 + rs * 0.7;
+  for (const [t, c] of rows) { drawRich(ctx, t, 14, ey, { size: rs, color: c, halo: true }); ey += rs * 1.4; }
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const ctl = {};
+for (const q of ['r', 'T', 'v']) {
+  ctl[q] = bindRange(q, () => '', (x) => change(q, Math.round(x / STEP[q]) * STEP[q]));
+}
+/** Näyttää säätimet tilan mukaisina: arvot kahden desimaalin tarkkuudella, vakiona pidettävä lukittuna. */
+function syncCtl() {
+  const cur = { r: S.r, T: S.T, v: vOf(S.r, S.T) };
+  for (const q of ['r', 'T', 'v']) {
+    ctl[q].set(cur[q]);
+    document.querySelector(`[data-for="${q}"]`).textContent = `${fmt(cur[q], 2)}${NBSP}${UNIT[q]}`;
+    ctl[q].el.disabled = q === S.lock;
+    document.getElementById('c-' + q).classList.toggle('locked', q === S.lock);
+  }
+  for (const b of lockBtns) b.setAttribute('aria-pressed', String(b.dataset.q === S.lock));
+}
+/** Käyttäjä muuttaa suuretta q; vakiona pidettävä pysyy, kolmas lasketaan yhtälöstä v = 2πr/T.
+    Jos laskettu suure menisi säätimen alueen ulkopuolelle, se rajataan ja q lasketaan takaisin. */
+function change(q, x) {
+  const cur = { r: S.r, T: S.T, v: vOf(S.r, S.T) };
+  const dep = ['r', 'T', 'v'].find((k) => k !== q && k !== S.lock);
+  cur[q] = clamp(x, ...RANGE[q]);
+  cur[dep] = solve[dep](cur);
+  if (cur[dep] < RANGE[dep][0] || cur[dep] > RANGE[dep][1]) { cur[dep] = clamp(cur[dep], ...RANGE[dep]); cur[q] = solve[q](cur); }
+  S.r = cur.r; S.T = cur.T; S.input = performance.now();
+  restart(); syncCtl();
+}
+const lockBtns = [...document.querySelectorAll('#lock button')];
+for (const b of lockBtns) b.addEventListener('click', () => { S.lock = b.dataset.q; syncCtl(); });
+
+const playBtn = document.getElementById('play');
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+function paintPlay() { playBtn.innerHTML = S.running ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; }
+playBtn.addEventListener('click', () => { S.running = !S.running; paintPlay(); });
+document.getElementById('reset').addEventListener('click', () => { S.running = false; restart(); paintPlay(); });
+const refBtn = document.getElementById('ref');
+function paintRef() { refBtn.setAttribute('aria-pressed', String(!!S.ref)); }
+refBtn.addEventListener('click', () => { S.ref = S.ref ? null : { r: S.r, T: S.T, phi: 0, laps: 0 }; restart(); paintRef(); });
+for (const [id, key] of [['showV', 'v'], ['showVal', 'val']]) {
+  const el = document.getElementById(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+/* ?vakio=r, ?vakio=T tai ?vakio=v valitsee vakiona pidettävän suureen. */
+(() => { const q = new URLSearchParams(location.search).get('vakio'); if (q && ['r', 'T', 'v'].includes(q)) S.lock = q; })();
+syncCtl(); paintPlay(); paintRef();
+startLoop({ dt: 1 / 240, step, draw, running: () => S.running });
+})();
+</script>
+</body>
+</html>
