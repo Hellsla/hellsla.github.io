@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto ylittää nyppylän · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Auto ajaa nyppylän yli tasaisella nopeudella. Pinnan tukivoima pienenee nyppylän huipulla, kun nopeus kasvaa. Kun nopeus on vähintään neliöjuuri g kertaa r, tukivoima menee nollaan ja auto irtoaa hetkeksi pinnasta."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <button class="btn primary wide" id="play" type="button"></button>
+    <button class="btn wide" id="reset" type="button" title="Auto alkuun">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
+        <input id="v" type="range" min="1" max="14" step="0.5" value="5" aria-label="Auton nopeus"></label>
+    </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showF"><span class="key" style="--c:var(--c-violet)"></span>Kokonaisvoima</label>
+      <label class="chk"><input type="checkbox" id="showChart"><span class="key none"></span>Kuvaaja</label>
+      <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Arvot</label>
+      <label class="chk"><input type="checkbox" id="slow"><span class="key none"></span>Hidastettu</label>
+    </div>
+    <p class="hint">Nyppylän kaarevuussäde huipulla on 10 m. Auto pitää nopeutensa samana.</p>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: auto ylittää nyppylän
+   Nyppylä on kosinin muotoinen kumpare y(x) = H/2 · (1 + cos(πx/A)), |x| ≤ A, jonka kaarevuussäde
+   huipulla on r = 2A²/(π²H) = 10 m. Auto (massa m) ajaa pintaa pitkin vakionopeudella v.
+   Pinnan suuntainen voima (moottori, jarrut) pitää vauhdin vakiona; pinnan normaalin suunnassa
+        N − mg cos θ = −m v² κ    →    N = m(g cos θ − v² κ),
+   missä θ on pinnan kaltevuuskulma ja κ kaarevuus (kupera +, kovera −). Huipulla θ = 0, κ = 1/r:
+        N = mg − m v²/r,  joten N = 0, kun v = √(gr) ≈ 9,9 m/s.
+   Kosinikumpareella tukivoima on pienin juuri huipulla, joten auto irtoaa ensimmäisenä huipulta.
+   Jos N < 0, pinta ei voisi vetää autoa: auto irtoaa ja liikkuu heittoliikkeenä (vain paino vaikuttaa),
+   kunnes se osuu pintaan. Laskeutumisen jälkeen kuljettaja jatkaa samalla nopeudella.
+   ===================================================================== */
+const g = 9.81, M = 1000, RTOP = 10, HH = 2, AA = Math.PI * Math.sqrt(RTOP * HH / 2);   // kg, m, m, m
+const XS = -16, XE = 16, WB = 1.4, CMH = 0.85, VW = 14;          // ajon alku ja loppu, akselin puolikas, painopisteen korkeus, näkymän leveys (m)                     // ajon alku ja loppu, akselin puolikas, painopisteen korkeus (m)
+const vC = Math.sqrt(g * RTOP);                                     // irtoamisnopeus huipulla
+const yS = (x) => (Math.abs(x) < AA ? HH / 2 * (1 + Math.cos(Math.PI * x / AA)) : 0);
+const yP = (x) => (Math.abs(x) < AA ? -HH / 2 * Math.PI / AA * Math.sin(Math.PI * x / AA) : 0);
+const yPP = (x) => (Math.abs(x) < AA ? -HH / 2 * (Math.PI / AA) ** 2 * Math.cos(Math.PI * x / AA) : 0);
+const kappa = (x) => -yPP(x) / Math.pow(1 + yP(x) ** 2, 1.5);       // kupera +
+/** Tukivoima pinnalla kohdassa x nopeudella v (voi olla negatiivinen: silloin auto irtoaa). */
+const normalForce = (x, v) => M * (g / Math.sqrt(1 + yP(x) ** 2) - v * v * kappa(x));
+
+// kaarenpituustaulukko: auto kulkee pintaa pitkin tasaisesti
+const DX = 0.01, XT = [], ST = [];
+(() => { let s = 0; for (let x = XS - 3; x <= XE + 3 + 1e-9; x += DX) { if (XT.length) s += Math.hypot(DX, yS(x) - yS(x - DX)); XT.push(x); ST.push(s); } })();
+function interp(a, b, v) {                                         // a nousee: palauttaa b:n arvon kohdassa v
+  let lo = 0, hi = a.length - 1;
+  if (v <= a[0]) return b[0];
+  if (v >= a[hi]) return b[hi];
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (a[m] <= v) lo = m; else hi = m; }
+  return b[lo] + (b[hi] - b[lo]) * (v - a[lo]) / (a[hi] - a[lo]);
+}
+const sOfX = (x) => interp(XT, ST, x), xOfS = (s) => interp(ST, XT, s);
+
+const S = {
+  v: 5, running: false, slow: false,
+  mode: 'road', s: sOfX(XS), x: XS, y: 0, vx: 0, vy: 0, wait: 0,   // 'road' = pinnalla, 'air' = irti
+  N: 0, airTime: 0, show: { F: false, chart: false, val: false },
+};
+function restart() { S.mode = 'road'; S.s = sOfX(XS); S.x = XS; S.y = 0; S.wait = 0; S.airTime = 0; S.N = normalForce(XS, S.v); }
+function step(dt) {
+  if (!S.running) return;
+  if (S.slow) dt *= 0.25;
+  if (S.wait > 0) { S.wait -= dt; if (S.wait <= 0) restart(); return; }
+  if (S.mode === 'road') {
+    S.s += S.v * dt; S.x = xOfS(S.s); S.y = yS(S.x);
+    S.N = normalForce(S.x, S.v);
+    if (S.N < 0) {                                                  // pinta ei voi vetää: auto irtoaa
+      const k = 1 / Math.sqrt(1 + yP(S.x) ** 2);
+      S.mode = 'air'; S.vx = S.v * k; S.vy = S.v * yP(S.x) * k; S.N = 0; S.airTime = 0;
+    }
+  } else {
+    // heittoliike tarkasti (ei Eulerin askelta): irtoamishetkellä lentorata ja pinta ovat yhtä kaarevia,
+    // joten likimääräinen askel pudottaisi auton heti takaisin pinnalle
+    S.x += S.vx * dt; S.y += S.vy * dt - g * dt * dt / 2; S.vy -= g * dt; S.airTime += dt; S.N = 0;
+    if (S.y < yS(S.x) - 1e-6 && normalForce(S.x, S.v) >= 0) { S.mode = 'road'; S.y = yS(S.x); S.s = sOfX(S.x); S.N = normalForce(S.x, S.v); }   // laskeutuu
+    else if (S.y < yS(S.x)) S.y = yS(S.x);                          // pinta kaartuu yhä alas nopeammin: auto ei voi jäädä pinnalle
+  }
+  if (S.x >= XE) { S.x = XE; S.wait = 0.6; }                        // ajo päättyy, uusi kierros hetken päästä
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
+  L = { W: v.W, H: v.H, fs, pad: fs * 0.8, band: 10 + 3 * fs * 0.85 * 1.4 };
+});
+const CN = COL.green, CG = COL.blue, CF = COL.violet, CR = COL.red;
+
+/** Auton asento: pinnalla takapyörän ja etupyörän kosketuskohdista, ilmassa nopeuden suunnasta. */
+function carPose() {
+  if (S.mode === 'road') {
+    const xr = xOfS(S.s - WB), xf = xOfS(S.s + WB), ang = Math.atan2(yS(xf) - yS(xr), xf - xr);
+    return { x: (xr + xf) / 2, y: (yS(xr) + yS(xf)) / 2, ang };
+  }
+  return { x: S.x, y: S.y, ang: Math.atan2(S.vy, S.vx) };
+}
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs, pad, band } = L, val = S.show.val;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const gh = S.show.chart ? clamp(H * 0.32, fs * 5, fs * 9.5) : 0;
+  const sy1 = H - (gh ? gh + fs * 1.0 : 0);
+  // kamera seuraa autoa: näkymä on VW metriä leveä; maan alla tilaa painon nuolelle
+  const s = Math.min((W - 2 * pad) / VW, (sy1 - band - fs) / 6), Glen = Math.max(fs * 3.0, 2.0 * s), P = carPose(), camX = P.x;   // painon nuoli vähintään 2 m:n mittainen kuvassa   // vähintään VW metriä näkyvissä, korkeus riittää
+  const Y0 = sy1 - Math.max(fs * 1.4, Glen - CMH * s + fs * 1.4);
+  const X = (x) => W / 2 + (x - camX) * s, Y = (y) => Y0 - y * s;
+  const xL = camX - W / (2 * s) - 1, xR = camX + W / (2 * s) + 1;
+  const surf = () => { ctx.beginPath(); for (let x = xL; x <= xR + 1e-9; x += 0.05) { if (x === xL) ctx.moveTo(X(x), Y(yS(x))); else ctx.lineTo(X(x), Y(yS(x))); } };
+
+  ctx.save(); ctx.beginPath(); ctx.rect(0, 0, W, sy1); ctx.clip();   // maisema ei piirry kuvaajan päälle
+  // maa, tie ja tienvarren tolpat (liikkuvat maailman mukana)
+  surf(); ctx.lineTo(X(xR), sy1); ctx.lineTo(X(xL), sy1); ctx.closePath(); ctx.fillStyle = '#ece8df'; ctx.fill();
+  for (let x = Math.ceil(xL / 4) * 4; x <= xR; x += 4) {
+    const b = Y(yS(x)) - 0.12 * s, t = b - 1.0 * s;
+    ctx.strokeStyle = '#b9b3a6'; ctx.lineWidth = Math.max(2, 0.08 * s); ctx.beginPath(); ctx.moveTo(X(x), b); ctx.lineTo(X(x), t); ctx.stroke();
+    ctx.fillStyle = '#e07b39'; ctx.fillRect(X(x) - 0.06 * s, t, 0.12 * s, 0.18 * s);
+  }
+  surf(); ctx.strokeStyle = '#4c4f54'; ctx.lineWidth = Math.max(4, 0.24 * s); ctx.lineJoin = 'round'; ctx.stroke();
+  surf(); ctx.strokeStyle = '#f2f2ee'; ctx.lineWidth = 1.6; ctx.setLineDash([0.9 * s, 0.9 * s]); ctx.lineDashOffset = sOfX(xL) * s; ctx.stroke(); ctx.setLineDash([]); ctx.lineDashOffset = 0;
+
+  // huipun kaarevuusympyrä (katkoviiva) vain arvojen kanssa
+  if (val) {                                                       // huipun kaarevuusympyrä katkoviivana
+    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([5, 5]);
+    ctx.beginPath(); ctx.arc(X(0), Y(HH - RTOP), RTOP * s, Math.PI * 1.2, Math.PI * 1.8); ctx.stroke(); ctx.setLineDash([]);
+    drawRich(ctx, '{r} = 10 m', X(0), Y(HH) - fs * 0.75, { size: fs * 0.85, color: COL.ink3, align: 'center', halo: true });
+  }
+
+  // auto
+  const c = Math.cos(P.ang), sn = Math.sin(P.ang);
+  const at = (lx, ly) => ({ x: X(P.x + lx * c - ly * sn), y: Y(P.y + lx * sn + ly * c) });
+  const poly = (pts, fill) => { ctx.beginPath(); pts.forEach(([lx, ly], i) => { const q = at(lx, ly); if (i) ctx.lineTo(q.x, q.y); else ctx.moveTo(q.x, q.y); }); ctx.closePath(); ctx.fillStyle = fill; ctx.fill(); };
+  poly([[-2.1, 0.35], [2.1, 0.35], [2.15, 0.9], [1.9, 1.05], [-2.0, 1.05], [-2.15, 0.85]], '#c2404f');
+  poly([[-1.15, 1.05], [0.75, 1.05], [0.35, 1.6], [-0.9, 1.6]], '#c2404f');
+  poly([[-1.0, 1.1], [-0.25, 1.1], [-0.25, 1.52], [-0.8, 1.52]], '#dbe8f2');
+  poly([[-0.12, 1.1], [0.62, 1.1], [0.3, 1.52], [-0.12, 1.52]], '#dbe8f2');
+  for (const wx of [-WB, WB]) { const q = at(wx, 0.35); ctx.fillStyle = '#25272b'; ctx.beginPath(); ctx.arc(q.x, q.y, 0.35 * s, 0, 2 * Math.PI); ctx.fill(); ctx.fillStyle = '#9aa0a6'; ctx.beginPath(); ctx.arc(q.x, q.y, 0.15 * s, 0, 2 * Math.PI); ctx.fill(); }
+
+  // voimat painopisteestä: G aina saman pituinen, N ja kokonaisvoima samassa mittakaavassa
+  const CM = at(0, CMH), Gv = M * g, kF = Glen / Gv;
+  const nx = S.mode === 'road' ? -yP(S.x) / Math.sqrt(1 + yP(S.x) ** 2) : 0, ny = S.mode === 'road' ? 1 / Math.sqrt(1 + yP(S.x) ** 2) : 1;
+  const N = Math.max(0, S.N), Nx = N * nx, Ny = N * ny;
+  arrow(ctx, CM.x, CM.y, CM.x, CM.y + Gv * kF, CG, { width: 3.5 });
+  if (N > 1) arrow(ctx, CM.x, CM.y, CM.x + Nx * kF, CM.y - Ny * kF, CN, { width: 3.5 });
+  const Fx = Nx, Fy = Ny - Gv, off = fs * 0.9;
+  if (S.show.F && Math.hypot(Fx, Fy) > 20) arrow(ctx, CM.x - off, CM.y, CM.x - off + Fx * kF, CM.y - Fy * kF, CF, { width: 3 });
+  ctx.fillStyle = '#222'; ctx.beginPath(); ctx.arc(CM.x, CM.y, 3.5, 0, 2 * Math.PI); ctx.fill();
+  const kN = (F) => `${fmt(F / 1000, 1)}${NBSP}kN`;
+  drawRich(ctx, val ? `{->G} = ${kN(Gv)}` : '{->G}', CM.x + fs * 0.55, CM.y + Gv * kF - fs * 0.3, { size: fs, color: CG, halo: true });
+  if (N > 1) drawRich(ctx, val ? `{->N} = ${kN(N)}` : '{->N}', CM.x + Nx * kF + fs * 0.5, CM.y - Ny * kF + fs * 0.1, { size: fs, color: CN, halo: true });
+  if (S.show.F && Math.hypot(Fx, Fy) > 20) drawRich(ctx, val ? `{->F} = ${kN(Math.hypot(Fx, Fy))}` : '{->F}', CM.x - off - fs * 0.4, CM.y - Fy * kF + (Fy < 0 ? -fs * 0.3 : fs * 0.3), { size: fs, color: CF, align: 'right', halo: true });
+
+  ctx.restore();
+  // tila ja arvot ylhäällä
+  const rows = [];
+  if (S.mode === 'air') rows.push(['Auto irtoaa pinnasta: {N} = 0', CR, 600]);
+  if (val) {
+    rows.push([`{v} = ${fmt(S.v, 1)}${NBSP}m/s (${fmt(S.v * 3.6, 0)}${NBSP}km/h),   {N} = ${kN(N)},   {G} = {mg} = ${kN(Gv)}`, COL.ink2, 400]);
+    const Ntop = M * (g - S.v * S.v / RTOP);
+    rows.push([`huipulla {N} = {mg} ${MINUS} {mv}^2/{r} = ${Ntop > 0 ? kN(Ntop) : '0 (irtoaa)'},   irtoaa, kun {v} ≥ √({gr}) = ${fmt(vC, 1)}${NBSP}m/s`, COL.ink2, 400]);
+  }
+  const ef = fs * 0.85;
+  let sz = ef;
+  const wmax = Math.max(0, ...rows.map(([t, , w]) => drawRich(ctx, t, 0, 0, { size: ef, weight: w, measure: true })));
+  if (wmax > W - 28) sz = ef * (W - 28) / wmax;
+  rows.forEach(([t, col, w], i) => drawRich(ctx, t, 14, 12 + sz * 0.6 + i * sz * 1.4, { size: sz, color: col, weight: w, halo: true }));
+
+  if (gh) drawChart(ctx, pad, H - gh - fs * 0.3, W - pad, H - fs * 0.3);
+}
+
+/** Tukivoima nyppylän huipulla nopeuden funktiona: N = m(g − v²/r), kunnes N = 0. */
+function drawChart(ctx, x0, y0, x1, y1) {
+  const { fs } = L, VMX = 14, Gv = M * g;
+  const lx = x0 + fs * 3.4, rx = x1 - fs * 1.6, ty = y0 + fs * 1.2, by = y1 - fs * 1.4;
+  const VX = (v) => lx + v / VMX * (rx - lx), NY = (N) => by - N / Gv * (by - ty);
+  ctx.fillStyle = '#fafaf8'; ctx.strokeStyle = COL.line; ctx.lineWidth = 1;
+  ctx.fillRect(x0, y0, x1 - x0, y1 - y0); ctx.strokeRect(x0 + 0.5, y0 + 0.5, x1 - x0 - 1, y1 - y0 - 1);
+  drawRich(ctx, 'Tukivoima {N} nyppylän huipulla', lx + fs * 0.6, y0 + fs * 0.65, { size: fs * 0.8, color: COL.ink2 });
+  arrow(ctx, lx, by, rx + fs * 0.8, by, COL.ink3, { width: 1.2, head: 7 });
+  arrow(ctx, lx, by, lx, ty - fs * 0.5, COL.ink3, { width: 1.2, head: 7 });
+  drawRich(ctx, '{v}', rx + fs * 0.9, by - fs * 0.55, { size: fs * 0.85, color: COL.ink2, align: 'center' });
+  ctx.strokeStyle = COL.line; ctx.beginPath(); ctx.moveTo(lx, NY(Gv)); ctx.lineTo(rx, NY(Gv)); ctx.stroke();
+  drawRich(ctx, '{mg}', lx - fs * 0.3, NY(Gv), { size: fs * 0.75, color: COL.ink3, align: 'right' });
+  drawRich(ctx, '0', lx - fs * 0.3, by, { size: fs * 0.75, color: COL.ink3, align: 'right' });
+  for (let v = 2; v <= VMX; v += 2) { ctx.strokeStyle = COL.ink3; ctx.beginPath(); ctx.moveTo(VX(v), by); ctx.lineTo(VX(v), by + 4); ctx.stroke(); drawRich(ctx, String(v), VX(v), by + fs * 0.7, { size: fs * 0.7, color: COL.ink3, align: 'center' }); }
+  drawRich(ctx, 'm/s', rx + fs * 0.9, by + fs * 0.7, { size: fs * 0.7, color: COL.ink3, align: 'center' });
+  // käyrä ja irtoamisraja
+  ctx.strokeStyle = CN; ctx.lineWidth = 2.6; ctx.beginPath();
+  for (let i = 0; i <= 120; i++) { const v = vC * i / 120; const q = [VX(v), NY(M * (g - v * v / RTOP))]; if (i) ctx.lineTo(...q); else ctx.moveTo(...q); }
+  ctx.stroke();
+  ctx.strokeStyle = CR; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(VX(vC), by); ctx.lineTo(VX(VMX), by); ctx.stroke();
+  ctx.setLineDash([3, 4]); ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(VX(vC), by); ctx.lineTo(VX(vC), ty); ctx.stroke(); ctx.setLineDash([]);
+  drawRich(ctx, 'irtoaa', VX(vC) + fs * 0.35, by - fs * 0.65, { size: fs * 0.8, color: CR, halo: true });
+  // nykyinen nopeus
+  const Nt = Math.max(0, M * (g - S.v * S.v / RTOP));
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1; ctx.setLineDash([2, 3]); ctx.beginPath(); ctx.moveTo(VX(S.v), by); ctx.lineTo(VX(S.v), NY(Nt)); ctx.stroke(); ctx.setLineDash([]);
+  ctx.fillStyle = Nt > 0 ? CN : CR; ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(VX(S.v), NY(Nt), 5.5, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+bindRange('v', (x) => `${fmt(x, 1)}${NBSP}m/s (${fmt(x * 3.6, 0)}${NBSP}km/h)`, (x) => { S.v = x; restart(); });
+const playBtn = document.getElementById('play');
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+function paintPlay() { playBtn.innerHTML = S.running ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Aja'; }
+playBtn.addEventListener('click', () => { S.running = !S.running; paintPlay(); });
+document.getElementById('reset').addEventListener('click', () => { S.running = false; restart(); paintPlay(); });
+for (const [id, key] of [['showF', 'F'], ['showChart', 'chart'], ['showVal', 'val']]) {
+  const el = document.getElementById(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+const slowEl = document.getElementById('slow');
+S.slow = slowEl.checked; slowEl.addEventListener('change', () => { S.slow = slowEl.checked; });
+restart(); paintPlay();
+startLoop({ dt: 1 / 480, step, draw, running: () => S.running });
+})();
+</script>
+</body>
+</html>
