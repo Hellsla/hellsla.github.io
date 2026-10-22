@@ -97,7 +97,7 @@
 <body>
 <div class="app">
   <div class="stage">
-    <canvas id="cv" role="img" aria-label="Painottomuus: ihminen seisoo vaa'alla hississä, nyppylän huipulla olevassa vaunussa tai avaruusasemalla. Painovoima vaikuttaa koko ajan, mutta kun kaikki putoavat vapaasti samalla kiihtyvyydellä, tukivoima ja vaa'an lukema ovat nolla ja irti päästetty omena jää leijumaan."></canvas>
+    <canvas id="cv" role="img" aria-label="Painottomuus: ihminen seisoo vaa'alla hississä, nyppylän yli ajavassa vaunussa tai avaruusasemalla. Painovoima vaikuttaa koko ajan, mutta kun kaikki putoavat vapaasti samalla kiihtyvyydellä, tukivoima ja vaa'an lukema ovat nolla ja irti päästetty omena jää leijumaan."></canvas>
   </div>
 
   <div class="panel" aria-label="Säätimet">
@@ -112,8 +112,8 @@
       <button class="btn wide" id="cut" type="button" title="Vaijeri katkeaa: hissi putoaa vapaasti">Vaijeri katkeaa</button>
     </div>
     <div class="group" id="g-hump" hidden>
-      <label class="ctl"><span class="ctl-head"><span>Nopeus huipulla <span class="sym">v</span></span><b data-for="v"></b></span>
-        <input id="v" type="range" min="0" max="10" step="0.5" value="5" aria-label="Vaunun nopeus nyppylän huipulla"></label>
+      <label class="ctl"><span class="ctl-head"><span>Vaunun nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
+        <input id="v" type="range" min="0" max="12" step="0.5" value="5" aria-label="Vaunun nopeus"></label>
     </div>
     <div class="group" id="g-space" hidden>
       <label class="ctl"><span class="ctl-head"><span>Korkeus <span class="sym">h</span></span><b data-for="h"></b></span>
@@ -124,6 +124,7 @@
       <label class="chk"><input type="checkbox" id="showF" checked><span class="key" style="--c:var(--c-green)"></span>Voimat</label>
       <label class="chk"><input type="checkbox" id="showA"><span class="key" style="--c:var(--c-violet)"></span>Kiihtyvyys</label>
       <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Arvot</label>
+      <label class="chk"><input type="checkbox" id="slow"><span class="key none"></span>Hidastettu</label>
     </div>
     <p class="hint" id="hint"></p>
   </div>
@@ -297,33 +298,153 @@ function startLoop({ dt, step, draw, running }) {
    ja paikallinen putoamiskiihtyvyys on g:
         N − mg = ma    →    N = m(g + a).
    Hissi:        a valitaan (ylöspäin +); vapaassa pudotuksessa a = −g, joten N = 0.
-   Nyppylä:      huipulla vaunun kiihtyvyys on v²/r alaspäin: N = m(g − v²/r); N = 0, kun v = √(gr).
-                 r = 100/g ≈ 10,2 m, joten painottomuus alkaa nopeudella 10 m/s.
+   Nyppylä:      vaunu ajaa kosinin muotoisen nyppylän yli tasaisella nopeudella v (kuten nyppyläsimulaatiossa).
+                 Pinnalla N = m(g cos θ − v²κ); huipulla N = m(g − v²/r). r = 100/g ≈ 10,2 m, joten
+                 painottomuus alkaa nopeudella 10 m/s. Jos N menisi negatiiviseksi, vaunu irtoaa ja
+                 putoaa vapaasti (heittoliike), kunnes se osuu taas pintaan.
    Avaruusasema: asema ja ihminen putoavat vapaasti kohti Maata kiihtyvyydellä g_h = g₀(R/(R + h))²,
                  joten N = 0, vaikka painovoima on yhä lähes yhtä suuri kuin maan pinnalla.
-   Irti päästetty omena kiihtyy aluksen suhteen alaspäin kiihtyvyydellä g + a; painottomuudessa se leijuu.
+   Aluksen sisällä irrallinen kappale (ihminen irti vaa'asta, irti päästetty omena) kiihtyy aluksen suhteen
+   alaspäin kiihtyvyydellä N/m = g + a. Painottomuudessa se jatkaa liikettään tasaisella nopeudella.
    ===================================================================== */
 const g0 = 9.81, MASS = 70, RE = 6371, GM = 398600;                 // m/s², kg, km, km³/s²
-const RH = 100 / g0;                                                 // nyppylän kaarevuussäde (m)
-const S = { scene: 'lift', a: 0, v: 5, h: 400, show: { F: true, A: false, val: false }, apple: { held: true, y: 0, vy: 0 } };
+const RH = 100 / g0;                                                 // nyppylän kaarevuussäde huipulla (m)
+const HH = 2, AA = Math.PI * Math.sqrt(RH * HH / 2), XS = -15, XE = 15;   // nyppylän korkeus ja puolileveys, ajon alku ja loppu (m)
+const yS = (x) => (Math.abs(x) < AA ? HH / 2 * (1 + Math.cos(Math.PI * x / AA)) : 0);
+const yP = (x) => (Math.abs(x) < AA ? -HH / 2 * Math.PI / AA * Math.sin(Math.PI * x / AA) : 0);
+const yPP = (x) => (Math.abs(x) < AA ? -HH / 2 * (Math.PI / AA) ** 2 * Math.cos(Math.PI * x / AA) : 0);
+const kappa = (x) => -yPP(x) / Math.pow(1 + yP(x) ** 2, 1.5);       // kupera +
+/** Tukivoima ihmiseen pinnalla kohdassa x vaunun nopeudella v (negatiivinen: vaunu irtoaa). */
+const normalForce = (x, v) => MASS * (g0 / Math.sqrt(1 + yP(x) ** 2) - v * v * kappa(x));
+const DX = 0.01, XT = [], ST = [];                                  // kaarenpituustaulukko: vaunu kulkee pintaa pitkin tasaisesti
+(() => { let s = 0; for (let x = XS - 3; x <= XE + 3 + 1e-9; x += DX) { if (XT.length) s += Math.hypot(DX, yS(x) - yS(x - DX)); XT.push(x); ST.push(s); } })();
+function interp(a, b, v) {                                         // a nousee: palauttaa b:n arvon kohdassa v
+  let lo = 0, hi = a.length - 1;
+  if (v <= a[0]) return b[0];
+  if (v >= a[hi]) return b[hi];
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (a[m] <= v) lo = m; else hi = m; }
+  return b[lo] + (b[hi] - b[lo]) * (v - a[lo]) / (a[hi] - a[lo]);
+}
+const sOfX = (x) => interp(XT, ST, x), xOfS = (s) => interp(ST, XT, s);
+const SHAFT = 24, CAR_H = 2.6;                                      // hissikuilun ja hissikorin korkeus (m)
+const U = 0.18, SCALE_H = 0.9 * U, CM = 5.7, AR = 0.55 * U;         // ihmisen mittayksikkö (pituus 10 U), vaa'an korkeus, painopiste (U), omenan säde
+const V_PUSH = 0.15;                                                // vaa'an jousi ja polvet ponnauttavat painottomaksi muuttuneen ihmisen irti (m/s)
+
+const S = {
+  scene: 'lift', a: 0, v: 5, h: 400, slow: false, t: 0, freeHold: 0,
+  show: { F: true, A: false, val: false },
+  car: null, ride: null, man: null, apple: null,
+};
 
 /** Tilanteen fysiikka: paikallinen g, aluksen kiihtyvyys (ylöspäin +), tukivoima ja vaa'an lukema. */
 function phys() {
-  let g = g0, a;
-  if (S.scene === 'lift') a = Math.max(S.a, -g0);
-  else if (S.scene === 'hump') a = -Math.min(S.v * S.v / RH, g0);
-  else { g = g0 * (RE / (RE + S.h)) ** 2; a = -g; }
-  const N = Math.max(0, MASS * (g + a));
-  return { g, a, N, G: MASS * g, read: N / g0, free: N < 0.5 };
+  let g = g0, a, N;
+  if (S.scene === 'lift') { a = Math.max(S.a, -g0); N = MASS * (g + a); }
+  else if (S.scene === 'hump') {
+    if (S.ride.mode === 'air') { a = -g0; N = 0; }
+    else { N = Math.max(0, normalForce(S.ride.x, S.v)); a = N / MASS - g0; }
+  } else { g = g0 * (RE / (RE + S.h)) ** 2; a = -g; N = 0; }
+  N = Math.max(0, N);
+  return { g, a, N, gEff: N / MASS, G: MASS * g, read: N / g0, free: N < 0.5 };
 }
+
+/* ---------- ihmisen asento ja liike aluksen sisällä ---------- */
+/** Asento yksikössä U jalkapohjista ylöspäin; f = leijuminen 0…1 (kädet nousevat, polvet koukistuvat). */
+function pose(f) {
+  const mix = (p, q) => [p[0] + (q[0] - p[0]) * f, p[1] + (q[1] - p[1]) * f];
+  return {
+    hips: [[-0.45, 4.2], [0.45, 4.2]],
+    knees: [mix([-0.52, 2.1], [-0.8, 2.2]), mix([0.52, 2.1], [0.8, 2.2])],
+    feet: [mix([-0.6, 0], [-1.15, 0.15]), mix([0.6, 0], [1.15, 0.15])],
+    lHand: mix([-1.6, 4.6], [-2.2, 7.9]), rHand: mix([3.0, 5.8], [3.0, 6.3]),
+  };
+}
+const tilt = (m) => 0.15 * m.f * Math.sin(2 * Math.PI * m.tf / 7);   // leijuva ihminen keinuu hitaasti
+/** Asennon pisteen (U) paikka aluksessa (m): x ihmisen keskilinjasta, y lattiasta. */
+function bodyPt(m, lx, ly) {
+  const th = tilt(m), rx = lx * U, ry = (ly - CM) * U;
+  return { x: rx * Math.cos(th) - ry * Math.sin(th), y: rx * Math.sin(th) + ry * Math.cos(th) + SCALE_H + m.y + CM * U };
+}
+/** Alin (jalat) ja ylin kohta (pää, kohotettu käsi) suhteessa vaa'an pintaan. */
+function extents(m) {
+  const P = pose(m.f), base = SCALE_H + m.y;
+  const low = Math.min(...P.feet.map(([x, y]) => bodyPt(m, x, y).y)) - base;
+  const high = Math.max(bodyPt(m, 0, 8.3).y + 0.85 * U, bodyPt(m, ...P.lHand).y) - base;
+  return { low, high };
+}
+function stepMan(dt, p) {
+  const m = S.man, ceil = (L.ceilM || 9) - SCALE_H - 0.02;
+  m.f = clamp(m.f + (p.free ? dt / 0.8 : -dt / 0.5), 0, 1);
+  if (!m.contact) m.tf += dt;
+  const e = extents(m);
+  if (m.contact) {
+    if (p.free) { m.contact = false; m.vy = V_PUSH; m.tf = 0; }      // kuorma häviää: ihminen ponnahtaa hiljaa irti vaa'asta
+    else m.y = Math.max(0, -e.low);
+    return;
+  }
+  m.vy -= p.gEff * dt; m.y += m.vy * dt;                            // irrallaan: kiihtyvyys aluksen suhteen −(g + a)
+  if (m.y + e.low <= 0 && m.vy <= 0) {
+    m.y = -e.low;
+    if (p.free) m.vy = -m.vy; else { m.vy = 0; m.contact = true; }  // painottomana kimpoaa vaa'asta, muuten jää seisomaan
+  }
+  if (m.y + e.high >= ceil && m.vy > 0) { m.y = ceil - e.high; m.vy = -m.vy; }
+}
+/** Kädessä olevan omenan keskipiste aluksessa (m). */
+function handApple() { const P = pose(S.man.f); return bodyPt(S.man, P.rHand[0], P.rHand[1] + 0.6); }
+function stepApple(dt, p) {
+  const ap = S.apple, ceil = (L.ceilM || 9) - AR;
+  if (ap.held) { Object.assign(ap, handApple()); ap.vy = S.man.contact ? 0 : S.man.vy; return; }
+  ap.vy -= p.gEff * dt; ap.y += ap.vy * dt; ap.rot += ap.spin * dt;  // omenan kiihtyvyys aluksen suhteen −(g + a)
+  if (ap.y <= AR && ap.vy <= 0) { ap.y = AR; if (p.free) ap.vy = -ap.vy; else { ap.vy = 0; ap.spin = 0; } }   // lattialla
+  if (ap.y >= ceil && ap.vy > 0) { ap.y = ceil; ap.vy = -ap.vy; }
+}
+
+/* ---------- aluksen liike yleiskuvassa ---------- */
+function stepCar(dt) {
+  const c = S.car, a = Math.max(S.a, -g0), ZM = SHAFT - CAR_H;
+  c.vz += a * dt; c.z += c.vz * dt; c.fade = Math.min(1, c.fade + dt / 0.4);
+  if (c.z < 0 || c.z > ZM) {                                        // kuilun pää: hissi alkaa alusta
+    if (a > 0) { c.z = 0; c.vz = 0; } else if (a < 0) { c.z = ZM; c.vz = 0; } else c.z = c.z < 0 ? ZM : 0;
+    c.fade = 0;
+  }
+}
+function stepRide(dt) {
+  const r = S.ride;
+  r.fade = Math.min(1, r.fade + dt / 0.4);
+  if (r.wait > 0) { r.wait -= dt; if (r.wait <= 0) Object.assign(r, newRide()); return; }
+  if (r.mode === 'road') {
+    r.s += S.v * dt; r.x = xOfS(r.s); r.y = yS(r.x);
+    if (normalForce(r.x, S.v) < 0) {                                // pinta ei voi vetää: vaunu irtoaa
+      const k = 1 / Math.sqrt(1 + yP(r.x) ** 2);
+      r.mode = 'air'; r.vx = S.v * k; r.vy = S.v * yP(r.x) * k;
+    }
+  } else {
+    // heittoliike tarkasti: irtoamishetkellä lentorata ja pinta ovat yhtä kaarevia
+    r.x += r.vx * dt; r.y += r.vy * dt - g0 * dt * dt / 2; r.vy -= g0 * dt;
+    if (r.y < yS(r.x) - 1e-6 && normalForce(r.x, S.v) >= 0) { r.mode = 'road'; r.y = yS(r.x); r.s = sOfX(r.x); }   // laskeutuu
+    else if (r.y < yS(r.x)) r.y = yS(r.x);
+  }
+  if (r.x >= XE) { r.x = XE; r.wait = 0.6; }                        // ajo päättyy, uusi kierros hetken päästä
+}
+
 function step(dt) {
-  const ap = S.apple;
-  if (ap.held) return;
-  const p = phys(), arel = -(p.g + p.a);                            // omenan kiihtyvyys aluksen suhteen (ylöspäin +)
-  ap.vy += arel * dt; ap.y += ap.vy * dt;
-  if (ap.y <= 0) { ap.y = 0; ap.vy = 0; }                           // lattialla
+  const real = dt;
+  if (S.slow) dt *= 0.25;
+  S.t += dt;
+  if (S.scene === 'lift') stepCar(dt); else if (S.scene === 'hump') stepRide(dt);
+  const p = phys();
+  stepMan(dt, p); stepApple(dt, p);
+  S.freeHold = p.free ? 0.5 : Math.max(0, S.freeHold - real);       // tilarivi ei välähdä nyppylän huipulla
 }
-function resetApple() { S.apple = { held: true, y: 0, vy: 0 }; paintApple(); }
+const newRide = () => ({ mode: 'road', s: sOfX(XS), x: XS, y: 0, vx: 0, vy: 0, wait: 0, fade: 0 });
+function resetAll() {
+  S.car = { z: (SHAFT - CAR_H) / 2, vz: 0, fade: 1 };
+  S.ride = newRide(); S.ride.fade = 1;
+  S.man = { y: 0, vy: 0, contact: true, f: 0, tf: 0 };
+  S.apple = { held: true, x: 0, y: 0, vy: 0, rot: 0, spin: 0, ...handApple() };
+  S.freeHold = 0;
+  paintApple();
+}
 
 /* =====================================================================
    Piirtäminen
@@ -332,9 +453,10 @@ const cv = document.getElementById('cv');
 let L = {};
 const view = setupCanvas(cv, (v) => {
   const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
-  L = { W: v.W, H: v.H, fs, pad: fs * 0.9, band: 10 + 3 * fs * 0.85 * 1.4 };
+  L = { W: v.W, H: v.H, fs, pad: fs * 0.9, band: 10 + 3 * fs * 0.85 * 1.4, ceilM: L.ceilM };
 });
 const CN = COL.green, CG = COL.blue, CA = COL.violet, CR = COL.red;
+const SHIRT = '#e2a63b', LIMB = '#3d4248', SKIN = '#f3ddc4';
 function roundRect(ctx, x, y, w, h, r) {
   ctx.beginPath(); ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.arcTo(x + w, y, x + w, y + r, r); ctx.lineTo(x + w, y + h - r);
   ctx.arcTo(x + w, y + h, x + w - r, y + h, r); ctx.lineTo(x + r, y + h); ctx.arcTo(x, y + h, x, y + h - r, r); ctx.lineTo(x, y + r); ctx.arcTo(x, y, x + r, y, r); ctx.closePath();
@@ -353,11 +475,16 @@ function draw() {
 
   // tila ja arvot ylhäällä
   const rows = [];
-  if (p.free) rows.push(['Painoton: vaaka näyttää 0 kg, vaikka painovoima vaikuttaa', CR, 600]);
+  if (p.free || S.freeHold > 0) rows.push(['Painoton: vaaka näyttää 0 kg, vaikka painovoima vaikuttaa', CR, 600]);
   if (val) {
     const kN = (F) => `${fmt(F, 0)}${NBSP}N`;
     if (S.scene === 'lift') rows.push([`{N} = {m}({g} + {a}) = ${fmt(MASS, 0)}${NBSP}kg · (${fmt(p.g, 2)} ${p.a < 0 ? MINUS : '+'} ${fmt(Math.abs(p.a), 2)})${NBSP}m/s^2 = ${kN(p.N)}`, COL.ink2, 400]);
-    if (S.scene === 'hump') rows.push([`{N} = {m}({g} ${MINUS} {v}^2/{r}) = ${fmt(MASS, 0)}${NBSP}kg · (${fmt(p.g, 2)} ${MINUS} ${fmt(-p.a, 2)})${NBSP}m/s^2 = ${kN(p.N)}`, COL.ink2, 400]);
+    if (S.scene === 'hump') {
+      const ac = S.v * S.v / RH;
+      rows.push([ac <= g0 + 1e-9
+        ? `huipulla {N} = {m}({g} ${MINUS} {v}^2/{r}) = ${fmt(MASS, 0)}${NBSP}kg · (${fmt(g0, 2)} ${MINUS} ${fmt(ac, 2)})${NBSP}m/s^2 = ${kN(MASS * (g0 - ac))}`
+        : `huipulla {v}^2/{r} = ${fmt(ac, 2)}${NBSP}m/s^2 > {g}, joten vaunu irtoaa pinnasta`, COL.ink2, 400]);
+    }
     if (S.scene === 'space') rows.push([`{g} = {g}_0({R}/({R} + {h}))^2 = ${fmt(p.g, 2)}${NBSP}m/s^2,   ratanopeus ${fmt(Math.sqrt(GM / (RE + S.h)), 2)}${NBSP}km/s`, COL.ink2, 400]);
     rows.push([`{G} = {mg} = ${kN(p.G)},   {N} = ${kN(p.N)},   vaaka {N}/{g}_0 = ${fmt(p.read, 1)}${NBSP}kg`, COL.ink2, 400]);
   }
@@ -366,47 +493,95 @@ function draw() {
   rows.forEach(([t, c, w], i) => drawRich(ctx, t, 14, 12 + sz * 0.6 + i * sz * 1.4, { size: sz, color: c, weight: w, halo: true }));
 }
 
+/** Heiluva köydenpätkä: kiinni pisteessä (x, y), vapaa pää etäisyydellä len (ylös −, alas +). */
+function looseCable(ctx, x, y, len, ph) {
+  ctx.beginPath(); ctx.moveTo(x, y);
+  for (let i = 1; i <= 12; i++) { const q = i / 12; ctx.lineTo(x + q * q * 5 * Math.sin(S.t * 7 + ph + q * 3), y + len * q); }
+  ctx.stroke();
+}
+
 /** Yleiskuva: hissikuilu, nyppylä tai Maa ja avaruusaseman rata. */
 function drawOverview(ctx, x0, y0, x1, y1, p) {
   const { fs } = L, w = x1 - x0, h = y1 - y0, cx = (x0 + x1) / 2;
   ctx.fillStyle = '#f6f6f3'; ctx.strokeStyle = COL.line; ctx.lineWidth = 1;
   roundRect(ctx, x0, y0, w, h, 6); ctx.fill(); ctx.stroke();
+  ctx.save(); roundRect(ctx, x0, y0, w, h, 6); ctx.clip();
   if (S.scene === 'lift') {
-    const sw = w * 0.42, cy = y0 + h * 0.55, ch = Math.min(h * 0.22, sw * 1.2);
-    ctx.fillStyle = '#e4e2dc'; ctx.fillRect(cx - sw / 2 - 4, y0 + fs * 0.4, sw + 8, h - fs * 0.8);
+    const sw = w * 0.42, top = y0 + fs * 0.4, bot = y1 - fs * 1.5, k = (bot - top) / SHAFT;
+    ctx.fillStyle = '#e4e2dc'; ctx.fillRect(cx - sw / 2 - 4, top, sw + 8, bot - top);
     ctx.strokeStyle = '#b9b3a6'; ctx.lineWidth = 1;
-    for (let y = y0 + fs * 1.2; y < y1 - fs * 0.4; y += h / 6) { ctx.beginPath(); ctx.moveTo(cx - sw / 2 - 4, y); ctx.lineTo(cx + sw / 2 + 4, y); ctx.stroke(); }
-    // vaijeri: vapaassa pudotuksessa poikki
-    ctx.strokeStyle = '#555'; ctx.lineWidth = 2; ctx.beginPath();
-    if (p.free) { ctx.moveTo(cx, y0 + fs * 0.4); ctx.lineTo(cx + 3, y0 + h * 0.22); ctx.moveTo(cx, cy - ch / 2); ctx.lineTo(cx - 4, cy - ch / 2 - h * 0.12); }
-    else { ctx.moveTo(cx, y0 + fs * 0.4); ctx.lineTo(cx, cy - ch / 2); }
-    ctx.stroke();
+    for (let z = 3; z < SHAFT; z += 3) { const y = bot - z * k; ctx.beginPath(); ctx.moveTo(cx - sw / 2 - 4, y); ctx.lineTo(cx + sw / 2 + 4, y); ctx.stroke(); }
+    ctx.fillStyle = '#5c5f64'; ctx.fillRect(cx - sw / 2 - 8, bot, sw + 16, 3);
+    ctx.beginPath(); ctx.arc(cx, top + 5, 5, 0, 2 * Math.PI); ctx.fill();   // vaijerin pyörä
+    const c = S.car, cTop = bot - (c.z + CAR_H) * k, ZM = SHAFT - CAR_H;
+    const dEnd = c.vz > 0.3 ? ZM - c.z : c.vz < -0.3 ? c.z : 9;          // häivytys kuilun päässä
+    ctx.globalAlpha = Math.min(c.fade, clamp(dEnd / 1.2, 0, 1));
+    ctx.strokeStyle = '#555'; ctx.lineWidth = 2;
+    if (p.free) { const gap = cTop - top - 5; looseCable(ctx, cx, top + 5, Math.min(h * 0.08, gap * 0.3), 0); looseCable(ctx, cx, cTop, -Math.min(h * 0.08, gap * 0.35), 2); }   // vaijeri poikki
+    else { ctx.beginPath(); ctx.moveTo(cx, top + 5); ctx.lineTo(cx, cTop); ctx.stroke(); }
     ctx.fillStyle = '#9fb7c9'; ctx.strokeStyle = '#4d6a80'; ctx.lineWidth = 1.5;
-    ctx.fillRect(cx - sw / 2, cy - ch / 2, sw, ch); ctx.strokeRect(cx - sw / 2, cy - ch / 2, sw, ch);
-    if (S.show.A && Math.abs(p.a) > 0.05) arrow(ctx, cx + sw / 2 + fs * 0.7, cy, cx + sw / 2 + fs * 0.7, cy - p.a / g0 * fs * 2.4, CA, { width: 2.6 });
+    ctx.fillRect(cx - sw / 2, cTop, sw, CAR_H * k); ctx.strokeRect(cx - sw / 2, cTop, sw, CAR_H * k);
+    ctx.globalAlpha = 1;
+    if (S.show.A && Math.abs(p.a) > 0.05) { const ay = cTop + CAR_H * k / 2; arrow(ctx, cx + sw / 2 + fs * 0.7, ay, cx + sw / 2 + fs * 0.7, ay - p.a / g0 * fs * 2.4, CA, { width: 2.6 }); }
     drawRich(ctx, 'hissi', cx, y1 - fs * 0.7, { size: fs * 0.8, color: COL.ink3, align: 'center' });
   } else if (S.scene === 'hump') {
-    const base = y0 + h * 0.62, A = w * 0.46, H2 = h * 0.12;
-    ctx.beginPath(); ctx.moveTo(x0 + 2, base);
-    for (let x = -A; x <= A; x += A / 30) ctx.lineTo(cx + x, base - H2 * (1 + Math.cos(Math.PI * x / A)) / 2);
-    ctx.lineTo(x1 - 2, base); ctx.strokeStyle = '#5c5f64'; ctx.lineWidth = 3; ctx.stroke();
-    const top = base - H2, cw = w * 0.3, chh = cw * 0.38;
-    ctx.fillStyle = '#c2404f'; roundRect(ctx, cx - cw / 2, top - chh - 3, cw, chh, 3); ctx.fill();
-    ctx.fillStyle = '#25272b'; for (const s of [-1, 1]) { ctx.beginPath(); ctx.arc(cx + s * cw * 0.3, top - 3, chh * 0.28, 0, 2 * Math.PI); ctx.fill(); }
-    if (S.v > 0.1) arrow(ctx, cx + cw / 2 + 2, top - chh * 0.6, cx + cw / 2 + 2 + S.v / 10 * fs * 2.2, top - chh * 0.6, CG, { width: 2.4 });
-    if (S.show.A && Math.abs(p.a) > 0.05) arrow(ctx, cx, top - chh - fs * 0.4, cx, top - chh - fs * 0.4 - p.a / g0 * fs * 2.4, CA, { width: 2.6 });
-    drawRich(ctx, `{r} ≈ ${fmt(RH, 1)}${NBSP}m`, cx, base + fs * 1.1, { size: fs * 0.8, color: COL.ink3, align: 'center' });
-    drawRich(ctx, 'nyppylän huippu', cx, y1 - fs * 0.7, { size: fs * 0.8, color: COL.ink3, align: 'center' });
+    // nyppylä korkeussuunnassa liioiteltuna, jotta muoto näkyy kapeassa kuvassa
+    const m = fs * 0.4, sx = (w - 2 * m) / (XE - XS), base = y0 + h * 0.6, sy = h * 0.2 / HH;
+    const X = (x) => x0 + m + (x - XS) * sx, Y = (y) => base - y * sy;
+    ctx.beginPath(); ctx.moveTo(x0, base);
+    for (let x = XS; x <= XE + 1e-9; x += 0.25) ctx.lineTo(X(x), Y(yS(x)));
+    ctx.lineTo(x1, base); ctx.lineTo(x1, y1); ctx.lineTo(x0, y1); ctx.closePath(); ctx.fillStyle = '#ece8df'; ctx.fill();
+    ctx.beginPath(); for (let x = XS - 2; x <= XE + 2 + 1e-9; x += 0.25) { if (x === XS - 2) ctx.moveTo(X(x), Y(yS(x))); else ctx.lineTo(X(x), Y(yS(x))); }
+    ctx.strokeStyle = '#5c5f64'; ctx.lineWidth = 3; ctx.stroke();
+    const r = S.ride, cw = w * 0.3, chh = cw * 0.36, wr = chh * 0.28;
+    let qx, qy, ang;
+    if (r.mode === 'road') {
+      const d = cw * 0.3 / sx, xr = r.x - d, xf = r.x + d;
+      qx = X(r.x); qy = (Y(yS(xr)) + Y(yS(xf))) / 2; ang = Math.atan2(Y(yS(xf)) - Y(yS(xr)), X(xf) - X(xr));
+    } else { qx = X(r.x); qy = Y(r.y); ang = Math.atan2(-r.vy * sy, r.vx * sx); }
+    ctx.globalAlpha = Math.min(r.fade, clamp((XE - r.x) / 1.5, 0, 1), r.wait > 0 ? 0 : 1);
+    ctx.save(); ctx.translate(qx, qy); ctx.rotate(ang);
+    ctx.fillStyle = '#c2404f'; roundRect(ctx, -cw / 2, -wr - chh, cw, chh, 3); ctx.fill();
+    ctx.fillStyle = '#dbe8f2'; ctx.fillRect(-cw * 0.32, -wr - chh * 0.85, cw * 0.64, chh * 0.4);
+    ctx.fillStyle = '#25272b'; for (const s of [-1, 1]) { ctx.beginPath(); ctx.arc(s * cw * 0.3, -wr, wr, 0, 2 * Math.PI); ctx.fill(); }
+    ctx.restore(); ctx.globalAlpha = 1;
+    if (S.show.A && Math.abs(p.a) > 0.05) { const ay = qy - wr - chh - fs * 0.3; arrow(ctx, qx, ay, qx, ay - p.a / g0 * fs * 2.4, CA, { width: 2.6 }); }
+    drawRich(ctx, `{r} ≈ ${fmt(RH, 1)}${NBSP}m`, X(0), base + fs * 1.1, { size: fs * 0.8, color: COL.ink3, align: 'center' });
+    drawRich(ctx, 'nyppylä', cx, y1 - fs * 0.7, { size: fs * 0.8, color: COL.ink3, align: 'center' });
   } else {
     const er = Math.min(w, h) * 0.3, cy = y0 + h * 0.5, orr = er * (RE + S.h) / RE;
     ctx.fillStyle = '#4f86b8'; ctx.beginPath(); ctx.arc(cx, cy, er, 0, 2 * Math.PI); ctx.fill();
     ctx.fillStyle = '#6aa36a'; ctx.beginPath(); ctx.ellipse(cx - er * 0.25, cy - er * 0.15, er * 0.35, er * 0.25, 0.4, 0, 2 * Math.PI); ctx.fill();
     ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([3, 4]); ctx.beginPath(); ctx.arc(cx, cy, orr, 0, 2 * Math.PI); ctx.stroke(); ctx.setLineDash([]);
-    const t = performance.now() / 1000 * 0.4, sx = cx + orr * Math.cos(-Math.PI / 2 + t), sy = cy + orr * Math.sin(-Math.PI / 2 + t);
+    const t = S.t * 0.4, sx = cx + orr * Math.cos(-Math.PI / 2 + t), sy = cy + orr * Math.sin(-Math.PI / 2 + t);   // kierros nopeutettuna
     ctx.fillStyle = '#ddd'; ctx.strokeStyle = '#555'; ctx.lineWidth = 1; ctx.fillRect(sx - 6, sy - 2, 12, 4); ctx.strokeRect(sx - 6, sy - 2, 12, 4);
     if (S.show.A) { const ux = (cx - sx) / orr, uy = (cy - sy) / orr; arrow(ctx, sx, sy, sx + ux * fs * 2.0 * p.g / g0, sy + uy * fs * 2.0 * p.g / g0, CA, { width: 2.4 }); }
     drawRich(ctx, 'Maa ja avaruusasema', cx, y1 - fs * 0.7, { size: fs * 0.8, color: COL.ink3, align: 'center' });
   }
+  ctx.restore();
+}
+
+/** Avaruusaseman ikkuna: Maan reuna ja tähdet liukuvat ohi. */
+function drawPorthole(ctx, cx, cy, r) {
+  ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2 * Math.PI); ctx.clip();
+  ctx.fillStyle = '#0d1630'; ctx.fillRect(cx - r, cy - r, 2 * r, 2 * r);
+  ctx.fillStyle = '#fff';
+  for (let i = 0; i < 14; i++) {
+    const sx = cx - r + ((i * 0.618 * 2.3 - S.t * 0.04) % 1 + 1) % 1 * 2 * r, sy = cy - r + ((i * 0.377) % 1) * r * 1.3;
+    ctx.fillRect(sx, sy, 1.6, 1.6);
+  }
+  const ec = cy + r * 2.4, er = r * 3.0;                            // Maan reuna ikkunan alaosassa
+  ctx.fillStyle = '#4f86b8'; ctx.beginPath(); ctx.arc(cx, ec, er, 0, 2 * Math.PI); ctx.fill();
+  ctx.save(); ctx.beginPath(); ctx.arc(cx, ec, er, 0, 2 * Math.PI); ctx.clip();
+  for (let i = 0; i < 5; i++) {                                     // pilvet ja maa liikkuvat aseman alla
+    const px = cx - r * 1.6 + ((i * 0.41 - S.t * 0.05) % 1 + 1) % 1 * r * 3.2, py = cy + r * (0.55 + 0.12 * (i % 3));
+    ctx.fillStyle = i % 2 ? 'rgba(255,255,255,0.75)' : '#6aa36a';
+    ctx.beginPath(); ctx.ellipse(px, py, r * 0.32, r * 0.08, 0, 0, 2 * Math.PI); ctx.fill();
+  }
+  ctx.restore();
+  ctx.fillStyle = 'rgba(140,190,255,0.35)'; ctx.beginPath(); ctx.arc(cx, ec, er + 2.5, 0, 2 * Math.PI); ctx.arc(cx, ec, er, 0, 2 * Math.PI, true); ctx.fill();
+  ctx.restore();
+  ctx.strokeStyle = '#7d8187'; ctx.lineWidth = Math.max(3, r * 0.12); ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2 * Math.PI); ctx.stroke();
 }
 
 /** Aluksen sisäkuva: vaaka, ihminen, omena, voimat ja aluksen kiihtyvyys. */
@@ -417,54 +592,56 @@ function drawInterior(ctx, x0, y0, x1, y1, p) {
   roundRect(ctx, x0, y0, w, h, 8); ctx.fill(); ctx.stroke();
   const floor = y1 - fs * 0.9;
   ctx.fillStyle = '#d9d4ca'; ctx.fillRect(x0 + 2, floor, w - 4, y1 - floor - 2);
-  // ihmisen mitat: pituus noin 62 % sisäkuvan korkeudesta
-  const u = Math.min(h * 0.62, w * 0.9) / 10, px = x0 + w * 0.36;
-  const scaleH = u * 0.9, scaleW = u * 4.2, lift = p.free ? u * 0.6 : 0;   // painottomana ihminen irtoaa vaa'asta
+  // ihmisen mitat: pituus noin 62 % sisäkuvan korkeudesta; kp = pikseliä metrille
+  const u = Math.min(h * 0.62, w * 0.9) / 10, kp = u / U, px = x0 + w * 0.4;
+  L.ceilM = (floor - y0 - 3) / kp;
+  const Xm = (x) => px + x * kp, Ym = (y) => floor - y * kp;
+  if (S.scene === 'space') drawPorthole(ctx, x1 - w * 0.2, y0 + h * 0.2, Math.min(w * 0.12, h * 0.1));
   // vaaka ja lukema
+  const scaleH = SCALE_H * kp, scaleW = u * 4.2;
   ctx.fillStyle = '#e9edf0'; ctx.strokeStyle = '#7d8187'; ctx.lineWidth = 1.5;
   roundRect(ctx, px - scaleW / 2, floor - scaleH, scaleW, scaleH, u * 0.25); ctx.fill(); ctx.stroke();
   const dw = scaleW * 0.5, dh = scaleH * 0.62;
   ctx.fillStyle = '#20262b'; roundRect(ctx, px - dw / 2, floor - scaleH * 0.81, dw, dh, 3); ctx.fill();
   ctx.fillStyle = p.free ? '#ff8f7a' : '#8ef0b0'; ctx.font = `700 ${Math.round(dh * 0.78)}px ui-monospace,Menlo,Consolas,monospace`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
   ctx.fillText(`${fmt(p.read, 1)} kg`, px, floor - scaleH * 0.81 + dh / 2 + 1);
-  // ihminen
-  const feet = floor - scaleH - lift, hipY = feet - u * 4.2, shY = hipY - u * 3.0, headR = u * 0.85, headY = shY - u * 0.25 - headR;
-  ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = '#3d4248';
-  ctx.lineWidth = u * 0.55; ctx.beginPath(); ctx.moveTo(px - u * 0.45, hipY); ctx.lineTo(px - u * 0.6, feet); ctx.moveTo(px + u * 0.45, hipY); ctx.lineTo(px + u * 0.6, feet); ctx.stroke();
-  ctx.fillStyle = '#2a7aab'; roundRect(ctx, px - u * 1.1, shY, u * 2.2, hipY - shY + u * 0.3, u * 0.5); ctx.fill();
-  ctx.fillStyle = '#f3ddc4'; ctx.strokeStyle = '#3d4248'; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.arc(px, headY, headR, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
-  // kädet: vasen alhaalla (painottomana koholla), oikea ojennettuna omenan kanssa
-  const handX = px + u * 3.0, handY = shY + u * 1.4;
-  ctx.strokeStyle = '#3d4248'; ctx.lineWidth = u * 0.45; ctx.beginPath();
-  ctx.moveTo(px - u * 0.95, shY + u * 0.4); ctx.lineTo(px - u * 1.6, p.free ? shY - u * 0.6 : shY + u * 2.6);
-  ctx.moveTo(px + u * 0.95, shY + u * 0.4); ctx.lineTo(handX, handY); ctx.stroke(); ctx.lineCap = 'butt';
+  // ihminen: piirretään yksiköissä U jalkapohjista ylöspäin, kierto painopisteen ympäri
+  const m = S.man, P = pose(m.f), cm = bodyPt(m, 0, CM);
+  ctx.save(); ctx.translate(Xm(cm.x), Ym(cm.y)); ctx.rotate(-tilt(m)); ctx.scale(u, -u); ctx.translate(0, -CM);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = LIMB; ctx.lineWidth = 0.55; ctx.beginPath();
+  for (let i = 0; i < 2; i++) { ctx.moveTo(...P.hips[i]); ctx.lineTo(...P.knees[i]); ctx.lineTo(...P.feet[i]); }
+  ctx.stroke();
+  ctx.fillStyle = SHIRT; roundRect(ctx, -1.1, 3.9, 2.2, 3.3, 0.5); ctx.fill();
+  ctx.fillStyle = SKIN; ctx.lineWidth = 1.4 / u; ctx.beginPath(); ctx.arc(0, 8.3, 0.85, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
+  ctx.lineWidth = 0.45; ctx.beginPath(); ctx.moveTo(-0.95, 6.8); ctx.lineTo(...P.lHand); ctx.moveTo(0.95, 6.8); ctx.lineTo(...P.rHand); ctx.stroke();
+  ctx.restore(); ctx.lineCap = 'butt';
   // omena: kädessä tai irti (putoaa aluksen suhteen kiihtyvyydellä g + a, painottomana leijuu)
-  const ar = u * 0.55, ay0 = handY - ar * 1.1, floorAppleY = floor - ar;
-  const ay = S.apple.held ? ay0 : floorAppleY - (floorAppleY - ay0) * (S.apple.y / APPLE_H);
-  ctx.fillStyle = '#c63b2f'; ctx.beginPath(); ctx.arc(handX, ay, ar, 0, 2 * Math.PI); ctx.fill();
-  ctx.strokeStyle = '#5a3a1a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(handX, ay - ar); ctx.lineTo(handX + ar * 0.2, ay - ar * 1.5); ctx.stroke();
-  ctx.fillStyle = '#4f8a3a'; ctx.beginPath(); ctx.ellipse(handX + ar * 0.55, ay - ar * 1.25, ar * 0.4, ar * 0.18, -0.5, 0, 2 * Math.PI); ctx.fill();
+  const ap = S.apple, ar = AR * kp;
+  ctx.save(); ctx.translate(Xm(ap.x), Ym(ap.y)); ctx.rotate(ap.rot);
+  ctx.fillStyle = '#c63b2f'; ctx.beginPath(); ctx.arc(0, 0, ar, 0, 2 * Math.PI); ctx.fill();
+  ctx.strokeStyle = '#5a3a1a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, -ar); ctx.lineTo(ar * 0.2, -ar * 1.5); ctx.stroke();
+  ctx.fillStyle = '#4f8a3a'; ctx.beginPath(); ctx.ellipse(ar * 0.55, -ar * 1.25, ar * 0.4, ar * 0.18, -0.5, 0, 2 * Math.PI); ctx.fill();
+  ctx.restore();
 
   // voimat ihmiseen painopisteestä: G (maan pinnalla aina saman pituinen), N samassa mittakaavassa
-  const CMy = (shY + hipY) / 2, L0 = Math.max(fs * 3.0, u * 3.0), kF = L0 / (MASS * g0);   // nuolet ihmisen kokoon suhteutettuina
+  const cx = Xm(cm.x), CMy = Ym(cm.y), L0 = Math.max(fs * 3.0, u * 3.0), kF = L0 / (MASS * g0);   // nuolet ihmisen kokoon suhteutettuina
   if (S.show.F) {
-    arrow(ctx, px, CMy, px, CMy + p.G * kF, CG, { width: 3.4 });
-    drawRich(ctx, val ? `{->G} = ${fmt(p.G, 0)}${NBSP}N` : '{->G}', px + fs * 0.5, CMy + p.G * kF - fs * 0.2, { size: fs, color: CG, halo: true });
+    arrow(ctx, cx, CMy, cx, CMy + p.G * kF, CG, { width: 3.4 });
+    drawRich(ctx, val ? `{->G} = ${fmt(p.G, 0)}${NBSP}N` : '{->G}', cx + fs * 0.5, CMy + p.G * kF - fs * 0.2, { size: fs, color: CG, halo: true });
     if (p.N > 1) {
-      arrow(ctx, px - u * 0.2, CMy, px - u * 0.2, CMy - p.N * kF, CN, { width: 3.4 });
-      drawRich(ctx, val ? `{->N} = ${fmt(p.N, 0)}${NBSP}N` : '{->N}', px - u * 0.2 - fs * 0.5, CMy - p.N * kF + fs * 0.2, { size: fs, color: CN, align: 'right', halo: true });
-    } else drawRich(ctx, '{N} = 0', px - fs * 0.5, CMy - fs * 1.2, { size: fs, color: CN, align: 'right', halo: true });
-    ctx.fillStyle = '#222'; ctx.beginPath(); ctx.arc(px, CMy, 3.2, 0, 2 * Math.PI); ctx.fill();
+      arrow(ctx, cx - u * 0.2, CMy, cx - u * 0.2, CMy - p.N * kF, CN, { width: 3.4 });
+      drawRich(ctx, val ? `{->N} = ${fmt(p.N, 0)}${NBSP}N` : '{->N}', cx - u * 1.15 - 4, CMy - p.N * kF + fs * 0.2, { size: fs, color: CN, align: 'right', halo: true });
+    } else drawRich(ctx, '{N} = 0', cx - u * 1.15 - 4, CMy + fs * 0.2, { size: fs, color: CN, align: 'right', halo: true });   // samassa kohdassa kuin lyhyen nuolen nimi
+    ctx.fillStyle = '#222'; ctx.beginPath(); ctx.arc(cx, CMy, 3.2, 0, 2 * Math.PI); ctx.fill();
   }
   // aluksen kiihtyvyys seinän ulkopuolella
   if (S.show.A) {
     const ax = x1 + fs * 1.4, ay2 = (y0 + y1) / 2, la = p.a / g0 * fs * 3.0;
     if (Math.abs(p.a) > 0.05) arrow(ctx, ax, ay2 + la / 2, ax, ay2 - la / 2, CA, { width: 3 });
-    drawRich(ctx, Math.abs(p.a) > 0.05 ? (val ? `{->a}` : '{->a}') : '{a} = 0', ax, ay2 + Math.abs(la) / 2 + fs * 0.9, { size: fs, color: CA, align: 'center', halo: true });
+    drawRich(ctx, Math.abs(p.a) > 0.05 ? '{->a}' : '{a} = 0', ax, ay2 + Math.abs(la) / 2 + fs * 0.9, { size: fs, color: CA, align: 'center', halo: true });
     if (val && Math.abs(p.a) > 0.05) drawRich(ctx, `${fmt(Math.abs(p.a), 1)}`, ax, ay2 + Math.abs(la) / 2 + fs * 1.9, { size: fs * 0.8, color: CA, align: 'center', halo: true });
   }
 }
-const APPLE_H = 1.0;                                               // omenan pudotuskorkeus (m) aluksen lattiasta
 
 /* =====================================================================
    Käyttöliittymä
@@ -472,25 +649,26 @@ const APPLE_H = 1.0;                                               // omenan pud
 const sceneBtns = [...document.querySelectorAll('#scene button')], hint = document.getElementById('hint');
 const HINTS = {
   lift: 'Kiihtyvyys ylöspäin on positiivinen. Vapaassa pudotuksessa a = −g.',
-  hump: 'Vaunu nyppylän huipulla. Huipun kaarevuussäde on noin 10 m.',
+  hump: 'Vaunu ajaa nyppylän yli tasaisella nopeudella. Huipun kaarevuussäde on noin 10 m.',
   space: 'Asema ja ihminen putoavat vapaasti kohti Maata samalla kiihtyvyydellä.',
 };
+const appleBtn = document.getElementById('apple');
+function paintApple() { appleBtn.textContent = S.apple.held ? 'Päästä omena irti' : 'Ota omena käteen'; }
 function setScene(s) {
   S.scene = s;
   for (const b of sceneBtns) b.setAttribute('aria-pressed', String(b.dataset.s === s));
   for (const k of ['lift', 'hump', 'space']) document.getElementById('g-' + k).hidden = k !== s;
   hint.textContent = HINTS[s];
-  resetApple();
+  resetAll();
 }
 for (const b of sceneBtns) b.addEventListener('click', () => setScene(b.dataset.s));
-const ctlA = bindRange('a', (x) => (x <= -g0 ? `${MINUS}9,81${NBSP}m/s² = ${MINUS}g` : `${fmt(x, 1)}${NBSP}m/s²`), (x) => { S.a = x; resetApple(); });
-bindRange('v', (x) => `${fmt(x, 1)}${NBSP}m/s`, (x) => { S.v = x; resetApple(); });
-bindRange('h', (x) => `${fmt(x, 0)}${NBSP}km`, (x) => { S.h = x; resetApple(); });
-document.getElementById('cut').addEventListener('click', () => { S.a = -10; ctlA.set(-10); resetApple(); });
-const appleBtn = document.getElementById('apple');
-function paintApple() { appleBtn.textContent = S.apple.held ? 'Päästä omena irti' : 'Ota omena käteen'; }
+const ctlA = bindRange('a', (x) => (x <= -g0 ? `${MINUS}9,81${NBSP}m/s² = ${MINUS}g` : `${fmt(x, 1)}${NBSP}m/s²`), (x) => { S.a = x; });
+bindRange('v', (x) => `${fmt(x, 1)}${NBSP}m/s`, (x) => { S.v = x; });
+bindRange('h', (x) => `${fmt(x, 0)}${NBSP}km`, (x) => { S.h = x; });
+document.getElementById('cut').addEventListener('click', () => { S.a = -10; ctlA.set(-10); });
 appleBtn.addEventListener('click', () => {
-  if (S.apple.held) S.apple = { held: false, y: APPLE_H, vy: 0 }; else S.apple = { held: true, y: 0, vy: 0 };
+  const ap = S.apple;
+  if (ap.held) { ap.held = false; ap.spin = phys().free ? 0.8 : 0; } else S.apple = { held: true, vy: 0, rot: 0, spin: 0, ...handApple() };
   paintApple();
 });
 for (const [id, key] of [['showF', 'F'], ['showA', 'A'], ['showVal', 'val']]) {
@@ -498,6 +676,8 @@ for (const [id, key] of [['showF', 'F'], ['showA', 'A'], ['showVal', 'val']]) {
   S.show[key] = el.checked;
   el.addEventListener('change', () => { S.show[key] = el.checked; });
 }
+const slowEl = document.getElementById('slow');
+S.slow = slowEl.checked; slowEl.addEventListener('change', () => { S.slow = slowEl.checked; });
 /* ?tilanne=hissi | nyppyla | avaruus valitsee aloitustilanteen. */
 (() => {
   const map = { hissi: 'lift', nyppyla: 'hump', 'nyppylä': 'hump', avaruus: 'space' };
