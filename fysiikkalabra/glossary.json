@@ -1,5 +1,17 @@
 [
   {
+    "term": "absoluuttinen nollapiste",
+    "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "kelvin",
+      "lämpötila"
+    ],
+    "locked": false
+  },
+  {
     "term": "energia",
     "definition": "Energia on suure, jonka avulla kuvataan, mitä systeemissä tapahtuu. Energia ei synny eikä katoa, vaan muuttaa muotoa tai siirtyy, ja työ on yksi tapa siirtää sitä; yksikkö on joule (J).",
     "lessons": [
@@ -21,6 +33,18 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kelvin",
+    "definition": "Lämpötilan SI-yksikkö K. Kelvinlämpötila on celsiuslämpötila plus 273,15, ja lämpötilaero on sama kelvineinä ja celsiusasteina.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "lämpötila",
+      "absoluuttinen nollapiste"
     ],
     "locked": false
   },
@@ -57,6 +81,18 @@
       "energia",
       "työ",
       "joule"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpötila",
+    "definition": "Lämpötila kertoo aineen hiukkasten keskimääräisestä liike-energiasta. Sitä mitataan celsiusasteina (°C) tai kelvineinä (K).",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "kelvin",
+      "absoluuttinen nollapiste"
     ],
     "locked": false
   },
@@ -109,6 +145,17 @@
     "locked": false
   },
   {
+    "term": "systeemi",
+    "definition": "Termodynaaminen systeemi on tutkimista varten rajattu osa maailmaa. Kaikki sen ulkopuolella on ympäristöä, ja systeemi on suljettu, jos siitä ei pääse ainetta ulos tai sisään.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "tilanmuuttuja"
+    ],
+    "locked": false
+  },
+  {
     "term": "teho",
     "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv; yksikkö on watti (W), joka on yksi joule sekunnissa.",
     "lessons": [
@@ -117,6 +164,19 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilanmuuttuja",
+    "definition": "Tilanmuuttuja kuvaa systeemin tilaa. Kaasun tilanmuuttujia ovat lämpötila, paine, tilavuus ja aineen määrä, ja jos yhtä muutetaan, vähintään yksi muista muuttuu myös.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "systeemi",
+      "lämpötila",
+      "paine"
     ],
     "locked": false
   },
