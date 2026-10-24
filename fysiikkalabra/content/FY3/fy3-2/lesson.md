@@ -16,7 +16,7 @@ W = F s
 ```
 missä W on työ (J), F voiman suuruus (N) ja s kappaleen kulkema matka (m). Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla: 1 J = 1 N·m.
 
-Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-akselin väliin jäävä pinta-ala. Vakiovoimalla pinta-ala on suorakulmio, jonka ala on F · s, joten sama laskusääntö toimii molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea osissa suorakulmioista, kolmioista ja puolisuunnikkaista.
+Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-akselin väliin jäävä pinta-ala. Vakiovoimalla pinta-ala on suorakulmio, jonka ala on F · s, joten sama laskusääntö toimii molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea jakamalla se suorakulmioihin, kolmioihin ja puolisuunnikkaisiin.
 
 Kun nostat kappaleen hitaasti ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (edellinen oppitunti). Nostotyö korkeudelle h on siis:
 ```latex
