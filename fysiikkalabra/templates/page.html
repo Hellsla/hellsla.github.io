@@ -1,8 +1,16 @@
 <!doctype html>
 <html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{{title}} — Fysiikkalabra</title>
+<meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="site.css">
 </head><body>
-<nav>{{crumbs}}</nav>
-<main>{{body}}</main>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Fysiikkalabra, etusivu"><span class="brand-mark">F</span><span class="brand-name">Fysiikkalabra</span></a>
+  <nav aria-label="Päävalikko"><a href="index.html#moduulit">Moduulit</a><a class="pill" href="{{home}}">← Portfolio</a></nav>
+</header>
+<nav class="crumbs" aria-label="Polku">{{crumbs}}</nav>
+<main class="{{main_class}}">{{body}}</main>
+<footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="{{home}}">← Takaisin portfolioon</a></footer>
+</div>
 </body></html>
