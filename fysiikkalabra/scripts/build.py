@@ -53,7 +53,7 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     ex = json.loads((folder / "exercises.json").read_text())
     ex_html = ""
     for lvl, items in ex.items():
-        ex_html += f"<details class=\"level\"><summary>Taso {lvl[-1]}</summary><ol>"
+        ex_html += f"<details class=\"level\"><summary>Taso {lvl[-1]} <span class=\"count\">{len(items)} tehtävää</span></summary><ol>"
         for e in items:
             ans = f"{fi(e['answer'])} {e.get('unit', '')}".strip()
             ex_html += (f"<li id=\"{e['id']}\">{e['text']}<details class=\"answer\"><summary>Vastaus</summary>"

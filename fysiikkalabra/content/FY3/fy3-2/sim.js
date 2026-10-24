@@ -1,11 +1,13 @@
 // fy3-2 Työ ja energia: a box pulled along a horizontal floor by a constant force along the motion.
 // Physics: W = F s (force along the displacement), P = W / t.
 // Work is also the area under the (s,F) graph; the right-hand plot fills that area as the box moves.
+// The numeric readout (W, P, work so far) is plain DOM text, so it stays readable on a phone;
+// the canvas only draws the picture, and its text is scaled up when the canvas is shrunk by CSS.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
-  const FLOOR_Y = 250, X0 = 40, BOX = 40, PX_PER_M = 14;      // 20 m fits in the left half
-  const G = { x: 360, y: 60, w: 220, h: 190 };                // (s,F) graph box
-  let sF, sS, sT, lF, lS, lT, btn;
+  const FLOOR_Y = 250, FLOOR_END = 346, X0 = 40, BOX = 40, PX_PER_M = 13;   // 20 m + box fits left of x = 346
+  const G = { x: 380, y: 50, w: 200, h: 200 };                              // (s,F) graph box
+  let sF, sS, sT, lF, lS, lT, btn, readout;
   let u = 0;                                                  // fraction of s covered so far, 0…1
   let running = false;
 
@@ -18,13 +20,16 @@ new p5((p) => {
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
+    readout = p.createDiv('').parent('sim-root').class('readout');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     [sF, lF] = slider(controls, 0, 100, 60, 1);      // voima F (N)
     [sS, lS] = slider(controls, 1, 20, 10, 0.5);     // matka s (m)
     [sT, lT] = slider(controls, 1, 20, 5, 0.5);      // aika t (s)
     btn = p.createButton('Vedä').parent(controls);
     btn.mousePressed(() => { u = 0; running = true; });
-    p.textFont('system-ui, sans-serif');
+    p.createP('Laatikko liikkuu vakiovauhtia: kitka ottaa vastaan vetovoiman tekemän työn, ja energia muuttuu lämmöksi.')
+      .parent('sim-root').class('note');
+    p.textFont('Arial');
   };
 
   p.draw = () => {
@@ -35,27 +40,27 @@ new p5((p) => {
     const Wdone = W * u;                   // constant force: work grows linearly with distance
 
     lF.html(`Voima F = ${F} N`); lS.html(`Matka s = ${fi(s, 1)} m`); lT.html(`Aika t = ${fi(t, 1)} s`);
+    readout.html(`<strong>W = F · s = ${fj(W)} J</strong><br><strong>P = W / t = ${fi(P, 1)} W</strong>` +
+                 `<br><small>Tehty työ tähän mennessä: ${fj(Wdone)} J</small>`);
     window.simState = { F, s, t, W, P, u, Wdone, running };
 
-    p.background(250);
-    // readout
-    p.noStroke(); p.fill(30); p.textAlign(p.LEFT); p.textSize(16);
-    p.text(`W = F · s = ${fi(W, 0)} J`, 20, 30);
-    p.text(`P = W / t = ${fi(P, 1)} W`, 20, 54);
-    p.textSize(13); p.fill(90); p.text(`Tehty työ tähän mennessä: ${fi(Wdone, 0)} J`, 20, 78);
+    // The canvas is scaled down by CSS on narrow screens; enlarge canvas text so it stays near 11 px or more.
+    const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
+    const ts = (n) => Math.round(n * k);
 
+    p.background(250);
     // floor with a metre scale
-    p.stroke(60); p.strokeWeight(2); p.line(0, FLOOR_Y, 330, FLOOR_Y);
-    p.strokeWeight(1); p.textSize(11); p.textAlign(p.CENTER);
-    for (let m = 0; m <= 20; m += 5) { const x = X0 + m * PX_PER_M; p.stroke(150); p.line(x, FLOOR_Y, x, FLOOR_Y + 5); p.noStroke(); p.fill(90); p.text(`${m} m`, x, FLOOR_Y + 18); }
+    p.stroke(60); p.strokeWeight(2); p.line(0, FLOOR_Y, FLOOR_END, FLOOR_Y);
+    p.strokeWeight(1); p.textSize(ts(11)); p.textAlign(p.CENTER);
+    for (let m = 0; m <= 20; m += 5) { const x = X0 + m * PX_PER_M; p.stroke(150); p.line(x, FLOOR_Y, x, FLOOR_Y + 5); p.noStroke(); p.fill(90); p.text(`${m} m`, x, FLOOR_Y + 5 + ts(13)); }
     const xEnd = X0 + s * PX_PER_M;
-    p.stroke(47, 111, 159); p.drawingContext.setLineDash([4, 4]); p.line(xEnd, FLOOR_Y - 70, xEnd, FLOOR_Y); p.drawingContext.setLineDash([]);
+    p.stroke(47, 111, 159); p.drawingContext.setLineDash([4, 4]); p.line(xEnd, FLOOR_Y - 90, xEnd, FLOOR_Y); p.drawingContext.setLineDash([]);
 
     // box and force arrow (100 N = 120 px)
     const bx = X0 + u * s * PX_PER_M, by = FLOOR_Y - BOX;
     p.noStroke(); p.fill(200, 120, 60); p.rect(bx - BOX / 2, by, BOX, BOX, 4);
     const ax = bx + BOX / 2, ay = by + BOX / 2, tipX = ax + F * 1.2;
-    if (F > 0) { arrow(ax, ay, tipX, ay, p.color(200, 40, 40)); p.noStroke(); p.fill(200, 40, 40); p.textAlign(p.LEFT); p.textSize(13); p.text(`F = ${F} N`, ax + 6, ay - 12); }
+    if (F > 0) { arrow(ax, ay, tipX, ay, p.color(200, 40, 40)); p.noStroke(); p.fill(200, 40, 40); p.textAlign(p.LEFT); p.textSize(ts(13)); p.text(`F = ${F} N`, ax + 6, ay - 12); }
 
     // (s,F) graph: the work done so far is the shaded area under the constant force
     p.stroke(60); p.strokeWeight(2); p.noFill();
@@ -64,16 +69,16 @@ new p5((p) => {
     p.noStroke(); p.fill(47, 111, 159, 90); if (F > 0) p.rect(G.x, yF, (xS - G.x) * u, G.y + G.h - yF);
     p.stroke(47, 111, 159); p.strokeWeight(3); if (F > 0) p.line(G.x, yF, xS, yF);
     p.strokeWeight(1); p.stroke(150); p.drawingContext.setLineDash([4, 4]); p.line(xS, yF, xS, G.y + G.h); p.drawingContext.setLineDash([]);
-    p.noStroke(); p.fill(90); p.textSize(12); p.textAlign(p.CENTER);
-    p.text('s (m)', G.x + G.w, G.y + G.h + 30); p.text(`${fi(s, 1)}`, xS, G.y + G.h + 16);
-    p.textAlign(p.RIGHT); p.text('F (N)', G.x - 6, G.y + 8); p.text(`${F}`, G.x - 6, yF + 4);
-    p.textAlign(p.CENTER); p.fill(47, 111, 159); p.textSize(13); p.text('W = pinta-ala', G.x + G.w / 2, G.y - 10);
+    p.noStroke(); p.fill(90); p.textSize(ts(12)); p.textAlign(p.CENTER);
+    p.text('s (m)', G.x + G.w - 10, G.y + G.h + ts(30)); p.text(`${fi(s, 1)}`, xS, G.y + G.h + ts(15));
+    p.textAlign(p.RIGHT); p.text('F (N)', G.x + ts(20), G.y - 8); p.text(`${F}`, G.x - 6, yF + 4);
+    p.textAlign(p.CENTER); p.fill(47, 111, 159); p.textSize(ts(13)); p.text('W = pinta-ala', G.x + G.w / 2, G.y - 8 - ts(14));
 
-    // progress bar at the bottom
-    const barX = 20, barY = 340, barW = 560, barH = 16;
+    // progress bar: filled fraction of the total work
+    const barX = 20, barY = 330, barW = 560, barH = 16;
     p.noFill(); p.stroke(120); p.strokeWeight(1); p.rect(barX, barY, barW, barH, 4);
     p.noStroke(); p.fill(47, 111, 159); if (W > 0) p.rect(barX, barY, barW * u, barH, 4);
-    p.fill(90); p.textSize(12); p.textAlign(p.LEFT); p.text('0 J', barX, barY + 30); p.textAlign(p.RIGHT); p.text(`${fi(W, 0)} J`, barX + barW, barY + 30);
+    p.fill(90); p.textSize(ts(12)); p.textAlign(p.LEFT); p.text('0 J', barX, barY + barH + ts(14)); p.textAlign(p.RIGHT); p.text(`${fj(W)} J`, barX + barW, barY + barH + ts(14));
   };
 
   function arrow(x1, y1, x2, y2, col) {
@@ -82,5 +87,6 @@ new p5((p) => {
     p.fill(col); p.noStroke();
     p.triangle(x2, y2, x2 - L * Math.cos(a - 0.4), y2 - L * Math.sin(a - 0.4), x2 - L * Math.cos(a + 0.4), y2 - L * Math.sin(a + 0.4));
   }
-  const fi = (x, d) => x.toFixed(d).replace('.', ',');   // Finnish decimal comma in the readout
+  const fi = (x, d) => x.toFixed(d).replace('.', ',');         // Finnish decimal comma
+  const fj = (x) => fi(x, Number.isInteger(x) ? 0 : 1);        // joules: show a half joule when s has a .5 step
 });

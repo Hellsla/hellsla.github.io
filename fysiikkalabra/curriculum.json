@@ -229,7 +229,7 @@
         "title": "Energian muuntuminen ja yksikkö joule",
         "goals": [
           "LOPS FY2: energialajit, energian säilyminen ja muuntuminen",
-          "Täsmennys: energia esitellään suureena, jonka yksikkö on joule; energialajeihin liittyvät lausekkeet kuten E_k = ½mv² ja E_p = mgh"
+          "Täsmennys: energia esitellään suureena, jonka yksikkö on joule, mutta energialajeja tarkastellaan ilman kuhunkin energialajiin liittyviä lausekkeita, kuten E_k = ½mv² ja E_p = mgh (lausekkeet kuuluvat moduuliin FY4)"
         ],
         "prerequisites": [
           "fy2-1"
@@ -412,7 +412,7 @@
         "goals": [
           "LOPS FY3: mekaaninen työ",
           "LOPS FY3: syventää ymmärrystään energiasta fysiikan keskeisenä käsitteenä",
-          "Täsmennys: työn laki W = Fs määritellään kokeeseen perustuen (Joulen koe); graafinen integrointi (s,F)-koordinaatistossa"
+          "Täsmennys: työn laki W = Fs määritellään kokeeseen perustuen (Joulen koe: mekaaninen työ ja syntynyt lämpömäärä); graafinen integrointi (s,F)-koordinaatistossa"
         ],
         "prerequisites": [
           "fy3-1"
@@ -421,7 +421,8 @@
         "glossary": [
           "työ",
           "energia",
-          "teho"
+          "teho",
+          "joule"
         ]
       },
       {

@@ -1,11 +1,11 @@
 [
   {
-    "q": "Kannat reppua tasaista lattiaa pitkin vakionopeudella. Kuinka suuren työn kannatteleva voimasi tekee reppuun?",
-    "a": "Nolla. Voima osoittaa ylös ja reppu liikkuu sivulle, joten voima ei siirrä reppua omaan suuntaansa."
+    "q": "Nostat 10 kg:n laatikon 1,0 m ylöspäin ja kannat sitä sitten 5,0 m vaakasuoraan tasaisella vauhdilla. Kuinka suuren työn kannatteleva voimasi tekee yhteensä?",
+    "a": "Noin 98 J. Nosto tekee työn W = mgh = 10 kg · 9,81 m/s² · 1,0 m ≈ 98 J. Vaakasuora kantaminen ei tee työtä, koska voima on kohtisuorassa liikettä vastaan."
   },
   {
-    "q": "Pyöräilijän nopeus kaksinkertaistuu. Miten liike-energia muuttuu?",
-    "a": "Nelinkertaistuu, koska E_k on verrannollinen nopeuden neliöön."
+    "q": "Voima kasvaa tasaisesti nollasta 20 N:iin matkalla 0,10 m. Kuinka suuren työn voima tekee?",
+    "a": "1,0 J. Työ on kolmion pinta-ala: ½ · 20 N · 0,10 m."
   },
   {
     "q": "Kaksi hissiä nostaa saman kuorman samalle korkeudelle, toinen kaksi kertaa nopeammin. Kumpi tekee enemmän työtä ja kumman teho on suurempi?",
