@@ -1,4 +1,4 @@
 preview/
-review/*.png
+**/review/*.png
 __pycache__/
 node_modules/

@@ -1,20 +1,104 @@
 {
   "level1": [
-    { "id": "fy3-2-L1-01", "level": 1, "text": "Mopoa työnnetään 25 m matka 80 N voimalla liikkeen suuntaan. Kuinka suuren työn työntävä voima tekee?", "answer": 2.0, "unit": "kJ", "tolerance": 0.05 },
-    { "id": "fy3-2-L1-02", "level": 1, "text": "Kirjahylly (m = 15 kg) nostetaan lattialta 1,2 m korkeudelle. Kuinka paljon hyllyn potentiaalienergia kasvaa?", "answer": 177, "unit": "J", "tolerance": 0.02 },
-    { "id": "fy3-2-L1-03", "level": 1, "text": "Pyöräilijän ja pyörän yhteinen massa on 85 kg ja nopeus 6,0 m/s. Laske liike-energia.", "answer": 1530, "unit": "J", "tolerance": 0.02 },
-    { "id": "fy3-2-L1-04", "level": 1, "text": "Hissin moottori tekee 36 kJ työn 12 s aikana. Mikä on moottorin teho?", "answer": 3.0, "unit": "kW", "tolerance": 0.05 },
-    { "id": "fy3-2-L1-05", "level": 1, "text": "Vesipumpun teho on 1,5 kW. Kuinka suuren työn pumppu tekee 4,0 minuutissa?", "answer": 360, "unit": "kJ", "tolerance": 0.02 }
+    {
+      "id": "fy3-2-L1-01",
+      "level": 1,
+      "text": "Mopoa työnnetään liikkeen suuntaan 80 N:n voimalla 25 metrin matkan. Kuinka suuren työn työntävä voima tekee?",
+      "answer": 2.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-02",
+      "level": 1,
+      "text": "Kirjahylly painaa 150 N. Hylly nostetaan hitaasti lattialta 1,2 m:n korkeuteen. Kuinka suuren työn nostovoima tekee?",
+      "answer": 180,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-03",
+      "level": 1,
+      "text": "Hissin moottori tekee 36 kJ:n työn 12 sekunnissa. Mikä on moottorin teho?",
+      "answer": 3.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-04",
+      "level": 1,
+      "text": "Kelkkaa vedetään 6,0 m:n matka. Vetävä voima on koko matkalla 35 N ja liikkeen suuntainen, joten (s,F)-kuvaaja on vaakasuora jana. Laske voiman tekemä työ kuvaajan pinta-alana.",
+      "answer": 210,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-05",
+      "level": 1,
+      "text": "Hiihtäjä vetää pulkkaa tasaisella 3,0 m/s:n nopeudella liikkeen suuntaisella 20 N:n voimalla. Mikä on vetävän voiman teho?",
+      "answer": 60,
+      "unit": "W",
+      "tolerance": 0.02
+    }
   ],
   "level2": [
-    { "id": "fy3-2-L2-01", "level": 2, "text": "Henkilöauto (m = 1200 kg) kiihdytetään levosta nopeuteen 90 km/h. Kuinka suuren työn kiihdyttävä voima tekee autoon?", "answer": 375, "unit": "kJ", "tolerance": 0.02 },
-    { "id": "fy3-2-L2-02", "level": 2, "text": "Sähkökiukaan teho on 6,0 kW. Kuinka paljon sähköenergiaa kiuas käyttää 45 minuutin lämmityksen aikana? Anna vastaus megajouleina.", "answer": 16.2, "unit": "MJ", "tolerance": 0.02 },
-    { "id": "fy3-2-L2-03", "level": 2, "text": "Nosturi nostaa 850 kg betonielementtiä tasaisella nopeudella. Nosturin teho on 12 kW. Kuinka korkealle elementti nousee 30 s aikana?", "answer": 43.2, "unit": "m", "tolerance": 0.02 },
-    { "id": "fy3-2-L2-04", "level": 2, "text": "Juoksija (m = 62 kg) juoksee portaat ylös 12 sekunnissa. Korkeusero on 15 m. Mikä on juoksijan keskimääräinen teho painovoimaa vastaan?", "answer": 760, "unit": "W", "tolerance": 0.02 }
+    {
+      "id": "fy3-2-L2-01",
+      "level": 2,
+      "text": "Traktori tekee 45 kJ:n työn vetämällä kuormaa liikkeen suuntaisella 1,5 kN:n voimalla. Kuinka pitkän matkan kuorma siirtyy?",
+      "answer": 30,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-02",
+      "level": 2,
+      "text": "Vesipumpun teho on 1,5 kW. Kuinka suuren työn pumppu tekee 4,0 minuutissa? Anna vastaus kilojouleina.",
+      "answer": 360,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-03",
+      "level": 2,
+      "text": "Nosturi nostaa 850 kg:n betonielementin hitaasti 30 m:n korkeuteen. Kuinka suuren työn nostovoima tekee? Anna vastaus kilojouleina.",
+      "answer": 250,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-04",
+      "level": 2,
+      "text": "Vaunua työnnetään liikkeen suuntaisella voimalla. Voima on ensin 10 N matkalla 0–2,0 m. Sen jälkeen voima kasvaa tasaisesti 10 N:sta 30 N:iin matkalla 2,0–6,0 m. Laske voiman tekemä kokonaistyö (s,F)-kuvaajan pinta-alana.",
+      "answer": 100,
+      "unit": "J",
+      "tolerance": 0.02
+    }
   ],
   "level3": [
-    { "id": "fy3-2-L3-01", "level": 3, "text": "Hiihtäjä (m = 75 kg) laskee levosta mäen, jonka korkeusero on 40 m, ja saavuttaa mäen juurella nopeuden 20 m/s. Kuinka paljon energiaa kitka ja ilmanvastus veivät laskun aikana?", "answer": 14.4, "unit": "kJ", "tolerance": 0.02 },
-    { "id": "fy3-2-L3-02", "level": 3, "text": "Kuorma-auto vetää perävaunua tasaisella nopeudella 80 km/h. Vetovoima on 4,5 kN. Kuinka suuri on vetovoiman teho? Perustele kaava, jota käytät.", "answer": 100, "unit": "kW", "tolerance": 0.02 },
-    { "id": "fy3-2-L3-03", "level": 3, "text": "Mökin aurinkopaneeli tuottaa keskimäärin 180 W tehon. Kuinka monta minuuttia paneelin pitää tuottaa sähköä, jotta energia riittäisi pumppaamaan 1000 kg vettä 50 m korkeammalla olevaan säiliöön? Oleta, että kaikki energia menee veden nostamiseen.", "answer": 45.4, "unit": "min", "tolerance": 0.02 }
+    {
+      "id": "fy3-2-L3-01",
+      "level": 3,
+      "text": "Laatikkoa työnnetään liikkeen suuntaisella voimalla. Voima kasvaa tasaisesti nollasta 40 N:iin matkalla 0–0,50 m, pysyy sitten 40 N:ssä matkalla 0,50–1,5 m ja pienenee tasaisesti nollaan matkalla 1,5–2,0 m. Mikä on voiman matkan suhteen keskimääräinen suuruus koko 2,0 m:n matkalla? Vihje: laske ensin kokonaistyö kuvaajan pinta-alana.",
+      "answer": 30,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L3-02",
+      "level": 3,
+      "text": "Joulen kokeessa 2,0 kg:n paino putoaa 1,5 m ja pyörittää siipipyörää vedessä. Koe toistetaan 20 kertaa nostamalla paino aina takaisin ylös. Oleta, että paino menettää pudotessaan nostotyön suuruisen energian ja että kaikki tämä energia siirtyy veteen lämpönä. Kuinka suuri lämpömäärä veteen on siirtynyt?",
+      "answer": 590,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L3-03",
+      "level": 3,
+      "text": "Mökin aurinkopaneeli antaa auringonpaisteessa 180 W:n tehon. Kuinka monta minuuttia auringon pitää paistaa paneeliin, jotta energia riittää nostamaan 1000 kg vettä 50 m:n korkeuteen? Oleta, että kaikki energia menee veden nostamiseen.",
+      "answer": 45,
+      "unit": "min",
+      "tolerance": 0.02
+    }
   ]
 }

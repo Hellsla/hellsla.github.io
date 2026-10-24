@@ -1,14 +1,26 @@
 [
   {
     "term": "energia",
-    "definition": "Energia on kappaleen tai systeemin kyky tehdä työtä. Energia ei synny eikä katoa, vaan muuttaa muotoa, esimerkiksi liike-energiasta potentiaalienergiaksi; yksikkö on joule (J).",
+    "definition": "Energia on suure, jonka avulla kuvataan, mitä systeemissä tapahtuu. Energia ei synny eikä katoa, vaan muuttaa muotoa tai siirtyy, ja työ on yksi tapa siirtää sitä; yksikkö on joule (J).",
     "lessons": [
       "fy3-2"
     ],
     "see_also": [
       "työ",
-      "liike-energia",
-      "potentiaalienergia"
+      "teho",
+      "joule"
+    ],
+    "locked": false
+  },
+  {
+    "term": "joule",
+    "definition": "Energian ja työn yksikkö, 1 J = 1 N·m. Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla.",
+    "lessons": [
+      "fy3-2"
+    ],
+    "see_also": [
+      "työ",
+      "energia"
     ],
     "locked": false
   },
@@ -27,7 +39,7 @@
     "term": "liike-energia",
     "definition": "Liikkuvan kappaleen energia, E_k = ½ m v². Se kasvaa nopeuden neliössä, joten kaksinkertainen nopeus tarkoittaa nelinkertaista liike-energiaa.",
     "lessons": [
-      "fy3-2"
+      "fy4-7"
     ],
     "see_also": [
       "energia",
@@ -36,10 +48,23 @@
     "locked": false
   },
   {
+    "term": "lämpömäärä",
+    "definition": "Lämpötilaeron vuoksi kappaleesta toiseen siirtyvä energia, symboli Q. Yksikkö on joule (J).",
+    "lessons": [
+      "fy3-2"
+    ],
+    "see_also": [
+      "energia",
+      "työ",
+      "joule"
+    ],
+    "locked": false
+  },
+  {
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
-      "fy3-2"
+      "fy4-7"
     ],
     "see_also": [
       "energia",
@@ -49,7 +74,7 @@
   },
   {
     "term": "teho",
-    "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Yksikkö on watti (W), joka on yksi joule sekunnissa.",
+    "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv; yksikkö on watti (W), joka on yksi joule sekunnissa.",
     "lessons": [
       "fy3-2"
     ],
@@ -61,7 +86,7 @@
   },
   {
     "term": "työ",
-    "definition": "Voiman tekemä työ on voiman siirtymän suuntaisen komponentin ja siirtymän tulo, W = F s cos α. Työ siirtää energiaa kappaleesta toiseen, ja sen yksikkö on joule (J).",
+    "definition": "Voiman tekemä työ on voiman ja matkan tulo, kun voima on liikkeen suuntainen: W = Fs. Työ siirtää energiaa kappaleesta toiseen, ja sen yksikkö on joule (J).",
     "lessons": [
       "fy3-2"
     ],
