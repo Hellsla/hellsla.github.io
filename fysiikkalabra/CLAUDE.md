@@ -53,6 +53,6 @@ review/            one <agent>.md report per reviewer, overwritten on each run
 
 ## Never
 - Never publish or commit on your own; the human commits.
-- Never fetch or copy exam questions from YTL or textbooks; write original problems.
+- Never copy exam questions from YTL or textbooks into lessons; write original problems. Exam files may be studied for patterns only, stored in the git-ignored `docs/exams/` (see NOTES.md, section 3).
 - Never add tracking, logins or forms that collect student data.
 - Never depict real people in generated images.

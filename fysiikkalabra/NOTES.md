@@ -62,3 +62,12 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 ### Process
 - Reviewers never edit lesson files. After a FAIL, fix, rebuild, test and rerun the failed reviewers.
 - Keep commits small and push after each; the branch name is given by the session.
+
+## 3. Matriculation exam material (inspiration only)
+
+- Source named by the human: https://yle.fi/abitreenit/fysiikka (physics exams collected there). Status: **not collected yet**, because the cloud environment's network policy blocked yle.fi (and the exam-file host it links to).
+- Store downloaded exam files only in `docs/exams/`, which is git-ignored. They are third-party material, so they never go into commits, `site/` or lesson folders.
+- Use them to study, never to copy: which skills each task type tests, typical contexts, how multi-part tasks are built, how many points go to reasoning versus calculation, which formulas the tasks expect students to know.
+- Record findings as short pattern notes in this file (for example "typical level-3 task: graph reading plus one calculation"), never as quoted or lightly reworded tasks.
+- Every exercise stays original: new context, new numbers, own wording. CLAUDE.md still forbids copying exam questions.
+- When a pattern changes how a lesson should be written, add the change to the relevant section above and mention it in the commit.
