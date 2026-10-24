@@ -4,7 +4,7 @@
 **Kaava:** W = F s
 **Sijoitus:** W = 80 N · 25 m = 2000 J
 **Vastaus:** 2,0 kJ
-**Järkevyys:** Sama työ riittäisi nostamaan 20 kg:n kappaleen noin 10 m:n korkeuteen. Mopon työntäminen 25 m on raskasta, joten suuruusluokka sopii.
+**Järkevyys:** Sama työ nostaisi 20 kg:n kappaleen noin 10 m:n korkeuteen. Suuruusluokka sopii kevyen mopon työntämiseen.
 
 ## fy3-2-L1-02
 **Annettu:** G = 150 N, h = 1,2 m
@@ -12,7 +12,7 @@
 **Kaava:** W = G h
 **Sijoitus:** W = 150 N · 1,2 m = 180 J
 **Vastaus:** 180 J
-**Järkevyys:** Alle kahden sadan joulen työ vastaa suunnilleen 15 kg:n hyllyn nostamista reilun metrin.
+**Järkevyys:** Alle kahdensadan joulen työ vastaa suunnilleen 15 kg:n hyllyn nostamista reilun metrin.
 
 ## fy3-2-L1-03
 **Annettu:** W = 36 kJ = 36 000 J, t = 12 s
@@ -71,7 +71,7 @@
 **Järkevyys:** Keskimääräinen voima on 100 J / 6,0 m ≈ 17 N, mikä on 10 N:n ja 30 N:n välissä.
 
 ## fy3-2-L3-01
-**Annettu:** voima nousee 0 → 40 N matkalla 0,50 m, pysyy 40 N matkalla 1,0 m ja laskee 40 N → 0 matkalla 0,50 m; kokonaismatka 2,0 m
+**Annettu:** voima nousee 0 → 40 N matkalla 0,50 m, pysyy 40 N:ssä matkalla 1,0 m ja laskee 40 N → 0 matkalla 0,50 m; kokonaismatka 2,0 m
 **Kysytty:** keskimääräinen voima F_ka
 **Kaava:** W = kuvaajan pinta-ala, W = F_ka s, joten F_ka = W / s
 **Sijoitus:** W = ½ · 40 N · 0,50 m + 40 N · 1,0 m + ½ · 40 N · 0,50 m = 10 J + 40 J + 10 J = 60 J; F_ka = 60 J / 2,0 m = 30 N
@@ -81,7 +81,7 @@
 ## fy3-2-L3-02
 **Annettu:** m = 2,0 kg, h = 1,5 m, 20 pudotusta, g = 9,81 m/s²
 **Kysytty:** veteen siirtynyt lämpömäärä Q
-**Kaava:** yhden pudotuksen työ W₁ = m g h; kaikki työ muuttuu lämpömääräksi, joten Q = 20 W₁
+**Kaava:** yhden pudotuksen työ W₁ = m g h; kaikki työ siirtyy veteen lämpönä, joten Q = 20 W₁
 **Sijoitus:** W₁ = 2,0 kg · 9,81 m/s² · 1,5 m = 29,43 J; Q = 20 · 29,43 J = 588,6 J
 **Vastaus:** 590 J
 **Järkevyys:** Alle 600 J on pieni energiamäärä, joten lämpötilan muutos oli pieni ja vaati tarkkaa mittausta. Siksi Joule toisti pudotuksia monta kertaa.
@@ -92,4 +92,4 @@
 **Kaava:** W = m g h ja W = P t, joten t = m g h / P
 **Sijoitus:** W = 1000 kg · 9,81 m/s² · 50 m = 490 500 J; t = 490 500 J / 180 W = 2725 s = 45,4 min
 **Vastaus:** 45 min
-**Järkevyys:** Energia on 0,14 kWh. Pieni paneeli tuottaa sen alle tunnissa, mikä vastaa arkikokemusta aurinkosähköstä.
+**Järkevyys:** Energia on 490 kJ. Pieni paneeli tuottaa sen alle tunnissa, mikä vastaa arkikokemusta aurinkosähköstä.

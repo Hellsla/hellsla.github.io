@@ -27,7 +27,7 @@ new p5((p) => {
     [sT, lT] = slider(controls, 1, 20, 5, 0.5);      // aika t (s)
     btn = p.createButton('Vedä').parent(controls);
     btn.mousePressed(() => { u = 0; running = true; });
-    p.createP('Laatikko liikkuu vakiovauhtia: kitka ottaa vastaan vetovoiman tekemän työn, ja energia muuttuu lämmöksi.')
+    p.createP('Laatikko liikkuu vakiovauhdilla: kitkavoima on yhtä suuri kuin vetävä voima, ja vetävän voiman tekemä työ muuttuu lämmöksi.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
   };
@@ -56,10 +56,10 @@ new p5((p) => {
     const xEnd = X0 + s * PX_PER_M;
     p.stroke(47, 111, 159); p.drawingContext.setLineDash([4, 4]); p.line(xEnd, FLOOR_Y - 90, xEnd, FLOOR_Y); p.drawingContext.setLineDash([]);
 
-    // box and force arrow (100 N = 120 px)
+    // box and force arrow (100 N = 50 px, so the tip stays left of the graph even at s = 20 m)
     const bx = X0 + u * s * PX_PER_M, by = FLOOR_Y - BOX;
     p.noStroke(); p.fill(200, 120, 60); p.rect(bx - BOX / 2, by, BOX, BOX, 4);
-    const ax = bx + BOX / 2, ay = by + BOX / 2, tipX = ax + F * 1.2;
+    const ax = bx + BOX / 2, ay = by + BOX / 2, tipX = ax + F * 0.5;
     if (F > 0) { arrow(ax, ay, tipX, ay, p.color(200, 40, 40)); p.noStroke(); p.fill(200, 40, 40); p.textAlign(p.LEFT); p.textSize(ts(13)); p.text(`F = ${F} N`, ax + 6, ay - 12); }
 
     // (s,F) graph: the work done so far is the shaded area under the constant force

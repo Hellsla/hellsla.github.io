@@ -4,8 +4,8 @@
     "a": "Noin 98 J. Nosto tekee työn W = mgh = 10 kg · 9,81 m/s² · 1,0 m ≈ 98 J. Vaakasuora kantaminen ei tee työtä, koska voima on kohtisuorassa liikettä vastaan."
   },
   {
-    "q": "Voima kasvaa tasaisesti nollasta 20 N:iin matkalla 0,10 m. Kuinka suuren työn voima tekee?",
-    "a": "1,0 J. Työ on kolmion pinta-ala: ½ · 20 N · 0,10 m."
+    "q": "(s,F)-kuvaajassa voima on vaakasuora jana 40 N:n korkeudella välillä 0–0,50 m. Mitä kuvaajan ja s-akselin väliin jäävä pinta-ala kertoo, ja kuinka suuri se on?",
+    "a": "Pinta-ala kertoo voiman tekemän työn: 40 N · 0,50 m = 20 J."
   },
   {
     "q": "Kaksi hissiä nostaa saman kuorman samalle korkeudelle, toinen kaksi kertaa nopeammin. Kumpi tekee enemmän työtä ja kumman teho on suurempi?",

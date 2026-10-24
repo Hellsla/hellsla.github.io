@@ -5,9 +5,9 @@
 ## Ydinajatus
 Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana on tarkempi: voima tekee työtä, kun se siirtää kappaletta voiman suuntaan. Kun kannat reppua vaakasuoraan tasaisella vauhdilla, kannatteleva voimasi osoittaa ylös, mutta reppu liikkuu sivulle. Voima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Lihaksesi väsyvät, koska ne kuluttavat energiaa voiman ylläpitoon, mutta reppuun ei siirry energiaa.
 
-Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran. Kun koetta toistettiin eri painoilla ja pudotuskorkeuksilla, lämpeneminen oli aina verrannollinen tehtyyn työhön. Tämä kokeellinen tulos perustelee työn määritelmän, ja siksi työ ja lämpö mitataan samalla yksiköllä, joulella.
+Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran. Joule vaihteli sekä painoa että pudotuskorkeutta eli voimaa ja matkaa, ja havaitsi lämpenemisen olevan aina verrannollinen näiden tuloon. Tämä kokeellinen tulos perustelee työn määritelmän W = Fs (kaava alla), ja siksi työ ja lämpö mitataan samalla yksiköllä, joulella.
 
-Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasvaa, jousi venyy ja tallentaa energiaa, ja kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Portaat ylös kävellen ja juosten teet saman työn, mutta juosten teho on suurempi. Kiukaan 6 kW teho tarkoittaa, että se muuttaa sähköenergiaa lämmöksi 6000 joulea joka sekunti.
+Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasvaa, jousi venyy ja tallentaa energiaa, ja kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Portaat ylös kävellen ja juosten teet saman työn, mutta juosten teho on suurempi. Kiukaan 6 kW:n teho tarkoittaa, että se muuttaa sähköenergiaa lämmöksi 6000 joulea joka sekunti.
 
 ## Kaavat
 Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan tulo:
@@ -16,13 +16,13 @@ W = F s
 ```
 missä W on työ (J), F voiman suuruus (N) ja s kappaleen kulkema matka (m). Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla: 1 J = 1 N·m.
 
-Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-akselin väliin jäävä pinta-ala. Vakiovoimalla pinta-ala on suorakulmio, jonka ala on F · s, joten sama laskusääntö toimii molemmissa tapauksissa.
+Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-akselin väliin jäävä pinta-ala. Vakiovoimalla pinta-ala on suorakulmio, jonka ala on F · s, joten sama laskusääntö toimii molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea osissa suorakulmioista, kolmioista ja puolisuunnikkaista.
 
 Kun nostat kappaleen hitaasti ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (edellinen oppitunti). Nostotyö korkeudelle h on siis:
 ```latex
 W = G h = m g h
 ```
-missä G on paino (N), m massa (kg), g = 9,81 m/s² ja h nostokorkeus (m).
+missä G on paino (N), m massa (kg), g = 9,81 m/s² ja h nostokorkeus (m). Nostetun kappaleen energia kasvaa täsmälleen nostotyön verran.
 
 Teho on työ jaettuna siihen kuluneella ajalla. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, teho saadaan myös voiman ja nopeuden tulona, koska s/t = v:
 ```latex
@@ -53,7 +53,7 @@ Työ on kolmion pinta-ala: $W = \tfrac{1}{2} \cdot 40\ \text{N} \cdot 0{,}20\ \t
 Sama tulos saadaan keskimääräisellä voimalla 20 N: $W = 20\ \text{N} \cdot 0{,}20\ \text{m} = 4{,}0\ \text{J}$. Työ ei katoa, vaan tallentuu jouseen. Jos laskisit $40\ \text{N} \cdot 0{,}20\ \text{m} = 8{,}0\ \text{J}$, tulos olisi kaksinkertainen, koska voima ei ole 40 N koko matkalla.
 
 ## Yleinen virhekäsitys
-Työ ei ole sama asia kuin ponnistelu. Kun pidät kappaletta paikallaan tai kannat sitä tasaisella lattialla, et tee kappaleeseen työtä, vaikka väsyt. Toinen yleinen virhe on sotkea työ ja teho: suuri teho ei tarkoita suurta työtä, vaan nopeasti tehtyä työtä.
+Työ ei ole sama asia kuin ponnistelu: väsyminen ei tarkoita, että olisit tehnyt fysiikan tarkoittamaa työtä. Toinen yleinen virhe on sotkea työ ja teho: suuri teho ei tarkoita suurta työtä, vaan nopeasti tehtyä työtä.
 
 ## Tiivistelmä
 - Liikkeen suuntainen vakiovoima tekee työn $W = F s$. Muuttuvalla voimalla työ on (s,F)-kuvaajan pinta-ala.

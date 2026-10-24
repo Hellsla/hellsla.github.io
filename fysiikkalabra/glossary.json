@@ -48,6 +48,19 @@
     "locked": false
   },
   {
+    "term": "lämpömäärä",
+    "definition": "Lämpötilaeron vuoksi kappaleesta toiseen siirtyvä energia, symboli Q. Yksikkö on joule (J).",
+    "lessons": [
+      "fy3-2"
+    ],
+    "see_also": [
+      "energia",
+      "työ",
+      "joule"
+    ],
+    "locked": false
+  },
+  {
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
