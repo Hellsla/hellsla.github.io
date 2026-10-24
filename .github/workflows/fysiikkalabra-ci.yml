@@ -1,0 +1,29 @@
+# Fysiikkalabra QA: build every lesson (drafts included) and run the headless simulation tests.
+# This repository serves GitHub Pages from its root branch, so there is no Pages deploy job here;
+# publishing is a separate decision (see fysiikkalabra/README.md).
+name: fysiikkalabra-ci
+on:
+  push:
+    paths: ["fysiikkalabra/**", ".github/workflows/fysiikkalabra-ci.yml"]
+  pull_request:
+    paths: ["fysiikkalabra/**", ".github/workflows/fysiikkalabra-ci.yml"]
+  schedule: [{ cron: "0 19 * * 0" }]   # Sunday 21:00 Helsinki (winter time): weekly QA run
+permissions: { contents: read }
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: fysiikkalabra } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: pip install markdown playwright && playwright install --with-deps chromium
+      - run: python scripts/build.py --all
+      - run: python scripts/test_sims.py
+      - run: |
+          for d in content/*/*/; do
+            case "$d" in *_gold*) continue;; esac
+            python scripts/check_latex.py "$d"
+          done

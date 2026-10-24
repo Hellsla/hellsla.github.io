@@ -1,0 +1,21 @@
+{
+  "id": "fy3-2",
+  "course": "FY3",
+  "title": "Newtonin toinen laki",
+  "goals": [
+    "LOPS FY3: soveltaa Newtonin lakeja"
+  ],
+  "prerequisites": [
+    "fy3-1"
+  ],
+  "glossary": [
+    "voima",
+    "kiihtyvyys",
+    "massa"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "reviewed",
+  "reviewed_by": "",
+  "reviewed_on": ""
+}

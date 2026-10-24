@@ -1,0 +1,74 @@
+[
+  {
+    "term": "energia",
+    "definition": "Energia on kappaleen tai systeemin kyky tehdä työtä. Energia ei synny eikä katoa, vaan muuttaa muotoa, esimerkiksi liike-energiasta potentiaalienergiaksi; yksikkö on joule (J).",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "työ",
+      "liike-energia",
+      "potentiaalienergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiihtyvyys",
+    "definition": "Nopeuden muutos aikayksikössä. Yksikkö m/s².",
+    "lessons": [
+      "fy3-2"
+    ],
+    "see_also": [
+      "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "liike-energia",
+    "definition": "Liikkuvan kappaleen energia, E_k = ½ m v². Se kasvaa nopeuden neliössä, joten kaksinkertainen nopeus tarkoittaa nelinkertaista liike-energiaa.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "energia",
+      "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "potentiaalienergia",
+    "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "energia",
+      "työ"
+    ],
+    "locked": false
+  },
+  {
+    "term": "teho",
+    "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Yksikkö on watti (W), joka on yksi joule sekunnissa.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "työ",
+      "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "työ",
+    "definition": "Voiman tekemä työ on voiman siirtymän suuntaisen komponentin ja siirtymän tulo, W = F s cos α. Työ siirtää energiaa kappaleesta toiseen, ja sen yksikkö on joule (J).",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "energia",
+      "teho"
+    ],
+    "locked": false
+  }
+]

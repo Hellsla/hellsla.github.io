@@ -1,0 +1,37 @@
+{
+  "FY3": {
+    "title": "Energia ja lämpö",
+    "lessons": [
+      {
+        "id": "fy3-1",
+        "title": "Työ ja energia",
+        "goals": [
+          "LOPS FY3: työn ja energian käsitteet"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "työ",
+          "energia",
+          "teho"
+        ]
+      },
+      {
+        "id": "fy3-2",
+        "title": "Newtonin toinen laki",
+        "goals": [
+          "LOPS FY3: soveltaa Newtonin lakeja"
+        ],
+        "prerequisites": [
+          "fy3-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "voima",
+          "kiihtyvyys",
+          "massa"
+        ]
+      }
+    ]
+  }
+}
