@@ -1,0 +1,13 @@
+[
+  { "expr": "window.simState.G - window.simState.m * window.simState.g", "expected": 0, "tol": 1e-06, "note": "G equals m g with the default settings" },
+  { "expr": "window.simState.g", "expected": 9.81, "tol": 1e-06, "note": "default body is Maa with g = 9,81 N/kg" },
+  { "expr": "window.simState.G", "expected": 98.1, "tol": 1e-06, "note": "default mass 10 kg on Maa gives G = 98,1 N" },
+  { "setup": "const s=document.querySelector('#sim-root select'); s.value='Kuu'; document.querySelector('#sim-root input[type=range]').value=5;", "expr": "window.simState.G", "expected": 8.1, "tol": 1e-06, "note": "5 kg on Kuu (g = 1,62) -> G = 8,1 N" },
+  { "expr": "window.simState.m", "expected": 5, "tol": 0, "note": "mass is read from the slider and does not depend on the body" },
+  { "setup": "document.querySelector('#sim-root select').value='Mars'; document.querySelector('#sim-root input[type=range]').value=25;", "expr": "window.simState.G", "expected": 92.75, "tol": 1e-06, "note": "25 kg on Mars (g = 3,71) -> G = 92,75 N" },
+  { "setup": "document.querySelector('#sim-root select').value='Jupiter'; document.querySelector('#sim-root input[type=range]').value=100;", "expr": "window.simState.G", "expected": 2480, "tol": 1e-06, "note": "100 kg on Jupiter (g = 24,8) -> G = 2480 N" },
+  { "setup": "document.querySelector('#sim-root select').value='Maa'; document.querySelector('#sim-root input[type=range]').value=10;", "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('G = m · g = 98,1 N') && x.includes('g = 9,81 N/kg') ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "readout is DOM text: m = 10 kg, g = 9,81 N/kg, G = 98,1 N" },
+  { "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select option')].map(x=>x.textContent); return o.join(',')==='Kuu,Mars,Maa,Jupiter' ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "the select offers exactly Kuu, Mars, Maa, Jupiter" },
+  { "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "canvas is 600x400" },
+  { "expr": "(() => { const l=document.querySelector('#sim-root input[type=range]').parentElement.textContent; return /kg/.test(l) ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "the mass slider label carries the unit kg" }
+]

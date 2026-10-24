@@ -71,3 +71,10 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 - Record findings as short pattern notes in this file (for example "typical level-3 task: graph reading plus one calculation"), never as quoted or lightly reworded tasks.
 - Every exercise stays original: new context, new numbers, own wording. CLAUDE.md still forbids copying exam questions.
 - When a pattern changes how a lesson should be written, add the change to the relevant section above and mention it in the commit.
+
+### Exam-style patterns used so far (from general knowledge, not yet checked against the files)
+- A task starts with a context and runs through several parts, from a direct calculation to reasoning.
+- Graph reading and graph-based calculation are common. Applied in fy3-2 (area under the (s,F) graph) and fy3-1 (spring stretch against force).
+- Tasks ask the student to reason with a changed situation ("what does the scale show on Mars?"), not only to plug numbers in. Applied in the level 3 tasks.
+- Units, conversions (g to kg, minutes to seconds) and sensible rounding are part of the grading, so every exercise keeps them.
+- Check these against the real files when `docs/exams/` is filled, and replace this list with verified findings.

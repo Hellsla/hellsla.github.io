@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-1-L1-01",
+      "level": 1,
+      "text": "Kappaleen massa on 4,0 kg. Mikä on sen paino Maassa?",
+      "answer": 39,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-02",
+      "level": 1,
+      "text": "Kivinäytteen massa on 5,0 kg. Mikä on sen paino Kuussa, missä g = 1,62 N/kg?",
+      "answer": 8.1,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-03",
+      "level": 1,
+      "text": "Mars-kulkijan massa on 25 kg. Mikä on sen paino Marsissa, missä g = 3,71 N/kg?",
+      "answer": 93,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-04",
+      "level": 1,
+      "text": "Voimamittarin jousi venyy 3,0 cm, kun siihen ripustetaan 12 N:n paino. Kuinka monta senttimetriä jousi venyy 6,0 N:n painolla?",
+      "answer": 1.5,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-05",
+      "level": 1,
+      "text": "Kappaleen massa on 2,5 kg. Mikä on sen paino Jupiterissa, missä g = 24,8 N/kg?",
+      "answer": 62,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-1-L2-01",
+      "level": 2,
+      "text": "Voimamittari näyttää 49 N, kun siihen ripustetaan kappale Maassa. Mikä on kappaleen massa?",
+      "answer": 5.0,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-02",
+      "level": 2,
+      "text": "Kananmunan massa on 60 g. Mikä on sen paino Maassa newtoneina?",
+      "answer": 0.59,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-03",
+      "level": 2,
+      "text": "Astronautin massa varusteineen on 145 kg. Kuinka paljon pienempi hänen painonsa on Kuussa (g = 1,62 N/kg) kuin Maassa?",
+      "answer": 1190,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-04",
+      "level": 2,
+      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa 0,20 kg:n massa. Kuinka suuri voima venyttää jousta 4,5 cm?",
+      "answer": 5.9,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-1-L3-01",
+      "level": 3,
+      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin (g = 3,71 N/kg). Mitä sama mittari näyttää siellä? Vihje: mikä pysyy samana?",
+      "answer": 6.8,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-02",
+      "level": 3,
+      "text": "Nostaja jaksaa Maassa nostaa korkeintaan 22,0 kg:n massan, eli hän jaksaa tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa (g = 1,62 N/kg) samalla voimalla?",
+      "answer": 133,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-03",
+      "level": 3,
+      "text": "Jousivaaka on kalibroitu Maassa niin, että se näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg. Vaa'alle asetetaan Kuussa (g = 1,62 N/kg) kappale, jonka massa on 6,0 kg. Mitä lukemaa vaaka näyttää kilogrammoina?",
+      "answer": 0.99,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ]
+}

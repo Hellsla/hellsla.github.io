@@ -61,6 +61,42 @@
     "locked": false
   },
   {
+    "term": "massa",
+    "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla toisin kuin paino.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "newton",
+    "definition": "Voiman yksikkö, merkintä N. Noin yksi newton on sadan gramman omenan paino Maassa.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "voima",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "paino",
+    "definition": "Kappaleen paino G on voima, joka kertoo Maan (tai muun taivaankappaleen) ja kappaleen välisen vuorovaikutuksen voimakkuuden. Paino lasketaan kaavalla G = mg ja mitataan newtoneina.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "massa",
+      "voima",
+      "newton"
+    ],
+    "locked": false
+  },
+  {
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
@@ -93,6 +129,31 @@
     "see_also": [
       "energia",
       "teho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voima",
+    "definition": "Voima kertoo kahden kappaleen välisen vuorovaikutuksen voimakkuuden. Voiman yksikkö on newton (N), ja sen voi mitata voimamittarilla.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "vuorovaikutus",
+      "newton",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vuorovaikutus",
+    "definition": "Kahden kappaleen vaikutus toisiinsa, esimerkiksi Maan ja kappaleen välinen vetovoima. Vuorovaikutuksen voimakkuutta mitataan voimalla.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "voima",
+      "paino"
     ],
     "locked": false
   }
