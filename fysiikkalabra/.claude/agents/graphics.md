@@ -13,4 +13,4 @@ Write `sim.js` for p5.js 1.9.x (instance mode, 600×400, loaded by `templates/le
 - No external assets, no network, no randomness unless the spec asks for it.
 - Keep it under 250 lines. Comment the physics, not the p5 calls.
 Static diagrams the lesson needs go into `lesson.md` as inline SVG (viewBox 0 0 600 300, currentColor for strokes).
-Run `python scripts/build.py <id>` and open the result in headless Chromium once to confirm no console errors before you finish.
+Run `python scripts/build.py <id>` (writes `preview/<id>.html`) and open the result in headless Chromium once to confirm no console errors before you finish.

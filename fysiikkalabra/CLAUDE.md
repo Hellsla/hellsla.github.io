@@ -3,7 +3,7 @@
 ## What this repo is
 A static teaching site for Finnish upper-secondary physics and maths (LOPS 2021).
 Content is data: one folder per lesson under `content/<course>/<lesson-id>/`.
-`scripts/build.py` renders folders into `site/`. This repository serves GitHub Pages from its root, so `site/` goes live only once it is committed (see README, "Publishing").
+`scripts/build.py` renders reviewed lessons into `site/`, which is committed and served by GitHub Pages at `hellsla.github.io/fysiikkalabra/site/`. Previews of drafts (`build.py <id>` or `--all`) go to the git-ignored `preview/`.
 
 ## Scope
 - `curriculum.json` is generated from the LOPS 2019 module descriptions; `docs/lops2019/` holds the official text (MAOL module guide with scope clarifications, OPH transversal competences). Grep it when unsure whether something belongs to a module.

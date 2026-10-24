@@ -3,19 +3,23 @@
 Without an argument only lessons with "status": "reviewed" are built (publishing rule).
 With a lesson id that lesson is built regardless of status, for previewing a draft.
 With --all every lesson is built regardless of status (CI uses this to test drafts too).
+The plain build writes to site/ (committed, served by GitHub Pages); a preview or --all build
+writes to preview/ (git-ignored), so a draft can never end up in the published folder.
 """
 import json, sys, re, shutil, pathlib, markdown
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-SITE = ROOT / "site"; SITE.mkdir(exist_ok=True)
+arg = sys.argv[1] if len(sys.argv) > 1 else None
+build_all = arg == "--all"; only = None if build_all else arg
+SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
+for old in SITE.glob("*.html"): old.unlink()          # no stale pages from an earlier build
+for old in SITE.glob("*-sim.js"): old.unlink()
 TPL = ROOT / "templates"
 shutil.copy(TPL / "site.css", SITE / "site.css")
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
 curriculum = json.loads((ROOT / "curriculum.json").read_text())
-arg = sys.argv[1] if len(sys.argv) > 1 else None
-build_all = arg == "--all"; only = None if build_all else arg
 
 
 def render_md(text):
@@ -84,4 +88,4 @@ courses = "".join(f'<li><a href="{c}.html">{c} · {curriculum.get(c, {}).get("ti
 (SITE / "index.html").write_text(page("Fysiikkalabra",
     "<h1>Fysiikkalabra</h1><p>Teoria, simulaatiot ja tehtävät lukion fysiikkaan ja matematiikkaan.</p>"
     f"<ul class=\"courses\">{courses}</ul>", "Fysiikkalabra"))
-print("built index +", ", ".join(built) if built else "no courses")
+print("built index +", ", ".join(built) if built else "no courses", "->", SITE.relative_to(ROOT))

@@ -7,10 +7,10 @@ It lives in the `fysiikkalabra/` folder of the `hellsla.github.io` repository.
 ```bash
 cd fysiikkalabra
 pip install markdown playwright && playwright install chromium
-python scripts/build.py              # builds site/ from reviewed lessons only
-python scripts/build.py fy3-2        # preview one lesson regardless of status
-python scripts/build.py --all        # every lesson, drafts included (what CI runs)
-python scripts/test_sims.py          # Playwright over every built simulation
+python scripts/build.py              # site/ from reviewed lessons only (committed, published)
+python scripts/build.py fy3-2        # preview/fy3-2.html regardless of status (git-ignored)
+python scripts/build.py --all        # preview/ with every lesson, drafts included (what CI runs)
+python scripts/test_sims.py          # Playwright over every built simulation (preview/ if present, else site/)
 python scripts/check_latex.py content/FY3/fy3-2   # KaTeX parse check (uses vendored katex, no npm)
 python scripts/screenshot.py fy3-2   # review/fy3-2-390.png and -1280.png
 claude                               # open Claude Code in this folder
@@ -34,9 +34,10 @@ so pages and headless tests work without a CDN. `.github/workflows/fysiikkalabra
 root) builds all lessons and runs the sim and LaTeX checks on every push that touches this folder.
 
 ## Publishing
-`hellsla.github.io` serves GitHub Pages straight from the repository root, and `site/` is git-ignored,
-so built lessons are not live yet. Two options, to be decided: commit `site/` (served at
-`/fysiikkalabra/site/`), or add a workflow that builds and pushes `site/` on merges to `main`.
+`hellsla.github.io` serves GitHub Pages straight from the repository root, so the committed `site/` folder is
+the live site: `https://hellsla.github.io/fysiikkalabra/site/`. To publish, set a lesson's `status` to
+`reviewed`, run the plain `python scripts/build.py`, and commit `site/`. Drafts never reach `site/`:
+previews and the CI build go to the git-ignored `preview/`.
 
 ## Curriculum and sources
 `curriculum.json` covers FY1–FY8 with module goals, central contents, transversal competences and a proposed
