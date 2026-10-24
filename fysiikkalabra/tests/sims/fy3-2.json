@@ -1,7 +1,93 @@
 [
-  { "expr": "window.simState.W - window.simState.F * window.simState.s", "expected": 0, "tol": 1e-06, "note": "W equals F s with default slider values" },
-  { "expr": "window.simState.P - window.simState.W / window.simState.t", "expected": 0, "tol": 1e-06, "note": "P equals W / t" },
-  { "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=100; r[1].value=10; r[2].value=4;", "expr": "window.simState.W", "expected": 1000, "tol": 0.001, "note": "F=100 N, s=10 m -> W = 1000 J" },
-  { "expr": "window.simState.P", "expected": 250, "tol": 0.001, "note": "with the sliders above, t=4 s -> P = 250 W" },
-  { "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=40; r[1].value=5;", "expr": "window.simState.W", "expected": 200, "tol": 0.001, "note": "F = 40 N, s = 5 m -> W = 200 J" }
+  {
+    "expr": "window.simState.W - window.simState.F * window.simState.s",
+    "expected": 0,
+    "tol": 1e-06,
+    "note": "W equals F s with default slider values"
+  },
+  {
+    "expr": "window.simState.P - window.simState.W / window.simState.t",
+    "expected": 0,
+    "tol": 1e-06,
+    "note": "P equals W / t"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=100; r[1].value=10; r[2].value=4;",
+    "expr": "window.simState.W",
+    "expected": 1000,
+    "tol": 0.001,
+    "note": "F=100 N, s=10 m -> W = 1000 J"
+  },
+  {
+    "expr": "window.simState.P",
+    "expected": 250,
+    "tol": 0.001,
+    "note": "with the sliders above, t=4 s -> P = 250 W"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=40; r[1].value=5;",
+    "expr": "window.simState.W",
+    "expected": 200,
+    "tol": 0.001,
+    "note": "F = 40 N, s = 5 m -> W = 200 J"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=100; r[1].value=20; r[2].value=20;",
+    "expr": "window.simState.W",
+    "expected": 2000,
+    "tol": 0.001,
+    "note": "slider maxima F = 100 N, s = 20 m -> W = 2000 J"
+  },
+  {
+    "expr": "window.simState.P",
+    "expected": 100,
+    "tol": 0.001,
+    "note": "with the maxima above, t = 20 s -> P = 100 W"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0; r[1].value=1; r[2].value=1;",
+    "expr": "window.simState.W + window.simState.P",
+    "expected": 0,
+    "tol": 1e-06,
+    "note": "F = 0 N does no work and gives no power"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=80; r[1].value=12; r[2].value=20; document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));",
+    "expr": "window.simState.Wdone - window.simState.W * window.simState.u",
+    "expected": 0,
+    "tol": 1e-06,
+    "note": "during the Veda animation the work done so far is W * u (area fills linearly)"
+  },
+  {
+    "expr": "window.simState.running && window.simState.u > 0 && window.simState.u < 0.1 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "~0.2 s after pressing Veda with t = 20 s the box is moving and has covered under 10 % of s"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=50; r[1].value=8; r[2].value=1; document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));",
+    "expr": "new Promise(res => setTimeout(() => res(window.simState.u), 1200))",
+    "expected": 1,
+    "tol": 1e-06,
+    "note": "Veda with t = 1 s: u reaches exactly 1 after t seconds (sampled at 1.4 s)"
+  },
+  {
+    "expr": "window.simState.running ? 1 : 0",
+    "expected": 0,
+    "tol": 0,
+    "note": "animation stops once the box has covered s"
+  },
+  {
+    "expr": "window.simState.Wdone",
+    "expected": 400,
+    "tol": 0.001,
+    "note": "after the full pull Wdone = W = 50 N * 8 m = 400 J"
+  },
+  {
+    "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=60; r[1].value=10; r[2].value=2; document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));",
+    "expr": "new Promise(res => setTimeout(() => res(window.simState.u), 800))",
+    "expected": 0.5,
+    "tol": 0.1,
+    "note": "Veda with t = 2 s: after ~1.0 s the box has covered about half of s (u ~ 0.5, 10 % tolerance for frame timing)"
+  }
 ]
