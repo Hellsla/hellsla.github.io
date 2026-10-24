@@ -1,0 +1,23 @@
+{
+  "id": "fy3-2",
+  "course": "FY3",
+  "title": "Työ ja energia",
+  "goals": [
+    "LOPS FY3: mekaaninen työ",
+    "LOPS FY3: syventää ymmärrystään energiasta fysiikan keskeisenä käsitteenä",
+    "Täsmennys: työn laki W = Fs määritellään kokeeseen perustuen (Joulen koe); graafinen integrointi (s,F)-koordinaatistossa"
+  ],
+  "prerequisites": [
+    "fy3-1"
+  ],
+  "glossary": [
+    "työ",
+    "energia",
+    "teho"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "draft",
+  "reviewed_by": "",
+  "reviewed_on": ""
+}

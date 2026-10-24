@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kannat reppua tasaista lattiaa pitkin vakionopeudella. Kuinka suuren työn kannatteleva voimasi tekee reppuun?",
+    "a": "Nolla. Voima osoittaa ylös ja reppu liikkuu sivulle, joten voima ei siirrä reppua omaan suuntaansa."
+  },
+  {
+    "q": "Pyöräilijän nopeus kaksinkertaistuu. Miten liike-energia muuttuu?",
+    "a": "Nelinkertaistuu, koska E_k on verrannollinen nopeuden neliöön."
+  },
+  {
+    "q": "Kaksi hissiä nostaa saman kuorman samalle korkeudelle, toinen kaksi kertaa nopeammin. Kumpi tekee enemmän työtä ja kumman teho on suurempi?",
+    "a": "Työ on sama molemmilla. Nopeamman hissin teho on kaksinkertainen."
+  }
+]

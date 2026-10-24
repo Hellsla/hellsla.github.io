@@ -1,0 +1,468 @@
+LAAJA-ALAINEN
+OSAAMINEN
+FYSIIKASSA
+TUKIMATERIAALI LUKION OPETUS­SUUNNITELMAN PERUSTEISIIN 2019
+Esipuhe
+Tukimateriaaliin on koottu ehdotuksia siitä, miten laaja-alaisen osaamisen eri
+osa-alueet voidaan ottaa huomioon fysiikan eri moduuleissa. Lähtökohtana on
+käytetty Lukion opetussuunnitelman perusteita (2019), jossa määriteltyjen fysiikan
+moduulien tavoitteiden pohjalta on poimittu joitakin laaja-alaisen osaamisen
+osa-alueita, jotka luontevasti liittyvät kyseisen moduulin sisältöihin.
+
+Paikallisten näkökulmien mukaan voidaan päätyä myös toisenlaisiin ratkaisuihin
+eli sisällyttämään opintojaksoihin muita laaja-alaisen osaamisen osa-alueita
+kuin perustetekstissä tai tässä tukimateriaalissa mainittuja. Laajemmissa
+opintojaksoissa myös muiden oppiaineiden moduuleihin liittyvät laaja-alaisen
+osaamisen osa-alueet voivat vaikuttaa opintojakson laaja-alaisen osaamisen
+painotuksiin. Valittaessa opintojaksoihin laaja-alaisen osaamisen osa-alueita
+tulee joka tapauksessa huolehtia, että valinnat tukevat koko lukion tavoitetta
+ottaa kaikki laaja-alaisen osaamisen osa-alueet tasapainoisesti huomioon.
+
+Fysiikka on tutkimuksellinen oppiaine, jossa monitieteinen ja luova osaaminen
+sekä vuorovaikutusosaaminen sisältyvät luontevasti useimpiin moduuleihin,
+erityisesti opiskelun työtapojen ja arviointikeinojen kautta. Kielitietoisuus ja
+rakentavan viestinnän taito kehittyvät kokeellisten havaintojen keräämisessä
+sekä mittaustulosten käsittelemisessä, tulkitsemisessa ja esittämisessä. Toimivan
+kommunikaation edellytyksenä on fysiikan käsitteiden ja fysiikan kielen oikean
+käytön oppiminen. Useissa fysiikan moduuleissa vahvistetaan myös opiskelijoiden
+eettistä ja ympäristöosaamista sekä kykyä ymmärtää asiayhteyksiä ja osallistua
+yhteiskunnalliseen keskusteluun.
+
+Tukimateriaalin esimerkeissä on nostettu esiin ne perusteissa esitetyt moduulin
+tavoitteet, joissa kyseessä oleva laaja-alaisen osaamisen osa-alue erityisesti näkyy.
+Lisäksi esimerkeissä perustellaan osa-alueen ilmenemistä ja havainnollistetaan sen
+toteutumista opetuksessa.
+
+
+
+
+                                                                 FYSIIKAN TUKIMATERIAALI   2
+FY1                    Fysiikka luonnontieteenä
+                       (1 op)
+
+                   Globaali- ja kulttuuriosaaminen
+
+Osa-alueeseen liittyvät                    Fysiikalla on keskeinen merkitys tieteelliseen
+moduulin tavoitteet                        maailmankuvaan nojautuvan kulttuurin
+                                           kehittymisessä. Moduulin aikana vahvistetaan
+• Opiskelija tutustuu fysiikkaan           opiskelijan taitoa hahmottaa, miten
+  systemaattisena, kokeellisuuteen         luonnontieteellinen maailmankuva rakentuu
+  nojautuvana tieteenä.                    kokeellisuuden pohjalta ja millaisia kulttuurisia
+                                           rakenteita tämä edellyttää. Yhtenä esimerkkinä
+• Opiskelija tutustuu aineen rakenteen     tällaisesta rakenteesta on SI-järjestelmä eli
+  ja maailmankaikkeuden mittasuhteisiin.   kansainvälinen yksikköjärjestelmä.
+
+
+
+
+                  Monitieteinen ja luova osaaminen
+
+Osa-alueeseen liittyvät                    Mittaaminen sekä tulosten kerääminen ja
+moduulin tavoitteet                        esittäminen graafisesti tutustuttavat opiskelijan
+                                           erilaisiin tiedonhankinnan ja -esittämisen tapoihin.
+• Opiskelija tutustuu fysiikassa           Samalla opiskelija vahvistaa kykyään arvioida
+  käytettäviin tiedonhankinta-             tiedon luotettavuutta.
+  menetelmiin.
+                                           Oman luonnontieteellisen kokeen suunnittelu
+• Opiskelija osaa suunnitella              harjoittaa luovuutta ja luo useita mahdollisuuksia
+  ja toteuttaa yksinkertaisia              monitieteiselle tutkimukselle. Tämä vahvistaa
+                                           opiskelijan oppimaan oppimisen taitoja ja luo
+  luonnontieteellisiä kokeita.
+                                           valmiuksia jatko-opintoihin.
+
+                                           Moduulin keskeiset sisällöt muodostavat
+                                           yhtenäisen polun yksittäisten mittausten
+                                           keräämisen harjoittelemisesta kokonaisen
+                                           luonnontieteellisen kokeen tuottamiseen.
+                                           Moduulin aikana tulee näin ollen perehdyttyä
+                                           luontevasti fysiikan kokeelliseen rakenteeseen
+                                           kaikilla eri tasoilla.
+
+
+
+
+                                                                    FYSIIKAN TUKIMATERIAALI       3
+FY2                       Fysiikka, ympäristö
+                          ja yhteiskunta (1 op)
+
+                  Yhteiskunnallinen osaaminen
+              sekä eettisyys ja ympäristöosaaminen
+
+Osa-alueisiin liittyvät                  Moduulissa käsitellään energiantuotannon
+moduulin tavoitteet                      vaikutuksia ympäristöön ja ilmastonmuutokseen.
+                                         Tämä auttaa opiskelijaa ymmärtämään, miksi
+• Opiskelija tuntee eri energialajeja    ihmisen toiminta on sovitettava luonnon­
+  ja energiantuotantotapoja.             ympäristöjen kantokykyyn sekä rajallisiin
+                                         luonnon­varoihin ja niiden kestävään käyttöön.
+• Opiskelija osaa vertailla eri          Ymmärryksen pohjalta opiskelija saa valmiuksia
+  energiantuotantotapoihin ja niiden     perustella kantaansa energiantuotantoa koskevassa
+  ympäristövaikutuksiin liittyviä        yhteiskunnallisessa keskustelussa fysiikan avulla.
+  suuruusluokkia.
+                                         Moduulissa voidaan tutustua kansalliseen
+• Opiskelija saa valmiuksia osallistua   energiantuotantoon ja -kulutukseen sekä energian
+  ympäristöä ja teknologiaa koskevaan    käyttöön kotitalouksissa.
+  keskusteluun ja päätöksentekoon
+                                         Yhteiskunnallista keskustelua voi herättää myös
+  kestävän energiatalouden               siten, että opiskelija etsii ajankohtaisia artikkeleita
+  näkökulmasta.                          energiantuotannosta, analysoi ja vertailee niiden
+                                         sisältöä sekä esittää oman näkökulmansa asiasta.
+
+
+
+
+                  Monitieteinen ja luova osaaminen
+
+Osa-alueeseen liittyvät                  Ilmastonmuutokseen liittyvien ongelmien ratkaisu
+moduulin tavoitteet                      edellyttää monitieteistä ja luovaa ajattelua.
+                                         Moduulissa opiskelija harjaantuu ottamaan
+• Opiskelija tuntee eri energialajeja    huomioon monipuolisesti eri näkökulmia
+  ja energiantuotantotapoja.             arvioidessaan ratkaisuja ongelmiin.
+
+• Opiskelija osaa vertailla eri          Energiantuotantoon ja ilmastonmuutokseen
+  energiantuotantotapoihin ja niiden     liittyvää tietoa hankitaan, tulkitaan ja tuotetaan
+  ympäristövaikutuksiin liittyviä        esimerkiksi kirjoitettuna tekstinä, kuvina, videoina,
+                                         taulukoina, kuvaajina ja kaavioina. Samalla
+  suuruusluokkia.
+                                         opiskelija vahvistaa kykyään arvioida tiedon
+                                         luotettavuutta (esim. YO K2020, T6).
+FY3                   Energia ja lämpö (2 op)
+
+
+                 Monitieteinen ja luova osaaminen
+
+Osa-alueeseen liittyvät                    Tieto- ja viestintäteknologisia taitoja käytetään
+moduulin tavoitteet                        muun muassa tiedon etsimiseen, kokeellisten
+                                           havaintojen keräämiseen, mittaustulosten
+• Opiskelija osaa tutkia aineen            käsittelyyn ja tulkitsemiseen, tuotosten
+  termodynaamiseen tilaan ja               laatimiseen ja esittämiseen sekä mallintamiseen
+  olomuodon muutoksiin liittyviä           ja simulointiin. Moduuliin liittyviä tutkimusaiheita
+                                           ovat esimerkiksi absoluuttisen nollapisteen tai
+  ilmiöitä.
+                                           veden ominaishöyrystymislämmön määrittäminen
+• Opiskelija osaa soveltaa                 sekä Boylen lain todentaminen.
+  termodynamiikan käsitteitä
+                                           Keskeisten sisältöjen omaksumisen myötä
+  ja malleja energiantuotannon             opiskelija kehittää kvantitatiivisia taitoja
+  ratkaisujen tarkastelussa                arvioida ja vertailla eri energiantuotantotapoja.
+  ja kestävän tulevaisuuden
+  rakentamisessa.
+
+
+
+
+                 Eettisyys ja ympäristöosaaminen
+
+Osa-alueeseen liittyvät                    Eettisyys ja ympäristöosaaminen vahvistuu,
+moduulin tavoitteet                        kun opiskelija tutustuu tutkimustietoon ja
+                                           käytäntöihin, jotka liittyvät ilmastonmuutoksen
+• Opiskelija osaa soveltaa                 hillitsemiseen (esimerkiksi energiantuotanto,
+  termodynamiikan käsitteitä ja            rakentaminen ja energiankäyttö kodeissa).
+  malleja energiantuotannon ratkaisujen
+                                           Perehtymällä kasvihuoneilmiöön liittyviin
+  tarkastelussa ja kestävän
+                                           fysiikan ilmiöihin ja periaatteisiin opiskelija saa
+  tulevaisuuden rakentamisessa.            valmiuksia ymmärtää, miten ihmisen toiminta
+                                           vaikuttaa ilmakehän lämpenemiseen.
+• Opiskelija tunnistaa energiatasapainon
+  ja lämmönsiirtymisen merkityksen
+  ilmastonmuutoksessa.
+
+
+
+
+                                                                      FYSIIKAN TUKIMATERIAALI     5
+FY4                    Voima ja liike (2 op)
+
+
+                  Monitieteinen ja luova osaaminen
+
+Osa-alueeseen liittyvät                     Tasaista ja tasaisesti kiihtyvää suoraviivaista
+moduulin tavoitteet                         liikettä voidaan tutkia liikeanturin avulla,
+                                            jolloin tieto- ja viestintäteknologiaa käytetään
+• Opiskelija osaa tuottaa ja analysoida     kokeellisten havaintojen keräämiseen sekä
+  graafisia esityksiä mittausaineistosta.   mittaustulosten käsittelyyn ja tulkitsemiseen.
+
+
+
+
+                           Hyvinvointiosaaminen
+
+Osa-alueeseen liittyvät                     Turvallisuusnäkökohtia voidaan tarkastella
+moduulin tavoitteet                         esimerkiksi liikenteessä yhteiskunnan ja
+                                            yksilön näkökulmista. Liikenneturvallisuuden
+• Opiskelija tuntee voimaan ja              kannalta keskeistä on ymmärtää renkaiden ja
+  liikkeeseen liittyviä                     tien välisen kitkan sekä ajonopeuden vaikutus
+  turvallisuusnäkökohtia.                   pysähtymismatkaan. Newtonin lakien avulla on
+                                            mahdollista ymmärtää turvavöiden ja -tyynyn
+                                            merkitys törmäystilanteissa.
+
+
+
+
+                                                                                     Jatkuu
+
+
+
+
+                                                                      FYSIIKAN TUKIMATERIAALI   6
+                          Vuorovaikutusosaaminen
+
+Osa-alueeseen liittyvät                        Kinematiikan ja dynamiikan keskeisten ilmiöiden
+moduulin tavoitteet                            tutkiminen on usein mahdollista vain ryhmätyönä.
+                                               Saatuja tuloksia esittämällä voidaan vahvistaa
+• Opiskelija osaa tutkia kokeellisesti         opiskelijan esiintymistaitoa ja -varmuutta. Siten
+  voimaan ja liikkeeseen liittyviä ilmiöitä.   moduuliin liittyvä kokeellinen työskentely kehittää
+                                               opiskelijan yhteistyö- ja vuorovaikutustaitoja sekä
+• Opiskelija osaa tuottaa ja analysoida        monilukutaitoa.
+  graafisia esityksiä mittausaineistosta.
+                                               Myös liikkeen graafisten esitysten tuottaminen
+                                               ja analysointi ovat luontevaa materiaalia
+                                               ryhmätyöskentelylle. Esimerkiksi liikkeen
+                                               rekonstruoiminen graafisen esityksen pohjalta
+                                               ja rekonstruktion verifioiminen voi olla oiva aihe
+                                               liikkeen opiskelemiseen ryhmissä.
+
+
+
+
+                                                                        FYSIIKAN TUKIMATERIAALI      7
+FY5                     Jaksollinen liike ja aallot
+                        (2 op)
+
+                   Monitieteinen ja luova osaaminen
+
+Osa-alueeseen liittyvät                            Opiskelija voi tutustua tiedonhankintaan ja
+moduulin tavoitteet                                tiedon esittämiseen tieto- ja viestintäteknologian
+                                                   avulla esimerkiksi mittaamalla, analysoimalla ja
+• Opiskelija osaa mallintaa planetaarista          vertailemalla äänten taajuusspektrejä.
+  liikettä ympyräliikkeenä.
+                                                   Mekaaniseen värähtelyyn ja ääneen liittyvissä
+• Opiskelija perehtyy värähtely- ja                tutkimuksissa opiskelija harjaantuu käyttämään
+  aaltoliikkeen perusteisiin tutkimalla            jaksollisen liikkeen fysikaalisia ja matemaattisia
+  mekaanista värähtelyä ja ääntä.                  käsitteitä sekä mallintamaan värähtelyilmiöitä.
+
+• Opiskelija osaa kuvata jaksollista liikettä
+  fysikaalisilla ja matemaattisilla käsitteillä.
+• Opiskelija osaa mallintaa mekaanista
+  värähtelyä ja ääntä jaksollisena
+  liikkeenä.
+
+
+
+
+                             Hyvinvointiosaaminen
+
+Osa-alueeseen liittyvät                            Mekaanisen värähtelyn ja aaltoliikkeen
+moduulin tavoitteet                                keskeisimpiä aihealueita on ääni. Opiskelija
+                                                   tutustuu äänen ominaisuuksiin ja siihen,
+• Opiskelija perehtyy värähtely- ja                miten mekaaninen aaltoliike synnyttää
+  aaltoliikkeen perusteisiin tutkimalla            kuuloaistimuksen. Moduulissa voidaan
+  mekaanista värähtelyä ja ääntä.                  tarkastella äänen fysikaalisten ominaisuuksien
+                                                   yhteyttä kuulovaurioihin. Tämän myötä
+• Opiskelija osaa mallintaa mekaanista             opiskelijan on mahdollista esimerkiksi
+  värähtelyä ja ääntä jaksollisena                 omaksua kestävästi hyvinvointiaan
+                                                   tukevia tapoja kuunnella musiikkia. Äänen
+  liikkeenä.
+                                                   intensiteettitason tarkastelu tuo samaan
+                                                   teemaan myös kvantitatiivista sisältöä.
+
+
+
+
+                                                                            FYSIIKAN TUKIMATERIAALI     8
+FY6                    Sähkö (2 op)
+
+
+                          Vuorovaikutusosaaminen
+
+Osa-alueeseen liittyvät                  Tasavirtapiirien menestyksekäs opiskeleminen
+moduulin tavoitteet                      edellyttää kokeellisten töiden tekemistä usean
+                                         oppitunnin aikana. Nämä työt tehdään tyypillisesti
+• Opiskelija osaa tutkia kokeellisesti   ryhmissä. Fysiikalle ominaisten merkintöjen
+  sähköön liittyviä ilmiöitä ja tehdä    ja esittämistapojen harjoittelu kehittää
+  sähköopin perusmittauksia.             monilukutaitoa ja kielitietoisuutta. Moduulin
+                                         aihepiiri on siten luonteva kohta yhteistyö- ja
+                                         vuorovaikutustaitojen harjaannuttamiseen.
+
+
+
+
+                            Hyvinvointiosaaminen
+
+Osa-alueeseen liittyvät                  Tutkiessaan kokeellisesti sähköön
+moduulin tavoitteet                      liittyviä ilmiöitä ja tehdessään sähköopin
+                                         perusmittauksia opiskelija oppii huomioimaan
+• Opiskelija tuntee sähkölaitteisiin     sähköturvallisuutta. Sisäistäessään
+  ja sähköenergian siirtoon liittyviä    sähköturvallisuuden merkityksen opiskelija
+  turvallisuusnäkökohtia.                ymmärtää, mitkä sähkötyöt voi tehdä itse ja
+                                         mihin tarvitaan ammattilaisen osaamista.
+                                         Tällä turvataan sekä opiskelijan omaa
+                                         että toisten hyvinvointia.
+
+
+
+
+                                                                 FYSIIKAN TUKIMATERIAALI      9
+FY7                       Sähkömagnetismi ja valo
+                          (2 op)
+
+                  Yhteiskunnallinen osaaminen
+              sekä monitieteinen ja luova osaaminen
+
+Osa-alueisiin liittyvät               Keskeisten sisältöjen (generaattori, vaihtovirran
+moduulin tavoitteet                   synty, muuntaja ja energian siirto sähkövirran
+                                      avulla) hallitseminen mahdollistaa sähköenergian
+• Opiskelija ymmärtää sähköenergian   tuotantoon liittyvään yhteiskunnalliseen
+  tuotannon ja siirron fysikaaliset   keskusteluun osallistumisen. Kannan ottamista
+  perusteet ja merkityksen            yhteiskunnallisiin kysymyksiin voidaan harjoitella
+                                      esimerkiksi analysoimalla ja vertailemalla
+  yhteiskunnan toiminnan kannalta.
+                                      sähköenergian tuotantoon ja siirtoon liittyviä
+                                      ajankohtaisia artikkeleita.
+
+                                      Moduulin sisällä voidaan kehittää monilukutaitoa
+                                      esimerkiksi selvittämällä pienryhmissä
+                                      turvallisuusrajoja erilaisille sähkömagneettisille
+                                      säteilyille. Näitä voidaan verrata laskennallisesti
+                                      eri tilanteissa erilaisiin sähkömagneettista säteilyä
+                                      tuottaviin lähteisiin. Näin opiskelija voi vahvistaa
+                                      kykyään arvioida tiedon luotettavuutta.
+
+
+
+
+                           Hyvinvointiosaaminen
+
+Osa-alueeseen liittyvät               Säteilyn vaikutuksista on keskeistä ymmärtää,
+moduulin tavoitteet                   että ne riippuvat säteilyn taajuudesta ja
+                                      intensiteetistä ja ettei kaikki sähkömagneettinen
+• Opiskelija tunnistaa                säteily ole vaarallista.
+  sähkömagneettisen säteilyn
+  lähteitä ja vaikutuksia.            Tuntiessaan sähkömagneettisen säteilyn lähteet
+                                      ja niiden vaikutukset opiskelija oppii toimimaan
+                                      aktiivisesti oman ja toisten hyvinvoinnin ja
+                                      turvallisuuden hyväksi.
+
+
+
+
+                                                               FYSIIKAN TUKIMATERIAALI        10
+FY8                       Aine, säteily ja kvantittuminen
+                          (2 op)
+
+                           Hyvinvointiosaaminen
+
+Osa-alueeseen liittyvät                   Oman ja toisten hyvinvoinnin kannalta opiskelijan
+moduulin tavoitteet                       on tärkeä ymmärtää, miksi ionisoivalla säteilyllä
+                                          on haitallisia vaikutuksia. Moduulissa voidaan
+• Opiskelija tuntee ionisoivan säteilyn   tutustua esimerkiksi siihen, miten ionisoivaa
+  vaikutukset ja tutustuu säteilyn        säteilyä käytetään lääketieteessä sekä
+  turvalliseen käyttöön.                  diagnostisissa että hoitotarkoituksissa. Samalla
+                                          voidaan selvittää, miten näissä toimenpiteissä
+                                          pidetään huolta potilaan ja henkilökunnan
+                                          turvallisuudesta.
+
+
+
+
+                  Yhteiskunnallinen osaaminen
+              sekä eettisyys ja ympäristöosaaminen
+
+Osa-alueisiin liittyvät                   Säteilyn kvantittumisen avulla on mahdollista
+moduulin tavoitteet                       selittää termisen säteilyn absorptio
+                                          kasvihuonekaasuihin ja siten syventää opiskelijan
+• Opiskelija ymmärtää kvantittumiseen     ymmärrystä kasvihuoneilmiöön liittyvistä
+  perustuvan teknologian merkityksen      fysikaalisista mekanismeista.
+  nyky-yhteiskunnassa.
+                                          Keskeisten sisältöjen omaksumisen myötä
+• Opiskelija tuntee ionisoivan säteilyn   opiskelijan on mahdollista osallistua
+  vaikutukset ja tutustuu säteilyn        yhteiskunnalliseen keskusteluun ydinvoimasta ja
+                                          radioaktiivisten lähteiden säteilystä sekä tulkita
+  turvalliseen käyttöön.
+                                          käytyä keskustelua fysiikan näkökulmasta ja
+                                          faktoihin pohjautuen.
+
+
+
+
+                                                                                   Jatkuu
+
+
+
+
+                                                                  FYSIIKAN TUKIMATERIAALI      11
+                   Globaali- ja kulttuuriosaaminen
+
+Osa-alueeseen liittyvät                   Moduulin myötä opiskelijalle syntyy käsitys
+moduulin tavoitteet                       nykyisestä fysiikan tutkimukseen perustuvasta
+                                          tieteellisestä maailmankuvasta globaalina
+• Opiskelija ymmärtää kvantittumiseen     kokonaisuutena.
+  perustuvan teknologian merkityksen
+  nyky-yhteiskunnassa.                    Opiskelija tunnistaa, mitkä merkittävät fysiikan
+                                          kokeet ja teoriat ovat perusteena nyky-
+• Opiskelija tutustuu kvanttifysiikkaan   yhteiskunnan toiminnalle, kulttuuriperinnölle
+  perustuvaan maailmankuvaan              ja ihmisen paikalle maailmankaikkeudessa.
+                                          Samalla vahvistuu opiskelijan käsitys siitä, mihin
+  alkeishiukkasfysiikasta kosmologiaan.
+                                          maailmankuvaa koskeviin kysymyksiin fysiikka
+                                          tieteenä ei vielä vastaa ja mihin se ei koskaan
+                                          vastaa.
+
+
+
+
+                                                                  FYSIIKAN TUKIMATERIAALI      12
+Kuvio 1. Laaja-alaisen osaamisen osa-alueet
+
+
+
+
+                                                      HYVINVOINTI-
+                                                       OSAAMINEN
+
+
+
+                        GLOBAALI- JA                                       VUOROVAIKUTUS-
+                    KULTTUURIOSA AMINEN                                      OSAAMINEN
+
+
+                                                           HY VÄ,
+                                                     TASAPAINOINE N
+                                                      JA SIVIS TYNY T
+                                                         IHMINE N
+
+
+
+                        EETTISYYS JA                                       MONITIETEINEN
+                    YMPÄRISTÖOSA AMINEN                                 JA LUOVA OSAAMINEN
+
+
+                                                   YHTEISKUNNALLINEN
+                                                       OSAAMINEN
+                                              LI                           MA
+                                         KU                                 MU
+                                       KE                                     OP
+                                     HI                                         PS
+                                   GE                                             RA
+                                 FY                                                 RU
+                               FI                                                     SA
+                             ET                                                         TE
+                           EN                                                             UE
+                         BI                                                                 VE
+                    AI                                                                        YH
+
+
+
+
+Laaja-alaisen osaamisen osa-alueiden (kuvio 1)                Lukiokoulutuksen Lops 2019 -perusteissa kuvataan,
+tavoitteisiin pyritään kaikissa lukio-opinnoissa.             miten laaja-alaisen osaamisen osa-alueet sisältyvät
+Laaja-alaisen osaamisen osa-alueet muodostavat                kunkin oppiaineen opintoihin. Oppiaineet lähestyvät
+oppiaineiden yhteiset tavoitteet. Lops 2019                   laaja-alaisen oppimisen kuutta osa-aluetta oman
+-perusteiden valtakunnalliset opinnot on jäsennetty           tiedon- ja tieteenalansa lähtökohdista. Paikallisessa
+moduuleiksi, jotka toimivat raaka-aineina                     opetussuunnitelmassa määritellään, miten
+paikallisesti luotaville opintojaksoille.                     laaja-alaisen osaamisen osa-alueita toteutetaan
+                                                              opintojaksoissa. Laaja-alaisen osaamisen kuvausta
+                                                              voidaan täydentää ja konkretisoida paikallisessa
+                                                              opetussuunnitelmassa kunkin oppiaineen kohdalla
+                                                              sekä jokaisen opintojakson kuvauksessa.
+

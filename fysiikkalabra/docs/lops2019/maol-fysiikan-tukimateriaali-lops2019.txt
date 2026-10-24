@@ -1,0 +1,767 @@
+   Fysiikan
+tukimateriaalia
+  Lukion opetussuunnitelman perusteiden 2019
+    fysiikan moduulien sisältöjen tarkastelua
+
+
+
+
+Matemaattisten Aineiden Opettajien Liitto MAOL ry:n edustajat ja
+   Lukion opetussuunnitelman perusteiden 2019 laadinnassa
+mukana olleen ainetyöryhmän jäsenet ovat yhteistyössä tuottaneet
+     tukimateriaalia perusteissa annettujen ainekohtaisten
+          keskeisten sisältöjen avaamiseksi fysiikassa.
+                                                                                    SISÄLLYS
+
+                 Pakolliset opinnot
+                 FY1 Fysiikka luonnontieteenä .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 7
+                 FY2 Fysiikka, ympäristö ja yhteiskunta . . . . . . . . . . . . . . . . . . . . . 9
+                 Valtakunnalliset valinnaiset opinnot
+                 FY3 Energia ja lämpö . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .11
+                 FY4 Voima ja liike .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 13
+                 FY5 Jaksollinen liike ja aallot.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 15
+                 FY6 Sähkö . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .17
+                 FY7 Sähkömagnetismi ja valo .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 19
+                 FY8 Aine, säteily ja kvantittuminen .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 21
+
+
+
+
+                                                                          Kiitämme tuesta:
+
+
+
+
+This event is supported by the European Commission’s H2020 programme – project Scientix 3 (Grant agreement
+N. 730009), coordinated by European Schoolnet (EUN). The event is the sole responsibility of the organizer and it does
+not represent the opinion of the European Commission (EC) or EUN, and neither the EC or EUN are responsible for any
+use that might be made of information contained.
+JOHDANTO
+T       ämän oppaan tarkoituksena on tarkentaa lukion
+        opetussuunnitelman perusteiden tekstiä kohdis-
+        sa, jotka ovat muuttuneet edellisestä tai on toi-
+saalta esitetty perusteissa lyhyesti. Tukimateriaalin tar-
+koituksena on erityisesti auttaa fysiikan opettajia pai-
+kallisessa opetussuunnitelmatyössä ja opetuksen
+suunnittelussa. Toivomme, että tukimateriaali tukee
+myös oppimateriaalien tekijöitä sekä päättökokeiden
+laatijoita työssään. Tukimateriaali painottuu moduu-
+lien keskeisten sisältöjen avaamiseen. Kaikkia peruste-
+tekstin tavoitteita ja sisältöjä ei ole ollut tarvetta avata.
+
+Opetuksen tulee perustua opetussuunnitelman perus-
+teisiin, jotka ovat opetuksen toteutusta ohjaava mää-
+räys. Opetuksen suunnittelussa on huomioitava myös
+fysiikan opetuksen yleiset tavoitteet, moduulikohtaiset
+tavoitteet sekä laaja-alainen osaaminen. Opetussuun-
+nitelman perusteissa esitettyjen tavoitteiden ja keskeis-
+ten sisältöjen lisäksi opetukseen on mahdollista sisäl-
+lyttää opetusryhmästä ja paikallisista opetussuunnitel-
+man painotuksista riippuen myös muita tavoitteita ja
+sisältöjä.
+Kunkin moduulin kuvauksessa on mainittu muutamia
+temaattisia yhteyksiä, joiden avulla sisältöjä voidaan
+lähestyä. Nämä yhdistävät teemat on tarkoitettu esi-
+merkeiksi käytettäväksi moduulien opetuksessa sekä
+oppiainerajat ylittävien opintojaksojen suunnittelussa.
+Ehdotettuja teemoja ei ole välttämätöntä käsitellä, eikä
+lista rajaa pois muita teemoja.
+
+Moduulien kuvauksissa mainitut kokeelliset tutki-
+mukset keskeisten sisältöjen käsittelyyn ovat vastaa-
+valla tavalla tarkoitettu esimerkeiksi, joita voidaan to-
+teuttaa opetusryhmien kanssa. Kaikkia tutkimuksia ei
+ole välttämättä tarvetta käsitellä ja muidenkin kokei-
+den tekeminen on suotavaa. Tutkimuksellisuuden ei
+aina tarvitse olla varsinaista kokeellista työskentelyä,
+vaan se voi olla myös esimerkiksi videoiden, de-
+monstraatioiden tai simulaatioiden avulla toteutettua.
+
+Fysiikkaa opiskellessa opitaan fysiikan luku- ja kirjoi-
+tustaitoja. Opiskelija harjaantuu tuottamaan suullises-
+ti ja kirjallisesti tekstiä, jossa hän tulkitsee kuva- tai
+mittausaineistoa, selostaa suunnitelman kokeesta tai
+kokeen, kuvaa jotakin ilmiötä tai määrittelee täsmälli-
+sesti tietyn käsitteen. Opiskelija oppii tuottamaan kir-
+jallisesti johdonmukaisen tekstin, jossa hän yhdistelee
+erilaista tietoa ja kuvaa, määrittelee, selostaa, päättelee
+ja perustelee.
+Opetussuunnitelman perusteiden laadinnassa on py-
+ritty keventämään sisältöjä, jotta asioiden sisäistämi-
+seen, pohdintaan, kokeellisuuteen ja sähköisten työka-
+lujen harjoitteluun sekä laaja-alaisen osaamisen tavoit-
+teiden toteuttamiselle olisi aikaa. Moduulien järjestys-
+tä muokattiin vastaamaan luontevammin fysikaalisen
+tietorakenteen kertymistä. Moduulien suoritusjärjes-
+tys ei kuitenkaan ole sidottu. Koulutuksen järjestäjällä
+on mahdollisuus muuttaa moduulien suoritusjärjes-
+tystä sekä moduulin sisäistä asioiden käsittelyjärjestys-
+tä, mutta opetuksessa tulee huomioida, että käsitera-
+kenne säilyy ehjänä. Moduulien sisältökuvaukset ovat
+minimivaatimuksia, ja opettajilla on pedagoginen va-
+paus käsitellä asioita laajemmin ja syvällisemmin ajan-
+käytön sen salliessa.
+
+
+
+      OPPIAINERAJAT YLITTÄVÄT
+           OPINTOJAKSOT
+
+Luonnontieteellisten aineiden kaikille yhteisissä mo-
+duuleissa on pyritty luomaan mahdollisuuksia oppiai-
+nerajat ylittäville opintojaksoille.
+
+Fysiikan moduuleissa FY1 ja FY2, kemian ensimmäi-
+sissä ja biologian moduuleissa 2 ja 3 on luontevia mah-
+dollisuuksia tutustua kokeelliseen työskentelyyn. Mo-
+duulissa FY1 käsitellään suureita ja yksiköitä, joihin
+yhdistyy luontevasti KE1-moduuli.
+Ilmastonmuutos on esillä kaikissa luonnontieteellisis-
+sä aineissa. FY2-moduulin yhtenä keskeisenä sisältönä
+on energiantuotannon vaikutus ympäristöön ja ilmas-
+tonmuutokseen. Myös maantieteen moduulissa GE1
+käsitellään ilmastonmuutoksen mekanismeja. BI3-mo-
+duulissa käsitellään ihmisen vaikutuksia ekosystee-
+meihin ja yhtenä keskeisenä teemana on ilmastonmuu-
+tos.
+                        PAKOLLISET OPINNOT
+
+
+
+                                FY1
+          Fysiikka luonnontieteenä (1 op)
+
+Tavoitteet                                   Moduulien tutkimisen taitoja, TVT-taitoja
+                                             ja matemaattisen osaamisen taitoja on
+Moduulin tavoitteena on, että opiskelija     mainittu moduulissa, jossa taito tulee
+• tutustuu fysiikkaan systemaattisena,       ensimmäisen kerran esille.
+  kokeellisuuteen nojautuvana tieteenä
+• tutustuu aineen rakenteen ja maail-        Tutkimisen taitoja:
+  mankaikkeuden mittasuhteisiin              - mittaaminen, tulosten kerääminen
+• tutustuu fysiikassa käytettäviin           - tulosten esittäminen graafisesti
+  tiedonhankintamenetelmiin                  - mittausmenetelmän ja mittaustulosten
+• osaa suunnitella ja toteuttaa yksin-         luotettavuuden arviointi
+  kertaisia luonnontieteellisiä kokeita      - tutkimuksen suunnittelu ja
+• saa kokemuksia, jotka herättävät ja          toteutus
+  syventävät kiinnostusta fysiikkaa ja       - tutkimuksen dokumentointi
+  sen opiskelua kohtaan.
+                                             TVT-taitoja:
+                                             - suoran sovittaminen ja suoran yhtälön
+                                               tulkinta
+
+                                             Matemaattisen osaamisen taitoja:
+                                             - suoraan verrannollisuus,
+                                               esim. s = vt, v = gt, m = ρV
+                                             - kulmakertoimen määrittäminen
+                                               kuvaajasta
+                                             - suureen ratkaiseminen lineaarisesta
+                                               mallista
+                                             - yksikkömuunnokset
+                                             - merkitsevät numerot
+                                             - kymmenpotenssit ja etuliitteet
+
+
+
+
+                                           –7–
+Keskeiset sisällöt                          Sisältöjen täsmennyksiä:
+
+• suure ja yksikkö sekä SI-järjestelmä      Kokeellisessa työskentelyssä keskeistä on
+• mittaaminen, tulosten kerääminen,         ilmiön pelkistäminen mitattavaksi. Luo-
+  niiden esittäminen graafisesti ja         tettavuuden arviointia voidaan käsitellä
+  luotettavuuden arviointi                  esimerkiksi kokeiden toistettavuuden
+                                            kautta. Virheistä voidaan käsitellä syste-
+                                            maattisen ja satunnaisen virheen lähteitä.
+
+• graafinen malli ja lineaarinen malli      Riippuvuuksia esitetään erilaisilla graafi-
+                                            silla malleilla. Vain lineaarista riippuvuut-
+                                            ta mallinnetaan matemaattisesti.
+
+• yksinkertaisen kokeellisen tutkimuk-      Olennaista on, että opiskelija löytää tapoja
+  sen suunnitteleminen ja toteutus          oman ympäristönsä havainnointiin mit-
+                                            taamisen keinoin.
+
+
+                                            Temaattinen tarkastelu:
+Moduulin keskeisiä sisältöjä voidaan        Liikeilmiöistä esimerkkinä tasainen liike.
+tarkastella esimerkiksi seuraavissa         Putoamiskiihtyvyyttä voidaan käsitellä
+temaattisissa yhteyksissä: liikeilmiöt,     (t,v)-kuvaajan lineaarisena mallina v = gt.
+tiheysmittaukset ja putoamiskiihty-         Kokeellisesti asiaa voi lähestyä tutkimalla
+vyys.                                       eri massaisten kappaleiden putoamisliiket-
+                                            tä.
+
+
+
+
+                                          –8–
+                                FY2
+Fysiikka, ympäristö ja yhteiskunta (1 op)
+
+Tavoitteet                                   Tutkimisen taitoja:
+                                             - lähdemateriaalin käyttö
+Moduulin tavoitteena on, että opiskelija     - kysymysten muodostaminen
+• perehtyy energiaan fysiikan keskei-        - kaavioiden tulkitseminen, esim.
+  senä käsitteenä                              prosessikaavio
+• tuntee eri energialajeja ja energian-
+  tuotantotapoja                             TVT-taitoja:
+• osaa vertailla eri energiantuotanto-       - tiedon haku ja tietolähteiden luotetta-
+  tapoihin ja niiden ympäristövaiku-           vuuden arviointi
+  tuksiin liittyviä suuruusluokkia
+• saa valmiuksia osallistua ympäristöä       Matemaattisen osaamisen taitoja:
+  ja teknologiaa koskevaan keskuste-         - uuden matemaattisen mallin käyttö,
+  luun ja päätöksentekoon kestävän             esim. aineistosta löytyvän yksinkertaisen
+  energiatalouden näkökulmasta.                lain käyttö ohjeen mukaan, mutta ei
+                                               suureen ratkaisemista
+
+
+Keskeiset sisällöt                           Sisältöjen täsmennyksiä:
+
+• energialajit, energian säilyminen ja       Energialajeista esitellään ainakin mekaa-
+  muuntuminen                                ninen energia (potentiaalienergia ja liike-
+                                             energia), säteily, kemiallinen energia ja
+                                             ydinenergia.
+
+                                             Energia kuitenkin esitellään suureena,
+• energian tuotanto, teho, hyötysuhde        jonka yksikkö on joule, mutta energialajeja
+  ja energian siirtäminen                    tarkastellaan ilman kuhunkin energiala-
+                                             jiin liittyviä lausekkeita, kuten Ek = ½mv2 ,
+                                             Ep = mgh jne.
+
+                                             Energian säilyminen ymmärretään tässä
+                                             moduulissa yleispätevänä periaatteena,
+• energiantuotannon vaikutus ympä-           jonka mukaan energiaa ei synny eikä hä-
+  ristöön ja ilmastonmuutokseen              viä.
+
+
+                                           –9–
+                                              Teho esitellään suureena P = ∆E/∆t. Työn
+Moduulin keskeisiä sisältöjä voidaan
+                                              käsitettä ei tässä kurssissa vielä käytetä.
+tarkastella esimerkiksi seuraavissa
+temaattisissa yhteyksissä: kemiallinen
+energia energialähteenä, kansallinen          Hyötysuhde käsitellään
+energiantuotanto ja -kulutus sekä ener-       energian tai tehon avulla
+gian käyttö kotitalouksissa.                  määriteltynä.
+
+                                              Tehon ja hyötysuhteen käsittelyssä paino-
+                                              piste on energian tuotannossa ja hyödyn-
+                                              tämisessä.
+
+                                              Energiantuotantoprosesseissa vapautunut
+                                              energia lasketaan polttoaineiden lämpöar-
+                                              vojen H perusteella käyttäen lakia E = Hm.
+
+                                              Energian siirtämisen tarkastelu voidaan
+                                              rajata sähköenergian ja lämpöenergian
+                                              siirtoon.
+
+                                              Ympäristövaikutusten käsittelyssä voidaan
+                                              vertailla esimerkiksi eri energiantuotanto-
+                                              tapojen vaatimaa maankäyttöä, energian-
+                                              tuotantoon liittyviä kuljetuksia ja hiili-
+                                              dioksidipäästöjä.
+
+
+
+
+                                          – 10 –
+     VALTAKUNNALLISET VALINNAISET OPINNOT
+
+
+
+                                FY3
+                  Energia ja lämpö (2 op)
+Tavoitteet                                 Tutkimisen taitoja:
+                                           - havaintojen tekeminen arkielämän
+Moduulin tavoitteena on, että opiskelija     ilmiöstä ja havaintojen kirjaaminen
+• syventää ymmärrystään energiasta         TVT-taitoja:
+  fysiikan keskeisenä käsitteenä           - graafinen integrointi (s,F)-koordinaatios-
+• osaa tutkia aineen termodynaami-           tossa
+  seen tilaan ja olomuodon muutoksiin      - uuden taulukkosarakkeen laskeminen,
+  liittyviä ilmiöitä                         esim. 1/V tai PΔt
+• osaa soveltaa termodynamiikan kä-        - mittauksen tekeminen tietokoneavustei-
+  sitteitä ja malleja energiantuotannon      sesti
+  ratkaisujen tarkastelussa ja kestävän    - simulaatioiden käyttäminen, esim
+  tulevaisuuden rakentamisessa               kaasun paineen tutkimiseen raken-
+• tunnistaa energiatasapainon ja läm-        neosasten tasolla
+  mönsiirtymisen merkityksen ilmas-
+  tonmuutoksessa.                          Matemaattisen osaamisen taitoja:
+                                           - suoran yhtälö, jossa on vakiotermi
+                                             p = ρgh + p0
+                                           - kääntäen verrannollisuus graafisesti
+                                             p = vakio·1/V
+                                           - ideaalikaasun tilanyhtälöstä suureen
+                                             ratkaiseminen
+                                           - useita termejä sisältävän suureyhtälön
+                                             ratkaiseminen
+
+Keskeiset sisällöt                         Sisältöjen täsmennyksiä:
+
+• voima vuorovaikutuksen voimakkuu-        Voiman tarkastelussa ei ole tarkoitus käsi-
+  den mittana                              tellä voiman merkitystä liiketilan muutok-
+                                           sen aiheuttajana. Esimerkiksi punnukseen
+                                           kohdistuva painovoima ymmärretään
+• mekaaninen työ                           Maan ja ja punnuksen välisen vuorovaiku-
+                                           tuksen voimakkuuden mittana eikä putoa-
+                                           van kappaleen kiihtyvyyden aiheuttajana.
+
+                                       – 11 –
+• termodynaaminen systeemi ja                 Kerrataan voiman mittaaminen voima-
+  tilanmuuttujat                              mittarilla, todetaan massan ja painon yh-
+                                              teys G = mg.
+
+• lämpötila, paine ja hydrostaattinen         Voima voidaan tässä moduulissa käsitellä
+  paine                                       skalaarisuureena, sillä paineen aiheuttama
+                                              voima on aina kohtisuorassa pintaa vas-
+                                              taan. Kuvissa voidaan käyttää voimia ha-
+• energian säilyminen, sisäenergia,           vainnollistavia nuolia.
+  energian siirtyminen ja lämpömäärä          Perustellaan, miten kaasusysteemin läm-
+                                              pötila, paine ja tilavuus liittyvät toisiinsa:
+                                              jos yhtä muutetaan, vähintään toinen
+• aineen lämpeneminen ja jäähtyminen          muista muuttuu myös.
+  sekä olomuodon muutokset
+                                              Kaasulait käsitellään myös erillisinä
+                                              (ideaalikaasun tilanyhtälö).
+• lämpölaajeneminen
+                                              Eri ilmiöiden selittämiseen käytetään mik­
+                                              romallia (lämpötila, olomuodot ja olomuo-
+• kaasujen tilanmuutokset ja ideaali-         don muutokset, lämpölaajeneminen, pai-
+  kaasun tilanyhtälö                          neen aiheuttama voima, sisäenergia).
+
+                                              Energian säilyminen sisältää termodyna-
+                                              miikan (lämpöopin) I pääsäännön sovelta-
+Moduulin keskeisiä sisältöjä voidaan          misen. Muut lämpöopin pääsäännöt eivät
+tarkastella esimerkiksi seuraavissa te-       kuulu keskeisiin sisältöihin.
+maattisissa yhteyksissä: energiantuo-
+tanto, rakentaminen ja energia kotona,        Työn laki W = Fs on tarkoituksenmukaista
+ilmastonmuutos sekä lämpövoimakone.           määritellä perustuen kokeeseen, jossa teh-
+                                              dään mekaanista työtä ja havaitaan synty-
+Keskeisiä sisältöjä voidaan tarkastella       nyt lämpömäärä (ns. Joulen koe).
+esimerkiksi seuraavilla kokeilla: abso-
+luuttisen nollapisteen määrittäminen          Kiertoprosessit eivät kuulu keskeisiin sisäl-
+(ekstrapolointi), veden ominaishöyrys-        töihin.
+tymislämmön määrittäminen ja Boylen           Temaattinen tarkastelu:
+lain todentaminen.                            Ominaishöyrystymislämpö voidaan mää-
+                                              rittää kuumentamalla vettä uppokuumen-
+                                              timella avoimessa kalorimetrissä vaa’an
+                                              päällä.
+
+                                              Lämpövoimakoneiden toimintaa tarkaste-
+                                              lemalla voidaan mallintaa energiantuotan-
+                                              non ratkaisuja ja soveltaa termodynamii-
+                                              kan käsitteitä.
+                                          – 12 –
+                                 FY4
+                      Voima ja liike (2 op)
+Tavoitteet                                     Tutkimisen taitoja:
+                                               - kuvaajan tangentti
+Moduulin tavoitteena on, että opiskelija
+• osaa tutkia kokeellisesti voimaan ja         TVT-taitoja:
+  liikkeeseen liittyviä ilmiöitä               - piirto-ohjelmien tarkoituksenmukainen
+• osaa tuottaa ja analysoida graafisia           käyttö
+  esityksiä mittausaineistosta                 - voimakuvion piirtäminen
+• ymmärtää säilymislakien merkityk-            - toisen asteen polynomin sovittaminen
+  sen fysiikassa                                 mittauspisteisiin
+• tuntee voimaan ja liikkeeseen liitty-
+  viä turvallisuusnäkökohtia.                  Matemaattisen osaamisen taitoja:
+                                               - toisen asteen suureyhtälöiden ratkaise-
+                                                 minen
+                                               - vektorisuureet ja vektorimerkintöjen
+                                                 käyttö
+                                               - suorakulmaisen kolmion trigonometria
+
+
+Keskeiset sisällöt                             Sisältöjen täsmennyksiä:
+
+• tasainen ja tasaisesti kiihtyvä suora-       Säilymislakien merkityksen ymmärtämi-
+  viivainen liike                              seen riittää käsitellä energian ja liikemää-
+                                               rän säilymislait. Kaksiulotteiset törmäyk-
+                                               set eivät kuulu keskeisiin sisältöihin.
+• kappaleiden vuorovaikutus ja voima
+  sekä Newtonin lait                           Kappaleiden vuorovaikutuksessa keskeistä
+                                               on, että vuorovaikutuksen voima on yhtä
+                                               suuri kummankin osapuolen kannalta.
+• voimien yhteisvaikutus, voimakuvio
+  ja liikeyhtälö                               Vaikka keskeisissä sisällöissä mainitaan
+                                               voimista ainoastaan paino- ja kitkavoima,
+                                               muitakin voimia, kuten noste, jännitysvoi-
+• paino ja kitka                               mat, tukivoimat ja väliaineen vastusvoi-
+                                               mat, voidaan käsitellä.
+
+
+
+                                           – 13 –
+• liike-energia, potentiaalienergia ja        Potentiaalienergian käsittelyssä on syytä
+  mekaaninen energia                          korostaa, että painovoimaan liittyvä po-
+                                              tentiaalienergia ei ole ainoa potentiaalie-
+                                              nergian laji. Potentiaalienergia on yleisesti
+                                              mihin tahansa konservatiiviseen voimaan
+• mekaanisen energian säilyminen ja           liittyvä energian laji.
+  mekaniikan energiaperiaate
+                                              Mekaniikan energiaperiaatteella tarkoite-
+                                              taan, että mekaanisen energian muutos on
+• liikemäärä, impulssi, liikemäärän           yhtä suuri kuin ei-konservatiivisten voi-
+  säilyminen ja yksiulotteiset törmäyk        mien tekemä työ. Tämä ei estä työperiaat-
+  set                                         teen esittämistä eli kokonaisvoiman teke-
+                                              mä työ kappaleeseen on yhtä suuri kuin
+                                              kappaleen liike-energian muutos.
+
+                                              Huomaa, että momentti ja kappaleen kier-
+Moduulin keskeisiä sisältöjä voidaan          tyminen käsitellään moduulissa FY5.
+tarkastella esimerkiksi seuraavissa te-
+maattisissa yhteyksissä: vesi- ja tuulivoi-   Temaattinen tarkastelu:
+ma, liikenne sekä urheilu.                    Voimaan ja liikkeeseen liittyviä turvalli-
+                                              suusnäkökohtia voidaan käsitellä esimer-
+Keskeisiä sisältöjä voidaan tarkastella       kiksi liikenneturvallisuuden ja urheilun
+esimerkiksi seuraavilla kokeilla: putoa-      kannalta. Liikenneturvallisuuden kannalta
+miskiihtyvyyden määrittäminen, kitka-         keskeisiä ovat mm. jarrutukseen ja pysäh-
+kertoimen määrittäminen ja kappalee-          tymiseen tarvittavat matka ja aika.
+seen vaikuttavien voimien määrittämi-
+nen.
+
+
+
+
+                                          – 14 –
+                                  FY5
+          Jaksollinen liike ja aallot (2 op)
+
+Tavoitteet                                     TVT-taitoja:
+                                               - sinifunktion sovittaminen
+Moduulin tavoitteena on, että opiskelija       - aaltoilmiöiden mallintaminen
+• osaa mallintaa planetaarista liikettä        - FFT-kuvaajan tekeminen
+  ympyräliikkeenä
+• perehtyy värähtely- ja aaltoliikkeen         Matemaattisen osaamisen taitoja:
+  perusteisiin tutkimalla mekaanista           - logaritmiyhtälön käyttö
+  värähtelyä ja ääntä
+• osaa kuvata jaksollista liikettä fysi-
+  kaalisilla ja matemaattisilla käsitteillä
+• osaa mallintaa mekaanista värähtelyä
+  ja ääntä jaksollisena liikkeenä.
+
+
+Keskeiset sisällöt                             Sisältöjen täsmennyksiä:
+
+• momentti ja kappaleen kiertyminen            Tasapaino kiertymisen suhteen yksinker-
+                                               taisissa tilanteissa voi edellyttää myös voi-
+                                               mien komponentteihin jakoa, kunhan pää-
+• tasapaino kiertymisen suhteen yksin-         paino on fysiikan ymmärtämisessä eikä
+  kertaisissa tilanteissa                      matemaattisessa käsittelyssä.
+
+                                               Pyörimisliike ei kuulu keskeisiin sisältöi-
+• tasainen ympyräliike ja normaali-            hin.
+  kiihtyvyys
+                                               Kulmasuureita ei tarvitse käsitellä ympy-
+                                               räliikkeen yhteydessä.
+• gravitaatiolaki ja planetaarinen liike
+                                               Planetaarista liikettä käsitellään ympyrä-
+                                               liikkeenä, ja planetaariseen liikkeeseen si-
+• jaksollinen liike, jaksonaika, taajuus       sältyvät myös kuiden ja satelliittien liike.
+  ja amplitudi
+
+
+
+
+                                           – 15 –
+• harmoninen voima ja värähtelyliike            Huomaa, että Keplerin lait eivät kuulu kes-
+  sekä harmonisen voiman potentiaali-           keisiin sisältöihin. Gravitaatiokentän voi-
+  energia                                       makkuus ja mekaaninen energia gravitaa-
+                                                tiokentässä eivät kuulu keskeisiin sisältöi-
+                                                hin.
+• mekaanisten aaltojen synty, etenemi-
+  nen ja heijastuminen                          Aaltoliikkeen käsittelyssä valo tulee vasta
+                                                moduulissa FY7.
+
+• mekaanisten aaltojen diffraktio ja            Diffraktiota tarkastellaan esim. tilanteessa,
+  interferenssi sekä seisovat aallot            jossa veden pinta-aallot taipuvat esteen
+                                                vaikutuksesta.
+
+• ääni aaltoliikkeenä, äänen intensi-           Interferenssiä voidaan tarkastella kahden
+  teettitaso, äänen ominaisuudet ja             samassa vaiheessa olevan saman taajuisen
+  eteneminen                                    mekaanisen aaltolähteen lähettämien aal-
+                                                tojen avulla. Nämä aallot voivat olla veden
+                                                pinta-aaltoja (aaltoamme) tai ääniaaltoja.
+Moduulin keskeisiä sisältöjä voidaan
+tarkastella esimerkiksi seuraavissa te-         Esitellään intensiteetti-käsite ja intensiteet-
+maattisissa yhteyksissä: heiluri, soitti-       titaso käsitellään laskennallisesti.
+met, akustiikka ja äänentoisto, melun
+haittavaikutukset ja kuulon suojaami-           Äänen ominaisuuksista käsitellään vähin-
+nen sekä ultraäänikuvaus.                       tään äänenkorkeus ja äänen sointivärin
+                                                muodostava harmoninen sarja.
+Keskeisiä sisältöjä voidaan tarkastella
+esimerkiksi seuraavilla kokeilla: heilu-        Temaattinen tarkastelu:
+rin heilahdusajan määrittäminen, ää-            Temaattisissa yhteyksissä mainittu kuulon
+nen nopeuden määrittäminen ja äänen             suojaaminen ja melun haittavaikutukset
+taajuusanalyysi.                                on tarkoituksenmukaista käsitellä intensi-
+                                                teettitason yhteydessä.
+
+
+
+
+                                            – 16 –
+                                 FY6
+                              Sähkö (2 op)
+
+Tavoitteet                                      TVT-taitoja:
+                                                - kytkentäkaavioiden laatiminen
+Moduulin tavoitteena on, että opiskelija
+• osaa tutkia kokeellisesti sähköön liit-
+  tyviä ilmiöitä ja tehdä sähköopin
+  perusmittauksia
+• osaa käyttää kentän ja potentiaalin
+  käsitteitä sähkökentän kuvaamisessa
+• tuntee sähkölaitteisiin ja sähköener-
+  gian siirtoon liittyviä turvallisuus-
+  näkökohtia.
+
+
+Keskeiset sisällöt                              Sisältöjen täsmennyksiä:
+
+• jännite ja sähkövirta tasavirta-              Moduulin tarkoitus on tutustuttaa opiske-
+  piireissä                                     lijat peruskäsitteisiin, jotka liittyvät säh-
+                                                köiseen vuorovaikutukseen, sähkövirtaan
+                                                ja tasavirtapiireihin, sekä virtapiirien
+• resistanssi ja Ohmin laki                     komponentteihin.
+
+                                                Kondensaattorien kytkennät eivät kuulu
+• sähköteho ja Joulen laki                      keskeisiin sisältöihin.
+
+                                                Kirchhoffin lakien käsittelyssä voidaan
+• vastusten kytkennät ja Kirchhoffin            tarkastella myös haarautuvia virtapiirejä,
+  lait                                          kunhan pääpaino on fysiikan ymmärtä-
+                                                misessä eikä matemaattisessa käsittelyssä.
+
+• akut ja akun latauspiiri
+
+
+
+
+                                            – 17 –
+• Coulombin laki ja homogeeninen              Kondensaattorin yhteydessä käsitellään le-
+  sähkökenttä                                 vykondensaattori rakenne. Eristeaineen
+                                              vaikutusta kondensaattorin kapasitanssiin
+                                              voidaan tutkia kondensaattorin varauksen,
+• potentiaalienergia ja potentiaali ho-       jännitteen ja energian kautta. Eristeaineen
+  mogeenisessa sähkökentässä                  vaikutusta sähkökenttään ei tarvitse käsi-
+                                              tellä mikroskooppisesti.
+
+• kondensaattori ja kondensaattorin           Pistevarauksen sähkökenttä voidaan käsi-
+  energia                                     tellä kvalitatiivisesti.
+
+                                              Puolijohteita käsitellään lähinnä teknisinä
+• puolijohteet, diodi ja LED kompo-           virtapiirin komponentteina esimerkkeinä
+  nentteina virtapiirissä                     fysiikan sovelluksista. Puolijohdemateriaa-
+                                              lien ominaisuudet eivät kuulu keskeisiin
+                                              sisältöihin.
+• sähköturvallisuus: sulake, suojaus-
+  luokitus ja läpilyöntilujuus
+
+
+
+Moduulin keskeisiä sisältöjä voidaan
+tarkastella esimerkiksi seuraavissa te-
+maattisissa yhteyksissä: yksinkertaiset
+sähkölaitteet, aurinkokenno tasajänni-
+telähteenä ja sähköenergian varastoimi-
+nen.
+
+Keskeisiä sisältöjä voidaan tarkastella
+esimerkiksi seuraavilla kokeilla: mit-
+tauksia komponenttien toiminnasta vir-
+tapiirissä ja pariston sisäisen resistans-
+sin kokeellinen määrittäminen.
+
+
+
+
+                                          – 18 –
+                                FY7
+          Sähkömagnetismi ja valo (2 op)
+Tavoitteet                                 TVT-taitoja:
+                                           - piirto-ohjelmien tarkoituksenmukainen
+Moduulin tavoitteena on, että opiskelija     käyttö
+• ymmärtää induktioilmiön keskeisen
+  merkityksen sähkömagnetismissa
+• ymmärtää sähköenergian tuotannon
+  ja siirron fysikaaliset perusteet ja
+  merkityksen yhteiskunnan toiminnan
+  kannalta
+• tunnistaa sähkömagneettisen säteilyn
+  lähteitä ja vaikutuksia
+• ymmärtää valon sähkömagneettisena
+  ilmiönä.
+
+
+Keskeiset sisällöt                         Sisältöjen täsmennyksiä:
+
+• ferromagnetismi ja magneettinen          Sähkömagneettisen säteilyn lähteistä käsi-
+  dipoli                                   tellään kiihtyvässä liikkeessä oleva varattu
+                                           hiukkanen (esimerkiksi antennissa tai rönt-
+                                           genputkessa) ja kuuma kappale. Antenni-
+• magneettinen vuorovaikutus ja            piirien toiminta ei ole keskeinen sisältö.
+  magneettikenttä
+                                           Para- ja diamagneettiset aineet eivät kuulu
+                                           keskeisiin sisältöihin.
+• varatun hiukkasen liike homogeeni-
+  sessa sähkö- ja magneettikentässä        Tarkastellaan käämiä pyörivässä magneet-
+                                           tikentässä tai pyörivää käämiä magneetti-
+                                           kentässä. Induktiolain avulla perustellaan,
+• virtajohtimen magneettikenttä ja         miksi käämiin syntyy sinimuotoinen in-
+  kahden virtajohtimen välinen voima       duktiojännite.
+
+                                           Itseinduktio ei kuulu keskeisiin sisältöihin.
+• sähkömagneettinen induktio, Lenzin
+  laki ja pyörrevirrat
+
+                                       – 19 –
+• generaattori, vaihtovirran synty,             Valon polarisaation käsittelyksi riittää po-
+  muuntaja ja energian siirto sähkö-            larisaatio eristeestä heijastuessa ja polari-
+  virran avulla                                 saattorissa.
+
+                                                Sähkömagneettisen säteilyn spektrillä tar-
+• sähkömagneettinen säteily ja sen              koitetaan asiayhteydestä riippuen joko
+  spektri sekä mustan kappaleen sätei-          sähkömagneettisen säteilyn luokittelua eri
+  lyn spektri                                   lajeihin, tai säteilyn aallonpituusjakaumaa.
+
+                                                Mustaa kappaletta tarkastellaan säteilyn
+• valon heijastuminen, taittuminen ja           lähteenä, jonka spektri riippuu ainoastaan
+  kokonaisheijastuminen                         kappaleen pintalämpötilasta.
+
+                                                Atomitason säteilylähteet ja diskreetit
+• valon interferenssi ja diffraktio             spektrit käsitellään moduulissa FY8.
+
+                                                Interferenssin käsittelyssä tarkastellaan sa-
+• valon polarisaatio kvalitatiivisesti          man taajuisten ja saman vaiheisten lähtei-
+                                                den aiheuttaman interferenssikuvion syn-
+                                                tyä. Interferenssiä voidaan lisäksi tarkas-
+                                                tella ohuissa kalvoissa tapahtuvan interfe-
+Moduulin keskeisiä sisältöjä voidaan            renssi-ilmiön kautta.
+tarkastella esimerkiksi seuraavissa te-
+maattisissa yhteyksissä: hiukkaskiihdy-
+tin, tuulivoima ja optinen tiedonsiirto.
+
+Keskeisiä sisältöjä voidaan tarkastella
+esimerkiksi seuraavilla kokeilla: mag-
+neettivuon tiheyden määritys käämin
+sisällä, valon heijastumisen ja taittumi-
+sen tutkiminen rajapinnassa sekä lase-
+rin aallonpituuden määrittäminen hi-
+lan avulla.
+
+
+
+
+                                            – 20 –
+                                 FY8
+    Aine, säteily ja kvantittuminen (2 op)
+Tavoitteet                                   TVT-taitoja:
+                                             - eksponenttifunktion sovittaminen
+Moduulin tavoitteena on, että opiskelija
+• tuntee ionisoivan säteilyn vaikutukset
+  ja tutustuu säteilyn turvalliseen käyt-
+  töön
+• tutustuu kvanttifysiikkaan perustu-
+  vaan maailmankuvaan alkeishiukkas-
+  fysiikasta kosmologiaan
+• ymmärtää kvantittumiseen perustu-
+  van teknologian merkityksen nyky-
+  yhteiskunnassa.
+
+
+Keskeiset sisällöt                           Sisältöjen täsmennyksiä:
+
+• energian kvantittuminen aineen ja          Energian kvantittumisen käsitteeseen tu-
+  säteilyn vuorovaikutuksessa                tustutaan tarkastelemalla jotakin ilmiötä,
+                                             jossa energian kvantittuminen ilmenee ja
+                                             jonka selittyminen edellyttää kvantittu-
+• fotoni sähkömagneettisen säteilyken-       mista (esimerkiksi valosähköinen ilmiö,
+  tän kvanttina                              yksinkertainen emissio- tai absorbtio­
+                                             spektri kaasussa).
+
+• atomin rakenne, atomin elektronien         Fotonia käsitellään eri mallien kautta: ken-
+  kvanttitilat ja aaltomekaanisen atomi-     tän tilaa kuvaavana käsitteenä, kentän
+  mallin periaate                            kvanttina, kvantti-hiukkasena ja vuoro-
+                                             vaikutuksen välittäjähiukkasena.
+
+• kvantittumiseen perustuva teknolo-         Sähkömagneettisen kentän energia muut-
+  gia: laser ja kvanttirakenteet             tuu kvantittuneesti eli kenttä luovuttaa ja
+                                             ottaa vastaan energiaa määräkokoisina
+                                             energiakvantteina. Sähkömagneettinen
+                                             kenttä voidaan mallintaa koostuvaksi näis-
+                                             tä kvanteista eli fotoneista. Aineen ja säh-
+
+                                         – 21 –
+• atomiytimen rakenne ja muutokset,             kömagneettisen säteilyn vuorovaikutus
+  radioaktiivinen hajoaminen                    voidaan kuvata fotonien ja ainehiukkasten
+                                                välisten vuorovaikutuksien avulla (valo-
+                                                sähköilmiö, Comptonin ilmiö). Myös säh-
+• ydinreaktiot, massan ja energian              kövarattujen hiukkasten keskinäinen säh-
+  ekvivalenssi, ytimen sidosenergia             kömagneettinen vuorovaikutus voidaan
+                                                mallintaa fotonien avulla eli fotonit ovat
+                                                sähkömagneettisen vuorovaikutuksen vä-
+• ydinvoima, fissio ja fuusio                   littäjähiukkasia.
+
+                                                Atomien kvantittuneiden energiatilojen
+• hajoamislaki                                  käsittely on tarkoituksenmukaista perus-
+                                                taa havaintoihin diskreeteistä emissio- ja
+                                                absorptiospektreistä. Energiatilat ymmär-
+• ionisoivan säteilyn lajit ja biologiset       retään elektroniverhon kvantittuneiksi ti-
+  vaikutukset sekä soveltaminen lääke           loiksi ytimen kentässä.
+  tieteessä ja teknologiassa
+                                                Aaltomekaaninen malli esitellään tapana
+                                                kuvata atomin elektronisysteemiä ja siinä
+• hiukkasfysiikan standardimalli                havaittua energiatilojen kvantittumista.
+                                                Aaltomekaanisen atomimallin periaattees-
+                                                sa esitellään elektronien tilat seisovien aal-
+• maailmankaikkeuden kehitys                    tojen kautta ja esitetään seisoville aalloille
+                                                todennäköisyystulkinta. Tässä yhteydessä
+                                                ei ole tarvetta käsitellä de Broglie -aaltoja,
+                                                mutta on syytä selittää kemiassa käytetty-
+Moduulin keskeisiä sisältöjä voidaan            jen orbitaalien yhteys aaltomekaanisen
+tarkastella esimerkiksi seuraavissa te-         mallin todennäköisyysjakautumiin: orbi-
+maattisissa yhteyksissä: säteilyturvalli-       taalilla tarkoitetaan aluetta, jossa todennä-
+suus, säteilyn käyttö lääketieteessä, il-       köisyys ylittää tietyn kynnysarvon.
+mastonmuutos ja kasvihuoneilmiö.
+                                                Ytimen kvantittuneet energiatilat tunnis-
+Keskeisiä sisältöjä voidaan tarkastella         tetaan gammahajoamisen spektrin kautta.
+esimerkiksi seuraavilla kokeilla: spekt-        Tässä on hyvä edetä analogisesti atomin
+rin mittaaminen, spektrin muutoksen             kvantittuneiden tilojen tarkastelun yhtey-
+tarkastelu fluoresenssi-ilmiössä, mit-          dessä tehdyllä tavalla. Keskeistä on ener-
+taukset laser-diodeilla ja moduulin ai-         giaspektrin diskreettisyyden merkitys
+hepiiriin liittyvät simulaatiot.                kvantittumisen tunnistamisessa.
+
+                                                Massa ja energian ekvivalenssia tarkastel-
+                                                laan ydinreaktion yhteydessä ja sidosener-
+                                                giaan liittyen.
+
+                                            – 22 –
+    Ionisoivan säteilyn biologisia vaikutuksia
+    voidaan käsitellä tarkastelemalla fysikaali-
+    sia vaikutuksia (ionisaatio ja energian siir-
+    to).
+
+    Kvanttirakenteilla tarkoitetaan kvantittu-
+    miseen perustuvia nanomittakaavan ra-
+    kenteita. Näitä on tarkoitus käsitellä nyky-
+    aikaisten sovellusten, kuten aurinkoken-
+    nojen ja kvanttitietokoneiden, kautta
+
+    Standardimallista käsitellään perusvuoro-
+    vaikutukset ja perushiukkaset.
+
+    Maailmankaikkeuden kehityksessä käsi-
+    tellään pääpiirteittäin maailmankaikkeu-
+    den kehityskulku alkuräjähdyksestä nyky-
+    hetkeen sekä pimeän aineen ja energian
+    merkitystä maailmankaikkeudessa.
+
+    Laser-diodi-mittauksena voidaan toteuttaa
+    spektrejä vertaileva mittaus käyttäen laser-
+    diodia ja muita valonlähteitä.
+
+
+
+
+– 23 –
+– 24 –
+

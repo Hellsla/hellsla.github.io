@@ -1,0 +1,20 @@
+{
+  "level1": [
+    { "id": "fy3-2-L1-01", "level": 1, "text": "Mopoa työnnetään 25 m matka 80 N voimalla liikkeen suuntaan. Kuinka suuren työn työntävä voima tekee?", "answer": 2.0, "unit": "kJ", "tolerance": 0.05 },
+    { "id": "fy3-2-L1-02", "level": 1, "text": "Kirjahylly (m = 15 kg) nostetaan lattialta 1,2 m korkeudelle. Kuinka paljon hyllyn potentiaalienergia kasvaa?", "answer": 177, "unit": "J", "tolerance": 0.02 },
+    { "id": "fy3-2-L1-03", "level": 1, "text": "Pyöräilijän ja pyörän yhteinen massa on 85 kg ja nopeus 6,0 m/s. Laske liike-energia.", "answer": 1530, "unit": "J", "tolerance": 0.02 },
+    { "id": "fy3-2-L1-04", "level": 1, "text": "Hissin moottori tekee 36 kJ työn 12 s aikana. Mikä on moottorin teho?", "answer": 3.0, "unit": "kW", "tolerance": 0.05 },
+    { "id": "fy3-2-L1-05", "level": 1, "text": "Vesipumpun teho on 1,5 kW. Kuinka suuren työn pumppu tekee 4,0 minuutissa?", "answer": 360, "unit": "kJ", "tolerance": 0.02 }
+  ],
+  "level2": [
+    { "id": "fy3-2-L2-01", "level": 2, "text": "Henkilöauto (m = 1200 kg) kiihdytetään levosta nopeuteen 90 km/h. Kuinka suuren työn kiihdyttävä voima tekee autoon?", "answer": 375, "unit": "kJ", "tolerance": 0.02 },
+    { "id": "fy3-2-L2-02", "level": 2, "text": "Sähkökiukaan teho on 6,0 kW. Kuinka paljon sähköenergiaa kiuas käyttää 45 minuutin lämmityksen aikana? Anna vastaus megajouleina.", "answer": 16.2, "unit": "MJ", "tolerance": 0.02 },
+    { "id": "fy3-2-L2-03", "level": 2, "text": "Nosturi nostaa 850 kg betonielementtiä tasaisella nopeudella. Nosturin teho on 12 kW. Kuinka korkealle elementti nousee 30 s aikana?", "answer": 43.2, "unit": "m", "tolerance": 0.02 },
+    { "id": "fy3-2-L2-04", "level": 2, "text": "Juoksija (m = 62 kg) juoksee portaat ylös 12 sekunnissa. Korkeusero on 15 m. Mikä on juoksijan keskimääräinen teho painovoimaa vastaan?", "answer": 760, "unit": "W", "tolerance": 0.02 }
+  ],
+  "level3": [
+    { "id": "fy3-2-L3-01", "level": 3, "text": "Hiihtäjä (m = 75 kg) laskee levosta mäen, jonka korkeusero on 40 m, ja saavuttaa mäen juurella nopeuden 20 m/s. Kuinka paljon energiaa kitka ja ilmanvastus veivät laskun aikana?", "answer": 14.4, "unit": "kJ", "tolerance": 0.02 },
+    { "id": "fy3-2-L3-02", "level": 3, "text": "Kuorma-auto vetää perävaunua tasaisella nopeudella 80 km/h. Vetovoima on 4,5 kN. Kuinka suuri on vetovoiman teho? Perustele kaava, jota käytät.", "answer": 100, "unit": "kW", "tolerance": 0.02 },
+    { "id": "fy3-2-L3-03", "level": 3, "text": "Mökin aurinkopaneeli tuottaa keskimäärin 180 W tehon. Kuinka monta minuuttia paneelin pitää tuottaa sähköä, jotta energia riittäisi pumppaamaan 1000 kg vettä 50 m korkeammalla olevaan säiliöön? Oleta, että kaikki energia menee veden nostamiseen.", "answer": 45.4, "unit": "min", "tolerance": 0.02 }
+  ]
+}

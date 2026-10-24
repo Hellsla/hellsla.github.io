@@ -1,0 +1,8 @@
+[
+  {
+    "expr": "(window.simState.F-window.simState.f)/window.simState.m - window.simState.a",
+    "expected": 0,
+    "tol": 1e-06,
+    "note": "a equals (F\u2212f)/m"
+  }
+]

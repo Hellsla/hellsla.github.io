@@ -1,0 +1,23 @@
+{
+  "id": "fy4-4",
+  "course": "FY4",
+  "title": "Newtonin toinen laki",
+  "goals": [
+    "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+    "LOPS FY4: liikeyhtälö"
+  ],
+  "prerequisites": [
+    "fy4-2",
+    "fy4-3"
+  ],
+  "glossary": [
+    "voima",
+    "kiihtyvyys",
+    "massa"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "reviewed",
+  "reviewed_by": "",
+  "reviewed_on": ""
+}

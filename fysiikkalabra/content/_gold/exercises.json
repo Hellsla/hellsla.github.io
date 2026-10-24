@@ -1,0 +1,21 @@
+{
+  "level1": [
+    {
+      "id": "fy3-2-L1-01",
+      "text": "Kappaleeseen (m = 4,0 kg) vaikuttaa 12 N kokonaisvoima. Laske kiihtyvyys.",
+      "answer": 3.0,
+      "unit": "m/s²",
+      "tolerance": 0.05
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-2-L2-01",
+      "text": "Kelkkaa (m = 12 kg) vedetään voimalla 30 N. Kitkavoima on 6 N. Laske kiihtyvyys.",
+      "answer": 2.0,
+      "unit": "m/s²",
+      "tolerance": 0.05
+    }
+  ],
+  "level3": []
+}
