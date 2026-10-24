@@ -89,5 +89,29 @@
     "expected": 0.5,
     "tol": 0.1,
     "note": "Veda with t = 2 s: after ~1.0 s the box has covered about half of s (u ~ 0.5, 10 % tolerance for frame timing)"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600x400"
+  },
+  {
+    "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && / N$/.test(l[0]) && / m$/.test(l[1]) && / s$/.test(l[2]) ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "three slider labels carry units N, m, s"
+  },
+  {
+    "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')].map(x=>x.min+'-'+x.max); return r.join()==='0-100,1-20,1-20' ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "slider ranges match spec: F 0-100 N, s 1-20 m, t 1-20 s"
+  },
+  {
+    "expr": "[...document.querySelectorAll('#sim-root button')].filter(b=>b.textContent==='Vedä').length",
+    "expected": 1,
+    "tol": 0,
+    "note": "exactly one Vedä button"
   }
 ]
