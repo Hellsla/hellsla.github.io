@@ -54,7 +54,7 @@ new p5((p) => {
     p.strokeWeight(1); p.textSize(ts(11)); p.textAlign(p.CENTER);
     for (let m = 0; m <= 20; m += 5) { const x = X0 + m * PX_PER_M; p.stroke(150); p.line(x, FLOOR_Y, x, FLOOR_Y + 5); p.noStroke(); p.fill(90); p.text(`${m} m`, x, FLOOR_Y + 5 + ts(13)); }
     const xEnd = X0 + s * PX_PER_M;
-    p.stroke(47, 111, 159); p.drawingContext.setLineDash([4, 4]); p.line(xEnd, FLOOR_Y - 90, xEnd, FLOOR_Y); p.drawingContext.setLineDash([]);
+    p.stroke(26, 77, 46); p.drawingContext.setLineDash([4, 4]); p.line(xEnd, FLOOR_Y - 90, xEnd, FLOOR_Y); p.drawingContext.setLineDash([]);
 
     // box and force arrow (100 N = 50 px, so the tip stays left of the graph even at s = 20 m)
     const bx = X0 + u * s * PX_PER_M, by = FLOOR_Y - BOX;
@@ -66,18 +66,18 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(2); p.noFill();
     p.line(G.x, G.y + G.h, G.x + G.w, G.y + G.h); p.line(G.x, G.y + G.h, G.x, G.y);
     const yF = G.y + G.h - (F / 100) * (G.h - 20), xS = G.x + (s / 20) * (G.w - 20);
-    p.noStroke(); p.fill(47, 111, 159, 90); if (F > 0) p.rect(G.x, yF, (xS - G.x) * u, G.y + G.h - yF);
-    p.stroke(47, 111, 159); p.strokeWeight(3); if (F > 0) p.line(G.x, yF, xS, yF);
+    p.noStroke(); p.fill(26, 77, 46, 90); if (F > 0) p.rect(G.x, yF, (xS - G.x) * u, G.y + G.h - yF);
+    p.stroke(26, 77, 46); p.strokeWeight(3); if (F > 0) p.line(G.x, yF, xS, yF);
     p.strokeWeight(1); p.stroke(150); p.drawingContext.setLineDash([4, 4]); p.line(xS, yF, xS, G.y + G.h); p.drawingContext.setLineDash([]);
     p.noStroke(); p.fill(90); p.textSize(ts(12)); p.textAlign(p.CENTER);
     p.text('s (m)', G.x + G.w - 10, G.y + G.h + ts(30)); p.text(`${fi(s, 1)}`, xS, G.y + G.h + ts(15));
     p.textAlign(p.RIGHT); p.text('F (N)', G.x + ts(20), G.y - 8); p.text(`${F}`, G.x - 6, yF + 4);
-    p.textAlign(p.CENTER); p.fill(47, 111, 159); p.textSize(ts(13)); p.text('W = pinta-ala', G.x + G.w / 2, G.y - 8 - ts(14));
+    p.textAlign(p.CENTER); p.fill(26, 77, 46); p.textSize(ts(13)); p.text('W = pinta-ala', G.x + G.w / 2, G.y - 8 - ts(14));
 
     // progress bar: filled fraction of the total work
     const barX = 20, barY = 330, barW = 560, barH = 16;
     p.noFill(); p.stroke(120); p.strokeWeight(1); p.rect(barX, barY, barW, barH, 4);
-    p.noStroke(); p.fill(47, 111, 159); if (W > 0) p.rect(barX, barY, barW * u, barH, 4);
+    p.noStroke(); p.fill(26, 77, 46); if (W > 0) p.rect(barX, barY, barW * u, barH, 4);
     p.fill(90); p.textSize(ts(12)); p.textAlign(p.LEFT); p.text('0 J', barX, barY + barH + ts(14)); p.textAlign(p.RIGHT); p.text(`${fj(W)} J`, barX + barW, barY + barH + ts(14));
   };
 

@@ -9,6 +9,7 @@ writes to preview/ (git-ignored), so a draft can never end up in the published f
 import json, sys, re, shutil, pathlib, markdown
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+HOME = "../../index.html"                      # the portfolio front page, two levels above site/
 arg = sys.argv[1] if len(sys.argv) > 1 else None
 build_all = arg == "--all"; only = None if build_all else arg
 SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
@@ -40,8 +41,9 @@ def fi(x):
     return str(x).replace(".", ",") if isinstance(x, (int, float)) else str(x)
 
 
-def page(title, body, crumbs):
-    return (page_tpl.replace("{{title}}", title).replace("{{body}}", body).replace("{{crumbs}}", crumbs))
+def page(title, body, crumbs, main_class="reading"):
+    return (page_tpl.replace("{{title}}", title).replace("{{body}}", body).replace("{{crumbs}}", crumbs)
+            .replace("{{main_class}}", main_class).replace("{{home}}", HOME))
 
 
 built = {}   # course -> [meta, ...]
@@ -70,22 +72,57 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
                f'<script src="vendor/p5.min.js"></script><script src="{meta["id"]}-sim.js"></script></section>')
     html = (tpl.replace("{{title}}", meta["title"]).replace("{{course}}", meta["course"])
             .replace("{{lesson_html}}", render_md((folder / "lesson.md").read_text()))
-            .replace("{{sim_block}}", sim).replace("{{exercises_html}}", ex_html).replace("{{exit_html}}", exit_html))
+            .replace("{{sim_block}}", sim).replace("{{exercises_html}}", ex_html).replace("{{exit_html}}", exit_html)
+            .replace("{{home}}", HOME))
     (SITE / f"{meta['id']}.html").write_text(html)
     built.setdefault(meta["course"], []).append(meta)
     print("built", meta["id"], f"({meta.get('status')})")
 
-# Course pages and front page, listing only the lessons built in this run (nav links must resolve).
-for course, lessons in built.items():
-    title = curriculum.get(course, {}).get("title", course)
-    order = {l["id"]: i for i, l in enumerate(curriculum.get(course, {}).get("lessons", []))}
-    lessons.sort(key=lambda m: order.get(m["id"], 999))
-    items = "".join(f'<li><a href="{m["id"]}.html">{m["title"]}</a></li>' for m in lessons)
-    (SITE / f"{course}.html").write_text(page(f"{course} · {title}", f"<h1>{course} · {title}</h1><ol class=\"lessons\">{items}</ol>",
-                                              '<a href="index.html">Fysiikkalabra</a> › ' + course))
-courses = "".join(f'<li><a href="{c}.html">{c} · {curriculum.get(c, {}).get("title", c)}</a> '
-                  f'<span class="count">{len(ls)} oppituntia</span></li>' for c, ls in sorted(built.items()))
-(SITE / "index.html").write_text(page("Fysiikkalabra",
-    "<h1>Fysiikkalabra</h1><p>Teoria, simulaatiot ja tehtävät lukion fysiikkaan ja matematiikkaan.</p>"
-    f"<ul class=\"courses\">{courses}</ul>", "Fysiikkalabra"))
-print("built index +", ", ".join(built) if built else "no courses", "->", SITE.relative_to(ROOT))
+# Course pages and front page. Every module in curriculum.json gets a page; lessons built in this run are
+# links, the rest are listed as "tulossa" so students see the whole course and nav links always resolve.
+import html as _h
+modules = [(k, v) for k, v in curriculum.items() if not k.startswith("_")]
+built_ids = {m["id"] for ms in built.values() for m in ms}
+def esc(s): return _h.escape(s, quote=True)
+
+cards = ""
+for code, mod in modules:
+    slots = mod.get("lessons", [])
+    done = sum(1 for l in slots if l["id"] in built_ids)
+    pct = round(100 * done / len(slots)) if slots else 0
+    kind = "Pakollinen" if mod.get("type") == "pakollinen" else "Valinnainen"
+    state = f"{done} / {len(slots)} oppituntia valmiina" if done else f"{len(slots)} oppituntia suunnitteilla"
+    cards += (f'<a class="card{" live" if done else ""}" href="{code}.html"><span class="code">{code}</span>'
+              f'<span class="ctitle">{esc(mod["title"])}</span><span class="meta">{mod.get("op", "")} op · {kind}</span>'
+              f'<span class="bar" aria-hidden="true"><span style="width:{pct}%"></span></span><span class="state">{state}</span></a>')
+
+    items = ""
+    for l in slots:
+        if l["id"] in built_ids:
+            items += f'<li class="live"><a href="{l["id"]}.html">{esc(l["title"])}</a></li>'
+        else:
+            items += f'<li class="soon"><span>{esc(l["title"])}</span> <span class="count">tulossa</span></li>'
+    goals = "".join(f"<li>{esc(g)}</li>" for g in mod.get("tavoitteet", []))
+    body = (f'<span class="eyebrow">{code} · {mod.get("op", "")} op · {kind}</span><h1>{esc(mod["title"])}</h1>'
+            f'<p class="lead">{done} / {len(slots)} oppituntia valmiina</p>'
+            + (f'<h2>Moduulin tavoitteet</h2><p>Opiskelija</p><ul>{goals}</ul>' if goals else "")
+            + f'<h2>Oppitunnit</h2><ol class="lessons">{items}</ol>')
+    (SITE / f"{code}.html").write_text(page(f"{code} · {mod['title']}", body, f'<a href="index.html">Fysiikkalabra</a> › {code}'))
+
+latest = ""
+for code, mod in modules:                       # most recently planned published lesson of the highest module
+    for l in mod.get("lessons", []):
+        if l["id"] in built_ids: latest = f'<p class="latest">Uusin oppitunti: <a href="{l["id"]}.html">{esc(l["title"])}</a> ({code})</p>'
+total = sum(len(m.get("lessons", [])) for _, m in modules)
+home = (
+    '<section class="hero"><span class="eyebrow">Fysiikka · LOPS 2019 · Simulaatiot</span>'
+    '<h1>Fysiikkalabra</h1>'
+    '<p class="lead">Teoria, simulaatiot ja tehtävät lukion fysiikkaan. Oppitunnit noudattavat lukion opetussuunnitelman perusteita 2019 (LOPS), moduuli kerrallaan.</p>'
+    + latest + '</section>'
+    '<ul class="how"><li><strong>Teoria</strong>lyhyesti ja yksi ajatus kerrallaan, kaavat selitettyinä.</li>'
+    '<li><strong>Simulaatio</strong>jota voit säätää itse ja josta näet laskennan tulokset heti.</li>'
+    '<li><strong>Tehtävät ja lähtölippu</strong>kolmella tasolla, vastaukset avattavissa.</li></ul>'
+    '<h2 id="moduulit">Moduulit</h2>' f'<div class="cards">{cards}</div>'
+    f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
+(SITE / "index.html").write_text(page("Fysiikkalabra", home, "", main_class=""))
+print("built index +", len(modules), "module pages ->", SITE.relative_to(ROOT), f"({len(built_ids)} lessons)")
