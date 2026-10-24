@@ -3,7 +3,8 @@ import sys, pathlib
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-f = ROOT / "site" / f"{sys.argv[1]}.html"
+f = ROOT / "preview" / f"{sys.argv[1]}.html"
+if not f.exists(): f = ROOT / "site" / f"{sys.argv[1]}.html"
 (ROOT / "review").mkdir(exist_ok=True)
 with sync_playwright() as pw:
     b = launch(pw)
