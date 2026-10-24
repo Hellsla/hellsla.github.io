@@ -1,8 +1,7 @@
 [
-  {
-    "expr": "(window.simState.F-window.simState.f)/window.simState.m - window.simState.a",
-    "expected": 0,
-    "tol": 1e-06,
-    "note": "a equals (F\u2212f)/m"
-  }
+  { "expr": "window.simState.W - window.simState.F * window.simState.s", "expected": 0, "tol": 1e-06, "note": "W equals F s with default slider values" },
+  { "expr": "window.simState.P - window.simState.W / window.simState.t", "expected": 0, "tol": 1e-06, "note": "P equals W / t" },
+  { "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=100; r[1].value=10; r[2].value=4;", "expr": "window.simState.W", "expected": 1000, "tol": 0.001, "note": "F=100 N, s=10 m -> W = 1000 J" },
+  { "expr": "window.simState.P", "expected": 250, "tol": 0.001, "note": "with the sliders above, t=4 s -> P = 250 W" },
+  { "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=40; r[1].value=5;", "expr": "window.simState.W", "expected": 200, "tol": 0.001, "note": "F = 40 N, s = 5 m -> W = 200 J" }
 ]

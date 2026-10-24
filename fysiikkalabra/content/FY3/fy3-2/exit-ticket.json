@@ -1,7 +1,7 @@
 [
   {
     "q": "Kannat reppua tasaista lattiaa pitkin vakionopeudella. Kuinka suuren työn kannatteleva voimasi tekee reppuun?",
-    "a": "Nolla. Voima on kohtisuorassa siirtymää vastaan, joten cos α = 0."
+    "a": "Nolla. Voima osoittaa ylös ja reppu liikkuu sivulle, joten voima ei siirrä reppua omaan suuntaansa."
   },
   {
     "q": "Pyöräilijän nopeus kaksinkertaistuu. Miten liike-energia muuttuu?",

@@ -8,11 +8,11 @@ It lives in the `fysiikkalabra/` folder of the `hellsla.github.io` repository.
 cd fysiikkalabra
 pip install markdown playwright && playwright install chromium
 python scripts/build.py              # builds site/ from reviewed lessons only
-python scripts/build.py fy3-1        # preview one lesson regardless of status
+python scripts/build.py fy3-2        # preview one lesson regardless of status
 python scripts/build.py --all        # every lesson, drafts included (what CI runs)
 python scripts/test_sims.py          # Playwright over every built simulation
-python scripts/check_latex.py content/FY3/fy3-1   # KaTeX parse check (uses vendored katex, no npm)
-python scripts/screenshot.py fy3-1   # review/fy3-1-390.png and -1280.png
+python scripts/check_latex.py content/FY3/fy3-2   # KaTeX parse check (uses vendored katex, no npm)
+python scripts/screenshot.py fy3-2   # review/fy3-2-390.png and -1280.png
 claude                               # open Claude Code in this folder
 ```
 If the pip `playwright` version does not match an already installed browser, point the scripts at it:
@@ -21,7 +21,7 @@ If the pip `playwright` version does not match an already installed browser, poi
 Inside Claude Code:
 ```
 /build-lesson fy3-2        # draft one lesson with you, then run producers + reviewers
-/review-lesson fy3-1       # reviewers only, on an existing lesson
+/review-lesson fy3-2       # reviewers only, on an existing lesson
 /daily-news                # one news item (also wired as a scheduled task)
 /weekly-newsletter         # draft this week's newsletter
 ```
@@ -37,6 +37,12 @@ root) builds all lessons and runs the sim and LaTeX checks on every push that to
 `hellsla.github.io` serves GitHub Pages straight from the repository root, and `site/` is git-ignored,
 so built lessons are not live yet. Two options, to be decided: commit `site/` (served at
 `/fysiikkalabra/site/`), or add a workflow that builds and pushes `site/` on merges to `main`.
+
+## Curriculum and sources
+`curriculum.json` covers FY1–FY8 with module goals, central contents, transversal competences and a proposed
+lesson-slot list per module, generated from the LOPS 2019 texts in `docs/lops2019/` (PDF + extracted text).
+The slot list is a proposal: reorder or rename before drafting. The reference lesson in `content/_gold/` is
+`fy4-4` Newtonin toinen laki; the first draft is `content/FY3/fy3-2/` Työ ja energia.
 
 ## Exercise schema
 ```json

@@ -1,14 +1,422 @@
 {
+  "_source": {
+    "modules": "docs/lops2019/maol-fysiikan-tukimateriaali-lops2019.pdf",
+    "laaja_alainen": "docs/lops2019/oph-laaja-alainen-osaaminen-fysiikassa.pdf",
+    "note": "Moduulien tavoitteet ja keskeiset sisällöt on lainattu LOPS 2019 -perusteista MAOL:n tukimateriaalin mukaisesti. Sisältökuvaukset ovat minimivaatimuksia; moduulien ja oppituntien järjestystä saa muuttaa. Oppituntijako (lessons) on ehdotus, jonka opettaja järjestää ja nimeää."
+  },
+  "FY1": {
+    "title": "Fysiikka luonnontieteenä",
+    "op": 1,
+    "type": "pakollinen",
+    "tavoitteet": [
+      "tutustuu fysiikkaan systemaattisena, kokeellisuuteen nojautuvana tieteenä",
+      "tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin",
+      "tutustuu fysiikassa käytettäviin tiedonhankintamenetelmiin",
+      "osaa suunnitella ja toteuttaa yksinkertaisia luonnontieteellisiä kokeita",
+      "saa kokemuksia, jotka herättävät ja syventävät kiinnostusta fysiikkaa ja sen opiskelua kohtaan"
+    ],
+    "keskeiset_sisallot": [
+      "suure ja yksikkö sekä SI-järjestelmä",
+      "mittaaminen, tulosten kerääminen, niiden esittäminen graafisesti ja luotettavuuden arviointi",
+      "graafinen malli ja lineaarinen malli",
+      "yksinkertaisen kokeellisen tutkimuksen suunnitteleminen ja toteutus"
+    ],
+    "temaattiset_yhteydet": [
+      "liikeilmiöt",
+      "tiheysmittaukset",
+      "putoamiskiihtyvyys"
+    ],
+    "laaja_alainen": [
+      "Globaali- ja kulttuuriosaaminen",
+      "Monitieteinen ja luova osaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy1-1",
+        "title": "Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet",
+        "goals": [
+          "LOPS FY1: tutustuu fysiikkaan systemaattisena, kokeellisuuteen nojautuvana tieteenä",
+          "LOPS FY1: tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin"
+        ],
+        "prerequisites": [],
+        "sim": false,
+        "glossary": [
+          "fysiikka",
+          "malli",
+          "kymmenpotenssi",
+          "suuruusluokka"
+        ]
+      },
+      {
+        "id": "fy1-2",
+        "title": "Suureet, yksiköt ja SI-järjestelmä",
+        "goals": [
+          "LOPS FY1: suure ja yksikkö sekä SI-järjestelmä",
+          "Taidot: yksikkömuunnokset, merkitsevät numerot, kymmenpotenssit ja etuliitteet"
+        ],
+        "prerequisites": [
+          "fy1-1"
+        ],
+        "sim": false,
+        "glossary": [
+          "suure",
+          "yksikkö",
+          "SI-järjestelmä",
+          "etuliite",
+          "merkitsevä numero"
+        ]
+      },
+      {
+        "id": "fy1-3",
+        "title": "Mittaaminen ja mittauksen luotettavuus",
+        "goals": [
+          "LOPS FY1: mittaaminen, tulosten kerääminen ja luotettavuuden arviointi",
+          "Täsmennys: systemaattisen ja satunnaisen virheen lähteet, kokeiden toistettavuus"
+        ],
+        "prerequisites": [
+          "fy1-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "mittaus",
+          "mittausvirhe",
+          "systemaattinen virhe",
+          "satunnaisvirhe",
+          "toistettavuus"
+        ]
+      },
+      {
+        "id": "fy1-4",
+        "title": "Graafinen esitys ja suoran sovittaminen",
+        "goals": [
+          "LOPS FY1: tulosten esittäminen graafisesti",
+          "LOPS FY1: graafinen malli ja lineaarinen malli",
+          "Taidot: suoran sovittaminen ja suoran yhtälön tulkinta, kulmakertoimen määrittäminen kuvaajasta"
+        ],
+        "prerequisites": [
+          "fy1-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "kuvaaja",
+          "lineaarinen malli",
+          "kulmakerroin",
+          "suoran sovitus"
+        ]
+      },
+      {
+        "id": "fy1-5",
+        "title": "Tasainen liike: s = vt",
+        "goals": [
+          "LOPS FY1: graafinen malli ja lineaarinen malli",
+          "Temaattinen tarkastelu: liikeilmiöistä esimerkkinä tasainen liike",
+          "Taidot: suoraan verrannollisuus, esim. s = vt"
+        ],
+        "prerequisites": [
+          "fy1-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "tasainen liike",
+          "nopeus",
+          "paikka",
+          "matka",
+          "suoraan verrannollisuus"
+        ]
+      },
+      {
+        "id": "fy1-6",
+        "title": "Putoamiskiihtyvyys: v = gt",
+        "goals": [
+          "Temaattinen tarkastelu: putoamiskiihtyvyyttä voidaan käsitellä (t,v)-kuvaajan lineaarisena mallina v = gt",
+          "Kokeellisesti: eri massaisten kappaleiden putoamisliike"
+        ],
+        "prerequisites": [
+          "fy1-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "putoamiskiihtyvyys",
+          "kiihtyvyys",
+          "vapaa pudotus"
+        ]
+      },
+      {
+        "id": "fy1-7",
+        "title": "Tiheys: m = ρV",
+        "goals": [
+          "Temaattinen tarkastelu: tiheysmittaukset",
+          "Taidot: suoraan verrannollisuus, esim. m = ρV; suureen ratkaiseminen lineaarisesta mallista"
+        ],
+        "prerequisites": [
+          "fy1-4"
+        ],
+        "sim": false,
+        "glossary": [
+          "tiheys",
+          "massa",
+          "tilavuus"
+        ]
+      },
+      {
+        "id": "fy1-8",
+        "title": "Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi",
+        "goals": [
+          "LOPS FY1: yksinkertaisen kokeellisen tutkimuksen suunnitteleminen ja toteutus",
+          "LOPS FY1: osaa suunnitella ja toteuttaa yksinkertaisia luonnontieteellisiä kokeita",
+          "Taidot: tutkimuksen suunnittelu, toteutus ja dokumentointi"
+        ],
+        "prerequisites": [
+          "fy1-3",
+          "fy1-4"
+        ],
+        "sim": false,
+        "glossary": [
+          "tutkimus",
+          "hypoteesi",
+          "muuttuja",
+          "mittauspöytäkirja",
+          "raportti"
+        ]
+      }
+    ]
+  },
+  "FY2": {
+    "title": "Fysiikka, ympäristö ja yhteiskunta",
+    "op": 1,
+    "type": "pakollinen",
+    "tavoitteet": [
+      "perehtyy energiaan fysiikan keskeisenä käsitteenä",
+      "tuntee eri energialajeja ja energiantuotantotapoja",
+      "osaa vertailla eri energiantuotantotapoihin ja niiden ympäristövaikutuksiin liittyviä suuruusluokkia",
+      "saa valmiuksia osallistua ympäristöä ja teknologiaa koskevaan keskusteluun ja päätöksentekoon kestävän energiatalouden näkökulmasta"
+    ],
+    "keskeiset_sisallot": [
+      "energialajit, energian säilyminen ja muuntuminen",
+      "energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
+      "energiantuotannon vaikutus ympäristöön ja ilmastonmuutokseen"
+    ],
+    "temaattiset_yhteydet": [
+      "kemiallinen energia energialähteenä",
+      "kansallinen energiantuotanto ja -kulutus",
+      "energian käyttö kotitalouksissa"
+    ],
+    "laaja_alainen": [
+      "Yhteiskunnallinen osaaminen",
+      "Eettisyys ja ympäristöosaaminen",
+      "Monitieteinen ja luova osaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy2-1",
+        "title": "Energialajit ja energian säilyminen",
+        "goals": [
+          "LOPS FY2: energialajit, energian säilyminen ja muuntuminen",
+          "Täsmennys: ainakin mekaaninen energia (potentiaali- ja liike-energia), säteily, kemiallinen energia ja ydinenergia; energian säilyminen yleispätevänä periaatteena"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "energia",
+          "energialaji",
+          "liike-energia",
+          "potentiaalienergia",
+          "energian säilyminen"
+        ]
+      },
+      {
+        "id": "fy2-2",
+        "title": "Energian muuntuminen ja yksikkö joule",
+        "goals": [
+          "LOPS FY2: energialajit, energian säilyminen ja muuntuminen",
+          "Täsmennys: energia esitellään suureena, jonka yksikkö on joule; energialajeihin liittyvät lausekkeet kuten E_k = ½mv² ja E_p = mgh"
+        ],
+        "prerequisites": [
+          "fy2-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "joule",
+          "mekaaninen energia",
+          "lämpöenergia",
+          "kemiallinen energia"
+        ]
+      },
+      {
+        "id": "fy2-3",
+        "title": "Teho P = ΔE/Δt",
+        "goals": [
+          "LOPS FY2: energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
+          "Täsmennys: teho esitellään suureena P = ΔE/Δt; työn käsitettä ei tässä moduulissa vielä käytetä"
+        ],
+        "prerequisites": [
+          "fy2-2"
+        ],
+        "sim": false,
+        "glossary": [
+          "teho",
+          "watti",
+          "kilowattitunti"
+        ]
+      },
+      {
+        "id": "fy2-4",
+        "title": "Hyötysuhde",
+        "goals": [
+          "LOPS FY2: energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
+          "Täsmennys: hyötysuhde käsitellään energian tai tehon avulla määriteltynä, η = E_a/E_o = P_a/P_o"
+        ],
+        "prerequisites": [
+          "fy2-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "hyötysuhde",
+          "hyötyenergia",
+          "häviöt"
+        ]
+      },
+      {
+        "id": "fy2-5",
+        "title": "Polttoaineet ja lämpöarvo E = Hm",
+        "goals": [
+          "Temaattinen tarkastelu: kemiallinen energia energialähteenä",
+          "Täsmennys: energiantuotantoprosesseissa vapautunut energia lasketaan polttoaineiden lämpöarvojen H perusteella käyttäen lakia E = Hm"
+        ],
+        "prerequisites": [
+          "fy2-2"
+        ],
+        "sim": false,
+        "glossary": [
+          "lämpöarvo",
+          "polttoaine",
+          "kemiallinen energia"
+        ]
+      },
+      {
+        "id": "fy2-6",
+        "title": "Energiantuotantotavat ja niiden vertailu",
+        "goals": [
+          "LOPS FY2: tuntee eri energialajeja ja energiantuotantotapoja",
+          "LOPS FY2: osaa vertailla eri energiantuotantotapoihin ja niiden ympäristövaikutuksiin liittyviä suuruusluokkia",
+          "Temaattinen tarkastelu: kansallinen energiantuotanto ja -kulutus"
+        ],
+        "prerequisites": [
+          "fy2-4",
+          "fy2-5"
+        ],
+        "sim": false,
+        "glossary": [
+          "energiantuotanto",
+          "uusiutuva energia",
+          "ydinvoima",
+          "vesivoima",
+          "tuulivoima",
+          "aurinkoenergia"
+        ]
+      },
+      {
+        "id": "fy2-7",
+        "title": "Energian siirtäminen: sähkö ja lämpö",
+        "goals": [
+          "LOPS FY2: energian siirtäminen",
+          "Täsmennys: energian siirtämisen tarkastelu voidaan rajata sähköenergian ja lämpöenergian siirtoon"
+        ],
+        "prerequisites": [
+          "fy2-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "sähköenergia",
+          "kaukolämpö",
+          "sähköverkko",
+          "siirtohäviö"
+        ]
+      },
+      {
+        "id": "fy2-8",
+        "title": "Energiantuotanto, ympäristö ja ilmastonmuutos",
+        "goals": [
+          "LOPS FY2: energiantuotannon vaikutus ympäristöön ja ilmastonmuutokseen",
+          "LOPS FY2: saa valmiuksia osallistua ympäristöä ja teknologiaa koskevaan keskusteluun ja päätöksentekoon kestävän energiatalouden näkökulmasta",
+          "Täsmennys: maankäyttö, kuljetukset ja hiilidioksidipäästöt eri tuotantotavoissa"
+        ],
+        "prerequisites": [
+          "fy2-6"
+        ],
+        "sim": false,
+        "glossary": [
+          "kasvihuoneilmiö",
+          "hiilidioksidipäästö",
+          "ilmastonmuutos",
+          "kestävä energiatalous"
+        ]
+      }
+    ]
+  },
   "FY3": {
     "title": "Energia ja lämpö",
+    "op": 2,
+    "type": "valtakunnallinen valinnainen",
+    "tavoitteet": [
+      "syventää ymmärrystään energiasta fysiikan keskeisenä käsitteenä",
+      "osaa tutkia aineen termodynaamiseen tilaan ja olomuodon muutoksiin liittyviä ilmiöitä",
+      "osaa soveltaa termodynamiikan käsitteitä ja malleja energiantuotannon ratkaisujen tarkastelussa ja kestävän tulevaisuuden rakentamisessa",
+      "tunnistaa energiatasapainon ja lämmönsiirtymisen merkityksen ilmastonmuutoksessa"
+    ],
+    "keskeiset_sisallot": [
+      "voima vuorovaikutuksen voimakkuuden mittana",
+      "mekaaninen työ",
+      "termodynaaminen systeemi ja tilanmuuttujat",
+      "lämpötila, paine ja hydrostaattinen paine",
+      "energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+      "aineen lämpeneminen ja jäähtyminen sekä olomuodon muutokset",
+      "lämpölaajeneminen",
+      "kaasujen tilanmuutokset ja ideaalikaasun tilanyhtälö"
+    ],
+    "temaattiset_yhteydet": [
+      "energiantuotanto",
+      "rakentaminen ja energia kotona",
+      "ilmastonmuutos sekä lämpövoimakone"
+    ],
+    "kokeet": [
+      "absoluuttisen nollapisteen määrittäminen (ekstrapolointi)",
+      "veden ominaishöyrystymislämmön määrittäminen",
+      "Boylen lain todentaminen"
+    ],
+    "laaja_alainen": [
+      "Monitieteinen ja luova osaaminen",
+      "Eettisyys ja ympäristöosaaminen"
+    ],
     "lessons": [
       {
         "id": "fy3-1",
-        "title": "Työ ja energia",
+        "title": "Voima vuorovaikutuksen mittana ja paino G = mg",
         "goals": [
-          "LOPS FY3: työn ja energian käsitteet"
+          "LOPS FY3: voima vuorovaikutuksen voimakkuuden mittana",
+          "Täsmennys: kerrataan voiman mittaaminen voimamittarilla ja todetaan massan ja painon yhteys G = mg; voimaa ei käsitellä liiketilan muutoksen aiheuttajana"
         ],
         "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "voima",
+          "vuorovaikutus",
+          "paino",
+          "massa",
+          "newton"
+        ]
+      },
+      {
+        "id": "fy3-2",
+        "title": "Työ ja energia",
+        "goals": [
+          "LOPS FY3: mekaaninen työ",
+          "LOPS FY3: syventää ymmärrystään energiasta fysiikan keskeisenä käsitteenä",
+          "Täsmennys: työn laki W = Fs määritellään kokeeseen perustuen (Joulen koe); graafinen integrointi (s,F)-koordinaatistossa"
+        ],
+        "prerequisites": [
+          "fy3-1"
+        ],
         "sim": true,
         "glossary": [
           "työ",
@@ -17,19 +425,1502 @@
         ]
       },
       {
-        "id": "fy3-2",
-        "title": "Newtonin toinen laki",
+        "id": "fy3-3",
+        "title": "Termodynaaminen systeemi, tilanmuuttujat ja lämpötila",
         "goals": [
-          "LOPS FY3: soveltaa Newtonin lakeja"
+          "LOPS FY3: termodynaaminen systeemi ja tilanmuuttujat",
+          "LOPS FY3: lämpötila",
+          "Täsmennys: kaasusysteemin lämpötila, paine ja tilavuus liittyvät toisiinsa; mikromalli lämpötilalle; kelvinasteikko ja absoluuttinen nollapiste"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "systeemi",
+          "tilanmuuttuja",
+          "lämpötila",
+          "kelvin",
+          "absoluuttinen nollapiste"
+        ]
+      },
+      {
+        "id": "fy3-4",
+        "title": "Paine ja hydrostaattinen paine",
+        "goals": [
+          "LOPS FY3: lämpötila, paine ja hydrostaattinen paine",
+          "Taidot: suoran yhtälö, jossa on vakiotermi, p = ρgh + p₀",
+          "Täsmennys: voima voidaan käsitellä skalaarisuureena, sillä paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan"
         ],
         "prerequisites": [
-          "fy3-1"
+          "fy3-1",
+          "fy3-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "paine",
+          "pascal",
+          "hydrostaattinen paine",
+          "ilmanpaine",
+          "noste"
+        ]
+      },
+      {
+        "id": "fy3-5",
+        "title": "Sisäenergia, lämpömäärä ja energian säilyminen",
+        "goals": [
+          "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+          "Täsmennys: energian säilyminen sisältää termodynamiikan ensimmäisen pääsäännön; muut pääsäännöt eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy3-2",
+          "fy3-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "sisäenergia",
+          "lämpömäärä",
+          "lämpö",
+          "termodynamiikan ensimmäinen pääsääntö"
+        ]
+      },
+      {
+        "id": "fy3-6",
+        "title": "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT",
+        "goals": [
+          "LOPS FY3: aineen lämpeneminen ja jäähtyminen",
+          "Kokeellisesti: kalorimetrinen mittaus",
+          "Taidot: useita termejä sisältävän suureyhtälön ratkaiseminen"
+        ],
+        "prerequisites": [
+          "fy3-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "ominaislämpökapasiteetti",
+          "lämpökapasiteetti",
+          "kalorimetri",
+          "lämpötasapaino"
+        ]
+      },
+      {
+        "id": "fy3-7",
+        "title": "Olomuodon muutokset",
+        "goals": [
+          "LOPS FY3: olomuodon muutokset",
+          "Temaattinen tarkastelu: ominaishöyrystymislämpö voidaan määrittää kuumentamalla vettä uppokuumentimella avoimessa kalorimetrissä vaa'an päällä",
+          "Täsmennys: mikromalli olomuodoille ja niiden muutoksille"
+        ],
+        "prerequisites": [
+          "fy3-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "olomuoto",
+          "sulamislämpö",
+          "höyrystymislämpö",
+          "lämpenemiskäyrä",
+          "faasikaavio"
+        ]
+      },
+      {
+        "id": "fy3-8",
+        "title": "Lämpölaajeneminen",
+        "goals": [
+          "LOPS FY3: lämpölaajeneminen",
+          "Täsmennys: mikromalli lämpölaajenemiselle; kiinteät aineet, nesteet ja kaasut"
+        ],
+        "prerequisites": [
+          "fy3-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "lämpölaajeneminen",
+          "pituuden lämpötilakerroin",
+          "tilavuuden lämpötilakerroin"
+        ]
+      },
+      {
+        "id": "fy3-9",
+        "title": "Kaasujen tilanmuutokset ja Boylen laki",
+        "goals": [
+          "LOPS FY3: kaasujen tilanmuutokset",
+          "Kokeellisesti: Boylen lain todentaminen",
+          "Taidot: kääntäen verrannollisuus graafisesti p = vakio·1/V; uuden taulukkosarakkeen laskeminen, esim. 1/V"
+        ],
+        "prerequisites": [
+          "fy3-4",
+          "fy3-8"
+        ],
+        "sim": true,
+        "glossary": [
+          "isoterminen",
+          "isobaarinen",
+          "isokoorinen",
+          "Boylen laki",
+          "tilanmuutos"
+        ]
+      },
+      {
+        "id": "fy3-10",
+        "title": "Ideaalikaasun tilanyhtälö pV = nRT",
+        "goals": [
+          "LOPS FY3: ideaalikaasun tilanyhtälö",
+          "Taidot: ideaalikaasun tilanyhtälöstä suureen ratkaiseminen",
+          "Täsmennys: kaasulait käsitellään myös erillisinä; simulaatiot kaasun paineen tutkimiseen rakenneosasten tasolla"
+        ],
+        "prerequisites": [
+          "fy3-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "ideaalikaasu",
+          "tilanyhtälö",
+          "ainemäärä",
+          "mooli",
+          "moolinen kaasuvakio"
+        ]
+      },
+      {
+        "id": "fy3-11",
+        "title": "Kaasun tekemä työ ja lämpövoimakone",
+        "goals": [
+          "LOPS FY3: osaa soveltaa termodynamiikan käsitteitä ja malleja energiantuotannon ratkaisujen tarkastelussa",
+          "Temaattinen tarkastelu: lämpövoimakoneiden toimintaa tarkastelemalla voidaan mallintaa energiantuotannon ratkaisuja ja soveltaa termodynamiikan käsitteitä; kiertoprosessit eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy3-5",
+          "fy3-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "lämpövoimakone",
+          "hyötysuhde",
+          "kaasun tekemä työ",
+          "jäähdytyskone"
+        ]
+      },
+      {
+        "id": "fy3-12",
+        "title": "Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos",
+        "goals": [
+          "LOPS FY3: tunnistaa energiatasapainon ja lämmönsiirtymisen merkityksen ilmastonmuutoksessa",
+          "Temaattinen tarkastelu: rakentaminen ja energia kotona, ilmastonmuutos",
+          "Laaja-alainen: eettisyys ja ympäristöosaaminen, kasvihuoneilmiön fysiikka"
+        ],
+        "prerequisites": [
+          "fy3-5"
+        ],
+        "sim": false,
+        "glossary": [
+          "johtuminen",
+          "konvektio",
+          "lämpösäteily",
+          "energiatasapaino",
+          "kasvihuoneilmiö"
+        ]
+      }
+    ]
+  },
+  "FY4": {
+    "title": "Voima ja liike",
+    "op": 2,
+    "type": "valtakunnallinen valinnainen",
+    "tavoitteet": [
+      "osaa tutkia kokeellisesti voimaan ja liikkeeseen liittyviä ilmiöitä",
+      "osaa tuottaa ja analysoida graafisia esityksiä mittausaineistosta",
+      "ymmärtää säilymislakien merkityksen fysiikassa",
+      "tuntee voimaan ja liikkeeseen liittyviä turvallisuusnäkökohtia"
+    ],
+    "keskeiset_sisallot": [
+      "tasainen ja tasaisesti kiihtyvä suoraviivainen liike",
+      "kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+      "voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
+      "paino ja kitka",
+      "liike-energia, potentiaalienergia ja mekaaninen energia",
+      "mekaanisen energian säilyminen ja mekaniikan energiaperiaate",
+      "liikemäärä, impulssi, liikemäärän säilyminen ja yksiulotteiset törmäykset"
+    ],
+    "temaattiset_yhteydet": [
+      "vesi- ja tuulivoima",
+      "liikenne",
+      "urheilu"
+    ],
+    "kokeet": [
+      "putoamiskiihtyvyyden määrittäminen",
+      "kitkakertoimen määrittäminen",
+      "kappaleeseen vaikuttavien voimien määrittäminen"
+    ],
+    "laaja_alainen": [
+      "Monitieteinen ja luova osaaminen",
+      "Hyvinvointiosaaminen",
+      "Vuorovaikutusosaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy4-1",
+        "title": "Paikka, nopeus ja tasainen liike kuvaajina",
+        "goals": [
+          "LOPS FY4: tasainen suoraviivainen liike",
+          "LOPS FY4: osaa tuottaa ja analysoida graafisia esityksiä mittausaineistosta",
+          "Taidot: vektorisuureet ja vektorimerkintöjen käyttö"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "paikka",
+          "siirtymä",
+          "nopeus",
+          "keskinopeus",
+          "(t,x)-kuvaaja"
+        ]
+      },
+      {
+        "id": "fy4-2",
+        "title": "Kiihtyvyys ja tasaisesti kiihtyvä liike",
+        "goals": [
+          "LOPS FY4: tasaisesti kiihtyvä suoraviivainen liike",
+          "Taidot: kuvaajan tangentti; toisen asteen polynomin sovittaminen mittauspisteisiin; toisen asteen suureyhtälöiden ratkaiseminen",
+          "Kokeellisesti: putoamiskiihtyvyyden määrittäminen"
+        ],
+        "prerequisites": [
+          "fy4-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "kiihtyvyys",
+          "tasaisesti kiihtyvä liike",
+          "(t,v)-kuvaaja",
+          "putoamiskiihtyvyys"
+        ]
+      },
+      {
+        "id": "fy4-3",
+        "title": "Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki",
+        "goals": [
+          "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+          "Täsmennys: vuorovaikutuksen voima on yhtä suuri kummankin osapuolen kannalta"
+        ],
+        "prerequisites": [
+          "fy4-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "vuorovaikutus",
+          "voima",
+          "jatkavuuden laki",
+          "voima ja vastavoima",
+          "inertia"
+        ]
+      },
+      {
+        "id": "fy4-4",
+        "title": "Newtonin toinen laki",
+        "goals": [
+          "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+          "LOPS FY4: liikeyhtälö"
+        ],
+        "prerequisites": [
+          "fy4-2",
+          "fy4-3"
         ],
         "sim": true,
         "glossary": [
           "voima",
           "kiihtyvyys",
-          "massa"
+          "massa",
+          "kokonaisvoima"
+        ]
+      },
+      {
+        "id": "fy4-5",
+        "title": "Voimakuvio ja voimien yhteisvaikutus",
+        "goals": [
+          "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
+          "Taidot: voimakuvion piirtäminen; vektorisuureet; suorakulmaisen kolmion trigonometria",
+          "Kokeellisesti: kappaleeseen vaikuttavien voimien määrittäminen"
+        ],
+        "prerequisites": [
+          "fy4-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "voimakuvio",
+          "kokonaisvoima",
+          "komponentti",
+          "tukivoima",
+          "jännitysvoima"
+        ]
+      },
+      {
+        "id": "fy4-6",
+        "title": "Paino, kitka ja kalteva taso",
+        "goals": [
+          "LOPS FY4: paino ja kitka",
+          "Kokeellisesti: kitkakertoimen määrittäminen",
+          "Täsmennys: muitakin voimia kuten noste ja väliaineen vastusvoima voidaan käsitellä"
+        ],
+        "prerequisites": [
+          "fy4-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "paino",
+          "kitka",
+          "lepokitka",
+          "liikekitka",
+          "kitkakerroin",
+          "kalteva taso"
+        ]
+      },
+      {
+        "id": "fy4-7",
+        "title": "Liike-energia, potentiaalienergia ja mekaaninen energia",
+        "goals": [
+          "LOPS FY4: liike-energia, potentiaalienergia ja mekaaninen energia",
+          "Täsmennys: painovoimaan liittyvä potentiaalienergia ei ole ainoa potentiaalienergian laji; potentiaalienergia liittyy konservatiiviseen voimaan"
+        ],
+        "prerequisites": [
+          "fy4-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "liike-energia",
+          "potentiaalienergia",
+          "mekaaninen energia",
+          "konservatiivinen voima"
+        ]
+      },
+      {
+        "id": "fy4-8",
+        "title": "Mekaanisen energian säilyminen ja energiaperiaate",
+        "goals": [
+          "LOPS FY4: mekaanisen energian säilyminen ja mekaniikan energiaperiaate",
+          "LOPS FY4: ymmärtää säilymislakien merkityksen fysiikassa",
+          "Täsmennys: mekaanisen energian muutos on yhtä suuri kuin ei-konservatiivisten voimien tekemä työ; kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos"
+        ],
+        "prerequisites": [
+          "fy4-7"
+        ],
+        "sim": true,
+        "glossary": [
+          "energiaperiaate",
+          "mekaanisen energian säilyminen",
+          "työ",
+          "ei-konservatiivinen voima"
+        ]
+      },
+      {
+        "id": "fy4-9",
+        "title": "Liikemäärä ja impulssi",
+        "goals": [
+          "LOPS FY4: liikemäärä, impulssi",
+          "Temaattinen tarkastelu: urheilu, liikenne"
+        ],
+        "prerequisites": [
+          "fy4-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "liikemäärä",
+          "impulssi",
+          "impulssiperiaate"
+        ]
+      },
+      {
+        "id": "fy4-10",
+        "title": "Liikemäärän säilyminen ja yksiulotteiset törmäykset",
+        "goals": [
+          "LOPS FY4: liikemäärän säilyminen ja yksiulotteiset törmäykset",
+          "Täsmennys: kaksiulotteiset törmäykset eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy4-9",
+          "fy4-8"
+        ],
+        "sim": true,
+        "glossary": [
+          "liikemäärän säilyminen",
+          "kimmoisa törmäys",
+          "kimmoton törmäys",
+          "räjähdys"
+        ]
+      },
+      {
+        "id": "fy4-11",
+        "title": "Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny",
+        "goals": [
+          "LOPS FY4: tuntee voimaan ja liikkeeseen liittyviä turvallisuusnäkökohtia",
+          "Temaattinen tarkastelu: liikenneturvallisuus; jarrutukseen ja pysähtymiseen tarvittava matka ja aika; turvavyön ja -tyynyn merkitys törmäystilanteissa",
+          "Laaja-alainen: hyvinvointiosaaminen"
+        ],
+        "prerequisites": [
+          "fy4-6",
+          "fy4-10"
+        ],
+        "sim": true,
+        "glossary": [
+          "jarrutusmatka",
+          "reaktioaika",
+          "pysähtymismatka",
+          "turvavyö",
+          "törmäysaika"
+        ]
+      }
+    ]
+  },
+  "FY5": {
+    "title": "Jaksollinen liike ja aallot",
+    "op": 2,
+    "type": "valtakunnallinen valinnainen",
+    "tavoitteet": [
+      "osaa mallintaa planetaarista liikettä ympyräliikkeenä",
+      "perehtyy värähtely- ja aaltoliikkeen perusteisiin tutkimalla mekaanista värähtelyä ja ääntä",
+      "osaa kuvata jaksollista liikettä fysikaalisilla ja matemaattisilla käsitteillä",
+      "osaa mallintaa mekaanista värähtelyä ja ääntä jaksollisena liikkeenä"
+    ],
+    "keskeiset_sisallot": [
+      "momentti ja kappaleen kiertyminen",
+      "tasapaino kiertymisen suhteen yksinkertaisissa tilanteissa",
+      "tasainen ympyräliike ja normaalikiihtyvyys",
+      "gravitaatiolaki ja planetaarinen liike",
+      "jaksollinen liike, jaksonaika, taajuus ja amplitudi",
+      "harmoninen voima ja värähtelyliike sekä harmonisen voiman potentiaalienergia",
+      "mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+      "mekaanisten aaltojen diffraktio ja interferenssi sekä seisovat aallot",
+      "ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen"
+    ],
+    "temaattiset_yhteydet": [
+      "heiluri",
+      "soittimet",
+      "akustiikka ja äänentoisto",
+      "melun haittavaikutukset ja kuulon suojaaminen",
+      "ultraäänikuvaus"
+    ],
+    "kokeet": [
+      "heilurin heilahdusajan määrittäminen",
+      "äänen nopeuden määrittäminen",
+      "äänen taajuusanalyysi"
+    ],
+    "laaja_alainen": [
+      "Monitieteinen ja luova osaaminen",
+      "Hyvinvointiosaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy5-1",
+        "title": "Momentti ja vääntövaikutus",
+        "goals": [
+          "LOPS FY5: momentti ja kappaleen kiertyminen"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "momentti",
+          "vääntövaikutus",
+          "voiman varsi",
+          "kiertoakseli"
+        ]
+      },
+      {
+        "id": "fy5-2",
+        "title": "Tasapaino kiertymisen suhteen",
+        "goals": [
+          "LOPS FY5: tasapaino kiertymisen suhteen yksinkertaisissa tilanteissa",
+          "Täsmennys: voimien komponentteihin jako voi olla tarpeen, kun pääpaino on fysiikan ymmärtämisessä eikä matematiikassa"
+        ],
+        "prerequisites": [
+          "fy5-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "tasapaino",
+          "momenttiehto",
+          "painopiste",
+          "tukivoima"
+        ]
+      },
+      {
+        "id": "fy5-3",
+        "title": "Tasainen ympyräliike: kulmanopeus ja ratanopeus",
+        "goals": [
+          "LOPS FY5: tasainen ympyräliike",
+          "Täsmennys: kulmasuureita ei tarvitse käsitellä ympyräliikkeen yhteydessä; pyörimisliike ei kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "ympyräliike",
+          "ratanopeus",
+          "kierrosaika",
+          "pyörimistaajuus"
+        ]
+      },
+      {
+        "id": "fy5-4",
+        "title": "Normaalikiihtyvyys ja keskeisvoima",
+        "goals": [
+          "LOPS FY5: tasainen ympyräliike ja normaalikiihtyvyys"
+        ],
+        "prerequisites": [
+          "fy5-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "normaalikiihtyvyys",
+          "keskeisvoima",
+          "keskeiskiihtyvyys"
+        ]
+      },
+      {
+        "id": "fy5-5",
+        "title": "Gravitaatiolaki ja planetaarinen liike",
+        "goals": [
+          "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
+          "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
+          "Täsmennys: planeettojen, kuiden ja satelliittien liike; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy5-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "gravitaatiolaki",
+          "gravitaatiovakio",
+          "kiertorata",
+          "satelliitti",
+          "painottomuus"
+        ]
+      },
+      {
+        "id": "fy5-6",
+        "title": "Jaksollinen liike: jaksonaika, taajuus ja amplitudi",
+        "goals": [
+          "LOPS FY5: jaksollinen liike, jaksonaika, taajuus ja amplitudi",
+          "LOPS FY5: osaa kuvata jaksollista liikettä fysikaalisilla ja matemaattisilla käsitteillä",
+          "Taidot: sinifunktion sovittaminen"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "jaksollinen liike",
+          "jaksonaika",
+          "taajuus",
+          "amplitudi",
+          "vaihe"
+        ]
+      },
+      {
+        "id": "fy5-7",
+        "title": "Harmoninen voima ja värähtelyliike",
+        "goals": [
+          "LOPS FY5: harmoninen voima ja värähtelyliike",
+          "Kokeellisesti: heilurin heilahdusajan määrittäminen",
+          "Temaattinen tarkastelu: heiluri"
+        ],
+        "prerequisites": [
+          "fy5-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "harmoninen voima",
+          "harmoninen värähtely",
+          "jousivakio",
+          "heiluri"
+        ]
+      },
+      {
+        "id": "fy5-8",
+        "title": "Harmonisen voiman potentiaalienergia",
+        "goals": [
+          "LOPS FY5: harmonisen voiman potentiaalienergia",
+          "Täsmennys: energian säilyminen värähtelyssä, E = ½kA²"
+        ],
+        "prerequisites": [
+          "fy5-7"
+        ],
+        "sim": true,
+        "glossary": [
+          "jousen potentiaalienergia",
+          "värähtelyn energia",
+          "vaimeneminen"
+        ]
+      },
+      {
+        "id": "fy5-9",
+        "title": "Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+        "goals": [
+          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+          "Taidot: aaltoilmiöiden mallintaminen",
+          "Täsmennys: valo käsitellään vasta moduulissa FY7"
+        ],
+        "prerequisites": [
+          "fy5-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "aaltoliike",
+          "aallonpituus",
+          "aallon nopeus",
+          "poikittainen aalto",
+          "pitkittäinen aalto",
+          "heijastuminen"
+        ]
+      },
+      {
+        "id": "fy5-10",
+        "title": "Diffraktio ja interferenssi",
+        "goals": [
+          "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
+          "Täsmennys: diffraktio esim. veden pinta-aaltojen taipuminen esteen vaikutuksesta; interferenssi kahden samassa vaiheessa olevan saman taajuisen aaltolähteen avulla"
+        ],
+        "prerequisites": [
+          "fy5-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "diffraktio",
+          "interferenssi",
+          "vahvistava interferenssi",
+          "heikentävä interferenssi",
+          "superpositio"
+        ]
+      },
+      {
+        "id": "fy5-11",
+        "title": "Seisovat aallot",
+        "goals": [
+          "LOPS FY5: seisovat aallot",
+          "Temaattinen tarkastelu: soittimet; kielen ja ilmapatsaan ominaistaajuudet"
+        ],
+        "prerequisites": [
+          "fy5-10"
+        ],
+        "sim": true,
+        "glossary": [
+          "seisova aalto",
+          "solmu",
+          "kupu",
+          "ominaistaajuus",
+          "perustaajuus"
+        ]
+      },
+      {
+        "id": "fy5-12",
+        "title": "Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
+        "goals": [
+          "LOPS FY5: ääni aaltoliikkeenä, äänen ominaisuudet ja eteneminen",
+          "Kokeellisesti: äänen nopeuden määrittäminen ja äänen taajuusanalyysi",
+          "Täsmennys: äänenkorkeus ja äänen sointivärin muodostava harmoninen sarja",
+          "Taidot: FFT-kuvaajan tekeminen"
+        ],
+        "prerequisites": [
+          "fy5-11"
+        ],
+        "sim": true,
+        "glossary": [
+          "ääni",
+          "äänen nopeus",
+          "äänenkorkeus",
+          "sointiväri",
+          "harmoninen sarja",
+          "Doppler-ilmiö"
+        ]
+      },
+      {
+        "id": "fy5-13",
+        "title": "Äänen intensiteettitaso ja kuulon suojaaminen",
+        "goals": [
+          "LOPS FY5: äänen intensiteettitaso",
+          "Temaattinen tarkastelu: melun haittavaikutukset ja kuulon suojaaminen",
+          "Taidot: logaritmiyhtälön käyttö",
+          "Laaja-alainen: hyvinvointiosaaminen"
+        ],
+        "prerequisites": [
+          "fy5-12"
+        ],
+        "sim": true,
+        "glossary": [
+          "intensiteetti",
+          "intensiteettitaso",
+          "desibeli",
+          "kuulokynnys",
+          "melu"
+        ]
+      }
+    ]
+  },
+  "FY6": {
+    "title": "Sähkö",
+    "op": 2,
+    "type": "valtakunnallinen valinnainen",
+    "tavoitteet": [
+      "osaa tutkia kokeellisesti sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
+      "osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa",
+      "tuntee sähkölaitteisiin ja sähköenergian siirtoon liittyviä turvallisuusnäkökohtia"
+    ],
+    "keskeiset_sisallot": [
+      "jännite ja sähkövirta tasavirtapiireissä",
+      "resistanssi ja Ohmin laki",
+      "sähköteho ja Joulen laki",
+      "vastusten kytkennät ja Kirchhoffin lait",
+      "akut ja akun latauspiiri",
+      "Coulombin laki ja homogeeninen sähkökenttä",
+      "potentiaalienergia ja potentiaali homogeenisessa sähkökentässä",
+      "kondensaattori ja kondensaattorin energia",
+      "puolijohteet, diodi ja LED komponentteina virtapiirissä",
+      "sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus"
+    ],
+    "temaattiset_yhteydet": [
+      "yksinkertaiset sähkölaitteet",
+      "aurinkokenno tasajännitelähteenä",
+      "sähköenergian varastoiminen"
+    ],
+    "kokeet": [
+      "mittauksia komponenttien toiminnasta virtapiirissä",
+      "pariston sisäisen resistanssin kokeellinen määrittäminen"
+    ],
+    "laaja_alainen": [
+      "Vuorovaikutusosaaminen",
+      "Hyvinvointiosaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy6-1",
+        "title": "Sähkövaraus, sähkövirta ja jännite",
+        "goals": [
+          "LOPS FY6: jännite ja sähkövirta tasavirtapiireissä",
+          "Täsmennys: peruskäsitteet, jotka liittyvät sähköiseen vuorovaikutukseen, sähkövirtaan ja tasavirtapiirien komponentteihin",
+          "Taidot: kytkentäkaavioiden laatiminen"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "sähkövaraus",
+          "sähkövirta",
+          "jännite",
+          "virtapiiri",
+          "kytkentäkaavio"
+        ]
+      },
+      {
+        "id": "fy6-2",
+        "title": "Resistanssi ja Ohmin laki",
+        "goals": [
+          "LOPS FY6: resistanssi ja Ohmin laki",
+          "LOPS FY6: osaa tutkia kokeellisesti sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia"
+        ],
+        "prerequisites": [
+          "fy6-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "resistanssi",
+          "Ohmin laki",
+          "vastus",
+          "resistiivisyys",
+          "ominaiskäyrä"
+        ]
+      },
+      {
+        "id": "fy6-3",
+        "title": "Sähköteho ja Joulen laki",
+        "goals": [
+          "LOPS FY6: sähköteho ja Joulen laki"
+        ],
+        "prerequisites": [
+          "fy6-2"
+        ],
+        "sim": false,
+        "glossary": [
+          "sähköteho",
+          "Joulen laki",
+          "sähköenergia",
+          "kilowattitunti"
+        ]
+      },
+      {
+        "id": "fy6-4",
+        "title": "Vastusten sarja- ja rinnankytkennät",
+        "goals": [
+          "LOPS FY6: vastusten kytkennät"
+        ],
+        "prerequisites": [
+          "fy6-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "sarjaankytkentä",
+          "rinnankytkentä",
+          "kokonaisresistanssi"
+        ]
+      },
+      {
+        "id": "fy6-5",
+        "title": "Kirchhoffin lait",
+        "goals": [
+          "LOPS FY6: Kirchhoffin lait",
+          "Täsmennys: Kirchhoffin lakien yhteydessä voidaan tarkastella myös haarautuvia virtapiirejä, kunhan pääpaino on fysiikan ymmärtämisessä"
+        ],
+        "prerequisites": [
+          "fy6-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "Kirchhoffin virtalaki",
+          "Kirchhoffin jännitelaki",
+          "silmukka",
+          "haarautumispiste"
+        ]
+      },
+      {
+        "id": "fy6-6",
+        "title": "Akut, lähdejännite ja sisäinen resistanssi",
+        "goals": [
+          "LOPS FY6: akut ja akun latauspiiri",
+          "Kokeellisesti: pariston sisäisen resistanssin määrittäminen",
+          "Temaattinen tarkastelu: aurinkokenno tasajännitelähteenä, sähköenergian varastoiminen"
+        ],
+        "prerequisites": [
+          "fy6-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "lähdejännite",
+          "napajännite",
+          "sisäinen resistanssi",
+          "akku",
+          "latauspiiri"
+        ]
+      },
+      {
+        "id": "fy6-7",
+        "title": "Coulombin laki",
+        "goals": [
+          "LOPS FY6: Coulombin laki",
+          "Täsmennys: pistevarauksen sähkökenttä voidaan käsitellä kvalitatiivisesti"
+        ],
+        "prerequisites": [
+          "fy6-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "Coulombin laki",
+          "pistevaraus",
+          "sähköinen vuorovaikutus",
+          "sähkökenttä"
+        ]
+      },
+      {
+        "id": "fy6-8",
+        "title": "Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia",
+        "goals": [
+          "LOPS FY6: Coulombin laki ja homogeeninen sähkökenttä",
+          "LOPS FY6: potentiaalienergia ja potentiaali homogeenisessa sähkökentässä",
+          "LOPS FY6: osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa"
+        ],
+        "prerequisites": [
+          "fy6-7"
+        ],
+        "sim": true,
+        "glossary": [
+          "homogeeninen sähkökenttä",
+          "sähkökentän voimakkuus",
+          "potentiaali",
+          "potentiaaliero",
+          "potentiaalienergia"
+        ]
+      },
+      {
+        "id": "fy6-9",
+        "title": "Kondensaattori ja kondensaattorin energia",
+        "goals": [
+          "LOPS FY6: kondensaattori ja kondensaattorin energia",
+          "Täsmennys: levykondensaattorin rakenne; eristeaineen vaikutus kapasitanssiin varauksen, jännitteen ja energian kautta; kondensaattorien kytkennät eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy6-8"
+        ],
+        "sim": true,
+        "glossary": [
+          "kondensaattori",
+          "kapasitanssi",
+          "eriste",
+          "kondensaattorin energia"
+        ]
+      },
+      {
+        "id": "fy6-10",
+        "title": "Puolijohteet, diodi ja LED",
+        "goals": [
+          "LOPS FY6: puolijohteet, diodi ja LED komponentteina virtapiirissä",
+          "Täsmennys: puolijohteita käsitellään lähinnä teknisinä virtapiirin komponentteina; puolijohdemateriaalien ominaisuudet eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy6-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "puolijohde",
+          "diodi",
+          "LED",
+          "päästösuunta",
+          "estosuunta"
+        ]
+      },
+      {
+        "id": "fy6-11",
+        "title": "Sähköturvallisuus",
+        "goals": [
+          "LOPS FY6: sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus",
+          "LOPS FY6: tuntee sähkölaitteisiin ja sähköenergian siirtoon liittyviä turvallisuusnäkökohtia",
+          "Laaja-alainen: hyvinvointiosaaminen"
+        ],
+        "prerequisites": [
+          "fy6-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "sulake",
+          "vikavirtasuoja",
+          "suojausluokitus",
+          "läpilyöntilujuus",
+          "maadoitus"
+        ]
+      }
+    ]
+  },
+  "FY7": {
+    "title": "Sähkömagnetismi ja valo",
+    "op": 2,
+    "type": "valtakunnallinen valinnainen",
+    "tavoitteet": [
+      "ymmärtää induktioilmiön keskeisen merkityksen sähkömagnetismissa",
+      "ymmärtää sähköenergian tuotannon ja siirron fysikaaliset perusteet ja merkityksen yhteiskunnan toiminnan kannalta",
+      "tunnistaa sähkömagneettisen säteilyn lähteitä ja vaikutuksia",
+      "ymmärtää valon sähkömagneettisena ilmiönä"
+    ],
+    "keskeiset_sisallot": [
+      "ferromagnetismi ja magneettinen dipoli",
+      "magneettinen vuorovaikutus ja magneettikenttä",
+      "varatun hiukkasen liike homogeenisessa sähkö- ja magneettikentässä",
+      "virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
+      "sähkömagneettinen induktio, Lenzin laki ja pyörrevirrat",
+      "generaattori, vaihtovirran synty, muuntaja ja energian siirto sähkövirran avulla",
+      "sähkömagneettinen säteily ja sen spektri sekä mustan kappaleen säteilyn spektri",
+      "valon heijastuminen, taittuminen ja kokonaisheijastuminen",
+      "valon interferenssi ja diffraktio",
+      "valon polarisaatio kvalitatiivisesti"
+    ],
+    "temaattiset_yhteydet": [
+      "hiukkaskiihdytin",
+      "tuulivoima",
+      "optinen tiedonsiirto"
+    ],
+    "kokeet": [
+      "magneettivuon tiheyden määritys käämin sisällä",
+      "valon heijastumisen ja taittumisen tutkiminen rajapinnassa",
+      "laserin aallonpituuden määrittäminen hilan avulla"
+    ],
+    "laaja_alainen": [
+      "Yhteiskunnallinen osaaminen",
+      "Monitieteinen ja luova osaaminen",
+      "Hyvinvointiosaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy7-1",
+        "title": "Magnetismi, magneettinen dipoli ja magneettikenttä",
+        "goals": [
+          "LOPS FY7: ferromagnetismi ja magneettinen dipoli",
+          "LOPS FY7: magneettinen vuorovaikutus ja magneettikenttä",
+          "Täsmennys: para- ja diamagneettiset aineet eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "magneetti",
+          "magneettinen dipoli",
+          "ferromagnetismi",
+          "magneettikenttä",
+          "magneettivuon tiheys"
+        ]
+      },
+      {
+        "id": "fy7-2",
+        "title": "Varatun hiukkasen liike sähkö- ja magneettikentässä",
+        "goals": [
+          "LOPS FY7: varatun hiukkasen liike homogeenisessa sähkö- ja magneettikentässä",
+          "Temaattinen tarkastelu: hiukkaskiihdytin"
+        ],
+        "prerequisites": [
+          "fy7-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "Lorentzin voima",
+          "magneettinen voima",
+          "ympyrärata",
+          "hiukkaskiihdytin"
+        ]
+      },
+      {
+        "id": "fy7-3",
+        "title": "Virtajohtimen magneettikenttä ja johtimien välinen voima",
+        "goals": [
+          "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
+          "Kokeellisesti: magneettivuon tiheyden määritys käämin sisällä"
+        ],
+        "prerequisites": [
+          "fy7-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "virtajohdin",
+          "käämi",
+          "solenoidi",
+          "oikean käden sääntö",
+          "ampeeri"
+        ]
+      },
+      {
+        "id": "fy7-4",
+        "title": "Sähkömagneettinen induktio",
+        "goals": [
+          "LOPS FY7: sähkömagneettinen induktio",
+          "LOPS FY7: ymmärtää induktioilmiön keskeisen merkityksen sähkömagnetismissa",
+          "Täsmennys: itseinduktio ei kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy7-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "induktio",
+          "magneettivuo",
+          "induktiojännite",
+          "induktiolaki"
+        ]
+      },
+      {
+        "id": "fy7-5",
+        "title": "Lenzin laki ja pyörrevirrat",
+        "goals": [
+          "LOPS FY7: Lenzin laki ja pyörrevirrat"
+        ],
+        "prerequisites": [
+          "fy7-4"
+        ],
+        "sim": true,
+        "glossary": [
+          "Lenzin laki",
+          "pyörrevirta",
+          "induktiojarru"
+        ]
+      },
+      {
+        "id": "fy7-6",
+        "title": "Generaattori ja vaihtovirran synty",
+        "goals": [
+          "LOPS FY7: generaattori, vaihtovirran synty",
+          "Täsmennys: käämi pyörivässä magneettikentässä tai pyörivä käämi magneettikentässä; perustellaan, miksi käämiin syntyy sinimuotoinen induktiojännite",
+          "Temaattinen tarkastelu: tuulivoima"
+        ],
+        "prerequisites": [
+          "fy7-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "generaattori",
+          "vaihtovirta",
+          "vaihtojännite",
+          "tehollinen arvo",
+          "huippuarvo"
+        ]
+      },
+      {
+        "id": "fy7-7",
+        "title": "Muuntaja ja sähköenergian siirto",
+        "goals": [
+          "LOPS FY7: muuntaja ja energian siirto sähkövirran avulla",
+          "LOPS FY7: ymmärtää sähköenergian tuotannon ja siirron fysikaaliset perusteet ja merkityksen yhteiskunnan toiminnan kannalta",
+          "Laaja-alainen: yhteiskunnallinen osaaminen"
+        ],
+        "prerequisites": [
+          "fy7-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "muuntaja",
+          "muuntosuhde",
+          "siirtohäviö",
+          "sähköverkko",
+          "suurjännite"
+        ]
+      },
+      {
+        "id": "fy7-8",
+        "title": "Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+        "goals": [
+          "LOPS FY7: sähkömagneettinen säteily ja sen spektri sekä mustan kappaleen säteilyn spektri",
+          "LOPS FY7: tunnistaa sähkömagneettisen säteilyn lähteitä ja vaikutuksia",
+          "Täsmennys: lähteinä kiihtyvässä liikkeessä oleva varattu hiukkanen ja kuuma kappale; mustan kappaleen säteilyn spektri riippuu vain pintalämpötilasta"
+        ],
+        "prerequisites": [
+          "fy7-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "sähkömagneettinen säteily",
+          "spektri",
+          "aallonpituus",
+          "mustan kappaleen säteily",
+          "Wienin siirtymälaki"
+        ]
+      },
+      {
+        "id": "fy7-9",
+        "title": "Valon heijastuminen ja taittuminen",
+        "goals": [
+          "LOPS FY7: valon heijastuminen, taittuminen",
+          "LOPS FY7: ymmärtää valon sähkömagneettisena ilmiönä",
+          "Kokeellisesti: valon heijastumisen ja taittumisen tutkiminen rajapinnassa"
+        ],
+        "prerequisites": [
+          "fy7-8"
+        ],
+        "sim": true,
+        "glossary": [
+          "heijastuslaki",
+          "taittuminen",
+          "taitekerroin",
+          "Snellin laki"
+        ]
+      },
+      {
+        "id": "fy7-10",
+        "title": "Kokonaisheijastuminen ja valokuitu",
+        "goals": [
+          "LOPS FY7: kokonaisheijastuminen",
+          "Temaattinen tarkastelu: optinen tiedonsiirto"
+        ],
+        "prerequisites": [
+          "fy7-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "kokonaisheijastuminen",
+          "rajakulma",
+          "valokuitu"
+        ]
+      },
+      {
+        "id": "fy7-11",
+        "title": "Valon interferenssi ja diffraktio",
+        "goals": [
+          "LOPS FY7: valon interferenssi ja diffraktio",
+          "Kokeellisesti: laserin aallonpituuden määrittäminen hilan avulla",
+          "Täsmennys: saman taajuisten ja samassa vaiheessa olevien lähteiden interferenssikuvio; interferenssi ohuissa kalvoissa"
+        ],
+        "prerequisites": [
+          "fy7-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "interferenssi",
+          "diffraktio",
+          "hila",
+          "hilavakio",
+          "kaksoisrako"
+        ]
+      },
+      {
+        "id": "fy7-12",
+        "title": "Valon polarisaatio",
+        "goals": [
+          "LOPS FY7: valon polarisaatio kvalitatiivisesti",
+          "Täsmennys: polarisaatio eristeestä heijastuessa ja polarisaattorissa"
+        ],
+        "prerequisites": [
+          "fy7-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "polarisaatio",
+          "polarisaattori",
+          "polaroidut aurinkolasit"
+        ]
+      }
+    ]
+  },
+  "FY8": {
+    "title": "Aine, säteily ja kvantittuminen",
+    "op": 2,
+    "type": "valtakunnallinen valinnainen",
+    "tavoitteet": [
+      "tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",
+      "tutustuu kvanttifysiikkaan perustuvaan maailmankuvaan alkeishiukkasfysiikasta kosmologiaan",
+      "ymmärtää kvantittumiseen perustuvan teknologian merkityksen nyky-yhteiskunnassa"
+    ],
+    "keskeiset_sisallot": [
+      "energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+      "fotoni sähkömagneettisen säteilykentän kvanttina",
+      "atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+      "kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+      "atomiytimen rakenne ja muutokset, radioaktiivinen hajoaminen",
+      "ydinreaktiot, massan ja energian ekvivalenssi, ytimen sidosenergia",
+      "ydinvoima, fissio ja fuusio",
+      "hajoamislaki",
+      "ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+      "hiukkasfysiikan standardimalli",
+      "maailmankaikkeuden kehitys"
+    ],
+    "temaattiset_yhteydet": [
+      "säteilyturvallisuus",
+      "säteilyn käyttö lääketieteessä",
+      "ilmastonmuutos ja kasvihuoneilmiö"
+    ],
+    "kokeet": [
+      "spektrin mittaaminen",
+      "spektrin muutoksen tarkastelu fluoresenssi-ilmiössä",
+      "mittaukset laser-diodeilla",
+      "aihepiiriin liittyvät simulaatiot"
+    ],
+    "laaja_alainen": [
+      "Hyvinvointiosaaminen",
+      "Yhteiskunnallinen osaaminen",
+      "Eettisyys ja ympäristöosaaminen",
+      "Globaali- ja kulttuuriosaaminen"
+    ],
+    "lessons": [
+      {
+        "id": "fy8-1",
+        "title": "Valosähköinen ilmiö ja fotoni",
+        "goals": [
+          "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+          "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
+          "Täsmennys: valosähköinen ilmiö esimerkkinä ilmiöstä, jonka selittäminen edellyttää kvantittumista"
+        ],
+        "prerequisites": [],
+        "sim": true,
+        "glossary": [
+          "fotoni",
+          "valosähköinen ilmiö",
+          "irrotustyö",
+          "Planckin vakio",
+          "kvantti"
+        ]
+      },
+      {
+        "id": "fy8-2",
+        "title": "Atomien spektrit ja energian kvantittuminen",
+        "goals": [
+          "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+          "Kokeellisesti: spektrin mittaaminen; spektrin muutoksen tarkastelu fluoresenssi-ilmiössä",
+          "Täsmennys: energiatilat ymmärretään elektroniverhon kvantittuneiksi tiloiksi emissio- ja absorptiospektreistä"
+        ],
+        "prerequisites": [
+          "fy8-1"
+        ],
+        "sim": true,
+        "glossary": [
+          "emissiospektri",
+          "absorptiospektri",
+          "viivaspektri",
+          "energiatila",
+          "fluoresenssi"
+        ]
+      },
+      {
+        "id": "fy8-3",
+        "title": "Bohrin malli ja aaltomekaaninen atomimalli",
+        "goals": [
+          "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+          "Täsmennys: elektronin tilat seisovien aaltojen kautta ja todennäköisyystulkinta; orbitaali alueena, jossa todennäköisyys ylittää kynnysarvon; de Broglie -aaltoja ei tarvitse käsitellä"
+        ],
+        "prerequisites": [
+          "fy8-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "Bohrin malli",
+          "kvanttitila",
+          "pääkvanttiluku",
+          "orbitaali",
+          "aaltomekaaninen atomimalli"
+        ]
+      },
+      {
+        "id": "fy8-4",
+        "title": "Laser ja kvanttirakenteet",
+        "goals": [
+          "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+          "LOPS FY8: ymmärtää kvantittumiseen perustuvan teknologian merkityksen nyky-yhteiskunnassa",
+          "Täsmennys: nanomittakaavan rakenteet sovellusten, kuten aurinkokennojen ja kvanttitietokoneiden, kautta"
+        ],
+        "prerequisites": [
+          "fy8-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "laser",
+          "stimuloitu emissio",
+          "kvanttirakenne",
+          "aurinkokenno",
+          "kvanttitietokone"
+        ]
+      },
+      {
+        "id": "fy8-5",
+        "title": "Atomiytimen rakenne ja radioaktiivinen hajoaminen",
+        "goals": [
+          "LOPS FY8: atomiytimen rakenne ja muutokset, radioaktiivinen hajoaminen",
+          "Täsmennys: ytimen kvantittuneet energiatilat tunnistetaan gammahajoamisen spektrin kautta"
+        ],
+        "prerequisites": [
+          "fy8-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "ydin",
+          "nukleoni",
+          "isotooppi",
+          "alfahajoaminen",
+          "beetahajoaminen",
+          "gammahajoaminen"
+        ]
+      },
+      {
+        "id": "fy8-6",
+        "title": "Hajoamislaki ja puoliintumisaika",
+        "goals": [
+          "LOPS FY8: hajoamislaki",
+          "Taidot: eksponenttifunktion sovittaminen"
+        ],
+        "prerequisites": [
+          "fy8-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "hajoamislaki",
+          "puoliintumisaika",
+          "aktiivisuus",
+          "hajoamisvakio",
+          "becquerel"
+        ]
+      },
+      {
+        "id": "fy8-7",
+        "title": "Massan ja energian ekvivalenssi ja ytimen sidosenergia",
+        "goals": [
+          "LOPS FY8: ydinreaktiot, massan ja energian ekvivalenssi, ytimen sidosenergia",
+          "Täsmennys: massan ja energian ekvivalenssia tarkastellaan ydinreaktion yhteydessä ja sidosenergiaan liittyen"
+        ],
+        "prerequisites": [
+          "fy8-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "massavaje",
+          "sidosenergia",
+          "ydinreaktio",
+          "atomimassayksikkö",
+          "E = mc²"
+        ]
+      },
+      {
+        "id": "fy8-8",
+        "title": "Fissio, fuusio ja ydinvoima",
+        "goals": [
+          "LOPS FY8: ydinvoima, fissio ja fuusio",
+          "Laaja-alainen: yhteiskunnallinen keskustelu ydinvoimasta fysiikan näkökulmasta"
+        ],
+        "prerequisites": [
+          "fy8-7"
+        ],
+        "sim": true,
+        "glossary": [
+          "fissio",
+          "fuusio",
+          "ketjureaktio",
+          "ydinreaktori",
+          "ydinpolttoaine"
+        ]
+      },
+      {
+        "id": "fy8-9",
+        "title": "Ionisoiva säteily: lajit, läpäisykyky ja biologiset vaikutukset",
+        "goals": [
+          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset",
+          "LOPS FY8: tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",
+          "Täsmennys: biologisia vaikutuksia tarkastellaan fysikaalisten vaikutusten (ionisaatio ja energian siirto) kautta"
+        ],
+        "prerequisites": [
+          "fy8-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "ionisoiva säteily",
+          "läpäisykyky",
+          "annos",
+          "sievert",
+          "säteilysuojelu"
+        ]
+      },
+      {
+        "id": "fy8-10",
+        "title": "Säteilyn sovellukset lääketieteessä ja teknologiassa",
+        "goals": [
+          "LOPS FY8: ionisoivan säteilyn soveltaminen lääketieteessä ja teknologiassa",
+          "Temaattinen tarkastelu: säteilyn käyttö lääketieteessä, diagnostiikka ja hoito; potilaan ja henkilökunnan turvallisuus",
+          "Laaja-alainen: hyvinvointiosaaminen"
+        ],
+        "prerequisites": [
+          "fy8-9"
+        ],
+        "sim": false,
+        "glossary": [
+          "röntgenkuvaus",
+          "sädehoito",
+          "isotooppikuvaus",
+          "merkkiaine"
+        ]
+      },
+      {
+        "id": "fy8-11",
+        "title": "Hiukkasfysiikan standardimalli",
+        "goals": [
+          "LOPS FY8: hiukkasfysiikan standardimalli",
+          "Täsmennys: perusvuorovaikutukset ja perushiukkaset"
+        ],
+        "prerequisites": [
+          "fy8-7"
+        ],
+        "sim": false,
+        "glossary": [
+          "standardimalli",
+          "kvarkki",
+          "leptoni",
+          "perusvuorovaikutus",
+          "välittäjähiukkanen"
+        ]
+      },
+      {
+        "id": "fy8-12",
+        "title": "Maailmankaikkeuden kehitys",
+        "goals": [
+          "LOPS FY8: maailmankaikkeuden kehitys",
+          "LOPS FY8: tutustuu kvanttifysiikkaan perustuvaan maailmankuvaan alkeishiukkasfysiikasta kosmologiaan",
+          "Täsmennys: pääpiirteittäin kehityskulku alkuräjähdyksestä nykyhetkeen sekä pimeän aineen ja energian merkitys"
+        ],
+        "prerequisites": [
+          "fy8-11"
+        ],
+        "sim": true,
+        "glossary": [
+          "alkuräjähdys",
+          "kosminen taustasäteily",
+          "pimeä aine",
+          "pimeä energia",
+          "maailmankaikkeuden laajeneminen"
         ]
       }
     ]

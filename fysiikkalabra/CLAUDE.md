@@ -5,6 +5,10 @@ A static teaching site for Finnish upper-secondary physics and maths (LOPS 2021)
 Content is data: one folder per lesson under `content/<course>/<lesson-id>/`.
 `scripts/build.py` renders folders into `site/`. This repository serves GitHub Pages from its root, so `site/` goes live only once it is committed (see README, "Publishing").
 
+## Scope
+- `curriculum.json` is generated from the LOPS 2019 module descriptions; `docs/lops2019/` holds the official text (MAOL module guide with scope clarifications, OPH transversal competences). Grep it when unsure whether something belongs to a module.
+- Stay inside a module's central content unless the human says otherwise. Examples: FY3 treats force only as a measure of interaction and work as W = Fs; Newton's laws, vectors and the liikeyhtälö are FY4.
+
 ## Audience and language
 - Students aged 16–19. Assume they are smart but meeting the idea for the first time.
 - Site language: Finnish. Agent prompts and reports may be in English.

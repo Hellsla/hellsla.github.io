@@ -1,1 +1,0 @@
-Laatikkoa vedetään narusta vaakasuoralla lattialla. Liukusäätimet: voima 0–100 N, narun kulma 0–80°, matka 1–20 m ja aika 1–20 s. Näytä voimavektori ja sen vaakasuora komponentti laatikon kohdalla, laske työ W = F s cos α ja teho P = W/t reaaliajassa, ja animoi laatikko liikkumaan matkan s ajassa t Vedä-napista. Piirrä tehdyn työn kertyminen palkkina laatikon liikkuessa.

@@ -1,4 +1,4 @@
-## fy3-1-L1-01
+## fy3-2-L1-01
 **Annettu:** F = 80 N, s = 25 m, α = 0°
 **Kysytty:** W
 **Kaava:** W = F s cos α
@@ -6,7 +6,7 @@
 **Vastaus:** 2,0 kJ
 **Järkevyys:** Sama kuin 200 kg:n nostaminen metrin verran. Mopon työntäminen 25 m on raskasta, joten suuruusluokka on uskottava.
 
-## fy3-1-L1-02
+## fy3-2-L1-02
 **Annettu:** m = 15 kg, h = 1,2 m, g = 9,81 m/s²
 **Kysytty:** ΔE_p
 **Kaava:** E_p = m g h
@@ -14,7 +14,7 @@
 **Vastaus:** 177 J
 **Järkevyys:** Hylly painaa noin 150 N; sen nostaminen reilun metrin vaatii alle 200 J. Täsmää.
 
-## fy3-1-L1-03
+## fy3-2-L1-03
 **Annettu:** m = 85 kg, v = 6,0 m/s
 **Kysytty:** E_k
 **Kaava:** E_k = ½ m v²
@@ -22,7 +22,7 @@
 **Vastaus:** 1530 J
 **Järkevyys:** Reilun kilojoulen verran, eli saman kuin pyöräilijän nostaminen noin 1,8 m. Tuntuu oikealta rauhallisesta vauhdista.
 
-## fy3-1-L1-04
+## fy3-2-L1-04
 **Annettu:** W = 36 kJ = 36 000 J, t = 12 s
 **Kysytty:** P
 **Kaava:** P = W / t
@@ -30,7 +30,7 @@
 **Vastaus:** 3,0 kW
 **Järkevyys:** Pienen hissimoottorin teho on muutaman kilowatin luokkaa. Sopii.
 
-## fy3-1-L1-05
+## fy3-2-L1-05
 **Annettu:** P = 1,5 kW = 1500 W, t = 4,0 min = 240 s
 **Kysytty:** W
 **Kaava:** P = W / t ⇒ W = P t
@@ -38,7 +38,7 @@
 **Vastaus:** 360 kJ
 **Järkevyys:** Tällä energialla nostaisi 1000 kg vettä noin 37 m. Neljä minuuttia pumppausta, uskottavaa.
 
-## fy3-1-L2-01
+## fy3-2-L2-01
 **Annettu:** m = 1200 kg, v₀ = 0, v = 90 km/h = 25 m/s
 **Kysytty:** W
 **Kaava:** W = ΔE_k = ½ m v² − ½ m v₀²
@@ -46,7 +46,7 @@
 **Vastaus:** 375 kJ
 **Järkevyys:** Nopeuden muunnos 90 km/h = 90/3,6 m/s = 25 m/s. Satojen kilojoulien liike-energia maantienopeudessa on tuttu luku kolaritarkasteluista.
 
-## fy3-1-L2-02
+## fy3-2-L2-02
 **Annettu:** P = 6,0 kW = 6000 W, t = 45 min = 2700 s
 **Kysytty:** E
 **Kaava:** E = P t
@@ -54,7 +54,7 @@
 **Vastaus:** 16,2 MJ
 **Järkevyys:** 16,2 MJ = 4,5 kWh. Sähkölaskun kannalta tuttu suuruusluokka saunavuorolle.
 
-## fy3-1-L2-03
+## fy3-2-L2-03
 **Annettu:** m = 850 kg, P = 12 kW = 12 000 W, t = 30 s, g = 9,81 m/s²
 **Kysytty:** h
 **Kaava:** W = P t ja W = m g h ⇒ h = P t / (m g)
@@ -62,7 +62,7 @@
 **Vastaus:** 43,2 m
 **Järkevyys:** Nousunopeus on noin 1,4 m/s, mikä on tavallinen nosturin nopeus. Kerrostalon katolle puolessa minuutissa, uskottavaa.
 
-## fy3-1-L2-04
+## fy3-2-L2-04
 **Annettu:** m = 62 kg, h = 15 m, t = 12 s, g = 9,81 m/s²
 **Kysytty:** P
 **Kaava:** W = m g h, P = W / t
@@ -70,7 +70,7 @@
 **Vastaus:** 760 W
 **Järkevyys:** Noin yksi hevosvoima (746 W). Kova mutta mahdollinen hetkellinen teho kuntoilijalle.
 
-## fy3-1-L3-01
+## fy3-2-L3-01
 **Annettu:** m = 75 kg, h = 40 m, v₀ = 0, v = 20 m/s, g = 9,81 m/s²
 **Kysytty:** kitkan ja ilmanvastuksen viemä energia E_häviö
 **Kaava:** E_häviö = ΔE_p − E_k = m g h − ½ m v²
@@ -78,7 +78,7 @@
 **Vastaus:** 14,4 kJ
 **Järkevyys:** Noin puolet potentiaalienergiasta hävisi. Ilman häviöitä nopeus olisi √(2gh) ≈ 28 m/s, joten 20 m/s on uskottava pehmeällä lumella.
 
-## fy3-1-L3-02
+## fy3-2-L3-02
 **Annettu:** F = 4,5 kN = 4500 N, v = 80 km/h = 22,2 m/s, tasainen liike
 **Kysytty:** P
 **Kaava:** P = W / t = F s / t = F v, koska s / t = v tasaisessa liikkeessä ja voima on liikkeen suuntainen
@@ -86,7 +86,7 @@
 **Vastaus:** 100 kW
 **Järkevyys:** Kuorma-auton moottorin teho on satoja kilowatteja, josta osa kuluu auton omaan vastukseen. 100 kW perävaunun vetoon on järkevä.
 
-## fy3-1-L3-03
+## fy3-2-L3-03
 **Annettu:** P = 180 W, m = 1000 kg, h = 50 m, g = 9,81 m/s²
 **Kysytty:** t
 **Kaava:** W = m g h ja W = P t ⇒ t = m g h / P

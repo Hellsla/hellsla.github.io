@@ -1,12 +1,14 @@
 {
-  "id": "fy3-2",
-  "course": "FY3",
+  "id": "fy4-4",
+  "course": "FY4",
   "title": "Newtonin toinen laki",
   "goals": [
-    "LOPS FY3: soveltaa Newtonin lakeja"
+    "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+    "LOPS FY4: liikeyhtälö"
   ],
   "prerequisites": [
-    "fy3-1"
+    "fy4-2",
+    "fy4-3"
   ],
   "glossary": [
     "voima",
