@@ -9,6 +9,9 @@ Content is data: one folder per lesson under `content/<course>/<lesson-id>/`.
 - `curriculum.json` is generated from the LOPS 2019 module descriptions; `docs/lops2019/` holds the official text (MAOL module guide with scope clarifications, OPH transversal competences). Grep it when unsure whether something belongs to a module.
 - Stay inside a module's central content unless the human says otherwise. Examples: FY3 treats force only as a measure of interaction and work as W = Fs; Newton's laws, vectors and the liikeyhtälö are FY4.
 
+## Notes
+- Read `NOTES.md` before drafting or reviewing a lesson. It holds the LaTeX rules and other lessons learned. Add a line there whenever a mistake costs a review round.
+
 ## Audience and language
 - Students aged 16–19. Assume they are smart but meeting the idea for the first time.
 - Site language: Finnish. Agent prompts and reports may be in English.
