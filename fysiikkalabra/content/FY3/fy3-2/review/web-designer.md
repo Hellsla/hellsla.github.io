@@ -1,67 +1,25 @@
-VERDICT: FAIL
+VERDICT: PASS
 
-Scope: preview/fy3-2.html built from templates/lesson.html + templates/site.css (no files edited). Measured with Playwright/Chromium at 390x844 and 1280x900. Screenshots: review/fy3-2-390.png, review/fy3-2-1280.png, review/fy3-2-390-sim.png, review/fy3-2-390-exercises-open.png.
+Fresh re-check of fy3-2 after the template/CSS/sim revision. Built with `build.py --all`, measured with my own Playwright script (Chromium 1243) at 1280 and 390 px. Screenshots in this folder: `web-designer-1280.png`, `web-designer-390.png`, `web-designer-sim-390.png` (sim at 390), `web-designer-exercises-390.png` (exercises with levels opened). The earlier blockers (canvas-only readout, 40 px targets, no disclosure marker, narrow sliders, small SVG labels) are all resolved. No real breakage. Findings below are polish only.
 
-The only FAIL cause is finding 1 (in-canvas sim text unreadable on a phone). Nothing else is broken: no horizontal overflow, no overlap, maths fits.
+1. Text column is at the top edge of the 60-75 range (minor). At 1280 the column is 640 px (40rem) at 18 px. Actual characters per rendered line in the first long paragraph: 75, 73, 72, 76, 71 (mean about 73). The font-metric estimate is 67. Lines occasionally reach 76. Proposal: `body{max-width:38rem}` gives about 69 characters per line. This is optional.
 
-## Passes (measured)
-- Horizontal overflow at 390 px: documentElement scrollWidth 390 = clientWidth 390; body 390. KaTeX display equations: scrollWidth 358 = clientWidth 358 (no inner scroll needed). No visible inline KaTeX sticks out past the 16 px gutter. (Elements reported past 390 are only KaTeX's visually hidden MathML copy.)
-- Sim controls vs canvas: canvas bottom 4272 px, controls top 4280 px (8 px gap) at 390; 3211/3219 at 1280. No overlap. Controls block is 205 px tall at 390 (sliders stack).
-- Exercises collapsible by level: 3 `details.level`, closed by default; 15 nested `details.answer`. Collapsed, exit ticket starts 219 px below the exercises heading (4517 -> 4736 at 390; 3314 -> 3533 at 1280), so it is visible in the same screen. With Taso 1 opened it moves to 5464 (+728 px at 390), all open 6886 (+2150 px). Acceptable because default is closed, but see finding 5.
-- Contrast (WCAG AA, 4.5:1 text): #2f6f9f on #fff = 5.39; on #f3f7fa (blockquote) = 5.00; #666 on #fff = 5.74; #222 on #f3f7fa = 14.8. In-canvas grey (90) on 250 = 6.6, canvas blue on 250 = 5.17, red arrow on 250 = 5.31. All pass.
-- Range inputs: 176 x 40 px (min-height holds). All 18 `summary` elements: 40 px high (358 px / 318 px wide at 390). "Vedä" button 77 x 63 px.
-- Maths at 390: all three display equations render fully inside the 358 px column; the SVG figure scales to 358 x 179 with its labels legible (viewBox text 16 px * 0.6 = ~9.6 px, borderline, see finding 6).
+2. Horizontal overflow at 390: none. documentElement.scrollWidth = clientWidth = 390 and body.scrollWidth = 390. Display maths is scrollable inside its own box (the three `.katex-display` elements are 358 px wide with scrollWidth 358, so they fit and don't need to scroll). The only elements past the right edge are KaTeX's visually hidden `<math>` MathML nodes, which are clipped and cause no scroll. No change needed.
 
-## Findings
+3. Maths readable: KaTeX renders at 21.8 px against 18 px body text. Display formulas (W = Fs, W = Gh = mgh, P = W/t = Fv) are centred and legible at both widths. No inline formula crosses the right edge at 390. No change needed.
 
-1. FAIL: in-canvas text unreadable on phone. Canvas is fixed 600x400 and scaled by CSS to 358x239 at 390 px (scale 0.597). Resulting rendered text sizes: readout "W = F·s", "P = W/t" 16 px -> 9.5 px; "Tehty työ..." 13 px -> 7.8 px; axis/metre labels and "0 J / 600 J" 11-12 px -> 6.6-7.2 px; "W = pinta-ala" 13 px -> 7.8 px. The two key outputs (W and P) exist only in the canvas, so a phone user cannot read them without zooming. Also p5 wraps the font string in quotes (ctx.font is `12px "system-ui, sans-serif"`, verified), which is an invalid family, so canvas text falls back to serif (visible in fy3-2-390-sim.png).
-   Proposal (sim.js is the human/producer's file; not applied): move W and P into the DOM and keep canvas text decorative, and fix the font:
-   ```js
-   // setup(), after createCanvas
-   const readout = p.createDiv('').parent('sim-root').class('readout'); // place before controls
-   // draw(): readout.html(`W = F · s = ${fi(W,0)} J<br>P = W / t = ${fi(P,1)} W<br><small>Tehty työ: ${fi(Wdone,0)} J</small>`);
-   p.textFont('Arial'); // instead of 'system-ui, sans-serif' (p5 quotes the string)
-   // optional: scale canvas text so it is >= 11 px on screen
-   const k = Math.max(1, 600 / document.getElementById('sim-root').clientWidth);
-   p.textSize(11 * k);
-   ```
-   ```css
-   #sim-root .readout{font-size:1rem;line-height:1.5;margin:.5rem 0;font-variant-numeric:tabular-nums}
-   ```
-   Drop the three readout lines at y=30/54/78 from the canvas afterwards, which also frees the top-left area.
+4. Sim layout: no overlap at either width. At 390 the canvas is at y 4090-4329 (358 x 239, scale 0.597), the readout starts at 4337 and the controls at 4417. The readout (W, P, work so far) is DOM text at 16 px. Sliders are 358/358/250 px wide and 40 px tall. The button is 84 x 40, placed beside the third slider with a 24 px gap (slider ends at x 266, button starts at 290). No change needed.
 
-2. Text column too wide on desktop. Paragraphs are 736 px wide at 1280 (`body{max-width:46rem}`), measured 76-87 characters per full line (mean 82, over 4 paragraphs). Target is 60-75. At 390 px it is 27-44 chars (mean ~37): normal for a phone, not a fault.
-   ```css
-   body{max-width:40rem}            /* 640 px content -> ~71 chars/line at 18 px */
-   ```
-   The 600 px canvas and the 600 px-viewBox SVG still fit. Optionally `body{font-size:clamp(17px,1.1vw + 14px,19px)}` does not change the measure and is not needed.
+5. In-canvas text at 390: `k` = 1.676 and canvas scale = 0.597, so the 11 px text renders at about 11.0 px, the 12 px text at 12.0 px and the 13 px text at 13.0 px. This meets the 10 px target (screenshot confirms the labels are legible). Decorative tick and dashed lines are grey 150 on 250 (2.83:1). They carry no text, so this is acceptable. If you want them to pass 3:1, use `p.stroke(130)` for the metre ticks and the dashed guide. Margin is thin, so keep the `ts()` scaling when editing the sim.
 
-3. Nav links are too small to tap. "Fysiikkalabra" 88 x 17 px, "FY3" 27 x 17 px (requirement 40 px). They sit side by side separated by only " › ".
-   ```css
-   nav a{display:inline-block;padding:12px 8px;margin:-12px -8px}  /* 41 px target, layout unchanged */
-   ```
-   (or `nav{display:flex;align-items:center;gap:.25rem}` with `nav a{min-height:40px;display:inline-flex;align-items:center;padding:0 .5rem}`).
+6. SVG label size: the 600-unit-wide viewBox has 20 px text, which is 21.3 px at 1280 and 11.9 px at 390 (scale 0.597). All six labels pass the 10 px target. No change needed.
 
-4. Button border below 3:1 non-text contrast. `#sim-root button{border:1px solid #999}` on white is 2.85:1 (WCAG 1.4.11 needs 3:1).
-   ```css
-   #sim-root button{border-color:#767676}   /* 4.54:1 */
-   ```
+7. Exercises collapsible by level with a visible marker: the three `details.level` elements are closed by default. Each shows a blue triangle marker (▸ when closed, ▾ when open) plus a count ("5 tehtävää"). Each answer is a nested `details.answer` with its own ▸ marker. The marker colour #2f6f9f on white is 5.39:1. Note: the underline border on level summaries (#d5dde3, 1.37:1) is decorative only. The marker and bold label are the affordance, so this is fine.
 
-5. Collapsed `details.level` and `details.answer` show no disclosure marker. `summary{display:flex}` removes the default triangle, so "Taso 1/2/3" look like plain headings (see fy3-2-390.png, the three bare lines under "Tehtävät"). Students may not realise they open. There is also no count of tasks.
-   ```css
-   summary::before{content:"▸";display:inline-block;width:1.2em;color:#2f6f9f;flex:none}
-   details[open]>summary::before{content:"▾"}
-   details.level>summary{border-bottom:1px solid #d5dde3}
-   ```
-   and in the template, e.g. `<summary>Taso 1 <span class="count">5 tehtävää</span></summary>` (the `.count` class already exists in site.css but is unused). To keep the exit ticket reachable when a level is open, consider a link `<a href="#exit">Siirry lähtölippuun</a>` after the exercises heading, or placing `#exit` before `#exercises` (+728 px at 390 per opened level).
+8. Exit ticket reachable: it is the final section, and it is not collapsed. A "Siirry lähtölippuun ↓" skip link at the top of the exercises section (40 px tall) jumps to `#exit`. With levels closed the page is short, so the ticket is about three screens below the sim. No change needed.
 
-6. Sim sliders are only 176 px wide on a 358 px column (label min-width 11rem, flex-wrap). Short sliders make fine values (0.5 steps over 1-20) hard to hit with a thumb. Same row: the "Vedä" button stretches to 63 px height beside the third slider.
-   ```css
-   #sim-root label{flex:1 1 11rem}                 /* sliders grow to full width when wrapped */
-   #sim-root .controls{align-items:end}
-   #sim-root button{align-self:end}
-   ```
+9. Contrast (WCAG AA): nav and `.count` #666 on white is 5.74:1. Links #2f6f9f on white is 5.39:1, and 5.0:1 on the blockquote background #f3f7fa. `.note` #555 is 7.46:1. Button border #767676 on white is 4.54:1 (non-text threshold 3:1 met; button text is black on white). Canvas text: grey 90 on 250 is 6.61:1, the blue label is 5.17:1 and the red F label is 5.31:1. All pass. Disabled/focus styling is not overridden, so the browser default focus ring applies.
 
-7. Minor: worked-example SVG labels render at ~9.6 px at 390 px (16 px text in a 600-unit viewBox scaled by 0.6). Proposal: set `font-size:20px` in the SVG source in lesson.md (about 12 px on phone, 24 px at 1280 where the figure is 736 px wide), or cap the figure with `svg{max-width:36rem}`.
+10. Tap targets (all >= 40 px, measured): nav links "Fysiikkalabra" 101 x 40 and "FY3" 40 x 40; level summaries 41 px tall (358 wide at 390); "Vastaus" summaries 40 px tall (318 wide); range inputs 40 px tall (358/358/250 wide at 390); button 84 x 40; skip link 139 x 40. The "FY3" link is only 40 px wide, which is exactly at the threshold. Optional proposal: `nav a{min-width:40px;justify-content:center}` already holds; to give more room, use `nav a{padding:0 .6rem;margin:0 -.6rem}`. The 40 px figures are at the floor, so do not shrink them.
 
-8. Informational: `git status` shows `tests/sims/fy3-2.json` modified (not by this reviewer). This run only added this report plus review/fy3-2-390-sim.png and review/fy3-2-390-exercises-open.png beside the two standard screenshots.
+Summary: PASS. Optional polish is item 1 (38rem column) and item 5 (tick grey 130).
