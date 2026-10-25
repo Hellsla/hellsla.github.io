@@ -1,14 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 9a0ede1d5297ee3f
+CONTENT-HASH: cde315864fcce489
 
 ## Blocking
 
 ## Polish
-- inquiry.json pred-1 (Aino feedback) — the wrong-option feedback already states that Earth loses energy to space only as radiation, which is half of the model the table is meant to supply — shorten to a question ("Miten energia pääsee tyhjään avaruuteen?").
-- inquiry.json pred-1/pred-2 — the correct option (Bea) is the longest and carries the full mechanism; the choice is guessable by length — shorten Bea or lengthen Aino/Cem.
-- inquiry.json tase — the table hands over "ilmakehästä tulee alas 150", so the interpret item confirms rather than tests; Aino's conduction idea cannot be refuted by the table (the model excludes conduction) — add a row/column for pilvinen vs kirkas yö or ask the student to predict the sign of the missing row first.
-- lesson.md Ydinajatus/energiatasapaino paragraphs — 93 and 96 words, near the 120 limit; split the energy-balance paragraph after "pois pitkäaaltoisena lämpösäteilynä".
-- workload — hook, retrieval, 2 predictions, 2 tables, example, error item, transfer, 12 exercises, 3 checks, exit ticket is roughly 1.5 lessons; consider trimming check-2.
+- inquiry.json pred-1/pred-2/tase — the correct option is the longest and carries the full mechanism, so it is guessable by length — shorten Bea and the "tase" correct choice or lengthen the others.
+- inquiry.json tase — the table gives "ilmakehästä tulee alas 150" (after tase-ennusta has the student derive it), so Aino's conduction idea and Cem's storage idea are refuted by argument, not by the table — acceptable, but a cloudy vs clear night row would let the table test the hook.
+- lesson.md energiatasapaino paragraph (about 96 words) — near the limit; split after "pitkäaaltoisena lämpösäteilynä".
+- inquiry.json hook — "Ilmakehä ei itse tuota energiaa" in the opening question leans toward the answer; consider "Mitä ilmakehä tekee energialle?".
+- workload — about 1.5 lessons (two predictions, two tables, example, 12 exercises, three checks); consider trimming check-2.
 
 ## Checked
-Hash unchanged at start and end. Walked the preview at 390 px in Playwright: wrong prediction (Aino) committed, feedback shown and the correct option's pointer read; no horizontal scroll (390), figures legible. Prerequisite fy3-5 retrieval matches prior. Predictions argue-able; tables consistent (240/390/150, 236,4 + 1,2 per K = 3,0 K). Example staged in five steps; exercises 5/4/3 at the right levels; exit ticket tests the core idea. Finnish reads correctly.
+- Hash unchanged at start and end.
+- Playwright at 390 px: no horizontal scroll (scrollWidth 390); committed wrong prediction (Aino) with optional justification field, "Vastaa" buttons work.
+- Prior retrieval (fy3-5, ΔU = Q + W, steady state) matches `prior`.
+- Predictions are arguable and each wrong option's feedback repairs its misconception.
+- Table numbers consistent (240/150/390; 3,6 / 1,2 = 3,0 K).
+- Answers are not disclosed before commitment; the theory comes after the tables.
+- Example staged in 5 steps, solved symbolically first; exercises 5/4/3 at the right levels.
+- Exit ticket tests the core idea.
+- Figures present next to Ydinajatus and Kaava and legible in the 390 px screenshot.
+- Finnish reads correctly.
