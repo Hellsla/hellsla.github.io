@@ -98,8 +98,8 @@ new p5((p) => {
     p.noStroke(); p.fill(200, 40, 40); p.circle(px, py, 12);
 
     // axis text; the h-axis title sits under the tick labels, so the vertical guide (it ends at the axis) never reaches it
-    for (let v = 0; v <= pMax; v += step) say(boxes, `p${v}`, `${v}`, ts(11), 60, CH.x0 - 6, Y(v) + ts(4), 'r');
-    for (let d = 0; d <= H_MAX; d += 5) say(boxes, `h${d}`, `${d}`, ts(11), 60, X(d), CH.y0 + ts(14), 'c');
+    for (let v = 0; v <= pMax; v += step) say(boxes, `p${v}`, `${v}`, ts(11), 60, CH.x0 - 8, Y(v) + ts(4), 'r');
+    for (let d = 0; d <= H_MAX; d += 5) say(boxes, `h${d}`, `${d}`, ts(11), 60, X(d), CH.y0 + ts(16), 'c');
     const mt = meas('h (m)', ts(11));
     say(boxes, 'hTitle', 'h (m)', ts(11), 60, 596, boxes.h20[3] + 3 + mt.a, 'r');
     say(boxes, 'pTitle', overOnly ? 'ylipaine ρgh (kPa)' : 'paine p (kPa)', ts(12), 60, CH.x0 - 26, CH.y1 - ts(14));
