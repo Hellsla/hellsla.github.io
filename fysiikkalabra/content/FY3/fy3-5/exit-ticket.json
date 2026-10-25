@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kaasuun siirtyy lämpömäärä 300 J, ja kaasu laajenee tehden mäntään työn 120 J. Kuinka paljon kaasun sisäenergia muuttuu?",
+    "a": "Q = +300 J ja W = −120 J, koska systeemi tekee työtä ympäristöön. ΔU = 300 J − 120 J = 180 J, eli sisäenergia kasvaa 180 J."
+  },
+  {
+    "q": "Miksi lause ”kuumassa kivessä on paljon lämpöä” on fysiikan kannalta epätarkka? Mitä kivessä oikeasti on?",
+    "a": "Lämpö on energian siirtymistä lämpötilaeron vuoksi, ei kappaleen ominaisuus. Kivessä on sisäenergiaa ja sillä on korkea lämpötila; lämpöä siirtyy vasta, kun kivi koskettaa kylmempää kappaletta."
+  },
+  {
+    "q": "Termospullo on hyvin eristetty, eikä siihen tehdä työtä. Mitä sen sisällön sisäenergialle tapahtuu, ja mitä kuumalle kahville voi silti tapahtua pullon sisällä?",
+    "a": "Sisäenergia pysyy vakiona, koska energiaa ei siirry sisään eikä ulos. Pullon sisällä energia voi silti siirtyä kahvista pullon kylmempiin seiniin, kunnes lämpötilat tasoittuvat."
+  }
+]
