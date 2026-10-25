@@ -1,25 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 4fa8c934b1046f3e
+VERDICT: PASS
+CONTENT-HASH: 7a62f7e3fe7ca103
 
-The lesson tells one story: the pump question opens it, the theory separates temperature, internal energy and heat, ΔU = Q + W appears once with a clear sign diagram, and the example and misconception section both return to the pump. It builds on fy3-2 and fy3-3, leaves cmΔT and calorimetry to fy3-6, and keeps to the first law. Length and structure match fy3-2 and fy3-3. Two problems remain: L3-03 repeats a level-2 task, and one exit-ticket answer breaks the system boundary it sets up.
+The lesson does what its goals promise and tells one story. The pump question opens it. The theory separates temperature, internal energy and heat, and ΔU = Q + W appears once with a sign diagram. The example, the misconception section and L3-01 all return to the pump. The isolated system now has a definition (contrasted with fy3-3's "suljettu"), a glossary entry and an exit-ticket check whose system boundary holds. The new L3-03 is a real level-3 task: two paths with the same initial and final state, so ΔU is the same and Q and W depend on the path. It does not reach into cmΔT, which stays in fy3-6. Both blocking items from round 1 are fixed.
 
 ## Blocking
-- exercises.json:98 — L3-03 is L2-03 (exercises.json:64) again: a gas expands and does work, ΔU < 0 is given, find Q > 0. It does not even have the kJ conversion, so it is not a level-3 task. — Replace it with a real level-3 first-law task without cmΔT. Example: a cycle back to the initial state, so ΔU = 0 and net Q = −net W, with W from Fs or Pt.
-- exit-ticket.json:11–12 — The question makes the flask's contents the system. The answer then sends energy from the coffee to "pullon kylmempiin seiniin", which are outside that system, so the contents' U would fall. — Make the system "pullo ja sen sisältö", or keep the transfer inside the contents (coffee to cold milk).
 
 ## Polish
-- lesson.md:43 / exercises.json:82 — The example's closing remark (slow compression, Q = −W, ΔU = 0) gives away the reasoning of L3-01. Shorten it to a hint.
-- lesson.md:17 — "edellisellä oppitunnilla": the previous lesson is fy3-4. Work was in fy3-2. Write "aiemmin".
-- lesson.md:10 — "eristetty systeemi" is not in glossary.json or meta.glossary. Add it.
+- lesson.md:6 — L3-01, L3-03 and the example's closing remark (lesson.md:43) all rely on the converse: a gas whose temperature and amount stay the same keeps the same U. The lesson only says that U rises with temperature and depends on the amount. The converse appears in solutions.md:77 and :93, but with `solutions: first`, the L3-03 solution is not published. — After "…sen sisäenergia kasvaa.", add one sentence: "Kaasun sisäenergia riippuu käytännössä vain sen lämpötilasta ja määrästä, joten jos ne eivät muutu, ei muutu sisäenergiakaan."
 
 ## Checked
-- lint_lesson.py: 0 errors, 0 warnings
-- All goals and the MAOL first-law clarification are covered
-- ΔU = Q + W signs are consistent in the lesson, SVG, example, exercises and exit ticket
-- All 12 answers recomputed and matching
-- P = W/t and W = mgh come from fy3-2, so they are in scope
-- No overlap with fy3-6 (cmΔT, calorimetry)
-- Levels 5/4/3; the worked example is not repeated
-- lesson.md has 675 words (fy3-2: 703, fy3-3: 829), with the same sections
-- The meta glossary terms exist in glossary.json
-- sim: false, so there is no sim-spec to check
+- lint_lesson.py: 0 errors, 0 warnings. The hash was the same at the start and the end.
+- All 12 answers recomputed from answers.py and matching exercises.json.
+- New L3-03 (exercises.json:98): ΔU_A = 250 J, Q_B = 310 J. It is level 3 and differs from L2-03.
+- Exit ticket 3: the system is "termospullo ja sen sisältö", U stays constant, and the coffee-to-wall transfer is inside the system.
+- "eristetty systeemi" is in glossary.json and meta.glossary, and is defined at lesson.md:10.
+- lesson.md:6 and :17 say "oppitunnilla fy3-2", which is correct.
+- The example's closing remark is kept with "niin hitaasti" made explicit. L3-01 still has to compute W = Fs and justify ΔU = 0, so it does not repeat the remark.
+- P = W/t and W = mgh come from fy3-2; there is no cmΔT (that is fy3-6).
+- Levels 5/4/3, and the signs are consistent in the lesson, SVG, solutions and exit ticket.
+- lesson.md has 722 words (fy3-2: 703, fy3-3: 829), with the same sections.

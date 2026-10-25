@@ -3,7 +3,7 @@ CONTENT-HASH: 169cf2ec47db5201
 ## Blocking
 (none)
 ## Polish
-- solutions.md:90–93 — L3-03 writes subscripts as `Q_A`, `W_B`, `ΔU_A`, while L3-02 (line 84) uses Unicode `W₁`; no capital Unicode subscripts exist, so keep them, or use `Q(A)` / `Qᴀ`-free wording such as "tavan A lämpömäärä". Only cosmetic: with `meta.solutions` defaulting to `first`, this solution is not published.
+- solutions.md:90–93 — L3-03 writes subscripts as `Q_A`, `W_B`, `ΔU_A`, while L3-02 (line 84) uses Unicode `W₁`; Unicode has no capital subscripts, so either keep them or write them out in words, e.g. "tavan A lämpömäärä". Only cosmetic: with `meta.solutions` defaulting to `first`, this solution is not published.
 ## Checked
 - Hash 169cf2ec47db5201 before and after; lint 0/0 and check_latex ok, not repeated
 - ΔU = Q + W sign convention identical in lesson.md:15–17, all 12 solutions, answers.py header and exit ticket 1
