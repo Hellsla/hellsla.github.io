@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 33e3e35d87b23337
+CONTENT-HASH: a5d04c8a34f74850
 
-The lesson now delivers all three goals and tells one story. Heating and cooling are covered by Q = cmΔT and five level-1 tasks. The calorimetric measurement is covered by the worked example, the sim defaults that reproduce it, and the balance equation. The multi-term-equation skill was missing in round 1 and is now taught explicitly: under ## Kaava the equation is expanded, the T terms are collected and T is factored out. The result is displayed as a weighted mean, and the 35 °C misconception and exit-ticket q3 both rely on it. L2-01 (water–water, grams) and L2-04 (aluminium–water) practise solving for T. L3-01 solves the same equation for a mass. C = cm has its own display and is used consistently in the text, the exercises, exit q3 and the sim readout. The lesson is the longest in FY3 (986 words without the SVG; fy3-3 to fy3-5 run 601–861). The extra length is the derivation the goals require, so it is acceptable.
+Round 3 re-read after the fixer's changes. The lesson still tells one story: why sand and water heat differently, then Q = cmΔT, then C = cm, then the balance equation and its solution for T as a heat-capacity-weighted mean, then the calorimetric worked example (which the sim defaults reproduce), then the misconception (the 35 °C case rather than 50 °C), then the summary. The exercises (five level-1 tasks on Q, level 2 on mixing, power and rearrangement, level 3 on masses and scale reasoning) and the exit ticket (q3 uses the same weighted-mean idea, 50 °C and 65 °C) follow the same line. The fixer's edits are layout and polish only: the wide displays are split into rows, the paragraph is split, c_metalli replaces c_m, and the weighted-mean sentence is added after the 35 °C working. None of them change the story or the maths. Length is 1057 words without the SVG (986 in round 2), the longest FY3 lesson (others 601–865). The growth is about 70 words from the added intermediate row and the weighted-mean sentence; both serve the multi-term-equation goal, so the length is acceptable. Gold (content/_gold) is a stub of about 113 words and gives no usable length guide.
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:87 — The paragraph is about 140 words and does three jobs: significant figures, identifying the metal with the loss explanation, and comparing heat capacities. — Split it after "ilmaan." so the heat-capacity comparison stands as its own short paragraph.
-- lesson.md:99 — "Toisella rivillä yhtälö on jaettu puolittain kilogrammalla" leaves out that the brackets were also multiplied out on that line. — Write "jaettu puolittain kilogrammalla ja sulut kerrottu auki".
-- exercises.json:78–102 — No exercise asks for c from measured calorimeter data, so the experimental goal is practised only through the worked example. — Optional: rewrite one level-3 task as a determination of c that includes the vessel's heat capacity or a loss estimate.
+- lesson.md:87 — The worked example is now two paragraphs of about 100 and 45 words after the displays; the lesson is at its upper length limit. — Do not add more text in later rounds. If trimming is wanted, cut the repeated "luultavasti kuparia" explanation, not the derivation.
+- exercises.json:78 — Still no task that determines c from measured calorimeter data (the experimental goal is practised through the example and sim only). — Optional, as in round 2; not needed for PASS.
 
 ## Checked
-- Lint clean (0/0). Hash unchanged from start to finish of the review.
-- The goals in meta.json match curriculum.json, and each goal has theory, exercises and a sim or exit-ticket check.
-- The display at lesson.md:31–41 is algebraically correct, and the weighted-mean statement at line 42 matches the 50 °C/65 °C cases in exit-ticket q3.
-- C = cm is displayed once with C (J/K) named. The sign convention (Q < 0 on cooling, positive amounts in the balance) is explained at line 29.
-- L2-01: (160·95 + 40·8,0)/200 = 77,6 → 78 °C. L2-04: 51 543/1901 = 27,1 → 27 °C. Both are consistent with answers.py.
-- No exercise repeats the worked example (a determination of c). L2-01 is distinct from the old pan task L1-02.
-- Sim defaults (0,30 kg water at 20 °C, 0,200 kg copper at 100 °C) give 24,6 °C, as line 87 claims. L2-04 is reachable within the slider ranges.
-- FY3 scope kept: P = W/t in L2-02 comes from earlier FY3 lessons, and there are no phase changes (those belong to fy3-7).
+- Lint 0 errors, 0 warnings; check_layout.py fy3-6 OK at 360 px; hash a5d04c8a34f74850 at start and end.
+- Goals in meta.json match curriculum.json; each goal has theory, tasks and a sim or exit-ticket check.
+- Split displays at lesson.md:33-39, 81-83, 85-89, 94-100 are algebraically unchanged and read in order.
+- 35 °C working: 1,0(80 - T) = 3,0(T - 20) gives 140 = 4T, T = 35 °C; matches the weighted mean 140/4.
+- Text "Kolmannella rivillä" matches the row where the division by kg and the expansion happen.
+- "mitattu 0,1 K pienempi lukema" matches the sim default (24,6 °C for copper) and the 24,5 °C measurement.
+- Exit-ticket answers: 4190 / 450 about 9; (3 · 80 + 20) / 4 = 65 °C. Both consistent with the lesson.
+- solutions.md additions (ΔT row in L2-02, upper-limit remark in L3-02) agree with answers.py; the numbers are unchanged.
+- Scope: no phase changes (fy3-7), no vectors, no E_k; g not used.
