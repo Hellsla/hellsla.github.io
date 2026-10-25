@@ -145,3 +145,30 @@ details.solution .steps p{margin:0}
   h2{break-after:avoid}
 }
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
+
+/* Digital textbook: topic search, learning objectives, sequential navigation. */
+.catalog-search{margin:2rem 0 2.4rem;padding:1.25rem 1.5rem;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.catalog-search h2{margin:0 0 .35rem}
+.catalog-search p{font-size:.93rem;color:var(--ink-2);margin:.3rem 0 1rem}
+.catalog-search label{display:block;font-size:.9rem;font-weight:600;margin-bottom:.35rem}
+.catalog-search input{width:100%;min-height:48px;padding:.7rem .85rem;font:inherit;border:1px solid #767676;border-radius:12px;background:#fff;color:var(--ink)}
+.catalog-search input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.catalog-search #search-status{margin:.65rem 0;font-size:.85rem}
+.catalog-search .search-results{list-style:none;margin:.3rem 0 0;padding:0;max-height:440px;overflow-y:auto;border-top:1px solid var(--line)}
+.catalog-search .search-results li{display:flex;justify-content:space-between;align-items:center;gap:1rem;border-bottom:1px solid var(--line-2);padding:.55rem .1rem}
+.catalog-search .search-results a,.catalog-search .search-results .planned{font-size:.93rem}
+.catalog-search .search-results .planned{color:var(--ink-2)}
+.catalog-search .search-results small{font-size:.75rem;color:var(--ink-2);white-space:nowrap}
+.catalog-search [hidden]{display:none!important}
+.lesson-goals{margin:1rem 0 1.7rem;padding:.8rem 1.05rem;background:var(--accent-soft);border:1px solid var(--line);border-radius:14px}
+.lesson-goals strong{font-size:.9rem;color:var(--accent-deep)}
+.lesson-goals ul{margin:.4rem 0 0;padding-left:1.2rem}
+.lesson-goals li{font-size:.94rem;line-height:1.5;margin:.3rem 0}
+.lesson-pagination{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:2.5rem 0 0}
+.lesson-pagination a{display:flex;flex-direction:column;justify-content:center;gap:.1rem;padding:.8rem 1rem;min-height:80px;background:var(--surface);border:1px solid var(--line);border-radius:14px;text-decoration:none;overflow-wrap:anywhere}
+.lesson-pagination a:hover{border-color:var(--accent)}
+.lesson-pagination span{color:var(--ink-2);font-size:.75rem}
+.lesson-pagination strong{font:500 1rem/1.35 var(--serif)}
+.lesson-pagination .next{grid-column:2;text-align:right}
+@media(max-width:560px){.catalog-search{padding:1rem}.lesson-pagination strong{font-size:.9rem}.lesson-pagination a{padding:.7rem}}
+@media print{.catalog-search,.lesson-pagination{display:none!important}}

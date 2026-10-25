@@ -56,6 +56,54 @@
     update();
   }
 
+
+  // One source of truth for objectives and sequential lesson links.
+  // Unreviewed lessons cannot appear in the published site's catalogue.
+  const filename = window.location.pathname.split('/').pop();
+  if (/^fy[1-8]-\d+\.html$/i.test(filename)) {
+    const id = filename.replace(/\.html$/i, '');
+    fetch('catalogue.json').then((r) => {
+      if (!r.ok) throw Error('Catalogue unavailable');
+      return r.json();
+    }).then((entries) => {
+      const current = entries.find((e) => e.id === id && e.published);
+      if (!current) return;
+      const article = document.getElementById('teoria');
+      const h1 = article?.querySelector('h1');
+      if (h1 && current.goals?.length) {
+        const aside = document.createElement('aside');
+        const header = document.createElement('strong');
+        aside.className = 'lesson-goals';
+        aside.setAttribute('aria-label', 'Oppimistavoitteet');
+        header.textContent = 'Oppimistavoitteet';
+        const list = document.createElement('ul');
+        for (const goal of current.goals) {
+          const li = document.createElement('li');
+          li.textContent = goal.replace(/^(?:LOPS \w+:|Täsmennys:|Taidot:|Temaattinen tarkastelu:)\s*/, '');
+          list.appendChild(li);
+        }
+        aside.append(header, list);
+        h1.after(aside);
+      }
+      const peers = entries.filter((e) => e.course === current.course && e.published);
+      const at = peers.findIndex((e) => e.id === id);
+      const nav = document.createElement('nav');
+      nav.className = 'lesson-pagination';
+      nav.setAttribute('aria-label', 'Oppituntien selaus');
+      const add = (entry, title, cls) => {
+        const a = document.createElement('a');
+        const small = document.createElement('span');
+        const strong = document.createElement('strong');
+        a.href = entry.id + '.html'; a.className = cls;
+        small.textContent = title; strong.textContent = entry.title;
+        a.append(small, strong); nav.appendChild(a);
+      };
+      if (at > 0) add(peers[at - 1], '← Edellinen oppitunti', 'previous');
+      if (at >= 0 && at < peers.length - 1) add(peers[at + 1], 'Seuraava oppitunti →', 'next');
+      if (nav.childElementCount) document.querySelector('main.reading')?.appendChild(nav);
+    }).catch(() => {}); // Existing course links work without this enhancement.
+  }
+
   let opened = [];
   window.addEventListener('beforeprint', () => {
     opened = [...document.querySelectorAll('details:not([open])')];

@@ -21,7 +21,7 @@ SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_o
 for old in SITE.glob("*.html"): old.unlink()          # no stale pages from an earlier build
 for old in SITE.glob("*-sim.js"): old.unlink()
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "catalogue.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
@@ -154,6 +154,13 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
 # links, the rest are listed as "tulossa" so students see the whole course and nav links always resolve.
 modules = [(k, v) for k, v in curriculum.items() if not k.startswith("_")]
 built_ids = {m["id"] for ms in built.values() for m in ms}
+catalogue_rows = [
+    {"id": lesson["id"], "course": code, "module": mod["title"],
+     "title": lesson["title"], "goals": lesson.get("goals", []),
+     "published": lesson["id"] in built_ids}
+    for code, mod in modules for lesson in mod.get("lessons", [])
+]
+(SITE / "catalogue.json").write_text(json.dumps(catalogue_rows, ensure_ascii=False, indent=2) + "\n")
 
 cards = ""
 for code, mod in modules:
@@ -185,6 +192,7 @@ for code, mod in modules:                       # most recently planned publishe
     for l in mod.get("lessons", []):
         if l["id"] in built_ids: latest = f'<p class="latest">Uusin oppitunti: <a href="{l["id"]}.html">{esc(l["title"])}</a> ({code})</p>'
 total = sum(len(m.get("lessons", [])) for _, m in modules)
+search_box_html = "<section class=\"catalog-search\" aria-labelledby=\"search-heading\">\n<h2 id=\"search-heading\">Etsi oppimateriaalia</h2>\n<p>Hae aihetta kaikista fysiikan moduuleista. Julkaistut oppitunnit voi avata suoraan.</p>\n<label for=\"lesson-search\">Hae oppituntia</label>\n<input id=\"lesson-search\" type=\"search\" placeholder=\"Esim. paine, lämpö, FY3\" autocomplete=\"off\" aria-controls=\"search-results\">\n<p id=\"search-status\" role=\"status\" aria-live=\"polite\"></p>\n<ul id=\"search-results\" class=\"search-results\" hidden></ul>\n<script src=\"catalogue.js\" defer></script>\n</section>"
 home = (
     '<section class="hero"><span class="eyebrow">Fysiikka · LOPS 2019 · Simulaatiot</span>'
     '<h1>Fysiikkalabra</h1>'
@@ -193,6 +201,7 @@ home = (
     '<ul class="how"><li><strong>Teoria</strong>lyhyesti ja yksi ajatus kerrallaan, kaavat selitettyinä.</li>'
     '<li><strong>Simulaatio</strong>jota voit säätää itse ja josta näet laskennan tulokset heti.</li>'
     '<li><strong>Tehtävät ja lähtölippu</strong>kolmella tasolla, vastaukset tarkistettavissa ja ratkaisut avattavissa.</li></ul>'
+    f'{search_box_html}'
     '<h2 id="moduulit">Moduulit</h2>' f'<div class="cards">{cards}</div>'
     f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
 (SITE / "index.html").write_text(page("Fysiikkalabra", home, "", "index.html",
