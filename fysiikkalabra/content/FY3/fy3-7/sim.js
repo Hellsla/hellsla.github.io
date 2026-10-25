@@ -129,7 +129,7 @@ new p5((p) => {
     // each other or the chart's tick labels (on a phone the text is about twice as large)
     p.fill(40); const cy = BK.top - 18, cBox = box(CONTENT[phase], BK.x + BK.w / 2, cy, p.CENTER, ts(14));
     label(CONTENT[phase], BK.x + BK.w / 2, cy, p.CENTER, ts(14));
-    const reading = `${fi(T, 0)} °C`, tickLeft = CH.x0 - 8 - box('120', 0, 0, p.LEFT, ts(11)).x1;
+    const reading = `${fi(T, 0)} °C`, tickLeft = CH.x0 - 10 - box('120', 0, 0, p.LEFT, ts(11)).x1;
     let rBox = box(reading, thx, cy, p.CENTER, ts(13)), ry = cy;
     if (hit(rBox, cBox, 6) || rBox.x1 > tickLeft - 6) { p.textSize(ts(13)); ry = cBox.y0 - 4 - p.textDescent(); }
     label(reading, thx, ry, p.CENTER, ts(13));
@@ -142,10 +142,10 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 5);
     for (let v = step; v <= tMax; v += step) p.line(X(v), CH.y0, X(v), CH.y0 + 4);                // a tick mark at every step
     p.noStroke(); p.fill(60);
-    for (let v = -20; v <= 120; v += 20) label(fi(v, 0), CH.x0 - 8, Y(v) + ts(4), p.RIGHT, ts(11));
+    for (let v = -20; v <= 120; v += 20) label(fi(v, 0), CH.x0 - 10, Y(v) + ts(4), p.RIGHT, ts(11));
     const every = k > 1.5 ? 2 : 1;                                                                // every second label on a phone
     for (let i = 0; i * step <= tMax; i += every) label(`${i * step}`, X(i * step), CH.y0 + ts(17), p.CENTER, ts(11));
-    label('t (s)', CH.x1 + 10, CH.y0 + ts(34), p.RIGHT, ts(12));                                  // below the tick labels
+    label('t (s)', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));                                  // below the tick labels
     label('T (°C)', CH.x0 + 6, CH.y1 - 14, p.LEFT, ts(12));                                       // above the T axis
     p.noFill(); p.stroke(205); p.strokeWeight(2); p.beginShape(); pts.forEach(([a, b]) => p.vertex(X(a), Y(b))); p.endShape();
     p.stroke(200, 60, 40); p.strokeWeight(3); p.beginShape();
