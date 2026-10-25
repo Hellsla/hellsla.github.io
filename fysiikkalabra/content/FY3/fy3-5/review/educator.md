@@ -1,21 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 4fa8c934b1046f3e
+VERDICT: PASS
+CONTENT-HASH: 7a62f7e3fe7ca103
 ## Blocking
-- exercises.json:98 (L3-03) — not level 3: one rearrangement of ΔU = Q + W, structurally identical to L2-03 (gas does work, ΔU decreases, find Q), minus the kJ→J step. — Make it combine two ideas, e.g. "Kaasu viedään kahdella tavalla samasta alkulämpötilasta samaan loppulämpötilaan, joten ΔU on molemmissa sama. A: kaasuun siirtyy 400 J ja se tekee työn 150 J. B: kaasu tekee työn 60 J. Kuinka suuri lämpömäärä siirtyy kaasuun B:ssä?" (310 J).
-- exit-ticket.json:11–12 — the system is "pullon sisältö", yet the answer keeps its U constant while energy flows from the coffee into the bottle's walls, i.e. out of that system. Wrong system boundary on the core idea. — Ask about "termospullo ja sen sisältö" as the isolated system; answer: system U constant, while the coffee's U decreases and the walls' increases by the same amount.
+(none)
 ## Polish
-- lesson.md:6 — fy3-2:10,61 says work "muuttuu lämmöksi"; this lesson calls that usage wrong without acknowledging it. — Add: "Edellisellä tunnilla sanottiin arkikielen tapaan, että työ muuttuu lämmöksi; tarkemmin työ kasvattaa sisäenergiaa."
-- lesson.md:8 — fy3-3 said compression makes no single collision harder; here compression heats the gas. — Add: "Liikkuva mäntä osuu hiukkasiin kuin maila palloon, ja ne kimpoavat nopeampina."
-- lesson.md:10,52 — "eristetty" is new, easily confused with fy3-3's "suljettu", missing from glossary.json. — Contrast them in one clause and add the term.
-- lesson.md:17 — L2-01 and L3-01 need W = Fs for the piston, not linked here. — Add: "Kun mäntä puristaa kaasua, työ lasketaan kuten fy3-2:ssa, W = Fs."
-- exercises.json:56,72 — L2-02 and L2-04 share one pattern (P·t, then add Q). — Ask for time or power in one.
+- lesson.md:6 — L3-01 ("perustele, miksi ilman sisäenergia ei muutu") and L3-03 ("perustele, miksi … sama") need "same temperature and amount, so same U". The lesson gives only one direction (T rises, so U grows) plus "depends on amount"; the "only" lives in solutions.md:77,93. A careful student can infer it from line 43, but stating it removes the guess. — After "…sen sisäenergia kasvaa." add: "Kaasun hiukkaset vuorovaikuttavat lähinnä vain törmätessään, joten kaasun sisäenergia riippuu käytännössä vain sen lämpötilasta ja määrästä."
+- exit-ticket.json:12 — lesson.md:10,52 say the isolated system's "kokonaisenergia" stays constant; the answer says its "sisäenergia" stays constant. Correct here (the bottle is at rest), but a student comparing the two may wonder whether they differ. — Start the answer with: "Termospullon ja sen sisällön kokonaisenergia, tässä sisäenergia, pysyy vakiona, …"
 ## Checked
-- Lint 0/0, not repeated
-- Prerequisites used (W = Fs, mgh, P = W/t, Joule, micro model of T) are taught in fy3-2/fy3-3
-- Motivating question is realistic and answered at line 8
-- One new idea per Ydinajatus paragraph
-- Sign convention given in words, figure and example
-- Counts 5/4/3; L1 direct, L2 two steps or a conversion
-- L3-01, L3-02 genuinely combine two ideas
+- Hash taken before and after review: unchanged; lint 0/0, not repeated
+- Round-1 blocking fixed: L3-03 is now a two-path task (state function + rearrangement), distinct from L2-03 and from the example
+- Round-1 blocking fixed: exit ticket Q3 uses "termospullo ja sen sisältö"; boundary and internal coffee→wall transfer now consistent
+- lesson.md:6 acknowledges fy3-2's "muuttuu lämmöksi"; lesson.md:8 piston-and-bat clause reconciles with fy3-3:8 (single collision not harder in mere compression)
+- lesson.md:10 "eristetty" defined against fy3-3's "suljettu"; term in glossary.json and meta.json
+- lesson.md:17 links piston work to fy3-2's force × distance; W = mgh and P = W/t are taught in fy3-2:23,27
+- Motivating question is one a student asks and is answered at line 8; one new idea per Ydinajatus paragraph
+- Levels 5/4/3: L1 direct ΔU = Q + W; L2 each two steps or conversion (L2-04 now P·t inverted, no longer a twin of L2-02); L3 all combine two ideas
 - No exercise repeats the worked example
-- Exit ticket Q1–Q2 test the formula and heat vs internal energy
+- Exit ticket tests formula with signs, heat vs internal energy, and conservation in an isolated system: the core ideas, not details

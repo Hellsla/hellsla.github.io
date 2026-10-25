@@ -458,5 +458,18 @@
       "paino"
     ],
     "locked": false
+  },
+  {
+    "term": "ylipaine",
+    "definition": "Paineen ero ympäröivään ilmanpaineeseen verrattuna, Δp = p − p₀. Nesteessä syvyydessä h ylipaine on hydrostaattinen paine ρgh, ja padon muuria tai vedenalaista ikkunaa kuormittaa juuri se.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "hydrostaattinen paine",
+      "ilmanpaine",
+      "paine"
+    ],
+    "locked": false
   }
 ]

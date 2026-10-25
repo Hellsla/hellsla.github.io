@@ -16,7 +16,8 @@
     "pascal",
     "hydrostaattinen paine",
     "ilmanpaine",
-    "tiheys"
+    "tiheys",
+    "ylipaine"
   ],
   "sim": true,
   "image": false,

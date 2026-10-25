@@ -9,8 +9,8 @@
 ## fy3-4-L1-02
 **Annettu:** h = 95 m, ρ = 1000 kg/m³, g = 9,81 m/s²
 **Kysytty:** hydrostaattinen paine ρgh
-**Kaava:** p_h = ρ g h
-**Sijoitus:** p_h = 1000 kg/m³ · 9,81 m/s² · 95 m = 931 950 Pa ≈ 932 kPa
+**Kaava:** Δp = ρ g h
+**Sijoitus:** Δp = 1000 kg/m³ · 9,81 m/s² · 95 m = 931 950 Pa ≈ 932 kPa
 **Vastaus:** 930 kPa
 **Järkevyys:** Paine kasvaa noin 10 kPa metriä kohti, joten 95 metrissä noin 950 kPa. Se on yli yhdeksän ilmanpaineen verran.
 
@@ -33,8 +33,8 @@
 ## fy3-4-L1-05
 **Annettu:** h = 0,45 m, ρ = 1000 kg/m³, g = 9,81 m/s²
 **Kysytty:** hydrostaattinen paine ρgh
-**Kaava:** p_h = ρ g h
-**Sijoitus:** p_h = 1000 kg/m³ · 9,81 m/s² · 0,45 m = 4414,5 Pa
+**Kaava:** Δp = ρ g h
+**Sijoitus:** Δp = 1000 kg/m³ · 9,81 m/s² · 0,45 m = 4414,5 Pa
 **Vastaus:** 4400 Pa
 **Järkevyys:** Vesi lisää painetta noin 10 kPa metriä kohti, joten alle puolessa metrissä noin 4–5 kPa.
 
@@ -47,17 +47,17 @@
 **Järkevyys:** Paine on noin 40 ilmanpaineen suuruinen. Siksi korko voi jättää lommon parkettiin, vaikka sama ihminen paljain jaloin ei jätä.
 
 ## fy3-4-L2-02
-**Annettu:** p_h = 350 kPa = 350 000 Pa, ρ = 1000 kg/m³, g = 9,81 m/s²
+**Annettu:** Δp = 350 kPa = 350 000 Pa, ρ = 1000 kg/m³, g = 9,81 m/s²
 **Kysytty:** korkeus h
-**Kaava:** p_h = ρ g h, josta h = p_h / (ρ g)
+**Kaava:** Δp = ρ g h, josta h = Δp / (ρ g)
 **Sijoitus:** h = 350 000 Pa / (1000 kg/m³ · 9,81 m/s²) = 35,68 m
 **Vastaus:** 35,7 m
 **Järkevyys:** Vesi antaa noin 10 kPa metriä kohti, joten 350 kPa vastaa noin 35 metriä. Vesitornit ovat juuri tämän korkuisia.
 
 ## fy3-4-L2-03
-**Annettu:** p_h = 7,22 kPa = 7220 Pa, h = 0,800 m, g = 9,81 m/s²
+**Annettu:** Δp = 7,22 kPa = 7220 Pa, h = 0,800 m, g = 9,81 m/s²
 **Kysytty:** tiheys ρ
-**Kaava:** p_h = ρ g h, josta ρ = p_h / (g h)
+**Kaava:** Δp = ρ g h, josta ρ = Δp / (g h)
 **Sijoitus:** ρ = 7220 Pa / (9,81 m/s² · 0,800 m) = 919,98 kg/m³
 **Vastaus:** 920 kg/m³
 **Järkevyys:** Öljy kelluu veden päällä, joten sen tiheyden pitää olla vähän alle 1000 kg/m³.
@@ -89,7 +89,7 @@
 ## fy3-4-L3-03
 **Annettu:** öljy: ρ₁ = 850 kg/m³, h₁ = 0,40 m; vesi: ρ₂ = 1000 kg/m³, h₂ = 1,60 m; g = 9,81 m/s²
 **Kysytty:** ylipaine pohjalla
-**Kaava:** pohjaa painavat molemmat kerrokset: p_h = ρ₁ g h₁ + ρ₂ g h₂
-**Sijoitus:** ρ₁gh₁ = 850 kg/m³ · 9,81 m/s² · 0,40 m = 3335,4 Pa; ρ₂gh₂ = 1000 kg/m³ · 9,81 m/s² · 1,60 m = 15 696 Pa; p_h = 19 031,4 Pa
+**Kaava:** pohjaa painavat molemmat kerrokset: Δp = ρ₁ g h₁ + ρ₂ g h₂
+**Sijoitus:** ρ₁gh₁ = 850 kg/m³ · 9,81 m/s² · 0,40 m = 3335,4 Pa; ρ₂gh₂ = 1000 kg/m³ · 9,81 m/s² · 1,60 m = 15 696 Pa; Δp = 19 031,4 Pa
 **Vastaus:** 19 kPa
 **Järkevyys:** Jos koko 2,00 m olisi vettä, ylipaine olisi 19,6 kPa. Öljy on kevyempää, joten tulos on vähän pienempi.
