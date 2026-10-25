@@ -1,23 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: e808e1517d619f4b
+VERDICT: PASS
+CONTENT-HASH: c28f74ef54584ec7
 
-The lesson still meets its goals and tells one story: interaction, then force, then the voimamittari (proportional stretch, calibration), then G = m g, and back to the opening astronaut question. It stays inside FY3: no motion and no vectors. The exercises, the exit ticket and the misconception section (bathroom scale, followed up in L3-03) cover the same threads. The proofreader's wording changes (lines 45 and 76) leave the story unchanged, and the length suits a first lesson. One regression: sim-spec.md now says the bar chart is scaled to the current mass, but the sentence after it still says the bars grow with the mass. Bar height is g_i/24,8 · 220 px, which does not depend on m, so the spec contradicts itself and the sim.
+The lesson does what its goals promise and tells one story. It goes from interaction to force, then to the voimamittari, then to G = m g with the g table, and ends back at the opening astronaut question. It stays inside FY3, with no motion and no vectors. The exercises, the exit ticket and the sim follow the same threads: weight on different bodies, proportional stretch, and mass versus weight (the bathroom scale in the misconception section returns in L3-03). The round-1 blocking issue is fixed. sim-spec.md now says that the spring and the arrow grow with the mass while the bars show the weight ratio, and this matches sim.js lines 45-52. The bar floor is now a safeguard ("varmuuden vuoksi"). lesson.md is unchanged, and its length (about 670 words) suits a first lesson.
 
 ## Blocking
-- sim-spec.md:1 — "Siksi jousi venyy ja palkit kasvavat näkyvästi, kun massaa kasvatetaan" is false now that the chart's full scale is m · 24,8 N. — Rewrite as "Siksi jousi venyy ja nuoli pitenee näkyvästi, kun massaa kasvatetaan, ja paino-ero eri taivaankappaleiden välillä näkyy palkeissa; palkkien lukuarvot ja asteikko kasvavat massan mukana."
+(none)
 
 ## Polish
-- sim-spec.md:1 — the 2 px minimum bar height can no longer take effect (the smallest bar, Kuu, is about 14 px at every mass). — Drop it or call it a safeguard.
-- lesson.md:57 — the voimamittari SVG sits under Esimerkki, which is about the robot. — Move it after line 32 in Ydinajatus.
-- lesson.md:30-38 — Ydinajatus has five paragraphs where gold has three. — Merge lines 32-36 into one paragraph.
+- lesson.md:33-43 — The voimamittari SVG sits under Esimerkki, but the example is about the robot. — Move the SVG to the end of Ydinajatus, after line 8. Left for the human in round 1; the line numbers given then were wrong.
+- lesson.md:6-14 — Ydinajatus has five paragraphs, while gold asks for three. — Merge lines 8, 10 and 12 into one voimamittari paragraph. Left for the human in round 1.
+- sim-spec.md:1 — "Tekstinä kankaan alla" does not mention the readout line that explains the bar scale (sim.js:50). — Add "sekä palkkikaavion asteikon selitys".
 
 ## Checked
-- Lint: 0 errors and 0 warnings. The editor hash was the same at the start and the end of the review.
-- meta.json goals match curriculum.json.
-- The opening question is answered at line 38 and in the misconception section.
-- Scope: g is given in N/kg, and the link to m/s² is deferred to FY4.
-- No exercise repeats the worked example.
-- Levels have 5/4/3 exercises and fit the CLAUDE.md definitions.
+- Lint: 0 errors, 0 warnings. The editor hash was the same at the start and the end.
+- The only change in editor files since 9e1104c is the sim-spec.md sentence, which uses my round-1 wording.
+- The sim-spec statements match sim.js: the fixed scale is 2480 N with a 110 px arrow, the chart's full scale is m · 24,8 N, there is a rest length, and the floors are 2 px for bars and 3 px for the arrow.
+- The bar floor never takes effect: the smallest bar (Kuu) is 1,62/24,8 · 220 ≈ 14 px at every mass.
+- meta.json goals match curriculum.json. FY1 covers putoamiskiihtyvyys (fy1-6), so the reference at line 21 is valid.
+- The g values in the sim match the table at lines 25-28.
+- The levels have 5, 4 and 3 exercises, and none repeats the robot example.
 - The exit ticket covers mass versus weight, stretch and the "kiloa" misconception.
-- Diff since 2f088fd in editor files: lesson.md lines 45 and 76, and the sim-spec.md bar-scale sentence.
-- sim.js lines 50-51: the bar scale depends on mass; the spring and arrow use a fixed scale.
