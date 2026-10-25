@@ -4,10 +4,15 @@
 // walls over the last second and a half, as force per wall length, and shown relative to the state
 // 300 K, 1,00 dm³ (= 100). In this model p is proportional to T / V, which the readout also states as
 // "teoria" so the measured value can be compared with it.
+// Effective box: a particle's centre bounces at distance R from each wall, so the centres move in a box of
+// (W - 2R) × (BOX.h - 2R). Both the measured pressure and its 300 K / 1,00 dm³ reference use these effective
+// lengths, and the drawn width is W = PX * V + 2R, so the effective width is exactly PX * V and the
+// measured value has no systematic offset from the theory value (only statistical fluctuation).
 // The readout is DOM text; the canvas only draws. p5.js 1.9 instance mode, 600×400. Exposes window.simState.
 new p5((p) => {
   const N = 80, R = 4, DT = 1 / 60, V_REF = 120;              // particles, radius, fixed time step, speed at 300 K (px/s)
-  const BOX = { x: 40, y: 80, h: 200 };                       // left wall and height; width = 200 px per dm³
+  const BOX = { x: 40, y: 80, h: 200 };                       // left wall and height; effective width = PX px per dm³
+  const PX = 192;                                             // effective width in px per dm³ (= 200 - 2R at 1,00 dm³)
   const WINDOW = 90;                                          // frames in the pressure window (1,5 s)
   let sT, sV, lT, lV, readout, parts = [], hist = [], lastT = null;
 
@@ -30,14 +35,14 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');
     [sT, lT] = slider(controls, 100, 600, 300, 10);           // lämpötila T (K)
     [sV, lV] = slider(controls, 0.5, 2, 1, 0.1);              // tilavuus V (dm³)
-    p.createP('Kun hiukkaset liikkuvat nopeammin tai astia on pienempi, ne osuvat seinään useammin ja kovempaa. Paine kasvaa.')
+    p.createP('Kun hiukkaset liikkuvat nopeammin, ne osuvat seinään useammin ja kovempaa. Kun astia on pienempi, ne osuvat seinään useammin. Molemmissa tapauksissa paine kasvaa. Mitattu paine vaihtelee hieman teoria-arvon ympärillä.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
   };
 
   p.draw = () => {
     const T = sT.value(), V = sV.value(), v = speed(T);
-    const W = 200 * V, right = BOX.x + W, top = BOX.y, bottom = BOX.y + BOX.h;
+    const W = PX * V + 2 * R, right = BOX.x + W, top = BOX.y, bottom = BOX.y + BOX.h;
     let ix = 0, iy = 0;                                       // momentum given to the x walls and y walls this frame
     for (const q of parts) {
       q.x += q.vx * v * DT; q.y += q.vy * v * DT;
@@ -49,8 +54,9 @@ new p5((p) => {
     hist.push([ix, iy]); if (hist.length > WINDOW) hist.shift();
     const t = hist.length * DT;
     const sx = hist.reduce((a, h) => a + h[0], 0), sy = hist.reduce((a, h) => a + h[1], 0);
-    const pMeas = (sx / (t * 2 * BOX.h) + sy / (t * 2 * W)) / 2;           // momentum per time per wall length, averaged over both axes
-    const pRef = N * V_REF * V_REF / (2 * 200 * BOX.h);                    // same model at 300 K and 1,00 dm³
+    const Wc = W - 2 * R, Hc = BOX.h - 2 * R;                              // effective box: where the particle centres can be
+    const pMeas = (sx / (t * 2 * Hc) + sy / (t * 2 * Wc)) / 2;             // momentum per time per wall length, averaged over both axes
+    const pRef = N * V_REF * V_REF / (2 * PX * Hc);                        // same model at 300 K and 1,00 dm³ (effective width PX)
     const pRel = 100 * pMeas / pRef, pTheory = 100 * (T / 300) / V;
     const theta = T - 273.15;
     lT.html(`Lämpötila T = ${T} K`); lV.html(`Tilavuus V = ${fi(V, 1)} dm³`);
@@ -72,7 +78,7 @@ new p5((p) => {
     const tx = 540, ty = 70, th = 220, level = th * (T - 100) / 500;
     p.stroke(60); p.strokeWeight(2); p.fill(255); p.rect(tx - 8, ty, 16, th, 8);
     p.noStroke(); p.fill(200, 60, 40); p.rect(tx - 6, ty + th - level - 2, 12, level + 2, 6); p.circle(tx, ty + th + 12, 30);
-    p.fill(90); p.textAlign(p.LEFT); p.textSize(ts(11)); p.text('600 K', tx + 14, ty + ts(8)); p.text('100 K', tx + 14, ty + th);
+    p.fill(90); p.textAlign(p.RIGHT); p.textSize(ts(11)); p.text('600 K', tx - 14, ty + ts(8)); p.text('100 K', tx - 14, ty + th);   // scale labels left of the tube, so they are not clipped
     p.textAlign(p.CENTER); p.text(`${T} K`, tx, ty + th + ts(46));
   };
 
