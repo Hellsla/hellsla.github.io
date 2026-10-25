@@ -1,13 +1,96 @@
 [
-  { "expr": "window.simState.G - window.simState.m * window.simState.g", "expected": 0, "tol": 1e-06, "note": "G equals m g with the default settings" },
-  { "expr": "window.simState.g", "expected": 9.81, "tol": 1e-06, "note": "default body is Maa with g = 9,81 N/kg" },
-  { "expr": "window.simState.G", "expected": 98.1, "tol": 1e-06, "note": "default mass 10 kg on Maa gives G = 98,1 N" },
-  { "setup": "const s=document.querySelector('#sim-root select'); s.value='Kuu'; document.querySelector('#sim-root input[type=range]').value=5;", "expr": "window.simState.G", "expected": 8.1, "tol": 1e-06, "note": "5 kg on Kuu (g = 1,62) -> G = 8,1 N" },
-  { "expr": "window.simState.m", "expected": 5, "tol": 0, "note": "mass is read from the slider and does not depend on the body" },
-  { "setup": "document.querySelector('#sim-root select').value='Mars'; document.querySelector('#sim-root input[type=range]').value=25;", "expr": "window.simState.G", "expected": 92.75, "tol": 1e-06, "note": "25 kg on Mars (g = 3,71) -> G = 92,75 N" },
-  { "setup": "document.querySelector('#sim-root select').value='Jupiter'; document.querySelector('#sim-root input[type=range]').value=100;", "expr": "window.simState.G", "expected": 2480, "tol": 1e-06, "note": "100 kg on Jupiter (g = 24,8) -> G = 2480 N" },
-  { "setup": "document.querySelector('#sim-root select').value='Maa'; document.querySelector('#sim-root input[type=range]').value=10;", "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('G = m · g = 98,1 N') && x.includes('g = 9,81 N/kg') ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "readout is DOM text: m = 10 kg, g = 9,81 N/kg, G = 98,1 N" },
-  { "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select option')].map(x=>x.textContent); return o.join(',')==='Kuu,Mars,Maa,Jupiter' ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "the select offers exactly Kuu, Mars, Maa, Jupiter" },
-  { "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "canvas is 600x400" },
-  { "expr": "(() => { const l=document.querySelector('#sim-root input[type=range]').parentElement.textContent; return /kg/.test(l) ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "the mass slider label carries the unit kg" }
+  {
+    "expr": "window.simState.G - window.simState.m * window.simState.g",
+    "expected": 0,
+    "tol": 1e-06,
+    "note": "G equals m g with the default settings"
+  },
+  {
+    "expr": "window.simState.g",
+    "expected": 9.81,
+    "tol": 1e-06,
+    "note": "default body is Maa with g = 9,81 N/kg"
+  },
+  {
+    "expr": "window.simState.G",
+    "expected": 98.1,
+    "tol": 1e-06,
+    "note": "default mass 10 kg on Maa gives G = 98,1 N"
+  },
+  {
+    "setup": "const s=document.querySelector('#sim-root select'); s.value='Kuu'; document.querySelector('#sim-root input[type=range]').value=5;",
+    "expr": "window.simState.G",
+    "expected": 8.1,
+    "tol": 1e-06,
+    "note": "5 kg on Kuu (g = 1,62) -> G = 8,1 N"
+  },
+  {
+    "expr": "window.simState.m",
+    "expected": 5,
+    "tol": 0,
+    "note": "mass is read from the slider and does not depend on the body"
+  },
+  {
+    "setup": "document.querySelector('#sim-root select').value='Mars'; document.querySelector('#sim-root input[type=range]').value=25;",
+    "expr": "window.simState.G",
+    "expected": 92.75,
+    "tol": 1e-06,
+    "note": "25 kg on Mars (g = 3,71) -> G = 92,75 N"
+  },
+  {
+    "setup": "document.querySelector('#sim-root select').value='Jupiter'; document.querySelector('#sim-root input[type=range]').value=100;",
+    "expr": "window.simState.G",
+    "expected": 2480,
+    "tol": 1e-06,
+    "note": "100 kg on Jupiter (g = 24,8) -> G = 2480 N"
+  },
+  {
+    "setup": "document.querySelector('#sim-root select').value='Maa'; document.querySelector('#sim-root input[type=range]').value=10;",
+    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('G = m · g = 98,1 N') && x.includes('g = 9,81 N/kg') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "readout is DOM text: m = 10 kg, g = 9,81 N/kg, G = 98,1 N"
+  },
+  {
+    "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select option')].map(x=>x.textContent); return o.join(',')==='Kuu,Mars,Maa,Jupiter' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "the select offers exactly Kuu, Mars, Maa, Jupiter"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600x400"
+  },
+  {
+    "expr": "(() => { const l=document.querySelector('#sim-root input[type=range]').parentElement.textContent; return /kg/.test(l) ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "the mass slider label carries the unit kg"
+  },
+  {
+    "expr": "(async () => { const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); const w=()=>new Promise(f=>setTimeout(f,200)); s.value='Maa'; r.value=10; await w(); const a=window.simState.stretch; r.value=100; await w(); const b=window.simState.stretch; return b>a*1.5 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "spring stretch grows with the mass slider (spring stretches in proportion to the weight G = m g)"
+  },
+  {
+    "expr": "(async () => { const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); const w=()=>new Promise(f=>setTimeout(f,200)); s.value='Kuu'; r.value=5; await w(); const a=window.simState.stretch/window.simState.G; s.value='Jupiter'; r.value=80; await w(); const b=window.simState.stretch/window.simState.G; return Math.abs(a-b)<0.01*a ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "spring stretch is proportional to G across bodies and masses (stretch/G constant)"
+  },
+  {
+    "expr": "(async () => { const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); const w=()=>new Promise(f=>setTimeout(f,200)); const out=[]; for (const b of ['Kuu','Mars','Maa','Jupiter']) { s.value=b; r.value=7; await w(); out.push(window.simState.stretch); } s.value='Maa'; r.value=10; await w(); return out[0]<out[1] && out[1]<out[2] && out[2]<out[3] ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "spring stretch grows Kuu < Mars < Maa < Jupiter for the same mass"
+  },
+  {
+    "expr": "(() => { const r=document.querySelector('#sim-root input[type=range]'); return r.min==='1' && r.max==='100' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "mass slider spans 1-100 kg"
+  }
 ]
