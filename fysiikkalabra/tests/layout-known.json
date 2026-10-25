@@ -1,0 +1,7 @@
+{
+  "_note": "Overflows at 360 px that are known and accepted until the lesson is reworked (PR 89 follow-ups). Each value is the start of the formula's LaTeX. Remove an entry when fixed; the check fails on stale entries.",
+  "fy3-3": [
+    "k = \\frac{(137 - 100)",
+    "\\theta = -\\frac{p_0}{k} = -\\frac{100"
+  ]
+}

@@ -5,13 +5,15 @@ With a lesson id that lesson is built regardless of status, for previewing a dra
 With --all every lesson is built regardless of status (CI uses this to test drafts too).
 The plain build writes to site/ (committed, served by GitHub Pages); a preview or --all build
 writes to preview/ (git-ignored), so a draft can never end up in the published folder.
+The plain build is atomic: the whole site is rendered into a temporary folder next to site/, checked, and only then
+swapped in. If anything fails, site/ is left exactly as it was and the temporary folder is removed.
 
 Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` lines (staged_example).
 The simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
 or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side answer check and, depending on
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
 """
-import json, sys, re, shutil, pathlib, html as _h, markdown
+import atexit, json, sys, re, shutil, pathlib, tempfile, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from gate import content_hash   # same hash as the gate
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -19,7 +21,14 @@ HOME = "../../index.html"                      # the portfolio front page, two l
 BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
 arg = sys.argv[1] if len(sys.argv) > 1 else None
 build_all = arg == "--all"; only = None if build_all else arg
-SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
+PUBLISHED = ROOT / "site"
+SITE = ROOT / ("preview" if (only or build_all) else "site")
+if SITE.name == "site":                               # atomic: render elsewhere, swap in at the end (see bottom of file)
+    for stale in ROOT.glob(".site-build-*"): shutil.rmtree(stale, ignore_errors=True)   # left by a killed build
+    SITE = pathlib.Path(tempfile.mkdtemp(prefix=".site-build-", dir=ROOT))
+    atexit.register(shutil.rmtree, SITE, True)        # runs on sys.exit and on exceptions; a no-op once swapped in
+else:
+    SITE.mkdir(exist_ok=True)
 def revising():
     """Published lessons whose source is under revision (gate.py --reopen): their live page is kept as is.
     A published lesson whose source drifted without --reopen stops the plain build before anything is touched,
@@ -34,12 +43,10 @@ def revising():
             sys.exit(f"{m['id']}: source edited after publication and not under revision; a plain build would put unreviewed "
                      f"content on the live site. Run `gate.py {m['id']} --reopen` (on the published source) or re-review it.")
     return out
-KEEP = revising() if SITE.name == "site" else {}
-if SITE.name == "site":                               # no stale pages in the published folder; preview/ is shared by
-    for old in SITE.glob("*.html"):                   # agents building at the same time, so it is never wiped
-        if old.stem not in KEEP: old.unlink()
-    for old in SITE.glob("*-sim.js"):
-        if old.name[:-7] not in KEEP: old.unlink()
+KEEP = revising() if SITE.parent == ROOT and SITE.name.startswith(".site-build-") else {}
+for lid in KEEP:                                      # a lesson under revision keeps the page the gate published
+    for name in (f"{lid}.html", f"{lid}-sim.js"):
+        if (PUBLISHED / name).exists(): shutil.copy(PUBLISHED / name, SITE / name)
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
@@ -240,4 +247,28 @@ home = (
     f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
 (SITE / "index.html").write_text(page("Fysiikkalabra", home, "", "index.html",
                                       "Teoria, simulaatiot ja tehtävät lukion fysiikkaan, LOPS 2019:n moduulit FY1–FY8.", main_class=""))
-print("built index +", len(modules), "module pages ->", SITE.relative_to(ROOT), f"({len(built_ids)} lessons)")
+print("built index +", len(modules), "module pages ->", ("site" if SITE.name.startswith(".site-build-") else SITE.name), f"({len(built_ids)} lessons)")
+
+
+def swap_in(new):
+    """Replace site/ by the finished build. Before that the build is checked: every page the build knows about exists
+    and is not empty. The old site is renamed aside first and restored if the second rename fails, so site/ is
+    always either the old complete site or the new complete one."""
+    expected = {"index.html", "lesson.js", "site.css", "sim-embed.js", *(f"{c}.html" for c, _ in modules),
+                *(f"{i}.html" for i in built_ids)}
+    broken = [n for n in sorted(expected) if not (new / n).is_file() or (new / n).stat().st_size == 0]
+    if broken or not (new / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
+    old = ROOT / ".site-old"
+    shutil.rmtree(old, ignore_errors=True)
+    if PUBLISHED.exists(): PUBLISHED.rename(old)
+    try:
+        new.rename(PUBLISHED)
+    except BaseException:
+        if old.exists(): old.rename(PUBLISHED)
+        raise
+    shutil.rmtree(old, ignore_errors=True)
+
+
+if SITE.name.startswith(".site-build-"):
+    swap_in(SITE)
+    print("site/ replaced atomically")

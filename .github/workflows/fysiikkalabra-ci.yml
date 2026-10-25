@@ -22,6 +22,16 @@ jobs:
       - run: pip install markdown playwright && playwright install --with-deps chromium
       - run: python scripts/lint_lesson.py --all
       - run: python scripts/build.py --all
+      # The committed site/ must be exactly what the committed sources, templates and assets render to. A change to
+      # templates/ or a lesson that was not rebuilt and committed (or a stale/extra file in site/) fails here.
+      # A green result only proves consistency; it is not review approval of the content or of shared assets.
+      - name: rebuild site/ and require no difference
+        run: |
+          python scripts/build.py
+          git add -N site
+          git diff --exit-code --stat -- site || { echo "::error::site/ is out of date: run python scripts/build.py and commit site/"; exit 1; }
+      - name: phone-width layout of the published pages (known issues in tests/layout-known.json)
+        run: python scripts/check_layout.py --dir site
       - run: python scripts/test_gate.py
       - run: python scripts/gate.py --verify
       - run: python scripts/test_sims.py

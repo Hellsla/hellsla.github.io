@@ -181,15 +181,20 @@ def gate(lid, publish, skip_checks):
     (review / "gate.md").write_text("\n".join(body) + "\n")
     print("\n".join(body))
     if ok and publish:
+        # Status and publication go together: meta.json says "reviewed" only while the plain build that publishes it
+        # has succeeded. The build reads the status from disk, so it is written first and put back if the build fails.
+        before = (folder / "meta.json").read_text()
         meta.pop("revision", None)
         meta.update({"status": "reviewed", "reviewed_by": GATE_NAME, "reviewed_on": str(datetime.date.today()), "reviewed_hash": h})
         (folder / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
-        with open(review / "history.log", "a") as log: log.write(f"{datetime.date.today()} {lid} PUBLISHED {h}\n")
         if not skip_checks:
             okb, out = run([sys.executable, str(SCRIPTS / "build.py")])
-            print("\npublished: site/ rebuilt" if okb else f"\nBUILD FAILED after publishing: {out}")
-            return 0 if okb else 1
-        print("\npublished (build skipped)")
+            if not okb:
+                (folder / "meta.json").write_text(before)
+                print(f"\nPUBLISH FAILED: the build failed, so {lid} is NOT marked reviewed and site/ is unchanged.\n{out}")
+                return 1
+        with open(review / "history.log", "a") as log: log.write(f"{datetime.date.today()} {lid} PUBLISHED {h}\n")
+        print("\npublished: site/ rebuilt" if not skip_checks else "\npublished (build skipped)")
     return 0 if ok else 1
 
 

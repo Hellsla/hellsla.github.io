@@ -3,3 +3,5 @@ preview/
 __pycache__/
 node_modules/
 docs/exams/
+.site-build-*/
+.site-old/

@@ -142,6 +142,52 @@ code, out = gate(t, LESSON, "--reopen"); expect("reopen a drifted source: refuse
 shutil.copytree(SRC / "templates", t / "templates")
 r = subprocess.run([sys.executable, str(t / "scripts/build.py")], capture_output=True, text=True, cwd=t)
 expect("plain build refuses a drifted published lesson", r.returncode != 0 and "unreviewed" in (r.stdout + r.stderr) and (site / f"{LESSON}.html").read_text() == "<p>julkaistu</p>", r.stdout + r.stderr)
+# 24. atomic build: a failure in the middle of the plain build leaves the previous complete site byte for byte
+OTHER = "fy3-4"
+def project_two():
+    """Temporary project with two lessons and the templates, both marked reviewed (the second sorts after the first)."""
+    t = project(); shutil.copytree(SRC / "templates", t / "templates")
+    shutil.copytree(SRC / "content/FY3" / OTHER, t / "content/FY3" / OTHER, ignore=shutil.ignore_patterns("review"))
+    for lid in (LESSON, OTHER):
+        f = t / "content/FY3" / lid / "meta.json"; m = json.loads(f.read_text()); m["status"] = "reviewed"; m.pop("revision", None); m.pop("reviewed_hash", None)
+        f.write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n")
+    return t
+def tree(d):
+    return {str(f.relative_to(d)): f.read_bytes() for f in sorted(d.rglob("*")) if f.is_file()}
+def leftovers(t): return [x.name for x in t.iterdir() if x.name.startswith((".site-build-", ".site-old"))]
+def plain_build(t): return subprocess.run([sys.executable, str(t / "scripts/build.py")], capture_output=True, text=True, cwd=t)
+t = project_two(); r = plain_build(t); good = tree(t / "site")
+expect("plain build writes a complete site", r.returncode == 0 and "replaced atomically" in r.stdout and f"{LESSON}.html" in good and f"{OTHER}.html" in good and "index.html" in good, r.stdout + r.stderr)
+expect("plain build leaves no temporary folder", not leftovers(t), str(leftovers(t)))
+(t / "content/FY3" / OTHER / "exit-ticket.json").write_text("{ not json")       # fails after the first lesson was already rendered
+r = plain_build(t)
+expect("mid-build failure: build fails", r.returncode != 0 and f"built {LESSON}" in r.stdout, r.stdout + r.stderr)
+expect("mid-build failure: previous complete site preserved", tree(t / "site") == good)
+expect("mid-build failure: temporary folder removed", not leftovers(t), str(leftovers(t)))
+(t / "content/FY3" / OTHER / "exit-ticket.json").unlink()                       # a missing file skips the lesson; the build must still be complete or refuse
+r = plain_build(t); expect("a skipped lesson never produces a half site", r.returncode == 0 and tree(t / "site").keys() >= {"index.html", f"{LESSON}.html"} and not leftovers(t), r.stdout + r.stderr)
+
+# 25. publication status integrity: a failing publication build never leaves the lesson marked reviewed
+PUB = "fy3-9"                                                  # lints clean as a draft, so the gate's own checks pass and only the build can fail
+LESSON = PUB                                                      # the helpers above read this global
+t = project(); shutil.copytree(SRC / "templates", t / "templates")
+shutil.copytree(SRC / "content/FY3" / OTHER, t / "content/FY3" / OTHER, ignore=shutil.ignore_patterns("review"))
+f = t / "content/FY3" / PUB / "meta.json"; m = json.loads(f.read_text())
+for k in ("reviewed_by", "reviewed_on", "reviewed_hash", "revision"): m.pop(k, None)
+m["status"] = "draft"; f.write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n"); reports(t)
+g = t / "content/FY3" / OTHER / "meta.json"; m = json.loads(g.read_text()); m["status"] = "reviewed"; m["reviewed_hash"] = "0" * 16; m.pop("revision", None)
+g.write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n")   # a published lesson edited without --reopen: the plain build refuses it
+before_meta, before_site = f.read_bytes(), (tree(t / "site") if (t / "site").exists() else {})
+def publish(t): return subprocess.run([sys.executable, str(t / "scripts/gate.py"), PUB, "--publish"], capture_output=True, text=True, env=dict(os.environ, FYSIIKKALABRA_ROOT=str(t)))
+r = publish(t); log = t / "content/FY3" / PUB / "review/history.log"
+expect("failed publication build: gate fails and says so", r.returncode == 1 and "PUBLISH FAILED" in r.stdout and "build --all: ok" in r.stdout, r.stdout + r.stderr)
+expect("failed publication build: lesson is not marked reviewed", f.read_bytes() == before_meta and json.loads(f.read_text())["status"] == "draft", f.read_text())
+expect("failed publication build: no PUBLISHED line in the history", not log.exists() or "PUBLISHED" not in log.read_text())
+expect("failed publication build: site unchanged, nothing left over", (tree(t / "site") if (t / "site").exists() else {}) == before_site and not leftovers(t))
+m = json.loads(g.read_text()); m.pop("reviewed_hash"); g.write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n")   # the cause is removed
+r = publish(t)
+expect("publication succeeds when the build succeeds", r.returncode == 0 and json.loads(f.read_text())["status"] == "reviewed" and (t / "site" / f"{PUB}.html").exists() and "PUBLISHED" in log.read_text(), r.stdout[-800:] + r.stderr)
+LESSON = "fy3-3"
 expect("real project untouched after the new tests", snapshot() == REAL)
 print("\n" + ("all gate tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
