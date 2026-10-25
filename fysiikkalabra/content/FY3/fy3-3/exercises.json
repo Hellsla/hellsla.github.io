@@ -61,8 +61,8 @@
     {
       "id": "fy3-3-L2-03",
       "level": 2,
-      "text": "Suljetussa jäykässä astiassa kaasun paine on 110 kPa lämpötilassa 10 °C ja 130 kPa lämpötilassa 80 °C. Oleta, että paine riippuu lämpötilasta lineaarisesti. Jatka suoraa mittausalueen ulkopuolelle ja määritä ekstrapoloimalla paine lämpötilassa −50 °C.",
-      "answer": 93,
+      "text": "Suljetussa jäykässä astiassa kaasun paine on 110 kPa lämpötilassa 10 °C ja 137 kPa lämpötilassa 80 °C. Oleta, että paine riippuu lämpötilasta lineaarisesti. Jatka suoraa mittausalueen ulkopuolelle ja määritä ekstrapoloimalla paine lämpötilassa −50 °C.",
+      "answer": 87,
       "unit": "kPa",
       "tolerance": 0.02
     },

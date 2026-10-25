@@ -313,19 +313,19 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Lämpenemiskäyrä",
-      "prompt": "Kattilaa lämmitetään 1500 W:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä (t, T) lämpötila on 100 °C:ssa vaakasuora hetkestä $t = 4{,}0\\,\\text{min}$ hetkeen $t = 19{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
+      "prompt": "Kattilaa lämmitetään 1500 W:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä (t, T) lämpötila on 100 °C:ssa vaakasuora hetkestä $t = 2{,}0\\,\\text{min}$ hetkeen $t = 17{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
       "answer": 0.597,
       "unit": "kg",
       "tolerance": 0.02,
       "hints": [
         "Mitä vaakasuoran osan aikana tapahtuu, ja kuinka pitkään se kestää?",
         "Vaakasuoralla osalla kaikki energia $Q = Pt$ kuluu höyrystämiseen, $Q = rm$, joten $m = \\dfrac{Pt}{r}$.",
-        "Kesto on $19{,}0\\,\\text{min} - 4{,}0\\,\\text{min} = 15{,}0\\,\\text{min} = 900\\,\\text{s}$, joten $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2260\\,\\text{kJ/kg}}$."
+        "Kesto on $17{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 15{,}0\\,\\text{min} = 900\\,\\text{s}$, joten $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2260\\,\\text{kJ/kg}}$."
       ],
       "mistakes": [
         {
-          "value": 0.757,
-          "feedback": "Käytit koko aikaa 19,0 min. Ensimmäiset 4,0 minuuttia vesi vasta lämpeni; höyrystymistä on vain vaakasuoran osan aika, 15,0 min."
+          "value": 0.677,
+          "feedback": "Käytit koko aikaa 17,0 min. Ensimmäiset 2,0 minuuttia vesi vasta lämpeni; höyrystymistä on vain vaakasuoran osan aika, 15,0 min."
         },
         {
           "value": 4.04,
