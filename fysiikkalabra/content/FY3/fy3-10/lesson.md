@@ -159,7 +159,7 @@ Juhlapallo täytetään heliumilla, kunnes sen tilavuus on 5,0 l. Pallossa paine
 <!-- vaihe -->
 **Tunnetut ja kysytty.** Muutetaan yksiköt perusyksiköiksi:
 
-- tilavuus $V = 5{,}0\,\text{l} = 0{,}0050\,\text{m}^3$
+- tilavuus $V = 5{,}0\,\textsf{l} = 0{,}0050\,\text{m}^3$
 - paine $p = 101\,\text{kPa}$, eli $p = 101\,000\,\text{Pa}$
 - lämpötila $T = (20 + 273{,}15)\,\text{K}$, eli $T = 293{,}15\,\text{K}$
 - moolimassa $M = 4{,}0\,\text{g/mol}$

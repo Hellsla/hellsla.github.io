@@ -12,7 +12,7 @@
 // exactly <vx²> = <vy²> = kT/m (the simulated temperature is the mean kinetic energy); a change of T rescales all speeds
 // by √(T_new/T_old). The physics runs in fixed steps of 1/240 s, so the result does not depend on the frame rate.
 // Picture: particle colour = speed (the same scale at every T, so a hotter gas turns orange), a trail = the path of the
-// last 0,06 s (length ∝ speed), a flash = one wall hit (more N, higher T or smaller V → more flashes = more pressure).
+// last 0,05 s (length ∝ speed), a flash = one wall hit (more N, higher T or smaller V → more flashes = more pressure).
 // The gauge and the bars share one scale; the gauge needle and the measured bar have the colour of the wall flashes.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and as test hooks
 // window.simAdvance(s) (runs s simulated seconds at once) and window.simRestart() (the state right after loading).
@@ -26,8 +26,8 @@ new p5((p) => {
   const GA = { x: 48, y: 31, r: 26 };                            // pressure gauge on the top wall
   const LV = { x0: 440, x1: 560, lo: 0.8, hi: 1.2 };             // ratio level: track ends and the range shown
   const MEAS = [205, 45, 125], FLASH = [255, 90, 175], PRED = [140, 147, 160];   // measured pressure, wall hit, prediction
-  const SLOW = [60, 130, 255], MID = [245, 215, 80], FAST = [255, 120, 30], VMAX = 480;   // speed scale 0…480 px/s
-  const TAIL = 0.06, HN = 256, FL = 30;                          // trail (s), stored hits, flash life (steps = 0,125 s)
+  const SLOW = [60, 130, 255], MID = [245, 215, 80], FAST = [255, 120, 30], VMAX = 420;   // speed scale 0…420 px/s
+  const TAIL = 0.05, HN = 256, FL = 30;                          // trail (s), stored hits, flash life (steps = 0,125 s)
   const mix = (a, b, f) => a.map((x, i) => Math.round(x + (b[i] - x) * f));
   const PAL = Array.from({ length: 32 }, (_, i) => i < 16 ? mix(SLOW, MID, i / 15.5) : mix(MID, FAST, (i - 16) / 15));
   const hw = new Int8Array(HN), hs = new Float32Array(HN), hv = new Float32Array(HN), hn = new Int32Array(HN);   // hit ring
@@ -152,8 +152,8 @@ new p5((p) => {
       let t = TAIL;
       if (q.vx) t = Math.min(t, Math.max(0, q.vx > 0 ? q.x / q.vx : (q.x - Lx) / q.vx));
       if (q.vy) t = Math.min(t, Math.max(0, q.vy > 0 ? q.y / q.vy : (q.y - LY) / q.vy));
-      const c = col(q); p.stroke(c[0], c[1], c[2], 110);
-      p.line(BOX.x + q.x, BOX.y + q.y, BOX.x + q.x - q.vx * t, BOX.y + q.y - q.vy * t);
+      const c = col(q), x = BOX.x + q.x, y = BOX.y + q.y, hx = x - q.vx * t / 2, hy = y - q.vy * t / 2;   // fading in 2 parts
+      p.stroke(c[0], c[1], c[2], 150); p.line(x, y, hx, hy); p.stroke(c[0], c[1], c[2], 60); p.line(hx, hy, x - q.vx * t, y - q.vy * t);
     }
     p.noStroke();
     for (const q of parts) { const c = col(q); p.fill(c[0], c[1], c[2]); p.circle(BOX.x + q.x, BOX.y + q.y, 2 * R + 1); }
@@ -185,19 +185,19 @@ new p5((p) => {
 
     // speed legend (top), volume as a dimension line and the flash legend (bottom)
     p.textSize(ts(12)); p.textAlign(p.LEFT); p.fill(40);
-    const lx0 = 90 + p.textWidth('hidas') + 6;
-    p.text('hidas', 90, yT); rect(lx0, yT - ts(4) - 4, 44, 8, grad(lx0, 0, lx0 + 44, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.text('nopea', lx0 + 50, yT);
-    const yD = 368, xm = Math.max(x0 + 2 + p.textWidth('V = 25 %') / 2, (x0 + xp) / 2);
+    const lx0 = 84 + p.textWidth('hidas') + 5, lw = k > 1.5 ? 32 : 44, xF = 404 - p.textWidth('osuma seinään');
+    p.text('hidas', 84, yT); rect(lx0, yT - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
+    p.text('nopea', lx0 + lw + 5, yT); p.text('osuma seinään', xF, 394);
+    p.fill(...FLASH); p.ellipse(xF - 10, 394 - ts(4), 5, 16); p.fill(255); p.ellipse(xF - 10, 394 - ts(4), 2, 8);
+    p.textSize(ts(13)); const wV = p.textWidth('V = 100 %') / 2, yD = 368;      // V label between the left edge and the legend
+    const xm = Math.min(xF - 22 - wV, Math.max(x0 + 2 + wV, (x0 + xp) / 2));
     p.stroke(80); p.strokeWeight(1.2); p.line(x0, yD, xp, yD); p.line(x0, yD - 5, x0, yD + 5); p.line(xp, yD - 5, xp, yD + 5);
     p.noStroke(); p.fill(80); p.triangle(x0, yD, x0 + 7, yD - 3.5, x0 + 7, yD + 3.5); p.triangle(xp, yD, xp - 7, yD - 3.5, xp - 7, yD + 3.5);
-    p.fill(40); p.textAlign(p.CENTER); p.textSize(ts(13)); p.text(`V = ${fi(Vrel * 100, 0)} %`, xm, 394);
-    p.fill(...FLASH); p.ellipse(244, 394 - ts(4), 5, 16); p.fill(255); p.ellipse(244, 394 - ts(4), 2, 8);
-    p.fill(40); p.textAlign(p.LEFT); p.textSize(ts(12)); p.text('osuma seinään', 254, 394);
+    p.fill(40); p.textAlign(p.CENTER); p.text(`V = ${fi(Vrel * 100, 0)} %`, xm, 394);
 
     // ratio measured/predicted as a level: bubble on a 0,8…1,2 track, green zone 0,95…1,05
     const lx = (r) => LV.x0 + (LV.x1 - LV.x0) * (Math.min(Math.max(r, LV.lo), LV.hi) - LV.lo) / (LV.hi - LV.lo), yL = yT + 16;
-    p.textAlign(p.RIGHT); p.textSize(ts(14)); p.text(`mitattu/ennuste = ${fi(ratio, 2)}`, 590, yT);
+    p.textAlign(p.RIGHT); p.textSize(ts(13)); p.text(`mitattu/ennuste = ${fi(ratio, 2)}`, 590, yT);
     p.stroke(150); p.strokeWeight(1); p.fill(238, 241, 236); p.rect(LV.x0 - 7, yL - 7, LV.x1 - LV.x0 + 14, 14, 7);
     p.noStroke(); p.fill(175, 222, 170); p.rect(lx(0.95), yL - 6, lx(1.05) - lx(0.95), 12);
     p.stroke(90); for (const r of [0.9, 1, 1.1]) { p.line(lx(r), yL - 7, lx(r), yL - 3); p.line(lx(r), yL + 3, lx(r), yL + 7); }
