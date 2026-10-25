@@ -63,7 +63,7 @@ def reviewer_rules(role):
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {{id}}>` run at the start and again at the end "
             f"(if it changed, the lesson was edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
             f"`## Polish` (at most five, same format; language, style and taste go here, never under Blocking), `## Checked` (at most ten one-line items). "
-            f"Never edit a lesson file. Tool calls: the two hash runs, one python call for arithmetic if needed, the report write, and (pedagogy) the screenshot reads — nothing else.\n")
+            f"Never edit a lesson file. Read nothing the packet already gives you; investigate what the judgement needs.\n")
 
 
 def packet(folder, role, fix=False):
@@ -76,13 +76,15 @@ def packet(folder, role, fix=False):
         if mode == "delta":
             prev = (folder / "review" / f"{role}.md").read_text()
             out += (f"## Delta review\nYou passed this lesson earlier (report below). Since then only the diff below changed ({sc['why']}). "
-                    f"Judge the diff and what it touches; the rest of the lesson is as you approved it. If the diff cannot be judged without rereading more, "
+                    f"Judge the diff in its context; the rest of the lesson is as you approved it (the current files are on disk if you need more context). If the change cannot be judged reliably this way, "
                     f"write `ESCALATE: full review needed` as line 3 of your report (verdict FAIL) and stop.\n\n### Your previous report\n```\n{prev.strip()}\n```\n"
                     f"### Changes since the version you passed\n```diff\n{sc['diff'].strip()}\n```\n")
         else:
             if sc["why"] not in ("no earlier PASS",): out += f"## Full review\nReason: {sc['why']}.\n"
             if role == "science":
                 for n in ("lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js"): out += file_block(folder, n)
+                shots = [p.relative_to(ROOT) for p in sorted((folder / "review").glob(f"{lid}-sim-*.png"))]
+                if shots: out += "\n### Simulation screenshots (open with the Read tool when the drawing matters)\n" + "\n".join(f"- {p}" for p in shots) + "\n"
             else:
                 for n in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md"): out += file_block(folder, n, collapse_svg=(n == "lesson.md"))
                 shots = [p.relative_to(ROOT) for p in sorted((folder / "review").glob(f"{lid}-*.png"))]

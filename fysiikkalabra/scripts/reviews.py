@@ -114,13 +114,18 @@ def hash_at(commit, folder):
 
 
 SVG_LINE = re.compile(r"^[+-]\s*<(/?svg|path|line|text|rect|circle|g|polyline|polygon|ellipse|defs|stop|linearGradient|marker|tspan|title)\b")
+SUBSTANTIVE = re.compile(r"[0-9]|\\\\|\$|=|[A-Za-z]_|[αβγδθλμρσωΔ°·×≈≤≥]")   # a number, LaTeX, an equation, a symbol or a unit sign
 
 
 def scope(folder):
     """For each reviewer: {'mode': 'full'|'delta', 'base': commit|None, 'why': ..., 'diff': unified diff}.
-    A delta review sees only the changes since the version that reviewer last passed. It is enough when the
-    changes are small and leave the physics data and the lesson's structure alone; otherwise the review is full.
-    The reviewer may still escalate a delta to a full review (ESCALATE in its report)."""
+    A delta review (the previous report plus the diff since the version that reviewer passed) is allowed only for
+    changes a reviewer can judge in context: wording in prose, solutions, task texts or the exit ticket that
+    touches no number, formula, symbol or unit, and no structure. Anything that can change the physics, the
+    simulation, the answers, the objectives or the progression makes the review full: any change to answers.py,
+    sim.js, tests/sims, an exercise answer/unit/tolerance/level, meta goals or prerequisites, a heading or stage,
+    an SVG figure, or any changed line that carries a number, LaTeX, an equation or a symbol. The reviewer may
+    still escalate a delta to a full review (ESCALATE in its report)."""
     rel, lid = folder.relative_to(ROOT), folder.name
     log = (git("log", "--format=%H", "-n", "60", "--", str(rel), f"tests/sims/{lid}.json") or "").split()
     out = {}
@@ -131,19 +136,21 @@ def scope(folder):
         if base is None: out[name] = {"mode": "full", "base": None, "why": "the version it passed is not in git history", "diff": ""}; continue
         diff = git("diff", base, "--", str(rel / "lesson.md"), str(rel / "exercises.json"), str(rel / "solutions.md"), str(rel / "answers.py"),
                    str(rel / "exit-ticket.json"), str(rel / "sim.js"), str(rel / "sim-spec.md"), str(rel / "meta.json"), f"tests/sims/{lid}.json") or ""
-        changed = [l for l in diff.splitlines() if (l.startswith("+") or l.startswith("-")) and not l.startswith(("+++", "---"))]
-        prose = [l for l in changed if not SVG_LINE.match(l)]
-        files = {l.split(" b/")[-1] for l in diff.splitlines() if l.startswith("diff --git")}
-        reasons = []
-        if "answers.py" in " ".join(files): reasons.append("answers.py changed")
-        if any(l[1:].lstrip().startswith(('"answer"', '"unit"', '"tolerance"', '"level"')) for l in changed): reasons.append("an answer, unit, tolerance or level changed")
-        if sum(1 for l in changed if l[1:].lstrip().startswith("## ") or "<!-- vaihe -->" in l): reasons.append("headings or stages changed")
-        if sum(1 for l in changed if l.startswith(("+", "-")) and "sim.js" in " ".join(files)) and \
-           sum(1 for blk in diff.split("diff --git")[1:] if "sim.js" in blk.split("\n", 1)[0] for l in blk.splitlines() if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))) > 10:
-            reasons.append("more than 10 lines of sim.js changed")
-        if len(prose) > 40: reasons.append(f"{len(prose)} changed lines (limit 40 for a delta)")
-        mode = "full" if reasons else "delta"
-        out[name] = {"mode": mode, "base": base, "why": "; ".join(reasons) if reasons else f"{len(prose)} changed lines in {', '.join(sorted(files)) or 'nothing'}", "diff": diff}
+        reasons, files, current = [], set(), None
+        for l in diff.splitlines():
+            if l.startswith("diff --git"): current = l.split(" b/")[-1].split("/")[-1]; files.add(current); continue
+            if not (l.startswith("+") or l.startswith("-")) or l.startswith(("+++", "---")): continue
+            body = l[1:]
+            if current in ("answers.py", "sim.js") or current.endswith(".json") and current.startswith(lid): reasons.append(f"{current} changed")
+            elif current == "exercises.json" and body.lstrip().startswith(('"answer"', '"unit"', '"tolerance"', '"level"', '"id"')): reasons.append("an answer, unit, tolerance or level changed")
+            elif current == "meta.json" and not body.lstrip().startswith(('"title"', '"glossary"', '"sim"', '"image"', '"solutions"')) and body.strip() not in ("{", "}", "[", "]", "],"): reasons.append("meta goals or prerequisites changed")
+            elif SVG_LINE.match(l): reasons.append("a figure changed")
+            elif body.lstrip().startswith("## ") or "<!-- vaihe -->" in body or body.lstrip().startswith("```"): reasons.append("headings, stages or a display block changed")
+            elif current in ("lesson.md", "solutions.md", "exercises.json", "exit-ticket.json", "sim-spec.md") and SUBSTANTIVE.search(body): reasons.append(f"{current}: a changed line carries a number, formula, symbol or unit")
+        changed = sum(1 for l in diff.splitlines() if (l.startswith("+") or l.startswith("-")) and not l.startswith(("+++", "---")))
+        why = sorted(set(reasons))
+        out[name] = {"mode": "full" if why else "delta", "base": base, "diff": diff,
+                     "why": "; ".join(why) if why else f"{changed} changed wording line(s) in {', '.join(sorted(files)) or 'nothing'}, no number, formula or structure"}
     return out
 
 
