@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaasun tekemä työ ja lämpövoimakone — Fysiikkalabra</title>
+<meta name="description" content="Miksi lämpövoimalaitos saa polttoaineen energiasta sähköksi vain alle puolet, ja minne loput energiasta menee?">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy3-11.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fysiikkalabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Kaasun tekemä työ ja lämpövoimakone">
+<meta property="og:description" content="Miksi lämpövoimalaitos saa polttoaineen energiasta sähköksi vain alle puolet, ja minne loput energiasta menee?">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy3-11.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Fysiikkalabra, etusivu"><span class="brand-mark">F</span><span class="brand-name">Fysiikkalabra</span></a>
+  <nav aria-label="Päävalikko"><a href="index.html#moduulit">Moduulit</a><a class="pill" href="../../index.html">← Portfolio</a></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Fysiikkalabra</a> › <a href="FY3.html">FY3</a> › Kaasun tekemä työ ja lämpövoimakone</nav>
+
+<nav class="toc" aria-label="Sivun osat"><a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a></nav>
+<main class="reading">
+<article id="teoria"><h1>Kaasun tekemä työ ja lämpövoimakone</h1>
+<blockquote>
+<p><strong>Miksi</strong> lämpövoimalaitos saa polttoaineen energiasta sähköksi vain alle puolet, ja minne loput energiasta menee?</p>
+</blockquote>
+<h2>Ydinajatus</h2>
+<p>Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mäntää voimalla $F = pA$, missä $A$ on männän pinta-ala. Jos mäntä liikkuu matkan $s$ ja paine pysyy samana, kaasun tekemä työ on voima kertaa matka: $W = Fs = pAs$. Tulo $As$ on kaasun tilavuuden muutos $\Delta V$, joten työ on $p\,\Delta V$. (V, p)-kuvaajassa työ on kuvaajan ja V-akselin väliin jäävä pinta-ala, samoin kuin (s, F)-kuvaajassa. Kun kaasua puristetaan, ympäristö tekee työtä kaasuun. Termodynamiikan ensimmäisessä pääsäännössä ($\Delta U = Q + W$) työ $W$ tarkoittaa ympäristön kaasuun tekemää työtä, joten laajenevalle kaasulle se on $-p\,\Delta V$.</p>
+<p>Lämpövoimakone muuttaa lämpöä jatkuvasti työksi. Höyryvoimalaitoksessa vesi kiehuu kattilassa, kuuma höyry laajenee turbiinissa ja pyörittää generaattoria, ja turbiinista tuleva höyry tiivistyy jälleen vedeksi lauhduttimessa, jota merivesi jäähdyttää. Työaine kiertää samaa rataa yhä uudelleen, joten kierroksen lopussa sen sisäenergia on sama kuin alussa. Energia säilyy: koneeseen kuumasta lähteestä tullut lämpö $Q_1$ on yhtä suuri kuin koneen tekemä työ $W$ ja kylmempään ympäristöön luovutettu lämpö $Q_2$ yhteensä.</p>
+<p>Kokemus osoittaa, ettei lämpövoimakone voi muuttaa kaikkea saamaansa lämpöä työksi, vaan osa on aina luovutettava kylmempään ympäristöön. Tämä on termodynamiikan toisen pääsäännön sisältö. Mitä suurempi on kuuman lähteen ja kylmän ympäristön lämpötilaero, sitä suuremman osan lämmöstä kone voi muuttaa työksi.</p>
+<p><svg viewBox="0 0 600 300" role="img" aria-label="Lämpövoimakoneen energiavirrat nuolina, joiden leveys kuvaa energiavirtaa eli tehoa: kuumasta lähteestä, jonka lämpötila on T1, tulee koneeseen lämpö Q1. Kone tekee työn W, joka on noin 40 prosenttia Q1:stä, ja luovuttaa loput, lämmön Q2, kylmään ympäristöön, jonka lämpötila on T2. Q1-nuoli on yhtä leveä kuin W- ja Q2-nuolet yhteensä. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <rect x="150" y="6" width="300" height="54" rx="10" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-width="2"/>
+  <text x="258" y="42" text-anchor="middle" fill="currentColor">kuuma lähde</text>
+  <foreignObject x="352" y="6" width="94" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$T_1$</div></foreignObject>
+  <rect x="150" y="240" width="300" height="54" rx="10" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="250" y="276" text-anchor="middle" fill="currentColor">kylmä ympäristö</text>
+  <foreignObject x="356" y="244" width="90" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$T_2$</div></foreignObject>
+  <rect x="270" y="60" width="60" height="38" fill="currentColor" fill-opacity="0.55"/>
+  <polygon points="260,98 340,98 300,112" fill="currentColor" fill-opacity="0.55"/>
+  <foreignObject x="350" y="60" width="90" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q_1$</div></foreignObject>
+  <circle cx="300" cy="150" r="44" fill="none" stroke="currentColor" stroke-width="3"/>
+  <text x="300" y="158" text-anchor="middle" fill="currentColor">kone</text>
+  <rect x="344" y="138" width="126" height="24" fill="currentColor" fill-opacity="0.85"/>
+  <polygon points="470,128 470,172 496,150" fill="currentColor" fill-opacity="0.85"/>
+  <foreignObject x="502" y="124" width="90" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$W$</div></foreignObject>
+  <rect x="282" y="194" width="36" height="34" fill="currentColor" fill-opacity="0.3"/>
+  <polygon points="272,228 328,228 300,240" fill="currentColor" fill-opacity="0.3"/>
+  <foreignObject x="340" y="184" width="90" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q_2$</div></foreignObject>
+  <text x="20" y="138" fill="currentColor">nuolen leveys</text>
+  <text x="20" y="168" fill="currentColor">kuvaa tehoa</text>
+</svg></p>
+<p>Hyötysuhde kertoo, kuinka suuri osa koneeseen tuodusta energiasta saadaan hyödyksi. Suomalainen lauhdevoimalaitos, joka tuottaa vain sähköä, saa polttoaineen energiasta sähköksi noin 40 %, ja ydinvoimalaitos noin 35 %. Loput siirtyvät lauhduttimen kautta mereen. Automoottorin hyötysuhde on noin 30 %, ja loput energiasta poistuu pakokaasujen ja jäähdyttimen mukana. Sähkön ja lämmön yhteistuotannossa lauhduttimesta tuleva lämpö johdetaan kaukolämpöverkkoon kaupungin taloihin, joten polttoaineen energiasta saadaan hyödyksi sähkönä ja lämpönä yhteensä 85–90 %. Tämä vastaa alun kysymykseen: sähköksi saadaan alle puolet, mutta loput eivät katoa, vaan siirtyvät lämpönä ympäristöön tai kaukolämpöverkkoon.</p>
+<p>Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone: ne käyttävät työtä, yleensä sähköä, ja siirtävät sen avulla lämpöä kylmästä paikasta lämpimään. Jääkaappi siirtää lämpöä kaapin sisältä huoneeseen, ja ilmalämpöpumppu ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja käytetyn sähkön summa, joten pumppu voi lämmittää taloa esimerkiksi kolminkertaisella teholla käyttämäänsä sähkötehoon verrattuna. Tätä lämpötehon ja sähkötehon suhdetta sanotaan lämpökertoimeksi. Pumppu ei luo energiaa, vaan siirtää sitä.</p>
+<p><svg viewBox="0 0 600 300" role="img" aria-label="Lämpöpumpun energiavirrat nuolina, joiden leveys kuvaa tehoa: sähkö W ja ulkoilmasta otettu lämpö Q_ulko tulevat pumppuun, ja pumppu luovuttaa sisälle lämmön Q_sisälle, joka on niiden summa. Sisälle lähtevä nuoli on yhtä leveä kuin kaksi tulevaa nuolta yhteensä, ja se on kolme kertaa niin leveä kuin sähkön nuoli. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <text x="30" y="86" fill="currentColor">sähkö</text>
+  <foreignObject x="104" y="58" width="70" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$W$</div></foreignObject>
+  <rect x="30" y="105" width="200" height="20" fill="currentColor" fill-opacity="0.85"/>
+  <rect x="30" y="135" width="200" height="40" fill="currentColor" fill-opacity="0.3"/>
+  <text x="30" y="206" fill="currentColor">ulkoilman lämpö</text>
+  <foreignObject x="30" y="214" width="120" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q_\text{ulko}$</div></foreignObject>
+  <rect x="230" y="92" width="130" height="96" rx="10" fill="none" stroke="currentColor" stroke-width="3"/>
+  <text x="295" y="148" text-anchor="middle" fill="currentColor">pumppu</text>
+  <rect x="360" y="110" width="150" height="60" fill="currentColor" fill-opacity="0.55"/>
+  <polygon points="510,96 510,184 560,140" fill="currentColor" fill-opacity="0.55"/>
+  <text x="372" y="86" fill="currentColor">lämpö sisälle</text>
+  <foreignObject x="372" y="194" width="150" height="54" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q_\text{sisälle}$</div></foreignObject>
+  <text x="590" y="288" text-anchor="end" fill="currentColor">leveys kuvaa tehoa</text>
+</svg></p>
+<h2>Kaava</h2>
+<p>Kun kaasun paine pysyy vakiona, kaasun tekemä työ on</p>
+<p>$$W = p\,\Delta V$$</p>
+<p>missä $W$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta V$ kaasun tilavuuden muutos (m³). Työ on positiivinen, kun kaasu laajenee, ja negatiivinen, kun kaasua puristetaan. Tässä $W$ on kaasun tekemä työ, kun taas oppitunnin fy3-5 ensimmäisessä pääsäännössä $\Delta U = Q + W$ työ $W$ on ympäristön kaasuun tekemä työ, joten laajenevalle kaasulle siinä $W = -p\,\Delta V$.</p>
+<p>Lämpövoimakoneen tekemä työ ja hyötysuhde ovat</p>
+<p>$$W = Q_1 - Q_2$$</p>
+<p>$$\eta = \frac{W}{Q_1}$$</p>
+<p>missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylmempään ympäristöön luovutettu lämpö (J), $W$ koneen tekemä työ (J) ja $\eta$ hyötysuhde, joka ilmoitetaan usein prosentteina. Hyötysuhde voidaan laskea samalla tavalla tehoista, esimerkiksi sähköteho jaettuna polttoaineteholla.</p>
+<p><svg viewBox="0 0 600 300" role="img" aria-label="(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V1 arvoon V2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos delta V ja korkeus p, on kaasun tekemä työ W = p kertaa delta V. Kaaviokuva." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <rect x="180" y="100" width="280" height="140" fill="currentColor" fill-opacity="0.2"/>
+  <line x1="70" y1="240" x2="566" y2="240" stroke="currentColor" stroke-width="3"/>
+  <polygon points="578,240 564,233 564,247" fill="currentColor"/>
+  <line x1="70" y1="240" x2="70" y2="24" stroke="currentColor" stroke-width="3"/>
+  <polygon points="70,12 63,26 77,26" fill="currentColor"/>
+  <line x1="70" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="180" y1="100" x2="460" y2="100" stroke="currentColor" stroke-width="4"/>
+  <polygon points="336,100 318,91 318,109" fill="currentColor"/>
+  <text x="320" y="84" text-anchor="middle" fill="currentColor">kaasu laajenee</text>
+  <line x1="194" y1="214" x2="446" y2="214" stroke="currentColor" stroke-width="2"/>
+  <polygon points="184,214 198,207 198,221" fill="currentColor"/>
+  <polygon points="456,214 442,207 442,221" fill="currentColor"/>
+  <foreignObject x="84" y="4" width="44" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$p$</div></foreignObject>
+  <foreignObject x="22" y="78" width="40" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$p$</div></foreignObject>
+  <foreignObject x="540" y="248" width="50" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$V$</div></foreignObject>
+  <foreignObject x="152" y="248" width="60" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$V_1$</div></foreignObject>
+  <foreignObject x="430" y="248" width="60" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$V_2$</div></foreignObject>
+  <foreignObject x="225" y="112" width="190" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$W = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="285" y="160" width="70" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\Delta V$</div></foreignObject>
+</svg></p>
+<p>Lämpöpumppu luovuttaa sisälle lämmön, joka on ulkoilmasta otetun lämmön ja pumpun käyttämän sähköenergian summa:</p>
+<p>$$Q_\text{sisälle} = Q_\text{ulko} + W$$</p>
+<p>Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle käyttämäänsä sähköenergiaan verrattuna:</p>
+<p>$$\varepsilon = \frac{Q_\text{sisälle}}{W}$$</p>
+<p>missä $Q_\text{sisälle}$ on sisälle luovutettu lämpö (J), $Q_\text{ulko}$ ulkoilmasta otettu lämpö (J), $W$ pumpun käyttämä sähköenergia eli sähkön tekemä työ (J) ja $\varepsilon$ lämpökerroin. Lämpökerroin voidaan laskea samalla tavalla tehoista.</p>
+<section id="sim"><h2>Simulaatio</h2><div id="sim-root"></div><script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="fy3-11-sim.js"></script></section><h2>Esimerkki</h2><p>Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla 500 MW. Kun laitos tuottaa pelkkää sähköä, sähköteho on 190 MW. Talvella sama laitos toimii yhteistuotantovoimalaitoksena: se tuottaa 150 MW sähköä ja 290 MW kaukolämpöä. Mikä on hyötysuhde kummassakin tapauksessa, ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?</p><div class="worked" data-steps="5"><div class="step" data-step="1"><p class="step-label">Vaihe 1/5</p><p><strong>Tunnetut ja kysytty.</strong> Polttoaineteho $P_1 = 500\,\text{MW}$. Pelkkää sähköä tuotettaessa sähköteho $P_\text{s} = 190\,\text{MW}$; yhteistuotannossa $P_\text{s} = 150\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 290\,\text{MW}$. Kysytään hyötysuhteita ja hukkalämmön tehoa $P_2$. Hyötysuhde lasketaan tehoista samoin kuin energioista.</p></div><div class="step" data-step="2"><p class="step-label">Vaihe 2/5</p><p><strong>Kaavat ratkaistuina.</strong> Hyötysuhde on hyödyksi saatu teho jaettuna syötetyllä teholla, ja energia säilyy, joten hukkalämpö on se osa, joka ei tule hyödyksi:</p>
+<p>$$\begin{aligned}
+\eta &= \frac{P_\text{hyöty}}{P_1} \\
+P_2 &= P_1 - P_\text{hyöty}
+\end{aligned}$$</p></div><div class="step" data-step="3"><p class="step-label">Vaihe 3/5</p><p><strong>Pelkkä sähkö.</strong> Nyt hyödyksi saadaan vain sähkö, $P_\text{hyöty} = P_\text{s}$:</p>
+<p>$$\begin{aligned}
+\eta &= \frac{P_\text{s}}{P_1} \\
+&= \frac{190\,\text{MW}}{500\,\text{MW}} \\
+&= 0{,}38 = 38\,\% \\
+P_2 &= P_1 - P_\text{s} \\
+&= 500\,\text{MW} - 190\,\text{MW} \\
+&= 310\,\text{MW}
+\end{aligned}$$</p>
+<p>Hukkalämpö siirtyy lauhduttimen kautta mereen.</p></div><div class="step" data-step="4"><p class="step-label">Vaihe 4/5</p><p><strong>Yhteistuotanto.</strong> Hyödyksi saadaan sähkö ja kaukolämpö, $P_\text{hyöty} = P_\text{s} + P_\text{k}$:</p>
+<p>$$\begin{aligned}
+\eta &= \frac{P_\text{s} + P_\text{k}}{P_1} \\
+&= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}} \\
+&= 0{,}88 = 88\,\% \\
+P_2 &= P_1 - (P_\text{s} + P_\text{k}) \\
+&= 500\,\text{MW} - 440\,\text{MW} \\
+&= 60\,\text{MW}
+\end{aligned}$$</p></div><div class="step" data-step="5"><p class="step-label">Vaihe 5/5</p><p><strong>Järkevyys.</strong> Sähköä saadaan yhteistuotannossa vähemmän, koska höyry lauhdutetaan korkeammassa lämpötilassa, jotta sen lämpö kelpaa kaukolämmöksi. Polttoaineen energia käytetään silti paljon paremmin hyödyksi, ja kumpikin hyötysuhde jää alle 100 %:n, kuten pitääkin.</p></div><p class="step-controls"><button type="button" class="next-step">Näytä seuraava vaihe</button> <button type="button" class="all-steps">Näytä kaikki</button></p></div><h2>Yleinen virhekäsitys</h2>
+<p>Moni ajattelee, että parempi tekniikka voisi tehdä lämpövoimakoneesta lähes täydellisen, niin että kaikki lämpö muuttuisi työksi. Kitkan ja muiden häviöiden vähentäminen auttaa, mutta osa lämmöstä on aina luovutettava kylmempään ympäristöön, joten hyötysuhde jää selvästi alle 100 %:n. Toinen virhe on pitää lämpöpumppua ikiliikkujana, koska se luovuttaa enemmän lämpöä kuin käyttää sähköä. Ylimääräinen lämpö tulee ulkoilmasta, eikä energiaa synny tyhjästä. Kolmas virhe on ajatella, että paineistettu kaasu tekee työtä jo sillä, että sen paine on suuri. Työtä tehdään vain, kun tilavuus muuttuu ja mäntä liikkuu.</p>
+<h2>Tiivistelmä</h2>
+<ul>
+<li>Vakiopaineessa laajeneva kaasu tekee työn $W = p\,\Delta V$, joka on (V, p)-kuvaajan alle jäävä pinta-ala.</li>
+<li>Lämpövoimakone ottaa lämpöä $Q_1$ kuumasta lähteestä, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön: $W = Q_1 - Q_2$.</li>
+<li>Hyötysuhde on $\eta = W/Q_1$. Lämpövoimakone ei voi muuttaa kaikkea lämpöä työksi.</li>
+<li>Lauhdevoimalaitoksen hyötysuhde on noin 40 %, mutta sähkön ja lämmön yhteistuotannossa kokonaishyötysuhde on 85–90 %.</li>
+<li>Jäähdytyskone ja lämpöpumppu siirtävät työn avulla lämpöä kylmästä lämpimään. Ne eivät luo energiaa.</li>
+</ul></article>
+<section id="exercises"><h2>Tehtävät</h2><p class="howto">Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.</p><details class="level"><summary>Taso 1 <span class="count">5 tehtävää</span></summary><ol><li id="fy3-11-L1-01"><p class="task">Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.</p><form class="check" data-answer="12.0" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L1-01" placeholder="?"><span class="unit">kJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>12,0 kJ</p></details><details class="solution"><summary>Ratkaisu</summary><div class="steps"><p><strong>Annettu:</strong> p = 480 kPa = 480 000 Pa, ΔV = 0,0250 m³<br />
+<strong>Kysytty:</strong> höyryn tekemä työ W<br />
+<strong>Kaava:</strong> W = pΔV<br />
+<strong>Sijoitus:</strong> W = 480 000 Pa · 0,0250 m³ = 12 000 J = 12,0 kJ<br />
+<strong>Vastaus:</strong> 12,0 kJ<br />
+<strong>Järkevyys:</strong> Yksikkö Pa · m³ = N/m² · m³ = N · m = J. Työ riittäisi nostamaan noin 1,2 tonnin kuorman metrin korkeudelle, ja veturin männät tekevät tällaisen työn monta kertaa sekunnissa.</p></div></details></li><li id="fy3-11-L1-02"><p class="task">Saunan kiukaalle heitetään löylyvettä. Kun gramma vettä höyrystyy, syntyvä 100 °C:n höyry vie 1,70 litraa enemmän tilaa kuin vesi vei. Höyrystyminen tapahtuu ilmanpaineessa, joka on 101 kPa. Kuinka suuren työn höyry tekee, kun se työntää ympäröivää ilmaa tieltään?</p><form class="check" data-answer="172" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L1-02" placeholder="?"><span class="unit">J</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>172 J</p></details></li><li id="fy3-11-L1-03"><p class="task">Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla 4300 MW, ja yksikön sähköteho on 1600 MW. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.</p><form class="check" data-answer="37.2" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L1-03" placeholder="?"><span class="unit">%</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>37,2 %</p></details></li><li id="fy3-11-L1-04"><p class="task">Moottorisahan moottorissa palavasta polttoaineesta siirtyy minuutissa lämpö 840 kJ. Samassa ajassa moottorista siirtyy pakokaasujen ja kuumien pintojen kautta ympäristöön lämpö 670 kJ. Kuinka suuren työn moottori tekee minuutissa?</p><form class="check" data-answer="170" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L1-04" placeholder="?"><span class="unit">kJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>170 kJ</p></details></li><li id="fy3-11-L1-05"><p class="task">Mökin aggregaatti tuottaa illan aikana 2,6 kWh sähköä. Samana aikana aggregaatin moottorissa palaneen bensiinin energia on 12 kWh. Mikä on aggregaatin hyötysuhde? Anna vastaus prosentteina.</p><form class="check" data-answer="21.7" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L1-05" placeholder="?"><span class="unit">%</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>21,7 %</p></details></li></ol></details><details class="level"><summary>Taso 2 <span class="count">4 tehtävää</span></summary><ol><li id="fy3-11-L2-01"><p class="task">Puuhaketta ja turvetta polttava lauhdevoimalaitos tuottaa vuorokauden aikana sähköä 3 830 MWh. Samana aikana kattilassa palaneen polttoaineen energia on 33,6 TJ (1 TJ = 10¹² J). Mikä on laitoksen hyötysuhde? Anna vastaus prosentteina.</p><form class="check" data-answer="41.0" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L2-01" placeholder="?"><span class="unit">%</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>41,0 %</p></details><details class="solution"><summary>Ratkaisu</summary><div class="steps"><p><strong>Annettu:</strong> W = 3 830 MWh, Q₁ = 33,6 TJ = 3,36 · 10¹³ J, 1 MWh = 10⁶ W · 3600 s = 3,6 · 10⁹ J<br />
+<strong>Kysytty:</strong> hyötysuhde η<br />
+<strong>Kaava:</strong> η = W / Q₁<br />
+<strong>Sijoitus:</strong> W = 3 830 · 3,6 · 10⁹ J = 1,3788 · 10¹³ J, joten η = 1,3788 · 10¹³ J / (3,36 · 10¹³ J) = 0,410 = 41,0 %<br />
+<strong>Vastaus:</strong> 41,0 %<br />
+<strong>Järkevyys:</strong> Lauhdevoimalaitoksen hyötysuhde on noin 40 %, joten tulos on uskottava. Keskimääräinen sähköteho on 3 830 MWh / 24 h ≈ 160 MW.</p></div></details></li><li id="fy3-11-L2-02"><p class="task">Saimaalla liikennöivän vanhan höyrylaivan kattilassa poltetaan tunnissa 120 kg koivuhalkoja. Kuivan koivupuun lämpöarvo on 15 MJ/kg, eli kilogramman palaessa vapautuu energiaa 15 MJ. Laivan höyrykone tekee työtä keskimäärin 45 kW:n teholla. Mikä on kattilan ja höyrykoneen yhteinen hyötysuhde? Anna vastaus prosentteina.</p><form class="check" data-answer="9.0" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L2-02" placeholder="?"><span class="unit">%</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>9,0 %</p></details></li><li id="fy3-11-L2-03"><p class="task">Fysiikan tunnilla sylinterissä on ilmaa, jonka kevyesti liikkuva mäntä sulkee. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä 700 J. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä ΔU = Q + W, jossa W on ympäristön ilmaan tekemä työ. Anna vastaus etumerkkeineen.</p><form class="check" data-answer="500" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L2-03" placeholder="?"><span class="unit">J</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>500 J</p></details></li><li id="fy3-11-L2-04"><p class="task">Saaristolautan dieselmoottori pyörittää potkuria 480 kW:n mekaanisella teholla. Moottorin hyötysuhde on 40 %. Kuinka suuri lämpöteho siirtyy pakokaasujen ja jäähdytysveden mukana ympäristöön?</p><form class="check" data-answer="720" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L2-04" placeholder="?"><span class="unit">kW</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>720 kW</p></details></li></ol></details><details class="level"><summary>Taso 3 <span class="count">3 tehtävää</span></summary><ol><li id="fy3-11-L3-01"><p class="task">Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta 320 MW:n teholla ja tuottaa samalla 96 MW sähköä ja 180 MW kaukolämpöä. Jos laitosta ei olisi, sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on 40 %, ja sama kaukolämpö lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä 90 %:n hyötysuhteella. Kuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.</p><form class="check" data-answer="120" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L3-01" placeholder="?"><span class="unit">MW</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>120 MW</p></details><details class="solution"><summary>Ratkaisu</summary><div class="steps"><p><strong>Annettu:</strong> P_pa = 320 MW, P_s = 96 MW, P_kl = 180 MW, η_l = 40 % = 0,40, η_k = 90 % = 0,90<br />
+<strong>Kysytty:</strong> erillistuotannon lisätarve ΔP<br />
+<strong>Kaava:</strong> Erillistuotanto tarvitsee P_s / η_l + P_kl / η_k, joten ΔP = P_s / η_l + P_kl / η_k − P_pa<br />
+<strong>Sijoitus:</strong> ΔP = 96 MW / 0,40 + 180 MW / 0,90 − 320 MW = 240 MW + 200 MW − 320 MW = 120 MW<br />
+<strong>Vastaus:</strong> 120 MW<br />
+<strong>Järkevyys:</strong> Kokonaishyötysuhde on yhteistuotannossa (96 + 180)/320 ≈ 86 %, erillistuotannossa 276/440 ≈ 63 %. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava mereen.</p></div></details></li><li id="fy3-11-L3-02"><p class="task">Omakotitalon lämmittämiseen kuluu vuodessa 16,0 MWh lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.</p><form class="check" data-answer="9.6" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L3-02" placeholder="?"><span class="unit">MWh</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>9,6 MWh</p></details></li><li id="fy3-11-L3-03"><p class="task">Bensiiniauto kuluttaa 6,0 l bensiiniä 100 km:n matkalla, kun se ajaa maantiellä tasaisella 80 km/h:n nopeudella. Bensiinin tiheys on 0,75 kg/l ja lämpöarvo 43 MJ/kg. Moottorin hyötysuhde on 28 %. Kuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee, ja miksi sähköauto, jonka moottorin hyötysuhde on noin 90 %, tarvitsee samaan matkaan paljon vähemmän energiaa?</p><form class="check" data-answer="12.0" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-11-L3-03" placeholder="?"><span class="unit">kW</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>12,0 kW</p></details></li></ol></details></section>
+<section id="exit"><h2>Lähtölippu</h2><ol><li>Sylinterissä olevan kaasun paine pysyy 200 kPa:na, kun sen tilavuus kasvaa 0,50 litraa. Kuinka suuren työn kaasu tekee männän liikkuessa?<details class="answer"><summary>Vastaus</summary><p>W = pΔV = 200 000 Pa · 0,000 50 m³ = 100 J.</p></details></li><li>Automoottoriin syötetään polttoaineen energiaa teholla 60 kW, ja moottorin hyötysuhde on 30 %. Kuinka suuri on mekaaninen teho, ja minne loput energiasta menee?<details class="answer"><summary>Vastaus</summary><p>Mekaaninen teho on 0,30 · 60 kW = 18 kW. Loput 42 kW siirtyy lämpönä ympäristöön pakokaasujen ja jäähdyttimen kautta.</p></details></li><li>Ilmalämpöpumppu luovuttaa sisälle noin kolme kertaa niin paljon lämpöä kuin se käyttää sähköä. Miksi tämä ei riko energian säilymistä?<details class="answer"><summary>Vastaus</summary><p>Pumppu ei tuota lämpöä tyhjästä, vaan siirtää sitä ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähkön summa, joten energia säilyy.</p></details></li></ol></section>
+</main>
+<footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="FY3.html">← FY3-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script>
+</body></html>
