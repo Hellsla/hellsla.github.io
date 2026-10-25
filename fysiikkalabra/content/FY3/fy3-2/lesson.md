@@ -125,9 +125,12 @@ Jousta venytetään 20 cm. Venyttävä voima kasvaa tasaisesti nollasta 40 newto
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Voima ei ole vakio, joten kaava W = Fs ei käy suoraan. Työ on (s,F)-kuvaajan pinta-ala eli kolmion ala, puolet kannan ja korkeuden tulosta:
+**Kaava ratkaistuna.** Voima ei ole vakio, joten kaava W = Fs ei käy suoraan. Työ on (s,F)-kuvaajan kolmion pinta-ala $A_\text{kolmio}$, joka on puolet kannan s ja korkeuden $F_\text{max}$ tulosta:
 ```latex
-W = \frac{1}{2} F_\text{max}\, s
+\begin{aligned}
+W &= A_\text{kolmio} \\
+&= \frac{1}{2} F_\text{max}\, s
+\end{aligned}
 ```
 
 <!-- vaihe -->
@@ -135,7 +138,8 @@ W = \frac{1}{2} F_\text{max}\, s
 **Sijoitus.** Sijoitetaan arvot yksiköineen:
 ```latex
 \begin{aligned}
-W &= \frac{1}{2} F_\text{max}\, s \\
+W &= A_\text{kolmio} \\
+&= \frac{1}{2} F_\text{max}\, s \\
 &= \frac{1}{2} \cdot 40\,\text{N} \cdot 0{,}20\,\text{m} \\
 &= 4{,}0\,\text{J}
 \end{aligned}

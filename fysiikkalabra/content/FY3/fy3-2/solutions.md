@@ -71,12 +71,12 @@
 **Järkevyys:** Keskimääräinen voima on 100 J / 6,0 m ≈ 17 N, mikä on 10 N:n ja 30 N:n välissä.
 
 ## fy3-2-L3-01
-**Annettu:** voima nousee 0 → F = 40 N matkalla s₁ = 0,50 m, pysyy F:ssä matkalla s₂ = 1,0 m ja laskee F → 0 matkalla s₃ = 0,50 m; kokonaismatka s = 2,0 m
+**Annettu:** F = 40 N; voima nousee 0 → F matkalla s₁ = 0,50 m, pysyy vakiona matkalla s₂ = 1,0 m ja laskee F → 0 matkalla s₃ = 0,50 m; s = 2,0 m
 **Kysytty:** keskimääräinen voima F_ka
-**Kaava:** W = kuvaajan pinta-ala = ½ F s₁ + F s₂ + ½ F s₃ ja W = F_ka s, joten F_ka = (½ F s₁ + F s₂ + ½ F s₃) / s
+**Kaava:** W = kuvaajan pinta-ala = ½ F s₁ + F s₂ + ½ F s₃ ja W = F_ka s, joten F_ka = W / s
 **Sijoitus:** W = ½ · 40 N · 0,50 m + 40 N · 1,0 m + ½ · 40 N · 0,50 m = 10 J + 40 J + 10 J = 60 J; F_ka = 60 J / 2,0 m = 30 N
 **Vastaus:** 30 N
-**Järkevyys:** Keskiarvo on pienempi kuin huippuarvo 40 N, koska alussa ja lopussa voima on pieni. Sopii.
+**Järkevyys:** Keskiarvo on pienempi kuin huippuarvo 40 N, koska alussa ja lopussa voima on pieni.
 
 ## fy3-2-L3-02
 **Annettu:** m = 2,0 kg, h = 1,5 m, pudotuksia n = 20, g = 9,81 m/s²
