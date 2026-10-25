@@ -96,15 +96,15 @@ new p5((p) => {
     p.textAlign(p.RIGHT); p.text('h (m)', CH.x1 - 8, CH.y0 - 8);                // a few px left of the h = 20 m guide line
     p.textAlign(p.LEFT); p.textSize(ts(12)); p.text(overOnly ? 'ylipaine ρgh (kPa)' : 'paine p (kPa)', CH.x0 - 26, CH.y1 - ts(14));
     // current gauge reading: its label goes above-left of the rising line, or below-right near h = 0; below-right it
-    // never goes under the h axis (its tick labels): the baseline stays above the axis and the label moves right until
-    // the rising line clears its top edge
+    // sits under the dashed p₀ line but never under the h axis (its tick labels): there the baseline stays above the
+    // axis and the label moves right until the rising line clears its top edge
     const px = X(h), py = Y(base + pOver), txt = `${fi(base + pOver, 0)} kPa`;
     const up = h > 4;
     p.textSize(ts(12));
     let lx, ly;
     if (up) { lx = px - 10; ly = Math.max(CH.y1 + ts(12), py - 10); }
     else {
-      ly = Math.min(py + ts(16), CH.y0 - 6);
+      ly = Math.min(Y(base) + ts(16), CH.y0 - 6);                 // under the line's starting level (p₀ or 0), so no line crosses it
       const rise = (CH.y0 - CH.y1) / pMax * slope / ((CH.x1 - CH.x0) / H_MAX);   // px the line rises per px to the right
       lx = px + Math.max(10, (py - ly + ts(12) + 4) / rise);
     }
