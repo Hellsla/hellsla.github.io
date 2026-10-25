@@ -41,7 +41,7 @@ def render_md(text, **kw):
     return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html)
 
 
-UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
+UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|kN|N|kg|g|km|cm²|cm|mm|m³|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 
 
 def nbsp_units(text):
@@ -89,7 +89,7 @@ def solutions_of(folder):
 
 
 def exercise_html(e, solution_html):
-    ans = f"{fi(e['answer'])} {e.get('unit', '')}".strip()
+    ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
     check = ""
     if numeric:
