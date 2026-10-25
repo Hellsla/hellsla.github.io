@@ -142,6 +142,36 @@ code, out = gate(t, LESSON, "--reopen"); expect("reopen a drifted source: refuse
 shutil.copytree(SRC / "templates", t / "templates")
 r = subprocess.run([sys.executable, str(t / "scripts/build.py")], capture_output=True, text=True, cwd=t)
 expect("plain build refuses a drifted published lesson", r.returncode != 0 and "unreviewed" in (r.stdout + r.stderr) and (site / f"{LESSON}.html").read_text() == "<p>julkaistu</p>", r.stdout + r.stderr)
+# 24. a build that fails half-way leaves the previous complete site untouched (it renders into site.tmp first)
+t = project(); shutil.copytree(SRC / "templates", t / "templates"); reports(t); gate(t, LESSON, "--publish")
+r = subprocess.run([sys.executable, str(t / "scripts/build.py")], capture_output=True, text=True, cwd=t)
+site = t / "site"; before = {p.name: p.read_bytes() for p in site.glob("*.html")}
+expect("plain build renders the published lesson", r.returncode == 0 and f"{LESSON}.html" in before and not (t / "site.tmp").exists(), r.stdout + r.stderr)
+other = t / "content/FY3/fy3-9z"; shutil.copytree(t / "content/FY3" / LESSON, other, ignore=shutil.ignore_patterns("review"))
+md = json.loads((other / "meta.json").read_text()); md["id"] = "fy3-9z"; (other / "meta.json").write_text(json.dumps(md, ensure_ascii=False))
+(other / "exercises.json").write_text("{ rikki")                          # rendered after fy3-3, crashes the build half-way
+md["reviewed_hash"] = subprocess.run([sys.executable, str(t / "scripts/gate.py"), "--hash", "fy3-9z"], capture_output=True, text=True, env=dict(os.environ, FYSIIKKALABRA_ROOT=str(t))).stdout.strip()
+(other / "meta.json").write_text(json.dumps(md, ensure_ascii=False))    # consistent hash: the pre-build drift check lets it through
+r = subprocess.run([sys.executable, str(t / "scripts/build.py")], capture_output=True, text=True, cwd=t)
+after = {p.name: p.read_bytes() for p in site.glob("*.html")}
+expect("failed build leaves the previous site complete and unchanged", r.returncode != 0 and after == before and not (t / "site.tmp").exists() and not (t / "site.old").exists(), r.stdout + r.stderr)
+# 25. --publish records the status only after the site has been rebuilt with the lesson (full checks on fy3-12, a draft that passes the lint and has no sim)
+t = pathlib.Path(tempfile.mkdtemp()); (t / "content/FY3").mkdir(parents=True); (t / "tests/sims").mkdir(parents=True)
+shutil.copytree(SRC / "content/FY3/fy3-12", t / "content/FY3/fy3-12", ignore=shutil.ignore_patterns("review"))
+for f in ("glossary.json", "curriculum.json"): shutil.copy(SRC / f, t / f)
+shutil.copytree(SRC / "scripts", t / "scripts", ignore=shutil.ignore_patterns("__pycache__")); shutil.copytree(SRC / "templates", t / "templates")
+m = t / "content/FY3/fy3-12/meta.json"; md = json.loads(m.read_text()); md["status"] = "draft"; [md.pop(k, None) for k in ("reviewed_by", "reviewed_on", "reviewed_hash")]; m.write_text(json.dumps(md, ensure_ascii=False))
+other = t / "content/FY3/fy3-9z"; shutil.copytree(t / "content/FY3/fy3-12", other); md = json.loads((other / "meta.json").read_text())
+md.update(id="fy3-9z", status="reviewed", reviewed_hash="0000000000000000"); (other / "meta.json").write_text(json.dumps(md, ensure_ascii=False))   # published, source drifted: the plain build refuses it
+env = dict(os.environ, FYSIIKKALABRA_ROOT=str(t)); d = t / "content/FY3/fy3-12/review"; d.mkdir()
+for r_ in ["physics-expert", "mathematician", "educator", "proofreader", "editor", "web-designer"]:
+    hh = subprocess.run([sys.executable, str(t / "scripts/gate.py"), "--hash", "fy3-12", "--for", r_], capture_output=True, text=True, env=env).stdout.strip()
+    (d / f"{r_}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {hh}\n\nfindings\n")
+r = subprocess.run([sys.executable, str(t / "scripts/gate.py"), "fy3-12", "--publish"], capture_output=True, text=True, env=env)   # no --skip-checks: the publish build runs
+md = json.loads(m.read_text()); log = t / "content/FY3/fy3-12/review/history.log"
+expect("publish whose build fails: refused after the checks passed", r.returncode == 1 and "BUILD FAILED" in r.stdout + r.stderr and "Checks run: lint: ok" in r.stdout, r.stdout + r.stderr)
+expect("failed publish leaves the metadata untouched", md["status"] == "draft" and "reviewed_hash" not in md and "PUBLISHED" not in (log.read_text() if log.exists() else ""), str(md))
+expect("failed publish leaves no site behind", not (t / "site").exists() and not (t / "site.tmp").exists(), "")
 expect("real project untouched after the new tests", snapshot() == REAL)
 print("\n" + ("all gate tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

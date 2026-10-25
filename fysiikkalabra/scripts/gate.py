@@ -3,7 +3,7 @@
   python scripts/gate.py --hash <id>              print the full content hash of a lesson
   python scripts/gate.py --hash <id> --for <reviewer>   print the hash of the files that reviewer judges
   python scripts/gate.py <id>                     check only; exit 1 if the lesson is not publishable
-  python scripts/gate.py <id> --publish           check, then set status "reviewed" and rebuild site/
+  python scripts/gate.py <id> --publish           check, rebuild site/ with the lesson, then set status "reviewed"
   python scripts/gate.py <id> --log-round         append one line with this round's verdicts to review/history.log
   python scripts/gate.py <id> --reopen            start revising a published lesson: its live page stays the reviewed render
   python scripts/gate.py --verify                 CI: every published lesson still matches its recorded hash (or, under
@@ -181,15 +181,15 @@ def gate(lid, publish, skip_checks):
     (review / "gate.md").write_text("\n".join(body) + "\n")
     print("\n".join(body))
     if ok and publish:
+        if not skip_checks:                       # the site is rebuilt with the lesson first; nothing is written if that fails
+            okb, out = run([sys.executable, str(SCRIPTS / "build.py"), "--publishing", lid])
+            if not okb:
+                print(f"\nBUILD FAILED, {lid} stays {meta.get('status', 'draft')} and nothing was recorded: {out}"); return 1
         meta.pop("revision", None)
         meta.update({"status": "reviewed", "reviewed_by": GATE_NAME, "reviewed_on": str(datetime.date.today()), "reviewed_hash": h})
         (folder / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
         with open(review / "history.log", "a") as log: log.write(f"{datetime.date.today()} {lid} PUBLISHED {h}\n")
-        if not skip_checks:
-            okb, out = run([sys.executable, str(SCRIPTS / "build.py")])
-            print("\npublished: site/ rebuilt" if okb else f"\nBUILD FAILED after publishing: {out}")
-            return 0 if okb else 1
-        print("\npublished (build skipped)")
+        print("\npublished (build skipped)" if skip_checks else "\npublished: site/ rebuilt")
     return 0 if ok else 1
 
 

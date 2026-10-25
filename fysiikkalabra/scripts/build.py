@@ -5,21 +5,27 @@ With a lesson id that lesson is built regardless of status, for previewing a dra
 With --all every lesson is built regardless of status (CI uses this to test drafts too).
 The plain build writes to site/ (committed, served by GitHub Pages); a preview or --all build
 writes to preview/ (git-ignored), so a draft can never end up in the published folder.
+The plain build renders into site.tmp/ and swaps it in only when every page rendered, so a failed build
+never leaves site/ incomplete. `--publishing <id>` (used by gate.py --publish) renders that lesson as reviewed,
+so the gate can write the status only after the site holds the lesson.
 
 Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` lines (staged_example).
 The simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
 or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side answer check and, depending on
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
 """
-import json, sys, re, shutil, pathlib, html as _h, markdown
+import json, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from gate import content_hash   # same hash as the gate
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/
 BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
 arg = sys.argv[1] if len(sys.argv) > 1 else None
-build_all = arg == "--all"; only = None if build_all else arg
-SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
+build_all = arg == "--all"
+publishing = sys.argv[2] if arg == "--publishing" and len(sys.argv) > 2 else None   # gate.py --publish: render this lesson as reviewed
+only = None if (build_all or publishing) else arg
+LIVE = ROOT / "site"                                  # committed, served by GitHub Pages
+SITE = ROOT / ("preview" if (only or build_all) else "site.tmp")   # the plain build renders here and swaps it in at the end
 def revising():
     """Published lessons whose source is under revision (gate.py --reopen): their live page is kept as is.
     A published lesson whose source drifted without --reopen stops the plain build before anything is touched,
@@ -28,18 +34,24 @@ def revising():
     for f in (ROOT / "content").glob("*/*/meta.json"):
         if f.parent.parent.name == "_gold": continue
         m = json.loads(f.read_text())
-        if m.get("status") != "reviewed": continue
+        if m.get("status") != "reviewed" or m["id"] == publishing: continue
         if m.get("revision"): out[m["id"]] = m
         elif m.get("reviewed_hash") and content_hash(f.parent) != m["reviewed_hash"]:
             sys.exit(f"{m['id']}: source edited after publication and not under revision; a plain build would put unreviewed "
                      f"content on the live site. Run `gate.py {m['id']} --reopen` (on the published source) or re-review it.")
     return out
-KEEP = revising() if SITE.name == "site" else {}
-if SITE.name == "site":                               # no stale pages in the published folder; preview/ is shared by
-    for old in SITE.glob("*.html"):                   # agents building at the same time, so it is never wiped
-        if old.stem not in KEEP: old.unlink()
-    for old in SITE.glob("*-sim.js"):
-        if old.name[:-7] not in KEEP: old.unlink()
+if SITE.name == "site.tmp":
+    if SITE.exists(): shutil.rmtree(SITE)             # leftover of an interrupted build
+    SITE.mkdir()
+    atexit.register(lambda: shutil.rmtree(SITE, ignore_errors=True))   # a failed build leaves nothing behind (already gone after the swap)
+    KEEP = revising()
+    for lid in KEEP:                                  # under revision: the page the gate published stays live, byte for byte
+        page = LIVE / f"{lid}.html"
+        if not page.exists(): sys.exit(f"{lid} is under revision but site/{lid}.html is missing")
+        shutil.copy(page, SITE / page.name)
+        if (LIVE / f"{lid}-sim.js").exists(): shutil.copy(LIVE / f"{lid}-sim.js", SITE / f"{lid}-sim.js")
+else:
+    SITE.mkdir(exist_ok=True); KEEP = {}              # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
@@ -148,10 +160,10 @@ built = {}   # course -> [meta, ...]
 for folder in sorted((ROOT / "content").glob("*/*/")):
     if folder.parent.name == "_gold" or not (folder / "meta.json").exists(): continue
     meta = json.loads((folder / "meta.json").read_text())
+    if meta["id"] == publishing: meta["status"] = "reviewed"; meta.pop("revision", None)   # the gate writes these after this build succeeds
     if only and meta["id"] != only: continue
     if meta.get("status") != "reviewed" and not (only or build_all): continue   # publish only reviewed lessons
-    if meta["id"] in KEEP:                           # under revision: the page the gate published stays live, unchanged
-        if not (SITE / f"{meta['id']}.html").exists(): sys.exit(f"{meta['id']} is under revision but site/{meta['id']}.html is missing")
+    if meta["id"] in KEEP:                           # under revision: the page the gate published stays live (copied above)
         built.setdefault(meta["course"], []).append(meta); print("kept", meta["id"], "(under revision, live page unchanged)"); continue
     missing = [f for f in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json") if not (folder / f).exists()]
     if missing:                                      # a draft still being written: skip it instead of failing the whole build
@@ -240,4 +252,13 @@ home = (
     f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
 (SITE / "index.html").write_text(page("Fysiikkalabra", home, "", "index.html",
                                       "Teoria, simulaatiot ja tehtävät lukion fysiikkaan, LOPS 2019:n moduulit FY1–FY8.", main_class=""))
-print("built index +", len(modules), "module pages ->", SITE.relative_to(ROOT), f"({len(built_ids)} lessons)")
+if SITE.name == "site.tmp":                      # every page rendered: swap the new site in; the old one comes back if the swap fails
+    old = ROOT / "site.old"
+    if old.exists(): shutil.rmtree(old)
+    if LIVE.exists(): LIVE.rename(old)
+    try: SITE.rename(LIVE)
+    except BaseException:
+        if old.exists(): old.rename(LIVE)
+        raise
+    shutil.rmtree(old, ignore_errors=True)
+print("built index +", len(modules), "module pages ->", (LIVE if SITE.name == "site.tmp" else SITE).relative_to(ROOT), f"({len(built_ids)} lessons)")

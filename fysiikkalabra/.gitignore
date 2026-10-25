@@ -1,4 +1,6 @@
 preview/
+site.tmp/
+site.old/
 **/review/*.png
 __pycache__/
 node_modules/

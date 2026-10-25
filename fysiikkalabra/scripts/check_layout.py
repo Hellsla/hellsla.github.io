@@ -1,4 +1,4 @@
-"""Phone-width layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360]
+"""Phone-width layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
 
 Opens each page in preview/ (or site/) at a phone viewport and reports every element that is wider
 than its box: display formulas (.katex-display), tables, inline SVG figures and the page itself.
@@ -12,7 +12,7 @@ args = [a for a in sys.argv[1:] if not a.startswith("--")]
 width = int(sys.argv[sys.argv.index("--width") + 1]) if "--width" in sys.argv else 360
 args = [a for a in args if a != str(width)]
 only = args[0] if args else None
-OUT = ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"
+OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
 
 JS = """() => {
   const out = [];

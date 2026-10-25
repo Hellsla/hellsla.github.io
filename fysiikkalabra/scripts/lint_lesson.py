@@ -33,7 +33,7 @@ class Lint:
 
 def find_lesson(arg):
     p = pathlib.Path(arg)
-    if p.is_dir(): return p
+    if p.is_dir(): return p.resolve()               # absolute, so answers.py is run from the right folder
     for f in sorted((ROOT / "content").glob(f"*/{arg}")):
         if f.parent.name != "_gold" and (f / "meta.json").exists(): return f
     sys.exit(f"no lesson folder for {arg!r}")
