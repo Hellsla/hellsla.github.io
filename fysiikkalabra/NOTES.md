@@ -62,6 +62,8 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 - Reviewer screenshots stay out of git (`**/review/*.png`).
 
 ### Process
+- Publishing goes through the gate (`scripts/gate.py`): all reviewers PASS on the current content hash, then the publisher agent commits. Do not hand-edit `status`, `reviewed_by`, `reviewed_on` or `reviewed_hash`.
+- Any edit to a lesson changes its hash. After a fix, every reviewer has to run again.
 - Reviewers never edit lesson files. After a FAIL, fix, rebuild, test and rerun the failed reviewers.
 - Keep commits small and push after each; the branch name is given by the session.
 

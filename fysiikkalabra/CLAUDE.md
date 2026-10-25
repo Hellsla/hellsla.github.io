@@ -43,16 +43,16 @@ review/            one <agent>.md report per reviewer, overwritten on each run
 ```
 
 ## Review protocol
-- Reviewers never edit lesson files. They write `review/<agent>.md` with `VERDICT: PASS` or `VERDICT: FAIL` on the first line, then numbered findings with file and line.
+- Reviewers never edit lesson files. They write `review/<agent>.md` with `VERDICT: PASS` or `VERDICT: FAIL` on the first line, `CONTENT-HASH: <value of python scripts/gate.py --hash <id>>` on the second, then numbered findings with file and line.
 - Producers may only write the files named in their agent definition.
-- The orchestrator stops and reports to the human after two consecutive FAILs on the same lesson.
-- `status` in `meta.json` moves `draft → reviewed` only by the human.
+- The orchestrator runs reviewers, then the fixer on any FAIL, and repeats for at most three rounds. Only if the third round still fails, or the fixer is blocked, does it stop and report to the human.
+- `status` in `meta.json` moves `draft → reviewed` only through the publication gate (`python scripts/gate.py <id> --publish`, run by the publisher agent). The gate opens only when every required reviewer has `VERDICT: PASS` for the lesson's CURRENT content hash and the structure, LaTeX, build and simulation checks pass. Any later edit changes the hash and closes the gate again; CI runs `gate.py --verify` to catch it. Nobody edits status or hash fields by hand, agents never do.
 
 ## Gold standard
 `content/_gold/` is the reference lesson. Match its tone, length and structure. When in doubt, read it again.
 
 ## Never
-- Never publish or commit on your own; the human commits.
+- Never publish or commit on your own, except the publisher agent, which commits a gate-approved lesson to the working branch. Nobody pushes to `main` or merges pull requests without the human.
 - Never copy exam questions from YTL or textbooks into lessons; write original problems. Exam files may be studied for patterns only, stored in the git-ignored `docs/exams/` (see NOTES.md, section 3).
 - Never add tracking, logins or forms that collect student data.
 - Never depict real people in generated images.
