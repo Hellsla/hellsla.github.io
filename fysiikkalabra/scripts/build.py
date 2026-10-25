@@ -52,6 +52,7 @@ def nbsp_units(text):
         maths.append(m.group(0)); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
     text = re.sub(rf"(?<=\d) (?={UNIT}(?![\wäöå²³/]))", "\u00a0", text)
+    text = re.sub(r"(?<=\S) = (?=[\d−\-+(])", "\u00a0=\u00a0", text)   # "s = 0,15 m" never breaks at the equals sign
     return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], text)
 
 
