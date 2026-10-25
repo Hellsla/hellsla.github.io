@@ -107,5 +107,33 @@ t = project(); reports(t); (t / "content/FY3" / LESSON / "review/educator.md").w
 code, out = gate(t, LESSON, "--log-round"); log = (t / "content/FY3" / LESSON / "review/history.log").read_text()
 expect("log-round writes verdicts", code == 0 and "round 1:" in log and "educator=FAIL(stale)" in log and "tester=PASS" in log, log)
 gate(t, LESSON, "--log-round"); expect("log-round counts rounds", "round 2:" in (t / "content/FY3" / LESSON / "review/history.log").read_text())
+# 17. --reopen: only a gate-published lesson with a live page can be reopened
+t = project(); m = t / "content/FY3" / LESSON / "meta.json"; md = json.loads(m.read_text()); md["status"] = "draft"; md.pop("reviewed_hash", None); m.write_text(json.dumps(md, ensure_ascii=False))
+code, out = gate(t, LESSON, "--reopen"); expect("reopen a draft: refused", code == 1 and "only a lesson the gate published" in out, out)
+reports(t); gate(t, LESSON, "--publish")
+code, out = gate(t, LESSON, "--reopen"); expect("reopen without a live page: refused", code == 1 and "missing" in out, out)
+# 18. under revision the source may change: verify checks the live page instead and stays green
+site = t / "site"; site.mkdir(); (site / f"{LESSON}.html").write_text("<p>julkaistu sivu</p>"); (site / f"{LESSON}-sim.js").write_text("// sim")
+code, out = gate(t, LESSON, "--reopen"); expect("reopen a published lesson", code == 0 and "under revision" in out, out)
+p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text() + "\nMuokkaus julkaisun jälkeen.\n")
+code, out = gate(t, "--verify"); expect("verify: source edits allowed under revision", code == 0 and "under revision since" in out, out)
+expect("reopen is logged", "REOPENED" in (t / "content/FY3" / LESSON / "review/history.log").read_text())
+# 19. ... but the live page may not change without the gate
+(site / f"{LESSON}.html").write_text("<p>muutettu käsin</p>")
+code, out = gate(t, "--verify"); expect("verify: live page changed under revision: red", code == 1 and "live page changed" in out, out)
+(site / f"{LESSON}.html").write_text("<p>julkaistu sivu</p>")
+# 20. the edited source cannot be published on the old reports (stale), and a fresh pass clears the revision
+code, out = gate(t, LESSON, "--publish"); expect("under revision: stale reports keep the gate closed", code == 1 and "older version" in out, out)
+reports(t); code, out = gate(t, LESSON, "--publish"); md = json.loads((t / "content/FY3" / LESSON / "meta.json").read_text())
+expect("fresh reviews publish the revision and clear the flag", code == 0 and "revision" not in md and md["reviewed_hash"] == h(t), out)
+expect("verify green after republish", gate(t, "--verify")[0] == 0)
+# 21. the plain build keeps the live page of a lesson under revision and still lists it as published
+t = project(); shutil.copytree(SRC / "templates", t / "templates"); reports(t); gate(t, LESSON, "--publish")
+site = t / "site"; site.mkdir(); (site / f"{LESSON}.html").write_text("<p>julkaistu sivu</p>"); (site / f"{LESSON}-sim.js").write_text("// sim")
+gate(t, LESSON, "--reopen"); p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text() + "\nKesken.\n")
+r = subprocess.run([sys.executable, str(t / "scripts/build.py")], capture_output=True, text=True, cwd=t)
+expect("plain build keeps the live page", r.returncode == 0 and "kept " + LESSON in r.stdout and (site / f"{LESSON}.html").read_text() == "<p>julkaistu sivu</p>" and (site / f"{LESSON}-sim.js").read_text() == "// sim", r.stdout + r.stderr)
+expect("plain build still lists it as published", f'href="{LESSON}.html"' in (site / "FY3.html").read_text())
+expect("real project untouched after the new tests", snapshot() == REAL)
 print("\n" + ("all gate tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

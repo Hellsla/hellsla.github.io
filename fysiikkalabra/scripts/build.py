@@ -19,9 +19,20 @@ BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
 arg = sys.argv[1] if len(sys.argv) > 1 else None
 build_all = arg == "--all"; only = None if build_all else arg
 SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
+def revising():
+    """Published lessons whose source is under revision (gate.py --reopen): their live page is kept as is."""
+    out = {}
+    for f in (ROOT / "content").glob("*/*/meta.json"):
+        if f.parent.parent.name == "_gold": continue
+        m = json.loads(f.read_text())
+        if m.get("status") == "reviewed" and m.get("revision"): out[m["id"]] = m
+    return out
+KEEP = revising() if SITE.name == "site" else {}
 if SITE.name == "site":                               # no stale pages in the published folder; preview/ is shared by
-    for old in SITE.glob("*.html"): old.unlink()      # agents building at the same time, so it is never wiped
-    for old in SITE.glob("*-sim.js"): old.unlink()
+    for old in SITE.glob("*.html"):                   # agents building at the same time, so it is never wiped
+        if old.stem not in KEEP: old.unlink()
+    for old in SITE.glob("*-sim.js"):
+        if old.name[:-7] not in KEEP: old.unlink()
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
@@ -132,6 +143,9 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     meta = json.loads((folder / "meta.json").read_text())
     if only and meta["id"] != only: continue
     if meta.get("status") != "reviewed" and not (only or build_all): continue   # publish only reviewed lessons
+    if meta["id"] in KEEP:                           # under revision: the page the gate published stays live, unchanged
+        if not (SITE / f"{meta['id']}.html").exists(): sys.exit(f"{meta['id']} is under revision but site/{meta['id']}.html is missing")
+        built.setdefault(meta["course"], []).append(meta); print("kept", meta["id"], "(under revision, live page unchanged)"); continue
     missing = [f for f in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json") if not (folder / f).exists()]
     if missing:                                      # a draft still being written: skip it instead of failing the whole build
         print("skipped", meta["id"], "(missing " + ", ".join(missing) + ")"); continue

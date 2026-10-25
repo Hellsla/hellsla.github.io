@@ -21,5 +21,10 @@
   "status": "reviewed",
   "reviewed_by": "gate (automaattinen tarkistus)",
   "reviewed_on": "2026-10-25",
-  "reviewed_hash": "7d3eee16cfecfa3e"
+  "reviewed_hash": "7d3eee16cfecfa3e",
+  "revision": {
+    "opened": "2026-10-25",
+    "site_hash": "d36c750e896656c9",
+    "reviewed_hash": "7d3eee16cfecfa3e"
+  }
 }
