@@ -82,7 +82,7 @@ new p5((p) => {
     drawSpring(SPRING.x, SPRING.top, yS - SPRING.top);
 
     // steel weight: the mass, the same on every body (grey), size grows a little with m
-    p.textSize(ts(12)); p.textStyle(p.BOLD);
+    p.textSize(ts(11)); p.textStyle(p.BOLD);
     const bs = Math.max(36 + 40 * Math.sqrt(m / 100), p.textWidth(`${m} kg`) + 16), bh = bs * 0.8, e = bs * 0.12;
     const by = yS + 8, bx = SPRING.x - bs / 2;
     p.stroke(70); p.strokeWeight(2); p.noFill(); p.line(SPRING.x, yS, SPRING.x, by - 2); p.arc(SPRING.x, by - 2, 8, 8, p.PI, 0);   // hook
@@ -94,15 +94,15 @@ new p5((p) => {
     p.textStyle(p.NORMAL);
 
     // weight arrow: length proportional to G (3 px floor only for the smallest weights), red like every weight in the picture
-    const ax = SPRING.x + bs / 2 + 14, a0 = by + 6, aLen = Math.max(3, arrow), hl = Math.min(14, aLen), hw = Math.max(3, hl / 2);
+    const ax = SPRING.x + bs / 2 + 12, a0 = by + 6, aLen = Math.max(3, arrow), hl = Math.min(14, aLen), hw = Math.max(3, hl / 2);
     p.drawingContext.shadowColor = 'rgba(0,0,0,0.25)'; p.drawingContext.shadowBlur = 4;
     p.fill(...RED); p.noStroke(); p.rect(ax - 2.5, a0, 5, aLen - hl);
     p.triangle(ax, a0 + aLen, ax - hw, a0 + aLen - hl, ax + hw, a0 + aLen - hl);
     p.drawingContext.shadowBlur = 0;
-    p.textAlign(p.LEFT, p.CENTER); p.textSize(ts(13)); p.textStyle(p.BOLD); p.text('G', ax + 9, a0 + aLen / 2); p.textStyle(p.NORMAL);
+    p.textAlign(p.LEFT, p.CENTER); p.textSize(ts(12)); p.textStyle(p.BOLD); p.text('G', ax + 7, a0 + aLen / 2); p.textStyle(p.NORMAL);
 
     drawChart(idx, m, bars, chartFull);
-    drawLegend();
+    drawLegend(idx);
   };
 
   function drawGround(i) {                                     // surface of the chosen body with a fixed pattern
@@ -116,10 +116,6 @@ new p5((p) => {
       else if (i === 2) { p.stroke(...L.dk); p.strokeWeight(2); p.line(x, GROUND, x - 3, GROUND - 5); p.line(x + 5, GROUND, x + 7, GROUND - 6); p.noStroke(); }   // grass
       else p.rect(0, GROUND + 4 + j * 6, 600, 2);                                        // cloud bands
     }
-    const t = `${BODIES[i][0]}: g = ${fi(BODIES[i][1], 2)} m/s²`;
-    p.textSize(ts(11)); const w = p.textWidth(t) + 12, h = ts(11) + 6;
-    p.fill(255, 235); p.rect(594 - w, 397 - h, w, h, 6);
-    p.fill(30); p.textAlign(p.RIGHT, p.CENTER); p.text(t, 588, 397 - h / 2);
   }
 
   function drawStand() {                                       // lab stand: base, rod, arm and the top hook of the spring
@@ -139,7 +135,7 @@ new p5((p) => {
       p.stroke(60); p.strokeWeight(major ? 1.5 : 1); p.line(x1 - (major ? 10 : 5), y, x1, y);
       if (major) { p.noStroke(); p.fill(40); p.text(F ? fi(F / 1000, 1) : '0', RULER.x + 4, y); }
     }
-    p.noStroke(); p.fill(40); p.text('kN', RULER.x + 4, 56);
+    p.noStroke(); p.fill(40); p.text('kN', RULER.x + 4, y0 - 1.5 * ts(10));
     p.stroke(...RED); p.strokeWeight(2); p.line(x1 + 6, yS, SPRING.x - 14, yS);   // pointer at the spring end reads the weight
     p.noStroke(); p.fill(...RED); p.triangle(x1 + 1, yS, x1 + 9, yS - 5, x1 + 9, yS + 5);
   }
@@ -160,7 +156,7 @@ new p5((p) => {
     const raw = chartFull / 6, mag = Math.pow(10, Math.floor(Math.log10(raw)));
     const step = [1, 2, 2.5, 5, 10].map((f) => f * mag).find((s) => s >= raw);       // gridline step, a round number
     p.textSize(ts(10)); p.textAlign(p.RIGHT, p.CENTER);
-    for (let v = step; v < 0.86 * chartFull; v += step) {
+    for (let v = step; v < 0.8 * chartFull; v += step) {
       const y = base - H * v / chartFull;
       p.stroke(0, 0, 0, 30); p.strokeWeight(1); p.line(BARS.x, y, BARS.x + BARS.w, y);
       p.noStroke(); p.fill(70); p.text(fi(v, 0), BARS.x - 6, y);
@@ -207,13 +203,15 @@ new p5((p) => {
     p.noFill(); p.stroke(on ? 30 : 120); p.strokeWeight(on ? 2 : 1); p.circle(x, y, 2 * r);
   }
 
-  function drawLegend() {                                      // colour key, top right
+  function drawLegend(idx) {                                   // colour key in a pill on the ground, bottom right
     p.textSize(ts(11)); p.textAlign(p.LEFT, p.CENTER);
-    const items = [['paino G', RED], ['massa m', [150, 156, 164]]], y = 6 + ts(11) / 2 + 2;
-    let x = 594 - items.reduce((s, [t]) => s + p.textWidth(t) + 28, 0);
+    const items = [['paino G', RED], ['massa m', [150, 156, 164]], [BODIES[idx][0], null]], y = 386, sw = 16 + 5, gap = 12;
+    const w = items.reduce((s, [t]) => s + sw + p.textWidth(t), 0) + gap * (items.length - 1) + 16, h = ts(11) + 8;
+    let x = 594 - w + 8;
+    p.noStroke(); p.fill(255, 235); p.rect(594 - w, y - h / 2, w, h, 6);
     for (const [t, c] of items) {
-      p.noStroke(); p.fill(...c); p.rect(x, y - 6, 16, 12, 2);
-      p.fill(40); p.text(t, x + 21, y); x += p.textWidth(t) + 28;
+      if (c) { p.noStroke(); p.fill(...c); p.rect(x, y - 6, 16, 12, 2); } else planet(idx, x + 8, y, 7, false);
+      p.noStroke(); p.fill(40); p.text(t, x + sw, y); x += sw + p.textWidth(t) + gap;
     }
   }
 
