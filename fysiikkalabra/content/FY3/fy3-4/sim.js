@@ -5,7 +5,8 @@
 // with "Näytä vain ylipaine" the chart drops the constant term and the line passes through the origin.
 // The chart's p axis is scaled to the line shown over 0–20 m at the current density (rounded up to a round
 // number) and the scale is printed on the axis. The readout is DOM text; the canvas only draws.
-// p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
+// p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and window.simDebug
+// with the ink box of every canvas text and the line obstacles, so a test can check that no labels collide.
 new p5((p) => {
   const P0 = 101, G = 9.81, H_MAX = 20;                       // air pressure (kPa), g (m/s²), deepest gauge position (m)
   const TANK = { x: 70, w: 160, top: 70, bottom: 370 };       // pool: 20 m over 300 px

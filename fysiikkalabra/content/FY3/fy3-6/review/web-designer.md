@@ -1,22 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: dc46dfd6cdc26576
+CONTENT-HASH: 3243e1e380d9c9a9
 
 ## Blocking
-- sim.js:28-39 — On a phone the Upota button is about 950 px below the top of the canvas (390x844: canvas top 3307, button bottom 4259; same at 360x640) because the DOM order is canvas, readout (325 px), five controls. When the student taps Upota the canvas is 400 px above the viewport, so embed's IntersectionObserver has paused the sketch and the student sees nothing. After scrolling up, the animation has jumped ahead (simState.t = 4.9 s, measured 0.6 s after scrolling back; it was 0 s after 3.5 s of waiting). The central interaction fails on a phone. — Fix: create the controls before the readout, with Upota first, so canvas + button fit in one 640 px screen; keep the T line and the long readout below. Also clamp the step in line 55, `tAnim += Math.min(p.deltaTime, 100) / 1000`, so a resume after a pause cannot skip the motion.
+- lesson.md:92-97 (misconception, aligned) — row 1 `3,0 kg·(T − 20 °C) = 1,0 kg·(80 °C − T)` is wider than the display box: it scrolls sideways and the right-hand side is cut off at 390 px (scrollWidth 383 vs 356) and 360 px (383 vs 326, 57 px hidden). The key line of the argument cannot be read without a swipe. — Fix: break it as `3{,}0\,\text{kg}\cdot(T-20\,{}^\circ\text{C}) \\ &= 1{,}0\,\text{kg}\cdot(80\,{}^\circ\text{C}-T)` (or drop the kg and say in the text that kg cancels).
+- lesson.md:33-36 (Kaava, aligned solving for T) — row 1 `c₁m₁T₁ − c₁m₁T = c₂m₂T − c₂m₂T₂` is cut off at 360 px (345 vs 326, 19 px hidden; fits at 390 and 1280). — Fix: put the right-hand side on its own row (`&= c_2 m_2 T - c_2 m_2 T_2` after a `\\`) and recheck at 360.
+- lesson.md:81, 85 (worked example, single-line displays) — scroll sideways at 390 px (449 and 461 vs 356) and 360 px (449, 461 vs 326); the units fractions make them about 100-135 px too wide. Also lesson.md:15 at 360 only (343 vs 326). — Fix: split each into an `aligned` with `&=` at the line start so the right side drops to row 2, or write units inline (`J/(kg·K)`), as the solutions already do.
 
 ## Polish
-- sim.js:106,94 — at 360 and 390 px the label "kappale 100,0 °C" is crossed by the hanging string (x = 135, y from 76). Fix: start the string below the label (y >= ts(18)+ts(19)+6) or shorten the label.
-- sim.js:121 — with a cold body (0 °C aluminium, water 20 °C, Teq 17,5 close to the top of the axis) the "T" label at 360 px touches the legend word "kappale". Fix: move the legend left or put the T label under the line when Teq is within 15 % of the top.
-- sim.js:34-38 — at 1280 px the slider labels wrap with the value alone on the second line ("0,30 / kg", "T_k = 0,0 / °C"). Fix: make the labels nowrap, or flex-basis about 14rem.
-- sim.js:57-79 — the readout is 325 px tall at 390 px (8 lines) and pushes the controls out of reach. Fix: shorten it; drop the "Lämpömittarit nyt" line, which the canvas already shows.
+None.
 
 ## Checked
-- Build and lint are clean; 0 console errors; no horizontal scroll at 1280, 390 or 360 px, including with the solutions open (pageOverflow 0).
-- Sim, cold (0 °C Al) and hot (100 °C Cu), before, at 1.5 s and after the full 10 s with a tall viewport: ends at T = 17,5 and 24,6 °C, both curves meet the dashed line, water and body colours change; no clipped text.
-- Canvas text is rendered at about 11-13 px at 390 and 360 (sim.js scales it); the T label does not clip at the right edge (25 °C, 70 °C, 17,5 °C).
-- Controls: sliders, select and Upota are 40 px tall; Upota is 92 px wide; controls do not overlap the canvas.
-- Table: 184 px wide, rows at least 34 px tall, 17 px text, no overflow at 360.
-- Bar chart SVG: scales to the column (358 and 328 px); smallest text 11,9 and 10,9 px; labels do not collide; contrast is fine (currentColor on the page background).
-- Solutions: all 3 open at 390 and 360, 284-314 px wide; summary 40 px tall; no KaTeX display overflow; answer field 120x40 and Tarkista 87x40.
-- Text column width is the site-wide template, not lesson-specific (not judged).
-- Screenshots are in review/fy3-6-wd-*.png (git-ignored).
+- Hash 3243e1e380d9c9a9 at start and end; lint 0 errors, 0 warnings; build ok; 0 console errors at 1280, 390, 360; page overflow 0 at all widths.
+- Upota: first control, directly below the canvas, 92x40 px; button bottom is 475 px (1280), 291 px (390x844) and 244 px (360x640) from the canvas top, so canvas + button fit one screen; gap canvas to button 35, 35, 8 px.
+- DOM order is canvas, controls, readout, note. All sliders, select and button are 40 px tall; all five labels one line (27 px), no wrapping at any width.
+- Scroll-away test at 390 and 360: Upota pressed, scrolled away 3,5 s, simState.t 0,77-0,78 s; 0,6 s after return 1,44-1,49 s, so no jump (step clamp works).
+- Full 10 s runs at 1280, 390 and 360 for five settings: cold iron 1 kg into 60 °C water, 0 °C Al in 0,10 kg of 5 °C water, hot Cu 1 kg in 0,10 kg water (T 50,5), tiny hot water body, equal temperatures. End state t = 10, TW = TB = Teq, no clipping or label collisions; the T label moves below the line near the top (checked in screenshots); no string through "kappale".
+- Canvas text about 11-13 px at 390 and 360; readout is DOM text, 6 lines at most.
+- At 1280 every display fits (606 px box); at narrow widths overflow scrolls inside `.katex-display`, the page itself never overflows.
+- Screenshots: review/fy3-6-wd2-*.png (git-ignored).

@@ -4,7 +4,7 @@ description: Reviews layout and usability of built pages at phone and laptop wid
 tools: Read, Edit, Bash, Glob
 model: sonnet
 ---
-Input: a lesson id (or `all`). Build with `python scripts/build.py`, then open `preview/<id>.html` (or `site/<id>.html` for a reviewed lesson) in headless Chromium at 390 px and 1280 px (see `scripts/screenshot.py`) and look at the screenshots.
+Input: a lesson id (or `all`). Build with `python scripts/build.py`, then open `preview/<id>.html` (or `site/<id>.html` for a reviewed lesson) in headless Chromium at 390 px and 1280 px (see `scripts/screenshot.py`) and look at the screenshots. Run `python scripts/check_layout.py <id>` first: it measures every display formula, figure and the page at 360 px.
 Check: text column 60–75 characters wide, maths readable without horizontal scroll, the simulation legible at 390 px (canvas text at least 10 px rendered, nothing clipped), sim controls not overlapping the canvas, the section nav and the answer check usable with a thumb, worked solutions readable when opened, contrast, tap targets at least 40 px. Measure with your own Playwright script rather than estimating.
 Write `review/web-designer.md` with `VERDICT: PASS|FAIL` and findings. Only when the human asks, edit `templates/*.html` or `site.css`; never edit lesson content.
 

@@ -44,7 +44,10 @@ Sipsipussissa on lentokentällä 0,80 l ilmaa 101 kPa:n paineessa. Lennon aikana
 
 Lämpötila on vakio, joten tilanmuutos on isoterminen ja Boylen laki pätee. Ratkaistaan lopputilavuus:
 ```latex
-V_2 = \frac{p_1 V_1}{p_2} = \frac{101\,\text{kPa} \cdot 0{,}80\,\text{l}}{78\,\text{kPa}} \approx 1{,}0\,\text{l}
+\begin{aligned}
+V_2 &= \frac{p_1 V_1}{p_2} = \frac{101\,\text{kPa} \cdot 0{,}80\,\text{l}}{78\,\text{kPa}} \\
+&\approx 1{,}0\,\text{l}
+\end{aligned}
 ```
 Ilman tilavuus kasvaa noin kolmanneksella (tarkemmin 1,04 l). Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi. Tulos on järkevä: paine pienenee, joten tilavuuden täytyy kasvaa, ja kasvukerroin on painesuhde 101/78 ≈ 1,3.
 
