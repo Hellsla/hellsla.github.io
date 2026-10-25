@@ -20,6 +20,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - run: pip install markdown playwright && playwright install --with-deps chromium
+      - run: python scripts/lint_lesson.py --all
       - run: python scripts/build.py --all
       - run: python scripts/test_gate.py
       - run: python scripts/gate.py --verify

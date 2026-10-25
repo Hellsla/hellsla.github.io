@@ -20,7 +20,9 @@ with sync_playwright() as pw:
         errors = []
         page.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
         page.on("pageerror", lambda e: errors.append(str(e)))
-        page.goto(page_file.as_uri()); page.wait_for_timeout(1500)
+        page.goto(page_file.as_uri())
+        page.evaluate("document.getElementById('sim') && document.getElementById('sim').scrollIntoView()")   # sim-embed pauses sims that are off-screen
+        page.wait_for_timeout(1500)
         state = page.evaluate("window.simState")
         tests = ROOT / "tests/sims" / f"{lid}.json"
         checks = json.loads(tests.read_text()) if tests.exists() else []
