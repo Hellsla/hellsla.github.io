@@ -1,6 +1,6 @@
 [
   {
-    "q": "Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun (g = 1,62 N/kg)?",
+    "q": "Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun (g = 1,62 m/s²)?",
     "a": "Massa pysyy 3,0 kg:na. Paino pienenee Maan 29 N:sta Kuun 4,9 N:iin, eli noin kuudesosaan."
   },
   {
@@ -9,6 +9,6 @@
   },
   {
     "q": "Pullossa on 1,5 kg vettä. Mikä on veden paino Maassa, ja miksi lause ”pullo painaa puolitoista kiloa” on fysiikan kannalta epätarkka?",
-    "a": "G = m g = 1,5 kg · 9,81 N/kg ≈ 15 N. Kilogramma on massan yksikkö, mutta paino on voima, jonka yksikkö on newton: lause kertoo massan, ei painon."
+    "a": "G = m g = 1,5 kg · 9,81 m/s² ≈ 15 N. Kilogramma on massan yksikkö, mutta paino on voima, jonka yksikkö on newton: lause kertoo massan, ei painon."
   }
 ]

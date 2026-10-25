@@ -35,7 +35,7 @@
     {
       "id": "fy3-1-L1-05",
       "level": 1,
-      "text": "Kappaleen massa on 2,5 kg. Mikä on sen paino Jupiterissa, missä g = 24,8 N/kg?",
+      "text": "Kappaleen massa on 2,5 kg. Mikä on sen paino Jupiterissa, missä g = 24,8 m/s²?",
       "answer": 62,
       "unit": "N",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-1-L2-03",
       "level": 2,
-      "text": "Astronautin massa varusteineen on 145 kg. Kuinka paljon pienempi hänen painonsa on Kuussa (g = 1,62 N/kg) kuin Maassa?",
+      "text": "Astronautin massa varusteineen on 145 kg. Kuinka paljon pienempi hänen painonsa on Kuussa (g = 1,62 m/s²) kuin Maassa (g = 9,81 m/s²)?",
       "answer": 1190,
       "unit": "N",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-1-L3-01",
       "level": 3,
-      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin (g = 3,71 N/kg). Mitä sama mittari näyttää siellä?",
+      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin (g = 3,71 m/s²). Mitä sama mittari näyttää siellä?",
       "answer": 6.8,
       "unit": "N",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy3-1-L3-02",
       "level": 3,
-      "text": "Nostaja jaksaa Maassa nostaa korkeintaan 22,0 kg:n massan, eli hän jaksaa tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa (g = 1,62 N/kg) samalla voimalla?",
+      "text": "Nostaja jaksaa Maassa nostaa korkeintaan 22,0 kg:n massan, eli hän jaksaa tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa (g = 1,62 m/s²) samalla voimalla?",
       "answer": 133,
       "unit": "kg",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy3-1-L3-03",
       "level": 3,
-      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg. Mittariin ripustetaan Kuussa (g = 1,62 N/kg) kappale, jonka massa on 6,0 kg. Mitä lukemaa mittari näyttää kilogrammoina?",
+      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna luvulla 9,81 m/s². Mittariin ripustetaan Kuussa (g = 1,62 m/s²) kappale, jonka massa on 6,0 kg. Minkä lukeman mittari näyttää kilogrammoina?",
       "answer": 0.99,
       "unit": "kg",
       "tolerance": 0.02

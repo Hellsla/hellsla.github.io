@@ -1,5 +1,5 @@
 // fy3-1 Voima vuorovaikutuksen mittana: a mass on a spring scale (voimamittari) on different bodies.
-// Physics: weight G = m g, with g the strength of gravity per kilogram (N/kg) on the chosen body.
+// Physics: weight G = m g, with g the acceleration of free fall (m/s²) on the chosen body.
 // Mass is the same everywhere; only the weight changes. The spring stretch and the weight arrow are proportional
 // to G, and the bar heights are proportional to G at the current mass. The spring and the arrow use one fixed scale whose full value is the
 // largest possible weight (100 kg on Jupiter, 2480 N), so they visibly change with the mass slider and with
@@ -11,7 +11,7 @@
 // The numeric readout (m, g, G) is DOM text so it stays readable on a phone; the canvas only draws.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
-  const BODIES = [['Kuu', 1.62], ['Mars', 3.71], ['Maa', 9.81], ['Jupiter', 24.8]];   // g in N/kg
+  const BODIES = [['Kuu', 1.62], ['Mars', 3.71], ['Maa', 9.81], ['Jupiter', 24.8]];   // g in m/s²
   const COLORS = [[110, 110, 110], [190, 90, 60], [47, 120, 160], [176, 120, 50]];
   const SPRING = { x: 110, top: 40, maxLen: 190 };             // spring scale on the left
   const BARS = { x: 270, y: 60, w: 300, h: 250 };              // bar chart on the right
@@ -45,7 +45,7 @@ new p5((p) => {
     const stretch = SPRING.maxLen * G / G_FULL;                // spring stretch (px), proportional to the weight G
     lM.html(`Massa m = ${m} kg`);
     const chartFull = m * G_MAX;                                // bar chart full scale: this mass on Jupiter
-    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} N/kg (${body})` +
+    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} m/s² (${body})` +
                  `<br><strong>G = m · g = ${fi(G, 1)} N</strong>` +
                  `<br>Palkkikaavion asteikko 0–${fi(chartFull, chartFull < 100 ? 1 : 0)} N on tämän massan paino Jupiterissa.`);
     const arrow = ARROW_FULL * G / G_FULL;                     // weight arrow length (px), purely proportional to G

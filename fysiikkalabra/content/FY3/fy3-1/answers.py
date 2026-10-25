@@ -2,7 +2,7 @@
 Prints {exercise id: number} as JSON on the last line; the lint and the gate compare it with exercises.json."""
 import json
 
-g = {"Maa": 9.81, "Kuu": 1.62, "Mars": 3.71, "Jupiter": 24.8}   # N/kg, the lesson's table
+g = {"Maa": 9.81, "Kuu": 1.62, "Mars": 3.71, "Jupiter": 24.8}   # m/s², the lesson's table
 a = {}
 # Level 1: G = m g, and the stretch of a spring is proportional to the force
 a["fy3-1-L1-01"] = 4.0 * g["Maa"]                 # 39,24 N -> 39 N

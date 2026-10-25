@@ -11,7 +11,7 @@
 // The numeric readout (m, g, G) is DOM text so it stays readable on a phone; the canvas only draws.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
-  const BODIES = [['Kuu', 1.62], ['Mars', 3.71], ['Maa', 9.81], ['Jupiter', 24.8]];   // g in N/kg
+  const BODIES = [['Kuu', 1.62], ['Mars', 3.71], ['Maa', 9.81], ['Jupiter', 24.8]];   // g in m/s²
   const COLORS = [[110, 110, 110], [190, 90, 60], [47, 120, 160], [176, 120, 50]];
   const SPRING = { x: 110, top: 40, maxLen: 190 };             // spring scale on the left
   const BARS = { x: 270, y: 60, w: 300, h: 250 };              // bar chart on the right

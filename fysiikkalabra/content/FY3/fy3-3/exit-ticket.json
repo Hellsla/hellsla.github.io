@@ -1,7 +1,7 @@
 [
   {
-    "q": "Mitä tilanmuuttujia kaasusysteemillä on, ja mitä muille tilanmuuttujille tapahtuu, kun yhtä niistä muutetaan?",
-    "a": "Lämpötila, paine ja tilavuus sekä aineen määrä. Kun yhtä muutetaan, vähintään yksi muista muuttuu myös."
+    "q": "Miksi suljetun astian kaasun paine kasvaa, kun kaasu lämpenee?",
+    "a": "Lämpötilan noustessa hiukkasten keskimääräinen liike-energia kasvaa, eli hiukkaset liikkuvat nopeammin. Ne osuvat seinään useammin ja kovempaa, joten paine kasvaa."
   },
   {
     "q": "Lämpötila nousee 10 °C:sta 20 °C:een. Kaksinkertaistuuko hiukkasten keskimääräinen liike-energia? Perustele.",
