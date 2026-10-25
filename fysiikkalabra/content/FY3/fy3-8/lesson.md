@@ -103,24 +103,20 @@ missä ΔV on tilavuuden muutos (m³), γ tilavuuden lämpötilakerroin (1/K) ja
 ## Esimerkki
 Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee vuoden aikana −30 °C:n pakkasesta +30 °C:n helteeseen, ja teräksen pituuden lämpötilakerroin on 12 · 10⁻⁶ 1/K. Kuinka paljon kannen pituus muuttuu, eli kuinka paljon liikuntasauman on vähintään annettava periksi?
 
-
 <!-- vaihe -->
 
 **Tunnetut ja kysytty.** Kannen pituus $L_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja lämpötilan muutos $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Kysytään pituuden muutosta $\Delta L$.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Pituuden muutos saadaan suoraan kaavasta, joka on jo ratkaistu kysytyn suureen suhteen:
-```latex
-\Delta L = \alpha L_0 \Delta T
-```
+**Kaava ratkaistuna.** Kysytty suure on jo yksin kaavan vasemmalla puolella, joten kaavaa ei tarvitse muokata: $\Delta L = \alpha L_0 \Delta T$.
 
 <!-- vaihe -->
 
 **Sijoitus.** Sijoitetaan arvot yksiköineen:
 ```latex
 \begin{aligned}
-&\Delta L \\
+\Delta L &= \alpha L_0 \Delta T \\
 &= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K} \\
 &= 0{,}0864\,\text{m} \approx 86\,\text{mm}
 \end{aligned}
