@@ -1,22 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 435cf1ab9fd1cc9c
+VERDICT: PASS
+CONTENT-HASH: 33e3e35d87b23337
 
-The lesson tells one story: the sand hook is answered, the mökki contexts run through the exercises, and the calorimeter sim matches the worked example. Length (843 words, 5/4/3 exercises) matches fy3-3 (829) and fy3-5 (722). The heating/cooling and calorimetry goals are covered. The third goal, solving a multi-term equation, is not: nothing shows how to solve the balance equation for T, which appears in two terms. Only L3-01 uses that equation, and it solves for a mass. Yet the misconception (35 °C) and exit-ticket q3 (65 °C) expect students to find T.
+The lesson now delivers all three goals and tells one story. Heating and cooling are covered by Q = cmΔT and five level-1 tasks. The calorimetric measurement is covered by the worked example, the sim defaults that reproduce it, and the balance equation. The multi-term-equation skill was missing in round 1 and is now taught explicitly: under ## Kaava the equation is expanded, the T terms are collected and T is factored out. The result is displayed as a weighted mean, and the 35 °C misconception and exit-ticket q3 both rely on it. L2-01 (water–water, grams) and L2-04 (aluminium–water) practise solving for T. L3-01 solves the same equation for a mass. C = cm has its own display and is used consistently in the text, the exercises, exit q3 and the sim readout. The lesson is the longest in FY3 (986 words without the SVG; fy3-3 to fy3-5 run 601–861). The extra length is the derivation the goals require, so it is acceptable.
 
 ## Blocking
-- lesson.md:23 — The lesson says T can be solved but never shows how. — Show the steps (expand, collect T, factor) and give T = (c₁m₁T₁ + c₂m₂T₂)/(c₁m₁ + c₂m₂) in display LaTeX, or work the 35 °C case from line 71.
-- exercises.json:46–51 — No exercise asks for T, and L2-01 (pan) nearly duplicates L1-02. — Replace L2-01 with a mixing task for T, masses in grams. Update answers.py and solutions.md.
-- lesson.md:8 — C = cm is only inline, against the display-formula house rule. It is also used at line 68, in exit q3 and in the sim. — Add it in display under ## Kaava with C (J/K) named.
+(none)
 
 ## Polish
-- lesson.md:17,21 — Line 17 makes Q negative on cooling, but the balance equation uses positive amounts. — Add one sentence saying so.
-- lesson.md:10 — The calorimetric measurement procedure gets one sentence. — Name the steps (weigh, measure, transfer quickly, stir, read the peak) and the error sources.
-- exercises.json:78–102 — No calorimetric determination from measured data. — Optionally make one level-3 task include the calorimeter's heat capacity.
+- lesson.md:87 — The paragraph is about 140 words and does three jobs: significant figures, identifying the metal with the loss explanation, and comparing heat capacities. — Split it after "ilmaan." so the heat-capacity comparison stands as its own short paragraph.
+- lesson.md:99 — "Toisella rivillä yhtälö on jaettu puolittain kilogrammalla" leaves out that the brackets were also multiplied out on that line. — Write "jaettu puolittain kilogrammalla ja sulut kerrottu auki".
+- exercises.json:78–102 — No exercise asks for c from measured calorimeter data, so the experimental goal is practised only through the worked example. — Optional: rewrite one level-3 task as a determination of c that includes the vessel's heat capacity or a loss estimate.
 
 ## Checked
-- Lint clean; hash unchanged during review.
-- Goals match curriculum.json; glossary terms exist.
-- FY3 scope kept; P = W/t comes from fy3-2.
-- No exercise repeats the worked example.
-- All 12 answers and the exit-ticket answers recomputed and consistent.
-- Sim spec fits the lesson's story.
+- Lint clean (0/0). Hash unchanged from start to finish of the review.
+- The goals in meta.json match curriculum.json, and each goal has theory, exercises and a sim or exit-ticket check.
+- The display at lesson.md:31–41 is algebraically correct, and the weighted-mean statement at line 42 matches the 50 °C/65 °C cases in exit-ticket q3.
+- C = cm is displayed once with C (J/K) named. The sign convention (Q < 0 on cooling, positive amounts in the balance) is explained at line 29.
+- L2-01: (160·95 + 40·8,0)/200 = 77,6 → 78 °C. L2-04: 51 543/1901 = 27,1 → 27 °C. Both are consistent with answers.py.
+- No exercise repeats the worked example (a determination of c). L2-01 is distinct from the old pan task L1-02.
+- Sim defaults (0,30 kg water at 20 °C, 0,200 kg copper at 100 °C) give 24,6 °C, as line 87 claims. L2-04 is reachable within the slider ranges.
+- FY3 scope kept: P = W/t in L2-02 comes from earlier FY3 lessons, and there are no phase changes (those belong to fy3-7).
