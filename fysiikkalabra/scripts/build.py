@@ -5,8 +5,8 @@ With a lesson id that lesson is built regardless of status, for previewing a dra
 With --all every lesson is built regardless of status (CI uses this to test drafts too).
 The plain build writes to site/ (committed, served by GitHub Pages); a preview or --all build
 writes to preview/ (git-ignored), so a draft can never end up in the published folder.
-The plain build renders into site.tmp/ and swaps it in only when every page rendered, so a failed build
-never leaves site/ incomplete. `--publishing <id>` (used by gate.py --publish) renders that lesson as reviewed,
+The plain build renders into site.tmp/, checks that every expected page is there and swaps it in only then,
+so a failed build never leaves site/ incomplete. `--publishing <id>` (used by gate.py --publish) renders that lesson as reviewed,
 so the gate can write the status only after the site holds the lesson.
 
 Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` lines (staged_example).
@@ -252,7 +252,10 @@ home = (
     f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
 (SITE / "index.html").write_text(page("Fysiikkalabra", home, "", "index.html",
                                       "Teoria, simulaatiot ja tehtävät lukion fysiikkaan, LOPS 2019:n moduulit FY1–FY8.", main_class=""))
-if SITE.name == "site.tmp":                      # every page rendered: swap the new site in; the old one comes back if the swap fails
+if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
+    expected = ["index.html", "site.css", "lesson.js", "sim-embed.js"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids]
+    broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
+    if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
     if old.exists(): shutil.rmtree(old)
     if LIVE.exists(): LIVE.rename(old)
