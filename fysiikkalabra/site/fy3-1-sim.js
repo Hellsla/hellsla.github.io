@@ -1,5 +1,6 @@
 // fy3-1 Voima vuorovaikutuksen mittana: a mass on a spring scale (voimamittari) on different bodies.
-// Physics: weight G = m g, with g the strength of gravity per kilogram (N/kg) on the chosen body.
+// Physics: weight G = m g, with g the strength of gravity (m/s²) on the chosen body.
+// g is written in m/s² (project rule).
 // Mass is the same everywhere; only the weight changes. The spring stretch, the weight arrow and the bar
 // heights are all proportional to G on one fixed scale whose full scale is the largest possible weight
 // (100 kg on Jupiter, 2480 N), so they visibly change with the mass slider and with the chosen body.
@@ -9,7 +10,7 @@
 // The numeric readout (m, g, G) is DOM text so it stays readable on a phone; the canvas only draws.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
-  const BODIES = [['Kuu', 1.62], ['Mars', 3.71], ['Maa', 9.81], ['Jupiter', 24.8]];   // g in N/kg
+  const BODIES = [['Kuu', 1.62], ['Mars', 3.71], ['Maa', 9.81], ['Jupiter', 24.8]];   // g in m/s²
   const COLORS = [[110, 110, 110], [190, 90, 60], [47, 120, 160], [176, 120, 50]];
   const SPRING = { x: 110, top: 40, maxLen: 190 };             // spring scale on the left
   const BARS = { x: 270, y: 60, w: 300, h: 250 };              // bar chart on the right
@@ -42,7 +43,7 @@ new p5((p) => {
     const G = m * g;                                           // weight in newtons
     const stretch = SPRING.maxLen * G / G_FULL;                // spring stretch (px), proportional to the weight G
     lM.html(`Massa m = ${m} kg`);
-    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} N/kg (${body})` +
+    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} m/s² (${body})` +
                  `<br><strong>G = m · g = ${fi(G, 1)} N</strong>`);
     const arrow = ARROW_FULL * G / G_FULL;                     // weight arrow length (px), purely proportional to G
     const bars = BODIES.map(([, gg]) => (m * gg / G_FULL) * (BARS.h - 30));   // bar heights (px), proportional to the weight

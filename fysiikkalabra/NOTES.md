@@ -46,6 +46,7 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 - Slot ids follow the module: `fy3-2` is the second FY3 lesson. The gold reference is `fy4-4`.
 
 ### Numbers
+- **g is always written in m/s²** (human decision, 2026-10-25): g = 9,81 m/s², Kuu 1,62 m/s², Mars 3,71 m/s², Jupiter 24,8 m/s². Never use N/kg for g, in text, tables, exercises, solutions, simulations or tests. The weight formula G = mg gives newtons when m is in kg and g in m/s² (1 N = 1 kg·m/s², explained in FY4); weight is never described as the cause of a motion in FY3.
 - Round only at the end; show unrounded intermediates in solutions (`v = 80/3,6 m/s`, not `22,2`).
 - Final answers have as many significant figures as the data (2 sf data gives 2 sf). Check that a student who rounds correctly stays inside the relative `tolerance` (0,02).
 - Compute every answer in Python before writing it.

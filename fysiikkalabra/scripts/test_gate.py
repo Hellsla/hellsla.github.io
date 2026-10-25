@@ -72,7 +72,11 @@ expect("verify: human-reviewed lesson is not hash-checked", gate(t, "--verify")[
 # 11. status fields do not affect the hash
 t = project(); before = h(t); m = t / "content/FY3" / LESSON / "meta.json"; md = json.loads(m.read_text()); md["status"] = "reviewed"; md["reviewed_on"] = "2030-01-01"; m.write_text(json.dumps(md, ensure_ascii=False))
 expect("status fields excluded from hash", h(t) == before)
-# 12. the gate never writes into the real project when FYSIIKKALABRA_ROOT is set
-expect("real project untouched", not (SRC / "content/FY3" / LESSON / "review/educator.md").read_text().startswith("VERDICT: PASS\nCONTENT-HASH: ") if (SRC / "content/FY3" / LESSON / "review/educator.md").exists() else True)
+# 12. running the gate under FYSIIKKALABRA_ROOT never changes the real project
+def snapshot():
+    return {str(f.relative_to(SRC)): f.read_bytes() for f in sorted((SRC / "content").rglob("*")) if f.is_file()}
+before = snapshot()
+t = project(); reports(t); gate(t, LESSON, "--publish"); gate(t, "--verify")
+expect("real project untouched", snapshot() == before)
 print("\n" + ("all gate tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
