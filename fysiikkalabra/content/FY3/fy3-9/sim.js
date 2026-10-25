@@ -164,7 +164,7 @@ new p5((p) => {
     for (let v = 0; v <= GA.max; v += 10) { p.strokeWeight(v % 50 ? 1 : 2); ray(v, rim - (v % 50 ? 4 : 8), rim); }
     p.noStroke(); p.fill(50); p.textSize(ts(9));
     for (const v of k > 1.5 ? [0, 300] : [0, 100, 200, 300]) lab(`${v}`, GA.x + 22 * Math.cos(ang(v)), GA.y + 22 * Math.sin(ang(v)) + ts(3), p.CENTER);
-    lab('kPa', GA.x, GA.y + (k > 1.5 ? -14 : 35), p.CENTER);   // below the hub when 100 and 200 are printed
+    lab('kPa', GA.x, GA.y + (k > 1.5 ? -14 : 41), p.CENTER);   // below the hub when 100 and 200 are printed; 41 keeps a 5 px gap to "0" and "300" in wider fonts
     p.stroke(200, 50, 40); p.strokeWeight(3); ray(needle, -6, rim - 6);  // needle
     p.noStroke(); p.fill(40); p.circle(GA.x, GA.y, 8); p.fill(255, 255, 255, 120); p.circle(GA.x - 1, GA.y - 1, 3);
     // thermometer: glass tube, liquid up to T, a colour strip that is the legend of the gas colour, scale in °C
