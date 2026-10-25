@@ -16,6 +16,8 @@
 // The gauge and the bars share one scale; the gauge needle and the measured bar have the colour of the wall flashes.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and as test hooks
 // window.simAdvance(s) (runs s simulated seconds at once) and window.simRestart() (the state right after loading).
+// Speed control: each frame advances the simulated time by (real frame time)·speed; the pressure average runs over
+// simulated time, so the speed changes only the pace, never the measured values.
 new p5((p) => {
   const DT = 1 / 240, BIN = 24, NBINS = 20, SEED = 31;          // physics step (s), steps per 0,1 s bin, 20 bins = 2 s
   const LY = 280, LXMAX = 310, R = 3;                            // gas region height and full width (px), drawn radius
@@ -32,7 +34,7 @@ new p5((p) => {
   const PAL = Array.from({ length: 32 }, (_, i) => i < 16 ? mix(SLOW, MID, i / 15.5) : mix(MID, FAST, (i - 16) / 15));
   const hw = new Int8Array(HN), hs = new Float32Array(HN), hv = new Float32Array(HN), hn = new Int32Array(HN);   // hit ring
   let rnd, parts = [], N = 0, T = 300, Lx = LXMAX, acc = 0, bins = [], hbins = [], cur = 0, hcur = 0, curSteps = 0, top = 0, tStep = 1;
-  let sN, lN, sT, lT, sV, lV, readout, nStep = 0, hi = 0, needle = 0;
+  let sN, lN, sT, lT, sV, lV, sel, speed = 0.5, readout, nStep = 0, hi = 0, needle = 0;
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -95,24 +97,33 @@ new p5((p) => {
     const pPredicted = (N / 100) * (T / 300) / Vrel, vrms = Math.sqrt(parts.reduce((a, q) => a + q.vx * q.vx + q.vy * q.vy, 0) / N);
     const sp = parts.map((q) => Math.hypot(q.vx, q.vy)).sort((a, b) => a - b), vmed = (sp[(N - 1) >> 1] + sp[N >> 1]) / 2;
     const hitRate = tAvg > 0 ? (hbins.reduce((a, b) => a + b, 0) + hcur) / tAvg : 0;   // wall hits per second = flashes
-    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, vrms, vmed, hitRate };
+    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, vrms, vmed, hitRate, speed };
     return window.simState;
   };
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
-    readout = p.createDiv('').parent('sim-root').class('readout');
     const btn = p.createButton('Nollaa mittaus').parent(controls);
     btn.elt.addEventListener('click', clearAvg);
     [sN, lN] = slider(controls, 20, 200, 100, 10);               // hiukkasmäärä N
     [sT, lT] = slider(controls, 100, 600, 300, 10);              // lämpötila T (K)
     [sV, lV] = slider(controls, 25, 100, 100, 5);                // tilavuus V (% täydestä)
-    p.createP('Tasomalli: pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin. Paine on seiniin osuvien törmäysten ' +
-              'keskiarvo 2 s:n ajalta, joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 % (tilastollista vaihtelua). ' +
-              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00). Tilavuuden muutos ei muuta hiukkasten nopeuksia, joten lämpötila pysyy samana. ' +
-              'Pylväiden asteikko mukautuu arvoihin: vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa.')
-      .parent('sim-root').class('note');
+    const ls = p.createDiv('').parent(controls).style('display', 'flex').style('flex-direction', 'column')
+      .style('flex', '1 1 11rem').style('font-size', '.9rem');           // laid out like the slider labels
+    p.createSpan('Nopeus').parent(ls).id('fy3-10-speed');
+    sel = p.createSelect().parent(ls).style('min-height', '40px').attribute('aria-labelledby', 'fy3-10-speed');
+    sel.option('hidas (0,25×)', '0.25'); sel.option('normaali (0,5×)', '0.5'); sel.option('nopea (1×)', '1');
+    sel.selected('0.5'); sel.changed(() => { speed = Number(sel.value()); });
+    readout = p.createDiv('').parent('sim-root').class('readout');
+    const det = p.createElement('details').parent('sim-root').class('note');
+    p.createElement('summary', 'Lisätietoja').parent(det);
+    p.createP('Tasomalli: pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin, eivät toisiinsa. Paine on seiniin osuvien törmäysten ' +
+              'keskiarvo 2 s:n ajalta (simuloitua aikaa), joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 % (tilastollista vaihtelua). ' +
+              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00), ja suhde mitattu/ennuste on pV/(NT) suhteessa vertailutilaan. ' +
+              'Tilavuuden muutos ei muuta hiukkasten nopeuksia, joten lämpötila pysyy samana. ' +
+              'Pylväiden asteikko mukautuu arvoihin: vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa. ' +
+              'Nopeus muuttaa vain animaation tahtia, ei mitattuja arvoja.').parent(det);
     window.simAdvance = (s) => { sync(); advance(s); return update().pMeasured; };
     window.simRestart = () => { restart(); update(); };
     restart(); update();
@@ -120,13 +131,12 @@ new p5((p) => {
   };
 
   p.draw = () => {
-    sync(); advance(Math.min(p.deltaTime, 100) / 1000);
+    sync(); advance(Math.min(p.deltaTime, 100) / 1000 * speed);   // simulated time = real time · speed
     const { Vrel, pMeasured: pm, pPredicted: pp, ratio, tAvg } = update();
     lN.html(`Hiukkasmäärä N = ${N}`); lT.html(`Lämpötila T = ${T} K`); lV.html(`Tilavuus V = ${fi(Vrel * 100, 0)} %`);
-    readout.html(`N = ${N}, T = ${T} K, V = ${fi(Vrel * 100, 0)} % (vertailutila: N = 100, T = 300 K, V = 100 %)` +
-      `<br>Mitattu paine p/p<sub>ref</sub> = <strong>${fi(pm, 2)}</strong> (keskiarvo ${fi(tAvg, 1)} s:n ajalta)` +
+    readout.html(`Mitattu paine p/p<sub>ref</sub> = <strong>${fi(pm, 2)}</strong> (keskiarvo ${fi(tAvg, 1)} s:n ajalta)` +
       `<br>Tilanyhtälön ennuste p/p<sub>ref</sub> = (N/100) · (T/300 K) · (100 %/V) = <strong>${fi(pp, 2)}</strong>` +
-      `<br>Suhde mitattu/ennuste (= pV/(NT) suhteessa vertailutilaan) = <strong>${fi(ratio, 2)}</strong>`);
+      `<br>Suhde mitattu/ennuste = <strong>${fi(ratio, 2)}</strong>`);
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k), ctx = p.drawingContext;
@@ -228,7 +238,6 @@ new p5((p) => {
     const yName = yL + 14 + ts(13);                              // axis name p/p_ref with a drawn subscript
     p.textSize(ts(11)); lab('ref', 590, yName + ts(3), p.RIGHT); const wSub = p.textWidth('ref');
     p.textSize(ts(13)); lab('p/p', 590 - wSub - 1, yName, p.RIGHT);
-    if (k <= 1.5) { const wP = p.textWidth('p/p'); p.textSize(ts(10)); lab('asteikko mukautuu', 590 - wSub - 1 - wP - 8, yName, p.RIGHT); }   // on a phone the label would run into the tank wall; the note under the canvas says it there
     const cols = [MEAS, PRED], vals = [pm, pp], names = ['mitattu', 'ennuste'];
     for (let i = 0; i < 2; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
