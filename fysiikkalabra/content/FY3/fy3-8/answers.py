@@ -4,16 +4,15 @@ Prints {exercise id: number} as JSON on the last line; the lint and the gate com
 import json
 
 # coefficients from the lesson tables, 1/K
-a_teras, a_alumiini, a_kupari, a_lasi = 12e-6, 23e-6, 17e-6, 9e-6
+a_teras, a_alumiini, a_kupari, a_lasi = 12e-6, 23e-6, 17e-6, 9.0e-6
 g_vesi, g_bensiini = 0.21e-3, 0.95e-3
 a = {}
 # Level 1: one formula, values given
 a["fy3-8-L1-01"] = a_teras * 6.0 * (55 - 15) * 1000          # steel gutter 6,0 m, 15 -> 55 °C: 12e-6 · 6,0 · 40 = 0,00288 m = 2,88 mm -> 2,9 mm
 a["fy3-8-L1-02"] = a_alumiini * 50.0 * (-27 - 18) * 1000     # aluminium line 50,0 m, 18 -> −27 °C, ΔT = −45 K: ΔL = −0,05175 m = −51,75 mm -> −52 mm
-dL_putki = a_kupari * 600.0 * (100 - 0)                      # copper tube 600,0 mm, 0 -> 100 °C: ΔL = 17e-6 · 600,0 mm · 100 = 1,02 mm
-a["fy3-8-L1-03"] = 600.0 + dL_putki                          # new length L = L₀ + ΔL = 601,02 mm -> 601,0 mm
+a["fy3-8-L1-03"] = a_kupari * 500.0 * (100 - 0)              # copper tube 500,0 mm, 0 -> 100 °C: ΔL = 17e-6 · 500,0 mm · 100 = 0,85 mm (L = 500,85 mm, shown in the solution)
 a["fy3-8-L1-04"] = g_vesi * 200 * (32 - 12)                  # 200 l summer-shower tank, 12 -> 32 °C: ΔV = 0,21e-3 · 200 l · 20 = 0,84 l
-a["fy3-8-L1-05"] = a_lasi * 1.5 * (45 - 20) * 1000           # window glass 1,5 m, 20 -> 45 °C: 9e-6 · 1,5 · 25 = 0,0003375 m = 0,3375 mm -> 0,34 mm
+a["fy3-8-L1-05"] = a_lasi * 1.5 * (45 - 20) * 1000           # window glass 1,5 m, 20 -> 45 °C: 9,0e-6 · 1,5 · 25 = 0,0003375 m = 0,3375 mm -> 0,34 mm
 # Level 2: two steps, one conversion or one rearrangement
 a["fy3-8-L2-01"] = (50 / 1000) / (a_teras * (90 - 10))       # district-heating pipe: L₀ = ΔL / (α ΔT) = 0,050 m / (12e-6 · 80) = 52,08 m -> 52 m
 gamma_teras = 3 * a_teras                                    # solid steel: γ ≈ 3α = 36e-6 1/K

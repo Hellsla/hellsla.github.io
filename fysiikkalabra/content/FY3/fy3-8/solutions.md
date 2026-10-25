@@ -15,12 +15,12 @@
 **Järkevyys:** Negatiivinen ΔL tarkoittaa, että johto lyhenee pakkasella. Siksi johto asennetaan kesällä löysälle: kireäksi asennettu johto kiristyisi talvella liikaa. Helteellä johto roikkuu alempana.
 
 ## fy3-8-L1-03
-**Annettu:** kupariputki L₀ = 600,0 mm, α = 17 · 10⁻⁶ 1/K, T₀ = 0 °C, T = 100 °C
-**Kysytty:** uusi pituus L
-**Kaava:** ΔL = α L₀ ΔT ja L = L₀ + ΔL
-**Sijoitus:** ΔT = 100 K. ΔL = 17 · 10⁻⁶ 1/K · 600,0 mm · 100 K = 1,02 mm. L = 600,0 mm + 1,02 mm = 601,02 mm ≈ 601,0 mm
-**Vastaus:** 601,0 mm
-**Järkevyys:** Kun L₀ on millimetreinä, myös ΔL saadaan suoraan millimetreinä. Muutos on vain 0,17 % putken pituudesta, joten se mitataan tarkalla mittakellolla. Vastaus 600,0 mm unohtaisi pitenemisen.
+**Annettu:** kupariputki L₀ = 500,0 mm, α = 17 · 10⁻⁶ 1/K, T₀ = 0 °C, T = 100 °C
+**Kysytty:** pituuden muutos ΔL millimetreinä
+**Kaava:** ΔL = α L₀ ΔT
+**Sijoitus:** ΔT = 100 °C − 0 °C = 100 K. ΔL = 17 · 10⁻⁶ 1/K · 500,0 mm · 100 K = 0,85 mm
+**Vastaus:** 0,85 mm. Putken uusi pituus on L = L₀ + ΔL = 500,0 mm + 0,85 mm ≈ 500,9 mm.
+**Järkevyys:** Kun L₀ on millimetreinä, myös ΔL saadaan suoraan millimetreinä, eikä yksikkömuunnosta tarvita. Muutos on vain 0,17 % putken pituudesta, joten se mitataan tarkalla mittakellolla eikä viivaimella.
 
 ## fy3-8-L1-04
 **Annettu:** V₀ = 200 l, γ = 0,21 · 10⁻³ 1/K, T₀ = 12 °C, T = 32 °C
@@ -28,13 +28,13 @@
 **Kaava:** ΔV = γ V₀ ΔT
 **Sijoitus:** ΔT = 32 °C − 12 °C = 20 K. ΔV = 0,21 · 10⁻³ 1/K · 200 l · 20 K = 0,84 l
 **Vastaus:** 0,84 l
-**Järkevyys:** Kun V₀ on litroina, ΔV saadaan litroina. Kasvu on alle prosentin, mutta täyteen suljettuun säiliöön ei mahtuisi lähes litraa lisää vettä. Siksi säiliössä on ylivuotoputki tai ilmatilaa.
+**Järkevyys:** Kun V₀ on litroina, ΔV saadaan litroina. Kasvu on alle prosentin, mutta täyteen suljettuun säiliöön ei mahtuisi lähes litraa lisää vettä. Siksi säiliössä on ylivuotoputki tai ilmatilaa. Taulukon γ on 20 °C:n arvo, ja veden γ kasvaa lämpötilan mukana, joten todellinen kasvu on hieman suurempi.
 
 ## fy3-8-L1-05
-**Annettu:** lasi L₀ = 1,5 m, α = 9 · 10⁻⁶ 1/K, T₀ = 20 °C, T = 45 °C
+**Annettu:** lasi L₀ = 1,5 m, α = 9,0 · 10⁻⁶ 1/K, T₀ = 20 °C, T = 45 °C
 **Kysytty:** leveyden muutos ΔL millimetreinä
 **Kaava:** ΔL = α L₀ ΔT
-**Sijoitus:** ΔT = 45 °C − 20 °C = 25 K. ΔL = 9 · 10⁻⁶ 1/K · 1,5 m · 25 K = 0,0003375 m ≈ 0,34 mm
+**Sijoitus:** ΔT = 45 °C − 20 °C = 25 K. ΔL = 9,0 · 10⁻⁶ 1/K · 1,5 m · 25 K = 0,0003375 m ≈ 0,34 mm
 **Vastaus:** 0,34 mm
 **Järkevyys:** Kolmasosa millimetristä on pieni, mutta lasin ja karmin väliin jätetään silti rako ja joustava tiiviste. Lasi laajenee vähemmän kuin metallit, koska sen α on pienempi.
 
@@ -60,7 +60,7 @@
 **Kaava:** ΔL = α L₀ ΔT, josta ΔT = ΔL / (α L₀), ja T = T₀ + ΔT
 **Sijoitus:** ΔT = 0,0072 m / (12 · 10⁻⁶ 1/K · 25,0 m) = 24 K. T = 12 °C + 24 K = 36 °C
 **Vastaus:** 36 °C
-**Järkevyys:** Auringonpaisteessa tumma kisko lämpenee helposti yli 36 °C:seen. Silloin raot ovat kiinni ja kiskot työntävät toisiaan, joten raon täytyy olla riittävän leveä. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten 24 K lisätään suoraan 12 °C:seen.
+**Järkevyys:** Oletus on perusteltu: kisko pitenee kumpaankin suuntaan, joten kumpikin pää siirtyy ΔL/2. Rakoa kaventavat molemmat naapurikiskot, kumpikin ΔL/2, joten rako sulkeutuu, kun yksi kisko on pidentynyt raon leveyden verran. Auringonpaisteessa tumma kisko lämpenee helposti yli 36 °C:seen, jolloin raot ovat kiinni ja kiskot painavat toisiaan vasten. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten 24 K lisätään suoraan 12 °C:seen.
 
 ## fy3-8-L2-04
 **Annettu:** L₀ = 3,00 m, ΔL = 2,07 mm = 0,00207 m, T₀ = 12 °C, T = 42 °C

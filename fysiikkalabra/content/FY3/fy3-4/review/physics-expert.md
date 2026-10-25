@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4396a7deb8e88cef
+CONTENT-HASH: ac207ba43c7421e7
 
 ## Blocking
 (none)
@@ -9,22 +9,23 @@ CONTENT-HASH: 4396a7deb8e88cef
 2. lesson.md:27 — ρgh equals the overpressure only when p₀ is air pressure, yet p₀ is "yleensä" air pressure. — Add "kun pinnalla on ilmanpaine".
 
 ## Checked
-- Lint clean; hash unchanged start to end.
-- Round-1 changes: the derivation V = Ah, m = ρV, G = mg = ρAhg, p = G/A = ρgh is correct and assumes a liquid at rest. The sideways-pressure argument and "voimakkaimmin" are sound. Δp = p − p₀ is consistent with lines 14 and 56.
-- The dam paragraph is correct. Air pressure cancels on both sides of the wall, Δp(30 m) = 294 300 Pa ≈ 290 kPa, and that gives ≈ 290 kN on each m². The overpressure grows linearly with depth.
-- Worked example: ρgh = 117 720 Pa, p = 218,72 kPa (2,17·p₀), F = ρgh·A = 1765,8 N ≈ 1,8 kN ≈ 180 kg·g, rounded only at the end. The diver explanation is correct. No buoyancy; force is a scalar normal to the surface (FY3 scope).
-- 10 m of water gives 98,1 kPa ≈ p₀ (lines 12, 62). The SVG is linear, about 1 px/kPa.
-- answers.py: right formula and conversion on each line (cm²→m², bar→Pa, kPa, MPa, G = mg); significant figures and tolerances fit.
-- Hand-recomputed L3-02: ΔF = 39 240 Pa · 0,25 m² = 9810 N.
-- Hand-recomputed L3-01: A = 833,85 N / 6000 Pa = 0,139 m² ≈ 25 cm × 56 cm. Putting the whole weight on one foot is correct.
-- Hand-recomputed L2-04: F = 85 000 Pa · 0,0380 m² = 3230 N. All magnitudes are realistic. The solutions' reasoning and the exit ticket (49 kPa, 150 kPa) are correct.
-- sim.js:41-44 uses the exact formula p = 101 + ρ·9,81·h/1000 kPa. Ylipaine mode removes only the intercept. Densities are realistic.
+- Round 3: only sim.js changed (git diff 23c90fd). Lint clean; hash unchanged from start to end of review.
+- sim.js:22-56 is untouched: P0 = 101 kPa, G = 9,81, slope = ρ·G/1000, pOver = slope·h, pTotal = P0 + pOver, ratio = pTotal/P0, base = 0 in over-only mode else P0. The readout text and simState are identical to round 2, so they still match lesson.md (p = p₀ + ρgh, g = 9,81 m/s²).
+- The blue line is still drawn from (0, base) to (20 m, base + slope·20). The dot is at (h, base + pOver). X() and Y() are unchanged in form; CH.y0 335 (was 345) only shifts the chart up 10 px, so the scale stays linear and Y(P0) lands correctly. The over-only line passes through the origin.
+- The new code (say, meas, segHit, candidate boxes, simDebug) only places and draws text. The reading label prints fi(base + pOver, 0) kPa, the same value as before. The "h" bracket label now appears only for h ≥ 2 m, which is cosmetic.
+- Recomputed readout values (Python below): water 12 m gives 117,7 kPa, p = 218,7 kPa, 2,17 × p₀, matching the lesson example. Water 10 m gives 98,1 kPa ≈ p₀; ρ = 1300 at 20 m gives 255,1 kPa. All values are realistic.
+- Round 2 findings still hold: the derivation, dam paragraph, example, answers.py (every line), solutions.md and exit ticket are correct. The lesson files are unchanged since round 2.
+- I could not run test_sims.py here (Playwright browsers are not installed); the physics review does not depend on it.
 
 ## Python output
 ```
-answers.py: L1 2400.0, 931.95, 275.08, 300.0, 4414.5 | L2 4.0, 35.67788, 919.979613, 3.23 | L3 0.138975, 9.81, 19.0314
-dam 30 m: 294300.0 Pa; per m2 294.3 kN
-example: rho g h 117720.0 p 218720.0 ratio 2.1655 F 1765.8 N = 180.0 kg*g
-L3-02: dp 39240.0 dF 9810.0 tube water 3.924 N, tube area 0.0001
-L2-04 F 3230.0 N = 329 kg*g ; L3-01 A 0.138975 ; exit 49050.0 150050.0
+rho h  pOver  p     ratio
+720 10 70.6 171.6 1.7
+1000 0 0.0 101.0 1.0
+1000 10 98.1 199.1 1.97
+1000 12 117.7 218.7 2.17
+1000 20 196.2 297.2 2.94
+1025 20 201.1 302.1 2.99
+1240 20 243.3 344.3 3.41
+1300 20 255.1 356.1 3.53
 ```

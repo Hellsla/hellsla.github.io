@@ -6,7 +6,7 @@
 // In 2D the area A plays the role of the volume and the ideal gas law reads pA = NkT, where the temperature fixes the
 // mean kinetic energy per direction: <vx²> = <vy²> = kT/m. Kinetic theory gives p = Nm<v²>/(2A) = NkT/A, so relative
 // to the reference state N = 100, T = 300 K, V = 100 %:   p/p_ref = (N/100)·(T/300 K)·(100 %/V).
-// P_REF below is computed from pA = NkT, not measured. Units inside: px and s, v_rms = 180 px/s at 300 K.
+// P_REF below is computed from pA = NkT, not measured. Units inside: px and s, v_rms = 240 px/s at 300 K.
 // Randomness: positions, directions and speeds come from a seeded PRNG (mulberry32); the speed is the Box–Muller radius,
 // i.e. the 2D Maxwell distribution. After a change of N the vx and vy components are rescaled so that the sample has
 // exactly <vx²> = <vy²> = kT/m (the simulated temperature is the mean kinetic energy); a change of T rescales all speeds
@@ -17,7 +17,7 @@ new p5((p) => {
   const DT = 1 / 240, BIN = 24, NBINS = 20, SEED = 31;          // physics step (s), steps per 0,1 s bin, 20 bins = 2 s
   const LY = 280, LXMAX = 310, R = 3;                            // gas region height and full width (px), drawn radius
   const BOX = { x: 16, y: 76 };                                  // top-left corner of the gas region
-  const V300 = 180, KT300 = V300 * V300 / 2;                     // v_rms at 300 K (px/s); kT/m = <v²>/2 in 2D
+  const V300 = 240, KT300 = V300 * V300 / 2;                     // v_rms at 300 K (px/s); kT/m = <v²>/2 in 2D
   const P_REF = 100 * KT300 / (LXMAX * LY);                      // p = NkT/A in the reference state (m = 1)
   const BAR = { ax: 398, x: [446, 540], w: 54, y0: 345, y1: 130 };   // pressure axis, bar centres, bar area
   let rnd, parts = [], N = 0, T = 300, Lx = LXMAX, acc = 0, bins = [], cur = 0, curSteps = 0, top = 0, tStep = 1;

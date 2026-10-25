@@ -50,7 +50,7 @@
 **Annettu:** P = 2,4 kW = 2400 W, vesi c = 4190 J/(kg·K), m = 1,5 kg, T_alku = 15 °C, T_loppu = 95 °C
 **Kysytty:** aika t
 **Kaava:** keittimen energia P t = Q = c m ΔT, missä ΔT = T_loppu − T_alku, joten t = c m ΔT / P
-**Sijoitus:** Q = 4190 J/(kg·K) · 1,5 kg · 80 K = 502 800 J. t = 502 800 J / 2400 W = 209,5 s ≈ 210 s
+**Sijoitus:** ΔT = 95 °C − 15 °C = 80 K. Q = 4190 J/(kg·K) · 1,5 kg · 80 K = 502 800 J. t = 502 800 J / 2400 W = 209,5 s ≈ 210 s
 **Vastaus:** 210 s
 **Järkevyys:** Noin 3,5 minuuttia vastaa kokemusta vedenkeittimestä. Todellisuudessa aika on hieman pidempi, koska osa energiasta lämmittää keitintä ja ilmaa. Yksiköt: J / W = J / (J/s) = s.
 
@@ -84,7 +84,7 @@
 **Kaava:** Q = c m ΔT, joten ΔT = Q / (c m)
 **Sijoitus:** Yhden neliömetrin alla on 1,2 m³ eli 1200 kg vettä. ΔT = 18 000 000 J / (4190 J/(kg·K) · 1200 kg) = 3,58 K ≈ 3,6 K
 **Vastaus:** 3,6 K
-**Järkevyys:** Koko lahdella sekä energia että massa ovat 2000-kertaiset, joten pinta-ala supistuu pois. Matalassa lahdessa vesi lämpenee nopeammin kuin syvässä järvenselässä, mikä sopii kokemukseen.
+**Järkevyys:** Koko lahdella sekä energia että massa ovat 2000-kertaiset, joten pinta-ala supistuu pois. Matalassa lahdessa vesi lämpenee nopeammin kuin syvässä järvenselässä, mikä sopii kokemukseen. Tulos on yläraja: todellinen nousu on pienempi, koska osa energiasta kuluu haihtumiseen ja säteilee yöllä pois.
 
 ## fy3-6-L3-03
 **Annettu:** vesi c = 4190 J/(kg·K), 1000 kg kuutiometrissä; hiekka c = 800 J/(kg·K), 1600 kg kuutiometrissä; sama ΔT = 50 K

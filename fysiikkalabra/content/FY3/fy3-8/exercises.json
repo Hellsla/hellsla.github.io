@@ -19,10 +19,10 @@
     {
       "id": "fy3-8-L1-03",
       "level": 1,
-      "text": "Fysiikan tunnilla kupariputki (α = 17 · 10⁻⁶ 1/K) jäähdytetään jäävedellä 0 °C:seen, ja sen pituudeksi mitataan 600,0 mm. Sitten putken läpi johdetaan kiehuvasta vedestä nousevaa höyryä, jolloin putki lämpenee 100 °C:seen. Mikä on putken pituus L nyt? Anna vastaus millimetreinä yhden desimaalin tarkkuudella.",
-      "answer": 601.0,
+      "text": "Fysiikan tunnilla kupariputki (α = 17 · 10⁻⁶ 1/K) jäähdytetään jäävedellä 0 °C:seen, ja sen pituudeksi mitataan 500,0 mm. Putken toinen pää on kiinni telineessä, ja toista päätä vasten on mittakello. Sitten putken läpi johdetaan kiehuvasta vedestä nousevaa höyryä, jolloin putki lämpenee 100 °C:seen. Kuinka paljon putki pitenee eli kuinka paljon mittakellon lukema muuttuu? Anna vastaus millimetreinä.",
+      "answer": 0.85,
       "unit": "mm",
-      "tolerance": 0.001
+      "tolerance": 0.02
     },
     {
       "id": "fy3-8-L1-04",
@@ -35,7 +35,7 @@
     {
       "id": "fy3-8-L1-05",
       "level": 1,
-      "text": "Olohuoneen ikkunassa on 1,5 m leveä lasi, joka on tavallista lasia (α = 9 · 10⁻⁶ 1/K). Kesäpäivänä auringonpaiste lämmittää lasin 20 °C:sta 45 °C:seen. Kuinka paljon lasin leveys kasvaa? Anna vastaus millimetreinä.",
+      "text": "Olohuoneen ikkunassa on 1,5 m leveä lasi, joka on tavallista lasia (α = 9,0 · 10⁻⁶ 1/K). Kesäpäivänä auringonpaiste lämmittää lasin 20 °C:sta 45 °C:seen. Kuinka paljon lasin leveys kasvaa? Anna vastaus millimetreinä.",
       "answer": 0.34,
       "unit": "mm",
       "tolerance": 0.02
@@ -71,7 +71,7 @@
       "level": 2,
       "text": "Kerrostalon julkisivussa on 3,00 m pitkä metallinen lista. Aamulla listan lämpötila on 12 °C, ja iltapäivällä aurinko on lämmittänyt sen 42 °C:seen. Mittausten mukaan lista on pidentynyt 2,07 mm. Laske listan pituuden lämpötilakerroin α yksikössä 10⁻⁶ 1/K ja päättele oppitunnin taulukosta, mistä metallista lista on tehty (teräs 12, alumiini 23, kupari 17, kaikki · 10⁻⁶ 1/K).",
       "answer": 23,
-      "unit": "· 10⁻⁶ 1/K",
+      "unit": "10⁻⁶ 1/K",
       "tolerance": 0.02
     }
   ],
