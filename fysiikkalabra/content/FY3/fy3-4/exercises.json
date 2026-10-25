@@ -35,7 +35,7 @@
     {
       "id": "fy3-4-L1-05",
       "level": 1,
-      "text": "Saunan vesisaavissa on vettä, ja veden syvyys on 0,45 m. Kuinka suuri on hydrostaattinen paine saavin pohjalla? Veden tiheys on 1000 kg/m³.",
+      "text": "Saunan vesisaavissa veden syvyys on 0,45 m. Kuinka suuri on hydrostaattinen paine saavin pohjalla? Veden tiheys on 1000 kg/m³.",
       "answer": 4400,
       "unit": "Pa",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy3-4-L3-03",
       "level": 3,
-      "text": "Huoltoaseman öljynerotuskaivon pohjalla on 1,60 m vettä ja sen päällä 0,40 m:n kerros öljyä, jonka tiheys on 850 kg/m³. Kuinka suuri on ylipaine kaivon pohjalla? Veden tiheys on 1000 kg/m³. Anna vastaus kilopascaleina.",
+      "text": "Huoltoaseman öljynerotuskaivon pohjalla on 1,60 m:n kerros vettä ja sen päällä 0,40 m:n kerros öljyä, jonka tiheys on 850 kg/m³. Kuinka suuri on ylipaine kaivon pohjalla? Veden tiheys on 1000 kg/m³. Anna vastaus kilopascaleina.",
       "answer": 19,
       "unit": "kPa",
       "tolerance": 0.02

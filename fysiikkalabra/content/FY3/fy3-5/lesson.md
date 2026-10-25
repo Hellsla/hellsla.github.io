@@ -3,7 +3,7 @@
 > **Miksi** polkupyörän pumppu kuumenee, kun rengasta pumpataan, vaikka pumppua ei lämmitetä millään?
 
 ## Ydinajatus
-Edellisillä oppitunneilla työ todettiin tavaksi siirtää energiaa, ja Joulen koe näytti, että mekaaninen työ voi lämmittää vettä. Vesi ei kuitenkaan sisällä "lämpöä", vaan energiaa. Systeemin sisäenergia U on sen hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Mikromallin mukaan lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, joten kun kaasun tai nesteen lämpötila nousee, sen sisäenergia kasvaa. Sisäenergia riippuu myös aineen määrästä: iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
+Edellisillä oppitunneilla työ todettiin tavaksi siirtää energiaa, ja Joulen koe näytti, että mekaaninen työ voi lämmittää vettä. Vesi ei kuitenkaan sisällä ”lämpöä”, vaan sisäenergiaa. Systeemin sisäenergia U on sen hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Mikromallin mukaan lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, joten kun kaasun tai nesteen lämpötila nousee, sen sisäenergia kasvaa. Sisäenergia riippuu myös aineen määrästä: iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
 
 Systeemin sisäenergiaa voi muuttaa kahdella tavalla. Ensimmäinen on työ: kun pumpun mäntä puristaa ilmaa, ympäristö tekee kaasuun työtä, ja kaasun sisäenergia kasvaa. Siksi pumppu kuumenee. Toinen on lämpö: kun kaksi eri lämpötilassa olevaa kappaletta koskettavat, energiaa siirtyy itsestään kuumemmasta kylmempään, kunnes lämpötilat ovat samat. Näin siirtynyttä energiaa sanotaan lämmöksi, ja siirtyneen energian määrä on lämpömäärä Q. Lämpö on siis energian siirtymistä, ei aineen ominaisuus: kappaleella on lämpötila ja sisäenergia, mutta ei lämpöä.
 
@@ -43,10 +43,10 @@ $\Delta U = Q + W = -40\,\text{J} + 150\,\text{J} = 110\,\text{J}$
 Ilman sisäenergia kasvaa 110 J, joten sen lämpötila nousee. Jos puristus tehtäisiin niin hitaasti, että kaikki työn tuoma energia ehtisi siirtyä lämpönä pois, olisi Q = −150 J ja ΔU = 0, eikä lämpötila muuttuisi.
 
 ## Yleinen virhekäsitys
-Arkikielessä sanotaan, että kappaleessa "on lämpöä" tai että lämpö "varastoituu". Fysiikassa lämpö on energian siirtymistä lämpötilaeron vuoksi, ja se, mikä kappaleeseen varastoituu, on sisäenergiaa. Toinen virhe on pitää lämpötilaa ja sisäenergiaa samana asiana: kuuma kipinä on tuhansia asteita, mutta sen sisäenergia on pieni, koska siinä on vähän ainetta. Kolmas virhe on ajatella, että sisäenergiaa voi muuttaa vain lämmittämällä. Pumpun ilma kuumenee ilman mitään lämmönlähdettä, koska siihen tehdään työtä.
+Arkikielessä sanotaan, että kappaleessa ”on lämpöä” tai että lämpö ”varastoituu”. Fysiikassa lämpö on energian siirtymistä lämpötilaeron vuoksi, ja se, mikä kappaleeseen varastoituu, on sisäenergiaa. Toinen virhe on pitää lämpötilaa ja sisäenergiaa samana asiana: kuuman kipinän lämpötila on tuhansia asteita, mutta sen sisäenergia on pieni, koska siinä on vähän ainetta. Kolmas virhe on ajatella, että sisäenergiaa voi muuttaa vain lämmittämällä. Pumpun ilma kuumenee ilman mitään lämmönlähdettä, koska siihen tehdään työtä.
 
 ## Tiivistelmä
-- Sisäenergia U on systeemin hiukkasten liike-energian ja vuorovaikutusenergian summa. Se kasvaa, kun lämpötila nousee, ja riippuu myös aineen määrästä.
-- Lämpö on energian siirtymistä kuumemmasta kylmempään lämpötilaeron vuoksi; siirtynyt energia on lämpömäärä Q. Kappaleella ei "ole lämpöä".
+- Sisäenergia U on systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Se kasvaa, kun lämpötila nousee, ja riippuu myös aineen määrästä.
+- Lämpö on energian siirtymistä kuumemmasta kylmempään lämpötilaeron vuoksi; siirtynyt energia on lämpömäärä Q. Kappaleella ei ”ole lämpöä”.
 - Sisäenergiaa muuttavat lämpö ja työ: $\Delta U = Q + W$. Sisään siirtyvä energia on positiivista, ulos siirtyvä negatiivista.
 - Energia säilyy: tämä on termodynamiikan ensimmäinen pääsääntö. Eristetyn systeemin sisäenergia pysyy vakiona.

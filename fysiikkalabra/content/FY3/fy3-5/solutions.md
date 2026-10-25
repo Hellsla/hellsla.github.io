@@ -10,7 +10,7 @@
 **Annettu:** systeemi on kahvi; Q = −8,4 kJ (lämpöä siirtyy kahvista pois), W = 0
 **Kysytty:** ΔU
 **Kaava:** ΔU = Q + W
-**Sijoitus:** ΔU = −8,4 kJ + 0 = −8,4 kJ
+**Sijoitus:** ΔU = −8,4 kJ + 0 kJ = −8,4 kJ
 **Vastaus:** −8,4 kJ
 **Järkevyys:** Sisäenergia pienenee, joten kahvin lämpötila laskee. Energia ei katoa, vaan sama 8,4 kJ siirtyy pöytään ja huoneen ilmaan.
 

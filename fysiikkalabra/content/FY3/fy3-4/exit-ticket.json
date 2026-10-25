@@ -1,6 +1,6 @@
 [
   {
-    "q": "Nastaa painetaan seinään sormella. Miksi terävä kärki uppoaa seinään, vaikka sormi työntää kantaa aivan yhtä suurella voimalla?",
+    "q": "Nastaa painetaan seinään sormella. Miksi terävä kärki uppoaa seinään, vaikka kärkeen ja kantaan kohdistuu sama voima?",
     "a": "Kärjen pinta-ala on hyvin pieni, joten sama voima jakautuu pienelle alalle ja paine p = F/A on suuri. Kannassa sama voima jakautuu suurelle alalle, joten paine jää pieneksi."
   },
   {
@@ -8,7 +8,7 @@
     "a": "ρgh = 1000 kg/m³ · 9,81 m/s² · 5,0 m ≈ 49 kPa. Kokonaispaine on 101 kPa + 49 kPa ≈ 150 kPa."
   },
   {
-    "q": "Kapea pystyputki ja leveä allas on täytetty vedellä 1,0 m:n korkeuteen. Kummassa pohjan paine on suurempi?",
+    "q": "Kapea pystyputki ja leveä allas ovat täynnä vettä 1,0 m:n korkeuteen. Kummassa pohjan paine on suurempi?",
     "a": "Paine on sama. Hydrostaattinen paine riippuu vain syvyydestä, nesteen tiheydestä ja pinnan paineesta, ei astian muodosta eikä veden määrästä."
   }
 ]

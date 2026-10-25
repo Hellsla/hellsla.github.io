@@ -31,7 +31,7 @@ new p5((p) => {
     const lc = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.6rem').style('min-height', '40px');
     cb = p.createElement('input').attribute('type', 'checkbox').parent(lc).style('width', '24px').style('height', '24px').style('margin', '0');
     p.createSpan('Näytä vain ylipaine').parent(lc);
-    p.createP('Paine kasvaa syvyyden mukana tasaisesti: jokainen metri lisää painetta ρg. Suoran kulmakerroin riippuu tiheydestä, mutta pinnalla paine on aina ilmanpaine.')
+    p.createP('Paine kasvaa syvyyden mukana tasaisesti: jokainen metri lisää painetta ρg:n verran. Suoran kulmakerroin riippuu tiheydestä, mutta pinnalla paine on aina ilmanpaine.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
   };

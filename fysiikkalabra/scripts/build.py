@@ -109,6 +109,9 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     meta = json.loads((folder / "meta.json").read_text())
     if only and meta["id"] != only: continue
     if meta.get("status") != "reviewed" and not (only or build_all): continue   # publish only reviewed lessons
+    missing = [f for f in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json") if not (folder / f).exists()]
+    if missing:                                      # a draft still being written: skip it instead of failing the whole build
+        print("skipped", meta["id"], "(missing " + ", ".join(missing) + ")"); continue
     ex = json.loads((folder / "exercises.json").read_text())
     publish = meta.get("solutions", "first")
     solutions = solutions_of(folder) if publish != "none" else {}

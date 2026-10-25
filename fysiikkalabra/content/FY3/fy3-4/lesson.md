@@ -42,16 +42,16 @@ missä p₀ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), ρ nesteen tihe
 </svg>
 
 ## Esimerkki
-Sukeltaja on järvessä 12 m:n syvyydessä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys 1000 kg/m³. Mikä on paine sukeltajan ympärillä, ja kuinka suuri voima kohdistuu sukeltajan kämmeneen, jonka pinta-ala on 150 cm², jos kämmenen toisella puolella vaikuttaa vain ilmanpaine?
+Sukeltaja on järvessä 12 m:n syvyydessä vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys 1000 kg/m³. Mikä on paine sukeltajan ympärillä, ja kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on 150 cm², kun huoneessa on ilmaa normaalipaineessa?
 
 Hydrostaattinen paine: $\rho g h = 1000\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2 \cdot 12\,\text{m} \approx 118\,\text{kPa}$.
 
 Kokonaispaine: $p = p_0 + \rho g h = 101\,\text{kPa} + 118\,\text{kPa} \approx 219\,\text{kPa}$, eli noin 2,2 kertaa ilmanpaine.
 
-Kämmeneen vaikuttaa vain ylipaine, koska ilmanpaine vaikuttaa molemmin puolin. Pinta-ala on $150\,\text{cm}^2 = 0{,}015\,\text{m}^2$, joten voima on $F = pA = 118\,\text{kPa} \cdot 0{,}015\,\text{m}^2 \approx 1{,}8\,\text{kN}$. Se vastaa noin 180 kg:n massan painoa, mutta sukeltaja ei tunne sitä, koska sama paine vaikuttaa kämmenen molemmilta puolilta vedessä ja kehon sisäinen paine tasaantuu.
+Ikkunaan vaikuttaa vain ylipaine, koska huoneen ilmanpaine työntää ikkunaa sisältä yhtä paljon kuin pinnan ilmanpaine ulkoa. Pinta-ala on $150\,\text{cm}^2 = 0{,}015\,\text{m}^2$, joten voima on $F = pA = 118\,\text{kPa} \cdot 0{,}015\,\text{m}^2 \approx 1{,}8\,\text{kN}$. Se vastaa noin 180 kg:n massan painoa pienellä ikkunalla. Sukeltaja itse ei tunne vastaavaa voimaa, koska vedessä sama paine vaikuttaa hänen kehonsa pintaan joka puolelta ja kehon sisäinen paine tasaantuu.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astiassa on. Kapeassa putkessa ja leveässä altaassa, joissa vettä on samaan korkeuteen, pohjan paine on sama, vaikka altaassa on tuhatkertainen määrä vettä. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta. Toinen virhe on sekoittaa paine ja voima: naulan terävä kärki ei tuota suurempaa voimaa kuin kanta, vaan jakaa saman voiman pienemmälle alalle, jolloin paine on suurempi. Kolmas virhe on unohtaa ilmanpaine: kaavan p = ρgh antaa vain ylipaineen, ja kokonaispaine veden alla on aina sitä suurempi.
+Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astiassa on. Kapeassa putkessa ja leveässä altaassa, joissa vesi ulottuu samaan korkeuteen, pohjan paine on sama, vaikka altaassa on tuhatkertainen määrä vettä. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta. Toinen virhe on sekoittaa paine ja voima: nastan terävä kärki ei tuota suurempaa voimaa kuin kanta, vaan jakaa saman voiman pienemmälle alalle, jolloin paine on suurempi. Kolmas virhe on unohtaa ilmanpaine: kaavan p = ρgh antaa vain ylipaineen, ja kokonaispaine veden alla on aina sitä suurempi.
 
 ## Tiivistelmä
 - Paine on voima pinta-alaa kohti: $p = F/A$. Yksikkö on pascal, 1 Pa = 1 N/m², ja 1 kPa = 1000 Pa.
