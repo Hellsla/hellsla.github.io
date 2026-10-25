@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 03c6dfd77e8da8ce
+CONTENT-HASH: c5c376b42c58397a
 
 ## Blocking
 
 ## Polish
-- lesson.md:8 — "ne osuvat seinämiin kaksi kertaa niin usein" is strictly true per unit wall area — write "osuvat jokaiseen seinämän kohtaan kaksi kertaa niin usein" or similar.
-- lesson.md:134–136 — `T = \theta + 273{,}15\,\text{K}` adds a pure number to a kelvin quantity, patched by "lukuarvona"; `T/\text{K} = \theta/{}^\circ\text{C} + 273{,}15` would be dimensionally clean.
+- sim.js:53 — the sim is animated but has no speed control (hidas · normaali · nopea), which lesson-form rule 3 requires (fy3-10 and fy3-11 have one). Not a physics error — add the three-way speed control that scales `dt`.
+- sim.js:55 — the explanatory note sits as plain text under the canvas instead of behind a "Lisätietoja" button. Physics is right — move it behind the button if the page template does not already do so.
+- solutions.md:47 — "tulo pV on noin 10 % suurempi kuin laki ennustaa" is correct (Z ≈ 1,1 for air at 300 bar), but "laki ennustaa" is vague for students — consider "suurempi kuin ideaalikaasulla, jossa on sama määrä ilmaa".
 
 ## Checked
-- Formulas p₁V₁ = p₂V₂, V₁/T₁ = V₂/T₂, p₁/T₁ = p₂/T₂: correct, with conditions stated (fixed amount, kelvins, total not gauge pressure); within the FY3 content "kaasujen tilanmuutokset" and the Boyle lab in docs/lops2019; no Newton's laws, no pV = nRT.
-- Pa·m³ = N·m = J and 1 kPa·1 l = 1 J correct; kPa/litre use on both sides valid.
-- Worked example: V₂ = p₁V₁/p₂ solved symbolically, then substituted with units; 1,036 l ≈ 1,0 l (2 s.f.), +30 %; 78 kPa cabin pressure realistic; taut-bag pressure correctly stated as above cabin pressure.
-- Misconception numbers: 1,00 l · 293/283 = 1,04 l (+3,5 %); exit ticket 160 kPa and ×308/280 = 1,1 correct.
-- All 12 answers.py lines model their problem text (formula, kelvin conversion, gauge ↔ absolute, bar → kPa, l → m³, kPa·ml → J). Recomputed by hand: L2-03 least-squares slope through origin 2009 kPa·ml = 2,0 J (pV 1980–2030 kPa·ml); L3-02 351 → 303,1 kPa absolute, gauge 202 kPa (216 kPa if the reading is used, as stated); L2-04 2800 · 373,15/283,15 − 2800 = 890 m³.
-- Solutions: each solves the unknown symbolically first; side claims correct (≈7 kN on a 0,5 m² lid, 2020 l / 50 l/min ≈ 40 min, Z ≈ 1,1 at 300 bar → ≈1,8 m³, ~¼ of heated air expelled, 3/4 of pump stroke spent compressing).
-- Magnitudes realistic (water rocket, tyre, SCBA, balloon, dive, sauna).
-- Figure 1: gas heights 2 : 1, equal speed arrows, 4 → 8 hit marks.
-- Figures 2–3: all (V, p) points have xy = 8360 (hyperbola); (1/V, p) points on the drawn origin line (slope 0,917); T-figure 1,2 px/K, points 253–373 K with V ∝ T, dashed extension reaches 0 K.
-- sim.js uses the exact laws p = p₀V₀/V, V = V₀T/T₀, p = p₀T/T₀; speed ∝ √T; constants converted correctly to SI (kPa·ml·10⁻³ = J, ml/K·10⁻⁶, kPa/K·10³); chart ranges contain all states; dashed extension only for the proportional plots.
+- All 12 answers recomputed independently (L2-03 by least squares through the origin, 2009 kPa·ml); each matches answers.py and exercises.json within tolerance, and the rounded data stays inside it.
+- Inquiry numbers: kertaus (30 N; distractors 300 N, 0,030 N, 3,3·10⁸ N), pred-1 (200 kPa, pV = 5,00 J), pred-2 (106,8 kPa, 341 Pa/K, 0,34 kPa/°C), pred-3 (200/100/50 kPa), ruisku (pV 5040 vs 5430, 168 kPa, +7,7 %), virhe (252 → 250 vs 40 kPa), siirto (1,07 l; mistakes 2,10 and 0,00107; 71 %), check-2 (120; mistakes 108, 0,12).
+- exp-1/exp-2: setups isolate V or θ (mode plus T or V locked); slider ranges include every requested value; simState `p`, `T` and `constant` come in Pa, K, J and Pa/K as the column labels say.
+- sim.js: isothermal p = p₀V₀/V, isobaric V = V₀T/T₀, isochoric p = p₀T/T₀; speed ∝ √T; hit rate × hit size ∝ T/V; chart axes start at zero; gauge and chart ranges cover all states.
+- SVG figures: p–V points satisfy x·y = 8360 (constant); 1/V points lie on the drawn line through the origin; kelvin figure scale 1,2 px/K, with points at 253–373 K proportional to T; micro model shows a 2 : 1 height ratio and 4 vs 8 hits.
+- Worked example (1,036 → 1,0 l, about 30 %), misconception example (1,04 l, 3,5 %) and exit ticket (160 kPa, ratio 1,1) are correct.
+- Solutions solve symbolically first; gauge versus absolute pressure is handled correctly in L3-02 (and the 216 kPa wrong-method figure) and in L3-03.
+- Formulas and their conditions (fixed amount of gas, constant T/p/V, kelvins, absolute pressure) are stated and fall within FY3 scope.
