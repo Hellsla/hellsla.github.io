@@ -1,33 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: fc5375c46d696bd5
+CONTENT-HASH: 8fb367b0d6fd83e0
 
-Round 2 tester review of fy3-1 (sim.js, sim-spec.md, tests/sims/fy3-1.json). Hash checked at start and at end: fc5375c46d696bd5 both times (matches expected). preview/fy3-1-sim.js is byte-identical to content/FY3/fy3-1/sim.js (cmp).
+Round 3 (final), tester. Hash checked before and after the review: 8fb367b0d6fd83e0 both times (matches the expected value). preview/fy3-1-sim.js is byte-identical to content/FY3/fy3-1/sim.js (diff empty).
 
-1. Official sim test (`PW_CHROMIUM=... python scripts/test_sims.py fy3-1`), run at start and again at the end:
-   `PASS preview/fy3-1  [] []` (no console errors, simState present, all 18 assertions hold).
+## Official test run
 
-2. Independent Playwright run (own script, headless Chromium 1243, 1280x900), no console errors or page errors (`errs == []`).
+1. `PW_CHROMIUM=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome python scripts/test_sims.py fy3-1`
+   Raw output: `PASS preview/fy3-1  [] []` (no console errors, simState present, all 19 assertions in tests/sims/fy3-1.json hold).
 
-3. G = m g (sim.js:41, simState at sim.js:47). 4 bodies x masses 1, 7, 10, 33, 50, 100 = 24 combinations. G == m*g to 1e-9, simState.g equals 1,62 / 3,71 / 9,81 / 24,8, simState.body equals the select value. 0 failures.
+## Independent Playwright checks (own script, 1280x900, 65 checks ok, 0 failed, no console/page errors or warnings)
 
-4. Mass independent of body: simState.m equals the slider value in all 24 combinations. 0 failures.
+2. G = m g, mass independent of body, for all four bodies (g 1,62 / 3,71 / 9,81 / 24,8) at m = 1, 7, 10, 33, 50, 100 kg (24 states): simState.G equals m*g exactly, simState.m equals the slider value, simState.g and simState.body match the select. sim.js:42, :49.
+3. Proportionality over the same 24 states: stretch = 190*G/2480, arrow = 110*G/2480 and bars[i] = m*g_i/2480*220 hold to 1e-9; stretch/G and arrow/G constant over all states (sim.js:43, :47, :48).
+4. Changes with both inputs: Maa 10 -> 100 kg gives x10 stretch, x10 arrow, x10 on every bar; at 100 kg Maa -> Kuu stretch and arrow both drop (select changes them). Bars are by design independent of the select (they show the same mass on all four bodies, per sim-spec.md); the select only changes the highlight, so only the mass slider moves bars. This matches the spec.
+5. Full scale, 100 kg on Jupiter: `{'m': 100, 'body': 'Jupiter', 'g': 24.8, 'G': 2480, 'stretch': 190, 'arrow': 110, 'bars': [14.37, 32.91, 87.02, 220]}`. Geometry: block bottom y = 346, arrow tip y = 386 (< 400). Pixel scan of the canvas for the red arrow: lowest red pixel y = 383 of 400, so the arrow fits (the previous defect is fixed).
+6. DOM readout (Maa, 10 kg): `'Massa m = 10 kg (sama kaikkialla)\ng = 9,81 N/kg (Maa)\nG = m · g = 98,1 N'`. Select options: `Kuu,Mars,Maa,Jupiter`. Canvas width/height attributes 600x400. Slider label parent text `Massa m = 10 kg` (unit kg present). Slider min 1, max 100.
+7. Narrow viewports 320, 360, 390 px (loaded, then switched Jupiter 100 kg, Kuu 1 kg, Maa 55 kg): no console or page errors, simState alive, no horizontal overflow (scrollWidth == clientWidth: 320/360/390). Canvas scales to 254/294/324 px; screenshot at 320 px shows the title, bars, value labels and the readout legible and inside the canvas.
 
-5. Stretch (sim.js:42): simState.stretch == 190*G/2480 for all 24 combinations (0 failures). It is strictly increasing with mass for each body (1..100 kg) and strictly increasing Kuu < Mars < Maa < Jupiter for each mass. So it changes with BOTH the mass slider and the select. The earlier defect (stretch ignoring the mass slider) is fixed.
+## Assertion coverage of sim-spec.md (tests/sims/fy3-1.json)
 
-6. Bars (sim.js:46, exposed as simState.bars): bars[i] == m*g_i/2480*220 for all four bodies in all 24 combinations. Proportional to G, change with the slider. The chosen body does not change the heights (by design: the chart compares the same mass on all four bodies; the select only changes the highlight, sim.js:75). Full scale (100 kg Jupiter): bar 220 px, stretch 190 px.
+8. Covered: G = m g at default and three further body/mass pairs (lines 2-7), mass independent of body (line 5), DOM readout (line 8), exactly four select options (line 9), canvas 600x400 (line 10), slider unit and range 1-100 (lines 11, 15), stretch grows with mass (12), stretch/G constant across bodies and masses (13), stretch ordering Kuu < Mars < Maa < Jupiter (14), bars x10 with x10 mass (16), full-scale bound of bar and stretch (17), arrow proportional to G including the Maa/Kuu ratio and the 120 px fit at 100 kg Jupiter (18, 19). Well over the required 3 assertions, and they would catch the earlier defect (a constant term in the arrow).
+9. Optional, non-blocking suggestion (not a failure): the bars are only asserted via the x10 mass ratio; a cross-body ratio check (bars[3]/bars[0] = 24.8/1.62 at any mass) would additionally pin the "same mass on all four bodies" part of the spec. Ready-to-paste JSON if the fixer wants it:
+   `{ "expr": "(() => { const b=window.simState.bars; return Math.abs(b[3]/b[0]-24.8/1.62) < 0.01*(24.8/1.62) && Math.abs(b[2]/b[1]-9.81/3.71) < 0.01*(9.81/3.71) ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "bar heights are proportional to g of each body for the same mass" }`
+   The 2 px bar and 3 px arrow display floors are drawing-only (sim.js:68, :77) and are not exposed in simState, so they are not testable through simState; not required.
 
-7. Drawing at the extremes (screenshots checked): 100 kg Jupiter, spring and block (bottom about y=346 incl. arrow) stay inside the 600x400 canvas, bar 2480 N reaches the top region below the title, labels legible. 1 kg Kuu: spring at rest length (rest line matches), 2 px minimum bars visible, labels "1,6 N / 3,7 N / 9,8 N / 24,8 N" present.
-
-8. DOM readout (sim.js:44-45), e.g. at 100 kg Jupiter: `Massa m = 100 kg (sama kaikkialla)g = 24,80 N/kg (Jupiter)G = m · g = 2480,0 N`. Verified for all four bodies at 37 kg: m, g with decimal comma, and G = m · g formatted correctly.
-
-9. Select options: `['Kuu', 'Mars', 'Maa', 'Jupiter']`. Canvas 600x400. Slider label text `Massa m = 100 kg` (unit kg present). Slider min 1, max 100 (test line 16).
-
-10. Assertion coverage versus sim-spec.md (tests/sims/fy3-1.json): 18 assertions on window.simState (>= 3 required).
-    - G = m g and values on all four bodies (lines 2-8), mass independent of body (line 6), readout text (line 9), select options (line 10), canvas size (line 11), slider unit (line 12), slider range (line 16).
-    - Stretch grows with mass (line 13), stretch/G constant across bodies and masses (line 14), stretch ordered across bodies (line 15).
-    - Bars proportional to G (line 17), full scale fits the chart (line 18).
-    All spec points are covered. No missing assertions, so nothing to paste.
-
-Non-blocking observations (no action required):
-- tests/sims/fy3-1.json:6 checks "mass independent of body" only for the Kuu 5 kg state; the default-state and Kuu checks together with my 24-combination run confirm it. An optional extra assertion would be m equal to the slider on every body, but the spec is already covered.
-- At 1 kg the bars are only the 2 px minimum height (documented in sim-spec.md), so the very smallest weights are visible only through their value labels.
+No real failures found.

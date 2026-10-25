@@ -1,53 +1,34 @@
 VERDICT: PASS
-CONTENT-HASH: fc5375c46d696bd5
+CONTENT-HASH: 8fb367b0d6fd83e0
 
-# Educator review, fy3-1, round 2
+Educator review, fy3-1, round 3. Hash checked at start and at end of the review: 8fb367b0d6fd83e0 both times.
 
-Method: lesson read as a 17-year-old who has FY1 (linear model, s = vt, v = gt, graphs) and FY2 (energy, no work). Hash checked at start and at end: fc5375c46d696bd5, unchanged. Compared with content/FY3/fy3-2/lesson.md (content/_gold/lesson.md is only a skeleton, so tone and structure come from fy3-2 and the CLAUDE.md rules).
+Summary: a 17-year-old with FY1 and FY2 can follow the lesson. The hook is natural. Mass versus weight is clear and repeated (core idea, misconception, summary, exit ticket). The spring-scale idea (direct proportionality, line through the origin, identical-weight calibration, doubling) is reachable from FY1's linear model and the direct proportionality of s = vt and m = rho V. The softened g convention (N/kg, same number as FY1's m/s², reason deferred to FY4) is stated in three plain sentences. Exercise counts (5/4/3) and levels match the rubric, no exercise repeats the worked example, and every answer in exercises.json and the exit ticket was recomputed from the data and fits its tolerance. Tone, length (669 words against 703 in fy3-2) and structure match fy3-2. No blocking findings. All findings below are non-blocking polish.
 
-Summary: a student can follow the lesson. The chain spring stretch -> force -> weight proportional to mass -> G = mg is reachable from FY1, and the mass versus weight distinction is clear and tested three ways (lesson, exercises, exit ticket). The levels fit the rubric (5/4/3, L2 each has one conversion, rearrangement or second step, L3 each need reasoning). Nothing below blocks a student. The findings are ordered by value.
+## Findings (all non-blocking)
 
-## Findings
+1. lesson.md:12 and :17, circular calibration logic. Line 12 defines "two bodies = 2 N" by calibration. Line 17 then uses "two identical bodies stretch twice as much" as the proof that G is proportional to m. A careful student may ask how we know two bodies pull twice as hard. Add one sentence saying that each identical body pulls the spring equally hard. Suggestion for line 12, after "ripustamalla jouseen samanlaisia pieniä kappaleita":
+   "Kukin kappale vetää jousta yhtä voimakkaasti, joten kaksi kappaletta vetää sitä kaksinkertaisella voimalla."
+   Then line 17 can start: "Koska kaksi samanlaista kappaletta vetää jousta kaksi kertaa niin voimakkaasti kuin yksi, paino on suoraan verrannollinen massaan:"
 
-1. lesson.md:21 (g convention, medium). "yksiköt N/kg ja m/s² ovat sama yksikkö" is stated as a fact with no reason. A student who knows FY1's g as an acceleration will ask why a weight per kilogram is an acceleration, and nothing in FY1 or FY2 answers it (1 N = 1 kg·m/s² is FY4). The definition of g in the sentence before ("yhden kilogramman massan paino") is clear and good; the identity just needs to be marked as accepted for now so it does not read as a gap. Suggested rewrite of the sentence:
-   "Sama luku 9,81 tuli vastaan FY1:ssä putoamiskiihtyvyytenä (m/s²). Yksiköt N/kg ja m/s² ovat sama yksikkö, ja miksi näin on, selviää vasta FY4:ssä. Tällä kurssilla käytämme g:tä yksikössä N/kg, koska silloin laskun yksiköt kertovat, mitä g tarkoittaa: newtonia kilogrammaa kohti."
+2. lesson.md:10, make the FY1 link concrete. "kuten FY1:n lineaarisessa mallissa silloin, kun vakiotermi on nolla" is correct but abstract. Students know s = vt and m = rho V as direct proportionality. Suggestion:
+   "Kuvaaja (voima, venymä) on siis suora, joka kulkee origon kautta, aivan kuten FY1:n suoraan verrannollisissa malleissa $s = vt$ ja $m = \rho V$ (lineaarinen malli, kun vakiotermi on nolla)."
+   Also consider one line saying why the proportionality is believable ("kokeessa kaksinkertainen kuorma venyttää jousta kaksinkertaisesti"). Line 10 currently asserts it without evidence.
 
-2. lesson.md:12 (calibration, medium-low). "ripustamalla jouseen tunnettuja painoja" is circular for a first-time reader: how is the force of a "known weight" known, when G = mg comes only after? Also the doubling idea is the natural calibration trick and is not used. Suggested rewrite:
-   "Asteikko kalibroidaan ripustamalla jouseen samanlaisia punnuksia, joista yhden paino on tunnettu, esimerkiksi noin 1 N. Kaksi punnusta venyttää jousta kaksi kertaa niin paljon kuin yksi, joten jokaiselle venymälle voi merkitä asteikkoon voiman. Sen jälkeen venymästä voi lukea voiman suoraan newtoneina."
-   This also sets up the first sentence of the Kaava section (line 17) without repeating it.
+3. lesson.md:12, the "1 N" of the calibration weights comes from nowhere. Line 6 says 1 N is about the weight of a 100 g apple, but line 12 only says "joiden paino on kunkin noin 1 N". Suggestion:
+   "Asteikko kalibroidaan ripustamalla jouseen samanlaisia pieniä kappaleita, joiden massa on kunkin noin 100 g eli joiden paino on noin 1 N."
 
-3. lesson.md:10 (FY1 anchor and axes, low). "kuten FY1:n lineaarisessa mallissa silloin, kun vakiotermi on nolla" is correct but abstract. The students' concrete memory is s = vt (fy1-5, "suoraan verrannollisuus"). Also "(voima, venymä)" does not say which quantity is on which axis, and FY1 uses the (x, y) order. Suggested rewrite:
-   "Kuvaaja, jossa voima on vaaka-akselilla ja venymä pystyakselilla, on siis suora, joka kulkee origon kautta. Näin kävi myös FY1:n tasaisessa liikkeessä s = vt: kun kuljettu aika kaksinkertaistuu, myös matka kaksinkertaistuu."
-   Optional: show the three example pairs as a small table (voima 2,5 / 5,0 / 10 N; venymä 1,0 / 2,0 / 4,0 cm) so the doubling is seen, not only read.
+4. lesson.md:14, the hook is never answered in terms of why. The text says the Moon's interaction is weaker but not why. A curious student will ask. Suggestion, append to line 14:
+   "Kuu on pienempi ja sen massa on pienempi kuin Maan, joten se vetää astronauttia heikommin."
 
-4. lesson.md:6-14 (pacing, low). The motivating question is about the Moon, but the answer arrives only in the fifth paragraph of Ydinajatus, after four paragraphs on force and spring scales. fy3-2 has three paragraphs there. A student may lose the thread. Cheapest fix is a bridge sentence at the start of line 8 (no need to cut text):
-   "Jotta voimaa voi vertailla Maassa ja Kuussa, tarvitaan väline, jolla sitä mitataan: voimamittari."
-   And at the start of line 14: "Nyt voimme vastata alun kysymykseen."
+5. lesson.md:21, this paragraph carries five ideas (meaning of g, unit, equality with FY1 m/s², course convention, other bodies). It is readable but dense. Suggestion: split it after "…joten 1 kg:n massan paino on 9,81 N." and start a new paragraph at "Luku 9,81 on sama kuin FY1:n putoamiskiihtyvyys…".
 
-5. lesson.md:14 (cause left open, low). The lesson says the Moon's interaction is weaker but not why, and a curious student will ask. One honest sentence prevents a dead end without bringing in gravitation law: 
-   "Syy on Kuun pienempi koko ja massa; painovoiman tarkempi laki kuuluu myöhempään kurssiin."
+6. lesson.md:21 against content/FY3/fy3-2/lesson.md:25 (published lesson, outside this review's edit scope). fy3-1 says "Tällä kurssilla g:lle käytetään yksikköä N/kg", but fy3-2 writes "g = 9,81 m/s²" in the very next lesson, which cites G = mg from fy3-1. The student sees the unit change. Either align fy3-2 (suggestion: "g = 9,81 N/kg") when it is next revised, or soften fy3-1 to "Tässä oppitunnissa g:lle käytetään yksikköä N/kg, ja syy lukujen yhtäsuuruuteen selviää FY4:ssä." The second option needs no change in fy3-2 but still leaves the unit switch unexplained there. Note that CLAUDE.md names m/s² as the house convention, so the human should decide.
 
-6. lesson.md:52 (misconception paragraph, low). Four ideas in one paragraph (everyday "painan 70 kiloa", mass does not change, force meter reads force, bathroom scale). The bathroom-scale sentence is the key to L3-03 and deserves its own paragraph. Suggested split, with the last part as a new paragraph:
-   "Kylpyhuonevaaka näyttää kilogrammoja, vaikka se mittaa voimaa: sen asteikko on tehty Maassa jakamalla voima luvulla 9,81 N/kg. Kuussa sama vaaka näyttäisi noin kuudesosan oikeasta massasta."
+7. exercises.json (fy3-1-L1-02 and fy3-1-L1-04), L1 level and variety. Both are the same spring rule-of-three task, and the lesson shows no formula for it, only the worked sentence "5,0 N → 2,0 cm; 10 N → 4,0 cm; 2,5 N → 1,0 cm". The ratio is 3 in L1-02 and 0,5 in L1-04. It is still one idea with values given, so L1 holds, but three G = mg tasks plus two near-identical spring tasks is thin. Suggestion for L1-04, a different kind of task: "Kappaleen massa on 0,50 kg. Mikä on sen paino Maassa?" (answer 4,9 N). Or keep the spring task, but turn it around: "Jousi venyy 2,0 cm, kun siihen vaikuttaa 5,0 N:n voima. Kuinka suuri voima venyttää sitä 3,0 cm?" (7,5 N).
 
-7. exercises.json L1 set (rubric, low; not a violation by itself). Four of five L1 tasks are the same m -> G calculation and L1-01 is structurally identical to the worked example (lesson.md:45, "paino Maassa" from a given mass). L1-02 and L1-03 are near duplicates (both the Moon, one with g given, one with g from the table). The rubric allows L1 to be direct use of the formula, but "no exercise repeats the worked example with new numbers" is only weakly met. Smallest change: replace L1-02 (exercises.json:12-18) with a second spring task so the proportionality idea gets two L1 items:
-   "Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan 4,0 N:n paino. Kuinka monta senttimetriä jousi venyy 12 N:n painolla?" Answer 6.0 cm, tolerance 0.02 (unit cm). Check: 2,0 cm · 12/4,0 = 6,0 cm.
-   If L1-02 is replaced, the solutions.md entry for L1-02 must follow (x = 2,0 cm · 12 N / 4,0 N = 6,0 cm; sanity: voima kolminkertaistuu). Any change here changes the hash, so decide whether this is worth another round; it is not required for PASS.
+8. exercises.json (fy3-1-L1-02, L1-04), wording of "paino". "ripustetaan 4,0 N:n paino" and "12 N:n painolla" use "paino" for the hanging object, which blurs the mass versus weight distinction the lesson teaches. Suggestion for L1-02: "Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan kappale, jonka paino on 4,0 N. Kuinka monta senttimetriä jousi venyy, kun ripustetaan kappale, jonka paino on 12 N?" Same fix for L1-04.
 
-8. exit-ticket.json:7-8 (recall instead of check, low-medium). Question 2 reuses the lesson's own numbers (lesson.md:10: 5,0 N venyttää 2,0 cm; 10 N venyttää 4,0 cm) and ends with the same kind of whole-number multiple, so a student can answer by remembering the lesson. Use new numbers with a non-trivial ratio:
-   q: "Voimamittarin jousi venyy 3,0 cm, kun siihen vaikuttaa 8,0 N:n voima. Kuinka paljon jousi venyy 20 N:n voimalla?"
-   a: "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja 20 N on 2,5-kertainen 8,0 N:oon verrattuna."
-   Check: 3,0 cm · 20/8,0 = 7,5 cm.
-   Questions 1 and 3 test the core idea well (mass stays, weight changes; kg versus N). Numbers check: 3,0 kg · 9,81 = 29,4 N, 3,0 · 1,62 = 4,86 N, 70 kg -> 687 N ≈ 690 N.
+9. exercises.json (fy3-1-L3-03) with lesson.md:52. The misconception paragraph already explains the bathroom-scale idea almost completely, ending with "vaaka näyttäisi vain noin kuudesosan massasta". The task is therefore mostly recall plus one calculation, on the low edge of L3 (an unfamiliar context). It is still acceptable because the student must compute 9,72 N / 9,81 N/kg. If you want more reasoning, drop the last sentence of line 52 or change the task to "Mikä massa tämä Kuussa toimiva vaaka näyttää, kun siihen ripustetaan 12 kg:n kappale?" No change is needed to pass.
 
-9. lesson.md:55-57 (summary, low). The summary does not say that g has the unit N/kg and means the weight of one kilogram, which is the one new convention of the lesson. Suggested third bullet:
-   "- Maassa $g = 9{,}81\,\text{N/kg}$: yhden kilogramman massan paino on 9,81 N. Kuussa $g = 1{,}62\,\text{N/kg}$ ja Marsissa $3{,}71\,\text{N/kg}$."
-
-## Checked and fine (no action)
-- Motivating question (lesson.md:3) is natural and is answered in the lesson and in exit-ticket Q1.
-- Mass versus weight (lesson.md:14, 52, exercises L2-01, L3-01, L3-03, exit ticket 1 and 3) is clear and consistently uses "paino" for the force and "massa" for kg. No "painaa 70 kiloa" slips elsewhere; the question's "painaa Kuussa kuudesosan" uses weight correctly.
-- Line 17 links the spring scale to G = mg in one clear step (two equal bodies stretch twice as much -> weight proportional to mass). This is the pedagogic centre of the lesson and it works.
-- Scope: force as a magnitude, no Newton's laws or motion, as the curriculum asks. g in N/kg here and m/s² in fy3-2 are bridged by the line-21 sentence (see finding 1); fy3-2 refers back to "edellinen oppitunti", consistent.
-- Levels: L2-01 rearrangement, L2-02 g -> kg conversion, L2-03 two weights and a difference, L2-04 two steps (G = mg, then proportionality; borderline L3 but acceptable). L3-01 mass constant, L3-02 same force on the Moon (premise stated in the task itself), L3-03 scale calibrated on Earth used on the Moon; all are reasoning or unfamiliar context. 5/4/3 as required. Answers and tolerances recompute correctly (39, 8,1, 49, 1,5, 62; 5,0, 0,59, 1190, 5,9; 6,8, 133, 0,99). A student rounding sensibly stays within 0,02 (for example L3-03: 1,0 kg is 0,9 % off).
-- Tone, length and structure match fy3-2 (same headings, one example with SVG, one misconception, bulleted summary); the lesson is shorter than fy3-2, appropriate for a first lesson.
-- Finnish usage follows NOTES.md (units inflected as "12 N:n paino", no "80 N voimalla").
+10. exit-ticket.json (question 3). It re-asks the lesson's misconception paragraph almost word for word ("painan 70 kiloa", 690 N), so it tests recall of the wording. Questions 1 and 2 test the core ideas well (mass stays and weight drops, G = mg in a new place, spring proportionality). Suggestion for question 3, a transfer item: "Kauppias sanoo: ’Tämä kananmuna painaa 60 grammaa.’ Mikä suure ja yksikkö on oikeasti kyseessä, ja mikä on munan paino Maassa?" (massa 60 g; paino noin 0,59 N). Note that this is the answer of exercise L2-02, so a different item may be better, for example a 1,5 l water bottle (massa 1,5 kg, paino noin 15 N).
