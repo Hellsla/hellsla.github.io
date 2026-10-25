@@ -1,20 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 8e3ef3e145da510f
+CONTENT-HASH: 773b3002c3f57290
 ## Blocking
 (none)
 ## Polish
-- solutions.md:L2-02 Sijoitus — "160 kJ + 0 = 160 kJ" — "+ 0 kJ", as the first pass did for L1-02 (consistency only; not applied)
-- lesson.md:11 — "kaksi eri lämpötilassa olevaa kappaletta koskettavat" — "koskettavat toisiaan" reads more smoothly (not applied)
+- lesson.md:8 — "kun kaksi eri lämpötilassa olevaa kappaletta koskettavat" — "koskettavat toisiaan" (carried over from round 1; not in the diff)
+- lesson.md:17 — "Kaikki termit ovat jouleja" — "Kaikki termit mitataan jouleina" (reads more naturally)
+- solutions.md:L2-02 Sijoitus — "160 kJ + 0 = 160 kJ" — "+ 0 kJ", as in L1-02 (consistency only)
 ## Diff
 ```diff
 ```
-(empty: the first-pass diff is applied and confirmed; nothing else is wrong)
+(empty: the diff would only carry the polish items above, which are optional)
 ## Checked
-- First-pass diff present: ”…” quotes in lesson.md (lines 6, 46, 50), "sisäenergiaa", "kuuman kipinän lämpötila", Tiivistelmä wording, "−8,4 kJ + 0 kJ" in solutions.md L1-02
-- Hash re-run before and after: 8e3ef3e145da510f, unchanged during review
-- Lint: 0 errors, 0 warnings, not repeated
-- Glossary terms (sisäenergia, lämpö, lämpömäärä, systeemi, termodynamiikan ensimmäinen pääsääntö) used consistently and match definitions; no "lämpöenergia"; the working-tree glossary.json change (fy3-6 terms) does not touch fy3-5 entries
-- Unit inflection in all 12 exercises (0,20 m:n, 300 N:n, 2,0 kW:n, 250 W:n, 5,0 kg:n, 0,15 m:n) and solutions correct
-- Decimal comma in text, decimal point in JSON; true minus sign (−) in Finnish text; spaces before units; no N/kg
-- exit-ticket.json and exercises.json: no straight quotes in Finnish text, cases and punctuation fine
-- Reading level suits 16–19-year-olds; no sim.js or sim-spec.md in this lesson
+- New text in lesson.md lines 6, 8, 10, 17, 43: grammar, case, punctuation and ”…” quotes correct; the new clauses ("kuin maila palloon", "oppitunnilla fy3-2", "Jos sama 150 J:n työ tehtäisiin niin hitaasti, että …") read well at 16–19-year-old level
+- Line 10 "johon tai josta ei myöskään siirry energiaa lämpönä eikä työnä": grammatical; "suljettu" and "eristetty" are used consistently with the glossary
+- Glossary "eristetty systeemi": spelling, wording and see_also fine; matches lesson.md:10 and :52, and meta.json glossary
+- exercises.json L3-03 and solutions.md L3-03 (two paths): terms, "tavassa A/B", case after units and the signs' wording are correct; "310 J < 400 J" reasoning is worded correctly
+- exercises.json L2-04 and solutions.md L2-04 (smoothie): "250 W:n teholla", "keittiön ilmaa kylmempää", "Kuinka kauan sekoitin oli päällä?" correct
+- exit-ticket.json item 3 (termospullo): "suljettu termospulloon", "eristetyn systeemin", the answer's wording and the use of "systeemi/sisäenergia/lämpö" correct
+- Unit inflection (150 J:n, 2,0 kW:n, 0,15 m:n, 120 N:n, 5,0 kg:n), decimal comma in text, true minus, no N/kg, no "lämpöenergia"
+- Rest of lesson.md, exercises L1-01…L3-02, solutions.md, exit-ticket 1–2: no language errors found
+- Lint 0/0 not repeated; hash 773b3002c3f57290 before and after the review (earlier PASS hash 8e3ef3e145da510f is stale because the files changed)
