@@ -1,4 +1,9 @@
-"""Tests of the inquiry framework (scripts/inquiry.py, templates/inquiry.js, the sim adapter). Usage: python scripts/test_inquiry.py
+"""Tests of the inquiry framework (scripts/inquiry.py, templates/inquiry.js, the sim adapter).
+Usage: python scripts/test_inquiry.py            the framework suite on the fy3-2 pilot (below)
+       python scripts/test_inquiry.py <id>       generic checks of one migrated lesson: validation, build, no console
+                                                 errors, every experiment runs on the adapter (initial state set,
+                                                 controlled parameters locked, two measurements, reset), every
+                                                 prediction is revealed by its experiment, forms present, 360 px fit
 
 Part 1 (no browser): validation names the lesson and the field; a lesson without inquiry.json builds exactly as
 before; every activity type renders. Part 2 (Playwright, on preview/fy3-2.html built here): stage order and nav,
@@ -21,6 +26,77 @@ def check(name, cond, detail=""):
     global passed, failed
     passed += cond; failed += not cond
     print(("ok   " if cond else "FAIL ") + name + (f"  {detail}" if detail and not cond else ""))
+
+
+def generic(lid):
+    """Mechanics of one lesson's inquiry.json on its preview page. Exit 1 on any failure."""
+    from playwright.sync_api import sync_playwright
+    from _browser import launch
+    from reviews import find_lesson
+    folder = find_lesson(lid)
+    data = inquiry.load(folder)
+    if data is None: print(f"{lid}: no inquiry.json"); sys.exit(1)
+    e = inquiry.validate(folder, data, (folder / "lesson.md").read_text()); check("validates", not e, "\n".join(e))
+    r = subprocess.run([PY, ROOT / "scripts/build.py", lid], capture_output=True, text=True, cwd=ROOT); check("builds", r.returncode == 0, (r.stdout + r.stderr)[-300:])
+    if failed: return
+    acts = data["activities"]; by_id = {a["id"]: a for a in acts}
+    exps = [a for a in acts if a["type"] == "experiment"]; preds = [a for a in acts if a["type"] == "choice" and a.get("reveal")]
+    stages = [a["stage"] for a in acts]
+    check("ennusta before tutki before selita", all(stages.index(s) <= stages.index(t) for s, t in (("ennusta", "tutki"), ("tutki", "selita")) if s in stages and t in stages))
+    check("every stage used has an activity, Tarkista has three checks", sum(1 for a in acts if a["stage"] == "tarkista" and a["type"] in ("choice", "numeric", "explain")) >= 3)
+    check("a prediction exists", bool(preds), "no choice with reveal")
+    if exps: check("the sim activity precedes the experiments", any(a["type"] == "sim" for a in acts) and acts.index(next(a for a in acts if a["type"] == "sim")) < acts.index(exps[0]))
+    url = (ROOT / "preview" / f"{lid}.html").as_uri()
+    with sync_playwright() as pw:
+        b = launch(pw); pg = b.new_page(viewport={"width": 1280, "height": 900})
+        errors = []; pg.on("pageerror", lambda x: errors.append(str(x))); pg.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
+        pg.goto(url); pg.evaluate("try { localStorage.clear() } catch (e) {}"); pg.goto(url)
+        has_sim = (folder / "sim.js").exists()
+        if has_sim: pg.wait_for_function("window.simState", timeout=3000)
+        if exps: pg.wait_for_function("window.simAdapter", timeout=4000)
+        pg.wait_for_timeout(300)
+        check("no console errors", not errors, str(errors[:2]))
+        for pr in preds:
+            loc = pg.locator(f"#{pr['id']}"); wrong = next(i for i, c in enumerate(pr["choices"]) if not c.get("correct"))
+            loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
+            check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
+        for ex in exps:
+            loc = pg.locator(f"#{ex['id']}"); loc.locator(".exp-start").click(); pg.wait_for_timeout(200)
+            st = pg.evaluate("window.simAdapter.get()")
+            bad = [k for k, v in ex["initial"].items() if k not in st or abs(float(st[k]) - float(v)) > 1e-6 * max(1, abs(float(v)))] if all(isinstance(v, (int, float)) for v in ex["initial"].values()) else [k for k, v in ex["initial"].items() if k in st and str(st[k]) != str(v)]
+            check(f"{ex['id']}: initial state set", not bad, f"{bad} state={ {k: st.get(k) for k in ex['initial']} }")
+            locked = pg.evaluate("(ks) => ks.map(k => { const p = window.simAdapter.params[k]; const e = typeof p.input === 'string' ? document.querySelector(p.input) : p.input; return e.disabled; })", ex["locked"])
+            check(f"{ex['id']}: controlled parameters locked", all(locked), str(locked))
+            free = pg.evaluate("(k) => { const p = window.simAdapter.params[k]; const e = typeof p.input === 'string' ? document.querySelector(p.input) : p.input; return !e.disabled; }", ex["vary"])
+            check(f"{ex['id']}: varied parameter free", free)
+            loc.locator(".exp-record").click(); pg.wait_for_timeout(100)
+            # move the varied control to another value: a range to its max (or min when already there), a select to the next option
+            pg.evaluate("""(k) => { const p = window.simAdapter.params[k]; const e = typeof p.input === 'string' ? document.querySelector(p.input) : p.input;
+                if (e.tagName === 'SELECT') e.selectedIndex = (e.selectedIndex + 1) % e.options.length;
+                else e.value = (Number(e.value) === Number(e.max)) ? e.min : e.max;
+                e.dispatchEvent(new Event('input', {bubbles: true})); e.dispatchEvent(new Event('change', {bubbles: true})); }""", ex["vary"])
+            pg.wait_for_timeout(300); loc.locator(".exp-record").click(); pg.wait_for_timeout(100)
+            rows = loc.locator("tbody tr").all_inner_texts()
+            check(f"{ex['id']}: two measurements recorded", len(rows) == 2 and rows[0] != rows[1], str(rows))
+            for pr in preds:
+                if pr["reveal"]["after"] == ex["id"] and pr["reveal"].get("min", 1) <= 2:
+                    loc2 = pg.locator(f"#{pr['id']}"); check(f"{pr['id']}: revealed by {ex['id']}", loc2.locator(".feedback:visible").count() == 1 and not loc2.locator(".pending").is_visible())
+            loc.locator(".exp-reset").click(); pg.wait_for_timeout(150)
+            unlocked = pg.evaluate("(ks) => ks.every(k => { const p = window.simAdapter.params[k]; const e = typeof p.input === 'string' ? document.querySelector(p.input) : p.input; return !e.disabled; })", ex["locked"])
+            check(f"{ex['id']}: reset unlocks and clears", unlocked and loc.locator("tbody tr").count() == 0)
+        for a in acts:
+            if a["type"] == "numeric": check(f"{a['id']}: numeric form", pg.locator(f"#{a['id']} form.check input").count() == 1)
+            if a["type"] == "explain": check(f"{a['id']}: explain form", pg.locator(f"#{a['id']} textarea").count() == 1 and pg.locator(f"#{a['id']} .show-model").count() == 1)
+        check("no console errors after the run", not errors, str(errors[:2]))
+        pg.close()
+        pg = b.new_page(viewport={"width": 360, "height": 740}); pg.goto(url); pg.wait_for_timeout(600)
+        over = pg.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth"); check("no horizontal overflow at 360 px", over <= 0, str(over))
+        wide = pg.evaluate("[...document.querySelectorAll('fieldset.choice, .experiment, .reflect, .explain, .activity > .katex-display')].filter(e => e.getBoundingClientRect().right > 361).length"); check("activity boxes fit at 360 px", wide == 0, str(wide))
+        pg.close(); b.close()
+
+
+if len(sys.argv) > 1:
+    generic(sys.argv[1]); print(f"\n{passed} passed, {failed} failed"); sys.exit(1 if failed else 0)
 
 
 # ---------------------------------------------------------------- part 1: validation and rendering
