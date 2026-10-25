@@ -44,7 +44,7 @@
 **Kaava:** p₁V₁ = p₂V₂, josta V₂ = p₁V₁ / p₂
 **Sijoitus:** V₂ = 30 000 kPa · 6,8 l / 101 kPa ≈ 2020 l = 2,02 m³ ≈ 2,0 m³
 **Vastaus:** 2,0 m³
-**Järkevyys:** Pieneen pulloon mahtuu noin kaksi kuutiometriä ilmaa, koska paine on lähes 300-kertainen ilmanpaineeseen nähden. Jos palomies hengittää 50 l minuutissa, ilma riittää noin 40 minuutiksi, mikä vastaa todellisia laitteita. Näin suurella paineella ilma on noin 10 % jäykempää kuin Boylen laki olettaa, joten todellinen tilavuus on vähän pienempi, noin 1,8 m³.
+**Järkevyys:** Pieneen pulloon mahtuu noin kaksi kuutiometriä ilmaa, koska paine on lähes 300-kertainen ilmanpaineeseen nähden. Jos palomies hengittää 50 l minuutissa, ilma riittää noin 40 minuutiksi, mikä vastaa todellisia laitteita. Näin suuressa 300 barin paineessa ilma ei enää noudata Boylen lakia tarkasti: tulo pV on noin 10 % suurempi kuin laki ennustaa. Pulloon mahtuu siis noin 10 % vähemmän ilmaa kuin laskusta saa, ja laajentunut tilavuus on noin 1,8 m³.
 
 ## fy3-9-L2-02
 **Annettu:** θ₁ = 20 °C, p₁ = 101 kPa, p₂ = 125 kPa, tilavuus vakio
@@ -58,7 +58,7 @@
 **Annettu:** V = 10,0; 12,5; 15,0; 20,0; 25,0; 30,0 ml ja p = 203; 159; 134; 99; 81; 66 kPa, lämpötila vakio
 **Kysytty:** suoran kulmakerroin pV jouleina
 **Kaava:** p = pV · (1/V), joten (1/V, p)-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on k = pV = p / (1/V)
-**Sijoitus:** 1/V = 0,100; 0,0800; 0,0667; 0,0500; 0,0400; 0,0333 1/ml. Suora kulkee esimerkiksi pisteen (0,100 1/ml; 201 kPa) kautta, joten k = 201 kPa / (0,100 1/ml) ≈ 2010 kPa·ml. Koska 1 kPa · 1 ml = 1000 Pa · 0,000001 m³ = 0,001 J, pV ≈ 2,0 J.
+**Sijoitus:** 1/V = 0,100; 0,0800; 0,0667; 0,0500; 0,0400; 0,0333 1/ml. Luetaan piste (0,100 1/ml; 201 kPa) sovitetulta suoralta eikä mitatusta arvosta 203 kPa, koska yksittäisessä mittauksessa on aina virhettä. Siis k = 201 kPa / (0,100 1/ml) ≈ 2010 kPa·ml. Koska 1 kPa · 1 ml = 1000 Pa · 0,000001 m³ = 0,001 J, pV ≈ 2,0 J.
 **Vastaus:** 2,0 J
 **Järkevyys:** Tulon pV arvot ovat 1980–2030 kPa·ml, joten ne ovat lähes vakioita, ja Boylen laki pätee mittaustarkkuuden rajoissa.
 

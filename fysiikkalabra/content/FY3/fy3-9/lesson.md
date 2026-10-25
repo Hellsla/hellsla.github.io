@@ -87,7 +87,9 @@ Mikromallin mukaan kaasun paine syntyy hiukkasten törmäyksistä astian seinäm
   <text x="410" y="288" text-anchor="middle" fill="currentColor">V/2 ja 2p</text>
 </svg>
 
-Isotermisessä tilanmuutoksessa paine on siis kääntäen verrannollinen tilavuuteen, ja paineen ja tilavuuden tulo pysyy vakiona. Tätä sanotaan Boylen laiksi. Se pätee hyvin ilmaan ja muihin kaasuihin tavallisissa paineissa ja lämpötiloissa, kunhan kaasun määrä pysyy samana ja paineena käytetään kaasun kokonaispainetta eikä mittarin näyttämää ylipainetta. Tämä vastaa alun kysymykseen: lentokoneen matkustamossa ilmanpaine on noin 78 kPa, joten suljetussa pussissa oleva ilma laajenee, kunnes pussin sisäpuolinen paine on yhtä suuri kuin ulkopuolinen.
+Isotermisessä tilanmuutoksessa paine on siis kääntäen verrannollinen tilavuuteen, ja paineen ja tilavuuden tulo pysyy vakiona. Tätä sanotaan Boylen laiksi. Se vastaa alun kysymykseen: lentokoneen matkustamossa ilmanpaine laskee noin 78 kPa:iin, joten pussin ilma laajenee, kunnes pussi on kireällä. Kireässä pussissa ilman paine pysyy hieman matkustamon painetta suurempana, ja siksi pussi tuntuu kovalta.
+
+Boylen laki pätee hyvin ilmaan ja muihin kaasuihin tavallisissa paineissa ja lämpötiloissa. Kaasun määrän täytyy pysyä samana, eikä kaasua saa päästä vuotamaan pois tai tulemaan lisää. Paineena käytetään kaasun kokonaispainetta eikä mittarin näyttämää ylipainetta.
 
 Boylen laki voidaan todentaa kokeellisesti. Ruiskuun suljetaan ilmaa, ja ruisku liitetään painemittariin. Mäntää painetaan vaiheittain, ja jokaisella tilavuudella luetaan paine. Mittaus tehdään hitaasti, jotta ilman lämpötila ehtii palata huoneenlämpöön. Kun tulokset piirretään (V, p)-koordinaatistoon, pisteet asettuvat laskevalle kaarelle, josta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta. Siksi taulukkoon lasketaan uusi sarake 1/V ja piirretään p 1/V:n funktiona. Jos laki pätee, pisteet ovat origon kautta kulkevalla suoralla, ja suoran kulmakerroin on vakio pV. Kokeile simulaatiossa: tallenna mittauksia eri tilavuuksilla ja valitse ”Piirrä p 1/V:n funktiona”.
 
@@ -102,7 +104,9 @@ missä p₁ ja V₁ ovat kaasun paine (Pa) ja tilavuus (m³) alkutilassa ja p₂
 ```latex
 p = \text{vakio} \cdot \frac{1}{V}
 ```
-Paine on siis kääntäen verrannollinen tilavuuteen. Kun merkitään x = 1/V ja y = p, yhtälö on muotoa y = kx kuten FY1:n suoran yhtälö. Siksi (1/V, p)-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on k = pV. Tulon pV yksikkö on Pa · m³ = N/m² · m³ = N · m = J, ja 1 kPa · 1 l = 1 J. Koska yhtälön p₁V₁ = p₂V₂ molemmilla puolilla on samat yksiköt, paineen ja tilavuuden voi ilmoittaa myös esimerkiksi kilopascaleina ja litroina, kunhan ne ovat samat molemmilla puolilla.
+Paine on siis kääntäen verrannollinen tilavuuteen. Kun merkitään x = 1/V ja y = p, yhtälö on muotoa y = kx kuten FY1:n suoran yhtälö. Siksi (1/V, p)-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on k = pV.
+
+Tulon pV yksikkö on Pa · m³ = N/m² · m³ = N · m = J, ja 1 kPa · 1 l = 1 J. Koska yhtälön p₁V₁ = p₂V₂ molemmilla puolilla on samat yksiköt, paineen ja tilavuuden voi ilmoittaa myös esimerkiksi kilopascaleina ja litroina, kunhan ne ovat samat molemmilla puolilla.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Kaksi kuvaajaa samoista mittauksista. Vasemmalla paine tilavuuden funktiona on laskeva kaari. Oikealla paine tilavuuden käänteisluvun funktiona on origon kautta kulkeva suora." style="max-width:100%;font-family:system-ui,sans-serif;font-size:26px">
   <line x1="50" y1="250" x2="285" y2="250" stroke="currentColor" stroke-width="3"/>
@@ -124,6 +128,12 @@ Isobaarisessa ja isokoorisessa tilanmuutoksessa
 \frac{V_1}{T_1} = \frac{V_2}{T_2} \qquad \text{ja} \qquad \frac{p_1}{T_1} = \frac{p_2}{T_2}
 ```
 missä T₁ ja T₂ ovat kaasun lämpötilat kelvineinä (K) alku- ja lopputilassa. Tilavuus tai paine on siis suoraan verrannollinen kelvinlämpötilaan, ja (T, V)- tai (T, p)-kuvaajan suoran jatke kulkee origon eli absoluuttisen nollapisteen 0 K kautta.
+
+Kelvinlämpötila saadaan celsiuslämpötilasta θ lisäämällä 273,15:
+```latex
+T = \theta + 273{,}15\,\text{K}
+```
+missä θ on lämpötila celsiusasteina lukuarvona; laskuissa riittää 273 K.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Kaasun tilavuus vakiopaineessa tai paine vakiotilavuudessa kelvinlämpötilan funktiona, mittakaavassa. Mittauspisteet välillä 253–373 K ovat suoralla. Suoran katkoviivalla piirretty jatke kulkee origon kautta: tilavuus tai paine olisi nolla absoluuttisessa nollapisteessä 0 K eli −273 °C." style="max-width:100%;font-family:system-ui,sans-serif;font-size:26px">
   <line x1="70" y1="250" x2="560" y2="250" stroke="currentColor" stroke-width="3"/>
