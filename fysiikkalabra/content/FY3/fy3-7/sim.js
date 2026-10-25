@@ -57,6 +57,11 @@ new p5((p) => {
     window.simSetTime = (sec) => { t = Math.max(0, sec); running = false; };          // for tests: jump to a moment
     window.simSetQ = (Q) => { t = Math.max(0, Q) / Number(sP.value()); running = false; };
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { m: { input: sM.elt, unit: 'kg' }, P: { input: sP.elt, unit: 'W' } },
+      reset: () => { sM.value(0.5); sP.value(1000); t = 0; running = false; },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {
@@ -64,7 +69,8 @@ new p5((p) => {
     const q = stages(m), tEnd = q[4] / P;                      // time to reach 130 °C
     if (running) t += Math.min(p.deltaTime, 100) / 1000 * SPEED;
     if (t >= tEnd) { t = tEnd; running = false; }
-    sM.elt.disabled = sP.elt.disabled = running;               // locked while heating
+    const held = (s) => s.elt.getAttribute('aria-disabled') === 'true';   // a guided experiment may hold a slider (sim-embed adapter)
+    sM.elt.disabled = running || held(sM); sP.elt.disabled = running || held(sP);   // locked while heating
     const Q = P * t;                                           // transferred energy Q = P t
     const [T, phase] = stateAt(Q, m, q);
     const tMelt = S * m / P, tBoil = R * m / P;                // plateau lengths sm/P and rm/P

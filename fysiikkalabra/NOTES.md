@@ -90,7 +90,27 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
   overrides the position. Exercises get a browser-side answer check; nothing is stored or sent. No third-party
   requests, fonts are self-hosted. Reviewer screenshots stay out of git (`**/review/*.png`).
 
-## 5. Learning from mistakes
+## 5. Inquiry sequence (teacher's brief 2026-10-25)
+
+- `inquiry.json` (format and activity types: `docs/inquiry.md`; the brief: `docs/inquiry-spec.md`). The pilot
+  `content/FY3/fy3-2/inquiry.json` shows the shape; do not copy it mechanically — choose activities by what the
+  lesson's goals need. A lesson without a simulation investigates a table, a figure or competing explanations.
+- Order of the student's work: a phenomenon in the lesson's voice and the question it raises; a retrieval item on
+  the prerequisite lesson; predictions the investigation can refute (each wrong option's feedback repairs the
+  misconception it reveals, each right option's names the evidence); the simulation, then guided experiments that
+  set the initial conditions, lock the controlled parameters and record the varied one with the measured
+  quantities (`min` 2 before the prediction is revealed); the theory sections; a reflection that shows the
+  student's own predictions and asks whether to revise; the worked example, an error-spotting item, a transfer
+  task with three progressive hints and common-mistake feedback, the exercises; three checks (concept,
+  representation or calculation, explanation with model answer and self-assessment criteria); the exit ticket.
+- Never disclose the answer to the opening question before the student has committed; gate feedback, not
+  access. Call the simulation's numbers model values; call what Joule measured measurements. Say at the point of
+  use which simplifications the model makes (no friction, constant force).
+- The sim declares its adapter (`defineSimAdapter`: the parameters experiments may set or lock, `reset`, `step`);
+  the physics stays in `sim.js`, `window.simState` is unchanged, the existing assertions keep passing.
+- `inquiry.json` is in the content hash: a migrated lesson needs both reviews again.
+
+## 6. Learning from mistakes
 When a reviewer finds an error that is objectively testable or has happened before: fix it, name the general
 pattern, and then either add a check (`lint_lesson.py`, `test_sims.py`, `check_layout.py`) with a test that catches
 the original case and passes on every other lesson, or, when it cannot be checked mechanically, add one line to
@@ -102,7 +122,7 @@ pages (formula, table, figure and page width at 360 px, SVG labels overlapping o
 simulations (console errors, per-sim assertions, finite `simState` and label boxes at 360/390/1280 px over every
 control combination), publication (content hash, rebuild equality, atomic build).
 
-## 6. Exam material (inspiration only)
+## 7. Exam material (inspiration only)
 Exam files, if ever collected, live only in the git-ignored `docs/exams/` and are studied for patterns (task
 types, contexts, how points split between reasoning and calculation), never quoted or reworded. Every exercise is
 original.

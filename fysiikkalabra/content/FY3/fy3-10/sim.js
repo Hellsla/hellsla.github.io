@@ -128,6 +128,12 @@ new p5((p) => {
     window.simRestart = () => { restart(); update(); };
     restart(); update();
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { N: { input: sN.elt, unit: '' }, T: { input: sT.elt, unit: 'K' }, V: { input: sV.elt, unit: '%' } },
+      reset: () => { sN.value(100); sT.value(300); sV.value(100); clearAvg(); },
+      get: () => Object.assign({}, window.simState, { V: Number(sV.value()) }),   // V in % as on the slider; simState unchanged
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

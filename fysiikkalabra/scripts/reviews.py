@@ -21,7 +21,7 @@ import datetime, hashlib, json, os, pathlib, re, subprocess, sys
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])
 REVIEWS = ("science", "pedagogy")
-CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md")
+CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md", "inquiry.json")
 
 
 def find_lesson(lid):
@@ -114,6 +114,7 @@ def hash_at(commit, folder):
 
 
 SVG_LINE = re.compile(r"^[+-]\s*<(/?svg|path|line|text|rect|circle|g|polyline|polygon|ellipse|defs|stop|linearGradient|marker|tspan|title)\b")
+INQUIRY_KEY = re.compile(r'\s*"(id|stage|type|correct|initial|locked|vary|measure|answer|unit|tolerance|reveal|after|min|sections|predictions|mistakes|value|version)"\s*:')
 SUBSTANTIVE = re.compile(r"[0-9]|\\\\|\$|=|[A-Za-z]_|[αβγδθλμρσωΔ°·×≈≤≥]")   # a number, LaTeX, an equation, a symbol or a unit sign
 
 
@@ -124,7 +125,8 @@ def scope(folder):
     touches no number, formula, symbol or unit, and no structure. Anything that can change the physics, the
     simulation, the answers, the objectives or the progression makes the review full: any change to answers.py,
     sim.js, tests/sims, an exercise answer/unit/tolerance/level, meta goals or prerequisites, a heading or stage,
-    an SVG figure, or any changed line that carries a number, LaTeX, an equation or a symbol. The reviewer may
+    an SVG figure, an inquiry.json structural key (stage, type, correct, initial, locked, vary, measure, answer,
+    reveal, sections, predictions, mistakes), or any changed line that carries a number, LaTeX, an equation or a symbol. The reviewer may
     still escalate a delta to a full review (ESCALATE in its report)."""
     rel, lid = folder.relative_to(ROOT), folder.name
     log = (git("log", "--format=%H", "-n", "60", "--", str(rel), f"tests/sims/{lid}.json") or "").split()
@@ -135,7 +137,7 @@ def scope(folder):
         base = next((c for c in log if hash_at(c, folder) == rep[1]), None)
         if base is None: out[name] = {"mode": "full", "base": None, "why": "the version it passed is not in git history", "diff": ""}; continue
         diff = git("diff", base, "--", str(rel / "lesson.md"), str(rel / "exercises.json"), str(rel / "solutions.md"), str(rel / "answers.py"),
-                   str(rel / "exit-ticket.json"), str(rel / "sim.js"), str(rel / "sim-spec.md"), str(rel / "meta.json"), f"tests/sims/{lid}.json") or ""
+                   str(rel / "exit-ticket.json"), str(rel / "sim.js"), str(rel / "sim-spec.md"), str(rel / "meta.json"), str(rel / "inquiry.json"), f"tests/sims/{lid}.json") or ""
         reasons, files, current = [], set(), None
         for l in diff.splitlines():
             if l.startswith("diff --git"): current = l.split(" b/")[-1].split("/")[-1]; files.add(current); continue
@@ -143,10 +145,11 @@ def scope(folder):
             body = l[1:]
             if current in ("answers.py", "sim.js") or current.endswith(".json") and current.startswith(lid): reasons.append(f"{current} changed")
             elif current == "exercises.json" and body.lstrip().startswith(('"answer"', '"unit"', '"tolerance"', '"level"', '"id"')): reasons.append("an answer, unit, tolerance or level changed")
+            elif current == "inquiry.json" and INQUIRY_KEY.match(body): reasons.append("inquiry.json: a stage, type, correct option, experiment setup, answer, reveal or section changed")
             elif current == "meta.json" and not body.lstrip().startswith(('"title"', '"glossary"', '"sim"', '"image"', '"solutions"')) and body.strip() not in ("{", "}", "[", "]", "],"): reasons.append("meta goals or prerequisites changed")
             elif SVG_LINE.match(l): reasons.append("a figure changed")
             elif body.lstrip().startswith("## ") or "<!-- vaihe -->" in body or body.lstrip().startswith("```"): reasons.append("headings, stages or a display block changed")
-            elif current in ("lesson.md", "solutions.md", "exercises.json", "exit-ticket.json", "sim-spec.md") and SUBSTANTIVE.search(body): reasons.append(f"{current}: a changed line carries a number, formula, symbol or unit")
+            elif current in ("lesson.md", "solutions.md", "exercises.json", "exit-ticket.json", "sim-spec.md", "inquiry.json") and SUBSTANTIVE.search(body): reasons.append(f"{current}: a changed line carries a number, formula, symbol or unit")
         changed = sum(1 for l in diff.splitlines() if (l.startswith("+") or l.startswith("-")) and not l.startswith(("+++", "---")))
         why = sorted(set(reasons))
         out[name] = {"mode": "full" if why else "delta", "base": base, "diff": diff,

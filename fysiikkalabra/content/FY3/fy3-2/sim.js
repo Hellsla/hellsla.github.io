@@ -30,6 +30,12 @@ new p5((p) => {
     p.createP('Laatikko liikkuu vakiovauhdilla: kitkavoima on yhtä suuri kuin vetävä voima, ja vetävän voiman tekemä työ muuttuu lämmöksi.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
+    // adapter for guided investigations (sim-embed.js): the page may set, lock and reset the three sliders
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { F: { input: sF.elt, unit: 'N' }, s: { input: sS.elt, unit: 'm' }, t: { input: sT.elt, unit: 's' } },
+      reset: () => { sF.value(60); sS.value(10); sT.value(5); u = 0; running = false; },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

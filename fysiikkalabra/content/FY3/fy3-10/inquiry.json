@@ -1,0 +1,403 @@
+{
+  "version": 1,
+  "contribution": "Kaasun määrä tulee mukaan: ainemäärä $n$ ja tilanyhtälö $pV = nRT$ yhdistävät edellisen tunnin erilliset kaasulait, ja hiukkasmalli selittää paineen seiniin osuvina törmäyksinä, joiden määrä ja voimakkuus riippuvat hiukkasmäärästä, lämpötilasta ja tilavuudesta.",
+  "prior": [
+    "Boylen laki $p_1V_1 = p_2V_2$ vakiolämpötilassa (fy3-9)",
+    "Vakiotilavuudessa paine ja vakiopaineessa tilavuus ovat verrannollisia kelvinlämpötilaan (fy3-9)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Juhlissa täytetään kaksi samankokoista palloa: toinen heliumpullosta, toinen pumpulla ilmalla. Molemmat ovat huoneenlämpöisiä, ja kummankin kuoren sisällä paine on lähes sama kuin ulkoilman. Heliumpallo kohoaa kattoon, ilmapallo putoaa lattialle. Kaasu on näkymätöntä, eikä sen hiukkasia voi laskea yksi kerrallaan.",
+      "question": "Miten kahden pallon kaasumääriä voisi verrata, kun tiedetään vain paine, tilavuus ja lämpötila?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa edelliseltä tunnilta",
+      "prompt": "Ruiskun suu tukitaan, kun siinä on 60 ml ilmaa 100 kPa:n paineessa. Mäntää painetaan, kunnes ilman tilavuus on 30 ml. Lämpötila ei muutu. Mikä on ilman paine nyt?",
+      "choices": [
+        {
+          "text": "50 kPa",
+          "feedback": "Paine ja tilavuus muuttuvat vakiolämpötilassa vastakkaisiin suuntiin: Boylen laki $p_1V_1 = p_2V_2$ tarkoittaa kääntäen verrannollisuutta. Kun tilavuus puolittuu, paine kaksinkertaistuu."
+        },
+        {
+          "text": "100 kPa",
+          "feedback": "Ilman määrä pysyy samana, mutta paine ei. Boylen lain $p_1V_1 = p_2V_2$ mukaan $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$."
+        },
+        {
+          "text": "200 kPa",
+          "correct": true,
+          "feedback": "Oikein: Boylen laki $p_1V_1 = p_2V_2$ antaa $p_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$. Puolet pienempi tilavuus, kaksinkertainen paine."
+        },
+        {
+          "text": "400 kPa",
+          "feedback": "Paine on kääntäen verrannollinen tilavuuteen, ei sen neliöön. Tilavuus puolittuu kerran, joten paine kaksinkertaistuu: $200\\,\\text{kPa}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: hiukkasia kaksi kertaa enemmän",
+      "prompt": "Simulaation laatikossa on 100 hiukkasta 300 K:n lämpötilassa. Hiukkasmäärä kasvatetaan 200:aan, ja lämpötila ja tilavuus pysyvät samoina. Mitä kaasun paineelle tapahtuu?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Paine ei muutu, koska lämpötila ja tilavuus ovat samat.",
+          "feedback": "Mittauksissa paine kasvoi noin kaksinkertaiseksi. Edellisen tunnin kaasulait koskivat suljettua kaasumäärää; nyt kaasun määrä muuttuu. Kaksi kertaa enemmän hiukkasia osuu seiniin kaksi kertaa useammin, ja jokainen osuma painaa seinää yhtä paljon kuin ennen."
+        },
+        {
+          "text": "Paine kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Mittaukset tukevat tätä: mitattu paine nousi noin arvosta 1,0 arvoon 2,0, ja tilanyhtälön ennuste on tasan 2,00. Seiniin osuu kaksi kertaa enemmän hiukkasia samalla nopeudella, joten paine on suoraan verrannollinen hiukkasmäärään."
+        },
+        {
+          "text": "Paine kasvaa, mutta alle kaksinkertaiseksi, koska hiukkaset ovat toistensa tiellä.",
+          "feedback": "Mittauksissa paine kaksinkertaistui mittaustarkkuuden rajoissa. Ideaalikaasun mallissa hiukkaset ovat pistemäisiä, ja niiden keskinäiset törmäykset eivät muuta painetta keskimäärin. Malli toimii hyvin, kun kaasu on harvaa, kuten tavallisissa oloissa."
+        },
+        {
+          "text": "Paine nelinkertaistuu, koska hiukkasia on enemmän ja ne törmäävät useammin.",
+          "feedback": "Mittauksissa paine kaksinkertaistui. Hiukkasmäärän kaksinkertaistaminen kaksinkertaistaa seiniin osuvien törmäysten määrän, mutta jokaisen törmäyksen voimakkuus ei muutu, koska lämpötila eli hiukkasten nopeus pysyy samana."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kelvinlämpötila kaksinkertaistuu",
+      "prompt": "Laatikossa on 100 hiukkasta. Lämpötila nostetaan 300 K:stä 600 K:iin, ja tilavuus pysyy samana. Hiukkasten nopeudet kasvavat tällöin noin 1,41-kertaisiksi. Mitä tapahtuu seiniin osuvien törmäysten määrälle sekunnissa ja paineelle?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Törmäyksiä on noin 1,41 kertaa enemmän, ja paine kasvaa samoin noin 1,41-kertaiseksi.",
+          "feedback": "Törmäysten määrä kasvoi mittauksissa noin 1,4-kertaiseksi, mutta paine kaksinkertaistui. Nopeampi hiukkanen osuu seinään useammin ja lisäksi jokainen osuma painaa seinää voimakkaammin. Molemmat kasvavat kertoimella 1,41, ja yhdessä ne kaksinkertaistavat paineen: $1{,}41 \\cdot 1{,}41 \\approx 2$."
+        },
+        {
+          "text": "Törmäyksiä on noin 1,41 kertaa enemmän, mutta paine kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Mittaukset tukevat tätä: törmäyksiä oli sekunnissa noin 1,4 kertaa enemmän (mallin mukaan 1,41), ja paine kaksinkertaistui. Jokainen osuma painaa seinää 1,41 kertaa voimakkaammin, ja osumia on 1,41 kertaa enemmän: $1{,}41 \\cdot 1{,}41 \\approx 2$."
+        },
+        {
+          "text": "Törmäyksiä on kaksi kertaa enemmän, ja siksi paine kaksinkertaistuu.",
+          "feedback": "Paine kaksinkertaistui, mutta törmäyksiä oli mittauksissa vain noin 1,4 kertaa enemmän. Hiukkasmäärä ei muuttunut, ja nopeus kasvoi vain 1,41-kertaiseksi. Loput paineen kasvusta tulee siitä, että jokainen osuma painaa seinää voimakkaammin."
+        },
+        {
+          "text": "Paine ei muutu, koska hiukkasia on yhtä monta.",
+          "feedback": "Mittauksissa paine kaksinkertaistui. Paine ei riipu vain hiukkasten määrästä vaan myös niiden liikkeestä: kuumemmat hiukkaset osuvat seiniin useammin ja voimakkaammin. Tämä vastaa edellisen tunnin tulosta, että vakiotilavuudessa paine on verrannollinen kelvinlämpötilaan."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Ennuste 3: heliumpallo ja ilmapallo",
+      "prompt": "Palaa alun palloihin: sama tilavuus, sama paine ja sama lämpötila. Kolme opiskelijaa selittää, miksi heliumpallo on kevyempi. Kenen selitystä kannatat?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Aino: Heliumpallossa on vähemmän kaasua. Siksi se on kevyempi.",
+          "feedback": "Koe 1 näytti, että samassa lämpötilassa ja tilavuudessa paine on verrannollinen hiukkasmäärään. Jos heliumpallossa olisi vähemmän hiukkasia, sen paine olisi pienempi kuin ilmapallon. Paineet ovat kuitenkin samat, joten hiukkasia on yhtä monta. Selitä-vaihe perustelee, miksi hiukkasen massa ei vaikuta paineeseen."
+        },
+        {
+          "text": "Bea: Hiukkasia on yhtä monta, mutta heliumhiukkaset ovat paljon kevyempiä.",
+          "correct": true,
+          "feedback": "Kokeen 1 perusteella samassa lämpötilassa ja tilavuudessa sama paine vaatii saman hiukkasmäärän. Tilanyhtälössä $pV = nRT$ ei ole kaasun laatua lainkaan, joten ainemäärä on sama. Massa on eri, koska heliumin moolimassa on 4,0 g/mol ja ilman 29 g/mol."
+        },
+        {
+          "text": "Cem: Heliumissa hiukkaset liikkuvat nopeammin, joten pallossa on enemmän hiukkasia samassa tilassa.",
+          "feedback": "Kevyet heliumhiukkaset liikkuvat samassa lämpötilassa todella nopeammin, mutta kevyt hiukkanen painaa seinää osumassa heikommin. Nämä kumoavat toisensa: lämpötila määrää, kuinka voimakkaasti hiukkaset keskimäärin seiniä painavat. Koe 1 näytti, että samassa lämpötilassa ja tilavuudessa sama paine vaatii saman hiukkasmäärän."
+        }
+      ]
+    },
+    {
+      "id": "kokeile",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatio on ideaalikaasun hiukkasmalli: pistemäiset hiukkaset törmäävät vain seiniin, eivät toisiinsa. Laatikko on tasomalli, jossa pinta-ala vastaa tilavuutta. Paine näytetään suhteessa vertailutilaan (N = 100, T = 300 K, V = 100 %). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin 2 sekunnin ajalta, joten se heiluu hieman. *Tilanyhtälön ennuste* on mallin laskema arvo. Kokeile vapaasti, miten välähdykset seinissä muuttuvat, kun muutat säätimiä."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain hiukkasmäärä muuttuu",
+      "intro": "Testaa ennusteet 1 ja 3. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi N = 50, 100 ja 200. *Mitattu paine* on liukuva keskiarvo: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten. Taulukossa *p/p_ref mitattu* on simulaation mittaus ja *p/p_ref malli* tilanyhtälön ennuste eli mallin arvo, joka päivittyy heti.",
+      "initial": {
+        "N": 100,
+        "T": 300,
+        "V": 100
+      },
+      "locked": [
+        "T",
+        "V"
+      ],
+      "vary": "N",
+      "names": {
+        "N": "hiukkasmäärä N",
+        "T": "lämpötila T",
+        "V": "tilavuus V"
+      },
+      "units": {
+        "N": "",
+        "T": "K",
+        "V": "%"
+      },
+      "measure": [
+        {
+          "key": "pMeasured",
+          "label": "p/p_ref mitattu"
+        },
+        {
+          "key": "pPredicted",
+          "label": "p/p_ref malli"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain lämpötila muuttuu",
+      "intro": "Testaa ennuste 2. Hiukkasmäärä ja tilavuus lukitaan, ja vain lämpötila muuttuu. Kirjaa ainakin lämpötiloissa 300 K ja 600 K törmäysten määrä sekunnissa ja paine. Myös törmäysmäärä on keskiarvo noin 2 s:n ajalta. *Mitattu paine* on liukuva keskiarvo: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten. Taulukossa *p/p_ref mitattu* on simulaation mittaus ja *p/p_ref malli* tilanyhtälön ennuste eli mallin arvo, joka päivittyy heti.",
+      "initial": {
+        "N": 100,
+        "T": 300,
+        "V": 100
+      },
+      "locked": [
+        "N",
+        "V"
+      ],
+      "vary": "T",
+      "names": {
+        "N": "hiukkasmäärä N",
+        "T": "lämpötila T",
+        "V": "tilavuus V"
+      },
+      "units": {
+        "N": "",
+        "T": "K",
+        "V": "%"
+      },
+      "measure": [
+        {
+          "key": "hitRate",
+          "label": "osumia seiniin (1/s)"
+        },
+        {
+          "key": "pMeasured",
+          "label": "p/p_ref mitattu"
+        },
+        {
+          "key": "pPredicted",
+          "label": "p/p_ref malli"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mikä pysyy samana?",
+      "text": "Taulukossa on simulaation *esimerkkiarvoja* viidestä tilasta, joissa hiukkasmäärä, lämpötila ja tilavuus muuttuvat yhtä aikaa. $p/p_\\text{ref}$ on mitattu paine, 2 s:n keskiarvo 20 s:n ajon lopussa. Viimeisessä sarakkeessa mitattu paine on kerrottu tilavuudella ja jaettu hiukkasmäärällä ja lämpötilalla, kaikki suhteessa vertailutilaan (N = 100, T = 300 K, V = 100 %).\n\n| N | T (K) | V (%) | $p/p_\\text{ref}$ | $pV/(NT)$ |\n|---|---|---|---|---|\n| 100 | 300 | 100 | 1,05 | 1,05 |\n| 200 | 300 | 100 | 2,00 | 1,00 |\n| 100 | 600 | 50 | 3,91 | 0,98 |\n| 50 | 150 | 25 | 0,98 | 0,98 |\n| 180 | 300 | 35 | 5,11 | 0,99 |",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä viimeinen sarake kertoo?",
+        "choices": [
+          {
+            "text": "Suure $pV/(NT)$ on kaikissa tiloissa lähes sama, noin 1. Erot ovat mittauksen satunnaista vaihtelua.",
+            "correct": true,
+            "feedback": "Juuri näin: vaikka paine vaihtelee arvosta 0,98 arvoon 5,11, suure $pV/(NT)$ pysyy muutaman prosentin päässä luvusta 1. Kun hiukkasmäärä ilmaistaan ainemääränä n, tästä vakiosta tulee moolinen kaasuvakio R ja yhtälöstä $pV = nRT$."
+          },
+          {
+            "text": "Paine on sama kaikissa tiloissa.",
+            "feedback": "Paine vaihtelee taulukossa arvosta 0,98 arvoon 5,11. Sama pysyy vain yhdistelmä $pV/(NT)$: paineen muutokset kumoutuvat, kun ne suhteutetaan hiukkasmäärään, lämpötilaan ja tilavuuteen."
+          },
+          {
+            "text": "Suure $pV/(NT)$ riippuu siitä, mitä suuretta muutettiin.",
+            "feedback": "Rivit, joilla muutettiin eri suureita tai monta kerralla, antavat kaikki noin 1. Pienet erot (0,98–1,05) johtuvat siitä, että mitattu paine on lyhyen ajan keskiarvo, eivät muutetusta suureesta."
+          }
+        ]
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden tuloksiin ja tilanyhtälöön $pV = nRT$. Palaa sitten alun kysymykseen: mitä paine, tilavuus ja lämpötila kertovat heliumpallon ja ilmapallon kaasumääristä, ja miksi heliumpallo on silti kevyempi?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee, kuinka monta moolia ilmaa on 2,0 litran pullossa, kun paine on 101 kPa ja lämpötila 20 °C:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1{,}2\\,\\text{mol} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Paine pitäisi sijoittaa kilopascaleina, 101 kPa.",
+          "feedback": "Pascal on oikea yksikkö, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen R:n yksikön kanssa. Kilopascaleilla tulos olisi tuhatkertaisesti väärä. Virhe on muualla."
+        },
+        {
+          "text": "Lämpötila on celsiusasteina. Kelvineinä $T = 293{,}15\\,\\text{K}$, ja $n \\approx 0{,}083\\,\\text{mol}$.",
+          "correct": true,
+          "feedback": "Oikein. Tilanyhtälössä lämpötila on aina kelvineinä: $n = 101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3 / (8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293{,}15\\,\\text{K}) \\approx 0{,}083\\,\\text{mol}$. Järkevyystarkistus: mooli vie huoneenlämmössä noin 24 l, joten 2,0 litrassa on noin 0,08 mol."
+        },
+        {
+          "text": "Tilavuus pitäisi sijoittaa litroina, 2,0 l.",
+          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\text{l} = 0{,}0020\\,\\text{m}^3$, ja vain se sopii yhteen pascalin ja R:n yksikön kanssa. Virhe on muualla."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Tarkista järkevyys: mooli kaasua vie huoneenlämmössä noin 24 litraa, joten 2,0 litrassa ei voi olla yli moolia. Katso, missä yksikössä lämpötila on sijoitettu."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kuumailmapallon kuoren tilavuus on 2800 m³. Kuoren alaosa on auki, joten sisäilman paine on sama kuin ulkoilman, 101 kPa. Poltin lämmittää sisäilman 100 °C:een. Kuinka monta kilogrammaa ilmaa kuoren sisällä on? Ilman moolimassa on 29 g/mol, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että ilma on ideaalikaasua.",
+      "answer": 2640,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Massaa ei saa suoraan tilanyhtälöstä. Minkä suureen tilanyhtälö antaa, ja miten siitä pääsee massaan?",
+        "Ratkaise ensin ainemäärä $n = \\dfrac{pV}{RT}$ ja sitten massa $m = nM$. Yksiköt: pascalit, kuutiometrit, kelvinit ja kg/mol.",
+        "$T = (100 + 273{,}15)\\,\\text{K} = 373{,}15\\,\\text{K}$, joten $n = \\dfrac{101\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 373{,}15\\,\\text{K}} \\approx 91\\,200\\,\\text{mol}$."
+      ],
+      "mistakes": [
+        {
+          "value": 9870,
+          "feedback": "Sijoitit lämpötilan celsiusasteina. Tilanyhtälössä lämpötila on kelvineinä: $T = 373{,}15\\,\\text{K}$."
+        },
+        {
+          "value": 2.64,
+          "feedback": "Sijoitit paineen kilopascaleina. R:n yksikkö on joule, ja $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$, joten paine on pascaleina: $101\\,000\\,\\text{Pa}$."
+        }
+      ],
+      "solution": "**Ratkaisu symbolisesti.** Tilanyhtälöstä $n = \\dfrac{pV}{RT}$ ja massa $m = nM = \\dfrac{pVM}{RT}$.\n\n**Sijoitus.** $T = 373{,}15\\,\\text{K}$ ja $M = 0{,}029\\,\\text{kg/mol}$:\n\n$$\\begin{aligned} n &= \\frac{101\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 373{,}15\\,\\text{K}} \\\\ &\\approx 91\\,200\\,\\text{mol} \\\\ m &= 91\\,200\\,\\text{mol} \\cdot 0{,}029\\,\\tfrac{\\text{kg}}{\\text{mol}} \\\\ &\\approx 2{,}6 \\cdot 10^3\\,\\text{kg} \\end{aligned}$$\n\n**Järkevyys.** Sama tilavuus 20 °C:n ulkoilmaa painaa noin $3{,}4 \\cdot 10^3\\,\\text{kg}$. Kuumassa ilmassa on samassa paineessa ja tilavuudessa vähemmän moolia, joten kuoren sisäilma on noin 700 kg kevyempää kuin sen syrjäyttämä ulkoilma. Tämä ero kantaa pallon, korin ja matkustajat."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä ratkaistaan yksi suure tilanyhtälöstä, taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kaasun tilavuus puolitetaan, ja lämpötila ja hiukkasmäärä pysyvät samoina. Paine kaksinkertaistuu. Mikä on syy hiukkasmallin mukaan?",
+      "choices": [
+        {
+          "text": "Hiukkaset liikkuvat nopeammin pienemmässä tilassa.",
+          "feedback": "Hiukkasten nopeus riippuu lämpötilasta, ja lämpötila pysyy samana. Simulaatiossakin tilavuuden muutos ei muuta nopeuksia. Paine kasvaa, koska sama hiukkanen ehtii seinästä seinään lyhyemmässä ajassa."
+        },
+        {
+          "text": "Hiukkaset osuvat seiniin useammin, koska ne kulkevat seinästä seinään lyhyemmän matkan.",
+          "correct": true,
+          "feedback": "Oikein. Nopeus on sama, mutta matka seinien välillä lyhenee, joten kukin hiukkanen osuu seiniin useammin. Jokainen osuma painaa seinää yhtä paljon kuin ennen, joten paine kasvaa törmäystiheyden mukana."
+        },
+        {
+          "text": "Hiukkaset törmäilevät useammin toisiinsa, ja se lisää painetta.",
+          "feedback": "Ideaalikaasun mallissa hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin, ja simulaatiossa niitä ei ole lainkaan. Silti paine kaksinkertaistuu, koska hiukkaset osuvat seiniin useammin."
+        },
+        {
+          "text": "Hiukkaset puristuvat pienemmiksi ja painavat seiniä voimakkaammin.",
+          "feedback": "Hiukkaset eivät muutu: ideaalikaasun mallissa ne ovat pistemäisiä, ja jokainen osuma painaa seinää yhtä paljon kuin ennen, koska nopeus on sama. Paine kasvaa, koska osumia on enemmän."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Ennuste simulaation tilalle",
+      "prompt": "Simulaation vertailutilassa (N = 100, T = 300 K, V = 100 %) paine on $p/p_\\text{ref} = 1{,}00$. Hiukkasmäärä kasvatetaan 150:een, lämpötila nostetaan 450 K:iin ja tilavuus pienennetään 75 %:iin. Mikä on tilanyhtälön ennuste $p/p_\\text{ref}$?",
+      "answer": 3.0,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitkä muutokset kasvattavat painetta ja mikä muutos pienentää sitä?",
+        "Paine on verrannollinen hiukkasmäärään ja kelvinlämpötilaan ja kääntäen verrannollinen tilavuuteen: $p \\propto NT/V$.",
+        "$\\dfrac{p}{p_\\text{ref}} = \\dfrac{150}{100} \\cdot \\dfrac{450\\,\\text{K}}{300\\,\\text{K}} \\cdot \\dfrac{100\\,\\%}{75\\,\\%}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.25,
+          "feedback": "Otit huomioon hiukkasmäärän ja lämpötilan mutta et tilavuutta. Pienempi tilavuus kasvattaa painetta kertoimella $100\\,\\% / 75\\,\\% \\approx 1{,}33$."
+        },
+        {
+          "value": 1.69,
+          "feedback": "Kerroit tilavuuden suhteella 0,75, mutta paine on kääntäen verrannollinen tilavuuteen: pienempi tilavuus suurentaa painetta. Jaa luvulla 0,75."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä hiukkastasolla",
+      "prompt": "Selitä hiukkasmallin avulla, miksi kaasun paine kaksinkertaistuu, kun kelvinlämpötila kaksinkertaistuu, vaikka hiukkasten nopeus kasvaa vain noin 1,41-kertaiseksi. Hiukkasmäärä ja tilavuus pysyvät samoina.",
+      "criteria": [
+        "Sanon, että paine syntyy hiukkasten osumista seiniin.",
+        "Sanon, että nopeammat hiukkaset osuvat seiniin useammin, noin 1,41 kertaa niin usein.",
+        "Sanon, että jokainen osuma painaa seinää voimakkaammin, myös noin 1,41-kertaisesti.",
+        "Yhdistän tekijät: $1{,}41 \\cdot 1{,}41 \\approx 2$, mikä vastaa tilanyhtälöä $p = nRT/V$, jossa p on verrannollinen T:hen."
+      ],
+      "model": "Paine syntyy siitä, että hiukkaset osuvat astian seiniin ja työntävät niitä. Kun kelvinlämpötila kaksinkertaistuu, hiukkasten nopeus kasvaa noin 1,41-kertaiseksi. Nopeampi hiukkanen kulkee seinästä seinään lyhyemmässä ajassa, joten osumia on sekunnissa noin 1,41 kertaa enemmän. Lisäksi nopeampi hiukkanen painaa seinää jokaisessa osumassa noin 1,41 kertaa voimakkaammin. Yhdessä nämä kasvattavat painetta kertoimella $1{,}41 \\cdot 1{,}41 \\approx 2$. Tämä vastaa tilanyhtälöä $p = nRT/V$: kun n ja V pysyvät samoina, paine on verrannollinen kelvinlämpötilaan."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

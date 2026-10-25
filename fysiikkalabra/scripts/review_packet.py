@@ -73,6 +73,7 @@ def packet(folder, role, fix=False):
         mode = sc["mode"]
         out = header(folder, role, mode)
         out += "## Conventions\n" + sections("CLAUDE.md", "Physics and maths conventions", "Lesson form (human decisions 2026-10-25, every lesson)", "Exercise levels") + "\n\n"
+        if (folder / "inquiry.json").exists(): out += sections("NOTES.md", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n\n"
         if mode == "delta":
             prev = (folder / "review" / f"{role}.md").read_text()
             out += (f"## Delta review\nYou passed this lesson earlier (report below). Since then only the diff below changed ({sc['why']}). "
@@ -82,11 +83,11 @@ def packet(folder, role, fix=False):
         else:
             if sc["why"] not in ("no earlier PASS",): out += f"## Full review\nReason: {sc['why']}.\n"
             if role == "science":
-                for n in ("lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js"): out += file_block(folder, n)
+                for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js"): out += file_block(folder, n)
                 shots = [p.relative_to(ROOT) for p in sorted((folder / "review").glob(f"{lid}-sim-*.png"))]
                 if shots: out += "\n### Simulation screenshots (open with the Read tool when the drawing matters)\n" + "\n".join(f"- {p}" for p in shots) + "\n"
             else:
-                for n in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md"): out += file_block(folder, n, collapse_svg=(n == "lesson.md"))
+                for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md"): out += file_block(folder, n, collapse_svg=(n == "lesson.md"))
                 shots = [p.relative_to(ROOT) for p in sorted((folder / "review").glob(f"{lid}-*.png"))]
                 out += "\n### Screenshots (open with the Read tool)\n" + ("\n".join(f"- {p}" for p in shots) if shots else "(none: run python scripts/screenshot.py first)") + "\n"
         out += "\n" + reviewer_rules(role).replace("{id}", lid)
@@ -94,7 +95,7 @@ def packet(folder, role, fix=False):
         mode = "fix" if fix else "draft"
         out = header(folder, role, mode)
         out += "## Rules\n" + sections("CLAUDE.md", "Physics and maths conventions", "Lesson form (human decisions 2026-10-25, every lesson)", "Exercise levels", "Lesson folder") + "\n\n"
-        out += sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)") + "\n\n"
+        out += sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n\n"
         if (folder / "sim-spec.md").exists() or (folder / "sim.js").exists(): out += sections("NOTES.md", "4. Simulations and pages") + "\n\n"
         if fix:
             out += "## Findings to resolve (every Blocking item; Polish items only when the orchestrator lists them)\n"
@@ -103,7 +104,7 @@ def packet(folder, role, fix=False):
                 if f.exists(): out += f"### {n}\n```\n{f.read_text().strip()}\n```\n"
         else:
             out += "## Reference lesson (content/_gold)\n" + file_block(ROOT / "content/_gold", "lesson.md")
-        for n in ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js"): out += file_block(folder, n)
+        for n in ("meta.json", "lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js"): out += file_block(folder, n)
         out += ("\n## Your task\nEdit only the lesson folder, tests/sims/<id>.json and glossary.json. When a number changes, change answers.py first. "
                 "Finish with `python3 scripts/check_lesson.py <id>` until every line is ok, then write review/developer.md (`VERDICT: DONE` or `VERDICT: BLOCKED` + reason, what changed per file, ≤ 200 words).\n")
     f = folder / "review" / f"packet-{role}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)

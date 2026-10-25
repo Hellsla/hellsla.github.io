@@ -6,7 +6,10 @@
      particles need not run under the exercises),
    - runs at a low frame rate when the reader prefers reduced motion,
    - uses the page's own font inside the canvas.
-   Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there. */
+   Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
+   It also defines window.defineSimAdapter (docs/inquiry.md, "Simulation interface"): a sim that calls it once
+   from setup exposes a small adapter that guided investigations (inquiry.js) use to read the state, set
+   parameters, lock controls, reset and pause. The physics stays in the sim; window.simState is untouched. */
 (() => {
   const Base = window.p5;
   if (!Base || Base.__fysiikkalabra) return;
@@ -54,3 +57,27 @@
   Embedded.__fysiikkalabra = true;
   window.p5 = Embedded;
 })();
+
+/* window.defineSimAdapter({ params, reset, pause, resume, get })
+   params: { name: { input: <input or select element>, unit: 'N' } } — every parameter an investigation may set
+   or lock. set() writes the value and fires input + change, so a sketch that reads its controls each frame
+   (p5 slider.value()) or on events sees the change at once; lock() disables the control and marks its label.
+   reset(): the sim's own function that returns every control to its default and stops any motion.
+   step(): draws one frame (p.redraw()), so that get() after set() returns fresh values even while the sketch is
+   paused off-screen. get(): defaults to window.simState. pause()/resume(): optional, the sketch's own noLoop()/loop(). */
+window.defineSimAdapter = (spec) => {
+  const params = spec.params || {};
+  const fire = (el) => { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); };
+  const el = (k) => { const p = params[k]; return p && (typeof p.input === 'string' ? document.querySelector(p.input) : p.input); };
+  const adapter = {
+    params,
+    capabilities: { set: Object.keys(params), lock: true, reset: typeof spec.reset === 'function', pause: typeof spec.pause === 'function' },
+    get() { if (spec.step) spec.step(); return (spec.get || (() => window.simState))(); },
+    set(values) { Object.entries(values).forEach(([k, v]) => { const e = el(k); if (!e) return; if (e.tagName === 'SELECT') e.value = String(v); else e.value = v; fire(e); }); if (spec.step) spec.step(); },
+    lock(k, on) { const e = el(k); if (!e) return; e.disabled = !!on; e.setAttribute('aria-disabled', on ? 'true' : 'false'); e.closest('label')?.classList.toggle('locked', !!on); },
+    reset() { Object.keys(params).forEach((k) => adapter.lock(k, false)); if (spec.reset) spec.reset(); if (spec.step) spec.step(); },
+    pause() { if (spec.pause) spec.pause(); }, resume() { if (spec.resume) spec.resume(); },
+  };
+  window.simAdapter = adapter;
+  return adapter;
+};
