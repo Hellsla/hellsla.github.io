@@ -8,7 +8,7 @@
     "a": "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: 2,5 · 3,0 cm = 7,5 cm."
   },
   {
-    "q": "Miksi lause ”painan 70 kiloa” on fysiikan kannalta epätarkka?",
-    "a": "Kilogramma on massan yksikkö, mutta paino on voima ja sen yksikkö on newton. Massa 70 kg tarkoittaa noin 690 N:n painoa Maassa."
+    "q": "Pullossa on 1,5 kg vettä. Mikä on veden paino Maassa, ja miksi lause ”pullo painaa puolitoista kiloa” on fysiikan kannalta epätarkka?",
+    "a": "G = m g = 1,5 kg · 9,81 N/kg ≈ 15 N. Kilogramma on massan yksikkö, mutta paino on voima, jonka yksikkö on newton: lause kertoo massan, ei painon."
   }
 ]

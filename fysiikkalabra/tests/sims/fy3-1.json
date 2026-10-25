@@ -9,7 +9,7 @@
     "expr": "window.simState.g",
     "expected": 9.81,
     "tol": 1e-06,
-    "note": "default body is Maa with g = 9,81 N/kg"
+    "note": "default body is Maa with g = 9,81 N/kg (first assertions run on the untouched page)"
   },
   {
     "expr": "window.simState.G",
@@ -25,6 +25,7 @@
     "note": "5 kg on Kuu (g = 1,62) -> G = 8,1 N"
   },
   {
+    "setup": "const s=document.querySelector('#sim-root select'); s.value='Jupiter'; document.querySelector('#sim-root input[type=range]').value=5;",
     "expr": "window.simState.m",
     "expected": 5,
     "tol": 0,
@@ -139,10 +140,25 @@
     "note": "bar heights keep the ratio of the g values: Kuu / Maa = 1,62 / 9,81"
   },
   {
+    "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=77; r.dispatchEvent(new Event('input'));",
     "expr": "new Promise(f => setTimeout(() => f(Math.abs(window.simState.bars[2] - 220 * 9.81 / 24.8) < 0.01 ? 1 : 0), 250))",
     "expected": 1,
     "tol": 0,
-    "note": "the Maa bar is 9,81/24,8 of full height, independent of the mass"
+    "note": "the Maa bar is 9,81/24,8 of full height, independent of the mass (checked at 77 kg)"
+  },
+  {
+    "setup": "const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); s.value='Jupiter'; r.value=100; s.dispatchEvent(new Event('change')); r.dispatchEvent(new Event('input'));",
+    "expr": "new Promise(f => setTimeout(() => f(window.simState.arrow), 250))",
+    "expected": 110,
+    "tol": 1e-06,
+    "note": "spec: the arrow is 110 px at full scale (100 kg on Jupiter, 2480 N)"
+  },
+  {
+    "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=2; r.dispatchEvent(new Event('input'));",
+    "expr": "new Promise(f => setTimeout(() => f(document.querySelector('#sim-root .readout').textContent.includes('asteikko 0–49,6 N') ? 1 : 0), 250))",
+    "expected": 1,
+    "tol": 0,
+    "note": "readout scale for 2 kg is 2 · 24,8 = 49,6 N (one decimal below 100 N)"
   },
   {
     "setup": "const s=document.querySelector('#sim-root select'); s.value='Mars'; document.querySelector('#sim-root input[type=range]').value=20;",
