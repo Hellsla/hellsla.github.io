@@ -25,6 +25,18 @@
     "locked": false
   },
   {
+    "term": "eristetty systeemi",
+    "definition": "Eristetty systeemi on systeemi, johon tai josta ei siirry ainetta eikä energiaa lämpönä tai työnä. Suljettuun systeemiin energiaa voi vielä siirtyä, vaikka aine ei pääse sisään tai ulos, mutta eristetyn systeemin kokonaisenergia pysyy vakiona.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "systeemi",
+      "termodynamiikan ensimmäinen pääsääntö"
+    ],
+    "locked": false
+  },
+  {
     "term": "faasikaavio",
     "definition": "Kuvaaja, joka näyttää aineen olomuodon lämpötilan ja paineen mukaan. Sen käyrät ovat sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa.",
     "lessons": [

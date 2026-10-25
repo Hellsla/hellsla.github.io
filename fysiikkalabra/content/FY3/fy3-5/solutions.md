@@ -63,18 +63,18 @@
 **Järkevyys:** Q on positiivinen, joten lämpöä siirtyy höyryyn. Höyry tekee enemmän työtä kuin sen sisäenergia pienenee; erotus 800 J siirtyy höyryyn lämpönä sylinterin kuumista seinistä.
 
 ## fy3-5-L2-04
-**Annettu:** systeemi on smoothie; P = 250 W, t = 40 s, Q = +2,0 kJ (smoothie on ympäristöä kylmempää, joten lämpöä siirtyy siihen)
-**Kysytty:** ΔU
-**Kaava:** W = P t ja ΔU = Q + W
-**Sijoitus:** W = 250 W · 40 s = 10 000 J = 10 kJ. ΔU = 2,0 kJ + 10 kJ = 12 kJ
-**Vastaus:** 12 kJ
-**Järkevyys:** Sekä terän työ että keittiön lämpö tuovat energiaa, joten sisäenergia kasvaa. Pitkään sekoitettu smoothie lämpenee, vaikka sekoitin ei lämmitä sitä millään vastuksella.
+**Annettu:** systeemi on smoothie; P = 250 W, Q = +2,0 kJ (smoothie on ympäristöä kylmempää, joten lämpöä siirtyy siihen), ΔU = +12 kJ
+**Kysytty:** sekoitusaika t
+**Kaava:** ΔU = Q + W, joten W = ΔU − Q; P = W / t, joten t = W / P
+**Sijoitus:** W = 12 kJ − 2,0 kJ = 10 kJ = 10 000 J. t = 10 000 J / 250 W = 40 s
+**Vastaus:** 40 s
+**Järkevyys:** Terän työ tuo 10 kJ ja keittiön lämpö loput 2,0 kJ. Alle minuutin sekoitus on tehosekoittimelle tavallinen aika, ja smoothie lämpenee, vaikka sekoitin ei lämmitä sitä millään vastuksella.
 
 ## fy3-5-L3-01
 **Annettu:** systeemi on pumpun ilma (määrä ei muutu); F = 120 N, s = 0,15 m, lämpötila vakio
 **Kysytty:** Q
 **Kaava:** W = F s ja ΔU = Q + W
-**Sijoitus:** Sisäenergia riippuu lämpötilasta ja aineen määrästä. Kumpikaan ei muutu, joten ΔU = 0. W = 120 N · 0,15 m = 18 J (työtä tehdään ilmaan). 0 = Q + 18 J, joten Q = −18 J
+**Sijoitus:** Kaasun sisäenergia riippuu käytännössä vain sen lämpötilasta ja määrästä. Kumpikaan ei muutu, joten ΔU = 0. W = 120 N · 0,15 m = 18 J (työtä tehdään ilmaan). 0 = Q + 18 J, joten Q = −18 J
 **Vastaus:** −18 J
 **Järkevyys:** Koska mäntää painetaan hitaasti, työn tuoma energia ehtii siirtyä lämpönä pumpun seinien kautta huoneeseen. Nopeasti painettaessa lämpö ei ehtisi siirtyä, ja pumppu kuumenisi.
 
@@ -87,9 +87,9 @@
 **Järkevyys:** Eristetty astia ei päästä lämpöä ulos, joten koko työ jää veden sisäenergiaksi. Noin 1,7 metrin pudotus mahtuu luokkahuoneeseen. Yksiköt: J / N = m.
 
 ## fy3-5-L3-03
-**Annettu:** kaasu tekee työn 250 J ympäristöön, joten W = −250 J; ΔU = −90 J
-**Kysytty:** Q etumerkkeineen
+**Annettu:** systeemi on kaasu; tapa A: Q_A = +400 J, W_A = −150 J (kaasu tekee työtä); tapa B: W_B = −60 J; sama alku- ja loppulämpötila, sama kaasun määrä
+**Kysytty:** Q_B
 **Kaava:** ΔU = Q + W, joten Q = ΔU − W
-**Sijoitus:** Q = −90 J − (−250 J) = −90 J + 250 J = 160 J
-**Vastaus:** +160 J, lämpöä siirtyy kaasuun
-**Järkevyys:** Laajeneva kaasu luovuttaa työnä 250 J. Jos lämpöä ei siirtyisi, sisäenergia pienenisi koko 250 J. Koska se pienenee vain 90 J, erotus 160 J on tullut kaasuun lämpönä.
+**Sijoitus:** Kaasun sisäenergia riippuu käytännössä vain sen lämpötilasta ja määrästä, jotka ovat molemmissa tavoissa alussa ja lopussa samat, joten ΔU_B = ΔU_A. ΔU_A = 400 J + (−150 J) = 250 J. Q_B = 250 J − (−60 J) = 310 J
+**Vastaus:** 310 J
+**Järkevyys:** Tavassa B kaasu tekee vähemmän työtä, joten sama sisäenergian kasvu 250 J syntyy pienemmällä lämpömäärällä kuin tavassa A (310 J < 400 J). Lämpö ja työ riippuvat tavasta, sisäenergian muutos vain alku- ja lopputilasta.

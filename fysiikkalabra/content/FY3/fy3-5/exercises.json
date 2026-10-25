@@ -69,9 +69,9 @@
     {
       "id": "fy3-5-L2-04",
       "level": 2,
-      "text": "Pakastemustikoista tehtyä smoothieta sekoitetaan tehosekoittimessa 40 sekunnin ajan. Terä tekee smoothieen työtä 250 W:n teholla. Smoothie on keittiön ilmaa kylmempää, ja sekoituksen aikana siihen siirtyy kannun seinien kautta lämpömäärä 2,0 kJ. Kuinka paljon smoothien sisäenergia kasvaa? Anna vastaus kilojouleina.",
-      "answer": 12,
-      "unit": "kJ",
+      "text": "Pakastemustikoista tehtyä smoothieta sekoitetaan tehosekoittimessa. Terä tekee smoothieen työtä 250 W:n teholla. Smoothie on keittiön ilmaa kylmempää, ja sekoituksen aikana siihen siirtyy kannun seinien kautta lämpömäärä 2,0 kJ. Sekoituksen jälkeen smoothien sisäenergia on kasvanut 12 kJ. Kuinka kauan sekoitin oli päällä?",
+      "answer": 40,
+      "unit": "s",
       "tolerance": 0.02
     }
   ],
@@ -79,7 +79,7 @@
     {
       "id": "fy3-5-L3-01",
       "level": 3,
-      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti 0,15 m:n matka keskimääräisellä 120 N:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa. Kuinka suuri lämpömäärä Q ilmaan siirtyy? Anna vastaus etumerkkeineen ja perustele, miksi ilman sisäenergia ei muutu.",
+      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti, ja mäntä työntää ilmaa 0,15 m:n matkan keskimääräisellä 120 N:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa. Kuinka suuri lämpömäärä Q ilmaan siirtyy? Anna vastaus etumerkkeineen ja perustele, miksi ilman sisäenergia ei muutu.",
       "answer": -18,
       "unit": "J",
       "tolerance": 0.02
@@ -95,8 +95,8 @@
     {
       "id": "fy3-5-L3-03",
       "level": 3,
-      "text": "Kaasu laajenee sylinterissä ja työntää mäntää: kaasu tekee ympäristöön työn 250 J. Samalla mitataan, että kaasun sisäenergia pienenee vain 90 J. Siirtyikö kaasuun vai kaasusta lämpöä laajenemisen aikana, ja kuinka suuri lämpömäärä? Anna vastaus etumerkkeineen (kaasuun siirtyvä lämpö on positiivinen).",
-      "answer": 160,
+      "text": "Sylinterissä oleva kaasu viedään kahdella eri tavalla samasta alkulämpötilasta samaan loppulämpötilaan; kaasun määrä ei muutu. Tavassa A kaasuun siirtyy lämpömäärä 400 J, ja kaasu tekee ympäristöön työn 150 J. Tavassa B kaasu tekee ympäristöön työn 60 J. Kuinka suuri lämpömäärä kaasuun siirtyy tavassa B? Perustele, miksi kaasun sisäenergian muutos on molemmissa tavoissa sama.",
+      "answer": 310,
       "unit": "J",
       "tolerance": 0.02
     }
