@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-6-L1-01",
+      "level": 1,
+      "text": "Kahvinkeittimen säiliöön kaadetaan 1,8 kg vettä, jonka lämpötila on 12 °C. Keitin lämmittää veden 96 °C:seen. Kuinka suuri lämpömäärä veteen siirtyy? Anna vastaus megajouleina.",
+      "answer": 0.63,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-02",
+      "level": 1,
+      "text": "Valurautainen paistinpannu, jossa on rautaa 2,4 kg, nostetaan liedeltä mökin pöydälle. Pannun lämpötila laskee 220 °C:sta 25 °C:seen. Kuinka suuren lämpömäärän pannu luovuttaa ympäristöön? Anna vastaus kilojouleina.",
+      "answer": 210,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-03",
+      "level": 1,
+      "text": "Lasten hiekkalaatikossa on 50 kg hiekkaa. Aurinko lämmittää hiekan aamupäivän aikana 14 °C:sta 32 °C:seen. Kuinka suuri lämpömäärä hiekkaan siirtyy? Anna vastaus kilojouleina.",
+      "answer": 720,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-04",
+      "level": 1,
+      "text": "Mökin paljussa on 1200 kg vettä. Yön aikana vesi jäähtyy 38 °C:sta 31 °C:seen. Kuinka suuri on veden lämpömäärä Q? Anna vastaus etumerkkeineen megajouleina (negatiivinen Q tarkoittaa, että vesi luovuttaa lämpöä).",
+      "answer": -35,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-05",
+      "level": 1,
+      "text": "Kylmälaukkuun laitetaan pakastimesta 0,50 kg:n jääpussi. Jään lämpötila nousee −22 °C:sta −4,0 °C:seen, eikä jää vielä sula. Kuinka suuri lämpömäärä jäähän siirtyy? Anna vastaus kilojouleina.",
+      "answer": 19,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-6-L2-01",
+      "level": 2,
+      "text": "Alumiininen paistinpannu, jonka massa on 450 g, lämmitetään liedellä 20 °C:sta 180 °C:seen. Kuinka suuri lämpömäärä pannuun siirtyy? Anna vastaus kilojouleina.",
+      "answer": 65,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-02",
+      "level": 2,
+      "text": "Vedenkeittimen teho on 2,4 kW. Keittimessä on 1,5 kg vettä, jonka lämpötila on 15 °C. Kuinka kauan veden lämmittäminen 95 °C:seen kestää? Oleta, että kaikki keittimen energia siirtyy veteen. Anna vastaus sekunteina.",
+      "answer": 210,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-03",
+      "level": 2,
+      "text": "Mökin lämminvesivaraajassa on 80 kg vettä, jonka lämpötila on 9,0 °C. Varaajan sähkövastus luovuttaa veteen lämpömäärän 15 MJ. Mikä on veden loppulämpötila, kun lämpöhäviöitä ei oteta huomioon?",
+      "answer": 54,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-04",
+      "level": 2,
+      "text": "Takan metallinen luukku, jonka massa on 3,2 kg, lämpenee tulen palaessa 20 °C:sta 140 °C:seen. Luukkuun siirtyy tällöin lämpömäärä 172,8 kJ. Laske luukun aineen ominaislämpökapasiteetti ja päättele taulukosta, mistä metallista luukku on tehty.",
+      "answer": 450,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-6-L3-01",
+      "level": 3,
+      "text": "Ennen vanhaan savusaunan pesuvesi lämmitettiin pudottamalla kiukaan kuumia kiviä puusaaviin. Saavissa on 20 kg järvivettä, jonka lämpötila on 10 °C, ja kiuas on kuumentanut kivet 300 °C:een. Kuinka monta kilogrammaa kiviä saaviin on pudotettava, jotta veden lämpötila nousee 40 °C:seen? Kivien ominaislämpökapasiteetti on 800 J/(kg·K). Oleta, ettei lämpöä siirry saaviin eikä ilmaan eikä vettä höyrysty. Perustele, mikä on kivien loppulämpötila.",
+      "answer": 12,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L3-02",
+      "level": 3,
+      "text": "Mökin rannassa on matala lahdelma, jonka pinta-ala on 2000 m² ja keskisyvyys 1,2 m. Aurinkoisena kesäpäivänä lahden vesi saa auringosta energiaa 18 MJ jokaista pinnan neliömetriä kohti. Kuutiometrissä vettä on 1000 kg. Oleta, että energia jää veteen ja vesi sekoittuu tasaisesti. Kuinka monta kelviniä lahden veden lämpötila nousee päivän aikana? Perustele myös, miksi tulos ei riipu lahden pinta-alasta.",
+      "answer": 3.6,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L3-03",
+      "level": 3,
+      "text": "Mökille suunnitellaan lämpövarastoa, johon kesän aurinkolämpöä talletetaan. Vaihtoehdot ovat 1,0 m³ vettä, jonka massa on 1000 kg, tai kuiva hiekka, jota on 1600 kg kuutiometrissä. Kummankin varaston lämpötila vaihtelee 20 °C:n ja 70 °C:n välillä. Kuinka monta kuutiometriä hiekkaa tarvitaan, jotta se varastoi saman lämpömäärän kuin 1,0 m³ vettä? Perustele, miksi tilavuuksien suhde on pienempi kuin ominaislämpökapasiteettien suhde.",
+      "answer": 3.3,
+      "unit": "m³",
+      "tolerance": 0.02
+    }
+  ]
+}
