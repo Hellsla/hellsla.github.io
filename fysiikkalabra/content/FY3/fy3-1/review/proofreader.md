@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a4218abbc5a602f5
+CONTENT-HASH: cc0a19c351929d5f
 
-# Proofreader, fy3-1, second pass of the round (previous diff applied)
+# Proofreader, fy3-1, round 2
 
 ## Blocking
 None.
 
 ## Polish
-1. solutions.md:7 — "Yksi kilogramma painaa noin 10 N" uses the same loose "massa painaa voiman" phrasing as the two sanity checks already reworded in L2-01 and L2-02; optional: "Yhden kilogramman paino on noin 10 N, joten 4 kg:n massan paino on noin 40 N." Not applied, since it is understandable and not a terminology error.
+1. solutions.md:23 — "Maassa laite painaisi noin 294 N" still uses "laite painaisi voiman" phrasing; optional: "Maassa laitteen paino olisi noin 294 N". Not applied: understandable, no terminology error.
 
 ## Diff
 ```diff
@@ -16,11 +16,11 @@ None.
 
 ## Checked
 - lint_lesson.py: 0 errors, 0 warnings.
-- Applied lesson.md:21 "Jupiterissa pilvien yläpinnan tasoa" and lesson.md:52 "sen lukema muuttuu, kun sama kappale viedään toiseen paikkaan": grammar and meaning correct, "se" ambiguity gone.
-- Applied solutions.md:47 and :55 sanity checks ("5 kg:n massaa", "100 g:n kappaleen paino ... 60 g:n kappaleen paino"): inflection and paino-as-force correct.
-- sim.js:92 label "asteikko 0–62 N (paino Jupiterissa)": unspaced en dash, decimal comma via fi(), space before unit, "paino" as force; it is also shrunk to fit now, so the earlier width concern is resolved.
-- sim-spec.md, sim.js strings (lines 28, 35, 46-48, 82, 88, 92): glossary terms (massa, paino, voimamittari, vuorovaikutus) correct.
-- Number-plus-unit cases in exercises.json, exit-ticket.json, solutions.md (4,0 N:n, 12 N:n, 0,20 kg:n, 22,0 kg:n, 29 N:sta, 4,9 N:iin, 5,0 kg:n): all inflected.
-- Finnish quotes ”painan 70 kiloa”, minus signs (G_Maa − G_Kuu), decimal commas in prose: fine.
-- Paino is a force and massa is kg throughout; no "aste"/unit confusion; reading level suits 16–19-year-olds.
-- Hash checked at start and end: unchanged (a4218abbc5a602f5).
+- sim-spec.md rewritten sentence ("Palkkikaavion palkit ovat verrannollisia painoon valitulla massalla: asteikon täysi arvo ... m · 24,8 N ..."): grammar, case endings and paino/massa terminology correct.
+- solutions.md:7 "1 kg:n massan paino on noin 10 N, joten 4,0 kg:n massan paino on noin 40 N": inflection (kg:n) and paino as force correct.
+- solutions.md:63 "Kuussa paino on 1,62 / 9,81 ≈ 1/6 Maan painosta, joten se pienenee noin 5/6 eli 83 %": correct, space before %.
+- sim.js:50 readout "Palkkikaavion asteikko 0–… N on tämän massan paino Jupiterissa.": grammatical, en dash, decimal comma via fi(), space before unit.
+- sim.js:93 canvas label "asteikko 0–… N": short, correct, matches the readout.
+- Other sim.js strings (note line 35, title line 89, readout line 48) and exercises.json / exit-ticket.json: unit inflections (N:n, kg:n, N:sta, N:iin), Finnish quotes, minus signs fine.
+- Glossary terms (massa, paino, voimamittari, vuorovaikutus) consistent; reading level suits 16-19-year-olds.
+- Hash checked at start and end: unchanged (cc0a19c351929d5f).
