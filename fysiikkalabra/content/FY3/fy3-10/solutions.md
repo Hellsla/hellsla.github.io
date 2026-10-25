@@ -36,7 +36,7 @@
 **Kaava:** n = m / M
 **Sijoitus:** n = 425 g / 44 g/mol = 9,659 mol ≈ 9,7 mol
 **Vastaus:** 9,7 mol
-**Järkevyys:** Grammat supistuvat, joten yksiköksi jää mooli. Pullossa hiilidioksidi on suuren paineen vuoksi osittain nesteenä, mutta ainemäärä kertoo molekyylien määrän olomuodosta riippumatta. Huoneen paineessa ja lämpötilassa kaasu veisi noin 9,7 · 24 l ≈ 230 l.
+**Järkevyys:** Grammat supistuvat, joten yksiköksi jää mooli. Pullossa hiilidioksidi on suuren paineen vuoksi osittain nesteenä, mutta ainemäärä kertoo molekyylien määrän olomuodosta riippumatta. Huoneenlämmössä ja normaalipaineessa kaasu veisi noin 9,7 · 24 l ≈ 230 l.
 
 ## fy3-10-L2-01
 **Annettu:** V = 10,0 l = 0,0100 m³, m = 2,40 kg, θ = 15 °C, M = 32,0 g/mol = 0,0320 kg/mol
@@ -60,7 +60,7 @@
 **Kaava:** p₁V₁/T₁ = p₂V₂/T₂, josta T₂ = T₁ · p₂V₂ / (p₁V₁)
 **Sijoitus:** T₁ = 303,15 K. T₂ = 303,15 K · 4600 kPa · 0,0300 l / (101 kPa · 0,500 l) = 828,4 K. θ₂ = 828,4 − 273,15 = 555,3 °C ≈ 555 °C
 **Vastaus:** 555 °C. Polttoaine syttyy, koska 555 °C on paljon yli 250 °C.
-**Järkevyys:** Tilavuus pienenee 17-osaan ja paine kasvaa 46-kertaiseksi, joten pV kasvaa 2,7-kertaiseksi ja kelvinlämpötila samoin. Siksi dieselmoottori ei tarvitse sytytystulppaa. Yksiköitä ei muuteta perusyksiköiksi, koska ne supistuvat suhteessa.
+**Järkevyys:** Tilavuus on noin 17 kertaa pienempi ja paine 46 kertaa suurempi, joten pV kasvaa 2,7-kertaiseksi ja kelvinlämpötila samoin. Siksi dieselmoottori ei tarvitse sytytystulppaa. Yksiköitä ei muuteta perusyksiköiksi, koska ne supistuvat suhteessa.
 
 ## fy3-10-L2-04
 **Annettu:** n = 1,00 mol, θ = −30 °C, p = 102 kPa = 102 000 Pa, R = 8,31 J/(mol·K)

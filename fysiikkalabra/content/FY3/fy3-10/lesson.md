@@ -11,7 +11,7 @@ Aineen moolimassa M kertoo yhden moolin massan. Heliumin moolimassa on 4,0 g/mol
 
 Mittauksissa havaitaan, että pV/(nT) on kaikille kaasuille sama luku, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Se on moolinen kaasuvakio R = 8,31 J/(mol·K). Siitä saadaan ideaalikaasun tilanyhtälö pV = nRT, joka sitoo yhteen kaasun neljä tilaa kuvaavaa suuretta. Kaasun laatu ei näy yhtälössä lainkaan. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis aina yhtä monta moolia kaasua, olipa kaasu heliumia tai ilmaa. Tämä vastaa alun kysymykseen: pallot sisältävät yhtä monta hiukkasta, mutta heliumhiukkaset ovat paljon kevyempiä.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva: kaksi yhtä suurta palloa samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja 0,21 mol kaasua. Heliumpallon kaasun massa on 0,83 g ja ilmapallon 6,0 g, koska ilman hiukkaset ovat raskaampia." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+<svg viewBox="0 0 600 300" role="img" aria-label="Havainnekuva: kaksi yhtä suurta palloa samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja 0,21 mol kaasua. Heliumpallon kaasun massa on 0,83 g ja ilmapallon 6,0 g, koska ilman hiukkaset ovat raskaampia." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <ellipse cx="150" cy="110" rx="100" ry="98" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
   <polygon points="141,218 159,218 150,206" fill="currentColor"/>
   <line x1="150" y1="218" x2="150" y2="232" stroke="currentColor" stroke-width="2"/>
@@ -69,7 +69,7 @@ missä N on hiukkasten lukumäärä ja $N_\text{A} = 6{,}022 \cdot 10^{23}\,\tex
 
 Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinkertaistuu, kun hiukkasten lukumäärä tai kelvinlämpötila kaksinkertaistuu tai kun tilavuus puolittuu. Paine on siis suoraan verrannollinen hiukkasten lukumäärään ja kelvinlämpötilaan ja kääntäen verrannollinen tilavuuteen, eli $p \propto NT/V$.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva neljästä kaasuastiasta. Vasemmalta: lähtötila, jossa paine on p. Kun hiukkasia on kaksi kertaa enemmän, kun kelvinlämpötila on kaksinkertainen eli hiukkaset liikkuvat nopeammin tai kun tilavuus on puolet, paine on 2p." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva neljästä kaasuastiasta. Vasemmalta oikealle: lähtötilassa paine on p. Paine on 2p, kun hiukkasia on kaksi kertaa enemmän, kun kelvinlämpötila on kaksinkertainen eli hiukkaset liikkuvat nopeammin tai kun tilavuus on puolet." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <rect x="15" y="20" width="120" height="155" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
   <line x1="40" y1="50" x2="53" y2="56" stroke="currentColor" stroke-width="2"/>
   <circle cx="40" cy="50" r="6" fill="currentColor"/>
@@ -209,7 +209,7 @@ Tilanyhtälön laskuissa toistuu kolme virhettä:
 ## Tiivistelmä
 - Ideaalikaasun tilanyhtälö on $pV = nRT$, missä $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja T on kelvineinä.
 - Ainemäärä n kertoo kaasun määrän mooleina, ja $n = m/M$. Hiukkasten lukumäärä on $N = nN_\text{A}$.
-- Paine on verrannollinen lausekkeeseen NT/V: kaksinkertainen hiukkasmäärä tai kelvinlämpötila tai puolet pienempi tilavuus kaksinkertaistaa paineen.
+- Paine on verrannollinen lausekkeeseen NT/V: paine kaksinkertaistuu, kun hiukkasmäärä tai kelvinlämpötila kaksinkertaistuu tai kun tilavuus puolittuu.
 - Kun kaasun määrä pysyy samana, $p_1V_1/T_1 = p_2V_2/T_2$, ja siitä saadaan erilliset kaasulait.
 - Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua, kaasun laadusta riippumatta.
 - Ideaalikaasumalli toimii hyvin tavallisissa oloissa ja pettää suurissa paineissa ja matalissa lämpötiloissa.
