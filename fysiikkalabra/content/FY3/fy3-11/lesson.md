@@ -7,6 +7,24 @@ Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mänt
 
 Lämpövoimakone muuttaa lämpöä jatkuvasti työksi. Höyryvoimalaitoksessa vesi kiehuu kattilassa, kuuma höyry laajenee turbiinissa ja pyörittää generaattoria, ja turbiinista tuleva höyry tiivistyy jälleen vedeksi lauhduttimessa, jota merivesi jäähdyttää. Työaine kiertää samaa rataa yhä uudelleen, joten kierroksen lopussa sen sisäenergia on sama kuin alussa. Energia säilyy: koneeseen kuumasta lähteestä tullut lämpö Q₁ on yhtä suuri kuin koneen tekemä työ W ja kylmempään ympäristöön luovutettu lämpö Q₂ yhteensä. Kokemus osoittaa, ettei lämpövoimakone voi muuttaa kaikkea saamaansa lämpöä työksi, vaan osa on aina luovutettava kylmempään ympäristöön. Tämä on termodynamiikan toisen pääsäännön sisältö. Mitä suurempi on kuuman lähteen ja kylmän ympäristön lämpötilaero, sitä suuremman osan lämmöstä kone voi muuttaa työksi.
 
+<svg viewBox="0 0 600 300" role="img" aria-label="Lämpövoimakoneen energiavirrat: kuumasta lähteestä tulee lämpö Q1 koneeseen, kone tekee työn W ja luovuttaa lämmön Q2 kylmempään ympäristöön. Nuolten leveys kuvaa energiaa: Q1 on yhtä leveä kuin W ja Q2 yhteensä." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <rect x="170" y="8" width="260" height="52" rx="10" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="2"/>
+  <text x="300" y="42" text-anchor="middle" fill="currentColor">kuuma lähde T₁</text>
+  <rect x="170" y="240" width="260" height="52" rx="10" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="300" y="274" text-anchor="middle" fill="currentColor">kylmä ympäristö T₂</text>
+  <circle cx="300" cy="150" r="46" fill="none" stroke="currentColor" stroke-width="3"/>
+  <text x="300" y="158" text-anchor="middle" fill="currentColor">kone</text>
+  <rect x="285" y="60" width="30" height="36" fill="currentColor" fill-opacity="0.55"/>
+  <polygon points="276,96 324,96 300,106" fill="currentColor" fill-opacity="0.55"/>
+  <text x="330" y="90" fill="currentColor">Q₁</text>
+  <rect x="291" y="196" width="18" height="34" fill="currentColor" fill-opacity="0.35"/>
+  <polygon points="282,230 318,230 300,240" fill="currentColor" fill-opacity="0.35"/>
+  <text x="330" y="224" fill="currentColor">Q₂</text>
+  <rect x="346" y="144" width="140" height="12" fill="currentColor" fill-opacity="0.8"/>
+  <polygon points="486,136 486,164 506,150" fill="currentColor" fill-opacity="0.8"/>
+  <text x="514" y="158" fill="currentColor">W</text>
+</svg>
+
 Hyötysuhde kertoo, kuinka suuri osa koneeseen tuodusta energiasta saadaan hyödyksi. Suomalainen lauhdevoimalaitos, joka tuottaa vain sähköä, saa polttoaineen energiasta sähköksi noin 40 %, ja ydinvoimalaitos noin 35 %. Loput siirtyvät lauhduttimen kautta mereen. Automoottorin hyötysuhde on noin 30 %, ja loput energiasta poistuu pakokaasujen ja jäähdyttimen mukana. Sähkön ja lämmön yhteistuotannossa lauhduttimesta tuleva lämpö johdetaan kaukolämpöverkkoon kaupungin taloihin, joten polttoaineen energiasta saadaan hyödyksi sähkönä ja lämpönä yhteensä 85–90 %. Tämä vastaa alun kysymykseen: sähköksi saadaan alle puolet, mutta loput eivät katoa, vaan siirtyvät lämpönä ympäristöön tai kaukolämpöverkkoon.
 
 Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone: ne käyttävät työtä, yleensä sähköä, ja siirtävät sen avulla lämpöä kylmästä paikasta lämpimään. Jääkaappi siirtää lämpöä kaapin sisältä huoneeseen, ja ilmalämpöpumppu ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja käytetyn sähkön summa, joten pumppu voi lämmittää taloa esimerkiksi kolminkertaisella teholla käyttämäänsä sähkötehoon verrattuna. Lukua sanotaan lämpökertoimeksi. Pumppu ei luo energiaa, vaan siirtää sitä.
@@ -45,13 +63,47 @@ missä Q₁ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), Q₂ kylmem
 ## Esimerkki
 Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla 500 MW. Kun laitos tuottaa pelkkää sähköä, sähköteho on 190 MW. Talvella sama laitos toimii yhteistuotantovoimalaitoksena: se tuottaa 150 MW sähköä ja 290 MW kaukolämpöä. Mikä on hyötysuhde kummassakin tapauksessa, ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?
 
-Pelkkää sähköä tuotettaessa hyötysuhde on
-```latex
-\eta = \frac{190\,\text{MW}}{500\,\text{MW}} = 0{,}38 = 38\,\%
-```
-ja hukkalämmön teho on $500\,\text{MW} - 190\,\text{MW} = 310\,\text{MW}$, joka siirtyy lauhduttimen kautta mereen.
+<!-- vaihe -->
+**Tunnetut ja kysytty.** Polttoaineteho $P_1 = 500\,\text{MW}$. Pelkkää sähköä tuotettaessa sähköteho $P_\text{s} = 190\,\text{MW}$; yhteistuotannossa $P_\text{s} = 150\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 290\,\text{MW}$. Kysytään hyötysuhteita ja hukkalämmön tehoa $P_2$. Hyötysuhde lasketaan tehoista samoin kuin energioista.
 
-Yhteistuotannossa hyödyksi saadaan sähköä ja kaukolämpöä yhteensä $150\,\text{MW} + 290\,\text{MW} = 440\,\text{MW}$, joten kokonaishyötysuhde on $440/500 = 0{,}88 = 88\,\%$. Hukkalämpöä on enää 60 MW. Sähköä saadaan vähemmän, koska höyry lauhdutetaan korkeammassa lämpötilassa, jotta sen lämpö kelpaa kaukolämmöksi. Polttoaineen energia käytetään kuitenkin paljon paremmin hyödyksi.
+<!-- vaihe -->
+**Kaavat ratkaistuina.** Hyötysuhde on hyödyksi saatu teho jaettuna syötetyllä teholla, ja energia säilyy, joten hukkalämpö on se osa, joka ei tule hyödyksi:
+```latex
+\begin{aligned}
+\eta &= \frac{P_\text{hyöty}}{P_1} \\
+P_2 &= P_1 - P_\text{hyöty}
+\end{aligned}
+```
+
+<!-- vaihe -->
+**Pelkkä sähkö.** Nyt hyödyksi saadaan vain sähkö, $P_\text{hyöty} = P_\text{s}$:
+```latex
+\begin{aligned}
+\eta &= \frac{P_\text{s}}{P_1} \\
+&= \frac{190\,\text{MW}}{500\,\text{MW}} \\
+&= 0{,}38 = 38\,\% \\
+P_2 &= P_1 - P_\text{s} \\
+&= 500\,\text{MW} - 190\,\text{MW} \\
+&= 310\,\text{MW}
+\end{aligned}
+```
+Hukkalämpö siirtyy lauhduttimen kautta mereen.
+
+<!-- vaihe -->
+**Yhteistuotanto.** Hyödyksi saadaan sähkö ja kaukolämpö, $P_\text{hyöty} = P_\text{s} + P_\text{k}$:
+```latex
+\begin{aligned}
+\eta &= \frac{P_\text{s} + P_\text{k}}{P_1} \\
+&= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}} \\
+&= 0{,}88 = 88\,\% \\
+P_2 &= P_1 - (P_\text{s} + P_\text{k}) \\
+&= 500\,\text{MW} - 440\,\text{MW} \\
+&= 60\,\text{MW}
+\end{aligned}
+```
+
+<!-- vaihe -->
+**Järkevyys.** Sähköä saadaan yhteistuotannossa vähemmän, koska höyry lauhdutetaan korkeammassa lämpötilassa, jotta sen lämpö kelpaa kaukolämmöksi. Polttoaineen energia käytetään silti paljon paremmin hyödyksi, ja kumpikin hyötysuhde jää alle 100 %:n, kuten pitää.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että parempi tekniikka voisi tehdä lämpövoimakoneesta lähes täydellisen, niin että kaikki lämpö muuttuisi työksi. Kitkan ja muiden häviöiden vähentäminen auttaa, mutta osa lämmöstä on aina luovutettava kylmempään ympäristöön, joten hyötysuhde jää selvästi alle 100 %:n. Toinen virhe on pitää lämpöpumppua ikiliikkujana, koska se luovuttaa enemmän lämpöä kuin käyttää sähköä. Ylimääräinen lämpö tulee ulkoilmasta, eikä energiaa synny tyhjästä. Kolmas virhe on ajatella, että paineistettu kaasu tekee työtä jo sillä, että sen paine on suuri. Työtä tehdään vain, kun tilavuus muuttuu ja mäntä liikkuu.

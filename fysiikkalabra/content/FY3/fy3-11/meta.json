@@ -17,7 +17,8 @@
     "jäähdytyskone",
     "lämpöpumppu",
     "yhteistuotanto",
-    "lämpökerroin"
+    "lämpökerroin",
+    "lämpöarvo"
   ],
   "sim": true,
   "image": false,

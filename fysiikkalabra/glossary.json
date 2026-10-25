@@ -347,6 +347,17 @@
     "locked": false
   },
   {
+    "term": "lämpöarvo",
+    "definition": "Polttoaineen palaessa vapautuva energia massayksikköä kohti, yksikkö esimerkiksi MJ/kg. Esimerkiksi bensiinin lämpöarvo on noin 43 MJ/kg.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpökapasiteetti",
     "definition": "Lämpömäärä, joka tarvitaan koko kappaleen lämmittämiseen yhdellä kelvinillä: C = cm, yksikkö J/K.",
     "lessons": [

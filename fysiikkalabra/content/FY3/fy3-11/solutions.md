@@ -73,23 +73,23 @@
 ## fy3-11-L3-01
 **Annettu:** P_pa = 320 MW, P_s = 96 MW, P_kl = 180 MW, η_l = 40 % = 0,40, η_k = 90 % = 0,90
 **Kysytty:** erillistuotannon lisätarve ΔP
-**Kaava:** Erillistuotannon polttoaineteho on P_s / η_l + P_kl / η_k, joten ΔP = P_s / η_l + P_kl / η_k − P_pa
+**Kaava:** Erillistuotanto tarvitsee P_s / η_l + P_kl / η_k, joten ΔP = P_s / η_l + P_kl / η_k − P_pa
 **Sijoitus:** ΔP = 96 MW / 0,40 + 180 MW / 0,90 − 320 MW = 240 MW + 200 MW − 320 MW = 120 MW
 **Vastaus:** 120 MW
-**Järkevyys:** Yhteistuotannon kokonaishyötysuhde on (96 + 180)/320 ≈ 86 %, erillistuotannon vain 276/440 ≈ 63 %. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava mereen.
+**Järkevyys:** Kokonaishyötysuhde on yhteistuotannossa (96 + 180)/320 ≈ 86 %, erillistuotannossa 276/440 ≈ 63 %. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava mereen.
 
 ## fy3-11-L3-02
 **Annettu:** Q = 16,0 MWh, lämpökerroin ε = 2,50
 **Kysytty:** säästetty sähkö ΔE ja ulkoilmasta otettu lämpö Q_ulko
-**Kaava:** ε = Q / W, joten pumpun sähkö on W = Q / ε. Sähkölämmitys käyttää sähköä Q, joten ΔE = Q − Q / ε. Energia säilyy: Q = Q_ulko + W, joten Q_ulko = Q − Q / ε.
+**Kaava:** ε = Q / W, joten W = Q / ε. Sähkölämmitys käyttää sähköä Q, joten ΔE = Q − Q / ε. Energia säilyy: Q = Q_ulko + W, joten Q_ulko = Q − Q / ε.
 **Sijoitus:** W = 16,0 MWh / 2,50 = 6,40 MWh, joten ΔE = Q_ulko = 16,0 MWh − 6,40 MWh = 9,60 MWh
 **Vastaus:** 9,6 MWh sekä säästöä että ulkoilmasta otettua lämpöä
-**Järkevyys:** Säästetty sähkö on täsmälleen ulkoilmasta tuotu lämpö. Energiaa ei synny tyhjästä: taloon tulee 9,60 MWh + 6,40 MWh = 16,0 MWh. Pumppu siirtää lämpöä kylmästä lämpimään sähkön tekemän työn avulla, eikä se toimi ilman sähköä.
+**Järkevyys:** Säästetty sähkö on täsmälleen ulkoilmasta tuotu lämpö. Energiaa ei synny tyhjästä: taloon tulee 9,60 MWh + 6,40 MWh = 16,0 MWh. Pumppu vain siirtää lämpöä sähkön avulla kylmästä lämpimään.
 
 ## fy3-11-L3-03
 **Annettu:** V = 6,0 l, s = 100 km, v = 80 km/h, ρ = 0,75 kg/l, H = 43 MJ/kg = 43 · 10⁶ J/kg, η = 28 % = 0,28
-**Kysytty:** keskimääräinen mekaaninen teho P
-**Kaava:** Q₁ = ρVH ja t = s / v, joten P = ηQ₁ / t = ηρVH / t
-**Sijoitus:** t = 100 km / (80 km/h) = 1,25 h = 4500 s, joten P = 0,28 · 0,75 kg/l · 6,0 l · 43 · 10⁶ J/kg / 4500 s = 12 040 W ≈ 12 kW
+**Kysytty:** mekaaninen teho P
+**Kaava:** Q₁ = ρVH ja t = s / v, joten P = ηρVH / t
+**Sijoitus:** t = 100 km / (80 km/h) = 1,25 h = 4500 s ja P = 0,28 · 0,75 kg/l · 6,0 l · 43 · 10⁶ J/kg / 4500 s = 12 040 W ≈ 12 kW
 **Vastaus:** 12 kW
-**Järkevyys:** Polttoaineteho on 43 kW, joten noin 31 kW siirtyy pakokaasujen ja jäähdyttimen kautta lämpönä ympäristöön. Työ 100 km:llä on 0,28 · 54 kWh ≈ 15 kWh. Sähköauto tarvitsee siihen akusta 15 kWh / 0,90 ≈ 17 kWh, alle kolmanneksen bensiiniauton 54 kWh:sta.
+**Järkevyys:** Polttoaineteho on 43 kW, joten 31 kW poistuu lämpönä pakokaasujen ja jäähdyttimen kautta. Bensiiniä kuluu 54 kWh, ja työ on siitä 28 % eli 15 kWh. Sähköauto tarvitsee työhön akusta vain noin 17 kWh.
