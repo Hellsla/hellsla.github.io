@@ -131,7 +131,7 @@ expect("more than 40 changed lines: full", "full" in out and "limit 40" in out, 
 # 6. packets: what each role receives
 t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
 code, out = run(t, "review_packet.py", LESSON, "--role", "science"); ps = (t / "content/FY3" / LESSON / "review/packet-science.md").read_text()
-expect("science packet: full, with answers.py and sim.js, without curriculum.json", code == 0 and "### exercises.json" in ps and "### sim.js" in ps and '"lessons": [' not in ps and "Role: **science**" in ps, out)   # the slot only, not the module list
+expect("science packet: full, with answers.py and sim.js, without curriculum.json", code == 0 and "### exercises.json" in ps and "### sim.js" in ps and '"FY1": {' not in ps and "Role: **science**" in ps, out)   # the slot only, not curriculum.json
 code, out = run(t, "review_packet.py", LESSON, "--role", "pedagogy"); pp = (t / "content/FY3" / LESSON / "review/packet-pedagogy.md").read_text()
 expect("pedagogy packet: figures collapsed, no answers.py, no sim.js", "figure body omitted" in pp and "### answers.py" not in pp and "### sim.js" not in pp and "Screenshots" in pp, out)
 expect("packets carry the slot, the glossary terms and the conventions", "Curriculum slot" in ps and "Glossary terms" in ps and "Physics and maths conventions" in ps)
