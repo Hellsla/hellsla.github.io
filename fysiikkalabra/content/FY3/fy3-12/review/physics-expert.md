@@ -2,7 +2,7 @@ VERDICT: FAIL
 CONTENT-HASH: d23d088adff6a242
 
 ## Blocking
-1. exercises.json:72, solutions.md:70–71 — L2-04 blames Arctic sea-ice melt for a 1-point albedo drop (+3,4 W/m²) and concludes it is over three times today's imbalance. That is unrealistic: sea-ice loss since 1979 adds about 0,2 W/m² globally, and an ice-free Arctic would add under 1 W/m². The arithmetic is right. — Keep the numbers and the answer 3,4, but make the cause hypothetical: "Oletetaan, että maapallon heijastama osuus pienenisi 30 %:sta 29 %:iin (esimerkiksi lumi- ja jääpeitteen ja pilvisyyden muuttuessa)". In the solution add: "Arktisen merijään väheneminen on tähän mennessä lisännyt imeytymistä vain noin 0,2 W/m²."
+1. exercises.json:72, solutions.md:70–71 — L2-04 blames Arctic sea-ice melt for a 1-point albedo drop (+3,4 W/m²) and concludes it is over three times today's imbalance. That is unrealistic: sea-ice loss since 1979 adds about 0,2 W/m² globally, and an ice-free Arctic would add under 1 W/m². The arithmetic is fine. — Keep the numbers and the answer 3,4, but make the cause hypothetical: "Oletetaan, että maapallon heijastama osuus pienenisi 30 %:sta 29 %:iin (esimerkiksi lumi- ja jääpeitteen ja pilvisyyden muuttuessa)". In the solution add: "Arktisen merijään väheneminen on tähän mennessä lisännyt imeytymistä vain noin 0,2 W/m²."
 
 ## Polish
 1. lesson.md:31 — "Ilman ilmakehää … −18 °C" clashes with the 30 % reflected by clouds. — Write "Jos ilmakehä ei imisi lämpösäteilyä".
@@ -19,10 +19,9 @@ CONTENT-HASH: d23d088adff6a242
 - answers.py: every line uses the right formula, conversion and sign.
 - L3-01: "keskimäärin 1,4 W" makes E = Pt valid. That rate is realistic (90 → 70 °C), and the vacuum and mirror reasoning is correct.
 - L3-02: 2,6·10²⁰ kg = 3,6·10¹⁴ m² · 700 m · 1025 kg/m³, and 4,0·10³ J/(kg·K) and 90 % are right. Really about ⅓ of the heat goes below 700 m, but the task states the assumption.
-- L3-03: the heat-pump reasoning is correct.
-- Exit ticket: 300 W is correct.
+- L3-03 and the exit ticket (300 W) are correct.
 
-Python (hand checks):
+Python:
 ```
 esim 734.4 720.0 1454.4 34.906
 L2-04 3.400  L1-05 238.0
