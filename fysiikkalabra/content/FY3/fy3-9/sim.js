@@ -57,6 +57,9 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
+    p.createP('Paine lasketaan yhtälöstä pV/T = vakio. Hiukkasten nopeus on verrannollinen √T:hen, kun T on kelvineinä. ' +
+              'Kuvaajan ohut viiva on teoria, katkoviiva jatkaa suoraa origoon, pisteet ovat tallennetut mittaukset ja punainen piste on nykyinen tila.')
+      .parent('sim-root').class('note');
     table = p.createDiv('').parent('sim-root').class('sim-table');
     const btns = p.createDiv('').parent(controls).style('display', 'flex').style('flex-wrap', 'wrap').style('gap', '.5rem');
     button(btns, 'Tallenna mittaus', () => {
@@ -75,9 +78,6 @@ new p5((p) => {
     lChk = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.5rem').style('min-height', '40px');
     chk = p.createElement('input').attribute('type', 'checkbox').parent(lChk).style('width', '22px').style('height', '22px');
     p.createSpan('Piirrä p 1/V:n funktiona').parent(lChk);
-    p.createP('Paine lasketaan yhtälöstä pV/T = vakio. Hiukkasten nopeus on verrannollinen √T:hen, kun T on kelvineinä. ' +
-              'Kuvaajan ohut viiva on teoria, katkoviiva jatkaa suoraa origoon, pisteet ovat tallennetut mittaukset ja punainen piste on nykyinen tila.')
-      .parent('sim-root').class('note');
     reset();
     p.textFont('Arial');
   };
@@ -92,6 +92,7 @@ new p5((p) => {
     const speed = 120 * Math.sqrt(T / T0);                                // px/s, ∝ √T
     const dt = Math.min(p.deltaTime, 100) / 1000;
     const yP = CYL.bot - V * CYL.px;                                      // piston bottom
+    const needle = Math.min(pk, GA.max);                                  // gauge needle value (kPa), full scale 300 kPa
     for (const q of parts) {                                              // straight lines, elastic bounces
       q.x += q.dx * speed * dt; q.y += q.dy * speed * dt;
       if (q.x < CYL.l + 4) { q.x = CYL.l + 4; q.dx = Math.abs(q.dx); }
@@ -122,7 +123,7 @@ new p5((p) => {
     window.simState = { mode, V: V * 1e-6, p: pk * 1000, T, constant: c * (iso ? 1e-3 : mode === 'isobaarinen' ? 1e-6 : 1e3),
                         rows: rows.map((r) => ({ ...r })), plotInv: inv, speed, nParticles: parts.length,
                         inside: parts.every((q) => q.x >= CYL.l && q.x <= CYL.r && q.y >= yP && q.y <= CYL.bot) ? 1 : 0,
-                        xMax: ax.x[0], yMax: ax.y[0] };
+                        xMax: ax.x[0], yMax: ax.y[0], pistonY: yP, needleKPa: needle };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k);
@@ -145,7 +146,7 @@ new p5((p) => {
       const a = p.radians(135 + 270 * v / GA.max);
       p.line(GA.x + (GA.r - 8) * Math.cos(a), GA.y + (GA.r - 8) * Math.sin(a), GA.x + (GA.r - 2) * Math.cos(a), GA.y + (GA.r - 2) * Math.sin(a));
     }
-    const an = p.radians(135 + 270 * Math.min(pk, GA.max) / GA.max);
+    const an = p.radians(135 + 270 * needle / GA.max);
     p.stroke(200, 50, 40); p.strokeWeight(3); p.line(GA.x, GA.y, GA.x + (GA.r - 9) * Math.cos(an), GA.y + (GA.r - 9) * Math.sin(an));
     p.noStroke(); p.fill(40); p.circle(GA.x, GA.y, 7);
     p.textAlign(p.CENTER); p.textSize(ts(13)); p.text(`${fi(pk, 1)} kPa`, GA.x, GA.y - GA.r - 8);

@@ -24,6 +24,17 @@
     "locked": false
   },
   {
+    "term": "U-arvo",
+    "definition": "Rakennusosan lämmönläpäisykerroin, joka kertoo, kuinka monta wattia lämpötehoa siirtyy neliömetrin läpi yhden kelvinin lämpötilaerolla. Yksikkö on W/(m²·K), ja pieni U-arvo tarkoittaa hyvää eristystä.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "johtuminen"
+    ],
+    "locked": false
+  },
+  {
     "term": "absoluuttinen nollapiste",
     "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
     "lessons": [
@@ -57,6 +68,17 @@
       "työ",
       "teho",
       "joule"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energiatasapaino",
+    "definition": "Tila, jossa kappaleeseen tuleva ja siitä lähtevä teho ovat yhtä suuret, joten sen lämpötila pysyy vakiona. Maapallon lämpötila määräytyy sen energiatasapainosta.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "kasvihuoneilmiö"
     ],
     "locked": false
   },
@@ -181,6 +203,19 @@
     "locked": false
   },
   {
+    "term": "johtuminen",
+    "definition": "Lämmön siirtyminen aineen läpi, kun nopeammin värähtelevät hiukkaset luovuttavat energiaa hitaammille naapureilleen. Metallit johtavat lämpöä hyvin, ilma ja villa huonosti.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "konvektio",
+      "lämpösäteily",
+      "U-arvo"
+    ],
+    "locked": false
+  },
+  {
     "term": "joule",
     "definition": "Energian ja työn yksikkö, 1 J = 1 N·m. Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla.",
     "lessons": [
@@ -229,6 +264,18 @@
     "locked": false
   },
   {
+    "term": "kasvihuoneilmiö",
+    "definition": "Ilmiö, jossa ilmakehän kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas. Se nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "energiatasapaino",
+      "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
     "term": "kelvin",
     "definition": "Lämpötilan SI-yksikkö K. Kelvinlämpötila on celsiuslämpötila plus 273,15, ja lämpötilaero on sama kelvineinä ja celsiusasteina.",
     "lessons": [
@@ -248,6 +295,18 @@
     ],
     "see_also": [
       "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "konvektio",
+    "definition": "Lämmön siirtyminen virtaavan nesteen tai kaasun mukana, esimerkiksi kun lämmin ilma nousee patterin yläpuolella.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "johtuminen",
+      "lämpösäteily"
     ],
     "locked": false
   },
@@ -345,6 +404,19 @@
     "see_also": [
       "jäähdytyskone",
       "lämpökerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpösäteily",
+    "definition": "Kappaleen lähettämä sähkömagneettinen säteily, joka siirtää energiaa myös tyhjiön läpi. Kaikki kappaleet säteilevät, ja kuumempi kappale säteilee enemmän ja lyhytaaltoisemmin.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "johtuminen",
+      "konvektio",
+      "kasvihuoneilmiö"
     ],
     "locked": false
   },

@@ -18,3 +18,5 @@ Report format, under 400 words, findings only:
 - `## Polish`: optional improvements the fixer may apply, same format, at most five.
 - `## Checked`: at most ten one-line items you verified, no narrative.
 Run the hash command before you start and again before you finish; if it changed, the lesson was edited during your review, so redo it. Run `python scripts/lint_lesson.py <id>` first and do not repeat what it already reports. Never edit lesson files.
+
+Human rule (CLAUDE.md item 2): check that the worked example and solutions solve for the unknown symbolically before substituting, and that every substituted value carries its unit. Check that new figures are physically correct (directions of flows, slopes, which side is hot).

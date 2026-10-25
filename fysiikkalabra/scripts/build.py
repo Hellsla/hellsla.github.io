@@ -6,7 +6,8 @@ With --all every lesson is built regardless of status (CI uses this to test draf
 The plain build writes to site/ (committed, served by GitHub Pages); a preview or --all build
 writes to preview/ (git-ignored), so a draft can never end up in the published folder.
 
-Page anatomy: the simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
+Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` lines (staged_example).
+The simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
 or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side answer check and, depending on
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
 """
@@ -54,6 +55,26 @@ def nbsp_units(text):
     text = re.sub(rf"(?<=\d) (?={UNIT}(?![\wäöå²³/]))", "\u00a0", text)
     text = re.sub(r"(?<=\S) = (?=[\d−\-+(])", "\u00a0=\u00a0", text)   # "s = 0,15 m" never breaks at the equals sign
     return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], text)
+
+
+STEP = "<!-- vaihe -->"
+
+
+def staged_example(lesson_html):
+    """Worked example in stages. In lesson.md the solution of `## Esimerkki` is split by lines `<!-- vaihe -->`:
+    the part before the first marker is the problem, each later part one stage of the solution. The page shows
+    the problem and stage 1, and a button reveals the next stage (lesson.js). Without JavaScript, and in print,
+    every stage is visible."""
+    m = re.search(r"(<h2[^>]*>Esimerkki</h2>)(.*?)(?=<h2|<section|\Z)", lesson_html, flags=re.S)
+    if not m or STEP not in m.group(2): return lesson_html
+    parts = [p.strip() for p in m.group(2).split(STEP)]
+    n = len(parts) - 1
+    steps = "".join(f'<div class="step" data-step="{i}"><p class="step-label">Vaihe {i}/{n}</p>{p}</div>'
+                    for i, p in enumerate(parts[1:], 1))
+    body = (f'{parts[0]}<div class="worked" data-steps="{n}">{steps}'
+            f'<p class="step-controls"><button type="button" class="next-step">Näytä seuraava vaihe</button> '
+            f'<button type="button" class="all-steps">Näytä kaikki</button></p></div>')
+    return lesson_html[:m.start(2)] + body + lesson_html[m.end(2):]
 
 
 def fi(x):
@@ -128,7 +149,7 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
         f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>Vastaus</summary><p>{nbsp_units(q['a'])}</p></details></li>"
         for q in exit_q) + "</ol>"
     lesson_md = (folder / "lesson.md").read_text()
-    lesson_html = nbsp_units(render_md(lesson_md))
+    lesson_html = staged_example(nbsp_units(render_md(lesson_md)))
     sim = ""
     if (folder / "sim.js").exists():
         shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js")

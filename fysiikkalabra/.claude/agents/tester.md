@@ -14,3 +14,5 @@ Report format, under 400 words, findings only:
 - `## Polish`: optional improvements the fixer may apply, same format, at most five.
 - `## Checked`: at most ten one-line items you verified (include the raw `test_sims.py` output line), no narrative.
 Run the hash command before you start and again before you finish; if it changed, the lesson was edited during your review, so redo it. Run `python scripts/lint_lesson.py <id>` first and do not repeat what it already reports. Never edit lesson files.
+
+Human rule (CLAUDE.md item 3): a simulation gains visual detail but not sliders; report any control added beyond the spec, and check that new visual elements (colours, levels, needles) agree with simState.

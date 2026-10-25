@@ -145,3 +145,15 @@ details.solution .steps p{margin:0}
   h2{break-after:avoid}
 }
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
+
+/* worked example in stages (build.py staged_example, lesson.js) */
+.worked{margin:.8rem 0 1rem}
+.worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem .9rem;margin:.6rem 0}
+.worked .step:focus{outline:none}
+.worked .step-label{margin:0 0 .2rem;font:600 .8rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--accent-deep)}
+.worked .step-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0}
+.worked .step-controls button{min-height:40px;padding:.4rem 1rem;border-radius:999px;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep);font:600 .9rem var(--sans);cursor:pointer}
+.worked .step-controls button.next-step{background:var(--accent-deep);color:var(--surface)}
+.worked .step-controls button[hidden]{display:none}
+.worked:not(.js) .step-controls{display:none}
+@media print{.worked .step-controls{display:none}}

@@ -26,6 +26,13 @@ Content is data: one folder per lesson under `content/<course>/<lesson-id>/`.
 - Every exercise has a numeric or short-text `answer`, a `unit`, and a `tolerance`. Write the data with the significant figures the answer should have (`4,0 kg`), and choose the tolerance so a student rounding to those figures is inside it.
 - `meta.solutions` is `first` (default: the first solution of each level is published), `all` or `none`.
 
+## Human decisions on lesson form (2026-10-25, apply to every lesson, new and old)
+1. **Visualise, do not only write.** Theory is not a wall of paragraphs. `## Ydinajatus` has at least one inline SVG figure and `## Kaava` at least one (diagram, graph, energy-flow or particle picture), placed next to the paragraph it explains; no paragraph runs over about 120 words. A lesson has at least two figures.
+2. **Solve symbolically first, then substitute.** In every worked example and every solution, first solve the equation for the unknown with symbols only, then substitute the values *with their units*, then compute. Never put numbers into an equation and solve afterwards.
+3. **Simulations are visually rich, not slider-rich.** Do not add sliders for show. Spend the effort on the picture: realistic objects, shading or gradients, motion, colour that carries meaning (temperature, pressure), clear labels and a legend. Keep the existing controls.
+4. **Worked examples are detailed and staged.** The solution under `## Esimerkki` is written in display LaTeX in 3–6 stages separated by lines `<!-- vaihe -->`; the page reveals them one at a time ("Näytä seuraava vaihe"). Each stage has a bold lead-in (e.g. **Kaava ratkaistuna.**, **Sijoitus.**, **Järkevyys.**) and one step of the reasoning.
+See NOTES.md section 4 for how to write each of these. The lint checks what it can.
+
 ## Exercise levels
 - Level 1: direct use of one formula, values given. 5 problems.
 - Level 2: two steps or one unit conversion or one rearrangement. 4 problems.

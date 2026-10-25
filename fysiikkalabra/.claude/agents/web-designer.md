@@ -14,3 +14,5 @@ Report format, under 400 words, findings only:
 - `## Polish`: optional improvements the fixer may apply, same format, at most five.
 - `## Checked`: at most ten one-line items you verified, no narrative.
 Run the hash command before you start and again before you finish; if it changed, the lesson was edited during your review, so redo it. Run `python scripts/lint_lesson.py <id>` first and do not repeat what it already reports. Never edit lesson files.
+
+Human rules (CLAUDE.md items 1, 3 and 4): check every inline figure at 360 px (text at least about 12 px on screen, no overlaps), the staged worked example (stage 1 visible, the buttons 40 px tall, each stage's displays fit 360 px, all stages visible in print), and that the simulation is visually rich (recognisable objects, meaningful colour, legend) without extra sliders. A simulation that is only boxes and lines is a Blocking finding.

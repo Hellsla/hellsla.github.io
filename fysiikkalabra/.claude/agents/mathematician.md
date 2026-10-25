@@ -14,3 +14,5 @@ Report format, under 400 words, findings only:
 - `## Polish`: optional improvements the fixer may apply, same format, at most five.
 - `## Checked`: at most ten one-line items you verified, no narrative.
 Run the hash command before you start and again before you finish; if it changed, the lesson was edited during your review, so redo it. Run `python scripts/lint_lesson.py <id>` first and do not repeat what it already reports. Never edit lesson files.
+
+Human rule (CLAUDE.md item 2): in the worked example and every solution the unknown is solved symbolically before any number is substituted, and substitutions carry units. A worked example or solution that substitutes first is a Blocking finding.
