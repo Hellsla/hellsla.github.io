@@ -28,7 +28,7 @@
 **Kaava:** Q = r m (tiivistyessä vapautuu sama lämpömäärä, joka höyrystymiseen tarvitaan)
 **Sijoitus:** Q = 2260 kJ/kg · 0,030 kg = 67,8 kJ ≈ 68 kJ
 **Vastaus:** 68 kJ
-**Järkevyys:** 68 kJ riittää lämmittämään noin 0,3 kg maitoa yli 50 K, joten pieni höyrymäärä lämmittää kannullisen maitoa. Samasta syystä höyry polttaa ihoa pahemmin kuin yhtä kuuma vesi.
+**Järkevyys:** 68 kJ riittää lämmittämään noin 0,3 kg maitoa yli 50 K:lla, joten pieni höyrymäärä lämmittää kannullisen maitoa. Samasta syystä höyry polttaa ihoa pahemmin kuin yhtä kuuma vesi.
 
 ## fy3-7-L1-05
 **Annettu:** lämpenemiskäyrän vaakasuora osa 0 °C:ssa alkaa kohdasta 19 kJ ja päättyy kohtaan 186 kJ
@@ -36,7 +36,7 @@
 **Kaava:** vaakasuoralla osalla jää sulaa vakiolämpötilassa, Q = s m; käyrästä Q luetaan energia-akselin muutoksena
 **Sijoitus:** Q = 186 kJ − 19 kJ = 167 kJ
 **Vastaus:** 167 kJ
-**Järkevyys:** Jää sulaa, joten lämpötila pysyy 0 °C:ssa, vaikka energiaa siirtyy. Jään massa on m = Q/s = 167 kJ / 334 kJ/kg = 0,50 kg, ja tällaisen jään lämmittäminen 18 K vaatii 2100 J/(kg·K) · 0,50 kg · 18 K ≈ 19 kJ, kuten käyrän alussa.
+**Järkevyys:** Jää sulaa, joten lämpötila pysyy 0 °C:ssa, vaikka energiaa siirtyy. Jään massa on m = Q/s = 167 kJ / 334 kJ/kg = 0,50 kg, ja tällaisen jään lämmittäminen 18 K:lla vaatii 2100 J/(kg·K) · 0,50 kg · 18 K ≈ 19 kJ, kuten käyrän alussa.
 
 ## fy3-7-L2-01
 **Annettu:** P = 2,0 kW = 2000 W, höyrystyvä vesi m = 0,50 kg, r = 2260 kJ/kg = 2 260 000 J/kg
@@ -76,7 +76,7 @@
 **Kaava:** mehun luovuttama lämpö = jään sulaminen + sulamisveden lämpeneminen: c m₁ (25 °C − T) = s m₂ + c m₂ (T − 0 °C)
 **Sijoitus:** T = (c m₁ · 25 °C − s m₂) / (c (m₁ + m₂)) = (36 662,5 J − 20 040 J) / (4190 J/(kg·K) · 0,41 kg) ≈ 9,7 °C
 **Vastaus:** 9,7 °C
-**Järkevyys:** Jää ottaa sulaessaan 20 kJ ennen kuin alkaa lämmetä. 0-asteinen vesi ottaisi vain lämpenemisen osuuden, ja juoma jäisi noin 21 °C:seen.
+**Järkevyys:** Jää ottaa sulaessaan 20 kJ ennen kuin sulamisvesi alkaa lämmetä. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
 
 ## fy3-7-L3-02
 **Annettu:** vesi m = 0,25 kg, 20 °C → 100 °C, c = 4190 J/(kg·K), r = 2 260 000 J/kg; kivet m_k = 30 kg, c_k = 800 J/(kg·K)

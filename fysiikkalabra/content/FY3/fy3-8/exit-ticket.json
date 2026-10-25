@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kuinka paljon 25 m pitkä kupariputki pitenee, kun se lämpenee 10 °C:sta 60 °C:seen (α = 17 · 10⁻⁶ 1/K)?",
+    "a": "ΔL = αL₀ΔT = 17 · 10⁻⁶ 1/K · 25 m · 50 K ≈ 0,021 m eli noin 21 mm."
+  },
+  {
+    "q": "Teräslevyssä on pyöreä reikä. Kun levyä lämmitetään, suureneeko vai pieneneekö reikä?",
+    "a": "Reikä suurenee. Kaikki levyn mitat kasvavat samassa suhteessa kuin valokuvaa suurennettaessa, myös reiän halkaisija."
+  },
+  {
+    "q": "Miksi järven pohjalla on talvella noin 4-asteista vettä, vaikka pinta on jäässä?",
+    "a": "Veden tiheys on suurin noin 4 °C:ssa. Neljäasteinen vesi painuu pohjalle, ja kylmempi vesi ja jää jäävät sen päälle."
+  }
+]

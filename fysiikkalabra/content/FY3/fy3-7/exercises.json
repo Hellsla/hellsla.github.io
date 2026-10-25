@@ -45,7 +45,7 @@
     {
       "id": "fy3-7-L2-01",
       "level": 2,
-      "text": "Mökin sähköhellan keittolevyn teho on 2,0 kW. Levyllä on kattila, jossa vesi kiehuu, ja kattila unohtuu liedelle. Kuinka kauan kestää, että kattilasta on kiehunut pois 0,50 kg vettä? Oleta, että kaikki levyn energia siirtyy veteen. Anna vastaus minuutteina.",
+      "text": "Mökin sähköhellan keittolevyn teho on 2,0 kW. Levyllä on kattila, jossa vesi kiehuu, ja kattila unohtuu liedelle. Kuinka kauan kestää, ennen kuin kattilasta on kiehunut pois 0,50 kg vettä? Oleta, että kaikki levyn energia siirtyy veteen. Anna vastaus minuutteina.",
       "answer": 9.4,
       "unit": "min",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy3-7-L2-02",
       "level": 2,
-      "text": "Pakastimesta otetaan 750 g jäätä, jonka lämpötila on −18 °C. Kuinka suuri lämpömäärä tarvitaan, jotta jää lämpenee 0 °C:seen ja sulaa kokonaan 0-asteiseksi vedeksi? Jään ominaislämpökapasiteetti on 2100 J/(kg·K). Anna vastaus kilojouleina.",
+      "text": "Pakastimesta otetaan 750 g jäätä, jonka lämpötila on −18 °C. Kuinka suuri lämpömäärä tarvitaan, jotta jää lämpenisi 0 °C:seen ja sulaisi kokonaan 0-asteiseksi vedeksi? Jään ominaislämpökapasiteetti on 2100 J/(kg·K). Anna vastaus kilojouleina.",
       "answer": 280,
       "unit": "kJ",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy3-7-L2-04",
       "level": 2,
-      "text": "Pastan keittämistä varten kattilaan laitetaan 2,0 kg vettä, jonka lämpötila on 15 °C. Vesi lämmitetään kiehumispisteeseen 100 °C:seen, ja sitä keitetään, kunnes kattilasta on höyrystynyt 0,10 kg vettä. Kuinka suuri lämpömäärä veteen siirtyy kaikkiaan? Anna vastaus megajouleina.",
+      "text": "Pastan keittämistä varten kattilaan laitetaan 2,0 kg vettä, jonka lämpötila on 15 °C. Vesi lämmitetään kiehumispisteeseen eli 100 °C:seen, ja sitä keitetään, kunnes kattilasta on höyrystynyt 0,10 kg vettä. Kuinka suuri lämpömäärä veteen siirtyy kaikkiaan? Anna vastaus megajouleina.",
       "answer": 0.94,
       "unit": "MJ",
       "tolerance": 0.02
