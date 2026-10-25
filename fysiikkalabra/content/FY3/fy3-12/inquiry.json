@@ -50,15 +50,15 @@
       "choices": [
         {
           "text": "Aino: Ilmakehä on kuin peitto, joka estää lämpöä johtumasta maanpinnalta avaruuteen.",
-          "feedback": "Avaruus on lähes tyhjä, joten sinne lämpö ei voi siirtyä johtumalla eikä konvektiolla: maapallo luovuttaa energiaa avaruuteen vain lämpösäteilynä. Tutki-vaiheen taulukossa näet, mitä säteilylle tapahtuu ilmakehän kanssa ja ilman sitä."
+          "feedback": "Miten energia voi siirtyä maanpinnalta tyhjään avaruuteen, jossa ei ole hiukkasia? Katso Tutki-vaiheen taulukosta, mitä maanpinnalle tulee ja mitä se säteilee ilmakehän kanssa ja ilman sitä."
         },
         {
-          "text": "Bea: Ilmakehän kaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinnalle tulee energiaa Auringon lisäksi ilmakehästä.",
+          "text": "Bea: Ilmakehän kaasut säteilevät osan maanpinnan lämpösäteilystä takaisin alas, joten pinta saa energiaa Auringon lisäksi.",
           "correct": true,
           "feedback": "Tutki-vaiheen taulukko testaa tätä: vertaa, kuinka paljon tehoa maanpinnalle tulee ja kuinka paljon se säteilee ilmakehän kanssa ja ilman sitä."
         },
         {
-          "text": "Cem: Ilmakehä varastoi Auringon energiaa, ja varastoon kertyy koko ajan lisää, joten maanpinta on lämmin.",
+          "text": "Cem: Ilmakehä varastoi Auringon energiaa ja sitä kertyy koko ajan lisää, joten maanpinta on lämmin.",
           "feedback": "Jos energiaa kertyisi koko ajan, maapallo lämpenisi jatkuvasti eikä sen lämpötila pysyisi noin +15 °C:ssa. Tasaisessa lämpötilassa tulevan ja lähtevän tehon on oltava yhtä suuret. Tutki-vaiheen taulukossa voit tarkistaa, pätevätkö nämä tasapainot."
         }
       ]
@@ -73,19 +73,44 @@
       "prompt": "Ilmakehän hiilidioksidipitoisuus nostetaan kerralla korkeammaksi ja pidetään sitten vakiona. Auringosta tuleva teho ei muutu. Mitä maapallon lämpötilalle tapahtuu sen jälkeen?",
       "choices": [
         {
-          "text": "Aino: Maapallo lämpenee vain niin kauan kuin pitoisuus kasvaa. Kun pitoisuus pysyy vakiona, lämpeneminen pysähtyy heti.",
+          "text": "Aino: Maapallo lämpenee vain niin kauan kuin pitoisuus kasvaa. Kun pitoisuus pysyy vakiona, lämpeneminen loppuu heti.",
           "feedback": "Lämpötila muuttuu niin kauan kuin tuleva ja lähtevä teho poikkeavat toisistaan, ei niin kauan kuin pitoisuus muuttuu. Tutki-vaiheen toisessa taulukossa pitoisuus on vakio rivistä ”heti jälkeen” alkaen: katso, onko ylimääräinen teho silloin heti nolla."
         },
         {
-          "text": "Bea: Avaruuteen lähtee aluksi vähemmän tehoa kuin maapallo imee. Maapallo lämpenee, kunnes lähtevä teho on taas yhtä suuri kuin imeytyvä.",
+          "text": "Bea: Avaruuteen lähtee aluksi vähemmän tehoa kuin tulee. Maapallo lämpenee, kunnes lähtevä teho on taas yhtä suuri.",
           "correct": true,
           "feedback": "Tutki-vaiheen toinen taulukko testaa tätä: seuraa, miten avaruuteen lähtevä teho ja ylimääräinen teho muuttuvat, kun maapallo lämpenee."
         },
         {
-          "text": "Cem: Maapallo lämpenee loputtomasti, koska lisähiilidioksidi pidättää energiaa koko ajan.",
+          "text": "Cem: Maapallo lämpenee loputtomasti, koska lisähiilidioksidi pidättää energiaa koko ajan lisää.",
           "feedback": "Lämpimämpi kappale säteilee enemmän, joten lämmetessään maapallo säteilee avaruuteen yhä enemmän. Tutki-vaiheen toisessa taulukossa näet, mitä ylimääräiselle teholle tapahtuu lämpenemisen edetessä."
         }
       ]
+    },
+    {
+      "id": "tase-ennusta",
+      "stage": "tutki",
+      "type": "numeric",
+      "title": "Ennusta ilmakehän säteily alas",
+      "prompt": "Tutkit seuraavaksi maanpinnan energiataseen mallia, jossa Auringosta imeytyy maanpintaan 240 W/m² ja maanpinta luovuttaa energiaa vain lämpösäteilynä. Ilman ilmakehää pinta säteilee 240 W/m² ja on tasapainossa (−18 °C). Ilmakehän kanssa pinta on tasapainossa +15 °C:ssa ja säteilee 390 W/m². Kuinka suuren tehon neliömetriä kohti ilmakehän täytyy säteillä alas maanpinnalle?",
+      "answer": 150,
+      "unit": "W/m²",
+      "tolerance": 0.02,
+      "hints": [
+        "Maanpinnan tasapainossa siihen tuleva teho on yhtä suuri kuin siitä lähtevä teho.",
+        "Maanpinnalle tulee Auringosta 240 W/m² ja ilmakehästä tuntematon teho; lähtevä teho on 390 W/m²."
+      ],
+      "mistakes": [
+        {
+          "value": 390,
+          "feedback": "390 W/m² on maanpinnan säteilemä teho. Siitä osan kattaa jo Auringosta tuleva 240 W/m², ja loppu tulee ilmakehästä."
+        },
+        {
+          "value": 630,
+          "feedback": "Laskit tehot yhteen. Tasapainossa tuleva teho on yhtä suuri kuin lähtevä 390 W/m², joten ilmakehän osuus on lähtevä miinus Auringosta tuleva."
+        }
+      ],
+      "solution": "Tasapainossa $240\\,\\text{W/m}^2 + P_\\text{alas} = 390\\,\\text{W/m}^2$, joten $P_\\text{alas} = 150\\,\\text{W/m}^2$. Seuraava taulukko näyttää saman luvun."
     },
     {
       "id": "tase",
@@ -264,26 +289,26 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Ilmakehän energiatase",
-      "prompt": "Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee 390 W/m². Siitä 40 W/m² pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle 150 W/m². Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä 240 W/m². Kuinka suuren tehon neliömetriä kohti ilmakehä säteilee ylöspäin avaruuteen?",
-      "answer": 200,
+      "prompt": "Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee 390 W/m². Siitä 100 W/m² pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle 150 W/m². Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä 240 W/m². Kuinka suuren tehon neliömetriä kohti ilmakehä säteilee ylöspäin avaruuteen? Luvut ovat esimerkkiarvoja.",
+      "answer": 140,
       "unit": "W/m²",
       "tolerance": 0.02,
       "hints": [
         "Mistä kahdesta osasta avaruuteen lähtevä 240 W/m² koostuu?",
-        "Avaruuteen lähtee maanpinnalta suoraan läpi päässyt säteily ja ilmakehän ylöspäin säteilemä teho: $240\\,\\text{W/m}^2 = 40\\,\\text{W/m}^2 + P_\\text{ylös}$.",
-        "Tarkista lopuksi ilmakehän oma tase: se imee $390\\,\\text{W/m}^2 - 40\\,\\text{W/m}^2 = 350\\,\\text{W/m}^2$, ja sen on säteiltävä sama määrä ylös ja alas yhteensä."
+        "Avaruuteen lähtee maanpinnalta suoraan läpi päässyt säteily ja ilmakehän ylöspäin säteilemä teho: $240\\,\\text{W/m}^2 = 100\\,\\text{W/m}^2 + P_\\text{ylös}$.",
+        "Tarkista lopuksi ilmakehän oma tase: se imee $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$, ja sen on säteiltävä sama määrä ylös ja alas yhteensä."
       ],
       "mistakes": [
         {
           "value": 240,
-          "feedback": "240 W/m² on koko maapallolta avaruuteen lähtevä teho. Siitä 40 W/m² on maanpinnan säteilyä, joka pääsee suoraan ilmakehän läpi, joten ilmakehän osuus on pienempi."
+          "feedback": "240 W/m² on koko maapallolta avaruuteen lähtevä teho. Siitä 100 W/m² on maanpinnan säteilyä, joka pääsee suoraan ilmakehän läpi, joten ilmakehän osuus on pienempi."
         },
         {
           "value": 150,
-          "feedback": "Ilmakehä ei säteile välttämättä yhtä paljon ylös ja alas. Avaruuteen lähtevän 240 W/m²:n on koostuttava suoraan läpi päässeestä 40 W/m²:stä ja ilmakehän ylöspäin säteilemästä tehosta."
+          "feedback": "150 W/m² on ilmakehän alas säteilemä teho. Avaruuteen lähtevän 240 W/m²:n on koostuttava suoraan läpi päässeestä 100 W/m²:stä ja ilmakehän ylöspäin säteilemästä tehosta."
         }
       ],
-      "solution": "Avaruuteen lähtee $40\\,\\text{W/m}^2 + P_\\text{ylös} = 240\\,\\text{W/m}^2$, joten $P_\\text{ylös} = 200\\,\\text{W/m}^2$. Tarkistus: ilmakehä imee $390\\,\\text{W/m}^2 - 40\\,\\text{W/m}^2 = 350\\,\\text{W/m}^2$ ja säteilee $150\\,\\text{W/m}^2 + 200\\,\\text{W/m}^2 = 350\\,\\text{W/m}^2$, joten myös ilmakehä on tasapainossa."
+      "solution": "Avaruuteen lähtee $100\\,\\text{W/m}^2 + P_\\text{ylös} = 240\\,\\text{W/m}^2$, joten $P_\\text{ylös} = 140\\,\\text{W/m}^2$. Tarkistus: ilmakehä imee $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$ ja säteilee $150\\,\\text{W/m}^2 + 140\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$, joten myös ilmakehä on tasapainossa. Se säteilee alas hieman enemmän kuin ylös, koska alempi ilma on lämpimämpää."
     },
     {
       "id": "check-3",

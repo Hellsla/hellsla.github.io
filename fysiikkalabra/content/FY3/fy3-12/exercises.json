@@ -69,7 +69,7 @@
     {
       "id": "fy3-12-L2-04",
       "level": 2,
-      "text": "Kun arktinen merijää sulaa, sen alta paljastuu tummaa merenpintaa, joka heijastaa auringonvaloa paljon vähemmän kuin jää. Oletetaan, että tämän vuoksi maapallon heijastama osuus Auringon säteilystä pienenisi 30 %:sta 29 %:iin. Auringosta tulee keskimäärin 340 W/m². Kuinka paljon maapallon imemä teho neliömetriä kohti kasvaisi? Vertaa tulosta nykyiseen energiaepätasapainoon, joka on noin 1,0 W/m².",
+      "text": "Lumi ja jää heijastavat auringonvaloa paljon paremmin kuin tumma merenpinta tai maa. Oletetaan hypoteettisesti, että lumen ja jään väheneminen pienentäisi maapallon heijastamaa osuutta Auringon säteilystä 30 %:sta 29 %:iin (todellinen muutos on pienempi). Auringosta tulee keskimäärin 340 W/m². Kuinka paljon maapallon imemä teho neliömetriä kohti kasvaisi? Vertaa tulosta nykyiseen energiaepätasapainoon, joka on noin 1,0 W/m².",
       "answer": 3.4,
       "unit": "W/m²",
       "tolerance": 0.02
