@@ -89,10 +89,10 @@ new p5((p) => {
     p.fill(26, 77, 46); p.textAlign(p.CENTER); p.textSize(ts(13));   // title: shrunk to fit inside the canvas when the canvas is scaled down
     const title = 'Sama massa, paino eri paikoissa', titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
-    p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(15));
+    p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
     p.fill(60); p.textSize(ts(11));                               // scale line, shrunk to fit like the title
     const scaleText = `asteikko 0–${fi(chartFull, chartFull < 100 ? 1 : 0)} N`;   // short, so it never shrinks below 10 px; the explanation is in the readout
-    p.text(scaleText, BARS.x + BARS.w / 2, BARS.y - ts(2));
+    p.textAlign(p.LEFT); p.text(scaleText, BARS.x + 9, BARS.y + 30 - ts(4));   // beside the full-scale tick, where the axis ends
   };
 
   const fi = (x, d) => x.toFixed(d).replace('.', ',');         // Finnish decimal comma

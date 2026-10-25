@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f0893923f063d748
+CONTENT-HASH: d47c5d24760dd2a6
 
 ## Blocking
 (none)
 
 ## Polish
-- scripts/build.py:45 (UNIT) — "kN" is missing from the unit list, so lesson.md:43 "eli noin 1,18 kN." keeps a plain space and can break before "kN" (does not break at 1280, 390 or 360 px today, only by luck of wrapping) — add `kN` (and `cm²`, `m³` if used later) to UNIT.
-- scripts/build.py:101 — the `Vastaus` reveal `<p>{ans}</p>` ("39 N", "6,0 cm", 13 of them) is not passed through nbsp_units, so it has a plain space; it is a short line on its own, so no visible break — wrap `ans` in nbsp_units for consistency.
-- content/FY3/fy3-1/sim.js:46-50 — readout strings use plain spaces ("m = 10 kg", "9,81 m/s²", "0–248 N"); no break in 36 body/mass states at 1280, 390, 360 px, so only a latent risk — use   if the sim is next edited.
+- content/FY3/fy3-1/sim.js:46-50 — readout strings ("m = 10 kg", "9,81 m/s²", "0–248 N") still use plain spaces (the only 5 plain number-unit spaces on the page); measured no break in 36 states at 1280, 390 and 360 px, so latent only — use U+00A0 when sim.js is next edited.
 
 ## Checked
-- Lint 0/0, build ok, hash unchanged start to end; no console or page errors, no .katex-error, scrollWidth = viewport at 1280, 390, 360 px.
-- Number-unit breaks: 117 number+unit pairs in the opened page (all 3 solutions, 15 answer reveals, 12 task texts, exit ticket, theory): 92 use U+00A0, 0 lines break between number and unit at 1280, 390 or 360 px (measured per character with Range rects, all details open).
-- Opened solutions and task texts specifically: every pair non-breaking and on one line at all three widths; no horizontal overflow (.katex-display, svg, canvas, tables, pre all inside viewport).
-- Sim readout and controls: 36 states (4 bodies x 9 masses) at each width, no number/unit break, readout 4 lines at 1280 and 5 at 390/360, no overlap with canvas or controls; canvas 600x400, 324x216, 294x196 (sim.js unchanged, canvas text sizes from round 3 still hold: min 10,8 px at 390, 10,78 px at 360).
-- Voimamittari SVG fits its column (608, 358, 328 px wide; 16 px gutters).
-- Text column: 608 px at 17 px font, about 67-74 characters at 1280; 44 at 390, 40 at 360 (phone).
-- Tap targets: 0 links, buttons, inputs, selects or summaries under 40 px at any width.
-- Contrast: body text rgb(20,23,30) on rgb(247,243,236), well above 4,5:1.
-- Screenshots review/fy3-1-r4-{1280,390,360}.png and review/fy3-1-r4-sim-{1280,390,360}.png.
+- Lint 0/0, build ok, hash unchanged start to end (d47c5d24760dd2a6); no console or page errors, no .katex-error, scrollWidth = viewport at 1280, 390, 360 px.
+- Canvas chart, 4 bodies x mass 1 and 100 kg x 3 widths (24 states), text boxes captured from fillText (measureText): "asteikko 0–X N" overlaps no other label; nearest is the Jupiter value label, gap 110-146 px (1280), 42-54 px (390 logical, about 21-26 rendered), 24-34 px (360 logical, about 12-17 rendered); the first (Kuu) bar label is never in the scale text's band.
+- Scale text is left-aligned beside the top tick of the y axis; rendered size 11,0 px (1280), 10,8 px (390, 360); smallest canvas text 10,0 px (the shrunk "2480 N" label at 360 px), none below 10; nothing past the canvas edge (max x 595 of 600).
+- Title sits 12-20 logical px above the scale line, no touching at any width; Voimamittari and weight arrow unchanged and unclipped at 100 kg.
+- kN: "1,18 kN" now uses U+00A0 (preview/fy3-1.html:76); all 15 "Vastaus" reveals use U+00A0 (e.g. "39 N", "6,0 cm", "69 kg"); 0 number-unit breaks at 1280, 390, 360 px with all details open (incl. L3-03 text, 26 kg and 9,81 m/s²).
+- Sim readout 4 lines at 1280, 5 at 390/360 in all 108 slider states sampled, no break before a unit, no overlap with canvas or controls.
+- Tap targets: no link, button, input, select or summary under 40 px at any width; no katex-display, svg, canvas, table or pre wider than the viewport.
+- Text column 566 px wide at 18,4 px body font at 1280 (about 65-70 characters), 316 px and 286 px at 390 and 360 px; contrast unchanged (dark text on cream).
+- Screenshots review/fy3-1-r5-montage-{1280,390,360}.png (Kuu 1 kg, Jupiter 100 kg, Maa 1 kg), review/fy3-1-r5-chart-*.png, review/fy3-1-r5-full-*.png.
