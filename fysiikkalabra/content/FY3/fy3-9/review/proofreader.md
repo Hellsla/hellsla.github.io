@@ -1,25 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 2ce27b58d735ec2b
+CONTENT-HASH: b04487bcb547a68a
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none; the first-pass polish items are all applied, see Checked)
 
 ## Diff
 ```diff
 ```
-(empty: the seven first-pass wording fixes are already applied and nothing further is needed)
+(empty: nothing further to change)
 
 ## Checked
 - Lint run first: 0 errors, 0 warnings; not repeated.
-- First-pass diff confirmed applied: lesson.md:52 (1,04 l sentence), exercises.json L2-04 (single question), L3-01 ("kuplan ilma liukene"), L3-02 ("20 °C:n tallissa"), solutions.md:63 ("Tulon pV arvot"), :79 ("kuin ympäröivä vesi"), sim.js:119 (”Tallenna mittaus”).
-- Glossary terms (tilanmuutos, isoterminen, isobaarinen, isokoorinen, Boylen laki, kelvin, absoluuttinen nollapiste, ylipaine, ilmanpaine) used as defined; no invented synonyms.
-- Case after number+unit (101 kPa:n, 22 °C:n, 20,0 m:n, 280 kPa:iin, 7 kN:n, 10 °C:sta ... 20 °C:seen, 280 K:stä 308 K:iin) correct in all files.
-- Decimal comma in all text, decimal point only in JSON values; space before units and %; minus sign U+2212 in text and sim.js fi().
-- Finnish quotation marks (”...”) in sim.js and sim-spec.md; no "N-voimalla" constructions.
-- Sim strings (labels, options, readout, note, table, empty row) and sim-spec.md read for grammar and terminology; consistent with lesson.
-- Exit ticket and solutions: language and sanity-check sentences read; numbers, formulas, LaTeX untouched.
-- Reading level suitable for 16-19 year olds; lesson.md:10 and :12 long but clear.
-- Hash re-run at the end: 2ce27b58d735ec2b (same as at start).
+- First-pass diff confirmed applied, all six hunks present: lesson.md "kaasun kokonaispainetta", "Molemmissa tapauksissa", aria-label "Kaasutilan korkeudet"; solutions.md "lämpötilat on käytettävä kelvineinä", "renkaassa, jonka lukema on 0, on silti ilmaa"; sim.js "sitä suurempi paine on". The old wordings no longer occur anywhere in the lesson folder.
+- The applied lines read correctly in context; no numbers, LaTeX or JSON values changed. (Hash differs from the first-pass report only because those edits changed the files.)
+- Re-read lesson.md, exercises.json, solutions.md, exit-ticket.json, sim-spec.md, sim.js strings: spelling, decimal comma, U+2212 minus, space before units, case after number+unit (101 kPa:n, 10 °C:sta, 20 °C:seen, 20,0 m:n, −18 °C:n) all correct.
+- Terms match glossary.json (tilanmuutos, isoterminen, isobaarinen, isokoorinen, Boylen laki, kelvin, absoluuttinen nollapiste, ylipaine); no invented synonyms.
+- Finnish quotation marks ”Piirrä p 1/V:n funktiona” and ”Tallenna mittaus” correct; the heading "Yleinen virhekäsitys" is the fixed section name and stays.
+- Reading level suits 16-19-year-olds; no paragraph over 91 words.
+- Hash re-run at the end: b04487bcb547a68a (unchanged from start).

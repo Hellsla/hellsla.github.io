@@ -24,6 +24,17 @@
     "locked": false
   },
   {
+    "term": "U-arvo",
+    "definition": "Rakennusosan lämmönläpäisykerroin, joka kertoo, kuinka monta wattia lämpötehoa siirtyy neliömetrin läpi yhden kelvinin lämpötilaerolla. Yksikkö on W/(m²·K), ja pieni U-arvo tarkoittaa hyvää eristystä.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "johtuminen"
+    ],
+    "locked": false
+  },
+  {
     "term": "absoluuttinen nollapiste",
     "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
     "lessons": [
@@ -61,6 +72,17 @@
     "locked": false
   },
   {
+    "term": "energiatasapaino",
+    "definition": "Tila, jossa kappaleeseen tuleva ja siitä lähtevä teho ovat yhtä suuret, joten sen lämpötila pysyy vakiona. Maapallon lämpötila määräytyy sen energiatasapainosta.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "kasvihuoneilmiö"
+    ],
+    "locked": false
+  },
+  {
     "term": "eristetty systeemi",
     "definition": "Eristetty systeemi on systeemi, johon tai josta ei siirry ainetta eikä energiaa lämpönä tai työnä. Suljettuun systeemiin energiaa voi vielä siirtyä, vaikka aine ei pääse sisään tai ulos, mutta eristetyn systeemin kokonaisenergia pysyy vakiona.",
     "lessons": [
@@ -85,6 +107,18 @@
     "locked": false
   },
   {
+    "term": "hukkalämpö",
+    "definition": "Lämpö, joka siirtyy koneesta tai voimalaitoksesta ympäristöön käyttämättä, esimerkiksi lauhduttimen kautta mereen.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "lämpövoimakone"
+    ],
+    "locked": false
+  },
+  {
     "term": "hydrostaattinen paine",
     "definition": "Nesteen omasta painosta syntyvä paine, joka kasvaa syvyyden mukana: ρgh. Se riippuu vain syvyydestä ja nesteen tiheydestä, ei astian muodosta.",
     "lessons": [
@@ -93,6 +127,18 @@
     "see_also": [
       "paine",
       "ilmanpaine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hyötysuhde",
+    "definition": "Hyödyksi saadun energian tai tehon suhde koneeseen tuotuun energiaan tai tehoon, η = W/Q₁. Hyötysuhde ilmoitetaan usein prosentteina, ja se on aina alle 100 %.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "lämpövoimakone",
+      "yhteistuotanto"
     ],
     "locked": false
   },
@@ -169,6 +215,19 @@
     "locked": false
   },
   {
+    "term": "johtuminen",
+    "definition": "Lämmön siirtyminen aineen läpi, kun nopeammin värähtelevät hiukkaset luovuttavat energiaa hitaammille naapureilleen. Metallit johtavat lämpöä hyvin, ilma ja villa huonosti.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "konvektio",
+      "lämpösäteily",
+      "U-arvo"
+    ],
+    "locked": false
+  },
+  {
     "term": "joule",
     "definition": "Energian ja työn yksikkö, 1 J = 1 N·m. Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla.",
     "lessons": [
@@ -181,6 +240,30 @@
     "locked": false
   },
   {
+    "term": "jäähdytyskone",
+    "definition": "Kone, joka siirtää työn avulla lämpöä kylmästä paikasta lämpimään, esimerkiksi jääkaappi. Se toimii päinvastoin kuin lämpövoimakone.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "lämpöpumppu",
+      "lämpövoimakone"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaasun tekemä työ",
+    "definition": "Työ, jonka laajeneva kaasu tekee ympäristöön työntäessään mäntää. Vakiopaineessa se on W = pΔV, ja (V, p)-kuvaajassa se on kuvaajan alle jäävä pinta-ala.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "paine",
+      "termodynamiikan ensimmäinen pääsääntö"
+    ],
+    "locked": false
+  },
+  {
     "term": "kalorimetri",
     "definition": "Eristetty astia, jossa lämpömääriä mitataan lämpötilan muutoksista. Sillä määritetään esimerkiksi aineen ominaislämpökapasiteetti veden avulla.",
     "lessons": [
@@ -189,6 +272,29 @@
     "see_also": [
       "lämpötasapaino",
       "ominaislämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kasvihuoneilmiö",
+    "definition": "Ilmiö, jossa ilmakehän kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas. Se nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "energiatasapaino",
+      "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaukolämpö",
+    "definition": "Voimalaitoksessa tai lämpölaitoksessa lämmitetty vesi, joka johdetaan putkia pitkin rakennusten lämmitykseen.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "yhteistuotanto"
     ],
     "locked": false
   },
@@ -212,6 +318,30 @@
     ],
     "see_also": [
       "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "konvektio",
+    "definition": "Lämmön siirtyminen virtaavan nesteen tai kaasun mukana, esimerkiksi kun lämmin ilma nousee patterin yläpuolella.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "johtuminen",
+      "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lauhdevoimalaitos",
+    "definition": "Lämpövoimalaitos, joka tuottaa vain sähköä. Turbiinista tuleva höyry tiivistetään lauhduttimessa, ja sen lämpö siirtyy hukkalämpönä esimerkiksi mereen.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "yhteistuotanto",
+      "hukkalämpö"
     ],
     "locked": false
   },
@@ -252,6 +382,17 @@
     "locked": false
   },
   {
+    "term": "lämpöarvo",
+    "definition": "Polttoaineen palaessa vapautuva energia massayksikköä kohti, yksikkö esimerkiksi MJ/kg. Esimerkiksi bensiinin lämpöarvo on noin 43 MJ/kg.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpökapasiteetti",
     "definition": "Lämpömäärä, joka tarvitaan koko kappaleen lämmittämiseen yhdellä kelvinillä: C = cm, yksikkö J/K.",
     "lessons": [
@@ -259,6 +400,17 @@
     ],
     "see_also": [
       "ominaislämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpökerroin",
+    "definition": "Lämpöpumpun luovuttaman lämpötehon suhde sen käyttämään sähkötehoon. Esimerkiksi lämpökerroin 3 tarkoittaa, että 1 kW:n sähköteholla saadaan 3 kW lämpöä.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "lämpöpumppu"
     ],
     "locked": false
   },
@@ -290,6 +442,31 @@
     "locked": false
   },
   {
+    "term": "lämpöpumppu",
+    "definition": "Jäähdytyskone, jolla lämmitetään: se siirtää sähkön avulla lämpöä esimerkiksi ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja käytetyn sähkön summa.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "jäähdytyskone",
+      "lämpökerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpösäteily",
+    "definition": "Kappaleen lähettämä sähkömagneettinen säteily, joka siirtää energiaa myös tyhjiön läpi. Kaikki kappaleet säteilevät, ja kuumempi kappale säteilee enemmän ja lyhytaaltoisemmin.",
+    "lessons": [
+      "fy3-12"
+    ],
+    "see_also": [
+      "johtuminen",
+      "konvektio",
+      "kasvihuoneilmiö"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpötasapaino",
     "definition": "Tila, jossa kosketuksissa olevilla kappaleilla on sama lämpötila eikä lämpöä enää siirry niiden välillä. Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
     "lessons": [
@@ -310,6 +487,18 @@
     "see_also": [
       "kelvin",
       "absoluuttinen nollapiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpövoimakone",
+    "definition": "Kone, joka ottaa lämpöä kuumasta lähteestä, muuttaa osan siitä työksi ja luovuttaa loput kylmempään ympäristöön, esimerkiksi höyryturbiini tai polttomoottori. Kaikkea lämpöä ei voi muuttaa työksi.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "jäähdytyskone"
     ],
     "locked": false
   },
@@ -648,6 +837,30 @@
     "see_also": [
       "voima",
       "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yhdistetty kaasulaki",
+    "definition": "Kun suljetun kaasumäärän paine, tilavuus ja lämpötila muuttuvat yhtä aikaa, suure pV/T pysyy vakiona: p₁V₁/T₁ = p₂V₂/T₂. Siitä saadaan Boylen laki ja muut kaasulait, kun yksi suure pidetään vakiona.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "tilanyhtälö",
+      "Boylen laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yhteistuotanto",
+    "definition": "Sähkön ja lämmön yhteistuotanto, jossa voimalaitoksen lauhduttimesta tuleva lämpö johdetaan kaukolämpöverkkoon. Kokonaishyötysuhde on noin 85–90 %.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "lämpövoimakone"
     ],
     "locked": false
   },

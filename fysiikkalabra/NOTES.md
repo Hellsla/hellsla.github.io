@@ -32,6 +32,7 @@ When a mistake costs a review round, add a line under the right heading (what, w
 - Math in an SVG `<text>` or in canvas text is plain text. Keep the labels short.
 - An inline `\dfrac` makes a tall fraction that breaks the line. Put calculations with fractions on their own line in display math.
 - A `·` inside `\text{}` is a KaTeX parse error. Write compound units as `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}` or `\text{J/(mol}\cdot\text{K)}`. The lint reports it.
+- The litre in math: `\text{l}` renders like the digit 1 in KaTeX's serif font, so `0{,}80\,\text{l}` reads as "0,801". Write `\textsf{l}`. The lint reports `\text{l}`. (Found in fy3-9.)
 - Every display formula must fit a 360 px phone without scrolling: about 25 visible characters per line. Split long calculations into rows, one `=` step per row. In `aligned` the two columns' widths add up, so `a &= b \\ &= c` is no narrower when `a` is long: put a long left side alone on its own row and the `= …` parts on the following rows in one left-aligned column (`\begin{aligned} &a \\ &= b \\ &\approx c \end{aligned}`). Run `python scripts/check_layout.py <id>` after the build; it lists every formula, figure or page that is too wide. (Cost a round in fy3-6 and fy3-8.)
 - A wide markdown table overflows a phone. The site CSS makes tables scroll sideways inside themselves; keep header cells short.
 
@@ -95,3 +96,35 @@ Both exit 1 on a problem. CI and the gate run them too. After changing any formu
 - Tasks ask the student to reason with a changed situation ("what does the scale show on Mars?"), not only to plug numbers in. Applied in the level 3 tasks.
 - Units, conversions (g to kg, minutes to seconds) and sensible rounding are part of the grading, so every exercise keeps them.
 - Check these against the real files when `docs/exams/` is filled, and replace this list with verified findings.
+
+## 4. Lesson form (human decisions, 2026-10-25)
+These four rules come from the human and apply to every lesson, including published ones. They are summarised in CLAUDE.md.
+
+### Figures in the text
+- At least one inline SVG in `## Ydinajatus` and one in `## Kaava`, each right after the paragraph it explains. Good subjects: the micro model (particles), a setup sketch (piston, calorimeter, dam), a graph of the formula, an energy-flow diagram, a before/after comparison.
+- SVG house style: `viewBox="0 0 600 300"`, `currentColor` strokes and fills (opacity for tints), text 24 px or more (it renders at about 13 px on a 360 px phone), an `aria-label` that says what the figure shows. No label may overlap a line or another label; the web-designer checks at 360 px.
+- A figure drawn to scale must be to scale (reviewers measure it); a schematic one says so in the aria-label or a caption.
+- No paragraph over about 120 words; split it, or move a list of cases into a short bullet list.
+
+### Symbolic first, then numbers
+- Worked example and every solution: (1) name the unknown, (2) write the formula, (3) solve it for the unknown with symbols only, (4) substitute values with units, (5) compute and round, (6) check.
+- In `solutions.md` the **Kaava:** line ends with the formula solved for the asked quantity (`α = ΔL / (L₀ ΔT)`), and only **Sijoitus:** has numbers, each with its unit.
+- In lesson.md displays, the first row of a calculation is symbolic (`V_2 &= \frac{p_1 V_1}{p_2}`), the next row has the numbers with units, the last the result. The lint flags a display under `## Esimerkki` whose first row already has numbers.
+
+### Worked example in stages
+- Under `## Esimerkki`: the problem statement, then 3–6 stages, each starting after a line `<!-- vaihe -->` (blank lines around it). Typical stages: **Tunnetut ja kysytty.** · **Kaava ratkaistuna.** · **Sijoitus.** · **Tulos.** · **Järkevyys.** A stage is one bold lead-in sentence plus at most one display block.
+- `build.py` (`staged_example`) wraps the stages; `lesson.js` shows stage 1 and reveals the rest with "Näytä seuraava vaihe" / "Näytä kaikki". Without JavaScript and in print all stages show.
+- Each display must still fit 360 px (see section 2), so split long rows.
+
+### Visually rich simulations
+- Keep the controls the sim has; do not add sliders to look busy.
+- Draw the physical situation, not boxes: shaded or gradient fills, a container that looks like one, particles with motion, flames or a heater that glows, liquid levels, arrows whose width or length is the quantity.
+- Colour carries meaning: a cold-to-hot colour scale for temperature, consistent colours for the same quantity in the picture and the chart, a small legend.
+- Small animations that explain (particles speeding up, a needle moving, a level rising) are welcome; decoration that hides numbers is not.
+- Charts: gridlines, labelled axes with units, the current point highlighted, the theoretical curve faint behind measured points.
+- Label sweep at 360, 390 and 1280 px still applies.
+
+
+### What the lint checks
+- `lint_lesson.py <id>`: an ERROR when Ydinajatus or Kaava has no `<svg`, when the worked example has fewer than 3 or more than 6 `<!-- vaihe -->` stages, when a display under `## Esimerkki` has numbers in its first row (start every calculation with the symbolic row), and when a solution's **Kaava:** step has no equation. A WARN for paragraphs over 130 words and for numbers with units in a **Kaava:** step.
+- `lint_lesson.py --all` (CI): lessons published before these rules report the lesson-form findings without failing, until they are reworked and republished. The gate runs the single-lesson lint, so no lesson can be published or republished without meeting them.

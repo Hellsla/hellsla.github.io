@@ -1,23 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: 816cee5a91d7c8b5
+VERDICT: PASS
+CONTENT-HASH: 855cd3ff27ef052b
 
 ## Blocking
-- exit-ticket.json:11-12 — The micro model is the core idea of the lesson (lesson.md:6, :70) and its first goal. No exit-ticket question or exercise checks it. Q3 tests the water exception instead, which is a detail. — Replace Q3. q: "Teräskuula laajenee lämmetessään. Kasvavatko teräksen hiukkaset? Selitä mikromallin avulla." a: "Eivät. Lämmetessä hiukkaset värähtelevät voimakkaammin, ja koska niiden on helpompi loitota toisistaan kuin puristua yhteen, niiden keskimääräinen etäisyys kasvaa. Hiukkaset pysyvät samankokoisina."
+(none)
 
 ## Polish
-- lesson.md:6 — The lesson does not say why "helpompi loitota kuin puristua" holds, and it does not link to the fy3-3 idea that temperature measures mean kinetic energy. — Add: "Lähekkäin puristuvat hiukkaset hylkivät toisiaan voimakkaasti, mutta loittonevien välinen veto heikkenee vähitellen, joten hiukkanen heilahtaa kauemmas poispäin kuin lähemmäs naapuriaan."
-- lesson.md:19 — The lesson never says what α means or why ΔL ∝ L₀, yet L2-04 asks for α. — Add: "α kertoo, kuinka suuren osan pituudestaan kappale pitenee 1 K:n lämpenemisessä. Kaksi kertaa pidempi sauva pitenee kaksi kertaa enemmän. Taulukon 12 tarkoittaa 12 · 10⁻⁶ 1/K."
-- lesson.md:12, :21 — Line 12 sends gases to the gas laws, but line 21 applies the same formula to them, and the lesson never says why gases expand most. — In line 21 write "kaasuilla, kun paine pysyy vakiona". In line 12 add: "Lämmetessä kaasun hiukkaset törmäävät seinämiin kovempaa (fy3-3); jos paine pysyy samana, kuten ilmapallossa, kaasu laajenee."
-- lesson.md:12 — The lesson goes from the density maximum straight to the lake freezing from the top. — Add: "Tihein, 4-asteinen vesi painuu pohjalle, ja kylmempi vesi jää pinnalle ja jäätyy."
-- lesson.md:25 — The lesson does not explain why γ ≈ 3α rather than a cube, and L2-02 and L3-03 use the relation. — Add: "Kuution kolme särmää pitenevät kukin suhteessa αΔT; pienillä muutoksilla nämä suhteelliset kasvut lähes lasketaan yhteen."
+- lesson.md:12 — One paragraph carries five ideas: liquids, gases, the liquid thermometer, the water anomaly and the frozen lake. The gas sentence also gives a weak reason ("lähes vapaita"); the fy3-3 link is missing. — Split after "palataan oppitunnilla fy3-9." into a new paragraph that starts at "Nestelämpömittari". Add to the gas sentence: "Kuumemman kaasun hiukkaset törmäävät seinämään kovempaa (fy3-3), joten paineen pysyessä samana kaasun on laajennuttava."
+- lesson.md:10 — L3-02 asks which way a bimetal strip bends, but the lesson only says it bends "koska toinen metalli pitenee enemmän". — Add: "Pidemmäksi venyvä metalli jää kaaren ulkoreunalle, joten liuska taipuu kohti vähemmän laajenevaa metallia."
+- lesson.md:27-40 — The lesson never mentions the simulation, which the page places after `## Kaava`. A first-time student does not know what to look for. — Add before the tables: "Kokeile simulaatiota: valitse aine, muuta lämpötilaa ja katso, miten hiukkasvälit ja sauvan pituus muuttuvat samassa suhteessa."
+- lesson.md:21 — "Nesteiden (ja vakiopaineessa kaasujen)" is correct, but the reason for the gas coefficient 3,4 · 10⁻³ 1/K in the table is not mentioned, so the jump from solid to gas numbers is large. — Add after the second table: "Ilman γ on noin 3 · 10⁻³ 1/K, eli ilma laajenee 15 K:n lämpenemisessä noin 5 %."
 
 ## Checked
-- Hash unchanged; lint clean.
-- The ΔT in K and in °C (lesson.md:19, :60) is covered by fy3-3:10.
-- Lines 8 and 64 answer the motivating question about the bridge joint.
-- Each paragraph in Ydinajatus adds one idea, and none depends on the gas laws.
-- The levels follow the rubric with 5/4/3 tasks.
-- No exercise repeats the example. L1-01 is the closest, but it has no sign crossing, which is acceptable for L1.
-- answers.py matches exercises.json.
-- Exit Q1 and Q2 test core ideas.
-- Glossary terms all exist.
+- Hash unchanged during review (855cd3ff27ef052b); lint clean.
+- Prerequisite fy3-3 covers mean kinetic energy, ΔT in K equals ΔT in °C, and pressure as particle collisions.
+- Line 6 now explains why particles drift apart more easily than they are pushed together, one idea per sentence.
+- Line 19 explains α and ΔL ∝ L₀; line 25 explains γ ≈ 3α; the density-maximum sentence now leads to the frozen lake.
+- Lines 8 and 67 answer the motivating question about the bridge joint.
+- Exit ticket Q3 is the micro-model check and matches the core idea; Q1 and Q2 test the formula and the hole.
+- Exercise levels follow the rubric (5/4/3); L1 tasks are single-formula; L2-04 and L3 tasks combine two ideas.
+- No exercise repeats the bridge example; datum-plus-change trap avoided (tasks ask for ΔL).
+- Glossary terms in meta.json exist and are used in the text.
+- Gas-law content is deferred to fy3-9 without depending on it.

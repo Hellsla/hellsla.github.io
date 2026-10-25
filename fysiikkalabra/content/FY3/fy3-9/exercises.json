@@ -61,7 +61,7 @@
     {
       "id": "fy3-9-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun ilmaa puristettiin hitaasti, jotta sen lämpötila pysyi samana. Mitatut tilavuudet V (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet p (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake 1/V, piirrä p 1/V:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on pV. Anna se jouleina.",
+      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana. Mitatut tilavuudet V (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet p (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake 1/V, piirrä p 1/V:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on pV. Anna se jouleina.",
       "answer": 2.0,
       "unit": "J",
       "tolerance": 0.05
@@ -69,7 +69,7 @@
     {
       "id": "fy3-9-L2-04",
       "level": 2,
-      "text": "Kuumailmapallon kuoren tilavuus on 2800 m³, ja kuoren alaosassa on aukko. Kuori on täynnä 10 °C:n ilmaa, joka lämmitetään polttimella 100 °C:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Laske, kuinka monta kuutiometriä ilmaa on työntynyt ulos aukosta, kun alun perin kuoressa ollut ilma on lämmennyt.",
+      "text": "Kuumailmapallon kuoren tilavuus on 2800 m³, ja kuoren alaosassa on aukko. Kuori on täynnä 10 °C:n ilmaa, joka lämmitetään polttimella 100 °C:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Alun perin kuoressa ollut ilma lämpenee kokonaan 100 °C:seen. Kuinka monta kuutiometriä tästä 100 °C:n ilmasta ei mahdu kuoreen vaan on työntynyt ulos aukosta?",
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02

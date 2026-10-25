@@ -21,15 +21,19 @@ LABELS = ["Annettu", "Kysytty", "Kaava", "Sijoitus", "Vastaus", "Järkevyys"]
 
 class Lint:
     def __init__(self, folder):
-        self.folder = folder; self.out = []; self.errors = 0
+        self.folder = folder; self.out = []; self.errors = 0; self.form_errors = 0
 
     def err(self, f, line, msg): self.errors += 1; self.out.append(f"ERROR {f}:{line} {msg}")
+    def form(self, f, line, msg):
+        """A human lesson-form rule (CLAUDE.md). An error for one lesson (the gate, agents); in --all, published
+        lessons written before the rule report it without failing CI until they are reworked and republished."""
+        self.form_errors += 1; self.err(f, line, msg)
     def warn(self, f, line, msg): self.out.append(f"WARN  {f}:{line} {msg}")
 
 
 def find_lesson(arg):
     p = pathlib.Path(arg)
-    if p.is_dir(): return p
+    if p.is_dir(): return p.resolve()               # absolute, so answers.py is run from the right folder
     for f in sorted((ROOT / "content").glob(f"*/{arg}")):
         if f.parent.name != "_gold" and (f / "meta.json").exists(): return f
     sys.exit(f"no lesson folder for {arg!r}")
@@ -89,6 +93,8 @@ def check_math(L, name, text):
     for line, frag, display in math_fragments(text):
         if re.search(r"(?<![{,])\d,\d", frag):
             L.err(name, line, "decimal comma inside math must be {,} (NOTES 1.4): " + frag[:60])
+        if "\\text{l}" in frag:
+            L.err(name, line, "\\text{l} looks like the digit 1 in KaTeX; write the litre as \\textsf{l} (NOTES 1)")
         if re.search(r"\\text\{[^}]*·", frag):
             L.err(name, line, "· inside \\text{} breaks KaTeX; write \\text{mol}\\cdot\\text{K} (NOTES 1): " + frag[:60])
         if re.search(r"\\(si|SI|unit)\b|\\newcommand", frag):
@@ -105,6 +111,49 @@ def check_math(L, name, text):
             L.err(name, i, "unbalanced $ on this line (inline math must stay on one line, NOTES 1.2)")
 
 
+def section(text, name):
+    """Body of `## name` up to the next `## ` heading, and its first line number."""
+    m = re.search(rf"^## {name}[^\n]*\n(.*?)(?=^## |\Z)", text, flags=re.M | re.S)
+    return (m.group(1), text.count("\n", 0, m.start()) + 1) if m else ("", 1)
+
+
+def first_row_has_numbers(frag):
+    """True when the first row of a display calculation already has substituted values, i.e. numbers with units
+    (rule: symbols first). Constants such as \\frac{1}{2} or 273,15 in a symbolic formula, and sub- and superscripts
+    (T_1, m^3, P_\\text{seinä}), do not count."""
+    body = re.sub(r"\\begin\{aligned\}|\\end\{aligned\}", "", frag).strip()
+    first = re.split(r"\\\\", body)[0]
+    if "=" not in first: return False
+    first = re.sub(r"[_^]\\(?:text|mathrm|textsf)\{[^}]*\}|[_^]\{[^}]*\}|[_^]\w", "", first)
+    has_digit = re.search(r"\d", first)
+    has_unit = re.search(r"\\(?:text|textsf|mathrm)\{|\\%|\{\}\^\\circ", first)
+    return bool(has_digit and has_unit)
+
+
+def check_lesson_form(L, text):
+    """Human decisions on lesson form (CLAUDE.md, NOTES.md section 4)."""
+    for name in ("Ydinajatus", "Kaava"):
+        body, line = section(text, name)
+        if body and "<svg" not in body:
+            L.form("lesson.md", line, f"no figure in ## {name}: every lesson has an inline SVG in Ydinajatus and in Kaava (CLAUDE.md, human rule 1)")
+    for m in re.finditer(r"(?:^|\n\n)([^\n<`#|>-][^\n]+)", text):
+        words = len(m.group(1).split())
+        if words > 130:
+            L.warn("lesson.md", text.count("\n", 0, m.start(1)) + 1, f"paragraph of {words} words; keep paragraphs under about 120 words and add a figure or a list (human rule 1)")
+    body, line = section(text, "Esimerkki")
+    if body:
+        stages = body.count("<!-- vaihe -->")
+        if not 3 <= stages <= 6:
+            L.form("lesson.md", line, f"worked example has {stages} stages; write 3–6 stages separated by `<!-- vaihe -->` lines (human rule 4)")
+        start = text.find(body)
+        for m in re.finditer(r"```latex\n(.*?)```|\$\$(.*?)\$\$", body, flags=re.S):
+            frag = m.group(1) or m.group(2)
+            if first_row_has_numbers(frag):
+                L.form("lesson.md", text.count("\n", 0, start + m.start()) + 1,
+                      "worked example substitutes before solving: the first row of a calculation must be the formula solved for the unknown in symbols, numbers with units come on the next row (human rule 2): " + frag.strip()[:60])
+
+
+
 def check_lesson_md(L, folder):
     f = folder / "lesson.md"
     if not f.exists(): L.err("lesson.md", 1, "missing"); return
@@ -117,6 +166,7 @@ def check_lesson_md(L, folder):
         L.warn("lesson.md", 1, "no display formula; every formula appears once in display LaTeX (CLAUDE.md)")
     check_text_rules(L, "lesson.md", text)
     check_math(L, "lesson.md", text)
+    check_lesson_form(L, text)
     for m in re.finditer(r"\|[^\n]*\|", text):
         cells = [c.strip() for c in m.group(0).strip("|").split("|")]
         if any(len(c) > 22 for c in cells) and m.group(0).count("|") > 2 and "---" not in m.group(0):
@@ -192,6 +242,11 @@ def check_solutions(L, folder, answers):
         seen[eid] = body
         for lab in LABELS:
             if f"**{lab}" not in body: L.warn("solutions.md", line, f"{eid}: no '**{lab}:**' step")
+        k = re.search(r"\*\*Kaava:?\*\*:?([^\n]*)", body)
+        if k and "=" not in k.group(1):
+            L.form("solutions.md", line, f"{eid}: the Kaava step must end with the formula solved for the unknown in symbols (human rule 2)")
+        elif k and re.search(r"=[^=]*\d[,.]?\d*\s?(?:" + UNITS[3:-1] + r")\b", k.group(1).split(",")[-1]) and "Sijoitus" in body:
+            L.warn("solutions.md", line, f"{eid}: numbers with units in the Kaava step; keep Kaava symbolic and put the numbers in Sijoitus (human rule 2)")
         words = len(body.split())
         if words > 130: L.warn("solutions.md", line, f"{eid}: {words} words, solutions stay under 120 words")
         m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)", body)
@@ -299,5 +354,8 @@ if __name__ == "__main__":
         note = " (draft: errors do not fail --all, the pipeline fixes them before publication)" if args[0] == "--all" and draft and L.errors else ""
         print(f"== {rel}: {L.errors} error(s), {len(L.out) - L.errors} warning(s){note}")
         for line in L.out: print("  " + line)
-        if not (args[0] == "--all" and draft): bad += L.errors
+        if args[0] == "--all" and not draft and L.form_errors:
+            print(f"  ({L.form_errors} lesson-form finding(s) in a published lesson: rework and republish it; they do not fail --all)")
+            bad += L.errors - L.form_errors
+        elif not (args[0] == "--all" and draft): bad += L.errors
     sys.exit(1 if bad else 0)

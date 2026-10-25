@@ -3,9 +3,11 @@
   python scripts/gate.py --hash <id>              print the full content hash of a lesson
   python scripts/gate.py --hash <id> --for <reviewer>   print the hash of the files that reviewer judges
   python scripts/gate.py <id>                     check only; exit 1 if the lesson is not publishable
-  python scripts/gate.py <id> --publish           check, then set status "reviewed" and rebuild site/
+  python scripts/gate.py <id> --publish           check, rebuild site/ with the lesson, then set status "reviewed"
   python scripts/gate.py <id> --log-round         append one line with this round's verdicts to review/history.log
-  python scripts/gate.py --verify                 CI: every published lesson still matches its recorded hash
+  python scripts/gate.py <id> --reopen            start revising a published lesson: its live page stays the reviewed render
+  python scripts/gate.py --verify                 CI: every published lesson still matches its recorded hash (or, under
+                                                  revision, its live page still matches the render the gate published)
   --skip-checks                                   (tests only) skip the lint, latex, build and simulation runs
 
 Hashes. The full content hash covers lesson.md, exercises.json, solutions.md, exit-ticket.json, sim.js,
@@ -31,7 +33,7 @@ DOMAINS = {
     "editor":         ["lesson.md", "exercises.json", "exit-ticket.json", "sim-spec.md", "meta"],
     "proofreader":    ["lesson.md", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md", "sim.js", "meta"],
 }
-STATUS_KEYS = ("status", "reviewed_by", "reviewed_on", "reviewed_hash")
+STATUS_KEYS = ("status", "reviewed_by", "reviewed_on", "reviewed_hash", "revision")
 GATE_NAME = "gate (automaattinen tarkistus)"
 
 
@@ -57,6 +59,39 @@ def content_hash(folder, reviewer=None):
             f = folder / name
             if f.exists(): h.update(name.encode() + b"\0" + f.read_bytes() + b"\0")
     return h.hexdigest()[:16]
+
+
+def site_hash(lid):
+    """Hash of the published render of a lesson (site/<id>.html and its sim), or None if it is not published."""
+    page = ROOT / "site" / f"{lid}.html"
+    if not page.exists(): return None
+    h = hashlib.sha256(page.read_bytes())
+    sim = ROOT / "site" / f"{lid}-sim.js"
+    if sim.exists(): h.update(sim.read_bytes())
+    return h.hexdigest()[:16]
+
+
+def reopen(lid):
+    """Mark a published lesson as under revision. Its source may now change while the live page stays exactly
+    the render the gate published; --verify checks that page instead of the source until --publish runs again."""
+    folder = find_lesson(lid)
+    meta = json.loads((folder / "meta.json").read_text())
+    if meta.get("status") != "reviewed" or not meta.get("reviewed_hash"):
+        print(f"{lid}: only a lesson the gate published can be reopened"); return 1
+    sh = site_hash(lid)
+    if sh is None:
+        print(f"{lid}: site/{lid}.html is missing, nothing to keep live"); return 1
+    if "revision" in meta:
+        print(f"{lid}: already under revision since {meta['revision']['opened']}"); return 0
+    if content_hash(folder) != meta["reviewed_hash"]:   # the live page is provably the reviewed render only if the source is untouched
+        print(f"{lid}: the source was edited after publication, so the live page cannot be certified; restore the lesson folder "
+              f"to its published state (git checkout), run --reopen, then make the edits"); return 1
+    meta["revision"] = {"opened": str(datetime.date.today()), "site_hash": sh, "reviewed_hash": meta["reviewed_hash"]}
+    (folder / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
+    review = folder / "review"; review.mkdir(exist_ok=True)
+    with open(review / "history.log", "a") as log: log.write(f"{datetime.date.today()} {lid} REOPENED (live page {sh} kept until the next publish)\n")
+    print(f"{lid}: under revision; the live page ({sh}) stays as reviewed until `gate.py {lid} --publish` passes again")
+    return 0
 
 
 def report_lines(folder, reviewer):
@@ -146,14 +181,15 @@ def gate(lid, publish, skip_checks):
     (review / "gate.md").write_text("\n".join(body) + "\n")
     print("\n".join(body))
     if ok and publish:
+        if not skip_checks:                       # the site is rebuilt with the lesson first; nothing is written if that fails
+            okb, out = run([sys.executable, str(SCRIPTS / "build.py"), "--publishing", lid])
+            if not okb:
+                print(f"\nBUILD FAILED, {lid} stays {meta.get('status', 'draft')} and nothing was recorded: {out}"); return 1
+        meta.pop("revision", None)
         meta.update({"status": "reviewed", "reviewed_by": GATE_NAME, "reviewed_on": str(datetime.date.today()), "reviewed_hash": h})
         (folder / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
         with open(review / "history.log", "a") as log: log.write(f"{datetime.date.today()} {lid} PUBLISHED {h}\n")
-        if not skip_checks:
-            okb, out = run([sys.executable, str(SCRIPTS / "build.py")])
-            print("\npublished: site/ rebuilt" if okb else f"\nBUILD FAILED after publishing: {out}")
-            return 0 if okb else 1
-        print("\npublished (build skipped)")
+        print("\npublished (build skipped)" if skip_checks else "\npublished: site/ rebuilt")
     return 0 if ok else 1
 
 
@@ -189,8 +225,14 @@ def verify():
         if not meta.get("reviewed_hash"):
             notes.append(f"{meta['id']}: published by {meta.get('reviewed_by') or 'hand'} without a reviewed_hash, so edits to it are not detected")
             continue
-        if meta["reviewed_hash"] != content_hash(f.parent):
-            bad.append(f"{meta['id']}: edited after it was published (re-run the review and the gate)")
+        rev = meta.get("revision")
+        if rev:                                   # source under revision: the live page must still be the reviewed render
+            if site_hash(meta["id"]) != rev.get("site_hash"):
+                bad.append(f"{meta['id']}: under revision, but its live page changed without the gate (restore site/{meta['id']}.html or publish through the gate)")
+            else:
+                notes.append(f"{meta['id']}: under revision since {rev.get('opened')}; the live page is still the reviewed render")
+        elif meta["reviewed_hash"] != content_hash(f.parent):
+            bad.append(f"{meta['id']}: edited after it was published (re-run the review and the gate, or run `gate.py {meta['id']} --reopen` to revise it)")
     print("\n".join(bad + notes) if bad or notes else "all published lessons match their recorded hash")
     return 1 if bad else 0
 
@@ -206,4 +248,5 @@ if __name__ == "__main__":
     ids = [x for x in a if not x.startswith("--")]
     if len(ids) != 1: sys.exit(__doc__)
     if "--log-round" in a: sys.exit(log_round(ids[0]))
+    if "--reopen" in a: sys.exit(reopen(ids[0]))
     sys.exit(gate(ids[0], "--publish" in a, "--skip-checks" in a))

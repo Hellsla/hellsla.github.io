@@ -13,3 +13,5 @@ Write `exercises.json` (level 1: 5, level 2: 4, level 3: 3), `solutions.md` and 
 - Rubric self-check before you finish, as a table in your final message: for each exercise, which level criterion it meets (one formula / two steps or a conversion / reasoning or an unfamiliar context) and which idea it needs beyond the worked example in `lesson.md`. An exercise that only changes the numbers of the worked example is rewritten before you hand over.
 - Run `python scripts/lint_lesson.py <id>` and fix every ERROR it reports.
 These are drafts: say so at the end, and list the three exercises you are least sure about.
+
+Human rule (CLAUDE.md, NOTES.md section 4): every solution solves symbolically first. The **Kaava:** line ends with the formula solved for the asked quantity in symbols only (`α = ΔL / (L₀ ΔT)`); only **Sijoitus:** has numbers, each with its unit.

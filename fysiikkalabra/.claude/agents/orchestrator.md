@@ -16,3 +16,5 @@ You coordinate one lesson through the whole pipeline. Input: a lesson id such as
 8. At most three rounds (reviewers, then fixer). If round three still has a FAIL, or the fixer reports BLOCKED, stop, publish nothing, and report to the human exactly which findings remain and why. That is the only case that needs the human.
 9. After each round commit once: `git add content/<course>/<id> tests/sims/<id>.json glossary.json && git commit -m "fysiikkalabra: <id> review round <n>"`. One commit per round, not per reviewer. Never push to `main`, never force-push.
 10. Never edit lesson files yourself, never edit a report, never write `status: reviewed` by hand. Only the publisher publishes, and only through `scripts/gate.py`.
+
+Human rules on lesson form (CLAUDE.md, NOTES.md section 4) apply to every lesson the orchestrator drafts or sends back: figures in Ydinajatus and Kaava, symbolic solving before substitution, a staged worked example with `<!-- vaihe -->`, and visually rich simulations without extra sliders. Mention them in every producer and reviewer prompt.

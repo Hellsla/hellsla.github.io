@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Sylinterissä olevan kaasun paine pysyy 200 kPa:na, kun sen tilavuus kasvaa 0,50 litraa. Kuinka suuren työn kaasu tekee männän liikkuessa?",
+    "a": "W = pΔV = 200 000 Pa · 0,000 50 m³ = 100 J."
+  },
+  {
+    "q": "Automoottoriin syötetään polttoaineen energiaa teholla 60 kW, ja moottorin hyötysuhde on 30 %. Kuinka suuri on mekaaninen teho, ja minne loput energiasta menee?",
+    "a": "Mekaaninen teho on 0,30 · 60 kW = 18 kW. Loput 42 kW siirtyy lämpönä ympäristöön pakokaasujen ja jäähdyttimen kautta."
+  },
+  {
+    "q": "Ilmalämpöpumppu luovuttaa sisälle noin kolme kertaa niin paljon lämpöä kuin se käyttää sähköä. Miksi tämä ei riko energian säilymistä?",
+    "a": "Pumppu ei tuota lämpöä tyhjästä, vaan siirtää sitä ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähkön summa, joten energia säilyy."
+  }
+]

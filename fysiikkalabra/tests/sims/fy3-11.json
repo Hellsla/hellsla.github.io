@@ -1,0 +1,548 @@
+[
+ {
+  "expr": "(() => { const s=document.querySelector('#sim-root select'); return s.value==='lauhdevoimalaitos' && window.simState.mode==='lauhdevoimalaitos' && window.simState.unit==='MW' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: lauhdevoimalaitos, unit MW (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.Pin",
+  "expected": 1000,
+  "tol": 1e-06,
+  "note": "on load: fuel power 1000 MW"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 40,
+  "tol": 1e-06,
+  "note": "on load: efficiency 40 %"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select option')].map(x=>x.value).join(','); return o==='lauhdevoimalaitos,yhteistuotanto,automoottori,ilmalämpöpumppu' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "select has the four situations in order"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const i=(n)=>k.indexOf(n); return i('canvas')===0 && i('canvas')<i('controls') && i('controls')<i('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order: canvas, div.controls, div.readout"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas').getBoundingClientRect(); return Math.round(c.width)===600 && Math.round(c.height)===400 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600 x 400 at 1280 px"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Puse",
+  "expected": 400,
+  "tol": 1e-06,
+  "note": "lauhde preset: electricity = 0,40 * 1000 MW = 400 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pwaste",
+  "expected": 600,
+  "tol": 1e-06,
+  "note": "lauhde preset: waste heat = 1000 MW - 400 MW = 600 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pheat",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "lauhde: no district heat"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.etaTotal",
+  "expected": 40,
+  "tol": 1e-06,
+  "note": "lauhde: total efficiency = efficiency = 40 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pin",
+  "expected": 1000,
+  "tol": 1e-06,
+  "note": "CHP preset: fuel 1000 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.eta",
+  "expected": 30,
+  "tol": 1e-06,
+  "note": "CHP preset: electricity share 30 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.heatShare",
+  "expected": 55,
+  "tol": 1e-06,
+  "note": "CHP preset: district heat share 55 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Puse",
+  "expected": 300,
+  "tol": 1e-06,
+  "note": "CHP preset: electricity 300 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pheat",
+  "expected": 550,
+  "tol": 1e-06,
+  "note": "CHP preset: district heat 550 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pwaste",
+  "expected": 150,
+  "tol": 1e-06,
+  "note": "CHP preset: waste heat 150 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.etaTotal",
+  "expected": 85,
+  "tol": 1e-06,
+  "note": "CHP preset: total efficiency 85 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pin",
+  "expected": 60,
+  "tol": 1e-06,
+  "note": "car preset: fuel 60 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.eta",
+  "expected": 30,
+  "tol": 1e-06,
+  "note": "car preset: efficiency 30 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Puse",
+  "expected": 18,
+  "tol": 1e-06,
+  "note": "car preset: mechanical work 0,30 * 60 kW = 18 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pwaste",
+  "expected": 42,
+  "tol": 1e-06,
+  "note": "car preset: waste heat 42 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.unit==='kW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "car: unit kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pel",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "heat pump preset: electricity 1,0 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.cop",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "heat pump preset: lämpökerroin 3,0"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pout",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "heat pump preset: heat inside 3,0 * 1,0 kW = 3,0 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pambient",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "heat pump preset: heat from outdoor air 3,0 kW - 1,0 kW = 2,0 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.Pin===null && window.simState.Puse===null && window.simState.unit==='kW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heat pump: engine fields null, unit kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===100 && Number(p.max)===2000 && Number(p.step)===10 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "lauhdevoimalaitos: input power slider 100-2000 step 10"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===100 && Number(p.max)===2000 && Number(p.step)===10 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "yhteistuotanto: input power slider 100-2000 step 10"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===10 && Number(p.max)===200 && Number(p.step)===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "automoottori: input power slider 10-200 step 1"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===0.5 && Number(p.max)===5 && Number(p.step)===0.1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "ilmalämpöpumppu: input power slider 0.5-5 step 0.1"
+ },
+ {
+  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); return r[1].min==='10' && r[1].max==='60' && r[2].min==='0' && r[2].max==='65' && r[3].min==='1.5' && r[3].max==='5' && r[3].step==='0.1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "ranges: efficiency 10-60 %, district heat 0-65 %, lämpökerroin 1,5-5,0 step 0,1"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
+  "expected": 1100,
+  "tol": 0,
+  "note": "lauhdevoimalaitos: power and efficiency shown, district heat and cop hidden"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
+  "expected": 1110,
+  "tol": 0,
+  "note": "yhteistuotanto: power, efficiency, district heat shown, cop hidden"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
+  "expected": 1100,
+  "tol": 0,
+  "note": "automoottori: power and efficiency shown"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
+  "expected": 1001,
+  "tol": 0,
+  "note": "ilmalämpöpumppu: electric power and cop shown, efficiency and district heat hidden"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=1500;",
+  "expr": "window.simState.Puse",
+  "expected": 600,
+  "tol": 1e-06,
+  "note": "power slider: lauhde 1500 MW at 40 % gives 600 MW electricity"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[1].value=25;",
+  "expr": "window.simState.Puse",
+  "expected": 250,
+  "tol": 1e-06,
+  "note": "efficiency slider: lauhde 1000 MW at 25 % gives 250 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[2].value=40;",
+  "expr": "window.simState.Pheat",
+  "expected": 400,
+  "tol": 1e-06,
+  "note": "district heat slider: CHP 40 % of 1000 MW = 400 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[2].value=40;",
+  "expr": "window.simState.Pwaste",
+  "expected": 300,
+  "tol": 1e-06,
+  "note": "CHP 30 % + 40 %: waste heat 300 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[3].value=4.5;",
+  "expr": "window.simState.Pout",
+  "expected": 4.5,
+  "tol": 1e-06,
+  "note": "cop slider: 4,5 * 1,0 kW = 4,5 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=2;",
+  "expr": "window.simState.Pout",
+  "expected": 6,
+  "tol": 1e-06,
+  "note": "pump power slider: 2,0 kW * 3,0 = 6,0 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=200; r[1].value=25;",
+  "expr": "window.simState.Puse",
+  "expected": 50,
+  "tol": 1e-06,
+  "note": "car power slider: 200 kW at 25 % = 50 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=1730; r[1].value=33;",
+  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
+  "expected": 1730,
+  "tol": 1e-06,
+  "note": "conservation lauhdevoimalaitos P=1730, eta=33, h=None: Puse + Pheat + Pwaste = Pin"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=240; r[1].value=57;",
+  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
+  "expected": 240,
+  "tol": 1e-06,
+  "note": "conservation lauhdevoimalaitos P=240, eta=57, h=None: Puse + Pheat + Pwaste = Pin"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=850; r[1].value=45; r[2].value=40;",
+  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
+  "expected": 850,
+  "tol": 1e-06,
+  "note": "conservation yhteistuotanto P=850, eta=45, h=40: Puse + Pheat + Pwaste = Pin"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=1960; r[1].value=12; r[2].value=7;",
+  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
+  "expected": 1960,
+  "tol": 1e-06,
+  "note": "conservation yhteistuotanto P=1960, eta=12, h=7: Puse + Pheat + Pwaste = Pin"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=137; r[1].value=22;",
+  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
+  "expected": 137,
+  "tol": 1e-06,
+  "note": "conservation automoottori P=137, eta=22, h=None: Puse + Pheat + Pwaste = Pin"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=11; r[1].value=58;",
+  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
+  "expected": 11,
+  "tol": 1e-06,
+  "note": "conservation automoottori P=11, eta=58, h=None: Puse + Pheat + Pwaste = Pin"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=1960; r[1].value=12; r[2].value=7;",
+  "expr": "window.simState.Puse",
+  "expected": 235.2,
+  "tol": 1e-06,
+  "note": "CHP 1960 MW, 12 %: electricity 235,2 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=850; r[1].value=45; r[2].value=40;",
+  "expr": "window.simState.etaTotal",
+  "expected": 85,
+  "tol": 1e-06,
+  "note": "CHP 45 % + 40 %: total efficiency 85 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=2.7; r[3].value=1.8;",
+  "expr": "window.simState.Pel + window.simState.Pambient",
+  "expected": 4.86,
+  "tol": 1e-06,
+  "note": "conservation heat pump Pel=2.7, cop=1.8: Pel + Pambient = Pout = 4.86 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=2.7; r[3].value=1.8;",
+  "expr": "window.simState.Pout",
+  "expected": 4.86,
+  "tol": 1e-06,
+  "note": "heat pump Pel=2.7, cop=1.8: Pout = cop * Pel"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=4.2; r[3].value=4.6;",
+  "expr": "window.simState.Pel + window.simState.Pambient",
+  "expected": 19.32,
+  "tol": 1e-06,
+  "note": "conservation heat pump Pel=4.2, cop=4.6: Pel + Pambient = Pout = 19.32 kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=4.2; r[3].value=4.6;",
+  "expr": "window.simState.Pout",
+  "expected": 19.32,
+  "tol": 1e-06,
+  "note": "heat pump Pel=4.2, cop=4.6: Pout = cop * Pel"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65;",
+  "expr": "window.simState.heatShare",
+  "expected": 35,
+  "tol": 1e-06,
+  "note": "CHP cap: 60 % + 65 % is cut to 60 % + 35 % (district heat yields)"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65;",
+  "expr": "Number(document.querySelectorAll('#sim-root input[type=range]')[2].value)",
+  "expected": 35,
+  "tol": 1e-06,
+  "note": "CHP cap moves the district heat slider to 35 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65; r[2].dispatchEvent(new Event('input'));",
+  "expr": "window.simState.eta",
+  "expected": 30,
+  "tol": 1e-06,
+  "note": "CHP cap: after moving the district heat slider to 65 %, electricity drops to 30 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65; r[2].dispatchEvent(new Event('input'));",
+  "expr": "window.simState.Pwaste",
+  "expected": 50,
+  "tol": 1e-06,
+  "note": "CHP at the cap: waste heat 5 % of 1000 MW = 50 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=61; r[1].value=37;",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Energia säilyy: sisään 61,0 kW = ulos 22,6 kW + 38,4 kW = 61,0 kW') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "car readout: energy check line with decimal comma and nbsp before unit"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=61; r[1].value=37;",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Hyötysuhde η = 22,6 kW / 61,0 kW = 37 %') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "car readout: efficiency line"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=61; r[1].value=37;",
+  "expr": "/\\d\\.\\d/.test(document.querySelector('#sim-root .readout').textContent) ? 0 : 1",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout has no decimal point"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('kokonaishyötysuhde (300 MW + 550 MW) / 1000 MW = 85 %') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "CHP readout: total efficiency 85 %"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Energia säilyy: sisään 1000 MW = ulos 300 MW + 550 MW + 150 MW = 1000 MW') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "CHP readout: energy check"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Energia säilyy: sisään 1,00 kW + 2,00 kW = 3,00 kW = ulos 3,00 kW') && document.querySelector('#sim-root .readout').textContent.includes('ei luo energiaa') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heat pump readout: energy check and 'does not create energy' sentence"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('avainpalkki on 100 MW') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout prints the scale key 100 MW at 1000 MW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=370;",
+  "expr": "window.simState.scale * window.simState.Pin / window.simState.bandTotal",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "scale: total power fills the whole band width (px per MW = W / Pin)"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=10;",
+  "expr": "window.simState.bandTotal",
+  "expected": 210,
+  "tol": 1e-06,
+  "note": "at 1280 px the band fills its full 210 px whatever the input power"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const t=[...document.querySelectorAll('#sim-root label span')].map(x=>x.textContent); return t.includes('Polttoaineen teho = 1000 MW') && t.includes('Hyötysuhde η = 40 %') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "lauhde slider labels carry units"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const t=[...document.querySelectorAll('#sim-root label span')].map(x=>x.textContent); return t.includes('Sähköteho = 1,0 kW') && t.includes('Lämpökerroin = 3,0') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "heat pump slider labels with decimal comma"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "(() => { const t=[...document.querySelectorAll('#sim-root label span')].map(x=>x.textContent); return t.includes('Kaukolämmön osuus = 55 %') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "CHP district heat slider label"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.labels.join('|')==='polttoaine 1000 MW|sähkö 400 MW|hukkalämpö 600 MW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "lauhde canvas labels: name, value and unit"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.labels.join('|')==='polttoaine 60,0 kW|mekaaninen teho 18,0 kW|hukkalämpö 42,0 kW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "car canvas labels with decimal comma and kW"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.labels.join('|')==='sähkö 1,00 kW|ulkoilman lämpö 2,00 kW|lämpö sisälle 3,00 kW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heat pump canvas labels"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
+  "expr": "window.simState.labels.join('|')==='polttoaine 1000 MW|sähkö 300 MW|kaukolämpö 550 MW|hukkalämpö 150 MW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "CHP canvas labels"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[2].value=0;",
+  "expr": "window.simState.labels[2]==='kaukolämpö 0 MW' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "CHP with 0 % district heat still labels the zero flow"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=100; r[1].value=60; r[2].value=35;",
+  "expr": "(() => { const b=window.simDebug.boxes, n=Object.keys(b); let bad=0; for (const k of n) { const q=b[k]; if (q[0]<0||q[1]>600||q[2]<0||q[3]>400) bad++; } for (let i=0;i<n.length;i++) for (let j=i+1;j<n.length;j++) { const x=b[n[i]], y=b[n[j]]; if (x[0]<y[1]&&y[0]<x[1]&&x[2]<y[3]&&y[2]<x[3]) bad++; } return bad })()",
+  "expected": 0,
+  "tol": 0,
+  "note": "no canvas text overlaps or leaves the canvas: yhteistuotanto {'P': 100, 'e': 60, 'h': 35}"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=10; r[1].value=10;",
+  "expr": "(() => { const b=window.simDebug.boxes, n=Object.keys(b); let bad=0; for (const k of n) { const q=b[k]; if (q[0]<0||q[1]>600||q[2]<0||q[3]>400) bad++; } for (let i=0;i<n.length;i++) for (let j=i+1;j<n.length;j++) { const x=b[n[i]], y=b[n[j]]; if (x[0]<y[1]&&y[0]<x[1]&&x[2]<y[3]&&y[2]<x[3]) bad++; } return bad })()",
+  "expected": 0,
+  "tol": 0,
+  "note": "no canvas text overlaps or leaves the canvas: automoottori {'P': 10, 'e': 10}"
+ },
+ {
+  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=0.5; r[3].value=5;",
+  "expr": "(() => { const b=window.simDebug.boxes, n=Object.keys(b); let bad=0; for (const k of n) { const q=b[k]; if (q[0]<0||q[1]>600||q[2]<0||q[3]>400) bad++; } for (let i=0;i<n.length;i++) for (let j=i+1;j<n.length;j++) { const x=b[n[i]], y=b[n[j]]; if (x[0]<y[1]&&y[0]<x[1]&&x[2]<y[3]&&y[2]<x[3]) bad++; } return bad })()",
+  "expected": 0,
+  "tol": 0,
+  "note": "no canvas text overlaps or leaves the canvas: ilmalämpöpumppu {'P': 0.5, 'c': 5}"
+ }
+]

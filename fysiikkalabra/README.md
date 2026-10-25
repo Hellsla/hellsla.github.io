@@ -53,7 +53,7 @@ python scripts/test_gate.py             # the gate's own tests
 ```
 A lesson is published only when all required reviewers wrote `VERDICT: PASS` with the current `CONTENT-HASH` of the files they judge
 (`gate.py --hash <id> --for <reviewer>`), the lesson structure is valid, and the lint, `answers.py`, LaTeX, build and simulation checks pass. Editing the lesson afterwards changes the hash
-and CI (`gate.py --verify`) fails until the review runs again. The publisher commits to the working branch only; merging
+and CI (`gate.py --verify`) fails until the review runs again, unless the lesson was reopened with `gate.py <id> --reopen`: then the live page in `site/` is kept exactly as published (and verified by hash) while the source is revised, and the next `--publish` replaces it. The publisher commits to the working branch only; merging
 into `main`, which makes the page live, stays a repository decision.
 
 ## Exercise schema

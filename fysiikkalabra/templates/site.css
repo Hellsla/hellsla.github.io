@@ -45,6 +45,7 @@ blockquote{margin:1.4rem 0;padding:1rem 1.2rem;border-left:4px solid var(--accen
 blockquote p{margin:0}
 li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+@media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.08em) so the widest row (fy3-3) fits 360 px; at 390 px and up nothing overflows, so formulas stay full size */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 
 /* front page and module pages */
@@ -145,3 +146,15 @@ details.solution .steps p{margin:0}
   h2{break-after:avoid}
 }
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
+
+/* worked example in stages (build.py staged_example, lesson.js) */
+.worked{margin:.8rem 0 1rem}
+.worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem .9rem;margin:.6rem 0}
+.worked .step:focus{outline:none}
+.worked .step-label{margin:0 0 .2rem;font:600 .8rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--accent-deep)}
+.worked .step-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0}
+.worked .step-controls button{min-height:40px;padding:.4rem 1rem;border-radius:999px;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep);font:600 .9rem var(--sans);cursor:pointer}
+.worked .step-controls button.next-step{background:var(--accent-deep);color:var(--surface)}
+.worked .step-controls button[hidden]{display:none}
+.worked:not(.js) .step-controls{display:none}
+@media print{.worked .step-controls{display:none}}

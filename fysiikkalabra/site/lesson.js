@@ -1,7 +1,8 @@
 /* Lesson page behaviour. Everything runs in the browser; nothing is stored or sent anywhere.
    1. Answer check: compares the typed number with data-answer within the relative data-tol.
    2. Section nav: marks the section currently on screen.
-   3. Print: opens every collapsed block while printing. */
+   3. Worked example in stages: reveals the solution one stage at a time.
+   4. Print: opens every collapsed block and every hidden stage while printing. */
 (() => {
   const parse = (s) => {
     const t = s.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, '');
@@ -56,10 +57,31 @@
     update();
   }
 
+  // Worked example in stages: stage 1 is shown, "Näytä seuraava vaihe" reveals one more, "Näytä kaikki" the rest.
+  document.querySelectorAll('.worked').forEach((w) => {
+    const steps = [...w.querySelectorAll('.step')];
+    const next = w.querySelector('.next-step'), all = w.querySelector('.all-steps');
+    let shown = 1;
+    const show = () => {
+      steps.forEach((s, i) => { s.hidden = i >= shown; });
+      const done = shown >= steps.length;
+      next.hidden = done; all.hidden = done;
+    };
+    w.classList.add('js');
+    next.addEventListener('click', () => { shown += 1; show(); steps[shown - 1].focus?.(); });
+    all.addEventListener('click', () => { shown = steps.length; show(); });
+    steps.forEach((s) => s.setAttribute('tabindex', '-1'));
+    show();
+  });
+
   let opened = [];
   window.addEventListener('beforeprint', () => {
     opened = [...document.querySelectorAll('details:not([open])')];
     opened.forEach((d) => { d.open = true; });
+    document.querySelectorAll('.worked .step[hidden]').forEach((s) => { s.hidden = false; s.dataset.printOpened = '1'; });
   });
-  window.addEventListener('afterprint', () => { opened.forEach((d) => { d.open = false; }); opened = []; });
+  window.addEventListener('afterprint', () => {
+    opened.forEach((d) => { d.open = false; }); opened = [];
+    document.querySelectorAll('.worked .step[data-print-opened]').forEach((s) => { s.hidden = true; delete s.dataset.printOpened; });
+  });
 })();

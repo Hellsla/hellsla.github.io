@@ -14,3 +14,5 @@ Input: a lesson id. Read `CLAUDE.md`, `NOTES.md`, the lesson folder and every `r
 6. Run `python scripts/lint_lesson.py <id>`, `python scripts/build.py --all`, `python scripts/check_latex.py content/<course>/<id>` , `python scripts/test_sims.py <id>` and `python scripts/check_layout.py <id>` (phone width); fix what they report until lint shows no ERROR.
 7. Write `review/fixer.md` (first line `VERDICT: DONE` or `VERDICT: BLOCKED`): numbered list of findings, what you changed for each or why you did not, and which files changed. BLOCKED means a finding needs a decision that is not yours; say which.
 Only the reviewers whose files changed have to run again (`python scripts/gate.py <id>` lists them as stale); say which in your last line.
+
+Human rules on lesson form (CLAUDE.md, NOTES.md section 4) are never optional: at least one SVG figure in Ydinajatus and one in Kaava, no paragraph over about 120 words, symbolic solving before substitution in examples and solutions, the worked example staged with `<!-- vaihe -->`, and simulations made visually rich without new sliders. When you touch a lesson that does not meet them yet, bring it up to them.

@@ -25,6 +25,12 @@ jobs:
       - run: python scripts/test_gate.py
       - run: python scripts/gate.py --verify
       - run: python scripts/test_sims.py
+      - name: committed site/ is exactly a fresh render of the reviewed sources and templates
+        run: |
+          python scripts/build.py
+          if [ -n "$(git status --porcelain site/)" ]; then echo "site/ is not a fresh render of the reviewed sources (run build.py and commit):"; git status --short site/; exit 1; fi
+      - name: every published page fits a 360 px phone
+        run: python scripts/check_layout.py --site
       - run: |
           for d in content/*/*/; do
             case "$d" in *_gold*) continue;; esac

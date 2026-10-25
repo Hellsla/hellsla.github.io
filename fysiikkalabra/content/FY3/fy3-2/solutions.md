@@ -25,7 +25,7 @@
 ## fy3-2-L1-04
 **Annettu:** F = 35 N vakiona, s = 6,0 m
 **Kysytty:** W
-**Kaava:** W = kuvaajan pinta-ala = suorakulmio F · s
+**Kaava:** W = kuvaajan pinta-ala; vakiovoimalla se on suorakulmio, joten W = F s
 **Sijoitus:** W = 35 N · 6,0 m = 210 J
 **Vastaus:** 210 J
 **Järkevyys:** Kuvaajan pinta-ala ja kaava W = F s antavat saman tuloksen, koska vakiovoimalla pinta-ala on suorakulmio. Yksikkö N·m on joule.
@@ -57,31 +57,31 @@
 ## fy3-2-L2-03
 **Annettu:** m = 850 kg, h = 30 m, g = 9,81 m/s²
 **Kysytty:** W
-**Kaava:** G = m g ja W = G h
-**Sijoitus:** G = 850 kg · 9,81 m/s² = 8338,5 N; W = 8338,5 N · 30 m = 250 155 J
+**Kaava:** W = G h ja G = m g, joten W = m g h
+**Sijoitus:** W = 850 kg · 9,81 m/s² · 30 m = 250 155 J
 **Vastaus:** 250 kJ
 **Järkevyys:** Elementti painaa yli 8 kN, ja 30 m on kymmenkerroksisen talon korkeus. Neljännesmegajoulen työ on uskottava.
 
 ## fy3-2-L2-04
-**Annettu:** F = 10 N matkalla 0–2,0 m; F kasvaa 10 N:sta 30 N:iin matkalla 2,0–6,0 m
+**Annettu:** F₁ = 10 N vakiona matkalla s₁ = 2,0 m (0–2,0 m); sitten F kasvaa tasaisesti F₁ = 10 N:sta F₂ = 30 N:iin matkalla s₂ = 4,0 m (2,0–6,0 m)
 **Kysytty:** W
-**Kaava:** W = kuvaajan pinta-ala (suorakulmio + puolisuunnikas)
-**Sijoitus:** W₁ = 10 N · 2,0 m = 20 J; W₂ = ½ (10 N + 30 N) · 4,0 m = 80 J; W = 20 J + 80 J = 100 J
+**Kaava:** W = kuvaajan pinta-ala = suorakulmio + puolisuunnikas, joten W = F₁ s₁ + ½ (F₁ + F₂) s₂
+**Sijoitus:** W = 10 N · 2,0 m + ½ · (10 N + 30 N) · 4,0 m = 20 J + 80 J = 100 J
 **Vastaus:** 100 J
 **Järkevyys:** Keskimääräinen voima on 100 J / 6,0 m ≈ 17 N, mikä on 10 N:n ja 30 N:n välissä.
 
 ## fy3-2-L3-01
-**Annettu:** voima nousee 0 → 40 N matkalla 0,50 m, pysyy 40 N:ssä matkalla 1,0 m ja laskee 40 N → 0 matkalla 0,50 m; kokonaismatka 2,0 m
+**Annettu:** F = 40 N; nousu 0 → F matkalla s₁ = 0,50 m, vakio matkalla s₂ = 1,0 m, lasku F → 0 matkalla s₃ = 0,50 m; s = 2,0 m
 **Kysytty:** keskimääräinen voima F_ka
-**Kaava:** W = kuvaajan pinta-ala, W = F_ka s, joten F_ka = W / s
+**Kaava:** W = kuvaajan pinta-ala = ½ F s₁ + F s₂ + ½ F s₃ ja W = F_ka s, joten F_ka = W / s
 **Sijoitus:** W = ½ · 40 N · 0,50 m + 40 N · 1,0 m + ½ · 40 N · 0,50 m = 10 J + 40 J + 10 J = 60 J; F_ka = 60 J / 2,0 m = 30 N
 **Vastaus:** 30 N
-**Järkevyys:** Keskiarvo on pienempi kuin huippuarvo 40 N, koska alussa ja lopussa voima on pieni. Sopii.
+**Järkevyys:** Keskiarvo on huippuarvoa 40 N pienempi, koska voima on alussa ja lopussa pieni.
 
 ## fy3-2-L3-02
-**Annettu:** m = 2,0 kg, h = 1,5 m, 20 pudotusta, g = 9,81 m/s²
+**Annettu:** m = 2,0 kg, h = 1,5 m, pudotuksia n = 20, g = 9,81 m/s²
 **Kysytty:** veteen siirtynyt lämpömäärä Q
-**Kaava:** yhden pudotuksen työ W₁ = m g h; kaikki työ siirtyy veteen lämpönä, joten Q = 20 W₁
+**Kaava:** yhden pudotuksen työ W₁ = m g h; kaikki työ siirtyy veteen lämpönä, joten Q = n W₁ = n m g h
 **Sijoitus:** W₁ = 2,0 kg · 9,81 m/s² · 1,5 m = 29,43 J; Q = 20 · 29,43 J = 588,6 J
 **Vastaus:** 590 J
 **Järkevyys:** Alle 600 J on pieni energiamäärä, joten lämpötilan muutos oli pieni ja vaati tarkkaa mittausta. Siksi Joule toisti pudotuksia monta kertaa.
