@@ -40,10 +40,10 @@ Lämpenemiskäyrä näyttää lämpötilan siirretyn energian funktiona. Nousevi
   <text x="62" y="86" text-anchor="end" fill="currentColor">100</text>
   <text x="78" y="26" fill="currentColor">T (°C)</text>
   <text x="580" y="282" text-anchor="end" fill="currentColor">Q</text>
-  <text x="86" y="193" text-anchor="start" fill="currentColor">sulaa, Q = sm</text>
+  <text x="86" y="191" text-anchor="start" fill="currentColor">sulaa, Q = sm</text>
   <text x="372" y="70" text-anchor="middle" fill="currentColor">kiehuu, Q = rm</text>
   <text x="174" y="140" text-anchor="start" fill="currentColor">vesi lämpenee</text>
-  <text x="80" y="226" text-anchor="start" fill="currentColor">jää</text>
+  <text x="76" y="236" text-anchor="start" fill="currentColor">jää</text>
   <text x="542" y="52" text-anchor="end" fill="currentColor">höyry</text>
 </svg>
 

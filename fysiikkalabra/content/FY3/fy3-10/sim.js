@@ -19,7 +19,7 @@ new p5((p) => {
   const BOX = { x: 16, y: 76 };                                  // top-left corner of the gas region
   const V300 = 240, KT300 = V300 * V300 / 2;                     // v_rms at 300 K (px/s); kT/m = <v²>/2 in 2D
   const P_REF = 100 * KT300 / (LXMAX * LY);                      // p = NkT/A in the reference state (m = 1)
-  const BAR = { ax: 398, x: [446, 540], w: 54, y0: 345, y1: 130 };   // pressure axis, bar centres, bar area
+  const BAR = { ax: 404, x: [446, 540], w: 54, y0: 345, y1: 130 };   // pressure axis, bar centres, bar area
   let rnd, parts = [], N = 0, T = 300, Lx = LXMAX, acc = 0, bins = [], cur = 0, curSteps = 0, top = 0, tStep = 1;
   let sN, lN, sT, lT, sV, lV, readout;
 
@@ -128,7 +128,7 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(4); p.noFill();
     p.line(x0, y0, x0 + wNow, y0); p.line(x0, y0 + h, x0 + wNow, y0 + h); p.line(x0, y0, x0, y0 + h);
     p.noStroke(); p.fill(90); p.rect(x0 + wNow, y0 - 8, 8, h + 16);
-    p.rect(x0 + wNow + 8, y0 + h / 2 - 3, x0 + wFull + 14 - (x0 + wNow + 8), 6);
+    p.rect(x0 + wNow + 8, y0 + h / 2 - 3, x0 + wFull + 12 - (x0 + wNow + 8), 6);
 
     // bars: measured and predicted relative pressure, axis scaled to the values shown (steps 1, 2 or 5 · 10ⁿ)
     const v = Math.max(pm, pp);
