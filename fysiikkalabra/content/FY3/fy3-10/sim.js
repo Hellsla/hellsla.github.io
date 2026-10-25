@@ -78,8 +78,8 @@ new p5((p) => {
   const update = () => {
     const tAvg = (bins.length * BIN + curSteps) * DT, J = bins.reduce((a, b) => a + b, 0) + cur;
     const pMeasured = tAvg > 0 ? J / tAvg / P_REF : 0, Vrel = Number(sV.value()) / 100;
-    const pPredicted = (N / 100) * (T / 300) / Vrel;
-    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg };
+    const pPredicted = (N / 100) * (T / 300) / Vrel, vrms = Math.sqrt(parts.reduce((a, q) => a + q.vx * q.vx + q.vy * q.vy, 0) / N);
+    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, vrms };
     return window.simState;
   };
 

@@ -69,7 +69,7 @@
     {
       "id": "fy3-8-L2-04",
       "level": 2,
-      "text": "Kerrostalon julkisivussa on 3,00 m pitkä metallinen lista. Aamulla listan lämpötila on 12 °C, ja iltapäivällä aurinko on lämmittänyt sen 42 °C:seen. Mittausten mukaan lista on pidentynyt 2,07 mm. Laske listan pituuden lämpötilakerroin α yksikössä 10⁻⁶ 1/K ja päättele oppitunnin taulukosta, mistä metallista lista on tehty (teräs 12, alumiini 23, kupari 17, kaikki · 10⁻⁶ 1/K).",
+      "text": "Kerrostalon julkisivussa on 3,00 m pitkä metallinen lista. Aamulla listan lämpötila on 12 °C, ja iltapäivällä aurinko on lämmittänyt sen 42 °C:seen. Mittausten mukaan lista on pidentynyt 2,07 mm. Laske listan pituuden lämpötilakerroin α yksikössä 10⁻⁶ 1/K ja päättele oppitunnin taulukosta, mistä metallista lista on tehty (teräs 12, alumiini 23, kupari 17, kaikki yksikössä 10⁻⁶ 1/K).",
       "answer": 23,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.02
