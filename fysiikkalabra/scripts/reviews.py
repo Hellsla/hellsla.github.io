@@ -107,7 +107,7 @@ def hash_at(commit, folder):
     h, found = hashlib.sha256(), False
     files = [(n, f"{rel}/{n}") for n in CONTENT] + [(f"tests/sims/{folder.name}.json", f"tests/sims/{folder.name}.json")]
     for name, path in files:
-        text = git("show", f"{commit}:{path}")
+        text = git("show", f"{commit}:./{path}")          # ./ makes the path relative to the working directory, not the repository root
         if text is None: continue
         found = True; h.update(name.encode() + b"\0" + normalized(text, name).encode() + b"\0")
     return h.hexdigest()[:16] if found else None
