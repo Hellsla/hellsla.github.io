@@ -19,8 +19,9 @@ BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
 arg = sys.argv[1] if len(sys.argv) > 1 else None
 build_all = arg == "--all"; only = None if build_all else arg
 SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
-for old in SITE.glob("*.html"): old.unlink()          # no stale pages from an earlier build
-for old in SITE.glob("*-sim.js"): old.unlink()
+if SITE.name == "site":                               # no stale pages in the published folder; preview/ is shared by
+    for old in SITE.glob("*.html"): old.unlink()      # agents building at the same time, so it is never wiped
+    for old in SITE.glob("*-sim.js"): old.unlink()
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
