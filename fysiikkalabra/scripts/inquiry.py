@@ -194,7 +194,8 @@ def question_html(q, md, lid, aid):
 def experiment_html(a, md, lid):
     units = a.get("units", {}); names = a.get("names", {})
     nm = lambda k: esc(names.get(k, k))
-    fmt = lambda k, v: f"{nm(k)} = {esc(v)}" + (f" {esc(units[k])}" if k in units else "")
+    fi = lambda v: str(v).replace(".", ",") if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
+    fmt = lambda k, v: f"{nm(k)} = {esc(fi(v))}" + (f" {esc(units[k])}" if k in units else "")
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
     locked = ", ".join(nm(k) for k in a["locked"]) or "ei mitään"
     cols = "".join(f"<th>{esc(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
