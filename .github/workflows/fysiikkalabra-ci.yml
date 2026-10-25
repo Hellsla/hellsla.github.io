@@ -22,8 +22,8 @@ jobs:
       - run: pip install markdown playwright && playwright install --with-deps chromium
       - run: python scripts/lint_lesson.py --all
       - run: python scripts/build.py --all
-      - run: python scripts/test_gate.py
-      - run: python scripts/gate.py --verify
+      - run: python scripts/test_reviews.py
+      - run: python scripts/reviews.py verify
       - run: python scripts/test_sims.py
       - name: committed site/ is exactly a fresh render of the reviewed sources and templates
         run: |

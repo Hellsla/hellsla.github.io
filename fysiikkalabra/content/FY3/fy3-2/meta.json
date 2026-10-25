@@ -17,14 +17,5 @@
     "joule"
   ],
   "sim": true,
-  "image": false,
-  "status": "reviewed",
-  "reviewed_by": "Hellsla",
-  "reviewed_on": "2026-10-24",
-  "reviewed_hash": "82819c566065c035",
-  "revision": {
-    "opened": "2026-10-25",
-    "site_hash": "8ede4cc110cd8996",
-    "reviewed_hash": "82819c566065c035"
-  }
+  "image": false
 }

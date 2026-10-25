@@ -18,9 +18,5 @@
     "eristetty systeemi"
   ],
   "sim": false,
-  "image": false,
-  "status": "reviewed",
-  "reviewed_by": "gate (automaattinen tarkistus)",
-  "reviewed_on": "2026-10-25",
-  "reviewed_hash": "865fd5555b08e477"
+  "image": false
 }

@@ -1,57 +1,34 @@
-"""Render content/ folders into site/. Usage: python scripts/build.py [lesson-id]
+"""Render content/ folders into site/. Usage: python scripts/build.py [lesson-id | --all]
 
-Without an argument only lessons with "status": "reviewed" are built (publishing rule).
-With a lesson id that lesson is built regardless of status, for previewing a draft.
-With --all every lesson is built regardless of status (CI uses this to test drafts too).
-The plain build writes to site/ (committed, served by GitHub Pages); a preview or --all build
-writes to preview/ (git-ignored), so a draft can never end up in the published folder.
+Without an argument only lessons whose reviews are current are built (scripts/reviews.py: state reviewed, or
+legacy for a prototype lesson kept visible by the teacher), into site/ (committed, served by GitHub Pages).
+With a lesson id that lesson is built regardless of its state into the git-ignored preview/; with --all every
+lesson is (CI uses this to test drafts too). So a draft can never end up in the published folder.
 The plain build renders into site.tmp/, checks that every expected page is there and swaps it in only then,
-so a failed build never leaves site/ incomplete. `--publishing <id>` (used by gate.py --publish) renders that lesson as reviewed,
-so the gate can write the status only after the site holds the lesson.
+so a failed build never leaves site/ incomplete. A lesson that is on the live site but whose reviews are no
+longer current is left out with a WARNING (an annotation on CI), never silently.
 
 Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` lines (staged_example).
 The simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
 or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side answer check and, depending on
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
 """
-import json, sys, re, shutil, pathlib, atexit, html as _h, markdown
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from gate import content_hash   # same hash as the gate
+import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/
 BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
 arg = sys.argv[1] if len(sys.argv) > 1 else None
-build_all = arg == "--all"
-publishing = sys.argv[2] if arg == "--publishing" and len(sys.argv) > 2 else None   # gate.py --publish: render this lesson as reviewed
-only = None if (build_all or publishing) else arg
+build_all = arg == "--all"; only = None if build_all else arg
 LIVE = ROOT / "site"                                  # committed, served by GitHub Pages
 SITE = ROOT / ("preview" if (only or build_all) else "site.tmp")   # the plain build renders here and swaps it in at the end
-def revising():
-    """Published lessons whose source is under revision (gate.py --reopen): their live page is kept as is.
-    A published lesson whose source drifted without --reopen stops the plain build before anything is touched,
-    because rendering it would put unreviewed content on the live site."""
-    out = {}
-    for f in (ROOT / "content").glob("*/*/meta.json"):
-        if f.parent.parent.name == "_gold": continue
-        m = json.loads(f.read_text())
-        if m.get("status") != "reviewed" or m["id"] == publishing: continue
-        if m.get("revision"): out[m["id"]] = m
-        elif m.get("reviewed_hash") and content_hash(f.parent) != m["reviewed_hash"]:
-            sys.exit(f"{m['id']}: source edited after publication and not under revision; a plain build would put unreviewed "
-                     f"content on the live site. Run `gate.py {m['id']} --reopen` (on the published source) or re-review it.")
-    return out
 if SITE.name == "site.tmp":
     if SITE.exists(): shutil.rmtree(SITE)             # leftover of an interrupted build
     SITE.mkdir()
     atexit.register(lambda: shutil.rmtree(SITE, ignore_errors=True))   # a failed build leaves nothing behind (already gone after the swap)
-    KEEP = revising()
-    for lid in KEEP:                                  # under revision: the page the gate published stays live, byte for byte
-        page = LIVE / f"{lid}.html"
-        if not page.exists(): sys.exit(f"{lid} is under revision but site/{lid}.html is missing")
-        shutil.copy(page, SITE / page.name)
-        if (LIVE / f"{lid}-sim.js").exists(): shutil.copy(LIVE / f"{lid}-sim.js", SITE / f"{lid}-sim.js")
 else:
-    SITE.mkdir(exist_ok=True); KEEP = {}              # preview/ is shared by agents building at the same time, so it is never wiped
+    SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
@@ -156,15 +133,18 @@ def exercise_html(e, solution_html):
             f'<details class="answer"><summary>Vastaus</summary><p>{ans}</p></details>{sol}</li>')
 
 
+NOTICE = {"legacy": '<p class="notice" role="note">Prototyyppiversio: tämä oppitunti on julkaistu ennen nykyistä tarkistuskäytäntöä ja odottaa uudistusta. Sisältö voi vielä muuttua.</p>',
+          "draft": '<p class="notice" role="note">Luonnos: tätä oppituntia ei ole vielä tarkistettu.</p>', "reviewed": ""}
 built = {}   # course -> [meta, ...]
+states = {}  # lesson id -> review state of every lesson seen, also the ones left out
 for folder in sorted((ROOT / "content").glob("*/*/")):
     if folder.parent.name == "_gold" or not (folder / "meta.json").exists(): continue
     meta = json.loads((folder / "meta.json").read_text())
-    if meta["id"] == publishing: meta["status"] = "reviewed"; meta.pop("revision", None)   # the gate writes these after this build succeeds
     if only and meta["id"] != only: continue
-    if meta.get("status") != "reviewed" and not (only or build_all): continue   # publish only reviewed lessons
-    if meta["id"] in KEEP:                           # under revision: the page the gate published stays live (copied above)
-        built.setdefault(meta["course"], []).append(meta); print("kept", meta["id"], "(under revision, live page unchanged)"); continue
+    try: rs = review_status(folder)
+    except ValueError as e: sys.exit(str(e))
+    meta["state"] = rs["state"]; states[meta["id"]] = rs
+    if rs["state"] == "draft" and not (only or build_all): continue   # publish only lessons whose reviews are current
     missing = [f for f in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json") if not (folder / f).exists()]
     if missing:                                      # a draft still being written: skip it instead of failing the whole build
         print("skipped", meta["id"], "(missing " + ", ".join(missing) + ")"); continue
@@ -196,19 +176,20 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
         else:
             lesson_html += sim
     name = f"{meta['id']}.html"
-    html = (tpl.replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"])
+    html = (tpl.replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", NOTICE[meta["state"]])
             .replace("{{lesson_html}}", lesson_html).replace("{{exercises_html}}", ex_html).replace("{{exit_html}}", exit_html)
             .replace("{{toc_sim}}", '<a href="#sim">Simulaatio</a>' if sim else "")
             .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", BASE_URL + name)
             .replace("{{home}}", HOME))
     (SITE / name).write_text(html)
     built.setdefault(meta["course"], []).append(meta)
-    print("built", meta["id"], f"({meta.get('status')})")
+    print("built", meta["id"], f"({meta['state']})")
 
 # Course pages and front page. Every module in curriculum.json gets a page; lessons built in this run are
 # links, the rest are listed as "tulossa" so students see the whole course and nav links always resolve.
 modules = [(k, v) for k, v in curriculum.items() if not k.startswith("_")]
 built_ids = {m["id"] for ms in built.values() for m in ms}
+legacy_ids = {m["id"] for ms in built.values() for m in ms if m["state"] == "legacy"}
 
 cards = ""
 for code, mod in modules:
@@ -223,7 +204,9 @@ for code, mod in modules:
 
     items = ""
     for l in slots:
-        if l["id"] in built_ids:
+        if l["id"] in legacy_ids:
+            items += f'<li class="live legacy"><a href="{l["id"]}.html">{esc(l["title"])}</a> <span class="count">prototyyppi</span></li>'
+        elif l["id"] in built_ids:
             items += f'<li class="live"><a href="{l["id"]}.html">{esc(l["title"])}</a></li>'
         else:
             items += f'<li class="soon"><span>{esc(l["title"])}</span> <span class="count">tulossa</span></li>'
@@ -252,6 +235,14 @@ home = (
     f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
 (SITE / "index.html").write_text(page("Fysiikkalabra", home, "", "index.html",
                                       "Teoria, simulaatiot ja tehtävät lukion fysiikkaan, LOPS 2019:n moduulit FY1–FY8.", main_class=""))
+removed = []
+if SITE.name == "site.tmp":                      # a lesson leaves the live site only with a warning (an annotation on CI)
+    for old_page in sorted(LIVE.glob("*.html")):
+        lid = old_page.stem
+        if lid in states and lid not in built_ids:
+            why = ", ".join(f"{n}={v}" for n, v in states[lid]["reports"].items() if v != "missing") or "no reports"
+            removed.append(lid)
+            print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {lid} is on the live site but its reviews are not current ({why}); this build removes it")
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
     expected = ["index.html", "site.css", "lesson.js", "sim-embed.js"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids]
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
@@ -264,4 +255,6 @@ if SITE.name == "site.tmp":                      # check the render, then swap i
         if old.exists(): old.rename(LIVE)
         raise
     shutil.rmtree(old, ignore_errors=True)
-print("built index +", len(modules), "module pages ->", (LIVE if SITE.name == "site.tmp" else SITE).relative_to(ROOT), f"({len(built_ids)} lessons)")
+print("built index +", len(modules), "module pages ->", (LIVE if SITE.name == "site.tmp" else SITE).relative_to(ROOT),
+      f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "
+      f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
