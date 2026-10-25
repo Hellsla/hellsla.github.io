@@ -1,53 +1,28 @@
 VERDICT: PASS
-CONTENT-HASH: fc5375c46d696bd5
+CONTENT-HASH: 8fb367b0d6fd83e0
 
-Round 2, web-designer. Page: preview/fy3-1.html. Hash checked before and after the review: unchanged (fc5375c46d696bd5). Measured with Playwright (Chromium 1243) at 1280 and 390 px, plus 320/360/375/412 for the canvas.
+Round 3 (final). Page: preview/fy3-1.html. Measured with own Playwright script (Chromium, widths 1280/390/360/320, DPR 2 on phones). Hash identical before and after the review. Screenshots in review/ (project root): fy3-1-390.png, fy3-1-1280.png, fy3-1-top-320.png, fy3-1-sim-320-jup100.png and siblings. No blocking defects; findings below are all non-blocking polish.
 
-Passed checks (measured)
-- Text column at 1280: 608 px wide, 17 px type, real lines hold 70, 70, 72, 72, 73 characters (target 60-75). At 390: 358 px, 34-47 characters per line.
-- Horizontal overflow: scrollWidth = clientWidth = 390 (and 1280). The only elements with right edge > 390 are the visually hidden KaTeX MathML nodes (clip 1 px), not visible content. 0 `.katex-error`; display and inline maths fit (widest inline formula 352 px in 358 px column, wraps after the relation sign).
-- g table: 2 columns, 358 px wide at 390, scrollWidth 356, no sideways scroll, 17 px cells, header 12.8 px.
-- Sim controls at 390: select 324x40 px at y=4276, slider 324x40 px at y=4348, readout y=4171-4243; canvas ends y=4161. No overlap with the canvas (10 px gap) or each other (select and slider labels stack, 8 px apart). At 1280 the two are side by side, 275x40 each.
-- In-canvas text rendered at 390 (canvas scaled 0.54, k=1.85): 11 px text draws at 10.8 px, 12 px at 11.9 px, 13 px at 13.0 px. At 320-412 px the range stays 10.8-13.2 px, so the >= 10 px target holds.
-- "m kg" label inside its block at 390: smallest mass "1 kg" 45 px in a 67 px block; largest "100 kg" 72 px in a 76 px block (stroke included). Verified in screenshots at m = 1, 37, 41, 100 and all four bodies.
-- Bar value labels at 390: smallest gap between neighbouring value labels is 10 canvas px (about 5 CSS px) at m = 41; name labels gap 20 px. No collisions.
-- SVG figure at 390: scale 0.597, its 20 px labels render at 11.9 px. At 1280 they render at 20.3 px.
-- Exercises: `<details class="level">` and the answer details are 40 px tall, `list-style: disclosure-closed` shows the triangle marker; exit ticket anchor `#exit` exists and "Siirry lähtölippuun" link goes to it. Exit ticket sits at the page end with three collapsible answers (40 px each).
-- Contrast, DOM text: lowest of all text styles is 7.13:1 (table header), body 16:1. Canvas text: dark grey (60) on 250 = 10.6:1, green title 9.4:1, red G 5.3:1, block label 11:1.
-- Bars, non-text 3:1: selected bars Kuu 4.9, Mars 4.3, Maa 4.7, Jupiter 3.6 (all >= 3). Unselected bars (alpha 150 of 255) are 2.0-2.3:1, below 3:1 for the shape itself, but every bar has a text value ("162 N") and a name under the axis, and the selected body is stated in the DOM readout, so no information depends on colour. Acceptable, see finding 5.
-- Tap targets >= 40 px high everywhere. Only the breadcrumb link "FY3" is 33 px wide (40 px high).
+## Checked and OK (measured)
+- Text column at 1280: article p is 566 px wide at 18.4 px Fraunces; 71-76 characters per line (mean of full lines 71.4 / 72.3 / 76 / 72; one line max 80). Inside 60-75, at the upper edge. At 390: 41-43 chars/line (phone, expected).
+- Horizontal overflow: documentElement.scrollWidth == clientWidth at 1280, 390, 360 and 320. The only elements past the viewport edge are KaTeX's hidden MathML nodes and the table's own scroller (see 2).
+- Maths: 7 .katex nodes, 0 .katex-error, 0 visible katex exceeding the viewport at any width, 20.6 px.
+- Table header "Taivaankappale / g pinnalla (N/kg)" and breadcrumb: text-transform none (no forced capitals), JetBrains Mono 12.8 px / 11.84 px, colour rgb(71,76,91). 
+- Tap targets: no a/summary/select/input below 40 px in either dimension at any width (breadcrumb links, nav, footer, skip link, summaries all >= 40 px). Select 40 px high, range input 40 px high.
+- Sim layout: readout, controls and note sit below the canvas (gap 10 px to readout, nothing overlaps the canvas) at all widths; labels stack full width at <= 390.
+- In-canvas text rendered size (glyph px x canvas scale): 1280 min 10.5; 390 min 10.8 (labels 11.9-13.0, title 12.9, subtitle 10.8); 360 min 10.8; 320 min 10.1 for the default state (see 3 for the exception).
+- Mass-label block: "100 kg" spans x 63-157 of 600 at 320 (inside canvas, block grows to label width). Bar-chart title spans x 245-595 of 600 at all widths (shrunk to fit, not clipped). Value labels do not collide with neighbours (4+ canvas px gaps).
+- Weight arrow at 100 kg on Jupiter: arrow tip y = 270+6+110 = 386 of 400, G label at y 336; inside the canvas (confirmed in fy3-1-sim-320-jup100.png). Arrow also verified for 1 kg, 10 kg Maa, 100 kg Kuu: proportional, min 3 px.
+- Exercises: three <details class="level">, closed by default, "▸" marker (turns into "▾" when open), clicking opens. Exit ticket: skip link "Siirry lähtölippuun" scrolls #exit to y = 94 px below viewport top at 390. Exit ticket answers are collapsible with markers too.
+- Contrast (text): every text element measured at 390 has >= 5:1 against its background (ink 14,23,30 on cream; crumbs 71,76,91; accent-deep 20,83,45). Canvas text 60,60,60 on 250: 10.6:1; title 26,77,46: 9.4:1. All pass AA.
+- SVG figure label size: 20 px in a 600 viewBox -> rendered 20.3 px at 1280, 11.9 px at 390, 10.9 px at 360, 9.6 px at 320.
 
-Findings (none blocking at 390 px; applies to narrower phones and small polish)
-
-1. Sim canvas breaks below about 375 px width (WARN, template/sim). The canvas text size is scaled by k = 600/clientWidth, but the fixed anchors are not. Measured:
-   - 360 px: block label "100 kg" is 81 px wide in a 76 px block (overflows the block, seen in screenshot), and the title "Sama massa, paino eri paikoissa" spans x = 222-618 in a 600 px canvas (right end clipped, "paikoiss").
-   - 375 px: label 75 px in a 76 px block (no margin), title spans 237-603 (3 px clipped).
-   - 320 px: label 93 px vs block 87 px, title 193-647, neighbouring bar value labels overlap by 7.5 canvas px.
-   At 390 px the label has only 4 px of slack and the title ends at x = 596 of 600. Proposal in sim.js:
-   ```js
-   const bs = Math.max(36 + 40 * Math.sqrt(m / 100), p.textWidth(`${m} kg`) + 16);   // after p.textSize(ts(13))
-   // title: shrink to fit
-   p.textSize(ts(13)); let t = 'Sama massa, paino eri paikoissa';
-   if (p.textWidth(t) > BARS.w + 40) p.textSize(ts(13) * (BARS.w + 40) / p.textWidth(t));
-   ```
-   or shorten the title to "Paino eri paikoissa" and keep the explanation in the DOM note (that text is already in `.note`).
-
-2. Uppercase transform corrupts units and the formula (cosmetic, site.css). `th{text-transform:uppercase}` renders the table header "g pinnalla (N/kg)" as "G PINNALLA (N/KG)" (wrong unit case, 12.8 px), and `.crumbs` shows "PAINO G = MG". Proposal:
-   ```css
-   th{text-transform:none;letter-spacing:.02em}
-   .crumbs{text-transform:none}
-   ```
-   or only uppercase the first word via a class. Low effort, lesson content untouched.
-
-3. Block label has no visual margin at the largest mass (390 px: text 72 px, inner block width about 70 px after 3 px stroke). Same fix as 1 (+16 px padding in `bs`).
-
-4. Breadcrumb link "FY3" is 33 x 40 px (width below 40). Proposal: `.crumbs a{display:inline-block;min-width:40px;text-align:center}` or `padding:0 .4rem`.
-
-5. Unselected bars are 2.0-2.3:1 against the canvas (3:1 wanted for graphical objects where the shape carries meaning). Values and names are printed on each bar, so this is not a failure. Proposal: draw the unselected bars at alpha 200 (about 3.0:1) or add a 2 px stroke in the body colour:
-   ```js
-   p.fill(c[0], c[1], c[2], i === idx ? 255 : 200);
-   if (i !== idx) { p.stroke(c[0], c[1], c[2]); p.strokeWeight(1.5); }
-   ```
-   and mark the chosen bar with a bold name label as a second cue.
-
-6. Minimum-mass bars are 2 px high (Kuu 1 kg: 0.14 px proportional, drawn 2 px), which look like a line on the axis. This is intended per sim-spec; no change needed. Optional: draw bars under 4 px with a 1 px outline so they read as bars.
+## Findings (non-blocking)
+1. Bar fill contrast vs background (non-text 3:1, WCAG 1.4.11). Bars are drawn at alpha 200/255 when not selected. Blended on the 250 canvas: Kuu 3.22, Maa 3.18, Mars 3.02, Jupiter 2.64 (full opacity Jupiter 3.61). The default view (Maa selected) therefore shows a Jupiter bar at 2.64:1. Mitigated because every bar is labelled with name and value, so no information is colour-only. Proposal (sim.js, bar fill): use full alpha and mark the selected body with an outline instead:
+   `p.fill(COLORS[i][0], COLORS[i][1], COLORS[i][2]); if (i === idx) { p.stroke(30); p.strokeWeight(2); } else p.noStroke();`
+   and darken Jupiter to `[160, 105, 35]` (about 4.4:1 on 250).
+2. Table header clipped at 320 px: the table scrolls inside itself (scrollWidth 305 > clientWidth 286) and the last ")" of "g pinnalla (N/kg)" touches the right edge; at 390 and wider it fits (356/356). Not overflow of the page. Proposal (site.css): `th{font-size:.74rem;letter-spacing:0} @media (max-width:360px){th,td{padding-inline:.6rem}}` or shorten the header to "g (N/kg)" in lesson.md.
+3. At 320 px one value label drops to 9.3 px rendered ("2480 N" at 100 kg Jupiter, also "162 N" style labels on large masses): the shrink rule `if (p.textWidth(vt) > bw + 12) p.textSize(ts(12) * (bw + 12) / p.textWidth(vt))` fires for the widest label while the other labels stay at 10.2-11.3 px. Proposal: floor the shrunk size, `p.textSize(Math.max(ts(12) * (bw + 12) / p.textWidth(vt), 10 * k))`, and widen the label slot by reducing the bar gap from 16 to 12 (`bw = BARS.w / 4 - 12`).
+4. SVG figure labels fall below 10 px at 320 (9.6 px) and are 10.9 px at 360. Proposal (lesson.md inline SVG): raise font-size from 20 to 24 and shorten the second note to "voiman mukaan" at x=302 (check it still fits 600 wide; it ends near x=500 at 20 px, about 590 at 24 px), or give the svg `style="min-width:340px"` inside the existing scroll-free layout.
+5. Number format inconsistency in the readout versus the chart and table: readout shows "g = 24,80 N/kg" and "G = m · g = 2480,0 N" while the table and bar labels show 24,8 and 2480 N. Proposal (sim.js): `fi(g, g < 10 ? 2 : 1)` and `fi(G, G < 100 ? 1 : 0)` to match the bar labels.
+6. Cosmetic, 320 px: bar category labels "Maa" and "Jupiter" nearly touch (gap about 5 canvas px). Proposal: shorten nothing, but with the gap change in 3 (bw = w/4 - 12) the label slots widen; or draw category names at ts(11).
