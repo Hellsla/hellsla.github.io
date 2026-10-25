@@ -5,3 +5,4 @@ site.old/
 __pycache__/
 node_modules/
 docs/exams/
+**/review/packet-*.md

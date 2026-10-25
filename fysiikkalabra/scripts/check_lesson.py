@@ -15,12 +15,13 @@ steps = [("lint", [PY, SCRIPTS / "lint_lesson.py", lid]),
          ("build", [PY, SCRIPTS / "build.py", lid])]
 if (folder / "sim.js").exists(): steps.append(("sims", [PY, SCRIPTS / "test_sims.py", lid]))
 steps.append(("layout 360 px", [PY, SCRIPTS / "check_layout.py", lid]))
-failed = 0
+failed = 0; lines = []
 for name, cmd in steps:
     r = subprocess.run([str(c) for c in cmd], capture_output=True, text=True, cwd=SCRIPTS.parent)
     ok = r.returncode == 0
     failed += not ok
-    print(("ok   " if ok else "FAIL ") + name)
+    lines.append(("ok   " if ok else "FAIL ") + name); print(lines[-1])
     if not ok: print("     " + "\n     ".join((r.stdout + r.stderr).strip().splitlines()[-25:]))
-print(describe(folder))
+lines.append(describe(folder)); print(lines[-1])
+(folder / "review").mkdir(exist_ok=True); (folder / "review/checks.txt").write_text("\n".join(lines) + "\n")   # read by review_packet.py
 sys.exit(1 if failed else 0)

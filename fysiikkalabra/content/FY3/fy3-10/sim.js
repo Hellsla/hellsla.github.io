@@ -22,7 +22,7 @@ new p5((p) => {
   const BOX = { x: 16, y: 70 }, WT = 7, PW = 9;                  // top-left corner of the gas region, wall and piston (px)
   const V300 = 240, KT300 = V300 * V300 / 2;                     // v_rms at 300 K (px/s); kT/m = <v²>/2 in 2D
   const P_REF = 100 * KT300 / (LXMAX * LY);                      // p = NkT/A in the reference state (m = 1)
-  const BAR = { ax: 414, x: [450, 548], w: 50, y0: 345, y1: 130 };   // pressure axis, bar centres, bar area
+  const BAR = { ax: 414, x: [450, 548], w: 50, y0: 345, y1: 165 };   // pressure axis, bar centres, bar area
   const GA = { x: 48, y: 31, r: 26 };                            // pressure gauge on the top wall
   const LV = { x0: 440, x1: 560, lo: 0.8, hi: 1.2 };             // ratio level: track ends and the range shown
   const MEAS = [205, 45, 125], FLASH = [255, 90, 175], PRED = [140, 147, 160];   // measured pressure, wall hit, prediction
@@ -108,9 +108,10 @@ new p5((p) => {
     [sN, lN] = slider(controls, 20, 200, 100, 10);               // hiukkasmäärä N
     [sT, lT] = slider(controls, 100, 600, 300, 10);              // lämpötila T (K)
     [sV, lV] = slider(controls, 25, 100, 100, 5);                // tilavuus V (% täydestä)
-    p.createP('Hiukkaset törmäävät vain seiniin, eivät toisiinsa. Paine lasketaan seiniin osuvista törmäyksistä ' +
-              'keskiarvona 2 s:n ajalta, joten mitattu arvo heiluu hieman. Oikea seinä liikkuu, kun tilavuutta muutetaan. ' +
-              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 %, jossa paine on 1,00.')
+    p.createP('Tasomalli: pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin. Paine on seiniin osuvien törmäysten ' +
+              'keskiarvo 2 s:n ajalta, joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 % (tilastollista vaihtelua). ' +
+              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00). Tilavuuden muutos ei muuta hiukkasten nopeuksia, joten lämpötila pysyy samana. ' +
+              'Pylväiden asteikko mukautuu arvoihin: vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa.')
       .parent('sim-root').class('note');
     window.simAdvance = (s) => { sync(); advance(s); return update().pMeasured; };
     window.simRestart = () => { restart(); update(); };
@@ -135,6 +136,12 @@ new p5((p) => {
     const rect = (x, y, w, h, fill) => { ctx.fillStyle = fill; ctx.fillRect(x, y, w, h); };
     const steel = (x, y, w, h, across) => rect(x, y, w, h, grad(x, y, across ? x + w : x, across ? y : y + h,
       [[0, '#79828d'], [0.45, '#dfe3e8'], [1, '#5d6570']]));
+    const labels = [];
+    const lab = (str, x, y, align = p.LEFT) => {                 // draws a canvas text and records its box for the label test
+      p.textAlign(align); p.text(str, x, y);
+      const w = p.textWidth(str), x0l = align === p.CENTER ? x - w / 2 : align === p.RIGHT ? x - w : x;
+      labels.push({ s: str, x0: x0l, y0: y - p.textAscent(), x1: x0l + w, y1: y + p.textDescent() });
+    };
     p.background(250);
     const v = Math.max(pm, pp);                                  // one scale (1, 2 or 5 · 10ⁿ) for the gauge and the bars
     if (v * 1.05 > top || v < 0.4 * top) [top, tStep] = scale(v);
@@ -184,28 +191,28 @@ new p5((p) => {
     const an = Math.PI * (0.75 + 1.5 * needle / 1.05);
     p.stroke(...MEAS); p.strokeWeight(2.5); p.line(GA.x, GA.y, GA.x + 20 * Math.cos(an), GA.y + 20 * Math.sin(an));
     p.noStroke(); p.fill(40); p.circle(GA.x, GA.y, 6);
-    p.textAlign(p.CENTER); p.textSize(ts(11)); p.text('p', GA.x, GA.y + GA.r - 6);
+    p.textSize(ts(11)); lab('p', GA.x, GA.y + GA.r - 6, p.CENTER);
 
     // speed legend (top), volume as a dimension line and the flash legend (bottom)
-    p.textSize(ts(12)); p.textAlign(p.LEFT); p.fill(40);
+    p.textSize(ts(12)); p.fill(40);
     const lx0 = 84 + p.textWidth('hidas') + 5, lw = k > 1.5 ? 32 : 44, xF = 404 - p.textWidth('osuma seinään');
-    p.text('hidas', 84, yT); rect(lx0, yT - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.fill(40); p.text('nopea', lx0 + lw + 5, yT); p.text('osuma seinään', xF, 394);
-    p.fill(...FLASH); p.ellipse(xF - 10, 394 - ts(4), 5, 16); p.fill(255); p.ellipse(xF - 10, 394 - ts(4), 2, 8);
+    lab('hidas', 84, yT); rect(lx0, yT - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
+    p.fill(40); lab('nopea', lx0 + lw + 5, yT); lab('osuma seinään', xF, 388);
+    p.fill(...FLASH); p.ellipse(xF - 10, 388 - ts(4), 5, 16); p.fill(255); p.ellipse(xF - 10, 388 - ts(4), 2, 8);
     p.textSize(ts(13)); const wV = p.textWidth('V = 100 %') / 2, yD = 368;      // V label between the left edge and the legend
     const xm = Math.min(xF - 30 - wV, Math.max(x0 + 2 + wV, (x0 + xp) / 2));
     p.stroke(80); p.strokeWeight(1.2); p.line(x0, yD, xp, yD); p.line(x0, yD - 5, x0, yD + 5); p.line(xp, yD - 5, xp, yD + 5);
     p.noStroke(); p.fill(80); p.triangle(x0, yD, x0 + 7, yD - 3.5, x0 + 7, yD + 3.5); p.triangle(xp, yD, xp - 7, yD - 3.5, xp - 7, yD + 3.5);
-    p.fill(40); p.textAlign(p.CENTER); p.text(`V = ${fi(Vrel * 100, 0)} %`, xm, 394);
+    p.fill(40); lab(`V = ${fi(Vrel * 100, 0)} %`, xm, 388, p.CENTER);
 
     // ratio measured/predicted as a level: bubble on a 0,8…1,2 track, green zone 0,95…1,05
-    const lx = (r) => LV.x0 + (LV.x1 - LV.x0) * (Math.min(Math.max(r, LV.lo), LV.hi) - LV.lo) / (LV.hi - LV.lo), yL = yT + 16;
-    p.textAlign(p.RIGHT); p.textSize(ts(13)); p.text(`mitattu/ennuste = ${fi(ratio, 2)}`, 590, yT);
+    const lx = (r) => LV.x0 + (LV.x1 - LV.x0) * (Math.min(Math.max(r, LV.lo), LV.hi) - LV.lo) / (LV.hi - LV.lo), yL = yT + 8 + ts(14);
+    p.textSize(ts(13)); lab(`mitattu/ennuste = ${fi(ratio, 2)}`, 590, yT, p.RIGHT);
     p.stroke(150); p.strokeWeight(1); p.fill(238, 241, 236); p.rect(LV.x0 - 7, yL - 7, LV.x1 - LV.x0 + 14, 14, 7);
     p.noStroke(); p.fill(175, 222, 170); p.rect(lx(0.95), yL - 6, lx(1.05) - lx(0.95), 12);
     p.stroke(90); for (const r of [0.9, 1, 1.1]) { p.line(lx(r), yL - 7, lx(r), yL - 3); p.line(lx(r), yL + 3, lx(r), yL + 7); }
     p.noStroke(); p.fill(...MEAS); p.circle(lx(ratio), yL, 10); p.fill(255, 255, 255, 200); p.circle(lx(ratio) - 1.5, yL - 1.5, 3);
-    p.fill(60); p.textSize(ts(11)); p.text('0,8', LV.x0 - 11, yL + ts(4)); p.textAlign(p.LEFT); p.text('1,2', LV.x1 + 11, yL + ts(4));
+    p.fill(60); p.textSize(ts(11)); lab('0,8', LV.x0 - 11, yL + ts(4), p.RIGHT); lab('1,2', LV.x1 + 11, yL + ts(4), p.LEFT);
 
     // bars: measured and predicted relative pressure, axis scaled to the values shown, gridlines, reference line 1
     const Y = (x) => BAR.y0 - (BAR.y0 - BAR.y1) * Math.min(x, top * 1.05) / top;
@@ -216,18 +223,20 @@ new p5((p) => {
     if (top >= 1) {                                              // dashed line: the reference pressure 1
       p.stroke(120); p.strokeWeight(1.5); ctx.setLineDash([5, 4]); p.line(BAR.ax, Y(1), 590, Y(1)); ctx.setLineDash([]);
     }
-    p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    for (let j = 0; j <= nT; j++) p.text(j ? fi(j * tStep, dec) : '0', BAR.ax - 6, Y(j * tStep) + ts(4));   // ≥ 43 px apart
+    p.noStroke(); p.fill(60); p.textSize(ts(11));
+    for (let j = 0; j <= nT; j++) lab(j ? fi(j * tStep, dec) : '0', BAR.ax - 6, Y(j * tStep) + ts(4), p.RIGHT);   // ≥ 43 px apart
     const yName = yL + 14 + ts(13);                              // axis name p/p_ref with a drawn subscript
-    p.textSize(ts(11)); p.text('ref', 590, yName + ts(3)); const wSub = p.textWidth('ref');
-    p.textSize(ts(13)); p.text('p/p', 590 - wSub - 1, yName);
+    p.textSize(ts(11)); lab('ref', 590, yName + ts(3), p.RIGHT); const wSub = p.textWidth('ref');
+    p.textSize(ts(13)); lab('p/p', 590 - wSub - 1, yName, p.RIGHT);
+    if (k <= 1.5) { const wP = p.textWidth('p/p'); p.textSize(ts(10)); lab('asteikko mukautuu', 590 - wSub - 1 - wP - 8, yName, p.RIGHT); }   // on a phone the label would run into the tank wall; the note under the canvas says it there
     const cols = [MEAS, PRED], vals = [pm, pp], names = ['mitattu', 'ennuste'];
     for (let i = 0; i < 2; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
       rect(bx, by, BAR.w, BAR.y0 - by, grad(bx, 0, bx + BAR.w, 0, [[0, rgb(c, 0.85)], [0.35, rgb(mix(c, [255, 255, 255], 0.35))], [1, rgb(mix(c, [0, 0, 0], 0.25))]]));
-      p.fill(40); p.textAlign(p.CENTER); p.textSize(ts(13)); p.text(fi(vals[i], 2), BAR.x[i], by - 6);
-      p.textSize(ts(12)); p.text(names[i], BAR.x[i], BAR.y0 + 4 + ts(12));
+      p.fill(40); p.textSize(ts(13)); lab(fi(vals[i], 2), BAR.x[i], by - 6, p.CENTER);
+      p.textSize(ts(12)); lab(names[i], BAR.x[i], BAR.y0 + 4 + ts(12), p.CENTER);
     }
+    window.simState.labels = labels;
   };
 
   // smallest axis top n·step ≥ 1,1·v with at most 5 steps of 1, 2 or 5 · 10ⁿ

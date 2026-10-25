@@ -5,7 +5,7 @@
 ## Ydinajatus
 Kaasujen tilanmuutoksia tutkittiin edellisellä oppitunnilla yksi kerrallaan: vakiolämpötilassa pV on vakio, vakiopaineessa V/T on vakio ja vakiotilavuudessa p/T on vakio. Nämä kolme kaasulakia voidaan yhdistää. Kun suljetun kaasumäärän paine, tilavuus ja lämpötila muuttuvat samanaikaisesti, suure pV/T pysyy vakiona. Tätä sanotaan yhdistetyksi kaasulaiksi.
 
-Vakion arvo riippuu siitä, kuinka paljon kaasua on. Jos samaan paineeseen ja lämpötilaan otetaan kaksi kertaa enemmän kaasua, se vie kaksinkertaisen tilavuuden. Kaasun määrää mitataan ainemääränä n, jonka yksikkö on mooli (mol). Hiukkasia on pienessäkin kaasumäärässä valtavasti, joten ne lasketaan mooleina, kuten kemiasta voi olla tuttua. Yksi mooli on 6,022 · 10²³ hiukkasta. Avogadron vakio N_A = 6,022 · 10²³ 1/mol kertoo, kuinka monta hiukkasta on yhdessä moolissa.
+Vakion arvo riippuu siitä, kuinka paljon kaasua on. Jos samaan paineeseen ja lämpötilaan otetaan kaksi kertaa enemmän kaasua, se vie kaksinkertaisen tilavuuden. Kaasun määrää mitataan ainemääränä n, jonka yksikkö on mooli (mol). Hiukkasia on pienessäkin kaasumäärässä valtavasti, joten ne lasketaan mooleina, kuten kemiasta voi olla tuttua. Yksi mooli on Avogadron vakion N_A = 6,022 · 10²³ 1/mol osoittama määrä hiukkasia.
 
 Aineen moolimassa M kertoo yhden moolin massan. Heliumin moolimassa on 4,0 g/mol, ilman keskimäärin 29 g/mol ja hiilidioksidin 44 g/mol.
 
@@ -145,7 +145,9 @@ Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinker
   <text x="525" y="262" text-anchor="middle" fill="currentColor" font-weight="bold">2p</text>
 </svg>
 
-Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää, lämpötilaa ja tilavuutta ja vertaa seinämistä mitattua painetta ennusteeseen. Hiukkasten keskinäiset törmäykset eivät muuta painetta, joten ne on jätetty simulaatiosta pois.
+Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää, lämpötilaa ja tilavuutta ja vertaa seinämistä mitattua painetta ennusteeseen. Hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin, joten ne on jätetty simulaatiosta pois. Simulaatiossa paine näytetään suhteessa vertailutilaan (p/p_ref), ei pascaleina. Vertailutila on N = 100 hiukkasta, T = 300 K ja koko tilavuus (V = 100 %); siinä p/p_ref = 1, ja arvo 2 tarkoittaa kaksinkertaista vertailupaineeseen verrattuna. Hiukkasmäärä N kuvaa kaasun määrää.
+
+<!-- sim -->
 
 Kun kaasun määrä ei muutu, tilanyhtälöstä seuraa yhdistetty kaasulaki
 ```latex
@@ -197,7 +199,7 @@ m &= nM \\
 Pallossa on 0,21 mol heliumia, ja sen massa on 0,83 g.
 
 <!-- vaihe -->
-**Järkevyys.** Kemiasta tuttu moolitilavuus on huoneenlämmössä noin 24 l/mol, joten 5,0 litrassa on noin 5,0/24 ≈ 0,21 mol kaasua. Samankokoisessa ilmapallossa on yhtä monta moolia ilmaa, mutta sen massa on noin 0,2073 mol · 29 g/mol ≈ 6,0 g. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
+**Järkevyys.** Yksi mooli kaasua vie huoneenlämmössä ja normaalipaineessa noin 24 litraa, joten 5,0 litrassa on noin 5,0/24 ≈ 0,21 mol kaasua. Samankokoisessa ilmapallossa on yhtä monta moolia ilmaa, mutta sen massa on noin 0,2073 mol · 29 g/mol ≈ 6,0 g. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
 
 ## Yleinen virhekäsitys
 Tilanyhtälön laskuissa toistuu kolme virhettä:

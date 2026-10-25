@@ -1,0 +1,6 @@
+date	lesson	agent	model	effort	mode	round	tokens	input	output	cache_read	cache_write	seconds	calls	verdict
+2026-10-25T14:42Z	fy3-9	science-reviewer	opus	high	full	1	96618					113	14	PASS
+2026-10-25T14:43Z	fy3-9	pedagogy-reviewer	sonnet	high	full	1	99140					126	21	PASS
+2026-10-25T14:54Z	fy3-9	developer	sonnet	high	fix	2	64143					68	8	DONE
+2026-10-25T14:58Z	fy3-9	science-reviewer	opus	high	full	2	97729					103	10	PASS
+2026-10-25T14:58Z	fy3-9	pedagogy-reviewer	sonnet	high	full	2	116002					174	29	PASS
