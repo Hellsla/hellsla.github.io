@@ -93,7 +93,7 @@ code, out = build(t); page = (site / f"{LESSON}.html").read_text()
 expect("legacy lesson is built with the prototype notice", code == 0 and "Prototyyppiversio" in page and "prototyyppi" in (site / "FY3.html").read_text(), out)
 p.write_text(p.read_text() + "\nToinen muutos.\n")
 code, out = build(t)
-expect("stale lesson is removed from the site with a warning", code == 0 and not (site / f"{LESSON}.html").exists() and "WARNING" in out and LESSON in out and "removes it" in out, out)
+expect("stale lesson is removed from the site with a warning", code == 0 and not (site / f"{LESSON}.html").exists() and ("WARNING" in out or "::warning::" in out) and LESSON in out and "removes it" in out, out)   # ::warning:: on CI
 
 # 4. atomic build: a build that fails half-way leaves the previous site untouched
 t = project(); report(t, "science"); report(t, "pedagogy"); build(t); site = t / "site"
