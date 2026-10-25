@@ -143,5 +143,26 @@
     "expected": 1,
     "tol": 0,
     "note": "the Maa bar is 9,81/24,8 of full height, independent of the mass"
+  },
+  {
+    "setup": "const s=document.querySelector('#sim-root select'); s.value='Mars'; document.querySelector('#sim-root input[type=range]').value=20;",
+    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return window.simState.body==='Mars' && x.includes('g = 3,71 N/kg (Mars)') && x.includes('G = m · g = 74,2 N') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "Mars: body name, g and G in the readout (20 kg · 3,71 = 74,2 N)"
+  },
+  {
+    "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=40; r.dispatchEvent(new Event('input'));",
+    "expr": "new Promise(f => setTimeout(() => f(window.simState.chartFull), 250))",
+    "expected": 992,
+    "tol": 1e-06,
+    "note": "bar chart full scale follows the mass: 40 kg · 24,8 N/kg"
+  },
+  {
+    "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=40; r.dispatchEvent(new Event('input'));",
+    "expr": "new Promise(f => setTimeout(() => f(document.querySelector('#sim-root .readout').textContent.includes('asteikko 0–992 N') ? 1 : 0), 250))",
+    "expected": 1,
+    "tol": 0,
+    "note": "the readout states the bar chart scale as DOM text"
   }
 ]

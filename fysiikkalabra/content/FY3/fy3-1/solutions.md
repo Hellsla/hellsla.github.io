@@ -4,7 +4,7 @@
 **Kaava:** G = m g
 **Sijoitus:** G = 4,0 kg · 9,81 N/kg = 39,24 N
 **Vastaus:** 39 N
-**Järkevyys:** Yksi kilogramma painaa noin 10 N, joten 4 kg painaa noin 40 N.
+**Järkevyys:** 1 kg:n massan paino on noin 10 N, joten 4,0 kg:n massan paino on noin 40 N.
 
 ## fy3-1-L1-02
 **Annettu:** 4,0 N → 2,0 cm, kysytty venymä painolla 12 N
@@ -60,7 +60,7 @@
 **Kaava:** G = m g molemmissa paikoissa, sitten erotus
 **Sijoitus:** G_Maa = 145 kg · 9,81 N/kg = 1422,45 N; G_Kuu = 145 kg · 1,62 N/kg = 234,9 N; ero = 1422,45 N − 234,9 N = 1187,55 N
 **Vastaus:** 1190 N
-**Järkevyys:** Paino pienenee noin 83 %, mikä vastaa suhdetta 1,62 / 9,81 ≈ 1/6.
+**Järkevyys:** Kuussa paino on 1,62 / 9,81 ≈ 1/6 Maan painosta, joten se pienenee noin 5/6 eli 83 %.
 
 ## fy3-1-L2-04
 **Annettu:** m = 0,20 kg, venymä 1,5 cm; kysytty voima venymällä 4,5 cm; g = 9,81 N/kg
