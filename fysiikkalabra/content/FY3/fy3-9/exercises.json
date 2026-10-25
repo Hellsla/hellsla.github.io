@@ -11,7 +11,7 @@
     {
       "id": "fy3-9-L1-02",
       "level": 1,
-      "text": "Kesämökin vesijärjestelmän painesäiliön yläosassa on suljettu ilmatila. Kun säiliössä on vähän vettä, ilman tilavuus on 24,0 l ja paine 160 kPa. Pumppu pumppaa säiliöön lisää vettä, jolloin ilma puristuu kokoon ja sen paine nousee 280 kPa:iin. Ilman lämpötila pysyy samana. Mikä on ilman tilavuus nyt?",
+      "text": "Kesämökin vesijärjestelmän painesäiliön yläosassa on suljettu ilmatila. Kun säiliössä on vähän vettä, ilman tilavuus on 24,0 l ja kokonaispaine 160 kPa. Pumppu pumppaa säiliöön lisää vettä, jolloin ilma puristuu kokoon ja sen kokonaispaine nousee 280 kPa:iin. Ilman lämpötila pysyy samana. Mikä on ilman tilavuus nyt?",
       "answer": 13.7,
       "unit": "l",
       "tolerance": 0.02
