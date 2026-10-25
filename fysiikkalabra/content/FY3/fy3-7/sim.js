@@ -12,7 +12,7 @@
 new p5((p) => {
   const C_ICE = 2100, S = 334000, C_W = 4190, R = 2260000, C_ST = 2000;  // SI units
   const T0 = -20, T_END = 130, SPEED = 60;                               // start and stop temperature (°C), sim s per real s
-  const CH = { x0: 335, x1: 580, y0: 340, y1: 60 };                      // chart area (axes at x0 and y0)
+  const CH = { x0: 335, x1: 565, y0: 335, y1: 60 };                      // chart area (axes at x0 and y0)
   const BK = { x: 50, w: 160, top: 95, bottom: 300 };                    // container
   const PHASE_TEXT = { 'jää': 'jää lämpenee', 'sulaa': 'jää sulaa (0 °C)', 'vesi': 'vesi lämpenee', 'kiehuu': 'vesi kiehuu (100 °C)', 'höyry': 'höyry lämpenee' };
   const CONTENT = { 'jää': 'jää', 'sulaa': 'jää ja vesi', 'vesi': 'vesi', 'kiehuu': 'vesi ja höyry', 'höyry': 'höyry' };
@@ -94,7 +94,7 @@ new p5((p) => {
       for (let i = 0; i < 8 && hw > 10; i++) p.circle(bx + 12 + (i * 37) % (inner - 24), bb - ((t * 2 + i * 23) % hw), 6 + (i % 3) * 2);
     }
     const rows = Math.max(1, Math.round(H / 30)), nIce = Math.ceil(rows * 5 * fIce - 1e-9);   // ice cubes left
-    p.stroke(p.red(col), p.green(col), p.blue(col)); p.strokeWeight(1.5); p.fill(215, 235, 250);
+    p.stroke(p.red(col), p.green(col), p.blue(col)); p.strokeWeight(1.5); p.fill(215, 235, 250, 210);
     for (let i = 0; i < nIce; i++) p.rect(bx + 4 + (i % 5) * 30, bb - 30 - Math.floor(i / 5) * 30, 26, 26, 4);
     p.noFill(); p.stroke(60); p.strokeWeight(3);
     p.line(BK.x, BK.top - 10, BK.x, BK.bottom); p.line(BK.x, BK.bottom, BK.x + BK.w, BK.bottom); p.line(BK.x + BK.w, BK.bottom, BK.x + BK.w, BK.top - 10);
@@ -121,8 +121,8 @@ new p5((p) => {
     for (let v = -20; v <= 120; v += 20) p.text(fi(v, 0), CH.x0 - 6, Y(v) + ts(4));
     p.textAlign(p.CENTER);
     for (let v = 0; v <= tMax; v += step) p.text(`${v}`, X(v), CH.y0 + ts(16));
-    p.textAlign(p.RIGHT); p.textSize(ts(12)); p.text('t (s)', CH.x1, CH.y0 - 8);
-    p.textAlign(p.LEFT); p.text('T (°C)', CH.x0 - 26, CH.y1 - ts(14));
+    p.textAlign(p.RIGHT); p.textSize(ts(12)); p.text('t (s)', CH.x1 + 10, CH.y0 + ts(32));   // below the ticks, clear of the melting label
+    p.textAlign(p.LEFT); p.text('T (°C)', CH.x0 + 8, CH.y1 + ts(6));                          // inside the empty top-left corner
     p.noFill(); p.stroke(205); p.strokeWeight(2); p.beginShape(); pts.forEach(([a, b]) => p.vertex(X(a), Y(b))); p.endShape();
     p.stroke(200, 60, 40); p.strokeWeight(3); p.beginShape();
     pts.filter(([a]) => a < t).forEach(([a, b]) => p.vertex(X(a), Y(b))); p.vertex(X(t), Y(T)); p.endShape();
