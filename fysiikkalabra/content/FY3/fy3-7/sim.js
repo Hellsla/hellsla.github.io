@@ -36,7 +36,7 @@ new p5((p) => {
     if (Q < q[1]) return [0, 'sulaa'];
     if (Q < q[2]) return [(Q - q[1]) / (C_W * m), 'vesi'];
     if (Q < q[3]) return [100, 'kiehuu'];
-    return [Math.min(T_END, 100 + (Q - q[3]) / (C_ST * m)), 'höyry'];
+    return [Q >= q[4] ? T_END : 100 + (Q - q[3]) / (C_ST * m), 'höyry'];
   };
   // round axis maximum with at most 5 steps
   const niceMax = (v) => { for (const st of [10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000]) if (Math.ceil(v / st) <= 5) return [Math.ceil(v / st) * st, st]; return [Math.ceil(v / 5000) * 5000, 5000]; };
