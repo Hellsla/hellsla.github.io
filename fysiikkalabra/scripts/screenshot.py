@@ -13,4 +13,8 @@ with sync_playwright() as pw:
         p.evaluate("document.getElementById('sim') && document.getElementById('sim').scrollIntoView()"); p.wait_for_timeout(700)   # let the sim draw once
         p.evaluate("window.scrollTo(0, 0)"); p.wait_for_timeout(300)
         p.screenshot(path=str(OUT / f"{sys.argv[1]}-{w}.png"), full_page=True); print("wrote", (OUT / f"{sys.argv[1]}-{w}.png").relative_to(ROOT))
+        canvas = p.locator("#sim-root canvas")
+        if canvas.count():                        # the simulation alone, for a reviewer who must not spend tool calls on it
+            p.evaluate("document.getElementById('sim').scrollIntoView()"); p.wait_for_timeout(400)
+            canvas.screenshot(path=str(OUT / f"{sys.argv[1]}-sim-{w}.png")); print("wrote", (OUT / f"{sys.argv[1]}-sim-{w}.png").relative_to(ROOT))
     b.close()

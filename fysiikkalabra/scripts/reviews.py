@@ -4,6 +4,7 @@
   python scripts/reviews.py status [<id>]    reviewed | legacy | draft for one lesson or all, with the reason
   python scripts/reviews.py legacy <id>      write review/legacy.md: prototype content the teacher keeps visible
   python scripts/reviews.py verify           CI: print every lesson's state; exit 1 on a malformed report
+  python scripts/reviews.py scope <id>       full or delta review for each reviewer, from the diff since its last PASS
 
 A lesson is *reviewed* when review/science.md and review/pedagogy.md both start with `VERDICT: PASS` and carry
 the current CONTENT-HASH. It is *legacy* when review/legacy.md does (a prototype lesson published before the
@@ -16,7 +17,7 @@ valid. Any other change (a word, a number, a space inside a line, an indentation
 sim.js) changes the hash and both reviews must run again. The rule is deliberately conservative: it never
 guesses what a change means.
 """
-import datetime, hashlib, json, os, pathlib, re, sys
+import datetime, hashlib, json, os, pathlib, re, subprocess, sys
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])
 REVIEWS = ("science", "pedagogy")
@@ -95,6 +96,71 @@ def write_legacy(folder):
     print(describe(folder))
 
 
+def git(*args):
+    r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+    return r.stdout if r.returncode == 0 else None
+
+
+def hash_at(commit, folder):
+    """The lesson's content hash as it was in a commit (None if the lesson did not exist there)."""
+    rel = folder.relative_to(ROOT)
+    h, found = hashlib.sha256(), False
+    files = [(n, f"{rel}/{n}") for n in CONTENT] + [(f"tests/sims/{folder.name}.json", f"tests/sims/{folder.name}.json")]
+    for name, path in files:
+        text = git("show", f"{commit}:./{path}")          # ./ makes the path relative to the working directory, not the repository root
+        if text is None: continue
+        found = True; h.update(name.encode() + b"\0" + normalized(text, name).encode() + b"\0")
+    return h.hexdigest()[:16] if found else None
+
+
+SVG_LINE = re.compile(r"^[+-]\s*<(/?svg|path|line|text|rect|circle|g|polyline|polygon|ellipse|defs|stop|linearGradient|marker|tspan|title)\b")
+SUBSTANTIVE = re.compile(r"[0-9]|\\\\|\$|=|[A-Za-z]_|[αβγδθλμρσωΔ°·×≈≤≥]")   # a number, LaTeX, an equation, a symbol or a unit sign
+
+
+def scope(folder):
+    """For each reviewer: {'mode': 'full'|'delta', 'base': commit|None, 'why': ..., 'diff': unified diff}.
+    A delta review (the previous report plus the diff since the version that reviewer passed) is allowed only for
+    changes a reviewer can judge in context: wording in prose, solutions, task texts or the exit ticket that
+    touches no number, formula, symbol or unit, and no structure. Anything that can change the physics, the
+    simulation, the answers, the objectives or the progression makes the review full: any change to answers.py,
+    sim.js, tests/sims, an exercise answer/unit/tolerance/level, meta goals or prerequisites, a heading or stage,
+    an SVG figure, or any changed line that carries a number, LaTeX, an equation or a symbol. The reviewer may
+    still escalate a delta to a full review (ESCALATE in its report)."""
+    rel, lid = folder.relative_to(ROOT), folder.name
+    log = (git("log", "--format=%H", "-n", "60", "--", str(rel), f"tests/sims/{lid}.json") or "").split()
+    out = {}
+    for name in REVIEWS:
+        rep = report(folder, name)
+        if rep is None or rep[0] != "PASS": out[name] = {"mode": "full", "base": None, "why": "no earlier PASS", "diff": ""}; continue
+        base = next((c for c in log if hash_at(c, folder) == rep[1]), None)
+        if base is None: out[name] = {"mode": "full", "base": None, "why": "the version it passed is not in git history", "diff": ""}; continue
+        diff = git("diff", base, "--", str(rel / "lesson.md"), str(rel / "exercises.json"), str(rel / "solutions.md"), str(rel / "answers.py"),
+                   str(rel / "exit-ticket.json"), str(rel / "sim.js"), str(rel / "sim-spec.md"), str(rel / "meta.json"), f"tests/sims/{lid}.json") or ""
+        reasons, files, current = [], set(), None
+        for l in diff.splitlines():
+            if l.startswith("diff --git"): current = l.split(" b/")[-1].split("/")[-1]; files.add(current); continue
+            if not (l.startswith("+") or l.startswith("-")) or l.startswith(("+++", "---")): continue
+            body = l[1:]
+            if current in ("answers.py", "sim.js") or current.endswith(".json") and current.startswith(lid): reasons.append(f"{current} changed")
+            elif current == "exercises.json" and body.lstrip().startswith(('"answer"', '"unit"', '"tolerance"', '"level"', '"id"')): reasons.append("an answer, unit, tolerance or level changed")
+            elif current == "meta.json" and not body.lstrip().startswith(('"title"', '"glossary"', '"sim"', '"image"', '"solutions"')) and body.strip() not in ("{", "}", "[", "]", "],"): reasons.append("meta goals or prerequisites changed")
+            elif SVG_LINE.match(l): reasons.append("a figure changed")
+            elif body.lstrip().startswith("## ") or "<!-- vaihe -->" in body or body.lstrip().startswith("```"): reasons.append("headings, stages or a display block changed")
+            elif current in ("lesson.md", "solutions.md", "exercises.json", "exit-ticket.json", "sim-spec.md") and SUBSTANTIVE.search(body): reasons.append(f"{current}: a changed line carries a number, formula, symbol or unit")
+        changed = sum(1 for l in diff.splitlines() if (l.startswith("+") or l.startswith("-")) and not l.startswith(("+++", "---")))
+        why = sorted(set(reasons))
+        out[name] = {"mode": "full" if why else "delta", "base": base, "diff": diff,
+                     "why": "; ".join(why) if why else f"{changed} changed wording line(s) in {', '.join(sorted(files)) or 'nothing'}, no number, formula or structure"}
+    return out
+
+
+def print_scope(folder):
+    sc = scope(folder)
+    for name, v in sc.items():
+        print(f"{name}: {v['mode']} ({v['why']})" + (f" base={v['base'][:7]}" if v["base"] else ""))
+    return sc
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if not a: sys.exit(__doc__)
@@ -102,6 +168,7 @@ if __name__ == "__main__":
     if a[0] == "hash": print(content_hash(find_lesson(a[1])))
     elif a[0] == "status": print("\n".join(describe(f) for f in ([find_lesson(a[1])] if len(a) > 1 else lessons)))
     elif a[0] == "legacy": write_legacy(find_lesson(a[1]))
+    elif a[0] == "scope": print_scope(find_lesson(a[1]))
     elif a[0] == "verify":
         bad = 0
         for f in lessons:

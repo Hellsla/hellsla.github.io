@@ -68,17 +68,29 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
 - Create `div.controls` before `div.readout`, main button first, so canvas and button fit one phone screen (an
   off-screen canvas is paused, so a button below the fold starts an animation nobody sees). Clamp the animation
   step (`Math.min(p.deltaTime, 100)`) so a resume cannot skip ahead. The readout is DOM text, tap targets 40 px.
-- Canvas text grows with `ts()` (k ≈ 2 at 360 px): sweep every slider over its range at 360, 390 and 1280 px and
-  assert in `tests/sims/<id>.json` that no two label boxes intersect or leave the canvas; draw every second tick
-  label when k > 1,5. Label boxes must keep a few pixels of clearance, because CI's fonts are wider than a
-  sandbox's.
+- Canvas text grows with `ts()` (k ≈ 2 at 360 px). Every canvas text goes through a `lab(s, x, y, align)` helper
+  that draws it and pushes `{s, x0, y0, x1, y1}` (canvas coordinates) to `simState.labels`; `test_sims.py` then
+  sweeps every control at 360, 390 and 1280 px by itself and fails on any overlap or clipping (fy3-9 is the
+  pattern). Draw every second tick label when k > 1,5 and keep a few pixels of clearance: CI's fonts are wider.
 - `tests/sims/<id>.json`: an assertion on `simState` for every control and displayed quantity (set inputs through
   the DOM, read outputs, compare within 1 %), plus the label sweep. Never loosen an assertion to make it pass.
 - The page places the simulation after `## Kaava` (before `## Esimerkki`); a line `<!-- sim -->` in `lesson.md`
   overrides the position. Exercises get a browser-side answer check; nothing is stored or sent. No third-party
   requests, fonts are self-hosted. Reviewer screenshots stay out of git (`**/review/*.png`).
 
-## 5. Exam material (inspiration only)
+## 5. Learning from mistakes
+When a reviewer finds an error that is objectively testable or has happened before: fix it, name the general
+pattern, and then either add a check (`lint_lesson.py`, `test_sims.py`, `check_layout.py`) with a test that catches
+the original case and passes on every other lesson, or, when it cannot be checked mechanically, add one line to
+the right heading above. Never both, never a paragraph. The checks run before any reviewer, so the reviewers are
+paid only for what scripts cannot see. Deterministic coverage today: numbers (`answers.py` re-run against
+`exercises.json`, `Vastaus` lines, significant figures and tolerances, coefficient mantissas), LaTeX (KaTeX parse,
+`{,}`, `\textsf{l}`, `·` in `\text`), lesson form (figures, stages, symbolic first rows, paragraph length),
+pages (formula, table, figure and page width at 360 px, SVG labels overlapping or leaving a figure),
+simulations (console errors, per-sim assertions, finite `simState` and label boxes at 360/390/1280 px over every
+control combination), publication (content hash, rebuild equality, atomic build).
+
+## 6. Exam material (inspiration only)
 Exam files, if ever collected, live only in the git-ignored `docs/exams/` and are studied for patterns (task
 types, contexts, how points split between reasoning and calculation), never quoted or reworded. Every exercise is
 original.

@@ -1,0 +1,6 @@
+ok   lint
+ok   latex
+ok   build
+ok   sims
+ok   layout 360 px
+fy3-9: draft (science=stale, pedagogy=stale)
