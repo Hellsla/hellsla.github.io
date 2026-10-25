@@ -15,12 +15,12 @@
 **Järkevyys:** Maassa sama näyte painaisi noin 49 N, joten Kuussa paino on noin kuudesosa.
 
 ## fy3-1-L1-03
-**Annettu:** m = 25 kg, g = 3,71 N/kg
+**Annettu:** m = 30 kg, g_Kuu = 1,62 N/kg (luettu oppitunnin taulukosta)
 **Kysytty:** G
 **Kaava:** G = m g
-**Sijoitus:** G = 25 kg · 3,71 N/kg = 92,75 N
-**Vastaus:** 93 N
-**Järkevyys:** Maassa kulkija painaisi noin 245 N, joten Marsissa paino on noin 38 % siitä.
+**Sijoitus:** G = 30 kg · 1,62 N/kg = 48,6 N
+**Vastaus:** 49 N
+**Järkevyys:** Maassa laite painaisi noin 294 N, joten Kuussa paino on noin kuudesosa.
 
 ## fy3-1-L1-04
 **Annettu:** 12 N → 3,0 cm, kysytty venymä voimalla 6,0 N
@@ -34,7 +34,7 @@
 **Annettu:** m = 2,5 kg, g = 24,8 N/kg
 **Kysytty:** G
 **Kaava:** G = m g
-**Sijoitus:** G = 2,5 kg · 24,8 N/kg = 62,0 N
+**Sijoitus:** G = 2,5 kg · 24,8 N/kg = 62 N
 **Vastaus:** 62 N
 **Järkevyys:** Jupiterissa paino on noin 2,5-kertainen Maahan verrattuna.
 
@@ -74,7 +74,7 @@
 **Annettu:** G_Maa = 18 N, g_Maa = 9,81 N/kg, g_Mars = 3,71 N/kg
 **Kysytty:** G_Mars
 **Kaava:** massa pysyy samana: m = G_Maa / g_Maa ja G_Mars = m g_Mars
-**Sijoitus:** m = 18 N / 9,81 N/kg = 1,835 kg; G_Mars = 1,835 kg · 3,71 N/kg = 6,807 N
+**Sijoitus:** m = 18 N / 9,81 N/kg = 18/9,81 kg ≈ 1,8349 kg; G_Mars = (18/9,81) kg · 3,71 N/kg ≈ 6,807 N
 **Vastaus:** 6,8 N
 **Järkevyys:** Paino pienenee suhteessa 3,71 / 9,81 ≈ 0,38; 0,38 · 18 N ≈ 6,8 N.
 
@@ -87,9 +87,9 @@
 **Järkevyys:** Massa on noin kuusinkertainen Maahan verrattuna, koska paino on Kuussa noin kuudesosa.
 
 ## fy3-1-L3-03
-**Annettu:** m = 6,0 kg, g_Kuu = 1,62 N/kg; vaaka näyttää voiman jaettuna luvulla 9,81 N/kg
-**Kysytty:** vaa'an lukema
-**Kaava:** vaaka mittaa painoa G = m g_Kuu; lukema = G / 9,81 N/kg
+**Annettu:** m = 6,0 kg, g_Kuu = 1,62 N/kg; mittarin asteikko näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg
+**Kysytty:** mittarin lukema
+**Kaava:** mittari mittaa painoa G = m g_Kuu; lukema = G / 9,81 N/kg
 **Sijoitus:** G = 6,0 kg · 1,62 N/kg = 9,72 N; lukema = 9,72 N / 9,81 N/kg = 0,991 kg
 **Vastaus:** 0,99 kg
-**Järkevyys:** Vaaka mittaa voimaa, joten Kuussa lukema on noin kuudesosa kappaleen todellisesta massasta, vaikka massa on yhä 6,0 kg.
+**Järkevyys:** Mittari mittaa voimaa, joten Kuussa lukema on noin kuudesosa kappaleen todellisesta massasta, vaikka massa on yhä 6,0 kg.

@@ -1,6 +1,6 @@
 [
   {
-    "q": "Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun?",
+    "q": "Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun (g = 1,62 N/kg)?",
     "a": "Massa pysyy 3,0 kg:na. Paino pienenee Maan 29 N:sta Kuun 4,9 N:iin, eli noin kuudesosaan."
   },
   {
@@ -8,7 +8,7 @@
     "a": "6,0 cm. Venymä on suoraan verrannollinen voimaan, ja voima kolminkertaistuu."
   },
   {
-    "q": "Miksi lause \"painan 70 kiloa\" on fysiikan kannalta epätarkka?",
+    "q": "Miksi lause ”painan 70 kiloa” on fysiikan kannalta epätarkka?",
     "a": "Kilogramma on massan yksikkö, mutta paino on voima ja sen yksikkö on newton. Massa 70 kg tarkoittaa noin 690 N:n painoa Maassa."
   }
 ]

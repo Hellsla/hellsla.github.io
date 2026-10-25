@@ -7,7 +7,7 @@
     "Täsmennys: kerrataan voiman mittaaminen voimamittarilla ja todetaan massan ja painon yhteys G = mg; voimaa ei käsitellä liiketilan muutoksen aiheuttajana"
   ],
   "prerequisites": [],
-  "glossary": ["voima", "vuorovaikutus", "paino", "massa", "newton"],
+  "glossary": ["voima", "voimamittari", "vuorovaikutus", "paino", "massa", "newton"],
   "sim": true,
   "image": false,
   "status": "draft",

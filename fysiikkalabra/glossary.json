@@ -98,7 +98,7 @@
   },
   {
     "term": "massa",
-    "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla toisin kuin paino.",
+    "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla, toisin kuin paino.",
     "lessons": [
       "fy3-1"
     ],
@@ -200,6 +200,20 @@
     ],
     "see_also": [
       "vuorovaikutus",
+      "voimamittari",
+      "newton",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voimamittari",
+    "definition": "Laite, jolla voima mitataan. Siinä on jousi, jonka venymä on suoraan verrannollinen voimaan, ja asteikko merkitään ripustamalla jouseen tunnettuja painoja.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "voima",
       "newton",
       "paino"
     ],

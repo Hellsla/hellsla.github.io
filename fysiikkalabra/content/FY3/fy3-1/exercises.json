@@ -19,8 +19,8 @@
     {
       "id": "fy3-1-L1-03",
       "level": 1,
-      "text": "Mars-kulkijan massa on 25 kg. Mikä on sen paino Marsissa, missä g = 3,71 N/kg?",
-      "answer": 93,
+      "text": "Kuun pinnalle jätetyn mittalaitteen massa on 30 kg. Mikä on sen paino Kuussa? Lue g:n arvo oppitunnin taulukosta.",
+      "answer": 49,
       "unit": "N",
       "tolerance": 0.02
     },
@@ -69,7 +69,7 @@
     {
       "id": "fy3-1-L2-04",
       "level": 2,
-      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa 0,20 kg:n massa. Kuinka suuri voima venyttää jousta 4,5 cm?",
+      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa 0,20 kg:n kappale. Kuinka suuri voima venyttää jousta 4,5 cm?",
       "answer": 5.9,
       "unit": "N",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-1-L3-01",
       "level": 3,
-      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin (g = 3,71 N/kg). Mitä sama mittari näyttää siellä? Vihje: mikä pysyy samana?",
+      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin (g = 3,71 N/kg). Mitä sama mittari näyttää siellä?",
       "answer": 6.8,
       "unit": "N",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy3-1-L3-03",
       "level": 3,
-      "text": "Jousivaaka on kalibroitu Maassa niin, että se näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg. Vaa'alle asetetaan Kuussa (g = 1,62 N/kg) kappale, jonka massa on 6,0 kg. Mitä lukemaa vaaka näyttää kilogrammoina?",
+      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg. Mittariin ripustetaan Kuussa (g = 1,62 N/kg) kappale, jonka massa on 6,0 kg. Mitä lukemaa mittari näyttää kilogrammoina?",
       "answer": 0.99,
       "unit": "kg",
       "tolerance": 0.02
