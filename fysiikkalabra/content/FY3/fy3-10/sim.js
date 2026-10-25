@@ -8,7 +8,7 @@
 // to the reference state N = 100, T = 300 K, V = 100 %:   p/p_ref = (N/100)·(T/300 K)·(100 %/V).
 // P_REF below is computed from pA = NkT, not measured. Units inside: px and s, v_rms = 240 px/s at 300 K.
 // Randomness: positions, directions and speeds come from a seeded PRNG (mulberry32); the speed is the Box–Muller radius,
-// i.e. the 2D Maxwell distribution. After a change of N the vx and vy components are rescaled so that the sample has
+// i.e. the 2D Maxwell distribution at the current T. After a change of N the vx and vy components are rescaled so the sample has
 // exactly <vx²> = <vy²> = kT/m (the simulated temperature is the mean kinetic energy); a change of T rescales all speeds
 // by √(T_new/T_old). The physics runs in fixed steps of 1/240 s, so the result does not depend on the frame rate.
 // Picture: particle colour = speed (the same scale at every T, so a hotter gas turns orange), a trail = the path of the
@@ -22,7 +22,7 @@ new p5((p) => {
   const BOX = { x: 16, y: 70 }, WT = 7, PW = 9;                  // top-left corner of the gas region, wall and piston (px)
   const V300 = 240, KT300 = V300 * V300 / 2;                     // v_rms at 300 K (px/s); kT/m = <v²>/2 in 2D
   const P_REF = 100 * KT300 / (LXMAX * LY);                      // p = NkT/A in the reference state (m = 1)
-  const BAR = { ax: 414, x: [458, 546], w: 50, y0: 345, y1: 130 };   // pressure axis, bar centres, bar area
+  const BAR = { ax: 414, x: [450, 548], w: 50, y0: 345, y1: 130 };   // pressure axis, bar centres, bar area
   const GA = { x: 48, y: 31, r: 26 };                            // pressure gauge on the top wall
   const LV = { x0: 440, x1: 560, lo: 0.8, hi: 1.2 };             // ratio level: track ends and the range shown
   const MEAS = [205, 45, 125], FLASH = [255, 90, 175], PRED = [140, 147, 160];   // measured pressure, wall hit, prediction
@@ -46,10 +46,11 @@ new p5((p) => {
   };
   // n more particles from the seeded stream: uniform position, uniform direction, speed from the 2D Maxwell distribution
   const add = (n) => {
+    const u = Math.sqrt(KT300 * T / 300);                        // √(kT/m) at the current T, so new particles are thermal too
     for (let i = 0; i < n; i++) {
       const x = rnd() * Lx, y = rnd() * LY, th = 2 * Math.PI * rnd();
       const s = Math.sqrt(-2 * Math.log(1 - rnd()));            // Box–Muller radius: speed in units of √(kT/m)
-      parts.push({ x, y, vx: s * Math.cos(th), vy: s * Math.sin(th) });
+      parts.push({ x, y, vx: u * s * Math.cos(th), vy: u * s * Math.sin(th) });
     }
   };
   const thermalize = () => {                                     // exact <vx²> = <vy²> = kT/m for the current T
@@ -187,7 +188,7 @@ new p5((p) => {
     p.textSize(ts(12)); p.textAlign(p.LEFT); p.fill(40);
     const lx0 = 84 + p.textWidth('hidas') + 5, lw = k > 1.5 ? 32 : 44, xF = 404 - p.textWidth('osuma seinään');
     p.text('hidas', 84, yT); rect(lx0, yT - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.text('nopea', lx0 + lw + 5, yT); p.text('osuma seinään', xF, 394);
+    p.fill(40); p.text('nopea', lx0 + lw + 5, yT); p.text('osuma seinään', xF, 394);
     p.fill(...FLASH); p.ellipse(xF - 10, 394 - ts(4), 5, 16); p.fill(255); p.ellipse(xF - 10, 394 - ts(4), 2, 8);
     p.textSize(ts(13)); const wV = p.textWidth('V = 100 %') / 2, yD = 368;      // V label between the left edge and the legend
     const xm = Math.min(xF - 22 - wV, Math.max(x0 + 2 + wV, (x0 + xp) / 2));

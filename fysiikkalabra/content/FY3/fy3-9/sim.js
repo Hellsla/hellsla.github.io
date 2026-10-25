@@ -163,8 +163,8 @@ new p5((p) => {
     p.stroke(60);
     for (let v = 0; v <= GA.max; v += 10) { p.strokeWeight(v % 50 ? 1 : 2); ray(v, rim - (v % 50 ? 4 : 8), rim); }
     p.noStroke(); p.fill(50); p.textSize(ts(9));
-    for (const v of k > 1.5 ? [0, 300] : [0, 100, 200, 300]) lab(`${v}`, GA.x + 23 * Math.cos(ang(v)), GA.y + 23 * Math.sin(ang(v)) + ts(3), p.CENTER);
-    lab('kPa', GA.x, GA.y - 14 + ts(3), p.CENTER);
+    for (const v of k > 1.5 ? [0, 300] : [0, 100, 200, 300]) lab(`${v}`, GA.x + 22 * Math.cos(ang(v)), GA.y + 22 * Math.sin(ang(v)) + ts(3), p.CENTER);
+    lab('kPa', GA.x, GA.y + (k > 1.5 ? -14 : 35), p.CENTER);   // below the hub when 100 and 200 are printed
     p.stroke(200, 50, 40); p.strokeWeight(3); ray(needle, -6, rim - 6);  // needle
     p.noStroke(); p.fill(40); p.circle(GA.x, GA.y, 8); p.fill(255, 255, 255, 120); p.circle(GA.x - 1, GA.y - 1, 3);
     // thermometer: glass tube, liquid up to T, a colour strip that is the legend of the gas colour, scale in °C
@@ -179,7 +179,8 @@ new p5((p) => {
     for (let tc = -50; tc <= 150; tc += k > 1.5 ? 100 : 50) lab(`${fi(tc, 0)} °C`, TH.x - 12, yT(tc) + ts(3), p.RIGHT);
 
     p.fill(40); p.textSize(ts(13));
-    lab(`${fi(pk, 1)} kPa`, GA.x, GA.y - GA.r - 8, p.CENTER); lab(`V = ${fi(V, 1)} ml`, mid, CYL.bot + 22 + ts(13), p.CENTER);
+    lab(`${fi(pk, 1)} kPa`, GA.x, GA.y - GA.r - 8, p.CENTER); const vs = `V = ${fi(V, 1)} ml`;
+    lab(vs, Math.max(mid, p.textWidth(vs) / 2 + 3), CYL.bot + 22 + ts(13), p.CENTER);   // kept inside the left edge on a phone
     p.fill(col[0] * 0.8, col[1] * 0.8, col[2] * 0.8); lab(`T = ${fi(T, 0)} K`, 222, 20 + ts(13), p.CENTER);
     // chart from zero: panel, grid, axes with arrows, tick labels (every second one on a narrow screen)
     const X = (v) => CH.x0 + (CH.x1 - CH.x0) * v / ax.x[0], Y = (v) => CH.y0 - (CH.y0 - CH.y1) * v / ax.y[0];

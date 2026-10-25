@@ -79,7 +79,7 @@
     {
       "id": "fy3-12-L3-01",
       "level": 3,
-      "text": "Hiihtoretkelle pakataan termospulloon 0,60 kg kuumaa kahvia. Pullossa on kaksi sisäkkäistä seinää, joiden välistä on poistettu ilma, ja seinien pinnat ovat kiiltävät. Selitä, mitä lämmön siirtymistapoja tyhjiö ja kiiltävät pinnat estävät ja miten. Mitä kautta lämpöä silti karkaa? Pullosta karkaa lämpöä keskimäärin 1,4 W:n teholla. Kuinka monta kelviniä kahvi jäähtyy 10 tunnissa? Kahvin ominaislämpökapasiteetti on sama kuin veden, 4190 J/(kg·K).",
+      "text": "Hiihtoretkelle pakataan termospulloon 0,60 kg kuumaa kahvia. Pullossa on kaksi sisäkkäistä seinää, joiden välistä on poistettu ilma, ja seinien pinnat ovat kiiltävät. Selitä, mitä lämmön siirtymistapoja tyhjiö ja kiiltävät pinnat estävät ja miten. Minkä kautta lämpöä silti karkaa? Pullosta karkaa lämpöä keskimäärin 1,4 W:n teholla. Kuinka monta kelviniä kahvi jäähtyy 10 tunnissa? Kahvin ominaislämpökapasiteetti on sama kuin veden, 4190 J/(kg·K).",
       "answer": 20,
       "unit": "K",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy3-12-L3-03",
       "level": 3,
-      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu, jonka lämpökerroin on lämmityskauden keskiarvona 2,8. Yläpohjaan puhalletaan lisää eristevillaa, jolloin sen U-arvo pienenee 0,35 W/(m²·K):sta 0,10 W/(m²·K):iin. Yläpohjan pinta-ala on 100 m². Lämmityskausi kestää 5800 h, ja sisä- ja ulkolämpötilan ero on sen aikana keskimäärin 19 K. Kuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa? Naapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
+      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu, jonka lämpökerroin on lämmityskaudella keskimäärin 2,8. Yläpohjaan puhalletaan lisää eristevillaa, jolloin sen U-arvo pienenee 0,35 W/(m²·K):sta 0,10 W/(m²·K):iin. Yläpohjan pinta-ala on 100 m². Lämmityskausi kestää 5800 h, ja sisä- ja ulkolämpötilan ero on sen aikana keskimäärin 19 K. Kuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa? Naapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02

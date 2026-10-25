@@ -44,7 +44,7 @@
 **Kaava:** Rinnakkaisten osien häviö on yhtä suuri kuin patterien teho: P = (U_s A_s + U_y A_y)(T_sisä − T_ulko), joten T_ulko = T_sisä − P / (U_s A_s + U_y A_y)
 **Sijoitus:** U_s A_s + U_y A_y = 0,50 W/(m²·K) · 70 m² + 0,30 W/(m²·K) · 50 m² = 50 W/K. T_ulko = 20 °C − 2000 W / (50 W/K) = 20 °C − 40 K = −20 °C
 **Vastaus:** −20 °C
-**Järkevyys:** Kylmemmällä häviö ylittää 2,0 kW, ja mökki jäähtyy, kunnes tasapaino asettuu alempaan sisälämpötilaan.
+**Järkevyys:** Kylmemmällä säällä häviö ylittää 2,0 kW, ja mökki jäähtyy, kunnes tasapaino asettuu alempaan sisälämpötilaan.
 
 ## fy3-12-L2-02
 **Annettu:** A = 130 m², U = 0,090 W/(m²·K), ΔT = 21 K, t = 230 vrk, hinta h = 0,11 €/kWh
@@ -76,7 +76,7 @@
 **Kaava:** Kahvin luovuttama lämpö on karannut energia: cmΔT = Pt, joten ΔT = Pt / (cm)
 **Sijoitus:** t = 10 · 3600 s = 36 000 s. ΔT = 1,4 W · 36 000 s / (4190 J/(kg·K) · 0,60 kg) = 50 400 J / (2514 J/K) ≈ 20,0 K
 **Vastaus:** 20 K. Tyhjiössä ei ole hiukkasia, joten lämpö ei johdu eikä kulkeudu konvektiolla seinästä toiseen. Kiiltävät pinnat heijastavat lämpösäteilyn takaisin. Lämpöä karkaa pääosin johtumalla pullon kaulan ja korkin kautta.
-**Järkevyys:** Aamulla 90 °C:n kahvi on illalla noin 70 °C:sta, kuten hyvässä termospullossa.
+**Järkevyys:** Aamulla 90 °C:n kahvi on illalla vielä noin 70 °C:n lämpöistä, kuten hyvässä termospullossa.
 
 ## fy3-12-L3-02
 **Annettu:** I = 1,0 W/m², A = 5,1 · 10¹⁴ m², f = 0,90, m = 2,6 · 10²⁰ kg, c = 4,0 · 10³ J/(kg·K), t_v = 365 vrk
