@@ -43,6 +43,12 @@ new p5((p) => {
               'sekoittamisesta ja kappaleen muodosta. Astian oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { mW: { input: sMW.elt, unit: 'kg' }, TW0: { input: sTW.elt, unit: '°C' }, cB: { input: sel.elt, unit: 'J/(kg·K)' },
+                mB: { input: sMB.elt, unit: 'kg' }, TB0: { input: sTB.elt, unit: '°C' } },
+      reset: () => { sMW.value(0.30); sTW.value(20); sel.selected('385'); sMB.value(0.20); sTB.value(100); tAnim = 0; running = false; key = inputKey(); },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {
