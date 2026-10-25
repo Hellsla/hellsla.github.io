@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{{title}} — Fysiikkalabra</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{url}}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fysiikkalabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{url}}">
 <meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="vendor/katex/katex.min.css">
 <link rel="stylesheet" href="site.css">
@@ -11,14 +19,15 @@
   <nav aria-label="Päävalikko"><a href="index.html#moduulit">Moduulit</a><a class="pill" href="{{home}}">← Portfolio</a></nav>
 </header>
 <nav class="crumbs" aria-label="Polku"><a href="index.html">Fysiikkalabra</a> › <a href="{{course}}.html">{{course}}</a> › {{title}}</nav>
+<nav class="toc" aria-label="Sivun osat"><a href="#teoria">Teoria</a>{{toc_sim}}<a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a></nav>
 <main class="reading">
-<article>{{lesson_html}}</article>
-{{sim_block}}
-<section id="exercises"><h2>Tehtävät</h2><p class="skip"><a href="#exit">Siirry lähtölippuun ↓</a></p>{{exercises_html}}</section>
+<article id="teoria">{{lesson_html}}</article>
+<section id="exercises"><h2>Tehtävät</h2><p class="howto">Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.</p>{{exercises_html}}</section>
 <section id="exit">{{exit_html}}</section>
 </main>
 <footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="{{course}}.html">← {{course}}-moduuli</a><a href="{{home}}">← Takaisin portfolioon</a></footer>
 </div>
 <script src="vendor/katex/katex.min.js"></script>
 <script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script>
 </body></html>

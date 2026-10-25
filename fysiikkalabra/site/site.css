@@ -45,7 +45,7 @@ blockquote{margin:1.4rem 0;padding:1rem 1.2rem;border-left:4px solid var(--accen
 blockquote p{margin:0}
 li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
+article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 
 /* front page and module pages */
 .hero{padding:1.6rem 0 .6rem}
@@ -78,12 +78,12 @@ details.level>summary .count{margin-left:.6rem;font:400 .84rem var(--sans)}
 details.answer{margin:.2rem 0 .7rem}
 details.answer>summary{color:var(--accent-deep);font-size:.88rem;font-weight:600}
 details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-radius:8px;padding:.35rem .7rem;display:inline-block}
-p.skip{margin:.25rem 0;font-size:.9rem}p.skip a{display:inline-flex;align-items:center;min-height:40px}
 #exit{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1.4rem 1rem;margin-top:2.4rem}
 #exit h2{margin-top:1.2rem}
 
 /* simulation */
-#sim{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1rem 1rem;margin-top:2.4rem}
+#sim{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1rem 1rem;margin:2.4rem 0}
+@media (min-width:700px){#sim{margin-inline:-1.1rem}}   /* the card pokes out of the 38rem text column so the 600 px canvas keeps its native size */
 #sim h2{margin-top:1rem}
 #sim-root{position:relative}#sim-root canvas{max-width:100%;height:auto!important;display:block;border-radius:10px}
 #sim-root .readout{font-size:1rem;line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
@@ -103,3 +103,44 @@ th{font:500 .8rem var(--mono);letter-spacing:.04em;color:var(--ink-2);background
 tr:last-child td{border-bottom:0}
 #sim-root select{min-height:40px;font:inherit;font-size:1rem;padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
 table thead,table tbody{display:table;width:100%}
+
+/* section nav: sticks under the top edge so Teoria / Simulaatio / Tehtävät / Lähtölippu are one tap away */
+nav.toc{position:sticky;top:0;z-index:5;display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;margin:0 -16px 1rem;padding:.4rem 16px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;display:inline-flex;align-items:center;min-height:40px;padding:0 .9rem;border-radius:999px;font-size:.88rem;font-weight:600;color:var(--ink-2);text-decoration:none;border:1px solid transparent}
+nav.toc a:hover{background:var(--bg-tint);color:var(--ink)}
+nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
+@media (min-width:1100px){nav.toc{margin-inline:0;padding-inline:0}}
+article h2{scroll-margin-top:3.6rem}#sim,#exercises,#exit{scroll-margin-top:3.4rem}
+
+/* answer check: browser-side only, nothing is stored or sent */
+p.howto{font-size:.9rem;color:var(--ink-2);margin:0 0 .6rem}
+li p.task{margin:.3rem 0 .4rem}
+form.check{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.2rem 0 .4rem}
+form.check input{width:7.5rem;min-height:40px;font:inherit;font-size:1rem;padding:0 .7rem;border:1px solid #767676;border-radius:10px;background:var(--surface);color:var(--ink);font-variant-numeric:tabular-nums}
+form.check input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
+form.check input[aria-invalid=true]{border-color:#b4532a}
+form.check .unit{font-size:.95rem;color:var(--ink-2)}
+form.check button{font:600 .9rem var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
+form.check button:hover{background:var(--accent)}
+form.check output{flex:1 1 100%;font-size:.92rem;min-height:1.3em}
+form.check output[data-state=ok]{color:var(--accent-deep);font-weight:600}
+form.check output[data-state=no]{color:#8a3b1a}
+form.check output[data-state=hint]{color:var(--ink-2)}
+form.check.is-ok input{border-color:var(--accent);background:var(--accent-soft)}
+details.solution{margin:.2rem 0 .9rem}
+details.solution>summary{color:var(--accent-deep);font-size:.88rem;font-weight:600}
+details.solution .steps{margin:.3rem 0 0 1.2rem;padding:.6rem .9rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:.95rem;line-height:1.55}
+details.solution .steps p{margin:0}
+
+/* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */
+@media print{
+  body{background:#fff;font-size:11pt}
+  header.top,nav.crumbs,nav.toc,footer.bottom,#sim,form.check,p.howto{display:none!important}
+  .page{width:auto;padding:0}main.reading{max-width:none}
+  details>summary::before{content:""}details>summary{font-weight:600}
+  details.level{border:0;padding:0;break-inside:avoid}li{break-inside:avoid}
+  .katex-display{border:0;background:none}a{color:inherit;text-decoration:none}
+  h2{break-after:avoid}
+}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}
