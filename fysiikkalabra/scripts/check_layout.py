@@ -1,7 +1,8 @@
 """Phone-width layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
 
 Opens each page in preview/ (or site/) at a phone viewport and reports every element that is wider
-than its box: display formulas (.katex-display), tables, inline SVG figures and the page itself.
+than its box: display formulas (.katex-display), tables, inline SVG figures and the page itself, and every
+text label inside an inline SVG that overlaps another label or leaves the figure (NOTES 3).
 A display formula that scrolls sideways on a phone is a web-designer FAIL, so writers run this
 before review (NOTES.md section 1). Exit status 1 if anything overflows."""
 import sys, pathlib
@@ -32,6 +33,12 @@ JS = """() => {
   for (const s of document.querySelectorAll('main svg')) {
     const r = s.getBoundingClientRect();
     if (r.right > document.documentElement.clientWidth + 1) out.push({what: 'svg', over: Math.round(r.right - document.documentElement.clientWidth), text: s.getAttribute('aria-label') || ''});
+    const T = [...s.querySelectorAll('text')].map((t) => ({t: t.textContent.trim(), b: t.getBoundingClientRect()})).filter((x) => x.t);
+    for (const x of T) if (x.b.left < r.left - 1 || x.b.right > r.right + 1 || x.b.top < r.top - 1 || x.b.bottom > r.bottom + 1)
+      out.push({what: 'svg-text', over: Math.round(Math.max(r.left - x.b.left, x.b.right - r.right, r.top - x.b.top, x.b.bottom - r.bottom)), text: `"${x.t}" leaves the figure`});
+    for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) { const a = T[i].b, b = T[j].b;
+      const ox = Math.min(a.right, b.right) - Math.max(a.left, b.left), oy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+      if (ox > 1 && oy > 1) out.push({what: 'svg-text', over: Math.round(Math.min(ox, oy)), text: `"${T[i].t}" overlaps "${T[j].t}"`}); }
   }
   return out;
 }"""

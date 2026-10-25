@@ -34,15 +34,17 @@ lesson.md          Ydinajatus, Kaava, Esimerkki (staged), misconception, summary
 exercises.json     three levels (schema in README)         solutions.md    given / wanted / formula / substitution / answer / check
 answers.py         computes every answer                   exit-ticket.json  3 quick checks
 sim.js, sim-spec.md   optional p5.js simulation exposing window.simState, and its one-paragraph spec
-review/            science.md, pedagogy.md (and legacy.md on a prototype lesson); developer.md, usage.log
+review/            science.md, pedagogy.md (and legacy.md on a prototype lesson); developer.md, checks.txt, packet-*.md, usage.tsv
 ```
 
 ## Pipeline (three agents, one rule)
-- **developer** (Sonnet) writes and fixes the lesson files and nothing else, and runs `python scripts/check_lesson.py <id>` until every check is ok.
-- **science-reviewer** (Opus) and **pedagogy-reviewer** (Sonnet) are independent: each reads the lesson, not the other's report, and writes `review/<name>.md` with `VERDICT: PASS|FAIL` on line 1 and `CONTENT-HASH: <python scripts/reviews.py hash <id>>` on line 2, then `## Blocking` (FAIL if and only if non-empty), `## Polish`, `## Checked`. Reviewers never edit lesson files; language, style and taste are never blocking.
+- Agents work from **packets** (`python scripts/review_packet.py <id> --role …`): the lesson's own curriculum slot and glossary terms, the applicable rules, the check results and the files the role judges — never `curriculum.json`, `glossary.json` or `tests/sims` as a whole. A reviewer spends at most three to five tool calls.
+- **developer** (Sonnet medium; Opus medium for simulations and demanding physics) writes and fixes the lesson files and nothing else, and runs `python scripts/check_lesson.py <id>` until every check is ok.
+- **science-reviewer** (Opus medium) and **pedagogy-reviewer** (Sonnet medium) are independent: each reads the lesson, not the other's report, and writes `review/<name>.md` with `VERDICT: PASS|FAIL` on line 1 and `CONTENT-HASH: <python scripts/reviews.py hash <id>>` on line 2, then `## Blocking` (FAIL if and only if non-empty), `## Polish`, `## Checked`. Reviewers never edit lesson files; language, style and taste are never blocking.
 - **The rule** (`scripts/reviews.py`): a lesson is on the site when both reviews say PASS for its current content hash. The hash ignores only line endings, trailing whitespace, blank-line runs and JSON layout, so a mechanical cleanup keeps the reviews; any other change (a space inside a line, an indentation, a word) stales both. There are no status fields and nothing to edit by hand.
 - `review/legacy.md` marks a prototype lesson published before this pipeline: it stays visible, labelled as such on the page, until any content change retires the marker; then it returns only through both reviews.
-- `/lesson <id>` runs the whole round: developer, checks, both reviews in parallel, fixes, at most three rounds, one commit per round, then a pull request with a teacher summary and the token usage from `review/usage.log`.
+- After a fix, `python scripts/reviews.py scope <id>` decides per reviewer between a **delta review** (previous report + the diff since the version it passed) and a **full** one (answers, structure, more than 40 lines or more than 10 lines of sim.js changed, or no earlier PASS). A delta reviewer may escalate. Both reviewers must still PASS the current hash.
+- `/lesson <id>` runs the whole round with a lesson budget (250 k tokens; exceeding it needs the teacher), classifies findings A (science/pedagogy) / B (usability) / C (cosmetic, never a fix round), and logs every run in `review/usage.tsv` (`python scripts/usage.py report <id>` compares with the fy3-9 baseline).
 - Merging the pull request is the teacher's publication decision. CI rebuilds `site/` and fails if the committed copy differs, so shared templates and stylesheets reach the site only through a diff the teacher sees; a lesson whose reviews went stale is left out with a WARNING, never silently.
 
 ## Never

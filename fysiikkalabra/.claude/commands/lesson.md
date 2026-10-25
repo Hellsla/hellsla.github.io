@@ -1,18 +1,18 @@
 ---
-description: Take one lesson from draft to a reviewed pull request: developer, checks, two independent reviews, fixes, PR with a teacher summary
-argument-hint: <lesson-id>
+description: Take one lesson from draft to a reviewed pull request with packets, delta reviews, budgets and measured usage
+argument-hint: <lesson-id> [--budget 250000]
 ---
-Run lesson $ARGUMENTS through the pipeline. You coordinate; the agents do the work. Keep your own reading to `CLAUDE.md`, `python scripts/reviews.py status $ARGUMENTS` and the reports; never open lesson files yourself.
+Run lesson $ARGUMENTS through the pipeline. You coordinate; the agents do the work from packets. Read only `CLAUDE.md`, the agents' reports and the scripts' output; never open lesson files yourself.
 
-1. If the lesson folder has no `lesson.md`, run the **developer** agent with "draft"; otherwise skip to step 2.
-2. Run `python scripts/check_lesson.py $ARGUMENTS`. If anything fails, run the **developer** with "fix: make the checks pass" and repeat (at most twice).
-3. Run the **science-reviewer** and the **pedagogy-reviewer** as two separate subagents, in parallel, each with only the lesson id. Then `python scripts/reviews.py status $ARGUMENTS`.
-4. If the state is `reviewed`, go to step 6. If either report says FAIL, run the **developer** with "fix" (it reads both reports), then repeat from step 2. At most three review rounds; after the third, stop and report which blocking findings remain.
-5. Commit once per round: `git add content tests/sims glossary.json && git commit -m "fysiikkalabra: $ARGUMENTS review round <n>"`.
-6. Finish: `python scripts/build.py --all`, `python scripts/build.py` (plain, so `site/` carries the lesson when it is reviewed), commit `site/`, push the branch (`git push -u origin <branch>`), and open or update the pull request with this body, in this order:
-   - **Oppitunti**: id and title, one sentence on what it teaches, what changes on the live site (new page, or which pages are removed with the build's WARNING lines, if any).
-   - **Tarkistukset**: the last `check_lesson.py` lines and the two verdicts with their hashes.
-   - **Kierrokset**: rounds run and the blocking findings fixed in each, one line per finding.
-   - **Kulutus**: one line per agent run (agent, model, duration, tokens as the tool result reports them), copied from `review/usage.log` — append a line there after every agent call.
-   - **Avoimet kohdat**: polish items left as they are, and anything the teacher must decide.
-   Merging the pull request is the teacher's publication decision: never merge, never push to `main`.
+**Routing.** developer: Sonnet, effort medium (Opus medium when the task is a simulation, a numerical model or demanding physics; Opus high only after a medium attempt failed; Fable never without the teacher's word). science-reviewer: Opus medium. pedagogy-reviewer: Sonnet medium. Pass `model` and `effort` on every Agent call and pass the packet file's content as the prompt, followed by one line: "Lesson id: <id>."
+
+**Budget.** Lesson budget 250 000 tokens unless `--budget` says otherwise; soft per-run expectations: draft 120 k, fix 60 k, full review 60 k, delta review 30 k. After every agent run log it: `python scripts/usage.py log <id> --agent … --model … --effort … --mode draft|fix|full|delta --round n --tokens N --seconds S --calls C --verdict V` (tokens, seconds and calls from the task notification; input/output/cache columns when the harness reports them). Before each run, if the lesson total plus the run's expectation would exceed the budget, **stop and ask the teacher**; never shorten a review to stay inside it.
+
+1. If the folder has no `lesson.md`: `python scripts/review_packet.py <id> --role developer`, run the **developer** with it ("draft").
+2. `python scripts/check_lesson.py <id>`. On any FAIL run the developer with `--role developer --fix` and the failing output appended; repeat at most twice.
+3. `python scripts/screenshot.py <id>`, then `python scripts/review_packet.py <id> --role science` and `--role pedagogy` (they decide full or delta from `reviews.py scope`), then both reviewers as two parallel subagents. Then `python scripts/reviews.py status <id>`.
+4. If `reviewed`: go to 6. If a report says `ESCALATE`: regenerate that packet after `git commit` (the scope needs the reviewed version in history) — if it is still delta, run the reviewer again with "full review required" in the prompt. If a report says FAIL: classify every finding (Blocking and Polish) as **A** scientific/pedagogical, **B** usability/accessibility, or **C** cosmetic. Run the developer with `--fix` naming the Blocking items and the A and B Polish items; C items go to the PR only. Then from step 2. At most three review rounds; after the third, stop and report what remains.
+5. Commit once per round: `git add content tests/sims glossary.json && git commit -m "fysiikkalabra: <id> round <n>"`.
+6. Finish: `python scripts/build.py --all`, `python scripts/build.py`, commit `site/`, push the branch, and open or update the pull request (draft) with: **Oppitunti** (id, title, one sentence, what changes on the site, build WARNING lines if any); **Tarkistukset** (the last `check_lesson.py` lines, the two verdicts with hashes, CI link); **Kierrokset** (rounds, Blocking findings fixed, A/B Polish applied, C left); **Kulutus** (the output of `python scripts/usage.py report <id>`); **Opittua** (any rule or test added under the learning loop in NOTES.md); **Avoimet kohdat**. Merging the pull request is the teacher's publication decision: never merge, never push to `main`.
+
+**Learning loop.** When a reviewer finding is an objectively testable, recurring error: fix it, then add a check (`lint_lesson.py`, `test_sims.py`, `check_layout.py`) with a test that catches the original case and passes on every other lesson; if it is not testable, add one line to `NOTES.md` under the right heading. Mention it in the PR.
