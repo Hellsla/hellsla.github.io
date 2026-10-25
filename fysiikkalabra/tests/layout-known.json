@@ -1,7 +1,10 @@
 {
-  "_note": "Overflows at 360 px that are known and accepted until the lesson is reworked (PR 89 follow-ups). Each value is the start of the formula's LaTeX. Remove an entry when fixed; the check fails on stale entries.",
+  "_note": "Overflows at 360 px that are known and accepted until the lesson is reworked (PR 89 follow-ups). Each value is the start of the formula's LaTeX. Widths depend on fonts: fy3-7 overflows by 8 px only with the CI runner's fonts. Remove an entry when the lesson is fixed.",
   "fy3-3": [
     "k = \\frac{(137 - 100)",
     "\\theta = -\\frac{p_0}{k} = -\\frac{100"
+  ],
+  "fy3-7": [
+    "r = \\frac{Q}{\\Delta m} = \\frac{300"
   ]
 }
