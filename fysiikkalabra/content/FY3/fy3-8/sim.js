@@ -14,8 +14,8 @@ new p5((p) => {
     ['teräs', 12e-6, [60, 90, 150]], ['alumiini', 23e-6, [150, 100, 200]], ['kupari', 17e-6, [200, 110, 40]],
     ['tavallinen lasi', 9e-6, [30, 150, 140]], ['borosilikaattilasi', 3.3e-6, [110, 160, 50]]];
   const A_MAX = 23e-6;                                           // largest α, sets the chart scale
-  const CH = { x0: 335, x1: 575, y0: 330, y1: 150 };             // chart area (axes at x0 and y0)
-  const ROD = { x: 280, y: 72, h: 22, w: 220 };                  // rod at 20 °C: 220 px
+  const CH = { x0: 335, x1: 575, y0: 330, y1: 160 };             // chart area (axes at x0 and y0)
+  const ROD = { x: 280, y: 90, h: 22, w: 220 };                  // rod at 20 °C: 220 px
   const LAT = { cx: 125, cy: 210, n: 5, d0: 36, r: 7, a0: 6.5 }; // lattice: spacing at 20 °C, particle radius, amplitude at 20 °C (px)
   let sL, lL, sT, lT, sel, btn, readout, tAnim = 0, running = true;
 

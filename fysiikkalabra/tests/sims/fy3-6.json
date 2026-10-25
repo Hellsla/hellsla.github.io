@@ -276,5 +276,24 @@
   "expected": 1,
   "tol": 0,
   "note": "canvas is 600x400"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=40; s.value='385'; r[2].value=0.2; r[3].value=40;",
+  "expr": "Math.abs(window.simState.Q) + Math.abs(window.simState.Teq - 40)",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "equal start temperatures: no heat flows"
+ },
+ {
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Lämpötilat ovat samat, joten lämpöä ei siirry.') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "equal start temperatures: the readout says no heat flows"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root .controls'), b=document.querySelector('#sim-root button'), r=document.querySelector('#sim-root .readout'); return c.firstElementChild===b && (c.compareDocumentPosition(r) & Node.DOCUMENT_POSITION_FOLLOWING) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "phone layout: Upota is the first control and the controls come before the long readout, so canvas and button fit on one screen"
  }
 ]
