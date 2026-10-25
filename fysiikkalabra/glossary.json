@@ -25,6 +25,30 @@
     "locked": false
   },
   {
+    "term": "hydrostaattinen paine",
+    "definition": "Nesteen omasta painosta syntyvä paine, joka kasvaa syvyyden mukana: ρgh. Se riippuu vain syvyydestä ja nesteen tiheydestä, ei astian muodosta.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine",
+      "ilmanpaine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ilmanpaine",
+    "definition": "Ilmakehän paino pinta-alaa kohti. Merenpinnan tasolla ilmanpaine on noin 101 kPa, ja se vaikuttaa myös nesteen pintaan.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine",
+      "hydrostaattinen paine"
+    ],
+    "locked": false
+  },
+  {
     "term": "joule",
     "definition": "Energian ja työn yksikkö, 1 J = 1 N·m. Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla.",
     "lessons": [
@@ -72,10 +96,23 @@
     "locked": false
   },
   {
+    "term": "lämpö",
+    "definition": "Energian siirtymistä kuumemmasta kappaleesta kylmempään lämpötilaeron vuoksi. Lämpö ei ole kappaleen ominaisuus; kappaleella on lämpötila ja sisäenergia.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "lämpömäärä",
+      "lämpötila"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpömäärä",
     "definition": "Lämpötilaeron vuoksi kappaleesta toiseen siirtyvä energia, symboli Q. Yksikkö on joule (J).",
     "lessons": [
-      "fy3-2"
+      "fy3-2",
+      "fy3-5"
     ],
     "see_also": [
       "energia",
@@ -123,7 +160,8 @@
     "term": "paine",
     "definition": "Paine on voima pinta-alaa kohti. Yksikkö on pascal (Pa); kaasussa paine syntyy hiukkasten törmäyksistä astian seinämään. Paineeseen paneudutaan tarkemmin myöhemmin.",
     "lessons": [
-      "fy3-3"
+      "fy3-3",
+      "fy3-4"
     ],
     "see_also": [
       "tilanmuuttuja"
@@ -140,6 +178,17 @@
       "massa",
       "voima",
       "newton"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pascal",
+    "definition": "Paineen yksikkö, tunnus Pa. Yksi pascal on yhden newtonin voima yhden neliömetrin alalle, 1 Pa = 1 N/m², ja 1 kPa = 1000 Pa.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine"
     ],
     "locked": false
   },
@@ -168,6 +217,19 @@
     "locked": false
   },
   {
+    "term": "sisäenergia",
+    "definition": "Systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa, tunnus U. Sitä muuttavat lämpö ja työ.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "lämpömäärä",
+      "työ",
+      "energia"
+    ],
+    "locked": false
+  },
+  {
     "term": "systeemi",
     "definition": "Termodynaaminen systeemi on tutkimista varten rajattu osa maailmaa. Kaikki sen ulkopuolella on ympäristöä, ja systeemi on suljettu, jos siitä ei pääse ainetta ulos tai sisään.",
     "lessons": [
@@ -187,6 +249,29 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "termodynamiikan ensimmäinen pääsääntö",
+    "definition": "Energian säilymisen laki lämmölle ja työlle: sisäenergian muutos on systeemiin siirtyneen lämpömäärän ja siihen tehdyn työn summa, ΔU = Q + W.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "sisäenergia",
+      "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tiheys",
+    "definition": "Aineen massa tilavuutta kohti, ρ = m/V, yksikkö kg/m³. Veden tiheys on noin 1000 kg/m³.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "massa"
     ],
     "locked": false
   },
