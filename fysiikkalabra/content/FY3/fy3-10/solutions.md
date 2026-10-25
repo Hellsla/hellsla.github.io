@@ -36,7 +36,7 @@
 **Kaava:** n = m / M
 **Sijoitus:** n = 425 g / 44 g/mol = 9,659 mol ≈ 9,7 mol
 **Vastaus:** 9,7 mol
-**Järkevyys:** Gramma ja gramma supistuvat, joten yksiköksi jää mooli. Pullossa hiilidioksidi on suuren paineen vuoksi osittain nesteenä, mutta ainemäärä kertoo molekyylien määrän olomuodosta riippumatta. Huoneen paineessa ja lämpötilassa kaasu veisi noin 9,7 · 24 l ≈ 230 l.
+**Järkevyys:** Grammat supistuvat, joten yksiköksi jää mooli. Pullossa hiilidioksidi on suuren paineen vuoksi osittain nesteenä, mutta ainemäärä kertoo molekyylien määrän olomuodosta riippumatta. Huoneen paineessa ja lämpötilassa kaasu veisi noin 9,7 · 24 l ≈ 230 l.
 
 ## fy3-10-L2-01
 **Annettu:** V = 10,0 l = 0,0100 m³, p = 200 bar = 2,00 · 10⁷ Pa, θ = 15 °C, M = 32 g/mol = 0,032 kg/mol

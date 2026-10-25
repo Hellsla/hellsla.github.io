@@ -109,7 +109,7 @@ new p5((p) => {
     readout.html(`N = ${N}, T = ${T} K, V = ${fi(Vrel * 100, 0)} % (vertailutila: N = 100, T = 300 K, V = 100 %)` +
       `<br>Mitattu paine p/p<sub>ref</sub> = <strong>${fi(pm, 2)}</strong> (keskiarvo ${fi(tAvg, 1)} s:n ajalta)` +
       `<br>Tilanyhtälön ennuste p/p<sub>ref</sub> = (N/100) · (T/300 K) · (100 %/V) = <strong>${fi(pp, 2)}</strong>` +
-      `<br>Suhde mitattu/ennuste = pV/(NT) vertailutilaan verrattuna = <strong>${fi(ratio, 2)}</strong>`);
+      `<br>Suhde mitattu/ennuste (= pV/(NT) suhteessa vertailutilaan) = <strong>${fi(ratio, 2)}</strong>`);
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k);

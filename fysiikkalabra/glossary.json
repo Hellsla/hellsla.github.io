@@ -652,6 +652,18 @@
     "locked": false
   },
   {
+    "term": "yhdistetty kaasulaki",
+    "definition": "Kun suljetun kaasumäärän paine, tilavuus ja lämpötila muuttuvat yhtä aikaa, suure pV/T pysyy vakiona: p₁V₁/T₁ = p₂V₂/T₂. Siitä saadaan Boylen laki ja muut kaasulait, kun yksi suure pidetään vakiona.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "tilanyhtälö",
+      "Boylen laki"
+    ],
+    "locked": false
+  },
+  {
     "term": "ylipaine",
     "definition": "Paineen ero ympäröivään ilmanpaineeseen verrattuna, Δp = p − p₀. Nesteessä syvyydessä h ylipaine on hydrostaattinen paine ρgh, ja padon muuria tai vedenalaista ikkunaa kuormittaa juuri se.",
     "lessons": [

@@ -35,14 +35,18 @@ Juhlapallo täytetään heliumilla, kunnes sen tilavuus on 5,0 l. Pallossa paine
 
 Muutetaan yksiköt: $V = 5{,}0\,\text{l} = 0{,}0050\,\text{m}^3$, $p = 101\,000\,\text{Pa}$ ja $T = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Ratkaistaan tilanyhtälöstä ainemäärä:
 ```latex
-n = \frac{pV}{RT} = \frac{101\,000\,\text{Pa} \cdot 0{,}0050\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293{,}15\,\text{K}} \approx 0{,}21\,\text{mol}
+\begin{aligned}
+n &= \frac{pV}{RT} \\
+&= \frac{101\,000\,\text{Pa} \cdot 0{,}0050\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293{,}15\,\text{K}} \\
+&\approx 0{,}21\,\text{mol}
+\end{aligned}
 ```
-Heliumin massa on $m = nM = 0{,}207\,\text{mol} \cdot 4{,}0\,\text{g/mol} \approx 0{,}83\,\text{g}$.
+Pyöristämätön ainemäärä on 0,207 mol, joten heliumin massa on $m = nM = 0{,}207\,\text{mol} \cdot 4{,}0\,\text{g/mol} \approx 0{,}83\,\text{g}$.
 
 Samankokoisessa ilmapallossa on samassa paineessa ja lämpötilassa yhtä paljon eli 0,21 mol ilmaa, mutta sen massa on noin 6,0 g, koska ilman moolimassa on 29 g/mol. Tulos on järkevä: litrassa kaasua on huoneenlämmössä noin 0,04 mol.
 
 ## Yleinen virhekäsitys
-Yleisin virhe on käyttää tilanyhtälössä celsiusasteita. Esimerkiksi 0 °C antaisi nollan, mutta kaasulla on paine myös jäätymispisteessä. Lämpötila muutetaan aina kelvineiksi. Toinen virhe on sijoittaa paine kilopascaleina ja tilavuus litroina. Silloin tulos on tuhat tai miljoona kertaa väärä, ellei yksiköitä muuteta perusyksiköiksi. Kolmas virhe on ajatella, että raskaampaa kaasua mahtuu samaan tilavuuteen vähemmän moolia. Ainemäärä riippuu vain paineesta, tilavuudesta ja lämpötilasta, ei kaasun laadusta. Massa sen sijaan riippuu moolimassasta.
+Yleisin virhe on käyttää tilanyhtälössä celsiusasteita. Esimerkiksi 0 °C antaisi tulokseksi nollan, mutta kaasulla on paine myös jäätymispisteessä. Lämpötila muutetaan aina kelvineiksi. Toinen virhe on sijoittaa paine kilopascaleina ja tilavuus litroina. Silloin tulos on tuhat- tai miljoonakertaisesti väärä, ellei yksiköitä muuteta perusyksiköiksi. Kolmas virhe on ajatella, että raskaampaa kaasua mahtuu samaan tilavuuteen vähemmän moolia. Ainemäärä riippuu vain paineesta, tilavuudesta ja lämpötilasta, ei kaasun laadusta. Massa sen sijaan riippuu moolimassasta.
 
 ## Tiivistelmä
 - Ideaalikaasun tilanyhtälö on $pV = nRT$, missä $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja T on kelvineinä.

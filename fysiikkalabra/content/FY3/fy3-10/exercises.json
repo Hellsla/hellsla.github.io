@@ -27,7 +27,7 @@
     {
       "id": "fy3-10-L1-04",
       "level": 1,
-      "text": "Mökin laiturilla on tyhjä tummanvärinen muovitynnyri, jonka kansi on kiinni. Tynnyrin tilavuus on 0,200 m³, ja siinä on 8,40 mol ilmaa. Aurinkoisena iltapäivänä ilman paine tynnyrissä on 1,13 · 10⁵ Pa. Mikä on ilman lämpötila tynnyrissä kelvineinä? Käytä arvoa R = 8,31 J/(mol·K).",
+      "text": "Mökin laiturilla on tummanvärinen muovitynnyri, jonka kansi on kiinni. Tynnyrin tilavuus on 0,200 m³, ja siinä on 8,40 mol ilmaa. Aurinkoisena iltapäivänä ilman paine tynnyrissä on 1,13 · 10⁵ Pa. Mikä on ilman lämpötila tynnyrissä kelvineinä? Käytä arvoa R = 8,31 J/(mol·K).",
       "answer": 324,
       "unit": "K",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "Ensihoitoauton happipullon tilavuus on 10,0 l. Täydessä pullossa hapen paine on 200 bar (1 bar = 100 kPa), ja auton tallissa lämpötila on 15 °C. Kuinka monta kilogrammaa happea pullossa on? Hapen moolimassa on 32 g/mol. Käytä arvoa R = 8,31 J/(mol·K) ja oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
+      "text": "Ensihoitoauton happipullon tilavuus on 10,0 l. Täydessä pullossa hapen paine on 200 bar (1 bar = 100 kPa), ja autotallissa lämpötila on 15 °C. Kuinka monta kilogrammaa happea pullossa on? Hapen moolimassa on 32 g/mol. Käytä arvoa R = 8,31 J/(mol·K) ja oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
       "answer": 2.7,
       "unit": "kg",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-10-L3-01",
       "level": 3,
-      "text": "Levossa ihminen hengittää yhdellä sisäänhengityksellä keuhkoihinsa ilmaa, joka vie keuhkoissa 37 °C:n lämpöisenä tilavuuden 0,55 l. Ilman paine keuhkoissa on 101 kPa. Kuinka monta molekyyliä yhdessä hengenvedossa on? Avogadron vakio on 6,022 · 10²³ 1/mol ja R = 8,31 J/(mol·K). Anna vastaus muodossa a · 10²². Perustele, miksi laskussa ei tarvita tietoa siitä, mistä kaasuista ilma koostuu.",
+      "text": "Levossa ihminen hengittää yhdellä sisäänhengityksellä keuhkoihinsa ilmaa, joka vie 37 °C:n lämpöisenä tilavuuden 0,55 l. Ilman paine keuhkoissa on 101 kPa. Kuinka monta molekyyliä yhdessä hengenvedossa on? Avogadron vakio on 6,022 · 10²³ 1/mol ja R = 8,31 J/(mol·K). Anna vastaus muodossa a · 10²². Perustele, miksi laskussa ei tarvita tietoa siitä, mistä kaasuista ilma koostuu.",
       "answer": 1.3,
       "unit": "· 10²²",
       "tolerance": 0.02

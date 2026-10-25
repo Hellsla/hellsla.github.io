@@ -8,7 +8,7 @@
     "a": "Moolimäärä on sama, koska n = pV/(RT) ei riipu kaasun laadusta. Hiilidioksidipallo on raskaampi, koska hiilidioksidin moolimassa 44 g/mol on paljon suurempi kuin heliumin 4,0 g/mol."
   },
   {
-    "q": "Mitä mikromallin oletuksia ideaalikaasumalliin sisältyy, ja milloin malli alkaa pettää?",
+    "q": "Mitä oletuksia ideaalikaasun mikromalliin sisältyy, ja milloin malli alkaa pettää?",
     "a": "Hiukkasilla ei oleteta olevan tilavuutta eikä vuorovaikutusta törmäysten välillä. Malli pettää suurissa paineissa ja matalissa lämpötiloissa, kun hiukkaset ovat lähellä toisiaan ja kaasu on lähellä nesteytymistä."
   }
 ]
