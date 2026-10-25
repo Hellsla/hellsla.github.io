@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3b1b29439e94b105
+CONTENT-HASH: 536cade809f2b051
 
-Round 2. Checked lesson.md, exercises.json, solutions.md, exit-ticket.json, sim-spec.md, Finnish strings in sim.js, meta.json and the fy3-3 glossary entries (paine, kelvin, lämpötila, systeemi, tilanmuuttuja, absoluuttinen nollapiste).
+Round 3 proofreading of lesson.md, exercises.json, solutions.md, exit-ticket.json, sim-spec.md, Finnish strings in sim.js and the fy3-3 glossary entries.
 
-Issue kinds found: none (no spelling, grammar, punctuation or terminology errors).
-- Decimal comma, unit spacing, case-endings after units (20 °C:sta, 283 K:sta, 45 K:n, 300 K:n), ”…” quotes: all correct.
-- "celsiuslämpötila", "kelvinlämpötila", kelvin never "aste": consistent; paine matches glossary.
-- Reading level suitable for 16-19-year-olds.
-- Nit only (no change needed): sim.js readout says "1,0 dm³" where sim-spec.md says "1,00 dm³"; lesson/solutions use a normal space before units while exercises use a no-break space (accepted).
+Issue kinds found: none blocking. No spelling, grammar, punctuation or terminology errors.
+Checked: decimal comma in prose; units with space; case endings after number plus unit (10 °C:sta 20 °C:een, 283 K:sta 293 K:iin, 45 K:n nousu, −300 °C:n kohdalle); "kelvin" never with "aste" (the lesson explicitly says so); celsiuslämpötila, kelvinlämpötila, paine and the other terms match glossary.json; quotes use ”…”; reading level suits 16-19-year-olds.
+Nit (not changed): sim.js readout says "1,0 dm³" while sim-spec.md says "1,00 dm³"; a style choice, left as is.
 
-Unified diff (no edits proposed):
+Proposed diff (no changes needed):
+
+```diff
 (empty)
+```
