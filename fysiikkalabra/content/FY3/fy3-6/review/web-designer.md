@@ -1,20 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 3243e1e380d9c9a9
+VERDICT: PASS
+CONTENT-HASH: 9d2d7a30f569bc1d
 
 ## Blocking
-- lesson.md:92-97 (misconception, aligned) — row 1 `3,0 kg·(T − 20 °C) = 1,0 kg·(80 °C − T)` is wider than the display box: it scrolls sideways and the right-hand side is cut off at 390 px (scrollWidth 383 vs 356) and 360 px (383 vs 326, 57 px hidden). The key line of the argument cannot be read without a swipe. — Fix: break it as `3{,}0\,\text{kg}\cdot(T-20\,{}^\circ\text{C}) \\ &= 1{,}0\,\text{kg}\cdot(80\,{}^\circ\text{C}-T)` (or drop the kg and say in the text that kg cancels).
-- lesson.md:33-36 (Kaava, aligned solving for T) — row 1 `c₁m₁T₁ − c₁m₁T = c₂m₂T − c₂m₂T₂` is cut off at 360 px (345 vs 326, 19 px hidden; fits at 390 and 1280). — Fix: put the right-hand side on its own row (`&= c_2 m_2 T - c_2 m_2 T_2` after a `\\`) and recheck at 360.
-- lesson.md:81, 85 (worked example, single-line displays) — scroll sideways at 390 px (449 and 461 vs 356) and 360 px (449, 461 vs 326); the units fractions make them about 100-135 px too wide. Also lesson.md:15 at 360 only (343 vs 326). — Fix: split each into an `aligned` with `&=` at the line start so the right side drops to row 2, or write units inline (`J/(kg·K)`), as the solutions already do.
+None. All five round-2 items are resolved.
 
 ## Polish
 None.
 
 ## Checked
-- Hash 3243e1e380d9c9a9 at start and end; lint 0 errors, 0 warnings; build ok; 0 console errors at 1280, 390, 360; page overflow 0 at all widths.
-- Upota: first control, directly below the canvas, 92x40 px; button bottom is 475 px (1280), 291 px (390x844) and 244 px (360x640) from the canvas top, so canvas + button fit one screen; gap canvas to button 35, 35, 8 px.
-- DOM order is canvas, controls, readout, note. All sliders, select and button are 40 px tall; all five labels one line (27 px), no wrapping at any width.
-- Scroll-away test at 390 and 360: Upota pressed, scrolled away 3,5 s, simState.t 0,77-0,78 s; 0,6 s after return 1,44-1,49 s, so no jump (step clamp works).
-- Full 10 s runs at 1280, 390 and 360 for five settings: cold iron 1 kg into 60 °C water, 0 °C Al in 0,10 kg of 5 °C water, hot Cu 1 kg in 0,10 kg water (T 50,5), tiny hot water body, equal temperatures. End state t = 10, TW = TB = Teq, no clipping or label collisions; the T label moves below the line near the top (checked in screenshots); no string through "kappale".
-- Canvas text about 11-13 px at 390 and 360; readout is DOM text, 6 lines at most.
-- At 1280 every display fits (606 px box); at narrow widths overflow scrolls inside `.katex-display`, the page itself never overflows.
-- Screenshots: review/fy3-6-wd2-*.png (git-ignored).
+- Hash 9d2d7a30f569bc1d at start and end; lint 0 errors, 0 warnings; build ok; `check_layout.py fy3-6` OK at 360 and at 390 px; 0 console errors at 1280, 390, 360.
+- All 8 display formulas: scrollWidth equals clientWidth (606 / 356 / 326 px) at 1280, 390, 360. Widest row is 274 px (the `c_metalli` balance, lesson.md:81) against the 326 px box at 360, so 52 px spare. Page overflow 0 at all widths.
+- Screenshots of each split block at 360 and 1280 px (lesson.md:15, 33-36, 81, 85, 92-97): rows read cleanly. Each `=` continuation is indented one step under its left side, and the two-equation blocks (33-36, 92-97) are separated by a clear gap. The 3-row result (85) steps =, ≈ under the first `=`. No row is clipped and no unit fraction collides with a neighbour. The blocks are centred as a unit, which is fine.
+- The 35 °C working (92-97): first equation split over two rows, then three short left-aligned rows; reads as one derivation.
+- Sim layout unchanged from round 2: canvas, then controls (Upota first, 92x40 px), then readout. Canvas-to-button gap 34 / 35 / 8 px and button bottom 474 / 290 / 244 px from the canvas top at 1280 / 390 / 360, so canvas and button still fit one screen.
+- Controls: every button, slider and the select is 40 px tall, no tap target under 40 px, no wrapping labels; the sim readout is DOM text.
+- Upota run to t = 10 s at 1280, 390 and 360: TW = TB = Teq = 24,62 °C each time, no errors.
+- Text column 67 characters at 1280; 40 and 36 at 390 and 360 (expected for a phone, text size 17 px).
+- Screenshots in the scratchpad, not in the repo.

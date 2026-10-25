@@ -76,7 +76,7 @@
 **Kaava:** mehun luovuttama lämpö = jään sulaminen + sulamisveden lämpeneminen: c m₁ (25 °C − T) = s m₂ + c m₂ (T − 0 °C)
 **Sijoitus:** T = (c m₁ · 25 °C − s m₂) / (c (m₁ + m₂)) = (36 662,5 J − 20 040 J) / (4190 J/(kg·K) · 0,41 kg) ≈ 9,7 °C
 **Vastaus:** 9,7 °C
-**Järkevyys:** Kaikki jää sulaa, sillä mehun jäähtyminen 0 °C:seen vapauttaisi 36 662,5 J, enemmän kuin sulamisen 20 040 J. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
+**Järkevyys:** Kaikki jää sulaa, sillä mehun jäähtyminen 0 °C:seen vapauttaisi 36 662,5 J, enemmän kuin sulamiseen tarvittava 20 040 J. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
 
 ## fy3-7-L3-02
 **Annettu:** vesi m = 0,25 kg, 20 °C → 100 °C, c = 4190 J/(kg·K), r = 2 260 000 J/kg; kivet m_k = 30 kg, c_k = 800 J/(kg·K)

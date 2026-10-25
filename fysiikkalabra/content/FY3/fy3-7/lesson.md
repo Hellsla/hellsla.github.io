@@ -54,10 +54,10 @@ Oletetaan, että kuumentimen energia siirtyy kokonaan veteen: $Q = Pt = 1000\,\t
 ```latex
 r = \frac{Q}{\Delta m} = \frac{300\,\text{kJ}}{0{,}128\,\text{kg}} \approx 2{,}34\,\text{MJ/kg}
 ```
-Tulos 2,34 MJ/kg on hieman taulukkoarvoa 2,26 MJ/kg suurempi, koska oletus ei pidä täysin. Astia ei enää lämpene, koska vesi on jo kiehumispisteessä, mutta osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä. Mittaus on silti tarkka muutaman prosentin sisällä.
+Tulos 2,34 MJ/kg on hieman taulukkoarvoa 2,26 MJ/kg suurempi, koska oletus ei pidä täysin paikkaansa. Astia ei enää lämpene, koska vesi on jo kiehumispisteessä, mutta osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä. Tulos on silti muutaman prosentin tarkkuudella oikea.
 
 ## Yleinen virhekäsitys
-Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Olomuodon muutoksessa lämpötila pysyy vakiona, vaikka energiaa siirtyy paljon: jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen 0 °C:sta 80 °C:seen. Toinen virhe on pitää 0-asteista jäätä ja 0-asteista vettä samanarvoisina jäähdyttäjinä. Jää viilentää juomaa paljon tehokkaammin, koska se ottaa sulaessaan sulamislämmön ennen kuin alkaa lämmetä. Kolmas virhe on ajatella, että vesi kiehuu aina 100 °C:ssa: kiehumispiste riippuu paineesta.
+Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Olomuodon muutoksessa lämpötila pysyy vakiona, vaikka energiaa siirtyy paljon: jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen 0 °C:sta 80 °C:seen. Toinen virhe on pitää 0-asteista jäätä ja 0-asteista vettä samanarvoisina jäähdyttäjinä. Jää viilentää juomaa paljon tehokkaammin, koska se ottaa sulaessaan paljon energiaa ennen kuin alkaa lämmetä. Kolmas virhe on ajatella, että vesi kiehuu aina 100 °C:ssa: kiehumispiste riippuu paineesta.
 
 ## Tiivistelmä
 - Olomuodot ovat kiinteä, neste ja kaasu. Mikromallissa olomuodon muutos tarkoittaa hiukkasten välisten sidosten purkautumista tai muodostumista.
