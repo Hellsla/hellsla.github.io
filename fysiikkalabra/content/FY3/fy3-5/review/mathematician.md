@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 36ffef8025cd3db6
+CONTENT-HASH: 169cf2ec47db5201
 ## Blocking
 (none)
 ## Polish
-- lesson.md:31 — label "Q < 0 tai W < 0" centred at x=478, 22px: measured left edge x≈404 (Arial metrics) or x≈391 (DejaVu Sans), so it touches or crosses the box stroke at x≈401 — use `x="414" text-anchor="start"` (right edge ≤ 588) or shorten it.
-- lesson.md:43 — "olisi Q = −150 J ja ΔU = 0" assumes the slow compression still takes W = 150 J — write "olisi Q = −W ja ΔU = 0".
-- exercises.json:82 — "Mäntää painetaan … 120 N:n voimalla" is the hand's force, not the piston's force on the air (atmosphere also pushes the piston) — reword as in L2-01: "mäntä työntää ilmaa … 120 N:n voimalla", so W = F s = 18 J is exact.
-- exit-ticket.json:11–12 — system is "sen sisällön", yet energy goes from the coffee to "pullon kylmempiin seiniin", which would lower the contents' U — make the system "pullo ja sen sisältö".
-- exercises.json:98 — L3-03 is the same computation as L2-03 (line 64), Q = ΔU − W with an expanding gas — add a second idea to make it level 3.
+- solutions.md:90–93 — L3-03 writes subscripts as `Q_A`, `W_B`, `ΔU_A`, while L3-02 (line 84) uses Unicode `W₁`; no capital Unicode subscripts exist, so keep them, or use `Q(A)` / `Qᴀ`-free wording such as "tavan A lämpömäärä". Only cosmetic: with `meta.solutions` defaulting to `first`, this solution is not published.
 ## Checked
-- Hash 36ffef8025cd3db6 before and after; lint 0/0, not repeated
-- ΔU = Q + W sign convention identical in lesson.md, 12 solutions, answers.py, exit ticket
-- Worked example −40 J + 150 J = 110 J
-- L1: 570 J, −8,4 kJ, 250 J, −500 J, −70 J; signs read correctly, negatives asked "etumerkkeineen"
-- L2-01 W = 60 J, Q = −15 J; L2-03 Q = −1200 − (−2000) = +800 J
-- L2-02 P t = 180 kJ, ΔU = 160 kJ; L2-04 W = 10 kJ, ΔU = 12 kJ (P from fy3-2)
-- L3-01 ΔU = 0 ⇒ Q = −18 J; L3-02 h = 1000/(12·5,0·9,81) = 1,699 → 1,7 m, rounded only at the end
-- L3-03 Q = +160 J; exit ticket 1: 180 J
-- SVG: arrow tips at x=200 meet the box (200–400 × 70–230), line ends inside arrowheads, other labels clear; formula matches lesson.md:15
-- Units of solutions and answers.py output match exercises.json
+- Hash 169cf2ec47db5201 before and after; lint 0/0 and check_latex ok, not repeated
+- ΔU = Q + W sign convention identical in lesson.md:15–17, all 12 solutions, answers.py header and exit ticket 1
+- Worked example lesson.md:41 −40 J + 150 J = 110 J; remark :43 now "sama 150 J:n työ", so Q = −150 J and ΔU = 0 follow exactly
+- L1: 570 J, −8,4 kJ, 250 J, −500 J, −70 J; L2-01 W = 60 J, Q = −15 J; L2-02 180 kJ − 20 kJ = 160 kJ; L2-03 Q = −1200 − (−2000) = +800 J
+- New L2-04 (solutions.md:65–71): W = ΔU − Q = 12 kJ − 2,0 kJ = 10 kJ, t = W/P = 10 000 J / 250 W = 40 s; signs and kJ→J conversion correct
+- L3-01: wording "mäntä työntää ilmaa … 120 N:n voimalla" makes W = Fs = 18 J exact; ΔU = 0 ⇒ Q = −18 J
+- L3-02: 12 · 5,0 · 9,81 = 588,6 N, h = 1000/588,6 = 1,699 → 1,7 m, rounded only at the end
+- New L3-03 (exercises.json:98, solutions.md:89–95): ΔU_A = 400 − 150 = 250 J, ΔU_B = ΔU_A (same gas amount, same initial and final temperature), Q_B = 250 − (−60) = 310 J; sanity check 310 J < 400 J consistent
+- Exit ticket: 1 → 300 J − 120 J = 180 J; 3 → system "termospullo ja sen sisältö" now isolated, so its U is constant while the coffee's U falls and the inner wall's and air's rise equally (lesson.md:10)
+- SVG lesson.md:19–34: moved label at x=414 start, 22 px measures 148 px (Liberation Sans) / 174 px (DejaVu Sans), so it spans 414–588 inside the 600 viewBox and clears the box stroke (≤ 401,5); baseline 138 stays above the arrowhead top (528,140) and dashed line (y = 150); arrow tips at x = 200 meet the box, line ends hidden in arrowheads; box formula matches lesson.md:15

@@ -84,12 +84,12 @@
 **Kaava:** c_k m_k ΔT = c m (100 °C − 20 °C) + r m
 **Sijoitus:** Lämpeneminen: 4190 · 0,25 · 80 J = 83 800 J. Höyrystyminen: 2 260 000 · 0,25 J = 565 000 J. Yhteensä 648 800 J. ΔT = 648 800 J / (800 J/(kg·K) · 30 kg) ≈ 27 K
 **Vastaus:** 27 K
-**Järkevyys:** Höyrystyminen vie noin 87 % energiasta, lämpeneminen vain 13 %. Siksi kiukaan on oltava kuuma: muutama kauhallinen jäähdyttää kiviä kymmeniä kelvinejä, kunnes vastukset tai tuli lämmittävät ne taas.
+**Järkevyys:** Höyrystyminen vie noin 87 % energiasta, lämpeneminen vain 13 %. Siksi muutama kauhallinen jäähdyttää kiviä kymmeniä kelvinejä.
 
 ## fy3-7-L3-03
-**Annettu:** m = 1,0 kg, lumi −20 °C, c(jää) = 2100 J/(kg·K), s = 334 000 J/kg, c(vesi) = 4190 J/(kg·K), r = 2 260 000 J/kg
+**Annettu:** lumi m = 1,0 kg, −20 °C, c(jää) = 2100 J/(kg·K), s = 334 000 J/kg, c(vesi) = 4190 J/(kg·K), r = 2 260 000 J/kg
 **Kysytty:** höyrystymisen osuus kokonaislämpömäärästä
 **Kaava:** Q = c(jää) m · 20 K + s m + c(vesi) m · 100 K + r m
 **Sijoitus:** 42 000 J + 334 000 J + 419 000 J + 2 260 000 J = 3 055 000 J. Osuus = 2 260 000 J / 3 055 000 J ≈ 0,740 = 74 %
 **Vastaus:** 74 %
-**Järkevyys:** Jokainen termi on verrannollinen massaan, joten m supistuu osuudesta pois. Höyrystäminen vie lähes kolme neljäsosaa, sulaminen 11 % ja lämpeneminen loput: lämpenemiskäyrän pisin vaakasuora osa on kiehuminen.
+**Järkevyys:** Jokainen termi on verrannollinen massaan, joten m supistuu osuudesta pois. Höyrystäminen vie lähes kolme neljäsosaa, sulaminen vain 11 %.
