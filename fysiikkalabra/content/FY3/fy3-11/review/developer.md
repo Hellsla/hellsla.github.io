@@ -1,6 +1,15 @@
 VERDICT: DONE
 
-- lesson.md: both figures redrawn. Energy flow: arrow widths Q₁ = W + Q₂ (40 % to work), W arrow strongest, legend "nuolen leveys kuvaa tehoa"; (V, p) graph: shaded work rectangle, expansion arrow on the isobar, ΔV double arrow. Every symbol/formula (T₁, T₂, Q₁, Q₂, W, p, V, V₁, V₂, ΔV, W = pΔV) is a `fig-tex` foreignObject; aria-labels rewritten. Ydinajatus/Kaava inline formulas now LaTeX.
-- sim.js: every canvas text goes through `lab(s, x, y, align, size, bold, name)`, which pushes `{s, x0, y0, x1, y1}` to `simState.labels` every frame. The flows animate, so a "Nopeus" select (hidas 0,4 · normaali 1 · nopea 2) was added; t advances by dt·speed, `simState.speed`. Explanation, scale sentence and the heat-pump "ei luo energiaa" note moved to a closed `details.note` "Lisätietoja" after the readout; readout is 4 short lines in every mode.
-- sim-spec.md: speed control, readout, Lisätietoja and simState.labels/speed described.
-- tests/sims/fy3-11.json: label assertions read `labels[].s` (same strings, same order); scale/pump-note assertions read the details; the option list reads the first select. Added: closed details after readout, no loose note paragraph, readout 3–4 lines per mode, label boxes inside canvas per mode, speed select and speed-independence (92 pass, sweep clean).
+Seven teacher-listed items only. Exercises, answers, solutions and sim physics unchanged.
+
+lesson.md
+- Ydinajatus: the "fy3-2" reference is replaced by "voima kertaa matka: W = Fs = pAs". The heat-engine paragraph is split after "…yhteensä.". New heat-pump SVG figure (600×300, aria-label) after the heat-pump paragraph: arrows W and Q_ulko (widths 1 : 2) merge into Q_sisälle, with LaTeX labels.
+- Figure 1: the T₁, T₂, Q₁, Q₂ and W boxes are enlarged (font-size 32 px), so they render at about 16 px at 360 px. Box texts shifted left.
+- Kaava: one sentence contrasts the work done by the gas (pΔV) with W in ΔU = Q + W (fy3-5, work on the gas). Added Q_sisälle = Q_ulko + W and ε = Q_sisälle/W, with symbols named.
+
+sim.js
+- automoottori: efficiency slider max is 45 %; the other modes reset it to 60 %.
+- Readout: four short lines in every mode (≤ 266 of 294 px at 360 px).
+
+tests/sims/fy3-11.json
+- Readout assertions now match the new text. The car conservation case uses 44 % instead of 58 %. Added two range assertions: 10–45 % for the car, and 10–60 % again after switching back.
