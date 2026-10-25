@@ -60,7 +60,7 @@
 **Kaava:** ΔL = α L₀ ΔT, josta ΔT = ΔL / (α L₀), ja T = T₀ + ΔT
 **Sijoitus:** ΔT = 0,0072 m / (12 · 10⁻⁶ 1/K · 25,0 m) = 24 K. T = 12 °C + 24 K = 36 °C
 **Vastaus:** 36 °C
-**Järkevyys:** Oletus on perusteltu: kisko pitenee kumpaankin suuntaan, joten kumpikin pää siirtyy ΔL/2. Rakoa kaventavat molemmat naapurikiskot, kumpikin ΔL/2, joten rako sulkeutuu, kun yksi kisko on pidentynyt raon leveyden verran. Auringonpaisteessa tumma kisko lämpenee helposti yli 36 °C:seen, jolloin raot ovat kiinni ja kiskot painavat toisiaan vasten. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten 24 K lisätään suoraan 12 °C:seen.
+**Järkevyys:** Kisko pitenee kumpaankin suuntaan, joten kumpikin pää siirtyy ΔL/2. Rakoa kaventavat molemmat naapurikiskot, joten rako sulkeutuu, kun yksi kisko on pidentynyt raon leveyden verran. Helteellä tumma kisko lämpenee helposti yli 36 °C:seen, ja raot ovat kiinni. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten 24 K lisätään suoraan 12 °C:seen.
 
 ## fy3-8-L2-04
 **Annettu:** L₀ = 3,00 m, ΔL = 2,07 mm = 0,00207 m, T₀ = 12 °C, T = 42 °C

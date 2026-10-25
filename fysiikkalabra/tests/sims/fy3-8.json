@@ -39,5 +39,7 @@
   {"setup": "const b=[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent==='Pysäytä värähtely'); window._t0=window.simState.t; b.click();", "expr": "(() => { const ok = !window.simState.running && window.simState.t - window._t0 < 0.1; return ok ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "click Pysäytä värähtely stops the deltaTime-driven vibration"},
   {"setup": "window._t1=window.simState.t;", "expr": "window.simState.t === window._t1 && document.querySelector('#sim-root button').textContent==='Jatka värähtelyä' ? 1 : 0", "expected": 1, "tol": 0, "note": "while paused the vibration time stays fixed and the button says Jatka värähtelyä"},
   {"setup": "window._t2=window.simState.t; document.querySelector('#sim-root button').click();", "expr": "window.simState.running && window.simState.t > window._t2 + 0.05 ? 1 : 0", "expected": 1, "tol": 0, "note": "click Jatka värähtelyä resumes: time advances about 0,2 s"},
-  {"expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "canvas is 600x400"}
+  {"expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "canvas is 600x400"},
+  {"expr": "(() => { const k=[...document.querySelector('#sim-root').children].map(c=>c.className); return k.indexOf('controls') >= 0 && k.indexOf('controls') < k.indexOf('readout') && document.querySelector('#sim-root .controls button') ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "controls (with the button) come before the readout"},
+  {"expr": "window.simState.E", "expected": 100, "tol": 0, "note": "exaggeration factor shown on the canvas is 100"}
 ]

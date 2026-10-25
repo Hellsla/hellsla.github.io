@@ -67,13 +67,13 @@ new p5((p) => {
     if (running) tAnim += Math.min(p.deltaTime, 100) / 1000;
     const decL = dL === 0 ? 4 : Math.min(8, Math.max(4, Math.ceil(-Math.log10(Math.abs(dL))) + 1));   // show the change in L
 
-    lL.html(`Alkupituus L₀ = ${L0} m`); lT.html(`Lämpötila T = ${fi(T, 0)} °C`);
-    readout.html(`Aine: <strong>${material}</strong>, α = ${fa(alpha)} · 10⁻⁶ 1/K, alkupituus L₀ = ${L0} m (20 °C:ssa)` +
-                 `<br>Lämpötilan muutos ΔT = T − 20 °C = ${fi(T, 0)} °C − 20 °C = <strong>${fi(dT, 0)} K</strong>` +
-                 `<br>Pituuden muutos ΔL = αL₀ΔT = <strong>${sgn(dL * 1000)} mm</strong>` +
-                 `<br>Uusi pituus L = L₀ + ΔL = <strong>${fi(L, decL)} m</strong>` +
-                 `<br>Suhteellinen muutos ΔL/L₀ = αΔT = ${sgn(rel * 100)} %` +
-                 `<br>Kuvaajan ΔL-akseli ${fi(yMin, dec)}…${fi(yMax, dec)} mm, kun L₀ = ${L0} m.`);
+    lL.html(`Alkupituus L₀ = ${nw(`${L0} m`)}`); lT.html(`Lämpötila T = ${nw(`${fi(T, 0)} °C`)}`);
+    readout.html(`Aine: <strong>${material}</strong>, α = ${nw(`${fa(alpha)} · 10⁻⁶ 1/K`)}, alkupituus L₀ = ${nw(`${L0} m`)} (${nw('20 °C:ssa')})` +
+                 `<br>Lämpötilan muutos ΔT = T − ${nw('20 °C')} = ${nw(`${fi(T, 0)} °C`)} − ${nw('20 °C')} = <strong>${nw(`${fi(dT, 0)} K`)}</strong>` +
+                 `<br>Pituuden muutos ΔL = αL₀ΔT = <strong>${nw(`${sgn(dL * 1000)} mm`)}</strong>` +
+                 `<br>Uusi pituus L = L₀ + ΔL = <strong>${nw(`${fi(L, decL)} m`)}</strong>` +
+                 `<br>Suhteellinen muutos ΔL/L₀ = αΔT = ${nw(`${sgn(rel * 100)} %`)}` +
+                 `<br>Kuvaajan ΔL-akseli ${nw(`${fi(yMin, dec)}…${fi(yMax, dec)} mm`)}, kun L₀ = ${nw(`${L0} m`)}.`);
     window.simState = { material, alpha, L0, T, dT, dL, L, rel, E, spacing, amp, chartMin: yMin, chartMax: yMax, running, t: tAnim };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -139,6 +139,7 @@ new p5((p) => {
   // −40 °C blue, 120 °C red
   function tempColor(T) { return p.lerpColor(p.color(40, 100, 210), p.color(215, 50, 40), (T - T_MIN) / (T_MAX - T_MIN)); }
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');                   // Finnish decimal comma and minus sign
+  const nw = (t) => `<span style="white-space:nowrap">${t}</span>`;                     // keep a value and its unit on one line
   const fa = (a) => String(+(a * 1e6).toFixed(1)).replace('.', ',');                       // α in units of 10⁻⁶ 1/K
   // three significant figures with an explicit sign
   const sgn = (x) => {

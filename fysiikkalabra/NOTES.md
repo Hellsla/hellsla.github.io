@@ -32,7 +32,7 @@ When a mistake costs a review round, add a line under the right heading (what, w
 - Math in an SVG `<text>` or in canvas text is plain text. Keep the labels short.
 - An inline `\dfrac` makes a tall fraction that breaks the line. Put calculations with fractions on their own line in display math.
 - A `·` inside `\text{}` is a KaTeX parse error. Write compound units as `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}` or `\text{J/(mol}\cdot\text{K)}`. The lint reports it.
-- Every display formula must fit a 360 px phone without scrolling: about 25 visible characters per line. Split long calculations with `\begin{aligned} ... &= ... \\ &= ... \end{aligned}`, one `=` step per row. Run `python scripts/check_layout.py <id>` after the build; it lists every formula, figure or page that is too wide. (Cost a round in fy3-6 and fy3-8.)
+- Every display formula must fit a 360 px phone without scrolling: about 25 visible characters per line. Split long calculations into rows, one `=` step per row. In `aligned` the two columns' widths add up, so `a &= b \\ &= c` is no narrower when `a` is long: put a long left side alone on its own row and the `= …` parts on the following rows in one left-aligned column (`\begin{aligned} &a \\ &= b \\ &\approx c \end{aligned}`). Run `python scripts/check_layout.py <id>` after the build; it lists every formula, figure or page that is too wide. (Cost a round in fy3-6 and fy3-8.)
 - A wide markdown table overflows a phone. The site CSS makes tables scroll sideways inside themselves; keep header cells short.
 
 ### Check before every commit that touches math
