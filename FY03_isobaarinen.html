@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Isobaarinen muutos</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
 <style>
   :root {
     --text: #3F3D39;
@@ -13,57 +14,10 @@
     --orange: #F28C28;
     --yellow: #FFD95A;
     --pale-blue: #E7F4F5;
-  }
-
-  html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
+  }  html, body {
     background: #FFFFFF;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color: var(--text);
-  }
-
-  body {
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-
-  .slide {
-    width: min(100vw, calc(100vh * 16 / 9));
-    height: min(100vh, calc(100vw * 9 / 16));
-    aspect-ratio: 16 / 9;
-    position: relative;
-    background: #FFFFFF;
-  }
-
-  svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  text {
-    fill: var(--text);
-    font-size: 21px;
-    font-weight: 520;
-  }
-
-  .small {
-    font-size: 17px;
-  }
-
-  .sketch {
-    stroke: var(--line);
-    stroke-width: 4;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-  }
-
-  .thin {
-    stroke-width: 2.4;
   }
 
   .gas-fill {
@@ -74,67 +28,19 @@
   #heat,
   #cooling {
     transition: opacity 220ms ease;
-  }
-
-  .controls {
-    position: absolute;
-    left: 74px;
-    right: 74px;
-    bottom: 22px;
-    display: grid;
+  }  .controls {
     grid-template-columns: auto 1fr auto auto auto auto;
-    align-items: center;
-    gap: 18px;
-    color: var(--text);
-    font-size: clamp(15px, 2.2vw, 22px);
   }
 
-  input[type="range"] {
-    width: 100%;
-    accent-color: var(--line);
+  @media (max-width: 760px) {  .controls {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
   }
 
-  button {
-    border: 2px solid var(--line);
-    background: #FFFFFF;
-    color: var(--text);
-    border-radius: 999px;
-    padding: 7px 16px;
-    font: inherit;
-    cursor: pointer;
-  }
-
-  button:active {
-    transform: translateY(1px);
-  }
-
-  .value {
-    min-width: 105px;
-    font-weight: 620;
-    white-space: nowrap;
-  }
-
-  @media (max-width: 760px) {
-    .controls {
-      left: 34px;
-      right: 34px;
-      gap: 10px;
-      grid-template-columns: auto 1fr auto;
-      grid-template-rows: auto auto;
-    }
-
-    .value {
-      min-width: auto;
-      font-size: 15px;
-    }
-
-    button {
-      padding: 6px 12px;
-    }
   }
 </style>
 </head>
-<body>
+<body class="sim-body sim-slide">
   <main class="slide" aria-label="Isobaarisen muutoksen simulaatio">
     <svg viewBox="0 0 960 540" role="img" aria-label="Kaasusäiliö, liikkuva mäntä, painemittari ja tilavuus-lämpötilakuvaaja">
       <defs>
