@@ -95,7 +95,7 @@
     {
       "id": "fy3-1-L3-03",
       "level": 3,
-      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna arvolla 9,81 m/s². Marsissa (g = 3,71 m/s²) mittari näyttää siihen ripustetulle kappaleelle 26 kg. Mikä on kappaleen massa?",
+      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina luvun, joka saadaan jakamalla voima arvolla 9,81 m/s². Marsissa (g = 3,71 m/s²) mittari näyttää siihen ripustetulle kappaleelle 26 kg. Mikä on kappaleen massa?",
       "answer": 69,
       "unit": "kg",
       "tolerance": 0.02
