@@ -20,7 +20,7 @@ G = m g
 ```
 missä G on paino (N), m massa (kg) ja g painovoiman voimakkuus massayksikköä kohti (N/kg). Luku g kertoo, kuinka suuri on yhden kilogramman massan paino: Maan pinnalla g = 9,81 N/kg, joten 1 kg:n massan paino on 9,81 N. Luku 9,81 on sama kuin FY1:n putoamiskiihtyvyys 9,81 m/s². Tällä kurssilla g:lle käytetään yksikköä N/kg, ja syy lukujen yhtäsuuruuteen selviää FY4:ssä. Muualla g on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa (Jupiterissa pilvien yläpinnan tasoa):
 
-| Taivaankappale | g pinnalla (N/kg) |
+| Taivaankappale | g pinnalla (m/s²) |
 | --- | --- |
 | Kuu | 1,62 |
 | Mars | 3,71 |
@@ -42,9 +42,9 @@ Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?
   <text x="302" y="96" fill="currentColor">voiman mukaan</text>
 </svg>
 
-Maassa: $G = m g = 120\,\text{kg} \cdot 9{,}81\,\text{N/kg} \approx 1180\,\text{N}$ eli noin 1,18 kN.
+Maassa: $G = m g = 120\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 1180\,\text{N}$ eli noin 1,18 kN.
 
-Marsissa: $G = 120\,\text{kg} \cdot 3{,}71\,\text{N/kg} \approx 445\,\text{N}$.
+Marsissa: $G = 120\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \approx 445\,\text{N}$.
 
 Marsissa paino on pienempi, koska Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin.
 
@@ -54,4 +54,4 @@ Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikk�
 ## Tiivistelmä
 - Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.
 - Paino on voima: $G = m g$. Massa on aineen määrä, ja se on sama kaikkialla.
-- $g = 9{,}81\,\text{N/kg}$: yhden kilogramman massan paino Maassa. Kuussa $g = 1{,}62\,\text{N/kg}$ ja Marsissa $3{,}71\,\text{N/kg}$.
+- $g = 9{,}81\,\text{m/s}^2$ Maan pinnalla, joten yhden kilogramman massan paino Maassa on noin 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.

@@ -97,7 +97,7 @@ details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-ra
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.84rem;color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
 footer.bottom a{display:inline-flex;align-items:center;min-height:40px}
 .crumbs:empty{display:none}
-table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{display:block;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 th,td{padding:.5rem .8rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
 th{font:500 .8rem var(--mono);letter-spacing:.04em;color:var(--ink-2);background:var(--bg-tint)}
 tr:last-child td{border-bottom:0}
