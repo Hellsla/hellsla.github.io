@@ -338,7 +338,18 @@ def lint(folder):
     check_exit_ticket(L, folder)
     check_sim(L, folder, meta)
     check_answers_py(L, folder, answers)
+    check_inquiry(L, folder)
     return L
+
+
+def check_inquiry(L, folder):
+    """inquiry.json (docs/inquiry.md): every error names the field; build.py refuses the lesson on any."""
+    if not (folder / "inquiry.json").exists(): return
+    import inquiry
+    try: data = inquiry.load(folder)
+    except ValueError as e: L.err("inquiry.json", 1, f"not valid JSON: {e}"); return
+    for msg in inquiry.validate(folder, data, (folder / "lesson.md").read_text() if (folder / "lesson.md").exists() else ""):
+        L.err("inquiry.json", 1, msg.split("inquiry.json: ", 1)[-1])
 
 
 if __name__ == "__main__":

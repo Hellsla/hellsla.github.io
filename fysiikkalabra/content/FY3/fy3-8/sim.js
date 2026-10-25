@@ -51,6 +51,11 @@ new p5((p) => {
               'Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on 20 °C:n tilanne.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { material: { input: sel.elt, unit: '' }, L0: { input: sL.elt, unit: 'm' }, T: { input: sT.elt, unit: '°C' } },
+      reset: () => { sel.selected('teräs'); sL.value(10); sT.value(T_REF); tAnim = 0; running = true; btn.html('Pysäytä värähtely'); },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

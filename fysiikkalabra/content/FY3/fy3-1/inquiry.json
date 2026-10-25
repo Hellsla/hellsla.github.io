@@ -1,0 +1,368 @@
+{
+  "version": 1,
+  "contribution": "Voima saa merkityksen vuorovaikutuksen voimakkuuden mittana, jota voimamittarin jousi mittaa newtoneina, ja paino erotetaan massasta: $G = mg$ riippuu sekä kappaleesta että taivaankappaleesta.",
+  "prior": [
+    "Suoraan verrannollisuus ja origon kautta kulkeva suora, esimerkiksi $s = vt$ (FY1)",
+    "Arkikokemus: painava ja kevyt esine, venyvä jousi tai kuminauha (arkitieto, ei edeltävää oppituntia)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Voimamittari on pohjimmiltaan pelkkä jousi. Ripusta siihen Maassa 10 kg:n näytelaatikko, ja jousi venyy tietyn matkan. Vie sama laatikko ja sama mittari Kuuhun: jousi venyy paljon vähemmän. Laatikossa on yhtä paljon ainetta kuin ennenkin, eikä jousikaan ole muuttunut. Jokin muu on muuttunut.",
+      "question": "Mitä voimamittarin jousi oikeastaan mittaa, ja mikä siinä muuttuu, kun paikka vaihtuu?"
+    },
+    {
+      "id": "pr-verrannollisuus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa FY1:stä: suoraan verrannollisuus",
+      "prompt": "Pyöräilijä ajaa tasaisella nopeudella ja kulkee 2,0 km 6,0 minuutissa. Kuinka pitkän matkan hän ajaa samalla nopeudella 18 minuutissa?",
+      "choices": [
+        {
+          "text": "6,0 km",
+          "correct": true,
+          "feedback": "Oikein. Tasaisessa liikkeessä matka on suoraan verrannollinen aikaan, $s = vt$: kolminkertainen aika, kolminkertainen matka, $3 \\cdot 2{,}0\\,\\text{km} = 6{,}0\\,\\text{km}$. Samaa päättelyä tarvitset tällä tunnilla jousen ja painon kanssa."
+        },
+        {
+          "text": "14 km",
+          "feedback": "Lisäsit aikojen erotuksen (12 min) matkaan. Suoraan verrannollisuudessa suureet muuttuvat samassa *suhteessa*, eivät saman verran: aika kolminkertaistuu, joten matkakin kolminkertaistuu, $3 \\cdot 2{,}0\\,\\text{km} = 6{,}0\\,\\text{km}$."
+        },
+        {
+          "text": "18 km",
+          "feedback": "Matka ei ole yhtä monta kilometriä kuin aika on minuutteja. Nopeus on $2{,}0\\,\\text{km} / 6{,}0\\,\\text{min}$, eli kolmannes kilometriä minuutissa; 18 minuutissa matka on $6{,}0\\,\\text{km}$."
+        },
+        {
+          "text": "4,0 km",
+          "feedback": "Aika kasvaa 6 minuutista 18 minuuttiin eli kolminkertaiseksi, ei kaksinkertaiseksi. Kerro matka samalla luvulla: $3 \\cdot 2{,}0\\,\\text{km} = 6{,}0\\,\\text{km}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: massa kolminkertaistuu",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Maassa voimamittariin ripustetaan ensin 10 kg:n kappale ja sitten 30 kg:n kappale. Paikka ja mittari pysyvät samoina. Miten mittarin näyttämä paino muuttuu?",
+      "choices": [
+        {
+          "text": "Paino kolminkertaistuu.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: 10 kg painaa Maassa $98{,}1\\,\\text{N}$ ja 30 kg $294\\,\\text{N}$, eli kolme kertaa enemmän. Paino on suoraan verrannollinen massaan samassa paikassa."
+        },
+        {
+          "text": "Paino kasvaa, mutta vähemmän kuin kolminkertaiseksi, koska jousi jäykistyy venyessään.",
+          "feedback": "Mallin arvoissa paino kolminkertaistuu: $98{,}1\\,\\text{N}$ ja $294\\,\\text{N}$. Voimamittarin jousi toimii niin, että venymä on suoraan verrannollinen voimaan, kunhan jousta ei venytetä liikaa; mittari on tehty sille alueelle."
+        },
+        {
+          "text": "Paino kasvaa yhtä monta newtonia kuin massa kasvaa kilogrammoja, eli 20 N.",
+          "feedback": "Mallin arvot näyttävät kasvun $98{,}1\\,\\text{N}$:sta $294\\,\\text{N}$:iin, eli lähes 200 N. Jokainen kilogramma lisää painoa noin 9,8 N Maassa, joten 20 kg lisää noin 196 N. Paino ja massa ovat eri suureita eri yksiköissä."
+        },
+        {
+          "text": "Paino pysyy samana, koska paino riippuu vain paikasta.",
+          "feedback": "Mallin arvot näyttävät, että paino kasvaa $98{,}1\\,\\text{N}$:sta $294\\,\\text{N}$:iin. Paikka vaikuttaa painoon, mutta niin vaikuttaa massakin: kaksi samanlaista kappaletta venyttää jousta kaksi kertaa niin paljon kuin yksi."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: sama kappale toisella planeetalla",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Sama 10 kg:n kappale ja sama voimamittari viedään Maasta Jupiteriin, jonka putoamiskiihtyvyys on noin 2,5-kertainen Maahan verrattuna. Mitä kappaleen massalle ja painolle tapahtuu?",
+      "choices": [
+        {
+          "text": "Massa pysyy 10 kg:na, ja paino kasvaa noin 2,5-kertaiseksi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: massa on joka paikassa 10 kg, mutta paino on Maassa $98{,}1\\,\\text{N}$ ja Jupiterissa $248\\,\\text{N}$. Paino on kappaleen ja taivaankappaleen välisen vuorovaikutuksen voimakkuus, ja se vuorovaikutus on Jupiterissa voimakkaampi."
+        },
+        {
+          "text": "Sekä massa että paino kasvavat noin 2,5-kertaisiksi.",
+          "feedback": "Mallin arvoissa massa on joka paikassa sama 10 kg, ja vain paino muuttuu ($98{,}1\\,\\text{N}$ → $248\\,\\text{N}$). Massa kertoo, kuinka paljon ainetta kappaleessa on; ainetta ei tule lisää matkalla."
+        },
+        {
+          "text": "Massa ja paino pysyvät samoina, koska paino määräytyy massasta.",
+          "feedback": "Massa pysyy samana, mutta mallin arvoissa paino kasvaa $98{,}1\\,\\text{N}$:sta $248\\,\\text{N}$:iin. Paino ei riipu vain kappaleesta vaan myös siitä, millä taivaankappaleella se on: vuorovaikutuksessa on aina kaksi osapuolta."
+        },
+        {
+          "text": "Massa pysyy samana, mutta paino pienenee, koska Jupiter on kaasuplaneetta eikä kappaleella ole pintaa, jota vasten painaa.",
+          "feedback": "Mallin arvoissa paino kasvaa $248\\,\\text{N}$:iin. Paino ei synny pintaa vasten painamisesta vaan kappaleen ja taivaankappaleen välisestä vuorovaikutuksesta; voimamittari mittaa sitä riippumatta siitä, mitä mittarin alla on."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse taivaankappale ja säädä massaa. Seuraa jousen venymää, punaista painon nuolta ja palkkikaaviota, jossa sama massa on punnittu kaikilla neljällä taivaankappaleella. Lukemat ovat mallin arvoja, jotka simulaatio laskee kaavasta: se olettaa, että putoamiskiihtyvyys on taivaankappaleen pinnalla vakio."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain massa muuttuu",
+      "intro": "Testaa ennuste 1. Taivaankappale on lukittu Maaksi, ja vain massa muuttuu. Kirjaa paino ainakin kahdella massalla, esimerkiksi 10 kg, 20 kg ja 30 kg. Katso samalla, miten jousen venymä muuttuu.",
+      "initial": {
+        "body": "Maa",
+        "m": 10
+      },
+      "units": {
+        "m": "kg"
+      },
+      "locked": [
+        "body"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "G",
+          "label": "G (N)"
+        }
+      ],
+      "min": 2,
+      "names": {
+        "m": "massa m",
+        "body": "taivaankappale"
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain paikka muuttuu",
+      "intro": "Testaa ennuste 2. Nyt massa on lukittu 10 kg:ksi, ja vain taivaankappale vaihtuu. Kirjaa massa, putoamiskiihtyvyys ja paino ainakin kahdessa paikassa, esimerkiksi Maassa ja Jupiterissa, ja kokeile myös Kuuta.",
+      "initial": {
+        "body": "Maa",
+        "m": 10
+      },
+      "units": {
+        "m": "kg"
+      },
+      "locked": [
+        "m"
+      ],
+      "vary": "body",
+      "measure": [
+        {
+          "key": "m",
+          "label": "m (kg)"
+        },
+        {
+          "key": "g",
+          "label": "g (m/s²)"
+        },
+        {
+          "key": "G",
+          "label": "G (N)"
+        }
+      ],
+      "min": 2,
+      "names": {
+        "m": "massa m",
+        "body": "taivaankappale"
+      }
+    },
+    {
+      "id": "kalibrointi",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Voimamittarin asteikko",
+      "text": "Jousi ei tiedä mitään newtoneista: asteikko tehdään ripustamalla siihen samanlaisia punnuksia. Taulukossa on *esimerkkiarvot* (eivät oikean mittauksen tuloksia) jouselle, jonka punnusten paino on kunkin 1,0 N. Jousta ei venytetä liikaa.\n\n| Punnuksia | Voima F (N) | Venymä (cm) |\n|---|---|---|\n| 0 | 0 | 0,0 |\n| 1 | 1,0 | 1,6 |\n| 2 | 2,0 | 3,2 |\n| 3 | 3,0 | 4,8 |\n| 4 | 4,0 | 6,4 |",
+      "question": {
+        "type": "choice",
+        "prompt": "Samaan jouseen ripustetaan tuntematon kappale, ja jousi venyy 5,6 cm. Kuinka suuri voima jousta venyttää?",
+        "choices": [
+          {
+            "text": "3,5 N",
+            "correct": true,
+            "feedback": "Oikein. Jokainen newton venyttää jousta 1,6 cm, joten $5{,}6\\,\\text{cm}$ vastaa voimaa $5{,}6 / 1{,}6 \\cdot 1{,}0\\,\\text{N} = 3{,}5\\,\\text{N}$. Venymä on suoraan verrannollinen voimaan, joten asteikon väliin voi lukea."
+          },
+          {
+            "text": "5,6 N",
+            "feedback": "Venymä senttimetreinä ei ole sama luku kuin voima newtoneina. Taulukossa 1,0 N venyttää jousta 1,6 cm, joten 5,6 cm vastaa $5{,}6/1{,}6 = 3{,}5$ newtonia."
+          },
+          {
+            "text": "Sitä ei voi tietää, koska 5,6 cm ei ole taulukossa.",
+            "feedback": "Taulukon arvot ovat origon kautta kulkevalla suoralla: venymä kasvaa 1,6 cm jokaista newtonia kohti. Siksi välissä olevankin venymän voi muuttaa voimaksi, $5{,}6/1{,}6 \\cdot 1{,}0\\,\\text{N} = 3{,}5\\,\\text{N}$."
+          },
+          {
+            "text": "9,0 N",
+            "feedback": "Kerroit venymän ja venymää kohti tulevan luvun ($5{,}6 \\cdot 1{,}6$), vaikka pitää jakaa. Kysy: kuinka monta 1,6 cm:n venymää mahtuu 5,6 cm:iin? Vastaus on 3,5, siis 3,5 N."
+          }
+        ]
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavaan $G = mg$. Palaa sitten alun kysymykseen: mitä voimamittari mittaa, ja miksi sama laatikko venyttää jousta Kuussa vähemmän, vaikka siitä ei ole kadonnut mitään?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee 500 g:n jauhopussin painon Maassa näin: $G = mg = 500 \\cdot 9{,}81\\,\\text{m/s}^2 = 4905\\,\\text{N}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Massa pitää muuttaa kilogrammoiksi: $G = 0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 4{,}91\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Oikein. Paino tulee newtoneina vain, kun massa on kilogrammoina, sillä $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Järkevyystarkistus kertoo saman: puolen kilon pussin paino on noin 5 N, ei lähes 5000 N."
+        },
+        {
+          "text": "Paino pitäisi ilmoittaa kilogrammoina, eli vastaus on 500 g.",
+          "feedback": "Paino on voima, ja voiman yksikkö on newton. Kilogramma on massan yksikkö. Pussin massa on 500 g, mutta sen paino on $0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 4{,}91\\,\\text{N}$."
+        },
+        {
+          "text": "Putoamiskiihtyvyyden pitäisi olla 1,62 m/s².",
+          "feedback": "Arvo $1{,}62\\,\\text{m/s}^2$ koskee Kuuta. Jauhopussi punnitaan Maassa, joten $g = 9{,}81\\,\\text{m/s}^2$ on oikein. Virhe on massan yksikössä."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Tarkista suuruusluokka: yhden kilogramman paino Maassa on noin 10 N, joten 500 g ei voi painaa lähes 5000 N. Massa on sijoitettu grammoina, vaikka kaava vaatii kilogrammat."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Astronautti ripustaa Kuussa kivinäytteitä sisältävän laatikon voimamittariin, ja mittari näyttää 12 N. Laatikko tuodaan sellaisenaan Maahan. Kuinka suuri on sen paino Maassa? Putoamiskiihtyvyydet ovat oppitunnin taulukossa. Vastaa newtoneina.",
+      "answer": 72.7,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä laatikosta pysyy samana, kun se tuodaan Kuusta Maahan? Voitko laskea sen Kuun lukemasta?",
+        "Massa saadaan Kuun painosta, $m = \\dfrac{G_\\text{Kuu}}{g_\\text{Kuu}}$, ja Maan paino samalla massalla, $G_\\text{Maa} = m g_\\text{Maa}$.",
+        "$m = \\dfrac{12\\,\\text{N}}{1{,}62\\,\\text{m/s}^2} \\approx 7{,}41\\,\\text{kg}$, joten $G_\\text{Maa} = 7{,}41\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 19.44,
+          "feedback": "Kerroit Kuun lukeman Kuun putoamiskiihtyvyydellä. 12 N on jo paino, ei massa. Laske ensin massa jakamalla: $m = 12\\,\\text{N} / 1{,}62\\,\\text{m/s}^2 \\approx 7{,}41\\,\\text{kg}$."
+        },
+        {
+          "value": 117.72,
+          "feedback": "Käsittelit 12 N:n lukemaa kuin massaa (12 kg). Kuun lukema on paino; massa on $12\\,\\text{N} / 1{,}62\\,\\text{m/s}^2 \\approx 7{,}41\\,\\text{kg}$, ja sen paino Maassa on noin 73 N."
+        },
+        {
+          "value": 7.41,
+          "feedback": "Tämä on laatikon massa kilogrammoina, ei sen paino. Kerro vielä Maan putoamiskiihtyvyydellä: $G_\\text{Maa} = 7{,}41\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$."
+        }
+      ],
+      "solution": "**Ratkaisu symbolisesti.** Massa on sama Kuussa ja Maassa: $m = \\dfrac{G_\\text{Kuu}}{g_\\text{Kuu}}$, joten\n\n$$G_\\text{Maa} = m g_\\text{Maa} = G_\\text{Kuu} \\frac{g_\\text{Maa}}{g_\\text{Kuu}}$$\n\n**Sijoitus.** $G_\\text{Maa} = 12\\,\\text{N} \\cdot \\dfrac{9{,}81\\,\\text{m/s}^2}{1{,}62\\,\\text{m/s}^2} \\approx 72{,}7\\,\\text{N} \\approx 73\\,\\text{N}$.\n\n**Järkevyys.** Maan $g$ on noin kuusinkertainen Kuun arvoon verrattuna, ja $6 \\cdot 12\\,\\text{N} = 72\\,\\text{N}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa tai suoraa verrannollisuutta, taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Sama kappale ripustetaan samaan voimamittariin ensin Maassa ja sitten Marsissa. Marsissa lukema on pienempi. Mikä selitys on oikein?",
+      "choices": [
+        {
+          "text": "Kappaleen massa on Marsissa pienempi.",
+          "feedback": "Massa kertoo, kuinka paljon ainetta kappaleessa on, eikä ainetta katoa matkalla. Massa on sama, mutta paino, eli voima, on eri."
+        },
+        {
+          "text": "Marsin ja kappaleen välinen vuorovaikutus on heikompi kuin Maan ja kappaleen.",
+          "correct": true,
+          "feedback": "Oikein. Voimamittari mittaa vuorovaikutuksen voimakkuutta. Marsissa $g = 3{,}71\\,\\text{m/s}^2$ on pienempi kuin Maan $9{,}81\\,\\text{m/s}^2$, joten sama massa painaa vähemmän."
+        },
+        {
+          "text": "Marsin ohut ilmakehä painaa kappaletta vähemmän alaspäin.",
+          "feedback": "Paino ei synny ilman painamisesta. Se on kappaleen ja taivaankappaleen välinen vuorovaikutus, joka on olemassa myös ilmattomassa Kuussa."
+        },
+        {
+          "text": "Marsin kylmyys jäykistää jousen, joten se venyy vähemmän.",
+          "feedback": "Mittari on sama ja toimii samoin. Lukema muuttuu siksi, että jousta venyttävä voima on Marsissa pienempi, ei siksi, että jousi muuttuisi."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaaja ja laskeminen",
+      "prompt": "Tuntemattomalla taivaankappaleella mitattiin painoja eri massoille. (m, G)-kuvaaja on origon kautta kulkeva suora, joka kulkee pisteen (50 kg, 440 N) kautta. Mikä on putoamiskiihtyvyys tällä taivaankappaleella? Vastaa yksikössä m/s².",
+      "answer": 8.8,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitä suoran jyrkkyys kertoo, kun paino on suoraan verrannollinen massaan?",
+        "Kaavasta $G = mg$ ratkaistuna $g = \\dfrac{G}{m}$, eli suoran kulmakerroin.",
+        "$g = \\dfrac{440\\,\\text{N}}{50\\,\\text{kg}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.114,
+          "feedback": "Jaoit massan painolla. Putoamiskiihtyvyys on paino jaettuna massalla, $g = G/m = 440\\,\\text{N}/50\\,\\text{kg}$."
+        },
+        {
+          "value": 44.9,
+          "feedback": "Jaoit painon Maan arvolla $9{,}81\\,\\text{m/s}^2$, jolloin sait massan, jonka paino olisi Maassa 440 N. Kysytty on tämän taivaankappaleen $g$: $g = G/m$."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Selitä omin sanoin, miksi astronautti painaa Kuussa vain noin kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään. Käytä käsitteitä massa, paino ja vuorovaikutus sekä yksiköitä.",
+      "criteria": [
+        "Sanon, että massa kertoo ainemäärän, on kilogrammoina ja pysyy samana Kuussa ja Maassa.",
+        "Sanon, että paino on voima, newtoneina, ja kertoo astronautin ja taivaankappaleen välisen vuorovaikutuksen voimakkuuden.",
+        "Käytän kaavaa $G = mg$ ja sanon, että Kuun $g$ on noin kuudesosa Maan arvosta.",
+        "Erotan, että voimamittari mittaa painoa, ei massaa."
+      ],
+      "model": "Astronautin massa, esimerkiksi 80 kg, kertoo, kuinka paljon ainetta hänessä on, ja se pysyy samana kaikkialla. Paino on voima, jonka yksikkö on newton: se kertoo, kuinka voimakkaasti astronautti ja taivaankappale vuorovaikuttavat. Paino lasketaan kaavasta $G = mg$. Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, ja Kuun $g = 1{,}62\\,\\text{m/s}^2$ on noin kuudesosa Maan arvosta $9{,}81\\,\\text{m/s}^2$. Siksi sama massa painaa Kuussa noin kuudesosan Maan painosta, ja voimamittarin jousi venyy kuudesosan."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

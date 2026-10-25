@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "contribution": "Lämpö ja työ ovat kaksi tapaa siirtää energiaa systeemiin tai siitä pois, ja niiden summa on systeemin sisäenergian muutos: $\\Delta U = Q + W$, termodynamiikan ensimmäinen pääsääntö. Lämpö on energian siirtymistä, sisäenergia systeemin ominaisuus.",
+  "prior": [
+    "Työ $W = Fs$ siirtää energiaa, ja Joulen kokeessa työ lämmitti vettä (fy3-2)",
+    "Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (fy3-3)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pumppaat polkupyörän renkaaseen kovan paineen. Pumpun alapää, jossa ilma puristuu, on lopuksi lämmin kädessä. Kun pumppu on hetken levännyt, se on taas huoneenlämpöinen. Toisaalta kun renkaasta päästää ilmaa venttiilin kautta, venttiili tuntuu viileältä, vaikka sitä ei jäähdytetä millään.",
+      "question": "Mistä pumpun ilma saa lisäenergiaa, jos sitä ei lämmitetä, ja mihin tuo energia joutuu, kun pumppu jäähtyy?"
+    },
+    {
+      "id": "pr-mikromalli",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa aiemmalta tunnilta",
+      "prompt": "Oppitunnilla fy3-3 kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
+      "choices": [
+        {
+          "text": "Hiukkaset laajenevat ja vievät enemmän tilaa.",
+          "feedback": "Mikromallissa hiukkasten koko ei muutu lämpötilan mukana. Lämpötila kertoo hiukkasten liikkeestä: niiden keskimääräisestä liike-energiasta."
+        },
+        {
+          "text": "Hiukkasten keskimääräinen liike-energia kasvaa.",
+          "correct": true,
+          "feedback": "Oikein: mikromallin mukaan lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Korkeampi lämpötila tarkoittaa nopeammin liikkuvia hiukkasia."
+        },
+        {
+          "text": "Kaasuun tulee lisää hiukkasia.",
+          "feedback": "Aineen määrä on oma tilanmuuttujansa. Lämpötila voi nousta, vaikka hiukkasten määrä pysyy samana; silloin samat hiukkaset liikkuvat keskimäärin nopeammin."
+        },
+        {
+          "text": "Jokainen hiukkanen muuttuu itse kuumemmaksi.",
+          "feedback": "Yksittäisellä hiukkasella ei ole lämpötilaa. Lämpötila kuvaa suuren hiukkasjoukon keskimääräistä liike-energiaa."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "justify": true,
+      "title": "Ennuste 1: miksi puristettu ilma kuumenee?",
+      "prompt": "Kolme opiskelijaa selittää, miksi pumpun ilma kuumenee, kun mäntää painetaan nopeasti alas ja suuaukko on tukittu. Kenen selitys on mielestäsi paras?",
+      "choices": [
+        {
+          "text": "Aino: Puristuksessa ilman paine kasvaa, ja korkeapaineinen ilma on aina kuumempaa.",
+          "feedback": "Paine ja lämpötila liittyvät toisiinsa, mutta paineen kasvu ei yksin määrää lämpötilaa. Tutki-vaiheen taulukon viimeisellä rivillä ilma puristuu ja sen paine kasvaa, mutta lämpötila ei nouse. Katso, mikä riveillä muuttuu."
+        },
+        {
+          "text": "Bea: Mäntä tekee ilmaan työtä. Työ siirtää ilmaan energiaa, ja ilman sisäenergia ja siksi lämpötila kasvavat.",
+          "correct": true,
+          "feedback": "Tutki-vaiheen taulukko testaa tätä: vertaa lämpötilan nousua riveillä, joilla männän työ on eri suuri. Oikeassa pumpussa myös männän ja sylinterin välinen kitka lämmittää hieman; taulukon mallissa se jätetään pois."
+        },
+        {
+          "text": "Cem: Ilmassa on lämpöä, joka puristuksessa tiivistyy pienempään tilaan, joten se tuntuu kuumemmalta.",
+          "feedback": "Selitys pitää lämpöä aineena, jota ilmassa on tietty määrä. Jos näin olisi, sama puristus lämmittäisi aina yhtä paljon. Tutki-vaiheen taulukossa sama työ lämmittää eri paljon riippuen siitä, kuinka paljon energiaa ehtii siirtyä seinien kautta pois."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "justify": true,
+      "title": "Ennuste 2: mihin energia joutuu?",
+      "prompt": "Puristat suljetun pumpun ilmaa nopeasti ja pidät männän sitten paikallaan. Ilma jäähtyy vähitellen takaisin huoneen lämpötilaan, vaikka se on yhä puristettuna. Mihin puristuksessa ilmaan tuotu energia on joutunut?",
+      "choices": [
+        {
+          "text": "Aino: Energia on kulunut loppuun, kun ilma jäähtyi.",
+          "feedback": "Energia ei katoa. Jos ilman energia pienenee, sama määrä energiaa on siirtynyt jonnekin muualle. Tutki-vaiheen energiakaaviossa voit laskea, kuinka paljon ja mihin suuntaan energiaa siirtyy jäähtymisessä."
+        },
+        {
+          "text": "Bea: Energia on yhä ilmassa sisäenergiana, koska ilma on edelleen puristettuna.",
+          "feedback": "Puristettu tila ei pidä energiaa ilmassa. Tutki-vaiheessa ilmaa käsitellään ideaalikaasuna: sen sisäenergia riippuu vain lämpötilasta ja aineen määrästä. Kun lämpötila palaa ennalleen, sisäenergiakin palaa. Laske kaaviosta, mitä energialle tapahtuu."
+        },
+        {
+          "text": "Cem: Energia on siirtynyt lämpönä sylinterin seinien kautta ympäristöön.",
+          "correct": true,
+          "feedback": "Tutki-vaiheen energiakaavio testaa tätä: siinä lasket, kuinka suuri lämpömäärä jäähtymisessä siirtyy ja mihin suuntaan."
+        }
+      ]
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Puristus: työ, lämpö ja lämpötila",
+      "text": "Ilmaa (0,50 g) puristetaan suljetussa sylinterissä eri tavoin. Taulukon luvut ovat mallilla laskettuja *esimerkkiarvoja*, eivät mittauksia. Mallissa ilman lämpötilan nousu ΔT on suoraan verrannollinen sen sisäenergian kasvuun, ja kitka jätetään pois. W on männän ilmaan tekemä työ ja Q ilmaan siirtynyt lämpömäärä: negatiivinen Q tarkoittaa, että lämpöä siirtyi ilmasta seinien kautta pois. Kaikilla riveillä ilma puristuu, joten sen paine kasvaa.\n\n| Rivi: puristus | W (J) | Q (J) | ΔT (°C) |\n|---|---|---|---|\n| 1: nopea, lyhyt | 10 | 0 | 27,9 |\n| 2: nopea, pitkä | 20 | 0 | 55,7 |\n| 3: hitaampi | 20 | −12 | 22,3 |\n| 4: hyvin hidas | 20 | −20 | 0,0 |",
+      "question": {
+        "type": "choice",
+        "prompt": "Mikä taulukon perusteella määrää, kuinka paljon ilman lämpötila nousee?",
+        "choices": [
+          {
+            "text": "Männän tekemä työ yksin.",
+            "feedback": "Riveillä 2, 3 ja 4 työ on sama 20 J, mutta lämpötila nousee 55,7 °C, 22,3 °C ja 0,0 °C. Työn lisäksi ratkaisee, kuinka paljon energiaa siirtyy lämpönä pois."
+          },
+          {
+            "text": "Työn ja lämpömäärän summa: kuinka paljon energiaa ilmaan jää.",
+            "correct": true,
+            "feedback": "Oikein. Rivillä 1 ilmaan jää 10 J ja rivillä 2 kaksinkertainen 20 J, ja lämpötilan nousu kaksinkertaistuu. Rivillä 3 jää $20\\,\\text{J} - 12\\,\\text{J} = 8\\,\\text{J}$, ja nousu on $\\tfrac{8}{20}$ rivin 2 noususta. Rivillä 4 ei jää mitään, eikä lämpötila nouse."
+          },
+          {
+            "text": "Paineen kasvu.",
+            "feedback": "Paine kasvaa kaikilla riveillä, myös rivillä 4, jolla lämpötila ei nouse lainkaan. Paine ei siis yksin ratkaise. Vertaa sen sijaan sarakkeita W ja Q."
+          },
+          {
+            "text": "Männän nopeus itsessään.",
+            "feedback": "Nopeus vaikuttaa vain välillisesti: hitaassa puristuksessa lämpöä ehtii siirtyä enemmän seinien kautta pois (Q on negatiivisempi). Lämpötilan nousun määrää se, kuinka paljon energiaa ilmaan jää."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaavio",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Energiakaavio: puristus ja jäähtyminen",
+      "text": "Puristus tehdään kahdessa vaiheessa. Vaiheessa 1 ilmaa puristetaan nopeasti eristetyssä sylinterissä (taulukon rivi 2). Vaiheessa 2 mäntä pidetään paikallaan, joten työtä ei tehdä, ja ilma jäähtyy takaisin huoneen lämpötilaan. Ilmaa käsitellään ideaalikaasuna: sen sisäenergia riippuu vain lämpötilasta ja aineen määrästä. Luvut ovat esimerkkiarvoja.\n\n<svg viewBox=\"0 0 600 300\" role=\"img\" aria-label=\"Kaksi vaihetta. Vaihe 1, nopea puristus: ilman lämpötila nousee 20 asteesta 76 asteeseen, W on plus 20 J ja Q on nolla. Vaihe 2, jäähtyminen männän ollessa paikallaan: lämpötila laskee 76 asteesta 20 asteeseen, W on nolla ja Q on tuntematon.\" style=\"max-width:100%;font-family:system-ui,sans-serif;font-size:24px\">\n  <text x=\"150\" y=\"40\" text-anchor=\"middle\" fill=\"currentColor\">Vaihe 1: puristus</text>\n  <text x=\"450\" y=\"40\" text-anchor=\"middle\" fill=\"currentColor\">Vaihe 2: jäähtyminen</text>\n  <rect x=\"50\" y=\"70\" width=\"200\" height=\"120\" rx=\"14\" fill=\"currentColor\" fill-opacity=\"0.08\" stroke=\"currentColor\" stroke-width=\"3\"/>\n  <text x=\"150\" y=\"118\" text-anchor=\"middle\" fill=\"currentColor\">ilma</text>\n  <text x=\"150\" y=\"158\" text-anchor=\"middle\" fill=\"currentColor\">20 → 76 °C</text>\n  <line x1=\"266\" y1=\"130\" x2=\"320\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"4\"/>\n  <polygon points=\"336,130 318,120 318,140\" fill=\"currentColor\"/>\n  <rect x=\"350\" y=\"70\" width=\"200\" height=\"120\" rx=\"14\" fill=\"currentColor\" fill-opacity=\"0.08\" stroke=\"currentColor\" stroke-width=\"3\"/>\n  <text x=\"450\" y=\"118\" text-anchor=\"middle\" fill=\"currentColor\">ilma</text>\n  <text x=\"450\" y=\"158\" text-anchor=\"middle\" fill=\"currentColor\">76 → 20 °C</text>\n  <text x=\"150\" y=\"240\" text-anchor=\"middle\" fill=\"currentColor\">W = +20 J</text>\n  <text x=\"150\" y=\"280\" text-anchor=\"middle\" fill=\"currentColor\">Q = 0</text>\n  <text x=\"450\" y=\"240\" text-anchor=\"middle\" fill=\"currentColor\">W = 0</text>\n  <text x=\"450\" y=\"280\" text-anchor=\"middle\" fill=\"currentColor\">Q = ?</text>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri on ilmaan siirtynyt lämpömäärä Q vaiheessa 2? Anna vastaus etumerkkeineen jouleina.",
+        "answer": -20,
+        "unit": "J",
+        "tolerance": 0.02,
+        "hints": [
+          "Missä lämpötilassa ilma on vaiheen 1 alussa ja vaiheen 2 lopussa? Mitä se kertoo sisäenergian kokonaismuutoksesta?",
+          "Kahden vaiheen jälkeen ilman lämpötila on ennallaan, joten $\\Delta U_1 + \\Delta U_2 = 0$. Kummassakin vaiheessa $\\Delta U = Q + W$.",
+          "Vaiheessa 1 $\\Delta U_1 = 0 + 20\\,\\text{J} = 20\\,\\text{J}$, joten vaiheessa 2 $\\Delta U_2 = -20\\,\\text{J}$ ja $Q_2 = \\Delta U_2 - W_2$."
+        ],
+        "mistakes": [
+          {
+            "value": 20,
+            "feedback": "Suuruus on oikein, mutta suunta ei. Ilma jäähtyy, joten energiaa siirtyy ilmasta pois, ja systeemistä poistuva lämpömäärä on negatiivinen."
+          },
+          {
+            "value": 0,
+            "feedback": "Puristettu ilma ei säilytä energiaa: ideaalikaasun sisäenergia palaa alkuarvoonsa, kun lämpötila palaa. Vaiheessa 2 sisäenergia pienenee 20 J, ja koska $W_2 = 0$, saman verran siirtyy lämpönä pois."
+          }
+        ],
+        "solution": "Vaiheessa 1 $\\Delta U_1 = Q_1 + W_1 = 0 + 20\\,\\text{J} = 20\\,\\text{J}$. Lopussa lämpötila on sama kuin alussa, joten $\\Delta U_1 + \\Delta U_2 = 0$ ja $\\Delta U_2 = -20\\,\\text{J}$. Vaiheessa 2 $W_2 = 0$, joten $Q_2 = \\Delta U_2 - W_2 = -20\\,\\text{J}$. Männän työ siirsi ilmaan 20 J, ja sama energia siirtyi lämpönä seinien kautta ympäristöön."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi taulukkoon, energiakaavioon ja malliin $\\Delta U = Q + W$. Palaa sitten alun kysymykseen: mistä pumpun ilma saa lisäenergiaa, ja mihin energia joutuu, kun pumppu jäähtyy? Miksi venttiilistä purkautuva ilma tuntuu viileältä?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Sylinterissä olevaan kaasuun siirtyy lämpömäärä 250 J, ja kaasu laajenee tehden mäntään työn 90 J. Opiskelija laskee: $\\Delta U = Q + W = 250\\,\\text{J} + 90\\,\\text{J} = 340\\,\\text{J}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Q:n pitäisi olla negatiivinen, koska kaasu laajenee.",
+          "feedback": "Q kertoo lämmön suunnan, ei liikkeen. Lämpöä siirtyy kaasuun, joten $Q = +250\\,\\text{J}$ on oikein. Virhe on toisessa termissä."
+        },
+        {
+          "text": "Kaasu tekee työtä ympäristöön, joten $W = -90\\,\\text{J}$ ja $\\Delta U = 250\\,\\text{J} - 90\\,\\text{J} = 160\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Oikein. Kaavassa $\\Delta U = Q + W$ työ $W$ on ympäristön systeemiin tekemä työ. Kun kaasu itse työntää mäntää, energiaa lähtee kaasusta, joten $W$ on negatiivinen."
+        },
+        {
+          "text": "Lämpö ja työ ovat eri asioita, joten niitä ei voi laskea yhteen.",
+          "feedback": "Lämpö ja työ ovat kaksi tapaa siirtää energiaa, ja molemmat mitataan jouleina. Siksi ne voi laskea yhteen, kunhan etumerkit kertovat suunnan oikein."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Tarkista, kumpaan suuntaan energiaa siirtyy työnä. Laajeneva kaasu tekee työtä ympäristöön, joten työ vie energiaa kaasusta pois eikä tuo sitä."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Tulimännässä on suljettu sylinteri, jonka pohjalla on taulaa. Mäntä painetaan kämmenellä nopeasti alas, ja puristuva ilma kuumenee niin, että taula syttyy. Kämmen työntää mäntää keskimäärin 75 N:n voimalla 8,0 cm:n matkan, ja puristuksen aikana ilmasta ehtii siirtyä seiniin lämpömäärä 0,60 J. Kuinka paljon ilman sisäenergia kasvaa? Oleta, että koko kämmenen työ tehdään ilmaan (kitka jätetään pois). Vastaa jouleina.",
+      "answer": 5.4,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on systeemi, ja kumpaan suuntaan energia siirtyy työnä ja kumpaan lämpönä?",
+        "Männän työ on $W = Fs$ keskimääräisellä voimalla, ja $\\Delta U = Q + W$. Systeemistä poistuva lämpö on negatiivinen.",
+        "$W = 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = 6{,}0\\,\\text{J}$ ja $Q = -0{,}60\\,\\text{J}$. Laske $\\Delta U = Q + W$."
+      ],
+      "mistakes": [
+        {
+          "value": 6.6,
+          "feedback": "Lisäsit lämpömäärän. Lämpöä siirtyy ilmasta seiniin eli systeemistä pois, joten $Q = -0{,}60\\,\\text{J}$ ja se pienentää sisäenergian kasvua."
+        },
+        {
+          "value": 599.4,
+          "feedback": "Matka on muutettava metreiksi ennen kertolaskua: $8{,}0\\,\\text{cm} = 0{,}080\\,\\text{m}$, jolloin $W = 6{,}0\\,\\text{J}$. Joule on newtonmetri, $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$."
+        }
+      ],
+      "solution": "**Ratkaisu symbolisesti.** Systeemi on sylinterin ilma. Ympäristö tekee siihen työn $W = Fs$, ja lämpöä siirtyy pois, joten $Q < 0$:\n\n$$\\Delta U = Q + W = Q + Fs$$\n\n**Sijoitus.** $\\Delta U = -0{,}60\\,\\text{J} + 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = -0{,}60\\,\\text{J} + 6{,}0\\,\\text{J} = 5{,}4\\,\\text{J}$.\n\n**Järkevyys.** Puristus on niin nopea, että vain pieni osa energiasta ehtii siirtyä pois. Muutama joule riittää kuumentamaan sylinterin pienen ilmamäärän taulan syttymislämpötilaan."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä riittää $\\Delta U = Q + W$ ja oikeat etumerkit, taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kaasu laajenee hyvin eristetyssä sylinterissä ja työntää mäntää ulospäin. Kaasuun ei siirry lämpöä eikä siitä siirry lämpöä pois. Mitä kaasun lämpötilalle tapahtuu?",
+      "choices": [
+        {
+          "text": "Se pysyy samana, koska lämpöä ei siirry.",
+          "feedback": "Sisäenergiaa muuttaa lämmön lisäksi työ. Kaasu tekee työtä mäntään, joten $W < 0$ ja $\\Delta U = Q + W < 0$, vaikka $Q = 0$."
+        },
+        {
+          "text": "Se laskee, koska kaasu tekee työtä ja sen sisäenergia pienenee.",
+          "correct": true,
+          "feedback": "Oikein. $Q = 0$ ja $W < 0$, joten $\\Delta U = Q + W < 0$. Pienempi sisäenergia tarkoittaa, että hiukkaset liikkuvat keskimäärin hitaammin ja lämpötila laskee. Siksi venttiilistä purkautuva ilma tuntuu viileältä."
+        },
+        {
+          "text": "Se nousee, koska hiukkaset liikkuvat nopeammin laajenevassa kaasussa.",
+          "feedback": "Laajenevan kaasun hiukkaset kimpoavat poispäin liikkuvasta männästä hitaampina, kuin ne siihen osuivat. Energiaa siirtyy kaasusta mäntään, joten sisäenergia pienenee."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Energiakirjanpito",
+      "prompt": "Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua tehden siihen työn 80 J, ja kaasusta siirtyy seiniin lämpömäärä 30 J. Vaiheessa 2 kaasuun siirtyy lämpömäärä 50 J, ja kaasu laajenee tehden mäntään työn 70 J. Kuinka paljon kaasun sisäenergia muuttuu kahden vaiheen aikana yhteensä? Vastaa jouleina.",
+      "answer": 30,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "Kirjoita kummallekin vaiheelle Q ja W etumerkkeineen: tuleeko energia systeemiin vai lähteekö se pois?",
+        "Vaiheessa 1 $Q_1 = -30\\,\\text{J}$ ja $W_1 = +80\\,\\text{J}$, vaiheessa 2 $Q_2 = +50\\,\\text{J}$ ja $W_2 = -70\\,\\text{J}$.",
+        "$\\Delta U_1 = 50\\,\\text{J}$ ja $\\Delta U_2 = -20\\,\\text{J}$. Laske yhteen."
+      ],
+      "mistakes": [
+        {
+          "value": 230,
+          "feedback": "Laskit kaikki siirrot positiivisina. Systeemistä lähtevä energia on negatiivista: seiniin siirtyvä lämpö ($-30\\,\\text{J}$) ja laajenevan kaasun työ ($-70\\,\\text{J}$)."
+        },
+        {
+          "value": 10,
+          "feedback": "Käytit työlle väärää etumerkkiä. Tässä kirjassa $W$ on ympäristön systeemiin tekemä työ: puristuksessa $W_1 = +80\\,\\text{J}$, laajenemisessa $W_2 = -70\\,\\text{J}$."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee nopeasti pumpatessa enemmän. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä $\\Delta U = Q + W$.",
+      "criteria": [
+        "Sanon, että työ siirtää ilmaan energiaa ja kasvattaa sen sisäenergiaa, mikä näkyy lämpötilan nousuna.",
+        "Sanon, että lämpimästä ilmasta siirtyy energiaa lämpönä seinien kautta ympäristöön, joten Q on negatiivinen.",
+        "Selitän, että hitaassa pumppauksessa lämpöä ehtii siirtyä pois enemmän, joten $\\Delta U = Q + W$ jää pienemmäksi.",
+        "Erotan lämmön (energian siirtyminen) sisäenergiasta (systeemin energia)."
+      ],
+      "model": "Männän työ $W$ siirtää ilmaan energiaa, ja ilman sisäenergia kasvaa: hiukkaset liikkuvat keskimäärin nopeammin, ja lämpötila nousee. Kun ilma on ympäristöä lämpimämpää, siitä siirtyy energiaa lämpönä seinien kautta ympäristöön, joten $Q$ on negatiivinen. Nopeassa pumppauksessa lämpöä ehtii siirtyä vain vähän, joten $\\Delta U = Q + W$ on lähes yhtä suuri kuin työ ja ilma kuumenee paljon. Hitaassa pumppauksessa lähes kaikki työn tuoma energia ehtii siirtyä lämpönä pois, jolloin $Q \\approx -W$, sisäenergia kasvaa vähän eikä pumppu juuri lämpene. Energia ei katoa kummassakaan: se päätyy lopulta ympäristön sisäenergiaksi."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

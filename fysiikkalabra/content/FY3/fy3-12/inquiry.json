@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "contribution": "Ensimmäisen pääsäännön energiakirjanpito laajenee tehoihin: lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä, rakennusosan läpi johtuva teho on $P = UA\\Delta T$, ja kappaleen lämpötila pysyy vakiona, kun siihen tuleva ja siitä lähtevä teho ovat yhtä suuret, mikä selittää kasvihuoneilmiön ja ilmastonmuutoksen.",
+  "prior": [
+    "Sisäenergiaa muuttavat lämpö ja työ, $\\Delta U = Q + W$, ja energia säilyy (fy3-5)",
+    "Lämpö on energian siirtymistä kuumemmasta kylmempään lämpötilaeron vuoksi (fy3-5)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kuu on keskimäärin yhtä kaukana Auringosta kuin Maa, ja auringonvaloa osuu sen pinnalle neliömetriä kohti yhtä paljon. Kuulla ei kuitenkaan ole ilmakehää, ja sen pinnan keskilämpötila on selvästi pakkasen puolella. Maassa sama ero näkyy pienessä mittakaavassa: kirkkaana talviyönä pakkanen kiristyy nopeasti, mutta pilvisenä yönä lämpötila laskee vain vähän.",
+      "question": "Ilmakehä ei itse tuota energiaa. Miten se silti voi pitää maanpinnan lämpimämpänä kuin ilman sitä?"
+    },
+    {
+      "id": "pr-tasapaino",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa aiemmalta tunnilta",
+      "prompt": "Oppitunnilla fy3-5 sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Kattilan veteen siirtyy liedeltä joka minuutti lämpönä 600 J, ja vedestä siirtyy joka minuutti lämpönä ympäristöön 600 J. Työtä ei tehdä. Mitä veden sisäenergialle ja lämpötilalle tapahtuu?",
+      "choices": [
+        {
+          "text": "Sisäenergia kasvaa, koska veteen tulee koko ajan lämpöä.",
+          "feedback": "Sisäenergiaa muuttaa vain nettosiirto. Veteen tulee 600 J ja siitä lähtee 600 J minuutissa, joten $Q = 600\\,\\text{J} - 600\\,\\text{J} = 0$ ja $\\Delta U = 0$."
+        },
+        {
+          "text": "Sisäenergia ja lämpötila pysyvät vakioina.",
+          "correct": true,
+          "feedback": "Oikein. Minuutissa $Q = +600\\,\\text{J} - 600\\,\\text{J} = 0$ ja $W = 0$, joten $\\Delta U = Q + W = 0$. Kun tuleva ja lähtevä energia ovat yhtä suuret, lämpötila ei muutu."
+        },
+        {
+          "text": "Sisäenergia pienenee, koska vedestä lähtee koko ajan lämpöä.",
+          "feedback": "Lähtevä lämpö pienentäisi sisäenergiaa vain, jos sitä ei korvattaisi. Tässä veteen tulee yhtä paljon kuin lähtee, joten $\\Delta U = 0$."
+        },
+        {
+          "text": "Sitä ei voi päätellä ilman veden lämpötilaa.",
+          "feedback": "Ensimmäinen pääsääntö riittää: $\\Delta U = Q + W$, ja tässä $Q = 0$ ja $W = 0$ joka minuutti. Lämpötilaa ei tarvita sen päättelemiseen, muuttuuko sisäenergia."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "justify": true,
+      "title": "Ennuste 1: miksi maanpinta on lämpimämpi?",
+      "prompt": "Ilman ilmakehää maanpinnan keskilämpötila olisi noin −18 °C, mutta se on noin +15 °C. Kolme opiskelijaa selittää eroa. Kenen selitys on mielestäsi paras?",
+      "choices": [
+        {
+          "text": "Aino: Ilmakehä on kuin peitto, joka estää lämpöä johtumasta maanpinnalta avaruuteen.",
+          "feedback": "Avaruus on lähes tyhjä, joten sinne lämpö ei voi siirtyä johtumalla eikä konvektiolla: maapallo luovuttaa energiaa avaruuteen vain lämpösäteilynä. Tutki-vaiheen taulukossa näet, mitä säteilylle tapahtuu ilmakehän kanssa ja ilman sitä."
+        },
+        {
+          "text": "Bea: Ilmakehän kaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinnalle tulee energiaa Auringon lisäksi ilmakehästä.",
+          "correct": true,
+          "feedback": "Tutki-vaiheen taulukko testaa tätä: vertaa, kuinka paljon tehoa maanpinnalle tulee ja kuinka paljon se säteilee ilmakehän kanssa ja ilman sitä."
+        },
+        {
+          "text": "Cem: Ilmakehä varastoi Auringon energiaa, ja varastoon kertyy koko ajan lisää, joten maanpinta on lämmin.",
+          "feedback": "Jos energiaa kertyisi koko ajan, maapallo lämpenisi jatkuvasti eikä sen lämpötila pysyisi noin +15 °C:ssa. Tasaisessa lämpötilassa tulevan ja lähtevän tehon on oltava yhtä suuret. Tutki-vaiheen taulukossa voit tarkistaa, pätevätkö nämä tasapainot."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "justify": true,
+      "title": "Ennuste 2: kun hiilidioksidia lisätään",
+      "prompt": "Ilmakehän hiilidioksidipitoisuus nostetaan kerralla korkeammaksi ja pidetään sitten vakiona. Auringosta tuleva teho ei muutu. Mitä maapallon lämpötilalle tapahtuu sen jälkeen?",
+      "choices": [
+        {
+          "text": "Aino: Maapallo lämpenee vain niin kauan kuin pitoisuus kasvaa. Kun pitoisuus pysyy vakiona, lämpeneminen pysähtyy heti.",
+          "feedback": "Lämpötila muuttuu niin kauan kuin tuleva ja lähtevä teho poikkeavat toisistaan, ei niin kauan kuin pitoisuus muuttuu. Tutki-vaiheen toisessa taulukossa pitoisuus on vakio rivistä ”heti jälkeen” alkaen: katso, onko ylimääräinen teho silloin heti nolla."
+        },
+        {
+          "text": "Bea: Avaruuteen lähtee aluksi vähemmän tehoa kuin maapallo imee. Maapallo lämpenee, kunnes lähtevä teho on taas yhtä suuri kuin imeytyvä.",
+          "correct": true,
+          "feedback": "Tutki-vaiheen toinen taulukko testaa tätä: seuraa, miten avaruuteen lähtevä teho ja ylimääräinen teho muuttuvat, kun maapallo lämpenee."
+        },
+        {
+          "text": "Cem: Maapallo lämpenee loputtomasti, koska lisähiilidioksidi pidättää energiaa koko ajan.",
+          "feedback": "Lämpimämpi kappale säteilee enemmän, joten lämmetessään maapallo säteilee avaruuteen yhä enemmän. Tutki-vaiheen toisessa taulukossa näet, mitä ylimääräiselle teholle tapahtuu lämpenemisen edetessä."
+        }
+      ]
+    },
+    {
+      "id": "tase",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Maanpinnan energiatase ilman ilmakehää ja sen kanssa",
+      "text": "Taulukossa on maanpinnan energiatase koko maapallon keskiarvona neliömetriä kohti. Luvut ovat yksinkertaisella mallilla laskettuja *esimerkkiarvoja*, eivät mittauksia. Mallissa Auringosta imeytyvä teho imeytyy kokonaan maanpintaan, ja maanpinta luovuttaa energiaa vain lämpösäteilynä. Todellisuudessa osa auringonvalosta imeytyy ilmakehään, ja maanpinta luovuttaa energiaa myös konvektiolla ja veden haihtumisena. Kummassakin tapauksessa avaruuteen lähtee yhteensä 240 W/m², yhtä paljon kuin Auringosta imeytyy.\n\nSarakkeessa *ilman* maapallolla ei ole ilmakehää, sarakkeessa *kanssa* on. Tehot ovat yksikössä W/m².\n\n| Maanpinta | ilman | kanssa |\n|---|---|---|\n| Auringosta imeytyy | 240 | 240 |\n| ilmakehästä tulee alas | 0 | 150 |\n| pinta säteilee | 240 | 390 |\n| lämpötila | −18 °C | +15 °C |",
+      "question": {
+        "type": "choice",
+        "prompt": "Mistä taulukon mukaan johtuu, että maanpinta on ilmakehän kanssa lämpimämpi?",
+        "choices": [
+          {
+            "text": "Auringosta imeytyy enemmän tehoa, kun ilmakehä on olemassa.",
+            "feedback": "Auringosta imeytyvä teho on kummassakin sarakkeessa sama 240 W/m². Ero syntyy taulukon toiselta riviltä: katso, mistä muualta maanpinta saa energiaa."
+          },
+          {
+            "text": "Ilmakehästä tulee maanpinnalle alas 150 W/m², joten pinta saa yhteensä 390 W/m², ja tasapainossa sen on säteiltävä sama 390 W/m², mikä vaatii korkeamman lämpötilan.",
+            "correct": true,
+            "feedback": "Oikein. Maanpinnalle tulee $240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 = 390\\,\\text{W/m}^2$, ja tasapainossa lähtevä teho on yhtä suuri. Mitä kuumempi kappale on, sitä enemmän se säteilee, joten 390 W/m² vastaa korkeampaa lämpötilaa kuin 240 W/m². Ilmakehä ei tuota energiaa: se säteilee alas osan maanpinnalta imemästään säteilystä."
+          },
+          {
+            "text": "Maanpinta säteilee ilmakehän kanssa vähemmän, joten energiaa jää pintaan enemmän.",
+            "feedback": "Taulukossa maanpinta säteilee ilmakehän kanssa enemmän, 390 W/m² eikä 240 W/m². Lämpimämpi pinta säteilee enemmän. Pinta pysyy silti tasapainossa, koska sille tulee myös enemmän."
+          },
+          {
+            "text": "Ilmakehä estää lämpöä johtumasta maanpinnalta avaruuteen.",
+            "feedback": "Avaruuteen energia lähtee vain säteilynä, koska tyhjiössä ei ole hiukkasia, joiden kautta lämpö johtuisi. Taulukon mallissa maanpinta luovuttaa energiaa vain säteilemällä, ja ero näkyy siinä, kuinka paljon säteilyä pinnalle tulee."
+          }
+        ]
+      }
+    },
+    {
+      "id": "epatasapaino",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kun tasapaino rikkoutuu",
+      "text": "Ilmakehän hiilidioksidipitoisuus nostetaan kerralla ja pidetään sitten vakiona. Kasvihuonekaasuja on enemmän, joten ne imevät enemmän lämpösäteilyä, ja avaruuteen pääsee aluksi vähemmän tehoa kuin maapallo imee. Ylimääräinen teho lämmittää meriä, maata ja ilmaa. Mallissa avaruuteen lähtevä teho kasvaa 1,2 W/m² jokaista kelviniä kohti, jonka maapallo lämpenee. Taulukossa on avaruuteen lähtevä teho, ylimäärä eli imeytyvän ja lähtevän tehon erotus sekä lämpeneminen ΔT alkutilanteesta; tehot ovat yksikössä W/m². Maapallo imee koko ajan 240,0 W/m². Luvut ovat *esimerkkiarvoja*; todellisuudessa lämpeneminen kestää vuosikymmeniä, koska merien suuri lämpökapasiteetti hidastaa sitä.\n\n| Vaihe | Lähtee | Ylimäärä | ΔT (K) |\n|---|---|---|---|\n| ennen | 240,0 | 0,0 | 0,0 |\n| heti jälkeen | 236,4 | 3,6 | 0,0 |\n| myöhemmin | 237,6 | 2,4 | 1,0 |\n| vielä myöhemmin | 238,8 | 1,2 | 2,0 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Pitoisuus pysyy vakiona rivistä ”heti jälkeen” alkaen. Kuinka monta kelviniä maapallo on lämmennyt yhteensä, kun lähtevä teho on taas yhtä suuri kuin imeytyvä?",
+        "answer": 3.0,
+        "unit": "K",
+        "tolerance": 0.02,
+        "hints": [
+          "Kuinka paljon lähtevän tehon on vielä kasvettava rivin ”heti jälkeen” arvosta, jotta ylimäärä on nolla?",
+          "Lähtevä teho kasvaa 1,2 W/m² jokaista lämpenemisen kelviniä kohti. Ylimäärä on heti muutoksen jälkeen 3,6 W/m².",
+          "Tarvittava lämpeneminen on $\\dfrac{3{,}6\\,\\text{W/m}^2}{1{,}2\\,\\text{W/(m}^2\\text{K)}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 3.6,
+            "feedback": "3,6 on ylimääräinen teho neliömetriä kohti (W/m²), ei lämpeneminen. Lähtevä teho kasvaa 1,2 W/m² kelviniä kohti, joten jaa ylimäärä tällä."
+          },
+          {
+            "value": 4.32,
+            "feedback": "Kerroit ylimäärän ja 1,2 W/m² kelviniä kohti. Kysytään, montako kelviniä tarvitaan, jotta 3,6 W/m² kuroutuu umpeen: jaa ylimäärä luvulla 1,2 W/m² kelviniä kohti."
+          }
+        ],
+        "solution": "Heti muutoksen jälkeen ylimäärä on $3{,}6\\,\\text{W/m}^2$, ja jokainen lämpenemisen kelvin kasvattaa lähtevää tehoa $1{,}2\\,\\text{W/m}^2$. Tasapaino palautuu, kun $\\Delta T = \\dfrac{3{,}6\\,\\text{W/m}^2}{1{,}2\\,\\text{W/(m}^2\\text{K)}} = 3{,}0\\,\\text{K}$. Silloin lähtee $236{,}4\\,\\text{W/m}^2 + 3{,}6\\,\\text{W/m}^2 = 240{,}0\\,\\text{W/m}^2$. Lämpeneminen jatkuu siis vielä pitkään sen jälkeen, kun pitoisuus on lakannut kasvamasta, mutta se pysähtyy uuteen tasapainoon."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kahteen taulukkoon ja energiatasapainon malliin. Palaa sitten alun kysymykseen: miten ilmakehä voi pitää maanpinnan lämpimämpänä, vaikka se ei itse tuota energiaa? Miksi pilvisenä yönä pakkanen kiristyy vähemmän kuin kirkkaana?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Ikkunan pinta-ala on 1,5 m² ja U-arvo 1,0 W/(m²·K). Sisällä on 20 °C ja ulkona −10 °C. Opiskelija laskee: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ ja $P = UA\\Delta T = 1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 10\\,\\text{K} = 15\\,\\text{W}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Lämpötilat pitäisi muuttaa kelvineiksi ennen vähennyslaskua.",
+          "feedback": "Lämpötilaero on kelvineinä ja celsiusasteina sama, joten muunnos ei muuta tulosta. Virhe on ulkolämpötilan etumerkissä."
+        },
+        {
+          "text": "Ulkolämpötila on −10 °C, joten $\\Delta T = 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 30\\,\\text{K}$ ja $P = 45\\,\\text{W}$.",
+          "correct": true,
+          "feedback": "Oikein. Pakkaslämpötila vähennetään etumerkkeineen, jolloin ero on 30 K eikä 10 K. Teho on $1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 45\\,\\text{W}$, kolminkertainen opiskelijan tulokseen verrattuna."
+        },
+        {
+          "text": "U-arvolla pitäisi jakaa, koska hyvä eriste päästää vähemmän lämpöä läpi.",
+          "feedback": "Hyvän eristeen U-arvo on pieni, joten kertominen sillä antaa pienen tehon, kuten pitääkin. U-arvo kertoo, montako wattia kulkee neliömetrin läpi kelvinin erolla, joten sillä kerrotaan."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Tarkista lämpötilaero. Sisältä 20 °C:sta ulos −10 °C:een on matkaa enemmän kuin 10 astetta: ensin nollaan 20 astetta ja siitä vielä 10 astetta pakkaselle."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Jääkaapin seinien, oven, katon ja pohjan yhteinen pinta-ala on 4,0 m², ja niiden keskimääräinen U-arvo on 0,30 W/(m²·K). Jääkaapissa on 5 °C ja keittiössä 21 °C. Lämpöä johtuu seinien läpi jääkaappiin, ja jotta jääkaapin lämpötila pysyy vakiona, sen koneiston on siirrettävä sama energia takaisin keittiöön. Kuinka paljon lämpöä johtuu jääkaappiin vuorokaudessa? Oletetaan, että ovea ei avata. Vastaa kilowattitunteina.",
+      "answer": 0.461,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin suuntaan lämpö siirtyy, ja mikä on sisä- ja ulkopuolen lämpötilaero?",
+        "Seinien läpi johtuva teho on $P = UA\\Delta T$, ja energia vuorokaudessa on $E = Pt$.",
+        "$\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$ ja $P = 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19{,}2\\,\\text{W}$. Kerro tunneilla ja muuta kilowattitunneiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 0.749,
+          "feedback": "Laskit lämpötilat yhteen: $21 + 5 = 26$. Kumpikin lämpötila on nollan yläpuolella, joten ero on $21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$."
+        },
+        {
+          "value": 460.8,
+          "feedback": "Tämä on vastaus wattitunteina. Kilowattitunti on 1000 wattituntia, joten $460{,}8\\,\\text{Wh} \\approx 0{,}46\\,\\text{kWh}$."
+        }
+      ],
+      "solution": "**Ratkaisu symbolisesti.** Lämpö johtuu lämpimästä keittiöstä kylmään jääkaappiin teholla $P = UA\\Delta T$, ja vuorokaudessa siirtyy energia\n\n$$E = Pt = UA\\Delta T\\,t$$\n\n**Sijoitus.** $\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$, joten $P = 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19{,}2\\,\\text{W}$ ja $E = 0{,}0192\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 0{,}46\\,\\text{kWh}$.\n\n**Järkevyys.** Jääkaappi on energiatasapainossa vain, jos koneisto siirtää saman energian ulos. Teho on vain noin 20 W, koska jääkaapin lämpötilaero on pieni ja seinät ovat hyvin eristetyt. Oven avaaminen lisää tarvetta, koska lämmin ilma pääsee konvektiolla sisään."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä riittää yksi yhtälö, $P = UA\\Delta T$, $E = Pt$ tai energiatasapaino. Taso 3 yhdistää lämmön siirtymisen ja energian varastoitumisen."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kirkkaana talviyönä pakkanen kiristyy nopeasti, mutta pilvisenä yönä lämpötila laskee vain vähän. Mikä selittää eron parhaiten?",
+      "choices": [
+        {
+          "text": "Pilvet estävät avaruuden kylmyyttä tulemasta maanpinnalle.",
+          "feedback": "Kylmyys ei ole ainetta tai energiaa, joka siirtyisi. Maanpinta jäähtyy, koska siitä lähtee energiaa lämpösäteilynä, ja kysymys on siitä, kuinka paljon sitä tulee takaisin."
+        },
+        {
+          "text": "Pilvet imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta menettää nettona vähemmän energiaa.",
+          "correct": true,
+          "feedback": "Oikein. Pilvien vesipisarat ja vesihöyry toimivat kuten kasvihuonekaasut. Kirkkaana yönä suurempi osa maanpinnan lämpösäteilystä pääsee avaruuteen, joten pinta jäähtyy nopeammin."
+        },
+        {
+          "text": "Pilvet tuottavat itse lämpöä.",
+          "feedback": "Pilvet eivät tuota energiaa. Ne säteilevät alas osan siitä energiasta, jonka ne ovat imeneet maanpinnan lämpösäteilystä, kuten ilmakehä tutkimasi taulukon mallissa."
+        },
+        {
+          "text": "Pilvet estävät lämpöä johtumasta maanpinnalta avaruuteen.",
+          "feedback": "Lämpö ei voi johtua tyhjän avaruuden läpi, koska siellä ei ole hiukkasia. Maapallo luovuttaa energiaa avaruuteen vain lämpösäteilynä, ja pilvet vaikuttavat juuri siihen."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Ilmakehän energiatase",
+      "prompt": "Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee 390 W/m². Siitä 40 W/m² pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle 150 W/m². Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä 240 W/m². Kuinka suuren tehon neliömetriä kohti ilmakehä säteilee ylöspäin avaruuteen?",
+      "answer": 200,
+      "unit": "W/m²",
+      "tolerance": 0.02,
+      "hints": [
+        "Mistä kahdesta osasta avaruuteen lähtevä 240 W/m² koostuu?",
+        "Avaruuteen lähtee maanpinnalta suoraan läpi päässyt säteily ja ilmakehän ylöspäin säteilemä teho: $240\\,\\text{W/m}^2 = 40\\,\\text{W/m}^2 + P_\\text{ylös}$.",
+        "Tarkista lopuksi ilmakehän oma tase: se imee $390\\,\\text{W/m}^2 - 40\\,\\text{W/m}^2 = 350\\,\\text{W/m}^2$, ja sen on säteiltävä sama määrä ylös ja alas yhteensä."
+      ],
+      "mistakes": [
+        {
+          "value": 240,
+          "feedback": "240 W/m² on koko maapallolta avaruuteen lähtevä teho. Siitä 40 W/m² on maanpinnan säteilyä, joka pääsee suoraan ilmakehän läpi, joten ilmakehän osuus on pienempi."
+        },
+        {
+          "value": 150,
+          "feedback": "Ilmakehä ei säteile välttämättä yhtä paljon ylös ja alas. Avaruuteen lähtevän 240 W/m²:n on koostuttava suoraan läpi päässeestä 40 W/m²:stä ja ilmakehän ylöspäin säteilemästä tehosta."
+        }
+      ],
+      "solution": "Avaruuteen lähtee $40\\,\\text{W/m}^2 + P_\\text{ylös} = 240\\,\\text{W/m}^2$, joten $P_\\text{ylös} = 200\\,\\text{W/m}^2$. Tarkistus: ilmakehä imee $390\\,\\text{W/m}^2 - 40\\,\\text{W/m}^2 = 350\\,\\text{W/m}^2$ ja säteilee $150\\,\\text{W/m}^2 + 200\\,\\text{W/m}^2 = 350\\,\\text{W/m}^2$, joten myös ilmakehä on tasapainossa."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Ystäväsi väittää: ”Maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta, joten lisähiilidioksidi ei voi muuttaa sen lämpötilaa. Sitä paitsi kasvihuoneilmiö on kokonaan haitallinen.” Selitä energiatasapainon ja lämpösäteilyn avulla, mikä väitteessä on oikein ja mikä väärin.",
+      "criteria": [
+        "Sanon, että tasapainossa tuleva ja lähtevä teho ovat yhtä suuret ja lämpötila pysyy vakiona.",
+        "Selitän, että lisähiilidioksidi imee enemmän maanpinnan lämpösäteilyä, joten avaruuteen lähtee hetkellisesti vähemmän kuin imeytyy.",
+        "Selitän, että maapallo lämpenee, kunnes se säteilee taas yhtä paljon kuin imee, eli uusi tasapaino asettuu korkeampaan lämpötilaan.",
+        "Totean, että luonnollinen kasvihuoneilmiö pitää maanpinnan noin +15 °C:ssa noin −18 °C:n sijaan, ja ongelma on sen voimistuminen."
+      ],
+      "model": "Väitteen alkuosa pitää paikkansa tasapainotilassa: kun maapallo säteilee avaruuteen yhtä suuren tehon kuin imee Auringosta, sen lämpötila pysyy vakiona. Tasapaino ei kuitenkaan ole pysyvä. Kun hiilidioksidia lisätään, ilmakehä imee enemmän maanpinnan lämpösäteilyä ja säteilee osan siitä takaisin alas, ja avaruuteen pääsee hetkellisesti vähemmän tehoa kuin maapallo imee. Ylimääräinen teho lämmittää meriä, maata ja ilmaa. Lämpimämpi maapallo säteilee enemmän, joten lämpeneminen jatkuu, kunnes lähtevä teho on taas yhtä suuri kuin imeytyvä. Uusi tasapaino asettuu siis korkeampaan lämpötilaan. Kasvihuoneilmiö ei myöskään ole kokonaan haitallinen: luonnollinen kasvihuoneilmiö nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een. Ongelma on sen voimistuminen ihmisen päästöjen vuoksi."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

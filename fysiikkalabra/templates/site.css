@@ -114,7 +114,7 @@ nav.toc a{flex:none;display:inline-flex;align-items:center;min-height:40px;paddi
 nav.toc a:hover{background:var(--bg-tint);color:var(--ink)}
 nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
 @media (min-width:1100px){nav.toc{margin-inline:0;padding-inline:0}}
-article h2{scroll-margin-top:3.6rem}#sim,#exercises,#exit{scroll-margin-top:3.4rem}
+article h2,article h3,.stage,.activity{scroll-margin-top:3.6rem}#sim,#exercises,#exit{scroll-margin-top:3.4rem}
 
 /* answer check: browser-side only, nothing is stored or sent */
 p.howto{font-size:.9rem;color:var(--ink-2);margin:0 0 .6rem}
@@ -160,3 +160,54 @@ details.solution .steps p{margin:0}
 .worked .step-controls button[hidden]{display:none}
 .worked:not(.js) .step-controls{display:none}
 @media print{.worked .step-controls{display:none}}
+
+/* inquiry layout (scripts/inquiry.py, inquiry.js): stages, activities, predictions, experiments, feedback */
+.contribution{margin:.4rem 0 1.4rem;padding:.6rem .9rem;background:var(--accent-soft);border-radius:10px;font-size:.95rem}
+.prior{font-size:.92rem;color:var(--ink-2);margin:-.8rem 0 1.4rem}
+.stage{margin:2.2rem 0 0;padding-top:.4rem;border-top:1px solid var(--line)}
+.stage>h2{display:flex;align-items:center;gap:.6rem}
+.stage-no{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--ink);color:var(--bg);font:600 .85rem var(--sans)}
+.activity{margin:1rem 0 1.6rem}.activity>h3{margin:.8rem 0 .4rem}.theory-h{margin-top:1.2rem}
+.hook{font:400 1.08rem/1.55 var(--serif)}.question{font-weight:600}
+p.task{margin:.3rem 0 .5rem}
+fieldset.choice{margin:.6rem 0;padding:.7rem 1rem .8rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0}
+fieldset.choice legend{padding:0 .4rem;font-weight:600;float:left;width:100%;margin-bottom:.5rem}fieldset.choice legend+*{clear:both}
+ul.choices{list-style:none;margin:0;padding:0}ul.choices li{margin:.15rem 0}
+ul.choices label{display:flex;gap:.6rem;align-items:flex-start;min-height:40px;padding:.3rem .5rem;border-radius:8px;cursor:pointer}
+ul.choices label:hover{background:var(--bg-tint)}ul.choices input{margin:.35rem 0 0;flex:none;width:1.1rem;height:1.1rem;accent-color:var(--accent)}
+ul.choices input:disabled+span{color:var(--ink-2)}ul.choices input:checked:disabled+span{color:var(--ink);font-weight:600}
+fieldset.choice.models ul.choices{display:grid;gap:.4rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+fieldset.choice.models ul.choices label{border:1px solid var(--line);border-radius:10px;height:100%;box-sizing:border-box}
+.feedback{margin:.1rem 0 .4rem 2.3rem;padding:.45rem .7rem;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:.93rem}
+fieldset.choice[data-state=no] .feedback{border-color:#b4532a;background:#fbf1ea}
+.choice-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0 0}
+.choice-actions button,.exp-controls button,.show-model{font:600 .9rem var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
+.choice-actions button:hover,.exp-controls button:hover{background:var(--accent)}
+.exp-controls button:disabled{opacity:.5;cursor:not-allowed}
+fieldset.choice output{display:block;margin-top:.4rem;font-size:.92rem;min-height:1.3em}
+fieldset.choice output[data-state=ok]{color:var(--accent-deep);font-weight:600}fieldset.choice output[data-state=no]{color:#8a3b1a;font-weight:600}fieldset.choice output[data-state=hint]{color:var(--ink-2)}
+.pending{margin:.5rem 0 0;font-size:.92rem;color:var(--ink-2)}
+.justify{display:block;margin:.5rem 0 0;font-size:.92rem;color:var(--ink-2)}
+textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:inherit;font-size:1rem;padding:.5rem .7rem;border:1px solid #767676;border-radius:10px;background:var(--surface);color:var(--ink)}
+textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
+.solution-text{margin:.3rem 0 .6rem;font-size:.95rem}
+.experiment{margin:.6rem 0;padding:.7rem 1rem .8rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.exp-setup{font-size:.93rem;margin:.4rem 0}
+.exp-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0}
+.exp-controls .exp-reset{background:var(--surface);color:var(--accent-deep)}
+table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:500 .8rem var(--mono);letter-spacing:.04em;color:var(--ink-2);text-align:left;padding:.2rem .4rem}
+table.exp-table td{font-variant-numeric:tabular-nums}table.exp-table tbody:empty::after{content:"";display:block;height:.3rem}
+.exp-status{font-size:.92rem;color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
+#sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}
+.hints{margin:.4rem 0 .2rem}.hints details{margin:.2rem 0}.hints summary{font-size:.9rem;color:var(--accent-deep);font-weight:600}
+.hints details>div{margin:.2rem 0 .4rem 1.2rem;padding:.4rem .7rem;background:var(--bg-tint);border-radius:8px;font-size:.93rem}
+.explain .model{margin-top:.6rem;padding:.6rem .9rem;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.explain .model h4{margin:.2rem 0 .3rem;font:600 .8rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--accent-deep)}
+ul.criteria{list-style:none;margin:0;padding:0}ul.criteria label{display:flex;gap:.6rem;align-items:flex-start;min-height:36px;padding:.2rem .3rem}ul.criteria input{margin-top:.35rem;accent-color:var(--accent)}
+.reflect{padding:.7rem 1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.my-predictions{margin:.3rem 0;padding-left:1.2rem}.my-predictions .rq{margin:.2rem 0 0;font-size:.92rem;color:var(--ink-2)}.my-predictions p{margin:.1rem 0 .4rem}
+.revise label{margin-right:.8rem;min-height:40px;display:inline-flex;align-items:center;gap:.3rem}
+.inquiry #exercises,.inquiry #exit{margin-top:.6rem}.inquiry #exit{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1.4rem 1rem}
+.inquiry #sim{margin-block:1rem}
+@media (max-width:600px){fieldset.choice,.experiment,.reflect{padding:.6rem .7rem}.feedback{margin-left:0}}
+@media print{.choice-actions,.exp-controls,.pending,.exp-status{display:none!important}}
