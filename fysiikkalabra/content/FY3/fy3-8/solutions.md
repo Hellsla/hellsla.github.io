@@ -4,7 +4,7 @@
 **Kaava:** ΔL = α L₀ ΔT
 **Sijoitus:** ΔT = 55 °C − 15 °C = 40 K. ΔL = 12 · 10⁻⁶ 1/K · 6,0 m · 40 K = 0,00288 m = 2,88 mm ≈ 2,9 mm
 **Vastaus:** 2,9 mm
-**Järkevyys:** Kouru pitenee vain muutaman millimetrin, mutta siksi pitkien kourujen kiinnikkeet päästävät kourun liukumaan. Yksiköt: 1/K · m · K = m.
+**Järkevyys:** Kouru pitenee vain muutaman millimetrin, mutta pitkien kourujen kiinnikkeiden täytyy silti päästää kouru liukumaan. Yksiköt: 1/K · m · K = m.
 
 ## fy3-8-L1-02
 **Annettu:** alumiinijohto L₀ = 50,0 m, α = 23 · 10⁻⁶ 1/K, T₀ = 18 °C, T = −27 °C
@@ -60,7 +60,7 @@
 **Kaava:** ΔL = α L₀ ΔT, josta ΔT = ΔL / (α L₀), ja T = T₀ + ΔT
 **Sijoitus:** ΔT = 0,0072 m / (12 · 10⁻⁶ 1/K · 25,0 m) = 24 K. T = 12 °C + 24 K = 36 °C
 **Vastaus:** 36 °C
-**Järkevyys:** Auringonpaisteessa tumma kisko lämpenee helposti yli 36 °C:seen. Silloin raot ovat kiinni ja kiskot työntävät toisiaan, joten raon täytyy olla riittävän leveä. Kelvinin ja celsiusasteen lämpötilaero on yhtä suuri, joten 24 K lisätään suoraan 12 °C:seen.
+**Järkevyys:** Auringonpaisteessa tumma kisko lämpenee helposti yli 36 °C:seen. Silloin raot ovat kiinni ja kiskot työntävät toisiaan, joten raon täytyy olla riittävän leveä. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten 24 K lisätään suoraan 12 °C:seen.
 
 ## fy3-8-L2-04
 **Annettu:** L₀ = 3,00 m, ΔL = 2,07 mm = 0,00207 m, T₀ = 12 °C, T = 42 °C
@@ -76,7 +76,7 @@
 **Kaava:** Reikä suurenee samassa suhteessa kuin muu kappale: Δd = α d₀ ΔT, josta ΔT = Δd / (α d₀)
 **Sijoitus:** Δd = 75,09 mm − 75,00 mm = 0,09 mm. ΔT = 0,09 mm / (12 · 10⁻⁶ 1/K · 75,00 mm) = 100 K. T = 20 °C + 100 K = 120 °C
 **Vastaus:** 120 °C
-**Järkevyys:** Lämmetessä kaikki pyörän mitat kasvavat kuin valokuvaa suurennettaessa, myös reiän halkaisija. Käytännössä pyörä lämmitetään hieman kuumemmaksi, jotta jää välys. Jäähtyessään reikä pyrkii takaisin 75,00 mm:iin, mutta akseli on tiellä, joten pyörä puristuu tiukasti kiinni.
+**Järkevyys:** Lämmetessä kaikki pyörän mitat kasvavat kuin valokuvaa suurennettaessa, myös reiän halkaisija. Käytännössä pyörä lämmitetään hieman kuumemmaksi, jotta reiän ja akselin väliin jää välys. Jäähtyessään reikä pyrkii takaisin 75,00 mm:iin, mutta akseli on tiellä, joten pyörä puristuu tiukasti kiinni.
 
 ## fy3-8-L3-02
 **Annettu:** L₀ = 50,0 mm, kupari α = 17 · 10⁻⁶ 1/K, teräs α = 12 · 10⁻⁶ 1/K, T₀ = 20 °C, T = 100 °C
@@ -92,4 +92,4 @@
 **Kaava:** ΔV = γ V₀ ΔT bensiinille ja kanisterille, kanisterille γ ≈ 3α
 **Sijoitus:** ΔT = 25 K. Bensiini: 0,95 · 10⁻³ 1/K · 20 000 cm³ · 25 K = 475 cm³. Kanisteri: 3 · 12 · 10⁻⁶ 1/K · 20 000 cm³ · 25 K = 18 cm³. Ero 475 cm³ − 18 cm³ = 457 cm³ ≈ 460 cm³
 **Vastaus:** 460 cm³
-**Järkevyys:** Kanisteri laajenee, mutta bensiinin γ on yli 25-kertainen teräkseen verrattuna, joten lähes puoli litraa ei mahdu. Siksi kanisteriin jätetään ilmatilaa.
+**Järkevyys:** Kanisteri laajenee, mutta bensiinin γ on yli 25 kertaa suurempi kuin teräksen γ, joten lähes puoli litraa ei mahdu. Siksi kanisteriin jätetään ilmatilaa.

@@ -1,5 +1,17 @@
 [
   {
+    "term": "Boylen laki",
+    "definition": "Kun suljetun kaasumäärän lämpötila pysyy vakiona, paineen ja tilavuuden tulo on vakio: p₁V₁ = p₂V₂. Paine on siis kääntäen verrannollinen tilavuuteen.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isoterminen",
+      "paine"
+    ],
+    "locked": false
+  },
+  {
     "term": "absoluuttinen nollapiste",
     "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
     "lessons": [
@@ -81,6 +93,42 @@
     "see_also": [
       "paine",
       "hydrostaattinen paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isobaarinen",
+    "definition": "Tilanmuutos, jossa kaasun paine pysyy vakiona. Suljetun kaasumäärän tilavuus on silloin suoraan verrannollinen kelvinlämpötilaan.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isokoorinen",
+      "tilanmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isokoorinen",
+    "definition": "Tilanmuutos, jossa kaasun tilavuus pysyy vakiona. Suljetun kaasumäärän paine on silloin suoraan verrannollinen kelvinlämpötilaan.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isobaarinen",
+      "tilanmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isoterminen",
+    "definition": "Tilanmuutos, jossa kaasun lämpötila pysyy vakiona. Suljetulle kaasumäärälle pätee silloin Boylen laki pV = vakio.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "Boylen laki",
+      "tilanmuutos"
     ],
     "locked": false
   },
@@ -428,6 +476,19 @@
     ],
     "see_also": [
       "massa"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilanmuutos",
+    "definition": "Kaasun tilan muutos, jossa sen paine, tilavuus tai lämpötila muuttuu. Tilanmuutoksia tutkitaan usein niin, että yksi suureista pidetään vakiona.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isoterminen",
+      "isobaarinen",
+      "isokoorinen"
     ],
     "locked": false
   },

@@ -9,9 +9,9 @@
 new p5((p) => {
   const P0 = 101, G = 9.81, H_MAX = 20;                       // air pressure (kPa), g (m/s²), deepest gauge position (m)
   const TANK = { x: 70, w: 160, top: 70, bottom: 370 };       // pool: 20 m over 300 px
-  const CH = { x0: 330, x1: 575, y0: 345, y1: 60 };           // chart area (axes at x0 and y0)
+  const CH = { x0: 330, x1: 575, y0: 335, y1: 60 };           // chart area (axes at x0 and y0); h-axis title below the ticks
   const LIQUIDS = { 720: 'bensiini', 1000: 'vesi', 1025: 'merivesi', 1240: 'Kuolleenmeren vesi' };
-  let sH, lH, sR, lR, cb, readout;
+  let sH, lH, sR, lR, cb, readout, k = 1;                     // k: canvas units per screen px for text (set each frame)
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -53,8 +53,9 @@ new p5((p) => {
                  `<br>Kuvaajan asteikko 0–${pMax} kPa, kulmakerroin ρg = ${fi(slope, 2)} kPa/m.`);
     window.simState = { h, rho, pOver, pTotal, ratio, overOnly, p0: P0, g: G, slope, chartBase: base, chartValue: base + pOver, pMax };
 
-    const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
+    k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k);
+    const boxes = {};                                          // ink box [left, right, top, bottom] of every canvas text
     p.background(250);
 
     // pool: air above, liquid below (darker for denser liquid), depth scale on the left
@@ -64,9 +65,8 @@ new p5((p) => {
     p.stroke(255); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]); p.noFill(); p.rect(gx - 18, TANK.top, 36, gy - TANK.top); p.drawingContext.setLineDash([]);
     p.stroke(60); p.strokeWeight(3); p.line(TANK.x, TANK.top - 30, TANK.x, TANK.bottom); p.line(TANK.x, TANK.bottom, TANK.x + TANK.w, TANK.bottom); p.line(TANK.x + TANK.w, TANK.bottom, TANK.x + TANK.w, TANK.top - 30);
     p.stroke(30, 80, 160); p.strokeWeight(2); p.line(TANK.x, TANK.top, TANK.x + TANK.w, TANK.top);   // surface
-    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.textAlign(p.LEFT); p.text('ilma, p₀ = 101 kPa', 12, TANK.top - 40);
-    p.textAlign(p.RIGHT); p.textSize(ts(11));
-    for (let d = 0; d <= H_MAX; d += 5) { const y = TANK.top + d * PXM; p.stroke(60); p.strokeWeight(1.5); p.line(TANK.x - 6, y, TANK.x, y); p.noStroke(); p.text(`${d} m`, TANK.x - 9, y + ts(4)); }
+    say(boxes, 'air', 'ilma, p₀ = 101 kPa', ts(12), 60, 12, TANK.top - 40);
+    for (let d = 0; d <= H_MAX; d += 5) { const y = TANK.top + d * PXM; p.stroke(60); p.strokeWeight(1.5); p.line(TANK.x - 6, y, TANK.x, y); say(boxes, `depth${d}`, `${d} m`, ts(11), 60, TANK.x - 9, y + ts(4), 'r'); }
 
     // gauge on a cable; arrows from four sides, length grows with the total pressure (pressure acts in every direction)
     p.stroke(80); p.strokeWeight(1.5); p.line(gx, TANK.top - 30, gx, gy - 10);
@@ -79,51 +79,86 @@ new p5((p) => {
       p.triangle(ex, ey, ex + dx * 6 - dy * 4, ey + dy * 6 - dx * 4, ex + dx * 6 + dy * 4, ey + dy * 6 + dx * 4);
     }
     p.stroke(40); p.strokeWeight(2); p.fill(240); p.circle(gx, gy, 20);
-    // depth bracket on the right of the pool
+    // depth bracket on the right of the pool; its "h" only when the bracket is long enough to carry it
     const bx = TANK.x + TANK.w + 12;
     p.stroke(60); p.strokeWeight(1.5); p.line(bx, TANK.top, bx, gy); p.line(bx - 4, TANK.top, bx + 4, TANK.top); p.line(bx - 4, gy, bx + 4, gy);
-    p.noStroke(); p.fill(60); p.textAlign(p.LEFT); p.textSize(ts(13)); p.text('h', bx + 6, (TANK.top + gy) / 2 + ts(5));
+    if (h >= 2) say(boxes, 'bracket', 'h', ts(13), 60, bx + 6, (TANK.top + gy) / 2 + ts(5));
 
     // (h, p) chart scaled to the line shown; p₀ marked as a dashed line when the constant term is included
     const X = (hh) => CH.x0 + (CH.x1 - CH.x0) * hh / H_MAX, Y = (pp) => CH.y0 - (CH.y0 - CH.y1) * pp / pMax;
+    const px = X(h), py = Y(base + pOver), y0 = Y(P0);
+    const line = [X(0), Y(base), X(H_MAX), Y(base + slope * H_MAX)];
+    const rise = (Y(base) - Y(base + slope)) / (X(1) - X(0));  // canvas units the line rises per unit to the right
     p.stroke(225); p.strokeWeight(1);
     for (let v = step; v <= pMax; v += step) p.line(CH.x0, Y(v), CH.x1, Y(v));
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 5);
-    p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    for (let v = 0; v <= pMax; v += step) p.text(`${v}`, CH.x0 - 6, Y(v) + ts(4));
-    p.textAlign(p.CENTER);
-    for (let d = 0; d <= H_MAX; d += 5) p.text(`${d}`, X(d), CH.y0 + ts(16));
-    p.textAlign(p.RIGHT); p.text('h (m)', CH.x1 - 8, CH.y0 - 8);                // a few px left of the h = 20 m guide line
-    p.textAlign(p.LEFT); p.textSize(ts(12)); p.text(overOnly ? 'ylipaine ρgh (kPa)' : 'paine p (kPa)', CH.x0 - 26, CH.y1 - ts(14));
-    // current gauge reading: its label goes above-left of the rising line, or below-right near h = 0; below-right it
-    // sits under the dashed p₀ line but never under the h axis (its tick labels): there the baseline stays above the
-    // axis and the label moves right until the rising line clears its top edge
-    const px = X(h), py = Y(base + pOver), txt = `${fi(base + pOver, 0)} kPa`;
-    const up = h > 4;
-    p.textSize(ts(12));
-    let lx, ly;
-    if (up) { lx = px - 10; ly = Math.max(CH.y1 + ts(12), py - 10); }
-    else {
-      ly = Math.min(Y(base) + ts(16), CH.y0 - 6);                 // under the line's starting level (p₀ or 0), so no line crosses it
-      const rise = (CH.y0 - CH.y1) / pMax * slope / ((CH.x1 - CH.x0) / H_MAX);   // px the line rises per px to the right
-      lx = px + Math.max(10, (py - ly + ts(12) + 4) / rise);
-    }
-    const lw = p.textWidth(txt), box = up ? [lx - lw, lx, ly - ts(12), ly + 3] : [lx, lx + lw, ly - ts(12), ly + 3];
-    if (!overOnly) {
-      p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(CH.x0, Y(P0), CH.x1, Y(P0)); p.drawingContext.setLineDash([]);
-      // p₀ label on the dashed line, clear of the reading and of the red guide lines: at the right end (below the line,
-      // else above it, else one line higher) while the gauge is shallow, at the left end below the line when it is deep
-      p.noStroke(); p.fill(90); p.textSize(ts(11));
-      const t0 = 'p₀ = 101 kPa', w0 = p.textWidth(t0);
-      const spots = h <= 10 ? [[CH.x1 - 4 - w0, Y(P0) + ts(16)], [CH.x1 - 4 - w0, Y(P0) - 6], [CH.x1 - 4 - w0, Y(P0) - 6 - ts(14)]] : [[CH.x0 + 6, Y(P0) + ts(16)]];
-      const free = ([x, y]) => x + w0 + 12 < box[0] || x > box[1] + 12 || y + 3 < box[2] || y - ts(11) > box[3];   // 12 px gap
-      const [x0, y0] = spots.find(free) || spots[spots.length - 1];
-      p.textAlign(p.LEFT); p.text(t0, x0, y0);
-    }
-    p.stroke(30, 80, 160); p.strokeWeight(3); p.line(X(0), Y(base), X(H_MAX), Y(base + slope * H_MAX));
+    if (!overOnly) { p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(CH.x0, y0, CH.x1, y0); p.drawingContext.setLineDash([]); }
+    p.stroke(30, 80, 160); p.strokeWeight(3); p.line(...line);
     p.stroke(200, 40, 40); p.strokeWeight(1.5); p.drawingContext.setLineDash([4, 4]); p.line(px, py, px, CH.y0); p.line(CH.x0, py, px, py); p.drawingContext.setLineDash([]);
     p.noStroke(); p.fill(200, 40, 40); p.circle(px, py, 12);
-    p.textSize(ts(12)); p.textAlign(up ? p.RIGHT : p.LEFT); p.text(txt, lx, ly);
+
+    // axis text; the h-axis title sits under the tick labels, so the vertical guide (it ends at the axis) never reaches it
+    for (let v = 0; v <= pMax; v += step) say(boxes, `p${v}`, `${v}`, ts(11), 60, CH.x0 - 6, Y(v) + ts(4), 'r');
+    for (let d = 0; d <= H_MAX; d += 5) say(boxes, `h${d}`, `${d}`, ts(11), 60, X(d), CH.y0 + ts(14), 'c');
+    const mt = meas('h (m)', ts(11));
+    say(boxes, 'hTitle', 'h (m)', ts(11), 60, 596, boxes.h20[3] + 3 + mt.a, 'r');
+    say(boxes, 'pTitle', overOnly ? 'ylipaine ρgh (kPa)' : 'paine p (kPa)', ts(12), 60, CH.x0 - 26, CH.y1 - ts(14));
+
+    // labels inside the chart: each takes the first candidate box that lies in the chart area and clears every
+    // obstacle (other text, the dashed lines as thin boxes, the dot, the blue line); text gets a halo as well
+    const AREA = [CH.x0 + 3, 598, 2, CH.y0 - 3], PAD = 3;
+    const hit = (a, b) => a[0] < b[1] + PAD && b[0] < a[1] + PAD && a[2] < b[3] + PAD && b[2] < a[3] + PAD;
+    const obstacles = { vGuide: [px - 1, px + 1, py, CH.y0], hGuide: [CH.x0, px, py - 1, py + 1], dot: [px - 7, px + 7, py - 7, py + 7] };
+    if (!overOnly) obstacles.p0line = [CH.x0, CH.x1, y0 - 1, y0 + 1];
+    const free = (b, skip = []) => b[0] >= AREA[0] && b[1] <= AREA[1] && b[2] >= AREA[2] && b[3] <= AREA[3] &&
+      !segHit(b, line, 2 + PAD) && !Object.entries({ ...boxes, ...obstacles }).some(([n, o]) => !skip.includes(n) && hit(b, o));
+    const place = (name, t, size, col, cands, skip) => {     // cands: functions (w, ht) -> box; returns false when none is free
+      const m = meas(t, size), w = m.l + m.r, ht = m.a + m.d;
+      const b = cands.map((c) => c(w, ht)).find((bb) => free(bb, skip));
+      if (b) say(boxes, name, t, size, col, b[0] + m.l, b[3] - m.d);
+      return !!b;
+    };
+    // p₀ label next to the dashed line: below it at the right end, then the left end, then above; the short form "p₀"
+    // when the vertical guide blocks every spot of the long one
+    if (!overOnly) {
+      const ends = [(w, ht) => [CH.x1 - w, CH.x1, y0 + 4, y0 + 4 + ht], (w, ht) => [CH.x0 + 6, CH.x0 + 6 + w, y0 + 4, y0 + 4 + ht],
+                    (w, ht) => [CH.x1 - w, CH.x1, y0 - 4 - ht, y0 - 4], (w, ht) => [CH.x0 + 6, CH.x0 + 6 + w, y0 - 4 - ht, y0 - 4]];
+      place('p0', 'p₀ = 101 kPa', ts(11), 90, ends, ['p0line']) || place('p0', 'p₀', ts(11), 90, ends, ['p0line']);
+    }
+    // gauge reading next to the point: above-left, above-right, below-right, below-left, right beyond the rising line
+    // (kept above the h axis), then down the left side of the chart
+    const g = 8, txt = `${fi(base + pOver, 0)} kPa`;
+    const cands = [(w, ht) => [px - g - w, px - g, py - g - ht, py - g], (w, ht) => [px + g, px + g + w, py - g - ht, py - g],
+      (w, ht) => [px + g, px + g + w, py + g, py + g + ht], (w, ht) => [px - g - w, px - g, py + g, py + g + ht],
+      (w, ht) => { const bot = Math.min(py + g + ht, CH.y0 - 4), x = px + Math.max(g, (py - bot + ht + 2 + PAD + 3) / rise); return [x, x + w, bot - ht, bot]; }];
+    for (let top = CH.y1; top < CH.y0; top += 8) cands.push((w, ht) => [CH.x0 + 8, CH.x0 + 8 + w, top, top + ht]);
+    const placed = place('reading', txt, ts(12), [200, 40, 40], cands, []);
+    if (!placed) { const m = meas(txt, ts(12)); say(boxes, 'reading', txt, ts(12), [200, 40, 40], px + g, py - g); }
+    window.simDebug = { boxes, obstacles, line, area: AREA, readingPlaced: placed, k };
+  };
+
+  // text with a 3-px halo in the background colour (drawn under the fill) and its ink box recorded in boxes[name]
+  const meas = (t, size) => {
+    p.textSize(size); p.textAlign(p.LEFT, p.BASELINE);
+    const m = p.drawingContext.measureText(t);
+    return { w: m.width, l: m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, a: m.actualBoundingBoxAscent, d: m.actualBoundingBoxDescent };
+  };
+  const say = (boxes, name, t, size, col, x, y, align = 'l') => {
+    const m = meas(t, size), lx = align === 'r' ? x - m.w : align === 'c' ? x - m.w / 2 : x;
+    p.push(); p.fill(...[].concat(col));
+    p.stroke(250); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND);
+    p.text(t, lx, y); p.noStroke(); p.text(t, lx, y); p.pop();
+    boxes[name] = [lx - m.l, lx + m.r, y - m.a, y + m.d];
+  };
+  // does the segment [x1, y1, x2, y2] pass through box b grown by pad? (Liang–Barsky clipping)
+  const segHit = (b, [x1, y1, x2, y2], pad) => {
+    let t0 = 0, t1 = 1; const dx = x2 - x1, dy = y2 - y1;
+    for (const [q, r] of [[-dx, x1 - (b[0] - pad)], [dx, b[1] + pad - x1], [-dy, y1 - (b[2] - pad)], [dy, b[3] + pad - y1]]) {
+      if (q === 0) { if (r < 0) return false; continue; }
+      const t = r / q;
+      if (q < 0) { if (t > t1) return false; t0 = Math.max(t0, t); } else { if (t < t0) return false; t1 = Math.min(t1, t); }
+    }
+    return true;
   };
 
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
