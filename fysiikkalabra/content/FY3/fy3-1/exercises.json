@@ -11,9 +11,9 @@
     {
       "id": "fy3-1-L1-02",
       "level": 1,
-      "text": "Kivinäytteen massa on 5,0 kg. Mikä on sen paino Kuussa, missä g = 1,62 N/kg?",
-      "answer": 8.1,
-      "unit": "N",
+      "text": "Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan 4,0 N:n paino. Kuinka monta senttimetriä jousi venyy 12 N:n painolla?",
+      "answer": 6.0,
+      "unit": "cm",
       "tolerance": 0.02
     },
     {

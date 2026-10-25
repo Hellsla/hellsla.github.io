@@ -4,8 +4,8 @@
     "a": "Massa pysyy 3,0 kg:na. Paino pienenee Maan 29 N:sta Kuun 4,9 N:iin, eli noin kuudesosaan."
   },
   {
-    "q": "Voimamittarin jousi venyy 2,0 cm, kun siihen vaikuttaa 5,0 N:n voima. Kuinka paljon jousi venyy 15 N:n voimalla?",
-    "a": "6,0 cm. Venymä on suoraan verrannollinen voimaan, ja voima kolminkertaistuu."
+    "q": "Voimamittarin jousi venyy 3,0 cm, kun siihen vaikuttaa 8,0 N:n voima. Kuinka paljon jousi venyy 20 N:n voimalla?",
+    "a": "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: 2,5 · 3,0 cm = 7,5 cm."
   },
   {
     "q": "Miksi lause ”painan 70 kiloa” on fysiikan kannalta epätarkka?",

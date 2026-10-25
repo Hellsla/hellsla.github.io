@@ -1,5 +1,5 @@
 VERDICT: FAIL
-CONTENT-HASH: fc5375c46d696bd5
+CONTENT-HASH: 8fb367b0d6fd83e0
 
 Gate for fy3-1 on 2026-10-25.
 
@@ -8,10 +8,10 @@ Reviewers required: tester, physics-expert, mathematician, educator, proofreader
 Checks run: skipped
 
 Problems:
-1. tester: verdict is not PASS (VERDICT: FAIL)
+1. tester: report is for an older version of the lesson (hash fc5375c46d696bd5, lesson 8fb367b0d6fd83e0)
 2. physics-expert: verdict is not PASS (VERDICT: FAIL)
-3. mathematician: report is for an older version of the lesson (hash da9ba5eb24ac7a54, lesson fc5375c46d696bd5)
-4. educator: report is for an older version of the lesson (hash 28956a3df07f9f05, lesson fc5375c46d696bd5)
-5. proofreader: report is for an older version of the lesson (hash 28956a3df07f9f05, lesson fc5375c46d696bd5)
-6. editor: verdict is not PASS (VERDICT: FAIL)
-7. web-designer: report is for an older version of the lesson (hash 28956a3df07f9f05, lesson fc5375c46d696bd5)
+3. mathematician: report is for an older version of the lesson (hash fc5375c46d696bd5, lesson 8fb367b0d6fd83e0)
+4. educator: report is for an older version of the lesson (hash fc5375c46d696bd5, lesson 8fb367b0d6fd83e0)
+5. proofreader: report is for an older version of the lesson (hash fc5375c46d696bd5, lesson 8fb367b0d6fd83e0)
+6. editor: report is for an older version of the lesson (hash fc5375c46d696bd5, lesson 8fb367b0d6fd83e0)
+7. web-designer: report is for an older version of the lesson (hash fc5375c46d696bd5, lesson 8fb367b0d6fd83e0)

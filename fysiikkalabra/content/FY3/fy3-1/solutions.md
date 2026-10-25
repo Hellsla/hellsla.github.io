@@ -7,12 +7,12 @@
 **Järkevyys:** Yksi kilogramma painaa noin 10 N, joten 4 kg painaa noin 40 N.
 
 ## fy3-1-L1-02
-**Annettu:** m = 5,0 kg, g = 1,62 N/kg
-**Kysytty:** G
-**Kaava:** G = m g
-**Sijoitus:** G = 5,0 kg · 1,62 N/kg = 8,1 N
-**Vastaus:** 8,1 N
-**Järkevyys:** Maassa sama näyte painaisi noin 49 N, joten Kuussa paino on noin kuudesosa.
+**Annettu:** 4,0 N → 2,0 cm, kysytty venymä painolla 12 N
+**Kysytty:** venymä x
+**Kaava:** venymä on suoraan verrannollinen voimaan, x / 2,0 cm = 12 N / 4,0 N
+**Sijoitus:** x = 2,0 cm · 12 N / 4,0 N = 6,0 cm
+**Vastaus:** 6,0 cm
+**Järkevyys:** Paino on kolminkertainen, joten venymäkin on kolminkertainen.
 
 ## fy3-1-L1-03
 **Annettu:** m = 30 kg, g_Kuu = 1,62 N/kg (luettu oppitunnin taulukosta)
