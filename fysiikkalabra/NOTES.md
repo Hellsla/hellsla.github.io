@@ -44,7 +44,13 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
 - **Figures.** At least one inline SVG in `## Ydinajatus` and one in `## Kaava`, right after the paragraph it
   explains: the micro model, a setup sketch, a graph of the formula, an energy-flow diagram, a before/after.
   House style `viewBox="0 0 600 300"`, `currentColor` strokes and fills, text 24 px or more (about 13 px on a
-  360 px phone), an `aria-label` saying what the figure shows, no overlapping labels. A figure drawn to scale is to
+  360 px phone), an `aria-label` saying what the figure shows, no overlapping labels.
+- **Formulas and symbols in figures are LaTeX** (human decision 2026-10-25): a label that carries a formula, a
+  symbol with a subscript or a unit goes in `<foreignObject x y width height><div xmlns="http://www.w3.org/1999/xhtml"
+  class="fig-tex">$p V = n R T$</div></foreignObject>`; KaTeX renders it on the page and it scales with the
+  figure. Plain words stay in `<text>`. Give the box room (height ≥ 1,6 × font size, width for the widest
+  rendering); `check_layout.py` treats the box like a text label (no overlap, inside the figure), and
+  `check_latex.py` parses the formula. A figure drawn to scale is to
   scale; a schematic one says so. No paragraph over about 120 words.
 - **Symbolic first.** Worked example and every solution: name the unknown, write the formula, solve it with
   symbols, substitute values with units, compute and round, check. In `solutions.md` the **Kaava:** line ends with
@@ -65,6 +71,12 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
 - p5.js instance mode, a 600×400 canvas inside `#sim-root`, `window.simState` updated every frame.
   `templates/sim-embed.js` resizes and scales the canvas, pauses it off-screen, lowers the frame rate under
   `prefers-reduced-motion` and sets the page font; sims never handle resizing themselves.
+- Every animated simulation has a **speed control** (a `select` "Nopeus": hidas · normaali · nopea, default so that a
+  student can follow the motion with the eye; the physics advances by simulated time `dt·speed`, and every
+  measurement is taken per simulated time, so slowing down changes nothing but the pace). **The canvas carries only
+  labels and values**; the explanation of the model, its assumptions and how to read the picture goes under the
+  canvas behind a `<details><summary>Lisätietoja</summary>…</details>`, with at most one short legend line visible.
+  (Human decision 2026-10-25, after fy3-10.)
 - Create `div.controls` before `div.readout`, main button first, so canvas and button fit one phone screen (an
   off-screen canvas is paused, so a button below the fold starts an animation nobody sees). Clamp the animation
   step (`Math.min(p.deltaTime, 100)`) so a resume cannot skip ahead. The readout is DOM text, tap targets 40 px.

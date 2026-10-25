@@ -33,7 +33,7 @@ JS = """() => {
   for (const s of document.querySelectorAll('main svg')) {
     const r = s.getBoundingClientRect();
     if (r.right > document.documentElement.clientWidth + 1) out.push({what: 'svg', over: Math.round(r.right - document.documentElement.clientWidth), text: s.getAttribute('aria-label') || ''});
-    const T = [...s.querySelectorAll('text')].map((t) => ({t: t.textContent.trim(), b: t.getBoundingClientRect()})).filter((x) => x.t);
+    const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
     for (const x of T) if (x.b.left < r.left - 1 || x.b.right > r.right + 1 || x.b.top < r.top - 1 || x.b.bottom > r.bottom + 1)
       out.push({what: 'svg-text', over: Math.round(Math.max(r.left - x.b.left, x.b.right - r.right, r.top - x.b.top, x.b.bottom - r.bottom)), text: `"${x.t}" leaves the figure`});
     for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) { const a = T[i].b, b = T[j].b;
