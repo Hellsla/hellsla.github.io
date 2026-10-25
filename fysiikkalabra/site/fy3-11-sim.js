@@ -19,7 +19,7 @@ new p5((p) => {
   const MODES = {
     lauhdevoimalaitos: { unit: 'MW', P: [100, 2000, 10, 1000], eta: 40, use: 'sähkö' },
     yhteistuotanto: { text: 'yhteistuotantovoimalaitos', unit: 'MW', P: [100, 2000, 10, 1000], eta: 30, heat: 55, use: 'sähkö' },
-    automoottori: { unit: 'kW', P: [10, 200, 1, 60], eta: 30, use: 'mekaaninen teho' },
+    automoottori: { unit: 'kW', P: [10, 200, 1, 60], eta: 30, etaMax: 45, use: 'mekaaninen teho' },   // a car engine stays under ~45 %
     ilmalämpöpumppu: { unit: 'kW', P: [0.5, 5, 0.1, 1], cop: 3 } };
   let sel, sP, lP, sE, lE, sH, lH, sC, lC, sV, readout, more, mode = '', last = 'eta', t = 0, k = 1, boxes = {}, labels = [];
 
@@ -30,7 +30,7 @@ new p5((p) => {
   const preset = () => {                                               // a new situation gets its typical values
     mode = sel.value(); last = 'eta';
     const m = MODES[mode], [a, b, st, v] = m.P; sP.elt.min = a; sP.elt.max = b; sP.elt.step = st; sP.value(v);
-    if (m.eta) sE.value(m.eta); sH.value(m.heat || 0); if (m.cop) sC.value(m.cop);
+    sE.elt.max = m.etaMax || 60; if (m.eta) sE.value(m.eta); sH.value(m.heat || 0); if (m.cop) sC.value(m.cop);
   };
 
   p.setup = () => {
@@ -69,10 +69,10 @@ new p5((p) => {
       S = { Pin: null, eta: null, heatShare: null, Puse: null, Pheat: null, Pwaste: null, etaTotal: null, Pel: P, cop, Pout, Pambient: Pamb, sumIn: P + Pamb, sumOut: Pout };
       ins = [['sähkö', P, COL.el], ['ulkoilman lämpö', Pamb, COL.amb]]; outs = [['lämpö sisälle', Pout, COL.inside]];
       lP.html(`Sähköteho = ${fi(P, 1)} kW`); lC.html(`Lämpökerroin = ${fi(cop, 1)}`);
-      lines = [`Sähköteho ${n(P)}, lämpökerroin ${fi(cop, 1)}`,
-        `Lämpö sisälle = lämpökerroin · sähköteho = ${fi(cop, 1)} · ${n(P)} = <strong>${n(Pout)}</strong>`,
-        `Lämpö ulkoilmasta = ${n(Pout)} − ${n(P)} = <strong>${n(Pamb)}</strong>`,
-        `Energia säilyy: sisään ${n(P)} + ${n(Pamb)} = ${n(P + Pamb)} = ulos ${n(Pout)}`];
+      lines = [`Sähkö ${n(P)}, lämpökerroin ${fi(cop, 1)}`,                // at most four short lines (360 px)
+        `Sisälle ${fi(cop, 1)} · ${n(P)} = <strong>${n(Pout)}</strong>`,
+        `Ulkoilmasta ${fs(Pout)} − ${fs(P)} = <strong>${n(Pamb)}</strong>`,
+        `Energia säilyy: ${fs(P)} + ${fs(Pamb)} = ${n(Pout)}`];
     } else {
       const Puse = eta / 100 * P, Pheat = h / 100 * P, Pwaste = P - Puse - Pheat;   // energy conserved: the rest is waste heat
       S = { Pin: P, eta, heatShare: h, Puse, Pheat, Pwaste, etaTotal: eta + h, Pel: null, cop: null, Pout: null, Pambient: null, sumIn: P, sumOut: Puse + Pheat + Pwaste };
@@ -80,11 +80,12 @@ new p5((p) => {
       outs = [[m.use, Puse, COL.el], ...(chp ? [['kaukolämpö', Pheat, COL.dh]] : []), ['hukkalämpö', Pwaste, COL.waste]];
       lP.html(`Polttoaineen teho = ${fi(P, 0)} ${u}`); lE.html(`${chp ? 'Sähkön osuus, hyötysuhde' : 'Hyötysuhde'} η = ${pc(eta)}`);
       lH.html(`Kaukolämmön osuus = ${pc(h)}`);
-      lines = [`Polttoaineen teho ${n(P)}`,
-        `${m.use[0].toUpperCase() + m.use.slice(1)} ${n(Puse)}${chp ? `, kaukolämpö ${n(Pheat)}` : ''}, hukkalämpö ${n(Pwaste)}`,
-        `Energia säilyy: sisään ${n(P)} = ulos ${outs.map((f) => n(f[1])).join(' + ')} = ${n(S.sumOut)}`,
-        chp ? `Sähkön hyötysuhde ${pc(eta)}, kokonaishyötysuhde (${n(Puse)} + ${n(Pheat)}) / ${n(P)} = <strong>${pc(eta + h)}</strong>`
-          : `Hyötysuhde η = ${n(Puse)} / ${n(P)} = <strong>${pc(eta)}</strong>`];
+      const Use = m.use[0].toUpperCase() + m.use.slice(1);              // at most four short lines (360 px)
+      lines = [chp ? `${Use} ${fs(Puse)}, kaukolämpö ${n(Pheat)}` : `${Use} ${n(Puse)}`,
+        `Hukkalämpö ${n(Pwaste)}`,
+        `Sisään ${fs(P)} = ${outs.map((f) => fs(f[1])).join(' + ')} ${u}`,
+        chp ? `η<sub>kok</sub> = (${fs(Puse)} + ${fs(Pheat)}) / ${fs(P)} = <strong>${pc(eta + h)}</strong>`
+          : `η = ${fs(Puse)} / ${fs(P)} = <strong>${pc(eta)}</strong>`];
     }
 
     // layout: header (scale key + legend, wrapped into rows), then the widest W for which every slot fits
