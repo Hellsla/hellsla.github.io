@@ -116,7 +116,7 @@ new p5((p) => {
       p.noStroke(); p.fill(90); p.textSize(ts(11));
       const t0 = 'p₀ = 101 kPa', w0 = p.textWidth(t0);
       const spots = h <= 10 ? [[CH.x1 - 4 - w0, Y(P0) + ts(16)], [CH.x1 - 4 - w0, Y(P0) - 6], [CH.x1 - 4 - w0, Y(P0) - 6 - ts(14)]] : [[CH.x0 + 6, Y(P0) + ts(16)]];
-      const free = ([x, y]) => x + w0 < box[0] || x > box[1] || y + 3 < box[2] || y - ts(11) > box[3];
+      const free = ([x, y]) => x + w0 + 12 < box[0] || x > box[1] + 12 || y + 3 < box[2] || y - ts(11) > box[3];   // 12 px gap
       const [x0, y0] = spots.find(free) || spots[spots.length - 1];
       p.textAlign(p.LEFT); p.text(t0, x0, y0);
     }
