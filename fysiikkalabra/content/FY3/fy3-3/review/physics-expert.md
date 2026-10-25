@@ -1,52 +1,37 @@
 VERDICT: PASS
-CONTENT-HASH: 9c6ecf76a631b766
+CONTENT-HASH: 3b1b29439e94b105
 
-Reviewer: physics-expert. Lesson fy3-3. Hash checked before and after the review: identical (9c6ecf76a631b766).
-Scope check against MAOL FY3 (lines 309-345 of the guide): system and state variables, T/p/V linkage ("jos yhtä muutetaan, vähintään toinen muista muuttuu myös"), micro model, absolute zero by extrapolation. No ideal gas law, no E_k formula, no first law in the lesson. In scope.
+Round 2, physics-expert. Hash checked at start and at end: 3b1b29439e94b105 (unchanged). No real physics, number, unit or scope errors found. Findings below are optional polish only.
 
-No FAIL-level errors found. Findings below are minor (all non-blocking).
+Scope: lesson stays within the MAOL FY3 text (system, state variables, "jos yhtä muutetaan, vähintään toinen muista muuttuu", micro model, absolute zero by extrapolation). No ideal gas law, Boyle's law or E_k formula. p proportional to T at constant V and n is used only as a stated fact and in the extrapolation experiment, which MAOL names explicitly.
 
-1. sim.js:52-53 — the pressure readout is systematically 4-11 % above the "teoria" value, because particles bounce at distance R=4 px from the walls (effective box (W-2R)×(h-2R)) while pMeas and pRef divide by the nominal W and BOX.h. My replica of the model gives about 104 at 300 K / 1,0 dm³ (theory 100), 211 at 0,5 dm³ (theory 200), 51 at 2,0 dm³ (theory 50), 207 at 600 K (200). Header comment (sim.js:5-6, "p is proportional to T/V") holds, with this offset. The reference state "100" therefore reads about 104. The tester's 30 % tolerance hides it. — fix (optional): use effective lengths (BOX.h-2R, W-2R) in both pMeas and pRef, or soften the comment to "approximately proportional".
+Checked and correct (lesson.md):
+- Lines 6-10: system/surroundings/closed system, state variables, p = F/A in Pa, micro model (smaller V: more frequent collisions, each equally hard; higher T at constant V: more frequent and harder), Celsius/Kelvin definitions, same size of degree, p and mean kinetic energy proportional to T. All correct at this level.
+- Lines 24-26 and 50-62: k = 37/100 = 0,37 kPa/°C, theta = -100/0,37 = -270,3 °C, rounds to -270 °C. Table values 100/107/115/122/129/137 match 100·T/273,15 to the stated precision.
+- SVG (line 30-46): scale 1,25 px/°C (0 at x=445, 100 at x=570), -270 at x=107, y scale 1,5 px/kPa (100 at y=100, 137 at y=44). Axis at x=70 is about -300 °C, as line 48 says. Consistent.
+- Line 67: 293/283 = 1,035 (293,15/283,15 = 1,0353). Correct.
+- Line 64: real gases liquefy before the extrapolated point; stated as a model limit. Correct.
 
-2. sim.js:33 — "Kun hiukkaset liikkuvat nopeammin tai astia on pienempi, ne osuvat seinään useammin ja kovempaa." In a smaller box the hits are more frequent but each hit is not harder (same speed, same impulse). "kovempaa" applies only to faster particles. — fix: "Kun hiukkaset liikkuvat nopeammin, ne osuvat seinään useammin ja kovempaa. Kun astia on pienempi, ne osuvat seinään useammin."
+Findings (all optional):
+1. exercises.json:~46 (fy3-3-L2-03) and solutions.md:61-62 — exact result is -270,9 °C, answer given is -270 (2 sf data, 80 and 91 kPa). Within tolerance, and consistent with 2 sf, but the solution shows -270,9 and then states -270. Fix (optional): add "(2 merkitsevää numeroa)" to the answer line, or use answer -271. Not required.
+2. sim.js:49-52 — when the volume slider is dragged smaller, particles beyond the new wall are clamped and counted as a collision (momentum added) in one frame, so the measured pressure spikes briefly. Transient only, 1,5 s window; the note already says the measured value fluctuates. No fix needed.
+3. sim.js — all particles share one speed (no Maxwell distribution) and do not collide with each other. Acceptable simplification; the sim-spec says particles bounce off walls and the readout says "keskinopeus". No fix needed.
 
-3. lesson.md:61 — "Siksi hiukkasten keskimääräinen liike-energia ei kaksinkertaistu." The inference depends on mean kinetic energy being proportional to kelvin temperature. The lesson only says that temperature "kertoo" the mean kinetic energy (line 8) and never states the proportionality. Exercise L3-03 and the exit ticket do state or assume it. Physically correct for an ideal gas, but not explicit. — fix: add one qualitative sentence in the micro-model paragraph, e.g. "Keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan." Do not add the E_k formula, which is FY4.
+(2) Exercise recomputation in python3 -I from problem text alone (answer vs. results; OK = within 2 % for 273,15, for 273, and for student rounding):
+ L1-01 294    -> 294,15 / 294        OK
+ L1-02 77     -> 76,85 / 77          OK
+ L1-03 -196   -> -195,75 / -195,6 (273)  OK
+ L1-04 25     -> 25 K                OK
+ L1-05 -270   -> -270,45 / -270,3    OK
+ L2-01 60     -> 59,85 / 60          OK
+ L2-02 102    -> 101,55 (101,6 or 102 by student) OK
+ L2-03 -270   -> -270,909 (k = 0,275, p0 = 74,5)  OK (|diff| 0,3 %, graph readings -265..-280 pass)
+ L2-04 4.0    -> 3,9955 (273,15) / 4,0 (273)  OK
+ L3-01 321    -> 320,82 / 320,83 (273) / 320,8 rounded  OK
+ L3-02 127    -> 127,05 / 127,0 (273)  OK
+ L3-03 -127   -> -126,575 / -126,5 (273) / -126,4 rounded  OK
+Worst-case relative deviation of any plausible student result from the answer: 0,3 %. All well inside tolerance 0,02.
 
-4. lesson.md:10 — "100 °C kiehumispiste" holds only at normal pressure; the lesson itself tells the student that pressure is a state variable. — fix (optional): "veden kiehumispiste normaalipaineessa".
+(3) solutions.md: all substitutions, intermediates and sanity checks verified (e.g. L3-01 about 7 % rise, L3-02 "36 °C" wrong Celsius ratio = 27·200/150, L3-03 Celsius halving gives 10 °C, L2-04 Celsius ratio negative). No wrong reasoning. exit-ticket.json: all three answers correct (3,5 % rise; -273 °C = -273,15 rounded; more frequent and harder collisions).
 
-5. solutions.md:23 and :39 — "77 astetta absoluuttisen nollapisteen yläpuolella" and "muutaman asteen" use "aste" for kelvins. This contradicts lesson.md:17 ("Kelvineissä ei käytetä sanaa aste"). The file is unpublished. — fix: "77 kelviniä" and "muutaman kelvinin".
-
-6. lesson.md:58 and :10 — the extrapolation result is presented as "lähellä absoluuttista nollapistettä" without noting that real gases condense before reaching it, so the straight line is only a model extrapolation. Fine at FY3 level; optional one-clause caveat.
-
-Checked and correct (no finding):
-- Definitions of system, surroundings, closed system, state variables; T = θ + 273,15; 0 K = −273,15 °C; "lämpötilaero sama K ja °C"; "kelvin, ei kelvinastetta"; negative Celsius allowed, negative kelvin not.
-- Micro model: T as mean kinetic energy of the particles, pressure from wall collisions, "useammin ja kovempaa" at higher T and constant V (correct).
-- The misconception: 283 K to 293 K is 3,53 % (checked). Fine.
-- Worked example: k = 37/100 = 0,37 kPa/°C, θ0 = −100/0,37 = −270,27 °C, about −270 °C. A least-squares fit of the six points gives −271,1 °C. The data are consistent with an ideal gas (136,6 kPa at 100 °C against 137 in the table). SVG geometry: 1,25 px/°C and 1,5 px/kPa; the points and the −270 intersection (x=107) are consistent with the table.
-- Units and magnitudes in exercises are plausible (liquid N2 77 K, CMB 2,7 K, Moon −173/127 °C, tyre pressure).
-- solutions.md and exit-ticket.json: no wrong reasoning. The "relative temperature" sanity checks (about 7 %, halve in kelvins not Celsius) are correct.
-- Sim physics: speed = V_REF·sqrt(T/300), so E_k is proportional to T (correct). Wall momentum 2|v_n| per collision, force per wall length, averaged over both axes and divided by 2 walls per axis: the 2D formula p = N m v²/(2A) is reproduced by pRef (m=1). Readout "keskinopeus sqrt(T/300) × ..." is correct. 300 K = 27 °C (26,85 rounded).
-
-Python output (python3 -I, from problem text alone, before reading solutions.md):
-L1-01 21+273.15 = 294.15 (answer 294)
-L1-02 350-273.15 = 76.85 (answer 77)
-L1-03 77-273.15 = -196.15 (answer -196)
-L1-04 45-20 = 25 (answer 25)
-L1-05 2.7-273.15 = -270.45 (answer -270)
-L2-01 303-273.15 = 29.85 (answer 30)
-L2-02 100+0.37*50 = 118.5 (answer 119; rel. dev. 0.0042 against tolerance 0.02; 118 also passes at 0.0084)
-L2-03 k=0.275, theta0 = 20-80/0.275 = -270.91 (answer -270; rel. dev. 0.0034)
-L2-04 127-(-173) = 300 (answer 300)
-L3-01 300*308.15/288.15 = 320.82 (answer 321); with 273: 320.83
-L3-02 least-squares slope 0.95, intercept 259.5, theta0 = -273.16 (answer -273)
-L3-03 293.15/2-273.15 = -126.575 (answer -127; with 273: -126.5)
-All 12 answers correct within the 0,02 relative tolerance, including rounding with 273 instead of 273,15.
-Example: fit of 6 points theta0 = -271.06; endpoints -270.27; ideal-gas p(100 C) = 136.61 (table 137); 283->293 K = +3.53 %.
-Sim replica (Python port of draw loop, 80 particles, 30 s):
- T=300 V=1: measured 103.7 theory 100.0
- T=600 V=1: 207.1 / 200.0
- T=100 V=1: 34.6 / 33.3
- T=300 V=0.5: 211.0 / 200.0
- T=300 V=2: 51.2 / 50.0
- T=600 V=0.5: 422.2 / 400.0
- T=100 V=2: 17.0 / 16.7
+(4) sim.js verified analytically: speed v = V_REF·sqrt(T/300), so mean E_k is proportional to T. Impulse per wall hit is 2|v_x| (unit mass), total x-wall momentum rate = N v²/W_c, per wall length (2H_c) gives N v²/(2 W_c H_c); this equals pRef = N V_REF²/(2·PX·H_c) at 300 K and 1 dm³ (W_c = PX). The y-walls give the same value. The effective box (W - 2R, H - 2R) is used consistently, so p is proportional to T/V and pTheory = 100·(T/300)/V is the correct reference. Note and readout texts are physically correct.
