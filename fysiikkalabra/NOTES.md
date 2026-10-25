@@ -10,7 +10,7 @@ When a mistake costs a review round, add a line under the right heading (what, w
 - Delimiters: `$$...$$` for display, `$...$` for inline. A ```` ```latex ```` fence becomes display math.
 - The build hides all math from the markdown converter first, so `_`, `*` and `\` inside formulas are safe.
 - Math also renders in `exercises.json` (`text`) and `exit-ticket.json` (`q`, `a`), because auto-render runs over the whole page. In JSON every backslash is doubled: `"$\\frac{1}{2}$"`.
-- `solutions.md` is **not** published and not rendered. Write it in plain text with Unicode (`W₁`, `m/s²`, `·`).
+- `solutions.md` is rendered under the exercise as a collapsible "Ratkaisu" (which ones depends on `meta.solutions`: `first`, `all` or `none`). It goes through markdown but is written in plain text with Unicode (`W₁`, `m/s²`, `·`), no LaTeX, so a `$` in it would be picked up by auto-render.
 - The simulation canvas and the inline SVG figures cannot use LaTeX either. Use plain text and Unicode there (`W = F · s`, `m/s²`).
 
 ### Writing rules
@@ -35,9 +35,10 @@ When a mistake costs a review round, add a line under the right heading (what, w
 
 ### Check before every commit that touches math
 ```bash
+python scripts/lint_lesson.py fy3-2                 # every mechanical rule in this file; exits 1 on an ERROR
 python scripts/check_latex.py content/FY3/fy3-2     # .md files and every string in the .json files
 ```
-It exits 1 on a bad fragment. CI and the mathematician agent run it too. After changing any formula, also recompute the numbers in `exercises.json` and `solutions.md` in Python.
+Both exit 1 on a problem. CI and the gate run them too. After changing any formula, change `answers.py` first and copy its output into `exercises.json` and `solutions.md`.
 
 ## 2. Other things learned in this project
 
@@ -48,7 +49,8 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 ### Numbers
 - Round only at the end; show unrounded intermediates in solutions (`v = 80/3,6 m/s`, not `22,2`).
 - Final answers have as many significant figures as the data (2 sf data gives 2 sf). Check that a student who rounds correctly stays inside the relative `tolerance` (0,02).
-- Compute every answer in Python before writing it.
+- Compute every answer in `answers.py` (one commented line per step, prints `{id: value}` as JSON); the lint and the gate re-run it against `exercises.json`.
+- The lint checks that a student rounding to the data's significant figures stays inside the tolerance. `77 K` has two figures, so an answer of −196 °C needs a tolerance of 0,03 or the task must ask for a whole number.
 
 ### Finnish
 - Avoid "25 m matka" and "80 N voimalla". Either inflect the unit (`80 N:n voimalla`, `40 N:ssä`) or write nominative sentences ("Voima on 80 N ja matka 25 m").
@@ -58,15 +60,18 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 ### Pages and publishing
 - Only `status: reviewed` lessons are built into `site/`, which is committed and served by Pages from `main`. Previews and `--all` go to the git-ignored `preview/`.
 - The numeric readout in a simulation is DOM text, not canvas text, so it stays readable on a phone. Tap targets are at least 40 px, and there is no horizontal overflow at 390 px.
+- `templates/sim-embed.js` wraps every sim: it resizes the 600×400 canvas to the container and scales the drawing, pauses the sketch when it is off-screen, lowers the frame rate under `prefers-reduced-motion`, and sets the page font inside the canvas. Sims draw in 600×400 coordinates and never handle resizing themselves. `test_sims.py` scrolls the sim into view before it reads `simState`.
+- The page places the simulation after the `## Kaava` section (before `## Esimerkki`). A line `<!-- sim -->` in `lesson.md` overrides the position.
+- Exercises have an answer field: the page compares the typed number with `answer` within `tolerance` (decimal comma accepted). Everything happens in the browser; nothing is stored or sent.
 - Fonts are self-hosted (`vendor/fonts`). Add no third-party requests, tracking, logins or forms.
 - Reviewer screenshots stay out of git (`**/review/*.png`).
 
 ### Process
 - Publishing goes through the gate (`scripts/gate.py`): all reviewers PASS on the current content hash, then the publisher agent commits. Do not hand-edit `status`, `reviewed_by`, `reviewed_on` or `reviewed_hash`.
-- Reviewers never edit anything that is part of the hash (that includes `tests/sims/<id>.json`); the tester reports missing assertions and the fixer adds them.
-- Any edit to a lesson changes its hash. After a fix, every reviewer has to run again.
-- Reviewers never edit lesson files. After a FAIL, fix, rebuild, test and rerun the failed reviewers.
-- Keep commits small and push after each; the branch name is given by the session.
+- Reviewers never edit anything that is part of the hash (that includes `tests/sims/<id>.json`); the graphics agent writes the tests with the sim, the tester reports gaps and the fixer adds them.
+- Any edit to a lesson changes its full hash, but each reviewer's verdict is tied to the hash of its own files (`gate.py --hash <id> --for <reviewer>`), so after a fix only the reviewers whose files changed run again. `gate.py <id>` names them.
+- Reviewers never edit lesson files. Only `## Blocking` findings fail a lesson; spelling and style go in the proofreader's diff and are applied by the fixer.
+- One commit per review round (`fysiikkalabra: <id> review round <n>`); the branch name is given by the session.
 
 ## 3. Matriculation exam material (inspiration only)
 
