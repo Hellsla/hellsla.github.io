@@ -1,0 +1,6 @@
+VERDICT: DONE
+
+- lesson.md: both figures redrawn. Energy flow: arrow widths Q₁ = W + Q₂ (40 % to work), W arrow strongest, legend "nuolen leveys kuvaa tehoa"; (V, p) graph: shaded work rectangle, expansion arrow on the isobar, ΔV double arrow. Every symbol/formula (T₁, T₂, Q₁, Q₂, W, p, V, V₁, V₂, ΔV, W = pΔV) is a `fig-tex` foreignObject; aria-labels rewritten. Ydinajatus/Kaava inline formulas now LaTeX.
+- sim.js: every canvas text goes through `lab(s, x, y, align, size, bold, name)`, which pushes `{s, x0, y0, x1, y1}` to `simState.labels` every frame. The flows animate, so a "Nopeus" select (hidas 0,4 · normaali 1 · nopea 2) was added; t advances by dt·speed, `simState.speed`. Explanation, scale sentence and the heat-pump "ei luo energiaa" note moved to a closed `details.note` "Lisätietoja" after the readout; readout is 4 short lines in every mode.
+- sim-spec.md: speed control, readout, Lisätietoja and simState.labels/speed described.
+- tests/sims/fy3-11.json: label assertions read `labels[].s` (same strings, same order); scale/pump-note assertions read the details; the option list reads the first select. Added: closed details after readout, no loose note paragraph, readout 3–4 lines per mode, label boxes inside canvas per mode, speed select and speed-independence (92 pass, sweep clean).

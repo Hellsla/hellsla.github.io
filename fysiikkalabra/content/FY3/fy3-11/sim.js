@@ -9,7 +9,9 @@
 // its area, and the header key prints the scale. Colours: hot fuel red, electricity/work yellow, useful heat orange-red,
 // waste and outdoor heat cool blue. Each label sits beside its arrow end in a slot at least as tall as the label, so thin
 // flows keep readable labels. eta, etaTotal in percent. p5.js 1.9 instance mode, 600×400 canvas inside #sim-root.
-// Exposes window.simState every frame and window.simDebug with the ink box of every canvas text (overlap checks).
+// The flows animate (chevrons, flames, turbine, pistons, fan) at the pace of the "Nopeus" select; t advances by dt·speed.
+// Every canvas text goes through lab(), which pushes {s, x0, y0, x1, y1} (its ink box) to simState.labels every frame,
+// so test_sims.py checks overlaps and clipping. Exposes window.simState every frame and window.simDebug (boxes by name).
 new p5((p) => {
   const CAP = 95;                                                      // CHP: electricity + district heat ≤ 95 % of fuel
   const XA = 140, XI = 152, BX0 = 196, BX1 = 336, XC = 384, XH = 396, YB = 394, GAP = 8;   // x stations of the diagram (px)
@@ -19,7 +21,7 @@ new p5((p) => {
     yhteistuotanto: { text: 'yhteistuotantovoimalaitos', unit: 'MW', P: [100, 2000, 10, 1000], eta: 30, heat: 55, use: 'sähkö' },
     automoottori: { unit: 'kW', P: [10, 200, 1, 60], eta: 30, use: 'mekaaninen teho' },
     ilmalämpöpumppu: { unit: 'kW', P: [0.5, 5, 0.1, 1], cop: 3 } };
-  let sel, sP, lP, sE, lE, sH, lH, sC, lC, readout, mode = '', last = 'eta', t = 0, k = 1, boxes = {};
+  let sel, sP, lP, sE, lE, sH, lH, sC, lC, sV, readout, more, mode = '', last = 'eta', t = 0, k = 1, boxes = {}, labels = [];
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent), span = p.createSpan('').parent(label);
@@ -41,16 +43,21 @@ new p5((p) => {
     [sP, lP] = slider(controls, 100, 2000, 1000, 10); [sE, lE] = slider(controls, 10, 60, 40, 1);   // input power, η (%)
     [sH, lH] = slider(controls, 0, 65, 55, 1); [sC, lC] = slider(controls, 1.5, 5, 3, 0.1);          // district heat share (%), cop
     sE.elt.addEventListener('input', () => { last = 'eta'; }); sH.elt.addEventListener('input', () => { last = 'heat'; });   // CHP cap moves the other one
+    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sV = p.createSelect().parent(lv);
+    for (const [txt, v] of [['hidas', 0.4], ['normaali', 1], ['nopea', 2]]) sV.option(txt, v);
+    sV.selected('1');                                                  // animation pace only; no quantity depends on it
+    const det = p.createElement('details').parent('sim-root').class('note');   // explanations stay behind "Lisätietoja"
+    p.createElement('summary', 'Lisätietoja').parent(det);
     p.createP('Nuolen leveys on verrannollinen tehoon. Kokonaisteho täyttää aina koko kaavion, joten asteikko vaihtuu; ' +
-              'se näkyy kankaan ylälaidassa. Yhteistuotannossa sähkön ja kaukolämmön osuus on yhteensä enintään 95 %.')
-      .parent('sim-root').class('note');
+              'se näkyy kankaan ylälaidassa. Yhteistuotannossa sähkön ja kaukolämmön osuus on yhteensä enintään 95 %.').parent(det);
+    more = p.createP('').parent(det);
     preset(); p.textFont('Arial');
   };
 
   p.draw = () => {
     if (sel.value() !== mode) preset();
     const m = MODES[mode], u = m.unit, pump = !!m.cop, chp = mode === 'yhteistuotanto';
-    t += Math.min(p.deltaTime, 100) / 1000;
+    const speed = Number(sV.value()); t += Math.min(p.deltaTime, 100) / 1000 * speed;
     for (const [l, on] of [[lE, !pump], [lH, chp], [lC, pump]]) l.elt.parentElement.style.display = on ? '' : 'none';
     const P = Number(sP.value()), cop = Number(sC.value());
     let eta = Number(sE.value()), h = chp ? Number(sH.value()) : 0;
@@ -65,8 +72,7 @@ new p5((p) => {
       lines = [`Sähköteho ${n(P)}, lämpökerroin ${fi(cop, 1)}`,
         `Lämpö sisälle = lämpökerroin · sähköteho = ${fi(cop, 1)} · ${n(P)} = <strong>${n(Pout)}</strong>`,
         `Lämpö ulkoilmasta = ${n(Pout)} − ${n(P)} = <strong>${n(Pamb)}</strong>`,
-        `Energia säilyy: sisään ${n(P)} + ${n(Pamb)} = ${n(P + Pamb)} = ulos ${n(Pout)}`,
-        'Lämpöpumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisätilaan. Se ei luo energiaa: sisälle luovutettu lämpö on ulkoilmasta otetun lämmön ja sähkön summa.'];
+        `Energia säilyy: sisään ${n(P)} + ${n(Pamb)} = ${n(P + Pamb)} = ulos ${n(Pout)}`];
     } else {
       const Puse = eta / 100 * P, Pheat = h / 100 * P, Pwaste = P - Puse - Pheat;   // energy conserved: the rest is waste heat
       S = { Pin: P, eta, heatShare: h, Puse, Pheat, Pwaste, etaTotal: eta + h, Pel: null, cop: null, Pout: null, Pambient: null, sumIn: P, sumOut: Puse + Pheat + Pwaste };
@@ -75,7 +81,7 @@ new p5((p) => {
       lP.html(`Polttoaineen teho = ${fi(P, 0)} ${u}`); lE.html(`${chp ? 'Sähkön osuus, hyötysuhde' : 'Hyötysuhde'} η = ${pc(eta)}`);
       lH.html(`Kaukolämmön osuus = ${pc(h)}`);
       lines = [`Polttoaineen teho ${n(P)}`,
-        `${m.use[0].toUpperCase() + m.use.slice(1)} ${n(Puse)}${chp ? `, kaukolämpö ${n(Pheat)}` : ''}, hukkalämpö ympäristöön ${n(Pwaste)}`,
+        `${m.use[0].toUpperCase() + m.use.slice(1)} ${n(Puse)}${chp ? `, kaukolämpö ${n(Pheat)}` : ''}, hukkalämpö ${n(Pwaste)}`,
         `Energia säilyy: sisään ${n(P)} = ulos ${outs.map((f) => n(f[1])).join(' + ')} = ${n(S.sumOut)}`,
         chp ? `Sähkön hyötysuhde ${pc(eta)}, kokonaishyötysuhde (${n(Puse)} + ${n(Pheat)}) / ${n(P)} = <strong>${pc(eta + h)}</strong>`
           : `Hyötysuhde η = ${n(Puse)} / ${n(P)} = <strong>${pc(eta)}</strong>`];
@@ -85,11 +91,11 @@ new p5((p) => {
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (x) => Math.round(x * k), total = S.sumIn, fh = ts(11), rowH = Math.max(30, Math.round(fh * 1.6));
     const v = nice(total / 8), keyT = `${fv(v)} ${u}`, legend = [...ins, ...outs];
-    boxes = {}; p.textSize(fh); p.textStyle(p.NORMAL);
+    boxes = {}; labels = []; p.textSize(fh); p.textStyle(p.NORMAL);
     let hx = 8, row = 0;
     const pos = [['key', p.textWidth('Asteikko:') + 22 + p.textWidth(keyT)], ...legend.map((f) => [f, fh + 6 + p.textWidth(f[0])])]
       .map(([it, w]) => { if (hx + w > 592 && hx > 8) { hx = 8; row++; } const r = [it, hx, row]; hx += w + ts(14); return r; });
-    const YT = 10 + (row + 1) * rowH, fz = ts(13), LI = ins.map((f) => lab(f, XA - 12, fz)), LO = outs.map((f) => lab(f, 160, fz));
+    const YT = 10 + (row + 1) * rowH, fz = ts(13), LI = ins.map((f) => fit(f, XA - 12, fz)), LO = outs.map((f) => fit(f, 160, fz));
     const need = (fl, L, w) => fl.reduce((s, f, i) => s + Math.max(f[1] / total * w, L[i].h), 0) + GAP * (fl.length - 1);
     let W = 210; while (W > 60 && Math.max(need(ins, LI, W), need(outs, LO, W), W + 24) > YB - YT) W -= 2;
     const sc = W / total, yc = (YT + YB) / 2;
@@ -112,13 +118,15 @@ new p5((p) => {
     // header: scale key (a bar as wide as v) and the colour legend
     for (const [it, x, r] of pos) {
       const cy = 4 + rowH * (r + 0.5), by = cy + fh * 0.36;
-      if (it !== 'key') { p.fill(it[2]); p.stroke(80); p.strokeWeight(1); p.rect(x, cy - fh / 2, fh, fh, 2); say(`leg-${it[0]}`, it[0], fh, x + fh + 6, by, 'l'); continue; }
-      say('key', 'Asteikko:', fh, x, by, 'l');
-      const bx = boxes.key[1] + 8; p.fill(90); p.noStroke(); p.rect(bx, cy - v * sc / 2, 6, v * sc); say('keyValue', keyT, fh, bx + 14, by, 'l');
+      if (it !== 'key') { p.fill(it[2]); p.stroke(80); p.strokeWeight(1); p.rect(x, cy - fh / 2, fh, fh, 2); lab(it[0], x + fh + 6, by, 'l', fh, false, `leg-${it[0]}`); continue; }
+      lab('Asteikko:', x, by, 'l', fh, false, 'key');
+      const bx = boxes.key[1] + 8; p.fill(90); p.noStroke(); p.rect(bx, cy - v * sc / 2, 6, v * sc); lab(keyT, bx + 14, by, 'l', fh, false, 'keyValue');
     }
-    lines.push(`Asteikko: nuolen leveys on verrannollinen tehoon, kokonaisteho ${n(total)} on koko kaavion levyinen ja avainpalkki on ${fv(v)} ${u}.`);
-    readout.html(lines.join('<br>'));
-    window.simState = { mode, unit: u, ...S, scale: sc, scaleKey: v, bandTotal: W, labels: [...LI, ...LO].map((L) => L.lines.join(' ')) };
+    const txt = `Asteikko: nuolen leveys on verrannollinen tehoon, kokonaisteho ${n(total)} on koko kaavion levyinen ja avainpalkki on ${fv(v)} ${u}.` +
+      (pump ? ' Lämpöpumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisätilaan. Se ei luo energiaa: sisälle luovutettu lämpö on ulkoilmasta otetun lämmön ja sähkön summa.' : '');
+    if (more.elt.textContent !== txt) more.elt.textContent = txt;      // scale and model notes behind "Lisätietoja"
+    readout.html(lines.join('<br>'));                                  // at most four short lines
+    window.simState = { mode, unit: u, ...S, scale: sc, scaleKey: v, bandTotal: W, speed, labels };
     window.simDebug = { boxes, k, W, YT };
   };
 
@@ -147,7 +155,7 @@ new p5((p) => {
     return head ? xb + hl : xb;
   }
   // a label: name (wrapped to maxW, the font shrinks if one word does not fit) and the value in bold on its own line
-  function lab([name, P], maxW, size) {
+  function fit([name, P], maxW, size) {
     for (const unit = MODES[mode].unit; ; size--) {
       p.textSize(size); p.textStyle(p.NORMAL); const lines = [];
       for (const wd of name.split(' ')) { const tt = lines.length ? `${lines[lines.length - 1]} ${wd}` : wd;
@@ -159,15 +167,16 @@ new p5((p) => {
   }
   function label(name, L, x, mid, align) {
     let y = mid - L.h / 2 + L.size;
-    L.lines.forEach((s, i) => { say(`${name}-${i}`, s, L.size, x, y, align, i === L.lines.length - 1); y += Math.round(L.size * 1.2); });
+    L.lines.forEach((s, i) => { lab(s, x, y, align, L.size, i === L.lines.length - 1, `${name}-${i}`); y += Math.round(L.size * 1.2); });
   }
-  // text with a halo, its ink box recorded in boxes[name]
-  function say(name, s, size, x, y, align, bold) {
+  // every canvas text: drawn with a halo, its ink box pushed to simState.labels and recorded in boxes[name]
+  function lab(s, x, y, align, size, bold, name = s) {
     p.textSize(size); p.textStyle(bold ? p.BOLD : p.NORMAL); p.textAlign(p.LEFT, p.BASELINE);
     const mt = p.drawingContext.measureText(s), lx = align === 'r' ? x - mt.width : x;
     p.stroke(255, 255, 255, 200); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND); p.fill(35);
     p.text(s, lx, y); p.noStroke(); p.text(s, lx, y); p.textStyle(p.NORMAL);
-    boxes[name] = [lx - mt.actualBoundingBoxLeft, lx + mt.actualBoundingBoxRight, y - mt.actualBoundingBoxAscent, y + mt.actualBoundingBoxDescent];
+    const b = [lx - mt.actualBoundingBoxLeft, lx + mt.actualBoundingBoxRight, y - mt.actualBoundingBoxAscent, y + mt.actualBoundingBoxDescent];
+    boxes[name] = b; labels.push({ s, x0: b[0], y0: b[2], x1: b[1], y1: b[3] });
   }
   // gradient fill (raw canvas, inside save/restore so p5's own fill state is untouched) with a thin outline
   function grad(stops, xa, ya, xb, yb, path) {
