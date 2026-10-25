@@ -41,7 +41,7 @@ solutions.md       given / wanted / formula / substitution with units / answer /
 answers.py         the Python that computes every answer; the gate re-runs it against exercises.json
 exit-ticket.json   3 quick checks
 sim.js             optional p5.js simulation exposing window.simState
-sim-spec.md        one paragraph describing the sim, written by the human
+sim-spec.md        one-paragraph simulation specification; the autonomous routine may propose a draft, but teacher approval is required before publication
 review/            one <agent>.md report per reviewer, overwritten on each run
 ```
 
@@ -60,3 +60,8 @@ review/            one <agent>.md report per reviewer, overwritten on each run
 - Never copy exam questions from YTL or textbooks into lessons; write original problems. Exam files may be studied for patterns only, stored in the git-ignored `docs/exams/` (see NOTES.md, section 3).
 - Never add tracking, logins or forms that collect student data.
 - Never depict real people in generated images.
+
+## Autonomous drafting
+- The scheduled routine may choose the next unfinished curriculum lesson and propose new educational content and simulations independently.
+- Keep status as `draft` and open a draft pull request. Proposed simulation specifications must be checked by the teacher before publication.
+- This permission to *draft* never overrides the reviewed-content publication gate or the prohibition on automatically merging to `main`.
