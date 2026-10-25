@@ -95,29 +95,35 @@ new p5((p) => {
     for (let d = 0; d <= H_MAX; d += 5) p.text(`${d}`, X(d), CH.y0 + ts(16));
     p.textAlign(p.RIGHT); p.text('h (m)', CH.x1 - 8, CH.y0 - 8);                // a few px left of the h = 20 m guide line
     p.textAlign(p.LEFT); p.textSize(ts(12)); p.text(overOnly ? 'ylipaine ρgh (kPa)' : 'paine p (kPa)', CH.x0 - 26, CH.y1 - ts(14));
+    // current gauge reading: its label goes above-left of the rising line, or below-right near h = 0; below-right it
+    // never goes under the h axis (its tick labels): the baseline stays above the axis and the label moves right until
+    // the rising line clears its top edge
+    const px = X(h), py = Y(base + pOver), txt = `${fi(base + pOver, 0)} kPa`;
+    const up = h > 4;
+    p.textSize(ts(12));
+    let lx, ly;
+    if (up) { lx = px - 10; ly = Math.max(CH.y1 + ts(12), py - 10); }
+    else {
+      ly = Math.min(py + ts(16), CH.y0 - 6);
+      const rise = (CH.y0 - CH.y1) / pMax * slope / ((CH.x1 - CH.x0) / H_MAX);   // px the line rises per px to the right
+      lx = px + Math.max(10, (py - ly + ts(12) + 4) / rise);
+    }
+    const lw = p.textWidth(txt), box = up ? [lx - lw, lx, ly - ts(12), ly + 3] : [lx, lx + lw, ly - ts(12), ly + 3];
     if (!overOnly) {
       p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(CH.x0, Y(P0), CH.x1, Y(P0)); p.drawingContext.setLineDash([]);
-      // p₀ label away from the gauge reading: above the right end of the dashed line while the gauge is shallow
-      // (the reading then sits near the left end), below its left end when the gauge is deep (the reading is high up)
+      // p₀ label on the dashed line, clear of the reading and of the red guide lines: at the right end (below the line,
+      // else above it, else one line higher) while the gauge is shallow, at the left end below the line when it is deep
       p.noStroke(); p.fill(90); p.textSize(ts(11));
-      if (h <= 10) { p.textAlign(p.RIGHT); p.text('p₀ = 101 kPa', CH.x1 - 4, Y(P0) - 6); }
-      else { p.textAlign(p.LEFT); p.text('p₀ = 101 kPa', CH.x0 + 6, Y(P0) + ts(16)); }
+      const t0 = 'p₀ = 101 kPa', w0 = p.textWidth(t0);
+      const spots = h <= 10 ? [[CH.x1 - 4 - w0, Y(P0) + ts(16)], [CH.x1 - 4 - w0, Y(P0) - 6], [CH.x1 - 4 - w0, Y(P0) - 6 - ts(14)]] : [[CH.x0 + 6, Y(P0) + ts(16)]];
+      const free = ([x, y]) => x + w0 < box[0] || x > box[1] || y + 3 < box[2] || y - ts(11) > box[3];
+      const [x0, y0] = spots.find(free) || spots[spots.length - 1];
+      p.textAlign(p.LEFT); p.text(t0, x0, y0);
     }
     p.stroke(30, 80, 160); p.strokeWeight(3); p.line(X(0), Y(base), X(H_MAX), Y(base + slope * H_MAX));
-    const px = X(h), py = Y(base + pOver);                     // current gauge reading, highlighted
     p.stroke(200, 40, 40); p.strokeWeight(1.5); p.drawingContext.setLineDash([4, 4]); p.line(px, py, px, CH.y0); p.line(CH.x0, py, px, py); p.drawingContext.setLineDash([]);
     p.noStroke(); p.fill(200, 40, 40); p.circle(px, py, 12);
-    const up = h > 4;                                          // label above-left of the rising line, or below-right near h = 0
-    p.textSize(ts(12)); p.textAlign(up ? p.RIGHT : p.LEFT);
-    if (up) p.text(`${fi(base + pOver, 0)} kPa`, px - 10, Math.max(CH.y1 + ts(12), py - 10));
-    else {
-      // below-right, but never under the h axis (its tick labels): near the origin the baseline stays above the axis
-      // and the label moves right until the rising line clears its top edge
-      const yb = Math.min(py + ts(16), CH.y0 - 6);
-      const rise = (CH.y0 - CH.y1) / pMax * slope / ((CH.x1 - CH.x0) / H_MAX);   // px the line rises per px to the right
-      const dx = Math.max(10, (py - yb + ts(12) + 4) / rise);
-      p.text(`${fi(base + pOver, 0)} kPa`, px + dx, yb);
-    }
+    p.textSize(ts(12)); p.textAlign(up ? p.RIGHT : p.LEFT); p.text(txt, lx, ly);
   };
 
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
