@@ -134,7 +134,7 @@ new p5((p) => {
     const v = Math.max(pm, pp);
     if (v * 1.05 > top || v < 0.4 * top) [top, tStep] = scale(v);
     const Y = (x) => BAR.y0 - (BAR.y0 - BAR.y1) * Math.min(x, top * 1.05) / top, nT = Math.round(top / tStep);
-    const dec = tStep < 1 ? 1 : 0;
+    const dec = tStep < 0.1 ? 2 : tStep < 1 ? 1 : 0;              // decimals of the tick labels
     p.stroke(225); p.strokeWeight(1);
     for (let j = 1; j <= nT; j++) p.line(BAR.ax, Y(j * tStep), 590, Y(j * tStep));
     p.stroke(60); p.strokeWeight(2); p.line(BAR.ax, BAR.y0, 590, BAR.y0); p.line(BAR.ax, BAR.y0, BAR.ax, BAR.y1 - 10);
@@ -142,7 +142,7 @@ new p5((p) => {
       p.stroke(120); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]); p.line(BAR.ax, Y(1), 590, Y(1)); p.drawingContext.setLineDash([]);
     }
     p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    for (let j = 0; j <= nT; j++) if (k <= 1.5 || j % 2 === 0) p.text(fi(j * tStep, dec), BAR.ax - 6, Y(j * tStep) + ts(4));
+    for (let j = 0; j <= nT; j++) p.text(j ? fi(j * tStep, dec) : '0', BAR.ax - 6, Y(j * tStep) + ts(4));   // ≥ 43 px apart
     const yName = 14 + ts(14) + ts(13);                          // axis name p/p_ref with a drawn subscript
     p.textSize(ts(10)); p.text('ref', 590, yName + ts(3)); const wSub = p.textWidth('ref');
     p.textSize(ts(13)); p.text('p/p', 590 - wSub - 1, yName);
@@ -156,7 +156,7 @@ new p5((p) => {
 
   // smallest axis top n·step ≥ 1,1·v with at most 5 steps of 1, 2 or 5 · 10ⁿ
   const scale = (v) => {
-    for (let e = -1; e <= 2; e++) for (const m of [1, 2, 5]) {
+    for (let e = -2; e <= 2; e++) for (const m of [1, 2, 5]) {
       const st = m * 10 ** e, n = Math.max(1, Math.ceil(1.1 * v / st - 1e-9));
       if (n <= 5) return [n * st, st];
     }
