@@ -1,0 +1,5 @@
+ok   lint
+ok   latex
+ok   build
+ok   layout 360 px
+fy3-12: draft (science=missing, pedagogy=missing)
