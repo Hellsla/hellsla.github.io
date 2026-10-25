@@ -1,56 +1,39 @@
 VERDICT: PASS
-CONTENT-HASH: 28956a3df07f9f05
+CONTENT-HASH: fc5375c46d696bd5
 
-Scope: lesson.md, exercises.json (text), solutions.md, exit-ticket.json, sim-spec.md, sim.js (Finnish strings), glossary.json entries for fy3-1 (massa, newton, paino, voima, vuorovaikutus).
+# Proofreader, fy3-1, round 2
 
-Hash note: the first hash was da9ba5eb24ac7a54. The hash later moved (3444d0df4b2f6a39, then 28956a3df07f9f05) only because another agent edited tests/sims/fy3-1.json (it is part of the hash and has no Finnish text). The lesson files were not touched (mtimes unchanged, last edit 2026-10-24). The review below applies to the current hash.
+Checked: lesson.md, exercises.json (text), solutions.md, exit-ticket.json, sim-spec.md, Finnish strings in sim.js, meta.json, glossary entries for fy3-1 (voima, voimamittari, vuorovaikutus, paino, massa, newton).
 
-No spelling, grammar or terminology errors found. Checked and correct: number-plus-unit case forms (12 N:n paino, 6,0 N:n painolla, 15 N:n voimalla, 0,20 kg:n massa, 22,0 kg:n massan, 29 N:sta, 4,9 N:iin, 690 N:n painoa, 3,0 kg:na), decimal commas, units separated by a space, Marsissa/Jupiterissa/Kuussa/Maassa, vaa'alle, Mars-kulkija, "paino" used only as a force, glossary terms (voima, vuorovaikutus, paino, massa, newton) used as defined, reading level suitable for ages 16-19.
+Result: no spelling, grammar, punctuation or terminology errors found. Hash was fc5375c46d696bd5 before and after the review.
 
-Issue kinds (all minor, none blocking):
-1. Punctuation: straight quotes "painan 70 kiloa" instead of Finnish ”…” (lesson.md line 50, exit-ticket.json q3). Fix in diff. This is the only convention deviation I would ask to be fixed.
-2. Punctuation (glossary.json, "massa"): comma needed before "toisin kuin paino". Fix in diff.
-3. Nits (no diff, optional):
-   - sim-spec.md: "kankaan alla" (canvas) could be "piirtoalueen alla".
-   - lesson.md "Tässä oppitunnissa" could be "Tällä oppitunnilla".
-   - lesson.md/solutions.md use "jousivaaka" while the rest uses "voimamittari"; "jousivaaka" is not in glossary.json (consider adding it or saying "voimamittari").
-   - exercises.json L3-02: "nostaa 22,0 kg:n massan" is colloquial; "kappaleen" would be more precise, but it is not wrong.
-   - lesson.md Tiivistelmä: "Massa on aineen määrä" is loose physics wording (not a language error).
+Checked and fine:
+- "jousivaaka" no longer appears anywhere; "voimamittari" is used consistently and is a glossary term (glossary and meta.json lists agree, alphabetical order kept).
+- Decimal comma in text and `{,}` in math; space between number and unit everywhere; units inflected correctly (12 N:n, 6,0 N:n painolla, 22,0 kg:n, 0,20 kg:n, 3,0 kg:na, 29 N:sta, 4,9 N:iin, 15 N:n voimalla); no "25 m matka" type constructions.
+- Finnish quotation marks ”painan 70 kiloa” in lesson.md and exit-ticket.json.
+- Reading level suits 16-19-year-olds; paino/massa distinction kept (no "pitää painoa").
+- sim.js strings and sim-spec.md are correct Finnish; decimal comma via fi().
 
-Unified diff (a = original, b = proposed; numbers, formulas, LaTeX and JSON values untouched; the edited JSON files still parse):
+Issues by kind:
+1. Wording (minor, solutions.md, not published): L2-01 "Järkevyys" says "Noin 10 N painaa yhtä kilogrammaa", where subject and object are reversed. Diff below. Not a FAIL.
+2. Nits (no change proposed, style only):
+   - exercises.json, fy3-1-L3-03 text: "se näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg" is grammatical but heavy; the sentence could be "se näyttää kilogrammoina voiman ja luvun 9,81 N/kg osamäärän".
+   - solutions.md L3-01 "Paino pienenee suhteessa 3,71 / 9,81" could be "Paino on 3,71 / 9,81 ≈ 0,38-kertainen Maahan verrattuna".
+   - lesson.md uses "Jupiterilla" (surface sentence) and "Jupiterissa" (exercises, solutions); both are correct.
+   - Normal spaces rather than thin spaces before units, same as content/_gold.
+
+Unified diff (not applied; copies in /tmp/claude-0/-home-user-hellsla-github-io/1d51c594-3563-5c38-9136-caaa788c1662/scratchpad/proofread-fy31b/):
 
 ```diff
---- content/FY3/fy3-1/lesson.md	2026-10-25 04:17:02.228447163 +0000
-+++ content/FY3/fy3-1/lesson.md	2026-10-25 04:17:02.257513873 +0000
-@@ -47,7 +47,7 @@
- Robotin massa on molemmissa paikoissa 120 kg. Vain paino muuttuu, koska Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin.
+--- content/FY3/fy3-1/solutions.md	2026-10-25 04:24:30.772439356 +0000
++++ content/FY3/fy3-1/solutions.md	2026-10-25 04:24:30.790038521 +0000
+@@ -44,7 +44,7 @@
+ **Kaava:** G = m g, joten m = G / g
+ **Sijoitus:** m = 49 N / 9,81 N/kg = 4,995 kg
+ **Vastaus:** 5,0 kg
+-**Järkevyys:** Noin 10 N painaa yhtä kilogrammaa, joten 49 N vastaa noin 5 kg.
++**Järkevyys:** Yksi kilogramma painaa noin 10 N, joten 49 N vastaa noin 5 kg.
  
- ## Yleinen virhekäsitys
--Arkikielessä sanotaan "painan 70 kiloa", mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on 70 kg ja paino Maassa noin 690 N. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että jousivaaka mittaa voimaa, ei massaa: sen lukema muuttuu, kun se viedään toiseen paikkaan.
-+Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on 70 kg ja paino Maassa noin 690 N. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että jousivaaka mittaa voimaa, ei massaa: sen lukema muuttuu, kun se viedään toiseen paikkaan.
- 
- ## Tiivistelmä
- - Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.
---- content/FY3/fy3-1/exit-ticket.json	2026-10-25 04:17:02.228491742 +0000
-+++ content/FY3/fy3-1/exit-ticket.json	2026-10-25 04:17:02.257681706 +0000
-@@ -8,7 +8,7 @@
-     "a": "6,0 cm. Venymä on suoraan verrannollinen voimaan, ja voima kolminkertaistuu."
-   },
-   {
--    "q": "Miksi lause \"painan 70 kiloa\" on fysiikan kannalta epätarkka?",
-+    "q": "Miksi lause ”painan 70 kiloa” on fysiikan kannalta epätarkka?",
-     "a": "Kilogramma on massan yksikkö, mutta paino on voima ja sen yksikkö on newton. Massa 70 kg tarkoittaa noin 690 N:n painoa Maassa."
-   }
- ]
---- glossary.json	2026-10-25 04:17:02.228513759 +0000
-+++ glossary.json	2026-10-25 04:17:02.257809053 +0000
-@@ -98,7 +98,7 @@
-   },
-   {
-     "term": "massa",
--    "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla toisin kuin paino.",
-+    "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla, toisin kuin paino.",
-     "lessons": [
-       "fy3-1"
-     ],
+ ## fy3-1-L2-02
+ **Annettu:** m = 60 g = 0,060 kg, g = 9,81 N/kg
 ```
