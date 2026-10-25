@@ -87,7 +87,7 @@
     {
       "id": "fy3-8-L3-02",
       "level": 3,
-      "text": "Saunan vanhanmallisen sähkökiukaan termostaatissa on kaksoismetalliliuska, jossa 50,0 mm pitkät kupari- ja teräsliuskat on liitetty toisiinsa (kupari α = 17 · 10⁻⁶ 1/K, teräs α = 12 · 10⁻⁶ 1/K). Saunan lämmetessä liuskan lämpötila nousee 20 °C:sta 100 °C:seen. Kuinka paljon enemmän kupariliuska pitenisi kuin teräsliuska, jos ne olisivat irti toisistaan? Anna vastaus mikrometreinä (1 µm = 0,001 mm). Perustele, mihin suuntaan liitetty liuska taipuu.",
+      "text": "Saunan vanhanmallisen sähkökiukaan termostaatissa on kaksoismetalliliuska, jossa 50,0 mm pitkät kupari- ja teräsliuskat on liitetty toisiinsa (kupari α = 17 · 10⁻⁶ 1/K, teräs α = 12 · 10⁻⁶ 1/K). Saunan lämmetessä liuskan lämpötila nousee 20 °C:sta 100 °C:seen. Kuinka paljon enemmän kupariliuska pitenisi kuin teräsliuska, jos ne olisivat irti toisistaan? Anna vastaus mikrometreinä eli millimetrin tuhannesosina. Perustele, mihin suuntaan liitetty liuska taipuu.",
       "answer": 20,
       "unit": "µm",
       "tolerance": 0.02

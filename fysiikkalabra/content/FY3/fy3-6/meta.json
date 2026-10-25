@@ -15,6 +15,7 @@
     "lämpökapasiteetti",
     "kalorimetri",
     "lämpötasapaino",
+    "tasapainolämpötila",
     "lämpömäärä"
   ],
   "sim": true,
