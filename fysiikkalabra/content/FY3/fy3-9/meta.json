@@ -1,0 +1,26 @@
+{
+  "id": "fy3-9",
+  "course": "FY3",
+  "title": "Kaasujen tilanmuutokset ja Boylen laki",
+  "goals": [
+    "LOPS FY3: kaasujen tilanmuutokset",
+    "Kokeellisesti: Boylen lain todentaminen",
+    "Taidot: kääntäen verrannollisuus graafisesti p = vakio·1/V; uuden taulukkosarakkeen laskeminen, esim. 1/V"
+  ],
+  "prerequisites": [
+    "fy3-4",
+    "fy3-8"
+  ],
+  "glossary": [
+    "tilanmuutos",
+    "isoterminen",
+    "isobaarinen",
+    "isokoorinen",
+    "Boylen laki"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "draft",
+  "reviewed_by": "",
+  "reviewed_on": ""
+}

@@ -36,8 +36,8 @@ new p5((p) => {
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
-    readout = p.createDiv('').parent('sim-root').class('readout');
     const controls = p.createDiv('').parent('sim-root').class('controls');
+    readout = p.createDiv('').parent('sim-root').class('readout');
     const ls = p.createElement('label').parent(controls);
     p.createSpan('Aine').parent(ls);
     sel = p.createSelect().parent(ls);
