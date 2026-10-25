@@ -71,20 +71,20 @@
 **Järkevyys:** Höyrystymisessä massa on vain 0,10 kg, ei koko 2,0 kg. Silti tuo pieni määrä vie noin neljäsosan energiasta, koska r on suuri.
 
 ## fy3-7-L3-01
-**Annettu:** mehu m₁ = 0,35 kg, T₁ = 25 °C, jää m₂ = 60 g = 0,060 kg 0 °C:ssa, c = 4190 J/(kg·K), s = 334 000 J/kg
+**Annettu:** mehu m₁ = 0,35 kg, T₁ = 25 °C, jää m₂ = 60 g = 0,060 kg, T₀ = 0 °C, c = 4190 J/(kg·K), s = 334 000 J/kg
 **Kysytty:** tasapainolämpötila T
-**Kaava:** mehun luovuttama lämpö = jään sulaminen + sulamisveden lämpeneminen: c m₁ (25 °C − T) = s m₂ + c m₂ (T − 0 °C)
-**Sijoitus:** T = (c m₁ · 25 °C − s m₂) / (c (m₁ + m₂)) = (36 662,5 J − 20 040 J) / (4190 J/(kg·K) · 0,41 kg) ≈ 9,7 °C
+**Kaava:** lämpötase c m₁ (T₁ − T) = s m₂ + c m₂ (T − T₀), josta T = (c m₁ T₁ + c m₂ T₀ − s m₂) / (c (m₁ + m₂))
+**Sijoitus:** T₀ = 0 °C, joten T = (4190 J/(kg·K) · 0,35 kg · 25 °C − 334 000 J/kg · 0,060 kg) / (4190 J/(kg·K) · 0,41 kg) ≈ 9,7 °C
 **Vastaus:** 9,7 °C
-**Järkevyys:** Kaikki jää sulaa, sillä mehun jäähtyminen 0 °C:seen vapauttaisi 36 662,5 J, enemmän kuin sulamiseen tarvittava 20 040 J. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
+**Järkevyys:** Kaikki jää sulaa: mehun jäähtyminen 0 °C:seen vapauttaisi 36 662,5 J, sulaminen vaatii 20 040 J. Pelkällä 0-asteisella vedellä juoma olisi noin 21 °C.
 
 ## fy3-7-L3-02
-**Annettu:** vesi m = 0,25 kg, 20 °C → 100 °C, c = 4190 J/(kg·K), r = 2 260 000 J/kg; kivet m_k = 30 kg, c_k = 800 J/(kg·K)
+**Annettu:** vesi m = 0,25 kg, T₁ = 20 °C → T₂ = 100 °C, c = 4190 J/(kg·K), r = 2 260 000 J/kg; kivet m_k = 30 kg, c_k = 800 J/(kg·K)
 **Kysytty:** kivien lämpötilan lasku ΔT
-**Kaava:** c_k m_k ΔT = c m (100 °C − 20 °C) + r m
-**Sijoitus:** Lämpeneminen: 4190 J/(kg·K) · 0,25 kg · 80 K = 83 800 J. Höyrystyminen: 2 260 000 J/kg · 0,25 kg = 565 000 J. Yhteensä 648 800 J. ΔT = 648 800 J / (800 J/(kg·K) · 30 kg) ≈ 27 K
+**Kaava:** c_k m_k ΔT = c m (T₂ − T₁) + r m, joten ΔT = (c m (T₂ − T₁) + r m) / (c_k m_k)
+**Sijoitus:** 4190 J/(kg·K) · 0,25 kg · 80 K = 83 800 J ja 2 260 000 J/kg · 0,25 kg = 565 000 J, yhteensä 648 800 J. ΔT = 648 800 J / (800 J/(kg·K) · 30 kg) ≈ 27 K
 **Vastaus:** 27 K
-**Järkevyys:** Höyrystyminen vie noin 87 % energiasta, lämpeneminen vain 13 %. Siksi muutama kauhallinen jäähdyttää kiviä kymmeniä kelvinejä.
+**Järkevyys:** Höyrystyminen vie noin 87 % energiasta, lämpeneminen vain 13 %. Muutama kauhallinen jäähdyttää kiviä kymmeniä kelvinejä.
 
 ## fy3-7-L3-03
 **Annettu:** P₁ = 800 W, Δm₁ = 0,196 kg; P₂ = 400 W, Δm₂ = 0,0900 kg; kumpikin t = 600 s; ilmaan siirtyvä teho P_h sama kummassakin
