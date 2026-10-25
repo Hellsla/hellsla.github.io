@@ -109,8 +109,9 @@ new p5((p) => {
     [sT, lT] = slider(controls, 100, 600, 300, 10);              // lämpötila T (K)
     [sV, lV] = slider(controls, 25, 100, 100, 5);                // tilavuus V (% täydestä)
     p.createP('Tasomalli: pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin. Paine on seiniin osuvien törmäysten ' +
-              'keskiarvo 2 s:n ajalta, joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 %, mikä on normaalia tilastoa. ' +
-              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00).')
+              'keskiarvo 2 s:n ajalta, joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 % (tilastollista vaihtelua). ' +
+              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00). Tilavuuden muutos ei muuta hiukkasten nopeuksia, joten lämpötila pysyy samana. ' +
+              'Pylväiden asteikko mukautuu arvoihin: vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa.')
       .parent('sim-root').class('note');
     window.simAdvance = (s) => { sync(); advance(s); return update().pMeasured; };
     window.simRestart = () => { restart(); update(); };
@@ -227,6 +228,7 @@ new p5((p) => {
     const yName = yL + 14 + ts(13);                              // axis name p/p_ref with a drawn subscript
     p.textSize(ts(11)); lab('ref', 590, yName + ts(3), p.RIGHT); const wSub = p.textWidth('ref');
     p.textSize(ts(13)); lab('p/p', 590 - wSub - 1, yName, p.RIGHT);
+    const wP = p.textWidth('p/p'); p.textSize(ts(10)); lab('asteikko mukautuu', 590 - wSub - 1 - wP - 8, yName, p.RIGHT);
     const cols = [MEAS, PRED], vals = [pm, pp], names = ['mitattu', 'ennuste'];
     for (let i = 0; i < 2; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
