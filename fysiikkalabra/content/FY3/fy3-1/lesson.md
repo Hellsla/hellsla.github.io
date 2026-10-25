@@ -18,7 +18,7 @@ Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin p
 ```latex
 G = m g
 ```
-missä G on paino (N), m massa (kg) ja g painovoiman voimakkuus (m/s²). Luku g on sama suure kuin FY1:n putoamiskiihtyvyys: Maan pinnalla g = 9,81 m/s². Kun massa on kilogrammoina ja g yksikössä m/s², tulo G = mg tulee newtoneina (1 N = 1 kg·m/s², tarkemmin FY4:ssä). Esimerkiksi 1 kg:n massan paino Maan pinnalla on 9,81 N. Paino mittaa vuorovaikutuksen voimakkuutta, mutta ei ole syy minkään liikkeen tai putoamisen alkamiseen. Muualla g on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa (Jupiterilla pilvien yläpinnan tasoa):
+missä G on paino (N), m massa (kg) ja g painovoiman voimakkuus (m/s²). Luku g on sama luku kuin FY1:n putoamiskiihtyvyys, mutta tässä se mittaa vuorovaikutuksen voimakkuutta jokaista massan kilogrammaa kohti: Maan pinnalla g = 9,81 m/s². Kun massa on kilogrammoina ja g yksikössä m/s², tulo G = mg tulee newtoneina (1 N = 1 kg·m/s², tarkemmin FY4:ssä). Esimerkiksi 1 kg:n massan paino Maan pinnalla on 9,81 N. Paino mittaa vuorovaikutuksen voimakkuutta, mutta ei ole syy minkään liikkeen tai putoamisen alkamiseen. Muualla g on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa (Jupiterilla pilvien yläpinnan tasoa):
 
 | Taivaankappale | g pinnalla (m/s²) |
 | --- | --- |
@@ -54,4 +54,4 @@ Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikk�
 ## Tiivistelmä
 - Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.
 - Paino on voima: $G = m g$. Massa on aineen määrä, ja se on sama kaikkialla.
-- $g = 9{,}81\,\text{m/s}^2$: yhden kilogramman massan paino Maassa. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.
+- $g = 9{,}81\,\text{m/s}^2$ Maan pinnalla, joten yhden kilogramman massan paino Maassa on noin 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.
