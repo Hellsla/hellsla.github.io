@@ -58,11 +58,12 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
     table = p.createDiv('').parent('sim-root').class('sim-table');
-    button(controls, 'Tallenna mittaus', () => {
+    const btns = p.createDiv('').parent(controls).style('display', 'flex').style('flex-wrap', 'wrap').style('gap', '.5rem');
+    button(btns, 'Tallenna mittaus', () => {
       if (rows.length >= MAX_ROWS) { full = true; return; }
       const [V, pp, T] = state(); rows.push({ V: V * 1e-6, p: pp * 1000, T });   // SI units
     });
-    button(controls, 'Tyhjennä', () => { rows = []; full = false; });
+    button(btns, 'Tyhjennä', () => { rows = []; full = false; });
     const ls = p.createElement('label').parent(controls);
     p.createSpan('Tilanmuutos').parent(ls);
     sel = p.createSelect().parent(ls);
@@ -109,12 +110,13 @@ new p5((p) => {
                  `<br>Kuvaajan akselit: ${ax.x[2].split(' ')[0]} 0…${fi(ax.x[0], inv ? 2 : 0)} ${ax.x[2].split(' ')[1].slice(1, -1)}, ` +
                  `${ax.y[2].split(' ')[0]} 0…${ax.y[0]} ${ax.y[2].split(' ')[1].slice(1, -1)}. ` +
                  `Taulukossa ${rows.length}/${MAX_ROWS} mittausta${full ? ', taulukko on täynnä' : ''}.`);
-    let h = `<table><thead><tr><th>V (ml)</th><th>1/V (1/ml)</th><th>p (kPa)</th><th>T (K)</th><th>${cName} (${cUnit})</th></tr></thead><tbody>`;
+    const td = '<td style="padding:.4rem .5rem">', th = '<th style="padding:.4rem .5rem">';   // narrow cells, five columns fit a phone
+    let h = `<table><thead><tr>${th}V (ml)</th>${th}1/V (1/ml)</th>${th}p (kPa)</th>${th}T (K)</th>${th}${cName} (${cUnit})</th></tr></thead><tbody>`;
     for (const r of rows) {
       const Vm = r.V * 1e6, pr = r.p / 1000;
-      h += `<tr><td>${fi(Vm, 1)}</td><td>${fs(1 / Vm)}</td><td>${fi(pr, 1)}</td><td>${fi(r.T, 2)}</td><td>${fi(cFn(Vm, pr, r.T), cDec)}</td></tr>`;
+      h += `<tr>${td}${fi(Vm, 1)}</td>${td}${fs(1 / Vm)}</td>${td}${fi(pr, 1)}</td>${td}${fi(r.T, 2)}</td>${td}${fi(cFn(Vm, pr, r.T), cDec)}</td></tr>`;
     }
-    if (!rows.length) h += '<tr><td colspan="5">Ei mittauksia. Paina Tallenna mittaus.</td></tr>';
+    if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .5rem">Ei mittauksia. Paina Tallenna mittaus.</td></tr>';
     h += '</tbody></table>';
     if (table.elt.innerHTML !== h) table.elt.innerHTML = h;
     window.simState = { mode, V: V * 1e-6, p: pk * 1000, T, constant: c * (iso ? 1e-3 : mode === 'isobaarinen' ? 1e-6 : 1e3),
