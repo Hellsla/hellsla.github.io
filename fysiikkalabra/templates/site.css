@@ -45,7 +45,7 @@ blockquote{margin:1.4rem 0;padding:1rem 1.2rem;border-left:4px solid var(--accen
 blockquote p{margin:0}
 li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-@media (max-width:420px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* phone: display maths a step smaller (1.21em → 1.08em) so a 25-character row fits 360 px */
+@media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.08em) so the widest row (fy3-3) fits 360 px; at 390 px and up nothing overflows, so formulas stay full size */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 
 /* front page and module pages */
