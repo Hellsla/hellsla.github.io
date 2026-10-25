@@ -19,7 +19,7 @@ Content is data: one folder per lesson under `content/<course>/<lesson-id>/`.
 
 ## Physics and maths conventions
 - SI units only; write units upright with a thin space: `9,81 m/s²`. Decimal comma in Finnish text, decimal point in JSON.
-- g = 9,81 m/s². Three significant figures in final answers unless the data has fewer.
+- g = 9,81 m/s², and g is always written in m/s² (never N/kg). Three significant figures in final answers unless the data has fewer.
 - Vectors in bold in LaTeX (`\mathbf{F}`), magnitudes plain (`F`).
 - Every formula in a lesson appears in display LaTeX once, with symbols named the first time.
 - Every exercise has a numeric or short-text `answer`, a `unit`, and a `tolerance`.
