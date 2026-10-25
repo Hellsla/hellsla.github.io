@@ -17,12 +17,13 @@ a["fy3-5-L2-01"] = 45 - W_comp                         # Q = ΔU − W = 45 J �
 Q_kettle = 2.0e3 * 90 / 1000                           # Q_in = P t = 2000 W · 90 s = 180 000 J = 180 kJ
 a["fy3-5-L2-02"] = Q_kettle + (-20)                    # ΔU = 180 kJ − 20 kJ = 160 kJ
 a["fy3-5-L2-03"] = (-1.2e3) - (-2.0e3)                 # steam: ΔU = −1200 J, W = −2000 J -> Q = ΔU − W = +800 J
-W_blend = 250 * 40 / 1000                              # blade work W = P t = 250 W · 40 s = 10 000 J = 10 kJ
-a["fy3-5-L2-04"] = 2.0 + W_blend                       # frozen-berry smoothie colder than kitchen: Q = +2,0 kJ -> ΔU = 12 kJ
+W_blend = (12 - 2.0) * 1000                            # smoothie: ΔU = 12 kJ, Q = +2,0 kJ -> blade work W = ΔU − Q = 10 kJ = 10 000 J
+a["fy3-5-L2-04"] = W_blend / 250                       # blending time t = W / P = 10 000 J / 250 W = 40 s
 # Level 3: reasoning or an unfamiliar context
 W_pump = 120 * 0.15                                    # plugged pump: W = F s = 18 J on the air
 a["fy3-5-L3-01"] = 0 - W_pump                          # constant temperature, same air -> ΔU = 0, Q = −W = −18 J
 n, m = 12, 5.0                                         # 12 descents of a 5,0 kg mass, insulated bath: Q = 0, ΔU = W
 a["fy3-5-L3-02"] = 1.0e3 / (n * m * g)                 # ΔU = n m g h -> h = 1000 J / (12 · 5,0 kg · 9,81 m/s²) = 1,699 m -> 1,7 m
-a["fy3-5-L3-03"] = -90 - (-250)                        # Q = dU - W: the gas does 250 J of work and loses only 90 J, so 160 J came in as heat
+dU_A = 400 + (-150)                                    # route A: Q = +400 J, gas does 150 J of work W = −150 J -> ΔU = 250 J
+a["fy3-5-L3-03"] = dU_A - (-60)                        # route B: same initial and final temperature, so same ΔU; W = −60 J -> Q = ΔU − W = 310 J
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
