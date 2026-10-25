@@ -118,13 +118,16 @@ def section(text, name):
 
 
 def first_row_has_numbers(frag):
-    """True when the first row of a display calculation already contains numbers (rule: symbols first).
-    Sub- and superscript digits (T_1, m^3, 10^{-6}) and \\frac{1}{2}-style constants in subscripts do not count."""
+    """True when the first row of a display calculation already has substituted values, i.e. numbers with units
+    (rule: symbols first). Constants such as \\frac{1}{2} or 273,15 in a symbolic formula, and sub- and superscripts
+    (T_1, m^3, P_\\text{seinä}), do not count."""
     body = re.sub(r"\\begin\{aligned\}|\\end\{aligned\}", "", frag).strip()
     first = re.split(r"\\\\", body)[0]
     if "=" not in first: return False
-    first = re.sub(r"[_^]\{[^}]*\}|[_^]\d", "", first)
-    return bool(re.search(r"\d", first))
+    first = re.sub(r"[_^]\\(?:text|mathrm|textsf)\{[^}]*\}|[_^]\{[^}]*\}|[_^]\w", "", first)
+    has_digit = re.search(r"\d", first)
+    has_unit = re.search(r"\\(?:text|textsf|mathrm)\{|\\%|\{\}\^\\circ", first)
+    return bool(has_digit and has_unit)
 
 
 def check_lesson_form(L, text):
