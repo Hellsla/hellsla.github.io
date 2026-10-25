@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 307c0dfc144588a5
+CONTENT-HASH: 941320a85db9b4cb
 
-Re-review after the human-ordered change (g in m/s², never N/kg). Hash before and after: 307c0dfc144588a5 (unchanged).
+Final tester check, fy3-1 (wording-only edits since last PASS).
 
-1. test_sims.py: `PASS preview/fy3-1  [] []` (no console errors, no failed assertions; 19 assertions).
-2. Test file history (`git log -p -3 -- tests/sims/fy3-1.json`, commit cf407aa): only two strings changed, the note of the g assertion ("9,81 N/kg" to "9,81 m/s²") and the readout assertion (`x.includes('g = 9,81 N/kg')` to `'g = 9,81 m/s²'`, with its note). No expected value, tolerance or expression was loosened. The assertions cover the sim-spec (G = m g, four bodies, stretch/arrow/bars proportional to G, canvas size, options, slider unit, readout).
-3. preview/fy3-1-sim.js is identical to content/FY3/fy3-1/sim.js (diff empty). `grep -c "N/kg"` is 0 in preview/fy3-1.html, preview/fy3-1-sim.js and every file of content/FY3/fy3-1 (including review/).
-4. Own Playwright run (viewports 1280, 390, 320 px), console/page errors: `[]` at all three widths. No horizontal overflow.
-5. For all four bodies (g 1,62 / 3,71 / 9,81 / 24,8) at m = 1, 7, 10, 33, 100 kg: simState.G = m g (exact to 1e-9), simState.g and body correct, stretch/G = 190/2480, arrow/G = 110/2480, every bar/(m g) = 220/2480 (all constants), and readout contains "m/s²". Result at every width: `proportionality/G all ok: True`.
-6. Text: DOM body text and full page HTML contain no "N/kg". Canvas fillText strings (hooked) are only "n kg" and "x N" values; none contains "N/kg". Readout: `Massa m = 10 kg (sama kaikkialla) | g = 9,81 m/s² (Maa) | G = m · g = 98,1 N`.
-7. Canvas 600x400 at all widths; select options `['Kuu','Mars','Maa','Jupiter']`; slider label `Massa m = 10 kg` (unit kg).
+1. gate.py --hash fy3-1 -> 941320a85db9b4cb (start and end, unchanged).
+2. test_sims.py fy3-1 -> `PASS preview/fy3-1  [] []`
+3. `git diff 975714b~1 975714b --stat -- content/FY3/fy3-1/sim.js tests/sims/fy3-1.json` -> empty output: neither file changed in the last commit.
+4. Own Playwright run (preview/fy3-1.html, headless Chromium):
+   - 1280 px: console errors/warnings [], page errors [], no horizontal scroll.
+   - 320 px: console errors/warnings [], page errors [], no horizontal scroll.
+   - G = m g checked for Kuu 1,62 / Mars 3,71 / Maa 9,81 / Jupiter 24,8 at m = 1, 7, 25, 50, 100 kg (20 combinations): 0 mismatches; simState.m and simState.g also correct (e.g. Mars 25 kg 92.75, Jupiter 100 kg 2480, Kuu 1 kg 1.62).
+   - Proportionality over all 20 combinations: stretch/G = 0.0766129 (min = max), arrow/G = 0.0443548 (min = max), each bar/G constant per body.
+   - Readout (DOM text): 'Massa m = 100 kg (sama kaikkialla)\ng = 24,80 m/s² (Jupiter)\nG = m · g = 2480,0 N' -> g in m/s².
+   - "N/kg" in page HTML: False; in visible body text: False.
 
-Missing assertions: none. No failures.
+No failures. No missing assertions noted.
