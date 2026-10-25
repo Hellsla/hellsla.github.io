@@ -1,56 +1,50 @@
 VERDICT: PASS
-CONTENT-HASH: 8fb367b0d6fd83e0
+CONTENT-HASH: 569e2236e4eed0be
 
-Physics-expert review, fy3-1, round 3 (final). Hash checked at start and at end: 8fb367b0d6fd83e0 both times (unchanged).
-No real physics, number, unit or scope errors. Findings below are advisory only and do not block publication.
+Physics-expert re-review of fy3-1 after publication: bar chart rescaled to the current mass, answers.py added, proofreader wording applied. Lint: 0 errors, 0 warnings. Domain hash 569e2236e4eed0be at start and at end (unchanged).
 
-## Checked and correct (no action)
+## Blocking
+(none)
 
-- lesson.md:6-14 — Force as a measure of interaction, 1 N is about the weight of a 100 g apple (0,1 kg · 9,81 = 0,98 N), weight is the Earth-body interaction strength, mass is the same everywhere. All in FY3 scope (MAOL: weight, spring-balance measurement, G = mg). No Newton's laws, no weight-as-cause-of-acceleration, no vectors. The arrow in the figure is only a drawing of the direction, not vector algebra.
-- lesson.md:10 — Spring proportionality: stated with the "not stretched too far" condition and the line through the origin; 5,0 N / 2,0 cm gives 10 N / 4,0 cm and 2,5 N / 1,0 cm, correct.
-- lesson.md:12 — Calibration with identical small weights and doubling is correct for a linear spring (stretch proportional to number of weights, so marks 1 N, 2 N, ...).
-- lesson.md:17-21 — G = mg with g in N/kg is the right FY3 reading. The softened paragraph is acceptable: it says 9,81 equals FY1's free-fall acceleration in number, that the course uses N/kg, and that the reason for the equality comes in FY4. It does not claim g is an acceleration here and does not deduce a motion law.
-- lesson.md:23-28 — g table: Moon 1,62, Mars 3,71, Earth 9,81, Jupiter 24,8 N/kg (1 bar cloud-top level) are standard values. The note that the values refer to the surface (Jupiter: cloud tops) is right.
-- lesson.md:45-47 — 120 · 9,81 = 1177,2 N ≈ 1180 N = 1,18 kN; 120 · 3,71 = 445,2 N ≈ 445 N. Correct.
-- lesson.md:52 — 70 kg gives 686,7 N ≈ 690 N (2 s.f.). The bathroom-scale remark is correct: a scale graduated in Earth (force / 9,81 N/kg) shows 1,62/9,81 = 0,165, about a sixth, of the mass on the Moon.
-- lesson.md:3, 14 — "one sixth on the Moon": 1,62 / 9,81 = 0,165. Correct.
-- exercises.json L3-02 (lifting) — the lifting-force assumption is stated in the task text ("tuottaa voiman, joka on yhtä suuri kuin tämän massan paino") and so the task is well-posed without dynamics; this is also FY3-compatible (force compared, nothing accelerated).
-- solutions.md — all reasoning is correct (mass fixed, G = mg at each place, proportionality for the spring, sanity checks numerically right: 294 N, 83 %, 0,38, 6,06 ratio, 2,53 ratio). No wrong reasoning found.
-- exit-ticket.json — all three answers correct (29 N / 4,9 N, about a sixth; 7,5 cm; 70 kg is about 690 N).
-- sim.js:12,42,43,47,48,77 — BODIES g values 1,62 / 3,71 / 9,81 / 24,8 N/kg are correct; G = m · g; stretch, arrow and bars all use the same G / G_FULL with G_FULL = 2480 N. Numerical check of the ratio stretch/G over m = 1..100 and all four bodies: constant 0,076613 px/N (min = max), so stretch is exactly proportional in simState. Arrow and bars use the same pattern. For both mass and body changes the three quantities scale together. Layout at full scale fits (spring tip 270 px, block 76 px, arrow tip 386 px, canvas 400 px).
+## Polish
+1. sim-spec.md:1 — "Siksi jousi venyy ja palkit kasvavat näkyvästi, kun massaa kasvatetaan" is out of date. With full height = m · 24,8 N the bar heights do not depend on m (Kuu 14,4 px, Mars 32,9 px, Maa 87,0 px, Jupiter 220 px for every mass). Only the value labels and the printed scale change. The test note in tests/sims/fy3-1.json already says this. — Human to reword, e.g. "Siksi jousi venyy ja nuoli pitenee näkyvästi, kun massaa kasvatetaan; palkit näyttävät painojen suhteen, ja palkkien lukemat kasvavat massan mukana."
+2. sim.js:3 — The comment "spring stretch, weight arrow and bar heights are all proportional to G" holds for the bars only at a fixed mass, across bodies. — Say "bar heights proportional to G at the current mass".
+3. sim.js:9, sim-spec.md:1 — The 2 px minimum bar height can no longer take effect (smallest bar 1,62/24,8 · 220 = 14,4 px). This is harmless. — Optionally drop it from the comment and the spec.
 
-## Advisory findings (non-blocking)
+## Checked
+- lesson.md: G = mg with g in N/kg, the spring proportionality condition, the calibration and the g table (1,62 / 3,71 / 9,81 / 24,8) are correct and stay within FY3 scope (no Newton's laws, no vectors).
+- lesson.md:45, 76 (proofreader edits): "Jupiterissa pilvien yläpinnan tasoa" and "lukema muuttuu, kun sama kappale viedään toiseen paikkaan" are both physically correct.
+- lesson.md numbers: 120 · 9,81 = 1177,2 ≈ 1180 N; 120 · 3,71 = 445,2 N; 70 · 9,81 = 686,7 ≈ 690 N; 1,62/9,81 = 0,165 (about a sixth).
+- answers.py: each line uses the right formula and conversion (60 g = 0,060 kg; m = G/g; same mass gives weight ∝ g; same force gives m = F/g; the scale reading is G/9,81). The g dict matches the lesson table. Every answer is within its tolerance.
+- Hand recomputation of three answers: L2-04 0,20 · 9,81 · 3 = 5,886 N; L3-01 (18/9,81) · 3,71 = 6,807 N; L3-03 6,0 · 1,62/9,81 = 0,991 kg.
+- solutions.md: the reasoning is correct, including the reworded sanity checks for L2-01 and L2-02 (the weight of 1 kg is about 10 N, the weight of 100 g is about 1 N).
+- exit-ticket.json: 29 N and 4,9 N; 7,5 cm; 690 N are all correct.
+- sim.js: G = m·g. stretch/G = 0,076613 px/N and arrow/G = 0,044355 px/N on a fixed scale. Bars: bar/G is the same for all four bodies at each m, and chartFull = m · 24,8 N matches the printed scale label.
+- scripts/test_sims.py fy3-1: PASS.
 
-1. sim.js:68, 77 (drawing) / sim-spec.md — The drawn arrow has a 3 px floor and the drawn bars a 2 px floor, so the drawing is strictly proportional to G only for G >= 67,6 N (arrow) and G >= 22,5 N (bars). Below that the shapes do not change with G. At the default 10 kg, Moon (16,2 N) and Mars (37,1 N) show arrow 3 px and 3 px (true 0,7 and 1,7 px), and Moon/Mars bars 2 px and 3,3 px; the spring stretch is only 1,2 px vs 2,8 px. The text readout stays exact, and simState.stretch/arrow/bars hold the pure values, and the floors are documented in sim-spec.md and the code comment, so this is not a physics error. Optional fix: raise the default mass (for example to 50 kg: Moon 81 N, Mars 186 N, Earth 491 N, all above both floors) so the first view shows proportional arrow and bars, or add a one-line hint in the sim note to try large masses.
-2. lesson.md:12 — Calibration uses weights "noin 1 N" to define the 1 N mark, which is mildly circular (the unit is being defined by something already measured in it). Acceptable at this level because only proportionality is used to mark 2 N, 3 N ...; optional rewording: "samanlaisia kappaleita; yhden kappaleen aiheuttama venymä merkitään yhdeksi yksiköksi (noin 1 N, jos kappaleen massa on noin 100 g)". Not required.
-3. exercises.json:38, 22-24 vs lesson.md:21 — grammar only (Jupiterissa / Jupiterilla, "Jupiterissa, missä g ="); belongs to the proofreader, no physics impact.
-
-## Python output (python3 -I, from the problem texts alone; g = 9,81 unless the task gives g or says read it from the table)
-
+## Python output
 ```
-fy3-1-L1-01 computed=39.24 answer 39 N relerr=0.0061 OK
-fy3-1-L1-02 computed=6 answer 6.0 cm relerr=0.0000 OK
-fy3-1-L1-03 computed=48.6 answer 49 N relerr=0.0082 OK
-fy3-1-L1-04 computed=1.5 answer 1.5 cm relerr=0.0000 OK
-fy3-1-L1-05 computed=62 answer 62 N relerr=0.0000 OK
-fy3-1-L2-01 computed=4.9949 answer 5.0 kg relerr=0.0010 OK
-fy3-1-L2-02 computed=0.5886 answer 0.59 N relerr=0.0024 OK
-fy3-1-L2-03 computed=1187.6 answer 1190 N relerr=0.0021 OK
-fy3-1-L2-04 computed=5.886 answer 5.9 N relerr=0.0024 OK
-fy3-1-L3-01 computed=6.8073 answer 6.8 N relerr=0.0011 OK
-fy3-1-L3-02 computed=133.22 answer 133 kg relerr=0.0017 OK
-fy3-1-L3-03 computed=0.99083 answer 0.99 kg relerr=0.0008 OK
-exit: 3*g=29.4 3*1.62=4.86 ratio=0.165 ; 20/8*3 = 7.5 ; 70*g = 686.7
-lesson: 120g=1177.2 120*3.71=445.2 70g=686.7 ; 1.62/9.81=0.1651 ; 0.1 kg apple = 0.981 N
-sim (stretch px, arrow px, bar px; pure values):
-Maa 10 kg: G=98.10 stretch=7.52 arrow=4.35 bar=8.70
-Maa 100 kg: G=981.00 stretch=75.16 arrow=43.51 bar=87.02
-Jupiter 100 kg: G=2480.00 stretch=190.00 arrow=110.00 bar=220.00
-Kuu 10 kg: G=16.20 stretch=1.24 arrow=0.72 (drawn 3.00) bar=1.44 (drawn 2.00)
-arrow floor G< 67.6  bar floor G< 22.5  1px stretch at G=13.05
-stretch/G over m=1..100, 4 bodies: min=max=0.0766129 px/N
+fy3-1-L1-01 39.24 39 N relerr=0.0061
+fy3-1-L1-02 6.0 6.0 cm relerr=0.0000
+fy3-1-L1-03 48.6 49 N relerr=0.0082
+fy3-1-L1-04 1.5 1.5 cm relerr=0.0000
+fy3-1-L1-05 62.0 62 N relerr=0.0000
+fy3-1-L2-01 4.9949 5.0 kg relerr=0.0010
+fy3-1-L2-02 0.5886 0.59 N relerr=0.0024
+fy3-1-L2-03 1187.55 1190 N relerr=0.0021
+fy3-1-L2-04 5.886 5.9 N relerr=0.0024
+fy3-1-L3-01 6.8073 6.8 N relerr=0.0011
+fy3-1-L3-02 133.2222 133 kg relerr=0.0017
+fy3-1-L3-03 0.9908 0.99 kg relerr=0.0008
+L2-04 by hand: G=0.20*9.81=1.9620 N; stretch x3 -> 5.8860 N
+L3-01 by hand: m=18/9.81=1.8349 kg; G_Mars=6.8073 N
+L3-03 by hand: G=6.0*1.62=9.720 N; reading=0.9908 kg
+m=1 chartFull=24.8 N bars px= [14.37, 32.91, 87.02, 220.0] bar/G px/N= [8.871, 8.871, 8.871, 8.871]
+m=10 chartFull=248.0 N bars px= [14.37, 32.91, 87.02, 220.0] bar/G px/N= [0.8871, 0.8871, 0.8871, 0.8871]
+m=40 chartFull=992.0 N bars px= [14.37, 32.91, 87.02, 220.0] bar/G px/N= [0.2218, 0.2218, 0.2218, 0.2218]
+m=100 chartFull=2480.0 N bars px= [14.37, 32.91, 87.02, 220.0] bar/G px/N= [0.0887, 0.0887, 0.0887, 0.0887]
+smallest bar (Kuu) = 14.37 px > 2 px floor
+stretch/G = 0.076613 px/N, arrow/G = 0.044355 px/N (fixed)
+lesson: 120*9.81=1177.2 120*3.71=445.2 70*9.81=686.7 1.62/9.81=0.1651
+exit: 3*9.81=29.43 3*1.62=4.86 20/8*3=7.50
 ```
-
-All 12 answers are within the stated tolerance (0,02) of the recomputed values, and every answer is rounded to the data's significant figures; a student using g = 9,8 stays within tolerance on all g-dependent tasks (L1-01 39,2; L2-03 1186; L3-01 6,8).
-
-Hash at end of review: 8fb367b0d6fd83e0 (unchanged).
