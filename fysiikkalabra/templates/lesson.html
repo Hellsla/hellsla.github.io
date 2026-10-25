@@ -20,15 +20,13 @@
 </header>
 <nav class="crumbs" aria-label="Polku"><a href="index.html">Fysiikkalabra</a> › <a href="{{course}}.html">{{course}}</a> › {{title}}</nav>
 {{notice}}
-<nav class="toc" aria-label="Sivun osat"><a href="#teoria">Teoria</a>{{toc_sim}}<a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a></nav>
+<nav class="toc" aria-label="Sivun osat">{{toc}}</nav>
 <main class="reading">
-<article id="teoria">{{lesson_html}}</article>
-<section id="exercises"><h2>Tehtävät</h2><p class="howto">Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.</p>{{exercises_html}}</section>
-<section id="exit">{{exit_html}}</section>
+{{main}}
 </main>
 <footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="{{course}}.html">← {{course}}-moduuli</a><a href="{{home}}">← Takaisin portfolioon</a></footer>
 </div>
 <script src="vendor/katex/katex.min.js"></script>
 <script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
-<script src="lesson.js"></script>
+<script src="lesson.js"></script>{{scripts}}
 </body></html>

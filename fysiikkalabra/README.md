@@ -43,6 +43,10 @@ are self-hosted. Pages and headless tests work without a CDN.
 `curriculum.json` covers FY1–FY8 with module goals, central contents and a proposed lesson-slot list per
 module, generated from the LOPS 2019 texts in `docs/lops2019/`. The reference lesson is `content/_gold/`.
 
+## Inquiry sequence
+
+A lesson with `inquiry.json` is rendered as inquiry stages (Herätä kiinnostus → Ennusta → Tutki → Selitä → Sovella → Tarkista osaamisesi) around the same theory, simulation, exercises and exit ticket. Format, activity types, the simulation adapter, migration steps and tests: `docs/inquiry.md`; the teacher's brief: `docs/inquiry-spec.md`. Validate with `python scripts/inquiry.py <id>`, test with `python scripts/test_inquiry.py`.
+
 ## Exercise schema
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }

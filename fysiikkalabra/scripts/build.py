@@ -12,9 +12,12 @@ Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` li
 The simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
 or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side answer check and, depending on
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
+A lesson with inquiry.json (scripts/inquiry.py, docs/inquiry.md) is laid out as inquiry stages instead: the
+theory sections, simulation, exercises and exit ticket are the same parts, placed where the stages say.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
+import inquiry
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/
@@ -30,7 +33,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
@@ -159,26 +162,46 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
             ex_html += exercise_html(e, solutions.get(e["id"]) if show else None)
         ex_html += "</ol></details>"
     exit_q = json.loads((folder / "exit-ticket.json").read_text())
-    exit_html = "<h2>Lähtölippu</h2><ol>" + "".join(
+    exit_items = "<ol>" + "".join(
         f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>Vastaus</summary><p>{nbsp_units(q['a'])}</p></details></li>"
         for q in exit_q) + "</ol>"
     lesson_md = (folder / "lesson.md").read_text()
     lesson_html = staged_example(nbsp_units(render_md(lesson_md)))
+    inq = inquiry.load(folder)
+    if inq is not None:
+        errs = inquiry.validate(folder, inq, lesson_md)
+        if errs: sys.exit("\n".join(errs))
+    howto = '<p class="howto">Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.</p>'
     sim = ""
     if (folder / "sim.js").exists():
         shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js")
-        sim = (f'<section id="sim"><h2>Simulaatio</h2><div id="sim-root"></div>'
+        sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}><div id="sim-root"></div>'
                f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{meta["id"]}-sim.js"></script></section>')
-        if "<!-- sim -->" in lesson_html:
-            lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)
-        elif re.search(r"<h2[^>]*>Esimerkki", lesson_html):
-            lesson_html = re.sub(r"(<h2[^>]*>Esimerkki)", sim + r"\1", lesson_html, count=1)
-        else:
-            lesson_html += sim
     name = f"{meta['id']}.html"
+    if inq is None:                                   # classic layout: theory (with the sim inside), exercises, exit ticket
+        if sim and "<!-- sim -->" in lesson_html: lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)
+        elif sim and re.search(r"<h2[^>]*>Esimerkki", lesson_html): lesson_html = re.sub(r"(<h2[^>]*>Esimerkki)", sim + r"\1", lesson_html, count=1)
+        elif sim: lesson_html += sim
+        toc = '<a href="#teoria">Teoria</a>' + ('<a href="#sim">Simulaatio</a>' if sim else "") + '<a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a>'
+        main = (f'<article id="teoria">{lesson_html}</article>\n'
+                f'<section id="exercises"><h2>Tehtävät</h2>{howto}{ex_html}</section>\n'
+                f'<section id="exit"><h2>Lähtölippu</h2>{exit_items}</section>')
+    else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
+        lesson_html = lesson_html.replace("<!-- sim -->", "")
+        pieces = re.split(r"(?=<h2>)", lesson_html)
+        intro = pieces[0] if not pieces[0].startswith("<h2>") else ""
+        sections = {}
+        for piece in pieces[1:] if intro or len(pieces) > 1 else []:
+            m = re.match(r"<h2>(.*?)</h2>", piece)
+            if m: sections[m.group(1)] = re.sub(r"^<h2>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>', piece, count=1)
+        parts = {"intro": intro, "sections": sections, "sim": sim,
+                 "exercises": f'<div id="exercises"><h3>Tehtävät</h3>{howto}{ex_html}</div>',
+                 "exit": f'<div id="exit"><h3>Lähtölippu</h3>{exit_items}</div>'}
+        body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
+        main = f'<article id="teoria" class="inquiry">{body}</article>'
     html = (tpl.replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", NOTICE[meta["state"]])
-            .replace("{{lesson_html}}", lesson_html).replace("{{exercises_html}}", ex_html).replace("{{exit_html}}", exit_html)
-            .replace("{{toc_sim}}", '<a href="#sim">Simulaatio</a>' if sim else "")
+            .replace("{{toc}}", toc).replace("{{main}}", main)
+            .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
             .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", BASE_URL + name)
             .replace("{{home}}", HOME))
     (SITE / name).write_text(html)
@@ -244,7 +267,7 @@ if SITE.name == "site.tmp":                      # a lesson leaves the live site
             removed.append(lid)
             print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {lid} is on the live site but its reviews are not current ({why}); this build removes it")
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected = ["index.html", "site.css", "lesson.js", "sim-embed.js"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids]
+    expected = ["index.html", "site.css", "lesson.js", "sim-embed.js", "inquiry.js"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids]
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
