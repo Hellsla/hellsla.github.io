@@ -13,7 +13,8 @@
     "vuorovaikutus",
     "paino",
     "massa",
-    "newton"
+    "newton",
+    "putoamiskiihtyvyys"
   ],
   "sim": true,
   "image": false,

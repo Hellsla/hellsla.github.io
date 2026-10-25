@@ -156,6 +156,18 @@
     "locked": false
   },
   {
+    "term": "putoamiskiihtyvyys",
+    "definition": "Kiihtyvyys, jolla vapaasti putoava kappale liikkuu, kun ilmanvastusta ei ole. Maan pinnalla sen arvo on g = 9,81 m/s², ja sama luku kertoo, kuinka monta newtonia yhden kilogramman massan paino on.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "paino",
+      "kiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
     "term": "systeemi",
     "definition": "Termodynaaminen systeemi on tutkimista varten rajattu osa maailmaa. Kaikki sen ulkopuolella on ympäristöä, ja systeemi on suljettu, jos siitä ei pääse ainetta ulos tai sisään.",
     "lessons": [

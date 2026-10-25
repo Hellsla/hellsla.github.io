@@ -19,7 +19,7 @@ Voiman voi mitata voimamittarilla. Siinä on jousi, joka venyy sitä enemmän, m
   <text x="302" y="96" fill="currentColor">voiman mukaan</text>
 </svg>
 
-Kappaleen paino on Maan ja kappaleen välisen vuorovaikutuksen voimakkuuden mitta. Se on voima, ja sen yksikkö on newton. Massa on aivan eri asia: se kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuun massa on paljon pienempi kuin Maan, joten Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, ja astronautti painaa Kuussa vähemmän.
+Kappaleen paino on Maan ja kappaleen välisen vuorovaikutuksen voimakkuuden mitta. Se on voima, ja sen yksikkö on newton. Massa on aivan eri asia: se kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on paljon pienempi ja kevyempi kuin Maa, joten Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, ja astronautti painaa Kuussa vähemmän.
 
 ## Kaava
 Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin paljon kuin yksi, joten paino on suoraan verrannollinen massaan:
@@ -34,6 +34,8 @@ missä G on paino (N), m massa (kg) ja g putoamiskiihtyvyys (m/s²), Maan pinnal
 | Mars | 3,71 |
 | Maa | 9,81 |
 | Jupiter | 24,8 |
+
+Kuun g on noin kuudesosa Maan arvosta (1,62/9,81 ≈ 0,17), joten sama massa painaa Kuussa noin kuudesosan siitä, mitä Maassa. Tämä vastaa alun kysymykseen astronautista.
 
 ## Esimerkki
 Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?

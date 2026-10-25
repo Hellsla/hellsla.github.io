@@ -41,6 +41,20 @@ def render_md(text, **kw):
     return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html)
 
 
+UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
+
+
+def nbsp_units(text):
+    """A non-breaking space between a number and its unit in page text, so '9,81 m/s²' never breaks at the
+    line end on a phone. Maths is stashed first, so LaTeX spacing is untouched."""
+    maths = []
+    def stash(m):
+        maths.append(m.group(0)); return f"MATHTOKEN{len(maths) - 1}X"
+    text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
+    text = re.sub(rf"(?<=\d) (?={UNIT}(?![\wäöå²³/]))", "\u00a0", text)
+    return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], text)
+
+
 def fi(x):
     """Numbers with a decimal comma in page text (JSON keeps the point)."""
     return str(x).replace(".", ",") if isinstance(x, (int, float)) else str(x)
@@ -70,7 +84,7 @@ def solutions_of(folder):
     out = {}
     for block in re.split(r"^## ", f.read_text(), flags=re.M)[1:]:
         head, _, body = block.partition("\n")
-        out[head.strip()] = render_md(body.strip(), extensions=["nl2br"])
+        out[head.strip()] = nbsp_units(render_md(body.strip(), extensions=["nl2br"]))
     return out
 
 
@@ -85,7 +99,7 @@ def exercise_html(e, solution_html):
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + '<button type="submit">Tarkista</button><output aria-live="polite"></output></form>')
     sol = f'<details class="solution"><summary>Ratkaisu</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
-    return (f'<li id="{e["id"]}"><p class="task">{e["text"]}</p>{check}'
+    return (f'<li id="{e["id"]}"><p class="task">{nbsp_units(e["text"])}</p>{check}'
             f'<details class="answer"><summary>Vastaus</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -107,10 +121,10 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
         ex_html += "</ol></details>"
     exit_q = json.loads((folder / "exit-ticket.json").read_text())
     exit_html = "<h2>Lähtölippu</h2><ol>" + "".join(
-        f"<li>{q['q']}<details class=\"answer\"><summary>Vastaus</summary><p>{q['a']}</p></details></li>"
+        f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>Vastaus</summary><p>{nbsp_units(q['a'])}</p></details></li>"
         for q in exit_q) + "</ol>"
     lesson_md = (folder / "lesson.md").read_text()
-    lesson_html = render_md(lesson_md)
+    lesson_html = nbsp_units(render_md(lesson_md))
     sim = ""
     if (folder / "sim.js").exists():
         shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js")

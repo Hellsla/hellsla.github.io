@@ -27,8 +27,8 @@
     {
       "id": "fy3-1-L1-04",
       "level": 1,
-      "text": "Voimamittarin jousi venyy 2,0 cm, kun siihen vaikuttaa 5,0 N:n voima. Kuinka suuri voima venyttää jousta 3,0 cm?",
-      "answer": 7.5,
+      "text": "Voimamittarin jousi venyy 2,5 cm, kun siihen vaikuttaa 4,0 N:n voima. Kuinka suuri voima venyttää jousta 6,0 cm?",
+      "answer": 9.6,
       "unit": "N",
       "tolerance": 0.02
     },

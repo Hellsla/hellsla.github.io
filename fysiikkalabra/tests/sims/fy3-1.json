@@ -6,16 +6,24 @@
     "note": "G equals m g with the default settings"
   },
   {
+    "expr": "(() => { const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); return s.value==='Maa' && r.value==='10' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "on load the body is Maa and the mass 10 kg (this one must run before any setup changes the sliders)"
+  },
+  {
+    "setup": "const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); s.value='Maa'; r.value=10;",
     "expr": "window.simState.g",
     "expected": 9.81,
     "tol": 1e-06,
-    "note": "default body is Maa with g = 9,81 m/s² (first assertions run on the untouched page)"
+    "note": "Maa has g = 9,81 m/s²"
   },
   {
+    "setup": "const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); s.value='Maa'; r.value=10;",
     "expr": "window.simState.G",
     "expected": 98.1,
     "tol": 1e-06,
-    "note": "default mass 10 kg on Maa gives G = 98,1 N"
+    "note": "10 kg on Maa gives G = 98,1 N"
   },
   {
     "setup": "const s=document.querySelector('#sim-root select'); s.value='Kuu'; document.querySelector('#sim-root input[type=range]').value=5;",
