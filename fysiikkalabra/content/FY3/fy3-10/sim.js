@@ -193,7 +193,7 @@ new p5((p) => {
     p.fill(40); p.text('nopea', lx0 + lw + 5, yT); p.text('osuma seinään', xF, 394);
     p.fill(...FLASH); p.ellipse(xF - 10, 394 - ts(4), 5, 16); p.fill(255); p.ellipse(xF - 10, 394 - ts(4), 2, 8);
     p.textSize(ts(13)); const wV = p.textWidth('V = 100 %') / 2, yD = 368;      // V label between the left edge and the legend
-    const xm = Math.min(xF - 22 - wV, Math.max(x0 + 2 + wV, (x0 + xp) / 2));
+    const xm = Math.min(xF - 30 - wV, Math.max(x0 + 2 + wV, (x0 + xp) / 2));
     p.stroke(80); p.strokeWeight(1.2); p.line(x0, yD, xp, yD); p.line(x0, yD - 5, x0, yD + 5); p.line(xp, yD - 5, xp, yD + 5);
     p.noStroke(); p.fill(80); p.triangle(x0, yD, x0 + 7, yD - 3.5, x0 + 7, yD + 3.5); p.triangle(xp, yD, xp - 7, yD - 3.5, xp - 7, yD + 3.5);
     p.fill(40); p.textAlign(p.CENTER); p.text(`V = ${fi(Vrel * 100, 0)} %`, xm, 394);
