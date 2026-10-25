@@ -10,10 +10,11 @@ the current CONTENT-HASH. It is *legacy* when review/legacy.md does (a prototype
 two-review pipeline, kept visible by the teacher's approval of the migration PR until it is reworked). Anything
 else is a *draft*: the build leaves it out of site/ and warns if it was on the live site.
 
-The hash is taken over the lesson's content with formatting normalised (`normalized`): runs of spaces and tabs,
-trailing spaces, blank-line runs and JSON layout do not change it, so a purely mechanical cleanup keeps the
-reviews valid. Any other change (a word, a number, a LaTeX command, a line of sim.js) changes the hash and
-both reviews must run again. The rule is deliberately conservative: it never guesses what a change means.
+The hash is taken over the lesson's content with formatting normalised (`normalized`): line endings, trailing
+whitespace, blank-line runs and JSON layout do not change it, so a purely mechanical cleanup keeps the reviews
+valid. Any other change (a word, a number, a space inside a line, an indentation, a LaTeX command, a line of
+sim.js) changes the hash and both reviews must run again. The rule is deliberately conservative: it never
+guesses what a change means.
 """
 import datetime, hashlib, json, os, pathlib, re, sys
 
@@ -29,13 +30,15 @@ def find_lesson(lid):
 
 
 def normalized(text, name):
-    """Formatting-free view of a content file: JSON is re-serialised canonically; in text, runs of spaces and
-    tabs become one space, trailing spaces go, and runs of blank lines become one."""
+    """Formatting-free view of a content file that cannot hide a change of meaning: JSON is re-serialised
+    canonically (same data, same hash); in text only line endings, trailing whitespace and runs of blank lines are
+    dropped. Indentation and the spaces inside a line stay, because they carry meaning in Python, Markdown
+    (nested lists, code blocks), LaTeX (`\\text{}`) and JavaScript strings."""
     if name.endswith(".json"):
         return json.dumps(json.loads(text), sort_keys=True, separators=(",", ":"), ensure_ascii=False)
-    lines = [re.sub(r"[ \t]+", " ", l).rstrip() for l in text.splitlines()]
     out = []
-    for l in lines:
+    for l in text.replace("\r\n", "\n").split("\n"):
+        l = l.rstrip()
         if l == "" and out and out[-1] == "": continue
         out.append(l)
     while out and out[-1] == "": out.pop()

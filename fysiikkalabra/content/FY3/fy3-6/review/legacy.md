@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 553a7d3b2c18cb40
+CONTENT-HASH: c4275d7e4020e830
 
 Prototype lesson, published before the two-review pipeline. Kept visible by the teacher's approval of the
 migration pull request (2026-10-25). Not reviewed by the science and pedagogy reviewers: the page

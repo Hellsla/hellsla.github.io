@@ -24,8 +24,8 @@ token usage. Agents live in `.claude/agents/`, the command in `.claude/commands/
 
 ## The publishing rule
 `scripts/reviews.py` decides what is on the site: a lesson is **reviewed** when `review/science.md` and
-`review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash ignores
-formatting (whitespace, JSON layout) and changes on any content edit, which stales both reviews. A **legacy**
+`review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash ignores only
+line endings, trailing whitespace, blank-line runs and JSON layout; any other edit stales both reviews. A **legacy**
 lesson (`review/legacy.md`, written by `reviews.py legacy <id>` in the migration) was published before the
 pipeline and stays visible, labelled as a prototype, until a content edit retires the marker. Everything else
 is a **draft** and never reaches `site/`.
