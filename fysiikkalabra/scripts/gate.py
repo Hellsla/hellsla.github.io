@@ -83,6 +83,9 @@ def reopen(lid):
         print(f"{lid}: site/{lid}.html is missing, nothing to keep live"); return 1
     if "revision" in meta:
         print(f"{lid}: already under revision since {meta['revision']['opened']}"); return 0
+    if content_hash(folder) != meta["reviewed_hash"]:   # the live page is provably the reviewed render only if the source is untouched
+        print(f"{lid}: the source was edited after publication, so the live page cannot be certified; restore the lesson folder "
+              f"to its published state (git checkout), run --reopen, then make the edits"); return 1
     meta["revision"] = {"opened": str(datetime.date.today()), "site_hash": sh, "reviewed_hash": meta["reviewed_hash"]}
     (folder / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
     review = folder / "review"; review.mkdir(exist_ok=True)

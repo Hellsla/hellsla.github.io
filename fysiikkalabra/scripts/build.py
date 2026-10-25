@@ -12,6 +12,7 @@ or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side 
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
 """
 import json, sys, re, shutil, pathlib, html as _h, markdown
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from gate import content_hash   # same hash as the gate
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/
@@ -20,12 +21,18 @@ arg = sys.argv[1] if len(sys.argv) > 1 else None
 build_all = arg == "--all"; only = None if build_all else arg
 SITE = ROOT / ("preview" if (only or build_all) else "site"); SITE.mkdir(exist_ok=True)
 def revising():
-    """Published lessons whose source is under revision (gate.py --reopen): their live page is kept as is."""
+    """Published lessons whose source is under revision (gate.py --reopen): their live page is kept as is.
+    A published lesson whose source drifted without --reopen stops the plain build before anything is touched,
+    because rendering it would put unreviewed content on the live site."""
     out = {}
     for f in (ROOT / "content").glob("*/*/meta.json"):
         if f.parent.parent.name == "_gold": continue
         m = json.loads(f.read_text())
-        if m.get("status") == "reviewed" and m.get("revision"): out[m["id"]] = m
+        if m.get("status") != "reviewed": continue
+        if m.get("revision"): out[m["id"]] = m
+        elif m.get("reviewed_hash") and content_hash(f.parent) != m["reviewed_hash"]:
+            sys.exit(f"{m['id']}: source edited after publication and not under revision; a plain build would put unreviewed "
+                     f"content on the live site. Run `gate.py {m['id']} --reopen` (on the published source) or re-review it.")
     return out
 KEEP = revising() if SITE.name == "site" else {}
 if SITE.name == "site":                               # no stale pages in the published folder; preview/ is shared by
