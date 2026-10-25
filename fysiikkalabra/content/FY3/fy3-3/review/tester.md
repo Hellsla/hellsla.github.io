@@ -1,16 +1,47 @@
 VERDICT: PASS
-CONTENT-HASH: 3b1b29439e94b105
+CONTENT-HASH: 536cade809f2b051
 
-Round 2 tester review of fy3-3 (gas particle sim). No blocking failures.
+Hash checked at start and end of review: 536cade809f2b051 (unchanged).
 
-1. Gate/test runner: `python scripts/gate.py --hash fy3-3` = 3b1b29439e94b105 (expected). `test_sims.py fy3-3` run 3 times, raw output each time: `PASS preview/fy3-3  [] []` (no console errors, no failed assertions).
-2. Assertion coverage (tests/sims/fy3-3.json, 16 assertions, spec covered): theta = T - 273,15 at 300 K and 600 K (lines 2, 13); defaults T=300, V=1,0; speed sqrt(2) at 600 K and sqrt(1/3) at 100 K; pTheory formula; pressure 600 K > 2x 150 K; 0,5 dm3 > 2x 2,0 dm3; pRel within 30 % of theory at 300 K/1,0 dm3; readout text; canvas 600x400; slider units K and dm3; N = 80. No missing assertions.
-3. Console/page errors at 1280, 390, 360, 320 px: none (raw: `1280 errors [] ... 320 errors []`). No horizontal scroll (scrollWidth = innerWidth at all widths). Canvas stays 600x400 internally (CSS-scaled 574/324/294/254 px wide).
-4. theta = T - 273,15 and speeds: at nine (T,V) combos theta error 0.0 and speedCheck/(120*sqrt(T/300)) = 1.0 exactly (sim.js:66, speed at sim.js:25).
-5. Pressure vs simState.pTheory after 3 s settling. Mean of 40 samples over 8 s (relative deviation measured/theory): 300 K/1,0: mean 0.000, sd 0.047, max 0.122; 600 K/0,5: -0.012, sd 0.03, max 0.073; 100 K/0,5: -0.008, max 0.103; 450 K/1,5: -0.011, max 0.146; 600 K/2,0: -0.016, max 0.187; 300 K/2,0: -0.017, sd 0.10, max 0.19; 100 K/2,0: +0.020, sd 0.171, max 0.388. No systematic offset (effective-box fix at sim.js:57-59 works; means within 2 % of theory). 
-6. Non-blocking observation: instantaneous pRel (1,5 s window, sim.js:16,54-60) fluctuates more at low collision rate, i.e. large V and low T. At 100 K/2,0 dm3 45 % of samples deviate more than 15 % from theory (max 39 %); at 300 K/2,0 15 %. Statistical noise, no bias; sim.js:38 note tells students it varies. Optional: larger WINDOW (e.g. 150 frames) would calm it. Not a failure.
-7. Particles stay inside the box after V reduced 2,0 -> 0,5 (sim.js:50 clamps to the piston): pixel scan of the canvas found 0 of 2749 particle pixels outside the effective box.
-8. Deterministic start: fixed p.randomSeed(7) (sim.js:29); three fresh loads give identical first-frame state [pRel 0, speedCheck 120].
-9. Thermometer labels (sim.js:81-82): not clipped at 1280 or 320 px; ink bbox inside canvas (x 459-573 of 600, y up to 398 of 400 at 320 px; bottom "T K" label is tight, 2 px margin, but fully visible in screenshot). Labels left-aligned of tube, scale 600 K / 100 K visible at T=100 and 600.
-10. Readout (DOM, sim.js:63-65): "T = 300 K = 27 °C"; at 100 K/0,5: "T = 100 K = −173 °C ... teoria 67"; mean-speed line "0,71 × 300 K:n keskinopeus" at 150 K. Slider labels: "Lämpötila T = 300 K", "Tilavuus V = 1,0 dm³".
-11. Hash re-run at end: 3b1b29439e94b105 (unchanged).
+## 1. test_sims.py (3 runs)
+```
+PASS preview/fy3-3  [] []
+PASS preview/fy3-3  [] []
+PASS preview/fy3-3  [] []
+```
+tests/sims/fy3-3.json has 16 assertions covering theta, speed scaling, theory pressure, measured pressure trends, readout, canvas size, slider units, N. Coverage of sim-spec is adequate; no missing assertions.
+
+## 2. Own Playwright checks (preview/fy3-3.html)
+- Console/page errors: none at 1280, 390, 360, 320 px. Horizontal overflow 0 px at all widths.
+- Canvas attributes 600x400 at all widths (CSS-scaled to 574/324/294/254 px).
+- Slider labels: "Lämpötila T = 300 K", "Tilavuus V = 1,0 dm³" (units present).
+- Readout (DOM text): "T = 300 K = 27 °C / Hiukkasten keskinopeus: 1,00 × 300 K:n keskinopeus / Paine p ≈ ... (suhteellinen, 100 = 300 K ja 1,0 dm³), teoria 100".
+- theta - (T-273.15) = 0.0 at all tested T (100..600).
+- Speed = V_REF*sqrt(T/300): 100K 69.282, 200K 97.9796, 450K 146.9694, 600K 169.7056 (all equal expected to 4 dp).
+- Deterministic start: seed fixed (p.randomSeed(7)); default state T=300, V=1, vRel=1, N=80, speedCheck=120 on every load.
+- Particles stay in box after V reduced 2.0 -> 0.5 dm³: green particle pixels right of the piston = 0 of 2112 (canvas pixel count, 300 ms after change). Code clamps positions every frame.
+- Thermometer labels "600 K"/"100 K" placed left of tube; screenshots at 1280 and 320 px show them fully visible, not clipped; "300 K" under the bulb visible.
+
+## 3. Measured pressure vs pTheory
+Fresh page, set (T,V), 3 s then 8 s (deviation of pRel from pTheory):
+```
+100 0.5  3s -21.2%  8s -13.6%
+100 2    3s -34.4%  8s -18.8%
+100 1    3s -30.2%  8s -15.9%
+200 1    3s  +6.7%  8s  +6.9%
+300 1.5  3s  -4.9%  8s -17.6%
+450 1.5  3s  -8.0%  8s +10.7%
+600 2    3s  +1.5%  8s  -3.9%
+150 0.7  3s  +0.1%  8s  +1.4%
+```
+Continuous sliding (several combos, 3 s each): +9 to +16 % typical, -1.4 % and +22.7 % extremes; transients after V increase at low T (particles need seconds to reach a far piston) gave -47.6 % once.
+
+Statistics at 100 K (40 samples at 0.5 s spacing after 2 s settle):
+```
+100 K, 1,0 dm3: mean ratio 0.996, sd 0.158, min 0.70, max 1.28, 75 % of samples within 20 %
+100 K, 2,0 dm3: mean ratio 1.009, sd 0.192, min 0.69, max 1.46, 67.5 % within 20 %
+```
+Measurement is unbiased (mean ratio ~1.00). At high T it is within ~10-15 %; at low T (100 K, few collisions in the 1,5 s window) shot noise is ~16-19 %, so single readings can exceed 20 % off. This is statistical fluctuation (the on-page note says the value "vaihtelee hieman"), not a defect. Not a FAIL; optional improvement: a longer window or a note that low T fluctuates more.
+
+## 4. Other
+No sim.js, lesson file or test file was edited. build.py not run.
