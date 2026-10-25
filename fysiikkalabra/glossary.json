@@ -97,6 +97,18 @@
     "locked": false
   },
   {
+    "term": "hyötysuhde",
+    "definition": "Hyödyksi saadun energian tai tehon suhde koneeseen tuotuun energiaan tai tehoon, η = W/Q₁. Hyötysuhde ilmoitetaan usein prosentteina, ja se on aina alle 100 %.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "lämpövoimakone",
+      "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
     "term": "höyrystymislämpö",
     "definition": "Ominaishöyrystymislämpö r on lämpömäärä, joka tarvitaan yhden kilogramman höyrystämiseen kiehumispisteessä: Q = rm. Vedelle r = 2260 kJ/kg.",
     "lessons": [
@@ -177,6 +189,30 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jäähdytyskone",
+    "definition": "Kone, joka siirtää työn avulla lämpöä kylmästä paikasta lämpimään, esimerkiksi jääkaappi. Se toimii päinvastoin kuin lämpövoimakone.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "lämpöpumppu",
+      "lämpövoimakone"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaasun tekemä työ",
+    "definition": "Työ, jonka laajeneva kaasu tekee ympäristöön työntäessään mäntää. Vakiopaineessa se on W = pΔV, ja (V, p)-kuvaajassa se on kuvaajan alle jäävä pinta-ala.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "paine",
+      "termodynamiikan ensimmäinen pääsääntö"
     ],
     "locked": false
   },
@@ -263,6 +299,17 @@
     "locked": false
   },
   {
+    "term": "lämpökerroin",
+    "definition": "Lämpöpumpun luovuttaman lämpötehon suhde sen käyttämään sähkötehoon. Esimerkiksi lämpökerroin 3 tarkoittaa, että 1 kW:n sähköteholla saadaan 3 kW lämpöä.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "lämpöpumppu"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpölaajeneminen",
     "definition": "Aineen laajeneminen lämpötilan noustessa ja kutistuminen sen laskiessa. Mikromallin mukaan hiukkasten värähtely voimistuu ja niiden keskimääräinen etäisyys kasvaa, vaikka hiukkaset itse eivät suurene.",
     "lessons": [
@@ -290,6 +337,18 @@
     "locked": false
   },
   {
+    "term": "lämpöpumppu",
+    "definition": "Jäähdytyskone, jolla lämmitetään: se siirtää sähkön avulla lämpöä esimerkiksi ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja käytetyn sähkön summa.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "jäähdytyskone",
+      "lämpökerroin"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpötasapaino",
     "definition": "Tila, jossa kosketuksissa olevilla kappaleilla on sama lämpötila eikä lämpöä enää siirry niiden välillä. Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
     "lessons": [
@@ -310,6 +369,18 @@
     "see_also": [
       "kelvin",
       "absoluuttinen nollapiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpövoimakone",
+    "definition": "Kone, joka ottaa lämpöä kuumasta lähteestä, muuttaa osan siitä työksi ja luovuttaa loput kylmempään ympäristöön, esimerkiksi höyryturbiini tai polttomoottori. Kaikkea lämpöä ei voi muuttaa työksi.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "jäähdytyskone"
     ],
     "locked": false
   },
@@ -660,6 +731,18 @@
     "see_also": [
       "tilanyhtälö",
       "Boylen laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yhteistuotanto",
+    "definition": "Sähkön ja lämmön yhteistuotanto, jossa voimalaitoksen lauhduttimesta tuleva lämpö johdetaan kaukolämpöverkkoon. Kokonaishyötysuhde on noin 85–90 %.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "lämpövoimakone"
     ],
     "locked": false
   },
