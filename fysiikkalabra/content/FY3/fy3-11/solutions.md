@@ -36,7 +36,7 @@
 **Kaava:** η = W / Q₁
 **Sijoitus:** η = 2,6 kWh / 12 kWh = 0,217 = 21,7 % ≈ 22 %
 **Vastaus:** 22 %
-**Järkevyys:** Yksiköt supistuvat, joten kilowattitunteja ei tarvitse muuttaa jouleiksi. Pieni moottori jää automoottorin noin 30 %:sta. Loput 9,4 kWh siirtyy lämpönä ympäristöön.
+**Järkevyys:** Yksiköt supistuvat, joten kilowattitunteja ei tarvitse muuttaa jouleiksi. Pieni moottori jää alle automoottorin noin 30 %:n. Loput 9,4 kWh siirtyy lämpönä ympäristöön.
 
 ## fy3-11-L2-01
 **Annettu:** W = 3 830 MWh, Q₁ = 33,6 TJ = 3,36 · 10¹³ J, 1 MWh = 10⁶ W · 3600 s = 3,6 · 10⁹ J
@@ -60,7 +60,7 @@
 **Kaava:** Laajeneva ilma tekee työn pΔV, joten ympäristön ilmaan tekemä työ on W = −pΔV ja ΔU = Q + W = Q − pΔV
 **Sijoitus:** ΔU = 700 J − 125 000 Pa · 0,00160 m³ = 700 J − 200 J = 500 J
 **Vastaus:** 500 J, eli sisäenergia kasvaa.
-**Järkevyys:** Lämmöstä 200 J kuluu männän työntämiseen ja loput nostaa ilman lämpötilaa. Jos työn lisäisi, saisi 900 J, enemmän kuin ilmaan tuli lämpöä, vaikka ilma luovuttaa energiaa työntäessään mäntää.
+**Järkevyys:** Lämmöstä 200 J kuluu männän työntämiseen ja loput nostaa ilman lämpötilaa. Jos työ lisättäisiin lämpöön, tulokseksi tulisi 900 J, enemmän kuin ilmaan tuli lämpöä, vaikka ilma luovuttaa energiaa työntäessään mäntää.
 
 ## fy3-11-L2-04
 **Annettu:** P_mek = 480 kW, η = 40 % = 0,40
@@ -68,7 +68,7 @@
 **Kaava:** η = P_mek / P_in, joten P_in = P_mek / η ja P_hukka = P_in − P_mek
 **Sijoitus:** P_in = 480 kW / 0,40 = 1200 kW, joten P_hukka = 1200 kW − 480 kW = 720 kW
 **Vastaus:** 720 kW
-**Järkevyys:** Hukkaan menee 60 % ja hyödyksi 40 %, joten hukkalämpöä on 1,5-kertaisesti mekaaniseen tehoon verrattuna. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
+**Järkevyys:** Hukkaan menee 60 % ja hyödyksi 40 %, joten hukkalämpöä on 1,5 kertaa niin paljon kuin mekaanista tehoa. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
 
 ## fy3-11-L3-01
 **Annettu:** P_pa = 320 MW, P_s = 96 MW, P_kl = 180 MW, η_l = 40 % = 0,40, η_k = 90 % = 0,90

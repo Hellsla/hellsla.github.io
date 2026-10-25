@@ -17,7 +17,7 @@ new p5((p) => {
   const MODES = {
     lauhdevoimalaitos: { unit: 'MW', P: [100, 2000, 10, 1000], eta: 40, use: 'sähkö' },
     yhteistuotanto: { text: 'yhteistuotantovoimalaitos', unit: 'MW', P: [100, 2000, 10, 1000], eta: 30, heat: 55, use: 'sähkö' },
-    automoottori: { unit: 'kW', P: [10, 200, 1, 60], eta: 30, use: 'mekaaninen työ' },
+    automoottori: { unit: 'kW', P: [10, 200, 1, 60], eta: 30, use: 'mekaaninen teho' },
     ilmalämpöpumppu: { unit: 'kW', P: [0.5, 5, 0.1, 1], cop: 3 } };
   let sel, sP, lP, sE, lE, sH, lH, sC, lC, readout, mode = '', last = 'eta', t = 0, k = 1, boxes = {};
 

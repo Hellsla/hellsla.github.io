@@ -31,7 +31,7 @@ new p5((p) => {
   const mix = (a, b, f) => a.map((x, i) => Math.round(x + (b[i] - x) * f));
   const PAL = Array.from({ length: 32 }, (_, i) => i < 16 ? mix(SLOW, MID, i / 15.5) : mix(MID, FAST, (i - 16) / 15));
   const hw = new Int8Array(HN), hs = new Float32Array(HN), hv = new Float32Array(HN), hn = new Int32Array(HN);   // hit ring
-  let rnd, parts = [], N = 0, T = 300, Lx = LXMAX, acc = 0, bins = [], cur = 0, curSteps = 0, top = 0, tStep = 1;
+  let rnd, parts = [], N = 0, T = 300, Lx = LXMAX, acc = 0, bins = [], hbins = [], cur = 0, hcur = 0, curSteps = 0, top = 0, tStep = 1;
   let sN, lN, sT, lT, sV, lV, readout, nStep = 0, hi = 0, needle = 0;
 
   const slider = (parent, min, max, val, step) => {
@@ -59,7 +59,7 @@ new p5((p) => {
     const fx = Math.sqrt(kT * parts.length / sx), fy = Math.sqrt(kT * parts.length / sy);
     for (const q of parts) { q.vx *= fx; q.vy *= fy; }
   };
-  const clearAvg = () => { bins = []; cur = 0; curSteps = 0; };
+  const clearAvg = () => { bins = []; hbins = []; cur = 0; hcur = 0; curSteps = 0; };
   // apply the sliders: wall position, temperature, particle number
   const sync = () => {
     const n = Number(sN.value()), t = Number(sT.value()), lx = LXMAX * Number(sV.value()) / 100;
@@ -73,7 +73,7 @@ new p5((p) => {
     sync(); clearAvg(); acc = 0; nStep = 0; hn.fill(-FL);
   };
   // wall w (0 left, 1 right, 2 top, 3 bottom), position s along it, normal speed v: kept only for drawing the flash
-  const hit = (w, s, v) => { hw[hi] = w; hs[hi] = s; hv[hi] = v; hn[hi] = nStep; hi = (hi + 1) % HN; return 2 * v; };
+  const hit = (w, s, v) => { hw[hi] = w; hs[hi] = s; hv[hi] = v; hn[hi] = nStep; hi = (hi + 1) % HN; hcur++; return 2 * v; };
   // one fixed physics step: free flight, elastic wall bounces, impulse 2m|v⊥| per hit collected per unit wall length
   const step = () => {
     let J = 0;
@@ -85,7 +85,7 @@ new p5((p) => {
       else if (q.y > LY) { q.y = 2 * LY - q.y; q.vy = -q.vy; J += hit(3, q.x, Math.abs(q.vy)); }
     }
     cur += J / (2 * (Lx + LY)); nStep++;
-    if (++curSteps === BIN) { bins.push(cur); if (bins.length > NBINS) bins.shift(); cur = 0; curSteps = 0; }
+    if (++curSteps === BIN) { bins.push(cur); hbins.push(hcur); if (bins.length > NBINS) { bins.shift(); hbins.shift(); } cur = hcur = curSteps = 0; }
   };
   const advance = (sec) => { acc += sec / DT; const n = Math.floor(acc + 1e-6); acc -= n; for (let i = 0; i < n; i++) step(); };
   // moving average of the pressure relative to p_ref, the state equation's prediction and their ratio
@@ -93,7 +93,9 @@ new p5((p) => {
     const tAvg = (bins.length * BIN + curSteps) * DT, J = bins.reduce((a, b) => a + b, 0) + cur;
     const pMeasured = tAvg > 0 ? J / tAvg / P_REF : 0, Vrel = Number(sV.value()) / 100;
     const pPredicted = (N / 100) * (T / 300) / Vrel, vrms = Math.sqrt(parts.reduce((a, q) => a + q.vx * q.vx + q.vy * q.vy, 0) / N);
-    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, vrms };
+    const sp = parts.map((q) => Math.hypot(q.vx, q.vy)).sort((a, b) => a - b), vmed = (sp[(N - 1) >> 1] + sp[N >> 1]) / 2;
+    const hitRate = tAvg > 0 ? (hbins.reduce((a, b) => a + b, 0) + hcur) / tAvg : 0;   // wall hits per second = flashes
+    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, vrms, vmed, hitRate };
     return window.simState;
   };
 

@@ -3,7 +3,7 @@
     {
       "id": "fy3-11-L1-01",
       "level": 1,
-      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee mäntään? Anna vastaus kilojouleina.",
+      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
       "answer": 12.0,
       "unit": "kJ",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla sylinterissä on ilmaa, jota sulkee kevyesti liikkuva mäntä. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä 700 J. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä ΔU = Q + W, jossa W on ympäristön ilmaan tekemä työ. Anna vastaus etumerkkeineen.",
+      "text": "Fysiikan tunnilla sylinterissä on ilmaa, jonka kevyesti liikkuva mäntä sulkee. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä 700 J. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä ΔU = Q + W, jossa W on ympäristön ilmaan tekemä työ. Anna vastaus etumerkkeineen.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy3-11-L3-02",
       "level": 3,
-      "text": "Omakotitalon lämmittämiseen kuluu vuodessa 16,0 MWh lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaa lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
+      "text": "Omakotitalon lämmittämiseen kuluu vuodessa 16,0 MWh lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
       "answer": 9.6,
       "unit": "MWh",
       "tolerance": 0.02

@@ -1,6 +1,6 @@
 [
   {
-    "q": "Sylinterissä olevan kaasun paine pysyy 200 kPa:na, kun sen tilavuus kasvaa 0,50 litraa. Kuinka suuren työn kaasu tekee mäntään?",
+    "q": "Sylinterissä olevan kaasun paine pysyy 200 kPa:na, kun sen tilavuus kasvaa 0,50 litraa. Kuinka suuren työn kaasu tekee männän liikkuessa?",
     "a": "W = pΔV = 200 000 Pa · 0,000 50 m³ = 100 J."
   },
   {

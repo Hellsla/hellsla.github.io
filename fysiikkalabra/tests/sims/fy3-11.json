@@ -498,7 +498,7 @@
  },
  {
   "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.join('|')==='polttoaine 60,0 kW|mekaaninen työ 18,0 kW|hukkalämpö 42,0 kW' ? 1 : 0",
+  "expr": "window.simState.labels.join('|')==='polttoaine 60,0 kW|mekaaninen teho 18,0 kW|hukkalämpö 42,0 kW' ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "car canvas labels with decimal comma and kW"

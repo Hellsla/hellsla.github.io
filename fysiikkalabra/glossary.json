@@ -107,6 +107,18 @@
     "locked": false
   },
   {
+    "term": "hukkalämpö",
+    "definition": "Lämpö, joka siirtyy koneesta tai voimalaitoksesta ympäristöön käyttämättä, esimerkiksi lauhduttimen kautta mereen.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "lämpövoimakone"
+    ],
+    "locked": false
+  },
+  {
     "term": "hydrostaattinen paine",
     "definition": "Nesteen omasta painosta syntyvä paine, joka kasvaa syvyyden mukana: ρgh. Se riippuu vain syvyydestä ja nesteen tiheydestä, ei astian muodosta.",
     "lessons": [
@@ -276,6 +288,17 @@
     "locked": false
   },
   {
+    "term": "kaukolämpö",
+    "definition": "Voimalaitoksessa tai lämpölaitoksessa lämmitetty vesi, joka johdetaan putkia pitkin rakennusten lämmitykseen.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
     "term": "kelvin",
     "definition": "Lämpötilan SI-yksikkö K. Kelvinlämpötila on celsiuslämpötila plus 273,15, ja lämpötilaero on sama kelvineinä ja celsiusasteina.",
     "lessons": [
@@ -307,6 +330,18 @@
     "see_also": [
       "johtuminen",
       "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lauhdevoimalaitos",
+    "definition": "Lämpövoimalaitos, joka tuottaa vain sähköä. Turbiinista tuleva höyry tiivistetään lauhduttimessa, ja sen lämpö siirtyy hukkalämpönä esimerkiksi mereen.",
+    "lessons": [
+      "fy3-11"
+    ],
+    "see_also": [
+      "yhteistuotanto",
+      "hukkalämpö"
     ],
     "locked": false
   },

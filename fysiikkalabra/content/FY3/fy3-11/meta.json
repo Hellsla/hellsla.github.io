@@ -18,7 +18,10 @@
     "lämpöpumppu",
     "yhteistuotanto",
     "lämpökerroin",
-    "lämpöarvo"
+    "lämpöarvo",
+    "hukkalämpö",
+    "kaukolämpö",
+    "lauhdevoimalaitos"
   ],
   "sim": true,
   "image": false,
