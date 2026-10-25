@@ -76,20 +76,20 @@
 **Kaava:** mehun luovuttama lämpö = jään sulaminen + sulamisveden lämpeneminen: c m₁ (25 °C − T) = s m₂ + c m₂ (T − 0 °C)
 **Sijoitus:** T = (c m₁ · 25 °C − s m₂) / (c (m₁ + m₂)) = (36 662,5 J − 20 040 J) / (4190 J/(kg·K) · 0,41 kg) ≈ 9,7 °C
 **Vastaus:** 9,7 °C
-**Järkevyys:** Jää ottaa sulaessaan 20 kJ ennen kuin sulamisvesi alkaa lämmetä. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
+**Järkevyys:** Kaikki jää sulaa: mehun jäähtyminen 0 °C:seen vapauttaisi 4190 J/(kg·K) · 0,35 kg · 25 K ≈ 36,7 kJ, mikä on enemmän kuin sulamiseen tarvittava 334 000 J/kg · 0,060 kg ≈ 20,0 kJ. Jää ottaa sulaessaan nämä 20 kJ ennen kuin sulamisvesi alkaa lämmetä. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
 
 ## fy3-7-L3-02
 **Annettu:** vesi m = 0,25 kg, 20 °C → 100 °C, c = 4190 J/(kg·K), r = 2 260 000 J/kg; kivet m_k = 30 kg, c_k = 800 J/(kg·K)
 **Kysytty:** kivien lämpötilan lasku ΔT
 **Kaava:** c_k m_k ΔT = c m (100 °C − 20 °C) + r m
-**Sijoitus:** Lämpeneminen: 4190 · 0,25 · 80 J = 83 800 J. Höyrystyminen: 2 260 000 · 0,25 J = 565 000 J. Yhteensä 648 800 J. ΔT = 648 800 J / (800 J/(kg·K) · 30 kg) ≈ 27 K
+**Sijoitus:** Lämpeneminen: 4190 J/(kg·K) · 0,25 kg · 80 K = 83 800 J. Höyrystyminen: 2 260 000 J/kg · 0,25 kg = 565 000 J. Yhteensä 648 800 J. ΔT = 648 800 J / (800 J/(kg·K) · 30 kg) ≈ 27 K
 **Vastaus:** 27 K
 **Järkevyys:** Höyrystyminen vie noin 87 % energiasta, lämpeneminen vain 13 %. Siksi muutama kauhallinen jäähdyttää kiviä kymmeniä kelvinejä.
 
 ## fy3-7-L3-03
-**Annettu:** lumi m = 1,0 kg, −20 °C, c(jää) = 2100 J/(kg·K), s = 334 000 J/kg, c(vesi) = 4190 J/(kg·K), r = 2 260 000 J/kg
-**Kysytty:** höyrystymisen osuus kokonaislämpömäärästä
-**Kaava:** Q = c(jää) m · 20 K + s m + c(vesi) m · 100 K + r m
-**Sijoitus:** 42 000 J + 334 000 J + 419 000 J + 2 260 000 J = 3 055 000 J. Osuus = 2 260 000 J / 3 055 000 J ≈ 0,740 = 74 %
-**Vastaus:** 74 %
-**Järkevyys:** Jokainen termi on verrannollinen massaan, joten m supistuu osuudesta pois. Höyrystäminen vie lähes kolme neljäsosaa, sulaminen vain 11 %.
+**Annettu:** P₁ = 800 W, Δm₁ = 196 g = 0,196 kg; P₂ = 400 W, Δm₂ = 90,0 g = 0,0900 kg; kumpikin t = 10,0 min = 600 s; ilmaan siirtyvä teho P_h on sama kummassakin mittauksessa
+**Kysytty:** ominaishöyrystymislämpö r
+**Kaava:** Höyrystymiseen kuluu kuumentimen energia vähennettynä ilmaan siirtyvällä: (P₁ − P_h) t = r Δm₁ ja (P₂ − P_h) t = r Δm₂. Vähennetään yhtälöt: (P₁ − P₂) t = r (Δm₁ − Δm₂), joten r = (P₁ − P₂) t / (Δm₁ − Δm₂)
+**Sijoitus:** r = (800 W − 400 W) · 600 s / (0,196 kg − 0,0900 kg) = 240 000 J / 0,106 kg ≈ 2 264 000 J/kg ≈ 2,26 MJ/kg
+**Vastaus:** 2,26 MJ/kg
+**Järkevyys:** Ilmaan siirtyvä energia P_h t on kummassakin yhtälössä sama, joten se kumoutuu erotuksesta. Erikseen laskettuina 800 W · 600 s / 0,196 kg ≈ 2,45 MJ/kg ja 400 W · 600 s / 0,0900 kg ≈ 2,67 MJ/kg ovat liian suuria, koska niissä koko kuumentimen energia luetaan höyrystymiseen. Häviöteho on P_h = 800 W − 2 264 000 J/kg · 0,196 kg / 600 s ≈ 60 W, mikä on uskottava.

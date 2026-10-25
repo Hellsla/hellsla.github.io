@@ -4,7 +4,7 @@
 **Kaava:** Boylen laki p₁V₁ = p₂V₂, josta p₂ = p₁V₁ / V₂
 **Sijoitus:** p₂ = 101 kPa · 30,0 ml / 45,0 ml = 67,33 kPa ≈ 67,3 kPa
 **Vastaus:** 67,3 kPa
-**Järkevyys:** Tilavuus kasvaa 1,5-kertaiseksi, joten paine pienenee samalla kertoimella: 101 kPa / 1,5 ≈ 67 kPa. Ulkoilma painaa nyt mäntää sisäänpäin, ja sen tuntee sormessa. Millilitroja ei tarvitse muuntaa, koska sama yksikkö on yhtälön molemmilla puolilla.
+**Järkevyys:** Tilavuus kasvaa 1,5-kertaiseksi, joten paine pienenee samalla kertoimella: 101 kPa / 1,5 ≈ 67 kPa. Ulkoilma painaa nyt mäntää sisäänpäin, minkä tuntee mäntää vetäessä. Millilitroja ei tarvitse muuntaa, koska sama yksikkö on yhtälön molemmilla puolilla.
 
 ## fy3-9-L1-02
 **Annettu:** V₁ = 24,0 l, p₁ = 160 kPa, p₂ = 280 kPa, lämpötila vakio
@@ -36,7 +36,7 @@
 **Kaava:** p₁/T₁ = p₂/T₂, josta p₂ = p₁T₂ / T₁
 **Sijoitus:** T₁ = 295,15 K ja T₂ = 255,15 K. p₂ = 101 kPa · 255,15 K / 295,15 K = 87,31 kPa ≈ 87,3 kPa
 **Vastaus:** 87,3 kPa
-**Järkevyys:** Paine laskee noin 14 kPa. Ulkoilma painaa kantta enemmän kuin sisäilma, ja jo puolen neliömetrin kanteen kohdistuu ylimääräinen noin 7 kN:n voima. Siksi kansi aukeaa helposti vasta, kun ilmaa on vuotanut tiivisteiden ohi sisään.
+**Järkevyys:** Paine laskee noin 14 kPa, joten ulkoilma painaa kantta enemmän kuin sisäilma. Täysin tiiviiseen puolen neliömetrin kanteen kohdistuisi noin 7 kN:n ylimääräinen voima. Käytännössä ilmaa vuotaa tiivisteiden ohi, ja kansi aukeaa taas hetken päästä.
 
 ## fy3-9-L2-01
 **Annettu:** V₁ = 6,8 l, p₁ = 300 bar = 30 000 kPa, p₂ = 101 kPa, lämpötila vakio
@@ -58,7 +58,7 @@
 **Annettu:** V = 10,0; 12,5; 15,0; 20,0; 25,0; 30,0 ml ja p = 203; 159; 134; 99; 81; 66 kPa, lämpötila vakio
 **Kysytty:** suoran kulmakerroin pV jouleina
 **Kaava:** p = pV · (1/V), joten (1/V, p)-kuvaajan kulmakerroin on pV
-**Sijoitus:** 1/V = 0,100; 0,0800; 0,0667; 0,0500; 0,0400; 0,0333 1/ml. Pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on noin 203 kPa / 0,100 (1/ml) ≈ 2010 kPa·ml. Koska 1 kPa · 1 ml = 1000 Pa · 0,000001 m³ = 0,001 J, pV ≈ 2,0 J.
+**Sijoitus:** 1/V = 0,100; 0,0800; 0,0667; 0,0500; 0,0400; 0,0333 1/ml. Pisteet ovat origon kautta kulkevalla suoralla. Suora kulkee esimerkiksi pisteen (0,100 1/ml; 201 kPa) kautta, joten kulmakerroin on 201 kPa / (0,100 1/ml) ≈ 2010 kPa·ml. Koska 1 kPa · 1 ml = 1000 Pa · 0,000001 m³ = 0,001 J, pV ≈ 2,0 J.
 **Vastaus:** 2,0 J
 **Järkevyys:** Tulojen pV arvot ovat 1980–2030 kPa·ml, joten ne ovat lähes vakioita, ja Boylen laki pätee mittaustarkkuuden rajoissa.
 
@@ -76,7 +76,7 @@
 **Kaava:** p₁ = p₀ + ρgh ja p₁V₁ = p₀V₂
 **Sijoitus:** ρgh = 1000 kg/m³ · 9,81 m/s² · 20,0 m = 196 200 Pa = 196,2 kPa, joten p₁ = 101 kPa + 196,2 kPa = 297,2 kPa. V₂ = 297,2 kPa · 2,0 cm³ / 101 kPa = 5,885 cm³ ≈ 5,9 cm³
 **Vastaus:** 5,9 cm³
-**Järkevyys:** Paine on syvällä lähes kolminkertainen, joten tilavuus lähes kolminkertaistuu. Sukeltajan keuhkojen ilma on syvällä samassa paineessa. Jos hän pidättää hengitystä noustessaan, ilma pyrkii laajenemaan lähes kolminkertaiseksi ja voi repiä keuhkokudosta. Siksi noustessa hengitetään ulos.
+**Järkevyys:** Paine on syvällä lähes kolminkertainen, joten tilavuus lähes kolminkertaistuu. Keuhkojen ilma on syvällä samassa paineessa. Jos sukeltaja pidättää hengitystä noustessaan, ilma pyrkii laajenemaan lähes kolminkertaiseksi ja voi repiä keuhkokudosta. Siksi noustessa hengitetään ulos.
 
 ## fy3-9-L3-02
 **Annettu:** ylipaine 250 kPa, p₀ = 101 kPa, θ₁ = 20 °C, θ₂ = −20 °C, tilavuus vakio
@@ -84,7 +84,7 @@
 **Kaava:** p₁/T₁ = p₂/T₂, missä p on kokonaispaine = ylipaine + p₀
 **Sijoitus:** p₁ = 250 kPa + 101 kPa = 351 kPa, T₁ = 293,15 K ja T₂ = 253,15 K. p₂ = 351 kPa · 253,15 K / 293,15 K = 303,1 kPa. Lukema 303,1 kPa − 101 kPa = 202 kPa
 **Vastaus:** 202 kPa
-**Järkevyys:** Kaava koskee kaasun koko painetta, joka on verrannollinen kelvinlämpötilaan. Ylipaine ei ole: se on nolla, vaikka renkaassa on yhä ilmaa. Suoraan lukemalla tulos olisi 216 kPa. Lukema laskee 48 kPa eli lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
+**Järkevyys:** Kaava koskee kaasun koko painetta, joka on verrannollinen kelvinlämpötilaan. Ylipaine ei ole verrannollinen lämpötilaan: tyhjältä näyttävässä renkaassa (lukema 0) on yhä ilmaa 101 kPa:n paineessa. Lukemalla laskettuna tulos olisi 216 kPa. Lukema laskee lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
 
 ## fy3-9-L3-03
 **Annettu:** sylinterin pituus 40,0 cm, p₁ = 101 kPa, renkaan ylipaine 300 kPa, lämpötila vakio
