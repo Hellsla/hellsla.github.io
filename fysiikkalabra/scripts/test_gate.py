@@ -6,6 +6,12 @@ SRC = HERE.parent
 LESSON = "fy3-3"
 failures = []
 
+def snapshot():
+    """Content of every file the gate could touch in the real project, to prove the tests never write there."""
+    paths = sorted((SRC / "content/FY3" / LESSON).rglob("*")) + [SRC / "tests/sims" / f"{LESSON}.json", SRC / "glossary.json", SRC / "curriculum.json"]
+    return {str(p): p.read_bytes() for p in paths if p.is_file()}
+REAL = snapshot()
+
 def project():
     tmp = pathlib.Path(tempfile.mkdtemp())
     (tmp / "content/FY3").mkdir(parents=True)
@@ -75,7 +81,7 @@ code, out = gate(t, "--verify"); expect("verify: hand-published lesson without a
 t = project(); before = h(t); m = t / "content/FY3" / LESSON / "meta.json"; md = json.loads(m.read_text()); md["status"] = "reviewed"; md["reviewed_on"] = "2030-01-01"; m.write_text(json.dumps(md, ensure_ascii=False))
 expect("status fields excluded from hash", h(t) == before)
 # 12. the gate never writes into the real project when FYSIIKKALABRA_ROOT is set
-expect("real project untouched", not (SRC / "content/FY3" / LESSON / "review/educator.md").read_text().startswith("VERDICT: PASS\nCONTENT-HASH: ") if (SRC / "content/FY3" / LESSON / "review/educator.md").exists() else True)
+expect("real project untouched", snapshot() == REAL, "a file under content/, tests/sims or the json indexes changed while the tests ran")
 
 # 13. domain hashes: a report may carry the hash of the reviewer's own files
 def dh(tmp, who):
