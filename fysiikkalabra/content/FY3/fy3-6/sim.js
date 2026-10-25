@@ -18,25 +18,26 @@ new p5((p) => {
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
-    const span = p.createSpan('').parent(label);
+    const span = p.createSpan('').parent(label).style('white-space', 'nowrap');   // value never wraps alone onto a second line
     const s = p.createSlider(min, max, val, step).parent(label);
     return [s, span];
   };
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
-    readout = p.createDiv('').parent('sim-root').class('readout');
+    // controls right under the canvas with Upota first, so canvas + button fit on one phone screen; the long readout follows
     const controls = p.createDiv('').parent('sim-root').class('controls');
+    p.createButton('Upota').parent(controls).mousePressed(() => { tAnim = 0; running = true; key = inputKey(); });
     [sMW, lMW] = slider(controls, 0.10, 1.00, 0.30, 0.01);    // veden massa (kg)
     [sTW, lTW] = slider(controls, 5, 60, 20, 0.5);            // veden alkulämpötila (°C)
     const ls = p.createElement('label').parent(controls);
-    lSel = p.createSpan('').parent(ls);
+    lSel = p.createSpan('').parent(ls).style('white-space', 'nowrap');
     sel = p.createSelect().parent(ls);
     for (const [name, c] of MATERIALS) sel.option(`${name} (${c} J/(kg·K))`, String(c));
     sel.selected('385');
     [sMB, lMB] = slider(controls, 0.05, 1.00, 0.20, 0.01);    // kappaleen massa (kg)
     [sTB, lTB] = slider(controls, 0, 100, 100, 0.5);          // kappaleen alkulämpötila (°C)
-    p.createButton('Upota').parent(controls).mousePressed(() => { tAnim = 0; running = true; key = inputKey(); });
+    readout = p.createDiv('').parent('sim-root').class('readout');
     p.createP('Eristetyssä astiassa lämpöä siirtyy kuumemmasta kylmempään, kunnes lämpötilat ovat samat. ' +
               'Lähestymisen nopeus (aikavakio noin 1,5 s) on vain havainnollistus, ei fysikaalinen malli: todellisuudessa se riippuu ' +
               'sekoittamisesta ja kappaleen muodosta. Astian oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta.')
@@ -52,7 +53,8 @@ new p5((p) => {
     const Q = CB * (TB0 - Teq);                                // heat given off by the body (J); equals CW·mW·(Teq − TW0)
     const QW = CWt * (Teq - TW0);                              // heat taken in by the water (J)
     if (inputKey() !== key) { key = inputKey(); tAnim = 0; running = false; }  // any change of the inputs takes the body out again
-    if (running) { tAnim += p.deltaTime / 1000; if (tAnim >= T_END) { tAnim = T_END; running = false; } }
+    if (running) { tAnim += Math.min(p.deltaTime, 100) / 1000;   // clamped: a resume after an off-screen pause cannot skip the motion
+                  if (tAnim >= T_END) { tAnim = T_END; running = false; } }
     const immersed = running || tAnim > 0;
     const decay = tAnim >= T_END ? 0 : Math.exp(-tAnim / TAU); // illustrative exponential approach to Teq
     const TW = Teq + (TW0 - Teq) * decay, TB = Teq + (TB0 - Teq) * decay;
@@ -91,7 +93,8 @@ new p5((p) => {
     p.stroke(30, 80, 160); p.strokeWeight(2); p.line(inX, wTop, inX + inW, wTop);
     // body: size grows with its mass; hangs on a string before "Upota", rests on the bottom after it
     const side = 16 + 28 * Math.sqrt(mB), bx = VES.x + VES.w / 2, by = immersed ? inB - side : VES.top - side - 8;
-    if (!immersed) { p.stroke(80); p.strokeWeight(1.5); p.line(bx, 76, bx, by); }
+    const sy = Math.max(76, ts(18) + ts(19) + ts(7));         // the string starts below the "kappale … °C" label
+    if (!immersed && sy < by - 4) { p.stroke(80); p.strokeWeight(1.5); p.line(bx, sy, bx, by); }
     p.stroke(40); p.strokeWeight(2); p.fill(tempColor(TB, 255)); p.rect(bx - side / 2, by, side, side, 3);
     if (immersed && Math.abs(TB - TW) > 0.5) {                 // heat-flow arrows, length ∝ temperature difference
       const out = TB > TW, L = 6 + 22 * Math.abs(TB - TW) / 100, cy = by + side / 2, r = side / 2 + 4;
@@ -117,8 +120,11 @@ new p5((p) => {
     p.textAlign(p.LEFT); p.text('t (s)', CH.x1 + 22, CH.y0 + ts(16));
     p.textAlign(p.LEFT); p.textSize(ts(12)); p.text('T (°C)', CH.x0 - 26, CH.y1 - ts(14));
     p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(CH.x0, Y(Teq), CH.x1, Y(Teq)); p.drawingContext.setLineDash([]);
-    const vy = Math.min(Y(Teq) + ts(12), CH.y0 - 4);         // T label in the right margin, kept above the t axis labels
-    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('T', CH.x1 + 6, vy - ts(16)); p.text(`${fi(Teq, 1)} °C`, CH.x1 + 6, vy);
+    // T label in the right margin: name above and value below the line, kept above the t axis labels; near the top of the
+    // axis both go below the line so the name does not touch the legend
+    const nearTop = Y(Teq) < CH.y1 + 0.15 * (CH.y0 - CH.y1);
+    const vy = nearTop ? Y(Teq) + ts(30) : Math.min(Y(Teq) + ts(12), CH.y0 - 4), ny = nearTop ? Y(Teq) + ts(14) : vy - ts(16);
+    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('T', CH.x1 + 6, ny); p.text(`${fi(Teq, 1)} °C`, CH.x1 + 6, vy);
     curve(TW0, Teq, tAnim, p.color(30, 80, 160)); curve(TB0, Teq, tAnim, p.color(200, 90, 20));
     p.noStroke(); p.fill(30, 80, 160); p.circle(X(tAnim), Y(TW), 10); p.fill(200, 90, 20); p.circle(X(tAnim), Y(TB), 10);
     // legend above the chart

@@ -109,7 +109,8 @@ new p5((p) => {
       const yA = ROD.y + ROD.h + 12, s = Math.sign(xNow - xRef);
       p.stroke(200, 50, 40); p.strokeWeight(2); p.line(xRef, yA, xNow, yA); p.line(xRef, yA - 5, xRef, yA + 5);
       p.fill(200, 50, 40); p.triangle(xNow, yA, xNow - 7 * s, yA - 4, xNow - 7 * s, yA + 4);
-      p.noStroke(); p.textAlign(p.LEFT); p.textSize(ts(13)); p.text(dL > 0 ? 'ΔL > 0' : 'ΔL < 0', Math.max(xRef, xNow) + 8, yA + ts(5));
+      p.noStroke(); p.textAlign(p.CENTER); p.textSize(ts(13));
+      p.text('ΔL', Math.min((xRef + xNow) / 2, 590 - p.textWidth('ΔL') / 2), yA + 4 + ts(13));
     }
 
     // (T, ΔL) chart: thin lines for every material, thick for the chosen one, the current point

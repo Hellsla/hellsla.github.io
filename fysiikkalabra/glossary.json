@@ -179,6 +179,18 @@
     "locked": false
   },
   {
+    "term": "lämpölaajeneminen",
+    "definition": "Aineen laajeneminen lämpötilan noustessa ja kutistuminen sen laskiessa. Mikromallin mukaan hiukkasten värähtely voimistuu ja niiden keskimääräinen etäisyys kasvaa, vaikka hiukkaset itse eivät suurene.",
+    "lessons": [
+      "fy3-8"
+    ],
+    "see_also": [
+      "pituuden lämpötilakerroin",
+      "tilavuuden lämpötilakerroin"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpömäärä",
     "definition": "Lämpötilaeron vuoksi kappaleesta toiseen siirtyvä energia, symboli Q. Yksikkö on joule (J).",
     "lessons": [
@@ -301,6 +313,18 @@
     "locked": false
   },
   {
+    "term": "pituuden lämpötilakerroin",
+    "definition": "Aineelle ominainen kerroin α, joka kertoo, kuinka suuren osan pituudestaan kappale pitenee yhden kelvinin lämpötilan nousussa: ΔL = αL₀ΔT. Yksikkö on 1/K, ja esimerkiksi teräksellä α on noin 12 · 10⁻⁶ 1/K.",
+    "lessons": [
+      "fy3-8"
+    ],
+    "see_also": [
+      "lämpölaajeneminen",
+      "tilavuuden lämpötilakerroin"
+    ],
+    "locked": false
+  },
+  {
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
@@ -417,6 +441,18 @@
       "systeemi",
       "lämpötila",
       "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilavuuden lämpötilakerroin",
+    "definition": "Aineelle ominainen kerroin γ, joka kertoo, kuinka suuren osan tilavuudestaan aine laajenee yhden kelvinin lämpötilan nousussa: ΔV = γV₀ΔT. Kiinteällä aineella γ ≈ 3α, ja nesteillä γ on yleensä paljon suurempi.",
+    "lessons": [
+      "fy3-8"
+    ],
+    "see_also": [
+      "lämpölaajeneminen",
+      "pituuden lämpötilakerroin"
     ],
     "locked": false
   },
