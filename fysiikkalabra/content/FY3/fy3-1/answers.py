@@ -18,5 +18,5 @@ a["fy3-1-L2-04"] = 0.20 * g["Maa"] * 4.5 / 1.5    # force proportional to stretc
 # Level 3: reasoning
 a["fy3-1-L3-01"] = 18 / g["Maa"] * g["Mars"]      # same mass, weight scales with g: 6,81 N -> 6,8 N
 a["fy3-1-L3-02"] = 22.0 * g["Maa"] / g["Kuu"]     # same force, m = F / g: 133,2 kg -> 133 kg
-a["fy3-1-L3-03"] = 6.0 * g["Kuu"] / g["Maa"]      # scale shows G / 9,81: 0,991 kg -> 0,99 kg
+a["fy3-1-L3-03"] = 26 * g["Maa"] / g["Mars"]      # scale shows G / 9,81, so G = 26 kg · 9,81 m/s² and m = G / g_Mars: 68,75 kg -> 69 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

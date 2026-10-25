@@ -19,7 +19,7 @@ Voiman voi mitata voimamittarilla. Siinä on jousi, joka venyy sitä enemmän, m
   <text x="302" y="96" fill="currentColor">voiman mukaan</text>
 </svg>
 
-Kappaleen paino on Maan ja kappaleen välisen vuorovaikutuksen voimakkuuden mitta. Se on voima, ja sen yksikkö on newton. Massa on aivan eri asia: se kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on massaltaan ja kooltaan paljon pienempi kuin Maa, joten Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, ja astronautti painaa Kuussa vähemmän.
+Kappaleen paino on Maan ja kappaleen välisen vuorovaikutuksen voimakkuuden mitta. Se on voima, ja sen yksikkö on newton. Massa on aivan eri asia: se kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on paljon pienempi taivaankappale kuin Maa, ja Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, joten astronautti painaa Kuussa vähemmän.
 
 ## Kaava
 Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin paljon kuin yksi, joten paino on suoraan verrannollinen massaan:
@@ -35,7 +35,7 @@ missä G on paino (N), m massa (kg) ja g putoamiskiihtyvyys (m/s²), Maan pinnal
 | Maa | 9,81 |
 | Jupiter | 24,8 |
 
-Kuun g on noin Maan arvon kuudesosa (1,62/9,81 ≈ 0,17), joten sama massa painaa Kuussa noin kuudesosan siitä, mitä Maassa. Tämä vastaa alun kysymykseen astronautista.
+Kuun g on noin Maan arvon kuudesosa (1,62/9,81 ≈ 0,17 ≈ 1/6), joten sama massa painaa Kuussa noin kuudesosan siitä, mitä Maassa. Tämä vastaa alun kysymykseen astronautista.
 
 ## Esimerkki
 Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?
@@ -52,4 +52,4 @@ Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikk�
 ## Tiivistelmä
 - Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.
 - Paino on voima: $G = m g$. Massa kertoo, kuinka paljon ainetta kappaleessa on, ja se on sama kaikkialla.
-- $g = 9{,}81\,\text{m/s}^2$ Maan pinnalla, joten yhden kilogramman massan paino Maassa on noin 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.
+- $g = 9{,}81\,\text{m/s}^2$ Maan pinnalla, joten yhden kilogramman massan paino Maassa on 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.

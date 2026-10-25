@@ -87,9 +87,9 @@
 **Järkevyys:** Massa on noin kuusinkertainen Maahan verrattuna, koska paino on Kuussa noin kuudesosa.
 
 ## fy3-1-L3-03
-**Annettu:** m = 6,0 kg, g_Kuu = 1,62 m/s²; mittarin asteikko näyttää kilogrammoina voiman jaettuna arvolla 9,81 m/s²
-**Kysytty:** mittarin lukema
-**Kaava:** mittari mittaa painoa G = m g_Kuu; lukema = G / 9,81 m/s²
-**Sijoitus:** G = 6,0 kg · 1,62 m/s² = 9,72 N; lukema = 9,72 N / 9,81 m/s² ≈ 0,991 kg
-**Vastaus:** 0,99 kg
-**Järkevyys:** Mittari mittaa voimaa, joten Kuussa lukema on noin kuudesosa kappaleen todellisesta massasta, vaikka massa on yhä 6,0 kg.
+**Annettu:** lukema 26 kg, g_Mars = 3,71 m/s²; mittarin asteikko näyttää kilogrammoina voiman jaettuna arvolla 9,81 m/s²
+**Kysytty:** m
+**Kaava:** lukema = G / 9,81 m/s², joten G = lukema · 9,81 m/s²; Marsissa G = m g_Mars, joten m = G / g_Mars
+**Sijoitus:** G = 26 kg · 9,81 m/s² = 255,06 N; m = 255,06 N / 3,71 m/s² ≈ 68,75 kg
+**Vastaus:** 69 kg
+**Järkevyys:** Mittari mittaa voimaa. Marsissa g on noin 0,38 kertaa Maan g, joten lukema on noin 0,38 kertaa massa, ja massa on noin 26 kg / 0,38 ≈ 69 kg.
