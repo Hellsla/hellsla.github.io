@@ -14,7 +14,7 @@ Lämpö siirtyy aina itsestään lämpimämmästä kylmempään kolmella tavalla
   <rect x="230" y="100" width="140" height="130" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
   <path d="M 270 205 L 270 130 Q 300 112 330 130 L 330 200" fill="none" stroke="currentColor" stroke-width="4"/>
   <polygon points="330,212 322,196 338,196" fill="currentColor"/>
-  <rect x="240" y="236" width="120" height="10" rx="3" fill="currentColor" fill-opacity="0.6"/>
+  <rect x="240" y="236" width="60" height="10" rx="3" fill="currentColor" fill-opacity="0.6"/>
   <text x="300" y="280" text-anchor="middle" fill="currentColor">konvektio</text>
   <circle cx="440" cy="150" r="30" fill="currentColor" fill-opacity="0.55"/>
   <path d="M 480 120 q 10 -8 20 0 t 20 0 t 20 0" fill="none" stroke="currentColor" stroke-width="3"/>
@@ -28,7 +28,9 @@ Lämpö siirtyy aina itsestään lämpimämmästä kylmempään kolmella tavalla
 
 Talon lämmitysenergiasta suuri osa kuluu siihen, että lämpö johtuu seinien, katon, ikkunoiden ja lattian läpi ulos. Rakennusosan lämmöneristävyyttä kuvaa U-arvo eli lämmönläpäisykerroin, joka kertoo, kuinka monta wattia lämpötehoa siirtyy yhden neliömetrin läpi, kun sisä- ja ulkolämpötilan ero on yksi kelvin. Mitä pienempi U-arvo, sitä paremmin rakenne eristää. Nykyaikaisen seinän U-arvo on noin 0,17 W/(m²·K), mutta hyvänkin ikkunan noin 1,0 W/(m²·K), joten pieni ikkuna päästää läpi yhtä paljon lämpöä kuin moninkertainen ala seinää. Hyvä eristys säästää energiaa ja vähentää lämmityksen päästöjä.
 
-Kappaleen lämpötila pysyy vakiona, kun siihen tulee yhtä suuri teho kuin siitä lähtee. Tätä sanotaan energiatasapainoksi. Maapallo saa energiaa Auringon säteilynä, josta noin 30 % heijastuu suoraan takaisin avaruuteen pilvistä, jäästä ja vaaleista pinnoista. Loppu imeytyy, ja maapallo säteilee saman tehon pois pitkäaaltoisena lämpösäteilynä. Ilman ilmakehää tasapaino asettuisi noin −18 °C:n keskilämpötilaan. Ilmakehän vesihöyry, hiilidioksidi ja metaani kuitenkin päästävät auringonvalon lähes esteettä läpi mutta imevät maanpinnan lähettämää lämpösäteilyä ja säteilevät osan siitä takaisin alas. Maanpinta saa siksi enemmän energiaa kuin pelkästä Auringosta, ja tasapaino asettuu noin +15 °C:een. Tätä sanotaan kasvihuoneilmiöksi, ja se vastaa alun kysymykseen.
+Kappaleen lämpötila pysyy vakiona, kun siihen tulee yhtä suuri teho kuin siitä lähtee. Tätä sanotaan energiatasapainoksi. Maapallo saa energiaa Auringon säteilynä, josta noin 30 % heijastuu suoraan takaisin avaruuteen pilvistä, jäästä ja vaaleista pinnoista. Loppu imeytyy, ja maapallo säteilee saman tehon pois pitkäaaltoisena lämpösäteilynä. Ilman ilmakehää tasapaino asettuisi noin −18 °C:n keskilämpötilaan.
+
+Ilmakehän vesihöyry, hiilidioksidi ja metaani päästävät auringonvalon pääosin läpi, vaikka noin viidesosa siitä imeytyy ilmakehään. Ne imevät maanpinnan lähettämää lämpösäteilyä ja säteilevät osan siitä takaisin alas. Maanpinta saa siksi enemmän energiaa kuin pelkästä Auringosta, ja tasapaino asettuu noin +15 °C:een. Tätä sanotaan kasvihuoneilmiöksi, ja se vastaa alun kysymykseen.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Maapallon energiatasapaino: Auringosta tuleva säteily, josta osa heijastuu takaisin ja osa imeytyy maanpintaan. Maanpinta säteilee lämpösäteilyä ylöspäin, ja ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <rect x="20" y="230" width="560" height="50" fill="currentColor" fill-opacity="0.25"/>
@@ -56,7 +58,7 @@ Rakennusosan läpi johtuva lämpöteho on
 ```latex
 P = U A \Delta T
 ```
-missä P on lämpöteho (W), U rakennusosan U-arvo (W/(m²·K)), A pinta-ala (m²) ja ΔT sisä- ja ulkolämpötilan erotus (K). Energiatasapainossa kappaleeseen tuleva ja siitä lähtevä teho ovat yhtä suuret, ja lämpötila pysyy vakiona.
+missä P on lämpöteho (W), U rakennusosan U-arvo (W/(m²·K)), A pinta-ala (m²) ja ΔT sisä- ja ulkolämpötilan erotus (K). Kaava pätee, kun lämpötilat rakennusosan molemmilla puolilla pysyvät vakioina. Energiatasapainossa kappaleeseen tuleva ja siitä lähtevä teho ovat yhtä suuret, ja lämpötila pysyy vakiona.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Seinän poikkileikkaus: sisälevy, paksu eristekerros ja ulkoverhous. Lämpötila laskee sisältä 21 asteesta ulos miinus 15 asteeseen, ja suurin osa laskusta tapahtuu eristeessä. Lämpöteho P kulkee seinän läpi sisältä ulos." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <rect x="220" y="40" width="36" height="200" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="2"/>

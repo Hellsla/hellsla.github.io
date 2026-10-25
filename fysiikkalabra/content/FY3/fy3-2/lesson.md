@@ -29,7 +29,7 @@ Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana on tarkempi: vo
   <text x="455" y="294" text-anchor="middle" fill="currentColor" font-weight="bold">W = F s</text>
 </svg>
 
-Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran. Joule vaihteli sekä painoa että pudotuskorkeutta eli voimaa ja matkaa, ja havaitsi lämpenemisen olevan aina verrannollinen näiden tuloon. Tämä kokeellinen tulos perustelee työn määritelmän W = Fs (kaava alla), ja siksi työ ja lämpö mitataan samalla yksiköllä, joulella.
+Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran. Kokeissa veden lämpeneminen osoittautui verrannolliseksi painon ja pudotusmatkan tuloon eli voiman ja matkan tuloon. Tämä kokeellinen tulos perustelee työn määritelmän W = Fs (kaava alla), ja siksi työ ja lämpö mitataan samalla yksiköllä, joulella.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <text x="290" y="36" text-anchor="middle" fill="currentColor" font-weight="bold">työ → lämpö</text>
@@ -52,7 +52,7 @@ Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvul
 
 Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasvaa, jousi venyy ja tallentaa energiaa, ja kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Portaat ylös kävellen ja juosten teet saman työn, mutta juosten teho on suurempi. Kiukaan 6 kW:n teho tarkoittaa, että se muuttaa sähköenergiaa lämmöksi 6000 joulea joka sekunti.
 
-## Kaavat
+## Kaava
 Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan tulo:
 ```latex
 W = F s
@@ -89,7 +89,7 @@ Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-aks
   <text x="460" y="290" text-anchor="middle" fill="currentColor">muuttuva voima</text>
 </svg>
 
-Kun nostat kappaleen hitaasti ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (edellinen oppitunti). Nostotyö korkeudelle h on siis:
+Kun nostat kappaleen tasaisella nopeudella ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (edellinen oppitunti). Nostotyö korkeudelle h on siis:
 ```latex
 W = G h = m g h
 ```

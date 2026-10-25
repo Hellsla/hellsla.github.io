@@ -1,2 +1,5 @@
 date	lesson	agent	model	effort	mode	round	tokens	input	output	cache_read	cache_write	seconds	calls	verdict
 2026-10-25T19:04Z	fy3-6	developer	opus	medium	inquiry	1	131939					452	30	DONE
+2026-10-25T19:42Z	fy3-6	developer	opus	medium	fix	1	119506					272	22	DONE
+2026-10-25T19:45Z	fy3-6	science-reviewer	opus	medium	full	1	98195					58	7	PASS
+2026-10-25T19:45Z	fy3-6	pedagogy-reviewer	sonnet	medium	full	1	88947					59	11	PASS

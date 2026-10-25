@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Lämpötilan muutos muuttaa myös kappaleen kokoa: mikromalli selittää lämpölaajenemisen hiukkasten keskimääräisen etäisyyden kasvuna, ja pituuden muutos on verrannollinen sekä alkupituuteen että lämpötilan muutokseen, $\\Delta L = \\alpha L_0 \\Delta T$.",
+  "contribution": "Lämpötilan muutos muuttaa myös kappaleen kokoa: tällä tunnilla selvität kokeilla, mistä sauvan pituuden muutos riippuu, ja mikromalli selittää, miksi kiinteä aine laajenee lämmetessään.",
   "prior": [
     "Lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (fy3-3)",
     "Lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina, $T = \\theta + 273{,}15$ (fy3-3)"
@@ -133,7 +133,7 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$. Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle prosentin kymmenesosia. Lukemat ovat mallin arvoja, joissa kerroin α oletetaan vakioksi, eivät mittauksia oikeasta sauvasta."
+      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$. Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %. Lukemat ovat mallin arvoja, joissa kerroin α oletetaan vakioksi, eivät mittauksia oikeasta sauvasta."
     },
     {
       "id": "exp-1",

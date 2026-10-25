@@ -72,6 +72,7 @@
   document.querySelectorAll('.experiment').forEach((ex) => {
     const id = ex.closest('.activity').id;
     const initial = JSON.parse(ex.dataset.initial), locked = JSON.parse(ex.dataset.locked), vary = ex.dataset.vary, measure = JSON.parse(ex.dataset.measure), min = Number(ex.dataset.min || 2);
+    const varyName = ex.dataset.varyName || vary, lockedNames = ex.dataset.lockedNames ? JSON.parse(ex.dataset.lockedNames) : locked;
     const start = ex.querySelector('.exp-start'), rec = ex.querySelector('.exp-record'), reset = ex.querySelector('.exp-reset');
     const tbody = ex.querySelector('tbody'), status = ex.querySelector('.exp-status'), question = ex.querySelector('.exp-question');
     let rows = [], armed = false;
@@ -104,7 +105,7 @@
       start.addEventListener('click', () => {
         A.set(initial); locked.forEach((k) => A.lock(k, true)); A.lock(vary, false);
         armed = true; rec.disabled = false;
-        say(`Alkutila asetettu. ${locked.length ? 'Lukittu: ' + locked.join(', ') + '. ' : ''}Säädä ${vary}, tee veto tai anna simulaation pyöriä ja paina Kirjaa mittaus.`);
+        say(`Alkutila asetettu. ${lockedNames.length ? 'Vakiona: ' + lockedNames.join(', ') + '. ' : ''}Säädä ${varyName}, anna simulaation pyöriä ja paina Kirjaa mittaus.`);
         document.getElementById('sim')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
       rec.addEventListener('click', () => {
@@ -113,9 +114,9 @@
         if (!(vary in S) || measure.some((k) => !(k in S))) { say('Simulaatio ei anna mitattavaa arvoa.'); return; }
         const row = { vary: S[vary] };
         measure.forEach((k) => { row[k] = S[k]; });
-        if (rows.length && rows[rows.length - 1].vary === row.vary) { say(`Sama ${vary} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.`); return; }
+        if (rows.length && rows[rows.length - 1].vary === row.vary) { say(`Sama ${varyName} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.`); return; }
         rows.push(row); render(); announce();
-        say(rows.length < min ? `Mittaus ${rows.length} kirjattu. Muuta ${vary} ja kirjaa vielä ${min - rows.length}.` : `Mittaus ${rows.length} kirjattu. Vertaa tuloksia ennusteeseesi.`);
+        say(rows.length < min ? `Mittaus ${rows.length} kirjattu. Muuta ${varyName} ja kirjaa vielä ${min - rows.length}.` : `Mittaus ${rows.length} kirjattu. Vertaa tuloksia ennusteeseesi.`);
       });
       reset.addEventListener('click', () => {
         locked.forEach((k) => A.lock(k, false)); A.reset(); rows = []; armed = false; rec.disabled = true; render(); announce();

@@ -71,12 +71,12 @@
 **Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen kauhan lämpökapasiteettiin verrattuna, joten kauha jäähtyy noin 68 K mutta vesi lämpenee vain noin 9 K. Keskiarvo 56,5 °C olisi väärin.
 
 ## fy3-6-L3-01
-**Annettu:** vesi c = 4190 J/(kg·K), m_v = 20 kg, 10 °C → 40 °C; kivet c = 800 J/(kg·K), 300 °C
+**Annettu:** c_v = 4190 J/(kg·K), m_v = 20 kg, T_v = 10 °C, T = 40 °C; c_k = 800 J/(kg·K), T_k = 300 °C
 **Kysytty:** kivien massa m_k
-**Kaava:** c_k m_k (T_k − T) = c_v m_v (T − T_v), missä tasapainolämpötila T = 40 °C
-**Sijoitus:** Vesi vastaanottaa 4190 J/(kg·K) · 20 kg · 30 K = 2 514 000 J. Kivet jäähtyvät 300 °C − 40 °C = 260 K, joten m_k = 2 514 000 J / (800 J/(kg·K) · 260 K) = 12,09 kg ≈ 12 kg
+**Kaava:** c_k m_k (T_k − T) = c_v m_v (T − T_v), josta m_k = c_v m_v (T − T_v) / (c_k (T_k − T))
+**Sijoitus:** Vesi vastaanottaa 4190 J/(kg·K) · 20 kg · 30 K = 2 514 000 J, ja kivet jäähtyvät 300 °C − 40 °C = 260 K: m_k = 2 514 000 J / (800 J/(kg·K) · 260 K) = 12,09 kg ≈ 12 kg
 **Vastaus:** 12 kg
-**Järkevyys:** Tasapainossa kivetkin ovat 40 °C:ssa, joten ne jäähtyvät 260 K eivätkä 300 K. Kivien 8,7 kertaa suurempi lämpötilan muutos pienentää massaa, pienempi c (5,2-kertainen ero) suurentaa sitä: m_k / m_v ≈ 0,60.
+**Järkevyys:** Kivetkin päätyvät 40 °C:seen ja jäähtyvät 260 K eivätkä 300 K. Kivien 8,7-kertainen lämpötilan muutos pienentää massaa, 5,2 kertaa pienempi c suurentaa: m_k / m_v ≈ 0,60.
 
 ## fy3-6-L3-02
 **Annettu:** A = 2000 m², h = 1,2 m, 18 MJ = 18 000 000 J neliömetriä kohti, 1000 kg/m³, c = 4190 J/(kg·K)

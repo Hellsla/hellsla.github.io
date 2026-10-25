@@ -52,6 +52,12 @@ new p5((p) => {
               'se näkyy kankaan ylälaidassa. Yhteistuotannossa sähkön ja kaukolämmön osuus on yhteensä enintään 95 %.').parent(det);
     more = p.createP('').parent(det);
     preset(); p.textFont('Arial');
+    // adapter for guided investigations (sim-embed.js): the page may set, lock and reset the situation and the sliders
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { mode: { input: sel.elt, unit: '' }, Pin: { input: sP.elt, unit: 'MW' }, eta: { input: sE.elt, unit: '%' }, heatShare: { input: sH.elt, unit: '%' } },
+      reset: () => { sel.selected('lauhdevoimalaitos'); sC.value(3); sV.selected('1'); preset(); t = 0; },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {
