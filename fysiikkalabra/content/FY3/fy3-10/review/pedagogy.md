@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 69d12376298ae428
+CONTENT-HASH: e390340fc253a339
 
 ## Blocking
 (none)
 
 ## Polish
-- sim canvas label "asteikko mukautuu" (sim.js, bar-axis label) — at 360 px (review/fy3-10-rev3-360.png) the label's first letters run over the tank's right wall and the "a" is half hidden; at 390 and 1280 px it is clean. Shorten ("skaala muuttuu") or move it right/under the dial so it stays clear of the wall at 360 px.
-- lesson.md:200 — the reference-state sentence is clear; optionally write p/p_ref with a subscript ($p_\text{ref}$) in the lesson, as the canvas does.
+- lesson.md:200 — optionally write p/p_ref with a subscript ($p_\text{ref}$) in the lesson, as the canvas does.
 - exit-ticket.json item 3 — still tests only p ∝ T; "entä jos tilavuus puolitetaan?" would cover the V side too (carried from round 2).
 
 ## Checked
-- Reference-state sentence (lesson.md:200): names N = 100, T = 300 K, V = 100 %, says p/p_ref = 1 there and 2 means double; a 17-year-old can use it. Round-2 polish resolved.
-- Note under the canvas (~77 words, two short paragraphs after the readout lines): plain sentences, at 360 px it sits under the canvas as small caption text; not a wall. The advice "vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa" explains the changing scale; the label plus note make it understandable. Round-2 scale polish resolved.
-- "Volume leaves temperature unchanged" clause: correct and helpful for the V = 25 % case.
-- Label legible and unclipped at 390 and 1280 px (fy3-10-sim-390.png, sim-1280.png); at 360 px see Polish 1; no horizontal scroll (scrollWidth 360).
-- L2-01 solution (solutions.md:428): the 180 bar remark is now in words ("molekyylien oma koko ja vetovoima alkavat vaikuttaa", about 6 % too high) and needs no chemistry beyond the lesson, which already says the model fails at high pressure.
-- Learning path, opening balloon question, figures, paragraph lengths, staged example (5 stages, symbolic first): reused from round 2, files unchanged.
+- Round-3 polish (label at 360 px) resolved: fy3-10-sim-360.png and sim-390.png show no "asteikko mukautuu" label, nothing hidden or clipped, tank wall clear; fy3-10-sim-1280.png shows the label under the dial, legible, not overlapping the p/p_ref text or the tank.
+- Note under the canvas, read at 360 px in preview/fy3-10.html: still explains the reference state (N = 100, T = 300 K, V = 100 % = 1,00), that V does not change T, and the changing bar scale; phones lose only the redundant label, the note carries the explanation. No horizontal scroll (scrollWidth 360).
+- Reference-state sentence (lesson.md:200), "volume leaves temperature unchanged" clause, L2-01 solution wording: reused from round 3.
+- Learning path, opening balloon question, figures, paragraph lengths, staged example (5 stages, symbolic first): reused from round 2.
 - Exercises 5/4/3 match the rubric, none repeats the example, L3 asks for reasoning: reused from round 2.
-- Finnish grammar, glossary terms, case after number and unit: reused from round 2; changed sentences read correctly.
-- Slider end-point behaviour and sim readouts (N, T, V extremes at 360/390/1280): reused from round 2 (rev2 screenshots).
+- Finnish grammar, glossary terms, case after number and unit: reused from rounds 2-3; text files unchanged.
+- Slider end-point behaviour and sim readouts (N, T, V extremes): reused from round 2.
+- Hash at start and end of review identical (e390340fc253a339).
