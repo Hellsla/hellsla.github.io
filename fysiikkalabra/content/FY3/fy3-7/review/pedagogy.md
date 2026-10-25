@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a6d789c47096713f
+CONTENT-HASH: 59d72cf4add3289c
 
 ## Blocking
 
 ## Polish
-- inquiry.json pred-3 (Cem) — the feedback refutes "thermometer lag" by saying the simulation has no lag; that is a model assumption, not evidence, so it cannot refute a real-world claim — add "in a real pot a lag would delay, not remove, the plateau" or give the explanation as a thought experiment.
-- inquiry.json exp-1 — only durations are recorded; the 100 °C plateau (half of pred-1) rests on pressing Lämmitä, which nothing checks — add the plateau temperature to measure or a prompt asking to record it.
-- exercises.json L1-05 — "Mitä vaakasuoralla osalla tapahtuu" is asked but only the number is graded; drop the question or move it to the solution.
-- exercises.json L3-01/L3-02/L3-03 — "Perustele" parts are not assessed by the numeric answer; consider a self-check line in solutions.md.
-- sim at 390 px — canvas is small (labels ~10 px); the annotation text is readable but the thermometer and vessel are cramped.
+- inquiry.json pred-3 (Cem) — "no lag in the simulation" is a model assumption, not evidence against a real-world claim — add that a real lag would delay, not remove, the plateau.
+- inquiry.json exp-1 — only durations are recorded; the 100 °C plateau (half of pred-1) rests on pressing Lämmitä — add a plateau-temperature prompt.
+- exercises.json L1-05, L3-01..03 — "Mitä tapahtuu"/"Perustele" parts are not graded by the numeric answer — add a self-check line in solutions.md.
+- sim at 390 px — canvas is small, labels about 10 px, vessel and thermometer cramped.
 
 ## Checked
-- Tried at 390 px: committed wrong pred-1; feedback is withheld ("Palaute näkyy, kun olet tehnyt mittaukset"), no answer disclosed before commitment.
-- Koe 1 locks m, varies P; Koe 2 locks P, varies m; each can refute its prediction (durations 1130/565 s, 167/83,5 s).
-- Retrieval item and prior match fy3-6 and fy3-2; wrong-option feedback repairs the misconception.
-- Opening question is answered in reflect, theory and exit ticket.
-- Worked example has 4 stages, symbolic first; exercises 5/4/3, none repeats the example.
-- Numbers spot-checked (6,8 ratio, 188 W, 0,597 kg, 2,34 MJ/kg); Finnish reads correctly.
-- Figures present for Ydinajatus and Kaava; paragraphs under 120 words.
+- Preview at 390 px: retrieval item, three predictions, sim, experiments (Aseta alkutila, Kirjaa mittaus) all render and work; predictions sit before the sim.
+- Koe 1 locks m, varies P; Koe 2 locks P, varies m; both can refute their predictions (1130/565 s, 167/83,5 s).
+- Wrong-option feedback repairs misconceptions; right options name evidence; opening question answered in reflect, theory, exit ticket.
+- Prior items match fy3-6 and fy3-2.
+- Worked example has 4 stages, symbolic first; exercises 5/4/3, none repeats it; exit ticket tests the core idea.
+- Figures present under Ydinajatus and Kaava; paragraphs under 120 words; Finnish reads correctly.
