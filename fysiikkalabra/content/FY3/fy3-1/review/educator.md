@@ -1,6 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: da9ba5eb24ac7a54
+CONTENT-HASH: 28956a3df07f9f05
 
+
+Hash note: the hash was da9ba5eb24ac7a54 when I started and 28956a3df07f9f05 at the end. The only change is the new file tests/sims/fy3-1.json (written by the tester at 04:17:19), which the gate hash includes. The mtimes of lesson.md, exercises.json, exit-ticket.json, solutions.md, sim.js, sim-spec.md and meta.json are unchanged (19:55-19:56 on 2026-10-24), so the review covers the current content. The report carries the current hash.
 # Educator review, fy3-1 (Voima vuorovaikutuksen mittana ja paino G = mg)
 
 No blocking findings. A 17-year-old who has done FY1 and FY2 can follow the lesson, the levels match the rubric (5/4/3), and the exit ticket tests the core idea. The findings below are improvements, ordered by value. Findings 1 to 4 are the ones I would fix if a fixer round happens anyway.
