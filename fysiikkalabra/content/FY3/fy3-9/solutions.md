@@ -76,7 +76,7 @@
 **Kaava:** p₁ = p₀ + ρgh ja p₁V₁ = p₀V₂
 **Sijoitus:** ρgh = 1000 kg/m³ · 9,81 m/s² · 20,0 m = 196 200 Pa = 196,2 kPa, joten p₁ = 101 kPa + 196,2 kPa = 297,2 kPa. V₂ = 297,2 kPa · 2,0 cm³ / 101 kPa = 5,885 cm³ ≈ 5,9 cm³
 **Vastaus:** 5,9 cm³
-**Järkevyys:** Paine on syvällä lähes kolminkertainen, joten tilavuus lähes kolminkertaistuu. Keuhkojen ilma on syvällä samassa paineessa. Jos sukeltaja pidättää hengitystä noustessaan, ilma pyrkii laajenemaan lähes kolminkertaiseksi ja voi repiä keuhkokudosta. Siksi noustessa hengitetään ulos.
+**Järkevyys:** Paine putoaa lähes kolmasosaan, joten tilavuus lähes kolminkertaistuu. Keuhkojen ilma on syvällä samassa paineessa. Jos sukeltaja pidättää hengitystä noustessaan, ilma pyrkii laajenemaan lähes kolminkertaiseksi ja voi repiä keuhkokudosta. Siksi noustessa hengitetään ulos.
 
 ## fy3-9-L3-02
 **Annettu:** ylipaine 250 kPa, p₀ = 101 kPa, θ₁ = 20 °C, θ₂ = −20 °C, tilavuus vakio
@@ -84,7 +84,7 @@
 **Kaava:** p₁/T₁ = p₂/T₂, missä p on kokonaispaine = ylipaine + p₀
 **Sijoitus:** p₁ = 250 kPa + 101 kPa = 351 kPa, T₁ = 293,15 K ja T₂ = 253,15 K. p₂ = 351 kPa · 253,15 K / 293,15 K = 303,1 kPa. Lukema 303,1 kPa − 101 kPa = 202 kPa
 **Vastaus:** 202 kPa
-**Järkevyys:** Kaava koskee kaasun koko painetta, joka on verrannollinen kelvinlämpötilaan. Ylipaine ei ole verrannollinen lämpötilaan: tyhjältä näyttävässä renkaassa (lukema 0) on yhä ilmaa 101 kPa:n paineessa. Lukemalla laskettuna tulos olisi 216 kPa. Lukema laskee lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
+**Järkevyys:** Kaava koskee kaasun koko painetta, joka on verrannollinen kelvinlämpötilaan. Ylipaine ei ole verrannollinen lämpötilaan: lukeman 0 renkaassakin on ilmaa 101 kPa:n paineessa. Lukemalla laskettuna tulos olisi 216 kPa. Lukema laskee lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
 
 ## fy3-9-L3-03
 **Annettu:** sylinterin pituus 40,0 cm, p₁ = 101 kPa, renkaan ylipaine 300 kPa, lämpötila vakio
