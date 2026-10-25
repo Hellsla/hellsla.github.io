@@ -31,14 +31,29 @@
   });
 
   const toc = document.querySelector('nav.toc');
-  if (toc && 'IntersectionObserver' in window) {
+  if (toc) {
     const links = [...toc.querySelectorAll('a')];
     const targets = links.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    const mark = (id) => links.forEach((a) => a.toggleAttribute('aria-current', a.getAttribute('href') === '#' + id));
-    const io = new IntersectionObserver((entries) => {
-      entries.filter((en) => en.isIntersecting).forEach((en) => mark(en.target.id));
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    targets.forEach((t) => io.observe(t));
+    let pinned = null;
+    const mark = (id) => links.forEach((a) => {
+      const on = a.getAttribute('href') === '#' + id;
+      a.toggleAttribute('aria-current', on);
+      if (on && toc.scrollWidth > toc.clientWidth) a.scrollIntoView({ inline: 'nearest', block: 'nearest' });
+    });
+    // the active section is the last one whose top has passed 35 % of the viewport; a tap pins its target
+    // until the reader scrolls on, so a short last section can still be marked
+    const update = () => {
+      if (pinned) { mark(pinned); return; }
+      const line = window.innerHeight * 0.35;
+      let current = targets[0];
+      targets.forEach((t) => { if (t.getBoundingClientRect().top <= line) current = t; });
+      if (current) mark(current.id);
+    };
+    links.forEach((a) => a.addEventListener('click', () => { pinned = a.getAttribute('href').slice(1); mark(pinned); setTimeout(() => { pinned = null; }, 900); }));
+    let ticking = false;
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
   }
 
   let opened = [];
