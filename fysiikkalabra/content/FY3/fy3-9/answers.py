@@ -19,7 +19,7 @@ a["fy3-9-L1-04"] = 3.0 * K(-18) / K(22)                  # balloon, isobaric 295
 a["fy3-9-L1-05"] = 101 * K(-18) / K(22)                  # chest freezer, isochoric 295,15 K -> 255,15 K: p₂ = p₁T₂/T₁ = 87,31 kPa -> 87,3 kPa
 # Level 2: two steps, a conversion or a rearrangement
 p_pullo = 300 * 100                                      # 300 bar = 30 000 kPa
-V_ulkona_l = p_pullo * 6.8 / 101                         # Boyle: V₂ = p₁V₁/p₂ = 30 000 kPa · 6,8 l / 101 kPa = 2020 l
+V_ulkona_l = p_pullo * 6.8 / 101                         # Boyle: V₂ = p₁V₁/p₂ = 30 000 kPa · 6,8 l / 101 kPa ≈ 2020 l
 a["fy3-9-L2-01"] = V_ulkona_l / 1000                     # 2020 l = 2,02 m³ -> 2,0 m³
 T_korkki = K(20) * 125 / 101                             # isochoric, solve T₂ = T₁p₂/p₁ = 293,15 K · 125/101 = 362,8 K
 a["fy3-9-L2-02"] = T_korkki - 273.15                     # back to celsius: 89,7 °C -> 90 °C
@@ -29,7 +29,7 @@ x = [1 / v for v in V_ml]                                # new column 1/V, 1/ml
 kerroin = sum(xi * pi for xi, pi in zip(x, p_kPa)) / sum(xi * xi for xi in x)   # least-squares line through origin: slope = pV = 2009 kPa·ml
 a["fy3-9-L2-03"] = kerroin * 1e3 * 1e-6                        # 1 kPa·ml = 10³ Pa · 10⁻⁶ m³ = 10⁻³ J: pV = 2,01 J -> 2,0 J
 V_lammin = 2800 * K(100) / K(10)                         # hot-air balloon, isobaric: V₂ = V₁T₂/T₁ = 2800 m³ · 373,15/283,15 = 3690 m³
-a["fy3-9-L2-04"] = V_lammin - 2800                       # pushed out through the opening: 3690 − 2800 = 890 m³
+a["fy3-9-L2-04"] = V_lammin - 2800                       # heated original air (at 100 °C) that no longer fits in the envelope: 3690 − 2800 = 890 m³
 # Level 3: reasoning or an unfamiliar context
 p_syva = p0 + rho_vesi * g * 20.0 / 1000                 # pressure at 20,0 m: p = p₀ + ρgh = 101 + 196,2 = 297,2 kPa
 a["fy3-9-L3-01"] = p_syva * 2.0 / p0                     # Boyle to the surface: V₂ = 297,2 kPa · 2,0 cm³ / 101 kPa = 5,885 cm³ -> 5,9 cm³

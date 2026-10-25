@@ -20,7 +20,7 @@
 **Kaava:** p₁V₁ = p₂V₂, josta p₂ = p₁V₁ / V₂
 **Sijoitus:** p₂ = 430 kPa · 1,00 l / 1,50 l = 286,7 kPa ≈ 287 kPa
 **Vastaus:** 287 kPa
-**Järkevyys:** Ilma laajenee 1,5-kertaiseksi, joten paine on kaksi kolmasosaa alkuperäisestä. Paine on yhä lähes kolminkertainen ilmanpaineeseen verrattuna, joten ilmaa suihkuaa vielä ulos ja raketti saa lisää vauhtia.
+**Järkevyys:** Ilma laajenee 1,5-kertaiseksi, joten paine on kaksi kolmasosaa alkuperäisestä. Paine on yhä lähes kolminkertainen ilmanpaineeseen verrattuna, joten ilmaa suihkuaa vielä ulos ja raketti saa lisää vauhtia. Todellisuudessa ilma laajenee niin nopeasti, että se myös jäähtyy, joten paine jää hieman pienemmäksi.
 
 ## fy3-9-L1-04
 **Annettu:** V₁ = 3,0 l, θ₁ = 22 °C, θ₂ = −18 °C, paine vakio
@@ -42,9 +42,9 @@
 **Annettu:** V₁ = 6,8 l, p₁ = 300 bar = 30 000 kPa, p₂ = 101 kPa, lämpötila vakio
 **Kysytty:** tilavuus V₂ kuutiometreinä
 **Kaava:** p₁V₁ = p₂V₂, josta V₂ = p₁V₁ / p₂
-**Sijoitus:** V₂ = 30 000 kPa · 6,8 l / 101 kPa = 2020 l = 2,02 m³ ≈ 2,0 m³
+**Sijoitus:** V₂ = 30 000 kPa · 6,8 l / 101 kPa ≈ 2020 l = 2,02 m³ ≈ 2,0 m³
 **Vastaus:** 2,0 m³
-**Järkevyys:** Pieneen pulloon mahtuu noin kaksi kuutiometriä ilmaa, koska paine on lähes 300-kertainen ilmanpaineeseen nähden. Jos palomies hengittää 50 l minuutissa, ilma riittää noin 40 minuutiksi, mikä vastaa todellisia laitteita.
+**Järkevyys:** Pieneen pulloon mahtuu noin kaksi kuutiometriä ilmaa, koska paine on lähes 300-kertainen ilmanpaineeseen nähden. Jos palomies hengittää 50 l minuutissa, ilma riittää noin 40 minuutiksi, mikä vastaa todellisia laitteita. Näin suurella paineella ilma on noin 10 % jäykempää kuin Boylen laki olettaa, joten todellinen tilavuus on vähän pienempi, noin 1,8 m³.
 
 ## fy3-9-L2-02
 **Annettu:** θ₁ = 20 °C, p₁ = 101 kPa, p₂ = 125 kPa, tilavuus vakio
@@ -64,11 +64,11 @@
 
 ## fy3-9-L2-04
 **Annettu:** V₁ = 2800 m³, θ₁ = 10 °C, θ₂ = 100 °C, paine vakio
-**Kysytty:** alkuperäisen ilman tilavuus V₂ lämmettyään ja ulos työntynyt tilavuus
+**Kysytty:** alkuperäisen ilman tilavuus V₂ 100 °C:ssa ja se osa siitä, joka ei mahdu kuoreen
 **Kaava:** V₁/T₁ = V₂/T₂, josta V₂ = V₁T₂ / T₁
-**Sijoitus:** T₁ = 283,15 K ja T₂ = 373,15 K. V₂ = 2800 m³ · 373,15 K / 283,15 K = 3690 m³. Ulos työntyy 3690 m³ − 2800 m³ = 890 m³.
+**Sijoitus:** T₁ = 283,15 K ja T₂ = 373,15 K. V₂ = 2800 m³ · 373,15 K / 283,15 K = 3690 m³. Kuoreen mahtuu 2800 m³, joten 100 °C:n ilmaa työntyy ulos 3690 m³ − 2800 m³ = 890 m³.
 **Vastaus:** 890 m³
-**Järkevyys:** Noin neljäsosa lämpimästä ilmasta ei mahdu kuoreen. Kuoreen jää siis vähemmän ilmaa kuin kylmänä, joten pallo kevenee ja ympäröivä ilma nostaa sen ylös. Celsiusasteilla laskettu kymmenkertainen tilavuus olisi järjetön.
+**Järkevyys:** Noin neljäsosa lämpimästä ilmasta ei mahdu kuoreen. Kuoreen jää siis vähemmän ilmaa kuin kylmänä, joten pallo kevenee. Celsiusasteilla laskettu kymmenkertainen tilavuus olisi järjetön.
 
 ## fy3-9-L3-01
 **Annettu:** h = 20,0 m, V₁ = 2,0 cm³, p₀ = 101 kPa, ρ = 1000 kg/m³, g = 9,81 m/s², lämpötila vakio

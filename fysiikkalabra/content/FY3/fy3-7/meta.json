@@ -19,7 +19,8 @@
   ],
   "sim": true,
   "image": false,
-  "status": "draft",
-  "reviewed_by": "",
-  "reviewed_on": ""
+  "status": "reviewed",
+  "reviewed_by": "gate (automaattinen tarkistus)",
+  "reviewed_on": "2026-10-25",
+  "reviewed_hash": "f28d5c7c47f4b1d2"
 }
