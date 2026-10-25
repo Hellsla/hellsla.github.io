@@ -361,6 +361,18 @@
     "locked": false
   },
   {
+    "term": "tasapainolämpötila",
+    "definition": "Yhteinen loppulämpötila T, johon kappaleet asettuvat, kun ne ovat saavuttaneet lämpötasapainon. Eristetyssä astiassa se ratkaistaan yhtälöstä, jossa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpötasapaino",
+      "lämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
     "term": "teho",
     "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv; yksikkö on watti (W), joka on yksi joule sekunnissa.",
     "lessons": [
