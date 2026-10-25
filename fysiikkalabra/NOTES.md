@@ -63,6 +63,7 @@ It exits 1 on a bad fragment. CI and the mathematician agent run it too. After c
 
 ### Process
 - Publishing goes through the gate (`scripts/gate.py`): all reviewers PASS on the current content hash, then the publisher agent commits. Do not hand-edit `status`, `reviewed_by`, `reviewed_on` or `reviewed_hash`.
+- Reviewers never edit anything that is part of the hash (that includes `tests/sims/<id>.json`); the tester reports missing assertions and the fixer adds them.
 - Any edit to a lesson changes its hash. After a fix, every reviewer has to run again.
 - Reviewers never edit lesson files. After a FAIL, fix, rebuild, test and rerun the failed reviewers.
 - Keep commits small and push after each; the branch name is given by the session.
