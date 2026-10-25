@@ -3,7 +3,7 @@
 // Mass is the same everywhere; only the weight changes. The spring stretch and the weight arrow are proportional
 // to G, and the bar heights are proportional to G at the current mass. The spring and the arrow use one fixed scale whose full value is the
 // largest possible weight (100 kg on Jupiter, 2480 N), so they visibly change with the mass slider and with
-// the chosen body. The bar chart is scaled to the current mass (full height = m · 24,8 N, the Jupiter bar),
+// the chosen body. The bar chart is scaled to the current mass (full height = m · 24,8 m/s², the Jupiter bar),
 // so the four bars always compare the bodies at a readable size; the scale is printed above the chart.
 // The stretch and the arrow in simState are the pure proportional values (stretch = G / G_FULL * maxLen,
 // arrow = G / G_FULL * ARROW_FULL, no offset); the drawing adds a fixed rest length to the spring, a 2 px

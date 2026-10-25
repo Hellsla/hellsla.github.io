@@ -1,9 +1,9 @@
 // fy3-1 Voima vuorovaikutuksen mittana: a mass on a spring scale (voimamittari) on different bodies.
-// Physics: weight G = m g, with g the strength of gravity per kilogram (N/kg) on the chosen body.
+// Physics: weight G = m g, with g the acceleration of free fall (m/s²) on the chosen body.
 // Mass is the same everywhere; only the weight changes. The spring stretch and the weight arrow are proportional
 // to G, and the bar heights are proportional to G at the current mass. The spring and the arrow use one fixed scale whose full value is the
 // largest possible weight (100 kg on Jupiter, 2480 N), so they visibly change with the mass slider and with
-// the chosen body. The bar chart is scaled to the current mass (full height = m · 24,8 N, the Jupiter bar),
+// the chosen body. The bar chart is scaled to the current mass (full height = m · 24,8 m/s², the Jupiter bar),
 // so the four bars always compare the bodies at a readable size; the scale is printed above the chart.
 // The stretch and the arrow in simState are the pure proportional values (stretch = G / G_FULL * maxLen,
 // arrow = G / G_FULL * ARROW_FULL, no offset); the drawing adds a fixed rest length to the spring, a 2 px
@@ -45,7 +45,7 @@ new p5((p) => {
     const stretch = SPRING.maxLen * G / G_FULL;                // spring stretch (px), proportional to the weight G
     lM.html(`Massa m = ${m} kg`);
     const chartFull = m * G_MAX;                                // bar chart full scale: this mass on Jupiter
-    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} N/kg (${body})` +
+    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} m/s² (${body})` +
                  `<br><strong>G = m · g = ${fi(G, 1)} N</strong>` +
                  `<br>Palkkikaavion asteikko 0–${fi(chartFull, chartFull < 100 ? 1 : 0)} N on tämän massan paino Jupiterissa.`);
     const arrow = ARROW_FULL * G / G_FULL;                     // weight arrow length (px), purely proportional to G
@@ -75,14 +75,15 @@ new p5((p) => {
     p.textAlign(p.LEFT); p.textSize(ts(13)); p.text('G', ax + 10, by + 6 + aLen / 2 + 5);
 
     // bar chart: weight of the same mass on every body, chosen body highlighted
-    p.stroke(60); p.strokeWeight(2); p.line(BARS.x, BARS.y + BARS.h, BARS.x + BARS.w, BARS.y + BARS.h); p.line(BARS.x, BARS.y + BARS.h, BARS.x, BARS.y);
+    p.stroke(60); p.strokeWeight(2); p.line(BARS.x, BARS.y + BARS.h, BARS.x + BARS.w, BARS.y + BARS.h);
+    p.line(BARS.x, BARS.y + BARS.h, BARS.x, BARS.y + 30); p.line(BARS.x - 5, BARS.y + 30, BARS.x + 5, BARS.y + 30);   // y axis ends at full scale, with a tick
     const bw = BARS.w / 4 - 16;
     BODIES.forEach(([name, gg], i) => {
       const val = m * gg, h = Math.max(2, bars[i]), x = BARS.x + 12 + i * (bw + 16);
       p.noStroke(); p.fill(COLORS[i][0], COLORS[i][1], COLORS[i][2], i === idx ? 255 : 200); p.rect(x, BARS.y + BARS.h - h, bw, h, 3);
       p.fill(60); p.textAlign(p.CENTER); p.textSize(ts(12)); p.text(name, x + bw / 2, BARS.y + BARS.h + ts(16));
       const vt = `${fi(val, val < 100 ? 1 : 0)} N`;                  // value label, shrunk if it would touch the neighbour's label
-      if (p.textWidth(vt) > bw + 12) p.textSize(ts(12) * (bw + 12) / p.textWidth(vt));
+      if (p.textWidth(vt) > bw + 12) p.textSize(Math.max(10 * k, ts(12) * (bw + 12) / p.textWidth(vt)));   // never below 10 rendered px
       p.text(vt, x + bw / 2, BARS.y + BARS.h - h - 6);
     });
     p.fill(26, 77, 46); p.textAlign(p.CENTER); p.textSize(ts(13));   // title: shrunk to fit inside the canvas when the canvas is scaled down

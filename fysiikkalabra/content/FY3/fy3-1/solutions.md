@@ -87,7 +87,7 @@
 **Järkevyys:** Massa on noin kuusinkertainen Maahan verrattuna, koska paino on Kuussa noin kuudesosa.
 
 ## fy3-1-L3-03
-**Annettu:** m = 6,0 kg, g_Kuu = 1,62 m/s²; mittarin asteikko näyttää kilogrammoina voiman jaettuna luvulla 9,81 m/s²
+**Annettu:** m = 6,0 kg, g_Kuu = 1,62 m/s²; mittarin asteikko näyttää kilogrammoina voiman jaettuna arvolla 9,81 m/s²
 **Kysytty:** mittarin lukema
 **Kaava:** mittari mittaa painoa G = m g_Kuu; lukema = G / 9,81 m/s²
 **Sijoitus:** G = 6,0 kg · 1,62 m/s² = 9,72 N; lukema = 9,72 N / 9,81 m/s² = 0,991 kg
