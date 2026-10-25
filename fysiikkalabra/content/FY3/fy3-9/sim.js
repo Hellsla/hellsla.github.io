@@ -110,13 +110,13 @@ new p5((p) => {
                  `<br>Kuvaajan akselit: ${ax.x[2].split(' ')[0]} 0…${fi(ax.x[0], inv ? 2 : 0)} ${ax.x[2].split(' ')[1].slice(1, -1)}, ` +
                  `${ax.y[2].split(' ')[0]} 0…${ax.y[0]} ${ax.y[2].split(' ')[1].slice(1, -1)}. ` +
                  `Taulukossa ${rows.length}/${MAX_ROWS} mittausta${full ? ', taulukko on täynnä' : ''}.`);
-    const td = '<td style="padding:.4rem .45rem">', th = '<th style="padding:.4rem .45rem;letter-spacing:0">';   // narrow cells, five columns fit a phone
+    const td = '<td style="padding:.4rem .25rem">', th = '<th style="padding:.4rem .25rem;letter-spacing:0">';   // narrow cells, five columns fit a phone
     let h = `<table><thead><tr>${th}V<br>(ml)</th>${th}1/V<br>(1/ml)</th>${th}p<br>(kPa)</th>${th}T<br>(K)</th>${th}${cName}<br>(${cUnit})</th></tr></thead><tbody>`;
     for (const r of rows) {
       const Vm = r.V * 1e6, pr = r.p / 1000;
       h += `<tr>${td}${fi(Vm, 1)}</td>${td}${fs(1 / Vm)}</td>${td}${fi(pr, 1)}</td>${td}${fi(r.T, 2)}</td>${td}${fi(cFn(Vm, pr, r.T), cDec)}</td></tr>`;
     }
-    if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .5rem">Ei mittauksia. Paina Tallenna mittaus.</td></tr>';
+    if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .25rem">Ei mittauksia. Paina Tallenna mittaus.</td></tr>';
     h += '</tbody></table>';
     if (table.elt.innerHTML !== h) table.elt.innerHTML = h;
     window.simState = { mode, V: V * 1e-6, p: pk * 1000, T, constant: c * (iso ? 1e-3 : mode === 'isobaarinen' ? 1e-6 : 1e3),

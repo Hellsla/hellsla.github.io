@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e15a6538eb0006e3
+CONTENT-HASH: fcba3a0523db34af
 
 ## Blocking
 (none)
@@ -11,12 +11,12 @@ CONTENT-HASH: e15a6538eb0006e3
 ## Diff
 ```diff
 ```
-(empty: the first-pass diff is applied and nothing else is wrong)
+(empty: round 2 diff is applied; the round-3 sim.js change needs no language fix)
 
 ## Checked
-- First-pass diff confirmed in lesson.md:10 (bottle holes, "koska paine kasvaa syvyyden mukana"), :12 (ilmanpaine sentence split, "Ilmanpaine ... välittyy veden kautta") and :14 ("ylipaine eli paineen ilmanpainetta suurempi osa", "Ylipaine on yläreunassa nolla"); grammar and logic correct.
-- Rest of lesson.md re-read: derivation (:8), formula section, worked example (:47-53), misconception (:56), summary; spelling, decimal comma, thin-space units and case endings (12 m:n, 150 cm², 180 kg:n, 290 kN:n) correct.
-- exercises.json texts (all 12): spelling, case after number-plus-unit (95 m:n, 18,0 m:n, 4,0 m:n, 1,60 m:n), "kilopascaleina/megapascaleina/kilonewtoneina" correct; numbers untouched.
-- solutions.md, exit-ticket.json, sim-spec.md and sim.js Finnish strings ("Näytä vain ylipaine", "ylipaine ρgh (kPa)", "ilma, p₀ = 101 kPa", note text): correct.
-- Terminology matches glossary.json (paine, pascal, hydrostaattinen paine, ilmanpaine, ylipaine, tiheys); "paino" used as a force; no "N voimalla" slips.
-- lint_lesson.py fy3-4: 0 errors, 0 warnings. Reading level suitable for 16-19-year-olds.
+- Round 3: only sim.js changed since my round-2 PASS (hash e15a6538eb0006e3 -> fcba3a0523db34af); lesson.md, exercises.json, solutions.md, exit-ticket.json, sim-spec.md unchanged and not re-judged beyond the hash.
+- sim.js Finnish strings re-read in full: "Näytä vain ylipaine", note text (line 35), "Syvyys h", "Tiheys ρ", "Hydrostaattinen paine ρgh", "Kokonaispaine p = p₀ + ρgh", "kertaa ilmanpaine", "Kuvaajan asteikko 0–", "ylipaine ρgh (kPa)", "paine p (kPa)", "ilma, p₀ = 101 kPa"; spelling, decimal comma (fi()), minus sign and thin-space-free kPa/m usage correct.
+- Liquid names (bensiini, vesi, merivesi, Kuolleenmeren vesi): correct spelling and capitalisation.
+- New placement code: the short label "p₀" is the symbol alone, the same as the lesson text uses and the readout defines ("p₀ = 101 kPa"); no terminology or meaning problem when the long form shortens.
+- Terminology matches glossary.json (paine, hydrostaattinen paine, ilmanpaine, ylipaine, tiheys); no "N voimalla" slips.
+- lint_lesson.py fy3-4: 0 errors, 0 warnings. Hash unchanged at start and end of review.
