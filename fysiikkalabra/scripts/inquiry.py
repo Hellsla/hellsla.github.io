@@ -17,6 +17,7 @@ STAGE_IDS = [s for s, _ in STAGES]
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
+RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
 
 
 def load(folder):
@@ -79,6 +80,7 @@ def validate(folder, inquiry, lesson_md):
         aid = a.get("id")
         if not isinstance(aid, str) or not ID_RE.match(aid): E(f"{p}.id: a short lowercase id such as \"pred-1\" is required")
         elif aid in ids: E(f"{p}.id: \"{aid}\" is used twice")
+        elif aid in RESERVED_IDS: E(f"{p}.id: \"{aid}\" is an id the page already uses (section or stage); choose another, e.g. \"simulaatio\", \"tehtavat\", \"lahtolippu\"")
         else: ids.add(aid)
         if a.get("stage") not in STAGE_IDS: E(f"{p}.stage: one of {', '.join(STAGE_IDS)}")
         t = a.get("type")

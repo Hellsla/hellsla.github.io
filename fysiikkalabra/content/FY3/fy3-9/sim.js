@@ -75,6 +75,12 @@ new p5((p) => {
     chk = p.createElement('input').attribute('type', 'checkbox').parent(lChk).style('width', '22px').style('height', '22px');
     p.createSpan('Piirrä p 1/V:n funktiona').parent(lChk);
     reset(); p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { mode: { input: sel.elt, unit: '' }, Vml: { input: sV.elt, unit: 'ml' }, Tc: { input: sT.elt, unit: '°C' } },
+      get: () => ({ ...window.simState, Vml: Number(sV.value()), Tc: Number(sT.value()) }),   // slider readings beside the SI values of simState
+      reset: () => { sel.selected('isoterminen'); reset(); },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

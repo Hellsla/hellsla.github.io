@@ -36,7 +36,7 @@ activities, so stages repeat, combine or are omitted by what the lesson needs):
 | `sovella` | Sovella | `theory` (Esimerkki), error-spotting `choice`, `numeric` transfer task, `exercises` |
 | `tarkista` | Tarkista osaamisesi | three checks: a conceptual `choice`, a `numeric` or representational task, an `explain`; then `exit` |
 
-Every activity has `id` (lowercase, unique), `stage`, `type`, optional `title` (plain text) and optional `hints`
+Every activity has `id` (lowercase, unique, and not one of the page's own ids `sim`, `exercises`, `exit`, `teoria` or a stage id), `stage`, `type`, optional `title` (plain text) and optional `hints`
 (at most three strings, shown progressively: a guiding question, the representation or relationship, a worked
 intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 

@@ -122,7 +122,7 @@
       ]
     },
     {
-      "id": "sim",
+      "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa painemittari laskeutuu nesteeseen. Säädä syvyyttä ja tiheyttä ja seuraa mittarin lukemaa ja (h, p)-kuvaajaa. Ilmanpaine pinnalla on kiinteä 101 kPa, ja neste on levossa ja yhtä tiheää kaikkialla (sen kokoonpuristuminen jätetään huomiotta). Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä. Ruutu *Näytä vain ylipaine* jättää kuvaajasta pois ilmanpaineen."
@@ -294,7 +294,7 @@
       "solution": "**Ratkaisu symbolisesti.** Patsaan yläpinnalla paine on nolla, ja astian pinnan tasolla paine on ilmanpaine. Siten $p_0 = 0 + \\rho g h$, josta\n\n$$h = \\frac{p_0}{\\rho g}$$\n\n**Sijoitus.** $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 0{,}757\\,\\text{m}$.\n\n**Järkevyys.** Noin 76 cm:n elohopeapatsas vastaa samaa painetta kuin noin 10 m:n vesipatsas, koska elohopea on 13,6 kertaa tiheämpää."
     },
     {
-      "id": "exercises",
+      "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
       "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii kahden asian yhdistämistä."
@@ -362,7 +362,7 @@
       "model": "Pinnalla tärykalvon molemmilla puolilla on ilmanpaine, joten voimat kumoavat toisensa. Kolmen metrin syvyydessä ulkopuolinen paine on ilmanpainetta suurempi ylipaineen $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{m} \\approx 29\\,\\text{kPa}$ verran, mutta välikorvan ilma on yhä ilmanpaineessa. Paine-ero työntää kalvoa sisäänpäin, kohtisuoraan sen pintaa vastaan, voimalla $F = \\Delta p \\cdot A$; jos kalvon ala on noin $0{,}6\\,\\text{cm}^2$ (likiarvo), voima on noin 1,8 N. Kun sukeltaja päästää välikorvaan lisää ilmaa, sen paine nousee ulkopuolisen paineen suuruiseksi. Silloin kalvon eri puolilla on sama paine, voimat kumoavat toisensa ja tunne katoaa."
     },
     {
-      "id": "exit",
+      "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
       "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."

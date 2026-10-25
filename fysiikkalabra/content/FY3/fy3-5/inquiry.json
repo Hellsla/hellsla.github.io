@@ -228,7 +228,7 @@
       "solution": "**Ratkaisu symbolisesti.** Systeemi on sylinterin ilma. Ympäristö tekee siihen työn $W = Fs$, ja lämpöä siirtyy pois, joten $Q < 0$:\n\n$$\\Delta U = Q + W = Q + Fs$$\n\n**Sijoitus.** $\\Delta U = -0{,}60\\,\\text{J} + 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = -0{,}60\\,\\text{J} + 6{,}0\\,\\text{J} = 5{,}4\\,\\text{J}$.\n\n**Järkevyys.** Puristus on niin nopea, että vain pieni osa energiasta ehtii siirtyä pois. Muutama joule riittää kuumentamaan sylinterin pienen ilmamäärän taulan syttymislämpötilaan."
     },
     {
-      "id": "exercises",
+      "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
       "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä riittää $\\Delta U = Q + W$ ja oikeat etumerkit, taso 3 vaatii päättelyä."
@@ -295,7 +295,7 @@
       "model": "Männän työ $W$ siirtää ilmaan energiaa, ja ilman sisäenergia kasvaa: hiukkaset liikkuvat keskimäärin nopeammin, ja lämpötila nousee. Kun ilma on ympäristöä lämpimämpää, siitä siirtyy energiaa lämpönä seinien kautta ympäristöön, joten $Q$ on negatiivinen. Nopeassa pumppauksessa lämpöä ehtii siirtyä vain vähän, joten $\\Delta U = Q + W$ on lähes yhtä suuri kuin työ ja ilma kuumenee paljon. Hitaassa pumppauksessa lähes kaikki työn tuoma energia ehtii siirtyä lämpönä pois, jolloin $Q \\approx -W$, sisäenergia kasvaa vähän eikä pumppu juuri lämpene. Energia ei katoa kummassakaan: se päätyy lopulta ympäristön sisäenergiaksi."
     },
     {
-      "id": "exit",
+      "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
       "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."

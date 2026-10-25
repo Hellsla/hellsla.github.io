@@ -94,7 +94,7 @@
       ]
     },
     {
-      "id": "sim",
+      "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa kappale upotetaan eristettyyn vesiastiaan. Säädä veden ja kappaleen massaa ja alkulämpötilaa ja vaihda kappaleen ainetta. *Upota* näyttää, miten lämpötilat lähestyvät toisiaan. Tasapainolämpötila ja lämpömäärät ovat mallin laskemia arvoja, eivät mittauksia: astian oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta, ja lähestymisen nopeus on vain havainnollistus."
@@ -188,7 +188,7 @@
       "min": 2
     },
     {
-      "id": "teoria",
+      "id": "teoria-osa",
       "stage": "selita",
       "type": "theory",
       "sections": [
@@ -335,7 +335,7 @@
       "model": "Veden ominaislämpökapasiteetti, 4190 J/(kg·K), on noin viisinkertainen hiekkaan verrattuna, ja järvessä on valtava määrä vettä, joten järven lämpökapasiteetti $C = cm$ on hyvin suuri. Yhtälön $Q = cm\\Delta T$ mukaan suuri lämpömäärä muuttaa sen lämpötilaa vain vähän. Kesällä järvi varastoi paljon energiaa, ja syksyllä se jäähtyy hitaasti ja luovuttaa lämpöä rannan ilmaan, joten yöt ovat lauhempia. Keväällä järvi on vielä kylmä ja lämpenee hitaasti, joten se jäähdyttää rannan ilmaa. Maa sen sijaan lämpenee ja jäähtyy nopeasti."
     },
     {
-      "id": "exit",
+      "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
       "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."

@@ -228,7 +228,7 @@
       "solution": "**Ratkaisu symbolisesti.** Lämpö johtuu lämpimästä keittiöstä kylmään jääkaappiin teholla $P = UA\\Delta T$, ja vuorokaudessa siirtyy energia\n\n$$E = Pt = UA\\Delta T\\,t$$\n\n**Sijoitus.** $\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$, joten $P = 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19{,}2\\,\\text{W}$ ja $E = 0{,}0192\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 0{,}46\\,\\text{kWh}$.\n\n**Järkevyys.** Jääkaappi on energiatasapainossa vain, jos koneisto siirtää saman energian ulos. Teho on vain noin 20 W, koska jääkaapin lämpötilaero on pieni ja seinät ovat hyvin eristetyt. Oven avaaminen lisää tarvetta, koska lämmin ilma pääsee konvektiolla sisään."
     },
     {
-      "id": "exercises",
+      "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
       "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä riittää yksi yhtälö, $P = UA\\Delta T$, $E = Pt$ tai energiatasapaino. Taso 3 yhdistää lämmön siirtymisen ja energian varastoitumisen."
@@ -300,7 +300,7 @@
       "model": "Väitteen alkuosa pitää paikkansa tasapainotilassa: kun maapallo säteilee avaruuteen yhtä suuren tehon kuin imee Auringosta, sen lämpötila pysyy vakiona. Tasapaino ei kuitenkaan ole pysyvä. Kun hiilidioksidia lisätään, ilmakehä imee enemmän maanpinnan lämpösäteilyä ja säteilee osan siitä takaisin alas, ja avaruuteen pääsee hetkellisesti vähemmän tehoa kuin maapallo imee. Ylimääräinen teho lämmittää meriä, maata ja ilmaa. Lämpimämpi maapallo säteilee enemmän, joten lämpeneminen jatkuu, kunnes lähtevä teho on taas yhtä suuri kuin imeytyvä. Uusi tasapaino asettuu siis korkeampaan lämpötilaan. Kasvihuoneilmiö ei myöskään ole kokonaan haitallinen: luonnollinen kasvihuoneilmiö nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een. Ongelma on sen voimistuminen ihmisen päästöjen vuoksi."
     },
     {
-      "id": "exit",
+      "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
       "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."

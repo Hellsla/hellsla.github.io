@@ -20,9 +20,19 @@
       "title": "Mitä jo tiedät",
       "prompt": "Pumppaat pyörän renkaaseen lisää ilmaa. Miksi rengas kovenee?",
       "choices": [
-        { "text": "Renkaaseen tulee lisää ilmaa, ja ilma painaa renkaan seiniä sisältäpäin voimakkaammin.", "correct": true, "feedback": "Juuri näin: kun samaan tilaan tuodaan lisää ilmaa, sen paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu saa saman ilman painamaan seiniä voimakkaammin." },
-        { "text": "Ilma puristuu renkaassa kokoon, joten sitä on lopulta vähemmän.", "feedback": "Pumppaaminen lisää ilman määrää renkaassa; ilmaa ei katoa minnekään. Ilma kyllä puristuu pienempään tilaan, mutta juuri siksi se painaa renkaan seiniä voimakkaammin." },
-        { "text": "Kumi kiristyy pumpun iskuista, ja ilmalla ei ole asian kanssa tekemistä.", "feedback": "Tyhjä rengas ei kovene, vaikka sitä taputtelisi. Kovuus tulee renkaan sisällä olevasta ilmasta, joka painaa kumia ulospäin." }
+        {
+          "text": "Renkaaseen tulee lisää ilmaa, ja ilma painaa renkaan seiniä sisältäpäin voimakkaammin.",
+          "correct": true,
+          "feedback": "Juuri näin: kun samaan tilaan tuodaan lisää ilmaa, sen paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu saa saman ilman painamaan seiniä voimakkaammin."
+        },
+        {
+          "text": "Ilma puristuu renkaassa kokoon, joten sitä on lopulta vähemmän.",
+          "feedback": "Pumppaaminen lisää ilman määrää renkaassa; ilmaa ei katoa minnekään. Ilma kyllä puristuu pienempään tilaan, mutta juuri siksi se painaa renkaan seiniä voimakkaammin."
+        },
+        {
+          "text": "Kumi kiristyy pumpun iskuista, ja ilmalla ei ole asian kanssa tekemistä.",
+          "feedback": "Tyhjä rengas ei kovene, vaikka sitä taputtelisi. Kovuus tulee renkaan sisällä olevasta ilmasta, joka painaa kumia ulospäin."
+        }
       ]
     },
     {
@@ -32,12 +42,28 @@
       "title": "Ennuste 1: kaasu lämpenee",
       "prompt": "Suljetussa astiassa olevan kaasun lämpötila nostetaan 27 °C:sta 327 °C:een. Astian tilavuus ja kaasun määrä pysyvät samoina. Mitä kaasun paineelle tapahtuu?",
       "justify": true,
-      "reveal": { "after": "exp-1", "min": 2 },
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
       "choices": [
-        { "text": "Paine kasvaa noin 12-kertaiseksi, koska 327 on noin 12 kertaa 27.", "feedback": "Mallin teoria-arvo kasvaa 100:sta 200:aan, eli paine kaksinkertaistuu. Celsiusasteikon nollakohta on vain veden jäätymispiste, eivätkä hiukkaset ole siinä paikallaan. Suhde lasketaan kelvineinä: 27 °C = 300 K ja 327 °C = 600 K, ja 600 K / 300 K = 2." },
-        { "text": "Paine kaksinkertaistuu.", "correct": true, "feedback": "Kokeen tulokset tukevat tätä: teoria-arvo kasvaa 100:sta 200:aan, ja mitattu paine vaihtelee näiden ympärillä. Kelvineinä lämpötila kaksinkertaistuu, 300 K:sta 600 K:iin, ja paine kasvaa samassa suhteessa." },
-        { "text": "Paine pysyy samana, koska astiaan ei tule lisää kaasua.", "feedback": "Hiukkasia on kokeessa koko ajan 80, mutta paine kasvaa silti 100:sta noin 200:aan. Paine ei riipu vain kaasun määrästä vaan myös siitä, kuinka nopeasti hiukkaset liikkuvat." },
-        { "text": "Paine kasvaa samassa suhteessa kuin hiukkasten keskinopeus, noin 1,4-kertaiseksi.", "feedback": "Keskinopeus kasvaakin vain 1,41-kertaiseksi, mutta paine kaksinkertaistuu. Nopeampi hiukkanen osuu seinään kovempaa ja lisäksi useammin, joten molemmat vaikutukset kasvattavat painetta: $1{,}41 \\cdot 1{,}41 \\approx 2$." }
+        {
+          "text": "Paine kasvaa noin 12-kertaiseksi, koska 327 on noin 12 kertaa 27.",
+          "feedback": "Mallin teoria-arvo kasvaa 100:sta 200:aan, eli paine kaksinkertaistuu. Celsiusasteikon nollakohta on vain veden jäätymispiste, eivätkä hiukkaset ole siinä paikallaan. Suhde lasketaan kelvineinä: 27 °C = 300 K ja 327 °C = 600 K, ja 600 K / 300 K = 2."
+        },
+        {
+          "text": "Paine kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Kokeen tulokset tukevat tätä: teoria-arvo kasvaa 100:sta 200:aan, ja mitattu paine vaihtelee näiden ympärillä. Kelvineinä lämpötila kaksinkertaistuu, 300 K:sta 600 K:iin, ja paine kasvaa samassa suhteessa."
+        },
+        {
+          "text": "Paine pysyy samana, koska astiaan ei tule lisää kaasua.",
+          "feedback": "Hiukkasia on kokeessa koko ajan 80, mutta paine kasvaa silti 100:sta noin 200:aan. Paine ei riipu vain kaasun määrästä vaan myös siitä, kuinka nopeasti hiukkaset liikkuvat."
+        },
+        {
+          "text": "Paine kasvaa samassa suhteessa kuin hiukkasten keskinopeus, noin 1,4-kertaiseksi.",
+          "feedback": "Keskinopeus kasvaakin vain 1,41-kertaiseksi, mutta paine kaksinkertaistuu. Nopeampi hiukkanen osuu seinään kovempaa ja lisäksi useammin, joten molemmat vaikutukset kasvattavat painetta: $1{,}41 \\cdot 1{,}41 \\approx 2$."
+        }
       ]
     },
     {
@@ -47,12 +73,28 @@
       "title": "Ennuste 2: astia pienenee",
       "prompt": "Kaasun lämpötila pysyy 300 K:ssa, ja astian tilavuus puolitetaan 2,0 dm³:stä 1,0 dm³:iin. Kaasun määrä ei muutu. Mitä paineelle tapahtuu, ja miksi?",
       "justify": true,
-      "reveal": { "after": "exp-2", "min": 2 },
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
       "choices": [
-        { "text": "Paine pysyy samana, koska lämpötila ei muutu.", "feedback": "Kokeessa teoria-arvo kasvaa 50:stä 100:aan, vaikka lämpötila pysyy 300 K:ssa. Lämpötila ei yksin määrää painetta: kun tilaa on vähemmän, samat hiukkaset osuvat seinään useammin." },
-        { "text": "Paine kaksinkertaistuu, koska hiukkaset osuvat seinään useammin.", "correct": true, "feedback": "Kokeen tulokset tukevat tätä: teoria-arvo kasvaa 50:stä 100:aan, mutta keskinopeus pysyy lukemassa 1,00. Hiukkaset eivät osu seinään kovempaa, vaan useammin, koska niiden matka seinältä seinälle lyhenee." },
-        { "text": "Paine kaksinkertaistuu, koska ahtaassa tilassa hiukkaset liikkuvat nopeammin.", "feedback": "Paine kaksinkertaistuu, mutta keskinopeus pysyy kokeessa lukemassa 1,00. Hiukkasten nopeus riippuu lämpötilasta, ei astian koosta. Pienemmässä astiassa samalla nopeudella liikkuvat hiukkaset vain osuvat seinään useammin." },
-        { "text": "Paine pienenee, koska seinää, johon osua, on vähemmän.", "feedback": "Kokeessa paine kasvaa 50:stä 100:aan. Seinää on vähemmän, mutta törmäyksiä seinän pituutta kohti on enemmän, koska hiukkaset palaavat seinälle nopeammin." }
+        {
+          "text": "Paine pysyy samana, koska lämpötila ei muutu.",
+          "feedback": "Kokeessa teoria-arvo kasvaa 50:stä 100:aan, vaikka lämpötila pysyy 300 K:ssa. Lämpötila ei yksin määrää painetta: kun tilaa on vähemmän, samat hiukkaset osuvat seinään useammin."
+        },
+        {
+          "text": "Paine kaksinkertaistuu, koska hiukkaset osuvat seinään useammin.",
+          "correct": true,
+          "feedback": "Kokeen tulokset tukevat tätä: teoria-arvo kasvaa 50:stä 100:aan, mutta keskinopeus pysyy lukemassa 1,00. Hiukkaset eivät osu seinään kovempaa, vaan useammin, koska niiden matka seinältä seinälle lyhenee."
+        },
+        {
+          "text": "Paine kaksinkertaistuu, koska ahtaassa tilassa hiukkaset liikkuvat nopeammin.",
+          "feedback": "Paine kaksinkertaistuu, mutta keskinopeus pysyy kokeessa lukemassa 1,00. Hiukkasten nopeus riippuu lämpötilasta, ei astian koosta. Pienemmässä astiassa samalla nopeudella liikkuvat hiukkaset vain osuvat seinään useammin."
+        },
+        {
+          "text": "Paine pienenee, koska seinää, johon osua, on vähemmän.",
+          "feedback": "Kokeessa paine kasvaa 50:stä 100:aan. Seinää on vähemmän, mutta törmäyksiä seinän pituutta kohti on enemmän, koska hiukkaset palaavat seinälle nopeammin."
+        }
       ]
     },
     {
@@ -63,15 +105,28 @@
       "title": "Ennuste 3: miksi lämmin kaasu painaa enemmän?",
       "prompt": "Kolme opiskelijaa selittää, miksi suljetun astian kaasun paine kasvaa, kun kaasu lämpenee. Kenen selitys sopii siihen, mitä kokeessa 1 näet?",
       "justify": true,
-      "reveal": { "after": "exp-1", "min": 2 },
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
       "choices": [
-        { "text": "Aino: Hiukkaset laajenevat lämmetessään ja täyttävät astiaa enemmän, joten ne painavat seiniä.", "feedback": "Kokeessa hiukkasten koko ei muutu lämpötilan mukana, mutta paine kasvaa silti. Kaasun hiukkasten koko ei todellisuudessakaan kasva lämmetessä; muuttuu niiden liike." },
-        { "text": "Bea: Hiukkaset liikkuvat nopeammin, joten ne osuvat seinään useammin ja kovempaa.", "correct": true, "feedback": "Kokeen tulokset tukevat tätä: hiukkasia on yhä 80 ja niiden koko on sama, mutta keskinopeus kasvaa lämpötilan mukana, ja paine kasvaa sen myötä." },
-        { "text": "Cem: Lämpö on ainetta, joka virtaa kaasuun ja lisää astiassa olevan aineen määrää.", "feedback": "Kokeessa hiukkasten määrä pysyy 80:nä koko ajan. Lämmittäminen ei lisää ainetta, vaan kasvattaa jo olemassa olevien hiukkasten keskimääräistä liike-energiaa." }
+        {
+          "text": "Aino: Hiukkaset laajenevat lämmetessään ja täyttävät astiaa enemmän, joten ne painavat seiniä.",
+          "feedback": "Kokeessa hiukkasten koko ei muutu lämpötilan mukana, mutta paine kasvaa silti. Kaasun hiukkasten koko ei todellisuudessakaan kasva lämmetessä; muuttuu niiden liike."
+        },
+        {
+          "text": "Bea: Hiukkaset liikkuvat nopeammin, joten ne osuvat seinään useammin ja kovempaa.",
+          "correct": true,
+          "feedback": "Kokeen tulokset tukevat tätä: hiukkasia on yhä 80 ja niiden koko on sama, mutta keskinopeus kasvaa lämpötilan mukana, ja paine kasvaa sen myötä."
+        },
+        {
+          "text": "Cem: Lämpö on ainetta, joka virtaa kaasuun ja lisää astiassa olevan aineen määrää.",
+          "feedback": "Kokeessa hiukkasten määrä pysyy 80:nä koko ajan. Lämmittäminen ei lisää ainetta, vaan kasvattaa jo olemassa olevien hiukkasten keskimääräistä liike-energiaa."
+        }
       ]
     },
     {
-      "id": "sim",
+      "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatio on kaasun mikromalli: astiassa liikkuu 80 hiukkasta, jotka kimpoavat seinistä. Malli on yksinkertaistettu: se on kaksiulotteinen, hiukkaset eivät törmää toisiinsa, ja kaikilla hiukkasilla on sama, lämpötilan määräämä nopeus. Paine on suhteellinen luku (100 = 300 K ja 1,0 dm³). *Mitattu* paine lasketaan hiukkasten törmäyksistä seinään viimeisen 1,5 sekunnin ajalta, joten se vaihtelee hieman; *teoria* on mallin laskema arvo. Kokeile vapaasti, mitä lämpötila ja tilavuus tekevät hiukkasille ja paineelle."
@@ -82,15 +137,35 @@
       "type": "experiment",
       "title": "Koe 1: vain lämpötila muuttuu",
       "intro": "Testaa ennusteet 1 ja 3. Tilavuus on lukittu 1,0 dm³:iin, ja vain lämpötila muuttuu. Kirjaa paine ja hiukkasten keskinopeus v (suhteessa 300 K:n keskinopeuteen) ainakin kahdessa lämpötilassa, esimerkiksi 150 K, 300 K ja 600 K. Odota säädön jälkeen pari sekuntia, jotta mitattu paine ehtii asettua uuteen arvoonsa. Vertaa kelvinlämpötilojen suhdetta paineiden suhteeseen.",
-      "initial": { "T": 300, "V": 1 },
-      "units": { "T": "K", "V": "dm³" },
-      "locked": ["V"],
+      "initial": {
+        "T": 300,
+        "V": 1
+      },
+      "units": {
+        "T": "K",
+        "V": "dm³"
+      },
+      "locked": [
+        "V"
+      ],
       "vary": "T",
       "measure": [
-        { "key": "theta", "label": "θ (°C)" },
-        { "key": "vRel", "label": "v (suht.)" },
-        { "key": "pRel", "label": "p mitattu" },
-        { "key": "pTheory", "label": "p teoria" }
+        {
+          "key": "theta",
+          "label": "θ (°C)"
+        },
+        {
+          "key": "vRel",
+          "label": "v (suht.)"
+        },
+        {
+          "key": "pRel",
+          "label": "p mitattu"
+        },
+        {
+          "key": "pTheory",
+          "label": "p teoria"
+        }
       ],
       "min": 2
     },
@@ -100,14 +175,31 @@
       "type": "experiment",
       "title": "Koe 2: vain tilavuus muuttuu",
       "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus v (suhteessa 300 K:n keskinopeuteen) ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
-      "initial": { "T": 300, "V": 2 },
-      "units": { "T": "K", "V": "dm³" },
-      "locked": ["T"],
+      "initial": {
+        "T": 300,
+        "V": 2
+      },
+      "units": {
+        "T": "K",
+        "V": "dm³"
+      },
+      "locked": [
+        "T"
+      ],
       "vary": "V",
       "measure": [
-        { "key": "vRel", "label": "v (suht.)" },
-        { "key": "pRel", "label": "p mitattu" },
-        { "key": "pTheory", "label": "p teoria" }
+        {
+          "key": "vRel",
+          "label": "v (suht.)"
+        },
+        {
+          "key": "pRel",
+          "label": "p mitattu"
+        },
+        {
+          "key": "pTheory",
+          "label": "p teoria"
+        }
       ],
       "min": 2
     },
@@ -115,7 +207,10 @@
       "id": "theory",
       "stage": "selita",
       "type": "theory",
-      "sections": ["Ydinajatus", "Kaava"]
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
     },
     {
       "id": "reflect",
@@ -123,13 +218,19 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "prompt": "Vertaa ennusteitasi kokeiden tuloksiin ja mikromalliin. Palaa sitten alun kysymykseen: miksi pyörän rengas on kova auringossa ja pehmeä pakkasella, vaikka sen ilma on sama? Käytä selityksessäsi sanoja lämpötila, hiukkasten nopeus ja törmäykset.",
-      "predictions": ["pred-1", "pred-2", "pred-3"]
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
     },
     {
       "id": "example",
       "stage": "sovella",
       "type": "theory",
-      "sections": ["Esimerkki"]
+      "sections": [
+        "Esimerkki"
+      ]
     },
     {
       "id": "virhe",
@@ -138,10 +239,23 @@
       "title": "Etsi virhe",
       "prompt": "Jäykässä suljetussa säiliössä kaasun paine on 120 kPa lämpötilassa 20 °C. Kaasu lämpenee 40 °C:seen. Opiskelija päättelee: ”Lämpötila kaksinkertaistuu, joten paine kaksinkertaistuu: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.” Missä on virhe?",
       "choices": [
-        { "text": "Paine ei muutu lainkaan, koska säiliön tilavuus pysyy samana.", "feedback": "Vakiotilavuudessakin paine kasvaa, kun hiukkaset liikkuvat nopeammin. Opiskelija oli oikeassa siinä, että paine kasvaa; virhe on siinä, kuinka paljon." },
-        { "text": "Lämpötilojen suhde pitää laskea kelvineinä: 313 K / 293 K ≈ 1,07, joten paine on noin 128 kPa.", "correct": true, "feedback": "Oikein. Paine on suoraan verrannollinen kelvinlämpötilaan, ei celsiuslämpötilaan: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. Celsiusasteikon nollakohta on vain veden jäätymispiste." },
-        { "text": "Paineeseen lisätään lämpötilan nousu: 120 kPa + 20 kPa = 140 kPa.", "feedback": "Kelvinejä tai celsiusasteita ei voi lisätä kilopascaleihin, koska ne ovat eri suureita. Paine muuttuu samassa suhteessa kuin kelvinlämpötila: noin 7 %, eli noin 128 kPa:iin." },
-        { "text": "Päättelyssä ei ole virhettä.", "feedback": "Lämpötila ei fysikaalisesti kaksinkertaistu: kelvineinä se nousee 293 K:sta 313 K:iin, vain noin 7 %. Paine kasvaa samassa suhteessa, noin 128 kPa:iin." }
+        {
+          "text": "Paine ei muutu lainkaan, koska säiliön tilavuus pysyy samana.",
+          "feedback": "Vakiotilavuudessakin paine kasvaa, kun hiukkaset liikkuvat nopeammin. Opiskelija oli oikeassa siinä, että paine kasvaa; virhe on siinä, kuinka paljon."
+        },
+        {
+          "text": "Lämpötilojen suhde pitää laskea kelvineinä: 313 K / 293 K ≈ 1,07, joten paine on noin 128 kPa.",
+          "correct": true,
+          "feedback": "Oikein. Paine on suoraan verrannollinen kelvinlämpötilaan, ei celsiuslämpötilaan: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. Celsiusasteikon nollakohta on vain veden jäätymispiste."
+        },
+        {
+          "text": "Paineeseen lisätään lämpötilan nousu: 120 kPa + 20 kPa = 140 kPa.",
+          "feedback": "Kelvinejä tai celsiusasteita ei voi lisätä kilopascaleihin, koska ne ovat eri suureita. Paine muuttuu samassa suhteessa kuin kelvinlämpötila: noin 7 %, eli noin 128 kPa:iin."
+        },
+        {
+          "text": "Päättelyssä ei ole virhettä.",
+          "feedback": "Lämpötila ei fysikaalisesti kaksinkertaistu: kelvineinä se nousee 293 K:sta 313 K:iin, vain noin 7 %. Paine kasvaa samassa suhteessa, noin 128 kPa:iin."
+        }
       ]
     },
     {
@@ -159,13 +273,19 @@
         "Muunna ensin: $T_1 = 293{,}15\\,\\text{K}$ ja $T_2 = 353{,}15\\,\\text{K}$. Sijoita: $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}}$."
       ],
       "mistakes": [
-        { "value": 404, "feedback": "Laskit lämpötilojen suhteen celsiusasteina, 80/20 = 4. Paine on verrannollinen kelvinlämpötilaan: suhde on 353 K / 293 K ≈ 1,20." },
-        { "value": 83.8, "feedback": "Suhde on väärin päin: paine pieneni, vaikka ilma lämpeni. Lämpimämmässä ilmassa hiukkaset liikkuvat nopeammin, joten paineen pitää kasvaa: $p_2 = p_1 \\cdot T_2/T_1$." }
+        {
+          "value": 404,
+          "feedback": "Laskit lämpötilojen suhteen celsiusasteina, 80/20 = 4. Paine on verrannollinen kelvinlämpötilaan: suhde on 353 K / 293 K ≈ 1,20."
+        },
+        {
+          "value": 83.8,
+          "feedback": "Suhde on väärin päin: paine pieneni, vaikka ilma lämpeni. Lämpimämmässä ilmassa hiukkaset liikkuvat nopeammin, joten paineen pitää kasvaa: $p_2 = p_1 \\cdot T_2/T_1$."
+        }
       ],
       "solution": "**Ratkaisu symbolisesti.** Tilavuus ja aineen määrä pysyvät samoina, joten paine on suoraan verrannollinen kelvinlämpötilaan:\n\n$$p_2 = p_1 \\frac{T_2}{T_1}$$\n\n**Muunnos.** $T_1 = (20 + 273{,}15)\\,\\text{K} = 293{,}15\\,\\text{K}$ ja $T_2 = (80 + 273{,}15)\\,\\text{K} = 353{,}15\\,\\text{K}$.\n\n**Sijoitus.** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 122\\,\\text{kPa}$.\n\n**Järkevyys.** Kelvinlämpötila nousee noin 20 %, ja paine kasvaa samassa suhteessa. Siksi kuumana suljettu purkki voi olla vaikea avata vasta jäähdyttyään: silloin paine purkissa on pienempi kuin ulkona."
     },
     {
-      "id": "exercises",
+      "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
       "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät ovat asteikkomuunnoksia, taso 3 vaatii verrannollisuuden käyttöä kelvineinä."
@@ -177,10 +297,23 @@
       "title": "1. Käsite",
       "prompt": "Ilman lämpötila on 0 °C. Mitä mikromalli sanoo ilman hiukkasista?",
       "choices": [
-        { "text": "Hiukkaset ovat pysähtyneet, koska lämpötila on nolla.", "feedback": "0 °C on vain veden jäätymispiste. Kelvineinä se on 273 K, joten hiukkaset liikkuvat. Hiukkasten liike on pienimmillään vasta absoluuttisessa nollapisteessä 0 K = −273,15 °C." },
-        { "text": "Hiukkaset liikkuvat, ja niiden keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan 273 K.", "correct": true, "feedback": "Oikein. 0 °C = 273,15 K on kaukana absoluuttisesta nollapisteestä, ja hiukkasten keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan." },
-        { "text": "Hiukkaset ovat jäätyneet kiinni toisiinsa kuten vesi jäässä.", "feedback": "Vesi jäätyy 0 °C:ssa, mutta ilma ei. Esimerkiksi ilman pääosa, typpi, pysyy kaasuna noin −196 °C:seen asti, ja sen hiukkaset liikkuvat vapaasti myös 0 °C:ssa." },
-        { "text": "Hiukkaset liikkuvat vain, jos kaasua lämmitetään.", "feedback": "Kaasun hiukkaset liikkuvat jatkuvasti, myös ilman lämmittämistä. Lämmittäminen vain kasvattaa niiden keskimääräistä liike-energiaa." }
+        {
+          "text": "Hiukkaset ovat pysähtyneet, koska lämpötila on nolla.",
+          "feedback": "0 °C on vain veden jäätymispiste. Kelvineinä se on 273 K, joten hiukkaset liikkuvat. Hiukkasten liike on pienimmillään vasta absoluuttisessa nollapisteessä 0 K = −273,15 °C."
+        },
+        {
+          "text": "Hiukkaset liikkuvat, ja niiden keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan 273 K.",
+          "correct": true,
+          "feedback": "Oikein. 0 °C = 273,15 K on kaukana absoluuttisesta nollapisteestä, ja hiukkasten keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan."
+        },
+        {
+          "text": "Hiukkaset ovat jäätyneet kiinni toisiinsa kuten vesi jäässä.",
+          "feedback": "Vesi jäätyy 0 °C:ssa, mutta ilma ei. Esimerkiksi ilman pääosa, typpi, pysyy kaasuna noin −196 °C:seen asti, ja sen hiukkaset liikkuvat vapaasti myös 0 °C:ssa."
+        },
+        {
+          "text": "Hiukkaset liikkuvat vain, jos kaasua lämmitetään.",
+          "feedback": "Kaasun hiukkaset liikkuvat jatkuvasti, myös ilman lämmittämistä. Lämmittäminen vain kasvattaa niiden keskimääräistä liike-energiaa."
+        }
       ]
     },
     {
@@ -198,8 +331,14 @@
         "$k = \\dfrac{150 - 50}{177\\,\\text{°C} - (-123\\,\\text{°C})} = \\dfrac{100}{300\\,\\text{°C}}$, joten 100 yksikön pudotukseen tarvitaan 300 °C."
       ],
       "mistakes": [
-        { "value": 0, "feedback": "0 °C on veden jäätymispiste, ei nollapaineen lämpötila: taulukossa paine on vielä −123 °C:ssa 50. Jatka suoraa vasemmalle niin pitkälle, että paine putoaa nollaan." },
-        { "value": -123, "feedback": "−123 °C on taulukon alin lämpötila, mutta siinä paine on vielä 50. Paine putoaa 50 yksikköä jokaista 150 °C:n laskua kohti, joten nollaan päästään vasta 150 °C alempana." }
+        {
+          "value": 0,
+          "feedback": "0 °C on veden jäätymispiste, ei nollapaineen lämpötila: taulukossa paine on vielä −123 °C:ssa 50. Jatka suoraa vasemmalle niin pitkälle, että paine putoaa nollaan."
+        },
+        {
+          "value": -123,
+          "feedback": "−123 °C on taulukon alin lämpötila, mutta siinä paine on vielä 50. Paine putoaa 50 yksikköä jokaista 150 °C:n laskua kohti, joten nollaan päästään vasta 150 °C alempana."
+        }
       ],
       "solution": "**Kulmakerroin.** $k = \\dfrac{(150 - 50)}{(177 - (-123))\\,\\text{°C}} = \\dfrac{1}{3}\\,\\text{1/°C}$.\n\n**Nollakohta.** Lämpötilassa 27 °C paine on 100, joten nollaan tarvitaan lasku $\\dfrac{100}{k} = 300\\,\\text{°C}$: $\\theta_0 = 27\\,\\text{°C} - 300\\,\\text{°C} = -273\\,\\text{°C}$.\n\n**Järkevyys.** Tulos on absoluuttinen nollapiste, 0 K. Mallissa paine on suoraan verrannollinen kelvinlämpötilaan, joten suoran jatke osuu siihen."
     },
@@ -218,7 +357,7 @@
       "model": "Mikromallissa lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, ja liike-energia on suoraan verrannollinen kelvinlämpötilaan. Kelvinasteikon nolla on absoluuttinen nollapiste, jossa hiukkasten liike-energia on pienimmillään; kylmempää ei voi olla, joten negatiivisia kelvinlämpötiloja ei ole. Celsiusasteikon nolla on vain veden jäätymispiste, eivätkä hiukkaset ole siinä lähelläkään levossa. Siksi suhde lasketaan kelvineinä: kun lämpötila nousee 10 °C:sta 20 °C:een, se nousee 283 K:sta 293 K:iin, eli vain noin 3,5 %, eikä hiukkasten keskimääräinen liike-energia kaksinkertaistu."
     },
     {
-      "id": "exit",
+      "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
       "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."

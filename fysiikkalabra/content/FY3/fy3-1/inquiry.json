@@ -102,7 +102,7 @@
       ]
     },
     {
-      "id": "sim",
+      "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
       "text": "Valitse taivaankappale ja säädä massaa. Seuraa jousen venymää, punaista painon nuolta ja palkkikaaviota, jossa sama massa on punnittu kaikilla neljällä taivaankappaleella. Lukemat ovat mallin arvoja, jotka simulaatio laskee kaavasta: se olettaa, että putoamiskiihtyvyys on taivaankappaleen pinnalla vakio."
@@ -288,7 +288,7 @@
       "solution": "**Ratkaisu symbolisesti.** Massa on sama Kuussa ja Maassa: $m = \\dfrac{G_\\text{Kuu}}{g_\\text{Kuu}}$, joten\n\n$$G_\\text{Maa} = m g_\\text{Maa} = G_\\text{Kuu} \\frac{g_\\text{Maa}}{g_\\text{Kuu}}$$\n\n**Sijoitus.** $G_\\text{Maa} = 12\\,\\text{N} \\cdot \\dfrac{9{,}81\\,\\text{m/s}^2}{1{,}62\\,\\text{m/s}^2} \\approx 72{,}7\\,\\text{N} \\approx 73\\,\\text{N}$.\n\n**Järkevyys.** Maan $g$ on noin kuusinkertainen Kuun arvoon verrattuna, ja $6 \\cdot 12\\,\\text{N} = 72\\,\\text{N}$."
     },
     {
-      "id": "exercises",
+      "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
       "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa tai suoraa verrannollisuutta, taso 3 vaatii päättelyä."
@@ -359,7 +359,7 @@
       "model": "Astronautin massa, esimerkiksi 80 kg, kertoo, kuinka paljon ainetta hänessä on, ja se pysyy samana kaikkialla. Paino on voima, jonka yksikkö on newton: se kertoo, kuinka voimakkaasti astronautti ja taivaankappale vuorovaikuttavat. Paino lasketaan kaavasta $G = mg$. Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, ja Kuun $g = 1{,}62\\,\\text{m/s}^2$ on noin kuudesosa Maan arvosta $9{,}81\\,\\text{m/s}^2$. Siksi sama massa painaa Kuussa noin kuudesosan Maan painosta, ja voimamittarin jousi venyy kuudesosan."
     },
     {
-      "id": "exit",
+      "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
       "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
