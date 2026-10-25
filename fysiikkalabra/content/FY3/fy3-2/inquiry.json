@@ -10,7 +10,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Kannat painavaa reppua tasaista käytävää pitkin. Olkapäät väsyvät, hengästyt. Hissi nostaa saman repun kolme kerrosta ylös, eikä se näytä ponnistelevan lainkaan. Arkikielessä molemmat *tekevät työtä*. Fysiikassa vain toinen tekee.",
+      "text": "Kannat painavaa reppua tasaista käytävää pitkin. Olkapäät väsyvät, hengästyt. Hissi nostaa saman repun kolme kerrosta ylös, eikä se näytä ponnistelevan lainkaan. Arkikielessä molemmat *tekevät työtä*.",
       "question": "Mitä sanan työ pitäisi fysiikassa tarkoittaa, jotta työn määrän voisi mitata yksikäsitteisesti?"
     },
     {
@@ -53,16 +53,16 @@
       "choices": [
         {
           "text": "Työ pysyy samana, koska voima ei muutu.",
-          "feedback": "Mittaukset näyttävät, että työ kasvaa, vaikka voima pysyy samana. Työ riippuu myös matkasta: (s,F)-kuvaajan pinta-ala levenee, kun s kasvaa."
+          "feedback": "Mallin arvot näyttävät, että työ kasvaa, vaikka voima pysyy samana. Työ riippuu myös matkasta: (s,F)-kuvaajan pinta-ala levenee, kun s kasvaa."
         },
         {
           "text": "Työ kaksinkertaistuu.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: 10 m:n matkalla $W = 600\\,\\text{J}$ ja 20 m:n matkalla $W = 1200\\,\\text{J}$. Sama voima kaksinkertaisella matkalla tekee kaksinkertaisen työn, $W = Fs$."
+          "feedback": "Mallin arvot tukevat tätä: 10 m:n matkalla $W = 600\\,\\text{J}$ ja 20 m:n matkalla $W = 1200\\,\\text{J}$. Sama voima kaksinkertaisella matkalla tekee kaksinkertaisen työn, $W = Fs$."
         },
         {
           "text": "Työ nelinkertaistuu.",
-          "feedback": "Mittaukset näyttävät kaksinkertaistumisen, eivät nelinkertaistumista. Nelinkertainen työ vaatisi, että sekä voima että matka kaksinkertaistuvat; nyt vain matka muuttui."
+          "feedback": "Mallin arvot näyttävät kaksinkertaistumisen, eivät nelinkertaistumista. Nelinkertainen työ vaatisi, että sekä voima että matka kaksinkertaistuvat; nyt vain matka muuttui."
         }
       ]
     },
@@ -80,12 +80,12 @@
       "choices": [
         {
           "text": "Hitaampi veto tekee vähemmän työtä.",
-          "feedback": "Mittausten mukaan työ on sama, 600 J, molemmilla ajoilla. Työ $W = Fs$ ei riipu ajasta; aika vaikuttaa tehoon."
+          "feedback": "Mallin arvojen mukaan työ on sama, 600 J, molemmilla ajoilla. Työ $W = Fs$ ei riipu ajasta; aika vaikuttaa tehoon."
         },
         {
           "text": "Työ on sama, mutta teho pienenee neljäsosaan.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: $W = 600\\,\\text{J}$ molemmissa, ja teho $P = W/t$ putoaa 120 W:sta 30 W:iin, kun aika nelinkertaistuu."
+          "feedback": "Mallin arvot tukevat tätä: $W = 600\\,\\text{J}$ molemmissa, ja teho $P = W/t$ putoaa 120 W:sta 30 W:iin, kun aika nelinkertaistuu."
         },
         {
           "text": "Työ ja teho pysyvät samoina.",
@@ -93,7 +93,7 @@
         },
         {
           "text": "Hitaampi veto tekee enemmän työtä, koska voima vaikuttaa pidempään.",
-          "feedback": "Mittaukset näyttävät saman työn, 600 J. Työtä ei määrää voiman vaikutusaika vaan matka voiman suunnassa. Pidempi aika tarkoittaa pienempää tehoa."
+          "feedback": "Mallin arvot näyttävät saman työn, 600 J. Työtä ei määrää voiman vaikutusaika vaan matka voiman suunnassa. Pidempi aika tarkoittaa pienempää tehoa."
         }
       ]
     },
@@ -103,7 +103,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Ennuste 3: reppu käytävällä",
-      "prompt": "Kannat 98 N painoista reppua 20 m vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa?",
+      "prompt": "Kannat 98 N painoista reppua 20 m vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, sillä siinä voima on aina liikkeen suuntainen; vertaa ennustettasi Selitä-vaiheen malliin ja kuvaan.",
       "justify": true,
       "choices": [
         {
@@ -113,7 +113,7 @@
         {
           "text": "Bea: $W = 0$, koska voima on kohtisuorassa liikettä vastaan eikä reppuun siirry energiaa.",
           "correct": true,
-          "feedback": "Juuri näin: liikettä vastaan kohtisuora voima ei tee työtä. Lihaksesi kuluttavat silti energiaa voiman ylläpitoon, mutta se ei ole reppuun tehtyä työtä. Selitä-vaihe perustelee tämän tarkemmin."
+          "feedback": "Juuri näin: liikettä vastaan kohtisuora voima ei tee työtä. Lihaksesi kuluttavat silti energiaa voiman ylläpitoon, mutta se ei ole reppuun tehtyä työtä. Todiste on Selitä-vaiheen kuvassa ja mallissa: työ lasketaan vain liikkeen suuntaisesta voimasta, ja kannattelevalla voimalla sitä ei ole."
         },
         {
           "text": "Cem: Työ on jotain nollan ja 2,0 kJ:n väliltä, koska osa voimasta on liikkeen suuntainen.",
@@ -194,7 +194,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Joulen koe: mihin työ menee?",
-      "text": "Joulen kokeessa putoava paino pyörittää siipipyörää vesiastiassa, ja veden lämpötila nousee. Taulukossa on kokeen tapaiset *esimerkkiarvot* (eivät Joulen alkuperäisiä mittauksia): painon tekemä työ $W = Gh$ ja veden saama lämpömäärä $Q$, joka laskettiin lämpötilan noususta.\n\n| Painon pudotuksia | Työ W (J) | Lämpömäärä Q (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
+      "text": "Joulen kokeessa putoava paino pyörittää siipipyörää vesiastiassa, ja veden lämpötila nousee. Taulukossa on kokeen tapaiset *esimerkkiarvot* (eivät Joulen alkuperäisiä mittauksia): painon tekemä työ $W = Gh$ ja veden saama lämpömäärä $Q$, joka laskettiin lämpötilan noususta.\n\n| Pudotuksia | W (J) | Q (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
       "question": {
         "type": "choice",
         "prompt": "Mitä taulukko kertoo työn ja lämmön suhteesta?",
@@ -221,7 +221,7 @@
       "type": "theory",
       "sections": [
         "Ydinajatus",
-        "Kaavat"
+        "Kaava"
       ]
     },
     {
