@@ -68,7 +68,7 @@
 **Kaava:** c₁m₁(T₁ − T) = c₂m₂(T − T₂), josta T = (c₁m₁T₁ + c₂m₂T₂) / (c₁m₁ + c₂m₂)
 **Sijoitus:** c₁m₁ = 900 J/(kg·K) · 0,25 kg = 225 J/K ja c₂m₂ = 4190 J/(kg·K) · 0,40 kg = 1676 J/K. T = (225 J/K · 95 °C + 1676 J/K · 18 °C) / (1901 J/K) = 27,11 °C ≈ 27 °C
 **Vastaus:** 27 °C
-**Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen, joten kauha jäähtyy noin 68 K mutta vesi lämpenee vain noin 9 K. Keskiarvo 56,5 °C olisi väärin.
+**Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen kauhan lämpökapasiteettiin verrattuna, joten kauha jäähtyy noin 68 K mutta vesi lämpenee vain noin 9 K. Keskiarvo 56,5 °C olisi väärin.
 
 ## fy3-6-L3-01
 **Annettu:** vesi c = 4190 J/(kg·K), m_v = 20 kg, 10 °C → 40 °C; kivet c = 800 J/(kg·K), 300 °C
