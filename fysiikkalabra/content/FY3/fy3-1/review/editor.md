@@ -1,10 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: 8fb367b0d6fd83e0
+VERDICT: FAIL
+CONTENT-HASH: e808e1517d619f4b
 
-The lesson delivers both goals and stays inside FY3 as the MAOL guide defines it. Force is introduced as the strength of an interaction (lesson.md:6), measured with a spring scale whose extension is proportional to the force (lines 8-12), and weight is defined as the strength of the Earth-body interaction, not as the cause of an acceleration (line 14). Force is treated as a scalar, with arrows only as illustration. G = mg is derived from "two identical bodies stretch the spring twice as much" (line 17), and the lesson never mentions Newton's laws, vectors or the equation of motion. The story is one thread: the hook (astronaut on the Moon), then the spring scale, G = mg with the g table, the 120 kg robot on Earth and Mars, the "I weigh 70 kilos" misconception with the bathroom scale, and the summary. The simulation (stretch, weight arrow and bars all proportional to G, plus the mass-is-constant note) shows the same idea, and the exercises and exit ticket use only that content. L1-03 requires reading the g table, L3-01 and L3-03 ask for reasoning with a changed place, and the exit ticket tests mass versus weight, spring proportionality and the kilogram misconception. At about 670 words the lesson is the same length as the published fy3-2 (about 700), with the same structure. Numbers in the worked example, exercises and exit ticket check out. The findings below are polish only.
+The lesson still meets its goals and tells one story: interaction, then force, then the voimamittari (proportional stretch, calibration), then G = m g, and back to the opening astronaut question. It stays inside FY3: no motion and no vectors. The exercises, the exit ticket and the misconception section (bathroom scale, followed up in L3-03) cover the same threads. The proofreader's wording changes (lines 45 and 76) leave the story unchanged, and the length suits a first lesson. One regression: sim-spec.md now says the bar chart is scaled to the current mass, but the sentence after it still says the bars grow with the mass. Bar height is g_i/24,8 · 220 px, which does not depend on m, so the spec contradicts itself and the sim.
 
-1. lesson.md:21 says "Tällä kurssilla g:lle käytetään yksikköä N/kg", but the published sibling content/FY3/fy3-2/lesson.md:25 (and its solutions and exit ticket) writes g = 9,81 m/s², as does the CLAUDE.md convention. Within fy3-1 the choice is explained and consistent, so this does not block. The human or orchestrator should decide the course-wide unit. Either soften fy3-1 ("tässä oppitunnissa", keeping the N/kg to m/s² remark) or align fy3-2 later. As it stands, a student sees two units for g across consecutive lessons.
-2. sim.js:17 and :32 (spec fixed in sim-spec.md): the scale is pegged to 100 kg on Jupiter, and the default is 10 kg on Earth. By arithmetic the default view then shows a stretch of about 7.5 px and an arrow of about 4 px, and the Moon bar is clamped to the 2 px minimum, so the Moon-versus-Earth ratio, the core message, is barely visible until the slider is raised. At 1 kg the spring stretch is under 1 px. This is not a defect, since the spec asks for this fixed scale. A larger default mass (for example 50 kg) or a short on-page prompt ("raise the mass to see...") would make the first impression match the hook.
-3. lesson.md:52: the misconception paragraph is the densest in the lesson (three separate misconceptions plus the bathroom-scale explanation, about 100 words). Consider splitting off the bathroom-scale sentences into a short second paragraph for readability. The content is correct.
-4. exercises.json:12 and :28 (L1-02 and L1-04) are the same spring-proportion task with different numbers, and L1-01, -03 and -05 are three direct uses of G = mg. This is acceptable for level 1, but replacing one of them (for example reading a force from a given scale picture) would add variety. L3-02 (exercises.json:88) is fine, but its phrase "jaksaa tuottaa voiman" is the closest the set comes to force as an agent. It is framed as equality of force with weight, so it stays within scope.
-5. lesson.md:10: the "FY1:n lineaarinen malli, vakiotermi nolla" cross-reference is correct but terse for a first-time reader. One clause ("y = kx") would make it concrete. Optional.
+## Blocking
+- sim-spec.md:1 — "Siksi jousi venyy ja palkit kasvavat näkyvästi, kun massaa kasvatetaan" is false now that the chart's full scale is m · 24,8 N. — Rewrite as "Siksi jousi venyy ja nuoli pitenee näkyvästi, kun massaa kasvatetaan, ja paino-ero eri taivaankappaleiden välillä näkyy palkeissa; palkkien lukuarvot ja asteikko kasvavat massan mukana."
+
+## Polish
+- sim-spec.md:1 — the 2 px minimum bar height can no longer take effect (the smallest bar, Kuu, is about 14 px at every mass). — Drop it or call it a safeguard.
+- lesson.md:57 — the voimamittari SVG sits under Esimerkki, which is about the robot. — Move it after line 32 in Ydinajatus.
+- lesson.md:30-38 — Ydinajatus has five paragraphs where gold has three. — Merge lines 32-36 into one paragraph.
+
+## Checked
+- Lint: 0 errors and 0 warnings. The editor hash was the same at the start and the end of the review.
+- meta.json goals match curriculum.json.
+- The opening question is answered at line 38 and in the misconception section.
+- Scope: g is given in N/kg, and the link to m/s² is deferred to FY4.
+- No exercise repeats the worked example.
+- Levels have 5/4/3 exercises and fit the CLAUDE.md definitions.
+- The exit ticket covers mass versus weight, stretch and the "kiloa" misconception.
+- Diff since 2f088fd in editor files: lesson.md lines 45 and 76, and the sim-spec.md bar-scale sentence.
+- sim.js lines 50-51: the bar scale depends on mass; the spring and arrow use a fixed scale.
