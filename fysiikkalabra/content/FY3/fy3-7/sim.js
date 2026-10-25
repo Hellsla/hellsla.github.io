@@ -7,16 +7,18 @@
 //   steam warms   Q = c_höyry m ΔT (100 → 130 °C,  c_höyry = 2000 J/(kg·K)), where the animation stops.
 // On a plateau the energy breaks the bonds between particles, so T stays constant; the plateau lasts sm/P or rm/P.
 // Every duration is proportional to m/P, so the chart's t axis is scaled to the current end time and printed.
-// Time runs 60 times faster than real time. The readout is DOM text; the canvas only draws.
+// Time runs 60 times faster than real time. The sliders are locked while heating (so Q = P t holds for the whole run),
+// and moving one resets the run. The readout is DOM text below the controls; the canvas only draws.
+// Canvas labels go through label(), which records their boxes in window.simLabels (600×400 units) for the layout sweep.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
   const C_ICE = 2100, S = 334000, C_W = 4190, R = 2260000, C_ST = 2000;  // SI units
   const T0 = -20, T_END = 130, SPEED = 60;                               // start and stop temperature (°C), sim s per real s
-  const CH = { x0: 335, x1: 565, y0: 335, y1: 60 };                      // chart area (axes at x0 and y0)
+  const CH = { x0: 335, x1: 565, y0: 315, y1: 60 };                      // chart area (axes at x0 and y0)
   const BK = { x: 50, w: 160, top: 95, bottom: 300 };                    // container
   const PHASE_TEXT = { 'jää': 'jää lämpenee', 'sulaa': 'jää sulaa (0 °C)', 'vesi': 'vesi lämpenee', 'kiehuu': 'vesi kiehuu (100 °C)', 'höyry': 'höyry lämpenee' };
   const CONTENT = { 'jää': 'jää', 'sulaa': 'jää ja vesi', 'vesi': 'vesi', 'kiehuu': 'vesi ja höyry', 'höyry': 'höyry' };
-  let sM, lM, sP, lP, readout, t = 0, running = false;
+  let sM, lM, sP, lP, readout, t = 0, running = false, labels = [];
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -43,13 +45,14 @@ new p5((p) => {
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
-    readout = p.createDiv('').parent('sim-root').class('readout');
-    const controls = p.createDiv('').parent('sim-root').class('controls');
-    [sM, lM] = slider(controls, 0.1, 1, 0.5, 0.05);           // massa m (kg)
-    [sP, lP] = slider(controls, 500, 3000, 1000, 100);        // teho P (W)
+    const controls = p.createDiv('').parent('sim-root').class('controls');   // controls first: canvas and button fit one phone screen
     button(controls, 'Lämmitä', () => { const m = Number(sM.value()), P = Number(sP.value()); if (t >= stages(m)[4] / P) t = 0; running = true; });
     button(controls, 'Nollaa', () => { t = 0; running = false; });
-    p.createP(`Aika kuluu nopeutettuna: 1 s animaatiota vastaa ${SPEED} s eli 1 min. Kaikki kuumentimen energia siirtyy aineeseen.`)
+    [sM, lM] = slider(controls, 0.1, 1, 0.5, 0.05);           // massa m (kg)
+    [sP, lP] = slider(controls, 500, 3000, 1000, 100);        // teho P (W)
+    [sM, sP].forEach((s) => s.elt.addEventListener('input', () => { t = 0; running = false; }));   // a new setting starts a new run
+    readout = p.createDiv('').parent('sim-root').class('readout');
+    p.createP(`Aika kuluu nopeutettuna: 1 s animaatiota vastaa ${SPEED} s eli 1 min. Oletetaan, että kaikki kuumentimen energia siirtyy aineeseen ja höyry pysyy astiassa.`)
       .parent('sim-root').class('note');
     window.simSetTime = (sec) => { t = Math.max(0, sec); running = false; };          // for tests: jump to a moment
     window.simSetQ = (Q) => { t = Math.max(0, Q) / Number(sP.value()); running = false; };
@@ -61,6 +64,7 @@ new p5((p) => {
     const q = stages(m), tEnd = q[4] / P;                      // time to reach 130 °C
     if (running) t += Math.min(p.deltaTime, 100) / 1000 * SPEED;
     if (t >= tEnd) { t = tEnd; running = false; }
+    sM.elt.disabled = sP.elt.disabled = running;               // locked while heating
     const Q = P * t;                                           // transferred energy Q = P t
     const [T, phase] = stateAt(Q, m, q);
     const tMelt = S * m / P, tBoil = R * m / P;                // plateau lengths sm/P and rm/P
@@ -72,10 +76,22 @@ new p5((p) => {
                  `<br>Sulaminen kestää sm/P = ${fj(S * m)} J / ${P} W = <strong>${fi(tMelt, 0)} s</strong>` +
                  `<br>Kiehuminen kestää rm/P = ${fj(R * m)} J / ${P} W = <strong>${fi(tBoil, 0)} s</strong>` +
                  `<br>Kuvaajan aika-akseli 0–${tMax} s, lämpötila-akseli −20…130 °C.`);
-    window.simState = { m, P, t, T, phase, Q, tMelt, tBoil, running, tEnd, tMax };
+    window.simState = { m, P, t, T, phase, Q, tMelt, tBoil, running, tEnd, tMax, content: CONTENT[phase] };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k);
+    // text box of a label (baseline at y), in canvas units
+    const box = (str, x, y, align, size) => {
+      p.textSize(size); const w = p.textWidth(str), x0 = align === p.LEFT ? x : align === p.RIGHT ? x - w : x - w / 2;
+      return { s: str, x0, y0: y - p.textAscent(), x1: x0 + w, y1: y + p.textDescent() };
+    };
+    const hit = (a, b, pad) => a.x0 < b.x1 + pad && b.x0 < a.x1 + pad && a.y0 < b.y1 + pad && b.y0 < a.y1 + pad;
+    labels = [];
+    const label = (str, x, y, align, size, bg) => {
+      const b = box(str, x, y, align, size);
+      if (bg) { p.noStroke(); p.fill(250, 250, 250, 225); p.rect(b.x0 - 3, b.y0, b.x1 - b.x0 + 6, b.y1 - b.y0, 3); p.fill(...bg); }
+      p.textAlign(align, p.BASELINE); p.text(str, x, y); labels.push(b);
+    };
     p.background(250);
     const col = tempColor(T);
 
@@ -89,27 +105,34 @@ new p5((p) => {
       for (let i = 0; i < 4; i++) { const x = bx + 25 + i * 37, y0 = BK.top + 20 + ((t * 0.8 + i * 30) % 60); if (y0 + 40 < bb - H * fWater) p.bezier(x, y0 + 40, x - 10, y0 + 25, x + 10, y0 + 15, x, y0); }
     }
     if (fWater > 0) { p.noStroke(); p.fill(p.red(col), p.green(col), p.blue(col), 150); p.rect(bx, bb - H * fWater, inner, H * fWater); }
-    if (phase === 'kiehuu') {                                  // bubbles rising through the boiling water
+    if (phase === 'kiehuu') {                                  // bubbles rising through the boiling water, kept below its surface
       p.noFill(); p.stroke(255); p.strokeWeight(1.5); const hw = H * fWater;
-      for (let i = 0; i < 8 && hw > 10; i++) p.circle(bx + 12 + (i * 37) % (inner - 24), bb - ((t * 2 + i * 23) % hw), 6 + (i % 3) * 2);
+      for (let i = 0; i < 8 && hw > 20; i++) p.circle(bx + 12 + (i * 37) % (inner - 24), bb - 6 - ((t * 2 + i * 23) % (hw - 14)), 6 + (i % 3) * 2);
     }
     const rows = Math.max(1, Math.round(H / 30)), nIce = Math.ceil(rows * 5 * fIce - 1e-9);   // ice cubes left
     p.stroke(p.red(col), p.green(col), p.blue(col)); p.strokeWeight(1.5); p.fill(215, 235, 250, 210);
     for (let i = 0; i < nIce; i++) p.rect(bx + 4 + (i % 5) * 30, bb - 30 - Math.floor(i / 5) * 30, 26, 26, 4);
     p.noFill(); p.stroke(60); p.strokeWeight(3);
     p.line(BK.x, BK.top - 10, BK.x, BK.bottom); p.line(BK.x, BK.bottom, BK.x + BK.w, BK.bottom); p.line(BK.x + BK.w, BK.bottom, BK.x + BK.w, BK.top - 10);
-    p.noStroke(); p.fill(40); p.textAlign(p.CENTER); p.textSize(ts(15)); p.text(CONTENT[phase], BK.x + BK.w / 2, BK.top - 20);
 
-    // heater: glows while heating, brighter for a larger power
+    // heater: glows while heating, brighter for a larger power; its label starts at the heater's left end
     const glow = running ? 0.4 + 0.6 * P / 3000 : 0;
-    p.fill(90 + 160 * glow, 90 - 40 * glow, 90 - 50 * glow); p.rect(BK.x - 10, BK.bottom + 6, BK.w + 20, 16, 4);
-    p.fill(60); p.textSize(ts(13)); p.text(`kuumennin ${P} W`, BK.x + BK.w / 2, BK.bottom + 26 + ts(14));
+    p.noStroke(); p.fill(90 + 160 * glow, 90 - 40 * glow, 90 - 50 * glow); p.rect(BK.x - 10, BK.bottom + 6, BK.w + 20, 16, 4);
+    p.fill(60); label(`kuumennin ${P} W`, BK.x - 10, BK.bottom + 26 + ts(12), p.LEFT, ts(12));
 
     // thermometer, same −20…130 °C scale as the chart
     const thx = 258, Yt = (TT) => BK.bottom - 30 - (BK.bottom - 30 - BK.top) * (TT - T0) / (T_END - T0);
     p.fill(235); p.stroke(120); p.strokeWeight(1.5); p.rect(thx - 6, BK.top - 5, 12, BK.bottom - BK.top - 10, 6); p.circle(thx, BK.bottom - 18, 24);
     p.noStroke(); p.fill(col); p.rect(thx - 3, Yt(T), 6, BK.bottom - 18 - Yt(T)); p.circle(thx, BK.bottom - 18, 18);
-    p.fill(40); p.textSize(ts(13)); p.text(`${fi(T, 0)} °C`, thx, BK.top - 20);
+
+    // container label over the container; the thermometer reading beside it, or one line higher when they would touch
+    // each other or the chart's tick labels (on a phone the text is about twice as large)
+    p.fill(40); const cy = BK.top - 18, cBox = box(CONTENT[phase], BK.x + BK.w / 2, cy, p.CENTER, ts(14));
+    label(CONTENT[phase], BK.x + BK.w / 2, cy, p.CENTER, ts(14));
+    const reading = `${fi(T, 0)} °C`, tickLeft = CH.x0 - 8 - box('120', 0, 0, p.LEFT, ts(11)).x1;
+    let rBox = box(reading, thx, cy, p.CENTER, ts(13)), ry = cy;
+    if (hit(rBox, cBox, 6) || rBox.x1 > tickLeft - 6) { p.textSize(ts(13)); ry = cBox.y0 - 4 - p.textDescent(); }
+    label(reading, thx, ry, p.CENTER, ts(13));
 
     // (t, T) chart: faint whole curve, bold up to the present, plateaus labelled with their length
     const X = (tt) => CH.x0 + (CH.x1 - CH.x0) * tt / tMax, Y = (TT) => CH.y0 - (CH.y0 - CH.y1) * (TT - T0) / (T_END - T0);
@@ -117,19 +140,26 @@ new p5((p) => {
     p.stroke(225); p.strokeWeight(1);
     for (let v = 0; v <= 120; v += 20) p.line(CH.x0, Y(v), CH.x1, Y(v));
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 5);
-    p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    for (let v = -20; v <= 120; v += 20) p.text(fi(v, 0), CH.x0 - 6, Y(v) + ts(4));
-    p.textAlign(p.CENTER);
-    for (let v = 0; v <= tMax; v += step) p.text(`${v}`, X(v), CH.y0 + ts(16));
-    p.textAlign(p.RIGHT); p.textSize(ts(12)); p.text('t (s)', CH.x1 + 10, CH.y0 + ts(32));   // below the ticks, clear of the melting label
-    p.textAlign(p.LEFT); p.text('T (°C)', CH.x0 + 8, CH.y1 + ts(6));                          // inside the empty top-left corner
+    for (let v = step; v <= tMax; v += step) p.line(X(v), CH.y0, X(v), CH.y0 + 4);                // a tick mark at every step
+    p.noStroke(); p.fill(60);
+    for (let v = -20; v <= 120; v += 20) label(fi(v, 0), CH.x0 - 8, Y(v) + ts(4), p.RIGHT, ts(11));
+    const every = k > 1.5 ? 2 : 1;                                                                // every second label on a phone
+    for (let i = 0; i * step <= tMax; i += every) label(`${i * step}`, X(i * step), CH.y0 + ts(17), p.CENTER, ts(11));
+    label('t (s)', CH.x1 + 10, CH.y0 + ts(34), p.RIGHT, ts(12));                                  // below the tick labels
+    label('T (°C)', CH.x0 + 6, CH.y1 - 14, p.LEFT, ts(12));                                       // above the T axis
     p.noFill(); p.stroke(205); p.strokeWeight(2); p.beginShape(); pts.forEach(([a, b]) => p.vertex(X(a), Y(b))); p.endShape();
     p.stroke(200, 60, 40); p.strokeWeight(3); p.beginShape();
     pts.filter(([a]) => a < t).forEach(([a, b]) => p.vertex(X(a), Y(b))); p.vertex(X(t), Y(T)); p.endShape();
-    p.noStroke(); p.fill(26, 77, 46); p.textSize(ts(12));
-    p.textAlign(p.LEFT); p.text(`sulaa ${fi(tMelt, 0)} s`, X(pts[1][0]) + 4, Y(0) + ts(16));
-    p.textAlign(p.CENTER); p.text(`kiehuu ${fi(tBoil, 0)} s`, (X(pts[3][0]) + X(pts[4][0])) / 2, Y(100) - 8);
-    p.fill(200, 60, 40); p.circle(X(t), Y(T), 11);
+    // melting label below the 0 °C plateau (only the ice segment, to its left, is there); boiling label above the 100 °C
+    // plateau, kept left of the steam segment; both on a light background so the curve never runs through the text
+    const green = [26, 77, 46];
+    p.textSize(ts(12)); const capH = 0.7 * ts(12);
+    label(`sulaa ${fi(tMelt, 0)} s`, X(pts[1][0]) + 4, (Y(0) + CH.y0) / 2 + capH / 2, p.LEFT, ts(12), green);
+    const kText = `kiehuu ${fi(tBoil, 0)} s`, kw = box(kText, 0, 0, p.LEFT, ts(12)).x1;
+    const kx = Math.max(CH.x0 + 6 + kw / 2, Math.min((X(pts[3][0]) + X(pts[4][0])) / 2, X(pts[4][0]) - 4 - kw / 2));
+    label(kText, kx, Y(100) - 8, p.CENTER, ts(12), green);
+    p.noStroke(); p.fill(200, 60, 40); p.circle(X(t), Y(T), 11);
+    window.simLabels = labels;
   };
 
   // −20 °C blue, 130 °C red

@@ -76,7 +76,7 @@
 **Kaava:** mehun luovuttama lämpö = jään sulaminen + sulamisveden lämpeneminen: c m₁ (25 °C − T) = s m₂ + c m₂ (T − 0 °C)
 **Sijoitus:** T = (c m₁ · 25 °C − s m₂) / (c (m₁ + m₂)) = (36 662,5 J − 20 040 J) / (4190 J/(kg·K) · 0,41 kg) ≈ 9,7 °C
 **Vastaus:** 9,7 °C
-**Järkevyys:** Kaikki jää sulaa: mehun jäähtyminen 0 °C:seen vapauttaisi 4190 J/(kg·K) · 0,35 kg · 25 K ≈ 36,7 kJ, mikä on enemmän kuin sulamiseen tarvittava 334 000 J/kg · 0,060 kg ≈ 20,0 kJ. Jää ottaa sulaessaan nämä 20 kJ ennen kuin sulamisvesi alkaa lämmetä. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
+**Järkevyys:** Kaikki jää sulaa, koska mehun jäähtyminen 0 °C:seen vapauttaisi 4190 J/(kg·K) · 0,35 kg · 25 K ≈ 36,7 kJ, enemmän kuin sulamiseen tarvittavat 20,0 kJ. Pelkkä 0-asteinen vesi ottaisi vain lämpenemiseen tarvittavan energian, ja juoman lämpötila olisi noin 21 °C.
 
 ## fy3-7-L3-02
 **Annettu:** vesi m = 0,25 kg, 20 °C → 100 °C, c = 4190 J/(kg·K), r = 2 260 000 J/kg; kivet m_k = 30 kg, c_k = 800 J/(kg·K)
@@ -87,9 +87,9 @@
 **Järkevyys:** Höyrystyminen vie noin 87 % energiasta, lämpeneminen vain 13 %. Siksi muutama kauhallinen jäähdyttää kiviä kymmeniä kelvinejä.
 
 ## fy3-7-L3-03
-**Annettu:** P₁ = 800 W, Δm₁ = 196 g = 0,196 kg; P₂ = 400 W, Δm₂ = 90,0 g = 0,0900 kg; kumpikin t = 10,0 min = 600 s; ilmaan siirtyvä teho P_h on sama kummassakin mittauksessa
+**Annettu:** P₁ = 800 W, Δm₁ = 0,196 kg; P₂ = 400 W, Δm₂ = 0,0900 kg; t = 10,0 min = 600 s; ilmaan siirtyvä teho P_h on sama kummassakin
 **Kysytty:** ominaishöyrystymislämpö r
-**Kaava:** Höyrystymiseen kuluu kuumentimen energia vähennettynä ilmaan siirtyvällä: (P₁ − P_h) t = r Δm₁ ja (P₂ − P_h) t = r Δm₂. Vähennetään yhtälöt: (P₁ − P₂) t = r (Δm₁ − Δm₂), joten r = (P₁ − P₂) t / (Δm₁ − Δm₂)
+**Kaava:** (P₁ − P_h) t = r Δm₁ ja (P₂ − P_h) t = r Δm₂. Vähennetään yhtälöt: r = (P₁ − P₂) t / (Δm₁ − Δm₂)
 **Sijoitus:** r = (800 W − 400 W) · 600 s / (0,196 kg − 0,0900 kg) = 240 000 J / 0,106 kg ≈ 2 264 000 J/kg ≈ 2,26 MJ/kg
 **Vastaus:** 2,26 MJ/kg
-**Järkevyys:** Ilmaan siirtyvä energia P_h t on kummassakin yhtälössä sama, joten se kumoutuu erotuksesta. Erikseen laskettuina 800 W · 600 s / 0,196 kg ≈ 2,45 MJ/kg ja 400 W · 600 s / 0,0900 kg ≈ 2,67 MJ/kg ovat liian suuria, koska niissä koko kuumentimen energia luetaan höyrystymiseen. Häviöteho on P_h = 800 W − 2 264 000 J/kg · 0,196 kg / 600 s ≈ 60 W, mikä on uskottava.
+**Järkevyys:** Ilmaan siirtyvä energia P_h t on molemmissa yhtälöissä sama, joten se kumoutuu erotuksesta. Erikseen laskettuina 800 W · 600 s / 0,196 kg ≈ 2,45 MJ/kg ja 400 W · 600 s / 0,0900 kg ≈ 2,67 MJ/kg ovat liian suuria, koska niissä myös ilmaan siirtynyt energia luetaan höyrystymiseen. Häviöteho on noin 800 W − 2 264 000 J/kg · 0,196 kg / 600 s ≈ 60 W.

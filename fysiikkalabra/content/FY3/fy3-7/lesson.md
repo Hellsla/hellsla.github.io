@@ -20,8 +20,8 @@ missä $Q$ on lämpömäärä (J), $s$ aineen ominaissulamislämpö (J/kg), $r$ 
 
 | Vesi | Arvo |
 |---|---|
-| ominaissulamislämpö $s$ | 334 kJ/kg |
-| ominaishöyrystymislämpö $r$ | 2260 kJ/kg |
+| $s$ | 334 kJ/kg |
+| $r$ | 2260 kJ/kg |
 | $c$ (jää) | 2100 J/(kg·K) |
 | $c$ (vesi) | 4190 J/(kg·K) |
 | $c$ (vesihöyry) | 2000 J/(kg·K) |

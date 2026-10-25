@@ -148,7 +148,7 @@ new p5((p) => {
     p.noStroke(); p.fill(40); p.circle(GA.x, GA.y, 7);
     p.textAlign(p.CENTER); p.textSize(ts(13)); p.text(`${fi(pk, 1)} kPa`, GA.x, GA.y - GA.r - 8);
     p.text(`V = ${fi(V, 1)} ml`, (CYL.l + CYL.r) / 2, CYL.bot + 4 + ts(13));
-    p.text(`T = ${fi(T, 0)} K`, (CYL.l + CYL.r) / 2, CYL.bot + 4 + ts(13) + ts(15));
+    p.fill(col); p.text(`T = ${fi(T, 0)} K`, GA.x, 40 + ts(13));
 
     // chart from zero: grid, axes, tick labels (every second one on a narrow screen)
     const X = (v) => CH.x0 + (CH.x1 - CH.x0) * v / ax.x[0], Y = (v) => CH.y0 - (CH.y0 - CH.y1) * v / ax.y[0];
@@ -161,7 +161,7 @@ new p5((p) => {
     for (let j = 0; j <= ny; j += every) p.text(`${j * ax.y[1]}`, CH.x0 - 6, Y(j * ax.y[1]) + ts(4));
     p.textAlign(p.CENTER);
     for (let i = every; i <= nx; i += every) p.text(fi(i * ax.x[1], inv ? 2 : 0), X(i * ax.x[1]), CH.y0 + ts(16));
-    p.textSize(ts(12)); p.textAlign(p.RIGHT); p.text(ax.x[2], CH.x1 + 20, CH.y0 + ts(32));
+    p.textSize(ts(12)); p.textAlign(p.RIGHT); p.text(ax.x[2], CH.x1, CH.y0 - 8);   // lower right of the plot is always empty
     p.textAlign(p.LEFT); p.text(ax.y[2], CH.x0 + 6, CH.y1 - 10);
 
     // theory: the state along the whole slider range; a dashed line continues a proportionality to the origin

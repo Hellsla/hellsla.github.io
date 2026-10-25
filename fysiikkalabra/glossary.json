@@ -24,6 +24,18 @@
     "locked": false
   },
   {
+    "term": "ainemäärä",
+    "definition": "Suure, joka kertoo aineen määrän hiukkasten lukumääränä mooleina. Ainemäärän tunnus on n ja yksikkö mol, ja se saadaan massasta ja moolimassasta: n = m/M.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "mooli",
+      "moolimassa"
+    ],
+    "locked": false
+  },
+  {
     "term": "energia",
     "definition": "Energia on suure, jonka avulla kuvataan, mitä systeemissä tapahtuu. Energia ei synny eikä katoa, vaan muuttaa muotoa tai siirtyy, ja työ on yksi tapa siirtää sitä; yksikkö on joule (J).",
     "lessons": [
@@ -81,6 +93,18 @@
     "see_also": [
       "sulamislämpö",
       "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ideaalikaasu",
+    "definition": "Kaasun mikromalli, jossa hiukkaset ovat pistemäisiä ja vaikuttavat toisiinsa vain törmätessään. Ideaalikaasu noudattaa tilanyhtälöä pV = nRT, ja todelliset kaasut ovat sen kaltaisia tavallisissa paineissa ja lämpötiloissa.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "tilanyhtälö",
+      "moolinen kaasuvakio"
     ],
     "locked": false
   },
@@ -285,6 +309,41 @@
     ],
     "see_also": [
       "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mooli",
+    "definition": "Ainemäärän yksikkö mol. Yksi mooli ainetta sisältää 6,022 · 10²³ hiukkasta, ja tätä lukua sanotaan Avogadron vakioksi.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "ainemäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "moolimassa",
+    "definition": "Yhden aineen moolin massa M, yksikkö g/mol tai kg/mol. Esimerkiksi heliumin moolimassa on 4,0 g/mol ja ilman keskimäärin 29 g/mol.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "ainemäärä",
+      "mooli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "moolinen kaasuvakio",
+    "definition": "Kaikille ideaalikaasuille yhteinen vakio R = 8,31 J/(mol·K) tilanyhtälössä pV = nRT.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "tilanyhtälö",
+      "ideaalikaasu"
     ],
     "locked": false
   },
@@ -502,6 +561,18 @@
       "systeemi",
       "lämpötila",
       "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilanyhtälö",
+    "definition": "Yhtälö, joka sitoo yhteen kaasun tilaa kuvaavat suureet. Ideaalikaasun tilanyhtälö on pV = nRT.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "ideaalikaasu",
+      "tilanmuutos"
     ],
     "locked": false
   },
