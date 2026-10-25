@@ -52,6 +52,8 @@ Both exit 1 on a problem. CI and the gate run them too. After changing any formu
 - Final answers have as many significant figures as the data (2 sf data gives 2 sf). Check that a student who rounds correctly stays inside the relative `tolerance` (0,02).
 - Compute every answer in `answers.py` (one commented line per step, prints `{id: value}` as JSON); the lint and the gate re-run it against `exercises.json`.
 - The lint checks that a student rounding to the data's significant figures stays inside the tolerance. `77 K` has two figures, so an answer of −196 °C needs a tolerance of 0,03 or the task must ask for a whole number.
+- Coefficients written with a power of ten count too: `9 · 10⁻⁶ 1/K` has one significant figure, so write `9,0 · 10⁻⁶ 1/K`. The lint reads the mantissa. (Cost a round in fy3-8.)
+- A task whose answer is a datum plus a small change (the new length L = L₀ + ΔL) cannot be marked by relative tolerance: the unchanged L₀ is almost as close as the right answer. Ask for the change (ΔL in mm) and show L in the solution.
 
 ### Finnish
 - Avoid "25 m matka" and "80 N voimalla". Either inflect the unit (`80 N:n voimalla`, `40 N:ssä`) or write nominative sentences ("Voima on 80 N ja matka 25 m").

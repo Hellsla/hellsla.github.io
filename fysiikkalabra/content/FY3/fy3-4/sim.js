@@ -128,12 +128,12 @@ new p5((p) => {
       const spots = [...xs.map((fx) => (w, ht) => [fx(w), fx(w) + w, y0 + 4, y0 + 4 + ht]), ...xs.map((fx) => (w, ht) => [fx(w), fx(w) + w, y0 - 4 - ht, y0 - 4])];
       place('p0', 'p₀ = 101 kPa', ts(11), 90, spots, ['p0line']) || place('p0', 'p₀', ts(11), 90, spots, ['p0line']);
     }
-    // gauge reading next to the point: above-left, above-right, below-right, below-left, right beyond the rising line
-    // (kept above the h axis), then down the left side of the chart
+    // gauge reading next to the point: above-left, above-right, below-right, below-left, then to the right under the
+    // line's starting level (p₀ or the h axis) far enough right that the rising line clears it, then down the left side
     const g = 10, txt = `${fi(base + pOver, 0)} kPa`;
     const cands = [(w, ht) => [px - g - w, px - g, py - g - ht, py - g], (w, ht) => [px + g, px + g + w, py - g - ht, py - g],
       (w, ht) => [px + g, px + g + w, py + g, py + g + ht], (w, ht) => [px - g - w, px - g, py + g, py + g + ht],
-      (w, ht) => { const bot = Math.min(py + g + ht, CH.y0 - 4), x = px + Math.max(g, (py - bot + ht + 2 + PAD + 3) / rise); return [x, x + w, bot - ht, bot]; }];
+      (w, ht) => { const bot = Math.min(Y(base) + g + ht, CH.y0 - 4), lp = 2 + PAD, x = px + 1 + Math.max(g, lp + (py - bot + ht + lp) / rise); return [x, x + w, bot - ht, bot]; }];
     for (let top = CH.y1; top < CH.y0; top += 8) cands.push((w, ht) => [CH.x0 + 8, CH.x0 + 8 + w, top, top + ht]);
     const placed = place('reading', txt, ts(12), [200, 40, 40], cands, []);
     if (!placed) { const m = meas(txt, ts(12)); say(boxes, 'reading', txt, ts(12), [200, 40, 40], px + g, py - g); }

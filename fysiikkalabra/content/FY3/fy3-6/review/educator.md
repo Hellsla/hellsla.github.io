@@ -1,23 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: b3c4e9982c3bef92
+VERDICT: PASS
+CONTENT-HASH: 2210dad2ca7dd030
 
 ## Blocking
-- lesson.md:23, lesson.md:71, exercises.json — The goal skill "useita termejä sisältävän suureyhtälön ratkaiseminen" is never shown or practised where it is hard, solving the balance equation for T (unknown on both sides). The example solves for c by one division, L3-01 solves for m, and line 71 only asserts "35 °C". — Fix: at line 71 show the working in display math: 3,0 kg·(T − 20 °C) = 1,0 kg·(80 °C − T), so 4T = 140 °C and T = 35 °C (c cancels). Replace L2-04, which only rearranges for c as L2-03 does for ΔT, with a two-substance mixing task asking for T, e.g. 0,25 kg of aluminium at 95 °C in 0,40 kg of water at 18 °C. Update answers.py and solutions.md.
 
 ## Polish
-- lesson.md:17, :21 — Line 17 makes Q negative on cooling, but line 21 writes (T₁ − T) for the hot body without saying why. — Define ΔT = T_loppu − T_alku at line 17. After line 21 add that both sides are magnitudes, so the hot body uses alku − loppu.
-- lesson.md:8 — C = cm appears only inline, yet line 68 and the exit ticket use it. The house rule requires one display formula. — Give C = cm a display line in `## Kaava`.
-- lesson.md:8 — The hook is credited only to c; water also mixes to depth and evaporates. — Replace "Siksi" with "Tärkeä syy on, että…".
-- lesson.md:68 — 1257 J/K and 75 J/K appear without working. — Write "0,300 kg · 4190 J/(kg·K) ≈ 1260 J/K".
+- lesson.md:34-35 — The step between the two aligned lines does two moves at once (moves −c₁m₁T right and −c₂m₂T₂ left), then factors. A first-timer practising the goal skill loses the thread here. — Insert a middle line `c_1 m_1 T_1 + c_2 m_2 T_2 &= c_1 m_1 T + c_2 m_2 T` before the factored line.
+- lesson.md:42 — The weighted-mean formula and the 35 °C misconception (lines 90–99) are never connected, so students do not see that they are the same calculation. — After line 99 add one sentence: "Sama tulos saadaan painotetulla keskiarvolla: T = (3,0 · 20 °C + 1,0 · 80 °C)/4,0 = 35 °C."
+- lesson.md:87 — One paragraph carries four ideas (significant figures, identifying copper, the lossless 24,6 °C vs measured 24,5 °C, the heat-capacity comparison). It also says losses explain the gap right after line 77 told students to ignore losses, which reads as a contradiction. — Split into two paragraphs (result and identification; then C comparison) and phrase the loss sentence as "Todellisuudessa osa lämmöstä siirtyy myös astiaan ja ilmaan, mikä selittää 0,1 K:n eron."
+- lesson.md:81, :85 — The subscript in `c_\text{m}` looks like mass m in a formula full of m. — Use `c_\text{metalli}`.
 
 ## Checked
-- Lint: 0 errors, 0 warnings. The proofreader's diff is already applied.
-- Prerequisites are covered: Q, sign convention and isolated systems (fy3-5); ΔT is the same in K and °C (fy3-3); P = W/t (fy3-2), used in L2-02.
-- The hook is a question students actually ask, and line 8 answers it.
-- Each Ydinajatus paragraph adds one idea.
-- Level 1: all five use Q = cmΔT once, with c from the table.
-- Level 2: each has one conversion, two steps or one rearrangement.
-- Level 3: each needs reasoning (the stones' final T, the cancelling area, density vs c).
-- No exercise repeats the worked example.
-- The exit ticket tests the formula, the meaning of c and the "not an average" idea.
-- meta.json matches curriculum.json.
+- Lint 0/0; hash identical at start and end; answers.py output matches every `answer` within tolerance.
+- Round-1 blocking fixed: lines 31–42 solve for T step by step; lines 90–99 show the 35 °C working with c cancelling; L2-01 and L2-04 now practise solving for T.
+- Round-1 polish applied: ΔT defined (17), magnitudes explained (29), C = cm displayed (21), "Tärkeä syy on" (8), C values computed (87).
+- Prerequisites: Q and sign convention (fy3-5), ΔT same in K and °C (fy3-3), P = W/t (fy3-2) for L2-02; nothing untaught assumed.
+- Hook is a real student question and line 8 answers it, now with the surface-layer factor.
+- Level 1: five single uses of Q = cmΔT, including a negative Q (L1-04) and ice (L1-05).
+- Level 2: each is one rearrangement, one conversion or two steps; L2-01 and L2-04 differ in substance count and units.
+- Level 3: reasoning in each (final T of stones, area cancels, density vs c); none repeats the worked example.
+- Exit ticket tests the formula, the meaning of c and "not a plain average" (65 °C checked).
+- meta.json goals and prerequisites match curriculum.json.

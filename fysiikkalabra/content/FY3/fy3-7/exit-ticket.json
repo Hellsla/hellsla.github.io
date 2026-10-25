@@ -1,7 +1,7 @@
 [
   {
-    "q": "Kuinka paljon energiaa tarvitaan 0,50 kg:n jääpalojen sulattamiseen, kun jää on jo 0 °C:ssa (s = 334 kJ/kg)?",
-    "a": "Q = sm = 334 kJ/kg · 0,50 kg = 167 kJ ≈ 170 kJ."
+    "q": "Jäämurskaa lämmitetään. Lämpötila nousee 0 °C:seen ja pysyy sitten 0 °C:ssa, kunnes kaikki jää on sulanut, vaikka energiaa siirtyy koko ajan. Selitä hiukkasmallilla, mihin energia kuluu.",
+    "a": "Energia kuluu hiukkasten välisten sidosten purkamiseen eli hiukkasten välisen vuorovaikutusenergian kasvattamiseen. Hiukkasten liike-energia ei kasva, joten lämpötila ei nouse, ennen kuin kaikki jää on sulanut."
   },
   {
     "q": "Kattilassa vesi kiehuu. Liesi käännetään täysille. Mitä veden lämpötilalle tapahtuu ja mihin lisäenergia menee?",

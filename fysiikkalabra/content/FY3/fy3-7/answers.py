@@ -24,11 +24,16 @@ a["fy3-7-L2-04"] = (Q_kattila_lampenee + Q_kattila_kiehuu) / 1e6   # total 938 3
 # Level 3: reasoning or an unfamiliar context
 # Drink: 0,35 kg juice (c of water) at 25 °C, 60 g ice at 0 °C. Juice cools to T, ice melts, melt water warms 0 -> T:
 # c m_j (25 − T) = s m_i + c m_i (T − 0)  ->  T = (c m_j · 25 − s m_i) / (c (m_j + m_i))
+Q_mehu_0 = c_vesi * 0.35 * 25                           # juice cooling all the way to 0 °C would release 36 662,5 J
+assert Q_mehu_0 > s * 0.060                             # > 20 040 J needed to melt the ice, so all the ice melts
 a["fy3-7-L3-01"] = (c_vesi * 0.35 * 25 - s * 0.060) / (c_vesi * (0.35 + 0.060))   # = 9,68 °C -> 9,7 °C
 # Sauna: 0,25 kg löyly water at 20 °C heats to 100 °C and evaporates; energy from 30 kg of stones, c = 800 J/(kg·K)
 Q_loyly = c_vesi * 0.25 * (100 - 20) + r * 0.25         # 83 800 J + 565 000 J = 648 800 J
 a["fy3-7-L3-02"] = Q_loyly / (800 * 30)                  # stones cool ΔT = Q / (c m) = 648 800 / 24 000 = 27,0 K -> 27 K
-# Snow at −20 °C to steam at 100 °C, per kilogram (mass cancels in the share)
-Q_osat = [c_jaa * 1.0 * 20, s * 1.0, c_vesi * 1.0 * 100, r * 1.0]   # 42 000 + 334 000 + 419 000 + 2 260 000 J
-a["fy3-7-L3-03"] = 100 * Q_osat[3] / sum(Q_osat)         # boiling share = 2 260 000 / 3 055 000 = 74,0 % -> 74 %
+# Two-power measurement: boiling water on a scale, heater 800 W then 400 W, 10,0 min each; the scale drops 196 g and 90,0 g.
+# The water is at 100 °C both times, so the same loss power P_h goes to the air: (P − P_h) t = r Δm for each run.
+P1, P2, t_mitt, dm1, dm2 = 800, 400, 10.0 * 60, 0.196, 0.0900
+r_mitattu = (P1 - P2) * t_mitt / (dm1 - dm2)             # subtract the equations: r = 400 W · 600 s / 0,106 kg = 2 264 151 J/kg
+P_havio = P1 - r_mitattu * dm1 / t_mitt                  # loss power 800 − 739,6 = 60,4 W (sanity check only)
+a["fy3-7-L3-03"] = r_mitattu / 1e6                       # -> 2,26 MJ/kg; single runs alone give 2,45 and 2,67 MJ/kg (too large)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

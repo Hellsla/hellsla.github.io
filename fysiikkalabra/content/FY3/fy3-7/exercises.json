@@ -95,9 +95,9 @@
     {
       "id": "fy3-7-L3-03",
       "level": 3,
-      "text": "Talviretkellä keittimeen laitetaan 1,0 kg lunta, jonka lämpötila on −20 °C, juomaveden sulattamiseksi. Keitin unohtuu päälle, ja lumi lämpenee, sulaa, vesi lämpenee 100 °C:seen ja lopulta kaikki vesi höyrystyy. Jään ominaislämpökapasiteetti on 2100 J/(kg·K). Kuinka monta prosenttia veteen siirtyneestä kokonaislämpömäärästä kului höyrystymiseen? Perustele, miksi tulos ei riipu lumen massasta.",
-      "answer": 74,
-      "unit": "%",
+      "text": "Ryhmä mittaa veden ominaishöyrystymislämpöä kahdella mittauksella. Vaa'an päällä olevassa avoimessa astiassa vesi kiehuu, ja vedessä on uppokuumennin, jonka tehoa voi säätää. Kun kuumentimen teho on 800 W, vaa'an lukema pienenee 10,0 minuutissa 196 g. Kun teho on 400 W, lukema pienenee 10,0 minuutissa 90,0 g. Vesi on kummassakin mittauksessa 100-asteista, joten astiasta siirtyy ympäröivään ilmaan joka sekunti yhtä paljon energiaa. Laske ominaishöyrystymislämpö kahden mittauksen erotuksen avulla. Perustele, miksi ilmaan siirtyvä energia ei vaikuta tulokseen ja miksi kummastakin mittauksesta erikseen laskettu arvo on liian suuri. Anna vastaus yksikössä MJ/kg.",
+      "answer": 2.26,
+      "unit": "MJ/kg",
       "tolerance": 0.02
     }
   ]

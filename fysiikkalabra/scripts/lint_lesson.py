@@ -124,7 +124,10 @@ def check_lesson_md(L, folder):
 
 def numbers_with_units(text):
     """Finnish numbers that carry a unit in a task text, e.g. '4,0 kg', '77 K', '−173 °C'."""
-    return [m.group(1) for m in re.finditer(rf"({NUM})\s?{UNITS}(?![a-zA-Zäö])", text)]
+    plain = [m.group(1) for m in re.finditer(rf"({NUM})\s?{UNITS}(?![a-zA-Zäö])", text)]
+    # coefficients written as "9,0 · 10⁻⁶ 1/K": the mantissa carries the significant figures
+    coeff = [m.group(1) for m in re.finditer(rf"({NUM})\s?·\s?10[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+\s?(?:1/K|{UNITS})", text)]
+    return plain + coeff
 
 
 def check_exercises(L, folder):
