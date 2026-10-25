@@ -52,7 +52,7 @@
 **Kaava:** E = Pt = UAΔT t ja H = hE, joten H = hUAΔT t
 **Sijoitus:** t = 230 · 24 h = 5520 h. P = 0,090 W/(m²·K) · 130 m² · 21 K = 245,7 W = 0,2457 kW. E = 0,2457 kW · 5520 h ≈ 1356 kWh. H = 0,11 €/kWh · 1356 kWh ≈ 149 €
 **Vastaus:** 150 €
-**Järkevyys:** Hyvin eristetty yläpohja vie vain noin 250 W, vaikka sen ala on suuri. Koko talon lämmitys maksaa kaukolämmöllä tyypillisesti tuhansia euroja vuodessa, joten yläpohjan osuus on pieni.
+**Järkevyys:** Hyvin eristetty yläpohja vie vain noin 250 W, vaikka sen ala on suuri. Koko talon lämmitys maksaa kaukolämmöllä tyypillisesti yli tuhat euroa vuodessa, joten yläpohjan osuus on pieni.
 
 ## fy3-12-L2-03
 **Annettu:** U_v = 2,8 W/(m²·K), U_u = 0,80 W/(m²·K), A = 14 m², T_sisä = 21 °C, T_ulko = −24 °C, t = 7 vrk
@@ -76,20 +76,20 @@
 **Kaava:** Kahvin luovuttama lämpö Q = cmΔT on sama kuin karannut energia E = Pt, joten ΔT = Pt / (cm)
 **Sijoitus:** t = 10 · 3600 s = 36 000 s. ΔT = 1,4 W · 36 000 s / (4190 J/(kg·K) · 0,60 kg) = 50 400 J / (2514 J/K) ≈ 20,0 K
 **Vastaus:** 20 K. Tyhjiössä ei ole hiukkasia, joten lämpö ei johdu eikä kulkeudu konvektiolla seinästä toiseen. Kiiltävät pinnat heijastavat lämpösäteilyn takaisin. Lämpöä karkaa pääosin johtumalla pullon kaulan ja korkin kautta.
-**Järkevyys:** 90 °C:n kahvi on illalla noin 70 °C:sta, mikä vastaa kokemusta. Avonaisessa mukissa kahvi jäähtyisi saman verran alle tunnissa.
+**Järkevyys:** Aamulla 90 °C:n kahvi on illalla noin 70 °C:sta, mikä vastaa kokemusta hyvästä termospullosta.
 
 ## fy3-12-L3-02
 **Annettu:** I = 1,0 W/m², A = 5,1 · 10¹⁴ m², f = 90 % = 0,90, m = 2,6 · 10²⁰ kg, c = 4,0 · 10³ J/(kg·K), t_v = 365 vrk
-**Kysytty:** energia vuodessa E_v ja meren lämpeneminen ΔT kymmenessä vuodessa
+**Kysytty:** energia vuodessa E_v, lämpeneminen ΔT kymmenessä vuodessa
 **Kaava:** E_v = IA t_v. Kymmenessä vuodessa cmΔT = f IA · 10t_v, joten ΔT = 10 f IA t_v / (cm)
-**Sijoitus:** t_v = 365 · 24 · 3600 s = 3,1536 · 10⁷ s. E_v = 1,0 W/m² · 5,1 · 10¹⁴ m² · 3,1536 · 10⁷ s ≈ 1,6 · 10²² J. ΔT = 10 · 0,90 · 1,6084 · 10²² J / (4,0 · 10³ J/(kg·K) · 2,6 · 10²⁰ kg) ≈ 0,139 K
-**Vastaus:** 1,6 · 10²² J vuodessa; 0,14 K kymmenessä vuodessa.
-**Järkevyys:** Valtava energia lämmittää merta vain vähän, koska meren lämpökapasiteetti cm ≈ 10²⁴ J/K on suunnaton. Siksi meri hidastaa lämpenemistä, mutta varastoitunut energia pitää lämpenemisen käynnissä pitkään.
+**Sijoitus:** t_v = 365 · 24 · 3600 s = 3,1536 · 10⁷ s. E_v = 1,0 W/m² · 5,1 · 10¹⁴ m² · 3,1536 · 10⁷ s ≈ 1,6 · 10²² J. ΔT = 10 · 0,90 · 1,608 · 10²² J / (4,0 · 10³ J/(kg·K) · 2,6 · 10²⁰ kg) ≈ 0,139 K
+**Vastaus:** 0,14 K kymmenessä vuodessa; energiaa kertyy 1,6 · 10²² J vuodessa.
+**Järkevyys:** Meren lämpökapasiteetti cm ≈ 10²⁴ J/K on suunnaton, joten valtava energia lämmittää sitä vain vähän. Siksi meri hidastaa lämpenemistä, mutta varastoitunut energia pitää sen käynnissä pitkään.
 
 ## fy3-12-L3-03
 **Annettu:** ε = 2,8, U₁ = 0,35 W/(m²·K), U₂ = 0,10 W/(m²·K), A = 100 m², ΔT = 19 K, t = 5800 h
 **Kysytty:** säästetty sähköenergia W
 **Kaava:** Lämpöä säästyy Q = (U₁ − U₂)AΔT t, ja pumppu tarvitsee sähköä W = Q/ε, joten W = (U₁ − U₂)AΔT t / ε
 **Sijoitus:** Q = (0,35 − 0,10) W/(m²·K) · 100 m² · 19 K · 5800 h = 2 755 000 Wh = 2755 kWh. W = 2755 kWh / 2,8 ≈ 984 kWh
-**Vastaus:** 980 kWh. Pumppu ei luo lämpöä, vaan siirtää sitä sähkön avulla, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy, joten säästö on suurin kylmimpinä päivinä.
-**Järkevyys:** Ilman pumppua säästö olisi koko 2755 kWh, joten pumppu pienentää eristämisen säästöä mutta ei poista sitä.
+**Vastaus:** 980 kWh. Pumppu ei luo lämpöä vaan siirtää sitä sähkön avulla, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy, joten säästö on suurin kylminä päivinä.
+**Järkevyys:** Suorassa sähkölämmityksessä säästö olisi koko 2755 kWh. Pumppu pienentää säästöä, mutta ei poista sitä.
