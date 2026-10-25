@@ -90,10 +90,10 @@ Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska veden lämpötilan m
 Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia, tai että samaan lämpötilaan lämmitetyt kappaleet ovat saaneet saman määrän energiaa. Kilon veden ja kilon raudan lämmittäminen 20 °C:sta 60 °C:seen vaatii vedelle lähes kymmenkertaisen energian. Toinen virhe on laskea tasapainolämpötila keskiarvona. Kun 1,0 kg 80-asteista vettä kaadetaan 3,0 kg:aan 20-asteista vettä, veden ominaislämpökapasiteetti c on yhtälön molemmilla puolilla ja supistuu pois:
 ```latex
 \begin{aligned}
-3{,}0\,\text{kg} \cdot (T - 20\,^\circ\text{C}) &= 1{,}0\,\text{kg} \cdot (80\,^\circ\text{C} - T) \\
-3T - 60\,^\circ\text{C} &= 80\,^\circ\text{C} - T \\
-4T &= 140\,^\circ\text{C} \\
-T &= 35\,^\circ\text{C}
+3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) &= 1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
+3T - 60\,{}^\circ\text{C} &= 80\,{}^\circ\text{C} - T \\
+4T &= 140\,{}^\circ\text{C} \\
+T &= 35\,{}^\circ\text{C}
 \end{aligned}
 ```
 Toisella rivillä yhtälö on jaettu puolittain kilogrammalla. Lopputulos ei siis ole 50 °C vaan 35 °C, koska kylmää vettä on kolme kertaa enemmän kuin kuumaa.

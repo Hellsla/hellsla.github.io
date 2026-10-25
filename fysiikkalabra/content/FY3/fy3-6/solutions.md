@@ -44,7 +44,7 @@
 **Kaava:** c m₁ (T₁ − T) = c m₂ (T − T₂). Sama c supistuu pois, joten T = (m₁T₁ + m₂T₂) / (m₁ + m₂)
 **Sijoitus:** T = (160 g · 95 °C + 40 g · 8,0 °C) / (160 g + 40 g) = (15 200 + 320) g·°C / 200 g = 77,6 °C ≈ 78 °C
 **Vastaus:** 78 °C
-**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä kuuman veden lämpötilaa, koska kuumaa vettä on neljä kertaa enemmän. Grammoja ei tarvitse muuntaa kilogrammoiksi, koska massa on sekä osoittajassa että nimittäjässä ja yksikkö supistuu. Tarkistus: kuuma vesi jäähtyy 17,4 K ja kylmä lämpenee 69,6 K, ja 160 · 17,4 = 40 · 69,6.
+**Järkevyys:** Kuumaa vettä on neljä kertaa enemmän, joten tulos on lähellä 95 °C:ta. Grammoja ei tarvitse muuntaa, koska massa on sekä osoittajassa että nimittäjässä. Tarkistus: 160 g · 17,4 K = 40 g · 69,6 K.
 
 ## fy3-6-L2-02
 **Annettu:** P = 2,4 kW = 2400 W, vesi c = 4190 J/(kg·K), m = 1,5 kg, T_alku = 15 °C, T_loppu = 95 °C
@@ -66,9 +66,9 @@
 **Annettu:** alumiini c₁ = 900 J/(kg·K), m₁ = 0,25 kg, T₁ = 95 °C; vesi c₂ = 4190 J/(kg·K), m₂ = 0,40 kg, T₂ = 18 °C
 **Kysytty:** tasapainolämpötila T
 **Kaava:** c₁m₁(T₁ − T) = c₂m₂(T − T₂), josta T = (c₁m₁T₁ + c₂m₂T₂) / (c₁m₁ + c₂m₂)
-**Sijoitus:** c₁m₁ = 900 J/(kg·K) · 0,25 kg = 225 J/K ja c₂m₂ = 4190 J/(kg·K) · 0,40 kg = 1676 J/K. T = (225 J/K · 95 °C + 1676 J/K · 18 °C) / (225 J/K + 1676 J/K) = (21 375 + 30 168) J / (1901 J/K) = 27,11 °C ≈ 27 °C
+**Sijoitus:** c₁m₁ = 900 J/(kg·K) · 0,25 kg = 225 J/K ja c₂m₂ = 4190 J/(kg·K) · 0,40 kg = 1676 J/K. T = (225 J/K · 95 °C + 1676 J/K · 18 °C) / (1901 J/K) = 27,11 °C ≈ 27 °C
 **Vastaus:** 27 °C
-**Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen kauhaan verrattuna, joten kauha jäähtyy noin 68 K mutta vesi lämpenee vain noin 9 K, ja loppulämpötila on lähellä veden alkulämpötilaa. Keskiarvo 56,5 °C olisi selvästi väärin.
+**Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen, joten kauha jäähtyy noin 68 K mutta vesi lämpenee vain noin 9 K. Keskiarvo 56,5 °C olisi väärin.
 
 ## fy3-6-L3-01
 **Annettu:** vesi c = 4190 J/(kg·K), m_v = 20 kg, 10 °C → 40 °C; kivet c = 800 J/(kg·K), 300 °C
@@ -76,7 +76,7 @@
 **Kaava:** c_k m_k (T_k − T) = c_v m_v (T − T_v), missä tasapainolämpötila T = 40 °C
 **Sijoitus:** Vesi vastaanottaa 4190 J/(kg·K) · 20 kg · 30 K = 2 514 000 J. Kivet jäähtyvät 300 °C − 40 °C = 260 K, joten m_k = 2 514 000 J / (800 J/(kg·K) · 260 K) = 12,09 kg ≈ 12 kg
 **Vastaus:** 12 kg
-**Järkevyys:** Tasapainossa kivetkin ovat 40 °C:ssa, joten ne jäähtyvät 260 K eivätkä 300 K. Kiviä tarvitaan vettä vähemmän, koska ne jäähtyvät 260 K eli noin 8,7 kertaa enemmän kuin vesi lämpenee (30 K). Kivien pienempi c vaikuttaa vastakkaiseen suuntaan (veden c on 5,2-kertainen), mutta lämpötilaero on suurempi tekijä: massojen suhde on (4190 · 30) / (800 · 260) ≈ 0,60.
+**Järkevyys:** Tasapainossa kivetkin ovat 40 °C:ssa, joten ne jäähtyvät 260 K eivätkä 300 K. Kivien 8,7 kertaa suurempi lämpötilan muutos pienentää massaa, pienempi c (5,2-kertainen ero) suurentaa sitä: m_k / m_v ≈ 0,60.
 
 ## fy3-6-L3-02
 **Annettu:** A = 2000 m², h = 1,2 m, 18 MJ = 18 000 000 J neliömetriä kohti, 1000 kg/m³, c = 4190 J/(kg·K)
