@@ -60,7 +60,7 @@
 **Kaava:** p = pV · (1/V), joten (1/V, p)-kuvaajan kulmakerroin on pV
 **Sijoitus:** 1/V = 0,100; 0,0800; 0,0667; 0,0500; 0,0400; 0,0333 1/ml. Pisteet ovat origon kautta kulkevalla suoralla. Suora kulkee esimerkiksi pisteen (0,100 1/ml; 201 kPa) kautta, joten kulmakerroin on 201 kPa / (0,100 1/ml) ≈ 2010 kPa·ml. Koska 1 kPa · 1 ml = 1000 Pa · 0,000001 m³ = 0,001 J, pV ≈ 2,0 J.
 **Vastaus:** 2,0 J
-**Järkevyys:** Tulojen pV arvot ovat 1980–2030 kPa·ml, joten ne ovat lähes vakioita, ja Boylen laki pätee mittaustarkkuuden rajoissa.
+**Järkevyys:** Tulon pV arvot ovat 1980–2030 kPa·ml, joten ne ovat lähes vakioita, ja Boylen laki pätee mittaustarkkuuden rajoissa.
 
 ## fy3-9-L2-04
 **Annettu:** V₁ = 2800 m³, θ₁ = 10 °C, θ₂ = 100 °C, paine vakio
@@ -76,7 +76,7 @@
 **Kaava:** p₁ = p₀ + ρgh ja p₁V₁ = p₀V₂
 **Sijoitus:** ρgh = 1000 kg/m³ · 9,81 m/s² · 20,0 m = 196 200 Pa = 196,2 kPa, joten p₁ = 101 kPa + 196,2 kPa = 297,2 kPa. V₂ = 297,2 kPa · 2,0 cm³ / 101 kPa = 5,885 cm³ ≈ 5,9 cm³
 **Vastaus:** 5,9 cm³
-**Järkevyys:** Paine putoaa lähes kolmasosaan, joten tilavuus lähes kolminkertaistuu. Keuhkojen ilma on syvällä samassa paineessa. Jos sukeltaja pidättää hengitystä noustessaan, ilma pyrkii laajenemaan lähes kolminkertaiseksi ja voi repiä keuhkokudosta. Siksi noustessa hengitetään ulos.
+**Järkevyys:** Paine putoaa lähes kolmasosaan, joten tilavuus lähes kolminkertaistuu. Keuhkojen ilma on syvällä samassa paineessa kuin ympäröivä vesi. Jos sukeltaja pidättää hengitystä noustessaan, ilma pyrkii laajenemaan lähes kolminkertaiseksi ja voi repiä keuhkokudosta. Siksi noustessa hengitetään ulos.
 
 ## fy3-9-L3-02
 **Annettu:** ylipaine 250 kPa, p₀ = 101 kPa, θ₁ = 20 °C, θ₂ = −20 °C, tilavuus vakio

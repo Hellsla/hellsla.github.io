@@ -116,7 +116,7 @@ new p5((p) => {
       const Vm = r.V * 1e6, pr = r.p / 1000;
       h += `<tr>${td}${fi(Vm, 1)}</td>${td}${fs(1 / Vm)}</td>${td}${fi(pr, 1)}</td>${td}${fi(r.T, 2)}</td>${td}${fi(cFn(Vm, pr, r.T), cDec)}</td></tr>`;
     }
-    if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .25rem">Ei mittauksia. Paina Tallenna mittaus.</td></tr>';
+    if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .25rem">Ei mittauksia. Paina ”Tallenna mittaus”.</td></tr>';
     h += '</tbody></table>';
     if (table.elt.innerHTML !== h) table.elt.innerHTML = h;
     window.simState = { mode, V: V * 1e-6, p: pk * 1000, T, constant: c * (iso ? 1e-3 : mode === 'isobaarinen' ? 1e-6 : 1e3),

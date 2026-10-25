@@ -49,7 +49,7 @@ V_2 &= \frac{p_1 V_1}{p_2} = \frac{101\,\text{kPa} \cdot 0{,}80\,\text{l}}{78\,\
 &\approx 1{,}0\,\text{l}
 \end{aligned}
 ```
-Ilman tilavuus kasvaa noin kolmanneksella (tarkemmin 1,04 l). Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi. Tulos on järkevä: paine pienenee, joten tilavuuden täytyy kasvaa, ja kasvukerroin on painesuhde 101/78 ≈ 1,3.
+Ilman tilavuus kasvaa noin kolmanneksella, ja tarkemmin laskettuna uusi tilavuus on 1,04 l. Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi. Tulos on järkevä: paine pienenee, joten tilavuuden täytyy kasvaa, ja kasvukerroin on painesuhde 101/78 ≈ 1,3.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että kääntäen verrannollisuus tarkoittaa laskevaa suoraa. Kun tilavuus kaksinkertaistuu, paine puolittuu, joten (V, p)-kuvaaja on kaari, joka lähestyy akseleita mutta ei koskaan kohtaa niitä. Suora syntyy vasta, kun p piirretään 1/V:n funktiona. Toinen virhe on käyttää celsiusasteita kaavoissa, joissa on lämpötilojen suhde. Kun ilma lämpenee 10 °C:sta 20 °C:seen, sen tilavuus ei kaksinkertaistu, vaan kasvaa kertoimella 293 K / 283 K eli vain noin 3,5 %. Kolmas virhe on ajatella, että kaasun paine johtuu kaasun painosta. Suljetussa astiassa paine syntyy hiukkasten törmäyksistä, ja se on yhtä suuri kaikkialla astiassa.

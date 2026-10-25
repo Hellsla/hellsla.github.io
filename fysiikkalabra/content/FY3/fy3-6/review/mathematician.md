@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b7992c65df0f2c94
+CONTENT-HASH: 79f641894690432a
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:53 — L2-02 is the only single-body solution that does not show ΔT; the substitution jumps to 80 K — add "ΔT = 95 °C − 15 °C = 80 K." before Q, as in L1-01.
-- lesson.md:93 vs lesson.md:27 — the 35 °C working puts the cold water on the left, while the general equation has the hot body on the left; harmless — write `1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) = 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})` (then `80 °C − T = 3T − 60 °C`, `140 °C = 4T`), or say that the sides were swapped.
-- lesson.md:99 — "Toisella rivillä yhtälö on jaettu puolittain kilogrammalla" omits that the brackets were also expanded on that line (3,0·(T − 20 °C) → 3T − 60 °C) — add "ja sulut on kerrottu auki".
+- lesson.md:38–39 — the 6 pt gap is the only thing that separates the two equations of the T derivation, and nothing says that the second one follows from the first. Optional fix: start row 39 with `\Rightarrow\;` (`&\Rightarrow\; c_1 m_1 T_1 + c_2 m_2 T_2`); line 34 already describes the steps.
 
 ## Checked
-- lesson.md:34–40 line by line: expanding c₁m₁(T₁ − T) = c₂m₂(T − T₂) gives c₁m₁T₁ − c₁m₁T = c₂m₂T − c₂m₂T₂; adding c₁m₁T + c₂m₂T₂ gives c₁m₁T₁ + c₂m₂T₂ = (c₁m₁ + c₂m₂)T; division gives the displayed T. Correct.
-- lesson.md:93–96: 3,0(T − 20) = 1,0(80 − T) → 3T − 60 = 80 − T → 4T = 140 → T = 35 °C, units consistent after dividing by kg.
-- lesson.md:15–17, 29: ΔT = T_loppu − T_alku with sign convention; balance sides are positive magnitudes for T₂ < T < T₁.
-- Example lesson.md:81–87: 5656,5 J; 374,6 ≈ 3,7·10² J/(kg·K); 24,6 °C reading → 383; lossless copper → 24,62 °C; C = 1257 J/K and 74,9 ≈ 75 J/K.
-- SVG lesson.md:53–74: 210 px per 4190; heights 105, 45, 40, 23, 19 and y = 250 − h match the table.
-- Ratios: water/iron 9,3 ("lähes kymmenkertainen"), sand/water 0,19 ("viidesosa").
-- New L2-01: (15 200 + 320)/200 = 77,6 → 78 °C; check 160·17,4 = 40·69,6 = 2784; grams cancel correctly.
-- New L2-04: 225 J/K, 1676 J/K, 51 543/1901 = 27,11 → 27 °C; ratio 7,45, cooling 67,9 K, warming 9,1 K, mean 56,5 °C.
-- All other solutions recomputed (633 528 J, 210 600 J, 720 kJ, −35 196 000 J, 18 900 J, 209,5 s, 53,75 °C, 12,09 kg with ratio 0,604, 3,58 K, 3,27 m³); T_alku/T_loppu in single-body tasks and T₁/T₂ only in two-body tasks; units carried in every substitution.
-- Exit ticket: 419 000 J ≈ 420 kJ, factor ≈ 9, 3:1 mix 65 °C.
+- lesson.md:15–18: the `aligned` pair `Q = cmΔT` / `ΔT = T_loppu − T_alku` is aligned at `=` and has the same content as before the split.
+- lesson.md:36–42 row by row: rows 1–2 expand c₁m₁(T₁ − T) = c₂m₂(T − T₂). Rows 3–4 add c₁m₁T + c₂m₂T₂ to both sides (the right side is reordered, which is valid). Row 5 factors out T. The `\quad` indent marks continuation rows.
+- lesson.md:46: dividing by c₁m₁ + c₂m₂ gives the displayed T, which agrees with row 5.
+- lesson.md:87–90: the left side is alone on row 1 and `= 4190 J/(kg·K) · 0,300 kg · 4,5 K` is on row 2. 4190 · 0,300 · 4,5 = 5656,5 J, which matches line 92.
+- lesson.md:94–98: 5656,5 / (0,200 · 75,5) = 5656,5 / 15,1 = 374,60 → ≈ 3,7·10² J/(kg·K), with rounding only on the last row. Every row is aligned at `=`/`≈`, and the name `c_metalli` is used consistently on lines 88 and 95.
+- lesson.md:108–112 row by row: 1,0 kg·(80 °C − T) = 3,0 kg·(T − 20 °C), with the hot side on the left as in line 30. Dividing by kg and expanding gives 80 °C − T = 3T − 60 °C. Adding T + 60 °C gives 140 °C = 4T, so T = 35 °C. Units are consistent.
+- lesson.md:115: "Kolmannella rivillä" correctly names the visual row 3, where the division by kg and the expansion of the brackets both happen. The weighted mean (3,0·20 + 1,0·80)/4,0 = 140/4,0 = 35 °C, with kg·°C/kg = °C, is the same as line 46 with c cancelled.
+- lesson.md:102: 0,300 · 4190 = 1257 J/K, and 0,200 · 374,6 = 74,9 ≈ 75 J/K.
+- solutions.md:53: ΔT = 95 °C − 15 °C = 80 K. Q = 502 800 J and t = 209,5 s ≈ 210 s. The solution is now consistent with L1-01. solutions.md:87: the added upper-limit sentence does not change the mathematics.
+- `lint_lesson.py`: 0 errors and 0 warnings. `check_latex.py`: all 13 fragments OK. `check_layout.py fy3-6`: OK at 360 px. exercises.json, answers.py and exit-ticket.json are unchanged since c2ad583.

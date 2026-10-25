@@ -1,5 +1,5 @@
 VERDICT: FAIL
-CONTENT-HASH: 2e23c56481d1b38e
+CONTENT-HASH: 19113b2932daf12c
 
 Gate for fy3-6 on 2026-10-25.
 
@@ -8,10 +8,8 @@ Reviewers required: tester, physics-expert, mathematician, educator, proofreader
 Checks run: none (stopped earlier)
 
 Problems:
-1. tester: report is for an older version of its files (hash cf3db0d4e8955bff, now 22aa2b4fe3ce9aa9)
-2. physics-expert: report is for an older version of its files (hash 1e7a584b2d14267a, now 0c8645b4d3d20b8a)
-3. mathematician: report is for an older version of its files (hash dd6fa15d7b090997, now c9160982196225d2)
-4. educator: verdict is not PASS (VERDICT: FAIL)
-5. proofreader: report is for an older version of its files (hash 08a0371466573687, now 3b97e896fb63eae2)
-6. editor: verdict is not PASS (VERDICT: FAIL)
-7. web-designer: verdict is not PASS (VERDICT: FAIL)
+1. physics-expert: report is for an older version of its files (hash 786ee55d45e2cdff, now fbd6190138f1aa85)
+2. mathematician: report is for an older version of its files (hash b7992c65df0f2c94, now 79f641894690432a)
+3. educator: report is for an older version of its files (hash 2210dad2ca7dd030, now 42c58702775d8b44)
+4. editor: report is for an older version of its files (hash 33e3e35d87b23337, now a5d04c8a34f74850)
+5. web-designer: verdict is not PASS (VERDICT: FAIL)

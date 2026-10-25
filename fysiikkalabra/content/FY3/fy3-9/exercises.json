@@ -69,7 +69,7 @@
     {
       "id": "fy3-9-L2-04",
       "level": 2,
-      "text": "Kuumailmapallon kuoren tilavuus on 2800 m³, ja kuoren alaosassa on aukko. Kuori on täynnä 10 °C:n ilmaa, joka lämmitetään polttimella 100 °C:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Kuinka suuren tilavuuden alun perin kuoressa ollut ilma veisi lämmettyään? Laske, kuinka monta kuutiometriä ilmaa on tämän vuoksi työntynyt ulos aukosta.",
+      "text": "Kuumailmapallon kuoren tilavuus on 2800 m³, ja kuoren alaosassa on aukko. Kuori on täynnä 10 °C:n ilmaa, joka lämmitetään polttimella 100 °C:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Laske, kuinka monta kuutiometriä ilmaa on työntynyt ulos aukosta, kun alun perin kuoressa ollut ilma on lämmennyt.",
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-9-L3-01",
       "level": 3,
-      "text": "Sukeltaja on järvessä 20,0 m:n syvyydessä ja puhaltaa ilmakuplan, jonka tilavuus on 2,0 cm³. Kupla nousee pintaan. Ilmanpaine on 101 kPa ja veden tiheys 1000 kg/m³. Oleta, että veden lämpötila on sama koko matkalla, eikä kuplan ilmaa liukene veteen. Mikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
+      "text": "Sukeltaja on järvessä 20,0 m:n syvyydessä ja puhaltaa ilmakuplan, jonka tilavuus on 2,0 cm³. Kupla nousee pintaan. Ilmanpaine on 101 kPa ja veden tiheys 1000 kg/m³. Oleta, että veden lämpötila on sama koko matkalla, eikä kuplan ilma liukene veteen. Mikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
       "answer": 5.9,
       "unit": "cm³",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "Auton renkaat täytetään 20 °C:n lämpimässä tallissa, ja rengaspainemittari näyttää 250 kPa. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan p₁/T₁ = p₂/T₂.",
+      "text": "Auton renkaat täytetään 20 °C:n tallissa, ja rengaspainemittari näyttää 250 kPa. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan p₁/T₁ = p₂/T₂.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02
