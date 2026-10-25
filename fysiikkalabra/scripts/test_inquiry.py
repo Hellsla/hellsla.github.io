@@ -14,7 +14,7 @@ progressive hints, the model answer, the reflection shows the stored prediction,
 360 px viewport without horizontal overflow. The physics itself (W = F s, P = W / t) is asserted by
 tests/sims/fy3-2.json through test_sims.py, not here. What these tests prove is that the mechanics behave;
 whether the sequence teaches is for the classroom evaluation (docs/inquiry.md)."""
-import copy, json, pathlib, subprocess, sys, tempfile, shutil
+import copy, json, os, pathlib, subprocess, sys, tempfile, shutil
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import inquiry
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -44,7 +44,9 @@ def generic(lid):
     stages = [a["stage"] for a in acts]
     check("ennusta before tutki before selita", all(stages.index(s) <= stages.index(t) for s, t in (("ennusta", "tutki"), ("tutki", "selita")) if s in stages and t in stages))
     check("every stage used has an activity, Tarkista has three checks", sum(1 for a in acts if a["stage"] == "tarkista" and a["type"] in ("choice", "numeric", "explain")) >= 3)
-    check("a prediction exists", bool(preds), "no choice with reveal")
+    ennusta = [a for a in acts if a["stage"] == "ennusta" and a["type"] == "choice"]
+    check("a prediction exists in Ennusta", bool(ennusta), "no choice in stage ennusta")
+    if exps: check("a prediction is tied to an experiment", bool(preds), "experiments exist but no choice has reveal")
     if exps: check("the sim activity precedes the experiments", any(a["type"] == "sim" for a in acts) and acts.index(next(a for a in acts if a["type"] == "sim")) < acts.index(exps[0]))
     url = (ROOT / "preview" / f"{lid}.html").as_uri()
     with sync_playwright() as pw:
@@ -122,13 +124,22 @@ e = errs_of(lambda d: d["activities"][17].pop("model")); check("explain needs a 
 types = {a["type"] for a in good["activities"]}
 check("pilot exercises every implemented type but text", types >= set(inquiry.TYPES) - {"text"}, str(set(inquiry.TYPES) - types))
 
-# a lesson without inquiry.json renders in the classic layout, byte for byte as before this framework
-r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-1"], capture_output=True, text=True, cwd=ROOT)
-classic = (ROOT / "preview/fy3-1.html").read_text()
-check("classic lesson builds", r.returncode == 0, r.stderr[-300:])
-check("classic lesson keeps its layout", '<article id="teoria">' in classic and ".stage" not in classic and 'inquiry.js' not in classic and '<a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a>' in classic)
-live = ROOT / "site/fy3-1.html"
-if live.exists(): check("classic lesson identical to the committed site page", live.read_text() == classic)
+# a lesson without inquiry.json renders in the classic layout: build a copy of fy3-2 without the file in a temporary root
+with tempfile.TemporaryDirectory() as tmp:
+    troot = pathlib.Path(tmp)
+    for n in ("templates", "curriculum.json", "glossary.json"):
+        src = ROOT / n
+        if src.is_dir(): shutil.copytree(src, troot / n)
+        elif src.exists(): shutil.copy(src, troot / n)
+    shutil.copytree(folder, troot / "content/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
+    (troot / "content/FY3/fy3-2/inquiry.json").unlink()
+    env = {**os.environ, "FYSIIKKALABRA_ROOT": tmp}
+    r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env=env)
+    classic = (troot / "preview/fy3-2.html").read_text() if r.returncode == 0 else ""
+    check("classic lesson builds", r.returncode == 0, (r.stdout + r.stderr)[-300:])
+    check("classic lesson keeps its layout", '<article id="teoria">' in classic and 'class="stage"' not in classic and 'inquiry.js' not in classic
+          and '<a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a>' in classic
+          and '<section id="sim"><h2>Simulaatio</h2>' in classic and classic.index('<section id="sim">') < classic.index('<h2>Esimerkki</h2>'))
 
 # a broken inquiry.json fails the build with the field named
 with tempfile.TemporaryDirectory() as tmp:
@@ -197,7 +208,7 @@ with sync_playwright() as pw:
     # reflection shows the stored prediction and its outcome
     refl = pg.locator("#reflect .my-predictions li")
     check("reflection lists three predictions", refl.count() == 3)
-    check("reflection shows my prediction and the verdict", "Ennustit" in refl.nth(0).inner_text() and "eivät tue" in refl.nth(0).inner_text() and "Et ole vielä" in refl.nth(1).inner_text(), refl.nth(0).inner_text())
+    check("reflection shows my prediction and the verdict", "Ennustit" in refl.nth(0).inner_text() and "ei tue" in refl.nth(0).inner_text() and "Et ole vielä" in refl.nth(1).inner_text(), refl.nth(0).inner_text())
 
     # plain choice: feedback after Vastaa, may change and re-check
     c = pg.locator("#pr-paino"); c.locator("input[type=radio]").nth(0).check(); c.locator("button.commit").click()

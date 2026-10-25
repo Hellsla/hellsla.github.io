@@ -35,6 +35,11 @@ new p5((p) => {
     p.createP('Paine kasvaa syvyyden mukana tasaisesti: jokainen metri lisää painetta ρg:n verran. Suoran kulmakerroin riippuu tiheydestä, mutta pinnalla paine on aina ilmanpaine.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { h: { input: sH.elt, unit: 'm' }, rho: { input: sR.elt, unit: 'kg/m³' } },
+      reset: () => { sH.value(10); sR.value(1000); cb.elt.checked = false; },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

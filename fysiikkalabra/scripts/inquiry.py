@@ -110,6 +110,8 @@ def validate(folder, inquiry, lesson_md):
             elif isinstance(a.get("vary"), str) and a["vary"] in a["locked"]: errs.append(f"{path}.locked: the varied parameter cannot be locked")
             if not isinstance(a.get("measure"), list) or not a["measure"]: errs.append(f"{path}.measure: the simState keys to record")
             if "min" in a and (not isinstance(a["min"], int) or a["min"] < 1): errs.append(f"{path}.min: measurements before the linked predictions are revealed")
+            for key in ("units", "names"):
+                if key in a and (not isinstance(a[key], dict) or not all(isinstance(v, str) for v in a[key].values())): errs.append(f"{path}.{key}: {{param: text}}")
         elif t == "interpret":
             if not isinstance(a.get("text"), str) or not a["text"].strip(): errs.append(f"{path}.text: the representation (table, figure or measurements) in markdown/HTML")
         if t in ("experiment", "interpret") and "question" in a:
@@ -190,20 +192,21 @@ def question_html(q, md, lid, aid):
 
 
 def experiment_html(a, md, lid):
-    units = a.get("units", {})
-    fmt = lambda k, v: f"{esc(k)} = {esc(v)}" + (f" {esc(units[k])}" if k in units else "")
+    units = a.get("units", {}); names = a.get("names", {})
+    nm = lambda k: esc(names.get(k, k))
+    fmt = lambda k, v: f"{nm(k)} = {esc(v)}" + (f" {esc(units[k])}" if k in units else "")
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
-    locked = ", ".join(esc(k) for k in a["locked"]) or "ei mitään"
+    locked = ", ".join(nm(k) for k in a["locked"]) or "ei mitään"
     cols = "".join(f"<th>{esc(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
             f'data-vary="{esc(a["vary"])}" data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
             f'<div class="intro">{md(a["intro"])}</div>'
-            f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {esc(a["vary"])}.</p>'
+            f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {nm(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">Aseta alkutila</button><button type="button" class="exp-record">Kirjaa mittaus</button>'
             f'<button type="button" class="exp-reset">Nollaa</button></div>'
-            f'<table class="exp-table"><caption>Mittaukset</caption><thead><tr><th>{esc(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
+            f'<table class="exp-table"><caption>Mittaukset</caption><thead><tr><th>{nm(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 

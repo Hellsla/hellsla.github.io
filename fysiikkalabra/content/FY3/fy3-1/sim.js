@@ -46,6 +46,11 @@ new p5((p) => {
     p.createP('Massa on sama kaikkialla. Vain paino muuttuu, koska vuorovaikutus taivaankappaleen kanssa on erilainen.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { m: { input: sM.elt, unit: 'kg' }, body: { input: sel.elt, unit: '' } },
+      reset: () => { sM.value(10); sel.selected('Maa'); shown = null; vel = 0; },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

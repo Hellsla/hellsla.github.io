@@ -19,7 +19,7 @@ import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 import inquiry
 
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/
 BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
 arg = sys.argv[1] if len(sys.argv) > 1 else None

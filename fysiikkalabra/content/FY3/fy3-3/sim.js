@@ -38,6 +38,11 @@ new p5((p) => {
     p.createP('Kun hiukkaset liikkuvat nopeammin, ne osuvat seinään useammin ja kovempaa. Kun astia on pienempi, ne osuvat seinään useammin. Molemmissa tapauksissa paine kasvaa. Mitattu paine vaihtelee hieman teoria-arvon ympärillä.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
+    if (window.defineSimAdapter) window.defineSimAdapter({
+      params: { T: { input: sT.elt, unit: 'K' }, V: { input: sV.elt, unit: 'dm³' } },
+      reset: () => { sT.value(300); sV.value(1); },
+      step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
+    });
   };
 
   p.draw = () => {

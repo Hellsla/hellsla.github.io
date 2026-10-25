@@ -167,7 +167,7 @@
           const ok = fs.querySelectorAll('input[type=radio]')[saved.choice]?.dataset.correct === '1';
           const revealed = fs.dataset.state !== undefined;
           a.innerHTML = `<strong>Ennustit:</strong> ${saved.text}` + (saved.why ? ` <em>(${saved.why})</em>` : '') +
-            (revealed ? ` — ${ok ? 'mittaukset tukevat ennustettasi.' : 'mittaukset eivät tue ennustettasi.'}` : ' — tee vielä mittaukset, niin näet, pitikö ennuste.');
+            (revealed ? ` — ${ok ? 'aineisto tukee ennustettasi.' : 'aineisto ei tue ennustettasi.'}` : ' — tee vielä mittaukset, niin näet, pitikö ennuste.');
         } else { a.innerHTML = `Et ole vielä vastannut: <a href="#${pid}">siirry ennusteeseen</a>.`; }
         li.appendChild(a); list.appendChild(li);
       });
