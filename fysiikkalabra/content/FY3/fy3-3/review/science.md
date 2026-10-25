@@ -1,21 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: cabf3911941dad86
+VERDICT: PASS
+CONTENT-HASH: a8b10444aa1808d4
 
 ## Blocking
-- exercises.json:64 (also solutions.md:58–62, answers.py:13–14) — L2-03 data (110 kPa at 10 °C, 130 kPa at 80 °C in a rigid closed container) are not physically possible: the line through them reaches p = 0 at 10 − 110/0,2857 = −375 °C, which is below absolute zero, and an ideal gas would be at 110 · 353,15/283,15 = 137 kPa. This contradicts the lesson's central claim that extrapolation gives −273 °C. The solution's Järkevyys line ("absoluuttiseen nollapisteeseen on vielä matkaa") hides the problem. — Change 130 kPa to 137 kPa. Then k = 0,3857 kPa/°C and p(−50 °C) = 86,9 kPa, so answer 87. Update answers.py and the solution to match.
 
 ## Polish
-- inquiry.json:285 — siirto Järkevyys: "Siksi kuumana suljettu purkki voi olla vaikea avata vasta jäähdyttyään" describes the reverse process (sealed hot, then cooled), so "Siksi" doesn't follow from this jar, which was sealed cold and heated. — Present it as the reverse case: "Käänteisesti…".
-- exercises.json L3-01 — 300 kPa for a bike tyre reads like a gauge overpressure, but p ∝ T holds only for absolute pressure. — Add "(absoluuttinen paine)" or use about 400 kPa.
-- inquiry.json:96 — pred-2 last option: in the sim only the piston walls get hit more often. On the top and bottom walls the hit rate stays the same and only the wall length shrinks. The feedback merges the two. — Optional rewording.
-- sim.js — has no hidas/normaali/nopea speed control (lesson form 3). — Add one (pedagogy may own this).
+- sim.js:945 — at 150 K (the low value exp-1 suggests) the 1,5 s window holds few collisions, so measured p swung 41–62 around theory 50 in a headless run (±20 %); at 300–600 K it stays within about ±5 % — optionally lengthen WINDOW (e.g. 180 frames) or scale it with 1/v so the low-temperature reading is steadier.
+- inquiry.json check-2 solution — $k = \tfrac{1}{3}\,\text{1/°C}$ mixes the relative pressure unit away; writing "1/3 per °C (suhteellista yksikköä)" would be cleaner.
 
 ## Checked
-- All 12 exercise answers recomputed independently; they match answers.py and exercises.json, and every one is inside its tolerance.
-- Worked-example table matches p ∝ T (107,3 … 136,6 kPa). k = 0,37 gives θ₀ = −270 °C. SVG plot coordinates are to scale (axis at −300 °C, zero at x = 107).
-- The kelvin/celsius SVG is to scale (1,285 vs 1,29 px/unit).
-- sim.js: 2D impulse per wall length gives N v²/(2 Wc Hc), so pRel equals pTheory = 100 (T/300)/V exactly, and v ∝ √T.
-- pred-1, pred-2, pred-3: the correct options and the numbers in the feedback (300→600 K, 50→100, √2 ≈ 1,41) agree with the sim.
-- exp-1 and exp-2 vary one variable and lock the other. Their initial values are within the slider ranges, and simState provides theta, vRel, pRel and pTheory.
-- virhe: 128 kPa. siirto: 122 kPa; the mistake values 404 and 83,8 are correct. check-2: −273 °C; mistake feedback is correct.
-- check-1, check-3 model answer, exit ticket and glossary physics are correct (N₂ boils at −196 °C, 10→20 °C is a 3,5 % rise).
+- answers.py vs own recomputation: all 12 answers agree and lie within tolerance (L2-03 now 86,86 → 87 kPa from the corrected data).
+- Worked example: endpoint slope 0,37 kPa/°C, θ = −p₀/k ≈ −270 °C (least-squares fit −271 °C); symbolic before substitution; graph coordinates match the data (1,25 px/°C, 1,5 px/kPa, axis at −300 °C).
+- Kelvin/Celsius figure is to scale (373,15 K at x ≈ 540).
+- Formula T = θ + 273,15, p ∝ T at constant V and n, ⟨E_k⟩ ∝ T: conditions stated, within FY3 scope; liquefaction caveat on extrapolation present.
+- pred-1 (300→600 K, ×2; speed ×1,41), pred-2 (V 2→1 dm³, p 50→100, vRel 1,00), pred-3 feedback consistent with the model.
+- exp-1/exp-2 isolate the varied parameter (V or T locked); simState provides theta, vRel, pRel, pTheory; Playwright: p ≈ 202/200 at 600 K, 47/50 at 2 dm³, 192/200 at 0,5 dm³.
+- sim.js pressure: mean over both axes gives N v²/(2A) exactly, reference uses the same effective box; p ∝ T/V.
+- siirto 121,7 → 122 kPa; mistakes 404 and 83,8 match the named errors; virhe 128 kPa.
+- check-2: −123/27/177 °C → 150/300/450 K, zero at −273 °C; mistakes 0 and −123 explained correctly.
+- Misconception 293/283 ≈ 1,035; L3 Järkevyys counter-examples (36 °C, 10 °C) correct.
