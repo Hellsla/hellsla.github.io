@@ -1,0 +1,24 @@
+{
+  "id": "fy3-1",
+  "course": "FY3",
+  "title": "Voima vuorovaikutuksen mittana ja paino G = mg",
+  "goals": [
+    "LOPS FY3: voima vuorovaikutuksen voimakkuuden mittana",
+    "Täsmennys: kerrataan voiman mittaaminen voimamittarilla ja todetaan massan ja painon yhteys G = mg; voimaa ei käsitellä liiketilan muutoksen aiheuttajana"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "voima",
+    "voimamittari",
+    "vuorovaikutus",
+    "paino",
+    "massa",
+    "newton"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "reviewed",
+  "reviewed_by": "gate (automaattinen tarkistus)",
+  "reviewed_on": "2026-10-25",
+  "reviewed_hash": "8fb367b0d6fd83e0"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Mitä tilanmuuttujia kaasusysteemillä on, ja mitä muille tilanmuuttujille tapahtuu, kun yhtä niistä muutetaan?",
+    "a": "Lämpötila, paine ja tilavuus sekä aineen määrä. Kun yhtä muutetaan, vähintään yksi muista muuttuu myös."
+  },
+  {
+    "q": "Lämpötila nousee 10 °C:sta 20 °C:een. Kaksinkertaistuuko hiukkasten keskimääräinen liike-energia? Perustele.",
+    "a": "Ei. Kelvineinä lämpötila nousee 283 K:sta 293 K:iin, eli vain noin 3,5 %, ja liike-energia riippuu kelvinlämpötilasta."
+  },
+  {
+    "q": "Mikä on lämpötila 0 K celsiusasteina, ja miksi sitä sanotaan absoluuttiseksi nollapisteeksi?",
+    "a": "−273 °C. Kylmempää lämpötilaa ei ole, koska hiukkasten keskimääräinen liike-energia on silloin pienimmillään."
+  }
+]

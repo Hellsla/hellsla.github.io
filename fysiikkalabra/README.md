@@ -45,6 +45,18 @@ lesson-slot list per module, generated from the LOPS 2019 texts in `docs/lops201
 The slot list is a proposal: reorder or rename before drafting. The reference lesson in `content/_gold/` is
 `fy4-4` Newtonin toinen laki; the first draft is `content/FY3/fy3-2/` Työ ja energia.
 
+## Automatic publishing (no human in between)
+```
+/publish-lesson fy3-3     # reviewers -> fixer on FAIL -> reviewers again (max 3 rounds) -> publisher
+python scripts/gate.py fy3-3            # check only; writes review/gate.md
+python scripts/gate.py fy3-3 --publish  # what the publisher agent runs
+python scripts/test_gate.py             # the gate's own tests
+```
+A lesson is published only when all required reviewers wrote `VERDICT: PASS` with the lesson's current `CONTENT-HASH`,
+the lesson structure is valid, and the LaTeX, build and simulation checks pass. Editing the lesson afterwards changes the hash
+and CI (`gate.py --verify`) fails until the review runs again. The publisher commits to the working branch only; merging
+into `main`, which makes the page live, stays a repository decision.
+
 ## Exercise schema
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }

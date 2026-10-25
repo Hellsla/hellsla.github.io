@@ -2,3 +2,4 @@ preview/
 **/review/*.png
 __pycache__/
 node_modules/
+docs/exams/

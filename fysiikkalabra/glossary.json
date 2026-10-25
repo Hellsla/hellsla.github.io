@@ -1,5 +1,17 @@
 [
   {
+    "term": "absoluuttinen nollapiste",
+    "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "kelvin",
+      "lämpötila"
+    ],
+    "locked": false
+  },
+  {
     "term": "energia",
     "definition": "Energia on suure, jonka avulla kuvataan, mitä systeemissä tapahtuu. Energia ei synny eikä katoa, vaan muuttaa muotoa tai siirtyy, ja työ on yksi tapa siirtää sitä; yksikkö on joule (J).",
     "lessons": [
@@ -21,6 +33,18 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kelvin",
+    "definition": "Lämpötilan SI-yksikkö K. Kelvinlämpötila on celsiuslämpötila plus 273,15, ja lämpötilaero on sama kelvineinä ja celsiusasteina.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "lämpötila",
+      "absoluuttinen nollapiste"
     ],
     "locked": false
   },
@@ -61,6 +85,54 @@
     "locked": false
   },
   {
+    "term": "lämpötila",
+    "definition": "Lämpötila kertoo aineen hiukkasten keskimääräisestä liike-energiasta. Sitä mitataan celsiusasteina (°C) tai kelvineinä (K).",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "kelvin",
+      "absoluuttinen nollapiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "massa",
+    "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla, toisin kuin paino.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "newton",
+    "definition": "Voiman yksikkö, merkintä N. Noin yksi newton on sadan gramman omenan paino Maassa.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "voima",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "paino",
+    "definition": "Kappaleen paino G on voima, joka kertoo Maan (tai muun taivaankappaleen) ja kappaleen välisen vuorovaikutuksen voimakkuuden. Paino lasketaan kaavalla G = mg ja mitataan newtoneina.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "massa",
+      "voima",
+      "newton"
+    ],
+    "locked": false
+  },
+  {
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
@@ -69,6 +141,17 @@
     "see_also": [
       "energia",
       "työ"
+    ],
+    "locked": false
+  },
+  {
+    "term": "systeemi",
+    "definition": "Termodynaaminen systeemi on tutkimista varten rajattu osa maailmaa. Kaikki sen ulkopuolella on ympäristöä, ja systeemi on suljettu, jos siitä ei pääse ainetta ulos tai sisään.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "tilanmuuttuja"
     ],
     "locked": false
   },
@@ -85,6 +168,19 @@
     "locked": false
   },
   {
+    "term": "tilanmuuttuja",
+    "definition": "Tilanmuuttuja kuvaa systeemin tilaa. Kaasun tilanmuuttujia ovat lämpötila, paine, tilavuus ja aineen määrä, ja jos yhtä muutetaan, vähintään yksi muista muuttuu myös.",
+    "lessons": [
+      "fy3-3"
+    ],
+    "see_also": [
+      "systeemi",
+      "lämpötila",
+      "paine"
+    ],
+    "locked": false
+  },
+  {
     "term": "työ",
     "definition": "Voiman tekemä työ on voiman ja matkan tulo, kun voima on liikkeen suuntainen: W = Fs. Työ siirtää energiaa kappaleesta toiseen, ja sen yksikkö on joule (J).",
     "lessons": [
@@ -93,6 +189,45 @@
     "see_also": [
       "energia",
       "teho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voima",
+    "definition": "Voima kertoo kahden kappaleen välisen vuorovaikutuksen voimakkuuden. Voiman yksikkö on newton (N), ja sen voi mitata voimamittarilla.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "vuorovaikutus",
+      "voimamittari",
+      "newton",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voimamittari",
+    "definition": "Laite, jolla voima mitataan. Siinä on jousi, jonka venymä on suoraan verrannollinen voimaan, ja asteikko merkitään ripustamalla jouseen tunnettuja painoja.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "voima",
+      "newton",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vuorovaikutus",
+    "definition": "Kahden kappaleen vaikutus toisiinsa, esimerkiksi Maan ja kappaleen välinen vetovoima. Vuorovaikutuksen voimakkuutta mitataan voimalla.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "voima",
+      "paino"
     ],
     "locked": false
   }

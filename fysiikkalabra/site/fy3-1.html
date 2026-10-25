@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voima vuorovaikutuksen mittana ja paino G = mg — Fysiikkalabra</title>
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Fysiikkalabra, etusivu"><span class="brand-mark">F</span><span class="brand-name">Fysiikkalabra</span></a>
+  <nav aria-label="Päävalikko"><a href="index.html#moduulit">Moduulit</a><a class="pill" href="../../index.html">← Portfolio</a></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Fysiikkalabra</a> › <a href="FY3.html">FY3</a> › Voima vuorovaikutuksen mittana ja paino G = mg</nav>
+<main class="reading">
+<article><h1>Voima vuorovaikutuksen mittana ja paino G = mg</h1>
+<blockquote>
+<p><strong>Miksi</strong> astronautti painaa Kuussa vain kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään?</p>
+</blockquote>
+<h2>Ydinajatus</h2>
+<p>Kun kaksi kappaletta vaikuttaa toisiinsa, ne ovat vuorovaikutuksessa. Esimerkiksi Maa vetää omenaa puoleensa. Voima kertoo, kuinka voimakas vuorovaikutus on: mitä suurempi voima, sitä voimakkaampi vuorovaikutus. Voiman yksikkö on newton (N), ja noin 1 N on sadan gramman omenan paino Maassa. Tässä vaiheessa kiinnostaa vain voiman suuruus, ja kuvissa nuoli näyttää, mihin suuntaan voima osoittaa.</p>
+<p>Voiman voi mitata voimamittarilla. Siinä on jousi, joka venyy sitä enemmän, mitä suurempi voima siihen vaikuttaa.</p>
+<p>Venymä on suoraan verrannollinen voimaan, kun jousta ei venytetä liikaa: kaksinkertainen voima venyttää jousta kaksinkertaisen matkan. Kuvaaja (voima, venymä) on siis suora, joka kulkee origon kautta, kuten FY1:n lineaarisessa mallissa silloin, kun vakiotermi on nolla. Jos 5,0 N venyttää jousta 2,0 cm, niin 10 N venyttää sitä 4,0 cm ja 2,5 N venyttää sitä 1,0 cm.</p>
+<p>Asteikko kalibroidaan ripustamalla jouseen samanlaisia pieniä kappaleita, joiden paino on kunkin noin 1 N. Yksi kappale venyttää jousta tietyn matkan, ja kohta merkitään 1 N:ksi. Kaksi kappaletta venyttää jousta kaksinkertaisen matkan, ja kohta merkitään 2 N:ksi, ja niin edelleen. Sen jälkeen venymästä voi lukea voiman suoraan newtoneina.</p>
+<p>Kappaleen paino on Maan ja kappaleen välisen vuorovaikutuksen voimakkuuden mitta. Se on voima, ja sen yksikkö on newton. Massa on aivan eri asia: se kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, joten astronautti painaa Kuussa vähemmän.</p>
+<h2>Kaava</h2>
+<p>Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin paljon kuin yksi, joten paino on suoraan verrannollinen massaan:</p>
+<p>$$G = m g$$</p>
+<p>missä G on paino (N), m massa (kg) ja g painovoiman voimakkuus massayksikköä kohti (N/kg). Luku g kertoo, kuinka suuri on yhden kilogramman massan paino: Maan pinnalla g = 9,81 N/kg, joten 1 kg:n massan paino on 9,81 N. Luku 9,81 on sama kuin FY1:n putoamiskiihtyvyys 9,81 m/s². Tällä kurssilla g:lle käytetään yksikköä N/kg, ja syy lukujen yhtäsuuruuteen selviää FY4:ssä. Muualla g on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa (Jupiterilla pilvien yläpinnan tasoa):</p>
+<table>
+<thead>
+<tr>
+<th>Taivaankappale</th>
+<th>g pinnalla (N/kg)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kuu</td>
+<td>1,62</td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>3,71</td>
+</tr>
+<tr>
+<td>Maa</td>
+<td>9,81</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>24,8</td>
+</tr>
+</tbody>
+</table>
+<h2>Esimerkki</h2>
+<p>Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?</p>
+<p><svg viewBox="0 0 600 300" role="img" aria-label="Voimamittari: jousi venyy, kun siihen ripustetaan kappale; paino G osoittaa alas" style="max-width:100%;font-family:system-ui,sans-serif;font-size:20px">
+  <rect x="150" y="20" width="100" height="14" fill="currentColor"/>
+  <polyline points="200,34 200,52 184,60 216,76 184,92 216,108 184,124 216,140 200,148 200,166" fill="none" stroke="currentColor" stroke-width="3"/>
+  <rect x="160" y="166" width="80" height="80" rx="6" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="3"/>
+  <text x="200" y="215" text-anchor="middle" fill="currentColor">m</text>
+  <line x1="280" y1="170" x2="280" y2="258" stroke="currentColor" stroke-width="4"/>
+  <polygon points="280,272 268,250 292,250" fill="currentColor"/>
+  <text x="302" y="228" fill="currentColor">G = m g</text>
+  <text x="302" y="70" fill="currentColor">jousi venyy</text>
+  <text x="302" y="96" fill="currentColor">voiman mukaan</text>
+</svg></p>
+<p>Maassa: $G = m g = 120\,\text{kg} \cdot 9{,}81\,\text{N/kg} \approx 1180\,\text{N}$ eli noin 1,18 kN.</p>
+<p>Marsissa: $G = 120\,\text{kg} \cdot 3{,}71\,\text{N/kg} \approx 445\,\text{N}$.</p>
+<p>Marsissa paino on pienempi, koska Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin.</p>
+<h2>Yleinen virhekäsitys</h2>
+<p>Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on 70 kg ja paino Maassa noin 690 N. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että voimamittari mittaa voimaa, ei massaa: sen lukema muuttuisi, jos se vietäisiin toiseen paikkaan. Kylpyhuonevaaka näyttää silti kilogrammoja, koska se mittaa voimaa ja sen asteikko on tehty Maassa jakamalla voima luvulla 9,81 N/kg. Kuussa tällainen vaaka näyttäisi vain noin kuudesosan massasta.</p>
+<h2>Tiivistelmä</h2>
+<ul>
+<li>Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.</li>
+<li>Paino on voima: $G = m g$. Massa on aineen määrä, ja se on sama kaikkialla.</li>
+<li>$g = 9{,}81\,\text{N/kg}$: yhden kilogramman massan paino Maassa. Kuussa $g = 1{,}62\,\text{N/kg}$ ja Marsissa $3{,}71\,\text{N/kg}$.</li>
+</ul></article>
+<section id="sim"><h2>Simulaatio</h2><div id="sim-root"></div><script src="vendor/p5.min.js"></script><script src="fy3-1-sim.js"></script></section>
+<section id="exercises"><h2>Tehtävät</h2><p class="skip"><a href="#exit">Siirry lähtölippuun ↓</a></p><details class="level"><summary>Taso 1 <span class="count">5 tehtävää</span></summary><ol><li id="fy3-1-L1-01">Kappaleen massa on 4,0 kg. Mikä on sen paino Maassa?<details class="answer"><summary>Vastaus</summary><p>39 N</p></details></li><li id="fy3-1-L1-02">Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan 4,0 N:n paino. Kuinka monta senttimetriä jousi venyy 12 N:n painolla?<details class="answer"><summary>Vastaus</summary><p>6,0 cm</p></details></li><li id="fy3-1-L1-03">Kuun pinnalle jätetyn mittalaitteen massa on 30 kg. Mikä on sen paino Kuussa? Lue g:n arvo oppitunnin taulukosta.<details class="answer"><summary>Vastaus</summary><p>49 N</p></details></li><li id="fy3-1-L1-04">Voimamittarin jousi venyy 3,0 cm, kun siihen ripustetaan 12 N:n paino. Kuinka monta senttimetriä jousi venyy 6,0 N:n painolla?<details class="answer"><summary>Vastaus</summary><p>1,5 cm</p></details></li><li id="fy3-1-L1-05">Kappaleen massa on 2,5 kg. Mikä on sen paino Jupiterissa, missä g = 24,8 N/kg?<details class="answer"><summary>Vastaus</summary><p>62 N</p></details></li></ol></details><details class="level"><summary>Taso 2 <span class="count">4 tehtävää</span></summary><ol><li id="fy3-1-L2-01">Voimamittari näyttää 49 N, kun siihen ripustetaan kappale Maassa. Mikä on kappaleen massa?<details class="answer"><summary>Vastaus</summary><p>5,0 kg</p></details></li><li id="fy3-1-L2-02">Kananmunan massa on 60 g. Mikä on sen paino Maassa newtoneina?<details class="answer"><summary>Vastaus</summary><p>0,59 N</p></details></li><li id="fy3-1-L2-03">Astronautin massa varusteineen on 145 kg. Kuinka paljon pienempi hänen painonsa on Kuussa (g = 1,62 N/kg) kuin Maassa?<details class="answer"><summary>Vastaus</summary><p>1190 N</p></details></li><li id="fy3-1-L2-04">Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa 0,20 kg:n kappale. Kuinka suuri voima venyttää jousta 4,5 cm?<details class="answer"><summary>Vastaus</summary><p>5,9 N</p></details></li></ol></details><details class="level"><summary>Taso 3 <span class="count">3 tehtävää</span></summary><ol><li id="fy3-1-L3-01">Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin (g = 3,71 N/kg). Mitä sama mittari näyttää siellä?<details class="answer"><summary>Vastaus</summary><p>6,8 N</p></details></li><li id="fy3-1-L3-02">Nostaja jaksaa Maassa nostaa korkeintaan 22,0 kg:n massan, eli hän jaksaa tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa (g = 1,62 N/kg) samalla voimalla?<details class="answer"><summary>Vastaus</summary><p>133 kg</p></details></li><li id="fy3-1-L3-03">Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna luvulla 9,81 N/kg. Mittariin ripustetaan Kuussa (g = 1,62 N/kg) kappale, jonka massa on 6,0 kg. Mitä lukemaa mittari näyttää kilogrammoina?<details class="answer"><summary>Vastaus</summary><p>0,99 kg</p></details></li></ol></details></section>
+<section id="exit"><h2>Lähtölippu</h2><ol><li>Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun (g = 1,62 N/kg)?<details class="answer"><summary>Vastaus</summary><p>Massa pysyy 3,0 kg:na. Paino pienenee Maan 29 N:sta Kuun 4,9 N:iin, eli noin kuudesosaan.</p></details></li><li>Voimamittarin jousi venyy 3,0 cm, kun siihen vaikuttaa 8,0 N:n voima. Kuinka paljon jousi venyy 20 N:n voimalla?<details class="answer"><summary>Vastaus</summary><p>7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: 2,5 · 3,0 cm = 7,5 cm.</p></details></li><li>Miksi lause ”painan 70 kiloa” on fysiikan kannalta epätarkka?<details class="answer"><summary>Vastaus</summary><p>Kilogramma on massan yksikkö, mutta paino on voima ja sen yksikkö on newton. Massa 70 kg tarkoittaa noin 690 N:n painoa Maassa.</p></details></li></ol></section>
+</main>
+<footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="FY3.html">← FY3-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>
