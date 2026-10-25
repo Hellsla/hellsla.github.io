@@ -54,7 +54,7 @@ new p5((p) => {
     readout = p.createDiv('').parent('sim-root').class('readout');
     p.createP('Paine lasketaan yhtälöstä pV/T = vakio. Hiukkasten nopeus on verrannollinen √T:hen, kun T on kelvineinä. ' +
               'Kaasun väri kertoo lämpötilan (sininen kylmä, oranssi lämmin; väriasteikko on lämpömittarin vieressä). ' +
-              'Välähdykset ovat hiukkasten törmäyksiä seiniin: mitä tiheämmin ja kovemmin ne osuvat, sitä suurempi paine. ' +
+              'Välähdykset ovat hiukkasten törmäyksiä seiniin: mitä tiheämmin ja kovemmin ne osuvat, sitä suurempi paine on. ' +
               'Isobaarisessa muutoksessa punnus pitää paineen vakiona, isokoorisessa mäntä on lukittu. ' +
               'Kuvaajan haalea viiva on teoria, katkoviiva jatkaa suoraa origoon, siniset pisteet ovat tallennetut mittaukset ja punainen piste on nykyinen tila.')
       .parent('sim-root').class('note');

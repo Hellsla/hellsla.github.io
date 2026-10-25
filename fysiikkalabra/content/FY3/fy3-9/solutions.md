@@ -28,7 +28,7 @@
 **Kaava:** V₁/T₁ = V₂/T₂ (T kelvineinä), josta V₂ = V₁T₂ / T₁
 **Sijoitus:** T₁ = (22 + 273,15) K = 295,15 K ja T₂ = (−18 + 273,15) K = 255,15 K. V₂ = 3,0 l · 255,15 K / 295,15 K = 2,593 l ≈ 2,6 l
 **Vastaus:** 2,6 l
-**Järkevyys:** Pallo kutistuu noin 14 %, mikä näkyy ryppyisenä kumina. Celsiusasteilla laskettu V₂ = 3,0 l · (−18)/22 olisi negatiivinen, mikä on mahdotonta. Siksi lämpötilat ovat kelvineinä.
+**Järkevyys:** Pallo kutistuu noin 14 %, mikä näkyy ryppyisenä kumina. Celsiusasteilla laskettu V₂ = 3,0 l · (−18)/22 olisi negatiivinen, mikä on mahdotonta. Siksi lämpötilat on käytettävä kelvineinä.
 
 ## fy3-9-L1-05
 **Annettu:** p₁ = 101 kPa, θ₁ = 22 °C, θ₂ = −18 °C, tilavuus vakio
@@ -84,7 +84,7 @@
 **Kaava:** p₁/T₁ = p₂/T₂ kokonaispaineelle p = Δp + p₀, josta p₂ = p₁T₂ / T₁ ja lukema Δp₂ = p₂ − p₀
 **Sijoitus:** p₁ = 250 kPa + 101 kPa = 351 kPa, T₁ = 293,15 K ja T₂ = 253,15 K. p₂ = 351 kPa · 253,15 K / 293,15 K = 303,1 kPa. Δp₂ = 303,1 kPa − 101 kPa = 202 kPa
 **Vastaus:** 202 kPa
-**Järkevyys:** Ylipaine ei ole verrannollinen lämpötilaan: lukeman 0 renkaassakin on ilmaa 101 kPa:n paineessa. Lukemalla laskettuna tulos olisi 216 kPa. Lukema laskee lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
+**Järkevyys:** Ylipaine ei ole verrannollinen lämpötilaan: renkaassa, jonka lukema on 0, on silti ilmaa 101 kPa:n paineessa. Lukemalla laskettuna tulos olisi 216 kPa. Lukema laskee lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
 
 ## fy3-9-L3-03
 **Annettu:** sylinterin pituus L₁ = 40,0 cm, p₁ = p₀ = 101 kPa, ylipaine Δp = 300 kPa, lämpötila vakio
