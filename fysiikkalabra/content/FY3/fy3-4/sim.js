@@ -108,33 +108,36 @@ new p5((p) => {
     // obstacle (other text, the dashed lines as thin boxes, the dot, the blue line); text gets a halo as well
     const AREA = [CH.x0 + 3, 598, 2, CH.y0 - 3], PAD = 3;
     const hit = (a, b) => a[0] < b[1] + PAD && b[0] < a[1] + PAD && a[2] < b[3] + PAD && b[2] < a[3] + PAD;
-    const obstacles = { vGuide: [px - 1, px + 1, py, CH.y0], hGuide: [CH.x0, px, py - 1, py + 1], dot: [px - 7, px + 7, py - 7, py + 7] };
+    const obstacles = { vGuide: [px - 1, px + 1, py, CH.y0], hGuide: [CH.x0, px, py - 1, py + 1], dot: [px - 6, px + 6, py - 6, py + 6] };
     if (!overOnly) obstacles.p0line = [CH.x0, CH.x1, y0 - 1, y0 + 1];
+    const used = {};                                         // index of the candidate each label took (for tests)
     const free = (b, skip = []) => b[0] >= AREA[0] && b[1] <= AREA[1] && b[2] >= AREA[2] && b[3] <= AREA[3] &&
       !segHit(b, line, 2 + PAD) && !Object.entries({ ...boxes, ...obstacles }).some(([n, o]) => !skip.includes(n) && hit(b, o));
     const place = (name, t, size, col, cands, skip) => {     // cands: functions (w, ht) -> box; returns false when none is free
       const m = meas(t, size), w = m.l + m.r, ht = m.a + m.d;
-      const b = cands.map((c) => c(w, ht)).find((bb) => free(bb, skip));
+      const i = cands.findIndex((c) => free(c(w, ht), skip)), b = i >= 0 && cands[i](w, ht);
       if (b) say(boxes, name, t, size, col, b[0] + m.l, b[3] - m.d);
+      used[name] = i;
       return !!b;
     };
-    // p₀ label next to the dashed line: below it at the right end, then the left end, then above; the short form "p₀"
-    // when the vertical guide blocks every spot of the long one
+    // p₀ label next to the dashed line: below it at the right end, at the left end, then at other spots along it, then
+    // above it; the short form "p₀" when the guide lines block every spot of the long one
     if (!overOnly) {
-      const ends = [(w, ht) => [CH.x1 - w, CH.x1, y0 + 4, y0 + 4 + ht], (w, ht) => [CH.x0 + 6, CH.x0 + 6 + w, y0 + 4, y0 + 4 + ht],
-                    (w, ht) => [CH.x1 - w, CH.x1, y0 - 4 - ht, y0 - 4], (w, ht) => [CH.x0 + 6, CH.x0 + 6 + w, y0 - 4 - ht, y0 - 4]];
-      place('p0', 'p₀ = 101 kPa', ts(11), 90, ends, ['p0line']) || place('p0', 'p₀', ts(11), 90, ends, ['p0line']);
+      const xs = [(w) => CH.x1 - w, () => CH.x0 + 10];
+      for (let t = 0.25; t < 1; t += 0.25) xs.push((w) => CH.x0 + 10 + t * (CH.x1 - CH.x0 - 10 - w));
+      const spots = [...xs.map((fx) => (w, ht) => [fx(w), fx(w) + w, y0 + 4, y0 + 4 + ht]), ...xs.map((fx) => (w, ht) => [fx(w), fx(w) + w, y0 - 4 - ht, y0 - 4])];
+      place('p0', 'p₀ = 101 kPa', ts(11), 90, spots, ['p0line']) || place('p0', 'p₀', ts(11), 90, spots, ['p0line']);
     }
     // gauge reading next to the point: above-left, above-right, below-right, below-left, right beyond the rising line
     // (kept above the h axis), then down the left side of the chart
-    const g = 8, txt = `${fi(base + pOver, 0)} kPa`;
+    const g = 10, txt = `${fi(base + pOver, 0)} kPa`;
     const cands = [(w, ht) => [px - g - w, px - g, py - g - ht, py - g], (w, ht) => [px + g, px + g + w, py - g - ht, py - g],
       (w, ht) => [px + g, px + g + w, py + g, py + g + ht], (w, ht) => [px - g - w, px - g, py + g, py + g + ht],
       (w, ht) => { const bot = Math.min(py + g + ht, CH.y0 - 4), x = px + Math.max(g, (py - bot + ht + 2 + PAD + 3) / rise); return [x, x + w, bot - ht, bot]; }];
     for (let top = CH.y1; top < CH.y0; top += 8) cands.push((w, ht) => [CH.x0 + 8, CH.x0 + 8 + w, top, top + ht]);
     const placed = place('reading', txt, ts(12), [200, 40, 40], cands, []);
     if (!placed) { const m = meas(txt, ts(12)); say(boxes, 'reading', txt, ts(12), [200, 40, 40], px + g, py - g); }
-    window.simDebug = { boxes, obstacles, line, area: AREA, readingPlaced: placed, k };
+    window.simDebug = { boxes, obstacles, line, area: AREA, used, readingPlaced: placed, k };
   };
 
   // text with a 3-px halo in the background colour (drawn under the fill) and its ink box recorded in boxes[name]
