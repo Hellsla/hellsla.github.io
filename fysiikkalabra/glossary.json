@@ -1,5 +1,17 @@
 [
   {
+    "term": "Avogadron vakio",
+    "definition": "Hiukkasten lukumäärä yhdessä moolissa, N_A = 6,022 · 10²³ 1/mol. Hiukkasmäärä saadaan ainemäärästä kertomalla: N = n · N_A.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "mooli",
+      "ainemäärä"
+    ],
+    "locked": false
+  },
+  {
     "term": "Boylen laki",
     "definition": "Kun suljetun kaasumäärän lämpötila pysyy vakiona, paineen ja tilavuuden tulo on vakio: p₁V₁ = p₂V₂. Paine on siis kääntäen verrannollinen tilavuuteen.",
     "lessons": [
