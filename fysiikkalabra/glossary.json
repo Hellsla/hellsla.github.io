@@ -25,6 +25,18 @@
     "locked": false
   },
   {
+    "term": "faasikaavio",
+    "definition": "Kuvaaja, joka näyttää aineen olomuodon lämpötilan ja paineen mukaan. Sen käyrät ovat sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "olomuoto",
+      "paine"
+    ],
+    "locked": false
+  },
+  {
     "term": "hydrostaattinen paine",
     "definition": "Nesteen omasta painosta syntyvä paine, joka kasvaa syvyyden mukana: ρgh. Se riippuu vain syvyydestä ja nesteen tiheydestä, ei astian muodosta.",
     "lessons": [
@@ -33,6 +45,18 @@
     "see_also": [
       "paine",
       "ilmanpaine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "höyrystymislämpö",
+    "definition": "Ominaishöyrystymislämpö r on lämpömäärä, joka tarvitaan yhden kilogramman höyrystämiseen kiehumispisteessä: Q = rm. Vedelle r = 2260 kJ/kg.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "sulamislämpö",
+      "lämpömäärä"
     ],
     "locked": false
   },
@@ -57,6 +81,18 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kalorimetri",
+    "definition": "Eristetty astia, jossa lämpömääriä mitataan lämpötilan muutoksista. Sillä määritetään esimerkiksi aineen ominaislämpökapasiteetti veden avulla.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpötasapaino",
+      "ominaislämpökapasiteetti"
     ],
     "locked": false
   },
@@ -96,6 +132,18 @@
     "locked": false
   },
   {
+    "term": "lämpenemiskäyrä",
+    "definition": "Kuvaaja, joka esittää aineen lämpötilan siirretyn energian tai ajan funktiona. Nousevat osat ovat lämpenemistä ja vaakasuorat osat olomuodon muutoksia.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "olomuoto",
+      "ominaislämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpö",
     "definition": "Energian siirtymistä kuumemmasta kappaleesta kylmempään lämpötilaeron vuoksi. Lämpö ei ole kappaleen ominaisuus; kappaleella on lämpötila ja sisäenergia.",
     "lessons": [
@@ -108,16 +156,40 @@
     "locked": false
   },
   {
+    "term": "lämpökapasiteetti",
+    "definition": "Lämpömäärä, joka tarvitaan koko kappaleen lämmittämiseen yhdellä kelvinillä: C = cm, yksikkö J/K.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "ominaislämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpömäärä",
     "definition": "Lämpötilaeron vuoksi kappaleesta toiseen siirtyvä energia, symboli Q. Yksikkö on joule (J).",
     "lessons": [
       "fy3-2",
-      "fy3-5"
+      "fy3-5",
+      "fy3-6"
     ],
     "see_also": [
       "energia",
       "työ",
       "joule"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpötasapaino",
+    "definition": "Tila, jossa kosketuksissa olevilla kappaleilla on sama lämpötila eikä lämpöä enää siirry niiden välillä. Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpö",
+      "kalorimetri"
     ],
     "locked": false
   },
@@ -153,6 +225,30 @@
     "see_also": [
       "voima",
       "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "olomuoto",
+    "definition": "Aineen esiintymismuoto: kiinteä, neste tai kaasu. Mikromallissa olomuodot eroavat siinä, kuinka hiukkaset ovat sitoutuneet toisiinsa.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "sulamislämpö",
+      "höyrystymislämpö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaislämpökapasiteetti",
+    "definition": "Lämpömäärä, joka tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä, tunnus c, yksikkö J/(kg·K). Vedellä c = 4190 J/(kg·K).",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpökapasiteetti",
+      "lämpömäärä"
     ],
     "locked": false
   },
@@ -226,6 +322,18 @@
       "lämpömäärä",
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sulamislämpö",
+    "definition": "Ominaissulamislämpö s on lämpömäärä, joka tarvitaan yhden kilogramman sulattamiseen sulamispisteessä: Q = sm. Vedelle s = 334 kJ/kg.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "höyrystymislämpö",
+      "lämpömäärä"
     ],
     "locked": false
   },

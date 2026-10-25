@@ -57,7 +57,7 @@ def nbsp_units(text):
 
 def fi(x):
     """Numbers with a decimal comma in page text (JSON keeps the point)."""
-    return str(x).replace(".", ",") if isinstance(x, (int, float)) else str(x)
+    return str(x).replace(".", ",").replace("-", "−") if isinstance(x, (int, float)) else str(x)   # true minus sign
 
 
 def esc(s): return _h.escape(str(s), quote=True)
