@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e854342069b55ac8
+CONTENT-HASH: 9edd63389d0a681d
 
 ## Blocking
 
 ## Polish
-- exercises.json:98 (fy3-1-L3-03) — I hold to this item. Asking for the number is fair, but lesson.md:50 already says "noin kuudesosan". 6,0 kg / 6 = 1,0 kg is within 1 % of 0,99, so it is inside the tolerance. The student only reads one sentence and never combines the Earth calibration with the Moon's g, so the task is level 1–2 work. — Keep the scale context and the numeric answer, but use a body whose ratio the lesson does not state, and turn the task round: "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna arvolla 9,81 m/s². Marsissa (g = 3,71 m/s²) mittari näyttää 26 kg. Mikä on kappaleen massa?" answers.py: 26 · 9,81 / 3,71 = 68,75, answer 69 kg, tolerance 0,02.
+- exercises.json:82 (fy3-1-L3-01) — Now that L3-03 is a Mars task, all three level-3 tasks come down to the same step, m · g₁ / g₂ (L3-01 18 · 3,71/9,81, L3-02 22,0 · 9,81/1,62, L3-03 26 · 9,81/3,71). L3-01 is the closest to L3-03, since both go from an Earth-based reading to Mars. None of the three uses the spring idea from lesson.md:8. — Change L3-01 so that it combines the proportional stretch with G = mg on another body: "Voimamittarin jousi venyy Maassa 4,0 cm, kun siihen ripustetaan 0,50 kg:n kappale. Marsissa (g = 3,71 m/s²) samaan jouseen ripustetaan toinen kappale, ja jousi venyy 6,0 cm. Mikä on kappaleen massa?" answers.py: 0,50 · 9,81 · 6,0/4,0 / 3,71 = 1,983, so the answer is 2,0 kg with tolerance 0,02.
 
 ## Checked
-- The hash was the same at the start and at the end. The lint reports 0 errors and 0 warnings.
-- Last round's paragraph-split item (lesson.md:8) is withdrawn because the editor asked for the merge. The paragraph still adds one idea at a time.
-- lesson.md:38: the kuudesosa sentence closes the line 3 hook with the table value.
-- lesson.md:22: the Moon sentence names size and mass. It is accessible and consistent with the table, and the exact wording belongs to the physics-expert.
-- exercises.json:30: the new L1-04 data (4,0 N ↔ 2,5 cm, 6,0 cm gives 9,6 N) no longer reuses the lesson.md:8 spring. It is one proportion, so level 1 fits.
-- exit-ticket.json: q1 now gives the interaction reason, q2 tests proportional stretch, and q3 quotes "vesi painaa" for the 1,5 kg of water. All three test core ideas.
-- putoamiskiihtyvyys is in glossary.json and meta.json, and its definition matches lesson.md:29. Every meta.json term exists in glossary.json.
-- I recomputed all 12 exercise answers and the 3 exit-ticket answers (29 → 4,9 N; 7,5 cm; 15 N). They match answers.py and the data's significant figures.
-- Levels are 5/4/3 and follow the rubric (L3-03 aside). No exercise repeats the 120 kg robot example.
-- Scope is FY3: there is no N/kg, no vectors and no force as a cause of motion. 1 N = 1 kg·m/s² is deferred to FY4.
+- The hash was 9edd63389d0a681d at the start and at the end. The lint reports 0 errors and 0 warnings.
+- exercises.json:98 L3-03 now uses my wording. The lesson gives no Mars/Earth ratio, so the student has to combine the Earth calibration with Mars's g. That is real level-3 work. 26 · 9,81/3,71 = 68,75 → 69 kg, and 69 is 0,4 % off, which is inside the tolerance.
+- lesson.md:22: the reworded Moon sentence (smaller body, weaker interaction) uses only ideas the lesson has already taught. It sets up the table without stating a ratio early.
+- lesson.md:38: "≈ 0,17 ≈ 1/6" shows the step from the table value to the line 3 hook, so the student sees where "kuudesosa" comes from.
+- lesson.md:50: the bathroom-scale paragraph prepares the student for L3-03 without giving its answer away.
+- I re-ran answers.py and it matches all 12 answers. The exit-ticket values check out: 29 N → 4,9 N, 7,5 cm and 15 N.
+- Levels are 5/4/3 and follow the rubric. L2-04 has two steps (weight, then proportion). No exercise repeats the 120 kg robot example.
+- exit-ticket.json: q1 tests mass vs weight with the interaction reason, q2 tests proportional stretch, and q3 tests kg vs N. All three test core ideas, not details.
+- Every meta.json glossary term, including voimamittari and putoamiskiihtyvyys, exists in glossary.json.
+- Scope is FY3: there is no N/kg, no vectors and no force as a cause of motion. 1 N = 1 kg·m/s² is deferred to FY4 (lesson.md:29).
