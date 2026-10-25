@@ -11,7 +11,7 @@
     {
       "id": "fy3-6-L1-02",
       "level": 1,
-      "text": "Valurautainen paistinpannu, jossa on rautaa 2,4 kg, nostetaan liedeltä mökin pöydälle. Pannun lämpötila laskee 220 °C:sta 25 °C:seen. Kuinka suuren lämpömäärän pannu luovuttaa ympäristöön? Anna vastaus kilojouleina.",
+      "text": "Valurautainen paistinpannu, jonka massa on 2,4 kg, nostetaan liedeltä mökin pöydälle. Pannun lämpötila laskee 220 °C:sta 25 °C:seen. Kuinka suuren lämpömäärän pannu luovuttaa ympäristöön? Anna vastaus kilojouleina.",
       "answer": 210,
       "unit": "kJ",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-6-L1-04",
       "level": 1,
-      "text": "Mökin paljussa on 1200 kg vettä. Yön aikana vesi jäähtyy 38 °C:sta 31 °C:seen. Kuinka suuri on veden lämpömäärä Q? Anna vastaus etumerkkeineen megajouleina (negatiivinen Q tarkoittaa, että vesi luovuttaa lämpöä).",
+      "text": "Mökin paljussa on 1200 kg vettä. Yön aikana vesi jäähtyy 38 °C:sta 31 °C:seen. Kuinka suuri on veteen siirtyvä lämpömäärä Q? Anna vastaus etumerkkeineen megajouleina (negatiivinen Q tarkoittaa, että vesi luovuttaa lämpöä).",
       "answer": -35,
       "unit": "MJ",
       "tolerance": 0.02
