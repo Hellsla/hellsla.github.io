@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e390340fc253a339
+CONTENT-HASH: 69ae26d6b93fc889
 
 ## Blocking
 
 ## Polish
-- (Reused, round 3; file lines unchanged) solutions.md L1-03 Järkevyys — "18 g, mikä on tavallisen patruunan koko": common automatic-lifejacket cartridges hold about 24–38 g CO₂, so 18 g is on the small side; "pienen patruunan koko" or drop the claim.
-- (Reused, round 3) solutions.md L2-01 Järkevyys — at 288 K and about 180 bar attraction dominates (Z < 1); an optional "vetovoima on tässä hallitseva" would make the direction self-explanatory. Not an error.
+- lesson.md:14 (Ydinajatus SVG): helium/air arrow length ratio is 2,0, but √(29/4) ≈ 2,7. The direction is right. Optional: shorten the air arrows to about 10 px.
+- (Reused; file unchanged) solutions.md L1-03 Järkevyys: "18 g … tavallisen patruunan koko". Typical cartridges hold 24–38 g; use "pienen".
+- (Reused) solutions.md L2-01 Järkevyys: optionally add that attraction dominates at 288 K and 180 bar (Z < 1).
 
 ## Checked
-- Hash e390340fc253a339 at start and end (round-3 PASS was 69d12376298ae428).
-- New, sim.js ~L231: the only change wraps the "asteikko mukautuu" label in `if (k <= 1.5)`. Inside, it measures 'p/p' at the current ts(13) size and sets ts(10) only for this label; the bar loop that follows sets its own text sizes. No state, measurement, scaling or particle variable is touched, so the physics cannot change.
-- New, screenshot fy3-10-sim-1280.png: label "asteikko mukautuu" present beside p/p_ref; bars 0,99 / 1,00, ticks 0–2,5, dashed reference at 1, ratio strip 0,99.
-- New, screenshot fy3-10-sim-360.png: label absent, p/p_ref no longer collides with the tank; bars, ticks, reference line, gauge, ratio strip and legend otherwise as at 1280.
-- Reused (round 2, files unchanged): all 12 answers recomputed with independent formulas; answers.py, exercises.json and mine agree within 0,5 % (tolerance 2 %).
-- Reused: exit ticket (0,601 mol), worked example (0,2073 mol, 0,829 g, air 6,01 g, 24,1 l/mol), SVG numbers, solution side-checks, formulas, conditions and FY3 scope.
-- Reused: sim.js physics p = NkT/A, P_REF from it; Playwright 8 slider states ratio 0,95–1,05; 300-window statistics (N = 20 sd 5,5 %, N = 100 sd 2,5 %).
-- Reused (round 3): lesson.md reference state N = 100, T = 300 K, V = 100 % matches sim.js; volume change isothermal in code (velocities never scaled); L2-01 real-gas comment (Z ≈ 0,94–0,95, ~6 % high) defensible; sim note text correct, including the adaptive-scale sentence that now carries the message on phones.
+- The hash was 69ae26d6b93fc889 at both the start and the end.
+- Ydinajatus SVG (new): 12 particles in each balloon (equal n). The labels n, m = 0,83 g and 6,0 g match the worked example. The aria-label claim is correct: same T, same mean kinetic energy, so v ∝ 1/√m.
+- Kaava SVG (new): 2N has 12 particles and the same arrow length; 2T has 6 particles with arrows √2 longer (1,42); V/2 has gas height 74 of 148 px. The labels p, 2p, 2p, 2p agree with pV = nRT, and the LaTeX symbols are correct.
+- sim.js speed (new): each frame advances deltaTime·speed of simulated time; tAvg and pMeasured use simulated time.
+- Playwright, 4 s real time per speed: 0,25× gives tAvg 1,0 s and ratio 0,975; 0,5× gives 2,0 s and 1,000; 1× gives 2,03 s and 0,988. The default is 0,5. The change event sets simState.speed.
+- Playwright at 0,25× with N = 20: the 2 s window filled in 8,0 s of real time. Twelve readings had sd 3,8 %. In 200 independent windows the sd was 5,0 % at N = 20 and 2,5 % at N = 100. So "±10 %" (≈ 2σ) holds.
+- Lisätietoja (new): measured/predicted = (p/p_ref)/[(N/100)(T/300)/V_rel] = (pV/NT)/(p_ref V_ref/N_ref T_ref), which is correct. "Nopeus muuttaa vain tahtia" is confirmed above.
+- Reused (all unchanged): 12 answers within 0,5 %, solutions, exit ticket, worked example, formulas and FY3 scope.
+- Reused: the sim physics p = NkT/A, the isothermal volume change and the reference state (lesson.md:196).

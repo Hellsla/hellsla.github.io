@@ -18,9 +18,9 @@ A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simu
 - Every exercise has `answer`, `unit` and `tolerance`; the data carries the significant figures the answer should have, and a student rounding to them stays inside the tolerance. `answers.py` computes every answer.
 
 ## Lesson form (human decisions 2026-10-25, every lesson)
-1. **Visualise.** `## Ydinajatus` and `## Kaava` each have at least one inline SVG figure next to the paragraph it explains; no paragraph over about 120 words.
+1. **Visualise.** `## Ydinajatus` and `## Kaava` each have at least one inline SVG figure next to the paragraph it explains; formulas and symbols inside figures are LaTeX (`foreignObject`, NOTES.md §3); no paragraph over about 120 words.
 2. **Solve symbolically first, then substitute** values with units, in the worked example and every solution.
-3. **Simulations are visually rich, not slider-rich.** Keep the controls; spend the effort on the picture, motion, meaningful colour, labels, a legend.
+3. **Simulations are visually rich, not slider-rich.** Keep the physics controls; spend the effort on the picture, motion, meaningful colour, labels, a legend. Every animated sim has a speed control (hidas · normaali · nopea) and only labels and values on the canvas; explanations go behind a "Lisätietoja" button under it.
 4. **Worked examples are staged**: 3–6 stages separated by `<!-- vaihe -->` lines, each with a bold lead-in and one step; the page reveals them one at a time.
 NOTES.md says how to write each; `scripts/lint_lesson.py` checks what it can.
 

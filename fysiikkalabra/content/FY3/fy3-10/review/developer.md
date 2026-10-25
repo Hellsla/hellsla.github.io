@@ -1,10 +1,7 @@
 VERDICT: DONE
 
-Correction pass, four items. check_lesson.py fy3-10: lint, latex, build, sims (34 assertions, sweep at 360/390/1280 px), layout 360 px all ok.
+Teacher items only; no exercise, answer, formula or prose changed.
 
-- lesson.md (line 148): the p/p_ref sentence now names the reference state (N = 100 hiukkasta, T = 300 K, V = 100 %; p/p_ref = 1, value 2 = twice the reference pressure).
-- sim.js: note under the canvas gains the clause that changing the volume leaves particle speeds, and so the temperature, unchanged. "mikä on normaalia tilastoa" became "(tilastollista vaihtelua)". The note also gains the sentence "Pylväiden asteikko mukautuu arvoihin: vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa." The note is about 77 words, slightly over the 75-word target because both required additions were kept.
-- sim.js drawing: added the label "asteikko mukautuu" (ts(10), via lab()) on the axis-name row, left of "p/p ref". A first placement below the axis name collided with the bar value labels in the sweep, so it moved.
-- solutions.md, fy3-10-L2-01 Järkevyys: Z removed. The new text says the molecules are close together at 180 bar, size and attraction matter, the ideal-gas equation gives about 6 % too high a pressure, the result is an estimate, and the answer 180 bar stands.
-
-No exercise, answer, answers.py, figure, formula or exit ticket changed.
+- lesson.md: both inline SVGs redrawn (viewBox 600×300, currentColor with opacity tints). Ydinajatus: two shaded glass balloons, the same 12 particle positions in each, motion arrows (helium arrows longer); labels n = 0,21 mol, m = 0,83 g / 6,0 g and "sama p, T" in KaTeX foreignObjects, "helium"/"ilma" as text. Kaava: four shaded cylinders with pistons, particles with arrows (2N twice as many, 2T longer arrows); N, T, V / 2N / 2T / V/2 and p / 2p in LaTeX. aria-labels updated.
+- sim.js: select "Nopeus" (hidas 0,25×, normaali 0,5× default, nopea 1×) after the sliders; physics advances dt·speed, the 2 s average runs on simulated time; `speed` in simState. Kept "Nollaa mittaus" first in .controls (the DOM-order assertion and NOTES §4 want the main button first). Long note moved into details.note "Lisätietoja"; "asteikko mukautuu" removed from the canvas; readout cut to three lines (state line dropped, it is in the slider labels).
+- tests/sims/fy3-10.json: select options/default, speed values, details, three-line readout, ratio at 0,25× after 4 s real time (tol 0,15), pace check; readout assertions retargeted to the new text, none loosened.

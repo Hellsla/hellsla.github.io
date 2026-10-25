@@ -1,19 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: e390340fc253a339
+CONTENT-HASH: 69ae26d6b93fc889
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:200 — optionally write p/p_ref with a subscript ($p_\text{ref}$) in the lesson, as the canvas does.
-- exit-ticket.json item 3 — still tests only p ∝ T; "entä jos tilavuus puolitetaan?" would cover the V side too (carried from round 2).
+- sim, "Lisätietoja" — small grey summary below three readout lines; on a phone it is easy to scroll past. Consider a slightly larger or bolder summary ("Lisätietoja: mitä kuva näyttää").
+- Details text (about 110 words, one block) — split into 2-3 short sentences groups or bullets: model note, how to read the bars, speed note. Also "keskiarvo 0,6 s:n ajalta" right after load looks odd; the text only explains 2 s.
+- At 360 px the canvas labels (dial "p", legend, "osuma seinään") are about 9-10 px; legible but small. Not clipped.
+- lesson.md:200 — optionally write $p_\text{ref}$ with subscript (carried over).
+- exit-ticket item 3 tests only p ∝ T; add "entä jos tilavuus puolitetaan?" (carried over).
 
 ## Checked
-- Round-3 polish (label at 360 px) resolved: fy3-10-sim-360.png and sim-390.png show no "asteikko mukautuu" label, nothing hidden or clipped, tank wall clear; fy3-10-sim-1280.png shows the label under the dial, legible, not overlapping the p/p_ref text or the tank.
-- Note under the canvas, read at 360 px in preview/fy3-10.html: still explains the reference state (N = 100, T = 300 K, V = 100 % = 1,00), that V does not change T, and the changing bar scale; phones lose only the redundant label, the note carries the explanation. No horizontal scroll (scrollWidth 360).
-- Reference-state sentence (lesson.md:200), "volume leaves temperature unchanged" clause, L2-01 solution wording: reused from round 3.
-- Learning path, opening balloon question, figures, paragraph lengths, staged example (5 stages, symbolic first): reused from round 2.
-- Exercises 5/4/3 match the rubric, none repeats the example, L3 asks for reasoning: reused from round 2.
-- Finnish grammar, glossary terms, case after number and unit: reused from rounds 2-3; text files unchanged.
-- Slider end-point behaviour and sim readouts (N, T, V extremes): reused from round 2.
-- Hash at start and end of review identical (e390340fc253a339).
+- Ydinajatus figure (390/360 crops fy3-10-rev5-360-fig0.png): two balloons, "sama p, T", n and m under each, longer arrows on light helium particles; LaTeX labels crisp, no overlap or clipping. Clearly better than before and answers the opening question visually.
+- Kaava figure (fig1): four cylinders N,T,V / 2N / 2T / V/2 with p and 2p below; piston and particles clear; labels legible at 360 px, nothing clipped.
+- Sim at 360, 390, 1280 px (fy3-10-rev5-<w>-default/open.png): no horizontal scroll; canvas, dial, bar chart, legend readable; controls stacked on phone, grid on desktop; readout three lines.
+- Speed select: hidas 0,25× / normaali 0,5× (default) / nopea 1×; default motion is followable, nopea at T = 600 K is fast but usable; the text states speed changes only the pace.
+- "Lisätietoja" closed by default, opens on click, text covers reference state, averaging, scatter, temperature unchanged by V, bar scale; enough to interpret the picture.
+- Finnish of labels, options ("Nopeus", "normaali (0,5×)") and details text: correct, no change needed.
+- Lesson text, exercises, solutions, exit ticket: reused from the earlier pass (exercises 5/4/3, symbolic first, staged example).
+- Hash at start and end identical (69ae26d6b93fc889).
