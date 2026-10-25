@@ -2,13 +2,13 @@
 Prints {exercise id: number} as JSON on the last line; the lint and the gate compare it with exercises.json."""
 import json
 
-g = {"Maa": 9.81, "Kuu": 1.62, "Mars": 3.71, "Jupiter": 24.8}   # N/kg, the lesson's table
+g = {"Maa": 9.81, "Kuu": 1.62, "Mars": 3.71, "Jupiter": 24.8}   # m/s², the lesson's table
 a = {}
 # Level 1: G = m g, and the stretch of a spring is proportional to the force
 a["fy3-1-L1-01"] = 4.0 * g["Maa"]                 # 39,24 N -> 39 N
 a["fy3-1-L1-02"] = 2.0 * 12 / 4.0                 # 6,0 cm
 a["fy3-1-L1-03"] = 30 * g["Kuu"]                  # 48,6 N -> 49 N
-a["fy3-1-L1-04"] = 3.0 * 6.0 / 12                 # 1,5 cm
+a["fy3-1-L1-04"] = 5.0 * 3.0 / 2.0                # force proportional to stretch: 7,5 N
 a["fy3-1-L1-05"] = 2.5 * g["Jupiter"]             # 62 N
 # Level 2: one rearrangement or one conversion
 a["fy3-1-L2-01"] = 49 / g["Maa"]                  # m = G / g = 4,99 kg -> 5,0 kg

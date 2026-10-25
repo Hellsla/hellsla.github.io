@@ -9,7 +9,7 @@
     "expr": "window.simState.g",
     "expected": 9.81,
     "tol": 1e-06,
-    "note": "default body is Maa with g = 9,81 N/kg"
+    "note": "default body is Maa with g = 9,81 m/s² (first assertions run on the untouched page)"
   },
   {
     "expr": "window.simState.G",
@@ -25,6 +25,7 @@
     "note": "5 kg on Kuu (g = 1,62) -> G = 8,1 N"
   },
   {
+    "setup": "const s=document.querySelector('#sim-root select'); s.value='Jupiter'; document.querySelector('#sim-root input[type=range]').value=5;",
     "expr": "window.simState.m",
     "expected": 5,
     "tol": 0,
@@ -46,10 +47,10 @@
   },
   {
     "setup": "document.querySelector('#sim-root select').value='Maa'; document.querySelector('#sim-root input[type=range]').value=10;",
-    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('G = m · g = 98,1 N') && x.includes('g = 9,81 N/kg') ? 1 : 0 })()",
+    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('G = m · g = 98,1 N') && x.includes('g = 9,81 m/s²') ? 1 : 0 })()",
     "expected": 1,
     "tol": 0,
-    "note": "readout is DOM text: m = 10 kg, g = 9,81 N/kg, G = 98,1 N"
+    "note": "readout is DOM text: m = 10 kg, g = 9,81 m/s², G = 98,1 N"
   },
   {
     "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select option')].map(x=>x.textContent); return o.join(',')==='Kuu,Mars,Maa,Jupiter' ? 1 : 0 })()",
@@ -122,7 +123,7 @@
     "expr": "new Promise(f => setTimeout(() => f(window.simState.chartFull), 250))",
     "expected": 248,
     "tol": 1e-06,
-    "note": "bar chart full scale is this mass on Jupiter: 10 kg · 24,8 N/kg"
+    "note": "bar chart full scale is this mass on Jupiter: 10 kg · 24,8 m/s²"
   },
   {
     "setup": "const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); s.value='Maa'; r.value=10; s.dispatchEvent(new Event('change')); r.dispatchEvent(new Event('input'));",
@@ -139,14 +140,29 @@
     "note": "bar heights keep the ratio of the g values: Kuu / Maa = 1,62 / 9,81"
   },
   {
+    "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=77; r.dispatchEvent(new Event('input'));",
     "expr": "new Promise(f => setTimeout(() => f(Math.abs(window.simState.bars[2] - 220 * 9.81 / 24.8) < 0.01 ? 1 : 0), 250))",
     "expected": 1,
     "tol": 0,
-    "note": "the Maa bar is 9,81/24,8 of full height, independent of the mass"
+    "note": "the Maa bar is 9,81/24,8 of full height, independent of the mass (checked at 77 kg)"
+  },
+  {
+    "setup": "const s=document.querySelector('#sim-root select'), r=document.querySelector('#sim-root input[type=range]'); s.value='Jupiter'; r.value=100; s.dispatchEvent(new Event('change')); r.dispatchEvent(new Event('input'));",
+    "expr": "new Promise(f => setTimeout(() => f(window.simState.arrow), 250))",
+    "expected": 110,
+    "tol": 1e-06,
+    "note": "spec: the arrow is 110 px at full scale (100 kg on Jupiter, 2480 N)"
+  },
+  {
+    "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=2; r.dispatchEvent(new Event('input'));",
+    "expr": "new Promise(f => setTimeout(() => f(document.querySelector('#sim-root .readout').textContent.includes('asteikko 0–49,6 N') ? 1 : 0), 250))",
+    "expected": 1,
+    "tol": 0,
+    "note": "readout scale for 2 kg is 2 · 24,8 = 49,6 N (one decimal below 100 N)"
   },
   {
     "setup": "const s=document.querySelector('#sim-root select'); s.value='Mars'; document.querySelector('#sim-root input[type=range]').value=20;",
-    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return window.simState.body==='Mars' && x.includes('g = 3,71 N/kg (Mars)') && x.includes('G = m · g = 74,2 N') ? 1 : 0 })()",
+    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return window.simState.body==='Mars' && x.includes('g = 3,71 m/s² (Mars)') && x.includes('G = m · g = 74,2 N') ? 1 : 0 })()",
     "expected": 1,
     "tol": 0,
     "note": "Mars: body name, g and G in the readout (20 kg · 3,71 = 74,2 N)"
@@ -156,7 +172,7 @@
     "expr": "new Promise(f => setTimeout(() => f(window.simState.chartFull), 250))",
     "expected": 992,
     "tol": 1e-06,
-    "note": "bar chart full scale follows the mass: 40 kg · 24,8 N/kg"
+    "note": "bar chart full scale follows the mass: 40 kg · 24,8 m/s²"
   },
   {
     "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=40; r.dispatchEvent(new Event('input'));",

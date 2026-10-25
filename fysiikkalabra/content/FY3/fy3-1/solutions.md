@@ -7,12 +7,12 @@
 **Järkevyys:** 1 kg:n massan paino on noin 10 N, joten 4,0 kg:n massan paino on noin 40 N.
 
 ## fy3-1-L1-02
-**Annettu:** 4,0 N → 2,0 cm, kysytty venymä painolla 12 N
+**Annettu:** kappaleen paino 4,0 N → venymä 2,0 cm; toisen kappaleen paino 12 N
 **Kysytty:** venymä x
 **Kaava:** venymä on suoraan verrannollinen voimaan, x / 2,0 cm = 12 N / 4,0 N
 **Sijoitus:** x = 2,0 cm · 12 N / 4,0 N = 6,0 cm
 **Vastaus:** 6,0 cm
-**Järkevyys:** Paino on kolminkertainen, joten venymäkin on kolminkertainen.
+**Järkevyys:** Jousta venyttävä voima on kolminkertainen, joten venymäkin on kolminkertainen.
 
 ## fy3-1-L1-03
 **Annettu:** m = 30 kg, g_Kuu = 1,62 m/s² (luettu oppitunnin taulukosta)
@@ -20,15 +20,15 @@
 **Kaava:** G = m g
 **Sijoitus:** G = 30 kg · 1,62 m/s² = 48,6 N
 **Vastaus:** 49 N
-**Järkevyys:** Maassa laite painaisi noin 294 N, joten Kuussa paino on noin kuudesosa.
+**Järkevyys:** Maassa laitteen paino olisi noin 294 N, joten Kuussa paino on noin kuudesosa.
 
 ## fy3-1-L1-04
-**Annettu:** 12 N → 3,0 cm, kysytty venymä voimalla 6,0 N
-**Kysytty:** venymä x
-**Kaava:** venymä on suoraan verrannollinen voimaan, x / 3,0 cm = 6,0 N / 12 N
-**Sijoitus:** x = 3,0 cm · 6,0 N / 12 N = 1,5 cm
-**Vastaus:** 1,5 cm
-**Järkevyys:** Voima puolittuu, joten venymäkin puolittuu.
+**Annettu:** 5,0 N → venymä 2,0 cm; kysytty voima, jolla venymä on 3,0 cm
+**Kysytty:** voima F
+**Kaava:** venymä on suoraan verrannollinen voimaan, F / 5,0 N = 3,0 cm / 2,0 cm
+**Sijoitus:** F = 5,0 N · 3,0 cm / 2,0 cm = 7,5 N
+**Vastaus:** 7,5 N
+**Järkevyys:** Venymä on 1,5-kertainen, joten voimakin on 1,5-kertainen.
 
 ## fy3-1-L1-05
 **Annettu:** m = 2,5 kg, g = 24,8 m/s²
@@ -44,7 +44,7 @@
 **Kaava:** G = m g, joten m = G / g
 **Sijoitus:** m = 49 N / 9,81 m/s² = 4,995 kg
 **Vastaus:** 5,0 kg
-**Järkevyys:** Yhden kilogramman paino on noin 10 N, joten 49 N vastaa noin 5 kg:n massaa.
+**Järkevyys:** 1 kg:n massan paino on noin 10 N, joten 49 N vastaa noin 5 kg:n massaa.
 
 ## fy3-1-L2-02
 **Annettu:** m = 60 g = 0,060 kg, g = 9,81 m/s²
