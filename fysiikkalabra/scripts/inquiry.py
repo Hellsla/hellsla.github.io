@@ -204,7 +204,7 @@ def experiment_html(a, md, lid):
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
-            f'data-vary="{esc(a["vary"])}" data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
+            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([names.get(k, k) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
             f'<div class="intro">{md(a["intro"])}</div>'
             f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {nm(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">Aseta alkutila</button><button type="button" class="exp-record">Kirjaa mittaus</button>'
