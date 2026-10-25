@@ -27,7 +27,7 @@
     {
       "id": "fy3-8-L1-04",
       "level": 1,
-      "text": "Kesämökin saunan katolla on musta 200 litran säiliö, josta lasketaan suihkuvesi. Aamulla vesi on 12 °C:sta, ja iltapäivällä aurinko on lämmittänyt sen 32 °C:seen. Veden tilavuuden lämpötilakerroin on γ = 0,21 · 10⁻³ 1/K. Kuinka monta litraa veden tilavuus kasvaa?",
+      "text": "Kesämökin saunan katolla on musta 200 litran säiliö, josta lasketaan suihkuvesi. Aamulla veden lämpötila on 12 °C, ja iltapäivällä aurinko on lämmittänyt sen 32 °C:seen. Veden tilavuuden lämpötilakerroin on γ = 0,21 · 10⁻³ 1/K. Kuinka monta litraa veden tilavuus kasvaa?",
       "answer": 0.84,
       "unit": "l",
       "tolerance": 0.02
