@@ -13,6 +13,7 @@ It also runs the lesson's `answers.py` when present (`python -I answers.py` prin
 """
 import json, pathlib, re, subprocess, sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 NUM = r"[−-]?\d+(?:,\d+)?"
@@ -25,8 +26,8 @@ class Lint:
 
     def err(self, f, line, msg): self.errors += 1; self.out.append(f"ERROR {f}:{line} {msg}")
     def form(self, f, line, msg):
-        """A human lesson-form rule (CLAUDE.md). An error for one lesson (the gate, agents); in --all, published
-        lessons written before the rule report it without failing CI until they are reworked and republished."""
+        """A human lesson-form rule (CLAUDE.md). An error for one lesson (the developer, the reviewers); in --all,
+        legacy lessons written before the rule report it without failing CI until they are reworked."""
         self.form_errors += 1; self.err(f, line, msg)
     def warn(self, f, line, msg): self.out.append(f"WARN  {f}:{line} {msg}")
 
@@ -275,11 +276,10 @@ def check_meta(L, folder):
     f = folder / "meta.json"
     meta = json.loads(f.read_text())
     lid = folder.name
-    for k in ("id", "course", "title", "goals", "prerequisites", "glossary", "sim", "status"):
+    for k in ("id", "course", "title", "goals", "prerequisites", "glossary", "sim"):
         if k not in meta: L.err("meta.json", 1, f"missing {k}")
     if meta.get("id") != lid: L.err("meta.json", 1, f"id {meta.get('id')!r} does not match folder {lid!r}")
     if meta.get("course") != folder.parent.name: L.err("meta.json", 1, "course does not match the folder")
-    if meta.get("status") not in ("draft", "reviewed"): L.err("meta.json", 1, f"status {meta.get('status')!r} is not draft or reviewed")
     if meta.get("solutions", "first") not in ("first", "all", "none"): L.err("meta.json", 1, "solutions must be first, all or none")
     glossary = {e["term"] for e in json.loads((ROOT / "glossary.json").read_text())}
     for term in meta.get("glossary", []):
@@ -350,12 +350,12 @@ if __name__ == "__main__":
     for folder in folders:
         L = lint(folder)
         rel = folder.relative_to(ROOT) if folder.is_relative_to(ROOT) else folder
-        draft = json.loads((folder / "meta.json").read_text()).get("status") != "reviewed"
-        note = " (draft: errors do not fail --all, the pipeline fixes them before publication)" if args[0] == "--all" and draft and L.errors else ""
+        state = review_status(folder)["state"]
+        note = " (draft: errors do not fail --all, the developer fixes them before review)" if args[0] == "--all" and state == "draft" and L.errors else ""
         print(f"== {rel}: {L.errors} error(s), {len(L.out) - L.errors} warning(s){note}")
         for line in L.out: print("  " + line)
-        if args[0] == "--all" and not draft and L.form_errors:
-            print(f"  ({L.form_errors} lesson-form finding(s) in a published lesson: rework and republish it; they do not fail --all)")
+        if args[0] == "--all" and state == "legacy" and L.form_errors:
+            print(f"  ({L.form_errors} lesson-form finding(s) in a legacy lesson: they do not fail --all until it is reworked)")
             bad += L.errors - L.form_errors
-        elif not (args[0] == "--all" and draft): bad += L.errors
+        elif not (args[0] == "--all" and state == "draft"): bad += L.errors
     sys.exit(1 if bad else 0)

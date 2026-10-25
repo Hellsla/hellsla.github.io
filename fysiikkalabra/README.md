@@ -1,64 +1,52 @@
-# Fysiikkalabra — Claude Code scaffold
+# Fysiikkalabra
 
-A Fysiklabbet-style teaching site (theory + simulations + exercises) built with Claude Code and a team of agents (13 active, 4 parked in `.claude/parked/`).
-It lives in the `fysiikkalabra/` folder of the `hellsla.github.io` repository.
+A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
+written and reviewed with Claude Code agents, served by GitHub Pages from the committed `site/` folder at
+`https://hellsla.github.io/fysiikkalabra/site/`. House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
 
 ## Quick start
 ```bash
 cd fysiikkalabra
 pip install markdown playwright && playwright install chromium
-python scripts/lint_lesson.py fy3-2  # mechanical rules from NOTES.md, answers.py vs exercises.json; exits 1 on an ERROR
-python scripts/build.py              # site/ from reviewed lessons only (committed, published)
-python scripts/build.py fy3-2        # preview/fy3-2.html regardless of status (git-ignored)
-python scripts/build.py --all        # preview/ with every lesson, drafts included (what CI runs)
-python scripts/test_sims.py          # Playwright over every built simulation (preview/ if present, else site/)
-python scripts/check_latex.py content/FY3/fy3-2   # KaTeX parse check (uses vendored katex, no npm)
-python scripts/screenshot.py fy3-2   # review/fy3-2-390.png and -1280.png
-claude                               # open Claude Code in this folder
+python scripts/check_lesson.py fy3-9     # lint, LaTeX, preview build, simulation tests, 360 px layout, review state
+python scripts/build.py fy3-9            # preview/fy3-9.html (git-ignored), any lesson
+python scripts/build.py --all            # preview/ with every lesson, drafts included (what CI tests)
+python scripts/build.py                  # site/ from the lessons whose reviews are current (atomic; commit it)
+python scripts/reviews.py status         # reviewed | legacy | draft for every lesson, and why
+python scripts/test_reviews.py           # tests of the publishing rule
 ```
-If the pip `playwright` version does not match an already installed browser, point the scripts at it:
-`PW_CHROMIUM=/path/to/chrome python scripts/test_sims.py`.
+If the pip `playwright` version does not match the installed browser: `PW_CHROMIUM=/path/to/chrome python scripts/test_sims.py`.
 
-Inside Claude Code:
-```
-/build-lesson fy3-2        # draft one lesson with you, then run producers + reviewers
-/review-lesson fy3-2       # reviewers only, on an existing lesson
-```
-Agents live in `.claude/agents/`, commands in `.claude/commands/`, house rules in `CLAUDE.md`.
-Nothing is published unless `meta.json` says `"status": "reviewed"`.
+Inside Claude Code, `/lesson fy3-9` runs one lesson through the pipeline: the **developer** (Sonnet) writes or
+fixes, `check_lesson.py` must pass, the **science-reviewer** (Opus) and the **pedagogy-reviewer** (Sonnet) judge it
+independently, fixes and re-reviews for at most three rounds, then a pull request with a teacher summary and the
+token usage. Agents live in `.claude/agents/`, the command in `.claude/commands/`.
 
-## Libraries and CI
-p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build,
-so pages and headless tests work without a CDN. `.github/workflows/fysiikkalabra-ci.yml` (at the repository
-root) builds all lessons and runs the sim and LaTeX checks on every push that touches this folder.
+## The publishing rule
+`scripts/reviews.py` decides what is on the site: a lesson is **reviewed** when `review/science.md` and
+`review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash ignores only
+line endings, trailing whitespace, blank-line runs and JSON layout; any other edit stales both reviews. A **legacy**
+lesson (`review/legacy.md`, written by `reviews.py legacy <id>` in the migration) was published before the
+pipeline and stays visible, labelled as a prototype, until a content edit retires the marker. Everything else
+is a **draft** and never reaches `site/`.
 
-## Publishing
-`hellsla.github.io` serves GitHub Pages straight from the repository root, so the committed `site/` folder is
-the live site: `https://hellsla.github.io/fysiikkalabra/site/`. To publish, set a lesson's `status` to
-`reviewed`, run the plain `python scripts/build.py`, and commit `site/`. Drafts never reach `site/`:
-previews and the CI build go to the git-ignored `preview/`.
+Merging a pull request is the teacher's publication decision. CI (`.github/workflows/fysiikkalabra-ci.yml`)
+lints every lesson, builds all previews, runs the review tests, the simulation tests and the LaTeX check,
+rebuilds `site/` and fails if the committed copy differs, and checks every published page at 360 px. A lesson
+whose reviews went stale is left out of the build with a WARNING (a CI annotation), never silently.
 
-## Curriculum and sources
-`curriculum.json` covers FY1–FY8 with module goals, central contents, transversal competences and a proposed
-lesson-slot list per module, generated from the LOPS 2019 texts in `docs/lops2019/` (PDF + extracted text).
-The slot list is a proposal: reorder or rename before drafting. The reference lesson in `content/_gold/` is
-`fy4-4` Newtonin toinen laki; the first draft is `content/FY3/fy3-2/` Työ ja energia.
+## Libraries
+p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build; fonts
+are self-hosted. Pages and headless tests work without a CDN.
 
-## Automatic publishing (no human in between)
-```
-/publish-lesson fy3-3     # reviewers -> fixer on FAIL -> reviewers again (max 3 rounds) -> publisher
-python scripts/gate.py fy3-3            # check only; writes review/gate.md
-python scripts/gate.py fy3-3 --publish  # what the publisher agent runs
-python scripts/test_gate.py             # the gate's own tests
-```
-A lesson is published only when all required reviewers wrote `VERDICT: PASS` with the current `CONTENT-HASH` of the files they judge
-(`gate.py --hash <id> --for <reviewer>`), the lesson structure is valid, and the lint, `answers.py`, LaTeX, build and simulation checks pass. Editing the lesson afterwards changes the hash
-and CI (`gate.py --verify`) fails until the review runs again, unless the lesson was reopened with `gate.py <id> --reopen`: then the live page in `site/` is kept exactly as published (and verified by hash) while the source is revised, and the next `--publish` replaces it. The publisher commits to the working branch only; merging
-into `main`, which makes the page live, stays a repository decision.
+## Curriculum
+`curriculum.json` covers FY1–FY8 with module goals, central contents and a proposed lesson-slot list per
+module, generated from the LOPS 2019 texts in `docs/lops2019/`. The reference lesson is `content/_gold/`.
 
 ## Exercise schema
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }
 ```
-`answers.py` in the lesson folder computes every answer and prints `{id: value}`; the lint and the gate compare it with this file.
-The page lets the student type an answer and checks it within `tolerance` in the browser. `meta.solutions` (`first`, `all`, `none`) decides which worked solutions are rendered.
+`answers.py` in the lesson folder computes every answer and prints `{id: value}`; the lint compares it with
+`exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
+`meta.solutions` (`first`, `all`, `none`) decides which worked solutions are rendered.

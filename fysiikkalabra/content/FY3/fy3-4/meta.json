@@ -20,9 +20,5 @@
     "ylipaine"
   ],
   "sim": true,
-  "image": false,
-  "status": "reviewed",
-  "reviewed_by": "gate (automaattinen tarkistus)",
-  "reviewed_on": "2026-10-25",
-  "reviewed_hash": "d8939044c25d967f"
+  "image": false
 }

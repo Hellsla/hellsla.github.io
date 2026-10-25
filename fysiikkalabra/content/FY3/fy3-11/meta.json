@@ -24,8 +24,5 @@
     "lauhdevoimalaitos"
   ],
   "sim": true,
-  "image": false,
-  "status": "draft",
-  "reviewed_by": "",
-  "reviewed_on": ""
+  "image": false
 }

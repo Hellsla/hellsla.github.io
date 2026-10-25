@@ -17,9 +17,5 @@
     "absoluuttinen nollapiste"
   ],
   "sim": true,
-  "image": false,
-  "status": "reviewed",
-  "reviewed_by": "gate (automaattinen tarkistus)",
-  "reviewed_on": "2026-10-25",
-  "reviewed_hash": "536cade809f2b051"
+  "image": false
 }
