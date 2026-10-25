@@ -88,7 +88,10 @@ new p5((p) => {
     const title = 'Sama massa, paino eri paikoissa', titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
     p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(12));
-    p.fill(60); p.textSize(ts(11)); p.text(`asteikko 0 – ${fi(chartFull, chartFull < 100 ? 1 : 0)} N (tämä massa Jupiterissa)`, BARS.x + BARS.w / 2, BARS.y + ts(2));
+    p.fill(60); p.textSize(ts(11));                               // scale line, shrunk to fit like the title
+    const scaleText = `asteikko 0–${fi(chartFull, chartFull < 100 ? 1 : 0)} N (paino Jupiterissa)`;
+    if (p.textWidth(scaleText) > titleMax) p.textSize(ts(11) * titleMax / p.textWidth(scaleText));
+    p.text(scaleText, BARS.x + BARS.w / 2, BARS.y + ts(2));
   };
 
   const fi = (x, d) => x.toFixed(d).replace('.', ',');         // Finnish decimal comma

@@ -44,7 +44,7 @@
 **Kaava:** G = m g, joten m = G / g
 **Sijoitus:** m = 49 N / 9,81 N/kg = 4,995 kg
 **Vastaus:** 5,0 kg
-**Järkevyys:** Noin 10 N painaa yhtä kilogrammaa, joten 49 N vastaa noin 5 kg.
+**Järkevyys:** Yhden kilogramman paino on noin 10 N, joten 49 N vastaa noin 5 kg:n massaa.
 
 ## fy3-1-L2-02
 **Annettu:** m = 60 g = 0,060 kg, g = 9,81 N/kg
@@ -52,7 +52,7 @@
 **Kaava:** G = m g
 **Sijoitus:** G = 0,060 kg · 9,81 N/kg = 0,5886 N
 **Vastaus:** 0,59 N
-**Järkevyys:** Noin 100 g painaa 1 N, joten 60 g painaa noin 0,6 N.
+**Järkevyys:** Noin 100 g:n kappaleen paino on 1 N, joten 60 g:n kappaleen paino on noin 0,6 N.
 
 ## fy3-1-L2-03
 **Annettu:** m = 145 kg, g_Maa = 9,81 N/kg, g_Kuu = 1,62 N/kg
