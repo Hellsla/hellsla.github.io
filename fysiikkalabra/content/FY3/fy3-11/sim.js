@@ -5,12 +5,11 @@
 //     Energy is conserved: Pin = Puse + Pheat + Pwaste. Total efficiency ηtot = (Puse + Pheat)/Pin = η + h.
 //   heat pump: electric power Pel in, heat delivered inside Pout = cop·Pel (cop = lämpökerroin), heat taken from the
 //     outdoor air Pambient = Pout − Pel, so Pel + Pambient = Pout: the pump moves heat, it does not create energy.
-// Drawing: every arrow's width is proportional to its power. The total (Pin, or Pout for the pump) gets the full width W,
-// so the diagram always fills its area; the key in the header prints the scale. Colours carry meaning: hot fuel red,
-// electricity/work yellow, useful heat orange-red, waste heat and outdoor heat cool blue. Each label sits beside the end
-// of its arrow, in a slot at least as tall as the label, so thin flows keep readable labels. eta, etaTotal in percent.
-// p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame and window.simDebug
-// with the ink box of every canvas text (for overlap checks).
+// Drawing: arrow width ∝ power; the total (Pin, or Pout for the pump) gets the full width W, so the diagram always fills
+// its area, and the header key prints the scale. Colours: hot fuel red, electricity/work yellow, useful heat orange-red,
+// waste and outdoor heat cool blue. Each label sits beside its arrow end in a slot at least as tall as the label, so thin
+// flows keep readable labels. eta, etaTotal in percent. p5.js 1.9 instance mode, 600×400 canvas inside #sim-root.
+// Exposes window.simState every frame and window.simDebug with the ink box of every canvas text (overlap checks).
 new p5((p) => {
   const CAP = 95;                                                      // CHP: electricity + district heat ≤ 95 % of fuel
   const XA = 140, XI = 152, BX0 = 196, BX1 = 336, XC = 384, XH = 396, YB = 394, GAP = 8;   // x stations of the diagram (px)
@@ -23,15 +22,12 @@ new p5((p) => {
   let sel, sP, lP, sE, lE, sH, lH, sC, lC, readout, mode = '', last = 'eta', t = 0, k = 1, boxes = {};
 
   const slider = (parent, min, max, val, step) => {
-    const label = p.createElement('label').parent(parent);
-    const span = p.createSpan('').parent(label);
-    const s = p.createSlider(min, max, val, step).parent(label);
-    return [s, span];
+    const label = p.createElement('label').parent(parent), span = p.createSpan('').parent(label);
+    return [p.createSlider(min, max, val, step).parent(label), span];
   };
   const preset = () => {                                               // a new situation gets its typical values
     mode = sel.value(); last = 'eta';
-    const m = MODES[mode], [a, b, st, v] = m.P;
-    sP.elt.min = a; sP.elt.max = b; sP.elt.step = st; sP.value(v);
+    const m = MODES[mode], [a, b, st, v] = m.P; sP.elt.min = a; sP.elt.max = b; sP.elt.step = st; sP.value(v);
     if (m.eta) sE.value(m.eta); sH.value(m.heat || 0); if (m.cop) sC.value(m.cop);
   };
 
@@ -39,22 +35,16 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    const ls = p.createElement('label').parent(controls);
-    p.createSpan('Tilanne').parent(ls);
-    sel = p.createSelect().parent(ls);
+    const ls = p.createElement('label').parent(controls); p.createSpan('Tilanne').parent(ls); sel = p.createSelect().parent(ls);
     for (const [v, m] of Object.entries(MODES)) sel.option(m.text || v, v);
     sel.elt.addEventListener('change', preset);
-    [sP, lP] = slider(controls, 100, 2000, 1000, 10);                  // syötetty teho (MW tai kW)
-    [sE, lE] = slider(controls, 10, 60, 40, 1);                        // hyötysuhde η (%)
-    [sH, lH] = slider(controls, 0, 65, 55, 1);                         // kaukolämmön osuus (%)
-    [sC, lC] = slider(controls, 1.5, 5, 3, 0.1);                       // lämpökerroin
-    sE.elt.addEventListener('input', () => { last = 'eta'; });
-    sH.elt.addEventListener('input', () => { last = 'heat'; });
+    [sP, lP] = slider(controls, 100, 2000, 1000, 10); [sE, lE] = slider(controls, 10, 60, 40, 1);   // input power, η (%)
+    [sH, lH] = slider(controls, 0, 65, 55, 1); [sC, lC] = slider(controls, 1.5, 5, 3, 0.1);          // district heat share (%), cop
+    sE.elt.addEventListener('input', () => { last = 'eta'; }); sH.elt.addEventListener('input', () => { last = 'heat'; });   // CHP cap moves the other one
     p.createP('Nuolen leveys on verrannollinen tehoon. Kokonaisteho täyttää aina koko kaavion, joten asteikko vaihtuu; ' +
               'se näkyy kankaan ylälaidassa. Yhteistuotannossa sähkön ja kaukolämmön osuus on yhteensä enintään 95 %.')
       .parent('sim-root').class('note');
-    preset();
-    p.textFont('Arial');
+    preset(); p.textFont('Arial');
   };
 
   p.draw = () => {
@@ -93,16 +83,15 @@ new p5((p) => {
 
     // layout: header (scale key + legend, wrapped into rows), then the widest W for which every slot fits
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
-    const ts = (x) => Math.round(x * k), total = S.sumIn, fh = ts(11), rowH = Math.max(20, Math.round(fh * 1.6));
-    const v = nice(total / 12), keyT = `${fv(v)} ${u}`, legend = [...ins, ...outs];
+    const ts = (x) => Math.round(x * k), total = S.sumIn, fh = ts(11), rowH = Math.max(30, Math.round(fh * 1.6));
+    const v = nice(total / 8), keyT = `${fv(v)} ${u}`, legend = [...ins, ...outs];
     boxes = {}; p.textSize(fh); p.textStyle(p.NORMAL);
     let hx = 8, row = 0;
     const pos = [['key', p.textWidth('Asteikko:') + 22 + p.textWidth(keyT)], ...legend.map((f) => [f, fh + 6 + p.textWidth(f[0])])]
       .map(([it, w]) => { if (hx + w > 592 && hx > 8) { hx = 8; row++; } const r = [it, hx, row]; hx += w + ts(14); return r; });
     const YT = 10 + (row + 1) * rowH, fz = ts(13), LI = ins.map((f) => lab(f, XA - 12, fz)), LO = outs.map((f) => lab(f, 160, fz));
     const need = (fl, L, w) => fl.reduce((s, f, i) => s + Math.max(f[1] / total * w, L[i].h), 0) + GAP * (fl.length - 1);
-    let W = 210;
-    while (W > 60 && Math.max(need(ins, LI, W), need(outs, LO, W), W + 24) > YB - YT) W -= 2;
+    let W = 210; while (W > 60 && Math.max(need(ins, LI, W), need(outs, LO, W), W + 24) > YB - YT) W -= 2;
     const sc = W / total, yc = (YT + YB) / 2;
     const slots = (fl, L) => {                                         // label slots stacked around the centre line
       const hs = fl.map((f, i) => Math.max(f[1] * sc, L[i].h)), T = hs.reduce((a, b) => a + b, 0) + GAP * (fl.length - 1);
@@ -123,19 +112,13 @@ new p5((p) => {
     // header: scale key (a bar as wide as v) and the colour legend
     for (const [it, x, r] of pos) {
       const cy = 4 + rowH * (r + 0.5), by = cy + fh * 0.36;
-      if (it === 'key') {
-        say('key', 'Asteikko:', fh, x, by, 'l');
-        const bx = boxes.key[1] + 8; p.fill(90); p.noStroke(); p.rect(bx, cy - v * sc / 2, 6, v * sc);
-        say('keyValue', keyT, fh, bx + 14, by, 'l');
-      } else {
-        p.fill(it[2]); p.stroke(80); p.strokeWeight(1); p.rect(x, cy - fh / 2, fh, fh, 2);
-        say(`leg-${it[0]}`, it[0], fh, x + fh + 6, by, 'l');
-      }
+      if (it !== 'key') { p.fill(it[2]); p.stroke(80); p.strokeWeight(1); p.rect(x, cy - fh / 2, fh, fh, 2); say(`leg-${it[0]}`, it[0], fh, x + fh + 6, by, 'l'); continue; }
+      say('key', 'Asteikko:', fh, x, by, 'l');
+      const bx = boxes.key[1] + 8; p.fill(90); p.noStroke(); p.rect(bx, cy - v * sc / 2, 6, v * sc); say('keyValue', keyT, fh, bx + 14, by, 'l');
     }
     lines.push(`Asteikko: nuolen leveys on verrannollinen tehoon, kokonaisteho ${n(total)} on koko kaavion levyinen ja avainpalkki on ${fv(v)} ${u}.`);
     readout.html(lines.join('<br>'));
-    const labels = [...ins.map((f) => `${f[0]} ${n(f[1])}`), ...outs.map((f) => `${f[0]} ${n(f[1])}`)];
-    window.simState = { mode, unit: u, ...S, scale: sc, scaleKey: v, bandTotal: W, labels };
+    window.simState = { mode, unit: u, ...S, scale: sc, scaleKey: v, bandTotal: W, labels: [...LI, ...LO].map((L) => L.lines.join(' ')) };
     window.simDebug = { boxes, k, W, YT };
   };
 
@@ -146,12 +129,9 @@ new p5((p) => {
       const [xa, ya] = keys[i - 1], [xb, yb] = keys[i], s = Math.min(1, Math.max(0, (x - xa) / (xb - xa)));
       return ya + (yb - ya) * s * s * (3 - 2 * s); } };
     const xa = keys[0][0], xb = keys[keys.length - 1][0], xs = [];
-    for (let x = xa; x < xb; x += 3) xs.push(x);
-    xs.push(xb);
-    if (w < 0.8) {
-      p.noFill(); p.stroke(col); p.strokeWeight(1.5); p.drawingContext.setLineDash([4, 4]);
-      p.beginShape(); xs.forEach((x) => p.vertex(x, top(x))); p.endShape(); p.drawingContext.setLineDash([]); return xb + 4;
-    }
+    for (let x = xa; x < xb; x += 3) xs.push(x); xs.push(xb);
+    if (w < 0.8) { p.noFill(); p.stroke(col); p.strokeWeight(1.5); p.drawingContext.setLineDash([4, 4]);
+      p.beginShape(); xs.forEach((x) => p.vertex(x, top(x))); p.endShape(); p.drawingContext.setLineDash([]); return xb + 4; }
     const hl = Math.min(30, 10 + w / 5), e = Math.min(8, 3 + w / 10), yt = top(xb);
     p.fill(col); p.stroke(col.map((c) => c * 0.7)); p.strokeWeight(1);
     p.beginShape(); xs.forEach((x) => p.vertex(x, top(x)));
@@ -168,8 +148,7 @@ new p5((p) => {
   }
   // a label: name (wrapped to maxW, the font shrinks if one word does not fit) and the value in bold on its own line
   function lab([name, P], maxW, size) {
-    const unit = MODES[mode].unit;
-    for (;; size--) {
+    for (const unit = MODES[mode].unit; ; size--) {
       p.textSize(size); p.textStyle(p.NORMAL); const lines = [];
       for (const wd of name.split(' ')) { const tt = lines.length ? `${lines[lines.length - 1]} ${wd}` : wd;
         if (lines.length && p.textWidth(tt) <= maxW) lines[lines.length - 1] = tt; else lines.push(wd); }
@@ -215,9 +194,9 @@ new p5((p) => {
     grad(METAL, 0, ty - 0.17 * h, 0, ty + 0.17 * h, (c) => { c.moveTo(x0 + 60, ty - 0.08 * h); c.lineTo(x0 + 98, ty - 0.16 * h); c.lineTo(x0 + 98, ty + 0.16 * h); c.lineTo(x0 + 60, ty + 0.08 * h); c.closePath(); });
     p.stroke(60, 60, 70, 150); p.strokeWeight(1.5);                     // turbine blades sweep by
     for (let j = 0; j < 4; j++) { const xx = x0 + 61 + ((t * 50 + 9.5 * j) % 36), hh = 0.08 * h + (xx - x0 - 60) / 38 * 0.08 * h; p.line(xx, ty - hh + 2, xx, ty + hh - 2); }
-    p.stroke(80); p.strokeWeight(4); p.line(x0 + 98, ty, x0 + 104, ty);
-    grect(x0 + 104, ty - 0.13 * h, x1 - x0 - 106, 0.26 * h, [[170, 130, 30], [245, 210, 90], [170, 130, 30]]);
-    bolt(x0 + 104 + (x1 - x0 - 106) / 2, ty, 0.1 * h);
+    p.stroke(80); p.strokeWeight(4); p.line(x0 + 98, ty, x0 + 104, ty); grect(x0 + 104, ty - 0.13 * h, x1 - x0 - 106, 0.26 * h, [[170, 130, 30], [245, 210, 90], [170, 130, 30]]);
+    const gx = x0 + 104 + (x1 - x0 - 106) / 2, s = 0.1 * h; p.fill(255, 250, 220); p.stroke(120, 90, 0); p.strokeWeight(1);   // lightning bolt
+    p.beginShape(); for (const [a, b] of [[0.2, -1], [-0.5, 0.15], [0, 0.15], [-0.2, 1], [0.5, -0.15], [0, -0.15]]) p.vertex(gx + a * s, ty + b * s); p.endShape(p.CLOSE);
     grect(x0 + 58, cy, x1 - x0 - 60, y1 - cy - 2, [[150, 155, 165], [110, 115, 125]]);
     const sy = chp ? cy + 0.45 * (y1 - cy) : cy + 8;                    // CHP: upper part heats district-heating water
     if (chp) grect(x0 + 62, cy + 4, x1 - x0 - 68, sy - cy - 8, [[250, 170, 90], [225, 105, 40]]);
@@ -241,12 +220,9 @@ new p5((p) => {
       grect(cx + 1, py, cw - 2, 14, METAL, true, 2);
       p.stroke(200); p.strokeWeight(3); p.line(cx + cw / 2, py + 14, cx + cw / 2, eb - 8);
     }
-    p.stroke(200); p.strokeWeight(4); p.line(ex + 4, eb - 8, ex + ew - 4, eb - 8);
-    grad([[200, 200, 210], [90, 92, 100]], x1 - 20 - fr, fy - fr, x1 - 20 + fr, fy + fr, (c) => c.arc(x1 - 20, fy, fr, 0, 2 * Math.PI));
-    p.stroke(50); p.strokeWeight(2);
-    for (let j = 0; j < 3; j++) { const a = 5 * t + j * 2.094; p.line(x1 - 20, fy, x1 - 20 + fr * Math.cos(a), fy + fr * Math.sin(a)); }
-    p.noStroke();
-    for (let j = 0; j < 3; j++) { const s = ((t * 0.8 + j / 3) % 1); p.fill(160, 150, 145, 160 * (1 - s)); p.circle(x1 - 30 + 30 * s, eb - 0.12 * h - 8 * s, 6 + 12 * s); }
+    p.stroke(200); p.strokeWeight(4); p.line(ex + 4, eb - 8, ex + ew - 4, eb - 8); grad([[200, 200, 210], [90, 92, 100]], x1 - 20 - fr, fy - fr, x1 - 20 + fr, fy + fr, (c) => c.arc(x1 - 20, fy, fr, 0, 2 * Math.PI));
+    p.stroke(50); p.strokeWeight(2); for (let j = 0; j < 3; j++) { const a = 5 * t + j * 2.094; p.line(x1 - 20, fy, x1 - 20 + fr * Math.cos(a), fy + fr * Math.sin(a)); }
+    p.noStroke(); for (let j = 0; j < 3; j++) { const s = ((t * 0.8 + j / 3) % 1); p.fill(160, 150, 145, 160 * (1 - s)); p.circle(x1 - 30 + 30 * s, eb - 0.12 * h - 8 * s, 6 + 12 * s); }
   }
   // air-source heat pump: outdoor unit with a fan, refrigerant pipes through the wall, indoor unit releasing warm air
   function heatPump(x0, y0, x1, y1) {
@@ -262,11 +238,6 @@ new p5((p) => {
     p.noFill(); p.stroke(225, 90, 50, 150); p.strokeWeight(1.5);         // warm air rising beside the indoor unit
     for (let j = 0; j < 2; j++) { p.beginShape(); for (let y = y1 - 6; y > y0 + 6; y -= 3) p.vertex(ix - 8 - 8 * j + 3 * Math.sin(y / 9 + 4 * t + j), y); p.endShape(); }
   }
-  function bolt(x, y, s) {
-    p.fill(255, 250, 220); p.stroke(120, 90, 0); p.strokeWeight(1);
-    p.beginShape(); for (const [a, b] of [[0.2, -1], [-0.5, 0.15], [0, 0.15], [-0.2, 1], [0.5, -0.15], [0, -0.15]]) p.vertex(x + a * s, y + b * s); p.endShape(p.CLOSE);
-  }
-
   const nice = (x) => { const e = 10 ** Math.floor(Math.log10(x)); return [5, 2.5, 2, 1].map((c) => c * e).find((c) => c <= x * (1 + 1e-9)); };
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');                    // Finnish decimal comma and minus sign
   const fs = (x) => (Math.abs(x) < 1e-9 ? '0' : fi(x, Math.max(0, 2 - Math.floor(Math.log10(Math.abs(x)) + 1e-9))));   // 3 significant figures

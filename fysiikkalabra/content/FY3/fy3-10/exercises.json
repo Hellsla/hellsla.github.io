@@ -45,9 +45,9 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "Ensihoitoauton happipullon tilavuus on 10,0 l. Täydessä pullossa hapen paine on 200 bar (1 bar = 100 kPa), ja autotallissa lämpötila on 15 °C. Kuinka monta kilogrammaa happea pullossa on? Hapen moolimassa on 32 g/mol. Käytä arvoa R = 8,31 J/(mol·K) ja oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
-      "answer": 2.7,
-      "unit": "kg",
+      "text": "Ensihoitoauton happipullon painemittari on rikki. Pullon tilavuus on 10,0 l, ja punnitsemalla selviää, että pullossa on 2,40 kg happea. Autotallissa lämpötila on 15 °C. Mikä on hapen paine pullossa baareina (1 bar = 100 kPa)? Hapen moolimassa on 32,0 g/mol. Käytä arvoa R = 8,31 J/(mol·K) ja oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
+      "answer": 180,
+      "unit": "bar",
       "tolerance": 0.02
     },
     {
@@ -87,9 +87,9 @@
     {
       "id": "fy3-10-L3-02",
       "level": 3,
-      "text": "Uusissa ikkunoissa lasien välinen tila täytetään usein argonilla, koska argon johtaa lämpöä huonommin kuin ilma. Ikkunan eristyslasielementin välitilan tilavuus on 12,0 l, ja se täytetään 101 kPa:n paineessa ja 20 °C:n lämpötilassa. Kuinka monta grammaa raskaampi argontäytteinen elementti on kuin samanlainen ilmatäytteinen? Argonin moolimassa on 40 g/mol ja ilman 29 g/mol, ja R = 8,31 J/(mol·K). Perustele, miksi argonia ja ilmaa mahtuu välitilaan yhtä monta moolia.",
-      "answer": 5.5,
-      "unit": "g",
+      "text": "Uusissa ikkunoissa lasien välinen tila täytetään usein argonilla, koska argon johtaa lämpöä huonommin kuin ilma. Eristyslasielementin lasit ovat 1,20 m × 1,00 m. Valmistajan mukaan argontäyte tekee elementistä 6,0 g raskaamman kuin ilmatäyte, kun välitila täytetään 101 kPa:n paineessa ja 20 °C:n lämpötilassa. Kuinka paksu lasien välinen kaasukerros on? Argonin moolimassa on 40 g/mol ja ilman 29 g/mol, ja R = 8,31 J/(mol·K). Anna vastaus millimetreinä.",
+      "answer": 11,
+      "unit": "mm",
       "tolerance": 0.02
     },
     {
