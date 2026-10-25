@@ -108,9 +108,9 @@ new p5((p) => {
     [sN, lN] = slider(controls, 20, 200, 100, 10);               // hiukkasmäärä N
     [sT, lT] = slider(controls, 100, 600, 300, 10);              // lämpötila T (K)
     [sV, lV] = slider(controls, 25, 100, 100, 5);                // tilavuus V (% täydestä)
-    p.createP('Hiukkaset törmäävät vain seiniin, eivät toisiinsa. Paine lasketaan seiniin osuvista törmäyksistä ' +
-              'keskiarvona 2 s:n ajalta, joten mitattu arvo heiluu hieman. Oikea seinä liikkuu, kun tilavuutta muutetaan. ' +
-              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 %, jossa paine on 1,00.')
+    p.createP('Tasomalli: pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin. Paine on seiniin osuvien törmäysten ' +
+              'keskiarvo 2 s:n ajalta, joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 %, mikä on normaalia tilastoa. ' +
+              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00).')
       .parent('sim-root').class('note');
     window.simAdvance = (s) => { sync(); advance(s); return update().pMeasured; };
     window.simRestart = () => { restart(); update(); };

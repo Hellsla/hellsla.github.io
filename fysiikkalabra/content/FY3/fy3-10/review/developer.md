@@ -1,9 +1,10 @@
 VERDICT: DONE
 
-Checked lesson.md, solutions.md, exercises.json, answers.py, exit-ticket.json against the rules: 5 staged steps, SVG figures with aria-label in Ydinajatus and Kaava, paragraphs under 120 words, symbolic-first solutions, thin-space units, \textsf{l}, 5/4/3 exercises, answers.py matches every answer. No changes needed there; no answer changed.
+Polish pass, eight items, nothing else changed.
 
-sim.js: added a `lab(s, x, y, align)` helper that draws each canvas text with p.text and records {s, x0, y0, x1, y1} (from textWidth, textAscent, textDescent and alignment); every canvas text goes through it, and `window.simState.labels` carries the array every frame. Drawing, physics and controls are unchanged. Position fixes after test_sims.py reported clipping and overlaps:
-- bottom texts ("osuma seinään", "V = …") baseline 394 -> 388 (clipped at the canvas bottom);
-- ratio level moved down (yL = yT + 8 + ts(14)) so "mitattu/ennuste" no longer overlaps "0,8" and "1,2" at 360 px;
-- bar area top BAR.y1 130 -> 165 so bar value labels clear the "p/pref" axis name.
-test_sims.py fy3-10: PASS, labels checked at 360, 390, 1280 px.
+- solutions.md (L2-01 Järkevyys): added sentence that at 180 bar oxygen is non-ideal (Z ≈ 0,94), so the result is an estimate.
+- lesson.md: sim paragraph now says collisions do not change the pressure "keskimäärin", and that the sim shows p/p_ref (not pascals) with N standing for the amount of gas; `<!-- sim -->` placed right after it. Ydinajatus: mole and Avogadron vakio merged into one sentence. Sanity-check stage: "Kemiasta tuttu moolitilavuus" replaced by "Yksi mooli kaasua vie huoneenlämmössä ja normaalipaineessa noin 24 litraa".
+- sim.js: note under the canvas only; now mentions plane model (pinta-ala vastaa tilavuutta) and the about ±10 % swing at N ≈ 20; under 60 words.
+- exit-ticket.json item 3: replaced by the T-doubling pressure question with answer.
+
+No exercise, answer, answers.py, figure, formula or sim drawing/controls touched. check_lesson.py: all ok.

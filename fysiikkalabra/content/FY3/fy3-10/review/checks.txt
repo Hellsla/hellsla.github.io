@@ -3,4 +3,4 @@ ok   latex
 ok   build
 ok   sims
 ok   layout 360 px
-fy3-10: draft (science=missing, pedagogy=missing)
+fy3-10: draft (science=stale, pedagogy=stale)
