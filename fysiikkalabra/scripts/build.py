@@ -41,9 +41,24 @@ def render_md(text, **kw):
     return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html)
 
 
+UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|kN|N|kg|g|km|cm²|cm|mm|m³|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
+
+
+def nbsp_units(text):
+    """A non-breaking space between a number and its unit in page text, so '9,81 m/s²' never breaks at the
+    line end on a phone. Maths is stashed first, so LaTeX spacing is untouched."""
+    maths = []
+    def stash(m):
+        maths.append(m.group(0)); return f"MATHTOKEN{len(maths) - 1}X"
+    text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
+    text = re.sub(rf"(?<=\d) (?={UNIT}(?![\wäöå²³/]))", "\u00a0", text)
+    text = re.sub(r"(?<=\S) = (?=[\d−\-+(])", "\u00a0=\u00a0", text)   # "s = 0,15 m" never breaks at the equals sign
+    return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], text)
+
+
 def fi(x):
     """Numbers with a decimal comma in page text (JSON keeps the point)."""
-    return str(x).replace(".", ",") if isinstance(x, (int, float)) else str(x)
+    return str(x).replace(".", ",").replace("-", "−") if isinstance(x, (int, float)) else str(x)   # true minus sign
 
 
 def esc(s): return _h.escape(str(s), quote=True)
@@ -70,12 +85,12 @@ def solutions_of(folder):
     out = {}
     for block in re.split(r"^## ", f.read_text(), flags=re.M)[1:]:
         head, _, body = block.partition("\n")
-        out[head.strip()] = render_md(body.strip(), extensions=["nl2br"])
+        out[head.strip()] = nbsp_units(render_md(body.strip(), extensions=["nl2br"]))
     return out
 
 
 def exercise_html(e, solution_html):
-    ans = f"{fi(e['answer'])} {e.get('unit', '')}".strip()
+    ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
     check = ""
     if numeric:
@@ -85,7 +100,7 @@ def exercise_html(e, solution_html):
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + '<button type="submit">Tarkista</button><output aria-live="polite"></output></form>')
     sol = f'<details class="solution"><summary>Ratkaisu</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
-    return (f'<li id="{e["id"]}"><p class="task">{e["text"]}</p>{check}'
+    return (f'<li id="{e["id"]}"><p class="task">{nbsp_units(e["text"])}</p>{check}'
             f'<details class="answer"><summary>Vastaus</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -95,6 +110,9 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     meta = json.loads((folder / "meta.json").read_text())
     if only and meta["id"] != only: continue
     if meta.get("status") != "reviewed" and not (only or build_all): continue   # publish only reviewed lessons
+    missing = [f for f in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json") if not (folder / f).exists()]
+    if missing:                                      # a draft still being written: skip it instead of failing the whole build
+        print("skipped", meta["id"], "(missing " + ", ".join(missing) + ")"); continue
     ex = json.loads((folder / "exercises.json").read_text())
     publish = meta.get("solutions", "first")
     solutions = solutions_of(folder) if publish != "none" else {}
@@ -107,10 +125,10 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
         ex_html += "</ol></details>"
     exit_q = json.loads((folder / "exit-ticket.json").read_text())
     exit_html = "<h2>Lähtölippu</h2><ol>" + "".join(
-        f"<li>{q['q']}<details class=\"answer\"><summary>Vastaus</summary><p>{q['a']}</p></details></li>"
+        f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>Vastaus</summary><p>{nbsp_units(q['a'])}</p></details></li>"
         for q in exit_q) + "</ol>"
     lesson_md = (folder / "lesson.md").read_text()
-    lesson_html = render_md(lesson_md)
+    lesson_html = nbsp_units(render_md(lesson_md))
     sim = ""
     if (folder / "sim.js").exists():
         shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js")

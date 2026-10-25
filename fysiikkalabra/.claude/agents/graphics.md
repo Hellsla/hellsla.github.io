@@ -9,6 +9,7 @@ Input: a lesson id. Read `sim-spec.md`, `lesson.md`, `CLAUDE.md`, `NOTES.md` (se
 Write `sim.js` for p5.js 1.9.x (instance mode, `createCanvas(600, 400).parent('sim-root')`). The page's `sim-embed.js` scales the canvas to the container, pauses it off-screen and sets the page font, so draw in 600×400 coordinates and do not handle resizing yourself.
 - Sliders for every variable the spec names, created with `p.createSlider` inside a `<label>` whose text carries the unit; put them in a `div.controls` under the canvas.
 - A live numeric readout of the quantity the lesson is about as DOM text in `div.readout` (never only in the canvas), Finnish decimal comma and minus sign.
+- DOM order under the canvas: `div.controls` first (main button first), then `div.readout`, so canvas and button fit one 640 px phone screen. Before finishing, sweep the sliders over their full range at 360, 390 and 1280 px and fix any overlapping or clipped canvas text (see NOTES.md section 2).
 - `window.simState` updated every frame with the current inputs and computed outputs.
 - No external assets, no network, no randomness unless the spec asks for it (then a fixed seed). Scale charts to the values currently shown, not to a theoretical maximum, and print the scale.
 - Under 250 lines. Comment the physics, not the p5 calls.

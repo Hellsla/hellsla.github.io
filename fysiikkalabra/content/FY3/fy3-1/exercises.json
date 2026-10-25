@@ -27,8 +27,8 @@
     {
       "id": "fy3-1-L1-04",
       "level": 1,
-      "text": "Voimamittarin jousi venyy 2,0 cm, kun siihen vaikuttaa 5,0 N:n voima. Kuinka suuri voima venyttää jousta 3,0 cm?",
-      "answer": 7.5,
+      "text": "Voimamittarin jousi venyy 2,5 cm, kun siihen vaikuttaa 4,0 N:n voima. Kuinka suuri voima venyttää jousta 6,0 cm?",
+      "answer": 9.6,
       "unit": "N",
       "tolerance": 0.02
     },
@@ -95,8 +95,8 @@
     {
       "id": "fy3-1-L3-03",
       "level": 3,
-      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina voiman jaettuna arvolla 9,81 m/s². Mittariin ripustetaan Kuussa (g = 1,62 m/s²) kappale, jonka massa on 6,0 kg. Minkä lukeman mittari näyttää kilogrammoina?",
-      "answer": 0.99,
+      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina luvun, joka saadaan jakamalla voima arvolla 9,81 m/s². Marsissa (g = 3,71 m/s²) mittari näyttää siihen ripustetulle kappaleelle 26 kg. Mikä on kappaleen massa?",
+      "answer": 69,
       "unit": "kg",
       "tolerance": 0.02
     }

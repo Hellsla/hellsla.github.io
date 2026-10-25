@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aineen lämpeneminen ja jäähtyminen: Q = cmΔT — Fysiikkalabra</title>
+<meta name="description" content="Miksi uimarannan hiekka polttaa jalkapohjia jo aamupäivällä, kun vesi on vielä viileää, vaikka aurinko on paistanut molempiin yhtä kauan?">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy3-6.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fysiikkalabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Aineen lämpeneminen ja jäähtyminen: Q = cmΔT">
+<meta property="og:description" content="Miksi uimarannan hiekka polttaa jalkapohjia jo aamupäivällä, kun vesi on vielä viileää, vaikka aurinko on paistanut molempiin yhtä kauan?">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy3-6.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Fysiikkalabra, etusivu"><span class="brand-mark">F</span><span class="brand-name">Fysiikkalabra</span></a>
+  <nav aria-label="Päävalikko"><a href="index.html#moduulit">Moduulit</a><a class="pill" href="../../index.html">← Portfolio</a></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Fysiikkalabra</a> › <a href="FY3.html">FY3</a> › Aineen lämpeneminen ja jäähtyminen: Q = cmΔT</nav>
+<nav class="toc" aria-label="Sivun osat"><a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a></nav>
+<main class="reading">
+<article id="teoria"><h1>Aineen lämpeneminen ja jäähtyminen: Q = cmΔT</h1>
+<blockquote>
+<p><strong>Miksi</strong> uimarannan hiekka polttaa jalkapohjia jo aamupäivällä, kun vesi on vielä viileää, vaikka aurinko on paistanut molempiin yhtä kauan?</p>
+</blockquote>
+<h2>Ydinajatus</h2>
+<p>Kun kappaleeseen siirtyy lämpöä, sen sisäenergia kasvaa ja lämpötila nousee. Kokeissa havaitaan, että tarvittava lämpömäärä on suoraan verrannollinen sekä lämpötilan muutokseen että kappaleen massaan: kaksi kertaa suurempi lämpötilan nousu vaatii kaksinkertaisen lämpömäärän, ja kaksinkertainen vesimäärä vaatii kaksinkertaisen lämpömäärän. Lisäksi lämpömäärä riippuu aineesta. Kilogramman veden lämmittäminen yhdellä asteella vaatii noin 4,2 kJ, mutta kilogramman raudan lämmittäminen vain noin 0,45 kJ. Aineelle ominainen kerroin on ominaislämpökapasiteetti c, jonka yksikkö on J/(kg·K). Se kertoo, kuinka paljon energiaa tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä, ja sama määrä vapautuu, kun aine jäähtyy yhden kelvinin.</p>
+<p>Tärkeä syy on, että veden ominaislämpökapasiteetti on poikkeuksellisen suuri: vesi lämpenee auringossa hitaasti ja jäähtyy illalla hitaasti, kun taas hiekka, jonka c on noin viidesosa veden arvosta, kuumenee samalla energialla moninkertaisesti enemmän. Lisäksi aurinko lämmittää vain hiekan ohutta pintakerrosta, kun taas vedessä lämpeneminen ulottuu syvemmälle. Suuren ominaislämpökapasiteettinsa vuoksi järvet tasaavat rannikon lämpötiloja ja vesi on hyvä lämmönsiirtoaine lämmitysputkissa.</p>
+<p>Kun kuuma ja kylmä kappale laitetaan yhteen eristettyyn astiaan, lämpöä siirtyy kuumemmasta kylmempään, kunnes molemmilla on sama lämpötila. Tätä tilaa sanotaan lämpötasapainoksi. Energia säilyy: kuuman kappaleen luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama. Eristettyä astiaa, jossa tämä mitataan, sanotaan kalorimetriksi, ja mittausta kalorimetriseksi mittaukseksi. Sillä voidaan määrittää tuntemattoman aineen ominaislämpökapasiteetti, kun veden ominaislämpökapasiteetti tunnetaan.</p>
+<h2>Kaava</h2>
+<p>Lämpömäärä, joka tarvitaan massan m lämmittämiseen tai joka vapautuu sen jäähtyessä, on</p>
+<p>$$\begin{aligned}
+Q &= c m \Delta T \\
+\Delta T &= T_\text{loppu} - T_\text{alku}
+\end{aligned}$$</p>
+<p>missä Q on lämpömäärä (J), c aineen ominaislämpökapasiteetti (J/(kg·K)), m massa (kg) ja ΔT lämpötilan muutos (K) eli loppulämpötila $T_\text{loppu}$ miinus alkulämpötila $T_\text{alku}$. Lämpötilan muutos on sama kelvineinä ja celsiusasteina, joten ΔT voidaan laskea suoraan celsiuslämpötiloista. Lämmetessä ΔT ja Q ovat positiivisia, jäähtyessä negatiivisia.</p>
+<p>Koko kappaleen lämpökapasiteetti</p>
+<p>$$C = c m$$</p>
+<p>kertoo, kuinka monta joulea kappaleen lämpötilan nostaminen yhdellä kelvinillä vaatii. C on lämpökapasiteetti (J/K), c ominaislämpökapasiteetti ja m massa. Kappale, jonka lämpökapasiteetti on suuri, lämpenee ja jäähtyy hitaasti.</p>
+<p>Eristetyssä astiassa kuuman kappaleen 1 luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen 2 vastaanottama:</p>
+<p>$$c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$$</p>
+<p>missä T₁ ja T₂ ovat kappaleiden alkulämpötilat ja T yhteinen loppulämpötila eli tasapainolämpötila. Yhtälön molemmat puolet ovat positiivisia lämpömääriä: kuumalle kappaleelle lasketaan alkulämpötila miinus loppulämpötila, kylmälle loppulämpötila miinus alkulämpötila. Yhtälöstä voidaan ratkaista mikä tahansa suure, kun muut tunnetaan: loppulämpötila, massa tai tuntematon ominaislämpökapasiteetti.</p>
+<p>Tasapainolämpötila T esiintyy yhtälössä kahdessa termissä. Se ratkaistaan kertomalla sulut auki, keräämällä T:tä sisältävät termit samalle puolelle ja ottamalla T yhteiseksi tekijäksi:</p>
+<p>$$\begin{aligned}
+&c_1 m_1 T_1 - c_1 m_1 T \\
+&\quad = c_2 m_2 T - c_2 m_2 T_2 \\[6pt]
+&c_1 m_1 T_1 + c_2 m_2 T_2 \\
+&\quad = c_1 m_1 T + c_2 m_2 T \\
+&\quad = (c_1 m_1 + c_2 m_2)\,T
+\end{aligned}$$</p>
+<p>Kun yhtälö jaetaan puolittain summalla c₁m₁ + c₂m₂, saadaan</p>
+<p>$$T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$$</p>
+<p>Tasapainolämpötila on siis alkulämpötilojen painotettu keskiarvo, jossa painoina ovat kappaleiden lämpökapasiteetit c₁m₁ ja c₂m₂. Tavallinen keskiarvo saadaan vain, kun lämpökapasiteetit ovat yhtä suuret.</p>
+<table>
+<thead>
+<tr>
+<th>Aine</th>
+<th>c (J/(kg·K))</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vesi</td>
+<td>4190</td>
+</tr>
+<tr>
+<td>jää</td>
+<td>2100</td>
+</tr>
+<tr>
+<td>alumiini</td>
+<td>900</td>
+</tr>
+<tr>
+<td>hiekka</td>
+<td>800</td>
+</tr>
+<tr>
+<td>rauta</td>
+<td>450</td>
+</tr>
+<tr>
+<td>kupari</td>
+<td>385</td>
+</tr>
+</tbody>
+</table>
+<p><svg viewBox="0 0 600 300" role="img" aria-label="Pylväskaavio ominaislämpökapasiteeteista: vesi 4190, jää 2100, alumiini 900, hiekka 800, rauta 450 ja kupari 385 joulea kilogrammaa ja kelviniä kohti" style="max-width:100%;font-family:system-ui,sans-serif;font-size:20px">
+  <line x1="70" y1="250" x2="580" y2="250" stroke="currentColor" stroke-width="3"/>
+  <rect x="90" y="40" width="60" height="210" fill="currentColor" fill-opacity="0.75"/>
+  <rect x="172" y="145" width="60" height="105" fill="currentColor" fill-opacity="0.55"/>
+  <rect x="254" y="205" width="60" height="45" fill="currentColor" fill-opacity="0.55"/>
+  <rect x="336" y="210" width="60" height="40" fill="currentColor" fill-opacity="0.55"/>
+  <rect x="418" y="227" width="60" height="23" fill="currentColor" fill-opacity="0.55"/>
+  <rect x="500" y="231" width="60" height="19" fill="currentColor" fill-opacity="0.55"/>
+  <text x="120" y="32" text-anchor="middle" fill="currentColor">4190</text>
+  <text x="202" y="137" text-anchor="middle" fill="currentColor">2100</text>
+  <text x="284" y="197" text-anchor="middle" fill="currentColor">900</text>
+  <text x="366" y="202" text-anchor="middle" fill="currentColor">800</text>
+  <text x="448" y="219" text-anchor="middle" fill="currentColor">450</text>
+  <text x="530" y="223" text-anchor="middle" fill="currentColor">385</text>
+  <text x="120" y="278" text-anchor="middle" fill="currentColor">vesi</text>
+  <text x="202" y="278" text-anchor="middle" fill="currentColor">jää</text>
+  <text x="284" y="278" text-anchor="middle" fill="currentColor">alumiini</text>
+  <text x="366" y="278" text-anchor="middle" fill="currentColor">hiekka</text>
+  <text x="448" y="278" text-anchor="middle" fill="currentColor">rauta</text>
+  <text x="530" y="278" text-anchor="middle" fill="currentColor">kupari</text>
+  <text x="66" y="22" text-anchor="end" fill="currentColor">c</text>
+</svg></p>
+<section id="sim"><h2>Simulaatio</h2><div id="sim-root"></div><script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="fy3-6-sim.js"></script></section><h2>Esimerkki</h2>
+<p>Kalorimetrissä on 0,300 kg vettä, jonka lämpötila on 20,0 °C. Siihen upotetaan 0,200 kg:n metallikappale, joka on kuumennettu kiehuvassa vedessä 100,0 °C:n lämpötilaan. Sekoituksen jälkeen lämpötila asettuu arvoon 24,5 °C. Mikä on metallin ominaislämpökapasiteetti? Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta.</p>
+<p>Metalli jäähtyy 100,0 °C:sta 24,5 °C:seen, eli 75,5 K, ja vesi lämpenee 20,0 °C:sta 24,5 °C:seen, eli 4,5 K. Luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu:</p>
+<p>$$\begin{aligned}
+&c_\text{metalli} \cdot 0{,}200\,\text{kg} \cdot 75{,}5\,\text{K} \\
+&\quad = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 4{,}5\,\text{K}
+\end{aligned}$$</p>
+<p>Oikea puoli on 5656,5 J, joten</p>
+<p>$$\begin{aligned}
+c_\text{metalli} &= \frac{5656{,}5\,\text{J}}{0{,}200\,\text{kg} \cdot 75{,}5\,\text{K}} \\
+&= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\
+&\approx 3{,}7 \cdot 10^2\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}
+\end{aligned}$$</p>
+<p>Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska veden lämpötilan muutos 4,5 K tunnetaan vain kahden numeron tarkkuudella: jos loppulukema olisi 0,1 K suurempi eli 24,6 °C, tulos olisi 383 J/(kg·K). Arvo on lähellä kuparin ominaislämpökapasiteettia 385 J/(kg·K), joten kappale on luultavasti kuparia. Häviöttömässä kalorimetrissä 0,200 kg:n kuparikappale nostaisi veden 24,6 °C:seen (kokeile simulaatiossa); mitattu 0,1 K pienempi lukema selittyy lukematarkkuudella tai sillä, että todellisuudessa osa lämmöstä siirtyi myös kalorimetrin astiaan ja ilmaan.</p>
+<p>Huomaa myös, että vesi lämpeni vain 4,5 K, vaikka metalli jäähtyi 75,5 K: veden lämpökapasiteetti on 0,300 kg · 4190 J/(kg·K) = 1257 J/K, mikä on paljon enemmän kuin kappaleen lämpökapasiteetti 0,200 kg · 374,6 J/(kg·K) ≈ 75 J/K.</p>
+<h2>Yleinen virhekäsitys</h2>
+<p>Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia, tai että samaan lämpötilaan lämmitetyt kappaleet ovat saaneet saman määrän energiaa. Kilon veden ja kilon raudan lämmittäminen 20 °C:sta 60 °C:seen vaatii vedelle lähes kymmenkertaisen energian. Toinen virhe on laskea tasapainolämpötila keskiarvona. Kun 1,0 kg 80-asteista vettä kaadetaan 3,0 kg:aan 20-asteista vettä, veden ominaislämpökapasiteetti c on yhtälön molemmilla puolilla ja supistuu pois:</p>
+<p>$$\begin{aligned}
+&1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
+&\quad = 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
+&80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C} \\
+&140\,{}^\circ\text{C} = 4T \\
+&T = 35\,{}^\circ\text{C}
+\end{aligned}$$</p>
+<p>Kuuma vesi on vasemmalla puolella kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole 50 °C vaan 35 °C, koska kylmää vettä on kolme kertaa enemmän kuin kuumaa. Sama tulos saadaan painotetulla keskiarvolla: T = (3,0 kg · 20 °C + 1,0 kg · 80 °C) / 4,0 kg = 35 °C.</p>
+<p>Kolmas virhe on muuntaa ΔT kelvineiksi lisäämällä 273: lämpötilan muutos on sama kummallakin asteikolla.</p>
+<h2>Tiivistelmä</h2>
+<ul>
+<li>Lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen: $Q = c m \Delta T$. Ominaislämpökapasiteetti c riippuu aineesta, ja vedellä se on suuri, 4190 J/(kg·K).</li>
+<li>Lämpökapasiteetti $C = cm$ kertoo, kuinka monta joulea koko kappaleen lämmittäminen yhdellä kelvinillä vaatii.</li>
+<li>Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama: $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$. Tasapainolämpötila T ratkaistaan keräämällä T:n termit samalle puolelle; se on lämpökapasiteeteilla painotettu keskiarvo eikä yleensä alkulämpötilojen tavallinen keskiarvo.</li>
+<li>Kalorimetrisellä mittauksella määritetään tuntemattoman aineen ominaislämpökapasiteetti veden avulla.</li>
+</ul></article>
+<section id="exercises"><h2>Tehtävät</h2><p class="howto">Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.</p><details class="level"><summary>Taso 1 <span class="count">5 tehtävää</span></summary><ol><li id="fy3-6-L1-01"><p class="task">Kahvinkeittimen säiliöön kaadetaan 1,8 kg vettä, jonka lämpötila on 12 °C. Keitin lämmittää veden 96 °C:seen. Kuinka suuri lämpömäärä veteen siirtyy? Anna vastaus megajouleina.</p><form class="check" data-answer="0.63" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L1-01" placeholder="?"><span class="unit">MJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>0,63 MJ</p></details><details class="solution"><summary>Ratkaisu</summary><div class="steps"><p><strong>Annettu:</strong> vesi, c = 4190 J/(kg·K), m = 1,8 kg, T_alku = 12 °C, T_loppu = 96 °C<br />
+<strong>Kysytty:</strong> Q<br />
+<strong>Kaava:</strong> Q = c m ΔT, missä ΔT = T_loppu − T_alku<br />
+<strong>Sijoitus:</strong> ΔT = 96 °C − 12 °C = 84 K. Q = 4190 J/(kg·K) · 1,8 kg · 84 K = 633 528 J ≈ 0,63 MJ<br />
+<strong>Vastaus:</strong> 0,63 MJ<br />
+<strong>Järkevyys:</strong> Yhden kilogramman lämmittäminen yhdellä kelvinillä vaatii noin 4 kJ, joten lähes kahden kilon lämmittäminen noin 80 K vaatii noin 4 kJ · 2 · 80 ≈ 0,6 MJ. Kelvineihin ei tarvitse muuntaa, koska muutos on sama kummallakin asteikolla.</p></div></details></li><li id="fy3-6-L1-02"><p class="task">Valurautainen paistinpannu, jonka massa on 2,4 kg, nostetaan liedeltä mökin pöydälle. Pannun lämpötila laskee 220 °C:sta 25 °C:seen. Kuinka suuren lämpömäärän pannu luovuttaa ympäristöön? Anna vastaus kilojouleina.</p><form class="check" data-answer="210" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L1-02" placeholder="?"><span class="unit">kJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>210 kJ</p></details></li><li id="fy3-6-L1-03"><p class="task">Lasten hiekkalaatikossa on 50 kg hiekkaa. Aurinko lämmittää hiekan aamupäivän aikana 14 °C:sta 32 °C:seen. Kuinka suuri lämpömäärä hiekkaan siirtyy? Anna vastaus kilojouleina.</p><form class="check" data-answer="720" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L1-03" placeholder="?"><span class="unit">kJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>720 kJ</p></details></li><li id="fy3-6-L1-04"><p class="task">Mökin paljussa on 1200 kg vettä. Yön aikana vesi jäähtyy 38 °C:sta 31 °C:seen. Kuinka suuri on veteen siirtyvä lämpömäärä Q? Anna vastaus etumerkkeineen megajouleina (negatiivinen Q tarkoittaa, että vesi luovuttaa lämpöä).</p><form class="check" data-answer="-35" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L1-04" placeholder="?"><span class="unit">MJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>−35 MJ</p></details></li><li id="fy3-6-L1-05"><p class="task">Kylmälaukkuun laitetaan pakastimesta 0,50 kg:n jääpussi. Jään lämpötila nousee −22 °C:sta −4,0 °C:seen, eikä jää vielä sula. Kuinka suuri lämpömäärä jäähän siirtyy? Anna vastaus kilojouleina.</p><form class="check" data-answer="19" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L1-05" placeholder="?"><span class="unit">kJ</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>19 kJ</p></details></li></ol></details><details class="level"><summary>Taso 2 <span class="count">4 tehtävää</span></summary><ol><li id="fy3-6-L2-01"><p class="task">Teemukiin kaadetaan 160 g vettä, jonka lämpötila on 95 °C. Tee on liian kuumaa juotavaksi, joten joukkoon lisätään 40 g kylmää vettä, jonka lämpötila on 8,0 °C. Mikä on veden lämpötila sekoittamisen jälkeen? Oleta, ettei lämpöä siirry mukiin eikä ilmaan.</p><form class="check" data-answer="78" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L2-01" placeholder="?"><span class="unit">°C</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>78 °C</p></details><details class="solution"><summary>Ratkaisu</summary><div class="steps"><p><strong>Annettu:</strong> kuuma vesi m₁ = 160 g, T₁ = 95 °C; kylmä vesi m₂ = 40 g, T₂ = 8,0 °C; molemmat vettä<br />
+<strong>Kysytty:</strong> tasapainolämpötila T<br />
+<strong>Kaava:</strong> c m₁ (T₁ − T) = c m₂ (T − T₂). Sama c supistuu pois, joten T = (m₁T₁ + m₂T₂) / (m₁ + m₂)<br />
+<strong>Sijoitus:</strong> T = (160 g · 95 °C + 40 g · 8,0 °C) / (160 g + 40 g) = (15 200 + 320) g·°C / 200 g = 77,6 °C ≈ 78 °C<br />
+<strong>Vastaus:</strong> 78 °C<br />
+<strong>Järkevyys:</strong> Kuumaa vettä on neljä kertaa enemmän, joten tulos on lähellä 95 °C:ta. Grammoja ei tarvitse muuntaa, koska massa on sekä osoittajassa että nimittäjässä. Tarkistus: 160 g · 17,4 K = 40 g · 69,6 K.</p></div></details></li><li id="fy3-6-L2-02"><p class="task">Vedenkeittimen teho on 2,4 kW. Keittimessä on 1,5 kg vettä, jonka lämpötila on 15 °C. Kuinka kauan veden lämmittäminen 95 °C:seen kestää? Oleta, että kaikki keittimen energia siirtyy veteen. Anna vastaus sekunteina.</p><form class="check" data-answer="210" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L2-02" placeholder="?"><span class="unit">s</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>210 s</p></details></li><li id="fy3-6-L2-03"><p class="task">Mökin lämminvesivaraajassa on 80 kg vettä, jonka lämpötila on 9,0 °C. Varaajan sähkövastus luovuttaa veteen lämpömäärän 15 MJ. Mikä on veden loppulämpötila, kun lämpöhäviöitä ei oteta huomioon?</p><form class="check" data-answer="54" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L2-03" placeholder="?"><span class="unit">°C</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>54 °C</p></details></li><li id="fy3-6-L2-04"><p class="task">Saunan lauteilla on lämmennyt alumiininen kauha, jonka massa on 0,25 kg ja lämpötila 95 °C. Kauha pudotetaan kiuluun, jossa on 0,40 kg vettä, jonka lämpötila on 18 °C. Mikä on veden ja kauhan yhteinen loppulämpötila? Oleta, ettei lämpöä siirry kiuluun eikä ilmaan.</p><form class="check" data-answer="27" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L2-04" placeholder="?"><span class="unit">°C</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>27 °C</p></details></li></ol></details><details class="level"><summary>Taso 3 <span class="count">3 tehtävää</span></summary><ol><li id="fy3-6-L3-01"><p class="task">Ennen vanhaan savusaunan pesuvesi lämmitettiin pudottamalla kiukaan kuumia kiviä puusaaviin. Saavissa on 20 kg järvivettä, jonka lämpötila on 10 °C, ja kiuas on kuumentanut kivet 300 °C:een. Kuinka monta kilogrammaa kiviä saaviin on pudotettava, jotta veden lämpötila nousee 40 °C:seen? Kivien ominaislämpökapasiteetti on 800 J/(kg·K). Oleta, ettei lämpöä siirry saaviin eikä ilmaan eikä vettä höyrysty. Perustele, mikä on kivien loppulämpötila.</p><form class="check" data-answer="12" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L3-01" placeholder="?"><span class="unit">kg</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>12 kg</p></details><details class="solution"><summary>Ratkaisu</summary><div class="steps"><p><strong>Annettu:</strong> vesi c = 4190 J/(kg·K), m_v = 20 kg, 10 °C → 40 °C; kivet c = 800 J/(kg·K), 300 °C<br />
+<strong>Kysytty:</strong> kivien massa m_k<br />
+<strong>Kaava:</strong> c_k m_k (T_k − T) = c_v m_v (T − T_v), missä tasapainolämpötila T = 40 °C<br />
+<strong>Sijoitus:</strong> Vesi vastaanottaa 4190 J/(kg·K) · 20 kg · 30 K = 2 514 000 J. Kivet jäähtyvät 300 °C − 40 °C = 260 K, joten m_k = 2 514 000 J / (800 J/(kg·K) · 260 K) = 12,09 kg ≈ 12 kg<br />
+<strong>Vastaus:</strong> 12 kg<br />
+<strong>Järkevyys:</strong> Tasapainossa kivetkin ovat 40 °C:ssa, joten ne jäähtyvät 260 K eivätkä 300 K. Kivien 8,7 kertaa suurempi lämpötilan muutos pienentää massaa, pienempi c (5,2-kertainen ero) suurentaa sitä: m_k / m_v ≈ 0,60.</p></div></details></li><li id="fy3-6-L3-02"><p class="task">Mökin rannassa on matala lahdelma, jonka pinta-ala on 2000 m² ja keskisyvyys 1,2 m. Aurinkoisena kesäpäivänä lahden vesi saa auringosta energiaa 18 MJ jokaista pinnan neliömetriä kohti. Kuutiometrissä vettä on 1000 kg. Oleta, että energia jää veteen ja vesi sekoittuu tasaisesti. Kuinka monta kelviniä lahden veden lämpötila nousee päivän aikana? Perustele myös, miksi tulos ei riipu lahden pinta-alasta.</p><form class="check" data-answer="3.6" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L3-02" placeholder="?"><span class="unit">K</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>3,6 K</p></details></li><li id="fy3-6-L3-03"><p class="task">Mökille suunnitellaan lämpövarastoa, johon kesän aurinkolämpöä talletetaan. Vaihtoehdot ovat 1,0 m³ vettä, jonka massa on 1000 kg, tai kuiva hiekka, jota on 1600 kg kuutiometrissä. Kummankin varaston lämpötila vaihtelee 20 °C:n ja 70 °C:n välillä. Kuinka monta kuutiometriä hiekkaa tarvitaan, jotta se varastoi saman lämpömäärän kuin 1,0 m³ vettä? Perustele, miksi tilavuuksien suhde on pienempi kuin ominaislämpökapasiteettien suhde.</p><form class="check" data-answer="3.3" data-tol="0.02" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään fy3-6-L3-03" placeholder="?"><span class="unit">m³</span><button type="submit">Tarkista</button><output aria-live="polite"></output></form><details class="answer"><summary>Vastaus</summary><p>3,3 m³</p></details></li></ol></details></section>
+<section id="exit"><h2>Lähtölippu</h2><ol><li>Kuinka suuri lämpömäärä tarvitaan, kun 2,0 kg vettä lämmitetään 15 °C:sta 65 °C:seen (c = 4190 J/(kg·K))?<details class="answer"><summary>Vastaus</summary><p>Q = cmΔT = 4190 J/(kg·K) · 2,0 kg · 50 K = 419 000 J ≈ 420 kJ.</p></details></li><li>Kilo vettä ja kilo rautaa saavat saunassa saman lämpömäärän. Kumman lämpötila nousee enemmän ja suunnilleen kuinka moninkertaisesti?<details class="answer"><summary>Vastaus</summary><p>Raudan. Sen ominaislämpökapasiteetti 450 J/(kg·K) on noin yhdeksäsosa veden arvosta 4190 J/(kg·K), joten sama lämpömäärä nostaa raudan lämpötilaa noin yhdeksän kertaa enemmän.</p></details></li><li>Yhtä paljon 80-asteista ja 20-asteista vettä sekoitetaan eristetyssä astiassa. Mikä on loppulämpötila, ja miksi vastaus ei päde, jos kuumaa vettä on kolme kertaa enemmän?<details class="answer"><summary>Vastaus</summary><p>50 °C, koska massat ja aine ovat samat ja luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Jos kuumaa on kolme kertaa enemmän, tasapaino on lähempänä 80 °C:ta (65 °C), koska kuuman veden lämpökapasiteetti on kolminkertainen.</p></details></li></ol></section>
+</main>
+<footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="FY3.html">← FY3-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script>
+</body></html>

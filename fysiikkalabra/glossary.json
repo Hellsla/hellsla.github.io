@@ -1,5 +1,29 @@
 [
   {
+    "term": "Avogadron vakio",
+    "definition": "Hiukkasten lukumäärä yhdessä moolissa, N_A = 6,022 · 10²³ 1/mol. Hiukkasmäärä saadaan ainemäärästä kertomalla: N = n · N_A.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "mooli",
+      "ainemäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Boylen laki",
+    "definition": "Kun suljetun kaasumäärän lämpötila pysyy vakiona, paineen ja tilavuuden tulo on vakio: p₁V₁ = p₂V₂. Paine on siis kääntäen verrannollinen tilavuuteen.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isoterminen",
+      "paine"
+    ],
+    "locked": false
+  },
+  {
     "term": "absoluuttinen nollapiste",
     "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
     "lessons": [
@@ -8,6 +32,18 @@
     "see_also": [
       "kelvin",
       "lämpötila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ainemäärä",
+    "definition": "Suure, joka kertoo aineen määrän hiukkasten lukumääränä mooleina. Ainemäärän tunnus on n ja yksikkö mol, ja se saadaan massasta ja moolimassasta: n = m/M.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "mooli",
+      "moolimassa"
     ],
     "locked": false
   },
@@ -25,6 +61,114 @@
     "locked": false
   },
   {
+    "term": "eristetty systeemi",
+    "definition": "Eristetty systeemi on systeemi, johon tai josta ei siirry ainetta eikä energiaa lämpönä tai työnä. Suljettuun systeemiin energiaa voi vielä siirtyä, vaikka aine ei pääse sisään tai ulos, mutta eristetyn systeemin kokonaisenergia pysyy vakiona.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "systeemi",
+      "termodynamiikan ensimmäinen pääsääntö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "faasikaavio",
+    "definition": "Kuvaaja, joka näyttää aineen olomuodon lämpötilan ja paineen mukaan. Sen käyrät yhdistävät sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "olomuoto",
+      "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hydrostaattinen paine",
+    "definition": "Nesteen omasta painosta syntyvä paine, joka kasvaa syvyyden mukana: ρgh. Se riippuu vain syvyydestä ja nesteen tiheydestä, ei astian muodosta.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine",
+      "ilmanpaine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "höyrystymislämpö",
+    "definition": "Ominaishöyrystymislämpö r on lämpömäärä, joka tarvitaan yhden kilogramman höyrystämiseen kiehumispisteessä: Q = rm. Vedelle r = 2260 kJ/kg.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "sulamislämpö",
+      "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ideaalikaasu",
+    "definition": "Kaasun mikromalli, jossa hiukkaset ovat pistemäisiä ja vaikuttavat toisiinsa vain törmätessään. Ideaalikaasu noudattaa tilanyhtälöä pV = nRT, ja todelliset kaasut ovat sen kaltaisia tavallisissa paineissa ja lämpötiloissa.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "tilanyhtälö",
+      "moolinen kaasuvakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ilmanpaine",
+    "definition": "Ilmakehän paino pinta-alaa kohti. Merenpinnan tasolla ilmanpaine on noin 101 kPa, ja se vaikuttaa myös nesteen pintaan.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine",
+      "hydrostaattinen paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isobaarinen",
+    "definition": "Tilanmuutos, jossa kaasun paine pysyy vakiona. Suljetun kaasumäärän tilavuus on silloin suoraan verrannollinen kelvinlämpötilaan.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isokoorinen",
+      "tilanmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isokoorinen",
+    "definition": "Tilanmuutos, jossa kaasun tilavuus pysyy vakiona. Suljetun kaasumäärän paine on silloin suoraan verrannollinen kelvinlämpötilaan.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isobaarinen",
+      "tilanmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isoterminen",
+    "definition": "Tilanmuutos, jossa kaasun lämpötila pysyy vakiona. Suljetulle kaasumäärälle pätee silloin Boylen laki pV = vakio.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "Boylen laki",
+      "tilanmuutos"
+    ],
+    "locked": false
+  },
+  {
     "term": "joule",
     "definition": "Energian ja työn yksikkö, 1 J = 1 N·m. Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla.",
     "lessons": [
@@ -33,6 +177,18 @@
     "see_also": [
       "työ",
       "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kalorimetri",
+    "definition": "Eristetty astia, jossa lämpömääriä mitataan lämpötilan muutoksista. Sillä määritetään esimerkiksi aineen ominaislämpökapasiteetti veden avulla.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpötasapaino",
+      "ominaislämpökapasiteetti"
     ],
     "locked": false
   },
@@ -72,15 +228,76 @@
     "locked": false
   },
   {
+    "term": "lämpenemiskäyrä",
+    "definition": "Kuvaaja, joka esittää aineen lämpötilan siirretyn energian tai ajan funktiona. Nousevat osat ovat lämpenemistä ja vaakasuorat osat olomuodon muutoksia.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "olomuoto",
+      "ominaislämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpö",
+    "definition": "Energian siirtymistä kuumemmasta kappaleesta kylmempään lämpötilaeron vuoksi. Lämpö ei ole kappaleen ominaisuus; kappaleella on lämpötila ja sisäenergia.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "lämpömäärä",
+      "lämpötila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpökapasiteetti",
+    "definition": "Lämpömäärä, joka tarvitaan koko kappaleen lämmittämiseen yhdellä kelvinillä: C = cm, yksikkö J/K.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "ominaislämpökapasiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpölaajeneminen",
+    "definition": "Aineen laajeneminen lämpötilan noustessa ja kutistuminen sen laskiessa. Mikromallin mukaan hiukkasten värähtely voimistuu ja niiden keskimääräinen etäisyys kasvaa, vaikka hiukkaset itse eivät suurene.",
+    "lessons": [
+      "fy3-8"
+    ],
+    "see_also": [
+      "pituuden lämpötilakerroin",
+      "tilavuuden lämpötilakerroin"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpömäärä",
     "definition": "Lämpötilaeron vuoksi kappaleesta toiseen siirtyvä energia, symboli Q. Yksikkö on joule (J).",
     "lessons": [
-      "fy3-2"
+      "fy3-2",
+      "fy3-5",
+      "fy3-6"
     ],
     "see_also": [
       "energia",
       "työ",
       "joule"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpötasapaino",
+    "definition": "Tila, jossa kosketuksissa olevilla kappaleilla on sama lämpötila eikä lämpöä enää siirry niiden välillä. Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpö",
+      "kalorimetri"
     ],
     "locked": false
   },
@@ -108,6 +325,41 @@
     "locked": false
   },
   {
+    "term": "mooli",
+    "definition": "Ainemäärän yksikkö mol. Yksi mooli ainetta sisältää 6,022 · 10²³ hiukkasta, ja tätä lukua sanotaan Avogadron vakioksi.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "ainemäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "moolimassa",
+    "definition": "Yhden aineen moolin massa M, yksikkö g/mol tai kg/mol. Esimerkiksi heliumin moolimassa on 4,0 g/mol ja ilman keskimäärin 29 g/mol.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "ainemäärä",
+      "mooli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "moolinen kaasuvakio",
+    "definition": "Kaikille ideaalikaasuille yhteinen vakio R = 8,31 J/(mol·K) tilanyhtälössä pV = nRT.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "tilanyhtälö",
+      "ideaalikaasu"
+    ],
+    "locked": false
+  },
+  {
     "term": "newton",
     "definition": "Voiman yksikkö, merkintä N. Noin yksi newton on sadan gramman omenan paino Maassa.",
     "lessons": [
@@ -120,10 +372,35 @@
     "locked": false
   },
   {
+    "term": "olomuoto",
+    "definition": "Aineen esiintymismuoto: kiinteä, neste tai kaasu. Mikromallissa olomuodot eroavat siinä, kuinka hiukkaset ovat sitoutuneet toisiinsa.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "sulamislämpö",
+      "höyrystymislämpö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaislämpökapasiteetti",
+    "definition": "Lämpömäärä, joka tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä, tunnus c, yksikkö J/(kg·K). Vedellä c = 4190 J/(kg·K).",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpökapasiteetti",
+      "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
     "term": "paine",
     "definition": "Paine on voima pinta-alaa kohti. Yksikkö on pascal (Pa); kaasussa paine syntyy hiukkasten törmäyksistä astian seinämään. Paineeseen paneudutaan tarkemmin myöhemmin.",
     "lessons": [
-      "fy3-3"
+      "fy3-3",
+      "fy3-4"
     ],
     "see_also": [
       "tilanmuuttuja"
@@ -144,6 +421,29 @@
     "locked": false
   },
   {
+    "term": "pascal",
+    "definition": "Paineen yksikkö, tunnus Pa. Yksi pascal on yhden newtonin voima yhden neliömetrin alalle, 1 Pa = 1 N/m², ja 1 kPa = 1000 Pa.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pituuden lämpötilakerroin",
+    "definition": "Aineelle ominainen kerroin α, joka kertoo, kuinka suuren osan pituudestaan kappale pitenee yhden kelvinin lämpötilan nousussa: ΔL = αL₀ΔT. Yksikkö on 1/K, ja esimerkiksi teräksellä α on noin 12 · 10⁻⁶ 1/K.",
+    "lessons": [
+      "fy3-8"
+    ],
+    "see_also": [
+      "lämpölaajeneminen",
+      "tilavuuden lämpötilakerroin"
+    ],
+    "locked": false
+  },
+  {
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
@@ -156,6 +456,43 @@
     "locked": false
   },
   {
+    "term": "putoamiskiihtyvyys",
+    "definition": "Kiihtyvyys, jolla vapaasti putoava kappale liikkuu, kun ilmanvastusta ei ole. Maan pinnalla sen arvo on g = 9,81 m/s², ja sama luku kertoo, kuinka monta newtonia yhden kilogramman massan paino on.",
+    "lessons": [
+      "fy3-1"
+    ],
+    "see_also": [
+      "paino",
+      "kiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sisäenergia",
+    "definition": "Systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa, tunnus U. Sitä muuttavat lämpö ja työ.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "lämpömäärä",
+      "työ",
+      "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sulamislämpö",
+    "definition": "Ominaissulamislämpö s on lämpömäärä, joka tarvitaan yhden kilogramman sulattamiseen sulamispisteessä: Q = sm. Vedelle s = 334 kJ/kg.",
+    "lessons": [
+      "fy3-7"
+    ],
+    "see_also": [
+      "höyrystymislämpö",
+      "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
     "term": "systeemi",
     "definition": "Termodynaaminen systeemi on tutkimista varten rajattu osa maailmaa. Kaikki sen ulkopuolella on ympäristöä, ja systeemi on suljettu, jos siitä ei pääse ainetta ulos tai sisään.",
     "lessons": [
@@ -163,6 +500,18 @@
     ],
     "see_also": [
       "tilanmuuttuja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapainolämpötila",
+    "definition": "Yhteinen loppulämpötila T, johon kappaleet asettuvat, kun ne ovat saavuttaneet lämpötasapainon. Eristetyssä astiassa se ratkaistaan yhtälöstä, jossa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
+    "lessons": [
+      "fy3-6"
+    ],
+    "see_also": [
+      "lämpötasapaino",
+      "lämpökapasiteetti"
     ],
     "locked": false
   },
@@ -179,6 +528,42 @@
     "locked": false
   },
   {
+    "term": "termodynamiikan ensimmäinen pääsääntö",
+    "definition": "Energian säilymisen laki lämmölle ja työlle: sisäenergian muutos on systeemiin siirtyneen lämpömäärän ja siihen tehdyn työn summa, ΔU = Q + W.",
+    "lessons": [
+      "fy3-5"
+    ],
+    "see_also": [
+      "sisäenergia",
+      "energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tiheys",
+    "definition": "Aineen massa tilavuutta kohti, ρ = m/V, yksikkö kg/m³. Veden tiheys on noin 1000 kg/m³.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "massa"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilanmuutos",
+    "definition": "Kaasun tilan muutos, jossa sen paine, tilavuus tai lämpötila muuttuu. Tilanmuutoksia tutkitaan usein niin, että yksi suureista pidetään vakiona.",
+    "lessons": [
+      "fy3-9"
+    ],
+    "see_also": [
+      "isoterminen",
+      "isobaarinen",
+      "isokoorinen"
+    ],
+    "locked": false
+  },
+  {
     "term": "tilanmuuttuja",
     "definition": "Tilanmuuttuja kuvaa systeemin tilaa. Kaasun tilanmuuttujia ovat lämpötila, paine, tilavuus ja aineen määrä, ja jos yhtä muutetaan, vähintään yksi muista muuttuu myös.",
     "lessons": [
@@ -188,6 +573,30 @@
       "systeemi",
       "lämpötila",
       "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilanyhtälö",
+    "definition": "Yhtälö, joka sitoo yhteen kaasun tilaa kuvaavat suureet. Ideaalikaasun tilanyhtälö on pV = nRT.",
+    "lessons": [
+      "fy3-10"
+    ],
+    "see_also": [
+      "ideaalikaasu",
+      "tilanmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilavuuden lämpötilakerroin",
+    "definition": "Aineelle ominainen kerroin γ, joka kertoo, kuinka suuren osan tilavuudestaan aine laajenee yhden kelvinin lämpötilan nousussa: ΔV = γV₀ΔT. Kiinteällä aineella γ ≈ 3α, ja nesteillä γ on yleensä paljon suurempi.",
+    "lessons": [
+      "fy3-8"
+    ],
+    "see_also": [
+      "lämpölaajeneminen",
+      "pituuden lämpötilakerroin"
     ],
     "locked": false
   },
@@ -239,6 +648,19 @@
     "see_also": [
       "voima",
       "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ylipaine",
+    "definition": "Paineen ero ympäröivään ilmanpaineeseen verrattuna, Δp = p − p₀. Nesteessä syvyydessä h ylipaine on hydrostaattinen paine ρgh, ja padon muuria tai vedenalaista ikkunaa kuormittaa juuri se.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "hydrostaattinen paine",
+      "ilmanpaine",
+      "paine"
     ],
     "locked": false
   }

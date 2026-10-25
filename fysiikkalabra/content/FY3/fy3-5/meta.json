@@ -1,0 +1,26 @@
+{
+  "id": "fy3-5",
+  "course": "FY3",
+  "title": "Sisäenergia, lämpömäärä ja energian säilyminen",
+  "goals": [
+    "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+    "Täsmennys: energian säilyminen sisältää termodynamiikan ensimmäisen pääsäännön; muut pääsäännöt eivät kuulu keskeisiin sisältöihin"
+  ],
+  "prerequisites": [
+    "fy3-2",
+    "fy3-3"
+  ],
+  "glossary": [
+    "sisäenergia",
+    "lämpömäärä",
+    "lämpö",
+    "termodynamiikan ensimmäinen pääsääntö",
+    "eristetty systeemi"
+  ],
+  "sim": false,
+  "image": false,
+  "status": "reviewed",
+  "reviewed_by": "gate (automaattinen tarkistus)",
+  "reviewed_on": "2026-10-25",
+  "reviewed_hash": "865fd5555b08e477"
+}

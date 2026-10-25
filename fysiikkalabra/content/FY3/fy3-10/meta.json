@@ -1,0 +1,27 @@
+{
+  "id": "fy3-10",
+  "course": "FY3",
+  "title": "Ideaalikaasun tilanyhtälö pV = nRT",
+  "goals": [
+    "LOPS FY3: ideaalikaasun tilanyhtälö",
+    "Taidot: ideaalikaasun tilanyhtälöstä suureen ratkaiseminen",
+    "Täsmennys: kaasulait käsitellään myös erillisinä; simulaatiot kaasun paineen tutkimiseen rakenneosasten tasolla"
+  ],
+  "prerequisites": [
+    "fy3-9"
+  ],
+  "glossary": [
+    "ideaalikaasu",
+    "tilanyhtälö",
+    "ainemäärä",
+    "mooli",
+    "moolinen kaasuvakio",
+    "moolimassa",
+    "Avogadron vakio"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "draft",
+  "reviewed_by": "",
+  "reviewed_on": ""
+}

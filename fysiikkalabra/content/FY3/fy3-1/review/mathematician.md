@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e46974a555df8d9d
+CONTENT-HASH: fb11a9bb17144bae
 
 ## Blocking
 
 ## Polish
-1. solutions.md:45, 85, 93 — "= 4,995 kg", "= 133,2 kg" and "= 0,991 kg" are rounded values written with "=" (exact: 4,9949…, 133,22…, 0,99083…) — write "≈" as line 77 already does.
-2. lesson.md:15 — the weight arrow now starts on the block's bottom edge (200, 236), which is acceptable; for the usual convention start it at the block's centre (200, 201) and move the "m" label aside (e.g. x = 180).
-3. exercises.json:30 — L1-04 uses the same spring as the scaling example in lesson.md:8 (5,0 N ↔ 2,0 cm), so it only interpolates between the given 4,0 cm and 1,0 cm cases — use a different spring, e.g. 6,0 N ↔ 2,4 cm, and update answers.py and solutions.md:26-29.
-4. exit-ticket.json:11 — the question gives the mass of the water but quotes "pullo painaa puolitoista kiloa", which would include the bottle — write "vesi painaa puolitoista kiloa" or "pullossa on puolitoista kiloa vettä".
 
 ## Checked
-- Hash at start and end: e46974a555df8d9d (unchanged); lint 0 errors, 0 warnings.
-- L1-04 (new): F = 5,0 N · 3,0 cm / 2,0 cm = 7,5 N; ratio 1,5 in sanity check correct; matches answers.py.
-- L1-02 (reworded): 2,0 cm · 12 N / 4,0 N = 6,0 cm, ratio ×3 correct.
-- Exit ticket 3 (new): 1,5 kg · 9,81 m/s² = 14,715 N ≈ 15 N (2 sf), unit argument correct.
-- solutions.md:7, 47 — 1 kg ≈ 10 N gives ≈ 40 N and ≈ 5 kg, consistent with 39,24 N and 4,995 kg.
-- solutions.md:23 — 30 · 9,81 = 294,3 ≈ 294 N; 48,6 / 294,3 = 0,165 ≈ 1/6.
-- solutions.md:63 — 1,62 / 9,81 = 0,165 ≈ 1/6, drop 1187,55 / 1422,45 = 0,835 ≈ 5/6 = 83 %.
-- answers.py re-run: all twelve values equal the unrounded intermediates in solutions.md; rearrangements m = G/g, m_Kuu = F/g_Kuu, lukema = G/(9,81 m/s²) correct with units N ÷ m/s² = kg.
-- SVG (lesson.md:10-20): spring 34–166 attaches at the block's top centre (200, 166); block 160–240 × 166–236; arrow shaft 236–272 starts on the block, head tip at 290 inside the 300 px viewBox; "G = m g" label (x ≈ 222–300) and spring labels fit in the 600 px width.
-- lesson.md numbers: 1177,2 ≈ 1180 N; 445,2 ≈ 445 N; 686,7 ≈ 690 N; 0,1 kg ≈ 1 N; 5,0 N : 2,0 cm scaling to 10 N and 2,5 N; exit tickets 1 (29 N, 4,9 N) and 2 (7,5 cm) correct.
+- Hash at start and end: fb11a9bb17144bae (unchanged); lint 0 errors, 0 warnings.
+- L3-03 (new): lukema = G / 9,81 m/s² ⇒ G = 26 kg · 9,81 m/s² = 255,06 N (exact, kg·m/s² = N); m = G / g_Mars = 255,06 N / 3,71 m/s² = 68,749… ≈ 68,75 kg → 69 kg (2 sf as the data 26 kg); the rearrangement is correct and nothing is rounded before the end.
+- L3-03 sanity check (solutions.md:95): 3,71/9,81 = 0,378 ≈ 0,38; 9,81/3,71 = 2,644 ≈ 2,6; 2,6 · 26 kg ≈ 68 kg and 68,75 kg, both "vajaat 70 kg"; the ratio is only used qualitatively, not to recompute the answer.
+- L3-03 notation: "lukema" with unit kg matches lesson.md:50 (scale = force divided by 9,81 m/s²); g_Mars notation matches L3-01; exercises.json:98 states the calibration rule so the task is solvable.
+- answers.py line 21 = 26 · 9,81 / 3,71 = 68.749326, equals the solution's intermediate; exercises.json:99 answer 69.
+- lesson.md:38 now "1,62/9,81 ≈ 0,17 ≈ 1/6" (0,1651 and 0,167) and lesson.md:55 "on 9,81 N" (exact 1 kg · 9,81 m/s²); both consistent with lesson.md:29, 50.
+- L1-01…L3-02 unchanged and re-verified: 39,24; 6,0; 48,6; 9,6; 62; 4,9949; 0,5886; 1187,55; 5,886; 6,807; 133,22; "=" only for exact values, "≈" for rounded ones.
+- Exit tickets: 29,43 → 29 N, 4,86 → 4,9 N; 20/8,0 = 2,5, 7,5 cm; 14,715 → 15 N.
+- lesson.md example: 1177,2 ≈ 1180 N = 1,18 kN; 445,2 ≈ 445 N; misconception 686,7 ≈ 690 N; spring scaling 5,0 N ↔ 2,0 cm, 10 N ↔ 4,0 cm, 2,5 N ↔ 1,0 cm.
+- SVG (lesson.md:10-20, unchanged): spring 34–166 meets block top (200, 166); arrow 236–290 within the 300 px viewBox.

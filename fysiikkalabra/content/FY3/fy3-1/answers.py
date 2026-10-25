@@ -8,7 +8,7 @@ a = {}
 a["fy3-1-L1-01"] = 4.0 * g["Maa"]                 # 39,24 N -> 39 N
 a["fy3-1-L1-02"] = 2.0 * 12 / 4.0                 # 6,0 cm
 a["fy3-1-L1-03"] = 30 * g["Kuu"]                  # 48,6 N -> 49 N
-a["fy3-1-L1-04"] = 5.0 * 3.0 / 2.0                # force proportional to stretch: 7,5 N
+a["fy3-1-L1-04"] = 4.0 * 6.0 / 2.5                # force proportional to stretch: 9,6 N
 a["fy3-1-L1-05"] = 2.5 * g["Jupiter"]             # 62 N
 # Level 2: one rearrangement or one conversion
 a["fy3-1-L2-01"] = 49 / g["Maa"]                  # m = G / g = 4,99 kg -> 5,0 kg
@@ -18,5 +18,5 @@ a["fy3-1-L2-04"] = 0.20 * g["Maa"] * 4.5 / 1.5    # force proportional to stretc
 # Level 3: reasoning
 a["fy3-1-L3-01"] = 18 / g["Maa"] * g["Mars"]      # same mass, weight scales with g: 6,81 N -> 6,8 N
 a["fy3-1-L3-02"] = 22.0 * g["Maa"] / g["Kuu"]     # same force, m = F / g: 133,2 kg -> 133 kg
-a["fy3-1-L3-03"] = 6.0 * g["Kuu"] / g["Maa"]      # scale shows G / 9,81: 0,991 kg -> 0,99 kg
+a["fy3-1-L3-03"] = 26 * g["Maa"] / g["Mars"]      # scale shows G / 9,81, so G = 26 kg · 9,81 m/s² and m = G / g_Mars: 68,75 kg -> 69 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

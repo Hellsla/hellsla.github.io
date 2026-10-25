@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kuinka monta moolia kaasua on 10,0 litran astiassa, kun paine on 150 kPa ja lämpötila 27 °C (R = 8,31 J/(mol·K))?",
+    "a": "n = pV/(RT) = 150 000 Pa · 0,0100 m³ / (8,31 J/(mol·K) · 300 K) ≈ 0,602 mol."
+  },
+  {
+    "q": "Kahdessa samankokoisessa ilmapallossa on samassa paineessa ja lämpötilassa toisessa heliumia ja toisessa hiilidioksidia. Kummassa on enemmän kaasua moolimääränä mitattuna, ja kumpi pallo on raskaampi?",
+    "a": "Moolimäärä on sama, koska n = pV/(RT) ei riipu kaasun laadusta. Hiilidioksidipallo on raskaampi, koska hiilidioksidin moolimassa 44 g/mol on paljon suurempi kuin heliumin 4,0 g/mol."
+  },
+  {
+    "q": "Mitä mikromallin oletuksia ideaalikaasumalliin sisältyy, ja milloin malli alkaa pettää?",
+    "a": "Hiukkasilla ei oleteta olevan tilavuutta eikä vuorovaikutusta törmäysten välillä. Malli pettää suurissa paineissa ja matalissa lämpötiloissa, kun hiukkaset ovat lähellä toisiaan ja kaasu on lähellä nesteytymistä."
+  }
+]

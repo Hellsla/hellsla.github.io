@@ -1,0 +1,27 @@
+{
+  "id": "fy3-6",
+  "course": "FY3",
+  "title": "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT",
+  "goals": [
+    "LOPS FY3: aineen lämpeneminen ja jäähtyminen",
+    "Kokeellisesti: kalorimetrinen mittaus",
+    "Taidot: useita termejä sisältävän suureyhtälön ratkaiseminen"
+  ],
+  "prerequisites": [
+    "fy3-5"
+  ],
+  "glossary": [
+    "ominaislämpökapasiteetti",
+    "lämpökapasiteetti",
+    "kalorimetri",
+    "lämpötasapaino",
+    "tasapainolämpötila",
+    "lämpömäärä"
+  ],
+  "sim": true,
+  "image": false,
+  "status": "reviewed",
+  "reviewed_by": "gate (automaattinen tarkistus)",
+  "reviewed_on": "2026-10-25",
+  "reviewed_hash": "19113b2932daf12c"
+}

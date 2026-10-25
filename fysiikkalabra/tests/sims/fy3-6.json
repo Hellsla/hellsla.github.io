@@ -1,0 +1,299 @@
+[
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')].map(x=>x.value), s=document.querySelector('#sim-root select'); return r.join()==='0.3,20,0.2,100' && s.value==='385' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: water 0,30 kg at 20 °C, copper 0,20 kg at 100 °C (worked example; must run before any setup)"
+ },
+ {
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "no animation before Upota is pressed"
+ },
+ {
+  "expr": "window.simState.TB - window.simState.TB0",
+  "expected": 0,
+  "tol": 1e-09,
+  "note": "before Upota the body is still at its starting temperature"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.75; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.mW",
+  "expected": 0.75,
+  "tol": 1e-06,
+  "note": "water mass slider sets simState.mW"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=42.5; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.TW0",
+  "expected": 42.5,
+  "tol": 1e-06,
+  "note": "water start temperature slider sets simState.TW0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.85; r[3].value=100;",
+  "expr": "window.simState.mB",
+  "expected": 0.85,
+  "tol": 1e-06,
+  "note": "body mass slider sets simState.mB"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=63.5;",
+  "expr": "window.simState.TB0",
+  "expected": 63.5,
+  "tol": 1e-06,
+  "note": "body start temperature slider sets simState.TB0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='900'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.cB",
+  "expected": 900,
+  "tol": 0,
+  "note": "material select sets simState.cB (alumiini 900 J/(kg·K))"
+ },
+ {
+  "expr": "document.querySelectorAll('#sim-root select option').length",
+  "expected": 5,
+  "tol": 0,
+  "note": "select offers vesi, alumiini, hiekka, rauta, kupari (no ice)"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.Teq",
+  "expected": 24.5,
+  "tol": 0.01,
+  "note": "worked example: 0,300 kg water 20,0 °C + 0,200 kg copper (385) at 100,0 °C gives about 24,5 °C (24,62 °C, within 1 %)"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.Teq",
+  "expected": 24.61769115442279,
+  "tol": 1e-06,
+  "note": "worked example exact: T = (1257·20 + 77·100)/1334 = 24,618 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.CW",
+  "expected": 1257,
+  "tol": 1e-06,
+  "note": "water heat capacity C = 4190 · 0,300 = 1257 J/K"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.CB",
+  "expected": 77,
+  "tol": 1e-06,
+  "note": "copper body heat capacity C = 385 · 0,200 = 77 J/K"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.Q",
+  "expected": 5804.4377811094455,
+  "tol": 1e-06,
+  "note": "heat given off by the copper Q = 77 · (100 − 24,618) = 5804 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "window.simState.Q - 4190 * window.simState.mW * (window.simState.Teq - window.simState.TW0)",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "Q given off by the body equals cW mW (Teq − TW0) taken in by the water"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.5; r[1].value=20; s.value='4190'; r[2].value=0.5; r[3].value=80;",
+  "expr": "window.simState.Teq",
+  "expected": 50,
+  "tol": 1e-06,
+  "note": "equal masses of water at 80 °C and 20 °C give 50 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.75; r[1].value=20; s.value='4190'; r[2].value=0.25; r[3].value=80;",
+  "expr": "window.simState.Teq",
+  "expected": 35,
+  "tol": 1e-06,
+  "note": "misconception example scaled: 0,25 kg water at 80 °C into 0,75 kg at 20 °C gives 35 °C, not 50 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=1.0; r[1].value=10; s.value='450'; r[2].value=0.5; r[3].value=90;",
+  "expr": "window.simState.Teq",
+  "expected": 14.077010192525481,
+  "tol": 1e-06,
+  "note": "iron 0,50 kg at 90 °C into 1,00 kg water at 10 °C: T = 14,08 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.2; r[1].value=15; s.value='800'; r[2].value=0.4; r[3].value=70;",
+  "expr": "window.simState.Teq",
+  "expected": 30.198618307426596,
+  "tol": 1e-06,
+  "note": "sand 0,40 kg at 70 °C into 0,20 kg water at 15 °C: T = 30,20 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.1; r[1].value=60; s.value='900'; r[2].value=1.0; r[3].value=0;",
+  "expr": "window.simState.Teq",
+  "expected": 19.05989385898408,
+  "tol": 1e-06,
+  "note": "cold aluminium 1,00 kg at 0 °C into 0,10 kg water at 60 °C: T = 19,06 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.1; r[1].value=60; s.value='900'; r[2].value=1.0; r[3].value=0;",
+  "expr": "window.simState.Q",
+  "expected": -17153.90447308567,
+  "tol": 1e-06,
+  "note": "a colder body takes heat in: Q = cB mB (TB0 − T) is negative"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.1; r[1].value=60; s.value='900'; r[2].value=1.0; r[3].value=0;",
+  "expr": "window.simState.Q - 4190 * window.simState.mW * (window.simState.Teq - window.simState.TW0)",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "Q equality also holds when the water cools"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.1; r[1].value=60; s.value='900'; r[2].value=1.0; r[3].value=0;",
+  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); return x.includes('Vesi luovuttaa') && x.includes('17,2 kJ') && x.includes('19,1 °C') && x.includes('Kappale lämpenee') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout names the water as the one giving heat when the body is colder"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); return x.includes('T = 24,6 °C') && x.includes('1257 J/K') && x.includes('77,0 J/K') && x.split('5,80 kJ').length===3 && x.includes('Vesi lämpenee 4,6 K') && x.includes('jäähtyy 75,4 K') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout DOM text with decimal comma: T = 24,6 °C, C = 1257 J/K and 77,0 J/K, Q = 5,80 kJ twice (given = taken), which one warms"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); return x.includes('Lämpömittarit nyt: vesi 20,0 °C, kappale 100,0 °C') && x.includes('20–100 °C') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "before Upota the readout shows the starting temperatures and prints the chart scale 20–100 °C"
+ },
+ {
+  "expr": "(() => { const x=document.querySelector('#sim-root .note').textContent; return x.includes('1,5 s') && x.includes('vain havainnollistus') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "note says the approach rate (time constant 1,5 s) is only an illustration"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===5 && l[0].includes('m') && l[0].includes('0,30 kg') && l[1].includes('20,0 °C') && l[2].includes('385 J/(kg·K)') && l[3].includes('0,20 kg') && l[4].includes('100,0 °C') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "five labels with units kg, °C, J/(kg·K), kg, °C"
+ },
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')].map(x=>x.min+'-'+x.max); return r.join()==='0.1-1,5-60,0.05-1,0-100' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "slider ranges match the spec: mW 0,10–1,00 kg, TW 5–60 °C, mB 0,05–1,00 kg, TB 0–100 °C"
+ },
+ {
+  "expr": "[...document.querySelectorAll('#sim-root button')].filter(b=>b.textContent==='Upota').length",
+  "expected": 1,
+  "tol": 0,
+  "note": "exactly one Upota button"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100; document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));",
+  "expr": "window.simState.running && window.simState.TB < window.simState.TB0 && window.simState.TB > window.simState.Teq && window.simState.TW > window.simState.TW0 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "~0,2 s after Upota the animation runs and both temperatures move toward Teq"
+ },
+ {
+  "expr": "new Promise(res => setTimeout(() => res(Math.abs(window.simState.TB - window.simState.Teq) / Math.abs(window.simState.TB0 - window.simState.Teq)), 8000))",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "after ~8 s the copper is within 1 % of its starting gap from Teq"
+ },
+ {
+  "expr": "window.simState.TW",
+  "expected": 24.61769115442279,
+  "tol": 0.01,
+  "note": "after ~8 s the water is within 1 % of Teq = 24,6 °C"
+ },
+ {
+  "expr": "window.simState.TB",
+  "expected": 24.61769115442279,
+  "tol": 0.03,
+  "note": "after ~8 s the copper reads Teq within 3 % (gap 75 K decays as e^(−t/1,5 s))"
+ },
+ {
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.running ? 1 : 0), 2500))",
+  "expected": 0,
+  "tol": 0,
+  "note": "the animation stops after 10 s"
+ },
+ {
+  "expr": "window.simState.TB - window.simState.Teq",
+  "expected": 0,
+  "tol": 1e-09,
+  "note": "after the animation the body is exactly at Teq"
+ },
+ {
+  "expr": "window.simState.TW - window.simState.Teq",
+  "expected": 0,
+  "tol": 1e-09,
+  "note": "after the animation the water is exactly at Teq"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.5; r[1].value=20; s.value='4190'; r[2].value=0.5; r[3].value=80; document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.TB), 8000))",
+  "expected": 50,
+  "tol": 0.01,
+  "note": "equal masses of water at 80 and 20 °C: after Upota and ~8 s the hot water reads 50 °C within 1 %"
+ },
+ {
+  "expr": "window.simState.TW",
+  "expected": 50,
+  "tol": 0.01,
+  "note": "... and the cold water reads 50 °C within 1 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=1.0; r[1].value=10; s.value='450'; r[2].value=0.5; r[3].value=90; document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.running ? 1 : 0), 300))",
+  "expected": 1,
+  "tol": 0,
+  "note": "Upota starts the animation"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.9; r[1].value=10; s.value='450'; r[2].value=0.5; r[3].value=90;",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "changing a slider during the animation takes the body out again (animation reset)"
+ },
+ {
+  "expr": "window.simState.TB",
+  "expected": 90,
+  "tol": 1e-09,
+  "note": "after the reset the body is back at its starting temperature"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=40; s.value='385'; r[2].value=0.2; r[3].value=40;",
+  "expr": "Math.abs(window.simState.Q) + Math.abs(window.simState.Teq - 40)",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "equal start temperatures: no heat flows"
+ },
+ {
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Lämpötilat ovat samat, joten lämpöä ei siirry.') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "equal start temperatures: the readout says no heat flows"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root .controls'), b=document.querySelector('#sim-root button'), r=document.querySelector('#sim-root .readout'); return c.firstElementChild===b && (c.compareDocumentPosition(r) & Node.DOCUMENT_POSITION_FOLLOWING) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "phone layout: Upota is the first control and the controls come before the long readout, so canvas and button fit on one screen"
+ }
+]

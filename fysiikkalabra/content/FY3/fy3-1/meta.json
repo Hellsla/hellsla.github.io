@@ -13,12 +13,13 @@
     "vuorovaikutus",
     "paino",
     "massa",
-    "newton"
+    "newton",
+    "putoamiskiihtyvyys"
   ],
   "sim": true,
   "image": false,
   "status": "reviewed",
   "reviewed_by": "gate (automaattinen tarkistus)",
   "reviewed_on": "2026-10-25",
-  "reviewed_hash": "b95216d2bc32c5bd"
+  "reviewed_hash": "7d3eee16cfecfa3e"
 }

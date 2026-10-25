@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kuinka suuri lämpömäärä tarvitaan, kun 2,0 kg vettä lämmitetään 15 °C:sta 65 °C:seen (c = 4190 J/(kg·K))?",
+    "a": "Q = cmΔT = 4190 J/(kg·K) · 2,0 kg · 50 K = 419 000 J ≈ 420 kJ."
+  },
+  {
+    "q": "Kilo vettä ja kilo rautaa saavat saunassa saman lämpömäärän. Kumman lämpötila nousee enemmän ja suunnilleen kuinka moninkertaisesti?",
+    "a": "Raudan. Sen ominaislämpökapasiteetti 450 J/(kg·K) on noin yhdeksäsosa veden arvosta 4190 J/(kg·K), joten sama lämpömäärä nostaa raudan lämpötilaa noin yhdeksän kertaa enemmän."
+  },
+  {
+    "q": "Yhtä paljon 80-asteista ja 20-asteista vettä sekoitetaan eristetyssä astiassa. Mikä on loppulämpötila, ja miksi vastaus ei päde, jos kuumaa vettä on kolme kertaa enemmän?",
+    "a": "50 °C, koska massat ja aine ovat samat ja luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Jos kuumaa on kolme kertaa enemmän, tasapaino on lähempänä 80 °C:ta (65 °C), koska kuuman veden lämpökapasiteetti on kolminkertainen."
+  }
+]

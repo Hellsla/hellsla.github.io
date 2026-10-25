@@ -31,6 +31,8 @@ When a mistake costs a review round, add a line under the right heading (what, w
 - A literal dollar sign starts math. Write "euroa" or "€" instead.
 - Math in an SVG `<text>` or in canvas text is plain text. Keep the labels short.
 - An inline `\dfrac` makes a tall fraction that breaks the line. Put calculations with fractions on their own line in display math.
+- A `·` inside `\text{}` is a KaTeX parse error. Write compound units as `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}` or `\text{J/(mol}\cdot\text{K)}`. The lint reports it.
+- Every display formula must fit a 360 px phone without scrolling: about 25 visible characters per line. Split long calculations into rows, one `=` step per row. In `aligned` the two columns' widths add up, so `a &= b \\ &= c` is no narrower when `a` is long: put a long left side alone on its own row and the `= …` parts on the following rows in one left-aligned column (`\begin{aligned} &a \\ &= b \\ &\approx c \end{aligned}`). Run `python scripts/check_layout.py <id>` after the build; it lists every formula, figure or page that is too wide. (Cost a round in fy3-6 and fy3-8.)
 - A wide markdown table overflows a phone. The site CSS makes tables scroll sideways inside themselves; keep header cells short.
 
 ### Check before every commit that touches math
@@ -52,6 +54,8 @@ Both exit 1 on a problem. CI and the gate run them too. After changing any formu
 - Final answers have as many significant figures as the data (2 sf data gives 2 sf). Check that a student who rounds correctly stays inside the relative `tolerance` (0,02).
 - Compute every answer in `answers.py` (one commented line per step, prints `{id: value}` as JSON); the lint and the gate re-run it against `exercises.json`.
 - The lint checks that a student rounding to the data's significant figures stays inside the tolerance. `77 K` has two figures, so an answer of −196 °C needs a tolerance of 0,03 or the task must ask for a whole number.
+- Coefficients written with a power of ten count too: `9 · 10⁻⁶ 1/K` has one significant figure, so write `9,0 · 10⁻⁶ 1/K`. The lint reads the mantissa. (Cost a round in fy3-8.)
+- A task whose answer is a datum plus a small change (the new length L = L₀ + ΔL) cannot be marked by relative tolerance: the unchanged L₀ is almost as close as the right answer. Ask for the change (ΔL in mm) and show L in the solution.
 
 ### Finnish
 - Avoid "25 m matka" and "80 N voimalla". Either inflect the unit (`80 N:n voimalla`, `40 N:ssä`) or write nominative sentences ("Voima on 80 N ja matka 25 m").
@@ -61,6 +65,8 @@ Both exit 1 on a problem. CI and the gate run them too. After changing any formu
 ### Pages and publishing
 - Only `status: reviewed` lessons are built into `site/`, which is committed and served by Pages from `main`. Previews and `--all` go to the git-ignored `preview/`.
 - The numeric readout in a simulation is DOM text, not canvas text, so it stays readable on a phone. Tap targets are at least 40 px, and there is no horizontal overflow at 390 px.
+- In a simulation, create `div.controls` before `div.readout`, with the main button first, so the canvas and its button fit in one 640 px phone screen; the embed pauses an off-screen canvas, so a button below the fold starts an animation nobody sees. Clamp the animation step (`Math.min(p.deltaTime, 100)`) so a resume cannot skip ahead. (Cost a round in fy3-6 and fy3-7.)
+- Canvas text grows with `ts()` (k ≈ 2 at 360 px), so labels that fit at 1280 px collide on a phone. Before finishing a sim, sweep every slider over its full range at 360, 390 and 1280 px and check that no two label boxes intersect or leave the canvas; draw every second tick label when k > 1,5. (Cost two rounds in fy3-4.)
 - `templates/sim-embed.js` wraps every sim: it resizes the 600×400 canvas to the container and scales the drawing, pauses the sketch when it is off-screen, lowers the frame rate under `prefers-reduced-motion`, and sets the page font inside the canvas. Sims draw in 600×400 coordinates and never handle resizing themselves. `test_sims.py` scrolls the sim into view before it reads `simState`.
 - The page places the simulation after the `## Kaava` section (before `## Esimerkki`). A line `<!-- sim -->` in `lesson.md` overrides the position.
 - Exercises have an answer field: the page compares the typed number with `answer` within `tolerance` (decimal comma accepted). Everything happens in the browser; nothing is stored or sent.

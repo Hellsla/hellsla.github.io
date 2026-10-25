@@ -1,23 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 0eb40272800b66b3
+CONTENT-HASH: 602a68e8bcb43fde
 
-The lesson delivers its goals and tells one story: interaction, then force, then the voimamittari with its calibration (the SVG now closes that paragraph), then G = m g with g in m/s², and back to the astronaut question. It stays inside FY3: no motion is explained by force, there are no vectors, and 1 N = 1 kg·m/s² is left to FY4. The round-2 Polish items are applied. The rewritten L1-02 and L1-04 now cover proportional stretch in both directions. Exit ticket 3 now adds a calculation to the mass-versus-weight question. The length (693 words) matches fy3-2 (703) and fy3-3 (829).
+The lesson does what its goals promise and tells one story. It opens with the astronaut question, then covers interaction, force and the voimamittari with its calibration. It reaches G = m g with g in m/s² and answers the opening question with the kuudesosa sentence (lesson.md:38, now "≈ 0,17 ≈ 1/6"). The new Moon sentence (lesson.md:22) states the fact without giving a wrong cause, and the summary (lesson.md:55) now gives 9,81 N without "noin", which matches the 1 kg data. The new Mars L3-03 closes the story well. It takes the kylpyhuonevaaka idea from the misconception section (lesson.md:50) into an unfamiliar context and does not solve it in advance, because the theory only mentions the Moon. The lesson stays inside FY3: force never causes motion, there are no vectors, and 1 N = 1 kg·m/s² is left to FY4. The length (717 words) matches fy3-2 (703) and fy3-3 (829). The gold lesson is still a placeholder.
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:30 — L1-04 reuses the Ydinajatus spring (5,0 N ↔ 2,0 cm, lesson.md:32). Its answer, 7,5 N, is the sum of the two cases worked there. — Use new data, e.g. 4,0 N ↔ 2,5 cm, asking about 6,0 cm (9,6 N), and update answers.py and solutions.md.
-- lesson.md:46 — "Kuun massa on paljon pienempi …, joten …" makes mass the only cause. The table (lines 55-60) contradicts this: Jupiter has about 300 times the Earth's mass but only 2,5 times its g. — Write "Kuu on paljon pienempi kuin Maa, ja …", or add that g depends on the body's mass and size.
-- exit-ticket.json:7 — The question gives the water's mass, but the quoted sentence is about the bottle ("pullo painaa"). — Quote "vesi painaa puolitoista kiloa".
-- exit-ticket.json:4 — No exit-ticket answer names the main goal, force as a measure of interaction. — End answer 1 with "koska Kuun ja kappaleen välinen vuorovaikutus on heikompi kuin Maan ja kappaleen".
+- exercises.json:98 — "näyttää kilogrammoina luvun, joka saadaan jakamalla voima arvolla 9,81 m/s²" is a little heavy. — Optionally use the lesson's wording: "Voimamittarin kilogramma-asteikko on tehty Maassa jakamalla voima arvolla 9,81 m/s²."
 
 ## Checked
-- Lint: 0 errors, 0 warnings. The hash was the same at start and end.
-- meta.json goals equal curriculum.json. voimamittari is in glossary.json.
-- No N/kg in the lesson, exercises, exit ticket or sim-spec. The g values agree in the table, exercises and sim.
-- All 12 answers recomputed. Significant figures follow the data.
-- Levels have 5/4/3 exercises. None repeats the robot example.
-- The FY1 reference (lesson.md:32) is valid: fy1-5 covers s = vt and direct proportionality.
-- The sim-spec readout line and the m · 24,8 m/s² full scale match sim.js:47-50.
-- L3-03 matches the bathroom-scale model (lesson.md:72).
+- Lint: 0 errors, 0 warnings. check_latex: 8 fragments OK. The editor hash was the same at start and end.
+- meta.json goals equal curriculum.json, and all seven glossary terms are in glossary.json.
+- There is no N/kg in any lesson file. The g values agree in the table, the exercises, sim.js:14 and sim-spec.
+- answers.py was re-run, and all 12 answers match exercises.json. L3-03: 26 · 9,81 / 3,71 = 68,75 → 69 kg, inside the 0,02 tolerance at 2 sf.
+- L3-03 needs both ideas (scale reading means G/9,81, then m = G/g_Mars) and its sanity line explains why mass > reading.
+- Levels have 5/4/3 exercises, and each level has a spring task and a G = m g task. No exercise repeats the robot example.
+- Exit tickets: 3,0 kg gives 29 N and 4,9 N, 8,0 N → 3,0 cm gives 20 N → 7,5 cm, and 1,5 kg gives 15 N. They test the main goal and the mass-versus-weight confusion.
+- The worked example's reason (lesson.md:47) and exit ticket 1 use the same interaction wording as lesson.md:22.
+- The sim-spec readout and the m · 24,8 m/s² bar scale match sim.js:6 and sim.js:19–20.
