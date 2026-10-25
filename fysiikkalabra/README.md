@@ -1,12 +1,13 @@
 # Fysiikkalabra — Claude Code scaffold
 
-A Fysiklabbet-style teaching site (theory + simulations + exercises) built with Claude Code and a team of 15 agents.
+A Fysiklabbet-style teaching site (theory + simulations + exercises) built with Claude Code and a team of agents (13 active, 4 parked in `.claude/parked/`).
 It lives in the `fysiikkalabra/` folder of the `hellsla.github.io` repository.
 
 ## Quick start
 ```bash
 cd fysiikkalabra
 pip install markdown playwright && playwright install chromium
+python scripts/lint_lesson.py fy3-2  # mechanical rules from NOTES.md, answers.py vs exercises.json; exits 1 on an ERROR
 python scripts/build.py              # site/ from reviewed lessons only (committed, published)
 python scripts/build.py fy3-2        # preview/fy3-2.html regardless of status (git-ignored)
 python scripts/build.py --all        # preview/ with every lesson, drafts included (what CI runs)
@@ -22,8 +23,6 @@ Inside Claude Code:
 ```
 /build-lesson fy3-2        # draft one lesson with you, then run producers + reviewers
 /review-lesson fy3-2       # reviewers only, on an existing lesson
-/daily-news                # one news item (also wired as a scheduled task)
-/weekly-newsletter         # draft this week's newsletter
 ```
 Agents live in `.claude/agents/`, commands in `.claude/commands/`, house rules in `CLAUDE.md`.
 Nothing is published unless `meta.json` says `"status": "reviewed"`.
@@ -52,8 +51,8 @@ python scripts/gate.py fy3-3            # check only; writes review/gate.md
 python scripts/gate.py fy3-3 --publish  # what the publisher agent runs
 python scripts/test_gate.py             # the gate's own tests
 ```
-A lesson is published only when all required reviewers wrote `VERDICT: PASS` with the lesson's current `CONTENT-HASH`,
-the lesson structure is valid, and the LaTeX, build and simulation checks pass. Editing the lesson afterwards changes the hash
+A lesson is published only when all required reviewers wrote `VERDICT: PASS` with the current `CONTENT-HASH` of the files they judge
+(`gate.py --hash <id> --for <reviewer>`), the lesson structure is valid, and the lint, `answers.py`, LaTeX, build and simulation checks pass. Editing the lesson afterwards changes the hash
 and CI (`gate.py --verify`) fails until the review runs again. The publisher commits to the working branch only; merging
 into `main`, which makes the page live, stays a repository decision.
 
@@ -61,3 +60,5 @@ into `main`, which makes the page live, stays a repository decision.
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }
 ```
+`answers.py` in the lesson folder computes every answer and prints `{id: value}`; the lint and the gate compare it with this file.
+The page lets the student type an answer and checks it within `tolerance` in the browser. `meta.solutions` (`first`, `all`, `none`) decides which worked solutions are rendered.

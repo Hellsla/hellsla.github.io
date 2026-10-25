@@ -1,20 +1,98 @@
+/* Shared theme for the simulations on hellsla.github.io.
+   One set of tokens (colours, type, strokes) and three layout modes:
+     slide     a 16:9 frame that fills the viewport, for the classroom screen (body.sim-body > .slide / .sim-wrap)
+     panel     a stage with a control panel at the side (or below on a phone), like the fy05 simulations (.sim-panel)
+     embedded  fills the width of whatever contains it, 16:9, for a lesson page or an iframe (.sim-embedded)
+   A simulation links this file and keeps only its own SVG and animation rules inline. */
 :root{
   --sim-bg:#ffffff;
+  --sim-panel:#f6f6f3;
   --sim-ink:#3F3D39;
+  --sim-ink-2:#6b6864;
+  --sim-line:#222222;
+  --sim-hatch:#d8d8d8;
+  --sim-gray:#F4F4F4;
+  --sim-blue:#2E86A6;
+  --sim-red:#D84A62;
+  --sim-orange:#F28C28;
+  --sim-yellow:#FFD95A;
+  --sim-yellow-pale:#FFF3B0;
+  --sim-yellow-border:#D9B536;
+  --sim-green:#4A8B5C;
+  --sim-pale-blue:#E7F4F5;
+  --sim-font:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --sim-font-ui:clamp(15px,2.2vw,22px);
+  --sim-font-small:clamp(13px,1.5vw,17px);
+  --sim-weight-regular:520;
+  --sim-weight-strong:620;
+  --sim-stroke-main:4;
+  --sim-stroke-thin:2.4;
+  --sim-opacity-muted:.45;
+  --sim-control-inset:74px;
+  --sim-control-bottom:22px;
+  --sim-gap:18px;
 }
-*{box-sizing:border-box}
+/* the border-box reset the first 17 simulations were built with; the gas-law slides (.sim-slide) were written content-box */
+:where(html:has(> body.sim-body:not(.sim-slide))),:where(body.sim-body:not(.sim-slide)),:where(body.sim-body:not(.sim-slide)) *,:where(.sim-wrap,.sim-panel,.sim-embedded),:where(.sim-wrap,.sim-panel,.sim-embedded) *{box-sizing:border-box}
 html,body{margin:0;width:100%;height:100%}
-body.sim-body{display:grid;place-items:center;background:var(--sim-bg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--sim-ink)}
-.sim-wrap{width:min(100vw, calc(100vh * 16 / 9));height:min(100vh, calc(100vw * 9 / 16));aspect-ratio:16/9;position:relative;overflow:hidden;background:#fff}
-.sim-wrap>svg{width:100%;height:100%;display:block;background:#fff}
+body.sim-body{display:grid;place-items:center;background:var(--sim-bg);font-family:var(--sim-font);color:var(--sim-ink)}
+body.sim-slide{overflow:hidden}
+
+/* slide mode */
+.sim-wrap{width:min(100vw,calc(100vh * 16 / 9));height:min(100vh,calc(100vw * 9 / 16));aspect-ratio:16/9;position:relative;overflow:hidden;background:var(--sim-bg)}
+.sim-wrap>svg{width:100%;height:100%;display:block;background:var(--sim-bg)}
+.slide{width:min(100vw,calc(100vh * 16 / 9));height:min(100vh,calc(100vw * 9 / 16));aspect-ratio:16/9;position:relative;background:var(--sim-bg)}
+:where(.slide) svg{width:100%;height:100%;display:block}
+:where(.slide) text{fill:var(--sim-ink);font-size:21px;font-weight:var(--sim-weight-regular)}
+:where(.slide) .small{font-size:17px}
+:where(.slide) .readout{font-size:22px;font-weight:var(--sim-weight-strong)}
+
+/* controls: an absolutely anchored bar at the bottom of the slide.
+   .sim-* classes keep the exact values the 17 existing simulations were built with; .slide .controls carries the
+   grid variant used by the FY03 gas-law slides (each slide sets its own grid-template-columns). */
 .sim-controls{position:absolute;left:34px;right:34px;bottom:18px;display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;padding:0}
 .sim-sliderBox{display:flex;align-items:center;gap:12px}
 .sim-sliderBox label{font-size:clamp(15px,1.6vw,20px)}
 .sim-range{width:min(420px,48vw);accent-color:var(--sim-ink)}
 .sim-btn{font:inherit;font-size:clamp(14px,1.5vw,18px);background:#fff;color:var(--sim-ink);border:2px solid var(--sim-ink);border-radius:999px;padding:6px 16px;cursor:pointer}
 .sim-btn:active{transform:translateY(1px)}
+:where(.slide) .controls{position:absolute;left:var(--sim-control-inset);right:var(--sim-control-inset);bottom:var(--sim-control-bottom);display:grid;align-items:center;gap:var(--sim-gap);color:var(--sim-ink);font-size:var(--sim-font-ui)}
+.slide input[type=range]{width:100%;accent-color:var(--sim-line)}
+:where(.slide) button{border:2px solid var(--sim-line);background:var(--sim-bg);color:var(--sim-ink);border-radius:999px;padding:7px 16px;font:inherit;cursor:pointer}
+:where(.slide) button:active{transform:translateY(1px)}
+:where(.slide) .value{min-width:105px;font-weight:var(--sim-weight-strong);white-space:nowrap}
 @media (max-width:760px){
   .sim-controls{left:22px;right:22px;gap:10px}
   .sim-sliderBox{width:100%}
   .sim-range{width:100%}
+  :where(.slide) .controls{left:34px;right:34px;gap:10px}
+  :where(.slide) .value{min-width:auto;font-size:15px}
+  :where(.slide) button{padding:6px 12px}
 }
+
+/* panel mode: stage + side panel, panel moves below the stage on a narrow screen */
+.sim-panel{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto;background:var(--sim-bg);font-family:var(--sim-font);color:var(--sim-ink)}
+.sim-panel>.stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+.sim-panel>.stage>svg{width:100%;height:100%;display:block}
+.sim-panel>.panel{display:flex;flex-direction:column;gap:var(--sim-gap);padding:var(--sim-gap);width:min(26rem,34vw);background:var(--sim-panel);border-left:1px solid var(--sim-hatch);overflow:auto;font-size:var(--sim-font-ui)}
+.sim-panel .panel label{display:flex;justify-content:space-between;gap:12px;font-weight:var(--sim-weight-regular)}
+.sim-panel .panel label b{font-weight:var(--sim-weight-strong)}
+.sim-panel .panel input[type=range]{width:100%;accent-color:var(--sim-blue);min-height:40px;margin:0}
+.sim-panel .panel button{font:inherit;font-size:var(--sim-font-ui);min-height:40px;border:1px solid var(--sim-hatch);border-radius:10px;background:var(--sim-bg);color:var(--sim-ink);padding:6px 14px;cursor:pointer}
+.sim-panel .panel button.primary{background:var(--sim-ink);color:var(--sim-bg);border-color:var(--sim-ink)}
+@media (max-width:760px){
+  .sim-panel{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .sim-panel>.panel{width:auto;border-left:0;border-top:1px solid var(--sim-hatch)}
+}
+
+/* embedded mode: a lesson page or an iframe decides the width */
+.sim-embedded{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--sim-bg);font-family:var(--sim-font);color:var(--sim-ink);border-radius:12px}
+.sim-embedded>svg{width:100%;height:100%;display:block}
+.sim-embedded .sim-controls{left:16px;right:16px;bottom:12px;gap:10px;font-size:var(--sim-font-small)}
+
+/* shared drawing classes */
+:where(.slide) .sketch,:where(.sim-embedded) .sketch,:where(.sim-panel) .sketch{fill:none;stroke:var(--sim-line);stroke-width:var(--sim-stroke-main);stroke-linecap:round;stroke-linejoin:round}
+:where(.slide) .thin,:where(.sim-embedded) .thin,:where(.sim-panel) .thin{stroke-width:var(--sim-stroke-thin)}
+:where(.slide) .hatch,:where(.sim-embedded) .hatch,:where(.sim-panel) .hatch{stroke:var(--sim-hatch);stroke-width:1.1;stroke-linecap:round}
+:where(.slide) .muted,:where(.sim-embedded) .muted,:where(.sim-panel) .muted{opacity:var(--sim-opacity-muted)}
+@media (prefers-reduced-motion:reduce){.slide *,.sim-wrap *,.sim-panel *,.sim-embedded *{transition-duration:.01ms!important;animation-duration:.01ms!important}}

@@ -1,8 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 941320a85db9b4cb
+CONTENT-HASH: c28f74ef54584ec7
 
-Whole-article review of fy3-1. The lesson delivers both goals: force as a measure of interaction strength (apple, Earth/Moon framing, spring-balance proportionality and calibration) and the mass/weight link G = mg, with force never treated as the cause of a change of motion (the lesson says explicitly that weight is not the reason for any motion or fall; no Newton's laws, vectors or liikeyhtälö). The g convention is m/s² everywhere (lesson, table, exercises, solutions, exit ticket, sim code and spec), with no N/kg left, and it agrees with fy3-2 (g = 9,81 m/s²). Length (5193 characters) is on par with fy3-2 (5287). One story runs through theory, worked example, sim, exercises and exit ticket (Earth/Moon/Mars/Jupiter weights, mass constant versus weight changing, spring stretch). The worked example (120 kg robot, Earth and Mars) is not repeated by any exercise, and the numbers I rechecked (1180 N, 445 N, 39, 49, 62, 0,59, 1190, 6,8, 133, 0,99, 29/4,9 N, 690 N) are correct.
+The lesson does what its goals promise and tells one story. It goes from interaction to force, then to the voimamittari, then to G = m g with the g table, and ends back at the opening astronaut question. It stays inside FY3, with no motion and no vectors. The exercises, the exit ticket and the sim follow the same threads: weight on different bodies, proportional stretch, and mass versus weight (the bathroom scale in the misconception section returns in L3-03). The round-1 blocking issue is fixed. sim-spec.md now says that the spring and the arrow grow with the mass while the bars show the weight ratio, and this matches sim.js lines 45-52. The bar floor is now a safeguard ("varmuuden vuoksi"). lesson.md is unchanged, and its length (about 670 words) suits a first lesson.
 
-1. Non-blocking: L1-02 and L1-04 are near-duplicates (spring proportionality, one scaling up, one down); the second could use a different type, for example reading a stretch from a given mass.
-2. Non-blocking: fy3-3 was not found to use g, so consistency was checked against fy3-2 only; no contradiction exists.
-3. Non-blocking: L3-02 says the lifter "tuottaa voiman" equal to a weight; it stays within force as a measure, but a slightly more concrete phrasing (holds a hanging load at rest) could be considered.
+## Blocking
+(none)
+
+## Polish
+- lesson.md:33-43 — The voimamittari SVG sits under Esimerkki, but the example is about the robot. — Move the SVG to the end of Ydinajatus, after line 8. Left for the human in round 1; the line numbers given then were wrong.
+- lesson.md:6-14 — Ydinajatus has five paragraphs, while gold asks for three. — Merge lines 8, 10 and 12 into one voimamittari paragraph. Left for the human in round 1.
+- sim-spec.md:1 — "Tekstinä kankaan alla" does not mention the readout line that explains the bar scale (sim.js:50). — Add "sekä palkkikaavion asteikon selitys".
+
+## Checked
+- Lint: 0 errors, 0 warnings. The editor hash was the same at the start and the end.
+- The only change in editor files since 9e1104c is the sim-spec.md sentence, which uses my round-1 wording.
+- The sim-spec statements match sim.js: the fixed scale is 2480 N with a 110 px arrow, the chart's full scale is m · 24,8 N, there is a rest length, and the floors are 2 px for bars and 3 px for the arrow.
+- The bar floor never takes effect: the smallest bar (Kuu) is 1,62/24,8 · 220 ≈ 14 px at every mass.
+- meta.json goals match curriculum.json. FY1 covers putoamiskiihtyvyys (fy1-6), so the reference at line 21 is valid.
+- The g values in the sim match the table at lines 25-28.
+- The levels have 5, 4 and 3 exercises, and none repeats the robot example.
+- The exit ticket covers mass versus weight, stretch and the "kiloa" misconception.

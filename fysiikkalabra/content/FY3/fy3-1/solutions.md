@@ -4,7 +4,7 @@
 **Kaava:** G = m g
 **Sijoitus:** G = 4,0 kg · 9,81 m/s² = 39,24 N
 **Vastaus:** 39 N
-**Järkevyys:** Yhden kilogramman massan paino on noin 10 N, joten 4 kg:n massan paino on noin 40 N.
+**Järkevyys:** 1 kg:n massan paino on noin 10 N, joten 4,0 kg:n massan paino on noin 40 N.
 
 ## fy3-1-L1-02
 **Annettu:** 4,0 N → 2,0 cm, kysytty venymä painolla 12 N
@@ -44,7 +44,7 @@
 **Kaava:** G = m g, joten m = G / g
 **Sijoitus:** m = 49 N / 9,81 m/s² = 4,995 kg
 **Vastaus:** 5,0 kg
-**Järkevyys:** Yhden kilogramman massan paino on noin 10 N, joten 49 N vastaa noin 5 kg:n massaa.
+**Järkevyys:** Yhden kilogramman paino on noin 10 N, joten 49 N vastaa noin 5 kg:n massaa.
 
 ## fy3-1-L2-02
 **Annettu:** m = 60 g = 0,060 kg, g = 9,81 m/s²
@@ -52,7 +52,7 @@
 **Kaava:** G = m g
 **Sijoitus:** G = 0,060 kg · 9,81 m/s² = 0,5886 N
 **Vastaus:** 0,59 N
-**Järkevyys:** Sadan gramman massan paino on noin 1 N, joten 60 g:n massan paino on noin 0,6 N.
+**Järkevyys:** Noin 100 g:n kappaleen paino on 1 N, joten 60 g:n kappaleen paino on noin 0,6 N.
 
 ## fy3-1-L2-03
 **Annettu:** m = 145 kg, g_Maa = 9,81 m/s², g_Kuu = 1,62 m/s²
@@ -60,7 +60,7 @@
 **Kaava:** G = m g molemmissa paikoissa, sitten erotus
 **Sijoitus:** G_Maa = 145 kg · 9,81 m/s² = 1422,45 N; G_Kuu = 145 kg · 1,62 m/s² = 234,9 N; ero = 1422,45 N − 234,9 N = 1187,55 N
 **Vastaus:** 1190 N
-**Järkevyys:** Paino pienenee noin 83 %, mikä vastaa suhdetta 1,62 / 9,81 ≈ 1/6.
+**Järkevyys:** Kuussa paino on 1,62 / 9,81 ≈ 1/6 Maan painosta, joten se pienenee noin 5/6 eli 83 %.
 
 ## fy3-1-L2-04
 **Annettu:** m = 0,20 kg, venymä 1,5 cm; kysytty voima venymällä 4,5 cm; g = 9,81 m/s²

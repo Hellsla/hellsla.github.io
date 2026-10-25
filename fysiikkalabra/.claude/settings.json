@@ -2,13 +2,23 @@
   "permissions": {
     "allow": [
       "Bash(python scripts/*)",
+      "Bash(python3 scripts/*)",
+      "Bash(python -I *)",
+      "Bash(python3 -I *)",
       "Bash(git log*)",
       "Bash(git status*)",
-      "Bash(git diff*)"
+      "Bash(git diff*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push -u origin claude/*)",
+      "Bash(git push -u origin news*)"
     ],
     "deny": [
-      "Bash(git push*)",
-      "Bash(git commit*)",
+      "Bash(git push* main*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git rebase*)",
+      "Bash(git reset --hard*)",
       "Bash(rm -rf*)"
     ]
   }

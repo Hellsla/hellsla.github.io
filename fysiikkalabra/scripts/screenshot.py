@@ -9,6 +9,8 @@ if not f.exists(): f = ROOT / "site" / f"{sys.argv[1]}.html"
 with sync_playwright() as pw:
     b = launch(pw)
     for w in (390, 1280):
-        p = b.new_page(viewport={"width": w, "height": 900}); p.goto(f.resolve().as_uri()); p.wait_for_timeout(1000)
+        p = b.new_page(viewport={"width": w, "height": 900}); p.goto(f.resolve().as_uri())
+        p.evaluate("document.getElementById('sim') && document.getElementById('sim').scrollIntoView()"); p.wait_for_timeout(700)   # let the sim draw once
+        p.evaluate("window.scrollTo(0, 0)"); p.wait_for_timeout(300)
         p.screenshot(path=str(ROOT / f"review/{sys.argv[1]}-{w}.png"), full_page=True); print("wrote", f"review/{sys.argv[1]}-{w}.png")
     b.close()

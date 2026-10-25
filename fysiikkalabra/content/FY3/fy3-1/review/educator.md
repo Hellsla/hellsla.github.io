@@ -1,20 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 941320a85db9b4cb
+CONTENT-HASH: 4531ded1008f3bd6
 
-Scope: lesson.md, exercises.json, exit-ticket.json of fy3-1, read as a 17-year-old with FY1 and FY2. All answers recomputed (L1: 39,2 / 6,0 / 48,6 / 1,5 / 62,0; L2: 5,0 / 0,589 / 1188 / 5,89; L3: 6,81 / 133 / 0,991; exit ticket 29,4 and 4,86 / 7,5): all within the 0,02 tolerance of the stored answers. g appears only in m/s². Length 697 words against 703 in fy3-2; same section order (Miksi, Ydinajatus, Kaava, Esimerkki, Yleinen virhekäsitys, Tiivistelmä). A student can follow the lesson. Findings below are all non-blocking polish.
+## Blocking
 
-1. g paragraph (lesson.md line 21), bridging sentence works but the paragraph is long and the order is bumpy. The sentence "Paino mittaa vuorovaikutuksen voimakkuutta, mutta ei ole syy minkään liikkeen tai putoamisen alkamiseen" comes in the middle of the explanation, and "Muualla g on erilainen" then follows it abruptly. A student reads "same number as FY1 free-fall acceleration" and may stop at "but weighing is not a cause of falling". Suggest moving the weight-is-not-a-cause sentence to the end and splitting the paragraph. Finnish rewrite:
-   "missä G on paino (N), m massa (kg) ja g painovoiman voimakkuus (m/s²). Luku g on sama luku kuin FY1:n putoamiskiihtyvyys, mutta tässä se mittaa vuorovaikutuksen voimakkuutta jokaista massan kilogrammaa kohti. Maan pinnalla g = 9,81 m/s², joten 1 kg:n massan paino on 9,81 N. Kun massa on kilogrammoina ja g yksikössä m/s², tulo G = mg tulee newtoneina (1 N = 1 kg·m/s², tarkemmin FY4:ssä). Muualla g on erilainen; taulukon arvot koskevat taivaankappaleen pintaa (Jupiterilla pilvien yläpinnan tasoa):"
-   and, as a separate sentence after the table or in the misconception section: "Paino kertoo vuorovaikutuksen voimakkuuden, mutta sitä ei tässä vaiheessa käsitellä liikkeen syynä."
+## Polish
+- lesson.md:12 — the calibration bodies get "paino noin 1 N" without a mass, and line 17 then uses "two identical bodies stretch twice as much" as the reason G ∝ m, which a careful student may find circular — write "joiden massa on kunkin noin 100 g eli paino noin 1 N. Kukin kappale vetää jousta yhtä voimakkaasti, joten kaksi kappaletta vetää sitä kaksinkertaisella voimalla."
+- lesson.md:10 — "FY1:n lineaarisessa mallissa silloin, kun vakiotermi on nolla" is abstract for a first-timer — name the familiar cases: "kuten FY1:n suoraan verrannollisissa malleissa $s = vt$ ja $m = \rho V$".
+- lesson.md:14 — the hook asks "miksi" but the text only says the Moon's interaction is weaker — append "Kuun massa on paljon pienempi kuin Maan, joten se vetää astronauttia heikommin."
+- exercises.json fy3-1-L1-02, fy3-1-L1-04 — "4,0 N:n paino", "12 N:n painolla" use "paino" for the hanging object and blur the mass/weight distinction the lesson teaches; the two tasks are also the same rule-of-three — write "ripustetaan kappale, jonka paino on 4,0 N" and turn L1-04 round: "Jousi venyy 2,0 cm 5,0 N:n voimalla. Kuinka suuri voima venyttää sitä 3,0 cm?" (7,5 N, update answers.py).
+- exit-ticket.json q3 — repeats lesson.md:52 almost word for word (70 kg, 690 N), so it tests recall — use a transfer item, e.g. "Pullossa on 1,5 kg vettä. Mikä on veden paino Maassa, ja miksi ’pullo painaa 1,5 kiloa’ on epätarkka?" (noin 15 N).
 
-2. Summary bullet 3 (line 57) is clear and consistent with the text. One small gain: say "painovoiman voimakkuus" so the term matches the formula paragraph. Finnish rewrite:
-   "- Painovoiman voimakkuus on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$, joten yhden kilogramman massan paino Maassa on noin 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$."
-
-3. Mass/weight wording (lines 14, 52) is clear. The bathroom-scale sentence is slightly dense ("mittaa voimaa ja sen asteikko on tehty Maassa jakamalla voima luvulla 9,81 m/s²"). Finnish rewrite:
-   "Kylpyhuonevaaka näyttää silti kilogrammoja, koska sen asteikko on tehty Maassa: vaaka mittaa voimaa ja jakaa sen luvulla 9,81 m/s². Kuussa tällainen vaaka näyttäisi vain noin kuudesosan oikeasta massasta."
-
-4. Level check vs rubric (no violation). L1-02 and L1-04 are ratio reasoning on the spring graph rather than a formula, but one step and fine at L1. L1-03 and L1-05 use the same one-step G = mg as the example but with a new context and body, which is acceptable at L1. L3-01 (Mars reading) is close to the worked example's idea but adds the "same meter, different place" reasoning, so it holds at L3. L3-03 is the strongest level-3 item and is unambiguous. No change needed.
-
-5. Exit ticket: three checks match the goals (mass versus weight, proportionality, kg wording) and need no lookup. Q1 introduces "29 N" for 29,4 N, correct to 2 sf. No change needed.
-
-6. Intro question (line 3) says the astronaut weighs "kuudesosan"; g ratio 1,62/9,81 = 0,165, about one sixth, consistent. Optional hint of the answer already in the lesson; no change.
+## Checked
+- Hash same at start and end; lint clean.
+- Changes since the published hash (lesson.md:21, :52) are wording only.
+- Each paragraph adds at most one idea; FY1 prerequisites (linear model, 9,81 m/s²) are named where used; N/kg vs m/s² deferred to FY4 in one plain sentence.
+- Motivating question is one students ask; answered at lesson.md:14, :52.
+- Scope: no Newton's laws or vectors (FY4).
+- Levels: L1 five one-formula tasks, L2 four (rearrangement, g→kg, difference, two steps), L3 three (changed place, same force, Moon scale) match the rubric.
+- No exercise repeats the worked example (120 kg robot, Earth/Mars) with new numbers.
+- Answers recomputed: worked example 1180 N / 445 N, exit ticket 29 N, 4,9 N, 7,5 cm, 690 N all correct.
+- Exit ticket q1 and q2 test the core ideas (mass constant, weight changes; spring proportionality).
+- Length and structure match fy3-2.

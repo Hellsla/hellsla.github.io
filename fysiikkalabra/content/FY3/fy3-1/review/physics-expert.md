@@ -1,28 +1,48 @@
 VERDICT: PASS
-CONTENT-HASH: 941320a85db9b4cb
+CONTENT-HASH: 1cddd4ad3d506bd2
 
-Findings (no FAIL-level issues):
+Round 2 review of fy3-1 after the round-1 fixes. Lint 0/0. Domain hash unchanged from start to end.
 
-1. lesson.md l.21 and l.57: g is written as 9,81 m/s² everywhere; bridging sentence ("sama luku kuin FY1:n putoamiskiihtyvyys, mutta tässä se mittaa vuorovaikutuksen voimakkuutta jokaista kilogrammaa kohti"), 1 kg weighs 9,81 N, and 1 N = 1 kg·m/s² are correct. Summary no longer equates g with a weight. Weight is explicitly not the cause of motion (FY3 scope respected).
-2. lesson.md table (Kuu 1,62; Mars 3,71; Maa 9,81; Jupiter 24,8 m/s²) correct, Jupiter caveat (cloud tops) correct.
-3. Worked example: 120·9,81 = 1177,2 N ≈ 1180 N (1,18 kN); 120·3,71 = 445,2 N ≈ 445 N. Correct. Apple ~1 N (0,981 N), 70 kg -> 686,7 N ≈ 690 N, bathroom scale / 9,81 m/s² and Moon ≈ 1/6 (0,165) correct.
-4. solutions.md: wording "massan paino" correct, all numbers and sanity checks consistent (e.g. 30 kg Earth 294 N, 83 % decrease).
-5. exercises.json: all 12 answers recomputed from problem text, all within tolerance 0,02 (output below). Level-3 tasks physically sound (L3-02 equal force, L3-03 scale shows G/9,81 m/s² -> 0,99 kg).
-6. exit-ticket.json: 29,43 -> 29 N, 4,86 -> 4,9 N (≈1/6), 7,5 cm, 686,7 ≈ 690 N all correct.
-7. sim.js: BODIES g in m/s²; G = m·g in N; full scale 100 kg·24,8 = 2480 N; texts correct; no N/kg.
+## Blocking
+(none)
 
-Python output (python3 -I):
-fy3-1-L1-01 39.24 39 N rel 0.0061 OK
-fy3-1-L1-02 6.0 6.0 cm rel 0.0 OK
-fy3-1-L1-03 48.6 49 N rel 0.0082 OK
-fy3-1-L1-04 1.5 1.5 cm rel 0.0 OK
-fy3-1-L1-05 62.0 62 N rel 0.0 OK
-fy3-1-L2-01 4.9949 5.0 kg rel 0.001 OK
-fy3-1-L2-02 0.5886 0.59 N rel 0.0024 OK
-fy3-1-L2-03 1187.55 1190 N rel 0.0021 OK
-fy3-1-L2-04 5.886 5.9 N rel 0.0024 OK
-fy3-1-L3-01 6.8073 6.8 N rel 0.0011 OK
-fy3-1-L3-02 133.2222 133 kg rel 0.0017 OK
-fy3-1-L3-03 0.9908 0.99 kg rel 0.0008 OK
+## Polish
+1. sim.js:78, 93–94 — The new line "asteikko 0–X N" sits at the top of the y axis (BARS.y), but X = m · 24,8 N is the height of the Jupiter bar, 220 px of the 250 px axis. Read literally, the axis top would be 1,14 · X. No ticks, and the Jupiter label shows X, so no wrong weight is read. — Either end the y axis at BARS.y + 30 (the full-scale height), or draw a short tick there and print the scale line beside it.
+2. solutions.md:47 — "Yhden kilogramman paino" mixes mass and weight in a lesson that teaches the difference. The number is right. — "1 kg:n massan paino on noin 10 N", as in the reworded L1-01 line.
 
-Hash re-run at end: 941320a85db9b4cb (unchanged).
+## Checked
+- lesson.md: G = mg with g in N/kg, the spring proportionality ("kun jousta ei venytetä liikaa"), the calibration, and the g table (1,62 / 3,71 / 9,81 / 24,8) are correct. Everything stays within FY3 scope: no Newton's laws, no vectors.
+- lesson.md numbers: 120 · 9,81 = 1177,2 ≈ 1180 N; 120 · 3,71 = 445,2 N; 70 · 9,81 = 686,7 ≈ 690 N; 1,62/9,81 = 0,165 (about a sixth).
+- answers.py: every line uses the right formula and conversion, the g dict matches the table, and every answer is within its tolerance (output below).
+- Hand recomputation of L2-03, L3-02 and L3-03 (below).
+- solutions.md:7, :63 (reworded): 1 kg → about 10 N → 4,0 kg about 40 N is correct. The drop of 1 − 1,62/9,81 = 0,835 is "noin 5/6 eli 83 %", which matches 1187,55/1422,45.
+- solutions.md: reasoning correct in all 12 (L3-03 scale measures force; L3-02 fixed force, m = F/g).
+- exit-ticket.json: 29 N and 4,9 N; 7,5 cm; 690 N are all correct.
+- sim.js: G = m·g exactly. Stretch and arrow are purely proportional on a fixed scale. Bar height / G is equal across bodies at every m. Readout "asteikko … paino Jupiterissa" = m · 24,8 N is correct.
+- sim.js:4 comment and sim-spec.md now describe the bars correctly; the 2 px floor is a harmless safeguard (smallest bar 14,4 px).
+- scripts/test_sims.py fy3-1: PASS.
+
+## Python output
+```
+fy3-1-L1-01 39.24 39 N relerr=0.0061
+fy3-1-L1-02 6.0 6.0 cm relerr=0.0000
+fy3-1-L1-03 48.6 49 N relerr=0.0082
+fy3-1-L1-04 1.5 1.5 cm relerr=0.0000
+fy3-1-L1-05 62.0 62 N relerr=0.0000
+fy3-1-L2-01 4.9949 5.0 kg relerr=0.0010
+fy3-1-L2-02 0.5886 0.59 N relerr=0.0024
+fy3-1-L2-03 1187.55 1190 N relerr=0.0021
+fy3-1-L2-04 5.886 5.9 N relerr=0.0024
+fy3-1-L3-01 6.8073 6.8 N relerr=0.0011
+fy3-1-L3-02 133.2222 133 kg relerr=0.0017
+fy3-1-L3-03 0.9908 0.99 kg relerr=0.0008
+L2-03 by hand: G_Maa=1422.45 G_Kuu=234.90 diff=1187.55 N; frac=0.8349
+L3-02 by hand: F=215.82 N; m_Kuu=133.22 kg
+L3-03 by hand: G=9.720 N; reading=0.9908 kg
+m=1   chartFull=24.8   bars px=[14.37, 32.91, 87.02, 220.0] bar/G=8.871 (all four)
+m=10  chartFull=248.0  bars px=[14.37, 32.91, 87.02, 220.0] bar/G=0.8871 (all four)
+m=100 chartFull=2480.0 bars px=[14.37, 32.91, 87.02, 220.0] bar/G=0.0887 (all four)
+Jupiter bar 220 px of 250 px axis; axis top would be 1.136 x chartFull
+stretch/G=0.076613 px/N arrow/G=0.044355 px/N
+lesson: 1177.2 445.2 686.7 0.1651  exit: 29.43 4.86 7.5
+```

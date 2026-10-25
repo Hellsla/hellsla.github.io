@@ -60,3 +60,11 @@ Suurin osa simulaatioista käyttää jo samaa väripalettia, typografiaa ja "pil
 - Jätä tiedostokohtaisesti vain simulaation omat SVG- ja animaatiotyylit.
 
 Tällä tavalla ylläpito helpottuu ja ulkoasu pysyy aidosti yhtenäisenä uusissa simulaatioissa.
+
+## Tilanne 2026-10-25
+
+- `simulaatio-theme.css` sisältää nyt yhteiset tokenit (värit, typografia, viivapaksuudet, välit) ja kolme asettelumoodia: `slide` (16:9-kehys luokkahuoneen näytölle), `panel` (näyttämö + säädinpaneeli, kuten fy05-simulaatioissa) ja `embedded` (täyttää sisältävän elementin leveyden, oppituntisivua tai iframea varten).
+- Kaasulakikalvot `FY03_isoterminen`, `FY03_isobaarinen` ja `FY03_isokoorinen` käyttävät teematiedostoa (`body.sim-body.sim-slide` + `.slide`); niistä poistettiin noin 50 yhteistä deklaraatiota kustakin. Lasketut tyylit tarkistettiin ennen ja jälkeen leveyksillä 1280 ja 390: ei muutoksia. Samoin 17 aiemmin teemaa käyttävää simulaatiota: ei muutoksia.
+- `FY03_ideaalikaasulaki` ja `FY03_Avogadro` jätettiin ennalleen: niiden säädinrakenne (`.control`-lohkot) eroaa muista, ja teeman `button{font:inherit}` olisi muuttanut nappien kokoa. Ne ja loput FY03-tiedostot (`Moolitilavuus`, `ideaali_ja_reaalikaasu`, `jaahdytyskone`, `jaakaappi`, `lampovoimakone`, `faasikaavio`) siirretään teemaan yksi kerrallaan, kun niiden ulkoasu tarkistetaan samalla menetelmällä.
+- `fy05/`-simulaatioiden "yhteinen ulkoasu" -lohko on kopioitu 18 tiedostoon 14 eri versiona, joten sitä ei voi irrottaa mekaanisesti; teeman `panel`-moodi on kirjoitettu sen pohjalta, ja tiedostot voi siirtää siihen yksitellen.
+- Google Fonts -pyynnöt eivät koske FY-simulaatioita (ne käyttävät system-ui-fonttia). Ainoa poikkeus `FY04_voimakuviot` käyttää nyt itse isännöityjä fontteja (`fonts/fonts.css`). Muut Google Fonts -lataukset ovat koulun brändisivuilla (ahjo, kiviruukki, diplomipolut), eivät simulaatioissa.

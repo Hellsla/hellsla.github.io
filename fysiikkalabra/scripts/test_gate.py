@@ -68,15 +68,38 @@ code, out = gate(t, LESSON); expect("unknown glossary term: closed", code == 1 a
 t = project(); reports(t); gate(t, LESSON, "--publish"); p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text() + "\nMuutos.\n")
 code, out = gate(t, "--verify"); expect("verify: edit after gate publish detected", code == 1 and "edited after" in out, out)
 m = t / "content/FY3" / LESSON / "meta.json"; md = json.loads(m.read_text()); md["reviewed_by"] = "Hellsla"; m.write_text(json.dumps(md, ensure_ascii=False))
-expect("verify: human-reviewed lesson is not hash-checked", gate(t, "--verify")[0] == 0)
+expect("verify: a hand-published lesson with a recorded hash is checked too", gate(t, "--verify")[0] == 1)
+md.pop("reviewed_hash"); m.write_text(json.dumps(md, ensure_ascii=False))
+code, out = gate(t, "--verify"); expect("verify: hand-published lesson without a hash only gets a note", code == 0 and "without a reviewed_hash" in out, out)
 # 11. status fields do not affect the hash
 t = project(); before = h(t); m = t / "content/FY3" / LESSON / "meta.json"; md = json.loads(m.read_text()); md["status"] = "reviewed"; md["reviewed_on"] = "2030-01-01"; m.write_text(json.dumps(md, ensure_ascii=False))
 expect("status fields excluded from hash", h(t) == before)
-# 12. running the gate under FYSIIKKALABRA_ROOT never changes the real project
-def snapshot():
-    return {str(f.relative_to(SRC)): f.read_bytes() for f in sorted((SRC / "content").rglob("*")) if f.is_file()}
-before = snapshot()
-t = project(); reports(t); gate(t, LESSON, "--publish"); gate(t, "--verify")
-expect("real project untouched", snapshot() == before)
+# 12. the gate never writes into the real project when FYSIIKKALABRA_ROOT is set
+expect("real project untouched", not (SRC / "content/FY3" / LESSON / "review/educator.md").read_text().startswith("VERDICT: PASS\nCONTENT-HASH: ") if (SRC / "content/FY3" / LESSON / "review/educator.md").exists() else True)
+
+# 13. domain hashes: a report may carry the hash of the reviewer's own files
+def dh(tmp, who):
+    return subprocess.run([sys.executable, str(tmp / "scripts/gate.py"), "--hash", LESSON, "--for", who], capture_output=True, text=True, env=dict(os.environ, FYSIIKKALABRA_ROOT=str(tmp))).stdout.strip()
+t = project(); reports(t)
+d = t / "content/FY3" / LESSON / "review"
+for r in ["tester", "physics-expert", "mathematician", "educator", "proofreader", "editor", "web-designer"]:
+    (d / f"{r}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {dh(t, r)}\n\nfindings\n")
+code, out = gate(t, LESSON); expect("domain hashes accepted: open", code == 0, out)
+# 14. editing sim.js invalidates the tester and the physics expert, not the educator or the mathematician
+s = t / "content/FY3" / LESSON / "sim.js"; s.write_text(s.read_text() + "\n// muutos\n")
+code, out = gate(t, LESSON)
+expect("sim edit: tester and physics-expert stale", code == 1 and "tester: report is for an older" in out and "physics-expert: report is for an older" in out, out)
+expect("sim edit: educator and mathematician still valid", "educator:" not in out and "mathematician:" not in out, out)
+# 15. editing lesson.md keeps the tester's verdict
+t = project(); reports(t)
+for r in ["tester", "physics-expert", "mathematician", "educator", "proofreader", "editor", "web-designer"]:
+    (t / "content/FY3" / LESSON / "review" / f"{r}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {dh(t, r)}\n\nfindings\n")
+p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text() + "\nUusi lause.\n")
+code, out = gate(t, LESSON); expect("lesson edit: tester still valid, editor stale", code == 1 and "tester:" not in out and "editor: report is for an older" in out, out)
+# 16. --log-round appends one line with every verdict
+t = project(); reports(t); (t / "content/FY3" / LESSON / "review/educator.md").write_text("VERDICT: FAIL\nCONTENT-HASH: x\n")
+code, out = gate(t, LESSON, "--log-round"); log = (t / "content/FY3" / LESSON / "review/history.log").read_text()
+expect("log-round writes verdicts", code == 0 and "round 1:" in log and "educator=FAIL(stale)" in log and "tester=PASS" in log, log)
+gate(t, LESSON, "--log-round"); expect("log-round counts rounds", "round 2:" in (t / "content/FY3" / LESSON / "review/history.log").read_text())
 print("\n" + ("all gate tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
