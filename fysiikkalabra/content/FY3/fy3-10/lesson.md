@@ -11,41 +11,72 @@ Aineen moolimassa M kertoo yhden moolin massan. Heliumin moolimassa on 4,0 g/mol
 
 Mittauksissa havaitaan, että pV/(nT) on kaikille kaasuille sama luku, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Se on moolinen kaasuvakio R = 8,31 J/(mol·K). Siitä saadaan ideaalikaasun tilanyhtälö pV = nRT, joka sitoo yhteen kaasun neljä tilaa kuvaavaa suuretta. Kaasun laatu ei näy yhtälössä lainkaan. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis aina yhtä monta moolia kaasua, olipa kaasu heliumia tai ilmaa. Tämä vastaa alun kysymykseen: pallot sisältävät yhtä monta hiukkasta, mutta heliumhiukkaset ovat paljon kevyempiä.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Havainnekuva: kaksi yhtä suurta palloa samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja 0,21 mol kaasua. Heliumpallon kaasun massa on 0,83 g ja ilmapallon 6,0 g, koska ilman hiukkaset ovat raskaampia." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <ellipse cx="150" cy="110" rx="100" ry="98" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
-  <polygon points="141,218 159,218 150,206" fill="currentColor"/>
-  <line x1="150" y1="218" x2="150" y2="232" stroke="currentColor" stroke-width="2"/>
-  <circle cx="100" cy="55" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="155" cy="40" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="200" cy="65" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="85" cy="105" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="135" cy="90" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="185" cy="110" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="220" cy="125" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="110" cy="145" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="160" cy="140" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="200" cy="165" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="135" cy="180" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <circle cx="90" cy="170" r="5" fill="currentColor" fill-opacity="0.55"/>
-  <text x="150" y="260" text-anchor="middle" fill="currentColor" font-weight="bold">helium</text>
-  <text x="150" y="291" text-anchor="middle" fill="currentColor">0,21 mol · 0,83 g</text>
-  <ellipse cx="450" cy="110" rx="100" ry="98" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
-  <polygon points="441,218 459,218 450,206" fill="currentColor"/>
-  <line x1="450" y1="218" x2="450" y2="232" stroke="currentColor" stroke-width="2"/>
-  <circle cx="400" cy="55" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="455" cy="40" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="500" cy="65" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="385" cy="105" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="435" cy="90" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="485" cy="110" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="520" cy="125" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="410" cy="145" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="460" cy="140" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="500" cy="165" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="435" cy="180" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <circle cx="390" cy="170" r="9" fill="currentColor" fill-opacity="0.9"/>
-  <text x="450" y="260" text-anchor="middle" fill="currentColor" font-weight="bold">ilma</text>
-  <text x="450" y="291" text-anchor="middle" fill="currentColor">0,21 mol · 6,0 g</text>
+<svg viewBox="0 0 600 300" role="img" aria-label="Havainnekuva: kaksi yhtä suurta lasikuplan näköistä palloa samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja ainemäärä n = 0,21 mol. Heliumpallon kaasun massa on m = 0,83 g ja ilmapallon m = 6,0 g, koska ilman hiukkaset ovat raskaampia. Nuolet näyttävät hiukkasten liikkeen: kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <defs>
+    <radialGradient id="fy310-glass" cx="0.38" cy="0.32" r="0.75"><stop offset="0" stop-color="currentColor" stop-opacity="0.02"/><stop offset="0.7" stop-color="currentColor" stop-opacity="0.07"/><stop offset="1" stop-color="currentColor" stop-opacity="0.22"/></radialGradient>
+    <marker id="fy310-ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor" fill-opacity="0.75"/></marker>
+  </defs>
+  <circle cx="150" cy="100" r="88" fill="url(#fy310-glass)" stroke="currentColor" stroke-width="3"/>
+  <ellipse cx="118" cy="56" rx="22" ry="11" transform="rotate(-35 118 56)" fill="#fff" fill-opacity="0.45"/>
+  <path d="M142,200 L158,200 L150,187 z" fill="currentColor"/>
+  <path d="M150,200 q -10,10 0,18" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="105" y1="113" x2="128" y2="101" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="99" cy="116" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="97" cy="114" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="117" y1="83" x2="91" y2="81" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="124" cy="84" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="122" cy="82" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="112" y1="57" x2="133" y2="72" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="106" cy="53" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="104" cy="52" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="145" y1="114" x2="155" y2="90" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="143" cy="120" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="141" cy="119" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="216" y1="86" x2="202" y2="65" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="220" cy="92" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="219" cy="90" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="180" y1="118" x2="181" y2="144" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="179" cy="111" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="177" cy="110" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="180" y1="55" x2="169" y2="79" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="183" cy="49" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="181" cy="47" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="162" y1="162" x2="141" y2="146" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="167" cy="167" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="165" cy="165" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="122" y1="159" x2="104" y2="140" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="127" cy="164" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="126" cy="162" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="208" y1="129" x2="204" y2="104" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="209" cy="136" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="208" cy="134" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="145" y1="39" x2="169" y2="49" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="139" cy="36" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="137" cy="34" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <line x1="86" y1="84" x2="111" y2="77" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="79" cy="86" r="5" fill="currentColor" fill-opacity="0.55"/><circle cx="78" cy="84" r="1.5" fill="#fff" fill-opacity="0.55"/>
+  <text x="150" y="245" text-anchor="middle" fill="currentColor" font-weight="bold">helium</text>
+  <foreignObject x="15" y="252" width="270" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$n = 0{,}21\,\text{mol}\quad m = 0{,}83\,\text{g}$</div></foreignObject>
+  <circle cx="450" cy="100" r="88" fill="url(#fy310-glass)" stroke="currentColor" stroke-width="3"/>
+  <ellipse cx="418" cy="56" rx="22" ry="11" transform="rotate(-35 418 56)" fill="#fff" fill-opacity="0.45"/>
+  <path d="M442,200 L458,200 L450,187 z" fill="currentColor"/>
+  <path d="M450,200 q -10,10 0,18" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="408" y1="111" x2="420" y2="105" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="399" cy="116" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="395" cy="113" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="413" y1="83" x2="400" y2="82" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="424" cy="84" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="420" cy="81" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="415" y1="59" x2="426" y2="67" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="406" cy="53" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="403" cy="50" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="447" y1="110" x2="452" y2="98" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="443" cy="120" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="440" cy="117" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="514" y1="83" x2="507" y2="72" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="520" cy="92" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="517" cy="89" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="480" y1="122" x2="480" y2="135" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="479" cy="111" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="476" cy="108" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="478" y1="59" x2="473" y2="71" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="483" cy="49" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="479" cy="46" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="456" y1="169" x2="444" y2="171" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="467" cy="167" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="464" cy="163" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="417" y1="161" x2="404" y2="157" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="427" cy="164" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="424" cy="161" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="507" y1="125" x2="505" y2="113" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="509" cy="136" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="506" cy="133" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="431" y1="44" x2="422" y2="53" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="439" cy="36" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="435" cy="33" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <line x1="390" y1="83" x2="402" y2="79" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah1)"/>
+  <circle cx="379" cy="86" r="9" fill="currentColor" fill-opacity="0.9"/><circle cx="376" cy="83" r="2.7" fill="#fff" fill-opacity="0.55"/>
+  <text x="450" y="245" text-anchor="middle" fill="currentColor" font-weight="bold">ilma</text>
+  <foreignObject x="315" y="252" width="270" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$n = 0{,}21\,\text{mol}\quad m = 6{,}0\,\text{g}$</div></foreignObject>
+  <foreignObject x="244" y="78" width="112" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{sama } p, T$</div></foreignObject>
 </svg>
 
 Ideaalikaasu on mikromalli. Siinä hiukkaset ajatellaan pistemäisiksi, ja ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Paine syntyy seinämiin osuvista törmäyksistä, ja se kasvaa, kun hiukkasia on enemmän, kun ne liikkuvat nopeammin eli lämpötila on korkeampi tai kun tilavuus on pienempi. Todelliset kaasut noudattavat mallia hyvin tavallisissa oloissa. Malli alkaa pettää suurissa paineissa ja matalissa lämpötiloissa, kun hiukkaset ovat lähellä toisiaan ja niiden välinen vetovoima tiivistää kaasun nesteeksi.
@@ -69,80 +100,97 @@ missä N on hiukkasten lukumäärä ja $N_\text{A} = 6{,}022 \cdot 10^{23}\,\tex
 
 Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinkertaistuu, kun hiukkasten lukumäärä tai kelvinlämpötila kaksinkertaistuu tai kun tilavuus puolittuu. Paine on siis suoraan verrannollinen hiukkasten lukumäärään ja kelvinlämpötilaan ja kääntäen verrannollinen tilavuuteen, eli $p \propto NT/V$.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva neljästä kaasuastiasta. Vasemmalta oikealle: lähtötilassa paine on p. Paine on 2p, kun hiukkasia on kaksi kertaa enemmän, kun kelvinlämpötila on kaksinkertainen eli hiukkaset liikkuvat nopeammin tai kun tilavuus on puolet." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <rect x="15" y="20" width="120" height="155" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
-  <line x1="40" y1="50" x2="53" y2="56" stroke="currentColor" stroke-width="2"/>
-  <circle cx="40" cy="50" r="6" fill="currentColor"/>
-  <line x1="97" y1="60" x2="84" y2="65" stroke="currentColor" stroke-width="2"/>
-  <circle cx="97" cy="60" r="6" fill="currentColor"/>
-  <line x1="63" y1="100" x2="68" y2="87" stroke="currentColor" stroke-width="2"/>
-  <circle cx="63" cy="100" r="6" fill="currentColor"/>
-  <line x1="110" y1="120" x2="102" y2="109" stroke="currentColor" stroke-width="2"/>
-  <circle cx="110" cy="120" r="6" fill="currentColor"/>
-  <line x1="43" y1="142" x2="56" y2="136" stroke="currentColor" stroke-width="2"/>
-  <circle cx="43" cy="142" r="6" fill="currentColor"/>
-  <line x1="87" y1="148" x2="83" y2="135" stroke="currentColor" stroke-width="2"/>
-  <circle cx="87" cy="148" r="6" fill="currentColor"/>
-  <text x="75" y="215" text-anchor="middle" fill="currentColor">alku</text>
-  <text x="75" y="262" text-anchor="middle" fill="currentColor" font-weight="bold">p</text>
-  <rect x="165" y="20" width="120" height="155" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
-  <line x1="190" y1="50" x2="203" y2="56" stroke="currentColor" stroke-width="2"/>
-  <circle cx="190" cy="50" r="6" fill="currentColor"/>
-  <line x1="247" y1="60" x2="234" y2="65" stroke="currentColor" stroke-width="2"/>
-  <circle cx="247" cy="60" r="6" fill="currentColor"/>
-  <line x1="213" y1="100" x2="218" y2="87" stroke="currentColor" stroke-width="2"/>
-  <circle cx="213" cy="100" r="6" fill="currentColor"/>
-  <line x1="260" y1="120" x2="252" y2="109" stroke="currentColor" stroke-width="2"/>
-  <circle cx="260" cy="120" r="6" fill="currentColor"/>
-  <line x1="193" y1="142" x2="206" y2="136" stroke="currentColor" stroke-width="2"/>
-  <circle cx="193" cy="142" r="6" fill="currentColor"/>
-  <line x1="237" y1="148" x2="233" y2="135" stroke="currentColor" stroke-width="2"/>
-  <circle cx="237" cy="148" r="6" fill="currentColor"/>
-  <line x1="225" y1="38" x2="236" y2="46" stroke="currentColor" stroke-width="2"/>
-  <circle cx="225" cy="38" r="6" fill="currentColor"/>
-  <line x1="265" y1="82" x2="259" y2="95" stroke="currentColor" stroke-width="2"/>
-  <circle cx="265" cy="82" r="6" fill="currentColor"/>
-  <line x1="183" y1="90" x2="196" y2="86" stroke="currentColor" stroke-width="2"/>
-  <circle cx="183" cy="90" r="6" fill="currentColor"/>
-  <line x1="227" y1="128" x2="241" y2="131" stroke="currentColor" stroke-width="2"/>
-  <circle cx="227" cy="128" r="6" fill="currentColor"/>
-  <line x1="265" y1="158" x2="252" y2="153" stroke="currentColor" stroke-width="2"/>
-  <circle cx="265" cy="158" r="6" fill="currentColor"/>
-  <line x1="205" y1="165" x2="213" y2="153" stroke="currentColor" stroke-width="2"/>
-  <circle cx="205" cy="165" r="6" fill="currentColor"/>
-  <text x="225" y="215" text-anchor="middle" fill="currentColor">2N</text>
-  <text x="225" y="262" text-anchor="middle" fill="currentColor" font-weight="bold">2p</text>
-  <rect x="315" y="20" width="120" height="155" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
-  <line x1="340" y1="50" x2="358" y2="59" stroke="currentColor" stroke-width="2"/>
-  <circle cx="340" cy="50" r="6" fill="currentColor"/>
-  <line x1="397" y1="60" x2="378" y2="67" stroke="currentColor" stroke-width="2"/>
-  <circle cx="397" cy="60" r="6" fill="currentColor"/>
-  <line x1="363" y1="100" x2="370" y2="81" stroke="currentColor" stroke-width="2"/>
-  <circle cx="363" cy="100" r="6" fill="currentColor"/>
-  <line x1="410" y1="120" x2="398" y2="104" stroke="currentColor" stroke-width="2"/>
-  <circle cx="410" cy="120" r="6" fill="currentColor"/>
-  <line x1="343" y1="142" x2="361" y2="134" stroke="currentColor" stroke-width="2"/>
-  <circle cx="343" cy="142" r="6" fill="currentColor"/>
-  <line x1="387" y1="148" x2="381" y2="129" stroke="currentColor" stroke-width="2"/>
-  <circle cx="387" cy="148" r="6" fill="currentColor"/>
-  <text x="375" y="215" text-anchor="middle" fill="currentColor">2T</text>
-  <text x="375" y="262" text-anchor="middle" fill="currentColor" font-weight="bold">2p</text>
-  <rect x="465" y="20" width="120" height="155" fill="none" stroke="currentColor" stroke-opacity="0.4" stroke-dasharray="6 5"/>
-  <rect x="465" y="97" width="120" height="78" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="3"/>
-  <line x1="490" y1="112" x2="499" y2="117" stroke="currentColor" stroke-width="2"/>
-  <circle cx="490" cy="112" r="6" fill="currentColor"/>
-  <line x1="547" y1="117" x2="538" y2="121" stroke="currentColor" stroke-width="2"/>
-  <circle cx="547" cy="117" r="6" fill="currentColor"/>
-  <line x1="513" y1="137" x2="517" y2="128" stroke="currentColor" stroke-width="2"/>
-  <circle cx="513" cy="137" r="6" fill="currentColor"/>
-  <line x1="560" y1="147" x2="554" y2="139" stroke="currentColor" stroke-width="2"/>
-  <circle cx="560" cy="147" r="6" fill="currentColor"/>
-  <line x1="493" y1="158" x2="502" y2="154" stroke="currentColor" stroke-width="2"/>
-  <circle cx="493" cy="158" r="6" fill="currentColor"/>
-  <line x1="537" y1="161" x2="534" y2="152" stroke="currentColor" stroke-width="2"/>
-  <circle cx="537" cy="161" r="6" fill="currentColor"/>
-  <text x="525" y="215" text-anchor="middle" fill="currentColor">V/2</text>
-  <text x="525" y="262" text-anchor="middle" fill="currentColor" font-weight="bold">2p</text>
+<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva neljästä männällä suljetusta kaasusylinteristä. Vasemmalta oikealle: lähtötilassa hiukkasmäärä N, lämpötila T ja tilavuus V, ja paine on p. Paine on 2p, kun hiukkasia on kaksi kertaa enemmän (2N), kun kelvinlämpötila on kaksinkertainen (2T) eli hiukkaset liikkuvat nopeammin tai kun mäntä on painettu puoleen tilavuuteen (V/2)." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <defs>
+    <linearGradient id="fy310-cyl" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="currentColor" stop-opacity="0.2"/><stop offset="0.35" stop-color="currentColor" stop-opacity="0.04"/><stop offset="1" stop-color="currentColor" stop-opacity="0.16"/></linearGradient>
+    <linearGradient id="fy310-pist" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity="0.35"/><stop offset="1" stop-color="currentColor" stop-opacity="0.75"/></linearGradient>
+    <marker id="fy310-ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor" fill-opacity="0.75"/></marker>
+  </defs>
+  <rect x="20" y="34" width="110" height="148" fill="url(#fy310-cyl)"/>
+  <path d="M20,24 V182 H130 V24" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="23" y="24" width="104" height="10" rx="2" fill="url(#fy310-pist)"/>
+  <rect x="71" y="4" width="8" height="20" fill="currentColor" fill-opacity="0.6"/>
+  <line x1="78" y1="112" x2="90" y2="105" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="71" cy="115" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="69" cy="113" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="75" y1="68" x2="61" y2="67" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="83" cy="69" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="80" cy="67" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="93" y1="149" x2="104" y2="157" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="86" cy="144" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="84" cy="142" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="43" y1="166" x2="57" y2="163" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="36" cy="168" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="34" cy="166" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="46" y1="56" x2="47" y2="70" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="46" cy="48" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="43" cy="46" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="99" y1="104" x2="90" y2="93" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="104" cy="110" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="102" cy="108" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <foreignObject x="3" y="196" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$N,\ T,\ V$</div></foreignObject>
+  <foreignObject x="3" y="248" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\boldsymbol{p}$</div></foreignObject>
+  <rect x="170" y="34" width="110" height="148" fill="url(#fy310-cyl)"/>
+  <path d="M170,24 V182 H280 V24" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="173" y="24" width="104" height="10" rx="2" fill="url(#fy310-pist)"/>
+  <rect x="221" y="4" width="8" height="20" fill="currentColor" fill-opacity="0.6"/>
+  <line x1="235" y1="144" x2="248" y2="141" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="227" cy="146" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="225" cy="144" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="249" y1="133" x2="259" y2="142" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="243" cy="128" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="240" cy="126" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="184" y1="86" x2="184" y2="72" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="184" cy="94" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="182" cy="92" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="200" y1="115" x2="195" y2="128" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="204" cy="108" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="202" cy="106" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="248" y1="168" x2="237" y2="176" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="255" cy="163" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="253" cy="161" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="269" y1="62" x2="270" y2="76" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="268" cy="54" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="266" cy="52" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="231" y1="89" x2="219" y2="98" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="237" cy="84" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="235" cy="82" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="265" y1="97" x2="270" y2="84" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="263" cy="105" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="261" cy="103" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="197" y1="139" x2="203" y2="126" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="194" cy="147" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="192" cy="145" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="206" y1="51" x2="193" y2="47" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="214" cy="52" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="212" cy="50" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="212" y1="157" x2="210" y2="143" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="212" cy="165" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="210" cy="163" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="218" y1="73" x2="226" y2="62" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="213" cy="79" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="211" cy="77" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <foreignObject x="153" y="196" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$2N$</div></foreignObject>
+  <foreignObject x="153" y="248" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\boldsymbol{2p}$</div></foreignObject>
+  <rect x="320" y="34" width="110" height="148" fill="url(#fy310-cyl)"/>
+  <path d="M320,24 V182 H430 V24" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="323" y="24" width="104" height="10" rx="2" fill="url(#fy310-pist)"/>
+  <rect x="371" y="4" width="8" height="20" fill="currentColor" fill-opacity="0.6"/>
+  <line x1="377" y1="120" x2="393" y2="132" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="371" cy="115" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="369" cy="113" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="375" y1="68" x2="355" y2="67" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="383" cy="69" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="380" cy="67" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="393" y1="149" x2="409" y2="160" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="386" cy="144" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="384" cy="142" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="343" y1="166" x2="363" y2="162" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="336" cy="168" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="334" cy="166" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="350" y1="54" x2="361" y2="71" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="346" cy="48" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="343" cy="46" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="399" y1="104" x2="387" y2="89" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="404" cy="110" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="402" cy="108" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <foreignObject x="303" y="196" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$2T$</div></foreignObject>
+  <foreignObject x="303" y="248" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\boldsymbol{2p}$</div></foreignObject>
+  <rect x="470" y="34" width="110" height="74.0" fill="none" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="6 5"/>
+  <rect x="470" y="108.0" width="110" height="74.0" fill="url(#fy310-cyl)"/>
+  <path d="M470,24 V182 H580 V24" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="473" y="98.0" width="104" height="10" rx="2" fill="url(#fy310-pist)"/>
+  <rect x="521" y="78.0" width="8" height="20" fill="currentColor" fill-opacity="0.6"/>
+  <line x1="522" y1="156" x2="523" y2="170" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="521" cy="148" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="519" cy="146" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="525" y1="129" x2="511" y2="128" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="533" cy="129" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="530" cy="127" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="496" y1="140" x2="508" y2="148" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="490" cy="135" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="488" cy="133" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="545" y1="160" x2="534" y2="168" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="552" cy="155" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="550" cy="153" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="569" y1="162" x2="570" y2="148" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="568" cy="170" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="566" cy="168" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <line x1="494" y1="163" x2="505" y2="172" stroke="currentColor" stroke-width="2" stroke-opacity="0.75" marker-end="url(#fy310-ah2)"/>
+  <circle cx="488" cy="158" r="6" fill="currentColor" fill-opacity="0.85"/><circle cx="486" cy="156" r="1.8" fill="#fff" fill-opacity="0.55"/>
+  <foreignObject x="453" y="196" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$V/2$</div></foreignObject>
+  <foreignObject x="453" y="248" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\boldsymbol{2p}$</div></foreignObject>
 </svg>
 
 Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää, lämpötilaa ja tilavuutta ja vertaa seinämistä mitattua painetta ennusteeseen. Hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin, joten ne on jätetty simulaatiosta pois. Simulaatiossa paine näytetään suhteessa vertailutilaan (p/p_ref), ei pascaleina. Vertailutila on N = 100 hiukkasta, T = 300 K ja koko tilavuus (V = 100 %); siinä p/p_ref = 1, ja arvo 2 tarkoittaa kaksinkertaista vertailupaineeseen verrattuna. Hiukkasmäärä N kuvaa kaasun määrää.
