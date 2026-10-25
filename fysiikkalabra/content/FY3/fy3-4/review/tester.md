@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6f27a57a1ed01388
+CONTENT-HASH: b7d4bcd794c5c8e0
 
 ## Blocking
 None.
 
 ## Polish
-- content/FY3/fy3-4/sim.js:102 — at a 390 px viewport (canvas text scaled by k = 600/width) the gauge reading in the chart is drawn above-left of the point (`up = h > 4`) and, for h of about 4,5 to 7 m, its box crosses the y axis and lands on the p tick labels (seen: "31 kPa" over "50" at h = 4,5 / ρ = 700 / ylipaine; "178 kPa" over "200" at h = 6 / ρ = 1300; "145 kPa" and "160 kPa" over "150" at ρ = 1000). Not a test failure, since canvas text is not asserted; the fixer's round-1 sweep checked 1–4 m and 12, 18 m but not this gap. Fix: switch to the below-right branch while `lx - lw < CH.x0 + 4` (for example `const up = h > 4 && px - 10 - p.textWidth(txt) > CH.x0 + 4`, with textSize set first), or right-align the label at CH.x0 + 4 clamp. At 1000 px (k = 1) nothing overlaps.
-- tests/sims/fy3-4.json (optional) — no assertion on the checkbox label text or on the readout line "kulmakerroin ρg = 10,79 kPa/m"; slope is asserted via simState. Thin but present.
+- tests/sims/fy3-4.json (end) — no assertion guards the label layout that cost two rounds; the new `window.simDebug.boxes` makes it testable — add (sets the worst case from round 2, h = 5 m at ρ = 1000, and checks that no two boxes intersect and the reading was placed):
+  `{"setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), c=document.querySelector('#sim-root input[type=checkbox]'); r[0].value=5; r[1].value=1000; c.checked=false;", "expr": "(() => { const b=Object.values(window.simDebug.boxes); for (let i=0;i<b.length;i++) for (let j=i+1;j<b.length;j++) if (b[i][0]<b[j][1] && b[j][0]<b[i][1] && b[i][2]<b[j][3] && b[j][2]<b[i][3]) return 0; return window.simDebug.readingPlaced ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "no two canvas label boxes intersect and the gauge reading found a free spot"}`
+- tests/sims/fy3-4.json — the chart-label and kulmakerroin readout text (`ρg = 9,81 kPa/m` at ρ = 1000) have no assertion; optional.
 
 ## Checked
-- `python3 scripts/test_sims.py fy3-4` -> `PASS preview/fy3-4  [] []` (no console or page errors, simState present)
-- `lint_lesson.py fy3-4`: 0 errors, 0 warnings; `build.py --all` built fy3-4
-- 28 assertions in tests/sims/fy3-4.json, all tolerances <= 1 %; the two round-1 additions (slider ranges 0-20 / 700-1300, "Kuolleenmeren vesi" label at 1240) are present and pass
-- Formula: sim.js `pTotal = P0 + slope*h`, slope = rho*9.81/1000 equals lesson.md `p = p_0 + ρgh`, p₀ = 101 kPa, g in m/s² (no N/kg); worked example 12 m water 117,72 / 218,72 / 2,166 asserted
-- Spec coverage: h slider, rho slider, checkbox (overOnly, chartBase, chartValue), simState h/rho/pOver/pTotal/ratio all asserted; readout text with decimal comma asserted
-- Round-2 label placement (screenshots at 390 and 1000 px, 18 states incl. h = 0 with both checkbox states): grey p₀ label clears the reading and guide lines; reading stays above the h axis in over-only mode; "h (m)" clear of the guide line; no console errors
-- Hash before and after review: 6f27a57a1ed01388 (unchanged)
+- `python3 scripts/test_sims.py fy3-4`: `PASS preview/fy3-4  [] []` (28 assertions, no console or page errors, 1280 px); preview/fy3-4-sim.js identical to content sim.js.
+- Physics unchanged vs round 2 (4435c11): the lines for slope, pOver, pTotal, ratio, the whole readout.html block and the simState object are identical; only comments and canvas drawing differ. Formula p = p₀ + ρgh, p₀ = 101 kPa, g = 9,81 m/s² matches lesson.md (## Kaava).
+- Spec coverage: h, rho, pOver, pTotal, ratio, checkbox/overOnly, chart intercept and slope, scale pMax, labels, readout text and slider ranges each have an assertion.
+- Collision sweep (own script, headless Chromium, 360/390/1280 px): ρ ∈ {700, 1000, 1300} x checkbox on/off x h = 0…20 m in 0,5 m steps = 246 states per width, 738 in all. For every pair of `simDebug.boxes`: 0 intersections, minimum gap 3 canvas units (the 3-unit PAD), 0 boxes outside the 600x400 canvas, 0 hits of reading/p₀ label on a guide, the p₀ line or the dot, `readingPlaced` true in all 738 states.
+- Console and page errors during the sweep: none at any width (k = 2,04 / 1,85 / 1,00).
+- `lint_lesson.py fy3-4`: 0 errors, 0 warnings. `check_layout.py fy3-4`: `OK   preview/fy3-4 at 360 px`.
+- Content hash `b7d4bcd794c5c8e0` identical before and after the review; sim.js and tests/sims/fy3-4.json have no uncommitted changes.
