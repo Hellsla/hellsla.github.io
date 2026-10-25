@@ -31,6 +31,7 @@ When a mistake costs a review round, add a line under the right heading (what, w
 - A literal dollar sign starts math. Write "euroa" or "€" instead.
 - Math in an SVG `<text>` or in canvas text is plain text. Keep the labels short.
 - An inline `\dfrac` makes a tall fraction that breaks the line. Put calculations with fractions on their own line in display math.
+- A `·` inside `\text{}` is a KaTeX parse error. Write compound units as `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}` or `\text{J/(mol}\cdot\text{K)}`. The lint reports it.
 - A wide markdown table overflows a phone. The site CSS makes tables scroll sideways inside themselves; keep header cells short.
 
 ### Check before every commit that touches math

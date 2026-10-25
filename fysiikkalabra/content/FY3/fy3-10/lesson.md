@@ -45,7 +45,7 @@ Samankokoisessa ilmapallossa on samassa paineessa ja lämpötilassa yhtä paljon
 Yleisin virhe on käyttää tilanyhtälössä celsiusasteita. Esimerkiksi 0 °C antaisi nollan, mutta kaasulla on paine myös jäätymispisteessä. Lämpötila muutetaan aina kelvineiksi. Toinen virhe on sijoittaa paine kilopascaleina ja tilavuus litroina. Silloin tulos on tuhat tai miljoona kertaa väärä, ellei yksiköitä muuteta perusyksiköiksi. Kolmas virhe on ajatella, että raskaampaa kaasua mahtuu samaan tilavuuteen vähemmän moolia. Ainemäärä riippuu vain paineesta, tilavuudesta ja lämpötilasta, ei kaasun laadusta. Massa sen sijaan riippuu moolimassasta.
 
 ## Tiivistelmä
-- Ideaalikaasun tilanyhtälö on $pV = nRT$, missä $R = 8{,}31\,\text{J/(mol·K)}$ ja T on kelvineinä.
+- Ideaalikaasun tilanyhtälö on $pV = nRT$, missä $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja T on kelvineinä.
 - Ainemäärä n kertoo kaasun määrän mooleina, ja $n = m/M$. Yksi mooli on 6,022 · 10²³ hiukkasta.
 - Kun kaasun määrä pysyy samana, $p_1V_1/T_1 = p_2V_2/T_2$, ja siitä saadaan erilliset kaasulait.
 - Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua, kaasun laadusta riippumatta.

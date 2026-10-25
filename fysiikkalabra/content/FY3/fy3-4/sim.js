@@ -136,9 +136,9 @@ new p5((p) => {
     // the reading has priority: the p₀ label takes the first of its spots that leaves the reading a place next to the point
     const pairs = p0Opts.map((o) => [o, fits(txt, ts(12), cands, [], o ? { p0: o.b } : {})[0]]).filter(([, r]) => r);
     const [p0, rd] = pairs.find(([, r]) => r.i < NEAR) || pairs[0] || [p0Opts[0], null];
-    const draw = (name, o, col) => say(boxes, name, o.t, o.size, col, o.b[0] + o.m.l, o.b[3] - o.m.d);
-    if (p0) draw('p0', p0, 90);
-    if (rd) draw('reading', rd, [200, 40, 40]); else say(boxes, 'reading', txt, ts(12), [200, 40, 40], px + g, py - g);
+    const put = (name, o, col) => say(boxes, name, o.t, o.size, col, o.b[0] + o.m.l, o.b[3] - o.m.d);
+    if (p0) put('p0', p0, 90);
+    if (rd) put('reading', rd, [200, 40, 40]); else say(boxes, 'reading', txt, ts(12), [200, 40, 40], px + g, py - g);
     const used = { p0: p0 ? p0.i : -1, reading: rd ? rd.i : -1 }, placed = !!rd;    // which candidate each label took (for tests)
     window.simDebug = { boxes, obstacles, line, area: AREA, used, readingPlaced: placed, k };
   };

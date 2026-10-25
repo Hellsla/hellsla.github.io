@@ -89,6 +89,8 @@ def check_math(L, name, text):
     for line, frag, display in math_fragments(text):
         if re.search(r"(?<![{,])\d,\d", frag):
             L.err(name, line, "decimal comma inside math must be {,} (NOTES 1.4): " + frag[:60])
+        if re.search(r"\\text\{[^}]*·", frag):
+            L.err(name, line, "· inside \\text{} breaks KaTeX; write \\text{mol}\\cdot\\text{K} (NOTES 1): " + frag[:60])
         if re.search(r"\\(si|SI|unit)\b|\\newcommand", frag):
             L.err(name, line, "siunitx and \\newcommand do not work in KaTeX (NOTES 1.10)")
         if re.search(r"(?<!\\)\*", frag):
