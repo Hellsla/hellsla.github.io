@@ -20,7 +20,7 @@
 **Kaava:** θ = T − 273,15
 **Sijoitus:** θ = 77,4 − 273,15 = −195,75 °C
 **Vastaus:** −196 °C
-**Järkevyys:** Nestemäinen typpi on hyvin kylmää: 77,4 K on vain 77,4 kelviniä absoluuttisen nollapisteen yläpuolella.
+**Järkevyys:** Tulos on selvästi veden jäätymispisteen alapuolella mutta yli absoluuttisen nollapisteen −273 °C, joten se on uskottava nestemäisen typen kiehumispisteeksi.
 
 ## fy3-3-L1-04
 **Annettu:** θ₁ = 20 °C, θ₂ = 45 °C
@@ -55,12 +55,12 @@
 **Järkevyys:** Tulos on pisteiden 90,0 kPa ja 123 kPa välillä, ja 35 °C on alle puolivälin, joten paine on alle välin keskiarvon 106,5 kPa.
 
 ## fy3-3-L2-03
-**Annettu:** (20 °C, 80 kPa), (60 °C, 91 kPa); suora, ekstrapolointi nollapaineeseen
-**Kysytty:** θ, kun p = 0
-**Kaava:** k = Δp / Δθ ja p = 0 kohdassa θ = θ₁ − p₁ / k
-**Sijoitus:** k = (91 − 80) kPa / 40 °C = 0,275 kPa/°C; θ = 20 °C − 80 kPa / 0,275 kPa/°C = 20 °C − 290,9 °C = −270,9 °C
-**Vastaus:** −270 °C
-**Järkevyys:** Tulos on lähellä absoluuttista nollapistettä −273 °C. Pieni ero johtuu kahden mittauspisteen pyöristyksistä.
+**Annettu:** (10 °C, 110 kPa), (80 °C, 130 kPa); lineaarinen riippuvuus, ekstrapolointi mittausalueen ulkopuolelle
+**Kysytty:** p lämpötilassa −50 °C
+**Kaava:** kulmakerroin k = Δp / Δθ ja p = p₁ + k (θ − θ₁)
+**Sijoitus:** k = (130 − 110) kPa / 70 °C = 0,2857 kPa/°C; p = 110 kPa + 0,2857 kPa/°C · (−50 − 10) °C = 110 kPa − 17,14 kPa = 92,86 kPa
+**Vastaus:** 93 kPa
+**Järkevyys:** Lämpötila −50 °C on mittausalueen alapuolella, joten paineen täytyy olla pienempi kuin pienin mitattu 110 kPa; tulos on uskottava. Se on selvästi yli nollan, koska absoluuttiseen nollapisteeseen on vielä matkaa. Tulos on ekstrapolointia, joten se on vain arvio.
 
 ## fy3-3-L2-04
 **Annettu:** θ_yö = −173 °C, θ_päivä = 127 °C
