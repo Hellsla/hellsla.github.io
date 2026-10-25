@@ -12,12 +12,16 @@ a["fy3-6-L1-03"] = c_hiekka * 50 * (32 - 14) / 1e3       # beach sand heats: Q =
 a["fy3-6-L1-04"] = c_vesi * 1200 * (31 - 38) / 1e6       # hot tub (palju) cools: Q = 4190 · 1200 kg · (−7 K) = −35 196 000 J -> −35 MJ
 a["fy3-6-L1-05"] = c_jaa * 0.50 * (-4.0 - (-22)) / 1e3   # ice pack warms −22 -> −4,0 °C: Q = 2100 · 0,50 kg · 18 K = 18 900 J -> 19 kJ
 # Level 2: two steps, one conversion or one rearrangement
-a["fy3-6-L2-01"] = c_al * (450 / 1000) * (180 - 20) / 1e3   # 450 g = 0,450 kg; Q = 900 · 0,450 · 160 = 64 800 J -> 65 kJ
+# L2-01 tea water: 160 g at 95 °C + 40 g at 8,0 °C, both water, so c cancels and grams need no conversion:
+# c m1 (T1 − T) = c m2 (T − T2)  ->  T = (m1 T1 + m2 T2) / (m1 + m2) = (15 200 + 320) / 200 = 77,6 °C -> 78 °C
+a["fy3-6-L2-01"] = (160 * 95 + 40 * 8.0) / (160 + 40)
 Q_kettle = c_vesi * 1.5 * (95 - 15)                      # kettle water: Q = 4190 · 1,5 kg · 80 K = 502 800 J
 a["fy3-6-L2-02"] = Q_kettle / 2.4e3                      # P t = Q -> t = 502 800 J / 2400 W = 209,5 s -> 210 s
 dT_tank = 15e6 / (c_vesi * 80)                           # water heater: ΔT = Q / (c m) = 15 000 000 J / (4190 · 80 kg) = 44,75 K
 a["fy3-6-L2-03"] = 9.0 + dT_tank                         # final temperature 9,0 °C + 44,75 K = 53,75 °C -> 54 °C
-a["fy3-6-L2-04"] = 172.8e3 / (3.2 * (140 - 20))         # fireplace door: c = Q / (m ΔT) = 172 800 J / (3,2 kg · 120 K) = 450 -> iron
+C_kauha = c_al * 0.25                                    # aluminium ladle: C = c m = 900 · 0,25 kg = 225 J/K, start 95 °C
+C_kiulu = c_vesi * 0.40                                  # water in the bucket: C = 4190 · 0,40 kg = 1676 J/K, start 18 °C
+a["fy3-6-L2-04"] = (C_kauha * 95 + C_kiulu * 18) / (C_kauha + C_kiulu)   # T = (21 375 + 30 168) J / 1901 J/K = 27,11 °C -> 27 °C
 # Level 3: reasoning or an unfamiliar context
 Q_tub = c_vesi * 20 * (40 - 10)                          # tub water receives 4190 · 20 kg · 30 K = 2 514 000 J
 a["fy3-6-L3-01"] = Q_tub / (c_hiekka * (300 - 40))       # stones (c = 800) cool 300 -> 40 °C: m = Q / (c ΔT) = 12,09 kg -> 12 kg

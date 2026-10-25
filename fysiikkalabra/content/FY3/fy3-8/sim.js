@@ -63,6 +63,7 @@ new p5((p) => {
     const spacing = 1 + E * rel;                                 // drawn spacing and rod length relative to 20 °C
     const amp = LAT.a0 * Math.sqrt((T + 273.15) / (T_REF + 273.15));   // vibration amplitude ∝ √T (px)
     const [yMin, yMax, yStep, nDown, nUp] = chartRange(L0);
+    const dec = (String(+yStep.toFixed(4)).split('.')[1] || '').length;   // decimals of the ΔL scale
     if (running) tAnim += Math.min(p.deltaTime, 100) / 1000;
     const decL = dL === 0 ? 4 : Math.min(8, Math.max(4, Math.ceil(-Math.log10(Math.abs(dL))) + 1));   // show the change in L
 
@@ -72,7 +73,7 @@ new p5((p) => {
                  `<br>Pituuden muutos ΔL = αL₀ΔT = <strong>${sgn(dL * 1000)} mm</strong>` +
                  `<br>Uusi pituus L = L₀ + ΔL = <strong>${fi(L, decL)} m</strong>` +
                  `<br>Suhteellinen muutos ΔL/L₀ = αΔT = ${sgn(rel * 100)} %` +
-                 `<br>Kuvaajan ΔL-akseli ${fi(yMin, 2 - Math.min(2, Math.floor(Math.log10(yStep)) + 2) + 0)}…${fi(yMax, 0)} mm, kun L₀ = ${L0} m.`);
+                 `<br>Kuvaajan ΔL-akseli ${fi(yMin, dec)}…${fi(yMax, dec)} mm, kun L₀ = ${L0} m.`);
     window.simState = { material, alpha, L0, T, dT, dL, L, rel, E, spacing, amp, chartMin: yMin, chartMax: yMax, running, t: tAnim };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -120,7 +121,6 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 5);
     p.stroke(120); p.strokeWeight(1.5); p.line(CH.x0, Y(0), CH.x1, Y(0));
     p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    const dec = yStep >= 1 ? 0 : yStep >= 0.1 ? 1 : 2;
     for (let j = -nDown; j <= nUp; j++) p.text(fi(j * yStep, dec), CH.x0 - 6, Y(j * yStep) + ts(4));
     p.textAlign(p.CENTER);
     for (let TT = T_MIN; TT <= T_MAX; TT += 40) p.text(fi(TT, 0), X(TT), CH.y0 + ts(16));

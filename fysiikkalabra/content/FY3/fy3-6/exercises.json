@@ -45,9 +45,9 @@
     {
       "id": "fy3-6-L2-01",
       "level": 2,
-      "text": "Alumiininen paistinpannu, jonka massa on 450 g, lämmitetään liedellä 20 °C:sta 180 °C:seen. Kuinka suuri lämpömäärä pannuun siirtyy? Anna vastaus kilojouleina.",
-      "answer": 65,
-      "unit": "kJ",
+      "text": "Teemukiin kaadetaan 160 g vettä, jonka lämpötila on 95 °C. Tee on liian kuumaa juotavaksi, joten joukkoon lisätään 40 g kylmää vettä, jonka lämpötila on 8,0 °C. Mikä on veden lämpötila sekoittamisen jälkeen? Oleta, ettei lämpöä siirry mukiin eikä ilmaan.",
+      "answer": 78,
+      "unit": "°C",
       "tolerance": 0.02
     },
     {
@@ -69,9 +69,9 @@
     {
       "id": "fy3-6-L2-04",
       "level": 2,
-      "text": "Takan metallinen luukku, jonka massa on 3,2 kg, lämpenee tulen palaessa 20 °C:sta 140 °C:seen. Luukkuun siirtyy tällöin lämpömäärä 172,8 kJ. Laske luukun aineen ominaislämpökapasiteetti ja päättele taulukosta, mistä metallista luukku on tehty.",
-      "answer": 450,
-      "unit": "J/(kg·K)",
+      "text": "Saunan lauteilla on lämmennyt alumiininen kauha, jonka massa on 0,25 kg ja lämpötila 95 °C. Kauha pudotetaan kiuluun, jossa on 0,40 kg vettä, jonka lämpötila on 18 °C. Mikä on veden ja kauhan yhteinen loppulämpötila? Oleta, ettei lämpöä siirry kiuluun eikä ilmaan.",
+      "answer": 27,
+      "unit": "°C",
       "tolerance": 0.02
     }
   ],
