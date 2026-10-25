@@ -228,7 +228,7 @@ new p5((p) => {
     const yName = yL + 14 + ts(13);                              // axis name p/p_ref with a drawn subscript
     p.textSize(ts(11)); lab('ref', 590, yName + ts(3), p.RIGHT); const wSub = p.textWidth('ref');
     p.textSize(ts(13)); lab('p/p', 590 - wSub - 1, yName, p.RIGHT);
-    const wP = p.textWidth('p/p'); p.textSize(ts(10)); lab('asteikko mukautuu', 590 - wSub - 1 - wP - 8, yName, p.RIGHT);
+    if (k <= 1.5) { const wP = p.textWidth('p/p'); p.textSize(ts(10)); lab('asteikko mukautuu', 590 - wSub - 1 - wP - 8, yName, p.RIGHT); }   // on a phone the label would run into the tank wall; the note under the canvas says it there
     const cols = [MEAS, PRED], vals = [pm, pp], names = ['mitattu', 'ennuste'];
     for (let i = 0; i < 2; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
