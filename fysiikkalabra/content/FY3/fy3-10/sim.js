@@ -138,10 +138,14 @@ new p5((p) => {
     p.stroke(225); p.strokeWeight(1);
     for (let j = 1; j <= nT; j++) p.line(BAR.ax, Y(j * tStep), 590, Y(j * tStep));
     p.stroke(60); p.strokeWeight(2); p.line(BAR.ax, BAR.y0, 590, BAR.y0); p.line(BAR.ax, BAR.y0, BAR.ax, BAR.y1 - 10);
-    p.stroke(120); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]); p.line(BAR.ax, Y(1), 590, Y(1)); p.drawingContext.setLineDash([]);
+    if (top >= 1) {                                              // dashed line: the reference pressure 1
+      p.stroke(120); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]); p.line(BAR.ax, Y(1), 590, Y(1)); p.drawingContext.setLineDash([]);
+    }
     p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
     for (let j = 0; j <= nT; j++) if (k <= 1.5 || j % 2 === 0) p.text(fi(j * tStep, dec), BAR.ax - 6, Y(j * tStep) + ts(4));
-    p.textSize(ts(13)); p.text('p/p₀', 590, 14 + ts(14) + ts(13));
+    const yName = 14 + ts(14) + ts(13);                          // axis name p/p_ref with a drawn subscript
+    p.textSize(ts(10)); p.text('ref', 590, yName + ts(3)); const wSub = p.textWidth('ref');
+    p.textSize(ts(13)); p.text('p/p', 590 - wSub - 1, yName);
     const cols = [[205, 80, 40], [60, 100, 170]], vals = [pm, pp], names = ['mitattu', 'ennuste'];
     for (let i = 0; i < 2; i++) {
       p.fill(...cols[i]); p.noStroke(); p.rect(BAR.x[i] - BAR.w / 2, Y(vals[i]), BAR.w, BAR.y0 - Y(vals[i]));
