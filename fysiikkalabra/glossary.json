@@ -74,7 +74,7 @@
   },
   {
     "term": "faasikaavio",
-    "definition": "Kuvaaja, joka näyttää aineen olomuodon lämpötilan ja paineen mukaan. Sen käyrät ovat sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa.",
+    "definition": "Kuvaaja, joka näyttää aineen olomuodon lämpötilan ja paineen mukaan. Sen käyrät yhdistävät sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa.",
     "lessons": [
       "fy3-7"
     ],
