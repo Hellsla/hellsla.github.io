@@ -8,7 +8,7 @@ before review (NOTES.md section 1). Exit status 1 if anything overflows."""
 import sys, pathlib
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+from courses import ROOT
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 width = int(sys.argv[sys.argv.index("--width") + 1]) if "--width" in sys.argv else 360
 args = [a for a in args if a != str(width)]

@@ -25,6 +25,12 @@ def load(folder):
     return json.loads(f.read_text()) if f.exists() else None
 
 
+# Options are shown shuffled (choice_order), so no text may point at an option by its letter or place.
+POSITIONAL = re.compile(r"\b(?:vaihtoehto|vaihtoehdo\w*|kohta|kohda\w*)\s+[A-Da-d]\b"
+                        r"|\b(?:ensimmäi|toi|kolma|neljä|viimei|edelli|seuraa|yli|ali)\w*\s+vaihtoehto"
+                        r"|\b(?:kaikki|molemmat)\s+(?:edellä|yllä)|\b(?:edellä|yllä|alla)\s+(?:mainit|olev|luetel)\w*\s+(?:vaihtoehd|kohd|vastauks)", re.I)
+
+
 def _check_choice(a, path, errs):
     if not isinstance(a.get("prompt"), str) or not a["prompt"].strip(): errs.append(f"{path}.prompt: a non-empty string is required")
     ch = a.get("choices")
@@ -35,6 +41,10 @@ def _check_choice(a, path, errs):
             if not isinstance(c.get("feedback"), str) or not c["feedback"].strip(): errs.append(f"{path}.choices[{i}].feedback: every choice needs misconception-specific feedback")
             if "correct" in c and not isinstance(c["correct"], bool): errs.append(f"{path}.choices[{i}].correct: true or false")
         if not any(c.get("correct") for c in ch if isinstance(c, dict)): errs.append(f"{path}.choices: one choice must have \"correct\": true")
+        texts = [("prompt", a.get("prompt"))] + [(f"choices[{i}].{k}", c.get(k)) for i, c in enumerate(ch) if isinstance(c, dict) for k in ("text", "feedback")]
+        for where, t in texts:
+            m = POSITIONAL.search(t) if isinstance(t, str) else None
+            if m: errs.append(f"{path}.{where}: \"{m.group(0)}\" points at an option by its letter or place, but options are shown shuffled; name the option by its content")
     r = a.get("reveal")
     if r is not None:
         if not isinstance(r, dict) or not isinstance(r.get("after"), str): errs.append(f"{path}.reveal: {{\"after\": \"<experiment id>\", \"min\": n}}")
@@ -156,12 +166,23 @@ def hints_html(hints):
 _NO_ERROR = re.compile(r"\s*(Laskussa|Päättelyssä) ei ole virhettä")
 
 
-def choice_order(choices, lid, aid):
+def shuffle_salt(lid):
+    """The course's "shuffle_salt" in curriculum.json (0 when absent or when lid names no course, as in tests)."""
+    try:
+        import courses
+        return courses.curriculum().get(courses.course_of(lid), {}).get("shuffle_salt", 0)
+    except SystemExit: return 0
+
+
+def choice_order(choices, lid, aid, salt=None):
     """The order the options are shown in: shuffled once per activity with a seed from its id, so the page is the
     same on every build but the correct option is not in the same place from question to question (authors tend to
-    write it second). "Laskussa ei ole virhettä" stays last, where a reader expects it."""
+    write it second). "Laskussa ei ole virhettä" stays last, where a reader expects it. A course's shuffle_salt
+    (scripts/check_choices.py) re-seeds the whole course without touching a lesson; without one the seed is the
+    lesson and activity id alone, so FY3 keeps the order it was published with."""
+    salt = shuffle_salt(lid) if salt is None else salt
     rest = [c for c in choices if not _NO_ERROR.match(c["text"])]
-    random.Random(hashlib.sha256(f"{lid}:{aid}".encode()).hexdigest()).shuffle(rest)
+    random.Random(hashlib.sha256((f"{lid}:{aid}" + (f":{salt}" if salt else "")).encode()).hexdigest()).shuffle(rest)
     return rest + [c for c in choices if _NO_ERROR.match(c["text"])]
 
 
