@@ -8,13 +8,16 @@
 // (W - 2R) × (BOX.h - 2R). Both the measured pressure and its 300 K / 1,00 dm³ reference use these effective
 // lengths, and the drawn width is W = PX * V + 2R, so the effective width is exactly PX * V and the
 // measured value has no systematic offset from the theory value (only statistical fluctuation).
+// Speed control: each frame adds (real frame time)·speed to the simulated time, and the particles advance in fixed
+// steps of DT = 1/60 s of it; the pressure window is the last 90 steps (1,5 s of simulated time), so "Nopeus"
+// changes only the pace, never the measured pressure.
 // The readout is DOM text; the canvas only draws. p5.js 1.9 instance mode, 600×400. Exposes window.simState.
 new p5((p) => {
   const N = 80, R = 4, DT = 1 / 60, V_REF = 120;              // particles, radius, fixed time step, speed at 300 K (px/s)
   const BOX = { x: 40, y: 80, h: 200 };                       // left wall and height; effective width = PX px per dm³
   const PX = 192;                                             // effective width in px per dm³ (= 200 - 2R at 1,00 dm³)
   const WINDOW = 90;                                          // frames in the pressure window (1,5 s)
-  let sT, sV, lT, lV, readout, parts = [], hist = [], lastT = null;
+  let sT, sV, lT, lV, sSp, readout, parts = [], hist = [], lastT = null, acc = 0;
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -23,6 +26,19 @@ new p5((p) => {
     return [s, span];
   };
   const speed = (T) => V_REF * Math.sqrt(T / 300);
+  // one fixed physics step DT: move, bounce, and push the momentum given to the x walls and y walls to the window
+  const step = (T, V) => {
+    const v = speed(T), right = BOX.x + PX * V + 2 * R, top = BOX.y, bottom = BOX.y + BOX.h;
+    let ix = 0, iy = 0;
+    for (const q of parts) {
+      q.x += q.vx * v * DT; q.y += q.vy * v * DT;
+      if (q.x < BOX.x + R)   { q.x = BOX.x + R;   if (q.vx < 0) { q.vx = -q.vx; ix += 2 * Math.abs(q.vx) * v; } }
+      if (q.x > right - R)   { q.x = right - R;   if (q.vx > 0) { q.vx = -q.vx; ix += 2 * Math.abs(q.vx) * v; } }
+      if (q.y < top + R)     { q.y = top + R;     if (q.vy < 0) { q.vy = -q.vy; iy += 2 * Math.abs(q.vy) * v; } }
+      if (q.y > bottom - R)  { q.y = bottom - R;  if (q.vy > 0) { q.vy = -q.vy; iy += 2 * Math.abs(q.vy) * v; } }
+    }
+    hist.push([ix, iy]); if (hist.length > WINDOW) hist.shift();
+  };
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
@@ -35,8 +51,10 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');
     [sT, lT] = slider(controls, 100, 600, 300, 10);           // lämpötila T (K)
     [sV, lV] = slider(controls, 0.5, 2, 1, 0.1);              // tilavuus V (dm³)
-    p.createP('Kun hiukkaset liikkuvat nopeammin, ne osuvat seinään useammin ja kovempaa. Kun astia on pienempi, ne osuvat seinään useammin. Molemmissa tapauksissa paine kasvaa. Mitattu paine vaihtelee hieman teoria-arvon ympärillä.')
-      .parent('sim-root').class('note');
+    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    sSp.selected('1');                                        // pace only: the physics runs in simulated time
+    step(sT.value(), sV.value());                             // one step at once, so the pressure window is never empty
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { T: { input: sT.elt, unit: 'K' }, V: { input: sV.elt, unit: 'dm³' } },
@@ -48,15 +66,7 @@ new p5((p) => {
   p.draw = () => {
     const T = sT.value(), V = sV.value(), v = speed(T);
     const W = PX * V + 2 * R, right = BOX.x + W, top = BOX.y, bottom = BOX.y + BOX.h;
-    let ix = 0, iy = 0;                                       // momentum given to the x walls and y walls this frame
-    for (const q of parts) {
-      q.x += q.vx * v * DT; q.y += q.vy * v * DT;
-      if (q.x < BOX.x + R)   { q.x = BOX.x + R;   if (q.vx < 0) { q.vx = -q.vx; ix += 2 * Math.abs(q.vx) * v; } }
-      if (q.x > right - R)   { q.x = right - R;   if (q.vx > 0) { q.vx = -q.vx; ix += 2 * Math.abs(q.vx) * v; } }
-      if (q.y < top + R)     { q.y = top + R;     if (q.vy < 0) { q.vy = -q.vy; iy += 2 * Math.abs(q.vy) * v; } }
-      if (q.y > bottom - R)  { q.y = bottom - R;  if (q.vy > 0) { q.vy = -q.vy; iy += 2 * Math.abs(q.vy) * v; } }
-    }
-    hist.push([ix, iy]); if (hist.length > WINDOW) hist.shift();
+    for (acc += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value()); acc >= DT; acc -= DT) step(T, V);   // simulated time = real time · speed
     const t = hist.length * DT;
     const sx = hist.reduce((a, h) => a + h[0], 0), sy = hist.reduce((a, h) => a + h[1], 0);
     const Wc = W - 2 * R, Hc = BOX.h - 2 * R;                              // effective box: where the particle centres can be

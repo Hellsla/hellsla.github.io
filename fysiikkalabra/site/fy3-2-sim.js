@@ -3,11 +3,13 @@
 // Work is also the area under the (s,F) graph; the right-hand plot fills that area as the box moves.
 // The numeric readout (W, P, work so far) is plain DOM text, so it stays readable on a phone;
 // the canvas only draws the picture, and its text is scaled up when the canvas is shrunk by CSS.
+// Speed control: the box advances by simulated time (real frame time)·speed, so "Nopeus" changes only the pace;
+// W, P and the work done at a given fraction of s are the same at every speed.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
   const FLOOR_Y = 250, FLOOR_END = 346, X0 = 40, BOX = 40, PX_PER_M = 13;   // 20 m + box fits left of x = 346
   const G = { x: 380, y: 50, w: 200, h: 200 };                              // (s,F) graph box
-  let sF, sS, sT, lF, lS, lT, btn, readout;
+  let sF, sS, sT, lF, lS, lT, btn, sSp, readout;
   let u = 0;                                                  // fraction of s covered so far, 0…1
   let running = false;
 
@@ -27,8 +29,9 @@ new p5((p) => {
     [sT, lT] = slider(controls, 1, 20, 5, 0.5);      // aika t (s)
     btn = p.createButton('Vedä').parent(controls);
     btn.mousePressed(() => { u = 0; running = true; });
-    p.createP('Laatikko liikkuu vakiovauhdilla: kitkavoima on yhtä suuri kuin vetävä voima, ja vetävän voiman tekemä työ muuttuu lämmöksi.')
-      .parent('sim-root').class('note');
+    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    sSp.selected('1');                                         // pace only: the box covers s in the simulated time t
     p.textFont('Arial');
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset the three sliders
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -42,13 +45,14 @@ new p5((p) => {
     const F = sF.value(), s = sS.value(), t = sT.value();
     const W = F * s;                       // work over the whole distance
     const P = W / t;                       // average power
-    if (running) { u += (p.deltaTime / 1000) / t; if (u >= 1) { u = 1; running = false; } }
+    const speed = Number(sSp.value());
+    if (running) { u += Math.min(p.deltaTime, 100) / 1000 * speed / t; if (u >= 1) { u = 1; running = false; } }
     const Wdone = W * u;                   // constant force: work grows linearly with distance
 
     lF.html(`Voima F = ${F} N`); lS.html(`Matka s = ${fi(s, 1)} m`); lT.html(`Aika t = ${fi(t, 1)} s`);
     readout.html(`<strong>W = F · s = ${fj(W)} J</strong><br><strong>P = W / t = ${fi(P, 1)} W</strong>` +
-                 `<br><small>Tehty työ tähän mennessä: ${fj(Wdone)} J</small>`);
-    window.simState = { F, s, t, W, P, u, Wdone, running };
+                 `<br><small>Tehty työ tähän mennessä: ${fj(Wdone)} J, aikaa kulunut ${fi(u * t, 1)} s</small>`);
+    window.simState = { F, s, t, W, P, u, Wdone, running, tElapsed: u * t, speed };
 
     // The canvas is scaled down by CSS on narrow screens; enlarge canvas text so it stays near 11 px or more.
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
