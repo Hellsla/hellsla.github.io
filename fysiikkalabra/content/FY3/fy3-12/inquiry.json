@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Ensimmäisen pääsäännön energiakirjanpito laajenee tehoihin: lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä, rakennusosan läpi johtuva teho on $P = UA\\Delta T$, ja kappaleen lämpötila pysyy vakiona, kun siihen tuleva ja siitä lähtevä teho ovat yhtä suuret, mikä selittää kasvihuoneilmiön ja ilmastonmuutoksen.",
   "prior": [
-    "Sisäenergiaa muuttavat lämpö ja työ, $\\Delta U = Q + W$, ja energia säilyy (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”)",
-    "Lämpö on energian siirtymistä kuumemmasta kylmempään lämpötilaeron vuoksi (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”)"
+    "Sisäenergiaa muuttavat lämpö ja työ, $\\Delta U = Q + W$, ja energia säilyy (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
+    "Lämpö on energian siirtymistä kuumemmasta kylmempään lämpötilaeron vuoksi (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)"
   ],
   "activities": [
     {
@@ -18,7 +18,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmalta tunnilta",
-      "prompt": "Luvussa ”Sisäenergia, lämpömäärä ja energian säilyminen” sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Kattilan veteen siirtyy liedeltä joka minuutti lämpönä 600 J, ja vedestä siirtyy joka minuutti lämpönä ympäristöön 600 J. Työtä ei tehdä. Mitä veden sisäenergialle ja lämpötilalle tapahtuu?",
+      "prompt": "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Kattilan veteen siirtyy liedeltä joka minuutti lämpönä 600 J, ja vedestä siirtyy joka minuutti lämpönä ympäristöön 600 J. Työtä ei tehdä. Mitä veden sisäenergialle ja lämpötilalle tapahtuu?",
       "choices": [
         {
           "text": "Sisäenergia kasvaa, koska veteen tulee koko ajan lämpöä.",

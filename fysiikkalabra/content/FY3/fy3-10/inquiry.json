@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Kaasun määrä tulee mukaan: punnitsemalla havaitaan, että samassa paineessa, tilavuudessa ja lämpötilassa kaikissa kaasuissa on yhtä monta moolia, ja samoista mittauksista saadaan moolinen kaasuvakio $R$ ja tilanyhtälö $pV = nRT$, joka yhdistää edellisen tunnin erilliset kaasulait. Hiukkasmalli selittää paineen seiniin osuvina törmäyksinä.",
   "prior": [
-    "Boylen laki $p_1V_1 = p_2V_2$ vakiolämpötilassa (luku ”Kaasujen tilanmuutokset ja Boylen laki”)",
-    "Vakiotilavuudessa paine ja vakiopaineessa tilavuus ovat verrannollisia kelvinlämpötilaan (luku ”Kaasujen tilanmuutokset ja Boylen laki”)"
+    "Boylen laki $p_1V_1 = p_2V_2$ vakiolämpötilassa (luku *Kaasujen tilanmuutokset ja Boylen laki*)",
+    "Vakiotilavuudessa paine ja vakiopaineessa tilavuus ovat verrannollisia kelvinlämpötilaan (luku *Kaasujen tilanmuutokset ja Boylen laki*)"
   ],
   "activities": [
     {

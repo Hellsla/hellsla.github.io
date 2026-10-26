@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpömäärä ei aina nosta lämpötilaa: olomuodon muutoksessa energia purkaa hiukkasten välisiä sidoksia vakiolämpötilassa, ja siihen tarvittava lämpömäärä on $Q = sm$ tai $Q = rm$.",
   "prior": [
-    "Lämpömäärä $Q = cm\\Delta T$ ja veden ominaislämpökapasiteetti 4190 J/(kg·K) (luku ”Aineen lämpeneminen ja jäähtyminen”)",
-    "Teho kertoo, kuinka nopeasti energiaa siirtyy: $Q = Pt$ (luku ”Työ ja energia”)"
+    "Lämpömäärä $Q = cm\\Delta T$ ja veden ominaislämpökapasiteetti 4190 J/(kg·K) (luku *Aineen lämpeneminen ja jäähtyminen*)",
+    "Teho kertoo, kuinka nopeasti energiaa siirtyy: $Q = Pt$ (luku *Työ ja energia*)"
   ],
   "activities": [
     {

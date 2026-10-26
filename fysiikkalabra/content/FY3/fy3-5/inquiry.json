@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpö ja työ ovat kaksi tapaa siirtää energiaa systeemiin tai siitä pois, ja niiden summa on systeemin sisäenergian muutos: $\\Delta U = Q + W$, termodynamiikan ensimmäinen pääsääntö. Lämpö on energian siirtymistä, sisäenergia systeemin ominaisuus.",
   "prior": [
-    "Työ $W = Fs$ siirtää energiaa, ja Joulen kokeessa työ lämmitti vettä (luku ”Työ ja energia”)",
-    "Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku ”Termodynaaminen systeemi, tilanmuuttujat ja lämpötila”)"
+    "Työ $W = Fs$ siirtää energiaa, ja Joulen kokeessa työ lämmitti vettä (luku *Työ ja energia*)",
+    "Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
   ],
   "activities": [
     {
@@ -18,7 +18,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmalta tunnilta",
-      "prompt": "Luvussa ”Termodynaaminen systeemi, tilanmuuttujat ja lämpötila” kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
+      "prompt": "Luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila* kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
       "choices": [
         {
           "text": "Hiukkaset laajenevat ja vievät enemmän tilaa.",

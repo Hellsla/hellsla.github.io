@@ -89,7 +89,7 @@ Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-aks
   <text x="460" y="290" text-anchor="middle" fill="#1f2933">muuttuva voima</text>
 </svg>
 
-Kun nostat kappaleen tasaisella nopeudella ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (luku ”Voima vuorovaikutuksen mittana ja paino”). Nostotyö korkeudelle h on siis:
+Kun nostat kappaleen tasaisella nopeudella ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (luku *Voima vuorovaikutuksen mittana ja paino*). Nostotyö korkeudelle h on siis:
 ```latex
 W = G h = m g h
 ```
