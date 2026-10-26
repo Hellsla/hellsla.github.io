@@ -28,7 +28,7 @@ Lauhdevoimalaitoksessa ketju on polttoaine, kattila, turbiini ja lauhdutin, gene
   <foreignObject x="70" y="368" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$=100\,\text{MW}$</div></foreignObject>
 </svg>
 
-Suurin häviö ei johdu kitkasta tai huonosta tekniikasta. Se on höyrykierron hukkalämpö, jota lämpövoimakone ei voi välttää: osa lämmöstä on luovutettava kylmempään ympäristöön, kuten edellisessä luvussa Kaasun tekemä työ ja lämpövoimakone nähtiin. Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, joten niillä tätä pakollista häviötä ei ole: vesivoimalan hyötysuhde on noin 90 %, tuulivoimalan 40–45 % ja aurinkopaneelin noin 20 %. Näiden lukujen nimittäjä on kuitenkin virtaavan veden, tuulen tai säteilyn teho eikä ostettu polttoaine, joten ne eivät ole suoraan verrattavissa polttolaitoksen hyötysuhteeseen.
+Suurin häviö ei johdu kitkasta tai huonosta tekniikasta. Se on höyrykierron hukkalämpö, jota lämpövoimakone ei voi välttää: osa lämmöstä on luovutettava kylmempään ympäristöön, kuten luvussa Kaasun tekemä työ ja lämpövoimakone nähtiin. Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, joten niillä tätä pakollista häviötä ei ole: vesivoimalan hyötysuhde on noin 90 %, tuulivoimalan 40–45 % ja aurinkopaneelin noin 20 %. Näiden lukujen nimittäjä on kuitenkin virtaavan veden, tuulen tai säteilyn teho eikä ostettu polttoaine, joten ne eivät ole suoraan verrattavissa polttolaitoksen hyötysuhteeseen.
 
 Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon. Jotta vesi lämpenee riittävästi, höyry lauhdutetaan korkeammassa lämpötilassa, ja turbiinista saadaan vähemmän sähköä. Kuvaaja näyttää esimerkkilaitoksen, jonka polttoaineteho on 400 MW: kun kaukolämpöteho kasvaa, sähköteho pienenee vähän, mutta hukkalämpö pienenee paljon enemmän. Kuvaajassa pystysuora matka kerrosten välillä on teho, ja kolmen kerroksen yhteenlaskettu korkeus on aina 400 MW.
 
@@ -95,46 +95,51 @@ Sijoittamalla ylempi yhtälö alempaan saadaan koko ketjun hyötysuhde:
 ```latex
 \eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3
 ```
-missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, höyrykierto, generaattori ja muuntaja) ja $P_3$ on sähköteho. Hyötysuhteet kerrotaan keskenään, ei lasketa yhteen. Koska jokainen tekijä on pienempi kuin 1, ketjun hyötysuhde on pienempi kuin heikoimman vaiheen. Kuvassa pylväs lyhenee vaiheesta toiseen kertoimella $\eta_k$.
+missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, höyrykierto, generaattori ja muuntaja) ja $P_3$ on sähköteho. Hyötysuhteet kerrotaan keskenään, ei lasketa yhteen. Koska jokainen tekijä on pienempi kuin 1, ketjun hyötysuhde on pienempi kuin heikoimman vaiheen. Kuvassa pylväät $P_1$, $P_2$ ja $P_3$ saadaan edellisestä pylväästä kertomalla se vaiheen hyötysuhteella $\eta_1$, $\eta_2$ tai $\eta_3$.
 
-<svg viewBox="0 0 600 440" role="img" aria-label="Pylväskuvaaja siitä, miten teho pienenee energiaketjussa. Polttoaineteho P0 on 500 MW, kattilan jälkeen P1 on 460 MW, höyrykierron jälkeen P2 on 212 MW ja generaattorin ja muuntajan jälkeen P3 on 200 MW. Jokainen pylväs on edellistä matalampi, ja pylvään päällä oleva vaalea katkoviivalla rajattu osa on edellisessä vaiheessa hukkaan mennyt teho. Vaiheiden hyötysuhteet ovat 0,92, 0,46 ja 0,945, ja niiden tulo on 0,40. Pylväät ovat mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 480" role="img" aria-label="Pylväskuvaaja siitä, miten teho pienenee energiaketjussa. Polttoaineteho P0 on 500 MW, kattilan jälkeen P1 on 460 MW, höyrykierron jälkeen P2 on 212 MW ja generaattorin ja muuntajan jälkeen P3 on 200 MW. Jokainen pylväs on edellistä matalampi, ja pylvään päällä oleva vaalea katkoviivalla rajattu osa on edellisessä vaiheessa hukkaan mennyt teho, ja jokaiseen on merkitty häviö: kattilassa 40 MW, höyrykierrossa 248 MW ja generaattorissa ja muuntajassa 12 MW. Vaiheiden hyötysuhteet ovat 0,92, 0,46 ja 0,945, ja niiden tulo on 0,40. Pylväät ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <line x1="30" y1="330" x2="590" y2="330" stroke="#1f2933" stroke-width="3"/>
-  <rect x="50" y="80" width="100" height="250" fill="url(#fy315-bar)"/>
-  <rect x="190" y="80" width="100" height="20" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
-  <rect x="190" y="100" width="100" height="230" fill="url(#fy315-bar)"/>
-  <rect x="330" y="100" width="100" height="124.2" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
-  <rect x="330" y="224.2" width="100" height="105.8" fill="#1f2933"/>
-  <rect x="470" y="224.2" width="100" height="5.8" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
-  <rect x="470" y="230" width="100" height="100" fill="#1f2933"/>
+  <line x1="30" y1="380" x2="590" y2="380" stroke="#1f2933" stroke-width="3"/>
+  <rect x="50" y="130" width="100" height="250" fill="url(#fy315-bar)"/>
+  <rect x="190" y="130" width="100" height="20" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="190" y="150" width="100" height="230" fill="url(#fy315-bar)"/>
+  <rect x="330" y="150" width="100" height="124.2" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="330" y="274.2" width="100" height="105.8" fill="#1f2933"/>
+  <rect x="470" y="274.2" width="100" height="5.8" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="280" width="100" height="100" fill="#1f2933"/>
   <foreignObject x="170" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_1 = 0{,}92$</div></foreignObject>
   <path d="M195,66 H265 L265,66" stroke="none"/>
   <foreignObject x="310" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_2 = 0{,}46$</div></foreignObject>
   <path d="M335,86 H405 L405,86" stroke="none"/>
   <foreignObject x="450" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_3 = 0{,}945$</div></foreignObject>
   <path d="M475,210.2 H545 L545,210.2" stroke="none"/>
-  <foreignObject x="40" y="338" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_0$</div></foreignObject>
-  <foreignObject x="40" y="376" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$500\,\text{MW}$</div></foreignObject>
-  <foreignObject x="180" y="338" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_1$</div></foreignObject>
-  <foreignObject x="180" y="376" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$460\,\text{MW}$</div></foreignObject>
-  <foreignObject x="320" y="338" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_2$</div></foreignObject>
-  <foreignObject x="320" y="376" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$212\,\text{MW}$</div></foreignObject>
-  <foreignObject x="460" y="338" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_3$</div></foreignObject>
-  <foreignObject x="460" y="376" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$200\,\text{MW}$</div></foreignObject>
-  <foreignObject x="320" y="142.1" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{häviö}$</div></foreignObject>
+  <foreignObject x="40" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_0$</div></foreignObject>
+  <foreignObject x="40" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$500\,\text{MW}$</div></foreignObject>
+  <foreignObject x="180" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_1$</div></foreignObject>
+  <foreignObject x="180" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$460\,\text{MW}$</div></foreignObject>
+  <foreignObject x="320" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_2$</div></foreignObject>
+  <foreignObject x="320" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$212\,\text{MW}$</div></foreignObject>
+  <foreignObject x="460" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_3$</div></foreignObject>
+  <foreignObject x="460" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$200\,\text{MW}$</div></foreignObject>
+  <foreignObject x="180" y="54" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{häviö}$</div></foreignObject>
+  <foreignObject x="180" y="92" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$40\,\text{MW}$</div></foreignObject>
+  <foreignObject x="320" y="172" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{häviö}$</div></foreignObject>
+  <foreignObject x="320" y="210" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$248\,\text{MW}$</div></foreignObject>
+  <foreignObject x="460" y="196" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{häviö}$</div></foreignObject>
+  <foreignObject x="460" y="234" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$12\,\text{MW}$</div></foreignObject>
 </svg>
 
 Yhteistuotantolaitoksessa hyödyksi saadaan sekä sähkö että kaukolämpö, joten kokonaishyötysuhde on
 ```latex
 \eta_\text{kok} = \frac{P_\text{s} + P_\text{k}}{P_0}
 ```
-missä $P_\text{s}$ on sähköteho (W) ja $P_\text{k}$ kaukolämpöteho (W). Lauhduttimen lämpö lämmittää jäähdytysvettä. Jos vettä virtaa massa $m$ ajassa $t$ ja sen lämpötila nousee $\Delta T$, lämpömäärän $Q = cm\,\Delta T$ avulla hukkalämmön teho on
+missä $P_\text{s}$ on sähköteho (W) ja $P_\text{k}$ kaukolämpöteho (W). Lauhduttimen lämpö lämmittää jäähdytysvettä. Jos vettä virtaa massa $m$ ajassa $t$ ja sen lämpötila nousee $\Delta T$, lämpömäärän $Q = cm\,\Delta T$ avulla lauhduttimen lämpöteho on
 ```latex
-P_\text{h} = c\,q_m\,\Delta T
+P_\text{L} = c\,q_m\,\Delta T
 ```
-missä $c$ on veden ominaislämpökapasiteetti (4190 J/(kg·K)), $q_m = m/t$ vesivirta (kg/s) ja $\Delta T$ veden lämpötilan nousu (K).
+missä $P_\text{L}$ on lauhduttimesta veteen siirtyvä lämpöteho (W), $c$ on veden ominaislämpökapasiteetti (4190 J/(kg·K)), $q_m = m/t$ vesivirta (kg/s) ja $\Delta T$ veden lämpötilan nousu (K). Lauhduttimen lämpöteho on hukkalämmön suurin osa mutta ei koko hukkalämpö $P_\text{h}$: osa hukkalämmöstä lähtee savukaasujen mukana ja generaattorin ja muuntajan häviöinä.
 
-<svg viewBox="0 0 600 310" role="img" aria-label="Lauhduttimen kaaviokuva. Merivesi virtaa putkessa vasemmalta oikealle lauhduttimen läpi, ja sen lämpötila nousee arvosta T1 arvoon T2. Putken väri vaihtuu sinisestä punaiseen. Lauhduttimen yläosassa oleva höyry luovuttaa lämpöä veteen teholla P_h, jota kuvaa oranssi nuoli, ja höyry tiivistyy alaosaan vedeksi. Vesivirta q_m on molemmissa päissä sama. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 310" role="img" aria-label="Lauhduttimen kaaviokuva. Merivesi virtaa putkessa vasemmalta oikealle lauhduttimen läpi, ja sen lämpötila nousee arvosta T1 arvoon T2. Putken väri vaihtuu sinisestä punaiseen. Lauhduttimen yläosassa oleva höyry luovuttaa lämpöä veteen teholla P_L, jota kuvaa oranssi nuoli, ja höyry tiivistyy alaosaan vedeksi. Vesivirta q_m on molemmissa päissä sama. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-pipe" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="400" y2="0"><stop offset="0" stop-color="#1971c2"/><stop offset="0.25" stop-color="#1971c2"/><stop offset="0.75" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy315-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <rect x="190" y="70" width="220" height="170" rx="14" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
   <path d="M193,205 H407 V228 a11,11 0 0 1 -11,11 H204 a11,11 0 0 1 -11,-11 Z" fill="#a9d1f0"/>
@@ -144,7 +149,7 @@ missä $c$ on veden ominaislämpökapasiteetti (4190 J/(kg·K)), $q_m = m/t$ ves
   <polygon points="478,148 478,172 500,160" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
   <path d="M285,94 H315 V122 H335 L300,148 L265,122 H285 Z" fill="url(#fy315-heat)"/>
   <foreignObject x="196" y="72" width="80" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{höyry}$</div></foreignObject>
-  <foreignObject x="328" y="88" width="76" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_\text{h}$</div></foreignObject>
+  <foreignObject x="328" y="88" width="76" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_\text{L}$</div></foreignObject>
   <foreignObject x="246" y="200" width="108" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{lauhde}$</div></foreignObject>
   <foreignObject x="6" y="100" width="184" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{merivesi sisään}$</div></foreignObject>
   <foreignObject x="30" y="184" width="110" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$T_1$</div></foreignObject>
@@ -170,7 +175,7 @@ P_\text{h} &= P_0 - P_3
 ```
 
 <!-- vaihe -->
-**Sijoitus.** Sähköteho on
+**Sijoitus.** Vaiheiden jälkeiset tehot ovat $P_1 = \eta_1 P_0 = 546\,\text{MW}$ ja $P_2 = \eta_2 P_1 \approx 240\,\text{MW}$. Sähköteho on
 ```latex
 \begin{aligned}
 P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
@@ -193,7 +198,7 @@ P_\text{h} &= P_0 - P_3 \\
 ```
 
 <!-- vaihe -->
-**Järkevyys.** Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Lauhduttimeen siirtyy teho $546\,\text{MW} - 240\,\text{MW} \approx 306\,\text{MW}$, eli yli puolet polttoaineen energiasta. Kattilan häviö on vain 54 MW ja generaattorin ja muuntajan 12 MW, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
+**Järkevyys.** Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Lauhduttimeen siirtyy teho $P_1 - P_2 \approx 546\,\text{MW} - 240\,\text{MW} = 306\,\text{MW}$, eli yli puolet polttoaineen energiasta. Kattilan häviö on vain 54 MW ja generaattorin ja muuntajan 12 MW, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei katoa: se siirtyy lämpönä mereen tai ilmaan, jossa sen lämpötila on niin matala, ettei sitä voi enää muuttaa sähköksi. Yhteistuotannossa sama lämpö johdetaan kaukolämpöverkkoon ja lämmittää koteja.
@@ -207,4 +212,4 @@ Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo
 - Lauhdevoimalaitoksen suurin häviö on höyrykierron lauhduttimeen siirtyvä lämpö, jota lämpövoimakone ei voi välttää. Hyötysuhde on noin 40 %.
 - Yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon, ja kokonaishyötysuhde on $\eta_\text{kok} = (P_\text{s} + P_\text{k})/P_0$, noin 85–90 %. Sähköä saadaan silloin vähemmän.
 - Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, mutta niiden hyötysuhteiden nimittäjä on virtaavan veden, tuulen tai säteilyn teho, ei ostettu polttoaine.
-- Lauhduttimen jäähdytysvesi saa lämpötehon $P_\text{h} = c\,q_m\,\Delta T$.
+- Lauhduttimen jäähdytysvesi saa lämpötehon $P_\text{L} = c\,q_m\,\Delta T$, joka on hukkalämmön suurin osa.

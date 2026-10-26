@@ -1,21 +1,24 @@
-VERDICT: FAIL
-CONTENT-HASH: e6f18de4897f4105
+VERDICT: PASS
+CONTENT-HASH: 7b642f39b87c6795
 
 ## Blocking
-- lesson.md:19-36, :82-101, :130 and the `kayra` figure in inquiry.json — figure labels ("jää", "sulaa", "+10 K", bar values 334/42/335, axis tick numbers, "jää sulaa", "vesi lämpenee", "moottori", "jäähdytin") are plain SVG `<text>`; the teacher's rule is every figure label in LaTeX — convert all to `foreignObject` LaTeX as in fy3-6, then recheck legibility at 390 px.
+(none)
 
 ## Polish
-- exercises.json L3-03 repeats the Tutki evidence (same UA 0,90 W/K, 1,0 kg, 24 K and 36 K as Ennuste 2 and the table): 4,30 h − 2,86 h = 86 min straight off the table. Level 3 should reason; change the context (target time, other mass, warm drinks).
-- Hook: "puolen tunnin kuluttua juomat ovat haaleita" but the graph gives about 9 °C; hook, reflect and check-1 say "sama teho" though the power falls once the water warms. Write "viileitä" and "ensin sama teho".
-- Sauna numbers recur seven times; `loyly` only divides two given values (67 and 452 kJ are already in Ydinajatus). Make it a choice about where the energy goes, or cut it for workload. A bar figure (67 vs 452 kJ) beside the sauna paragraph, and one for the ice-water mixing misconception, would meet the "simple figure where visualisable" rule.
-- Finnish: Kaava first sentence "ajan $t$ ajan" → "ajan $t$ kuluessa"; alt texts "2.4 tuntia" → "2,4"; stray space in `mistakes` "12,9 % ."; plain-text "c = 3500 J/(kg·K)" in L1-05, L2-03, L3-01 → LaTeX; Kaava graph says "esimerkin" before the example appears.
-- Ennuste 2 gives 4,3 h and its answer is one proportion with no tempting wrong model; the table checks consistency (Pt = sm, a good step) rather than refuting. Acceptable; name this in reflect.
+- lesson.md Ydinajatus (sauna paragraph) and Yleinen virhekäsitys (ice-water mixing) — the teacher's "simple figure wherever visualisable" rule is met only for the cooler and the coolant loop; a two-bar picture (67 kJ vs 452 kJ) beside the sauna paragraph and one (126 kJ available vs 334 kJ needed) for the mixing case would finish it.
+- inquiry.json `loyly` — the student only divides two values already given in the theory (67 and 452 kJ appear there); consider a choice about where the energy goes, or cut it, since sauna numbers recur many times.
+- inquiry.json `pred-2` — one proportion with no tempting wrong model besides the percentage one; the table checks consistency (Pt = sm) rather than refuting. Acceptable; `reflect` already names this.
+- exercises.json L3-03 — now varied (ice at -10 °C, warm drinks, target time), no longer table lookup; fine. L1-05, L2-03 now LaTeX for c.
+- The inquiry graph (t0 about 3,7 h, UA 0,90 W/K) and the Kaava graph (2,4 h) show different cooler set-ups; the text says which, so it is not blocking, but one line "toinen laukku" in `kayra` would avoid a moment's confusion.
 
 ## Checked
-- Path: hook, retrieval, prediction, graph and table, theory, reflect, example, error-spotting, transfer, checks; sauna, cooler and coolant covered.
-- Opening question answered only after commitment; Ennuste starts closed, options shuffled, speakers varied.
-- Example: five stages, symbolic first, units, sanity check; 2,4 h and 19 K/h recomputed.
-- Figure captures: recognisable, uncluttered, colour never alone, readable at 390 px; 1280 px puts figure beside text.
-- Graph geometry (t0 3,7 h, 28 °C, curve) matches the model; 333 kJ vs 334 kJ.
-- Exercise levels 5/4/3, answers recomputed; solutions LaTeX; no lesson ids in student text; exit ticket tests the core idea.
-- No simulation, justified by topic. Hash unchanged at end.
+- Round-1 blocking fixed: all figure labels (jää, sulaa, +10 K, bar values, axis ticks, t0, moottori, jäähdytin, T1, T2, P, m/t) are LaTeX foreignObject; no SVG `<text>` left in lesson.md or inquiry.json.
+- Captures at 390 px: three figures recognisable, uncluttered, colour paired with labels, legible; 1280 px puts the figure beside its paragraph.
+- Hook now says "viileitä"/"sama teho alussa"; Finnish slips from round 1 ("kuluessa", decimal commas) corrected.
+- Path: hook, retrieval, predictions, graph and table, theory, reflect, staged example (five stages, symbolic first), error-spotting, transfer, three checks, exit ticket, Tehtävät last; slot goals (cooler, sauna, coolant) covered, no more.
+- Opening question answered only after commitment; Ennuste closed, options shuffled, speakers varied.
+- Exercise levels 5/4/3, none repeats the example; solutions in LaTeX; no lesson ids in student text.
+- Numbers spot-checked: 2,4 h, 333 vs 334 kJ, 86 %, 65 s, 1,5 kg.
+- No simulation, justified by topic; workload one lesson.
+- 360/768/1280 px: 390 px and 1280 px captures read; the 360 px fit is tested.
+- Hash unchanged at end.

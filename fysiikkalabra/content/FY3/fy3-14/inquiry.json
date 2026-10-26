@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "contribution": "Lämpötasapainon laskuun tulee mukaan olomuodon muutos: jään sulamislämpö ratkaisee, sulaako kaikki jää, joten ennen lämpötilan laskemista vertaillaan veden luovuttamaa ja jään tarvitsemaa lämpömäärää.",
+  "prior": [
+    "Lämpömäärä, joka tarvitaan lämpötilan muuttamiseen, on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen)",
+    "Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama (luku Aineen lämpeneminen ja jäähtyminen)",
+    "Olomuodon muutoksessa lämpötila pysyy vakiona, ja jään sulattaminen vaatii $Q = sm$ (luku Olomuodon muutokset)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kesäpäivänä kaadat lasiin 0,30 kg vettä, jonka lämpötila on 20 °C, ja pudotat siihen jääkuutioita, joita on yhteensä 0,10 kg ja jotka ovat juuri sulamispisteessään, 0 °C:ssa. Sekoitat ja odotat, kunnes lämpö on tasoittunut. Lasi on hyvin eristetty, joten ympäristö ei vaikuta tulokseen.",
+      "question": "Onko lasissa lopuksi vielä jäätä, ja mikä on veden lämpötila?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa edelliseltä luvulta",
+      "prompt": "Olomuodon muutokset -luvussa sulatettiin jäätä 0 °C:ssa. Kuinka paljon energiaa yhden kilogramman jään sulattaminen vaatii, ja mitä jään lämpötilalle tapahtuu sulamisen aikana?",
+      "choices": [
+        {
+          "text": "Noin 334 kJ, ja lämpötila pysyy 0 °C:ssa, kunnes kaikki jää on sulanut.",
+          "correct": true,
+          "feedback": "Oikein. Ominaissulamislämpö on vedelle 334 kJ/kg, ja sulamisen aikana energia kuluu hiukkasten välisten sidosten purkamiseen, joten lämpötila ei muutu. Tänään tämä energia on mukana lämpötasapainon laskussa."
+        },
+        {
+          "text": "Noin 334 kJ, ja lämpötila nousee tasaisesti, kun jää sulaa.",
+          "feedback": "Energia on oikein, mutta lämpötila ei nouse sulamisen aikana. Tuotu energia kuluu sidosten purkamiseen, ja lämpötila pysyy 0 °C:ssa, kunnes kaikki jää on sulanut."
+        },
+        {
+          "text": "Noin 4,19 kJ, koska jään lämpötila nousee 1 K.",
+          "feedback": "Luku 4,19 kJ on energia, joka nostaa kilogramman *vettä* yhden kelvinin. Sulaminen ei muuta lämpötilaa, ja sen energia on aivan eri suuruusluokkaa: 334 kJ kilogrammaa kohti."
+        },
+        {
+          "text": "Ei lainkaan energiaa, koska lämpötila ei muutu.",
+          "feedback": "Lämpötila pysyy vakiona juuri siksi, että tuotu energia kuluu sulamiseen. Ilman energiaa jää ei sulaisi, ja kilogramman sulattaminen vaatii noin 334 kJ."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: sulaako kaikki jää",
+      "prompt": "Eristetyssä kalorimetrissä on 0,30 kg vettä, jonka lämpötila on 20 °C. Veteen pudotetaan 0,10 kg jäätä, jonka lämpötila on 0 °C. Mikä on tilanne, kun lämpötasapaino on saavutettu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Kaikki jää sulaa, ja veden lämpötila on 15 °C.",
+          "feedback": "Mallin arvot kumoavat tämän: jäätä jää 24,7 g ja lämpötila on 0 °C. Tulos 15 °C saataisiin vain, jos jää olisi pelkkää nollan asteen vettä ja sulaminen ei veisi energiaa. Jään sulaminen vie 33,4 kJ, mutta vesi voi jäähtyessään luovuttaa vain 25,1 kJ."
+        },
+        {
+          "text": "Kaikki jää sulaa, ja lämpötila jää vain vähän 0 °C:n yläpuolelle.",
+          "feedback": "Mallin arvot kumoavat tämän: kaiken jään sulattaminen vaatisi 33,4 kJ, mutta vesi voi jäähtyessään 0 °C:seen luovuttaa vain 25,1 kJ. Vesi sulattaa 75,3 g jäätä ja jäähtyy 0 °C:seen, ja jäätä jää jäljelle 24,7 g."
+        },
+        {
+          "text": "Jäätä jää jäljelle, ja lämpötila on 0 °C.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: vesi luovuttaa jäähtyessään 0 °C:seen 25,1 kJ, mikä riittää sulattamaan 75,3 g jäätä. Jäätä jää jäljelle 24,7 g, ja koska jäätä ja vettä on yhtä aikaa, lämpötila on 0 °C. Kun veden lämpötila ylittää 26,6 °C, kaikki jää sulaa."
+        },
+        {
+          "text": "Jäätä jää jäljelle, ja lämpötila on hieman alle 0 °C, koska jää viilentää vettä.",
+          "feedback": "Mallin arvot kumoavat tämän: lämpötila on tasan 0 °C. Jää on alussa 0 °C:ssa, joten se ei voi jäähdyttää vettä alle 0 °C:n. Niin kauan kuin astiassa on sekä jäätä että vettä, lämpötila on 0 °C."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kylmä pakastinjää",
+      "prompt": "Lasissa on 0,30 kg vettä lämpötilassa 25 °C ja 0,10 kg jäätä. Kokeessa jää on joko 0 °C:ssa tai pakastimesta otettuna −20 °C:ssa. Kummassakin kokeessa jäätä jää jäljelle. Kuinka paljon enemmän jäätä on jäljellä, kun jää oli alussa −20-asteista?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Ei yhtään enempää, koska sulamislämpö on sama jään lämpötilasta riippumatta.",
+          "feedback": "Mallin arvot kumoavat tämän: jäätä jää 12,6 g enemmän. Sulamislämpö on todella sama, mutta −20-asteinen jää on ensin lämmitettävä 0 °C:seen, ja se kuluttaa 4,2 kJ veden luovuttamasta lämmöstä."
+        },
+        {
+          "text": "Vain vähän enemmän, koska jään lämmittäminen 0 °C:seen vaatii paljon vähemmän energiaa kuin sen sulattaminen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: 0-asteista jäätä jää 5,9 g ja −20-asteista 18,5 g, eli ero on 12,6 g. Jään lämmittäminen −20 °C:sta 0 °C:seen vie 4,2 kJ, kun sen sulattaminen vie 33,4 kJ: lämmitys on vain noin kahdeksasosa sulatuksesta."
+        },
+        {
+          "text": "Paljon enemmän: jäätä on jäljellä yli puolet, koska −20 °C on paljon kylmempi kuin 0 °C.",
+          "feedback": "Mallin arvot kumoavat tämän: jäätä jää vain 18,5 g sadasta. Jään lämmittäminen kuluttaa 4,2 kJ, mutta veden luovuttama lämpö on 31,4 kJ, ja suurin osa siitä sulattaa jäätä."
+        },
+        {
+          "text": "−20-asteinen jää ei sula lainkaan, koska se on kylmempää kuin 0 °C.",
+          "feedback": "Mallin arvot kumoavat tämän: jäätä sulaa 81,5 g. Lämmin vesi lämmittää jään ensin 0 °C:seen ja sulattaa sen sitten; lämpöä riittää siihen, koska vesi voi luovuttaa 31,4 kJ."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Pudota jäätä veteen kalorimetrissä. Palkit oikealla näyttävät, paljonko lämpöä vesi voi luovuttaa ja paljonko jää tarvitsee lämmetäkseen ja sulaakseen.",
+      "howto": "Säädä veden massa ja lämpötila sekä jään massa ja lämpötila ja paina *Sekoita*. Jääkuutiot putoavat veteen ja sulavat; kuvassa näkyvät veden ja jään lämpötilat ja jään massa. Oranssi palkki on veden luovuttama lämpömäärä, tumma sininen jään lämmitys 0 °C:seen ja vaalea sininen kaiken jään sulatus. Palkin osa, joka ylittää oranssin palkin korkeuden, on piirretty himmeänä: sitä lämpöä ei ole, ja vastaava jää ei sula. Kun muutat jotakin arvoa, jää nousee pois vedestä ja koe alkaa alusta. *Nopeus* muuttaa vain animaation tahtia, ei tuloksia.",
+      "model": "Astia on täysin eristetty: lämpöä ei siirry ympäristöön eikä astiaan, joten veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Veden ominaislämpökapasiteetti on 4190 J/(kg·K), jään 2100 J/(kg·K) ja jään ominaissulamislämpö 334 kJ/kg. Jäätä ja vettä on yhtä aikaa vain lämpötilassa 0 °C. Lopputila, lämpömäärät ja massat ovat mallin laskemia arvoja, eivät mittauksia. Lähestymisen nopeus (aikavakio 1,8 s) on vain havainnollistus, ei fysikaalinen malli: todellisuudessa se riippuu sekoittamisesta ja jääkuutioiden koosta.",
+      "calc": "Veden luovuttama lämpömäärä jäähtyessä 0 °C:seen on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$. Jään tarvitsema lämpömäärä on lämmitykseen $c_\\text{j} m_\\text{j} \\Delta T_\\text{j}$ ja kaiken jään sulatukseen $s m_\\text{j}$. Jos $Q_\\text{v}$ on niiden summa tai suurempi, kaikki jää sulaa ja\n\n$$T = \\frac{Q_\\text{v} - c_\\text{j} m_\\text{j} \\Delta T_\\text{j} - s m_\\text{j}}{c_\\text{v} (m_\\text{v} + m_\\text{j})}$$\n\nMuuten jäätä jää, lämpötila on 0 °C ja sulaneen jään massa on $m_\\text{s} = \\dfrac{Q_\\text{v} - c_\\text{j} m_\\text{j} \\Delta T_\\text{j}}{s}$. Jos $Q_\\text{v}$ ei riitä jään lämmittämiseen, osa vedestä jäätyy; kun kaikki vesi jäätyy, lämpötila ratkaistaan energiataseesta. Palkkien asteikko on 0–250 kJ."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: veden lämpötila muuttuu",
+      "intro": "Testaa ennuste 1. Veden massa sekä jään massa ja lämpötila pysyvät vakioina; muuta vain veden lämpötilaa. Kirjaa lopputilan lämpötila ja jäljelle jäävän jään massa ainakin kolmella lämpötilalla, esimerkiksi 10 °C, 20 °C ja 40 °C. Paina välillä *Sekoita* ja seuraa, mitä jäälle tapahtuu.",
+      "initial": {
+        "mW": 0.3,
+        "TW0": 20,
+        "mI": 0.1,
+        "TI0": 0
+      },
+      "locked": [
+        "mW",
+        "mI",
+        "TI0"
+      ],
+      "vary": "TW0",
+      "names": {
+        "mW": "veden massa",
+        "TW0": "veden alkulämpötila",
+        "mI": "jään massa",
+        "TI0": "jään alkulämpötila"
+      },
+      "units": {
+        "mW": "kg",
+        "TW0": "°C",
+        "mI": "kg",
+        "TI0": "°C"
+      },
+      "measure": [
+        {
+          "key": "Tf",
+          "label": "T (°C)"
+        },
+        {
+          "key": "iceLeftG",
+          "label": "jäätä jäljellä (g)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Etsi liukusäätimellä veden alkulämpötila, jolla jäätä ei ole enää jäljellä mutta lopputilan lämpötila ei vielä ylitä 0 °C:ta. Mikä lämpötila se on? Vastaa celsiusasteina.",
+        "answer": 26.6,
+        "unit": "°C",
+        "tolerance": 0.05,
+        "hints": [
+          "Katso jäljelle jäävän jään massaa: pienennä sitä lämpötilaa nostamalla ja etsi kohta, jossa se katoaa.",
+          "Tässä lämpötilassa veden luovuttama lämpömäärä on yhtä suuri kuin kaiken jään sulattamiseen tarvittava: $c_\\text{v} m_\\text{v} T_\\text{v} = s m_\\text{j}$."
+        ],
+        "solution": "**Ratkaisu symbolisesti.** Raja-arvolla vesi luovuttaa jäähtyessään 0 °C:seen täsmälleen kaiken jään sulattamiseen tarvittavan lämmön: $c_\\text{v} m_\\text{v} T_\\text{v} = s m_\\text{j}$, josta $T_\\text{v} = \\dfrac{s m_\\text{j}}{c_\\text{v} m_\\text{v}}$.\n\n**Sijoitus.** $T_\\text{v} = \\dfrac{334\\,000\\,\\text{J/kg} \\cdot 0{,}10\\,\\text{kg}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}30\\,\\text{kg}} \\approx 26{,}6\\,{}^\\circ\\text{C}$."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: jään lämpötila muuttuu",
+      "intro": "Testaa ennuste 2. Vesi (0,30 kg, 25 °C) ja jään massa (0,10 kg) pysyvät vakioina; muuta vain jään alkulämpötilaa. Kirjaa jäljelle jäävän jään massa ainakin kahdella lämpötilalla, esimerkiksi 0 °C ja −20 °C.",
+      "initial": {
+        "mW": 0.3,
+        "TW0": 25,
+        "mI": 0.1,
+        "TI0": 0
+      },
+      "locked": [
+        "mW",
+        "TW0",
+        "mI"
+      ],
+      "vary": "TI0",
+      "names": {
+        "mW": "veden massa",
+        "TW0": "veden alkulämpötila",
+        "mI": "jään massa",
+        "TI0": "jään alkulämpötila"
+      },
+      "units": {
+        "mW": "kg",
+        "TW0": "°C",
+        "mI": "kg",
+        "TI0": "°C"
+      },
+      "measure": [
+        {
+          "key": "Tf",
+          "label": "T (°C)"
+        },
+        {
+          "key": "iceLeftG",
+          "label": "jäätä jäljellä (g)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta grammaa enemmän jäätä on jäljellä, kun jää on alussa −20 °C:ssa verrattuna 0 °C:seen? Kirjaa tarvittaessa molemmat mittaukset taulukkoon. Vastaa grammoina.",
+        "answer": 12.6,
+        "unit": "g",
+        "tolerance": 0.05,
+        "hints": [
+          "Vertaa taulukon kahta jäljelle jäävän jään massaa: toinen on mitattu 0 °C:ssa ja toinen −20 °C:ssa.",
+          "Erotus on se jää, jonka sulattamiseen tarvittava lämpö kului jään lämmittämiseen: $\\dfrac{c_\\text{j} m_\\text{j} \\Delta T_\\text{j}}{s}$."
+        ],
+        "solution": "**Ratkaisu symbolisesti.** Jään lämmittämiseen kuluva lämpö ei ole enää sulattamassa, joten jäljelle jäävän jään massa kasvaa $\\Delta m = \\dfrac{c_\\text{j} m_\\text{j} \\Delta T_\\text{j}}{s}$.\n\n**Sijoitus.** $\\Delta m = \\dfrac{2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}10\\,\\text{kg} \\cdot 20\\,\\text{K}}{334\\,000\\,\\text{J/kg}} \\approx 0{,}0126\\,\\text{kg} = 12{,}6\\,\\text{g}$."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavoihin. Palaa sitten alun kysymykseen: miksi jääpalat viilentävät juomaa tehokkaammin kuin sama massa 0-asteista vettä? Käytä lukuja 334 kJ/kg ja 4,19 kJ/(kg·K), ja kerro, milloin kaikki jää sulaa.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee, mihin lämpötilaan asettuvat 0,40 kg vettä (15 °C) ja 0,30 kg jäätä (0 °C) eristetyssä astiassa. Hän olettaa, että kaikki jää sulaa, ja kirjoittaa\n\n$$\\begin{aligned} T &= \\frac{c_\\text{v} m_\\text{v} T_\\text{v} - s m_\\text{j}}{c_\\text{v} (m_\\text{v} + m_\\text{j})} \\\\ &= \\frac{25\\,140\\,\\text{J} - 100\\,200\\,\\text{J}}{2933\\,\\text{J/K}} \\\\ &\\approx -26\\,{}^\\circ\\text{C} \\end{aligned}$$\n\nja vastaa, että seos jäähtyy −26 °C:seen. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Oletus kaiken jään sulamisesta on väärä: vesi voi luovuttaa vain 25 140 J, mutta jään sulattaminen vaatii 100 200 J. Jäätä jää jäljelle, ja lämpötila on 0 °C.",
+          "correct": true,
+          "feedback": "Oikein. Negatiivinen lopputulos kertoo, että oletus ei päde. Vesi sulattaa vain $\\dfrac{25\\,140\\,\\text{J}}{334\\,000\\,\\text{J/kg}} \\approx 0{,}075\\,\\text{kg}$ jäätä, joten jäätä jää 0,225 kg ja lämpötila on 0 °C. Tuloksen olisi voinut huomata vääräksi jo ilman laskua: alun jää on 0 °C:ssa, joten seos ei voi jäähtyä sen alle."
+        },
+        {
+          "text": "Sulamislämpö pitäisi lisätä osoittajaan plusmerkillä, koska jää ottaa energiaa.",
+          "feedback": "Merkki on oikein: jää *ottaa* sulaessaan energiaa, joten se vähentää veden luovuttamaa lämpöä, ja miinus kuuluu osoittajaan. Virhe on oletuksessa, että kaikki jää ehtii sulaa."
+        },
+        {
+          "text": "Lämpötilat olisi pitänyt muuttaa kelvineiksi ennen sijoitusta.",
+          "feedback": "Muunnos ei auttaisi: kelvineinä vastaus olisi yhtä mahdoton. Lämpötilat voi sijoittaa celsiusasteina, kun kaavassa on lämpötila vain kerran muutoksena 0 °C:seen. Virhe on oletuksessa, että kaikki jää sulaa."
+        },
+        {
+          "text": "Seos voi todella jäähtyä alle 0 °C:n, koska jää on kylmää; laskussa ei ole virhettä.",
+          "feedback": "Jää on alussa 0 °C:ssa eikä sitä kylmempää, joten se ei voi jäähdyttää seosta alle 0 °C:n. Sellainen tulos on aina merkki väärästä oletuksesta."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Limsaa, jonka massa on 0,25 kg ja lämpötila 22 °C, halutaan viilentää 8,0 °C:seen pudottamalla siihen jäätä, jonka lämpötila on 0 °C. Kuinka monta grammaa jäätä tarvitaan, kun kaikki jää sulaa ja limsan ominaislämpökapasiteetti on sama kuin veden? Lämpöä ei oleteta siirtyvän ympäristöön. Vastaa grammoina.",
+      "answer": 39.9,
+      "unit": "g",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin kaikkeen jään vastaanottama lämpö kuluu? Muista, että jää ensin sulaa ja sulamisvesi lämpenee sitten lopputilan lämpötilaan.",
+        "Limsan luovuttama lämpö on yhtä suuri kuin jään sulaminen ja sulamisveden lämpeneminen: $c\\, m_\\text{l} (T_\\text{l} - T) = s m_\\text{j} + c\\, m_\\text{j} T$.",
+        "Ratkaise $m_\\text{j} = \\dfrac{c\\, m_\\text{l} (T_\\text{l} - T)}{s + c\\, T}$ ja sijoita: osoittaja on $4190 \\cdot 0{,}25 \\cdot 14\\,\\text{J}$ ja nimittäjä $334\\,000 + 4190 \\cdot 8{,}0$ J/kg."
+      ],
+      "mistakes": [
+        {
+          "value": 43.9,
+          "feedback": "Laskit vain jään sulamisen ja unohdit, että sulamisvesi lämpenee vielä 0 °C:sta 8,0 °C:seen. Se kuluttaa energiaa $c\\, m_\\text{j} T$, joten jäätä tarvitaan vähemmän kuin pelkkä sulatus antaisi."
+        },
+        {
+          "value": 438,
+          "feedback": "Unohdit sulamislämmön ja käsittelit jäätä kylmänä vetenä. Jään sulattaminen vie 334 kJ kilogrammaa kohti, joten jäätä tarvitaan paljon vähemmän."
+        }
+      ],
+      "solution": "**Ratkaisu symbolisesti.** Limsan luovuttama lämpömäärä kuluu jään sulattamiseen ja sulamisveden lämmittämiseen:\n\n$$c\\, m_\\text{l} (T_\\text{l} - T) = s m_\\text{j} + c\\, m_\\text{j} T$$\n\njosta\n\n$$m_\\text{j} = \\frac{c\\, m_\\text{l} (T_\\text{l} - T)}{s + c\\, T}$$\n\n**Sijoitus.** $m_\\text{j} = \\dfrac{4190 \\cdot 0{,}25 \\cdot 14}{334\\,000 + 4190 \\cdot 8{,}0}\\,\\text{kg} \\approx 0{,}040\\,\\text{kg} = 40\\,\\text{g}$.\n\n**Järkevyys.** Noin kolme jääkuutiota riittää neljänneslitran viilentämiseen 14 K, mikä sopii kokemukseen."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä ratkaistaan lopputilan lämpötila tai tuntematon suure, ja taso 3 vaatii päättelyä: sulaako kaikki jää, vai jääkö jäätä?"
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Eristetyssä astiassa on jääsohjoa, jossa on sekä vettä että jäätä, ja sen lämpötila on 0 °C. Astiaan siirtyy lämpöä, mutta jäätä on yhä jäljellä. Mitä seoksen lämpötilalle tapahtuu?",
+      "choices": [
+        {
+          "text": "Se pysyy 0 °C:ssa, ja lisätty lämpö sulattaa jäätä.",
+          "correct": true,
+          "feedback": "Oikein. Niin kauan kuin jäätä ja vettä on yhtä aikaa, lämpötila on 0 °C, ja lisätty energia kuluu jään sulattamiseen. Lämpötila alkaa nousta vasta, kun kaikki jää on sulanut."
+        },
+        {
+          "text": "Se nousee hitaasti, koska jää ja vesi lämpenevät yhdessä.",
+          "feedback": "Lämpötila ei nouse, ennen kuin jää on sulanut. Lisätty energia käytetään sidosten purkamiseen eli sulattamiseen, ja jään sulattaminen vie paljon energiaa: 334 kJ kilogrammaa kohti."
+        },
+        {
+          "text": "Se laskee, koska jää jäähdyttää vettä.",
+          "feedback": "Lämpöä siirtyy astiaan lisää, joten seos ei jäähdy. Jos lämmitys jatkuu, jää sulaa 0 °C:ssa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskenta",
+      "prompt": "Kalorimetrissä on 0,20 kg teetä, jonka lämpötila on 70 °C ja jonka ominaislämpökapasiteetti on sama kuin veden. Teehen pudotetaan 0,050 kg jäätä, jonka lämpötila on 0 °C. Mikä on lämpötila, kun kaikki jää on sulanut ja lämpötasapaino on saavutettu? Vastaa celsiusasteina.",
+      "answer": 40,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "Vertaa ensin, riittääkö teen luovuttama lämpö sulattamaan kaiken jään. Paljonko tee voi luovuttaa jäähtyessään 0 °C:seen?",
+        "Jos jää sulaa kokonaan, $T = \\dfrac{Q_\\text{v} - s m_\\text{j}}{c_\\text{v} (m_\\text{v} + m_\\text{j})}$, kun jää on aluksi 0 °C:ssa.",
+        "$Q_\\text{v} = 4190 \\cdot 0{,}20 \\cdot 70 = 58\\,660\\,\\text{J}$ ja $s m_\\text{j} = 334\\,000 \\cdot 0{,}050 = 16\\,700\\,\\text{J}$."
+      ],
+      "mistakes": [
+        {
+          "value": 56,
+          "feedback": "Unohdit jään sulamislämmön: jään sulattaminen vie 16,7 kJ, ja se vähentää teen luovuttamaa lämpöä ennen kuin seos alkaa lämmetä."
+        },
+        {
+          "value": 35,
+          "feedback": "Keskiarvo 35 °C ei ole oikea tapa: massat ja sulamislämpö vaikuttavat. Laske lämpömäärät: tee luovuttaa 58,7 kJ, josta 16,7 kJ kuluu sulatukseen."
+        }
+      ],
+      "solution": "**Ratkaisu symbolisesti.** Teen luovuttama lämpömäärä jäähtyessä 0 °C:seen on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$, ja jään sulattaminen vaatii $s m_\\text{j}$. Jos $Q_\\text{v} > s m_\\text{j}$, kaikki jää sulaa ja\n\n$$T = \\frac{Q_\\text{v} - s m_\\text{j}}{c_\\text{v} (m_\\text{v} + m_\\text{j})}$$\n\n**Sijoitus.** $T = \\dfrac{58\\,660\\,\\text{J} - 16\\,700\\,\\text{J}}{4190 \\cdot 0{,}25\\,\\text{J/K}} \\approx 40\\,{}^\\circ\\text{C}$. Koska $58\\,660 > 16\\,700$, oletus kaiken jään sulamisesta pätee."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Juoman viilentämiseen käytetään jääkuutioita. Selitä, miksi 0-asteinen jää viilentää juomaa paljon tehokkaammin kuin sama massa 0-asteista vettä, ja miksi jäätä voi jäädä lasiin, vaikka juoma on huoneenlämpöistä.",
+      "criteria": [
+        "Sanon, että jään sulaminen ottaa energiaa 334 kJ kilogrammaa kohti ja että lämpötila pysyy sulamisen aikana 0 °C:ssa.",
+        "Vertaan lukuja: sama energia nostaisi kilogramman vettä lähes 80 K, joten 0-asteinen vesi viilentäisi vain sen verran kuin se itse lämpenee.",
+        "Käytän energian säilymistä: juoman luovuttama lämpö on yhtä suuri kuin jään sulamiseen ja sulamisveden lämpenemiseen kulunut.",
+        "Selitän, että jos juoman luovuttama lämpö ei riitä sulattamaan kaikkea jäätä, jäätä jää ja lopputilan lämpötila on 0 °C."
+      ],
+      "model": "Jään sulaminen ottaa energiaa 334 kJ kilogrammaa kohti, vaikka lämpötila ei muutu. Sama energia nostaisi kilogramman vettä lähes 80 K, joten jää ottaa sulaessaan paljon enemmän lämpöä kuin sama massa 0-asteista vettä, joka ottaisi lämpöä vain lämmetessään. Energian säilymisen mukaan juoma luovuttaa täsmälleen sen lämmön, jonka jää ottaa sulaessaan ja sulamisveden lämmetessä. Jos juoman luovuttama lämpö ei riitä sulattamaan kaikkea jäätä, jäätä jää jäljelle ja lasin sisältö on tasan 0 °C:ssa."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -50,11 +50,36 @@
     "term": "absoluuttinen nollapiste",
     "definition": "Alin mahdollinen lämpötila, 0 K eli −273,15 °C. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään.",
     "lessons": [
-      "fy3-3"
+      "fy3-3",
+      "fy3-13"
     ],
     "see_also": [
       "kelvin",
       "lämpötila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ekstrapolointi",
+    "definition": "Mittausalueen ulkopuolisen arvon päättely jatkamalla mittauspisteisiin sovitettua suoraa tai käyrää mitatun alueen yli. Tulos on arvio, koska mallin oletetaan pätevän myös mitatun alueen ulkopuolella.",
+    "lessons": [
+      "fy3-13"
+    ],
+    "see_also": [
+      "absoluuttinen nollapiste",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittausepävarmuus",
+    "definition": "Arvio siitä, kuinka paljon mittaustulos voi enintään poiketa todellisesta arvosta, esimerkiksi ±1 kPa. Se piirretään kuvaajaan epävarmuusjanana, ja siitä saadaan tuloksen epävarmuus, kun suora piirretään jyrkimmän ja loivimman mahdollisen suoran väliin.",
+    "lessons": [
+      "fy3-13"
+    ],
+    "see_also": [
+      "ekstrapolointi",
+      "absoluuttinen nollapiste"
     ],
     "locked": false
   },
@@ -80,6 +105,18 @@
       "työ",
       "teho",
       "joule"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energiaketju",
+    "definition": "Vaiheiden jono, jossa energia muuttuu muodosta toiseen, esimerkiksi polttoaine, kattila, turbiini, generaattori ja sähköverkko. Jokaisessa vaiheessa osa energiasta siirtyy lämpönä ympäristöön, ja koko ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo.",
+    "lessons": [
+      "fy3-15"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "hukkalämpö"
     ],
     "locked": false
   },
@@ -346,6 +383,18 @@
     "locked": false
   },
   {
+    "term": "kokonaishyötysuhde",
+    "definition": "Yhteistuotantolaitoksen hyötysuhde, jossa hyödyksi lasketaan sekä sähkö että kaukolämpö: η = (Ps + Pk)/P₀. Se on tyypillisesti 85–90 %, mutta sähkö ja lämpö eivät ole yhtä arvokkaita.",
+    "lessons": [
+      "fy3-15"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
     "term": "konvektio",
     "definition": "Lämmön siirtyminen virtaavan nesteen tai kaasun mukana, esimerkiksi kun lämmin ilma nousee patterin yläpuolella.",
     "lessons": [
@@ -494,7 +543,8 @@
     "term": "lämpötasapaino",
     "definition": "Tila, jossa kosketuksissa olevilla kappaleilla on sama lämpötila eikä lämpöä enää siirry niiden välillä. Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama.",
     "lessons": [
-      "fy3-6"
+      "fy3-6",
+      "fy3-14"
     ],
     "see_also": [
       "lämpö",
@@ -618,6 +668,19 @@
     "see_also": [
       "lämpökapasiteetti",
       "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaissulamislämpö",
+    "definition": "Lämpömäärä, joka tarvitaan yhden kilogramman sulattamiseen sulamispisteessä, tunnus s, yksikkö J/kg. Vedelle s = 334 kJ/kg. Sulamisen aikana lämpötila ei muutu, ja sama lämpömäärä vapautuu aineen jähmettyessä.",
+    "lessons": [
+      "fy3-7",
+      "fy3-14"
+    ],
+    "see_also": [
+      "sulamislämpö",
+      "lämpötasapaino"
     ],
     "locked": false
   },

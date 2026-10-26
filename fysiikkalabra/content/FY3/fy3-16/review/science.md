@@ -1,25 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: e6f18de4897f4105
+VERDICT: PASS
+CONTENT-HASH: 7b642f39b87c6795
 
 ## Blocking
-- lesson.md:19,30,31,33,36,82–92,100,101,130 and inquiry.json:94 (the `kayra` figure). The figure labels are plain SVG `<text>`: the bar values 334, 42 and 335, "jää", "sulaa", the axis tick numbers, "jää sulaa", "vesi lämpenee", "moottori" and "jäähdytin". In the captures they sit in a sans font beside the serif KaTeX labels. The teacher's standing rule puts every figure label in LaTeX. Fix: move each one into a `foreignObject` `fig-tex` box, for example `$334$`, `$\text{jää}$` or `$5$`.
-- lesson.md:198, solutions.md:40, solutions.md:171 and inquiry.json:173,177. These calculations are written as plain text: "41 900 J / 334 000 J = 13 %", "27 W … noin 97 kJ tunnissa", "4,3 h lyhenee 2,9 h:ksi, yhteensä 1,4 h", "100 % − 12,9 %" and "452 kJ / 67 kJ". The teacher's rule requires calculations in solutions to be in LaTeX. Fix: write each one as LaTeX, for example `$\dfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13$`.
 
 ## Polish
-- inquiry.json:14: "puolen tunnin kuluttua juomat ovat haaleita". The lesson's own model gives about 9 °C after 0,5 h (≈19–22 K/h at first, falling). Fix: say "parin tunnin kuluttua", or "eivät enää ole kylmiä".
-- lesson.md:131 (figure 4): the heat arrow comes from outside into the engine, which suggests an outside source. Fix: draw P from the engine into the coolant, or mark the combustion inside the engine.
-- inquiry.json:67: "sulattaa sitä eikä jäähdytä sitä". This should read "eikä muuta sen lämpötilaa".
-- inquiry.json:290: "teho pysyy samana" holds only at first, because $UA\Delta T$ falls as the inside temperature rises. Fix: say "teho on aluksi sama".
-- answers.py:33 comment says "-> 330 kJ" but the stored answer is 333. lesson.md:67 and inquiry.json:94 aria-labels use decimal points ("2.4", "3.7"). solutions.md:139 "kivien lämmönjohtuminen" is vague; say "kiuas lämmittää kiviä koko ajan".
+- inquiry.json:718,723,725 (check-3): the prompt gives only 25 kg of stones, but the model answer uses 0,20 kg of water at 20 °C (67 kJ and 452 kJ), and criterion 4 asks for "noin 13 %", which comes from those same figures. A student cannot get these numbers from the prompt. Fix: add "0,20 kg 20-asteista vettä" to the prompt, or drop the numbers from criterion 4.
+- solutions.md:1018 (L3-03 Järkevyys): the sum "Seinä tuo 486 kJ ja juomat 50 kJ, yhteensä noin 536 kJ" is written in prose. The same holds for "565 kJ eli noin 87 %" (solutions.md:941), "452 kJ eli 87 %" (solutions.md:985) and "339 kJ eli 87 %" (inquiry.json siirto solution). Fix: write them as LaTeX, for example `$486\,\text{kJ} + 50\,\text{kJ} \approx 536\,\text{kJ}$` and `$\tfrac{565}{649} \approx 87\,\%$`.
+- inquiry.json:443 (pred-1) puts "jääpussi ja juomia" in the bag, but the `kayra` model curve has only 1,0 kg of ice ($\tau = 4190 \cdot 1{,}0 / 0{,}90$ s). This is qualitatively harmless. Fix: drop "ja juomia" so the prediction and the graph describe the same bag.
+- lesson.md:369: `$4190 \cdot 1{,}5 = 6285\,\text{J/K}$` carries no units on its factors, unlike the rest of the example. Fix: add the units to the factors.
 
 ## Checked
-- All 16 answers recomputed independently; they match answers.py and the stored values, and each is within tolerance at the data's significant figures (largest gap: check-2, 210 against 213, 1,4 %).
-- Worked example: t = 292 100 J / 33,6 W = 8,69·10³ s ≈ 2,4 h; checks 2,8 h, 13 % and 19 K/h. Solved symbolically first.
-- Lesson graph: t₀ = 2,41 h → x = 257,9; exponential with τ = 6285/1,2 s; T(6 h) = 25,6 °C, matching the drawn point.
-- Inquiry graph: t₀ = 3,68 h → x = 282,8; T(8 h) = 27,0 °C. The numeric answer of 333 kJ (tolerance 4 %) is consistent with this.
-- Bar figure drawn to scale (21,3 px and 170,1 px against 169,5 px); 334 kJ ≈ 335 kJ at 80 K.
-- Table t = sm/(UAΔT): all five rows are correct. pred-2's 2,9 h is correct.
-- Löyly: 67 / 452 / 519 kJ and 87 %. siirto 64,9 s, with mistake values 8,4 and 56,5. virhe: 63 kJ, 267 kJ, 0,19 kg melted, 0,61 kg left.
-- L3-02 checks first that all the ice melts (251 kJ > 167 kJ) and gets 8,06 °C. Misconception 3: 126 kJ < 334 kJ, so the mixture stays at 0 °C.
-- Formulas: Pt = ΣQ, cmΔT, sm, rm, UAΔT and P = c(m/t)ΔT, each with its conditions. All fall within FY3's central contents and its prerequisites.
-- No lesson ids appear in student text. Every correct option and every feedback reviewed.
+- Hash 7b642f39b87c6795 at start and end. All 18 answers.py values were recomputed independently and match. Each stored answer lies within its tolerance at the data's significant figures (check-2: 210 against 213, 1,4 %).
+- Round-1 blockers are resolved. No SVG `<text>` remains in lesson.md or inquiry.json, and every label is a `fig-tex` foreignObject. The flagged plain-text calculations (example 13 %, L1-03 97 kJ, löyly 14,3 %, mistake 6,0) are now in LaTeX.
+- Round-1 polish items are done: the hook says "parin tunnin kuluttua", Dan's feedback says "eikä muuta sen lämpötilaa", check-1 says "teho on aluksi sama", and the coolant figure's heat arrow starts inside the engine.
+- Worked example: solved symbolically first. t = 2,41 h; the cross-check gives 2,8 h, 13 % and 19,2 K/h.
+- Lesson graph: t₀ = 2,41 h, which puts x = 257,9; τ = 6285/1,2 s; T(6 h) = 25,6 °C. Inquiry graph: t₀ = 3,68 h, which puts x = 282,8; T(8 h) = 27,0 °C. Both are drawn as computed.
+- Bar figure is to scale (0,508 px/kJ). Table rows t = sm/(UAΔT) are all correct. pred-2's 2,9 h and its distractor 2,2 h are correct.
+- Löyly 85,7 %, with mistake values 14,3 and 6,0. siirto 64,9 s, with mistake values 8,4 and 56,5. virhe: 63 kJ, 267 kJ, 0,19 kg melted. The weighted average comes out the same in K and °C.
+- L3-02 checks first that all the ice melts (251 kJ > 167 kJ). Misconception 3: 126 kJ < 334 kJ. Exit ticket: 175,5 kJ and 335 kJ.
+- Formulas Pt = ΣQ, cmΔT, sm, rm, UAΔT and P = c(m/t)ΔT each come with their conditions, and all lie inside FY3's contents and prerequisites.
+- No lesson ids appear in student text. Every correct option and every feedback was reviewed.
