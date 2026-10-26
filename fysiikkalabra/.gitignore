@@ -2,6 +2,8 @@ preview/
 site.tmp/
 site.old/
 **/review/*.png
+**/review/shots/
+**/review/shots.md
 __pycache__/
 node_modules/
 docs/exams/
