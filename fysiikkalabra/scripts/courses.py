@@ -90,20 +90,27 @@ def meta_of(folder):
     return json.loads((folder / "meta.json").read_text())
 
 
+def sim_location(lid, sim, lesson_has_sim_js):
+    """(kind, source folder relative to ROOT, published folder) for a lesson's meta "sim" value, or None. kind:
+    'lesson' (FY3: sim.js in the lesson folder, published as <id>-sim.js), 'course' or 'shared' (a folder of its
+    own under assets/sims/). Pure, so the content hash can ask it about any git commit."""
+    if lesson_has_sim_js: return ("lesson", None, "")
+    if not sim: return None
+    c = course(course_of(lid)); rel = lambda p: p.relative_to(ROOT).as_posix()
+    if sim is True: return ("course", f"{rel(c['paths']['sims'])}/{lid}", f"sims/{c['slug']}/{lid}")
+    if not isinstance(sim, str): sys.exit(f"{lid} meta.json sim: true, false or a simulation folder name")
+    if sim.startswith("shared/"): return ("shared", f"{rel(c['paths']['shared_sims'])}/{sim[7:]}", f"shared/sims/{sim[7:]}")
+    if "/" in sim:
+        other, name = sim.split("/", 1)
+        return ("course", f"{rel(course(other.upper())['paths']['sims'])}/{name}", f"sims/{other}/{name}")
+    return ("course", f"{rel(c['paths']['sims'])}/{sim}", f"sims/{c['slug']}/{sim}")
+
+
 def sim_dir(folder, meta=None):
-    """(kind, folder holding sim.js, published folder) or None. kind: 'lesson' (FY3: sim.js in the lesson folder,
-    published as <id>-sim.js), 'course' or 'shared' (a folder of its own under assets/sims/)."""
-    lid = folder.name
-    if (folder / "sim.js").exists(): return ("lesson", folder, "")
-    s = (meta if meta is not None else meta_of(folder)).get("sim")
-    if not s: return None
-    c = course(course_of(lid))
-    if s is True: kind, name, base, pub = "course", lid, c["paths"]["sims"], f"sims/{c['slug']}"
-    elif not isinstance(s, str): sys.exit(f"{lid} meta.json sim: true, false or a simulation folder name")
-    elif s.startswith("shared/"): kind, name, base, pub = "shared", s[7:], c["paths"]["shared_sims"], "shared/sims"
-    elif "/" in s: other, name = s.split("/", 1); kind, base, pub = "course", course(other.upper())["paths"]["sims"], f"sims/{other}"
-    else: kind, name, base, pub = "course", s, c["paths"]["sims"], f"sims/{c['slug']}"
-    return (kind, base / name, f"{pub}/{name}")
+    """(kind, folder holding sim.js, published folder) or None; see sim_location."""
+    loc = sim_location(folder.name, (meta if meta is not None else meta_of(folder)).get("sim"), (folder / "sim.js").exists())
+    if loc is None: return None
+    return (loc[0], folder if loc[0] == "lesson" else ROOT / loc[1], loc[2])
 
 
 def sim_script(folder, meta=None):
@@ -124,15 +131,18 @@ def sim_files(folder, meta=None):
 TEXT_FILES = ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md")
 
 
-def pic_refs(folder):
-    """Picture paths the lesson's text refers to (pics/fy4/x.webp, shared/pics/y.svg), in order, without repeats."""
+def pic_refs_in(texts):
+    """Picture paths (pics/fy4/x.webp, shared/pics/y.svg) referred to in some texts, in order, without repeats."""
     seen = []
-    for n in TEXT_FILES:
-        f = folder / n
-        if f.exists():
-            for r in PIC_REF.findall(f.read_text()):
-                if r not in seen: seen.append(r)
+    for t in texts:
+        for r in PIC_REF.findall(t or ""):
+            if r not in seen: seen.append(r)
     return seen
+
+
+def pic_refs(folder):
+    """Pictures the lesson's text refers to."""
+    return pic_refs_in((folder / n).read_text() for n in TEXT_FILES if (folder / n).exists())
 
 
 def pic_source(ref):

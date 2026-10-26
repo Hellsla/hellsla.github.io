@@ -1,5 +1,5 @@
 """Placeholder for the image-creator agent: plug in your image API here (set IMAGE_API_KEY).
-Usage: python scripts/gen_image.py "<prompt>" assets/<id>/hero.png"""
+Usage: python scripts/gen_image.py "<prompt>" assets/pics/<course>/<id>-hero.png"""
 import sys, os, pathlib
 prompt, out = sys.argv[1], pathlib.Path(sys.argv[2]); out.parent.mkdir(parents=True, exist_ok=True)
 if not os.environ.get("IMAGE_API_KEY"):

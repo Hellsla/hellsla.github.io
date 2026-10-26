@@ -8,30 +8,52 @@ written and reviewed with Claude Code agents, served by GitHub Pages from the co
 ```bash
 cd fysiikkalabra
 pip install markdown playwright && playwright install chromium
-python scripts/check_lesson.py fy3-9     # lint, LaTeX, preview build, simulation tests, 360 px layout, review state
+python scripts/check_lesson.py fy3-9     # lint, LaTeX, preview build, simulation and inquiry tests, answer positions, 360 px, review state
 python scripts/build.py fy3-9            # preview/fy3-9.html (git-ignored), any lesson
 python scripts/build.py --all            # preview/ with every lesson, drafts included (what CI tests)
 python scripts/build.py                  # site/ from the lessons whose reviews are current (atomic; commit it)
 python scripts/reviews.py status         # reviewed | legacy | draft for every lesson, and why
+python scripts/reviews.py impact         # which lessons this branch touches and which review each needs
 python scripts/test_reviews.py           # tests of the publishing rule
+python scripts/test_courses.py           # a temporary FY4 course through the whole pipeline, nothing published
+python scripts/usage.py report FY3 --by agent   # tokens and cost per agent and model
 ```
 If the pip `playwright` version does not match the installed browser: `PW_CHROMIUM=/path/to/chrome python scripts/test_sims.py`.
 
-Inside Claude Code, `/lesson fy3-9` runs one lesson through the pipeline: the **developer** (Sonnet) writes or
-fixes, `check_lesson.py` must pass, the **science-reviewer** (Opus) and the **pedagogy-reviewer** (Sonnet) judge it
-independently, fixes and re-reviews for at most three rounds, then a pull request with a teacher summary and the
-token usage. Agents live in `.claude/agents/`, the command in `.claude/commands/`.
+Inside Claude Code, `/lesson fy3-9` runs one lesson through the pipeline (orchestrated on Sonnet): the **developer**
+(Sonnet; Opus only for demanding physics or a numerical model) writes or fixes, `check_lesson.py` must pass, the
+**science-reviewer** (Opus) and the **pedagogy-reviewer** (Sonnet) judge it independently from packet files, fixes and
+re-reviews for at most three rounds, then a draft pull request with a teacher summary and the measured token usage.
+Agents live in `.claude/agents/`, the commands in `.claude/commands/`.
+
+## A new course
+```
+/new-course FY4        # scripts/new_course.py FY4: checks curriculum.json against LOPS 2019, creates the folders
+/lesson fy4-1          # creates content/FY4/fy4-1/meta.json from the slot, then drafts, checks and reviews it
+/lesson fy4-2
+```
+Everything course-specific comes from the course's entry in `curriculum.json` (LOPS goals and central contents,
+lesson slots, `scope_notes`, optional `exercise_levels`); `scripts/courses.py` resolves a lesson id to its course and
+folders. Lessons go to `content/FY4/<id>/`, pictures to `assets/pics/fy4/` (text refers to `pics/fy4/<file>`),
+simulations to `assets/sims/fy4/<name>/` (published at `sims/fy4/<name>/`), shared assets to `assets/shared/`
+(`assets/README.md`). The course page `site/FY4.html` lists the slots and links each lesson once it is reviewed.
 
 ## The publishing rule
 `scripts/reviews.py` decides what is on the site: a lesson is **reviewed** when `review/science.md` and
-`review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash ignores only
-line endings, trailing whitespace, blank-line runs and JSON layout; any other edit stales both reviews. A **legacy**
+`review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash covers the lesson
+files, its simulation folder, its pictures and its simulation tests, and ignores only line endings, trailing
+whitespace, blank-line runs and JSON layout; build scripts and templates are not content. What changed decides who
+reviews again (`reviews.py scope`): a physics change needs the science reviewer in full, a learning-design change the
+pedagogy reviewer, simulation code both, a figure's styling only the pedagogy reviewer, comments and tightened tests
+neither; a PASS carried over such a change is recorded in `review/carry.tsv` and re-checked by CI. A **legacy**
 lesson (`review/legacy.md`, written by `reviews.py legacy <id>` in the migration) was published before the
 pipeline and stays visible, labelled as a prototype, until a content edit retires the marker. Everything else
 is a **draft** and never reaches `site/`.
 
 Merging a pull request is the teacher's publication decision. CI (`.github/workflows/fysiikkalabra-ci.yml`)
-lints every lesson, builds all previews, runs the review tests, the simulation tests and the LaTeX check,
+lints every lesson, builds all previews, runs the review and course tests, the simulation tests, every lesson's
+inquiry tests, the answer-position check and the LaTeX check, verifies carried reviews from history, lists the
+review impact of the branch,
 rebuilds `site/` and fails if the committed copy differs, and checks every published page at 360 px. A lesson
 whose reviews went stale is left out of the build with a WARNING (a CI annotation), never silently.
 

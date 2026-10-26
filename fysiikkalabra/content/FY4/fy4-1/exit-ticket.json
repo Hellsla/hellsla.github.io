@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kärry on ensin paikassa $x = 5\\,\\text{m}$ ja sitten paikassa $x = -3\\,\\text{m}$. Laske siirtymän komponentti $\\Delta x$ etumerkkeineen ja kerro, mitä etumerkki kertoo siirtymävektorin $\\Delta\\mathbf{x}$ suunnasta.",
+    "a": "$\\Delta x = x_2 - x_1 = -3\\,\\text{m} - 5\\,\\text{m} = -8\\,\\text{m}$. Vektorina siirtymä on $\\Delta\\mathbf{x}$, jonka x-komponentti on $-8\\,\\text{m}$ ja pituus $|\\Delta\\mathbf{x}| = 8\\,\\text{m}$. Negatiivinen etumerkki tarkoittaa, että vektori osoittaa x-akselin negatiiviseen suuntaan."
+  },
+  {
+    "q": "Kolmen kärryn (t,x)-kuvaajat ovat suoria. Toinen nousee jyrkemmin kuin toinen, ja kolmas laskee. Mitä kuvaajista voi päätellä nopeuksista?",
+    "a": "Kulmakerroin on nopeus. Jyrkemmin nouseva suora kuuluu suuremmalle nopeudelle positiiviseen suuntaan. Laskevan suoran kulmakerroin on negatiivinen, joten kolmas kärry liikkuu negatiiviseen suuntaan."
+  },
+  {
+    "q": "Kävelet suoraa katua 100 m itään ja palaat saman matkan takaisin lähtöpaikkaan. Mikä on kuljettu matka, siirtymä ja keskinopeus?",
+    "a": "Matka on 200 m, siirtymä on 0 ja keskinopeus $v_\\text{ka} = \\Delta x / \\Delta t = 0$. Siirtymä riippuu vain alku- ja loppupaikasta, ei reitistä."
+  }
+]

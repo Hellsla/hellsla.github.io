@@ -1,4 +1,5 @@
-# Fysiikkalabra QA: build every lesson (drafts included) and run the headless simulation tests.
+# Fysiikkalabra QA for every course: build every lesson (drafts included), run the headless simulation and inquiry
+# tests, check answer positions, carried reviews and the committed site. No AI task repeats these checks.
 # This repository serves GitHub Pages from its root branch, so there is no Pages deploy job here;
 # publishing is a separate decision (see fysiikkalabra/README.md).
 name: fysiikkalabra-ci
@@ -15,6 +16,7 @@ jobs:
     defaults: { run: { working-directory: fysiikkalabra } }
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
@@ -25,6 +27,11 @@ jobs:
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py
       - run: python scripts/reviews.py verify
+      - name: a temporary FY4 course through the whole pipeline (nothing is published)
+        run: python scripts/test_courses.py
+      - name: which lessons this pull request touches, and which review each needs
+        if: github.event_name == 'pull_request'
+        run: python scripts/reviews.py impact "origin/${{ github.base_ref }}" | tee -a "$GITHUB_STEP_SUMMARY"
       - run: python scripts/test_sims.py
       - name: inquiry tests of every lesson with inquiry.json (gating, locks, reveal, options and feedback as rendered, navigation, 360 px)
         run: |

@@ -14,10 +14,16 @@ or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side 
 meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
 A lesson with inquiry.json (scripts/inquiry.py, docs/inquiry.md) is laid out as inquiry stages instead: the
 theory sections, simulation, exercises and exit ticket are the same parts, placed where the stages say.
+
+Assets come from the course's folders (scripts/courses.py): a simulation folder assets/sims/<course>/<name>/ is
+published whole at sims/<course>/<name>/ (sim.js, its sim.css and images; a shared one once, however many lessons use
+it), and the pictures the text refers to (pics/<course>/<file>, shared/pics/<file>) at the same path under the
+output folder, so every reference is relative and works on GitHub Pages under any base path. FY3's simulations
+stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-import inquiry
+import courses, inquiry
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/
@@ -138,6 +144,7 @@ def exercise_html(e, solution_html):
 
 NOTICE = {"legacy": '<p class="notice" role="note">Prototyyppiversio: tämä oppitunti on julkaistu ennen nykyistä tarkistuskäytäntöä ja odottaa uudistusta. Sisältö voi vielä muuttua.</p>',
           "draft": '<p class="notice" role="note">Luonnos: tätä oppituntia ei ole vielä tarkistettu.</p>', "reviewed": ""}
+assets = []  # published asset paths (relative to the output folder), checked before the swap
 built = {}   # course -> [meta, ...]
 states = {}  # lesson id -> review state of every lesson seen, also the ones left out
 for folder in sorted((ROOT / "content").glob("*/*/")):
@@ -173,10 +180,21 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
         if errs: sys.exit("\n".join(errs))
     howto = '<p class="howto">Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.</p>'
     sim = ""
-    if (folder / "sim.js").exists():
-        shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js")
+    where = courses.sim_dir(folder, meta)
+    if where and where[0] == "lesson":                # FY3: sim.js in the lesson folder, published as <id>-sim.js
+        shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js"); assets.append(f"{meta['id']}-sim.js")
         sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}><div id="sim-root"></div>'
                f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{meta["id"]}-sim.js"></script></section>')
+    elif where:                                       # a simulation folder of the course (or shared): published whole
+        src, pub = where[1], where[2]
+        if not (src / "sim.js").is_file(): sys.exit(f"{meta['id']}: simulation folder {src.relative_to(ROOT)} has no sim.js")
+        shutil.copytree(src, SITE / pub, dirs_exist_ok=True); assets.append(f"{pub}/sim.js")
+        css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (src / "sim.css").is_file() else ""
+        sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}>{css}<div id="sim-root" data-base="{pub}/"></div>'
+               f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script></section>')
+    for ref in courses.pic_refs(folder):              # pictures the text refers to, at the same relative path
+        if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")
+        (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
     name = f"{meta['id']}.html"
     if inq is None:                                   # classic layout: theory (with the sim inside), exercises, exit ticket
         if sim and "<!-- sim -->" in lesson_html: lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)
@@ -267,7 +285,7 @@ if SITE.name == "site.tmp":                      # a lesson leaves the live site
             removed.append(lid)
             print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {lid} is on the live site but its reviews are not current ({why}); this build removes it")
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected = ["index.html", "site.css", "lesson.js", "sim-embed.js", "inquiry.js"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids]
+    expected = ["index.html", "site.css", "lesson.js", "sim-embed.js", "inquiry.js"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
