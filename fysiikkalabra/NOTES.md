@@ -10,8 +10,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - `lesson.md` is rendered by `scripts/build.py`, then KaTeX 0.16.11 (vendored) in the browser. `$$...$$` or a
   ```` ```latex ```` fence is display maths, `$...$` inline; the build hides maths from markdown first, so `_`, `*`
   and `\` are safe inside it. Maths also renders in `exercises.json` (`text`) and `exit-ticket.json` (`q`, `a`),
-  with doubled backslashes in JSON. `solutions.md` is plain text with Unicode (`W₁`, `m/s²`, `·`), no LaTeX; the
-  simulation canvas and inline SVG labels are plain text too.
+  with doubled backslashes in JSON. `solutions.md` writes its calculations in LaTeX
+  (teacher's rule 2026-10-26; older lessons in plain Unicode stay valid); the simulation canvas is plain text and
+  figure labels are LaTeX (§3).
 - Every formula appears once in display form with its symbols named; inline maths only for short references.
   Inline maths stays on one line.
 - Units: `40\,\text{N}`, `9{,}81\,\text{m/s}^2`. Decimal comma inside maths is `{,}`. Multiplication `\cdot`,
