@@ -11,14 +11,14 @@ window.AgentOfficeScene = {
       {id:'pedagogy',x:801,y:18,w:381,h:270,title:'PEDAGOGY REVIEW',sub:'Independent learning & usability',floor:'#5b4d5b',accent:C.pink},
       {id:'teacher',x:18,y:535,w:310,h:247,title:'LAURI',sub:'ASSIGNS THE TOPIC AND TASK',floor:'#66543e',accent:C.gold},
       {id:'checks',x:342,y:535,w:306,h:247,title:'CHECK RUNNER',sub:'Build · tests · layout',floor:'#414f50',accent:C.amber},
-      {id:'repository',x:662,y:535,w:240,h:247,title:'PUBLICATION DECISION',sub:'Lauri decides',floor:'#4d5947',accent:C.green},
+      {id:'repository',x:662,y:535,w:240,h:247,title:'PUBLICATION DECISION',sub:'PUBLISHER PROPOSES, LAURI DECIDES',floor:'#4d5947',accent:C.green},
       {id:'site',x:916,y:535,w:266,h:247,title:'THE WEBSITE',sub:'A separate deployment',floor:'#4e525e',accent:'#c0b5db'}
     ];
     const home = {checks:[495,668],teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
     const colors = {checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
     const looks = {
       checks:{skin:'#c89678',hair:'#4a3432',shirt:'#d5b474',jacket:'#9b7763',pants:'#455266',hairStyle:'braid',glasses:true,scale:1},
-      teacher:{skin:'#d5b399',hair:'#17191c',shirt:'#bb4541',pants:'#46575b',hairStyle:'crop',plaid:true,scale:1.04},
+      teacher:{skin:'#d5b399',hair:'#17191c',shirt:'#bb4541',pants:'#46575b',hairStyle:'crop',stubble:'#76645c',plaid:true,scale:1.04},
       developer:{skin:'#b9815a',hair:'#302d2b',shirt:'#d8ad61',pants:'#424b60',hairStyle:'crop',headphones:true,beard:'#4b332b',scale:1},
       science:{skin:'#916550',hair:'#c0bbb1',shirt:'#8fb3cb',jacket:'#667f92',pants:'#5d5850',hairStyle:'curls',glasses:true,scale:1.08},
       pedagogy:{skin:'#e1bda3',hair:'#69434a',shirt:'#e4d5c5',jacket:'#b77c91',pants:'#534c66',hairStyle:'braid',scale:.96},
@@ -36,7 +36,7 @@ window.AgentOfficeScene = {
       box(s.x,s.y,s.w,s.h,'#243236');box(s.x+6,s.y+6,s.w-12,s.h-12,s.floor);
       for(let y=s.y+8;y<s.y+s.h-8;y+=24)for(let x=s.x+7;x<s.x+s.w-7;x+=48){box(x,y,46,1,'#ffffff09');box(x,y,1,23,'#00000012');}
       box(s.x+6,s.y+6,s.w-12,44,'#293638');box(s.x+6,s.y+6,4,44,s.accent);
-      text(s.title,s.x+18,s.y+26,s.accent,13);text(s.sub,s.x+18,s.y+43,'#b9c4bc',10);
+      text(s.title,s.x+18,s.y+26,s.accent,13);text(s.sub,s.x+18,s.y+43,'#b9c4bc',Math.min(10,(s.w-36)/(tr(s.sub).length*.61)));
       // Every room opens onto the common corridor.
       const door=s.id==='developer'?230:s.id==='science'?610:s.id==='pedagogy'?990:s.x+s.w/2;
       const y=s.y<300?s.y+s.h-7:s.y;
@@ -101,6 +101,7 @@ window.AgentOfficeScene = {
       }
       if(!back){
         box(2,-12,3,3,'#313437');box(9,-12,3,3,'#313437');box(5,-4,5,2,'#8e6353');
+        if(look.stubble)for(const [x,y] of [[-8,-7],[-5,-4],[-7,-1],[-2,0],[2,1],[7,1],[10,-3],[-1,-6]])box(x,y,2,2,look.stubble);
         if(look.beard){box(-7,-6,18,6,look.beard);box(-4,-1,12,3,look.beard);box(4,-5,5,2,look.skin);}
         if(look.glasses){box(-2,-15,7,2,'#3e4b4b');box(7,-15,7,2,'#3e4b4b');box(-2,-14,2,6,'#3e4b4b');box(4,-14,2,6,'#3e4b4b');box(7,-14,2,6,'#3e4b4b');box(13,-14,2,6,'#3e4b4b');box(0,-9,5,2,'#3e4b4b');box(9,-9,5,2,'#3e4b4b');box(5,-13,3,2,'#3e4b4b');}
       }
@@ -180,7 +181,6 @@ window.AgentOfficeScene = {
       box(235,433,92,13,'#b59a74');box(241,446,6,30,'#73684f');box(314,446,6,30,'#73684f');
       box(274,400,49,35,'#29383d');box(280,405,35,18,'#596c69');box(288,410,19,3,'#d7bc80');
       mug(294,430);mug(252,429);box(214,477,111,8,'#a28c6b');
-      text('COFFEE',278,492,'#e9d8b2',10,'center');text('A little pause, not a skipped check.',194,507,'#ccd0bd',9,'center');
     }
     function mug(x,y){box(x-6,y-5,12,10,'#e8dfc6');box(x+6,y-3,4,6,'#c6bb9c');box(x-4,y-5,8,2,'#75604c');}
     function reviewProgress(state){
@@ -251,6 +251,16 @@ window.AgentOfficeScene = {
       }
       return {step,positions,packets,coffee};
     }
+    const speechChoices={"New version. Running the checks again.": ["New version. Running the checks again.", "Same tests, fresh material. Fingers off the skip button.", "One more test run. The coffee can wait."], "Refactoring my caffeine levels.": ["Refactoring my caffeine levels.", "A small coffee update for the developer.", "Letting the ideas brew for a moment."], "A brief pause. The universe can wait.": ["A brief pause. The universe can wait.", "Thinking time counts as work. Especially with coffee.", "A sip of coffee, then back to the big questions."], "A peer review of this coffee is now in progress.": ["A peer review of this coffee is now in progress.", "Reviewing the aroma. No report required.", "This mug has excellent learning potential."], "Next recorded stage. Back to the material.": ["Next recorded stage. Back to the material.", "Back at the keyboard. Ideas do not type themselves.", "Another look. There is always a detail hiding somewhere."], "Let's turn ‘why?’ into a material.": ["Let's turn ‘why?’ into a material.", "Here is the topic. Make it worth wondering about.", "A good question first. The material follows."], "Coffee in. Bugs out.": ["Coffee in. Bugs out.", "Time to ask the tests some awkward questions.", "Click, test, repeat. My kind of rhythm."], "SI units. Not vibes.": ["SI units. Not vibes.", "The units get a vote in this review.", "Even a pretty formula has to make sense."], "Would a student understand this before coffee?": ["Would a student understand this before coffee?", "Reading this with my student hat on.", "A clear explanation is a small act of kindness."], "New version? My old PASS just expired.": ["New version? My old PASS just expired.", "That PASS belongs to the old version. Time for another look.", "The material changed. The review needs to catch up."], "Here are my corrections. A new version, please.": ["Here are my corrections. A new version, please.", "Feedback delivery! Back to development, please.", "A few things need another look before approval."], "Two matching passes. My favourite duet.": ["Two matching passes. My favourite duet.", "Both reviews agree on this version. Nice teamwork.", "Two current passes. Ready for the next desk."], "One PASS is not a quorum.": ["One PASS is not a quorum.", "Waiting for both reviews. No shortcuts today.", "This desk runs on two matching approvals."], "Back to the drawing board. Literally.": ["Back to the drawing board. Literally.", "Feedback received. Time to put it to work.", "A revision now saves a puzzled reader later."], "Approved cargo. Still not a deployment receipt.": ["Approved cargo. Still not a deployment receipt.", "Approval packed. Delivery is the next step.", "Carrying approved material. The website still needs its turn."], "I deliver pages, not assumptions.": ["I deliver pages, not assumptions.", "Checking permission before picking up the material.", "The parcel travels only with a recorded approval."], "Coffee is approved. Publication is still pending.": ["Coffee is approved. Publication is still pending.", "I can propose. Lauri has the final word.", "Ready to discuss publication. The decision is still pending."]};
+    const previousChoices=new Map();let currentSpeech=null;
+    function variedSpeech(message,speaker){
+      const key=`${Math.floor(options.phase()/6)}:${speaker}:${message}`;
+      if(currentSpeech?.key===key)return currentSpeech.text;
+      const choices=speechChoices[message] || [message],previous=previousChoices.get(message);
+      const available=choices.filter((_,index)=>index!==previous);
+      const chosen=available[Math.floor(Math.random()*available.length)] || choices[0];
+      previousChoices.set(message,choices.indexOf(chosen));currentSpeech={key,text:chosen};return chosen;
+    }
     function speech(state,review,actors){
       if(!state || options.speechEnabled?.()===false || options.phase()%6>4.5)return null;
       const {step,coffee,positions,packets}=actors;let speaker,message;
@@ -266,7 +276,7 @@ window.AgentOfficeScene = {
         else{speaker='gatekeeper';message=review.ready?'Two matching passes. My favourite duet.':'One PASS is not a quorum.';}
       }else if(step===4){speaker=review.needsRevision?'developer':'gatekeeper';message=review.needsRevision?'Back to the drawing board. Literally.':review.ready?'Two matching passes. My favourite duet.':'One PASS is not a quorum.';}
       else{speaker=review.ready?'site':'repository';message=packets.site?'Approved cargo. Still not a deployment receipt.':review.ready?'I deliver pages, not assumptions.':'Coffee is approved. Publication is still pending.';}
-      const point=positions[speaker],quote=tr(message),width=242;ctx.font='12px monospace';
+      const point=positions[speaker],quote=tr(variedSpeech(message,speaker)),width=242;ctx.font='12px monospace';
       const lines=[];let line='';
       for(const word of quote.split(' ')){const next=line?line+' '+word:word;if((ctx.measureText?.(next).width || next.length*7.2)>width-22 && line){lines.push(line);line=word;}else line=next;}
       if(line)lines.push(line);
@@ -284,12 +294,10 @@ window.AgentOfficeScene = {
       const x=495;
       desk(x,656,C.amber,true);
       text(state?.checks.failed?`${state.checks.failed} SAVED FAILURES`:state?.checks.passed?`${state.checks.passed} SAVED PASSES`:'NO SAVED RESULTS',x,718,state?.checks.failed?C.red:C.amber,12,'center');
-      text('Freshness / CI unknown',x,738,C.muted,10,'center');
       box(372,596,24,80,'#253239');for(let i=0;i<5;i++){box(376,602+i*13,15,8,'#556669');box(378,604+i*13,3,3,C.amber);}
     }
     function gate(state,review){
       const color=review.ready?C.green:review.needsRevision?C.red:C.amber;
-      const approvals=state?['science','pedagogy'].filter(r=>state[r].status==='PASS').length:'–';
       // An ordinary office colleague at a paper-covered desk, not a guard.
       box(695,405,137,35,'#9b8262');box(695,435,137,7,'#b9a07a');
       box(700,442,7,31,'#5a5042');box(820,442,7,31,'#5a5042');box(710,474,33,24,'#33484b');
@@ -297,7 +305,6 @@ window.AgentOfficeScene = {
       ['science','pedagogy'].forEach((r,i)=>box(706,426+i*6,6,3,!review.roles[r].arrived?C.muted:state?.[r].status==='PASS'?C.green:C.red));
       text('REVIEW DESK',768,385,C.ink,13,'center');
       pill(review.ready?'READY':review.needsRevision?'REVISE':'WAITING',796,424,color,70);
-      text(`${review.received}/2 REPORTS`,793,454,color,10,'center');text(`Recorded: ${approvals}/2 PASS`,793,473,C.muted,8,'center');
     }
     function site(state){
       box(953,596,191,116,'#26323a');box(959,602,179,102,'#e1dfce');box(959,602,179,17,'#607d77');
@@ -327,9 +334,6 @@ window.AgentOfficeScene = {
       desk(150,656,C.gold);box(42,595,34,42,'#d9d3ba');text('?',59,624,'#60756a',24,'center');
       shelf(207,595,90);plant(53,745);
       desk(789,656,C.green);box(732,711,116,28,'#243631');text(publicationApproved(state,review)?'APPROVED':options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,publicationApproved(state,review)?C.green:C.amber,10,'center');
-      if(options.event()?.merge)text('Approver unverified',790,757,C.muted,10,'center');
-      pill('3 · INDEPENDENT REVIEWS',779,318,C.ink,259);
-      text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
       box(28,309,326,45,'#2f3e3e');text('TODAY’S MATERIAL',191,320,C.ink,9,'center');
       const topic=state?.title || (state?state.id.toUpperCase():tr('SELECT A RECORDED MATERIAL'));
       ctx.font='10px monospace';
@@ -342,12 +346,6 @@ window.AgentOfficeScene = {
       // Fit the complete authored topic, including unusually long titles.
       const topicSize=Math.min(10,26/Math.max(1,topicLines.length));
       topicLines.forEach((line,i)=>text(line,191,332+i*topicSize,C.gold,topicSize,'center'));
-      const round=options.round?.();
-      if(round){
-        text(tr('VERSION {version} · STAGE {stage}/{total}').replace('{version}',round.version).replace('{stage}',round.index+1).replace('{total}',round.total),444,393,C.ink,10);
-        text(round.commit.slice(0,7),444,410,C.muted,9);
-        text('RECORDED STATES · ILLUSTRATED HANDOFFS',444,428,C.muted,8);
-      }
       lounge();checks(state);site(state);gate(state,review);const activity=actors(state,review,coffee);const quote=speech(state,review,activity);
       if(!options.presentation?.()){box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);}
       return {step:activity.step,speech:quote,caption:this.caption(activity.step,state,review)};
