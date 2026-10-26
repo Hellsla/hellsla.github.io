@@ -53,7 +53,7 @@
   "note": "material select sets simState.cB (alumiini 900 J/(kg·K))"
  },
  {
-  "expr": "document.querySelectorAll('#sim-root select option').length",
+  "expr": "document.querySelector('#sim-root select').options.length",
   "expected": 5,
   "tol": 0,
   "note": "select offers vesi, alumiini, hiekka, rauta, kupari (no ice)"
@@ -178,7 +178,7 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===5 && l[0].includes('m') && l[0].includes('0,30 kg') && l[1].includes('20,0 °C') && l[2].includes('385 J/(kg·K)') && l[3].includes('0,20 kg') && l[4].includes('100,0 °C') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===6 && l[5].startsWith('Nopeus') && l[0].includes('m') && l[0].includes('0,30 kg') && l[1].includes('20,0 °C') && l[2].includes('385 J/(kg·K)') && l[3].includes('0,20 kg') && l[4].includes('100,0 °C') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "five labels with units kg, °C, J/(kg·K), kg, °C"
@@ -295,5 +295,7 @@
   "expected": 1,
   "tol": 0,
   "note": "phone layout: Upota is the first control and the controls come before the long readout, so canvas and button fit on one screen"
- }
+ },
+ {"expr": "(() => { const s=[...document.querySelectorAll('#sim-root label')].find(l=>/^\\s*Nopeus/.test(l.textContent)).querySelector('select'); return [...s.options].map(o=>o.text).join()==='hidas,normaali,nopea' && s.value==='1' ? 1 : 0 })()", "expected": 1, "tol": 0, "note": "speed control Nopeus: hidas, normaali, nopea, default normaali (NOTES 4)"},
+ {"expr": "(() => { const s=[...document.querySelectorAll('#sim-root label')].find(l=>/^\\s*Nopeus/.test(l.textContent)).querySelector('select'), ks=[\"Teq\", \"Q\", \"QW\", \"CW\", \"CB\"], a=ks.map(k=>window.simState[k]); s.value='0.5'; s.dispatchEvent(new Event('change')); return new Promise(f => requestAnimationFrame(() => requestAnimationFrame(() => { const b=ks.map(k=>window.simState[k]); s.value='1'; s.dispatchEvent(new Event('change')); f(a.every((x,i)=>x===b[i]) ? 1 : 0); }))); })()", "expected": 1, "tol": 0, "note": "Nopeus hidas changes no value: T, Q and the heat capacities stay the same and the run is not reset"}
 ]

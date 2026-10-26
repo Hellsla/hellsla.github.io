@@ -6,6 +6,8 @@
 // thermal energy of a vibration is proportional to T). The mean spacing grows by the same factor 1 + αΔT as the rod.
 // Real changes are under 0,3 %, so both the spacing change and the rod change are drawn E = 100 times larger;
 // the particles themselves keep their size. The vibration phase is fixed by the particle index and time (no randomness).
+// Speed control: the vibration clock advances by (real frame time)·speed ("Nopeus"), a pace for the picture only;
+// ΔL, L and every value depend on T, L₀ and the material, never on time.
 // The chart's ΔL axis is scaled to the steepest line (aluminium) at the current L₀ and printed. The readout is DOM text.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
@@ -17,7 +19,7 @@ new p5((p) => {
   const CH = { x0: 335, x1: 575, y0: 330, y1: 160 };             // chart area (axes at x0 and y0)
   const ROD = { x: 280, y: 90, h: 22, w: 220 };                  // rod at 20 °C: 220 px
   const LAT = { cx: 125, cy: 210, n: 5, d0: 36, r: 7, a0: 6.5 }; // lattice: spacing at 20 °C, particle radius, amplitude at 20 °C (px)
-  let sL, lL, sT, lT, sel, btn, readout, tAnim = 0, running = true;
+  let sL, lL, sT, lT, sel, sSp, btn, readout, tAnim = 0, running = true;
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -47,9 +49,9 @@ new p5((p) => {
     [sT, lT] = slider(controls, T_MIN, T_MAX, T_REF, 1);         // lämpötila T (°C)
     btn = p.createButton('Pysäytä värähtely').parent(controls);
     btn.elt.addEventListener('click', () => { running = !running; btn.html(running ? 'Pysäytä värähtely' : 'Jatka värähtelyä'); });
-    p.createP('Alkupituus L₀ on mitattu 20 °C:n lämpötilassa. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. ' +
-              'Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on 20 °C:n tilanne.')
-      .parent('sim-root').class('note');
+    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    sSp.selected('1');                                           // pace of the vibration only
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { material: { input: sel.elt, unit: '' }, L0: { input: sL.elt, unit: 'm' }, T: { input: sT.elt, unit: '°C' } },
@@ -69,7 +71,7 @@ new p5((p) => {
     const amp = LAT.a0 * Math.sqrt((T + 273.15) / (T_REF + 273.15));   // vibration amplitude ∝ √T (px)
     const [yMin, yMax, yStep, nDown, nUp] = chartRange(L0);
     const dec = (String(+yStep.toFixed(4)).split('.')[1] || '').length;   // decimals of the ΔL scale
-    if (running) tAnim += Math.min(p.deltaTime, 100) / 1000;
+    if (running) tAnim += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value());
     const decL = dL === 0 ? 4 : Math.min(8, Math.max(4, Math.ceil(-Math.log10(Math.abs(dL))) + 1));   // show the change in L
 
     lL.html(`Alkupituus L₀ = ${nw(`${L0} m`)}`); lT.html(`Lämpötila T = ${nw(`${fi(T, 0)} °C`)}`);

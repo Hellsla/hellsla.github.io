@@ -54,7 +54,7 @@
         {
           "text": "Lämpötila pysyy 100 °C:ssa, mutta vesi kiehuu pois puolessa ajassa.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: kiehumisen kesto puolittuu 1130 s:sta 565 s:iin, ja animaatiossa vaakasuora osa on kummallakin teholla 100 °C:ssa. Höyrystämiseen tarvitaan aina sama energia, ja kaksinkertainen teho siirtää sen puolessa ajassa."
+          "feedback": "Mallin arvot tukevat tätä: kiehumisen kesto puolittuu 1130 s:sta 565 s:iin, ja animaatiossa vaakasuora osa on kummallakin teholla 100 °C:ssa. Höyrystämiseen tarvitaan aina sama energia, ja kaksinkertainen teho siirtää sen puolessa ajassa."
         },
         {
           "text": "Lämpötila pysyy 100 °C:ssa, ja kiehuminen kestää yhtä kauan, koska vettä on yhtä paljon.",
@@ -76,12 +76,12 @@
       "choices": [
         {
           "text": "Ne kestävät suunnilleen yhtä kauan, koska molemmat ovat olomuodon muutoksia.",
-          "feedback": "Mittausten mukaan kiehuminen kestää noin seitsemän kertaa pidempään kuin sulaminen (565 s ja 83,5 s, kun $m = 0{,}25\\,\\text{kg}$). Sulamisessa hiukkasten järjestys vain purkautuu, mutta höyrystymisessä hiukkaset irtoavat kokonaan toisistaan, ja se vaatii paljon enemmän energiaa kilogrammaa kohti."
+          "feedback": "Mallin mukaan kiehuminen kestää noin seitsemän kertaa pidempään kuin sulaminen (565 s ja noin 84 s, kun $m = 0{,}25\\,\\text{kg}$). Sulamisessa hiukkasten järjestys vain purkautuu, mutta höyrystymisessä hiukkaset irtoavat kokonaan toisistaan, ja se vaatii paljon enemmän energiaa kilogrammaa kohti."
         },
         {
           "text": "Kiehuminen kestää noin seitsemän kertaa pidempään, ja suhde on sama kummallakin massalla.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: 0,25 kg:lla kestot ovat 83,5 s ja 565 s, 0,50 kg:lla 167 s ja 1130 s. Kumpikin kesto kaksinkertaistuu massan mukana, joten suhde pysyy noin 6,8:ssa. Jokainen kilogramma tarvitsee sulaakseen ja höyrystyäkseen aina saman energian."
+          "feedback": "Mallin arvot tukevat tätä: 0,25 kg:lla kestot ovat noin 84 s ja 565 s, 0,50 kg:lla 167 s ja 1130 s. Kumpikin kesto kaksinkertaistuu massan mukana, joten suhde pysyy noin 6,8:ssa. Jokainen kilogramma tarvitsee sulaakseen ja höyrystyäkseen aina saman energian."
         },
         {
           "text": "Kiehuminen kestää pidempään, ja ero kasvaa suhteessa, kun massa kasvaa.",
@@ -89,7 +89,7 @@
         },
         {
           "text": "Sulaminen kestää pidempään, koska kylmää jäätä on vaikeampi lämmittää.",
-          "feedback": "Sulamisen aikana jää on jo 0-asteista, eikä sen lämpötila muutu. Mittauksissa sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (83,5 s ja 565 s, kun $m = 0{,}25\\,\\text{kg}$)."
+          "feedback": "Sulamisen aikana jää on jo 0-asteista, eikä sen lämpötila muutu. Mallin mukaan sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (noin 84 s ja 565 s, kun $m = 0{,}25\\,\\text{kg}$)."
         }
       ]
     },
@@ -99,7 +99,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Ennuste 3: miksi lämpötila ei nouse?",
-      "prompt": "Sulamisen aikana jään ja veden seoksen lämpötila pysyy 0 °C:ssa, vaikka kuumennin toimii koko ajan. Kolme opiskelijaa selittää ilmiön. Kenen selityksen tutkimus tukee?",
+      "prompt": "Sulamisen aikana jään ja veden seoksen lämpötila pysyy 0 °C:ssa, vaikka kuumennin toimii koko ajan. Kolme opiskelijaa selittää ilmiön. Kenen selitys sopii siihen, että vakio-osan kesto kasvaa massan mukana?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -108,16 +108,16 @@
       "choices": [
         {
           "text": "Aino: Energia karkaa astiasta ilmaan yhtä nopeasti kuin sitä tulee, joten aine ei lämpene.",
-          "feedback": "Simulaation mallissa häviöitä ei ole: kaikki kuumentimen energia siirtyy aineeseen. Silti kuvaaja on 0 °C:ssa vaakasuora, ja vaakasuoran osan kesto kasvaa massan mukana. Energia jää siis aineeseen; se vain ei näy lämpötilassa."
+          "feedback": "Jos energiaa karkaisi yhtä nopeasti kuin sitä tulee, vaakasuora osa ei loppuisi koskaan. Se kuitenkin loppuu, kun kaikki jää on sulanut, ja sen kesto kasvaa massan mukana: jokainen kilogramma tarvitsee oman energiansa. Häviöt hidastavat lämpenemistä, mutta ne eivät selitä, miksi lämpötila pysähtyy juuri sulamispisteeseen."
         },
         {
           "text": "Bea: Energia purkaa hiukkasten välisiä sidoksia, joten hiukkasten liike ei nopeudu eikä lämpötila nouse.",
           "correct": true,
-          "feedback": "Tutkimus tukee tätä: vaikka häviöitä ei mallissa ole, lämpötila pysyy vakiona, ja vakio-osan kesto on suoraan verrannollinen massaan. Jokainen kilogramma tarvitsee tietyn energian, jolla sen hiukkasten väliset sidokset puretaan; hiukkasten välinen vuorovaikutusenergia kasvaa."
+          "feedback": "Tämä selitys sopii havaintoihin: lämpötila pysähtyy aina sulamispisteeseen, ja vakio-osan kesto on suoraan verrannollinen massaan, koska jokaisen kilogramman sidosten purkamiseen tarvitaan sama energia. Simulaation malli on rakennettu tämän selityksen varaan, joten se ei yksin todista sitä; ratkaisevaa on, että selitys ennustaa vakio-osan pituuden oikein. Hiukkasten välinen vuorovaikutusenergia kasvaa."
         },
         {
           "text": "Cem: Hiukkasten liike nopeutuu koko ajan, mutta lämpömittari ei ehdi reagoida ennen kuin jää on sulanut.",
-          "feedback": "Simulaatiossa lämpötila lasketaan suoraan energiasta, eikä mittarissa ole viivettä, ja silti kuvaaja on vaakasuora. Lämpötila kuvaa hiukkasten liikettä; jos liike nopeutuisi, lämpötila nousisi. Vaakasuoran osan aikana energia kuluu sidosten purkamiseen."
+          "feedback": "Lämpömittarin viive on sekunteja, mutta sulaminen kestää minuutteja, ja vakio-osa on sitä pidempi, mitä enemmän jäätä on. Viive ei selitä kumpaakaan. Lisäksi lämpötila kuvaa hiukkasten liikettä: jos liike nopeutuisi, lämpötila nousisi. Vaakasuoran osan aikana energia kuluu sidosten purkamiseen."
         }
       ]
     },
