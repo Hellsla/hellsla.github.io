@@ -7,8 +7,6 @@
 // (start positions from a fixed seed) move with a speed ∝ √T, the mean speed of gas particles at the kelvin temperature T,
 // and bounce off the walls and the moving piston; every bounce flashes. The flash rate per wall length is ∝ √T/V and the
 // flash size ∝ speed, so "how often × how hard" grows with p = (const)·T/V in every mode.
-// Speed control: the particles advance in fixed steps of 1/240 s of simulated time, which runs at (real frame time)·speed
-// ("Nopeus"); p, V, T and the table come from the formulas, so the speed changes only the pace of the picture.
 // The chart axes start from zero, so a proportionality is a line through the origin. The readout and table are DOM text.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
 new p5((p) => {
@@ -23,7 +21,7 @@ new p5((p) => {
   const CONST = { isoterminen: ['pV', 'kPa·ml', (V, pp) => pp * V, 0],   // name, unit, value from (V ml, p kPa, T K), decimals
     isobaarinen: ['V/T', 'ml/K', (V, pp, T) => V / T, 4], isokoorinen: ['p/T', 'kPa/K', (V, pp, T) => pp / T, 4] };
   const COLD = [40, 105, 215], ROOM = [150, 140, 180], HOT = [240, 120, 25];   // −50 °C, 20 °C, 150 °C
-  let sel, sV, lV, sT, lT, chk, lChk, sSp, readout, table, mode = 'isoterminen', rows = [], parts = [], flashes = [], hits = 0, full = false, acc = 0;
+  let sel, sV, lV, sT, lT, chk, lChk, readout, table, mode = 'isoterminen', rows = [], parts = [], flashes = [], hits = 0, full = false;
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent), span = p.createSpan('').parent(label);
@@ -54,7 +52,12 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    p.createP('Välähdys on hiukkasen törmäys seinään; kaasun väri kertoo lämpötilan.').parent('sim-root').class('note');
+    p.createP('Paine lasketaan yhtälöstä pV/T = vakio. Hiukkasten nopeus on verrannollinen √T:hen, kun T on kelvineinä. ' +
+              'Kaasun väri kertoo lämpötilan (sininen kylmä, oranssi lämmin; väriasteikko on lämpömittarin vieressä). ' +
+              'Välähdykset ovat hiukkasten törmäyksiä seiniin: mitä tiheämmin ja kovemmin ne osuvat, sitä suurempi paine on. ' +
+              'Isobaarisessa muutoksessa punnus pitää paineen vakiona, isokoorisessa mäntä on lukittu. ' +
+              'Kuvaajan haalea viiva on teoria, katkoviiva jatkaa suoraa origoon, siniset pisteet ovat tallennetut mittaukset ja punainen piste on nykyinen tila.')
+      .parent('sim-root').class('note');
     table = p.createDiv('').parent('sim-root').class('sim-table');
     const btns = p.createDiv('').parent(controls).style('display', 'flex').style('flex-wrap', 'wrap').style('gap', '.5rem');
     button(btns, 'Tallenna mittaus', () => {
@@ -71,9 +74,6 @@ new p5((p) => {
     lChk = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.5rem').style('min-height', '40px');
     chk = p.createElement('input').attribute('type', 'checkbox').parent(lChk).style('width', '22px').style('height', '22px');
     p.createSpan('Piirrä p 1/V:n funktiona').parent(lChk);
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
-    sSp.selected('1');                                                    // pace of the particles only
     reset(); p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { mode: { input: sel.elt, unit: '' }, Vml: { input: sV.elt, unit: 'ml' }, Tc: { input: sT.elt, unit: '°C' } },
@@ -90,21 +90,19 @@ new p5((p) => {
     lV.elt.parentElement.style.display = iso ? '' : 'none'; lT.elt.parentElement.style.display = iso ? 'none' : ''; lChk.elt.style.display = iso ? '' : 'none';
     const [V, pk, T] = state();
     const [cName, cUnit, cFn, cDec] = CONST[mode], c = cFn(V, pk, T);
-    const ax = AX[inv ? 'kaanteinen' : mode], DT = 1 / 240;
+    const ax = AX[inv ? 'kaanteinen' : mode], dt = Math.min(p.deltaTime, 100) / 1000;
     const speed = 120 * Math.sqrt(T / T0);                                // px/s, ∝ √T
     const yP = CYL.bot - V * CYL.px;                                      // piston bottom
     const needle = Math.min(pk, GA.max);                                  // gauge needle value (kPa), full scale 300 kPa
     const hit = (x, y) => { hits++; if (flashes.length < 80) flashes.push({ x, y, age: 0 }); };
-    for (acc += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value()); acc >= DT; acc -= DT) {   // fixed steps of simulated time
-      for (const q of parts) {                                            // straight lines, elastic bounces
-        q.x += q.dx * speed * DT; q.y += q.dy * speed * DT;
-        if (q.x < CYL.l + 4) { q.x = CYL.l + 4; if (q.dx < 0) hit(CYL.l, q.y); q.dx = Math.abs(q.dx); }
-        if (q.x > CYL.r - 4) { q.x = CYL.r - 4; if (q.dx > 0) hit(CYL.r, q.y); q.dx = -Math.abs(q.dx); }
-        if (q.y > CYL.bot - 4) { q.y = CYL.bot - 4; if (q.dy > 0) hit(q.x, CYL.bot); q.dy = -Math.abs(q.dy); }
-        if (q.y < yP + 4) { q.y = yP + 4; if (q.dy < 0) hit(q.x, yP); q.dy = Math.abs(q.dy); }
-      }
-      flashes = flashes.filter((f) => (f.age += DT) < 0.25);
+    for (const q of parts) {                                              // straight lines, elastic bounces
+      q.x += q.dx * speed * dt; q.y += q.dy * speed * dt;
+      if (q.x < CYL.l + 4) { q.x = CYL.l + 4; if (q.dx < 0) hit(CYL.l, q.y); q.dx = Math.abs(q.dx); }
+      if (q.x > CYL.r - 4) { q.x = CYL.r - 4; if (q.dx > 0) hit(CYL.r, q.y); q.dx = -Math.abs(q.dx); }
+      if (q.y > CYL.bot - 4) { q.y = CYL.bot - 4; if (q.dy > 0) hit(q.x, CYL.bot); q.dy = -Math.abs(q.dy); }
+      if (q.y < yP + 4) { q.y = yP + 4; if (q.dy < 0) hit(q.x, yP); q.dy = Math.abs(q.dy); }
     }
+    flashes = flashes.filter((f) => (f.age += dt) < 0.25);
 
     lV.html(`Tilavuus V = ${V} ml`);
     lT.html(`Lämpötila T = ${fi(T - 273.15, 0)} °C = ${fi(T, 2)} K`);
