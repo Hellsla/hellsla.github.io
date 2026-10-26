@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: cfc3c56d3cf0b6d3
+CONTENT-HASH: f0c05b8f4255e26f
 
 ## Blocking
 
 ## Polish
-- inquiry.json pred-1/pred-2/pred-3 — most wrong options contradict the premise in the prompt (pred-1: "kaareva" although the motion is stated uniform, "ylempänä" although both start at x = 0; pred-2 "A saavuttaa C:n" although speeds are equal), so a careful reader eliminates them without physics, and the correct option is usually the longest. Make a distractor a real misconception (e.g. steeper line = further ahead; slope read as position) and equalise option length (also `virhe`, `check-1`, `exp-2` question).
-- lesson.md Ydinajatus figure 1 (fy4-1-fig-3) — the lower arrow shows 3 and 8 in bold but no x₁ and x₂ labels, unlike the upper one; the reversed order (x₁ = 8, x₂ = 3) is the point of the figure, so label it. Add x₁ and x₂ here and, optionally, a 170 m tick at the dashed end of the Esimerkki figure.
-- Slot goal "vektorimerkintöjen käyttö" — only one sentence in Kaava (bold **v**, Δ**x**) and no student activity uses the notation. Add one item (e.g. in the exit ticket or a check: write the displacement of the cart as a signed component and say what the sign means).
-- inquiry.json `data` — the student "imagines" a fitted line and only types a number; nothing checks the line, and the answer tolerance accepts the neighbour-pair value 1.55. Let the student pick two points on the line (or give the fitted intercept) so the "far apart, off the line" rule is actually exercised.
-- Workload — hook, retrieval, 3 predictions, 3 experiments, 2 interpret tasks, example, error item, transfer, 12 exercises, 3 checks and exit ticket is full for one lesson. Consider merging exp-2 and exp-3 or marking the level 2–3 exercises as optional.
+- inquiry.json `data` (text and prompt) — "suora on piirretty ajatuksissa" and "lue sen t ja x kuvaajasta", but the figure (fy4-1-fig-1) shows only the six points; no line exists to read from. Hint 2 ("suora päättyy noin paikkaan 19 m") rescues it, yet the first reading is confusing. Draw the fitted line through (0; 4,1) in the figure, or say "piirrä suora vihkoon pisteiden läpi ja lue siitä toinen piste".
+- inquiry.json exp-1/2/3 — the sim only returns x = x₀ + vt, so the table confirms the model rather than letting a result emerge; acceptable here because the sim text says "mallin arvoja" and the predictions are about graph shape, but pred-1 options 3 and 4 (equal steepness) are weak distractors. Make one a real misconception (e.g. "the line that starts higher is faster").
+- inquiry.json exp-2 question option 4 — "eikä A pääse lähemmäs C:tä" is clumsy; rewrite: "…joten nopeudet ovat samat ja etäisyys A:n ja C:n välillä pysyy 20 metrinä."
+- Workload — hook, retrieval, 3 predictions, 3 experiments, 2 interpret tasks, example, error item, transfer, 12 exercises, 3 checks, exit ticket is the upper bound for one hour; the exercises text already marks levels 2–3 optional, which keeps it workable.
 
 ## Checked
-- Learning path: prerequisite retrieval (v = s/t) leads into Δx and signed v; the opening cyclist question is answered in reflect, check-3 and L3-01; slot goals covered (vector part thin, see Polish).
-- Predictions are committed before evidence and each experiment's table lets the student test them; feedback names the mechanism and the model value.
-- Sim at 390 px: tracks, graph, legend, speed control, readout with x and matka s, Lisätietoja behind a button; locked "tapaus" shown as vakio; nothing clipped.
-- Simplifications stated at point of use (no friction, instant full speed); "mallin arvot" vs measurements kept apart; data task labelled as example data.
-- Data task numbers verified (slope 1,49 m/s; mistake values 1,9, 1,3, 0,67 match; plotted points match the table).
-- Worked example: five staged steps, symbolic before numbers, sanity check; figure legible.
-- Exercises: 5/4/3 levels, answers and solutions checked (L3-03 0,25 m/s, L3-02 50 m), none repeats the example; mistake feedback repairs the error; exit ticket tests sign, slope and distance versus displacement.
-- Finnish: terms match glossary, case endings and decimal commas fine; no corrections needed.
-- Figures present in Ydinajatus and Kaava with LaTeX/legible labels at 390 px.
+- Learning path: v = s/t retrieval leads to signed Δx and v; the opening cyclist question is not answered before commitment, then resolved in reflect, check-3 and the edestakainen item; slot goals covered, including vector notation (exit ticket Q1 now asks the signed component and the vector meaning).
+- Predictions are committed before evidence; each wrong option's feedback repairs a misconception, right ones cite model values; experiments can refute them via the recorded table.
+- Sim at 390 px (sim and exp-3 captures): tracks, graph, legend, speed select, readout with x and s, Lisätietoja behind a button, locked tapaus shown as vakio; nothing clipped.
+- Simplifications (instant full speed, no friction) and "mallin arvot" versus measurements stated at point of use; robot data labelled as example data.
+- Numbers verified: robot slope 1,49 m/s and mistake values 1,9 / 1,3 / 0,67; plotted points match the table; edestakainen figure (8 m, 16 m, v_ka = 0); siirto 39 m; check-2 13 m; pred-3 meeting at 6 s, 12 m.
+- Figures: both Ydinajatus and Kaava figures present and legible; the displacement figure now labels x₁ and x₂ on both arrows; the example figure shows the 170 m extrapolation.
+- Worked example: five stages, symbolic before substitution, sanity check; none repeated by exercises.
+- Exercises 5/4/3, answers and solutions check out; mistake feedback repairs the error; exit ticket tests sign, slope, distance versus displacement.
+- Finnish: glossary terms, case endings and decimal commas correct; no corrections needed.
