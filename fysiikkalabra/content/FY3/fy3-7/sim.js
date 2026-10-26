@@ -7,7 +7,8 @@
 //   steam warms   Q = c_höyry m ΔT (100 → 130 °C,  c_höyry = 2000 J/(kg·K)), where the animation stops.
 // On a plateau the energy breaks the bonds between particles, so T stays constant; the plateau lasts sm/P or rm/P.
 // Every duration is proportional to m/P, so the chart's t axis is scaled to the current end time and printed.
-// Time runs 60 times faster than real time. The sliders are locked while heating (so Q = P t holds for the whole run),
+// Time runs 60 times faster than real time at the normal speed; the "Nopeus" select scales that pace (hidas 30×,
+// nopea 120×) and nothing else: Q = P t and every value follow the simulated time t. The sliders are locked while heating (so Q = P t holds for the whole run),
 // and moving one resets the run. The readout is DOM text below the controls; the canvas only draws.
 // Canvas labels go through label(), which records their boxes in window.simLabels (600×400 units) for the layout sweep.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame.
@@ -18,7 +19,7 @@ new p5((p) => {
   const BK = { x: 50, w: 160, top: 95, bottom: 300 };                    // container
   const PHASE_TEXT = { 'jää': 'jää lämpenee', 'sulaa': 'jää sulaa (0 °C)', 'vesi': 'vesi lämpenee', 'kiehuu': 'vesi kiehuu (100 °C)', 'höyry': 'höyry lämpenee' };
   const CONTENT = { 'jää': 'jää', 'sulaa': 'jää ja vesi', 'vesi': 'vesi', 'kiehuu': 'vesi ja höyry', 'höyry': 'höyry' };
-  let sM, lM, sP, lP, readout, t = 0, running = false, labels = [];
+  let sM, lM, sP, lP, sSp, note, readout, t = 0, running = false, labels = [];
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -51,9 +52,11 @@ new p5((p) => {
     [sM, lM] = slider(controls, 0.1, 1, 0.5, 0.05);           // massa m (kg)
     [sP, lP] = slider(controls, 500, 3000, 1000, 100);        // teho P (W)
     [sM, sP].forEach((s) => s.elt.addEventListener('input', () => { t = 0; running = false; }));   // a new setting starts a new run
+    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    sSp.selected('1');                                                     // pace only: never resets or locks the run
     readout = p.createDiv('').parent('sim-root').class('readout');
-    p.createP(`Aika kuluu nopeutettuna: 1 s animaatiota vastaa ${SPEED} s eli 1 min. Oletetaan, että kaikki kuumentimen energia siirtyy aineeseen ja höyry pysyy astiassa.`)
-      .parent('sim-root').class('note');
+    note = p.createP('').parent('sim-root').class('note');                  // the one legend line: the time scale
     window.simSetTime = (sec) => { t = Math.max(0, sec); running = false; };          // for tests: jump to a moment
     window.simSetQ = (Q) => { t = Math.max(0, Q) / Number(sP.value()); running = false; };
     p.textFont('Arial');
@@ -67,7 +70,9 @@ new p5((p) => {
   p.draw = () => {
     const m = Number(sM.value()), P = Number(sP.value());
     const q = stages(m), tEnd = q[4] / P;                      // time to reach 130 °C
-    if (running) t += Math.min(p.deltaTime, 100) / 1000 * SPEED;
+    const pace = SPEED * Number(sSp.value());                  // simulated seconds per real second
+    if (running) t += Math.min(p.deltaTime, 100) / 1000 * pace;
+    note.html(`Aika kuluu nopeutettuna: 1 s animaatiota vastaa ${pace} s.`);
     if (t >= tEnd) { t = tEnd; running = false; }
     const held = (s) => s.elt.getAttribute('aria-disabled') === 'true';   // a guided experiment may hold a slider (sim-embed adapter)
     sM.elt.disabled = running || held(sM); sP.elt.disabled = running || held(sP);   // locked while heating
@@ -82,7 +87,7 @@ new p5((p) => {
                  `<br>Sulaminen kestää sm/P = ${fj(S * m)} J / ${P} W = <strong>${fi(tMelt, 0)} s</strong>` +
                  `<br>Kiehuminen kestää rm/P = ${fj(R * m)} J / ${P} W = <strong>${fi(tBoil, 0)} s</strong>` +
                  `<br>Kuvaajan aika-akseli 0–${tMax} s, lämpötila-akseli −20…130 °C.`);
-    window.simState = { m, P, t, T, phase, Q, tMelt, tBoil, running, tEnd, tMax, content: CONTENT[phase] };
+    window.simState = { m, P, t, T, phase, Q, tMelt, tBoil, running, tEnd, tMax, content: CONTENT[phase], pace };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k);

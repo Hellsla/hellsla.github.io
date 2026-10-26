@@ -77,7 +77,8 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaation sylinterissä on suljettu kaasumäärä ideaalikaasua: kaasua ei pääse pois eikä tule lisää.",
-      "howto": "Valitse tilanmuutos, muuta tilavuutta tai lämpötilaa ja seuraa painemittaria, hiukkasten törmäyksiä ja kuvaajaa.",
+      "howto": "Valitse tilanmuutos, muuta tilavuutta tai lämpötilaa ja seuraa painemittaria, hiukkasten törmäyksiä ja kuvaajaa. Kaasun väri kertoo lämpötilan (sininen kylmä, oranssi lämmin; väriasteikko on lämpömittarin vieressä). Välähdykset ovat hiukkasten törmäyksiä seiniin: mitä tiheämmin ja kovemmin ne osuvat, sitä suurempi paine on. Kuvaajan haalea viiva on teoria, katkoviiva jatkaa suoraa origoon, siniset pisteet ovat tallennetut mittaukset ja punainen piste on nykyinen tila. *Nopeus* muuttaa vain hiukkasten liikkeen tahtia, ei painetta, tilavuutta eikä lämpötilaa.",
+      "model": "Isobaarisessa muutoksessa punnus pitää paineen vakiona, isokoorisessa mäntä on lukittu. Hiukkasten nopeus on verrannollinen √T:hen, kun T on kelvineinä.",
       "calc": "Simulaation paine lasketaan yhtälöstä $pV/T = \\text{vakio}$, joten luvut ovat mallin arvoja, eivät mittauksia oikeasta ruiskusta."
     },
     {

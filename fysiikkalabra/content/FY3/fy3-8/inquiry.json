@@ -134,7 +134,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$.",
-      "howto": "Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %.",
+      "howto": "Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on 20 °C:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
       "model": "Lukemat ovat mallin arvoja, joissa kerroin α oletetaan vakioksi, eivät mittauksia oikeasta sauvasta."
     },
     {
