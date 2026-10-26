@@ -16,7 +16,7 @@ Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$, vaikka eriste 
   <rect x="72" y="204" width="76" height="54" rx="7" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/><path d="M82,216 L98,214 M84,230 L104,226" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
   <path d="M166,204 V190 Q166,184 170,184 Q174,184 174,190 V204 Q182,208 182,218 V252 Q182,258 177,258 H163 Q158,258 158,252 V218 Q158,208 166,204 Z" fill="url(#fy316a-water)" stroke="#1f2933" stroke-width="2.5"/>
   <path d="M202,204 V190 Q202,184 206,184 Q210,184 210,190 V204 Q218,208 218,218 V252 Q218,258 213,258 H199 Q194,258 194,252 V218 Q194,208 202,204 Z" fill="url(#fy316a-water)" stroke="#1f2933" stroke-width="2.5"/>
-  <text x="110" y="196" text-anchor="middle" fill="#1f2933">jää</text>
+  <foreignObject x="75" y="170" width="70" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{jää}$</div></foreignObject>
   <foreignObject x="70" y="108" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#1971c2;">$0\,{}^\circ\text{C}$</div></foreignObject>
   <path d="M2,183.25 H29.0 V175.0 L56,190 L29.0,205.0 V196.75 H2 Z" fill="url(#fy316a-heat)"/>
   <path d="M298,183.25 H271.0 V175.0 L244,190 L271.0,205.0 V196.75 H298 Z" fill="url(#fy316a-heat)"/>
@@ -27,13 +27,13 @@ Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$, vaikka eriste 
   <foreignObject x="318" y="2" width="270" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q\ (\text{kJ}),\ m = 1{,}0\,\text{kg}$</div></foreignObject>
   <line x1="324" y1="286" x2="588" y2="286" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="340" y="116.5" width="52" height="169.5" rx="3" fill="url(#fy316a-heatv)" stroke="#1f2933" stroke-width="2"/>
-  <text x="366" y="108.5" text-anchor="middle" fill="#1f2933">334</text>
-  <text x="366" y="316" text-anchor="middle" fill="#1f2933">sulaa</text>
+  <foreignObject x="336" y="82.5" width="60" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$334$</div></foreignObject>
+  <foreignObject x="323.5" y="290" width="85" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{sulaa}$</div></foreignObject>
   <rect x="430" y="264.7" width="52" height="21.3" rx="3" fill="url(#fy316a-heatv)" stroke="#1f2933" stroke-width="2"/>
-  <text x="456" y="256.7" text-anchor="middle" fill="#1f2933">42</text>
+  <foreignObject x="426" y="230.7" width="60" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$42$</div></foreignObject>
   <foreignObject x="412" y="292" width="88" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$+10\,\text{K}$</div></foreignObject>
   <rect x="520" y="115.9" width="52" height="170.1" rx="3" fill="url(#fy316a-heatv)" stroke="#1f2933" stroke-width="2"/>
-  <text x="546" y="107.9" text-anchor="middle" fill="#1f2933">335</text>
+  <foreignObject x="516" y="81.9" width="60" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$335$</div></foreignObject>
   <foreignObject x="502" y="292" width="88" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$+80\,\text{K}$</div></foreignObject>
   <line x1="392" y1="116.5" x2="546" y2="116.5" stroke="#6b7480" stroke-width="2" stroke-dasharray="5 5"/>
 </svg>
@@ -43,7 +43,7 @@ Saunan kiuas lämmittää kiviä, joiden ominaislämpökapasiteetti on noin 800 
 Auton jäähdytysneste kuljettaa moottorin hukkalämmön jäähdyttimeen. Teho on energiaa sekunnissa, joten siirtyvän tehon määräävät nesteen sekunnissa kuljettama massa ja sen lämpötilan nousu moottorissa. Samalla teholla suurempi massavirta tarkoittaa pienempää lämpötilan nousua. Veden ominaislämpökapasiteetti on suuri, 4190 J/(kg·K), mutta vesi jäätyy pakkasella ja kiehuu helposti, joten siihen sekoitetaan glykolia. Seos kestää pakkasta ja kuumuutta, mutta sen ominaislämpökapasiteetti on pienempi, noin 3500 J/(kg·K).
 
 ## Kaava: Lämpöenergian tase
-Kun systeemiin siirtyy energiaa teholla $P$ ajan $t$ ajan, energia $Pt$ jakautuu systeemin osien lämpenemiseen ja olomuodon muutoksiin:
+Kun systeemiin siirtyy energiaa teholla $P$ ajan $t$ kuluessa, energia $Pt$ jakautuu systeemin osien lämpenemiseen ja olomuodon muutoksiin:
 ```latex
 \begin{aligned}
 Pt &= Q_1 + Q_2 + \dots \\
@@ -64,7 +64,7 @@ t = \frac{s\,m}{U A \Delta T}
 ```
 Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilan mallilla laskettuna. Lämpötila pysyy 0 °C:ssa ajan $t_0$, kunnes jää on sulanut. Sen jälkeen vesi lämpenee kohti ulkolämpötilaa. Nousu on aluksi jyrkkä ja hidastuu, koska teho $UA\Delta T$ pienenee, kun lämpötilaero pienenee.
 
-<svg viewBox="0 0 600 372" role="img" aria-label="Kuvaaja kylmälaukun sisälämpötilasta ajan funktiona mallin mukaan. Lämpötila pysyy 0 °C:ssa noin 2.4 tuntia, kun jää sulaa, ja alkaa sen jälkeen nousta kohti ulkolämpötilaa 28 °C. Nousu on aluksi jyrkkä ja hidastuu, kun lämpötilaero pienenee. Akselit ovat mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 372" role="img" aria-label="Kuvaaja kylmälaukun sisälämpötilasta ajan funktiona mallin mukaan. Lämpötila pysyy 0 °C:ssa noin 2,4 tuntia, kun jää sulaa, ja alkaa sen jälkeen nousta kohti ulkolämpötilaa 28 °C. Nousu on aluksi jyrkkä ja hidastuu, kun lämpötilaero pienenee. Akselit ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="84" y1="300.0" x2="516" y2="300.0" stroke="#e3dccb" stroke-width="1.5"/>
   <line x1="84" y1="218.0" x2="516" y2="218.0" stroke="#e3dccb" stroke-width="1.5"/>
   <line x1="84" y1="136.0" x2="516" y2="136.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -79,17 +79,17 @@ Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilan mallilla laskettuna.
   <line x1="84" y1="70.4" x2="516" y2="70.4" stroke="#6b7480" stroke-width="2" stroke-dasharray="7 6"/>
   <path d="M84,300 H526" stroke="#1f2933" stroke-width="2.5" fill="none"/><path d="M532,300 L520,294 V306 Z" fill="#1f2933"/>
   <path d="M84,300 V40" stroke="#1f2933" stroke-width="2.5" fill="none"/><path d="M84,34 L78,46 H90 Z" fill="#1f2933"/>
-  <line x1="84.0" y1="300" x2="84.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="84.0" y="332" text-anchor="middle" fill="#6b7480">0</text>
-  <line x1="156.0" y1="300" x2="156.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="156.0" y="332" text-anchor="middle" fill="#6b7480">1</text>
-  <line x1="228.0" y1="300" x2="228.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="228.0" y="332" text-anchor="middle" fill="#6b7480">2</text>
-  <line x1="300.0" y1="300" x2="300.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="300.0" y="332" text-anchor="middle" fill="#6b7480">3</text>
-  <line x1="372.0" y1="300" x2="372.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="372.0" y="332" text-anchor="middle" fill="#6b7480">4</text>
-  <line x1="444.0" y1="300" x2="444.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="444.0" y="332" text-anchor="middle" fill="#6b7480">5</text>
-  <line x1="516.0" y1="300" x2="516.0" y2="307" stroke="#1f2933" stroke-width="2"/><text x="516.0" y="332" text-anchor="middle" fill="#6b7480">6</text>
-  <line x1="77" y1="300.0" x2="84" y2="300.0" stroke="#1f2933" stroke-width="2"/><text x="72" y="308.0" text-anchor="end" fill="#6b7480">0</text>
-  <line x1="77" y1="218.0" x2="84" y2="218.0" stroke="#1f2933" stroke-width="2"/><text x="72" y="226.0" text-anchor="end" fill="#6b7480">10</text>
-  <line x1="77" y1="136.0" x2="84" y2="136.0" stroke="#1f2933" stroke-width="2"/><text x="72" y="144.0" text-anchor="end" fill="#6b7480">20</text>
-  <line x1="77" y1="54.0" x2="84" y2="54.0" stroke="#1f2933" stroke-width="2"/><text x="72" y="62.0" text-anchor="end" fill="#6b7480">30</text>
+  <line x1="84.0" y1="300" x2="84.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="73" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$0$</div></foreignObject>
+  <line x1="156.0" y1="300" x2="156.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="145" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$1$</div></foreignObject>
+  <line x1="228.0" y1="300" x2="228.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="217" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$2$</div></foreignObject>
+  <line x1="300.0" y1="300" x2="300.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="289" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$3$</div></foreignObject>
+  <line x1="372.0" y1="300" x2="372.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="361" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$4$</div></foreignObject>
+  <line x1="444.0" y1="300" x2="444.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="433" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$5$</div></foreignObject>
+  <line x1="516.0" y1="300" x2="516.0" y2="307" stroke="#1f2933" stroke-width="2"/><foreignObject x="505" y="309" width="22" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#6b7480;">$6$</div></foreignObject>
+  <line x1="77" y1="300.0" x2="84" y2="300.0" stroke="#1f2933" stroke-width="2"/><foreignObject x="36" y="285" width="36" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480;">$0$</div></foreignObject>
+  <line x1="77" y1="218.0" x2="84" y2="218.0" stroke="#1f2933" stroke-width="2"/><foreignObject x="36" y="203" width="36" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480;">$10$</div></foreignObject>
+  <line x1="77" y1="136.0" x2="84" y2="136.0" stroke="#1f2933" stroke-width="2"/><foreignObject x="36" y="121" width="36" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480;">$20$</div></foreignObject>
+  <line x1="77" y1="54.0" x2="84" y2="54.0" stroke="#1f2933" stroke-width="2"/><foreignObject x="36" y="39" width="36" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480;">$30$</div></foreignObject>
   <foreignObject x="8" y="0" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$T\ (^\circ\text{C})$</div></foreignObject>
   <foreignObject x="538" y="280" width="62" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$t\ (\text{h})$</div></foreignObject>
   <foreignObject x="420" y="26.4" width="100" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480;">$28\,{}^\circ\text{C}$</div></foreignObject>
@@ -97,8 +97,8 @@ Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilan mallilla laskettuna.
   <path d="M257.9,300.0 L265.1,284.7 L272.3,270.5 L279.5,257.2 L286.7,244.8 L293.9,233.2 L301.1,222.4 L308.3,212.3 L315.5,202.9 L322.7,194.1 L329.9,185.9 L337.1,178.2 L344.3,171.0 L351.5,164.4 L358.7,158.1 L365.9,152.3 L373.1,146.8 L380.3,141.8 L387.5,137.0 L394.7,132.6 L401.9,128.5 L409.1,124.6 L416.3,121.0 L423.5,117.7 L430.7,114.5 L437.9,111.6 L445.1,108.8 L452.3,106.3 L459.5,103.9 L466.7,101.7 L473.9,99.6 L481.1,97.7 L488.3,95.9 L495.5,94.2 L502.7,92.6 L509.9,91.1 L516.0,89.9" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <line x1="257.9" y1="300.0" x2="257.9" y2="190.0" stroke="#1f2933" stroke-width="2" stroke-dasharray="5 5"/>
   <foreignObject x="251.9" y="140.0" width="150" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$t_0 \approx 2{,}4\,\text{h}$</div></foreignObject>
-  <text x="170.9" y="282.0" text-anchor="middle" fill="#1f2933">jää sulaa</text>
-  <text x="399.8" y="248.0" text-anchor="middle" fill="#1f2933">vesi lämpenee</text>
+  <foreignObject x="102.4" y="256" width="137" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{jää sulaa}$</div></foreignObject>
+  <foreignObject x="305.3" y="222" width="189" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{vesi lämpenee}$</div></foreignObject>
 </svg>
 
 Moottorin jäähdytyspiirissä neste ottaa moottorista lämpötehon $P$, joten lämmityksen kaava $Q = cm\Delta T$ jaetaan ajalla $t$:
@@ -107,7 +107,7 @@ P = c\,\frac{m}{t}\,\Delta T
 ```
 missä $m/t$ on nesteen sekunnissa kuljettama massa (kg/s) ja $\Delta T = T_2 - T_1$ nesteen lämpötilan nousu moottorissa (K). Tasaisessa käynnissä jäähdytin luovuttaa ilmaan saman tehon $P$, joten nesteen lämpötilat $T_1$ ja $T_2$ pysyvät vakioina.
 
-<svg viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva moottorin jäähdytyspiiristä. Moottori ottaa vastaan lämpötehon P, neste kulkee yläputkea pitkin jäähdyttimelle lämpötilassa T2 ja palaa alaputkea pumpun kautta lämpötilassa T1, ja jäähdytin luovuttaa saman tehon P ilmaan. Nesteen massavirta on m/t. Kuva on kaavio eikä mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva moottorin jäähdytyspiiristä. Moottorin sisällä syntyvä hukkalämpö siirtyy lämpötehona P nesteeseen, neste kulkee yläputkea pitkin jäähdyttimelle lämpötilassa T2 ja palaa alaputkea pumpun kautta lämpötilassa T1, ja jäähdytin luovuttaa saman tehon P ilmaan. Nesteen massavirta on m/t. Kuva on kaavio eikä mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316c-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <path d="M190,130 H408" stroke="#1f2933" stroke-width="20" fill="none"/>
   <path d="M190,130 H408" stroke="#c92a2a" stroke-width="13" fill="none"/>
@@ -127,10 +127,10 @@ missä $m/t$ on nesteen sekunnissa kuljettama massa (kg/s) ja $\Delta T = T_2 - 
   <line x1="466" y1="108" x2="466" y2="236" stroke="#1f2933" stroke-width="2"/>
   <line x1="480" y1="108" x2="480" y2="236" stroke="#1f2933" stroke-width="2"/>
   <line x1="494" y1="108" x2="494" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <text x="143" y="278" text-anchor="middle" fill="#1f2933">moottori</text><text x="455" y="278" text-anchor="middle" fill="#1f2933">jäähdytin</text>
-  <path d="M8,164.8 H39.0 V156.0 L70,172 L39.0,188.0 V179.2 H8 Z" fill="url(#fy316c-heat)"/>
+  <foreignObject x="81" y="252" width="124" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{moottori}$</div></foreignObject><foreignObject x="386.5" y="252" width="137" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{jäähdytin}$</div></foreignObject>
+  <path d="M106,172.8 H137.0 V164.0 L168,180 L137.0,196.0 V187.2 H106 Z" fill="url(#fy316c-heat)"/>
   <path d="M510,164.8 H541.0 V156.0 L572,172 L541.0,188.0 V179.2 H510 Z" fill="url(#fy316c-heat)"/>
-  <foreignObject x="10" y="118" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$P$</div></foreignObject>
+  <foreignObject x="112" y="198" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$P$</div></foreignObject>
   <foreignObject x="520" y="118" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$P$</div></foreignObject>
   <foreignObject x="244" y="78" width="110" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#c92a2a;">$T_2$</div></foreignObject>
   <foreignObject x="236" y="236" width="70" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#1971c2;">$T_1$</div></foreignObject>
@@ -195,7 +195,7 @@ t &= \frac{s\,m_\text{jää} - c\,m_\text{j}\Delta T_\text{j}}{UA\Delta T_\text{
 
 <!-- vaihe -->
 
-**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $334\,000\,\text{J} / 33{,}6\,\text{W} = 9940\,\text{s} \approx 2{,}8\,\text{h}$, joten tulos on kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä 41 900 J / 334 000 J = 13 %. Kun jää on sulanut, laukussa on 1,5 kg vettä, jonka lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho 33,6 W nostaa sen lämpötilaa aluksi noin 19 K tunnissa, kuten kuvaaja näyttää.
+**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$, joten tulos on kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$. Kun jää on sulanut, laukussa on 1,5 kg vettä, jonka lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho nostaa sen lämpötilaa aluksi $\tfrac{33{,}6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, kuten kuvaaja näyttää.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että jää tuottaa kylmää, joka virtaa juomiin. Kylmyys ei virtaa: energia siirtyy aina lämpimästä kylmempään, ja jää jäähdyttää, koska se ottaa energiaa vastaan. Toinen virhe on olettaa, että lämpötila nousee tasaisesti koko ajan. Sulamisen aikana lämpötila pysyy vakiona, vaikka energiaa tulee koko ajan.

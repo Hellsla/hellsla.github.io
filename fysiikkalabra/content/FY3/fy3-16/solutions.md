@@ -37,7 +37,7 @@ P &= 1{,}6\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 0{,}60\,\text{m}^2 \cdot 
 &\approx 27\,\text{W}
 \end{aligned}$$
 **Vastaus:** 27 W
-**Järkevyys:** Teho on pieni, koska seinä eristää hyvin, mutta se riittää sulattamaan jäätä tuntikausia: 27 W on 27 J sekunnissa eli noin 97 kJ tunnissa.
+**Järkevyys:** Teho on pieni, koska seinä eristää hyvin, mutta se riittää sulattamaan jäätä tuntikausia: $27\,\text{W} = 27\,\tfrac{\text{J}}{\text{s}}$, joten tunnissa tulee energiaa $27\,\text{W} \cdot 3600\,\text{s} \approx 97\,\text{kJ}$.
 
 ## fy3-16-L1-04
 **Annettu:** $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$, $m = 0{,}75\,\text{kg}$, jää on sulamispisteessä $0\,{}^\circ\text{C}$
@@ -136,7 +136,7 @@ Q_\text{v} &= m_\text{v}(c_\text{v}\Delta T_\text{v} + r) \\
 &\approx 26\,\text{K}
 \end{aligned}$$
 **Vastaus:** 26 K
-**Järkevyys:** Höyrystyminen vie 452 kJ eli 87 % energiasta. Höyryn lämpeneminen ja kivien lämmönjohtuminen jätettiin huomiotta, joten todellinen lasku on hieman suurempi.
+**Järkevyys:** Höyrystyminen vie 452 kJ eli 87 % energiasta. Höyryn lämpeneminen jätettiin huomiotta, mikä suurentaisi todellista laskua hieman, mutta kiuas lämmittää kiviä koko ajan, mikä pienentäisi sitä. Laskettu 26 K on lasku ilman kiukaan lämmitystä.
 
 ## fy3-16-L3-02
 **Annettu:** jää $m_\text{jää} = 0{,}50\,\text{kg}$, $0\,{}^\circ\text{C}$; vesi $m_\text{v} = 2{,}0\,\text{kg}$, $T_\text{v} = 30\,{}^\circ\text{C}$; $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -156,16 +156,17 @@ T &= \frac{251\,400\,\text{J} - 167\,000\,\text{J}}{4190 \cdot 2{,}5\,\text{J/K}
 **Järkevyys:** Vesi voi luovuttaa 251 kJ, mikä on enemmän kuin jään sulattamiseen tarvittava 167 kJ, joten oletus kaiken jään sulamisesta pitää. Jos veden energia olisi jäänyt alle 167 kJ:n, tulos olisi 0 °C ja jäätä jäisi.
 
 ## fy3-16-L3-03
-**Annettu:** $U = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 0{,}60\,\text{m}^2$, $m = 1{,}0\,\text{kg}$, $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$, $\Delta T_1 = 24\,\text{K}$, $\Delta T_2 = 36\,\text{K}$
-**Kysytty:** kestoaikojen erotus $t_1 - t_2$
-**Kaava:** $t = \dfrac{s\,m}{U A \Delta T}$, joten $t_1 - t_2 = \dfrac{s\,m}{UA}\left(\dfrac{1}{\Delta T_1} - \dfrac{1}{\Delta T_2}\right)$
+**Annettu:** $U = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 0{,}50\,\text{m}^2$, $\Delta T = 30\,\text{K}$, $t = 6{,}0\,\text{h}$; juomat $m_\text{j} = 0{,}50\,\text{kg}$, $\Delta T_\text{j} = 24\,\text{K}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; jää $-10\,{}^\circ\text{C} \to 0\,{}^\circ\text{C}$, $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** jään massa $m$
+**Kaava:** jään lämmittämiseen ja sulattamiseen kuluva energia on seinän läpi tuleva energia ja juomien luovuttama energia, $m\,(c_\text{jää}\Delta T_\text{jää} + s) = UA\Delta T\,t + c\,m_\text{j}\Delta T_\text{j}$, joten $m = \dfrac{UA\Delta T\,t + c\,m_\text{j}\Delta T_\text{j}}{c_\text{jää}\Delta T_\text{jää} + s}$
 **Sijoitus:**
 $$\begin{aligned}
-UA &= 1{,}5 \cdot 0{,}60\,\tfrac{\text{W}}{\text{K}} = 0{,}90\,\tfrac{\text{W}}{\text{K}} \\
-t_1 &= \frac{334\,000\,\text{J}}{0{,}90\,\tfrac{\text{W}}{\text{K}} \cdot 24\,\text{K}} = 15\,463\,\text{s} \\
-t_2 &= \frac{334\,000\,\text{J}}{0{,}90\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K}} = 10\,309\,\text{s} \\
-t_1 - t_2 &= 5154\,\text{s} \\
-&\approx 86\,\text{min}
+UA\Delta T\,t &= 1{,}5 \cdot 0{,}50\,\tfrac{\text{W}}{\text{K}} \cdot 30\,\text{K} \cdot 21\,600\,\text{s} = 486\,000\,\text{J} \\
+c\,m_\text{j}\Delta T_\text{j} &= 4190 \cdot 0{,}50 \cdot 24\,\text{J} = 50\,280\,\text{J} \\
+c_\text{jää}\Delta T_\text{jää} + s &= 2100 \cdot 10\,\tfrac{\text{J}}{\text{kg}} + 334\,000\,\tfrac{\text{J}}{\text{kg}} = 355\,000\,\tfrac{\text{J}}{\text{kg}} \\
+m &= \frac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\text{J/kg}} \\
+&= 1{,}51\,\text{kg} \\
+&\approx 1{,}5\,\text{kg}
 \end{aligned}$$
-**Vastaus:** 86 min
-**Järkevyys:** Lämpötilaero kasvaa 1,5-kertaiseksi, joten teho kasvaa 1,5-kertaiseksi ja kestoaika on vain $\tfrac{2}{3}$ alkuperäisestä: 4,3 h lyhenee 2,9 h:ksi, yhteensä 1,4 h eli 86 min.
+**Vastaus:** 1,5 kg
+**Järkevyys:** Seinä tuo 486 kJ ja juomat 50 kJ, yhteensä noin 536 kJ. Jos jää olisi 0 °C:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie $10\,\text{K} \cdot 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ eli vajaat 7 % enemmän energiaa kilogrammaa kohti, joten tarvittava massa on hieman pienempi, 1,5 kg.

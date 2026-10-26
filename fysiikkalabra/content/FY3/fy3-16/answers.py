@@ -25,13 +25,15 @@ a["fy3-16-L3-01"] = Q_loyly / (c_kivi * 25)               # stones lose it: ΔT 
 # 0,50 kg ice (0 °C) in 2,0 kg water (30 °C): does all ice melt? water gives at most 4190·2,0·30 = 251 400 J > s·0,50 = 167 000 J: yes
 # c_v 2,0 (30 - T) = s 0,50 + c_v 0,50 T  ->  T = (c_v 2,0 · 30 - s 0,50) / (c_v (2,0 + 0,50)) = 84 400 / 10 475 = 8,057 °C
 a["fy3-16-L3-02"] = (c_vesi * 2.0 * 30 - s * 0.50) / (c_vesi * 2.5)
-UA3 = 1.5 * 0.60                                          # bag U A = 0,90 W/K, 1,0 kg ice
-t1 = s * 1.0 / (UA3 * 24); t2 = s * 1.0 / (UA3 * 36)      # 15 463 s and 10 309 s
-a["fy3-16-L3-03"] = (t1 - t2) / 60                        # 5 154 s = 85,9 min -> 86 min
+UA3 = 1.5 * 0.50                                          # bag U A = 1,5 · 0,50 = 0,75 W/K, outside 30 °C -> P = 22,5 W
+E_wall = UA3 * 30 * 6.0 * 3600                            # wall energy in 6,0 h: 22,5 · 21 600 = 486 000 J
+E_drinks = c_vesi * 0.50 * 24                             # 0,50 kg drinks 24 -> 0 °C: 4190 · 0,50 · 24 = 50 280 J
+# freezer ice at -10 °C must warm to 0 °C and melt: (c_ice 10 + s) per kg = 21 000 + 334 000 = 355 000 J/kg
+a["fy3-16-L3-03"] = (E_wall + E_drinks) / (c_jaa * 10 + s)   # m = 536 280 / 355 000 = 1,511 kg -> 1,5 kg
 # Inquiry numerics
 P_tut = 0.90 * 28                                         # tutki graph: U A = 0,90 W/K, ΔT = 28 K -> P = 25,2 W, plateau t = 334 000 / 25,2 = 13 254 s = 3,68 h
-a["tutki-energia"] = 25 * 3.7 * 3600 / 1e3                # E = P t = 25 W · 13 320 s = 333 000 J -> 330 kJ
-a["tutki-loyly"] = r * 0.20 / (0.20 * (c_vesi * 80 + r)) * 100   # share of the vaporization of the löyly energy: 452 / 519,04 = 87,1 %
+a["tutki-energia"] = 25 * 3.7 * 3600 / 1e3                # E = P t = 25 W · 13 320 s = 333 000 J -> 333 kJ
+a["tutki-loyly"] = r * 0.25 / (0.25 * (c_vesi * 90 + r)) * 100   # löyly 0,25 kg, 10 -> 100 °C: 94 275 J + 565 000 J; vaporization share 565 000 / 659 275 = 85,7 % -> 86 %
 a["siirto"] = 0.15 * (c_vesi * 80 + r) / 6000             # 0,15 kg löyly, 6,0 kW: t = 0,15 (335 200 + 2 260 000) / 6000 = 64,9 s -> 65 s
 a["siirto-virhe-ei-hoyrystysta"] = 0.15 * c_vesi * 80 / 6000   # 8,4 s: vaporization forgotten
 a["siirto-virhe-ei-lammitysta"] = 0.15 * r / 6000          # 56,5 s: warming 20 -> 100 °C forgotten

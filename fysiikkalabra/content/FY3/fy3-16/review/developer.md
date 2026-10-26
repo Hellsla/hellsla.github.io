@@ -1,10 +1,8 @@
 VERDICT: DONE
 
-Drafted fy3-16 (round 1, no simulation: the topic is bookkeeping on data and graphs). `check_lesson.py fy3-16` is ok on every line (lint, latex, build, inquiry 40/40, answer positions, layout 360 px; also clean at 1280 and 1920).
-
-- `lesson.md`: Ydinajatus (energy bookkeeping; cooler bag, sauna, coolant), Kaava "Lämpöenergian tase" (Pt = sum of Q, P = UAΔT, t = sm/(UAΔT), P = c(m/t)ΔT, Q lost = Q gained, check-whether-all-ice-melts steps), staged Esimerkki (cooler bag), misconception, summary. Three figures, all labels LaTeX in fig-tex boxes: cooler bag with to-scale energy columns, T(t) plateau graph, coolant loop (schematic).
-- `inquiry.json`: Pohdinta (hook, P = UAΔT retrieval), two predictions (competing models, and a time prediction), three interpret activities (T(t) graph with energy numeric, duration table, löyly table), theory, reflect, example, error-spotting, transfer with 3 hints and mistake feedback, exercises, three checks, exit. The predictions' feedback does not disclose; the evidence is "model values".
-- `exercises.json` (5/4/3), `answers.py` (all answers and inquiry numerics computed), `solutions.md`, `exit-ticket.json`.
-- `meta.json`, `glossary.json`: untouched (no new term needed).
-
-Notes: solutions.md uses LaTeX per the teacher's rule, so lint gives one standing warning ("solutions are plain text"). No lesson ids appear in student text.
+lesson.md: every figure label (bar values, "jää", "sulaa", axis ticks, "jää sulaa", "vesi lämpenee", "moottori", "jäähdytin") now a LaTeX fig-tex foreignObject; figure 4 heat arrow moved inside the engine (combustion heat into the coolant), aria-label updated; "ajan $t$ kuluessa"; "2,4"; the Järkevyys calculations in LaTeX.
+inquiry.json: kayra figure labels as LaTeX, "3,7"; hook ("parin tunnin kuluttua ... eivät enää kylmiä", "alussa sama teho"), reflect, check-1 and its feedback ("aluksi sama"); Dan feedback "eikä muuta sen lämpötilaa"; pred-2 option 3 is now the tempting percent-linear model with repairing feedback, and reflect names that the table rejects it; `loyly` rebuilt: table of givens only (0,25 kg, 10 °C), student computes both energies, answer 86 %, new hints, mistakes (14,3; 6,0) and LaTeX solution.
+exercises.json: c values in L1-05, L2-03, L3-01 in LaTeX; L3-03 replaced (minimum mass of freezer ice at -10 °C with warm drinks, 6,0 h; answer 1,5 kg).
+solutions.md: L1-03 and L3-01 Järkevyys fixed (LaTeX, "kiuas lämmittää kiviä koko ajan"); L3-03 rewritten symbolic-first.
+answers.py: L3-03 and tutki-loyly recomputed; comment "-> 333 kJ".
+check_lesson.py fy3-16: all ok; layout ok at 360/768/1280 px.
