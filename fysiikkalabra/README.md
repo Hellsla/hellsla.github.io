@@ -24,7 +24,8 @@ Inside Claude Code, `/lesson fy3-9` runs one lesson through the pipeline (orches
 (Sonnet; Opus only for demanding physics or a numerical model) writes or fixes, `check_lesson.py` must pass, the
 **science-reviewer** (Opus) and the **pedagogy-reviewer** (Sonnet) judge it independently from packet files, fixes and
 re-reviews for at most three rounds, then a draft pull request with a teacher summary and the measured token usage.
-Agents live in `.claude/agents/`, the commands in `.claude/commands/`.
+Agents live in `.claude/agents/` and the commands in `.claude/commands/` at the repository root (`../.claude/`), so a
+session opened at the root, as a cloud session is, finds them; each starts by working in `fysiikkalabra/`.
 
 ## A new course
 ```

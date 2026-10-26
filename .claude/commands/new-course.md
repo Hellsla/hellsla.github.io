@@ -4,7 +4,7 @@ argument-hint: <FY4>
 model: haiku
 effort: low
 ---
-Initialize course $ARGUMENTS. This prepares the course; it writes no lesson content.
+Initialize course $ARGUMENTS. This prepares the course; it writes no lesson content. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it.
 
 1. `python scripts/new_course.py $ARGUMENTS`. It checks the course's entry in `curriculum.json` against the LOPS 2019 text in `docs/lops2019/`, validates the lesson slots, and creates `content/<CODE>/`, `assets/pics/<slug>/`, `assets/sims/<slug>/` and the `initialized` mark. Run again, it only validates.
 2. If it prints `ERROR`: give the teacher those lines as they are and stop. Never write course goals, central contents or lesson slots yourself: they come from the LOPS texts and the teacher's plan.
