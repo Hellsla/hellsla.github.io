@@ -68,7 +68,7 @@ Nesteiden (ja vakiopaineessa kaasujen) tilavuuden muutos lasketaan samalla taval
 ```latex
 \Delta V = \gamma V_0 \Delta T
 ```
-missä ΔV on tilavuuden muutos (m³), γ tilavuuden lämpötilakerroin (1/K) ja V₀ alkuperäinen tilavuus (m³). Kiinteällä aineella γ ≈ 3α, koska kappale laajenee kaikkiin kolmeen suuntaan: pituus, leveys ja korkeus kasvavat kukin suhteessa αΔT, ja kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa 3αΔT. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen, esimerkiksi muutamia kymmeniä kelvinejä.
+missä ΔV on tilavuuden muutos (m³), γ tilavuuden lämpötilakerroin (1/K) ja V₀ alkuperäinen tilavuus (m³). Kiinteällä aineella γ ≈ 3α, koska kappale laajenee kaikkiin kolmeen suuntaan: pituus, leveys ja korkeus kasvavat kukin suhteessa αΔT, ja kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa 3αΔT. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen, esimerkiksi enintään noin sata kelviniä.
 
 | Aine | α (10⁻⁶ 1/K) |
 | --- | --- |

@@ -130,8 +130,8 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatio on kaasun mikromalli: astiassa liikkuu 80 hiukkasta, jotka kimpoavat seinistä. Kokeile vapaasti, mitä lämpötila ja tilavuus tekevät hiukkasille ja paineelle.",
-      "model": "Malli on yksinkertaistettu: se on kaksiulotteinen, hiukkaset eivät törmää toisiinsa, ja kaikilla hiukkasilla on sama, lämpötilan määräämä nopeus.",
-      "calc": "Paine on suhteellinen luku (100 = 300 K ja 1,0 dm³). *Mitattu* paine lasketaan hiukkasten törmäyksistä seinään viimeisen 1,5 sekunnin ajalta, joten se vaihtelee hieman; *teoria* on mallin laskema arvo."
+      "model": "Malli on yksinkertaistettu: se on kaksiulotteinen, hiukkaset eivät törmää toisiinsa, ja kaikilla hiukkasilla on sama, lämpötilan määräämä nopeus. Kun hiukkaset liikkuvat nopeammin, ne osuvat seinään useammin ja kovempaa. Kun astia on pienempi, ne osuvat seinään useammin. Molemmissa tapauksissa paine kasvaa. Mitattu paine vaihtelee hieman teoria-arvon ympärillä.",
+      "calc": "Paine on suhteellinen luku (100 = 300 K ja 1,0 dm³). *Mitattu* paine lasketaan hiukkasten törmäyksistä seinään viimeisen 1,5 sekunnin ajalta, joten se vaihtelee hieman; *teoria* on mallin laskema arvo. *Nopeus* muuttaa vain animaation tahtia: paine lasketaan simuloidun ajan mukaan, joten se ei muuta mitattua arvoa."
     },
     {
       "id": "exp-1",

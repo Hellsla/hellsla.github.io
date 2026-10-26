@@ -1,7 +1,7 @@
 ok   lint
 ok   latex
 ok   build
-ok   sims
+FAIL sims
 ok   inquiry (61 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px

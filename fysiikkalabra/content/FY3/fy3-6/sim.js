@@ -9,12 +9,14 @@
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. The readout is DOM text: quantities and values only; the
 // model's assumptions and the formulas behind the values are in the lesson's "Mallin oletukset" and "Laskennan selitys"
 // boxes (inquiry.json). Exposes window.simState every frame.
+// Speed control: the animation clock advances by (real frame time)·speed, so "Nopeus" changes only the pace;
+// T, Q and the temperatures at a given point of the animation clock are the same at every speed.
 new p5((p) => {
   const CW = 4190, TAU = 1.5, T_END = 10;                     // water c (J/(kg·K)), time constant (s), animation length (s)
   const MATERIALS = [['vesi', 4190], ['alumiini', 900], ['hiekka', 800], ['rauta', 450], ['kupari', 385]];
   const VES = { x: 30, w: 210, top: 140, bottom: 370, wall: 14 };   // insulated vessel (outer box)
   const CH = { x0: 320, x1: 510, y0: 345, y1: 70 };           // chart area; right margin holds the T label
-  let sMW, lMW, sTW, lTW, sel, lSel, sMB, lMB, sTB, lTB, readout;
+  let sMW, lMW, sTW, lTW, sel, lSel, sMB, lMB, sTB, lTB, sSp, readout;
   let tAnim = 0, running = false, key = '';                   // animation clock (s), state, inputs at last reset
   const inputKey = () => [sMW, sTW, sel, sMB, sTB].map((e) => e.value()).join();
 
@@ -39,6 +41,9 @@ new p5((p) => {
     sel.selected('385');
     [sMB, lMB] = slider(controls, 0.05, 1.00, 0.20, 0.01);    // kappaleen massa (kg)
     [sTB, lTB] = slider(controls, 0, 100, 100, 0.5);          // kappaleen alkulämpötila (°C)
+    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    sSp.selected('1');                                         // pace only: not part of inputKey, so it never resets the run
     readout = p.createDiv('').parent('sim-root').class('readout');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -57,7 +62,7 @@ new p5((p) => {
     const Q = CB * (TB0 - Teq);                                // heat given off by the body (J); equals CW·mW·(Teq − TW0)
     const QW = CWt * (Teq - TW0);                              // heat taken in by the water (J)
     if (inputKey() !== key) { key = inputKey(); tAnim = 0; running = false; }  // any change of the inputs takes the body out again
-    if (running) { tAnim += Math.min(p.deltaTime, 100) / 1000;   // clamped: a resume after an off-screen pause cannot skip the motion
+    if (running) { tAnim += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value());   // clamped: a resume after an off-screen pause cannot skip the motion
                   if (tAnim >= T_END) { tAnim = T_END; running = false; } }
     const immersed = running || tAnim > 0;
     const decay = tAnim >= T_END ? 0 : Math.exp(-tAnim / TAU); // illustrative exponential approach to Teq
