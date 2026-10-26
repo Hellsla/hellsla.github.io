@@ -1,21 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: e97cf2119c84570f
+CONTENT-HASH: b9d35043f608c48a
 
 ## Blocking
 
 ## Polish
-- inquiry.json, ennuste-1 — the hook is now qualitative, but the correct option of Ennuste 2 ("Noin 13 g enemmän … noin 4 kJ") states the mechanism and the size of the effect; it is one of four options, so it is not disclosure, but "noin 4 kJ:n verran vähemmän lämpöä sulattamiseen" could drop the number so the student has to estimate it from Koe 2.
-- Simulation readout under the canvas is five lines of prose at 390 px (Lopputila, Vesi luovuttaa, Jään lämmitys, "Vesi ei riitä …", Lämpömittarit nyt); the legend and bars already show the comparison, so the last two lines could go to the closed boxes.
-- Level 2 task 1 (0,35 kg, 30 °C, 0 °C ice) is close to the opening case and the example; change the data or ask for the melted mass.
-- Workload remains long (two predictions, two experiments, error item, transfer task, 12 exercises, three checks, exit ticket); acceptable, but trim if students report it as more than an hour.
-- Koe tables at 390 px are tight but now read in full ("jää (g)").
+- inquiry.json, ennuste-2 — the correct option still names "noin 4 kJ" and the mechanism; one of four options so not disclosure, but "ja sen verran vähemmän lämpöä jää sulattamiseen" without the number would make Koe 2 the place the student finds it (repeat from round 2).
+- exercises.json, level2 task 1 (0,35 kg, 30 °C, 0 °C ice, all melts) is the same case type as the worked example and the opening glass; ask for the melted mass or change the ice temperature (repeat).
+- Workload is long (two predictions, two experiments, error item, transfer task, 12 exercises, three checks, exit ticket); acceptable, trim if students report more than an hour (repeat).
+- inquiry.json, simulaatio `howto` is one 190-word paragraph (closed box, so allowed); splitting it into usage and "how to read the bars" would help a phone reader.
+- Figure 2 uses ice at −10 °C while the sim default and Ennuste 1 use 0 °C; the figure labels state it, but a short clause in the paragraph ("kuvassa jää on −10-asteista, jotta lämmitys näkyy") would stop a student comparing 35,5 kJ with the 33,4 kJ of the sim.
 
 ## Checked
-- Round-1 blockers fixed: figure 2 now states "vesi 0,30 kg, 20 °C / jää 0,10 kg, −10 °C" in LaTeX, with "lämmitys" and "s m_j" labelled and the bracket "jäätä jää", so 35,5 kJ no longer contradicts 33,4 kJ; figure 3's dot is "alun lasi", explained in the paragraph before the graph.
-- Round-1 polish fixed: example step 4 reads "6,05 °C ≈ 6,0 °C"; hook is qualitative and no longer repeats Ennuste 1; Ennuste 2 option has the number; Koe headers shortened; bars autoscale (the 25,1 vs 33,4 gap is visible in the 390 and 1280 px captures).
-- Opening question is answered (theory, example, reflect, check 3); prior learning retrieved by chapter name, no lesson ids.
-- Predictions can be refuted: Koe 1 at 10/20/40 °C refutes 15 °C and "slightly above 0"; Koe 2 refutes "no extra ice" and "does not melt"; the locked and varied variables are right.
-- Example staged in 5 steps, symbolic first, units in the substitution; exercise levels 5/4/3; error-spotting feedback repairs the misconception.
-- Simulation text sits behind Käyttöohje, Mallin oletukset, Laskennan selitys; sim beside the experiments at 1280 px; legend and speed control present.
-- Figure labels, formulas and calculations are LaTeX; Finnish reads correctly, glossary terms used.
-- 768 px lab-side overflow is the known shared-template issue and not judged here.
+- Sim change judged in captures: readout under the canvas is now three lines at 390 px (round-2 polish done); legend, speed control, closed Käyttöohje / Mallin oletukset / Laskennan selitys present; visible lead is under 30 words; bars autoscale and show the 25,1 vs 33,4 kJ gap with the dimmed "not melted" part.
+- Playwright load of the preview: simState gives Tf 0, iceLeftG 24,7 g, Qv 25 140 J, Qmelt 33 400 J for the opening case, matching the text, figures and feedback.
+- 1280 px lab capture: sim beside both experiments, tables readable; 390 px sim controls reachable, nothing clipped.
+- Figures 1–3 legible at 390 px, labels and formulas LaTeX; numbers match text (0,375 kg and 0,025 kg, 26,6 °C, 35,5 kJ); dot "alun lasi" explained before the graph.
+- Opening question answered in theory, example, reflect and check 3; prior learning retrieved by chapter name, no lesson ids in student text.
+- Predictions refutable: Koe 1 at 10/20/40 °C refutes 15 °C and "slightly above 0"; Koe 2 refutes "no extra ice" and "does not melt"; locked and varied variables right.
+- Spot-checked arithmetic: example (25,1 / 17,5 kJ, 6,05 °C), L3-02 281 g, L3-03 −3,5 °C, transfer task 39,9 g, check 2 (40 °C).
+- Example staged in 5 steps, symbolic first, units in the substitution; levels 5/4/3; error-spotting feedback repairs the sign and assumption misconception.
+- Finnish reads correctly; glossary terms used; 768 px overflow is the known shared-template issue, not judged.
