@@ -13,8 +13,8 @@ window.AgentOfficeScene = {
       {id:'repository',x:662,y:535,w:240,h:247,title:'PUBLICATION DECISION',sub:'The teacher decides',floor:'#4d5947',accent:C.green},
       {id:'site',x:916,y:535,w:266,h:247,title:'THE WEBSITE',sub:'A separate deployment',floor:'#4e525e',accent:'#c0b5db'}
     ];
-    const home = {teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],gatekeeper:[739,425]};
-    const colors = {teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,gatekeeper:'#a9bec6'};
+    const home = {teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668]};
+    const colors = {teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f'};
     let figurePositions=[];
     function box(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),w,h);}
     function text(s,x,y,color=C.ink,size=13,align='left') {ctx.font=`${size}px monospace`;ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(s,x,y);}
@@ -58,11 +58,6 @@ window.AgentOfficeScene = {
       const t=lengths[i]?d/lengths[i]:0;
       return [points[i][0]+(points[i+1][0]-points[i][0])*t,points[i][1]+(points[i+1][1]-points[i][1])*t];
     }
-    function lane(points,color,blocked=false){
-      ctx.strokeStyle=color;ctx.lineWidth=3;ctx.setLineDash(blocked?[3,8]:[8,7]);ctx.beginPath();ctx.moveTo(...points[0]);for(const p of points.slice(1))ctx.lineTo(...p);ctx.stroke();ctx.setLineDash([]);
-      const a=points.at(-2),b=points.at(-1),angle=Math.atan2(b[1]-a[1],b[0]-a[0]);
-      ctx.beginPath();ctx.moveTo(...b);ctx.lineTo(b[0]-10*Math.cos(angle-.5),b[1]-10*Math.sin(angle-.5));ctx.lineTo(b[0]-10*Math.cos(angle+.5),b[1]-10*Math.sin(angle+.5));ctx.closePath();ctx.fillStyle=color;ctx.fill();
-    }
     const journeys={
       brief:[[150,668],[173,535],[173,335],[230,335],[212,202]],
       checks:[[212,202],[230,335],[495,335],[495,654]],
@@ -71,8 +66,8 @@ window.AgentOfficeScene = {
       scienceReport:[[605,202],[610,325],[672,325],[716,425],[672,325],[610,325],[605,202]],
       pedagogyReport:[[990,202],[990,375],[830,375],[773,425],[830,375],[990,375],[990,202]],
       fix:[[212,202],[230,475],[682,475],[716,425],[682,475],[230,475],[212,202]],
-      receive:[[150,668],[173,502],[736,502],[739,444],[789,502],[789,664]],
-      home:[[789,664],[789,502],[173,502],[150,668]]
+      receive:[[150,668],[173,502],[736,502],[739,444],[789,502],[789,580],[849,690]],
+      home:[[849,690],[789,580],[789,502],[173,502],[150,668]]
     };
     function actors(state){
       const cycle=options.phase()%42,step=Math.floor(cycle/7),f=(cycle%7)/7;
@@ -88,7 +83,7 @@ window.AgentOfficeScene = {
         if(step===5 && state.eligible)walk('teacher',journeys.home,f);
       }
       figurePositions=[];
-      for(const [i,id] of ['developer','science','pedagogy','teacher'].entries()){
+      for(const [i,id] of ['developer','science','pedagogy','teacher','repository'].entries()){
         const [x,y]=positions[id];person(x,y,colors[id],moving[id],i);
         figurePositions.push({id,x,y});
         if(moving[id])pill(id==='teacher'?'TEACHER':id.toUpperCase(),x,y+54,colors[id],id.length*8+24);
@@ -109,16 +104,16 @@ window.AgentOfficeScene = {
     }
     function gate(state){
       const open=Boolean(state?.eligible),color=!state?C.muted:open?C.green:C.red;
+      const needsRevision=state && ['science','pedagogy'].some(role=>['FAIL','stale','invalid'].includes(state[role].status));
       const approvals=state?['science','pedagogy'].filter(r=>state[r].status==='PASS').length:'–';
-      box(695,397,137,79,'#29383b');box(695,397,137,4,color);
-      person(724,426,'#a9bec6',false,4);box(709,399,28,6,'#324d59');box(707,405,33,3,'#617f8a');box(719,400,7,4,C.gold);
-      box(701,427,17,24,'#ad946c');box(704,431,11,16,'#eee1bd');
-      ['science','pedagogy'].forEach((r,i)=>box(706,434+i*6,6,3,state?.[r].status==='PASS'?C.green:C.red));
-      text('REVIEW GATE',768,385,C.ink,13,'center');
-      pill(!state?'WAITING':open?'OPEN':'CLOSED',796,430,color,70);text(`${approvals}/2 PASS`,793,452,color,11,'center');
-      box(786,476,5,28,'#687b76');
-      box(739,434,13,6,'#a9bec6');box(749,432,7,7,'#d3b18d');
-      if(open)box(787,471,5,28,'#b9c8ad');else{box(752,427,3,11,'#a18d6b');box(747,416,13,12,C.red);box(750,420,7,3,'#f0e3c6');box(791,477,41,6,'#c99b87');for(let x=795;x<832;x+=11)box(x,477,4,6,'#eddec4');}
+      // An ordinary office colleague at a paper-covered desk, not a guard.
+      box(695,405,137,35,'#9b8262');box(695,435,137,7,'#b9a07a');
+      box(700,442,7,31,'#5a5042');box(820,442,7,31,'#5a5042');box(710,474,33,24,'#33484b');
+      box(701,419,17,24,'#ad946c');box(704,423,11,16,'#eee1bd');
+      ['science','pedagogy'].forEach((r,i)=>box(706,426+i*6,6,3,state?.[r].status==='PASS'?C.green:C.red));
+      text('REVIEW DESK',768,385,C.ink,13,'center');
+      pill(open?'READY':needsRevision?'REVISE':'WAITING',796,424,color,70);text(`${approvals}/2 PASS`,793,456,color,11,'center');
+      person(735,447,'#c3af94',false,5);
     }
     function site(state){
       box(953,596,191,116,'#26323a');box(959,602,179,102,'#e1dfce');box(959,602,179,17,'#607d77');
@@ -143,21 +138,11 @@ window.AgentOfficeScene = {
         pill(status==='PASS'?'PASS · SAME VERSION':status.toUpperCase(),x,257,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
       }
       plant(380,245);plant(753,245);plant(1148,245);
-      // Teacher's planning room and the deliberately empty sign-off desk share one human.
+      // The publication role is represented by a seated colleague throughout the journey.
       desk(150,656,C.gold);box(42,595,34,42,'#d9d3ba');text('?',59,624,'#60756a',24,'center');
       shelf(207,595,90);plant(53,745);text('BRIEF & ASSIGN',173,743,C.gold,12,'center');
       desk(789,656,C.green);box(732,711,116,28,'#243631');text(options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,C.amber,10,'center');
       if(options.event()?.merge)text('Approver unverified',790,757,C.muted,10,'center');
-      // Lesson routes use the shared corridor, never walls or the other reviewer's desk.
-      lane([[173,535],[173,325],[230,325],[230,288]],'#c6ad78');
-      lane([[249,288],[249,357],[471,357],[471,535]],'#c6ad78');
-      lane([[495,535],[495,320],[610,320],[610,288]],'#86acc2');
-      lane([[522,535],[522,345],[990,345],[990,288]],'#bd93a7');
-      lane([[632,288],[632,370],[714,397]],state?.science.status==='PASS'?'#8cb8e0':'#96877b');
-      lane([[1020,288],[1020,370],[818,397]],state?.pedagogy.status==='PASS'?'#e9a1b4':'#96877b');
-      if(state?.eligible)lane([[789,505],[789,535]],C.green);else if(state)lane([[695,455],[652,485],[272,485],[272,288]],'#cf957c');
-      // The final link is a proposed route, not a claim of deployment.
-      lane([[902,658],[953,658]],C.amber,true);pill('DEPLOY ?',927,704,C.amber,89);
       pill('2 · CHECK',484,508,C.amber,132);pill('3 · INDEPENDENT REVIEWS',779,318,C.ink,259);
       pill('5 · HUMAN DECISION',790,516,C.gold,197);text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
       box(28,398,314,52,'#2f3e3e');text('ONE LESSON. TWO INDEPENDENT REVIEWS.',185,419,C.ink,12,'center');
