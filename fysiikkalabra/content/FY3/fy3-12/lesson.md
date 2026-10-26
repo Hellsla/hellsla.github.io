@@ -96,12 +96,9 @@
   <circle cx="1038.5" cy="430" r="1.66823" fill="#ffffff"/>
   <circle cx="185" cy="184.5" r="1.67186" fill="#ffffff"/>
   <circle cx="-60" cy="300" r="260" fill="url(#fy312h-sun)"/>
-  <path d="M290,186 L436,186 L436,195 L460,180 L436,165 L436,174 L290,174 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M290,306 L436,306 L436,315 L460,300 L436,285 L436,294 L290,294 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M290,426 L436,426 L436,435 L460,420 L436,405 L436,414 L290,414 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M987.5,180.5 L1096.5,100 L1101.5,107 L1112,81 L1084,83 L1089,90.5 L980.5,171 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1022,306 L1168,306 L1168,315 L1192,300 L1168,285 L1168,294 L1022,294 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M980.5,429 L1089,509.5 L1084,517 L1112,519 L1101.5,493 L1096.5,500 L987.5,419.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M240,186 L446,186 L446,195 L470,180 L446,165 L446,174 L240,174 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M240,306 L446,306 L446,315 L470,300 L446,285 L446,294 L240,294 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M240,426 L446,426 L446,435 L470,420 L446,405 L446,414 L240,414 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="800" cy="300" r="224.5" fill="#a5d8ff" fill-opacity="0.35"/>
   <circle cx="800" cy="300" r="210" fill="url(#fy312h-ocean)"/>
   <g clip-path="url(#fy312h-clip)">

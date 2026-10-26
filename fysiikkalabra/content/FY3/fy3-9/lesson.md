@@ -19,7 +19,7 @@
   <rect x="170" y="80" width="420" height="60" rx="14" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <path d="M60,430 H760 L720,480 H100 Z" fill="#c9c2b2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <rect x="100" y="480" width="620" height="16" fill="#6b7480"/>
-  <path d="M260,250 Q206,335 262,420 Q380,462 500,420 Q556,335 500,250 Q380,208 260,250 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M260,250 Q250,320 262,420 Q380,438 500,420 Q512,320 500,250 Q380,234 260,250 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M248,246 H512 L506,268 H254 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <path d="M252,412 H508 L514,434 H246 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <path d="M300,300 Q380,284 460,300" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>

@@ -32,7 +32,7 @@ def hero():
     for k in range(11):
         a = H.math.radians(140 + k * 26)
         f.line(860 + 58 * H.math.cos(a), 120 + 58 * H.math.sin(a), 860 + 68 * H.math.cos(a), 120 + 68 * H.math.sin(a), H.MUTED, 2.5)
-    f.path("M860,120 L900,72", stroke=H.INK, w=5, extra='stroke-linecap="round"')
+    f.path("M860,120 L900,72", stroke=H.HOT, w=5, extra='stroke-linecap="round"')
     f.circle(860, 120, 8, H.INK)
     f.rect(780, 120, 12, 300, H.IRON)
     f.rect(740, 408, 92, 12, H.IRON, rx=3)

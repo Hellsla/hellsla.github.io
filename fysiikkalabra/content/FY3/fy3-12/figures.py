@@ -114,11 +114,8 @@ def hero():
     f.defs_add(f'<radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="{H.HEAT_LIGHT}"/>'
                f'<stop offset="0.8" stop-color="{H.HEAT}"/><stop offset="1" stop-color="{H.HEAT}" stop-opacity="0"/></radialGradient>')
     f.circle(-60, 300, 260, "url(#fy312h-sun)")
-    for y in (180, 300, 420):                                         # sunlight in ...
-        f.block_arrow(290, y, 460, y, H.HEAT_LIGHT, 12, 30, 24)
-    for deg in (-34, 0, 34):                                          # ... and as much radiated out: equal arrows
-        c, s_ = H.math.cos(H.math.radians(deg)), H.math.sin(H.math.radians(deg))
-        f.block_arrow(800 + 222 * c, 300 + 222 * s_, 800 + 392 * c * (0.96 if deg else 1), 300 + 392 * s_, H.HEAT_LIGHT, 12, 30, 24)
+    for y in (180, 300, 420):
+        f.block_arrow(240, y, 470, y, H.HEAT_LIGHT, 12, 30, 24)
     H.earth(f, "fy312h", 800, 300, 210)
     return f.svg()
 
