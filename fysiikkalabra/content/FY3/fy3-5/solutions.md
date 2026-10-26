@@ -74,7 +74,7 @@
 **Annettu:** systeemi on pumpun ilma (määrä ei muutu); F = 120 N, s = 0,15 m, lämpötila vakio
 **Kysytty:** Q
 **Kaava:** W = F s ja ΔU = Q + W
-**Sijoitus:** Kaasun sisäenergia riippuu käytännössä vain sen lämpötilasta ja määrästä. Kumpikaan ei muutu, joten ΔU = 0. W = 120 N · 0,15 m = 18 J (työtä tehdään ilmaan). 0 = Q + 18 J, joten Q = −18 J
+**Sijoitus:** Ideaalikaasun sisäenergia riippuu vain sen lämpötilasta ja määrästä. Kumpikaan ei muutu, joten ΔU = 0. W = 120 N · 0,15 m = 18 J (työtä tehdään ilmaan). 0 = Q + 18 J, joten Q = −18 J
 **Vastaus:** −18 J
 **Järkevyys:** Koska mäntää painetaan hitaasti, työn tuoma energia ehtii siirtyä lämpönä pumpun seinien kautta huoneeseen. Nopeasti painettaessa lämpö ei ehtisi siirtyä, ja pumppu kuumenisi.
 
@@ -90,6 +90,6 @@
 **Annettu:** systeemi on kaasu; tapa A: Q_A = +400 J, W_A = −150 J (kaasu tekee työtä); tapa B: W_B = −60 J; sama alku- ja loppulämpötila, sama kaasun määrä
 **Kysytty:** Q_B
 **Kaava:** ΔU = Q + W, joten Q = ΔU − W
-**Sijoitus:** Kaasun sisäenergia riippuu käytännössä vain sen lämpötilasta ja määrästä, jotka ovat molemmissa tavoissa alussa ja lopussa samat, joten ΔU_B = ΔU_A. ΔU_A = 400 J + (−150 J) = 250 J. Q_B = 250 J − (−60 J) = 310 J
+**Sijoitus:** Ideaalikaasun sisäenergia riippuu vain sen lämpötilasta ja määrästä, jotka ovat molemmissa tavoissa alussa ja lopussa samat, joten ΔU_B = ΔU_A. ΔU_A = 400 J + (−150 J) = 250 J. Q_B = 250 J − (−60 J) = 310 J
 **Vastaus:** 310 J
 **Järkevyys:** Tavassa B kaasu tekee vähemmän työtä, joten sama sisäenergian kasvu 250 J syntyy pienemmällä lämpömäärällä kuin tavassa A (310 J < 400 J). Lämpö ja työ riippuvat tavasta, sisäenergian muutos vain alku- ja lopputilasta.

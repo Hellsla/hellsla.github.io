@@ -16,7 +16,7 @@
 // pressure on the piston itself (x direction only) is higher after an insulated push (Lisätietoja says so).
 // Piston speeds: hidas 4 px/s (≈ 1/50 of the mean particle speed 213 px/s, nearly the adiabatic limit T → 407 K),
 // nopea 60 px/s (≈ 1/3,5): the particles meet the advancing piston at a higher relative speed, the gas pushes back
-// harder, and the same stroke takes more work (47,3 J against 40,8 J); ΔT = W/C in both, since Q = 0.
+// harder, and the same stroke takes more work (47,2 J against 40,8 J); ΔT = W/C in both, since Q = 0.
 // A push from the untouched initial state (V = 100 %, W = Q = 0) first re-seeds the gas, so every such push gives the
 // same numbers whenever it is started. Fixed physics step 1/240 s, seeded PRNG (mulberry32): frame-rate independent.
 // Picture: particle colour = speed; a particle that has just hit the moving piston gets a long bright trail and a green
