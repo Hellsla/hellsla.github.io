@@ -6,6 +6,11 @@
 //   water boils   Q = r m          (100 °C plateau, r = 2260 kJ/kg)
 //   steam warms   Q = c_höyry m ΔT (100 → 130 °C,  c_höyry = 2000 J/(kg·K)), where the animation stops.
 // On a plateau the energy breaks the bonds between particles, so T stays constant; the plateau lasts sm/P or rm/P.
+// Pressure (made explicit 2026-10-26): every value above is the 101 kPa value (boiling at 100 °C, r at 100 °C, c of
+// steam at constant pressure), so the system is the water in a vessel closed by a light, freely moving piston: the
+// pressure stays at 101 kPa and the steam stays in the system, expanding under the piston (not to scale: about 1700
+// times the volume of the water). In an open pot the steam would escape; in a rigid closed vessel the pressure and the
+// boiling temperature would rise and there would be no plateau at exactly 100 °C. The piston is drawn on the vessel.
 // Every duration is proportional to m/P, so the chart's t axis is scaled to the current end time and printed.
 // Time runs 60 times faster than real time at the normal speed; the "Nopeus" select scales that pace (hidas 30×,
 // nopea 120×) and nothing else: Q = P t and every value follow the simulated time t. The sliders are locked while heating (so Q = P t holds for the whole run),
@@ -125,6 +130,7 @@ new p5((p) => {
     for (let i = 0; i < nIce; i++) p.rect(bx + 4 + (i % 5) * 30, bb - 30 - Math.floor(i / 5) * 30, 26, 26, 4);
     p.noFill(); p.stroke(60); p.strokeWeight(3);
     p.line(BK.x, BK.top - 10, BK.x, BK.bottom); p.line(BK.x, BK.bottom, BK.x + BK.w, BK.bottom); p.line(BK.x + BK.w, BK.bottom, BK.x + BK.w, BK.top - 10);
+    p.stroke(60); p.strokeWeight(1.5); p.fill(150, 156, 166); p.rect(bx, BK.top - 9, inner, 9, 2);   // the light piston that keeps p = 101 kPa
 
     // heater: glows while heating, brighter for a larger power; its label starts at the heater's left end
     const glow = running ? 0.4 + 0.6 * P / 3000 : 0;

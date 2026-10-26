@@ -37,7 +37,8 @@
           "text": "Sitä ei voi päätellä ilman veden lämpötilaa.",
           "feedback": "Ensimmäinen pääsääntö riittää: $\\Delta U = Q + W$, ja tässä $Q = 0$ ja $W = 0$ joka minuutti. Lämpötilaa ei tarvita sen päättelemiseen, muuttuuko sisäenergia."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -140,7 +141,8 @@
             "feedback": "Avaruuteen energia lähtee vain säteilynä, koska tyhjiössä ei ole hiukkasia, joiden kautta lämpö johtuisi. Taulukon mallissa maanpinta luovuttaa energiaa vain säteilemällä, ja ero näkyy siinä, kuinka paljon säteilyä pinnalle tulee."
           }
         ]
-      }
+      },
+      "source": "model"
     },
     {
       "id": "epatasapaino",
@@ -170,7 +172,22 @@
           }
         ],
         "solution": "Heti muutoksen jälkeen ylimäärä on $3{,}6\\,\\text{W/m}^2$, ja jokainen lämpenemisen kelvin kasvattaa lähtevää tehoa $1{,}2\\,\\text{W/m}^2$. Tasapaino palautuu, kun $\\Delta T = \\dfrac{3{,}6\\,\\text{W/m}^2}{1{,}2\\,\\text{W/(m}^2\\text{K)}} = 3{,}0\\,\\text{K}$. Silloin lähtee $236{,}4\\,\\text{W/m}^2 + 3{,}6\\,\\text{W/m}^2 = 240{,}0\\,\\text{W/m}^2$. Lämpeneminen jatkuu siis vielä pitkään sen jälkeen, kun pitoisuus on lakannut kasvamasta, mutta se pysähtyy uuteen tasapainoon."
-      }
+      },
+      "source": "model"
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miksi lisätty hiilidioksidi lämmittää?",
+      "prompt": "Kirjoita taulukoiden perusteella lyhyesti, miksi maanpinta on ilmakehän kanssa lämpimämpi ja mitä tapahtuu, kun hiilidioksidia lisätään. Käytä sanoja *tasapaino*, *ylimäärä* ja *lämpeneminen*.",
+      "model": "Ilmakehän kanssa maanpinnalle tulee Auringon $240\\,\\text{W/m}^2$:n lisäksi ilmakehän säteilyä $150\\,\\text{W/m}^2$, ja tasapainossa pinta säteilee yhtä paljon eli $390\\,\\text{W/m}^2$. Se onnistuu vain lämpimämmältä pinnalta, $+15\\,{}^\\circ\\text{C}$ eikä $-18\\,{}^\\circ\\text{C}$. Ilmakehä ei tuota energiaa, vaan palauttaa osan pinnan säteilystä. Kun hiilidioksidia lisätään, avaruuteen lähtee aluksi vähemmän kuin imeytyy ($3{,}6\\,\\text{W/m}^2$ ylimäärä). Ylimäärä lämmittää maapalloa, ja lämpenevä maapallo säteilee enemmän, joten ylimäärä pienenee. Uusi tasapaino saavutetaan, kun lämpenemistä on $3{,}6 / 1{,}2 = 3{,}0\\,\\text{K}$. Taulukot ovat yksinkertaisen mallin esimerkkiarvoja; todelliset arvot perustuvat satelliitti- ja pintamittauksiin ja ilmastomalleihin.",
+      "criteria": [
+        "Selitin lämpimämmän pinnan energiataseella (tuleva = lähtevä).",
+        "Totesin, ettei ilmakehä tuota energiaa.",
+        "Kuvasin ylimäärän pienenemisen lämpenemisen myötä ja uuden tasapainon.",
+        "Erotin mallin esimerkkiarvot mittauksista."
+      ]
     },
     {
       "id": "theory",
@@ -190,7 +207,8 @@
       "predictions": [
         "pred-1",
         "pred-2"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -224,7 +242,8 @@
           "text": "Laskussa ei ole virhettä.",
           "feedback": "Tarkista lämpötilaero. Sisältä 20 °C:sta ulos −10 °C:een on matkaa enemmän kuin 10 astetta: ensin nollaan 20 astetta ja siitä vielä 10 astetta pakkaselle."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -250,7 +269,8 @@
           "feedback": "Tämä on vastaus wattitunteina. Kilowattitunti on 1000 wattituntia, joten $460{,}8\\,\\text{Wh} \\approx 0{,}46\\,\\text{kWh}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Lämpö johtuu lämpimästä keittiöstä kylmään jääkaappiin teholla $P = UA\\Delta T$, ja vuorokaudessa siirtyy energia\n\n$$E = Pt = UA\\Delta T\\,t$$\n\n**Sijoitus.** $\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$, joten $P = 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19{,}2\\,\\text{W}$ ja $E = 0{,}0192\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 0{,}46\\,\\text{kWh}$.\n\n**Järkevyys.** Jääkaappi on energiatasapainossa vain, jos koneisto siirtää saman energian ulos. Teho on vain noin 20 W, koska jääkaapin lämpötilaero on pieni ja seinät ovat hyvin eristetyt. Oven avaaminen lisää tarvetta, koska lämmin ilma pääsee konvektiolla sisään."
+      "solution": "**Ratkaisu symbolisesti.** Lämpö johtuu lämpimästä keittiöstä kylmään jääkaappiin teholla $P = UA\\Delta T$, ja vuorokaudessa siirtyy energia\n\n$$E = Pt = UA\\Delta T\\,t$$\n\n**Sijoitus.** $\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$, joten $P = 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19{,}2\\,\\text{W}$ ja $E = 0{,}0192\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 0{,}46\\,\\text{kWh}$.\n\n**Järkevyys.** Jääkaappi on energiatasapainossa vain, jos koneisto siirtää saman energian ulos. Teho on vain noin 20 W, koska jääkaapin lämpötilaero on pieni ja seinät ovat hyvin eristetyt. Oven avaaminen lisää tarvetta, koska lämmin ilma pääsee konvektiolla sisään.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -308,7 +328,8 @@
           "feedback": "150 W/m² on ilmakehän alas säteilemä teho. Avaruuteen lähtevän 240 W/m²:n on koostuttava suoraan läpi päässeestä 100 W/m²:stä ja ilmakehän ylöspäin säteilemästä tehosta."
         }
       ],
-      "solution": "Avaruuteen lähtee $100\\,\\text{W/m}^2 + P_\\text{ylös} = 240\\,\\text{W/m}^2$, joten $P_\\text{ylös} = 140\\,\\text{W/m}^2$. Tarkistus: ilmakehä imee $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$ ja säteilee $150\\,\\text{W/m}^2 + 140\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$, joten myös ilmakehä on tasapainossa. Se säteilee alas hieman enemmän kuin ylös, koska alempi ilma on lämpimämpää."
+      "solution": "Avaruuteen lähtee $100\\,\\text{W/m}^2 + P_\\text{ylös} = 240\\,\\text{W/m}^2$, joten $P_\\text{ylös} = 140\\,\\text{W/m}^2$. Tarkistus: ilmakehä imee $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$ ja säteilee $150\\,\\text{W/m}^2 + 140\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$, joten myös ilmakehä on tasapainossa. Se säteilee alas hieman enemmän kuin ylös, koska alempi ilma on lämpimämpää.",
+      "optional": true
     },
     {
       "id": "check-3",

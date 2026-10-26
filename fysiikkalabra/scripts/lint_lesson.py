@@ -284,7 +284,7 @@ def check_solutions(L, folder, answers):
         for lab in LABELS:
             if f"**{lab}" not in body: L.warn("solutions.md", line, f"{eid}: no '**{lab}:**' step")
         for lab in ("Kaava", "Sijoitus"):
-            k = re.search(rf"\*\*{lab}:?\*\*:?([^\n]*)", body)
+            k = re.search(rf"\*\*{lab}:?\*\*:?(.*?)(?=\n\*\*|\Z)", body, re.S)   # the step runs to the next label: a display $$ block on the next line counts
             if k and "$" not in k.group(1):
                 L.page("solutions.md", line, f"{eid}: the {lab} step is plain text; write the calculation in LaTeX, $p = \\dfrac{{F}}{{A}}$ (teacher's rule 2026-10-26, NOTES 1)")
         body = tex_plain(body)

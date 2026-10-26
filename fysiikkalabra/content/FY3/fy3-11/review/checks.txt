@@ -2,7 +2,7 @@ ok   lint
 ok   latex
 ok   build
 ok   sims
-ok   inquiry (62 passed, 0 failed)
+ok   inquiry (65 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 fy3-11: draft (science=stale, pedagogy=stale)

@@ -17,7 +17,7 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa edelliseltä tunnilta",
+      "title": "Kertaa: lämpö ja sisäenergia",
       "prompt": "Kuuma kuparikappale upotetaan eristetyssä astiassa olevaan kylmään veteen. Mikä kuvaus on fysikaalisesti oikea?",
       "choices": [
         {
@@ -37,7 +37,8 @@
           "text": "Energiaa siirtyy, kunnes kuparin ja veden sisäenergiat ovat yhtä suuret.",
           "feedback": "Lämmön siirtyminen pysähtyy, kun *lämpötilat* ovat samat. Sisäenergia riippuu myös aineen määrästä ja laadusta, joten tasapainossa sisäenergiat ovat yleensä erisuuret."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "ennuste-1",
@@ -191,6 +192,24 @@
       "min": 2
     },
     {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä ratkaisee loppulämpötilan?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miksi vesikappale lämmitti kalorimetrin vettä enemmän kuin yhtä painava hiekkakappale? Millä massalla loppulämpötila oli alkulämpötilojen keskiarvo, ja miksi? Mikä suure ratkaisee, kumman lämpötila muuttuu enemmän?",
+      "model": "Hiekkakappaleella loppulämpötila oli noin $27\\,{}^\\circ\\text{C}$, vesikappaleella noin $44\\,{}^\\circ\\text{C}$, vaikka massat ja alkulämpötilat olivat samat. Vedellä on suurempi ominaislämpökapasiteetti, joten $80$-asteinen vesi luovuttaa jäähtyessään paljon enemmän energiaa kuin hiekka. Kokeessa 2 loppulämpötila oli keskiarvo $55\\,{}^\\circ\\text{C}$, kun kuumaa ja kylmää vettä oli yhtä paljon ($0{,}50\\,\\text{kg}$). Kuumemman luovuttama lämpömäärä on yhtä suuri kuin kylmemmän vastaanottama, joten sen lämpötila muuttuu vähemmän, jolla on suurempi lämpökapasiteetti $C = cm$. Arvot ovat mallin laskemia: mallissa lämpöä ei siirry ympäristöön, ja oikeassa kalorimetrissä loppulämpötila jää hieman pienemmäksi.",
+      "criteria": [
+        "Vertasin lukuja ja selitin eron ominaislämpökapasiteetilla.",
+        "Selitin, milloin loppulämpötila on keskiarvo.",
+        "Käytin lämpökapasiteettia $C = cm$ ja energian säilymistä.",
+        "Mainitsin mallin oletuksen, ettei lämpöä siirry ympäristöön."
+      ]
+    },
+    {
       "id": "teoria-osa",
       "stage": "selita",
       "type": "theory",
@@ -208,7 +227,8 @@
       "predictions": [
         "ennuste-1",
         "ennuste-2"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "esimerkki",
@@ -242,7 +262,8 @@
           "text": "Laskussa ei ole virhettä; vesi jäähtyy, koska alumiinin lämpökapasiteetti on pieni.",
           "feedback": "Vesi on kylmempi osapuoli, joten se voi vain lämmetä. Loppulämpötilan on oltava alkulämpötilojen 20 °C ja 100 °C välissä; 6,6 °C on mahdoton tulos."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -268,7 +289,8 @@
           "feedback": "Laskit kuuman veden lämpötilan muutokseksi $60\\,{}^\\circ\\text{C} - 30\\,{}^\\circ\\text{C}$. Kuuma vesi jäähtyy loppulämpötilaan 38 °C asti, joten sen muutos on $60\\,{}^\\circ\\text{C} - 38\\,{}^\\circ\\text{C} = 22\\,\\text{K}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama:\n\n$$c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$$\n\njosta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Sijoitus.** $m_\\text{k} = \\dfrac{80\\,\\text{kg} \\cdot 8\\,\\text{K}}{22\\,\\text{K}} \\approx 29\\,\\text{kg}$.\n\n**Järkevyys.** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu 22 K ja ammeen veden vain 8 K. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän."
+      "solution": "**Ratkaisu symbolisesti.** Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama:\n\n$$c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$$\n\njosta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Sijoitus.** $m_\\text{k} = \\dfrac{80\\,\\text{kg} \\cdot 8\\,\\text{K}}{22\\,\\text{K}} \\approx 29\\,\\text{kg}$.\n\n**Järkevyys.** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu 22 K ja ammeen veden vain 8 K. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän.",
+      "optional": true
     },
     {
       "id": "harjoitukset",
@@ -335,7 +357,8 @@
         "Kytken järven ympäristöön: syksyllä järvi luovuttaa lämpöä ilmaan, keväällä se sitoo lämpöä ja lämpenee hitaasti.",
         "Mainitsen, että järvessä on myös paljon vettä, joten sen lämpökapasiteetti $C = cm$ on suuri."
       ],
-      "model": "Veden ominaislämpökapasiteetti, 4190 J/(kg·K), on noin viisinkertainen hiekkaan verrattuna, ja järvessä on valtava määrä vettä, joten järven lämpökapasiteetti $C = cm$ on hyvin suuri. Yhtälön $Q = cm\\Delta T$ mukaan suuri lämpömäärä muuttaa sen lämpötilaa vain vähän. Kesällä järvi varastoi paljon energiaa, ja syksyllä se jäähtyy hitaasti ja luovuttaa lämpöä rannan ilmaan, joten yöt ovat lauhempia. Keväällä järvi on vielä kylmä ja lämpenee hitaasti, joten se jäähdyttää rannan ilmaa. Maa sen sijaan lämpenee ja jäähtyy nopeasti."
+      "model": "Veden ominaislämpökapasiteetti, 4190 J/(kg·K), on noin viisinkertainen hiekkaan verrattuna, ja järvessä on valtava määrä vettä, joten järven lämpökapasiteetti $C = cm$ on hyvin suuri. Yhtälön $Q = cm\\Delta T$ mukaan suuri lämpömäärä muuttaa sen lämpötilaa vain vähän. Kesällä järvi varastoi paljon energiaa, ja syksyllä se jäähtyy hitaasti ja luovuttaa lämpöä rannan ilmaan, joten yöt ovat lauhempia. Keväällä järvi on vielä kylmä ja lämpenee hitaasti, joten se jäähdyttää rannan ilmaa. Maa sen sijaan lämpenee ja jäähtyy nopeasti.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

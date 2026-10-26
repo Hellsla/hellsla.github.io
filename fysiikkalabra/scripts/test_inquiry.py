@@ -254,19 +254,20 @@ check("pilot validates", inquiry.validate(folder, good, lesson_md) == [], str(in
 
 def errs_of(mutate):
     d = copy.deepcopy(good); mutate(d); return inquiry.validate(folder, d, lesson_md)
+def act(d, aid): return next(a for a in d["activities"] if a["id"] == aid)   # by id: inserting an activity must not shift the tests
 
 e = errs_of(lambda d: d.__setitem__("version", 2)); check("wrong version named", any("version" in x and x.startswith("fy3-2 inquiry.json") for x in e), str(e))
 e = errs_of(lambda d: d["activities"][2]["choices"][1].pop("feedback")); check("missing feedback names lesson, activity and choice", any("activities[2].choices[1].feedback" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"][2].__setitem__("reveal", {"after": "nope"})); check("reveal must point at an experiment", any("reveal.after" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][6]["locked"].append("s")); check("varied parameter cannot be locked", any("locked" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][9]["sections"].append("Ei ole")); check("theory section must exist in lesson.md", any("Ei ole" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][9]["sections"].append("Esimerkki")); check("a section placed twice is an error", any("more than once" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "exp-1")["locked"].append("s")); check("varied parameter cannot be locked", any("locked" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "theory")["sections"].append("Ei ole")); check("theory section must exist in lesson.md", any("Ei ole" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "theory")["sections"].append("Esimerkki")); check("a section placed twice is an error", any("more than once" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"].append(dict(d["activities"][0]))); check("duplicate id is an error", any("used twice" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"][0].__setitem__("stage", "lopuksi")); check("unknown stage is an error", any("stage" in x for x in e), str(e))
 e = errs_of(lambda d: [c.__setitem__("correct", False) for c in d["activities"][1]["choices"]]); check("a choice needs one correct option", any('"correct": true' in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][13].__setitem__("hints", ["a", "b", "c", "d"])); check("at most three hints", any("hints" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][13].__setitem__("answer", "240")); check("numeric answer must be a number", any("answer" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][17].pop("model")); check("explain needs a model answer", any("model" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "siirto").__setitem__("hints", ["a", "b", "c", "d"])); check("at most three hints", any("hints" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "siirto").__setitem__("answer", "240")); check("numeric answer must be a number", any("answer" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "check-3").pop("model")); check("explain needs a model answer", any("model" in x for x in e), str(e))
 types = {a["type"] for a in good["activities"]}
 check("pilot exercises every implemented type but text", types >= set(inquiry.TYPES) - {"text"}, str(set(inquiry.TYPES) - types))
 named = lesson_md.replace("\n## Kaava\n", "\n## Kaava: Työ ja teho\n")
@@ -349,7 +350,11 @@ with sync_playwright() as pw:
     # the Ennusta box: closed at first, opened by its summary
     fold = pg.locator("details.fold")
     check("predictions hidden in a closed box at first", not fold.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
-    fold.locator("summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-1 button.commit").is_visible())
+    fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
+    opt1 = pg.locator("details.opt:has(#pred-1)")   # pred-1 is optional in the pilot: closed until the student opens it
+    check("an optional prediction waits in its closed box", not opt1.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
+    opt1.locator(":scope > summary").click(); check("the optional box opens", pg.locator("#pred-1 button.commit").is_visible())
+    pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats optional items like the others
     # prediction: commit first, no feedback until the experiment has two measurements
     p1 = pg.locator("#pred-1")
     p1.locator("button.commit").click(); check("empty commit asks for a choice", "Valitse" in p1.locator("output").inner_text())
@@ -358,9 +363,9 @@ with sync_playwright() as pw:
     p1.locator("button.commit").click()
     check("prediction committed: radios locked, feedback hidden", p1.locator("input[type=radio]").nth(w1).is_disabled() and not p1.locator(".feedback").nth(w1).is_visible() and p1.locator(".pending").is_visible())
     check("the box counts the answers", "vastattu 1/" in fold.locator(".fold-status").inner_text(), fold.locator(".fold-status").inner_text())
-    fold.locator("summary").click(); fold.locator("summary").click()
+    fold.locator(":scope > summary").click(); fold.locator(":scope > summary").click()
     check("closing and reopening the box keeps the prediction and its reason", p1.locator("input[type=radio]").nth(w1).is_checked() and p1.locator(".justify textarea").input_value() == "voima sama")
-    fold.locator("summary").click()
+    fold.locator(":scope > summary").click()
 
     ex1 = pg.locator("#exp-1")
     check("record disabled before the initial state is set", ex1.locator(".exp-record").is_disabled())
@@ -379,9 +384,9 @@ with sync_playwright() as pw:
     rows = ex1.locator(".exp-table tbody tr").all_inner_texts()
     check("second measurement doubles W", len(rows) == 2 and "1200" in rows[1], str(rows))
     check("the closed box tells that feedback is ready", "palaute 1/" in fold.locator(".fold-status").inner_text(), fold.locator(".fold-status").inner_text())
-    fold.locator("summary").click()
+    fold.locator(":scope > summary").click()
     check("prediction feedback revealed after two measurements", p1.locator(".feedback").nth(w1).is_visible() and "Ei aivan" in p1.locator("output").inner_text() and not p1.locator(".pending").is_visible())
-    fold.locator("summary").click()
+    fold.locator(":scope > summary").click()
     ex1.locator(".exp-reset").click(); pg.wait_for_timeout(120)
     st = pg.evaluate("window.simState"); locked = pg.evaluate("[...document.querySelectorAll('#sim-root input[type=range]')].map(r => r.disabled)")
     check("reset restores defaults, unlocks, clears the table", st["s"] == 10 and st["u"] == 0 and locked == [False, False, False] and ex1.locator(".exp-table tbody tr").count() == 0, f"{st} {locked}")

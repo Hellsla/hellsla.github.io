@@ -179,6 +179,10 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   "Exit ticket" in headings and links. Consecutive short activities (hook, choice, numeric, explain, exit) sit two by
   two on a wide screen, so each must read on its own in a half-width column. Look at the preview at 360, 1280 and
   1920 px; `check_layout.py --width 1920` and `test_inquiry.py <id>` test the layout.
+- Core path (2026-10-26, FY3): retrieval, reflect, Etsi virhe, siirto, a third check and secondary experiments are
+  `optional` unless the lesson's goal needs them; 1–2 predictions, the key investigation, a conclusion `explain` with
+  `after` its experiments, and 1–2 checks stay. Lengths are not equalised. Example data carries `source`
+  (docs/inquiry.md); a sim's numbers are model values in the conclusion's model answer too.
 
 ## 6. Learning from mistakes
 When a reviewer finds an error that is objectively testable or has happened before: fix it, name the general

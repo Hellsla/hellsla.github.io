@@ -17,7 +17,7 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa aiemmin opittua",
+      "title": "Kertaa: lämpötilan muutos kelvineinä",
       "prompt": "Sillan kansi on pakkasaamuna $-30\\,{}^\\circ\\text{C}$ ja helleiltapäivänä $+30\\,{}^\\circ\\text{C}$. Kuinka suuri on lämpötilan muutos kelvineinä?",
       "choices": [
         {
@@ -37,7 +37,8 @@
           "text": "−60 K",
           "feedback": "Etumerkki kertoo suunnan: lämpötila nousee, joten muutos on positiivinen. Laske loppu miinus alku: $30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = +60\\,\\text{K}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -95,7 +96,8 @@
           "text": "Puolet, koska pitkä sauva lämpenee hitaammin.",
           "feedback": "Ennuste koskee tilannetta, jossa molemmat sauvat ovat jo 70-asteisia. Lämpenemisen nopeus ei vaikuta lopputilaan. Mallin arvot ovat A: 6,00 mm ja B: 12,0 mm, joten pidempi sauva pitenee enemmän."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-3",
@@ -178,7 +180,7 @@
       "id": "exp-2",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 2: vain alkupituus muuttuu",
+      "title": "Lisätutkimus: vain alkupituus muuttuu",
       "intro": "Testaa ennuste 2. Nyt aine ja lämpötila ovat vakioita, ja vain sauvan alkupituutta muutetaan. Kirjaa pituuden muutos ja suhteellinen muutos ainakin kahdella alkupituudella, esimerkiksi 10 m, 20 m ja 40 m. Mikä muuttuu, mikä pysyy samana?",
       "initial": {
         "material": "teräs",
@@ -209,7 +211,25 @@
           "label": "ΔL/L₀"
         }
       ],
-      "min": 2
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mistä pituuden muutos riippuu?",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Kirjoita kokeen 1 taulukon perusteella: miten pituuden muutos $\\Delta L$ riippui lämpötilan muutoksesta $\\Delta T$? Miksi $120\\,{}^\\circ\\text{C}$:ssa muutos oli kaksinkertainen $70\\,{}^\\circ\\text{C}$:seen verrattuna, vaikka $120/70$ ei ole $2$? Mitä pakkaskokeilu näytti, ja miten mikromallin hiukkasten liike selittää havainnon?",
+      "model": "Pituuden muutos oli suoraan verrannollinen lämpötilan muutokseen $20\\,{}^\\circ\\text{C}$:sta: $70\\,{}^\\circ\\text{C}$:ssa $\\Delta T = 50\\,\\text{K}$ ja $\\Delta L = 6{,}0\\,\\text{mm}$, $120\\,{}^\\circ\\text{C}$:ssa $\\Delta T = 100\\,\\text{K}$ ja $\\Delta L = 12{,}0\\,\\text{mm}$. Ratkaisevaa on lämpötilan muutos, ei lämpötila itse. Pakkasessa ($-30\\,{}^\\circ\\text{C}$) $\\Delta T$ ja $\\Delta L$ ovat negatiivisia: sauva lyhenee. Mikromallissa hiukkaset värähtelevät lämmetessään laajemmin, ja koska hiukkaset loittonevat helpommin kuin lähestyvät, niiden keskimääräinen etäisyys kasvaa. Simulaatio laskee $\\Delta L$:n kaavasta ja piirtää muutoksen satakertaisena; oikea $\\alpha$ mitataan esimerkiksi lämmittämällä sauvaa ja mittaamalla pidentyminen mittakellolla.",
+      "criteria": [
+        "Käytin taulukon lukuja ja lämpötilan muutosta $\\Delta T$.",
+        "Selitin, miksi suhde lasketaan $\\Delta T$:stä eikä lämpötilasta.",
+        "Selitin laajenemisen hiukkasten värähtelyllä.",
+        "Erotin mallin laskemat arvot mittauksesta."
+      ]
     },
     {
       "id": "olomuodot",
@@ -235,7 +255,9 @@
             "feedback": "Asia on päinvastoin: kaasussa hiukkaset ovat kaukana toisistaan, joten litrassa ilmaa on paljon vähemmän hiukkasia kuin litrassa vettä tai terästä. Kaasu laajenee eniten, koska sen hiukkaset ovat lähes vapaita, eivät sidosten pitämiä."
           }
         ]
-      }
+      },
+      "optional": true,
+      "source": "model"
     },
     {
       "id": "theory",
@@ -256,7 +278,8 @@
         "pred-1",
         "pred-2",
         "pred-3"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -290,7 +313,8 @@
           "text": "Laskussa ei ole virhettä.",
           "feedback": "Tarkista $\\Delta T$. Lämpötila nousee 10 °C:sta 30 °C:seen eli 20 K, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos 28 mm on noin viisitoista kertaa liian suuri."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -316,7 +340,8 @@
           "feedback": "Käytit loppulämpötilaa 25 °C lämpötilan muutoksen paikalla. Lämpötila nousee 15 °C:sta 25 °C:seen eli $\\Delta T = 10\\,\\text{K}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Säiliön etanolin tilavuuden kasvu $\\Delta V = \\gamma V_0 \\Delta T$ nousee putkeen lieriöksi, jonka tilavuus on $Ah$. Siis\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Sijoitus.** $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$ ja $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$:\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Järkevyys.** Etanolin tilavuus kasvaa vain 1,1 %, mutta ohuessa putkessa pienikin tilavuus on pitkä patsas: noin 4 mm kelviniä kohti, mikä on tavallisen lämpömittarin asteikon mittaluokka. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin 43 mm."
+      "solution": "**Ratkaisu symbolisesti.** Säiliön etanolin tilavuuden kasvu $\\Delta V = \\gamma V_0 \\Delta T$ nousee putkeen lieriöksi, jonka tilavuus on $Ah$. Siis\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Sijoitus.** $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$ ja $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$:\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Järkevyys.** Etanolin tilavuus kasvaa vain 1,1 %, mutta ohuessa putkessa pienikin tilavuus on pitkä patsas: noin 4 mm kelviniä kohti, mikä on tavallisen lämpömittarin asteikon mittaluokka. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin 43 mm.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -383,7 +408,8 @@
         "Yhdistän hiukkasvälien kasvun koko kiskon pitenemiseen: kaikki välit kasvavat samassa suhteessa.",
         "Selitän eron sidoksilla: kiinteän aineen hiukkaset ovat vahvasti sidottuja, kaasun hiukkaset lähes vapaita."
       ],
-      "model": "Kiskon hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu. Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs, joten hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä, ja hiukkasten keskimääräinen etäisyys kasvaa. Hiukkaset itse eivät kasva. Kun kaikki hiukkasvälit kasvavat samassa suhteessa, koko kisko pitenee. Kiinteässä aineessa vahvat sidokset pitävät hiukkaset tiukasti paikoillaan, joten suhteellinen muutos on pieni. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa lämpötilan nousu kasvattaa niiden keskimääräistä etäisyyttä paljon enemmän: ilman tilavuuden lämpötilakerroin on noin sata kertaa teräksen $\\gamma \\approx 3\\alpha$."
+      "model": "Kiskon hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu. Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs, joten hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä, ja hiukkasten keskimääräinen etäisyys kasvaa. Hiukkaset itse eivät kasva. Kun kaikki hiukkasvälit kasvavat samassa suhteessa, koko kisko pitenee. Kiinteässä aineessa vahvat sidokset pitävät hiukkaset tiukasti paikoillaan, joten suhteellinen muutos on pieni. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa lämpötilan nousu kasvattaa niiden keskimääräistä etäisyyttä paljon enemmän: ilman tilavuuden lämpötilakerroin on noin sata kertaa teräksen $\\gamma \\approx 3\\alpha$.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

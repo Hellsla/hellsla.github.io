@@ -17,7 +17,7 @@
       "id": "pr-pumppu",
       "stage": "herata",
       "type": "choice",
-      "title": "Mitä jo tiedät",
+      "title": "Kertaa: miksi rengas kovenee?",
       "prompt": "Pumppaat pyörän renkaaseen lisää ilmaa. Miksi rengas kovenee?",
       "choices": [
         {
@@ -33,7 +33,8 @@
           "text": "Kumi kiristyy pumpun iskuista, ja ilmalla ei ole asian kanssa tekemistä.",
           "feedback": "Tyhjä rengas ei kovene, vaikka sitä taputtelisi. Kovuus tulee renkaan sisällä olevasta ilmasta, joka painaa kumia ulospäin."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -95,7 +96,8 @@
           "text": "Paine pienenee, koska seinää, johon osua, on vähemmän.",
           "feedback": "Kokeessa paine kasvaa 50:stä 100:aan. Seinää on vähemmän, mutta törmäyksiä seinän pituutta kohti on enemmän, koska hiukkaset palaavat seinälle nopeammin."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-3",
@@ -175,7 +177,7 @@
       "id": "exp-2",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 2: vain tilavuus muuttuu",
+      "title": "Lisätutkimus: vain tilavuus muuttuu",
       "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
       "initial": {
         "T": 300,
@@ -203,7 +205,25 @@
           "label": "p teoria"
         }
       ],
-      "min": 2
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: lämpötila, nopeus ja paine",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Kirjoita kokeen 1 taulukon perusteella lyhyt johtopäätös. Kuinka monikertaiseksi paine kasvoi, kun kelvinlämpötila kaksinkertaistui, ja kuinka paljon hiukkasten nopeus kasvoi? Miten mikromalli selittää, että paine kasvaa nopeutta enemmän? Miksi lämpötilojen suhde pitää laskea kelvineinä?",
+      "model": "Kun lämpötila nousi $300\\,\\text{K}$:stä $600\\,\\text{K}$:iin, mitattu paine kaksinkertaistui (noin $100 \\to 200$), mutta hiukkasten nopeus kasvoi vain noin $1{,}41$-kertaiseksi. Nopeammat hiukkaset osuvat seinään sekä useammin että kovempaa, joten paine kasvaa kahdesta syystä ja on verrannollinen kelvinlämpötilaan. Celsiusasteina sama muutos on $27\\,{}^\\circ\\text{C} \\to 327\\,{}^\\circ\\text{C}$ eli yli kymmenkertainen, mutta paine vain kaksinkertaistui, joten paine seuraa kelvinlämpötilaa. Simulaation mitattu paine syntyy laskemalla simuloituja törmäyksiä, joten se vaihtelee hieman. Mallin oletus, että nopeus määräytyy lämpötilasta, on kuitenkin mallin osa eikä mittaustulos.",
+      "criteria": [
+        "Kerroin lukujen avulla, miten paine ja nopeus muuttuivat.",
+        "Selitin, että törmäykset ovat sekä tiheämpiä että kovempia.",
+        "Perustelin, miksi suhteet lasketaan kelvineinä.",
+        "Erotin mallin oletukset simulaation tuloksista."
+      ]
     },
     {
       "id": "theory",
@@ -224,7 +244,8 @@
         "pred-1",
         "pred-2",
         "pred-3"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -258,7 +279,8 @@
           "text": "Päättelyssä ei ole virhettä.",
           "feedback": "Lämpötila ei fysikaalisesti kaksinkertaistu: kelvineinä se nousee 293 K:sta 313 K:iin, vain noin 7 %. Paine kasvaa samassa suhteessa, noin 128 kPa:iin."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -284,7 +306,8 @@
           "feedback": "Suhde on väärin päin: paine pieneni, vaikka ilma lämpeni. Lämpimämmässä ilmassa hiukkaset liikkuvat nopeammin, joten paineen pitää kasvaa: $p_2 = p_1 \\cdot T_2/T_1$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Tilavuus ja aineen määrä pysyvät samoina, joten paine on suoraan verrannollinen kelvinlämpötilaan:\n\n$$p_2 = p_1 \\frac{T_2}{T_1}$$\n\n**Muunnos.** $T_1 = (20 + 273{,}15)\\,\\text{K} = 293{,}15\\,\\text{K}$ ja $T_2 = (80 + 273{,}15)\\,\\text{K} = 353{,}15\\,\\text{K}$.\n\n**Sijoitus.** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 122\\,\\text{kPa}$.\n\n**Järkevyys.** Kelvinlämpötila nousee noin 20 %, ja paine kasvaa samassa suhteessa. Siksi huoneenlämpöisenä suljettu ja sitten kuumennettu purkki on ylipaineinen: paine purkissa, 122 kPa, on suurempi kuin ulkona, 101 kPa, ja kansi painuu ulospäin."
+      "solution": "**Ratkaisu symbolisesti.** Tilavuus ja aineen määrä pysyvät samoina, joten paine on suoraan verrannollinen kelvinlämpötilaan:\n\n$$p_2 = p_1 \\frac{T_2}{T_1}$$\n\n**Muunnos.** $T_1 = (20 + 273{,}15)\\,\\text{K} = 293{,}15\\,\\text{K}$ ja $T_2 = (80 + 273{,}15)\\,\\text{K} = 353{,}15\\,\\text{K}$.\n\n**Sijoitus.** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 122\\,\\text{kPa}$.\n\n**Järkevyys.** Kelvinlämpötila nousee noin 20 %, ja paine kasvaa samassa suhteessa. Siksi huoneenlämpöisenä suljettu ja sitten kuumennettu purkki on ylipaineinen: paine purkissa, 122 kPa, on suurempi kuin ulkona, 101 kPa, ja kansi painuu ulospäin.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -356,7 +379,8 @@
         "Perustelen, miksi suhde lasketaan kelvineinä: liike-energia ja paine ovat verrannollisia kelvinlämpötilaan.",
         "Käytän esimerkkiä tai lukuja oikein, esimerkiksi 10 °C → 20 °C on kelvineinä 283 K → 293 K."
       ],
-      "model": "Mikromallissa lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, ja liike-energia on suoraan verrannollinen kelvinlämpötilaan. Kelvinasteikon nolla on absoluuttinen nollapiste, jossa hiukkasten liike-energia on pienimmillään; kylmempää ei voi olla, joten negatiivisia kelvinlämpötiloja ei ole. Celsiusasteikon nolla on vain veden jäätymispiste, eivätkä hiukkaset ole siinä lähelläkään levossa. Siksi suhde lasketaan kelvineinä: kun lämpötila nousee 10 °C:sta 20 °C:een, se nousee 283 K:sta 293 K:iin, eli vain noin 3,5 %, eikä hiukkasten keskimääräinen liike-energia kaksinkertaistu."
+      "model": "Mikromallissa lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, ja liike-energia on suoraan verrannollinen kelvinlämpötilaan. Kelvinasteikon nolla on absoluuttinen nollapiste, jossa hiukkasten liike-energia on pienimmillään; kylmempää ei voi olla, joten negatiivisia kelvinlämpötiloja ei ole. Celsiusasteikon nolla on vain veden jäätymispiste, eivätkä hiukkaset ole siinä lähelläkään levossa. Siksi suhde lasketaan kelvineinä: kun lämpötila nousee 10 °C:sta 20 °C:een, se nousee 283 K:sta 293 K:iin, eli vain noin 3,5 %, eikä hiukkasten keskimääräinen liike-energia kaksinkertaistu.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

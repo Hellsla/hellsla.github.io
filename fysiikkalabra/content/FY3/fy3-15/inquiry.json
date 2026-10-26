@@ -38,7 +38,8 @@
           "text": "$Q_2 = 0$, koska energia säilyy.",
           "feedback": "Energian säilyminen ei tarkoita, että kaikki energia muuttuisi työksi. Lämpövoimakoneen on luovutettava osa lämmöstä kylmempään ympäristöön, ja energia säilyy juuri sen takia: $800\\,\\text{MJ} = 280\\,\\text{MJ} + Q_2$, joten $Q_2 = 520\\,\\text{MJ}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -198,7 +199,8 @@
             "feedback": "Käytit osuutta $(232 - 174)/232 = 0{,}25$ eli menetit vain neljänneksen 40 MW:sta. Kaukolämpöteho 174 MW on $174/232 = 0{,}75$ täydestä yhteistuotannosta, joten menetetään kolme neljäsosaa 40 MW:sta."
           }
         ]
-      }
+      },
+      "optional": true
     },
     {
       "id": "tyypit",
@@ -231,6 +233,19 @@
       }
     },
     {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: missä energia menetetään?",
+      "prompt": "Kirjoita taulukoiden perusteella lyhyesti, missä energiaketjun vaiheessa lauhdevoimalaitos menettää eniten tehoa ja miksi, ja mitä yhteistuotanto muuttaa. Miksi vesivoimalan hyötysuhde voi olla paljon suurempi?",
+      "model": "Eniten tehoa häviää höyrykierrossa, $248\\,\\text{MW}$ eli lähes puolet kattilan tehosta: lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen, eikä parempi tekniikka poista tätä kokonaan. Yhteistuotannossa sama lämpö käytetään kaukolämpönä: sähköteho pienenee $160\\,\\text{MW}$:sta $120\\,\\text{MW}$:iin, mutta kokonaishyötysuhde nousee $(120 + 232)/400 = 88\\,\\%$:iin. Vesivoimalassa energia ei kulje lämmön kautta, vaan mekaaninen energia muuttuu sähköksi, joten häviöitä on vain kitkasta ja sähköisistä häviöistä. Taulukoiden luvut ovat esimerkki- ja tyyppiarvoja, eivät yhden laitoksen mittauksia.",
+      "criteria": [
+        "Nimesin höyrykierron suurimmaksi häviöksi ja perustelin sen lämpövoimakoneen rajoituksella.",
+        "Erotin sähkön hyötysuhteen ja kokonaishyötysuhteen yhteistuotannossa.",
+        "Selitin vesivoimalan eron sillä, ettei energia kulje lämmön kautta."
+      ]
+    },
+    {
       "id": "theory",
       "stage": "selita",
       "type": "theory",
@@ -248,7 +263,8 @@
       "predictions": [
         "pred-1",
         "pred-2"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -282,7 +298,8 @@
           "text": "Laskussa ei ole virhettä, koska energia säilyy ja keskiarvo kuvaa koko ketjua.",
           "feedback": "Energian säilyminen ei tarkoita, että keskiarvo kuvaisi ketjua. Jos sähköä olisi 750 MW, hukkalämpöä olisi vain 250 MW, vaikka höyrykierto yksin luovuttaa lauhduttimeen 540 MW. Hyötysuhteet kerrotaan."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -308,7 +325,8 @@
           "feedback": "Tämä on parannuksen jälkeinen sähköteho $0{,}4104 \\cdot 400\\,\\text{MW}$, ei lisäys. Vähennä siitä parannusta edeltävä sähköteho $0{,}3888 \\cdot 400\\,\\text{MW} = 155{,}5\\,\\text{MW}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Sähköteho on $P_3 = \\eta_1\\,\\eta_2\\,\\eta_3\\,P_0$, ja vain $\\eta_1$ muuttuu, joten lisäys on\n\n$$\\Delta P = (\\eta_1' - \\eta_1)\\,\\eta_2\\,\\eta_3\\,P_0$$\n\n**Sijoitus.** $\\Delta P = (0{,}95 - 0{,}90) \\cdot 0{,}45 \\cdot 0{,}96 \\cdot 400\\,\\text{MW} = 8{,}64\\,\\text{MW}$.\n\n**Järkevyys.** Lisäys on vain noin 6 % laitoksen entisestä sähkötehosta $155{,}5\\,\\text{MW}$. Höyryn lisäteho on $20\\,\\text{MW}$, mutta höyrykierto muuttaa siitä sähköksi alle puolet."
+      "solution": "**Ratkaisu symbolisesti.** Sähköteho on $P_3 = \\eta_1\\,\\eta_2\\,\\eta_3\\,P_0$, ja vain $\\eta_1$ muuttuu, joten lisäys on\n\n$$\\Delta P = (\\eta_1' - \\eta_1)\\,\\eta_2\\,\\eta_3\\,P_0$$\n\n**Sijoitus.** $\\Delta P = (0{,}95 - 0{,}90) \\cdot 0{,}45 \\cdot 0{,}96 \\cdot 400\\,\\text{MW} = 8{,}64\\,\\text{MW}$.\n\n**Järkevyys.** Lisäys on vain noin 6 % laitoksen entisestä sähkötehosta $155{,}5\\,\\text{MW}$. Höyryn lisäteho on $20\\,\\text{MW}$, mutta höyrykierto muuttaa siitä sähköksi alle puolet.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -379,7 +397,8 @@
         "Selitän, että kaukolämmön hyöty riippuu siitä, tarvitaanko lämpöä (vuodenaika, kaukolämpöverkko).",
         "Mainitsen, että vertailussa pitää ottaa huomioon, mitä lämpö korvaa ja kuinka paljon polttoainetta kokonaisuudessa kuluu."
       ],
-      "model": "Kokonaishyötysuhde $0{,}88$ lasketaan sähkön ja kaukolämmön summana, $(P_\\text{s} + P_\\text{k})/P_0$. Sähkö ja lämpö eivät ole yhtä arvokkaita: sähköä voi käyttää mihin tahansa, kaukolämpö kelpaa vain lämmitykseen ja vain lähelle. Sähkön osuus on yhteistuotantolaitoksessa pienempi, $0{,}30$ verrattuna lauhdevoimalaitoksen $0{,}40$:ään, joten sähköä saadaan vähemmän samasta polttoaineesta. Yhteistuotanto kannattaa, kun lämpöä todella tarvitaan, koska silloin muuten tarvittaisiin erillinen lämpökeskus, joka polttaa lisää polttoainetta. Vertailuun tarvitaan siis kaupungin sähkön ja lämmön tarve eri vuodenaikoina sekä vaihtoehtoinen tapa tuottaa lämpö ja sen hyötysuhde."
+      "model": "Kokonaishyötysuhde $0{,}88$ lasketaan sähkön ja kaukolämmön summana, $(P_\\text{s} + P_\\text{k})/P_0$. Sähkö ja lämpö eivät ole yhtä arvokkaita: sähköä voi käyttää mihin tahansa, kaukolämpö kelpaa vain lämmitykseen ja vain lähelle. Sähkön osuus on yhteistuotantolaitoksessa pienempi, $0{,}30$ verrattuna lauhdevoimalaitoksen $0{,}40$:ään, joten sähköä saadaan vähemmän samasta polttoaineesta. Yhteistuotanto kannattaa, kun lämpöä todella tarvitaan, koska silloin muuten tarvittaisiin erillinen lämpökeskus, joka polttaa lisää polttoainetta. Vertailuun tarvitaan siis kaupungin sähkön ja lämmön tarve eri vuodenaikoina sekä vaihtoehtoinen tapa tuottaa lämpö ja sen hyötysuhde.",
+      "optional": true
     },
     {
       "id": "lahtolippu",
