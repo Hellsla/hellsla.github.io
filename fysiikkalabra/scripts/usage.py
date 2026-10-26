@@ -1,10 +1,11 @@
 """Token and cost accounting per lesson in review/usage.tsv, measured from Claude Code's own transcripts.
 
-  python scripts/usage.py collect <id> [--session <id | path.jsonl>] [--round n]
+  python scripts/usage.py collect <id> [--session <id | path.jsonl>] [--round n] [--since 2026-10-26T07:00:00Z]
       reads the session transcript (~/.claude/projects/<project>/<session>.jsonl; the current session by default,
       $CLAUDE_CODE_SESSION_ID) and every subagent transcript beside it (<session>/subagents/agent-*.jsonl) and writes
       one row per agent run of this lesson and one for the main session's part (the /lesson orchestrator, from the
-      "Run lesson <id>" message on). Run it again and the rows are replaced, never added twice (column ref).
+      "Run lesson <id>" message on, or from --since when the steps were run without the command). Run it again and
+      the rows are replaced, never added twice (column ref).
   python scripts/usage.py log <id> --agent A --model M --effort E --mode M --round n --context N --seconds S --calls C --verdict V
       a manual row, for a run without a transcript (source=reported)
   python scripts/usage.py report <id | FY4 | --all> [--by agent]
@@ -123,7 +124,7 @@ def row_of(lid, agent, stage, s, ref, **extra):
             "calls": s["calls"], "cost_usd": "" if s["cost"] is None else f"{s['cost']:.4f}", "source": "transcript", "ref": ref, **extra}
 
 
-def collect(lid, session=None, rnd=""):
+def collect(lid, session=None, rnd="", since=None):
     sf = session_file(session); sid = sf.stem
     f = courses.find_lesson(lid) / "review" / "usage.tsv"
     rows = read_rows(f); by_ref = {r.get("ref"): i for i, r in enumerate(rows) if r.get("ref")}
@@ -153,15 +154,18 @@ def collect(lid, session=None, rnd=""):
         m = re.search(r"Run lesson ([a-z]+\d+-[0-9][0-9a-z]*)", text)
         if m and m.group(1) == lid and start is None: start = i
         elif m and start is not None and m.group(1) != lid: end = i; break
+    if start is None and since:                          # no /lesson message: the orchestration started at a known time
+        start = next((i for i, line in enumerate(lines) if (json.loads(line).get("timestamp") or "") >= since), len(lines))
+        mode = "since"
+    else: mode = "session" if start is None else "lesson-run"
     s = read_transcript(sf, start, end)
-    new.append(row_of(lid, "orchestrator", "orchestrate", s, hashlib.sha1(f"{sid}:main:{lid}".encode()).hexdigest()[:12],
-                      mode="session" if start is None else "lesson-run", round=rnd))
+    new.append(row_of(lid, "orchestrator", "orchestrate", s, hashlib.sha1(f"{sid}:main:{lid}".encode()).hexdigest()[:12], mode=mode, round=rnd))
     for r in new:
         if r["ref"] in by_ref: rows[by_ref[r["ref"]]] = r
         else: rows.append(r)
     write_rows(f, rows)
     for r in new: print(f"{r['agent']:18} {r['model']:22} {int(r['tokens']):>9} tokens processed, context {int(r['context']):>7}, ${r['cost_usd'] or '?'}")
-    if start is None: print("note: no 'Run lesson' message in this session; the orchestrator row holds the whole main session")
+    if mode == "session": print("note: no 'Run lesson' message in this session; the orchestrator row holds the whole main session")
 
 
 def log(a):
@@ -211,13 +215,13 @@ def report(target, by=None):
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
-    c = sub.add_parser("collect"); c.add_argument("id"); c.add_argument("--session"); c.add_argument("--round", default="")
+    c = sub.add_parser("collect"); c.add_argument("id"); c.add_argument("--session"); c.add_argument("--round", default=""); c.add_argument("--since")
     l = sub.add_parser("log"); l.add_argument("id")
     for k in ("agent", "model", "effort", "mode", "verdict"): l.add_argument(f"--{k}", required=True)
     l.add_argument("--stage", default="")
     for k in ("round", "context", "seconds", "calls"): l.add_argument(f"--{k}", type=int, required=True)
     r = sub.add_parser("report"); r.add_argument("target"); r.add_argument("--by", choices=["agent"])
     a = p.parse_args()
-    if a.cmd == "collect": collect(a.id, a.session, a.round)
+    if a.cmd == "collect": collect(a.id, a.session, a.round, a.since)
     elif a.cmd == "log": log(a)
     else: report(a.target, a.by)

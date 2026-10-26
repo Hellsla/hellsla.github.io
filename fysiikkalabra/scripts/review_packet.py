@@ -70,7 +70,9 @@ def header(folder, role, mode):
     pre = [f"{p} {titles.get(p, '(not in curriculum.json)')}" for p in meta.get("prerequisites", [])]
     out += (f"\n## Lesson slot {lid}\nGoals:\n{bullets(meta.get('goals', []) or s.get('goals', []))}\n"
             f"Prerequisites: {'; '.join(pre) or 'none'}\n"
-            f"\n## Glossary terms of this lesson (glossary.json)\n" + "\n".join(f"- **{t['term']}**: {t['definition']}" for t in terms) + "\n")
+            f"\n## Glossary terms of this lesson (glossary.json)\n" + "\n".join(f"- **{t['term']}**: {t['definition']}" for t in terms) + "\n"
+            + (f"Not yet in glossary.json (the developer adds each, with a definition): {', '.join(t for t in meta.get('glossary', []) if t not in gl)}\n"
+               if any(t not in gl for t in meta.get("glossary", [])) else ""))
     d = courses.sim_dir(folder, meta); users = courses.deps().get(d[2], []) if d and d[0] != "lesson" else []
     sim_line = ("none" if d is None else f"`{(folder / 'sim.js').relative_to(ROOT)}` (lesson folder, FY3 layout)" if d[0] == "lesson"
                 else f"`{d[1].relative_to(ROOT)}/` ({d[0]}; used by {', '.join(users) or lid})")
