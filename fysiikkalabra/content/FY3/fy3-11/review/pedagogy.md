@@ -1,8 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: 8e0f2f3f575b7654
+VERDICT: PASS
+CONTENT-HASH: 18cfc60e19dd6b13
 ## Blocking
-- The picture does not show the Miksi situation. The question is about a thermal power plant converting under half of the fuel energy to electricity and where the rest goes; the hero is a steam locomotive with no electricity, no generator and no waste heat other than a puff of smoke, so the student cannot see the 'where does the rest go' side. Redraw as a power plant (boiler, turbine hall, generator, power line) with the cooling water or cooling-tower plume carrying waste heat, or make the locomotive the explicit heat-engine example and keep the power plant for the hero. (fy3-15's hero already is a plant with a district-heating line, so differentiate.)
+None.
 ## Polish
-- If a locomotive is kept elsewhere, the brown dome and single coupling rod look odd; simplify.
+- The warm-water patch (orange on a beige halo) is the smallest and muddiest part of the picture and carries half of the Miksi's "where does the rest go"; make it larger and a clean orange gradient into the lake blue.
+- The plume is steam (condensed water), not pollution; the lesson text should keep saying heat leaves through the condenser, so the cloud is not read as smoke. The chimney is correctly drawn without smoke.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-11.png only (no lesson text opened): locomotive does not depict a power plant or the energy that is lost.
+Hero review-batch/heroes/fy3-11.png: condensing power plant with turbine hall, cooling tower with plume, power lines to the right and warm cooling water entering the lake; shows both the electricity and the waste-heat routes, matching the Miksi; no physics error; no people, inclusive; subject in the middle third, reads at 360 px. Rest of the lesson (piston work p dV, heat engine and heat pump arrow figures to scale, staged biomass-plant example with sähkö vs yhteistuotanto, misconceptions) read in the packet and unchanged since the earlier PASS.

@@ -1,8 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: 81d1e73c65b009df
+VERDICT: PASS
+CONTENT-HASH: 4f705dd31793ab29
 ## Blocking
-- The picture does not show the Miksi situation. The question is about carrying a backpack along a level corridor (no work), but the hero shows a person lifting a box up to a shelf with an upward arrow, which is exactly the case where work IS done. A student reading it before the lesson gets the opposite cue (a lifted load, an upward force arrow, an effort pose) and no backpack or horizontal movement. Redraw: a student walking with a backpack along a level corridor/floor, with the weight (down) and the direction of travel (sideways) clearly perpendicular; save the shelf lift for the work-is-done figure.
+None.
 ## Polish
-- The unlabelled orange arrow could be read as force or as motion; with the redraw make the two arrows visibly different directions.
+- The backpack sits high and looks light; a clearer strap and a lower, bulkier pack would say "painava" better.
+- The dashed travel arrow and the downward weight are only separate in the aria-label; the lesson's carry-lift figure (not the hero) is where the force is drawn, which is fine.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-2.png only (no lesson text opened): hero does not match the question and cues the opposite of the lesson's point.
+Hero review-batch/heroes/fy3-2.png: student walking right along a level corridor with a backpack on the back, horizontal floor, dashed arrow along the floor for travel, lockers and windows behind; matches the Miksi and no longer cues a lift; no physics cue is misleading (no upward arrow, no effort pose); neutral figure, inclusive; subject central, reads at 360 px. Rest of the lesson (course goals W = Fs, Joule, (s,F) area, P = Fv; hook, retrieval, three predictions with feedback, locked experiments, staged spring example, Ennuste 3 as a models choice) read in the packet and unchanged since the earlier PASS: learning path, Finnish and workload fine.

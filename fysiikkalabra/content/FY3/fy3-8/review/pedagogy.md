@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 987623609b29bfcf
+CONTENT-HASH: c5413e959381a9cc
 ## Blocking
 None.
 ## Polish
-- The comb-like joint is the subject but is a thin strip (about 12 px high at 360 px) at the bottom of the picture; the teeth no longer read as a comb at that size. Make the joint taller and move it up toward the middle third.
-- The car is large for its distance beyond the joint; harmless.
+- The joint is now taller and central; keep the teeth gap visibly open so it reads as an expansion gap, not a grating, at 360 px.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-8.png only (no lesson text opened): bridge with car approaching a finger joint; subject legible as a bridge, joint legible only as a strip at phone width.
+batch delta review: hero review-batch/heroes/fy3-8.png: car approaching a comb-toothed steel joint on a long bridge over water, matches the Miksi; the previous polish (joint too thin) was addressed; legible at 360 px.

@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ec11504f4803d4e5
+CONTENT-HASH: 2fa965b998116e5d
 ## Blocking
 None.
 ## Polish
-- The gauge's red needle uses the temperature red for a pressure reading; a dark needle would keep red for temperature only.
-- Hose leaves the bulb's neck and runs to the gauge; make sure the neck is clearly sealed at the top.
+- Keep the neck of the flask visibly joined to the hose where it rises from the bulb; at 360 px the gauge dial is small but readable as a pressure gauge.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-13.png only (no lesson text opened): ice bath, gas bulb in water joined to a gauge, boiling bath: the gas-thermometer set-up, bulb in the middle third.
+batch delta review: hero review-batch/heroes/fy3-13.png: ice bath, flask in a room-temperature bath connected by a hose to a gauge, boiling bath on a hot plate, matches the Miksi; the gauge needle is now dark so red stays for temperature; legible at 360 px.

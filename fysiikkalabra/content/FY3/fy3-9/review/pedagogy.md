@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: bf582a276bfd124a
+CONTENT-HASH: f22380eabf9e0dbd
 ## Blocking
 None.
 ## Polish
-- The bag bulges only slightly; a more clearly taut, rounded bag would match 'pullistuu kireäksi'.
-- The half-empty-looking cup of water is a nice cabin cue; keep it away from implying a pressure effect on the water.
+- The bag now bulges clearly and the cup shows a flat water level; consider a slightly lower cloud line so the altitude cue is stronger.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-9.png only (no lesson text opened): snack bag on a tray table beside an aeroplane window; setting is clear at 360 px.
+batch delta review: hero review-batch/heroes/fy3-9.png: taut, rounded sealed bag on a tray table with window and clouds below, matches the Miksi; water level in the cup is level, so no misleading pressure cue; reads at 360 px.

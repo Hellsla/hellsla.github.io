@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: af7501301b559d81
+CONTENT-HASH: 319a752d9d01e1de
 ## Blocking
 None.
 ## Polish
-- The thermometer's bulb sits at the surface and its red column runs almost to the top, which can read as 'still rising'; lower the column or immerse the bulb so it looks like a steady reading.
-- The thermometer is thin at 360 px; the boiling pot, bubbles and steam are the clear subject.
+- The thermometer's bulb sits at the pot rim rather than clearly in the water; it is thin at 360 px, but the pot, bubbles, steam and glowing hob carry the scene.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-7.png only (no lesson text opened): boiling pot on a glowing hob with steam and thermometer; clear.
+batch delta review: hero review-batch/heroes/fy3-7.png: shows the Miksi (boiling pot, hob on full, thermometer with a mid-height column, no longer reads as still rising); no physics error; neutral; subject central, reads at 360 px.

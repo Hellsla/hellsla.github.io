@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cf8203a9d528d387
+CONTENT-HASH: 412f5c6bc3bee28e
 ## Blocking
 None.
 ## Polish
-- Only incoming arrows are drawn; the Miksi rests on the Earth also radiating the same amount outwards. Add equal outgoing arrows (or faint ones) so the picture is not read as one-way heating.
-- No atmosphere hint (thin bluish rim): the greenhouse point is absent, which is fine for a hook, but a rim would foreshadow it.
-- Sun and Earth sizes and distance are not to scale; harmless in a hook.
+- The atmosphere rim is grey and thin; a faint bluer rim would foreshadow the greenhouse layer.
+- Incoming and outgoing arrows share one colour; the lesson text (not the picture) must say the outgoing energy is infrared radiation.
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-12.png only (no lesson text opened): Sun, equal parallel arrows and Earth; readable at 360 px, but half of the situation (outgoing radiation) is missing.
+batch delta review: hero review-batch/heroes/fy3-12.png: Sun, three incoming and three equal outgoing arrows, Earth with a rim, matches the 'sama määrä sisään ja ulos' Miksi; the earlier one-way-heating polish was addressed; not to scale, acceptable for a hook; reads at 360 px.
