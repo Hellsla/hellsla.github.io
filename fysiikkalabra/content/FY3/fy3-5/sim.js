@@ -134,6 +134,8 @@ new p5((p) => {
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { push: { input: selPush.elt, unit: '' }, wall: { input: selWall.elt, unit: '' } },
       reset: () => { selPush.value('hidas'); selWall.value('eristetty'); restart(); update(); },
+      get: () => { const S = window.simState, r = (x, d) => Math.round(x * 10 ** d) / 10 ** d + 0;   // table values as shown
+        return Object.assign({}, S, { W: r(S.W, 1), Q: r(S.Q, 1), dU: r(S.dU, 1), T: r(S.T, 0), p: r(S.p, 2) }); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
@@ -215,20 +217,22 @@ new p5((p) => {
         if (out) { arrow(ax, yt, ax, yt - L, COL_Q, 3); arrow(ax, yb, ax, yb + L, COL_Q, 3); }
         else { arrow(ax, yt - L, ax, yt, COL_Q, 3); arrow(ax, yb + L, ax, yb, COL_Q, 3); }
       }
-      p.fill(...COL_Q); lab('Q', 330, yt - 6);
+      if (k <= 1.3) { p.fill(...COL_Q); lab('Q', 330, yt - 6); }
     }
     p.textStyle(p.NORMAL);
 
     // values and legends around the cylinder
-    p.fill(30); p.textSize(ts(17)); lab(`T = ${fi(T, 0)} K`, x0 - WT, 36);
-    p.textSize(ts(13)); const yD = y0 + h + WT + INS + 12;
+    p.fill(30); p.textSize(ts(17)); const sT = `T = ${fi(T, 0)} K`; lab(sT, x0 - WT, 36); const xT = x0 - WT + p.textWidth('T = 000 K') + 18;
+    p.textSize(ts(13)); const yD = y0 + h + WT + INS + 8, yV = yD + 4 + ts(12), xw = xr + 4;
     p.stroke(80); p.strokeWeight(1.2); p.line(x0, yD, xp, yD); p.line(x0, yD - 5, x0, yD + 5); p.line(xp, yD - 5, xp, yD + 5);
-    p.noStroke(); p.fill(40); lab(`V = ${fi(S.V, 0)} %`, (x0 + xp) / 2, yD + 6 + ts(12), p.CENTER);
-    p.textSize(ts(13)); p.fill(40); lab(cond ? 'seinät: johtava' : 'seinät: eristetty', x0 - WT, 390);
-    const lx = 200, lw = k > 1.5 ? 30 : 44;
-    lab('hidas', lx, 390); const lx0 = lx + p.textWidth('hidas') + 5;
-    rect(lx0, 390 - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.fill(40); lab('nopea', lx0 + lw + 5, 390);
+    p.noStroke(); p.fill(40); const wl = cond ? 'johtava seinä' : 'eristetty seinä', xwl = xw - p.textWidth(wl);
+    lab(wl, xw, yV, p.RIGHT);
+    const sV = `V = ${fi(S.V, 0)} %`, hV = p.textWidth(sV) / 2;
+    lab(sV, Math.max(x0 + hV, Math.min(xwl - 10 - hV, (x0 + xp) / 2)), yV, p.CENTER);
+    const lw = k > 1.5 ? 30 : 44; p.textSize(ts(13));                  // speed legend in the top row, right of T
+    lab('hidas', xT, 36); const lx0 = xT + p.textWidth('hidas') + 5;
+    rect(lx0, 36 - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
+    p.fill(40); lab('nopea', lx0 + lw + 5, 36);
 
     // energy bars Q, W, ΔU on one axis, zero in the middle, gridlines at the tick steps
     const v = Math.max(Math.abs(W), Math.abs(Q), Math.abs(dU));
@@ -248,7 +252,7 @@ new p5((p) => {
       if (vals[i] >= 0) lab(fs(vals[i], dec), BAR.x[i], yv - 5, p.CENTER); else lab(fs(vals[i], dec), BAR.x[i], yv + 4 + ts(11), p.CENTER);
       p.textSize(ts(15)); p.textStyle(p.BOLD); lab(names[i], BAR.x[i], 352, p.CENTER); p.textStyle(p.NORMAL);
     }
-    p.fill(40); p.textSize(ts(13)); lab('ΔU = Q + W', BAR.x[1], 390, p.CENTER);
+    if (k <= 1.3) { p.fill(40); p.textSize(ts(13)); lab('ΔU = Q + W', BAR.x[1], 390, p.CENTER); }
     window.simState.labels = labels;
   };
 
