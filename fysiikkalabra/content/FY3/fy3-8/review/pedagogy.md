@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c5413e959381a9cc
+CONTENT-HASH: adae9db64b69c207
+
 ## Blocking
-None.
+
 ## Polish
-- The joint is now taller and central; keep the teeth gap visibly open so it reads as an expansion gap, not a grating, at 360 px.
+- Expansion gaps on the rails are small grey plates and unreadable at 360 px.
+- Heat shimmer in the orange energy colour is fine, but the shimmer is the only sign of heat besides the sun.
+
 ## Checked
-batch delta review: hero review-batch/heroes/fy3-8.png: car approaching a comb-toothed steel joint on a long bridge over water, matches the Miksi; the previous polish (joint too thin) was addressed; legible at 360 px.
+batch delta review: Railway in strong sun, rail joints, sun; no physics error (no buckled rail drawn). Inclusive, no text, reads at phone width (600x360 capture).

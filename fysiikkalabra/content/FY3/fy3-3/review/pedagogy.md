@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4dcc66e7a8633014
+CONTENT-HASH: 6ed26d6e86edfe03
+
 ## Blocking
-None.
+
 ## Polish
-- The thermometer in the top right is thin and will be about 8 px wide at 360 px; the bike, sun and shimmer carry the scene, so it is only a bonus.
-- Nothing signals the tyre's firmness; a slightly squarer, thicker tyre or a pressure-gauge-free hint is optional.
+- The grey block under the thermometer bulb reads oddly (mounting post?).
+- Thermometer has no scale, so low column + snow carry the cold; fine for an illustration.
+
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-3.png only (no lesson text opened): bike on hot street with sun and heat shimmer; subject centred and clear at 360 px.
+batch delta review: Snowy bicycle with low thermometer column shows temperature as a state variable in a second situation. Inclusive, no text, reads at phone width (600x360 capture).

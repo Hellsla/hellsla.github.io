@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b0082d87b407c444
+CONTENT-HASH: 58aa0d59f8f2f2a3
+
 ## Blocking
-None.
+
 ## Polish
-- The district-heating pipes are distinguished by red and blue only (hot supply and return); that is the figure palette's meaning, but the lesson text must name them since colour is alone here.
-- The plant sits to the left and the buildings are cropped at the right edge, so at 360 px the central third is mostly the pipes; move the plant a little to the centre.
-- The pylon at the left edge is thin and its wire is cut by the frame.
+- Pipes are red and blue with no cue other than colour (acceptable, the hero figure labels them).
+- Warm air shimmer above the radiator uses the energy colour; consistent.
+
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-15.png only (no lesson text opened): power plant with chimney, power line, and district-heating pipes to warm buildings; matches the question.
+batch delta review: District-heating radiator under a snowy window: everyday end of the cogeneration chain, ties to the hero. Inclusive, no text, reads at phone width (600x360 capture).
