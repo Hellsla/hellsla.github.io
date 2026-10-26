@@ -1,10 +1,8 @@
 VERDICT: DONE
-Drafted fy3-14 (round 1); check_lesson.py all ok. Not fixable here: check_layout at 768 px reports "lab-side 18 px too wide", the same for fy3-6 (a template matter). lint warns that solutions carry LaTeX; kept per the teacher's rule.
-- meta.json: glossary now ominaissulamislämpö, sulamislämpö, lämpötasapaino.
-- lesson.md: Ydinajatus (before/after glasses figure), Kaava: Lämpötasapaino ja sulaminen (energy-budget bars and a T against T_v graph, both to scale), staged Esimerkki (24,0 °C water, -8,0 °C ice, 6,0 °C), misconception, summary. All figure labels are LaTeX fig-tex boxes.
-- inquiry.json: hook, retrieval, two predictions (ice remains at 0 °C; cold ice), sim, two experiments with numeric questions (threshold 26,6 °C; 12,6 g), reflection, error-spotting, transfer, three checks, exit.
-- exercises.json, answers.py, solutions.md (LaTeX): 5/4/3; L3 covers remaining ice and all-frozen water.
-- exit-ticket.json, sim-spec.md.
-- sim.js: ice and water in a calorimeter, four outcomes, energy-budget bars, speed control, adapter.
-- tests/sims/fy3-14.json: 57 assertions.
-- glossary.json: added ominaissulamislämpö, fy3-14 on lämpötasapaino (small Edits).
+
+- sim.js: the animation now follows the transferred heat q = u·Q_end, one side at a time. Water cools to 0 °C, freezes, then cools as ice. Ice warms to 0 °C, melts, then the melt water warms. No liquid shows below 0 °C, no ice above it. The chart axis autoscales to 0–50, 0–100 or 0–250 kJ.
+- tests/sims/fy3-14.json: four per-frame assertions over full runs (cases 1–4) for the above (the old sim fails them). Two autoscale assertions. Label and calc assertions updated to the new scale; none loosened. 63 pass.
+- lesson.md: vaihe 4 reads 6,05 °C ≈ 6,0 °C. Result "below the midpoint". The all-water-freezes exception is in the misconception and the summary. Figure 3's dot is now "alun lasi" (explained in the text). Figure 2 shows its data visibly in LaTeX (ice −10 °C).
+- inquiry.json: the hook is a qualitative glass of juice. Ennuste 2's correct option reads "Noin 13 g enemmän …". The howto's pale-segment sentence is fixed. The Koe headers read "jää (g)". The calc text gives the scale rule.
+
+All checks ok; layout ok at 360, 1280 and 1920 px. At 768 px, lab-side is 18 px too wide, as in fy3-9: a shared-template issue, not fixable here.

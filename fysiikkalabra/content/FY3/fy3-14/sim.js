@@ -5,9 +5,14 @@
 //   Q_lämm ≤ Q_v < Q_lämm + Q_sul : ice remains, T = 0 °C, melted mass (Q_v − Q_lämm)/s.
 //   Q_v < Q_lämm : the cold ice freezes part of the water, m_f = (Q_lämm − Q_v)/s; while m_f ≤ m_v the mixture stays at 0 °C,
 //     otherwise all water freezes and T = (c_v m_v T_v + s m_v + c_j m_j T_j) / (c_j (m_j + m_v)) < 0 °C.
-// The approach to the end state in the animation is ILLUSTRATION ONLY: every quantity moves by the same fraction
-// u(t) = (1 − e^(−t/τ)) / (1 − e^(−T_END/τ)) of its way, τ = 1,8 s, so the run lasts 8 s. The real rate depends on stirring and cube size.
-// The chart on the right is the energy budget (to scale, 0–250 kJ): what the water gives off against what the ice needs.
+// Animation: the heat q that has flowed from the water to the ice grows as q = u(t)·Q_end, where Q_end is the heat moved by
+// the end state and u(t) = (1 − e^(−t/τ)) / (1 − e^(−T_END/τ)), τ = 1,8 s, so the run lasts 8 s (the pace is ILLUSTRATION ONLY;
+// the real rate depends on stirring and cube size). Every displayed state is derived from q in sequence, never interpolated:
+//   water side (gives off q): cools to 0 °C (q ≤ Q_v), then freezes at 0 °C, then (all frozen) the new ice cools below 0 °C;
+//   ice side (receives q): warms to 0 °C (q ≤ Q_lämm), then melts at 0 °C, then (all melted) the melt water warms.
+// So liquid water is never shown below 0 °C and ice never above 0 °C, and ice melts only once it has reached 0 °C.
+// The chart on the right is the energy budget, to scale: what the water gives off against what the ice needs. Its axis
+// is the smallest of 0–50, 0–100 and 0–250 kJ that holds both bars, so the decisive comparison fills the chart.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. The readout is DOM text: quantities and values only; the model's
 // assumptions and the formulas are in the lesson's "Mallin oletukset" and "Laskennan selitys" boxes (inquiry.json).
 // Speed control: the animation clock advances by (real frame time)·speed, so "Nopeus" changes only the pace; the end state
@@ -15,9 +20,9 @@
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels (test_sims.py sweeps them).
 new p5((p) => {
   const CV = 4190, CJ = 2100, S = 334000;                       // c water, c ice (J/(kg·K)), specific heat of fusion (J/kg)
-  const TAU = 1.8, T_END = 8, JMAX = 250;                       // time constant (s), animation length (s), chart axis max (kJ)
+  const TAU = 1.8, T_END = 8, SCALES = [50, 100, 250];          // time constant (s), animation length (s), chart axis maxima (kJ)
   const VES = { x: 34, w: 210, top: 150, bottom: 358, wall: 14 };   // insulated vessel (outer box)
-  const CH = { ax: 352, y0: 318, y1: 62, bw: 52, bx: [380, 478] };   // chart: axis x, bottom y, top y (200 kJ), bar width, bar x
+  const CH = { ax: 352, y0: 318, y1: 62, bw: 52, bx: [380, 478] };   // chart: axis x, bottom y, top y (axis max), bar width, bar x
   let sMW, lMW, sTW, lTW, sMI, lMI, sTI, lTI, sSp, readout;
   let tAnim = 0, running = false, key = '', labels = [], k = 1;
   const inputKey = () => [sMW, sTW, sMI, sTI].map((e) => e.value()).join();
@@ -61,20 +66,32 @@ new p5((p) => {
       if (mF <= mW) { tapaus = 3; Tf = 0; iceLeft = mI + mF; }
       else { tapaus = 4; Tf = (Qv + S * mW + CJ * mI * TI0) / (CJ * (mI + mW)); iceLeft = mI + mW; }           // everything freezes, below 0 °C
     }
-    return { Qv, Qwarm, Qmelt, Tf, iceLeft, tapaus };
+    // heat moved from the water to the ice by the end state (J)
+    const Qend = [Qv - CV * mW * Tf, Qv, Qwarm, Qv + S * mW - CJ * mW * Tf][tapaus - 1];
+    return { Qv, Qwarm, Qmelt, Tf, iceLeft, tapaus, Qend };
+  };
+
+  // the state after heat q (J) has flowed from the water to the ice, each side in sequence
+  const stateAt = (mW, TW0, mI, TI0, R, q) => {
+    let TW, frozen, TI, melted, Tmelt = 0;
+    if (q <= R.Qv) { TW = TW0 - q / (CV * mW); frozen = 0; }                                  // water cools to 0 °C
+    else if (q <= R.Qv + S * mW) { TW = 0; frozen = (q - R.Qv) / S; }                          // then freezes at 0 °C
+    else { TW = -(q - R.Qv - S * mW) / (CJ * mW); frozen = mW; }                               // all frozen: the new ice cools
+    if (q <= R.Qwarm) { TI = Math.min(0, TI0 + q / (CJ * mI)); melted = 0; }              // ice warms to 0 °C
+    else if (q <= R.Qwarm + R.Qmelt) { TI = 0; melted = (q - R.Qwarm) / S; }                   // then melts at 0 °C
+    else { TI = 0; melted = mI; Tmelt = (q - R.Qwarm - R.Qmelt) / (CV * mI); }                 // all melted: the melt water warms
+    return { TW, TI, Tmelt, iceNow: mI - melted + frozen, waterNow: mW - frozen + melted };
   };
 
   p.draw = () => {
     const mW = Number(sMW.value()), TW0 = Number(sTW.value()), mI = Number(sMI.value()), TI0 = Number(sTI.value());
-    const R = solve(mW, TW0, mI, TI0), { Qv, Qwarm, Qmelt, Tf, iceLeft, tapaus } = R, M = mW + mI;
+    const R = solve(mW, TW0, mI, TI0), { Qv, Qwarm, Qmelt, Tf, iceLeft, tapaus, Qend } = R, M = mW + mI;
     if (inputKey() !== key) { key = inputKey(); tAnim = 0; running = false; }   // any change of the inputs takes the ice out again
     if (running) { tAnim += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value());   // clamped: a resume after an off-screen pause cannot skip the motion
                   if (tAnim >= T_END) { tAnim = T_END; running = false; } }
     const immersed = running || tAnim > 0;
     const u = tAnim >= T_END ? 1 : (1 - Math.exp(-tAnim / TAU)) / (1 - Math.exp(-T_END / TAU));   // illustrative progress 0 → 1
-    const TIend = Math.min(Tf, 0);                              // the ice ends at 0 °C (or colder, when everything freezes)
-    const TW = TW0 + (Tf - TW0) * u, TI = TI0 + (TIend - TI0) * u;
-    const iceNow = mI + (iceLeft - mI) * u, waterNow = M - iceNow;
+    const q = u * Qend, { TW, TI, iceNow, waterNow } = stateAt(mW, TW0, mI, TI0, R, q);   // the state after heat q, in sequence
     const meltedG = (mI - iceLeft) * 1000;                      // net mass melted (g); negative when water freezes
 
     lMW.html(`Veden massa m<sub>v</sub> = ${fi(mW, 2)} kg`); lTW.html(`Veden alkulämpötila T<sub>v</sub> = ${fi(TW0, 1)} °C`);
@@ -85,8 +102,11 @@ new p5((p) => {
                  `<br>Vesi luovuttaa jäähtyessään 0 °C:seen ${fk(Qv)}&nbsp;kJ` +
                  `<br>Jään lämmitys 0 °C:seen ${fk(Qwarm)}&nbsp;kJ, kaiken jään sulatus ${fk(Qmelt)}&nbsp;kJ` +
                  `<br>${verdict}` +
-                 `<br>Lämpömittarit nyt: vesi ${fi(TW, 1)}&nbsp;°C, jää ${fi(TI, 1)}&nbsp;°C`);
-    window.simState = { mW, TW0, mI, TI0, Qv, Qwarm, Qmelt, Tf, iceLeftG: iceLeft * 1000, meltedG, tapaus, running, TW, TI, iceNowG: iceNow * 1000, t: tAnim, labels: [] };
+                 `<br>Lämpömittarit nyt: vesi ${waterNow > 0.0005 ? fi(TW, 1) + '&nbsp;°C' : 'jäätyi (' + fi(TW, 1) + '&nbsp;°C)'}, ` +
+                 `jää ${iceNow > 0.0005 ? fi(TI, 1) + '&nbsp;°C' : 'ei jäljellä'}`);
+    const JMAX = SCALES.find((v) => v * 1000 >= Math.max(Qv, Qwarm + Qmelt)) || SCALES[SCALES.length - 1];   // chart axis max (kJ)
+    window.simState = { mW, TW0, mI, TI0, Qv, Qwarm, Qmelt, Tf, iceLeftG: iceLeft * 1000, meltedG, tapaus, running, TW, TI, iceNowG: iceNow * 1000,
+                        waterNowG: waterNow * 1000, q, Qend, JMAX, t: tAnim, labels: [] };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k);
@@ -123,7 +143,8 @@ new p5((p) => {
     // energy budget chart: bars to scale, gridlines, axis in kJ
     const Y = (J) => CH.y0 - (CH.y0 - CH.y1) * (J / 1000) / JMAX;
     p.stroke(225); p.strokeWeight(1);
-    for (let v = 50; v <= JMAX; v += 50) p.line(CH.ax, Y(v * 1000), 590, Y(v * 1000));
+    const tick = JMAX / 5;                                      // five gridline steps on every scale
+    for (let v = tick; v <= JMAX; v += tick) p.line(CH.ax, Y(v * 1000), 590, Y(v * 1000));
     const [xv, xj] = CH.bx, Qj = Qwarm + Qmelt;
     // the part of the ice stack above the water's heat is drawn pale: that heat is not available
     const part = (x, a, b, fill, edge) => {                    // segment from a to b (J), solid up to Qv, pale above it
@@ -138,7 +159,7 @@ new p5((p) => {
     p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(xv + CH.bw, Y(Qv), xj + CH.bw + 6, Y(Qv)); p.drawingContext.setLineDash([]);
     p.stroke(60); p.strokeWeight(2); p.line(CH.ax, CH.y0, 590, CH.y0); p.line(CH.ax, CH.y0, CH.ax, CH.y1 - 6);
     p.noStroke();
-    for (let v = 0; v <= JMAX; v += 50) lab(`${v}`, CH.ax - 6, Y(v * 1000) + ts(4), 'r', ts(11), [60, 60, 60]);
+    for (let v = 0; v <= JMAX; v += tick) lab(`${v}`, CH.ax - 6, Y(v * 1000) + ts(4), 'r', ts(11), [60, 60, 60]);
     lab('Q (kJ)', CH.ax - 6, CH.y1 - ts(18), 'l', ts(12), [60, 60, 60]);
     lab(fk(Qv), xv + CH.bw / 2, Y(Qv) - 6, 'c', ts(11));
     lab(fk(Qj), xj + CH.bw / 2, Y(Math.max(Qj, Qv)) - 8, 'c', ts(11));

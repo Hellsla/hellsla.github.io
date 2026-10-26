@@ -290,10 +290,10 @@
   "note": "readout for case 4: all water freezes and T = −3,5 °C"
  },
  {
-  "expr": "(() => { const d=[...document.querySelectorAll('#sim details.sim-box')], m=d.find(x=>x.querySelector('summary').textContent==='Mallin oletukset'), c=d.find(x=>x.querySelector('summary').textContent==='Laskennan selitys'); return d.length===3 && d.every(x=>!x.open) && m && /1,8\\ss/.test(m.textContent) && m.textContent.includes('vain havainnollistus') && m.textContent.includes('eristetty') && /334\\skJ\\/kg/.test(m.textContent) && c && /0–250\\skJ/.test(c.textContent) && !document.querySelector('#sim-root p') ? 1 : 0 })()",
+  "expr": "(() => { const d=[...document.querySelectorAll('#sim details.sim-box')], m=d.find(x=>x.querySelector('summary').textContent==='Mallin oletukset'), c=d.find(x=>x.querySelector('summary').textContent==='Laskennan selitys'); return d.length===3 && d.every(x=>!x.open) && m && /1,8\\ss/.test(m.textContent) && m.textContent.includes('vain havainnollistus') && m.textContent.includes('eristetty') && /334\\skJ\\/kg/.test(m.textContent) && c && /0–250\\skJ/.test(c.textContent) && /0–50,\\s0–100\\stai\\s0–250\\skJ/.test(c.textContent) && !document.querySelector('#sim-root p') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "explanations behind three closed boxes under the sim: Mallin oletukset says the vessel is insulated, c and s values, the approach rate (time constant 1,8 s) is only an illustration; Laskennan selitys gives the case rule and the chart scale; no explanatory paragraph inside the sim"
+  "note": "explanations behind three closed boxes under the sim: Mallin oletukset says the vessel is insulated, c and s values, the approach rate (time constant 1,8 s) is only an illustration; Laskennan selitys gives the case rule and the chart scale; no explanatory paragraph inside the sim; the chart scale is 0–50, 0–100 or 0–250 kJ"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
@@ -334,10 +334,10 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
-  "expr": "(() => { const L=window.simState.labels.map(a=>a.s).join('|'); return L.includes('vesi 20,0 °C') && L.includes('jää 0,0 °C') && L.includes('jäätä 100 g') && L.includes('Q (kJ)') && L.includes('luovuttaa') && L.includes('lämmitys') && L.includes('sulatus') && L.includes('250') ? 1 : 0 })()",
+  "expr": "(() => { const L=window.simState.labels.map(a=>a.s).join('|'); return L.includes('vesi 20,0 °C') && L.includes('jää 0,0 °C') && L.includes('jäätä 100 g') && L.includes('Q (kJ)') && L.includes('luovuttaa') && L.includes('lämmitys') && L.includes('sulatus') && window.simState.JMAX===50 && window.simState.labels.some(a=>a.s==='50') && !window.simState.labels.some(a=>a.s==='250') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "canvas labels: temperatures, ice mass, axis title and ticks up to 250 kJ and the legend"
+  "note": "canvas labels: temperatures, ice mass, axis title, legend; at the default values the axis autoscales to 0–50 kJ (top tick 50, no 250)"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
@@ -384,5 +384,47 @@
   "expected": 1,
   "tol": 0,
   "note": "Nopeus hidas changes no value: the end state and the heats stay the same and the run is not reset"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=40; r[2].value=0.1; r[3].value=0;",
+  "expr": "window.simState.JMAX===100 && window.simState.labels.some(a=>a.s==='100') && window.simState.labels.some(a=>a.s==='20') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "chart autoscale: water at 40 °C gives off 50,3 kJ, so the axis is 0–100 kJ with ticks every 20"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.5; r[1].value=80; r[2].value=0.5; r[3].value=-40;",
+  "expr": "window.simState.JMAX===250 && window.simState.labels.some(a=>a.s==='250') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "chart autoscale: the largest budget (ice needs 209 kJ) uses the 0–250 kJ axis"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.1; r[1].value=10; r[2].value=0.5; r[3].value=-40;",
+  "expr": "(() => { const sel=[...document.querySelectorAll('#sim-root label')].find(l=>/^\\s*Nopeus/.test(l.textContent)).querySelector('select'); sel.value='2'; sel.dispatchEvent(new Event('change')); const mI=window.simState.mI*1000; let bad=0, n=0, t0=performance.now(); document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true})); return new Promise(res => { const f=() => { const S=window.simState; if (S.running) { n++; if (S.waterNowG > 1e-6 && S.TW < -1e-9) bad++; if (S.iceNowG > 1e-6 && S.TI > 1e-9) bad++; if (S.iceNowG < mI - 1e-6 && S.TI < -1e-9) bad++; } if ((!S.running && S.t > 0) || performance.now() - t0 > 15000) { sel.value='1'; sel.dispatchEvent(new Event('change')); res(bad===0 && n>20 && !S.running ? 1 : 0); } else requestAnimationFrame(f); }; requestAnimationFrame(f); }); })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "mid-animation, every frame of a full run (case 4 (all water freezes, T = −3,5 °C), speed nopea): no liquid water below 0 °C, no ice above 0 °C, and no original ice melts while it is below 0 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=60; r[2].value=0.1; r[3].value=-10;",
+  "expr": "(() => { const sel=[...document.querySelectorAll('#sim-root label')].find(l=>/^\\s*Nopeus/.test(l.textContent)).querySelector('select'); sel.value='2'; sel.dispatchEvent(new Event('change')); const mI=window.simState.mI*1000; let bad=0, n=0, t0=performance.now(); document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true})); return new Promise(res => { const f=() => { const S=window.simState; if (S.running) { n++; if (S.waterNowG > 1e-6 && S.TW < -1e-9) bad++; if (S.iceNowG > 1e-6 && S.TI > 1e-9) bad++; if (S.iceNowG < mI - 1e-6 && S.TI < -1e-9) bad++; } if ((!S.running && S.t > 0) || performance.now() - t0 > 15000) { sel.value='1'; sel.dispatchEvent(new Event('change')); res(bad===0 && n>20 && !S.running ? 1 : 0); } else requestAnimationFrame(f); }; requestAnimationFrame(f); }); })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "mid-animation, every frame of a full run (case 1 (60 °C water, −10 °C ice), speed nopea): no liquid water below 0 °C, no ice above 0 °C, and no original ice melts while it is below 0 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.1; r[1].value=5; r[2].value=0.5; r[3].value=-30;",
+  "expr": "(() => { const sel=[...document.querySelectorAll('#sim-root label')].find(l=>/^\\s*Nopeus/.test(l.textContent)).querySelector('select'); sel.value='2'; sel.dispatchEvent(new Event('change')); const mI=window.simState.mI*1000; let bad=0, n=0, t0=performance.now(); document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true})); return new Promise(res => { const f=() => { const S=window.simState; if (S.running) { n++; if (S.waterNowG > 1e-6 && S.TW < -1e-9) bad++; if (S.iceNowG > 1e-6 && S.TI > 1e-9) bad++; if (S.iceNowG < mI - 1e-6 && S.TI < -1e-9) bad++; } if ((!S.running && S.t > 0) || performance.now() - t0 > 15000) { sel.value='1'; sel.dispatchEvent(new Event('change')); res(bad===0 && n>20 && !S.running ? 1 : 0); } else requestAnimationFrame(f); }; requestAnimationFrame(f); }); })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "mid-animation, every frame of a full run (case 3 (cold ice freezes 88 g of water), speed nopea): no liquid water below 0 °C, no ice above 0 °C, and no original ice melts while it is below 0 °C"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
+  "expr": "(() => { const sel=[...document.querySelectorAll('#sim-root label')].find(l=>/^\\s*Nopeus/.test(l.textContent)).querySelector('select'); sel.value='2'; sel.dispatchEvent(new Event('change')); const mI=window.simState.mI*1000; let bad=0, n=0, t0=performance.now(); document.querySelector('#sim-root button').dispatchEvent(new MouseEvent('mousedown', {bubbles: true})); return new Promise(res => { const f=() => { const S=window.simState; if (S.running) { n++; if (S.waterNowG > 1e-6 && S.TW < -1e-9) bad++; if (S.iceNowG > 1e-6 && S.TI > 1e-9) bad++; if (S.iceNowG < mI - 1e-6 && S.TI < -1e-9) bad++; } if ((!S.running && S.t > 0) || performance.now() - t0 > 15000) { sel.value='1'; sel.dispatchEvent(new Event('change')); res(bad===0 && n>20 && !S.running ? 1 : 0); } else requestAnimationFrame(f); }; requestAnimationFrame(f); }); })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "mid-animation, every frame of a full run (case 2 (default), speed nopea): no liquid water below 0 °C, no ice above 0 °C, and no original ice melts while it is below 0 °C"
  }
 ]

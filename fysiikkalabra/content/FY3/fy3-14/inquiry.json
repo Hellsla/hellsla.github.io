@@ -11,8 +11,8 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Kesäpäivänä kaadat lasiin 0,30 kg vettä, jonka lämpötila on 20 °C, ja pudotat siihen jääkuutioita, joita on yhteensä 0,10 kg ja jotka ovat juuri sulamispisteessään, 0 °C:ssa. Sekoitat ja odotat, kunnes lämpö on tasoittunut. Lasi on hyvin eristetty, joten ympäristö ei vaikuta tulokseen.",
-      "question": "Onko lasissa lopuksi vielä jäätä, ja mikä on veden lämpötila?"
+      "text": "Kesäpäivänä pudotat huoneenlämpöiseen mehulasiin muutaman jääkuution. Jäät ovat itse vain 0-asteisia, mutta mehu viilenee nopeasti, paljon enemmän kuin jos lisäisit saman määrän 0-asteista vettä. Kun lämpö on tasoittunut, lasin pohjalla voi silti kellua jäätä.",
+      "question": "Miksi 0-asteinen jää viilentää juomaa niin paljon tehokkaammin kuin 0-asteinen vesi, ja miksi kaikki jää ei aina sula?"
     },
     {
       "id": "kertaus",
@@ -88,7 +88,7 @@
           "feedback": "Mallin arvot kumoavat tämän: jäätä jää 12,6 g enemmän. Sulamislämpö on todella sama, mutta −20-asteinen jää on ensin lämmitettävä 0 °C:seen, ja se kuluttaa 4,2 kJ veden luovuttamasta lämmöstä."
         },
         {
-          "text": "Vain vähän enemmän, koska jään lämmittäminen 0 °C:seen vaatii paljon vähemmän energiaa kuin sen sulattaminen.",
+          "text": "Noin 13 g enemmän: jään lämmittäminen 0 °C:seen vie noin 4 kJ, ja sen verran vähemmän lämpöä jää sulattamiseen.",
           "correct": true,
           "feedback": "Mallin arvot tukevat tätä: 0-asteista jäätä jää 5,9 g ja −20-asteista 18,5 g, eli ero on 12,6 g. Jään lämmittäminen −20 °C:sta 0 °C:seen vie 4,2 kJ, kun sen sulattaminen vie 33,4 kJ: lämmitys on vain noin kahdeksasosa sulatuksesta."
         },
@@ -107,9 +107,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Pudota jäätä veteen kalorimetrissä. Palkit oikealla näyttävät, paljonko lämpöä vesi voi luovuttaa ja paljonko jää tarvitsee lämmetäkseen ja sulaakseen.",
-      "howto": "Säädä veden massa ja lämpötila sekä jään massa ja lämpötila ja paina *Sekoita*. Jääkuutiot putoavat veteen ja sulavat; kuvassa näkyvät veden ja jään lämpötilat ja jään massa. Oranssi palkki on veden luovuttama lämpömäärä, tumma sininen jään lämmitys 0 °C:seen ja vaalea sininen kaiken jään sulatus. Palkin osa, joka ylittää oranssin palkin korkeuden, on piirretty himmeänä: sitä lämpöä ei ole, ja vastaava jää ei sula. Kun muutat jotakin arvoa, jää nousee pois vedestä ja koe alkaa alusta. *Nopeus* muuttaa vain animaation tahtia, ei tuloksia.",
+      "howto": "Säädä veden massa ja lämpötila sekä jään massa ja lämpötila ja paina *Sekoita*. Jääkuutiot putoavat veteen ja sulavat; kuvassa näkyvät veden ja jään lämpötilat ja jään massa. Oranssi palkki on veden luovuttama lämpömäärä, tumma sininen jään lämmitys 0 °C:seen ja vaalea sininen kaiken jään sulatus. Palkin osa, joka ylittää oranssin palkin korkeuden, on piirretty himmeänä: vesi ei luovuta sitä jäähtyessään 0 °C:seen. Jos himmeä osa on sulatusta, vastaava jää jää sulamatta. Jos himmeänä on osa lämmityksestä, sen lämmön antaa jäätyvä vesi. Kun muutat jotakin arvoa, jää nousee pois vedestä ja koe alkaa alusta. *Nopeus* muuttaa vain animaation tahtia, ei tuloksia.",
       "model": "Astia on täysin eristetty: lämpöä ei siirry ympäristöön eikä astiaan, joten veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Veden ominaislämpökapasiteetti on 4190 J/(kg·K), jään 2100 J/(kg·K) ja jään ominaissulamislämpö 334 kJ/kg. Jäätä ja vettä on yhtä aikaa vain lämpötilassa 0 °C. Lopputila, lämpömäärät ja massat ovat mallin laskemia arvoja, eivät mittauksia. Lähestymisen nopeus (aikavakio 1,8 s) on vain havainnollistus, ei fysikaalinen malli: todellisuudessa se riippuu sekoittamisesta ja jääkuutioiden koosta.",
-      "calc": "Veden luovuttama lämpömäärä jäähtyessä 0 °C:seen on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$. Jään tarvitsema lämpömäärä on lämmitykseen $c_\\text{j} m_\\text{j} \\Delta T_\\text{j}$ ja kaiken jään sulatukseen $s m_\\text{j}$. Jos $Q_\\text{v}$ on niiden summa tai suurempi, kaikki jää sulaa ja\n\n$$T = \\frac{Q_\\text{v} - c_\\text{j} m_\\text{j} \\Delta T_\\text{j} - s m_\\text{j}}{c_\\text{v} (m_\\text{v} + m_\\text{j})}$$\n\nMuuten jäätä jää, lämpötila on 0 °C ja sulaneen jään massa on $m_\\text{s} = \\dfrac{Q_\\text{v} - c_\\text{j} m_\\text{j} \\Delta T_\\text{j}}{s}$. Jos $Q_\\text{v}$ ei riitä jään lämmittämiseen, osa vedestä jäätyy; kun kaikki vesi jäätyy, lämpötila ratkaistaan energiataseesta. Palkkien asteikko on 0–250 kJ."
+      "calc": "Veden luovuttama lämpömäärä jäähtyessä 0 °C:seen on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$. Jään tarvitsema lämpömäärä on lämmitykseen $c_\\text{j} m_\\text{j} \\Delta T_\\text{j}$ ja kaiken jään sulatukseen $s m_\\text{j}$. Jos $Q_\\text{v}$ on niiden summa tai suurempi, kaikki jää sulaa ja\n\n$$T = \\frac{Q_\\text{v} - c_\\text{j} m_\\text{j} \\Delta T_\\text{j} - s m_\\text{j}}{c_\\text{v} (m_\\text{v} + m_\\text{j})}$$\n\nMuuten jäätä jää, lämpötila on 0 °C ja sulaneen jään massa on $m_\\text{s} = \\dfrac{Q_\\text{v} - c_\\text{j} m_\\text{j} \\Delta T_\\text{j}}{s}$. Jos $Q_\\text{v}$ ei riitä jään lämmittämiseen, osa vedestä jäätyy; kun kaikki vesi jäätyy, lämpötila ratkaistaan energiataseesta. Palkkien asteikko on 0–50, 0–100 tai 0–250 kJ: pienin, johon molemmat palkit mahtuvat."
     },
     {
       "id": "koe-1",
@@ -148,7 +148,7 @@
         },
         {
           "key": "iceLeftG",
-          "label": "jäätä jäljellä (g)"
+          "label": "jää (g)"
         }
       ],
       "min": 3,
@@ -202,7 +202,7 @@
         },
         {
           "key": "iceLeftG",
-          "label": "jäätä jäljellä (g)"
+          "label": "jää (g)"
         }
       ],
       "min": 2,
