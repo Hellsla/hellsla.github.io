@@ -82,7 +82,7 @@ new p5((p) => {
     p.noStroke(); p.fill(90); p.textSize(ts(12)); p.textAlign(p.CENTER);
     p.text('s (m)', G.x + G.w - 10, G.y + G.h + ts(30)); p.text(`${fi(s, 1)}`, xS, G.y + G.h + ts(15));
     p.textAlign(p.RIGHT); p.text('F (N)', G.x + ts(20), G.y - 8); p.text(`${F}`, G.x - 6, yF + 4);
-    p.textAlign(p.CENTER); p.fill(26, 77, 46); p.textSize(ts(13)); p.text('W = pinta-ala', G.x + G.w / 2, G.y - 8 - ts(14));
+    p.textAlign(p.CENTER); p.fill(26, 77, 46); p.textSize(ts(13)); p.text('W = pinta-ala', G.x + G.w / 2, Math.max(G.y - 8 - ts(14), ts(13) + 6));   // clear of the canvas top on a phone
 
     // progress bar: filled fraction of the total work
     const barX = 20, barY = 330, barW = 560, barH = 16;

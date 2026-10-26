@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Sana *työ* saa tarkan merkityksen: liikkeen suuntainen voima kertaa matka, $W = Fs$, eli (s,F)-kuvaajan pinta-ala. Teho kertoo, kuinka nopeasti työ tehdään.",
+  "contribution": "Sana *työ* saa tarkan merkityksen: liikkeen suuntainen voima kertaa matka, $W = Fs$, eli $(s, F)$-kuvaajan pinta-ala. Teho kertoo, kuinka nopeasti työ tehdään.",
   "prior": [
     "Painovoima $G = mg$ ja voima vuorovaikutuksen mittana (luku *Voima vuorovaikutuksen mittana ja paino*)",
     "Kuvaajan lukeminen: akselit, yksiköt, suoran kulmakerroin"
@@ -53,7 +53,7 @@
       "choices": [
         {
           "text": "Työ pysyy samana, koska voima ei muutu.",
-          "feedback": "Mallin arvot näyttävät, että työ kasvaa, vaikka voima pysyy samana. Työ riippuu myös matkasta: (s,F)-kuvaajan pinta-ala levenee, kun s kasvaa."
+          "feedback": "Mallin arvot näyttävät, että työ kasvaa, vaikka voima pysyy samana. Työ riippuu myös matkasta: $(s, F)$-kuvaajan pinta-ala levenee, kun $s$ kasvaa."
         },
         {
           "text": "Työ kaksinkertaistuu.",
@@ -103,21 +103,21 @@
       "type": "choice",
       "layout": "models",
       "title": "Ennuste 3: reppu käytävällä",
-      "prompt": "Kannat 98 N painoista reppua 20 m vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, sillä siinä voima on aina liikkeen suuntainen; vertaa ennustettasi Selitä-vaiheen malliin ja kuvaan.",
+      "prompt": "Kannat 98 N painoista reppua 20 m vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, sillä siinä voima on aina liikkeen suuntainen; vertaa ennustettasi Teoriatiivistelmän malliin ja kuvaan.",
       "justify": true,
       "choices": [
         {
           "text": "Aino: $W = Fs = 98\\,\\text{N} \\cdot 20\\,\\text{m} \\approx 2{,}0\\,\\text{kJ}$, koska voima vaikuttaa koko matkan.",
-          "feedback": "Kaava $W = Fs$ pätee vain, kun voima on liikkeen suuntainen. Kannatteleva voima osoittaa ylös, mutta reppu liikkuu sivulle. Palaa tähän Selitä-vaiheessa."
+          "feedback": "Kaava $W = Fs$ pätee vain, kun voima on liikkeen suuntainen. Kannatteleva voima osoittaa ylös, mutta reppu liikkuu sivulle. Palaa tähän Teoriatiivistelmässä."
         },
         {
           "text": "Bea: $W = 0$, koska voima on kohtisuorassa liikettä vastaan eikä reppuun siirry energiaa.",
           "correct": true,
-          "feedback": "Juuri näin: liikettä vastaan kohtisuora voima ei tee työtä. Lihaksesi kuluttavat silti energiaa voiman ylläpitoon, mutta se ei ole reppuun tehtyä työtä. Todiste on Selitä-vaiheen kuvassa ja mallissa: työ lasketaan vain liikkeen suuntaisesta voimasta, ja kannattelevalla voimalla sitä ei ole."
+          "feedback": "Juuri näin: liikettä vastaan kohtisuora voima ei tee työtä. Lihaksesi kuluttavat silti energiaa voiman ylläpitoon, mutta se ei ole reppuun tehtyä työtä. Todiste on Teoriatiivistelmän kuvassa ja mallissa: työ lasketaan vain liikkeen suuntaisesta voimasta, ja kannattelevalla voimalla sitä ei ole."
         },
         {
           "text": "Cem: Työ on jotain nollan ja 2,0 kJ:n väliltä, koska osa voimasta on liikkeen suuntainen.",
-          "feedback": "Tasaisella vauhdilla vaakasuoralla käytävällä reppuun ei tarvita vaakasuoraa voimaa (ilmanvastusta ei huomioida), joten kannatteleva voima on pystysuora ja sen työ on nolla. Selitä-vaihe palaa tähän."
+          "feedback": "Tasaisella vauhdilla vaakasuoralla käytävällä reppuun ei tarvita vaakasuoraa voimaa (ilmanvastusta ei huomioida), joten kannatteleva voima on pystysuora ja sen työ on nolla. Teoriatiivistelmä palaa tähän."
         }
       ]
     },
@@ -125,8 +125,8 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa, paina *Vedä* ja seuraa, miten (s,F)-kuvaajan pinta-ala täyttyy. Arvot W ja P ovat simulaation laskemia mallin arvoja, eivät mittauksia oikeasta laatikosta.",
-      "howto": "*Nopeus* muuttaa vain animaation tahtia: laatikko kulkee matkan $s$ simuloidussa ajassa $t$, ja W ja P pysyvät samoina.",
+      "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa, paina *Vedä* ja seuraa, miten $(s,F)$-kuvaajan pinta-ala täyttyy. Arvot $W$ ja $P$ ovat simulaation laskemia mallin arvoja, eivät mittauksia oikeasta laatikosta.",
+      "howto": "*Nopeus* muuttaa vain animaation tahtia: laatikko kulkee matkan $s$ simuloidussa ajassa $t$, ja $W$ ja $P$ pysyvät samoina.",
       "model": "Laatikko liikkuu vakiovauhdilla: kitkavoima on yhtä suuri kuin vetävä voima, ja vetävän voiman tekemä työ muuttuu lämmöksi."
     },
     {
@@ -196,7 +196,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Joulen koe: mihin työ menee?",
-      "text": "Joulen kokeessa putoava paino pyörittää siipipyörää vesiastiassa, ja veden lämpötila nousee. Taulukossa on kokeen tapaiset *esimerkkiarvot* (eivät Joulen alkuperäisiä mittauksia): painon tekemä työ $W = Gh$ ja veden saama lämpömäärä $Q$, joka laskettiin lämpötilan noususta.\n\n| Pudotuksia | W (J) | Q (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
+      "text": "Joulen kokeessa putoava paino pyörittää siipipyörää vesiastiassa, ja veden lämpötila nousee. Taulukossa on kokeen tapaiset *esimerkkiarvot* (eivät Joulen alkuperäisiä mittauksia): painon tekemä työ $W = Gh$ ja veden saama lämpömäärä $Q$, joka laskettiin lämpötilan noususta.\n\n| Pudotuksia | $W$ (J) | $Q$ (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
       "question": {
         "type": "choice",
         "prompt": "Mitä taulukko kertoo työn ja lämmön suhteesta?",
@@ -258,7 +258,7 @@
           "feedback": "Joule on työn yksikkö, ja $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$. Yksikkö on oikein; virhe on muualla."
         },
         {
-          "text": "Voima ei ole 40 N koko matkalla. Työ on (s,F)-kuvaajan kolmion pinta-ala, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0{,}20\\,\\text{m} = 4{,}0\\,\\text{J}$.",
+          "text": "Voima ei ole 40 N koko matkalla. Työ on $(s, F)$-kuvaajan kolmion pinta-ala, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0{,}20\\,\\text{m} = 4{,}0\\,\\text{J}$.",
           "correct": true,
           "feedback": "Oikein. $W = Fs$ pätee vakiovoimalle. Kun voima kasvaa tasaisesti nollasta, keskimääräinen voima on puolet huippuarvosta, ja työ on puolet opiskelijan tuloksesta."
         },
@@ -313,7 +313,7 @@
       "choices": [
         {
           "text": "saman työn, koska venymä kasvaa yhtä paljon.",
-          "feedback": "Voima on jälkimmäisellä välillä suurempi, joten (s,F)-kuvaajan pinta-ala on siellä suurempi. Piirrä kolmio ja jaa se pystyviivalla kohdasta 10 cm."
+          "feedback": "Voima on jälkimmäisellä välillä suurempi, joten $(s, F)$-kuvaajan pinta-ala on siellä suurempi. Piirrä kolmio ja jaa se pystyviivalla kohdasta 10 cm."
         },
         {
           "text": "kaksinkertaisen työn, koska voima on lopussa kaksinkertainen.",
@@ -322,7 +322,7 @@
         {
           "text": "kolminkertaisen työn.",
           "correct": true,
-          "feedback": "Oikein. (s,F)-kuvaaja on kolmio: välin 0–10 cm pinta-ala on 1 osa ja välin 0–20 cm 4 osaa, joten välin 10–20 cm pinta-ala on 3 osaa."
+          "feedback": "Oikein. $(s, F)$-kuvaaja on kolmio: välin 0–10 cm pinta-ala on 1 osa ja välin 0–20 cm 4 osaa, joten välin 10–20 cm pinta-ala on 3 osaa."
         }
       ]
     },
@@ -331,7 +331,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Kuvaaja ja laskeminen",
-      "prompt": "(s,F)-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–4,0 m ja laskee sitten tasaisesti nollaan välillä 4,0–8,0 m. Kuinka suuren työn voima tekee koko 8,0 m:n matkalla? Vastaa jouleina.",
+      "prompt": "$(s, F)$-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–4,0 m ja laskee sitten tasaisesti nollaan välillä 4,0–8,0 m. Kuinka suuren työn voima tekee koko 8,0 m:n matkalla? Vastaa jouleina.",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02,

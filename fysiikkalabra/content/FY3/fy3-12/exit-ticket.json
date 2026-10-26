@@ -1,7 +1,7 @@
 [
   {
     "q": "Seinän U-arvo on 0,20 W/(m²·K) ja pinta-ala 50 m². Sisällä on 20 °C ja ulkona −10 °C. Kuinka suuri lämpöteho siirtyy seinän läpi?",
-    "a": "P = UAΔT = 0,20 W/(m²·K) · 50 m² · 30 K = 300 W."
+    "a": "$P = UA\\Delta T = 0{,}20\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 50\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 300\\,\\text{W}$."
   },
   {
     "q": "Millä kolmella tavalla lämpö siirtyy? Anna jokaisesta yksi esimerkki kodista.",

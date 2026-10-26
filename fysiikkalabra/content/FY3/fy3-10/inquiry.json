@@ -158,14 +158,14 @@
       "type": "sim",
       "text": "Simulaatio on ideaalikaasun hiukkasmalli: pistemäiset hiukkaset törmäävät vain seiniin, eivät toisiinsa. Kokeile vapaasti, miten välähdykset seinissä muuttuvat, kun muutat säätimiä.",
       "model": "Laatikko on tasomalli, jossa pinta-ala vastaa tilavuutta.",
-      "calc": "Paine näytetään suhteessa vertailutilaan (N = 100, T = 300 K, V = 100 %). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin 2 sekunnin ajalta, joten se heiluu hieman."
+      "calc": "Paine näytetään suhteessa vertailutilaan ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin 2 sekunnin ajalta, joten se heiluu hieman."
     },
     {
       "id": "exp-1",
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain hiukkasmäärä muuttuu",
-      "intro": "Testaa ennusteesi. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi N = 50, 100 ja 200; rivi N = 100 tarvitaan vielä Kokeessa 2. *Mitattu paine* ja osumat ovat liukuvia keskiarvoja: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten.",
+      "intro": "Testaa ennusteesi. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi $N = 50$, $100$ ja $200$; rivi $N = 100$ tarvitaan vielä Kokeessa 2. *Mitattu paine* ja osumat ovat liukuvia keskiarvoja: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten.",
       "initial": {
         "N": 100,
         "T": 300,
@@ -203,7 +203,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: kuumempi kaasu, sama paine",
-      "intro": "Ratkaise haaste. Lämpötila on nyt 600 K eli kaksi kertaa vertailutilan 300 K. Kirjaa ensin rivi N = 100 ja vertaa painetta Kokeen 1 riviin N = 100. Etsi sitten hiukkasmäärä, jolla mitattu paine on taas noin 1,00, ja kirjaa se. Paina joka muutoksen jälkeen *Nollaa mittaus* ja odota noin 2 s:n keskiarvo ennen kirjaamista.",
+      "intro": "Ratkaise haaste. Lämpötila on nyt 600 K eli kaksi kertaa vertailutilan 300 K. Kirjaa ensin rivi $N = 100$ ja vertaa painetta Kokeen 1 riviin $N = 100$. Etsi sitten hiukkasmäärä, jolla mitattu paine on taas noin 1,00, ja kirjaa se. Paina joka muutoksen jälkeen *Nollaa mittaus* ja odota noin 2 s:n keskiarvo ennen kirjaamista.",
       "initial": {
         "N": 100,
         "T": 600,
@@ -238,7 +238,7 @@
         "unit": "",
         "tolerance": 0.02,
         "hints": [
-          "Kasvattiko lämpötilan nousu painetta, ja kuinka moninkertaiseksi? Katso rivi N = 100.",
+          "Kasvattiko lämpötilan nousu painetta, ja kuinka moninkertaiseksi? Katso rivi $N = 100$.",
           "Kokeen 1 mukaan paine on verrannollinen hiukkasmäärään. Kuinka paljon hiukkasmäärää pitää muuttaa, jotta kaksinkertainen paine palaa ennalleen?",
           "600 K:ssä ja 100 hiukkasella $p/p_\\text{ref} \\approx 2{,}0$. Paine puolittuu, kun hiukkasmäärä puolitetaan."
         ],
@@ -249,14 +249,14 @@
           },
           {
             "value": 71,
-            "feedback": "Jaoit luvulla $\\sqrt{2} \\approx 1{,}41$. Rivi N = 100 näyttää kuitenkin, että paine kaksinkertaistui, kun lämpötila kaksinkertaistui. Kaksinkertainen paine palaa ennalleen, kun hiukkasmäärä puolitetaan."
+            "feedback": "Jaoit luvulla $\\sqrt{2} \\approx 1{,}41$. Rivi $N = 100$ näyttää kuitenkin, että paine kaksinkertaistui, kun lämpötila kaksinkertaistui. Kaksinkertainen paine palaa ennalleen, kun hiukkasmäärä puolitetaan."
           },
           {
             "value": 25,
             "feedback": "Lämpötila kaksinkertaistui kerran, joten paine kaksinkertaistui kerran. Hiukkasmäärä puolitetaan kerran: 25 hiukkasella paine olisi 0,50."
           }
         ],
-        "solution": "Kokeen 1 mukaan $p \\propto N$, ja rivi N = 100 näyttää, että 600 K:ssä $p/p_\\text{ref} \\approx 2{,}0$ eli $p \\propto T$. Paine pysyy samana, kun tulo $NT$ pysyy samana: $N_2 = N_1 \\cdot \\dfrac{T_1}{T_2} = 100 \\cdot \\dfrac{300\\,\\text{K}}{600\\,\\text{K}} = 50$."
+        "solution": "Kokeen 1 mukaan $p \\propto N$, ja rivi $N = 100$ näyttää, että 600 K:ssä $p/p_\\text{ref} \\approx 2{,}0$ eli $p \\propto T$. Paine pysyy samana, kun tulo $NT$ pysyy samana: $N_2 = N_1 \\cdot \\dfrac{T_1}{T_2} = 100 \\cdot \\dfrac{300\\,\\text{K}}{600\\,\\text{K}} = 50$."
       }
     },
     {
@@ -264,7 +264,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Mikä pysyy samana?",
-      "text": "Taulukossa on simulaation *esimerkkiarvoja* viidestä tilasta, joissa hiukkasmäärä, lämpötila ja tilavuus muuttuvat yhtä aikaa. $p/p_\\text{ref}$ on mitattu paine, 2 s:n keskiarvo 20 s:n ajon lopussa. Viimeisessä sarakkeessa mitattu paine on kerrottu tilavuudella ja jaettu hiukkasmäärällä ja lämpötilalla, kaikki suhteessa vertailutilaan (N = 100, T = 300 K, V = 100 %).\n\n| N | T (K) | V (%) | $p/p_\\text{ref}$ | $pV/(NT)$ |\n|---|---|---|---|---|\n| 100 | 300 | 100 | 1,05 | 1,05 |\n| 200 | 300 | 100 | 2,00 | 1,00 |\n| 100 | 600 | 50 | 3,91 | 0,98 |\n| 50 | 150 | 25 | 0,98 | 0,98 |\n| 180 | 300 | 35 | 5,11 | 0,99 |",
+      "text": "Taulukossa on simulaation *esimerkkiarvoja* viidestä tilasta, joissa hiukkasmäärä, lämpötila ja tilavuus muuttuvat yhtä aikaa. $p/p_\\text{ref}$ on mitattu paine, 2 s:n keskiarvo 20 s:n ajon lopussa. Viimeisessä sarakkeessa mitattu paine on kerrottu tilavuudella ja jaettu hiukkasmäärällä ja lämpötilalla, kaikki suhteessa vertailutilaan ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$).\n\n| $N$ | $T$ (K) | $V$ (%) | $p/p_\\text{ref}$ | $pV/(NT)$ |\n|---|---|---|---|---|\n| 100 | 300 | 100 | 1,05 | 1,05 |\n| 200 | 300 | 100 | 2,00 | 1,00 |\n| 100 | 600 | 50 | 3,91 | 0,98 |\n| 50 | 150 | 25 | 0,98 | 0,98 |\n| 180 | 300 | 35 | 5,11 | 0,99 |",
       "question": {
         "type": "choice",
         "prompt": "Mitä viimeinen sarake kertoo?",
@@ -272,7 +272,7 @@
           {
             "text": "Suure $pV/(NT)$ on kaikissa tiloissa lähes sama, noin 1. Erot ovat mittauksen satunnaista vaihtelua.",
             "correct": true,
-            "feedback": "Juuri näin: vaikka paine vaihtelee arvosta 0,98 arvoon 5,11, suure $pV/(NT)$ pysyy muutaman prosentin päässä luvusta 1. Kun hiukkasmäärä ilmaistaan ainemääränä n, tästä vakiosta tulee moolinen kaasuvakio R ja yhtälöstä $pV = nRT$."
+            "feedback": "Juuri näin: vaikka paine vaihtelee arvosta 0,98 arvoon 5,11, suure $pV/(NT)$ pysyy muutaman prosentin päässä luvusta 1. Kun hiukkasmäärä ilmaistaan ainemääränä $n$, tästä vakiosta tulee moolinen kaasuvakio $R$ ja yhtälöstä $pV = nRT$."
           },
           {
             "text": "Paine on sama kaikissa tiloissa.",
@@ -352,7 +352,7 @@
       "choices": [
         {
           "text": "Paine pitäisi sijoittaa kilopascaleina, 101 kPa.",
-          "feedback": "Pascal on oikea yksikkö, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen R:n yksikön kanssa. Kilopascaleilla tulos olisi tuhatkertaisesti väärä. Virhe on muualla."
+          "feedback": "Pascal on oikea yksikkö, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen $R$:n yksikön kanssa. Kilopascaleilla tulos olisi tuhatkertaisesti väärä. Virhe on muualla."
         },
         {
           "text": "Lämpötila on celsiusasteina. Kelvineinä $T = 293{,}15\\,\\text{K}$, ja $n \\approx 0{,}083\\,\\text{mol}$.",
@@ -361,7 +361,7 @@
         },
         {
           "text": "Tilavuus pitäisi sijoittaa litroina, 2,0 l.",
-          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\text{l} = 0{,}0020\\,\\text{m}^3$, ja vain se sopii yhteen pascalin ja R:n yksikön kanssa. Virhe on muualla."
+          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\text{l} = 0{,}0020\\,\\text{m}^3$, ja vain se sopii yhteen pascalin ja $R$:n yksikön kanssa. Virhe on muualla."
         },
         {
           "text": "Laskussa ei ole virhettä.",
@@ -390,7 +390,7 @@
         },
         {
           "value": 2.64,
-          "feedback": "Sijoitit paineen kilopascaleina. R:n yksikkö on joule, ja $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$, joten paine on pascaleina: $101\\,000\\,\\text{Pa}$."
+          "feedback": "Sijoitit paineen kilopascaleina. $R$:n yksikkö on joule, ja $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$, joten paine on pascaleina: $101\\,000\\,\\text{Pa}$."
         }
       ],
       "solution": "**Ratkaisu symbolisesti.** Tilanyhtälöstä $n = \\dfrac{pV}{RT}$ ja massa $m = nM = \\dfrac{pVM}{RT}$.\n\n**Sijoitus.** $T = 373{,}15\\,\\text{K}$ ja $M = 0{,}029\\,\\text{kg/mol}$:\n\n$$\\begin{aligned} n &= \\frac{101\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 373{,}15\\,\\text{K}} \\\\ &\\approx 91\\,200\\,\\text{mol} \\\\ m &= 91\\,200\\,\\text{mol} \\cdot 0{,}029\\,\\tfrac{\\text{kg}}{\\text{mol}} \\\\ &\\approx 2{,}6 \\cdot 10^3\\,\\text{kg} \\end{aligned}$$\n\n**Järkevyys.** Sama tilavuus 20 °C:n ulkoilmaa painaa noin $3{,}4 \\cdot 10^3\\,\\text{kg}$. Kuumassa ilmassa on samassa paineessa ja tilavuudessa vähemmän moolia, joten kuoren sisäilma on noin 700 kg kevyempää kuin sen syrjäyttämä ulkoilma. Tämä ero kantaa pallon, korin ja matkustajat."
@@ -432,7 +432,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Ennuste simulaation tilalle",
-      "prompt": "Simulaation vertailutilassa (N = 100, T = 300 K, V = 100 %) paine on $p/p_\\text{ref} = 1{,}00$. Hiukkasmäärä kasvatetaan 150:een, lämpötila nostetaan 450 K:iin ja tilavuus pienennetään 75 %:iin. Mikä on tilanyhtälön ennuste $p/p_\\text{ref}$?",
+      "prompt": "Simulaation vertailutilassa ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$) paine on $p/p_\\text{ref} = 1{,}00$. Hiukkasmäärä kasvatetaan 150:een, lämpötila nostetaan 450 K:iin ja tilavuus pienennetään 75 %:iin. Mikä on tilanyhtälön ennuste $p/p_\\text{ref}$?",
       "answer": 3.0,
       "unit": "",
       "tolerance": 0.02,
@@ -460,11 +460,11 @@
       "prompt": "Selitä punnituksen ja tilanyhtälön avulla, miksi kahdessa yhtä suuressa astiassa on samassa paineessa ja lämpötilassa yhtä monta moolia kaasua, olipa kaasu mikä tahansa. Miksi kaasut silti painavat eri verran?",
       "criteria": [
         "Sanon, että punnituksessa $m/M$ eli ainemäärä oli kaikilla kaasuilla lähes sama.",
-        "Sanon, että tilanyhtälöstä $n = pV/(RT)$, eikä siinä ole kaasun laatuun liittyvää suuretta: R on sama kaikille kaasuille.",
+        "Sanon, että tilanyhtälöstä $n = pV/(RT)$, eikä siinä ole kaasun laatuun liittyvää suuretta: $R$ on sama kaikille kaasuille.",
         "Sanon, että mooli on aina sama hiukkasmäärä, joten hiukkasiakin on yhtä monta.",
         "Selitän massojen eron moolimassalla: $m = nM$, ja raskaamman kaasun hiukkaset ovat raskaampia."
       ],
-      "model": "Punnituksessa jokaisella neljällä kaasulla oli sama paine, tilavuus ja lämpötila, ja osamäärä $m/M$ oli kaikilla lähes sama, heliumilla 0,2075 mol ja hiilidioksidilla 0,2068 mol. Tilanyhtälö selittää tämän: $n = pV/(RT)$, ja moolinen kaasuvakio R on sama kaikille kaasuille, joten samat p, V ja T antavat saman ainemäärän kaasun laadusta riippumatta. Mooli on aina sama hiukkasmäärä, joten hiukkasiakin on yhtä monta. Massat eroavat, koska $m = nM$: hiilidioksidihiukkanen on paljon raskaampi kuin heliumhiukkanen, joten sama ainemäärä hiilidioksidia painaa noin 11 kertaa enemmän."
+      "model": "Punnituksessa jokaisella neljällä kaasulla oli sama paine, tilavuus ja lämpötila, ja osamäärä $m/M$ oli kaikilla lähes sama, heliumilla 0,2075 mol ja hiilidioksidilla 0,2068 mol. Tilanyhtälö selittää tämän: $n = pV/(RT)$, ja moolinen kaasuvakio $R$ on sama kaikille kaasuille, joten samat $p$, $V$ ja $T$ antavat saman ainemäärän kaasun laadusta riippumatta. Mooli on aina sama hiukkasmäärä, joten hiukkasiakin on yhtä monta. Massat eroavat, koska $m = nM$: hiilidioksidihiukkanen on paljon raskaampi kuin heliumhiukkanen, joten sama ainemäärä hiilidioksidia painaa noin 11 kertaa enemmän."
     },
     {
       "id": "lahtolippu",

@@ -45,7 +45,7 @@
     {
       "id": "fy3-11-L2-01",
       "level": 2,
-      "text": "Puuhaketta ja turvetta polttava lauhdevoimalaitos tuottaa vuorokauden aikana sähköä 3 830 MWh. Samana aikana kattilassa palaneen polttoaineen energia on 33,6 TJ (1 TJ = 10¹² J). Mikä on laitoksen hyötysuhde? Anna vastaus prosentteina.",
+      "text": "Puuhaketta ja turvetta polttava lauhdevoimalaitos tuottaa vuorokauden aikana sähköä 3 830 MWh. Samana aikana kattilassa palaneen polttoaineen energia on 33,6 TJ ($1\\,\\text{TJ} = 10^{12}\\,\\text{J}$). Mikä on laitoksen hyötysuhde? Anna vastaus prosentteina.",
       "answer": 41.0,
       "unit": "%",
       "tolerance": 0.02

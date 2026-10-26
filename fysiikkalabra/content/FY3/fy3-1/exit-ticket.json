@@ -1,14 +1,14 @@
 [
   {
-    "q": "Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun (g = 1,62 m/s²)?",
+    "q": "Kappaleen massa on 3,0 kg. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun ($g = 1{,}62\\,\\text{m/s}^2$)?",
     "a": "Massa pysyy 3,0 kg:na. Paino pienenee Maan 29 N:sta Kuun 4,9 N:iin, eli noin kuudesosaan, koska Kuun ja kappaleen välinen vuorovaikutus on heikompi kuin Maan ja kappaleen."
   },
   {
     "q": "Voimamittarin jousi venyy 3,0 cm, kun siihen vaikuttaa 8,0 N:n voima. Kuinka paljon jousi venyy 20 N:n voimalla?",
-    "a": "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: 2,5 · 3,0 cm = 7,5 cm."
+    "a": "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: $2{,}5 \\cdot 3{,}0\\,\\text{cm} = 7{,}5\\,\\text{cm}$."
   },
   {
     "q": "Pullossa on 1,5 kg vettä. Mikä on veden paino Maassa, ja miksi lause ”vesi painaa puolitoista kiloa” on fysiikan kannalta epätarkka?",
-    "a": "G = m g = 1,5 kg · 9,81 m/s² ≈ 15 N. Kilogramma on massan yksikkö, mutta paino on voima, jonka yksikkö on newton: lause kertoo massan, ei painon."
+    "a": "$G = mg = 1{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. Kilogramma on massan yksikkö, mutta paino on voima, jonka yksikkö on newton: lause kertoo massan, ei painon."
   }
 ]

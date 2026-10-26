@@ -27,7 +27,7 @@
     {
       "id": "fy3-6-L1-04",
       "level": 1,
-      "text": "Mökin paljussa on 1200 kg vettä. Yön aikana vesi jäähtyy 38 °C:sta 31 °C:seen. Kuinka suuri on veteen siirtyvä lämpömäärä Q? Anna vastaus etumerkkeineen megajouleina (negatiivinen Q tarkoittaa, että vesi luovuttaa lämpöä).",
+      "text": "Mökin paljussa on 1200 kg vettä. Yön aikana vesi jäähtyy 38 °C:sta 31 °C:seen. Kuinka suuri on veteen siirtyvä lämpömäärä $Q$? Anna vastaus etumerkkeineen megajouleina (negatiivinen $Q$ tarkoittaa, että vesi luovuttaa lämpöä).",
       "answer": -35,
       "unit": "MJ",
       "tolerance": 0.02

@@ -126,7 +126,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa jäätä lämmitetään −20 °C:sta vakioteholla, kunnes se on 130-asteista höyryä.",
-      "howto": "Paina *Lämmitä* ja seuraa (t, T)-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan?",
+      "howto": "Paina *Lämmitä* ja seuraa $(t, T)$-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan?",
       "model": "Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen eikä höyry poistu astiasta. Ruudun arvot ovat mallin laskemia arvoja, eivät mittauksia oikeasta kattilasta."
     },
     {
@@ -315,7 +315,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Lämpenemiskäyrä",
-      "prompt": "Kattilaa lämmitetään 1500 W:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä (t, T) lämpötila on 100 °C:ssa vaakasuora hetkestä $t = 2{,}0\\,\\text{min}$ hetkeen $t = 17{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
+      "prompt": "Kattilaa lämmitetään 1500 W:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä $(t, T)$ lämpötila on 100 °C:ssa vaakasuora hetkestä $t = 2{,}0\\,\\text{min}$ hetkeen $t = 17{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
       "answer": 0.597,
       "unit": "kg",
       "tolerance": 0.02,

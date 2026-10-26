@@ -13,7 +13,12 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   with doubled backslashes in JSON. `solutions.md` is LaTeX too (teacher's rule 2026-10-26): every symbol, formula and
   value with its unit in inline `$...$` (`**Kaava:** $p = \dfrac{F}{A}$`, `**Sijoitus:** $p = \dfrac{720\,\text{N}}{0{,}30\,\text{m}^2} = 2400\,\text{Pa}$`),
   one `=` step after another on the Sijoitus line, words outside the maths; the lint reads the Vastaus value through
-  the LaTeX. Inline SVG labels are LaTeX as well (§3); only the simulation canvas is plain text.
+  the LaTeX. Inline SVG labels are LaTeX as well (§3). A symbol or formula named in the student's text is inline maths
+  everywhere: `lesson.md`, `inquiry.json`, `exercises.json`, `exit-ticket.json` ("$T$:hen", "$(V, p)$-kuvaaja"); a
+  number with its unit alone in prose stays plain ("98 N"). The experiments' Alkutila line and table headers turn
+  a symbol in `names`/`measure` labels into maths at build time (scripts/inquiry.py `tex_name`). Open (2026-10-26):
+  the simulation canvas and its DOM readout are still plain interface text; the teacher decides whether they move
+  to KaTeX, and until then a reviewer lists them as polish, not blocking.
 - Every formula appears once in display form with its symbols named; inline maths only for short references.
   Inline maths stays on one line.
 - Units: `40\,\text{N}`, `9{,}81\,\text{m/s}^2`. Decimal comma inside maths is `{,}`. Multiplication `\cdot`,

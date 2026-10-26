@@ -61,7 +61,7 @@
     {
       "id": "fy3-9-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana. Mitatut tilavuudet V (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet p (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake 1/V, piirrä p 1/V:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on pV. Anna se jouleina.",
+      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana. Mitatut tilavuudet $V$ (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet $p$ (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake $1/V$, piirrä $p$ $1/V$:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on $pV$. Anna se jouleina.",
       "answer": 2.0,
       "unit": "J",
       "tolerance": 0.05
@@ -87,7 +87,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "Auton renkaat täytetään 20 °C:n tallissa, ja rengaspainemittari näyttää 250 kPa. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan p₁/T₁ = p₂/T₂.",
+      "text": "Auton renkaat täytetään 20 °C:n tallissa, ja rengaspainemittari näyttää 250 kPa. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02

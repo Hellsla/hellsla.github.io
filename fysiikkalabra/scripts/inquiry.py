@@ -170,6 +170,33 @@ def validate(folder, inquiry, lesson_md):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
+GREEK = {"Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha "}
+SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
+SYMBOL = re.compile(r"[A-Za-zΔρθηγα][A-Za-zΔρθηγα₀-₉_/]*")
+
+
+def is_symbol(tok):
+    """A quantity symbol or a short formula of symbols (m, ΔL/L₀, p_ref, ρgh, pV), not a Finnish word."""
+    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγα₀-₉_/]", tok)))
+
+
+def sym_tex(tok):
+    """ΔL/L₀ -> \\Delta L/L_0, p_ref -> p_\\text{ref}, x_B -> x_\\text{B}."""
+    out = re.sub(r"_(\w+)", lambda m: r"_\text{" + m.group(1) + "}", tok)
+    out = re.sub(r"[₀-₉]+", lambda m: "_" + "".join(SUBS[c] for c in m.group(0)) if len(m.group(0)) == 1 else "_{" + "".join(SUBS[c] for c in m.group(0)) + "}", out)
+    for k, v in GREEK.items(): out = out.replace(k, v)
+    return out.strip()
+
+
+def tex_name(s):
+    """An experiment's quantity name or table label on the page, with its symbol as maths (NOTES 1): "massa m" ->
+    "massa $m$", "θ" -> "$\\theta$", "ΔT (K)" -> "$\\Delta T$ (K)", "p mitattu" -> "$p$ mitattu". Plain words stay."""
+    toks = str(s).split(" ")
+    for i in ([0, len(toks) - 1] if len(toks) > 1 else [0]):
+        if is_symbol(toks[i]): toks[i] = "$" + sym_tex(toks[i]) + "$"
+    return esc(" ".join(toks))
+
+
 def inline(md, text):
     """Markdown rendered without the outer <p>, for a choice, a legend or a prompt that sits inside another block."""
     h = md(text).strip()
@@ -250,20 +277,21 @@ def question_html(q, md, lid, aid):
 def experiment_html(a, md, lid):
     units = a.get("units", {}); names = a.get("names", {})
     nm = lambda k: esc(names.get(k, k))
+    tn = lambda k: tex_name(names.get(k, k))
     fi = lambda v: str(v).replace(".", ",") if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
-    fmt = lambda k, v: f"{nm(k)} = {esc(fi(v))}" + (f" {esc(units[k])}" if k in units else "")
+    fmt = lambda k, v: f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(units[k])}" if units.get(k) else "") + "</span>"   # name, value and unit on one line
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
-    locked = ", ".join(nm(k) for k in a["locked"]) or "ei mitään"
-    cols = "".join(f"<th>{esc(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
+    locked = ", ".join(tn(k) for k in a["locked"]) or "ei mitään"
+    cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
             f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([names.get(k, k) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
             f'<div class="intro">{md(a["intro"])}</div>'
-            f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {nm(a["vary"])}.</p>'
+            f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">Aseta alkutila</button><button type="button" class="exp-record">Kirjaa mittaus</button>'
             f'<button type="button" class="exp-reset">Nollaa</button></div>'
-            f'<table class="exp-table"><caption>Mittaukset</caption><thead><tr><th>{nm(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
+            f'<table class="exp-table"><caption>Mittaukset</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 
