@@ -1,6 +1,6 @@
 """Tests for scripts/reviews.py and the publishing rule in scripts/build.py. Usage: python scripts/test_reviews.py
 Copies a lesson into a temporary project and checks the hash, the review states and what the build publishes."""
-import json, os, pathlib, shutil, subprocess, sys, tempfile
+import json, os, pathlib, re, shutil, subprocess, sys, tempfile
 HERE = pathlib.Path(__file__).resolve().parent
 SRC = HERE.parent
 LESSON = "fy3-3"
@@ -121,29 +121,79 @@ expect("scope right after a PASS: delta with no changes", "science: delta (0 cha
 p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("one word changed, no number: delta for both", out.count("delta") == 2 and "wording" in out, out)
+p.write_text((SRC / "content/FY3" / LESSON / "lesson.md").read_text())
 e = t / "content/FY3" / LESSON / "exercises.json"; ex = json.loads(e.read_text()); ex["level1"][0]["answer"] += 1; e.write_text(json.dumps(ex, ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("an answer changed: full for both", out.count("full") == 2 and "answer" in out, out)
+expect("an answer changed: full science review, pedagogy judges the diff", "science: full" in out and "pedagogy: delta" in out and "answer" in out, out)
 e.write_text(json.dumps(json.loads((SRC / "content/FY3" / LESSON / "exercises.json").read_text()), ensure_ascii=False, indent=2))
 p.write_text(p.read_text().replace("0{,}37", "0{,}38", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a number in a formula changed: full", out.count("full") == 2 and "number, formula" in out, out)
+expect("a number in a formula changed: full science review, pedagogy delta", "science: full" in out and "pedagogy: delta" in out and "number, formula" in out, out)
 p.write_text(p.read_text().replace("0{,}38", "0{,}37", 1)); s_ = t / "content/FY3" / LESSON / "sim.js"; s_.write_text(s_.read_text() + "\n// yksi rivi\n")
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("one line of sim.js changed: full", out.count("full") == 2 and "sim.js changed" in out, out)
+expect("a comment line in sim.js: no review for either, it is not content", "science: none" in out and "pedagogy: none" in out and "comments" in out, out)
+s_.write_text(s_.read_text() + "const yksi = 1;\n")
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("one line of sim.js code: full for both", out.count("full") == 2 and "simulation's code" in out, out)
+s_.write_text((SRC / "content/FY3" / LESSON / "sim.js").read_text())
+
+# 5b. change categories decide who looks again; a PASS carries over only what its reviewer need not see
+svg = [l for l in p.read_text().splitlines() if l.lstrip().startswith("<text ") and ' x="' in l]
+txt = svg[0]; nudged = re.sub(r' x="(-?[\d.]+)"', lambda m: f' x="{float(m.group(1)) + 6:g}"', txt, count=1)
+p.write_text(p.read_text().replace(txt, nudged, 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a figure label nudged 6 units: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "label" in out, out)
+code, out = run(t, "reviews.py", "carry", LESSON)
+expect("carry records science only; the lesson stays a draft until pedagogy looks", "science: carried over" in out and ": draft" in out and "science=PASS (carried over: label-position)" in out, out)
+report(t, "pedagogy")
+expect("pedagogy PASS on the new hash + science carried: reviewed", ": reviewed" in state(t) and "carried over" in state(t), state(t))
+git(t, "add", "."); git(t, "commit", "-qm", "nudge")
+code, out = run(t, "reviews.py", "verify")
+expect("verify re-derives the carry from history and accepts it", code == 0 and "ERROR" not in out, out)
+rows = (t / "content/FY3" / LESSON / "review/carry.tsv").read_text().splitlines()
+p.write_text(p.read_text().replace(nudged, txt.replace(">", ' fill="red">', 1) if False else nudged.replace("</text>", "X</text>"), 1))   # new label text: a figure change
+cat = (t / "content/FY3" / LESSON / "review/carry.tsv")
+cat.write_text(rows[0] + "\n" + "\t".join(rows[1].split("\t")[:3] + [h(t)] + rows[1].split("\t")[4:]) + "\n")   # a forged carry to the new hash
+code, out = run(t, "reviews.py", "verify")
+expect("a carry over a real figure change fails verify", code == 1 and "must review" in out, out)
+t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
+report(t, "science"); report(t, "pedagogy")
+ts = t / "tests/sims" / f"{LESSON}.json"; tests = json.loads(ts.read_text())
+ts.write_text(json.dumps(tests + [{"expr": "1", "expected": 1, "tol": 0.001}], ensure_ascii=False, indent=2))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a simulation assertion added: no review", "science: none" in out and "pedagogy: none" in out, out)
+tests[0]["tol"] = tests[0].get("tol", 0.01) * 10; ts.write_text(json.dumps(tests, ensure_ascii=False, indent=2))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a simulation assertion loosened: full science review", "science: full" in out and "loosened" in out, out)
+ts.write_text(json.dumps(json.loads((SRC / "tests/sims" / f"{LESSON}.json").read_text()), ensure_ascii=False, indent=2))
+p = t / "content/FY3" / LESSON / "lesson.md"; style = next(l for l in p.read_text().splitlines() if 'stroke-width="' in l)
+p.write_text(p.read_text().replace(style, re.sub(r'stroke-width="[\d.]+"', 'stroke-width="9"', style, count=1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a stroke width changed: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "styling" in out, out)
+i = t / "content/FY3" / LESSON / "inquiry.json"; d = json.loads(i.read_text())
+exp = next(a for a in d["activities"] if a["type"] == "experiment"); k = next(iter(exp["initial"])); exp["initial"][k] = exp["initial"][k] + 1 if isinstance(exp["initial"][k], (int, float)) else exp["initial"][k]
+i.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("an experiment's initial value changed: full science review", "science: full" in out, out)
 # 6. packets: what each role receives
 t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
 code, out = run(t, "review_packet.py", LESSON, "--role", "science"); ps = (t / "content/FY3" / LESSON / "review/packet-science.md").read_text()
 expect("science packet: full, with answers.py and sim.js, without curriculum.json", code == 0 and "### exercises.json" in ps and "### sim.js" in ps and '"FY1": {' not in ps and "Role: **science**" in ps, out)   # the slot only, not curriculum.json
 code, out = run(t, "review_packet.py", LESSON, "--role", "pedagogy"); pp = (t / "content/FY3" / LESSON / "review/packet-pedagogy.md").read_text()
 expect("pedagogy packet: figures collapsed, no answers.py, no sim.js", "figure body omitted" in pp and "### answers.py" not in pp and "### sim.js" not in pp and "Screenshots" in pp, out)
-expect("packets carry the slot, the glossary terms and the conventions", "Curriculum slot" in ps and "Glossary terms" in ps and "Physics and maths conventions" in ps)
+expect("a packet is a file the agent reads, never pasted: the script prints its path and size", "packet-pedagogy.md: full," in out and "tokens" in out, out)
+expect("packets carry the course's LOPS goals, the slot and the glossary terms, and point to CLAUDE.md instead of repeating it",
+       "## Course FY3: Energia ja lämpö" in ps and "Keskeiset sisällöt" in ps and "Lesson slot" in ps and "Glossary terms" in ps and "CLAUDE.md" in ps and "Physics and maths conventions" not in ps)
 report(t, "science"); report(t, "pedagogy"); p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
 code, out = run(t, "review_packet.py", LESSON, "--role", "science"); ps = (t / "content/FY3" / LESSON / "review/packet-science.md").read_text()
 expect("delta packet: previous report and the diff, not the whole lesson", "Mode: **delta**" in ps and "Your previous report" in ps and "+" in ps.split("```diff")[1] and "### answers.py" not in ps, out)
 code, out = run(t, "review_packet.py", LESSON, "--role", "developer", "--fix"); pd = (t / "content/FY3" / LESSON / "review/packet-developer.md").read_text()
-expect("developer fix packet: both reports and the lesson files", "Findings to resolve" in pd and "### science" in pd and "### lesson.md" in pd and "1. Maths in LaTeX" in pd, out)
-expect("usage report runs", run(t, "usage.py", "log", LESSON, "--agent", "x", "--model", "sonnet", "--effort", "medium", "--mode", "full", "--round", "1", "--tokens", "100", "--seconds", "1", "--calls", "1", "--verdict", "PASS")[0] == 0 and "baseline" in run(t, "usage.py", "report", LESSON)[1])
+expect("developer fix packet: both reports, the rules and the file list, not the file bodies",
+       "Findings to resolve" in pd and "### science" in pd and "### lesson.md" not in pd and f"content/FY3/{LESSON}/lesson.md" in pd and "1. Maths in LaTeX" in pd, out)
+code, out = run(t, "review_packet.py", LESSON, "--role", "developer"); pd = (t / "content/FY3" / LESSON / "review/packet-developer.md").read_text()
+expect("developer draft packet: where files go for this course and the reference lesson", "Where files go" in pd and "Reference lesson" in pd, out)
+code, out = run(t, "usage.py", "log", LESSON, "--agent", "x", "--model", "sonnet", "--effort", "medium", "--mode", "full", "--round", "1", "--context", "100", "--seconds", "1", "--calls", "1", "--verdict", "PASS")
+expect("a manual usage row is marked reported, not measured", code == 0 and "reported" in run(t, "usage.py", "report", LESSON)[1] and "unknown" in run(t, "usage.py", "report", LESSON)[1], out)
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
