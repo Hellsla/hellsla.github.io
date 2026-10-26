@@ -62,7 +62,7 @@
           "feedback": "Generaattori on yksi tehokkaimmista koneista, koska siinä ei ole lämpövoimakoneen pakollista häviötä. Vaiheiden luvut ovat Tutki-osan taulukossa."
         },
         {
-          "text": "Voimajohdoissa ja muuntajassa, kun sähkö siirtyy kuluttajille.",
+          "text": "Sähköverkon voimajohdoissa, kun sähkö siirtyy kuluttajille.",
           "feedback": "Siirtohäviöt ovat vain muutaman prosentin, koska sähkö siirretään suurella jännitteellä pienellä virralla. Suurempi häviö on jossakin aiemmassa vaiheessa; tarkista Tutki-osan taulukosta."
         }
       ]
@@ -138,7 +138,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Sähkö ja kaukolämpö samasta polttoaineesta",
-      "text": "Yhteistuotantolaitoksen polttoaineteho on 400 MW. Taulukossa on laitoksen kaksi ääritilaa; lämpö tarkoittaa kaukolämpötehoa ja sähkö sähkötehoa, molemmat megawatteina. Niiden välissä sähköteho pienenee likimain lineaarisesti kaukolämpötehon kasvaessa. Tällä taulukolla testaat toisen ennusteesi.\n\n| Tila | Lämpö | Sähkö |\n|---|---|---|\n| Vain sähköä | 0 | 160 |\n| Täysi kaukolämpö | 232 | 120 |\n\nLaske kummassakin tilassa hukkalämmön teho $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$ ja kokonaishyötysuhde.",
+      "text": "Yhteistuotantolaitoksen polttoaineteho on 400 MW. Taulukossa on laitoksen kaksi ääritilaa; lämpö tarkoittaa kaukolämpötehoa ja sähkö sähkötehoa, molemmat megawatteina. Niiden välissä sähköteho pienenee likimain lineaarisesti kaukolämpötehon kasvaessa. Tällä taulukolla testaat toisen ennusteesi.\n\n| Tila | Lämpö | Sähkö |\n|---|---|---|\n| Vain sähköä | 0 | 160 |\n| Täysi kaukolämpö | 232 | 120 |\n\nLaske täyden kaukolämmön tilassa hukkalämmön teho $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$. Vain sähköä -tilan lukuja tarvitset vertailuun.",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka suuri on hukkalämmön teho, kun laitos tuottaa täyttä kaukolämpöä? Vastaa megawatteina.",

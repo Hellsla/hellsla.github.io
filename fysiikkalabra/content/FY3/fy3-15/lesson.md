@@ -108,11 +108,8 @@ missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, hö
   <rect x="470" y="274.2" width="100" height="5.8" fill="#ffc078" fill-opacity="0.35" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 4"/>
   <rect x="470" y="280" width="100" height="100" fill="#1f2933"/>
   <foreignObject x="170" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_1 = 0{,}92$</div></foreignObject>
-  <path d="M195,66 H265 L265,66" stroke="none"/>
   <foreignObject x="310" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_2 = 0{,}46$</div></foreignObject>
-  <path d="M335,86 H405 L405,86" stroke="none"/>
   <foreignObject x="450" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_3 = 0{,}945$</div></foreignObject>
-  <path d="M475,210.2 H545 L545,210.2" stroke="none"/>
   <foreignObject x="40" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_0$</div></foreignObject>
   <foreignObject x="40" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$500\,\text{MW}$</div></foreignObject>
   <foreignObject x="180" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_1$</div></foreignObject>
@@ -198,7 +195,9 @@ P_\text{h} &= P_0 - P_3 \\
 ```
 
 <!-- vaihe -->
-**Järkevyys.** Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Lauhduttimeen siirtyy teho $P_1 - P_2 \approx 546\,\text{MW} - 240\,\text{MW} = 306\,\text{MW}$, eli yli puolet polttoaineen energiasta. Kattilan häviö on vain 54 MW ja generaattorin ja muuntajan 12 MW, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
+**Järkevyys.** Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Lauhduttimeen siirtyy teho $P_1 - P_2 \approx 546\,\text{MW} - 240\,\text{MW} = 306\,\text{MW}$, eli yli puolet polttoaineen energiasta.
+
+Kattilan häviö on vain 54 MW ja generaattorin ja muuntajan 12 MW, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei katoa: se siirtyy lämpönä mereen tai ilmaan, jossa sen lämpötila on niin matala, ettei sitä voi enää muuttaa sähköksi. Yhteistuotannossa sama lämpö johdetaan kaukolämpöverkkoon ja lämmittää koteja.

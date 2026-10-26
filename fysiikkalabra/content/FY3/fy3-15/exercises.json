@@ -27,7 +27,7 @@
     {
       "id": "fy3-15-L1-04",
       "level": 1,
-      "text": "Lauhdevoimalaitokseen tuodaan polttoaineen energiaa teholla 800 MW, ja laitoksen sähköteho on 320 MW. Kuinka suuri teho siirtyy lopulta lämpönä ympäristöön? Anna vastaus megawatteina.",
+      "text": "Lauhdevoimalaitokseen tuodaan polttoaineen energiaa teholla 800 MW, ja laitoksen sähköteho on 320 MW. Kuinka suuri teho siirtyy voimalaitoksesta lämpönä ympäristöön? Anna vastaus megawatteina.",
       "answer": 480,
       "unit": "MW",
       "tolerance": 0.02

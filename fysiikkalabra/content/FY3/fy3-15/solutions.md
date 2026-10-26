@@ -20,11 +20,11 @@
 **Kaava:** $P = \eta I A$
 **Sijoitus:** $P = 0{,}210 \cdot 1{,}00\,\text{kW/m}^2 \cdot 20{,}0\,\text{m}^2 = 4{,}20\,\text{kW}$
 **Vastaus:** $4{,}20\,\text{kW}$
-**Järkevyys:** Paneeliin osuu säteilyä $20{,}0\,\text{kW}$, josta $0{,}210$-osa muuttuu sähköksi. Loput $20{,}0\,\text{kW} - 4{,}20\,\text{kW} = 15{,}8\,\text{kW}$ lämmittää paneelia. Pientalon katolla 4 kW on tavallinen huipputeho kirkkaalla säällä.
+**Järkevyys:** Paneeliin osuu säteilyä $20{,}0\,\text{kW}$, josta $0{,}210$-osa muuttuu sähköksi. Loput $20{,}0\,\text{kW} - 4{,}20\,\text{kW} = 15{,}8\,\text{kW}$ lämmittää paneelia tai heijastuu pois. Pientalon katolla 4 kW on tavallinen huipputeho kirkkaalla säällä.
 
 ## fy3-15-L1-04
 **Annettu:** $P_0 = 800\,\text{MW}$, $P_\text{s} = 320\,\text{MW}$
-**Kysytty:** ympäristöön lopulta siirtyvä teho $P_\text{h}$
+**Kysytty:** voimalaitoksesta ympäristöön lämpönä siirtyvä teho $P_\text{h}$
 **Kaava:** $P_\text{h} = P_0 - P_\text{s}$
 **Sijoitus:** $P_\text{h} = 800\,\text{MW} - 320\,\text{MW} = 480\,\text{MW}$
 **Vastaus:** $480\,\text{MW}$
@@ -35,7 +35,7 @@
 **Kysytty:** kokonaishyötysuhde $\eta_\text{kok}$
 **Kaava:** $\eta_\text{kok} = (P_\text{s} + P_\text{k}) / P_0$
 **Sijoitus:** $\eta_\text{kok} = (75\,\text{MW} + 150\,\text{MW}) / 250\,\text{MW} = 225\,\text{MW} / 250\,\text{MW} = 0{,}900 = 90{,}0\,\%$
-**Vastaus:** $90\,\%$
+**Vastaus:** $90{,}0\,\%$
 **Järkevyys:** Tulos on yhteistuotannon tavallisella välillä 85–90 %. Hukkalämmön teho on $250\,\text{MW} - 225\,\text{MW} = 25\,\text{MW}$. Sähkön osuus on vain $75\,\text{MW} / 250\,\text{MW} = 30\,\%$, joten sähköhyötysuhde on pienempi kuin lauhdevoimalaitoksessa.
 
 ## fy3-15-L2-01
@@ -44,7 +44,7 @@
 **Kaava:** $P_3 = \eta_1 \eta_2 \eta_3 P_0$
 **Sijoitus:** $P_3 = 0{,}880 \cdot 0{,}420 \cdot 0{,}980 \cdot 300\,\text{MW} = 0{,}362208 \cdot 300\,\text{MW} = 108{,}66\,\text{MW} \approx 109\,\text{MW}$
 **Vastaus:** $109\,\text{MW}$
-**Järkevyys:** Koko ketjun hyötysuhde on $0{,}362$ eli 36 %, vähemmän kuin heikoin vaihe ($0{,}420$) antaisi yksin. Turpeen kattilan ja höyrykierron häviöt vievät siis yli kaksi kolmasosaa polttoaineen energiasta.
+**Järkevyys:** Koko ketjun hyötysuhde on $0{,}362$ eli 36 %, vähemmän kuin heikoin vaihe ($0{,}420$) antaisi yksin. Turpeen kattilan ja höyrykierron häviöt vievät siis lähes kaksi kolmasosaa (noin 63 %) polttoaineen energiasta.
 
 ## fy3-15-L2-02
 **Annettu:** $\eta = 0{,}380$, $\eta_1 = 0{,}900$, $\eta_3 = 0{,}980$
@@ -84,7 +84,7 @@
 **Kaava:** $E = \eta Q_1$ ja $Q_1 = H m$, joten $m = E / (\eta H)$
 **Sijoitus:** $m = 1{,}296 \cdot 10^{14}\,\text{J} / (0{,}380 \cdot 25{,}0 \cdot 10^6\,\text{J/kg}) = 1{,}364 \cdot 10^7\,\text{kg} = 13{,}6\,\text{kt}$
 **Vastaus:** $13{,}6\,\text{kt}$
-**Järkevyys:** Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu 50 t. Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu polttoaine, joka muuttuu hukkalämmöksi ja päästöiksi, mutta tuulen energia ei ole varasto, jota kuluu. Tuulipuiston 0,42 kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
+**Järkevyys:** Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu 50 t. Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu polttoaine, joka muuttuu hukkalämmöksi ja päästöiksi, mutta tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
 
 ## fy3-15-L3-03
 **Annettu:** $Q = 100\,\text{kWh}$, $\varepsilon = 3{,}00$, $\eta_\text{voimala} = 0{,}400$, siirron osuus $0{,}950$
