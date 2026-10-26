@@ -1,20 +1,30 @@
 VERDICT: PASS
-CONTENT-HASH: 973809139551d72e
+CONTENT-HASH: 37088270afb1e8f6
 
 ## Blocking
 
 ## Polish
-- inquiry.json:330 — "noin viisinkertainen hiekkaan tai maahan verrattuna": moist soil has a much larger c than dry sand (often 1,5–3 kJ/(kg·K)), so "maahan" overstates the ratio — say "kuivaan hiekkaan tai maahan" or "moninkertainen maahan verrattuna".
-- sim.js:1016 — the curve snaps from e^(−10/1,5) ≈ 0,13 % of the gap to exactly 0 at T_END. This is invisible at chart scale and harmless; it is noted only so nobody "fixes" the readout.
+- sim.js:886 — the animated sim has no speed control (hidas · normaali · nopea), which CLAUDE.md form rule 3 asks for. This is not a physics fault, because the 1,5 s time constant is labelled as illustration — fix: add the three-way speed control, or leave it if illustration-only timing is accepted.
+- lesson.md:146 — "Kappale, jonka lämpökapasiteetti on suuri, lämpenee ja jäähtyy hitaasti" holds only for the same heat flow — fix: add "samalla lämmönsiirtonopeudella" or "saman lämpömäärän vaikutuksesta" (the depth paragraph at line 106 already sets the right tone).
+- exercises.json fy3-6-L3-03 — the stored answer 3,3 m³ is 0,8 % above the computed 3,27 m³. This is inside the tolerance and is a correct two-figure rounding, so nothing needs to change.
 
 ## Checked
-- answers.py and my own formulas agree on all 12 answers. Each stated answer is within 0,81 % of the computed value, inside the 2 % tolerance, and the significant figures match the data.
-- Worked example: c_m = 374,6 → 3,7·10² J/(kg·K). Copper with no losses gives 24,6 °C, and 24,6 °C would give 383 J/(kg·K). Both are correct, and the solution is symbolic before substitution.
-- Equilibrium derivation, the weighted-average formula, the sign conventions, and the misconception calculation (35 °C) are correct.
-- Ennuste-1 values: sand 26,8 °C / 8,5 kJ, water 44,0 °C / 30 kJ, C = 160 and 838 J/K. Ennuste-2 values: 40,0, 55,0 and 63,1 °C.
-- Koe-1 and koe-2 isolate the varied parameter. The initial values are inside the slider ranges, the cB option values are strings, and simState exposes Teq and CB.
-- Virhe item: wrong formula 6,6 °C, correct 30,0 °C. The kelvin-shift feedback is correct.
-- siirto 29,1 kg, with mistakes 220 and 21,3. tarkistus-2 890,6, with mistakes 768 and 501. All are correct.
-- Exit ticket: 419 kJ, ratio 9,3 and 65 °C are correct. tarkistus-1: C = 4500 vs 838 J/K.
-- SVGs: the bar heights are proportional to c within 1 px, and the water/sand thermometer rise ratio is 5,25 (true value 5,24).
-- sim.js implements T = ΣCT/ΣC, Q = C_B(T_B0 − T) = Q_W, and the exponential approach is labelled as illustration only. The screenshot (default copper example) shows 24,6 °C.
+- I recomputed all 12 exercise answers from the task data with my own formulas. Each is within 0,9 % of the stored value, and answers.py matches line by line (the c values come from the lesson's table, and ΔT read in °C is the same as in K).
+- The worked example is right: Q_v = 5656,5 J, c_m = 374,6 J/(kg·K), and a reading of 24,6 °C gives 383 J/(kg·K). A 0,200 kg copper body in a lossless calorimeter gives 24,6 °C, which matches the sim's default reset state. The unknown is solved symbolically before the numbers go in.
+- Misconception section: T = 35 °C by both routes. Iron against water is about 9,3×, so "lähes kymmenkertainen" is fair.
+- Predictions in inquiry.json:
+  - ennuste-1: sand gives 26,8 °C and 8,5 kJ; hot water gives 44,0 °C and 30,2 kJ; heat capacities 160 and 838 J/K.
+  - ennuste-2: 40,0 / 55,0 / 63,1 °C.
+  - In both, the correct options and every feedback's numbers are right.
+- virhe: the wrong algebra gives 6,6 °C, and the Kelvin version also gives 6,6 °C, so the first option's feedback is correct. The correct result is 30,0 °C.
+- siirto 29,1 kg; its mistakes 220 and 21,3 are exactly the errors described. tarkistus-2 gives 891, with mistakes 768 and 501; tarkistus-1 compares 4500 J/K with 838 J/K. The exit ticket gives 419 kJ, about 9×, and 65 °C.
+- Experiments:
+  - koe-1 changes only cB, and koe-2 changes only mB (0,50 kg falls in the slider's 0,05–1,00 range and gives the average).
+  - Every initial value fits the slider limits and steps. The simState carries Teq and CB.
+  - The screenshot shows the koe-1 initial state applied: 26,8 °C, 160 J/K, 8,52 kJ.
+- sim.js physics:
+  - The Teq formula is correct. Q and QW are equal, and the sign is handled when the body is colder than the water.
+  - Both temperatures relax with the same τ, so energy is conserved at every moment of the animation (this is also the true two-body behaviour). The illustrative timing and the assumptions (insulation, no phase change) are stated in `model`.
+- Figure 1: the rise bars are 105 px against 20 px, a ratio of 5,25 (c ratio 5,24). Figure 2: the bar lengths are to scale at 0,0933 px per J/(kg·K).
+- Scope: Q = cmΔT, C = cm, calorimetry and the balance equation all fall within the FY3 content "aineen lämpeneminen ja jäähtyminen" and "lämpömäärä". The c values in the table are realistic.
+- The content hash was 37088270afb1e8f6 at both start and end.
