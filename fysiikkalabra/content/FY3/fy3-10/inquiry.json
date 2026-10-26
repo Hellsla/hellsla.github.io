@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Kaasun määrä tulee mukaan: ainemäärä $n$ ja tilanyhtälö $pV = nRT$ yhdistävät edellisen tunnin erilliset kaasulait, ja hiukkasmalli selittää paineen seiniin osuvina törmäyksinä, joiden määrä ja voimakkuus riippuvat hiukkasmäärästä, lämpötilasta ja tilavuudesta.",
+  "contribution": "Kaasun määrä tulee mukaan: punnitsemalla havaitaan, että samassa paineessa, tilavuudessa ja lämpötilassa kaikissa kaasuissa on yhtä monta moolia, ja samoista mittauksista saadaan moolinen kaasuvakio $R$ ja tilanyhtälö $pV = nRT$, joka yhdistää edellisen tunnin erilliset kaasulait. Hiukkasmalli selittää paineen seiniin osuvina törmäyksinä.",
   "prior": [
     "Boylen laki $p_1V_1 = p_2V_2$ vakiolämpötilassa (fy3-9)",
     "Vakiotilavuudessa paine ja vakiopaineessa tilavuus ovat verrannollisia kelvinlämpötilaan (fy3-9)"
@@ -43,8 +43,8 @@
       "id": "pred-1",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Ennuste 1: hiukkasia kaksi kertaa enemmän",
-      "prompt": "Simulaation laatikossa on 100 hiukkasta 300 K:n lämpötilassa. Hiukkasmäärä kasvatetaan 200:aan, ja lämpötila ja tilavuus pysyvät samoina. Mitä kaasun paineelle tapahtuu?",
+      "title": "Ennuste 1: kaksi palloa",
+      "prompt": "Pallot ovat yhtä suuret, ja niissä on sama paine ja sama lämpötila. Kummassa pallossa on enemmän kaasun hiukkasia?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -52,21 +52,21 @@
       },
       "choices": [
         {
-          "text": "Paine ei muutu, koska lämpötila ja tilavuus ovat samat.",
-          "feedback": "Mittauksissa paine kasvoi noin kaksinkertaiseksi. Edellisen tunnin kaasulait koskivat suljettua kaasumäärää; nyt kaasun määrä muuttuu. Kaksi kertaa enemmän hiukkasia osuu seiniin kaksi kertaa useammin, ja jokainen osuma painaa seinää yhtä paljon kuin ennen."
+          "text": "Ilmapallossa, koska ilmapallo on raskaampi.",
+          "feedback": "Punnituksessa ilman massa oli noin 7 kertaa heliumin massa (6,02 g ja 0,83 g), mutta kun massa jaetaan moolimassalla, kummastakin tulee noin 0,207 mol. Massa kertoo hiukkasmäärän vain, jos hiukkaset ovat samanlaisia. Koe 1 näytti lisäksi, että samassa lämpötilassa ja tilavuudessa paine on verrannollinen hiukkasmäärään: jos heliumpallossa olisi vähemmän hiukkasia, sen paine olisi pienempi."
         },
         {
-          "text": "Paine kaksinkertaistuu.",
+          "text": "Yhtä monta.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: mitattu paine nousi noin arvosta 1,0 arvoon 2,0, ja tilanyhtälön ennuste on tasan 2,00. Seiniin osuu kaksi kertaa enemmän hiukkasia samalla nopeudella, joten paine on suoraan verrannollinen hiukkasmäärään."
+          "feedback": "Punnitus tukee tätä: $m/M$ oli kaikilla neljällä kaasulla noin 0,207 mol. Koe 1 näytti saman hiukkastasolla: samassa lämpötilassa ja tilavuudessa paine on verrannollinen hiukkasmäärään, joten sama paine vaatii saman hiukkasmäärän. Heliumpallo on kevyempi, koska heliumhiukkanen on kevyempi: moolimassa on 4,00 g/mol, ilman 29,0 g/mol."
         },
         {
-          "text": "Paine kasvaa, mutta alle kaksinkertaiseksi, koska hiukkaset ovat toistensa tiellä.",
-          "feedback": "Mittauksissa paine kaksinkertaistui mittaustarkkuuden rajoissa. Ideaalikaasun mallissa hiukkaset ovat pistemäisiä, ja niiden keskinäiset törmäykset eivät muuta painetta keskimäärin. Malli toimii hyvin, kun kaasu on harvaa, kuten tavallisissa oloissa."
+          "text": "Heliumpallossa, koska pienet ja nopeat heliumhiukkaset mahtuvat tiiviimmin.",
+          "feedback": "Kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin, mutta kevyt hiukkanen painaa seinää osumassa heikommin, ja nämä kumoavat toisensa. Ideaalikaasun mallissa hiukkaset ovat pistemäisiä, eikä koko vaikuta siihen, montako niitä mahtuu. Punnituksessa heliumin $m/M$ oli 0,2075 mol, sama kuin muilla kaasuilla mittaushajonnan rajoissa."
         },
         {
-          "text": "Paine nelinkertaistuu, koska hiukkasia on enemmän ja ne törmäävät useammin.",
-          "feedback": "Mittauksissa paine kaksinkertaistui. Hiukkasmäärän kaksinkertaistaminen kaksinkertaistaa seiniin osuvien törmäysten määrän, mutta jokaisen törmäyksen voimakkuus ei muutu, koska lämpötila eli hiukkasten nopeus pysyy samana."
+          "text": "Se riippuu kaasujen laadusta ja lämpötilasta, joten sitä ei voi päätellä.",
+          "feedback": "Lämpötila on molemmissa sama, ja punnitus näytti, ettei laatukaan ratkaise: neljällä hyvin erilaisella kaasulla $m/M$ oli sama, noin 0,207 mol, kun paine, tilavuus ja lämpötila olivat samat. Kaasun laatu vaikuttaa massaan, ei hiukkasmäärään."
         }
       ]
     },
@@ -84,16 +84,16 @@
       "choices": [
         {
           "text": "Törmäyksiä on noin 1,41 kertaa enemmän, ja paine kasvaa samoin noin 1,41-kertaiseksi.",
-          "feedback": "Törmäysten määrä kasvoi mittauksissa noin 1,4-kertaiseksi, mutta paine kaksinkertaistui. Nopeampi hiukkanen osuu seinään useammin ja lisäksi jokainen osuma painaa seinää voimakkaammin. Molemmat kasvavat kertoimella 1,41, ja yhdessä ne kaksinkertaistavat paineen: $1{,}41 \\cdot 1{,}41 \\approx 2$."
+          "feedback": "Törmäysten määrä kasvoi mittauksissa noin 1,4-kertaiseksi (vertaa Kokeen 1 ja Kokeen 2 rivejä N = 100), mutta paine kaksinkertaistui. Nopeampi hiukkanen osuu seinään useammin, ja lisäksi jokainen osuma painaa seinää voimakkaammin. Molemmat kasvavat kertoimella 1,41, ja yhdessä ne kaksinkertaistavat paineen: $1{,}41 \\cdot 1{,}41 \\approx 2$."
         },
         {
           "text": "Törmäyksiä on noin 1,41 kertaa enemmän, mutta paine kaksinkertaistuu.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: törmäyksiä oli sekunnissa noin 1,4 kertaa enemmän (mallin mukaan 1,41), ja paine kaksinkertaistui. Jokainen osuma painaa seinää 1,41 kertaa voimakkaammin, ja osumia on 1,41 kertaa enemmän: $1{,}41 \\cdot 1{,}41 \\approx 2$."
+          "feedback": "Mittaukset tukevat tätä: kun N = 100, osumia oli 600 K:ssä noin 1,4 kertaa enemmän kuin 300 K:ssä (mallin mukaan 92 → 130 osumaa sekunnissa), ja paine kaksinkertaistui. Jokainen osuma painaa seinää 1,41 kertaa voimakkaammin, ja osumia on 1,41 kertaa enemmän: $1{,}41 \\cdot 1{,}41 \\approx 2$."
         },
         {
           "text": "Törmäyksiä on kaksi kertaa enemmän, ja siksi paine kaksinkertaistuu.",
-          "feedback": "Paine kaksinkertaistui, mutta törmäyksiä oli mittauksissa vain noin 1,4 kertaa enemmän. Hiukkasmäärä ei muuttunut, ja nopeus kasvoi vain 1,41-kertaiseksi. Loput paineen kasvusta tulee siitä, että jokainen osuma painaa seinää voimakkaammin."
+          "feedback": "Paine kaksinkertaistui, mutta osumia oli mittauksissa vain noin 1,4 kertaa enemmän (mallin mukaan 92 → 130 osumaa sekunnissa). Hiukkasmäärä ei muuttunut, ja nopeus kasvoi vain 1,41-kertaiseksi. Loput paineen kasvusta tulee siitä, että jokainen osuma painaa seinää voimakkaammin."
         },
         {
           "text": "Paine ei muutu, koska hiukkasia on yhtä monta.",
@@ -102,32 +102,34 @@
       ]
     },
     {
-      "id": "pred-3",
-      "stage": "ennusta",
-      "type": "choice",
-      "layout": "models",
-      "title": "Ennuste 3: heliumpallo ja ilmapallo",
-      "prompt": "Palaa alun palloihin: sama tilavuus, sama paine ja sama lämpötila. Kolme opiskelijaa selittää, miksi heliumpallo on kevyempi. Kenen selitystä kannatat?",
-      "justify": true,
-      "reveal": {
-        "after": "exp-1",
-        "min": 2
-      },
-      "choices": [
-        {
-          "text": "Aino: Heliumpallossa on vähemmän kaasua. Siksi se on kevyempi.",
-          "feedback": "Koe 1 näytti, että samassa lämpötilassa ja tilavuudessa paine on verrannollinen hiukkasmäärään. Jos heliumpallossa olisi vähemmän hiukkasia, sen paine olisi pienempi kuin ilmapallon. Paineet ovat kuitenkin samat, joten hiukkasia on yhtä monta. Selitä-vaihe perustelee, miksi hiukkasen massa ei vaikuta paineeseen."
-        },
-        {
-          "text": "Bea: Hiukkasia on yhtä monta, mutta heliumhiukkaset ovat paljon kevyempiä.",
-          "correct": true,
-          "feedback": "Kokeen 1 perusteella samassa lämpötilassa ja tilavuudessa sama paine vaatii saman hiukkasmäärän. Tilanyhtälössä $pV = nRT$ ei ole kaasun laatua lainkaan, joten ainemäärä on sama. Massa on eri, koska heliumin moolimassa on 4,0 g/mol ja ilman 29 g/mol."
-        },
-        {
-          "text": "Cem: Heliumissa hiukkaset liikkuvat nopeammin, joten pallossa on enemmän hiukkasia samassa tilassa.",
-          "feedback": "Kevyet heliumhiukkaset liikkuvat samassa lämpötilassa todella nopeammin, mutta kevyt hiukkanen painaa seinää osumassa heikommin. Nämä kumoavat toisensa: lämpötila määrää, kuinka voimakkaasti hiukkaset keskimäärin seiniä painavat. Koe 1 näytti, että samassa lämpötilassa ja tilavuudessa sama paine vaatii saman hiukkasmäärän."
-        }
-      ]
+      "id": "punnitus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Punnitaan pallot",
+      "text": "Ohutseinäinen 5,00 litran lasipallo punnitaan ensin tyhjäksi pumpattuna ja sitten täytettynä eri kaasuilla. Joka kerta kaasun paine on 101 kPa ja lämpötila 20 °C. Taulukossa ovat kaasujen massat (*esimerkkiarvoja*, joissa on punnituksen tavallista hajontaa, noin ±0,02 g) ja moolimassat.\n\n| kaasu | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0,83 | 4,00 |\n| typpi N₂ | 5,78 | 28,0 |\n| ilma | 6,02 | 29,0 |\n| hiilidioksidi CO₂ | 9,10 | 44,0 |\n\nLaske jokaiselle kaasulle massan ja moolimassan osamäärä $m/M$.",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä huomaat, kun lasket $m/M$?",
+        "choices": [
+          {
+            "text": "$m/M$ on kaikilla kaasuilla lähes sama, noin 0,207 mol.",
+            "correct": true,
+            "feedback": "Juuri näin: helium 0,2075 mol, typpi 0,2064 mol, ilma 0,2076 mol ja hiilidioksidi 0,2068 mol. Erot ovat alle 1 % eli punnituksen hajontaa. Osamäärä $m/M$ on ainemäärä mooleina, joten samassa paineessa, tilavuudessa ja lämpötilassa kaikissa kaasuissa on yhtä monta moolia ja siis yhtä monta hiukkasta."
+          },
+          {
+            "text": "$m/M$ on suurin heliumilla, koska kevyttä kaasua mahtuu palloon enemmän.",
+            "feedback": "Heliumin $m/M = 0{,}83\\,\\text{g} / 4{,}00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0{,}2075\\,\\text{mol}$, ja muiden arvot ovat 0,2064–0,2076 mol. Ero on pienempi kuin punnituksen hajonta, joten heliumia ei ole enempää."
+          },
+          {
+            "text": "$m/M$ on suurin hiilidioksidilla, koska sen massa on suurin.",
+            "feedback": "Hiilidioksidin massa on suurin, mutta sen moolimassakin on suurin: $9{,}10\\,\\text{g} / 44{,}0\\,\\tfrac{\\text{g}}{\\text{mol}} = 0{,}2068\\,\\text{mol}$, lähes sama kuin muilla."
+          },
+          {
+            "text": "$m/M$ kasvaa samassa suhteessa kuin massa.",
+            "feedback": "Hiilidioksidi on noin 11 kertaa heliumia raskaampaa, mutta $m/M$ on molemmilla noin 0,207 mol. Moolimassa kasvaa samassa suhteessa kuin massa, joten osamäärä pysyy samana."
+          }
+        ]
+      }
     },
     {
       "id": "kokeile",
@@ -140,7 +142,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain hiukkasmäärä muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi N = 50, 100 ja 200. *Mitattu paine* on liukuva keskiarvo: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten. Taulukossa *p/p_ref mitattu* on simulaation mittaus ja *p/p_ref malli* tilanyhtälön ennuste eli mallin arvo, joka päivittyy heti.",
+      "intro": "Testaa ennuste 1 hiukkastasolla. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi N = 50, 100 ja 200; rivi N = 100 tarvitaan vielä Kokeessa 2. *Mitattu paine* ja osumat ovat liukuvia keskiarvoja: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten. *p/p_ref mitattu* on simulaation mittaus ja *p/p_ref malli* tilanyhtälön ennuste eli mallin arvo.",
       "initial": {
         "N": 100,
         "T": 300,
@@ -151,44 +153,6 @@
         "V"
       ],
       "vary": "N",
-      "names": {
-        "N": "hiukkasmäärä N",
-        "T": "lämpötila T",
-        "V": "tilavuus V"
-      },
-      "units": {
-        "N": "",
-        "T": "K",
-        "V": "%"
-      },
-      "measure": [
-        {
-          "key": "pMeasured",
-          "label": "p/p_ref mitattu"
-        },
-        {
-          "key": "pPredicted",
-          "label": "p/p_ref malli"
-        }
-      ],
-      "min": 2
-    },
-    {
-      "id": "exp-2",
-      "stage": "tutki",
-      "type": "experiment",
-      "title": "Koe 2: vain lämpötila muuttuu",
-      "intro": "Testaa ennuste 2. Hiukkasmäärä ja tilavuus lukitaan, ja vain lämpötila muuttuu. Kirjaa ainakin lämpötiloissa 300 K ja 600 K törmäysten määrä sekunnissa ja paine. Myös törmäysmäärä on keskiarvo noin 2 s:n ajalta. *Mitattu paine* on liukuva keskiarvo: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten. Taulukossa *p/p_ref mitattu* on simulaation mittaus ja *p/p_ref malli* tilanyhtälön ennuste eli mallin arvo, joka päivittyy heti.",
-      "initial": {
-        "N": 100,
-        "T": 300,
-        "V": 100
-      },
-      "locked": [
-        "N",
-        "V"
-      ],
-      "vary": "T",
       "names": {
         "N": "hiukkasmäärä N",
         "T": "lämpötila T",
@@ -214,6 +178,75 @@
         }
       ],
       "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kuumempi kaasu, sama paine",
+      "intro": "Testaa ennuste 2 ja ratkaise haaste. Lämpötila on nyt 600 K eli kaksi kertaa vertailutilan 300 K. Kirjaa ensin rivi N = 100 ja vertaa osumia ja painetta Kokeen 1 riviin N = 100. Etsi sitten hiukkasmäärä, jolla mitattu paine on taas 1,00, ja kirjaa se. Paina joka muutoksen jälkeen *Nollaa mittaus* ja odota noin 2 s:n keskiarvo ennen kirjaamista.",
+      "initial": {
+        "N": 100,
+        "T": 600,
+        "V": 100
+      },
+      "locked": [
+        "T",
+        "V"
+      ],
+      "vary": "N",
+      "names": {
+        "N": "hiukkasmäärä N",
+        "T": "lämpötila T",
+        "V": "tilavuus V"
+      },
+      "units": {
+        "N": "",
+        "T": "K",
+        "V": "%"
+      },
+      "measure": [
+        {
+          "key": "hitRate",
+          "label": "osumia seiniin (1/s)"
+        },
+        {
+          "key": "pMeasured",
+          "label": "p/p_ref mitattu"
+        },
+        {
+          "key": "pPredicted",
+          "label": "p/p_ref malli"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Lämpötila kaksinkertaistettiin 600 K:iin. Millä hiukkasmäärällä paine pysyy arvossa $p/p_\\text{ref} = 1{,}00$?",
+        "answer": 50,
+        "unit": "",
+        "tolerance": 0.02,
+        "hints": [
+          "Kasvattiko lämpötilan nousu painetta, ja kuinka moninkertaiseksi? Katso rivi N = 100.",
+          "Kokeen 1 mukaan paine on verrannollinen hiukkasmäärään. Kuinka paljon hiukkasmäärää pitää muuttaa, jotta kaksinkertainen paine palaa ennalleen?",
+          "600 K:ssä ja 100 hiukkasella $p/p_\\text{ref} \\approx 2{,}0$. Paine puolittuu, kun hiukkasmäärä puolitetaan."
+        ],
+        "mistakes": [
+          {
+            "value": 200,
+            "feedback": "Kun lämpötila nousee, paine kasvaa jo itsessään. Hiukkasmäärää pitää pienentää, ei kasvattaa: 200 hiukkasella 600 K:ssä paine olisi 4,00."
+          },
+          {
+            "value": 71,
+            "feedback": "Jaoit nopeuden kertoimella 1,41. Paine kasvoi kuitenkin kaksinkertaiseksi, koska osumia on 1,41 kertaa enemmän ja jokainen on 1,41 kertaa voimakkaampi. Hiukkasmäärä pitää siis puolittaa."
+          },
+          {
+            "value": 25,
+            "feedback": "Lämpötila kaksinkertaistui kerran, joten paine kaksinkertaistui kerran. Hiukkasmäärä puolitetaan kerran: 25 hiukkasella paine olisi 0,50."
+          }
+        ],
+        "solution": "Kokeen 1 mukaan $p \\propto N$, ja rivi N = 100 näyttää, että 600 K:ssä $p/p_\\text{ref} \\approx 2{,}0$ eli $p \\propto T$. Paine pysyy samana, kun tulo $NT$ pysyy samana: $N_2 = N_1 \\cdot \\dfrac{T_1}{T_2} = 100 \\cdot \\dfrac{300\\,\\text{K}}{600\\,\\text{K}} = 50$. Mittauksessa osumia on silloin vähemmän kuin vertailutilassa (mallin mukaan noin 65 eikä 92 sekunnissa), mutta jokainen osuma on 1,41 kertaa voimakkaampi."
+      }
     },
     {
       "id": "taulukko",
@@ -255,11 +288,10 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi kokeiden tuloksiin ja tilanyhtälöön $pV = nRT$. Palaa sitten alun kysymykseen: mitä paine, tilavuus ja lämpötila kertovat heliumpallon ja ilmapallon kaasumääristä, ja miksi heliumpallo on silti kevyempi?",
+      "prompt": "Vertaa ennusteitasi punnitukseen, kokeiden tuloksiin ja tilanyhtälöön $pV = nRT$. Palaa sitten alun kysymykseen: mitä paine, tilavuus ja lämpötila kertovat heliumpallon ja ilmapallon kaasumääristä, ja miksi heliumpallo on silti kevyempi?",
       "predictions": [
         "pred-1",
-        "pred-2",
-        "pred-3"
+        "pred-2"
       ]
     },
     {

@@ -3,13 +3,7 @@
 > **Miksi** heliumpallo on paljon kevyempi kuin samankokoinen ilmapallo? Onko siinä vähemmän kaasua?
 
 ## Ydinajatus
-Kaasujen tilanmuutoksia tutkittiin edellisellä oppitunnilla yksi kerrallaan: vakiolämpötilassa pV on vakio, vakiopaineessa V/T on vakio ja vakiotilavuudessa p/T on vakio. Nämä kolme kaasulakia voidaan yhdistää. Kun suljetun kaasumäärän paine, tilavuus ja lämpötila muuttuvat samanaikaisesti, suure pV/T pysyy vakiona. Tätä sanotaan yhdistetyksi kaasulaiksi.
-
-Vakion arvo riippuu siitä, kuinka paljon kaasua on. Jos samaan paineeseen ja lämpötilaan otetaan kaksi kertaa enemmän kaasua, se vie kaksinkertaisen tilavuuden. Kaasun määrää mitataan ainemääränä n, jonka yksikkö on mooli (mol). Hiukkasia on pienessäkin kaasumäärässä valtavasti, joten ne lasketaan mooleina, kuten kemiasta voi olla tuttua. Yksi mooli on Avogadron vakion N_A = 6,022 · 10²³ 1/mol osoittama määrä hiukkasia.
-
-Aineen moolimassa M kertoo yhden moolin massan. Heliumin moolimassa on 4,0 g/mol, ilman keskimäärin 29 g/mol ja hiilidioksidin 44 g/mol.
-
-Mittauksissa havaitaan, että pV/(nT) on kaikille kaasuille sama luku, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Se on moolinen kaasuvakio R = 8,31 J/(mol·K). Siitä saadaan ideaalikaasun tilanyhtälö pV = nRT, joka sitoo yhteen kaasun neljä tilaa kuvaavaa suuretta. Kaasun laatu ei näy yhtälössä lainkaan. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis aina yhtä monta moolia kaasua, olipa kaasu heliumia tai ilmaa. Tämä vastaa alun kysymykseen: pallot sisältävät yhtä monta hiukkasta, mutta heliumhiukkaset ovat paljon kevyempiä.
+Edellisen oppitunnin kaasulait koskivat suljettua kaasumäärää. Nyt verrataan eri kaasumääriä ja eri kaasuja. Kun 5,00 litran pallo täytetään 101 kPa:n paineessa ja 20 °C:n lämpötilassa vuorotellen heliumilla, typellä, ilmalla ja hiilidioksidilla, kaasujen massat ovat hyvin erilaiset: 0,83 g, 5,78 g, 6,02 g ja 9,10 g. Kun kunkin massa jaetaan kaasun moolimassalla, tulos on kuitenkin joka kerta noin 0,207 mol. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis yhtä paljon kaasua, olipa kaasu mitä tahansa. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Havainnekuva: kaksi yhtä suurta lasikuplan näköistä palloa samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja ainemäärä n = 0,21 mol. Heliumpallon kaasun massa on m = 0,83 g ja ilmapallon m = 6,0 g, koska ilman hiukkaset ovat raskaampia. Nuolet näyttävät hiukkasten liikkeen: kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <defs>
@@ -79,24 +73,28 @@ Mittauksissa havaitaan, että pV/(nT) on kaikille kaasuille sama luku, kun paine
   <foreignObject x="244" y="78" width="112" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{sama } p, T$</div></foreignObject>
 </svg>
 
+Hiukkasia on pienessäkin kaasumäärässä valtavasti, joten niitä ei lasketa yksitellen vaan mooleina, samaan tapaan kuin kananmunia lasketaan tusinoina. Yksi mooli on $6{,}022 \cdot 10^{23}$ hiukkasta, ja lukua $N_\text{A} = 6{,}022 \cdot 10^{23}\,\text{1/mol}$ sanotaan Avogadron vakioksi. Ainemäärä n kertoo, montako moolia hiukkasia on. Yhden moolin massa on aineen moolimassa M: heliumilla 4,00 g/mol, ilmalla keskimäärin 29,0 g/mol ja hiilidioksidilla 44,0 g/mol. Ainemäärä saadaan siis sekä hiukkasmäärästä että massasta:
+```latex
+n = \frac{N}{N_\text{A}} = \frac{m}{M}
+```
+missä N on hiukkasten lukumäärä, m massa (g tai kg) ja M moolimassa (g/mol tai kg/mol).
+
 Ideaalikaasu on mikromalli. Siinä hiukkaset ajatellaan pistemäisiksi, ja ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Paine syntyy seinämiin osuvista törmäyksistä, ja se kasvaa, kun hiukkasia on enemmän, kun ne liikkuvat nopeammin eli lämpötila on korkeampi tai kun tilavuus on pienempi. Todelliset kaasut noudattavat mallia hyvin tavallisissa oloissa. Malli alkaa pettää suurissa paineissa ja matalissa lämpötiloissa, kun hiukkaset ovat lähellä toisiaan ja niiden välinen vetovoima tiivistää kaasun nesteeksi.
 
 ## Kaava
-Ideaalikaasun tilanyhtälö on
+Punnitustuloksesta saadaan luku, joka on kaikille kaasuille sama: paine kerrottuna tilavuudella ja jaettuna ainemäärällä ja kelvinlämpötilalla. Neljän kaasun keskimääräisellä ainemäärällä 0,2071 mol se on
+```latex
+\begin{aligned}
+R &= \frac{pV}{nT} \\
+&= \frac{101\,000\,\text{Pa} \cdot 0{,}00500\,\text{m}^3}{0{,}2071\,\text{mol} \cdot 293{,}15\,\text{K}} \\
+&\approx 8{,}3\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}
+\end{aligned}
+```
+Tarkat mittaukset antavat kaikille kaasuille arvon R = 8,31 J/(mol·K), kun paine ei ole kovin suuri eikä lämpötila kovin matala. Lukua sanotaan mooliseksi kaasuvakioksi. Siitä saadaan ideaalikaasun tilanyhtälö
 ```latex
 pV = nRT
 ```
-missä p on paine (Pa), V tilavuus (m³), n ainemäärä (mol), R = 8,31 J/(mol·K) moolinen kaasuvakio ja T lämpötila kelvineinä (K). Celsiusasteina annettu lämpötila θ muutetaan kelvineiksi lisäämällä lukuarvoon 273,15. Tilanyhtälössä paine on aina kokonaispaine pascaleina ja tilavuus kuutiometreinä, koska R:n yksikössä on joule: 1 Pa · m³ = 1 N/m² · m³ = 1 N · m = 1 J.
-
-Ainemäärä saadaan massasta ja moolimassasta:
-```latex
-n = \frac{m}{M}
-```
-missä m on massa (kg tai g) ja M moolimassa (kg/mol tai g/mol). Hiukkasten lukumäärä saadaan ainemäärästä Avogadron vakion avulla:
-```latex
-N = n N_\text{A}
-```
-missä N on hiukkasten lukumäärä ja $N_\text{A} = 6{,}022 \cdot 10^{23}\,\text{1/mol}$ Avogadron vakio.
+missä p on paine (Pa), V tilavuus (m³), n ainemäärä (mol), R = 8,31 J/(mol·K) moolinen kaasuvakio ja T lämpötila kelvineinä (K). Kaasun laatu ei näy yhtälössä lainkaan. Celsiusasteina annettu lämpötila θ muutetaan kelvineiksi lisäämällä lukuarvoon 273,15. Paine on aina kokonaispaine pascaleina ja tilavuus kuutiometreinä, koska R:n yksikössä on joule: 1 Pa · m³ = 1 N/m² · m³ = 1 N · m = 1 J.
 
 Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinkertaistuu, kun hiukkasten lukumäärä tai kelvinlämpötila kaksinkertaistuu tai kun tilavuus puolittuu. Paine on siis suoraan verrannollinen hiukkasten lukumäärään ja kelvinlämpötilaan ja kääntäen verrannollinen tilavuuteen, eli $p \propto NT/V$.
 
@@ -197,11 +195,7 @@ Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää
 
 <!-- sim -->
 
-Kun kaasun määrä ei muutu, tilanyhtälöstä seuraa yhdistetty kaasulaki
-```latex
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
-```
-missä alaindeksit 1 ja 2 tarkoittavat alku- ja lopputilaa. Siitä saadaan jokainen edellisen oppitunnin kaasulaki, kun yksi suure pidetään vakiona.
+Kun kaasun määrä ei muutu, nR on vakio, ja tilanyhtälöstä seuraa yhdistetty kaasulaki $p_1V_1/T_1 = p_2V_2/T_2$ (alaindeksit 1 ja 2 ovat alku- ja lopputila). Siitä saadaan jokainen edellisen oppitunnin kaasulaki, kun yksi suure pidetään vakiona.
 
 ## Esimerkki
 Juhlapallo täytetään heliumilla, kunnes sen tilavuus on 5,0 l. Pallossa paine on 101 kPa ja lämpötila 20 °C. Kuinka monta moolia heliumia pallossa on, ja mikä on heliumin massa? Heliumin moolimassa on 4,0 g/mol.
@@ -258,8 +252,8 @@ Tilanyhtälön laskuissa toistuu kolme virhettä:
 
 ## Tiivistelmä
 - Ideaalikaasun tilanyhtälö on $pV = nRT$, missä $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja T on kelvineinä.
-- Ainemäärä n kertoo kaasun määrän mooleina, ja $n = m/M$. Hiukkasten lukumäärä on $N = nN_\text{A}$.
+- Ainemäärä n kertoo kaasun määrän mooleina: $n = N/N_\text{A} = m/M$.
 - Paine on verrannollinen lausekkeeseen NT/V: paine kaksinkertaistuu, kun hiukkasmäärä tai kelvinlämpötila kaksinkertaistuu tai kun tilavuus puolittuu.
 - Kun kaasun määrä pysyy samana, $p_1V_1/T_1 = p_2V_2/T_2$, ja siitä saadaan erilliset kaasulait.
-- Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua, kaasun laadusta riippumatta.
+- Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua, kaasun laadusta riippumatta; punnitus antaa kaikille kaasuille saman $m/M$.
 - Ideaalikaasumalli toimii hyvin tavallisissa oloissa ja pettää suurissa paineissa ja matalissa lämpötiloissa.

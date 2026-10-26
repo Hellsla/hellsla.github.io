@@ -40,4 +40,23 @@ dp = (10.0 - 7.0) * 1e5                                  # gauge readings 10,0 -
 dn = dp * 200e-3 / (R * K(18))                           # V and T constant: Δn = ΔpV/(RT) = 3,0·10⁵ · 0,200 / (8,31 · 291,15) = 24,80 mol
 a["fy3-10-L3-03"] = dn * 0.029                           # Δm = Δn M = 24,80 mol · 0,029 kg/mol = 0,7192 kg -> 0,72 kg
 
+# Inquiry (not exercises): the weighing table "Punnitaan pallot" and R from it.
+R_tarkka = 8.314                                          # J/(mol·K), used only to make the example masses
+n_pallo = 101e3 * 5.00e-3 / (R_tarkka * K(20))           # 5,00 l at 101 kPa, 293,15 K: n = pV/(RT) = 0,2072 mol
+M_kaasut = {"He": 4.00, "N2": 28.0, "ilma": 29.0, "CO2": 44.0}    # g/mol
+m_tarkka = {k: n_pallo * M for k, M in M_kaasut.items()}           # He 0,8288 g, N₂ 5,802 g, ilma 6,009 g, CO₂ 9,117 g
+m_taulukko = {"He": 0.83, "N2": 5.78, "ilma": 6.02, "CO2": 9.10}   # example values in the table: exact masses with ±0,02 g scatter
+for k in M_kaasut:
+    assert abs(m_taulukko[k] - m_tarkka[k]) <= 0.025, k
+    a["inq-n-" + k] = m_taulukko[k] / M_kaasut[k]         # m/M: He 0,2075, N₂ 0,2064, ilma 0,2076, CO₂ 0,2068 mol
+n_ka = sum(m_taulukko[k] / M_kaasut[k] for k in M_kaasut) / 4      # mean 0,2071 mol
+a["inq-n-ka"] = n_ka
+a["inq-R"] = 101e3 * 5.00e-3 / (n_ka * K(20))             # R = pV/(nT) = 101 000 Pa · 0,00500 m³ / (0,2071 mol · 293,15 K) = 8,32 J/(mol·K)
+a["inq-ka-ilma-He"] = m_taulukko["ilma"] / m_taulukko["He"]  # air balloon gas is 7,25 times heavier than helium
+# Koe 2 challenge: at 600 K, V = 100 %, p/p_ref = (N/100)(T/300 K) = 1,00 needs N = 100 · 300/600 = 50
+a["inq-koe2-N"] = 100 * 300 / 600
+a["inq-koe2-N-sqrt"] = 100 / 2 ** 0.5                     # mistake: dividing by the speed factor 1,41 gives 70,7
+a["inq-osumat-600"] = 92.04 * (600 / 300) ** 0.5          # wall hits: 92,0 1/s at 300 K (test) -> 130,2 1/s at 600 K
+a["inq-osumat-50-600"] = 92.04 * 0.5 * (600 / 300) ** 0.5 # N = 50, 600 K: 65,1 1/s, fewer hits than the reference but each 1,41 times harder
+
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
