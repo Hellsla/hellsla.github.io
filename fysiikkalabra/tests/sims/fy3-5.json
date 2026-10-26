@@ -24,10 +24,10 @@
   "note": "DOM order canvas, .controls (buttons Työnnä mäntää, Vedä ulos, Alkuun), .readout"
  },
  {
-  "expr": "(() => { const c=[...document.querySelector('#sim-root').children]; const d=c[3]; return d && d.tagName==='DETAILS' && !d.open && d.querySelector('summary').textContent==='Lisätietoja' && d.textContent.includes('2u') && d.textContent.includes('0,359 J') && d.textContent.includes('14 kertaa hitaampi') && document.querySelectorAll('#sim-root > p').length===0 ? 1 : 0 })()",
+  "expr": "(() => { const c=[...document.querySelector('#sim-root').children]; const d=c[3]; return d && d.tagName==='DETAILS' && !d.open && d.querySelector('summary').textContent==='Lisätietoja' && d.textContent.includes('2u') && d.textContent.includes('0,359 J') && d.textContent.includes('3,5 kertaa hitaammin') && d.textContent.includes('lämpökapasiteetiltaan') && d.textContent.includes('noin 36 K') && d.textContent.includes('noin 13 J') && d.textContent.includes('noin 12 J') && d.textContent.includes('keskiarvo') && !d.textContent.includes('vaihtel') && document.querySelectorAll('#sim-root > p').length===0 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "explanations (mechanism 2u, scale 0,359 J/K, assumption piston much slower than particles) behind a closed Lisätietoja after the readout"
+  "note": "explanations (mechanism 2u, scale 0,359 J/K as heat capacity only, piston speeds vs particles 3,5×, real-air values 36 K, 13 J, 12 J, p as a direction average, no claim of varying results) behind a closed Lisätietoja after the readout"
  },
  {
   "expr": "document.querySelector('#sim-root .readout').innerHTML.split('<br>').length",
@@ -61,15 +61,15 @@
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T; })()",
-  "expected": 406.443,
+  "expected": 406.8936,
   "tol": 0.0005,
-  "note": "insulated slow push 100 % → 75 % from Alkuun: T = 406,4 K (ΔT = +113 K); deterministic"
+  "note": "insulated slow push 100 % → 75 % from Alkuun: T = 406,9 K (ΔT = +114 K); deterministic"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.W; })()",
-  "expected": 40.672,
+  "expected": 40.834,
   "tol": 0.001,
-  "note": "insulated slow push: W = +40,7 J"
+  "note": "insulated slow push: W = +40,8 J"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.Q; })()",
@@ -91,33 +91,51 @@
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T; })()",
-  "expected": 406.964,
+  "expected": 424.7541,
   "tol": 0.0005,
-  "note": "insulated fast push from Alkuun: T = 407,0 K (ΔT = +114 K), W = +40,9 J"
+  "note": "insulated fast push (u = 60 px/s): T = 424,8 K (ΔT = +132 K), W = +47,2 J"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T - 293.15; })() / (() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T - 293.15; })()",
-  "expected": 1,
-  "tol": 0.01,
-  "note": "same stroke, insulated: ΔT fast / ΔT slow = 1,00 within 1 % from Alkuun (piston speed ≪ particle speed)"
+  "expected": 1.15703,
+  "tol": 0.001,
+  "note": "same stroke, insulated: the fast push heats more, ΔT fast / ΔT slow = 131,6 K / 113,7 K = 1,157 (the gas pushes back harder on a fast piston)"
  },
  {
-  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0.6); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T - 293.15; })() / (() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0.6); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T - 293.15; })()",
-  "expected": 1,
-  "tol": 0.08,
-  "note": "push started 0,6 s after Alkuun: fast/slow ΔT within 8 % (fast 120 K, slow 113 K: few particles, few hits)"
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); return window.simState.dT / window.simState.W; })()",
+  "expected": 2.78552,
+  "tol": 1e-05,
+  "note": "fast insulated push: ΔT / W = 1 / (0,359 J/K) = 2,79 K/J, the same as for the slow push: the extra heating is exactly the extra work"
  },
  {
-  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(2.1); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T - 293.15; })() / (() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(2.1); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.T - 293.15; })()",
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); return window.simState.dT / window.simState.W; })()",
+  "expected": 2.78552,
+  "tol": 1e-05,
+  "note": "slow insulated push: ΔT / W = 2,79 K/J"
+ },
+ {
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); return window.simState.W; })()",
+  "expected": 47.2459,
+  "tol": 0.001,
+  "note": "fast insulated push: W = +47,2 J (slow 40,8 J)"
+ },
+ {
+  "expr": "(() => { let a; { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0.6); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); a=window.simState.W; } { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); } return a / window.simState.W; })()",
   "expected": 1,
-  "tol": 0.08,
-  "note": "push started 2,1 s after Alkuun: fast/slow ΔT within 8 %"
+  "tol": 1e-12,
+  "note": "fast push started 0,6 s after Alkuun gives the same W as one started at once: a push from the untouched start re-seeds the gas (deterministic)"
+ },
+ {
+  "expr": "(() => { let a; { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(2.1); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); a=window.simState.W; } { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); } return a / window.simState.W; })()",
+  "expected": 1,
+  "tol": 1e-12,
+  "note": "fast push started 2,1 s after Alkuun gives the same W as one started at once: a push from the untouched start re-seeds the gas (deterministic)"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(18.8);  return window.simState.Q; })()",
-  "expected": -33.39,
+  "expected": -33.5036,
   "tol": 0.002,
-  "note": "conducting slow push: when the piston stops (18,8 s) W = +35,8 J, Q = −33,4 J, T = 300 K"
+  "note": "conducting slow push: when the piston stops (18,8 s) W = +35,1 J, Q = −33,5 J, T = 297 K"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(10);  return window.simState.T; })()",
@@ -129,13 +147,13 @@
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(10);  return window.simState.Q + window.simState.W; })()",
   "expected": 0,
   "tol": 0.02,
-  "note": "conducting slow push, settled: Q = −W (−35,8 J vs +35,8 J), ΔU ≈ 0"
+  "note": "conducting slow push, settled: Q = −W (−35,1 J vs +35,1 J), ΔU ≈ 0"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(10);  return window.simState.W; })()",
-  "expected": 35.85,
+  "expected": 35.0628,
   "tol": 0.002,
-  "note": "conducting slow push: W = +35,8 J (less than insulated 40,7 J: the cooler gas pushes back less)"
+  "note": "conducting slow push: W = +35,1 J (less than insulated 40,8 J: the cooler gas pushes back less)"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(10);  return window.simState.p; })()",
@@ -145,12 +163,12 @@
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0);  return window.simState.p; })()",
-  "expected": 1.849,
+  "expected": 1.8507,
   "tol": 0.002,
   "note": "insulated slow push: p = 1,85 p0"
  },
  {
-  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(3.3); window.simAdvance(0);  return window.simState.dU - (window.simState.Q + window.simState.W); })()",
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(0.8); window.simAdvance(0);  return window.simState.dU - (window.simState.Q + window.simState.W); })()",
   "expected": 0,
   "tol": 1e-09,
   "note": "energy bookkeeping mid-push with conducting walls: ΔU = Q + W to rounding error"
@@ -165,19 +183,19 @@
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); const s2=document.querySelectorAll('#sim-root select'); s2[1].value='johtava'; s2[1].dispatchEvent(new Event('change')); window.simAdvance(10); return -window.simState.Q / window.simState.W; })()",
   "expected": 1,
   "tol": 0.002,
-  "note": "fast insulated push (W = +40,9 J), then walls switched to johtava with the piston at rest: the gas cools to 293 K and Q = −40,9 J = −W"
+  "note": "fast insulated push (W = +47,2 J), then walls switched to johtava with the piston at rest: the gas cools to 293 K and Q = −47,2 J = −W"
  },
  {
-  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(5); window.simAdvance(0);  return window.simState.qRate < -1 && window.simState.T > 293.15 ? 1 : 0; })()",
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(1.2); window.simAdvance(0);  return window.simState.qRate < -1 && window.simState.T > 293.15 ? 1 : 0; })()",
   "expected": 1,
   "tol": 0,
-  "note": "heat flows out of the hot gas while it is warmer than the room: smoothed heat flow qRate < −1 J/s at 5 s of a fast conducting push (about −8,6 J/s)"
+  "note": "heat flows out of the hot gas while it is warmer than the room: smoothed heat flow qRate < −1 J/s at 1,2 s of a fast conducting push (about −13 J/s, T = 358 K)"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); window.simMove(1); window.simAdvance(25); return window.simState.T; })()",
-  "expected": 292.3,
+  "expected": 292.571,
   "tol": 0.01,
-  "note": "insulated slow push in and pull back out (Vedä ulos): the gas returns close to 293 K (292,3 K); net W ≈ −0,3 J"
+  "note": "insulated slow push in and pull back out (Vedä ulos): the gas returns close to 293 K (292,6 K); net W ≈ −0,2 J"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simAdvance(0); window.simMove(-1); window.simAdvance(25); window.simAdvance(0); window.simMove(1); window.simAdvance(5); return window.simState.T < 406 && window.simState.moving === 1 ? 1 : 0; })()",
@@ -192,10 +210,10 @@
   "note": "the push stops at V = 75 %"
  },
  {
-  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simAdvance(0); return window.simState.push==='nopea' && window.simState.wall==='johtava' && window.simState.u===15 ? 1 : 0 })()",
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simAdvance(0); return window.simState.push==='nopea' && window.simState.wall==='johtava' && window.simState.u===60 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "selects set simState.push = nopea (u = 15 px/s) and wall = johtava"
+  "note": "selects set simState.push = nopea (u = 60 px/s) and wall = johtava"
  },
  {
   "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simAdvance(0); return window.simState.u })()",
@@ -226,16 +244,16 @@
  },
  {
   "setup": "const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simMove(-1); window.simAdvance(25);",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('W = +40,7 J') && x.includes('Q = 0,0 J') && x.includes('ΔU = +40,7 J (Q + W = +40,7 J)') && x.includes('T = 406 K (ΔT = +113 K)') && x.includes('V = 75 %') && x.includes('p = 1,85 · p₀') && !/[0-9]\\.[0-9]/.test(x) ? 1 : 0 })()",
+  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('W = +40,8 J') && x.includes('Q = 0,0 J') && x.includes('ΔU = +40,8 J') && !x.includes('Q + W') && x.includes('T = 407 K (ΔT = +114 K)') && x.includes('V = 75 %') && x.includes('p = 1,85 · p₀') && !/[0-9]\\.[0-9]/.test(x) ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "readout after the slow insulated push: W = +40,7 J, Q = 0,0 J, ΔU = +40,7 J (Q + W = +40,7 J), T = 406 K (ΔT = +113 K), V = 75 %, p = 1,85 · p₀, decimal commas"
+  "note": "readout after the slow insulated push: W = +40,8 J, Q = 0,0 J, ΔU = +40,8 J (no Q + W formula before the theory), T = 407 K (ΔT = +114 K), V = 75 %, p = 1,85 · p₀, decimal commas"
  },
  {
-  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('+40,7') && L.includes('0,0') && L.includes('T = 406 K') && L.includes('V = 75 %') && L.includes('eristetty seinä') && L.includes('ΔU') && L.includes('ΔU = Q + W') ? 1 : 0 })()",
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('+40,8') && L.includes('0,0') && L.includes('T = 407 K') && L.includes('V = 75 %') && L.includes('eristetty seinä') && L.includes('ΔU') && L.includes('ΔU = Q + W') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "canvas labels: bar values +40,7 (W and ΔU) and 0,0 (Q), T = 406 K, V = 75 %, wall type, bar names, ΔU = Q + W"
+  "note": "canvas labels: bar values +40,8 (W and ΔU) and 0,0 (Q), T = 407 K, V = 75 %, wall type, bar names, ΔU = Q + W"
  },
  {
   "setup": "const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simMove(-1); window.simAdvance(4);",
