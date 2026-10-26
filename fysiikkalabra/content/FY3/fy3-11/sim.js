@@ -111,7 +111,7 @@ new p5((p) => {
     const Q1 = acc.Qh + c.Qh, Q2 = acc.Qc + c.Qc, W = acc.Wg + c.Wg, done = phase === 'valmis';
     const heated = phase === 'lammitys' ? u : phase === 'alku' ? 0 : 1;  // heating progress
     const dVh = heated * P.dV, Wk = P1 * dVh, dU = 1.5 * P1 * dVh, Qh = 2.5 * P1 * dVh;
-    const eta = Q1 > 0 ? 100 * W / Q1 : 0, returning = !['alku', 'lammitys', 'ylhaalla'].includes(phase);
+    const eta = done && Q1 > 0 ? 100 * W / Q1 : 0, returning = !['alku', 'lammitys', 'ylhaalla'].includes(phase);
 
     // controls: labels, hidden p₂ in mode A, main button text
     lQ.html(`Lämpö Q = ${P.Q} J`); lP.html(`Paine jäähdytyksen jälkeen p<sub>2</sub> = ${P.p2} kPa`);
@@ -131,8 +131,8 @@ new p5((p) => {
 
     // readout: at most four short lines
     const J = (x) => `${Math.round(x)} J`, L = (x) => `${fi(x, 2)} l`;
-    const lines = [`Lämmitys: ΔV = ${L(dVh)}, W<sub>k</sub> = pΔV = <strong>${J(Wk)}</strong>`,
-      `Q = ${J(Qh)}, ΔU = ${J(dU)}, ΔU + W<sub>k</sub> = <strong>${J(dU + Wk)}</strong>`];
+    const lines = [`Lämmitys: p = ${P1} kPa, ΔV = <strong>${L(dVh)}</strong>`,     // W_k is left for the student to compute (Koe 1)
+      `Q = ${J(Qh)}, ΔU = ${J(dU)}`];
     if (!returning) lines.push(phase === 'ylhaalla' ? 'Mäntä on ylhäällä. Palauta se alas.' : 'Lämmitä kaasua kuumalla levyllä.');
     else {
       lines.push(`Kierros${done ? '' : ' kesken'}: Q<sub>1</sub> = ${J(Q1)}, Q<sub>2</sub> = ${J(Q2)}`);
@@ -141,7 +141,8 @@ new p5((p) => {
     }
     readout.html(lines.join('<br>'));
     window.simState = { paluu: sel.value(), Qin: P.Q, p1: P1, p2: P.p2, V1, V2: P.V2, phase, u, done: done ? 1 : 0, V, p: pr,
-      dV: dVh, Q: Qh, dU, Wk, Q1, Q2, W, eta, dUcycle: 1.5 * (pr * V - P1 * V1), areaWk: area.wk, areaNet: area.net, speed, labels };
+      dV: dVh, Q: Qh, dU, Wk, Q1, Q2, W, dUcycle: 1.5 * (pr * V - P1 * V1), areaWk: area.wk, areaNet: area.net, speed, labels };
+    if (done) window.simState.eta = eta;                                // η only for a finished cycle, so no row can record an interim value
     window.simDebug = { finish: () => advance(1e6, par()), go, restart };
   };
 

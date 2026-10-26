@@ -183,10 +183,10 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
-  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.includes('Wk = pΔV = 300 J') && t.includes('Q = 750 J, ΔU = 450 J, ΔU + Wk = 750 J') ? 1 : 0 })()",
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.includes('p = 200 kPa, ΔV = 1,50 l') && t.includes('Q = 750 J, ΔU = 450 J') && !t.includes('Wk') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "readout shows W_k = pΔV = 300 J and Q = ΔU + W_k for Q = 750 J"
+  "note": "readout after heating Q = 750 J shows p = 200 kPa, ΔV = 1,50 l, Q and ΔU; W_k is left for the student (Koe 1)"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
@@ -194,6 +194,20 @@
   "expected": 1,
   "tol": 0,
   "note": "after heating the main button says Palauta mäntä"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "(() => { const S=window.simState; return S.phase==='ylhaalla' && !('eta' in S) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "piston up, cycle not finished: simState has no η, so an experiment row cannot record an interim value"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go();",
+  "expr": "(() => { const S=window.simState; return S.phase==='jaahdytys' && !S.done && !('eta' in S) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "return B under way: still no η until the cycle is complete"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
