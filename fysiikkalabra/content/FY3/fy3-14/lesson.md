@@ -177,6 +177,8 @@ Kalorimetrissä on 0,250 kg vettä, jonka lämpötila on 24,0 °C. Veteen pudote
 &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}250\,\text{kg} \cdot 24{,}0\,\text{K} \\
 &= 25\,140\,\text{J} \\[6pt]
 &Q_\text{j} = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} \\
+&= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}050\,\text{kg} \cdot 8{,}0\,\text{K} \\
+&\quad + 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}050\,\text{kg} \\
 &= 840\,\text{J} + 16\,700\,\text{J} \\
 &= 17\,540\,\text{J}
 \end{aligned}

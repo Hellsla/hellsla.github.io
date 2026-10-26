@@ -1,8 +1,9 @@
 VERDICT: DONE
 
-- sim.js: the animation now follows the transferred heat q = u·Q_end, one side at a time. Water cools to 0 °C, freezes, then cools as ice. Ice warms to 0 °C, melts, then the melt water warms. No liquid shows below 0 °C, no ice above it. The chart axis autoscales to 0–50, 0–100 or 0–250 kJ.
-- tests/sims/fy3-14.json: four per-frame assertions over full runs (cases 1–4) for the above (the old sim fails them). Two autoscale assertions. Label and calc assertions updated to the new scale; none loosened. 63 pass.
-- lesson.md: vaihe 4 reads 6,05 °C ≈ 6,0 °C. Result "below the midpoint". The all-water-freezes exception is in the misconception and the summary. Figure 3's dot is now "alun lasi" (explained in the text). Figure 2 shows its data visibly in LaTeX (ice −10 °C).
-- inquiry.json: the hook is a qualitative glass of juice. Ennuste 2's correct option reads "Noin 13 g enemmän …". The howto's pale-segment sentence is fixed. The Koe headers read "jää (g)". The calc text gives the scale rule.
+Round 2. All checks ok (lint, latex, build, sims 63 pass, inquiry 60, layout).
 
-All checks ok; layout ok at 360, 1280 and 1920 px. At 768 px, lab-side is 18 px too wide, as in fy3-9: a shared-template issue, not fixable here.
+- exit-ticket.json: every calculation in items 1 and 3 is LaTeX with units (`\tfrac`, `\text`, `{,}`).
+- lesson.md: example stage 4 has a substitution row with units (2100 J/(kg·K) · 0,050 kg · 8,0 K + 334 000 J/kg · 0,050 kg) before 840 J + 16 700 J.
+- inquiry.json: koe-1 prompt now says to bracket with the slider (step 0,5 °C) and then calculate the exact temperature (26,6 °C). The sim's howto box now holds the case sentences and the thermometer behaviour that left the readout.
+- sim.js: readout loses the verdict and "Lämpömittarit nyt" lines (three lines remain). In case 1 after the ice is gone, the "vesi" label shows the mixed temperature (equals T_f at the end; simState.TW unchanged). Case 4: cubes are hidden once all the water is frozen.
+- tests/sims/fy3-14.json: four readout assertions (indices 38-41) checked the removed prose. Their numbers (T, ice left, kJ values) stay; the case and the 75,3 g / 88,0 g are now asserted from simState (tapaus, meltedG), and the thermometer values from the canvas labels. Nothing weaker in what is verified; the tests were rewritten, not loosened.

@@ -91,19 +91,16 @@ new p5((p) => {
                   if (tAnim >= T_END) { tAnim = T_END; running = false; } }
     const immersed = running || tAnim > 0;
     const u = tAnim >= T_END ? 1 : (1 - Math.exp(-tAnim / TAU)) / (1 - Math.exp(-T_END / TAU));   // illustrative progress 0 → 1
-    const q = u * Qend, { TW, TI, iceNow, waterNow } = stateAt(mW, TW0, mI, TI0, R, q);   // the state after heat q, in sequence
+    const q = u * Qend, { TW, TI, Tmelt, iceNow, waterNow } = stateAt(mW, TW0, mI, TI0, R, q);   // the state after heat q, in sequence
+    // once all the ice has melted a stirred thermometer reads the mixed temperature, not the original water's
+    const allMelted = tapaus === 1 && iceNow < 0.0005, TWd = allMelted ? (mW * TW + mI * Tmelt) / M : TW;
     const meltedG = (mI - iceLeft) * 1000;                      // net mass melted (g); negative when water freezes
 
     lMW.html(`Veden massa m<sub>v</sub> = ${fi(mW, 2)} kg`); lTW.html(`Veden alkulämpötila T<sub>v</sub> = ${fi(TW0, 1)} °C`);
     lMI.html(`Jään massa m<sub>j</sub> = ${fi(mI, 2)} kg`); lTI.html(`Jään alkulämpötila T<sub>j</sub> = ${fi(TI0, 0)} °C`);
-    const verdict = ['Kaikki jää sulaa, ja seos lämpenee yli 0 °C:n.', `Vesi ei riitä sulattamaan kaikkea jäätä: sulaa ${fi(meltedG, 1)} g.`,
-      `Kylmä jää jäädyttää vettä ${fi(-meltedG, 1)} g, ja seos pysyy 0 °C:ssa.`, 'Kaikki vesi jäätyy, ja seos jäähtyy alle 0 °C:n.'][tapaus - 1];
     readout.html(`Lopputila: T = <strong>${fi(Tf, 1)}&nbsp;°C</strong>, jäätä jäljellä <strong>${fi(iceLeft * 1000, 1)}&nbsp;g</strong>` +
                  `<br>Vesi luovuttaa jäähtyessään 0 °C:seen ${fk(Qv)}&nbsp;kJ` +
-                 `<br>Jään lämmitys 0 °C:seen ${fk(Qwarm)}&nbsp;kJ, kaiken jään sulatus ${fk(Qmelt)}&nbsp;kJ` +
-                 `<br>${verdict}` +
-                 `<br>Lämpömittarit nyt: vesi ${waterNow > 0.0005 ? fi(TW, 1) + '&nbsp;°C' : 'jäätyi (' + fi(TW, 1) + '&nbsp;°C)'}, ` +
-                 `jää ${iceNow > 0.0005 ? fi(TI, 1) + '&nbsp;°C' : 'ei jäljellä'}`);
+                 `<br>Jään lämmitys 0 °C:seen ${fk(Qwarm)}&nbsp;kJ, kaiken jään sulatus ${fk(Qmelt)}&nbsp;kJ`);
     const JMAX = SCALES.find((v) => v * 1000 >= Math.max(Qv, Qwarm + Qmelt)) || SCALES[SCALES.length - 1];   // chart axis max (kJ)
     window.simState = { mW, TW0, mI, TI0, Qv, Qwarm, Qmelt, Tf, iceLeftG: iceLeft * 1000, meltedG, tapaus, running, TW, TI, iceNowG: iceNow * 1000,
                         waterNowG: waterNow * 1000, q, Qend, JMAX, t: tAnim, labels: [] };
@@ -132,11 +129,11 @@ new p5((p) => {
         const t = p.millis() / 1000;
         for (const dx of [-44, 0, 44]) { const ph = (t * 0.9 + (dx + 44) / 132) % 1, ya = wTop + 46 - 34 * ph; arrow(bx + dx, ya + 14, bx + dx, ya, p.color(232, 89, 12)); }
       }
-      if (iceNow > 0.0005) for (const dx of offs) cube(bx + dx - side / 2, wTop - side * 0.6, side);
+      if (iceNow > 0.0005 && waterNow > 0.0005) for (const dx of offs) cube(bx + dx - side / 2, wTop - side * 0.6, side);
     }
     // labels: temperatures top left, ice mass under the vessel
     p.noStroke();
-    lab(waterNow > 0.0005 ? `vesi ${fi(TW, 1)} °C` : 'vesi: jäätyi', 14, ts(18), 'l', ts(13), [30, 80, 160]);
+    lab(waterNow > 0.0005 ? `vesi ${fi(TWd, 1)} °C` : 'vesi: jäätyi', 14, ts(18), 'l', ts(13), [30, 80, 160]);
     lab(iceNow > 0.0005 ? `jää ${fi(TI, 1)} °C` : 'jää: ei jäljellä', 14, ts(18) + ts(19), 'l', ts(13), [60, 120, 150]);
     lab(`jäätä ${fi(iceNow * 1000, 0)} g`, bx, VES.bottom + ts(15), 'c', ts(12));
 
