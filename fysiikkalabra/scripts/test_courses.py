@@ -29,7 +29,10 @@ KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
 T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
 if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
 for f in ("curriculum.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content/_gold", "assets"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
+for d in ("scripts", "templates", "content/_gold"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
+shutil.copytree(SRC / "assets", T / "assets", ignore=shutil.ignore_patterns("fy4"))   # FY4 starts from scratch here, whatever the real project has
+c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized", None)
+(T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
 (T / "docs/lops2019").mkdir(parents=True)
 for f in (SRC / "docs/lops2019").glob("*.txt"): shutil.copy(f, T / "docs/lops2019")
 shutil.copytree(SRC / "content/FY3/fy3-2", T / "content/FY3/fy3-2")
