@@ -6,17 +6,18 @@ window.AgentOfficeScene = {
     const tr=value=>window.OfficeI18n?.t(value) ?? value;
     const C = {ink:'#ece4ce',muted:'#b8b8a9',gold:'#edba70',blue:'#8cb8e0',pink:'#e9a1b4',green:'#9ccb9b',red:'#e89885',amber:'#d7b474'};
     const stations = [
-      {id:'developer',x:18,y:18,w:398,h:270,title:'DEVELOPMENT WORKSHOP',sub:'Text · exercises · simulations',floor:'#4b5350',accent:C.gold},
+      {id:'developer',x:18,y:18,w:398,h:270,title:'DEVELOPMENT WORKSHOP',sub:'Drafts of texts, exercises and simulations.',floor:'#4b5350',accent:C.gold},
       {id:'science',x:430,y:18,w:357,h:270,title:'SCIENCE REVIEW',sub:'Independent physics & mathematics',floor:'#415861',accent:C.blue},
       {id:'pedagogy',x:801,y:18,w:381,h:270,title:'PEDAGOGY REVIEW',sub:'Independent learning & usability',floor:'#5b4d5b',accent:C.pink},
-      {id:'teacher',x:18,y:535,w:310,h:247,title:'THE TEACHER',sub:'A question worth exploring',floor:'#66543e',accent:C.gold},
-      {id:'checks',x:342,y:535,w:306,h:247,title:'AUTOMATIC CHECKS',sub:'Build · tests · layout',floor:'#414f50',accent:C.amber},
+      {id:'teacher',x:18,y:535,w:310,h:247,title:'THE TEACHER',sub:'ASSIGNS THE TOPIC AND TASK',floor:'#66543e',accent:C.gold},
+      {id:'checks',x:342,y:535,w:306,h:247,title:'CHECK RUNNER',sub:'Build · tests · layout',floor:'#414f50',accent:C.amber},
       {id:'repository',x:662,y:535,w:240,h:247,title:'PUBLICATION DECISION',sub:'The teacher decides',floor:'#4d5947',accent:C.green},
       {id:'site',x:916,y:535,w:266,h:247,title:'THE WEBSITE',sub:'A separate deployment',floor:'#4e525e',accent:'#c0b5db'}
     ];
-    const home = {teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
-    const colors = {teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
+    const home = {checks:[495,668],teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
+    const colors = {checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
     const looks = {
+      checks:{skin:'#c89678',hair:'#4a3432',shirt:'#d5b474',jacket:'#9b7763',pants:'#455266',hairStyle:'braid',glasses:true,scale:1},
       teacher:{skin:'#d5b399',hair:'#b9c1ba',shirt:'#e2d8bd',jacket:'#647a72',pants:'#46575b',hairStyle:'parted',glasses:true,beard:'#a5aaa0',scale:1.04},
       developer:{skin:'#b9815a',hair:'#302d2b',shirt:'#d8ad61',pants:'#424b60',hairStyle:'crop',headphones:true,beard:'#4b332b',scale:1},
       science:{skin:'#916550',hair:'#c0bbb1',shirt:'#8fb3cb',jacket:'#667f92',pants:'#5d5850',hairStyle:'curls',glasses:true,scale:1.08},
@@ -55,11 +56,11 @@ window.AgentOfficeScene = {
       box(x-9,y-12,18,24,'#e9dfbe');box(x-5,y-7,11,3,color);box(x-5,y-1,10,2,'#86836e');box(x-5,y+4,8,2,'#86836e');
       pill(`${lid.toUpperCase()} · ${kind}`,x,y-52,color,Math.max(98,(lid.length+kind.length+3)*6.5));
     }
-    function person(x,y,id,moving=false,carrying=false,facing=[1,0]){
+    function person(x,y,id,moving=false,carrying=false,facing=[1,0],working=false){
       const look=looks[id],seed=Object.keys(looks).indexOf(id);
       const gait=moving?Math.sin(options.phase()*6+seed)*2.1:0;
       const bob=moving?Math.cos(options.phase()*12+seed)*.55:0;
-      const back=moving && facing[1]<-.65 && Math.abs(facing[1])>Math.abs(facing[0]);
+      const back=working || (moving && facing[1]<-.65 && Math.abs(facing[1])>Math.abs(facing[0]));
       ctx.save();ctx.translate(x,y);ctx.scale(look.scale,look.scale);
       box(-14,34,31,4,'#263437');
       if(moving && facing[0]<-.1)ctx.scale(-1,1);
@@ -67,12 +68,18 @@ window.AgentOfficeScene = {
       box(-11,31+gait,10,4,'#e0d8c6');box(3,31-gait,10,4,'#ddd8cb');
       ctx.translate(0,bob);
       const coat=look.jacket || look.shirt;
-      box(-14,0,29,25,coat);box(-5,0,10,23,look.shirt);
-      if(look.jacket){box(-6,0,2,22,'#ffffff20');box(5,0,2,22,'#00000020');}
-      if(id==='developer'){box(-5,1,2,8,'#e8d4a4');box(5,1,2,8,'#e8d4a4');box(-9,16,19,5,'#c39850');}
+      box(-14,0,29,25,coat);if(!back)box(-5,0,10,23,look.shirt);
+      if(look.jacket && !back){box(-6,0,2,22,'#ffffff20');box(5,0,2,22,'#00000020');}
+      if(id==='developer' && !back){box(-5,1,2,8,'#e8d4a4');box(5,1,2,8,'#e8d4a4');box(-9,16,19,5,'#c39850');}
       if(look.tie && !back){box(-1,1,4,15,'#795a68');box(-2,15,6,4,'#795a68');}
-      box(-19,7-gait,7,14,coat);box(-19,19-gait,7,5,look.skin);
-      box(15,carrying?5:7+gait,7,carrying?10:14,coat);box(15,carrying?13:19+gait,7,5,look.skin);
+      if(working){
+        const typing=options.still()?0:Math.sin(options.phase()*9+seed)*1.2;
+        box(-20,-5,7,17,coat);box(-20,-10+typing,7,6,look.skin);
+        box(15,-5,7,17,coat);box(15,-10-typing,7,6,look.skin);
+      }else{
+        box(-19,7-gait,7,14,coat);box(-19,19-gait,7,5,look.skin);
+        box(15,carrying?5:7+gait,7,carrying?10:14,coat);box(15,carrying?13:19+gait,7,5,look.skin);
+      }
       box(-4,-3,10,7,look.skin);box(-12,-23,24,24,back?look.hair:look.skin);
       if(look.hairStyle==='curls'){
         for(let i=0;i<5;i++){box(-14+i*6,-27-(i%2)*3,8,9,look.hair);}
@@ -222,8 +229,10 @@ window.AgentOfficeScene = {
         else walk(coffee.role,journeys[coffee.role+'CoffeeReturn'],(coffee.f-2/3)*3);
       }
       figurePositions=[];
-      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site']){
-        const point=positions[id],[x,y]=point;person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0]);
+      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site','checks']){
+        const point=positions[id],[x,y]=point;
+        const working=!busy.has(id) && coffee?.role!==id && ['developer','science','pedagogy','teacher','checks','repository'].includes(id) && Math.hypot(x-home[id][0],y-home[id][1])<1;
+        person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0],working);
         figurePositions.push({id,x,y});
         const awayFromDesk=Math.hypot(x-home[id][0],y-home[id][1])>28;
         if((moving[id] && awayFromDesk) || coffee?.role===id){const label=coffee?.role===id?'COFFEE BREAK':id==='gatekeeper'?'COORDINATOR':id==='site'?'WEB COURIER':id.toUpperCase();pill(label,x,y+54,colors[id],label.length*8+24);}
@@ -237,7 +246,7 @@ window.AgentOfficeScene = {
       const {step,coffee,positions,packets}=actors;let speaker,message;
       if(coffee?.seated){speaker=coffee.role;message=speaker==='developer'?'Refactoring my caffeine levels.':speaker==='teacher'?'A brief pause. The universe can wait.':'A peer review of this coffee is now in progress.';}
       else if(step===0){speaker='teacher';message="Let's turn ‘why?’ into a lesson.";}
-      else if(step===1){speaker='developer';message='It worked in my head. Now for the tests.';}
+      else if(step===1){speaker='checks';message='Coffee in. Bugs out.';}
       else if(step===2){speaker=Object.keys(review.roles).find(role=>review.roles[role].work==='REVIEWING COPY') || 'pedagogy';message=speaker==='science'?'SI units. Not vibes.':'Would a student understand this before coffee?';}
       else if(step===3){
         const bad=Object.keys(review.roles).find(role=>review.roles[role].delivering && ['FAIL','stale','invalid'].includes(review.roles[role].status));
@@ -260,12 +269,8 @@ window.AgentOfficeScene = {
       return review.ready && state?.publicationDecision?.status==='approved' && state.publicationDecision.contentHash===state.hash;
     }
     function checks(state){
-      const x=495,y=650;
-      box(x-67,y-57,134,96,'#243237');box(x-61,y-51,122,76,'#3b5051');
-      text('CHECK RUNNER',x,y-32,C.ink,12,'center');
-      for(const [i,label] of ['BUILD','SIM TESTS','LAYOUT'].entries()){
-        box(x-51,y-20+i*14,6,6,C.amber);text(label,x-36,y-13+i*14,'#b7c5bb',10);
-      }
+      const x=495;
+      desk(x,656,C.amber,true);
       text(state?.checks.failed?`${state.checks.failed} SAVED FAILURES`:state?.checks.passed?`${state.checks.passed} SAVED PASSES`:'NO SAVED RESULTS',x,718,state?.checks.failed?C.red:C.amber,12,'center');
       text('Freshness / CI unknown',x,738,C.muted,10,'center');
       box(372,596,24,80,'#253239');for(let i=0;i<5;i++){box(376,602+i*13,15,8,'#556669');box(378,604+i*13,3,3,C.amber);}
@@ -308,13 +313,23 @@ window.AgentOfficeScene = {
       plant(380,245);plant(753,245);plant(1148,245);
       // The publication role is represented by a seated colleague throughout the journey.
       desk(150,656,C.gold);box(42,595,34,42,'#d9d3ba');text('?',59,624,'#60756a',24,'center');
-      shelf(207,595,90);plant(53,745);text('BRIEF & ASSIGN',173,743,C.gold,12,'center');
+      shelf(207,595,90);plant(53,745);
       desk(789,656,C.green);box(732,711,116,28,'#243631');text(publicationApproved(state,review)?'APPROVED':options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,publicationApproved(state,review)?C.green:C.amber,10,'center');
       if(options.event()?.merge)text('Approver unverified',790,757,C.muted,10,'center');
-      pill('2 · CHECK',484,508,C.amber,132);pill('3 · INDEPENDENT REVIEWS',779,318,C.ink,259);
-      pill('5 · HUMAN DECISION',790,516,C.gold,197);text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
-      box(28,309,326,45,'#2f3e3e');text(options.presentation?.()?'TODAY’S LESSON':'ONE LESSON. TWO INDEPENDENT REVIEWS.',191,327,C.ink,10,'center');
-      text(state?(options.presentation?.()?state.id.toUpperCase():`${state.id.toUpperCase()}  /  ${state.hash || 'HASH UNAVAILABLE'}`):'SELECT A RECORDED LESSON',191,344,C.gold,10,'center');
+      pill('3 · INDEPENDENT REVIEWS',779,318,C.ink,259);
+      text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
+      box(28,309,326,45,'#2f3e3e');text('TODAY’S LESSON',191,320,C.ink,9,'center');
+      const topic=state?.title || (state?state.id.toUpperCase():tr('SELECT A RECORDED LESSON'));
+      ctx.font='10px monospace';
+      const topicLines=[];let topicLine='';
+      for(const word of topic.split(' ')){
+        const next=topicLine?topicLine+' '+word:word;
+        if(ctx.measureText(next).width>306 && topicLine){topicLines.push(topicLine);topicLine=word;}else topicLine=next;
+      }
+      if(topicLine)topicLines.push(topicLine);
+      // Fit the complete authored topic, including unusually long titles.
+      const topicSize=Math.min(10,26/Math.max(1,topicLines.length));
+      topicLines.forEach((line,i)=>text(line,191,332+i*topicSize,C.gold,topicSize,'center'));
       lounge();checks(state);site(state);gate(state,review);const activity=actors(state,review,coffee);const quote=speech(state,review,activity);
       if(!options.presentation?.()){box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);}
       return {step:activity.step,speech:quote,caption:this.caption(activity.step,state,review)};

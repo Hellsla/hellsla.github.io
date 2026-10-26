@@ -91,10 +91,10 @@
     '{n} commits':'{n} committia','Git history · {n} commits · Europe/Helsinki':'Git-historia · {n} committia · Suomen aika',
     'Repository changes':'Muut projektimuutokset','No history available':'Historiaa ei ole saatavilla','{time} Helsinki time':'{time} Suomen aikaa',
     'Workflow illustration: {caption}':'Työnkulun havainnollistus: {caption}',
-    'DEVELOPMENT WORKSHOP':'KEHITYSPAJA','Text · exercises · simulations':'Teksti · tehtävät · simulaatiot',
+    'DEVELOPMENT WORKSHOP':'KEHITYSPAJA','Drafts of texts, exercises and simulations.':'Tekstien, tehtävien ja simulaatioiden raakaversiot.',
     'SCIENCE REVIEW':'FYSIIKAN TARKISTUS','Independent physics & mathematics':'Riippumaton fysiikan ja matematiikan arvio',
     'PEDAGOGY REVIEW':'PEDAGOGINEN TARKISTUS','Independent learning & usability':'Riippumaton oppimisen ja käytettävyyden arvio',
-    'THE TEACHER':'OPETTAJA','A question worth exploring':'Tutkimisen arvoinen kysymys',
+    'THE TEACHER':'OPETTAJA','ASSIGNS THE TOPIC AND TASK':'ANTAA AIHEEN JA TEHTÄVÄN',
     'AUTOMATIC CHECKS':'AUTOMAATTISET TESTIT','Build · tests · layout':'Rakennus · testit · ulkoasu',
     'PUBLICATION DECISION':'JULKAISUPÄÄTÖS','The teacher decides':'Opettaja päättää','THE WEBSITE':'VERKKOSIVUSTO','A separate deployment':'Erillinen julkaisu',
     'TEACHER':'OPETTAJA','DEVELOPER':'KEHITTÄJÄ','SCIENCE':'FYSIIKKA','PEDAGOGY':'PEDAGOGIIKKA','COORDINATOR':'KOORDINAATTORI','WEB COURIER':'VERKKOKURIIRI',
@@ -158,7 +158,7 @@
     repository:'Tämän pöydän hahmo kuvaa opettajan julkaisupäätöstä. Opettaja päättää, mitä yhdistetään. Rakennus hyväksyy oppitunnit, joilla on molemmat voimassa olevat PASS-arviot tai legacy-poikkeus. CI tarkistaa sivuston erikseen. Yhdistäminen ei todista hyväksyjää tai onnistunutta julkaisua.',
     gatekeeper:'Tavallinen toimistohahmo kuvaa arvioiden hyväksyntätarkistusta. Molempien riippumattomien raporttien on annettava PASS nykyiselle sisältötiivisteelle. Koordinaattori vie tarkistetun paketin päätöksentekijälle ja palaa omalle pöydälleen. Puuttuva, hylätty, virheellinen tai vanhentunut raportti ei riitä. Hahmo havainnollistaa automaattista sääntöä, ei uutta käynnissä olevaa agenttia.',
     teacher:'Asettaa oppitunnin tavoitteet ja antaa kehitystehtävän. Opettajan julkaisupäätös kuvataan erillisellä pöydällä. Hahmojen liikkuminen havainnollistaa työnkulkua; Git-historia ei tallenna opettajan todellisia liikkeitä tai yksityisiä ohjeita.',
-    checks:'Oppitunnin työnkulku rakentaa esikatselun ja tarkistaa sisällön, matematiikan, simulaatiot ja ulkoasun. Tallennetut checks.txt-tulokset näkyvät tässä, mutta niissä ei ole sisältötiivistettä: niiden ajantasaisuus ja CI-tulos ovat tuntemattomia. Kone kuvaa automaatiota, ei uutta agenttia.',
+    checks:'Oppitunnin työnkulku rakentaa esikatselun ja tarkistaa sisällön, matematiikan, simulaatiot ja ulkoasun. Tallennetut checks.txt-tulokset näkyvät tässä, mutta niissä ei ole sisältötiivistettä: niiden ajantasaisuus ja CI-tulos ovat tuntemattomia. Tietokoneella työskentelevä hahmo kuvaa automaattisten testien ajamista, ei uutta käynnissä olevaa agenttia.',
     site:'Kuvaa julkaisuprosessia, ei uutta tekoälyagenttia. Kuriiri saapuu julkaisupöydälle, odottaa tälle versiolle tallennettua hyväksyntää ja ottaa mukaansa vain hyväksytyn aineiston. Yhdistäminen tai HTML-tiedosto ei yksin todista päätöstä. Julkaisua ei ole varmistettu.',
     lounge:'Kahvikone, sohva ja pieni hengähdystauko. Vapaana oleva hahmo käy välillä kahvilla ja palaa ajoissa seuraavaan luovutukseen. Tauot ja puhekuplat ovat havainnollistuksia; oikeita agentteja ei pysäytetä eikä oppitunteja muuteta.'
   };
