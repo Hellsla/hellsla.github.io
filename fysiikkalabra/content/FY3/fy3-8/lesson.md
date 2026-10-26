@@ -275,3 +275,44 @@ Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukka
 - Nesteet laajenevat enemmän kuin kiinteät aineet ja kaasut paljon enemmän kuin nesteet.
 - Kappale laajenee kaikkiin suuntiin samassa suhteessa, joten myös reiät suurenevat.
 - Vesi on poikkeus: sen tiheys on suurin noin 4 °C:ssa.
+
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus, ja kahden kiskon jatkoskohdassa on pieni rako lämpölaajenemista varten." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy38s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy38s-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
+  <rect x="0" y="0" width="1200" height="160" fill="url(#fy38s-sky)"/>
+  <circle cx="520" cy="60" r="54.5" fill="#ffffff" fill-opacity="0.5"/>
+  <path d="M559,77.5 L577,75.5 L562.5,64 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M545,95 L562,102 L555,85 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M524,102.5 L535.5,117 L537.5,99 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M502.5,99 L504.5,117 L516,102.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M485,85 L478,102 L495,95 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M477.5,64 L463,75.5 L481,77.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M481,42.5 L463,44.5 L477.5,56 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M495,25 L478,18 L485,35 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M516,17.5 L504.5,3 L502.5,21 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M537.5,21 L535.5,3 L524,17.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M555,35 L562,18 L545,25 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M562.5,56 L577,44.5 L559,42.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <circle cx="520" cy="60" r="34" fill="url(#fy38s-sun)"/>
+  <path d="M0,160 L6.5,145.5 L13,160 L20.5,144 L27.5,160 L34.5,144.5 L41.5,160 L52,133 L62.5,160 L70,143 L77.5,160 L84.5,143.5 L92,160 L102,135.5 L112,160 L123.5,131 L134.5,160 L144.5,135.5 L154.5,160 L166,130.5 L177.5,160 L188.5,132 L199.5,160 L209,138 L218,160 L229,131.5 L240.5,160 L249.5,138 L259,160 L267,141 L275,160 L285,135 L295,160 L304,137.5 L313,160 L322,139 L331,160 L337.5,146 L344,160 L355,131.5 L366,160 L377.5,131 L389,160 L398.5,136.5 L408,160 L418.5,133.5 L429,160 L439,136 L448.5,160 L459,134 L469.5,160 L480,133 L491,160 L499,141.5 L507,160 L514,143.5 L521.5,160 L533,131 L544.5,160 L556,130 L567.5,160 L577.5,135.5 L587,160 L598.5,131 L610,160 L619.5,137 L629,160 L638.5,135.5 L648.5,160 L658.5,136 L668,160 L676,142.5 L683.5,160 L694,133.5 L704.5,160 L715.5,132 L726.5,160 L737.5,131 L749,160 L757,142 L764.5,160 L771,145.5 L777.5,160 L788.5,132.5 L799.5,160 L808.5,139 L817,160 L824,145 L831,160 L838.5,143 L846,160 L857,132 L868,160 L878.5,134 L888.5,160 L895.5,145.5 L902,160 L910.5,139 L919.5,160 L930.5,132.5 L941,160 L952,133 L963,160 L971,140.5 L979,160 L989.5,134 L1000,160 L1008.5,139.5 L1017,160 L1025.5,140 L1034,160 L1042.5,139 L1051.5,160 L1059.5,141.5 L1067,160 L1077,136 L1086.5,160 L1096.5,135.5 L1106.5,160 L1113,146 L1119.5,160 L1127,142.5 L1134.5,160 L1142,143 L1149.5,160 L1155.5,146.5 L1162,160 L1169.5,143.5 L1176.5,160 L1186.5,135 L1197,160 L1208,132 L1219,160 V180 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <rect x="0" y="160" width="600" height="200" fill="#d9b26a"/>
+  <path d="M290,160 H310 L520,360 H80 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <rect x="280" y="166" width="40" height="4" fill="#6c757d"/>
+  <rect x="271.5" y="173" width="57" height="4.5" fill="#6c757d"/>
+  <rect x="256" y="186.5" width="88" height="5.5" fill="#6c757d"/>
+  <rect x="235.5" y="203.5" width="128.5" height="6.5" fill="#6c757d"/>
+  <rect x="212" y="223.5" width="176.5" height="7.5" fill="#6c757d"/>
+  <rect x="185" y="246.5" width="230.5" height="9" fill="#6c757d"/>
+  <rect x="155" y="271.5" width="290.5" height="10.5" fill="#6c757d"/>
+  <rect x="122" y="299" width="355.5" height="12" fill="#6c757d"/>
+  <rect x="87" y="328.5" width="425.5" height="14" fill="#6c757d"/>
+  <path d="M292,160 L150,360" fill="none" stroke="#8a96a3" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M292,160 L150,360" fill="none" stroke="#c4ccd4" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M308,160 L450,360" fill="none" stroke="#8a96a3" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M308,160 L450,360" fill="none" stroke="#c4ccd4" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="198" y1="278" x2="210" y2="290" stroke="#e9c98a" stroke-width="7" stroke-linecap="butt"/>
+  <rect x="190" y="288" width="28" height="8" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="390" y1="278" x2="402" y2="290" stroke="#e9c98a" stroke-width="7" stroke-linecap="butt"/>
+  <rect x="382" y="288" width="28" height="8" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
+  <path d="M180,300 q-12,-13.5 0,-26.5 t0,-26.5 t0,-26.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M420,300 q-12,-13.5 0,-26.5 t0,-26.5 t0,-26.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+</svg>

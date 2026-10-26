@@ -152,4 +152,29 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation}
+def scene():
+    """A second everyday scene: the same bicycle on a frosty winter morning."""
+    f = H.scene("fy33-scene", "Kuvitus: sama polkupyörä lumisena pakkasaamuna. Lunta on maassa ja satulalla, ja tolpan lämpömittarin "
+                "pylväs on matalalla.")
+    H.sky(f, "fy33s", 360, H.COLD_LIGHT, H.WHITE)
+    H.forest(f, 240, 50, 26, H.ALUMINIUM, seed=7, depth=30)
+    f.path("M0,250 Q300,236 600,252 V360 H0 Z", H.WHITE)
+    for k in range(40): f.circle(H.rnd(k, 3) * 600, H.rnd(k + 70, 3) * 230, 2 + 2 * H.rnd(k + 9, 3), H.WHITE, H.ICE_EDGE, 1)
+    for cx in (220, 400):
+        f.circle(cx, 270, 52, "none", H.INK, 9)
+        for k in range(12):
+            a = k * H.math.pi / 6
+            f.line(cx, 270, cx + 46 * H.math.cos(a), 270 + 46 * H.math.sin(a), H.METAL_EDGE, 1.2)
+        f.circle(cx, 270, 5, H.INK)
+    for d in ("M220,270 L284,270 L360,196 L270,196 Z", "M284,270 L258,178", "M360,196 L400,270", "M360,196 L354,176"):
+        f.path(d, stroke=H.COLD, w=7, extra='stroke-linecap="round"')
+    f.path("M240,172 H280", stroke=H.INK, w=9, extra='stroke-linecap="round"')
+    f.path("M238,166 Q260,156 282,166", stroke=H.WHITE, w=7, extra='stroke-linecap="round"')
+    f.path("M340,174 Q354,166 370,176", stroke=H.INK, w=6, extra='stroke-linecap="round"')
+    f.path("M150,322 Q300,316 470,322", stroke=H.ICE_EDGE, w=2, extra='stroke-opacity="0.6"')
+    H.thermometer(f, 520, 230, 30, H.COLD, 150)
+    f.rect(514, 230, 12, 40, H.IRON)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation}

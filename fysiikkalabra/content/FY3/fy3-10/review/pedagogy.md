@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b20dbf8044c2909f
+CONTENT-HASH: 62943370ac957c40
+
 ## Blocking
-None.
+
 ## Polish
-- Same size, different colour for the two balloons is right; no cue tells the student which is helium, but that is the point of the question.
-- The floating balloon's string hangs free, which supports 'lighter'; good.
+- A hot-air balloon is an open system (n changes as air leaves), so it is a looser fit with pV = nRT; the lesson text should not claim a closed gas.
+- The flame is small; a warmer envelope colour would carry the heated gas better.
+
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-10.png only (no lesson text opened): two equal-sized balloons, one floating and one on the floor; instantly readable.
+batch delta review: Hot-air balloon over water: recognisable, gas heated by a flame, volume visibly large. Inclusive, no text, reads at phone width (600x360 capture).

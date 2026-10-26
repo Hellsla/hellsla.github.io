@@ -261,3 +261,51 @@ Moni sekoittaa kasvihuoneilmiön ja otsonikadon, vaikka ne ovat eri asioita: ots
 - Energiatasapainossa tuleva ja lähtevä teho ovat yhtä suuret, ja lämpötila pysyy vakiona.
 - Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin, mikä nostaa maanpinnan tasapainolämpötilan noin −18 °C:sta noin +15 °C:een.
 - Kasvihuonekaasujen lisääntyminen rikkoo tasapainon hetkellisesti, ja maapallo lämpenee, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan.
+
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta, mitä kuvaavat oranssit nuolet. Maassa on lunta." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy312s-night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2933"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
+  <rect x="0" y="0" width="600" height="360" fill="url(#fy312s-night)"/>
+  <circle cx="200.5" cy="3.5" r="1.20301" fill="#ffffff"/>
+  <circle cx="584" cy="199.5" r="1.23221" fill="#ffffff"/>
+  <circle cx="122" cy="66.5" r="1.0176" fill="#ffffff"/>
+  <circle cx="139.5" cy="172" r="1.06781" fill="#ffffff"/>
+  <circle cx="10.5" cy="168.5" r="1.58563" fill="#ffffff"/>
+  <circle cx="40.5" cy="34" r="1.87276" fill="#ffffff"/>
+  <circle cx="351.5" cy="82.5" r="1.55369" fill="#ffffff"/>
+  <circle cx="523.5" cy="145" r="1.07692" fill="#ffffff"/>
+  <circle cx="332" cy="83.5" r="1.61189" fill="#ffffff"/>
+  <circle cx="46" cy="162.5" r="1.23263" fill="#ffffff"/>
+  <circle cx="367" cy="170.5" r="1.49434" fill="#ffffff"/>
+  <circle cx="139.5" cy="179.5" r="1.12448" fill="#ffffff"/>
+  <circle cx="296.5" cy="158" r="1.21429" fill="#ffffff"/>
+  <circle cx="74.5" cy="162" r="1.65091" fill="#ffffff"/>
+  <circle cx="128.5" cy="97.5" r="1.50694" fill="#ffffff"/>
+  <circle cx="390.5" cy="95" r="1.99735" fill="#ffffff"/>
+  <circle cx="304" cy="108" r="1.73652" fill="#ffffff"/>
+  <circle cx="598.5" cy="87" r="1.83134" fill="#ffffff"/>
+  <circle cx="442" cy="3" r="1.98664" fill="#ffffff"/>
+  <circle cx="499" cy="169.5" r="1.22956" fill="#ffffff"/>
+  <circle cx="592" cy="53" r="1.59795" fill="#ffffff"/>
+  <circle cx="137.5" cy="126" r="1.94346" fill="#ffffff"/>
+  <circle cx="359" cy="179" r="1.67526" fill="#ffffff"/>
+  <circle cx="566" cy="141.5" r="1.81629" fill="#ffffff"/>
+  <circle cx="405" cy="85" r="1.00366" fill="#ffffff"/>
+  <circle cx="490" cy="112.5" r="1.93067" fill="#ffffff"/>
+  <circle cx="2" cy="162.5" r="1.86419" fill="#ffffff"/>
+  <circle cx="558.5" cy="12.5" r="1.83614" fill="#ffffff"/>
+  <circle cx="518.5" cy="185.5" r="1.665" fill="#ffffff"/>
+  <circle cx="501.5" cy="107.5" r="1.3628" fill="#ffffff"/>
+  <path d="M0,300 Q300,286 600,302 V360 H0 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <rect x="170" y="170" width="260" height="136" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
+  <path d="M150,172 L300,80 L450,172 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M150,172 L300,80 L450,172" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="200" y="200" width="60" height="54" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="3"/>
+  <line x1="230" y1="200" x2="230" y2="254" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="340" y="200" width="60" height="54" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="3"/>
+  <line x1="370" y1="200" x2="370" y2="254" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="280" y="230" width="40" height="76" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="3"/>
+  <path d="M229.5,221 L157.5,229 L156.5,222 L140,236 L159,246 L158.5,239 L230.5,231 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M369.5,231 L441.5,239 L441,246 L460,236 L443.5,222 L442.5,229 L370.5,221 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M254.5,118 L231.5,64.5 L238,62 L220,50 L216,71.5 L222.5,68.5 L245.5,122 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M354.5,122 L377.5,68.5 L384,71.5 L380,50 L362,62 L368.5,64.5 L345.5,118 Z" fill="#e8590c" stroke-linejoin="round"/>
+</svg>

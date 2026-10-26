@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 412f5c6bc3bee28e
+CONTENT-HASH: 14f5f3cf3c859dc9
+
 ## Blocking
-None.
+
 ## Polish
-- The atmosphere rim is grey and thin; a faint bluer rim would foreshadow the greenhouse layer.
-- Incoming and outgoing arrows share one colour; the lesson text (not the picture) must say the outgoing energy is infrared radiation.
+- Walls and door do not leak although only roof and windows are drawn, which could suggest they are perfectly insulating.
+- Arrows are equal in length, so no loss ranking is implied; good.
+
 ## Checked
-batch delta review: hero review-batch/heroes/fy3-12.png: Sun, three incoming and three equal outgoing arrows, Earth with a rim, matches the 'sama määrä sisään ja ulos' Miksi; the earlier one-way-heating polish was addressed; not to scale, acceptable for a hook; reads at 360 px.
+batch delta review: House on a winter night with orange heat-loss arrows through windows and roof; fits the chapter. Inclusive, no text, reads at phone width (600x360 capture).

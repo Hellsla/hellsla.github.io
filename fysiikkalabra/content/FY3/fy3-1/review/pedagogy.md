@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 159b27ecb5dbcdf1
+CONTENT-HASH: 254eda500951fd19
+
 ## Blocking
-None.
+
 ## Polish
-- Astronaut leaping on a grey Moon with Earth in the sky: subject large and central, reads at 360 px; low gravity is implied only by the jump and the long shadow gap, which is fine for a hook.
-- Lower legs are blocky and the left leg joins the torso awkwardly; a smoother join would look more finished.
+- Moon-side spring is drawn with tightly packed coils, so it can read as unstretched rather than 6 times shorter in extension; the 6 : 1 only holds with the natural length (24 px) in mind.
+- The Earth spring is 144 px long and the Moon spring 44 px, so the lengths differ about 3 : 1. The extensions (120 px and 20 px) are 6 : 1 as the aria-label says. A faint dashed line at the natural length would make the ratio readable.
+
 ## Checked
-batch delta review: hero picture review-batch/heroes/fy3-1.png only (no lesson text opened): astronaut, Moon, Earth readable at phone width; no physics error or exclusionary cue.
+batch delta review: Moon dark panel with the Earth in the sky and white spring: clear; same bag in both panels (equal mass), good. Inclusive, no text, reads at phone width (600x360 capture).

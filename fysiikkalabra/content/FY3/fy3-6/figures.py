@@ -2,6 +2,7 @@
 import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, COLD, GOOD, ALUMINIUM, METAL_EDGE,
                     IRON, COPPER, ICE, ICE_EDGE, WATER, WATER_LIGHT, GLASS, SAND, SAND_LIGHT, SAND_DARK, GRAIN, HOT_LIGHT, COLD_LIGHT, n)
+import herolib as H
 
 
 def defs(f):
@@ -199,4 +200,29 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "water-sand": water_sand, "c-bars": c_bars, "calorimeter": calorimeter}
+def scene():
+    """A second everyday scene: a sauna stove and löyly steam."""
+    f = H.scene("fy36-scene", "Kuvitus: saunan kiuas. Kuumille kiville heitetään kauhalla vettä, ja kivistä nousee löylyhöyryä. "
+                "Taustalla on puiset lauteet.")
+    f.rect(0, 0, 600, 360, H.SAND_DARK)
+    for y in range(0, 360, 30): f.line(0, y, 600, y, H.SAND, 2)
+    f.rect(330, 150, 270, 22, H.SAND, H.INK, 2.5); f.rect(330, 172, 270, 188, H.SAND_LIGHT)
+    for x in range(330, 600, 54): f.line(x, 172, x, 360, H.SAND, 2)
+    f.rect(330, 250, 270, 18, H.SAND, H.INK, 2.5)
+    # stove and stones
+    f.rect(100, 200, 170, 150, H.IRON, H.INK, 3, 6)
+    f.rect(130, 270, 110, 50, H.INK, rx=4)
+    f.rect(140, 280, 90, 30, H.grad(f, "fy36s-fire", H.HEAT_LIGHT, H.HEAT), rx=3)
+    for k, (x, y, r) in enumerate(((120, 194, 18), (152, 186, 20), (186, 192, 19), (220, 186, 21), (250, 196, 16), (136, 168, 17), (172, 164, 19), (206, 166, 18), (238, 172, 15), (188, 144, 16))):
+        f.circle(x, y, r, H.METAL_EDGE if k % 2 else H.IRON, H.INK, 2)
+    # ladle with water, steam rising
+    f.path("M330,70 L250,120", stroke=H.SAND, w=10, extra='stroke-linecap="round"')
+    f.path("M226,112 q24,30 48,6 Z", H.ALUMINIUM, H.INK, 2.5)
+    for k in range(5): f.circle(232 + k * 6, 136 + k * 6, 3, H.WATER)
+    for x in (150, 196, 236):
+        f.path(f"M{x},140 c14,-24 -14,-40 0,-64 s-14,-40 0,-60", stroke=H.RULE, w=20, extra='stroke-linecap="round" stroke-opacity="0.55"')
+        f.path(f"M{x},140 c14,-24 -14,-40 0,-64 s-14,-40 0,-60", stroke=H.WHITE, w=14, extra='stroke-linecap="round"')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "water-sand": water_sand, "c-bars": c_bars, "calorimeter": calorimeter}

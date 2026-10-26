@@ -73,6 +73,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   with a wide illustration of its Miksi scene right under the question: `Fig(..., width=1200, hero=True)` in
   figures.py (`data-fig="hero"`), 1200 × 600, figure palette plus the paper `#f6f1e6`, flat shapes, no text, the
   subject in the middle third so it reads at 360 px; site.css `.fig-hero` gives it the column width.
+  A second everyday scene of the same phenomenon may sit beside the summary list: `H.scene(...)` (600 × 360,
+  `data-fig="scene"`) right after the list under `## Tiivistelmä`, same style. Both kinds without labels are the
+  review category "illustration" (science none, pedagogy delta; teacher 2026-10-26).
 - **Every label in a figure is LaTeX** (human decision 2026-10-25, extended by the teacher 2026-10-26 to all labels):
   symbols, formulas, units, axis titles, tick numbers and words all go in `<foreignObject x y width height><div
   xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$p V = n R T$</div></foreignObject>`, words as `$\text{vesi}$`,

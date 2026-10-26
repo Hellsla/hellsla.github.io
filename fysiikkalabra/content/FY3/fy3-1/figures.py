@@ -108,4 +108,35 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass}
+def scene():
+    """A second everyday scene: the same backpack on a spring scale on the Earth and on the Moon."""
+    f = H.scene("fy31-scene", "Kuvitus: sama reppu riippuu jousivaa'assa Maassa ja Kuussa. Maassa jousi venyy pitkäksi, Kuussa "
+                "vain kuudesosan siitä, koska Kuu vetää reppua kuusi kertaa heikommin. Venymät on piirretty mittakaavassa.")
+    f.rect(0, 0, 300, 360, H.grad(f, "fy31s-sky", H.ICE, H.GLASS))
+    f.rect(300, 0, 300, 360, H.INK)
+    for k in range(30): f.circle(310 + H.rnd(k, 2) * 280, H.rnd(k + 50, 2) * 300, 1 + H.rnd(k + 90, 2) * 1.4, H.WHITE)
+    H.earth(f, "fy31s", 540, 60, 26)
+    f.path("M0,320 Q150,310 300,322 V360 H0 Z", H.SAND)
+    f.path("M300,322 Q450,306 600,320 V360 H300 Z", H.ALUMINIUM)
+    f.line(300, 0, 300, 360, H.WHITE, 3)
+
+    def scale(x, stretch, ink=H.INK):
+        f.rect(x - 70, 20, 140, 14, H.IRON, H.INK, 2, 3)          # the beam it hangs from
+        f.rect(x - 14, 34, 28, 30, H.ALUMINIUM, H.INK, 2.5, 4)
+        coils = 9; top, bot = 64, 64 + 24 + stretch
+        d = f"M{x},{top}"
+        for k in range(coils):
+            y0 = top + (bot - top) * k / coils; y1 = top + (bot - top) * (k + 0.5) / coils
+            d += f" L{x + 14},{H.n(y1)} L{x - 14},{H.n(y0 + (bot - top) / coils)}"
+        f.path(d + f" L{x},{H.n(bot)}", stroke=ink, w=2.5)
+        f.path(f"M{x},{H.n(bot)} v12 q0,10 -10,10", stroke=ink, w=3)
+        y = bot + 30
+        f.rect(x - 40, y, 80, 96, H.COLD, H.INK, 3, 18)
+        f.rect(x - 28, y + 46, 56, 36, H.COLD_LIGHT, H.INK, 2, 8)
+        f.path(f"M{x - 20},{y} Q{x},{y - 18} {x + 20},{y}", stroke=ink, w=4)
+    scale(150, 120)          # on the Earth
+    scale(450, 20, H.WHITE)  # on the Moon: one sixth
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass}

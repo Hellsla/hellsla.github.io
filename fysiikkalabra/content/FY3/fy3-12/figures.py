@@ -123,4 +123,23 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature}
+def scene():
+    """A second everyday scene: a house on a winter night losing heat through its windows and roof."""
+    f = H.scene("fy312-scene", "Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta, mitä kuvaavat "
+                "oranssit nuolet. Maassa on lunta.")
+    f.rect(0, 0, 600, 360, H.grad(f, "fy312s-night", H.INK, H.COLD))
+    for k in range(30): f.circle(H.rnd(k, 8) * 600, H.rnd(k + 40, 8) * 200, 1 + H.rnd(k + 2, 8), H.WHITE)
+    f.path("M0,300 Q300,286 600,302 V360 H0 Z", H.WHITE)
+    f.rect(170, 170, 260, 136, H.RULE_LIGHT, H.INK, 3)
+    f.path("M150,172 L300,80 L450,172 Z", H.IRON, H.INK, 3)
+    f.path("M150,172 L300,80 L450,172", stroke=H.WHITE, w=6)
+    for x in (200, 340):
+        f.rect(x, 200, 60, 54, H.HEAT_LIGHT, H.INK, 3, 3)
+        f.line(x + 30, 200, x + 30, 254, H.INK, 2.5)
+    f.rect(280, 230, 40, 76, H.SAND, H.INK, 3, 3)
+    for x0, y0, x1, y1 in ((230, 226, 230 - 90, 226 + 10), (370, 226, 370 + 90, 226 + 10), (250, 120, 220, 50), (350, 120, 380, 50)):
+        f.block_arrow(x0, y0, x1, y1, H.HEAT, 10, 24, 18)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature}
