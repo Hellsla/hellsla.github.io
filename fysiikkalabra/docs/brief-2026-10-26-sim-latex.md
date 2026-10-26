@@ -5,7 +5,7 @@ simulation is LaTeX, as in the figures. The shared embed (`templates/sim-embed.j
 does the drawing: `p.text(str, x, y)` with a string that contains `$…$` is drawn by KaTeX over the canvas at p.text's
 place, size, alignment and fill colour; `p.textWidth(str)` measures such a string as drawn; a p5 element's
 `.html(str)` with `$…$` renders its maths (only when the string changes), and the sim's DOM is rendered once after
-setup. The model is `content/FY3/fy3-1/sim.js` (`git diff HEAD~1 -- content/FY3/fy3-1/sim.js` shows the conversion).
+setup. The model is `content/FY3/fy3-1/sim.js` (`git show 75cc0fc -- content/FY3/fy3-1/sim.js` shows the conversion).
 
 ## Your task for one simulation (work in `fysiikkalabra/`)
 1. Every canvas label becomes one `$…$` string: symbols `$G$`, `$T_\text{alku}$`, Greek `$\theta$`, `$\Delta T$`;
@@ -22,7 +22,7 @@ setup. The model is `content/FY3/fy3-1/sim.js` (`git diff HEAD~1 -- content/FY3/
 4. The sim's `sim-spec.md` and its `tests/sims/<id>.json` must still pass. A test that read the readout's
    `textContent` reads `simText('#sim-root .readout')` instead (sim-embed.js: each formula comes back as its TeX
    between dollars) and checks the new string, e.g. `x.includes('$G = mg = 98{,}1\\,\\text{N}$')` inside the JSON's
-   JS (see `git show HEAD -- tests/sims/fy3-1.json`). Never weaken an assertion. `test_sims.py` now also checks that
+   JS (see `git show 05095e5 -- tests/sims/fy3-1.json`). Never weaken an assertion. `test_sims.py` now also checks that
    every KaTeX label stays inside the canvas and none overlaps another, at 360, 390 and 1280 px over the control sweep.
 5. `inquiry.json` texts that quote a canvas label are already maths; leave them.
 
