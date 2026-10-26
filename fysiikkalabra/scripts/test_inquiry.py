@@ -165,6 +165,13 @@ def generic(lid):
         check("no console errors", not errors, str(errors[:2]))
         page_form(pg, b, url, acts, page)
         if pg.locator("details.fold").count(): pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
+        n_opt = pg.locator("details.opt").count()
+        if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
+            st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen'), !!d.querySelector('.activity[id]')])")
+            check("optional activities start closed, are named Valinnainen and keep their ids", all(not o and v and i for o, v, i in st), str(st))
+            pg.locator("details.opt > summary").first.focus(); pg.keyboard.press("Enter")
+            check("an optional box opens from the keyboard", pg.locator("details.opt").first.evaluate("(d) => d.open"))
+            pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats them like the others
         for a in acts:                                    # plain choices: a wrong option gets its own feedback, the right one "Oikein"
             if a["type"] != "choice" or a.get("reveal"): continue
             loc = pg.locator(f"#{a['id']}")
@@ -408,7 +415,9 @@ with sync_playwright() as pw:
     check("second wrong try points to the solution", "Ei vielä" in o2.inner_text() or "Vastaus" in o2.inner_text(), o2.inner_text())
 
     # explanation: model answer and criteria on request
-    ex = pg.locator("#check-3"); ex.locator("textarea").fill("Työ ei riipu ajasta."); check("model answer hidden until asked", not ex.locator(".model").is_visible())
+    ex = pg.locator("#check-3"); ex.locator(".show-model").click()
+    check("the model answer waits for the student's own answer", not ex.locator(".model").is_visible() and "oma vastauksesi" in ex.locator(".explain-status").inner_text())
+    ex.locator("textarea").fill("Työ ei riipu ajasta."); check("model answer hidden until asked", not ex.locator(".model").is_visible())
     ex.locator(".show-model").click(); check("model answer and criteria shown", ex.locator(".model").is_visible() and ex.locator("ul.criteria input[type=checkbox]").count() == 4)
 
     # persistence survives a reload (per-device convenience only)

@@ -25,6 +25,11 @@ GRID_TYPES = ("hook", "choice", "numeric", "explain", "exit")   # consecutive on
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
+OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
+OPTIONAL_NAMES = {"choice": "lisäkysymys", "numeric": "lisälasku", "explain": "lisäselitys", "reflect": "palaa ennusteisiisi",
+                  "interpret": "lisäaineisto", "experiment": "lisätutkimus", "theory": "syventävä teoria", "exit": "Exit ticket",
+                  "hook": "lisäesimerkki", "text": "lisätietoa"}   # a closed box's name when the activity has no title
+SOURCES = {"measured": "Mitattu aineisto", "simulated": "Simuloitu esimerkkiaineisto", "model": "Mallin laskemia arvoja"}   # interpret "source"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
 
 
@@ -114,6 +119,8 @@ def validate(folder, inquiry, lesson_md):
         t = a.get("type")
         if t not in TYPES: E(f"{p}.type: one of {', '.join(TYPES)}"); continue
         path = f"{lid} inquiry.json: {p}"
+        if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
+            errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
         hints = a.get("hints")
         if hints is not None and (not isinstance(hints, list) or len(hints) > 3 or not all(isinstance(h, str) for h in hints)):
             errs.append(f"{path}.hints: a list of at most three strings (question, representation, worked step)")
@@ -147,6 +154,12 @@ def validate(folder, inquiry, lesson_md):
                 if k in a and (not isinstance(a[k], str) or not a[k].strip()): errs.append(f"{path}.{k}: markdown text")
         elif t == "interpret":
             if not isinstance(a.get("text"), str) or not a["text"].strip(): errs.append(f"{path}.text: the representation (table, figure or measurements) in markdown/HTML")
+            src = a.get("source")
+            if src is not None and src not in SOURCES: errs.append(f"{path}.source: one of {', '.join(SOURCES)} (what the numbers are: measured, simulated example data, or values computed from the model)")
+            if src == "measured" and not (isinstance(a.get("source_note"), str) and a["source_note"].strip()):
+                errs.append(f"{path}.source_note: measured data needs a note on who measured it and how (never present invented numbers as measurements)")
+        if t == "explain" and "after" in a and not (isinstance(a["after"], list) and a["after"] and all(isinstance(x, str) for x in a["after"])):
+            errs.append(f"{path}.after: the ids of the experiments whose measurements the conclusion rests on")
         if t in ("experiment", "interpret") and "question" in a:
             q = a["question"]
             if not isinstance(q, dict) or q.get("type") not in QUESTION_TYPES: errs.append(f"{path}.question.type: one of {', '.join(QUESTION_TYPES)}")
@@ -155,6 +168,13 @@ def validate(folder, inquiry, lesson_md):
         if not isinstance(a, dict): continue
         r = a.get("reveal") if a.get("type") == "choice" else None
         if isinstance(r, dict) and isinstance(r.get("after"), str) and r["after"] not in exp_ids: E(f"activities[{i}].reveal.after: \"{r['after']}\" is not an experiment id")
+        if a.get("type") == "explain" and isinstance(a.get("after"), list):
+            for x in a["after"]:
+                if x not in exp_ids: E(f"activities[{i}].after: \"{x}\" is not an experiment id")
+                elif not a.get("optional") and any(b.get("optional") for b in acts if isinstance(b, dict) and b.get("id") == x):
+                    E(f"activities[{i}].after: the required conclusion rests on the optional experiment \"{x}\"")
+        if isinstance(r, dict) and not a.get("optional") and any(b.get("optional") for b in acts if isinstance(b, dict) and b.get("id") == r.get("after")):
+            E(f"activities[{i}].reveal.after: a required prediction cannot wait for the optional experiment \"{r['after']}\"")
         if a.get("type") == "reflect":
             for pid in a.get("predictions", []):
                 if pid not in ids: E(f"activities[{i}].predictions: \"{pid}\" is not an activity id")
@@ -260,10 +280,17 @@ def numeric_html(a, md, aid):
 
 
 def explain_html(a, md, aid):
+    """A written explanation. The model answer opens only after the student has written their own (inquiry.js); a
+    conclusion with "after" also waits for the measurements of those experiments, and offers to copy the tables and
+    the student's own text for their notes."""
     crit = "".join(f'<li><label><input type="checkbox"> <span>{inline(md, c)}</span></label></li>' for c in a["criteria"])
     pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
-    return (f'<div class="explain"><p class="task">{inline(md, a["prompt"])}</p><textarea rows="4" aria-label="Oma selitys"></textarea>{pair}'
-            f'<div class="choice-actions"><button type="button" class="show-model">Näytä mallivastaus ja arviointi</button></div>'
+    after = a.get("after") or []
+    attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
+    copy = '<button type="button" class="copy-notes">Kopioi muistiinpanoihin</button>' if after else ""
+    return (f'<div class="explain"{attrs}><p class="task">{inline(md, a["prompt"])}</p><textarea rows="4" aria-label="Oma vastaus"></textarea>{pair}'
+            f'<div class="choice-actions"><button type="button" class="show-model">Näytä mallivastaus ja arviointi</button>{copy}</div>'
+            f'<p class="explain-status" role="status" aria-live="polite"></p>'
             f'<div class="model" hidden><h4>Mallivastaus</h4>{md(a["model"])}<h4>Arvioi oma vastauksesi</h4><ul class="criteria">{crit}</ul></div></div>')
 
 
@@ -283,6 +310,7 @@ def experiment_html(a, md, lid):
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
     locked = ", ".join(tn(k) for k in a["locked"]) or "ei mitään"
     cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
+    plain = [names.get(a["vary"], a["vary"]) + (f" ({units[a['vary']]})" if units.get(a["vary"]) else "")] + [m["label"] if isinstance(m, dict) else m for m in a["measure"]]
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
@@ -291,7 +319,7 @@ def experiment_html(a, md, lid):
             f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">Aseta alkutila</button><button type="button" class="exp-record">Kirjaa mittaus</button>'
             f'<button type="button" class="exp-reset">Nollaa</button></div>'
-            f'<table class="exp-table"><caption>Mittaukset</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
+            f'<table class="exp-table" data-cols=\'{esc(json.dumps(plain, ensure_ascii=False))}\'><caption>Simulaation lukemat</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 
@@ -332,6 +360,10 @@ def render(folder, inquiry, parts, md):
     prior = inquiry.get("prior") or []
     aside = f'<div class="contribution"><strong>Tällä tunnilla uutta:</strong> {inline(md, inquiry["contribution"])}</div>'
     if prior: aside += '<p class="prior"><strong>Tarvitset:</strong> ' + "; ".join(inline(md, x) for x in prior) + '</p>'
+    n_opt = sum(1 for a in acts if a.get("optional"))
+    if n_opt:                                          # what is the path, what may be left (spec 2026-10-26: a core path)
+        aside += ('<p class="path-note"><strong>Ydinpolku:</strong> tee kaikki, mitä ei ole suljettu <em>Valinnainen</em>-laatikkoon. '
+                  f'Valinnaisia lisätehtäviä on {n_opt}; ne syventävät ja tarjoavat lisäharjoitusta.</p>')
     body = [f'<div class="intro-row"><div class="intro-main">{parts["intro"]}</div><div class="intro-aside">{aside}</div></div>']
 
     def act(a):
@@ -348,7 +380,10 @@ def render(folder, inquiry, parts, md):
                        f'<label><input type="radio" name="{esc(aid)}-rev" value="ei"> En</label> <label><input type="radio" name="{esc(aid)}-rev" value="kylla"> Kyllä</label></p>'
                        f'<textarea rows="3" aria-label="Miksi?" placeholder="Miksi?"></textarea></div>')
         elif t == "experiment": content = experiment_html(a, md, lid)
-        elif t == "interpret": content = f'<div class="interpret"><div class="representation">{md(a["text"])}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
+        elif t == "interpret":
+            src = a.get("source")
+            badge = (f'<p class="source" data-source="{src}"><strong>{SOURCES[src]}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
+            content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory": content = "".join(parts["sections"][s] for s in a["sections"])
         elif t == "sim":
             lead, info = sim_parts(a, md)
@@ -356,6 +391,10 @@ def render(folder, inquiry, parts, md):
         elif t == "exit": content = (md(a["text"]) if a.get("text") else "") + parts["exit"]
         else: content = ""
         hints = hints_html([md(h) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
+        if a.get("optional"):                          # a closed box, named, that a student may open or leave
+            name = esc(a.get("title") or OPTIONAL_NAMES[t])
+            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">Valinnainen</span> {name}</summary>'
+                    f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         return f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
 
     def flow(items, grid=True):
@@ -363,7 +402,7 @@ def render(folder, inquiry, parts, md):
         def flush():
             out.append('<div class="act-grid">' + "".join(run) + '</div>' if len(run) > 1 else "".join(run)); run.clear()
         for a in items:
-            if grid and a["type"] in GRID_TYPES: run.append(act(a))
+            if grid and a["type"] in GRID_TYPES and not a.get("optional"): run.append(act(a))
             else: flush(); out.append(act(a))
         flush()
         return "".join(out)

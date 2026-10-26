@@ -17,7 +17,7 @@
       "id": "pr-mikromalli",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa aiemmalta tunnilta",
+      "title": "Kertaa: lämpötilan mikromalli",
       "prompt": "Luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila* kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
       "choices": [
         {
@@ -37,7 +37,8 @@
           "text": "Jokainen hiukkanen muuttuu itse kuumemmaksi.",
           "feedback": "Yksittäisellä hiukkasella ei ole lämpötilaa. Lämpötila kuvaa suuren hiukkasjoukon keskimääräistä liike-energiaa."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -55,11 +56,11 @@
         {
           "text": "Bea: Mäntä tekee ilmaan työtä. Työ siirtää ilmaan energiaa, joten ilman sisäenergia kasvaa ja lämpötila nousee.",
           "correct": true,
-          "feedback": "Kokeet tukevat tätä. Eristetyssä sylinterissä männän työ $W \\approx +40{,}8\\,\\text{J}$ jäi kokonaan kaasuun ($\\Delta U = W$), ja lämpötila nousi noin 114 K. Katso hiukkasta, joka osuu liikkuvaan mäntään: se kimpoaa nopeampana. Oikeassa pumpussa myös männän ja sylinterin välinen kitka lämmittää hieman; simulaatiossa kitkaa ei ole."
+          "feedback": "Kokeet tukevat tätä. Eristetyssä sylinterissä männän työ $W \\approx +13{,}1\\,\\text{J}$ jäi kokonaan kaasuun ($\\Delta U = W$), ja lämpötila nousi noin 37 K. Katso hiukkasta, joka osuu liikkuvaan mäntään: se kimpoaa nopeampana. Oikeassa pumpussa myös männän ja sylinterin välinen kitka lämmittää hieman; simulaatiossa kitkaa ei ole."
         },
         {
           "text": "Cem: Ilmassa on tietty määrä lämpöä. Puristuksessa sama lämpö tiivistyy pienempään tilaan, joten ilma tuntuu kuumemmalta.",
-          "feedback": "Selitys pitää lämpöä aineena, jota ilmassa on tietty määrä. Silloin sama puristus lämmittäisi aina yhtä paljon. Kokeessa 2 puristus oli molemmilla kerroilla sama, mutta eristetyssä sylinterissä lämpötila nousi noin 114 K ja johtavassa se palasi 293 K:iin, koska seinien kautta siirtyi pois lämpömäärä noin 35 J."
+          "feedback": "Selitys pitää lämpöä aineena, jota ilmassa on tietty määrä. Silloin sama puristus lämmittäisi aina yhtä paljon. Kokeessa 2 puristus oli molemmilla kerroilla sama, mutta eristetyssä sylinterissä lämpötila nousi noin 37 K ja johtavassa se palasi 293 K:iin, koska seinien kautta siirtyi pois lämpömäärä noin 12 J."
         }
       ],
       "reveal": {
@@ -81,20 +82,20 @@
       "choices": [
         {
           "text": "Männän nopeus itse: nopea liike kuumentaa kaasua, vaikka työ olisi sama.",
-          "feedback": "Mallin lukemissa nopea työntö lämmitti enemmän ($\\Delta T$ noin 132 K, hitaalla 114 K), mutta myös työ oli suurempi: 47,2 J ja 40,8 J. Kun jaat $\\Delta T$:n työllä, saat kummallakin noin 2,8 K/J. Nopeus vaikuttaa vain työn kautta: lämpötila nousi täsmälleen sen verran kuin työtä tehtiin."
+          "feedback": "Mallin lukemissa nopea työntö lämmitti enemmän ($\\Delta T$ noin 53 K, hitaalla 37 K), mutta myös työ oli suurempi: 19,1 J ja 13,1 J. Kun jaat $\\Delta T$:n työllä, saat kummallakin noin 2,8 K/J. Nopeus vaikuttaa vain työn kautta: lämpötila nousi täsmälleen sen verran kuin työtä tehtiin."
         },
         {
           "text": "Työntöjen määrä: hitaassa työnnössä hiukkaset ehtivät osua mäntään useammin, joten kaasu lämpenee enemmän.",
-          "feedback": "Hitaassa työnnössä osumia on enemmän, mutta jokainen osuma kiihdyttää hiukkasta vähemmän. Mallin lukemissa hidas työntö lämmitti vähemmän: $\\Delta T$ noin 114 K ja $W = +40{,}8\\,\\text{J}$, nopealla 132 K ja $+47{,}2\\,\\text{J}$. Lämpötilan nousu seurasi työtä."
+          "feedback": "Hitaassa työnnössä osumia on enemmän, mutta jokainen osuma kiihdyttää hiukkasta vähemmän. Mallin lukemissa hidas työntö lämmitti vähemmän: $\\Delta T$ noin 37 K ja $W = +13{,}1\\,\\text{J}$, nopealla 53 K ja $+19{,}1\\,\\text{J}$. Lämpötilan nousu seurasi työtä."
         },
         {
           "text": "Pelkkä työntömatka: matka on sama, joten työ ja lämpötilan nousu ovat täsmälleen samat.",
-          "feedback": "Matka oli sama, mutta työ ei: hitaalla $W = +40{,}8\\,\\text{J}$, nopealla $+47{,}2\\,\\text{J}$. Työ on voima kertaa matka, ja nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla voimalla. Siksi myös lämpötila nousi nopealla enemmän, 132 K eikä 114 K."
+          "feedback": "Matka oli sama, mutta työ ei: hitaalla $W = +13{,}1\\,\\text{J}$, nopealla $+19{,}1\\,\\text{J}$. Työ on voima kertaa matka, ja nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla voimalla. Siksi myös lämpötila nousi nopealla enemmän, 53 K eikä 37 K."
         },
         {
           "text": "Tehty työ: eristetyssä sylinterissä sisäenergia kasvaa työn verran ($\\Delta U = W$), joten kaasu lämpenee enemmän sillä kerralla, jolla työtä tehdään enemmän.",
           "correct": true,
-          "feedback": "Mallin lukemat tukevat tätä. Hitaalla työnnöllä $W = \\Delta U = +40{,}8\\,\\text{J}$ ja $\\Delta T$ noin 114 K, nopealla $W = \\Delta U = +47{,}2\\,\\text{J}$ ja $\\Delta T$ noin 132 K. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä enemmän ja työ kasvaa hieman. Lämpötilan nousu työtä kohden on kummallakin noin 2,8 K/J: nopeus vaikuttaa vain työn kautta."
+          "feedback": "Mallin lukemat tukevat tätä. Hitaalla työnnöllä $W = \\Delta U = +13{,}1\\,\\text{J}$ ja $\\Delta T$ noin 37 K, nopealla $W = \\Delta U = +19{,}1\\,\\text{J}$ ja $\\Delta T$ noin 53 K. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä enemmän ja työ kasvaa. Lämpötilan nousu työtä kohden on kummallakin noin 2,8 K/J: nopeus vaikuttaa vain työn kautta."
         },
         {
           "text": "Ei kumpikaan: lämpötila ei nouse kummallakaan kerralla, koska eristettyyn sylinteriin ei tule lämpöä.",
@@ -108,8 +109,8 @@
       "type": "sim",
       "text": "Simulaatiossa on sylinteri, jossa on 40 kaasun hiukkasta, ja mäntä. Kokeile vapaasti, myös männän vetämistä ulos.",
       "howto": "*Työnnä mäntää* puristaa kaasun tilavuuteen 75 %, ja *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän: se kimpoaa nopeampana. Pylväät näyttävät männän kaasuun tekemän työn $W$, seinien läpi kaasuun siirtyneen lämpömäärän $Q$ ja sisäenergian muutoksen $\\Delta U$. *Männän nopeus* valitsee hitaan tai nopean työnnön, *Seinät* eristetyt tai johtavat seinät ja *Animaatio* vain tahdin: se ei muuta lukemia. Malli on täysin toistettava, koska työntö alkutilasta alkaa aina samasta kaasun tilasta.",
-      "model": "Luvut ovat mallin arvoja: mallin kaasu vastaa lämpökapasiteetiltaan $0{,}50\\,\\text{g}$:aa ilmaa, ja sen sisäenergia kasvaa $0{,}359\\,\\text{J}$ jokaista kelviniä kohden. Kaasussa on $40$ hiukkasta, jotka liikkuvat tasossa eivätkä törmää toisiinsa. Oikea $0{,}50\\,\\text{g}$ ilmaa lämpenisi samassa eristetyssä puristuksessa vain noin $36\\,\\text{K}$ ja työ olisi noin $13\\,\\text{J}$; johtavassa sylinterissä työ olisi noin $12\\,\\text{J}$. Malli liioittelee lämpenemistä kahdesta syystä: hiukkaset liikkuvat tasossa eivätkä avaruudessa, ja vain mäntä muuttaa niiden männän suuntaista liikettä. Siksi mäntään kohdistuva paine on hitaan eristetyn työnnön jälkeen suurempi, noin $2{,}4\\,p_0$, kuin molempien suuntien keskiarvo $p/p_0$. Oikeassa pumpussa mäntä on paljon hitaampi kuin molekyylit (noin $500\\,\\text{m/s}$), joten ero syntyy lähinnä siitä, ehtiikö lämpö siirtyä pois.",
-      "calc": "Mäntään osuva hiukkanen kimpoaa kuin pallo mailasta: jos mäntä liikkuu sitä vastaan nopeudella $u$, hiukkasen nopeus männän suunnassa kasvaa $2u$:n verran, $v_x' = 2w - v_x$. Männän työ $W$ on hiukkasten näin saama liike-energia, yhtä suuri kuin männän voima kertaa matka. Ulos vedettäessä hiukkaset kimpoavat hitaampina ja $W$ on negatiivinen. Eristetty seinä ei muuta hiukkasen nopeutta, joten $Q = 0$ ja $\\Delta U = W$. Johtava seinä on huoneen lämpötilassa $293\\,\\text{K}$: siihen osuva hiukkanen kimpoaa hitaampana, jos kaasu on huonetta lämpimämpää, ja nopeampana, jos kaasu on kylmempää. Näin siirtynyt energia on lämpömäärä $Q$, ja $\\Delta U = Q + W$. Hidas mäntä liikkuu noin $50$ kertaa hitaammin kuin hiukkaset keskimäärin, nopea vain noin $3{,}5$ kertaa hitaammin. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla voimalla ja samalla matkalla työ on hieman suurempi; eristetyssä sylinterissä lämpötila nousee täsmälleen työn verran enemmän, $\\Delta T = W/C$. Paine $p/p_0$ lasketaan hiukkasten liike-energiasta ja tilavuudesta."
+      "model": "Luvut ovat mallin arvoja, eivät mittauksia oikeasta pumpusta. Mallin kaasu vastaa $0{,}50\\,\\text{g}$:aa ilmaa: sen sisäenergia kasvaa $0{,}359\\,\\text{J}$ jokaista kelviniä kohden. Kaasussa on $40$ hiukkasta, jotka liikkuvat tasossa eivätkä törmää toisiinsa. Ilman molekyylit myös pyörivät, joten jokaisella hiukkasella on liike-energian lisäksi pyörimisen energiaa, jota kuva ei näytä. Kiinteä seinä palauttaa siihen osuvan hiukkasen satunnaiseen suuntaan ja jakaa sen energian uudelleen liikkeen ja pyörimisen kesken; eristetty seinä ei muuta hiukkasen kokonaisenergiaa. Näin kaasu pysyy tasapainossa, ja hidas eristetty työntö vastaa ilman hidasta puristusta ilman lämmönsiirtoa. Sille fysiikka antaa $T_2 = T_1 (V_1/V_2)^{\\gamma - 1} = 293\\,\\text{K} \\cdot (4/3)^{0{,}4} \\approx 329\\,\\text{K}$, kun ilmalle $\\gamma \\approx 1{,}4$; simulaatio antaa $330\\,\\text{K}$, koska mäntä ei liiku äärettömän hitaasti. Oikeassa pumpussa mäntä on paljon hitaampi kuin molekyylit (noin $500\\,\\text{m/s}$), joten siellä ero syntyy lähinnä siitä, ehtiikö lämpö siirtyä pois.",
+      "calc": "Mäntään osuva hiukkanen kimpoaa kuin pallo mailasta: jos mäntä liikkuu sitä vastaan nopeudella $u$, hiukkasen nopeus männän suunnassa kasvaa $2u$:n verran, $v_x' = 2w - v_x$. Männän työ $W$ on hiukkasten näin saama liike-energia, yhtä suuri kuin männän voima kertaa matka. Ulos vedettäessä hiukkaset kimpoavat hitaampina ja $W$ on negatiivinen. Eristetyssä sylinterissä $Q = 0$ ja $\\Delta U = W$. Johtava seinä on huoneen lämpötilassa $293\\,\\text{K}$: siihen osuva hiukkanen kimpoaa pienemmällä energialla, jos kaasu on huonetta lämpimämpää, ja suuremmalla, jos kaasu on kylmempää. Näin siirtynyt energia on lämpömäärä $Q$, ja $\\Delta U = Q + W$. Hidas mäntä liikkuu noin $50$ kertaa hitaammin kuin hiukkaset keskimäärin, nopea vain noin $3{,}5$ kertaa hitaammin. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, eikä energia ehdi jakautua tasaisesti, joten kaasu vastustaa mäntää enemmän ja samalla matkalla työ on suurempi; eristetyssä sylinterissä lämpötila nousee täsmälleen työn verran enemmän, $\\Delta T = W/C$. Lämpötila lasketaan hiukkasten kokonaisenergiasta ja paine $p/p_0$ lämpötilasta ja tilavuudesta."
     },
     {
       "id": "koe-1",
@@ -193,11 +194,11 @@
           {
             "text": "$W$ osoittaa ylöspäin, $Q$ on yhtä pitkä alaspäin, ja $\\Delta U$ on lähes nolla.",
             "correct": true,
-            "feedback": "Oikein. Männän työ toi kaasuun noin 35,1 J, ja yhtä suuri energia lähti lämpönä seinien läpi, joten $Q \\approx -35{,}1\\,\\text{J}$ ja $\\Delta U = Q + W \\approx 0$. Ylöspäin osoittava pylväs on positiivinen eli kaasuun tullut energia, alaspäin osoittava negatiivinen eli kaasusta lähtenyt."
+            "feedback": "Oikein. Männän työ toi kaasuun noin 12,4 J, ja yhtä suuri energia lähti lämpönä seinien läpi, joten $Q \\approx -12{,}4\\,\\text{J}$ ja $\\Delta U = Q + W \\approx 0$. Ylöspäin osoittava pylväs on positiivinen eli kaasuun tullut energia, alaspäin osoittava negatiivinen eli kaasusta lähtenyt."
           },
           {
             "text": "$W$ osoittaa ylöspäin, $Q$ on nolla, ja $\\Delta U$ on yhtä suuri kuin $W$.",
-            "feedback": "Näin kävi eristetyssä sylinterissä. Johtavassa sylinterissä $Q$:n pylväs osoitti alaspäin, noin −35,1 J, koska kuumasta kaasusta siirtyi energiaa seiniin."
+            "feedback": "Näin kävi eristetyssä sylinterissä. Johtavassa sylinterissä $Q$:n pylväs osoitti alaspäin, noin −12,4 J, koska kuumasta kaasusta siirtyi energiaa seiniin."
           },
           {
             "text": "$W$ ja $Q$ osoittavat molemmat ylöspäin, ja $\\Delta U$ on niiden summa.",
@@ -205,10 +206,28 @@
           },
           {
             "text": "Kaikki kolme ovat nolla, koska lämpötila ei lopulta muuttunut.",
-            "feedback": "$\\Delta U$ on lähes nolla, mutta mäntä teki silti työn $W \\approx +35{,}1\\,\\text{J}$. Energia kulki kaasun läpi: se tuli työnä ja lähti lämpönä."
+            "feedback": "$\\Delta U$ on lähes nolla, mutta mäntä teki silti työn $W \\approx +12{,}4\\,\\text{J}$. Energia kulki kaasun läpi: se tuli työnä ja lähti lämpönä."
           }
         ]
       }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä kasvattaa sisäenergiaa?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella lyhyt johtopäätös. Miten lämpötilan nousu riippui tehdystä työstä eristetyssä sylinterissä? Mihin työn tuoma energia joutui johtavassa sylinterissä? Minkä ennusteen 1 selityksistä mittauksesi kumoavat, ja millä lukemilla?",
+      "model": "Eristetyssä sylinterissä lämpötila nousi sitä enemmän, mitä enemmän mäntä teki työtä: hitaalla työnnöllä $W = +13{,}1\\,\\text{J}$ ja $\\Delta T \\approx 37\\,\\text{K}$, nopealla $W = +19{,}1\\,\\text{J}$ ja $\\Delta T \\approx 53\\,\\text{K}$, kummallakin noin $2{,}8\\,\\text{K}$ joulea kohden. Koko työ jäi kaasuun, $\\Delta U = W$. Johtavassa sylinterissä sama puristus teki työn $W \\approx +12{,}4\\,\\text{J}$, mutta yhtä suuri energia lähti lämpönä seinien läpi, $Q \\approx -12{,}4\\,\\text{J}$, ja lämpötila palasi $293\\,\\text{K}$:iin, vaikka paine jäi $1{,}33$-kertaiseksi. Siksi Ainon selitys (paine nostaa lämpötilan) ja Cemin selitys (lämpö tiivistyy) eivät pidä: sama puristus antoi eri lämpötilan sen mukaan, jäikö energia kaasuun. Lukemat ovat mallin laskemia; oikeasta pumpusta saman voisi mitata lämpömittarilla.",
+      "criteria": [
+        "Liitin lämpötilan nousun tehtyyn työhön lukujen avulla.",
+        "Kerroin, että johtavassa sylinterissä työn tuoma energia lähti lämpönä ($Q \\approx -W$).",
+        "Perustelin mittauksella, miksi korkea paine tai \"tiivistyvä lämpö\" ei selitä lämpenemistä.",
+        "Käytin käsitteitä työ, lämpö ja sisäenergia oikein."
+      ]
     },
     {
       "id": "theory",
@@ -228,7 +247,8 @@
       "predictions": [
         "pred-1",
         "pred-2"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -262,7 +282,8 @@
           "text": "Laskussa ei ole virhettä.",
           "feedback": "Tarkista, kumpaan suuntaan energiaa siirtyy työnä. Laajeneva kaasu tekee työtä ympäristöön, joten työ vie energiaa kaasusta pois eikä tuo sitä."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -288,7 +309,8 @@
           "feedback": "Matka on muutettava metreiksi ennen kertolaskua: $8{,}0\\,\\text{cm} = 0{,}080\\,\\text{m}$, jolloin $W = 6{,}0\\,\\text{J}$. Joule on newtonmetri, $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Systeemi on sylinterin ilma. Ympäristö tekee siihen työn $W = Fs$, ja lämpöä siirtyy pois, joten $Q < 0$:\n\n$$\\Delta U = Q + W = Q + Fs$$\n\n**Sijoitus.** $\\Delta U = -0{,}60\\,\\text{J} + 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = -0{,}60\\,\\text{J} + 6{,}0\\,\\text{J} = 5{,}4\\,\\text{J}$.\n\n**Järkevyys.** Puristus on niin nopea, että vain pieni osa energiasta ehtii siirtyä pois. Muutama joule riittää kuumentamaan sylinterin pienen ilmamäärän taulan syttymislämpötilaan."
+      "solution": "**Ratkaisu symbolisesti.** Systeemi on sylinterin ilma. Ympäristö tekee siihen työn $W = Fs$, ja lämpöä siirtyy pois, joten $Q < 0$:\n\n$$\\Delta U = Q + W = Q + Fs$$\n\n**Sijoitus.** $\\Delta U = -0{,}60\\,\\text{J} + 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = -0{,}60\\,\\text{J} + 6{,}0\\,\\text{J} = 5{,}4\\,\\text{J}$.\n\n**Järkevyys.** Puristus on niin nopea, että vain pieni osa energiasta ehtii siirtyä pois. Muutama joule riittää kuumentamaan sylinterin pienen ilmamäärän taulan syttymislämpötilaan.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -341,7 +363,8 @@
           "value": 10,
           "feedback": "Käytit työlle väärää etumerkkiä. Tässä kirjassa $W$ on ympäristön systeemiin tekemä työ: puristuksessa $W_1 = +80\\,\\text{J}$, laajenemisessa $W_2 = -70\\,\\text{J}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "check-3",
@@ -355,7 +378,8 @@
         "Selitän, että hitaassa pumppauksessa lämpöä ehtii siirtyä pois enemmän, joten $\\Delta U = Q + W$ jää pienemmäksi.",
         "Erotan lämmön (energian siirtyminen) sisäenergiasta (systeemin energia)."
       ],
-      "model": "Männän työ $W$ siirtää ilmaan energiaa, ja ilman sisäenergia kasvaa: hiukkaset liikkuvat keskimäärin nopeammin, ja lämpötila nousee. Kun ilma on ympäristöä lämpimämpää, siitä siirtyy energiaa lämpönä seinien kautta ympäristöön, joten $Q$ on negatiivinen. Nopeassa pumppauksessa lämpöä ehtii siirtyä vain vähän, joten $\\Delta U = Q + W$ on lähes yhtä suuri kuin työ ja ilma kuumenee paljon. Hitaassa pumppauksessa lähes kaikki työn tuoma energia ehtii siirtyä lämpönä pois, jolloin $Q \\approx -W$, sisäenergia kasvaa vähän eikä pumppu juuri lämpene. Energia ei katoa kummassakaan: se päätyy lopulta ympäristön sisäenergiaksi."
+      "model": "Männän työ $W$ siirtää ilmaan energiaa, ja ilman sisäenergia kasvaa: hiukkaset liikkuvat keskimäärin nopeammin, ja lämpötila nousee. Kun ilma on ympäristöä lämpimämpää, siitä siirtyy energiaa lämpönä seinien kautta ympäristöön, joten $Q$ on negatiivinen. Nopeassa pumppauksessa lämpöä ehtii siirtyä vain vähän, joten $\\Delta U = Q + W$ on lähes yhtä suuri kuin työ ja ilma kuumenee paljon. Hitaassa pumppauksessa lähes kaikki työn tuoma energia ehtii siirtyä lämpönä pois, jolloin $Q \\approx -W$, sisäenergia kasvaa vähän eikä pumppu juuri lämpene. Energia ei katoa kummassakaan: se päätyy lopulta ympäristön sisäenergiaksi.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

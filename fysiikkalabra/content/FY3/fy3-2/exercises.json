@@ -87,7 +87,7 @@
     {
       "id": "fy3-2-L3-02",
       "level": 3,
-      "text": "Joulen kokeessa 2,0 kg:n paino putoaa 1,5 m ja pyörittää siipipyörää vedessä. Koe toistetaan 20 kertaa nostamalla paino aina takaisin ylös. Oleta, että paino menettää pudotessaan nostotyön suuruisen energian ja että kaikki tämä energia siirtyy veteen lämpönä. Kuinka suuri lämpömäärä veteen on siirtynyt?",
+      "text": "Joulen kokeessa 2,0 kg:n paino putoaa 1,5 m ja pyörittää siipipyörää vedessä. Koe toistetaan 20 kertaa nostamalla paino aina takaisin ylös. Oleta, että paino menettää pudotessaan nostotyön suuruisen energian ja että kaikki tämä energia jää veteen. Kuinka paljon veden sisäenergia kasvaa?",
       "answer": 590,
       "unit": "J",
       "tolerance": 0.02

@@ -17,7 +17,7 @@
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa edelliseltä tunnilta",
+      "title": "Kertaa: painovoima",
       "prompt": "Repun massa on 10 kg. Kuinka suuri painovoima $G = mg$ reppuun vaikuttaa?",
       "choices": [
         {
@@ -37,7 +37,8 @@
           "text": "981 N",
           "feedback": "Putoamiskiihtyvyys on $9{,}81\\,\\text{m/s}^2$, ei 98,1. Tulos on $10 \\cdot 9{,}81\\,\\text{N} \\approx 98\\,\\text{N}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -64,7 +65,8 @@
           "text": "Työ nelinkertaistuu.",
           "feedback": "Mallin arvot näyttävät kaksinkertaistumisen, eivät nelinkertaistumista. Nelinkertainen työ vaatisi, että sekä voima että matka kaksinkertaistuvat; nyt vain matka muuttui."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-2",
@@ -127,7 +129,7 @@
       "type": "sim",
       "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa, paina *Vedä* ja seuraa, miten $(s,F)$-kuvaajan pinta-ala täyttyy. Arvot $W$ ja $P$ ovat simulaation laskemia mallin arvoja, eivät mittauksia oikeasta laatikosta.",
       "howto": "*Nopeus* muuttaa vain animaation tahtia: laatikko kulkee matkan $s$ simuloidussa ajassa $t$, ja $W$ ja $P$ pysyvät samoina.",
-      "model": "Laatikko liikkuu vakiovauhdilla: kitkavoima on yhtä suuri kuin vetävä voima, ja vetävän voiman tekemä työ muuttuu lämmöksi."
+      "model": "Laatikko liikkuu vakiovauhdilla: kitkavoima on yhtä suuri kuin vetävä voima. Vetävän voiman tekemä työ kasvattaa laatikon ja lattian sisäenergiaa, eli pinnat lämpenevät. Simulaatio laskee arvot kaavoista $W = Fs$ ja $P = W/t$, joten se näyttää mallin seuraukset, ei mittaa niitä."
     },
     {
       "id": "exp-1",
@@ -192,30 +194,54 @@
       "min": 2
     },
     {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mistä työ riippuu?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Kirjoita kahdella tai kolmella lauseella, mitä taulukoistasi voi päätellä: miten työ riippui matkasta ja ajasta, ja miten teho riippui ajasta? Tukivatko tulokset ennustettasi 2? Mieti lopuksi, miksi simulaation lukemat eivät yksin todista kaavaa $W = Fs$ oikeaksi.",
+      "model": "Kun vain matka kaksinkertaistui, myös työ kaksinkertaistui (esimerkiksi $600\\,\\text{J} \\to 1200\\,\\text{J}$): työ on suoraan verrannollinen matkaan. Kun vain aika muuttui, työ pysyi $600\\,\\text{J}$:ssa, mutta teho pieneni ($5\\,\\text{s}$: $120\\,\\text{W}$, $20\\,\\text{s}$: $30\\,\\text{W}$): työ ei riipu ajasta, teho riippuu. Simulaatio laskee lukemansa kaavasta $W = Fs$, joten se näyttää, mitä malli ennustaa, mutta ei todista mallia. Kokeellinen perustelu tulee oikeista mittauksista, kuten Joulen kokeesta alla.",
+      "criteria": [
+        "Kerroin, miten työ muuttui matkan muuttuessa ja että se pysyi samana ajan muuttuessa.",
+        "Erotin työn ja tehon: aika vaikutti vain tehoon.",
+        "Perustelin lukemilla taulukostani.",
+        "Erotin mallin laskemat arvot oikeista mittauksista."
+      ]
+    },
+    {
       "id": "joule",
       "stage": "tutki",
       "type": "interpret",
       "title": "Joulen koe: mihin työ menee?",
-      "text": "Joulen kokeessa putoava paino pyörittää siipipyörää vesiastiassa, ja veden lämpötila nousee. Taulukossa on kokeen tapaiset *esimerkkiarvot* (eivät Joulen alkuperäisiä mittauksia): painon tekemä työ $W = Gh$ ja veden saama lämpömäärä $Q$, joka laskettiin lämpötilan noususta.\n\n| Pudotuksia | $W$ (J) | $Q$ (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
+      "text": "Joulen kokeessa putoava paino pyörittää siipipyörää vesiastiassa. Paino tekee työn, siivet hämmentävät vettä, ja veden lämpötila nousee, vaikka vettä ei lämmitetä. Taulukossa on painon tekemä työ $W = Gh$ ja veden sisäenergian kasvu $\\Delta U$, joka laskettiin veden lämpötilan noususta.\n\n| Pudotuksia | $W$ (J) | $\\Delta U$ (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
       "question": {
         "type": "choice",
-        "prompt": "Mitä taulukko kertoo työn ja lämmön suhteesta?",
+        "prompt": "Mitä taulukko kertoo painon tekemästä työstä ja veden sisäenergiasta?",
         "choices": [
           {
-            "text": "Lämpömäärä on aina sama riippumatta tehdystä työstä.",
-            "feedback": "Lue rivit uudelleen: kun työ kaksinkertaistuu, myös lämpömäärä kaksinkertaistuu."
+            "text": "Veden sisäenergia kasvaa aina yhtä paljon riippumatta tehdystä työstä.",
+            "feedback": "Lue rivit uudelleen: kun työ kaksinkertaistuu, myös veden sisäenergian kasvu kaksinkertaistuu."
           },
           {
-            "text": "Veden saama lämpömäärä on (mittaustarkkuuden rajoissa) yhtä suuri kuin tehty työ: työ muuttui lämmöksi.",
+            "text": "Veden sisäenergia kasvaa (mittaustarkkuuden rajoissa) yhtä paljon kuin paino tekee työtä: työ siirtää energiaa veteen.",
             "correct": true,
-            "feedback": "Tämä on Joulen kokeen tulos: mekaaninen työ ja lämpö ovat saman suureen, energian, eri muotoja, ja molempia mitataan jouleina. Pieni ero johtuu lämpöhäviöstä ympäristöön."
+            "feedback": "Tämä on Joulen kokeen tulos. Vettä ei lämmitetty, vaan paino teki työtä, ja sama lämpeneminen olisi saatu aikaan myös lämmittämällä. Työ ja lämpö ovat siis kaksi tapaa siirtää energiaa, ja molempia mitataan jouleina. Pieni ero syntyy, kun osa energiasta siirtyy lämpönä ympäristöön. Joule itse mittasi vuonna 1850, että noin $4{,}16\\,\\text{J}$ työtä lämmittää gramman vettä yhden asteen; nykyinen arvo on $4{,}19\\,\\text{J}$."
           },
           {
-            "text": "Noin puolet työstä muuttuu lämmöksi.",
-            "feedback": "Vertaa sarakkeita: 196 J ja 194 J eroavat vain noin prosentin. Lähes koko työ päätyy veden lämmöksi."
+            "text": "Työ muuttuu veteen lämmöksi, ja vesi varastoi tämän lämmön.",
+            "feedback": "Lämpö ei ole veteen varastoituvaa ainetta. Lämpö tarkoittaa energian siirtymistä lämpötilaeron vuoksi, eikä tässä kokeessa vettä lämmitetty lainkaan. Painon tekemä työ kasvatti veden sisäenergiaa, ja siksi lämpötila nousi."
+          },
+          {
+            "text": "Noin puolet työstä päätyy veteen.",
+            "feedback": "Vertaa sarakkeita: 196 J ja 194 J eroavat vain noin prosentin. Lähes koko työ kasvattaa veden sisäenergiaa."
           }
         ]
-      }
+      },
+      "source": "simulated",
+      "source_note": "keksityt Joulen kokeen tapaiset arvot, eivät Joulen omia mittauksia"
     },
     {
       "id": "theory",
@@ -236,7 +262,8 @@
         "pred-1",
         "pred-2",
         "pred-3"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -270,7 +297,8 @@
           "text": "Laskussa ei ole virhettä.",
           "feedback": "Kaava $W = Fs$ koskee vakiovoimaa. Tässä voima kasvaa nollasta 40 N:iin, joten se on 40 N vain matkan lopussa."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -296,7 +324,8 @@
           "feedback": "Tulos on watteja, ei kilowatteja: $48\\,\\text{N} \\cdot 5{,}0\\,\\text{m/s} = 240\\,\\text{W}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Yhdessä sekunnissa lauta kulkee matkan $s = vt$, joten\n\n$$P = \\frac{W}{t} = \\frac{Fs}{t} = Fv$$\n\n**Sijoitus.** $P = 48\\,\\text{N} \\cdot 5{,}0\\,\\text{m/s} = 240\\,\\text{W}$.\n\n**Järkevyys.** Reilu pari sataa wattia on tavallinen potkulaudan ajoteho tasaisella."
+      "solution": "**Ratkaisu symbolisesti.** Yhdessä sekunnissa lauta kulkee matkan $s = vt$, joten\n\n$$P = \\frac{W}{t} = \\frac{Fs}{t} = Fv$$\n\n**Sijoitus.** $P = 48\\,\\text{N} \\cdot 5{,}0\\,\\text{m/s} = 240\\,\\text{W}$.\n\n**Järkevyys.** Reilu pari sataa wattia on tavallinen potkulaudan ajoteho tasaisella.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -349,7 +378,8 @@
           "value": 120,
           "feedback": "Unohdit jälkimmäisen osan. Kolmion pinta-ala on $\\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} = 60\\,\\text{J}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "check-3",
@@ -363,7 +393,8 @@
         "Käytän yksiköitä oikein: työ jouleina, teho watteina.",
         "Yhdistän päättelyn hissiin: sama kuorma ja korkeus, lyhyempi aika."
       ],
-      "model": "Hissin nostovoima on kuorman painon suuruinen ja matka on nostokorkeus. Työ $W = Fs = Gh$ riippuu vain näistä, ei siitä, kuinka kauan nosto kestää. Nopeampi hissi tekee saman työn lyhyemmässä ajassa, joten sen teho $P = W/t$ on suurempi; esimerkiksi kaksi kertaa nopeampi hissi tarvitsee kaksinkertaisen tehon. Työ mitataan jouleina ja teho watteina, $1\\,\\text{W} = 1\\,\\text{J/s}$."
+      "model": "Hissin nostovoima on kuorman painon suuruinen ja matka on nostokorkeus. Työ $W = Fs = Gh$ riippuu vain näistä, ei siitä, kuinka kauan nosto kestää. Nopeampi hissi tekee saman työn lyhyemmässä ajassa, joten sen teho $P = W/t$ on suurempi; esimerkiksi kaksi kertaa nopeampi hissi tarvitsee kaksinkertaisen tehon. Työ mitataan jouleina ja teho watteina, $1\\,\\text{W} = 1\\,\\text{J/s}$.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

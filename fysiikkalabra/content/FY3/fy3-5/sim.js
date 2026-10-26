@@ -4,31 +4,39 @@
 // +u while pulled out, 0 at rest). A particle that hits it reflects elastically in the piston's frame: vx' = 2w − vx
 // ("kuin pallo mailasta"). Its kinetic energy changes by ½(vx'² − vx²) = (impulse on the piston) · (piston displacement
 // per unit time), so the sum of these changes is exactly the work W the piston does on the gas (force × distance).
-// The fixed walls (cylinder bottom, top and bottom) reflect specularly. Eristetty: the speed is unchanged, Q = 0.
-// Johtava: the wall is at room temperature T0; a particle leaving it has its speed scaled by √(T0/T), where T is the gas
-// temperature at that step, so a hot gas loses energy at every wall hit and a cold one gains it (Newton-like cooling,
-// no noise). That energy change is the heat Q into the gas (negative when leaving).
-// Temperature: T = T0 · E/E0, where E is the total kinetic energy and E0 = N·kT0 the initial one (the seeded speeds are
-// rescaled so that Σvx² = Σvy² = N·kT0 exactly). Scale: the model gas has the heat capacity of 0,50 g of air, whose
+// The gas is air-like (fixed 2026-10-26): each particle also carries an internal energy ei for the rotations of a
+// two-atom molecule. With 2 translational degrees of freedom in the plane and 3 internal ones, f = 5 as for air, so
+// γ = (f + 2)/f = 1,4. A fixed wall (cylinder bottom, top, bottom side) re-emits a particle diffusely: its total energy
+// (translational + internal) is kept and shared anew, the translational fraction drawn from Beta(3/2, 3/2) and the
+// direction from the cosine law, which is the re-emission that leaves an equilibrium gas in equilibrium. So the gas
+// stays isotropic and in equipartition while the piston moves, and a slow insulated push is the quasi-static adiabatic
+// compression of air: T₂/T₁ = (V₁/V₂)^(γ−1) = (4/3)^0,4, T = 293 K → 329 K, W = C·ΔT ≈ 12,9 J. (Before the fix the
+// particles bounced specularly with no internal energy: only the x motion heated, giving 407 K, the "114 K" rise.)
+// Eristetty: the wall keeps the particle's energy, Q = 0. Johtava: the wall is at room temperature T0; a particle leaving
+// it has its energy (both parts) scaled by T0/T, where T is the gas temperature at that step, so a hot gas loses energy at
+// every wall hit and a cold one gains it (Newton-like cooling). That energy change is the heat Q into the gas.
+// Temperature: T = T0 · E/E0, where E is the total energy (translational + internal) and E0 = (5/2)·N·kT0 the initial one
+// (the seeded energies are rescaled exactly). Scale: the model gas has the heat capacity of 0,50 g of air, whose
 // internal energy grows 0,50 g · 718 J/(kg·K) = 0,359 J per kelvin, so ΔU = C·(T − T0) and one model energy unit is
 // C·T0/E0 joules. W and Q are summed in the same unit, so ΔU = Q + W holds to rounding error: bookkeeping, not a fit.
-// Pressure (shown as p/p0) is the kinetic one averaged over both directions, p ∝ E/A, relative to the start; the
-// pressure on the piston itself (x direction only) is higher after an insulated push (Mallin oletukset says so).
-// Piston speeds: hidas 4 px/s (≈ 1/50 of the mean particle speed 213 px/s, nearly the adiabatic limit T → 407 K),
-// nopea 60 px/s (≈ 1/3,5): the particles meet the advancing piston at a higher relative speed, the gas pushes back
-// harder, and the same stroke takes more work (47,2 J against 40,8 J); ΔT = W/C in both, since Q = 0.
+// Pressure p/p0 follows from the ideal-gas state of the model, p ∝ T/V (the instantaneous kinetic pressure of 40
+// particles fluctuates by about 10 %, so the readout uses T and V).
+// Piston speeds: hidas 4 px/s (≈ 1/50 of the mean particle speed, close to the quasi-static limit), nopea 60 px/s
+// (≈ 1/3,5): the particles meet the advancing piston at a higher relative speed, the gas pushes back harder and has no
+// time to share the energy evenly, and the same stroke takes more work; ΔT = W/C in both, since Q = 0.
 // A push from the untouched initial state (V = 100 %, W = Q = 0) first re-seeds the gas, so every such push gives the
-// same numbers whenever it is started. Fixed physics step 1/240 s, seeded PRNG (mulberry32): frame-rate independent.
+// same numbers whenever it is started. Fixed physics step 1/240 s, seeded PRNG (mulberry32) also for the wall
+// re-emission: frame-rate independent and reproducible.
 // Picture: particle colour = speed; a particle that has just hit the moving piston gets a long bright trail and a green
 // halo (the speed-up); wall hits on a conducting wall flash red; red arrows through the walls = heat Q, green arrow on the
 // rod = work W, and the three bars Q, W, ΔU share one energy axis. Canvas text only labels and values, via lab().
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and as test hooks
 // window.simAdvance(s), window.simRestart() and window.simMove(dir) (dir −1 push, +1 pull).
 new p5((p) => {
-  const DT = 1 / 240, N = 40, SEED = 306, T0 = 293.15, C = 0.359;    // step (s), particles, seed, room T (K), J/K of 0,50 g air
+  const DT = 1 / 240, N = 40, SEED = 145, T0 = 293.15, C = 0.359;    // step (s), particles, seed, room T (K), J/K of 0,50 g air
   const L0 = 300, LY = 220, XEND = 225, R = 3;                       // full gas length, height, pushed-in length (px), radius
   const BOX = { x: 34, y: 80 }, WT = 8, INS = 12, PW = 10;           // gas region corner, steel wall, insulation, piston
-  const VRMS = 240, KT = VRMS * VRMS / 2, E0 = N * KT, FJ = C * T0 / E0;   // v_rms at T0 (px/s), kT/m, E0, J per unit
+  const VRMS = 240, KT = VRMS * VRMS / 2, ET0 = N * KT, EI0 = 1.5 * N * KT, E0 = ET0 + EI0, FJ = C * T0 / E0;   // v_rms at T0 (px/s), kT/m, translational, internal and total E0, J per unit
   const U = { hidas: 4, nopea: 60 };                                 // piston speed (px/s)
   const BAR = { ax: 432, x: [462, 516, 570], w: 32, y0: 72, y1: 318 };   // energy axis, bar centres, bar area
   const COL_W = [40, 150, 80], COL_Q = [205, 45, 60], COL_U = [125, 70, 190];
@@ -48,11 +56,12 @@ new p5((p) => {
     rnd = mulberry32(SEED); parts = [];
     for (let i = 0; i < N; i++) {
       const x = rnd() * L0, y = rnd() * LY, th = 2 * Math.PI * rnd(), s = Math.sqrt(-2 * Math.log(1 - rnd()) * KT);
-      parts.push({ x, y, vx: s * Math.cos(th), vy: s * Math.sin(th), boost: -1 });
+      const z = Math.sqrt(-2 * Math.log(1 - rnd())) * Math.cos(2 * Math.PI * rnd());   // internal energy ~ Gamma(3/2, kT)
+      parts.push({ x, y, vx: s * Math.cos(th), vy: s * Math.sin(th), ei: KT * (-Math.log(1 - rnd()) + z * z / 2), boost: -1 });
     }
-    let sx = 0, sy = 0; for (const q of parts) { sx += q.vx * q.vx; sy += q.vy * q.vy; }
-    const ax = Math.sqrt(E0 / sx), ay = Math.sqrt(E0 / sy);          // Σvx² = Σvy² = N·kT0, so E = E0
-    for (const q of parts) { q.vx *= ax; q.vy *= ay; }
+    let sx = 0, sy = 0, si = 0; for (const q of parts) { sx += q.vx * q.vx; sy += q.vy * q.vy; si += q.ei; }
+    const ax = Math.sqrt(ET0 / sx), ay = Math.sqrt(ET0 / sy);        // Σvx² = Σvy² = N·kT0 and Σei = (3/2)·N·kT0, so E = E0
+    for (const q of parts) { q.vx *= ax; q.vy *= ay; q.ei *= EI0 / si; }
     X = L0; move = 0; Wm = 0; Qm = 0; E = E0; acc = 0; nStep = 0; qRate = 0; tSim = 0; fn.fill(-FL);
   };
   const flash = (x, y, kind) => { fx[fi0] = x; fy[fi0] = y; fk[fi0] = kind; fn[fi0] = nStep; fi0 = (fi0 + 1) % HN; };
@@ -69,25 +78,33 @@ new p5((p) => {
     else if (move > 0) { w = u; X += u * DT; if (X >= L0) { X = L0; move = 0; } }
     const g = cond ? Math.sqrt(E0 / E) : 1;                          // speed factor at a conducting wall: T → T0
     let dW = 0, dQ = 0;
-    const wall = (q) => { if (!cond) return; const e = (q.vx * q.vx + q.vy * q.vy) / 2; q.vx *= g; q.vy *= g; dQ += e * (g * g - 1);
+    // a fixed wall with inward normal (nx, ny) re-emits the particle diffusely: the same total energy, shared anew
+    // between motion (fraction ~ Beta(3/2, 3/2)) and the internal energy, direction by the cosine law
+    const wall = (q, nx, ny) => {
+      const e = (q.vx * q.vx + q.vy * q.vy) / 2 + q.ei;
+      const f = (1 + Math.sqrt(rnd()) * Math.cos(2 * Math.PI * rnd())) / 2, sp = Math.sqrt(2 * f * e);
+      const sn = 2 * rnd() - 1, cs = Math.sqrt(1 - sn * sn);
+      q.vx = sp * (cs * nx - sn * ny); q.vy = sp * (cs * ny + sn * nx); q.ei = (1 - f) * e;
+      if (!cond) return;
+      q.vx *= g; q.vy *= g; q.ei *= g * g; dQ += e * (g * g - 1);
       if (g < 0.995 || g > 1.005) flash(BOX.x + Math.min(Math.max(q.x, 0), X), BOX.y + Math.min(Math.max(q.y, 0), LY), 1); };
     for (const q of parts) {
       q.x += q.vx * DT; q.y += q.vy * DT;
-      if (q.x < 0) { q.x = -q.x; q.vx = -q.vx; wall(q); }
+      if (q.x < 0) { q.x = -q.x; wall(q, 1, 0); }
       else if (q.x > X) {
         if (q.vx > w) { const e = q.vx * q.vx / 2; q.vx = bounce(q.vx, w); dW += q.vx * q.vx / 2 - e;
           if (w !== 0) { q.boost = tSim; flash(BOX.x + X, BOX.y + q.y, 0); } }
         q.x = Math.min(X, 2 * X - q.x);
       }
-      if (q.y < 0) { q.y = -q.y; q.vy = -q.vy; wall(q); }
-      else if (q.y > LY) { q.y = 2 * LY - q.y; q.vy = -q.vy; wall(q); }
+      if (q.y < 0) { q.y = -q.y; wall(q, 0, 1); }
+      else if (q.y > LY) { q.y = 2 * LY - q.y; wall(q, 0, -1); }
     }
     Wm += dW; Qm += dQ; E += dW + dQ; nStep++; tSim += DT;
     qRate += (dQ * FJ / DT - qRate) * DT / 0.5;                      // heat flow (J/s), smoothed over about 0,5 s
   };
   const advance = (sec) => { acc += sec / DT; const n = Math.floor(acc + 1e-6); acc -= n; for (let i = 0; i < n; i++) step(); };
   const update = () => {
-    let e = 0; for (const q of parts) e += (q.vx * q.vx + q.vy * q.vy) / 2;
+    let e = 0; for (const q of parts) e += (q.vx * q.vx + q.vy * q.vy) / 2 + q.ei;
     E = e;                                                           // re-sum: no drift of the running total
     const T = T0 * E / E0, W = Wm * FJ, Q = Qm * FJ, dU = (E - E0) * FJ;
     window.simState = Object.assign(window.simState && window.simState.labels ? { labels: window.simState.labels } : {}, {
