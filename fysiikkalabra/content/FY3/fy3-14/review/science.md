@@ -1,26 +1,23 @@
 VERDICT: FAIL
-CONTENT-HASH: f5b9b9db4c7f7ede
+CONTENT-HASH: e97cf2119c84570f
 
 ## Blocking
-- sim.js:76-77: TW, TI and the ice mass are interpolated independently, so the animation contradicts the lesson. In the browser, with 0,10 kg/10 °C water and 0,50 kg/−40 °C ice, liquid water (24 g down to 0,3 g) shows "vesi −0,3 … −3,5 °C". With 60 °C water and −10 °C ice, 25 g of ice melts while it reads −7,5 °C. Fix: animate the transferred heat q = u·Q and derive the state in sequence: first the warming or cooling to 0 °C, then the melting or freezing, then the mixture warming or cooling.
-- lesson.md:199: "T = 6,05 K ≈ 6,0 K" states a temperature in kelvins. Fix: write `6{,}05\,{}^\circ\text{C} \approx 6{,}0\,{}^\circ\text{C}`.
-- lesson.md:205: "lähempänä veden lämpötilaa" is false. 6,0 °C is 14 K from −8 °C and 18 K from 24 °C. Fix: say that melting pulls the result below the midpoint.
-- lesson.md:216 (last sentence): "all-melt formula gives T < 0 → ice remains, T = 0 °C" is false when all the water freezes (L3-03: −3,5 °C). Fix: add that exception.
+- exit-ticket.json:4,12 — the calculations in the model answers are plain text ("Q = sm = 334 kJ/kg · 0,20 kg = 66,8 kJ", "Q = cmΔT = 4190 J/(kg·K) · …"). This breaks the teacher's standing rule that calculations in solutions are LaTeX. The page's KaTeX auto-render covers the exit ticket. — Write each calculation as `$Q = sm = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}20\,\text{kg} = 66{,}8\,\text{kJ}$`, and the same for item 3.
 
 ## Polish
-- lesson.md:221: the summary bullet "Q_v < Q_j → 0 °C" needs the same exception.
-- lesson.md:157: the "esimerkki" dot (20 °C) is the hook case, not the Esimerkki section. Rename it.
-- lesson.md fig 2: the −10 °C ice appears only in the aria-label. Add a visible LaTeX label.
-- inquiry.json:110: in the freezing cases the pale lämmitys segment is supplied by freezing water, so "sitä lämpöä ei ole" does not hold.
-- sim.js:16: the comment says 200 kJ; the axis goes to 250 kJ.
+- inquiry.json:157 — koe-1 asks for the temperature "jolla jäätä ei ole enää jäljellä mutta T ei ylitä 0 °C". The slider step is 0,5 °C, so no slider value meets that: 26,5 °C leaves 0,3 g of ice and 27,0 °C gives 0,3 °C. The 26,6 °C answer is still accepted, but the prompt should say "rajaa liukusäätimellä ja laske tarkka arvo".
+- lesson.md:180 — Q_j goes from the formula straight to "840 J + 16 700 J" with no substitution line with units. Add `2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}050\,\text{kg} \cdot 8{,}0\,\text{K} + 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}050\,\text{kg}`.
+- sim.js:139 — in case 1 after all the ice has melted, "vesi" shows the original water's temperature (for example 30,2 °C with 60 °C water) while the melt water sits apart at 4,6 °C. A stirred thermometer would already read T_f = 23,8 °C. Name the label "alkuperäinen vesi", or show the mixed temperature once the ice is gone.
+- sim.js (case 4) — after all the water freezes, the four cubes still float on top of a solid ice block. Hiding the cubes would read better.
 
 ## Checked
-- All 12 answers recomputed in one script: they equal answers.py and are within tolerance of exercises.json. Every Vastaus matches its json answer.
-- Every inquiry and exit-ticket number checked, with options and feedback.
-- koe-1 and koe-2 isolate their varied parameter; simState gives Tf and iceLeftG at those settings.
-- Formulas, conditions and all four cases are correct and within FY3 scope.
-- Solutions are LaTeX and symbolic first; their sanity checks hold.
-- Figures 1–3 are to scale, their labels are LaTeX, and they are print-clean.
-- The sim's end states are correct in Chromium for all four outcomes and for the worked example.
-- The chart axis covers the slider extremes.
-- No lesson ids appear in student text.
+- All 12 answers recomputed in one script. They equal answers.py, and every json answer is within tolerance. L3-02 and L3-03 take the right branch.
+- Every inquiry, exit-ticket and lesson number matches its value: 24,7 g, 75,3 g, 26,6 °C, 12,6 g, −26 °C, 39,9/43,9/438 g, 40/56 °C, 6,05 °C, about 19 °C, 12,5 g.
+- All five round-1 fixes are in. The 6,05 °C unit is right, "below the midpoint" is true, the all-water-freezes exception is in the misconception and the summary, figure 2 shows "−10 °C" in LaTeX, and the howto's pale-segment sentence is fixed.
+- I ran the sim in Chromium (real clicks, sim on screen) for cases 1–4 and the worked example. The end states equal my solver: 23,8 °C; 24,7 g; 498,1 g; −3,5 °C; 6,05 °C. At the end q/Q_end = 1.
+- I checked each of about 490 frames per run. No liquid water was ever below 0 °C, and no ice above 0 °C. q, T_w and T_i are monotonic. Mass is conserved. The ice mass changes only while the side changing phase is at 0 °C.
+- The sim's Q_end in each branch satisfies the energy balance. The axis (≤ 209 kJ) fits within 0–250 kJ.
+- The "nopea" speed changes only the pace, and the end state is the same.
+- Figures 1–3 have their numbers to scale (26,6 °C break, 40,1 °C at 80 °C, bar heights). All labels are LaTeX, and they are print-clean.
+- Formulas, their conditions and the four cases are correct and within FY3 scope. koe-1 and koe-2 lock everything except their varied parameter.
+- No lesson ids appear in student text. Only the template's exercise aria-labels contain them.
