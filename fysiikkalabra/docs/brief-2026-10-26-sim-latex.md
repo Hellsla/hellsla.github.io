@@ -19,8 +19,11 @@ setup. The model is `content/FY3/fy3-1/sim.js` (`git diff HEAD~1 -- content/FY3/
    stay text. A native `<option>` cannot hold maths: an option text names its case in words, no bare symbol.
 3. Keep the physics, `window.simState`, the adapter and all keys unchanged. Where the sim builds `simState.labels`
    boxes from `p.textWidth`, keep doing so (it now measures the KaTeX label); fix any overlap the new sizes cause.
-4. The sim's `sim-spec.md` and its `tests/sims/<id>.json` must still pass; update a test only where it checked a
-   label's literal text, never weaken an assertion.
+4. The sim's `sim-spec.md` and its `tests/sims/<id>.json` must still pass. A test that read the readout's
+   `textContent` reads `simText('#sim-root .readout')` instead (sim-embed.js: each formula comes back as its TeX
+   between dollars) and checks the new string, e.g. `x.includes('$G = mg = 98{,}1\\,\\text{N}$')` inside the JSON's
+   JS (see `git show HEAD -- tests/sims/fy3-1.json`). Never weaken an assertion. `test_sims.py` now also checks that
+   every KaTeX label stays inside the canvas and none overlaps another, at 360, 390 and 1280 px over the control sweep.
 5. `inquiry.json` texts that quote a canvas label are already maths; leave them.
 
 **Do not touch**: other sims, `templates/`, `scripts/`, `lesson.md`, `figures.py`, `solutions.md`, JSON files,

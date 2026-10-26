@@ -146,6 +146,16 @@
   window.p5 = Embedded;
 })();
 
+/* window.simText(el): the text of a sim element with each KaTeX formula as its TeX source between dollars
+   ("Massa $m = 10\,\text{kg}$ (sama kaikkialla)"), for tests that read the readout. */
+window.simText = (el) => {
+  if (typeof el === 'string') el = document.querySelector(el);
+  if (!el) return '';
+  const c = el.cloneNode(true);
+  c.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith('$' + (a ? a.textContent : k.textContent) + '$'); });
+  return c.textContent;
+};
+
 /* window.defineSimAdapter({ params, reset, pause, resume, get })
    params: { name: { input: <input or select element>, unit: 'N' } } — every parameter an investigation may set
    or lock. set() writes the value and fires input + change, so a sketch that reads its controls each frame
