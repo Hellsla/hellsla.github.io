@@ -1,6 +1,6 @@
 # Fysiikkalabra agent office
 
-A standalone pixel office inspired by Fysiklabbet's agent office. Open `agent-office/index.html` through a static web server. No npm install, build step, CDN or API key is needed; the font is already in this repository.
+A standalone pixel office inspired by Fysiklabbet's agent office. Open `agent-office/index.html` through a static web server. No npm install, build step, CDN or API key is needed; the font is already in this repository. The drawing lives in `office-scene.js`, separately from the history and evidence controller in `office.js`.
 
 ```sh
 cd /workspace/hellsla.github.io
@@ -13,6 +13,10 @@ The exporter only reads committed Git objects and atomically replaces `agent-off
 Commit times are shown in Europe/Helsinki, with daylight saving handled by Python's timezone database. Desk highlights come from changed file paths, not authenticated agent identities or session logs. Counts describe the full selected day within the exported history, not events before the replay clock. Each snapshot belongs to its particular commit; time order across branches does not establish that one version supersedes another.
 
 Follow a lesson through development, saved automatic checks, parallel science/pedagogy reviews, the two-approval gate, and the teacher/publication desk. Paper packets and arrows illustrate the route; they do not assert actual timed file transfers. Review badges use the same normalized content hash rule as `fysiikkalabra/scripts/reviews.py`, including simulation test specifications: both reports must say PASS and match the selected commit's lesson hash. Missing, invalid, failed or stale reports keep this gate closed. Content changes can invalidate earlier PASS reports. A matching legacy marker is a separate prototype exception, explicitly labelled, not a two-review approval.
+
+The connected floor plan has separate development, science and pedagogy rooms, a teacher's planning room, an automatic check runner, the review gatekeeper, a human publication desk and the website. The same teacher character briefs the developer and receives reviewed work. Couriers carry packets labelled with the chosen lesson ID: brief, lesson, reviewer copy, report, reviewed material or revision request. Failed, missing and stale approvals keep the gate closed and the illustrated route returns to development. The final website link stays dashed and deployment stays unverified. These are actual project roles and automated stations; no additional agents are launched or invented.
+
+Playback has two explicit modes. **Lesson journey** (the default) loops the illustrated handoffs while keeping the recorded commit and clock fixed. **Day history** advances through the recorded commits and their evidence. Both start paused. **Next handoff** steps through all six parts of the lesson journey, including with reduced motion; **Next commit** changes the historical snapshot. **Office zoom** enlarges the drawing inside its scrollable viewport, including on phones. Every room or station can be inspected by clicking it or using its role button.
 
 A standing review gatekeeper holds a clipboard with the two review results. Its open/closed sign, welcoming hand or stop paddle, and barrier follow the selected snapshot's review gate. Click the character or its keyboard-accessible role button for an explanation. It personifies the automatic rule in `reviews.py`; it is not an extra running agent or the teacher's publication decision.
 
