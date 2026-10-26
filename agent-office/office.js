@@ -8,6 +8,7 @@
     {id:'repository', name:'Publication desk', label:'THE HUMAN DECISION', color:'#9ccb9b', x:640, y:430, path:'Git history · not an agent definition', description:'The teacher decides what to merge. The build includes lessons with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
   ];
   const history = window.OFFICE_HISTORY || {events:[]};
+  const gatekeeper = {id:'gatekeeper',name:'Review gatekeeper',label:'THE AUTOMATIC REVIEW RULE',color:'#b5c9cf',path:'fysiikkalabra/scripts/reviews.py',description:'Checks the two independent review reports against the lesson’s current content hash. Both must say PASS for that same version. A missing, failed, invalid or stale report keeps the gate closed. This character illustrates an automatic rule; it is not an additional agent or a person approving publication. The teacher’s decision remains at the publication desk.'};
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = [], minute = 0, playing = false, lastFrame = 0, lastPaint = 0, phase = 0;
@@ -56,9 +57,10 @@
     $('role-label').textContent = role.label;
     $('role-description').textContent = role.description;
     $('role-path').textContent = role.path;
+    $('role-dialog').querySelector('.subtle').textContent=role.id==='gatekeeper'?(lessonState?`${lessonState.id.toUpperCase()}: science ${lessonState.science.status}; pedagogy ${lessonState.pedagogy.status}. Gate ${lessonState.eligible?'open':'closed'}. `:'No lesson snapshot selected. ')+'An open gate clears the review requirement only; automated checks and the teacher’s publication decision are separate.':'A desk lights up when a recorded commit changes files associated with this role. This does not establish who made the commit or when an agent was running.';
     $('role-dialog').showModal();
   }
-  roles.forEach(role=>{
+  [...roles,gatekeeper].forEach(role=>{
     const button=document.createElement('button'); button.type='button';
     button.style.setProperty('--role-color',role.color);button.dataset.role=role.id;
     const dot=document.createElement('i');dot.setAttribute('aria-hidden','true');
@@ -124,7 +126,10 @@
   });
   document.addEventListener('fullscreenchange',()=>$('fullscreen').setAttribute('aria-label',document.fullscreenElement?'Exit full screen':'Enter full screen'));
   function point(event){const r=canvas.getBoundingClientRect();return{x:(event.clientX-r.left)*960/r.width,y:(event.clientY-r.top)*560/r.height};}
-  function hit(p){return roles.find(r=>Math.abs(p.x-r.x)<125 && p.y>r.y-90 && p.y<r.y+60);}
+  function hit(p){
+    if(p.x>=416 && p.x<=544 && p.y>=270 && p.y<=369)return gatekeeper;
+    return roles.find(r=>Math.abs(p.x-r.x)<125 && p.y>r.y-90 && p.y<r.y+60);
+  }
   canvas.addEventListener('click',e=>{const role=hit(point(e));if(role)showRole(role);});
   canvas.addEventListener('mousemove',e=>{canvas.style.cursor=hit(point(e))?'pointer':'default';});
   function rect(x,y,w,h,c){ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),w,h);}
@@ -165,7 +170,7 @@
     }
   }
   function handoffs(){
-    if(!lessonState)return;
+    if(!lessonState){drawGatekeeper(null);return;}
     const state=lessonState,moving=!$('motion').checked;
     route([[327,210],[415,154],[578,210]],'#8cb8e0',0,moving);
     route([[164,266],[123,310],[123,397],[164,416]],'#e9a1b4',.4,moving);
@@ -173,10 +178,32 @@
     route([[379,433],[419,372],[443,346]],state.pedagogy.status==='PASS'?'#e9a1b4':'#8b7771',.6,moving && state.pedagogy.status==='PASS');
     if(state.eligible)route([[506,351],[542,365],[573,380]],'#9ccb9b',.5,moving);
     else if([state.science.status,state.pedagogy.status].some(s=>s==='FAIL'||s==='stale'))route([[443,330],[402,320],[350,300]],'#e7a076',.7,moving);
-    const color=state.eligible?'#9ccb9b':'#e89885';
-    rect(441,312,69,43,'#19252b');rect(441,312,69,3,color);rect(441,353,69,3,color);
-    text(state.eligible?'OPEN':'CLOSED',475,329,color,11,'center');text('2 PASS',475,345,color,10,'center');
-    if(!state.eligible){rect(512,352,6,32,'#b57d6e');rect(512,352,35,5,'#d0a393');}
+    drawGatekeeper(state);
+  }
+  function drawGatekeeper(state){
+    const open=Boolean(state?.eligible),color=!state?'#b5c9cf':open?'#9ccb9b':'#e89885';
+    // A standing verifier with a two-report clipboard, distinct from the seated agents.
+    rect(419,271,128,21,'#202c31');text('GATEKEEPER',483,286,'#c6d9dc',11,'center');
+    person(447,325,'#96aeb6',false,4);
+    rect(432,298,29,7,'#324d59');rect(430,303,34,3,'#617f8a');rect(443,300,7,4,'#e6c37d');
+    rect(445,331,6,7,'#e6c37d');rect(444,349,9,3,'#3a515b');
+    rect(420,323,20,27,'#a38d64');rect(423,327,14,19,'#eee2bf');
+    for(const [i,role] of ['science','pedagogy'].entries()){
+      const pass=state?.[role].status==='PASS';
+      rect(425,330+i*8,4,4,pass?'#5b865e':state?'#ad6d59':'#a9a58f');
+      rect(431,331+i*8,4,2,'#807c67');
+    }
+    rect(477,306,68,43,'#19252b');rect(477,306,68,3,color);rect(477,347,68,3,color);
+    const approvals=state?['science','pedagogy'].filter(role=>state[role].status==='PASS').length:'-';
+    text(!state?'WAITING':open?'OPEN':'CLOSED',511,323,color,10,'center');text(`${approvals}/2 PASS`,511,340,color,9,'center');
+    // A welcoming hand when approved, a stop paddle and lowered barrier otherwise.
+    rect(461,331,16,7,'#96aeb6');rect(475,328,7,8,'#cfac8b');
+    rect(510,357,5,24,'#7d8984');
+    if(open){rect(511,353,5,22,'#b9c8ad');rect(511,353,5,5,'#ede1b9');}
+    else{
+      rect(475,319,3,14,'#9e8b6b');rect(470,313,12,11,color);rect(472,317,8,3,'#f3e9dc');
+      rect(515,357,32,5,'#c4a18c');for(let x=518;x<547;x+=10)rect(x,357,4,5,'#e8d5b8');
+    }
   }
   function draw(){
     const active=activeRoles();ctx.imageSmoothingEnabled=false;
