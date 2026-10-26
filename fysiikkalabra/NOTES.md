@@ -10,8 +10,10 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - `lesson.md` is rendered by `scripts/build.py`, then KaTeX 0.16.11 (vendored) in the browser. `$$...$$` or a
   ```` ```latex ```` fence is display maths, `$...$` inline; the build hides maths from markdown first, so `_`, `*`
   and `\` are safe inside it. Maths also renders in `exercises.json` (`text`) and `exit-ticket.json` (`q`, `a`),
-  with doubled backslashes in JSON. `solutions.md` is plain text with Unicode (`W₁`, `m/s²`, `·`), no LaTeX; the
-  simulation canvas and inline SVG labels are plain text too.
+  with doubled backslashes in JSON. `solutions.md` is LaTeX too (teacher's rule 2026-10-26): every symbol, formula and
+  value with its unit in inline `$...$` (`**Kaava:** $p = \dfrac{F}{A}$`, `**Sijoitus:** $p = \dfrac{720\,\text{N}}{0{,}30\,\text{m}^2} = 2400\,\text{Pa}$`),
+  one `=` step after another on the Sijoitus line, words outside the maths; the lint reads the Vastaus value through
+  the LaTeX. Inline SVG labels are LaTeX as well (§3); only the simulation canvas is plain text.
 - Every formula appears once in display form with its symbols named; inline maths only for short references.
   Inline maths stays on one line.
 - Units: `40\,\text{N}`, `9{,}81\,\text{m/s}^2`. Decimal comma inside maths is `{,}`. Multiplication `\cdot`,
@@ -37,6 +39,10 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - Compute every answer in `answers.py` (one commented line per step, prints `{id: value}`); the lint re-runs
   it. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
+- A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): "luvussa *Paine ja hydrostaattinen
+  paine*", "(luku *Työ ja energia*)", not "oppitunnilla fy3-4", "(fy3-4)" or "edellisellä oppitunnilla". The
+  chapter name is the lesson's `title` in meta.json (without a trailing formula). `lint_lesson.py` flags ids and
+  "edellinen oppitunti" in every file the page shows.
 - Finnish: inflect the unit (`80 N:n voimalla`) or write nominative sentences; "paino" is a force, so "kappaletta
   pidetään paikallaan", not "painoa". Terms come from `glossary.json`.
 
@@ -58,13 +64,25 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   scale (ΔT 20 px and 105 px for c 4190 and 800). Gradients and patterns go in the figure's own `<defs>` with ids
   prefixed by the lesson (`fy36-water`), because two figures share one page. A filled path makes an arrow (a gradient
   on a vertical line's stroke does not render). Leave room: labels outside the shapes, a dashed rule between panels.
-- **Formulas and symbols in figures are LaTeX** (human decision 2026-10-25): a label that carries a formula, a
-  symbol with a subscript or a unit goes in `<foreignObject x y width height><div xmlns="http://www.w3.org/1999/xhtml"
-  class="fig-tex">$p V = n R T$</div></foreignObject>`; KaTeX renders it on the page and it scales with the
-  figure. Plain words stay in `<text>`. Give the box room (height ≥ 1,6 × font size, width for the widest
-  rendering); `check_layout.py` treats the box like a text label (no overlap, inside the figure), and
-  `check_latex.py` parses the formula. A figure drawn to scale is to
-  scale; a schematic one says so. No paragraph over about 120 words.
+- **Every label in a figure is LaTeX** (human decision 2026-10-25, extended by the teacher 2026-10-26 to all labels):
+  symbols, formulas, units, axis titles, tick numbers and words all go in `<foreignObject x y width height><div
+  xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$p V = n R T$</div></foreignObject>`, words as `$\text{vesi}$`,
+  so one typeface (KaTeX) runs through text, formulas and figures; KaTeX renders it on the page and it scales with
+  the figure. No `<text>` element (the lint flags one). Give the box room (height ≥ 1,6 × font size, width for the
+  widest rendering; `style="text-align:center|right"` for centred or right-aligned labels); `check_layout.py` treats
+  the box like a text label (no overlap, inside the figure), and `check_latex.py` parses the formula. A figure drawn
+  to scale is to scale; a schematic one says so. No paragraph over about 120 words.
+- **Graphs** (teacher's rule 2026-10-26, after fy3-1's force–extension graph): axes 2,5 px ink with filled arrowheads,
+  the axis title at the arrow end as `$F\ (\text{N})$`, ticks 6 px on every gridline with the numbers in LaTeX
+  (`$2{,}5$`) centred under (x) or right-aligned beside (y) the tick, gridlines `#e3dccb` on every tick, the origin
+  `$0$` once, data lines 3 px, measured points as filled circles r 6 with a white 2 px ring, guide lines dashed `#6b7480`
+  1,5 px only where the text reads a value off. The plot area leaves 10 px between any line and any label, a line
+  never runs over a label or past the last gridline, and a curve's label sits at its end in the curve's colour.
+  Scales are honest: equal steps for equal values, and the drawn points are the computed ones.
+- **Print quality** (teacher's rule 2026-10-26): a figure must be good enough for a printed textbook: coordinates on
+  whole or half pixels, consistent stroke widths (outlines 2–3, details 1,5), no element touching the figure's edge
+  (12 px margin), arrows as filled paths, nothing clipped, no stray decoration. A theory point that has a picture
+  (pressure as force on an area, a lever arm, a phase diagram) gets a simple one beside its paragraph.
 - **Symbolic first.** Worked example and every solution: name the unknown, write the formula, solve it with
   symbols, substitute values with units, compute and round, check. In `solutions.md` the **Kaava:** line ends with
   the formula solved for the asked quantity and only **Sijoitus:** has numbers. In `lesson.md` the first row of a

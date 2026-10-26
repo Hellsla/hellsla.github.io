@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "Kaasun paine, tilavuus ja lämpötila kytketään toisiinsa: isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki), kääntäen verrannollisuus todennetaan suorana (1/V, p)-koordinaatistossa, ja vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan samoin kuin paine vakiotilavuudessa (fy3-3).",
+  "contribution": "Kaasun paine, tilavuus ja lämpötila kytketään toisiinsa: isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki), kääntäen verrannollisuus todennetaan suorana (1/V, p)-koordinaatistossa, ja vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan samoin kuin paine vakiotilavuudessa (luku ”Termodynaaminen systeemi, tilanmuuttujat ja lämpötila”).",
   "prior": [
-    "Paine on voima pinta-alaa kohti, $p = F/A$, ja ilmanpaine on noin 101 kPa (fy3-4)",
-    "Vakiotilavuudessa kaasun paine on verrannollinen kelvinlämpötilaan, ja suoran jatke osuu absoluuttiseen nollapisteeseen (fy3-3)",
-    "Kaasut laajenevat lämmetessä paljon enemmän kuin nesteet ja kiinteät aineet; ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ vakiopaineessa (fy3-8)"
+    "Paine on voima pinta-alaa kohti, $p = F/A$, ja ilmanpaine on noin 101 kPa (luku ”Paine ja hydrostaattinen paine”)",
+    "Vakiotilavuudessa kaasun paine on verrannollinen kelvinlämpötilaan, ja suoran jatke osuu absoluuttiseen nollapisteeseen (luku ”Termodynaaminen systeemi, tilanmuuttujat ja lämpötila”)",
+    "Kaasut laajenevat lämmetessä paljon enemmän kuin nesteet ja kiinteät aineet; ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ vakiopaineessa (luku ”Lämpölaajeneminen”)"
   ],
   "activities": [
     {
@@ -109,7 +109,7 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on 20 °C:n tilavuudesta 50 ml. Oppitunnilla fy3-8 ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
+        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on 20 °C:n tilavuudesta 50 ml. Luvussa ”Lämpölaajeneminen” ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
         "choices": [
           { "text": "Se on $1/(293\\,\\text{K})$: vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan, joten jokainen kelvin kasvattaa sitä 1/293-osalla 20 °C:n tilavuudesta.", "correct": true, "feedback": "Oikein. Mittauksissa tilavuus kasvaa noin 0,171 ml kelviniä kohti, ja $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ eli 1/293. Kaasun suuri lämpölaajeneminen on siis sama ilmiö kuin tämän tunnin kaasulaki. Siksi kaasun γ ei ole vakio kuten metallin α, vaan se riippuu lämpötilasta, josta lähdetään." },
           { "text": "Se on ilman ominaisuus, joka mitataan erikseen, eikä sillä ole yhteyttä kaasulakeihin.", "feedback": "Laske mittauksistasi: 0,171 ml kelviniä kohti on 50 ml:sta $3{,}4 \\cdot 10^{-3}$ eli 1/293. Luku seuraa siitä, että vakiopaineessa $V/T$ pysyy vakiona ja 20 °C on 293 K." },

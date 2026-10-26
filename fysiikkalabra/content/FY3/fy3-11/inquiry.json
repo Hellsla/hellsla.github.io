@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Kaasu tekee laajetessaan työn $W_\\text{k} = p\\,\\Delta V$, joka näkyy (V, p)-kuvaajan pinta-alana, ja mäntäkone, joka toistaa liikettään, voi muuttaa lämpöä työksi vain luovuttamalla osan lämmöstä kylmempään. Tämä rajaa hyötysuhdetta $\\eta = W/Q_1$ ja tekee yhteistuotannosta ja lämpöpumpuista kannattavia.",
   "prior": [
-    "Ensimmäinen pääsääntö $\\Delta U = Q + W$, jossa $W$ on ympäristön systeemiin tekemä työ, ja energian säilyminen (fy3-5)",
-    "Isobaarinen tilanmuutos: vakiopaineessa kaasun tilavuus kasvaa, kun sen lämpötila nousee (fy3-9)",
-    "Työ voima kertaa matka ja (s, F)-kuvaajan pinta-ala (fy3-2)"
+    "Ensimmäinen pääsääntö $\\Delta U = Q + W$, jossa $W$ on ympäristön systeemiin tekemä työ, ja energian säilyminen (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”)",
+    "Isobaarinen tilanmuutos: vakiopaineessa kaasun tilavuus kasvaa, kun sen lämpötila nousee (luku ”Kaasujen tilanmuutokset ja Boylen laki”)",
+    "Työ voima kertaa matka ja (s, F)-kuvaajan pinta-ala (luku ”Työ ja energia”)"
   ],
   "activities": [
     {
@@ -19,7 +19,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmilta tunneilta",
-      "prompt": "Sylinterissä olevaa kaasua lämmitetään niin, että sen paine pysyy vakiona (isobaarinen tilanmuutos, fy3-9). Kaasuun siirtyy lämpö $Q = 400\\,\\text{J}$. Kaasu laajenee ja työntää mäntää, joten ympäristö tekee kaasuun työn $W = -150\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu (fy3-5: $\\Delta U = Q + W$)?",
+      "prompt": "Sylinterissä olevaa kaasua lämmitetään niin, että sen paine pysyy vakiona (isobaarinen tilanmuutos, luku ”Kaasujen tilanmuutokset ja Boylen laki”). Kaasuun siirtyy lämpö $Q = 400\\,\\text{J}$. Kaasu laajenee ja työntää mäntää, joten ympäristö tekee kaasuun työn $W = -150\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”: $\\Delta U = Q + W$)?",
       "choices": [
         {
           "text": "$\\Delta U = 550\\,\\text{J}$",
@@ -36,7 +36,7 @@
         },
         {
           "text": "$\\Delta U = 0$, koska paine pysyy vakiona.",
-          "feedback": "Vakiopaine ei tarkoita vakiosisäenergiaa. Isobaarisessa lämmityksessä kaasun lämpötila nousee (fy3-9), joten sen sisäenergia kasvaa: $\\Delta U = Q + W = 250\\,\\text{J}$."
+          "feedback": "Vakiopaine ei tarkoita vakiosisäenergiaa. Isobaarisessa lämmityksessä kaasun lämpötila nousee (luku ”Kaasujen tilanmuutokset ja Boylen laki”), joten sen sisäenergia kasvaa: $\\Delta U = Q + W = 250\\,\\text{J}$."
         }
       ]
     },
@@ -280,7 +280,7 @@
         {
           "text": "Työn etumerkissä: työtä tekevä kaasu luovuttaa energiaa, joten $\\Delta U = Q - W_\\text{k} = 360\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Oikein. Kaasu tekee 240 J:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. Sama tulos saadaan fy3-5:n muodosta $\\Delta U = Q + W$, kun ympäristön kaasuun tekemä työ on $W = -W_\\text{k} = -240\\,\\text{J}$."
+          "feedback": "Oikein. Kaasu tekee 240 J:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. Sama tulos saadaan luvun ”Sisäenergia, lämpömäärä ja energian säilyminen” muodosta $\\Delta U = Q + W$, kun ympäristön kaasuun tekemä työ on $W = -W_\\text{k} = -240\\,\\text{J}$."
         },
         {
           "text": "Lämmön etumerkissä: $Q$ on negatiivinen, koska kaasu luovuttaa energiaa laajetessaan.",

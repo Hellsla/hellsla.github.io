@@ -153,6 +153,8 @@ def check_figures(L, text):
         svg, line = m.group(0), text.count("\n", 0, m.start()) + 1
         sizes = [float(x) for x in re.findall(r"font-size[:=]\s*\"?(\d+(?:\.\d+)?)", svg)]
         if sizes and min(sizes) < 24: L.page("lesson.md", line, f"figure text at {min(sizes):g} px; use 24 px or more so it reads at 13 px on a 360 px phone (NOTES 3)")
+        for t in re.finditer(r"<text\b[^>]*>(.*?)</text>", svg, flags=re.S):
+            L.page("lesson.md", line + svg.count("\n", 0, t.start()), f"figure label in <text>: every label in a figure is LaTeX in a fig-tex foreignObject, words as \\text{{}} (teacher's rule 2026-10-26, NOTES 3): {re.sub(r'<[^>]+>', '', t.group(1)).strip()[:40]}")
         colours = {c.lower() for c in re.findall(r"#[0-9a-fA-F]{6}\b", svg)}
         if not colours: L.page("lesson.md", line, "monochrome figure (currentColor only): draw it as a textbook illustration with the figure palette, materials you can recognise and colour that carries meaning (NOTES 3)")
         elif colours - PALETTE: L.warn("lesson.md", line, f"colours outside the figure palette: {', '.join(sorted(colours - PALETTE))} (NOTES 3)")
@@ -264,7 +266,7 @@ def check_solutions(L, folder, answers):
     if not f.exists(): L.err("solutions.md", 1, "missing"); return
     text = f.read_text()
     check_text_rules(L, "solutions.md", text)
-    if "$" in text: L.warn("solutions.md", 1, "solutions are plain text with Unicode, not LaTeX (NOTES 1)")
+    check_math(L, "solutions.md", text)
     blocks = re.split(r"^## ", text, flags=re.M)[1:]
     seen = {}
     for b in blocks:
@@ -275,6 +277,11 @@ def check_solutions(L, folder, answers):
         seen[eid] = body
         for lab in LABELS:
             if f"**{lab}" not in body: L.warn("solutions.md", line, f"{eid}: no '**{lab}:**' step")
+        for lab in ("Kaava", "Sijoitus"):
+            k = re.search(rf"\*\*{lab}:?\*\*:?([^\n]*)", body)
+            if k and "$" not in k.group(1):
+                L.page("solutions.md", line, f"{eid}: the {lab} step is plain text; write the calculation in LaTeX, $p = \\dfrac{{F}}{{A}}$ (teacher's rule 2026-10-26, NOTES 1)")
+        body = tex_plain(body)
         k = re.search(r"\*\*Kaava:?\*\*:?([^\n]*)", body)
         if k and "=" not in k.group(1):
             L.form("solutions.md", line, f"{eid}: the Kaava step must end with the formula solved for the unknown in symbols (human rule 2)")
@@ -291,6 +298,30 @@ def check_solutions(L, folder, answers):
                 L.err("solutions.md", line, f"{eid}: Vastaus {m.group(1).strip()} does not match exercises.json answer {ans:g}")
     for eid in answers:
         if eid not in seen: L.err("solutions.md", 1, f"no solution for {eid}")
+
+
+def tex_plain(text):
+    """A solution in LaTeX read as the plain text the older checks expect: '$930\\,\\text{kPa}$' -> '930 kPa'."""
+    def one(m):
+        t = m.group(1) if m.group(1) is not None else m.group(2)
+        t = re.sub(r"\\(?:text|mathrm|textsf)\{([^{}]*)\}", r"\1", t)
+        t = t.replace("{,}", ",").replace("\\,", " ").replace("\\;", " ").replace("\\ ", " ").replace("\\cdot", "·").replace("\\approx", "≈")
+        t = re.sub(r"\\[a-zA-Z]+", " ", t)
+        return re.sub(r"[{}]", "", t)
+    return re.sub(r"\$\$(.*?)\$\$|\$([^$\n]+?)\$", one, text, flags=re.S)
+
+
+CHAPTER_REF = re.compile(r"\b[Ff][Yy]\d-\d+\b(?![-\w])|\b[Oo]ppitunni(?:lla|n|sta|ssa|lta)\s+[Ff][Yy]\d|\b[Ee]dellise(?:llä|n|ssä|ltä)\s+oppitun\w*|\bedellinen oppitunti\b")
+
+
+def check_chapter_refs(L, name, text):
+    """A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): 'luvussa Paine ja hydrostaattinen
+    paine', not 'oppitunnilla fy3-4' or '(fy3-4)' or 'edellisellä oppitunnilla'. Exercise ids ("id": "fy3-4-L1-01")
+    and solution headings are not shown as text and are skipped."""
+    for i, ln in enumerate(text.splitlines(), 1):
+        if re.match(r"\s*(\"id\"|## fy)", ln): continue
+        for m in CHAPTER_REF.finditer(ln):
+            L.page(name, i, f"\"{m.group(0)}\": name the chapter, not the lesson id or 'the previous lesson' (teacher's rule 2026-10-26)")
 
 
 def check_exit_ticket(L, folder):
@@ -402,6 +433,8 @@ def lint(folder):
     check_sim(L, folder, meta)
     check_answers_py(L, folder, answers)
     check_inquiry(L, folder)
+    for f in ("lesson.md", "solutions.md", "inquiry.json", "exercises.json", "exit-ticket.json"):
+        if (folder / f).exists(): check_chapter_refs(L, f, (folder / f).read_text())
     return L
 
 

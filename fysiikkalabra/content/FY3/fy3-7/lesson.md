@@ -84,7 +84,7 @@ missä $Q$ on lämpömäärä (J), $s$ aineen ominaissulamislämpö (J/kg), $r$ 
 | $c$ (vesi) | 4190 J/(kg·K) |
 | $c$ (vesihöyry) | 2000 J/(kg·K) |
 
-Taulukossa $c$ on ominaislämpökapasiteetti, joka esiteltiin edellisellä oppitunnilla.
+Taulukossa $c$ on ominaislämpökapasiteetti, joka esiteltiin luvussa ”Aineen lämpeneminen ja jäähtyminen”.
 
 Lämpenemiskäyrä näyttää lämpötilan siirretyn energian funktiona. Nousevilla osilla aine lämpenee ja pätee $Q = cm\Delta T$, vaakasuorilla osilla aine muuttaa olomuotoaan ja pätee $Q = sm$ tai $Q = rm$. Mitä pienempi ominaislämpökapasiteetti, sitä jyrkemmin lämpötila nousee, joten jään ja höyryn osat ovat noin kaksi kertaa jyrkempiä kuin veden osa:
 

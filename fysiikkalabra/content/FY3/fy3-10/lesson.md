@@ -3,7 +3,7 @@
 > **Miksi** heliumpallo on paljon kevyempi kuin samankokoinen ilmapallo? Onko siinä vähemmän kaasua?
 
 ## Ydinajatus
-Edellisen oppitunnin kaasulait koskivat suljettua kaasumäärää. Nyt verrataan eri kaasumääriä ja eri kaasuja. Kun 5,00 litran pallo täytetään 101 kPa:n paineessa ja 20 °C:n lämpötilassa vuorotellen heliumilla, typellä, ilmalla ja hiilidioksidilla, kaasujen massat ovat hyvin erilaiset: 0,83 g, 5,78 g, 6,02 g ja 9,10 g. Kun kunkin massa jaetaan kaasun moolimassalla, tulos on kuitenkin joka kerta noin 0,207 mol. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis yhtä paljon kaasua, olipa kaasu mitä tahansa. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
+Luvun ”Kaasujen tilanmuutokset ja Boylen laki” kaasulait koskivat suljettua kaasumäärää. Nyt verrataan eri kaasumääriä ja eri kaasuja. Kun 5,00 litran pallo täytetään 101 kPa:n paineessa ja 20 °C:n lämpötilassa vuorotellen heliumilla, typellä, ilmalla ja hiilidioksidilla, kaasujen massat ovat hyvin erilaiset: 0,83 g, 5,78 g, 6,02 g ja 9,10 g. Kun kunkin massa jaetaan kaasun moolimassalla, tulos on kuitenkin joka kerta noin 0,207 mol. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis yhtä paljon kaasua, olipa kaasu mitä tahansa. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Havainnekuva: kaksi yhtä suurta lasikuplan näköistä palloa samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja ainemäärä n = 0,21 mol. Heliumpallon kaasun massa on m = 0,83 g ja ilmapallon m = 6,0 g, koska ilman hiukkaset ovat raskaampia. Nuolet näyttävät hiukkasten liikkeen: kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin." style="color:#6b7480;max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <defs>
@@ -195,7 +195,7 @@ Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää
 
 <!-- sim -->
 
-Kun kaasun määrä ei muutu, nR on vakio, ja tilanyhtälöstä seuraa yhdistetty kaasulaki $p_1V_1/T_1 = p_2V_2/T_2$ (alaindeksit 1 ja 2 ovat alku- ja lopputila). Siitä saadaan jokainen edellisen oppitunnin kaasulaki, kun yksi suure pidetään vakiona.
+Kun kaasun määrä ei muutu, nR on vakio, ja tilanyhtälöstä seuraa yhdistetty kaasulaki $p_1V_1/T_1 = p_2V_2/T_2$ (alaindeksit 1 ja 2 ovat alku- ja lopputila). Siitä saadaan jokainen luvun ”Kaasujen tilanmuutokset ja Boylen laki” kaasulaki, kun yksi suure pidetään vakiona.
 
 ## Esimerkki
 Juhlapallo täytetään heliumilla, kunnes sen tilavuus on 5,0 l. Pallossa paine on 101 kPa ja lämpötila 20 °C. Kuinka monta moolia heliumia pallossa on, ja mikä on heliumin massa? Heliumin moolimassa on 4,0 g/mol.

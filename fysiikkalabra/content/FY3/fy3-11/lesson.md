@@ -60,7 +60,7 @@ missä $W_\text{k}$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta
 ```latex
 \Delta U = Q - W_\text{k}
 ```
-missä $Q$ on kaasuun siirtynyt lämpö (J). Tämä on oppitunnin fy3-5 ensimmäinen pääsääntö $\Delta U = Q + W$, jossa $W$ on ympäristön kaasuun tekemä työ: $W = -W_\text{k}$.
+missä $Q$ on kaasuun siirtynyt lämpö (J). Tämä on luvussa ”Sisäenergia, lämpömäärä ja energian säilyminen” esitetty ensimmäinen pääsääntö $\Delta U = Q + W$, jossa $W$ on ympäristön kaasuun tekemä työ: $W = -W_\text{k}$.
 
 Lämpövoimakoneen yhden kierroksen aikana tekemä työ ja hyötysuhde ovat
 ```latex

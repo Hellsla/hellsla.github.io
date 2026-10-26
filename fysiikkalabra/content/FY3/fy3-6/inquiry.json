@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpömäärä saa laskukaavan $Q = cm\\Delta T$: aineen ominaislämpökapasiteetti ratkaisee, kuinka paljon lämpötila muuttuu, ja energian säilymisestä saadaan kalorimetrin tasapainolämpötila ja tuntemattoman aineen $c$.",
   "prior": [
-    "Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja siirtynyt energia on lämpömäärä Q (fy3-5)",
-    "Energia säilyy: eristetyn systeemin kokonaisenergia pysyy vakiona (fy3-5)"
+    "Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja siirtynyt energia on lämpömäärä Q (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”)",
+    "Energia säilyy: eristetyn systeemin kokonaisenergia pysyy vakiona (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”)"
   ],
   "activities": [
     {
@@ -22,12 +22,12 @@
       "choices": [
         {
           "text": "Kuparin lämpö siirtyy veteen, kunnes kuparissa ei ole enää lämpöä.",
-          "feedback": "Kappaleella ei ole lämpöä (fy3-5). Lämpö on energian *siirtymistä* lämpötilaeron vuoksi, ja se loppuu, kun lämpötilat ovat samat, ei silloin, kun jokin varasto tyhjenee. Kuparilla on yhä sisäenergiaa."
+          "feedback": "Kappaleella ei ole lämpöä (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”). Lämpö on energian *siirtymistä* lämpötilaeron vuoksi, ja se loppuu, kun lämpötilat ovat samat, ei silloin, kun jokin varasto tyhjenee. Kuparilla on yhä sisäenergiaa."
         },
         {
           "text": "Energiaa siirtyy lämpönä kuparista veteen, kunnes lämpötilat ovat samat. Kuparin sisäenergia pienenee yhtä paljon kuin veden sisäenergia kasvaa.",
           "correct": true,
-          "feedback": "Oikein. Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja eristetyssä astiassa energia säilyy: kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama (fy3-5). Tänään lasketaan, kuinka suuri tuo lämpömäärä on."
+          "feedback": "Oikein. Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja eristetyssä astiassa energia säilyy: kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama (luku ”Sisäenergia, lämpömäärä ja energian säilyminen”). Tänään lasketaan, kuinka suuri tuo lämpömäärä on."
         },
         {
           "text": "Vedestä siirtyy kylmyyttä kupariin, kunnes kupari on yhtä kylmää kuin vesi oli alussa.",
