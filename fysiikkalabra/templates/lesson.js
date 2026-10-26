@@ -2,7 +2,8 @@
    1. Answer check: compares the typed number with data-answer within the relative data-tol.
    2. Section nav: marks the section currently on screen.
    3. Worked example in stages: reveals the solution one stage at a time.
-   4. Print: opens every collapsed block and every hidden stage while printing. */
+   4. Print: opens every collapsed block and every hidden stage while printing.
+   5. A link to something inside a closed box (the Ennusta box, a hint) opens the box, so the target shows. */
 (() => {
   const parse = (s) => {
     const t = s.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, '');
@@ -73,6 +74,15 @@
     steps.forEach((s) => s.setAttribute('tabindex', '-1'));
     show();
   });
+
+  const openTo = (id) => {
+    const t = id && document.getElementById(id);
+    for (let d = t && t.closest('details:not([open])'); d; d = d.parentElement && d.parentElement.closest('details:not([open])')) d.open = true;
+  };
+  const hashId = (h) => { try { return decodeURIComponent(h.slice(1)); } catch (e) { return ''; } };
+  document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[href^="#"]'); if (a) openTo(hashId(a.getAttribute('href'))); });
+  window.addEventListener('hashchange', () => openTo(hashId(location.hash)));
+  if (location.hash) openTo(hashId(location.hash));
 
   let opened = [];
   window.addEventListener('beforeprint', () => {

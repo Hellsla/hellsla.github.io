@@ -97,7 +97,10 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa kappale upotetaan eristettyyn vesiastiaan. Säädä veden ja kappaleen massaa ja alkulämpötilaa ja vaihda kappaleen ainetta. *Upota* näyttää, miten lämpötilat lähestyvät toisiaan. Tasapainolämpötila ja lämpömäärät ovat mallin laskemia arvoja, eivät mittauksia: astian oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta, ja lähestymisen nopeus on vain havainnollistus."
+      "text": "Upota kappale veteen ja seuraa, miten veden ja kappaleen lämpötilat lähestyvät toisiaan.",
+      "howto": "Säädä veden massa ja alkulämpötila sekä kappaleen aine, massa ja alkulämpötila, ja paina *Upota*. Kappale laskeutuu veteen, ja kuvaaja piirtää veden (sininen) ja kappaleen (oranssi) lämpötilan ajan funktiona. Katkoviiva on tasapainolämpötila $T$. Kun muutat jotakin arvoa, kappale nousee pois vedestä ja koe alkaa alusta.",
+      "model": "Astia on täysin eristetty: lämpöä ei siirry ympäristöön eikä astiaan itseensä, joten kappaleen luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Kappaleen lämpötila pysyy välillä 0–100 °C, eikä kummankaan olomuoto muutu. Tasapainolämpötila ja lämpömäärät ovat mallin laskemia arvoja, eivät mittauksia. Lähestymisen nopeus (aikavakio noin 1,5 s) on vain havainnollistus, ei fysikaalinen malli: todellisuudessa se riippuu sekoittamisesta ja kappaleen muodosta.",
+      "calc": "Lämpökapasiteetit ovat $C_\\text{v} = c_\\text{v} m_\\text{v}$ ja $C_\\text{k} = c_\\text{k} m_\\text{k}$, missä $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Tasapainolämpötila on alkulämpötilojen painotettu keskiarvo:\n\n$$T = \\frac{C_\\text{v} T_\\text{v} + C_\\text{k} T_\\text{k}}{C_\\text{v} + C_\\text{k}}$$\n\nKuumempi luovuttaa lämpömäärän $Q = c m \\, |\\Delta T|$ ja kylmempi vastaanottaa saman verran; kun kappale on kuumempi, $Q = c_\\text{k} m_\\text{k} (T_\\text{k} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$. Kuvaajan lämpötila-asteikko alkaa ja päättyy alkulämpötiloista pyöristettyihin kymmeniin asteisiin."
     },
     {
       "id": "koe-1",

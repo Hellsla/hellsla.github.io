@@ -29,12 +29,15 @@ activities, so stages repeat, combine or are omitted by what the lesson needs):
 
 | id | heading | typical content |
 |---|---|---|
-| `herata` | Herätä kiinnostus | `hook`, a retrieval `choice` on prior learning |
-| `ennusta` | Ennusta | `choice` predictions with `reveal` tied to an experiment; competing explanations (`layout: "models"`) |
+| `herata` | Pohdinta | `hook`, a retrieval `choice` on prior learning |
+| `ennusta` | Ennusta (in a box that starts closed) | `choice` predictions with `reveal` tied to an experiment; competing explanations (`layout: "models"`) |
 | `tutki` | Tutki | `sim`, `experiment` (guided, controlled variables), `interpret` (table, figure, measurements) |
-| `selita` | Selitä | `theory` (Ydinajatus, Kaavat), `reflect` |
-| `sovella` | Sovella | `theory` (Esimerkki), error-spotting `choice`, `numeric` transfer task, `exercises` |
-| `tarkista` | Tarkista osaamisesi | three checks: a conceptual `choice`, a `numeric` or representational task, an `explain`; then `exit` |
+| `selita` | Teoriatiivistelmä | `theory` (Ydinajatus, Kaava), `reflect` |
+| `sovella` | Sovella | `theory` (Esimerkki), error-spotting `choice`, `numeric` transfer task |
+| `tarkista` | Tarkista osaamisesi | three checks: a conceptual `choice`, a `numeric` or representational task, an `explain`; then `exit` (Exit ticket) |
+
+The `exercises` activity is rendered last, in its own section "Tehtävät" after the exit ticket, whatever its `stage`
+(human decision 2026-10-26). The stage ids are the keys in the file; the headings are what the student sees.
 
 Every activity has `id` (lowercase, unique, and not one of the page's own ids `sim`, `exercises`, `exit`, `teoria` or a stage id), `stage`, `type`, optional `title` (plain text) and optional `hints`
 (at most three strings, shown progressively: a guiding question, the representation or relationship, a worked
@@ -50,8 +53,8 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `numeric` | `prompt`, `answer`, `unit`, `tolerance` (relative, default 0.02), optional `mistakes: [{value, feedback}]`, `hints`, `solution` | the same browser-side check as the exercises (decimal comma or point, empty and non-numeric input asked again, two tries before pointing at the solution) plus feedback for listed common mistakes |
 | `explain` | `prompt`, `model`, `criteria: [text]`, optional `pair` | a written explanation; a button shows the model answer and the self-assessment checklist |
 | `reflect` | `prompt`, `predictions: [choice ids]` | the student's own predictions beside the evidence verdict, "Muuttaisitko ennustettasi?" and a reason |
-| `theory` | `sections: ["Ydinajatus", "Kaavat", …]` | those `## ` sections of `lesson.md` (each placed once; sections placed nowhere are appended to Selitä) |
-| `sim` | optional `text` | the free-exploration simulation (at most one; needed before any `experiment`) |
+| `theory` | `sections: ["Ydinajatus", "Kaava", …]` | those `## ` sections of `lesson.md` by their key (`## Kaava: Lämpömäärä` is the section "Kaava", shown as "Lämpömäärä"; each placed once; sections placed nowhere are appended to Teoriatiivistelmä) |
+| `sim` | optional `text` (a lead of at most 30 words), `howto`, `model`, `calc` | the free-exploration simulation (at most one; needed before any `experiment`) with closed boxes Käyttöohje, Mallin oletukset and Laskennan selitys under its readout; a longer `text` without them goes behind one box "Käyttöohje ja mallin oletukset" |
 | `exercises` | optional `text` | the three exercise levels (at most one) |
 | `exit` | optional `text` | the exit ticket (at most one) |
 
@@ -73,7 +76,10 @@ letter or place (the validator rejects it).
 Everything runs in the browser; nothing is sent anywhere. A student's choices and written answers are kept in
 memory and copied to `localStorage` (per device, wrapped in try/catch) so a reload does not lose a committed
 prediction; the page works without storage. Feedback uses text and an `aria-live` output, never colour alone.
-Controls are native (`radio`, `textarea`, `button`, `details`), 40 px tap targets, keyboard operable. Reduced
+Controls are native (`radio`, `textarea`, `button`, `details`), 40 px tap targets, keyboard operable. The Ennusta box
+is a `<details>` that starts closed; its summary counts the answers ("vastattu 1/2 · palaute 1/2"), closing it keeps
+them, and a link to a prediction (the reflection's "siirry ennusteeseen") opens it. On a wide screen the simulation stays
+in its column beside the experiments and moves level with the one the student starts; on a phone it moves into it. Reduced
 motion is respected by the simulation embed. Without JavaScript the page shows every stage, the prompts and the
 options; feedback, experiments and the model answers need it.
 

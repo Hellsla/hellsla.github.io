@@ -87,6 +87,11 @@ shutil.copy(src / "sim.js", S / "sim.js"); (S / "sim.css").write_text("#sim-root
 (T / "assets/pics/fy4/kalteva-taso.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"><path d="M40 260 L560 260 L560 80 Z" fill="none" stroke="#333" stroke-width="4"/></svg>\n')
 md = (L / "lesson.md").read_text()
 (L / "lesson.md").write_text(md.replace("## Ydinajatus\n", "## Ydinajatus\n\n![Kalteva taso, jonka kaltevuus on noin 20°](pics/fy4/kalteva-taso.svg)\n", 1))
+# a new lesson meets the page rules of 2026-10-26 in full (lint_lesson.py "page"): the formula section named after its
+# law, figures in the palette, no explanation paragraph in the simulation
+md = (L / "lesson.md").read_text().replace("\n## Kaava\n", "\n## Kaava: Työ ja teho\n").replace("currentColor", "#1f2933")
+(L / "lesson.md").write_text(md)
+js = (S / "sim.js").read_text(); (S / "sim.js").write_text(re.sub(r"createP\('[^']{90,}'\)", "createP('Laatikko liikkuu vakiovauhdilla.')", js))
 code, out = run("courses.py", "show", "fy4-1")
 expect("the resolver places fy4-1's simulation and picture in FY4's folders", '"sim_script": "sims/fy4/fy4-1/sim.js"' in out and "pics/fy4/kalteva-taso.svg" in out, out)
 

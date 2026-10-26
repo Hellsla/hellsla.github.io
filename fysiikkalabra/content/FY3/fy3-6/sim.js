@@ -6,7 +6,9 @@
 // both temperatures relax exponentially, T(t) = T + (T0 − T)·e^(−t/τ) with τ = 1,5 s, so they meet at T after a few
 // seconds; the real rate depends on stirring, shape and contact. No phase changes: the body stays 0–100 °C.
 // The (t, T) chart's T axis is scaled to the two starting temperatures (rounded to tens) and printed on the axis.
-// p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. The readout is DOM text. Exposes window.simState every frame.
+// p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. The readout is DOM text: quantities and values only; the
+// model's assumptions and the formulas behind the values are in the lesson's "Mallin oletukset" and "Laskennan selitys"
+// boxes (inquiry.json). Exposes window.simState every frame.
 new p5((p) => {
   const CW = 4190, TAU = 1.5, T_END = 10;                     // water c (J/(kg·K)), time constant (s), animation length (s)
   const MATERIALS = [['vesi', 4190], ['alumiini', 900], ['hiekka', 800], ['rauta', 450], ['kupari', 385]];
@@ -38,10 +40,6 @@ new p5((p) => {
     [sMB, lMB] = slider(controls, 0.05, 1.00, 0.20, 0.01);    // kappaleen massa (kg)
     [sTB, lTB] = slider(controls, 0, 100, 100, 0.5);          // kappaleen alkulämpötila (°C)
     readout = p.createDiv('').parent('sim-root').class('readout');
-    p.createP('Eristetyssä astiassa lämpöä siirtyy kuumemmasta kylmempään, kunnes lämpötilat ovat samat. ' +
-              'Lähestymisen nopeus (aikavakio noin 1,5 s) on vain havainnollistus, ei fysikaalinen malli: todellisuudessa se riippuu ' +
-              'sekoittamisesta ja kappaleen muodosta. Astian oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta.')
-      .parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { mW: { input: sMW.elt, unit: 'kg' }, TW0: { input: sTW.elt, unit: '°C' }, cB: { input: sel.elt, unit: 'J/(kg·K)' },
@@ -73,17 +71,15 @@ new p5((p) => {
     lMB.html(`Kappaleen massa m<sub>k</sub> = ${fi(mB, 2)} kg`); lTB.html(`Kappaleen alkulämpötila T<sub>k</sub> = ${fi(TB0, 1)} °C`);
     let flow;
     if (Math.abs(TB0 - TW0) < 1e-9) flow = 'Lämpötilat ovat samat, joten lämpöä ei siirry.';
-    else if (TB0 > TW0) flow = `Kappale luovuttaa Q = c<sub>k</sub>m<sub>k</sub>(T<sub>k</sub> − T) = <strong>${fq(Q)}</strong>, ja vesi vastaanottaa ` +
-                               `Q = c<sub>v</sub>m<sub>v</sub>(T − T<sub>v</sub>) = <strong>${fq(QW)}</strong>.` +
+    else if (TB0 > TW0) flow = `Kappale luovuttaa Q = <strong>${fq(Q)}</strong>, vesi vastaanottaa Q = <strong>${fq(QW)}</strong>.` +
                                `<br>Vesi lämpenee ${fi(Teq - TW0, 1)}&nbsp;K ja kappale jäähtyy ${fi(TB0 - Teq, 1)}&nbsp;K.`;
-    else flow = `Vesi luovuttaa Q = c<sub>v</sub>m<sub>v</sub>(T<sub>v</sub> − T) = <strong>${fq(-QW)}</strong>, ja kappale vastaanottaa ` +
-                `Q = c<sub>k</sub>m<sub>k</sub>(T − T<sub>k</sub>) = <strong>${fq(-Q)}</strong>.` +
+    else flow = `Vesi luovuttaa Q = <strong>${fq(-QW)}</strong>, kappale vastaanottaa Q = <strong>${fq(-Q)}</strong>.` +
                 `<br>Kappale lämpenee ${fi(Teq - TB0, 1)}&nbsp;K ja vesi jäähtyy ${fi(TW0 - Teq, 1)}&nbsp;K.`;
     readout.html(`Tasapainolämpötila T = <strong>${fi(Teq, 1)}&nbsp;°C</strong>` +
-                 `<br>Lämpökapasiteetit: vesi C<sub>v</sub> = c<sub>v</sub>m<sub>v</sub> = ${fc(CWt)}&nbsp;J/K, kappale (${name}) C<sub>k</sub> = c<sub>k</sub>m<sub>k</sub> = ${fc(CB)}&nbsp;J/K` +
+                 `<br>Lämpökapasiteetit C = cm: vesi ${fc(CWt)}&nbsp;J/K, kappale (${name}) ${fc(CB)}&nbsp;J/K` +
                  `<br>${flow}` +
                  `<br>Lämpömittarit nyt: vesi ${fi(TW, 1)}&nbsp;°C, kappale ${fi(TB, 1)}&nbsp;°C` +
-                 `<br><small>Kuvaajan asteikko ${lo}–${hi}&nbsp;°C ja 0–${T_END}&nbsp;s; lähestymisen nopeus on vain havainnollistus.</small>`);
+                 `<br><small>Kuvaajan asteikko ${lo}–${hi}&nbsp;°C ja 0–${T_END}&nbsp;s</small>`);
     window.simState = { mW, TW0, cB, mB, TB0, Teq, CW: CWt, CB, Q, QW, running, TW, TB, t: tAnim, Tlo: lo, Thi: hi };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled

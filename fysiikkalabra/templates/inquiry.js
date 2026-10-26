@@ -9,7 +9,8 @@
       parameters, record the varied parameter and the measured quantities into a table, reset.
    4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js, progressive hints.
    5. Explanations: model answer and self-assessment criteria on request.
-   6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise. */
+   6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
+   7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them. */
 (() => {
   const key = (id) => 'fl:' + location.pathname.split('/').pop() + ':' + id;
   const store = { get(id) { try { return JSON.parse(localStorage.getItem(key(id))); } catch (e) { return null; } },
@@ -62,6 +63,17 @@
     if (saved && radios[saved.choice]) { radios[saved.choice].checked = true; if (justify && saved.why) justify.value = saved.why; if (reveal) commit(saved.choice, true); }
   });
 
+  // 7. the Ennusta box: "2 kysymystä", then "vastattu 1/2", then "vastattu 2/2 · palaute 2/2"
+  document.querySelectorAll('details.fold').forEach((fold) => {
+    const status = fold.querySelector('.fold-status'), sets = [...fold.querySelectorAll('fieldset.choice')], n = sets.length;
+    if (!status || !n) return;
+    const update = () => {
+      const done = sets.filter((f) => f.dataset.committed).length, shown = sets.filter((f) => f.dataset.state).length;
+      status.textContent = done ? `vastattu ${done}/${n}` + (shown ? ` · palaute ${shown}/${n}` : '') : `${n} ${n === 1 ? 'kysymys' : 'kysymystä'}`;
+    };
+    bus.addEventListener('fl:answered', update); bus.addEventListener('fl:measured', update); update();
+  });
+
   // 3. experiments: the physics stays in the simulation; this only sets, locks, reads and resets it.
   // p5 runs the sketch's setup (which defines the adapter) after the window load event, so bind lazily.
   const whenAdapter = (cb) => {
@@ -69,18 +81,34 @@
     const tick = () => { if (window.simAdapter) cb(window.simAdapter); else if (Date.now() - t0 < 4000) setTimeout(tick, 100); else cb(null); };
     tick();
   };
-  // The page has one simulation; an experiment that starts brings it next to its own buttons and table, so the
-  // picture, the control being varied and "Kirjaa mittaus" fit one phone screen. Its first place keeps a link.
-  let simHome = null;
-  const bringSim = (ex, id) => {
-    const sim = document.getElementById('sim');
-    if (!sim || ex.contains(sim)) return;
-    if (!simHome) { simHome = document.createElement('p'); simHome.className = 'sim-moved'; sim.before(simHome); }
+  // The page has one simulation. On a wide screen it stays in its column beside the experiments (.lab, site.css) and
+  // moves down level with the experiment that starts. On a phone an experiment that starts brings it next to its own
+  // buttons and table, so the picture, the control being varied and "Kirjaa mittaus" fit one screen; its first place
+  // keeps a link. A resize puts it right again.
+  const simEl = document.getElementById('sim');
+  const simHome = simEl ? document.createElement('p') : null;
+  if (simHome) { simHome.className = 'sim-moved'; simHome.hidden = true; simEl.before(simHome); }
+  let activeExp = null;
+  const besideLab = () => { const lab = simHome && simHome.closest('.lab'); return !!lab && getComputedStyle(lab).getPropertyValue('--wide').trim() === '1'; };
+  const placeSim = () => {
+    if (!simEl) return;
+    if (!activeExp || besideLab()) {
+      if (simHome.nextElementSibling !== simEl) simHome.after(simEl);
+      simHome.hidden = true; simEl.style.marginTop = '';
+      if (activeExp) { const d = activeExp.ex.closest('.activity').getBoundingClientRect().top - simEl.getBoundingClientRect().top; if (d > 0) simEl.style.marginTop = Math.round(d) + 'px'; }
+      return;
+    }
+    simEl.style.marginTop = '';
+    const { ex, id } = activeExp;
+    if (!ex.contains(simEl)) ex.querySelector('.exp-controls').before(simEl);
     const title = ex.closest('.activity').querySelector('h3')?.textContent || 'kokeeseen';
     simHome.innerHTML = 'Simulaatio on nyt kokeen kohdalla: <a></a>.';
     const link = simHome.querySelector('a'); link.href = '#' + id; link.textContent = title;
-    ex.querySelector('.exp-controls').before(sim);
+    simHome.hidden = false;
   };
+  const bringSim = (ex, id) => { activeExp = { ex, id }; placeSim(); };
+  let resizing = false;
+  window.addEventListener('resize', () => { if (!resizing) { resizing = true; requestAnimationFrame(() => { resizing = false; placeSim(); }); } });
   document.querySelectorAll('.experiment').forEach((ex) => {
     const id = ex.closest('.activity').id;
     const initial = JSON.parse(ex.dataset.initial), locked = JSON.parse(ex.dataset.locked), vary = ex.dataset.vary, measure = JSON.parse(ex.dataset.measure), min = Number(ex.dataset.min || 2);
@@ -118,7 +146,9 @@
         A.set(initial); locked.forEach((k) => A.lock(k, true)); A.lock(vary, false);
         armed = true; rec.disabled = false;
         say(`Alkutila asetettu. ${lockedNames.length ? 'Vakiona: ' + lockedNames.join(', ') + '. ' : ''}Säädä ${varyName}, anna simulaation pyöriä ja paina Kirjaa mittaus.`);
-        bringSim(ex, id); rec.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        bringSim(ex, id);
+        if (besideLab()) ex.closest('.activity').scrollIntoView({ behavior: 'smooth', block: 'start' });   // the sim is level with it
+        else rec.scrollIntoView({ behavior: 'smooth', block: 'end' });
       });
       rec.addEventListener('click', () => {
         if (!armed) { say('Aseta ensin alkutila.'); return; }

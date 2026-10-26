@@ -7,40 +7,31 @@ Kun kappaleeseen siirtyy lämpöä, sen sisäenergia kasvaa ja lämpötila nouse
 
 Tärkeä syy on, että veden ominaislämpökapasiteetti on poikkeuksellisen suuri: vesi lämpenee auringossa hitaasti ja jäähtyy illalla hitaasti, kun taas hiekka, jonka c on noin viidesosa veden arvosta, kuumenee samalla energialla moninkertaisesti enemmän. Lisäksi aurinko lämmittää vain hiekan ohutta pintakerrosta, kun taas vedessä lämpeneminen ulottuu syvemmälle. Suuren ominaislämpökapasiteettinsa vuoksi järvet tasaavat rannikon lämpötiloja ja vesi on hyvä lämmönsiirtoaine lämmitysputkissa.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva: yhtä suuriin massoihin vettä ja hiekkaa siirtyy sama lämpömäärä Q. Vasemmalla veden lämpömittari nousee vain vähän, oikealla hiekan lämpömittari nousee noin viisi kertaa enemmän, koska hiekan ominaislämpökapasiteetti on noin viidesosa veden arvosta. Nousujen suhde on piirretty mittakaavassa." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <foreignObject x="150" y="2" width="300" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{sama } Q \text{ ja sama } m$</div></foreignObject>
-  <line x1="300" y1="50" x2="300" y2="290" stroke="currentColor" stroke-opacity="0.4" stroke-dasharray="6 6"/>
-  <line x1="115" y1="62" x2="115" y2="118" stroke="currentColor" stroke-width="4"/>
-  <polygon points="115,138 103,114 127,114" fill="currentColor"/>
-  <foreignObject x="128" y="70" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q$</div></foreignObject>
-  <rect x="40" y="150" width="150" height="92" fill="currentColor" fill-opacity="0.15"/>
-  <polyline points="40,140 40,244 190,244 190,140" fill="none" stroke="currentColor" stroke-width="3"/>
-  <path d="M40,150 Q58,142 77,150 T115,150 T152,150 T190,150" fill="none" stroke="currentColor" stroke-width="2"/>
-  <text x="115" y="284" text-anchor="middle" fill="currentColor">vesi</text>
-  <rect x="228" y="50" width="16" height="200" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
-  <circle cx="236" cy="258" r="13" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="2"/>
-  <rect x="231" y="200" width="10" height="50" fill="currentColor" fill-opacity="0.35"/>
-  <rect x="231" y="180" width="10" height="20" fill="currentColor"/>
-  <line x1="222" y1="200" x2="250" y2="200" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
-  <foreignObject x="250" y="166" width="48" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\Delta T$</div></foreignObject>
-  <line x1="415" y1="62" x2="415" y2="118" stroke="currentColor" stroke-width="4"/>
-  <polygon points="415,138 403,114 427,114" fill="currentColor"/>
-  <foreignObject x="428" y="70" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q$</div></foreignObject>
-  <rect x="340" y="196" width="150" height="46" fill="currentColor" fill-opacity="0.3"/>
-  <polyline points="340,140 340,244 490,244 490,140" fill="none" stroke="currentColor" stroke-width="3"/>
-  <path d="M340,196 L365,190 L392,197 L420,189 L450,196 L490,191" fill="none" stroke="currentColor" stroke-width="2"/>
-  <text x="415" y="284" text-anchor="middle" fill="currentColor">hiekka</text>
-  <rect x="528" y="50" width="16" height="200" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
-  <circle cx="536" cy="258" r="13" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="2"/>
-  <rect x="531" y="200" width="10" height="50" fill="currentColor" fill-opacity="0.35"/>
-  <rect x="531" y="95" width="10" height="105" fill="currentColor"/>
-  <line x1="522" y1="200" x2="550" y2="200" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
-  <foreignObject x="550" y="128" width="48" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\Delta T$</div></foreignObject>
+<svg viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: yhtä suuriin massoihin vettä ja hiekkaa siirtyy sama lämpömäärä Q, mitä kuvaavat yhtä pitkät nuolet. Veden lämpömittarin lukema nousee vähän, hiekan noin viisi kertaa enemmän, koska hiekan ominaislämpökapasiteetti 800 J/(kg·K) on noin viidesosa veden arvosta 4190 J/(kg·K). Lämpötilan nousut on piirretty mittakaavassa ja korostettu punaisella. Hiekkaa on astiassa tilavuutena vähemmän, koska se on tiheämpää kuin vesi." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy36-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy36-sand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><pattern id="fy36-grain" width="14" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.4" fill="#a97a35"/><circle cx="10" cy="8" r="1.1" fill="#a97a35"/><circle cx="8" cy="2" r="0.8" fill="#8a5f22"/></pattern><linearGradient id="fy36-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
+  <foreignObject x="170" y="4" width="260" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{sama } Q \text{ ja sama } m$</div></foreignObject>
+  <line x1="300" y1="56" x2="300" y2="364" stroke="#c9c2b2" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M115,140 V250 Q115,262 127,262 H258 Q270,262 270,250 V140 Z" fill="#eef5f9"/>
+  <path d="M117,172 Q136,165 155,172 T193,172 T231,172 T268,172 V250 Q268,260 258,260 H127 Q117,260 117,250 Z" fill="url(#fy36-water)"/>
+  <path d="M120,172 Q136,166 155,172 T193,172 T231,172 T265,172" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.8"/>
+  <path d="M115,140 V250 Q115,262 127,262 H258 Q270,262 270,250 V140" fill="none" stroke="#1f2933" stroke-width="3"/>
+  <path d="M184,56 H200 V112 H212 L192,140 L172,112 H184 Z" fill="url(#fy36-heat)"/><foreignObject x="214" y="64" width="44" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q$</div></foreignObject>
+  <rect x="78" y="64" width="14" height="206" rx="7" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><g stroke="#6b7480" stroke-width="1.5"><line x1="92" y1="86" x2="98" y2="86"/><line x1="92" y1="101" x2="98" y2="101"/><line x1="92" y1="116" x2="98" y2="116"/><line x1="92" y1="131" x2="98" y2="131"/><line x1="92" y1="146" x2="98" y2="146"/><line x1="92" y1="161" x2="98" y2="161"/><line x1="92" y1="176" x2="98" y2="176"/><line x1="92" y1="191" x2="98" y2="191"/><line x1="92" y1="206" x2="98" y2="206"/><line x1="92" y1="221" x2="98" y2="221"/><line x1="92" y1="236" x2="98" y2="236"/><line x1="92" y1="251" x2="98" y2="251"/></g><rect x="82" y="236" width="6" height="36" fill="#f2a69c"/><circle cx="85" cy="276" r="13" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/><rect x="82" y="216" width="6" height="20" fill="#c92a2a"/><line x1="70" y1="236" x2="100" y2="236" stroke="#1f2933" stroke-width="2" stroke-dasharray="4 3"/><path d="M62,216 H56 V236 H62" fill="none" stroke="#c92a2a" stroke-width="2.5"/><foreignObject x="4" y="206" width="48" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\Delta T$</div></foreignObject>
+  <text x="192" y="300" text-anchor="middle" fill="#1f2933">vesi</text>
+  <foreignObject x="102" y="306" width="180" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$c = 4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$</div></foreignObject>
+  <path d="M440,140 V250 Q440,262 452,262 H573 Q585,262 585,250 V140 Z" fill="#eef5f9"/>
+  <path d="M442,218 L460,213 L478,217 L497,212 L516,216 L536,211 L556,215 L583,212 V250 Q583,260 573,260 H452 Q442,260 442,250 Z" fill="url(#fy36-sand)"/>
+  <path d="M442,218 L460,213 L478,217 L497,212 L516,216 L536,211 L556,215 L583,212 V250 Q583,260 573,260 H452 Q442,260 442,250 Z" fill="url(#fy36-grain)" fill-opacity="0.6"/>
+  <path d="M440,140 V250 Q440,262 452,262 H573 Q585,262 585,250 V140" fill="none" stroke="#1f2933" stroke-width="3"/>
+  <path d="M504,56 H520 V112 H532 L512,140 L492,112 H504 Z" fill="url(#fy36-heat)"/><foreignObject x="534" y="64" width="44" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q$</div></foreignObject>
+  <rect x="408" y="64" width="14" height="206" rx="7" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><g stroke="#6b7480" stroke-width="1.5"><line x1="422" y1="86" x2="428" y2="86"/><line x1="422" y1="101" x2="428" y2="101"/><line x1="422" y1="116" x2="428" y2="116"/><line x1="422" y1="131" x2="428" y2="131"/><line x1="422" y1="146" x2="428" y2="146"/><line x1="422" y1="161" x2="428" y2="161"/><line x1="422" y1="176" x2="428" y2="176"/><line x1="422" y1="191" x2="428" y2="191"/><line x1="422" y1="206" x2="428" y2="206"/><line x1="422" y1="221" x2="428" y2="221"/><line x1="422" y1="236" x2="428" y2="236"/><line x1="422" y1="251" x2="428" y2="251"/></g><rect x="412" y="236" width="6" height="36" fill="#f2a69c"/><circle cx="415" cy="276" r="13" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/><rect x="412" y="131" width="6" height="105" fill="#c92a2a"/><line x1="400" y1="236" x2="430" y2="236" stroke="#1f2933" stroke-width="2" stroke-dasharray="4 3"/><path d="M392,131 H386 V236 H392" fill="none" stroke="#c92a2a" stroke-width="2.5"/><foreignObject x="306" y="163" width="78" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\approx 5\,\Delta T$</div></foreignObject>
+  <text x="512" y="300" text-anchor="middle" fill="#1f2933">hiekka</text>
+  <foreignObject x="424" y="306" width="176" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$c = 800\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$</div></foreignObject>
 </svg>
 
 Kun kuuma ja kylmä kappale laitetaan yhteen eristettyyn astiaan, lämpöä siirtyy kuumemmasta kylmempään, kunnes molemmilla on sama lämpötila. Tätä tilaa sanotaan lämpötasapainoksi. Energia säilyy: kuuman kappaleen luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama. Eristettyä astiaa, jossa tämä mitataan, sanotaan kalorimetriksi, ja mittausta kalorimetriseksi mittaukseksi. Sillä voidaan määrittää tuntemattoman aineen ominaislämpökapasiteetti, kun veden ominaislämpökapasiteetti tunnetaan.
 
-## Kaava
+## Kaava: Lämpömäärä ja lämpötasapaino
 Lämpömäärä, joka tarvitaan massan m lämmittämiseen tai joka vapautuu sen jäähtyessä, on
 ```latex
 \begin{aligned}
@@ -87,27 +78,18 @@ Tasapainolämpötila on siis alkulämpötilojen painotettu keskiarvo, jossa pain
 | rauta | 450 |
 | kupari | 385 |
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Pylväskaavio ominaislämpökapasiteeteista: vesi 4190, jää 2100, alumiini 900, hiekka 800, rauta 450 ja kupari 385 joulea kilogrammaa ja kelviniä kohti" style="max-width:100%;font-family:system-ui,sans-serif;font-size:20px">
-  <line x1="70" y1="250" x2="580" y2="250" stroke="currentColor" stroke-width="3"/>
-  <rect x="90" y="40" width="60" height="210" fill="currentColor" fill-opacity="0.75"/>
-  <rect x="172" y="145" width="60" height="105" fill="currentColor" fill-opacity="0.55"/>
-  <rect x="254" y="205" width="60" height="45" fill="currentColor" fill-opacity="0.55"/>
-  <rect x="336" y="210" width="60" height="40" fill="currentColor" fill-opacity="0.55"/>
-  <rect x="418" y="227" width="60" height="23" fill="currentColor" fill-opacity="0.55"/>
-  <rect x="500" y="231" width="60" height="19" fill="currentColor" fill-opacity="0.55"/>
-  <text x="120" y="32" text-anchor="middle" fill="currentColor">4190</text>
-  <text x="202" y="137" text-anchor="middle" fill="currentColor">2100</text>
-  <text x="284" y="197" text-anchor="middle" fill="currentColor">900</text>
-  <text x="366" y="202" text-anchor="middle" fill="currentColor">800</text>
-  <text x="448" y="219" text-anchor="middle" fill="currentColor">450</text>
-  <text x="530" y="223" text-anchor="middle" fill="currentColor">385</text>
-  <text x="120" y="278" text-anchor="middle" fill="currentColor">vesi</text>
-  <text x="202" y="278" text-anchor="middle" fill="currentColor">jää</text>
-  <text x="284" y="278" text-anchor="middle" fill="currentColor">alumiini</text>
-  <text x="366" y="278" text-anchor="middle" fill="currentColor">hiekka</text>
-  <text x="448" y="278" text-anchor="middle" fill="currentColor">rauta</text>
-  <text x="530" y="278" text-anchor="middle" fill="currentColor">kupari</text>
-  <text x="66" y="22" text-anchor="end" fill="currentColor">c</text>
+<svg viewBox="0 0 600 340" role="img" aria-label="Vaakapylväskaavio ominaislämpökapasiteeteista yksikössä J/(kg·K): vesi 4190, jää 2100, alumiini 900, hiekka 800, rauta 450 ja kupari 385. Pylväiden pituudet ovat mittakaavassa: veden pylväs on noin viisi kertaa hiekan pylvään pituinen." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy36-sandbar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
+  <foreignObject x="126" y="2" width="300" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$c\ \ (\text{J/(kg}\cdot\text{K))}$</div></foreignObject>
+  <line x1="223.3" y1="46" x2="223.3" y2="304" stroke="#e3dccb" stroke-width="1.5"/><line x1="316.7" y1="46" x2="316.7" y2="304" stroke="#e3dccb" stroke-width="1.5"/><line x1="410.0" y1="46" x2="410.0" y2="304" stroke="#e3dccb" stroke-width="1.5"/><line x1="503.3" y1="46" x2="503.3" y2="304" stroke="#e3dccb" stroke-width="1.5"/>
+  <text x="120" y="73" text-anchor="end" fill="#1f2933">vesi</text><rect x="130" y="52" width="391.1" height="28" rx="3" fill="#2f74b5"/><text x="529.1" y="73" fill="#1f2933">4190</text>
+  <text x="120" y="115" text-anchor="end" fill="#1f2933">jää</text><rect x="130" y="94" width="196.0" height="28" rx="3" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="1.5"/><text x="334.0" y="115" fill="#1f2933">2100</text>
+  <text x="120" y="157" text-anchor="end" fill="#1f2933">alumiini</text><rect x="130" y="136" width="84.0" height="28" rx="3" fill="#c4ccd4" stroke="#8a96a3" stroke-width="1.5"/><text x="222.0" y="157" fill="#1f2933">900</text>
+  <text x="120" y="199" text-anchor="end" fill="#1f2933">hiekka</text><rect x="130" y="178" width="74.7" height="28" rx="3" fill="url(#fy36-sandbar)" stroke="#a97a35" stroke-width="1.5"/><text x="212.7" y="199" fill="#1f2933">800</text>
+  <text x="120" y="241" text-anchor="end" fill="#1f2933">rauta</text><rect x="130" y="220" width="42.0" height="28" rx="3" fill="#6c757d"/><text x="180.0" y="241" fill="#1f2933">450</text>
+  <text x="120" y="283" text-anchor="end" fill="#1f2933">kupari</text><rect x="130" y="262" width="35.9" height="28" rx="3" fill="#b8622d"/><text x="173.9" y="283" fill="#1f2933">385</text>
+  <line x1="130" y1="46" x2="130" y2="306" stroke="#1f2933" stroke-width="2.5"/>
+  <text x="130.0" y="330" text-anchor="middle" fill="#6b7480">0</text><text x="223.3" y="330" text-anchor="middle" fill="#6b7480">1000</text><text x="316.7" y="330" text-anchor="middle" fill="#6b7480">2000</text><text x="410.0" y="330" text-anchor="middle" fill="#6b7480">3000</text><text x="503.3" y="330" text-anchor="middle" fill="#6b7480">4000</text>
 </svg>
 
 ## Esimerkki

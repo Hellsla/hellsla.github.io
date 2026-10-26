@@ -1,5 +1,8 @@
-date	lesson	agent	model	effort	mode	round	tokens	input	output	cache_read	cache_write	seconds	calls	verdict
-2026-10-25T19:04Z	fy3-6	developer	opus	medium	inquiry	1	131939					452	30	DONE
-2026-10-25T19:42Z	fy3-6	developer	opus	medium	fix	1	119506					272	22	DONE
-2026-10-25T19:45Z	fy3-6	science-reviewer	opus	medium	full	1	98195					58	7	PASS
-2026-10-25T19:45Z	fy3-6	pedagogy-reviewer	sonnet	medium	full	1	88947					59	11	PASS
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-10-25T19:04Z	fy3-6	FY3	developer		opus	medium	inquiry	1						131939		452	30	DONE		notification	
+2026-10-25T19:42Z	fy3-6	FY3	developer		opus	medium	fix	1						119506		272	22	DONE		notification	
+2026-10-25T19:45Z	fy3-6	FY3	science-reviewer		opus	medium	full	1						98195		58	7	PASS		notification	
+2026-10-25T19:45Z	fy3-6	FY3	pedagogy-reviewer		sonnet	medium	full	1						88947		59	11	PASS		notification	
+2026-10-26T09:45Z	fy3-6	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	184967	10	4361	130220	50376	50892	5	38	9		0.1956	transcript	44b8ae53cdc9
+2026-10-26T09:45Z	fy3-6	FY3	science-reviewer	review	claude-opus-5-5	medium	full	1	252562	12	6417	184993	61140	62039	6	69	6		0.4711	transcript	3d39bb4a2bf8
+2026-10-26T09:45Z	fy3-6	FY3	orchestrator	orchestrate	claude-opus-5-5		since	1	17967262	90	60475	17804563	102134	444564	45	1098	52		5.5878	transcript	07aeeede3583

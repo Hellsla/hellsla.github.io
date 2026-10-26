@@ -21,9 +21,17 @@ NUM = r"[−-]?\d+(?:,\d+)?"
 LABELS = ["Annettu", "Kysytty", "Kaava", "Sijoitus", "Vastaus", "Järkevyys"]
 
 
+# The figure palette (NOTES.md §3): one meaning per colour in every lesson's figures.
+PALETTE = {"#1f2933", "#6b7480", "#c9c2b2", "#e3dccb", "#ffffff", "#eef5f9", "#2f74b5", "#a9d1f0", "#d9b26a", "#e9c98a", "#f1dfb5",
+           "#a97a35", "#8a5f22", "#e8590c", "#ffc078", "#c92a2a", "#f2a69c", "#1971c2", "#d0e6fb", "#8a96a3", "#c4ccd4", "#6c757d",
+           "#b8622d", "#a5d8ff", "#4f8fbf", "#2b8a3e", "#b2f2bb"}
+
+
 class Lint:
     def __init__(self, folder):
         self.folder = folder; self.out = []; self.errors = 0; self.form_errors = 0
+        try: self.state = review_status(folder)["state"]
+        except Exception: self.state = "draft"
 
     def err(self, f, line, msg): self.errors += 1; self.out.append(f"ERROR {f}:{line} {msg}")
     def form(self, f, line, msg):
@@ -31,6 +39,11 @@ class Lint:
         legacy lessons written before the rule report it without failing CI until they are reworked."""
         self.form_errors += 1; self.err(f, line, msg)
     def warn(self, f, line, msg): self.out.append(f"WARN  {f}:{line} {msg}")
+    def page(self, f, line, msg):
+        """A lesson-page rule of 2026-10-26 (CLAUDE.md "Lesson page"). An error for a lesson being written or edited
+        (its reviews are not current); a lesson reviewed before the rule reports it as a warning until it is next edited."""
+        if self.state == "draft": self.err(f, line, msg)
+        else: self.warn(f, line, msg + " (page rule 2026-10-26: fix when the lesson is next edited)")
 
 
 def find_lesson(arg):
@@ -65,10 +78,13 @@ def strip_math_and_svg(text):
 
 
 def math_fragments(text):
+    """(line, LaTeX, display) for every formula. A label inside a figure (foreignObject) counts as display: it sits
+    alone in its box, so a full-size \\dfrac there does not break a line of text."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", text, flags=re.S)
+    figs = [(m.start(), m.end()) for m in re.finditer(r"<foreignObject.*?</foreignObject>", text, re.S)]
     for m in re.finditer(r"\$\$(.*?)\$\$|\$([^$\n]+?)\$", text, re.S):
         line = text.count("\n", 0, m.start()) + 1
-        yield line, (m.group(1) if m.group(1) is not None else m.group(2)), m.group(1) is not None
+        yield line, (m.group(1) if m.group(1) is not None else m.group(2)), m.group(1) is not None or any(a <= m.start() < b for a, b in figs)
 
 
 def check_text_rules(L, name, text):
@@ -130,6 +146,18 @@ def first_row_has_numbers(frag):
     return bool(has_digit and has_unit)
 
 
+def check_figures(L, text):
+    """Figures as textbook illustrations (CLAUDE.md "Lesson page" 9, NOTES.md §3): text at least 24 px in the 600-unit
+    figure, colours from the figure palette, not a monochrome currentColor sketch."""
+    for m in re.finditer(r"<svg\b.*?</svg>", text, flags=re.S):
+        svg, line = m.group(0), text.count("\n", 0, m.start()) + 1
+        sizes = [float(x) for x in re.findall(r"font-size[:=]\s*\"?(\d+(?:\.\d+)?)", svg)]
+        if sizes and min(sizes) < 24: L.page("lesson.md", line, f"figure text at {min(sizes):g} px; use 24 px or more so it reads at 13 px on a 360 px phone (NOTES 3)")
+        colours = {c.lower() for c in re.findall(r"#[0-9a-fA-F]{6}\b", svg)}
+        if not colours: L.page("lesson.md", line, "monochrome figure (currentColor only): draw it as a textbook illustration with the figure palette, materials you can recognise and colour that carries meaning (NOTES 3)")
+        elif colours - PALETTE: L.warn("lesson.md", line, f"colours outside the figure palette: {', '.join(sorted(colours - PALETTE))} (NOTES 3)")
+
+
 def check_lesson_form(L, text):
     """Human decisions on lesson form (CLAUDE.md, NOTES.md section 4)."""
     for name in ("Ydinajatus", "Kaava"):
@@ -167,6 +195,11 @@ def check_lesson_md(L, folder):
     check_text_rules(L, "lesson.md", text)
     check_math(L, "lesson.md", text)
     check_lesson_form(L, text)
+    check_figures(L, text)
+    m = re.search(r"^## Kaava\s*$", text, re.M)
+    if m: L.page("lesson.md", text.count("\n", 0, m.start()) + 1, "name the formula section after its law, `## Kaava: Lämpömäärä` (the page shows the name; inquiry.json keeps \"Kaava\")")
+    for m in re.finditer(r"lähtölip|herätä kiinnostus", text, re.I):
+        L.err("lesson.md", text.count("\n", 0, m.start()) + 1, f"\"{m.group(0)}\": the page says Exit ticket and Pohdinta (2026-10-26)")
     for m in re.finditer(r"\|[^\n]*\|", text):
         cells = [c.strip() for c in m.group(0).strip("|").split("|")]
         if any(len(c) > 22 for c in cells) and m.group(0).count("|") > 2 and "---" not in m.group(0):
@@ -315,6 +348,11 @@ def check_sim(L, folder, meta):
         except json.JSONDecodeError as e: L.err(f"tests/sims/{folder.name}.json", e.lineno, "invalid JSON"); return
         if n < 3: L.err(f"tests/sims/{folder.name}.json", 1, f"only {n} assertions, at least 3 covering the spec")
     check_text_rules(L, "sim-spec.md", (folder / "sim-spec.md").read_text()) if (folder / "sim-spec.md").exists() else None
+    if "'Lisätietoja'" in js or '"Lisätietoja"' in js:
+        L.page("sim.js", 1, "a Lisätietoja box in the sim: explanations go in the lesson's inquiry.json sim activity as howto, model and calc (Käyttöohje, Mallin oletukset, Laskennan selitys)")
+    for m in re.finditer(r"createP\(((?:[^()]|\([^()]*\))*)\)", js):
+        words = len(" ".join(re.findall(r"(['\"`])((?:(?!\1).)*)\1", m.group(1)) and [x[1] for x in re.findall(r"(['\"`])((?:(?!\1).)*)\1", m.group(1))]).split())
+        if words > 15: L.page("sim.js", js.count("\n", 0, m.start()) + 1, f"a {words}-word paragraph in the sim: the sim shows the picture, the controls and the values; one legend line of at most 15 words, the rest in inquiry.json howto/model/calc")
 
 
 def check_answers_py(L, folder, answers):
@@ -365,6 +403,12 @@ def check_inquiry(L, folder):
     except ValueError as e: L.err("inquiry.json", 1, f"not valid JSON: {e}"); return
     for msg in inquiry.validate(folder, data, (folder / "lesson.md").read_text() if (folder / "lesson.md").exists() else ""):
         L.err("inquiry.json", 1, msg.split("inquiry.json: ", 1)[-1])
+    for a in data.get("activities", []) if isinstance(data, dict) else []:
+        if isinstance(a, dict) and a.get("type") == "sim" and len((a.get("text") or "").split()) > inquiry.LEAD_WORDS:
+            L.page("inquiry.json", 1, f"the sim activity's text is {len(a['text'].split())} words; keep a lead of at most {inquiry.LEAD_WORDS} words and move the rest to howto, model and calc (Käyttöohje, Mallin oletukset, Laskennan selitys)")
+    blob = json.dumps(data, ensure_ascii=False)
+    for m in re.finditer(r"lähtölip|herätä kiinnostus", blob, re.I):
+        L.err("inquiry.json", 1, f"\"{m.group(0)}\": the page says Exit ticket and Pohdinta (2026-10-26)")
 
 
 if __name__ == "__main__":
