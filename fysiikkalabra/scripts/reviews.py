@@ -207,7 +207,7 @@ def write_legacy(folder):
 
 # ------------------------------------------------------------------ what changed
 SVG_LINE = re.compile(r"^\s*<(/?svg|path|line|text|rect|circle|g|polyline|polygon|ellipse|defs|stop|linearGradient|radialGradient|marker|tspan|title|foreignObject|use)\b")
-STYLE_ATTR = re.compile(r'\s(?:fill|stroke|stroke-width|stroke-dasharray|stroke-linecap|stroke-linejoin|stroke-opacity|fill-opacity|opacity|'
+STYLE_ATTR = re.compile(r'\s(?:fill|stroke|stop-color|stop-opacity|color|stroke-width|stroke-dasharray|stroke-linecap|stroke-linejoin|stroke-opacity|fill-opacity|opacity|'
                         r'font-size|font-weight|font-family|font-style|class|style|rx|ry)="[^"]*"')
 POS_ATTR = re.compile(r'\s(x|y|dx|dy|width|height)="(-?[\d.]+)"')
 EXPERIMENT_KEY = re.compile(r'\s*"(correct|initial|locked|vary|measure|answer|unit|tolerance|value|mistakes)"\s*:')

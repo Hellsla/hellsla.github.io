@@ -24,7 +24,7 @@ whose change needs a full review, or none, is left out and named."""
 import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses
-from reviews import ROOT, find_lesson, content_hash, scope
+from reviews import ROOT, find_lesson, content_hash, scope, SVG_LINE
 
 SVG = re.compile(r"(<svg\b[^>]*>).*?(</svg>)", re.S)
 LESSON_FILES = ("meta.json", "lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js")
@@ -182,6 +182,19 @@ def packet(folder, role, fix=False):
     return mode
 
 
+def batch_diff(diff, role):
+    """The part of a lesson's diff a batch reviewer reads: restyled figure lines are counted, not shown (the pedagogy
+    reviewer sees them in the captures, the science reviewer need not); the science reviewer gets only the headings."""
+    keep, svg = [], 0
+    for l in diff.splitlines():
+        body = l[1:] if l[:1] in "+- " and not l.startswith(("+++", "---")) else None
+        if body is not None and SVG_LINE.match(body):
+            svg += l[:1] in "+-"; continue
+        if role == "science" and body is not None and not body.startswith("## "): continue
+        keep.append(l)
+    return "\n".join(keep).strip() + (f"\n# ({svg // 2} figure line(s) restyled, not shown: see the captures)" if svg else "")
+
+
 def batch(ids, role):
     """One delta packet for many lessons (module docstring)."""
     out = (f"# Batch packet: delta {role} review of {len(ids)} lessons\nRole: **{role}**. Mode: **delta (batch)**. House rules: `CLAUDE.md` "
@@ -206,7 +219,7 @@ def batch(ids, role):
         if role == "pedagogy" and (folder / "review/shots.md").exists():
             rows = [l for l in (folder / "review/shots.md").read_text().splitlines() if re.search(r"-(fig-\d+-390|fig-row-1280|sim-390)", l)]
             out += "Captures (paths relative to the lesson folder):\n" + "\n".join(rows) + "\n"
-        out += f"```diff\n{sc['diff'].strip()}\n```\n"
+        out += f"```diff\n{batch_diff(sc['diff'], role)}\n```\n"
     if skipped: out += "\n## Not in this batch\n" + "\n".join(f"- {x}" for x in skipped) + "\n"
     f = ROOT / "review-batch" / f"packet-{role}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {len(ids) - len(skipped)} lessons, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens" + (f"; not in it: {'; '.join(skipped)}" if skipped else ""))
