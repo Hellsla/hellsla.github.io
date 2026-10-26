@@ -456,6 +456,24 @@
         ]
       },
       {
+        "id": "fy3-13",
+        "title": "Absoluuttisen nollapisteen määrittäminen",
+        "goals": [
+          "LOPS FY3: lämpötila",
+          "Kokeellisesti: absoluuttisen nollapisteen määrittäminen (ekstrapolointi)",
+          "Täsmennys: mittausaineisto suoraksi, ekstrapolointi nollapaineeseen ja tuloksen epävarmuuden arviointi"
+        ],
+        "prerequisites": [
+          "fy3-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "absoluuttinen nollapiste",
+          "ekstrapolointi",
+          "mittausepävarmuus"
+        ]
+      },
+      {
         "id": "fy3-4",
         "title": "Paine ja hydrostaattinen paine",
         "goals": [
@@ -532,6 +550,24 @@
           "höyrystymislämpö",
           "lämpenemiskäyrä",
           "faasikaavio"
+        ]
+      },
+      {
+        "id": "fy3-14",
+        "title": "Lämpötasapaino olomuodon muuttuessa",
+        "goals": [
+          "LOPS FY3: aineen lämpeneminen ja jäähtyminen sekä olomuodon muutokset",
+          "LOPS FY3: energian säilyminen",
+          "Täsmennys: jää sulaa veteen: sulamislämpö ja lämpeneminen samassa lämpötasapainossa, sulaako kaikki jää"
+        ],
+        "prerequisites": [
+          "fy3-6",
+          "fy3-7"
+        ],
+        "sim": true,
+        "glossary": [
+          "ominaissulamislämpö",
+          "lämpötasapaino"
         ]
       },
       {
@@ -612,6 +648,24 @@
         ]
       },
       {
+        "id": "fy3-15",
+        "title": "Energiantuotanto ja voimalaitosten hyötysuhde",
+        "goals": [
+          "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+          "Temaattinen tarkastelu: energiantuotanto",
+          "Täsmennys: voimalaitostyyppien energiaketjut ja hyötysuhteet, lauhde- ja yhteistuotanto"
+        ],
+        "prerequisites": [
+          "fy3-11"
+        ],
+        "sim": false,
+        "glossary": [
+          "hyötysuhde",
+          "lauhdevoimalaitos",
+          "yhteistuotanto"
+        ]
+      },
+      {
         "id": "fy3-12",
         "title": "Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos",
         "goals": [
@@ -630,6 +684,22 @@
           "energiatasapaino",
           "kasvihuoneilmiö"
         ]
+      },
+      {
+        "id": "fy3-16",
+        "title": "Soveltava tunti: lämpöilmiöt arjessa",
+        "goals": [
+          "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+          "LOPS FY3: aineen lämpeneminen ja jäähtyminen sekä olomuodon muutokset",
+          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (sauna, kylmälaukku, jäähdytysneste)"
+        ],
+        "prerequisites": [
+          "fy3-6",
+          "fy3-7",
+          "fy3-12"
+        ],
+        "sim": false,
+        "glossary": []
       }
     ]
   },
@@ -708,6 +778,23 @@
         ]
       },
       {
+        "id": "fy4-12",
+        "title": "Kahden kappaleen liike: kohtaaminen ja ohitus",
+        "goals": [
+          "LOPS FY4: tasainen ja tasaisesti kiihtyvä suoraviivainen liike",
+          "Täsmennys: kahden kappaleen paikat samassa koordinaatistossa, kohtaamis- ja ohitushetki laskien ja kuvaajista"
+        ],
+        "prerequisites": [
+          "fy4-1",
+          "fy4-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "paikka",
+          "kiihtyvyys"
+        ]
+      },
+      {
         "id": "fy4-3",
         "title": "Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki",
         "goals": [
@@ -766,6 +853,23 @@
         ]
       },
       {
+        "id": "fy4-13",
+        "title": "Liikeyhtälö kytketyille kappaleille",
+        "goals": [
+          "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
+          "Täsmennys: narulla tai väkipyörän yli kytketyt kappaleet, yhteinen kiihtyvyys ja langan jännitysvoima"
+        ],
+        "prerequisites": [
+          "fy4-4",
+          "fy4-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "liikeyhtälö",
+          "jännitysvoima"
+        ]
+      },
+      {
         "id": "fy4-6",
         "title": "Paino, kitka ja kalteva taso",
         "goals": [
@@ -784,6 +888,23 @@
           "liikekitka",
           "kitkakerroin",
           "kalteva taso"
+        ]
+      },
+      {
+        "id": "fy4-14",
+        "title": "Ilmanvastus ja putoaminen ilmassa",
+        "goals": [
+          "LOPS FY4: paino ja kitka",
+          "Täsmennys: väliaineen vastusvoima kvalitatiivisesti, rajanopeus ja laskuvarjo"
+        ],
+        "prerequisites": [
+          "fy4-4",
+          "fy4-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "väliaineen vastus",
+          "rajanopeus"
         ]
       },
       {
@@ -821,6 +942,24 @@
           "mekaanisen energian säilyminen",
           "työ",
           "ei-konservatiivinen voima"
+        ]
+      },
+      {
+        "id": "fy4-15",
+        "title": "Vesi- ja tuulivoima energian muuntajina",
+        "goals": [
+          "LOPS FY4: liike-energia, potentiaalienergia ja mekaaninen energia",
+          "Temaattinen tarkastelu: vesi- ja tuulivoima",
+          "Täsmennys: veden potentiaalienergiasta ja tuulen liike-energiasta sähköksi, teho ja hyötysuhde"
+        ],
+        "prerequisites": [
+          "fy4-8"
+        ],
+        "sim": false,
+        "glossary": [
+          "potentiaalienergia",
+          "liike-energia",
+          "hyötysuhde"
         ]
       },
       {
@@ -879,6 +1018,21 @@
           "turvavyö",
           "törmäysaika"
         ]
+      },
+      {
+        "id": "fy4-16",
+        "title": "Soveltava tunti: hissi, laskuvarjo ja kelkkamäki",
+        "goals": [
+          "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
+          "LOPS FY4: mekaanisen energian säilyminen ja mekaniikan energiaperiaate",
+          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa"
+        ],
+        "prerequisites": [
+          "fy4-4",
+          "fy4-8"
+        ],
+        "sim": false,
+        "glossary": []
       }
     ]
   },
@@ -1142,6 +1296,41 @@
         ]
       },
       {
+        "id": "fy5-14",
+        "title": "Akustiikka ja äänentoisto",
+        "goals": [
+          "LOPS FY5: ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen",
+          "Temaattinen tarkastelu: akustiikka ja äänentoisto",
+          "Täsmennys: heijastuminen ja jälkikaiunta tiloissa, kaiuttimen ja mikrofonin periaate"
+        ],
+        "prerequisites": [
+          "fy5-12"
+        ],
+        "sim": false,
+        "glossary": [
+          "jälkikaiunta",
+          "intensiteettitaso"
+        ]
+      },
+      {
+        "id": "fy5-15",
+        "title": "Ultraäänikuvaus",
+        "goals": [
+          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+          "Temaattinen tarkastelu: ultraäänikuvaus",
+          "Täsmennys: ultraäänen heijastuminen kudosten rajapinnoilta ja syvyys kulkuajasta"
+        ],
+        "prerequisites": [
+          "fy5-9",
+          "fy5-12"
+        ],
+        "sim": false,
+        "glossary": [
+          "ultraääni",
+          "heijastuminen"
+        ]
+      },
+      {
         "id": "fy5-13",
         "title": "Äänen intensiteettitaso ja kuulon suojaaminen",
         "goals": [
@@ -1161,6 +1350,21 @@
           "kuulokynnys",
           "melu"
         ]
+      },
+      {
+        "id": "fy5-16",
+        "title": "Soveltava tunti: värähtelyt ja aallot rakenteissa ja luonnossa",
+        "goals": [
+          "LOPS FY5: jaksollinen liike, jaksonaika, taajuus ja amplitudi",
+          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (sillat, maanjäristysaallot, aallot rannalla)"
+        ],
+        "prerequisites": [
+          "fy5-7",
+          "fy5-9"
+        ],
+        "sim": false,
+        "glossary": []
       }
     ]
   },
@@ -1238,6 +1442,24 @@
         ]
       },
       {
+        "id": "fy6-12",
+        "title": "Mittaukset virtapiirissä",
+        "goals": [
+          "LOPS FY6: jännite ja sähkövirta tasavirtapiireissä",
+          "Kokeellisesti: mittauksia komponenttien toiminnasta virtapiirissä",
+          "Täsmennys: virta- ja jännitemittarin kytkentä, mittausalue ja mittarin vaikutus piiriin"
+        ],
+        "prerequisites": [
+          "fy6-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "jännitemittari",
+          "virtamittari",
+          "resistanssi"
+        ]
+      },
+      {
         "id": "fy6-3",
         "title": "Sähköteho ja Joulen laki",
         "goals": [
@@ -1251,6 +1473,23 @@
           "sähköteho",
           "Joulen laki",
           "sähköenergia",
+          "kilowattitunti"
+        ]
+      },
+      {
+        "id": "fy6-13",
+        "title": "Sähkölaitteet kotona: teho, energia ja kustannus",
+        "goals": [
+          "LOPS FY6: sähköteho ja Joulen laki",
+          "Temaattinen tarkastelu: yksinkertaiset sähkölaitteet",
+          "Täsmennys: laitteiden teho ja energiankulutus kilowattitunteina, sähkölasku ja säästökeinot"
+        ],
+        "prerequisites": [
+          "fy6-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "sähköteho",
           "kilowattitunti"
         ]
       },
@@ -1286,6 +1525,23 @@
           "Kirchhoffin jännitelaki",
           "silmukka",
           "haarautumispiste"
+        ]
+      },
+      {
+        "id": "fy6-14",
+        "title": "Potentiaali ja jännitteet virtapiirissä",
+        "goals": [
+          "LOPS FY6: vastusten kytkennät ja Kirchhoffin lait",
+          "Täsmennys: potentiaali piirin eri kohdissa, potentiaalikuvaaja ja jännitteiden summa silmukassa"
+        ],
+        "prerequisites": [
+          "fy6-4",
+          "fy6-5"
+        ],
+        "sim": false,
+        "glossary": [
+          "potentiaali",
+          "jännite"
         ]
       },
       {
@@ -1365,6 +1621,22 @@
         ]
       },
       {
+        "id": "fy6-15",
+        "title": "Kondensaattorin varaaminen ja purkaminen",
+        "goals": [
+          "LOPS FY6: kondensaattori ja kondensaattorin energia",
+          "Täsmennys: varaus- ja purkautumiskäyrä kvalitatiivisesti, vastuksen ja kapasitanssin vaikutus nopeuteen"
+        ],
+        "prerequisites": [
+          "fy6-9"
+        ],
+        "sim": true,
+        "glossary": [
+          "kondensaattori",
+          "kapasitanssi"
+        ]
+      },
+      {
         "id": "fy6-10",
         "title": "Puolijohteet, diodi ja LED",
         "goals": [
@@ -1402,6 +1674,23 @@
           "läpilyöntilujuus",
           "maadoitus"
         ]
+      },
+      {
+        "id": "fy6-16",
+        "title": "Soveltava tunti: sähköauto ja kodin sähköjärjestelmä",
+        "goals": [
+          "LOPS FY6: akut ja akun latauspiiri",
+          "LOPS FY6: sähköteho ja Joulen laki",
+          "LOPS FY6: sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus",
+          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa"
+        ],
+        "prerequisites": [
+          "fy6-3",
+          "fy6-6",
+          "fy6-11"
+        ],
+        "sim": false,
+        "glossary": []
       }
     ]
   },
@@ -1497,6 +1786,22 @@
           "solenoidi",
           "oikean käden sääntö",
           "ampeeri"
+        ]
+      },
+      {
+        "id": "fy7-13",
+        "title": "Sähkömoottori ja kaiutin",
+        "goals": [
+          "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
+          "Täsmennys: voima virtajohtimeen magneettikentässä sovelluksina: sähkömoottori ja kaiutin"
+        ],
+        "prerequisites": [
+          "fy7-3"
+        ],
+        "sim": true,
+        "glossary": [
+          "magneettikenttä",
+          "sähkömoottori"
         ]
       },
       {
@@ -1614,6 +1919,22 @@
         ]
       },
       {
+        "id": "fy7-14",
+        "title": "Valon dispersio ja sateenkaari",
+        "goals": [
+          "LOPS FY7: valon heijastuminen, taittuminen ja kokonaisheijastuminen",
+          "Täsmennys: taitekerroin riippuu aallonpituudesta, prisma ja sateenkaaren synty"
+        ],
+        "prerequisites": [
+          "fy7-9"
+        ],
+        "sim": false,
+        "glossary": [
+          "dispersio",
+          "taitekerroin"
+        ]
+      },
+      {
         "id": "fy7-10",
         "title": "Kokonaisheijastuminen ja valokuitu",
         "goals": [
@@ -1651,6 +1972,22 @@
         ]
       },
       {
+        "id": "fy7-15",
+        "title": "Ohuen kalvon interferenssi",
+        "goals": [
+          "LOPS FY7: valon interferenssi ja diffraktio",
+          "Täsmennys: saippuakalvon värit ja heijastuksenestopinnoite kvalitatiivisesti ja yksinkertaisin laskuin"
+        ],
+        "prerequisites": [
+          "fy7-11"
+        ],
+        "sim": true,
+        "glossary": [
+          "interferenssi",
+          "ohut kalvo"
+        ]
+      },
+      {
         "id": "fy7-12",
         "title": "Valon polarisaatio",
         "goals": [
@@ -1666,6 +2003,21 @@
           "polarisaattori",
           "polaroidut aurinkolasit"
         ]
+      },
+      {
+        "id": "fy7-16",
+        "title": "Soveltava tunti: induktio ja valo nykytekniikassa",
+        "goals": [
+          "LOPS FY7: sähkömagneettinen induktio, Lenzin laki ja pyörrevirrat",
+          "LOPS FY7: valon heijastuminen, taittuminen ja kokonaisheijastuminen",
+          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (langaton lataus, induktioliesi, kuituyhteys)"
+        ],
+        "prerequisites": [
+          "fy7-5",
+          "fy7-10"
+        ],
+        "sim": false,
+        "glossary": []
       }
     ]
   },
@@ -1768,6 +2120,23 @@
         ]
       },
       {
+        "id": "fy8-13",
+        "title": "Hiukkasten aaltoluonne ja de Broglien aallonpituus",
+        "goals": [
+          "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+          "Täsmennys: elektronidiffraktio, de Broglien aallonpituus ja aaltomekaanisen mallin perusta"
+        ],
+        "prerequisites": [
+          "fy8-1",
+          "fy8-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "de Broglien aallonpituus",
+          "elektronidiffraktio"
+        ]
+      },
+      {
         "id": "fy8-4",
         "title": "Laser ja kvanttirakenteet",
         "goals": [
@@ -1785,6 +2154,25 @@
           "kvanttirakenne",
           "aurinkokenno",
           "kvanttitietokone"
+        ]
+      },
+      {
+        "id": "fy8-14",
+        "title": "LED, laserdiodi ja Planckin vakio",
+        "goals": [
+          "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+          "Kokeellisesti: mittaukset laser-diodeilla",
+          "Täsmennys: kynnysjännite ja aallonpituus, fotonin energia ja Planckin vakion määrittäminen mittausaineistosta"
+        ],
+        "prerequisites": [
+          "fy8-1",
+          "fy8-4"
+        ],
+        "sim": false,
+        "glossary": [
+          "fotoni",
+          "Planckin vakio",
+          "LED"
         ]
       },
       {
@@ -1885,6 +2273,24 @@
         ]
       },
       {
+        "id": "fy8-15",
+        "title": "Säteilyturvallisuus ja säteilyannos",
+        "goals": [
+          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+          "Temaattinen tarkastelu: säteilyturvallisuus",
+          "Täsmennys: annos ja efektiivinen annos, taustasäteily Suomessa, suojautuminen etäisyydellä, ajalla ja suojalla"
+        ],
+        "prerequisites": [
+          "fy8-9"
+        ],
+        "sim": false,
+        "glossary": [
+          "säteilyannos",
+          "taustasäteily",
+          "sievert"
+        ]
+      },
+      {
         "id": "fy8-10",
         "title": "Säteilyn sovellukset lääketieteessä ja teknologiassa",
         "goals": [
@@ -1940,6 +2346,25 @@
           "pimeä aine",
           "pimeä energia",
           "maailmankaikkeuden laajeneminen"
+        ]
+      },
+      {
+        "id": "fy8-16",
+        "title": "Ilmastonmuutos ja kasvihuoneilmiö säteilyn kannalta",
+        "goals": [
+          "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+          "Temaattinen tarkastelu: ilmastonmuutos ja kasvihuoneilmiö",
+          "Täsmennys: kasvihuonekaasujen absorptiokaistat, Auringon ja Maan säteilyn spektrit, säteilytasapaino (jatkaa fy3-12:ta)"
+        ],
+        "prerequisites": [
+          "fy8-2",
+          "fy3-12"
+        ],
+        "sim": false,
+        "glossary": [
+          "kasvihuoneilmiö",
+          "absorptio",
+          "spektri"
         ]
       }
     ]
