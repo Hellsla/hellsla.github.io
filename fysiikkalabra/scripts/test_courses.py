@@ -7,7 +7,8 @@ with a sim.css, plus a picture in assets/pics/fy4/), because the point is the st
 lint and its course rules, the preview build and its asset paths, the simulation, inquiry, answer-position and
 layout checks, packets with FY4's LOPS context, the site build with stand-in PASS reports (course page, assets),
 the hash and review scope over the simulation folder and the picture, a second lesson reusing the simulation and
-the dependency and impact reports, usage collected from a synthetic transcript, and FY3 unchanged throughout."""
+the dependency and impact reports, usage collected from a synthetic transcript, and FY3 unchanged throughout.
+With --keep <dir> the copy is made there and left in place after the run, for a dry run of an agent on fy4-1."""
 import hashlib, json, os, pathlib, re, shutil, subprocess, sys, tempfile
 HERE = pathlib.Path(__file__).resolve().parent
 SRC = HERE.parent
@@ -24,7 +25,9 @@ def snapshot():
     return hashlib.sha256(b"".join(p.as_posix().encode() + p.read_bytes() for p in files if p.is_file() and "/review/" not in p.as_posix())).hexdigest()
 REAL = snapshot()
 
-T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
+KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
+T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
+if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
 for f in ("curriculum.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content/_gold", "assets"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
 (T / "docs/lops2019").mkdir(parents=True)
@@ -194,7 +197,8 @@ code, out = run("test_inquiry.py", "fy4-2")
 expect("inquiry tests of the reusing lesson pass", code == 0, out[-400:])
 expect("FY3 lesson's hash unchanged after everything", run("reviews.py", "hash", "fy3-2")[1].strip() == fy3_hash)
 
-shutil.rmtree(T, ignore_errors=True)
+if not KEEP: shutil.rmtree(T, ignore_errors=True)
+else: print(f"kept the FY4 fixture project at {T}")
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all course tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

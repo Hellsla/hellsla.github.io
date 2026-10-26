@@ -144,8 +144,13 @@ def collect(lid, session=None, rnd=""):
                           verdict=verdict.group(1) if verdict else ""))
     lines = sf.read_text().splitlines(); start = end = None
     for i, line in enumerate(lines):                    # the orchestrator's share: from "Run lesson <id>" to the next /lesson run
-        if '"type":"user"' not in line.replace(" ", "") or "Run lesson " not in line: continue
-        m = re.search(r"Run lesson ([a-z]+\d+-[0-9][0-9a-z]*)", line)
+        if "Run lesson " not in line: continue
+        try: r = json.loads(line)
+        except json.JSONDecodeError: continue
+        c = (r.get("message") or {}).get("content")
+        text = c if isinstance(c, str) else " ".join(b.get("text", "") for b in c or [] if isinstance(b, dict) and b.get("type") == "text")
+        if r.get("type") != "user" or r.get("isSidechain") or not text: continue   # the command's own message, not a tool result quoting it
+        m = re.search(r"Run lesson ([a-z]+\d+-[0-9][0-9a-z]*)", text)
         if m and m.group(1) == lid and start is None: start = i
         elif m and start is not None and m.group(1) != lid: end = i; break
     s = read_transcript(sf, start, end)
