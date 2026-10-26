@@ -9,24 +9,27 @@
 // temperature at that step, so a hot gas loses energy at every wall hit and a cold one gains it (Newton-like cooling,
 // no noise). That energy change is the heat Q into the gas (negative when leaving).
 // Temperature: T = T0 · E/E0, where E is the total kinetic energy and E0 = N·kT0 the initial one (the seeded speeds are
-// rescaled so that Σvx² = Σvy² = N·kT0 exactly). Scale: the model gas stands for 0,50 g of air, whose internal energy
-// grows 0,50 g · 718 J/(kg·K) = 0,359 J per kelvin, so ΔU = C·(T − T0) and one model energy unit is C·T0/E0 joules.
-// W and Q are summed in the same unit, so ΔU = Q + W holds to rounding error: it is bookkeeping, not a fit.
-// Pressure (shown as p/p0) is the kinetic one, p ∝ E/A, relative to the start. The piston is much slower than the
-// particles (hidas 4 px/s, nopea 15 px/s, mean particle speed 213 px/s), so a push over the same stroke (100 % → 75 %)
-// heats an insulated gas almost equally at both speeds (adiabatic limit, T → 407 K); tests/sims/fy3-5.json checks it.
-// Fixed physics step 1/240 s, seeded PRNG (mulberry32): the result does not depend on the frame rate.
+// rescaled so that Σvx² = Σvy² = N·kT0 exactly). Scale: the model gas has the heat capacity of 0,50 g of air, whose
+// internal energy grows 0,50 g · 718 J/(kg·K) = 0,359 J per kelvin, so ΔU = C·(T − T0) and one model energy unit is
+// C·T0/E0 joules. W and Q are summed in the same unit, so ΔU = Q + W holds to rounding error: bookkeeping, not a fit.
+// Pressure (shown as p/p0) is the kinetic one averaged over both directions, p ∝ E/A, relative to the start; the
+// pressure on the piston itself (x direction only) is higher after an insulated push (Lisätietoja says so).
+// Piston speeds: hidas 4 px/s (≈ 1/50 of the mean particle speed 213 px/s, nearly the adiabatic limit T → 407 K),
+// nopea 60 px/s (≈ 1/3,5): the particles meet the advancing piston at a higher relative speed, the gas pushes back
+// harder, and the same stroke takes more work (47,3 J against 40,8 J); ΔT = W/C in both, since Q = 0.
+// A push from the untouched initial state (V = 100 %, W = Q = 0) first re-seeds the gas, so every such push gives the
+// same numbers whenever it is started. Fixed physics step 1/240 s, seeded PRNG (mulberry32): frame-rate independent.
 // Picture: particle colour = speed; a particle that has just hit the moving piston gets a long bright trail and a green
 // halo (the speed-up); wall hits on a conducting wall flash red; red arrows through the walls = heat Q, green arrow on the
 // rod = work W, and the three bars Q, W, ΔU share one energy axis. Canvas text only labels and values, via lab().
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and as test hooks
 // window.simAdvance(s), window.simRestart() and window.simMove(dir) (dir −1 push, +1 pull).
 new p5((p) => {
-  const DT = 1 / 240, N = 40, SEED = 7, T0 = 293.15, C = 0.359;    // step (s), particles, seed, room T (K), J/K of 0,50 g air
+  const DT = 1 / 240, N = 40, SEED = 306, T0 = 293.15, C = 0.359;    // step (s), particles, seed, room T (K), J/K of 0,50 g air
   const L0 = 300, LY = 220, XEND = 225, R = 3;                       // full gas length, height, pushed-in length (px), radius
   const BOX = { x: 34, y: 80 }, WT = 8, INS = 12, PW = 10;           // gas region corner, steel wall, insulation, piston
   const VRMS = 240, KT = VRMS * VRMS / 2, E0 = N * KT, FJ = C * T0 / E0;   // v_rms at T0 (px/s), kT/m, E0, J per unit
-  const U = { hidas: 4, nopea: 15 };                                 // piston speed (px/s)
+  const U = { hidas: 4, nopea: 60 };                                 // piston speed (px/s)
   const BAR = { ax: 432, x: [462, 516, 570], w: 32, y0: 72, y1: 318 };   // energy axis, bar centres, bar area
   const COL_W = [40, 150, 80], COL_Q = [205, 45, 60], COL_U = [125, 70, 190];
   const SLOW = [60, 130, 255], MID = [245, 215, 80], FAST = [255, 120, 30], VMAX = 480;
@@ -54,6 +57,10 @@ new p5((p) => {
   };
   const flash = (x, y, kind) => { fx[fi0] = x; fy[fi0] = y; fk[fi0] = kind; fn[fi0] = nStep; fi0 = (fi0 + 1) % HN; };
   const bounce = (vx, w) => 2 * w - vx;                              // elastic reflection off a wall moving at w
+  const push = () => {                                               // from the untouched start: the same seeded gas every time
+    if (X === L0 && Wm === 0 && Math.abs(Qm * FJ) < 1e-6) restart();
+    if (X > XEND) move = -1;
+  };
   // one fixed step: piston motion, free flight, piston hits (work), fixed-wall hits (heat if conducting)
   const step = () => {
     const u = U[selPush.value()] || U.hidas, cond = selWall.value() === 'johtava';
@@ -93,7 +100,7 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     const button = (text, fn) => { const b = p.createButton(text).parent(controls); b.elt.addEventListener('click', fn); return b; };
-    button('Työnnä mäntää', () => { if (X > XEND) move = -1; });
+    button('Työnnä mäntää', push);
     button('Vedä ulos', () => { if (X < L0) move = 1; });
     button('Alkuun', () => { restart(); update(); });
     const select = (id, name, opts, val) => {
@@ -115,19 +122,26 @@ new p5((p) => {
               'jos mäntä liikkuu sitä vastaan nopeudella u, hiukkasen nopeus männän suunnassa kasvaa 2u:n verran. Männän työ W on ' +
               'hiukkasten näin saama liike-energia, ja se on sama kuin männän voima kertaa matka. Ulos vedettäessä hiukkaset kimpoavat ' +
               'männästä hitaampina, ja W on negatiivinen.').parent(det);
-    p.createP('Mäntä liikkuu paljon hitaammin kuin hiukkaset: nopeakin työntö on noin 14 kertaa hitaampi kuin hiukkasten ' +
-              'keskimääräinen nopeus. Siksi eristetyn kaasun lämpötila nousee samalla työntömatkalla lähes yhtä paljon hitaalla ja ' +
-              'nopealla työnnöllä. Jos mäntä liikkuisi lähes hiukkasten nopeudella, nopea työntö lämmittäisi enemmän.').parent(det);
+    p.createP('Hidas mäntä liikkuu noin 50 kertaa hitaammin kuin hiukkaset keskimäärin, nopea vain noin 3,5 kertaa hitaammin. ' +
+              'Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla ' +
+              'voimalla, ja samalla työntömatkalla työ on hieman suurempi. Eristetyssä sylinterissä koko työ jää kaasuun ' +
+              '(ΔU = W), joten lämpötila nousee täsmälleen työn verran enemmän. Oikeassa pumpussa mäntä on paljon hitaampi kuin ' +
+              'molekyylit (noin 500 m/s), joten siellä ero syntyy lähinnä siitä, ehtiikö lämpö siirtyä pois.').parent(det);
     p.createP('Eristetty seinä ei muuta hiukkasen nopeutta, joten Q = 0. Johtava seinä on huoneen lämpötilassa 293 K: siihen osuva ' +
               'hiukkanen kimpoaa hitaampana, jos kaasu on huonetta lämpimämpää, ja nopeampana, jos kaasu on kylmempää. Näin siirtynyt ' +
               'energia on lämpömäärä Q.').parent(det);
-    p.createP('Luvut ovat mallin arvoja. Mallin kaasu vastaa 0,50 g:aa ilmaa, jonka sisäenergia kasvaa 0,359 J jokaista kelviniä ' +
-              'kohden. Tasomallissa lämpötila nousee samassa puristuksessa enemmän kuin oikeassa ilmassa. Koska hiukkasia on vähän, ' +
-              'tulos vaihtelee muutaman kelvinin sen mukaan, missä hiukkaset ovat työnnön alkaessa. Paine p/p₀ lasketaan hiukkasten ' +
-              'liike-energiasta ja tilavuudesta. Animaation nopeus muuttaa vain tahtia, ei lukemia.').parent(det);
+    p.createP('Luvut ovat mallin arvoja. Mallin kaasu vastaa lämpökapasiteetiltaan 0,50 g:aa ilmaa: sen sisäenergia kasvaa ' +
+              '0,359 J jokaista kelviniä kohden. Oikea 0,50 g ilmaa lämpenisi samassa eristetyssä puristuksessa vain noin 36 K, ' +
+              'ja työ olisi noin 13 J; johtavassa sylinterissä työ olisi noin 12 J. Malli liioittelee lämpenemistä kahdesta syystä: ' +
+              'hiukkaset liikkuvat tasossa eivätkä avaruudessa, ja vain mäntä muuttaa niiden männän suuntaista liikettä, koska ' +
+              'hiukkaset eivät törmää toisiinsa.').parent(det);
+    p.createP('Malli on täysin toistettava: työntö alkutilasta alkaa aina samasta kaasun tilasta, joten samat valinnat antavat ' +
+              'samat lukemat. Paine p/p₀ on molempien suuntien keskiarvo, laskettu hiukkasten liike-energiasta ja tilavuudesta. ' +
+              'Mäntään kohdistuva paine on hitaan eristetyn työnnön jälkeen suurempi, noin 2,4 · p₀, koska vain männän suuntainen liike ' +
+              'nopeutuu. Animaation nopeus muuttaa vain tahtia, ei lukemia.').parent(det);
     window.simAdvance = (s) => { advance(s); return update(); };
     window.simRestart = () => { restart(); update(); };
-    window.simMove = (dir) => { if (dir < 0 && X > XEND) move = -1; if (dir > 0 && X < L0) move = 1; return update(); };
+    window.simMove = (dir) => { if (dir < 0) push(); if (dir > 0 && X < L0) move = 1; return update(); };
     window.simBounce = bounce;
     restart(); update();
     p.textFont('Arial');
@@ -135,7 +149,7 @@ new p5((p) => {
       params: { push: { input: selPush.elt, unit: '' }, wall: { input: selWall.elt, unit: '' } },
       reset: () => { selPush.value('hidas'); selWall.value('eristetty'); restart(); update(); },
       get: () => { const S = window.simState, r = (x, d) => Math.round(x * 10 ** d) / 10 ** d + 0;   // table values as shown
-        return Object.assign({}, S, { W: r(S.W, 1), Q: r(S.Q, 1), dU: r(S.dU, 1), T: r(S.T, 0), p: r(S.p, 2) }); },
+        return Object.assign({}, S, { W: r(S.W, 1), Q: r(S.Q, 1), dU: r(S.dU, 1), T: r(S.T, 0), dT: r(S.dT, 0), p: r(S.p, 2) }); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
@@ -144,7 +158,7 @@ new p5((p) => {
     advance(Math.min(p.deltaTime, 100) / 1000 * speed);
     const S = update(), { W, Q, dU, T } = S;
     readout.html(`Männän työ kaasuun W = <strong>${fs(W, 1)} J</strong>, lämpö seinien läpi Q = <strong>${fs(Q, 1)} J</strong>` +
-      `<br>Sisäenergian muutos ΔU = <strong>${fs(dU, 1)} J</strong> (Q + W = ${fs(Q + W, 1)} J)` +
+      `<br>Sisäenergian muutos ΔU = <strong>${fs(dU, 1)} J</strong>` +
       `<br>Kaasu: T = <strong>${fi(T, 0)} K</strong> (ΔT = ${fs(T - T0, 0)} K), V = ${fi(S.V, 0)} %, paine p = ${fi(S.p, 2)} · p₀`);
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
