@@ -97,7 +97,8 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   inquiry.json has a lead of at most 30 words (`text`) and `howto`, `model`, `calc` (markdown, LaTeX allowed), shown
   as Käyttöohje, Mallin oletukset and Laskennan selitys under the readout; sim.js writes no explanation paragraph and
   no Lisätietoja box. The readout lists quantities and values (`T = 24,6 °C`, `Q = 5,80 kJ`); the formulas behind them
-  go in Laskennan selitys. Old sims' longer `p.note` paragraphs are folded by `sim-embed.js` until the lesson is edited.
+  go in Laskennan selitys. Old sims' longer `p.note` paragraphs are folded by `sim-embed.js` until the simulation itself is edited (the lint
+  asks for the new form then).
 - Create `div.controls` before `div.readout`, main button first, so canvas and button fit one phone screen (an
   off-screen canvas is paused, so a button below the fold starts an animation nobody sees). Clamp the animation
   step (`Math.min(p.deltaTime, 100)`) so a resume cannot skip ahead. The readout is DOM text, tap targets 40 px.

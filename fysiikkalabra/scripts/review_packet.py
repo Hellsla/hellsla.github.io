@@ -1,6 +1,7 @@
 """Role-specific packet, so an agent starts from what its role needs and nothing else.
 
   python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix]
+  python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy
 
 Writes review/packet-<role>.md and prints its path, mode and size. The orchestrator never reads it: the agent's prompt
 is one line naming the file ("Read content/FY4/fy4-1/review/packet-science.md and follow it. Lesson: fy4-1. Mode: full.").
@@ -14,7 +15,12 @@ screenshot list), *delta* (the previous report and the diff since the version th
 change is outside the reviewer's judgement; `reviews.py carry` records it), as `reviews.py scope` decides. The
 developer packet carries the writing rules and, to draft, the reference lesson and the course's existing simulations
 (reuse before creating); to fix, the two reports and the lesson's file list: the developer opens the files a finding
-names, which it must read before editing anyway."""
+names, which it must read before editing anyway.
+
+A *batch* packet (review-batch/packet-<role>.md, git-ignored) gathers the delta reviews of many lessons for one reviewer
+run, when each change is small and of the same kind (a law named, a sim text moved into its boxes, figures recoloured):
+one agent start and one set of rules instead of one per lesson. Each lesson keeps its own report and hash; a lesson
+whose change needs a full review, or none, is left out and named."""
 import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses
@@ -176,7 +182,38 @@ def packet(folder, role, fix=False):
     return mode
 
 
+def batch(ids, role):
+    """One delta packet for many lessons (module docstring)."""
+    out = (f"# Batch packet: delta {role} review of {len(ids)} lessons\nRole: **{role}**. Mode: **delta (batch)**. House rules: `CLAUDE.md` "
+           f"(in your context; if it is not, read it), in particular \"Lesson page\" (2026-10-26).\n")
+    if role == "pedagogy": out += "\n" + "\n".join(l for l in sections("NOTES.md", "3. Lesson form (human decisions 2026-10-25)").splitlines() if "Figures." in l or "Textbook illustrations" in l or l.startswith("  ")) + "\n"
+    out += ("\n## What you judge\nEach lesson below passed your review earlier; only its diff changed. Judge the diff in its context (the files are on disk "
+            "if you need more): " + ("is the formula section named after the right law, and does nothing in the diff change the physics?"
+                                     if role == "science" else
+                                     "is the law's name clear to a student; does the lead of the simulation say what to do and do its boxes hold the rest under fitting names; "
+                                     "do the recoloured figures read well (captures listed per lesson), with colour that carries the physics, never alone, and labels legible?")
+            + " If one lesson's change cannot be judged this way, write `ESCALATE: full review needed` as line 3 of that lesson's report (verdict FAIL) and go on.\n"
+            "\n## Reports: one per lesson\nFor every lesson below write `<its folder>/review/" + role + ".md`, under 250 words: line 1 `VERDICT: PASS` or "
+            "`VERDICT: FAIL`, line 2 `CONTENT-HASH: <python3 scripts/reviews.py hash <id>>` (run it at the start and the end for every lesson: if it changed, "
+            "that lesson was edited, redo it), then `## Blocking` (FAIL if and only if non-empty), `## Polish` (at most three), `## Checked` (one line: \"batch delta review: ...\"). "
+            "Never edit a lesson file.\n")
+    skipped = []
+    for lid in ids:
+        folder = find_lesson(lid); sc = scope(folder)[role]
+        if sc["mode"] != "delta": skipped.append(f"{lid} ({sc['mode']}: {sc['why']})"); continue
+        meta = json.loads((folder / "meta.json").read_text())
+        out += f"\n## {lid} — {meta['title']}\nFolder `{folder.relative_to(ROOT)}`. Changed: {sc['why']} (categories: {', '.join(sc['categories'])}).\n"
+        if role == "pedagogy" and (folder / "review/shots.md").exists():
+            rows = [l for l in (folder / "review/shots.md").read_text().splitlines() if re.search(r"-(fig-\d+-390|fig-row-1280|sim-390)", l)]
+            out += "Captures (paths relative to the lesson folder):\n" + "\n".join(rows) + "\n"
+        out += f"```diff\n{sc['diff'].strip()}\n```\n"
+    if skipped: out += "\n## Not in this batch\n" + "\n".join(f"- {x}" for x in skipped) + "\n"
+    f = ROOT / "review-batch" / f"packet-{role}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)
+    print(f"{f.relative_to(ROOT)}: {len(ids) - len(skipped)} lessons, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens" + (f"; not in it: {'; '.join(skipped)}" if skipped else ""))
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
+    if len(a) == 4 and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy"): batch(a[1].split(","), a[3]); sys.exit(0)
     if len(a) < 3 or a[1] != "--role" or a[2] not in ("science", "pedagogy", "developer"): sys.exit(__doc__)
     packet(find_lesson(a[0]), a[2], fix="--fix" in a)

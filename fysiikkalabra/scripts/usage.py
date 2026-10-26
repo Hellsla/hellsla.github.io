@@ -1,6 +1,6 @@
 """Token and cost accounting per lesson in review/usage.tsv, measured from Claude Code's own transcripts.
 
-  python scripts/usage.py collect <id> [--session <id | path.jsonl>] [--round n] [--since 2026-10-26T07:00:00Z]
+  python scripts/usage.py collect <id>[,<id>...] [--session <id | path.jsonl>] [--round n] [--since 2026-10-26T07:00:00Z]
       reads the session transcript (~/.claude/projects/<project>/<session>.jsonl; the current session by default,
       $CLAUDE_CODE_SESSION_ID) and every subagent transcript beside it (<session>/subagents/agent-*.jsonl) and writes
       one row per agent run of this lesson and one for the main session's part (the /lesson orchestrator, from the
@@ -124,7 +124,16 @@ def row_of(lid, agent, stage, s, ref, **extra):
             "calls": s["calls"], "cost_usd": "" if s["cost"] is None else f"{s['cost']:.4f}", "source": "transcript", "ref": ref, **extra}
 
 
-def collect(lid, session=None, rnd="", since=None):
+def scaled(s, k):
+    """A transcript summary times k: a batch run's share of one lesson."""
+    s = dict(s); s["tot"] = collections.Counter({x: round(v * k) for x, v in s["tot"].items()}); s["context"] = round(s["context"] * k)
+    if s["cost"] is not None: s["cost"] *= k
+    return s
+
+
+def collect(lid, session=None, rnd="", since=None, batch=()):
+    """batch: the lessons of one batch run (a comma list on the command line). A batch agent ("Lessons: a, b, c" in its
+    prompt) and the orchestrator's part are shared equally among its lessons, so a course total counts each once."""
     sf = session_file(session); sid = sf.stem
     f = courses.find_lesson(lid) / "review" / "usage.tsv"
     rows = read_rows(f); by_ref = {r.get("ref"): i for i, r in enumerate(rows) if r.get("ref")}
@@ -132,8 +141,9 @@ def collect(lid, session=None, rnd="", since=None):
     for t in sorted((sf.parent / sid / "subagents").glob("agent-*.jsonl")):
         if since and (json.loads(t.read_text().splitlines()[0]).get("timestamp") or "") < since: continue   # an agent from before this run
         s = read_transcript(t)
-        lessons = set(LESSON.findall(s["prompt"]))
-        if lid not in lessons or (len(lessons) > 1 and f"Lesson: {lid}" not in s["prompt"]): continue
+        lessons = set(LESSON.findall(s["prompt"])); share = None
+        if "Lessons:" in s["prompt"] and lid in lessons: share = len(lessons); s = scaled(s, 1 / share)
+        elif lid not in lessons or (len(lessons) > 1 and f"Lesson: {lid}" not in s["prompt"]): continue
         meta_f = t.with_suffix(".meta.json"); meta = json.loads(meta_f.read_text()) if meta_f.exists() else {}
         role = PACKET.search(s["prompt"])
         agent = meta.get("agentType", "agent")
@@ -142,7 +152,7 @@ def collect(lid, session=None, rnd="", since=None):
         verdict = re.search(r"VERDICT:\s*(PASS|FAIL|DONE|BLOCKED)", s["last_text"])
         stage = "review" if "reviewer" in agent else "develop" if agent == "developer" else "other"
         new.append(row_of(lid, agent, stage, s, hashlib.sha1(f"{sid}:{t.stem}".encode()).hexdigest()[:12],
-                          effort=meta.get("effort", ""), mode=mode.group(1) if mode else "", round=r_.group(1) if r_ else rnd,
+                          effort=meta.get("effort", ""), mode=(f"batch/{share}" if share else mode.group(1) if mode else ""), round=r_.group(1) if r_ else rnd,
                           verdict=verdict.group(1) if verdict else ""))
     lines = sf.read_text().splitlines(); start = end = None
     for i, line in enumerate(lines):                    # the orchestrator's share: from "Run lesson <id>" to the next /lesson run
@@ -160,6 +170,7 @@ def collect(lid, session=None, rnd="", since=None):
         mode = "since"
     else: mode = "session" if start is None else "lesson-run"
     s = read_transcript(sf, start, end)
+    if len(batch) > 1: s = scaled(s, 1 / len(batch)); mode = f"{mode}/{len(batch)}"
     new.append(row_of(lid, "orchestrator", "orchestrate", s, hashlib.sha1((f"{sid}:main:{lid}" + (f":{since}" if since else "")).encode()).hexdigest()[:12], mode=mode, round=rnd))
     for r in new:
         if r["ref"] in by_ref: rows[by_ref[r["ref"]]] = r
@@ -223,6 +234,8 @@ if __name__ == "__main__":
     for k in ("round", "context", "seconds", "calls"): l.add_argument(f"--{k}", type=int, required=True)
     r = sub.add_parser("report"); r.add_argument("target"); r.add_argument("--by", choices=["agent"])
     a = p.parse_args()
-    if a.cmd == "collect": collect(a.id, a.session, a.round, a.since)
+    if a.cmd == "collect":
+        ids = a.id.split(",")
+        for i in ids: collect(i, a.session, a.round, a.since, batch=ids)
     elif a.cmd == "log": log(a)
     else: report(a.target, a.by)
