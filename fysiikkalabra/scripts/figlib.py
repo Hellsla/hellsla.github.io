@@ -26,6 +26,7 @@ SAND_LIGHT, SAND, SAND_DARK, GRAIN = "#f1dfb5", "#d9b26a", "#e9c98a", "#a97a35"
 HEAT_LIGHT, HEAT, HOT, HOT_LIGHT, COLD, COLD_LIGHT = "#ffc078", "#e8590c", "#c92a2a", "#f2a69c", "#1971c2", "#d0e6fb"
 ALUMINIUM, METAL_EDGE, IRON, COPPER, ICE, ICE_EDGE = "#c4ccd4", "#8a96a3", "#6c757d", "#b8622d", "#a5d8ff", "#4f8fbf"
 GOOD, GOOD_LIGHT = "#2b8a3e", "#b2f2bb"
+PAPER = "#f6f1e6"   # the warm paper behind a chapter's opening illustration (Fig(..., hero=True))
 
 
 def n(v):
@@ -49,8 +50,9 @@ def visible_len(tex):
 
 
 class Fig:
-    def __init__(self, fid, height, label, width=600, size=24):
-        self.fid, self.w, self.h, self.label, self.size = fid, width, height, label, size
+    def __init__(self, fid, height, label, width=600, size=24, hero=False):
+        """hero: the chapter's opening illustration, 1200 wide, full column width under the Miksi question (site.css .fig-hero)."""
+        self.fid, self.w, self.h, self.label, self.size, self.hero = fid, width, height, label, size, hero
         self.defs, self.body = [], []
 
     # drawing
@@ -106,7 +108,7 @@ class Fig:
         return self.add(f'<foreignObject x="{n(x0)}" y="{n(y - h / 2)}" width="{n(w)}" height="{h}" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="{style}">{f'<span style="background:{WHITE};padding:0 5px;border-radius:3px">${tex}$</span>' if bg else f'${tex}$'}</div></foreignObject>')
 
     def svg(self, name=None):
-        attrs = f' data-fig="{name}"' if name else ""
+        attrs = (f' data-fig="{name}"' if name else "") + (' class="fig-hero"' if self.hero else "")
         defs = f"\n  <defs>{''.join(self.defs)}</defs>" if self.defs else ""
         body = "\n  ".join(self.body)
         return (f'<svg viewBox="0 0 {self.w} {self.h}" role="img" aria-label="{html.escape(self.label, quote=True)}"{attrs} '
