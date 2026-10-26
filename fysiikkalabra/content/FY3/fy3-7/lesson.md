@@ -72,7 +72,7 @@
   <path d="M700,214 c-18,-30 18,-50 0,-80 s18,-50 0,6" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
   <g transform="rotate(18 760 150)">
   <rect x="751" y="40" width="18" height="230" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="756" y="120" width="8" height="150" fill="#c92a2a"/>
+  <rect x="756" y="176" width="8" height="94" fill="#c92a2a"/>
   <line x1="769" y1="70" x2="777" y2="70" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <line x1="769" y1="92" x2="777" y2="92" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <line x1="769" y1="114" x2="777" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>

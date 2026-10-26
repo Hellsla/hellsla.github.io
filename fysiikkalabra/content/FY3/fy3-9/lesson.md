@@ -2,6 +2,33 @@
 
 > **Miksi** suljettu sipsipussi pullistuu lentokoneessa kireäksi, vaikka siihen ei ole lisätty mitään?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: lentokoneen istuimen tarjottimella on pullistunut, kireä sipsipussi ja vesimuki. Ikkunasta näkyvät pilvet kaukana alapuolella." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy39h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1971c2"/><stop offset="1" stop-color="#a5d8ff"/></linearGradient><linearGradient id="fy39h-seat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#e3dccb"/>
+  <path d="M0,0 H1200 V60 Q600,20 0,60 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <rect x="780" y="70" width="230" height="300" rx="100" fill="#ffffff" stroke="#c9c2b2" stroke-width="6"/>
+  <clipPath id="fy39h-win"><rect x="800" y="90" width="190" height="260" rx="90"/></clipPath>
+  <g clip-path="url(#fy39h-win)">
+  <rect x="800" y="90" width="190" height="260" fill="url(#fy39h-sky)"/>
+  <path d="M758,316 Q756.5,289 788.5,292 Q801,263 833,273 Q862,257 878,287 Q907,290.5 903.5,316 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M869,338 Q867,307.5 903,311 Q917.5,278.5 953.5,289.5 Q986,271.5 1004,305.5 Q1036.5,309 1033,338 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M790,360 Q788,326 828,330 Q844,294 884,306 Q920,286 940,324 Q976,328 972,360 Z" fill="#ffffff" stroke-linejoin="round"/>
+  </g>
+  <rect x="800" y="90" width="190" height="260" fill="none" rx="90" fill="none" stroke="#1f2933" stroke-width="3"/>
+  <rect x="120" y="40" width="520" height="560" rx="40" fill="url(#fy39h-seat)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="170" y="80" width="420" height="60" rx="14" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <path d="M60,430 H760 L720,480 H100 Z" fill="#c9c2b2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="100" y="480" width="620" height="16" fill="#6b7480"/>
+  <path d="M260,250 Q206,335 262,420 Q380,462 500,420 Q556,335 500,250 Q380,208 260,250 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M248,246 H512 L506,268 H254 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M252,412 H508 L514,434 H246 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M300,300 Q380,284 460,300" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <circle cx="380" cy="352" r="44" fill="#e9c98a" stroke="#d9b26a" stroke-width="3"/>
+  <path d="M560,330 L572,428 H640 L652,330 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M563,354 L572,426 H640 L649,354 Z" fill="#a9d1f0" stroke-linejoin="round"/>
+  <path d="M560,330 L572,428 H640 L652,330" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Suljetun kaasumäärän tilaa kuvaavat paine $p$, tilavuus $V$ ja lämpötila $T$. Kun yksi niistä muuttuu, muuttuu yleensä ainakin yksi muista. Tällaista muutosta sanotaan tilanmuutokseksi. Tilanmuutoksia on helpointa tutkia niin, että yksi suureista pidetään vakiona. Isotermisessä tilanmuutoksessa lämpötila on vakio, isobaarisessa paine ja isokoorisessa tilavuus.
 

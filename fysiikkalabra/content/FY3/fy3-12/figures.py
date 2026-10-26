@@ -2,6 +2,7 @@
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT,
                     ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, SAND, SAND_LIGHT, GRAIN, GLASS)
 
+import herolib as H
 
 def head(f, x, y, d, color, size=14):
     """A filled arrowhead with its tip at (x, y); d is the direction: up, down, left or right."""
@@ -105,4 +106,21 @@ def wall_temperature():
     return f.svg()
 
 
-FIGURES = {"heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature}
+def hero():
+    """The chapter's opening illustration: the Earth seen from space, the Sun at the edge of the picture."""
+    f = H.hero("fy312-hero", "Kuvitus: Maa avaruudesta nähtynä, ympärillään ohut ilmakehä. Kuvan vasemmassa reunassa paistaa "
+               "Aurinko, ja tähdet tuikkivat mustalla taivaalla.")
+    H.space(f, seed=5, count=90)
+    f.defs_add(f'<radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="{H.HEAT_LIGHT}"/>'
+               f'<stop offset="0.8" stop-color="{H.HEAT}"/><stop offset="1" stop-color="{H.HEAT}" stop-opacity="0"/></radialGradient>')
+    f.circle(-60, 300, 260, "url(#fy312h-sun)")
+    for y in (180, 300, 420):                                         # sunlight in ...
+        f.block_arrow(290, y, 460, y, H.HEAT_LIGHT, 12, 30, 24)
+    for deg in (-34, 0, 34):                                          # ... and as much radiated out: equal arrows
+        c, s_ = H.math.cos(H.math.radians(deg)), H.math.sin(H.math.radians(deg))
+        f.block_arrow(800 + 222 * c, 300 + 222 * s_, 800 + 392 * c * (0.96 if deg else 1), 300 + 392 * s_, H.HEAT_LIGHT, 12, 30, 24)
+    H.earth(f, "fy312h", 800, 300, 210)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature}

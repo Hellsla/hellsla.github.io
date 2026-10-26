@@ -2,6 +2,7 @@
 import math
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, \
     ALUMINIUM, IRON, WATER, fi
+import herolib as H
 
 
 def star(f, cx, cy, r=8):
@@ -151,5 +152,37 @@ def iso_processes():
     return f.svg()
 
 
-FIGURES = {"micro-boyle": micro_boyle, "boyle-graphs": boyle_graphs, "absolute-zero": absolute_zero,
+def hero():
+    """The chapter's opening illustration: a sealed crisp bag puffed up on a tray table high above the clouds."""
+    f = H.hero("fy39-hero", "Kuvitus: lentokoneen istuimen tarjottimella on pullistunut, kireä sipsipussi ja vesimuki. "
+               "Ikkunasta näkyvät pilvet kaukana alapuolella.")
+    f.rect(0, 0, 1200, 600, H.RULE_LIGHT)
+    f.path("M0,0 H1200 V60 Q600,20 0,60 Z", H.WHITE)
+    # window
+    f.rect(780, 70, 230, 300, H.WHITE, H.RULE, 6, 100)
+    f.add('<clipPath id="fy39h-win"><rect x="800" y="90" width="190" height="260" rx="90"/></clipPath>')
+    f.add('<g clip-path="url(#fy39h-win)">')
+    f.rect(800, 90, 190, 260, H.grad(f, "fy39h-sky", H.COLD, H.ICE))
+    for cx, cy, sc in ((830, 300, 0.8), (950, 320, 0.9), (880, 340, 1.0)): H.cloud(f, cx, cy, sc)
+    f.add("</g>")
+    f.rect(800, 90, 190, 260, extra=f'rx="90" fill="none" stroke="{H.INK}" stroke-width="3"')
+    # seat back and tray table
+    f.rect(120, 40, 520, 560, H.grad(f, "fy39h-seat", H.METAL_EDGE, H.IRON), H.INK, 3, 40)
+    f.rect(170, 80, 420, 60, H.ALUMINIUM, H.INK, 2, 14)
+    f.path("M60,430 H760 L720,480 H100 Z", H.RULE, H.INK, 3)
+    f.rect(100, 480, 620, 16, H.MUTED)
+    # the puffed crisp bag
+    f.path("M260,250 Q206,335 262,420 Q380,462 500,420 Q556,335 500,250 Q380,208 260,250 Z", H.COLD, H.INK, 3)
+    f.path("M248,246 H512 L506,268 H254 Z", H.ALUMINIUM, H.INK, 2.5)
+    f.path("M252,412 H508 L514,434 H246 Z", H.ALUMINIUM, H.INK, 2.5)
+    f.path("M300,300 Q380,284 460,300", stroke=H.WHITE, w=4, extra='stroke-opacity="0.7" stroke-linecap="round"')
+    f.circle(380, 352, 44, H.SAND_DARK, H.SAND, 3)
+    # cup of water
+    f.path("M560,330 L572,428 H640 L652,330 Z", H.GLASS, H.INK, 3)
+    f.path("M563,354 L572,426 H640 L649,354 Z", H.WATER_LIGHT)
+    f.path("M560,330 L572,428 H640 L652,330", stroke=H.INK, w=3)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "micro-boyle": micro_boyle, "boyle-graphs": boyle_graphs, "absolute-zero": absolute_zero,
            "iso-processes": iso_processes}

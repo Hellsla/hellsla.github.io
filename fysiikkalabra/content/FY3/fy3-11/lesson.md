@@ -2,6 +2,36 @@
 
 > **Miksi** lämpövoimalaitos saa polttoaineen energiasta sähköksi vain alle puolet, ja minne loput energiasta menee?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: lauhdevoimalaitos järven rannalla. Voimalinjat vievät sähköä pois, jäähdytystornista nousee suuri höyrypilvi, ja lauhdevesi purkautuu järveen lämpimänä, mikä näkyy oranssina vyöhykkeenä vedessä. Suurin osa polttoaineen energiasta lähtee lämpönä ilmaan ja veteen." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy311h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy311h-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy311h-tower" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy311h-chimney" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="420" fill="url(#fy311h-sky)"/>
+  <path d="M0,380 L15,338 L30,380 L40.5,353.5 L51,380 L62.5,350 L73.5,380 L86,348 L98,380 L107,357.5 L116,380 L129,346 L141.5,380 L152,352.5 L163,380 L175,347.5 L187.5,380 L198.5,350.5 L210,380 L221,352 L231.5,380 L245.5,341.5 L259.5,380 L270,353 L280.5,380 L295,340.5 L309,380 L323.5,340 L338,380 L353.5,336.5 L369,380 L380,351 L391,380 L402,352 L412.5,380 L422,357 L431.5,380 L441.5,355 L451.5,380 L465,342.5 L479,380 L488,358 L497,380 L505.5,360 L514,380 L527,344 L540.5,380 L554,342.5 L568,380 L579.5,349 L591.5,380 L604.5,345.5 L617,380 L628.5,350 L640,380 L653,346 L665.5,380 L674.5,357.5 L684,380 L699,337.5 L714,380 L726,349 L737.5,380 L749,351.5 L760,380 L773.5,342 L787.5,380 L798.5,351 L809.5,380 L825,337 L840.5,380 L853,345 L866,380 L879.5,342.5 L893.5,380 L904,351.5 L915,380 L927,349 L938.5,380 L953,340 L967.5,380 L977,356.5 L986.5,380 L1000.5,342 L1014,380 L1028.5,341 L1042.5,380 L1054,349 L1065.5,380 L1080.5,338.5 L1095.5,380 L1110,339 L1125,380 L1139,340.5 L1153.5,380 L1168.5,337.5 L1184,380 L1196,348 L1207.5,380 V420 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
+  <rect x="0" y="420" width="1200" height="180" fill="url(#fy311h-lake)"/>
+  <path d="M0,400 H900 Q860,420 820,440 H0 Z" fill="#c9c2b2" stroke-linejoin="round"/>
+  <path d="M120,420 Q160,300 140,190 H300 Q280,300 320,420 Z" fill="url(#fy311h-tower)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M130,190 Q128,156 168,160 Q184,124 224,136 Q260,116 280,154 Q316,158 312,190 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
+  <path d="M183,136 Q180.5,92 232.5,97 Q253,50 305,66 Q352,40 378,89 Q425,94.5 419.5,136 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
+  <path d="M304,98 Q301,50.5 357,56 Q379.5,5.5 435.5,22.5 Q486,-5.5 514,47.5 Q564.5,53 559,98 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
+  <path d="M481,82 Q479,44.5 523,49 Q540.5,9.5 584.5,22.5 Q624,0.5 646,42.5 Q685.5,47 681,82 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
+  <rect x="360" y="250" width="140" height="170" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="500" y="310" width="220" height="110" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="520" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="564" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="608" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="652" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="696" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="400" y="120" width="36" height="130" fill="url(#fy311h-chimney)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="380" y="290" width="30" height="40" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <rect x="440" y="290" width="30" height="40" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <rect x="690" y="420" width="30" height="24" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <ellipse cx="760" cy="480" rx="150" ry="40" fill="#ffc078" fill-opacity="0.55"/>
+  <ellipse cx="740" cy="468" rx="80" ry="22" fill="#e8590c" fill-opacity="0.45"/>
+  <path d="M850,420 L880,230 L910,420 M840,270 H920 M850,300 H910" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M1030,420 L1060,230 L1090,420 M1020,270 H1100 M1030,300 H1090" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M720,320 Q800,290 840,270 M840,270 Q960,300 1020,270 M1100,270 Q1150,290 1200,285" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M720,330 Q800,320 850,300 M850,300 Q960,330 1030,300 M1090,300 Q1150,320 1200,315" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mäntää voimalla $F = pA$, missä $A$ on männän pinta-ala. Jos mäntä liikkuu matkan $s$ ja paine pysyy samana, kaasun tekemä työ on voima kertaa matka, $pAs$. Tulo $As$ on kaasun tilavuuden muutos $\Delta V$, joten kaasun tekemä työ on $W_\text{k} = p\,\Delta V$. ($V$, $p$)-kuvaajassa se on kuvaajan ja $V$-akselin väliin jäävä pinta-ala, samoin kuin työ ($s$, $F$)-kuvaajassa. Kun kaasua puristetaan, ympäristö tekee työtä kaasuun, ja $W_\text{k}$ on negatiivinen. Työtä tekevä kaasu luovuttaa energiaa, joten tällä tunnilla ensimmäinen pääsääntö kirjoitetaan muodossa $\Delta U = Q - W_\text{k}$.
 

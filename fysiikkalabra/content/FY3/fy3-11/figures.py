@@ -2,6 +2,7 @@
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT,
                     ALUMINIUM, IRON)
 
+import herolib as H
 
 def heat_engine():
     f = Fig("fy311-engine", 340, "Lämpövoimakoneen energiavirrat nuolina, joiden leveys kuvaa energiavirtaa eli tehoa: "
@@ -98,4 +99,35 @@ def piston_work():
     return f.svg()
 
 
-FIGURES = {"piston-work": piston_work, "heat-engine": heat_engine, "heat-pump": heat_pump, "pv-work": pv_work}
+def hero():
+    """The chapter's opening illustration: a condensing power plant by a lake, electricity out on the lines, waste heat into the air and the lake."""
+    f = H.hero("fy311-hero", "Kuvitus: lauhdevoimalaitos järven rannalla. Voimalinjat vievät sähköä pois, jäähdytystornista nousee "
+               "suuri höyrypilvi, ja lauhdevesi purkautuu järveen lämpimänä, mikä näkyy oranssina vyöhykkeenä vedessä. Suurin osa "
+               "polttoaineen energiasta lähtee lämpönä ilmaan ja veteen.")
+    H.sky(f, "fy311h", 420)
+    H.forest(f, 380, 44, 24, H.ALUMINIUM, seed=9, depth=40)
+    f.rect(0, 420, 1200, 180, H.grad(f, "fy311h-lake", H.WATER_LIGHT, H.WATER))
+    f.path("M0,400 H900 Q860,420 820,440 H0 Z", H.RULE)
+    # cooling tower with its plume
+    f.path("M120,420 Q160,300 140,190 H300 Q280,300 320,420 Z", H.grad(f, "fy311h-tower", H.WHITE, H.ALUMINIUM, horizontal=True), H.INK, 3)
+    for x, y, sc in ((220, 170, 1.0), (300, 110, 1.3), (430, 70, 1.4), (580, 60, 1.1)):
+        H.cloud(f, x, y, sc, H.WHITE, extra=f'stroke="{H.RULE}" stroke-width="2.5"')
+    # boiler house, turbine hall, chimney
+    f.rect(360, 250, 140, 170, H.RULE_LIGHT, H.INK, 3)
+    f.rect(500, 310, 220, 110, H.ALUMINIUM, H.INK, 3)
+    for x in range(520, 700, 44): f.rect(x, 340, 26, 40, H.GLASS, H.INK, 2)
+    f.rect(400, 120, 36, 130, H.grad(f, "fy311h-chimney", H.WHITE, H.ALUMINIUM, horizontal=True), H.INK, 3)
+    f.rect(380, 290, 30, 40, H.HEAT_LIGHT, H.INK, 2); f.rect(440, 290, 30, 40, H.HEAT_LIGHT, H.INK, 2)
+    # warm cooling water into the lake
+    f.rect(690, 420, 30, 24, H.IRON, H.INK, 2)
+    f.add(f'<ellipse cx="760" cy="480" rx="150" ry="40" fill="{H.HEAT_LIGHT}" fill-opacity="0.55"/>')
+    f.add(f'<ellipse cx="740" cy="468" rx="80" ry="22" fill="{H.HEAT}" fill-opacity="0.45"/>')
+    # electricity out on the power lines
+    for x in (880, 1060):
+        f.path(f"M{x - 30},420 L{x},230 L{x + 30},420 M{x - 40},270 H{x + 40} M{x - 30},300 H{x + 30}", stroke=H.INK, w=4)
+    f.path("M720,320 Q800,290 840,270 M840,270 Q960,300 1020,270 M1100,270 Q1150,290 1200,285", stroke=H.INK, w=2)
+    f.path("M720,330 Q800,320 850,300 M850,300 Q960,330 1030,300 M1090,300 Q1150,320 1200,315", stroke=H.INK, w=2)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "piston-work": piston_work, "heat-engine": heat_engine, "heat-pump": heat_pump, "pv-work": pv_work}

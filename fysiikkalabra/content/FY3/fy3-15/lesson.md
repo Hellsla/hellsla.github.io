@@ -2,6 +2,73 @@
 
 > **Miksi** voimalaitos tarvitsee polttoainetta noin kaksi ja puoli kertaa enemmän kuin se tuottaa sähköä, ja miten loput energiasta saadaan käyttöön?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: talvinen yhteistuotantovoimalaitos. Piipusta ja voimalasta nousee höyryä, voimalinjat vievät sähköä pois, ja kaukolämpöputket kulkevat kaupunkiin: punainen meno kuumaa vettä, sininen paluu jäähtynyttä vettä. Kerrostalojen ikkunat loistavat lämpiminä." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy315h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy315h-chimney" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy315h-stack" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy315h-sky)"/>
+  <path d="M0,380 L15,336 L30.5,380 L39.5,357.5 L48.5,380 L59.5,351.5 L70,380 L85,337.5 L100,380 L115.5,334.5 L131,380 L148,330.5 L164.5,380 L178,343 L191,380 L205,339.5 L219.5,380 L236,330.5 L253,380 L266.5,341 L280.5,380 L293.5,343.5 L306.5,380 L318,347.5 L330,380 L345.5,335 L361,380 L375,340.5 L389,380 L404.5,335.5 L419.5,380 L435.5,333.5 L451.5,380 L464.5,344.5 L477,380 L492.5,335.5 L507.5,380 L523,336.5 L538,380 L551.5,342 L565,380 L575.5,352 L586.5,380 L600.5,340 L614.5,380 L623.5,357.5 L632.5,380 L642,356.5 L651.5,380 L662.5,351.5 L673,380 L690,331 L706.5,380 L717,351.5 L728,380 L741.5,342 L755,380 L766.5,349.5 L777.5,380 L792,339.5 L806,380 L818.5,344.5 L831.5,380 L847.5,333.5 L863.5,380 L880,331 L896.5,380 L911.5,337.5 L926,380 L941,338 L955.5,380 L966.5,350.5 L977.5,380 L990,345.5 L1002.5,380 L1018.5,333 L1034.5,380 L1047.5,343 L1061,380 L1072.5,349.5 L1084,380 L1096.5,344.5 L1109.5,380 L1126,331.5 L1142.5,380 L1158.5,333 L1174.5,380 L1191.5,331 L1208,380 V440 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
+  <path d="M0,420 Q600,380 1200,420 V600 H0 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <rect x="260" y="70" width="50" height="330" fill="url(#fy315h-chimney)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="260" y="100" width="50" height="14" fill="#f2a69c"/>
+  <rect x="260" y="130" width="50" height="14" fill="#f2a69c"/>
+  <path d="M249,68 Q247,37.5 283,41 Q297.5,8.5 333.5,19.5 Q366,1.5 384,35.5 Q416.5,39 413,68 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
+  <path d="M397,44 Q395.5,20 423.5,23 Q435,-2 463,6 Q488,-8 502,19 Q527,21.5 524.5,44 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
+  <rect x="120" y="260" width="200" height="160" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="320" y="300" width="220" height="120" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <path d="M120,260 L220,220 L320,260 Z" fill="#c9c2b2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="140" y="290" width="24" height="50" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <rect x="180" y="290" width="24" height="50" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <rect x="220" y="290" width="24" height="50" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <rect x="260" y="290" width="24" height="50" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <rect x="470" y="210" width="40" height="90" fill="url(#fy315h-stack)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M60,420 L80,190 L100,420 M50,220 H110" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M0,240 Q40,250 70,220 M110,220 Q130,250 150,262" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M540,390 C700,390 760,470 1200,470" fill="none" stroke="#c92a2a" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M540,410 C700,410 760,500 1200,500" fill="none" stroke="#1971c2" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="860" y="240" width="120" height="200" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="876" y="260" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="876" y="304" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="876" y="348" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="876" y="392" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="912" y="260" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="912" y="304" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="912" y="348" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="912" y="392" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="948" y="260" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="948" y="304" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="948" y="348" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="948" y="392" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1000" y="180" width="160" height="260" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="1016" y="200" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1016" y="244" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1016" y="288" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1016" y="332" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1016" y="376" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1052" y="200" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1052" y="244" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1052" y="288" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1052" y="332" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1052" y="376" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1088" y="200" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1088" y="244" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1088" y="288" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1088" y="332" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1088" y="376" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1124" y="200" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1124" y="244" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1124" y="288" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1124" y="332" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1124" y="376" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1120" y="260" width="100" height="180" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="1136" y="280" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1136" y="324" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1136" y="368" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1136" y="412" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1172" y="280" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1172" y="324" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1172" y="368" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1172" y="412" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+</svg>
+
 ## Ydinajatus
 Voimalaitos ei tuota energiaa vaan muuttaa sitä. Polttoaineen kemiallinen energia, ydinenergia, virtaavan veden tai tuulen liike-energia ja auringon säteily muuttuvat sähköksi vaihe vaiheelta, ja tätä vaiheiden jonoa sanotaan energiaketjuksi. Energia säilyy jokaisessa vaiheessa, mutta osa siitä siirtyy lämpönä ympäristöön eikä ole enää sähkönä käytettävissä. Hyötysuhde kertoo, kuinka suuri osa vaiheeseen tulevasta tehosta tulee ulos hyödyllisessä muodossa.
 

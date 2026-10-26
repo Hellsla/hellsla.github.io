@@ -1,5 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-4` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, WATER, WATER_LIGHT, GLASS, HEAT, HEAT_LIGHT, COPPER, SAND, SAND_LIGHT, GRAIN, fi
+import herolib as H
 
 
 def pressure_area():
@@ -76,4 +77,30 @@ def pressure_depth():
     return f.svg()
 
 
-FIGURES = {"pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth}
+def hero():
+    """The chapter's opening illustration: a concrete dam that widens towards its base, a deep reservoir behind it."""
+    f = H.hero("fy34-hero", "Kuvitus: betonipato vuoristolaaksossa sivulta nähtynä. Padon takana on syvä tekojärvi, jonka vesi "
+               "tummuu syvyyden kasvaessa. Pato on yläreunasta kapea ja levenee alaspäin, pohjalta se on moninkertaisesti paksumpi.")
+    H.sky(f, "fy34h", 600)
+    H.cloud(f, 900, 100, 0.9)
+    f.path("M0,260 L180,120 L330,230 L470,90 L640,250 L800,140 L1000,260 L1200,160 V600 H0 Z", H.ALUMINIUM)
+    f.path("M0,300 L160,220 L300,290 L480,200 L620,300 L820,230 L1050,310 L1200,260 V600 H0 Z", H.METAL_EDGE)
+    H.forest(f, 330, 40, 24, H.IRON, seed=2, x1=1200, depth=300)
+    f.rect(0, 330, 1200, 270, H.RULE)
+    f.path("M0,600 V560 Q300,540 600,560 Q900,580 1200,555 V600 Z", H.SAND)
+    # reservoir: water darkens with depth
+    f.path("M0,250 H560 L620,560 H0 Z", H.grad(f, "fy34h-water", H.WATER_LIGHT, H.WATER))
+    for x, y, w in ((80, 280, 120), (300, 300, 90), (150, 340, 100)):
+        f.path(f"M{x},{y} q{w / 4},-6 {w / 2},0 t{w / 2},0", stroke=H.WHITE, w=3, extra='stroke-linecap="round" stroke-opacity="0.7"')
+    # dam: narrow crest, wide base
+    f.path("M540,224 H600 L760,560 H560 Z", H.grad(f, "fy34h-concrete", H.RULE_LIGHT, H.RULE, horizontal=True), H.INK, 3)
+    for y in (300, 380, 460):
+        x0 = 540 + (y - 224) * 20 / 336; x1 = 600 + (y - 224) * 160 / 336
+        f.line(x0 + 4, y, x1 - 4, y, H.RULE, 2)
+    f.rect(530, 214, 80, 12, H.IRON, H.INK, 2)
+    # river below the dam
+    f.path("M760,560 Q900,520 1200,540 V600 H760 Z", H.grad(f, "fy34h-river", H.WATER_LIGHT, H.WATER))
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth}

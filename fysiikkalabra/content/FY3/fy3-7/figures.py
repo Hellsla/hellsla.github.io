@@ -124,7 +124,7 @@ def hero():
     # thermometer leaning in the pot, its column steady
     f.add('<g transform="rotate(18 760 150)">')
     f.rect(751, 40, 18, 230, WHITE, INK, 3, 9)
-    f.rect(756, 120, 8, 150, HOT)
+    f.rect(756, 176, 8, 94, HOT)
     for k in range(6): f.line(769, 70 + 22 * k, 777, 70 + 22 * k, MUTED, 2)
     f.add('</g>')
     f.add(f'<ellipse cx="600" cy="242" rx="146" ry="22" fill="none" stroke="{WHITE}" stroke-width="2" stroke-opacity="0.6"/>')

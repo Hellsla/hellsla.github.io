@@ -166,7 +166,7 @@ tests[0]["tol"] = tests[0].get("tol", 0.01) * 10; ts.write_text(json.dumps(tests
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a simulation assertion loosened: full science review", "science: full" in out and "loosened" in out, out)
 ts.write_text(json.dumps(json.loads((SRC / "tests/sims" / f"{LESSON}.json").read_text()), ensure_ascii=False, indent=2))
-p = t / "content/FY3" / LESSON / "lesson.md"; style = next(l for l in p.read_text().splitlines() if 'stroke-width="' in l)
+p = t / "content/FY3" / LESSON / "lesson.md"; style = next(l for l in re.sub(r'<svg[^>]*data-fig="hero".*?</svg>', "", p.read_text(), flags=re.S).splitlines() if 'stroke-width="' in l)   # a theory figure, not the opening illustration
 p.write_text(p.read_text().replace(style, re.sub(r'stroke-width="[\d.]+"', 'stroke-width="9"', style, count=1), 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a stroke width changed: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "styling" in out, out)
@@ -209,6 +209,12 @@ code, out = run(t, "review_packet.py", LESSON, "--role", "developer"); pd = (t /
 expect("developer draft packet: where files go for this course and the reference lesson", "Where files go" in pd and "Reference lesson" in pd, out)
 code, out = run(t, "usage.py", "log", LESSON, "--agent", "x", "--model", "sonnet", "--effort", "medium", "--mode", "full", "--round", "1", "--context", "100", "--seconds", "1", "--calls", "1", "--verdict", "PASS")
 expect("a manual usage row is marked reported, not measured", code == 0 and "reported" in run(t, "usage.py", "report", LESSON)[1] and "unknown" in run(t, "usage.py", "report", LESSON)[1], out)
+sys.path.insert(0, str(HERE)); import reviews as rv
+hero = '<svg data-fig="hero" viewBox="0 0 1200 600" role="img">\n  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>\n</svg>'
+md = "> **Miksi** x?\n\n" + hero + "\n\n## Ydinajatus\nText.\n"
+expect("an opening illustration without labels drops out of the classified text", rv.strip_hero(md) == "> **Miksi** x?\n\n## Ydinajatus\nText.\n")
+labelled = md.replace("</svg>", '<foreignObject x="0" y="0" width="9" height="9"><div>$Q$</div></foreignObject>\n</svg>')
+expect("an opening illustration with a label stays a figure", rv.strip_hero(labelled) == labelled)
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

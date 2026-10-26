@@ -2,6 +2,38 @@
 
 > **Miksi** heliumpallo on paljon kevyempi kuin samankokoinen ilmapallo? Onko siinä vähemmän kaasua?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: huoneessa kaksi samankokoista ilmapalloa. Heliumpallo on noussut kattoon ja sen naru roikkuu alas, tavallinen ilmalla täytetty pallo lepää lattialla." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy310h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="0" width="1200" height="24" fill="#ffffff"/>
+  <line x1="0" y1="24" x2="1200" y2="24" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="0" y="500" width="1200" height="100" fill="#c9c2b2"/>
+  <line x1="0" y1="500" x2="1200" y2="500" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="0" y1="500" x2="-40" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="120" y1="500" x2="80" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="240" y1="500" x2="200" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="360" y1="500" x2="320" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="480" y1="500" x2="440" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="600" y1="500" x2="560" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="720" y1="500" x2="680" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="840" y1="500" x2="800" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="500" x2="920" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1080" y1="500" x2="1040" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="80" y="110" width="240" height="260" rx="4" fill="url(#fy310h-sky)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M135,210 Q134,193 154,195 Q162,177 182,183 Q200,173 210,192 Q228,194 226,210 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <line x1="200" y1="110" x2="200" y2="370" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="80" y1="240" x2="320" y2="240" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M560,218 Q476,182 480,112 Q486,30 560,28 Q634,30 640,112 Q644,182 560,218 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M550,230 L560,216 L570,230 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <ellipse cx="526" cy="78" rx="16" ry="26" transform="rotate(30 526 78)" fill="#ffffff" fill-opacity="0.8"/>
+  <path d="M560,230 C540,300 590,360 560,420 S570,470 556,480" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M860,494 Q776,458 780,388 Q786,306 860,304 Q934,306 940,388 Q944,458 860,494 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M850,506 L860,492 L870,506 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <ellipse cx="826" cy="354" rx="16" ry="26" transform="rotate(30 826 354)" fill="#ffffff" fill-opacity="0.8"/>
+  <ellipse cx="860" cy="500" rx="74" ry="10" fill="#6b7480" fill-opacity="0.35"/>
+  <path d="M870,506 C900,520 940,512 990,522" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Luvun *Kaasujen tilanmuutokset ja Boylen laki* kaasulait koskivat suljettua kaasumäärää. Nyt verrataan eri kaasumääriä ja eri kaasuja. Kun 5,00 litran pallo täytetään 101 kPa:n paineessa ja 20 °C:n lämpötilassa vuorotellen heliumilla, typellä, ilmalla ja hiilidioksidilla, kaasujen massat ovat hyvin erilaiset: 0,83 g, 5,78 g, 6,02 g ja 9,10 g. Kun kunkin massa jaetaan kaasun moolimassalla, tulos on kuitenkin joka kerta noin 0,207 mol. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis yhtä paljon kaasua, olipa kaasu mitä tahansa. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
 

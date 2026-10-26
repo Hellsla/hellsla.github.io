@@ -1,6 +1,7 @@
 """Figures of this lesson (scripts/figlib.py); `python3 scripts/figures.py fy3-2` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, IRON, \
     ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, GLASS, COPPER, fi
+import herolib as H
 
 
 def backpack(f, x, y):
@@ -153,5 +154,41 @@ def lift_work():
     return f.svg()
 
 
-FIGURES = {"carry-lift": carry_lift, "joule": joule, "work-graphs": work_graphs, "spring-work": spring_work,
+def hero():
+    """The chapter's opening illustration: a student carrying a heavy backpack along a level school corridor."""
+    f = H.hero("fy32-hero", "Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin painava reppu selässään. Lattia on "
+               "vaakasuora, ja katkoviivanuoli lattian suuntaisesti näyttää kulkusuunnan. Taustalla on kaappirivi ja ikkunoita.")
+    f.rect(0, 0, 1200, 600, H.PAPER)
+    for x in range(40, 1200, 300):
+        f.rect(x, 60, 180, 150, H.grad(f, f"fy32h-win{x}", H.ICE, H.GLASS), H.INK, 3, 4)
+        f.line(x + 90, 60, x + 90, 210, H.INK, 3)
+    for x in range(0, 1200, 80):
+        f.rect(x + 4, 250, 72, 230, H.COLD_LIGHT, H.INK, 2.5, 3)
+        f.rect(x + 58, 350, 8, 30, H.METAL_EDGE, rx=3)
+        for y in (266, 276, 286): f.line(x + 20, y, x + 60, y, H.METAL_EDGE, 2)
+    f.rect(0, 480, 1200, 120, H.RULE)
+    f.line(0, 480, 1200, 480, H.INK, 3)
+    for x in range(0, 1200, 150): f.line(x, 480, x - 60, 600, H.RULE_LIGHT, 2)
+    # side view of the walker: back leg, backpack, body, front leg, arm, head
+    x, yf = 560, 540
+    f.path(f"M{x},{yf - 160} L{x - 50},{yf - 6}", stroke=H.INK, w=30, extra='stroke-linecap="round"')
+    f.path(f"M{x - 70},{yf} h44", stroke=H.IRON, w=16, extra='stroke-linecap="round"')
+    f.rect(x - 112, yf - 330, 84, 130, H.SAND, H.INK, 3, 22)
+    f.rect(x - 102, yf - 260, 64, 46, H.SAND_DARK, H.INK, 2, 10)
+    f.path(f"M{x - 34},{yf - 320} Q{x + 40},{yf - 350} {x + 30},{yf - 260} L{x + 24},{yf - 150} H{x - 36} Z", H.COLD, H.INK, 3)
+    f.path(f"M{x - 36},{yf - 316} Q{x - 10},{yf - 280} {x - 30},{yf - 210}", stroke=H.INK, w=6)
+    f.path(f"M{x},{yf - 160} L{x + 50},{yf - 6}", stroke=H.INK, w=30, extra='stroke-linecap="round"')
+    f.path(f"M{x + 34},{yf} h44", stroke=H.IRON, w=16, extra='stroke-linecap="round"')
+    f.path(f"M{x + 8},{yf - 300} L{x + 44},{yf - 210}", stroke=H.COLD, w=24, extra='stroke-linecap="round"')
+    f.circle(x + 46, yf - 202, 12, H.SAND_LIGHT)
+    f.rect(x - 4, yf - 360, 20, 30, H.SAND_LIGHT)
+    f.circle(x + 6, yf - 386, 34, H.SAND_LIGHT)
+    f.path(f"M{x - 28},{yf - 380} Q{x - 30},{yf - 424} {x + 8},{yf - 422} Q{x + 40},{yf - 420} {x + 40},{yf - 396} Q{x + 6},{yf - 404} {x - 28},{yf - 380} Z", H.INK)
+    # direction of travel: level, along the floor
+    f.path("M720,560 H1000", stroke=H.INK, w=4, extra='stroke-dasharray="14 10"')
+    f.path("M1030,560 L1000,546 L1000,574 Z", H.INK)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "carry-lift": carry_lift, "joule": joule, "work-graphs": work_graphs, "spring-work": spring_work,
            "lift-work": lift_work}

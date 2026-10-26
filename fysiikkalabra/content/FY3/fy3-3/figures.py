@@ -1,5 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-3` writes them into lesson.md."""
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, GLASS, COLD, HOT, HEAT, WATER, ALUMINIUM, METAL_EDGE, IRON, fi)
+import herolib as H
 
 
 def system():
@@ -117,4 +118,38 @@ def extrapolation():
     return f.svg()
 
 
-FIGURES = {"system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation}
+def hero():
+    """The chapter's opening illustration: a bicycle on a hot summer street, heat shimmering above the asphalt."""
+    f = H.hero("fy33-hero", "Kuvitus: polkupyörä seisoo kuumalla asfaltilla kesähelteellä. Aurinko paistaa, asfaltin yllä väreilee "
+               "kuumuus ja tolpan lämpömittarin punainen pylväs on korkealla.")
+    H.sky(f, "fy33h", 430)
+    H.sun(f, "fy33h", 1020, 110)
+    H.cloud(f, 300, 90, 0.9)
+    for x, w, h in ((40, 220, 220), (280, 180, 170), (480, 240, 250), (740, 200, 190)):
+        f.rect(x, 430 - h, w, h, H.WHITE, H.RULE, 3)
+        for wx in range(x + 24, x + w - 40, 60):
+            for wy in range(430 - h + 26, 400, 64):
+                f.rect(wx, wy, 34, 40, H.GLASS, H.RULE, 2)
+    f.rect(0, 430, 1200, 20, H.RULE_LIGHT, H.RULE, 2)
+    f.rect(0, 450, 1200, 150, H.grad(f, "fy33h-road", H.IRON, H.INK))
+    for x in range(40, 1200, 220): f.rect(x, 528, 110, 10, H.WHITE, rx=3)
+    H.shimmer(f, (160, 240, 920, 1000, 1080), 520, 90)
+    # bicycle
+    for cx in (480, 760):
+        f.circle(cx, 446, 82, "none", H.INK, 12)
+        f.circle(cx, 446, 74, "none", H.METAL_EDGE, 2)
+        for k in range(12):
+            a = k * H.math.pi / 6
+            f.line(cx, 446, cx + 70 * H.math.cos(a), 446 + 70 * H.math.sin(a), H.METAL_EDGE, 1.5)
+        f.circle(cx, 446, 7, H.INK)
+    for d in ("M480,446 L580,446 L700,330 L560,330 Z", "M580,446 L540,300", "M700,330 L760,446", "M700,330 L690,300"):
+        f.path(d, stroke=H.COLD, w=10, extra='stroke-linecap="round"')
+    f.path("M512,292 H572", stroke=H.INK, w=12, extra='stroke-linecap="round"')
+    f.path("M670,296 Q690,286 716,298", stroke=H.INK, w=8, extra='stroke-linecap="round"')
+    f.circle(580, 446, 16, H.ALUMINIUM, H.INK, 3)
+    H.thermometer(f, 1120, 400, 160, H.HOT, 190)
+    f.rect(1114, 400, 12, 50, H.IRON)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation}
