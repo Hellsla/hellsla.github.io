@@ -69,7 +69,34 @@ window.AgentOfficeScene = {
       receive:[[150,668],[173,502],[736,502],[739,444],[789,502],[789,580],[849,690]],
       home:[[849,690],[789,580],[789,502],[173,502],[150,668]]
     };
-    function actors(state){
+    function reviewProgress(state){
+      const cycle=options.phase()%42;
+      // Timing illustrates independent work; it is not inferred from session durations.
+      // Vary which role finishes first, deterministically for each lesson version.
+      const first=parseInt(state?.hash?.slice(-1) || '0',16)%2?'pedagogy':'science';
+      const roles={};
+      for(const role of ['science','pedagogy']){
+        const fast=role===first;
+        const timing=fast?{collectStart:14,collectEnd:18.6,reportStart:21.3,reportEnd:25.5}:{collectStart:15.8,collectEnd:21,reportStart:24.3,reportEnd:28};
+        const status=state?.[role].status || 'missing';
+        const arrival=(timing.reportStart+timing.reportEnd)/2;
+        const available=status!=='missing';
+        const arrived=available && cycle>=arrival;
+        const collecting=cycle>=timing.collectStart && cycle<timing.collectEnd;
+        const delivering=available && cycle>=timing.reportStart && cycle<timing.reportEnd;
+        const work=collecting?'COLLECTING COPY':delivering?(arrived?'RETURNING TO DESK':'DELIVERING REPORT'):cycle<timing.collectStart?'WAITING FOR COPY':!available?'REPORT NOT RECORDED':cycle<timing.reportStart?'REVIEWING COPY':'REPORT DELIVERED';
+        roles[role]={...timing,status,arrival,available,arrived,collecting,delivering,work};
+      }
+      const received=Object.values(roles).filter(role=>role.arrived).length;
+      const needsRevision=Object.values(roles).some(role=>role.arrived && ['FAIL','stale','invalid'].includes(role.status));
+      return {cycle,roles,received,needsRevision,ready:Boolean(state?.eligible) && received===2};
+    }
+    function nextHandoff(){
+      const review=reviewProgress(options.state());
+      const moments=[0,7,14,21,28,32,34,35,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
+      return [...new Set(moments)].sort((a,b)=>a-b).find(moment=>moment>review.cycle+.001) ?? 0;
+    }
+    function actors(state,review){
       const cycle=options.phase()%42,step=Math.floor(cycle/7),f=(cycle%7)/7;
       const positions=Object.fromEntries(Object.entries(home).map(([id,p])=>[id,[...p]]));
       const packets={};const moving={};
@@ -77,10 +104,14 @@ window.AgentOfficeScene = {
       if(state){
         if(step===0)walk('teacher',journeys.brief,f,'BRIEF');
         if(step===1){walk('teacher',[...journeys.brief].reverse(),f);walk('developer',journeys.checks,f,'LESSON');}
-        if(step===2){walk('developer',[...journeys.checks].reverse(),f);for(const role of ['science','pedagogy'])walk(role,journeys[role],f,f>.5?'COPY':null);}
-        if(step===3){for(const role of ['science','pedagogy'])if(state[role].status!=='missing')walk(role,journeys[role+'Report'],f,f<.5?'REPORT':null,state[role].status==='PASS'?C.green:C.red);}
-        if(step===4){if(state.eligible)walk('teacher',journeys.receive,f,f>.78?'REVIEWED':null,C.green);else walk('developer',journeys.fix,f,f>.5?'REVISE':null,C.red);}
-        if(step===5 && state.eligible)walk('teacher',journeys.home,f);
+        if(step===2)walk('developer',[...journeys.checks].reverse(),f);
+        for(const role of ['science','pedagogy']){
+          const r=review.roles[role];
+          if(r.collecting){const progress=(cycle-r.collectStart)/(r.collectEnd-r.collectStart);walk(role,journeys[role],progress,progress>=.5?'COPY':null);}
+          if(r.delivering){const progress=(cycle-r.reportStart)/(r.reportEnd-r.reportStart);walk(role,journeys[role+'Report'],progress,progress<.5?`${r.status.toUpperCase()} REPORT`:null,r.status==='PASS'?C.green:C.red);}
+        }
+        if(step===4){if(review.ready)walk('teacher',journeys.receive,f,f>.78?'REVIEWED':null,C.green);else if(review.needsRevision)walk('developer',journeys.fix,f,f>.5?'REVISE':null,C.red);}
+        if(step===5 && review.ready)walk('teacher',journeys.home,f);
       }
       figurePositions=[];
       for(const [i,id] of ['developer','science','pedagogy','teacher','repository'].entries()){
@@ -102,17 +133,17 @@ window.AgentOfficeScene = {
       text('Freshness / CI unknown',x,738,C.muted,10,'center');
       box(372,596,24,80,'#253239');for(let i=0;i<5;i++){box(376,602+i*13,15,8,'#556669');box(378,604+i*13,3,3,C.amber);}
     }
-    function gate(state){
-      const open=Boolean(state?.eligible),color=!state?C.muted:open?C.green:C.red;
-      const needsRevision=state && ['science','pedagogy'].some(role=>['FAIL','stale','invalid'].includes(state[role].status));
+    function gate(state,review){
+      const color=review.ready?C.green:review.needsRevision?C.red:C.amber;
       const approvals=state?['science','pedagogy'].filter(r=>state[r].status==='PASS').length:'–';
       // An ordinary office colleague at a paper-covered desk, not a guard.
       box(695,405,137,35,'#9b8262');box(695,435,137,7,'#b9a07a');
       box(700,442,7,31,'#5a5042');box(820,442,7,31,'#5a5042');box(710,474,33,24,'#33484b');
       box(701,419,17,24,'#ad946c');box(704,423,11,16,'#eee1bd');
-      ['science','pedagogy'].forEach((r,i)=>box(706,426+i*6,6,3,state?.[r].status==='PASS'?C.green:C.red));
+      ['science','pedagogy'].forEach((r,i)=>box(706,426+i*6,6,3,!review.roles[r].arrived?C.muted:state?.[r].status==='PASS'?C.green:C.red));
       text('REVIEW DESK',768,385,C.ink,13,'center');
-      pill(open?'READY':needsRevision?'REVISE':'WAITING',796,424,color,70);text(`${approvals}/2 PASS`,793,456,color,11,'center');
+      pill(review.ready?'READY':review.needsRevision?'REVISE':'WAITING',796,424,color,70);
+      text(`${review.received}/2 REPORTS`,793,454,color,10,'center');text(`Recorded: ${approvals}/2 PASS`,793,473,C.muted,8,'center');
       person(735,447,'#c3af94',false,5);
     }
     function site(state){
@@ -124,7 +155,7 @@ window.AgentOfficeScene = {
       text('Deployment unverified',1048,754,C.amber,11,'center');
     }
     function draw(){
-      const state=options.state();const active=options.active();
+      const state=options.state();const active=options.active();const review=reviewProgress(state);
       ctx.imageSmoothingEnabled=false;box(0,0,1200,800,'#202c30');
       box(18,301,1164,221,'#8a7356');
       for(let y=306;y<522;y+=22)for(let x=20;x<1182;x+=68){box(x+(y%44?-20:0),y,65,1,'#a58c69');box(x,y,1,21,'#716148');}
@@ -135,7 +166,8 @@ window.AgentOfficeScene = {
       pill('1 · DEVELOP',212,257,C.gold,150);
       for(const [id,x] of [['science',605],['pedagogy',990]]){
         const status=state?.[id].status || 'NOT OBSERVED';
-        pill(status==='PASS'?'PASS · SAME VERSION':status.toUpperCase(),x,257,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
+        pill(status==='NOT OBSERVED'?'NO SNAPSHOT':status==='missing'?'NO REPORT RECORDED':`RECORDED ${status.toUpperCase()}`,x,254,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
+        text(state?review.roles[id].work:'WAITING FOR LESSON',x,277,C.muted,9,'center');
       }
       plant(380,245);plant(753,245);plant(1148,245);
       // The publication role is represented by a seated colleague throughout the journey.
@@ -147,19 +179,23 @@ window.AgentOfficeScene = {
       pill('5 · HUMAN DECISION',790,516,C.gold,197);text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
       box(28,398,314,52,'#2f3e3e');text('ONE LESSON. TWO INDEPENDENT REVIEWS.',185,419,C.ink,12,'center');
       text(state?`${state.id.toUpperCase()}  /  ${state.hash || 'HASH UNAVAILABLE'}`:'SELECT A RECORDED LESSON',185,438,C.gold,11,'center');
-      checks(state);site(state);gate(state);const step=actors(state);
+      checks(state);site(state);gate(state,review);const step=actors(state,review);
       box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);
-      return {step,caption:this.caption(step,state)};
+      return {step,caption:this.caption(step,state,review)};
     }
-    function caption(step,state){
+    function caption(step,state,review=reviewProgress(state)){
       if(!state)return 'Choose a recorded lesson to explore its route through the office.';
+      const name=role=>role==='science'?'Science':'Pedagogy';
+      const first=Object.keys(review.roles).find(role=>review.roles[role].arrived);
+      const waiting=Object.keys(review.roles).filter(role=>!review.roles[role].arrived).map(name).join(' and ');
+      const reportCaption=review.needsRevision?'A failed, stale or invalid review blocks approval. The lesson must return for revision or renewed review.':review.ready?'Both independent reports have arrived and PASS the current version. The review desk is ready.':review.received===1?`${name(first)} report received. Waiting for ${waiting.toLowerCase()} to finish independently.`:Object.values(review.roles).every(role=>!role.available)?'No review reports are recorded for this version. The desk keeps waiting.':'The reviewers work independently and return reports at different times.';
       return [
         'The teacher brings a brief to the developer.',
         'The developer brings the lesson packet to automatic checks.',
-        'The two independent reviewers collect separate copies of the lesson.',
-        ['science','pedagogy'].every(role=>state[role].status==='missing')?'The gate waits for both independent review reports.':'Available review reports go to the gate; missing or stale approvals cannot open it.',
-        state.eligible?'Both current reviews pass. The teacher receives the lesson for a publication decision.':'The gate stays closed. The lesson returns to the developer for revision or renewed review.',
-        'Publication is a human decision. Website deployment is a separate, unverified step.'
+        'The reviewers collect separate copies at different times and review independently, in parallel.',
+        reportCaption,
+        review.ready?'Both current reviews pass. The teacher receives the lesson for a publication decision.':review.needsRevision?'Approval is blocked. The developer takes a REVISE packet back to development.':`Still waiting for ${waiting.toLowerCase()} review. Nothing proceeds to the publication desk.`,
+        review.needsRevision?'After fixing the work, the developer must rerun checks and request new reviews of the changed version.':review.ready?'Publication is a human decision. Website deployment is a separate, unverified step.':`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`
       ][step];
     }
     function hit(p){
@@ -168,6 +204,6 @@ window.AgentOfficeScene = {
       if(p.x>=688 && p.x<=838 && p.y>=370 && p.y<=510)return 'gatekeeper';
       return stations.find(s=>p.x>=s.x && p.x<=s.x+s.w && p.y>=s.y && p.y<=s.y+s.h)?.id;
     }
-    return {draw,hit,caption};
+    return {draw,hit,caption,nextHandoff};
   }
 };

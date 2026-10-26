@@ -62,7 +62,7 @@
     $('role-label').textContent = role.label;
     $('role-description').textContent = role.description;
     $('role-path').textContent = role.path;
-    $('role-dialog').querySelector('.subtle').textContent=role.id==='gatekeeper'?(lessonState?`${lessonState.id.toUpperCase()}: science ${lessonState.science.status}; pedagogy ${lessonState.pedagogy.status}. Gate ${lessonState.eligible?'open':'closed'}. `:'No lesson snapshot selected. ')+'An open gate clears the review requirement only; automated checks and the teacher’s publication decision are separate.':'Room activity comes from recorded file changes. Couriers and handoffs illustrate the workflow; they are not records of running agents, actual conversations or human approvals.';
+    $('role-dialog').querySelector('.subtle').textContent=role.id==='gatekeeper'?(lessonState?`${lessonState.id.toUpperCase()}: science ${lessonState.science.status}; pedagogy ${lessonState.pedagogy.status}. Recorded review eligibility ${lessonState.eligible?'cleared':'blocked'}. `:'No lesson snapshot selected. ')+'The walkthrough desk separately waits for both report deliveries. Passing review clears only the review requirement; automated checks and the teacher’s publication decision are separate.':'Room activity comes from recorded file changes. Couriers and handoffs illustrate the workflow; they are not records of running agents, actual conversations or human approvals.';
     $('role-dialog').showModal();
   }
   officeRoles.forEach(role=>{
@@ -118,7 +118,7 @@
   $('lesson').addEventListener('change',()=>{phase=0;workflowKey='';update();draw();});
   $('play').addEventListener('click',()=>{if($('replay-mode').value==='history' && minute>=1439.9)seek(0);setPlaying(!playing);});
   $('next').addEventListener('click',()=>{setPlaying(false);const event=selected.find(e=>e.minute>minute+0.001);seek(event?event.minute:1439.999);});
-  $('next-handoff').addEventListener('click',()=>{setPlaying(false);phase=((Math.floor(phase/7)+1)%6)*7;draw();});
+  $('next-handoff').addEventListener('click',()=>{setPlaying(false);phase=scene.nextHandoff();draw();});
   $('replay-mode').addEventListener('change',()=>{setPlaying(false);$('mode-label').textContent=$('replay-mode').value==='history'?'DAY HISTORY':'LESSON WALKTHROUGH';});
   $('timeline').addEventListener('input',e=>{setPlaying(false);seek(e.target.value);});
   $('motion').checked=reduced;
