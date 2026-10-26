@@ -59,7 +59,7 @@ def generic(lid):
         pg.wait_for_timeout(300)
         check("no console errors", not errors, str(errors[:2]))
         for pr in preds:
-            loc = pg.locator(f"#{pr['id']}"); wrong = next(i for i, c in enumerate(pr["choices"]) if not c.get("correct"))
+            loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value"))   # options are shown shuffled
             loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
             check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
         for ex in exps:
@@ -150,6 +150,14 @@ with tempfile.TemporaryDirectory() as tmp:
     e = inquiry.validate(bad, d, lesson_md)
     check("lint-level validation names the field on a copy", any("choices[1].feedback" in x for x in e), str(e))
 
+# options are shown in a seeded order: the same on every build, the correct one not always in the same place
+opts = [{"text": f"v{i}", "feedback": "f", **({"correct": True} if i == 1 else {})} for i in range(4)] + [{"text": "Laskussa ei ole virhettä.", "feedback": "f"}]
+o1, o2 = inquiry.choice_order(opts, "fy3-2", "virhe"), inquiry.choice_order(opts, "fy3-2", "virhe")
+check("option order is deterministic and keeps every option", o1 == o2 and sorted(c["text"] for c in o1) == sorted(c["text"] for c in opts))
+check("'ei ole virhettä' stays last", o1[-1]["text"].startswith("Laskussa ei ole"))
+places = {[c.get("correct", False) for c in inquiry.choice_order(opts, "fy3-2", f"q{k}")].index(True) for k in range(20)}
+check("the correct option moves from question to question", len(places) >= 3, str(places))
+
 r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT)
 check("pilot builds", r.returncode == 0, (r.stdout + r.stderr)[-300:])
 page_html = (ROOT / "preview/fy3-2.html").read_text()
@@ -181,9 +189,10 @@ with sync_playwright() as pw:
     # prediction: commit first, no feedback until the experiment has two measurements
     p1 = pg.locator("#pred-1")
     p1.locator("button.commit").click(); check("empty commit asks for a choice", "Valitse" in p1.locator("output").inner_text())
-    p1.locator("input[type=radio]").nth(0).check(); p1.locator(".justify textarea").fill("voima sama")
+    w1 = int(p1.locator("input[data-correct='0']").first.get_attribute("value"))   # a wrong option; options are shown shuffled
+    p1.locator("input[type=radio]").nth(w1).check(); p1.locator(".justify textarea").fill("voima sama")
     p1.locator("button.commit").click()
-    check("prediction committed: radios locked, feedback hidden", p1.locator("input[type=radio]").nth(0).is_disabled() and not p1.locator(".feedback").nth(0).is_visible() and p1.locator(".pending").is_visible())
+    check("prediction committed: radios locked, feedback hidden", p1.locator("input[type=radio]").nth(w1).is_disabled() and not p1.locator(".feedback").nth(w1).is_visible() and p1.locator(".pending").is_visible())
 
     ex1 = pg.locator("#exp-1")
     check("record disabled before the initial state is set", ex1.locator(".exp-record").is_disabled())
@@ -195,12 +204,12 @@ with sync_playwright() as pw:
     ex1.locator(".exp-record").click(); pg.wait_for_timeout(50)
     check("first measurement recorded", ex1.locator("tbody tr").count() == 1 and "600" in ex1.locator("tbody tr").nth(0).inner_text())
     ex1.locator(".exp-record").click(); check("same value not recorded twice", ex1.locator("tbody tr").count() == 1 and "Sama" in ex1.locator(".exp-status").inner_text())
-    check("still no feedback after one measurement", not p1.locator(".feedback").nth(0).is_visible())
+    check("still no feedback after one measurement", not p1.locator(".feedback").nth(w1).is_visible())
     pg.evaluate("(() => { const r=document.querySelectorAll('#sim-root input[type=range]')[1]; r.value=20; r.dispatchEvent(new Event('input',{bubbles:true})); })()"); pg.wait_for_timeout(120)
     ex1.locator(".exp-record").click(); pg.wait_for_timeout(50)
     rows = ex1.locator("tbody tr").all_inner_texts()
     check("second measurement doubles W", len(rows) == 2 and "1200" in rows[1], str(rows))
-    check("prediction feedback revealed after two measurements", p1.locator(".feedback").nth(0).is_visible() and "Ei aivan" in p1.locator("output").inner_text() and not p1.locator(".pending").is_visible())
+    check("prediction feedback revealed after two measurements", p1.locator(".feedback").nth(w1).is_visible() and "Ei aivan" in p1.locator("output").inner_text() and not p1.locator(".pending").is_visible())
     ex1.locator(".exp-reset").click(); pg.wait_for_timeout(120)
     st = pg.evaluate("window.simState"); locked = pg.evaluate("[...document.querySelectorAll('#sim-root input[type=range]')].map(r => r.disabled)")
     check("reset restores defaults, unlocks, clears the table", st["s"] == 10 and st["u"] == 0 and locked == [False, False, False] and ex1.locator("tbody tr").count() == 0, f"{st} {locked}")
@@ -211,9 +220,10 @@ with sync_playwright() as pw:
     check("reflection shows my prediction and the verdict", "Ennustit" in refl.nth(0).inner_text() and "ei tue" in refl.nth(0).inner_text() and "Et ole vielä" in refl.nth(1).inner_text(), refl.nth(0).inner_text())
 
     # plain choice: feedback after Vastaa, may change and re-check
-    c = pg.locator("#pr-paino"); c.locator("input[type=radio]").nth(0).check(); c.locator("button.commit").click()
-    check("retrieval choice gives misconception feedback", c.locator(".feedback[data-for='0']").is_visible() and "Massa ja paino" in c.locator(".feedback[data-for='0']").inner_text())
-    c.locator("input[type=radio]").nth(1).check(); check("changing the choice hides old feedback", not c.locator(".feedback[data-for='0']").is_visible())
+    c = pg.locator("#pr-paino"); w = c.locator("label").filter(has=pg.get_by_text("10 N", exact=True))   # the mass-for-weight option
+    wv = w.locator("input").get_attribute("value"); w.locator("input").check(); c.locator("button.commit").click()
+    check("retrieval choice gives misconception feedback", c.locator(f".feedback[data-for='{wv}']").is_visible() and "Massa ja paino" in c.locator(f".feedback[data-for='{wv}']").inner_text())
+    c.locator("input[data-correct='1']").check(); check("changing the choice hides old feedback", not c.locator(f".feedback[data-for='{wv}']").is_visible())
     c.locator("button.commit").click(); check("correct choice marked", "Oikein" in c.locator("output").inner_text())
 
     # numeric: comma, invalid, mistake feedback, retries, hints progressive
@@ -236,7 +246,7 @@ with sync_playwright() as pw:
 
     # persistence survives a reload (per-device convenience only)
     pg.reload(); pg.wait_for_function("window.simState && window.simAdapter", timeout=3000)
-    check("prediction remembered after reload", pg.locator("#pred-1 input[type=radio]").nth(0).is_checked() and pg.locator("#pred-1 input[type=radio]").nth(0).is_disabled())
+    check("prediction remembered after reload", pg.locator("#pred-1 input[type=radio]").nth(w1).is_checked() and pg.locator("#pred-1 input[type=radio]").nth(w1).is_disabled())
     check("explanation remembered after reload", "Työ ei riipu" in pg.locator("#check-3 textarea").input_value())
 
     # keyboard: a choice answered with arrows and Enter

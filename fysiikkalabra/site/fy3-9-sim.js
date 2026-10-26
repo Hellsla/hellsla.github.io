@@ -77,7 +77,8 @@ new p5((p) => {
     reset(); p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { mode: { input: sel.elt, unit: '' }, Vml: { input: sV.elt, unit: 'ml' }, Tc: { input: sT.elt, unit: '°C' } },
-      get: () => ({ ...window.simState, Vml: Number(sV.value()), Tc: Number(sT.value()) }),   // slider readings beside the SI values of simState
+      get: () => ({ ...window.simState, Vml: Number(sV.value()), Tc: Number(sT.value()),   // slider readings beside the SI values of simState
+                     Vgas: window.simState.V * 1e6, VperT: window.simState.V * 1e6 / window.simState.T }),   // gas volume (ml) and V/T (ml/K) for the tables
       reset: () => { sel.selected('isoterminen'); reset(); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });

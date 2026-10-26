@@ -1,20 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: 32171daf1820acd1
+CONTENT-HASH: 944c5d51ce0ef7d1
 
 ## Blocking
 
 ## Polish
-- inquiry.json:124 (pred-3, Bea) — "Kokeen 1 perusteella … sama paine vaatii saman hiukkasmäärän": Koe 1 uses equal-mass particles only, so it cannot show that the particle mass drops out; that comes from the model — say "Kokeen 1 ja hiukkasmallin perusteella".
-- inquiry.json:340/345 (check-1) — "sama hiukkanen ehtii seinästä seinään lyhyemmässä ajassa" is true for the walls the piston moves towards; on the other walls the hit rate per unit length rises because the gas is denser — add "ja hiukkasia on tiheämmässä".
-- solutions.md:47 (L2-01) — "noin 6 % liian suuren paineen" is plausible for O₂ (Z ≈ 0,94) but has no source; "muutaman prosentin" is safer.
+- inquiry.json:check-3, second criterion — the argument that a common R means equal n is slightly circular, because R came from the same weighing. It is still correct at FY3 level. Fix (optional): add that "tarkat mittaukset antavat kaikille kaasuille saman R:n".
 
 ## Checked
-- answers.py, exercises.json and my own formulas agree for all 12 exercises (largest rounding offset 0,4 %, inside the 2 % tolerance).
-- Worked example: n = 0,2073 mol, m = 0,829 g, air 6,01 g, molar volume 24,1 l. The SVG labels (0,21 mol, 0,83 g, 6,0 g) match.
-- siirto: 91 200 mol and 2645 kg. The listed mistakes (9869 kg if T stays in °C, 2,64 kg if p stays in kPa) are right. 20 °C air weighs 3,37 t, so the difference is about 700 kg.
-- virhe (1,2 → 0,083 mol), check-2 (3,0; mistakes 2,25 and 1,69) and the exit ticket (0,601 mol) recompute correctly.
-- Feedback physics for pred-1 to pred-3 is right: at the same T, the larger hit rate (∝ v) times the momentum per hit (∝ mv) gives p ∝ m⟨v²⟩ ∝ T, whatever the particle mass.
-- The interpret table's pV/(NT) column follows from its own rows (1,05 / 1,00 / 0,98 / 0,98 / 0,99).
-- sim.js: impulse per unit perimeter per unit time and P_REF = NkT/A follow 2D kinetic theory. I ran the sim in Chromium (10 × 2 s runs per state). Measured p matches pV = NkT within 0,1 % in 9 states. In 300 → 600 K the hit rate grows 1,41× (93,6 → 132,2 1/s) and p grows 2,00×. At N = 20 the scatter is about ±10 %, as the note says.
-- exp-1 and exp-2: the start states, locked parameters and slider ranges isolate the varied quantity. simState exposes pMeasured, pPredicted and hitRate.
-- Scope and conditions: Kelvin temperatures, total pressure in the formula, gauge pressure cancels in the difference (L3-03), and the model fails at high p and low T.
+- The 12 exercises, recomputed independently, are within 0,3 % of exercises.json and answers.py. L2-01's "muutamia prosentteja liian suuren paineen" is correct for O₂ at about 180 bar (Z ≈ 0,94).
+- Weighing: helium m/M = 0,2075 mol, and the mistakes are 4,82 and 3,32. A student who rounds to 0,21 is 1,2 % off, inside the tolerance. The four values range from 0,2064 to 0,2076 mol, which is under 1 %. The table masses are within ±0,02 g of the exact values. The ratios are 7,25 and 10,96.
+- laske-r: 8,302, with mistakes 121,7, 8302 and 0,008302, all right. In Kaava, the mean of 0,2071 gives 8,32 ≈ 8,3.
+- pred-n: p doubles, which is correct. The distractors' feedback is sound, and the gate after exp-1 is consistent. pred-1: "yhtä monta" is correct. Its third option's feedback is right: helium hits more often, each hit is weaker.
+- Sim checked in Playwright with 10 windows of 2 s each:
+  - N100/300 K: p = 1,01, 94 hits/s.
+  - N200: p = 1,99, 184 hits/s.
+  - N50: p = 0,50.
+  - 600 K: p = 2,01.
+  - N50/600 K: p = 0,995.
+  - 150/450 K/75 %: p = 3,00, which matches check-2.
+  
+  pPredicted is still in simState. The canvas shows only the measured bar.
+- Taulukko: pV/(NT) = 1,05, 1,00, 0,98, 0,98 and 0,99, which matches the "muutaman prosentin" feedback.
+- Worked example: n = 0,2073 mol, m = 0,829 g, air 6,01 g, 24,1 l per mole; it works symbolically first.
+- virhe: 1,22 vs 0,0829 mol. siirto: 2645 kg (mistakes 9869 and 2,64); outside air is 3367 kg, so "≈700 kg" holds. Exit ticket: 0,601 mol. exp-2: N = 50 (mistakes 71, 4,00 and 0,50).
+- check-3 model answer and figures (0,21 mol, 0,83 g, 6,0 g; 2N, 2T, V/2 → 2p) are correct.

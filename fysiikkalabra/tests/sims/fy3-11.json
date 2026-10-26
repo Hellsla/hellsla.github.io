@@ -1,650 +1,573 @@
 [
  {
-  "expr": "(() => { const s=document.querySelector('#sim-root select'); return s.value==='lauhdevoimalaitos' && window.simState.mode==='lauhdevoimalaitos' && window.simState.unit==='MW' ? 1 : 0 })()",
+  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); const s=document.querySelectorAll('#sim-root select'); const S=window.simState; return r[0].value==='500' && r[1].value==='100' && s[0].value==='sama paine' && s[1].value==='1' && S.phase==='alku' && S.V===1 && S.p===200 && S.Q===0 && S.Wk===0 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "on load: lauhdevoimalaitos, unit MW (must run before any setup)"
+  "note": "on load: Q = 500 J, p2 = 100 kPa, return A, speed normaali, start state V = 1 l, p = 200 kPa, nothing transferred (must run before any setup)"
  },
  {
-  "expr": "window.simState.Pin",
+  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); return r[0].min==='200' && r[0].max==='1000' && r[0].step==='50' && r[1].min==='40' && r[1].max==='180' && r[1].step==='10' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "slider ranges: Q 200-1000 J step 50, p2 40-180 kPa step 10"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[0].options]; return o.length===2 && o[0].value==='sama paine' && o[0].textContent==='samassa paineessa' && o[1].value==='jäähdytys ensin' && o[1].textContent==='jäähdytä ensin' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "return select: A samassa paineessa, B jäähdytä ensin"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[1].options].map(x=>x.textContent+':'+x.value).join(','); return o==='hidas:0.4,normaali:1,nopea:2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "speed select hidas 0.4, normaali 1, nopea 2"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Lämmitä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button Lämmitä first, then Alusta; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const d=document.querySelector('#sim-root details'); return d && d.querySelector('summary').textContent==='Lisätietoja' && !d.open && /ideaalikaasu/.test(d.textContent) && /mallin arvoja/.test(d.textContent) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "explanations behind a closed Lisätietoja: model values for an ideal gas"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='Qin,p2,paluu' && P.Qin.unit==='J' && P.p2.unit==='kPa' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares Qin (J), paluu and p2 (kPa)"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,200); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dV",
+  "expected": 0.4,
+  "tol": 1e-06,
+  "note": "Q = 200 J at 200 kPa: ΔV = 2Q/(5p) = 0.4 l"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,200); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Wk",
+  "expected": 80.0,
+  "tol": 1e-06,
+  "note": "Q = 200 J: W_k = pΔV = 200 kPa · 0.4 l = 80 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,200); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dU",
+  "expected": 120.0,
+  "tol": 1e-06,
+  "note": "Q = 200 J: ΔU = (3/2)pΔV = 120 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,200); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Q",
+  "expected": 200,
+  "tol": 1e-06,
+  "note": "Q = 200 J delivered when the piston stops"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dV",
+  "expected": 1.0,
+  "tol": 1e-06,
+  "note": "Q = 500 J at 200 kPa: ΔV = 2Q/(5p) = 1.0 l"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Wk",
+  "expected": 200.0,
+  "tol": 1e-06,
+  "note": "Q = 500 J: W_k = pΔV = 200 kPa · 1.0 l = 200 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dU",
+  "expected": 300.0,
+  "tol": 1e-06,
+  "note": "Q = 500 J: ΔU = (3/2)pΔV = 300 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Q",
+  "expected": 500,
+  "tol": 1e-06,
+  "note": "Q = 500 J delivered when the piston stops"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dV",
+  "expected": 1.5,
+  "tol": 1e-06,
+  "note": "Q = 750 J at 200 kPa: ΔV = 2Q/(5p) = 1.5 l"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Wk",
+  "expected": 300.0,
+  "tol": 1e-06,
+  "note": "Q = 750 J: W_k = pΔV = 200 kPa · 1.5 l = 300 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dU",
+  "expected": 450.0,
+  "tol": 1e-06,
+  "note": "Q = 750 J: ΔU = (3/2)pΔV = 450 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Q",
+  "expected": 750,
+  "tol": 1e-06,
+  "note": "Q = 750 J delivered when the piston stops"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dV",
+  "expected": 2.0,
+  "tol": 1e-06,
+  "note": "Q = 1000 J at 200 kPa: ΔV = 2Q/(5p) = 2.0 l"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Wk",
+  "expected": 400.0,
+  "tol": 1e-06,
+  "note": "Q = 1000 J: W_k = pΔV = 200 kPa · 2.0 l = 400 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dU",
+  "expected": 600.0,
+  "tol": 1e-06,
+  "note": "Q = 1000 J: ΔU = (3/2)pΔV = 600 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.Q",
   "expected": 1000,
   "tol": 1e-06,
-  "note": "on load: fuel power 1000 MW"
+  "note": "Q = 1000 J delivered when the piston stops"
  },
  {
-  "expr": "window.simState.eta",
-  "expected": 40,
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.V",
+  "expected": 2.5,
   "tol": 1e-06,
-  "note": "on load: efficiency 40 %"
+  "note": "Ennusta 1 settings: Q = 750 J takes V from 1,0 l to 2,5 l at 200 kPa"
  },
  {
-  "expr": "(() => { const o=[...document.querySelector('#sim-root select').options].map(x=>x.value).join(','); return o==='lauhdevoimalaitos,yhteistuotanto,automoottori,ilmalämpöpumppu' ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "select has the four situations in order"
- },
- {
-  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const i=(n)=>k.indexOf(n); return i('canvas')===0 && i('canvas')<i('controls') && i('controls')<i('readout') ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "DOM order: canvas, div.controls, div.readout"
- },
- {
-  "expr": "(() => { const c=document.querySelector('#sim-root canvas').getBoundingClientRect(); return Math.round(c.width)===600 && Math.round(c.height)===400 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "canvas is 600 x 400 at 1280 px"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Puse",
-  "expected": 400,
-  "tol": 1e-06,
-  "note": "lauhde preset: electricity = 0,40 * 1000 MW = 400 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pwaste",
-  "expected": 600,
-  "tol": 1e-06,
-  "note": "lauhde preset: waste heat = 1000 MW - 400 MW = 600 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pheat",
-  "expected": 0,
-  "tol": 1e-06,
-  "note": "lauhde: no district heat"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.etaTotal",
-  "expected": 40,
-  "tol": 1e-06,
-  "note": "lauhde: total efficiency = efficiency = 40 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pin",
-  "expected": 1000,
-  "tol": 1e-06,
-  "note": "CHP preset: fuel 1000 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.eta",
-  "expected": 30,
-  "tol": 1e-06,
-  "note": "CHP preset: electricity share 30 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.heatShare",
-  "expected": 55,
-  "tol": 1e-06,
-  "note": "CHP preset: district heat share 55 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Puse",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.areaWk",
   "expected": 300,
   "tol": 1e-06,
-  "note": "CHP preset: electricity 300 MW"
+  "note": "Q = 750 J: the drawn orange rectangle under the (V,p) line is 300 J = W_k"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pheat",
-  "expected": 550,
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "window.simState.dU + window.simState.Wk - window.simState.Q",
+  "expected": 0,
   "tol": 1e-06,
-  "note": "CHP preset: district heat 550 MW"
+  "note": "energy bookkeeping after heating: ΔU + W_k − Q = 0 (Q = 1000 J)"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pwaste",
-  "expected": 150,
-  "tol": 1e-06,
-  "note": "CHP preset: waste heat 150 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.etaTotal",
-  "expected": 85,
-  "tol": 1e-06,
-  "note": "CHP preset: total efficiency 85 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pin",
-  "expected": 60,
-  "tol": 1e-06,
-  "note": "car preset: fuel 60 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.eta",
-  "expected": 30,
-  "tol": 1e-06,
-  "note": "car preset: efficiency 30 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Puse",
-  "expected": 18,
-  "tol": 1e-06,
-  "note": "car preset: mechanical work 0,30 * 60 kW = 18 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pwaste",
-  "expected": 42,
-  "tol": 1e-06,
-  "note": "car preset: waste heat 42 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.unit==='kW' ? 1 : 0",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); D.restart(); D.go();",
+  "expr": "(() => { const S=window.simState; return S.phase==='lammitys' && S.Q>0 && S.Q<750 && Math.abs(S.dU+S.Wk-S.Q)<1e-9 && Math.abs(S.areaWk-S.Wk)<1e-9 && Math.abs(S.Wk-200*(S.V-1))<1e-9 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "car: unit kW"
+  "note": "mid-heating: Q = ΔU + W_k, the area so far equals W_k = p(V − V1)"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pel",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.includes('p = 200 kPa, ΔV = 1,50 l') && t.includes('Q = 750 J, ΔU = 450 J') && !t.includes('Wk') ? 1 : 0 })()",
   "expected": 1,
-  "tol": 1e-06,
-  "note": "heat pump preset: electricity 1,0 kW"
+  "tol": 0,
+  "note": "readout after heating Q = 750 J shows p = 200 kPa, ΔV = 1,50 l, Q and ΔU; W_k is left for the student (Koe 1)"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.cop",
-  "expected": 3,
-  "tol": 1e-06,
-  "note": "heat pump preset: lämpökerroin 3,0"
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "(() => { const b=document.querySelector('#sim-root button'); return b.textContent==='Palauta mäntä' && !b.disabled && window.simState.phase==='ylhaalla' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "after heating the main button says Palauta mäntä"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pout",
-  "expected": 3,
-  "tol": 1e-06,
-  "note": "heat pump preset: heat inside 3,0 * 1,0 kW = 3,0 kW"
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish();",
+  "expr": "(() => { const S=window.simState; return S.phase==='ylhaalla' && !('eta' in S) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "piston up, cycle not finished: simState has no η, so an experiment row cannot record an interim value"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pambient",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go();",
+  "expr": "(() => { const S=window.simState; return S.phase==='jaahdytys' && !S.done && !('eta' in S) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "return B under way: still no η until the cycle is complete"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return A at the same pressure, Q = 500 J: net work W = 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 500,
+  "tol": 1e-06,
+  "note": "return A, Q = 500 J: all the heat goes to the cold water, Q2 = Q"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 500,
+  "tol": 1e-06,
+  "note": "return A, Q = 500 J: Q1 = Q"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return A at the same pressure, Q = 1000 J: net work W = 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 1000,
+  "tol": 1e-06,
+  "note": "return A, Q = 1000 J: all the heat goes to the cold water, Q2 = Q"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 1000,
+  "tol": 1e-06,
+  "note": "return A, Q = 1000 J: Q1 = Q"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.eta",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return A: η = 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.areaNet",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return A: the blue area cancels the orange one, net area 0 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.dUcycle",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return A: the gas is back in its start state, ΔU over the cycle = 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { const S=window.simState, b=document.querySelector('#sim-root button'); return S.done===1 && S.phase==='valmis' && S.V===1 && S.p===200 && b.textContent==='Uusi kierros' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "after the cycle: start state again, main button Uusi kierros"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { return document.querySelectorAll('#sim-root input[type=range]')[1].closest('label').style.display==='none' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "p2 slider hidden in return A"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 100.0,
+  "tol": 1e-06,
+  "note": "return B, Q = 500 J, p2 = 100 kPa: W = (p1 − p2)ΔV = 100 J > 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 650.0,
+  "tol": 1e-06,
+  "note": "return B: Q1 = Q + (3/2)V1(p1 − p2) = 650 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 550.0,
+  "tol": 1e-06,
+  "note": "return B: Q2 = (3/2)V2(p1 − p2) + (5/2)p2ΔV = 550 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.eta",
+  "expected": 15.384615384615385,
+  "tol": 1e-06,
+  "note": "return B: η = W/Q1 = 15.3846 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.areaNet",
+  "expected": 100.0,
+  "tol": 1e-06,
+  "note": "return B: the orange rectangle left in the graph is 100 J = W"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 150.0,
+  "tol": 1e-06,
+  "note": "return B, Q = 750 J, p2 = 100 kPa: W = (p1 − p2)ΔV = 150 J > 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 900.0,
+  "tol": 1e-06,
+  "note": "return B: Q1 = Q + (3/2)V1(p1 − p2) = 900 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 750.0,
+  "tol": 1e-06,
+  "note": "return B: Q2 = (3/2)V2(p1 − p2) + (5/2)p2ΔV = 750 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.eta",
+  "expected": 16.666666666666668,
+  "tol": 1e-06,
+  "note": "return B: η = W/Q1 = 16.6667 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.areaNet",
+  "expected": 150.0,
+  "tol": 1e-06,
+  "note": "return B: the orange rectangle left in the graph is 150 J = W"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 320.0,
+  "tol": 1e-06,
+  "note": "return B, Q = 1000 J, p2 = 40 kPa: W = (p1 − p2)ΔV = 320 J > 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 1240.0,
+  "tol": 1e-06,
+  "note": "return B: Q1 = Q + (3/2)V1(p1 − p2) = 1240 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 920.0,
+  "tol": 1e-06,
+  "note": "return B: Q2 = (3/2)V2(p1 − p2) + (5/2)p2ΔV = 920 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.eta",
+  "expected": 25.806451612903224,
+  "tol": 1e-06,
+  "note": "return B: η = W/Q1 = 25.8065 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.areaNet",
+  "expected": 320.0,
+  "tol": 1e-06,
+  "note": "return B: the orange rectangle left in the graph is 320 J = W"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,180); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 20.0,
+  "tol": 1e-06,
+  "note": "return B, Q = 500 J, p2 = 180 kPa: W = (p1 − p2)ΔV = 20 J > 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,180); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 530.0,
+  "tol": 1e-06,
+  "note": "return B: Q1 = Q + (3/2)V1(p1 − p2) = 530 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,180); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 510.0,
+  "tol": 1e-06,
+  "note": "return B: Q2 = (3/2)V2(p1 − p2) + (5/2)p2ΔV = 510 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,180); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.eta",
+  "expected": 3.7735849056603774,
+  "tol": 1e-06,
+  "note": "return B: η = W/Q1 = 3.7736 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,180); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.areaNet",
+  "expected": 20.0,
+  "tol": 1e-06,
+  "note": "return B: the orange rectangle left in the graph is 20 J = W"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,200); S(1,140); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 24.0,
+  "tol": 1e-06,
+  "note": "return B, Q = 200 J, p2 = 140 kPa: W = (p1 − p2)ΔV = 24 J > 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,200); S(1,140); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1",
+  "expected": 290.0,
+  "tol": 1e-06,
+  "note": "return B: Q1 = Q + (3/2)V1(p1 − p2) = 290 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,200); S(1,140); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q2",
+  "expected": 266.0,
+  "tol": 1e-06,
+  "note": "return B: Q2 = (3/2)V2(p1 − p2) + (5/2)p2ΔV = 266 J"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,200); S(1,140); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.eta",
+  "expected": 8.275862068965518,
+  "tol": 1e-06,
+  "note": "return B: η = W/Q1 = 8.2759 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,200); S(1,140); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.areaNet",
+  "expected": 24.0,
+  "tol": 1e-06,
+  "note": "return B: the orange rectangle left in the graph is 24 J = W"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,60); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.Q1 - window.simState.Q2 - window.simState.W",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return B: W = Q1 − Q2 (Q = 750 J, p2 = 60 kPa)"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,60); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.dUcycle",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "return B: back at the start state, ΔU = 0"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.includes('Q1 = 650 J, Q2 = 550 J') && t.includes('W = Q1 − Q2 = 100 J') && t.includes('η = W/Q1 = 15 %') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout after cycle B (Q = 500 J, p2 = 100 kPa): Q1 650 J, Q2 550 J, W 100 J, η 15 %"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { return document.querySelectorAll('#sim-root input[type=range]')[1].closest('label').style.display==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "p2 slider visible in return B"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish(); S(0, 600);",
+  "expr": "(() => { const S=window.simState; return S.phase==='alku' && S.Q1===0 && S.W===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing Q after a cycle resets to the start state"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish(); [...document.querySelectorAll('#sim-root button')][1].click();",
+  "expr": "(() => { const S=window.simState; return S.phase==='alku' && S.Q===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Alusta resets"
+ },
+ {
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; sl[1].value='2'; sl[1].dispatchEvent(new Event('change'));",
+  "expr": "window.simState.speed",
   "expected": 2,
   "tol": 1e-06,
-  "note": "heat pump preset: heat from outdoor air 3,0 kW - 1,0 kW = 2,0 kW"
+  "note": "speed select nopea → simState.speed 2"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.Pin===null && window.simState.Puse===null && window.simState.unit==='kW' ? 1 : 0",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "window.simState.W",
+  "expected": 100,
+  "tol": 1e-06,
+  "note": "speed does not change the results: nopea, B, Q = 500 J, p2 = 100 kPa gives W = 100 J"
+ },
+ {
+  "expr": "(async () => { const sl=document.querySelectorAll('#sim-root select'); const w=(ms)=>new Promise(f=>setTimeout(f,ms)); const D=window.simDebug; sl[1].value='0.4'; sl[1].dispatchEvent(new Event('change')); D.restart(); D.go(); await w(600); const a=window.simState.u; sl[1].value='2'; sl[1].dispatchEvent(new Event('change')); D.restart(); D.go(); await w(600); const b=window.simState.u; sl[1].value='1'; sl[1].dispatchEvent(new Event('change')); return b/a; })()",
+  "expected": 5,
+  "tol": 0.35,
+  "note": "speed is the pace only: nopea advances the heating 5 times as fast as hidas"
+ },
+ {
+  "expr": "(() => { window.simAdapter.set({paluu: 'jäähdytys ensin', Qin: 750, p2: 60}); const S=window.simAdapter.get(); return S.paluu==='jäähdytys ensin' && S.Qin===750 && S.p2===60 && S.phase==='alku' ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "heat pump: engine fields null, unit kW"
+  "note": "adapter set() writes the controls and resets the process"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===100 && Number(p.max)===2000 && Number(p.step)===10 ? 1 : 0 })()",
+  "expr": "(() => { window.simAdapter.reset(); const S=window.simAdapter.get(); return S.paluu==='sama paine' && S.Qin===500 && S.p2===100 && S.speed===1 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "lauhdevoimalaitos: input power slider 100-2000 step 10"
+  "note": "adapter reset() restores the defaults"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===100 && Number(p.max)===2000 && Number(p.step)===10 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "yhteistuotanto: input power slider 100-2000 step 10"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===10 && Number(p.max)===200 && Number(p.step)===1 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "automoottori: input power slider 10-200 step 1"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); return r[1].min==='10' && r[1].max==='45' && Number(r[1].value)===30 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "automoottori: efficiency slider 10-45 %, preset 30 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); return r[1].min==='10' && r[1].max==='60' && Number(r[1].value)===40 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "back from automoottori: efficiency slider 10-60 % again, preset 40 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const p=document.querySelectorAll('#sim-root input[type=range]')[0]; return Number(p.min)===0.5 && Number(p.max)===5 && Number(p.step)===0.1 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "ilmalämpöpumppu: input power slider 0.5-5 step 0.1"
- },
- {
-  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); return r[1].min==='10' && r[1].max==='60' && r[2].min==='0' && r[2].max==='65' && r[3].min==='1.5' && r[3].max==='5' && r[3].step==='0.1' ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "ranges: efficiency 10-60 %, district heat 0-65 %, lämpökerroin 1,5-5,0 step 0,1"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
-  "expected": 1100,
-  "tol": 0,
-  "note": "lauhdevoimalaitos: power and efficiency shown, district heat and cop hidden"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
-  "expected": 1110,
-  "tol": 0,
-  "note": "yhteistuotanto: power, efficiency, district heat shown, cop hidden"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
-  "expected": 1100,
-  "tol": 0,
-  "note": "automoottori: power and efficiency shown"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "Number([...document.querySelectorAll('#sim-root input[type=range]')].map(x=>getComputedStyle(x.parentElement).display==='none'?0:1).join(''))",
-  "expected": 1001,
-  "tol": 0,
-  "note": "ilmalämpöpumppu: electric power and cop shown, efficiency and district heat hidden"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=1500;",
-  "expr": "window.simState.Puse",
-  "expected": 600,
-  "tol": 1e-06,
-  "note": "power slider: lauhde 1500 MW at 40 % gives 600 MW electricity"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[1].value=25;",
-  "expr": "window.simState.Puse",
-  "expected": 250,
-  "tol": 1e-06,
-  "note": "efficiency slider: lauhde 1000 MW at 25 % gives 250 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[2].value=40;",
-  "expr": "window.simState.Pheat",
-  "expected": 400,
-  "tol": 1e-06,
-  "note": "district heat slider: CHP 40 % of 1000 MW = 400 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[2].value=40;",
-  "expr": "window.simState.Pwaste",
-  "expected": 300,
-  "tol": 1e-06,
-  "note": "CHP 30 % + 40 %: waste heat 300 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[3].value=4.5;",
-  "expr": "window.simState.Pout",
-  "expected": 4.5,
-  "tol": 1e-06,
-  "note": "cop slider: 4,5 * 1,0 kW = 4,5 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=2;",
-  "expr": "window.simState.Pout",
-  "expected": 6,
-  "tol": 1e-06,
-  "note": "pump power slider: 2,0 kW * 3,0 = 6,0 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=200; r[1].value=25;",
-  "expr": "window.simState.Puse",
-  "expected": 50,
-  "tol": 1e-06,
-  "note": "car power slider: 200 kW at 25 % = 50 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=1730; r[1].value=33;",
-  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
-  "expected": 1730,
-  "tol": 1e-06,
-  "note": "conservation lauhdevoimalaitos P=1730, eta=33, h=None: Puse + Pheat + Pwaste = Pin"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=240; r[1].value=57;",
-  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
-  "expected": 240,
-  "tol": 1e-06,
-  "note": "conservation lauhdevoimalaitos P=240, eta=57, h=None: Puse + Pheat + Pwaste = Pin"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=850; r[1].value=45; r[2].value=40;",
-  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
-  "expected": 850,
-  "tol": 1e-06,
-  "note": "conservation yhteistuotanto P=850, eta=45, h=40: Puse + Pheat + Pwaste = Pin"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=1960; r[1].value=12; r[2].value=7;",
-  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
-  "expected": 1960,
-  "tol": 1e-06,
-  "note": "conservation yhteistuotanto P=1960, eta=12, h=7: Puse + Pheat + Pwaste = Pin"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=137; r[1].value=22;",
-  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
-  "expected": 137,
-  "tol": 1e-06,
-  "note": "conservation automoottori P=137, eta=22, h=None: Puse + Pheat + Pwaste = Pin"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=11; r[1].value=44;",
-  "expr": "window.simState.Puse + window.simState.Pheat + window.simState.Pwaste",
-  "expected": 11,
-  "tol": 1e-06,
-  "note": "conservation automoottori P=11, eta=44, h=None: Puse + Pheat + Pwaste = Pin"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=1960; r[1].value=12; r[2].value=7;",
-  "expr": "window.simState.Puse",
-  "expected": 235.2,
-  "tol": 1e-06,
-  "note": "CHP 1960 MW, 12 %: electricity 235,2 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=850; r[1].value=45; r[2].value=40;",
-  "expr": "window.simState.etaTotal",
-  "expected": 85,
-  "tol": 1e-06,
-  "note": "CHP 45 % + 40 %: total efficiency 85 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=2.7; r[3].value=1.8;",
-  "expr": "window.simState.Pel + window.simState.Pambient",
-  "expected": 4.86,
-  "tol": 1e-06,
-  "note": "conservation heat pump Pel=2.7, cop=1.8: Pel + Pambient = Pout = 4.86 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=2.7; r[3].value=1.8;",
-  "expr": "window.simState.Pout",
-  "expected": 4.86,
-  "tol": 1e-06,
-  "note": "heat pump Pel=2.7, cop=1.8: Pout = cop * Pel"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=4.2; r[3].value=4.6;",
-  "expr": "window.simState.Pel + window.simState.Pambient",
-  "expected": 19.32,
-  "tol": 1e-06,
-  "note": "conservation heat pump Pel=4.2, cop=4.6: Pel + Pambient = Pout = 19.32 kW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=4.2; r[3].value=4.6;",
-  "expr": "window.simState.Pout",
-  "expected": 19.32,
-  "tol": 1e-06,
-  "note": "heat pump Pel=4.2, cop=4.6: Pout = cop * Pel"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65;",
-  "expr": "window.simState.heatShare",
-  "expected": 35,
-  "tol": 1e-06,
-  "note": "CHP cap: 60 % + 65 % is cut to 60 % + 35 % (district heat yields)"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65;",
-  "expr": "Number(document.querySelectorAll('#sim-root input[type=range]')[2].value)",
-  "expected": 35,
-  "tol": 1e-06,
-  "note": "CHP cap moves the district heat slider to 35 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65; r[2].dispatchEvent(new Event('input'));",
-  "expr": "window.simState.eta",
-  "expected": 30,
-  "tol": 1e-06,
-  "note": "CHP cap: after moving the district heat slider to 65 %, electricity drops to 30 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[1].value=60; r[2].value=65; r[2].dispatchEvent(new Event('input'));",
-  "expr": "window.simState.Pwaste",
-  "expected": 50,
-  "tol": 1e-06,
-  "note": "CHP at the cap: waste heat 5 % of 1000 MW = 50 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=61; r[1].value=37;",
-  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Sisään 61,0 = 22,6 + 38,4 kW') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "car readout: energy check line with decimal comma and nbsp before unit"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=61; r[1].value=37;",
-  "expr": "document.querySelector('#sim-root .readout').textContent.includes('η = 22,6 / 61,0 = 37 %') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "car readout: efficiency line"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=61; r[1].value=37;",
-  "expr": "/\\d\\.\\d/.test(document.querySelector('#sim-root .readout').textContent) ? 0 : 1",
-  "expected": 1,
-  "tol": 0,
-  "note": "readout has no decimal point"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "document.querySelector('#sim-root .readout').textContent.includes('ηkok = (300 + 550) / 1000 = 85 %') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "CHP readout: total efficiency 85 %"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Sähkö 300, kaukolämpö 550 MW') && document.querySelector('#sim-root .readout').textContent.includes('Hukkalämpö 150 MW') && document.querySelector('#sim-root .readout').textContent.includes('Sisään 1000 = 300 + 550 + 150 MW') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "CHP readout: energy check"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Energia säilyy: 1,00 + 2,00 = 3,00 kW') && document.querySelector('#sim-root details.note').textContent.includes('ei luo energiaa') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "heat pump: energy check in the readout, 'does not create energy' sentence under Lisätietoja"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "document.querySelector('#sim-root details.note').textContent.includes('avainpalkki on 100 MW') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "Lisätietoja prints the scale key 100 MW at 1000 MW"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); r[0].value=370;",
-  "expr": "window.simState.scale * window.simState.Pin / window.simState.bandTotal",
-  "expected": 1,
-  "tol": 1e-06,
-  "note": "scale: total power fills the whole band width (px per MW = W / Pin)"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=10;",
-  "expr": "window.simState.bandTotal",
-  "expected": 210,
-  "tol": 1e-06,
-  "note": "at 1280 px the band fills its full 210 px whatever the input power"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const t=[...document.querySelectorAll('#sim-root label span')].map(x=>x.textContent); return t.includes('Polttoaineen teho = 1000 MW') && t.includes('Hyötysuhde η = 40 %') ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "lauhde slider labels carry units"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const t=[...document.querySelectorAll('#sim-root label span')].map(x=>x.textContent); return t.includes('Sähköteho = 1,0 kW') && t.includes('Lämpökerroin = 3,0') ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "heat pump slider labels with decimal comma"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const t=[...document.querySelectorAll('#sim-root label span')].map(x=>x.textContent); return t.includes('Kaukolämmön osuus = 55 %') ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "CHP district heat slider label"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.map(l=>l.s).join(' ').startsWith('polttoaine 1000 MW sähkö 400 MW hukkalämpö 600 MW ') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "lauhde canvas labels: name, value and unit (flow labels come first in simState.labels, wrapped lines joined)"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.map(l=>l.s).join(' ').startsWith('polttoaine 60,0 kW mekaaninen teho 18,0 kW hukkalämpö 42,0 kW ') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "car canvas labels with decimal comma and kW (flow labels come first in simState.labels, wrapped lines joined)"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.map(l=>l.s).join(' ').startsWith('sähkö 1,00 kW ulkoilman lämpö 2,00 kW lämpö sisälle 3,00 kW ') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "heat pump canvas labels (flow labels come first in simState.labels, wrapped lines joined)"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.map(l=>l.s).join(' ').startsWith('polttoaine 1000 MW sähkö 300 MW kaukolämpö 550 MW hukkalämpö 150 MW ') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "CHP canvas labels (flow labels come first in simState.labels, wrapped lines joined)"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[2].value=0;",
-  "expr": "window.simState.labels.map(l=>l.s).join(' ').startsWith('polttoaine 1000 MW sähkö 300 MW kaukolämpö 0 MW hukkalämpö 700 MW ') ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "CHP with 0 % district heat still labels the zero flow"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change')); r[0].value=100; r[1].value=60; r[2].value=35;",
-  "expr": "(() => { const b=window.simDebug.boxes, n=Object.keys(b); let bad=0; for (const k of n) { const q=b[k]; if (q[0]<0||q[1]>600||q[2]<0||q[3]>400) bad++; } for (let i=0;i<n.length;i++) for (let j=i+1;j<n.length;j++) { const x=b[n[i]], y=b[n[j]]; if (x[0]<y[1]&&y[0]<x[1]&&x[2]<y[3]&&y[2]<x[3]) bad++; } return bad })()",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { const L=window.simState.labels; let n=0; for (let i=0;i<L.length;i++){ const a=L[i]; if (a.x0<0||a.y0<0||a.x1>600||a.y1>400) n++; for (let j=i+1;j<L.length;j++){ const b=L[j]; if (a.x0<b.x1&&b.x0<a.x1&&a.y0<b.y1&&b.y0<a.y1) n++; } } return L.length>5 ? n : -1 })()",
   "expected": 0,
   "tol": 0,
-  "note": "no canvas text overlaps or leaves the canvas: yhteistuotanto {'P': 100, 'e': 60, 'h': 35}"
+  "note": "no label overlaps or clipping after the cycle (jäähdytys ensin, Q = 1000 J, p2 = 40 kPa)"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change')); r[0].value=10; r[1].value=10;",
-  "expr": "(() => { const b=window.simDebug.boxes, n=Object.keys(b); let bad=0; for (const k of n) { const q=b[k]; if (q[0]<0||q[1]>600||q[2]<0||q[3]>400) bad++; } for (let i=0;i<n.length;i++) for (let j=i+1;j<n.length;j++) { const x=b[n[i]], y=b[n[j]]; if (x[0]<y[1]&&y[0]<x[1]&&x[2]<y[3]&&y[2]<x[3]) bad++; } return bad })()",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,200); S(1,180); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { const L=window.simState.labels; let n=0; for (let i=0;i<L.length;i++){ const a=L[i]; if (a.x0<0||a.y0<0||a.x1>600||a.y1>400) n++; for (let j=i+1;j<L.length;j++){ const b=L[j]; if (a.x0<b.x1&&b.x0<a.x1&&a.y0<b.y1&&b.y0<a.y1) n++; } } return L.length>5 ? n : -1 })()",
   "expected": 0,
   "tol": 0,
-  "note": "no canvas text overlaps or leaves the canvas: automoottori {'P': 10, 'e': 10}"
+  "note": "no label overlaps or clipping after the cycle (jäähdytys ensin, Q = 200 J, p2 = 180 kPa)"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change')); r[0].value=0.5; r[3].value=5;",
-  "expr": "(() => { const b=window.simDebug.boxes, n=Object.keys(b); let bad=0; for (const k of n) { const q=b[k]; if (q[0]<0||q[1]>600||q[2]<0||q[3]>400) bad++; } for (let i=0;i<n.length;i++) for (let j=i+1;j<n.length;j++) { const x=b[n[i]], y=b[n[j]]; if (x[0]<y[1]&&y[0]<x[1]&&x[2]<y[3]&&y[2]<x[3]) bad++; } return bad })()",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,1000); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { const L=window.simState.labels; let n=0; for (let i=0;i<L.length;i++){ const a=L[i]; if (a.x0<0||a.y0<0||a.x1>600||a.y1>400) n++; for (let j=i+1;j<L.length;j++){ const b=L[j]; if (a.x0<b.x1&&b.x0<a.x1&&a.y0<b.y1&&b.y0<a.y1) n++; } } return L.length>5 ? n : -1 })()",
   "expected": 0,
   "tol": 0,
-  "note": "no canvas text overlaps or leaves the canvas: ilmalämpöpumppu {'P': 0.5, 'c': 5}"
+  "note": "no label overlaps or clipping after the cycle (sama paine, Q = 1000 J, p2 = 100 kPa)"
  },
  {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const r=document.querySelector('#sim-root .readout'); const n=r.innerHTML.split(/<br\\s*\\/?>/).filter(x=>x.trim()).length; return n>=3 && n<=4 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "lauhdevoimalaitos: readout keeps to 3-4 short value lines"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.length>0 && window.simState.labels.every(l=>typeof l.s==='string' && [l.x0,l.y0,l.x1,l.y1].every(Number.isFinite) && l.x0>=0 && l.x1<=600 && l.y0>=0 && l.y1<=400) ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "lauhdevoimalaitos: every canvas text is in simState.labels with a box inside the canvas"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const r=document.querySelector('#sim-root .readout'); const n=r.innerHTML.split(/<br\\s*\\/?>/).filter(x=>x.trim()).length; return n>=3 && n<=4 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "yhteistuotanto: readout keeps to 3-4 short value lines"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='yhteistuotanto'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.length>0 && window.simState.labels.every(l=>typeof l.s==='string' && [l.x0,l.y0,l.x1,l.y1].every(Number.isFinite) && l.x0>=0 && l.x1<=600 && l.y0>=0 && l.y1<=400) ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "yhteistuotanto: every canvas text is in simState.labels with a box inside the canvas"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const r=document.querySelector('#sim-root .readout'); const n=r.innerHTML.split(/<br\\s*\\/?>/).filter(x=>x.trim()).length; return n>=3 && n<=4 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "automoottori: readout keeps to 3-4 short value lines"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='automoottori'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.length>0 && window.simState.labels.every(l=>typeof l.s==='string' && [l.x0,l.y0,l.x1,l.y1].every(Number.isFinite) && l.x0>=0 && l.x1<=600 && l.y0>=0 && l.y1<=400) ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "automoottori: every canvas text is in simState.labels with a box inside the canvas"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "(() => { const r=document.querySelector('#sim-root .readout'); const n=r.innerHTML.split(/<br\\s*\\/?>/).filter(x=>x.trim()).length; return n>=3 && n<=4 ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "ilmalämpöpumppu: readout keeps to 3-4 short value lines"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='ilmalämpöpumppu'; s.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.labels.length>0 && window.simState.labels.every(l=>typeof l.s==='string' && [l.x0,l.y0,l.x1,l.y1].every(Number.isFinite) && l.x0>=0 && l.x1<=600 && l.y0>=0 && l.y1<=400) ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "ilmalämpöpumppu: every canvas text is in simState.labels with a box inside the canvas"
- },
- {
-  "expr": "(() => { const k=[...document.getElementById('sim-root').children]; const d=k.find(e=>e.tagName==='DETAILS'); const r=k.findIndex(e=>e.classList.contains('readout')); return d && d.classList.contains('note') && !d.open && d.querySelector('summary').textContent==='Lisätietoja' && k.indexOf(d)===r+1 && d.querySelector('p').textContent.includes('Nuolen leveys on verrannollinen tehoon') ? 1 : 0 })()",
-  "expected": 1,
-  "tol": 0,
-  "note": "explanation sits in a closed details.note 'Lisätietoja' right after the readout"
- },
- {
-  "expr": "[...document.querySelectorAll('#sim-root > p, #sim-root > .note:not(details)')].length",
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,750); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
+  "expr": "(() => { const L=window.simState.labels; let n=0; for (let i=0;i<L.length;i++){ const a=L[i]; if (a.x0<0||a.y0<0||a.x1>600||a.y1>400) n++; for (let j=i+1;j<L.length;j++){ const b=L[j]; if (a.x0<b.x1&&b.x0<a.x1&&a.y0<b.y1&&b.y0<a.y1) n++; } } return L.length>5 ? n : -1 })()",
   "expected": 0,
   "tol": 0,
-  "note": "no explanatory paragraph visible under the canvas outside Lisätietoja"
+  "note": "no label overlaps or clipping after the cycle (jäähdytys ensin, Q = 750 J, p2 = 100 kPa)"
  },
  {
-  "expr": "(() => { const v=[...document.querySelectorAll('#sim-root select')][1]; const o=[...v.options].map(x=>x.text).join(','); return v.closest('label').textContent.startsWith('Nopeus') && o==='hidas,normaali,nopea' && v.options[v.selectedIndex].text==='normaali' && window.simState.speed===1 ? 1 : 0 })()",
-  "expected": 1,
+  "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,1000); S(1,40); D.restart(); D.go(); D.finish();",
+  "expr": "(() => { const L=window.simState.labels; let n=0; for (let i=0;i<L.length;i++){ const a=L[i]; if (a.x0<0||a.y0<0||a.x1>600||a.y1>400) n++; for (let j=i+1;j<L.length;j++){ const b=L[j]; if (a.x0<b.x1&&b.x0<a.x1&&a.y0<b.y1&&b.y0<a.y1) n++; } } return L.length>5 ? n : -1 })()",
+  "expected": 0,
   "tol": 0,
-  "note": "speed select Nopeus: hidas, normaali (default), nopea"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); const v=[...document.querySelectorAll('#sim-root select')][1]; v.value='0.4'; v.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.speed===0.4 && window.simState.Puse===400 && window.simState.Pwaste===600 ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "hidas slows only the animation: powers unchanged"
- },
- {
-  "setup": "const s=document.querySelector('#sim-root select'); const r=document.querySelectorAll('#sim-root input[type=range]'); s.value='lauhdevoimalaitos'; s.dispatchEvent(new Event('change')); const v=[...document.querySelectorAll('#sim-root select')][1]; v.value='1'; v.dispatchEvent(new Event('change'));",
-  "expr": "window.simState.speed",
-  "expected": 1,
-  "tol": 0,
-  "note": "speed back to normaali"
+  "note": "no label overlaps when the piston is up (B, Q = 1000 J)"
  }
 ]

@@ -3,4 +3,4 @@ ok   latex
 ok   build
 ok   sims
 ok   layout 360 px
-fy3-11: draft (science=stale, pedagogy=stale)
+fy3-11: reviewed (science=PASS, pedagogy=PASS)

@@ -1,5 +1,6 @@
 ok   lint
 ok   latex
 ok   build
+ok   sims
 ok   layout 360 px
-fy3-5: draft (science=missing, pedagogy=missing, legacy=stale)
+fy3-5: draft (science=stale, pedagogy=stale, legacy=stale)

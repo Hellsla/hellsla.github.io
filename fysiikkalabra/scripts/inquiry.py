@@ -7,7 +7,7 @@ renders as before. See docs/inquiry.md for the format and docs/inquiry-spec.md f
 
   python scripts/inquiry.py <id>     validate one lesson's inquiry.json and print the errors (exit 1 on any)
 """
-import html as _h, json, pathlib, re, sys
+import hashlib, html as _h, json, pathlib, random, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
@@ -153,9 +153,21 @@ def hints_html(hints):
                                            for i, h in enumerate(hints)) + "</div>"
 
 
+_NO_ERROR = re.compile(r"\s*(Laskussa|Päättelyssä) ei ole virhettä")
+
+
+def choice_order(choices, lid, aid):
+    """The order the options are shown in: shuffled once per activity with a seed from its id, so the page is the
+    same on every build but the correct option is not in the same place from question to question (authors tend to
+    write it second). "Laskussa ei ole virhettä" stays last, where a reader expects it."""
+    rest = [c for c in choices if not _NO_ERROR.match(c["text"])]
+    random.Random(hashlib.sha256(f"{lid}:{aid}".encode()).hexdigest()).shuffle(rest)
+    return rest + [c for c in choices if _NO_ERROR.match(c["text"])]
+
+
 def choice_html(a, md, lid, aid):
     opts = ""
-    for i, c in enumerate(a["choices"]):
+    for i, c in enumerate(choice_order(a["choices"], lid, aid)):
         opts += (f'<li><label><input type="radio" name="{esc(aid)}" value="{i}" data-correct="{"1" if c.get("correct") else "0"}">'
                  f'<span>{inline(md, c["text"])}</span></label><div class="feedback" data-for="{i}" hidden>{md(c["feedback"])}</div></li>')
     reveal = a.get("reveal") or {}

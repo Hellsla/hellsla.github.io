@@ -17,6 +17,6 @@
     "termodynamiikan ensimmäinen pääsääntö",
     "eristetty systeemi"
   ],
-  "sim": false,
+  "sim": true,
   "image": false
 }

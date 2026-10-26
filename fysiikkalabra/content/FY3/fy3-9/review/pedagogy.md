@@ -1,26 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: c5c376b42c58397a
+CONTENT-HASH: 9d4f49ca7d999aed
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-04, L1-05 — one formula but also a Celsius-to-kelvin conversion; the rubric puts conversions at level 2 — fine to keep as the first isobaric and isochoric drills, or move one to level 2.
-- inquiry.json hook — the question "Mikä pussin ilmaan vaikuttava tekijä muuttuu" is long; shorter: "Mikä pussin ilmassa muuttuu lennon aikana, ja voiko muutoksen laskea?"
-- lesson.md Ydinajatus — the plane-bag explanation (paragraph after the first figure) gives the answer to the hook before the reflect step; acceptable because theory comes after the committed predictions, but the sentence "Kireässä pussissa ... kovalta" is hard to follow for a first reader.
-- inquiry.json exp-1 — column header "pV (J)" together with the 1 kPa · 1 ml = 0,001 J remark is a heavy intro; consider showing it only in the sim table note.
-- sim.js / page — Playwright at 390 px found no speed control (hidas · normaali · nopea) and no "Lisätietoja" button, though the particles are animated (house rule 3; fy3-1 preview lacks Lisätietoja too, so possibly a shared-template gap) — add or confirm it is out of scope.
+- inquiry.json exp-2 question — the prompt asks for ml per kelvin, but the table only shows V/T (0,171), which equals that increase only because the line passes through the origin. Add a half-sentence ("V/T kertoo, paljonko tilavuutta on kelviniä kohti"), or the student may not see why 0,171 ml/K is the increase per kelvin.
+- inquiry.json exp-2 question — 1/273 vs 1/293 are close, and fy3-8 values can be quoted either way; the feedback handles it well, but say that γ ≈ 3,4·10⁻³ 1/K is 1/293 K⁻¹ only for a start at 20 °C.
+- exp-2 intro — "mielellään myös 150 °C ja −50 °C" is sensible, but "kirjaa vielä 1" status text could say which temperatures are still missing.
+- On the phone the sim moves under the experiment after "Aseta alkutila"; one line in the intro ("simulaatio siirtyy tähän koetilaan") would help students who scrolled past it.
 
 ## Checked
-- Playwright 390 and 1280 px: no horizontal overflow; pred-1 wrong option (100 kPa) commits, shows "Ennusteesi on tallessa. Palaute näkyy, kun olet tehnyt mittaukset." and the feedback stays hidden.
-- Koe 1: Aseta alkutila, record 50 ml (100000 Pa, 5,00 J), slider to 25 ml, record (200000 Pa, 5,00 J); feedback then appears and matches the table.
-- Reflection shows own prediction ("Ennustit: ...") with prompts for unanswered ones and the En/Kyllä revise question.
-- Hash at start c5c376b42c58397a (rechecked at end).
-- Prior items (p = F/A, gas expansion in fy3-8) match prerequisites fy3-4 and fy3-8; retrieval item is answerable.
-- Predictions 1-3 are refutable by exp-1/exp-2; wrong options have repairing feedback; reveal gated on min measurements.
-- Variable control: exp-1 locks mode and T, varies V; exp-2 locks mode and V, varies T; ranges fit the sim.
-- No answer to the hook is disclosed before commitment; feedback is gated, theory follows the experiments.
-- Interpret table (pV 5040 except 30 ml 5430) supports the stated answer and the three distractor feedbacks.
-- Worked example staged in five steps, symbolic first; figures present at Ydinajatus and Kaava; paragraphs under about 120 words.
-- Exercises 5/4/3; exit ticket tests the core idea (Boyle, 1/V graph, kelvin).
-- Finnish reads correctly, glossary terms used consistently; no case errors found.
-- Workload about an hour: three predictions, two experiments, one interpretation, one transfer, three checks.
+- Ran at 390 px: committed wrong Ennuste 2 (200 ml), feedback stayed hidden ("Palaute näkyy, kun olet tehnyt mittaukset") until 2 measurements; then feedback repaired the misconception.
+- "Aseta alkutila" in Koe 2 switched the sim to isobaarinen, 20 °C, 50 ml and moved the sim inside #exp-2; mode select locked, only the temperature slider varied.
+- Recording 20 °C and 80 °C gave V/T = 0,171 at both (50,0 and 60,2 ml): the experiment can refute 200 ml, 50 ml and 110 ml.
+- The γ question appears only after 2 measurements, is a real reasoning step (the fy3-8 link), and the feedback names the evidence.
+- Options shuffled; the correct answer is not in a fixed position, and feedback text refers to content, not letters.
+- Prerequisite alignment: retrieval item (p = F/A, fy3-4) and prior (fy3-3, fy3-8) match; isobaric case no longer duplicates fy3-3.
+- Lesson form: figures in Ydinajatus and Kaava, no paragraph over about 120 words, example in 5 stages with symbolic solution first.
+- Exercises 5/4/3 per rubric, none repeats the example; exit ticket tests the core idea.
+- Finnish and glossary terms (isoterminen, isobaarinen, isokoorinen, Boylen laki, tilanmuutos) correct; workload is about an hour.
+- The page is usable at 390 px: no clipping in the experiment, the table and the question.

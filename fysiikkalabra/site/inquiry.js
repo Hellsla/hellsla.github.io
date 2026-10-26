@@ -69,6 +69,18 @@
     const tick = () => { if (window.simAdapter) cb(window.simAdapter); else if (Date.now() - t0 < 4000) setTimeout(tick, 100); else cb(null); };
     tick();
   };
+  // The page has one simulation; an experiment that starts brings it next to its own buttons and table, so the
+  // picture, the control being varied and "Kirjaa mittaus" fit one phone screen. Its first place keeps a link.
+  let simHome = null;
+  const bringSim = (ex, id) => {
+    const sim = document.getElementById('sim');
+    if (!sim || ex.contains(sim)) return;
+    if (!simHome) { simHome = document.createElement('p'); simHome.className = 'sim-moved'; sim.before(simHome); }
+    const title = ex.closest('.activity').querySelector('h3')?.textContent || 'kokeeseen';
+    simHome.innerHTML = 'Simulaatio on nyt kokeen kohdalla: <a></a>.';
+    const link = simHome.querySelector('a'); link.href = '#' + id; link.textContent = title;
+    ex.querySelector('.exp-controls').before(sim);
+  };
   document.querySelectorAll('.experiment').forEach((ex) => {
     const id = ex.closest('.activity').id;
     const initial = JSON.parse(ex.dataset.initial), locked = JSON.parse(ex.dataset.locked), vary = ex.dataset.vary, measure = JSON.parse(ex.dataset.measure), min = Number(ex.dataset.min || 2);
@@ -106,7 +118,7 @@
         A.set(initial); locked.forEach((k) => A.lock(k, true)); A.lock(vary, false);
         armed = true; rec.disabled = false;
         say(`Alkutila asetettu. ${lockedNames.length ? 'Vakiona: ' + lockedNames.join(', ') + '. ' : ''}Säädä ${varyName}, anna simulaation pyöriä ja paina Kirjaa mittaus.`);
-        document.getElementById('sim')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        bringSim(ex, id); rec.scrollIntoView({ behavior: 'smooth', block: 'end' });
       });
       rec.addEventListener('click', () => {
         if (!armed) { say('Aseta ensin alkutila.'); return; }

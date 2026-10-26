@@ -253,7 +253,7 @@
   },
   {
     "term": "kaasun tekemä työ",
-    "definition": "Työ, jonka laajeneva kaasu tekee ympäristöön työntäessään mäntää. Vakiopaineessa se on W = pΔV, ja (V, p)-kuvaajassa se on kuvaajan alle jäävä pinta-ala.",
+    "definition": "Työ, jonka laajeneva kaasu tekee ympäristöön työntäessään mäntää. Vakiopaineessa se on Wₖ = pΔV, ja (V, p)-kuvaajassa se on kuvaajan alle jäävä pinta-ala.",
     "lessons": [
       "fy3-11"
     ],
