@@ -57,7 +57,7 @@
   <line x1="916.5" y1="108" x2="926.5" y2="106" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="916.5" y1="134" x2="926" y2="136.5" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="904.5" y1="157.5" x2="912" y2="163.5" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M860,120 L900,72" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M860,120 L900,72" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="860" cy="120" r="8" fill="#1f2933"/>
   <rect x="780" y="120" width="12" height="300" fill="#6c757d"/>
   <rect x="740" y="408" width="92" height="12" rx="3" fill="#6c757d"/>

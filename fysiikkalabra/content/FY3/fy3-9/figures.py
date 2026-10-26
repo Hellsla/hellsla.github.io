@@ -172,7 +172,7 @@ def hero():
     f.path("M60,430 H760 L720,480 H100 Z", H.RULE, H.INK, 3)
     f.rect(100, 480, 620, 16, H.MUTED)
     # the puffed crisp bag
-    f.path("M260,250 Q250,320 262,420 Q380,438 500,420 Q512,320 500,250 Q380,234 260,250 Z", H.COLD, H.INK, 3)
+    f.path("M260,250 Q206,335 262,420 Q380,462 500,420 Q556,335 500,250 Q380,208 260,250 Z", H.COLD, H.INK, 3)
     f.path("M248,246 H512 L506,268 H254 Z", H.ALUMINIUM, H.INK, 2.5)
     f.path("M252,412 H508 L514,434 H246 Z", H.ALUMINIUM, H.INK, 2.5)
     f.path("M300,300 Q380,284 460,300", stroke=H.WHITE, w=4, extra='stroke-opacity="0.7" stroke-linecap="round"')

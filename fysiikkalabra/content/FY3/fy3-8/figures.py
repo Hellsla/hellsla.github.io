@@ -116,13 +116,17 @@ def hero():
             f.line(x, y, x, y - 14 - 50 * t, H.ALUMINIUM, 2 + 3 * t)
         f.path(f"M{600 + side * 40},288 L{600 + side * 400},540", stroke=H.ALUMINIUM, w=6)
     # comb joint across the road: two steel plates with interlocking teeth
-    y0, y1 = 500, 540
-    f.path(f"M{264},{y0} H{936} L{960},{y1} H{240} Z", H.METAL_EDGE)
-    for k in range(24):
-        x = 270 + k * 28
-        f.path(f"M{x},{y0} h12 l2,{y1 - y0 - 10} h-16 Z", H.ALUMINIUM, H.INK, 1.5)
-        f.path(f"M{x + 14},{y1} h12 l-2,{-(y1 - y0 - 10)} h-8 Z", H.IRON, H.INK, 1.5)
-    f.line(240, y1, 960, y1, H.INK, 3); f.line(264, y0, 936, y0, H.INK, 3)
+    y0, y1 = 468, 536
+    hw0, hw1 = 40 + 360 * (y0 - 300) / 300, 40 + 360 * (y1 - 300) / 300      # half-widths of the road at the joint's edges
+    f.path(f"M{H.n(600 - hw0)},{y0} H{H.n(600 + hw0)} L{H.n(600 + hw1)},{y1} H{H.n(600 - hw1)} Z", H.METAL_EDGE)
+    teeth = 22
+    for k in range(teeth):
+        t0, t1 = (k + 0.1) / teeth, (k + 0.5) / teeth
+        xa = lambda t, y, hw: 600 - hw + 2 * hw * t
+        f.path(f"M{H.n(xa(t0, y0, hw0))},{y0} L{H.n(xa(t1, y0, hw0))},{y0} L{H.n(xa(t1, y1 - 12, hw1 - 12 * 1.2))},{y1 - 12} L{H.n(xa(t0, y1 - 12, hw1 - 12 * 1.2))},{y1 - 12} Z", H.ALUMINIUM, H.INK, 1.5)
+        u0, u1 = (k + 0.55) / teeth, (k + 0.95) / teeth
+        f.path(f"M{H.n(xa(u0, y1, hw1))},{y1} L{H.n(xa(u1, y1, hw1))},{y1} L{H.n(xa(u1, y0 + 12, hw0 + 14))},{y0 + 12} L{H.n(xa(u0, y0 + 12, hw0 + 14))},{y0 + 12} Z", H.IRON, H.INK, 1.5)
+    f.line(600 - hw0, y0, 600 + hw0, y0, H.INK, 3); f.line(600 - hw1, y1, 600 + hw1, y1, H.INK, 3)
     # the car, from behind
     f.rect(536, 360, 128, 70, H.COLD, H.INK, 3, 14)
     f.path("M552,360 L566,322 H634 L648,360 Z", H.GLASS, H.INK, 3)
