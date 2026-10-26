@@ -1,25 +1,25 @@
 VERDICT: PASS
-CONTENT-HASH: 32171daf1820acd1
+CONTENT-HASH: 77f93e9fe50a5b6d
 
 ## Blocking
+
 (none)
 
 ## Polish
-- inquiry.json pred-3 (Cem) — the sim cannot vary particle mass, so "light particle presses less, cancels" is argued, not tested; Koe 1 refutes Aino only via the hook's equal-pressure premise. Fix: one sentence in pred-3 or reflect saying the sim keeps particle mass fixed and the mass-independence comes from the equation.
-- inquiry.json pred-2 prompt — gives "nopeudet kasvavat 1,41-kertaisiksi" up front, which hands students the square-root step; consider letting them predict the speed factor too.
-- inquiry.json taulukko — table varies V though neither experiment varies V alone; V enters only through the table and Boyle retrieval. Acceptable, but a third mini-experiment on V would close the loop.
-- lesson.md figure 1 aria-label — "lasikuplan näköistä palloa" reads oddly; use "kaksi yhtä suurta ilmapalloa".
-- Playwright (390 and 1280 px): Koe 2 recorded after only 3 s at default speed gave 1,25 at 300 K and 117 hits/s (model 1,00 and 94), because the 2 s sim-time average is not settled; the intro says wait 4 s, but Aseta alkutila could clear the average itself and Kirjaa mittaus could wait for a full window.
+
+1. inquiry.json punnitus: the weighing is doable (four divisions), but mol and M are unexplained when the table appears, and the correct option prints "noin 0,207 mol", so it can be picked without computing. Add "M on yhden moolin massa; mooli on tietty hiukkasmäärä" to the text and ask first for a numeric m/M (helium), then the comparison.
+2. sim readout, exp-1, exp-2: the sim shows the formula "(N/100)(T/300)(100/V)" and a "p/p_ref malli" column, so Koe 1 and the 600 K challenge can be solved by setting N until malli = 1,00, with no reasoning. Hide the model value until the row is recorded (or until the answer is given); as is, the instrument states the relation the experiments should uncover.
+3. pred-1 reveal gate: Koe 1 varies only N in a one-species sim, so it cannot refute "ilmapallossa enemmän"; only the weighing can. Gate the reveal on punnitus too. The feedback claim that light, fast He hits "kumoavat toisensa" has no evidence in the lesson (no mass control); soften it or lean on the weighing.
+4. Scope and workload: pred-2, Koe 2's hit-rate comparison and check-3 (1,41 · 1,41 ≈ 2, impulse per hit) go beyond the slot and lean on momentum (FY4). With exercises the path is roughly 80-90 min; dropping pred-2 and check-3 brings it near an hour. Pred-2's prompt also gives away "1,41-kertaisiksi".
+5. R is told, not found: the pV/(NT) column and the R computation in Kaava are precomputed. Let the student compute one value (pV/(nT) from the helium row) before Selitä.
 
 ## Checked
-- Tried in Playwright at 390 and 1280 px: wrong pred-1 feedback hidden until two measurements, then shown; Koe 1 with real slider gave 1,02 / 1,99 against model 1,00 / 2,00; reflection lists each prediction with verdict; speed select (3 options) and Lisätietoja work. (Synthetic input events do not move the slider; only real key input does.)
-- Phone screenshots (390 px): both figures legible and next to their paragraphs; sim readout, speed control, Lisätietoja and Nollaa mittaus all usable, nothing clipped.
-- Opening question is answered only in theory/reflect, after commitment and experiments.
-- Retrieval item matches fy3-9 (Boyle); wrong options carry repairing feedback.
-- Exp-1 and exp-2 lock the other two parameters, vary one, min 2; predictions can be refuted.
-- Interpret table values recomputed: pV/(NT) column correct.
-- Worked example has 5 stages, symbolic first, no repeat in exercises; levels 5/4/3 fit the rubric.
-- Transfer task (hot-air balloon) answer and mistake values recomputed correctly; hints progressive.
-- Exit ticket tests the core idea (n from pV/RT, composition independence, p proportional to T).
-- Finnish reads correctly; glossary terms used consistently.
-- Workload fits one lesson.
+
+- Hash 77f93e9fe50a5b6d at start and end.
+- Page order: predictions, weighing, sim, experiments, table, then theory; Ydinajatus (the answer) sits after Tutki, so the balloon answer is not visible before commitment.
+- Pred-1/pred-2 feedback stays hidden after clicking an option (gated).
+- Weighing arithmetic and values match (0,2064-0,2076 mol).
+- Aseta alkutila moves the sim to the Koe 2 state (N 100, T 600); slider steps allow N = 50.
+- Sim at 390 px: bars, labels and speed control legible, nothing clipped.
+- Retrieval (Boyle) matches fy3-9 prerequisite; exercises 5/4/3, none repeats the example; exit ticket tests n independent of gas.
+- Staged example has five stages; figures sit beside Ydinajatus and Kaava.
