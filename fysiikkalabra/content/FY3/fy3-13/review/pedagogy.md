@@ -1,23 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: f9bbdacd430c964b
+VERDICT: PASS
+CONTENT-HASH: 3c24eb22be807efc
 
 ## Blocking
-- inquiry.json activities `ennuste-1` and `ennuste-2` (choices[].feedback) — the predictions have no `reveal`, so the feedback appears the moment the student presses Vastaa, before any data has been seen. It quotes "aineisto" the student has not met and discloses results that Tutki then asks them to compute: k ≈ 0,37 kPa/°C, "−260 °C ja −292 °C", "−276 ± 16 °C" (answers of `suora` −276 and `epavarmuus` 15,7). An answer is disclosed before the student acts. Fix: rewrite every option's feedback of both predictions conceptually, with no figures from the data (for example "Tutki aineistoa ja palaa tähän: onko muutos yhtä suuri jokaista astetta kohti?"), and let the numbers appear only in `pohdi` or in the later tasks.
-- solutions.md, `fy3-13-L2-03` Järkevyys — "Ylipaineen nolla olisi noin 9 °C:ssa" is wrong. The gauge pressure is 9,0 kPa at 30 °C and the slope is 0,3667 kPa/°C, so the gauge reads zero at about 5,5 °C (30 − 9/0,3667). The point of the remark is right, the number is not. Fix: "noin 5,5 °C:ssa".
+- none. Both round-1 blockers are fixed: the Ennusta feedback now holds no figures from the data and only points to the Tutki data; solutions.md L2-03 now says "noin 5,5 °C:ssa" (30 − 9/0,3667 = 5,5, correct).
 
 ## Polish
-- inquiry.json `ennuste-1` prompt — "mittauspisteet merkitään kuvaajaan", but no graph or table is shown in Ennusta. Show the table (or one small graph) in the prompt, so the prediction can be argued from data, or drop the sentence.
-- Tutki figures (`suora`, `epavarmuus`) end at θ = 0 °C, so the central idea, the extension to zero pressure, is first seen in the Kaava figure after Tutki. Use the wide-range figure (as in the Kaava section) in `suora`, or add a second view there, so the student sees what the answer −276 °C means.
-- lesson.md:193 — "tulos pyöristetään samaan kymmenen asteen tarkkuuteen" does not match "−276 ± 16 °C" (unit-degree accuracy). Fix: "tulos pyöristetään samaan asteen tarkkuuteen kuin epävarmuus".
-- The student only computes from given lines and never judges them. Add a short choice, for example "Kulkeeko tämä suora kaikkien epävarmuusjanojen kautta?", so that drawing the extreme lines (the Täsmennys of the slot) is practised. Also the worked example reads the point (0 °C; 101,3 kPa) from the line, outside the measured range 10–100 °C; one sentence on that would help.
-- exercises.json `fy3-13-L2-04` — the question is hard to parse. Better: "Kuinka monta prosenttia lämpötilan epävarmuuden aiheuttama paineen muutos on paineen epävarmuudesta?" Also the correct option of each prediction is the longest and most hedged, so it can be guessed.
+- `ennuste-2` prompt says the line is extended "yli 270 °C:n verran", which already places the zero point near −270 °C. Say "kauas mittausalueen ulkopuolelle" and let the student find the distance in Tutki.
+- Ennusta feedback still appears on Vastaa, but it is now conceptual and gated on commitment, so this is acceptable. The correct option of `ennuste-2` is still the longest.
+- `aariviiva` figure: s1 and s2 are two grey dashed lines almost on top of each other at 390 px. They are told apart only by the labels, and the feedback's list of missed segments (10, 70, 85, 100 °C) is hard to verify by eye. Colour the rejected line, or exaggerate s2 a little (it is the only place in Tutki where the student judges a line, so it should be easy to see).
+- `epavarmuus` figure (Tutki) still ends at 0 °C, so the extreme lines look the same there. The wide-range view is in `suora` and in the Kaava figure, so this is acceptable.
 
 ## Checked
-- Learning path: prior (kelvin proportionality), hook, model, example, transfer and checks follow one another; the slot's goals (straight line, extrapolation, uncertainty) are covered, nothing extra.
-- Worked example: 5 stages, one step each, symbolic first, then substitution; the numbers recomputed (k 0,367, −276,0, −260,3, −291,7, 15,7).
-- Hints, mistake values and answers in `suora`, `siirto`, `virhe`, `tarkistus-2` recomputed: correct (−276, −277, −316 → −276, −283).
-- Exercises: counts 5/4/3, answers recomputed, none repeats the example; L3 asks for reasoning, but only the number is checked.
-- Figures 390 px: the gas thermometer is recognisable (gauge, thermometer, flask, heat arrows) and its LaTeX labels are legible; the data figures are uncluttered, and the dashed extreme lines are told apart by labels, not colour alone. At 1280 px the figure sits beside its paragraph.
-- Exit ticket tests the core idea (why the line misses points, slope, agreement with −273,15 °C).
-- Finnish: glossary terms used correctly, no lesson ids in student text (chapter name only), decimal commas, number+unit forms fine.
-- Workload is about one lesson; no simulation, which fits (data, graph, model).
+- Round-1 items: figure-free feedback; wide-range figure added in `suora` (extension, labelled "mittausalue", "ekstrapolointi", θ₀ = ?); new `aariviiva` choice practises the Täsmennys (does a line pass through every uncertainty bar), with an option-specific repair for each wrong answer (rechecked: s2 slope 0,42 misses 10, 70, 85, 100 °C); the lesson text now says that the 0 °C point is read from the extension; rounding sentence and Δθ₀ = 18 °C consistent everywhere (example, `epavarmuus`, `tarkistus-1`, summary); `ennuste-1` no longer mentions a graph; L2-04 reworded and clear.
+- Learning path: hook, retrieval of the kelvin proportionality, predictions, data, line, uncertainty, theory, reflection, example, error-finding, transfer, three checks, exit ticket, exercises last. Covers the slot's goals (straight line, extrapolation to zero pressure, uncertainty), nothing outside FY3.
+- Example: 5 stages, one step each, symbolic before substitution, LaTeX throughout. Hints, mistake values and answers recomputed (−276, −277, −283, 18,1, 20,3).
+- Exercises 5/4/3, none repeats the example; solutions in the given/wanted/formula/substitution form; no lesson ids in student text.
+- Figures: gas thermometer recognisable and its LaTeX labels legible at 390 px; at 1280 px it sits beside its paragraph. Data figures are uncluttered, with a labelled axis in LaTeX, and are enlarged with the axis start stated. Prediction box and options read at phone width.
+- Finnish and terms correct (mittausepävarmuus, ekstrapolointi, absoluuttinen nollapiste). Workload is about one lesson; no simulation is right for a data, graph and model topic.
