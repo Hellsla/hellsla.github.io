@@ -130,6 +130,7 @@ def collect(lid, session=None, rnd="", since=None):
     rows = read_rows(f); by_ref = {r.get("ref"): i for i, r in enumerate(rows) if r.get("ref")}
     new = []
     for t in sorted((sf.parent / sid / "subagents").glob("agent-*.jsonl")):
+        if since and (json.loads(t.read_text().splitlines()[0]).get("timestamp") or "") < since: continue   # an agent from before this run
         s = read_transcript(t)
         lessons = set(LESSON.findall(s["prompt"]))
         if lid not in lessons or (len(lessons) > 1 and f"Lesson: {lid}" not in s["prompt"]): continue
