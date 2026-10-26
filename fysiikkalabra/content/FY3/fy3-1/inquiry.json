@@ -105,7 +105,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Valitse taivaankappale ja säädä massaa. Seuraa jousen venymää, punaista painon nuolta ja palkkikaaviota, jossa sama massa on punnittu kaikilla neljällä taivaankappaleella. Lukemat ovat mallin arvoja, jotka simulaatio laskee kaavasta: se olettaa, että putoamiskiihtyvyys on taivaankappaleen pinnalla vakio."
+      "text": "Valitse taivaankappale ja säädä massaa.",
+      "howto": "Seuraa jousen venymää, punaista painon nuolta ja palkkikaaviota, jossa sama massa on punnittu kaikilla neljällä taivaankappaleella.",
+      "model": "Lukemat ovat mallin arvoja, jotka simulaatio laskee kaavasta: se olettaa, että putoamiskiihtyvyys on taivaankappaleen pinnalla vakio."
     },
     {
       "id": "exp-1",

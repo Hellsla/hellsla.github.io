@@ -8,23 +8,23 @@ Kun voima jakautuu pinnalle, sen vaikutus riippuu siitä, kuinka suurelle alalle
 Kaasun paine syntyy mikromallin mukaan hiukkasten törmäyksistä astian seinämään. Nesteen paine syntyy nesteen omasta painosta: jokaisen vesikerroksen yllä on vettä, joka painaa sitä. Mitä syvemmällä ollaan, sitä enemmän vettä on yläpuolella ja sitä suurempi paine on. Levossa olevassa nesteessä pinnan alla olevaan vaakasuoraan pintaan, jonka pinta-ala on A, kohdistuu sen yläpuolisen vesipatsaan paino. Patsaan korkeus on syvyys h ja tilavuus V = Ah. Tiheys ρ on massa tilavuutta kohti (m = ρV), joten patsaan massa on ρAh ja paino G = mg = ρAhg. Paine on paino jaettuna alalla, joten pinta-ala supistuu pois ja jäljelle jää ρgh. Tätä nesteen painosta syntyvää painetta sanotaan hydrostaattiseksi paineeksi. Se ei riipu astian muodosta eikä veden kokonaismäärästä, vaan ainoastaan syvyydestä ja nesteen tiheydestä.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Vesipatsas, jonka pohjan pinta-ala on A ja korkeus syvyys h. Patsaan paino G = ρAhg painaa pohjaa alaspäin, ja paine on paino jaettuna alalla, p = G/A = ρgh: pinta-ala supistuu pois. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <rect x="30" y="50" width="340" height="230" fill="currentColor" fill-opacity="0.1"/>
-  <line x1="30" y1="50" x2="370" y2="50" stroke="currentColor" stroke-width="3"/>
-  <polyline points="30,20 30,280 370,280 370,20" fill="none" stroke="currentColor" stroke-width="3"/>
-  <text x="200" y="36" text-anchor="middle" fill="currentColor">vesipinta</text>
-  <rect x="170" y="50" width="80" height="170" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="2" stroke-dasharray="7 5"/>
-  <line x1="170" y1="220" x2="250" y2="220" stroke="currentColor" stroke-width="6"/>
-  <line x1="210" y1="80" x2="210" y2="190" stroke="currentColor" stroke-width="4"/>
-  <polygon points="198,186 222,186 210,212" fill="currentColor"/>
+  <rect x="30" y="50" width="340" height="230" fill="#a9d1f0" fill-opacity="0.45"/>
+  <line x1="30" y1="50" x2="370" y2="50" stroke="#2f74b5" stroke-width="3"/>
+  <polyline points="30,20 30,280 370,280 370,20" fill="none" stroke="#1f2933" stroke-width="3"/>
+  <text x="200" y="36" text-anchor="middle" fill="#1f2933">vesipinta</text>
+  <rect x="170" y="50" width="80" height="170" fill="#2f74b5" fill-opacity="0.3" stroke="#1f2933" stroke-width="2" stroke-dasharray="7 5"/>
+  <line x1="170" y1="220" x2="250" y2="220" stroke="#1f2933" stroke-width="6"/>
+  <line x1="210" y1="80" x2="210" y2="190" stroke="#1f2933" stroke-width="4"/>
+  <polygon points="198,186 222,186 210,212" fill="#1f2933"/>
   <foreignObject x="110" y="108" width="54" height="48" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$G$</div></foreignObject>
   <foreignObject x="184" y="226" width="52" height="48" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$A$</div></foreignObject>
-  <line x1="275" y1="50" x2="275" y2="220" stroke="currentColor" stroke-width="2"/>
-  <line x1="267" y1="50" x2="283" y2="50" stroke="currentColor" stroke-width="2"/>
-  <line x1="267" y1="220" x2="283" y2="220" stroke="currentColor" stroke-width="2"/>
+  <line x1="275" y1="50" x2="275" y2="220" stroke="#1f2933" stroke-width="2"/>
+  <line x1="267" y1="50" x2="283" y2="50" stroke="#1f2933" stroke-width="2"/>
+  <line x1="267" y1="220" x2="283" y2="220" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="286" y="112" width="50" height="48" style="font-size:32px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$h$</div></foreignObject>
-  <text x="390" y="40" fill="currentColor">patsaan paino</text>
+  <text x="390" y="40" fill="#1f2933">patsaan paino</text>
   <foreignObject x="390" y="52" width="205" height="48" style="font-size:30px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$G = \rho A h g$</div></foreignObject>
-  <text x="390" y="140" fill="currentColor">paine pohjalla</text>
+  <text x="390" y="140" fill="#1f2933">paine pohjalla</text>
   <foreignObject x="390" y="152" width="205" height="48" style="font-size:30px"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$p = G/A = \rho g h$</div></foreignObject>
 </svg>
 
@@ -34,7 +34,7 @@ Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine, joka on merenpinnan
 
 Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta puolilta, joten muuria kuormittaa vain veden ylipaine eli paineen ilmanpainetta suurempi osa. Ylipaine on yläreunassa nolla ja kasvaa syvyyden mukana tasaisesti: 30 metrin syvyydessä se on noin 290 kPa, eli jokaiseen muurin neliömetriin kohdistuu noin 290 kN:n voima. Siksi muurin alaosan on kestettävä paljon suurempi voima kuin yläosan, ja muuri tehdään pohjalta paksuksi.
 
-## Kaava
+## Kaava: Paine ja hydrostaattinen paine
 Paine on pintaa vastaan kohtisuora voima jaettuna pinta-alalla:
 ```latex
 p = \frac{F}{A}
@@ -47,21 +47,21 @@ p = p_0 + \rho g h
 ```
 missä p₀ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), ρ nesteen tiheys (kg/m³), g = 9,81 m/s² ja h syvyys pinnasta (m). Termi ρgh on hydrostaattinen paine eli ylipaine Δp = p − p₀, joka kertoo, kuinka paljon paine on pinnan painetta suurempi. Kuvaaja (h, p) on suora, jonka kulmakerroin on ρg ja vakiotermi p₀, kuten FY1:n lineaarisessa mallissa y = kx + b. Vedelle ρ = 1000 kg/m³, joten paine kasvaa 9,81 kPa jokaista metriä kohti.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Veden paine syvyyden funktiona on suora: pinnalla paine on ilmanpaine 101 kPa ja 10 metrin syvyydessä noin 199 kPa" style="max-width:100%;font-family:system-ui,sans-serif;font-size:22px">
-  <line x1="80" y1="250" x2="570" y2="250" stroke="currentColor" stroke-width="3"/>
-  <line x1="80" y1="250" x2="80" y2="30" stroke="currentColor" stroke-width="3"/>
-  <line x1="80" y1="150" x2="520" y2="52" stroke="currentColor" stroke-width="4"/>
-  <line x1="80" y1="150" x2="520" y2="150" stroke="currentColor" stroke-width="2" stroke-dasharray="8 6"/>
-  <circle cx="80" cy="150" r="6" fill="currentColor"/><circle cx="520" cy="52" r="6" fill="currentColor"/>
-  <text x="66" y="258" text-anchor="end" fill="currentColor">0</text>
-  <text x="66" y="157" text-anchor="end" fill="currentColor">101</text>
-  <text x="66" y="59" text-anchor="end" fill="currentColor">199</text>
-  <text x="90" y="28" fill="currentColor">p (kPa)</text>
-  <text x="80" y="284" text-anchor="middle" fill="currentColor">0</text>
-  <text x="520" y="284" text-anchor="middle" fill="currentColor">10</text>
-  <text x="575" y="238" text-anchor="end" fill="currentColor">h (m)</text>
-  <text x="300" y="178" text-anchor="middle" fill="currentColor">ilmanpaine p₀</text>
-  <text x="310" y="132" fill="currentColor">p = p₀ + ρgh</text>
+<svg viewBox="0 0 600 300" role="img" aria-label="Veden paine syvyyden funktiona on suora: pinnalla paine on ilmanpaine 101 kPa ja 10 metrin syvyydessä noin 199 kPa" style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
+  <line x1="80" y1="250" x2="570" y2="250" stroke="#1f2933" stroke-width="3"/>
+  <line x1="80" y1="250" x2="80" y2="30" stroke="#1f2933" stroke-width="3"/>
+  <line x1="80" y1="150" x2="520" y2="52" stroke="#2f74b5" stroke-width="4"/>
+  <line x1="80" y1="150" x2="520" y2="150" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
+  <circle cx="80" cy="150" r="6" fill="#1f2933"/><circle cx="520" cy="52" r="6" fill="#1f2933"/>
+  <text x="66" y="258" text-anchor="end" fill="#1f2933">0</text>
+  <text x="66" y="157" text-anchor="end" fill="#1f2933">101</text>
+  <text x="66" y="59" text-anchor="end" fill="#1f2933">199</text>
+  <text x="90" y="28" fill="#1f2933">p (kPa)</text>
+  <text x="80" y="284" text-anchor="middle" fill="#1f2933">0</text>
+  <text x="520" y="284" text-anchor="middle" fill="#1f2933">10</text>
+  <text x="575" y="238" text-anchor="end" fill="#1f2933">h (m)</text>
+  <text x="300" y="178" text-anchor="middle" fill="#1f2933">ilmanpaine p₀</text>
+  <text x="310" y="132" fill="#1f2933">p = p₀ + ρgh</text>
 </svg>
 
 ## Esimerkki

@@ -133,7 +133,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$. Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %. Lukemat ovat mallin arvoja, joissa kerroin α oletetaan vakioksi, eivät mittauksia oikeasta sauvasta."
+      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$.",
+      "howto": "Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %.",
+      "model": "Lukemat ovat mallin arvoja, joissa kerroin α oletetaan vakioksi, eivät mittauksia oikeasta sauvasta."
     },
     {
       "id": "exp-1",

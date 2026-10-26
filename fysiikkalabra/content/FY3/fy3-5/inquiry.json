@@ -106,7 +106,9 @@
       "id": "kokeile",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa on sylinteri, jossa on 40 kaasun hiukkasta, ja mäntä. *Työnnä mäntää* puristaa kaasun tilavuuteen 75 %, ja *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän: se kimpoaa nopeampana. Pylväät näyttävät männän kaasuun tekemän työn W, seinien läpi kaasuun siirtyneen lämpömäärän Q ja sisäenergian muutoksen ΔU. Luvut ovat mallin arvoja: mallin kaasu vastaa lämpökapasiteetiltaan 0,50 g:aa ilmaa. Kokeile vapaasti, myös männän vetämistä ulos."
+      "text": "Simulaatiossa on sylinteri, jossa on 40 kaasun hiukkasta, ja mäntä. Kokeile vapaasti, myös männän vetämistä ulos.",
+      "howto": "*Työnnä mäntää* puristaa kaasun tilavuuteen 75 %, ja *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän: se kimpoaa nopeampana. Pylväät näyttävät männän kaasuun tekemän työn W, seinien läpi kaasuun siirtyneen lämpömäärän Q ja sisäenergian muutoksen ΔU.",
+      "model": "Luvut ovat mallin arvoja: mallin kaasu vastaa lämpökapasiteetiltaan 0,50 g:aa ilmaa."
     },
     {
       "id": "koe-1",
