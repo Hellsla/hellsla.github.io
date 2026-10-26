@@ -2,6 +2,12 @@
 
 A standalone pixel office inspired by Fysiklabbet's agent office. Open `agent-office/index.html` through a static web server. No npm install, build step, CDN or API key is needed; the font is already in this repository. The drawing lives in `office-scene.js`, separately from the history and evidence controller in `office.js`.
 
+The **FI / EN** button switches the controls, canvas labels, status messages, role/about dialogs and speech bubbles between Finnish and English. Finnish is the initial default; the choice is remembered locally and can be overridden with `?lang=fi` or `?lang=en`. Commit messages, file names and authored lesson titles remain unchanged. Translations are bundled locally in `office-i18n.js`; no translation service or network request is used.
+
+**Office only / Vain toimisto** fills the viewport with just the office and hides the header, panels, timeline and surrounding controls. Open `agent-office/?view=office&lang=fi` (or `lang=en`) directly for presentation. Playback starts automatically unless reduced motion is selected. Move the pointer or touch the screen to reveal small language, pause and return controls, which fade away when idle. Escape restores the full interface; Space pauses/resumes when the office canvas has focus. Presentation also works within the existing fullscreen mode.
+
+Funny speech bubbles follow the illustrated task: checking units, waiting for a second report, revising stale work, or waiting for publication approval. They never invent a successful review or approval. The **Speech bubbles / Puhekuplat** checkbox hides them. The coffee lounge has a sofa, coffee machine and mugs. At most one idle colleague takes an occasional break, returns before their next handoff, and does not interrupt an active delivery or delay the other reviewer. Breaks rotate across loops and remain illustrations; they never pause real agents, change logs or write lesson files. Both features respect pause and reduced motion.
+
 ```sh
 cd /workspace/hellsla.github.io
 python3 agent-office/export_history.py

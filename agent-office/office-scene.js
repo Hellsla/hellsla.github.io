@@ -3,6 +3,7 @@
 window.AgentOfficeScene = {
   create(canvas, options) {
     const ctx = canvas.getContext('2d');
+    const tr=value=>window.OfficeI18n?.t(value) ?? value;
     const C = {ink:'#ece4ce',muted:'#b8b8a9',gold:'#edba70',blue:'#8cb8e0',pink:'#e9a1b4',green:'#9ccb9b',red:'#e89885',amber:'#d7b474'};
     const stations = [
       {id:'developer',x:18,y:18,w:398,h:270,title:'DEVELOPMENT WORKSHOP',sub:'Text · exercises · simulations',floor:'#4b5350',accent:C.gold},
@@ -26,8 +27,8 @@ window.AgentOfficeScene = {
     };
     let figurePositions=[];
     function box(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(x,y,w,h);}
-    function text(s,x,y,color=C.ink,size=13,align='left') {ctx.font=`${size}px monospace`;ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(s,x,y);}
-    function pill(s,x,y,color=C.gold,w=120){box(x-w/2,y-14,w,22,'#222d31');text(s,x,y+1,color,11,'center');}
+    function text(s,x,y,color=C.ink,size=13,align='left') {ctx.font=`${size}px monospace`;ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(tr(s),x,y);}
+    function pill(s,x,y,color=C.gold,w=120){ctx.font='11px monospace';w=Math.max(w,(ctx.measureText?.(tr(s)).width || tr(s).length*6.6)+16);box(x-w/2,y-14,w,22,'#222d31');text(s,x,y+1,color,11,'center');}
     function plant(x,y){box(x-11,y,22,19,'#ad8060');box(x-14,y-2,28,5,'#c49b70');box(x-2,y-36,4,36,'#7f9863');box(x-19,y-24,18,9,'#8aaa72');box(x+2,y-36,18,11,'#98b37a');box(x-12,y-46,12,12,'#6c8b58');}
     function shelf(x,y,w=105){box(x,y,w,54,'#806e53');for(let row=0;row<2;row++){box(x+5,y+5+row*23,w-10,19,'#2e3a39');for(let i=0;i<Math.floor((w-10)/9);i++)box(x+7+i*9,y+8+row*23+(i%2)*3,6,14-(i%2)*3,['#c6a16c','#8daaa0','#b8827d','#a5a6bd'][i%4]);box(x,y+23+row*23,w,4,'#a18a65');}}
     function room(s){
@@ -124,19 +125,48 @@ window.AgentOfficeScene = {
       result.facing=[(b[0]-a[0])/(path.lengths[i]||1),(b[1]-a[1])/(path.lengths[i]||1)];return result;
     }
     const journeys={
-      brief:[[150,668],[173,535],[173,335],[230,335],[260,220]],
+      brief:[[150,668],[173,535],[370,505],[370,335],[230,335],[260,220]],
       checks:[[212,202],[230,335],[495,335],[495,654]],
       science:[[605,202],[610,318],[495,318],[495,654],[495,318],[610,318],[605,202]],
       pedagogy:[[990,202],[990,346],[522,346],[495,654],[522,346],[990,346],[990,202]],
       scienceReport:[[605,202],[610,325],[672,325],[716,425],[672,325],[610,325],[605,202]],
       pedagogyReport:[[990,202],[990,375],[830,375],[773,425],[830,375],[990,375],[990,202]],
-      fix:[[212,202],[230,475],[682,475],[716,425],[682,475],[230,475],[212,202]],
+      fix:[[212,202],[230,335],[380,335],[380,485],[682,485],[716,425],[682,485],[380,485],[380,335],[230,335],[212,202]],
       decision:[[735,447],[789,502],[789,580],[849,690],[789,580],[789,502],[735,447]],
       websitePickup:[[1048,685],[1048,502],[789,502],[789,580],[849,690]]
     };
     journeys.briefReturn=journeys.brief.slice().reverse();
     journeys.checksReturn=journeys.checks.slice().reverse();
     journeys.websiteReturn=journeys.websitePickup.slice().reverse();
+    const coffeeSeat=[132,455];
+    for(const role of ['teacher','developer','science','pedagogy']){
+      const start=home[role],door=role==='science'?610:role==='pedagogy'?990:230;
+      journeys[role+'Coffee']=role==='teacher'?[start,[173,535],[370,505],[370,465],[295,435],coffeeSeat]:[start,[door,335],[370,335],[370,465],[295,435],coffeeSeat];
+      journeys[role+'CoffeeReturn']=journeys[role+'Coffee'].slice().reverse();
+    }
+    function coffeeBreak(state,review){
+      const loop=Math.floor(options.phase()/42);
+      if(!state || loop%2)return null;
+      const first=Object.keys(review.roles).find(role=>review.roles[role].collectStart===14);
+      const choice=(parseInt(state.hash?.slice(-1) || '0',16)+Math.floor(loop/2))%3;
+      const role=['teacher','developer',first][choice];
+      if(choice===2 && !review.roles[role].available)return null;
+      const [start,end]=role==='teacher'?[15,21]:role==='developer'?[21.2,27.8]:[28,41];
+      if(review.cycle<start || review.cycle>=end)return null;
+      const f=(review.cycle-start)/(end-start),seated=f>=1/3 && f<2/3;
+      return {role,start,end,f,seated,mug:seated || (f<1/3?f*3>.8:(f-2/3)*3<.2)};
+    }
+    function lounge(){
+      box(26,370,336,145,'#2c393a');box(31,375,326,135,'#526660');
+      box(31,375,326,25,'#334a46');text('COFFEE LOUNGE',45,393,'#dfce9c',13);
+      box(48,426,157,39,'#738683');box(43,432,11,40,'#5e7370');box(199,432,11,40,'#5e7370');
+      for(let i=0;i<3;i++)box(57+i*46,435,41,23,'#93a09a');box(51,465,153,11,'#4b625f');
+      box(235,433,92,13,'#b59a74');box(241,446,6,30,'#73684f');box(314,446,6,30,'#73684f');
+      box(274,400,49,35,'#29383d');box(280,405,35,18,'#596c69');box(288,410,19,3,'#d7bc80');
+      mug(294,430);mug(252,429);box(214,477,111,8,'#a28c6b');
+      text('COFFEE',278,492,'#e9d8b2',10,'center');text('A little pause, not a skipped check.',194,507,'#ccd0bd',9,'center');
+    }
+    function mug(x,y){box(x-6,y-5,12,10,'#e8dfc6');box(x+6,y-3,4,6,'#c6bb9c');box(x-4,y-5,8,2,'#75604c');}
     function reviewProgress(state){
       const cycle=options.phase()%42;
       // Timing illustrates independent work; it is not inferred from session durations.
@@ -164,11 +194,11 @@ window.AgentOfficeScene = {
       const moments=[0,7,14,21,28,31.5,32,34,35,38,39,40.5,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
       return [...new Set(moments)].sort((a,b)=>a-b).find(moment=>moment>review.cycle+.001) ?? 0;
     }
-    function actors(state,review){
+    function actors(state,review,coffee){
       const cycle=options.phase()%42,step=Math.floor(cycle/7),f=(cycle%7)/7;
       const positions=Object.fromEntries(Object.entries(home).map(([id,p])=>[id,[...p]]));
-      const packets={};const moving={};
-      const walk=(id,points,t,kind,color)=>{positions[id]=position(points,t);moving[id]=!options.still();if(kind)packets[id]={kind,color:color||colors[id]};};
+      const packets={};const moving={};const busy=new Set();
+      const walk=(id,points,t,kind,color)=>{positions[id]=position(points,t);moving[id]=!options.still();busy.add(id);if(kind)packets[id]={kind,color:color||colors[id]};};
       const approved=publicationApproved(state,review);
       if(state){
         if(step===0)walk('teacher',journeys.brief,f,'BRIEF');
@@ -186,14 +216,44 @@ window.AgentOfficeScene = {
           else walk('site',journeys.websiteReturn,(cycle-39)/3,approved?'APPROVED':null,C.green);
         }
       }
+      if(coffee && !busy.has(coffee.role)){
+        if(coffee.f<1/3)walk(coffee.role,journeys[coffee.role+'Coffee'],coffee.f*3);
+        else if(coffee.seated)positions[coffee.role]=coffeeSeat;
+        else walk(coffee.role,journeys[coffee.role+'CoffeeReturn'],(coffee.f-2/3)*3);
+      }
       figurePositions=[];
       for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site']){
         const point=positions[id],[x,y]=point;person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0]);
         figurePositions.push({id,x,y});
-        if(moving[id]){const label=id==='gatekeeper'?'COORDINATOR':id==='site'?'WEB COURIER':id.toUpperCase();pill(label,x,y+54,colors[id],label.length*8+24);}
+        const awayFromDesk=Math.hypot(x-home[id][0],y-home[id][1])>28;
+        if((moving[id] && awayFromDesk) || coffee?.role===id){const label=coffee?.role===id?'COFFEE BREAK':id==='gatekeeper'?'COORDINATOR':id==='site'?'WEB COURIER':id.toUpperCase();pill(label,x,y+54,colors[id],label.length*8+24);}
         if(packets[id])pagePacket(x+(moving[id] && point.facing?.[0]<-.1?-26:26),y+11,state.id,packets[id].color,packets[id].kind);
+        if(coffee?.role===id && coffee.mug)mug(x+25,y+14);
       }
-      return step;
+      return {step,positions,packets,coffee};
+    }
+    function speech(state,review,actors){
+      if(!state || options.speechEnabled?.()===false || options.phase()%6>4.5)return null;
+      const {step,coffee,positions,packets}=actors;let speaker,message;
+      if(coffee?.seated){speaker=coffee.role;message=speaker==='developer'?'Refactoring my caffeine levels.':speaker==='teacher'?'A brief pause. The universe can wait.':'A peer review of this coffee is now in progress.';}
+      else if(step===0){speaker='teacher';message="Let's turn ‘why?’ into a lesson.";}
+      else if(step===1){speaker='developer';message='It worked in my head. Now for the tests.';}
+      else if(step===2){speaker=Object.keys(review.roles).find(role=>review.roles[role].work==='REVIEWING COPY') || 'pedagogy';message=speaker==='science'?'SI units. Not vibes.':'Would a student understand this before coffee?';}
+      else if(step===3){
+        const bad=Object.keys(review.roles).find(role=>review.roles[role].delivering && ['FAIL','stale','invalid'].includes(review.roles[role].status));
+        if(bad){speaker=bad;message=review.roles[bad].status==='stale'?'New version? My old PASS just expired.':'The universe would like one small correction.';}
+        else{speaker='gatekeeper';message=review.ready?'Two matching passes. My favourite duet.':'One PASS is not a quorum.';}
+      }else if(step===4){speaker=review.needsRevision?'developer':'gatekeeper';message=review.needsRevision?'Back to the drawing board. Literally.':review.ready?'Two matching passes. My favourite duet.':'One PASS is not a quorum.';}
+      else{speaker=review.ready?'site':'repository';message=packets.site?'Approved cargo. Still not a deployment receipt.':review.ready?'I deliver pages, not assumptions.':'Coffee is approved. Publication is still pending.';}
+      const point=positions[speaker],quote=tr(message),width=242;ctx.font='12px monospace';
+      const lines=[];let line='';
+      for(const word of quote.split(' ')){const next=line?line+' '+word:word;if((ctx.measureText?.(next).width || next.length*7.2)>width-22 && line){lines.push(line);line=word;}else line=next;}
+      if(line)lines.push(line);
+      const height=lines.length*15+18,x=Math.max(8,Math.min(1192-width,point[0]-width/2)),y=Math.max(7,point[1]-height-68);
+      box(x+3,y+3,width,height,'#17222970');box(x,y,width,height,'#efe7cf');box(x,y,width,3,colors[speaker]);
+      box(point[0]-4,y+height,8,4,'#efe7cf');box(point[0]-2,y+height+4,4,4,'#efe7cf');
+      lines.forEach((line,i)=>text(line,x+11,y+22+i*15,'#344540',12));
+      return {speaker,text:quote};
     }
     function publicationApproved(state,review){
       // A merge or HTML file alone does not establish the human decision.
@@ -231,7 +291,7 @@ window.AgentOfficeScene = {
       text('Deployment unverified',1048,754,C.amber,11,'center');
     }
     function draw(){
-      const state=options.state();const active=options.active();const review=reviewProgress(state);
+      const state=options.state();const active=options.active();const review=reviewProgress(state);const coffee=coffeeBreak(state,review);
       ctx.imageSmoothingEnabled=false;box(0,0,1200,800,'#202c30');
       box(18,301,1164,221,'#8a7356');
       for(let y=306;y<522;y+=22)for(let x=20;x<1182;x+=68){box(x+(y%44?-20:0),y,65,1,'#a58c69');box(x,y,1,21,'#716148');}
@@ -243,7 +303,7 @@ window.AgentOfficeScene = {
       for(const [id,x] of [['science',605],['pedagogy',990]]){
         const status=state?.[id].status || 'NOT OBSERVED';
         pill(status==='NOT OBSERVED'?'NO SNAPSHOT':status==='missing'?'NO REPORT RECORDED':`RECORDED ${status.toUpperCase()}`,x,254,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
-        text(state?review.roles[id].work:'WAITING FOR LESSON',x,277,C.muted,9,'center');
+        text(coffee?.role===id?'COFFEE BREAK':state?review.roles[id].work:'WAITING FOR LESSON',x,277,C.muted,9,'center');
       }
       plant(380,245);plant(753,245);plant(1148,245);
       // The publication role is represented by a seated colleague throughout the journey.
@@ -253,11 +313,11 @@ window.AgentOfficeScene = {
       if(options.event()?.merge)text('Approver unverified',790,757,C.muted,10,'center');
       pill('2 · CHECK',484,508,C.amber,132);pill('3 · INDEPENDENT REVIEWS',779,318,C.ink,259);
       pill('5 · HUMAN DECISION',790,516,C.gold,197);text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
-      box(28,398,314,52,'#2f3e3e');text('ONE LESSON. TWO INDEPENDENT REVIEWS.',185,419,C.ink,12,'center');
-      text(state?`${state.id.toUpperCase()}  /  ${state.hash || 'HASH UNAVAILABLE'}`:'SELECT A RECORDED LESSON',185,438,C.gold,11,'center');
-      checks(state);site(state);gate(state,review);const step=actors(state,review);
-      box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);
-      return {step,caption:this.caption(step,state,review)};
+      box(28,309,326,45,'#2f3e3e');text(options.presentation?.()?'TODAY’S LESSON':'ONE LESSON. TWO INDEPENDENT REVIEWS.',191,327,C.ink,10,'center');
+      text(state?(options.presentation?.()?state.id.toUpperCase():`${state.id.toUpperCase()}  /  ${state.hash || 'HASH UNAVAILABLE'}`):'SELECT A RECORDED LESSON',191,344,C.gold,10,'center');
+      lounge();checks(state);site(state);gate(state,review);const activity=actors(state,review,coffee);const quote=speech(state,review,activity);
+      if(!options.presentation?.()){box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);}
+      return {step:activity.step,speech:quote,caption:this.caption(activity.step,state,review)};
     }
     function caption(step,state,review=reviewProgress(state)){
       if(!state)return 'Choose a recorded lesson to explore its route through the office.';
@@ -277,6 +337,7 @@ window.AgentOfficeScene = {
     function hit(p){
       const figure=figurePositions.find(f=>Math.abs(p.x-f.x)<27 && p.y>f.y-32 && p.y<f.y+40);
       if(figure)return figure.id;
+      if(p.x>=26 && p.x<=362 && p.y>=370 && p.y<=518)return 'lounge';
       if(p.x>=688 && p.x<=838 && p.y>=370 && p.y<=510)return 'gatekeeper';
       return stations.find(s=>p.x>=s.x && p.x<=s.x+s.w && p.y>=s.y && p.y<=s.y+s.h)?.id;
     }
