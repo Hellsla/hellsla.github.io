@@ -7,7 +7,12 @@ Usage: python scripts/test_inquiry.py            the framework suite on the fy3-
                                                  feedback and are revealed by their experiment, every experiment runs
                                                  on the adapter (its parameters and measured keys exist, initial state
                                                  set, controlled parameters locked, two measurements, reset), forms
-                                                 present, no console errors, 360 px fit
+                                                 present, no console errors, 360 px fit, and the page form of
+                                                 2026-10-26 (page_form): stage and section names, the Ennusta box
+                                                 closed at first and keeping its answers, the exercises last, the sim's
+                                                 controls in view and its explanations behind closed boxes, and the
+                                                 wide layout at 1280 and 1920 px (sim beside the experiments, figures
+                                                 beside their text, text no wider than a reading column)
 
 Part 1 (no browser): validation names the lesson and the field; a lesson without inquiry.json builds exactly as
 before; every activity type renders. Part 2 (Playwright, on preview/fy3-2.html built here): stage order and nav,
@@ -57,6 +62,60 @@ FASTEST = """() => { const own = new Set(Object.values(window.simAdapter.params)
 RUN = """() => { const b = document.querySelector('#sim-root button');   // the sim's main button comes first (NOTES 4)
   if (b && !b.disabled && !/…$/.test(b.textContent.trim())) { b.click(); return b.textContent.trim(); } return null; }"""
 CONTROL = "(k) => { const p = window.simAdapter.params[k]; return typeof p.input === 'string' ? document.querySelector(p.input) : p.input; }"
+OLD_NAMES = ("Herätä kiinnostus", "Lähtölippu", "Selitä")     # replaced by Pohdinta, Exit ticket, Teoriatiivistelmä (2026-10-26)
+NAMES = """() => [...document.querySelectorAll('nav.toc a, main h2, main h3, main summary')].map((e) => e.textContent.replace(/^\\d+/, '').trim())"""
+WIDE = """() => {      // the wide layout as rendered: which blocks sit side by side, and the widest paragraph
+  const R = (e) => e.getBoundingClientRect(), beside = (a, b) => R(b).left >= R(a).right - 1 && Math.abs(R(a).top - R(b).top) < 400;
+  const lab = document.querySelector('.lab'), rows = [...document.querySelectorAll('.act-theory > .fig-row, article#teoria > .fig-row')];
+  const text = [...document.querySelectorAll('main p, main li')].filter((e) => e.offsetParent && !e.closest('#sim-root, .katex-display, table'));
+  const cells = [...document.querySelectorAll('.act-grid > *, .lab > *, .fig-row > *, .intro-row > *')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.className);
+  return { over: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+           lab: lab ? beside(lab.querySelector('.lab-main'), lab.querySelector('.lab-side')) : null,
+           figs: rows.map((r) => beside(r.querySelector('.fig-text'), r.querySelector('.fig'))),
+           widest: Math.max(0, ...text.map((e) => R(e).width)), rem: parseFloat(getComputedStyle(document.documentElement).fontSize), cells };
+}"""
+
+
+def page_form(pg, b, url, acts, page):
+    """The lesson page form of 2026-10-26 (CLAUDE.md "Lesson page"), checked on the rendered page. pg is a 1280 px page."""
+    names = pg.evaluate(NAMES)
+    old = [n for n in names if any(n == o or n.startswith(o + " ") for o in OLD_NAMES)]
+    check("no old stage or section names in the nav or headings (Pohdinta, Teoriatiivistelmä, Exit ticket)", not old, str(old))
+    toc = pg.evaluate("[...document.querySelectorAll('nav.toc a')].map((a) => a.textContent)")
+    want = []
+    for sid, t in inquiry.STAGES:
+        here = [a for a in acts if a["stage"] == sid and a["type"] != "exercises"]
+        if here: want += [inquiry.NAV.get(sid, t)] + ([inquiry.EXIT_TITLE] if any(a["type"] == "exit" for a in here) else [])
+    want.append(inquiry.EXERCISES_TITLE)
+    check("nav names the stages, the exit ticket and the exercises", toc == want, f"{toc} != {want}")
+    order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro-row')].map((e) => e.id || e.className)")
+    check("the exercises close the page, after the exit ticket", order[-1:] == ["exercises"] and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(x.compareDocumentPosition(e) & 4); })()"), str(order))
+    if any(a["stage"] == "ennusta" for a in acts):
+        fold = pg.locator("#ennusta details.fold")
+        check("Ennusta sits in a box that starts closed", fold.count() == 1 and not fold.evaluate("(d) => d.open") and pg.locator("#ennusta .fold-body").is_hidden())
+    sim_act = next((a for a in acts if a["type"] == "sim"), None)
+    if sim_act:
+        hidden = pg.evaluate("[...document.querySelectorAll('#sim-root canvas, #sim-root input, #sim-root select, #sim-root button')].filter((e) => e.closest('details:not([open])')).length")
+        check("the simulation's picture and controls are never behind a closed box", hidden == 0, f"{hidden} hidden")
+        boxes = pg.evaluate("[...document.querySelectorAll('#sim details')].map((d) => [d.querySelector('summary').textContent.trim(), d.open])")
+        check("the simulation's explanations sit behind closed, named boxes", all(t and not o for t, o in boxes), str(boxes))
+        words = pg.evaluate("""() => { const a = document.querySelector('.act-sim'); if (!a) return 0; const c = a.cloneNode(true);
+          c.querySelectorAll('label, .readout, .controls, button, select, summary, table, canvas, script, h3, details:not([open]) > :not(summary), .sim-moved').forEach((e) => e.remove());
+          return c.textContent.trim().split(/\\s+/).filter(Boolean).length; }""")
+        check("the simulation shows little text: picture, controls and values first", words <= 50, f"{words} visible words beside the controls and the readout")
+    for w in (1280, 1920):
+        q = b.new_page(viewport={"width": w, "height": 900}); q.goto(url); q.wait_for_timeout(500)
+        L = q.evaluate(WIDE)
+        check(f"{w} px: no horizontal overflow, no column spilling into its neighbour", L["over"] <= 0 and not L["cells"], str(L))
+        check(f"{w} px: text no wider than a reading column (44rem)", L["widest"] <= 44 * L["rem"] + 1, f"{L['widest']:.0f} px")
+        if L["lab"] is not None: check(f"{w} px: the simulation beside the experiments", L["lab"])
+        if L["figs"]: check(f"{w} px: every theory figure beside its paragraph", all(L["figs"]), str(L["figs"]))
+        q.close()
+    q = b.new_page(viewport={"width": 360, "height": 740}); q.goto(url); q.wait_for_timeout(500)
+    L = q.evaluate(WIDE)
+    check("360 px: one column", not L["lab"] and not any(L["figs"]), str(L))
+    q.close()
+
 
 
 def generic(lid):
@@ -85,7 +144,8 @@ def generic(lid):
     # the page as built: navigation, stage order, and every option with its own correct flag and feedback (options are shuffled)
     toc = re.search(r'<nav class="toc"[^>]*>(.*?)</nav>', page, re.S)
     links = re.findall(r'href="#([^"]+)"', toc.group(1)) if toc else []
-    shown = [s for s, _ in inquiry.STAGES if s in stages]
+    shown = [s for s, _ in inquiry.STAGES if any(a["stage"] == s and a["type"] != "exercises" for a in acts)]
+    shown = [x for s in shown for x in ([s, "exit"] if any(a["type"] == "exit" and a["stage"] == s for a in acts) else [s])] + ["exercises"]
     check("navigation lists every stage in order and each link has a target", links == shown and all(f'id="{x}"' in page for x in links), f"nav {links}, stages {shown}")
     for aid, seed, spec in choice_items(acts):
         want = inquiry.choice_order(spec["choices"], lid, seed)
@@ -103,6 +163,8 @@ def generic(lid):
         if exps: pg.wait_for_function("window.simAdapter", timeout=4000)
         pg.wait_for_timeout(300)
         check("no console errors", not errors, str(errors[:2]))
+        page_form(pg, b, url, acts, page)
+        if pg.locator("details.fold").count(): pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
         for a in acts:                                    # plain choices: a wrong option gets its own feedback, the right one "Oikein"
             if a["type"] != "choice" or a.get("reveal"): continue
             loc = pg.locator(f"#{a['id']}")
@@ -118,6 +180,10 @@ def generic(lid):
             loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)
             loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
             check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
+        if preds and pg.locator("details.fold").count():   # closing the box keeps the answers; reopened, they are there
+            pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(80); pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(80)
+            kept = all(pg.locator(f"#{pr['id']} input[type=radio]").nth(int(wrongs[pr["id"]])).is_checked() for pr in preds)
+            check("the Ennusta box keeps the committed predictions when closed and reopened", kept and "vastattu" in pg.locator("details.fold .fold-status").inner_text(), pg.locator("details.fold .fold-status").inner_text())
         for ex in exps:
             loc = pg.locator(f"#{ex['id']}"); rows = loc.locator(".exp-table tbody tr")
             keys = [m["key"] if isinstance(m, dict) else m for m in ex["measure"]]
@@ -196,6 +262,14 @@ e = errs_of(lambda d: d["activities"][13].__setitem__("answer", "240")); check("
 e = errs_of(lambda d: d["activities"][17].pop("model")); check("explain needs a model answer", any("model" in x for x in e), str(e))
 types = {a["type"] for a in good["activities"]}
 check("pilot exercises every implemented type but text", types >= set(inquiry.TYPES) - {"text"}, str(set(inquiry.TYPES) - types))
+named = lesson_md.replace("\n## Kaava\n", "\n## Kaava: Työ ja teho\n")
+check("a formula section named after its law is still the section Kaava", inquiry.heading("Kaava: Työ ja teho") == ("Kaava", "Työ ja teho") and inquiry.validate(folder, good, named) == [] and "Kaava" in inquiry.section_keys(named))
+md_id = lambda t: f"<p>{t}</p>"
+lead, info = inquiry.sim_parts({"text": "Kokeile vapaasti.", "howto": "Säädä.", "model": "Ei kitkaa.", "calc": "W = Fs."}, md_id)
+check("sim activity: a short visible lead and three closed, named boxes", lead == "<p>Kokeile vapaasti.</p>" and info.count("<details class=\"sim-box\">") == 3
+      and [x for x in ("Käyttöohje", "Mallin oletukset", "Laskennan selitys") if f"<summary>{x}</summary>" in info] == ["Käyttöohje", "Mallin oletukset", "Laskennan selitys"] and " open" not in info)
+lead, info = inquiry.sim_parts({"text": " ".join(["sana"] * 40)}, md_id)
+check("sim activity: a long text from before 2026-10-26 goes behind one box", lead == "" and f"<summary>{inquiry.LEGACY_INFO}</summary>" in info)
 
 # a lesson without inquiry.json renders in the classic layout: build a copy of fy3-2 without the file in a temporary root
 with tempfile.TemporaryDirectory() as tmp:
@@ -205,14 +279,16 @@ with tempfile.TemporaryDirectory() as tmp:
         if src.is_dir(): shutil.copytree(src, troot / n)
         elif src.exists(): shutil.copy(src, troot / n)
     shutil.copytree(folder, troot / "content/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
-    (troot / "content/FY3/fy3-2/inquiry.json").unlink()
+    (troot / "content/FY3/fy3-2/inquiry.json").unlink(); (troot / "content/FY3/fy3-2/lesson.md").write_text(named)
     env = {**os.environ, "FYSIIKKALABRA_ROOT": tmp}
     r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env=env)
     classic = (troot / "preview/fy3-2.html").read_text() if r.returncode == 0 else ""
     check("classic lesson builds", r.returncode == 0, (r.stdout + r.stderr)[-300:])
     check("classic lesson keeps its layout", '<article id="teoria">' in classic and 'class="stage"' not in classic and 'inquiry.js' not in classic
-          and '<a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a>' in classic
+          and '<a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exit">Exit ticket</a><a href="#exercises">Tehtävät</a>' in classic
           and '<section id="sim"><h2>Simulaatio</h2>' in classic and classic.index('<section id="sim">') < classic.index('<h2>Esimerkki</h2>'))
+    check("classic lesson: the formula section shows its law's name, the exercises come after the exit ticket",
+          '<h2 data-section="Kaava">Työ ja teho</h2>' in classic and "Kaava: Työ" not in classic and classic.index('<section id="exit"><h2>Exit ticket</h2>') < classic.index('<section id="exercises">'))
 
 # a broken inquiry.json fails the build with the field named
 with tempfile.TemporaryDirectory() as tmp:
@@ -237,7 +313,11 @@ page_html = (ROOT / "preview/fy3-2.html").read_text()
 for sid, title in inquiry.STAGES: check(f"stage {sid} rendered", f'<section class="stage" id="{sid}"' in page_html and title in page_html)
 order = [page_html.index(f'id="{sid}"') for sid, _ in inquiry.STAGES]; check("stages in order", order == sorted(order))
 check("theory sections placed once", page_html.count('class="theory-h">Ydinajatus') == 1 and page_html.count('class="theory-h">Esimerkki') == 1)
-check("unplaced sections land in Selitä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
+check("unplaced sections land in Teoriatiivistelmä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
+check("the exercises come last, after the exit ticket", page_html.index('id="exit"') < page_html.index('<section class="stage stage-practice" id="exercises"') and page_html.count('id="exercises"') == 1
+      and '<a href="#exit">Exit ticket</a><a href="#exercises">Tehtävät</a></nav>' in page_html)
+check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
+check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 check("exercises and exit ticket kept (5/4/3, 3 items)", page_html.count('class="level"') == 3 and page_html.count("<li>Nostat 10") == 1 and '<span class="count">5 tehtävää' in page_html and '<span class="count">3 tehtävää' in page_html)
 check("no answer disclosed before commitment", 'class="feedback" data-for="0" hidden' in page_html)
 check("nav lists the stages", '<a href="#herata">' in page_html and '<a href="#tarkista">' in page_html)
@@ -259,6 +339,10 @@ with sync_playwright() as pw:
     check("no console errors on load", not errors, str(errors[:2]))
     check("adapter declares capabilities", pg.evaluate("JSON.stringify(window.simAdapter.capabilities.set) === '[\"F\",\"s\",\"t\"]' && window.simAdapter.capabilities.reset === true"))
 
+    # the Ennusta box: closed at first, opened by its summary
+    fold = pg.locator("details.fold")
+    check("predictions hidden in a closed box at first", not fold.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
+    fold.locator("summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-1 button.commit").is_visible())
     # prediction: commit first, no feedback until the experiment has two measurements
     p1 = pg.locator("#pred-1")
     p1.locator("button.commit").click(); check("empty commit asks for a choice", "Valitse" in p1.locator("output").inner_text())
@@ -266,10 +350,15 @@ with sync_playwright() as pw:
     p1.locator("input[type=radio]").nth(w1).check(); p1.locator(".justify textarea").fill("voima sama")
     p1.locator("button.commit").click()
     check("prediction committed: radios locked, feedback hidden", p1.locator("input[type=radio]").nth(w1).is_disabled() and not p1.locator(".feedback").nth(w1).is_visible() and p1.locator(".pending").is_visible())
+    check("the box counts the answers", "vastattu 1/" in fold.locator(".fold-status").inner_text(), fold.locator(".fold-status").inner_text())
+    fold.locator("summary").click(); fold.locator("summary").click()
+    check("closing and reopening the box keeps the prediction and its reason", p1.locator("input[type=radio]").nth(w1).is_checked() and p1.locator(".justify textarea").input_value() == "voima sama")
+    fold.locator("summary").click()
 
     ex1 = pg.locator("#exp-1")
     check("record disabled before the initial state is set", ex1.locator(".exp-record").is_disabled())
     ex1.locator(".exp-start").click(); pg.wait_for_timeout(150)
+    check("1280 px: the simulation stays in its column beside the experiment", pg.locator(".lab-side #sim").count() == 1 and not pg.locator(".sim-moved").is_visible())
     st = pg.evaluate("window.simState")
     check("initial conditions set (F 60, s 10, t 5)", st["F"] == 60 and st["s"] == 10 and st["t"] == 5, str(st))
     locked = pg.evaluate("[...document.querySelectorAll('#sim-root input[type=range]')].map(r => r.disabled)")
@@ -282,7 +371,10 @@ with sync_playwright() as pw:
     ex1.locator(".exp-record").click(); pg.wait_for_timeout(50)
     rows = ex1.locator(".exp-table tbody tr").all_inner_texts()
     check("second measurement doubles W", len(rows) == 2 and "1200" in rows[1], str(rows))
+    check("the closed box tells that feedback is ready", "palaute 1/" in fold.locator(".fold-status").inner_text(), fold.locator(".fold-status").inner_text())
+    fold.locator("summary").click()
     check("prediction feedback revealed after two measurements", p1.locator(".feedback").nth(w1).is_visible() and "Ei aivan" in p1.locator("output").inner_text() and not p1.locator(".pending").is_visible())
+    fold.locator("summary").click()
     ex1.locator(".exp-reset").click(); pg.wait_for_timeout(120)
     st = pg.evaluate("window.simState"); locked = pg.evaluate("[...document.querySelectorAll('#sim-root input[type=range]')].map(r => r.disabled)")
     check("reset restores defaults, unlocks, clears the table", st["s"] == 10 and st["u"] == 0 and locked == [False, False, False] and ex1.locator(".exp-table tbody tr").count() == 0, f"{st} {locked}")
@@ -291,6 +383,8 @@ with sync_playwright() as pw:
     refl = pg.locator("#reflect .my-predictions li")
     check("reflection lists three predictions", refl.count() == 3)
     check("reflection shows my prediction and the verdict", "Ennustit" in refl.nth(0).inner_text() and "ei tue" in refl.nth(0).inner_text() and "Et ole vielä" in refl.nth(1).inner_text(), refl.nth(0).inner_text())
+    refl.nth(1).locator("a").click(); pg.wait_for_timeout(150)
+    check("a link to a prediction opens the closed box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
 
     # plain choice: feedback after Vastaa, may change and re-check
     c = pg.locator("#pr-paino"); w = c.locator("label").filter(has=pg.get_by_text("10 N", exact=True))   # the mass-for-weight option
@@ -323,7 +417,10 @@ with sync_playwright() as pw:
     check("explanation remembered after reload", "Työ ei riipu" in pg.locator("#check-3 textarea").input_value())
 
     # keyboard: a choice answered with arrows and Enter
-    pg.evaluate("try { localStorage.clear() } catch (e) {}"); pg.reload(); pg.wait_for_function("window.simState", timeout=3000)
+    pg.evaluate("try { localStorage.clear() } catch (e) {}"); pg.goto(url); pg.wait_for_function("window.simState", timeout=3000)   # without the #pred-2 the link left, which would open the box
+    check("the box starts closed again on a new visit", not pg.locator("details.fold").evaluate("(d) => d.open"))
+    pg.locator("details.fold > summary").focus(); pg.keyboard.press("Enter")
+    check("keyboard opens the Ennusta box", pg.locator("details.fold").evaluate("(d) => d.open"))
     pg.locator("#pred-2 input[type=radio]").nth(0).focus(); pg.keyboard.press("ArrowDown"); pg.keyboard.press("Tab")
     pg.keyboard.press("Tab"); pg.keyboard.press("Enter")   # textarea (justify), then the Vastaa button
     check("keyboard commit works", pg.locator("#pred-2 fieldset").get_attribute("data-committed") == "1" and pg.locator("#pred-2 .pending").is_visible())
@@ -336,7 +433,7 @@ with sync_playwright() as pw:
     wide = pg.evaluate("[...document.querySelectorAll('fieldset.choice, .experiment, .reflect, .explain')].filter(e => e.getBoundingClientRect().right > 361).length")
     check("activity boxes fit at 360 px", wide == 0, str(wide))
     pg.locator("#exp-2 .exp-start").click(); pg.locator("#exp-2 .exp-record").click(); pg.wait_for_timeout(50)
-    check("experiment works at 360 px", pg.locator("#exp-2 .exp-table tbody tr").count() == 1)
+    check("experiment works at 360 px, the simulation brought beside its buttons", pg.locator("#exp-2 .exp-table tbody tr").count() == 1 and pg.locator("#exp-2 #sim").count() == 1 and pg.locator(".sim-moved").is_visible())
     pg.close()
     b.close()
 

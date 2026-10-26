@@ -8,12 +8,14 @@ The plain build renders into site.tmp/, checks that every expected page is there
 so a failed build never leaves site/ incomplete. A lesson that is on the live site but whose reviews are no
 longer current is left out with a WARNING (an annotation on CI), never silently.
 
-Page anatomy: the worked example is shown in stages split by `<!-- vaihe -->` lines (staged_example).
-The simulation is placed inside the theory, after the formula section (before "## Esimerkki"),
-or where lesson.md has a line `<!-- sim -->`. Each exercise gets a browser-side answer check and, depending on
-meta.solutions ("first" by default, "all", "none"), its worked solution from solutions.md.
-A lesson with inquiry.json (scripts/inquiry.py, docs/inquiry.md) is laid out as inquiry stages instead: the
-theory sections, simulation, exercises and exit ticket are the same parts, placed where the stages say.
+Page anatomy (human decisions 2026-10-25 and 2026-10-26, CLAUDE.md "Lesson page"): the worked example is shown in
+stages split by `<!-- vaihe -->` lines (staged_example); the formula section `## Kaava: <law>` is headed by the
+law's name (named_sections); a figure sits beside the paragraph it explains on a wide screen (fig_rows). Each
+exercise gets a browser-side answer check and, depending on meta.solutions ("first" by default, "all", "none"),
+its worked solution from solutions.md; the exercises close the page, after the exit ticket.
+A lesson with inquiry.json (scripts/inquiry.py, docs/inquiry.md) is laid out as inquiry stages: the theory
+sections, simulation and exit ticket are placed where the stages say. Without it (the classic layout) the
+simulation goes after the formula section (before "## Esimerkki") or where lesson.md has a line `<!-- sim -->`.
 
 Assets come from the course's folders (scripts/courses.py): a simulation folder assets/sims/<course>/<name>/ is
 published whole at sims/<course>/<name>/ (sim.js, its sim.css and images; a shared one once, however many lessons use
@@ -92,6 +94,23 @@ def staged_example(lesson_html):
             f'<p class="step-controls"><button type="button" class="next-step">Näytä seuraava vaihe</button> '
             f'<button type="button" class="all-steps">Näytä kaikki</button></p></div>')
     return lesson_html[:m.start(2)] + body + lesson_html[m.end(2):]
+
+
+def named_sections(html):
+    """`## Kaava: Lämpömäärä` is shown as "Lämpömäärä"; the key stays in data-section for the layout (inquiry.heading)."""
+    def sub(m):
+        key, shown = inquiry.heading(m.group(1))
+        return f'<h2 data-section="{esc(key)}">{shown}</h2>' if shown != key else m.group(0)
+    return re.sub(r"<h2>(.*?)</h2>", sub, html)
+
+
+FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>.*?</table>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*<p>(<svg\b.*?</svg>)</p>", re.S)
+
+
+def fig_rows(html):
+    """A figure beside the paragraph, table or list it explains (NOTES.md §3 puts it right after that block): two
+    columns on a wide screen, the figure under the text on a phone (site.css .fig-row)."""
+    return FIG.sub(r'<div class="fig-row"><div class="fig-text">\1</div><div class="fig">\2</div></div>', html)
 
 
 def fi(x):
@@ -173,7 +192,7 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
         f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>Vastaus</summary><p>{nbsp_units(q['a'])}</p></details></li>"
         for q in exit_q) + "</ol>"
     lesson_md = (folder / "lesson.md").read_text()
-    lesson_html = staged_example(nbsp_units(render_md(lesson_md)))
+    lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(lesson_md)))))
     inq = inquiry.load(folder)
     if inq is not None:
         errs = inquiry.validate(folder, inq, lesson_md)
@@ -184,37 +203,38 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     if where and where[0] == "lesson":                # FY3: sim.js in the lesson folder, published as <id>-sim.js
         shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js"); assets.append(f"{meta['id']}-sim.js")
         sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}><div id="sim-root"></div>'
-               f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{meta["id"]}-sim.js"></script></section>')
+               f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{meta["id"]}-sim.js"></script><!--sim-info--></section>')
     elif where:                                       # a simulation folder of the course (or shared): published whole
         src, pub = where[1], where[2]
         if not (src / "sim.js").is_file(): sys.exit(f"{meta['id']}: simulation folder {src.relative_to(ROOT)} has no sim.js")
         shutil.copytree(src, SITE / pub, dirs_exist_ok=True); assets.append(f"{pub}/sim.js")
         css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (src / "sim.css").is_file() else ""
         sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}>{css}<div id="sim-root" data-base="{pub}/"></div>'
-               f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script></section>')
+               f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script><!--sim-info--></section>')
     for ref in courses.pic_refs(folder):              # pictures the text refers to, at the same relative path
         if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")
         (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
     name = f"{meta['id']}.html"
-    if inq is None:                                   # classic layout: theory (with the sim inside), exercises, exit ticket
+    if inq is None:                                   # classic layout: theory (with the sim inside), exit ticket, exercises
+        sim = sim.replace("<!--sim-info-->", "")
         if sim and "<!-- sim -->" in lesson_html: lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)
         elif sim and re.search(r"<h2[^>]*>Esimerkki", lesson_html): lesson_html = re.sub(r"(<h2[^>]*>Esimerkki)", sim + r"\1", lesson_html, count=1)
         elif sim: lesson_html += sim
-        toc = '<a href="#teoria">Teoria</a>' + ('<a href="#sim">Simulaatio</a>' if sim else "") + '<a href="#exercises">Tehtävät</a><a href="#exit">Lähtölippu</a>'
+        toc = ('<a href="#teoria">Teoria</a>' + ('<a href="#sim">Simulaatio</a>' if sim else "")
+               + f'<a href="#exit">{inquiry.EXIT_TITLE}</a><a href="#exercises">{inquiry.EXERCISES_TITLE}</a>')
         main = (f'<article id="teoria">{lesson_html}</article>\n'
-                f'<section id="exercises"><h2>Tehtävät</h2>{howto}{ex_html}</section>\n'
-                f'<section id="exit"><h2>Lähtölippu</h2>{exit_items}</section>')
+                f'<section id="exit"><h2>{inquiry.EXIT_TITLE}</h2>{exit_items}</section>\n'
+                f'<section id="exercises"><h2>{inquiry.EXERCISES_TITLE}</h2>{howto}{ex_html}</section>')
     else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
         lesson_html = lesson_html.replace("<!-- sim -->", "")
-        pieces = re.split(r"(?=<h2>)", lesson_html)
-        intro = pieces[0] if not pieces[0].startswith("<h2>") else ""
+        pieces = re.split(r"(?=<h2[ >])", lesson_html)
+        intro = pieces[0] if not pieces[0].startswith("<h2") else ""
         sections = {}
         for piece in pieces[1:] if intro or len(pieces) > 1 else []:
-            m = re.match(r"<h2>(.*?)</h2>", piece)
-            if m: sections[m.group(1)] = re.sub(r"^<h2>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>', piece, count=1)
-        parts = {"intro": intro, "sections": sections, "sim": sim,
-                 "exercises": f'<div id="exercises"><h3>Tehtävät</h3>{howto}{ex_html}</div>',
-                 "exit": f'<div id="exit"><h3>Lähtölippu</h3>{exit_items}</div>'}
+            m = re.match(r'<h2(?: data-section="([^"]*)")?>(.*?)</h2>', piece)
+            if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>', piece, count=1)
+        parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto}{ex_html}',
+                 "exit": f'<div id="exit"><h3>{inquiry.EXIT_TITLE}</h3>{exit_items}</div>'}
         body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
         main = f'<article id="teoria" class="inquiry">{body}</article>'
     html = (tpl.replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", NOTICE[meta["state"]])
@@ -271,7 +291,7 @@ home = (
     + latest + '</section>'
     '<ul class="how"><li><strong>Teoria</strong>lyhyesti ja yksi ajatus kerrallaan, kaavat selitettyinä.</li>'
     '<li><strong>Simulaatio</strong>jota voit säätää itse ja josta näet laskennan tulokset heti.</li>'
-    '<li><strong>Tehtävät ja lähtölippu</strong>kolmella tasolla, vastaukset tarkistettavissa ja ratkaisut avattavissa.</li></ul>'
+    '<li><strong>Tehtävät ja exit ticket</strong>kolmella tasolla, vastaukset tarkistettavissa ja ratkaisut avattavissa.</li></ul>'
     '<h2 id="moduulit">Moduulit</h2>' f'<div class="cards">{cards}</div>'
     f'<p class="count">{len(built_ids)} oppituntia valmiina, {total} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.</p>')
 (SITE / "index.html").write_text(page("Fysiikkalabra", home, "", "index.html",

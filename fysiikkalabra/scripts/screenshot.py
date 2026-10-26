@@ -9,6 +9,7 @@ captures its questions need:
   fig-N-390                   every figure of the text (inline SVG), with its section and aria-label
   example-390[-k]             the worked example with every stage revealed
   sim-390, sim-1280           the simulation with its controls and readout
+  lab-1280, fig-row-1280      the wide layout: the sim beside the experiments, the first figure beside its paragraph
   stage-<id>-390[-k]          every inquiry stage, in tiles
   exp-<id>-390                every experiment after "Aseta alkutila": the sim beside its buttons and table
 
@@ -59,7 +60,11 @@ with sync_playwright() as pw:
         pg.screenshot(path=str(OUT / f"{lid}-top-{w}.png")); rows.append((f"{lid}-top-{w}.png", f"first screen at {w} px", w, hgt))
         pg.add_style_tag(content="header.top, nav.toc, nav.crumbs { position: static !important; }")   # sticky bars would be drawn into part captures
         if pg.locator("#sim").count(): save(pg, f"sim-{w}", f"simulation with controls and readout at {w} px", locator=pg.locator("#sim"))
-        if w != 390: pg.close(); continue
+        if w != 390:
+            if pg.locator(".lab").count(): save(pg, f"lab-{w}", f"Tutki at {w} px: the simulation beside the experiments", locator=pg.locator(".lab").first)
+            if pg.locator(".fig-row").count(): save(pg, f"fig-row-{w}", f"the first theory figure beside its paragraph at {w} px", locator=pg.locator(".fig-row").first)
+            pg.close(); continue
+        pg.evaluate("document.querySelectorAll('details.fold').forEach((d) => { d.open = true; })")   # the Ennusta box starts closed; reviewers read its predictions
         figs = pg.locator("main svg:not(#sim-root svg)")
         for i in range(figs.count()):
             f = figs.nth(i)

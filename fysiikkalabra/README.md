@@ -68,7 +68,7 @@ module, generated from the LOPS 2019 texts in `docs/lops2019/`. The reference le
 
 ## Inquiry sequence
 
-A lesson with `inquiry.json` is rendered as inquiry stages (Herätä kiinnostus → Ennusta → Tutki → Selitä → Sovella → Tarkista osaamisesi) around the same theory, simulation, exercises and exit ticket. Format, activity types, the simulation adapter, migration steps and tests: `docs/inquiry.md`; the teacher's brief: `docs/inquiry-spec.md`. Validate with `python scripts/inquiry.py <id>`, test with `python scripts/test_inquiry.py`.
+A lesson with `inquiry.json` is rendered as inquiry stages (Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella → Tarkista osaamisesi, then Tehtävät last) around the same theory, simulation, exercises and exit ticket; the page form (wide-screen columns, the closed Ennusta box, the simulation's boxes, named formula sections) is CLAUDE.md "Lesson page". Format, activity types, the simulation adapter, migration steps and tests: `docs/inquiry.md`; the teacher's brief: `docs/inquiry-spec.md`. Validate with `python scripts/inquiry.py <id>`, test with `python scripts/test_inquiry.py`.
 
 ## Exercise schema
 ```json

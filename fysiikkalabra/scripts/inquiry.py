@@ -1,9 +1,11 @@
 """Inquiry-based lesson structure: validation and rendering of content/<course>/<id>/inquiry.json (format version 1).
 
-A lesson with inquiry.json is rendered as stages — Herätä kiinnostus → Ennusta → Tutki → Selitä → Sovella →
+A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella →
 Tarkista osaamisesi — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
-parts (theory sections of lesson.md, the simulation, the exercises, the exit ticket). A lesson without the file
-renders as before. See docs/inquiry.md for the format and docs/inquiry-spec.md for the pedagogy it serves.
+parts (theory sections of lesson.md, the simulation, the exit ticket). The exercises always come last, after the
+exit ticket, in their own section "Tehtävät". A lesson without the file renders in the classic layout. See
+docs/inquiry.md for the format and docs/inquiry-spec.md for the pedagogy it serves; the page layout (human
+decisions 2026-10-26, CLAUDE.md "Lesson page") is in render() and templates/site.css.
 
   python scripts/inquiry.py <id>     validate one lesson's inquiry.json and print the errors (exit 1 on any)
 """
@@ -11,13 +13,29 @@ import hashlib, html as _h, json, pathlib, random, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
-STAGES = [("herata", "Herätä kiinnostus"), ("ennusta", "Ennusta"), ("tutki", "Tutki"),
-          ("selita", "Selitä"), ("sovella", "Sovella"), ("tarkista", "Tarkista osaamisesi")]
+STAGES = [("herata", "Pohdinta"), ("ennusta", "Ennusta"), ("tutki", "Tutki"),
+          ("selita", "Teoriatiivistelmä"), ("sovella", "Sovella"), ("tarkista", "Tarkista osaamisesi")]   # ids are keys in inquiry.json, titles are what the student sees
 STAGE_IDS = [s for s, _ in STAGES]
+NAV = {"tarkista": "Tarkista"}                    # nav label when it differs from the stage title
+EXIT_TITLE, EXERCISES_TITLE = "Exit ticket", "Tehtävät"
+SIM_INFO = (("howto", "Käyttöohje"), ("model", "Mallin oletukset"), ("calc", "Laskennan selitys"))   # the sim activity's boxes, closed by default
+LEGACY_INFO = "Käyttöohje ja mallin oletukset"    # a long sim text written before 2026-10-26, shown behind one box
+LEAD_WORDS = 30                                   # a sim activity's visible lead is at most this long
+GRID_TYPES = ("hook", "choice", "numeric", "explain", "exit")   # consecutive ones sit side by side on a wide screen
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
+
+
+def heading(title):
+    """(key, shown) of a lesson.md `## ` heading. The formula section is named after its law, `## Kaava: Lämpömäärä`:
+    the page shows "Lämpömäärä", while inquiry.json, the lint and the build keep using the key "Kaava"."""
+    m = re.match(r"(Kaava):\s*(\S.*)$", title.strip())
+    return (m.group(1), m.group(2).strip()) if m else (title.strip(), title.strip())
+
+
+def section_keys(lesson_md): return {heading(t)[0] for t in re.findall(r"^## (.+)$", lesson_md, re.M)}
 
 
 def load(folder):
@@ -82,7 +100,7 @@ def validate(folder, inquiry, lesson_md):
     if not isinstance(prior, list) or not all(isinstance(x, str) and x.strip() for x in prior): E("prior: a list of short strings (what the student already knows, with the lesson it comes from)")
     acts = inquiry.get("activities")
     if not isinstance(acts, list) or not acts: E("activities: a non-empty list is required"); return errs
-    sections = set(re.findall(r"^## (.+)$", lesson_md, re.M))
+    sections = section_keys(lesson_md)
     ids, exp_ids, hints_ok = set(), set(), True
     for i, a in enumerate(acts):
         p = f"activities[{i}]"
@@ -124,6 +142,9 @@ def validate(folder, inquiry, lesson_md):
             if "min" in a and (not isinstance(a["min"], int) or a["min"] < 1): errs.append(f"{path}.min: measurements before the linked predictions are revealed")
             for key in ("units", "names"):
                 if key in a and (not isinstance(a[key], dict) or not all(isinstance(v, str) for v in a[key].values())): errs.append(f"{path}.{key}: {{param: text}}")
+        elif t == "sim":
+            for k, _ in SIM_INFO:
+                if k in a and (not isinstance(a[k], str) or not a[k].strip()): errs.append(f"{path}.{k}: markdown text")
         elif t == "interpret":
             if not isinstance(a.get("text"), str) or not a["text"].strip(): errs.append(f"{path}.text: the representation (table, figure or measurements) in markdown/HTML")
         if t in ("experiment", "interpret") and "question" in a:
@@ -246,51 +267,103 @@ def experiment_html(a, md, lid):
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 
+def sim_parts(a, md):
+    """(visible lead, closed boxes) of the sim activity. The page shows the picture, the controls and the values first;
+    the lead is one or two sentences and the longer texts sit behind Käyttöohje, Mallin oletukset and Laskennan
+    selitys. A long text written before 2026-10-26 without those fields goes behind one box (LEGACY_INFO)."""
+    text = a.get("text") or ""
+    boxes = [(title, a[k]) for k, title in SIM_INFO if a.get(k)]
+    if text and not boxes and len(text.split()) > LEAD_WORDS: boxes, text = [(LEGACY_INFO, text)], ""
+    info = "".join(f'<details class="sim-box"><summary>{t}</summary><div>{md(x)}</div></details>' for t, x in boxes)
+    return (md(text) if text else ""), (f'<div class="sim-info">{info}</div>' if info else "")
+
+
 def render(folder, inquiry, parts, md):
-    """(body html, toc html). parts: {'intro': html, 'sections': {title: html}, 'sim': html, 'exercises': html, 'exit': html}."""
+    """(body html, toc html). parts: {'intro': html, 'sections': {key: html}, 'sim': html (with a <!--sim-info--> slot),
+    'exercises': html, 'exit': html}.
+
+    Order: the stages in STAGES order (empty ones left out), then the exercises in their own section "Tehtävät", last
+    on the page whatever stage inquiry.json gives them. Layout hooks for templates/site.css, all single-column on a
+    phone: the title and the "new this lesson" box side by side (.intro-row); consecutive GRID_TYPES activities in an
+    .act-grid (two columns on a wide screen); the stage that holds the simulation as a .lab (the sim beside the
+    experiments that use it); the Ennusta stage inside a <details class="fold"> that starts closed and keeps its answers
+    when closed; a theory figure beside its paragraph (build.py fig_rows)."""
     lid = folder.name
     acts = inquiry["activities"]
     by_stage = {s: [] for s in STAGE_IDS}
-    for a in acts: by_stage[a["stage"]].append(a)
+    ex_act = None
+    for a in acts:
+        if a["type"] == "exercises": ex_act = a; continue
+        by_stage[a["stage"]].append(a)
     placed = {s for a in acts if a["type"] == "theory" for s in a["sections"]}
     leftover = [s for s in parts["sections"] if s not in placed]
-    if leftover and not any(a["type"] == "theory" for a in by_stage["selita"]) and leftover:
-        by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover}); leftover = []
-    elif leftover:                                     # append to the last theory activity in Selitä
+    if leftover and not any(a["type"] == "theory" for a in by_stage["selita"]):
+        by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
+    elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
         last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
     prior = inquiry.get("prior") or []
-    body = [parts["intro"], f'<div class="contribution"><strong>Tällä tunnilla uutta:</strong> {inline(md, inquiry["contribution"])}</div>']
-    if prior: body.append('<p class="prior"><strong>Tarvitset:</strong> ' + "; ".join(inline(md, x) for x in prior) + '</p>')
+    aside = f'<div class="contribution"><strong>Tällä tunnilla uutta:</strong> {inline(md, inquiry["contribution"])}</div>'
+    if prior: aside += '<p class="prior"><strong>Tarvitset:</strong> ' + "; ".join(inline(md, x) for x in prior) + '</p>'
+    body = [f'<div class="intro-row"><div class="intro-main">{parts["intro"]}</div><div class="intro-aside">{aside}</div></div>']
+
+    def act(a):
+        t, aid = a["type"], a["id"]
+        head = f'<h3>{esc(a["title"])}</h3>' if a.get("title") else ""
+        if t == "hook": content = f'<div class="hook">{md(a["text"])}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
+        elif t == "text": content = md(a["text"])
+        elif t == "choice": content = choice_html(a, md, lid, aid)
+        elif t == "numeric": content = numeric_html(a, md, aid)
+        elif t == "explain": content = explain_html(a, md, aid)
+        elif t == "reflect":
+            content = (f'<div class="reflect" data-predictions=\'{esc(json.dumps(a["predictions"]))}\'><p class="task">{inline(md, a["prompt"])}</p>'
+                       f'<ul class="my-predictions"></ul><p class="revise"><strong>Muuttaisitko ennustettasi?</strong> '
+                       f'<label><input type="radio" name="{esc(aid)}-rev" value="ei"> En</label> <label><input type="radio" name="{esc(aid)}-rev" value="kylla"> Kyllä</label></p>'
+                       f'<textarea rows="3" aria-label="Miksi?" placeholder="Miksi?"></textarea></div>')
+        elif t == "experiment": content = experiment_html(a, md, lid)
+        elif t == "interpret": content = f'<div class="interpret"><div class="representation">{md(a["text"])}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
+        elif t == "theory": content = "".join(parts["sections"][s] for s in a["sections"])
+        elif t == "sim":
+            lead, info = sim_parts(a, md)
+            content = lead + parts["sim"].replace("<!--sim-info-->", info)
+        elif t == "exit": content = (md(a["text"]) if a.get("text") else "") + parts["exit"]
+        else: content = ""
+        hints = hints_html([md(h) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
+        return f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
+
+    def flow(items, grid=True):
+        out, run = [], []
+        def flush():
+            out.append('<div class="act-grid">' + "".join(run) + '</div>' if len(run) > 1 else "".join(run)); run.clear()
+        for a in items:
+            if grid and a["type"] in GRID_TYPES: run.append(act(a))
+            else: flush(); out.append(act(a))
+        flush()
+        return "".join(out)
+
     toc, n = [], 0
     for sid, title in STAGES:
         items = by_stage[sid]
         if not items: continue
         n += 1
-        inner = ""
-        for a in items:
-            t, aid = a["type"], a["id"]
-            head = f'<h3>{esc(a["title"])}</h3>' if a.get("title") else ""
-            if t == "hook": content = f'<div class="hook">{md(a["text"])}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
-            elif t == "text": content = md(a["text"])
-            elif t == "choice": content = choice_html(a, md, lid, aid)
-            elif t == "numeric": content = numeric_html(a, md, aid)
-            elif t == "explain": content = explain_html(a, md, aid)
-            elif t == "reflect":
-                content = (f'<div class="reflect" data-predictions=\'{esc(json.dumps(a["predictions"]))}\'><p class="task">{inline(md, a["prompt"])}</p>'
-                           f'<ul class="my-predictions"></ul><p class="revise"><strong>Muuttaisitko ennustettasi?</strong> '
-                           f'<label><input type="radio" name="{esc(aid)}-rev" value="ei"> En</label> <label><input type="radio" name="{esc(aid)}-rev" value="kylla"> Kyllä</label></p>'
-                           f'<textarea rows="3" aria-label="Miksi?" placeholder="Miksi?"></textarea></div>')
-            elif t == "experiment": content = experiment_html(a, md, lid)
-            elif t == "interpret": content = f'<div class="interpret"><div class="representation">{md(a["text"])}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
-            elif t == "theory": content = "".join(parts["sections"][s] for s in a["sections"])
-            elif t == "sim": content = (md(a["text"]) if a.get("text") else "") + parts["sim"]
-            elif t == "exercises": content = (md(a["text"]) if a.get("text") else "") + parts["exercises"]
-            elif t == "exit": content = (md(a["text"]) if a.get("text") else "") + parts["exit"]
-            else: content = ""
-            hints = hints_html([md(h) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
-            inner += f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
+        si = next((i for i, a in enumerate(items) if a["type"] == "sim"), None)
+        if si is not None and si < len(items) - 1:     # the sim beside the activities that use it
+            inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
+                     f'<div class="lab-main">{flow(items[si + 1:], grid=False)}</div></div>')
+        else: inner = flow(items)
+        if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
+            k = sum(1 for a in items if a["type"] == "choice")
+            inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">Tee ennusteet ennen tutkimista</span> '
+                     f'<span class="fold-status" data-n="{k}">{k} {"kysymys" if k == 1 else "kysymystä"}</span></summary>'
+                     f'<div class="fold-body">{inner}</div></details>')
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
-        toc.append(f'<a href="#{sid}">{title.split()[0]}</a>')
+        toc.append(f'<a href="#{sid}">{NAV.get(sid, title)}</a>')
+        if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit">{EXIT_TITLE}</a>')
+    if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
+        text = md(ex_act["text"]) if ex_act and ex_act.get("text") else ""
+        aid = ex_act["id"] if ex_act else "harjoitukset"
+        body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{EXERCISES_TITLE}</h2>'
+                    f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
+        toc.append(f'<a href="#exercises">{EXERCISES_TITLE}</a>')
     return "\n".join(body), "".join(toc)
 
 

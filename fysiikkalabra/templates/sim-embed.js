@@ -5,7 +5,11 @@
    - pauses when it is scrolled out of view and resumes when it comes back (battery, and 80 bouncing
      particles need not run under the exercises),
    - runs at a low frame rate when the reader prefers reduced motion,
-   - uses the page's own font inside the canvas.
+   - uses the page's own font inside the canvas,
+   - folds a long explanation under the canvas (p.note, from a sim written before 2026-10-26) behind a closed
+     "Mallin oletukset ja selitys" box, so the picture, the controls and the values come first; one legend line of
+     at most 15 words stays visible. New sims put no explanation in the page: the lesson's inquiry.json carries
+     Käyttöohje, Mallin oletukset and Laskennan selitys (NOTES.md §4).
    Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
    It also defines window.defineSimAdapter (docs/inquiry.md, "Simulation interface"): a sim that calls it once
    from setup exposes a small adapter that guided investigations (inquiry.js) use to read the state, set
@@ -16,6 +20,14 @@
   const W = 600, H = 400;
   const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const font = (getComputedStyle(document.body).fontFamily.split(',')[0] || '').replace(/["']/g, '').trim();
+  const foldNotes = (root) => {
+    let box = null;
+    [...root.children].forEach((el) => {
+      if (!(el.tagName === 'P' && el.classList.contains('note') && el.textContent.trim().split(/\s+/).length > 15)) { box = null; return; }
+      if (!box) { box = document.createElement('details'); box.className = 'note'; box.innerHTML = '<summary>Mallin oletukset ja selitys</summary>'; el.before(box); }
+      box.appendChild(el);
+    });
+  };
 
   class Embedded extends Base {
     constructor(sketch, node) {
@@ -37,6 +49,8 @@
         p.setup = () => {
           if (setup) setup();
           if (!p.canvas) return;
+          const simRoot = document.getElementById('sim-root');
+          if (simRoot) foldNotes(simRoot);
           fit();
           if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root());
           else window.addEventListener('resize', fit);
