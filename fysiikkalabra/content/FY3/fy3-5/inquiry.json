@@ -88,6 +88,12 @@
       ]
     },
     {
+      "id": "kokeile",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "x"
+    },
+    {
       "id": "taulukko",
       "stage": "tutki",
       "type": "interpret",

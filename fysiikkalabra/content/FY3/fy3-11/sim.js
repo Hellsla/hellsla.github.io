@@ -1,261 +1,329 @@
-// fy3-11 Kaasun tekemä työ ja lämpövoimakone: an energy-flow (Sankey) diagram of a heat engine or a heat pump.
-// Physics (powers, i.e. energy per second; values in MW or kW, the mode's unit):
-//   heat engine: the fuel power Pin enters; the useful power (electricity or mechanical work) is Puse = ηPin,
-//     district heat (CHP only) Pheat = hPin with η + h ≤ 95 %, and the rest leaves as waste heat Pwaste = Pin − Puse − Pheat.
-//     Energy is conserved: Pin = Puse + Pheat + Pwaste. Total efficiency ηtot = (Puse + Pheat)/Pin = η + h.
-//   heat pump: electric power Pel in, heat delivered inside Pout = cop·Pel (cop = lämpökerroin), heat taken from the
-//     outdoor air Pambient = Pout − Pel, so Pel + Pambient = Pout: the pump moves heat, it does not create energy.
-// Drawing: arrow width ∝ power; the total (Pin, or Pout for the pump) gets the full width W, so the diagram always fills
-// its area, and the header key prints the scale. Colours: hot fuel red, electricity/work yellow, useful heat orange-red,
-// waste and outdoor heat cool blue. Each label sits beside its arrow end in a slot at least as tall as the label, so thin
-// flows keep readable labels. eta, etaTotal in percent. p5.js 1.9 instance mode, 600×400 canvas inside #sim-root.
-// The flows animate (chevrons, flames, turbine, pistons, fan) at the pace of the "Nopeus" select; t advances by dt·speed.
-// Every canvas text goes through lab(), which pushes {s, x0, y0, x1, y1} (its ink box) to simState.labels every frame,
-// so test_sims.py checks overlaps and clipping. Exposes window.simState every frame and window.simDebug (boxes by name).
+// fy3-11 Kaasun tekemä työ ja lämpövoimakone: a cylinder of gas under a weighted piston on a hot plate, and a cycle.
+// Model: a monatomic ideal gas, U = (3/2)nRT = (3/2)pV, so every energy follows from p and V alone (1 kPa · 1 l = 1 J).
+// The weights hold the pressure at p₁ = 200 kPa while the piston moves; the start volume is V₁ = 1,00 l.
+//   Heating at constant pressure (the student chooses the heat Q): W_k = p₁ΔV, ΔU = (3/2)p₁ΔV, Q = ΔU + W_k = (5/2)p₁ΔV,
+//     so ΔV = 2Q/(5p₁). The (V, p) graph fills the rectangle p₁ΔV as the piston rises.
+//   Return A "samassa paineessa": the weights push the piston back at p₁ while the gas gives its heat to the cold water,
+//     Q₂ = (5/2)p₁ΔV = Q, work on the gas p₁ΔV, net work W = 0.
+//   Return B "jäähdytä ensin": the piston is latched at V₂ and the upper weight slid onto a high shelf; cold water cools
+//     the gas at fixed volume until p = p₂ (heat (3/2)V₂(p₁ − p₂) out); the piston then descends at p₂ (heat (5/2)p₂ΔV out,
+//     work p₂ΔV on the gas); at V₁ it is latched, a fresh weight is taken from a low shelf and the hot plate heats the gas
+//     at fixed volume back to p₁ (heat (3/2)V₁(p₁ − p₂) in). Net work W = (p₁ − p₂)ΔV = the weight moved from the low
+//     shelf to the high one, and Q₁ − Q₂ = W.
+// Q₁ is all heat from the hot plate in a cycle, Q₂ all heat to the cold water, W the net work of the gas, η = W/Q₁.
+// Every phase runs in simulated time (dt·speed), so the "Nopeus" select changes only the pace. Energies in J, p in kPa,
+// V in litres. Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
-  const CAP = 95;                                                      // CHP: electricity + district heat ≤ 95 % of fuel
-  const XA = 140, XI = 152, BX0 = 196, BX1 = 336, XC = 384, XH = 396, YB = 394, GAP = 8;   // x stations of the diagram (px)
-  const COL = { fuel: [200, 60, 35], el: [238, 186, 20], dh: [240, 125, 40], waste: [110, 160, 205], amb: [80, 170, 230], inside: [220, 75, 50] };
-  const MODES = {
-    lauhdevoimalaitos: { unit: 'MW', P: [100, 2000, 10, 1000], eta: 40, use: 'sähkö' },
-    yhteistuotanto: { text: 'yhteistuotantovoimalaitos', unit: 'MW', P: [100, 2000, 10, 1000], eta: 30, heat: 55, use: 'sähkö' },
-    automoottori: { unit: 'kW', P: [10, 200, 1, 60], eta: 30, etaMax: 45, use: 'mekaaninen teho' },   // a car engine stays under ~45 %
-    ilmalämpöpumppu: { unit: 'kW', P: [0.5, 5, 0.1, 1], cop: 3 } };
-  let sel, sP, lP, sE, lE, sH, lH, sC, lC, sV, readout, more, mode = '', last = 'eta', t = 0, k = 1, boxes = {}, labels = [];
+  const P1 = 200, V1 = 1.0;                                             // kPa, l (the weights' pressure, start volume)
+  const DUR = { lammitys: 4, paluuA: 4, jaahdytys: 2.5, paluuB: 3, lisays: 2.5 };   // phase durations (simulated s)
+  const HEAT = ['lammitys', 'lisays'], COOL = ['paluuA', 'jaahdytys', 'paluuB'];
+  const CYL = { x0: 74, x1: 164, yb: 316, w: 6, pxl: 50, pist: 10, rod: 104, bpk: 0.16 };   // bore, px per l, block px per kPa
+  const G = { x0: 290, x1: 580, y0: 236, y1: 40, vmax: 3.5, pmax: 250 };   // (V, p) graph
+  const BAR = { x0: 346, x1: 590, y: [294, 330], h: 20, jmax: 1250 };      // energy bars
+  const COL = { Q: [210, 60, 40], dU: [135, 85, 190], Wk: [222, 150, 10], Won: [60, 115, 205], Q2: [50, 150, 215] };
+  const N = 28, SEED = 11;
+  let sQ, lQ, sP, lP, sel, sV, btn, readout, phase = 'alku', u = 0, queue = [], acc, parts = [], k = 1, labels = [], last = {};
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent), span = p.createSpan('').parent(label);
     return [p.createSlider(min, max, val, step).parent(label), span];
   };
-  const preset = () => {                                               // a new situation gets its typical values
-    mode = sel.value(); last = 'eta';
-    const m = MODES[mode], [a, b, st, v] = m.P; sP.elt.min = a; sP.elt.max = b; sP.elt.step = st; sP.value(v);
-    sE.elt.max = m.etaMax || 60; if (m.eta) sE.value(m.eta); sH.value(m.heat || 0); if (m.cop) sC.value(m.cop);
+  const mulberry32 = (a) => () => {                                     // seeded PRNG: particles start the same way every time
+    a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const par = () => {                                                   // settings → the process
+    const Q = Number(sQ.value()), p2 = Number(sP.value()), dV = 2 * Q / (5 * P1);
+    return { Q, p2, dV, V2: V1 + dV, B: sel.value() === 'jäähdytys ensin' };
+  };
+  const restart = () => {                                               // back to the start state, nothing transferred yet
+    phase = 'alku'; u = 0; queue = []; acc = { Qh: 0, Qc: 0, Wg: 0 };
+    const rnd = mulberry32(SEED);
+    parts = Array.from({ length: N }, (_, a) => (a = 2 * Math.PI * rnd(), { x: rnd(), y: rnd(), dx: Math.cos(a), dy: Math.sin(a) }));
+  };
+  // contribution of one phase at progress s ∈ [0, 1]: state (V, p) and heat in, heat out, work by the gas so far
+  const phaseAt = (ph, s, P) => {
+    const { dV, V2, p2 } = P;
+    switch (ph) {
+      case 'lammitys': return { V: V1 + s * dV, p: P1, Qh: 2.5 * P1 * s * dV, Qc: 0, Wg: P1 * s * dV };
+      case 'paluuA': return { V: V2 - s * dV, p: P1, Qh: 0, Qc: 2.5 * P1 * s * dV, Wg: -P1 * s * dV };
+      case 'jaahdytys': return { V: V2, p: P1 - s * (P1 - p2), Qh: 0, Qc: 1.5 * V2 * (P1 - p2) * s, Wg: 0 };
+      case 'paluuB': return { V: V2 - s * dV, p: p2, Qh: 0, Qc: 2.5 * p2 * s * dV, Wg: -p2 * s * dV };
+      case 'lisays': return { V: V1, p: p2 + s * (P1 - p2), Qh: 1.5 * V1 * (P1 - p2) * s, Qc: 0, Wg: 0 };
+      case 'ylhaalla': return { V: V2, p: P1, Qh: 0, Qc: 0, Wg: 0 };
+      default: return { V: V1, p: P1, Qh: 0, Qc: 0, Wg: 0 };           // alku, valmis
+    }
+  };
+  const running = () => phase in DUR;
+  const advance = (dt, P) => {                                          // simulated time; carries over into the next phase
+    while (dt > 0 && running()) {
+      const left = (1 - u) * DUR[phase];
+      if (dt < left) { u += dt / DUR[phase]; return; }
+      dt -= left; const c = phaseAt(phase, 1, P); acc.Qh += c.Qh; acc.Qc += c.Qc; acc.Wg += c.Wg;
+      const was = phase; u = 0;
+      phase = queue.length ? queue.shift() : (was === 'lammitys' ? 'ylhaalla' : 'valmis');
+    }
+  };
+  const go = () => {                                                    // the main button
+    if (running()) return;
+    if (phase === 'valmis') restart();
+    if (phase === 'alku') { phase = 'lammitys'; u = 0; }
+    else if (phase === 'ylhaalla') { const B = par().B; queue = B ? ['paluuB', 'lisays'] : []; phase = B ? 'jaahdytys' : 'paluuA'; u = 0; }
   };
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    const ls = p.createElement('label').parent(controls); p.createSpan('Tilanne').parent(ls); sel = p.createSelect().parent(ls);
-    for (const [v, m] of Object.entries(MODES)) sel.option(m.text || v, v);
-    sel.elt.addEventListener('change', preset);
-    [sP, lP] = slider(controls, 100, 2000, 1000, 10); [sE, lE] = slider(controls, 10, 60, 40, 1);   // input power, η (%)
-    [sH, lH] = slider(controls, 0, 65, 55, 1); [sC, lC] = slider(controls, 1.5, 5, 3, 0.1);          // district heat share (%), cop
-    sE.elt.addEventListener('input', () => { last = 'eta'; }); sH.elt.addEventListener('input', () => { last = 'heat'; });   // CHP cap moves the other one
+    btn = p.createButton('Lämmitä').parent(controls); btn.elt.addEventListener('click', go);
+    const bR = p.createButton('Alusta').parent(controls); bR.elt.addEventListener('click', restart);
+    [sQ, lQ] = slider(controls, 200, 1000, 500, 50);                     // heat given at constant pressure (J)
+    const ls = p.createElement('label').parent(controls); p.createSpan('Männän paluu').parent(ls); sel = p.createSelect().parent(ls);
+    sel.option('samassa paineessa', 'sama paine'); sel.option('jäähdytä ensin', 'jäähdytys ensin');
+    [sP, lP] = slider(controls, 40, 180, 100, 10);                       // pressure after cooling, B only (kPa)
+    for (const e of [sQ.elt, sP.elt, sel.elt]) { e.addEventListener('input', restart); e.addEventListener('change', restart); }
     const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sV = p.createSelect().parent(lv);
     for (const [txt, v] of [['hidas', 0.4], ['normaali', 1], ['nopea', 2]]) sV.option(txt, v);
-    sV.selected('1');                                                  // animation pace only; no quantity depends on it
+    sV.selected('1');                                                  // pace only; every quantity follows simulated time
     const det = p.createElement('details').parent('sim-root').class('note');   // explanations stay behind "Lisätietoja"
     p.createElement('summary', 'Lisätietoja').parent(det);
-    p.createP('Nuolen leveys on verrannollinen tehoon. Kokonaisteho täyttää aina koko kaavion, joten asteikko vaihtuu; ' +
-              'se näkyy kankaan ylälaidassa. Yhteistuotannossa sähkön ja kaukolämmön osuus on yhteensä enintään 95 %.').parent(det);
-    more = p.createP('').parent(det);
-    preset(); p.textFont('Arial');
-    // adapter for guided investigations (sim-embed.js): the page may set, lock and reset the situation and the sliders
+    p.createP('Luvut ovat mallin arvoja: sylinterissä on yksiatomista ideaalikaasua, jonka sisäenergian muutos on ' +
+      'ΔU = (3/2)nRΔT = (3/2)Δ(pV). Mäntä on kitkaton ja painoton, eikä sen yläpuolella ole ilmaa, joten kaasun paineen ' +
+      'aiheuttavat punnukset: 200 kPa kahdella punnuksella, alempi punnus yksin antaa paineen p₂. Kuuman levyn oletetaan ' +
+      'olevan aina kaasua kuumempi ja kylmän veden kylmempi. Lämpöä ei karkaa muualle.').parent(det);
+    p.createP('Kuvaajan oranssi pinta-ala on kaasun tekemä työ Wₖ = pΔV, sininen pinta-ala työ, joka tehdään kaasuun, ' +
+      'kun mäntä palautetaan. Palkeissa sama väri tarkoittaa samaa energiaa. Vaihtoehdossa B ylempi punnus siirretään ' +
+      'ylös hyllylle ja alhaalta otetaan uusi: kierroksen nettotyö W on punnuksen nostamiseen kulunut energia. ' +
+      'Kun mäntä on lukittu (pienet tapit), tilavuus ei muutu.').parent(det);
+    restart(); p.textFont('Arial');
+    // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
     if (window.defineSimAdapter) window.defineSimAdapter({
-      params: { mode: { input: sel.elt, unit: '' }, Pin: { input: sP.elt, unit: 'MW' }, eta: { input: sE.elt, unit: '%' }, heatShare: { input: sH.elt, unit: '%' } },
-      reset: () => { sel.selected('lauhdevoimalaitos'); sC.value(3); sV.selected('1'); preset(); t = 0; },
+      params: { Qin: { input: sQ.elt, unit: 'J' }, paluu: { input: sel.elt, unit: '' }, p2: { input: sP.elt, unit: 'kPa' } },
+      reset: () => { sQ.value(500); sP.value(100); sel.selected('sama paine'); sV.selected('1'); restart(); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
 
   p.draw = () => {
-    if (sel.value() !== mode) preset();
-    const m = MODES[mode], u = m.unit, pump = !!m.cop, chp = mode === 'yhteistuotanto';
-    const speed = Number(sV.value()); t += Math.min(p.deltaTime, 100) / 1000 * speed;
-    for (const [l, on] of [[lE, !pump], [lH, chp], [lC, pump]]) l.elt.parentElement.style.display = on ? '' : 'none';
-    const P = Number(sP.value()), cop = Number(sC.value());
-    let eta = Number(sE.value()), h = chp ? Number(sH.value()) : 0;
-    if (chp && eta + h > CAP) { if (last === 'heat') { eta = CAP - h; sE.value(eta); } else { h = CAP - eta; sH.value(h); } }
-    const n = (x) => `${fs(x)} ${u}`, pc = (x) => `${x} %`;
-    let S, ins, outs, lines;
-    if (pump) {
-      const Pout = cop * P, Pamb = Pout - P;                           // heat inside = cop · electricity, the rest from outdoor air
-      S = { Pin: null, eta: null, heatShare: null, Puse: null, Pheat: null, Pwaste: null, etaTotal: null, Pel: P, cop, Pout, Pambient: Pamb, sumIn: P + Pamb, sumOut: Pout };
-      ins = [['sähkö', P, COL.el], ['ulkoilman lämpö', Pamb, COL.amb]]; outs = [['lämpö sisälle', Pout, COL.inside]];
-      lP.html(`Sähköteho = ${fi(P, 1)} kW`); lC.html(`Lämpökerroin = ${fi(cop, 1)}`);
-      lines = [`Sähkö ${n(P)}, lämpökerroin ${fi(cop, 1)}`,                // at most four short lines (360 px)
-        `Sisälle ${fi(cop, 1)} · ${n(P)} = <strong>${n(Pout)}</strong>`,
-        `Ulkoilmasta ${fs(Pout)} − ${fs(P)} = <strong>${n(Pamb)}</strong>`,
-        `Energia säilyy: ${fs(P)} + ${fs(Pamb)} = ${n(Pout)}`];
-    } else {
-      const Puse = eta / 100 * P, Pheat = h / 100 * P, Pwaste = P - Puse - Pheat;   // energy conserved: the rest is waste heat
-      S = { Pin: P, eta, heatShare: h, Puse, Pheat, Pwaste, etaTotal: eta + h, Pel: null, cop: null, Pout: null, Pambient: null, sumIn: P, sumOut: Puse + Pheat + Pwaste };
-      ins = [['polttoaine', P, COL.fuel]];
-      outs = [[m.use, Puse, COL.el], ...(chp ? [['kaukolämpö', Pheat, COL.dh]] : []), ['hukkalämpö', Pwaste, COL.waste]];
-      lP.html(`Polttoaineen teho = ${fi(P, 0)} ${u}`); lE.html(`${chp ? 'Sähkön osuus, hyötysuhde' : 'Hyötysuhde'} η = ${pc(eta)}`);
-      lH.html(`Kaukolämmön osuus = ${pc(h)}`);
-      const Use = m.use[0].toUpperCase() + m.use.slice(1);              // at most four short lines (360 px)
-      lines = [chp ? `${Use} ${fs(Puse)}, kaukolämpö ${n(Pheat)}` : `${Use} ${n(Puse)}`,
-        `Hukkalämpö ${n(Pwaste)}`,
-        `Sisään ${fs(P)} = ${outs.map((f) => fs(f[1])).join(' + ')} ${u}`,
-        chp ? `η<sub>kok</sub> = (${fs(Puse)} + ${fs(Pheat)}) / ${fs(P)} = <strong>${pc(eta + h)}</strong>`
-          : `η = ${fs(Puse)} / ${fs(P)} = <strong>${pc(eta)}</strong>`];
+    const P = par(), speed = Number(sV.value());
+    const key = `${P.Q}|${P.p2}|${P.B}`; if (last.key !== undefined && last.key !== key && phase !== 'alku') restart(); last.key = key;
+    advance(Math.min(p.deltaTime, 100) / 1000 * speed, P);
+    const c = phaseAt(phase, u, P), V = c.V, pr = c.p;
+    const Q1 = acc.Qh + c.Qh, Q2 = acc.Qc + c.Qc, W = acc.Wg + c.Wg, done = phase === 'valmis';
+    const heated = phase === 'lammitys' ? u : phase === 'alku' ? 0 : 1;  // heating progress
+    const dVh = heated * P.dV, Wk = P1 * dVh, dU = 1.5 * P1 * dVh, Qh = 2.5 * P1 * dVh;
+    const eta = Q1 > 0 ? 100 * W / Q1 : 0, returning = !['alku', 'lammitys', 'ylhaalla'].includes(phase);
+
+    // controls: labels, hidden p₂ in mode A, main button text
+    lQ.html(`Lämpö Q = ${P.Q} J`); lP.html(`Paine jäähdytyksen jälkeen p<sub>2</sub> = ${P.p2} kPa`);
+    lP.elt.parentElement.style.display = P.B ? '' : 'none';
+    const bt = phase === 'alku' ? 'Lämmitä' : phase === 'ylhaalla' ? 'Palauta mäntä' : phase === 'valmis' ? 'Uusi kierros' : (phase === 'lammitys' ? 'Lämmitetään…' : 'Palautetaan…');
+    if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
+    btn.elt.disabled = running();
+
+    k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
+    const ts = (x) => Math.round(x * k), fh = ts(11);
+    labels = [];
+    p.background(250);
+    cylinder(P, phase, u, V, pr, speed, ts);
+    graph(P, phase, u, V, pr, done, ts, fh);
+    const area = areas(P, phase, u);
+    bars(done, Q1, Q2, W, Qh, dU, Wk, ts);
+
+    // readout: at most four short lines
+    const J = (x) => `${Math.round(x)} J`, L = (x) => `${fi(x, 2)} l`;
+    const lines = [`Lämmitys: ΔV = ${L(dVh)}, W<sub>k</sub> = pΔV = <strong>${J(Wk)}</strong>`,
+      `Q = ${J(Qh)}, ΔU = ${J(dU)}, ΔU + W<sub>k</sub> = <strong>${J(dU + Wk)}</strong>`];
+    if (!returning) lines.push(phase === 'ylhaalla' ? 'Mäntä on ylhäällä. Palauta se alas.' : 'Lämmitä kaasua kuumalla levyllä.');
+    else {
+      lines.push(`Kierros${done ? '' : ' kesken'}: Q<sub>1</sub> = ${J(Q1)}, Q<sub>2</sub> = ${J(Q2)}`);
+      lines.push(done ? `W = Q<sub>1</sub> − Q<sub>2</sub> = <strong>${J(W)}</strong>, η = W/Q<sub>1</sub> = <strong>${fi(eta, 0)} %</strong>`
+        : `Nettotyö tähän asti W = ${J(W)}`);
     }
-
-    // layout: header (scale key + legend, wrapped into rows), then the widest W for which every slot fits
-    k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
-    const ts = (x) => Math.round(x * k), total = S.sumIn, fh = ts(11), rowH = Math.max(30, Math.round(fh * 1.6));
-    const v = nice(total / 8), keyT = `${fv(v)} ${u}`, legend = [...ins, ...outs];
-    boxes = {}; labels = []; p.textSize(fh); p.textStyle(p.NORMAL);
-    let hx = 8, row = 0;
-    const pos = [['key', p.textWidth('Asteikko:') + 22 + p.textWidth(keyT)], ...legend.map((f) => [f, fh + 6 + p.textWidth(f[0])])]
-      .map(([it, w]) => { if (hx + w > 592 && hx > 8) { hx = 8; row++; } const r = [it, hx, row]; hx += w + ts(14); return r; });
-    const YT = 10 + (row + 1) * rowH, fz = ts(13), LI = ins.map((f) => fit(f, XA - 12, fz)), LO = outs.map((f) => fit(f, 160, fz));
-    const need = (fl, L, w) => fl.reduce((s, f, i) => s + Math.max(f[1] / total * w, L[i].h), 0) + GAP * (fl.length - 1);
-    let W = 210; while (W > 60 && Math.max(need(ins, LI, W), need(outs, LO, W), W + 24) > YB - YT) W -= 2;
-    const sc = W / total, yc = (YT + YB) / 2;
-    const slots = (fl, L) => {                                         // label slots stacked around the centre line
-      const hs = fl.map((f, i) => Math.max(f[1] * sc, L[i].h)), T = hs.reduce((a, b) => a + b, 0) + GAP * (fl.length - 1);
-      let y = Math.max(YT, Math.min(YB - T, yc - T / 2)), yb = yc - W / 2;
-      return fl.map((f, i) => { const w = f[1] * sc, o = { w, top: y + (hs[i] - w) / 2, mid: y + hs[i] / 2, box: yb }; y += hs[i] + GAP; yb += w; return o; });
-    };
-    const SI = slots(ins, LI), SO = slots(outs, LO), y0 = yc - W / 2 - 12, y1 = yc + W / 2 + 12;
-
-    // background: outdoors cool, indoors warm for the heat pump
-    p.background(250); p.noStroke();
-    if (pump) { p.fill(226, 239, 250); p.rect(0, 0, BX0 + 84, 400); p.fill(253, 238, 225); p.rect(BX0 + 84, 0, 600, 400); }
-    ins.forEach((f, i) => { band(f[2], [[XA, SI[i].top], [XI, SI[i].top], [BX0, SI[i].box]], SI[i].w, false);
-      label(`in${i}`, LI[i], XA - 8, SI[i].mid, 'r'); });
-    outs.forEach((f, i) => { const end = band(f[2], [[BX1, SO[i].box], [XC, SO[i].top], [XH, SO[i].top]], SO[i].w, true);
-      label(`out${i}`, LO[i], end + 8, SO[i].mid, 'l'); });
-    if (pump) heatPump(BX0, y0, BX1, y1); else if (mode === 'automoottori') engine(BX0, y0, BX1, y1); else plant(BX0, y0, BX1, y1, chp);
-
-    // header: scale key (a bar as wide as v) and the colour legend
-    for (const [it, x, r] of pos) {
-      const cy = 4 + rowH * (r + 0.5), by = cy + fh * 0.36;
-      if (it !== 'key') { p.fill(it[2]); p.stroke(80); p.strokeWeight(1); p.rect(x, cy - fh / 2, fh, fh, 2); lab(it[0], x + fh + 6, by, 'l', fh, false, `leg-${it[0]}`); continue; }
-      lab('Asteikko:', x, by, 'l', fh, false, 'key');
-      const bx = boxes.key[1] + 8; p.fill(90); p.noStroke(); p.rect(bx, cy - v * sc / 2, 6, v * sc); lab(keyT, bx + 14, by, 'l', fh, false, 'keyValue');
-    }
-    const txt = `Asteikko: nuolen leveys on verrannollinen tehoon, kokonaisteho ${n(total)} on koko kaavion levyinen ja avainpalkki on ${fv(v)} ${u}.` +
-      (pump ? ' Lämpöpumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisätilaan. Se ei luo energiaa: sisälle luovutettu lämpö on ulkoilmasta otetun lämmön ja sähkön summa.' : '');
-    if (more.elt.textContent !== txt) more.elt.textContent = txt;      // scale and model notes behind "Lisätietoja"
-    readout.html(lines.join('<br>'));                                  // at most four short lines
-    window.simState = { mode, unit: u, ...S, scale: sc, scaleKey: v, bandTotal: W, speed, labels };
-    window.simDebug = { boxes, k, W, YT };
+    readout.html(lines.join('<br>'));
+    window.simState = { paluu: sel.value(), Qin: P.Q, p1: P1, p2: P.p2, V1, V2: P.V2, phase, u, done: done ? 1 : 0, V, p: pr,
+      dV: dVh, Q: Qh, dU, Wk, Q1, Q2, W, eta, dUcycle: 1.5 * (pr * V - P1 * V1), areaWk: area.wk, areaNet: area.net, speed, labels };
+    window.simDebug = { finish: () => advance(1e6, par()), go, restart };
   };
 
-  // one flow: a ribbon of width w through the key points [x, top] (smooth steps between them), moving chevrons on it,
-  // an arrowhead at the end of an output; returns the x where the arrow ends. A zero flow is a thin dashed line.
-  function band(col, keys, w, head) {
-    const top = (x) => { for (let i = 1; i < keys.length; i++) if (x <= keys[i][0] || i === keys.length - 1) {
-      const [xa, ya] = keys[i - 1], [xb, yb] = keys[i], s = Math.min(1, Math.max(0, (x - xa) / (xb - xa)));
-      return ya + (yb - ya) * s * s * (3 - 2 * s); } };
-    const xa = keys[0][0], xb = keys[keys.length - 1][0], xs = [];
-    for (let x = xa; x < xb; x += 3) xs.push(x); xs.push(xb);
-    if (w < 0.8) { p.noFill(); p.stroke(col); p.strokeWeight(1.5); p.drawingContext.setLineDash([4, 4]);
-      p.beginShape(); xs.forEach((x) => p.vertex(x, top(x))); p.endShape(); p.drawingContext.setLineDash([]); return xb + 4; }
-    const hl = Math.min(30, 10 + w / 5), e = Math.min(8, 3 + w / 10), yt = top(xb);
-    p.fill(col); p.stroke(col.map((c) => c * 0.7)); p.strokeWeight(1);
-    p.beginShape(); xs.forEach((x) => p.vertex(x, top(x)));
-    if (head) { p.vertex(xb, yt - e); p.vertex(xb + hl, yt + w / 2); p.vertex(xb, yt + w + e); }
-    [...xs].reverse().forEach((x) => p.vertex(x, top(x) + w)); p.endShape(p.CLOSE);
-    if (w >= 4) {                                                       // chevrons drift in the direction of the flow
-      const c = Math.min(9, w / 2); p.noStroke(); p.fill(255, 255, 255, 95);
-      for (let x = xa + ((t * 40) % 28); x + 6 + c < xb; x += 28) {
-        const a = top(x), b = top(x + c), mm = (a + b) / 2;
-        p.quad(x, a + 1, x + 5, a + 1, x + 5 + c, mm + w / 2, x + c, mm + w / 2); p.quad(x + c, mm + w / 2, x + 5 + c, mm + w / 2, x + 5, a + w - 1, x, a + w - 1);
+  // the cylinder: hot plate or cold water below, gas particles, piston with a rod, weights, shelves, latch pins
+  function cylinder(P, ph, s, V, pr, speed, ts) {
+    const { x0, x1, yb, w, pxl, pist, rod, bpk } = CYL, cx = (x0 + x1) / 2, gt = yb - V * pxl, wallTop = yb - 3.0 * pxl - pist - 4;
+    const heat = HEAT.includes(ph), cool = COOL.includes(ph), t = p.millis() / 1000;
+    // contact slab
+    if (heat) grect(x0 - 14, yb + 2, x1 - x0 + 28, 26, [[255, 200, 80], [220, 60, 30]], false, 3);
+    else if (cool) {
+      grect(x0 - 14, yb + 2, x1 - x0 + 28, 26, [[150, 205, 240], [40, 110, 190]], false, 3);
+      p.noFill(); p.stroke(255, 255, 255, 170); p.strokeWeight(1.5); p.beginShape();
+      for (let x = x0 - 10; x <= x1 + 10; x += 3) p.vertex(x, yb + 14 + 2 * Math.sin(x / 6 - 3 * t)); p.endShape();
+    } else grect(x0 - 14, yb + 2, x1 - x0 + 28, 26, [[205, 205, 210], [160, 160, 168]], false, 3);
+    lab(heat ? 'kuuma levy' : cool ? 'kylmä vesi' : 'eriste', cx, yb + 28 + ts(16), 'c', ts(12));
+    // gas: colour from pV (cold blue → warm orange), particles faster when pV is larger
+    const f = Math.min(1, Math.max(0, (pr * V - 40) / 560)), gc = mix([90, 140, 225], [245, 130, 40], f);
+    p.noStroke(); p.fill(...gc, 70); p.rect(x0, gt, x1 - x0, yb - gt);
+    const v = 30 * Math.sqrt(pr * V / 200) * speed * Math.min(p.deltaTime, 100) / 1000;
+    p.fill(...gc.map((x) => x * 0.75));
+    for (const q of parts) {
+      q.x += q.dx * v / (x1 - x0); q.y += q.dy * v / Math.max(20, yb - gt);
+      if (q.x < 0 || q.x > 1) { q.dx = -q.dx; q.x = Math.min(1, Math.max(0, q.x)); }
+      if (q.y < 0 || q.y > 1) { q.dy = -q.dy; q.y = Math.min(1, Math.max(0, q.y)); }
+      p.circle(x0 + 4 + q.x * (x1 - x0 - 8), gt + 4 + q.y * (yb - gt - 8), 5);
+    }
+    // heat arrows: up into the gas from the plate, down out of the gas into the water
+    if (heat || cool) {
+      p.stroke(...(heat ? COL.Q : COL.Q2)); p.strokeWeight(3); p.noFill();
+      for (let i = 0; i < 3; i++) {
+        const ax = x0 + 20 + i * 25, ph2 = (t * 0.8 + i / 3) % 1, ya = heat ? yb - 4 - 26 * ph2 : yb - 30 + 26 * ph2;
+        p.line(ax, ya, ax, ya + 14); const tip = heat ? ya : ya + 14, d = heat ? 6 : -6;
+        p.line(ax, tip, ax - 4, tip + d); p.line(ax, tip, ax + 4, tip + d);
       }
     }
-    return head ? xb + hl : xb;
-  }
-  // a label: name (wrapped to maxW, the font shrinks if one word does not fit) and the value in bold on its own line
-  function fit([name, P], maxW, size) {
-    for (const unit = MODES[mode].unit; ; size--) {
-      p.textSize(size); p.textStyle(p.NORMAL); const lines = [];
-      for (const wd of name.split(' ')) { const tt = lines.length ? `${lines[lines.length - 1]} ${wd}` : wd;
-        if (lines.length && p.textWidth(tt) <= maxW) lines[lines.length - 1] = tt; else lines.push(wd); }
-      const ok = lines.every((s) => p.textWidth(s) <= maxW); p.textStyle(p.BOLD);
-      const val = `${fs(P)} ${unit}`, fit = ok && p.textWidth(val) <= maxW; p.textStyle(p.NORMAL); lines.push(val);
-      if (fit || size <= 9) return { lines, size, h: (lines.length - 1) * Math.round(size * 1.2) + 1.25 * size };
+    // walls
+    grect(x0 - w, wallTop, w, yb - wallTop + 2, [[95, 98, 108], [175, 180, 190], [95, 98, 108]], true, 1);
+    grect(x1, wallTop, w, yb - wallTop + 2, [[95, 98, 108], [175, 180, 190], [95, 98, 108]], true, 1);
+    p.noStroke(); p.fill(95, 98, 108); p.rect(x0 - w, yb, x1 - x0 + 2 * w, 3);
+    // piston, rod, platform
+    grect(x0, gt - pist, x1 - x0, pist, [[130, 134, 142], [200, 204, 212], [130, 134, 142]], false, 2);
+    const plat = gt - pist - rod;
+    p.fill(120); p.rect(cx - 4, plat, 8, rod);
+    grect(cx - 32, plat - 6, 64, 6, [[90, 90, 96], [150, 150, 158]], false, 1);
+    if (['jaahdytys', 'lisays'].includes(ph)) {                          // latch pins hold the piston at fixed volume
+      p.fill(40); p.triangle(x0, gt - pist - 6, x0 + 8, gt - pist - 6, x0, gt - pist - 14);
+      p.triangle(x1, gt - pist - 6, x1 - 8, gt - pist - 6, x1, gt - pist - 14);
+    }
+    // weights: lower block (p₂ in B, the whole p₁ in A) and the upper block (p₁ − p₂) that B moves between shelves
+    const hLow = (P.B ? P.p2 : P1) * bpk, hUp = (P1 - P.p2) * bpk, bw = 56;
+    const yLow = plat - 6 - hLow;
+    block(cx, yLow, bw, hLow, [70, 75, 85]);
+    if (P.B) {
+      const platHi = yb - P.V2 * pxl - pist - rod, yHi = platHi - 6 - hLow - hUp;          // upper block level at the top
+      const platLo = yb - V1 * pxl - pist - rod, yLo = platLo - 6 - hLow - hUp;            // fresh block level at the bottom
+      const sxR = cx + 84, sxL = cx - 82;
+      shelf(sxR, yHi + hUp); shelf(sxL, yLo + hUp);
+      const slide = (q) => Math.min(1, q / 0.4);
+      const order = ['alku', 'lammitys', 'ylhaalla', 'jaahdytys', 'paluuB', 'lisays', 'valmis'], i = order.indexOf(ph);
+      // upper block: on the piston until cooling starts, then slides right onto the high shelf
+      if (i <= 2) block(cx, yLow - hUp, bw, hUp, [150, 110, 60]);
+      else { const q = ph === 'jaahdytys' ? slide(s) : 1; block(cx + q * (sxR - cx), yHi, bw, hUp, [150, 110, 60]); }
+      // fresh block: waits on the low shelf, slides onto the piston when the weight is put back at the bottom
+      if (i <= 4) block(sxL, yLo, bw, hUp, [150, 110, 60]);
+      else { const q = ph === 'lisays' ? slide(s) : 1; block(sxL + q * (cx - sxL), yLow - hUp, bw, hUp, [150, 110, 60]); }
     }
   }
-  function label(name, L, x, mid, align) {
-    let y = mid - L.h / 2 + L.size;
-    L.lines.forEach((s, i) => { lab(s, x, y, align, L.size, i === L.lines.length - 1, `${name}-${i}`); y += Math.round(L.size * 1.2); });
+  function block(x, y, bw, h, c) { if (h < 0.5) return; grect(x - bw / 2, y, bw, h, [c.map((v) => v + 40), c], false, 2); }
+  function shelf(x, y) {                                                // a shelf on a post standing on the table
+    const px = x < CYL.x0 ? x - 26 : x + 26; p.noStroke(); p.fill(150, 130, 105); p.rect(px - 2, y, 4, CYL.yb + 28 - y);
+    p.fill(120, 100, 80); p.rect(x - 32, y, 64, 4);
   }
-  // every canvas text: drawn with a halo, its ink box pushed to simState.labels and recorded in boxes[name]
-  function lab(s, x, y, align, size, bold, name = s) {
-    p.textSize(size); p.textStyle(bold ? p.BOLD : p.NORMAL); p.textAlign(p.LEFT, p.BASELINE);
-    const mt = p.drawingContext.measureText(s), lx = align === 'r' ? x - mt.width : x;
-    p.stroke(255, 255, 255, 200); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND); p.fill(35);
-    p.text(s, lx, y); p.noStroke(); p.text(s, lx, y); p.textStyle(p.NORMAL);
-    const b = [lx - mt.actualBoundingBoxLeft, lx + mt.actualBoundingBoxRight, y - mt.actualBoundingBoxAscent, y + mt.actualBoundingBoxDescent];
-    boxes[name] = b; labels.push({ s, x0: b[0], y0: b[2], x1: b[1], y1: b[3] });
+
+  // (V, p) graph: gridlines, the path so far, the gas work (orange) and the work on the gas (blue)
+  function graph(P, ph, s, V, pr, done, ts, fh) {
+    const X = (v) => G.x0 + v / G.vmax * (G.x1 - G.x0), Y = (q) => G.y0 - q / G.pmax * (G.y0 - G.y1);
+    p.stroke(225); p.strokeWeight(1);
+    for (let v = 0.5; v <= G.vmax + 1e-9; v += 0.5) p.line(X(v), G.y0, X(v), G.y1);
+    for (let q = 50; q <= G.pmax; q += 50) p.line(G.x0, Y(q), G.x1, Y(q));
+    const rects = geometry(P, ph, s);
+    p.noStroke();
+    if (rects.wk) { p.fill(...COL.Wk, 120); p.rect(X(V1), Y(P1), X(V1 + rects.wk) - X(V1), Y(0) - Y(P1)); }
+    if (rects.on) {                                                     // work on the gas: blue, hatched over the orange it cancels
+      const [va, vb, q] = rects.on, xa = X(va), xb = X(vb), ya = Y(q), yb = Y(0);
+      p.fill(...COL.Won, 55); p.rect(xa, ya, xb - xa, yb - ya);
+      const c = p.drawingContext; c.save(); c.beginPath(); c.rect(xa, ya, xb - xa, yb - ya); c.clip();
+      p.stroke(...COL.Won, 200); p.strokeWeight(2); for (let x = xa - (yb - ya); x < xb; x += 9) p.line(x, yb, x + (yb - ya), ya);
+      c.restore(); p.noStroke();
+    }
+    // path: heating line, return lines, isochoric steps
+    p.strokeWeight(3); p.noFill();
+    const seg = (va, qa, vb, qb, c) => { p.stroke(...c); p.line(X(va), Y(qa), X(vb), Y(qb)); };
+    const order = ['alku', 'lammitys', 'ylhaalla', 'paluuA', 'jaahdytys', 'paluuB', 'lisays', 'valmis'];
+    const reached = (n) => order.indexOf(ph) >= order.indexOf(n);
+    if (reached('lammitys')) seg(V1, P1, ph === 'lammitys' ? V : P.V2, P1, COL.Q);
+    if (!P.B && reached('paluuA')) seg(P.V2, P1, ph === 'paluuA' ? V : V1, P1, COL.Q2);
+    if (P.B && reached('jaahdytys')) seg(P.V2, P1, P.V2, ph === 'jaahdytys' ? pr : P.p2, COL.Q2);
+    if (P.B && reached('paluuB')) seg(P.V2, P.p2, ph === 'paluuB' ? V : V1, P.p2, COL.Q2);
+    if (P.B && reached('lisays')) seg(V1, P.p2, V1, ph === 'lisays' ? pr : P1, COL.Q);
+    // axes
+    p.stroke(60); p.strokeWeight(1.5); p.line(G.x0, G.y0, G.x1 + 6, G.y0); p.line(G.x0, G.y0, G.x0, G.y1 - 6);
+    p.fill(60); p.noStroke(); p.triangle(G.x1 + 10, G.y0, G.x1 + 2, G.y0 - 4, G.x1 + 2, G.y0 + 4);
+    p.triangle(G.x0, G.y1 - 10, G.x0 - 4, G.y1 - 2, G.x0 + 4, G.y1 - 2);
+    for (let v = 0; v <= 3; v++) lab(String(v), X(v), G.y0 + fh + 4, 'c', fh);
+    for (let q = (k > 1.5 ? 100 : 50); q <= G.pmax; q += (k > 1.5 ? 100 : 50)) lab(String(q), G.x0 - 6, Y(q) + fh * 0.36, 'r', fh);
+    lab('V (l)', 596, G.y0 + fh + 4, 'r', fh);
+    lab('p (kPa)', G.x0 - 6 - ts(24), G.y1 - fh * 0.9, 'l', fh);
+    // current state
+    p.fill(255); p.stroke(30); p.strokeWeight(2); p.circle(X(V), Y(pr), 10);
+    // area labels: Wₖ while heating, W (the net work left over) when cycle B is done
+    const big = ts(13);
+    if (rects.wk && !rects.on && ph !== 'jaahdytys') {
+      const xm = (X(V1) + X(V1 + rects.wk)) / 2, wpx = X(V1 + rects.wk) - X(V1);
+      if (wpx > ts(30)) labSub([['W', 'k']], xm, Y(P1 / 2) + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
+    }
+    if (done && P.B) {
+      const hpx = Y(P.p2) - Y(P1), wpx = X(P.V2) - X(V1);
+      if (hpx > big * 1.3 && wpx > ts(24)) labSub([['W', '']], (X(V1) + X(P.V2)) / 2, (Y(P1) + Y(P.p2)) / 2 + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
+    }
+  }
+  // the drawn areas: gas work rectangle (ΔV of the heating so far) and the work done on the gas while returning
+  function geometry(P, ph, s) {
+    const order = ['alku', 'lammitys', 'ylhaalla', 'paluuA', 'jaahdytys', 'paluuB', 'lisays', 'valmis'], i = order.indexOf(ph);
+    const wk = ph === 'alku' ? 0 : ph === 'lammitys' ? s * P.dV : P.dV;
+    let on = null;
+    if (ph === 'paluuA') on = [P.V2 - s * P.dV, P.V2, P1];
+    else if (ph === 'paluuB') on = [P.V2 - s * P.dV, P.V2, P.p2];
+    else if (ph === 'valmis' || (P.B && i >= order.indexOf('lisays'))) on = [V1, P.V2, P.B ? P.p2 : P1];
+    return { wk, on };
+  }
+  function areas(P, ph, s) {                                            // in J (kPa · l), from the drawn rectangles
+    const r = geometry(P, ph, s), wk = P1 * r.wk, on = r.on ? r.on[2] * (r.on[1] - r.on[0]) : 0;
+    return { wk, net: wk - on };
+  }
+
+  // energy bars: heating Q against ΔU + Wₖ; when the cycle is done Q₁ against W + Q₂
+  function bars(done, Q1, Q2, W, Q, dU, Wk, ts) {
+    const sc = (BAR.x1 - BAR.x0) / BAR.jmax, fz = ts(12), [y1, y2] = BAR.y, h = BAR.h;
+    const row = (y, segs) => { let x = BAR.x0; for (const [v, c] of segs) { const wv = Math.max(0, v) * sc; p.noStroke(); p.fill(...c); p.rect(x, y, wv, h); x += wv; }
+      p.noFill(); p.stroke(150); p.strokeWeight(1); p.rect(BAR.x0, y, BAR.x1 - BAR.x0, h); };
+    const dark = (c) => c.map((x) => x * 0.7);
+    if (done) {
+      row(y1, [[Q1, COL.Q]]); row(y2, [[W, COL.Wk], [Q2, COL.Q2]]);
+      labSub([['Q', '1', dark(COL.Q)]], BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
+      labSub([['W', '', dark(COL.Wk)], [' + ', ''], ['Q', '2', dark(COL.Q2)]], BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
+    } else {
+      row(y1, [[Q, COL.Q]]); row(y2, [[dU, COL.dU], [Wk, COL.Wk]]);
+      labSub([['Q', '', dark(COL.Q)]], BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
+      labSub([['ΔU', '', dark(COL.dU)], [' + ', ''], ['W', 'k', dark(COL.Wk)]], BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
+    }
+    lab(done ? 'kierros' : 'lämmitys', BAR.x0, y2 + h + fz + 8, 'l', fz);
+  }
+
+  // every canvas text: drawn with a halo, its ink box pushed to simState.labels
+  function lab(s, x, y, align, size) { labSub([[s, '']], x, y, align, size); }
+  // text made of parts [main, subscript, colour?]; one box for the whole label
+  function labSub(partsIn, x, y, align, size, col) {
+    const sub = Math.round(size * 0.7), ctx = p.drawingContext;
+    p.textStyle(p.NORMAL); p.textAlign(p.LEFT, p.BASELINE);
+    const m = partsIn.map(([a, b]) => { p.textSize(size); const wa = ctx.measureText(a); p.textSize(sub); const wb = b ? ctx.measureText(b) : { width: 0 };
+      return { wa: wa.width, wb: wb.width, asc: wa.actualBoundingBoxAscent, desc: wa.actualBoundingBoxDescent }; });
+    const total = m.reduce((s2, q) => s2 + q.wa + q.wb, 0);
+    let lx = align === 'r' ? x - total : align === 'c' ? x - total / 2 : x;
+    const x0 = lx, asc = Math.max(...m.map((q) => q.asc)), desc = Math.max(size * 0.3 * (partsIn.some((q) => q[1]) ? 1 : 0) + sub * 0.25, ...m.map((q) => q.desc));
+    partsIn.forEach(([a, b, c], i) => {
+      const cc = c || col || [35, 35, 35];
+      for (const [txt, sz, dy, dx] of [[a, size, 0, 0], [b, sub, size * 0.3, m[i].wa]]) {
+        if (!txt) continue; p.textSize(sz);
+        p.stroke(255, 255, 255, 210); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND); p.fill(...cc); p.text(txt, lx + dx, y + dy);
+        p.noStroke(); p.text(txt, lx + dx, y + dy);
+      }
+      lx += m[i].wa + m[i].wb;
+    });
+    labels.push({ s: partsIn.map((q) => q[0] + q[1]).join(''), x0, y0: y - asc, x1: x0 + total, y1: y + desc });
   }
   // gradient fill (raw canvas, inside save/restore so p5's own fill state is untouched) with a thin outline
-  function grad(stops, xa, ya, xb, yb, path) {
-    const c = p.drawingContext; c.save(); const g = c.createLinearGradient(xa, ya, xb, yb);
-    stops.forEach((s, i) => g.addColorStop(i / (stops.length - 1), `rgba(${s.length === 3 ? [...s, 1] : s})`));
-    c.fillStyle = g; c.strokeStyle = 'rgba(0,0,0,0.35)'; c.lineWidth = 1; c.beginPath(); path(c); c.fill(); c.stroke(); c.restore();
+  function grect(x, y, w, h, stops, horiz, r = 4) {
+    const c = p.drawingContext; c.save(); const g = c.createLinearGradient(x, y, horiz ? x + w : x, horiz ? y : y + h);
+    stops.forEach((s, i) => g.addColorStop(i / (stops.length - 1), `rgb(${s.map((v) => Math.min(255, Math.round(v))).join(',')})`));
+    c.fillStyle = g; c.strokeStyle = 'rgba(0,0,0,0.35)'; c.lineWidth = 1; c.beginPath(); c.roundRect(x, y, w, h, r); c.fill(); c.stroke(); c.restore();
   }
-  const grect = (x, y, w, h, stops, horiz, r = 4) => grad(stops, x, y, horiz ? x + w : x, horiz ? y : y + h, (c) => c.roundRect(x, y, w, h, r));
-  const METAL = [[95, 98, 108], [175, 180, 190], [95, 98, 108]];
-
-  // power plant: boiler with flames → steam pipe → turbine → generator; turbine exhaust → condenser cooled by sea water
-  function plant(x0, y0, x1, y1, chp) {
-    const h = y1 - y0, bx = x0 + 2, by = y0 + 0.1 * h, ty = y0 + 0.2 * h, cy = y0 + 0.52 * h;
-    p.noFill(); p.strokeWeight(5); p.stroke(205, 205, 212);
-    p.beginShape(); p.vertex(bx + 25, by); p.vertex(bx + 25, y0 + 3); p.vertex(x0 + 66, y0 + 3); p.vertex(x0 + 66, ty); p.endShape();
-    p.line(x0 + 90, ty, x0 + 90, cy); p.stroke(70, 130, 200); p.line(x0 + 62, y1 - 12, bx + 50, y1 - 12);   // exhaust steam down, feed water back
-    grect(bx, by, 50, y1 - by - 2, METAL, true);
-    grect(bx + 6, y1 - 0.38 * h, 38, 0.38 * h - 8, [[40, 15, 10], [110, 35, 15]]);
-    for (let i = 0; i < 3; i++) {                                       // flames flicker (deterministic)
-      const fx = bx + 13 + 12 * i, base = y1 - 10, fl = 0.28 * h * (0.75 + 0.25 * Math.sin(9 * t + 2.1 * i));
-      grad([[255, 245, 160], [255, 150, 30], [210, 40, 20, 0.6]], 0, base, 0, base - fl, (c) => { c.moveTo(fx - 6, base);
-        c.bezierCurveTo(fx - 7, base - fl * 0.5, fx, base - fl * 0.6, fx, base - fl); c.bezierCurveTo(fx, base - fl * 0.6, fx + 7, base - fl * 0.5, fx + 6, base); });
-    }
-    grad(METAL, 0, ty - 0.17 * h, 0, ty + 0.17 * h, (c) => { c.moveTo(x0 + 60, ty - 0.08 * h); c.lineTo(x0 + 98, ty - 0.16 * h); c.lineTo(x0 + 98, ty + 0.16 * h); c.lineTo(x0 + 60, ty + 0.08 * h); c.closePath(); });
-    p.stroke(60, 60, 70, 150); p.strokeWeight(1.5);                     // turbine blades sweep by
-    for (let j = 0; j < 4; j++) { const xx = x0 + 61 + ((t * 50 + 9.5 * j) % 36), hh = 0.08 * h + (xx - x0 - 60) / 38 * 0.08 * h; p.line(xx, ty - hh + 2, xx, ty + hh - 2); }
-    p.stroke(80); p.strokeWeight(4); p.line(x0 + 98, ty, x0 + 104, ty); grect(x0 + 104, ty - 0.13 * h, x1 - x0 - 106, 0.26 * h, [[170, 130, 30], [245, 210, 90], [170, 130, 30]]);
-    const gx = x0 + 104 + (x1 - x0 - 106) / 2, s = 0.1 * h; p.fill(255, 250, 220); p.stroke(120, 90, 0); p.strokeWeight(1);   // lightning bolt
-    p.beginShape(); for (const [a, b] of [[0.2, -1], [-0.5, 0.15], [0, 0.15], [-0.2, 1], [0.5, -0.15], [0, -0.15]]) p.vertex(gx + a * s, ty + b * s); p.endShape(p.CLOSE);
-    grect(x0 + 58, cy, x1 - x0 - 60, y1 - cy - 2, [[150, 155, 165], [110, 115, 125]]);
-    const sy = chp ? cy + 0.45 * (y1 - cy) : cy + 8;                    // CHP: upper part heats district-heating water
-    if (chp) grect(x0 + 62, cy + 4, x1 - x0 - 68, sy - cy - 8, [[250, 170, 90], [225, 105, 40]]);
-    grect(x0 + 62, sy, x1 - x0 - 68, y1 - sy - 6, [[120, 190, 235], [30, 90, 170]]);
-    p.noFill(); p.stroke(255, 255, 255, 170); p.strokeWeight(1.5);       // sea water flowing through
-    for (let r = 0; r < 3; r++) { const wy = sy + (r + 1) * (y1 - sy - 6) / 4; p.beginShape();
-      for (let x = x0 + 64; x <= x1 - 8; x += 3) p.vertex(x, wy + 2 * Math.sin((x - x0) / 7 - 4 * t)); p.endShape(); }
-  }
-  // car engine: three cylinders with pistons, flywheel (work), exhaust pipe with hot gas puffs (waste heat)
-  function engine(x0, y0, x1, y1) {
-    const h = y1 - y0, ex = x0 + 18, ew = x1 - x0 - 58, et = y0 + 0.24 * h, eb = y1 - 0.16 * h, fy = y0 + 0.18 * h, fr = Math.min(20, 0.11 * h);
-    p.stroke(150, 60, 30); p.strokeWeight(3); p.line(x0, (y0 + y1) / 2, ex, (y0 + y1) / 2);    // fuel line
-    p.stroke(90); p.strokeWeight(5); p.line(ex + ew, eb - 0.12 * h, x1, eb - 0.12 * h);          // exhaust pipe
-    p.stroke(60); p.strokeWeight(2); p.line(ex + ew - 6, fy, x1 - 20, fy);                       // belt to the flywheel
-    grect(ex, et, ew, eb - et, [[120, 124, 132], [80, 84, 92]], true, 6);
-    const cw = (ew - 16) / 3, ch = (eb - et) * 0.62;
-    for (let i = 0; i < 3; i++) {
-      const cx = ex + 4 + i * (cw + 4), ph = Math.sin(8 * t + 2.1 * i), py = et + 6 + (ch - 22) * (0.5 + 0.5 * ph);
-      p.noStroke(); p.fill(35); p.rect(cx, et + 4, cw, ch, 2);
-      p.fill(255, 140, 30, 230 * Math.max(0, -ph)); p.rect(cx + 1, et + 5, cw - 2, py - et - 5);    // combustion near the top
-      grect(cx + 1, py, cw - 2, 14, METAL, true, 2);
-      p.stroke(200); p.strokeWeight(3); p.line(cx + cw / 2, py + 14, cx + cw / 2, eb - 8);
-    }
-    p.stroke(200); p.strokeWeight(4); p.line(ex + 4, eb - 8, ex + ew - 4, eb - 8); grad([[200, 200, 210], [90, 92, 100]], x1 - 20 - fr, fy - fr, x1 - 20 + fr, fy + fr, (c) => c.arc(x1 - 20, fy, fr, 0, 2 * Math.PI));
-    p.stroke(50); p.strokeWeight(2); for (let j = 0; j < 3; j++) { const a = 5 * t + j * 2.094; p.line(x1 - 20, fy, x1 - 20 + fr * Math.cos(a), fy + fr * Math.sin(a)); }
-    p.noStroke(); for (let j = 0; j < 3; j++) { const s = ((t * 0.8 + j / 3) % 1); p.fill(160, 150, 145, 160 * (1 - s)); p.circle(x1 - 30 + 30 * s, eb - 0.12 * h - 8 * s, 6 + 12 * s); }
-  }
-  // air-source heat pump: outdoor unit with a fan, refrigerant pipes through the wall, indoor unit releasing warm air
-  function heatPump(x0, y0, x1, y1) {
-    const h = y1 - y0, xw = x0 + 84, ut = y0 + 0.22 * h, ub = y1 - 0.12 * h, ix = x1 - 24;
-    p.strokeWeight(4); p.stroke(215, 70, 50); p.line(x0 + 60, ut + 8, ix, ut + 8); p.stroke(60, 120, 210); p.line(x0 + 60, ut + 18, ix, ut + 18);
-    grect(xw, 4, 10, 392, [[170, 95, 70], [205, 130, 100], [170, 95, 70]], true, 1);          // house wall
-    grect(x0, ut, 72, ub - ut, [[240, 242, 246], [190, 195, 205]], false, 5);
-    const fx = x0 + 36, fyc = (ut + ub) / 2, fr = Math.min(30, (ub - ut) / 2 - 6);
-    p.fill(70, 75, 85); p.noStroke(); p.circle(fx, fyc, 2 * fr);
-    p.fill(170, 205, 230); for (let j = 0; j < 3; j++) { p.push(); p.translate(fx, fyc); p.rotate(6 * t + j * 2.094); p.ellipse(fr * 0.5, 0, fr * 0.9, fr * 0.38); p.pop(); }
-    p.noFill(); p.stroke(220); p.strokeWeight(1.5); p.circle(fx, fyc, 2 * fr); p.circle(fx, fyc, fr);
-    grect(ix, y0 + 4, 22, h - 8, [[255, 255, 255], [225, 220, 215]], true, 4);
-    p.noFill(); p.stroke(225, 90, 50, 150); p.strokeWeight(1.5);         // warm air rising beside the indoor unit
-    for (let j = 0; j < 2; j++) { p.beginShape(); for (let y = y1 - 6; y > y0 + 6; y -= 3) p.vertex(ix - 8 - 8 * j + 3 * Math.sin(y / 9 + 4 * t + j), y); p.endShape(); }
-  }
-  const nice = (x) => { const e = 10 ** Math.floor(Math.log10(x)); return [5, 2.5, 2, 1].map((c) => c * e).find((c) => c <= x * (1 + 1e-9)); };
-  const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');                    // Finnish decimal comma and minus sign
-  const fs = (x) => (Math.abs(x) < 1e-9 ? '0' : fi(x, Math.max(0, 2 - Math.floor(Math.log10(Math.abs(x)) + 1e-9))));   // 3 significant figures
-  const fv = (x) => String(+x.toPrecision(3)).replace('.', ',');                             // scale key value
+  const mix = (a, b, f) => a.map((v, i) => v + (b[i] - v) * f);
+  const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
 });
