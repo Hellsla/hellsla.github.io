@@ -1,7 +1,9 @@
 # Notes: how a lesson is written
 
-Lessons learned, for the developer and the reviewers. When a mistake costs a review round, add a line under the
-right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` when it can be checked mechanically.
+Lessons learned, for the developer and the reviewers, shared by every course. When a mistake costs a review round, add a
+line under the right heading (what, why, how to check, ending with the date and the lesson: `(2026-11-02, fy4-3)`) or a
+check to `scripts/lint_lesson.py` when it can be checked mechanically. What concerns one course only goes in that
+course's `scope_notes` in `curriculum.json`, not here. Lines without a date predate 2026-10-26.
 
 ## 1. Maths in LaTeX
 
@@ -25,9 +27,8 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
 
 ## 2. Numbers, Finnish, scope
 
-- The MAOL guide in `docs/lops2019/` decides what belongs to a module. FY2 introduces energy forms without
-  expressions; `E_k`, `E_p`, the work-energy theorem, vectors and `cos α` are FY4. FY3 has force as a measure of
-  interaction, `W = Fs`, graphical integration in (s,F) and Joule's experiment.
+- The MAOL guide in `docs/lops2019/` decides what belongs to a course; each course's own limits are its
+  `scope_notes` in `curriculum.json`, which your packet carries (moved there 2026-10-26).
 - g is always written in m/s² (g = 9,81 m/s², Moon 1,62, Mars 3,71, Jupiter 24,8), never N/kg.
 - Round only at the end, show unrounded intermediates (`v = 80/3,6 m/s`). Final answers carry the data's
   significant figures, and a student rounding to them stays inside the relative `tolerance` (0,02 as a rule; `77 K`
@@ -68,6 +69,10 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
 
 ## 4. Simulations and pages
 
+- One simulation per folder, `assets/sims/<course>/<name>/` (sim.js, its own sim.css and images, loaded from
+  `document.getElementById('sim-root').dataset.base`); `meta.json` `"sim": true` is the lesson's own folder, a name
+  reuses one the course has. Reuse before creating; changing a folder another lesson uses re-opens that lesson's
+  reviews, so it needs the teacher's word. FY3's sims stay as `sim.js` in their lesson folders. (2026-10-26)
 - p5.js instance mode, a 600×400 canvas inside `#sim-root`, `window.simState` updated every frame.
   `templates/sim-embed.js` resizes and scales the canvas, pauses it off-screen, lowers the frame rate under
   `prefers-reduced-motion` and sets the page font; sims never handle resizing themselves.
@@ -88,13 +93,19 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
   the DOM, read outputs, compare within 1 %), plus the label sweep. Never loosen an assertion to make it pass.
 - The page places the simulation after `## Kaava` (before `## Esimerkki`); a line `<!-- sim -->` in `lesson.md`
   overrides the position. Exercises get a browser-side answer check; nothing is stored or sent. No third-party
-  requests, fonts are self-hosted. Reviewer screenshots stay out of git (`**/review/*.png`).
+  requests, fonts are self-hosted. Reviewer screenshots stay out of git (`review/shots/`).
 
 ## 5. Inquiry sequence (teacher's brief 2026-10-25)
 
 - `inquiry.json` (format and activity types: `docs/inquiry.md`; the brief: `docs/inquiry-spec.md`). The pilot
   `content/FY3/fy3-2/inquiry.json` shows the shape; do not copy it mechanically — choose activities by what the
   lesson's goals need. A lesson without a simulation investigates a table, a figure or competing explanations.
+- No fixed template (2026-10-26, after the FY3 review found twelve lessons with one sequence): vary what the student
+  does by the topic: read a value off a graph, fit a line, extrapolate, handle noisy data, decide what to hold
+  constant, build or compare models. An experiment whose simulation only computes the formula being predicted
+  confirms the program's arithmetic, not the physics; prefer one whose result emerges (pressure from counted hits).
+- Options are shown shuffled (`inquiry.choice_order`): never refer to an option by letter or place, and do not let
+  one speaker ("Aino:", "Bea:") be right most of the time; `check_choices.py` warns on both. (2026-10-26)
 - Order of the student's work: a phenomenon in the lesson's voice and the question it raises; a retrieval item on
   the prerequisite lesson; predictions the investigation can refute (each wrong option's feedback repairs the
   misconception it reveals, each right option's names the evidence); the simulation, then guided experiments that
@@ -112,15 +123,17 @@ right heading (what, why, how to check) and a check to `scripts/lint_lesson.py` 
 
 ## 6. Learning from mistakes
 When a reviewer finds an error that is objectively testable or has happened before: fix it, name the general
-pattern, and then either add a check (`lint_lesson.py`, `test_sims.py`, `check_layout.py`) with a test that catches
-the original case and passes on every other lesson, or, when it cannot be checked mechanically, add one line to
-the right heading above. Never both, never a paragraph. The checks run before any reviewer, so the reviewers are
+pattern, and then either add a check (`lint_lesson.py`, `test_sims.py`, `check_layout.py`, `test_inquiry.py`) with
+a test that catches the original case and passes on every other lesson, or, when it cannot be checked mechanically,
+add one dated line with the lesson id to the right heading above. Never both, never a paragraph. The checks run before any reviewer, so the reviewers are
 paid only for what scripts cannot see. Deterministic coverage today: numbers (`answers.py` re-run against
 `exercises.json`, `Vastaus` lines, significant figures and tolerances, coefficient mantissas), LaTeX (KaTeX parse,
 `{,}`, `\textsf{l}`, `·` in `\text`), lesson form (figures, stages, symbolic first rows, paragraph length),
 pages (formula, table, figure and page width at 360 px, SVG labels overlapping or leaving a figure),
 simulations (console errors, per-sim assertions, finite `simState` and label boxes at 360/390/1280 px over every
-control combination), publication (content hash, rebuild equality, atomic build).
+control combination), inquiry (gating, locked parameters, reveal after the experiment, every rendered option with
+its own flag and feedback, navigation, 360 px, per lesson), answer positions per course, publication (content hash,
+change categories and carried reviews, rebuild equality, atomic build).
 
 ## 7. Exam material (inspiration only)
 Exam files, if ever collected, live only in the git-ignored `docs/exams/` and are studied for patterns (task

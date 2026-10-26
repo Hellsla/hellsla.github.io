@@ -4,7 +4,7 @@ A lesson folder may carry `inquiry.json`. When it does, `scripts/build.py` lays 
 and the student acts before being told: a phenomenon, a prediction, an investigation, the model, a transfer task,
 three checks. Without the file the lesson renders in the classic layout (theory, simulation, exercises, exit
 ticket), byte for byte as before. The lesson's other files are unchanged by the framework: `lesson.md` still holds
-the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` the three quick checks, `sim.js` the physics.
+the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` the three quick checks, the simulation the physics.
 `inquiry.json` only says where those parts go and adds the activities between them.
 
 The pedagogical brief behind this format is `docs/inquiry-spec.md`. Pilot: `content/FY3/fy3-2/inquiry.json`.
@@ -63,7 +63,10 @@ are at most three. What it cannot check, the reviewers do (below).
 Guidance, not enforced: a prediction before every investigation; no feedback that answers the opening
 question before the student has committed; the varied parameter alone changes in an experiment; model values
 from a simulation are called model values, measurements measurements; the three checks in Tarkista cover a
-concept, a representation or calculation, and an explanation or transfer; the exercise counts stay 5/4/3.
+concept, a representation or calculation, and an explanation or transfer; the exercise counts stay 5/4/3 unless the
+course's `exercise_levels` says otherwise. The stages are a frame, not a template: what the student does in them
+depends on the topic (NOTES.md §5). Options are shown in a seeded shuffle, so no text may refer to an option by its
+letter or place (the validator rejects it).
 
 ## Page behaviour (`templates/inquiry.js`)
 
@@ -104,12 +107,17 @@ offers free exploration.
 4. Place the existing theory (`theory`), the sim (`sim`), the exercises and the exit ticket. Keep the worked
    example and the exercises; add one transfer `numeric` with hints and mistakes, one error-spotting `choice`.
 5. Add the sim adapter to `sim.js` (parameters that experiments set or lock; reset; step).
-6. `python scripts/check_lesson.py <id>`, `python scripts/test_inquiry.py`, look at the preview at 360 and 1280 px.
+6. `python scripts/check_lesson.py <id>` (it runs `test_inquiry.py <id>` and `check_choices.py`), look at the preview at 360 and 1280 px.
 7. `inquiry.json` is lesson content: it is in the content hash, so both reviews must pass the lesson again.
 
 ## Testing
 
-`scripts/test_inquiry.py` covers validation messages, classic-layout compatibility, every activity type's
+`scripts/test_inquiry.py <id>` runs on every lesson in `check_lesson.py` and CI: stage order and navigation, every
+rendered option with its own correct flag and feedback, right and wrong answers to plain choices, predictions that
+commit without feedback and are revealed by their experiment with the committed option's feedback, every
+experiment on the adapter (its parameters and measured keys exist, initial state, locks, two measurements, reset;
+a sim that measures after a run gets its main button pressed), forms, console errors and the 360 px fit. Without
+an id, `scripts/test_inquiry.py` covers validation messages, classic-layout compatibility, every activity type's
 rendering, prediction-before-feedback sequencing, initial conditions, locked controls, recording, reset,
 numeric handling (comma, invalid, mistake feedback, retries), progressive hints, model answer, reflection,
 reload persistence, keyboard commit and the 360 px layout. These prove the mechanics, not the learning: whether
