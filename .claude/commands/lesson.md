@@ -4,9 +4,9 @@ argument-hint: <lesson-id> [--warn 300000] [--limit 450000]
 model: sonnet
 effort: medium
 ---
-Run lesson $ARGUMENTS through the pipeline. You coordinate; the agents do the work from packets. Read only the scripts' output and the agents' reports; never open a packet or a lesson file yourself.
+Run lesson $ARGUMENTS through the pipeline. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it. You coordinate; the agents do the work from packets. Read only the scripts' output and the agents' reports; never open a packet or a lesson file yourself.
 
-**Routing** (pass `model` and `effort` on every Agent call; say in the PR which model ran each step and why):
+**Routing** (the agent types `developer`, `science-reviewer` and `pedagogy-reviewer` are defined in `.claude/agents/` at the repository root; pass `model` and `effort` on every Agent call; say in the PR which model ran each step and why):
 
 | step | agent | model, effort |
 |---|---|---|
