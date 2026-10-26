@@ -9,6 +9,11 @@ from figlib import (Fig, INK, MUTED, RULE, RULE_LIGHT, WHITE, GLASS, WATER_LIGHT
 def hero(fid, label): return Fig(fid, 600, label, width=1200, hero=True)
 
 
+def scene(fid, label):
+    """A second, smaller everyday scene (600 × 360, `data-fig="scene"`) beside the summary list."""
+    return Fig(fid, 360, label)
+
+
 def rnd(k, seed=1):
     """A fixed pseudo-random number in [0, 1) for the k-th item, so a figure redraws identically."""
     return (math.sin(k * 12.9898 + seed * 78.233) * 43758.5453) % 1

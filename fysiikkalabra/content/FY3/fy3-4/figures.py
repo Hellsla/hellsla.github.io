@@ -103,4 +103,28 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth}
+def scene():
+    """A second everyday scene: a diver deep in a lake with a depth gauge on the wrist."""
+    f = H.scene("fy34-scene", "Kuvitus: sukeltaja on syvällä järvessä. Vesi tummuu syvemmälle mentäessä, ilmakuplat nousevat "
+                "pintaan, ja sukeltajan ranteessa on syvyys- ja painemittari.")
+    f.rect(0, 0, 600, 360, H.grad(f, "fy34s-water", H.WATER_LIGHT, H.WATER))
+    f.rect(0, 0, 600, 24, H.grad(f, "fy34s-sky", H.ICE, H.GLASS))
+    f.path("M0,24 q25,-6 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0", stroke=H.WHITE, w=3)
+    f.path("M0,360 V320 Q150,300 300,330 T600,316 V360 Z", H.SAND)
+    for x, y, r in ((360, 180, 6), (368, 150, 8), (356, 116, 10), (366, 78, 12), (358, 44, 14)): f.circle(x, y, r, "none", H.WHITE, 2.5)
+    # diver swimming to the left: fins, legs, body, tank, head with mask, arm with the gauge
+    f.add('<g transform="rotate(-8 300 230)">')
+    f.path("M430,226 L500,206 L506,230 L436,246 Z", H.INK)
+    f.path("M430,246 L500,252 L496,276 L428,262 Z", H.INK)
+    f.rect(270, 214, 170, 44, H.INK, rx=22)
+    f.rect(300, 192, 110, 26, H.ALUMINIUM, H.INK, 2.5, 13)
+    f.circle(250, 230, 26, H.INK)
+    f.rect(226, 218, 30, 18, H.GLASS, H.WHITE, 2, 6)
+    f.path("M280,252 L216,276", stroke=H.INK, w=18, extra='stroke-linecap="round"')
+    f.circle(232, 270, 11, H.WHITE, H.INK, 2.5)
+    f.line(232, 270, 237, 263, H.INK, 2)
+    f.add('</g>')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth}

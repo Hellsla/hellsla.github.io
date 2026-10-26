@@ -320,3 +320,67 @@ Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikk�
 - Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.
 - Paino on voima: $G = m g$. Massa kertoo, kuinka paljon ainetta kappaleessa on, ja se on sama kaikkialla.
 - $g = 9{,}81\,\text{m/s}^2$ Maan pinnalla, joten yhden kilogramman massan paino Maassa on 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.
+
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama reppu riippuu jousivaa&#x27;assa Maassa ja Kuussa. Maassa jousi venyy pitkäksi, Kuussa vain kuudesosan siitä, koska Kuu vetää reppua kuusi kertaa heikommin. Venymät on piirretty mittakaavassa." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy31s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy31s-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy31s-clip"><circle cx="540" cy="60" r="26"/></clipPath></defs>
+  <rect x="0" y="0" width="300" height="360" fill="url(#fy31s-sky)"/>
+  <rect x="300" y="0" width="300" height="360" fill="#1f2933"/>
+  <circle cx="317.5" cy="190.5" r="2.07352" fill="#ffffff"/>
+  <circle cx="330.5" cy="119" r="2.09031" fill="#ffffff"/>
+  <circle cx="412" cy="129.5" r="1.19536" fill="#ffffff"/>
+  <circle cx="404" cy="38.5" r="1.92146" fill="#ffffff"/>
+  <circle cx="573.5" cy="114" r="1.61715" fill="#ffffff"/>
+  <circle cx="460.5" cy="194.5" r="1.87184" fill="#ffffff"/>
+  <circle cx="469.5" cy="271.5" r="1.03227" fill="#ffffff"/>
+  <circle cx="468.5" cy="191" r="1.64721" fill="#ffffff"/>
+  <circle cx="471" cy="62.5" r="2.30792" fill="#ffffff"/>
+  <circle cx="469" cy="270.5" r="2.32077" fill="#ffffff"/>
+  <circle cx="416" cy="269" r="1.03468" fill="#ffffff"/>
+  <circle cx="566.5" cy="264" r="1.456" fill="#ffffff"/>
+  <circle cx="537.5" cy="146" r="1.49555" fill="#ffffff"/>
+  <circle cx="365.5" cy="84.5" r="2.24478" fill="#ffffff"/>
+  <circle cx="519.5" cy="240.5" r="2.3962" fill="#ffffff"/>
+  <circle cx="496.5" cy="204.5" r="2.2811" fill="#ffffff"/>
+  <circle cx="578" cy="154" r="1.77672" fill="#ffffff"/>
+  <circle cx="437.5" cy="83" r="2.3254" fill="#ffffff"/>
+  <circle cx="569" cy="216" r="1.47165" fill="#ffffff"/>
+  <circle cx="450.5" cy="237" r="2.2479" fill="#ffffff"/>
+  <circle cx="457" cy="184" r="1.05234" fill="#ffffff"/>
+  <circle cx="449.5" cy="201" r="1.37499" fill="#ffffff"/>
+  <circle cx="338.5" cy="238.5" r="2.16843" fill="#ffffff"/>
+  <circle cx="333.5" cy="273" r="1.4818" fill="#ffffff"/>
+  <circle cx="425" cy="90.5" r="1.45004" fill="#ffffff"/>
+  <circle cx="556" cy="277" r="1.59774" fill="#ffffff"/>
+  <circle cx="471" cy="199.5" r="1.2018" fill="#ffffff"/>
+  <circle cx="351.5" cy="55" r="1.11115" fill="#ffffff"/>
+  <circle cx="462.5" cy="178.5" r="1.50202" fill="#ffffff"/>
+  <circle cx="525" cy="263.5" r="2.10933" fill="#ffffff"/>
+  <circle cx="540" cy="60" r="28" fill="#a5d8ff" fill-opacity="0.35"/>
+  <circle cx="540" cy="60" r="26" fill="url(#fy31s-ocean)"/>
+  <g clip-path="url(#fy31s-clip)">
+  <path d="M522,44.5 Q532,36.5 541.5,44 Q545,52 537.5,57.5 Q538.5,68 532,75.5 Q527,65 524.5,58.5 Q516.5,52 522,44.5 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M548,62.5 Q558,58.5 562,68 Q558,78 550.5,75.5 Q545,70.5 548,62.5 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M529.5,39 q9,-2 18,0" fill="none" stroke="#ffffff" stroke-width="1.82" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M550.5,49.5 q8,-2 15.5,0" fill="none" stroke="#ffffff" stroke-width="1.82" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M519,68 q6.5,-2 13,0" fill="none" stroke="#ffffff" stroke-width="1.82" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M542.5,81 q10.5,-2 21,0" fill="none" stroke="#ffffff" stroke-width="1.82" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M555.5,78 q5,-2 10.5,0" fill="none" stroke="#ffffff" stroke-width="1.82" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  </g>
+  <path d="M0,320 Q150,310 300,322 V360 H0 Z" fill="#d9b26a" stroke-linejoin="round"/>
+  <path d="M300,322 Q450,306 600,320 V360 H300 Z" fill="#c4ccd4" stroke-linejoin="round"/>
+  <line x1="300" y1="0" x2="300" y2="360" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="80" y="20" width="140" height="14" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="136" y="34" width="28" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M150,64 L164,72 L136,80 L164,88 L136,96 L164,104 L136,112 L164,120 L136,128 L164,136 L136,144 L164,152 L136,160 L164,168 L136,176 L164,184 L136,192 L164,200 L136,208 L150,208" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M150,208 v12 q0,10 -10,10" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="110" y="238" width="80" height="96" rx="18" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="122" y="284" width="56" height="36" rx="8" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  <path d="M130,238 Q150,220 170,238" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="380" y="20" width="140" height="14" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="436" y="34" width="28" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M450,64 L464,66.5 L436,69 L464,71.5 L436,74 L464,76 L436,78.5 L464,81 L436,83.5 L464,86 L436,88.5 L464,91 L436,93.5 L464,96 L436,98 L464,100.5 L436,103 L464,105.5 L436,108 L450,108" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M450,108 v12 q0,10 -10,10" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="410" y="138" width="80" height="96" rx="18" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="422" y="184" width="56" height="36" rx="8" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  <path d="M430,138 Q450,120 470,138" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+</svg>

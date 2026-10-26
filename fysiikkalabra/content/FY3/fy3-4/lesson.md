@@ -194,3 +194,27 @@ Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astias
 - Nesteessä paine kasvaa syvyyden mukana: $p = p_0 + \rho g h$. Termi $\rho g h$ on hydrostaattinen paine, ja se riippuu vain syvyydestä ja tiheydestä, ei astian muodosta.
 - Paineen aiheuttama voima on kohtisuorassa pintaa vastaan ja vaikuttaa nesteessä joka suuntaan.
 - Ilmanpaine on merenpinnan tasolla noin 101 kPa. Vedessä paine kasvaa noin yhden ilmanpaineen verran jokaista kymmentä metriä kohti.
+
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sukeltaja on syvällä järvessä. Vesi tummuu syvemmälle mentäessä, ilmakuplat nousevat pintaan, ja sukeltajan ranteessa on syvyys- ja painemittari." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy34s-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy34s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="600" height="360" fill="url(#fy34s-water)"/>
+  <rect x="0" y="0" width="600" height="24" fill="url(#fy34s-sky)"/>
+  <path d="M0,24 q25,-6 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M0,360 V320 Q150,300 300,330 T600,316 V360 Z" fill="#d9b26a" stroke-linejoin="round"/>
+  <circle cx="360" cy="180" r="6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="368" cy="150" r="8" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="356" cy="116" r="10" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="366" cy="78" r="12" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="358" cy="44" r="14" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <g transform="rotate(-8 300 230)">
+  <path d="M430,226 L500,206 L506,230 L436,246 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M430,246 L500,252 L496,276 L428,262 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="270" y="214" width="170" height="44" rx="22" fill="#1f2933"/>
+  <rect x="300" y="192" width="110" height="26" rx="13" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="250" cy="230" r="26" fill="#1f2933"/>
+  <rect x="226" y="218" width="30" height="18" rx="6" fill="#eef5f9" stroke="#ffffff" stroke-width="2"/>
+  <path d="M280,252 L216,276" fill="none" stroke="#1f2933" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="232" cy="270" r="11" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="232" y1="270" x2="237" y2="263" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  </g>
+</svg>

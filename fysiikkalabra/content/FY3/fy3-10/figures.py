@@ -141,4 +141,22 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors}
+def scene():
+    """A second everyday scene: a hot air balloon over a lake, its burner heating the air inside."""
+    f = H.scene("fy310-scene", "Kuvitus: kuumailmapallo leijuu järven yllä. Korin yläpuolella palava liekki lämmittää pallon sisällä "
+                "olevaa ilmaa.")
+    H.sky(f, "fy310s", 280)
+    H.cloud(f, 110, 80, 0.6)
+    H.forest(f, 270, 34, 20, H.METAL_EDGE, seed=2, depth=20)
+    f.rect(0, 280, 600, 80, H.grad(f, "fy310s-lake", H.WATER_LIGHT, H.WATER))
+    cx = 360
+    f.path(f"M{cx - 60},220 Q{cx - 130},140 {cx - 110},90 Q{cx - 80},20 {cx},18 Q{cx + 80},20 {cx + 110},90 Q{cx + 130},140 {cx + 60},220 Z", H.HOT_LIGHT, H.INK, 3)
+    for dx in (-60, 0, 60):
+        f.path(f"M{cx + dx * 0.5},220 Q{cx + dx * 1.6},110 {cx + dx * 0.4},18", stroke=H.INK, w=2)
+    f.path(f"M{cx - 60},220 L{cx - 22},258 M{cx + 60},220 L{cx + 22},258", stroke=H.INK, w=2)
+    f.path(f"M{cx - 10},236 q10,-26 20,0 q-10,8 -20,0 Z", H.HEAT)
+    f.rect(cx - 24, 256, 48, 30, H.SAND_DARK, H.INK, 2.5, 3)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors}

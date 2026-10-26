@@ -57,7 +57,7 @@ RULES = {                       # category: (science, pedagogy)
     "experiment":     ("full",  "full"),    # inquiry correct option, initial/locked/vary/measure, numeric answer, mistakes
     "simulation":     ("full",  "full"),    # simulation code or images (the lesson's or a shared folder it uses)
     "figure":         ("full",  "full"),    # figure geometry or text; a picture file
-    "illustration":   ("none",  "delta"),   # the chapter's opening illustration (data-fig="hero"): no text, no physics claim (teacher 2026-10-26)
+    "illustration":   ("none",  "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
 }
 WHY = {"tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
@@ -67,7 +67,7 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "structure": "headings, stages, display blocks or inquiry structure changed", "objectives": "meta goals or prerequisites changed",
        "experiment": "an experiment setup, correct option or numeric answer in inquiry.json changed",
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
-       "illustration": "the opening illustration only"}
+       "illustration": "the illustrations only"}
 
 
 def find_lesson(lid): return courses.find_lesson(lid)
@@ -251,14 +251,15 @@ def _line(fname, body, lid):
     return "numbers" if SUBSTANTIVE.search(body) else "wording"
 
 
-HERO = re.compile(r'\n*<svg\b[^>]*data-fig="hero".*?</svg>\n*', re.S)
+HERO = re.compile(r'\n*<svg\b[^>]*data-fig="(?:hero|scene)".*?</svg>\n*', re.S)
 
 
 def strip_hero(text):
-    """lesson.md without its opening illustration (`<svg data-fig="hero">`, NOTES §3) when the illustration has no label:
+    """lesson.md without its illustrations (`<svg data-fig="hero">` and `"scene"`, NOTES §3) when they have no label:
     such a picture carries no text or physics claim, so changing it is the category "illustration" alone."""
     if not text: return text
-    return re.sub(r"\n{3,}", "\n\n", HERO.sub(lambda m: "\n\n" if not re.search(r"<(foreignObject|text)\b", m.group(0)) else m.group(0), text))
+    out = re.sub(r"\n{3,}", "\n\n", HERO.sub(lambda m: "\n\n" if not re.search(r"<(foreignObject|text)\b", m.group(0)) else m.group(0), text))
+    return out.rstrip("\n") + "\n" if text.endswith("\n") else out.rstrip("\n")       # a picture at the end leaves no blank line
 
 
 def classify(path, diff_lines, lid):

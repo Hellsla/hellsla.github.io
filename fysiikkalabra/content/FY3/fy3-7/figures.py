@@ -1,6 +1,7 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-7` writes them into lesson.md."""
 import math
 from figlib import (Fig, Axes, INK, MUTED, GLASS, WATER_LIGHT, WATER, HEAT, HEAT_LIGHT, HOT, ICE, COLD_LIGHT, fi)
+import herolib as H
 
 
 def micro_model():
@@ -131,4 +132,20 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram}
+def scene():
+    """A second everyday scene: a lake freezing over in early winter, the first snow on the shore."""
+    f = H.scene("fy37-scene", "Kuvitus: järvi jäätyy alkutalvella. Rannan puolella on jo ohut jääkansi, ulompana vesi on vielä "
+                "sulana, ja rannalla on ensilumi.")
+    H.sky(f, "fy37s", 200, H.COLD_LIGHT, H.WHITE)
+    H.forest(f, 190, 46, 24, H.METAL_EDGE, seed=3, depth=20)
+    f.rect(0, 200, 600, 160, H.grad(f, "fy37s-lake", H.WATER_LIGHT, H.WATER))
+    f.path("M0,240 Q200,226 340,252 Q420,268 600,256 V360 H0 Z", H.ICE)
+    f.path("M0,240 Q200,226 340,252 Q420,268 600,256", stroke=H.ICE_EDGE, w=3)
+    for d in ("M60,290 L120,300 L150,280", "M220,320 L260,296 L320,310", "M400,300 L460,320"):
+        f.path(d, stroke=H.ICE_EDGE, w=2)
+    f.path("M0,300 Q120,290 220,312 Q320,334 340,360 H0 Z", H.WHITE, H.RULE, 2)
+    for k in range(30): f.circle(H.rnd(k, 5) * 600, H.rnd(k + 70, 5) * 190, 2 + 1.5 * H.rnd(k + 9, 5), H.WHITE, H.ICE_EDGE, 1)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram}

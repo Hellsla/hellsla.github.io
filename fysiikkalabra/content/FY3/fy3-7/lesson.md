@@ -254,3 +254,46 @@ Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Olomuodon muu
 - Lämpenemiskäyrässä nousevat osat ovat lämpenemistä ($Q = cm\Delta T$) ja vaakasuorat osat olomuodon muutoksia.
 - Kiehumispiste riippuu paineesta; faasikaavio kertoo aineen olomuodon lämpötilan ja paineen mukaan.
 - Ominaishöyrystymislämpö voidaan mitata kiehuttamalla vettä uppokuumentimella vaa'an päällä: $r = Pt/\Delta m$, missä $\Delta m$ on vaa'an lukeman muutos.
+
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: järvi jäätyy alkutalvella. Rannan puolella on jo ohut jääkansi, ulompana vesi on vielä sulana, ja rannalla on ensilumi." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy37s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy37s-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="200" fill="url(#fy37s-sky)"/>
+  <path d="M0,190 L10.5,162.5 L20.5,190 L32,158.5 L43.5,190 L54,162 L64.5,190 L79.5,146.5 L94.5,190 L107.5,153.5 L120,190 L135,146.5 L150,190 L163.5,152 L176.5,190 L186,166 L195,190 L209.5,148 L224,190 L233,168 L242,190 L252.5,162 L262.5,190 L276.5,150.5 L290,190 L303,153.5 L316,190 L325.5,166 L335,190 L343.5,167.5 L352.5,190 L362.5,164 L372.5,190 L384.5,157 L396,190 L408,158 L419.5,190 L429,165.5 L438.5,190 L447,168.5 L455.5,190 L465,166 L474.5,190 L487,153.5 L500,190 L514,149.5 L528.5,190 L538,164.5 L548,190 L557.5,165 L567,190 L576.5,167 L585.5,190 L601,144 L616.5,190 L625.5,167.5 L634.5,190 L648.5,149 L662.5,190 L674,159.5 L685,190 L699,150.5 L712.5,190 L727,148 L741.5,190 L753.5,156.5 L765.5,190 L775,165.5 L784.5,190 L795.5,159.5 L807,190 L820.5,152 L833.5,190 L849,145.5 L864,190 L873.5,166 L882.5,190 L896,152.5 L909,190 L920,160 L931,190 L942,160 L953.5,190 L966.5,152.5 L979.5,190 L988.5,167 L997.5,190 L1006.5,168 L1015.5,190 L1025.5,163.5 L1035.5,190 L1047,159 L1058,190 L1069,161.5 L1079.5,190 L1090.5,160 L1101.5,190 L1112.5,159 L1124,190 L1137,154 L1149.5,190 L1160,161.5 L1171,190 L1183,156 L1195,190 L1208,154 L1220.5,190 V210 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <rect x="0" y="200" width="600" height="160" fill="url(#fy37s-lake)"/>
+  <path d="M0,240 Q200,226 340,252 Q420,268 600,256 V360 H0 Z" fill="#a5d8ff" stroke-linejoin="round"/>
+  <path d="M0,240 Q200,226 340,252 Q420,268 600,256" fill="none" stroke="#4f8fbf" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M60,290 L120,300 L150,280" fill="none" stroke="#4f8fbf" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M220,320 L260,296 L320,310" fill="none" stroke="#4f8fbf" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M400,300 L460,320" fill="none" stroke="#4f8fbf" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M0,300 Q120,290 220,312 Q320,334 340,360 H0 Z" fill="#ffffff" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="33.5" cy="119" r="3.4629" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="93.5" cy="169" r="3.30757" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="67" cy="1" r="2.79157" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="486" cy="31.5" r="3.38204" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="119.5" cy="72.5" r="2.78836" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="112.5" cy="99.5" r="2.47956" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="408" cy="42.5" r="3.02741" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="559" cy="176" r="2.80912" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="403" cy="154" r="2.6997" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="585" cy="185" r="2.05873" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="523" cy="159" r="3.35024" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="316.5" cy="42.5" r="3.40837" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="553" cy="45" r="2.92725" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="315.5" cy="117" r="3.16691" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="192" cy="45.5" r="2.93306" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="411" cy="179.5" r="3.15885" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="323.5" cy="12" r="3.2299" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="280" cy="92.5" r="2.47649" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="23.5" cy="164.5" r="2.26128" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="540" cy="29.5" r="3.41522" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="563.5" cy="76" r="3.48626" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="371" cy="90.5" r="2.9777" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="467" cy="141.5" r="3.39875" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="373" cy="40" r="2.88093" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="463.5" cy="23" r="3.01105" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="492" cy="88" r="2.96149" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="190.5" cy="93.5" r="2.34681" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="104.5" cy="36.5" r="3.16685" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="566" cy="129.5" r="3.30632" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <circle cx="594.5" cy="167.5" r="3.41626" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+</svg>

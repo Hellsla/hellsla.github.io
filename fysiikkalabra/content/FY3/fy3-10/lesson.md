@@ -461,3 +461,18 @@ Tilanyhtälön laskuissa toistuu kolme virhettä:
 - Kun kaasun määrä pysyy samana, $p_1V_1/T_1 = p_2V_2/T_2$, ja siitä saadaan erilliset kaasulait.
 - Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua, kaasun laadusta riippumatta; punnitus antaa kaikille kaasuille saman $m/M$.
 - Ideaalikaasumalli toimii hyvin tavallisissa oloissa ja pettää suurissa paineissa ja matalissa lämpötiloissa.
+
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: kuumailmapallo leijuu järven yllä. Korin yläpuolella palava liekki lämmittää pallon sisällä olevaa ilmaa." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy310s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy310s-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="280" fill="url(#fy310s-sky)"/>
+  <path d="M56,92 Q55,71.5 79,74 Q88.5,52.5 112.5,59.5 Q134,47.5 146,70.5 Q167.5,73 165,92 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,270 L7,254 L14.5,270 L22,253.5 L29,270 L38.5,248 L47.5,270 L56.5,248.5 L65.5,270 L78,237 L91,270 L101,244.5 L111.5,270 L122,244 L132,270 L142.5,244 L153,270 L163.5,244 L174,270 L184.5,244 L194.5,270 L204,247.5 L213,270 L225.5,237.5 L238,270 L250,239.5 L262,270 L270,251 L278.5,270 L290,240.5 L301.5,270 L312.5,242.5 L323.5,270 L336,237 L349,270 L358.5,246 L368,270 L381,237.5 L393.5,270 L403.5,245.5 L413.5,270 L423.5,245 L433.5,270 L443.5,245.5 L453.5,270 L461.5,253 L469,270 L476.5,253 L484,270 L493.5,247 L503,270 L515,238.5 L527.5,270 L538,244 L548,270 L556,252 L564,270 L574.5,244.5 L584.5,270 L596,240.5 L608,270 L615,254.5 L622,270 L632.5,243 L643.5,270 L650.5,254 L658,270 L667.5,247.5 L676.5,270 L685,251 L693,270 L704.5,241 L715.5,270 L727,241 L738.5,270 L750.5,239.5 L762,270 L772,246 L781.5,270 L791.5,246.5 L801,270 L810.5,246.5 L820,270 L829.5,247 L839,270 L846.5,253 L854.5,270 L864.5,245.5 L874.5,270 L884,245.5 L894,270 L907,237 L919.5,270 L928,250 L936.5,270 L949,236.5 L962,270 L973,242.5 L984,270 L995.5,240.5 L1007,270 L1017.5,243 L1028.5,270 L1038,247.5 L1047.5,270 L1057,246.5 L1066.5,270 L1074.5,252.5 L1082,270 L1091.5,247.5 L1100.5,270 L1111.5,242.5 L1122.5,270 L1135,238 L1147,270 L1158,243 L1169,270 L1177,251 L1185.5,270 L1198,238 L1210,270 V290 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <rect x="0" y="280" width="600" height="80" fill="url(#fy310s-lake)"/>
+  <path d="M300,220 Q230,140 250,90 Q280,20 360,18 Q440,20 470,90 Q490,140 420,220 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M330.0,220 Q264.0,110 336.0,18" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M360.0,220 Q360.0,110 360.0,18" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M390.0,220 Q456.0,110 384.0,18" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M300,220 L338,258 M420,220 L382,258" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M350,236 q10,-26 20,0 q-10,8 -20,0 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <rect x="336" y="256" width="48" height="30" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/>
+</svg>

@@ -135,4 +135,28 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion}
+def scene():
+    """A second everyday scene: railway rails in the summer heat, a gap at their joint."""
+    f = H.scene("fy38-scene", "Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus, ja kahden kiskon jatkoskohdassa "
+                "on pieni rako lämpölaajenemista varten.")
+    H.sky(f, "fy38s", 160)
+    H.sun(f, "fy38s", 520, 60, 34)
+    H.forest(f, 160, 30, 18, H.METAL_EDGE, seed=5, depth=20)
+    f.rect(0, 160, 600, 200, H.SAND)
+    f.path("M290,160 H310 L520,360 H80 Z", H.SAND_DARK)
+    for k in range(9):
+        t = (k / 9) ** 1.5; y = 166 + 194 * t; hw = 20 + 230 * t
+        f.rect(300 - hw, y, 2 * hw, 4 + 12 * t, H.IRON)
+    for side in (-1, 1):
+        f.path(f"M{300 + side * 8},160 L{300 + side * 150},360", stroke=H.METAL_EDGE, w=8)
+        f.path(f"M{300 + side * 8},160 L{300 + side * 150},360", stroke=H.ALUMINIUM, w=3)
+    # the gap at the joint
+    for side in (-1, 1):
+        x, y = 300 + side * (8 + 142 * 0.62), 160 + 200 * 0.62
+        f.line(x - 6, y - 6, x + 6, y + 6, H.SAND_DARK, 7)
+        f.rect(x - 14, y + 4, 28, 8, H.IRON, H.INK, 1.5, 2)
+    H.shimmer(f, (180, 420), 300, 80)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion}

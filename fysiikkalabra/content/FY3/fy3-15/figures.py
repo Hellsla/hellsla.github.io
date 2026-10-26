@@ -35,4 +35,24 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero}
+def scene():
+    """A second everyday scene: a district-heating radiator warming a room on a winter evening."""
+    f = H.scene("fy315-scene", "Kuvitus: talvi-ilta kotona. Ikkunan alla oleva kaukolämpöpatteri lämmittää huonetta, ja lämmin ilma "
+                "nousee patterin yltä. Ulkona sataa lunta.")
+    f.rect(0, 0, 600, 360, H.PAPER)
+    f.rect(0, 300, 600, 60, H.RULE); f.line(0, 300, 600, 300, H.INK, 3)
+    f.rect(170, 30, 260, 160, H.grad(f, "fy315s-night", H.COLD, H.WATER), H.INK, 3, 4)
+    for k in range(18): f.circle(180 + H.rnd(k, 4) * 240, 40 + H.rnd(k + 30, 4) * 140, 2.5, H.WHITE)
+    f.path("M170,170 Q260,150 340,166 T430,160 V190 H170 Z", H.WHITE)
+    f.line(300, 30, 300, 190, H.INK, 3)
+    f.rect(160, 190, 280, 12, H.RULE_LIGHT, H.INK, 2.5)
+    f.rect(190, 220, 220, 70, H.WHITE, H.INK, 3, 6)
+    for x in range(210, 400, 22): f.line(x, 226, x, 284, H.RULE, 3)
+    f.path("M190,276 H160 V300 M410,234 H440 V300", stroke=H.INK, w=6)
+    f.path("M160,300 V320", stroke=H.HOT, w=8); f.path("M440,300 V320", stroke=H.COLD, w=8)
+    for x in (230, 300, 370):
+        f.path(f"M{x},214 c10,-14 -10,-26 0,-40", stroke=H.HEAT, w=4, extra='stroke-linecap="round" stroke-opacity="0.8"')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene}
