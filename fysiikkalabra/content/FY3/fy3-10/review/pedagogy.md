@@ -1,25 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 77f93e9fe50a5b6d
+CONTENT-HASH: 944c5d51ce0ef7d1
 
 ## Blocking
-
-(none)
+None.
 
 ## Polish
-
-1. inquiry.json punnitus: the weighing is doable (four divisions), but mol and M are unexplained when the table appears, and the correct option prints "noin 0,207 mol", so it can be picked without computing. Add "M on yhden moolin massa; mooli on tietty hiukkasmäärä" to the text and ask first for a numeric m/M (helium), then the comparison.
-2. sim readout, exp-1, exp-2: the sim shows the formula "(N/100)(T/300)(100/V)" and a "p/p_ref malli" column, so Koe 1 and the 600 K challenge can be solved by setting N until malli = 1,00, with no reasoning. Hide the model value until the row is recorded (or until the answer is given); as is, the instrument states the relation the experiments should uncover.
-3. pred-1 reveal gate: Koe 1 varies only N in a one-species sim, so it cannot refute "ilmapallossa enemmän"; only the weighing can. Gate the reveal on punnitus too. The feedback claim that light, fast He hits "kumoavat toisensa" has no evidence in the lesson (no mass control); soften it or lean on the weighing.
-4. Scope and workload: pred-2, Koe 2's hit-rate comparison and check-3 (1,41 · 1,41 ≈ 2, impulse per hit) go beyond the slot and lean on momentum (FY4). With exercises the path is roughly 80-90 min; dropping pred-2 and check-3 brings it near an hour. Pred-2's prompt also gives away "1,41-kertaisiksi".
-5. R is told, not found: the pV/(NT) column and the R computation in Kaava are precomputed. Let the student compute one value (pV/(nT) from the helium row) before Selitä.
+- Workload is at the upper edge of one lesson: hook, retrieval, pred-n, weighing (2 items), pred-1, free sim play, two experiments with tables, "Mikä pysyy samana?", laske-r, theory, reflection, example, error-spotting, transfer, 12 exercises, 3 checks, 3 exit items. If a teacher trims, the free-play sim item ("kokeile") or the transfer task (siirto) can go without losing the line of reasoning.
+- pred-1 is now an inference from the table, not a prediction: the weighing already answers it, so the "Yhtä monta" option is nearly free. It works as a consolidation step, but the title "Päättele" is honest; do not call it a prediction in teacher-facing material.
+- laske-r says "Simulaatiossa pV/(NT) pysyi vakiona" and then calls the result R in the solution. The step from the sim's unit-free ratio to a real R is short but is told, not found; the Selitä text covers it, so only a note.
 
 ## Checked
-
-- Hash 77f93e9fe50a5b6d at start and end.
-- Page order: predictions, weighing, sim, experiments, table, then theory; Ydinajatus (the answer) sits after Tutki, so the balloon answer is not visible before commitment.
-- Pred-1/pred-2 feedback stays hidden after clicking an option (gated).
-- Weighing arithmetic and values match (0,2064-0,2076 mol).
-- Aseta alkutila moves the sim to the Koe 2 state (N 100, T 600); slider steps allow N = 50.
-- Sim at 390 px: bars, labels and speed control legible, nothing clipped.
-- Retrieval (Boyle) matches fy3-9 prerequisite; exercises 5/4/3, none repeats the example; exit ticket tests n independent of gas.
-- Staged example has five stages; figures sit beside Ydinajatus and Kaava.
+- Round 1 fixes work. mol, M and n = m/M are explained in the weighing text before the table, and the student computes helium m/M first (numeric with 3 hints and 2 mistake feedbacks). The comparison choice ("Vertaa kaasuja") then lets the student find the constant themselves, and its feedback gives the numbers only after commitment.
+- The 600 K challenge (exp-2) needs reasoning: no model-value column or on-screen formula. It can refute a wrong prediction, since the N = 100 row at 600 K gives p of about 2 and the mistake feedbacks (71, 25) point to that row.
+- pV/(NT) in the sim table and pV/(nT) from the helium row come before Selitä, so R is found, not announced. Computation checks out (101000 · 0,005 / (0,2075 · 293,15) = 8,30).
+- Premature disclosure: the theory block is on the page, but access is not gated by design and the feedback is. In Playwright at 390 px, clicking a pred-n option shows no feedback; it is deferred until exp-1 is recorded. The opening question ("miksi heliumpallo on kevyempi") is answered only in Selitä, reflection and feedback after commitment.
+- pred-2 and the FY4 impulse check are gone; the sequence reads without them (pred-n then weighing, then experiments).
+- 390 px page: scrollWidth 390, no horizontal scroll, stages in the expected order. Exercises are 5/4/3 with real contexts; the exit ticket tests n = pV/(RT), the independence of n from gas type and p ∝ T.
+- Finnish read fine; no corrections needed.
