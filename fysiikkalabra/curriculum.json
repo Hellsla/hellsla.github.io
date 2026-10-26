@@ -206,6 +206,9 @@
       "Eettisyys ja ympäristöosaaminen",
       "Monitieteinen ja luova osaaminen"
     ],
+    "scope_notes": [
+      "FY2 introduces energy forms without expressions; E_k, E_p, the work-energy theorem, vectors and cos α are FY4."
+    ],
     "lessons": [
       {
         "id": "fy2-1",
@@ -387,6 +390,11 @@
     "laaja_alainen": [
       "Monitieteinen ja luova osaaminen",
       "Eettisyys ja ympäristöosaaminen"
+    ],
+    "initialized": "2026-10-25",
+    "lesson_folder_sims": true,
+    "scope_notes": [
+      "FY3 treats force only as a measure of interaction (G = mg) and work as W = Fs, with graphical integration in (s,F) and Joule's experiment; Newton's laws, vectors, the liikeyhtälö, E_k, E_p, the work-energy theorem and cos α are FY4."
     ],
     "lessons": [
       {

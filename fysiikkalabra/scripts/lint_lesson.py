@@ -14,7 +14,8 @@ It also runs the lesson's `answers.py` when present (`python -I answers.py` prin
 import json, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+import courses
+from courses import ROOT
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 NUM = r"[−-]?\d+(?:,\d+)?"
 LABELS = ["Annettu", "Kysytty", "Kaava", "Sijoitus", "Vastaus", "Järkevyys"]
@@ -35,9 +36,7 @@ class Lint:
 def find_lesson(arg):
     p = pathlib.Path(arg)
     if p.is_dir(): return p.resolve()               # absolute, so answers.py is run from the right folder
-    for f in sorted((ROOT / "content").glob(f"*/{arg}")):
-        if f.parent.name != "_gold" and (f / "meta.json").exists(): return f
-    sys.exit(f"no lesson folder for {arg!r}")
+    return courses.find_lesson(arg)
 
 
 def sig_figs(s):
@@ -190,11 +189,11 @@ def check_exercises(L, folder):
     except json.JSONDecodeError as e: L.err("exercises.json", e.lineno, f"invalid JSON: {e.msg}"); return {}
     raw = f.read_text()
     lid = folder.name
-    want = {"level1": 5, "level2": 4, "level3": 3}
+    want = courses.course(courses.course_of(lid))["exercise_levels"]   # 5/4/3 unless the course config says otherwise
     answers = {}
     for lvl, n in want.items():
         items = ex.get(lvl, [])
-        if len(items) != n: L.err("exercises.json", 1, f"{lvl} has {len(items)} tasks, expected {n} (CLAUDE.md exercise levels)")
+        if len(items) != n: L.err("exercises.json", 1, f"{lvl} has {len(items)} tasks, expected {n} (CLAUDE.md exercise levels, curriculum.json exercise_levels)")
         for e in items:
             eid = e.get("id", "?")
             line = raw.count("\n", 0, raw.find(f'"{eid}"')) + 1 if eid in raw else 1
@@ -279,12 +278,14 @@ def check_meta(L, folder):
     for k in ("id", "course", "title", "goals", "prerequisites", "glossary", "sim"):
         if k not in meta: L.err("meta.json", 1, f"missing {k}")
     if meta.get("id") != lid: L.err("meta.json", 1, f"id {meta.get('id')!r} does not match folder {lid!r}")
-    if meta.get("course") != folder.parent.name: L.err("meta.json", 1, "course does not match the folder")
+    code = courses.course_of(lid)
+    if meta.get("course") != folder.parent.name or folder.parent.name != code:
+        L.err("meta.json", 1, f"course {meta.get('course')!r}, folder content/{folder.parent.name}/ and id prefix ({code}) must agree")
     if meta.get("solutions", "first") not in ("first", "all", "none"): L.err("meta.json", 1, "solutions must be first, all or none")
     glossary = {e["term"] for e in json.loads((ROOT / "glossary.json").read_text())}
     for term in meta.get("glossary", []):
         if term not in glossary: L.err("meta.json", 1, f"glossary term {term!r} missing from glossary.json (add it, do not invent synonyms)")
-    cur = json.loads((ROOT / "curriculum.json").read_text())
+    cur = courses.curriculum()
     ids = {l["id"] for k, v in cur.items() if not k.startswith("_") for l in v.get("lessons", [])}
     if lid not in ids: L.warn("meta.json", 1, f"{lid} is not a slot in curriculum.json")
     for p in meta.get("prerequisites", []):
@@ -293,9 +294,13 @@ def check_meta(L, folder):
 
 
 def check_sim(L, folder, meta):
-    sim = folder / "sim.js"
-    if meta.get("sim") and not sim.exists(): L.err("sim.js", 1, "meta.sim is true but sim.js is missing")
-    if not sim.exists(): return
+    c = courses.course(courses.course_of(folder.name)); d = courses.sim_dir(folder, meta)
+    if d is None: return
+    kind, where, _ = d
+    if kind == "lesson" and not c.get("lesson_folder_sims"):
+        L.err("sim.js", 1, f"a {c['code']} simulation lives in its own folder, {(c['paths']['sims'] / folder.name).relative_to(ROOT)}/ (sim.js, sim.css, images), not in the lesson folder")
+    sim = where / "sim.js"
+    if not sim.exists(): L.err("sim.js", 1, f"meta.sim is {meta.get('sim')!r} but {sim.relative_to(ROOT)} is missing"); return
     js = sim.read_text()
     if "window.simState" not in js: L.err("sim.js", 1, "sim must expose window.simState every frame (tester asserts on it)")
     if not re.search(r"createCanvas\(\s*600\s*,\s*400", js): L.warn("sim.js", 1, "canvas is not 600×400 (the embed scales that size)")
@@ -304,7 +309,7 @@ def check_sim(L, folder, meta):
     if re.search(r"\bfetch\(|XMLHttpRequest|https?://", js): L.err("sim.js", 1, "no network requests from a simulation")
     if not (folder / "sim-spec.md").exists(): L.err("sim-spec.md", 1, "a lesson with sim.js needs sim-spec.md")
     t = ROOT / "tests" / "sims" / f"{folder.name}.json"
-    if not t.exists(): L.err("tests/sims", 1, f"no tests/sims/{folder.name}.json; the graphics agent writes it with sim.js")
+    if not t.exists(): L.err("tests/sims", 1, f"no tests/sims/{folder.name}.json; the developer writes it with the simulation")
     else:
         try: n = len(json.loads(t.read_text()))
         except json.JSONDecodeError as e: L.err(f"tests/sims/{folder.name}.json", e.lineno, "invalid JSON"); return
@@ -329,9 +334,19 @@ def check_answers_py(L, folder, answers):
             L.err("answers.py", 1, f"{eid}: computes {v:g} but exercises.json says {ans:g} (tolerance {tol:g})")
 
 
+def check_pictures(L, folder):
+    """Pictures the text refers to exist under assets/ and belong to the lesson's course or to the shared folder."""
+    slug = courses.course(courses.course_of(folder.name))["slug"]
+    for ref in courses.pic_refs(folder):
+        if not courses.pic_source(ref).is_file(): L.err("lesson", 1, f"picture {ref} not found: put it in assets/{ref}")
+        elif not (ref.startswith(f"pics/{slug}/") or ref.startswith("shared/pics/")):
+            L.err("lesson", 1, f"picture {ref} belongs to another course; use assets/pics/{slug}/ or, when it is genuinely shared, assets/shared/pics/")
+
+
 def lint(folder):
     L = Lint(folder)
     meta = check_meta(L, folder)
+    check_pictures(L, folder)
     check_lesson_md(L, folder)
     answers = check_exercises(L, folder)
     check_solutions(L, folder, answers)
@@ -355,8 +370,7 @@ def check_inquiry(L, folder):
 if __name__ == "__main__":
     args = sys.argv[1:]
     if not args: sys.exit(__doc__)
-    folders = ([f.parent for f in sorted((ROOT / "content").glob("*/*/meta.json")) if f.parent.parent.name != "_gold"]
-               if args[0] == "--all" else [find_lesson(args[0])])
+    folders = courses.lessons() if args[0] == "--all" else [find_lesson(args[0])]
     bad = 0
     for folder in folders:
         L = lint(folder)

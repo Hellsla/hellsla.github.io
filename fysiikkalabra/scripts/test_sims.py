@@ -10,7 +10,7 @@ note. One line per sim; details only on failure."""
 import json, sys, pathlib, itertools
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+from courses import ROOT
 only = sys.argv[1] if len(sys.argv) > 1 else None
 OUT = ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # preview/ holds drafts + --all
 WIDTHS = (360, 390, 1280)
@@ -93,7 +93,7 @@ with sync_playwright() as pw:
     for page_file in sorted(OUT.glob("*.html")):
         lid = page_file.stem
         if only and lid != only: continue
-        if not (OUT / f"{lid}-sim.js").exists(): continue
+        if 'id="sim-root"' not in page_file.read_text(): continue   # a lesson page with a simulation, wherever its sim.js lives
         page = b.new_page(viewport={"width": 1280, "height": 900})   # fresh page: no leftover listeners
         errors = []
         page.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
