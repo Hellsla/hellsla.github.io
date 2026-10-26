@@ -344,3 +344,20 @@ energy system.*
    and an evidence question connects the measured 0,171 ml/K to fy3-8's γ = 3,4 · 10⁻³ 1/K = 1/(293 K). `prior`
    now retrieves fy3-3's p ∝ T. The adapter exposes the gas volume in ml and V/T in ml/K so the table reads in the
    units of the slider. The isochoric law stays in the theory as a recap of fy3-3.
+
+## 7. Follow-up round (same day): what passed review
+
+Every change went through the repo pipeline: developer → science reviewer + pedagogy reviewer, both PASS on the
+final content hash (`python3 scripts/reviews.py status`). Usage is logged in each lesson's `review/usage.tsv`.
+
+| Lesson | Change | Rounds | Final hash |
+|---|---|---|---|
+| fy3-3 | the false "myöhemmillä kursseilla" sentence now points to fy3-9 | 1 | afa2083a19a7066f |
+| fy3-9 | Koe 2 isobaric, link to fy3-8's γ = 1/(293 K) (section 6) | 1 | 9d4f49ca7d999aed |
+| fy3-5 | C1: first simulation (piston pushed into a particle gas, insulated or conducting walls); Koe 1 shows the temperature rise follows the work done (hidas 40,8 J / +114 K, nopea 47,2 J / +132 K, 2,79 K/J both), Koe 2 shows the work leaving as heat through conducting walls; real-air values and the model's limits in Lisätietoja | 2 (round 1 pedagogy FAIL: Koe 1 feedback contradicted the sim) | f258a83e4f50ee9b |
+| fy3-10 | C2: weighing four gases gives equal n (student computes m/M), R computed from the helium row before it is stated, 600 K challenge without the model value on screen, three display formulas instead of five, FY4 impulse argument removed | 2 (A-polish round after a PASS) | 944c5d51ce0ef7d1 |
+| fy3-11 | C3: piston cylinder replaces the Sankey sim; the student computes W_k = pΔV from measured p and ΔV; the return stroke shows net work only when heat goes to the cold side (Q = 500 J, p₂ = 100 kPa: Q₁ 650 J, Q₂ 550 J, W 100 J); one symbol per meaning (W_k, W, E_s, P_pumppu); the CHP comparison became a design task (2000 / 1250 / 800 MW; CHP split 45 % + 40 % so the heat-pump case is possible) | 2 (A/B-polish round after a PASS) | d34a6cbbb0d46756 |
+
+Polish left for a later round (non-blocking): fy3-5 ΔT rounding after pull-out and "odota, kunnes ΔU on 0,0 J" in
+Koe 2; fy3-5 pred-2's correct option is the longest; fy3-10 workload at the upper edge of one lesson; fy3-11 the η
+column of the Koe 2 table scrolls at 390 px; fy3-9 `sim-spec.md` should name `Vgas` and `VperT`.

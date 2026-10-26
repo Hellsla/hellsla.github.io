@@ -1,16 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: 1985815b7b66e3f6
+VERDICT: PASS
+CONTENT-HASH: f258a83e4f50ee9b
 
 ## Blocking
-- Koe 1 does not refute the "nopea" prediction, and the feedback contradicts the student's data. I ran slow and fast pushes (insulated) five times: the model is deterministic and gives hidas W 40,8 J, T 407 K; nopea W 42,5 J, T 411 K every time. The student always sees the fast push 4 K hotter and 1,7 J higher, which looks like confirmation of "nopea". The feedback says "noin 114 K nopealla ja 113 K hitaalla" and W "noin 41 J" for both (real figure for nopea: ΔT 118 K, W 42,5 J), and koe-1 intro and Lisätietoja both say results "vaihtelevat muutaman kelvinin". They do not vary here. Fix: make the data match the feedback, or say plainly that fast is a few percent higher and explain why the difference is small (about 4 % against 14 times slower), and word the correct option and feedback as "only slightly more", with the contrast with the order-of-magnitude difference the student expects.
+(none)
 
 ## Polish
-- On the phone the experiment steps sit about 700 px below the sim. Each trial means scrolling between the "Työnnä mäntää" buttons and "Kirjaa mittaus". "Aseta alkutila" lands well (sim plus Kirjaa mittaus both visible), but after pressing the push button the student must scroll again. Consider placing the record button next to the sim, or showing the measurement row inside the sim card.
-- The sim readout writes "ΔU = … (Q + W = …)" before the theory, so the formula is given, not derived from the bars. The bars themselves build the sign convention well, since W is up and Q is down in conducting walls. Consider dropping "(Q + W = …)" until Selitä, or turning it into a question.
-- Pred 1 mentions "Koe 2" in the feedback, but the student sees it after koe-2 anyway; fine. Pred 1 option order is reshuffled on reload (good); "Bea" is the only answer with correct physics language and the longest, so cueing is possible.
-- Koe 2: waiting for T = 293 K, with a measured value of 293,5 K, can confuse; allow "about 294 K".
-- Workload: about 16 000 px at 390 px, 2 predictions, 2 experiments (4 runs), challenge, example, error item, transfer, 12 exercises, 3 checks and an exit ticket. This is closer to 75 min than an hour. Consider dropping the Haaste, which repeats Koe 2.
-- The sim canvas on the phone is 324×216, with small particles. Readable, but the speed control and Lisätietoja are in place and work.
+- inquiry.json pred-2 — the correct option is the longest and already states "ΔU = W" before the theory section; a student can pick it by form. Shorten it to "Tehty työ: kaasu lämpenee enemmän sillä kerralla, jolla työtä tehdään enemmän." and leave ΔU = W to the feedback.
+- inquiry.json koe-1 intro — "Vertaa ... ΔU ja työtä W sekä lämpötilan nousua ΔT" names the comparison for the student; consider "Mitä huomaat lukemista?" to let them find ΔU = W.
+- inquiry.json pred-1 Aino feedback — "1,33-kertaiseksi" but the sim reads 1,34 · p₀; write "noin 1,3-kertaiseksi".
+- inquiry.json koe-2 — the student waits for T ≈ 293 K; the sim ends at 294 K (ΔU +0,2 J). Say "noin 293–294 K" so nobody thinks the run failed.
 
 ## Checked
-Hash unchanged at start and end. Predictions are gated until measurements (feedback appears only after two records). Pred 1 and Koe 2 can refute Aino and Cem (p/p₀ 1,33 with T back to 293 K). Aseta alkutila moves the sim into the experiment. Controls, speed menu and Lisätietoja are usable at 390 px with no horizontal scroll. Haaste figures (40,9 J, 407 K, Q = −40,9 J) match the sim. Exercises 5/4/3.
+- Hash at start and end identical (above).
+- Koe 1 at 390 px, 3 rounds of hidas/nopea with "Aseta alkutila": identical every time, hidas W = ΔU = +40,8 J, ΔT +114 K; nopea +47,2 J, +132 K. Matches the pred-2 feedback and the table.
+- Wrong pred-2 ("Männän nopeus itse") committed first: feedback stays gated ("Palaute näkyy, kun olet tehnyt mittaukset"), then after 2+ measurements it cites 132/114 K and 47,2/40,8 J, gives 2,8 K/J for both, and repairs the misconception. Round-1 blocking issue is gone.
+- Correct pred-2 option now says temperature follows work, speed acts only through W; no contradiction with the readout.
+- Readout no longer shows "(Q + W = …)"; it shows W, Q, ΔU, T, V, p. Nothing clipped at 390 px; controls and bars legible.
+- Koe 2: insulated 40,8 J / 407 K, conducting W +35,1 J, Q −34,9 J, ΔU +0,2 J, T 294 K; the question and its feedback agree with these numbers.
+- Variable control: Koe 1 varies only push (wall locked), Koe 2 only wall (push locked); both can refute their predictions.
+- Pred-1 options are now of similar length and each has misconception-repairing feedback.
+- Haaste is gone; exercises 5/4/3, transfer task hints and check-2/check-3 are consistent with sign convention.
+- Finnish reads well; no new errors found.
