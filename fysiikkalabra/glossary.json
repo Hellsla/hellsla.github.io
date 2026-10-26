@@ -1,5 +1,17 @@
 [
   {
+    "term": "(t,x)-kuvaaja",
+    "definition": "(t,x)-kuvaajassa vaaka-akselilla on aika t ja pystyakselilla paikka x. Tasaisen liikkeen kuvaaja on suora, jonka kulmakerroin on nopeus ja jonka alkukohta on alkupaikka x₀: x = x₀ + vt.",
+    "lessons": [
+      "fy4-1"
+    ],
+    "see_also": [
+      "paikka",
+      "nopeus"
+    ],
+    "locked": false
+  },
+  {
     "term": "Avogadron vakio",
     "definition": "Hiukkasten lukumäärä yhdessä moolissa, N_A = 6,022 · 10²³ 1/mol. Hiukkasmäärä saadaan ainemäärästä kertomalla: N = n · N_A.",
     "lessons": [
@@ -311,6 +323,18 @@
     "locked": false
   },
   {
+    "term": "keskinopeus",
+    "definition": "Keskinopeus on siirtymä jaettuna siihen kuluneella ajalla: v_ka = Δx/Δt. Se kertoo vakionopeuden, jolla sama siirtymä olisi tehty samassa ajassa. Edestakaisen liikkeen keskinopeus voi olla nolla.",
+    "lessons": [
+      "fy4-1"
+    ],
+    "see_also": [
+      "nopeus",
+      "siirtymä"
+    ],
+    "locked": false
+  },
+  {
     "term": "kiihtyvyys",
     "definition": "Nopeuden muutos aikayksikössä. Yksikkö m/s².",
     "lessons": [
@@ -561,6 +585,19 @@
     "locked": false
   },
   {
+    "term": "nopeus",
+    "definition": "Nopeus on paikan muutosnopeus: v = Δx/Δt. Se on vektorisuure, joten etumerkki kertoo suunnan. Nopeuden itseisarvo |v| on vauhti. Tasaisessa liikkeessä nopeus on vakio ja yksikkö on m/s.",
+    "lessons": [
+      "fy4-1"
+    ],
+    "see_also": [
+      "siirtymä",
+      "keskinopeus",
+      "(t,x)-kuvaaja"
+    ],
+    "locked": false
+  },
+  {
     "term": "olomuoto",
     "definition": "Aineen esiintymismuoto: kiinteä, neste tai kaasu. Mikromallissa olomuodot eroavat siinä, kuinka hiukkaset ovat sitoutuneet toisiinsa.",
     "lessons": [
@@ -581,6 +618,18 @@
     "see_also": [
       "lämpökapasiteetti",
       "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "paikka",
+    "definition": "Kappaleen paikka x kertoo, missä kappale on valittuun origoon nähden x-akselilla. Paikan etumerkki kertoo, kummalla puolella origoa kappale on; yksikkö on metri (m).",
+    "lessons": [
+      "fy4-1"
+    ],
+    "see_also": [
+      "siirtymä",
+      "(t,x)-kuvaaja"
     ],
     "locked": false
   },
@@ -653,6 +702,18 @@
     "see_also": [
       "paino",
       "kiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "siirtymä",
+    "definition": "Siirtymä Δx = x₂ − x₁ on paikan muutos alkupaikasta loppupaikkaan. Se on vektorisuure: etumerkki kertoo suunnan. Siirtymä riippuu vain alku- ja loppupaikasta, kun taas matka on kuljetun reitin pituus.",
+    "lessons": [
+      "fy4-1"
+    ],
+    "see_also": [
+      "paikka",
+      "nopeus"
     ],
     "locked": false
   },
