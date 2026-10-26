@@ -25,7 +25,8 @@ body{margin:0;font:17px/1.65 var(--sans);color:var(--ink);background:var(--bg);-
 a{color:var(--accent-deep);text-underline-offset:.18em}
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
 .page{width:min(80rem,calc(100% - 32px));margin:0 auto;padding:18px 0 40px;container:page / inline-size}
-main.reading{max-width:38rem}
+main.reading{max-width:38rem;margin-inline:auto}
+@container page (min-width:68rem){main.reading{margin-inline:0}}   /* between a phone and the wide layout (a tablet, a narrow window) the text column is centred, not left with an empty strip on the right */
 
 /* header */
 header.top{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;padding-bottom:12px;margin-bottom:8px;border-bottom:1px solid var(--line)}
@@ -54,6 +55,7 @@ li{margin:.4rem 0}
 @media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.08em) so the widest row (fy3-3) fits 360 px; at 390 px and up nothing overflows, so formulas stay full size */
 .notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:.95rem}
 .fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
+.fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 
 /* front page and module pages */
@@ -92,7 +94,7 @@ details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-ra
 
 /* simulation */
 #sim{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1rem 1rem;margin:2.4rem 0}
-@media (min-width:700px){#sim{margin-inline:-1.1rem}}   /* the card pokes out of the 38rem text column so the 600 px canvas keeps its native size */
+@media (min-width:720px){#sim{margin-inline:-1.1rem}.lab-side #sim{margin-inline:0}}   /* the card pokes out of the 38rem text column so the 600 px canvas keeps its native size */
 #sim h2{margin-top:1rem}
 #sim-root{position:relative}#sim-root canvas{max-width:100%;height:auto!important;display:block;border-radius:10px}
 #sim-root .readout{font-size:1rem;line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
@@ -106,7 +108,7 @@ details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-ra
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.84rem;color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
 footer.bottom a{display:inline-flex;align-items:center;min-height:40px}
 .crumbs:empty{display:none}
-table{display:block;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 th,td{padding:.5rem .8rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
 th{font:500 .8rem var(--mono);letter-spacing:.04em;color:var(--ink-2);background:var(--bg-tint)}
 tr:last-child td{border-bottom:0}
@@ -152,6 +154,7 @@ details.solution .steps p{margin:0}
   details.level{border:0;padding:0;break-inside:avoid}li{break-inside:avoid}
   .katex-display{border:0;background:none}a{color:inherit;text-decoration:none}
   h2{break-after:avoid}
+  .fig,article svg{break-inside:avoid}article svg{border:0;padding:0}
 }
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
 
@@ -224,8 +227,9 @@ ul.criteria{list-style:none;margin:0;padding:0}ul.criteria label{display:flex;ga
    below break out to the full page width (100cqw of the .page container) to sit side by side: the title beside
    "Tällä tunnilla uutta", a figure beside its paragraph, short activities two by two, the simulation beside the
    experiments that use it, the exercises two by two. inquiry.js reads --wide to know which layout is on. */
-.fig{margin:1rem 0}.fig svg{display:block}
-.fig-row .fig-text>:first-child{margin-top:0}
+.fig{margin:1rem 0}.fig svg{display:block;margin-inline:auto}
+.fig-row{display:flex;flex-direction:column}.fig-row>.fig{order:1}   /* the figure is first in the markup (build.py fig_rows) but shows under its paragraph */
+.fig-row .fig-text>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}
 .intro-aside .prior{margin:0 0 1rem}
 details.fold{margin:.8rem 0 0;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--accent-soft) 55%,var(--bg));padding:0 1rem}
 details.fold>summary{min-height:52px;gap:.2rem .7rem;flex-wrap:wrap;font:600 1rem var(--sans);color:var(--accent-deep)}
@@ -239,11 +243,17 @@ details.sim-box>div{font-size:.95rem;padding:0 0 .6rem 1.2rem}details.sim-box>di
 .lab-side #sim{margin-block:.6rem 0;margin-inline:0}   /* inside the lab the card stays in its column (768 px: it poked 18 px out) */
 @container page (min-width:68rem){
   .reading{--wide:1}
-  .intro-row,.stage>.act-grid,.stage>.lab,.stage>.fold,.act-theory>.fig-row,article#teoria>.fig-row,.stage-practice details.level{width:100cqw}
-  .intro-row,.act-theory>.fig-row,article#teoria>.fig-row{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);column-gap:var(--gap)}
+  .intro-row,.stage>.act-grid,.stage>.lab,.stage>.fold,.stage-practice details.level{width:100cqw}
+  .intro-row{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);column-gap:var(--gap)}
   .intro-row{align-items:end}.intro-aside{padding-bottom:.4rem}.intro-aside .contribution{margin-top:0}
-  .act-theory>.fig-row,article#teoria>.fig-row{align-items:start;margin:1rem 0}
-  .fig-row>.fig{margin:0}.fig-row>.fig svg{margin-inline:auto}
+  /* A theory figure floats in the right-hand column level with its paragraph, and the text column runs on
+     without the gap a two-column row left under a short paragraph beside a tall figure. Consecutive figures
+     stack (clear:right); the theory block grows to hold its last figure (flow-root). */
+  .act-theory,article#teoria{display:flow-root}
+  .act-theory>.fig-row,article#teoria>.fig-row{display:contents}
+  .act-theory>.fig-row>.fig,article#teoria>.fig-row>.fig{float:right;clear:right;width:calc(100cqw - var(--measure) - var(--gap));
+    margin:.35rem calc(var(--measure) - 100cqw) 1.2rem 0}
+  .act-theory>.fig-row>.fig-text,article#teoria>.fig-row>.fig-text{margin:1rem 0}
   .act-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--gap);align-items:start}
   .fold-body>:not(.act-grid){max-width:var(--measure)}
   .act-grid>.activity{min-width:0}
@@ -255,3 +265,4 @@ details.sim-box>div{font-size:.95rem;padding:0 0 .6rem 1.2rem}details.sim-box>di
   .stage{border-top:0;padding-top:0}.stage::before{content:"";display:block;width:100cqw;border-top:1px solid var(--line);margin-bottom:.4rem}
 }
 @media print{.fold-status{display:none}}
+.nobr{white-space:nowrap}

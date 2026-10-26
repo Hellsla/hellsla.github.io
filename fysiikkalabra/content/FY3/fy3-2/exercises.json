@@ -27,7 +27,7 @@
     {
       "id": "fy3-2-L1-04",
       "level": 1,
-      "text": "Kelkkaa vedetään 6,0 m:n matka. Vetävä voima on koko matkalla 35 N ja liikkeen suuntainen, joten (s,F)-kuvaaja on vaakasuora jana. Laske voiman tekemä työ kuvaajan pinta-alana.",
+      "text": "Kelkkaa vedetään 6,0 m:n matka. Vetävä voima on koko matkalla 35 N ja liikkeen suuntainen, joten $(s, F)$-kuvaaja on vaakasuora jana. Laske voiman tekemä työ kuvaajan pinta-alana.",
       "answer": 210,
       "unit": "J",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy3-2-L2-04",
       "level": 2,
-      "text": "Vaunua työnnetään liikkeen suuntaisella voimalla. Voima on ensin 10 N matkalla 0–2,0 m. Sen jälkeen voima kasvaa tasaisesti 10 N:sta 30 N:iin matkalla 2,0–6,0 m. Laske voiman tekemä kokonaistyö (s,F)-kuvaajan pinta-alana.",
+      "text": "Vaunua työnnetään liikkeen suuntaisella voimalla. Voima on ensin 10 N matkalla 0–2,0 m. Sen jälkeen voima kasvaa tasaisesti 10 N:sta 30 N:iin matkalla 2,0–6,0 m. Laske voiman tekemä kokonaistyö $(s, F)$-kuvaajan pinta-alana.",
       "answer": 100,
       "unit": "J",
       "tolerance": 0.02

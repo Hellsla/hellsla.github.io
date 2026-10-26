@@ -20,17 +20,18 @@ A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simu
 - Every exercise has `answer`, `unit` and `tolerance`; the data carries the significant figures the answer should have, and a student rounding to them stays inside the tolerance. `answers.py` computes every answer.
 
 ## Lesson form (human decisions 2026-10-25, every lesson)
-1. **Visualise.** `## Ydinajatus` and `## Kaava: <law>` each have at least one inline SVG figure right after the paragraph it explains; formulas and symbols inside figures are LaTeX (`foreignObject`, NOTES.md §3); no paragraph over about 120 words.
-2. **Solve symbolically first, then substitute** values with units, in the worked example and every solution.
+1. **Visualise.** `## Ydinajatus` and `## Kaava: <law>` each have at least one inline SVG figure right after the paragraph it explains, and any other theory point with a picture (p = F/A) gets a simple one; every label inside a figure is LaTeX (`foreignObject`, NOTES.md §3, teacher 2026-10-26); graphs and figures are of printed-textbook quality (NOTES.md §3 Graphs, Print quality); no paragraph over about 120 words.
+2. **Solve symbolically first, then substitute** values with units, in the worked example and every solution; solutions are written in LaTeX (NOTES.md §1, teacher 2026-10-26).
 3. **Simulations are visually rich, not slider-rich.** Keep the physics controls; spend the effort on the picture, motion, meaningful colour, labels, a legend. Every animated sim has a speed control (hidas · normaali · nopea) and only labels and values on the canvas; explanations go behind closed boxes under it (Lesson page 4).
 4. **Worked examples are staged**: 3–6 stages separated by `<!-- vaihe -->` lines, each with a bold lead-in and one step; the page reveals them one at a time.
 5. **Inquiry first, shaped by the topic** (teacher's brief 2026-10-25, `docs/inquiry-spec.md`; 2026-10-26: no fixed template): every lesson has `inquiry.json` (`docs/inquiry.md`) through Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella → Tarkista osaamisesi, then Tehtävät: a phenomenon, a retrieval of prior learning, a committed prediction before the evidence where the topic allows, the evidence that fits the topic (a guided experiment on a simulation when manipulating it reveals something; otherwise a table, a graph, competing explanations or a model to build), the model, a transfer task with hints and common-mistake feedback, three checks. A simulation or a game is there for what it teaches, never for show. Feedback is gated on commitment, never access; no answer is disclosed before the student has acted; theory stays readable on its own.
+6. **Chapter names, not ids.** A student never sees a lesson id: "luvussa *Paine ja hydrostaattinen paine*", not "oppitunnilla fy3-4" (teacher 2026-10-26).
 NOTES.md says how to write each; `scripts/lint_lesson.py` and `scripts/test_inquiry.py` check what they can.
 
 ## Lesson page (human decisions 2026-10-26, every new or edited lesson)
 The shared templates (`templates/`, `scripts/build.py`, `scripts/inquiry.py`) do 1, 2, 3, 5, 7 and 8 for every lesson; the
 lesson does 6, 9 and its half of 4. `lint_lesson.py` checks 4, 6 and 9 as errors on a lesson being written or edited
-(warnings on one reviewed before 2026-10-26), `test_inquiry.py` and `check_layout.py` check the page at 360, 1280 and 1920 px.
+(warnings on one reviewed before 2026-10-26), `test_inquiry.py` and `check_layout.py` check the page at 360, 1280 and 1920 px; look at 768 px too (teacher 2026-10-26: the layout must work at every width).
 1. **Use the width.** One column on a phone, as before. On a wide screen parallel columns where they help: the simulation beside the experiments that use it, a figure beside the paragraph it explains, short activities side by side. Text keeps a readable line (a 38rem column, never over 44rem).
 2. **Pohdinta**, not "Herätä kiinnostus", as the first stage's heading and in the navigation.
 3. **Ennusta in a box that starts closed** (`<details>`, keyboard operable); it can be reopened later, and closing it keeps the answers and reasons.

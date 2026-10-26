@@ -1,27 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 1f1a6b1c38646d0c
+CONTENT-HASH: a38128ef6919c113
 
 ## Blocking
-
 (none)
 
 ## Polish
-
-1. inquiry.json simulaatio/koe-1, koe-2 — the readout and the dashed T line show the equilibrium temperature (e.g. 26,8 °C) as soon as the initial state is set, before *Upota*. The animation then adds nothing, and the "experiment" only evaluates the formula being predicted (the packet warns against this). Hide T and the Q readout until the object has been immersed, or let the student read T off the curve. Not blocking: the student has already committed to the prediction.
-2. lesson.md Ydinajatus — "Tärkeä syy on, että veden ominaislämpökapasiteetti on poikkeuksellisen suuri" -> "Yksi tärkeä syy on, että veden ominaislämpökapasiteetti on poikkeuksellisen suuri". The next sentence names a second reason (surface layer); the reflect item asks for it, so mark it clearly as "toinen syy".
-3. inquiry.json hook — the hook asks a question but its text already says the sand is hotter "koska ..." nowhere, which is good; yet the water depth/surface-layer cause is only in the theory text. Consider a one-line hint in the reflect prompt ("pohdi myös, kuinka syvälle lämpö ulottuu") so the student can find it.
-4. inquiry.json ennuste-1 — wrong-option feedback quotes model values (26,8 °C, 44,0 °C) in the same breath as the correct answer; fine after the reveal, but check that it appears only after koe-1 (the packet says reveal is gated, so only confirm).
-5. exercises.json L2-02 — uses P = W/t; confirm fy3-5 or an earlier lesson introduced it, otherwise add "teho on energia aikayksikköä kohti" to the task text.
+- sim.js canvas texts (T (°C), t (s), "vesi 20,0 °C", "T 24,6 °C") and the DOM readout (C = cm, Q, "Lämpömittarit nyt") are plain interface text, not typeset maths; NOTES.md §1 records this as pending the teacher's decision, so polish only.
+- lesson.md Ydinajatus, 1st paragraph — one dense block of ~9 sentences before the first figure — split after "lämpömäärä riippuu aineesta" and place the water-sand figure beside the second paragraph.
+- lesson.md Esimerkki, "Järkevyys" stage — four ideas in one stage (copper comparison, sim rerun, 0,1 K gap, heat-capacity ratio) — move the heat-capacity comparison into its own short stage.
+- Experiment tables at 390 px: the Mittaukset table is narrow and its header row is small (aine, c / T (°C) / C (J/K)); legible, but a wider table would help once rows accumulate.
+- inquiry.json "kertaus" — the "kylmyys siirtyy" distractor has no link to today's topic; low priority.
 
 ## Checked
-
-- Learning path: hook -> retrieval (fy3-5) -> two refutable predictions -> sim and two controlled experiments (one variable each) -> theory -> reflect on own predictions -> example -> error-spotting -> transfer with hints -> three checks -> exit; the opening question is answered in "pohdi" and the theory. Workload is one lesson.
-- Slot goals met: Q = cmΔT, calorimetric measurement (worked example, koe, tarkistus-2), solving a multi-term equation (derivation of T, error item).
-- Predictions can be refuted: model values 26,8 / 44,0 °C and 40,0 / 55,0 / 63,1 °C recomputed and correct; option feedback repairs the misconception.
-- Figures 1 and 2 (captures 390 px): legible, to scale, colour backed by labels; the 1280 px lab layout puts experiments beside the sim without clipping.
-- Worked example staged in six steps; numbers (374,6; 383; 24,6 °C; 1257 and 75 J/K) recomputed correct; significant figures argued.
-- Exercise answers L1-L3, tarkistus-2, siirto (29,1 kg), virhe item (6,6 / 30,0 °C) and exit ticket recomputed: all correct; levels progress, none repeats the example; mistake values match real slips.
-- Finnish: no case or glossary errors found; terms match the glossary.
-- Phone (390 px): sim, controls and readout fit; locked sliders labelled (vakio); exit ticket readable.
-- Deterministic check "FAIL sims" in the packet was not re-run; the sim itself worked in the captures.
-- Content hash unchanged at end of review.
+- Learning path unchanged since round 1: hook, retrieval, two predictions, sim and two experiments, theory, reflection, example, error-spotting, transfer, checks, exit ticket. Goals covered, nothing extra; opening question answered only after commitment.
+- New Nopeus control (390 and 1280 px captures): labelled, sits with the other controls, and the howto says it changes only the animation's pace, not temperatures or heat amounts, so it cannot mislead.
+- New Lisätietoja boxes (Käyttöohje, Mallin oletukset, Laskennan selitys): closed by default, readable, no clipping at 390 px; the model box states the simplifications and that values are model values.
+- Activity texts now carry symbols as maths (m_v, T_v, c_k, T in howto and calc); consistent with the prose.
+- Experiment Alkutila line and table headers render symbols as maths (c, T (°C), C (J/K)); koe-1 and koe-2 still lock the controlled parameters and can refute their predictions (hiekka 26,8 vs vesi 44,0 °C; 40,0 / 55,0 / 63,1 °C).
+- Figures, exercises, solutions in LaTeX, exit ticket and Finnish unchanged from round 1 (PASS); numeric answers recomputed then.
+- Layout: 1280 px lab shows experiments beside the sim, readable; 390 px sim nothing clipped.

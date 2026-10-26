@@ -87,7 +87,7 @@
     {
       "id": "fy3-12-L3-02",
       "level": 3,
-      "text": "Kasvihuonekaasujen lisääntymisen vuoksi maapallo saa nykyään keskimäärin 1,0 W/m² enemmän tehoa kuin säteilee avaruuteen. Maapallon pinta-ala on 5,1 · 10¹⁴ m². Kuinka paljon ylimääräistä energiaa maapallolle kertyy vuodessa (365 vuorokautta)? Noin 90 % siitä varastoituu meriin. Oletetaan, että se lämmittää tasaisesti merien ylintä 700 metrin kerrosta, jonka massa on 2,6 · 10²⁰ kg ja ominaislämpökapasiteetti 4,0 · 10³ J/(kg·K). Kuinka monta kelviniä kerros lämpenee kymmenessä vuodessa? Miksi suuri vesimassa hidastaa ilmaston lämpenemistä?",
+      "text": "Kasvihuonekaasujen lisääntymisen vuoksi maapallo saa nykyään keskimäärin 1,0 W/m² enemmän tehoa kuin säteilee avaruuteen. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$. Kuinka paljon ylimääräistä energiaa maapallolle kertyy vuodessa (365 vuorokautta)? Noin 90 % siitä varastoituu meriin. Oletetaan, että se lämmittää tasaisesti merien ylintä 700 metrin kerrosta, jonka massa on $2{,}6 \\cdot 10^{20}\\,\\text{kg}$ ja ominaislämpökapasiteetti $4{,}0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Kuinka monta kelviniä kerros lämpenee kymmenessä vuodessa? Miksi suuri vesimassa hidastaa ilmaston lämpenemistä?",
       "answer": 0.139,
       "unit": "K",
       "tolerance": 0.02

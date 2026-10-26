@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpömäärä saa laskukaavan $Q = cm\\Delta T$: aineen ominaislämpökapasiteetti ratkaisee, kuinka paljon lämpötila muuttuu, ja energian säilymisestä saadaan kalorimetrin tasapainolämpötila ja tuntemattoman aineen $c$.",
   "prior": [
-    "Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja siirtynyt energia on lämpömäärä Q (fy3-5)",
-    "Energia säilyy: eristetyn systeemin kokonaisenergia pysyy vakiona (fy3-5)"
+    "Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja siirtynyt energia on lämpömäärä $Q$ (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
+    "Energia säilyy: eristetyn systeemin kokonaisenergia pysyy vakiona (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)"
   ],
   "activities": [
     {
@@ -22,12 +22,12 @@
       "choices": [
         {
           "text": "Kuparin lämpö siirtyy veteen, kunnes kuparissa ei ole enää lämpöä.",
-          "feedback": "Kappaleella ei ole lämpöä (fy3-5). Lämpö on energian *siirtymistä* lämpötilaeron vuoksi, ja se loppuu, kun lämpötilat ovat samat, ei silloin, kun jokin varasto tyhjenee. Kuparilla on yhä sisäenergiaa."
+          "feedback": "Kappaleella ei ole lämpöä (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö on energian *siirtymistä* lämpötilaeron vuoksi, ja se loppuu, kun lämpötilat ovat samat, ei silloin, kun jokin varasto tyhjenee. Kuparilla on yhä sisäenergiaa."
         },
         {
           "text": "Energiaa siirtyy lämpönä kuparista veteen, kunnes lämpötilat ovat samat. Kuparin sisäenergia pienenee yhtä paljon kuin veden sisäenergia kasvaa.",
           "correct": true,
-          "feedback": "Oikein. Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja eristetyssä astiassa energia säilyy: kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama (fy3-5). Tänään lasketaan, kuinka suuri tuo lämpömäärä on."
+          "feedback": "Oikein. Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja eristetyssä astiassa energia säilyy: kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Tänään lasketaan, kuinka suuri tuo lämpömäärä on."
         },
         {
           "text": "Vedestä siirtyy kylmyyttä kupariin, kunnes kupari on yhtä kylmää kuin vesi oli alussa.",
@@ -265,7 +265,7 @@
         },
         {
           "value": 21.3,
-          "feedback": "Laskit kuuman veden lämpötilan muutokseksi 60 °C − 30 °C. Kuuma vesi jäähtyy loppulämpötilaan 38 °C asti, joten sen muutos on 60 °C − 38 °C = 22 K."
+          "feedback": "Laskit kuuman veden lämpötilan muutokseksi $60\\,{}^\\circ\\text{C} - 30\\,{}^\\circ\\text{C}$. Kuuma vesi jäähtyy loppulämpötilaan 38 °C asti, joten sen muutos on $60\\,{}^\\circ\\text{C} - 38\\,{}^\\circ\\text{C} = 22\\,\\text{K}$."
         }
       ],
       "solution": "**Ratkaisu symbolisesti.** Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama:\n\n$$c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$$\n\njosta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Sijoitus.** $m_\\text{k} = \\dfrac{80\\,\\text{kg} \\cdot 8\\,\\text{K}}{22\\,\\text{K}} \\approx 29\\,\\text{kg}$.\n\n**Järkevyys.** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu 22 K ja ammeen veden vain 8 K. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän."
@@ -315,7 +315,7 @@
       "mistakes": [
         {
           "value": 768,
-          "feedback": "Käytit metallin lämpötilan muutoksena 98,0 °C − 18,0 °C. Metalli jäähtyy vain loppulämpötilaan 29,0 °C asti, joten sen muutos on 69,0 K."
+          "feedback": "Käytit metallin lämpötilan muutoksena $98{,}0\\,{}^\\circ\\text{C} - 18{,}0\\,{}^\\circ\\text{C}$. Metalli jäähtyy vain loppulämpötilaan 29,0 °C asti, joten sen muutos on 69,0 K."
         },
         {
           "value": 501,

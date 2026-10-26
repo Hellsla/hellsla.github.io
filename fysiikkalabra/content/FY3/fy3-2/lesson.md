@@ -5,49 +5,63 @@
 ## Ydinajatus
 Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana on tarkempi: voima tekee työtä, kun se siirtää kappaletta voiman suuntaan. Kun kannat reppua vaakasuoraan tasaisella vauhdilla, kannatteleva voimasi osoittaa ylös, mutta reppu liikkuu sivulle. Voima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Lihaksesi väsyvät, koska ne kuluttavat energiaa voiman ylläpitoon, mutta reppuun ei siirry energiaa.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <text x="145" y="32" text-anchor="middle" fill="#1f2933" font-weight="bold">kanto sivulle</text>
-  <rect x="100" y="130" width="80" height="80" rx="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <path d="M122,130 Q140,104 158,130" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <line x1="140" y1="118" x2="140" y2="72" stroke="#e8590c" stroke-width="5"/>
-  <polygon points="140,52 128,76 152,76" fill="#e8590c"/>
-  <text x="160" y="84" fill="#1f2933" font-weight="bold">F</text>
-  <line x1="70" y1="248" x2="186" y2="248" stroke="#6b7480" stroke-width="3" stroke-dasharray="8 6"/>
-  <polygon points="206,248 184,238 184,258" fill="#6b7480"/>
-  <text x="214" y="256" fill="#1f2933">liike</text>
-  <text x="145" y="294" text-anchor="middle" fill="#1f2933" font-weight="bold">W = 0</text>
-  <line x1="300" y1="20" x2="300" y2="290" stroke="#c9c2b2" stroke-dasharray="6 6"/>
-  <text x="455" y="32" text-anchor="middle" fill="#1f2933" font-weight="bold">nosto ylös</text>
-  <rect x="400" y="130" width="80" height="80" rx="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <path d="M422,130 Q440,104 458,130" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <line x1="440" y1="118" x2="440" y2="72" stroke="#e8590c" stroke-width="5"/>
-  <polygon points="440,52 428,76 452,76" fill="#e8590c"/>
-  <text x="414" y="84" text-anchor="end" fill="#1f2933" font-weight="bold">F</text>
-  <line x1="510" y1="236" x2="510" y2="92" stroke="#6b7480" stroke-width="3" stroke-dasharray="8 6"/>
-  <polygon points="510,72 500,94 520,94" fill="#6b7480"/>
-  <text x="524" y="170" fill="#1f2933">liike</text>
-  <text x="455" y="294" text-anchor="middle" fill="#1f2933" font-weight="bold">W = F s</text>
+<svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s." style="max-width:100%;font-size:24px">
+  <foreignObject x="71" y="15.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kanto sivulle}$</div></foreignObject>
+  <foreignObject x="390" y="15.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nosto ylös}$</div></foreignObject>
+  <line x1="300" y1="20" x2="300" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <rect x="110" y="140" width="80" height="80" rx="14" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="122" y="184" width="56" height="26" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M110,170 Q150,192 190,170" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M132,140 Q150,114 168,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="150" y1="114" x2="150" y2="83" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M150,62 L160,84 L140,84 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="166" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="70" y1="240" x2="197" y2="240" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M214,240 L196,248 L196,232 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="107" y="251.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{liike}$</div></foreignObject>
+  <foreignObject x="127.5" y="291.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = 0$</div></foreignObject>
+  <rect x="410" y="140" width="80" height="80" rx="14" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="422" y="184" width="56" height="26" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M410,170 Q450,192 490,170" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M432,140 Q450,114 468,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="450" y1="114" x2="450" y2="83" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M450,62 L460,84 L440,84 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="414" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="520" y1="232" x2="520" y2="103" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M520,86 L528,104 L512,104 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="534" y="145.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liike}$</div></foreignObject>
+  <foreignObject x="415" y="291.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,s$</div></foreignObject>
 </svg>
 
-Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran. Kokeissa veden lämpeneminen osoittautui verrannolliseksi painon ja pudotusmatkan tuloon eli voiman ja matkan tuloon. Tämä kokeellinen tulos perustelee työn määritelmän W = Fs (kaava alla), ja siksi työ ja lämpö mitataan samalla yksiköllä, joulella.
+Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran. Kokeissa veden lämpeneminen osoittautui verrannolliseksi painon ja pudotusmatkan tuloon eli voiman ja matkan tuloon. Tämä kokeellinen tulos perustelee työn määritelmän $W = Fs$ (kaava alla), ja siksi työ ja lämpö mitataan samalla yksiköllä, joulella.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <text x="290" y="36" text-anchor="middle" fill="#1f2933" font-weight="bold">työ → lämpö</text>
-  <rect x="62" y="166" width="196" height="102" fill="#a9d1f0"/>
-  <polyline points="60,130 60,270 260,270 260,130" fill="none" stroke="#1f2933" stroke-width="4"/>
-  <line x1="160" y1="80" x2="160" y2="250" stroke="#6c757d" stroke-width="4"/>
-  <rect x="112" y="196" width="96" height="12" fill="#6c757d"/>
-  <rect x="112" y="232" width="96" height="12" fill="#6c757d"/>
-  <circle cx="160" cy="80" r="18" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="400" cy="80" r="18" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <line x1="160" y1="62" x2="400" y2="62" stroke="#1f2933" stroke-width="2"/>
-  <line x1="418" y1="80" x2="418" y2="150" stroke="#1f2933" stroke-width="2"/>
-  <rect x="393" y="150" width="50" height="50" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <text x="380" y="184" text-anchor="end" fill="#1f2933">paino</text>
-  <line x1="478" y1="150" x2="478" y2="246" stroke="#6b7480" stroke-width="3" stroke-dasharray="8 6"/>
-  <polygon points="478,266 468,244 488,244" fill="#6b7480"/>
-  <text x="494" y="216" fill="#1f2933" font-weight="bold">h</text>
-  <text x="160" y="296" text-anchor="middle" fill="#1f2933">vesi lämpenee</text>
+<svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <foreignObject x="190" y="15.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{työ} \to \text{lämpö}$</div></foreignObject>
+  <rect x="62" y="170" width="196" height="100" fill="url(#fy32-water)"/>
+  <line x1="62" y1="170" x2="258" y2="170" stroke="#2f74b5" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M60,130 V272 H260 V130" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="160" y1="84" x2="160" y2="246" stroke="#6c757d" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="110" y="200" width="100" height="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="110" y="236" width="100" height="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="160" cy="84" r="18" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="160" cy="84" r="3" fill="#1f2933"/>
+  <circle cx="400" cy="84" r="18" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="400" cy="84" r="3" fill="#1f2933"/>
+  <line x1="160" y1="66" x2="400" y2="66" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="160" y1="102" x2="400" y2="102" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="418" y1="84" x2="418" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="388" y="150" width="60" height="60" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="304" y="165.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{paino}$</div></foreignObject>
+  <rect x="388" y="250" width="60" height="60" rx="3" fill="none" stroke="#6b7480" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="452" y1="150" x2="500" y2="150" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="452" y1="250" x2="500" y2="250" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="488" y1="200" x2="488" y2="163" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M488,150 L494.5,164 L481.5,164 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="488" y1="200" x2="488" y2="237" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M488,250 L481.5,236 L494.5,236 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="500" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$h$</div></foreignObject>
+  <foreignObject x="81" y="289.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vesi lämpenee}$</div></foreignObject>
 </svg>
 
 Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasvaa, jousi venyy ja tallentaa energiaa, ja kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Portaat ylös kävellen ja juosten teet saman työn, mutta juosten teho on suurempi. Kiukaan 6 kW:n teho tarkoittaa, että se muuttaa sähköenergiaa lämmöksi 6000 joulea joka sekunti.
@@ -57,75 +71,137 @@ Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan t
 ```latex
 W = F s
 ```
-missä W on työ (J), F voiman suuruus (N) ja s kappaleen kulkema matka (m). Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla: 1 J = 1 N·m.
+missä $W$ on työ (J), $F$ voiman suuruus (N) ja $s$ kappaleen kulkema matka (m). Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla: $1\,\text{J} = 1\,\text{N} \cdot \text{m}$.
 
-Jos voima muuttuu matkan aikana, työ on (s,F)-kuvaajassa voimakäyrän ja s-akselin väliin jäävä pinta-ala. Vakiovoimalla pinta-ala on suorakulmio, jonka ala on F · s, joten sama laskusääntö toimii molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea jakamalla se suorakulmioihin, kolmioihin ja puolisuunnikkaisiin.
+Jos voima muuttuu matkan aikana, työ on $(s,F)$-kuvaajassa voimakäyrän ja $s$-akselin väliin jäävä pinta-ala. Vakiovoimalla pinta-ala on suorakulmio, jonka ala on $F \cdot s$, joten sama laskusääntö toimii molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea jakamalla se suorakulmioihin, kolmioihin ja puolisuunnikkaisiin.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti ja pysyy sitten vakiona; työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <rect x="50" y="100" width="180" height="120" fill="#ffc078" fill-opacity="0.5"/>
-  <line x1="50" y1="220" x2="266" y2="220" stroke="#1f2933" stroke-width="2"/>
-  <polygon points="280,220 262,212 262,228" fill="#1f2933"/>
-  <line x1="50" y1="220" x2="50" y2="54" stroke="#1f2933" stroke-width="2"/>
-  <polygon points="50,40 42,58 58,58" fill="#1f2933"/>
-  <line x1="50" y1="100" x2="230" y2="100" stroke="#e8590c" stroke-width="4"/>
-  <line x1="230" y1="100" x2="230" y2="220" stroke="#6b7480" stroke-dasharray="6 6"/>
-  <text x="66" y="50" fill="#1f2933">F</text>
-  <text x="272" y="254" text-anchor="middle" fill="#1f2933">s</text>
-  <text x="140" y="170" text-anchor="middle" fill="#1f2933" font-weight="bold">F · s</text>
-  <text x="150" y="290" text-anchor="middle" fill="#1f2933">vakiovoima</text>
-  <polygon points="340,220 420,100 420,220" fill="#e8590c" fill-opacity="0.45"/>
-  <rect x="420" y="100" width="140" height="120" fill="#ffc078" fill-opacity="0.5"/>
-  <line x1="340" y1="220" x2="576" y2="220" stroke="#1f2933" stroke-width="2"/>
-  <polygon points="590,220 572,212 572,228" fill="#1f2933"/>
-  <line x1="340" y1="220" x2="340" y2="54" stroke="#1f2933" stroke-width="2"/>
-  <polygon points="340,40 332,58 348,58" fill="#1f2933"/>
-  <polyline points="340,220 420,100 560,100" fill="none" stroke="#e8590c" stroke-width="4"/>
-  <line x1="420" y1="100" x2="420" y2="220" stroke="#6b7480" stroke-dasharray="6 6"/>
-  <line x1="560" y1="100" x2="560" y2="220" stroke="#6b7480" stroke-dasharray="6 6"/>
-  <text x="356" y="50" fill="#1f2933">F</text>
-  <text x="582" y="254" text-anchor="middle" fill="#1f2933">s</text>
-  <text x="398" y="200" text-anchor="middle" fill="#1f2933" font-weight="bold">A₁</text>
-  <text x="490" y="170" text-anchor="middle" fill="#1f2933" font-weight="bold">A₂</text>
-  <text x="460" y="290" text-anchor="middle" fill="#1f2933">muuttuva voima</text>
+<svg data-fig="work-graphs" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti ja pysyy sitten vakiona; työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂." style="max-width:100%;font-size:24px">
+  <line x1="59" y1="240" x2="244" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M256,240 L243,246 L243,234 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="60" y1="241" x2="60" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M60,54 L66,67 L54,67 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="262" y="225.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="50" y="23.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <polygon points="60,240 60,144 196,144 196,240" fill="#ffc078" fill-opacity="0.55"/>
+  <line x1="196" y1="144" x2="196" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="60" y1="144" x2="196" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="60,144 196,144" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="28" y="129.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
+  <foreignObject x="186" y="249.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="93" y="177.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,s$</div></foreignObject>
+  <foreignObject x="61.5" y="291.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vakiovoima}$</div></foreignObject>
+  <line x1="349" y1="240" x2="534" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M546,240 L533,246 L533,234 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="350" y1="241" x2="350" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M350,54 L356,67 L344,67 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="552" y="225.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="340" y="23.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <polygon points="350,240 418,144 418,240" fill="#e8590c" fill-opacity="0.4"/>
+  <polygon points="418,240 418,144 503,144 503,240" fill="#ffc078" fill-opacity="0.55"/>
+  <line x1="503" y1="144" x2="503" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="350" y1="144" x2="503" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="418,144 418,240" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="350,240 418,144 503,144" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="318" y="129.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
+  <foreignObject x="493" y="249.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="384.5" y="200" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_1$</div></foreignObject>
+  <foreignObject x="444" y="177.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_2$</div></foreignObject>
+  <foreignObject x="341.5" y="291.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuttuva voima}$</div></foreignObject>
 </svg>
 
-Kun nostat kappaleen tasaisella nopeudella ylös, nostovoima on yhtä suuri kuin kappaleen paino G = mg (edellinen oppitunti). Nostotyö korkeudelle h on siis:
+Kun nostat kappaleen tasaisella nopeudella ylös, nostovoima on yhtä suuri kuin kappaleen paino $G = mg$ (luku *Voima vuorovaikutuksen mittana ja paino*). Nostotyö korkeudelle $h$ on siis:
 ```latex
 W = G h = m g h
 ```
-missä G on paino (N), m massa (kg), g = 9,81 m/s² ja h nostokorkeus (m). Nostetun kappaleen energia kasvaa täsmälleen nostotyön verran.
+missä $G$ on paino (N), $m$ massa (kg), $g = 9{,}81\,\text{m/s}^2$ ja $h$ nostokorkeus (m). Nostetun kappaleen energia kasvaa täsmälleen nostotyön verran.
 
-Teho on työ jaettuna siihen kuluneella ajalla. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, teho saadaan myös voiman ja nopeuden tulona, koska s/t = v:
+<svg data-fig="lift-work" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva nostotyöstä, ei mittakaavassa. Laatikko nostetaan tasaisella nopeudella maasta korkeudelle h. Nostovoima F osoittaa ylös ja laatikon paino G alas, ja nuolet ovat yhtä pitkät, F = G. Nostotyö on W = F h = G h." style="max-width:100%;font-size:24px">
+  <defs><pattern id="fy32-ground" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#6b7480" stroke-width="1.5"/></pattern></defs>
+  <rect x="30" y="292" width="300" height="12" fill="url(#fy32-ground)"/>
+  <line x1="30" y1="292" x2="330" y2="292" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="140" y="232" width="80" height="60" rx="3" fill="none" stroke="#6b7480" stroke-width="2" stroke-dasharray="6 5"/>
+  <rect x="140" y="92" width="80" height="60" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="150" y="102" width="60" height="40" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="150" y1="102" x2="210" y2="142" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="210" y1="102" x2="150" y2="142" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="180" y1="92" x2="180" y2="55" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M180,34 L190,56 L170,56 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="196" y="39.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="180" y1="152" x2="180" y2="189" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M180,210 L170,188 L190,188 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="196" y="175.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$G$</div></foreignObject>
+  <line x1="90" y1="262" x2="90" y2="143" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M90,126 L98,144 L82,144 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="8" y="181.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{liike}$</div></foreignObject>
+  <line x1="224" y1="152" x2="290" y2="152" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="224" y1="292" x2="290" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="276" y1="222" x2="276" y2="165" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M276,152 L282.5,166 L269.5,166 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="276" y1="222" x2="276" y2="279" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M276,292 L269.5,278 L282.5,278 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="290" y="207.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$h$</div></foreignObject>
+  <foreignObject x="372" y="65.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F = G$</div></foreignObject>
+  <foreignObject x="372" y="135.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = F\,h$</div></foreignObject>
+  <foreignObject x="372" y="185.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = G\,h$</div></foreignObject>
+  <foreignObject x="372" y="235.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = m\,g\,h$</div></foreignObject>
+</svg>
+
+Teho on työ jaettuna siihen kuluneella ajalla. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, teho saadaan myös voiman ja nopeuden tulona, koska $s/t = v$:
 ```latex
 P = \frac{W}{t} = F v
 ```
-missä P on teho (W), t aika (s) ja v nopeus (m/s). Yksi watti on yksi joule sekunnissa: 1 W = 1 J/s.
+missä $P$ on teho (W), $t$ aika (s) ja $v$ nopeus (m/s). Yksi watti on yksi joule sekunnissa: $1\,\text{W} = 1\,\text{J/s}$.
 
 ## Esimerkki
 Jousta venytetään 20 cm. Venyttävä voima kasvaa tasaisesti nollasta 40 newtoniin, kuten kuvaaja näyttää. Kuinka suuren työn venyttävä voima tekee?
 
-<svg viewBox="0 0 600 300" role="img" aria-label="(s,F)-kuvaaja mittakaavassa: voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä; kolmion pinta-ala on työ" style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <polygon points="80,250 480,250 480,50" fill="#ffc078" fill-opacity="0.5"/>
-  <line x1="80" y1="250" x2="560" y2="250" stroke="#1f2933" stroke-width="2"/>
-  <line x1="80" y1="250" x2="80" y2="30" stroke="#1f2933" stroke-width="2"/>
-  <line x1="80" y1="250" x2="480" y2="50" stroke="#e8590c" stroke-width="3"/>
-  <line x1="480" y1="50" x2="480" y2="250" stroke="#6b7480" stroke-dasharray="6 6"/>
-  <line x1="80" y1="50" x2="480" y2="50" stroke="#6b7480" stroke-dasharray="6 6"/>
-  <text x="560" y="228" text-anchor="end" fill="#1f2933">s (m)</text>
-  <text x="92" y="28" fill="#1f2933">F (N)</text>
-  <text x="480" y="282" text-anchor="middle" fill="#1f2933">0,20</text>
-  <text x="80" y="282" text-anchor="middle" fill="#1f2933">0</text>
-  <text x="68" y="58" text-anchor="end" fill="#1f2933">40</text>
-  <text x="330" y="212" text-anchor="middle" fill="#1f2933">W = pinta-ala</text>
+<svg data-fig="spring-work" viewBox="0 0 600 320" role="img" aria-label="(s,F)-kuvaaja mittakaavassa: voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä; kolmion pinta-ala on työ." style="max-width:100%;font-size:24px">
+  <line x1="167.5" y1="270" x2="167.5" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="243" y1="270" x2="243" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="319" y1="270" x2="319" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="394.5" y1="270" x2="394.5" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="227" x2="470" y2="227" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="184.5" x2="470" y2="184.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="141.5" x2="470" y2="141.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="99" x2="470" y2="99" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="91" y1="270" x2="484" y2="270" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,270 L483,276 L483,264 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="92" y1="271" x2="92" y2="42" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M92,30 L98,43 L86,43 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="167.5" y1="270" x2="167.5" y2="277" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="138.5" y="279.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}05$</div></foreignObject>
+  <line x1="243" y1="270" x2="243" y2="277" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="214" y="279.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}10$</div></foreignObject>
+  <line x1="319" y1="270" x2="319" y2="277" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="290" y="279.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}15$</div></foreignObject>
+  <line x1="394.5" y1="270" x2="394.5" y2="277" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="365.5" y="279.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}20$</div></foreignObject>
+  <line x1="85" y1="227" x2="92" y2="227" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="47" y="212.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10$</div></foreignObject>
+  <line x1="85" y1="184.5" x2="92" y2="184.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="47" y="170" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$20$</div></foreignObject>
+  <line x1="85" y1="141.5" x2="92" y2="141.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="47" y="127" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$30$</div></foreignObject>
+  <line x1="85" y1="99" x2="92" y2="99" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="47" y="84.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$40$</div></foreignObject>
+  <foreignObject x="62" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="255.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s\ (\text{m})$</div></foreignObject>
+  <foreignObject x="82" y="-0.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F\ (\text{N})$</div></foreignObject>
+  <polygon points="92,270 394.5,99 394.5,270" fill="#ffc078" fill-opacity="0.6"/>
+  <line x1="394.5" y1="99" x2="394.5" y2="270" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="92" y1="99" x2="394.5" y2="99" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="92,270 394.5,99" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="394.5" cy="99" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="231" y="225.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = \text{pinta-ala}$</div></foreignObject>
 </svg>
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Matka on $s = 20\,\text{cm} = 0{,}20\,\text{m}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään venyttävän voiman tekemää työtä W.
+**Tunnetut ja kysytty.** Matka on $s = 20\,\text{cm} = 0{,}20\,\text{m}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään venyttävän voiman tekemää työtä $W$.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Voima ei ole vakio, joten kaava W = Fs ei käy suoraan. Työ on (s,F)-kuvaajan kolmion pinta-ala $A_\text{kolmio}$, joka on puolet kannan s ja korkeuden $F_\text{max}$ tulosta:
+**Kaava ratkaistuna.** Voima ei ole vakio, joten kaava $W = Fs$ ei käy suoraan. Työ on $(s,F)$-kuvaajan kolmion pinta-ala $A_\text{kolmio}$, joka on puolet kannan $s$ ja korkeuden $F_\text{max}$ tulosta:
 ```latex
 \begin{aligned}
 W &= A_\text{kolmio} \\
@@ -165,7 +241,7 @@ Jos laskisit $40\,\text{N} \cdot 0{,}20\,\text{m} = 8{,}0\,\text{J}$, tulos olis
 Työ ei ole sama asia kuin ponnistelu: väsyminen ei tarkoita, että olisit tehnyt fysiikan tarkoittamaa työtä. Toinen yleinen virhe on sotkea työ ja teho: suuri teho ei tarkoita suurta työtä, vaan nopeasti tehtyä työtä.
 
 ## Tiivistelmä
-- Liikkeen suuntainen vakiovoima tekee työn $W = F s$. Muuttuvalla voimalla työ on (s,F)-kuvaajan pinta-ala.
+- Liikkeen suuntainen vakiovoima tekee työn $W = F s$. Muuttuvalla voimalla työ on $(s,F)$-kuvaajan pinta-ala.
 - Liikettä vastaan kohtisuora voima ei tee työtä. Siksi vaakasuora kantaminen tasaisella vauhdilla ei ole kantajan voiman tekemää työtä.
 - Työ siirtää energiaa: se voi nostaa kappaleen energiaa ($W = m g h$), venyttää jousta tai muuttua kitkassa lämmöksi. Joulen koe yhdistää työn ja lämmön.
-- Teho on työ aikayksikössä: $P = W/t = F v$. Yksiköt: 1 J = 1 N·m ja 1 W = 1 J/s.
+- Teho on työ aikayksikössä: $P = W/t = F v$. Yksiköt: $1\,\text{J} = 1\,\text{N} \cdot \text{m}$ ja $1\,\text{W} = 1\,\text{J/s}$.

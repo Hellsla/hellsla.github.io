@@ -1,95 +1,95 @@
 ## fy3-12-L1-01
-**Annettu:** A = 45 m², U = 0,24 W/(m²·K), T_sisä = 22 °C, T_ulko = −18 °C
-**Kysytty:** yläpohjan läpi johtuva lämpöteho P
-**Kaava:** P = UAΔT = UA(T_sisä − T_ulko)
-**Sijoitus:** ΔT = 22 °C − (−18 °C) = 40 K. P = 0,24 W/(m²·K) · 45 m² · 40 K = 432 W
-**Vastaus:** 430 W
-**Järkevyys:** Yksiköt: W/(m²·K) · m² · K = W. Pieni sähköpatteri korvaa tehon helposti, mutta seinät, ikkunat ja lattia lisäävät mökin lämmöntarvetta vielä.
+**Annettu:** $A = 45\,\text{m}^2$, $U = 0{,}24\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $T_\text{sisä} = 22\,{}^\circ\text{C}$, $T_\text{ulko} = -18\,{}^\circ\text{C}$
+**Kysytty:** yläpohjan läpi johtuva lämpöteho $P$
+**Kaava:** $P = UA\Delta T = UA(T_\text{sisä} - T_\text{ulko})$
+**Sijoitus:** $\Delta T = 22\,{}^\circ\text{C} - (-18\,{}^\circ\text{C}) = 40\,\text{K}$. $P = 0{,}24\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 45\,\text{m}^2 \cdot 40\,\text{K} = 432\,\text{W}$
+**Vastaus:** $430\,\text{W}$
+**Järkevyys:** Yksiköt: $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot \text{m}^2 \cdot \text{K} = \text{W}$. Pieni sähköpatteri korvaa tehon helposti, mutta seinät, ikkunat ja lattia lisäävät mökin lämmöntarvetta vielä.
 
 ## fy3-12-L1-02
-**Annettu:** P = 96 W, A = 2,0 m², T_sisä = 21 °C, T_ulko = −19 °C
-**Kysytty:** oven U-arvo U
-**Kaava:** P = UAΔT, joten U = P / (AΔT)
-**Sijoitus:** ΔT = 21 °C − (−19 °C) = 40 K. U = 96 W / (2,0 m² · 40 K) = 1,2 W/(m²·K)
-**Vastaus:** 1,2 W/(m²·K)
-**Järkevyys:** Uuden ulko-oven U-arvo on noin 1,0 W/(m²·K) ja nykyaikaisen seinän 0,17 W/(m²·K), joten vanha ovi eristää selvästi seinää huonommin, kuten voi odottaa.
+**Annettu:** $P = 96\,\text{W}$, $A = 2{,}0\,\text{m}^2$, $T_\text{sisä} = 21\,{}^\circ\text{C}$, $T_\text{ulko} = -19\,{}^\circ\text{C}$
+**Kysytty:** oven U-arvo $U$
+**Kaava:** $P = UA\Delta T$, joten $U = \dfrac{P}{A\Delta T}$
+**Sijoitus:** $\Delta T = 21\,{}^\circ\text{C} - (-19\,{}^\circ\text{C}) = 40\,\text{K}$. $U = \dfrac{96\,\text{W}}{2{,}0\,\text{m}^2 \cdot 40\,\text{K}} = 1{,}2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
+**Vastaus:** $1{,}2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
+**Järkevyys:** Uuden ulko-oven U-arvo on noin $1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ ja nykyaikaisen seinän $0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, joten vanha ovi eristää selvästi seinää huonommin, kuten voi odottaa.
 
 ## fy3-12-L1-03
-**Annettu:** A = 28 m², U = 0,25 W/(m²·K), P = 210 W
-**Kysytty:** lämpötilaero ΔT
-**Kaava:** P = UAΔT, joten ΔT = P / (UA)
-**Sijoitus:** ΔT = 210 W / (0,25 W/(m²·K) · 28 m²) = 210 W / (7,0 W/K) = 30 K
-**Vastaus:** 30 K
-**Järkevyys:** Esimerkiksi sisällä 21 °C ja ulkona −9 °C, mikä on tavallinen talviyö. Yksiköt: W / (W/K) = K.
+**Annettu:** $A = 28\,\text{m}^2$, $U = 0{,}25\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $P = 210\,\text{W}$
+**Kysytty:** lämpötilaero $\Delta T$
+**Kaava:** $P = UA\Delta T$, joten $\Delta T = \dfrac{P}{UA}$
+**Sijoitus:** $\Delta T = \dfrac{210\,\text{W}}{0{,}25\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 28\,\text{m}^2} = \dfrac{210\,\text{W}}{7{,}0\,\text{W/K}} = 30\,\text{K}$
+**Vastaus:** $30\,\text{K}$
+**Järkevyys:** Esimerkiksi sisällä $21\,{}^\circ\text{C}$ ja ulkona $-9\,{}^\circ\text{C}$, mikä on tavallinen talviyö. Yksiköt: $\text{W} / (\text{W/K}) = \text{K}$.
 
 ## fy3-12-L1-04
-**Annettu:** P = 3,5 kW, t = 14 h
-**Kysytty:** energia E kilowattitunteina
-**Kaava:** E = Pt
-**Sijoitus:** E = 3,5 kW · 14 h = 49 kWh
-**Vastaus:** 49 kWh
-**Järkevyys:** Kun teho on kilowatteina ja aika tunteina, energia saadaan suoraan kilowattitunteina. Jouleina se on 49 · 3,6 MJ ≈ 180 MJ. Koko pakkasvuorokauden kulutus olisi noin 84 kWh, mikä sopii sähkölämmitteiselle omakotitalolle.
+**Annettu:** $P = 3{,}5\,\text{kW}$, $t = 14\,\text{h}$
+**Kysytty:** energia $E$ kilowattitunteina
+**Kaava:** $E = Pt$
+**Sijoitus:** $E = 3{,}5\,\text{kW} \cdot 14\,\text{h} = 49\,\text{kWh}$
+**Vastaus:** $49\,\text{kWh}$
+**Järkevyys:** Kun teho on kilowatteina ja aika tunteina, energia saadaan suoraan kilowattitunteina. Jouleina se on $49 \cdot 3{,}6\,\text{MJ} \approx 180\,\text{MJ}$. Koko pakkasvuorokauden kulutus olisi noin $84\,\text{kWh}$, mikä sopii sähkölämmitteiselle omakotitalolle.
 
 ## fy3-12-L1-05
-**Annettu:** P_tulo = 340 W/m², heijastuva osuus r = 30 % = 0,30
-**Kysytty:** avaruuteen säteilty teho neliömetriä kohti P_säteily
-**Kaava:** Imeytyvä teho on P_im = (1 − r)P_tulo, ja tasapainossa lähtevä teho on yhtä suuri, joten P_säteily = (1 − r)P_tulo
-**Sijoitus:** P_säteily = (1 − 0,30) · 340 W/m² = 238 W/m²
-**Vastaus:** 240 W/m²
-**Järkevyys:** Heijastuu 0,30 · 340 W/m² = 102 W/m², ja 102 W/m² + 238 W/m² = 340 W/m², joten kaikki tuleva teho on mukana. Jos maapallo säteilisi vähemmän, se lämpenisi.
+**Annettu:** $P_\text{tulo} = 340\,\text{W/m}^2$, heijastuva osuus $r = 30\,\% = 0{,}30$
+**Kysytty:** avaruuteen säteilty teho neliömetriä kohti $P_\text{säteily}$
+**Kaava:** Imeytyvä teho on $P_\text{im} = (1 - r)P_\text{tulo}$, ja tasapainossa lähtevä teho on yhtä suuri, joten $P_\text{säteily} = (1 - r)P_\text{tulo}$
+**Sijoitus:** $P_\text{säteily} = (1 - 0{,}30) \cdot 340\,\text{W/m}^2 = 238\,\text{W/m}^2$
+**Vastaus:** $240\,\text{W/m}^2$
+**Järkevyys:** Heijastuu $0{,}30 \cdot 340\,\text{W/m}^2 = 102\,\text{W/m}^2$, ja $102\,\text{W/m}^2 + 238\,\text{W/m}^2 = 340\,\text{W/m}^2$, joten kaikki tuleva teho on mukana. Jos maapallo säteilisi vähemmän, se lämpenisi.
 
 ## fy3-12-L2-01
-**Annettu:** A_s = 70 m², U_s = 0,50 W/(m²·K), A_y = 50 m², U_y = 0,30 W/(m²·K), P = 2,0 kW = 2000 W, T_sisä = 20 °C
-**Kysytty:** alin ulkolämpötila T_ulko
-**Kaava:** Rinnakkaisten osien häviö on yhtä suuri kuin patterien teho: P = (U_s A_s + U_y A_y)(T_sisä − T_ulko), joten T_ulko = T_sisä − P / (U_s A_s + U_y A_y)
-**Sijoitus:** U_s A_s + U_y A_y = 0,50 W/(m²·K) · 70 m² + 0,30 W/(m²·K) · 50 m² = 50 W/K. T_ulko = 20 °C − 2000 W / (50 W/K) = 20 °C − 40 K = −20 °C
-**Vastaus:** −20 °C
-**Järkevyys:** Kylmemmällä säällä häviö ylittää 2,0 kW, ja mökki jäähtyy, kunnes tasapaino asettuu alempaan sisälämpötilaan.
+**Annettu:** $A_\text{s} = 70\,\text{m}^2$, $U_\text{s} = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $A_\text{y} = 50\,\text{m}^2$, $U_\text{y} = 0{,}30\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $P = 2{,}0\,\text{kW} = 2000\,\text{W}$, $T_\text{sisä} = 20\,{}^\circ\text{C}$
+**Kysytty:** alin ulkolämpötila $T_\text{ulko}$
+**Kaava:** Rinnakkaisten osien häviö on yhtä suuri kuin patterien teho: $P = (U_\text{s} A_\text{s} + U_\text{y} A_\text{y})(T_\text{sisä} - T_\text{ulko})$, joten $T_\text{ulko} = T_\text{sisä} - \dfrac{P}{U_\text{s} A_\text{s} + U_\text{y} A_\text{y}}$
+**Sijoitus:** $U_\text{s} A_\text{s} + U_\text{y} A_\text{y} = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 70\,\text{m}^2 + 0{,}30\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 50\,\text{m}^2 = 50\,\text{W/K}$. $T_\text{ulko} = 20\,{}^\circ\text{C} - \dfrac{2000\,\text{W}}{50\,\text{W/K}} = 20\,{}^\circ\text{C} - 40\,\text{K} = -20\,{}^\circ\text{C}$
+**Vastaus:** $-20\,{}^\circ\text{C}$
+**Järkevyys:** Kylmemmällä säällä häviö ylittää $2{,}0\,\text{kW}$, ja mökki jäähtyy, kunnes tasapaino asettuu alempaan sisälämpötilaan.
 
 ## fy3-12-L2-02
-**Annettu:** A = 130 m², U = 0,090 W/(m²·K), ΔT = 21 K, t = 230 vrk, hinta h = 0,11 €/kWh
-**Kysytty:** lämmön hinta H lämmityskaudessa
-**Kaava:** E = Pt = UAΔT t ja H = hE, joten H = hUAΔT t
-**Sijoitus:** t = 230 · 24 h = 5520 h. P = 0,090 W/(m²·K) · 130 m² · 21 K = 245,7 W = 0,2457 kW. E = 0,2457 kW · 5520 h ≈ 1356 kWh. H = 0,11 €/kWh · 1356 kWh ≈ 149 €
-**Vastaus:** 150 €
-**Järkevyys:** Hyvin eristetty yläpohja vie suuresta alastaan huolimatta vain noin 250 W. Koko talon kaukolämpö maksaa tyypillisesti yli tuhat euroa vuodessa.
+**Annettu:** $A = 130\,\text{m}^2$, $U = 0{,}090\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $\Delta T = 21\,\text{K}$, $t = 230\,\text{vrk}$, hinta $h = 0{,}11\,\text{€/kWh}$
+**Kysytty:** lämmön hinta $H$ lämmityskaudessa
+**Kaava:** $E = Pt = UA\Delta T\,t$ ja $H = hE$, joten $H = hUA\Delta T\,t$
+**Sijoitus:** $t = 230 \cdot 24\,\text{h} = 5520\,\text{h}$. $P = 0{,}090\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 130\,\text{m}^2 \cdot 21\,\text{K} = 245{,}7\,\text{W} = 0{,}2457\,\text{kW}$. $E = 0{,}2457\,\text{kW} \cdot 5520\,\text{h} \approx 1356\,\text{kWh}$. $H = 0{,}11\,\text{€/kWh} \cdot 1356\,\text{kWh} \approx 149\,\text{€}$
+**Vastaus:** $150\,\text{€}$
+**Järkevyys:** Hyvin eristetty yläpohja vie suuresta alastaan huolimatta vain noin $250\,\text{W}$. Koko talon kaukolämpö maksaa tyypillisesti yli tuhat euroa vuodessa.
 
 ## fy3-12-L2-03
-**Annettu:** U_v = 2,8 W/(m²·K), U_u = 0,80 W/(m²·K), A = 14 m², T_sisä = 21 °C, T_ulko = −24 °C, t = 7 vrk
-**Kysytty:** säästetty energia E
-**Kaava:** ΔP = U_v AΔT − U_u AΔT, joten E = ΔP t = (U_v − U_u)AΔT t
-**Sijoitus:** ΔT = 21 °C − (−24 °C) = 45 K, t = 7 · 24 h = 168 h. ΔP = (2,8 − 0,80) W/(m²·K) · 14 m² · 45 K = 1260 W = 1,26 kW. E = 1,26 kW · 168 h ≈ 212 kWh
-**Vastaus:** 210 kWh
-**Järkevyys:** Vanhoista ikkunoista karkasi 1,76 kW, uusista vain 0,50 kW. Säästö on suurin pakkasella, kun ΔT on suuri.
+**Annettu:** $U_\text{v} = 2{,}8\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $U_\text{u} = 0{,}80\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $A = 14\,\text{m}^2$, $T_\text{sisä} = 21\,{}^\circ\text{C}$, $T_\text{ulko} = -24\,{}^\circ\text{C}$, $t = 7\,\text{vrk}$
+**Kysytty:** säästetty energia $E$
+**Kaava:** $\Delta P = U_\text{v} A\Delta T - U_\text{u} A\Delta T$, joten $E = \Delta P\,t = (U_\text{v} - U_\text{u})A\Delta T\,t$
+**Sijoitus:** $\Delta T = 21\,{}^\circ\text{C} - (-24\,{}^\circ\text{C}) = 45\,\text{K}$, $t = 7 \cdot 24\,\text{h} = 168\,\text{h}$. $\Delta P = (2{,}8 - 0{,}80)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 14\,\text{m}^2 \cdot 45\,\text{K} = 1260\,\text{W} = 1{,}26\,\text{kW}$. $E = 1{,}26\,\text{kW} \cdot 168\,\text{h} \approx 212\,\text{kWh}$
+**Vastaus:** $210\,\text{kWh}$
+**Järkevyys:** Vanhoista ikkunoista karkasi $1{,}76\,\text{kW}$, uusista vain $0{,}50\,\text{kW}$. Säästö on suurin pakkasella, kun $\Delta T$ on suuri.
 
 ## fy3-12-L2-04
-**Annettu:** P_tulo = 340 W/m², r₁ = 30 % = 0,30, r₂ = 29 % = 0,29
-**Kysytty:** imeytyvän tehon kasvu neliömetriä kohti ΔP_im
-**Kaava:** P_im = (1 − r)P_tulo, joten ΔP_im = (1 − r₂)P_tulo − (1 − r₁)P_tulo = (r₁ − r₂)P_tulo
-**Sijoitus:** ΔP_im = (0,30 − 0,29) · 340 W/m² = 3,4 W/m²
-**Vastaus:** 3,4 W/m², yli kolminkertainen nykyiseen 1,0 W/m²:n epätasapainoon verrattuna.
-**Järkevyys:** Imeytyvä teho kasvaa 238 W/m²:stä 241,4 W/m²:iin. Pieni muutos heijastuvassa osuudessa on suuri verrattuna epätasapainoon. Lämpeneminen sulattaa jäätä, mikä lisää imeytymistä ja lämpenemistä entisestään.
+**Annettu:** $P_\text{tulo} = 340\,\text{W/m}^2$, $r_1 = 30\,\% = 0{,}30$, $r_2 = 29\,\% = 0{,}29$
+**Kysytty:** imeytyvän tehon kasvu neliömetriä kohti $\Delta P_\text{im}$
+**Kaava:** $P_\text{im} = (1 - r)P_\text{tulo}$, joten $\Delta P_\text{im} = (1 - r_2)P_\text{tulo} - (1 - r_1)P_\text{tulo} = (r_1 - r_2)P_\text{tulo}$
+**Sijoitus:** $\Delta P_\text{im} = (0{,}30 - 0{,}29) \cdot 340\,\text{W/m}^2 = 3{,}4\,\text{W/m}^2$
+**Vastaus:** $3{,}4\,\text{W/m}^2$, yli kolminkertainen nykyiseen $1{,}0\,\text{W/m}^2$:n epätasapainoon verrattuna.
+**Järkevyys:** Imeytyvä teho kasvaa $238\,\text{W/m}^2$:stä $241{,}4\,\text{W/m}^2$:iin. Pieni muutos heijastuvassa osuudessa on suuri verrattuna epätasapainoon. Lämpeneminen sulattaa jäätä, mikä lisää imeytymistä ja lämpenemistä entisestään.
 
 ## fy3-12-L3-01
-**Annettu:** m = 0,60 kg, c = 4190 J/(kg·K), P = 1,4 W, t = 10 h
-**Kysytty:** jäähtyminen ΔT
-**Kaava:** Kahvin luovuttama lämpö on karannut energia: cmΔT = Pt, joten ΔT = Pt / (cm)
-**Sijoitus:** t = 10 · 3600 s = 36 000 s. ΔT = 1,4 W · 36 000 s / (4190 J/(kg·K) · 0,60 kg) = 50 400 J / (2514 J/K) ≈ 20,0 K
-**Vastaus:** 20 K. Tyhjiössä ei ole hiukkasia, joten lämpö ei johdu eikä kulkeudu konvektiolla seinästä toiseen. Kiiltävät pinnat heijastavat lämpösäteilyn takaisin. Lämpöä karkaa pääosin johtumalla pullon kaulan ja korkin kautta.
-**Järkevyys:** Aamulla 90 °C:n kahvi on illalla vielä noin 70 °C:n lämpöistä, kuten hyvässä termospullossa.
+**Annettu:** $m = 0{,}60\,\text{kg}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $P = 1{,}4\,\text{W}$, $t = 10\,\text{h}$
+**Kysytty:** jäähtyminen $\Delta T$
+**Kaava:** Kahvin luovuttama lämpö on karannut energia: $cm\Delta T = Pt$, joten $\Delta T = \dfrac{Pt}{cm}$
+**Sijoitus:** $t = 10 \cdot 3600\,\text{s} = 36\,000\,\text{s}$. $\Delta T = \dfrac{1{,}4\,\text{W} \cdot 36\,000\,\text{s}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg}} = \dfrac{50\,400\,\text{J}}{2514\,\text{J/K}} \approx 20{,}0\,\text{K}$
+**Vastaus:** $20\,\text{K}$. Tyhjiössä ei ole hiukkasia, joten lämpö ei johdu eikä kulkeudu konvektiolla seinästä toiseen. Kiiltävät pinnat heijastavat lämpösäteilyn takaisin. Lämpöä karkaa pääosin johtumalla pullon kaulan ja korkin kautta.
+**Järkevyys:** Aamulla $90\,{}^\circ\text{C}$:n kahvi on illalla vielä noin $70\,{}^\circ\text{C}$:n lämpöistä, kuten hyvässä termospullossa.
 
 ## fy3-12-L3-02
-**Annettu:** I = 1,0 W/m², A = 5,1 · 10¹⁴ m², f = 0,90, m = 2,6 · 10²⁰ kg, c = 4,0 · 10³ J/(kg·K), t_v = 365 vrk
-**Kysytty:** E_v ja lämpeneminen ΔT kymmenessä vuodessa
-**Kaava:** E_v = IA t_v ja cmΔT = 10 f E_v, joten ΔT = 10 f IA t_v / (cm)
-**Sijoitus:** t_v = 365 · 24 · 3600 s = 3,1536 · 10⁷ s. E_v = 1,0 W/m² · 5,1 · 10¹⁴ m² · 3,1536 · 10⁷ s = 1,608 · 10²² J. ΔT = 9,0 · 1,608 · 10²² J / (1,04 · 10²⁴ J/K) ≈ 0,139 K
-**Vastaus:** 0,14 K; vuodessa kertyy 1,6 · 10²² J.
-**Järkevyys:** Meren suuri lämpökapasiteetti cm hidastaa lämpenemistä, mutta varastoitunut energia pitää sen käynnissä pitkään.
+**Annettu:** $I = 1{,}0\,\text{W/m}^2$, $A = 5{,}1 \cdot 10^{14}\,\text{m}^2$, $f = 0{,}90$, $m = 2{,}6 \cdot 10^{20}\,\text{kg}$, $c = 4{,}0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $t_\text{v} = 365\,\text{vrk}$
+**Kysytty:** $E_\text{v}$ ja lämpeneminen $\Delta T$ kymmenessä vuodessa
+**Kaava:** $E_\text{v} = IAt_\text{v}$ ja $cm\Delta T = 10fE_\text{v}$, joten $\Delta T = \dfrac{10fIAt_\text{v}}{cm}$
+**Sijoitus:** $t_\text{v} = 365 \cdot 24 \cdot 3600\,\text{s} = 3{,}1536 \cdot 10^{7}\,\text{s}$. $E_\text{v} = 1{,}0\,\text{W/m}^2 \cdot 5{,}1 \cdot 10^{14}\,\text{m}^2 \cdot 3{,}1536 \cdot 10^{7}\,\text{s} = 1{,}608 \cdot 10^{22}\,\text{J}$. $\Delta T = \dfrac{9{,}0 \cdot 1{,}608 \cdot 10^{22}\,\text{J}}{1{,}04 \cdot 10^{24}\,\text{J/K}} \approx 0{,}139\,\text{K}$
+**Vastaus:** $0{,}14\,\text{K}$; vuodessa kertyy $1{,}6 \cdot 10^{22}\,\text{J}$.
+**Järkevyys:** Meren suuri lämpökapasiteetti $cm$ hidastaa lämpenemistä, mutta varastoitunut energia pitää sen käynnissä pitkään.
 
 ## fy3-12-L3-03
-**Annettu:** ε = 2,8, U₁ = 0,35 W/(m²·K), U₂ = 0,10 W/(m²·K), A = 100 m², ΔT = 19 K, t = 5800 h
-**Kysytty:** säästetty sähköenergia W
-**Kaava:** Q = (U₁ − U₂)AΔT t ja W = Q/ε, joten W = (U₁ − U₂)AΔT t / ε
-**Sijoitus:** Q = (0,35 − 0,10) W/(m²·K) · 100 m² · 19 K · 5800 h = 2 755 000 Wh = 2755 kWh. W = 2755 kWh / 2,8 ≈ 984 kWh
-**Vastaus:** 980 kWh. Pumppu ei luo lämpöä vaan siirtää sitä sähköllä, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy, joten säästö on silloin suurin.
-**Järkevyys:** Suoralla sähkölämmityksellä säästö olisi koko 2755 kWh; pumppu pienentää säästöä muttei poista sitä.
+**Annettu:** $\varepsilon = 2{,}8$, $U_1 = 0{,}35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $U_2 = 0{,}10\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $A = 100\,\text{m}^2$, $\Delta T = 19\,\text{K}$, $t = 5800\,\text{h}$
+**Kysytty:** säästetty sähköenergia $W$
+**Kaava:** $Q = (U_1 - U_2)A\Delta T\,t$ ja $W = \dfrac{Q}{\varepsilon}$, joten $W = \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon}$
+**Sijoitus:** $Q = (0{,}35 - 0{,}10)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 100\,\text{m}^2 \cdot 19\,\text{K} \cdot 5800\,\text{h} = 2\,755\,000\,\text{Wh} = 2755\,\text{kWh}$. $W = \dfrac{2755\,\text{kWh}}{2{,}8} \approx 984\,\text{kWh}$
+**Vastaus:** $980\,\text{kWh}$. Pumppu ei luo lämpöä vaan siirtää sitä sähköllä, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy, joten säästö on silloin suurin.
+**Järkevyys:** Suoralla sähkölämmityksellä säästö olisi koko $2755\,\text{kWh}$; pumppu pienentää säästöä muttei poista sitä.

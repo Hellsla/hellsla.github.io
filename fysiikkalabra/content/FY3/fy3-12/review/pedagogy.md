@@ -1,8 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 31a86a9af9a46cd0
+CONTENT-HASH: 3c40c07fd4da8095
+
 ## Blocking
+(none)
 
 ## Polish
+- Round-1 polish still open (not re-judged, not blocking): pred-1/pred-2 both have Bea right and the correct option longest; figure "energy-balance" arrow does not split at the atmosphere and lacks "avaruus"; figure "heat-transfer" rod and vacuum unlabelled.
+- Lesson has no simulation, so the NOTES.md §1 point (canvas and DOM readout as plain interface text) does not apply here.
 
 ## Checked
-batch delta review: section name, sim lead and boxes, and figures seen (fig-1, fig-2 and fig-3 at 390): colour with a label or arrow style beside it (fy3-5 fig 2 uses solid and dashed arrows for in and out; fy3-12 fig 2 and 3 are labelled), text legible, nothing clipped.
+- Diff only touches symbols and numbers as maths: ΔT in the "Kun tasapaino rikkoutuu" text and table header, P = UAΔT and units in the exit-ticket answer, powers of ten and J/(kg·K) in L3-02. Values unchanged (5,1·10^14 m², 2,6·10^20 kg, 4,0·10^3 J/(kg·K); answer 0,139 K).
+- LaTeX syntax is sound (`5{,}1`, `\tfrac{\text{J}}{\text{kg}\cdot\text{K}}`); decimal commas kept; checks (lint, latex, build, inquiry 41/41, layout 360) pass.
+- No plain-text ΔT or unicode powers of ten remain in the lesson's JSON or lesson.md.
+- Learning path, staging, worked example, exercise levels and exit ticket are unchanged since the round-1 PASS.
+- Not seen: 768 and 1280 px captures of the figures and the maths table header (only the 1280 top capture exists).

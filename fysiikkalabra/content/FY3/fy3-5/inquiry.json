@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpö ja työ ovat kaksi tapaa siirtää energiaa systeemiin tai siitä pois, ja niiden summa on systeemin sisäenergian muutos: $\\Delta U = Q + W$, termodynamiikan ensimmäinen pääsääntö. Lämpö on energian siirtymistä, sisäenergia systeemin ominaisuus.",
   "prior": [
-    "Työ $W = Fs$ siirtää energiaa, ja Joulen kokeessa työ lämmitti vettä (fy3-2)",
-    "Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (fy3-3)"
+    "Työ $W = Fs$ siirtää energiaa, ja Joulen kokeessa työ lämmitti vettä (luku *Työ ja energia*)",
+    "Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
   ],
   "activities": [
     {
@@ -18,7 +18,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmalta tunnilta",
-      "prompt": "Oppitunnilla fy3-3 kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
+      "prompt": "Luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila* kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
       "choices": [
         {
           "text": "Hiukkaset laajenevat ja vievät enemmän tilaa.",
@@ -81,11 +81,11 @@
       "choices": [
         {
           "text": "Männän nopeus itse: nopea liike kuumentaa kaasua, vaikka työ olisi sama.",
-          "feedback": "Mallin lukemissa nopea työntö lämmitti enemmän (ΔT noin 132 K, hitaalla 114 K), mutta myös työ oli suurempi: 47,2 J ja 40,8 J. Kun jaat ΔT:n työllä, saat kummallakin noin 2,8 K/J. Nopeus vaikuttaa vain työn kautta: lämpötila nousi täsmälleen sen verran kuin työtä tehtiin."
+          "feedback": "Mallin lukemissa nopea työntö lämmitti enemmän ($\\Delta T$ noin 132 K, hitaalla 114 K), mutta myös työ oli suurempi: 47,2 J ja 40,8 J. Kun jaat $\\Delta T$:n työllä, saat kummallakin noin 2,8 K/J. Nopeus vaikuttaa vain työn kautta: lämpötila nousi täsmälleen sen verran kuin työtä tehtiin."
         },
         {
           "text": "Työntöjen määrä: hitaassa työnnössä hiukkaset ehtivät osua mäntään useammin, joten kaasu lämpenee enemmän.",
-          "feedback": "Hitaassa työnnössä osumia on enemmän, mutta jokainen osuma kiihdyttää hiukkasta vähemmän. Mallin lukemissa hidas työntö lämmitti vähemmän: ΔT noin 114 K ja $W = +40{,}8\\,\\text{J}$, nopealla 132 K ja $+47{,}2\\,\\text{J}$. Lämpötilan nousu seurasi työtä."
+          "feedback": "Hitaassa työnnössä osumia on enemmän, mutta jokainen osuma kiihdyttää hiukkasta vähemmän. Mallin lukemissa hidas työntö lämmitti vähemmän: $\\Delta T$ noin 114 K ja $W = +40{,}8\\,\\text{J}$, nopealla 132 K ja $+47{,}2\\,\\text{J}$. Lämpötilan nousu seurasi työtä."
         },
         {
           "text": "Pelkkä työntömatka: matka on sama, joten työ ja lämpötilan nousu ovat täsmälleen samat.",
@@ -94,7 +94,7 @@
         {
           "text": "Tehty työ: eristetyssä sylinterissä sisäenergia kasvaa työn verran ($\\Delta U = W$), joten kaasu lämpenee enemmän sillä kerralla, jolla työtä tehdään enemmän.",
           "correct": true,
-          "feedback": "Mallin lukemat tukevat tätä. Hitaalla työnnöllä $W = \\Delta U = +40{,}8\\,\\text{J}$ ja ΔT noin 114 K, nopealla $W = \\Delta U = +47{,}2\\,\\text{J}$ ja ΔT noin 132 K. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä enemmän ja työ kasvaa hieman. Lämpötilan nousu työtä kohden on kummallakin noin 2,8 K/J: nopeus vaikuttaa vain työn kautta."
+          "feedback": "Mallin lukemat tukevat tätä. Hitaalla työnnöllä $W = \\Delta U = +40{,}8\\,\\text{J}$ ja $\\Delta T$ noin 114 K, nopealla $W = \\Delta U = +47{,}2\\,\\text{J}$ ja $\\Delta T$ noin 132 K. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä enemmän ja työ kasvaa hieman. Lämpötilan nousu työtä kohden on kummallakin noin 2,8 K/J: nopeus vaikuttaa vain työn kautta."
         },
         {
           "text": "Ei kumpikaan: lämpötila ei nouse kummallakaan kerralla, koska eristettyyn sylinteriin ei tule lämpöä.",
@@ -107,7 +107,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa on sylinteri, jossa on 40 kaasun hiukkasta, ja mäntä. Kokeile vapaasti, myös männän vetämistä ulos.",
-      "howto": "*Työnnä mäntää* puristaa kaasun tilavuuteen 75 %, ja *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän: se kimpoaa nopeampana. Pylväät näyttävät männän kaasuun tekemän työn W, seinien läpi kaasuun siirtyneen lämpömäärän Q ja sisäenergian muutoksen ΔU.",
+      "howto": "*Työnnä mäntää* puristaa kaasun tilavuuteen 75 %, ja *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän: se kimpoaa nopeampana. Pylväät näyttävät männän kaasuun tekemän työn $W$, seinien läpi kaasuun siirtyneen lämpömäärän $Q$ ja sisäenergian muutoksen $\\Delta U$.",
       "model": "Luvut ovat mallin arvoja: mallin kaasu vastaa lämpökapasiteetiltaan 0,50 g:aa ilmaa."
     },
     {
@@ -115,7 +115,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain männän nopeus muuttuu",
-      "intro": "Testaa ennuste 2. Seinät lukitaan eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt (V = 75 %), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus, paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta ΔU ja työtä W sekä lämpötilan nousua ΔT. Hidas työntö kestää noin 19 s; *Animaatio: nopea* nopeuttaa katselua muuttamatta lukemia.",
+      "intro": "Testaa ennuste 2. Seinät lukitaan eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt ($V = 75\\,\\%$), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus, paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta $\\Delta U$ ja työtä $W$ sekä lämpötilan nousua $\\Delta T$. Hidas työntö kestää noin 19 s; *Animaatio: nopea* nopeuttaa katselua muuttamatta lukemia.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -149,7 +149,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain seinät muuttuvat",
-      "intro": "Testaa ennuste 1. Männän nopeus lukitaan hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*) ja kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi, paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes T on noin 293 K, ja kirjaa vasta sitten. Seuraa samalla pylväitä: ylöspäin osoittava pylväs on kaasuun tullutta energiaa, alaspäin osoittava kaasusta lähtenyttä.",
+      "intro": "Testaa ennuste 1. Männän nopeus lukitaan hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*) ja kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi, paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes $T$ on noin 293 K, ja kirjaa vasta sitten. Seuraa samalla pylväitä: ylöspäin osoittava pylväs on kaasuun tullutta energiaa, alaspäin osoittava kaasusta lähtenyttä.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -190,21 +190,21 @@
         "prompt": "Katso johtavan seinän mittausta ja pylväitä, kun lämpötila on palannut 293 K:iin. Mikä kuvaus sopii pylväisiin?",
         "choices": [
           {
-            "text": "W osoittaa ylöspäin, Q on yhtä pitkä alaspäin, ja ΔU on lähes nolla.",
+            "text": "$W$ osoittaa ylöspäin, $Q$ on yhtä pitkä alaspäin, ja $\\Delta U$ on lähes nolla.",
             "correct": true,
             "feedback": "Oikein. Männän työ toi kaasuun noin 35,1 J, ja yhtä suuri energia lähti lämpönä seinien läpi, joten $Q \\approx -35{,}1\\,\\text{J}$ ja $\\Delta U = Q + W \\approx 0$. Ylöspäin osoittava pylväs on positiivinen eli kaasuun tullut energia, alaspäin osoittava negatiivinen eli kaasusta lähtenyt."
           },
           {
-            "text": "W osoittaa ylöspäin, Q on nolla, ja ΔU on yhtä suuri kuin W.",
-            "feedback": "Näin kävi eristetyssä sylinterissä. Johtavassa sylinterissä Q:n pylväs osoitti alaspäin, noin −35,1 J, koska kuumasta kaasusta siirtyi energiaa seiniin."
+            "text": "$W$ osoittaa ylöspäin, $Q$ on nolla, ja $\\Delta U$ on yhtä suuri kuin $W$.",
+            "feedback": "Näin kävi eristetyssä sylinterissä. Johtavassa sylinterissä $Q$:n pylväs osoitti alaspäin, noin −35,1 J, koska kuumasta kaasusta siirtyi energiaa seiniin."
           },
           {
-            "text": "W ja Q osoittavat molemmat ylöspäin, ja ΔU on niiden summa.",
-            "feedback": "Q:n pylväs osoitti alaspäin. Lämpöä siirtyi kaasusta pois, joten Q on negatiivinen. Siksi summa $\\Delta U = Q + W$ jäi lähes nollaksi."
+            "text": "$W$ ja $Q$ osoittavat molemmat ylöspäin, ja $\\Delta U$ on niiden summa.",
+            "feedback": "$Q$:n pylväs osoitti alaspäin. Lämpöä siirtyi kaasusta pois, joten $Q$ on negatiivinen. Siksi summa $\\Delta U = Q + W$ jäi lähes nollaksi."
           },
           {
             "text": "Kaikki kolme ovat nolla, koska lämpötila ei lopulta muuttunut.",
-            "feedback": "ΔU on lähes nolla, mutta mäntä teki silti työn $W \\approx +35{,}1\\,\\text{J}$. Energia kulki kaasun läpi: se tuli työnä ja lähti lämpönä."
+            "feedback": "$\\Delta U$ on lähes nolla, mutta mäntä teki silti työn $W \\approx +35{,}1\\,\\text{J}$. Energia kulki kaasun läpi: se tuli työnä ja lähti lämpönä."
           }
         ]
       }
@@ -245,8 +245,8 @@
       "prompt": "Sylinterissä olevaan kaasuun siirtyy lämpömäärä 250 J, ja kaasu laajenee tehden mäntään työn 90 J. Opiskelija laskee: $\\Delta U = Q + W = 250\\,\\text{J} + 90\\,\\text{J} = 340\\,\\text{J}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Q:n pitäisi olla negatiivinen, koska kaasu laajenee.",
-          "feedback": "Q kertoo lämmön suunnan, ei liikkeen. Lämpöä siirtyy kaasuun, joten $Q = +250\\,\\text{J}$ on oikein. Virhe on toisessa termissä."
+          "text": "$Q$:n pitäisi olla negatiivinen, koska kaasu laajenee.",
+          "feedback": "$Q$ kertoo lämmön suunnan, ei liikkeen. Lämpöä siirtyy kaasuun, joten $Q = +250\\,\\text{J}$ on oikein. Virhe on toisessa termissä."
         },
         {
           "text": "Kaasu tekee työtä ympäristöön, joten $W = -90\\,\\text{J}$ ja $\\Delta U = 250\\,\\text{J} - 90\\,\\text{J} = 160\\,\\text{J}$.",
@@ -327,7 +327,7 @@
       "unit": "J",
       "tolerance": 0.02,
       "hints": [
-        "Kirjoita kummallekin vaiheelle Q ja W etumerkkeineen: tuleeko energia systeemiin vai lähteekö se pois?",
+        "Kirjoita kummallekin vaiheelle $Q$ ja $W$ etumerkkeineen: tuleeko energia systeemiin vai lähteekö se pois?",
         "Vaiheessa 1 $Q_1 = -30\\,\\text{J}$ ja $W_1 = +80\\,\\text{J}$, vaiheessa 2 $Q_2 = +50\\,\\text{J}$ ja $W_2 = -70\\,\\text{J}$.",
         "$\\Delta U_1 = 50\\,\\text{J}$ ja $\\Delta U_2 = -20\\,\\text{J}$. Laske yhteen."
       ],
@@ -350,7 +350,7 @@
       "prompt": "Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee nopeasti pumpatessa enemmän. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä $\\Delta U = Q + W$.",
       "criteria": [
         "Sanon, että työ siirtää ilmaan energiaa ja kasvattaa sen sisäenergiaa, mikä näkyy lämpötilan nousuna.",
-        "Sanon, että lämpimästä ilmasta siirtyy energiaa lämpönä seinien kautta ympäristöön, joten Q on negatiivinen.",
+        "Sanon, että lämpimästä ilmasta siirtyy energiaa lämpönä seinien kautta ympäristöön, joten $Q$ on negatiivinen.",
         "Selitän, että hitaassa pumppauksessa lämpöä ehtii siirtyä pois enemmän, joten $\\Delta U = Q + W$ jää pienemmäksi.",
         "Erotan lämmön (energian siirtyminen) sisäenergiasta (systeemin energia)."
       ],

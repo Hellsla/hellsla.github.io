@@ -1,7 +1,7 @@
 [
   {
-    "q": "Kuinka paljon 25 m pitkä kupariputki pitenee, kun se lämpenee 10 °C:sta 60 °C:seen (α = 17 · 10⁻⁶ 1/K)?",
-    "a": "ΔL = αL₀ΔT = 17 · 10⁻⁶ 1/K · 25 m · 50 K ≈ 0,021 m eli noin 21 mm."
+    "q": "Kuinka paljon 25 m pitkä kupariputki pitenee, kun se lämpenee 10 °C:sta 60 °C:seen ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$)?",
+    "a": "$\\Delta L = \\alpha L_0 \\Delta T = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 25\\,\\text{m} \\cdot 50\\,\\text{K} \\approx 0{,}021\\,\\text{m}$ eli noin 21 mm."
   },
   {
     "q": "Teräslevyssä on pyöreä reikä. Kun levyä lämmitetään, suureneeko vai pieneneekö reikä?",

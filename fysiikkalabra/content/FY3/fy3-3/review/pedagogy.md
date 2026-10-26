@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 4e7f29e160d08f99
+CONTENT-HASH: 0aaf01ed9efec6be
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json pred-1 (choice "noin 1,4-kertaiseksi") — the option tells the student that mean speed scales by 1,41 before any evidence, and the right answer ("kaksinkertaistuu") is only reachable by knowing kelvins, which the lesson teaches later — reword the option to "Paine kasvaa vähemmän kuin kaksinkertaiseksi" and let the justify box carry the reasoning; the feedback can then reveal 1,41.
-- inquiry.json pred-3 (Aino) — the simulation draws fixed-size dots, so the experiment cannot test whether particles swell; the feedback "Kokeessa hiukkasten koko ei muutu" is a design fact, not evidence — say "mallissa hiukkasten koko on vakio, ja paine kasvaa silti, joten koko ei selitä sitä; todellisuudessakaan kaasun hiukkaset eivät laajene".
-- sim readout at load (sim-390, exp-1-390) — "Paine p ≈ 0" shows until the 1,5 s window fills, while the theory reads 100; a student who reads it at once sees a contradiction — show "mitataan…" or start the window pre-filled.
-- Experiment table at 390 px (exp-1-390-1) — the last column "p teoria" is cut off and needs sideways scrolling; shorten headers ("p mit.", "p teor.") or allow the table to wrap.
-- Workload — three predictions, two experiments, reflection, example, error item, transfer task, 12 exercises, three checks and the exit ticket are near the top of one lesson hour; consider marking level 1 as optional for students who pass the transfer task.
+- sim canvas and DOM readout (sim-390, lab-1280) — "T = 300 K", "V = 1,0 dm³", "Paine p ≈ 106", "Lämpötila T", the thermometer labels and the experiment table's p/v/θ headers stay plain interface text beside maths-rendered T and V in the intro and table; per NOTES.md §1 this awaits the teacher — fix when decided: render the readout symbols as maths.
+- exp-1 capture at 390 px — right after "Aseta alkutila" the readout says "Paine p ≈ 0" (theory 100) until the counter fills; a student may read it as a result — fix: show "–" or "mitataan…" for the first 1,5 s, or add "odota pari sekuntia" under the readout.
+- lesson.md example table at 390 px — the last column (100 °C, 137 kPa) is still cut off, yet step 2 uses it; no scroll cue — fix: shrink the table font at 360 px or add a scroll cue.
+- inquiry.json exp-1/exp-2 "Mittaukset" table — header row mixes italic maths (T, V, θ) with monospace plain text (v (suht.), p mitattu) — fix: use maths for all symbols, e.g. $p$ mitattu.
+- lesson.md under fig 3 — "alaasteikko", "Yläasteikko" — fix: "ala-asteikko", "ylä-asteikko".
 
 ## Checked
-- Learning path: hook, retrieval on pumping, three predictions, sim, two controlled experiments (one variable each, the other locked), theory, reflection; the opening tyre question is answered in the reflection and the slot's goals (state variables, micro-model, kelvin, absolute zero) are covered, nothing more.
-- Experiments can refute predictions: measured pressure emerges from counted wall hits, the theory value is shown beside it; model simplifications (2D, no collisions) are stated in "Mallin oletukset".
-- Figures 1–3 (captures): recognisable, uncluttered; colour is backed by labels and arrow length; the scale figure is to scale; the extrapolation graph marks measured and extrapolated parts differently.
-- Worked example is staged one step per stage (graph, slope, formula, substitution, sanity check) and each step reads on its own.
-- Exercises: level 1 conversions, level 2 interpolation, extrapolation and ratio, level 3 proportionality in kelvins; none repeats the example's numbers; mistake feedback repairs the celsius-ratio misconception; the exit ticket tests the core ideas.
-- Finnish: terms match the glossary ("kelvin", "absoluuttinen nollapiste", "tilanmuuttuja"); case after number and unit and the "ei kelvinastetta" note are correct.
-- Phone (390 px): predictions box, simulation and sliders are legible, the locked slider is dimmed and labelled "(vakio)"; 1280 px lab layout puts the simulation beside the experiments.
-- Content hash unchanged at the end of the review.
+- New speed control (Nopeus) and the two info boxes ("Mallin oletukset", "Laskennan selitys") are closed by default, distinct in content, and the calc box states that speed does not change the measured pressure; the old duplicate box is gone.
+- Activity texts and experiment intros: v, T, V, $\theta$ now maths; Alkutila/Vakiona/Muutetaan line reads correctly at 390 and 1280 px.
+- Added "ja lämpötila pysyy samana" in the micro-model paragraph makes the volume argument correct (collisions more frequent, not harder).
+- siirto solution remark (122 kPa vs 101 kPa outside, lid bulges out) is correct and consistent with the answer.
+- Learning path unchanged: hook, retrieval, three refutable predictions, two single-variable experiments, theory, reflection, staged example, error spotting, transfer, exercises, checks, exit ticket; opening question answered only after commitment.
+- Figures 1–4 unchanged since round 1 (labelled, colour never alone); chapter names, layout at 390 and 1280 px fine (lab view puts experiments beside the sim).
+- Exercises L1–L3 and exit ticket unchanged and sound; solutions in LaTeX.

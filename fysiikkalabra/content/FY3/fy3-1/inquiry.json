@@ -180,7 +180,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Voimamittarin asteikko",
-      "text": "Jousi ei tiedä mitään newtoneista: asteikko tehdään ripustamalla siihen samanlaisia punnuksia. Taulukossa on *esimerkkiarvot* (eivät oikean mittauksen tuloksia) jouselle, jonka punnusten paino on kunkin 1,0 N. Jousta ei venytetä liikaa.\n\n| Punnuksia | Voima F (N) | Venymä (cm) |\n|---|---|---|\n| 0 | 0 | 0,0 |\n| 1 | 1,0 | 1,6 |\n| 2 | 2,0 | 3,2 |\n| 3 | 3,0 | 4,8 |\n| 4 | 4,0 | 6,4 |",
+      "text": "Jousi ei tiedä mitään newtoneista: asteikko tehdään ripustamalla siihen samanlaisia punnuksia. Taulukossa on *esimerkkiarvot* (eivät oikean mittauksen tuloksia) jouselle, jonka punnusten paino on kunkin 1,0 N. Jousta ei venytetä liikaa.\n\n| Punnuksia | Voima $F$ (N) | Venymä (cm) |\n|---|---|---|\n| 0 | 0 | 0,0 |\n| 1 | 1,0 | 1,6 |\n| 2 | 2,0 | 3,2 |\n| 3 | 3,0 | 4,8 |\n| 4 | 4,0 | 6,4 |",
       "question": {
         "type": "choice",
         "prompt": "Samaan jouseen ripustetaan tuntematon kappale, ja jousi venyy 5,6 cm. Kuinka suuri voima jousta venyttää?",
@@ -326,7 +326,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Kuvaaja ja laskeminen",
-      "prompt": "Tuntemattomalla taivaankappaleella mitattiin painoja eri massoille. (m, G)-kuvaaja on origon kautta kulkeva suora, joka kulkee pisteen (50 kg, 440 N) kautta. Mikä on putoamiskiihtyvyys tällä taivaankappaleella? Vastaa yksikössä m/s².",
+      "prompt": "Tuntemattomalla taivaankappaleella mitattiin painoja eri massoille. $(m, G)$-kuvaaja on origon kautta kulkeva suora, joka kulkee pisteen $(50\\,\\text{kg}, 440\\,\\text{N})$ kautta. Mikä on putoamiskiihtyvyys tällä taivaankappaleella? Vastaa yksikössä m/s².",
       "answer": 8.8,
       "unit": "m/s²",
       "tolerance": 0.02,

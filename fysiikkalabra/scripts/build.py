@@ -108,9 +108,11 @@ FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>.*?</table>|<ul>(?:(?!<ul
 
 
 def fig_rows(html):
-    """A figure beside the paragraph, table or list it explains (NOTES.md §3 puts it right after that block): two
-    columns on a wide screen, the figure under the text on a phone (site.css .fig-row)."""
-    return FIG.sub(r'<div class="fig-row"><div class="fig-text">\1</div><div class="fig">\2</div></div>', html)
+    """A figure beside the paragraph, table or list it explains (NOTES.md §3 puts it right after that block). The
+    figure comes first in the row so that on a wide screen it can float beside the text column, level with its
+    paragraph, while the text runs on without gaps; on a phone and in print it shows under the text (site.css
+    .fig-row)."""
+    return FIG.sub(r'<div class="fig-row"><div class="fig">\2</div><div class="fig-text">\1</div></div>', html)
 
 
 def fi(x):

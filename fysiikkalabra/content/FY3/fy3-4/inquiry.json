@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Paine $p = F/A$ kertoo, miten voima jakautuu pinnalle, ja nesteessä paine kasvaa syvyyden mukana suorana $p = p_0 + \\rho g h$, jonka vakiotermi on ilmanpaine ja kulmakerroin $\\rho g$.",
   "prior": [
-    "Paino on voima, $G = mg$, ja $g = 9{,}81\\,\\text{m/s}^2$ (fy3-1)",
-    "Paine on tilanmuuttuja, joka syntyy mikromallissa hiukkasten törmäyksistä seinämään (fy3-3)"
+    "Paino on voima, $G = mg$, ja $g = 9{,}81\\,\\text{m/s}^2$ (luku *Voima vuorovaikutuksen mittana ja paino*)",
+    "Paine on tilanmuuttuja, joka syntyy mikromallissa hiukkasten törmäyksistä seinämään (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
   ],
   "activities": [
     {
@@ -108,16 +108,16 @@
       "choices": [
         {
           "text": "Aino: altaassa, koska siinä on enemmän vettä ja vesi painaa enemmän.",
-          "feedback": "Altaan vesi painaa kokonaisuutena enemmän, mutta paino jakautuu myös tuhat kertaa suuremmalle pohjalle. Paine on voima jaettuna alalla, $p = F/A$. Selitä-vaiheessa vesipatsaan paino jaetaan sen pohjan alalla; katso, mitä alalle käy."
+          "feedback": "Altaan vesi painaa kokonaisuutena enemmän, mutta paino jakautuu myös tuhat kertaa suuremmalle pohjalle. Paine on voima jaettuna alalla, $p = F/A$. Teoriatiivistelmässä vesipatsaan paino jaetaan sen pohjan alalla; katso, mitä alalle käy."
         },
         {
           "text": "Bea: paine on sama, koska jokaisen pohjan kohdan yläpuolella on yhtä korkea vesipatsas.",
           "correct": true,
-          "feedback": "Juuri näin: paine riippuu siitä, kuinka korkea ja kuinka tiheä nestepatsas kohdan yläpuolella on, ei astian leveydestä. Selitä-vaihe johtaa tämän vesipatsaan painosta: pinta-ala supistuu pois."
+          "feedback": "Juuri näin: paine riippuu siitä, kuinka korkea ja kuinka tiheä nestepatsas kohdan yläpuolella on, ei astian leveydestä. Teoriatiivistelmä johtaa tämän vesipatsaan painosta: pinta-ala supistuu pois."
         },
         {
           "text": "Cem: putkessa, koska kapea putki keskittää veden painon pienelle alalle.",
-          "feedback": "Putken vesi painaa vähemmän, ja se jakautuu pienemmälle alalle. Pienempi paino ja pienempi ala kumoavat toisensa täsmälleen, kun vesi on yhtä korkealla. Selitä-vaiheessa näet, miksi pinta-ala supistuu pois."
+          "feedback": "Putken vesi painaa vähemmän, ja se jakautuu pienemmälle alalle. Pienempi paino ja pienempi ala kumoavat toisensa täsmälleen, kun vesi on yhtä korkealla. Teoriatiivistelmässä näet, miksi pinta-ala supistuu pois."
         }
       ]
     },
@@ -126,7 +126,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa painemittari laskeutuu nesteeseen.",
-      "howto": "Säädä syvyyttä ja tiheyttä ja seuraa mittarin lukemaa ja (h, p)-kuvaajaa. Ruutu *Näytä vain ylipaine* jättää kuvaajasta pois ilmanpaineen.",
+      "howto": "Säädä syvyyttä ja tiheyttä ja seuraa mittarin lukemaa ja $(h, p)$-kuvaajaa. Ruutu *Näytä vain ylipaine* jättää kuvaajasta pois ilmanpaineen.",
       "model": "Ilmanpaine pinnalla on kiinteä 101 kPa, ja neste on levossa ja yhtä tiheää kaikkialla (sen kokoonpuristuminen jätetään huomiotta). Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä."
     },
     {
@@ -328,7 +328,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Kuvaaja ja laskeminen",
-      "prompt": "Tuntemattoman nesteen (h, p)-kuvaaja on suora, joka kulkee pisteiden (0 m, 101 kPa) ja (8,0 m, 171 kPa) kautta. Mikä on nesteen tiheys? Vastaa yksikössä kg/m³.",
+      "prompt": "Tuntemattoman nesteen $(h, p)$-kuvaaja on suora, joka kulkee pisteiden (0 m, 101 kPa) ja (8,0 m, 171 kPa) kautta. Mikä on nesteen tiheys? Vastaa yksikössä kg/m³.",
       "answer": 892,
       "unit": "kg/m³",
       "tolerance": 0.02,

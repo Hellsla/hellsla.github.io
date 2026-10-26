@@ -11,3 +11,12 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T10:38Z	fy4-1	FY4	developer	develop	claude-sonnet-5-5	medium	recolour	1	58116	8	2051	43869	12188	19091	4	76	5		0.0598	transcript	17246e3fb5c8
 2026-10-26T10:38Z	fy4-1	FY4	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/12	1	25422	2	600	21897	2923	2987	13	87	46		0.0177	transcript	0b4ed33d855d
 2026-10-26T10:38Z	fy4-1	FY4	orchestrator	orchestrate	claude-opus-5-5		since/12	1	2598378	10	5762	2580768	11838	51336	56	1334	71		0.7261	transcript	54351e3d2510
+2026-10-26T15:41Z	fy4-1	FY4	science-reviewer	review	claude-opus-5-5		full	3	345931	16	3110	321074	21731	49263	8	34	8		0.2351	transcript	d4b6e0fdc4e3
+2026-10-26T15:41Z	fy4-1	FY4	general-purpose	other	claude-sonnet-5-5			3	1418683	36	21361	1327273	70013	97551	18	310	26		0.6542	transcript	4a06a5b54b40
+2026-10-26T15:41Z	fy4-1	FY4	science-reviewer	review	claude-opus-5-5		full	1	866045	20	8998	747146	109881	110491	10	91	12		0.8789	transcript	fdcd87fff9e5
+2026-10-26T15:41Z	fy4-1	FY4	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	453603	12	5568	382350	65673	93227	6	47	16		0.2964	transcript	968b0113b52b
+2026-10-26T15:41Z	fy4-1	FY4	science-reviewer	review	claude-opus-5-5		full	2	1061299	22	7883	965407	87987	115639	11	99	11		0.7908	transcript	b1d5bfeb6fe0
+2026-10-26T15:41Z	fy4-1	FY4	general-purpose	other	claude-sonnet-5-5			3	484845	18	5388	438714	40725	68181	9	265	11		0.2435	transcript	168a04539ac7
+2026-10-26T15:41Z	fy4-1	FY4	pedagogy-reviewer	review	claude-sonnet-5-5		delta	3	186047	8	1560	160849	23630	51018	4	30	5		0.1069	transcript	92531a0592fc
+2026-10-26T15:41Z	fy4-1	FY4	pedagogy-reviewer	review	claude-sonnet-5-5		full	2	351636	10	3350	290303	57973	85540	5	60	8		0.2365	transcript	edd42a29a826
+2026-10-26T15:41Z	fy4-1	FY4	orchestrator	orchestrate	claude-opus-5-5		session/13	3	3444433	35	12268	3359498	72632	20911	226	4581	335		1.3319	transcript	c8c079701657

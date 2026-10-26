@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpötilan muutos muuttaa myös kappaleen kokoa: tällä tunnilla selvität kokeilla, mistä sauvan pituuden muutos riippuu, ja mikromalli selittää, miksi kiinteä aine laajenee lämmetessään.",
   "prior": [
-    "Lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (fy3-3)",
-    "Lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina, $T = \\theta + 273{,}15$ (fy3-3)"
+    "Lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
+    "Lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina, $T = \\theta + 273{,}15$ (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
   ],
   "activities": [
     {
@@ -44,7 +44,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: lämmitetään kuumemmaksi",
-      "prompt": "Teräksisen sauvan pituus on 20 °C:ssa 10 m. Sauva lämmitetään ensin 70 °C:seen ja sitten 120 °C:seen. Miten sauvan pituuden muutos ΔL (verrattuna 20 °C:n pituuteen) on 120 °C:ssa verrattuna 70 °C:seen?",
+      "prompt": "Teräksisen sauvan pituus on 20 °C:ssa 10 m. Sauva lämmitetään ensin 70 °C:seen ja sitten 120 °C:seen. Miten sauvan pituuden muutos $\\Delta L$ (verrattuna 20 °C:n pituuteen) on 120 °C:ssa verrattuna 70 °C:seen?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -62,7 +62,7 @@
         },
         {
           "text": "Alle kaksinkertainen, koska jo lämmenneen teräksen hiukkasvälit eivät enää kasva yhtä helposti.",
-          "feedback": "Mallin arvot näyttävät tasan kaksinkertaistumisen, 6,00 mm → 12,0 mm: jokainen kelvin pidentää sauvaa yhtä paljon. Tällaisilla lämpötilan muutoksilla teräksen α on käytännössä vakio, ja simulaation malli olettaa sen vakioksi."
+          "feedback": "Mallin arvot näyttävät tasan kaksinkertaistumisen, 6,00 mm → 12,0 mm: jokainen kelvin pidentää sauvaa yhtä paljon. Tällaisilla lämpötilan muutoksilla teräksen $\\alpha$ on käytännössä vakio, ja simulaation malli olettaa sen vakioksi."
         },
         {
           "text": "Sama, koska sauva on samaa terästä ja yhtä pitkä.",
@@ -216,7 +216,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Kiinteä aine, neste ja kaasu",
-      "text": "Taulukossa on laskettu, kuinka paljon litra eri aineita laajenee, kun sen lämpötila nousee 10 K. Arvot on laskettu oppitunnin taulukon kertoimista kaavalla $\\Delta V = \\gamma V_0 \\Delta T$ (teräkselle $\\gamma \\approx 3\\alpha$); ne ovat mallin arvoja, eivät mittauksia. Ilman tilavuus on laskettu vakiopaineessa.\n\n| 1,00 l ainetta | ΔV (cm³) |\n|---|---|\n| teräs (kiinteä) | 0,36 |\n| vesi (neste) | 2,1 |\n| etanoli (neste) | 11 |\n| ilma (kaasu) | 34 |",
+      "text": "Taulukossa on laskettu, kuinka paljon litra eri aineita laajenee, kun sen lämpötila nousee 10 K. Arvot on laskettu oppitunnin taulukon kertoimista kaavalla $\\Delta V = \\gamma V_0 \\Delta T$ (teräkselle $\\gamma \\approx 3\\alpha$); ne ovat mallin arvoja, eivät mittauksia. Ilman tilavuus on laskettu vakiopaineessa.\n\n| 1,00 l ainetta | $\\Delta V$ (cm³) |\n|---|---|\n| teräs (kiinteä) | 0,36 |\n| vesi (neste) | 2,1 |\n| etanoli (neste) | 11 |\n| ilma (kaasu) | 34 |",
       "question": {
         "type": "choice",
         "prompt": "Mikä mikromallin piirre selittää parhaiten, miksi kaasu laajenee eniten ja kiinteä aine vähiten?",
@@ -279,7 +279,7 @@
           "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1{,}8\\,\\text{mm}$. Järkevyystarkistus: 28 mm olisi 0,7 % tikkaiden pituudesta, mikä on lämpölaajenemiselle aivan liikaa."
         },
         {
-          "text": "Kerroin α pitää muuntaa yksikköön 1/°C ennen sijoittamista.",
+          "text": "Kerroin $\\alpha$ pitää muuntaa yksikköön 1/°C ennen sijoittamista.",
           "feedback": "Muunnosta ei tarvita: kelvin ja celsiusaste ovat yhtä suuria, joten $1/\\text{K}$ ja $1/{}^\\circ\\text{C}$ ovat sama luku. Virhe on lämpötilan muutoksessa: kaavaan kuuluu $\\Delta T = 20\\,\\text{K}$, ei 303 K."
         },
         {
@@ -288,7 +288,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Tarkista ΔT. Lämpötila nousee 10 °C:sta 30 °C:seen eli 20 K, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos 28 mm on noin viisitoista kertaa liian suuri."
+          "feedback": "Tarkista $\\Delta T$. Lämpötila nousee 10 °C:sta 30 °C:seen eli 20 K, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos 28 mm on noin viisitoista kertaa liian suuri."
         }
       ]
     },
@@ -351,19 +351,19 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Taulukko ja laskeminen",
-      "prompt": "Metallisauvan pituus on 20 °C:ssa 2,00 m. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| T (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| ΔL (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin α. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
+      "prompt": "Metallisauvan pituus on 20 °C:ssa 2,00 m. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin $\\alpha$. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
       "answer": 23,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.02,
       "hints": [
-        "Kuinka paljon ΔL kasvaa, kun lämpötila nousee 40 K? Pysyykö kasvu samana joka välillä?",
+        "Kuinka paljon $\\Delta L$ kasvaa, kun lämpötila nousee 40 K? Pysyykö kasvu samana joka välillä?",
         "Kaavasta $\\Delta L = \\alpha L_0 \\Delta T$ saadaan $\\alpha = \\dfrac{\\Delta L}{L_0 \\Delta T}$. Lämpötilan muutos lasketaan 20 °C:sta, jossa $L_0$ on mitattu.",
         "Esimerkiksi 60 °C:n sarakkeesta: $\\alpha = \\dfrac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}}$."
       ],
       "mistakes": [
         {
           "value": 46,
-          "feedback": "Jaoit pituuden muutoksen vain lämpötilan muutoksella. Kerroin α on *suhteellinen* muutos kelviniä kohti, joten jaa myös alkupituudella $L_0 = 2{,}00\\,\\text{m}$."
+          "feedback": "Jaoit pituuden muutoksen vain lämpötilan muutoksella. Kerroin $\\alpha$ on *suhteellinen* muutos kelviniä kohti, joten jaa myös alkupituudella $L_0 = 2{,}00\\,\\text{m}$."
         },
         {
           "value": 15.3,

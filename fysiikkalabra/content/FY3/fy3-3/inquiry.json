@@ -49,7 +49,7 @@
       "choices": [
         {
           "text": "Paine kasvaa noin 12-kertaiseksi, koska 327 on noin 12 kertaa 27.",
-          "feedback": "Mallin teoria-arvo kasvaa 100:sta 200:aan, eli paine kaksinkertaistuu. Celsiusasteikon nollakohta on vain veden jäätymispiste, eivätkä hiukkaset ole siinä paikallaan. Suhde lasketaan kelvineinä: 27 °C = 300 K ja 327 °C = 600 K, ja 600 K / 300 K = 2."
+          "feedback": "Mallin teoria-arvo kasvaa 100:sta 200:aan, eli paine kaksinkertaistuu. Celsiusasteikon nollakohta on vain veden jäätymispiste, eivätkä hiukkaset ole siinä paikallaan. Suhde lasketaan kelvineinä: 27 °C = 300 K ja 327 °C = 600 K, ja $600\\,\\text{K} / 300\\,\\text{K} = 2$."
         },
         {
           "text": "Paine kaksinkertaistuu.",
@@ -138,7 +138,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain lämpötila muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Tilavuus on lukittu 1,0 dm³:iin, ja vain lämpötila muuttuu. Kirjaa paine ja hiukkasten keskinopeus v (suhteessa 300 K:n keskinopeuteen) ainakin kahdessa lämpötilassa, esimerkiksi 150 K, 300 K ja 600 K. Odota säädön jälkeen pari sekuntia, jotta mitattu paine ehtii asettua uuteen arvoonsa. Vertaa kelvinlämpötilojen suhdetta paineiden suhteeseen.",
+      "intro": "Testaa ennusteet 1 ja 3. Tilavuus on lukittu 1,0 dm³:iin, ja vain lämpötila muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdessa lämpötilassa, esimerkiksi 150 K, 300 K ja 600 K. Odota säädön jälkeen pari sekuntia, jotta mitattu paine ehtii asettua uuteen arvoonsa. Vertaa kelvinlämpötilojen suhdetta paineiden suhteeseen.",
       "initial": {
         "T": 300,
         "V": 1
@@ -176,7 +176,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain tilavuus muuttuu",
-      "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus v (suhteessa 300 K:n keskinopeuteen) ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
+      "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
       "initial": {
         "T": 300,
         "V": 2
@@ -246,7 +246,7 @@
           "feedback": "Vakiotilavuudessakin paine kasvaa, kun hiukkaset liikkuvat nopeammin. Opiskelija oli oikeassa siinä, että paine kasvaa; virhe on siinä, kuinka paljon."
         },
         {
-          "text": "Lämpötilojen suhde pitää laskea kelvineinä: 313 K / 293 K ≈ 1,07, joten paine on noin 128 kPa.",
+          "text": "Lämpötilojen suhde pitää laskea kelvineinä: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}07$, joten paine on noin 128 kPa.",
           "correct": true,
           "feedback": "Oikein. Paine on suoraan verrannollinen kelvinlämpötilaan, ei celsiuslämpötilaan: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. Celsiusasteikon nollakohta on vain veden jäätymispiste."
         },
@@ -277,14 +277,14 @@
       "mistakes": [
         {
           "value": 404,
-          "feedback": "Laskit lämpötilojen suhteen celsiusasteina, 80/20 = 4. Paine on verrannollinen kelvinlämpötilaan: suhde on 353 K / 293 K ≈ 1,20."
+          "feedback": "Laskit lämpötilojen suhteen celsiusasteina, $80/20 = 4$. Paine on verrannollinen kelvinlämpötilaan: suhde on $353\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}20$."
         },
         {
           "value": 83.8,
           "feedback": "Suhde on väärin päin: paine pieneni, vaikka ilma lämpeni. Lämpimämmässä ilmassa hiukkaset liikkuvat nopeammin, joten paineen pitää kasvaa: $p_2 = p_1 \\cdot T_2/T_1$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Tilavuus ja aineen määrä pysyvät samoina, joten paine on suoraan verrannollinen kelvinlämpötilaan:\n\n$$p_2 = p_1 \\frac{T_2}{T_1}$$\n\n**Muunnos.** $T_1 = (20 + 273{,}15)\\,\\text{K} = 293{,}15\\,\\text{K}$ ja $T_2 = (80 + 273{,}15)\\,\\text{K} = 353{,}15\\,\\text{K}$.\n\n**Sijoitus.** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 122\\,\\text{kPa}$.\n\n**Järkevyys.** Kelvinlämpötila nousee noin 20 %, ja paine kasvaa samassa suhteessa. Siksi kuumana suljettu purkki voi olla vaikea avata vasta jäähdyttyään: silloin paine purkissa on pienempi kuin ulkona."
+      "solution": "**Ratkaisu symbolisesti.** Tilavuus ja aineen määrä pysyvät samoina, joten paine on suoraan verrannollinen kelvinlämpötilaan:\n\n$$p_2 = p_1 \\frac{T_2}{T_1}$$\n\n**Muunnos.** $T_1 = (20 + 273{,}15)\\,\\text{K} = 293{,}15\\,\\text{K}$ ja $T_2 = (80 + 273{,}15)\\,\\text{K} = 353{,}15\\,\\text{K}$.\n\n**Sijoitus.** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 122\\,\\text{kPa}$.\n\n**Järkevyys.** Kelvinlämpötila nousee noin 20 %, ja paine kasvaa samassa suhteessa. Siksi huoneenlämpöisenä suljettu ja sitten kuumennettu purkki on ylipaineinen: paine purkissa, 122 kPa, on suurempi kuin ulkona, 101 kPa, ja kansi painuu ulospäin."
     },
     {
       "id": "tehtavat",
@@ -323,7 +323,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Taulukko ja ekstrapolointi",
-      "prompt": "Taulukossa ovat simulaation teoria-arvot paineelle (suhteellinen luku), kun tilavuus on 1,0 dm³. Ne ovat mallin arvoja, eivät mittauksia.\n\n| θ (°C) | −123 | 27 | 177 |\n|---|---|---|---|\n| p (suht.) | 50 | 100 | 150 |\n\nPisteet ovat samalla suoralla. Jatka suoraa ja määritä lämpötila, jossa paine olisi nolla. Vastaa celsiusasteina.",
+      "prompt": "Taulukossa ovat simulaation teoria-arvot paineelle (suhteellinen luku), kun tilavuus on 1,0 dm³. Ne ovat mallin arvoja, eivät mittauksia.\n\n| $\\theta$ (°C) | −123 | 27 | 177 |\n|---|---|---|---|\n| $p$ (suht.) | 50 | 100 | 150 |\n\nPisteet ovat samalla suoralla. Jatka suoraa ja määritä lämpötila, jossa paine olisi nolla. Vastaa celsiusasteina.",
       "answer": -273,
       "unit": "°C",
       "tolerance": 0.02,

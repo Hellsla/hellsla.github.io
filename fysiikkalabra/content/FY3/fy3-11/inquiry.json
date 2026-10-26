@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "Kaasu tekee laajetessaan työn $W_\\text{k} = p\\,\\Delta V$, joka näkyy (V, p)-kuvaajan pinta-alana, ja mäntäkone, joka toistaa liikettään, voi muuttaa lämpöä työksi vain luovuttamalla osan lämmöstä kylmempään. Tämä rajaa hyötysuhdetta $\\eta = W/Q_1$ ja tekee yhteistuotannosta ja lämpöpumpuista kannattavia.",
+  "contribution": "Kaasu tekee laajetessaan työn $W_\\text{k} = p\\,\\Delta V$, joka näkyy $(V, p)$-kuvaajan pinta-alana, ja mäntäkone, joka toistaa liikettään, voi muuttaa lämpöä työksi vain luovuttamalla osan lämmöstä kylmempään. Tämä rajaa hyötysuhdetta $\\eta = W/Q_1$ ja tekee yhteistuotannosta ja lämpöpumpuista kannattavia.",
   "prior": [
-    "Ensimmäinen pääsääntö $\\Delta U = Q + W$, jossa $W$ on ympäristön systeemiin tekemä työ, ja energian säilyminen (fy3-5)",
-    "Isobaarinen tilanmuutos: vakiopaineessa kaasun tilavuus kasvaa, kun sen lämpötila nousee (fy3-9)",
-    "Työ voima kertaa matka ja (s, F)-kuvaajan pinta-ala (fy3-2)"
+    "Ensimmäinen pääsääntö $\\Delta U = Q + W$, jossa $W$ on ympäristön systeemiin tekemä työ, ja energian säilyminen (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
+    "Isobaarinen tilanmuutos: vakiopaineessa kaasun tilavuus kasvaa, kun sen lämpötila nousee (luku *Kaasujen tilanmuutokset ja Boylen laki*)",
+    "Työ voima kertaa matka ja $(s, F)$-kuvaajan pinta-ala (luku *Työ ja energia*)"
   ],
   "activities": [
     {
@@ -19,7 +19,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmilta tunneilta",
-      "prompt": "Sylinterissä olevaa kaasua lämmitetään niin, että sen paine pysyy vakiona (isobaarinen tilanmuutos, fy3-9). Kaasuun siirtyy lämpö $Q = 400\\,\\text{J}$. Kaasu laajenee ja työntää mäntää, joten ympäristö tekee kaasuun työn $W = -150\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu (fy3-5: $\\Delta U = Q + W$)?",
+      "prompt": "Sylinterissä olevaa kaasua lämmitetään niin, että sen paine pysyy vakiona (isobaarinen tilanmuutos, luku *Kaasujen tilanmuutokset ja Boylen laki*). Kaasuun siirtyy lämpö $Q = 400\\,\\text{J}$. Kaasu laajenee ja työntää mäntää, joten ympäristö tekee kaasuun työn $W = -150\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu (luku *Sisäenergia, lämpömäärä ja energian säilyminen*: $\\Delta U = Q + W$)?",
       "choices": [
         {
           "text": "$\\Delta U = 550\\,\\text{J}$",
@@ -36,7 +36,7 @@
         },
         {
           "text": "$\\Delta U = 0$, koska paine pysyy vakiona.",
-          "feedback": "Vakiopaine ei tarkoita vakiosisäenergiaa. Isobaarisessa lämmityksessä kaasun lämpötila nousee (fy3-9), joten sen sisäenergia kasvaa: $\\Delta U = Q + W = 250\\,\\text{J}$."
+          "feedback": "Vakiopaine ei tarkoita vakiosisäenergiaa. Isobaarisessa lämmityksessä kaasun lämpötila nousee (luku *Kaasujen tilanmuutokset ja Boylen laki*), joten sen sisäenergia kasvaa: $\\Delta U = Q + W = 250\\,\\text{J}$."
         }
       ]
     },
@@ -59,11 +59,11 @@
         {
           "text": "$W_\\text{k} = 300\\,\\text{J}$",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: kun lämpö $Q = 750\\,\\text{J}$ vie tilavuuden 1,0 litrasta 2,5 litraan, malli antaa $W_\\text{k} = 300\\,\\text{J}$. (V, p)-kuvaajan oranssi suorakulmio on 200 kPa korkea ja 1,5 l leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+          "feedback": "Mallin arvot tukevat tätä: kun lämpö $Q = 750\\,\\text{J}$ vie tilavuuden 1,0 litrasta 2,5 litraan, malli antaa $W_\\text{k} = 300\\,\\text{J}$. $(V, p)$-kuvaajan oranssi suorakulmio on 200 kPa korkea ja 1,5 l leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
         },
         {
           "text": "$W_\\text{k} = 500\\,\\text{J}$",
-          "feedback": "Tämä on paine kertaa lopputilavuus 2,5 l. Kokeessa (V, p)-kuvaajan oranssi suorakulmio alkaa kohdasta 1,0 l, koska työtä tehdään vain laajenemisen aikana. Sen leveys on $\\Delta V = 1{,}5\\,\\text{l}$, ja malli antaa $W_\\text{k} = 300\\,\\text{J}$."
+          "feedback": "Tämä on paine kertaa lopputilavuus 2,5 l. Kokeessa $(V, p)$-kuvaajan oranssi suorakulmio alkaa kohdasta 1,0 l, koska työtä tehdään vain laajenemisen aikana. Sen leveys on $\\Delta V = 1{,}5\\,\\text{l}$, ja malli antaa $W_\\text{k} = 300\\,\\text{J}$."
         },
         {
           "text": "$W_\\text{k} = 300\\,000\\,\\text{J}$",
@@ -76,7 +76,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa kaasua lämmitetään sylinterissä, jonka mäntää kaksi punnusta painaa niin, että kaasun paine on 200 kPa.",
-      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*: mäntä nousee, ja (V, p)-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*.",
+      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*: mäntä nousee, ja $(V, p)$-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*.",
       "model": "Lukemat ovat mallin arvoja yksiatomiselle ideaalikaasulle; mäntä on kitkaton, eikä lämpöä karkaa muualle."
     },
     {
@@ -121,7 +121,7 @@
         "unit": "J",
         "tolerance": 0.02,
         "hints": [
-          "Paine pysyy vakiona, joten työ on (V, p)-kuvaajan oranssin suorakulmion pinta-ala: korkeus $p$, leveys $\\Delta V$.",
+          "Paine pysyy vakiona, joten työ on $(V, p)$-kuvaajan oranssin suorakulmion pinta-ala: korkeus $p$, leveys $\\Delta V$.",
           "Muunna yksiköt: $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ ja $1\\,\\text{l} = 0{,}001\\,\\text{m}^3$.",
           "Rivillä $\\Delta V = 2{,}00\\,\\text{l} = 0{,}002\\,00\\,\\text{m}^3$."
         ],
@@ -220,7 +220,7 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Kierroksen B jälkeen (V, p)-kuvaajaan jää oranssi suorakulmio paineiden 100 kPa ja 200 kPa väliin. Mitä sen pinta-ala kertoo?",
+        "prompt": "Kierroksen B jälkeen $(V, p)$-kuvaajaan jää oranssi suorakulmio paineiden 100 kPa ja 200 kPa väliin. Mitä sen pinta-ala kertoo?",
         "choices": [
           {
             "text": "Kierroksen nettotyön: $W = (p_1 - p_2)\\,\\Delta V = 100\\,\\text{kPa} \\cdot 1{,}0\\,\\text{l} = 100\\,\\text{J}$.",
@@ -229,11 +229,11 @@
           },
           {
             "text": "Kylmään veteen siirtyneen lämmön $Q_2$.",
-            "feedback": "Malli antaa $Q_2 = 550\\,\\text{J}$, mutta suorakulmio on 100 kPa korkea ja 1,0 l leveä eli 100 J. (V, p)-kuvaajan pinta-ala on työtä, ei lämpöä; lämpö näkyy vain palkeissa."
+            "feedback": "Malli antaa $Q_2 = 550\\,\\text{J}$, mutta suorakulmio on 100 kPa korkea ja 1,0 l leveä eli 100 J. $(V, p)$-kuvaajan pinta-ala on työtä, ei lämpöä; lämpö näkyy vain palkeissa."
           },
           {
             "text": "Kaasun tekemän työn männän noustessa.",
-            "feedback": "Noustessaan kaasu teki 200 J:n työn, jonka pinta-ala ulottuu V-akselille asti. Sen alaosa on viivoitettu sinisellä: se on paluussa kaasuun tehty 100 J:n työ. Jäljelle jäävä oranssi osa on nettotyö 100 J."
+            "feedback": "Noustessaan kaasu teki 200 J:n työn, jonka pinta-ala ulottuu $V$-akselille asti. Sen alaosa on viivoitettu sinisellä: se on paluussa kaasuun tehty 100 J:n työ. Jäljelle jäävä oranssi osa on nettotyö 100 J."
           }
         ]
       }
@@ -280,7 +280,7 @@
         {
           "text": "Työn etumerkissä: työtä tekevä kaasu luovuttaa energiaa, joten $\\Delta U = Q - W_\\text{k} = 360\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Oikein. Kaasu tekee 240 J:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. Sama tulos saadaan fy3-5:n muodosta $\\Delta U = Q + W$, kun ympäristön kaasuun tekemä työ on $W = -W_\\text{k} = -240\\,\\text{J}$."
+          "feedback": "Oikein. Kaasu tekee 240 J:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. Sama tulos saadaan luvun *Sisäenergia, lämpömäärä ja energian säilyminen* muodosta $\\Delta U = Q + W$, kun ympäristön kaasuun tekemä työ on $W = -W_\\text{k} = -240\\,\\text{J}$."
         },
         {
           "text": "Lämmön etumerkissä: $Q$ on negatiivinen, koska kaasu luovuttaa energiaa laajetessaan.",
@@ -389,12 +389,12 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Kuvaaja ja laskeminen",
-      "prompt": "Kaasun (V, p)-kuvaaja on vaakasuora jana korkeudella $p = 150\\,\\text{kPa}$, ja se alkaa kohdasta $V = 2{,}0\\,\\text{l}$ ja päättyy kohtaan $V = 5{,}0\\,\\text{l}$. Kuinka suuren työn $W_\\text{k}$ kaasu tekee? Vastaa jouleina.",
+      "prompt": "Kaasun $(V, p)$-kuvaaja on vaakasuora jana korkeudella $p = 150\\,\\text{kPa}$, ja se alkaa kohdasta $V = 2{,}0\\,\\text{l}$ ja päättyy kohtaan $V = 5{,}0\\,\\text{l}$. Kuinka suuren työn $W_\\text{k}$ kaasu tekee? Vastaa jouleina.",
       "answer": 450,
       "unit": "J",
       "tolerance": 0.02,
       "hints": [
-        "Mitä janan ja V-akselin väliin jäävä pinta-ala tarkoittaa, ja minkä muotoinen se on?",
+        "Mitä janan ja $V$-akselin väliin jäävä pinta-ala tarkoittaa, ja minkä muotoinen se on?",
         "Suorakulmion pinta-ala on $W_\\text{k} = p\\,\\Delta V$, missä $\\Delta V = V_2 - V_1$.",
         "$\\Delta V = 5{,}0\\,\\text{l} - 2{,}0\\,\\text{l} = 3{,}0\\,\\text{l} = 0{,}0030\\,\\text{m}^3$."
       ],

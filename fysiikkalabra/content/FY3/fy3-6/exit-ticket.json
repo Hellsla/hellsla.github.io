@@ -1,7 +1,7 @@
 [
   {
-    "q": "Kuinka suuri lämpömäärä tarvitaan, kun 2,0 kg vettä lämmitetään 15 °C:sta 65 °C:seen (c = 4190 J/(kg·K))?",
-    "a": "Q = cmΔT = 4190 J/(kg·K) · 2,0 kg · 50 K = 419 000 J ≈ 420 kJ."
+    "q": "Kuinka suuri lämpömäärä tarvitaan, kun 2,0 kg vettä lämmitetään 15 °C:sta 65 °C:seen ($c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$)?",
+    "a": "$Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 2{,}0\\,\\text{kg} \\cdot 50\\,\\text{K} = 419\\,000\\,\\text{J} \\approx 420\\,\\text{kJ}$."
   },
   {
     "q": "Kilo vettä ja kilo rautaa saavat saunassa saman lämpömäärän. Kumman lämpötila nousee enemmän ja suunnilleen kuinka moninkertaisesti?",

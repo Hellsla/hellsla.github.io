@@ -9,6 +9,6 @@
   },
   {
     "q": "Lämpenemiskäyrässä on nousevia ja vaakasuoria osia. Mitä kummassakin tapahtuu ja mikä kaava pätee?",
-    "a": "Nousevilla osilla aine lämpenee ja Q = cmΔT. Vaakasuorilla osilla aine muuttaa olomuotoaan vakiolämpötilassa ja Q = sm (sulaminen) tai Q = rm (höyrystyminen)."
+    "a": "Nousevilla osilla aine lämpenee ja $Q = cm\\Delta T$. Vaakasuorilla osilla aine muuttaa olomuotoaan vakiolämpötilassa ja $Q = sm$ (sulaminen) tai $Q = rm$ (höyrystyminen)."
   }
 ]
