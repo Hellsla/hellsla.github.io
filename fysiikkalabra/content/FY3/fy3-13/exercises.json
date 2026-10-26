@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-13-L1-01",
+      "level": 1,
+      "text": "Suljetussa jäykässä astiassa olevan kaasun paine noudattaa mittausalueella suoraa $p = 98{,}0\\,\\text{kPa} + 0{,}360\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$, missä $\\theta$ on lämpötila celsiusasteina. Missä lämpötilassa suora antaa paineeksi nollan? Vastaa celsiusasteina.",
+      "answer": -272,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-02",
+      "level": 1,
+      "text": "Kaasun paine on suljetussa astiassa 20,0 °C:ssa 105 kPa ja 80,0 °C:ssa 127 kPa. Laske näiden pisteiden kautta kulkevan suoran kulmakerroin yksikössä kPa/°C.",
+      "answer": 0.367,
+      "unit": "kPa/°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-03",
+      "level": 1,
+      "text": "Oppilasryhmä sai ekstrapoloimalla absoluuttisen nollapisteen arvoksi $-267{,}9\\,{}^\\circ\\text{C}$. Kuinka monta celsiusastetta tulos poikkeaa hyväksytystä arvosta $-273{,}15\\,{}^\\circ\\text{C}$?",
+      "answer": 5.25,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-04",
+      "level": 1,
+      "text": "Mittauspisteiden kautta piirretyistä kahdesta ääriviivasta jyrkempi osuu nollapaineeseen lämpötilassa $-258\\,{}^\\circ\\text{C}$ ja loivempi lämpötilassa $-284\\,{}^\\circ\\text{C}$. Kuinka suuri on tuloksen epävarmuus $\\Delta\\theta_0$?",
+      "answer": 13,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-05",
+      "level": 1,
+      "text": "Painemittarin lukema on 112 kPa, ja mittarin epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Kuinka monta prosenttia lukemasta epävarmuus on?",
+      "answer": 0.89,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-13-L2-01",
+      "level": 2,
+      "text": "Pullossa olevan ilman paine mitattiin kahdessa lämpötilassa: 15,0 °C:ssa paine oli 1,05 bar ja 95,0 °C:ssa 1,36 bar. Oleta, että paine riippuu lämpötilasta lineaarisesti. Missä lämpötilassa suora antaa nollapaineen? Vastaa celsiusasteina.",
+      "answer": -256,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L2-02",
+      "level": 2,
+      "text": "Kaasun paineen mittauspisteiden kautta voidaan piirtää kaksi ääriviivaa: $p = 100\\,\\text{kPa} + 0{,}380\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$ ja $p = 102\\,\\text{kPa} + 0{,}350\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$. Laske kummankin viivan nollapaineen lämpötila ja niiden avulla absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$.",
+      "answer": 14,
+      "unit": "°C",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-13-L2-03",
+      "level": 2,
+      "text": "Kokeessa käytettiin painemittaria, joka näyttää ylipainetta ympäröivään ilmanpaineeseen verrattuna. Ilmanpaine oli 101 kPa. Mittarin lukema oli 30,0 °C:ssa 9,0 kPa ja 90,0 °C:ssa 31,0 kPa. Missä lämpötilassa kaasun absoluuttinen paine olisi nolla, kun paine riippuu lämpötilasta lineaarisesti? Vastaa celsiusasteina.",
+      "answer": -270,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L2-04",
+      "level": 2,
+      "text": "Kokeessa lämpötilan lukematarkkuus on $\\pm 0{,}5\\,{}^\\circ\\text{C}$ ja paineen $\\pm 1{,}0\\,\\text{kPa}$. Mittauspisteiden suoran kulmakerroin on $0{,}36\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$. Kuinka monta prosenttia lämpötilan epävarmuudesta aiheutuva paineen muutos on paineen omasta epävarmuudesta?",
+      "answer": 18,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-13-L3-01",
+      "level": 3,
+      "text": "Mittausalue on 20,0–100,0 °C. Pisteessä 20,0 °C paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä 100,0 °C $137{,}0 \\pm 1{,}0\\,\\text{kPa}$. Jyrkin ääriviiva kulkee pisteiden (20,0 °C; 105,0 kPa) ja (100,0 °C; 138,0 kPa) kautta, loivin pisteiden (20,0 °C; 107,0 kPa) ja (100,0 °C; 136,0 kPa) kautta. Määritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
+      "answer": 20.3,
+      "unit": "°C",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-13-L3-02",
+      "level": 3,
+      "text": "Typpikaasun paine on jäykässä astiassa 100 kPa lämpötilassa 0 °C, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa 77 K? Typpi nesteytyy 77 K:ssä. Perustele, miksi ekstrapolointi ei voi päteä tämän lämpötilan alapuolella. Vastaa paineena kilopascaleina.",
+      "answer": 28.2,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L3-03",
+      "level": 3,
+      "text": "Ryhmän A mittauksen tulos on $\\theta_0 = -262 \\pm 6\\,{}^\\circ\\text{C}$. Hyväksytty arvo on $-273{,}15\\,{}^\\circ\\text{C}$. Kuinka monta kertaa epävarmuus $\\Delta\\theta_0$ mahtuu tuloksen ja hyväksytyn arvon väliin? Päättele, mistä syystä tulos ei ole sopusoinnussa hyväksytyn arvon kanssa.",
+      "answer": 1.86,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ]
+}
