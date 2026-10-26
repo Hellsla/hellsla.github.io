@@ -1,0 +1,1 @@
+Ei simulaatiota. Tunti tutkii voimalaitosten energiaketjuja taulukoista ja kuvista: opiskelija laskee tehon vaihe vaiheelta, vertaa lauhde- ja yhteistuotantoa ja voimalaitostyyppejä. Simulaatio vain laskisi hyötysuhteiden tulon, jonka opiskelijan on tarkoitus itse oivaltaa, joten se ei tuo oppimista, jota taulukko ja kuva eivät tuo.

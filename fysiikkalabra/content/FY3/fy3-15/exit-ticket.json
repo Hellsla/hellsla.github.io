@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Voimalaitoksen energiaketjun vaiheiden hyötysuhteet ovat $\\eta_1 = 0{,}90$, $\\eta_2 = 0{,}50$ ja $\\eta_3 = 0{,}96$. Mikä on koko ketjun hyötysuhde?",
+    "a": "Hyötysuhteet kerrotaan: $\\eta = \\eta_1 \\eta_2 \\eta_3 = 0{,}90 \\cdot 0{,}50 \\cdot 0{,}96 = 0{,}432 \\approx 43\\,\\%$. Niitä ei lasketa yhteen eikä keskiarvoteta."
+  },
+  {
+    "q": "Yhteistuotantolaitoksen polttoaineteho on $100\\,\\text{MW}$, sähköteho $30\\,\\text{MW}$ ja kaukolämpöteho $55\\,\\text{MW}$. Mikä on kokonaishyötysuhde ja kuinka suuri on hukkalämmön teho?",
+    "a": "$\\eta_\\text{kok} = (30\\,\\text{MW} + 55\\,\\text{MW})/100\\,\\text{MW} = 0{,}85 = 85\\,\\%$. Hukkalämmön teho on $100\\,\\text{MW} - 85\\,\\text{MW} = 15\\,\\text{MW}$."
+  },
+  {
+    "q": "Vesivoimalaitoksen hyötysuhde on noin 90 %, mutta lauhdevoimalaitoksen noin 40 %. Miksi ero on näin suuri?",
+    "a": "Vesivoimalaitos muuttaa veden liike-energian suoraan mekaaniseksi energiaksi turbiinissa, eikä se ole lämpövoimakone. Siksi sen ei tarvitse luovuttaa lämpöä kylmempään ympäristöön. Lauhdevoimalaitos on lämpövoimakone, ja sen lauhduttimeen siirtyy aina suuri osa polttoaineen energiasta."
+  }
+]

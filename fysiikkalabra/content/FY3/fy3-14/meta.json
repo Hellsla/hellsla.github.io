@@ -1,0 +1,22 @@
+{
+  "id": "fy3-14",
+  "course": "FY3",
+  "title": "Lämpötasapaino olomuodon muuttuessa",
+  "goals": [
+    "LOPS FY3: aineen lämpeneminen ja jäähtyminen sekä olomuodon muutokset",
+    "LOPS FY3: energian säilyminen",
+    "Täsmennys: jää sulaa veteen: sulamislämpö ja lämpeneminen samassa lämpötasapainossa, sulaako kaikki jää"
+  ],
+  "prerequisites": [
+    "fy3-6",
+    "fy3-7"
+  ],
+  "glossary": [
+    "ominaissulamislämpö",
+    "sulamislämpö",
+    "lämpötasapaino"
+  ],
+  "sim": true,
+  "solutions": "first",
+  "image": false
+}
