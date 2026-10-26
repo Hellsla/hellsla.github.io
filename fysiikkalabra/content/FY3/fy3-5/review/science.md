@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 96b0f0b71d02cb96
+CONTENT-HASH: 1985815b7b66e3f6
 
 ## Blocking
 
 ## Polish
-- inquiry.json:95 (taulukko) — rows 2–4 share W = 20 J at different speeds; for the same stroke a slower (cooler) compression needs less work, so equal W silently means different strokes. ΔT also relies on an unstated c_V ≈ 718 J/(kg·K) — add "puristusmatka valitaan niin, että W = 20 J" and, optionally, name the model's c_V.
-- lesson.md:51 — "ΔU = Q + W" in the Kaava SVG is plain text, not LaTeX in a foreignObject as the convention requires — move it to a fig-tex foreignObject.
-- exercises.json fy3-5-L3-03 / solutions.md (L3-01, L3-03) — "sisäenergia riippuu käytännössä vain lämpötilasta ja määrästä" holds for an ideal gas; say "ideaalikaasun" (as inquiry does) so the condition is stated.
+- sim.js:124, inquiry.json:105 — "vastaa 0,50 g:aa ilmaa" holds only for the heat capacity. Real air under the same stroke: adiabatic about 13 J and 36 K (the model gives 41 J and 114 K), isothermal about 12 J (the model gives 36 J). Fix: "lämpökapasiteetiltaan vastaa", and give the real values in Lisätietoja.
+- sim.js:87 — the p readout assumes an isotropic gas, but only the piston changes vx. After an insulated push the piston pressure is 2,37 p₀, while the readout shows 1,85. W itself is exact. Fix: take p from the piston impulse, or say in Lisätietoja that p is a direction average.
+- sim.js:124 — the extra heating comes mostly from 2D (a mixed 2D gas gives 391 K) and partly from the vx-only pumping (407 K). Name both causes.
+- inquiry.json:84, 88, 93 — "Mittauksissa/Mittaukset" for sim numbers. Fix: "mallin lukemissa".
+- solutions.md:77, 93 — "riippuu käytännössä vain lämpötilasta" should say "ideaalikaasun".
 
 ## Checked
-- All 12 answers recomputed independently; match answers.py and exercises.json (L3-02 1,699 → 1,7 m inside 2 %).
-- Sign convention ΔU = Q + W (W on the system) consistent in lesson, glossary, solutions, inquiry, exit ticket.
-- Worked example: W = +150 J, Q = −40 J, ΔU = 110 J; symbolic before substitution; staged.
-- Table ΔT: 27,9 / 55,7 / 22,3 / 0,0 °C reproduced with m = 0,50 g, c_V = 718 J/(kg·K); kaavio 20 → 76 °C consistent.
-- kaavio numeric −20 J, mistakes +20 and 0 correct; siirto 5,4 J, mistakes 6,6 and 599,4 correct.
-- Fire-piston magnitude plausible (adiabatic r ≈ 20 on ~8 cm³ needs ~5 J, ~1000 K).
-- check-2 30 J, mistakes 230 and 10 reproduce the stated errors; check-1 adiabatic expansion cools.
-- Predictions' correct options and feedback physics sound (isothermal row 4 refutes "pressure alone").
-- All solutions solve symbolically first; units and magnitudes realistic.
-- Scope: first law only, no second law; no sim.
+- All 12 exercise answers, siirto 5,4 J (mistakes 6,6 and 599,4) and check-2 30 J (mistakes 230 and 10) recomputed: they match.
+- Sign convention W on the system: consistent everywhere. Worked example 110 J is solved symbolically first.
+- Playwright, insulated, push right after Alkuun: slow 40,7 J / 406,4 K, fast 40,9 J / 407,0 K. The theoretical value is 407,2 K. Matches pred-2.
+- A delayed start gives 111–116 K. The "muutaman kelvinin" caveat covers this.
+- Conducting slow push: W 35,8 J. At T 293 K, Q −35,7 J and ΔU 0,1 J; the final values are Q −35,8 J, ΔU 0, p 1,33. Matches koe-2 and pred-1.
+- Haaste: 40,9 J and 407 K, then Q → −40,9 J and ΔU → 0. Matches.
+- ΔU − (Q + W) < 1e-13 J in all runs.
+- The v' = 2u − v reflection gives W = force × distance. The √(T0/T) wall rule is stated honestly in Lisätietoja and is fine for FY3.
+- pred-2 "about equal" (u ≪ v) and check-3 (the difference via Q) are consistent with each other.
+- check-1, the exit ticket and the fire-piston magnitude are sound. Scope is the first law only.
