@@ -160,7 +160,7 @@ def collect(lid, session=None, rnd="", since=None):
         mode = "since"
     else: mode = "session" if start is None else "lesson-run"
     s = read_transcript(sf, start, end)
-    new.append(row_of(lid, "orchestrator", "orchestrate", s, hashlib.sha1(f"{sid}:main:{lid}".encode()).hexdigest()[:12], mode=mode, round=rnd))
+    new.append(row_of(lid, "orchestrator", "orchestrate", s, hashlib.sha1((f"{sid}:main:{lid}" + (f":{since}" if since else "")).encode()).hexdigest()[:12], mode=mode, round=rnd))
     for r in new:
         if r["ref"] in by_ref: rows[by_ref[r["ref"]]] = r
         else: rows.append(r)
