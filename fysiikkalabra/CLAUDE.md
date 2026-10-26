@@ -7,6 +7,7 @@ A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simu
 - `curriculum.json` is the single source for every course (FY1–FY8): its LOPS 2019 goals and central contents from `docs/lops2019/`, its lesson slots, and optional `scope_notes`, `exercise_levels`, `initialized`. `scripts/courses.py` turns a lesson id into its course, slot and folders; nothing else hardcodes a course.
 - Stay inside the course's central contents and scope notes (your packet carries them). Grep the MAOL guide in `docs/lops2019/` when unsure whether something belongs to a course.
 - `/new-course <FY4>` prepares a course (`scripts/new_course.py`); it never writes goals or slots, which come from the LOPS texts and the teacher.
+- **Lessons per course** (teacher's decision 2026-10-26): FY1 and FY2 have 8 lessons each, FY3–FY8 16 each (`planned_lessons` in `curriculum.json`). `/new-course` notes a course whose slots do not match; the missing slots come from the teacher, never from an agent.
 
 ## Audience and language
 - Students aged 16–19, smart but meeting the idea for the first time. Site language Finnish; agent prompts and reports may be in English.

@@ -7,6 +7,7 @@
   "FY1": {
     "title": "Fysiikka luonnontieteenä",
     "op": 1,
+    "planned_lessons": 8,
     "type": "pakollinen",
     "tavoitteet": [
       "tutustuu fysiikkaan systemaattisena, kokeellisuuteen nojautuvana tieteenä",
@@ -184,6 +185,7 @@
   "FY2": {
     "title": "Fysiikka, ympäristö ja yhteiskunta",
     "op": 1,
+    "planned_lessons": 8,
     "type": "pakollinen",
     "tavoitteet": [
       "perehtyy energiaan fysiikan keskeisenä käsitteenä",
@@ -360,6 +362,7 @@
   "FY3": {
     "title": "Energia ja lämpö",
     "op": 2,
+    "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "syventää ymmärrystään energiasta fysiikan keskeisenä käsitteenä",
@@ -633,6 +636,7 @@
   "FY4": {
     "title": "Voima ja liike",
     "op": 2,
+    "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "osaa tutkia kokeellisesti voimaan ja liikkeeseen liittyviä ilmiöitä",
@@ -881,6 +885,7 @@
   "FY5": {
     "title": "Jaksollinen liike ja aallot",
     "op": 2,
+    "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "osaa mallintaa planetaarista liikettä ympyräliikkeenä",
@@ -1162,6 +1167,7 @@
   "FY6": {
     "title": "Sähkö",
     "op": 2,
+    "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "osaa tutkia kokeellisesti sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
@@ -1402,6 +1408,7 @@
   "FY7": {
     "title": "Sähkömagnetismi ja valo",
     "op": 2,
+    "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "ymmärtää induktioilmiön keskeisen merkityksen sähkömagnetismissa",
@@ -1665,6 +1672,7 @@
   "FY8": {
     "title": "Aine, säteily ja kvantittuminen",
     "op": 2,
+    "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",

@@ -54,6 +54,9 @@ def validate(code):
         if not c.get(k): errors.append(f"{code}: '{k}' is missing; copy it from the LOPS 2019 module text (docs/lops2019/), do not write it from memory")
     slots = c.get("lessons", [])
     if not slots: errors.append(f"{code}: no lesson slots ('lessons'); the teacher decides the sequence and titles")
+    elif c.get("planned_lessons") and len(slots) != c["planned_lessons"]:   # teacher's decision 2026-10-26: FY1-FY2 8, FY3-FY8 16
+        notes.append(f"{code}: {len(slots)} lesson slots, the teacher's plan is {c['planned_lessons']} (planned_lessons); "
+                     f"the missing slots' titles and goals come from the LOPS text and the teacher, not from an agent")
     text = lops_text()
     if text is None: notes.append("docs/lops2019/*.txt not found: the LOPS items could not be checked against the source")
     else:
