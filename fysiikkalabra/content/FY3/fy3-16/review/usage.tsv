@@ -6,3 +6,6 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T16:10Z	fy3-16	FY3	developer	develop	claude-sonnet-5-5	medium	fix	1	1664567	38	24270	1546054	94205	122289	19	241	20		0.7875	transcript	7156d4ff2fa9
 2026-10-26T16:10Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	full	2	484395	12	7726	400135	76522	104170	6	74	8		0.6172	transcript	119256115f5d
 2026-10-26T16:10Z	fy3-16	FY3	orchestrator	orchestrate	claude-opus-5-5		session/4		2470234	35	9803	2372449	87947	51386	70	3641	107		1.1314	transcript	173531379dd9
+2026-10-26T19:42Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	batch/4		679188	8	6430	599130	73620	73856	16	252	20		0.6166	transcript	612bb0778417
+2026-10-26T19:42Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/5		950399	14	5498	903045	41842	42156	35	311	39		0.3402	transcript	c00989d5efe6
+2026-10-26T19:42Z	fy3-16	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	e18002dcc297

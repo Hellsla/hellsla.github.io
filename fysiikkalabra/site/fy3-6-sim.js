@@ -37,7 +37,7 @@ new p5((p) => {
     const ls = p.createElement('label').parent(controls);
     lSel = p.createSpan('').parent(ls).style('white-space', 'nowrap');
     sel = p.createSelect().parent(ls);
-    for (const [name, c] of MATERIALS) sel.option(`${name} (${c} J/(kg·K))`, String(c));
+    for (const [name, c] of MATERIALS) sel.option(name, String(c));
     sel.selected('385');
     [sMB, lMB] = slider(controls, 0.05, 1.00, 0.20, 0.01);    // kappaleen massa (kg)
     [sTB, lTB] = slider(controls, 0, 100, 100, 0.5);          // kappaleen alkulämpötila (°C)
@@ -71,20 +71,21 @@ new p5((p) => {
     if (hi - lo < 10) hi = lo + 10;
     const step = hi - lo > 60 ? 20 : 10;
 
-    lMW.html(`Veden massa m<sub>v</sub> = ${fi(mW, 2)} kg`); lTW.html(`Veden alkulämpötila T<sub>v</sub> = ${fi(TW0, 1)} °C`);
-    lSel.html(`Kappaleen aine, c<sub>k</sub> = ${cB} J/(kg·K)`);
-    lMB.html(`Kappaleen massa m<sub>k</sub> = ${fi(mB, 2)} kg`); lTB.html(`Kappaleen alkulämpötila T<sub>k</sub> = ${fi(TB0, 1)} °C`);
+    lMW.html(`Veden massa $m_\\text{v} = ${tx(mW, 2)}\\,\\text{kg}$`); lTW.html(`Veden alkulämpötila $T_\\text{v} = ${tx(TW0, 1)}\\,{}^\\circ\\text{C}$`);
+    lSel.html(`Kappaleen aine, $c_\\text{k} = ${cB}\\,\\text{J/(kg}\\cdot\\text{K)}$`);
+    lMB.html(`Kappaleen massa $m_\\text{k} = ${tx(mB, 2)}\\,\\text{kg}$`); lTB.html(`Kappaleen alkulämpötila $T_\\text{k} = ${tx(TB0, 1)}\\,{}^\\circ\\text{C}$`);
+    const K = (x) => `$${tx(x, 1)}\\,\\text{K}$`, C = (x) => `$${tx(x, 1)}\\,{}^\\circ\\text{C}$`;
     let flow;
     if (Math.abs(TB0 - TW0) < 1e-9) flow = 'Lämpötilat ovat samat, joten lämpöä ei siirry.';
-    else if (TB0 > TW0) flow = `Kappale luovuttaa Q = <strong>${fq(Q)}</strong>, vesi vastaanottaa Q = <strong>${fq(QW)}</strong>.` +
-                               `<br>Vesi lämpenee ${fi(Teq - TW0, 1)}&nbsp;K ja kappale jäähtyy ${fi(TB0 - Teq, 1)}&nbsp;K.`;
-    else flow = `Vesi luovuttaa Q = <strong>${fq(-QW)}</strong>, kappale vastaanottaa Q = <strong>${fq(-Q)}</strong>.` +
-                `<br>Kappale lämpenee ${fi(Teq - TB0, 1)}&nbsp;K ja vesi jäähtyy ${fi(TW0 - Teq, 1)}&nbsp;K.`;
-    readout.html(`Tasapainolämpötila T = <strong>${fi(Teq, 1)}&nbsp;°C</strong>` +
-                 `<br>Lämpökapasiteetit C = cm: vesi ${fc(CWt)}&nbsp;J/K, kappale (${name}) ${fc(CB)}&nbsp;J/K` +
+    else if (TB0 > TW0) flow = `Kappale luovuttaa <strong>$Q = ${fq(Q)}$</strong>, vesi vastaanottaa <strong>$Q = ${fq(QW)}$</strong>.` +
+                               `<br>Vesi lämpenee ${K(Teq - TW0)} ja kappale jäähtyy ${K(TB0 - Teq)}.`;
+    else flow = `Vesi luovuttaa <strong>$Q = ${fq(-QW)}$</strong>, kappale vastaanottaa <strong>$Q = ${fq(-Q)}$</strong>.` +
+                `<br>Kappale lämpenee ${K(Teq - TB0)} ja vesi jäähtyy ${K(TW0 - Teq)}.`;
+    readout.html(`Tasapainolämpötila <strong>$T = ${tx(Teq, 1)}\\,{}^\\circ\\text{C}$</strong>` +
+                 `<br>Lämpökapasiteetit $C = cm$: vesi $${fc(CWt)}\\,\\text{J/K}$, kappale (${name}) $${fc(CB)}\\,\\text{J/K}$` +
                  `<br>${flow}` +
-                 `<br>Lämpömittarit nyt: vesi ${fi(TW, 1)}&nbsp;°C, kappale ${fi(TB, 1)}&nbsp;°C` +
-                 `<br><small>Kuvaajan asteikko ${lo}–${hi}&nbsp;°C ja 0–${T_END}&nbsp;s</small>`);
+                 `<br>Lämpömittarit nyt: vesi ${C(TW)}, kappale ${C(TB)}` +
+                 `<br><small>Kuvaajan asteikko $${lo}\\text{–}${hi}\\,{}^\\circ\\text{C}$ ja $0\\text{–}${T_END}\\,\\text{s}$</small>`);
     window.simState = { mW, TW0, cB, mB, TB0, Teq, CW: CWt, CB, Q, QW, running, TW, TB, t: tAnim, Tlo: lo, Thi: hi };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -112,8 +113,8 @@ new p5((p) => {
       arrow(bx, out ? by - 4 : by - 4 - L, bx, out ? by - 4 - L : by - 4, p.color(200, 40, 40));
     }
     p.noStroke(); p.textSize(ts(13)); p.textAlign(p.LEFT);
-    p.fill(30, 80, 160); p.text(`vesi ${fi(TW, 1)} °C`, 20, ts(18));
-    p.fill(170, 70, 20); p.text(`kappale ${fi(TB, 1)} °C`, 20, ts(18) + ts(19));
+    p.fill(30, 80, 160); p.text(`$\\text{vesi } ${tx(TW, 1)}\\,{}^\\circ\\text{C}$`, 20, ts(18));
+    p.fill(170, 70, 20); p.text(`$\\text{kappale } ${tx(TB, 1)}\\,{}^\\circ\\text{C}$`, 20, ts(18) + ts(19));
 
     // (t, T) chart: both temperatures so far and the equilibrium line
     const X = (t) => CH.x0 + (CH.x1 - CH.x0) * t / T_END, Y = (T) => CH.y0 - (CH.y0 - CH.y1) * (T - lo) / (hi - lo);
@@ -121,22 +122,22 @@ new p5((p) => {
     for (let v = lo + step; v <= hi; v += step) p.line(CH.x0, Y(v), CH.x1, Y(v));
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 5);
     p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    for (let v = lo; v <= hi; v += step) p.text(`${v}`, CH.x0 - 6, Y(v) + ts(4));
+    for (let v = lo; v <= hi; v += step) p.text(`$${v}$`, CH.x0 - 6, Y(v) + ts(4));
     p.textAlign(p.CENTER);
-    for (let t = 0; t <= T_END; t += 2) p.text(`${t}`, X(t), CH.y0 + ts(16));
-    p.textAlign(p.LEFT); p.text('t (s)', CH.x1 + 22, CH.y0 + ts(16));
-    p.textAlign(p.LEFT); p.textSize(ts(12)); p.text('T (°C)', CH.x0 - 26, CH.y1 - ts(14));
+    for (let t = 0; t <= T_END; t += 2) p.text(`$${t}$`, X(t), CH.y0 + ts(16));
+    p.textAlign(p.LEFT); p.text('$t\\ (\\text{s})$', CH.x1 + 22, CH.y0 + ts(16));
+    p.textAlign(p.LEFT); p.textSize(ts(12)); p.text('$T\\ (^\\circ\\text{C})$', CH.x0 - 26, CH.y1 - ts(14));
     p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(CH.x0, Y(Teq), CH.x1, Y(Teq)); p.drawingContext.setLineDash([]);
     // T label in the right margin: name above and value below the line, kept above the t axis labels; near the top of the
     // axis both go below the line so the name does not touch the legend
     const nearTop = Y(Teq) < CH.y1 + 0.15 * (CH.y0 - CH.y1);
     const vy = nearTop ? Y(Teq) + ts(30) : Math.min(Y(Teq) + ts(12), CH.y0 - 4), ny = nearTop ? Y(Teq) + ts(14) : vy - ts(16);
-    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('T', CH.x1 + 6, ny); p.text(`${fi(Teq, 1)} °C`, CH.x1 + 6, vy);
+    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('$T$', CH.x1 + 6, ny); p.text(`$${tx(Teq, 1)}\\,{}^\\circ\\text{C}$`, CH.x1 + 6, vy);
     curve(TW0, Teq, tAnim, p.color(30, 80, 160)); curve(TB0, Teq, tAnim, p.color(200, 90, 20));
     p.noStroke(); p.fill(30, 80, 160); p.circle(X(tAnim), Y(TW), 10); p.fill(200, 90, 20); p.circle(X(tAnim), Y(TB), 10);
     // legend above the chart
     p.strokeWeight(3); p.stroke(30, 80, 160); p.line(CH.x0 + 70, ts(14), CH.x0 + 94, ts(14)); p.stroke(200, 90, 20); p.line(CH.x0 + 70, ts(14) + ts(18), CH.x0 + 94, ts(14) + ts(18));
-    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('vesi', CH.x0 + 100, ts(14) + ts(4)); p.text('kappale', CH.x0 + 100, ts(14) + ts(22));
+    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('$\\text{vesi}$', CH.x0 + 100, ts(14) + ts(4)); p.text('$\\text{kappale}$', CH.x0 + 100, ts(14) + ts(22));
 
     function curve(T0, Te, tEnd, col) {                        // analytic curve T(t) from 0 to the current time
       p.stroke(col); p.strokeWeight(3); p.noFill(); p.beginShape();
@@ -157,6 +158,7 @@ new p5((p) => {
     p.triangle(x2, y2, x2 - L * Math.cos(a - 0.45), y2 - L * Math.sin(a - 0.45), x2 - L * Math.cos(a + 0.45), y2 - L * Math.sin(a + 0.45));
   }
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
-  const fc = (x) => fi(x, x >= 100 ? 0 : 1);                               // heat capacity (J/K)
-  const fq = (x) => (Math.abs(x) >= 1000 ? `${fi(Number((x / 1000).toPrecision(3)), Math.max(0, 2 - Math.floor(Math.log10(Math.abs(x) / 1000))))}&nbsp;kJ` : `${fi(x, 0)}&nbsp;J`);   // three significant figures
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}').replace('-', '−');   // the same inside LaTeX
+  const fc = (x) => tx(x, x >= 100 ? 0 : 1);                               // heat capacity (J/K), TeX number
+  const fq = (x) => (Math.abs(x) >= 1000 ? `${tx(Number((x / 1000).toPrecision(3)), Math.max(0, 2 - Math.floor(Math.log10(Math.abs(x) / 1000))))}\\,\\text{kJ}` : `${tx(x, 0)}\\,\\text{J}`);   // three significant figures, TeX
 });

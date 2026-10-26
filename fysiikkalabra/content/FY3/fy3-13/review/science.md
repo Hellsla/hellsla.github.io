@@ -1,19 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 6c8fd0c792df2e19
+VERDICT: PASS
+CONTENT-HASH: 241b72b62e122e9c
 
 ## Blocking
-- solutions.md:47 — L2-01's check says the gap between −256 °C and −273,15 °C "johtuu kolmen numeron lukemista". False: ±0,005 bar on each reading gives θ₀ only in −266 … −246 °C; the data themselves are off (an ideal gas at 1,36 bar, 95 °C reads 1,064 bar at 15 °C). Fix: blame the measurement error of the two points, magnified by a 270 °C extrapolation (or use 1,06 bar).
 
 ## Polish
-- inquiry.json:284 — the siirto item's "Toinen ryhmä käytti isompaa pulloa" implies bottle size sets the higher pressure; it depends on gas per volume — say it was filled to a higher pressure.
+- inquiry.json (siirto prompt) — "Toinen ryhmä käytti isompaa pulloa" suggests that bottle size raises the pressure. Pressure depends on the amount of gas per volume. — Say that the bottle was filled to a higher pressure.
+- solutions.md:15 (L1-02 Järkevyys) — "lukujen 105 kPa ja 127 kPa suhde": the slope comes from their difference, not their ratio. — Write "erotus 22 kPa 60 asteen välillä".
 
 ## Checked
-- All 12 answers recomputed in one script: all match; L3-02's 67 K agrees with N₂ vapour pressure.
-- Formulas p = p₀ + kθ (valid over the measured range), two-point k, θ₀ = −p₀/k = θ₁ − p₁/k, Δθ₀ = half-range; within the slot's goal.
-- Least-squares line k = 0,3667 kPa/°C, p₀ = 101,26 kPa, θ₀ = −276,2 °C, residuals ≤ 0,57 kPa; the drawn best line and points A, B lie on it.
-- Brute-force search confirms the printed extreme lines are the true steepest and shallowest through all bars: θ₀ −258,97 / −295,19 °C, Δθ₀ = 18,1 °C.
-- Candidate line s₂ (p = 98,9 + 0,42θ) misses exactly the bars at 10, 70, 85 and 100 °C.
-- Figures claimed to scale are: points, ±1 kPa bars, line ends and θ₀ crossings reproduce.
-- Inquiry numbers: suora −276 °C (mistake −296), virhe −276 vs −316 °C, siirto −277 °C (mistake −307), tarkistus-2 −283 °C (mistake −298), kertaus 313/293 ≈ 1,07.
-- Correct options and all feedback are right physics; liquefaction and model limits are named.
-- Exit ticket: 0,36 kPa/°C, interval −282 … −258 °C contains −273,15 °C.
+- Round-1 blocker fixed: L2-01's check now blames the two points' measurement error, magnified by the 270 °C extrapolation. This is correct: rounding alone (±0,005 bar) moves θ₀ by about ±9 °C, and the data are 17 °C off.
+- New source/source_note fields on suora and epavarmuus correctly label the example data as simulated.
+- All 12 exercise answers were recomputed independently and match answers.py and exercises.json within tolerance (−272,2; 0,3667; 5,25; 13; 0,893; −256,0; 14,1; −270,0; 18; 20,3; 28,19; 1,86).
+- Least squares gives k = 0,3667 kPa/°C, p₀ = 101,26 kPa and θ₀ = −276,2 °C, which agree with the best line, points A and B, and the worked example (−276,0 °C).
+- Extreme lines 100,1 + 0,387θ and 102,3 + 0,347θ give −258,7 / −294,8 °C and Δθ₀ = 18 °C. The interval contains −273,15 °C.
+- Inquiry numbers: suora −275,8 (mistake −295,9), siirto −276,9 (−306,9), tarkistus-2 −282,9 (−297,9), virhe −276,1 vs −316, kertaus 1,068, exit 0,36 and −282…−258.
+- s₂ in the SVG is p ≈ 98,9 + 0,42θ and misses the bars at 10, 70, 85 and 100 °C. s₁ ≈ 100,1 + 0,387θ.
+- The to-scale formula figure checks out: θ₀ markers at −276, −259 and −295 °C, and the points and lines map correctly.
+- L3-02: N₂ at 0,366·T kPa meets its vapour-pressure curve at ≈ 67 K, as stated.
+- Formulas, their linear-range condition and the liquefaction limit are stated; everything is within FY3 scope.

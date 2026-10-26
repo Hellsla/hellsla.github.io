@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 91491325ded5c903
+VERDICT: PASS
+CONTENT-HASH: e282dfdc8e6d6106
 
 ## Blocking
-- inquiry.json exp-1 / ruisku / check-2 / check-3 — the slot's skill goal ("kääntäen verrannollisuus graafisesti p = vakio·1/V; uuden taulukkosarakkeen laskeminen, esim. 1/V") is not on the core path: exp-1 records p and pV only, "ruisku" says "pV (tai 1/V)", and the two items that make the student use (1/V, p), check-2 and check-3, are optional; a student who skips the Valinnainen boxes never draws the straight line — fix: add `1/V` to exp-1's measure list and ask in its intro to tick "Piirrä p 1/V:n funktiona" and describe the shape; make check-2 core (drop check-1 or keep both), keep check-3 optional.
 
 ## Polish
-- inquiry.json johtopaatos — prompt and criteria never ask about the (1/V, p) graph; add "Millainen kuvaaja syntyy, kun p piirretään 1/V:n funktiona?" so the conclusion carries the lesson's key idea.
-- Core load is high for one hour (2 predictions, 2 experiments with a question inside exp-2, ruisku, conclusion): isobaric exp-2 and pred-2 are not in the Boyle goal line; consider closing exp-2 as Valinnainen.
-- exp-1 table shows pV in J, the sim readout shows kPa·ml and pred-1 feedback says "5,00 J": one unit through the page, or one sentence linking 5000 kPa·ml = 5,00 J.
-- pred-3 is optional but its reveal needs min 3 rows while exp-1 asks min 2: a student with two rows sees it locked; set both to 3 or the reveal to 2.
-- The hook's second question (can the volume change be calculated beforehand?) is answered only in the example and the optional reflect; say so in the conclusion's last line.
+- inquiry.json exp-1 — the intro never tells the student to tick "Piirrä p 1/V:n funktiona"; the core path (conclusion: "laske riveillesi myös 1/V") has the student compute the column and predict the line but not see it in the sim, only in the theory text. Add one sentence to the intro: tick the box and describe the shape.
+- inquiry.json exp-1 / ruisku — the sim table records p and pV; "ruisku" says "pV (tai 1/V)". Say "laske sarake 1/V" in ruisku so the new-column skill is practised on the data, not only in the conclusion.
+- Core load is high for one hour (2 predictions, 2 experiments with a question, ruisku, conclusion); exp-2 and pred-2 are the isobaric side and could be closed as Valinnainen.
+- exp-1 table shows pV in J, the sim readout kPa·ml; one sentence linking 5000 kPa·ml = 5,00 J.
+- check-2 is core and has a hand-held (1/V, p) graph, but the student draws one only in exercise L2-03.
 
 ## Checked
-- Core path otherwise clear; retrieval, pred-3, reflect, Etsi virhe, siirto, check-2, check-3 sit in closed Valinnainen boxes.
-- Conclusion waits for exp-1 and the student's text; model answer calls sim values model values and the ruisku data "keksityt".
-- "Ruiskukoe" carries source simulated badge; data checked (pV 5040 except 30 ml row 5430) and the diagnosis (fast compression heats) is right.
-- Sim at 390 px: collisions, gauge, graph and 1/V column legible; predictions can be refuted (exp-2 refutes the "200 ml" option).
-- Example staged and correct (1,036 l); Finnish fine.
+- Round-1 blocker fixed: conclusion asks for 1/V from the student's own rows, its model answer gives 0,020/0,040/0,010 and the straight line, criteria include it; check-2 (k = pV, p = k/V) is core.
+- pred-3 reveal min 3 now equals exp-1 min 3 (no locked state).
+- Conclusion gated on exp-1; model values vs. "keksityt" syringe data separated; ruisku has the simulated badge.
+- Example staged in five steps, units cancel; exercises 3 levels; exit ticket tests p-V and the 1/V column.
+- Finnish fine; hash identical at start and end.
