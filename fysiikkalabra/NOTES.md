@@ -16,9 +16,13 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   the LaTeX. Inline SVG labels are LaTeX as well (§3). A symbol or formula named in the student's text is inline maths
   everywhere: `lesson.md`, `inquiry.json`, `exercises.json`, `exit-ticket.json` ("$T$:hen", "$(V, p)$-kuvaaja"); a
   number with its unit alone in prose stays plain ("98 N"). The experiments' Alkutila line and table headers turn
-  a symbol in `names`/`measure` labels into maths at build time (scripts/inquiry.py `tex_name`). Open (2026-10-26):
-  the simulation canvas and its DOM readout are still plain interface text; the teacher decides whether they move
-  to KaTeX, and until then a reviewer lists them as polish, not blocking.
+  a symbol in `names`/`measure` labels into maths at build time (scripts/inquiry.py `tex_name`). The simulation too
+  (teacher 2026-10-26, "latexilla kaikki"): every label drawn on the canvas is a `p.text('$…$', x, y)` string, words
+  as `\text{}`, numbers with `{,}`, units `\,\text{kPa}` (`templates/sim-embed.js` draws a `$…$` string with KaTeX
+  over the canvas at p.text's place, size, alignment and fill, and `p.textWidth` measures it as drawn); the readout,
+  slider labels and legends write their symbols, values and units as `$…$` in `.html()` / `createSpan()`. Only a
+  native `<option>` stays plain text (it cannot hold maths), so an option names a case in words, not a symbol.
+  A plain-text symbol anywhere the student looks is a blocking finding.
 - Every formula appears once in display form with its symbols named; inline maths only for short references.
   Inline maths stays on one line.
 - Units: `40\,\text{N}`, `9{,}81\,\text{m/s}^2`. Decimal comma inside maths is `{,}`. Multiplication `\cdot`,

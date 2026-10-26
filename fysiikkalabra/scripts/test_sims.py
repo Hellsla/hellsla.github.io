@@ -6,7 +6,8 @@ and the generic sweep passes: at 360, 390 and 1280 px every combination of each 
 option and each checkbox state is set, two frames are drawn, and then every number in simState must be finite and,
 when the sim exposes label boxes (simState.labels = [{s, x0, y0, x1, y1}, ...] in canvas coordinates), no label may
 leave the 600×400 canvas or overlap another one. Sims without label boxes get the finiteness sweep only, with a
-note. One line per sim; details only on failure."""
+note. The KaTeX labels sim-embed.js draws over the canvas (p.text of a $…$ string) are checked the same way from the
+page: each stays inside the canvas and none overlaps another. One line per sim; details only on failure."""
 import json, sys, pathlib, itertools
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
@@ -23,7 +24,7 @@ SWEEP_JS = """async (combos) => {
   const frames = () => new Promise((f) => requestAnimationFrame(() => requestAnimationFrame(f)));
   const fire = (el) => { el.dispatchEvent(new Event('input', {bubbles: true})); el.dispatchEvent(new Event('change', {bubbles: true})); };
   const boxes = (L) => Array.isArray(L) && L.length && L.every((a) => a && ['x0', 'y0', 'x1', 'y1'].every((k) => typeof a[k] === 'number'));
-  const bad = []; let states = 0, hasBoxes = false;
+  const bad = []; let states = 0, hasBoxes = false, hasTex = false;
   for (const c of combos) {
     c.r.forEach((v, i) => { if (ranges[i]) { ranges[i].value = v; fire(ranges[i]); } });
     c.s.forEach((v, i) => { if (selects[i]) { selects[i].selectedIndex = v; fire(selects[i]); } });
@@ -41,9 +42,16 @@ SWEEP_JS = """async (combos) => {
       for (let i = 0; i < L.length; i++) for (let j = i + 1; j < L.length; j++) { const a = L[i], b = L[j];
         if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) bad.push(`${where} "${a.s}" overlaps "${b.s}"`); }
     }
+    const cv = root.querySelector('canvas'), T = [...root.querySelectorAll('.sim-tex')].filter((e) => e.style.display !== 'none');
+    if (cv && T.length) { hasTex = true;            // KaTeX labels over the canvas: inside it, none on another
+      const where = `[${c.r.join(',')}|${c.s.join(',')}|${c.c.join(',')}]`, R = cv.getBoundingClientRect(), B = T.map((e) => [e, e.getBoundingClientRect()]);
+      for (const [e, r] of B) if (r.left < R.left - 2 || r.top < R.top - 2 || r.right > R.right + 2 || r.bottom > R.bottom + 2) bad.push(`${where} "${e.__s}" leaves the canvas`);
+      for (let i = 0; i < B.length; i++) for (let j = i + 1; j < B.length; j++) { const a = B[i][1], b = B[j][1];
+        if (Math.min(a.right, b.right) - Math.max(a.left, b.left) > 2 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 2) bad.push(`${where} "${B[i][0].__s}" overlaps "${B[j][0].__s}"`); }
+    }
     if (bad.length > 40) break;
   }
-  return {states, hasBoxes, bad: [...new Set(bad)].slice(0, 8),
+  return {states, hasBoxes, hasTex, bad: [...new Set(bad)].slice(0, 8),
           controls: {ranges: ranges.map((r) => [+r.min, +r.max]), selects: selects.map((s) => s.options.length), checks: checks.length}};
 }"""
 
@@ -82,8 +90,9 @@ def sweep(b, page_file):
         page.close()
         notes.append(f"{w}px:{r['states']}")
         bad += [f"{w} px {x}" for x in r["bad"]]
-        has_boxes = r["hasBoxes"]
+        has_boxes, has_tex = r["hasBoxes"], r["hasTex"]
     label_note = "labels checked" if has_boxes else "no label boxes (simState.labels), finiteness only"
+    if has_tex: label_note += ", KaTeX labels checked"
     return (not bad, f"sweep {' '.join(notes)} states, {label_note}", bad)
 
 

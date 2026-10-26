@@ -18,10 +18,10 @@ new p5((p) => {
   const TH = { x: 270, y0: 192, y1: 72 };                               // thermometer: −50 °C at y0, 150 °C at y1
   const CH = { x0: 345, x1: 575, y0: 320, y1: 50 };                     // chart area (axes at x0 and y0)
   const AX = {                                                          // axis maximum, tick step, name
-    isoterminen: { x: [100, 20, 'V (ml)'], y: [300, 50, 'p (kPa)'] }, kaanteinen: { x: [0.05, 0.01, '1/V (1/ml)'], y: [300, 50, 'p (kPa)'] },
-    isobaarinen: { x: [500, 100, 'T (K)'], y: [80, 20, 'V (ml)'] }, isokoorinen: { x: [500, 100, 'T (K)'], y: [160, 40, 'p (kPa)'] } };
-  const CONST = { isoterminen: ['pV', 'kPa·ml', (V, pp) => pp * V, 0],   // name, unit, value from (V ml, p kPa, T K), decimals
-    isobaarinen: ['V/T', 'ml/K', (V, pp, T) => V / T, 4], isokoorinen: ['p/T', 'kPa/K', (V, pp, T) => pp / T, 4] };
+    isoterminen: { x: [100, 20, 'V', '\\text{ml}'], y: [300, 50, 'p', '\\text{kPa}'] }, kaanteinen: { x: [0.05, 0.01, '1/V', '1/\\text{ml}'], y: [300, 50, 'p', '\\text{kPa}'] },
+    isobaarinen: { x: [500, 100, 'T', '\\text{K}'], y: [80, 20, 'V', '\\text{ml}'] }, isokoorinen: { x: [500, 100, 'T', '\\text{K}'], y: [160, 40, 'p', '\\text{kPa}'] } };   // name, unit in TeX
+  const CONST = { isoterminen: ['pV', '\\text{kPa}\\cdot\\text{ml}', (V, pp) => pp * V, 0],   // name, unit, value from (V ml, p kPa, T K), decimals
+    isobaarinen: ['V/T', '\\text{ml/K}', (V, pp, T) => V / T, 4], isokoorinen: ['p/T', '\\text{kPa/K}', (V, pp, T) => pp / T, 4] };
   const COLD = [40, 105, 215], ROOM = [150, 140, 180], HOT = [240, 120, 25];   // −50 °C, 20 °C, 150 °C
   let sel, sV, lV, sT, lT, chk, lChk, sSp, readout, table, mode = 'isoterminen', rows = [], parts = [], flashes = [], hits = 0, full = false, acc = 0;
 
@@ -64,13 +64,13 @@ new p5((p) => {
     button(btns, 'Tyhjennä', () => { rows = []; full = false; });
     const ls = p.createElement('label').parent(controls);
     p.createSpan('Tilanmuutos').parent(ls); sel = p.createSelect().parent(ls);
-    sel.option('isoterminen (T vakio)', 'isoterminen'); sel.option('isobaarinen (p vakio)', 'isobaarinen');
-    sel.option('isokoorinen (V vakio)', 'isokoorinen'); sel.elt.addEventListener('change', reset);
+    sel.option('isoterminen (lämpötila vakio)', 'isoterminen'); sel.option('isobaarinen (paine vakio)', 'isobaarinen');
+    sel.option('isokoorinen (tilavuus vakio)', 'isokoorinen'); sel.elt.addEventListener('change', reset);
     [sV, lV] = slider(controls, 20, 100, V0, 1);                          // tilavuus V (ml)
     [sT, lT] = slider(controls, -50, 150, TC0, 1);                        // lämpötila T (°C)
     lChk = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.5rem').style('min-height', '40px');
     chk = p.createElement('input').attribute('type', 'checkbox').parent(lChk).style('width', '22px').style('height', '22px');
-    p.createSpan('Piirrä p 1/V:n funktiona').parent(lChk);
+    p.createSpan('Piirrä $p$ $1/V$:n funktiona').parent(lChk);
     const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
     for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
     sSp.selected('1');                                                    // pace of the particles only
@@ -106,22 +106,22 @@ new p5((p) => {
       flashes = flashes.filter((f) => (f.age += DT) < 0.25);
     }
 
-    lV.html(`Tilavuus V = ${V} ml`);
-    lT.html(`Lämpötila T = ${fi(T - 273.15, 0)} °C = ${fi(T, 2)} K`);
-    const cText = iso ? `pV = ${fi(pk, 1)} kPa · ${fi(V, 1)} ml` : mode === 'isobaarinen' ? `V/T = ${fi(V, 1)} ml / ${fi(T, 2)} K` : `p/T = ${fi(pk, 1)} kPa / ${fi(T, 2)} K`;
+    lV.html(`Tilavuus $V = ${tx(V, 0)}\\,\\text{ml}$`);
+    lT.html(`Lämpötila $\\theta = ${tx(T - 273.15, 0)}\\,{}^\\circ\\text{C}$, $T = ${tx(T, 2)}\\,\\text{K}$`);
+    const cText = iso ? `pV = ${tx(pk, 1)}\\,\\text{kPa}\\cdot ${tx(V, 1)}\\,\\text{ml}` : mode === 'isobaarinen' ? `V/T = ${tx(V, 1)}\\,\\text{ml} / ${tx(T, 2)}\\,\\text{K}` : `p/T = ${tx(pk, 1)}\\,\\text{kPa} / ${tx(T, 2)}\\,\\text{K}`;
+    const axText = (a) => `$${a[2]}$: $0\\text{–}${tx(a[0], inv && a === ax.x ? 2 : 0)}\\,${a[3]}$`;
     readout.html(`Tilanmuutos: <strong>${mode}</strong> (${iso ? 'lämpötila' : mode === 'isobaarinen' ? 'paine' : 'tilavuus'} on vakio)` +
-                 `<br>Paine p = <strong>${fi(pk, 1)} kPa</strong>, tilavuus V = <strong>${fi(V, 1)} ml</strong>, ` +
-                 `lämpötila T = ${fi(T - 273.15, 0)} °C = <strong>${fi(T, 2)} K</strong>` +
-                 `<br>Vakio ${cText} = <strong>${fi(c, cDec)} ${cUnit}</strong>` +
-                 `<br>Kuvaajan akselit: ${ax.x[2].split(' ')[0]} 0…${fi(ax.x[0], inv ? 2 : 0)} ${ax.x[2].split(' ')[1].slice(1, -1)}, ` +
-                 `${ax.y[2].split(' ')[0]} 0…${ax.y[0]} ${ax.y[2].split(' ')[1].slice(1, -1)}. ` +
+                 `<br>Paine <strong>$p = ${tx(pk, 1)}\\,\\text{kPa}$</strong>, tilavuus <strong>$V = ${tx(V, 1)}\\,\\text{ml}$</strong>, ` +
+                 `lämpötila $\\theta = ${tx(T - 273.15, 0)}\\,{}^\\circ\\text{C}$, <strong>$T = ${tx(T, 2)}\\,\\text{K}$</strong>` +
+                 `<br>Vakio <strong>$${cText} = ${tx(c, cDec)}\\,${cUnit}$</strong>` +
+                 `<br>Kuvaajan akselit: ${axText(ax.x)}, ${axText(ax.y)}. ` +
                  `Taulukossa ${rows.length}/${MAX_ROWS} mittausta${full ? ', taulukko on täynnä' : ''}.`);
     const td = '<td style="padding:.4rem .25rem">', th = '<th style="padding:.4rem .25rem;letter-spacing:0">';   // narrow cells, five columns fit a phone
-    let h = `<table><thead><tr>${th}V<br>(ml)</th>${th}1/V<br>(1/ml)</th>${th}p<br>(kPa)</th>${th}T<br>(K)</th>${th}${cName}<br>(${cUnit})</th></tr></thead><tbody>`;
+    let h = `<table><thead><tr>${th}$V$<br>$(\\text{ml})$</th>${th}$1/V$<br>$(1/\\text{ml})$</th>${th}$p$<br>$(\\text{kPa})$</th>${th}$T$<br>$(\\text{K})$</th>${th}$${cName}$<br>$(${cUnit})$</th></tr></thead><tbody>`;
     for (const r of rows) { const Vm = r.V * 1e6, pr = r.p / 1000;
-      h += `<tr>${td}${fi(Vm, 1)}</td>${td}${fs(1 / Vm)}</td>${td}${fi(pr, 1)}</td>${td}${fi(r.T, 2)}</td>${td}${fi(cFn(Vm, pr, r.T), cDec)}</td></tr>`; }
+      h += `<tr>${td}$${tx(Vm, 1)}$</td>${td}$${txs(1 / Vm)}$</td>${td}$${tx(pr, 1)}$</td>${td}$${tx(r.T, 2)}$</td>${td}$${tx(cFn(Vm, pr, r.T), cDec)}$</td></tr>`; }
     if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .25rem">Ei mittauksia. Paina ”Tallenna mittaus”.</td></tr>';
-    h += '</tbody></table>'; if (table.elt.innerHTML !== h) table.elt.innerHTML = h;
+    h += '</tbody></table>'; table.html(h);                          // re-rendered only when the string changes
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k), labels = [];
     const lab = (s, x, y, align) => {                                     // draw a text label and remember its box for the sweep
@@ -154,7 +154,7 @@ new p5((p) => {
     } else if (piece === 'punnus') {
       paint(grad(mid - 40, 0, mid + 40, 0, [[0, '#3a3e44'], [0.3, '#7c838b'], [1, '#2c3035']]), (g) => g.roundRect(mid - 40, yP - 50, 80, 36, 4));
       p.fill(70, 75, 82); p.rect(mid - 8, yP - 58, 16, 9, 3);
-      p.textSize(ts(10)); p.fill(255); lab('punnus', mid, yP - 27, p.CENTER);
+      p.textSize(ts(10)); p.fill(255); lab('$\\text{punnus}$', mid, yP - 27, p.CENTER);
     } else for (const x of [CYL.l - CYL.w - 10, CYL.r - 8]) {          // pins through both walls lock the piston
       paint(metal(0, yP - 27, 0, yP - 17), (g) => g.roundRect(x, yP - 27, 26, 10, 2)); p.fill(30); p.circle(x + (x < mid ? 5 : 21), yP - 22, 5);
     }
@@ -172,8 +172,8 @@ new p5((p) => {
     p.stroke(60);
     for (let v = 0; v <= GA.max; v += 10) { p.strokeWeight(v % 50 ? 1 : 2); ray(v, rim - (v % 50 ? 4 : 8), rim); }
     p.noStroke(); p.fill(50); p.textSize(ts(9));
-    for (const v of k > 1.5 ? [] : [0, 100, 200, 300]) lab(`${v}`, GA.x + 22 * Math.cos(ang(v)), GA.y + 22 * Math.sin(ang(v)) + ts(3), p.CENTER);
-    lab('kPa', GA.x, GA.y + (k > 1.5 ? -14 : 41), p.CENTER);   // below the hub when 100 and 200 are printed; 41 keeps a 5 px gap to "0" and "300" in wider fonts
+    for (const v of k > 1.5 ? [] : [0, 100, 200, 300]) lab(`$${v}$`, GA.x + 22 * Math.cos(ang(v)), GA.y + 22 * Math.sin(ang(v)) + ts(3), p.CENTER);
+    lab('$\\text{kPa}$', GA.x, GA.y + (k > 1.5 ? -14 : 41), p.CENTER);   // below the hub when 100 and 200 are printed; 41 keeps a 5 px gap to "0" and "300" in wider fonts
     p.stroke(200, 50, 40); p.strokeWeight(3); ray(needle, -6, rim - 6);  // needle
     p.noStroke(); p.fill(40); p.circle(GA.x, GA.y, 8); p.fill(255, 255, 255, 120); p.circle(GA.x - 1, GA.y - 1, 3);
     // thermometer: glass tube, liquid up to T, a colour strip that is the legend of the gas colour, scale in °C
@@ -185,12 +185,12 @@ new p5((p) => {
     p.stroke(90); p.strokeWeight(1);
     for (let tc = -50; tc <= 150; tc += 25) p.line(TH.x - 9, yT(tc), TH.x - (tc % 50 ? 6 : 3), yT(tc));
     p.noStroke(); p.fill(60); p.textSize(ts(9));
-    for (let tc = -50; tc <= 150; tc += k > 1.5 ? 100 : 50) lab(`${fi(tc, 0)} °C`, TH.x - 12, yT(tc) + ts(3), p.RIGHT);
+    for (let tc = -50; tc <= 150; tc += k > 1.5 ? 100 : 50) lab(`$${tx(tc, 0)}\\,{}^\\circ\\text{C}$`, TH.x - 12, yT(tc) + ts(3), p.RIGHT);
 
     p.fill(40); p.textSize(ts(13));
-    lab(`${fi(pk, 1)} kPa`, GA.x, GA.y - GA.r - 8, p.CENTER); const vs = `V = ${fi(V, 1)} ml`;
+    lab(`$${tx(pk, 1)}\\,\\text{kPa}$`, GA.x, GA.y - GA.r - 8, p.CENTER); const vs = `$V = ${tx(V, 1)}\\,\\text{ml}$`;
     lab(vs, Math.max(mid, p.textWidth(vs) / 2 + 3), CYL.bot + 22 + ts(13), p.CENTER);   // kept inside the left edge on a phone
-    p.fill(col[0] * 0.8, col[1] * 0.8, col[2] * 0.8); lab(`T = ${fi(T, 0)} K`, 222, 20 + ts(13), p.CENTER);
+    p.fill(col[0] * 0.8, col[1] * 0.8, col[2] * 0.8); lab(`$T = ${tx(T, 0)}\\,\\text{K}$`, 222, 20 + ts(13), p.CENTER);
     // chart from zero: panel, grid, axes with arrows, tick labels (every second one on a narrow screen)
     const X = (v) => CH.x0 + (CH.x1 - CH.x0) * v / ax.x[0], Y = (v) => CH.y0 - (CH.y0 - CH.y1) * v / ax.y[0];
     const nx = Math.round(ax.x[0] / ax.x[1]), ny = Math.round(ax.y[0] / ax.y[1]), every = k > 1.5 ? 2 : 1;
@@ -201,9 +201,9 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1 + 8, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 8);
     p.noStroke(); p.fill(60); p.triangle(CH.x1 + 14, CH.y0, CH.x1 + 6, CH.y0 - 4, CH.x1 + 6, CH.y0 + 4); p.triangle(CH.x0, CH.y1 - 14, CH.x0 - 4, CH.y1 - 6, CH.x0 + 4, CH.y1 - 6);
     p.textSize(ts(11));
-    for (let j = 0; j <= ny; j += every) lab(`${j * ax.y[1]}`, CH.x0 - 6, Y(j * ax.y[1]) + ts(4), p.RIGHT);
-    for (let i = every; i <= nx; i += every) lab(fi(i * ax.x[1], inv ? 2 : 0), X(i * ax.x[1]), CH.y0 + ts(16), p.CENTER);
-    p.textSize(ts(12)); lab(ax.x[2], CH.x1, CH.y0 - 8, p.RIGHT); lab(ax.y[2], CH.x0 + 10, CH.y1 - 10, p.LEFT);   // lower right of the plot is always empty
+    for (let j = 0; j <= ny; j += every) lab(`$${j * ax.y[1]}$`, CH.x0 - 6, Y(j * ax.y[1]) + ts(4), p.RIGHT);
+    for (let i = every; i <= nx; i += every) lab(`$${tx(i * ax.x[1], inv ? 2 : 0)}$`, X(i * ax.x[1]), CH.y0 + ts(16), p.CENTER);
+    p.textSize(ts(12)); lab(`$${ax.x[2]}\\ (${ax.x[3]})$`, CH.x1, CH.y0 - 8, p.RIGHT); lab(`$${ax.y[2]}\\ (${ax.y[3]})$`, CH.x0 + 10, CH.y1 - 10, p.LEFT);   // lower right of the plot is always empty
     // theory (faint): the state along the whole slider range; a dashed line continues a proportionality to the origin
     const pt = (Vm, pp, TT) => inv ? [X(1 / Vm), Y(pp)] : iso ? [X(Vm), Y(pp)] : [X(TT), Y(mode === 'isobaarinen' ? Vm : pp)];
     const curve = Array.from({ length: 81 }, (_, i) => { const Vm = 20 + i, TT = 223.15 + 2.5 * i;
@@ -237,5 +237,6 @@ new p5((p) => {
   // fill a path with a canvas gradient, then give p5 its own fill style back (p5 caches it)
   const paint = (style, path) => { const g = p.drawingContext, prev = g.fillStyle; g.fillStyle = style; g.beginPath(); path(g); g.fill(); g.fillStyle = prev; };
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');                   // Finnish decimal comma and minus sign
-  const fs = (x) => x.toPrecision(3).replace('.', ',');                                      // three significant figures
+  const txs = (x) => x.toPrecision(3).replace('.', '{,}');                                   // three significant figures, inside LaTeX
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');                                      // decimal comma inside LaTeX                                      // three significant figures
 });

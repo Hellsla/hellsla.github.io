@@ -13,7 +13,7 @@
 // internal energy grows 0,50 g · 718 J/(kg·K) = 0,359 J per kelvin, so ΔU = C·(T − T0) and one model energy unit is
 // C·T0/E0 joules. W and Q are summed in the same unit, so ΔU = Q + W holds to rounding error: bookkeeping, not a fit.
 // Pressure (shown as p/p0) is the kinetic one averaged over both directions, p ∝ E/A, relative to the start; the
-// pressure on the piston itself (x direction only) is higher after an insulated push (Lisätietoja says so).
+// pressure on the piston itself (x direction only) is higher after an insulated push (Mallin oletukset says so).
 // Piston speeds: hidas 4 px/s (≈ 1/50 of the mean particle speed 213 px/s, nearly the adiabatic limit T → 407 K),
 // nopea 60 px/s (≈ 1/3,5): the particles meet the advancing piston at a higher relative speed, the gas pushes back
 // harder, and the same stroke takes more work (47,2 J against 40,8 J); ΔT = W/C in both, since Q = 0.
@@ -116,29 +116,7 @@ new p5((p) => {
     selAnim = select('fy3-5-speed', 'Animaatio', [['hidas (0,5×)', '0.5'], ['normaali (1×)', '1'], ['nopea (3×)', '3']], '1');
     selAnim.changed(() => { speed = Number(selAnim.value()); });
     readout = p.createDiv('').parent('sim-root').class('readout');
-    const det = p.createElement('details').parent('sim-root').class('note');
-    p.createElement('summary', 'Lisätietoja').parent(det);
-    p.createP('Malli: 40 hiukkasta liikkuu tasossa eivätkä törmää toisiinsa. Mäntään osuva hiukkanen kimpoaa kuin pallo mailasta: ' +
-              'jos mäntä liikkuu sitä vastaan nopeudella u, hiukkasen nopeus männän suunnassa kasvaa 2u:n verran. Männän työ W on ' +
-              'hiukkasten näin saama liike-energia, ja se on sama kuin männän voima kertaa matka. Ulos vedettäessä hiukkaset kimpoavat ' +
-              'männästä hitaampina, ja W on negatiivinen.').parent(det);
-    p.createP('Hidas mäntä liikkuu noin 50 kertaa hitaammin kuin hiukkaset keskimäärin, nopea vain noin 3,5 kertaa hitaammin. ' +
-              'Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla ' +
-              'voimalla, ja samalla työntömatkalla työ on hieman suurempi. Eristetyssä sylinterissä koko työ jää kaasuun ' +
-              '(ΔU = W), joten lämpötila nousee täsmälleen työn verran enemmän. Oikeassa pumpussa mäntä on paljon hitaampi kuin ' +
-              'molekyylit (noin 500 m/s), joten siellä ero syntyy lähinnä siitä, ehtiikö lämpö siirtyä pois.').parent(det);
-    p.createP('Eristetty seinä ei muuta hiukkasen nopeutta, joten Q = 0. Johtava seinä on huoneen lämpötilassa 293 K: siihen osuva ' +
-              'hiukkanen kimpoaa hitaampana, jos kaasu on huonetta lämpimämpää, ja nopeampana, jos kaasu on kylmempää. Näin siirtynyt ' +
-              'energia on lämpömäärä Q.').parent(det);
-    p.createP('Luvut ovat mallin arvoja. Mallin kaasu vastaa lämpökapasiteetiltaan 0,50 g:aa ilmaa: sen sisäenergia kasvaa ' +
-              '0,359 J jokaista kelviniä kohden. Oikea 0,50 g ilmaa lämpenisi samassa eristetyssä puristuksessa vain noin 36 K, ' +
-              'ja työ olisi noin 13 J; johtavassa sylinterissä työ olisi noin 12 J. Malli liioittelee lämpenemistä kahdesta syystä: ' +
-              'hiukkaset liikkuvat tasossa eivätkä avaruudessa, ja vain mäntä muuttaa niiden männän suuntaista liikettä, koska ' +
-              'hiukkaset eivät törmää toisiinsa.').parent(det);
-    p.createP('Malli on täysin toistettava: työntö alkutilasta alkaa aina samasta kaasun tilasta, joten samat valinnat antavat ' +
-              'samat lukemat. Paine p/p₀ on molempien suuntien keskiarvo, laskettu hiukkasten liike-energiasta ja tilavuudesta. ' +
-              'Mäntään kohdistuva paine on hitaan eristetyn työnnön jälkeen suurempi, noin 2,4 · p₀, koska vain männän suuntainen liike ' +
-              'nopeutuu. Animaation nopeus muuttaa vain tahtia, ei lukemia.').parent(det);
+    p.createP('Väri kertoo hiukkasen nopeuden; vihreä kehä: hiukkanen kimpoaa männästä nopeampana.').parent('sim-root').class('note');
     window.simAdvance = (s) => { advance(s); return update(); };
     window.simRestart = () => { restart(); update(); };
     window.simMove = (dir) => { if (dir < 0) push(); if (dir > 0 && X < L0) move = 1; return update(); };
@@ -157,9 +135,9 @@ new p5((p) => {
   p.draw = () => {
     advance(Math.min(p.deltaTime, 100) / 1000 * speed);
     const S = update(), { W, Q, dU, T } = S;
-    readout.html(`Männän työ kaasuun W = <strong>${fs(W, 1)} J</strong>, lämpö seinien läpi Q = <strong>${fs(Q, 1)} J</strong>` +
-      `<br>Sisäenergian muutos ΔU = <strong>${fs(dU, 1)} J</strong>` +
-      `<br>Kaasu: T = <strong>${fi(T, 0)} K</strong> (ΔT = ${fs(T - T0, 0)} K), V = ${fi(S.V, 0)} %, paine p = ${fi(S.p, 2)} · p₀`);
+    readout.html(`Männän työ kaasuun <strong>$W = ${txs(W, 1)}\\,\\text{J}$</strong>, lämpö seinien läpi <strong>$Q = ${txs(Q, 1)}\\,\\text{J}$</strong>` +
+      `<br>Sisäenergian muutos <strong>$\\Delta U = ${txs(dU, 1)}\\,\\text{J}$</strong>` +
+      `<br>Kaasu: <strong>$T = ${tx(T, 0)}\\,\\text{K}$</strong> ($\\Delta T = ${txs(T - T0, 0)}\\,\\text{K}$), $V = ${tx(S.V, 0)}\\,\\%$, paine $p = ${tx(S.p, 2)} \\cdot p_0$`);
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
     const ts = (n) => Math.round(n * k), ctx = p.drawingContext;
@@ -223,7 +201,7 @@ new p5((p) => {
     if (move !== 0) {
       const ya = y0 + h / 2 - 34, xa = xp + PW + 14, L = 34;
       if (move < 0) arrow(xa + L, ya, xa, ya, COL_W, 4); else arrow(xa, ya, xa + L, ya, COL_W, 4);
-      p.fill(...COL_W); lab('W', xa + L / 2, ya - 10, p.CENTER);
+      p.fill(...COL_W); lab('$W$', xa + L / 2, ya - 10, p.CENTER);
     }
     if (cond && Math.abs(qRate) > 0.2) {
       const L = 8 + 16 * Math.min(1, Math.sqrt(Math.abs(qRate) / 30)), out = qRate < 0, yt = y0 - WT - 4, yb = y0 + h + WT + 4;
@@ -231,22 +209,22 @@ new p5((p) => {
         if (out) { arrow(ax, yt, ax, yt - L, COL_Q, 3); arrow(ax, yb, ax, yb + L, COL_Q, 3); }
         else { arrow(ax, yt - L, ax, yt, COL_Q, 3); arrow(ax, yb + L, ax, yb, COL_Q, 3); }
       }
-      if (k <= 1.3) { p.fill(...COL_Q); lab('Q', 330, yt - 6); }
+      if (k <= 1.3) { p.fill(...COL_Q); lab('$Q$', 330, yt - 6); }
     }
     p.textStyle(p.NORMAL);
 
     // values and legends around the cylinder
-    p.fill(30); p.textSize(ts(17)); const sT = `T = ${fi(T, 0)} K`; lab(sT, x0 - WT, 36); const xT = x0 - WT + p.textWidth('T = 000 K') + 18;
+    p.fill(30); p.textSize(ts(17)); const sT = `$T = ${tx(T, 0)}\\,\\text{K}$`; lab(sT, x0 - WT, 36); const xT = x0 - WT + p.textWidth('$T = 000\\,\\text{K}$') + 18;
     p.textSize(ts(13)); const yD = y0 + h + WT + INS + 8, yV = yD + 4 + ts(12), xw = xr + 4;
     p.stroke(80); p.strokeWeight(1.2); p.line(x0, yD, xp, yD); p.line(x0, yD - 5, x0, yD + 5); p.line(xp, yD - 5, xp, yD + 5);
-    p.noStroke(); p.fill(40); const wl = cond ? 'johtava seinä' : 'eristetty seinä', xwl = xw - p.textWidth(wl);
+    p.noStroke(); p.fill(40); const wl = cond ? '$\\text{johtava seinä}$' : '$\\text{eristetty seinä}$', xwl = xw - p.textWidth(wl);
     lab(wl, xw, yV, p.RIGHT);
-    const sV = `V = ${fi(S.V, 0)} %`, hV = p.textWidth(sV) / 2;
+    const sV = `$V = ${tx(S.V, 0)}\\,\\%$`, hV = p.textWidth(sV) / 2;
     lab(sV, Math.max(x0 + hV, Math.min(xwl - 10 - hV, (x0 + xp) / 2)), yV, p.CENTER);
     const lw = k > 1.5 ? 30 : 44; p.textSize(ts(13));                  // speed legend in the top row, right of T
-    lab('hidas', xT, 36); const lx0 = xT + p.textWidth('hidas') + 5;
+    lab('$\\text{hidas}$', xT, 36); const lx0 = xT + p.textWidth('$\\text{hidas}$') + 5;
     rect(lx0, 36 - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.fill(40); lab('nopea', lx0 + lw + 5, 36);
+    p.fill(40); lab('$\\text{nopea}$', lx0 + lw + 5, 36);
 
     // energy bars Q, W, ΔU on one axis, zero in the middle, gridlines at the tick steps
     const v = Math.max(Math.abs(W), Math.abs(Q), Math.abs(dU));
@@ -256,17 +234,17 @@ new p5((p) => {
     for (let j = -2; j <= 2; j++) if (j) p.line(BAR.ax, Y(j * tStep), 592, Y(j * tStep));
     p.stroke(60); p.strokeWeight(2); p.line(BAR.ax, BAR.y0 - 6, BAR.ax, BAR.y1 + 6); p.line(BAR.ax, ym, 592, ym);
     p.noStroke(); p.fill(60); p.textSize(ts(11));
-    for (let j = -2; j <= 2; j++) lab(j ? fs(j * tStep, 0) : '0', BAR.ax - 5, Y(j * tStep) + ts(4), p.RIGHT);
-    p.textSize(ts(13)); p.fill(40); lab('energia (J)', 592, 40, p.RIGHT);
-    const vals = [Q, W, dU], cols = [COL_Q, COL_W, COL_U], names = ['Q', 'W', 'ΔU'], dec = k > 1.3 ? 0 : 1;
+    for (let j = -2; j <= 2; j++) lab(j ? `$${txs(j * tStep, 0)}$` : '$0$', BAR.ax - 5, Y(j * tStep) + ts(4), p.RIGHT);
+    p.textSize(ts(13)); p.fill(40); lab('$\\text{energia}\\ (\\text{J})$', 592, 40, p.RIGHT);
+    const vals = [Q, W, dU], cols = [COL_Q, COL_W, COL_U], names = ['$Q$', '$W$', '$\\Delta U$'], dec = k > 1.3 ? 0 : 1;
     for (let i = 0; i < 3; i++) {
       const bx = BAR.x[i] - BAR.w / 2, yv = Y(vals[i]), c = cols[i], y = Math.min(yv, ym), hb = Math.abs(yv - ym);
       if (hb > 0.5) rect(bx, y, BAR.w, hb, grad(bx, 0, bx + BAR.w, 0, [[0, rgb(c, 0.9)], [0.35, rgb(mix(c, [255, 255, 255], 0.35))], [1, rgb(mix(c, [0, 0, 0], 0.25))]]));
       p.fill(...c); p.textSize(ts(12));
-      if (vals[i] >= 0) lab(fs(vals[i], dec), BAR.x[i], yv - 5, p.CENTER); else lab(fs(vals[i], dec), BAR.x[i], yv + 4 + ts(11), p.CENTER);
+      if (vals[i] >= 0) lab(`$${txs(vals[i], dec)}$`, BAR.x[i], yv - 5, p.CENTER); else lab(`$${txs(vals[i], dec)}$`, BAR.x[i], yv + 4 + ts(11), p.CENTER);
       p.textSize(ts(15)); p.textStyle(p.BOLD); lab(names[i], BAR.x[i], 352, p.CENTER); p.textStyle(p.NORMAL);
     }
-    if (k <= 1.3) { p.fill(40); p.textSize(ts(13)); lab('ΔU = Q + W', BAR.x[1], 390, p.CENTER); }
+    if (k <= 1.3) { p.fill(40); p.textSize(ts(13)); lab('$\\Delta U = Q + W$', BAR.x[1], 390, p.CENTER); }
     window.simState.labels = labels;
   };
 
@@ -274,6 +252,8 @@ new p5((p) => {
     for (const st of [10, 25, 50, 100, 250, 500, 1000]) if (2 * st >= 1.08 * v) return [2 * st, st];
     return [5000, 2500];
   };
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');                                       // decimal comma inside LaTeX
+  const txs = (x, d) => { const s = tx(Math.abs(x) < 0.5 * 10 ** -d ? 0 : x, d); return x >= 0.5 * 10 ** -d ? '+' + s : s; };   // signed
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');                       // decimal comma, minus sign
   const fs = (x, d) => { const s = fi(Math.abs(x) < 0.5 * 10 ** -d ? 0 : x, d); return x >= 0.5 * 10 ** -d ? '+' + s : s; };   // signed
 });

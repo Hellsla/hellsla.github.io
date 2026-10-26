@@ -137,8 +137,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa kaksi kärryä ajaa suoraa rataa pitkin, ja niiden $(t, x)$-kuvaaja piirtyy samalla.",
-      "howto": "Paina *Käynnistä* tai vedä *Hetki t* -liukusäädintä ja katso, mitä radalla ja kuvaajassa tapahtuu. Valitse *Tapaus* ja kokeile, miten kuvaajat muuttuvat. Kärryjen nopeuksia ei kerrota lukuina: nuolet näyttävät vain suunnan ja suuruuden.",
-      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia oikeista kärryistä. Malli on yksinkertainen: kärryt ovat heti täydessä vauhdissa, eikä kitkaa ole."
+      "howto": "Paina *Käynnistä* tai vedä *Hetki $t$* -liukusäädintä ja katso, mitä radalla ja kuvaajassa tapahtuu. Valitse *Tapaus* ja kokeile, miten kuvaajat muuttuvat. Nuolen suunta ja pituus näyttävät nopeuden, ja radan pisteet merkitsevät kokonaisia sekunteja. Kuvaajan viiva piirtyy niille hetkille, joissa olet käynyt.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia oikeista kärryistä. Kärryt liikkuvat suoraa rataa pitkin vakionopeudella ja ovat heti täydessä vauhdissa. Kitkaa, kiihtymistä ja kärryjen kokoa ei huomioida. Poikkeus on tapaus 4: kärry $\\text{E}$ ajaa $4\\,\\text{s}$ eteenpäin, seisoo $2\\,\\text{s}$ ja palaa $4\\,\\text{s}$ takaisin samalla vauhdilla, joten se päätyy lähtöpaikkaansa.",
+      "calc": "Nopeuksia ei kerrota lukuina. Lue paikat radalta, kellosta tai kuvaajasta ja laske nopeus paikan muutoksen ja ajan muutoksen suhteena $v = \\dfrac{\\Delta x}{\\Delta t}$. Matka $s$ on kuljetun reitin pituus ja siirtymä $\\Delta x$ on paikan muutos, joten tapauksessa 4 on $\\Delta x = 0\\,\\text{m}$, vaikka $s \\neq 0$."
     },
     {
       "id": "exp-1",

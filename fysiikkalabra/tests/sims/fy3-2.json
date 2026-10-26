@@ -97,7 +97,7 @@
     "note": "canvas is 600x400"
   },
   {
-    "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===4 && l[3].startsWith('Nopeus') && / N$/.test(l[0]) && / m$/.test(l[1]) && / s$/.test(l[2]) ? 1 : 0; })()",
+    "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>simText(x)); return l.length===4 && l[3].startsWith('Nopeus') && /\\\\,\\\\text\\{N\\}\\$$/.test(l[0]) && /\\\\,\\\\text\\{m\\}\\$$/.test(l[1]) && /\\\\,\\\\text\\{s\\}\\$$/.test(l[2]) ? 1 : 0; })()",
     "expected": 1,
     "tol": 0,
     "note": "three slider labels carry units N, m, s"
@@ -116,14 +116,14 @@
   },
   {
     "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=60; r[1].value=10; r[2].value=5;",
-    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('W = F · s = 600 J') && x.includes('P = W / t = 120,0 W') ? 1 : 0 })()",
+    "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$W = Fs = 600\\\\,\\\\text{J}$') && x.includes('$P = W/t = 120{,}0\\\\,\\\\text{W}$') ? 1 : 0 })()",
     "expected": 1,
     "tol": 0,
     "note": "numeric readout is DOM text: W = 600 J and P = 120,0 W (readable on a phone)"
   },
   {
     "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=61; r[1].value=10.5;",
-    "expr": "(() => document.querySelector('#sim-root .readout').textContent.includes('W = F · s = 640,5 J') ? 1 : 0)()",
+    "expr": "(() => simText('#sim-root .readout').includes('$W = Fs = 640{,}5\\\\,\\\\text{J}$') ? 1 : 0)()",
     "expected": 1,
     "tol": 0,
     "note": "a half joule is shown, not rounded away (61 N x 10,5 m = 640,5 J)"

@@ -30,10 +30,10 @@
   "note": "main button Lämmitä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const d=document.querySelector('#sim-root details'); return d && d.querySelector('summary').textContent==='Lisätietoja' && !d.open && /ideaalikaasu/.test(d.textContent) && /mallin arvoja/.test(d.textContent) ? 1 : 0 })()",
+  "expr": "(() => { const n=document.querySelector('#sim-root p.note'); const w=n.textContent.trim().split(/\\s+/).length; return !document.querySelector('#sim-root details') && w<=15 && /Oranssi/.test(n.textContent) && /Sininen/.test(n.textContent) ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "explanations behind a closed Lisätietoja: model values for an ideal gas"
+  "note": "one legend line of at most 15 words (orange = work done by the gas, blue = work done on it), no Lisätietoja box"
  },
  {
   "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='Qin,p2,paluu' && P.Qin.unit==='J' && P.p2.unit==='kPa' ? 1 : 0 })()",
@@ -183,7 +183,7 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('sama paine'); S(0,750); S(1,100); D.restart(); D.go(); D.finish();",
-  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.includes('p = 200 kPa, ΔV = 1,50 l') && t.includes('Q = 750 J, ΔU = 450 J') && !t.includes('Wk') ? 1 : 0 })()",
+  "expr": "(() => { const t=simText('#sim-root .readout'); return t.includes('$p = 200\\\\,\\\\text{kPa}$') && t.includes('$\\\\Delta V = \\\\mathbf{1{,}50}\\\\,\\\\text{l}$') && t.includes('$Q = 750\\\\,\\\\text{J}$') && t.includes('$\\\\Delta U = 450\\\\,\\\\text{J}$') && !t.includes('W_') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout after heating Q = 750 J shows p = 200 kPa, ΔV = 1,50 l, Q and ΔU; W_k is left for the student (Koe 1)"
@@ -477,7 +477,7 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); const sl=document.querySelectorAll('#sim-root select'); const S=(i,v)=>{r[i].value=v; r[i].dispatchEvent(new Event('input'));}; const M=(v)=>{sl[0].value=v; sl[0].dispatchEvent(new Event('change'));}; const D=window.simDebug; M('jäähdytys ensin'); S(0,500); S(1,100); D.restart(); D.go(); D.finish(); D.go(); D.finish();",
-  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.includes('Q1 = 650 J, Q2 = 550 J') && t.includes('W = Q1 − Q2 = 100 J') && t.includes('η = W/Q1 = 15 %') ? 1 : 0 })()",
+  "expr": "(() => { const t=simText('#sim-root .readout'); return t.includes('$Q_1 = 650\\\\,\\\\text{J}$') && t.includes('$Q_2 = 550\\\\,\\\\text{J}$') && t.includes('$W = Q_1 - Q_2 = \\\\mathbf{100}\\\\,\\\\text{J}$') && t.includes('$\\\\eta = W/Q_1 = \\\\mathbf{15}\\\\,\\\\%$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout after cycle B (Q = 500 J, p2 = 100 kPa): Q1 650 J, Q2 550 J, W 100 J, η 15 %"

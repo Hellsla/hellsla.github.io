@@ -56,13 +56,6 @@ new p5((p) => {
     const scrub = () => { running = false; toTime(sl.value()); };         // the student drags the clock: playback stops
     sl.elt.addEventListener('input', scrub); sl.elt.addEventListener('change', scrub);
     p.createP('Nuolen suunta ja pituus näyttävät nopeuden. Pisteet merkitsevät kokonaisia sekunteja.').parent('sim-root').class('note');
-    const det = p.createElement('details').parent('sim-root').class('note');          // explanations stay behind "Lisätietoja"
-    p.createElement('summary', 'Lisätietoja').parent(det);
-    p.createP('Luvut ovat mallin arvoja: kärryt liikkuvat suoraa rataa pitkin vakionopeudella, ja ne ovat heti täydessä ' +
-      'vauhdissa. Kitkaa, kiihtymistä ja kärryjen kokoa ei huomioida. Poikkeus on tapaus 4: kärry E ajaa 4 s eteenpäin, ' +
-      'seisoo 2 s ja palaa 4 s takaisin samalla vauhdilla, joten se päätyy lähtöpaikkaansa.').parent(det);
-    p.createP('Nopeuksia ei kerrota lukuina. Voit lukea paikat radalta, kellosta tai kuvaajasta ja laskea nopeuden ' +
-      'paikan muutoksesta jaettuna ajan muutoksella. Kuvaajan viiva piirtyy niille hetkille, joissa olet käynyt.').parent(det);
     p.textFont('Arial');
     restart();
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
@@ -77,10 +70,10 @@ new p5((p) => {
     const speed = Number(selSp.value()), cs = CASES[selCase.value()], B = cs.B;
     if (running) { toTime(tau + Math.min(p.deltaTime, 100) / 1000 * speed); sl.value(tau); if (tau >= T) running = false; }
     const xA = pos(CART_A, tau), xB = pos(B, tau), sA = path(CART_A, tau), sB = path(B, tau);
-    lSl.html(`Hetki t = ${fi(tau, 1)} s`);
+    lSl.html(`Hetki $t = ${tx(tau, 1)}\\,\\text{s}$`);
     const bt = running ? 'Tauko' : 'Käynnistä'; if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
-    readout.html(`<strong>t = ${fi(tau, 1)} s</strong><br>A: paikka <strong>x = ${fi(xA, 1)} m</strong>, matka s = ${fi(sA, 1)} m<br>` +
-      `${cs.name}: paikka <strong>x = ${fi(xB, 1)} m</strong>, matka s = ${fi(sB, 1)} m`);
+    readout.html(`<strong>$t = ${tx(tau, 1)}\\,\\text{s}$</strong><br>$\\text{A}$: paikka <strong>$x = ${tx(xA, 1)}\\,\\text{m}$</strong>, matka $s = ${tx(sA, 1)}\\,\\text{m}$<br>` +
+      `$\\text{${cs.name}}$: paikka <strong>$x = ${tx(xB, 1)}\\,\\text{m}$</strong>, matka $s = ${tx(sB, 1)}\\,\\text{m}$`);
     window.simState = { tapaus: selCase.value(), t: tau, xA, x2: xB, sA, s2: sB, vA: vel(CART_A, tau), v2: vel(B, tau), tmax, running, speed, labels: null };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
@@ -107,13 +100,13 @@ new p5((p) => {
       if (v !== 0) arrow(cx, ly + 14, cx + v * 14, ly + 14, c);
       // lane badge on the left: the cart's letter in its colour
       p.noStroke(); p.fill(...c); p.circle(14, ly + LANE.h / 2, 24);
-      lab(letter, 14, ly + LANE.h / 2 + fh * 0.36, 'c', fh, [255, 255, 255], true);
+      lab(`$\\text{${letter}}$`, 14, ly + LANE.h / 2 + fh * 0.36, 'c', fh, [255, 255, 255], true);
     }
     // ruler
     p.stroke(60); p.strokeWeight(1.5); p.line(X(XMIN), RULER_Y, X(XMAX), RULER_Y);
     for (let m = XMIN; m <= XMAX; m += 5) { p.strokeWeight(m % 10 === 0 ? 1.5 : 1); p.line(X(m), RULER_Y, X(m), RULER_Y + (m % 10 === 0 ? 7 : 4)); }
-    for (let m = 0; m <= 40; m += 10) lab(String(m), X(m), RULER_Y + 8 + fh, 'c', fh);
-    lab('x (m)', 546, RULER_Y + 8 + fh, 'l', fh);
+    for (let m = 0; m <= 40; m += 10) lab(`$${m}$`, X(m), RULER_Y + 8 + fh, 'c', fh);
+    lab('$x\\ (\\text{m})$', 546, RULER_Y + 8 + fh, 'l', fh);
   }
 
   // a cart: gradient body and cabin, two wheels with spokes that turn with the distance driven
@@ -153,25 +146,23 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(1.5); p.noFill(); p.line(G.x0, G.y0, G.x1 + 8, G.y0); p.line(G.x0, G.y0 + 0, G.x0, G.y1 - 8);
     p.noStroke(); p.fill(60);
     p.triangle(G.x1 + 14, G.y0, G.x1 + 6, G.y0 - 4, G.x1 + 6, G.y0 + 4); p.triangle(G.x0, G.y1 - 14, G.x0 - 4, G.y1 - 6, G.x0 + 4, G.y1 - 6);
-    for (let s = 0; s <= T; s += 2) lab(String(s), GX(s), G.y0 + 4 + fh, 'c', fh);
-    for (let m = 0; m <= 40; m += 10) lab(String(m), G.x0 - 8, GY(m) + fh * 0.36, 'r', fh);
-    lab('t (s)', G.x1 + 24, G.y0 + 4 + fh, 'l', fh);
-    lab('x (m)', G.x0 - 8, G.y1 - 12, 'r', fh);
+    for (let s = 0; s <= T; s += 2) lab(`$${s}$`, GX(s), G.y0 + 4 + fh, 'c', fh);
+    for (let m = 0; m <= 40; m += 10) lab(`$${m}$`, G.x0 - 8, GY(m) + fh * 0.36, 'r', fh);
+    lab('$t\\ (\\text{s})$', G.x1 + 24, G.y0 + 4 + fh, 'l', fh);
+    lab('$x\\ (\\text{m})$', G.x0 - 8, G.y1 - 12, 'r', fh);
     // legend: the same colours and markers as in the track and the graph
     p.stroke(...COL.A); p.strokeWeight(3.2); p.line(G.x1 + 20, 212, G.x1 + 46, 212); p.fill(...COL.A); p.stroke(255); p.strokeWeight(1.5); p.circle(G.x1 + 33, 212, 8);
     p.stroke(...COL.B); p.strokeWeight(3.2); p.line(G.x1 + 20, 212 + ts(26), G.x1 + 46, 212 + ts(26)); p.fill(...COL.B); p.stroke(255); p.strokeWeight(1.5); p.rect(G.x1 + 29, 208 + ts(26), 8, 8, 1.5);
-    lab('A', G.x1 + 52, 212 + fh * 0.36, 'l', fh);
-    lab(name, G.x1 + 52, 212 + ts(26) + fh * 0.36, 'l', fh);
+    lab('$\\text{A}$', G.x1 + 52, 212 + fh * 0.36, 'l', fh);
+    lab(`$\\text{${name}}$`, G.x1 + 52, 212 + ts(26) + fh * 0.36, 'l', fh);
   }
 
   // every canvas text: drawn with a halo, its ink box pushed to simState.labels (canvas coordinates)
   function lab(s, x, y, align, size, col, plain) {
-    const ctx = p.drawingContext;
     p.textStyle(p.NORMAL); p.textAlign(p.LEFT, p.BASELINE); p.textSize(size);
-    const m = ctx.measureText(s), w = m.width, x0 = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
-    if (!plain) { p.stroke(255, 255, 255, 215); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND); p.fill(35); p.text(s, x0, y); }
+    const w = p.textWidth(s), x0 = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
     p.noStroke(); p.fill(...(col || [35, 35, 35])); p.text(s, x0, y);
-    labels.push({ s, x0, y0: y - m.actualBoundingBoxAscent, x1: x0 + w, y1: y + m.actualBoundingBoxDescent });
+    labels.push({ s, x0, y0: y - 0.75 * size, x1: x0 + w, y1: y + 0.25 * size });
   }
   // gradient fill (raw canvas, inside save/restore so p5's own fill state is untouched) with a thin outline
   function grect(x, y, w, h, stops, horiz, r = 4) {
@@ -179,5 +170,5 @@ new p5((p) => {
     stops.forEach((s, i) => g.addColorStop(i / (stops.length - 1), `rgb(${s.map((v) => Math.min(255, Math.round(v))).join(',')})`));
     c.fillStyle = g; c.strokeStyle = r ? 'rgba(0,0,0,0.35)' : 'rgba(0,0,0,0)'; c.lineWidth = 1; c.beginPath(); c.roundRect(x, y, w, h, r); c.fill(); c.stroke(); c.restore();
   }
-  const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');          // Finnish decimal comma and minus sign
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');                         // Finnish decimal comma inside LaTeX
 });
