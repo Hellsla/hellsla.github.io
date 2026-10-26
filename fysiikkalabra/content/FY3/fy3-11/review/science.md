@@ -1,21 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 8ade50b5ff839a29
+CONTENT-HASH: 87ecc45640f9156a
 
 ## Blocking
 
 ## Polish
-- inquiry.json siirto solution — "≈ 23 MW" while the stored answer is 22,5 MW (inside the 3 % tolerance) — write "= 22,5 MW ≈ 23 MW" so the step matches the answer.
-- solutions.md fy3-11-L1-03 — Vastaus "37 %" while answer is 37,2 % and Sijoitus shows 37,2 % — give "37,2 % ≈ 37 %" for consistency (same for L1-05 21,7 → 22 %).
-- lesson.md Ydinajatus §3 — "suurempi lämpötilaero → suurempi osa työksi" is right qualitatively; a half-sentence that the hot source's temperature matters (higher steam temperature) would avoid over-reading "difference" alone.
+- sim.js:114 — `simState.eta` reads 40 at phase `ylhaalla` (W/Q₁ while only heated, W = Wₖ); not shown in the readout, but a row recorded there in exp-2 would show 40 % — report η = 0 (or omit) until `done`.
+- inquiry.json siirto solution — "≈ 23 MW" fits the 2-figure data but answer is 22.5; write "= 22,5 MW ≈ 23 MW" so the stored answer is visible.
+- inquiry.json exp-2 — lesson says cycles are not calculated, yet the table records η; fine as model readings, but the intro could say η is only for comparing A and B, not a formula to learn.
+- lesson.md Ydinajatus "Mitä suurempi lämpötilaero…" — strictly the ratio to T₁ matters; acceptable at this level, could add "kuuman lähteen lämpötilaan nähden".
 
 ## Checked
-- answers.py vs my own formulas in one script: all 12 exercise answers agree with exercises.json within tolerance (12,0 kJ; 172 J; 37,2 %; 170 kJ; 21,7 %; 41,0 %; 9,0 %; 500 J; 720 kW; 120 MW; 9,6 MWh; 12,0 kW).
-- Magnitudes: 1 g steam at 100 °C, 101 kPa expands ≈ 1,70 l (ideal gas); OL3 4300/1600 MW; chainsaw 2,8 kW; car 12 kW at 80 km/h, 54 kWh fuel, EV ≈ 17 kWh — all realistic.
-- Sign convention: W = pΔV (by gas) vs ΔU = Q + W (on gas) stated in Ydinajatus and Kaava; kertaus, virhe, L2-03 use −pΔV correctly (250 J, 500 J, 500 J).
-- Worked example: symbolic η = P_hyöty/P_1, P_2 = P_1 − P_hyöty first; 38 %/310 MW and 88 %/60 MW correct.
-- Inquiry numbers: pred-1 (600→500 MW, "kuudesosa"), pred-2, pred-3 (300/550/150 MW, 85 %), siirto 22,5 MW with mistakes 31,5 and 2,57, check-2 450 J with mistakes 450 000 and 750, exit ticket 100 J, 18/42 kW.
-- Experiments run through simAdapter in Playwright (reset → set initial → vary): exp-1 gives Puse/Pwaste 400/600 and 500/500; exp-2 with η locked 30 % gives 300/0/700/30 %, 300/550/150/85 %, at max 65 %: 95 %. Initial heatShare 0 survives the mode preset (set order mode first).
-- sim.js: Puse = ηPin, Pheat = hPin, Pwaste = rest, ηtot = η + h, cap 95 %; pump Pout = ε·Pel, Pambient = Pout − Pel; arrow widths ∝ power (screenshot 400/600 MW).
-- SVG figures: engine arrows 60 = 24 + 36 (W = 40 % of Q1); pump arrows 60 = 20 + 40 (ε = 3); (V, p) rectangle = pΔV.
-- check-3 model answer and criteria: second law, Q1 = W + Q2, friction vs principle, CHP 85–90 % — correct.
-- Scope: W = pΔV only at constant pressure, no cycles, no Carnot formula — inside FY3.
+- Sim run in Playwright: Q = 500 J → ΔV 1,00 l, Wₖ 200 J, ΔU 300 J; A: Q₁ = Q₂ = 500 J, W = 0; B (p₂ = 100 kPa): Q₁ 650, Q₂ 550, W 100 J = areaNet, η 15,4 % (readout 15 %); Q = 1000 J, p₂ = 40: 1240/920/320 J, bars fit jmax; all equal my own isochoric/isobaric monatomic formulas, dUcycle = 0.
+- B weight bookkeeping: upper block (p₁ − p₂)A lifted ΔV/A from low to high shelf = (p₁ − p₂)ΔV; screenshot shows shelves, hatched return area, net rectangle correctly.
+- pred-1 (750 J → 1,0→2,5 l, 300 J), exp-1 Q = ΔU + Wₖ rows, exp-2 area question and every pred-2 feedback number.
+- kertaus 250 J (W/Q = 0,375, a valid ideal-gas Cp); virhe 240 J / 360 J (monatomic-consistent); L2-03 W/Q = 2/7 (air) — consistent.
+- Design task: 2000, 1250 (562,5 MW el.), 800 MW (pump 60 MW el., 180 MW heat, 120 MW from wastewater, plant 320 MW heat), 15 % plant loss = 120 MW; mistakes 941, 667 correct values.
+- All 12 answers.py values recomputed independently and match; solutions symbolic first; L1-02 steam volume (1,70 l/g) and L3-03 side numbers (43 kW, 54 kWh, 17 kWh) realistic.
+- Worked example 38 %, 310 MW, 88 %, 60 MW; exit ticket 100 J, 18/42 kW; check-2 450 J; siirto 22,5 MW.
+- SVG figures: W/Q₁ = 24/60 = 40 %, Q₁ = W + Q₂ widths; heat-pump arrows 20 + 40 = 60 = 3·E_s.
+- Sign conventions: Wₖ = −W of fy3-5 stated; ΔU = Q − Wₖ used consistently.
+- Scope: cycles are shown qualitatively; no exercise or check asks for a cycle calculation.
