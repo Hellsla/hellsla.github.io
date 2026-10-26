@@ -74,10 +74,10 @@ new p5((p) => {
     const pRef = N * V_REF * V_REF / (2 * PX * Hc);                        // same model at 300 K and 1,00 dm³ (effective width PX)
     const pRel = 100 * pMeas / pRef, pTheory = 100 * (T / 300) / V;
     const theta = T - 273.15;
-    lT.html(`Lämpötila T = ${T} K`); lV.html(`Tilavuus V = ${fi(V, 1)} dm³`);
-    readout.html(`<strong>T = ${T} K = ${fi(theta, 0)} °C</strong>` +
-                 `<br>Hiukkasten keskinopeus: ${fi(Math.sqrt(T / 300), 2)} × 300 K:n keskinopeus` +
-                 `<br><strong>Paine p ≈ ${fi(pRel, 0)}</strong> (suhteellinen, 100 = 300 K ja 1,0 dm³), teoria ${fi(pTheory, 0)}`);
+    lT.html(`Lämpötila $T = ${T}\\,\\text{K}$`); lV.html(`Tilavuus $V = ${tx(V, 1)}\\,\\text{dm}^3$`);
+    readout.html(`<strong>$T = ${T}\\,\\text{K} = ${tx(theta, 0)}\\,{}^\\circ\\text{C}$</strong>` +
+                 `<br>Hiukkasten keskinopeus: $v = ${tx(Math.sqrt(T / 300), 2)} \\cdot v_{300\\,\\text{K}}$` +
+                 `<br><strong>Paine $p \\approx ${tx(pRel, 0)}$</strong> (suhteellinen, $100$ = $300\\,\\text{K}$ ja $1{,}0\\,\\text{dm}^3$), teoria $${tx(pTheory, 0)}$`);
     window.simState = { T, theta, V, vRel: v / V_REF, pRel, pTheory, N, speedCheck: Math.hypot(parts[0].vx, parts[0].vy) * v };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
@@ -88,14 +88,15 @@ new p5((p) => {
     p.strokeWeight(8); p.line(right, top - 6, right, bottom + 6);
     p.noStroke(); p.fill(26, 77, 46);
     for (const q of parts) p.circle(q.x, q.y, 2 * R);
-    p.fill(90); p.textAlign(p.CENTER); p.textSize(ts(12)); p.text(`V = ${fi(V, 1)} dm³`, BOX.x + W / 2, bottom + ts(20));
+    p.fill(90); p.textAlign(p.CENTER); p.textSize(ts(12)); p.text(`$V = ${tx(V, 1)}\\,\\text{dm}^3$`, BOX.x + W / 2, bottom + ts(20));
     // thermometer on the right
-    const tx = 540, ty = 70, th = 220, level = th * (T - 100) / 500;
-    p.stroke(60); p.strokeWeight(2); p.fill(255); p.rect(tx - 8, ty, 16, th, 8);
-    p.noStroke(); p.fill(200, 60, 40); p.rect(tx - 6, ty + th - level - 2, 12, level + 2, 6); p.circle(tx, ty + th + 12, 30);
-    p.fill(90); p.textAlign(p.RIGHT); p.textSize(ts(11)); p.text('600 K', tx - 14, ty + ts(8)); p.text('100 K', tx - 14, ty + th);   // scale labels left of the tube, so they are not clipped
-    p.textAlign(p.CENTER); p.text(`${T} K`, tx, ty + th + ts(46));
+    const thx = 540, ty = 70, th = 220, level = th * (T - 100) / 500;
+    p.stroke(60); p.strokeWeight(2); p.fill(255); p.rect(thx - 8, ty, 16, th, 8);
+    p.noStroke(); p.fill(200, 60, 40); p.rect(thx - 6, ty + th - level - 2, 12, level + 2, 6); p.circle(thx, ty + th + 12, 30);
+    p.fill(90); p.textAlign(p.RIGHT); p.textSize(ts(11)); p.text('$600\\,\\text{K}$', thx - 14, ty + ts(8)); p.text('$100\\,\\text{K}$', thx - 14, ty + th);   // scale labels left of the tube, so they are not clipped
+    p.textAlign(p.CENTER); p.text(`$${T}\\,\\text{K}$`, thx, ty + th + ts(46));
   };
 
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
 });

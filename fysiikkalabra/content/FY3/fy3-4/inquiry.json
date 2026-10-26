@@ -127,7 +127,8 @@
       "type": "sim",
       "text": "Simulaatiossa painemittari laskeutuu nesteeseen.",
       "howto": "Säädä syvyyttä ja tiheyttä ja seuraa mittarin lukemaa ja $(h, p)$-kuvaajaa. Ruutu *Näytä vain ylipaine* jättää kuvaajasta pois ilmanpaineen.",
-      "model": "Ilmanpaine pinnalla on kiinteä 101 kPa, ja neste on levossa ja yhtä tiheää kaikkialla (sen kokoonpuristuminen jätetään huomiotta). Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä."
+      "model": "Ilmanpaine pinnalla on kiinteä 101 kPa, ja neste on levossa ja yhtä tiheää kaikkialla (sen kokoonpuristuminen jätetään huomiotta). Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä.",
+      "calc": "Paine kasvaa syvyyden mukana tasaisesti: $p = p_0 + \\rho g h$, joten jokainen metri lisää painetta $\\rho g \\cdot 1\\,\\text{m}$ verran. Suoran kulmakerroin $\\rho g$ riippuu tiheydestä, mutta pinnalla ($h = 0$) paine on aina ilmanpaine $p_0$."
     },
     {
       "id": "exp-1",

@@ -157,8 +157,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatio on ideaalikaasun hiukkasmalli: pistemäiset hiukkaset törmäävät vain seiniin, eivät toisiinsa. Kokeile vapaasti, miten välähdykset seinissä muuttuvat, kun muutat säätimiä.",
-      "model": "Laatikko on tasomalli, jossa pinta-ala vastaa tilavuutta.",
-      "calc": "Paine näytetään suhteessa vertailutilaan ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin 2 sekunnin ajalta, joten se heiluu hieman."
+      "model": "Laatikko on tasomalli, jossa pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin, eivät toisiinsa. Tilavuuden muutos ei muuta hiukkasten nopeuksia, joten lämpötila pysyy samana.",
+      "calc": "Paine näytetään suhteessa vertailutilaan ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$), jossa $p/p_\\text{ref} = 1{,}00$ (katkoviiva). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin $2\\,\\text{s}$:n ajalta (simuloitua aikaa), joten se heiluu hieman. Kun $N$ on noin $20$, vaihtelu on noin $\\pm 10\\,\\%$ (tilastollista vaihtelua). Välähdyksiä on yhtä monta kuin osumia seiniin.",
+      "howto": "Muuta hiukkasmäärää $N$, lämpötilaa $T$ ja tilavuutta $V$ liukusäätimillä. *Nollaa mittaus* aloittaa paineen keskiarvon laskennan alusta. Väri kertoo hiukkasen nopeuden: kuuma kaasu on oranssia. Seinän välähdys on yksi osuma. Paine luetaan numerona, koska pylvään asteikko mukautuu arvoon eikä pylväiden korkeuksia voi verrata eri tiloissa. *Nopeus* muuttaa vain animaation tahtia, ei mitattuja arvoja."
     },
     {
       "id": "exp-1",

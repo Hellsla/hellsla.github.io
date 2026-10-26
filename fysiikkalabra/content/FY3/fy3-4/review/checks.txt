@@ -1,4 +1,4 @@
-ok   lint
+FAIL lint
 ok   latex
 ok   build
 ok   sims

@@ -18,16 +18,16 @@
   "note": "on load: 40 particles at T0 = 293,15 K exactly, piston at V = 100 %, W = Q = 0, at rest (must run before any setup)"
  },
  {
-  "expr": "(() => { const c=[...document.querySelector('#sim-root').children].map(e=>e.tagName.toLowerCase()+'.'+e.className); const b=[...document.querySelectorAll('#sim-root .controls button')].map(x=>x.textContent).join('|'); return c[0].startsWith('canvas') && c[1]==='div.controls' && c[2]==='div.readout' && b==='Työnnä mäntää|Vedä ulos|Alkuun' ? 1 : 0 })()",
+  "expr": "(() => { const c=[...document.querySelector('#sim-root').children].map(e=>e.tagName.toLowerCase()+'.'+e.className); const b=[...document.querySelectorAll('#sim-root .controls button')].map(x=>x.textContent).join('|'); return (c[0].startsWith('canvas') || (c[0].startsWith('div.sim-canvas') && document.querySelector('#sim-root > .sim-canvas > canvas'))) && c[1]==='div.controls' && c[2]==='div.readout' && b==='Työnnä mäntää|Vedä ulos|Alkuun' ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "DOM order canvas, .controls (buttons Työnnä mäntää, Vedä ulos, Alkuun), .readout"
  },
  {
-  "expr": "(() => { const c=[...document.querySelector('#sim-root').children]; const d=c[3]; return d && d.tagName==='DETAILS' && !d.open && d.querySelector('summary').textContent==='Lisätietoja' && d.textContent.includes('2u') && d.textContent.includes('0,359 J') && d.textContent.includes('3,5 kertaa hitaammin') && d.textContent.includes('lämpökapasiteetiltaan') && d.textContent.includes('noin 36 K') && d.textContent.includes('noin 13 J') && d.textContent.includes('noin 12 J') && d.textContent.includes('keskiarvo') && !d.textContent.includes('vaihtel') && document.querySelectorAll('#sim-root > p').length===0 ? 1 : 0 })()",
+  "expr": "(() => { const c=[...document.querySelector('#sim-root').children]; const p=document.querySelectorAll('#sim-root > p'); return c[3] && c[3].tagName==='P' && p.length===1 && p[0].textContent.split(/\\s+/).length<=15 && document.querySelectorAll('#sim-root details').length===0 && window.simState.u===4 && Math.abs(window.simBounce(100,-4)+108)<1e-12 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "explanations (mechanism 2u, scale 0,359 J/K as heat capacity only, piston speeds vs particles 3,5×, real-air values 36 K, 13 J, 12 J, p as a direction average, no claim of varying results) behind a closed Lisätietoja after the readout"
+  "note": "one legend line (at most 15 words) after the readout, no Lisätietoja box; the 2u speed-up (vx' = 2w − vx) is also checked by the simBounce assertions and the 0,359 J/K scale by the ΔT/W assertions"
  },
  {
   "expr": "document.querySelector('#sim-root .readout').innerHTML.split('<br>').length",
@@ -244,20 +244,20 @@
  },
  {
   "setup": "const s=document.querySelectorAll('#sim-root select'); s[0].value='hidas'; s[1].value='eristetty'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simMove(-1); window.simAdvance(25);",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('W = +40,8 J') && x.includes('Q = 0,0 J') && x.includes('ΔU = +40,8 J') && !x.includes('Q + W') && x.includes('T = 407 K (ΔT = +114 K)') && x.includes('V = 75 %') && x.includes('p = 1,85 · p₀') && !/[0-9]\\.[0-9]/.test(x) ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$W = +40{,}8\\\\,\\\\text{J}$') && x.includes('$Q = 0{,}0\\\\,\\\\text{J}$') && x.includes('$\\\\Delta U = +40{,}8\\\\,\\\\text{J}$') && !x.includes('Q + W') && x.includes('$T = 407\\\\,\\\\text{K}$ ($\\\\Delta T = +114\\\\,\\\\text{K}$)') && x.includes('$V = 75\\\\,\\\\%$') && x.includes('$p = 1{,}85 \\\\cdot p_0$') && !/[0-9]\\\\.[0-9]/.test(x) ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout after the slow insulated push: W = +40,8 J, Q = 0,0 J, ΔU = +40,8 J (no Q + W formula before the theory), T = 407 K (ΔT = +114 K), V = 75 %, p = 1,85 · p₀, decimal commas"
  },
  {
-  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('+40,8') && L.includes('0,0') && L.includes('T = 407 K') && L.includes('V = 75 %') && L.includes('eristetty seinä') && L.includes('ΔU') && L.includes('ΔU = Q + W') ? 1 : 0 })()",
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('$+40{,}8$') && L.includes('$0{,}0$') && L.includes('$T = 407\\\\,\\\\text{K}$') && L.includes('$V = 75\\\\,\\\\%$') && L.includes('$\\\\text{eristetty seinä}$') && L.includes('$\\\\Delta U$') && L.includes('$\\\\Delta U = Q + W$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "canvas labels: bar values +40,8 (W and ΔU) and 0,0 (Q), T = 407 K, V = 75 %, wall type, bar names, ΔU = Q + W"
  },
  {
   "setup": "const s=document.querySelectorAll('#sim-root select'); s[0].value='nopea'; s[1].value='johtava'; s.forEach(x=>x.dispatchEvent(new Event('change'))); window.simRestart(); window.simMove(-1); window.simAdvance(4);",
-  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('W') && L.includes('Q') && L.includes('johtava seinä') ? 1 : 0 })()",
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('$W$') && L.includes('$Q$') && L.includes('$\\\\text{johtava seinä}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "while pushing with conducting walls the canvas shows the work arrow W and the heat arrows Q"

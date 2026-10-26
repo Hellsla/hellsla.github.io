@@ -85,16 +85,7 @@ new p5((p) => {
     const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sV = p.createSelect().parent(lv);
     for (const [txt, v] of [['hidas', 0.4], ['normaali', 1], ['nopea', 2]]) sV.option(txt, v);
     sV.selected('1');                                                  // pace only; every quantity follows simulated time
-    const det = p.createElement('details').parent('sim-root').class('note');   // explanations stay behind "Lisätietoja"
-    p.createElement('summary', 'Lisätietoja').parent(det);
-    p.createP('Luvut ovat mallin arvoja: sylinterissä on yksiatomista ideaalikaasua, jonka sisäenergian muutos on ' +
-      'ΔU = (3/2)nRΔT = (3/2)Δ(pV). Mäntä on kitkaton ja painoton, eikä sen yläpuolella ole ilmaa, joten kaasun paineen ' +
-      'aiheuttavat punnukset: 200 kPa kahdella punnuksella, alempi punnus yksin antaa paineen p₂. Kuuman levyn oletetaan ' +
-      'olevan aina kaasua kuumempi ja kylmän veden kylmempi. Lämpöä ei karkaa muualle.').parent(det);
-    p.createP('Kuvaajan oranssi pinta-ala on kaasun tekemä työ Wₖ = pΔV, sininen pinta-ala työ, joka tehdään kaasuun, ' +
-      'kun mäntä palautetaan. Palkeissa sama väri tarkoittaa samaa energiaa. Vaihtoehdossa B ylempi punnus siirretään ' +
-      'ylös hyllylle ja alhaalta otetaan uusi: kierroksen nettotyö W on punnuksen nostamiseen kulunut energia. ' +
-      'Kun mäntä on lukittu (pienet tapit), tilavuus ei muutu.').parent(det);
+    p.createP('Oranssi: kaasun tekemä työ. Sininen: kaasuun tehty työ. Sama väri, sama energia.').parent('sim-root').class('note');
     restart(); p.textFont('Arial');
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -114,7 +105,7 @@ new p5((p) => {
     const eta = done && Q1 > 0 ? 100 * W / Q1 : 0, returning = !['alku', 'lammitys', 'ylhaalla'].includes(phase);
 
     // controls: labels, hidden p₂ in mode A, main button text
-    lQ.html(`Lämpö Q = ${P.Q} J`); lP.html(`Paine jäähdytyksen jälkeen p<sub>2</sub> = ${P.p2} kPa`);
+    lQ.html(`Lämpö $Q = ${P.Q}\\,\\text{J}$`); lP.html(`Paine jäähdytyksen jälkeen $p_2 = ${P.p2}\\,\\text{kPa}$`);
     lP.elt.parentElement.style.display = P.B ? '' : 'none';
     const bt = phase === 'alku' ? 'Lämmitä' : phase === 'ylhaalla' ? 'Palauta mäntä' : phase === 'valmis' ? 'Uusi kierros' : (phase === 'lammitys' ? 'Lämmitetään…' : 'Palautetaan…');
     if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
@@ -130,14 +121,14 @@ new p5((p) => {
     bars(done, Q1, Q2, W, Qh, dU, Wk, ts);
 
     // readout: at most four short lines
-    const J = (x) => `${Math.round(x)} J`, L = (x) => `${fi(x, 2)} l`;
-    const lines = [`Lämmitys: p = ${P1} kPa, ΔV = <strong>${L(dVh)}</strong>`,     // W_k is left for the student to compute (Koe 1)
-      `Q = ${J(Qh)}, ΔU = ${J(dU)}`];
+    const J = (x) => `${Math.round(x)}\\,\\text{J}`;
+    const lines = [`Lämmitys: $p = ${P1}\\,\\text{kPa}$, $\\Delta V = \\mathbf{${tx(dVh, 2)}}\\,\\text{l}$`,     // W_k is left for the student to compute (Koe 1)
+      `$Q = ${J(Qh)}$, $\\Delta U = ${J(dU)}$`];
     if (!returning) lines.push(phase === 'ylhaalla' ? 'Mäntä on ylhäällä. Palauta se alas.' : 'Lämmitä kaasua kuumalla levyllä.');
     else {
-      lines.push(`Kierros${done ? '' : ' kesken'}: Q<sub>1</sub> = ${J(Q1)}, Q<sub>2</sub> = ${J(Q2)}`);
-      lines.push(done ? `W = Q<sub>1</sub> − Q<sub>2</sub> = <strong>${J(W)}</strong>, η = W/Q<sub>1</sub> = <strong>${fi(eta, 0)} %</strong>`
-        : `Nettotyö tähän asti W = ${J(W)}`);
+      lines.push(`Kierros${done ? '' : ' kesken'}: $Q_1 = ${J(Q1)}$, $Q_2 = ${J(Q2)}$`);
+      lines.push(done ? `$W = Q_1 - Q_2 = \\mathbf{${Math.round(W)}}\\,\\text{J}$, $\\eta = W/Q_1 = \\mathbf{${Math.round(eta)}}\\,\\%$`
+        : `Nettotyö tähän asti $W = ${J(W)}$`);
     }
     readout.html(lines.join('<br>'));
     window.simState = { paluu: sel.value(), Qin: P.Q, p1: P1, p2: P.p2, V1, V2: P.V2, phase, u, done: done ? 1 : 0, V, p: pr,
@@ -157,7 +148,7 @@ new p5((p) => {
       p.noFill(); p.stroke(255, 255, 255, 170); p.strokeWeight(1.5); p.beginShape();
       for (let x = x0 - 10; x <= x1 + 10; x += 3) p.vertex(x, yb + 14 + 2 * Math.sin(x / 6 - 3 * t)); p.endShape();
     } else grect(x0 - 14, yb + 2, x1 - x0 + 28, 26, [[205, 205, 210], [160, 160, 168]], false, 3);
-    lab(heat ? 'kuuma levy' : cool ? 'kylmä vesi' : 'eriste', cx, yb + 28 + ts(16), 'c', ts(12));
+    lab(`$\\text{${heat ? 'kuuma levy' : cool ? 'kylmä vesi' : 'eriste'}}$`, cx, yb + 28 + ts(16), 'c', ts(12));
     // gas: colour from pV (cold blue → warm orange), particles faster when pV is larger
     const f = Math.min(1, Math.max(0, (pr * V - 40) / 560)), gc = mix([90, 140, 225], [245, 130, 40], f);
     p.noStroke(); p.fill(...gc, 70); p.rect(x0, gt, x1 - x0, yb - gt);
@@ -246,21 +237,21 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(1.5); p.line(G.x0, G.y0, G.x1 + 6, G.y0); p.line(G.x0, G.y0, G.x0, G.y1 - 6);
     p.fill(60); p.noStroke(); p.triangle(G.x1 + 10, G.y0, G.x1 + 2, G.y0 - 4, G.x1 + 2, G.y0 + 4);
     p.triangle(G.x0, G.y1 - 10, G.x0 - 4, G.y1 - 2, G.x0 + 4, G.y1 - 2);
-    for (let v = 0; v <= 3; v++) lab(String(v), X(v), G.y0 + fh + 4, 'c', fh);
-    for (let q = (k > 1.5 ? 100 : 50); q <= G.pmax; q += (k > 1.5 ? 100 : 50)) lab(String(q), G.x0 - 6, Y(q) + fh * 0.36, 'r', fh);
-    lab('V (l)', 596, G.y0 + fh + 4, 'r', fh);
-    lab('p (kPa)', G.x0 - 6 - ts(24), G.y1 - fh * 0.9, 'l', fh);
+    for (let v = 0; v <= 3; v++) lab(`$${v}$`, X(v), G.y0 + fh + 4, 'c', fh);
+    for (let q = (k > 1.5 ? 100 : 50); q <= G.pmax; q += (k > 1.5 ? 100 : 50)) lab(`$${q}$`, G.x0 - 6, Y(q) + fh * 0.36, 'r', fh);
+    lab('$V\\ (\\text{l})$', 596, G.y0 + fh + 4, 'r', fh);
+    lab('$p\\ (\\text{kPa})$', G.x0 + 10, G.y1 - 6, 'l', fh);
     // current state
     p.fill(255); p.stroke(30); p.strokeWeight(2); p.circle(X(V), Y(pr), 10);
     // area labels: Wₖ while heating, W (the net work left over) when cycle B is done
     const big = ts(13);
     if (rects.wk && !rects.on && ph !== 'jaahdytys') {
       const xm = (X(V1) + X(V1 + rects.wk)) / 2, wpx = X(V1 + rects.wk) - X(V1);
-      if (wpx > ts(30)) labSub([['W', 'k']], xm, Y(P1 / 2) + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
+      if (wpx > ts(30)) lab('$W_\\text{k}$', xm, Y(P1 / 2) + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
     }
     if (done && P.B) {
       const hpx = Y(P.p2) - Y(P1), wpx = X(P.V2) - X(V1);
-      if (hpx > big * 1.3 && wpx > ts(24)) labSub([['W', '']], (X(V1) + X(P.V2)) / 2, (Y(P1) + Y(P.p2)) / 2 + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
+      if (hpx > big * 1.3 && wpx > ts(24)) lab('$W$', (X(V1) + X(P.V2)) / 2, (Y(P1) + Y(P.p2)) / 2 + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
     }
   }
   // the drawn areas: gas work rectangle (ΔV of the heating so far) and the work done on the gas while returning
@@ -283,40 +274,26 @@ new p5((p) => {
     const sc = (BAR.x1 - BAR.x0) / BAR.jmax, fz = ts(12), [y1, y2] = BAR.y, h = BAR.h;
     const row = (y, segs) => { let x = BAR.x0; for (const [v, c] of segs) { const wv = Math.max(0, v) * sc; p.noStroke(); p.fill(...c); p.rect(x, y, wv, h); x += wv; }
       p.noFill(); p.stroke(150); p.strokeWeight(1); p.rect(BAR.x0, y, BAR.x1 - BAR.x0, h); };
-    const dark = (c) => c.map((x) => x * 0.7);
+    const tc = (t, c) => `\\textcolor{#${c.map((x) => Math.round(x * 0.7).toString(16).padStart(2, '0')).join('')}}{${t}}`;   // dark label colour
     if (done) {
       row(y1, [[Q1, COL.Q]]); row(y2, [[W, COL.Wk], [Q2, COL.Q2]]);
-      labSub([['Q', '1', dark(COL.Q)]], BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
-      labSub([['W', '', dark(COL.Wk)], [' + ', ''], ['Q', '2', dark(COL.Q2)]], BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
+      lab(`$${tc('Q_1', COL.Q)}$`, BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
+      lab(`$${tc('W', COL.Wk)} + ${tc('Q_2', COL.Q2)}$`, BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
     } else {
       row(y1, [[Q, COL.Q]]); row(y2, [[dU, COL.dU], [Wk, COL.Wk]]);
-      labSub([['Q', '', dark(COL.Q)]], BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
-      labSub([['ΔU', '', dark(COL.dU)], [' + ', ''], ['W', 'k', dark(COL.Wk)]], BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
+      lab(`$${tc('Q', COL.Q)}$`, BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
+      lab(`$${tc('\\Delta U', COL.dU)} + ${tc('W_\\text{k}', COL.Wk)}$`, BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
     }
-    lab(done ? 'kierros' : 'lämmitys', BAR.x0, y2 + h + fz + 8, 'l', fz);
+    lab(done ? '$\\text{kierros}$' : '$\\text{lämmitys}$', BAR.x0, y2 + h + fz + 8, 'l', fz);
   }
 
-  // every canvas text: drawn with a halo, its ink box pushed to simState.labels
-  function lab(s, x, y, align, size) { labSub([[s, '']], x, y, align, size); }
-  // text made of parts [main, subscript, colour?]; one box for the whole label
-  function labSub(partsIn, x, y, align, size, col) {
-    const sub = Math.round(size * 0.7), ctx = p.drawingContext;
-    p.textStyle(p.NORMAL); p.textAlign(p.LEFT, p.BASELINE);
-    const m = partsIn.map(([a, b]) => { p.textSize(size); const wa = ctx.measureText(a); p.textSize(sub); const wb = b ? ctx.measureText(b) : { width: 0 };
-      return { wa: wa.width, wb: wb.width, asc: wa.actualBoundingBoxAscent, desc: wa.actualBoundingBoxDescent }; });
-    const total = m.reduce((s2, q) => s2 + q.wa + q.wb, 0);
-    let lx = align === 'r' ? x - total : align === 'c' ? x - total / 2 : x;
-    const x0 = lx, asc = Math.max(...m.map((q) => q.asc)), desc = Math.max(size * 0.3 * (partsIn.some((q) => q[1]) ? 1 : 0) + sub * 0.25, ...m.map((q) => q.desc));
-    partsIn.forEach(([a, b, c], i) => {
-      const cc = c || col || [35, 35, 35];
-      for (const [txt, sz, dy, dx] of [[a, size, 0, 0], [b, sub, size * 0.3, m[i].wa]]) {
-        if (!txt) continue; p.textSize(sz);
-        p.stroke(255, 255, 255, 210); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND); p.fill(...cc); p.text(txt, lx + dx, y + dy);
-        p.noStroke(); p.text(txt, lx + dx, y + dy);
-      }
-      lx += m[i].wa + m[i].wb;
-    });
-    labels.push({ s: partsIn.map((q) => q[0] + q[1]).join(''), x0, y0: y - asc, x1: x0 + total, y1: y + desc });
+  // every canvas text is one $…$ string drawn by KaTeX at p.text's place; its box (measured by p.textWidth) goes to simState.labels
+  function lab(str, x, y, align, size, col) {
+    p.textStyle(p.NORMAL); p.textSize(size); p.noStroke(); p.fill(...(col || [35, 35, 35]));
+    p.textAlign(align === 'r' ? p.RIGHT : align === 'c' ? p.CENTER : p.LEFT, p.BASELINE);
+    const w = p.textWidth(str), x0 = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
+    p.text(str, x, y);
+    labels.push({ s: str, x0, y0: y - size * 0.95, x1: x0 + w, y1: y + size * 0.4 });
   }
   // gradient fill (raw canvas, inside save/restore so p5's own fill state is untouched) with a thin outline
   function grect(x, y, w, h, stops, horiz, r = 4) {
@@ -325,5 +302,5 @@ new p5((p) => {
     c.fillStyle = g; c.strokeStyle = 'rgba(0,0,0,0.35)'; c.lineWidth = 1; c.beginPath(); c.roundRect(x, y, w, h, r); c.fill(); c.stroke(); c.restore();
   }
   const mix = (a, b, f) => a.map((v, i) => v + (b[i] - v) * f);
-  const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');                  // decimal comma inside $…$
 });
