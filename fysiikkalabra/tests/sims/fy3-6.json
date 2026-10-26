@@ -171,10 +171,10 @@
   "note": "before Upota the readout shows the starting temperatures and prints the chart scale 20–100 °C"
  },
  {
-  "expr": "(() => { const x=document.querySelector('#sim-root .note').textContent; return x.includes('1,5 s') && x.includes('vain havainnollistus') ? 1 : 0 })()",
+  "expr": "(() => { const d=[...document.querySelectorAll('#sim details.sim-box')], m=d.find(x=>x.querySelector('summary').textContent==='Mallin oletukset'), c=d.find(x=>x.querySelector('summary').textContent==='Laskennan selitys'); return d.length===3 && d.every(x=>!x.open) && m && /1,5\\ss/.test(m.textContent) && m.textContent.includes('vain havainnollistus') && m.textContent.includes('eristetty') && c && c.textContent.includes('painotettu keskiarvo') && !document.querySelector('#sim-root p') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "note says the approach rate (time constant 1,5 s) is only an illustration"
+  "note": "explanations behind three closed boxes under the sim: Mallin oletukset says the vessel is insulated and the approach rate (time constant 1,5 s) is only an illustration, Laskennan selitys gives T as a weighted mean; no explanatory paragraph inside the sim"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
