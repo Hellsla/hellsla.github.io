@@ -54,7 +54,8 @@ li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 @media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.08em) so the widest row (fy3-3) fits 360 px; at 390 px and up nothing overflows, so formulas stay full size */
 .notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:.95rem}
-.fig-tex{font-size:.935em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1em}   /* a label is as large as the font-size its box sets (scripts/figlib.py) */
+.fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
+.fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 
 /* front page and module pages */
@@ -239,7 +240,7 @@ details.fold[open]{padding-bottom:.4rem}
 details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
 details.sim-box>summary,#sim-root details.note>summary{font:600 .92rem var(--sans);color:var(--accent-deep)}
 details.sim-box>div{font-size:.95rem;padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
-.lab-side #sim{margin-block:.6rem 0}
+.lab-side #sim{margin-block:.6rem 0;margin-inline:0}   /* inside the lab the card stays in its column (768 px: it poked 18 px out) */
 @container page (min-width:68rem){
   .reading{--wide:1}
   .intro-row,.stage>.act-grid,.stage>.lab,.stage>.fold,.stage-practice details.level{width:100cqw}

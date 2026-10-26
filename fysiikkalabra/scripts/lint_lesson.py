@@ -261,6 +261,12 @@ def check_exercises(L, folder):
     return answers
 
 
+def latex_plain(s):
+    """A LaTeX answer as the plain number it shows: $-3{,}50\\,\\text{kJ}$ -> −3,50 kJ."""
+    s = s.replace("$", "").replace("{,}", ",").replace("\\,", " ").replace("\\ ", " ").replace("\\approx", "")
+    return re.sub(r"(?<=\*\*)(:?\s*)-", r"\1−", s)
+
+
 def check_solutions(L, folder, answers):
     f = folder / "solutions.md"
     if not f.exists(): L.err("solutions.md", 1, "missing"); return
@@ -289,7 +295,7 @@ def check_solutions(L, folder, answers):
             L.warn("solutions.md", line, f"{eid}: numbers with units in the Kaava step; keep Kaava symbolic and put the numbers in Sijoitus (human rule 2)")
         words = len(body.split())
         if words > 130: L.warn("solutions.md", line, f"{eid}: {words} words, solutions stay under 120 words")
-        m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)", body)
+        m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)", latex_plain(body))
         if m and eid in answers:
             ans, tol = answers[eid]
             try: got = fi_float(m.group(1).replace(" ", ""))

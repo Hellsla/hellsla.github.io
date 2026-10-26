@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-14-L1-01",
+      "level": 1,
+      "text": "Mehujuomaan pudotetaan 0,050 kg:n jääpala, jonka lämpötila on 0 °C. Jää sulaa kokonaan vedeksi, jonka lämpötila on 0 °C. Kuinka suuren lämpömäärän jää ottaa itseensä sulaessaan? Anna vastaus kilojouleina.",
+      "answer": 17,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-02",
+      "level": 1,
+      "text": "Pakastimessa on 0,25 kg vettä, jonka lämpötila on 0 °C. Vesi jäätyy kokonaan jääksi, jonka lämpötila on 0 °C. Kuinka suuren lämpömäärän vesi luovuttaa jäätyessään? Anna vastaus kilojouleina.",
+      "answer": 84,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-03",
+      "level": 1,
+      "text": "Termospullossa on 0,30 kg vettä, jonka lämpötila on 20 °C. Kuinka suuren lämpömäärän vesi luovuttaa, kun se jäähtyy 0 °C:seen? Anna vastaus kilojouleina.",
+      "answer": 25,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-04",
+      "level": 1,
+      "text": "Jäätä, jonka lämpötila on 0 °C, sulatetaan lämmittimellä, joka siirtää jäähän lämpömäärän 60 kJ. Kuinka monta grammaa jäätä ehtii sulaa, kun kaikki lämpö kuluu sulattamiseen? Anna vastaus grammoina.",
+      "answer": 180,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-05",
+      "level": 1,
+      "text": "Pakastimesta otetaan 0,20 kg:n jääpussi, jonka lämpötila on −12 °C. Kuinka suuri lämpömäärä jäähän on siirrettävä, jotta sen lämpötila nousee 0 °C:seen eikä jää vielä ala sulaa? Anna vastaus kilojouleina.",
+      "answer": 5.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-14-L2-01",
+      "level": 2,
+      "text": "Kalorimetrissä on 0,35 kg vettä, jonka lämpötila on 30 °C. Veteen pudotetaan 0,060 kg jäätä, jonka lämpötila on 0 °C. Mikä on kalorimetrin sisällön lämpötila, kun lämpötasapaino on saavutettu ja kaikki jää on sulanut? Oleta, ettei lämpöä siirry kalorimetriin eikä ympäristöön.",
+      "answer": 14,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-02",
+      "level": 2,
+      "text": "Jääkaapista otetulla jäällä, jonka lämpötila on 0 °C, halutaan jäähdyttää 0,30 kg vettä 18 °C:sta 0 °C:seen. Kuinka monta grammaa jäätä on sulatettava? Oleta, ettei lämpöä siirry ympäristöön. Anna vastaus grammoina.",
+      "answer": 68,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-03",
+      "level": 2,
+      "text": "Jäätä, jonka massa on 0,40 kg ja lämpötila −10 °C, lämmitetään 800 W:n kuumentimella, kunnes kaikki jää on sulanut vedeksi, jonka lämpötila on 0 °C. Oleta, että kuumentimen koko teho siirtyy jäähän. Kuinka kauan lämmitys kestää? Anna vastaus sekunteina.",
+      "answer": 180,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-04",
+      "level": 2,
+      "text": "Jään sulamislämpöä mitataan kalorimetrilla. Kalorimetrissä on 0,200 kg vettä, jonka lämpötila on 30,0 °C. Veteen pudotetaan 0,050 kg jäätä, jonka lämpötila on 0 °C. Kun jää on sulanut kokonaan, lämpötilaksi mitataan 8,1 °C. Määritä jään ominaissulamislämpö. Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta. Anna vastaus yksikössä kJ/kg.",
+      "answer": 333,
+      "unit": "kJ/kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-14-L3-01",
+      "level": 3,
+      "text": "Termoskannussa on 0,60 kg vettä, jonka lämpötila on 35 °C. Veteen aiotaan lisätä pakastimesta otettua jäätä, jonka lämpötila on −20 °C, niin paljon, että jää sulaa täsmälleen kokonaan ja seoksen lämpötilaksi tulee 0 °C. Kuinka monta grammaa jäätä tarvitaan? Anna vastaus grammoina.",
+      "answer": 234,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L3-02",
+      "level": 3,
+      "text": "Eristetyssä astiassa on 0,20 kg vettä, jonka lämpötila on 15 °C. Veteen lisätään 0,30 kg jäätä, jonka lämpötila on −10 °C. Kuinka monta grammaa jäätä astiassa on jäljellä, kun lämpötasapaino on saavutettu? Tarkista ensin, sulaako kaikki jää. Anna vastaus grammoina.",
+      "answer": 281,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L3-03",
+      "level": 3,
+      "text": "Eristetyssä astiassa on 0,10 kg vettä, jonka lämpötila on 10 °C. Veteen lisätään 0,50 kg jäätä, jonka lämpötila on −40 °C. Mikä on astian sisällön lämpötila, kun lämpötasapaino on saavutettu? Päättele ensin, jäätyykö vesi kokonaan. Anna vastaus celsiusasteina.",
+      "answer": -3.5,
+      "unit": "°C",
+      "tolerance": 0.02
+    }
+  ]
+}
