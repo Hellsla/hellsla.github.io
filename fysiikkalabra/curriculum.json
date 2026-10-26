@@ -456,6 +456,24 @@
         ]
       },
       {
+        "id": "fy3-13",
+        "title": "Absoluuttisen nollapisteen määrittäminen",
+        "goals": [
+          "LOPS FY3: lämpötila",
+          "Kokeellisesti: absoluuttisen nollapisteen määrittäminen (ekstrapolointi)",
+          "Täsmennys: mittausaineisto suoraksi, ekstrapolointi nollapaineeseen ja tuloksen epävarmuuden arviointi"
+        ],
+        "prerequisites": [
+          "fy3-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "absoluuttinen nollapiste",
+          "ekstrapolointi",
+          "mittausepävarmuus"
+        ]
+      },
+      {
         "id": "fy3-4",
         "title": "Paine ja hydrostaattinen paine",
         "goals": [
@@ -609,6 +627,24 @@
           "hyötysuhde",
           "kaasun tekemä työ",
           "jäähdytyskone"
+        ]
+      },
+      {
+        "id": "fy3-15",
+        "title": "Energiantuotanto ja voimalaitosten hyötysuhde",
+        "goals": [
+          "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+          "Temaattinen tarkastelu: energiantuotanto",
+          "Täsmennys: voimalaitostyyppien energiaketjut ja hyötysuhteet, lauhde- ja yhteistuotanto"
+        ],
+        "prerequisites": [
+          "fy3-11"
+        ],
+        "sim": false,
+        "glossary": [
+          "hyötysuhde",
+          "lauhdevoimalaitos",
+          "yhteistuotanto"
         ]
       },
       {
@@ -821,6 +857,24 @@
           "mekaanisen energian säilyminen",
           "työ",
           "ei-konservatiivinen voima"
+        ]
+      },
+      {
+        "id": "fy4-15",
+        "title": "Vesi- ja tuulivoima energian muuntajina",
+        "goals": [
+          "LOPS FY4: liike-energia, potentiaalienergia ja mekaaninen energia",
+          "Temaattinen tarkastelu: vesi- ja tuulivoima",
+          "Täsmennys: veden potentiaalienergiasta ja tuulen liike-energiasta sähköksi, teho ja hyötysuhde"
+        ],
+        "prerequisites": [
+          "fy4-8"
+        ],
+        "sim": false,
+        "glossary": [
+          "potentiaalienergia",
+          "liike-energia",
+          "hyötysuhde"
         ]
       },
       {
@@ -1238,6 +1292,24 @@
         ]
       },
       {
+        "id": "fy6-12",
+        "title": "Mittaukset virtapiirissä",
+        "goals": [
+          "LOPS FY6: jännite ja sähkövirta tasavirtapiireissä",
+          "Kokeellisesti: mittauksia komponenttien toiminnasta virtapiirissä",
+          "Täsmennys: virta- ja jännitemittarin kytkentä, mittausalue ja mittarin vaikutus piiriin"
+        ],
+        "prerequisites": [
+          "fy6-2"
+        ],
+        "sim": true,
+        "glossary": [
+          "jännitemittari",
+          "virtamittari",
+          "resistanssi"
+        ]
+      },
+      {
         "id": "fy6-3",
         "title": "Sähköteho ja Joulen laki",
         "goals": [
@@ -1251,6 +1323,23 @@
           "sähköteho",
           "Joulen laki",
           "sähköenergia",
+          "kilowattitunti"
+        ]
+      },
+      {
+        "id": "fy6-13",
+        "title": "Sähkölaitteet kotona: teho, energia ja kustannus",
+        "goals": [
+          "LOPS FY6: sähköteho ja Joulen laki",
+          "Temaattinen tarkastelu: yksinkertaiset sähkölaitteet",
+          "Täsmennys: laitteiden teho ja energiankulutus kilowattitunteina, sähkölasku ja säästökeinot"
+        ],
+        "prerequisites": [
+          "fy6-3"
+        ],
+        "sim": false,
+        "glossary": [
+          "sähköteho",
           "kilowattitunti"
         ]
       },
@@ -1788,6 +1877,25 @@
         ]
       },
       {
+        "id": "fy8-14",
+        "title": "LED, laserdiodi ja Planckin vakio",
+        "goals": [
+          "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+          "Kokeellisesti: mittaukset laser-diodeilla",
+          "Täsmennys: kynnysjännite ja aallonpituus, fotonin energia ja Planckin vakion määrittäminen mittausaineistosta"
+        ],
+        "prerequisites": [
+          "fy8-1",
+          "fy8-4"
+        ],
+        "sim": false,
+        "glossary": [
+          "fotoni",
+          "Planckin vakio",
+          "LED"
+        ]
+      },
+      {
         "id": "fy8-5",
         "title": "Atomiytimen rakenne ja radioaktiivinen hajoaminen",
         "goals": [
@@ -1885,6 +1993,24 @@
         ]
       },
       {
+        "id": "fy8-15",
+        "title": "Säteilyturvallisuus ja säteilyannos",
+        "goals": [
+          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+          "Temaattinen tarkastelu: säteilyturvallisuus",
+          "Täsmennys: annos ja efektiivinen annos, taustasäteily Suomessa, suojautuminen etäisyydellä, ajalla ja suojalla"
+        ],
+        "prerequisites": [
+          "fy8-9"
+        ],
+        "sim": false,
+        "glossary": [
+          "säteilyannos",
+          "taustasäteily",
+          "sievert"
+        ]
+      },
+      {
         "id": "fy8-10",
         "title": "Säteilyn sovellukset lääketieteessä ja teknologiassa",
         "goals": [
@@ -1940,6 +2066,25 @@
           "pimeä aine",
           "pimeä energia",
           "maailmankaikkeuden laajeneminen"
+        ]
+      },
+      {
+        "id": "fy8-16",
+        "title": "Ilmastonmuutos ja kasvihuoneilmiö säteilyn kannalta",
+        "goals": [
+          "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+          "Temaattinen tarkastelu: ilmastonmuutos ja kasvihuoneilmiö",
+          "Täsmennys: kasvihuonekaasujen absorptiokaistat, Auringon ja Maan säteilyn spektrit, säteilytasapaino (jatkaa fy3-12:ta)"
+        ],
+        "prerequisites": [
+          "fy8-2",
+          "fy3-12"
+        ],
+        "sim": false,
+        "glossary": [
+          "kasvihuoneilmiö",
+          "absorptio",
+          "spektri"
         ]
       }
     ]
