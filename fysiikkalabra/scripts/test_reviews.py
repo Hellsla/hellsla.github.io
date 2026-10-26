@@ -170,7 +170,20 @@ p = t / "content/FY3" / LESSON / "lesson.md"; style = next(l for l in p.read_tex
 p.write_text(p.read_text().replace(style, re.sub(r'stroke-width="[\d.]+"', 'stroke-width="9"', style, count=1), 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a stroke width changed: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "styling" in out, out)
-i = t / "content/FY3" / LESSON / "inquiry.json"; d = json.loads(i.read_text())
+p.write_text(re.sub(r"^## Kaava.*$", "## Kaava: Testilaki", (SRC / "content/FY3" / LESSON / "lesson.md").read_text(), count=1, flags=re.M))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("the formula section named after its law: delta for both, nothing else", out.count("delta") == 2 and "section-name" in out and "structure" not in out, out)
+p.write_text((SRC / "content/FY3" / LESSON / "lesson.md").read_text())
+i = t / "content/FY3" / LESSON / "inquiry.json"; d = json.loads(i.read_text()); simact = next(a for a in d["activities"] if a["type"] == "sim")
+whole = " ".join(simact.pop(k, "") for k in ("text", "howto", "model", "calc")).strip(); first, _, rest_ = whole.partition(". "); simact["text"], simact["model"] = first + ".", rest_
+i.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("the sim text moved word for word into a box: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "relocated" in out, out)
+simact["model"] = rest_.replace("a", "e", 1); i.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a word changed on the way: not relocated", "relocated" not in out and "science: none" not in out, out)
+i.write_text((SRC / "content/FY3" / LESSON / "inquiry.json").read_text())
+d = json.loads(i.read_text())
 exp = next(a for a in d["activities"] if a["type"] == "experiment"); k = next(iter(exp["initial"])); exp["initial"][k] = exp["initial"][k] + 1 if isinstance(exp["initial"][k], (int, float)) else exp["initial"][k]
 i.write_text(json.dumps(d, ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON)
@@ -187,6 +200,8 @@ expect("packets carry the course's LOPS goals, the slot and the glossary terms, 
 report(t, "science"); report(t, "pedagogy"); p = t / "content/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
 code, out = run(t, "review_packet.py", LESSON, "--role", "science"); ps = (t / "content/FY3" / LESSON / "review/packet-science.md").read_text()
 expect("delta packet: previous report and the diff, not the whole lesson", "Mode: **delta**" in ps and "Your previous report" in ps and "+" in ps.split("```diff")[1] and "### answers.py" not in ps, out)
+code, out = run(t, "review_packet.py", "--batch", LESSON, "--role", "pedagogy"); bf = t / "review-batch/packet-pedagogy.md"; pb = bf.read_text() if bf.exists() else ""
+expect("batch packet: one file for many lessons, each with its diff and its own report", code == 0 and f"## {LESSON}" in pb and "```diff" in pb and "review/pedagogy.md" in pb, out)
 code, out = run(t, "review_packet.py", LESSON, "--role", "developer", "--fix"); pd = (t / "content/FY3" / LESSON / "review/packet-developer.md").read_text()
 expect("developer fix packet: both reports, the rules and the file list, not the file bodies",
        "Findings to resolve" in pd and "### science" in pd and "### lesson.md" not in pd and f"content/FY3/{LESSON}/lesson.md" in pd and "1. Maths in LaTeX" in pd, out)

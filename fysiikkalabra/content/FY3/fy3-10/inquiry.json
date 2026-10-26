@@ -156,7 +156,9 @@
       "id": "kokeile",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatio on ideaalikaasun hiukkasmalli: pistemäiset hiukkaset törmäävät vain seiniin, eivät toisiinsa. Laatikko on tasomalli, jossa pinta-ala vastaa tilavuutta. Paine näytetään suhteessa vertailutilaan (N = 100, T = 300 K, V = 100 %). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin 2 sekunnin ajalta, joten se heiluu hieman. Kokeile vapaasti, miten välähdykset seinissä muuttuvat, kun muutat säätimiä."
+      "text": "Simulaatio on ideaalikaasun hiukkasmalli: pistemäiset hiukkaset törmäävät vain seiniin, eivät toisiinsa. Kokeile vapaasti, miten välähdykset seinissä muuttuvat, kun muutat säätimiä.",
+      "model": "Laatikko on tasomalli, jossa pinta-ala vastaa tilavuutta.",
+      "calc": "Paine näytetään suhteessa vertailutilaan (N = 100, T = 300 K, V = 100 %). *Mitattu paine* on simulaation mittaus: seiniin osuvien törmäysten liukuva keskiarvo noin 2 sekunnin ajalta, joten se heiluu hieman."
     },
     {
       "id": "exp-1",

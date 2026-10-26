@@ -6,10 +6,10 @@
 Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromallin mukaan kiinteässä aineessa hiukkaset värähtelevät paikoillaan toistensa sitomina, nesteessä ne liikkuvat toistensa ohi mutta pysyvät yhdessä, ja kaasussa ne liikkuvat vapaasti ja törmäilevät vain harvoin. Olomuodon muutoksessa hiukkasten keskinäinen sidos muuttuu: sulamisessa kiinteän aineen järjestys purkautuu, ja höyrystymisessä hiukkaset irtoavat kokonaan toisistaan. Vastakkaiset muutokset ovat jähmettyminen ja tiivistyminen. Jää voi myös sublimoitua suoraan höyryksi, kuten pakkasella kuivuvassa pyykissä.
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Mikromalli, kaavakuva: kiinteässä aineessa hiukkaset ovat säännöllisessä järjestyksessä toisissaan kiinni, nesteessä ne ovat epäjärjestyksessä mutta yhä kosketuksissa, kaasussa ne ovat kaukana toisistaan ja liikkuvat vapaasti. Nuolet: kiinteä sulaa nesteeksi, neste höyrystyy kaasuksi." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <rect x="20" y="90" width="150" height="150" rx="6" fill="none" stroke="currentColor" stroke-width="3"/>
-  <rect x="225" y="90" width="150" height="150" rx="6" fill="none" stroke="currentColor" stroke-width="3"/>
-  <rect x="430" y="90" width="150" height="150" rx="6" fill="none" stroke="currentColor" stroke-width="3"/>
-  <g fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="2">
+  <rect x="20" y="90" width="150" height="150" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <rect x="225" y="90" width="150" height="150" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <rect x="430" y="90" width="150" height="150" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <g fill="#a9d1f0" fill-opacity="1" stroke="#2f74b5" stroke-width="2">
     <circle cx="50" cy="120" r="13"/>
     <circle cx="80" cy="120" r="13"/>
     <circle cx="110" cy="120" r="13"/>
@@ -45,22 +45,22 @@ Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromall
     <circle cx="462" cy="218" r="13"/>
     <circle cx="552" cy="212" r="13"/>
   </g>
-  <g stroke="currentColor" stroke-width="2" fill="none">
+  <g stroke="#6b7480" stroke-width="2" fill="none">
     <line x1="472" y1="123" x2="494" y2="131"/>
     <line x1="536" y1="140" x2="522" y2="160"/>
     <line x1="496" y1="185" x2="489" y2="207"/>
     <line x1="460" y1="203" x2="456" y2="179"/>
     <line x1="539" y1="220" x2="520" y2="232"/>
   </g>
-  <line x1="176" y1="165" x2="208" y2="165" stroke="currentColor" stroke-width="4"/>
-  <polygon points="220,165 206,157 206,173" fill="currentColor"/>
-  <line x1="381" y1="165" x2="413" y2="165" stroke="currentColor" stroke-width="4"/>
-  <polygon points="425,165 411,157 411,173" fill="currentColor"/>
-  <text x="197" y="70" text-anchor="middle" fill="currentColor">sulaa</text>
-  <text x="402" y="70" text-anchor="middle" fill="currentColor">höyrystyy</text>
-  <text x="95" y="280" text-anchor="middle" fill="currentColor">kiinteä</text>
-  <text x="300" y="280" text-anchor="middle" fill="currentColor">neste</text>
-  <text x="505" y="280" text-anchor="middle" fill="currentColor">kaasu</text>
+  <line x1="176" y1="165" x2="208" y2="165" stroke="#e8590c" stroke-width="4"/>
+  <polygon points="220,165 206,157 206,173" fill="#e8590c"/>
+  <line x1="381" y1="165" x2="413" y2="165" stroke="#e8590c" stroke-width="4"/>
+  <polygon points="425,165 411,157 411,173" fill="#e8590c"/>
+  <text x="197" y="70" text-anchor="middle" fill="#1f2933">sulaa</text>
+  <text x="402" y="70" text-anchor="middle" fill="#1f2933">höyrystyy</text>
+  <text x="95" y="280" text-anchor="middle" fill="#1f2933">kiinteä</text>
+  <text x="300" y="280" text-anchor="middle" fill="#1f2933">neste</text>
+  <text x="505" y="280" text-anchor="middle" fill="#1f2933">kaasu</text>
 </svg>
 
 Olomuodon muutos vaatii energiaa, mutta ei nosta lämpötilaa. Kun jäätä lämmitetään, sen lämpötila nousee 0 °C:seen asti. Sitten lämpötila pysyy vakiona, kunnes kaikki jää on sulanut, vaikka energiaa siirtyy koko ajan: energia kuluu hiukkasten sidosten purkamiseen eli hiukkasten välisen vuorovaikutusenergian kasvattamiseen, ei niiden liikkeen kiihdyttämiseen. Samasta syystä kiehuva vesi pysyy 100 °C:ssa, vaikka liesi on täysillä: kaikki siirtyvä energia kuluu veden höyrystämiseen. Mitä suurempi teho, sitä nopeammin vesi kiehuu pois, mutta ei sitä kuumemmaksi. Veden höyrystyessä sitoutunut energia vapautuu takaisin, kun höyry tiivistyy, ja siksi 100-asteinen höyry polttaa pahemmin kuin 100-asteinen vesi.
@@ -69,7 +69,7 @@ Sulamiseen ja höyrystymiseen tarvittava lämpömäärä on suoraan verrannollin
 
 Kiehumispiste riippuu paineesta. Faasikaavio esittää, missä olomuodossa aine on kussakin lämpötilassa ja paineessa: sen käyrät yhdistävät sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa. Vuorella, jossa ilmanpaine on pienempi, vesi kiehuu alle 100 °C:n lämpötilassa, ja painekattilassa paine nostaa kiehumispisteen yli 100 °C:n, jolloin ruoka kypsyy nopeammin.
 
-## Kaava
+## Kaava: Sulamis- ja höyrystymislämpö
 Massan $m$ sulattamiseen tai höyrystämiseen tarvittava lämpömäärä on
 ```latex
 Q = s m \qquad \text{ja} \qquad Q = r m
@@ -89,22 +89,22 @@ Taulukossa $c$ on ominaislämpökapasiteetti, joka esiteltiin edellisellä oppit
 Lämpenemiskäyrä näyttää lämpötilan siirretyn energian funktiona. Nousevilla osilla aine lämpenee ja pätee $Q = cm\Delta T$, vaakasuorilla osilla aine muuttaa olomuotoaan ja pätee $Q = sm$ tai $Q = rm$. Mitä pienempi ominaislämpökapasiteetti, sitä jyrkemmin lämpötila nousee, joten jään ja höyryn osat ovat noin kaksi kertaa jyrkempiä kuin veden osa:
 
 <svg viewBox="0 0 600 300" role="img" aria-label="Veden lämpenemiskäyrä, kaavakuva: jää lämpenee jyrkästi, sulaa 0 asteessa, vesi lämpenee loivemmin, kiehuu 100 asteessa pitkään ja höyry lämpenee jyrkästi; vaakasuorat osat ovat olomuodon muutoksia, joissa Q = sm ja Q = rm" style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <line x1="70" y1="250" x2="580" y2="250" stroke="currentColor" stroke-width="3"/>
-  <line x1="70" y1="250" x2="70" y2="40" stroke="currentColor" stroke-width="3"/>
-  <polyline points="70,197 80,170 132,170 197,80 548,80 560,44" fill="none" stroke="currentColor" stroke-width="4"/>
-  <line x1="70" y1="170" x2="132" y2="170" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5"/>
-  <line x1="70" y1="80" x2="197" y2="80" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5"/>
-  <text x="62" y="178" text-anchor="end" fill="currentColor">0</text>
-  <text x="62" y="88" text-anchor="end" fill="currentColor">100</text>
-  <text x="80" y="30" fill="currentColor">T (°C)</text>
+  <line x1="70" y1="250" x2="580" y2="250" stroke="#1f2933" stroke-width="3"/>
+  <line x1="70" y1="250" x2="70" y2="40" stroke="#1f2933" stroke-width="3"/>
+  <polyline points="70,197 80,170 132,170 197,80 548,80 560,44" fill="none" stroke="#c92a2a" stroke-width="4"/>
+  <line x1="70" y1="170" x2="132" y2="170" stroke="#6b7480" stroke-width="1" stroke-dasharray="5 5"/>
+  <line x1="70" y1="80" x2="197" y2="80" stroke="#6b7480" stroke-width="1" stroke-dasharray="5 5"/>
+  <text x="62" y="178" text-anchor="end" fill="#1f2933">0</text>
+  <text x="62" y="88" text-anchor="end" fill="#1f2933">100</text>
+  <text x="80" y="30" fill="#1f2933">T (°C)</text>
   <foreignObject x="530" y="256" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q$</div></foreignObject>
-  <text x="84" y="200" text-anchor="start" fill="currentColor">sulaa</text>
+  <text x="84" y="200" text-anchor="start" fill="#1f2933">sulaa</text>
   <foreignObject x="156" y="180" width="100" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q = sm$</div></foreignObject>
-  <text x="182" y="152" text-anchor="start" fill="currentColor">vesi lämpenee</text>
-  <text x="284" y="68" text-anchor="start" fill="currentColor">kiehuu</text>
+  <text x="182" y="152" text-anchor="start" fill="#1f2933">vesi lämpenee</text>
+  <text x="284" y="68" text-anchor="start" fill="#1f2933">kiehuu</text>
   <foreignObject x="370" y="42" width="100" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q = rm$</div></foreignObject>
-  <text x="80" y="240" text-anchor="start" fill="currentColor">jää</text>
-  <text x="545" y="36" text-anchor="end" fill="currentColor">höyry</text>
+  <text x="80" y="240" text-anchor="start" fill="#1f2933">jää</text>
+  <text x="545" y="36" text-anchor="end" fill="#1f2933">höyry</text>
 </svg>
 
 ## Esimerkki

@@ -125,7 +125,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa jäätä lämmitetään −20 °C:sta vakioteholla, kunnes se on 130-asteista höyryä. Paina *Lämmitä* ja seuraa (t, T)-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan? Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen eikä höyry poistu astiasta. Ruudun arvot ovat mallin laskemia arvoja, eivät mittauksia oikeasta kattilasta."
+      "text": "Simulaatiossa jäätä lämmitetään −20 °C:sta vakioteholla, kunnes se on 130-asteista höyryä.",
+      "howto": "Paina *Lämmitä* ja seuraa (t, T)-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan?",
+      "model": "Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen eikä höyry poistu astiasta. Ruudun arvot ovat mallin laskemia arvoja, eivät mittauksia oikeasta kattilasta."
     },
     {
       "id": "exp-1",

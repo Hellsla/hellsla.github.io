@@ -348,11 +348,21 @@ def check_sim(L, folder, meta):
         except json.JSONDecodeError as e: L.err(f"tests/sims/{folder.name}.json", e.lineno, "invalid JSON"); return
         if n < 3: L.err(f"tests/sims/{folder.name}.json", 1, f"only {n} assertions, at least 3 covering the spec")
     check_text_rules(L, "sim-spec.md", (folder / "sim-spec.md").read_text()) if (folder / "sim-spec.md").exists() else None
+    sim_rule = L.page if sim_edited(folder) else L.warn   # an old sim's notes are folded by sim-embed.js until the sim itself is edited
     if "'Lisätietoja'" in js or '"Lisätietoja"' in js:
-        L.page("sim.js", 1, "a Lisätietoja box in the sim: explanations go in the lesson's inquiry.json sim activity as howto, model and calc (Käyttöohje, Mallin oletukset, Laskennan selitys)")
+        sim_rule("sim.js", 1, "a Lisätietoja box in the sim: explanations go in the lesson's inquiry.json sim activity as howto, model and calc (Käyttöohje, Mallin oletukset, Laskennan selitys)")
     for m in re.finditer(r"createP\(((?:[^()]|\([^()]*\))*)\)", js):
         words = len(" ".join(re.findall(r"(['\"`])((?:(?!\1).)*)\1", m.group(1)) and [x[1] for x in re.findall(r"(['\"`])((?:(?!\1).)*)\1", m.group(1))]).split())
-        if words > 15: L.page("sim.js", js.count("\n", 0, m.start()) + 1, f"a {words}-word paragraph in the sim: the sim shows the picture, the controls and the values; one legend line of at most 15 words, the rest in inquiry.json howto/model/calc")
+        if words > 15: sim_rule("sim.js", js.count("\n", 0, m.start()) + 1, f"a {words}-word paragraph in the sim: the sim shows the picture, the controls and the values; one legend line of at most 15 words, the rest in inquiry.json howto/model/calc")
+
+
+def sim_edited(folder):
+    """True when the lesson's simulation is new or its code changed since the science reviewer's last PASS."""
+    try:
+        from reviews import scope
+        sc = scope(folder)["science"]
+    except Exception: return True
+    return sc["base"] is None and sc["why"] != "0 changed wording line(s): the version it passed" or "simulation" in sc["categories"]
 
 
 def check_answers_py(L, folder, answers):

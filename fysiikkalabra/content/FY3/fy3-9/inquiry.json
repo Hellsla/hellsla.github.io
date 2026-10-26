@@ -76,7 +76,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaation sylinterissä on suljettu kaasumäärä ideaalikaasua: kaasua ei pääse pois eikä tule lisää. Valitse tilanmuutos, muuta tilavuutta tai lämpötilaa ja seuraa painemittaria, hiukkasten törmäyksiä ja kuvaajaa. Simulaation paine lasketaan yhtälöstä $pV/T = \\text{vakio}$, joten luvut ovat mallin arvoja, eivät mittauksia oikeasta ruiskusta."
+      "text": "Simulaation sylinterissä on suljettu kaasumäärä ideaalikaasua: kaasua ei pääse pois eikä tule lisää.",
+      "howto": "Valitse tilanmuutos, muuta tilavuutta tai lämpötilaa ja seuraa painemittaria, hiukkasten törmäyksiä ja kuvaajaa.",
+      "calc": "Simulaation paine lasketaan yhtälöstä $pV/T = \\text{vakio}$, joten luvut ovat mallin arvoja, eivät mittauksia oikeasta ruiskusta."
     },
     {
       "id": "exp-1",

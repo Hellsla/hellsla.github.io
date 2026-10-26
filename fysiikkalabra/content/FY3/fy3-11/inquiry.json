@@ -75,7 +75,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa kaasua lämmitetään sylinterissä, jonka mäntää kaksi punnusta painaa niin, että kaasun paine on 200 kPa. Valitse lämpö $Q$ ja paina *Lämmitä*: mäntä nousee, ja (V, p)-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*. Lukemat ovat mallin arvoja yksiatomiselle ideaalikaasulle; mäntä on kitkaton, eikä lämpöä karkaa muualle."
+      "text": "Simulaatiossa kaasua lämmitetään sylinterissä, jonka mäntää kaksi punnusta painaa niin, että kaasun paine on 200 kPa.",
+      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*: mäntä nousee, ja (V, p)-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*.",
+      "model": "Lukemat ovat mallin arvoja yksiatomiselle ideaalikaasulle; mäntä on kitkaton, eikä lämpöä karkaa muualle."
     },
     {
       "id": "exp-1",

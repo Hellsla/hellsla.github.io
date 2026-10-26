@@ -24,7 +24,8 @@ stales a review; CI re-runs every check and rebuilds every page instead.
 What changed decides who must look again (`scope`, rules in RULES). Each changed line since the version a
 reviewer passed is put in a category: a number, a formula, an answer, the simulation's code, a figure, an
 experiment's setup, the structure, the objectives, wording, a figure's colours or a label nudged a few units, a
-comment, a test. The reviewer's mode is the strictest any category asks of it: `full`, `delta` (its previous
+comment, a test, the formula section given its law's name (`## Kaava` → `## Kaava: Lämpömäärä`), the sim activity's
+text moved word for word between its lead and its boxes (Käyttöohje, Mallin oletukset, Laskennan selitys). The reviewer's mode is the strictest any category asks of it: `full`, `delta` (its previous
 report and the diff), or `none`. `none` is for changes outside its judgement: comments, tightened simulation
 tests, and for the science reviewer a figure's style or a label moved without new text (check_layout.py checks
 those). `carry` then writes review/carry.tsv (date, reviewer, from-hash, to-hash, base commit, categories), and
@@ -33,7 +34,7 @@ and fails if the change was not what the row says. A reviewer whose last verdict
 """
 import datetime, difflib, hashlib, json, os, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses
+import courses, inquiry
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy")
@@ -44,6 +45,8 @@ RULES = {                       # category: (science, pedagogy)
     "comments":       ("none",  "none"),    # comment or blank lines in simulation code or answers.py
     "style":          ("none",  "delta"),   # colours, strokes, fonts, classes in a figure; a simulation's sim.css
     "label-position": ("none",  "delta"),   # a figure label moved by at most 40 units, its text unchanged
+    "relocated":      ("none",  "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
+    "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
     "numbers":        ("full",  "delta"),   # a changed line carries a number, formula, symbol or unit
     "answers":        ("full",  "delta"),   # an exercise answer, unit or tolerance; answers.py code
@@ -57,6 +60,7 @@ RULES = {                       # category: (science, pedagogy)
 }
 WHY = {"tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
+       "relocated": "the sim's text moved word for word into its lead and boxes", "section-name": "a section named after its law",
        "numbers": "a changed line carries a number, formula, symbol or unit", "answers": "an answer, unit, tolerance or answers.py changed",
        "tests-weakened": "a simulation assertion removed or loosened", "levels": "an exercise level or id changed",
        "structure": "headings, stages, display blocks or inquiry structure changed", "objectives": "meta goals or prerequisites changed",
@@ -203,7 +207,7 @@ def write_legacy(folder):
 
 # ------------------------------------------------------------------ what changed
 SVG_LINE = re.compile(r"^\s*<(/?svg|path|line|text|rect|circle|g|polyline|polygon|ellipse|defs|stop|linearGradient|radialGradient|marker|tspan|title|foreignObject|use)\b")
-STYLE_ATTR = re.compile(r'\s(?:fill|stroke|stroke-width|stroke-dasharray|stroke-linecap|stroke-linejoin|stroke-opacity|fill-opacity|opacity|'
+STYLE_ATTR = re.compile(r'\s(?:fill|stroke|stop-color|stop-opacity|color|stroke-width|stroke-dasharray|stroke-linecap|stroke-linejoin|stroke-opacity|fill-opacity|opacity|'
                         r'font-size|font-weight|font-family|font-style|class|style|rx|ry)="[^"]*"')
 POS_ATTR = re.compile(r'\s(x|y|dx|dy|width|height)="(-?[\d.]+)"')
 EXPERIMENT_KEY = re.compile(r'\s*"(correct|initial|locked|vary|measure|answer|unit|tolerance|value|mistakes)"\s*:')
@@ -256,6 +260,10 @@ def classify(path, diff_lines, lid):
     cats, block = set(), []
     def flush():
         rem = [l[1:] for l in block if l.startswith("-")]; add = [l[1:] for l in block if l.startswith("+")]
+        if name == "lesson.md":                        # `## Kaava` → `## Kaava: Lämpömäärä`: the same section, now named
+            for o in [l for l in rem if l.startswith("## ")]:
+                n = next((l for l in add if l.startswith("## ") and inquiry.heading(l[3:])[0] == inquiry.heading(o[3:])[0] and l != o), None)
+                if n is not None: cats.add("section-name"); rem.remove(o); add.remove(n)
         if code or py:
             for l in rem + add: cats.add("comments" if _comment(l, py) else "answers" if py else "simulation")
             return
@@ -273,6 +281,28 @@ def classify(path, diff_lines, lid):
             block = []
     if block: flush()
     return cats
+
+
+SIM_TEXT = ("text",) + tuple(k for k, _ in inquiry.SIM_INFO)
+
+
+def _sentences(s): return sorted(x for x in re.split(r"(?<=[.!?])\s+", " ".join(s.split())) if x)
+
+
+def relocated(old, new):
+    """The old inquiry.json with each sim activity replaced by its new version where only its text moved, word for
+    word, between the visible lead and the boxes (text, howto, model, calc); None when nothing moved that way."""
+    try: o, n = json.loads(old), json.loads(new)
+    except (json.JSONDecodeError, TypeError): return None
+    new_acts = {a.get("id"): a for a in n.get("activities", []) if isinstance(a, dict)}
+    rest = lambda a: {k: v for k, v in a.items() if k not in SIM_TEXT}
+    words = lambda a: _sentences(" ".join(a.get(k) or "" for k in SIM_TEXT))
+    moved = False
+    for i, a in enumerate(o.get("activities", [])):
+        b = new_acts.get(a.get("id")) if isinstance(a, dict) else None
+        if b and a != b and a.get("type") == b.get("type") == "sim" and rest(a) == rest(b) and words(a) == words(b):
+            o["activities"][i] = b; moved = True
+    return json.dumps(o, ensure_ascii=False) if moved else None
 
 
 def test_change(rel, base):
@@ -305,12 +335,17 @@ def changes(folder, base):
     paths = sorted({(rel, b) for _, rel, b in entries(folder, old) + entries(folder, new)})
     cats, diff, n = set(), [], 0
     for rel, binary in paths:
-        a, b = _view(old.read(rel, binary), rel, binary), _view(new.read(rel, binary), rel, binary)
+        ra, rb = old.read(rel, binary), new.read(rel, binary)
+        a, b = _view(ra, rel, binary), _view(rb, rel, binary)
         if a == b: continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
-        cats |= classify(rel, lines, folder.name)
+        moved = relocated(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
+        if moved is not None:                          # the moved text is "relocated"; whatever else changed is classified as usual
+            cats.add("relocated"); a2 = _view(moved, rel, False)
+            cats |= classify(rel, list(difflib.unified_diff(a2.splitlines(), b.splitlines(), lineterm="", n=2)), folder.name) if a2 != b else set()
+        else: cats |= classify(rel, lines, folder.name)
         n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---")))
         diff += lines
     return cats, "\n".join(diff), n
