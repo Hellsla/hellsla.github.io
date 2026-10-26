@@ -138,7 +138,7 @@ expect("one line of sim.js code: full for both", out.count("full") == 2 and "sim
 s_.write_text((SRC / "content/FY3" / LESSON / "sim.js").read_text())
 
 # 5b. change categories decide who looks again; a PASS carries over only what its reviewer need not see
-svg = [l for l in p.read_text().splitlines() if l.lstrip().startswith("<text ") and ' x="' in l]
+svg = [l for l in p.read_text().splitlines() if l.lstrip().startswith(("<text ", "<foreignObject ")) and ' x="' in l]   # labels are fig-tex foreignObjects since 2026-10-26
 txt = svg[0]; nudged = re.sub(r' x="(-?[\d.]+)"', lambda m: f' x="{float(m.group(1)) + 6:g}"', txt, count=1)
 p.write_text(p.read_text().replace(txt, nudged, 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
@@ -151,7 +151,7 @@ git(t, "add", "."); git(t, "commit", "-qm", "nudge")
 code, out = run(t, "reviews.py", "verify")
 expect("verify re-derives the carry from history and accepts it", code == 0 and "ERROR" not in out, out)
 rows = (t / "content/FY3" / LESSON / "review/carry.tsv").read_text().splitlines()
-p.write_text(p.read_text().replace(nudged, txt.replace(">", ' fill="red">', 1) if False else nudged.replace("</text>", "X</text>"), 1))   # new label text: a figure change
+p.write_text(p.read_text().replace(nudged, txt.replace(">", ' fill="red">', 1) if False else re.sub(r"(</div>|</text>)", r"X\1", nudged, count=1), 1))   # new label text: a figure change
 cat = (t / "content/FY3" / LESSON / "review/carry.tsv")
 cat.write_text(rows[0] + "\n" + "\t".join(rows[1].split("\t")[:3] + [h(t)] + rows[1].split("\t")[4:]) + "\n")   # a forged carry to the new hash
 code, out = run(t, "reviews.py", "verify")

@@ -86,7 +86,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain tilavuus muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy 20 °C:ssa. Muuta vain tilavuutta ja kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin, mutta paineen pascaleina (100 kPa = 100 000 Pa) ja tulon pV jouleina (1 kPa · 1 ml = 0,001 J).",
+      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy 20 °C:ssa. Muuta vain tilavuutta ja kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin, mutta paineen pascaleina (100 kPa = 100 000 Pa) ja tulon $pV$ jouleina ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0{,}001\\,\\text{J}$).",
       "initial": { "mode": "isoterminen", "Tc": 20, "Vml": 50 },
       "names": { "mode": "tilanmuutos", "Vml": "tilavuus V", "Tc": "θ" },
       "units": { "Vml": "ml", "Tc": "°C" },

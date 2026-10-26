@@ -8,7 +8,7 @@
 // The stretch and the arrow in simState are the pure proportional values (stretch = G / G_FULL * maxLen,
 // arrow = G / G_FULL * ARROW_FULL, no offset); the drawing adds a fixed rest length to the spring, a 2 px
 // minimum bar height and a 3 px minimum arrow length, only so that the smallest weights stay visible. The bar chart compares the weight of the same mass on all four bodies.
-// Picture: a lab stand on the surface of the chosen body, a steel spring with a newton ruler (kN) beside it and a red pointer
+// Picture: a lab stand on the surface of the chosen body, a steel spring with a newton ruler (N, labelled every 500 N, ticks every 100 N) beside it and a red pointer
 // that reads the weight, a steel weight (grey: the mass, same everywhere) and a red weight arrow. Red always means the weight G
 // (arrow, pointer, bars); each body has its own colour (ground, planet discs under the bars). When m or the body changes,
 // the spring settles to its new stretch with a short damped oscillation (drawing only; simState holds the rest values).
@@ -134,13 +134,13 @@ new p5((p) => {
     const y0 = SPRING.top + REST, x1 = RULER.x + RULER.w;
     p.stroke(120); p.strokeWeight(1); p.fill(0); grad(RULER.x, 0, x1, 0, [[0, '#ffffff'], [1, '#e6e8ea']]);
     p.rect(RULER.x, 34, RULER.w, 252, 3);
-    p.textSize(ts(10)); p.textAlign(p.LEFT, p.CENTER);
+    p.textSize(ts(9)); p.textAlign(p.RIGHT, p.CENTER);                // numbers right-aligned before the ticks, 2500 fits the ruler
     for (let F = 0; F <= 2500; F += 100) {
       const y = y0 + SPRING.maxLen * F / G_FULL, major = F % 500 === 0;
       p.stroke(60); p.strokeWeight(major ? 1.5 : 1); p.line(x1 - (major ? 10 : 5), y, x1, y);
-      if (major) { p.noStroke(); p.fill(40); p.text(F ? fi(F / 1000, 1) : '0', RULER.x + 4, y); }
+      if (major) { p.noStroke(); p.fill(40); p.text(String(F), x1 - 12, y); }
     }
-    p.noStroke(); p.fill(40); p.text('kN', RULER.x + 4, y0 - 1.5 * ts(10));
+    p.noStroke(); p.fill(40); p.text('N', x1 - 12, y0 - 1.5 * ts(10));
     p.stroke(...RED); p.strokeWeight(2); p.line(x1 + 6, yS, SPRING.x - 14, yS);   // pointer at the spring end reads the weight
     p.noStroke(); p.fill(...RED); p.triangle(x1 + 1, yS, x1 + 9, yS - 5, x1 + 9, yS + 5);
   }

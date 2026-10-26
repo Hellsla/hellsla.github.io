@@ -1,22 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 590742e6e82795d0
+VERDICT: PASS
+CONTENT-HASH: 904c78c89b385b5a
 
 ## Blocking
-- sim.js (canvas, review/shots/fy3-1-sim-390.png, fy3-1-lab-1280-1.png) — the spring scale in the simulation is labelled kN with ticks 0 to 2.5, but every weight in the lesson is 16-248 N. The 10 kg box on Earth (98,1 N) therefore reads about 0, and the lesson's central unit, the newton, is not on the instrument. This undoes "voimamittari mittaa newtoneina" and the calibration story — fix: label the scale in N, sized so that 98,1 N and 248 N are readable (for example 0-250 N), or drop the numbers and keep only the stretch.
-- sim readout and experiment text (sim-390.png, exp-exp-2-390.png) — "Massa m = 10 kg", "g = 9,81 m/s²", "G = m · g = 98,1 N" and the experiments' "Alkutila: ... massa m = 10 kg" are set as plain sans text, while the example and theory use maths. The teacher's rule 2026-10-26 (symbols in prose as maths) is not met where the student looks most — fix: render the readout and the experiment initial-state lines through KaTeX, with non-breaking spaces between number and unit ("10 kg" breaks across lines at 390 px).
+(none)
 
 ## Polish
-- sim canvas labels (G (N), kN, Kuu, Mars, "asteikko 0-248 N", the legend) are plain canvas text, not LaTeX like the three figures; at 390 px the bar and axis labels are about 8 px. Enlarge them, and set G and N in the same maths typeface at least.
-- Hook/lesson.md:104 — "Tässä vaiheessa kiinnostaa vain voiman suuruus, ja kuvissa nuoli näyttää suunnan" is slightly cryptic for a first paragraph; say "Nuoli kuvassa näyttää, mihin suuntaan voima osoittaa."
-- Fig. 3 — the Jupiter line leaves the frame with no value; add the label "Jupiter, 100 kg: 2480 N (kuvan ulkopuolella)" or extend the axis.
-- Fig. 2 — the label "suora origon kautta" is plain text inside the plot; it is fine, but "x = kF" with the slope as a number would link to the formula $G = mg$ afterwards.
-- check-1 option "Marsin ohut ilmakehä..." and pred-2 option on Jupiter's gas surface are good distractors, but the feedback in pred-2 could name the experiment's reading, not only the model value.
+- sim canvas and DOM readout (sim-390.png, exp-exp-2-390.png) — "Massa m = 10 kg", "g = 9,81 m/s²", "G = m · g = 98,1 N" and the canvas labels (G (N), Kuu, Mars, asteikko 0–248 N) remain plain interface text (NOTES.md §1: teacher to decide). Canvas bar labels are about 8 px at 390 px; enlarge when the decision comes.
+- sim.js (spring scale) — the scale now reads in N (0–2500, every 500), but 98,1 N and 248 N sit within the first tick, so the pointer reads near 0 and the number comes only from the readout. The fixed scale keeps the stretch growing visibly with mass, so acceptable; consider a second, zoomed scale or a note "asteikko kattaa 100 kg:n painon Jupiterissa".
+- lesson.md:101 — "Tässä vaiheessa kiinnostaa vain voiman suuruus, ja kuvissa nuoli näyttää, mihin suuntaan voima osoittaa" is cryptic in the first paragraph; say "Nuoli kuvassa näyttää, mihin suuntaan voima osoittaa."
+- Fig. 3 — the Jupiter line leaves the frame without a value; label "Jupiter, 100 kg: 2480 N (kuvan ulkopuolella)".
+- pred-2 feedback names the model value only; naming what the experiment's table will show ("kirjaa G kahdessa paikassa") would tie it to Koe 2.
 
 ## Checked
-- Figures 1-3 (fy3-1-fig-1/2/3-390.png): labels in LaTeX, uncluttered, colour with labels; fig. 1 shows 1 and 2 bodies with x and 2x clearly; legible at 365 px. Rule 2026-10-26 on figures met.
-- Opening question is answered by the Kuu paragraph and g table; scope held to G = mg (no Newton's laws).
-- Prediction, experiment pairs can refute (Koe 1 varies only m, Koe 2 locks m, varies body); the sim computes the formula but the spring/bar views make the comparison concrete.
-- Example is staged in six steps and does not repeat any exercise; solutions in LaTeX with sanity checks.
-- Exercise levels ascend; L3 tasks need reasoning; exit ticket tests mass vs weight and proportionality.
-- Finnish: case after number+unit correct; no lesson ids in prose (only course names FY1, FY4).
-- Layout at 1280 px: hook and prerequisite item sit two by two and read standalone; lab view beside simulation fine.
+- Round-1 blocking findings: spring scale in N (fy3-1-sim-390.png); activity texts carry symbols as maths (fy3-1-stage-ennusta-390-1.png); Alkutila line and table headers m, g render as maths (fy3-1-exp-exp-2-390.png). All resolved.
+- Figures 1–3: LaTeX labels, uncluttered, colour with labels, legible at 365 px.
+- Opening question answered by the Kuu paragraph and g table; scope held to G = mg.
+- Predictions can be refuted: Koe 1 varies only m, Koe 2 locks m and varies body; each option's feedback repairs its misconception.
+- Example staged in six steps, repeats no exercise; solutions in LaTeX with sanity checks.
+- Exercise levels ascend, L3 needs reasoning; exit ticket tests mass vs weight and proportionality.
+- Finnish: case after number+unit correct; no lesson ids in prose.
+- Phone and 1280 px layouts read; Ennusta box and two-by-two items stand alone.

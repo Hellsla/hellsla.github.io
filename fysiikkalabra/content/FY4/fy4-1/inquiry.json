@@ -321,7 +321,7 @@
         "unit": "m/s",
         "tolerance": 0.03,
         "hints": [
-          "Suora ei kulje yhdenkään mittauspisteen tarkkaan kautta. Lue suoralta piste, joka on kaukana alkupisteestä, esimerkiksi lähellä hetkeä $t = 10\\,\\text{s}$, ja kirjaa sen t ja x.",
+          "Suora ei kulje kaikkien mittauspisteiden kautta, joten lue piste suoralta, ei taulukosta. Valitse piste, joka on kaukana alkupisteestä, esimerkiksi lähellä hetkeä $t = 10\\,\\text{s}$, ja kirjaa sen t ja x.",
           "$v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$. Alkupiste on $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$; suora päättyy noin paikkaan $19\\,\\text{m}$.",
           "Hetkien $t = 0$ ja $t = 10\\,\\text{s}$ välillä suoran paikka kasvaa noin $19\\,\\text{m} - 4\\,\\text{m} = 15\\,\\text{m}$."
         ],
@@ -339,7 +339,7 @@
             "feedback": "Jaoit ajan muutoksen paikan muutoksella. Nopeus on paikan muutos jaettuna ajan muutoksella, $v = \\dfrac{\\Delta x}{\\Delta t}$."
           }
         ],
-        "solution": "**Ratkaisu symbolisesti.** Sovitetun suoran kulmakerroin on $v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$.\n\n**Sijoitus.** Suora kulkee suunnilleen pisteiden $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$ ja $(10\\,\\text{s};\\, 19{,}0\\,\\text{m})$ kautta, joten $v = \\dfrac{19{,}0\\,\\text{m} - 4{,}1\\,\\text{m}}{10\\,\\text{s}} \\approx 1{,}5\\,\\text{m/s}$.\n\n**Järkevyys.** Suoran leikkauskohta paikka-akselilla on alkupaikka $x_0 \\approx 4\\,\\text{m}$, ja paikan yhtälö on noin $x = 4\\,\\text{m} + 1{,}5\\,\\text{m/s} \\cdot t$."
+        "solution": "**Ratkaisu symbolisesti.** Sovitetun suoran kulmakerroin on $v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$.\n\n**Sijoitus.** Suora kulkee suunnilleen pisteiden $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$ ja $(10\\,\\text{s};\\, 19{,}1\\,\\text{m})$ kautta, joten $v = \\dfrac{19{,}1\\,\\text{m} - 4{,}1\\,\\text{m}}{10\\,\\text{s}} = 1{,}5\\,\\text{m/s}$.\n\n**Järkevyys.** Suoran leikkauskohta paikka-akselilla on alkupaikka $x_0 \\approx 4\\,\\text{m}$, ja paikan yhtälö on noin $x = 4\\,\\text{m} + 1{,}5\\,\\text{m/s} \\cdot t$."
       }
     },
     {

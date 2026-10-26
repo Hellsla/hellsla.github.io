@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d1ddfcf862eff861
+CONTENT-HASH: 35c7e28697874a1d
 ## Blocking
 
 ## Polish
-- inquiry.json:124,223,392 (also 7, 66, 79 and lesson.md "Tarvitset") — teacher's rule "symbols in prose as maths": bare "(V, p)-kuvaaja" and "(s, F)-kuvaaja" stay plain text, while Ydinajatus writes "($V$, $p$)-kuvajassa" — write "($V$, $p$)-kuvaaja" everywhere. Same for the generated "Alkutila: lämpö Q = 500 J, paine p₂ = 100 kPa" line and table headers ("ΔV (l)", "Q₁ (J)"), and "10¹² J" in exercises.json:48.
-- inquiry.json pred-1 — the prediction needs W = pΔV, which the student meets only in Teoriatiivistelmä; the sim computes ΔV = 2Q/(5p), so exp-1 mostly confirms the arithmetic. Fine as a first-contact derivation (F = pA, s), but add a one-line cue in the prompt ("kaasu painaa mäntää voimalla pA") so a student can actually argue the options.
-- inquiry.json pred-2/exp-2 — two return methods refute Aino's specific mechanism, not the general claim; lesson.md "Kokemus osoittaa" carries the second law. Say once in the exp-2 question feedback that this is an experience-based law, not something two runs prove.
-- inquiry.json "suunnittele" (hints, line 532-534) — a two-equation system with an unknown pump power is the heaviest step of the lesson; with three experiments, heat pump and cogeneration the workload is at the upper limit of one lesson. Keep, but consider dropping option 3 to the exercises.
-- Sim canvas labels ("p (kPa)", "ΔU + W_k", "Q") at 390 px are small and not LaTeX; the cylinder and particles are tiny. Legible, but the weakest part of the print-quality rule.
+- Sim canvas ("p (kPa)", "V (l)", "ΔU + W_k", "Q") and the DOM readout ("p = 200 kPa, ΔV = 0,00 l", "Q = 0 J, ΔU = 0 J", the "Lämpö Q = 500 J" slider label) stay plain interface text per NOTES.md §1 until the teacher decides; weakest spot of the print-quality rule, legible at 390 px.
+- exp-1 Alkutila line (fy3-11-exp-exp-1-390-1.png): "lämpö Q = 500 J" and "paine p₂ = 100 kPa" still render as plain text in the capture (the table header "lämpö Q / ΔV (l)" is mixed italic and plain). If the capture is current, the generator still needs maths there. Also "paine p₂ = 100 kPa" sits beside a readout of p = 200 kPa, which can puzzle a student: say "paluupaine".
+- inquiry.json pred-1: still lacks the cue "kaasu painaa mäntää voimalla pA" (round 1).
+- inquiry.json exp-2 feedback: say once that the second law is an experience-based law, not something two runs prove (round 1).
+- inquiry.json "suunnittele": heaviest step; workload at the upper limit of one lesson (round 1).
 
 ## Checked
-- Figures 1-4 (piston-work, heat-engine, heat-pump, pv-work): all labels LaTeX, large, uncluttered; arrow widths in scale (60/24/36, 20/40/60); colour backed by labels and hatching; legible at 390 px.
-- Opening question answered in Ydinajatus and reflect; goals of the slot met without computing cycles.
-- Chapter names used ("luku *…*"), no lesson ids in learner text.
-- Worked example: five stages, one step each, LaTeX aligned; sensible check; does not repeat the exercises.
-- Experiments: parameters locked and varied correctly, min 2, exp-2 compares A and B; speakers: only Bea right.
-- Exercises: three levels, answers verified (12 kJ, 172 J, 500 J, 120 MW, 9,6 MWh, 12 kW); solutions in LaTeX; exit ticket tests the core idea.
-- Layout: 1280 px two-column Tutki and Pohdinta read well; 390 px nothing clipped.
-- Finnish: no errors found.
+- Diff is symbol-to-maths only: "$(V, p)$", "$(s, F)$", "$V$-akseli", "$1\,\text{TJ} = 10^{12}\,\text{J}$" in contribution, prior, feedbacks, howto, hints, prompts and exercise L2-01; no wording or number changed.
+- No bare "(V, p)" left in inquiry.json, exercises.json or lesson.md prose (figure aria-label is plain by design).
+- Answers unaffected (41,0 %, 450 J); feedback still repairs the misconceptions.
+- Round-1 verdict stands: figures 1-4, staged example, experiments, exercise levels, exit ticket, Finnish, 360 px layout.
