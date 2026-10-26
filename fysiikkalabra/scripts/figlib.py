@@ -98,7 +98,7 @@ class Fig:
         figure's white under the label, for a label that sits on gridlines."""
         size = size or self.size
         tall = re.search(r"\\d?frac|\\sqrt|\\sum|\\int", tex)
-        h = round(size * (2.5 if tall else 1.3))            # about the rendered height: check_layout.py measures the box
+        h = round(size * (2.4 if tall else 1.2))            # about the rendered height: check_layout.py measures the box
         w = w or round(visible_len(tex) * size * 0.52 + 8)
         x0 = x if anchor == "start" else x - w / 2 if anchor == "middle" else x - w
         just = {"start": "flex-start", "middle": "center", "end": "flex-end"}[anchor]

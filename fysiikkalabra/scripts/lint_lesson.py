@@ -117,7 +117,7 @@ def check_math(L, name, text):
             L.err(name, line, "siunitx and \\newcommand do not work in KaTeX (NOTES 1.10)")
         if re.search(r"(?<!\\)\*", frag):
             L.warn(name, line, "use \\cdot for multiplication, not * (NOTES 1.5)")
-        if not display and "\\dfrac" in frag:
+        if not display and "\\dfrac" in frag and name != "solutions.md":   # a solution line is a calculation of its own, a full-size fraction reads best there
             L.warn(name, line, "inline \\dfrac breaks the line; use \\tfrac or display math (NOTES 1)")
         if re.search(r"\d\s(?:N|kg|m|s|J|W|K|Pa)\b", frag) and "\\text" not in frag and "\\mathrm" not in frag:
             L.warn(name, line, "units in math go in \\text{} after \\, (NOTES 1.3): " + frag[:60])

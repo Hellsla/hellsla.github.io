@@ -1,95 +1,95 @@
 ## fy3-2-L1-01
-**Annettu:** F = 80 N (liikkeen suuntainen), s = 25 m
-**Kysytty:** W
-**Kaava:** W = F s
-**Sijoitus:** W = 80 N · 25 m = 2000 J
-**Vastaus:** 2,0 kJ
+**Annettu:** $F = 80\,\text{N}$ (liikkeen suuntainen), $s = 25\,\text{m}$
+**Kysytty:** työ $W$
+**Kaava:** $W = F s$
+**Sijoitus:** $W = 80\,\text{N} \cdot 25\,\text{m} = 2000\,\text{J}$
+**Vastaus:** $2{,}0\,\text{kJ}$
 **Järkevyys:** Sama työ nostaisi 20 kg:n kappaleen noin 10 m:n korkeuteen. Suuruusluokka sopii kevyen mopon työntämiseen.
 
 ## fy3-2-L1-02
-**Annettu:** G = 150 N, h = 1,2 m
-**Kysytty:** W
-**Kaava:** W = G h
-**Sijoitus:** W = 150 N · 1,2 m = 180 J
-**Vastaus:** 180 J
+**Annettu:** $G = 150\,\text{N}$, $h = 1{,}2\,\text{m}$
+**Kysytty:** työ $W$
+**Kaava:** $W = G h$
+**Sijoitus:** $W = 150\,\text{N} \cdot 1{,}2\,\text{m} = 180\,\text{J}$
+**Vastaus:** $180\,\text{J}$
 **Järkevyys:** Alle kahdensadan joulen työ vastaa suunnilleen 15 kg:n hyllyn nostamista reilun metrin.
 
 ## fy3-2-L1-03
-**Annettu:** W = 36 kJ = 36 000 J, t = 12 s
-**Kysytty:** P
-**Kaava:** P = W / t
-**Sijoitus:** P = 36 000 J / 12 s = 3000 W
-**Vastaus:** 3,0 kW
+**Annettu:** $W = 36\,\text{kJ} = 36\,000\,\text{J}$, $t = 12\,\text{s}$
+**Kysytty:** teho $P$
+**Kaava:** $P = \dfrac{W}{t}$
+**Sijoitus:** $P = \dfrac{36\,000\,\text{J}}{12\,\text{s}} = 3000\,\text{W}$
+**Vastaus:** $3{,}0\,\text{kW}$
 **Järkevyys:** Pienen hissimoottorin teho on muutaman kilowatin luokkaa.
 
 ## fy3-2-L1-04
-**Annettu:** F = 35 N vakiona, s = 6,0 m
-**Kysytty:** W
-**Kaava:** W = kuvaajan pinta-ala; vakiovoimalla se on suorakulmio, joten W = F s
-**Sijoitus:** W = 35 N · 6,0 m = 210 J
-**Vastaus:** 210 J
-**Järkevyys:** Kuvaajan pinta-ala ja kaava W = F s antavat saman tuloksen, koska vakiovoimalla pinta-ala on suorakulmio. Yksikkö N·m on joule.
+**Annettu:** $F = 35\,\text{N}$ vakiona, $s = 6{,}0\,\text{m}$
+**Kysytty:** työ $W$
+**Kaava:** $W$ = kuvaajan pinta-ala; vakiovoimalla se on suorakulmio, joten $W = F s$
+**Sijoitus:** $W = 35\,\text{N} \cdot 6{,}0\,\text{m} = 210\,\text{J}$
+**Vastaus:** $210\,\text{J}$
+**Järkevyys:** Kuvaajan pinta-ala ja kaava $W = F s$ antavat saman tuloksen, koska vakiovoimalla pinta-ala on suorakulmio. Yksikkö $\text{N} \cdot \text{m}$ on joule.
 
 ## fy3-2-L1-05
-**Annettu:** F = 20 N (liikkeen suuntainen), v = 3,0 m/s, liike tasaista
-**Kysytty:** P
-**Kaava:** P = F v
-**Sijoitus:** P = 20 N · 3,0 m/s = 60 W
-**Vastaus:** 60 W
+**Annettu:** $F = 20\,\text{N}$ (liikkeen suuntainen), $v = 3{,}0\,\text{m/s}$, liike tasaista
+**Kysytty:** teho $P$
+**Kaava:** $P = F v$
+**Sijoitus:** $P = 20\,\text{N} \cdot 3{,}0\,\text{m/s} = 60\,\text{W}$
+**Vastaus:** $60\,\text{W}$
 **Järkevyys:** Reipas hiihtovauhti pulkan kanssa vaatii muutaman kymmenen watin tehon vetoon. Sopii.
 
 ## fy3-2-L2-01
-**Annettu:** W = 45 kJ = 45 000 J, F = 1,5 kN = 1500 N
-**Kysytty:** s
-**Kaava:** W = F s, joten s = W / F
-**Sijoitus:** s = 45 000 J / 1500 N = 30 m
-**Vastaus:** 30 m
-**Järkevyys:** Yksiköt: J / N = N·m / N = m. Kolmenkymmenen metrin siirto on uskottava.
+**Annettu:** $W = 45\,\text{kJ} = 45\,000\,\text{J}$, $F = 1{,}5\,\text{kN} = 1500\,\text{N}$
+**Kysytty:** matka $s$
+**Kaava:** $W = F s$, joten $s = \dfrac{W}{F}$
+**Sijoitus:** $s = \dfrac{45\,000\,\text{J}}{1500\,\text{N}} = 30\,\text{m}$
+**Vastaus:** $30\,\text{m}$
+**Järkevyys:** Yksiköt: $\dfrac{\text{J}}{\text{N}} = \dfrac{\text{N} \cdot \text{m}}{\text{N}} = \text{m}$. Kolmenkymmenen metrin siirto on uskottava.
 
 ## fy3-2-L2-02
-**Annettu:** P = 1,5 kW = 1500 W, t = 4,0 min = 240 s
-**Kysytty:** W
-**Kaava:** P = W / t, joten W = P t
-**Sijoitus:** W = 1500 W · 240 s = 360 000 J
-**Vastaus:** 360 kJ
+**Annettu:** $P = 1{,}5\,\text{kW} = 1500\,\text{W}$, $t = 4{,}0\,\text{min} = 240\,\text{s}$
+**Kysytty:** työ $W$
+**Kaava:** $P = \dfrac{W}{t}$, joten $W = P t$
+**Sijoitus:** $W = 1500\,\text{W} \cdot 240\,\text{s} = 360\,000\,\text{J}$
+**Vastaus:** $360\,\text{kJ}$
 **Järkevyys:** Tällä työllä voisi nostaa 1000 kg:n vesimäärän noin 37 m:n korkeuteen. Neljä minuuttia pumppausta, uskottavaa.
 
 ## fy3-2-L2-03
-**Annettu:** m = 850 kg, h = 30 m, g = 9,81 m/s²
-**Kysytty:** W
-**Kaava:** W = G h ja G = m g, joten W = m g h
-**Sijoitus:** W = 850 kg · 9,81 m/s² · 30 m = 250 155 J
-**Vastaus:** 250 kJ
+**Annettu:** $m = 850\,\text{kg}$, $h = 30\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** työ $W$
+**Kaava:** $W = G h$ ja $G = m g$, joten $W = m g h$
+**Sijoitus:** $W = 850\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 30\,\text{m} = 250\,155\,\text{J}$
+**Vastaus:** $250\,\text{kJ}$
 **Järkevyys:** Elementti painaa yli 8 kN, ja 30 m on kymmenkerroksisen talon korkeus. Neljännesmegajoulen työ on uskottava.
 
 ## fy3-2-L2-04
-**Annettu:** F₁ = 10 N vakiona matkalla s₁ = 2,0 m (0–2,0 m); sitten F kasvaa tasaisesti F₁ = 10 N:sta F₂ = 30 N:iin matkalla s₂ = 4,0 m (2,0–6,0 m)
-**Kysytty:** W
-**Kaava:** W = kuvaajan pinta-ala = suorakulmio + puolisuunnikas, joten W = F₁ s₁ + ½ (F₁ + F₂) s₂
-**Sijoitus:** W = 10 N · 2,0 m + ½ · (10 N + 30 N) · 4,0 m = 20 J + 80 J = 100 J
-**Vastaus:** 100 J
-**Järkevyys:** Keskimääräinen voima on 100 J / 6,0 m ≈ 17 N, mikä on 10 N:n ja 30 N:n välissä.
+**Annettu:** $F_1 = 10\,\text{N}$ vakiona matkalla $s_1 = 2{,}0\,\text{m}$ (0–2,0 m); sitten $F$ kasvaa tasaisesti $F_1 = 10\,\text{N}$:sta $F_2 = 30\,\text{N}$:iin matkalla $s_2 = 4{,}0\,\text{m}$ (2,0–6,0 m)
+**Kysytty:** työ $W$
+**Kaava:** $W$ = kuvaajan pinta-ala = suorakulmio + puolisuunnikas, joten $W = F_1 s_1 + \tfrac{1}{2}(F_1 + F_2)\, s_2$
+**Sijoitus:** $W = 10\,\text{N} \cdot 2{,}0\,\text{m} + \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4{,}0\,\text{m} = 20\,\text{J} + 80\,\text{J} = 100\,\text{J}$
+**Vastaus:** $100\,\text{J}$
+**Järkevyys:** Keskimääräinen voima on $\dfrac{100\,\text{J}}{6{,}0\,\text{m}} \approx 17\,\text{N}$, mikä on 10 N:n ja 30 N:n välissä.
 
 ## fy3-2-L3-01
-**Annettu:** F = 40 N; nousu 0 → F matkalla s₁ = 0,50 m, vakio matkalla s₂ = 1,0 m, lasku F → 0 matkalla s₃ = 0,50 m; s = 2,0 m
-**Kysytty:** keskimääräinen voima F_ka
-**Kaava:** W = kuvaajan pinta-ala = ½ F s₁ + F s₂ + ½ F s₃ ja W = F_ka s, joten F_ka = W / s
-**Sijoitus:** W = ½ · 40 N · 0,50 m + 40 N · 1,0 m + ½ · 40 N · 0,50 m = 10 J + 40 J + 10 J = 60 J; F_ka = 60 J / 2,0 m = 30 N
-**Vastaus:** 30 N
-**Järkevyys:** Keskiarvo on huippuarvoa 40 N pienempi, koska voima on alussa ja lopussa pieni.
+**Annettu:** $F = 40\,\text{N}$; nousu $0 \to F$ matkalla $s_1 = 0{,}50\,\text{m}$, vakio matkalla $s_2 = 1{,}0\,\text{m}$, lasku $F \to 0$ matkalla $s_3 = 0{,}50\,\text{m}$; $s = 2{,}0\,\text{m}$
+**Kysytty:** keskimääräinen voima $F_\text{ka}$
+**Kaava:** $W$ = kuvaajan pinta-ala $= \tfrac{1}{2} F s_1 + F s_2 + \tfrac{1}{2} F s_3$ ja $W = F_\text{ka}\, s$, joten $F_\text{ka} = \dfrac{W}{s}$
+**Sijoitus:** $W = \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} + 40\,\text{N} \cdot 1{,}0\,\text{m} + \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} = 10\,\text{J} + 40\,\text{J} + 10\,\text{J} = 60\,\text{J}$; $F_\text{ka} = \dfrac{60\,\text{J}}{2{,}0\,\text{m}} = 30\,\text{N}$
+**Vastaus:** $30\,\text{N}$
+**Järkevyys:** Keskiarvo on huippuarvoa $40\,\text{N}$ pienempi, koska voima on alussa ja lopussa pieni.
 
 ## fy3-2-L3-02
-**Annettu:** m = 2,0 kg, h = 1,5 m, pudotuksia n = 20, g = 9,81 m/s²
-**Kysytty:** veteen siirtynyt lämpömäärä Q
-**Kaava:** yhden pudotuksen työ W₁ = m g h; kaikki työ siirtyy veteen lämpönä, joten Q = n W₁ = n m g h
-**Sijoitus:** W₁ = 2,0 kg · 9,81 m/s² · 1,5 m = 29,43 J; Q = 20 · 29,43 J = 588,6 J
-**Vastaus:** 590 J
+**Annettu:** $m = 2{,}0\,\text{kg}$, $h = 1{,}5\,\text{m}$, pudotuksia $n = 20$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** veteen siirtynyt lämpömäärä $Q$
+**Kaava:** yhden pudotuksen työ $W_1 = m g h$; kaikki työ siirtyy veteen lämpönä, joten $Q = n W_1 = n m g h$
+**Sijoitus:** $W_1 = 2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{m} = 29{,}43\,\text{J}$; $Q = 20 \cdot 29{,}43\,\text{J} = 588{,}6\,\text{J}$
+**Vastaus:** $590\,\text{J}$
 **Järkevyys:** Alle 600 J on pieni energiamäärä, joten lämpötilan muutos oli pieni ja vaati tarkkaa mittausta. Siksi Joule toisti pudotuksia monta kertaa.
 
 ## fy3-2-L3-03
-**Annettu:** P = 180 W, m = 1000 kg, h = 50 m, g = 9,81 m/s²
-**Kysytty:** t
-**Kaava:** W = m g h ja W = P t, joten t = m g h / P
-**Sijoitus:** W = 1000 kg · 9,81 m/s² · 50 m = 490 500 J; t = 490 500 J / 180 W = 2725 s = 45,4 min
-**Vastaus:** 45 min
+**Annettu:** $P = 180\,\text{W}$, $m = 1000\,\text{kg}$, $h = 50\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** aika $t$
+**Kaava:** $W = m g h$ ja $W = P t$, joten $t = \dfrac{m g h}{P}$
+**Sijoitus:** $W = 1000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 50\,\text{m} = 490\,500\,\text{J}$; $t = \dfrac{490\,500\,\text{J}}{180\,\text{W}} = 2725\,\text{s} = 45{,}4\,\text{min}$
+**Vastaus:** $45\,\text{min}$
 **Järkevyys:** Energia on 490 kJ. Pieni paneeli tuottaa sen alle tunnissa, mikä vastaa arkikokemusta aurinkosähköstä.

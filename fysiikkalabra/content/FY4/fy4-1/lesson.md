@@ -3,52 +3,86 @@
 > **Miksi** pyöräilijän kuljettu matka voi olla neljä kilometriä, vaikka hänen siirtymänsä on nolla?
 
 ## Ydinajatus
-Liikkeen kuvaaminen alkaa sopimuksesta. Valitaan suora, jota pitkin kappale liikkuu, ja sille origo ja positiivinen suunta: tämä on x-akseli. **Paikka** $x$ kertoo, missä kappale on origoon nähden. Etumerkki kertoo puolen: paikka $x = -3\,\text{m}$ on kolme metriä origosta negatiiviseen suuntaan. Aika $t$ mitataan kellolla, ja liike kuvataan kertomalla paikka jokaisella hetkellä.
+Liikkeen kuvaaminen alkaa sopimuksesta. Valitaan suora, jota pitkin kappale liikkuu, ja sille origo ja positiivinen suunta: tämä on $x$-akseli. **Paikka** $x$ kertoo, missä kappale on origoon nähden. Etumerkki kertoo puolen: paikka $x = -3\,\text{m}$ on kolme metriä origosta negatiiviseen suuntaan. Aika $t$ mitataan kellolla, ja liike kuvataan kertomalla paikka jokaisella hetkellä.
 
 Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan muutos $\Delta x = x_2 - x_1$. Siirtymä on vektorisuure: sillä on suuruus ja suunta, ja suoralla suunta ilmoitetaan etumerkillä. Plus tarkoittaa positiivista suuntaa ja miinus vastakkaista. Siirtymä ei ole sama asia kuin kuljettu matka $s$. Matka on reitin pituus eikä se voi olla negatiivinen. Jos pyöräilijä ajaa kaupalle ja takaisin, matka on neljä kilometriä, mutta siirtymä on nolla, koska loppupaikka on sama kuin alkupaikka.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva kahdesta siirtymästä x-akselilla. Ylhäällä kappale siirtyy paikasta x1 = 2 m paikkaan x2 = 8 m, joten siirtymä on +6 m ja osoittaa oikealle. Alhaalla kappale siirtyy paikasta x1 = 8 m paikkaan x2 = 3 m, joten siirtymä on −5 m ja osoittaa vasemmalle." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <foreignObject x="175" y="0" width="260" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\Delta x = +6\,\text{m}$</div></foreignObject>
-  <line x1="182" y1="52" x2="440" y2="52" stroke="#1971c2" stroke-width="5"/>
-  <polygon points="458,52 436,42 436,62" fill="#1971c2"/>
-  <line x1="80" y1="84" x2="560" y2="84" stroke="#1f2933" stroke-width="3"/>
-  <line x1="90" y1="76" x2="90" y2="92" stroke="#6b7480" stroke-width="3"/>
-  <line x1="182" y1="76" x2="182" y2="92" stroke="#6b7480" stroke-width="3"/>
-  <line x1="274" y1="76" x2="274" y2="92" stroke="#6b7480" stroke-width="3"/>
-  <line x1="366" y1="76" x2="366" y2="92" stroke="#6b7480" stroke-width="3"/>
-  <line x1="458" y1="76" x2="458" y2="92" stroke="#6b7480" stroke-width="3"/>
-  <line x1="550" y1="76" x2="550" y2="92" stroke="#6b7480" stroke-width="3"/>
-  <circle cx="182" cy="84" r="9" fill="#1971c2"/>
-  <circle cx="458" cy="84" r="9" fill="#1971c2"/>
-  <text x="8" y="94" fill="#1f2933">x (m)</text>
-  <text x="90" y="120" text-anchor="middle" fill="#1f2933">0</text>
-  <text x="182" y="120" text-anchor="middle" fill="#1f2933">2</text>
-  <text x="274" y="120" text-anchor="middle" fill="#1f2933">4</text>
-  <text x="366" y="120" text-anchor="middle" fill="#1f2933">6</text>
-  <text x="458" y="120" text-anchor="middle" fill="#1f2933">8</text>
-  <text x="550" y="120" text-anchor="middle" fill="#1f2933">10</text>
-  <foreignObject x="157" y="128" width="50" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_1$</div></foreignObject>
-  <foreignObject x="433" y="128" width="50" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_2$</div></foreignObject>
-  <foreignObject x="215" y="164" width="260" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\Delta x = -5\,\text{m}$</div></foreignObject>
-  <line x1="458" y1="214" x2="250" y2="214" stroke="#e8590c" stroke-width="5"/>
-  <polygon points="228,214 252,204 252,224" fill="#e8590c"/>
-  <line x1="80" y1="246" x2="560" y2="246" stroke="#1f2933" stroke-width="3"/>
-  <line x1="90" y1="238" x2="90" y2="254" stroke="#6b7480" stroke-width="3"/>
-  <line x1="182" y1="238" x2="182" y2="254" stroke="#6b7480" stroke-width="3"/>
-  <line x1="274" y1="238" x2="274" y2="254" stroke="#6b7480" stroke-width="3"/>
-  <line x1="366" y1="238" x2="366" y2="254" stroke="#6b7480" stroke-width="3"/>
-  <line x1="458" y1="238" x2="458" y2="254" stroke="#6b7480" stroke-width="3"/>
-  <line x1="550" y1="238" x2="550" y2="254" stroke="#6b7480" stroke-width="3"/>
-  <circle cx="458" cy="246" r="9" fill="#e8590c"/>
-  <circle cx="228" cy="246" r="9" fill="#e8590c"/>
-  <text x="8" y="256" fill="#1f2933">x (m)</text>
-  <foreignObject x="173" y="256" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_2 = 3$</div></foreignObject>
-  <foreignObject x="403" y="256" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_1 = 8$</div></foreignObject>
+<svg data-fig="displacement" viewBox="0 0 600 392" role="img" aria-label="Kaavakuva kahdesta siirtymästä x-akselilla, akseli piirretty mittakaavassa. Ylhäällä kappale siirtyy paikasta x1 = 2 m paikkaan x2 = 8 m, joten siirtymä on +6 m ja osoittaa oikealle. Alhaalla kappale siirtyy paikasta x1 = 8 m paikkaan x2 = 3 m, joten siirtymä on −5 m ja osoittaa vasemmalle." style="max-width:100%;font-size:24px">
+  <line x1="50" y1="104" x2="482" y2="104" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M494,104 L481,110 L481,98 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="70" y1="100" x2="70" y2="110" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="60" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
+  <line x1="150" y1="100" x2="150" y2="110" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="140" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  <line x1="230" y1="100" x2="230" y2="110" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="220" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4$</div></foreignObject>
+  <line x1="310" y1="100" x2="310" y2="110" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="300" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
+  <line x1="390" y1="100" x2="390" y2="110" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="380" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$8$</div></foreignObject>
+  <line x1="470" y1="100" x2="470" y2="110" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="453.5" y="115.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10$</div></foreignObject>
+  <foreignObject x="502" y="89.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x\ (\text{m})$</div></foreignObject>
+  <foreignObject x="222.5" y="11.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\Delta x = +6\,\text{m}$</div></foreignObject>
+  <line x1="150" y1="62" x2="371" y2="62" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M390,62 L370,71 L370,53 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <circle cx="150" cy="104" r="9" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="390" cy="104" r="9" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="133.5" y="147.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x_1$</div></foreignObject>
+  <foreignObject x="373.5" y="147.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x_2$</div></foreignObject>
+  <line x1="24" y1="198" x2="576" y2="198" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <line x1="50" y1="304" x2="482" y2="304" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M494,304 L481,310 L481,298 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="70" y1="300" x2="70" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="60" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
+  <line x1="150" y1="300" x2="150" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="140" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  <line x1="230" y1="300" x2="230" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="220" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4$</div></foreignObject>
+  <line x1="310" y1="300" x2="310" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="300" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
+  <line x1="390" y1="300" x2="390" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="380" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$8$</div></foreignObject>
+  <line x1="470" y1="300" x2="470" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="453.5" y="315.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10$</div></foreignObject>
+  <foreignObject x="502" y="289.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x\ (\text{m})$</div></foreignObject>
+  <foreignObject x="242.5" y="211.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\Delta x = -5\,\text{m}$</div></foreignObject>
+  <line x1="390" y1="262" x2="209" y2="262" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M190,262 L210,253 L210,271 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <circle cx="390" cy="304" r="9" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="190" cy="304" r="9" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="373.5" y="347.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x_1$</div></foreignObject>
+  <foreignObject x="173.5" y="347.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x_2$</div></foreignObject>
+</svg>
+
+<svg data-fig="round-trip" viewBox="0 0 600 322" role="img" aria-label="Kaavakuva, ei mittakaavassa: pyöräilijä ajaa kotoa kauppaan, kaksi kilometriä, ja takaisin kotiin, toiset kaksi kilometriä. Kuljettu matka on s = 2 km + 2 km = 4 km, mutta loppupaikka on sama kuin alkupaikka, joten siirtymä on nolla." style="max-width:100%;font-size:24px">
+  <line x1="50" y1="120" x2="468" y2="120" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M480,120 L467,126 L467,114 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="110" y1="116" x2="110" y2="126" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="100" y="131.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
+  <line x1="260" y1="116" x2="260" y2="126" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="250" y="131.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
+  <line x1="410" y1="116" x2="410" y2="126" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="400" y="131.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  <foreignObject x="488" y="105.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x\ (\text{km})$</div></foreignObject>
+  <rect x="90" y="96" width="40" height="24" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M84,96 L110,76 L136,96 Z" fill="#b8622d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="386" y="90" width="48" height="30" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="382" y="90" width="56" height="10" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="110" y1="64" x2="391" y2="64" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M410,64 L390,73 L390,55 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="175" y="15.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{menomatka } 2\,\text{km}$</div></foreignObject>
+  <line x1="410" y1="184" x2="129" y2="184" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M110,184 L130,175 L130,193 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="168.5" y="199.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{paluumatka } 2\,\text{km}$</div></foreignObject>
+  <line x1="24" y1="238" x2="576" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <foreignObject x="196" y="251.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 2\,\text{km} + 2\,\text{km} = 4\,\text{km}$</div></foreignObject>
+  <foreignObject x="233.5" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta x = x_2 - x_1 = 0$</div></foreignObject>
 </svg>
 
 **Nopeus** kertoo, kuinka nopeasti ja mihin suuntaan paikka muuttuu. Se on myös vektorisuure, ja sen etumerkki kertoo suunnan. Nopeuden itseisarvo $|v|$ on vauhti. Tasaisessa liikkeessä nopeus pysyy vakiona: paikka muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä.
 
-Liike voidaan esittää **(t,x)-kuvaajana**, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran jyrkkyys eli kulmakerroin on nopeus: jyrkempi suora tarkoittaa suurempaa nopeutta, vaakasuora suora paikallaan oloa ja laskeva suora liikettä negatiiviseen suuntaan. Kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa.
+Liike voidaan esittää **$(t,x)$-kuvaajana**, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran jyrkkyys eli kulmakerroin on nopeus: jyrkempi suora tarkoittaa suurempaa nopeutta, vaakasuora suora paikallaan oloa ja laskeva suora liikettä negatiiviseen suuntaan. Kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa.
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö
 Kun paikka muuttuu aikavälillä $\Delta t = t_2 - t_1$ määrän $\Delta x$, keskinopeus on siirtymä jaettuna ajalla:
@@ -61,37 +95,38 @@ Tasaisessa liikkeessä keskinopeus on sama millä tahansa aikavälillä, ja sit�
 ```latex
 x = x_0 + v\,t
 ```
-missä $x$ on paikka hetkellä $t$ (m), $x_0$ alkupaikka (m), $v$ nopeus (m/s) ja $t$ aika (s). Tämä on (t,x)-kuvaajan suoran yhtälö: $x_0$ on suoran leikkauskohta paikka-akselilla ja $v$ sen kulmakerroin.
+missä $x$ on paikka hetkellä $t$ (m), $x_0$ alkupaikka (m), $v$ nopeus (m/s) ja $t$ aika (s). Tämä on $(t,x)$-kuvaajan suoran yhtälö: $x_0$ on suoran leikkauskohta paikka-akselilla ja $v$ sen kulmakerroin.
 
-<svg viewBox="0 0 600 300" role="img" aria-label="Kaavakuva kahdesta (t,x)-kuvaajasta. Vasemmalla suora nousee alkupaikasta x0, ja suoralta on valittu kaksi pistettä: aikaväli Δt ja paikan muutos Δx muodostavat kolmion, jonka avulla nopeus v on Δx jaettuna Δt:lla. Oikealla kolme suoraa samasta alkupaikasta: nouseva suora on nopeus v suurempi kuin nolla, vaakasuora suora nopeus nolla ja laskeva suora nopeus pienempi kuin nolla." style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <line x1="50" y1="262" x2="290" y2="262" stroke="#1f2933" stroke-width="3"/>
-  <line x1="50" y1="262" x2="50" y2="34" stroke="#1f2933" stroke-width="3"/>
-  <polygon points="50,22 42,40 58,40" fill="#1f2933"/>
-  <polygon points="300,262 282,254 282,270" fill="#1f2933"/>
-  <text x="62" y="32" fill="#1f2933">x</text>
-  <text x="250" y="292" fill="#1f2933">t</text>
-  <line x1="50" y1="210" x2="262" y2="89" stroke="#1971c2" stroke-width="5"/>
-  <circle cx="50" cy="210" r="6" fill="#1971c2"/>
-  <circle cx="110" cy="176" r="7" fill="#1971c2"/>
-  <circle cx="230" cy="107" r="7" fill="#1971c2"/>
-  <line x1="110" y1="176" x2="230" y2="176" stroke="#6b7480" stroke-width="3" stroke-dasharray="8 6"/>
-  <line x1="230" y1="176" x2="230" y2="107" stroke="#6b7480" stroke-width="3" stroke-dasharray="8 6"/>
-  <foreignObject x="135" y="182" width="70" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\Delta t$</div></foreignObject>
-  <foreignObject x="236" y="124" width="60" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\Delta x$</div></foreignObject>
-  <foreignObject x="2" y="192" width="46" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_0$</div></foreignObject>
-  <foreignObject x="84" y="12" width="150" height="58"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$v = \tfrac{\Delta x}{\Delta t}$</div></foreignObject>
-  <line x1="350" y1="262" x2="580" y2="262" stroke="#1f2933" stroke-width="3"/>
-  <line x1="350" y1="262" x2="350" y2="34" stroke="#1f2933" stroke-width="3"/>
-  <polygon points="350,22 342,40 358,40" fill="#1f2933"/>
-  <polygon points="592,262 574,254 574,270" fill="#1f2933"/>
-  <text x="362" y="32" fill="#1f2933">x</text>
-  <text x="545" y="292" fill="#1f2933">t</text>
-  <line x1="350" y1="150" x2="560" y2="46" stroke="#1971c2" stroke-width="5"/>
-  <line x1="350" y1="150" x2="560" y2="150" stroke="#6b7480" stroke-width="5"/>
-  <line x1="350" y1="150" x2="560" y2="214" stroke="#e8590c" stroke-width="5"/>
-  <text x="430" y="40" fill="#1f2933">v &gt; 0</text>
-  <text x="470" y="136" fill="#1f2933">v = 0</text>
-  <text x="470" y="252" fill="#1f2933">v &lt; 0</text>
+<svg data-fig="graph-slope" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva kahdesta (t,x)-kuvaajasta, ei lukuarvoja. Vasemmalla suora nousee alkupaikasta x0, ja suoralta on valittu kaksi pistettä: aikaväli Δt ja paikan muutos Δx muodostavat kolmion, jonka avulla nopeus v on Δx jaettuna Δt:lla. Oikealla kolme suoraa samasta alkupaikasta: nouseva suora on nopeus v suurempi kuin nolla, vaakasuora suora nopeus nolla ja laskeva suora nopeus pienempi kuin nolla." style="max-width:100%;font-size:24px">
+  <line x1="49" y1="290" x2="264" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M276,290 L263,296 L263,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="50" y1="291" x2="50" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M50,44 L56,57 L44,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="282" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="40" y="13.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x$</div></foreignObject>
+  <polyline points="50,246 250,114" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="110,206.5 210,206.5 210,140.5" fill="none" stroke="#6b7480" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <circle cx="50" cy="246" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="110" cy="206.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="210" cy="140.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="143.5" y="216" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t$</div></foreignObject>
+  <foreignObject x="222" y="159" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta x$</div></foreignObject>
+  <foreignObject x="7" y="231.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x_0$</div></foreignObject>
+  <foreignObject x="62" y="76" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = \dfrac{\Delta x}{\Delta t}$</div></foreignObject>
+  <line x1="339" y1="290" x2="504" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M516,290 L503,296 L503,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="340" y1="291" x2="340" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M340,44 L346,57 L334,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="522" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="330" y="13.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x$</div></foreignObject>
+  <polyline points="340,180 490,114" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="500" y="99.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v > 0$</div></foreignObject>
+  <polyline points="340,180 490,180" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="500" y="165.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$v = 0$</div></foreignObject>
+  <polyline points="340,180 490,246" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="500" y="231.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v < 0$</div></foreignObject>
+  <circle cx="340" cy="180" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="297" y="165.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x_0$</div></foreignObject>
 </svg>
 
 Kulmakerroin lasketaan valitsemalla suoralta kaksi toisistaan kaukana olevaa pistettä ja jakamalla paikan muutos ajan muutoksella. Mittauspisteistä piirretyssä kuvaajassa suora sovitetaan pisteiden läpi niin, että pisteet jäävät tasaisesti suoran molemmille puolille. Kulmakerroin lasketaan suoralta, ei kahdesta vierekkäisestä mittauspisteestä, koska jokaisessa mittauksessa on pieni virhe.
@@ -99,25 +134,41 @@ Kulmakerroin lasketaan valitsemalla suoralta kaksi toisistaan kaukana olevaa pis
 ## Esimerkki
 Hölkkääjän liike on tasaista. Kuvaajasta luetaan, että hän on hetkellä $t = 0$ paikassa $20\,\text{m}$ ja hetkellä $t = 40\,\text{s}$ paikassa $120\,\text{m}$. Mikä on hölkkääjän nopeus, ja missä paikassa hän on hetkellä $t = 60\,\text{s}$?
 
-<svg viewBox="0 0 600 300" role="img" aria-label="(t,x)-kuvaaja mittakaavassa: suora nousee paikasta 20 metriä hetkellä 0 paikkaan 120 metriä hetkellä 40 sekuntia ja jatkuu katkoviivana paikkaan 170 metriä hetkellä 60 sekuntia" style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
-  <line x1="70" y1="250" x2="560" y2="250" stroke="#1f2933" stroke-width="3"/>
-  <line x1="70" y1="250" x2="70" y2="30" stroke="#1f2933" stroke-width="3"/>
-  <polygon points="70,20 62,38 78,38" fill="#1f2933"/>
-  <polygon points="572,250 554,242 554,258" fill="#1f2933"/>
-  <text x="82" y="30" fill="#1f2933">x (m)</text>
-  <text x="524" y="284" fill="#1f2933">t (s)</text>
-  <line x1="70" y1="226" x2="350" y2="106" stroke="#1971c2" stroke-width="5"/>
-  <line x1="350" y1="106" x2="490" y2="46" stroke="#1971c2" stroke-width="5" stroke-dasharray="10 8"/>
-  <line x1="350" y1="106" x2="350" y2="250" stroke="#6b7480" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6"/>
-  <line x1="70" y1="106" x2="350" y2="106" stroke="#6b7480" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6"/>
-  <circle cx="70" cy="226" r="8" fill="#1971c2"/>
-  <circle cx="350" cy="106" r="8" fill="#1971c2"/>
-  <text x="60" y="234" text-anchor="end" fill="#1f2933">20</text>
-  <text x="60" y="114" text-anchor="end" fill="#1f2933">120</text>
-  <line x1="70" y1="46" x2="490" y2="46" stroke="#6b7480" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6"/>
-  <text x="60" y="54" text-anchor="end" fill="#1f2933">170</text>
-  <text x="350" y="282" text-anchor="middle" fill="#1f2933">40</text>
-  <text x="490" y="282" text-anchor="middle" fill="#1f2933">60</text>
+<svg data-fig="jogger-graph" viewBox="0 0 600 340" role="img" aria-label="(t,x)-kuvaaja mittakaavassa: suora nousee paikasta 20 metriä hetkellä 0 paikkaan 120 metriä hetkellä 40 sekuntia ja jatkuu katkoviivana paikkaan 170 metriä hetkellä 60 sekuntia." style="max-width:100%;font-size:24px">
+  <line x1="200" y1="296" x2="200" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="308" y1="296" x2="308" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="416" y1="296" x2="416" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="272.5" x2="470" y2="272.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="155.5" x2="470" y2="155.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="97" x2="470" y2="97" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="91" y1="296" x2="484" y2="296" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,296 L483,302 L483,290 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="92" y1="297" x2="92" y2="48" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M92,36 L98,49 L86,49 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="200" y1="296" x2="200" y2="303" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="183.5" y="305.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20$</div></foreignObject>
+  <line x1="308" y1="296" x2="308" y2="303" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="291.5" y="305.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$40$</div></foreignObject>
+  <line x1="416" y1="296" x2="416" y2="303" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="399.5" y="305.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$60$</div></foreignObject>
+  <line x1="85" y1="272.5" x2="92" y2="272.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="47" y="258" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$20$</div></foreignObject>
+  <line x1="85" y1="155.5" x2="92" y2="155.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="141" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$120$</div></foreignObject>
+  <line x1="85" y1="97" x2="92" y2="97" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="82.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$170$</div></foreignObject>
+  <foreignObject x="62" y="301.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="281.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
+  <foreignObject x="82" y="5.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x\ (\text{m})$</div></foreignObject>
+  <polyline points="92,272.5 308,155.5" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="308,155.5 416,97" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <line x1="308" y1="155.5" x2="308" y2="296" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="92" y1="155.5" x2="308" y2="155.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="416" y1="97" x2="416" y2="296" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="92" y1="97" x2="416" y2="97" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <circle cx="92" cy="272.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="308" cy="155.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="416" cy="97" r="7" fill="#ffffff" stroke="#1971c2" stroke-width="3"/>
 </svg>
 
 <!-- vaihe -->
@@ -161,11 +212,11 @@ x &= x_0 + v\,t \\
 **Järkevyys.** Ensimmäisten 40 sekunnin aikana paikka kasvoi 100 m, joten seuraavien 20 sekunnin aikana se kasvaa puolet siitä, 50 m. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus 2,5 m/s on noin 9 km/h, joka on hölkän vauhti. Nopeus on positiivinen, koska kuvaaja nousee.
 
 ## Yleinen virhekäsitys
-(t,x)-kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa. Toinen virhe on pitää negatiivista nopeutta hitaana nopeutena. Etumerkki kertoo vain suunnan: nopeus $-3\,\text{m/s}$ on suuruudeltaan suurempi kuin $+2\,\text{m/s}$. Kolmas virhe on päätellä paikasta nopeus: kappale voi olla edellä ja liikkua silti hitaammin.
+$(t,x)$-kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa. Toinen virhe on pitää negatiivista nopeutta hitaana nopeutena. Etumerkki kertoo vain suunnan: nopeus $-3\,\text{m/s}$ on suuruudeltaan suurempi kuin $+2\,\text{m/s}$. Kolmas virhe on päätellä paikasta nopeus: kappale voi olla edellä ja liikkua silti hitaammin.
 
 ## Tiivistelmä
 - Paikka $x$ kertoo, missä kappale on origoon nähden. Siirtymä $\Delta x = x_2 - x_1$ on paikan muutos, ja sen etumerkki kertoo suunnan. Matka on reitin pituus eikä ole negatiivinen.
 - Nopeus $v = \Delta x / \Delta t$ on vektorisuure. Tasaisessa liikkeessä se on vakio, ja paikka on $x = x_0 + v\,t$.
-- (t,x)-kuvaajassa tasaisen liikkeen viiva on suora. Kulmakerroin on nopeus, ja sen etumerkki kertoo suunnan.
+- $(t,x)$-kuvaajassa tasaisen liikkeen viiva on suora. Kulmakerroin on nopeus, ja sen etumerkki kertoo suunnan.
 - Mittausaineistosta sovitetaan suora, ja nopeus lasketaan suoralta valituista kaukana toisistaan olevista pisteistä.
 - Edestakaisen liikkeen keskinopeus voi olla nolla, vaikka matka ei ole nolla.
