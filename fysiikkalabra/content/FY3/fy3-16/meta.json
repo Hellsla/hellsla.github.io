@@ -1,0 +1,19 @@
+{
+  "id": "fy3-16",
+  "course": "FY3",
+  "title": "Soveltava tunti: lämpöilmiöt arjessa",
+  "goals": [
+    "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+    "LOPS FY3: aineen lämpeneminen ja jäähtyminen sekä olomuodon muutokset",
+    "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (sauna, kylmälaukku, jäähdytysneste)"
+  ],
+  "prerequisites": [
+    "fy3-6",
+    "fy3-7",
+    "fy3-12"
+  ],
+  "glossary": [],
+  "sim": false,
+  "solutions": "first",
+  "image": false
+}

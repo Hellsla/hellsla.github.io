@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kylmälaukussa on jäätä ja vettä 0 °C:ssa, ja seinien läpi tulee koko ajan lämpöä. Miksi laukun sisälämpötila ei nouse, ennen kuin kaikki jää on sulanut?",
+    "a": "Seinän läpi tuleva energia kuluu jään sulattamiseen, $Q = sm$, eikä lämpötilan nostamiseen. Olomuodon muutoksen aikana lämpötila pysyy sulamispisteessä, ja vasta kun jää on sulanut, energia alkaa nostaa veden lämpötilaa."
+  },
+  {
+    "q": "Kuinka paljon energiaa tarvitaan, kun 0,40 kg jäätä 0 °C:ssa sulatetaan ja syntynyt vesi lämmitetään 25 °C:seen? Käytä arvoja $s = 334\\,\\text{kJ/kg}$ ja $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.",
+    "a": "Sulaminen: $Q_1 = sm = 334\\,\\text{kJ/kg} \\cdot 0{,}40\\,\\text{kg} = 133{,}6\\,\\text{kJ}$. Lämpeneminen: $Q_2 = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}40\\,\\text{kg} \\cdot 25\\,\\text{K} = 41{,}9\\,\\text{kJ}$. Yhteensä $Q = Q_1 + Q_2 \\approx 176\\,\\text{kJ}$."
+  },
+  {
+    "q": "Löylyvettä heitetään kuumille kiville. Miksi kivet jäähtyvät paljon enemmän, kun vesi höyrystyy, kuin jos se vain lämpenisi 100 °C:seen?",
+    "a": "Vesi myös höyrystyy, ja höyrystyminen vaatii energiaa $Q = rm$, joka on noin 2260 kJ/kg. Se on moninkertainen veden lämmittämiseen verrattuna: 1 kg vettä 20 °C:sta 100 °C:seen vaatii vain 335 kJ. Energia otetaan kivistä, joten ne jäähtyvät."
+  }
+]
