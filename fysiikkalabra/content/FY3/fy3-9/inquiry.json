@@ -36,10 +36,10 @@
       "justify": true,
       "reveal": { "after": "exp-1", "min": 2 },
       "choices": [
-        { "text": "100 kPa, koska ilmaa ei lisätty eikä poistettu.", "feedback": "Kokeessa paine nousi 25 ml:ssa 200 000 Pa:iin. Ilman määrä pysyi samana, mutta samat hiukkaset ovat nyt puolet pienemmässä tilassa ja osuvat seinämiin kaksi kertaa niin usein." },
-        { "text": "150 kPa, koska tilavuus pieneni 50 % ja paine kasvaa 50 %.", "feedback": "Kokeessa paine oli 25 ml:ssa 200 000 Pa eli 200 kPa. Paine ei kasva samoin prosentein kuin tilavuus pienenee: tilavuuden puolittuminen kaksinkertaistaa paineen, koska tulo $pV$ pysyy samana." },
+        { "text": "100 kPa, koska ilmaa ei lisätty eikä poistettu.", "feedback": "Mallin arvoissa paine nousi 25 ml:ssa 200 000 Pa:iin. Ilman määrä pysyi samana, mutta samat hiukkaset ovat nyt puolet pienemmässä tilassa ja osuvat seinämiin kaksi kertaa niin usein." },
+        { "text": "150 kPa, koska tilavuus pieneni 50 % ja paine kasvaa 50 %.", "feedback": "Mallin arvoissa paine oli 25 ml:ssa 200 000 Pa eli 200 kPa. Paine ei kasva samoin prosentein kuin tilavuus pienenee: tilavuuden puolittuminen kaksinkertaistaa paineen, koska tulo $pV$ pysyy samana." },
         { "text": "200 kPa, eli paine kaksinkertaistuu.", "correct": true, "feedback": "Mallin arvot tukevat tätä: 50 ml:ssa $p = 100\\,000\\,\\text{Pa}$ ja 25 ml:ssa $p = 200\\,000\\,\\text{Pa}$. Tulo $pV$ on molemmissa 5,00 J." },
-        { "text": "400 kPa, koska hiukkaset osuvat seiniin useammin ja myös kovempaa.", "feedback": "Kokeessa paine oli 25 ml:ssa 200 kPa, ei 400 kPa. Lämpötila pysyi samana, joten hiukkasten nopeus ei muuttunut eivätkä ne osu kovempaa; vain osumia tulee kaksi kertaa niin usein." }
+        { "text": "400 kPa, koska hiukkaset osuvat seiniin useammin ja myös kovempaa.", "feedback": "Mallin arvoissa paine oli 25 ml:ssa 200 kPa, ei 400 kPa. Lämpötila pysyi samana, joten hiukkasten nopeus ei muuttunut eivätkä ne osu kovempaa; vain osumia tulee kaksi kertaa niin usein." }
       ]
     },
     {
@@ -51,10 +51,10 @@
       "justify": true,
       "reveal": { "after": "exp-2", "min": 2 },
       "choices": [
-        { "text": "200 ml, koska lämpötila nelinkertaistuu.", "feedback": "Kokeessa tilavuus oli 80 °C:ssa noin 60 ml. Celsiusasteiden suhde 80/20 ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla on vain veden jäätymispiste. Kelvineinä lämpötila nousee 293 K:stä 353 K:iin, noin 20 %." },
+        { "text": "200 ml, koska lämpötila nelinkertaistuu.", "feedback": "Mallin arvoissa tilavuus oli 80 °C:ssa noin 60 ml. Celsiusasteiden suhde 80/20 ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla on vain veden jäätymispiste. Kelvineinä lämpötila nousee 293 K:stä 353 K:iin, noin 20 %." },
         { "text": "Noin 60 ml, eli tilavuus kasvaa noin 20 %.", "correct": true, "feedback": "Mallin arvot tukevat tätä: 20 °C:ssa (293,15 K) $V = 50{,}0\\,\\text{ml}$ ja 80 °C:ssa (353,15 K) $V \\approx 60{,}2\\,\\text{ml}$. Tilavuus kasvaa samassa suhteessa kuin kelvinlämpötila, 353/293 ≈ 1,20, ja $V/T$ pysyy 0,171 ml/K:ssa." },
-        { "text": "50 ml, koska paine pysyy samana.", "feedback": "Kokeessa tilavuus kasvoi noin 60 ml:aan, vaikka paine pysyi 100 kPa:ssa. Lämmetessä hiukkaset liikkuvat nopeammin ja osuvat mäntään useammin ja kovempaa, joten mäntä nousee. Se pysähtyy, kun harventuneen kaasun törmäykset painavat sitä taas yhtä paljon kuin paino: paine on sama, tilavuus suurempi." },
-        { "text": "110 ml, koska tilavuus kasvaa 1 ml jokaista lämpöastetta kohti.", "feedback": "Kokeessa tilavuus kasvoi vain noin 10 ml, kun lämpötila nousi 60 astetta. Kasvu on noin 0,17 ml kelviniä kohti, koska tilavuus on verrannollinen koko kelvinlämpötilaan, ja 60 K on vain noin 20 % 293 K:stä." }
+        { "text": "50 ml, koska paine pysyy samana.", "feedback": "Mallin arvoissa tilavuus kasvoi noin 60 ml:aan, vaikka paine pysyi 100 kPa:ssa. Lämmetessä hiukkaset liikkuvat nopeammin ja osuvat mäntään useammin ja kovempaa, joten mäntä nousee. Se pysähtyy, kun harventuneen kaasun törmäykset painavat sitä taas yhtä paljon kuin paino: paine on sama, tilavuus suurempi." },
+        { "text": "110 ml, koska tilavuus kasvaa 1 ml jokaista lämpöastetta kohti.", "feedback": "Mallin arvoissa tilavuus kasvoi vain noin 10 ml, kun lämpötila nousi 60 astetta. Kasvu on noin 0,17 ml kelviniä kohti, koska tilavuus on verrannollinen koko kelvinlämpötilaan, ja 60 K on vain noin 20 % 293 K:stä." }
       ]
     },
     {
@@ -110,9 +110,9 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on 20 °C:n tilavuudesta 50 ml. Oppitunnilla fy3-8 ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
+        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on 20 °C:n tilavuudesta 50 ml. Luvussa *Lämpölaajeneminen* ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
         "choices": [
-          { "text": "Se on $1/(293\\,\\text{K})$: vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan, joten jokainen kelvin kasvattaa sitä 1/293-osalla 20 °C:n tilavuudesta.", "correct": true, "feedback": "Oikein. Mittauksissa tilavuus kasvaa noin 0,171 ml kelviniä kohti, ja $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ eli 1/293. Kaasun suuri lämpölaajeneminen on siis sama ilmiö kuin tämän tunnin kaasulaki. Siksi kaasun γ ei ole vakio kuten metallin α, vaan se riippuu lämpötilasta, josta lähdetään." },
+          { "text": "Se on $1/(293\\,\\text{K})$: vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan, joten jokainen kelvin kasvattaa sitä 1/293-osalla 20 °C:n tilavuudesta.", "correct": true, "feedback": "Oikein. Mallin arvoissa tilavuus kasvaa noin 0,171 ml kelviniä kohti, ja $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ eli 1/293. Tämä pätee ideaalikaasulle vakiopaineessa. Kaasun suuri lämpölaajeneminen on siis sama ilmiö kuin tämän tunnin kaasulaki. Siksi kaasun γ ei ole vakio kuten metallin α, vaan se riippuu lämpötilasta, josta lähdetään." },
           { "text": "Se on ilman ominaisuus, joka mitataan erikseen, eikä sillä ole yhteyttä kaasulakeihin.", "feedback": "Laske mittauksistasi: 0,171 ml kelviniä kohti on 50 ml:sta $3{,}4 \\cdot 10^{-3}$ eli 1/293. Luku seuraa siitä, että vakiopaineessa $V/T$ pysyy vakiona ja 20 °C on 293 K." },
           { "text": "Se on $1/(273\\,\\text{K})$, koska kelvinasteikon nollakohta on −273 °C.", "feedback": "Lähellä, mutta suhteellinen kasvu lasketaan tilavuudesta, josta lähdetään. Tässä lähdetään 20 °C:sta eli 293 K:stä, joten jokainen kelvin kasvattaa tilavuutta 1/293-osalla, ja $1/(293\\,\\text{K}) \\approx 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Jos lähdettäisiin 0 °C:sta, osuus olisi 1/273." },
           { "text": "Se on 0,17, koska tilavuus kasvaa 0,17 ml kelviniä kohti.", "feedback": "0,17 ml/K on tilavuuden kasvu millilitroina. Lämpötilakerroin on *suhteellinen* kasvu, joten jaa alkutilavuudella: $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ kelviniä kohti." }
