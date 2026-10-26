@@ -1,10 +1,9 @@
 VERDICT: DONE
 
-Round 1 draft. No simulation (a table, graphs and a model to build); check_lesson.py all ok at 360, 768 and 1280 px.
+Round 1 fix. check_lesson.py all ok; layout ok at 360, 768 and 1280 px. One lint warning remains (solutions.md uses LaTeX, as the teacher's rule asks).
 
-- lesson.md: Ydinajatus (gas-thermometer figure), Kaava: Nollapaineen lämpötila (p = p0 + kθ, θ0 = −p0/k, Δθ0 from extreme lines; full-range graph with extrapolation and interval), staged Esimerkki (7 data points, θ0 = −276 ± 16 °C), misconception, summary. All figure labels are LaTeX fig-tex boxes.
-- inquiry.json: hook, retrieval, two predictions (competing models; accuracy), three interpret steps (data with error bars, line to zero pressure, extreme lines), theory, reflect, example, error-spotting, transfer, exercises, three checks, exit ticket. No lesson ids in student text.
-- exercises.json (5/4/3), answers.py (every answer computed), solutions.md, exit-ticket.json.
-- glossary.json: added ekstrapolointi and mittausepävarmuus (Edit insertions), fy3-13 on absoluuttinen nollapiste.
-
-Notes: solutions.md uses LaTeX for calculations (teacher's rule), so lint gives one warning that NOTES says plain text; the Vastaus line stays plain for the lint. Predictions have no `reveal` (no experiment without a sim), so feedback shows after commit and points to the data. Numeric answers inside inquiry.json (not in answers.py): −276, 15,7, −277, −283 were checked by hand.
+- answers.py: now also computes the lesson and inquiry numbers. True extreme lines go through bar ends (10;104)–(85;133) and (25;111)–(100;137), checked against every bar, giving Δθ₀ ≈ 18 °C. Also covers suora, siirto, tarkistus-2, the misses of candidate line s₂, and the 5,5 °C gauge zero.
+- lesson.md: "liike loppunut" changed to glossary wording; θ₀ = θ₁ − p₁/k is a display block; extremes 100,1 + 0,387θ and 102,3 + 0,347θ (−258,7 / −294,8) with their touch points; result −276 ± 18 °C, interval −294…−258, "yhden asteen tarkkuuteen"; the example says the 0 °C point is read from the line's extension; Kaava figure lines, bracket and aria updated.
+- inquiry.json: both predictions have conceptual feedback with no data numbers, and their options are balanced in length (ennuste-2 has a 4th distractor); ennuste-1 no longer mentions a graph; `suora` adds a full-range figure with the dashed extension to θ₀ = ?; new `aariviiva` choice: is s₁ or s₂ a valid steepest line?; `epavarmuus` figure, text, hints and solution use the exact extremes (answer 18,1, full-width mistake 36,1); tarkistus-1 uses ±18.
+- exercises.json: L2-04 reworded; L3-02 now says 77 K is the boiling point at normal pressure and that the gas condenses at about 67 K.
+- solutions.md: L2-03 says 5,5 °C; L2-04 compares 0,18 kPa with 1,0 kPa; L3-02 Järkevyys fixed.

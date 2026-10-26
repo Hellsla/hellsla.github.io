@@ -60,7 +60,7 @@ Suljetussa jäykässä astiassa kaasun tilavuus ja ainemäärä eivät muutu, jo
 
 Kun mittaustulokset piirretään kuvaajaan, pisteet asettuvat lähes suoralle: paine kasvaa lähes yhtä paljon jokaista celsiusastetta kohti. Pisteet eivät silti ole täsmälleen suoralla, koska jokainen lukema on epätarkka. Mittausepävarmuus kertoo, kuinka paljon lukema voi enintään poiketa todellisesta arvosta; tässä painemittarin epävarmuus on $\pm 1\,\text{kPa}$. Suora piirretään siksi pisteiden joukon keskeltä niin, että se kulkee epävarmuusvälien kautta, ei välttämättä jokaisen pisteen kautta.
 
-Suoraa jatketaan mittausalueen ulkopuolelle kohti kylmempää, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi: tulos saadaan alueelta, jolla ei ole mitattu mitään. Mikromallin mukaan paine syntyy hiukkasten törmäyksistä seinään, joten nollapainetta vastaa tila, jossa hiukkasten liike on loppunut. Lämpötila, jossa suora osuu nollapaineeseen, on kokeen antama arvio absoluuttiselle nollapisteelle. Se on vain arvio: todellinen kaasu nesteytyy jo ennen sitä, ja jatke on malli.
+Suoraa jatketaan mittausalueen ulkopuolelle kohti kylmempää, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi: tulos saadaan alueelta, jolla ei ole mitattu mitään. Mikromallin mukaan paine syntyy hiukkasten törmäyksistä seinään. Ideaalikaasun mallissa paine olisi nolla siinä lämpötilassa, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Lämpötila, jossa suora osuu nollapaineeseen, on kokeen antama arvio absoluuttiselle nollapisteelle. Se on vain arvio: todellinen kaasu nesteytyy jo ennen sitä, ja jatke on malli.
 
 ## Kaava: Nollapaineen lämpötila
 Mittausalueella kaasun paine on lämpötilan lineaarinen funktio:
@@ -78,7 +78,10 @@ missä $(\theta_1, p_1)$ ja $(\theta_2, p_2)$ ovat suoran pisteitä. Nollapaine 
 \theta_0 &= -\frac{p_0}{k}
 \end{aligned}
 ```
-Sama tulos saadaan mistä tahansa suoran pisteestä: $\theta_0 = \theta_1 - p_1/k$.
+Sama tulos saadaan mistä tahansa suoran pisteestä $(\theta_1, p_1)$, kun yhtälöön $p = p_1 + k(\theta - \theta_1)$ sijoitetaan $p = 0$:
+```latex
+\theta_0 = \theta_1 - \frac{p_1}{k}
+```
 
 Epävarmuus arvioidaan piirtämällä kaksi ääriviivaa, jotka vielä kulkevat kaikkien epävarmuusvälien kautta: jyrkin ja loivin. Kummastakin lasketaan nollapaineen lämpötila, ja pienempi ja suurempi arvo antavat välin. Tulos ilmoitetaan keskikohdan ja puolen välin avulla:
 ```latex
@@ -86,7 +89,7 @@ Epävarmuus arvioidaan piirtämällä kaksi ääriviivaa, jotka vielä kulkevat 
 ```
 missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$.
 
-<svg viewBox="0 0 600 368" role="img" aria-label="Kaasun paine lämpötilan funktiona koko lämpötila-alueella −300 °C … 100 °C. Mittauspisteet ovat vain alueella 10–100 °C. Paras suora ja sen katkoviivajatke ekstrapoloivat nollapaineeseen, joka on lämpötilassa θ₀ ≈ −276 °C. Jyrkin ja loivin ääriviiva osuvat p = 0 -akselille lämpötiloissa −260 °C ja −292 °C, mikä antaa epävarmuusvälin. Kuva on mittakaavassa; ±1 kPa:n virhejanat ovat pisteiden kokoisia." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 368" role="img" aria-label="Kaasun paine lämpötilan funktiona koko lämpötila-alueella −300 °C … 100 °C. Mittauspisteet ovat vain alueella 10–100 °C. Paras suora ja sen katkoviivajatke ekstrapoloivat nollapaineeseen, joka on lämpötilassa θ₀ ≈ −276 °C. Jyrkin ja loivin ääriviiva osuvat p = 0 -akselille lämpötiloissa noin −259 °C ja −295 °C, mikä antaa epävarmuusvälin. Kuva on mittakaavassa; ±1 kPa:n virhejanat ovat pisteiden kokoisia." style="max-width:100%;font-size:24px">
 <line x1="78.0" y1="270.0" x2="78.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>
 <line x1="202.0" y1="270.0" x2="202.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>
 <line x1="326.0" y1="270.0" x2="326.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -107,8 +110,8 @@ missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_
 <foreignObject x="6" y="13" width="64" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$150$</div></foreignObject>
 <foreignObject x="424" y="226" width="150" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\theta\ (^\circ\text{C})$</div></foreignObject>
 <foreignObject x="86" y="0" width="150" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$p\ (\text{kPa})$</div></foreignObject>
-<line x1="127.3" y1="270.0" x2="462.4" y2="103.5" stroke="#6b7480" stroke-width="2.5" stroke-dasharray="7 5"/>
-<line x1="88.3" y1="270.0" x2="462.4" y2="101.0" stroke="#6b7480" stroke-width="2.5" stroke-dasharray="7 5"/>
+<line x1="128.9" y1="270.0" x2="462.4" y2="103.6" stroke="#6b7480" stroke-width="2.5" stroke-dasharray="7 5"/>
+<line x1="84.0" y1="270.0" x2="462.4" y2="100.7" stroke="#6b7480" stroke-width="2.5" stroke-dasharray="7 5"/>
 <line x1="107.6" y1="270.0" x2="462.4" y2="102.1" stroke="#1f2933" stroke-width="3" stroke-dasharray="10 7"/>
 <line x1="462.4" y1="102.1" x2="574.0" y2="49.3" stroke="#1f2933" stroke-width="4"/>
 <circle cx="462.4" cy="102.0" r="4" fill="#1f2933"/>
@@ -118,7 +121,7 @@ missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_
 <circle cx="536.8" cy="66.8" r="4" fill="#1f2933"/>
 <circle cx="555.4" cy="58.8" r="4" fill="#1f2933"/>
 <circle cx="574.0" cy="49.2" r="4" fill="#1f2933"/>
-<path d="M88.3,314.0 V322.0 H127.3 V314.0" fill="none" stroke="#c92a2a" stroke-width="3"/>
+<path d="M84.0,314.0 V322.0 H128.9 V314.0" fill="none" stroke="#c92a2a" stroke-width="3"/>
 <circle cx="107.6" cy="270.0" r="6" fill="#c92a2a"/>
 <foreignObject x="4" y="324" width="210" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\theta_0 \pm \Delta\theta_0$</div></foreignObject>
 <foreignObject x="204" y="76" width="200" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{ekstrapolointi}$</div></foreignObject><line x1="264" y1="114" x2="264" y2="184" stroke="#1f2933" stroke-width="1.5"/><foreignObject x="300" y="6" width="152" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{mittausalue}$</div></foreignObject><path d="M462,48 V32 H574 V48" fill="none" stroke="#1f2933" stroke-width="2"/>
@@ -139,11 +142,11 @@ Kaasulämpömittarilla mitattiin suljetun pullon ilman paine seitsemässä lämp
 | 85 | 132 |
 | 100 | 138 |
 
-Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarmuus. Pisteisiin sovitettu paras suora on kuvassa yllä; sen jyrkin ja loivin vaihtoehto, jotka vielä kulkevat kaikkien epävarmuusvälien kautta, ovat $p = 100{,}2\,\text{kPa} + 0{,}385\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ ja $p = 102{,}1\,\text{kPa} + 0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$.
+Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarmuus. Pisteisiin sovitettu paras suora on kuvassa yllä; sen jyrkin ja loivin vaihtoehto, jotka vielä kulkevat kaikkien epävarmuusvälien kautta, ovat $p = 100{,}1\,\text{kPa} + 0{,}387\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ ja $p = 102{,}3\,\text{kPa} + 0{,}347\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$. Jyrkin koskettaa epävarmuusjanojen päitä lämpötiloissa 10 °C ja 85 °C, loivin lämpötiloissa 25 °C ja 100 °C.
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Parhaalta suoralta luetaan kaksi pistettä kaukana toisistaan: $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 101{,}3\,\text{kPa})$ ja $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$. Kysytään nollapaineen lämpötilaa $\theta_0$ ja sen epävarmuutta $\Delta\theta_0$.
+**Tunnetut ja kysytty.** Parhaalta suoralta luetaan kaksi pistettä kaukana toisistaan: $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 101{,}3\,\text{kPa})$ ja $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$. Lämpötila $0\,{}^\circ\text{C}$ on mittausalueen ulkopuolella, joten piste 1 luetaan suoran jatkeelta: se ei ole mittaus vaan jo vähän ekstrapolointia. Kysytään nollapaineen lämpötilaa $\theta_0$ ja sen epävarmuutta $\Delta\theta_0$.
 
 <!-- vaihe -->
 
@@ -171,21 +174,21 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 
 <!-- vaihe -->
 
-**Epävarmuus.** Ääriviivoilla on $p_0 = 100{,}2\,\text{kPa}$, $k = 0{,}385\,\text{kPa}/{}^\circ\text{C}$ ja $p_0 = 102{,}1\,\text{kPa}$, $k = 0{,}350\,\text{kPa}/{}^\circ\text{C}$. Kaavalla $\theta_0 = -p_0/k$ ja epävarmuuden kaavalla:
+**Epävarmuus.** Ääriviivoilla on $p_0 = 100{,}1\,\text{kPa}$, $k = 0{,}387\,\text{kPa}/{}^\circ\text{C}$ ja $p_0 = 102{,}3\,\text{kPa}$, $k = 0{,}347\,\text{kPa}/{}^\circ\text{C}$. Kaavalla $\theta_0 = -p_0/k$ saadaan $\theta_{0,\text{max}} = -258{,}7\,{}^\circ\text{C}$ ja $\theta_{0,\text{min}} = -294{,}8\,{}^\circ\text{C}$, ja epävarmuuden kaavalla:
 ```latex
 \begin{aligned}
 &\Delta\theta_0 = \frac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \\
-&= \frac{-260{,}3 - (-291{,}7)}{2}\,{}^\circ\text{C} \\
-&= 15{,}7\,{}^\circ\text{C}
+&= \frac{-258{,}7 - (-294{,}8)}{2}\,{}^\circ\text{C} \\
+&\approx 18\,{}^\circ\text{C}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Tulos ja järkevyys.** Absoluuttinen nollapiste on $\theta_0 = -276 \pm 16\,{}^\circ\text{C}$. Epävarmuus ilmoitetaan kahdella merkitsevällä numerolla ja tulos pyöristetään samaan kymmenen asteen tarkkuuteen. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu välille $-292\,{}^\circ\text{C}\ldots -260\,{}^\circ\text{C}$, joten tulos sopii yhteen sen kanssa. Epävarmuus on suuri, koska mittaus tehtiin yli 270 °C:n päässä nollapaineesta ja pisteiden epävarmuus 1 kPa on noin yksi prosentti lukemasta.
+**Tulos ja järkevyys.** Absoluuttinen nollapiste on $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$. Epävarmuus ilmoitetaan kahdella merkitsevällä numerolla ja tulos pyöristetään samaan tarkkuuteen eli yhden asteen tarkkuuteen. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu välille $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$, joten tulos sopii yhteen sen kanssa. Epävarmuus on suuri, koska mittaus tehtiin yli 270 °C:n päässä nollapaineesta ja pisteiden epävarmuus 1 kPa on noin yksi prosentti lukemasta.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että nollapiste on mitattu, koska se on kuvaajassa. Mitattuja ovat vain seitsemän pistettä välillä 10–100 °C; loppu on suoran jatketta, ja jatke on oletus siitä, että paine käyttäytyy samoin kylmemmässä. Toinen virhe on pitää tulosta epäonnistuneena, jos se ei ole täsmälleen $-273{,}15\,{}^\circ\text{C}$. Tulos $-276\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta noin 3 astetta, kun epävarmuus on 16 astetta, eli se sopii yhteen arvon kanssa. Kolmas virhe on vetää suora kaikkien pisteiden kautta mutkitellen: pisteiden vaihtelu ylös ja alas on mittausepävarmuutta, ja suora kuuluu vetää pisteiden joukon keskeltä.
+Moni ajattelee, että nollapiste on mitattu, koska se on kuvaajassa. Mitattuja ovat vain seitsemän pistettä välillä 10–100 °C; loppu on suoran jatketta, ja jatke on oletus siitä, että paine käyttäytyy samoin kylmemmässä. Toinen virhe on pitää tulosta epäonnistuneena, jos se ei ole täsmälleen $-273{,}15\,{}^\circ\text{C}$. Tulos $-276\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta noin 3 astetta, kun epävarmuus on 18 astetta, eli se sopii yhteen arvon kanssa. Kolmas virhe on vetää suora kaikkien pisteiden kautta mutkitellen: pisteiden vaihtelu ylös ja alas on mittausepävarmuutta, ja suora kuuluu vetää pisteiden joukon keskeltä.
 
 ## Tiivistelmä
 - Suljetussa astiassa kaasun paine on mittausalueella lineaarinen funktio lämpötilasta: $p = p_0 + k\theta$. Mittausaineisto muuttuu suoraksi piirtämällä $p$ lämpötilan funktiona ja vetämällä suora pisteiden joukon keskeltä.

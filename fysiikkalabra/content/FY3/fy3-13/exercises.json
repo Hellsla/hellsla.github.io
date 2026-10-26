@@ -69,7 +69,7 @@
     {
       "id": "fy3-13-L2-04",
       "level": 2,
-      "text": "Kokeessa lämpötilan lukematarkkuus on $\\pm 0{,}5\\,{}^\\circ\\text{C}$ ja paineen $\\pm 1{,}0\\,\\text{kPa}$. Mittauspisteiden suoran kulmakerroin on $0{,}36\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$. Kuinka monta prosenttia lämpötilan epävarmuudesta aiheutuva paineen muutos on paineen omasta epävarmuudesta?",
+      "text": "Kokeessa lämpötilan lukematarkkuus on $\\pm 0{,}5\\,{}^\\circ\\text{C}$ ja paineen $\\pm 1{,}0\\,\\text{kPa}$. Mittauspisteiden suoran kulmakerroin on $0{,}36\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$. Lämpötilan epävarmuus $\\pm 0{,}5\\,{}^\\circ\\text{C}$ vastaa suoralla tiettyä paineen muutosta. Kuinka monta prosenttia tämä paineen muutos on paineen epävarmuudesta $1{,}0\\,\\text{kPa}$?",
       "answer": 18,
       "unit": "%",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy3-13-L3-02",
       "level": 3,
-      "text": "Typpikaasun paine on jäykässä astiassa 100 kPa lämpötilassa 0 °C, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa 77 K? Typpi nesteytyy 77 K:ssä. Perustele, miksi ekstrapolointi ei voi päteä tämän lämpötilan alapuolella. Vastaa paineena kilopascaleina.",
+      "text": "Typpikaasun paine on jäykässä astiassa 100 kPa lämpötilassa 0 °C, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa 77 K, jossa typpi kiehuu normaalipaineessa? Näin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin 67 K:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
       "answer": 28.2,
       "unit": "kPa",
       "tolerance": 0.02

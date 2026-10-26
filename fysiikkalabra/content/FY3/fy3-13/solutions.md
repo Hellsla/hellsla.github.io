@@ -60,7 +60,7 @@
 **Kaava:** $p = p_\text{y} + p_\text{ilma}$, $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$, $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
 **Sijoitus:** $p_1 = 110{,}0\,\text{kPa}$ ja $p_2 = 132{,}0\,\text{kPa}$. $k = \dfrac{22{,}0\,\text{kPa}}{60{,}0\,{}^\circ\text{C}} = 0{,}3667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. $\theta_0 = 30{,}0\,{}^\circ\text{C} - \dfrac{110{,}0\,\text{kPa}}{0{,}3667\,\text{kPa}/{}^\circ\text{C}} = -270{,}0\,{}^\circ\text{C}$
 **Vastaus:** −270 °C
-**Järkevyys:** Ylipaineen nolla olisi noin 9 °C:ssa, mikä ei ole nollapaine. Nollapaine tarkoittaa absoluuttista painetta nolla.
+**Järkevyys:** Ylipaineen nolla olisi noin 5,5 °C:ssa, mikä ei ole nollapaine. Nollapaine tarkoittaa absoluuttista painetta nolla.
 
 ## fy3-13-L2-04
 **Annettu:** $\Delta\theta = 0{,}5\,{}^\circ\text{C}$, $k = 0{,}36\,\text{kPa}/{}^\circ\text{C}$, $\Delta p = 1{,}0\,\text{kPa}$
@@ -68,7 +68,7 @@
 **Kaava:** $\Delta p_\theta = k\,\Delta\theta$ ja suhde $= \dfrac{\Delta p_\theta}{\Delta p} \cdot 100\,\%$
 **Sijoitus:** $\Delta p_\theta = 0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 0{,}5\,{}^\circ\text{C} = 0{,}18\,\text{kPa}$. Suhde $= \dfrac{0{,}18\,\text{kPa}}{1{,}0\,\text{kPa}} \cdot 100\,\% = 18\,\%$
 **Vastaus:** 18 %
-**Järkevyys:** Lämpötilan epävarmuus on paljon pienempi kuin paineen, joten tulosta rajoittaa painemittari.
+**Järkevyys:** Lämpötilan lukematarkkuudesta aiheutuva paineen muutos $0{,}18\,\text{kPa}$ on paljon pienempi kuin painemittarin epävarmuus $1{,}0\,\text{kPa}$, joten tulosta rajoittaa painemittari.
 
 ## fy3-13-L3-01
 **Annettu:** jyrkin viiva pisteiden (20,0 °C; 105,0 kPa) ja (100,0 °C; 138,0 kPa) kautta, loivin pisteiden (20,0 °C; 107,0 kPa) ja (100,0 °C; 136,0 kPa) kautta
@@ -84,7 +84,7 @@
 **Kaava:** $\dfrac{p}{T} = \dfrac{p_0}{T_0}$, joten $p = p_0\,\dfrac{T}{T_0}$
 **Sijoitus:** $p = 100\,\text{kPa} \cdot \dfrac{77\,\text{K}}{273{,}15\,\text{K}} = 28{,}2\,\text{kPa}$
 **Vastaus:** 28,2 kPa
-**Järkevyys:** Suora ei päde enää 77 K:ssä, koska typpi nesteytyy ja kaasun paine romahtaa: nestemäisessä typessä hiukkaset eivät ole vapaassa liikkeessä, ja ekstrapolointi olettaa kaasun pysyvän kaasuna.
+**Järkevyys:** Lämpötila 77 K on typen kiehumispiste normaalipaineessa $101\,\text{kPa}$. Paineessa $28{,}2\,\text{kPa}$ typpi on 77 K:ssä vielä kaasua, mutta noin 67 K:ssä se alkaa tiivistyä nesteeksi. Silloin kaasun ainemäärä pienenee ja paine putoaa nopeammin kuin suora ennustaa, joten suoraa ei voi jatkaa 0 K:iin asti. Ekstrapolointi olettaa, että kaasu pysyy kaasuna.
 
 ## fy3-13-L3-03
 **Annettu:** $\theta_0 = -262\,{}^\circ\text{C}$, $\Delta\theta_0 = 6\,{}^\circ\text{C}$, hyväksytty arvo $\theta_\text{h} = -273{,}15\,{}^\circ\text{C}$
