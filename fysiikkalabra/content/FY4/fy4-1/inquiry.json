@@ -52,21 +52,21 @@
       "prompt": "Kärryt A ja B lähtevät yhtä aikaa samasta kohdasta $x = 0$ ja ajavat positiiviseen suuntaan tasaisella nopeudella. Kärry B kulkee nopeammin kuin A. Miltä kärryjen (t,x)-kuvaajat näyttävät?",
       "choices": [
         {
-          "text": "B:n kuvaaja on kaareva, koska B on nopeampi ja sen nopeus kasvaa.",
-          "feedback": "Mallin arvoissa kärryjen paikat kasvavat yhtä paljon jokaisessa yhtä pitkässä aikavälissä, joten molemmat kuvaajat ovat suoria. Kaareva kuvaaja kuuluisi liikkeeseen, jossa nopeus muuttuu."
+          "text": "Molemmat suorat lähtevät origosta, ja B:n suora nousee loivemmin kuin A:n suora.",
+          "feedback": "Loivempi suora tarkoittaisi, että paikka muuttuu hitaammin. Mallin arvoissa B on hetkellä 10 s paikassa 40 m ja A paikassa 20 m, joten B:n paikka kasvaa nopeammin ja sen suora on jyrkempi."
         },
         {
-          "text": "Molemmat suorat lähtevät origosta, ja B:n suora nousee jyrkemmin kuin A:n.",
-          "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: molemmat kärryt ovat hetkellä 0 paikassa $0$, mutta hetkellä 10 s kärry A on paikassa 20 m ja kärry B paikassa 40 m. Nopeus on kuvaajan kulmakerroin, joten nopeampi kärry saa jyrkemmän suoran."
+          "text": "Molemmat suorat lähtevät origosta, ja B:n suora nousee jyrkemmin kuin A:n suora.",
+          "feedback": "Mallin arvot tukevat tätä: molemmat kärryt ovat hetkellä 0 paikassa $0$, mutta hetkellä 10 s kärry A on paikassa 20 m ja kärry B paikassa 40 m. Nopeus on kuvaajan kulmakerroin, joten nopeampi kärry saa jyrkemmän suoran.",
+          "correct": true
         },
         {
-          "text": "B:n suora on yhdensuuntainen A:n suoran kanssa mutta ylempänä, koska B on edellä.",
-          "feedback": "Yhdensuuntaisilla suorilla on sama kulmakerroin eli sama nopeus. Mallin arvoissa molemmat kärryt lähtevät paikasta 0, ja nopeampi kärry vain etääntyy nopeammin, joten sen suora on jyrkempi."
+          "text": "Molemmat suorat lähtevät origosta ja ovat yhtä jyrkät, koska kärryt lähtevät yhtä aikaa.",
+          "feedback": "Yhteinen lähtöpiste ei tee suorista yhtä jyrkkiä. Jyrkkyys on kulmakerroin eli nopeus: mallin arvoissa B etenee 4,0 m sekunnissa ja A 2,0 m sekunnissa, joten suorat erkanevat toisistaan."
         },
         {
-          "text": "B:n suora alkaa korkeammalta kuin A:n, koska nopeampi kärry on pidemmällä.",
-          "feedback": "Mallin arvot näyttävät, että kumpikin kärry on hetkellä 0 paikassa $x = 0$. Nopeus ei vaikuta alkupaikkaan vaan siihen, kuinka nopeasti paikka muuttuu, eli suoran jyrkkyyteen."
+          "text": "Molemmat suorat lähtevät origosta ja ovat yhtä jyrkät, mutta B:n suora ulottuu ylemmäs.",
+          "feedback": "Jos suorat olisivat yhtä jyrkät, ne olisivat joka hetki samalla korkeudella. Suora ulottuu ylemmäs juuri siksi, että se on jyrkempi: B:n paikka kasvaa nopeammin kuin A:n."
         }
       ]
     },
@@ -83,20 +83,20 @@
       "prompt": "Kärry A lähtee origosta. Kärry C lähtee paikasta $x = 20\\,\\text{m}$ ja ajaa samaan suuntaan yhtä nopeasti kuin A. Mitä kärryjen paikoille ja siirtymille tapahtuu ajan kuluessa?",
       "choices": [
         {
-          "text": "C:n siirtymä on suurempi, koska C on jo valmiiksi pidemmällä.",
-          "feedback": "Mallin arvoissa kumpikin kärry siirtyy saman matkan 10 s aikana: 20 m. Siirtymä on paikan muutos, eikä se riippu siitä, missä kärry aloittaa."
+          "text": "C:n siirtymä on suurempi kuin A:n, koska C:n paikka on suurempi kuin A:n.",
+          "feedback": "Mallin arvoissa kumpikin kärry siirtyy saman matkan 10 s aikana: 20 m. Siirtymä on paikan muutos, eikä se riipu siitä, missä kärry aloittaa."
         },
         {
-          "text": "Kärryjen siirtymät ovat yhtä suuret, ja C pysyy koko ajan 20 m edellä.",
-          "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: A siirtyy 20 m ja C siirtyy 20 m, ja paikkojen erotus on joka hetki 20 m. Yhtä nopeilla kärryillä on yhtä jyrkät, yhdensuuntaiset suorat; ne eroavat vain alkupaikan $x_0$ verran."
+          "text": "A:n ja C:n siirtymät ovat yhtä suuret, ja C pysyy koko ajan 20 m edellä.",
+          "feedback": "Mallin arvot tukevat tätä: A siirtyy 20 m ja C siirtyy 20 m, ja paikkojen erotus on joka hetki 20 m. Yhtä nopeilla kärryillä on yhtä jyrkät, yhdensuuntaiset suorat; ne eroavat vain alkupaikan $x_0$ verran.",
+          "correct": true
         },
         {
-          "text": "A saavuttaa C:n, koska A on takana ja yrittää päästä perään.",
-          "feedback": "Mallin arvoissa kärryillä on sama nopeus, joten A ei pääse lähemmäs. Saavuttaminen vaatisi, että A:n paikka muuttuisi nopeammin kuin C:n."
+          "text": "C:n suora nousee jyrkemmin kuin A:n, koska C on kauempana origosta.",
+          "feedback": "Jyrkkyys kertoo nopeuden, ei lähtöpaikkaa. Mallin arvoissa kummankin nopeus on sama, joten suorat ovat yhdensuuntaiset: lähtöpaikka vain siirtää C:n suoraa ylemmäs."
         },
         {
-          "text": "C:n paikka pysyy 20 metrissä, koska se on jo lähtenyt liikkeelle.",
+          "text": "C:n paikka pysyy 20 metrissä, koska 20 m on C:n lähtöpaikka.",
           "feedback": "Mallin arvoissa C:n paikka kasvaa joka sekunti. Luku 20 m on vain alkupaikka; kun nopeus ei ole nolla, paikka muuttuu."
         }
       ]
@@ -114,17 +114,17 @@
       "prompt": "Kärry A lähtee origosta ja ajaa positiiviseen suuntaan. Kärry D lähtee paikasta $x = 30\\,\\text{m}$ ja ajaa kohti origoa. Miltä D:n (t,x)-kuvaaja näyttää, kun se piirretään samaan koordinaatistoon A:n kuvaajan kanssa?",
       "choices": [
         {
-          "text": "D:n suora nousee, koska nopeus on aina positiivinen luku.",
+          "text": "D:n suora nousee oikealle ylös, koska nopeus on aina positiivinen luku.",
           "feedback": "Mallin arvoissa D:n paikka pienenee: hetkellä 0 se on 30 m:ssä ja hetkellä 10 s paikassa 0. Kun paikka pienenee, kuvaaja laskee. Nopeuden etumerkki kertoo suunnan, ja negatiivinen nopeus on mahdollinen."
         },
         {
-          "text": "D:n kuvaajaa ei voi piirtää samaan koordinaatistoon, koska D liikkuu toiseen suuntaan.",
-          "feedback": "Kaikki paikat mitataan samalta x-akselilta samasta origosta, joten kuvaajat sopivat samaan koordinaatistoon. Suunta näkyy kulmakertoimen etumerkistä."
+          "text": "D:n suora laskee oikealle alas eikä leikkaa A:n suoraa, koska kärryt ajavat eri suuntiin.",
+          "feedback": "Eri suuntiin ajavat kärryt voivat olla samassa paikassa: mallin arvoissa A ja D ovat molemmat paikassa 12 m hetkellä 6 s. Kuvaajien leikkauspiste tarkoittaa juuri tätä kohtaamista."
         },
         {
-          "text": "D:n suora laskee oikealle alas, ja se leikkaa A:n suoran.",
-          "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: D:n paikka pienenee 30 m:stä nollaan, A:n paikka kasvaa nollasta 20 m:iin, ja ne ovat samassa paikassa hetkellä 6 s. Laskeva suora tarkoittaa negatiivista nopeutta."
+          "text": "D:n suora laskee oikealle alas ja leikkaa A:n suoran, koska D tulee A:ta vastaan.",
+          "feedback": "Mallin arvot tukevat tätä: D:n paikka pienenee 30 m:stä nollaan, A:n paikka kasvaa nollasta 20 m:iin, ja ne ovat samassa paikassa hetkellä 6 s. Laskeva suora tarkoittaa negatiivista nopeutta.",
+          "correct": true
         },
         {
           "text": "D:n suora on vaakasuora, koska D on kauempana eikä lähde heti liikkeelle.",
@@ -231,17 +231,21 @@
         "prompt": "Laske kummankin kärryn nopeus taulukosta. Mitä huomaat?",
         "choices": [
           {
-            "text": "C:n nopeus on suurempi, koska sen paikka $x$ on suurempi.",
+            "text": "C:n nopeus on suurempi kuin A:n, koska C:n paikka $x$ on suurempi kuin A:n.",
             "feedback": "Vertaa paikan muutoksia, ei paikkoja: kumpikin kärry etenee saman verran jokaisessa yhtä pitkässä aikavälissä. Paikka kertoo, missä kärry on, ja nopeus sen, kuinka nopeasti paikka muuttuu."
           },
           {
-            "text": "Kummankin nopeus on sama, $2{,}0\\,\\text{m/s}$, vaikka paikat ovat eri: nopeus riippuu paikan muutoksesta, ei paikasta.",
-            "correct": true,
-            "feedback": "Oikein. Esimerkiksi rivien $t = 0$ ja $t = 10\\,\\text{s}$ välillä $\\Delta x = 20\\,\\text{m}$ molemmilla ja $v = \\dfrac{20\\,\\text{m}}{10\\,\\text{s}} = 2{,}0\\,\\text{m/s}$. Kuvaajissa tämä näkyy yhdensuuntaisina suorina: sama kulmakerroin, eri alkupaikka $x_0$."
+            "text": "Molempien nopeus on $2{,}0\\,\\text{m/s}$: nopeus riippuu paikan muutoksesta, ei paikasta.",
+            "feedback": "Oikein. Esimerkiksi rivien $t = 0$ ja $t = 10\\,\\text{s}$ välillä $\\Delta x = 20\\,\\text{m}$ molemmilla ja $v = \\dfrac{20\\,\\text{m}}{10\\,\\text{s}} = 2{,}0\\,\\text{m/s}$. Kuvaajissa tämä näkyy yhdensuuntaisina suorina: sama kulmakerroin, eri alkupaikka $x_0$.",
+            "correct": true
           },
           {
-            "text": "Kärryjen nopeudet ovat $20\\,\\text{m/s}$ ja $0$, koska C lähtee 20 m:n päästä.",
+            "text": "Kärryjen nopeudet ovat $20\\,\\text{m/s}$ ja $0$, koska C lähtee 20 m:n päässä origosta.",
             "feedback": "Alkupaikka ei ole nopeus. Kun lasket paikan muutoksen ja jaat ajalla, kummallekin tulee sama luku. Lähtöpaikka näkyy vain suoran leikkauskohtana paikka-akselilla."
+          },
+          {
+            "text": "A:n nopeus on suurempi kuin C:n, koska A:n täytyy ajaa pidemmälle kuin C:n.",
+            "feedback": "Nopeus ei riipu siitä, kuinka pitkälle kärryn pitäisi ajaa. Taulukossa kummankin paikka kasvaa 20 m ajassa 10 s, joten nopeudet ovat samat eikä A pääse lähemmäs C:tä."
           }
         ]
       }
@@ -307,16 +311,16 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Mittausaineisto: robotti ajaa viivaa pitkin",
-      "text": "Robotti ajaa suoraa viivaa pitkin tasaisella nopeudella. Etäisyysanturi mittaa sen paikan $x$ kahden sekunnin välein. Jokaisessa mittauksessa on pieni virhe, joten pisteet eivät osu täsmälleen samalle suoralle. Mittaukset ovat tässä taulukkona ja (t,x)-kuvaajana (esimerkkiaineisto, ei oikeaa koetta).\n\n| t (s) | x (m) |\n|---|---|\n| 0 | 4,2 |\n| 2 | 6,8 |\n| 4 | 10,2 |\n| 6 | 13,3 |\n| 8 | 15,8 |\n| 10 | 19,1 |\n\n<svg viewBox=\"0 0 600 300\" role=\"img\" aria-label=\"Mittauspisteet (t,x)-koordinaatistossa: paikka kasvaa noin 4 metristä hetkellä 0 noin 19 metriin hetkellä 10 sekuntia, ja pisteet ovat lähes suoralla viivalla\" style=\"max-width:100%;font-family:system-ui,sans-serif;font-size:24px\">\n  <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"166\" y1=\"40\" x2=\"166\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"262\" y1=\"40\" x2=\"262\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"358\" y1=\"40\" x2=\"358\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"454\" y1=\"40\" x2=\"454\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"550\" y1=\"40\" x2=\"550\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"190\" x2=\"560\" y2=\"190\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"140\" x2=\"560\" y2=\"140\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"90\" x2=\"560\" y2=\"90\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"560\" y2=\"40\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"240\" x2=\"572\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"3\"/>\n  <line x1=\"70\" y1=\"240\" x2=\"70\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"3\"/>\n  <circle cx=\"70\" cy=\"198\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"166\" cy=\"172\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"262\" cy=\"138\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"358\" cy=\"107\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"454\" cy=\"82\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"550\" cy=\"49\" r=\"7\" fill=\"currentColor\"/>\n  <text x=\"70\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">0</text>\n  <text x=\"166\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">2</text>\n  <text x=\"262\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">4</text>\n  <text x=\"358\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">6</text>\n  <text x=\"454\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">8</text>\n  <text x=\"550\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">10</text>\n  <text x=\"60\" y=\"248\" text-anchor=\"end\" fill=\"currentColor\">0</text>\n  <text x=\"60\" y=\"198\" text-anchor=\"end\" fill=\"currentColor\">5</text>\n  <text x=\"60\" y=\"148\" text-anchor=\"end\" fill=\"currentColor\">10</text>\n  <text x=\"60\" y=\"98\" text-anchor=\"end\" fill=\"currentColor\">15</text>\n  <text x=\"60\" y=\"48\" text-anchor=\"end\" fill=\"currentColor\">20</text>\n  <text x=\"84\" y=\"26\" fill=\"currentColor\">x (m)</text>\n  <text x=\"310\" y=\"296\" text-anchor=\"middle\" fill=\"currentColor\">t (s)</text>\n</svg>\n\nKuvittele pisteiden läpi suora niin, että pisteet jäävät suunnilleen tasaisesti sen molemmille puolille.",
+      "text": "Robotti ajaa suoraa viivaa pitkin tasaisella nopeudella. Etäisyysanturi mittaa sen paikan $x$ kahden sekunnin välein. Jokaisessa mittauksessa on pieni virhe, joten pisteet eivät osu täsmälleen samalle suoralle. Mittaukset ovat tässä taulukkona ja (t,x)-kuvaajana (esimerkkiaineisto, ei oikeaa koetta).\n\n| t (s) | x (m) |\n|---|---|\n| 0 | 4,2 |\n| 2 | 6,8 |\n| 4 | 10,2 |\n| 6 | 13,3 |\n| 8 | 15,8 |\n| 10 | 19,1 |\n\n<svg viewBox=\"0 0 600 300\" role=\"img\" aria-label=\"Mittauspisteet (t,x)-koordinaatistossa: paikka kasvaa noin 4 metristä hetkellä 0 noin 19 metriin hetkellä 10 sekuntia, ja pisteet ovat lähes suoralla viivalla\" style=\"max-width:100%;font-family:system-ui,sans-serif;font-size:24px\">\n  <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"166\" y1=\"40\" x2=\"166\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"262\" y1=\"40\" x2=\"262\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"358\" y1=\"40\" x2=\"358\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"454\" y1=\"40\" x2=\"454\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"550\" y1=\"40\" x2=\"550\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"190\" x2=\"560\" y2=\"190\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"140\" x2=\"560\" y2=\"140\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"90\" x2=\"560\" y2=\"90\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"560\" y2=\"40\" stroke=\"currentColor\" stroke-opacity=\"0.2\"/>\n  <line x1=\"70\" y1=\"240\" x2=\"572\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"3\"/>\n  <line x1=\"70\" y1=\"240\" x2=\"70\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"3\"/>\n  <circle cx=\"70\" cy=\"198\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"166\" cy=\"172\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"262\" cy=\"138\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"358\" cy=\"107\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"454\" cy=\"82\" r=\"7\" fill=\"currentColor\"/>\n  <circle cx=\"550\" cy=\"49\" r=\"7\" fill=\"currentColor\"/>\n  <text x=\"70\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">0</text>\n  <text x=\"166\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">2</text>\n  <text x=\"262\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">4</text>\n  <text x=\"358\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">6</text>\n  <text x=\"454\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">8</text>\n  <text x=\"550\" y=\"268\" text-anchor=\"middle\" fill=\"currentColor\">10</text>\n  <text x=\"60\" y=\"248\" text-anchor=\"end\" fill=\"currentColor\">0</text>\n  <text x=\"60\" y=\"198\" text-anchor=\"end\" fill=\"currentColor\">5</text>\n  <text x=\"60\" y=\"148\" text-anchor=\"end\" fill=\"currentColor\">10</text>\n  <text x=\"60\" y=\"98\" text-anchor=\"end\" fill=\"currentColor\">15</text>\n  <text x=\"60\" y=\"48\" text-anchor=\"end\" fill=\"currentColor\">20</text>\n  <text x=\"84\" y=\"26\" fill=\"currentColor\">x (m)</text>\n  <text x=\"310\" y=\"296\" text-anchor=\"middle\" fill=\"currentColor\">t (s)</text>\n</svg>\n\nPisteiden läpi sovitettu suora on piirretty ajatuksissa niin, että pisteet jäävät suunnilleen tasaisesti sen molemmille puolille. Sovitettu suora alkaa paikasta $x_0 = 4{,}1\\,\\text{m}$ eli pisteestä $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$.",
       "question": {
         "type": "numeric",
-        "prompt": "Laske kuvittelemasi suoran kulmakerroin eli robotin nopeus. Valitse suoralta kaksi toisistaan kaukana olevaa pistettä. Vastaa yksikössä m/s.",
+        "prompt": "Valitse sovitetulta suoralta toinen piste kaukana alkupisteestä $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$ ja lue sen t ja x kuvaajasta. Laske suoran kulmakerroin eli robotin nopeus näiden kahden pisteen avulla. Vastaa yksikössä m/s.",
         "answer": 1.5,
         "unit": "m/s",
-        "tolerance": 0.05,
+        "tolerance": 0.03,
         "hints": [
-          "Suora ei kulje yhdenkään mittauspisteen tarkkaan kautta. Valitse suoralta kaksi pistettä, jotka ovat lähellä sen alkua ja loppua, ja lue niiden t ja x.",
-          "$v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$. Suora lähtee noin paikasta $4\\,\\text{m}$ ja päättyy noin paikkaan $19\\,\\text{m}$.",
+          "Suora ei kulje yhdenkään mittauspisteen tarkkaan kautta. Lue suoralta piste, joka on kaukana alkupisteestä, esimerkiksi lähellä hetkeä $t = 10\\,\\text{s}$, ja kirjaa sen t ja x.",
+          "$v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$. Alkupiste on $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$; suora päättyy noin paikkaan $19\\,\\text{m}$.",
           "Hetkien $t = 0$ ja $t = 10\\,\\text{s}$ välillä suoran paikka kasvaa noin $19\\,\\text{m} - 4\\,\\text{m} = 15\\,\\text{m}$."
         ],
         "mistakes": [
@@ -403,20 +407,20 @@
       "prompt": "Opiskelija laskee kärryn nopeuden. Kärry on hetkellä $t = 2{,}0\\,\\text{s}$ paikassa $30\\,\\text{m}$ ja hetkellä $t = 8{,}0\\,\\text{s}$ paikassa $12\\,\\text{m}$. Hän kirjoittaa $v = \\dfrac{30\\,\\text{m} - 12\\,\\text{m}}{8{,}0\\,\\text{s} - 2{,}0\\,\\text{s}} = 3{,}0\\,\\text{m/s}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Siirtymä pitää laskea loppupaikka miinus alkupaikka: $\\Delta x = 12\\,\\text{m} - 30\\,\\text{m} = -18\\,\\text{m}$, joten nopeus on $-3{,}0\\,\\text{m/s}$.",
-          "correct": true,
-          "feedback": "Oikein. Paikka pienenee, joten kärry liikkuu negatiiviseen suuntaan ja sen nopeus on negatiivinen. Opiskelija vähensi paikat väärin päin ja menetti etumerkin."
+          "text": "Paikat on vähennetty väärin päin: $\\Delta x = 12\\,\\text{m} - 30\\,\\text{m} = -18\\,\\text{m}$, joten $v = -3{,}0\\,\\text{m/s}$.",
+          "feedback": "Oikein. Paikka pienenee, joten kärry liikkuu negatiiviseen suuntaan ja sen nopeus on negatiivinen. Opiskelija vähensi paikat väärin päin ja menetti etumerkin.",
+          "correct": true
         },
         {
-          "text": "Ajan muutos pitää laskea toisin päin: $\\Delta t = 2{,}0\\,\\text{s} - 8{,}0\\,\\text{s}$.",
+          "text": "Ajat on vähennetty väärin päin: $\\Delta t$ pitäisi laskea $2{,}0\\,\\text{s} - 8{,}0\\,\\text{s}$ eikä toisin päin.",
           "feedback": "Aika kuluu eteenpäin, joten $\\Delta t = t_2 - t_1 = 6{,}0\\,\\text{s}$ on positiivinen. Virhe on siirtymän laskussa."
         },
         {
-          "text": "Nopeus ei voi olla negatiivinen, joten tulos $+3{,}0\\,\\text{m/s}$ on oikein.",
+          "text": "Nopeus on aina positiivinen, joten tulos $+3{,}0\\,\\text{m/s}$ on oikein eikä laskussa ole virhettä.",
           "feedback": "Nopeus on vektorisuure, ja etumerkki kertoo suunnan. Negatiivinen nopeus tarkoittaa liikettä x-akselin negatiiviseen suuntaan, ja tässä paikka todella pienenee."
         },
         {
-          "text": "Yksikön pitäisi olla m eikä m/s.",
+          "text": "Yksikön pitäisi olla metri eikä metriä sekunnissa, koska laskussa on vain paikkoja ja aikoja.",
           "feedback": "Paikan muutos jaettuna ajalla on metriä sekunnissa. Yksikkö m/s on oikein; virhe on tuloksen etumerkissä."
         }
       ]
@@ -455,7 +459,7 @@
       "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii päättelyä. Piirrä (t,x)-kuvaaja vihkoon aina kun se auttaa."
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii päättelyä. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 ovat vapaaehtoisia ja syventäviä, joten tee ne, jos taso 1 sujuu. Piirrä (t,x)-kuvaaja vihkoon aina kun se auttaa."
     },
     {
       "id": "check-1",
@@ -466,19 +470,19 @@
       "choices": [
         {
           "text": "Kärry liikkuu negatiiviseen suuntaan ja ohittaa origon hetkellä 8 s.",
-          "correct": true,
-          "feedback": "Oikein. Laskeva suora tarkoittaa, että paikka pienenee eli nopeus on negatiivinen. Leikkaus t-akselilla tarkoittaa, että paikka on silloin nolla."
+          "feedback": "Oikein. Laskeva suora tarkoittaa, että paikka pienenee eli nopeus on negatiivinen. Leikkaus t-akselilla tarkoittaa, että paikka on silloin nolla.",
+          "correct": true
         },
         {
-          "text": "Kärry pysähtyy hetkellä 8 s.",
+          "text": "Kärry pysähtyy origoon hetkellä 8 s ja jää sinne paikalleen.",
           "feedback": "Pysähtyminen näkyisi vaakasuorana kuvaajan osana, jossa paikka ei muutu. Tässä suora jatkuu laskevana myös leikkauskohdan jälkeen."
         },
         {
-          "text": "Kärry liikkuu positiiviseen suuntaan ja hidastaa vauhtiaan.",
+          "text": "Kärry liikkuu positiiviseen suuntaan ja sen vauhti pienenee koko ajan.",
           "feedback": "Positiivinen nopeus antaisi nousevan suoran. Lisäksi suora tarkoittaa tasaista liikettä, jossa nopeus ei muutu."
         },
         {
-          "text": "Kärry lähtee liikkeelle origosta vasta hetkellä 8 s.",
+          "text": "Kärry on paikallaan ennen hetkeä 8 s ja lähtee origosta vasta silloin.",
           "feedback": "Kuvaaja kertoo paikan joka hetki, myös ennen hetkeä 8 s. Kärry on siis liikkeessä jo aiemmin, ja hetkellä 8 s sen paikka on 0."
         }
       ]

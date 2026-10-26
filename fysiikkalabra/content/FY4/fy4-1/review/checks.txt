@@ -5,4 +5,4 @@ ok   sims
 ok   inquiry (56 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
-fy4-1: draft (science=missing, pedagogy=missing)
+fy4-1: draft (science=stale, pedagogy=stale)

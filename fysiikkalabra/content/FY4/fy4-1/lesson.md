@@ -42,8 +42,8 @@ Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan m
   <circle cx="458" cy="246" r="9" fill="currentColor"/>
   <circle cx="228" cy="246" r="9" fill="currentColor"/>
   <text x="8" y="256" fill="currentColor">x (m)</text>
-  <text x="228" y="280" text-anchor="middle" fill="currentColor" font-weight="bold">3</text>
-  <text x="458" y="280" text-anchor="middle" fill="currentColor" font-weight="bold">8</text>
+  <foreignObject x="173" y="256" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_2 = 3$</div></foreignObject>
+  <foreignObject x="403" y="256" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$x_1 = 8$</div></foreignObject>
 </svg>
 
 **Nopeus** kertoo, kuinka nopeasti ja mihin suuntaan paikka muuttuu. Se on myös vektorisuure, ja sen etumerkki kertoo suunnan. Nopeuden itseisarvo $|v|$ on vauhti. Tasaisessa liikkeessä nopeus pysyy vakiona: paikka muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä.
@@ -97,7 +97,7 @@ missä $x$ on paikka hetkellä $t$ (m), $x_0$ alkupaikka (m), $v$ nopeus (m/s) j
 Kulmakerroin lasketaan valitsemalla suoralta kaksi toisistaan kaukana olevaa pistettä ja jakamalla paikan muutos ajan muutoksella. Mittauspisteistä piirretyssä kuvaajassa suora sovitetaan pisteiden läpi niin, että pisteet jäävät tasaisesti suoran molemmille puolille. Kulmakerroin lasketaan suoralta, ei kahdesta vierekkäisestä mittauspisteestä, koska jokaisessa mittauksessa on pieni virhe.
 
 ## Esimerkki
-Kävelijän liike on tasaista. Kuvaajasta luetaan, että hän on hetkellä $t = 0$ paikassa $20\,\text{m}$ ja hetkellä $t = 40\,\text{s}$ paikassa $120\,\text{m}$. Mikä on kävelijän nopeus, ja missä paikassa hän on hetkellä $t = 60\,\text{s}$?
+Hölkkääjän liike on tasaista. Kuvaajasta luetaan, että hän on hetkellä $t = 0$ paikassa $20\,\text{m}$ ja hetkellä $t = 40\,\text{s}$ paikassa $120\,\text{m}$. Mikä on hölkkääjän nopeus, ja missä paikassa hän on hetkellä $t = 60\,\text{s}$?
 
 <svg viewBox="0 0 600 300" role="img" aria-label="(t,x)-kuvaaja mittakaavassa: suora nousee paikasta 20 metriä hetkellä 0 paikkaan 120 metriä hetkellä 40 sekuntia ja jatkuu katkoviivana paikkaan 170 metriä hetkellä 60 sekuntia" style="max-width:100%;font-family:system-ui,sans-serif;font-size:24px">
   <line x1="70" y1="250" x2="560" y2="250" stroke="currentColor" stroke-width="3"/>
@@ -114,6 +114,8 @@ Kävelijän liike on tasaista. Kuvaajasta luetaan, että hän on hetkellä $t = 
   <circle cx="350" cy="106" r="8" fill="currentColor"/>
   <text x="60" y="234" text-anchor="end" fill="currentColor">20</text>
   <text x="60" y="114" text-anchor="end" fill="currentColor">120</text>
+  <line x1="70" y1="46" x2="490" y2="46" stroke="currentColor" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="60" y="54" text-anchor="end" fill="currentColor">170</text>
   <text x="350" y="282" text-anchor="middle" fill="currentColor">40</text>
   <text x="490" y="282" text-anchor="middle" fill="currentColor">60</text>
 </svg>
@@ -156,7 +158,7 @@ x &= x_0 + v\,t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Ensimmäisten 40 sekunnin aikana paikka kasvoi 100 m, joten seuraavien 20 sekunnin aikana se kasvaa puolet siitä, 50 m. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus 2,5 m/s on noin 9 km/h, joka on reipas kävelyvauhti. Nopeus on positiivinen, koska kuvaaja nousee.
+**Järkevyys.** Ensimmäisten 40 sekunnin aikana paikka kasvoi 100 m, joten seuraavien 20 sekunnin aikana se kasvaa puolet siitä, 50 m. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus 2,5 m/s on noin 9 km/h, joka on hölkän vauhti. Nopeus on positiivinen, koska kuvaaja nousee.
 
 ## Yleinen virhekäsitys
 (t,x)-kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa. Toinen virhe on pitää negatiivista nopeutta hitaana nopeutena. Etumerkki kertoo vain suunnan: nopeus $-3\,\text{m/s}$ on suuruudeltaan suurempi kuin $+2\,\text{m/s}$. Kolmas virhe on päätellä paikasta nopeus: kappale voi olla edellä ja liikkua silti hitaammin.

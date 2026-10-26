@@ -1,12 +1,8 @@
 VERDICT: DONE
 
-Drafted fy4-1 (round 1); `check_lesson.py fy4-1` is ok on every line.
+Round 2. answers.py unchanged (no number changed). check_lesson.py: all ok.
 
-- `lesson.md`: Ydinajatus (paikka, siirtymä, nopeus, (t,x)-kuvaaja) with a displacement figure, Kaava (v_ka = Δx/Δt, x = x₀ + vt) with a slope and sign figure, staged example (5 stages, graph figure), misconception, summary.
-- `inquiry.json`: hook on distance versus displacement, retrieval, three predictions each tied to an experiment, sim, three experiments (the student finds each velocity from recorded rows), noisy-data line fit, round-trip mean velocity, reflection, example, error-spotting, transfer task, three checks, exit.
-- `exercises.json`, `solutions.md`, `answers.py`, `exit-ticket.json`: 5/4/3 tasks, symbolic first, every number computed in answers.py.
-- `assets/sims/fy4/fy4-1/sim.js`: two carts, four cases, a clock slider and playback, a live (t,x) graph. It has a speed control (Nopeus (toisto)), a Lisätietoja block, label boxes and an adapter (t, tapaus). Velocities are shown only as arrows.
-- `tests/sims/fy4-1.json`: 51 assertions for every control and displayed quantity.
-- `sim-spec.md`, `glossary.json`: five new terms.
-
-Nothing is not fixable here.
+- lesson.md: walker became a jogger (hölkkääjä; Järkevyys now "hölkän vauhti", science blocking). Ydinajatus figure: lower arrow labelled x₂ = 3 and x₁ = 8 in LaTeX. Esimerkki figure: dashed guide and 170 tick.
+- solutions.md: L1-01 "pikajuoksuvauhtia", L2 "hölkkää (noin 13 km/h)", L3 "ja sen yli" removed (science blocking).
+- exit-ticket.json: "Kolmen kärryn"; item 1 now asks for the signed component Δx and what its sign says about Δ**x**.
+- inquiry.json: pred-1..3, virhe, check-1, exp-2 question rewritten with real-misconception distractors (steeper = further, position = displacement, opposite directions never meet, slope from start point, etc.) and near-equal option lengths; feedback repaired. Data task: fitted intercept (0 s; 4,1 m) given, student reads a far second point from the line, tolerance 0,05 -> 0,03 (1,55 and 1,3 rejected, 1,494 accepted). Workload: exp-2 and exp-3 not merged (each prediction needs its own locked case); tehtavat text marks levels 2-3 optional. "riippu" typo left.

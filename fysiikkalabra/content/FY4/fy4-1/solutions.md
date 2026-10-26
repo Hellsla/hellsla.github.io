@@ -4,7 +4,7 @@
 **Kaava:** v = Δx / Δt
 **Sijoitus:** v = 120 m / 15 s = 8,0 m/s
 **Vastaus:** 8,0 m/s
-**Järkevyys:** Noin 29 km/h on hyvä kestojuoksuvauhti. Positiivinen etumerkki sopii, koska liike on positiiviseen suuntaan.
+**Järkevyys:** Noin 29 km/h on pikajuoksuvauhtia; 120 m:n matkalla se on mahdollinen. Positiivinen etumerkki sopii, koska liike on positiiviseen suuntaan.
 
 ## fy4-1-L1-02
 **Annettu:** x₁ = 12 m, x₂ = −5,0 m
@@ -20,7 +20,7 @@
 **Kaava:** v = Δx / Δt, joten Δx = v Δt
 **Sijoitus:** Δx = 3,5 m/s · 12 s = 42 m
 **Vastaus:** 42 m
-**Järkevyys:** Yksikkö m/s · s = m. Vauhti vastaa reipasta kävelyä, ja 12 s:ssa kuljetaan muutama kymmenen metriä.
+**Järkevyys:** Yksikkö m/s · s = m. Vauhti vastaa hölkkää (noin 13 km/h), ja 12 s:ssa kuljetaan muutama kymmenen metriä.
 
 ## fy4-1-L1-04
 **Annettu:** (t₁; x₁) = (0 s; 4,0 m), (t₂; x₂) = (10 s; 24 m)
@@ -60,7 +60,7 @@
 **Kaava:** v = Δx / Δt = (x₂ − x₁) / (t₂ − t₁)
 **Sijoitus:** v = (3,0 m − 18 m) / (7,0 s − 2,0 s) = −15 m / 5,0 s = −3,0 m/s
 **Vastaus:** −3,0 m/s
-**Järkevyys:** Paikka pienenee, joten nopeus on negatiivinen eli kärry liikkuu kohti origoa ja sen yli. Vauhti on 3,0 m/s.
+**Järkevyys:** Paikka pienenee, joten nopeus on negatiivinen eli kärry liikkuu kohti origoa. Vauhti on 3,0 m/s.
 
 ## fy4-1-L2-04
 **Annettu:** x₀ = −24 m, v = 1,5 m/s, x = 0
