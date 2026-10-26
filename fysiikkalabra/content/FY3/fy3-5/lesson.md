@@ -2,6 +2,47 @@
 
 > **Miksi** polkupyörän pumppu kuumenee, kun rengasta pumpataan, vaikka pumppua ei lämmitetä millään?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kädet painavat jalkapumpun kahvaa alas, ja letku vie ilman polkupyörän renkaaseen. Pumpun alaosa on lämmennyt, mitä kuvaavat oranssi hehku ja väreilevät viivat." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy35h-barrel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#ffc078"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="520" width="1200" height="80" fill="#c9c2b2"/>
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="930" cy="330" r="210" fill="none" stroke="#1f2933" stroke-width="34"/>
+  <circle cx="930" cy="330" r="186" fill="none" stroke="#8a96a3" stroke-width="4"/>
+  <line x1="930" y1="330" x2="1114" y2="330" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="1100" y2="400.5" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="1060" y2="460" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="1000.5" y2="500" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="930" y2="514" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="859.5" y2="500" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="800" y2="460" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="760" y2="400.5" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="746" y2="330" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="760" y2="259.5" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="800" y2="200" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="859.5" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="930" y2="146" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="1000.5" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="1060" y2="200" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="930" y1="330" x2="1100" y2="259.5" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <circle cx="930" cy="330" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="764" y="270" width="24" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="300" y="500" width="200" height="22" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="370" y="220" width="60" height="284" rx="8" fill="url(#fy35h-barrel)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="370" y="400" width="60" height="104" rx="8" fill="#e8590c" fill-opacity="0.55"/>
+  <rect x="370" y="220" width="60" height="284" fill="none" rx="8" fill="none" stroke="#1f2933" stroke-width="3"/>
+  <rect x="392" y="140" width="16" height="84" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="300" y="124" width="200" height="28" rx="14" fill="#1f2933"/>
+  <path d="M430,470 C520,470 560,400 640,380 S740,300 776,280" fill="none" stroke="#1f2933" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M340,470 q-12,-13.5 0,-26.5 t0,-26.5 t0,-26.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M460,470 q-12,-13.5 0,-26.5 t0,-26.5 t0,-26.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M330,90 L290,-10" fill="none" stroke="#1971c2" stroke-width="58" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="330" cy="128" rx="38" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M470,90 L510,-10" fill="none" stroke="#1971c2" stroke-width="58" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="470" cy="128" rx="38" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M553,70 L553,154 L543,154 L560,180 L577,154 L567,154 L567,70 Z" fill="#1971c2" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Luvussa *Työ ja energia* työ todettiin tavaksi siirtää energiaa, ja Joulen koe näytti, että mekaaninen työ voi lämmittää vettä. Siellä sanottiin arkikielen tapaan, että työ muuttuu lämmöksi, mutta tarkemmin työ kasvattaa veden sisäenergiaa: vesi ei sisällä ”lämpöä”. Systeemin sisäenergia $U$ on sen hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Mikromallin mukaan lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, joten kun kaasun tai nesteen lämpötila nousee, sen sisäenergia kasvaa. Sisäenergia riippuu myös aineen määrästä: iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
 

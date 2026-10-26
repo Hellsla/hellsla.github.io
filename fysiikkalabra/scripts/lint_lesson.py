@@ -24,7 +24,7 @@ LABELS = ["Annettu", "Kysytty", "Kaava", "Sijoitus", "Vastaus", "Järkevyys"]
 # The figure palette (NOTES.md §3): one meaning per colour in every lesson's figures.
 PALETTE = {"#1f2933", "#6b7480", "#c9c2b2", "#e3dccb", "#ffffff", "#eef5f9", "#2f74b5", "#a9d1f0", "#d9b26a", "#e9c98a", "#f1dfb5",
            "#a97a35", "#8a5f22", "#e8590c", "#ffc078", "#c92a2a", "#f2a69c", "#1971c2", "#d0e6fb", "#8a96a3", "#c4ccd4", "#6c757d",
-           "#b8622d", "#a5d8ff", "#4f8fbf", "#2b8a3e", "#b2f2bb"}
+           "#b8622d", "#a5d8ff", "#4f8fbf", "#2b8a3e", "#b2f2bb", "#f6f1e6"}
 
 
 class Lint:

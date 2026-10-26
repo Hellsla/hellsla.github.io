@@ -2,6 +2,27 @@
 
 > **Miksi** padon muuri on paljon paksumpi pohjalta kuin yläreunasta, vaikka sitä vasten on samaa vettä koko syvyydeltä?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: betonipato vuoristolaaksossa sivulta nähtynä. Padon takana on syvä tekojärvi, jonka vesi tummuu syvyyden kasvaessa. Pato on yläreunasta kapea ja levenee alaspäin, pohjalta se on moninkertaisesti paksumpi." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy34h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy34h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy34h-concrete" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy34h-river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy34h-sky)"/>
+  <path d="M819,118 Q817,87.5 853,91 Q867.5,58.5 903.5,69.5 Q936,51.5 954,85.5 Q986.5,89 983,118 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,260 L180,120 L330,230 L470,90 L640,250 L800,140 L1000,260 L1200,160 V600 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
+  <path d="M0,300 L160,220 L300,290 L480,200 L620,300 L820,230 L1050,310 L1200,260 V600 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <path d="M0,330 L8.5,311.5 L17,330 L26,310.5 L35,330 L46,304 L57,330 L68,304.5 L78.5,330 L94,291.5 L109,330 L121.5,300 L133.5,330 L146,299.5 L158.5,330 L171,299.5 L183.5,330 L196,299.5 L208.5,330 L221,299.5 L233.5,330 L244.5,303.5 L256,330 L271,292 L286,330 L300,294 L314.5,330 L324,307.5 L334,330 L348,295.5 L361.5,330 L375,297.5 L388,330 L403,291 L418.5,330 L430,302 L442,330 L457,291.5 L472,330 L484,301 L496,330 L508,300.5 L520.5,330 L532.5,301 L544.5,330 L553.5,310 L562.5,330 L571.5,310 L580.5,330 L592,303 L603.5,330 L618,292.5 L633,330 L645.5,299.5 L658,330 L667.5,308.5 L677,330 L689,300 L701.5,330 L715.5,295 L729.5,330 L738,311.5 L746.5,330 L759.5,298 L772,330 L781,311 L789.5,330 L801,303.5 L812,330 L822,307.5 L831.5,330 L845.5,296 L859,330 L872.5,296 L886,330 L900.5,294 L914.5,330 L926.5,302 L938,330 L949.5,302.5 L961,330 L972.5,302.5 L984,330 L995.5,303 L1007,330 L1016,310 L1025,330 L1037,301 L1049,330 L1061,301.5 L1073,330 L1088,291 L1103.5,330 L1113.5,306.5 L1123.5,330 L1139,290.5 L1154.5,330 L1167.5,297.5 L1180.5,330 L1194.5,295.5 L1208.5,330 V630 H0 Z" fill="#6c757d" stroke-linejoin="round"/>
+  <rect x="0" y="330" width="1200" height="270" fill="#c9c2b2"/>
+  <path d="M0,600 V560 Q300,540 600,560 Q900,580 1200,555 V600 Z" fill="#d9b26a" stroke-linejoin="round"/>
+  <path d="M0,250 H560 L620,560 H0 Z" fill="url(#fy34h-water)" stroke-linejoin="round"/>
+  <path d="M80,280 q30.0,-6 60.0,0 t60.0,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M300,300 q22.5,-6 45.0,0 t45.0,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M150,340 q25.0,-6 50.0,0 t50.0,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M540,224 H600 L760,560 H560 Z" fill="url(#fy34h-concrete)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="548.5" y1="300" x2="632" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="553.5" y1="380" x2="670.5" y2="380" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="558" y1="460" x2="708.5" y2="460" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="530" y="214" width="80" height="12" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M760,560 Q900,520 1200,540 V600 H760 Z" fill="url(#fy34h-river)" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Kun voima jakautuu pinnalle, sen vaikutus riippuu siitä, kuinka suurelle alalle se jakautuu. Nastan terävä kärki uppoaa seinään samalla voimalla, jolla tylppä kanta ei jätä jälkeäkään, ja sukset kantavat hangella, vaikka kengät uppoavat. Suure, joka kuvaa tätä, on paine: voima jaettuna sillä pinta-alalla, jolle voima jakautuu. Paineen yksikkö on pascal (Pa), ja 1 Pa = 1 N/m². Pascal on pieni yksikkö, joten arjessa käytetään kilopascalia: 1 kPa = 1000 Pa.
 

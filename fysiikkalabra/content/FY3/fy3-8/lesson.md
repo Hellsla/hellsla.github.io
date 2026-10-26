@@ -2,6 +2,96 @@
 
 > **Miksi** pitkän sillan päässä on kampamainen teräsliitos, jonka yli auton renkaat kolahtavat?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee kampamainen teräsliitos, jonka hampaat lomittuvat ja jättävät väliinsä raon sillan lämpölaajenemista varten." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy38h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy38h-river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="300" fill="url(#fy38h-sky)"/>
+  <path d="M188,106 Q186.5,79 218.5,82 Q231,53 263,63 Q292,47 308,77 Q337,80.5 333.5,106 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M926,132 Q925,111.5 949,114 Q958.5,92.5 982.5,99.5 Q1004,87.5 1016,110.5 Q1037.5,113 1035,132 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,300 L14,266.5 L28.5,300 L41.5,269.5 L54.5,300 L62.5,284 L70.5,300 L78,284.5 L86,300 L99,269.5 L112.5,300 L120.5,283 L129,300 L138,280 L147.5,300 L156.5,282 L165,300 L177,272 L189,300 L199.5,277 L210,300 L222.5,271 L235,300 L248.5,269 L262,300 L274,271.5 L286.5,300 L300,268.5 L313.5,300 L324.5,275.5 L335.5,300 L348.5,269 L361.5,300 L371.5,278.5 L381.5,300 L395,268 L408.5,300 L420.5,272 L433,300 L446.5,267 L460.5,300 L472,274 L483.5,300 L497.5,268 L511,300 L520,281 L529,300 L538,281 L547,300 L559,273 L570.5,300 L579,283.5 L587,300 L600.5,268 L614.5,300 L627.5,269.5 L640.5,300 L653.5,269 L667,300 L676,280 L685.5,300 L695.5,278.5 L705.5,300 L717.5,273 L729,300 L740.5,274 L752,300 L763,276 L773.5,300 L782,282.5 L790.5,300 L800,280 L809.5,300 L823.5,266.5 L837.5,300 L851.5,266.5 L866,300 L874.5,282 L883,300 L897,268 L910.5,300 L920,279.5 L929.5,300 L939,280 L948.5,300 L961,270.5 L974,300 L983.5,280 L992.5,300 L1007,266 L1021,300 L1034,269.5 L1047,300 L1056.5,280.5 L1065.5,300 L1075.5,277.5 L1086,300 L1099.5,267 L1113.5,300 L1124.5,275.5 L1135.5,300 L1144.5,281.5 L1153.5,300 L1166.5,269.5 L1179.5,300 L1192,270.5 L1204.5,300 V320 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <rect x="0" y="300" width="1200" height="300" fill="url(#fy38h-river)"/>
+  <path d="M560,300 H640 L1000,600 H200 Z" fill="#6c757d" stroke-linejoin="round"/>
+  <path d="M598,300 H602 L612,600 H588 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M560,300 L200,600" fill="none" stroke="#c4ccd4" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="553" y1="305.5" x2="553" y2="290.5" stroke="#c4ccd4" stroke-width="2.05629" stroke-linecap="butt"/>
+  <line x1="539.5" y1="317" x2="539.5" y2="300" stroke="#c4ccd4" stroke-width="2.17064" stroke-linecap="butt"/>
+  <line x1="521" y1="332.5" x2="521" y2="313" stroke="#c4ccd4" stroke-width="2.32646" stroke-linecap="butt"/>
+  <line x1="498" y1="351.5" x2="498" y2="329" stroke="#c4ccd4" stroke-width="2.51728" stroke-linecap="butt"/>
+  <line x1="471.5" y1="374" x2="471.5" y2="347.5" stroke="#c4ccd4" stroke-width="2.73924" stroke-linecap="butt"/>
+  <line x1="441" y1="399" x2="441" y2="368.5" stroke="#c4ccd4" stroke-width="2.98963" stroke-linecap="butt"/>
+  <line x1="408" y1="426.5" x2="408" y2="391.5" stroke="#c4ccd4" stroke-width="3.26645" stroke-linecap="butt"/>
+  <line x1="372" y1="457" x2="372" y2="416.5" stroke="#c4ccd4" stroke-width="3.56811" stroke-linecap="butt"/>
+  <line x1="333" y1="489.5" x2="333" y2="444" stroke="#c4ccd4" stroke-width="3.8933" stroke-linecap="butt"/>
+  <line x1="291" y1="524" x2="291" y2="472.5" stroke="#c4ccd4" stroke-width="4.24095" stroke-linecap="butt"/>
+  <line x1="247" y1="561" x2="247" y2="503.5" stroke="#c4ccd4" stroke-width="4.61011" stroke-linecap="butt"/>
+  <path d="M560,288 L200,540" fill="none" stroke="#c4ccd4" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M640,300 L1000,600" fill="none" stroke="#c4ccd4" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="647" y1="305.5" x2="647" y2="290.5" stroke="#c4ccd4" stroke-width="2.05629" stroke-linecap="butt"/>
+  <line x1="660.5" y1="317" x2="660.5" y2="300" stroke="#c4ccd4" stroke-width="2.17064" stroke-linecap="butt"/>
+  <line x1="679" y1="332.5" x2="679" y2="313" stroke="#c4ccd4" stroke-width="2.32646" stroke-linecap="butt"/>
+  <line x1="702" y1="351.5" x2="702" y2="329" stroke="#c4ccd4" stroke-width="2.51728" stroke-linecap="butt"/>
+  <line x1="728.5" y1="374" x2="728.5" y2="347.5" stroke="#c4ccd4" stroke-width="2.73924" stroke-linecap="butt"/>
+  <line x1="759" y1="399" x2="759" y2="368.5" stroke="#c4ccd4" stroke-width="2.98963" stroke-linecap="butt"/>
+  <line x1="792" y1="426.5" x2="792" y2="391.5" stroke="#c4ccd4" stroke-width="3.26645" stroke-linecap="butt"/>
+  <line x1="828" y1="457" x2="828" y2="416.5" stroke="#c4ccd4" stroke-width="3.56811" stroke-linecap="butt"/>
+  <line x1="867" y1="489.5" x2="867" y2="444" stroke="#c4ccd4" stroke-width="3.8933" stroke-linecap="butt"/>
+  <line x1="909" y1="524" x2="909" y2="472.5" stroke="#c4ccd4" stroke-width="4.24095" stroke-linecap="butt"/>
+  <line x1="953" y1="561" x2="953" y2="503.5" stroke="#c4ccd4" stroke-width="4.61011" stroke-linecap="butt"/>
+  <path d="M640,288 L1000,540" fill="none" stroke="#c4ccd4" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M358.5,468 H841.5 L923,536 H277 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <path d="M360.5,468 L369.5,468 L305,524 L294,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M293,536 L304.5,536 L366.5,480 L357,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M382.5,468 L391.5,468 L333.5,524 L322,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M322.5,536 L334,536 L389.5,480 L380.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M404.5,468 L413.5,468 L361.5,524 L350,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M351.5,536 L363.5,536 L413,480 L403.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M426.5,468 L435.5,468 L389.5,524 L378,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M381,536 L393,536 L436,480 L427,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M448.5,468 L457,468 L417.5,524 L406.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M410.5,536 L422,536 L459.5,480 L450,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M470.5,468 L479,468 L445.5,524 L434.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M440,536 L451.5,536 L482.5,480 L473.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M492.5,468 L501,468 L473.5,524 L462.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M469.5,536 L481,536 L506,480 L496.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M514.5,468 L523,468 L501.5,524 L490.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M498.5,536 L510.5,536 L529,480 L520,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M536.5,468 L545,468 L530,524 L518.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M528,536 L540,536 L552.5,480 L543,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M558.5,468 L567,468 L558,524 L546.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M557.5,536 L569,536 L575.5,480 L566.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M580,468 L589,468 L586,524 L574.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M587,536 L598.5,536 L599,480 L589.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M602,468 L611,468 L614,524 L603,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M616,536 L628,536 L622,480 L613,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M624,468 L633,468 L642,524 L631,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M645.5,536 L657.5,536 L645.5,480 L636,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M646,468 L655,468 L670,524 L659,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M675,536 L686.5,536 L668.5,480 L659.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M668,468 L677,468 L698.5,524 L687,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M704.5,536 L716,536 L692,480 L682.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M690,468 L699,468 L726.5,524 L715,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M733.5,536 L745.5,536 L715,480 L705.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M712,468 L721,468 L754.5,524 L743,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M763,536 L775,536 L738.5,480 L729,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M734,468 L743,468 L782.5,524 L771,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M792.5,536 L804,536 L761.5,480 L752,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M756,468 L764.5,468 L810.5,524 L799.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M822,536 L833.5,536 L784.5,480 L775.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M778,468 L786.5,468 L838.5,524 L827.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M851,536 L863,536 L808,480 L798.5,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M800,468 L808.5,468 L866.5,524 L855.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M880.5,536 L892.5,536 L831,480 L822,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M822,468 L830.5,468 L895,524 L883.5,524 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M910,536 L921.5,536 L854.5,480 L845,480 Z" fill="#6c757d" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="358.5" y1="468" x2="841.5" y2="468" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="277" y1="536" x2="923" y2="536" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="536" y="360" width="128" height="70" rx="14" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
+  <path d="M552,360 L566,322 H634 L648,360 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="546" y="400" width="26" height="12" rx="3" fill="#c92a2a"/>
+  <rect x="628" y="400" width="26" height="12" rx="3" fill="#c92a2a"/>
+  <rect x="544" y="428" width="26" height="22" rx="4" fill="#1f2933"/>
+  <rect x="630" y="428" width="26" height="22" rx="4" fill="#1f2933"/>
+</svg>
+
 ## Ydinajatus
 Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. Ilmiötä sanotaan lämpölaajenemiseksi. Mikromalli selittää sen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu. Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan: lähekkäin puristuvat hiukkaset hylkivät toisiaan voimakkaasti, mutta loittonevien hiukkasten välinen veto heikkenee vähitellen. Siksi hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä, ja voimakkaammin värähtelevien hiukkasten keskimääräinen etäisyys kasvaa. Kun kaikki hiukkasvälit kasvavat, koko kappale laajenee.
 

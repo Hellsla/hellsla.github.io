@@ -2,6 +2,56 @@
 
 > **Miksi** kylmälaukun jääpussi pitää juomat viileinä tuntikausia helteellä, mutta kun jää on sulanut, juomat lämpenevät nopeasti?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: helteinen rantapiknik. Viltillä on avoin kylmälaukku, jossa on jääpussi ja juomapulloja. Aurinko paistaa, ja taustalla on järvi." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy316h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy316h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy316h-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy316h-sand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy316h-lid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="330" fill="url(#fy316h-sky)"/>
+  <circle cx="1030" cy="100" r="93" fill="#ffffff" fill-opacity="0.5"/>
+  <path d="M1097.5,125.5 L1127.5,126 L1101.5,112 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1076,156 L1101.5,171.5 L1086,146 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1042,171.5 L1056,197.5 L1055.5,167.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1004.5,167.5 L1004,197.5 L1018,171.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M974,146 L958.5,171.5 L984,156 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M958.5,112 L932.5,126 L962.5,125.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M962.5,74.5 L932.5,74 L958.5,88 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M984,44 L958.5,28.5 L974,54 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1018,28.5 L1004,2.5 L1004.5,32.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1055.5,32.5 L1056,2.5 L1042,28.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1086,54 L1101.5,28.5 L1076,44 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M1101.5,88 L1127.5,74 L1097.5,74.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <circle cx="1030" cy="100" r="58" fill="url(#fy316h-sun)"/>
+  <path d="M348,106 Q346.5,79 378.5,82 Q391,53 423,63 Q452,47 468,77 Q497,80.5 493.5,106 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,300 L10,277.5 L20,300 L34,264 L48.5,300 L61,270 L73,300 L81.5,281 L90.5,300 L99.5,279.5 L108.5,300 L119,276 L129.5,300 L145,260.5 L160,300 L171.5,272.5 L183,300 L191.5,282 L200,300 L212,271 L224,300 L236.5,269.5 L249,300 L263,266 L276.5,300 L289.5,268 L302.5,300 L311,281.5 L319.5,300 L331,272.5 L342.5,300 L353.5,274.5 L364,300 L374.5,276.5 L384.5,300 L396.5,271.5 L408,300 L419,274.5 L429.5,300 L444.5,262.5 L459.5,300 L473.5,264 L488,300 L499.5,272.5 L511,300 L526,261 L541.5,300 L553,272.5 L564.5,300 L578.5,264.5 L592.5,300 L604,272 L616,300 L631,260.5 L646.5,300 L658,273 L669,300 L681.5,270 L694,300 L706.5,269.5 L719,300 L729,276.5 L739,300 L750.5,273 L761.5,300 L777,260.5 L792.5,300 L801,282 L809.5,300 L824,263.5 L838,300 L851,268 L864.5,300 L878,266 L891.5,300 L902,276 L912.5,300 L925,269.5 L937.5,300 L947.5,277 L957.5,300 L971.5,264 L986,300 L997.5,272 L1009,300 L1021.5,269 L1034,300 L1045,275.5 L1055.5,300 L1065,278.5 L1074.5,300 L1089,262.5 L1104,300 L1117,267 L1130.5,300 L1144,266.5 L1157.5,300 L1167.5,276 L1178,300 L1188,277 L1198,300 L1207.5,278.5 L1217,300 V340 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <rect x="0" y="320" width="1200" height="100" fill="url(#fy316h-lake)"/>
+  <path d="M0,400 Q600,370 1200,410 V600 H0 Z" fill="url(#fy316h-sand)" stroke-linejoin="round"/>
+  <path d="M150,600 L310,440 H950 L1100,600 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="390" y1="440" x2="269" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="470" y1="440" x2="387.5" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="550" y1="440" x2="506" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="630" y1="440" x2="625" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="710" y1="440" x2="744" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="790" y1="440" x2="862.5" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="870" y1="440" x2="981" y2="600" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="257" y1="493" x2="999.5" y2="493" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <line x1="203" y1="547" x2="1050.5" y2="547" stroke="#d0e6fb" stroke-width="18" stroke-linecap="butt"/>
+  <path d="M150,600 L310,440 H950 L1100,600 Z" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="470" y="390" width="300" height="160" rx="12" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="470" y="450" width="300" height="20" fill="#ffffff"/>
+  <path d="M470,390 L500,300 H800 L770,390 Z" fill="url(#fy316h-lid)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M560,300 Q620,250 680,300" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="490" y="380" width="120" height="40" rx="12" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
+  <rect x="630" y="330" width="34" height="80" rx="8" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="633" y="352" width="28" height="56" rx="6" fill="#a9d1f0"/>
+  <rect x="639" y="316" width="16" height="18" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <rect x="680" y="330" width="34" height="80" rx="8" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="683" y="352" width="28" height="56" rx="6" fill="#a9d1f0"/>
+  <rect x="689" y="316" width="16" height="18" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <rect x="724" y="330" width="34" height="80" rx="8" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="727" y="352" width="28" height="56" rx="6" fill="#a9d1f0"/>
+  <rect x="733" y="316" width="16" height="18" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <path d="M240,430 q-12,-11.5 0,-23.5 t0,-23.5 t0,-23.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M1000,430 q-12,-11.5 0,-23.5 t0,-23.5 t0,-23.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+</svg>
+
 ## Ydinajatus
 Arjen lämpöilmiöt, kuten saunan lämmitys, kylmälaukun jäähtyminen ja moottorin jäähdytys, ratkeavat samalla periaatteella: energiakirjanpidolla. Energia säilyy, joten jokaiselle joulelle on löydyttävä lähde ja kohde. Lähteenä on teho eli energia sekunnissa tai toinen kappale, joka luovuttaa lämpöä. Kohteita on kaksi: energia nostaa lämpötilaa, $Q = cm\Delta T$, tai se muuttaa olomuotoa, $Q = sm$ tai $Q = rm$. Olomuodon muutoksen aikana lämpötila ei muutu: kun jää sulaa tai vesi kiehuu, kaikki energia kuluu muutokseen, ja lämpötila nousee vasta, kun muutos on loppu.
 

@@ -1,5 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-5` writes them into lesson.md."""
 from figlib import Fig, INK, MUTED, RULE, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD_LIGHT, ALUMINIUM
+import herolib as H
 
 
 def cylinder(f, x0, x1, ytop, ybot, piston_x, gas_fill):
@@ -78,4 +79,37 @@ def work_sign():
     return f.svg()
 
 
-FIGURES = {"two-ways": two_ways, "energy-balance": energy_balance, "work-sign": work_sign}
+def hero():
+    """The chapter's opening illustration: hands pumping a bicycle tyre, the bottom of the pump getting hot."""
+    f = H.hero("fy35-hero", "Kuvitus: kädet painavat jalkapumpun kahvaa alas, ja letku vie ilman polkupyörän renkaaseen. Pumpun "
+               "alaosa on lämmennyt, mitä kuvaavat oranssi hehku ja väreilevät viivat.")
+    f.rect(0, 0, 1200, 600, H.PAPER)
+    f.rect(0, 520, 1200, 80, H.RULE)
+    f.line(0, 520, 1200, 520, H.INK, 3)
+    # tyre and wheel on the right
+    f.circle(930, 330, 210, "none", H.INK, 34)
+    f.circle(930, 330, 186, "none", H.METAL_EDGE, 4)
+    for k in range(16):
+        a = k * H.math.pi / 8
+        f.line(930, 330, 930 + 184 * H.math.cos(a), 330 + 184 * H.math.sin(a), H.METAL_EDGE, 2)
+    f.circle(930, 330, 22, H.ALUMINIUM, H.INK, 3)
+    f.rect(764, 270, 24, 14, H.IRON, H.INK, 2, 2)
+    # pump: foot, barrel with the warm bottom, rod, T-handle, hose to the valve
+    f.rect(300, 500, 200, 22, H.IRON, H.INK, 3, 6)
+    warm = H.grad(f, "fy35h-barrel", H.ALUMINIUM, H.HEAT_LIGHT)
+    f.rect(370, 220, 60, 284, warm, H.INK, 3, 8)
+    f.add(f'<rect x="370" y="400" width="60" height="104" rx="8" fill="{H.HEAT}" fill-opacity="0.55"/>')
+    f.rect(370, 220, 60, 284, extra=f'rx="8" fill="none" stroke="{H.INK}" stroke-width="3"')
+    f.rect(392, 140, 16, 84, H.ALUMINIUM, H.INK, 2)
+    f.rect(300, 124, 200, 28, H.INK, rx=14)
+    f.path("M430,470 C520,470 560,400 640,380 S740,300 776,280", stroke=H.INK, w=12, extra='stroke-linecap="round"')
+    H.shimmer(f, (340, 460), 470, 80)
+    # hands on the handle, sleeves
+    for x in (330, 470):
+        f.path(f"M{x},90 L{x - (40 if x < 400 else -40)},-10", stroke=H.COLD, w=58, extra='stroke-linecap="round"')
+        f.add(f'<ellipse cx="{x}" cy="128" rx="38" ry="30" fill="{H.SAND_LIGHT}" stroke="{H.INK}" stroke-width="2.5"/>')
+    f.block_arrow(560, 70, 560, 180, H.COLD, 14, 34, 26)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "two-ways": two_ways, "energy-balance": energy_balance, "work-sign": work_sign}

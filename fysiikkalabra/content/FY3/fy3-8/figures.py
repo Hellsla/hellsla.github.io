@@ -1,6 +1,7 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-8` writes them into lesson.md."""
 import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, COLD, COLD_LIGHT, HOT, HOT_LIGHT, HEAT, GLASS, METAL_EDGE)
+import herolib as H
 
 
 def particles():
@@ -97,4 +98,41 @@ def volume_expansion():
     return f.svg()
 
 
-FIGURES = {"particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion}
+def hero():
+    """The chapter's opening illustration: a car driving over a bridge's comb-shaped expansion joint."""
+    f = H.hero("fy38-hero", "Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee "
+               "kampamainen teräsliitos, jonka hampaat lomittuvat ja jättävät väliinsä raon sillan lämpölaajenemista varten.")
+    H.sky(f, "fy38h", 300)
+    H.cloud(f, 260, 90, 0.8); H.cloud(f, 980, 120, 0.6)
+    H.forest(f, 300, 34, 22, H.METAL_EDGE, seed=6, depth=20)
+    f.rect(0, 300, 1200, 300, H.grad(f, "fy38h-river", H.WATER_LIGHT, H.WATER))
+    # the road narrows to the horizon
+    f.path("M560,300 H640 L1000,600 H200 Z", H.IRON)
+    f.path("M598,300 H602 L612,600 H588 Z", H.WHITE)
+    for side in (-1, 1):
+        f.path(f"M{600 + side * 40},300 L{600 + side * 400},600", stroke=H.ALUMINIUM, w=10)
+        for k in range(1, 12):
+            t = (k / 12) ** 1.6; x = 600 + side * (40 + 360 * t); y = 300 + 300 * t
+            f.line(x, y, x, y - 14 - 50 * t, H.ALUMINIUM, 2 + 3 * t)
+        f.path(f"M{600 + side * 40},288 L{600 + side * 400},540", stroke=H.ALUMINIUM, w=6)
+    # comb joint across the road: two steel plates with interlocking teeth
+    y0, y1 = 468, 536
+    hw0, hw1 = 40 + 360 * (y0 - 300) / 300, 40 + 360 * (y1 - 300) / 300      # half-widths of the road at the joint's edges
+    f.path(f"M{H.n(600 - hw0)},{y0} H{H.n(600 + hw0)} L{H.n(600 + hw1)},{y1} H{H.n(600 - hw1)} Z", H.METAL_EDGE)
+    teeth = 22
+    for k in range(teeth):
+        t0, t1 = (k + 0.1) / teeth, (k + 0.5) / teeth
+        xa = lambda t, y, hw: 600 - hw + 2 * hw * t
+        f.path(f"M{H.n(xa(t0, y0, hw0))},{y0} L{H.n(xa(t1, y0, hw0))},{y0} L{H.n(xa(t1, y1 - 12, hw1 - 12 * 1.2))},{y1 - 12} L{H.n(xa(t0, y1 - 12, hw1 - 12 * 1.2))},{y1 - 12} Z", H.ALUMINIUM, H.INK, 1.5)
+        u0, u1 = (k + 0.55) / teeth, (k + 0.95) / teeth
+        f.path(f"M{H.n(xa(u0, y1, hw1))},{y1} L{H.n(xa(u1, y1, hw1))},{y1} L{H.n(xa(u1, y0 + 12, hw0 + 14))},{y0 + 12} L{H.n(xa(u0, y0 + 12, hw0 + 14))},{y0 + 12} Z", H.IRON, H.INK, 1.5)
+    f.line(600 - hw0, y0, 600 + hw0, y0, H.INK, 3); f.line(600 - hw1, y1, 600 + hw1, y1, H.INK, 3)
+    # the car, from behind
+    f.rect(536, 360, 128, 70, H.COLD, H.INK, 3, 14)
+    f.path("M552,360 L566,322 H634 L648,360 Z", H.GLASS, H.INK, 3)
+    f.rect(546, 400, 26, 12, H.HOT, rx=3); f.rect(628, 400, 26, 12, H.HOT, rx=3)
+    f.rect(544, 428, 26, 22, H.INK, rx=4); f.rect(630, 428, 26, 22, H.INK, rx=4)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion}

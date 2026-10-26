@@ -57,6 +57,7 @@ RULES = {                       # category: (science, pedagogy)
     "experiment":     ("full",  "full"),    # inquiry correct option, initial/locked/vary/measure, numeric answer, mistakes
     "simulation":     ("full",  "full"),    # simulation code or images (the lesson's or a shared folder it uses)
     "figure":         ("full",  "full"),    # figure geometry or text; a picture file
+    "illustration":   ("none",  "delta"),   # the chapter's opening illustration (data-fig="hero"): no text, no physics claim (teacher 2026-10-26)
 }
 WHY = {"tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
@@ -65,7 +66,8 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "tests-weakened": "a simulation assertion removed or loosened", "levels": "an exercise level or id changed",
        "structure": "headings, stages, display blocks or inquiry structure changed", "objectives": "meta goals or prerequisites changed",
        "experiment": "an experiment setup, correct option or numeric answer in inquiry.json changed",
-       "simulation": "the simulation's code changed", "figure": "a figure or picture changed"}
+       "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
+       "illustration": "the opening illustration only"}
 
 
 def find_lesson(lid): return courses.find_lesson(lid)
@@ -249,6 +251,16 @@ def _line(fname, body, lid):
     return "numbers" if SUBSTANTIVE.search(body) else "wording"
 
 
+HERO = re.compile(r'\n*<svg\b[^>]*data-fig="hero".*?</svg>\n*', re.S)
+
+
+def strip_hero(text):
+    """lesson.md without its opening illustration (`<svg data-fig="hero">`, NOTES §3) when the illustration has no label:
+    such a picture carries no text or physics claim, so changing it is the category "illustration" alone."""
+    if not text: return text
+    return re.sub(r"\n{3,}", "\n\n", HERO.sub(lambda m: "\n\n" if not re.search(r"<(foreignObject|text)\b", m.group(0)) else m.group(0), text))
+
+
 def classify(path, diff_lines, lid):
     """Categories of one file's unified diff (its +/- lines)."""
     name = path.split("/")[-1]
@@ -341,6 +353,11 @@ def changes(folder, base):
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
+        if rel.endswith("/lesson.md") and (strip_hero(a), strip_hero(b)) != (a, b):   # a label-free opening illustration
+            a2, b2 = strip_hero(a), strip_hero(b)
+            if HERO.findall(a or "") != HERO.findall(b or ""): cats.add("illustration")
+            if a2 != b2: cats |= classify(rel, list(difflib.unified_diff((a2 or "").splitlines(), (b2 or "").splitlines(), lineterm="", n=2)), folder.name)
+            n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         moved = relocated(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
         if moved is not None:                          # the moved text is "relocated"; whatever else changed is classified as usual
             cats.add("relocated"); a2 = _view(moved, rel, False)

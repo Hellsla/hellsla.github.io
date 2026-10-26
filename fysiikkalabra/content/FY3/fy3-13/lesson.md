@@ -2,6 +2,85 @@
 
 > **Miksi** alin mahdollinen lämpötila voidaan määrittää koulun laboratoriossa, vaikka lämpömittari ei ulotu lähellekään sitä?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratoriopöydällä on kolme astiaa: jäävesi, huoneenlämpöinen vesi ja kuumalla levyllä kiehuva vesi. Keskimmäisessä hauteessa on suljettu lasipullo, joka on letkulla yhdistetty painemittariin." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy313h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#ffffff"/>
+  <line x1="0" y1="0" x2="0" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="80" y1="0" x2="80" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="160" y1="0" x2="160" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="240" y1="0" x2="240" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="320" y1="0" x2="320" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="400" y1="0" x2="400" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="480" y1="0" x2="480" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="560" y1="0" x2="560" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="640" y1="0" x2="640" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="720" y1="0" x2="720" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="800" y1="0" x2="800" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="880" y1="0" x2="880" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="0" x2="960" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1040" y1="0" x2="1040" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1120" y1="0" x2="1120" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1200" y1="0" x2="1200" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="80" x2="1200" y2="80" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="160" x2="1200" y2="160" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="240" x2="1200" y2="240" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="320" x2="1200" y2="320" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="0" y="420" width="1200" height="26" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="0" y="446" width="1200" height="154" fill="#e3dccb"/>
+  <path d="M80,250 V410 Q80,420 90,420 H270 Q280,420 280,410 V250" fill="#eef5f9" stroke-linejoin="round"/>
+  <path d="M83,290 H277 V410 Q277,417 270,417 H90 Q83,417 83,410 Z" fill="url(#fy313h-water)" stroke-linejoin="round"/>
+  <path d="M80,250 V410 Q80,420 90,420 H270 Q280,420 280,410 V250" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="110" y="300" width="36" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="160" y="296" width="36" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="210" y="304" width="36" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="140" y="330" width="36" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="190" y="336" width="36" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <path d="M450,220 V410 Q450,420 460,420 H740 Q750,420 750,410 V220" fill="#eef5f9" stroke-linejoin="round"/>
+  <path d="M453,260 H747 V410 Q747,417 740,417 H460 Q453,417 453,410 Z" fill="url(#fy313h-water)" stroke-linejoin="round"/>
+  <path d="M450,220 V410 Q450,420 460,420 H740 Q750,420 750,410 V220" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M600,250 V150" fill="none" stroke="#1f2933" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M600,250 V150" fill="none" stroke="#eef5f9" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="600" cy="320" r="70" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="600" cy="320" r="70" fill="none" stroke="#a9d1f0" stroke-width="2"/>
+  <path d="M600,150 Q600,96 680,96 H790" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="860" cy="120" r="76" fill="#ffffff" stroke="#1f2933" stroke-width="4"/>
+  <line x1="815.5" y1="157.5" x2="808" y2="163.5" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="803.5" y1="134" x2="794" y2="136.5" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="803.5" y1="108" x2="793.5" y2="106" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="814.5" y1="84.5" x2="806.5" y2="78" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="834.5" y1="68" x2="830" y2="59" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="860" y1="62" x2="860" y2="52" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="885.5" y1="68" x2="890" y2="59" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="905.5" y1="84.5" x2="913.5" y2="78" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="916.5" y1="108" x2="926.5" y2="106" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="916.5" y1="134" x2="926" y2="136.5" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="904.5" y1="157.5" x2="912" y2="163.5" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M860,120 L900,72" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="860" cy="120" r="8" fill="#1f2933"/>
+  <rect x="780" y="120" width="12" height="300" fill="#6c757d"/>
+  <rect x="740" y="408" width="92" height="12" rx="3" fill="#6c757d"/>
+  <rect x="930" y="400" width="220" height="20" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="1040" cy="400" rx="120" ry="10" fill="#c92a2a" fill-opacity="0.8"/>
+  <path d="M960,230 V380 Q960,392 972,392 H1108 Q1120,392 1120,380 V230" fill="#eef5f9" stroke-linejoin="round"/>
+  <path d="M963,270 H1117 V380 Q1117,389 1108,389 H972 Q963,389 963,380 Z" fill="url(#fy313h-water)" stroke-linejoin="round"/>
+  <circle cx="1002.5" cy="301" r="8.59979" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="1082.5" cy="299.5" r="5.42734" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="1045" cy="371.5" r="6.07636" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="979.5" cy="338.5" r="6.54663" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="989" cy="361" r="4.53706" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="1009.5" cy="324" r="6.95633" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="1101.5" cy="357" r="5.6087" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="1030.5" cy="295" r="6.65335" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="975.5" cy="365.5" r="5.99641" fill="#ffffff" stroke="#2f74b5" stroke-width="1.5"/>
+  <path d="M960,230 V380 Q960,392 972,392 H1108 Q1120,392 1120,380 V230" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M1000,224 c14,-24 -14,-40 0,-70" fill="none" stroke="#c9c2b2" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M1000,224 c14,-24 -14,-40 0,-70" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M1060,224 c14,-24 -14,-40 0,-70" fill="none" stroke="#c9c2b2" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M1060,224 c14,-24 -14,-40 0,-70" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
+
 ## Ydinajatus
 Suljetussa jäykässä astiassa kaasun tilavuus ja ainemäärä eivät muutu, joten paine riippuu vain lämpötilasta. Kaasulämpömittarissa lasipullo on vesihauteessa. Hauteen lämpötila $\theta$ luetaan lämpömittarista ja kaasun paine $p$ painemittarista, kun haude lämpenee.
 

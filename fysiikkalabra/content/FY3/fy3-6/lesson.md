@@ -2,6 +2,76 @@
 
 > **Miksi** uimarannan hiekka polttaa jalkapohjia jo aamupäivällä, kun vesi on vielä viileää, vaikka aurinko on paistanut molempiin yhtä kauan?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: järven uimaranta aamupäivällä. Aurinko paistaa sekä hiekkaan että veteen. Hiekan yllä väreilee kuumuus, ja hiekkaan pistetyn lämpömittarin punainen pylväs on korkealla. Rantaveteen pistetyn lämpömittarin pylväs on matalalla, koska vesi on vielä viileää." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy36h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy36h-lake" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="600"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy36h-sand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy36h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><pattern id="fy36h-grain" width="22" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.8" fill="#a97a35"/><circle cx="15" cy="11" r="1.4" fill="#a97a35"/><circle cx="12" cy="3" r="1" fill="#8a5f22"/></pattern></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy36h-sky)"/>
+  <circle cx="250" cy="118" r="96" fill="#ffffff" fill-opacity="0.5"/>
+  <path d="M319.5,144 L350.5,145 L323.5,130.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M297.5,175.5 L323.5,191.5 L307.5,165.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M262.5,191.5 L277,218.5 L276,187.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M224,187.5 L223,218.5 L237.5,191.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M192.5,165.5 L176.5,191.5 L202.5,175.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M176.5,130.5 L149.5,145 L180.5,144 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M180.5,92 L149.5,91 L176.5,105.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M202.5,60.5 L176.5,44.5 L192.5,70.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M237.5,44.5 L223,17.5 L224,48.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M276,48.5 L277,17.5 L262.5,44.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M307.5,70.5 L323.5,44.5 L297.5,60.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M323.5,105.5 L350.5,91 L319.5,92 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <circle cx="250" cy="118" r="60" fill="url(#fy36h-sun)"/>
+  <path d="M670,112 Q668,78 708,82 Q724,46 764,58 Q800,38 820,76 Q856,80 852,112 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M947,164 Q945.5,140 973.5,143 Q985,118 1013,126 Q1038,112 1052,139 Q1077,141.5 1074.5,164 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,292 L11,264.5 L22.5,292 L32.5,268 L42.5,292 L57,253.5 L72,292 L81.5,270.5 L90.5,292 L103,261.5 L115,292 L124.5,270 L134,292 L143,271 L152.5,292 L169,247 L185.5,292 L198.5,258.5 L211.5,292 L228.5,246 L245,292 L260,253.5 L274.5,292 L289.5,251 L305,292 L321,249 L337,292 L349.5,260.5 L362,292 L372.5,266 L383.5,292 L400,247 L416.5,292 L431,254 L445.5,292 L455,270 L464.5,292 L477,259 L490,292 L500,267.5 L510.5,292 L521.5,265.5 L532.5,292 L547,253 L562,292 L575,259 L587.5,292 L598,267.5 L608,292 L622.5,255 L636.5,292 L646,269 L656,292 L668,263 L679.5,292 L693.5,255.5 L707.5,292 L724,246.5 L741,292 L750.5,269.5 L760,292 L775,252.5 L790,292 L804,254.5 L818.5,292 L828,269.5 L837.5,292 L851,257 L864.5,292 L875.5,266 L886,292 L901.5,251 L917,292 L931.5,253 L946.5,292 L956.5,269 L966,292 L978.5,260 L991,292 L1002.5,264 L1014,292 L1030,248.5 L1046.5,292 L1062.5,247.5 L1079,292 L1091,262.5 L1102.5,292 L1118.5,249.5 L1134,292 L1147.5,258 L1160.5,292 L1172,263.5 L1183.5,292 L1194,267.5 L1204,292 V322 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
+  <path d="M0,306 L7.5,289.5 L14.5,306 L25,281 L35,306 L47,274.5 L59.5,306 L66.5,290 L73.5,306 L81,290 L88,306 L96.5,286 L105,306 L114,285 L122.5,306 L132.5,282 L142.5,306 L149.5,290.5 L156.5,306 L167,280.5 L177,306 L190,272 L203,306 L214.5,276.5 L226,306 L238.5,273.5 L251,306 L261,282 L271,306 L278.5,289 L286,306 L293,290.5 L300,306 L312.5,273 L325.5,306 L333,288.5 L340.5,306 L348,290 L355,306 L366.5,277.5 L377.5,306 L385,290.5 L392,306 L401.5,282.5 L411,306 L418.5,290 L425.5,306 L438,274 L450.5,306 L462,277 L473.5,306 L483.5,281.5 L493.5,306 L506,272.5 L519,306 L528,285.5 L536.5,306 L545,286 L553.5,306 L561.5,288.5 L569,306 L578,284 L587,306 L596,284.5 L605,306 L616.5,276.5 L628,306 L635.5,289.5 L643,306 L654.5,276 L666.5,306 L676,282 L686,306 L697.5,276 L709.5,306 L720.5,278 L731.5,306 L744.5,272.5 L757.5,306 L765,288.5 L773,306 L785,274 L797.5,306 L809.5,276 L821,306 L834,272 L847,306 L858,277.5 L869.5,306 L881,276 L893,306 L903.5,279.5 L914,306 L923.5,283 L933,306 L945.5,272.5 L958.5,306 L969.5,278 L980.5,306 L988,289.5 L995.5,306 L1003,288.5 L1010.5,306 L1019.5,284.5 L1028.5,306 L1036.5,287.5 L1044.5,306 L1055.5,278 L1066.5,306 L1077,280 L1088,306 L1095.5,288.5 L1103,306 L1113.5,280 L1124,306 L1133.5,282.5 L1143,306 L1151.5,287 L1159.5,306 L1169,284 L1178,306 L1189,277.5 L1200.5,306 V336 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
+  <rect x="0" y="300" width="1200" height="300" fill="url(#fy36h-lake)"/>
+  <path d="M640,340 q22.5,-6 45,0 t45,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M860,330 q30,-6 60,0 t60,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M1040,362 q20,-6 40,0 t40,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M760,392 q35,-6 70,0 t70,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M980,428 q27.5,-6 55,0 t55,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M900,500 q37.5,-6 75,0 t75,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M1080,540 q22.5,-6 45,0 t45,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
+  <path d="M0,330 C260,336 470,402 610,470 C700,514 760,560 790,600 H0 Z" fill="#d9b26a" stroke-linejoin="round"/>
+  <path d="M0,340 C250,348 450,410 585,474 C670,516 726,562 752,600 H0 Z" fill="url(#fy36h-sand)" stroke-linejoin="round"/>
+  <path d="M0,340 C250,348 450,410 585,474 C670,516 726,562 752,600 H0 Z" fill="url(#fy36h-grain)" stroke-linejoin="round" fill-opacity="0.55"/>
+  <path d="M0,330 C260,336 470,402 610,470 C700,514 760,560 790,600" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <ellipse cx="318" cy="590" rx="13" ry="7" transform="rotate(-22 318 590)" fill="#a97a35" fill-opacity="0.45"/>
+  <ellipse cx="392" cy="560" rx="13" ry="7" transform="rotate(-22 392 560)" fill="#a97a35" fill-opacity="0.45"/>
+  <ellipse cx="420" cy="532" rx="13" ry="7" transform="rotate(-22 420 532)" fill="#a97a35" fill-opacity="0.45"/>
+  <ellipse cx="496" cy="506" rx="13" ry="7" transform="rotate(-22 496 506)" fill="#a97a35" fill-opacity="0.45"/>
+  <ellipse cx="524" cy="484" rx="13" ry="7" transform="rotate(-22 524 484)" fill="#a97a35" fill-opacity="0.45"/>
+  <path d="M40,486 L220,470 L262,540 L70,562 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M46,501 L228.5,484 L233.5,492.5 L49.5,510.5 Z" fill="#d0e6fb" stroke-linejoin="round"/>
+  <path d="M53.5,520 L239,501.5 L244,510 L57,529.5 Z" fill="#d0e6fb" stroke-linejoin="round"/>
+  <path d="M61,539 L249.5,519 L254.5,527.5 L64.5,548.5 Z" fill="#d0e6fb" stroke-linejoin="round"/>
+  <path d="M40,486 L220,470 L262,540 L70,562 Z" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M230,446 q-12,-16 0,-32 t0,-32 t0,-32" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M300,446 q-12,-16 0,-32 t0,-32 t0,-32" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M370,446 q-12,-16 0,-32 t0,-32 t0,-32" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <rect x="441" y="350" width="18" height="150" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="450" cy="500" r="16" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
+  <rect x="446" y="372" width="8" height="128" fill="#c92a2a"/>
+  <line x1="459" y1="480" x2="467" y2="480" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="459" y1="460" x2="467" y2="460" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="459" y1="440" x2="467" y2="440" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="459" y1="420" x2="467" y2="420" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="459" y1="400" x2="467" y2="400" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="459" y1="380" x2="467" y2="380" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="450" cy="504" rx="40" ry="12" fill="#d9b26a"/>
+  <ellipse cx="450" cy="500" rx="30" ry="8" fill="url(#fy36h-grain)"/>
+  <rect x="871" y="370" width="18" height="150" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="880" cy="520" r="16" fill="#f2a69c" stroke="#1f2933" stroke-width="3"/>
+  <rect x="876" y="454" width="8" height="66" fill="#f2a69c"/>
+  <line x1="889" y1="500" x2="897" y2="500" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="889" y1="480" x2="897" y2="480" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="889" y1="460" x2="897" y2="460" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="889" y1="440" x2="897" y2="440" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="889" y1="420" x2="897" y2="420" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="889" y1="400" x2="897" y2="400" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="840" y="482" width="80" height="118" fill="url(#fy36h-lake)" fill-opacity="0.8"/>
+  <ellipse cx="880" cy="482" rx="30" ry="6" fill="none" stroke="#ffffff" stroke-width="3"/>
+</svg>
+
 ## Ydinajatus
 Kun kappaleeseen siirtyy lämpöä, sen sisäenergia kasvaa ja lämpötila nousee. Kokeissa havaitaan, että tarvittava lämpömäärä on suoraan verrannollinen sekä lämpötilan muutokseen että kappaleen massaan: kaksi kertaa suurempi lämpötilan nousu vaatii kaksinkertaisen lämpömäärän, ja kaksinkertainen vesimäärä vaatii kaksinkertaisen lämpömäärän. Lisäksi lämpömäärä riippuu aineesta. Kilogramman veden lämmittäminen yhdellä asteella vaatii noin 4,2 kJ, mutta kilogramman raudan lämmittäminen vain noin 0,45 kJ. Aineelle ominainen kerroin on ominaislämpökapasiteetti $c$, jonka yksikkö on J/(kg·K). Se kertoo, kuinka paljon energiaa tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä, ja sama määrä vapautuu, kun aine jäähtyy yhden kelvinin.
 

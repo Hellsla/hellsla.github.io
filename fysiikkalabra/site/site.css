@@ -57,6 +57,7 @@ li{margin:.4rem 0}
 .fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
 .fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
+article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;background:#f6f1e6}   /* the chapter's opening illustration under the Miksi question (figlib Fig hero) */
 
 /* front page and module pages */
 .hero{padding:1.6rem 0 .6rem}

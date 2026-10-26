@@ -2,6 +2,46 @@
 
 > **Miksi** jääpalat viilentävät juomaa niin tehokkaasti, vaikka jää itse on vain nollan asteen lämpöistä, ja miksi lasin pohjalle voi jäädä jäätä, vaikka juoma oli huoneenlämpöistä?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pöydällä on korkea lasi kylmää juomaa, jossa kelluu jääpaloja ja pilli. Lasin ulkopinnalle on tiivistynyt vesipisaroita, ja lasin vieressä on jääpalarasia." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy314h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f1e6"/></linearGradient><linearGradient id="fy314h-drink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#a9d1f0"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="0" width="1200" height="380" fill="url(#fy314h-wall)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="#c9c2b2"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M500,110 L520,460 Q522,474 536,474 H664 Q678,474 680,460 L700,110 Z" fill="#eef5f9" stroke-linejoin="round"/>
+  <path d="M506,190 L521,458 Q523,470 536,470 H664 Q677,470 679,458 L694,190 Z" fill="url(#fy314h-drink)" stroke-linejoin="round"/>
+  <path d="M640,60 L600,440" fill="none" stroke="#1971c2" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="540" y="170" width="52" height="46" rx="8" transform="rotate(-12 566 193)" fill="#a5d8ff" fill-opacity="0.9" stroke="#4f8fbf" stroke-width="2.5"/>
+  <rect x="600" y="184" width="52" height="46" rx="8" transform="rotate(10 626 207)" fill="#a5d8ff" fill-opacity="0.9" stroke="#4f8fbf" stroke-width="2.5"/>
+  <rect x="560" y="240" width="52" height="46" rx="8" transform="rotate(24 586 263)" fill="#a5d8ff" fill-opacity="0.9" stroke="#4f8fbf" stroke-width="2.5"/>
+  <rect x="628" y="250" width="52" height="46" rx="8" transform="rotate(-8 654 273)" fill="#a5d8ff" fill-opacity="0.9" stroke="#4f8fbf" stroke-width="2.5"/>
+  <path d="M506,190 Q560,182 600,190 T694,190" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.8"/>
+  <path d="M500,110 L520,460 Q522,474 536,474 H664 Q678,474 680,460 L700,110" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="522" cy="290.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="539.5" cy="443.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="531.5" cy="258.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="654.5" cy="265.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="547" cy="214" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="545" cy="226.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="631.5" cy="350.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="676" cy="419.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="630" cy="343" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="683.5" cy="228.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="665.5" cy="357" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="605" cy="266" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="674" cy="328.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="604.5" cy="240" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="568.5" cy="261.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <ellipse cx="632.5" cy="366" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
+  <rect x="800" y="430" width="260" height="40" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="816" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="872" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="928" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="984" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <path d="M430,200 c-14,30 14,60 0,90 s14,60 0,90" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M760,200 c-14,30 14,60 0,90 s14,60 0,90" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
+
 ## Ydinajatus
 Kun eristettyyn astiaan laitetaan lämmintä vettä ja jäätä, lämpöä siirtyy vedestä jäähän, kunnes lämpötilat ovat samat ja astiassa on lämpötasapaino. Energia säilyy, joten veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jään vastaanottama energia ei kuitenkaan vain nosta lämpötilaa: jää lämpenee ensin 0 °C:seen ja sulaa sitten. Sulamisen aikana lämpötila pysyy vakiona, mutta jokainen kilogramma jäätä ottaa energiaa 334 kJ, ja sama energia nostaisi kilogramman vettä lähes 80 K.
 

@@ -2,6 +2,87 @@
 
 > **Miksi** kiehuvan veden lämpötila ei nouse yli 100 °C:n, vaikka liesi on täysillä ja kattilaan siirtyy koko ajan energiaa?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keittiön liedellä kattila, jossa vesi kiehuu voimakkaasti. Levy hehkuu punaisena ja siitä siirtyy jatkuvasti energiaa kattilaan, vedessä on kuplia ja siitä nousee höyryä. Veteen upotetun lämpömittarin pylväs pysyy samalla korkeudella." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy37h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy37h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy37h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#c92a2a"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy37h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#ffffff"/>
+  <line x1="0" y1="0" x2="0" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="75" y1="0" x2="75" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="0" x2="150" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="225" y1="0" x2="225" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="300" y1="0" x2="300" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="375" y1="0" x2="375" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="450" y1="0" x2="450" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="525" y1="0" x2="525" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="600" y1="0" x2="600" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="675" y1="0" x2="675" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="750" y1="0" x2="750" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="825" y1="0" x2="825" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="0" x2="900" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="975" y1="0" x2="975" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1050" y1="0" x2="1050" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1125" y1="0" x2="1125" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1200" y1="0" x2="1200" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="75" x2="1200" y2="75" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="150" x2="1200" y2="150" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="225" x2="1200" y2="225" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="375" x2="1200" y2="375" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="70" y="50" width="230" height="270" rx="4" fill="url(#fy37h-sky)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M70,282 Q140,250 200,272 T300,262 V320 H70 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <line x1="185" y1="50" x2="185" y2="320" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="70" y1="185" x2="300" y2="185" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="58" y="320" width="254" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="0" y="420" width="1200" height="26" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="0" y="446" width="1200" height="154" fill="#e3dccb"/>
+  <line x1="300" y1="446" x2="300" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="446" x2="900" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="266" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="326" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="866" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="926" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="340" y="404" width="520" height="22" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="340" y="446" width="520" height="154" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="370" y="476" width="460" height="110" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="400" cy="461" r="9" fill="#1f2933"/>
+  <circle cx="460" cy="461" r="9" fill="#1f2933"/>
+  <circle cx="740" cy="461" r="9" fill="#1f2933"/>
+  <circle cx="800" cy="461" r="9" fill="#1f2933"/>
+  <ellipse cx="600" cy="404" rx="210" ry="18" fill="url(#fy37h-glow)"/>
+  <path d="M440,236 V380 Q440,404 470,404 H730 Q760,404 760,380 V236 Z" fill="url(#fy37h-steel)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M440,262 H398 Q392,262 392,272 V276 Q392,284 398,284 H440 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M760,262 H802 Q808,262 808,272 V276 Q808,284 802,284 H760 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <ellipse cx="600" cy="236" rx="160" ry="30" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="600" cy="242" rx="146" ry="22" fill="url(#fy37h-water)"/>
+  <circle cx="520" cy="240" r="9" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="556" cy="248" r="6" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="600" cy="236" r="11" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="640" cy="250" r="7" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="680" cy="240" r="9" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="575" cy="254" r="5" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="712" cy="248" r="5" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <circle cx="494" cy="248" r="5" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
+  <path d="M520,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-24" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M520,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-24" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M585,214 c-18,-30 18,-50 0,-80 s18,-50 0,-84" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M585,214 c-18,-30 18,-50 0,-80 s18,-50 0,-84" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M650,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-54" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M650,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-54" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M700,214 c-18,-30 18,-50 0,-80 s18,-50 0,6" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M700,214 c-18,-30 18,-50 0,-80 s18,-50 0,6" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+  <g transform="rotate(18 760 150)">
+  <rect x="751" y="40" width="18" height="230" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="756" y="176" width="8" height="94" fill="#c92a2a"/>
+  <line x1="769" y1="70" x2="777" y2="70" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="769" y1="92" x2="777" y2="92" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="769" y1="114" x2="777" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="769" y1="136" x2="777" y2="136" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="769" y1="158" x2="777" y2="158" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="769" y1="180" x2="777" y2="180" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  </g>
+  <ellipse cx="600" cy="242" rx="146" ry="22" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.6"/>
+</svg>
+
 ## Ydinajatus
 Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromallin mukaan kiinteässä aineessa hiukkaset värähtelevät paikoillaan toistensa sitomina, nesteessä ne liikkuvat toistensa ohi mutta pysyvät yhdessä, ja kaasussa ne liikkuvat vapaasti ja törmäilevät vain harvoin. Olomuodon muutoksessa hiukkasten keskinäinen sidos muuttuu: sulamisessa kiinteän aineen järjestys purkautuu, ja höyrystymisessä hiukkaset irtoavat kokonaan toisistaan. Vastakkaiset muutokset ovat jähmettyminen ja tiivistyminen. Jää voi myös sublimoitua suoraan höyryksi, kuten pakkasella kuivuvassa pyykissä.
 

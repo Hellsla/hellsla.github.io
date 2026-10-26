@@ -2,6 +2,115 @@
 
 > **Miksi** astronautti painaa Kuussa vain kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: astronautti loikkaa Kuun harmaalla pinnalla, ja hänen jalanjälkensä näkyvät pölyssä. Mustalla taivaalla näkyy Maa, jossa on meriä, mantereita ja pilviä." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy31h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy31h-clip"><circle cx="930" cy="150" r="80"/></clipPath><linearGradient id="fy31h-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy31h-visor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#1f2933"/>
+  <circle cx="323.5" cy="120.5" r="1.51288" fill="#ffffff"/>
+  <circle cx="504" cy="426.5" r="2.06789" fill="#ffffff"/>
+  <circle cx="356" cy="235.5" r="1.76042" fill="#ffffff"/>
+  <circle cx="1084" cy="279" r="1.77302" fill="#ffffff"/>
+  <circle cx="741.5" cy="404.5" r="2.20626" fill="#ffffff"/>
+  <circle cx="1088" cy="547.5" r="1.12413" fill="#ffffff"/>
+  <circle cx="825.5" cy="427.5" r="2.28271" fill="#ffffff"/>
+  <circle cx="145" cy="365.5" r="1.7466" fill="#ffffff"/>
+  <circle cx="1013.5" cy="38.5" r="2.11322" fill="#ffffff"/>
+  <circle cx="70.5" cy="381.5" r="1.67993" fill="#ffffff"/>
+  <circle cx="343.5" cy="234" r="1.73172" fill="#ffffff"/>
+  <circle cx="889.5" cy="30" r="1.72684" fill="#ffffff"/>
+  <circle cx="758.5" cy="580" r="2.18214" fill="#ffffff"/>
+  <circle cx="160" cy="436.5" r="2.22626" fill="#ffffff"/>
+  <circle cx="76" cy="134" r="2.07445" fill="#ffffff"/>
+  <circle cx="249.5" cy="465.5" r="2.14889" fill="#ffffff"/>
+  <circle cx="588.5" cy="418" r="1.45685" fill="#ffffff"/>
+  <circle cx="529" cy="198.5" r="1.22252" fill="#ffffff"/>
+  <circle cx="190.5" cy="361" r="1.41008" fill="#ffffff"/>
+  <circle cx="31.5" cy="426.5" r="2.28333" fill="#ffffff"/>
+  <circle cx="163.5" cy="103.5" r="1.30073" fill="#ffffff"/>
+  <circle cx="746" cy="240.5" r="2.21228" fill="#ffffff"/>
+  <circle cx="947" cy="320.5" r="1.62506" fill="#ffffff"/>
+  <circle cx="232" cy="354" r="2.34062" fill="#ffffff"/>
+  <circle cx="210" cy="462" r="1.90356" fill="#ffffff"/>
+  <circle cx="117" cy="146.5" r="1.43952" fill="#ffffff"/>
+  <circle cx="1191" cy="216.5" r="1.83837" fill="#ffffff"/>
+  <circle cx="86.5" cy="257" r="1.53862" fill="#ffffff"/>
+  <circle cx="962.5" cy="215.5" r="1.0909" fill="#ffffff"/>
+  <circle cx="464" cy="79" r="1.10737" fill="#ffffff"/>
+  <circle cx="903.5" cy="336" r="1.73348" fill="#ffffff"/>
+  <circle cx="1006" cy="364" r="2.23135" fill="#ffffff"/>
+  <circle cx="597.5" cy="426.5" r="1.37096" fill="#ffffff"/>
+  <circle cx="185" cy="319" r="1.42589" fill="#ffffff"/>
+  <circle cx="466" cy="470.5" r="1.2861" fill="#ffffff"/>
+  <circle cx="831.5" cy="194.5" r="2.29602" fill="#ffffff"/>
+  <circle cx="1118" cy="347.5" r="1.1739" fill="#ffffff"/>
+  <circle cx="165.5" cy="351.5" r="2.33281" fill="#ffffff"/>
+  <circle cx="807" cy="475" r="1.5698" fill="#ffffff"/>
+  <circle cx="432" cy="101" r="2.09526" fill="#ffffff"/>
+  <circle cx="442.5" cy="490" r="1.95707" fill="#ffffff"/>
+  <circle cx="802" cy="23" r="1.24553" fill="#ffffff"/>
+  <circle cx="97.5" cy="449.5" r="1.94912" fill="#ffffff"/>
+  <circle cx="65" cy="525.5" r="1.02983" fill="#ffffff"/>
+  <circle cx="284.5" cy="503" r="1.95399" fill="#ffffff"/>
+  <circle cx="494" cy="480" r="2.22045" fill="#ffffff"/>
+  <circle cx="361.5" cy="55" r="1.5288" fill="#ffffff"/>
+  <circle cx="442.5" cy="142.5" r="1.05843" fill="#ffffff"/>
+  <circle cx="478" cy="464.5" r="1.36928" fill="#ffffff"/>
+  <circle cx="732.5" cy="576" r="1.7045" fill="#ffffff"/>
+  <circle cx="370" cy="437.5" r="2.13596" fill="#ffffff"/>
+  <circle cx="619.5" cy="540.5" r="1.45222" fill="#ffffff"/>
+  <circle cx="723" cy="178.5" r="2.10094" fill="#ffffff"/>
+  <circle cx="709.5" cy="415" r="1.25163" fill="#ffffff"/>
+  <circle cx="1033.5" cy="237" r="1.67812" fill="#ffffff"/>
+  <circle cx="856.5" cy="32.5" r="1.15552" fill="#ffffff"/>
+  <circle cx="137" cy="147" r="1.34787" fill="#ffffff"/>
+  <circle cx="742.5" cy="98.5" r="2.25963" fill="#ffffff"/>
+  <circle cx="636" cy="183" r="1.83498" fill="#ffffff"/>
+  <circle cx="1198" cy="275" r="2.09757" fill="#ffffff"/>
+  <circle cx="433.5" cy="88.5" r="1.02023" fill="#ffffff"/>
+  <circle cx="63" cy="314.5" r="2.13545" fill="#ffffff"/>
+  <circle cx="1073.5" cy="316.5" r="2.02877" fill="#ffffff"/>
+  <circle cx="1148.5" cy="472" r="2.29456" fill="#ffffff"/>
+  <circle cx="1021" cy="61.5" r="1.08228" fill="#ffffff"/>
+  <circle cx="952" cy="162.5" r="1.59196" fill="#ffffff"/>
+  <circle cx="409.5" cy="101" r="1.16653" fill="#ffffff"/>
+  <circle cx="1008" cy="571.5" r="2.37238" fill="#ffffff"/>
+  <circle cx="926.5" cy="425.5" r="2.22387" fill="#ffffff"/>
+  <circle cx="980" cy="98" r="2.14549" fill="#ffffff"/>
+  <circle cx="930" cy="150" r="85.5" fill="#a5d8ff" fill-opacity="0.35"/>
+  <circle cx="930" cy="150" r="80" fill="url(#fy31h-ocean)"/>
+  <g clip-path="url(#fy31h-clip)">
+  <path d="M874,102 Q906,78 934,100.5 Q946,126 922,142 Q926,174 906,198 Q890,166 882,146 Q858,126 874,102 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M954,158 Q986,146 998,174 Q986,206 962,198 Q946,182 954,158 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M898,86 q28,-6.5 56,0" fill="none" stroke="#ffffff" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M962,118 q24,-6.5 48,0" fill="none" stroke="#ffffff" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M866,174 q20,-6.5 40,0" fill="none" stroke="#ffffff" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M938,214 q32,-6.5 64,0" fill="none" stroke="#ffffff" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M978,206 q16,-6.5 32,0" fill="none" stroke="#ffffff" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  </g>
+  <path d="M0,420 Q600,360 1200,430 V600 H0 Z" fill="url(#fy31h-ground)" stroke-linejoin="round"/>
+  <ellipse cx="180" cy="500" rx="70" ry="19.6" fill="#8a96a3" stroke="#c4ccd4" stroke-width="3"/>
+  <ellipse cx="820" cy="470" rx="50" ry="14" fill="#8a96a3" stroke="#c4ccd4" stroke-width="3"/>
+  <ellipse cx="1040" cy="540" rx="90" ry="25.2" fill="#8a96a3" stroke="#c4ccd4" stroke-width="3"/>
+  <ellipse cx="520" cy="560" rx="40" ry="11.2" fill="#8a96a3" stroke="#c4ccd4" stroke-width="3"/>
+  <ellipse cx="250" cy="440" rx="13" ry="6" fill="#6c757d" fill-opacity="0.6"/>
+  <ellipse cx="294" cy="452" rx="13" ry="6" fill="#6c757d" fill-opacity="0.6"/>
+  <ellipse cx="338" cy="432" rx="13" ry="6" fill="#6c757d" fill-opacity="0.6"/>
+  <ellipse cx="382" cy="444" rx="13" ry="6" fill="#6c757d" fill-opacity="0.6"/>
+  <ellipse cx="426" cy="424" rx="13" ry="6" fill="#6c757d" fill-opacity="0.6"/>
+  <ellipse cx="600" cy="440" rx="70" ry="12" fill="#6c757d" fill-opacity="0.6"/>
+  <rect x="530" y="170" width="44" height="110" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <path d="M560,290 L530,370 L560,384 L590,310 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M610,300 L660,350 L644,372 L594,330 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="548" y="160" width="104" height="140" rx="30" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M646,190 L700,150" fill="none" stroke="#1f2933" stroke-width="27" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M646,190 L700,150" fill="none" stroke="#ffffff" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M554,200 L508,250" fill="none" stroke="#1f2933" stroke-width="27" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M554,200 L508,250" fill="none" stroke="#ffffff" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="578" y="200" width="44" height="30" rx="4" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="600" cy="124" r="50" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="566" y="98" width="68" height="46" rx="20" fill="url(#fy31h-visor)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M578,108 q14,-6 26,0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
+
 ## Ydinajatus
 Kun kaksi kappaletta vaikuttaa toisiinsa, ne ovat vuorovaikutuksessa. Esimerkiksi Maa vetää omenaa puoleensa. Voima kertoo, kuinka voimakas vuorovaikutus on: mitä suurempi voima, sitä voimakkaampi vuorovaikutus. Voiman yksikkö on newton (N), ja noin 1 N on sadan gramman omenan paino Maassa. Tässä vaiheessa kiinnostaa vain voiman suuruus, ja kuvissa nuoli näyttää, mihin suuntaan voima osoittaa.
 

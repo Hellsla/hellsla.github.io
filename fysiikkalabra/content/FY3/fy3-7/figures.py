@@ -77,4 +77,58 @@ def phase_diagram():
     return f.svg()
 
 
-FIGURES = {"micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram}
+def hero():
+    """The chapter's opening illustration: water boiling hard on a hot plate, the thermometer stuck at the boiling point."""
+    from figlib import WHITE, INK, RULE, RULE_LIGHT, IRON, ALUMINIUM, METAL_EDGE, n
+    f = Fig("fy37-hero", 600, "Kuvitus: keittiön liedellä kattila, jossa vesi kiehuu voimakkaasti. Levy hehkuu punaisena ja "
+            "siitä siirtyy jatkuvasti energiaa kattilaan, vedessä on kuplia ja siitä nousee höyryä. Veteen upotetun "
+            "lämpömittarin pylväs pysyy samalla korkeudella.", width=1200, hero=True)
+    f.defs_add(f'<linearGradient id="fy37h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{METAL_EDGE}"/>'
+               f'<stop offset="0.3" stop-color="{WHITE}"/><stop offset="0.65" stop-color="{ALUMINIUM}"/><stop offset="1" stop-color="{METAL_EDGE}"/></linearGradient>')
+    f.defs_add(f'<linearGradient id="fy37h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></linearGradient>')
+    f.defs_add(f'<radialGradient id="fy37h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="{HOT}"/><stop offset="0.8" stop-color="{HEAT}"/>'
+               f'<stop offset="1" stop-color="{HEAT_LIGHT}" stop-opacity="0"/></radialGradient>')
+    f.defs_add(f'<linearGradient id="fy37h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{ICE}"/><stop offset="1" stop-color="{COLD_LIGHT}"/></linearGradient>')
+    # tiled wall and a window with a winter sky
+    f.rect(0, 0, 1200, 600, WHITE)
+    for x in range(0, 1201, 75): f.line(x, 0, x, 420, RULE_LIGHT, 2)
+    for y in range(0, 421, 75): f.line(0, y, 1200, y, RULE_LIGHT, 2)
+    f.rect(70, 50, 230, 270, "url(#fy37h-sky)", INK, 3, 4)
+    f.path("M70,282 Q140,250 200,272 T300,262 V320 H70 Z", WHITE)
+    f.line(185, 50, 185, 320, INK, 3); f.line(70, 185, 300, 185, INK, 3)
+    f.rect(58, 320, 254, 14, RULE, INK, 3, 3)
+    # worktop and cupboards
+    f.rect(0, 420, 1200, 26, RULE, INK, 3)
+    f.rect(0, 446, 1200, 154, RULE_LIGHT)
+    for x in (300, 900): f.line(x, 446, x, 600, INK, 2)
+    for x in (270, 330, 870, 930): f.rect(x - 4, 470, 8, 44, METAL_EDGE, rx=4)
+    # stove: hob and front with knobs
+    f.rect(340, 404, 520, 22, IRON, INK, 3, 4)
+    f.rect(340, 446, 520, 154, ALUMINIUM, INK, 3)
+    f.rect(370, 476, 460, 110, GLASS, INK, 2.5, 6)
+    for x in (400, 460, 740, 800): f.circle(x, 461, 9, INK)
+    f.add('<ellipse cx="600" cy="404" rx="210" ry="18" fill="url(#fy37h-glow)"/>')     # the hot plate glows around the pot
+    # the pot: steel body, handles, the boiling water seen over the rim
+    f.path("M440,236 V380 Q440,404 470,404 H730 Q760,404 760,380 V236 Z", "url(#fy37h-steel)", INK, 3)
+    for x0, x1 in ((440, 398), (760, 802)):
+        f.path(f"M{x0},262 H{x1} Q{x1 + (6 if x1 > x0 else -6)},262 {x1 + (6 if x1 > x0 else -6)},272 V276 Q{x1 + (6 if x1 > x0 else -6)},284 {x1},284 H{x0} Z", INK)
+    f.add(f'<ellipse cx="600" cy="236" rx="160" ry="30" fill="{ALUMINIUM}" stroke="{INK}" stroke-width="3"/>')
+    f.add(f'<ellipse cx="600" cy="242" rx="146" ry="22" fill="url(#fy37h-water)"/>')
+    for x, y, r in ((520, 240, 9), (556, 248, 6), (600, 236, 11), (640, 250, 7), (680, 240, 9), (575, 254, 5), (712, 248, 5), (494, 248, 5)):
+        f.circle(x, y, r, WHITE, WATER, 2)
+    # steam rising from the pot in soft wisps
+    for x, top, sway in ((520, 110, 1), (585, 50, -1), (650, 80, 1), (700, 140, -1)):
+        d = f"M{x},214 c{18 * sway},-30 {-18 * sway},-50 0,-80 s{-18 * sway},-50 0,{n(-(134 - top) - 0)}"
+        f.path(d, stroke=RULE, w=26, extra='stroke-linecap="round" stroke-opacity="0.55"')
+        f.path(d, stroke=WHITE, w=20, extra='stroke-linecap="round"')
+    # thermometer leaning in the pot, its column steady
+    f.add('<g transform="rotate(18 760 150)">')
+    f.rect(751, 40, 18, 230, WHITE, INK, 3, 9)
+    f.rect(756, 176, 8, 94, HOT)
+    for k in range(6): f.line(769, 70 + 22 * k, 777, 70 + 22 * k, MUTED, 2)
+    f.add('</g>')
+    f.add(f'<ellipse cx="600" cy="242" rx="146" ry="22" fill="none" stroke="{WHITE}" stroke-width="2" stroke-opacity="0.6"/>')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram}

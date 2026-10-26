@@ -1,5 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-1` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, HEAT, HEAT_LIGHT, ALUMINIUM, METAL_EDGE, IRON, WATER, COPPER, GRAIN, fi
+import herolib as H
 
 
 def forcemeter():
@@ -76,4 +77,35 @@ def weight_mass():
     return f.svg()
 
 
-FIGURES = {"forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass}
+def hero():
+    """The chapter's opening illustration: an astronaut hopping on the Moon, the Earth in the black sky."""
+    f = H.hero("fy31-hero", "Kuvitus: astronautti loikkaa Kuun harmaalla pinnalla, ja hänen jalanjälkensä näkyvät pölyssä. "
+               "Mustalla taivaalla näkyy Maa, jossa on meriä, mantereita ja pilviä.")
+    H.space(f, seed=3)
+    H.earth(f, "fy31h", 930, 150, 80)
+    ground = H.grad(f, "fy31h-ground", H.ALUMINIUM, H.METAL_EDGE)
+    f.path("M0,420 Q600,360 1200,430 V600 H0 Z", ground)
+    for cx, cy, rx in ((180, 500, 70), (820, 470, 50), (1040, 540, 90), (520, 560, 40)):
+        f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{rx * 0.28:g}" fill="{H.METAL_EDGE}" stroke="{H.ALUMINIUM}" stroke-width="3"/>')
+    for k, x in enumerate(range(250, 470, 44)):
+        f.add(f'<ellipse cx="{x}" cy="{440 + (k % 2) * 16 - k * 4}" rx="13" ry="6" fill="{H.IRON}" fill-opacity="0.6"/>')
+    f.add(f'<ellipse cx="600" cy="440" rx="70" ry="12" fill="{H.IRON}" fill-opacity="0.6"/>')   # the shadow under the hop
+    # astronaut in mid-hop: backpack, suit, helmet with visor
+    x, y = 600, 360
+    f.rect(x - 70, y - 190, 44, 110, H.ALUMINIUM, H.INK, 3, 10)
+    f.path(f"M{x - 40},{y - 70} L{x - 70},{y + 10} L{x - 40},{y + 24} L{x - 10},{y - 50} Z", H.WHITE, H.INK, 3)
+    f.path(f"M{x + 10},{y - 60} L{x + 60},{y - 10} L{x + 44},{y + 12} L{x - 6},{y - 30} Z", H.WHITE, H.INK, 3)
+    f.rect(x - 52, y - 200, 104, 140, H.WHITE, H.INK, 3, 30)
+    f.path(f"M{x + 46},{y - 170} L{x + 100},{y - 210}", stroke=H.INK, w=27, extra='stroke-linecap="round"')
+    f.path(f"M{x + 46},{y - 170} L{x + 100},{y - 210}", stroke=H.WHITE, w=21, extra='stroke-linecap="round"')
+    f.path(f"M{x - 46},{y - 160} L{x - 92},{y - 110}", stroke=H.INK, w=27, extra='stroke-linecap="round"')
+    f.path(f"M{x - 46},{y - 160} L{x - 92},{y - 110}", stroke=H.WHITE, w=21, extra='stroke-linecap="round"')
+    f.rect(x - 22, y - 160, 44, 30, H.COLD_LIGHT, H.INK, 2, 4)
+    f.circle(x, y - 236, 50, H.WHITE, H.INK, 3)
+    visor = H.grad(f, "fy31h-visor", H.HEAT_LIGHT, H.IRON)
+    f.rect(x - 34, y - 262, 68, 46, visor, H.INK, 3, 20)
+    f.path(f"M{x - 22},{y - 252} q14,-6 26,0", stroke=H.WHITE, w=4, extra='stroke-linecap="round"')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass}

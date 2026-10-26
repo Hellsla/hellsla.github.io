@@ -1,6 +1,7 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-10` writes them into lesson.md."""
 import math, random
 from figlib import Fig, INK, MUTED, WHITE, RULE, ALUMINIUM, IRON, COPPER, COLD, COLD_LIGHT, HEAT, fi
+import herolib as H
 
 HE, AIR, CO2 = COLD, IRON, COPPER           # one colour per gas, the same in every figure of the lesson
 
@@ -115,4 +116,29 @@ def mole_masses():
     return f.svg()
 
 
-FIGURES = {"mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors}
+def hero():
+    """The chapter's opening illustration: a helium balloon against the ceiling, an air balloon of the same size on the floor."""
+    f = H.hero("fy310-hero", "Kuvitus: huoneessa kaksi samankokoista ilmapalloa. Heliumpallo on noussut kattoon ja sen naru "
+               "roikkuu alas, tavallinen ilmalla täytetty pallo lepää lattialla.")
+    f.rect(0, 0, 1200, 600, H.PAPER)
+    f.rect(0, 0, 1200, 24, H.WHITE); f.line(0, 24, 1200, 24, H.RULE, 3)
+    f.rect(0, 500, 1200, 100, H.RULE); f.line(0, 500, 1200, 500, H.INK, 3)
+    for x in range(0, 1200, 120): f.line(x, 500, x - 40, 600, H.RULE_LIGHT, 2)
+    # window
+    f.rect(80, 110, 240, 260, H.grad(f, "fy310h-sky", H.ICE, H.GLASS), H.INK, 3, 4)
+    H.cloud(f, 180, 200, 0.5)
+    f.line(200, 110, 200, 370, H.INK, 3); f.line(80, 240, 320, 240, H.INK, 3)
+
+    def balloon(cx, cy, fill, light):
+        f.path(f"M{cx},{cy + 96} Q{cx - 84},{cy + 60} {cx - 80},{cy - 10} Q{cx - 74},{cy - 92} {cx},{cy - 94} Q{cx + 74},{cy - 92} {cx + 80},{cy - 10} Q{cx + 84},{cy + 60} {cx},{cy + 96} Z", fill, H.INK, 3)
+        f.path(f"M{cx - 10},{cy + 108} L{cx},{cy + 94} L{cx + 10},{cy + 108} Z", fill, H.INK, 2.5)
+        f.add(f'<ellipse cx="{cx - 34}" cy="{cy - 44}" rx="16" ry="26" transform="rotate(30 {cx - 34} {cy - 44})" fill="{light}" fill-opacity="0.8"/>')
+    balloon(560, 122, H.COLD, H.WHITE)
+    f.path("M560,230 C540,300 590,360 560,420 S570,470 556,480", stroke=H.INK, w=2.5)
+    balloon(860, 398, H.SAND_DARK, H.WHITE)
+    f.add(f'<ellipse cx="860" cy="500" rx="74" ry="10" fill="{H.MUTED}" fill-opacity="0.35"/>')
+    f.path("M870,506 C900,520 940,512 990,522", stroke=H.INK, w=2.5)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors}

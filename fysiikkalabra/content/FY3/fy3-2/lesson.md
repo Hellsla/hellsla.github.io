@@ -2,6 +2,119 @@
 
 > **Miksi** painavan repun kantaminen tasaista käytävää pitkin ei fysiikan mielessä ole työtä, vaikka olkapäät väsyvät?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin painava reppu selässään. Lattia on vaakasuora, ja katkoviivanuoli lattian suuntaisesti näyttää kulkusuunnan. Taustalla on kaappirivi ja ikkunoita." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy32h-win40" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy32h-win340" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy32h-win640" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy32h-win940" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="40" y="60" width="180" height="150" rx="4" fill="url(#fy32h-win40)" stroke="#1f2933" stroke-width="3"/>
+  <line x1="130" y1="60" x2="130" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="340" y="60" width="180" height="150" rx="4" fill="url(#fy32h-win340)" stroke="#1f2933" stroke-width="3"/>
+  <line x1="430" y1="60" x2="430" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="640" y="60" width="180" height="150" rx="4" fill="url(#fy32h-win640)" stroke="#1f2933" stroke-width="3"/>
+  <line x1="730" y1="60" x2="730" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="940" y="60" width="180" height="150" rx="4" fill="url(#fy32h-win940)" stroke="#1f2933" stroke-width="3"/>
+  <line x1="1030" y1="60" x2="1030" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="4" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="58" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="20" y1="266" x2="60" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="20" y1="276" x2="60" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="20" y1="286" x2="60" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="84" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="138" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="100" y1="266" x2="140" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="100" y1="276" x2="140" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="100" y1="286" x2="140" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="164" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="218" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="180" y1="266" x2="220" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="180" y1="276" x2="220" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="180" y1="286" x2="220" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="244" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="298" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="260" y1="266" x2="300" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="260" y1="276" x2="300" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="260" y1="286" x2="300" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="324" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="378" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="340" y1="266" x2="380" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="340" y1="276" x2="380" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="340" y1="286" x2="380" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="404" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="458" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="420" y1="266" x2="460" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="276" x2="460" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="286" x2="460" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="484" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="538" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="500" y1="266" x2="540" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="500" y1="276" x2="540" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="500" y1="286" x2="540" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="564" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="618" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="580" y1="266" x2="620" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="580" y1="276" x2="620" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="580" y1="286" x2="620" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="644" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="698" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="660" y1="266" x2="700" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="660" y1="276" x2="700" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="660" y1="286" x2="700" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="724" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="778" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="740" y1="266" x2="780" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="740" y1="276" x2="780" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="740" y1="286" x2="780" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="804" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="858" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="820" y1="266" x2="860" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="820" y1="276" x2="860" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="820" y1="286" x2="860" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="884" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="938" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="900" y1="266" x2="940" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="276" x2="940" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="286" x2="940" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="964" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1018" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="980" y1="266" x2="1020" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="980" y1="276" x2="1020" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="980" y1="286" x2="1020" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="1044" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1098" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="1060" y1="266" x2="1100" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1060" y1="276" x2="1100" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1060" y1="286" x2="1100" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="1124" y="250" width="72" height="230" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1178" y="350" width="8" height="30" rx="3" fill="#8a96a3"/>
+  <line x1="1140" y1="266" x2="1180" y2="266" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1140" y1="276" x2="1180" y2="276" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1140" y1="286" x2="1180" y2="286" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="0" y="480" width="1200" height="120" fill="#c9c2b2"/>
+  <line x1="0" y1="480" x2="1200" y2="480" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="0" y1="480" x2="-60" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="480" x2="90" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="300" y1="480" x2="240" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="450" y1="480" x2="390" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="600" y1="480" x2="540" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="750" y1="480" x2="690" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="480" x2="840" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1050" y1="480" x2="990" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M560,380 L510,534" fill="none" stroke="#1f2933" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M490,540 h44" fill="none" stroke="#6c757d" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="448" y="210" width="84" height="130" rx="22" fill="#d9b26a" stroke="#1f2933" stroke-width="3"/>
+  <rect x="458" y="280" width="64" height="46" rx="10" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <path d="M526,220 Q600,190 590,280 L584,390 H524 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M524,224 Q550,260 530,330" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M560,380 L610,534" fill="none" stroke="#1f2933" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M594,540 h44" fill="none" stroke="#6c757d" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M568,240 L604,330" fill="none" stroke="#1971c2" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="606" cy="338" r="12" fill="#f1dfb5"/>
+  <rect x="556" y="180" width="20" height="30" fill="#f1dfb5"/>
+  <circle cx="566" cy="154" r="34" fill="#f1dfb5"/>
+  <path d="M532,160 Q530,116 568,118 Q600,120 600,144 Q566,136 532,160 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M720,560 H1000" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-dasharray="14 10"/>
+  <path d="M1030,560 L1000,546 L1000,574 Z" fill="#1f2933" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana on tarkempi: voima tekee työtä, kun se siirtää kappaletta voiman suuntaan. Kun kannat reppua vaakasuoraan tasaisella vauhdilla, kannatteleva voimasi osoittaa ylös, mutta reppu liikkuu sivulle. Voima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Lihaksesi väsyvät, koska ne kuluttavat energiaa voiman ylläpitoon, mutta reppuun ei siirry energiaa.
 
