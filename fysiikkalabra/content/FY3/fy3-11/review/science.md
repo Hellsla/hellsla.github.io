@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 87ecc45640f9156a
+CONTENT-HASH: d34a6cbbb0d46756
 
 ## Blocking
 
 ## Polish
-- sim.js:114 — `simState.eta` reads 40 at phase `ylhaalla` (W/Q₁ while only heated, W = Wₖ); not shown in the readout, but a row recorded there in exp-2 would show 40 % — report η = 0 (or omit) until `done`.
-- inquiry.json siirto solution — "≈ 23 MW" fits the 2-figure data but answer is 22.5; write "= 22,5 MW ≈ 23 MW" so the stored answer is visible.
-- inquiry.json exp-2 — lesson says cycles are not calculated, yet the table records η; fine as model readings, but the intro could say η is only for comparing A and B, not a formula to learn.
-- lesson.md Ydinajatus "Mitä suurempi lämpötilaero…" — strictly the ratio to T₁ matters; acceptable at this level, could add "kuuman lähteen lämpötilaan nähden".
+- inquiry.json:exp-2 — the table shows W = 0 J and η = 0 % as "0,00" while other cells round to integers (fi() of 0); purely display — none needed for physics.
+- solutions.md:L1-03, L1-05 — "Vastaus" rounds to 37 % / 22 % while exercises.json holds 37,2 / 21,7; both inside tolerance — optionally state 37,2 % / 21,7 % for consistency with the three-figure convention.
+- lesson.md:Ydinajatus §3 — "lämpötilaero kuuman lähteen lämpötilaan nähden" is the Carnot ratio (T₁ − T₂)/T₁; it holds only for absolute temperatures — optionally add "(kelvineinä)".
 
 ## Checked
-- Sim run in Playwright: Q = 500 J → ΔV 1,00 l, Wₖ 200 J, ΔU 300 J; A: Q₁ = Q₂ = 500 J, W = 0; B (p₂ = 100 kPa): Q₁ 650, Q₂ 550, W 100 J = areaNet, η 15,4 % (readout 15 %); Q = 1000 J, p₂ = 40: 1240/920/320 J, bars fit jmax; all equal my own isochoric/isobaric monatomic formulas, dUcycle = 0.
-- B weight bookkeeping: upper block (p₁ − p₂)A lifted ΔV/A from low to high shelf = (p₁ − p₂)ΔV; screenshot shows shelves, hatched return area, net rectangle correctly.
-- pred-1 (750 J → 1,0→2,5 l, 300 J), exp-1 Q = ΔU + Wₖ rows, exp-2 area question and every pred-2 feedback number.
-- kertaus 250 J (W/Q = 0,375, a valid ideal-gas Cp); virhe 240 J / 360 J (monatomic-consistent); L2-03 W/Q = 2/7 (air) — consistent.
-- Design task: 2000, 1250 (562,5 MW el.), 800 MW (pump 60 MW el., 180 MW heat, 120 MW from wastewater, plant 320 MW heat), 15 % plant loss = 120 MW; mistakes 941, 667 correct values.
-- All 12 answers.py values recomputed independently and match; solutions symbolic first; L1-02 steam volume (1,70 l/g) and L3-03 side numbers (43 kW, 54 kWh, 17 kWh) realistic.
-- Worked example 38 %, 310 MW, 88 %, 60 MW; exit ticket 100 J, 18/42 kW; check-2 450 J; siirto 22,5 MW.
-- SVG figures: W/Q₁ = 24/60 = 40 %, Q₁ = W + Q₂ widths; heat-pump arrows 20 + 40 = 60 = 3·E_s.
-- Sign conventions: Wₖ = −W of fy3-5 stated; ΔU = Q − Wₖ used consistently.
-- Scope: cycles are shown qualitatively; no exercise or check asks for a cycle calculation.
+- Hash d34a6cbbb0d46756 at start and end; answers.py output matches all 12 exercise answers, my own recomputation (12,0 kJ; 172 J; 37,2 %; 170 kJ; 21,7 %; 41,0 %; 9,0 %; 500 J; 720 kW; 120 MW; 9,60 MWh; 12,0 kW) and every solution's symbolic-then-numeric chain, incl. L3-03 side numbers (43 kW, 54 kWh, 15 kWh, 17 kWh).
+- Worked example: 38 %, 310 MW; 88 %, 60 MW.
+- Koe 1 (Playwright): Q = 500/750/1000 J give ΔV = 1,00/1,50/2,00 l, ΔU = 300/450/600 J; readout shows p, ΔV, Q, ΔU and no W_k; answer pΔV = 400 J; mistakes 400 000 (Pa·l), 600 (p·V₂ = 200·3,0, = ΔU), 1000 (Q) all correct; solution's 2/5 share right.
+- Koe 2 (Playwright): eta absent from simState in alku, ylhaalla and mid-return; record refused there ("ei anna mitattavaa arvoa"); A: Q₁ = Q₂ = 500 J, W = 0, η = 0; B: Q₁ = 650, Q₂ = 550, W = 100 J, η = 15,4 %; switching paluu resets and removes η; Qin and p₂ locked; no page errors.
+- pred-1/pred-2 feedback numbers (200, 300 J; 500, 550, 650, 100 J) and exp-2 question (net area (p₁ − p₂)ΔV = 100 J) match the sim.
+- suunnittele: P = (P_l + 3P_e)/(0,40 + 1,35) = 800 MW; P_pumppu = 60 MW, pump heat 180 MW (120 MW from waste water), plant heat 320 MW; 2000, 1250, 941, 667 MW mistakes correct; losses 120 MW = waste-water heat; 40 % of option 1.
+- siirto: (ε − 1)P_pumppu = 2,5 · 9,0 MW = 22,5 MW; mistakes 31,5 and 2,57 MW correct.
+- virhe 240 J/360 J; kertaus 250 J; check-2 450 J; exit ticket 100 J, 18 kW/42 kW.
+- sim.js energy bookkeeping: Q₁ − Q₂ = W = (p₁ − p₂)ΔV, ΔU_cycle = 0, areas equal energies.
+- Scope: cycles qualitative only, second law stated as experience; sign convention ΔU = Q − W_k tied to fy3-5's ΔU = Q + W.

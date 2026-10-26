@@ -12,3 +12,4 @@ date	lesson	agent	model	effort	mode	round	tokens	input	output	cache_read	cache_w
 2026-10-26T05:06Z	fy3-11	science-reviewer	opus	medium	full	1	120308					131	10	PASS
 2026-10-26T05:08Z	fy3-11	pedagogy-reviewer	sonnet	medium	full	1	108774					234	26	PASS
 2026-10-26T05:18Z	fy3-11	developer	opus	medium	fix	2	115565					528	32	-
+2026-10-26T05:20Z	fy3-11	science-reviewer	opus	medium	full	2	0					0	0	PASS
