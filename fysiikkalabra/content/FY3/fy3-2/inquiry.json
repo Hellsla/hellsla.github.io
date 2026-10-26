@@ -91,7 +91,7 @@
         },
         {
           "text": "Työ ja teho pysyvät samoina.",
-          "feedback": "Työ pysyy samana, mutta teho ei: mittausten mukaan $P = W/t$ pienenee 120 W:sta 30 W:iin. Teho kertoo, kuinka nopeasti työ tehdään."
+          "feedback": "Työ pysyy samana, mutta teho ei: mallin arvojen mukaan $P = W/t$ pienenee 120 W:sta 30 W:iin. Teho kertoo, kuinka nopeasti työ tehdään."
         },
         {
           "text": "Hitaampi veto tekee enemmän työtä, koska voima vaikuttaa pidempään.",

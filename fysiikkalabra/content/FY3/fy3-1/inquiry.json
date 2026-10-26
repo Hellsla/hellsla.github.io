@@ -187,7 +187,7 @@
         "exp-2"
       ],
       "prompt": "Laske taulukoidesi jokaiselta riviltä suhde $G/m$. Mitä huomaat? Kirjoita lyhyesti, miten paino riippui massasta, mikä muuttui paikan vaihtuessa ja mitä voimamittari siis mittaa.",
-      "model": "Maassa suhde $G/m$ oli jokaisella massalla sama, $9{,}81\\,\\text{m/s}^2$: paino on suoraan verrannollinen massaan, ja kerroin on putoamiskiihtyvyys $g$. Kun paikka vaihtui, massa pysyi $10\\,\\text{kg}$:na, mutta $G/m$ muuttui (Kuu $1{,}62\\,\\text{m/s}^2$, Jupiter $24{,}8\\,\\text{m/s}^2$), joten paino muuttui. Voimamittari mittaa voimaa eli kappaleen ja taivaankappaleen vuorovaikutusta, ei ainemäärää. Simulaatio laskee painon kaavasta $G = mg$, joten se havainnollistaa mallia; kokeellisesti saman voi todeta punnuksilla kalibroidulla jousella.",
+      "model": "Maassa suhde $G/m$ oli jokaisella massalla sama, $9{,}81\\,\\text{m/s}^2$: paino on suoraan verrannollinen massaan, ja kerroin on putoamiskiihtyvyys $g$. Kun paikka vaihtui, massa pysyi $10\\,\\text{kg}$:na, mutta $G/m$ muuttui (esimerkiksi Kuussa $1{,}62\\,\\text{m/s}^2$ ja Jupiterissa $24{,}8\\,\\text{m/s}^2$), joten paino muuttui. Voimamittari mittaa voimaa eli kappaleen ja taivaankappaleen vuorovaikutusta, ei ainemäärää. Simulaatio laskee painon kaavasta $G = mg$, joten se havainnollistaa mallia; kokeellisesti saman voi todeta punnuksilla kalibroidulla jousella.",
       "criteria": [
         "Laskin suhteen $G/m$ ja huomasin sen pysyvän samana samassa paikassa.",
         "Erotin massan (ei muutu) ja painon (muuttuu paikan mukana).",

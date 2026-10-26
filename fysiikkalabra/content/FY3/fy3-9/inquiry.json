@@ -176,7 +176,7 @@
           "label": "pV (J)"
         }
       ],
-      "min": 2
+      "min": 3
     },
     {
       "id": "exp-2",
@@ -280,11 +280,12 @@
       "after": [
         "exp-1"
       ],
-      "prompt": "Kirjoita kokeen 1 taulukon ja ruiskuaineiston perusteella: miten paine riippui tilavuudesta, kun lämpötila pysyi samana? Pysyikö tulo $pV$ vakiona? Miksi simulaation lukemat noudattavat lakia täsmälleen mutta ruiskuaineisto ei?",
-      "model": "Kun tilavuus puolittui $50\\,\\text{ml}$:sta $25\\,\\text{ml}$:aan, paine kaksinkertaistui $100\\,\\text{kPa}$:sta $200\\,\\text{kPa}$:iin, ja $100\\,\\text{ml}$:ssa se oli $50\\,\\text{kPa}$. Tulo $pV$ pysyi $5{,}0\\,\\text{J}$:ssa: paine on kääntäen verrannollinen tilavuuteen, ja $(V, p)$-pisteet asettuvat hyperbelille. Simulaatio laskee paineen mallista $pV/T = \\text{vakio}$, joten sen lukemat noudattavat lakia täsmälleen eivätkä todista sitä. Ruiskuaineistossa (keksityt, mittausta muistuttavat arvot) tulo $pV$ vaihtelee hieman mittausepätarkkuuden takia, ja nopeasti puristetussa mittauksessa ilma lämpeni, joten sen paine oli lakia suurempi. Kokeellinen tulos pitää aina tarkistaa mittausten hajonnasta ja koejärjestelyn virheistä.",
+      "prompt": "Kirjoita kokeen 1 taulukon ja ruiskuaineiston perusteella: miten paine riippui tilavuudesta, kun lämpötila pysyi samana? Pysyikö tulo $pV$ vakiona? Laske riveillesi myös $1/V$: millainen $(1/V, p)$-kuvaaja niistä tulisi? Miksi simulaation lukemat noudattavat lakia täsmälleen mutta ruiskuaineisto ei?",
+      "model": "Kun tilavuus puolittui $50\\,\\text{ml}$:sta $25\\,\\text{ml}$:aan, paine kaksinkertaistui $100\\,\\text{kPa}$:sta $200\\,\\text{kPa}$:iin, ja $100\\,\\text{ml}$:ssa se oli $50\\,\\text{kPa}$. Tulo $pV$ pysyi $5{,}0\\,\\text{J}$:ssa: paine on kääntäen verrannollinen tilavuuteen, ja $(V, p)$-pisteet asettuvat hyperbelille. Sarakkeesta $1/V$ ($0{,}020$, $0{,}040$ ja $0{,}010\\,\\text{ml}^{-1}$) nähdään, että $(1/V, p)$-pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $pV$. Simulaatio laskee paineen mallista $pV/T = \\text{vakio}$, joten sen lukemat noudattavat lakia täsmälleen eivätkä todista sitä. Ruiskuaineistossa (keksityt, mittausta muistuttavat arvot) tulo $pV$ vaihtelee hieman mittausepätarkkuuden takia, ja nopeasti puristetussa mittauksessa ilma lämpeni, joten sen paine oli lakia suurempi. Kokeellinen tulos pitää aina tarkistaa mittausten hajonnasta ja koejärjestelyn virheistä.",
       "criteria": [
         "Kerroin lukujen avulla, miten paine riippui tilavuudesta.",
         "Laskin tai vertasin tuloa $pV$.",
+        "Laskin $1/V$ ja totesin, että $(1/V, p)$-kuvaaja on origon kautta kulkeva suora.",
         "Erotin mallin laskemat lukemat mittausta muistuttavasta aineistosta.",
         "Selitin poikkeavan mittauksen syyn."
       ]
@@ -429,8 +430,7 @@
           "feedback": "Tilavuus jäi millilitroiksi, vaikka kulmakertoimen yksikössä on litra. Muunna ensin: $30\\,\\text{ml} = 0{,}030\\,\\textsf{l}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Suoran yhtälö on $p = k \\cdot \\dfrac{1}{V}$, joten $p = \\dfrac{k}{V}$.\n\n**Sijoitus.** $p = \\dfrac{3{,}6\\,\\text{kPa}\\cdot\\textsf{l}}{0{,}030\\,\\textsf{l}} = 120\\,\\text{kPa}$.\n\n**Järkevyys.** $1\\,\\text{kPa}\\cdot\\textsf{l} = 1\\,\\text{J}$, joten $pV = 3{,}6\\,\\text{J}$, ja 120 kPa on tavallinen paine hiukan puristetussa ruiskussa.",
-      "optional": true
+      "solution": "**Ratkaisu symbolisesti.** Suoran yhtälö on $p = k \\cdot \\dfrac{1}{V}$, joten $p = \\dfrac{k}{V}$.\n\n**Sijoitus.** $p = \\dfrac{3{,}6\\,\\text{kPa}\\cdot\\textsf{l}}{0{,}030\\,\\textsf{l}} = 120\\,\\text{kPa}$.\n\n**Järkevyys.** $1\\,\\text{kPa}\\cdot\\textsf{l} = 1\\,\\text{J}$, joten $pV = 3{,}6\\,\\text{J}$, ja 120 kPa on tavallinen paine hiukan puristetussa ruiskussa."
     },
     {
       "id": "check-3",

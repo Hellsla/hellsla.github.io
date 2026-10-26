@@ -350,8 +350,7 @@
           }
         ],
         "solution": "**Vaihtoehto 1.** Sähköä tarvitaan $P_\\text{e} + P_\\text{l} = 300\\,\\text{MW} + 500\\,\\text{MW} = 800\\,\\text{MW}$, joten polttoaineteho on $800\\,\\text{MW}/0{,}40 = 2000\\,\\text{MW}$.\n\n**Vaihtoehto 2.** Lämpö ratkaisee: $P = 500\\,\\text{MW}/0{,}40 = 1250\\,\\text{MW}$. Sähköä syntyy $0{,}45 \\cdot 1250\\,\\text{MW} = 562{,}5\\,\\text{MW}$, eli 262,5 MW yli tarpeen.\n\n**Vaihtoehto 3 symbolisesti.** Ehdoista $0{,}45P - P_\\text{pumppu} = P_\\text{e}$ ja $0{,}40P + 3P_\\text{pumppu} = P_\\text{l}$ saadaan\n\n$$P = \\frac{P_\\text{l} + 3P_\\text{e}}{0{,}40 + 3 \\cdot 0{,}45}$$\n\n**Sijoitus.** $P = (500\\,\\text{MW} + 900\\,\\text{MW})/1{,}75 = 800\\,\\text{MW}$. Pumpun sähköteho on $0{,}45 \\cdot 800\\,\\text{MW} - 300\\,\\text{MW} = 60\\,\\text{MW}$, ja se luovuttaa lämpöä 180 MW, josta 120 MW tulee jätevedestä. Laitokselta tulee lämpöä 320 MW.\n\n**Järkevyys.** Vaihtoehto 3 tarvitsee vain 40 % vaihtoehdon 1 polttoaineesta, ja vähempi polttoaine tarkoittaa pienempiä päästöjä. Energia säilyy: laitoksen häviöt, 15 % eli 120 MW, korvautuvat jätevedestä otetulla 120 MW:lla."
-      },
-      "optional": true
+      }
     },
     {
       "id": "siirto",
@@ -431,8 +430,7 @@
           "value": 750,
           "feedback": "Käytit lopputilavuutta $5{,}0\\,\\text{l}$. Työ on pinta-ala vain laajenemisen aikana, eli leveys on tilavuuden muutos $\\Delta V = 3{,}0\\,\\text{l}$."
         }
-      ],
-      "optional": true
+      ]
     },
     {
       "id": "check-3",

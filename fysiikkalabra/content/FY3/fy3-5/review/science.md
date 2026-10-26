@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2162817a4f5061b6
+CONTENT-HASH: 585aca35478c9485
 
 ## Blocking
 
 ## Polish
-- solutions.md:821 (L3-03) — the solution relies on "ideaalikaasun sisäenergia riippuu vain lämpötilasta ja määrästä", but the task never calls the gas ideal — add "ideaalikaasu" to the task text (carried over from round 1).
-- exercises.json L2-04 — 2,0 kJ in 40 s is 50 W of heat into a cold jug, about 3× realistic — for example Q = 1,0 kJ and ΔU = 11 kJ (t stays 40 s) (carried over).
+- inquiry.json:112 (`kokeile.model`) — "simulaatio antaa 330 K, koska mäntä ei liiku äärettömän hitaasti": over other seeds the slow push gives 11,2–15,2 J (324–335 K), and at a quarter of the speed it still scatters ±1 J, so the 0,3 J gap to the adiabat is mostly the fluctuation of 40 particles, not the piston speed — say "koska mäntä ei liiku äärettömän hitaasti ja hiukkasia on vain 40".
+- inquiry.json:113 (`kokeile.calc`) — mixes $u$ and $w$: "nopeudella $u$ … $v_x' = 2w - v_x$" with $w$ never defined for the student — write $v_x' = -2u - v_x$ (or define $w = -u$).
+- inquiry.json:112 — $T_2 = T_1(V_1/V_2)^{\gamma-1}$ is beyond FY3's central contents; acceptable inside the closed "Mallin oletukset" box as a check of the model, but keep it out of the theory and the tasks.
 
 ## Checked
-- Round-2 diff (eb71c79: exercises.json, exit-ticket.json, inquiry.json) word by word: only symbols wrapped in `$…$` (Q, W, ΔU, ΔT, T, V = 75 %); every number, sign and unit is identical. The exit ticket's "+300 J", "−120 J" and "300 J − 120 J = 180 J" kept their signs and values in LaTeX.
-- Experiment table headers through `inquiry.tex_name`: W (J), Q (J), ΔU (J), ΔT (K), T (K) and p/p₀ → `$p/p_0$` keep their meaning and units; "männän nopeus" and "seinät" stay words. The koe-2 capture shows the maths headers.
-- One script recomputed all 12 exercises (my values = answers.py = exercises.json), plus siirto 5,4 J (mistakes 6,6 and 599,4), check-2 30 J (230 and 10), virhe 160 J, exit ticket 180 J, worked example 110 J, and the model's ΔT/W ≈ 2,79 K/J = 1/C.
-- ΔU = Q + W with W done on the system is consistent in the formula, figures, worked example, solutions, hints and feedback. The content is the first law only, and W = Fs and G = mg stay within the FY3 scope.
-- sim.js, sim-spec.md, lesson.md, solutions.md and answers.py are unchanged since round 1. In round 1 I ran the sim headless: slow insulated 40,8 J / ΔT 114 K, fast 47,2 J / 132 K, conducting Q = −35,1 J, p/p₀ 1,33. These still match pred-1, pred-2 and koe-2.
-- koe-1 and koe-2 each lock the other parameter. simState provides W, Q, dU, dT, T and p.
-- Every correct option and every feedback is physically right.
-- Figures 1–3: the arrow directions, the hot → cold heat flow and the sign panels are correct.
-- Hash identical at start and end.
+- All 12 exercise answers, the transfer task (5,4 J, mistakes 6,6 and 599,4), check-2 (30 J) and exit ticket 1 (180 J) recomputed independently: all match answers.py and exercises.json; signs follow ΔU = Q + W with W done on the system throughout.
+- Worked example and every solution: symbolic before substitution, signs justified, magnitudes realistic (L3-02 h = 1,699 m).
+- Sim physics: 2D translational + Gamma(3/2) internal energy gives f = 5, γ = 1,4; wall re-emission uses the cosine law and a Beta(3/2, 3/2) translational fraction, which is the correct flux-weighted equilibrium split in 2D; piston reflection v' = 2w − v makes W exact work.
+- Ran sim.js headless: slow insulated push W = 13,14 J, T = 329,7 K, ΔT = 36,6 K; adiabat predicts 328,9 K, W = 12,83 J (agrees within finite-N scatter). Fast: W = 19,06 J, ΔT = 53,1 K; ΔT/W = 2,786 K/J = 1/C in both. ΔU = Q + W to 1e-14.
+- Conducting slow push: W = 12,37 J, Q → −12,37 J, T → 293 K, p = 1,333 p₀ (isothermal ideal 12,11 J; the gas is ~2 K warm during the push). All inquiry feedback numbers (13,1/19,1 J, 37/53 K, 2,8 K/J, 12,4 J, 1,33) match.
+- Experiments isolate their variable (koe-1 locks walls, koe-2 locks speed); simState carries W, Q, dU, dT, T, p.
+- Scope: first law only; work as F·s, no FY4 content.

@@ -132,7 +132,9 @@
           }
         ],
         "solution": "**Ratkaisu.** Höyrykiertoon tulee $P_1 = \\eta_1 P_0$ ja siitä lähtee $P_2 = \\eta_2 P_1$, joten häviö on $P_1 - P_2 = (1 - \\eta_2)\\,\\eta_1 P_0$.\n\n**Sijoitus.** $P_1 - P_2 = (1 - 0{,}46) \\cdot 0{,}92 \\cdot 500\\,\\text{MW} \\approx 248\\,\\text{MW}$.\n\n**Ennusteen testi.** Kattila häviää $40\\,\\text{MW}$ ja generaattori ja muuntaja noin $12\\,\\text{MW}$, joten höyrykierto häviää selvästi eniten: noin puolet polttoainetehosta."
-      }
+      },
+      "source": "simulated",
+      "source_note": "esimerkkilaitoksen hyötysuhteet"
     },
     {
       "id": "kaukolampo",
@@ -166,7 +168,9 @@
           }
         ],
         "solution": "**Vain sähköä.** $P_\\text{h} = 400\\,\\text{MW} - 160\\,\\text{MW} = 240\\,\\text{MW}$ ja $\\eta_\\text{kok} = 160/400 = 0{,}40$.\n\n**Täysi kaukolämpö.** $P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW} = 48\\,\\text{MW}$ ja $\\eta_\\text{kok} = (120 + 232)/400 = 0{,}88$.\n\n**Ennusteen testi.** Sähköä menetetään $40\\,\\text{MW}$, mutta hukkalämpö pienenee $192\\,\\text{MW}$. Kaukolämpö otetaan siis pääosin hukkalämmöstä."
-      }
+      },
+      "source": "simulated",
+      "source_note": "esimerkkilaitoksen luvut, eivät yhden laitoksen mittauksia"
     },
     {
       "id": "kaukolampo-tarve",
@@ -238,7 +242,7 @@
       "type": "explain",
       "title": "Johtopäätös: missä energia menetetään?",
       "prompt": "Kirjoita taulukoiden perusteella lyhyesti, missä energiaketjun vaiheessa lauhdevoimalaitos menettää eniten tehoa ja miksi, ja mitä yhteistuotanto muuttaa. Miksi vesivoimalan hyötysuhde voi olla paljon suurempi?",
-      "model": "Eniten tehoa häviää höyrykierrossa, $248\\,\\text{MW}$ eli lähes puolet kattilan tehosta: lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen, eikä parempi tekniikka poista tätä kokonaan. Yhteistuotannossa sama lämpö käytetään kaukolämpönä: sähköteho pienenee $160\\,\\text{MW}$:sta $120\\,\\text{MW}$:iin, mutta kokonaishyötysuhde nousee $(120 + 232)/400 = 88\\,\\%$:iin. Vesivoimalassa energia ei kulje lämmön kautta, vaan mekaaninen energia muuttuu sähköksi, joten häviöitä on vain kitkasta ja sähköisistä häviöistä. Taulukoiden luvut ovat esimerkki- ja tyyppiarvoja, eivät yhden laitoksen mittauksia.",
+      "model": "Eniten tehoa häviää höyrykierrossa, $248\\,\\text{MW}$ eli noin puolet polttoainetehosta: lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen, eikä parempi tekniikka poista tätä kokonaan. Yhteistuotannossa sama lämpö käytetään kaukolämpönä: sähköteho pienenee $160\\,\\text{MW}$:sta $120\\,\\text{MW}$:iin, mutta kokonaishyötysuhde nousee $(120 + 232)/400 = 88\\,\\%$:iin. Vesivoimalassa energia ei kulje lämmön kautta, vaan mekaaninen energia muuttuu sähköksi, joten häviöitä on vain kitkasta ja sähköisistä häviöistä. Taulukoiden luvut ovat esimerkki- ja tyyppiarvoja, eivät yhden laitoksen mittauksia.",
       "criteria": [
         "Nimesin höyrykierron suurimmaksi häviöksi ja perustelin sen lämpövoimakoneen rajoituksella.",
         "Erotin sähkön hyötysuhteen ja kokonaishyötysuhteen yhteistuotannossa.",

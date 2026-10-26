@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 706bdc1c984c1ed5
+CONTENT-HASH: 150708be69f8d013
 
 ## Blocking
 
 ## Polish
-- solutions.md:13–14 — the substitution ends "≈ 932 kPa" and the answer is "930 kPa" with no word on why (95 m has two significant figures) — add "(kaksi merkitsevää numeroa)" or end the substitution at 931 950 Pa.
-- solutions.md:7 — "kenkien pohjat noin kuudesosa suksien alasta": two shoe soles (≈ 2 × 0,03 m²) are nearer a fifth of 0,30 m² — say "viidesosa–kuudesosa" or "noin viidesosa".
+- inquiry.json:57,62,66,84,88,93 (also 166, 252) — the prediction feedback calls the simulation's numbers "mittaukset/mittauksesi", but the sim computes p = p₀ + ρgh from the formula (its model box and the conclusion say so); the brief asks that these be called model values — write "mallin arvot näyttävät…" / "mallin arvot tukevat tätä", and "lue se mallin arvoista" in the exp-1 question.
+- lesson.md:196 — "hydrostaattinen paine eli ylipaine Δp = p − p₀" equates the two only when the surface pressure p₀ is the surrounding air pressure (as in every task here); a half-sentence "kun pinnalla on ympäröivä ilmanpaine" would keep the definition exact.
 
 ## Checked
-- Round-2 conversion (git diff since the figure pass): exit-ticket a1/q2/a2, inquiry pred-3 feedbacks ("Selitä-vaihe" → "Teoriatiivistelmä"), sim howto and check-2 prompt "(h, p)" → "$(h, p)$": every number, unit, formula and meaning unchanged (ρ = 1000 kg/m³, 9,81 m/s², 5,0 m, ≈ 49 kPa, 101 + 49 ≈ 150 kPa, p = F/A). The renamed reference points to the theory activity, which holds the ρAhg/A derivation, so it still says the true thing.
-- answers.py and an independent recomputation agree for all 12 exercises (2400 Pa, 931,95→930 kPa, 275,08 kPa, 300 kPa, 4414,5 Pa, 4,0 MPa, 35,68 m, 919,98 kg/m³, 3,23 kN, 0,139 m², 9,81 kN, 19,03 kPa); solutions symbolic first, LaTeX values match.
-- Formulas p = F/A and p = p₀ + ρgh with conditions (liquid at rest, uniform density, force normal to the surface); derivation via G = mg, m = ρV inside FY3 scope.
-- Worked example: ρgh = 117,72 kPa, p ≈ 219 kPa, F ≈ 1,77 kN ≈ 1,8 kN (≈ 180 kg weight).
-- Prose: 10 m ≈ 98 kPa ≈ one atmosphere; dam 30 m → 294 kPa ≈ "noin 290 kPa".
-- Figures: pressure-depth to scale (0,895 px/kPa: 101 kPa at y 194,5, 199 kPa at y 106,5; 10 m at x 450); bricks 40 vs 120 px = 3A₁; water column G = ρAhg, p = G/A = ρgh; LaTeX labels render correctly.
-- inquiry pred-1 (150 → 199 kPa), pred-2 (ρgh 98 → 122 kPa, +24 %; total 199 → 223 kPa, +12 %), pred-3: correct options and feedback numbers right.
-- exp-1 locks ρ, varies h; exp-2 locks h, varies ρ; simState has pOver, pTotal; numeric 9,81 kPa/m, mistakes 9810 and 19,9 right.
-- virhe 29 kPa; siirto 0,757 m (mistakes 10,3 m, 0,000757 m); check-2 892 kg/m³ (mistakes 2180, 0,892); check-3 model 29 kPa, ≈ 1,8 N.
-- sim.js implements p = p₀ + ρgh (p₀ = 101 kPa, g = 9,81), equal arrows in all directions; model limits stated in the inquiry.
+- p = F/A with F perpendicular to the surface, p = p₀ + ρgh with symbols and units named; derivation from the column's weight ρAhg with A cancelling; isotropy and the perpendicular force argued; inside FY3 scope.
+- Magnitudes: 9,81 kPa/m, ≈1 atm per 10 m, dam at 30 m ≈ 294 kPa ≈ 290 kN/m², Dead Sea 1240 kg/m³, rapeseed oil 920 kg/m³, mercury column 0,757 m.
+- Worked example symbolic first: ρgh = 117,72 kPa, p ≈ 219 kPa, F = ρghA ≈ 1,8 kN using only the overpressure because the room is at air pressure.
+- answers.py recomputed in one script: all 12 match my formulas; rounding to the data's figures stays within tolerance.
+- solutions.md: unknowns isolated first (h = Δp/ρg, ρ = Δp/gh, A = G/p_max, F = ΔpA, layered ΔF = ρ₁gh₁ + ρ₂gh₂).
+- Figures: pressure–depth graph to scale; brick contact widths 40 : 120 px = 1 : 3 as stated; water-column figure labelled schematic.
+- Simulation: p = 101 kPa + ρgh with ρg in kPa/m, four equal arrows (pressure in every direction), overpressure-only mode drops the intercept; limits (fixed p₀, incompressible liquid at rest) stated.
+- exp-1 locks ρ and varies h, exp-2 locks h and varies ρ; simState carries pOver and pTotal; exp-1 numeric 9,81 kPa with mistakes 9810 and 19,9.
+- Predictions: 150 → 199 kPa (×1,33, overpressure ×2); Dead Sea 98 → 122 kPa (+24 %), total 199 → 223 kPa (+12 %); equal bottom pressure in tube and pool.
+- virhe 29 kPa at 3,0 m; check-2 892 kg/m³ (mistakes 2180, 0,892); check-3 eardrum Δp ≈ 29 kPa, F ≈ 1,8 N at 0,6 cm²; exit ticket 49 and 150 kPa.

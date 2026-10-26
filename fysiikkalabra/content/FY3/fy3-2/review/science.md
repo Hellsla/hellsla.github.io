@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d31013346dd6f94d
+CONTENT-HASH: f500230f9e9593b2
 
 ## Blocking
 
 ## Polish
-- sim.js:85 — at 390 px the clamped "W = pinta-ala" caption now sits on top of the "F (N)" axis label (exp-2 shot) — move the caption right (e.g. G.x + G.w/2 + ts(20)) or put "F (N)" lower when k > 1.
-- inquiry.json:92 — pred-2 feedback still calls simulation output "mittausten" — "mallin arvojen mukaan".
-- inquiry.json:234 — "mittauksiisi": the student recorded model values — "kirjaamiisi mallin arvoihin".
-- inquiry.json exp-1/exp-2 — the sim computes W = Fs directly, so the experiments confirm arithmetic; the Joule table is the evidence — say so at the point of use.
+- inquiry.json:94 — pred-2 feedback says "mittausten mukaan" for the simulation's P values; the brief asks that sim numbers be called model values — write "mallin arvojen mukaan".
+- lesson.md:149 — "(kaava alla), Sama lämpeneminen" — comma should be a full stop.
+- lesson.md:180 — "muuttaa sähköenergiaa lämmöksi" sits awkwardly beside the Joule item that insists heat is a transfer, not a stored substance — consider "muuttaa sähköenergiaa kiukaan ja ilman sisäenergiaksi" or "siirtää lämpönä 6000 J joka sekunti".
 
 ## Checked
-- Conversion since 4132080^: word diff of lesson.md prose, inquiry.json, exercises.json, exit-ticket.json; only plain symbols became inline maths, "(s,F)" became "$(s, F)$" and "Selitä-vaihe" became "Teoriatiivistelmä"; no number, formula or meaning changed.
-- solutions.md: the multiset of numbers is unchanged apart from LaTeX subscripts, exponents and \tfrac{1}{2}; symbolic formula first in each solution.
-- All 12 answers recomputed in one script: they agree with answers.py and exercises.json within 2 %.
-- Inquiry numbers: 98 N; 600/1200 J; 120 → 30 W; 240 W (mistakes 9,6 and 0,24); 180 J (mistakes 240 and 120); check-1 ratio 3; virhe 4,0 J; exit ticket 98 J and 20 J; Joule table Q/W ≈ 0,99.
-- Teoriatiivistelmä references in pred-3 point to the theory stage (Ydinajatus + Kaava), which holds the carry figure and W = Fs with its condition.
-- Speed control: u advances by min(Δt, 100 ms)·speed/t, so W, P and Wdone(u) do not depend on speed; the readout's elapsed time u·t is simulated time; the `howto` text says so correctly.
-- Model limits (constant speed, friction = pull, work → heat) moved from the canvas note to the "Mallin oletukset" panel, which the page shows.
-- simState still holds F, s, t, W, P for the experiments; exp-1 locks F and t and varies s, exp-2 locks F and s and varies t.
-- Figures: the spring graph is to scale (0,20 m ↔ 302,5 px, 40 N ↔ 171 px); the F and G arrows are equal (58 px); h is marked between the correct edges.
-- Formulas W = Fs, area under (s,F), W = Gh = mgh, P = W/t = Fv: conditions stated and within FY3 scope.
+- W = Fs stated for a constant force along the motion, area under (s,F) for a varying force, W = Gh = mgh with F = G at constant speed, P = W/t = Fv for uniform motion; no E_p, E_k, cos α or work–energy theorem named, so inside the FY3 scope note.
+- Worked example symbolic first: W = ½F_max s = 4,0 J, average-force check and the 8,0 J error explained.
+- answers.py recomputed in one script: all 12 answers match, rounding within tolerance.
+- solutions.md: unknowns isolated before substitution (s = W/F, W = Pt, t = mgh/P, F_ka = W/s); sanity values right.
+- Figures: spring-work graph to scale (75,6 px per 0,05 m, 42,75 px per 10 N, line to (0,20 m; 40 N)); lift figure F and G arrows equal (58 px); work-graphs triangle + rectangle schematic consistent with A₁ + A₂.
+- Simulation: W = F·s, P = W/t, Wdone = W·u, the (s,F) area fills in proportion to distance; speed control changes only the pace (u advances by Δt·speed/t); model box states constant speed with friction equal to the pull and that values are computed from the formulas.
+- exp-1 locks F, t and varies s (W ∝ s); exp-2 locks F, s and varies t (W constant, P ∝ 1/t); simState carries W and P.
+- Predictions: 600 → 1200 J; 120 W → 30 W; carrying horizontally W = 0 with air resistance neglected; Aino's 1960 J ≈ 2,0 kJ.
+- Joule table consistent with 2,0 kg × 1,0 m × 10 drops = 196 J, ΔU/W ≈ 0,99; Joule's 1850 value ≈ 4,16 J per g·°C vs 4,19 today.
+- siirto 240 W; check-1 triangle 1:4 → 3×; check-2 120 + 60 = 180 J; exit ticket 98 J, 20 J, equal work and double power.

@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0aaf01ed9efec6be
+CONTENT-HASH: 824fae33df16ef17
 
 ## Blocking
 
 ## Polish
-- inquiry.json:510, 548 (exp-1, exp-2 intro) — the pressure window is 1,5 s of simulated time, so at "hidas" it takes 3 s of real time to refresh, and after a volume change the bunched particles keep the reading 10–20 % off for several seconds; "pari sekuntia" is short — say "muutama sekunti", or clear `hist` when V changes.
-- sim.js:1014 — `lastT` is no longer used since the fixed-step speed control; remove it.
+- exercises.json:82 — a bicycle tyre's "paine 300 kPa" is in everyday use the gauge (over)pressure, and p ∝ T holds only for the absolute pressure; the answer 321 kPa is right for absolute pressure — write "renkaan ilman (absoluuttinen) paine" or use a generic sealed container.
 
 ## Checked
-- Round-2 conversion: every changed string compared with the previous version (pred-1 feedback 600 K / 300 K = 2; virhe option 313 K / 293 K ≈ 1,07 → 128 kPa; siirto mistake 80/20 = 4 and 353 K / 293 K ≈ 1,20; check-2 table −123/27/177 °C → 50/100/150; exp-1/exp-2 $v$): no number, formula or meaning changed.
-- lesson.md: "ja lämpötila pysyy samana" makes the compression sentence correct (at constant T a single hit is no harder); nothing else in lesson.md changed.
-- siirto Järkevyys now matches the task: closed at 20 °C, heated to 80 °C → 122 kPa > 101 kPa outside, lid pushed outward. Correct.
-- All 12 exercise answers recomputed independently = answers.py = exercises.json (L1-05 −270,45 → −270; L2-04 3,996 → 4,0; L3-03 −126,575 → −127); solutions symbolic first, units right.
-- Worked example: k = 0,37 kPa/°C, θ₀ = −270 °C, symbolic solve before substitution, liquefaction caveat stated.
-- Extrapolation figure to scale (0,945 px/°C, 1,375 px/kPa; all six points and the p = 0 crossing at −270 °C); kelvin figure to scale; system and micro-model figures right.
-- Inquiry: pred-1 ratio 2 with vRel 1,41; pred-2 50 → 100 with vRel 1,00; pred-3 count and size unchanged; virhe 128,2 kPa; siirto 121,7 → 122 kPa, mistakes 404 and 83,8 right; check-2 −273 °C, mistakes 0 and −123 explained right; check-1, check-3 model, exit ticket, misconception 293/283 ≈ 1,035.
-- sim.js: v ∝ √T so mean KE ∝ T; pressure from wall momentum per time per effective length, reference on the same lengths; pTheory = 100·(T/300)/V. Speed control advances fixed DT = 1/60 s steps of simulated time, window 90 steps, so speed changes only pace.
-- exp-1 locks V, varies T; exp-2 locks T, varies V; initial states and suggested values inside slider ranges; simState gives theta, vRel, pRel, pTheory.
-- Scope inside FY3; p ∝ T at constant V and n stated with its conditions.
+- T = θ + 273,15, ΔT = Δθ, 0 K = −273,15 °C with "liike-energia pienimmillään" (not "zero"); p ∝ T at constant V and n stated with its conditions; micro-model (more frequent vs harder collisions) correct; all inside FY3 "termodynaaminen systeemi, tilanmuuttujat, lämpötila".
+- Worked example: table matches an ideal gas (100 kPa at 0 °C → 107,3 / 114,6 / 122,0 / 129,3 / 136,6); k = 0,37 kPa/°C, θ = −p₀/k ≈ −270 °C, solved symbolically before substitution.
+- Figures: kelvin scale to scale (1,20 px/K, 100 K = 120 px); extrapolation graph data points match the table to ±0,5 px, dashed line reaches p = 0 at −270 °C, y axis at −300 °C as the caption says; micro-model figure labelled schematic.
+- answers.py recomputed in one script: all 12 match; exercise data are physically consistent (L2-03 ideal-gas check 137,2 and 86,7 kPa).
+- solutions.md: conversions and proportions set up symbolically first; distractor values (36 °C, 10 °C) right.
+- Simulation: v ∝ √T so mean KE ∝ T; pressure from wall impulses per wall length averaged over both axes, which removes the fixed-direction anisotropy exactly; effective box PX·V × (h − 2R) matches the reference. A Python port of the step gives 104/50/194/54/202 vs theory 100/50/200/50/200 — statistical scatter only. Limits (2D, no particle collisions, one speed) stated in the model box.
+- exp-1 locks V, varies T (vRel, pRel, pTheory in simState); exp-2 locks T, varies V; slider ranges reach 150–600 K and 0,5–2,0 dm³.
+- Predictions: 300 → 600 K doubles p, speed ×1,41 and 1,41² ≈ 2; halving V doubles p with vRel = 1,00; 327/27 ≈ 12 distractor explained.
+- virhe 128 kPa (×1,068), siirto 122 kPa with mistakes 404 and 83,8; check-2 −273 °C with mistakes 0 and −123; nitrogen −196 °C.
+- Exit ticket: 3,5 % rise, −273 °C.

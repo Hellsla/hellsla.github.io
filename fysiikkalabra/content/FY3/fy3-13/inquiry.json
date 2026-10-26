@@ -147,7 +147,9 @@
           }
         ],
         "solution": "**Ratkaisu symbolisesti.** Kulmakerroin ja suoran paine lämpötilassa $0\\,{}^\\circ\\text{C}$:\n\n$$\\begin{aligned} k &= \\frac{p_B - p_A}{\\theta_B - \\theta_A} \\\\ p_0 &= p_A - k\\theta_A \\\\ \\theta_0 &= -\\frac{p_0}{k} \\end{aligned}$$\n\n**Sijoitus.** $k = \\dfrac{25{,}7\\,\\text{kPa}}{70\\,{}^\\circ\\text{C}} = 0{,}367\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$, $p_0 = 108{,}6\\,\\text{kPa} - 0{,}367 \\cdot 20\\,\\text{kPa} = 101{,}3\\,\\text{kPa}$ ja $\\theta_0 = -\\dfrac{101{,}3\\,\\text{kPa}}{0{,}367\\,\\text{kPa}/{}^\\circ\\text{C}} \\approx -276\\,{}^\\circ\\text{C}$."
-      }
+      },
+      "source": "simulated",
+      "source_note": "sama esimerkkiaineisto kuin edellä"
     },
     {
       "id": "aariviiva",
@@ -204,7 +206,9 @@
           }
         ],
         "solution": "**Ratkaisu symbolisesti.** Kummankin viivan nollapaine on $\\theta_0 = -p_0/k$, ja epävarmuus on välin puolikas:\n\n$$\\Delta\\theta_0 = \\frac{\\theta_{0,\\text{max}} - \\theta_{0,\\text{min}}}{2}$$\n\n**Sijoitus.** $\\theta_{0,\\text{max}} = -\\dfrac{100{,}1}{0{,}387}\\,{}^\\circ\\text{C} = -258{,}7\\,{}^\\circ\\text{C}$ ja $\\theta_{0,\\text{min}} = -\\dfrac{102{,}3}{0{,}347}\\,{}^\\circ\\text{C} = -294{,}8\\,{}^\\circ\\text{C}$, joten $\\Delta\\theta_0 = \\dfrac{-258{,}7 - (-294{,}8)}{2}\\,{}^\\circ\\text{C} \\approx 18\\,{}^\\circ\\text{C}$. Tulos on $-276 \\pm 18\\,{}^\\circ\\text{C}$ ja sisältää arvon $-273{,}15\\,{}^\\circ\\text{C}$."
-      }
+      },
+      "source": "simulated",
+      "source_note": "sama esimerkkiaineisto kuin edellä"
     },
     {
       "id": "johtopaatos",

@@ -176,11 +176,11 @@
         "koe-1"
       ],
       "prompt": "Käytä taulukkoasi. Kirjoita lyhyesti, mikä oli lopputilan lämpötila niillä riveillä, joilla jäätä jäi jäljelle, ja miksi. Mistä lämpötilasta alkaen kaikki jää sulaa, ja miten sen voi perustella energialla?",
-      "model": "Kun jäätä jäi jäljelle (esimerkiksi $10\\,{}^\\circ\\text{C}$: $62{,}4\\,\\text{g}$, $20\\,{}^\\circ\\text{C}$: $24{,}7\\,\\text{g}$), lopputilan lämpötila oli aina $0\\,{}^\\circ\\text{C}$: jää ja vesi ovat tasapainossa vain sulamispisteessä. Lämpimämpi vesi sulatti enemmän jäätä, koska se luovutti jäähtyessään $0\\,{}^\\circ\\text{C}$:seen enemmän energiaa. Kaikki jää sulaa, kun $c_\\text{v} m_\\text{v} \\theta_\\text{v} \\geq s m_\\text{j}$ eli kun $\\theta_\\text{v} \\geq 26{,}6\\,{}^\\circ\\text{C}$. Sen yläpuolella lämpötila nousee yli nollan, esimerkiksi $40\\,{}^\\circ\\text{C}$:sta $10{,}1\\,{}^\\circ\\text{C}$:seen. Simulaatio laskee nämä energian säilymisestä; oikeassa kalorimetrissä osa energiasta menisi astiaan ja ympäristöön.",
+      "model": "Kun jäätä jäi jäljelle (esimerkiksi $10\\,{}^\\circ\\text{C}$: $62{,}4\\,\\text{g}$, $20\\,{}^\\circ\\text{C}$: $24{,}7\\,\\text{g}$), lopputilan lämpötila oli aina $0\\,{}^\\circ\\text{C}$: jää ja vesi ovat tasapainossa vain sulamispisteessä. Lämpimämpi vesi sulatti enemmän jäätä, koska se luovutti jäähtyessään $0\\,{}^\\circ\\text{C}$:seen enemmän energiaa. Kaikki jää sulaa, kun $c_\\text{v} m_\\text{v} T_\\text{v} \\geq s m_\\text{j}$ eli kun $T_\\text{v} \\geq 26{,}6\\,{}^\\circ\\text{C}$. Sen yläpuolella lämpötila nousee yli nollan, esimerkiksi $40\\,{}^\\circ\\text{C}$:sta $10{,}1\\,{}^\\circ\\text{C}$:seen. Simulaatio laskee nämä energian säilymisestä; oikeassa kalorimetrissä osa energiasta menisi astiaan ja ympäristöön.",
       "criteria": [
         "Käytin omia lukemiani.",
         "Totesin, että jään ja veden seos on $0\\,{}^\\circ\\text{C}$:ssa.",
-        "Perustelin rajan energian säilymisellä ($c_\\text{v} m_\\text{v} \\theta_\\text{v} = s m_\\text{j}$).",
+        "Perustelin rajan energian säilymisellä ($c_\\text{v} m_\\text{v} T_\\text{v} = s m_\\text{j}$).",
         "Erotin mallin laskemat arvot oikeasta kalorimetrikokeesta."
       ]
     },

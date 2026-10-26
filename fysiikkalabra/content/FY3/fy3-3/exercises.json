@@ -79,7 +79,7 @@
     {
       "id": "fy3-3-L3-01",
       "level": 3,
-      "text": "Pyörän renkaan ilman paine on 300 kPa lämpötilassa 15 °C. Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa 35 °C?",
+      "text": "Pyörän renkaan ilman kokonaispaine (ei ylipaine) on 300 kPa lämpötilassa 15 °C. Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa 35 °C?",
       "answer": 321,
       "unit": "kPa",
       "tolerance": 0.02

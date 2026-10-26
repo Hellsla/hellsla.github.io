@@ -44,7 +44,7 @@
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
 **Sijoitus:** $k = \dfrac{0{,}31\,\text{bar}}{80{,}0\,{}^\circ\text{C}} = 0{,}003875\,\tfrac{\text{bar}}{{}^\circ\text{C}}$. $\theta_0 = 15{,}0\,{}^\circ\text{C} - \dfrac{1{,}05\,\text{bar}}{0{,}003875\,\text{bar}/{}^\circ\text{C}} = -256{,}0\,{}^\circ\text{C}$
 **Vastaus:** −256 °C
-**Järkevyys:** Yksikkö bar supistuu, joten muunnosta pascaleiksi ei tarvita. Tulos on lähellä arvoa $-273{,}15\,{}^\circ\text{C}$; ero johtuu kolmen numeron lukemista.
+**Järkevyys:** Yksikkö bar supistuu, joten muunnosta pascaleiksi ei tarvita. Tulos on lähellä arvoa $-273{,}15\,{}^\circ\text{C}$. Ero johtuu kahden mittauspisteen virheistä: suoraa jatketaan yli $270\,{}^\circ\text{C}$ mittausalueen ulkopuolelle, joten pienikin virhe paineessa siirtää nollapistettä paljon.
 
 ## fy3-13-L2-02
 **Annettu:** $p = 100\,\text{kPa} + 0{,}380\,\text{kPa}/{}^\circ\text{C} \cdot \theta$ ja $p = 102\,\text{kPa} + 0{,}350\,\text{kPa}/{}^\circ\text{C} \cdot \theta$
