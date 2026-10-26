@@ -191,7 +191,7 @@ Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinker
   <foreignObject x="453" y="248" width="144" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\boldsymbol{2p}$</div></foreignObject>
 </svg>
 
-Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää, lämpötilaa ja tilavuutta ja vertaa seinämistä mitattua painetta ennusteeseen. Hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin, joten ne on jätetty simulaatiosta pois. Simulaatiossa paine näytetään suhteessa vertailutilaan (p/p_ref), ei pascaleina. Vertailutila on N = 100 hiukkasta, T = 300 K ja koko tilavuus (V = 100 %); siinä p/p_ref = 1, ja arvo 2 tarkoittaa kaksinkertaista vertailupaineeseen verrattuna. Hiukkasmäärä N kuvaa kaasun määrää.
+Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää, lämpötilaa ja tilavuutta ja vertaa seinämistä mitattua painetta tilanyhtälön ennusteeseen, jonka lasket itse. Hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin, joten ne on jätetty simulaatiosta pois. Simulaatiossa paine näytetään suhteessa vertailutilaan (p/p_ref), ei pascaleina. Vertailutila on N = 100 hiukkasta, T = 300 K ja koko tilavuus (V = 100 %); siinä p/p_ref = 1, ja arvo 2 tarkoittaa kaksinkertaista vertailupaineeseen verrattuna. Hiukkasmäärä N kuvaa kaasun määrää.
 
 <!-- sim -->
 

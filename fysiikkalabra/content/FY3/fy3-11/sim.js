@@ -22,7 +22,7 @@ new p5((p) => {
   const BAR = { x0: 346, x1: 590, y: [294, 330], h: 20, jmax: 1250 };      // energy bars
   const COL = { Q: [210, 60, 40], dU: [135, 85, 190], Wk: [222, 150, 10], Won: [60, 115, 205], Q2: [50, 150, 215] };
   const N = 28, SEED = 11;
-  let sQ, lQ, sP, lP, sel, sV, btn, readout, phase = 'alku', u = 0, queue = [], acc, parts = [], k = 1, labels = [], last = {};
+  let sQ, lQ, sP, lP, sel, sV, btn, readout, phase = 'alku', u = 0, queue = [], acc, parts = [], k = 1, labels = [];
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent), span = p.createSpan('').parent(label);
@@ -106,7 +106,6 @@ new p5((p) => {
 
   p.draw = () => {
     const P = par(), speed = Number(sV.value());
-    const key = `${P.Q}|${P.p2}|${P.B}`; if (last.key !== undefined && last.key !== key && phase !== 'alku') restart(); last.key = key;
     advance(Math.min(p.deltaTime, 100) / 1000 * speed, P);
     const c = phaseAt(phase, u, P), V = c.V, pr = c.p;
     const Q1 = acc.Qh + c.Qh, Q2 = acc.Qc + c.Qc, W = acc.Wg + c.Wg, done = phase === 'valmis';

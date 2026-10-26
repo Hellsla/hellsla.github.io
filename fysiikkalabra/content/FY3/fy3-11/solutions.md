@@ -1,16 +1,16 @@
 ## fy3-11-L1-01
 **Annettu:** p = 480 kPa = 480 000 Pa, ΔV = 0,0250 m³
-**Kysytty:** höyryn tekemä työ W
-**Kaava:** W = pΔV
-**Sijoitus:** W = 480 000 Pa · 0,0250 m³ = 12 000 J = 12,0 kJ
+**Kysytty:** höyryn tekemä työ Wₖ
+**Kaava:** Wₖ = pΔV
+**Sijoitus:** Wₖ = 480 000 Pa · 0,0250 m³ = 12 000 J = 12,0 kJ
 **Vastaus:** 12,0 kJ
 **Järkevyys:** Yksikkö Pa · m³ = N/m² · m³ = N · m = J. Työ riittäisi nostamaan noin 1,2 tonnin kuorman metrin korkeudelle, ja veturin männät tekevät tällaisen työn monta kertaa sekunnissa.
 
 ## fy3-11-L1-02
 **Annettu:** p = 101 kPa = 101 000 Pa, ΔV = 1,70 l = 0,00170 m³
-**Kysytty:** höyryn tekemä työ W
-**Kaava:** W = pΔV
-**Sijoitus:** W = 101 000 Pa · 0,00170 m³ = 171,7 J ≈ 172 J
+**Kysytty:** höyryn tekemä työ Wₖ
+**Kaava:** Wₖ = pΔV
+**Sijoitus:** Wₖ = 101 000 Pa · 0,00170 m³ = 171,7 J ≈ 172 J
 **Vastaus:** 172 J
 **Järkevyys:** Gramman höyrystämiseen tarvitaan lämpöä noin 2,3 kJ, joten vain alle kymmenesosa siitä kuluu ilman työntämiseen syrjään. Loppu jää höyryn sisäenergiaksi. Löylyn pöllähdys on juuri tätä laajenemista.
 
@@ -57,7 +57,7 @@
 ## fy3-11-L2-03
 **Annettu:** Q = 700 J, p = 125 kPa = 125 000 Pa, ΔV = 1,60 l = 0,00160 m³
 **Kysytty:** sisäenergian muutos ΔU
-**Kaava:** Laajeneva ilma tekee työn pΔV, joten ympäristön ilmaan tekemä työ on W = −pΔV ja ΔU = Q + W = Q − pΔV
+**Kaava:** Laajeneva ilma tekee työn Wₖ = pΔV, joten ΔU = Q − Wₖ = Q − pΔV
 **Sijoitus:** ΔU = 700 J − 125 000 Pa · 0,00160 m³ = 700 J − 200 J = 500 J
 **Vastaus:** 500 J, eli sisäenergia kasvaa.
 **Järkevyys:** Lämmöstä 200 J kuluu männän työntämiseen ja loput nostaa ilman lämpötilaa. Jos työ lisättäisiin lämpöön, tulokseksi tulisi 900 J, enemmän kuin ilmaan tuli lämpöä, vaikka ilma luovuttaa energiaa työntäessään mäntää.
@@ -81,8 +81,8 @@
 ## fy3-11-L3-02
 **Annettu:** Q = 16,0 MWh, lämpökerroin ε = 2,50
 **Kysytty:** säästetty sähkö ΔE ja ulkoilmasta otettu lämpö Q_ulko
-**Kaava:** ε = Q / W, joten W = Q / ε. Sähkölämmitys käyttää sähköä Q, joten ΔE = Q − Q / ε. Energia säilyy: Q = Q_ulko + W, joten Q_ulko = Q − Q / ε.
-**Sijoitus:** W = 16,0 MWh / 2,50 = 6,40 MWh, joten ΔE = Q_ulko = 16,0 MWh − 6,40 MWh = 9,60 MWh
+**Kaava:** ε = Q / Eₛ, joten pumpun sähköenergia on Eₛ = Q / ε. Sähkölämmitys käyttää sähköä Q, joten ΔE = Q − Q / ε. Energia säilyy: Q = Q_ulko + Eₛ, joten Q_ulko = Q − Q / ε.
+**Sijoitus:** Eₛ = 16,0 MWh / 2,50 = 6,40 MWh, joten ΔE = Q_ulko = 16,0 MWh − 6,40 MWh = 9,60 MWh
 **Vastaus:** 9,6 MWh sekä säästöä että ulkoilmasta otettua lämpöä
 **Järkevyys:** Säästetty sähkö on täsmälleen ulkoilmasta tuotu lämpö. Energiaa ei synny tyhjästä: taloon tulee 9,60 MWh + 6,40 MWh = 16,0 MWh. Pumppu vain siirtää lämpöä sähkön avulla kylmästä lämpimään.
 

@@ -44,7 +44,7 @@
 **Kaava:** pV = nRT ja n = m / M, josta p = mRT / (MV)
 **Sijoitus:** T = (15 + 273,15) K = 288,15 K. p = 2,40 kg · 8,31 J/(mol·K) · 288,15 K / (0,0320 kg/mol · 0,0100 m³) = 1,796 · 10⁷ Pa = 179,6 bar ≈ 180 bar
 **Vastaus:** 180 bar
-**Järkevyys:** Täyden happipullon paine on tyypillisesti 200 bar, joten pullo on lähes täynnä. 180 barin paineessa happimolekyylit ovat niin lähellä toisiaan, että niiden oma koko ja keskinäinen vetovoima alkavat vaikuttaa. Tilanyhtälö antaa silloin noin 6 % liian suuren paineen, joten tulos on arvio (tehtävä pyysi ideaalikaasun arvoa, joten vastaus 180 bar pätee). Happea on 2,40 kg / 0,0320 kg/mol = 75,0 mol. Kilogrammat supistuvat, ja J/m³ on sama kuin Pa.
+**Järkevyys:** Täyden happipullon paine on tyypillisesti 200 bar, joten pullo on lähes täynnä. 180 barin paineessa happimolekyylit ovat niin lähellä toisiaan, että niiden oma koko ja keskinäinen vetovoima alkavat vaikuttaa. Tilanyhtälö antaa silloin muutamia prosentteja liian suuren paineen, joten tulos on arvio (tehtävä pyysi ideaalikaasun arvoa, joten vastaus 180 bar pätee). Happea on 2,40 kg / 0,0320 kg/mol = 75,0 mol. Kilogrammat supistuvat, ja J/m³ on sama kuin Pa.
 
 ## fy3-10-L2-02
 **Annettu:** V = 1,00 l = 0,00100 m³, m = 1,15 g, p = 101 kPa = 101 000 Pa, θ = 22 °C

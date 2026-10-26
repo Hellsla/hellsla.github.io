@@ -53,10 +53,20 @@ n_ka = sum(m_taulukko[k] / M_kaasut[k] for k in M_kaasut) / 4      # mean 0,2071
 a["inq-n-ka"] = n_ka
 a["inq-R"] = 101e3 * 5.00e-3 / (n_ka * K(20))             # R = pV/(nT) = 101 000 Pa · 0,00500 m³ / (0,2071 mol · 293,15 K) = 8,32 J/(mol·K)
 a["inq-ka-ilma-He"] = m_taulukko["ilma"] / m_taulukko["He"]  # air balloon gas is 7,25 times heavier than helium
+a["inq-n-He-kaanteinen"] = M_kaasut["He"] / m_taulukko["He"]  # mistake M/m = 4,82
+a["inq-n-He-tulo"] = M_kaasut["He"] * m_taulukko["He"]        # mistake m·M = 3,32
+# Student computes R from the helium row: pV/(nT) with n = m/M = 0,2075 mol
+n_He = m_taulukko["He"] / M_kaasut["He"]
+a["inq-R-He"] = 101e3 * 5.00e-3 / (n_He * K(20))           # 101 000 Pa · 0,00500 m³ / (0,2075 mol · 293,15 K) = 8,302 J/(mol·K)
+a["inq-R-He-celsius"] = 101e3 * 5.00e-3 / (n_He * 20)      # mistake: T = 20 -> 121,7
+a["inq-R-He-litra"] = 101e3 * 5.00 / (n_He * K(20))        # mistake: V in litres -> 8302
+a["inq-R-He-kPa"] = 101 * 5.00e-3 / (n_He * K(20))         # mistake: p in kPa -> 0,008302
 # Koe 2 challenge: at 600 K, V = 100 %, p/p_ref = (N/100)(T/300 K) = 1,00 needs N = 100 · 300/600 = 50
 a["inq-koe2-N"] = 100 * 300 / 600
-a["inq-koe2-N-sqrt"] = 100 / 2 ** 0.5                     # mistake: dividing by the speed factor 1,41 gives 70,7
-a["inq-osumat-600"] = 92.04 * (600 / 300) ** 0.5          # wall hits: 92,0 1/s at 300 K (test) -> 130,2 1/s at 600 K
-a["inq-osumat-50-600"] = 92.04 * 0.5 * (600 / 300) ** 0.5 # N = 50, 600 K: 65,1 1/s, fewer hits than the reference but each 1,41 times harder
+a["inq-koe2-N-sqrt"] = 100 / 2 ** 0.5                     # mistake: dividing by √2 ≈ 1,41 gives 70,7
+a["inq-koe2-N-200-p"] = (200 / 100) * (600 / 300)         # mistake N = 200 at 600 K: p/p_ref = 4,00
+a["inq-koe2-N-25-p"] = (25 / 100) * (600 / 300)           # mistake N = 25 at 600 K: p/p_ref = 0,50
+# pred-N: N doubles at fixed T and V -> p/p_ref = 200/100 = 2
+a["inq-predN"] = 200 / 100
 
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
