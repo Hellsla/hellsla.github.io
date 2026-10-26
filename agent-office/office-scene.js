@@ -13,10 +13,19 @@ window.AgentOfficeScene = {
       {id:'repository',x:662,y:535,w:240,h:247,title:'PUBLICATION DECISION',sub:'The teacher decides',floor:'#4d5947',accent:C.green},
       {id:'site',x:916,y:535,w:266,h:247,title:'THE WEBSITE',sub:'A separate deployment',floor:'#4e525e',accent:'#c0b5db'}
     ];
-    const home = {teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668]};
-    const colors = {teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f'};
+    const home = {teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
+    const colors = {teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
+    const looks = {
+      teacher:{skin:'#d5b399',hair:'#b9c1ba',shirt:'#e2d8bd',jacket:'#647a72',pants:'#46575b',hairStyle:'parted',glasses:true,beard:'#a5aaa0',scale:1.04},
+      developer:{skin:'#b9815a',hair:'#302d2b',shirt:'#d8ad61',pants:'#424b60',hairStyle:'crop',headphones:true,beard:'#4b332b',scale:1},
+      science:{skin:'#916550',hair:'#c0bbb1',shirt:'#8fb3cb',jacket:'#667f92',pants:'#5d5850',hairStyle:'curls',glasses:true,scale:1.08},
+      pedagogy:{skin:'#e1bda3',hair:'#69434a',shirt:'#e4d5c5',jacket:'#b77c91',pants:'#534c66',hairStyle:'braid',scale:.96},
+      gatekeeper:{skin:'#d2aa82',hair:'#71523e',shirt:'#dcdcc9',jacket:'#719b95',pants:'#4d605d',hairStyle:'bun',glasses:true,scale:.99},
+      repository:{skin:'#b38b69',hair:'#6d6050',shirt:'#e7ddc8',jacket:'#95a87a',pants:'#555d50',hairStyle:'bald',beard:'#8b7760',tie:true,scale:1.03},
+      site:{skin:'#9b6d53',hair:'#bc8754',shirt:'#a69ac3',pants:'#4d5371',hairStyle:'swept',satchel:true,scale:.97}
+    };
     let figurePositions=[];
-    function box(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),w,h);}
+    function box(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(x,y,w,h);}
     function text(s,x,y,color=C.ink,size=13,align='left') {ctx.font=`${size}px monospace`;ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(s,x,y);}
     function pill(s,x,y,color=C.gold,w=120){box(x-w/2,y-14,w,22,'#222d31');text(s,x,y+1,color,11,'center');}
     function plant(x,y){box(x-11,y,22,19,'#ad8060');box(x-14,y-2,28,5,'#c49b70');box(x-2,y-36,4,36,'#7f9863');box(x-19,y-24,18,9,'#8aaa72');box(x+2,y-36,18,11,'#98b37a');box(x-12,y-46,12,12,'#6c8b58');}
@@ -43,32 +52,91 @@ window.AgentOfficeScene = {
     }
     function pagePacket(x,y,lid,color,kind='LESSON'){
       box(x-9,y-12,18,24,'#e9dfbe');box(x-5,y-7,11,3,color);box(x-5,y-1,10,2,'#86836e');box(x-5,y+4,8,2,'#86836e');
-      pill(`${lid.toUpperCase()} · ${kind}`,x,y-24,color,Math.max(98,(lid.length+kind.length+3)*6.5));
+      pill(`${lid.toUpperCase()} · ${kind}`,x,y-52,color,Math.max(98,(lid.length+kind.length+3)*6.5));
     }
-    function person(x,y,color,moving=false,seed=0){
-      const step=moving?Math.sin(options.phase()*8+seed)*3:0;
-      box(x-13,y+32,29,6,'#243033');box(x-9,y+22,7,13+Math.round(step),'#2c3c43');box(x+4,y+22,7,13-Math.round(step),'#2c3c43');
-      box(x-14,y,29,25,color);box(x-12,y-23,24,25,'#d3b18d');box(x-14,y-26,28,9,seed%2?'#493c36':'#5c503e');box(x-14,y-17,5,11,'#493c36');
-      box(x+2,y-10,3,3,'#303738');box(x+9,y-10,3,3,'#303738');box(x-19,y+7,7,15,color);box(x+15,y+8,7,14,color);
+    function person(x,y,id,moving=false,carrying=false,facing=[1,0]){
+      const look=looks[id],seed=Object.keys(looks).indexOf(id);
+      const gait=moving?Math.sin(options.phase()*6+seed)*2.1:0;
+      const bob=moving?Math.cos(options.phase()*12+seed)*.55:0;
+      const back=moving && facing[1]<-.65 && Math.abs(facing[1])>Math.abs(facing[0]);
+      ctx.save();ctx.translate(x,y);ctx.scale(look.scale,look.scale);
+      box(-14,34,31,4,'#263437');
+      if(moving && facing[0]<-.1)ctx.scale(-1,1);
+      box(-9,22+gait,7,12,look.pants);box(4,22-gait,7,12,look.pants);
+      box(-11,31+gait,10,4,'#e0d8c6');box(3,31-gait,10,4,'#ddd8cb');
+      ctx.translate(0,bob);
+      const coat=look.jacket || look.shirt;
+      box(-14,0,29,25,coat);box(-5,0,10,23,look.shirt);
+      if(look.jacket){box(-6,0,2,22,'#ffffff20');box(5,0,2,22,'#00000020');}
+      if(id==='developer'){box(-5,1,2,8,'#e8d4a4');box(5,1,2,8,'#e8d4a4');box(-9,16,19,5,'#c39850');}
+      if(look.tie && !back){box(-1,1,4,15,'#795a68');box(-2,15,6,4,'#795a68');}
+      box(-19,7-gait,7,14,coat);box(-19,19-gait,7,5,look.skin);
+      box(15,carrying?5:7+gait,7,carrying?10:14,coat);box(15,carrying?13:19+gait,7,5,look.skin);
+      box(-4,-3,10,7,look.skin);box(-12,-23,24,24,back?look.hair:look.skin);
+      if(look.hairStyle==='curls'){
+        for(let i=0;i<5;i++){box(-14+i*6,-27-(i%2)*3,8,9,look.hair);}
+        box(-15,-20,5,10,look.hair);box(10,-20,5,10,look.hair);
+      }else if(look.hairStyle==='bald'){
+        box(-13,-19,4,12,look.hair);box(10,-19,4,12,look.hair);box(-8,-25,6,3,look.hair);
+      }else{
+        box(-14,-26,28,8,look.hair);box(-14,-19,5,12,look.hair);
+        if(look.hairStyle==='parted'){box(-1,-27,3,8,'#d8dbd0');box(8,-19,6,5,look.hair);}
+        if(look.hairStyle==='crop'){box(-10,-29,6,4,look.hair);box(-2,-30,5,5,look.hair);}
+        if(look.hairStyle==='braid'){box(-17,-21,7,29,look.hair);box(-16,7,5,9,look.hair);box(-16,11,5,3,'#d7b786');}
+        if(look.hairStyle==='bun'){box(-20,-27,10,10,look.hair);box(7,-20,7,9,look.hair);}
+        if(look.hairStyle==='swept'){box(-8,-30,21,6,look.hair);box(7,-25,9,10,look.hair);}
+      }
+      if(!back){
+        box(2,-12,3,3,'#313437');box(9,-12,3,3,'#313437');box(5,-4,5,2,'#8e6353');
+        if(look.beard){box(-7,-6,18,6,look.beard);box(-4,-1,12,3,look.beard);box(4,-5,5,2,look.skin);}
+        if(look.glasses){box(-2,-15,7,2,'#3e4b4b');box(7,-15,7,2,'#3e4b4b');box(-2,-14,2,6,'#3e4b4b');box(4,-14,2,6,'#3e4b4b');box(7,-14,2,6,'#3e4b4b');box(13,-14,2,6,'#3e4b4b');box(0,-9,5,2,'#3e4b4b');box(9,-9,5,2,'#3e4b4b');box(5,-13,3,2,'#3e4b4b');}
+      }
+      if(look.headphones){box(-16,-24,30,3,'#cd8054');box(-18,-20,6,13,'#d89558');box(12,-20,6,13,'#d89558');}
+      if(look.satchel){for(let i=0;i<6;i++)box(-12+i*4,1+i*3,4,4,'#77644f');box(7,13,15,14,'#b59163');box(10,17,9,2,'#dbc29b');}
+      ctx.restore();
+    }
+    const pathCache=new WeakMap();
+    const ease=t=>t*t*(3-2*t);
+    function preparedPath(points){
+      if(pathCache.has(points))return pathCache.get(points);
+      const rounded=[points[0]];
+      for(let i=1;i<points.length-1;i++){
+        const a=points[i-1],b=points[i],c=points[i+1];
+        const incoming=Math.hypot(b[0]-a[0],b[1]-a[1]),outgoing=Math.hypot(c[0]-b[0],c[1]-b[1]);
+        const u=[(b[0]-a[0])/incoming,(b[1]-a[1])/incoming],v=[(c[0]-b[0])/outgoing,(c[1]-b[1])/outgoing];
+        if(!incoming || !outgoing || u[0]*v[0]+u[1]*v[1]<-.95){rounded.push(b);continue;}
+        const radius=Math.min(18,incoming/3,outgoing/3);
+        const entry=[b[0]-u[0]*radius,b[1]-u[1]*radius],exit=[b[0]+v[0]*radius,b[1]+v[1]*radius];
+        rounded.push(entry);
+        for(let sample=1;sample<=8;sample++){const t=sample/8,s=1-t;rounded.push([s*s*entry[0]+2*s*t*b[0]+t*t*exit[0],s*s*entry[1]+2*s*t*b[1]+t*t*exit[1]]);}
+      }
+      rounded.push(points.at(-1));
+      const lengths=rounded.slice(1).map((p,i)=>Math.hypot(p[0]-rounded[i][0],p[1]-rounded[i][1]));
+      const result={points:rounded,lengths,total:lengths.reduce((a,b)=>a+b,0),roundTrip:points[0][0]===points.at(-1)[0]&&points[0][1]===points.at(-1)[1]};pathCache.set(points,result);return result;
     }
     function position(points,fraction){
-      const lengths=points.slice(1).map((p,i)=>Math.hypot(p[0]-points[i][0],p[1]-points[i][1]));
-      let d=Math.max(0,Math.min(1,fraction))*lengths.reduce((a,b)=>a+b,0),i=0;
-      while(i<lengths.length-1 && d>lengths[i])d-=lengths[i++];
-      const t=lengths[i]?d/lengths[i]:0;
-      return [points[i][0]+(points[i+1][0]-points[i][0])*t,points[i][1]+(points[i+1][1]-points[i][1])*t];
+      const path=preparedPath(points),f=Math.max(0,Math.min(1,fraction));
+      const progress=path.roundTrip?(f<.5?ease(f*2)/2:.5+ease((f-.5)*2)/2):ease(f);
+      let d=progress*path.total,i=0;
+      while(i<path.lengths.length-1 && d>path.lengths[i])d-=path.lengths[i++];
+      const t=path.lengths[i]?d/path.lengths[i]:0,a=path.points[i],b=path.points[i+1];
+      const result=[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
+      result.facing=[(b[0]-a[0])/(path.lengths[i]||1),(b[1]-a[1])/(path.lengths[i]||1)];return result;
     }
     const journeys={
-      brief:[[150,668],[173,535],[173,335],[230,335],[212,202]],
+      brief:[[150,668],[173,535],[173,335],[230,335],[260,220]],
       checks:[[212,202],[230,335],[495,335],[495,654]],
       science:[[605,202],[610,318],[495,318],[495,654],[495,318],[610,318],[605,202]],
       pedagogy:[[990,202],[990,346],[522,346],[495,654],[522,346],[990,346],[990,202]],
       scienceReport:[[605,202],[610,325],[672,325],[716,425],[672,325],[610,325],[605,202]],
       pedagogyReport:[[990,202],[990,375],[830,375],[773,425],[830,375],[990,375],[990,202]],
       fix:[[212,202],[230,475],[682,475],[716,425],[682,475],[230,475],[212,202]],
-      receive:[[150,668],[173,502],[736,502],[739,444],[789,502],[789,580],[849,690]],
-      home:[[849,690],[789,580],[789,502],[173,502],[150,668]]
+      decision:[[735,447],[789,502],[789,580],[849,690],[789,580],[789,502],[735,447]],
+      websitePickup:[[1048,685],[1048,502],[789,502],[789,580],[849,690]]
     };
+    journeys.briefReturn=journeys.brief.slice().reverse();
+    journeys.checksReturn=journeys.checks.slice().reverse();
+    journeys.websiteReturn=journeys.websitePickup.slice().reverse();
     function reviewProgress(state){
       const cycle=options.phase()%42;
       // Timing illustrates independent work; it is not inferred from session durations.
@@ -93,7 +161,7 @@ window.AgentOfficeScene = {
     }
     function nextHandoff(){
       const review=reviewProgress(options.state());
-      const moments=[0,7,14,21,28,32,34,35,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
+      const moments=[0,7,14,21,28,31.5,32,34,35,38,39,40.5,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
       return [...new Set(moments)].sort((a,b)=>a-b).find(moment=>moment>review.cycle+.001) ?? 0;
     }
     function actors(state,review){
@@ -101,26 +169,35 @@ window.AgentOfficeScene = {
       const positions=Object.fromEntries(Object.entries(home).map(([id,p])=>[id,[...p]]));
       const packets={};const moving={};
       const walk=(id,points,t,kind,color)=>{positions[id]=position(points,t);moving[id]=!options.still();if(kind)packets[id]={kind,color:color||colors[id]};};
+      const approved=publicationApproved(state,review);
       if(state){
         if(step===0)walk('teacher',journeys.brief,f,'BRIEF');
-        if(step===1){walk('teacher',[...journeys.brief].reverse(),f);walk('developer',journeys.checks,f,'LESSON');}
-        if(step===2)walk('developer',[...journeys.checks].reverse(),f);
+        if(step===1){walk('teacher',journeys.briefReturn,f);walk('developer',journeys.checks,f,'LESSON');}
+        if(step===2)walk('developer',journeys.checksReturn,f);
         for(const role of ['science','pedagogy']){
           const r=review.roles[role];
           if(r.collecting){const progress=(cycle-r.collectStart)/(r.collectEnd-r.collectStart);walk(role,journeys[role],progress,progress>=.5?'COPY':null);}
           if(r.delivering){const progress=(cycle-r.reportStart)/(r.reportEnd-r.reportStart);walk(role,journeys[role+'Report'],progress,progress<.5?`${r.status.toUpperCase()} REPORT`:null,r.status==='PASS'?C.green:C.red);}
         }
-        if(step===4){if(review.ready)walk('teacher',journeys.receive,f,f>.78?'REVIEWED':null,C.green);else if(review.needsRevision)walk('developer',journeys.fix,f,f>.5?'REVISE':null,C.red);}
-        if(step===5 && review.ready)walk('teacher',journeys.home,f);
+        if(step===4){if(review.ready)walk('gatekeeper',journeys.decision,f,f<.5?'REVIEWED':null,C.green);else if(review.needsRevision)walk('developer',journeys.fix,f,f>=.5?'REVISE':null,C.red);}
+        if(step===5 && review.ready){
+          if(cycle<38)walk('site',journeys.websitePickup,(cycle-35)/3);
+          else if(cycle<39)positions.site=[849,690];
+          else walk('site',journeys.websiteReturn,(cycle-39)/3,approved?'APPROVED':null,C.green);
+        }
       }
       figurePositions=[];
-      for(const [i,id] of ['developer','science','pedagogy','teacher','repository'].entries()){
-        const [x,y]=positions[id];person(x,y,colors[id],moving[id],i);
+      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site']){
+        const point=positions[id],[x,y]=point;person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0]);
         figurePositions.push({id,x,y});
-        if(moving[id])pill(id==='teacher'?'TEACHER':id.toUpperCase(),x,y+54,colors[id],id.length*8+24);
-        if(packets[id])pagePacket(x+26,y+11,state.id,packets[id].color,packets[id].kind);
+        if(moving[id]){const label=id==='gatekeeper'?'COORDINATOR':id==='site'?'WEB COURIER':id.toUpperCase();pill(label,x,y+54,colors[id],label.length*8+24);}
+        if(packets[id])pagePacket(x+(moving[id] && point.facing?.[0]<-.1?-26:26),y+11,state.id,packets[id].color,packets[id].kind);
       }
       return step;
+    }
+    function publicationApproved(state,review){
+      // A merge or HTML file alone does not establish the human decision.
+      return review.ready && state?.publicationDecision?.status==='approved' && state.publicationDecision.contentHash===state.hash;
     }
     function checks(state){
       const x=495,y=650;
@@ -144,7 +221,6 @@ window.AgentOfficeScene = {
       text('REVIEW DESK',768,385,C.ink,13,'center');
       pill(review.ready?'READY':review.needsRevision?'REVISE':'WAITING',796,424,color,70);
       text(`${review.received}/2 REPORTS`,793,454,color,10,'center');text(`Recorded: ${approvals}/2 PASS`,793,473,C.muted,8,'center');
-      person(735,447,'#c3af94',false,5);
     }
     function site(state){
       box(953,596,191,116,'#26323a');box(959,602,179,102,'#e1dfce');box(959,602,179,17,'#607d77');
@@ -173,7 +249,7 @@ window.AgentOfficeScene = {
       // The publication role is represented by a seated colleague throughout the journey.
       desk(150,656,C.gold);box(42,595,34,42,'#d9d3ba');text('?',59,624,'#60756a',24,'center');
       shelf(207,595,90);plant(53,745);text('BRIEF & ASSIGN',173,743,C.gold,12,'center');
-      desk(789,656,C.green);box(732,711,116,28,'#243631');text(options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,C.amber,10,'center');
+      desk(789,656,C.green);box(732,711,116,28,'#243631');text(publicationApproved(state,review)?'APPROVED':options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,publicationApproved(state,review)?C.green:C.amber,10,'center');
       if(options.event()?.merge)text('Approver unverified',790,757,C.muted,10,'center');
       pill('2 · CHECK',484,508,C.amber,132);pill('3 · INDEPENDENT REVIEWS',779,318,C.ink,259);
       pill('5 · HUMAN DECISION',790,516,C.gold,197);text('4 · MATCH BOTH APPROVALS',770,363,'#e9dfc8',11,'center');
@@ -194,8 +270,8 @@ window.AgentOfficeScene = {
         'The developer brings the lesson packet to automatic checks.',
         'The reviewers collect separate copies at different times and review independently, in parallel.',
         reportCaption,
-        review.ready?'Both current reviews pass. The teacher receives the lesson for a publication decision.':review.needsRevision?'Approval is blocked. The developer takes a REVISE packet back to development.':`Still waiting for ${waiting.toLowerCase()} review. Nothing proceeds to the publication desk.`,
-        review.needsRevision?'After fixing the work, the developer must rerun checks and request new reviews of the changed version.':review.ready?'Publication is a human decision. Website deployment is a separate, unverified step.':`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`
+        review.ready?'The review coordinator delivers the reviewed lesson to the publication decision-maker, then returns to the review desk.':review.needsRevision?'Approval is blocked. The developer takes a REVISE packet back to development.':`Still waiting for ${waiting.toLowerCase()} review. Nothing proceeds to the publication desk.`,
+        review.needsRevision?'After fixing the work, the developer must rerun checks and request new reviews of the changed version.':!review.ready?`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`:review.cycle<38?'The website courier comes to the publication desk to collect approved material.':review.cycle<39?(publicationApproved(state,review)?'Approval is recorded for this version. The website courier can collect the approved lesson.':'The website courier waits: publication approval is not recorded for this version.'):(publicationApproved(state,review)?'The website courier carries approved material to the website. Deployment itself remains unverified.':'No publication approval is recorded. The website courier returns without collecting material.')
       ][step];
     }
     function hit(p){

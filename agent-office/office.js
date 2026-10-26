@@ -8,10 +8,10 @@
     {id:'repository', name:'Publication decision', label:'THE HUMAN DECISION', color:'#9ccb9b', path:'Git history · not an agent definition', description:'The colleague at this desk represents the teacher’s publication decision. The teacher receives reviewed work and decides what to merge. The build includes lessons with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
   ];
   const history = window.OFFICE_HISTORY || {events:[]};
-  const gatekeeper = {id:'gatekeeper',name:'Review coordinator',label:'THE REVIEW DESK',color:'#c3af94',path:'fysiikkalabra/scripts/reviews.py',description:'An ordinary office colleague represents the review approval check. Both independent reports must say PASS for the lesson’s current content hash. Missing, failed, invalid or stale reports cannot clear this step. The character illustrates an automatic rule, not an additional running agent. The teacher’s publication decision stays at the publication desk.'};
+  const gatekeeper = {id:'gatekeeper',name:'Review coordinator',label:'THE REVIEW DESK',color:'#719b95',path:'fysiikkalabra/scripts/reviews.py',description:'An ordinary office colleague represents the review approval check. Both independent reports must say PASS for the lesson’s current content hash. The coordinator delivers the reviewed packet to the decision-maker, then returns to the review desk. Missing, failed, invalid or stale reports cannot clear this step. The character illustrates an automatic rule, not an additional running agent.'};
   const teacher = {id:'teacher',name:'Teacher',label:'THE HUMAN COORDINATOR',color:'#e5dfbd',path:'Human role · not an additional AI agent',description:'Sets the lesson brief, assigns development work and receives independently reviewed material. The same teacher makes the separate publication decision. The walking character explains this workflow; Git history does not record the teacher’s actual movements or private instructions.'};
   const checks = {id:'checks',name:'Automatic checks',label:'THE CHECK RUNNER',color:'#d7b474',path:'fysiikkalabra/scripts/ · .github/workflows/fysiikkalabra-ci.yml',description:'The lesson workflow builds the preview and checks content, mathematics, simulations and layout. Saved checks.txt results appear here, but have no content hash: their freshness and CI success remain unknown. The machine illustrates automation, not an additional agent.'};
-  const website = {id:'site',name:'Website',label:'AFTER THE PUBLICATION DECISION',color:'#c0b5db',path:'fysiikkalabra/site/ · GitHub Pages',description:'The committed website is built from eligible lessons. A page in site/ is evidence of an HTML file in that commit, not proof of a fresh render or a successful deployment. Deployment stays unverified until deployment evidence is available.'};
+  const website = {id:'site',name:'Website courier',label:'AFTER THE PUBLICATION DECISION',color:'#a69ac3',path:'fysiikkalabra/site/ · GitHub Pages',description:'Represents the publishing process, not an additional AI agent. The courier comes to the publication desk, waits for a recorded approval matching this lesson version, and collects only approved material. A merge or HTML file alone is not proof of that decision. Deployment remains unverified.'};
   const officeRoles = [teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website];
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -154,7 +154,9 @@
       if(next && minute+step>next.minute)step=next.minute-minute;
       minute=Math.min(1439.999,minute+step);update();if(minute>=1439.999)setPlaying(false);
     }
-    if(now-lastPaint>80){if(playing && !$('motion').checked && !document.hidden && !$('role-dialog').open && !$('about-dialog').open)phase+=0.08*Number($('speed').value);draw();lastPaint=now;}
+    const animating=playing && !$('motion').checked && !document.hidden && !$('role-dialog').open && !$('about-dialog').open;
+    if(animating)phase+=dt*Number($('speed').value);
+    if(animating || now-lastPaint>250){draw();lastPaint=now;}
     requestAnimationFrame(frame);
   }
   $('data-source').textContent=`Git history · ${history.events.length} commits · Europe/Helsinki`;
