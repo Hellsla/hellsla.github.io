@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c1c1a5e0011e4553
-
+CONTENT-HASH: 1fb07c9450b90b82
 ## Blocking
 
 ## Polish
-- The pressure cue is subtle: only the bubbles that grow towards the surface (physically right) hint at it.
-- A depth gauge or a pressure-gauge on the wrist could be bigger; diver silhouette has no detail, which is inclusive.
 
 ## Checked
-batch delta review: Diver near the bottom, correct bubble growth upwards, sand seabed. Inclusive, no text, reads at phone width (600x360 capture).
+batch delta review: 'Mittaukset' became 'Mallin arvot' in feedback, matching the simulated source; the numbers (98/122, 199/223 kPa, 12 %) are unchanged and the feedback still repairs the misconception.

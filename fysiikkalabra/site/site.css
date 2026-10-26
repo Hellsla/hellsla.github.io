@@ -98,6 +98,7 @@ details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-ra
 @media (min-width:720px){#sim{margin-inline:-1.1rem}.lab-side #sim{margin-inline:0}}   /* the card pokes out of the 38rem text column so the 600 px canvas keeps its native size */
 #sim h2{margin-top:1rem}
 #sim-root{position:relative}#sim-root canvas{max-width:100%;height:auto!important;display:block;border-radius:10px}
+.sim-canvas{position:relative}.sim-tex-layer{position:absolute;inset:0;pointer-events:none;overflow:visible}.sim-tex{position:absolute;white-space:nowrap;line-height:1.15}.sim-tex .katex{font-size:1em}#sim-root .readout .katex,#sim-root label .katex{font-size:1.05em}
 #sim-root .readout{font-size:1rem;line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
 #sim-root .note{font-size:.9rem;color:var(--ink-2);margin:.5rem 0 0}
 #sim-root .controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.5rem 1.5rem;margin:.5rem 0}
@@ -221,7 +222,19 @@ ul.criteria{list-style:none;margin:0;padding:0}ul.criteria label{display:flex;ga
 .inquiry #exercises,.inquiry #exit{margin-top:.6rem}.inquiry #exit{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1.4rem 1rem}
 .inquiry #sim{margin-block:1rem}
 @media (max-width:600px){fieldset.choice,.experiment,.reflect{padding:.6rem .7rem}.feedback{margin-left:0}}
-@media print{.choice-actions,.exp-controls,.pending,.exp-status{display:none!important}}
+/* optional activities (inquiry.json "optional": true): a closed, named box off the core path; a conclusion's status
+   line; the provenance of supplied data (interpret "source"); the core-path note beside the title */
+details.opt{margin:1rem 0;border:1px dashed var(--line);border-radius:14px;padding:0 1rem;background:var(--bg)}
+details.opt>summary{min-height:44px;font:600 .95rem var(--sans);color:var(--ink-2)}
+details.opt[open]>summary{border-bottom:1px dashed var(--line)}details.opt>.activity{margin:.6rem 0 1rem}
+.opt-tag{display:inline-block;font:600 .72rem var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--accent-deep);border:1px solid var(--accent-deep);border-radius:999px;padding:.05rem .5rem;margin-right:.3rem}
+.act-grid>details.opt{margin:0}
+.explain-status{font-size:.92rem;color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
+.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
+p.source{display:inline-block;margin:.2rem 0 .5rem;padding:.2rem .7rem;border-radius:999px;font-size:.85rem;background:var(--bg-tint);border:1px solid var(--line)}
+p.source[data-source=measured]{border-color:var(--accent-deep)}
+.path-note{font-size:.92rem;color:var(--ink-2);margin:0 0 1rem}
+@media print{.choice-actions,.exp-controls,.pending,.exp-status,.explain-status{display:none!important}}
 
 /* Lesson page layout (human decisions 2026-10-26, CLAUDE.md "Lesson page"). A phone gets one column, as before.
    On a wide screen (.page at least 68rem, about 1100 px of window) the text keeps its 38rem column and the blocks

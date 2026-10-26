@@ -96,11 +96,11 @@ new p5((p) => {
     const allMelted = tapaus === 1 && iceNow < 0.0005, TWd = allMelted ? (mW * TW + mI * Tmelt) / M : TW;
     const meltedG = (mI - iceLeft) * 1000;                      // net mass melted (g); negative when water freezes
 
-    lMW.html(`Veden massa m<sub>v</sub> = ${fi(mW, 2)} kg`); lTW.html(`Veden alkulämpötila T<sub>v</sub> = ${fi(TW0, 1)} °C`);
-    lMI.html(`Jään massa m<sub>j</sub> = ${fi(mI, 2)} kg`); lTI.html(`Jään alkulämpötila T<sub>j</sub> = ${fi(TI0, 0)} °C`);
-    readout.html(`Lopputila: T = <strong>${fi(Tf, 1)}&nbsp;°C</strong>, jäätä jäljellä <strong>${fi(iceLeft * 1000, 1)}&nbsp;g</strong>` +
-                 `<br>Vesi luovuttaa jäähtyessään 0 °C:seen ${fk(Qv)}&nbsp;kJ` +
-                 `<br>Jään lämmitys 0 °C:seen ${fk(Qwarm)}&nbsp;kJ, kaiken jään sulatus ${fk(Qmelt)}&nbsp;kJ`);
+    lMW.html(`Veden massa $m_\\text{v} = ${tx(mW, 2)}\\,\\text{kg}$`); lTW.html(`Veden alkulämpötila $T_\\text{v} = ${tx(TW0, 1)}\\,${DEG}$`);
+    lMI.html(`Jään massa $m_\\text{j} = ${tx(mI, 2)}\\,\\text{kg}$`); lTI.html(`Jään alkulämpötila $T_\\text{j} = ${tx(TI0, 0)}\\,${DEG}$`);
+    readout.html(`Lopputila: <strong>$T = ${tx(Tf, 1)}\\,${DEG}$</strong>, jäätä jäljellä <strong>$${tx(iceLeft * 1000, 1)}\\,\\text{g}$</strong>` +
+                 `<br>Vesi luovuttaa jäähtyessään $0\\,${DEG}$:seen $${tk(Qv)}\\,\\text{kJ}$` +
+                 `<br>Jään lämmitys $0\\,${DEG}$:seen $${tk(Qwarm)}\\,\\text{kJ}$, kaiken jään sulatus $${tk(Qmelt)}\\,\\text{kJ}$`);
     const JMAX = SCALES.find((v) => v * 1000 >= Math.max(Qv, Qwarm + Qmelt)) || SCALES[SCALES.length - 1];   // chart axis max (kJ)
     window.simState = { mW, TW0, mI, TI0, Qv, Qwarm, Qmelt, Tf, iceLeftG: iceLeft * 1000, meltedG, tapaus, running, TW, TI, iceNowG: iceNow * 1000,
                         waterNowG: waterNow * 1000, q, Qend, JMAX, t: tAnim, labels: [] };
@@ -133,9 +133,9 @@ new p5((p) => {
     }
     // labels: temperatures top left, ice mass under the vessel
     p.noStroke();
-    lab(waterNow > 0.0005 ? `vesi ${fi(TWd, 1)} °C` : 'vesi: jäätyi', 14, ts(18), 'l', ts(13), [30, 80, 160]);
-    lab(iceNow > 0.0005 ? `jää ${fi(TI, 1)} °C` : 'jää: ei jäljellä', 14, ts(18) + ts(19), 'l', ts(13), [60, 120, 150]);
-    lab(`jäätä ${fi(iceNow * 1000, 0)} g`, bx, VES.bottom + ts(15), 'c', ts(12));
+    lab(waterNow > 0.0005 ? `$\\text{vesi } ${tx(TWd, 1)}\\,${DEG}$` : '$\\text{vesi: jäätyi}$', 14, ts(18), 'l', ts(13), [30, 80, 160], 320);
+    lab(iceNow > 0.0005 ? `$\\text{jää } ${tx(TI, 1)}\\,${DEG}$` : '$\\text{jää: ei jäljellä}$', 14, ts(18) + ts(19), 'l', ts(13), [60, 120, 150], 320);
+    lab(`$\\text{jäätä } ${tx(iceNow * 1000, 0)}\\,\\text{g}$`, bx, VES.bottom + ts(15), 'c', ts(12));
 
     // energy budget chart: bars to scale, gridlines, axis in kJ
     const Y = (J) => CH.y0 - (CH.y0 - CH.y1) * (J / 1000) / JMAX;
@@ -156,16 +156,16 @@ new p5((p) => {
     p.stroke(110); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]); p.line(xv + CH.bw, Y(Qv), xj + CH.bw + 6, Y(Qv)); p.drawingContext.setLineDash([]);
     p.stroke(60); p.strokeWeight(2); p.line(CH.ax, CH.y0, 590, CH.y0); p.line(CH.ax, CH.y0, CH.ax, CH.y1 - 6);
     p.noStroke();
-    for (let v = 0; v <= JMAX; v += tick) lab(`${v}`, CH.ax - 6, Y(v * 1000) + ts(4), 'r', ts(11), [60, 60, 60]);
-    lab('Q (kJ)', CH.ax - 6, CH.y1 - ts(18), 'l', ts(12), [60, 60, 60]);
-    lab(fk(Qv), xv + CH.bw / 2, Y(Qv) - 6, 'c', ts(11));
-    lab(fk(Qj), xj + CH.bw / 2, Y(Math.max(Qj, Qv)) - 8, 'c', ts(11));
-    lab('vesi', xv + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
-    lab('jää', xj + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
+    for (let v = 0; v <= JMAX; v += tick) lab(`$${v}$`, CH.ax - 6, Y(v * 1000) + ts(4), 'r', ts(11), [60, 60, 60]);
+    lab('$Q\\ (\\text{kJ})$', CH.ax - 6, CH.y1 - ts(18), 'l', ts(12), [60, 60, 60]);
+    lab(`$${tk(Qv)}$`, xv + CH.bw / 2, Y(Qv) - 6, 'c', ts(11));
+    lab(`$${tk(Qj)}$`, xj + CH.bw / 2, Y(Math.max(Qj, Qv)) - 8, 'c', ts(11));
+    lab('$\\text{vesi}$', xv + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
+    lab('$\\text{jää}$', xj + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
     // one legend line: colour → what the bar says
     const ly = CH.y0 + ts(16) + ts(20);
     let lx = 250;
-    for (const [txt, col] of [['luovuttaa', [232, 89, 12]], ['lämmitys', [25, 113, 194]], ['sulatus', [120, 185, 235]]]) {
+    for (const [txt, col] of [['$\\text{luovuttaa}$', [232, 89, 12]], ['$\\text{lämmitys}$', [25, 113, 194]], ['$\\text{sulatus}$', [120, 185, 235]]]) {
       p.noStroke(); p.fill(...col); p.rect(lx, ly - ts(9), ts(9), ts(9), 2);
       lab(txt, lx + ts(12), ly, 'l', ts(10));
       const b = labels[labels.length - 1]; lx = b.x1 + ts(7);
@@ -198,15 +198,15 @@ new p5((p) => {
     g.addColorStop(0, `rgb(${c1.join(',')})`); g.addColorStop(1, `rgb(${c2.join(',')})`);
     c.fillStyle = g; c.strokeStyle = 'rgb(150,70,10)'; c.lineWidth = 1.5; c.beginPath(); c.rect(x, y, w, h); c.fill(); c.stroke(); c.restore();
   }
-  // every canvas text: drawn with a halo, its ink box pushed to the labels list (simState.labels)
-  function lab(s, x, y, align, size, col) {
-    const ctx = p.drawingContext;
+  // every canvas text: drawn once as KaTeX (no halo), its ink box pushed to the labels list (simState.labels)
+  function lab(s, x, y, align, size, col, maxW) {
     p.textStyle(p.NORMAL); p.textSize(size); p.textAlign(p.LEFT, p.BASELINE);
-    const m = ctx.measureText(s), w = m.width, x0 = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
-    p.stroke(255, 255, 255, 210); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND); p.fill(...(col || [35, 35, 35])); p.text(s, x0, y);
-    p.noStroke(); p.text(s, x0, y);
-    labels.push({ s, x0, y0: y - m.actualBoundingBoxAscent, x1: x0 + w, y1: y + m.actualBoundingBoxDescent });
+    if (maxW && p.textWidth(s) > maxW) { size *= maxW / p.textWidth(s); p.textSize(size); }   // shrunk to fit its room when the canvas is scaled down
+    const w = p.textWidth(s), x0 = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
+    p.noStroke(); p.fill(...(col || [35, 35, 35])); p.text(s, x0, y);
+    labels.push({ s, x0, y0: y - 0.8 * size, x1: x0 + w, y1: y + 0.3 * size });
   }
-  const fi = (x, d) => { const t = x.toFixed(d); return (Number(t) === 0 ? t.replace('-', '') : t).replace('.', ',').replace('-', '−'); };   // Finnish decimal comma and minus sign, no −0,0
-  const fk = (J) => fi(J / 1000, J / 1000 >= 100 ? 0 : 1);                 // heat in kJ
+  const tx = (x, d) => { const t = x.toFixed(d); return (Number(t) === 0 ? t.replace('-', '') : t).replace('.', '{,}'); };   // decimal comma inside LaTeX, no -0,0
+  const tk = (J) => tx(J / 1000, J / 1000 >= 100 ? 0 : 1);                 // heat in kJ
+  const DEG = '{}^\\circ\\text{C}';
 });

@@ -263,28 +263,28 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); const s=window.simState; return x.includes('T = 0,0 °C') && x.includes('jäätä jäljellä 24,7 g') && x.includes('25,1 kJ') && x.includes('kaiken jään sulatus 33,4 kJ') && s.tapaus===2 && Math.abs(s.meltedG-75.3)<0.1 && s.labels.some((l)=>l.s==='vesi 20,0 °C') && s.labels.some((l)=>l.s==='jää 0,0 °C') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); const s=window.simState; return x.includes('$T = 0{,}0\\\\,{}^\\\\circ\\\\text{C}$') && x.includes('jäätä jäljellä $24{,}7\\\\,\\\\text{g}$') && x.includes('$25{,}1\\\\,\\\\text{kJ}$') && x.includes('kaiken jään sulatus $33{,}4\\\\,\\\\text{kJ}$') && s.tapaus===2 && Math.abs(s.meltedG-75.3)<0.1 && s.labels.some((l)=>l.s==='$\\\\text{vesi } 20{,}0\\\\,{}^\\\\circ\\\\text{C}$') && s.labels.some((l)=>l.s==='$\\\\text{jää } 0{,}0\\\\,{}^\\\\circ\\\\text{C}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout (decimal comma): lopputila, ice left, heats; case 2 and 75,3 g melted from simState; thermometer labels 20,0 and 0,0 °C on the canvas"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.25; r[1].value=24; r[2].value=0.05; r[3].value=-8;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); const s=window.simState; return x.includes('T = 6,0 °C') && x.includes('jäätä jäljellä 0,0 g') && x.includes('Jään lämmitys 0 °C:seen 0,8 kJ') && s.tapaus===1 ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); const s=window.simState; return x.includes('$T = 6{,}0\\\\,{}^\\\\circ\\\\text{C}$') && x.includes('jäätä jäljellä $0{,}0\\\\,\\\\text{g}$') && x.includes('Jään lämmitys $0\\\\,{}^\\\\circ\\\\text{C}$:seen $0{,}8\\\\,\\\\text{kJ}$') && s.tapaus===1 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout for the worked example: T = 6,0 °C, no ice left, warming 0,8 kJ; case 1 from simState"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.1; r[1].value=5; r[2].value=0.5; r[3].value=-30;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); const s=window.simState; return s.tapaus===3 && Math.abs(s.meltedG+88.0)<0.1 && x.includes('jäätä jäljellä') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); const s=window.simState; return s.tapaus===3 && Math.abs(s.meltedG+88.0)<0.1 && x.includes('jäätä jäljellä') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "case 3 from simState: 88,0 g of water frozen (meltedG = −88,0)"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.1; r[1].value=10; r[2].value=0.5; r[3].value=-40;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); const s=window.simState; return s.tapaus===4 && x.includes('T = −3,5 °C') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); const s=window.simState; return s.tapaus===4 && x.includes('$T = -3{,}5\\\\,{}^\\\\circ\\\\text{C}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout for case 4: T = −3,5 °C, case 4 from simState"
@@ -297,7 +297,7 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===5 && l[4].startsWith('Nopeus') && l[0].includes('0,30 kg') && l[1].includes('20,0 °C') && l[2].includes('0,10 kg') && l[3].includes('0 °C') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>simText(x)); return l.length===5 && l[4].startsWith('Nopeus') && l[0].includes('$m_\\\\text{v} = 0{,}30\\\\,\\\\text{kg}$') && l[1].includes('$T_\\\\text{v} = 20{,}0\\\\,{}^\\\\circ\\\\text{C}$') && l[2].includes('$m_\\\\text{j} = 0{,}10\\\\,\\\\text{kg}$') && l[3].includes('$T_\\\\text{j} = 0\\\\,{}^\\\\circ\\\\text{C}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "four labels with units kg, °C, kg, °C and the speed label"
@@ -334,7 +334,7 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=20; r[2].value=0.1; r[3].value=0;",
-  "expr": "(() => { const L=window.simState.labels.map(a=>a.s).join('|'); return L.includes('vesi 20,0 °C') && L.includes('jää 0,0 °C') && L.includes('jäätä 100 g') && L.includes('Q (kJ)') && L.includes('luovuttaa') && L.includes('lämmitys') && L.includes('sulatus') && window.simState.JMAX===50 && window.simState.labels.some(a=>a.s==='50') && !window.simState.labels.some(a=>a.s==='250') ? 1 : 0 })()",
+  "expr": "(() => { const L=window.simState.labels.map(a=>a.s).join('|'); return L.includes('$\\\\text{vesi } 20{,}0\\\\,{}^\\\\circ\\\\text{C}$') && L.includes('$\\\\text{jää } 0{,}0\\\\,{}^\\\\circ\\\\text{C}$') && L.includes('$\\\\text{jäätä } 100\\\\,\\\\text{g}$') && L.includes('$Q\\\\ (\\\\text{kJ})$') && L.includes('$\\\\text{luovuttaa}$') && L.includes('$\\\\text{lämmitys}$') && L.includes('$\\\\text{sulatus}$') && window.simState.JMAX===50 && window.simState.labels.some(a=>a.s==='$50$') && !window.simState.labels.some(a=>a.s==='$250$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "canvas labels: temperatures, ice mass, axis title, legend; at the default values the axis autoscales to 0–50 kJ (top tick 50, no 250)"
@@ -387,14 +387,14 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.3; r[1].value=40; r[2].value=0.1; r[3].value=0;",
-  "expr": "window.simState.JMAX===100 && window.simState.labels.some(a=>a.s==='100') && window.simState.labels.some(a=>a.s==='20') ? 1 : 0",
+  "expr": "window.simState.JMAX===100 && window.simState.labels.some(a=>a.s==='$100$') && window.simState.labels.some(a=>a.s==='$20$') ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "chart autoscale: water at 40 °C gives off 50,3 kJ, so the axis is 0–100 kJ with ticks every 20"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'); r[0].value=0.5; r[1].value=80; r[2].value=0.5; r[3].value=-40;",
-  "expr": "window.simState.JMAX===250 && window.simState.labels.some(a=>a.s==='250') ? 1 : 0",
+  "expr": "window.simState.JMAX===250 && window.simState.labels.some(a=>a.s==='$250$') ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "chart autoscale: the largest budget (ice needs 209 kJ) uses the 0–250 kJ axis"

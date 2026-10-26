@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 7b642f39b87c6795
+CONTENT-HASH: 1d83eaa86fe1d6a7
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json:718,723,725 (check-3): the prompt gives only 25 kg of stones, but the model answer uses 0,20 kg of water at 20 °C (67 kJ and 452 kJ), and criterion 4 asks for "noin 13 %", which comes from those same figures. A student cannot get these numbers from the prompt. Fix: add "0,20 kg 20-asteista vettä" to the prompt, or drop the numbers from criterion 4.
-- solutions.md:1018 (L3-03 Järkevyys): the sum "Seinä tuo 486 kJ ja juomat 50 kJ, yhteensä noin 536 kJ" is written in prose. The same holds for "565 kJ eli noin 87 %" (solutions.md:941), "452 kJ eli 87 %" (solutions.md:985) and "339 kJ eli 87 %" (inquiry.json siirto solution). Fix: write them as LaTeX, for example `$486\,\text{kJ} + 50\,\text{kJ} \approx 536\,\text{kJ}$` and `$\tfrac{565}{649} \approx 87\,\%$`.
-- inquiry.json:443 (pred-1) puts "jääpussi ja juomia" in the bag, but the `kayra` model curve has only 1,0 kg of ice ($\tau = 4190 \cdot 1{,}0 / 0{,}90$ s). This is qualitatively harmless. Fix: drop "ja juomia" so the prediction and the graph describe the same bag.
-- lesson.md:369: `$4190 \cdot 1{,}5 = 6285\,\text{J/K}$` carries no units on its factors, unlike the rest of the example. Fix: add the units to the factors.
+- inquiry.json:346 (check-3) — the prompt gives no water mass or temperature, but the model answer and criterion 4 use 0,20 kg, 20 °C (67 kJ vs 452 kJ, "noin 13 %") — state "0,20 kg 20-asteista vettä" in the prompt.
+- inquiry.json pred-1 vs kayra — pred-1 has "jääpussi ja juomia", while the kayra curve is computed for 1,0 kg ice/water only (τ = c·1,0 kg/UA); plateau unaffected, after-melt rise would be slower with drinks — drop "ja juomia" from pred-1 or say the curve has no drinks.
+- lesson.md Ydinajatus and Tiivistelmä — "yhtä paljon kuin … 80 kelvinillä": 334/4,19 = 79,7 K — "lähes yhtä paljon" or "noin 80 kelvinillä".
 
 ## Checked
-- Hash 7b642f39b87c6795 at start and end. All 18 answers.py values were recomputed independently and match. Each stored answer lies within its tolerance at the data's significant figures (check-2: 210 against 213, 1,4 %).
-- Round-1 blockers are resolved. No SVG `<text>` remains in lesson.md or inquiry.json, and every label is a `fig-tex` foreignObject. The flagged plain-text calculations (example 13 %, L1-03 97 kJ, löyly 14,3 %, mistake 6,0) are now in LaTeX.
-- Round-1 polish items are done: the hook says "parin tunnin kuluttua", Dan's feedback says "eikä muuta sen lämpötilaa", check-1 says "teho on aluksi sama", and the coolant figure's heat arrow starts inside the engine.
-- Worked example: solved symbolically first. t = 2,41 h; the cross-check gives 2,8 h, 13 % and 19,2 K/h.
-- Lesson graph: t₀ = 2,41 h, which puts x = 257,9; τ = 6285/1,2 s; T(6 h) = 25,6 °C. Inquiry graph: t₀ = 3,68 h, which puts x = 282,8; T(8 h) = 27,0 °C. Both are drawn as computed.
-- Bar figure is to scale (0,508 px/kJ). Table rows t = sm/(UAΔT) are all correct. pred-2's 2,9 h and its distractor 2,2 h are correct.
-- Löyly 85,7 %, with mistake values 14,3 and 6,0. siirto 64,9 s, with mistake values 8,4 and 56,5. virhe: 63 kJ, 267 kJ, 0,19 kg melted. The weighted average comes out the same in K and °C.
-- L3-02 checks first that all the ice melts (251 kJ > 167 kJ). Misconception 3: 126 kJ < 334 kJ. Exit ticket: 175,5 kJ and 335 kJ.
-- Formulas Pt = ΣQ, cmΔT, sm, rm, UAΔT and P = c(m/t)ΔT each come with their conditions, and all lie inside FY3's contents and prerequisites.
-- No lesson ids appear in student text. Every correct option and every feedback was reviewed.
+- One Python run recomputed all 12 exercises and 6 inquiry numerics; answers.py matches (4,48 / 452 / 26,88 / 250,5 / 14,0 / 1,617 / 648,8 / 0,857 / 91,1 / 25,95 / 8,06 / 1,511; 333, 85,7, 64,9, 8,38, 56,5, 213) and every stated answer is within its tolerance.
+- Formulas: Pt = ΣQ, Q = cmΔT/sm/rm, P = UAΔT, t = sm/(UAΔT) with the 0 °C condition, P = c(m/t)ΔT derived from Q = cmΔT; all within FY3 and its prerequisites.
+- Worked example: 41,9 kJ, 33,6 W, t = 8,69·10³ s ≈ 2,4 h, 2,8 h without drinks, 13 %, 19 K/h initial rise; symbolic first.
+- Lesson cooler-bag graph: t₀ = 2,41 h at x = 257,9; post-melt curve matches 28(1 − e^(−Δt/τ)) with τ = 6285/1,2 s at sampled points; 28 °C line at y = 70,4.
+- kayra graph: t₀ = 3,68 h at x = 282,7, curve matches τ = 4190/0,90 s; answer 333 kJ with 4 % tolerance covers reading 3,6–3,8 h; mistakes 92,5 and 5,55 right.
+- Table P and t rows (10,8…32,4 W; 8,59…2,86 h) and Pt ≈ 334 kJ; pred-2 2,9 h correct, 2,2 h distractor feedback right.
+- Bar figure 334 / 42 / 335 kJ to scale; sauna 67 vs 452 kJ; glycol c ≈ 3500 J/(kg·K) realistic.
+- Etsi virhe: 10,7 °C average, 62,9 vs 267 kJ, 0,19 kg melted, 0,61 kg left; Kelvin-option feedback right.
+- Solutions' sanity checks (×5,2 for water, 0,72 kg/s, 6,3 %, 87 %) and exit ticket (175,5 kJ, 335 kJ) correct.
+- Hash identical at start and end.

@@ -151,21 +151,21 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.1; r[1].value=60; s.value='900'; r[2].value=1.0; r[3].value=0;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); return x.includes('Vesi luovuttaa') && x.includes('17,2 kJ') && x.includes('19,1 °C') && x.includes('Kappale lämpenee') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('Vesi luovuttaa') && x.includes('$Q = 17{,}2\\\\,\\\\text{kJ}$') && x.includes('$T = 19{,}1\\\\,{}^\\\\circ\\\\text{C}$') && x.includes('Kappale lämpenee') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout names the water as the one giving heat when the body is colder"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); return x.includes('T = 24,6 °C') && x.includes('1257 J/K') && x.includes('77,0 J/K') && x.split('5,80 kJ').length===3 && x.includes('Vesi lämpenee 4,6 K') && x.includes('jäähtyy 75,4 K') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$T = 24{,}6\\\\,{}^\\\\circ\\\\text{C}$') && x.includes('$1257\\\\,\\\\text{J/K}$') && x.includes('$77{,}0\\\\,\\\\text{J/K}$') && x.split('$Q = 5{,}80\\\\,\\\\text{kJ}$').length===3 && x.includes('Vesi lämpenee $4{,}6\\\\,\\\\text{K}$') && x.includes('jäähtyy $75{,}4\\\\,\\\\text{K}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout DOM text with decimal comma: T = 24,6 °C, C = 1257 J/K and 77,0 J/K, Q = 5,80 kJ twice (given = taken), which one warms"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent.replace(/\\u00a0/g, ' '); return x.includes('Lämpömittarit nyt: vesi 20,0 °C, kappale 100,0 °C') && x.includes('20–100 °C') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('Lämpömittarit nyt: vesi $20{,}0\\\\,{}^\\\\circ\\\\text{C}$, kappale $100{,}0\\\\,{}^\\\\circ\\\\text{C}$') && x.includes('$20\\\\text{–}100\\\\,{}^\\\\circ\\\\text{C}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "before Upota the readout shows the starting temperatures and prints the chart scale 20–100 °C"
@@ -178,7 +178,7 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelector('#sim-root select'); r[0].value=0.3; r[1].value=20; s.value='385'; r[2].value=0.2; r[3].value=100;",
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===6 && l[5].startsWith('Nopeus') && l[0].includes('m') && l[0].includes('0,30 kg') && l[1].includes('20,0 °C') && l[2].includes('385 J/(kg·K)') && l[3].includes('0,20 kg') && l[4].includes('100,0 °C') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>simText(x)); return l.length===6 && l[5].startsWith('Nopeus') && l[0].includes('$m_\\\\text{v} = 0{,}30\\\\,\\\\text{kg}$') && l[1].includes('$T_\\\\text{v} = 20{,}0\\\\,{}^\\\\circ\\\\text{C}$') && l[2].includes('$c_\\\\text{k} = 385\\\\,\\\\text{J/(kg}\\\\cdot\\\\text{K)}$') && l[3].includes('$m_\\\\text{k} = 0{,}20\\\\,\\\\text{kg}$') && l[4].includes('$T_\\\\text{k} = 100{,}0\\\\,{}^\\\\circ\\\\text{C}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "five labels with units kg, °C, J/(kg·K), kg, °C"
@@ -285,7 +285,7 @@
   "note": "equal start temperatures: no heat flows"
  },
  {
-  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Lämpötilat ovat samat, joten lämpöä ei siirry.') ? 1 : 0",
+  "expr": "simText('#sim-root .readout').includes('Lämpötilat ovat samat, joten lämpöä ei siirry.') ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "equal start temperatures: the readout says no heat flows"

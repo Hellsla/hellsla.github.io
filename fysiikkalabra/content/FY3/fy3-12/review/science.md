@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3c40c07fd4da8095
+CONTENT-HASH: 0ba56764ea9b7973
 
 ## Blocking
 
 ## Polish
-- inquiry.json:13 (hook) — the Moon's albedo (about 0,12) is below the Earth's 0,30, so per square metre it absorbs more sunlight, not the same; its cold mean is also partly slow rotation — say "at least as much" sunlight is absorbed, which strengthens the point.
-- lesson.md:6 — "laajentunut ja kevyempää" — say "harvempaa" (smaller density) rather than lighter.
-- figures.py:energy_balance — the "heijastuu" arrow starts in mid-air above the atmosphere, detached from the incoming beam — start it where the incoming beam meets the clouds or the ground.
-- figures.py:wall_temperature — the drops across the two boards are larger than real; acceptable in a periaatekuva.
+- lesson.md:3 — the opening question says Earth radiates as much energy "kuin saa Auringosta"; it emits what it absorbs (about 240 of 340 W/m²), the rest is reflected — write "kuin imee Auringosta", as check-3 already does.
+- lesson.md:119 — warm air rises because it is "kevyempää"; the physics is lower density ("harvempaa"), and "kevyempi" invites the idea that a given amount of air loses mass.
 
 ## Checked
-- Round 2 diff since the passed version (inquiry.json epatasapaino text and table header, exercises.json L3-02, exit-ticket.json item 1): every number, exponent and unit preserved in the maths conversion (5,1·10¹⁴ m², 2,6·10²⁰ kg, 4,0·10³ J/(kg·K), $\Delta T$ (K), 0,20 W/(m²K) · 50 m² · 30 K = 300 W); table renders correctly in the 390 px Tutki shot.
-- answers.py run and recomputed independently in one script: all 12 answers match exercises.json within tolerance (432 W, 1,2, 30 K, 49 kWh, 238, −20 °C, 149 €, 212 kWh, 3,4, 20 K, 0,139 K, 984 kWh).
-- Worked example: 734 W + 720 W ≈ 1,45 kW, ≈ 35 kWh/vrk; symbolic form before substitution.
-- solutions.md: each unknown solved symbolically first; intermediate values (1356 kWh, 1,26 kW, 1,608·10²² J, 2755 kWh) and unit checks right.
-- inquiry numerics: tase-ennusta 150 W/m², epatasapaino ΔT = 3,6/1,2 = 3,0 K (table rows consistent), siirto 0,461 kWh with mistakes 0,749 and 460,8, check-2 140 W/m² with atmosphere balance 290 = 150 + 140, virhe 45 W.
-- Model values physical: σ(288 K)⁴ ≈ 390 W/m², σ(255 K)⁴ ≈ 240 W/m²; feedback 1,2 W/(m²·K); CO₂ 280 → 420 ppm; imbalance ≈ 1 W/m².
-- Every correct option and distractor feedback in pr-tasapaino, pred-1, pred-2, tase, virhe, check-1: physics right.
-- P = UAΔT with its steady-state condition; parallel parts add; scope within FY3 (cmΔT, lämpökerroin from earlier chapters).
-- Figures: ΔT = 36 K matches 21 °C → −15 °C, largest drop in insulation; convection loop and radiation through vacuum correct.
-- Hash identical at start and end.
+- All 12 answers recomputed in one script: every one matches answers.py and exercises.json; rounded "Vastaus" values (430 W, 240 W/m², 150 €, 210 kWh, 980 kWh) are inside tolerance.
+- Formula P = UAΔT with its steady-state condition stated; parallel parts add; ΔT in K equals ΔT in °C; within FY3's energy-transfer content; no Stefan–Boltzmann law needed.
+- Worked example: symbolic first; 734 W + 720 W ≈ 1,45 kW, 35 kWh/day; window/wall U ratio 5,9 matches "lähes kuusinkertainen".
+- Model numbers are physically consistent: σT⁴ gives 240 W/m² at −18 °C and 390 W/m² at +15 °C; back radiation 150 W/m²; atmosphere absorbs 290 and emits 150 + 140 (check-2), so both surface and atmosphere balance; tables are labelled model example values with the omitted convection and latent heat named.
+- Imbalance table: forcing 3,6 W/m², feedback 1,2 W/(m²·K), rows 236,4 / 237,6 / 238,8 and the 3,0 K answer consistent and realistic (≈ CO₂ doubling and ~3 K sensitivity); mistake values 3,6 and 4,32 reproduce their errors.
+- Every prediction's correct option (back-radiation; warming until outgoing power recovers) and every feedback is correct physics; no conduction-to-space claim survives uncorrected.
+- Inquiry numerics: tase 150 W/m², virhe 45 W, siirto 0,461 kWh (mistakes 0,749 kWh and 460,8 Wh correct), exit ticket 300 W.
+- Realistic magnitudes: U-values 0,09–2,8 W/(m²·K), CO₂ 280 → 420 ppm, ~1 W/m² imbalance, 0–700 m ocean mass 2,6·10²⁰ kg, thermos 20 K in 10 h.
+- L3-01 thermos explanation (vacuum stops conduction and convection, shiny surfaces reflect radiation, loss through neck and lid) and L3-03 heat-pump reasoning correct.
+- Figures: wall profile 21 °C → −15 °C, ΔT = 36 K, largest drop in the insulation; schematic figures say so.

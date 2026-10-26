@@ -8,7 +8,8 @@
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset.
    4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js, progressive hints.
-   5. Explanations: model answer and self-assessment criteria on request.
+   5. Explanations: model answer and self-assessment criteria once the student has written an answer of their own; a
+      conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
    7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them. */
 (() => {
@@ -137,6 +138,7 @@
       if (!A) {
         say('Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.');
         if (question) question.hidden = false;
+        measured[id] = Infinity; bus.dispatchEvent(new CustomEvent('fl:measured', { detail: { id, count: Infinity } }));   // nothing to wait for
         return;
       }
       const missing = Object.keys(initial).concat(locked, [vary]).filter((k) => !A.params || !A.params[k]);
@@ -186,12 +188,41 @@
   });
 
   // 5. explanations
+  const MIN_CHARS = 15;              // an answer of one's own, however short, before the model answer
+  const expMin = (eid) => Number(document.querySelector(`#${CSS.escape(eid)} .experiment`)?.dataset.min || 2);
+  const copyText = (text, done) => {
+    const fallback = () => { const t = document.createElement('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; } t.remove(); done(ok); };
+    try { navigator.clipboard.writeText(text).then(() => done(true), fallback); } catch (e) { fallback(); }
+  };
+  const tableText = (eid) => {        // an experiment's recorded rows as tab-separated text, headings in plain words
+    const act = document.getElementById(eid), tb = act && act.querySelector('table.exp-table');
+    if (!tb) return '';
+    let cols = []; try { cols = JSON.parse(tb.dataset.cols || '[]'); } catch (e) { cols = []; }
+    const rows = [...tb.querySelectorAll('tbody tr')].map((tr) => [...tr.children].map((td) => td.textContent.trim()).join('\t'));
+    const title = act.querySelector('h3')?.textContent.trim() || eid;
+    return [title, cols.join('\t'), ...(rows.length ? rows : ['(ei mittauksia)'])].join('\n');
+  };
   document.querySelectorAll('.explain').forEach((ex) => {
     const btn = ex.querySelector('.show-model'), model = ex.querySelector('.model'), ta = ex.querySelector('textarea');
+    const copy = ex.querySelector('.copy-notes'), status = ex.querySelector('.explain-status');
     const id = ex.closest('.activity')?.id || '';
+    let after = []; try { after = JSON.parse(ex.dataset.after || '[]'); } catch (e) { after = []; }
     const saved = store.get(id); if (saved && saved.text) ta.value = saved.text;
-    ta.addEventListener('input', () => store.set(id, { text: ta.value }));
-    btn.addEventListener('click', () => { model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.(); });
+    const say = (t) => { if (status) status.textContent = t; };
+    const missing = () => after.filter((eid) => (measured[eid] || 0) < expMin(eid));
+    ta.addEventListener('input', () => { store.set(id, { text: ta.value }); if (status && status.textContent && ta.value.trim().length >= MIN_CHARS && !missing().length) say(''); });
+    btn.addEventListener('click', () => {
+      const m = missing();
+      if (m.length) { say('Tee ensin mittaukset: ' + m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') + '. Johtopäätös tehdään omista havainnoista.'); return; }
+      if (ta.value.trim().length < MIN_CHARS) { say('Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.'); ta.focus(); return; }
+      say(''); model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.();
+    });
+    if (copy) copy.addEventListener('click', () => {
+      const title = ex.closest('.activity')?.querySelector('h3')?.textContent.trim() || 'Johtopäätös';
+      const text = [document.title, '', ...after.map(tableText).filter(Boolean).flatMap((t) => [t, '']), title + ':', ta.value.trim() || '(ei vielä kirjoitettu)'].join('\n');
+      copyText(text, (ok) => say(ok ? 'Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.' : 'Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.'));
+    });
   });
 
   // 6. reflection: the student's own predictions beside the evidence

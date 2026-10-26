@@ -30,16 +30,16 @@
   "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki t = .* s$/.test(l[1]) && l[2].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(simText(document.querySelectorAll('#sim-root label')[1])) && l[2].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "three labelled controls: Tapaus, Hetki t with unit s, Nopeus (toisto)"
  },
  {
-  "expr": "(() => { const d=document.querySelector('#sim-root details'); return d && d.querySelector('summary').textContent==='Lisätietoja' && !d.open && /mallin arvoja/.test(d.textContent) && /vakionopeudella/.test(d.textContent) ? 1 : 0 })()",
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "explanations behind a closed Lisätietoja: model values, constant velocity"
+  "note": "no Lisätietoja box; one legend line of at most 15 words (explanations live in the lesson's inquiry.json)"
  },
  {
   "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='t,tapaus' && P.t.unit==='s' ? 1 : 0 })()",
@@ -204,21 +204,21 @@
   "note": "path of A at 10 s: 20 m"
  },
  {
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('t = 10,0 s') && x.includes('A: paikka x = 20,0 m, matka s = 20,0 m') && x.includes('E: paikka x = 0,0 m, matka s = 16,0 m') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$t = 10{,}0\\\\,\\\\text{s}$') && x.includes('$\\\\text{A}$: paikka $x = 20{,}0\\\\,\\\\text{m}$, matka $s = 20{,}0\\\\,\\\\text{m}$') && x.includes('$\\\\text{E}$: paikka $x = 0{,}0\\\\,\\\\text{m}$, matka $s = 16{,}0\\\\,\\\\text{m}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout is DOM text: t, position and path of A and E at 10 s"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(2.5);",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('t = 2,5 s') && x.includes('B: paikka x = 10,0 m') && x.includes('A: paikka x = 5,0 m') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$t = 2{,}5\\\\,\\\\text{s}$') && x.includes('$\\\\text{B}$: paikka $x = 10{,}0\\\\,\\\\text{m}$') && x.includes('$\\\\text{A}$: paikka $x = 5{,}0\\\\,\\\\text{m}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout in case 1 at 2,5 s: A 5,0 m and B 10,0 m"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('3'); S(2.5);",
-  "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('D: paikka x = 22,5 m') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$\\\\text{D}$: paikka $x = 22{,}5\\\\,\\\\text{m}$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout in case 3 at 2,5 s: D at 22,5 m (30 m - 7,5 m)"

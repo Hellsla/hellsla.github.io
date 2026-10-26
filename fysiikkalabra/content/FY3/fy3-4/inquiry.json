@@ -17,7 +17,7 @@
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa aiemmilta tunneilta",
+      "title": "Kertaa: veden paino",
       "prompt": "Kuutiometri vettä (tiheys $1000\\,\\text{kg/m}^3$) on massaltaan 1000 kg. Kuinka suuri on tämän vesimäärän paino $G = mg$?",
       "choices": [
         {
@@ -37,7 +37,8 @@
           "text": "1000 kg",
           "feedback": "Kilogramma on massan yksikkö. Paino on voima, ja voiman yksikkö on newton: $G = mg = 9810\\,\\text{N}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -58,7 +59,7 @@
         {
           "text": "Kokonaispaine kasvaa, mutta vähemmän kuin kaksinkertaiseksi.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: 5 m:ssä mallin kokonaispaine on noin 150 kPa ja 10 m:ssä noin 199 kPa. Veden aiheuttama osa kaksinkertaistuu (49 kPa → 98 kPa), mutta ilmanpaine 101 kPa pysyy samana vakioterminä."
+          "feedback": "Mallin arvot tukevat tätä: 5 m:ssä mallin kokonaispaine on noin 150 kPa ja 10 m:ssä noin 199 kPa. Veden aiheuttama osa kaksinkertaistuu (49 kPa → 98 kPa), mutta ilmanpaine 101 kPa pysyy samana vakioterminä."
         },
         {
           "text": "Paine pysyy samana, koska vesi on samaa koko syvyydeltä.",
@@ -80,22 +81,23 @@
       "choices": [
         {
           "text": "Mikään ei muutu, koska paine riippuu vain syvyydestä.",
-          "feedback": "Mittaukset näyttävät, että veden aiheuttama paine kasvaa noin 98 kPa:sta 122 kPa:iin. Sama syvyys tiheämpää nestettä tarkoittaa raskaampaa nestepatsasta mittarin yläpuolella."
+          "feedback": "Mallin arvot näyttävät, että veden aiheuttama paine kasvaa noin 98 kPa:sta 122 kPa:iin. Sama syvyys tiheämpää nestettä tarkoittaa raskaampaa nestepatsasta mittarin yläpuolella."
         },
         {
           "text": "Veden aiheuttama paine pienenee, koska tiheämmässä vedessä kelluu paremmin.",
-          "feedback": "Mittaukset näyttävät kasvun, ei pienenemistä: noin 98 kPa → 122 kPa. Kelluminen kertoo nosteesta, joka on eri asia. Mittarin yläpuolinen nestepatsas on tiheämpänä raskaampi, joten paine kasvaa."
+          "feedback": "Mallin arvot näyttävät kasvun, ei pienenemistä: noin 98 kPa → 122 kPa. Kelluminen kertoo nosteesta, joka on eri asia. Mittarin yläpuolinen nestepatsas on tiheämpänä raskaampi, joten paine kasvaa."
         },
         {
           "text": "Veden aiheuttama paine kasvaa 24 %, mutta kokonaispaine vähemmän.",
           "correct": true,
-          "feedback": "Mittaukset tukevat tätä: veden aiheuttama osa kasvaa noin 98 kPa:sta 122 kPa:iin (24 %), mutta kokonaispaine vain noin 199 kPa:sta 223 kPa:iin (noin 12 %), koska ilmanpaine 101 kPa ei muutu."
+          "feedback": "Mallin arvot tukevat tätä: veden aiheuttama osa kasvaa noin 98 kPa:sta 122 kPa:iin (24 %), mutta kokonaispaine vain noin 199 kPa:sta 223 kPa:iin (noin 12 %), koska ilmanpaine 101 kPa ei muutu."
         },
         {
           "text": "Kokonaispaine kasvaa 24 %, samassa suhteessa kuin tiheys.",
-          "feedback": "Mittausten mukaan kokonaispaine kasvaa noin 199 kPa:sta 223 kPa:iin, eli noin 12 %. Tiheyden mukana kasvaa vain nesteen aiheuttama osa; ilmanpaine 101 kPa pysyy samana."
+          "feedback": "Mallin arvojen mukaan kokonaispaine kasvaa noin 199 kPa:sta 223 kPa:iin, eli noin 12 %. Tiheyden mukana kasvaa vain nesteen aiheuttama osa; ilmanpaine 101 kPa pysyy samana."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-3",
@@ -127,7 +129,8 @@
       "type": "sim",
       "text": "Simulaatiossa painemittari laskeutuu nesteeseen.",
       "howto": "Säädä syvyyttä ja tiheyttä ja seuraa mittarin lukemaa ja $(h, p)$-kuvaajaa. Ruutu *Näytä vain ylipaine* jättää kuvaajasta pois ilmanpaineen.",
-      "model": "Ilmanpaine pinnalla on kiinteä 101 kPa, ja neste on levossa ja yhtä tiheää kaikkialla (sen kokoonpuristuminen jätetään huomiotta). Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä."
+      "model": "Ilmanpaine pinnalla on kiinteä 101 kPa, ja neste on levossa ja yhtä tiheää kaikkialla (sen kokoonpuristuminen jätetään huomiotta). Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä.",
+      "calc": "Paine kasvaa syvyyden mukana tasaisesti: $p = p_0 + \\rho g h$, joten jokainen metri lisää painetta $\\rho g \\cdot 1\\,\\text{m}$ verran. Suoran kulmakerroin $\\rho g$ riippuu tiheydestä, mutta pinnalla ($h = 0$) paine on aina ilmanpaine $p_0$."
     },
     {
       "id": "exp-1",
@@ -184,7 +187,7 @@
       "id": "exp-2",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 2: vain tiheys muuttuu",
+      "title": "Lisätutkimus: vain tiheys muuttuu",
       "intro": "Testaa ennuste 2. Mittari pysyy 10 m:n syvyydessä, ja vain nesteen tiheys muuttuu. Kirjaa paineet ainakin kahdella tiheydellä, esimerkiksi bensiini 720, vesi 1000 ja Kuolleenmeren vesi 1240 kg/m³. Kumpi paineista kasvaa samassa suhteessa kuin tiheys?",
       "initial": {
         "h": 10,
@@ -212,7 +215,25 @@
       "names": {
         "h": "syvyys h",
         "rho": "tiheys ρ"
-      }
+      },
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miten paine riippuu syvyydestä?",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Kirjoita mittaustesi perusteella, miten ylipaine $\\rho g h$ ja kokonaispaine $p$ riippuivat syvyydestä. Kaksinkertaistuiko kokonaispaine, kun syvyys kaksinkertaistui? Mitä $(h, p)$-kuvaajan suoran kulmakerroin ja leikkauskohta pystyakselilla kertovat?",
+      "model": "Ylipaine kasvoi suoraan verrannollisesti syvyyteen: $5\\,\\text{m}$:ssä noin $49\\,\\text{kPa}$ ja $10\\,\\text{m}$:ssä noin $98\\,\\text{kPa}$, eli noin $9{,}8\\,\\text{kPa}$ jokaista metriä kohti. Kokonaispaine kasvoi $150\\,\\text{kPa}$:sta $199\\,\\text{kPa}$:iin eikä kaksinkertaistunut, koska siihen sisältyy pinnan ilmanpaine $p_0 = 101\\,\\text{kPa}$, joka ei riipu syvyydestä. $(h, p)$-kuvaaja on suora, jonka kulmakerroin on $\\rho g$ ja joka leikkaa pystyakselin kohdassa $p_0$. Simulaatio laskee paineen kaavasta, joten se näyttää mallin; oikeat syvyysmittarit ja sukeltajien kokemus (noin yksi ilmakehän paine lisää jokaista $10\\,\\text{m}$ kohti) tukevat sitä.",
+      "criteria": [
+        "Kerroin, miten ylipaine riippui syvyydestä, ja käytin lukuja.",
+        "Selitin, miksi kokonaispaine ei kaksinkertaistunut.",
+        "Tulkitsin kulmakertoimen ja leikkauskohdan.",
+        "Erotin mallin laskemat arvot mittauksista."
+      ]
     },
     {
       "id": "theory",
@@ -233,7 +254,8 @@
         "pred-1",
         "pred-2",
         "pred-3"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -267,7 +289,8 @@
           "text": "Laskussa ei ole virhettä.",
           "feedback": "Lasku on oikein muodoltaan, mutta $h$ on väärä. Syvyys mitataan nesteen pinnasta alaspäin; 1,0 m pohjan yläpuolella oleva kohta on 3,0 m:n syvyydessä."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -293,7 +316,8 @@
           "feedback": "Sijoitit ilmanpaineen kilopascaleina. Kun tiheys on yksikössä $\\text{kg/m}^3$ ja $g$ yksikössä $\\text{m/s}^2$, paine on sijoitettava pascaleina: $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Patsaan yläpinnalla paine on nolla, ja astian pinnan tasolla paine on ilmanpaine. Siten $p_0 = 0 + \\rho g h$, josta\n\n$$h = \\frac{p_0}{\\rho g}$$\n\n**Sijoitus.** $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 0{,}757\\,\\text{m}$.\n\n**Järkevyys.** Noin 76 cm:n elohopeapatsas vastaa samaa painetta kuin noin 10 m:n vesipatsas, koska elohopea on 13,6 kertaa tiheämpää."
+      "solution": "**Ratkaisu symbolisesti.** Patsaan yläpinnalla paine on nolla, ja astian pinnan tasolla paine on ilmanpaine. Siten $p_0 = 0 + \\rho g h$, josta\n\n$$h = \\frac{p_0}{\\rho g}$$\n\n**Sijoitus.** $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 0{,}757\\,\\text{m}$.\n\n**Järkevyys.** Noin 76 cm:n elohopeapatsas vastaa samaa painetta kuin noin 10 m:n vesipatsas, koska elohopea on 13,6 kertaa tiheämpää.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -361,7 +385,8 @@
         "Perustelen voiman paine-erolla ja pinta-alalla, $F = \\Delta p \\cdot A$, ja sanon voiman olevan kohtisuorassa kalvoa vastaan.",
         "Selitän, että tasauksen jälkeen paine on kalvon molemmilla puolilla sama, joten voimat kumoavat toisensa."
       ],
-      "model": "Pinnalla tärykalvon molemmilla puolilla on ilmanpaine, joten voimat kumoavat toisensa. Kolmen metrin syvyydessä ulkopuolinen paine on ilmanpainetta suurempi ylipaineen $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{m} \\approx 29\\,\\text{kPa}$ verran, mutta välikorvan ilma on yhä ilmanpaineessa. Paine-ero työntää kalvoa sisäänpäin, kohtisuoraan sen pintaa vastaan, voimalla $F = \\Delta p \\cdot A$; jos kalvon ala on noin $0{,}6\\,\\text{cm}^2$ (likiarvo), voima on noin 1,8 N. Kun sukeltaja päästää välikorvaan lisää ilmaa, sen paine nousee ulkopuolisen paineen suuruiseksi. Silloin kalvon eri puolilla on sama paine, voimat kumoavat toisensa ja tunne katoaa."
+      "model": "Pinnalla tärykalvon molemmilla puolilla on ilmanpaine, joten voimat kumoavat toisensa. Kolmen metrin syvyydessä ulkopuolinen paine on ilmanpainetta suurempi ylipaineen $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{m} \\approx 29\\,\\text{kPa}$ verran, mutta välikorvan ilma on yhä ilmanpaineessa. Paine-ero työntää kalvoa sisäänpäin, kohtisuoraan sen pintaa vastaan, voimalla $F = \\Delta p \\cdot A$; jos kalvon ala on noin $0{,}6\\,\\text{cm}^2$ (likiarvo), voima on noin 1,8 N. Kun sukeltaja päästää välikorvaan lisää ilmaa, sen paine nousee ulkopuolisen paineen suuruiseksi. Silloin kalvon eri puolilla on sama paine, voimat kumoavat toisensa ja tunne katoaa.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

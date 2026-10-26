@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b9d35043f608c48a
+CONTENT-HASH: 8f0b3f29f2c22cd5
 
 ## Blocking
 
 ## Polish
-- sim.js:68,108 — in case 1 the "vesi" label shows only the original water until the last ice melts, then drops to T_f in one frame: 31,9 → 23,9 °C at 60 °C, and 7,4 → 6,2 °C in the worked example. The water colour keeps following TW for another 5 s. A stirred liquid is at m_v·T_W/(m_v + m_sulanut) the whole time (the melt water is at 0 °C), and that reaches T_f smoothly. — Use that weighted value for the label, and for the colour, whenever liquid is present.
-- tests/sims/fy3-14.json (case-3 readout assertion) — after the rewrite this test checks only the substring "jäätä jäljellä". The displayed values T = 0,0 °C and 588,0 g are not asserted. — Add `x.includes('T = 0,0 °C') && x.includes('jäätä jäljellä 588,0 g')`.
-- sim-spec.md — still describes "yhden rivin selitys, mikä kolmesta tilanteesta toteutuu" under the canvas. That line has been removed, and the model has four cases. — Update the spec.
-- inquiry.json:siirto solution — the substitution `\dfrac{4190 \cdot 0{,}25 \cdot 14}{334\,000 + 4190 \cdot 8{,}0}\,\text{kg}` has no units on its values. Hint 3 leaves "J/kg" outside the LaTeX. — Write the units inside the LaTeX.
+- lesson.md (aria-labels of the energy-bar and graph figures) — they write "26.6 °C", "25.1 kJ" and "35.5 kJ" with a decimal point, while the rest of the lesson uses a decimal comma. — Use 26,6, 25,1 and 35,5.
 
 ## Checked
-- Hash b9d35043f608c48a, the same at start and end. All 12 answers recomputed in one script. They equal answers.py and are within tolerance.
-- Every inquiry, figure, exit-ticket and example number recomputed: 24,7/75,3 g, 26,6 °C, 12,6 g, 6,05 °C, −26 °C, 39,9/43,9/438 g, 40/56 °C, 12,5 g.
-- Round-2 fixes are in. The exit-ticket calculations are LaTeX with units. Example stage 2 has a substitution row with units. The koe-1 prompt says to bracket and then calculate (26,5 °C → 0,3 g of ice, 27 °C → 0,32 °C).
-- Sim re-run in Chromium for cases 1 (60 °C and 30 °C), 2, 3 and 4 and the example. End states equal my solver: 23,8; 2,6; 0/24,7 g; 0/588,0 g; −3,5 °C/600 g; 6,0 °C. q/Q_end = 1. The end label equals T_f because mixing conserves energy.
-- In case 4 the cubes vanish once the water has frozen. The labels read "vesi: jäätyi" and "jää −3,5 °C".
-- "tests-weakened" judged: coverage held. The cases 1, 2 and 4 rewrites keep every displayed number (T, ice left, kJ). The removed prose (case sentence, 75,3 g, 88,0 g) is no longer displayed, and simState now asserts it (tapaus, meltedG). The thermometer values moved to the canvas, and the exact label strings are asserted. Case 3 is slightly thinner (see Polish).
-- The howto now matches what the sim shows: thermometer "jäätyi"/"ei jäljellä", the mixed temperature, and the four cases.
-- Figures 1–3 are unchanged: numbers to scale and every label in LaTeX. No lesson id appears in the page's visible text.
-- Formulas, branch conditions and FY3 scope are unchanged and correct.
+- The diff since round 1 is notation only: johtopaatos model and criteria now use \text{v}$ instead of $\theta_\text{v}$, in line with the Kaava section. The physics is unchanged.
+- All 12 exercise answers were recomputed independently and match answers.py and exercises.json within tolerance. L3-03 checked: the water gives at most 37,59 kJ, which is less than the 42,0 kJ the ice needs, so all the water freezes and T = −3,5 °C.
+- Worked example: Q_v = 25 140 J and Q_j = 17 540 J give T = 6,05 °C. The "noin 19 °C without fusion" (18,7–19,3) and the two-thirds share (16,7/25,1) both hold.
+- Inquiry numbers: ennuste-1 (75,3 g melted, 24,7 g left, limit 26,6 °C), ennuste-2 and koe-2 (5,9 g vs 18,5 g, difference 12,6 g, heating about 1/8 of melting), johtopaatos (62,4 g at 10 °C, 10,1 °C at 40 °C), virhe (−25,6 °C, 0,225 kg ice left), siirto 39,9 g (mistakes 43,9 and 438), tarkistus-2 40 °C (mistake 56), exit (66,8 kJ, 12,5 g).
+- Experiments isolate their varied parameter. koe-1 varies TW0 with mW, mI and TI0 locked; koe-2 varies TI0 with mW, TW0 and mI locked. simState provides Tf and iceLeftG.
+- sim.js: all four cases of solve() follow from energy conservation, including the all-frozen T formula and Qend. stateAt() orders cooling, freezing, warming and melting correctly. The illustrative time constant is stated in the model box.
+- SVGs: graph break at 26,6 °C (152,8 px) and 40,1 °C at 80 °C, and energy bars at 6 px/kJ (25,1; 2,1 + 33,4) are to scale as claimed. The before/after figure gives 0,375 kg water and 0,025 kg ice.
+- Solutions' sanity checks hold: L2-01 (25,6 °C without fusion, 46 %), L2-03 (6 %), L2-04 (T read to 0,1 K means about ±1 kJ/kg) and L3-01 (42 kJ/kg).
+- Formulas state their conditions (Q_v ≥ Q_j, the partial-melt range, freezing) and stay within FY3 contents.

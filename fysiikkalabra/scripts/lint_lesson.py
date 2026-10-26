@@ -284,7 +284,7 @@ def check_solutions(L, folder, answers):
         for lab in LABELS:
             if f"**{lab}" not in body: L.warn("solutions.md", line, f"{eid}: no '**{lab}:**' step")
         for lab in ("Kaava", "Sijoitus"):
-            k = re.search(rf"\*\*{lab}:?\*\*:?([^\n]*)", body)
+            k = re.search(rf"\*\*{lab}:?\*\*:?(.*?)(?=\n\*\*|\Z)", body, re.S)   # the step runs to the next label: a display $$ block on the next line counts
             if k and "$" not in k.group(1):
                 L.page("solutions.md", line, f"{eid}: the {lab} step is plain text; write the calculation in LaTeX, $p = \\dfrac{{F}}{{A}}$ (teacher's rule 2026-10-26, NOTES 1)")
         body = tex_plain(body)
@@ -386,6 +386,13 @@ def check_sim(L, folder, meta):
         if n < 3: L.err(f"tests/sims/{folder.name}.json", 1, f"only {n} assertions, at least 3 covering the spec")
     check_text_rules(L, "sim-spec.md", (folder / "sim-spec.md").read_text()) if (folder / "sim-spec.md").exists() else None
     sim_rule = L.page if sim_edited(folder) else L.warn   # an old sim's notes are folded by sim-embed.js until the sim itself is edited
+    for m in re.finditer(r"\bp\.text\(\s*(['\"`])((?:(?!\1)[^\\]|\\.)*)\1", js):   # a literal canvas label: LaTeX (teacher 2026-10-26)
+        if "$" not in m.group(2) and m.group(2).strip():
+            sim_rule("sim.js", js.count("\n", 0, m.start()) + 1, f"canvas label '{m.group(2)[:30]}' is plain text; draw it as LaTeX, p.text('$\\text{{…}}$', x, y) (NOTES 1, sim-embed.js)")
+    for m in re.finditer(r"\.html\(\s*(['\"`])((?:(?!\1)[^\\]|\\.)*)\1", js):   # a readout with a formula outside maths
+        plain = re.sub(r"\$[^$]*\$", "", re.sub(r"\$\{[^}]*\}", "1", m.group(2)))   # template values first, then the maths
+        if re.search(r"(?<![<!-])=(?![^<]*>)|\b\d+(?:,\d+)?\s?(?:N|J|W|K|kg|g|m|s|Pa|kPa|ml|°C|%)(?![\w])", plain):
+            sim_rule("sim.js", js.count("\n", 0, m.start()) + 1, f"readout '{m.group(2)[:40]}' has a formula or a value with a unit outside $…$ (NOTES 1)")
     if "'Lisätietoja'" in js or '"Lisätietoja"' in js:
         sim_rule("sim.js", 1, "a Lisätietoja box in the sim: explanations go in the lesson's inquiry.json sim activity as howto, model and calc (Käyttöohje, Mallin oletukset, Laskennan selitys)")
     for m in re.finditer(r"createP\(((?:[^()]|\([^()]*\))*)\)", js):

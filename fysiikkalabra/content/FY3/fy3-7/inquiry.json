@@ -17,7 +17,7 @@
       "id": "pr-lampo",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa edelliseltä tunnilta",
+      "title": "Kertaa: lämpömäärä",
       "prompt": "Kattilassa on 0,50 kg vettä, jonka lämpötila on 0 °C. Kuinka suuri lämpömäärä tarvitaan, jotta vesi lämpenee 100 °C:seen? Veden ominaislämpökapasiteetti on 4190 J/(kg·K).",
       "choices": [
         {
@@ -33,7 +33,8 @@
           "text": "noin 419 kJ",
           "feedback": "Massa jäi pois. Ominaislämpökapasiteetti kertoo lämpömäärän *kilogrammaa* kohti, joten se kerrotaan massalla: $Q = cm\\Delta T = 4190 \\cdot 0{,}50 \\cdot 100\\,\\text{J} \\approx 210\\,\\text{kJ}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -91,7 +92,8 @@
           "text": "Sulaminen kestää pidempään, koska kylmää jäätä on vaikeampi lämmittää.",
           "feedback": "Sulamisen aikana jää on jo 0-asteista, eikä sen lämpötila muutu. Mallin mukaan sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (noin 84 s ja 565 s, kun $m = 0{,}25\\,\\text{kg}$)."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-3",
@@ -125,9 +127,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa jäätä lämmitetään −20 °C:sta vakioteholla, kunnes se on 130-asteista höyryä.",
+      "text": "Simulaatiossa jäätä lämmitetään −20 °C:sta vakioteholla normaalissa ilmanpaineessa, kunnes se on 130-asteista höyryä.",
       "howto": "Paina *Lämmitä* ja seuraa $(t, T)$-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan?",
-      "model": "Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen eikä höyry poistu astiasta. Ruudun arvot ovat mallin laskemia arvoja, eivät mittauksia oikeasta kattilasta."
+      "model": "Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen ja paine pysyy normaalissa ilmanpaineessa $p = 101\\,\\text{kPa}$. Astiaa sulkee kevyt, vapaasti liikkuva mäntä, eikä höyry poistu astiasta vaan laajenee männän alla; kuva ei ole mittakaavassa, sillä höyryn tilavuus on noin 1700-kertainen veteen verrattuna. Siksi vesi kiehuu $100\\,{}^\\circ\\text{C}$:ssa, ja höyryn lämpenemiseen käytetään vakiopaineen ominaislämpökapasiteettia $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$. Avoimessa kattilassa höyry karkaisi eikä lämpenisi $130\\,{}^\\circ\\text{C}$:seen. Suljetussa jäykässä astiassa paine kasvaisi höyryn muodostuessa, kiehumislämpötila nousisi, eikä käyrässä olisi vaakasuoraa osaa tasan $100\\,{}^\\circ\\text{C}$:ssa. Ruudun arvot ovat mallin laskemia, eivät mittauksia oikeasta astiasta."
     },
     {
       "id": "exp-1",
@@ -198,6 +200,24 @@
       "min": 2
     },
     {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mihin energia menee tasanteella?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Kirjoita kuvaajan ja taulukoidesi perusteella lyhyt johtopäätös. Millä lämpötilalla kiehumisen vaakasuora osa oli eri tehoilla? Miten sulamisen ja kiehumisen kestot riippuivat massasta ja tehosta, ja mitä se kertoo olomuodon muutokseen tarvittavasta energiasta? Kenen selitys ennusteessa 3 sopii tähän?",
+      "model": "Kiehumisen vaakasuora osa oli $100\\,{}^\\circ\\text{C}$:ssa kummallakin teholla; suurempi teho vain lyhensi sitä ($0{,}50\\,\\text{kg}$: $1130\\,\\text{s}$ teholla $1000\\,\\text{W}$ ja $565\\,\\text{s}$ teholla $2000\\,\\text{W}$). Kestot kaksinkertaistuivat massan mukana, joten tarvittava energia $Q = Pt$ on suoraan verrannollinen massaan: $Q = sm$ ja $Q = rm$. Kiehuminen kesti noin $6{,}8$ kertaa pidempään kuin sulaminen, koska $r/s \\approx 6{,}8$. Tasanteella energia irrottaa molekyylejä toisistaan eikä kasvata niiden liike-energiaa, joten lämpötila ei nouse (Bean selitys). Simulaatio laskee kestot taulukkoarvoista $s$ ja $r$, joten se havainnollistaa mallia mutta ei mittaa niitä. Oikeassa kokeessa $r$ määritetään mittaamalla esimerkiksi kiehuvan veden massan pieneneminen vaa'alla.",
+      "criteria": [
+        "Kerroin, että tasanne pysyi 100 °C:ssa tehosta riippumatta.",
+        "Perustelin taulukon lukemilla, että energia on verrannollinen massaan.",
+        "Selitin tasanteen hiukkasmallilla: energia irrottaa molekyylejä.",
+        "Erotin mallin laskemat kestot oikeasta mittauksesta."
+      ]
+    },
+    {
       "id": "theory",
       "stage": "selita",
       "type": "theory",
@@ -216,7 +236,8 @@
         "pred-1",
         "pred-2",
         "pred-3"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -250,7 +271,8 @@
           "text": "Laskussa ei ole virhettä: jää sulaa 0 °C:ssa itsestään.",
           "feedback": "0-asteinen jää ei sula, ellei siihen siirry energiaa; kylmälaukussa jää sulaa juuri siksi, että se ottaa lämpöä ympäristöstä. Sulamiseen tarvitaan $Q = sm$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -276,7 +298,8 @@
           "feedback": "Jaoit 60:llä. Tunti on $3600\\,\\text{s}$, ei 60 s, ja teho on joulea sekunnissa."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Höyrystämiseen tarvittava lämpömäärä on $Q = rm$, ja se siirretään ajassa $t$, joten\n\n$$P = \\frac{Q}{t} = \\frac{rm}{t}$$\n\n**Sijoitus.** $P = \\dfrac{2\\,260\\,000\\,\\text{J/kg} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}} \\approx 188\\,\\text{W}$.\n\n**Järkevyys.** Pari sataa wattia on tavallinen kotikäyttöisen höyrykostuttimen teho; todellinen ottoteho on hieman suurempi, koska osa energiasta siirtyy ympäristöön."
+      "solution": "**Ratkaisu symbolisesti.** Höyrystämiseen tarvittava lämpömäärä on $Q = rm$, ja se siirretään ajassa $t$, joten\n\n$$P = \\frac{Q}{t} = \\frac{rm}{t}$$\n\n**Sijoitus.** $P = \\dfrac{2\\,260\\,000\\,\\text{J/kg} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}} \\approx 188\\,\\text{W}$.\n\n**Järkevyys.** Pari sataa wattia on tavallinen kotikäyttöisen höyrykostuttimen teho; todellinen ottoteho on hieman suurempi, koska osa energiasta siirtyy ympäristöön.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -347,7 +370,8 @@
         "Vertaan suuruuksia: tiivistymislämpö on moninkertainen jäähtymisessä vapautuvaan lämpöön nähden.",
         "Käytän mikromallia: tiivistyessä molekyylit sitoutuvat toisiinsa ja vuorovaikutusenergia vapautuu."
       ],
-      "model": "Kun höyry osuu iholle, se tiivistyy vedeksi. Tiivistyessä molekyylit sitoutuvat toisiinsa, ja höyrystämiseen sitoutunut energia vapautuu: $Q = rm$. Sen jälkeen syntynyt vesi jäähtyy ihon lämpötilaan kuten tavallinen kuuma vesi. Yksi gramma höyryä luovuttaa tiivistyessään 2260 J ja jäähtyessään 100 °C:sta 37 °C:seen vielä noin 264 J, yhteensä noin 2,5 kJ. Sama gramma 100-asteista vettä luovuttaa vain jäähtymisen osuuden, noin 264 J, eli lähes kymmenen kertaa vähemmän."
+      "model": "Kun höyry osuu iholle, se tiivistyy vedeksi. Tiivistyessä molekyylit sitoutuvat toisiinsa, ja höyrystämiseen sitoutunut energia vapautuu: $Q = rm$. Sen jälkeen syntynyt vesi jäähtyy ihon lämpötilaan kuten tavallinen kuuma vesi. Yksi gramma höyryä luovuttaa tiivistyessään 2260 J ja jäähtyessään 100 °C:sta 37 °C:seen vielä noin 264 J, yhteensä noin 2,5 kJ. Sama gramma 100-asteista vettä luovuttaa vain jäähtymisen osuuden, noin 264 J, eli lähes kymmenen kertaa vähemmän.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

@@ -55,7 +55,7 @@
   },
   {
     "setup": "document.querySelector('#sim-root select').value='Maa'; document.querySelector('#sim-root input[type=range]').value=10;",
-    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return x.includes('G = m · g = 98,1 N') && x.includes('g = 9,81 m/s²') ? 1 : 0 })()",
+    "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$G = mg = 98{,}1\\\\,\\\\text{N}$') && x.includes('$g = 9{,}81\\\\,\\\\text{m/s}^2$') ? 1 : 0 })()",
     "expected": 1,
     "tol": 0,
     "note": "readout is DOM text: m = 10 kg, g = 9,81 m/s², G = 98,1 N"
@@ -163,14 +163,14 @@
   },
   {
     "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=2; r.dispatchEvent(new Event('input'));",
-    "expr": "new Promise(f => setTimeout(() => f(document.querySelector('#sim-root .readout').textContent.includes('asteikko 0–49,6 N') ? 1 : 0), 250))",
+    "expr": "new Promise(f => setTimeout(() => f(simText('#sim-root .readout').includes('$0\\\\text{–}49{,}6\\\\,\\\\text{N}$') ? 1 : 0), 250))",
     "expected": 1,
     "tol": 0,
     "note": "readout scale for 2 kg is 2 · 24,8 = 49,6 N (one decimal below 100 N)"
   },
   {
     "setup": "const s=document.querySelector('#sim-root select'); s.value='Mars'; document.querySelector('#sim-root input[type=range]').value=20;",
-    "expr": "(() => { const x=document.querySelector('#sim-root .readout').textContent; return window.simState.body==='Mars' && x.includes('g = 3,71 m/s² (Mars)') && x.includes('G = m · g = 74,2 N') ? 1 : 0 })()",
+    "expr": "(() => { const x=simText('#sim-root .readout'); return window.simState.body==='Mars' && x.includes('$g = 3{,}71\\\\,\\\\text{m/s}^2$ (Mars)') && x.includes('$G = mg = 74{,}2\\\\,\\\\text{N}$') ? 1 : 0 })()",
     "expected": 1,
     "tol": 0,
     "note": "Mars: body name, g and G in the readout (20 kg · 3,71 = 74,2 N)"
@@ -184,7 +184,7 @@
   },
   {
     "setup": "const r=document.querySelector('#sim-root input[type=range]'); r.value=40; r.dispatchEvent(new Event('input'));",
-    "expr": "new Promise(f => setTimeout(() => f(document.querySelector('#sim-root .readout').textContent.includes('asteikko 0–992 N') ? 1 : 0), 250))",
+    "expr": "new Promise(f => setTimeout(() => f(simText('#sim-root .readout').includes('$0\\\\text{–}992\\\\,\\\\text{N}$') ? 1 : 0), 250))",
     "expected": 1,
     "tol": 0,
     "note": "the readout states the bar chart scale as DOM text"

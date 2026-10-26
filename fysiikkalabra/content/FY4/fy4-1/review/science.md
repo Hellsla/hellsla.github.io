@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 34d62791171a8af6
+CONTENT-HASH: d1e3f3544f8c599a
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json:342 (data, solution) — the closing equation reads $x = 4\,\text{m} + 1{,}5\,\text{m/s} \cdot t$ while the figure and the substitution use 4,1 m; writing 4,1 m would match exactly (the "noin" keeps it correct as is).
-- assets/sims/fy4/fy4-1/sim.js:52 — playback-pace select still labelled "Nopeus (toisto)" in a velocity lesson; "Toiston tahti" cannot be taken for the carts' velocity.
-- lesson.md:58 — round-trip figure says "ei mittakaavassa" although its km axis is to scale; harmless.
+- solutions.md fy4-1-L2-01 — the task asks for "matka" but the solution names it "siirtymä $\Delta x$"; equal here (one direction), but in a lesson built on matka ≠ siirtymä write $s = v\,\Delta t$ or say why they coincide.
+- inquiry.json simulaatio `model` — "Kitkaa … ei huomioida" is unnecessary for carts that simply keep a constant velocity (forces are not in this lesson); "Kärryjen nopeus on vakio" says the assumption without inviting a force question.
 
 ## Checked
-- Round-2 blockers fixed: hint 1 (inquiry.json:324) now says the line does not pass through all points, which is true (it meets 19,1 m at 10 s but misses e.g. 4,2 m at 0 s); the solution reads (10 s; 19,1 m), on the drawn line x = 4,1 m + 1,5 m/s · t, and gives v = (19,1 m − 4,1 m)/10 s = 1,5 m/s exactly, inside the 0,03 tolerance.
-- Hints 2–3 (line ends near 19 m, Δx ≈ 15 m) and the mistake feedback (19,1 m/10 s; Δx = 19,1 m − 4,2 m) stay consistent with the figure and data.
-- git diff since round 2: only those two strings in inquiry.json changed; inquiry.json parses. Everything else carried forward from round 2: all 12 exercise answers and every inquiry number recomputed and matching; least squares 1,494 m/s, 4,10 m; mistake values 1,9, 1,3, 0,67 reproduce their errors.
-- SVG scales (displacement, round trip, slope triangle, jogger, robot points and line, E's path), formulas, conditions, scope, vector notation, symbolic-first solutions, realistic magnitudes — unchanged since round 2.
-- Sim: x = x₀ + vt and the case-4 piecewise motion match every cited model value; limits stated; experiments lock tapaus, vary t, keys xA/x2 exist.
-- Hash identical at start and end.
+- One Python run recomputed all 12 exercises and 12 inquiry/example numerics; answers.py matches (8,0 / −17 / 42 / 2,0 / 45 / 300 / 5,0 / −3,0 / 16 / 4,0 / 50 / 0,25; 4,0, −3,0, 1,49, 39, 13, 2,5, 170, 16) and stated answers are within tolerance.
+- Formulas Δx = x₂ − x₁, v_ka = Δx/Δt, x = x₀ + vt with symbols and the t = 0 condition; vector vs. component notation stated; within FY4 "tasainen suoraviivainen liike".
+- Displacement figure to scale (40 px/m: 2→8 m = +6 m, 8→3 m = −5 m); jogger graph to scale (20, 120, 170 m at 0, 40, 60 s).
+- Worked example symbolic first, 2,5 m/s ≈ 9 km/h, 170 m with independent check.
+- Robot data: least-squares slope 1,494 m/s, intercept 4,10 m; drawn line (0; 4,1)–(10; 19,1) and all six points at the right pixels; residuals ±0,3 m on both sides; answer 1,5 with 3 % tolerance; mistakes 1,91 / 1,3 / 0,67 correct.
+- Predictions: model values A 2 m/s, B 4 m/s, C x₀ = 20 m, D x₀ = 30 m, v = −3 m/s, A and D meet at 6 s, 12 m — all feedback numbers match sim.js CASES.
+- Experiments lock `tapaus`, vary `t`; simState exposes xA and x2 at the slider's 0,5 s steps; exp-1 4,0 m/s, exp-3 −3,0 m/s.
+- Round trip E: 8 m out, 2 s stop, back to 0 at 10 s; path 16 m, v_ka = 0; graph vertices at the right times; keskivauhti 1,6 m/s distinguished correctly.
+- sim.js pos/vel/path correct for all four cases; arrows scale with signed v; implements the lesson's model, limits stated.
+- Etsi virhe, siirto (39 m, mistakes 50/74/5,0), check-2 (13 m) and exit ticket correct; hash identical at start and end.

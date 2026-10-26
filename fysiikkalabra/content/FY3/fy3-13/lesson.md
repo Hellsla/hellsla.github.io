@@ -209,7 +209,7 @@ missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_
 Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittausalueella mutta eroavat ekstrapoloitaessa, joten epävarmuus kasvaa jatkettaessa. Epävarmuutta pienentävät tarkempi painemittari, useampi mittauspiste ja leveämpi mittausalue. Kun tulos tunnetaan, kelvinasteikon nollapiste asetetaan siihen: lämpötila kelvineinä on $T = \theta - \theta_0$.
 
 ## Esimerkki
-Kaasulämpömittarilla mitattiin suljetun pullon ilman paine seitsemässä lämpötilassa. Painemittarin epävarmuus on $\pm 1\,\text{kPa}$.
+Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa, kuten kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista ja niihin on lisätty mittausepätarkkuutta vastaavaa hajontaa; ne eivät ole oikean mittauksen tuloksia. Painemittarin epävarmuus on $\pm 1\,\text{kPa}$.
 
 | θ (°C) | p (kPa) |
 | --- | --- |

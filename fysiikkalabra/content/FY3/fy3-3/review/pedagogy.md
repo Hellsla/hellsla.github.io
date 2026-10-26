@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 6ed26d6e86edfe03
-
+CONTENT-HASH: 2d23734e5911e5bb
 ## Blocking
 
 ## Polish
-- The grey block under the thermometer bulb reads oddly (mounting post?).
-- Thermometer has no scale, so low column + snow carry the cold; fine for an illustration.
 
 ## Checked
-batch delta review: Snowy bicycle with low thermometer column shows temperature as a state variable in a second situation. Inclusive, no text, reads at phone width (600x360 capture).
+batch delta review: L3 text now says 'kokonaispaine (ei ylipaine)', which removes a real ambiguity; 300 kPa to 321 kPa still follows (300*308,15/288,15).

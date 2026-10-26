@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 2fa965b998116e5d
+CONTENT-HASH: 241b72b62e122e9c
 ## Blocking
-None.
+
 ## Polish
-- Keep the neck of the flask visibly joined to the hose where it rises from the bulb; at 360 px the gauge dial is small but readable as a pressure gauge.
+
 ## Checked
-batch delta review: hero review-batch/heroes/fy3-13.png: ice bath, flask in a room-temperature bath connected by a hose to a gauge, boiling bath on a hot plate, matches the Miksi; the gauge needle is now dark so red stays for temperature; legible at 360 px.
+batch delta review: Adding source 'simulated' with a note and a fuller sanity-check line (extrapolation over 270 C amplifies small errors) is good pedagogy and explains the gap to -273 C.

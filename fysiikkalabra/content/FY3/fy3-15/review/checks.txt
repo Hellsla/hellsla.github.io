@@ -1,7 +1,7 @@
 ok   lint
 ok   latex
 ok   build
-ok   inquiry (40 passed, 0 failed)
+ok   inquiry (43 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 fy3-15: draft (science=stale, pedagogy=stale)

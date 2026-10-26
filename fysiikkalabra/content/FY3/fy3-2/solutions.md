@@ -80,9 +80,9 @@
 
 ## fy3-2-L3-02
 **Annettu:** $m = 2{,}0\,\text{kg}$, $h = 1{,}5\,\text{m}$, pudotuksia $n = 20$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** veteen siirtynyt lämpömäärä $Q$
-**Kaava:** yhden pudotuksen työ $W_1 = m g h$; kaikki työ siirtyy veteen lämpönä, joten $Q = n W_1 = n m g h$
-**Sijoitus:** $W_1 = 2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{m} = 29{,}43\,\text{J}$; $Q = 20 \cdot 29{,}43\,\text{J} = 588{,}6\,\text{J}$
+**Kysytty:** veden sisäenergian kasvu $\Delta U$
+**Kaava:** yhden pudotuksen työ $W_1 = m g h$; kaikki työ jää veteen, joten $\Delta U = n W_1 = n m g h$
+**Sijoitus:** $W_1 = 2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{m} = 29{,}43\,\text{J}$; $\Delta U = 20 \cdot 29{,}43\,\text{J} = 588{,}6\,\text{J}$
 **Vastaus:** $590\,\text{J}$
 **Järkevyys:** Alle 600 J on pieni energiamäärä, joten lämpötilan muutos oli pieni ja vaati tarkkaa mittausta. Siksi Joule toisti pudotuksia monta kertaa.
 

@@ -38,7 +38,8 @@
           "text": "$\\Delta U = 0$, koska paine pysyy vakiona.",
           "feedback": "Vakiopaine ei tarkoita vakiosisäenergiaa. Isobaarisessa lämmityksessä kaasun lämpötila nousee (luku *Kaasujen tilanmuutokset ja Boylen laki*), joten sen sisäenergia kasvaa: $\\Delta U = Q + W = 250\\,\\text{J}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -75,9 +76,10 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa kaasua lämmitetään sylinterissä, jonka mäntää kaksi punnusta painaa niin, että kaasun paine on 200 kPa.",
-      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*: mäntä nousee, ja $(V, p)$-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*.",
-      "model": "Lukemat ovat mallin arvoja yksiatomiselle ideaalikaasulle; mäntä on kitkaton, eikä lämpöä karkaa muualle."
+      "text": "Simulaatiossa kaasua lämmitetään sylinterissä, jonka mäntää kaksi punnusta painaa; kaasun paine on $200\\,\\text{kPa}$.",
+      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*: mäntä nousee, ja $(V, p)$-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*. Valinnalla *samassa paineessa* punnukset työntävät männän takaisin; valinnalla *jäähdytä ensin* kaasu jäähtyy ensin paineeseen $p_2$ (liukusäädin). *Nopeus* muuttaa vain tahtia, ei tuloksia. Oranssi pinta-ala on kaasun tekemä työ $W_\\text{k}$, sininen kaasuun tehty työ; palkeissa sama väri tarkoittaa samaa energiaa.",
+      "model": "Lukemat ovat mallin arvoja: sylinterissä on yksiatomista ideaalikaasua. Mäntä on kitkaton ja painoton, eikä sen yläpuolella ole ilmaa, joten paineen aiheuttavat punnukset: $200\\,\\text{kPa}$ kahdella punnuksella ja alempi punnus yksin antaa paineen $p_2$. Kuuma levy on aina kaasua kuumempi ja kylmä vesi kylmempi. Lämpöä ei karkaa muualle. Alkutilavuus on $V_1 = 1{,}00\\,\\text{l}$.",
+      "calc": "Sisäenergian muutos on $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. Vakiopaineessa $p_1$ kaasun tekemä työ on $W_\\text{k} = p_1\\Delta V$ ja $Q = \\Delta U + W_\\text{k} = \\tfrac{5}{2}p_1\\Delta V$, joten $\\Delta V = \\dfrac{2Q}{5p_1}$. Vaihtoehdossa *jäähdytä ensin* ylempi punnus siirretään ylös hyllylle ja alhaalta otetaan uusi; kun mäntä on lukittu, tilavuus ei muutu. Kierroksen nettotyö $W = (p_1 - p_2)\\Delta V$ on punnuksen nostamiseen kulunut energia, ja $Q_1 - Q_2 = W$. Hyötysuhde on $\\eta = \\dfrac{W}{Q_1}$."
     },
     {
       "id": "exp-1",
@@ -239,6 +241,24 @@
       }
     },
     {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mihin lämpö kuluu?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Käytä omia taulukoitasi. Kirjoita lyhyesti: (1) mihin kokeen 1 lämpö $Q$ jakautui, (2) kumpi paluutapa antoi nettotyötä ja miksi ja (3) voiko kone muuttaa kaiken kuumalta levyltä saamansa lämmön työksi.",
+      "model": "Kokeessa 1 vain osa lämmöstä muuttui työksi: esimerkiksi rivillä $Q = 1000\\,\\text{J}$ tilavuus kasvoi $2{,}0\\,\\text{l}$, joten kaasu teki työn $p\\,\\Delta V = 400\\,\\text{J}$, ja loput $600\\,\\text{J}$ jäi sisäenergiaksi ($\\Delta U$). Kokeessa 2 tapa A palautti männän samassa paineessa: nettotyö oli $W = 0$, ja kaikki lämpö meni kylmään veteen. Tapa B jäähdytti kaasun ensin, jolloin mäntä laskeutui pienemmässä paineessa ja nettotyö oli $100\\,\\text{J}$; silloinkin kylmään veteen siirtyi $Q_2 = 550\\,\\text{J}$ lämmöstä $Q_1 = 650\\,\\text{J}$, joten $\\eta = 100/650 \\approx 15\\,\\%$. Toistuvasti toimiva kone ei siis voi muuttaa kaikkea lämpöä työksi, vaikka energia säilyy: $Q_1 = W + Q_2$. Luvut ovat simulaation mallin arvoja; malli on kitkaton, joten todellisen koneen hyötysuhde on pienempi.",
+      "criteria": [
+        "Käytin omia lukemiani (esim. $\\Delta V$, $Q_1$, $Q_2$, $W$).",
+        "Kerroin, että vain osa lämmöstä muuttuu työksi ja loput on sisäenergiaa tai siirtyy kylmään.",
+        "Selitin, miksi tapa B antaa nettotyötä mutta tapa A ei.",
+        "Totesin, että $Q_2$ ei ole nolla, vaikka energia säilyy."
+      ]
+    },
+    {
       "id": "theory",
       "stage": "selita",
       "type": "theory",
@@ -256,7 +276,8 @@
       "predictions": [
         "pred-1",
         "pred-2"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -290,7 +311,8 @@
           "text": "Laskussa ei ole virhettä.",
           "feedback": "Kokeessa 1 sisäenergia kasvoi aina vähemmän kuin tuotu lämpö, koska kaasu teki työtä. Työtä tekevän kaasun sisäenergia ei voi kasvaa enempää kuin tuotu lämpö 600 J: $\\Delta U = Q - W_\\text{k}$."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "suunnittele",
@@ -354,7 +376,8 @@
           "feedback": "Jaoit sähkötehon lämpökertoimella. Lämpökerroin kertoo, kuinka moninkertaisen lämpötehon pumppu luovuttaa sähkötehoon verrattuna, joten luovutettu teho on $3{,}5 \\cdot 9{,}0\\,\\text{MW}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Lämpökertoimen määritelmästä $P_\\text{sisälle} = \\varepsilon P_\\text{pumppu}$, ja energian säilymisestä\n\n$$\\begin{aligned} &P_\\text{jätevesi} \\\\ &= P_\\text{sisälle} - P_\\text{pumppu} \\\\ &= (\\varepsilon - 1) P_\\text{pumppu} \\end{aligned}$$\n\n**Sijoitus.** $P_\\text{jätevesi} = (3{,}5 - 1) \\cdot 9{,}0\\,\\text{MW} = 22{,}5\\,\\text{MW}$.\n\n**Järkevyys.** Jätevedestä tuleva teho on suurempi kuin sähköteho, kuten pitääkin, kun lämpökerroin on yli 2. Pumppu ei luo energiaa vaan siirtää sitä."
+      "solution": "**Ratkaisu symbolisesti.** Lämpökertoimen määritelmästä $P_\\text{sisälle} = \\varepsilon P_\\text{pumppu}$, ja energian säilymisestä\n\n$$\\begin{aligned} &P_\\text{jätevesi} \\\\ &= P_\\text{sisälle} - P_\\text{pumppu} \\\\ &= (\\varepsilon - 1) P_\\text{pumppu} \\end{aligned}$$\n\n**Sijoitus.** $P_\\text{jätevesi} = (3{,}5 - 1) \\cdot 9{,}0\\,\\text{MW} = 22{,}5\\,\\text{MW}$.\n\n**Järkevyys.** Jätevedestä tuleva teho on suurempi kuin sähköteho, kuten pitääkin, kun lämpökerroin on yli 2. Pumppu ei luo energiaa vaan siirtää sitä.",
+      "optional": true
     },
     {
       "id": "tehtavat",

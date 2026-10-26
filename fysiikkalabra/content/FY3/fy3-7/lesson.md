@@ -216,7 +216,7 @@ Lämpenemiskäyrä näyttää lämpötilan siirretyn energian funktiona. Nousevi
 </svg>
 
 ## Esimerkki
-Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetri, jossa on kiehuvaa vettä, on vaa'an päällä, ja vedessä on 1000 W:n uppokuumennin. Viiden minuutin (300 s) aikana vaa'an lukema pienenee 128 g. Mikä on veden ominaishöyrystymislämpö tämän mittauksen mukaan?
+Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetri, jossa on kiehuvaa vettä, on vaa'an päällä, ja vedessä on 1000 W:n uppokuumennin. Viiden minuutin (300 s) aikana vaa'an lukema pienenee 128 g (keksitty esimerkkiluku, ei oikean mittauksen tulos). Mikä on veden ominaishöyrystymislämpö tämän lukeman mukaan?
 
 <!-- vaihe -->
 

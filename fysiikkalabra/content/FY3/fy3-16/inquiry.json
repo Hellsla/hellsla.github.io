@@ -38,7 +38,8 @@
           "text": "Nelinkertainen teho, koska ala kerrotaan kahdella molemmilla puolilla seinää.",
           "feedback": "Kaava $P = UA\\Delta T$ sisältää alan vain kerran. Pinta-alan kaksinkertaistuminen kaksinkertaistaa tehon, ei nelinkertaista sitä."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "pred-1",
@@ -118,7 +119,8 @@
           }
         ],
         "solution": "$E = Pt = 25\\,\\text{W} \\cdot 3{,}7 \\cdot 3600\\,\\text{s} \\approx 333\\,\\text{kJ}$. Tämä on lähes täsmälleen 1,0 kg jään sulattamiseen tarvittava energia $sm = 334\\,\\text{kJ/kg} \\cdot 1{,}0\\,\\text{kg} = 334\\,\\text{kJ}$. Koko tasanteen ajan seinän läpi tullut energia kului jään sulattamiseen eikä lämpötilan nostamiseen."
-      }
+      },
+      "source": "model"
     },
     {
       "id": "taulukko",
@@ -148,7 +150,22 @@
             "feedback": "Laske vaikka kaksi riviä: tulo on kummallakin sama. Sulamiseen kuluva energia $sm$ riippuu vain jään massasta eikä siitä, kuinka nopeasti energia tulee."
           }
         ]
-      }
+      },
+      "source": "model"
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä määrää, kauanko jää kestää?",
+      "prompt": "Kirjoita kuvaajan ja taulukon perusteella lyhyesti, miksi lämpötila pysyy 0 °C:ssa niin kauan, mihin seinän läpi tullut energia kuluu ja miten kestoaika riippuu lämpötilaerosta.",
+      "model": "Niin kauan kuin jäätä on, sisälämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa: seinän läpi tuleva energia kuluu jään sulattamiseen eikä nosta lämpötilaa. Tasanteen aikana energiaa tulee $Pt \\approx 334\\,\\text{kJ}$, mikä on $1{,}0\\,\\text{kg}$:n jään sulamislämpö $sm$. Taulukon jokaisella rivillä $Pt$ on sama, joten $t = \\dfrac{sm}{UA\\,\\Delta T}$: kestoaika on kääntäen verrannollinen lämpötilaeroon. Kun $\\Delta T$ kolminkertaistuu ($12\\,\\text{K} \\to 36\\,\\text{K}$), aika kolmannestuu ($8{,}6\\,\\text{h} \\to 2{,}9\\,\\text{h}$). Arvot on laskettu mallilla, joka olettaa sisälämpötilan tasaiseksi; oikeassa laukussa jää sulaisi epätasaisesti ja kansi vuotaisi enemmän.",
+      "criteria": [
+        "Selitin tasanteen: energia kuluu sulamiseen, ei lämpötilan nostoon.",
+        "Totesin, että $Pt$ on vakio ja yhtä suuri kuin $sm$.",
+        "Kuvasin, että $t$ on kääntäen verrannollinen $\\Delta T$:hen.",
+        "Erotin mallin arvot mittauksista."
+      ]
     },
     {
       "id": "loyly",
@@ -178,7 +195,8 @@
           }
         ],
         "solution": "$Q_1 = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}25\\,\\text{kg} \\cdot 90\\,\\text{K} \\approx 94\\,\\text{kJ}$ ja $Q_2 = rm = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 0{,}25\\,\\text{kg} = 565\\,\\text{kJ}$. Osuus on $\\dfrac{Q_2}{Q_1 + Q_2} = \\dfrac{565\\,\\text{kJ}}{659\\,\\text{kJ}} \\approx 0{,}86 = 86\\,\\%$. Höyrystyminen vie lähes kaiken energian, vaikka veden lämpötila ei sen aikana muutu. Siksi kivet jäähtyvät niin selvästi, kun löylyvesi höyrystyy."
-      }
+      },
+      "optional": true
     },
     {
       "id": "theory",
@@ -198,7 +216,8 @@
       "predictions": [
         "pred-1",
         "pred-2"
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "example",
@@ -232,7 +251,8 @@
           "text": "Laskussa ei ole virhettä, koska seoksen lämpötila on aina lähtölämpötilojen välissä.",
           "feedback": "Tulos on kyllä lähtölämpötilojen välissä, mutta painotettu keskiarvo olettaa, että kaikki aine on nesteenä. Jään sulaminen vaatii energiaa, jota 25-asteinen vesi ei tässä riitä antamaan."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "siirto",
@@ -258,7 +278,8 @@
           "feedback": "Laskit vain höyrystymisen. Vesi lämpenee ensin 20 °C:sta 100 °C:seen, ja siihenkin kuluu energiaa: $cm\\Delta T$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Kiukaan energia kuluu kokonaan veden lämmitykseen ja höyrystykseen: $Pt = m(c\\Delta T + r)$, joten $t = \\dfrac{m(c\\Delta T + r)}{P}$.\n\n**Sijoitus.** $t = \\dfrac{0{,}15\\,\\text{kg} \\cdot (4190 \\cdot 80 + 2\\,260\\,000)\\,\\text{J/kg}}{6000\\,\\text{W}} = \\dfrac{389\\,280\\,\\text{J}}{6000\\,\\text{W}} \\approx 65\\,\\text{s}$.\n\n**Järkevyys.** Höyrystyminen vie 339 kJ eli 87 % energiasta. Hyvin pienen vesimäärän höyrystäminen vie siis minuutin kiukaan koko tehon."
+      "solution": "**Ratkaisu symbolisesti.** Kiukaan energia kuluu kokonaan veden lämmitykseen ja höyrystykseen: $Pt = m(c\\Delta T + r)$, joten $t = \\dfrac{m(c\\Delta T + r)}{P}$.\n\n**Sijoitus.** $t = \\dfrac{0{,}15\\,\\text{kg} \\cdot (4190 \\cdot 80 + 2\\,260\\,000)\\,\\text{J/kg}}{6000\\,\\text{W}} = \\dfrac{389\\,280\\,\\text{J}}{6000\\,\\text{W}} \\approx 65\\,\\text{s}$.\n\n**Järkevyys.** Höyrystyminen vie 339 kJ eli 87 % energiasta. Hyvin pienen vesimäärän höyrystäminen vie siis minuutin kiukaan koko tehon.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -329,7 +350,8 @@
         "Selitän, että höyry tiivistyy iholle ja luovuttaa saman energian, jonka se otti höyrystyessään, joten ihon lämpeneminen on suurta.",
         "Totean, että jos höyrystyminen ei vaatisi energiaa, kivet jäähtyisivät vain veden lämmittämiseen kuluvan pienen energian verran (noin 13 %)."
       ],
-      "model": "Löylyvesi saa tarvitsemansa energian kuumista kivistä, joten kivien sisäenergia ja lämpötila pienenevät. Veden lämmittäminen 20 °C:sta 100 °C:seen vaatii 0,20 kg:lle vain 67 kJ, mutta höyrystyminen vaatii 452 kJ, koska jokaisen kilogramman höyrystäminen vie 2260 kJ. Höyrystymisen aikana vesi pysyy 100 °C:ssa, mutta energia kuluu hiukkasten välisten sidosten purkamiseen, ja siksi kivet jäähtyvät. Kun höyry tiivistyy iholle, se luovuttaa takaisin saman energian, jonka se otti höyrystyessään, ja siksi iho lämpenee voimakkaasti. Jos höyrystyminen ei vaatisi energiaa, kivien lämpötila laskisi paljon vähemmän ja höyry ei toisi iholle juuri mitään lisäenergiaa."
+      "model": "Löylyvesi saa tarvitsemansa energian kuumista kivistä, joten kivien sisäenergia ja lämpötila pienenevät. Veden lämmittäminen 20 °C:sta 100 °C:seen vaatii 0,20 kg:lle vain 67 kJ, mutta höyrystyminen vaatii 452 kJ, koska jokaisen kilogramman höyrystäminen vie 2260 kJ. Höyrystymisen aikana vesi pysyy 100 °C:ssa, mutta energia kuluu hiukkasten välisten sidosten purkamiseen, ja siksi kivet jäähtyvät. Kun höyry tiivistyy iholle, se luovuttaa takaisin saman energian, jonka se otti höyrystyessään, ja siksi iho lämpenee voimakkaasti. Jos höyrystyminen ei vaatisi energiaa, kivien lämpötila laskisi paljon vähemmän ja höyry ei toisi iholle juuri mitään lisäenergiaa.",
+      "optional": true
     },
     {
       "id": "lahtolippu",
