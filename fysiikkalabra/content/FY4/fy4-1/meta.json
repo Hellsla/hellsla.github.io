@@ -1,0 +1,21 @@
+{
+  "id": "fy4-1",
+  "course": "FY4",
+  "title": "Paikka, nopeus ja tasainen liike kuvaajina",
+  "goals": [
+    "LOPS FY4: tasainen suoraviivainen liike",
+    "LOPS FY4: osaa tuottaa ja analysoida graafisia esityksiä mittausaineistosta",
+    "Taidot: vektorisuureet ja vektorimerkintöjen käyttö"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "paikka",
+    "siirtymä",
+    "nopeus",
+    "keskinopeus",
+    "(t,x)-kuvaaja"
+  ],
+  "sim": true,
+  "solutions": "first",
+  "image": false
+}
