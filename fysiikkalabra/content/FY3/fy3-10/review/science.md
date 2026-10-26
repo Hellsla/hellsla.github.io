@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 32171daf1820acd1
+CONTENT-HASH: 77f93e9fe50a5b6d
 
 ## Blocking
 
 ## Polish
-- inquiry.json:124 (pred-3, Bea) — "Kokeen 1 perusteella … sama paine vaatii saman hiukkasmäärän": Koe 1 uses equal-mass particles only, so it cannot show that the particle mass drops out; that comes from the model — say "Kokeen 1 ja hiukkasmallin perusteella".
-- inquiry.json:340/345 (check-1) — "sama hiukkanen ehtii seinästä seinään lyhyemmässä ajassa" is true for the walls the piston moves towards; on the other walls the hit rate per unit length rises because the gas is denser — add "ja hiukkasia on tiheämmässä".
-- solutions.md:47 (L2-01) — "noin 6 % liian suuren paineen" is plausible for O₂ (Z ≈ 0,94) but has no source; "muutaman prosentin" is safer.
+- inquiry.json:pred-1, third option feedback: "kevyt hiukkanen painaa seinää osumassa heikommin, ja nämä kumoavat toisensa". The mechanism is easier to follow if both factors are named: a light particle hits more often (it is faster), and each hit carries less momentum (m·v ∝ √m at equal T). Fix: name "osuu useammin" explicitly before "painaa heikommin".
+- solutions.md fy3-10-L2-01: the "noin 6 %" real-gas correction for O₂ at about 180 bar is plausible (Z ≈ 0,94) but has no source. Fix: soften it to "muutamia prosentteja" or keep it as is.
 
 ## Checked
-- answers.py, exercises.json and my own formulas agree for all 12 exercises (largest rounding offset 0,4 %, inside the 2 % tolerance).
-- Worked example: n = 0,2073 mol, m = 0,829 g, air 6,01 g, molar volume 24,1 l. The SVG labels (0,21 mol, 0,83 g, 6,0 g) match.
-- siirto: 91 200 mol and 2645 kg. The listed mistakes (9869 kg if T stays in °C, 2,64 kg if p stays in kPa) are right. 20 °C air weighs 3,37 t, so the difference is about 700 kg.
-- virhe (1,2 → 0,083 mol), check-2 (3,0; mistakes 2,25 and 1,69) and the exit ticket (0,601 mol) recompute correctly.
-- Feedback physics for pred-1 to pred-3 is right: at the same T, the larger hit rate (∝ v) times the momentum per hit (∝ mv) gives p ∝ m⟨v²⟩ ∝ T, whatever the particle mass.
-- The interpret table's pV/(NT) column follows from its own rows (1,05 / 1,00 / 0,98 / 0,98 / 0,99).
-- sim.js: impulse per unit perimeter per unit time and P_REF = NkT/A follow 2D kinetic theory. I ran the sim in Chromium (10 × 2 s runs per state). Measured p matches pV = NkT within 0,1 % in 9 states. In 300 → 600 K the hit rate grows 1,41× (93,6 → 132,2 1/s) and p grows 2,00×. At N = 20 the scatter is about ±10 %, as the note says.
-- exp-1 and exp-2: the start states, locked parameters and slider ranges isolate the varied quantity. simState exposes pMeasured, pPredicted and hitRate.
-- Scope and conditions: Kelvin temperatures, total pressure in the formula, gauge pressure cancels in the difference (L3-03), and the model fails at high p and low T.
+- All 12 exercise answers recomputed independently, matching answers.py and exercises.json within 0,3 % (each within tolerance). The Järkevyys numbers in the solutions also check out: 0,32 kg, 9,0 l, 51 °C, 1,32/1,81 g, 23,9 l and −17 %, 0,55 mol with 22/16 g, 2,6 kg with 27 % leaked.
+- Weighing table: the exact masses with R = 8,314 are 0,829/5,80/6,01/9,12 g, and the table values are within ±0,02 g of them. m/M = 0,2075/0,2064/0,2076/0,2068 mol, mean 0,2071, R = 8,32 ≈ 8,3. The ratios 7,25 (≈7) and 10,96 (≈11) are correct.
+- Worked example: n = 0,2073 mol, m = 0,829 g, molar volume 24,1 l. The solution is symbolic first.
+- inq-* values in answers.py: koe2-N = 50, the mistake values 71, 200 (→4,00) and 25 (→0,50) are consistent, and check-2 = 3,0 with mistakes 2,25 and 1,69. Exit ticket: 0,601 mol.
+- virhe: 1,2 mol (wrong) and 0,0829 mol (right). siirto: 2645 kg (answer 2640), Celsius mistake 9870, kPa mistake 2,64, outside air 3,37·10³ kg so the "noin 700 kg" lift is right.
+- sim.js physics: per-perimeter impulse rate = NkT/A with kT = m⟨vₓ²⟩ = KT300 is consistent. P_REF is computed, not fitted. Thermalisation after a change in N and the √T rescale are correct. The model hit rate is 0,920 per particle per second → 92/s at N = 100.
+- Sim measured with Playwright, 15 two-second windows each: N = 100, 300 K: hits 93 (86–99), p 0,96–1,05. N = 100, 600 K: hits 132, p 1,94–2,10. N = 50, 600 K: hits 68, p 0,94–1,04. N = 40 and 60 give 0,81 and 1,18, so N = 50 is clearly identifiable. This supports the pred-2 feedback (≈1,4× hits, 2× pressure), the exp-2 solution (≈65 hits) and the numeric answer.
+- Taulukko rows reproduced by the sim: 4,04 (pred. 4), 1,03 (pred. 1), 5,16 (pred. 5,14). Their pV/(NT) ≈ 1 matches the table.
+- Experiments: exp-1 and exp-2 lock T and V and vary only N. The initial values are within the slider ranges (T max 600, N step 10 reaches 50). The measured keys hitRate, pMeasured and pPredicted exist in simState.
+- Figures: the Ydinajatus balloons (0,21 mol, 0,83 g and 6,0 g; helium arrows longer) and the Kaava cylinders (2N, 2T, V/2 → 2p) are correct. The check-1 and check-3 model answers are correct kinetic theory.
