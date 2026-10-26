@@ -1,9 +1,10 @@
 {
   "version": 1,
-  "contribution": "Kaasun paine, tilavuus ja lämpötila kytketään toisiinsa: isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki), kääntäen verrannollisuus todennetaan suorana (1/V, p)-koordinaatistossa, ja vakiopaineessa tai vakiotilavuudessa tilavuus tai paine on verrannollinen kelvinlämpötilaan.",
+  "contribution": "Kaasun paine, tilavuus ja lämpötila kytketään toisiinsa: isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki), kääntäen verrannollisuus todennetaan suorana (1/V, p)-koordinaatistossa, ja vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan samoin kuin paine vakiotilavuudessa (fy3-3).",
   "prior": [
     "Paine on voima pinta-alaa kohti, $p = F/A$, ja ilmanpaine on noin 101 kPa (fy3-4)",
-    "Kaasut laajenevat lämmetessä paljon enemmän kuin nesteet ja kiinteät aineet (fy3-8)"
+    "Vakiotilavuudessa kaasun paine on verrannollinen kelvinlämpötilaan, ja suoran jatke osuu absoluuttiseen nollapisteeseen (fy3-3)",
+    "Kaasut laajenevat lämmetessä paljon enemmän kuin nesteet ja kiinteät aineet; ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ vakiopaineessa (fy3-8)"
   ],
   "activities": [
     {
@@ -45,15 +46,15 @@
       "id": "pred-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Ennuste 2: lukittu mäntä ja lämmitys",
-      "prompt": "Sylinterin mäntä lukitaan niin, että ilman tilavuus pysyy 50 ml:ssa. Ilman paine on 100 kPa ja lämpötila 20 °C. Ilma lämmitetään 40 °C:seen. Mikä on paine nyt?",
+      "title": "Ennuste 2: vapaa mäntä ja lämmitys",
+      "prompt": "Sylinterin mäntä pääsee nyt liikkumaan vapaasti, ja sen päällä oleva paino pitää ilman paineen 100 kPa:ssa. Ilmaa on 50 ml, ja sen lämpötila on 20 °C. Ilma lämmitetään 80 °C:seen. Mikä on ilman tilavuus nyt?",
       "justify": true,
       "reveal": { "after": "exp-2", "min": 2 },
       "choices": [
-        { "text": "Noin 200 kPa, koska lämpötila kaksinkertaistuu.", "feedback": "Kokeessa paine oli 40 °C:ssa noin 106 800 Pa eli 107 kPa. Celsiusasteiden suhde ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla ei ole absoluuttinen nollapiste. Kelvineinä lämpötila nousee 293 K:stä 313 K:iin, vain noin 7 %." },
-        { "text": "Noin 107 kPa, eli paine kasvaa noin 7 %.", "correct": true, "feedback": "Koe tukee tätä: 20 °C:ssa (293,15 K) $p = 100\\,000\\,\\text{Pa}$ ja 40 °C:ssa (313,15 K) $p \\approx 106\\,800\\,\\text{Pa}$. Paine kasvaa samassa suhteessa kuin kelvinlämpötila, 313/293 ≈ 1,07, ja $p/T$ pysyy 341 Pa/K:ssa." },
-        { "text": "100 kPa, koska tilavuus ei muutu.", "feedback": "Kokeessa paine nousi noin 107 kPa:iin, vaikka tilavuus pysyi samana. Lämmetessä hiukkaset liikkuvat nopeammin, joten ne osuvat seinämiin useammin ja kovempaa." },
-        { "text": "120 kPa, koska paine nousee 1 kPa jokaista lämpöastetta kohti.", "feedback": "Kokeessa paine nousi vain noin 6,8 kPa, kun lämpötila nousi 20 astetta. Muutos on noin 0,34 kPa astetta kohti, koska paine on verrannollinen koko kelvinlämpötilaan, ja 20 K on vain noin 7 % 293 K:stä." }
+        { "text": "200 ml, koska lämpötila nelinkertaistuu.", "feedback": "Kokeessa tilavuus oli 80 °C:ssa noin 60 ml. Celsiusasteiden suhde 80/20 ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla on vain veden jäätymispiste. Kelvineinä lämpötila nousee 293 K:stä 353 K:iin, noin 20 %." },
+        { "text": "Noin 60 ml, eli tilavuus kasvaa noin 20 %.", "correct": true, "feedback": "Koe tukee tätä: 20 °C:ssa (293,15 K) $V = 50{,}0\\,\\text{ml}$ ja 80 °C:ssa (353,15 K) $V \\approx 60{,}2\\,\\text{ml}$. Tilavuus kasvaa samassa suhteessa kuin kelvinlämpötila, 353/293 ≈ 1,20, ja $V/T$ pysyy 0,171 ml/K:ssa." },
+        { "text": "50 ml, koska paine pysyy samana.", "feedback": "Kokeessa tilavuus kasvoi noin 60 ml:aan, vaikka paine pysyi 100 kPa:ssa. Lämmetessä hiukkaset liikkuvat nopeammin ja osuvat mäntään useammin ja kovempaa, joten mäntä nousee. Se pysähtyy, kun harventuneen kaasun törmäykset painavat sitä taas yhtä paljon kuin paino: paine on sama, tilavuus suurempi." },
+        { "text": "110 ml, koska tilavuus kasvaa 1 ml jokaista lämpöastetta kohti.", "feedback": "Kokeessa tilavuus kasvoi vain noin 10 ml, kun lämpötila nousi 60 astetta. Kasvu on noin 0,17 ml kelviniä kohti, koska tilavuus on verrannollinen koko kelvinlämpötilaan, ja 60 K on vain noin 20 % 293 K:stä." }
       ]
     },
     {
@@ -95,15 +96,25 @@
       "id": "exp-2",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 2: vain lämpötila muuttuu",
-      "intro": "Testaa ennuste 2. Mäntä on lukittu, joten tilavuus pysyy 50 ml:ssa. Muuta vain lämpötilaa ja kirjaa mittaus ainakin lämpötiloissa 20 °C ja 40 °C, mielellään myös 100 °C ja −50 °C. Taulukko näyttää säätämäsi celsiuslämpötilan θ, sitä vastaavan kelvinlämpötilan T, paineen pascaleina ja suhteen p/T yksikössä Pa/K.",
-      "initial": { "mode": "isokoorinen", "Vml": 50, "Tc": 20 },
+      "title": "Koe 2: vain lämpötila muuttuu, paine pysyy samana",
+      "intro": "Testaa ennuste 2. Mäntä pääsee liikkumaan, ja sen päällä oleva paino pitää paineen 100 kPa:ssa, joten tilanmuutos on isobaarinen. Muuta vain lämpötilaa ja kirjaa mittaus ainakin lämpötiloissa 20 °C ja 80 °C, mielellään myös 150 °C ja −50 °C. Katso (T, V)-kuvaajasta, mihin kohtaan pisteiden kautta piirretty suora osuisi, jos sitä jatkettaisiin. Taulukko näyttää säätämäsi celsiuslämpötilan θ, kelvinlämpötilan T, ilman tilavuuden millilitroina ja suhteen V/T yksikössä ml/K.",
+      "initial": { "mode": "isobaarinen", "Tc": 20 },
       "names": { "mode": "tilanmuutos", "Vml": "tilavuus V", "Tc": "θ" },
       "units": { "Vml": "ml", "Tc": "°C" },
-      "locked": ["mode", "Vml"],
+      "locked": ["mode"],
       "vary": "Tc",
-      "measure": [ { "key": "T", "label": "T (K)" }, { "key": "p", "label": "p (Pa)" }, { "key": "constant", "label": "p/T (Pa/K)" } ],
-      "min": 2
+      "measure": [ { "key": "T", "label": "T (K)" }, { "key": "Vgas", "label": "V (ml)" }, { "key": "VperT", "label": "V/T (ml/K)" } ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on 20 °C:n tilavuudesta 50 ml. Oppitunnilla fy3-8 ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
+        "choices": [
+          { "text": "Se on $1/(293\\,\\text{K})$: vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan, joten jokainen kelvin kasvattaa sitä 1/293-osalla 20 °C:n tilavuudesta.", "correct": true, "feedback": "Oikein. Mittauksissa tilavuus kasvaa noin 0,171 ml kelviniä kohti, ja $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ eli 1/293. Kaasun suuri lämpölaajeneminen on siis sama ilmiö kuin tämän tunnin kaasulaki. Siksi kaasun γ ei ole vakio kuten metallin α, vaan se riippuu lämpötilasta, josta lähdetään." },
+          { "text": "Se on ilman ominaisuus, joka mitataan erikseen, eikä sillä ole yhteyttä kaasulakeihin.", "feedback": "Laske mittauksistasi: 0,171 ml kelviniä kohti on 50 ml:sta $3{,}4 \\cdot 10^{-3}$ eli 1/293. Luku seuraa siitä, että vakiopaineessa $V/T$ pysyy vakiona ja 20 °C on 293 K." },
+          { "text": "Se on $1/(273\\,\\text{K})$, koska kelvinasteikon nollakohta on −273 °C.", "feedback": "Lähellä, mutta suhteellinen kasvu lasketaan tilavuudesta, josta lähdetään. Tässä lähdetään 20 °C:sta eli 293 K:stä, joten jokainen kelvin kasvattaa tilavuutta 1/293-osalla, ja $1/(293\\,\\text{K}) \\approx 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Jos lähdettäisiin 0 °C:sta, osuus olisi 1/273." },
+          { "text": "Se on 0,17, koska tilavuus kasvaa 0,17 ml kelviniä kohti.", "feedback": "0,17 ml/K on tilavuuden kasvu millilitroina. Lämpötilakerroin on *suhteellinen* kasvu, joten jaa alkutilavuudella: $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ kelviniä kohti." }
+        ]
+      }
     },
     {
       "id": "ruisku",
