@@ -236,7 +236,7 @@ details.fold[open]{padding-bottom:.4rem}
 details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
 details.sim-box>summary,#sim-root details.note>summary{font:600 .92rem var(--sans);color:var(--accent-deep)}
 details.sim-box>div{font-size:.95rem;padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
-.lab-side #sim{margin-block:.6rem 0}
+.lab-side #sim{margin-block:.6rem 0;margin-inline:0}   /* inside the lab the card stays in its column (768 px: it poked 18 px out) */
 @container page (min-width:68rem){
   .reading{--wide:1}
   .intro-row,.stage>.act-grid,.stage>.lab,.stage>.fold,.act-theory>.fig-row,article#teoria>.fig-row,.stage-practice details.level{width:100cqw}
