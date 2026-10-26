@@ -13,7 +13,8 @@
 // by √(T_new/T_old). The physics runs in fixed steps of 1/240 s, so the result does not depend on the frame rate.
 // Picture: particle colour = speed (the same scale at every T, so a hotter gas turns orange), a trail = the path of the
 // last 0,05 s (length ∝ speed), a flash = one wall hit (more N, higher T or smaller V → more flashes = more pressure).
-// The gauge and the bars share one scale; the gauge needle and the measured bar have the colour of the wall flashes.
+// The gauge and the bar share one scale; the gauge needle and the measured bar have the colour of the wall flashes.
+// The model value (N/100)(T/300)(100/V) is not shown: the experiments ask the student to find the relation from measurements.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and as test hooks
 // window.simAdvance(s) (runs s simulated seconds at once) and window.simRestart() (the state right after loading).
 // Speed control: each frame advances the simulated time by (real frame time)·speed; the pressure average runs over
@@ -24,10 +25,9 @@ new p5((p) => {
   const BOX = { x: 16, y: 70 }, WT = 7, PW = 9;                  // top-left corner of the gas region, wall and piston (px)
   const V300 = 240, KT300 = V300 * V300 / 2;                     // v_rms at 300 K (px/s); kT/m = <v²>/2 in 2D
   const P_REF = 100 * KT300 / (LXMAX * LY);                      // p = NkT/A in the reference state (m = 1)
-  const BAR = { ax: 414, x: [450, 548], w: 50, y0: 345, y1: 165 };   // pressure axis, bar centres, bar area
+  const BAR = { ax: 414, x: [502], w: 64, y0: 345, y1: 165 };        // pressure axis, bar centre, bar area
   const GA = { x: 48, y: 31, r: 26 };                            // pressure gauge on the top wall
-  const LV = { x0: 440, x1: 560, lo: 0.8, hi: 1.2 };             // ratio level: track ends and the range shown
-  const MEAS = [205, 45, 125], FLASH = [255, 90, 175], PRED = [140, 147, 160];   // measured pressure, wall hit, prediction
+  const MEAS = [205, 45, 125], FLASH = [255, 90, 175];          // measured pressure, wall hit
   const SLOW = [60, 130, 255], MID = [245, 215, 80], FAST = [255, 120, 30], VMAX = 420;   // speed scale 0…420 px/s
   const TAIL = 0.05, HN = 256, FL = 30;                          // trail (s), stored hits, flash life (steps = 0,125 s)
   const mix = (a, b, f) => a.map((x, i) => Math.round(x + (b[i] - x) * f));
@@ -90,7 +90,7 @@ new p5((p) => {
     if (++curSteps === BIN) { bins.push(cur); hbins.push(hcur); if (bins.length > NBINS) { bins.shift(); hbins.shift(); } cur = hcur = curSteps = 0; }
   };
   const advance = (sec) => { acc += sec / DT; const n = Math.floor(acc + 1e-6); acc -= n; for (let i = 0; i < n; i++) step(); };
-  // moving average of the pressure relative to p_ref, the state equation's prediction and their ratio
+  // moving average of the pressure relative to p_ref; the state equation's prediction and the ratio stay in simState for the tests, never on screen
   const update = () => {
     const tAvg = (bins.length * BIN + curSteps) * DT, J = bins.reduce((a, b) => a + b, 0) + cur;
     const pMeasured = tAvg > 0 ? J / tAvg / P_REF : 0, Vrel = Number(sV.value()) / 100;
@@ -120,9 +120,9 @@ new p5((p) => {
     p.createElement('summary', 'Lisätietoja').parent(det);
     p.createP('Tasomalli: pinta-ala vastaa tilavuutta. Hiukkaset törmäävät vain seiniin, eivät toisiinsa. Paine on seiniin osuvien törmäysten ' +
               'keskiarvo 2 s:n ajalta (simuloitua aikaa), joten mitattu arvo heiluu; kun N on noin 20, vaihtelu on noin ±10 % (tilastollista vaihtelua). ' +
-              'Paineet ovat suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00), ja suhde mitattu/ennuste on pV/(NT) suhteessa vertailutilaan. ' +
+              'Paine on suhteessa vertailutilaan N = 100, T = 300 K, V = 100 % (paine 1,00, katkoviiva). Välähdyksiä on yhtä monta kuin osumia seiniin. ' +
               'Tilavuuden muutos ei muuta hiukkasten nopeuksia, joten lämpötila pysyy samana. ' +
-              'Pylväiden asteikko mukautuu arvoihin: vertaa pylväitä toisiinsa ja lue arvot numeroina, älä vertaa pylväiden korkeutta eri tiloissa. ' +
+              'Pylvään asteikko mukautuu arvoon: lue paine numerona, älä vertaa pylvään korkeutta eri tiloissa. ' +
               'Nopeus muuttaa vain animaation tahtia, ei mitattuja arvoja.').parent(det);
     window.simAdvance = (s) => { sync(); advance(s); return update().pMeasured; };
     window.simRestart = () => { restart(); update(); };
@@ -138,11 +138,10 @@ new p5((p) => {
 
   p.draw = () => {
     sync(); advance(Math.min(p.deltaTime, 100) / 1000 * speed);   // simulated time = real time · speed
-    const { Vrel, pMeasured: pm, pPredicted: pp, ratio, tAvg } = update();
+    const { Vrel, pMeasured: pm, tAvg, hitRate } = update();   // the model value pPredicted stays in simState, not on screen
     lN.html(`Hiukkasmäärä N = ${N}`); lT.html(`Lämpötila T = ${T} K`); lV.html(`Tilavuus V = ${fi(Vrel * 100, 0)} %`);
     readout.html(`Mitattu paine p/p<sub>ref</sub> = <strong>${fi(pm, 2)}</strong> (keskiarvo ${fi(tAvg, 1)} s:n ajalta)` +
-      `<br>Tilanyhtälön ennuste p/p<sub>ref</sub> = (N/100) · (T/300 K) · (100 %/V) = <strong>${fi(pp, 2)}</strong>` +
-      `<br>Suhde mitattu/ennuste = <strong>${fi(ratio, 2)}</strong>`);
+      `<br>Osumia seiniin <strong>${fi(hitRate, 0)}</strong> sekunnissa`);
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k), ctx = p.drawingContext;
@@ -159,7 +158,7 @@ new p5((p) => {
       labels.push({ s: str, x0: x0l, y0: y - p.textAscent(), x1: x0l + w, y1: y + p.textDescent() });
     };
     p.background(250);
-    const v = Math.max(pm, pp);                                  // one scale (1, 2 or 5 · 10ⁿ) for the gauge and the bars
+    const v = pm;                                                // one scale (1, 2 or 5 · 10ⁿ) for the gauge and the bars
     if (v * 1.05 > top || v < 0.4 * top) [top, tStep] = scale(v);
     const nT = Math.round(top / tStep), yT = 8 + ts(14);
 
@@ -196,13 +195,12 @@ new p5((p) => {
       p.fill(255, 255, 255, 220 * a); p.ellipse(cx, cy, side ? 2 : len / 2, side ? len / 2 : 2);
     }
 
-    // pressure gauge on the top wall: ticks at the bar axis steps, grey mark = prediction, needle = measured pressure
+    // pressure gauge on the top wall: ticks at the bar axis steps, needle = measured pressure
     const ang = (x) => Math.PI * (0.75 + 1.5 * Math.min(x / top, 1.05) / 1.05);
     steel(GA.x - 3, GA.y + GA.r - 2, 6, y0 - WT - GA.y - GA.r + 2, true);
     p.fill(70, 78, 88); p.circle(GA.x, GA.y, 2 * GA.r); p.fill(252, 252, 248); p.circle(GA.x, GA.y, 2 * GA.r - 6);
     p.stroke(60); p.strokeWeight(1.2);
     for (let j = 0; j <= nT; j++) { const a = ang(j * tStep); p.line(GA.x + 15 * Math.cos(a), GA.y + 15 * Math.sin(a), GA.x + 21 * Math.cos(a), GA.y + 21 * Math.sin(a)); }
-    const ap = ang(pp); p.noStroke(); p.fill(...PRED); p.circle(GA.x + 18 * Math.cos(ap), GA.y + 18 * Math.sin(ap), 6);
     needle += (Math.min(pm / top, 1.05) - needle) * 0.25;
     const an = Math.PI * (0.75 + 1.5 * needle / 1.05);
     p.stroke(...MEAS); p.strokeWeight(2.5); p.line(GA.x, GA.y, GA.x + 20 * Math.cos(an), GA.y + 20 * Math.sin(an));
@@ -221,16 +219,11 @@ new p5((p) => {
     p.noStroke(); p.fill(80); p.triangle(x0, yD, x0 + 7, yD - 3.5, x0 + 7, yD + 3.5); p.triangle(xp, yD, xp - 7, yD - 3.5, xp - 7, yD + 3.5);
     p.fill(40); lab(`V = ${fi(Vrel * 100, 0)} %`, xm, 388, p.CENTER);
 
-    // ratio measured/predicted as a level: bubble on a 0,8…1,2 track, green zone 0,95…1,05
-    const lx = (r) => LV.x0 + (LV.x1 - LV.x0) * (Math.min(Math.max(r, LV.lo), LV.hi) - LV.lo) / (LV.hi - LV.lo), yL = yT + 8 + ts(14);
-    p.textSize(ts(13)); lab(`mitattu/ennuste = ${fi(ratio, 2)}`, 590, yT, p.RIGHT);
-    p.stroke(150); p.strokeWeight(1); p.fill(238, 241, 236); p.rect(LV.x0 - 7, yL - 7, LV.x1 - LV.x0 + 14, 14, 7);
-    p.noStroke(); p.fill(175, 222, 170); p.rect(lx(0.95), yL - 6, lx(1.05) - lx(0.95), 12);
-    p.stroke(90); for (const r of [0.9, 1, 1.1]) { p.line(lx(r), yL - 7, lx(r), yL - 3); p.line(lx(r), yL + 3, lx(r), yL + 7); }
-    p.noStroke(); p.fill(...MEAS); p.circle(lx(ratio), yL, 10); p.fill(255, 255, 255, 200); p.circle(lx(ratio) - 1.5, yL - 1.5, 3);
-    p.fill(60); p.textSize(ts(11)); lab('0,8', LV.x0 - 11, yL + ts(4), p.RIGHT); lab('1,2', LV.x1 + 11, yL + ts(4), p.LEFT);
+    // wall hits per second (the flashes), top right; yL keeps the place of the axis name below it
+    const yL = yT + 8 + ts(14);
+    p.textSize(ts(13)); lab(`osumia/s = ${fi(hitRate, 0)}`, 590, yT, p.RIGHT);
 
-    // bars: measured and predicted relative pressure, axis scaled to the values shown, gridlines, reference line 1
+    // bar: measured relative pressure, axis scaled to the values shown, gridlines, reference line 1
     const Y = (x) => BAR.y0 - (BAR.y0 - BAR.y1) * Math.min(x, top * 1.05) / top;
     const dec = tStep < 0.1 ? 2 : tStep < 1 ? 1 : 0;              // decimals of the tick labels
     p.stroke(225); p.strokeWeight(1);
@@ -244,8 +237,8 @@ new p5((p) => {
     const yName = yL + 14 + ts(13);                              // axis name p/p_ref with a drawn subscript
     p.textSize(ts(11)); lab('ref', 590, yName + ts(3), p.RIGHT); const wSub = p.textWidth('ref');
     p.textSize(ts(13)); lab('p/p', 590 - wSub - 1, yName, p.RIGHT);
-    const cols = [MEAS, PRED], vals = [pm, pp], names = ['mitattu', 'ennuste'];
-    for (let i = 0; i < 2; i++) {
+    const cols = [MEAS], vals = [pm], names = ['mitattu'];          // one bar: the measured pressure only
+    for (let i = 0; i < 1; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
       rect(bx, by, BAR.w, BAR.y0 - by, grad(bx, 0, bx + BAR.w, 0, [[0, rgb(c, 0.85)], [0.35, rgb(mix(c, [255, 255, 255], 0.35))], [1, rgb(mix(c, [0, 0, 0], 0.25))]]));
       p.fill(40); p.textSize(ts(13)); lab(fi(vals[i], 2), BAR.x[i], by - 6, p.CENTER);
