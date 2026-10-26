@@ -5,18 +5,52 @@
     {id:'developer', name:'Developer', label:'THE MAKER', color:'#edba70', x:270, y:250, path:'fysiikkalabra/.claude/agents/developer.md', description:'Writes and improves lesson text, exercises, figures and simulations. The existing developer workflow checks the lesson before it goes to independent review.'},
     {id:'science', name:'Science reviewer', label:'THE PHYSICS CHECK', color:'#8cb8e0', x:640, y:250, path:'fysiikkalabra/.claude/agents/science-reviewer.md', description:'Independently checks physics, mathematics, units, numerical answers and simulation behaviour. Reviews the work without editing the lesson.'},
     {id:'pedagogy', name:'Pedagogy reviewer', label:'THE LEARNER’S VIEW', color:'#e9a1b4', x:270, y:430, path:'fysiikkalabra/.claude/agents/pedagogy-reviewer.md', description:'Independently reviews the learning path, explanations, activities and usability on a phone and laptop. Reviews the work without editing the lesson.'},
-    {id:'repository', name:'Repository', label:'THE RECORD KEEPER', color:'#9ccb9b', x:640, y:430, path:'Git history · not an agent definition', description:'Represents recorded commits and merges, including changes outside the three lesson roles. A commit is a saved change, not evidence of a deployment, test pass or running agent.'}
+    {id:'repository', name:'Publication desk', label:'THE HUMAN DECISION', color:'#9ccb9b', x:640, y:430, path:'Git history · not an agent definition', description:'The teacher decides what to merge. The build includes lessons with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
   ];
   const history = window.OFFICE_HISTORY || {events:[]};
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = [], minute = 0, playing = false, lastFrame = 0, lastPaint = 0, phase = 0;
+  let lessonState = null, snapshotEvent = null, workflowKey = '';
   const canvas = $('office'), ctx = canvas.getContext('2d');
   const dateFormat = new Intl.DateTimeFormat('en-GB', {weekday:'short',day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Helsinki'});
   const dayLabel = day => dateFormat.format(new Date(day+'T12:00:00+02:00'));
   const time = m => `${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(Math.floor(m)%60).padStart(2,'0')}`;
   const roleNames = ids => ids.map(id=>roles.find(r=>r.id===id)?.name || id).join(' · ');
   const activeRoles = () => new Set(selected.filter(e=>e.minute<=minute && minute-e.minute<8).flatMap(e=>e.roles));
+  const allLessons = new Map((history.snapshots || []).flat().map(lesson=>[lesson.id,lesson.title]));
+  for(const [id,title] of [...allLessons].sort()){
+    const option=document.createElement('option');option.value=id;option.textContent=`${id.toUpperCase()} · ${title}`;$('lesson').append(option);
+  }
+  function workflow(event){
+    const key=`${event?.id || ''}:${$('lesson').value}`;
+    if(key===workflowKey)return;
+    workflowKey=key;snapshotEvent=event;
+    const states=history.snapshots?.[event?.snapshot] || [];
+    const target=$('lesson').value==='auto'?(event?.changedLessons?.find(id=>states.some(s=>s.id===id)) || states[0]?.id):$('lesson').value;
+    lessonState=states.find(s=>s.id===target) || null;
+    const state=lessonState;
+    $('lesson-title').textContent=state?`${state.id.toUpperCase()} · ${state.title}`:'No lesson snapshot at this point in the recorded history.';
+    const labels={PASS:'PASS · current version',FAIL:'FAIL · revision needed',stale:'STALE · content changed',missing:'Waiting for review',invalid:'Invalid report · blocked'};
+    for(const role of ['science','pedagogy']){
+      const report=state?.[role];const status=report?.status || 'missing';
+      $(role+'-status').textContent=state?(labels[status] || 'Not observed'):'Not observed';
+      $(role+'-card').dataset.state=status;
+      $(role+'-evidence').textContent=report?.hash?`Report: ${report.hash}${status==='stale'?' · no longer matches':''}`:state?'No valid matching report in this snapshot.':'';
+    }
+    $('stage-draft').dataset.state=state?'PASS':'missing';
+    $('stage-checks').dataset.state=state?.checks.failed?'FAIL':'unknown';
+    $('checks-status').textContent=state?.checks.failed?`${state.checks.failed} saved failures · freshness unknown`:state?.checks.passed?`${state.checks.passed} saved passes · freshness unknown`:'No check results observed';
+    $('stage-reviews').dataset.state=state?.eligible?'PASS':state && [state.science.status,state.pedagogy.status].includes('FAIL')?'FAIL':'unknown';
+    $('stage-gate').dataset.state=state?(state.eligible?'PASS':'FAIL'):'unknown';
+    $('gate-status').textContent=state?(state.eligible?'OPEN · both PASS on current hash':'CLOSED · both current approvals required'):'No lesson selected';
+    $('stage-publish').dataset.state='unknown';
+    const statuses=state?[state.science.status,state.pedagogy.status]:[];
+    $('handoff-status').textContent=!state?'Select an event or a different lesson to inspect the gate.':state.eligible?'Review gate cleared. Automated checks and the teacher’s publication decision remain separate.':statuses.includes('FAIL')?'Return to developer: a reviewer found a blocking issue. Fix it, run checks and request independent review again.':statuses.includes('stale')?'Return to review: the lesson changed after approval. Earlier PASS reports cannot open this gate.':'Waiting for both independent reviewers. A missing or invalid approval keeps the gate closed.';
+    $('snapshot-evidence').textContent=event?`Commit ${event.id.slice(0,7)} · ${event.timestamp}. ${state?.hash?'Lesson content hash: '+state.hash+'.':''} This is the selected commit’s snapshot, including its branch context.`:'No commit at the current replay time.';
+    $('files-evidence').textContent=state?`Lesson packet: ${state.files.join(', ')}. Reviewers return separate reports; they do not take ownership of or edit the lesson.`:'';
+    $('site-evidence').textContent=state?(state.included?'This lesson has an HTML page in this commit’s site/ snapshot. That does not establish a fresh build or successful deployment.':'This lesson has no HTML page in this commit’s site/ snapshot.')+(state.legacy.status==='PASS'?' A current legacy marker allows the earlier prototype exception; it does not clear the two-review gate.':''):'';
+  }
   function showRole(role) {
     $('role-name').textContent = role.name;
     $('role-label').textContent = role.label;
@@ -45,6 +79,8 @@
     const active=activeRoles();
     for(const b of $('desks').children)b.classList.toggle('active',active.has(b.dataset.role));
     const seen=selected.filter(e=>e.minute<=minute);const current=seen.at(-1);
+    const prior=current || history.events.filter(e=>e.day<$('day').value).at(-1);
+    workflow(prior);
     $('current').textContent=active.size?`${roleNames([...active])} — changes recorded near ${time(current.minute)}.`:'The office is quiet between recorded changes.';
     for(const [i,li] of [...$('events').children].entries()){
       li.classList.toggle('future',selected[i].minute>minute);
@@ -71,6 +107,7 @@
     seek(selected.length?Math.max(0,selected[0].minute-5):0);
   }
   $('day').addEventListener('change',chooseDay);
+  $('lesson').addEventListener('change',()=>{workflowKey='';update();draw();});
   $('play').addEventListener('click',()=>{if(minute>=1439.9)seek(0);setPlaying(!playing);});
   $('next').addEventListener('click',()=>{setPlaying(false);const event=selected.find(e=>e.minute>minute+0.001);seek(event?event.minute:1439.999);});
   $('timeline').addEventListener('input',e=>{setPlaying(false);seek(e.target.value);});
@@ -115,6 +152,32 @@
     rect(x-94,y-112,190,23,'#242f35');rect(x-94,y-112,3,23,role.color);text(role.name.toUpperCase(),x,y-96,role.color,12,'center');
     if(active){rect(x+35,y-74,111,29,'#efe4c5');rect(x+43,y-47,7,7,'#efe4c5');text('FILE CHANGES',x+90,y-56,'#3c4c48',10,'center');}
   }
+  function route(points,color,offset=0,packet=false){
+    ctx.strokeStyle=color;ctx.lineWidth=3;ctx.setLineDash([7,6]);ctx.beginPath();ctx.moveTo(...points[0]);for(const p of points.slice(1))ctx.lineTo(...p);ctx.stroke();ctx.setLineDash([]);
+    const end=points.at(-1),before=points.at(-2),angle=Math.atan2(end[1]-before[1],end[0]-before[0]);
+    ctx.beginPath();ctx.moveTo(...end);ctx.lineTo(end[0]-9*Math.cos(angle-.5),end[1]-9*Math.sin(angle-.5));ctx.lineTo(end[0]-9*Math.cos(angle+.5),end[1]-9*Math.sin(angle+.5));ctx.closePath();ctx.fillStyle=color;ctx.fill();
+    if(packet){
+      const lengths=points.slice(1).map((p,i)=>Math.hypot(p[0]-points[i][0],p[1]-points[i][1]));
+      let distance=((phase*.16+offset)%1)*lengths.reduce((a,b)=>a+b,0),i=0;
+      while(i<lengths.length-1 && distance>lengths[i])distance-=lengths[i++];
+      const f=distance/lengths[i],x=points[i][0]+(points[i+1][0]-points[i][0])*f,y=points[i][1]+(points[i+1][1]-points[i][1])*f;
+      rect(x-7,y-9,14,18,'#eee1b8');rect(x-4,y-5,8,2,'#746d56');rect(x-4,y,8,2,'#746d56');
+    }
+  }
+  function handoffs(){
+    if(!lessonState)return;
+    const state=lessonState,moving=!$('motion').checked;
+    route([[327,210],[415,154],[578,210]],'#8cb8e0',0,moving);
+    route([[164,266],[123,310],[123,397],[164,416]],'#e9a1b4',.4,moving);
+    route([[605,301],[530,335],[502,335]],state.science.status==='PASS'?'#8cb8e0':'#8b7771',.2,moving && state.science.status==='PASS');
+    route([[379,433],[419,372],[443,346]],state.pedagogy.status==='PASS'?'#e9a1b4':'#8b7771',.6,moving && state.pedagogy.status==='PASS');
+    if(state.eligible)route([[506,351],[542,365],[573,380]],'#9ccb9b',.5,moving);
+    else if([state.science.status,state.pedagogy.status].some(s=>s==='FAIL'||s==='stale'))route([[443,330],[402,320],[350,300]],'#e7a076',.7,moving);
+    const color=state.eligible?'#9ccb9b':'#e89885';
+    rect(441,312,69,43,'#19252b');rect(441,312,69,3,color);rect(441,353,69,3,color);
+    text(state.eligible?'OPEN':'CLOSED',475,329,color,11,'center');text('2 PASS',475,345,color,10,'center');
+    if(!state.eligible){rect(512,352,6,32,'#b57d6e');rect(512,352,35,5,'#d0a393');}
+  }
   function draw(){
     const active=activeRoles();ctx.imageSmoothingEnabled=false;
     rect(0,0,960,560,'#2c3639');
@@ -137,7 +200,7 @@
     // A sleeping office cat. Ambient animation never represents an agent session.
     rect(848,474,45,10,'#242e30');rect(855,461,30,15,'#bd9a70');rect(878,454,14,17,'#cda87a');rect(878,450,5,7,'#cda87a');rect(888,450,5,7,'#cda87a');rect(881,462,3,2,'#4d4c43');rect(888,462,3,2,'#4d4c43');
     rect(110,507,639,3,'#75806d');text('THE BEST IDEAS GET A SECOND PAIR OF EYES.',428,535,'#b5bba8',12,'center');
-    roles.forEach((r,i)=>desk(r,i,active.has(r.id)));
+    handoffs();roles.forEach((r,i)=>desk(r,i,active.has(r.id)));
     text('FY',120,75,'#d6c49b',19,'center');
   }
   function frame(now){
@@ -148,7 +211,7 @@
       if(next && minute+step>next.minute)step=next.minute-minute;
       minute=Math.min(1439.999,minute+step);update();if(minute>=1439.999)setPlaying(false);
     }
-    if(now-lastPaint>80){if(!$('motion').checked)phase+=0.08;draw();lastPaint=now;}
+    if(now-lastPaint>80){if(playing && !$('motion').checked && !document.hidden && !$('role-dialog').open && !$('about-dialog').open)phase+=0.08;draw();lastPaint=now;}
     requestAnimationFrame(frame);
   }
   $('data-source').textContent=`Git history · ${history.events.length} commits · Europe/Helsinki`;
