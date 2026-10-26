@@ -38,7 +38,7 @@
       "choices": [
         { "text": "100 kPa, koska ilmaa ei lisätty eikä poistettu.", "feedback": "Kokeessa paine nousi 25 ml:ssa 200 000 Pa:iin. Ilman määrä pysyi samana, mutta samat hiukkaset ovat nyt puolet pienemmässä tilassa ja osuvat seinämiin kaksi kertaa niin usein." },
         { "text": "150 kPa, koska tilavuus pieneni 50 % ja paine kasvaa 50 %.", "feedback": "Kokeessa paine oli 25 ml:ssa 200 000 Pa eli 200 kPa. Paine ei kasva samoin prosentein kuin tilavuus pienenee: tilavuuden puolittuminen kaksinkertaistaa paineen, koska tulo $pV$ pysyy samana." },
-        { "text": "200 kPa, eli paine kaksinkertaistuu.", "correct": true, "feedback": "Koe tukee tätä: 50 ml:ssa $p = 100\\,000\\,\\text{Pa}$ ja 25 ml:ssa $p = 200\\,000\\,\\text{Pa}$. Tulo $pV$ on molemmissa 5,00 J." },
+        { "text": "200 kPa, eli paine kaksinkertaistuu.", "correct": true, "feedback": "Mallin arvot tukevat tätä: 50 ml:ssa $p = 100\\,000\\,\\text{Pa}$ ja 25 ml:ssa $p = 200\\,000\\,\\text{Pa}$. Tulo $pV$ on molemmissa 5,00 J." },
         { "text": "400 kPa, koska hiukkaset osuvat seiniin useammin ja myös kovempaa.", "feedback": "Kokeessa paine oli 25 ml:ssa 200 kPa, ei 400 kPa. Lämpötila pysyi samana, joten hiukkasten nopeus ei muuttunut eivätkä ne osu kovempaa; vain osumia tulee kaksi kertaa niin usein." }
       ]
     },
@@ -52,7 +52,7 @@
       "reveal": { "after": "exp-2", "min": 2 },
       "choices": [
         { "text": "200 ml, koska lämpötila nelinkertaistuu.", "feedback": "Kokeessa tilavuus oli 80 °C:ssa noin 60 ml. Celsiusasteiden suhde 80/20 ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla on vain veden jäätymispiste. Kelvineinä lämpötila nousee 293 K:stä 353 K:iin, noin 20 %." },
-        { "text": "Noin 60 ml, eli tilavuus kasvaa noin 20 %.", "correct": true, "feedback": "Koe tukee tätä: 20 °C:ssa (293,15 K) $V = 50{,}0\\,\\text{ml}$ ja 80 °C:ssa (353,15 K) $V \\approx 60{,}2\\,\\text{ml}$. Tilavuus kasvaa samassa suhteessa kuin kelvinlämpötila, 353/293 ≈ 1,20, ja $V/T$ pysyy 0,171 ml/K:ssa." },
+        { "text": "Noin 60 ml, eli tilavuus kasvaa noin 20 %.", "correct": true, "feedback": "Mallin arvot tukevat tätä: 20 °C:ssa (293,15 K) $V = 50{,}0\\,\\text{ml}$ ja 80 °C:ssa (353,15 K) $V \\approx 60{,}2\\,\\text{ml}$. Tilavuus kasvaa samassa suhteessa kuin kelvinlämpötila, 353/293 ≈ 1,20, ja $V/T$ pysyy 0,171 ml/K:ssa." },
         { "text": "50 ml, koska paine pysyy samana.", "feedback": "Kokeessa tilavuus kasvoi noin 60 ml:aan, vaikka paine pysyi 100 kPa:ssa. Lämmetessä hiukkaset liikkuvat nopeammin ja osuvat mäntään useammin ja kovempaa, joten mäntä nousee. Se pysähtyy, kun harventuneen kaasun törmäykset painavat sitä taas yhtä paljon kuin paino: paine on sama, tilavuus suurempi." },
         { "text": "110 ml, koska tilavuus kasvaa 1 ml jokaista lämpöastetta kohti.", "feedback": "Kokeessa tilavuus kasvoi vain noin 10 ml, kun lämpötila nousi 60 astetta. Kasvu on noin 0,17 ml kelviniä kohti, koska tilavuus on verrannollinen koko kelvinlämpötilaan, ja 60 K on vain noin 20 % 293 K:stä." }
       ]
@@ -67,9 +67,9 @@
       "justify": true,
       "reveal": { "after": "exp-1", "min": 3 },
       "choices": [
-        { "text": "Aino: laskeva suora. Paine pienenee yhtä paljon jokaista lisämillilitraa kohti, ja suora leikkaa lopulta V-akselin.", "feedback": "Mittauksissa paineen pudotus ei ole tasainen: 25 ml:sta 50 ml:aan paine laskee 100 kPa, mutta 50 ml:sta 100 ml:aan, kaksi kertaa pidemmällä välillä, vain 50 kPa. Paine ei myöskään mene nollaan millään tilavuudella, koska $p = \\text{vakio}/V$." },
-        { "text": "Bea: laskeva kaari, joka loivenee ja lähestyy akseleita mutta ei koskaan kohtaa niitä.", "correct": true, "feedback": "Mittaukset tukevat tätä: 25 ml → 200 kPa, 50 ml → 100 kPa, 100 ml → 50 kPa. Pudotus pienenee tilavuuden kasvaessa, ja simulaation kuvaajassa pisteet ovat kaarella. Suoran saa vasta, kun p piirretään 1/V:n funktiona." },
-        { "text": "Cem: origon kautta kulkeva suora, koska p ja V ovat verrannollisia.", "feedback": "Origon kautta kulkeva nouseva suora kuvaisi suoraa verrannollisuutta, jossa paine kasvaisi tilavuuden mukana. Mittauksissa paine pienenee tilavuuden kasvaessa: p ja V ovat kääntäen verrannollisia. Origon kautta kulkeva suora syntyy, kun vaaka-akselilla on 1/V." }
+        { "text": "Aino: laskeva suora. Paine pienenee yhtä paljon jokaista lisämillilitraa kohti, ja suora leikkaa lopulta V-akselin.", "feedback": "Mallin arvoissa paineen pudotus ei ole tasainen: 25 ml:sta 50 ml:aan paine laskee 100 kPa, mutta 50 ml:sta 100 ml:aan, kaksi kertaa pidemmällä välillä, vain 50 kPa. Paine ei myöskään mene nollaan millään tilavuudella, koska $p = \\text{vakio}/V$." },
+        { "text": "Bea: laskeva kaari, joka loivenee ja lähestyy akseleita mutta ei koskaan kohtaa niitä.", "correct": true, "feedback": "Mallin arvot tukevat tätä: 25 ml → 200 kPa, 50 ml → 100 kPa, 100 ml → 50 kPa. Pudotus pienenee tilavuuden kasvaessa, ja simulaation kuvaajassa pisteet ovat kaarella. Suoran saa vasta, kun $p$ piirretään $1/V$:n funktiona. Simulaatio laskee paineen kaasulaista, joten se näyttää lain seuraukset mutta ei todista lakia; todisteena ovat oikeat mittaukset, joita ruiskukokeen esimerkkiarvot muistuttavat." },
+        { "text": "Cem: origon kautta kulkeva suora, koska p ja V ovat verrannollisia.", "feedback": "Origon kautta kulkeva nouseva suora kuvaisi suoraa verrannollisuutta, jossa paine kasvaisi tilavuuden mukana. Mallin arvoissa paine pienenee tilavuuden kasvaessa: $p$ ja $V$ ovat kääntäen verrannollisia. Origon kautta kulkeva suora syntyy, kun vaaka-akselilla on 1/V." }
       ]
     },
     {
@@ -78,7 +78,7 @@
       "type": "sim",
       "text": "Simulaation sylinterissä on suljettu kaasumäärä ideaalikaasua: kaasua ei pääse pois eikä tule lisää.",
       "howto": "Valitse tilanmuutos, muuta tilavuutta tai lämpötilaa ja seuraa painemittaria, hiukkasten törmäyksiä ja kuvaajaa. Kaasun väri kertoo lämpötilan (sininen kylmä, oranssi lämmin; väriasteikko on lämpömittarin vieressä). Välähdykset ovat hiukkasten törmäyksiä seiniin: mitä tiheämmin ja kovemmin ne osuvat, sitä suurempi paine on. Kuvaajan haalea viiva on teoria, katkoviiva jatkaa suoraa origoon, siniset pisteet ovat tallennetut mittaukset ja punainen piste on nykyinen tila. *Nopeus* muuttaa vain hiukkasten liikkeen tahtia, ei painetta, tilavuutta eikä lämpötilaa.",
-      "model": "Isobaarisessa muutoksessa punnus pitää paineen vakiona, isokoorisessa mäntä on lukittu. Hiukkasten nopeus on verrannollinen √T:hen, kun T on kelvineinä.",
+      "model": "Isobaarisessa muutoksessa punnus pitää paineen vakiona, isokoorisessa mäntä on lukittu. Hiukkasten nopeus on verrannollinen $\\sqrt{T}$:hen, kun $T$ on kelvineinä.",
       "calc": "Simulaation paine lasketaan yhtälöstä $pV/T = \\text{vakio}$, joten luvut ovat mallin arvoja, eivät mittauksia oikeasta ruiskusta."
     },
     {

@@ -23,7 +23,7 @@
         {
           "text": "60 K",
           "correct": true,
-          "feedback": "Oikein. Kelvin- ja celsiusasteikon asteet ovat yhtä suuria, joten muutos on sama luku: $\\Delta T = 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$. Muunnoksen $+273{,}15$ kumoutuu erotuksessa."
+          "feedback": "Oikein. Kelvin- ja celsiusasteikon asteet ovat yhtä suuria, joten muutos on sama luku: $\\Delta T = 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$. Muunnos $+273{,}15$ kumoutuu erotuksessa."
         },
         {
           "text": "333 K",
@@ -112,12 +112,12 @@
       "choices": [
         {
           "text": "Aino: Teräksen hiukkaset itse kasvavat lämmetessään, joten ne vievät enemmän tilaa.",
-          "feedback": "Simulaation mikromallissa hiukkaset ovat samankokoisia kaikissa lämpötiloissa, ja silti hila laajenee samassa suhteessa kuin sauva: kasvaa hiukkasten keskimääräinen *etäisyys*, ei niiden koko. Lämpötila kuvaa hiukkasten liikettä, ei niiden kokoa."
+          "feedback": "Simulaation mikromalli olettaa, että hiukkaset ovat samankokoisia kaikissa lämpötiloissa, ja silti hila laajenee samassa suhteessa kuin sauva: kasvaa vain hiukkasten keskimääräinen *etäisyys*, ei niiden koko. Lämpötila kuvaa hiukkasten liikettä, ei niiden kokoa."
         },
         {
           "text": "Bea: Hiukkaset värähtelevät voimakkaammin, ja koska niiden on helpompi loitota toisistaan kuin puristua lähemmäs, niiden keskimääräinen etäisyys kasvaa.",
           "correct": true,
-          "feedback": "Tämä sopii malliin. Mikromallissa värähtely voimistuu lämpötilan noustessa, ja hiukkasvälit kasvavat samassa suhteessa kuin koko sauva, $\\Delta L/L_0 = \\alpha \\Delta T$. Värähtely kasvattaa keskimääräistä etäisyyttä vain siksi, että heilahdus kauemmas on pidempi kuin heilahdus lähemmäs. Selitä-vaihe perustelee tämän."
+          "feedback": "Tämä sopii malliin. Mikromallissa värähtely voimistuu lämpötilan noustessa, ja hiukkasvälit kasvavat samassa suhteessa kuin koko sauva, $\\Delta L/L_0 = \\alpha \\Delta T$. Värähtely kasvattaa keskimääräistä etäisyyttä vain siksi, että heilahdus kauemmas on pidempi kuin heilahdus lähemmäs. Simulaatio ei näytä tätä epäsymmetriaa, sillä se piirtää värähtelyn symmetrisenä; Teoriatiivistelmä perustelee sen."
         },
         {
           "text": "Cem: Hiukkaset värähtelevät voimakkaammin yhtä paljon kumpaankin suuntaan, ja suurempi heilahdus vie enemmän tilaa.",
@@ -134,8 +134,8 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$.",
-      "howto": "Vasemmalla mikromalli, oikealla sauva ja (T, ΔL)-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on 20 °C:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
-      "model": "Lukemat ovat mallin arvoja, joissa kerroin α oletetaan vakioksi, eivät mittauksia oikeasta sauvasta."
+      "howto": "Vasemmalla mikromalli, oikealla sauva ja $(T, \\Delta L)$-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on 20 °C:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
+      "model": "Lukemat ovat mallin arvoja, joissa kerroin $\\alpha$ oletetaan vakioksi, eivät mittauksia oikeasta sauvasta. Mikromallissa hiukkaset värähtelevät piirroksessa yhtä paljon kumpaankin suuntaan, ja niiden keskimääräinen etäisyys asetetaan suoraan kaavasta $\\Delta L/L_0 = \\alpha \\Delta T$. Malli siis näyttää, *että* etäisyys kasvaa, mutta ei sitä, *miksi*; syy on Teoriatiivistelmässä."
     },
     {
       "id": "exp-1",
@@ -316,7 +316,7 @@
           "feedback": "Käytit loppulämpötilaa 25 °C lämpötilan muutoksen paikalla. Lämpötila nousee 15 °C:sta 25 °C:seen eli $\\Delta T = 10\\,\\text{K}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Säiliön etanolin tilavuuden kasvu $\\Delta V = \\gamma V_0 \\Delta T$ nousee putkeen lieriöksi, jonka tilavuus on $Ah$. Siis\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Sijoitus.** $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$ ja $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$:\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Järkevyys.** Säiliön tilavuus kasvaa vain 1,1 %, mutta ohuessa putkessa pienikin tilavuus on pitkä patsas: noin 4 mm kelviniä kohti, mikä on tavallisen lämpömittarin asteikon mittaluokka. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin 43 mm."
+      "solution": "**Ratkaisu symbolisesti.** Säiliön etanolin tilavuuden kasvu $\\Delta V = \\gamma V_0 \\Delta T$ nousee putkeen lieriöksi, jonka tilavuus on $Ah$. Siis\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Sijoitus.** $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$ ja $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$:\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Järkevyys.** Etanolin tilavuus kasvaa vain 1,1 %, mutta ohuessa putkessa pienikin tilavuus on pitkä patsas: noin 4 mm kelviniä kohti, mikä on tavallisen lämpömittarin asteikon mittaluokka. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin 43 mm."
     },
     {
       "id": "tehtavat",
