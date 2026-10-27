@@ -331,7 +331,7 @@ new p5((p) => {
     for (let m = m0; m <= m1; m++) {
       const x = CX + m * step - xc, major = m % 10 === 0;
       p.line(x, 296, x, major ? 306 : 301);
-      if (major && x > 8 && x < W - 8) lab(`$${group(m / 10)}\\,\\text{Gm}$`, x, 322, 'c', fh);
+      if (major && x > 64 && x < W - 64) lab(`$${group(m / 10)}\\,\\text{Gm}$`, x, 322, 'c', fh);   // the widest number (100 001 Gm) is about 110 px: keep it whole inside the canvas whatever the font metrics
     }
   }
   function scaleBar(fh) {
