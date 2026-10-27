@@ -115,7 +115,7 @@ details.answer,details.solution{margin:.2rem 0 .6rem}
 details.answer>summary,details.solution>summary,.hints summary,details.sim-box>summary,#sim-root details.note>summary{color:var(--accent-deep);font:600 var(--fs-ui) var(--sans)}
 details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-radius:8px;padding:.35rem .7rem;display:inline-block}
 details.solution .steps{margin:.3rem 0 0 1.2rem;padding:.7rem 1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:1rem;line-height:1.55}
-details.solution .steps p{margin:0}
+details.solution .steps p{margin:0 0 .5rem}details.solution .steps p:last-child{margin-bottom:0}details.solution .steps strong{color:var(--accent-deep)}
 @media (max-width:600px){details.solution .steps{margin-left:0;padding:.6rem .7rem;font-size:.92rem}details.solution .steps .katex-display{padding:.6rem}details.opt{padding:0 .8rem}details.opt>.activity{margin:.8rem 0 1rem}}
 
 /* simulation card */
