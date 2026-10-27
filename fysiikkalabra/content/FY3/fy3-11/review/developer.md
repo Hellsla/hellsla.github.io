@@ -1,2 +1,6 @@
 VERDICT: DONE
-Ink #1f2933: outlines, text, axes, work/electricity arrows (W, E_s, W_k area at 20 %). Heat Q: #e8590c for Q1 and Q_sisälle, light #ffc078 for the waste/outdoor heat Q2 and Q_ulko. Hot source: #f2a69c/#c92a2a. Cold environment: #d0e6fb/#1971c2. Machine and pump: glass #eef5f9. Muted #6b7480: dashed p guide and the dimension arrow of delta V. No labels moved.
+
+Changed (solutions only, no answers or numbers altered):
+- solutions.md: all 17 blocks now have Periaate (principle and why it applies: constant pressure, energy conservation, cyclic engine, same useful powers) and Muunnokset (each conversion, or why none is needed); Kaava ends in the solved unknown; Vastaus gives value, unit and why that many figures; Järkevyys has real checks (estimates, energy balance recomputed, limiting cases). Numeric errors found: none. One unsupported claim fixed in L3-03 (electric car 17 kWh now derived as 15 kWh / 0,90); L3-02 answer written 9,60 MWh (three figures like the data).
+- lesson.md Esimerkki: restructured into the seven stages (the old "Pelkkä sähkö" and "Yhteistuotanto" stages merged into one Sijoitus; added Periaate, Yksikkömuunnokset, Tulos); problem text and figures untouched.
+- inquiry.json: added solutions to exp-1 question, suunnittele question, siirto (replaced, completed) and check-2 (new, with Kuvaajan lukeminen).
