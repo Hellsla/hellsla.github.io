@@ -12,6 +12,7 @@ decisions 2026-10-26, CLAUDE.md "Lesson page") is in render() and templates/site
 import hashlib, html as _h, json, pathlib, random, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from i18n import t as T
+import mathlayout
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
@@ -31,7 +32,6 @@ def legacy_info(): return T("inquiry.sim_legacy")   # a long sim text written be
 
 STAGES, NAV, EXIT_TITLE, EXERCISES_TITLE, SIM_INFO, LEGACY_INFO = stages(), nav(), exit_title(), exercises_title(), sim_info(), legacy_info()
 LEAD_WORDS = 30                                   # a sim activity's visible lead is at most this long
-GRID_TYPES = ("choice", "numeric", "explain", "exit")   # consecutive ones sit side by side on a wide screen (the opening story reads on its own)
 CARD_TYPES = ("choice", "numeric", "explain", "experiment", "interpret", "reflect", "exit")   # a task: one card holds its heading, instructions, answers and feedback
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
@@ -112,6 +112,12 @@ def validate(folder, inquiry, lesson_md):
     if not isinstance(inquiry, dict): return [f"{lid} inquiry.json: the top level must be an object"]
     if inquiry.get("version") != VERSION: E(f"version: must be {VERSION}")
     if not isinstance(inquiry.get("contribution"), str) or not inquiry["contribution"].strip(): E("contribution: one sentence on what this lesson adds that earlier lessons did not")
+    learn = inquiry.get("learn")
+    if not (isinstance(learn, list) and 2 <= len(learn) <= 3 and all(isinstance(x, str) and x.strip() for x in learn)):
+        E("learn: two or three learning goals from the student's side, shown under \"Tällä tunnilla opit\" (\"Osaat laskea …\", \"Tunnistat …\"; teacher 2026-10-27)")
+    else:
+        for i, x in enumerate(learn):
+            if len(x.split()) > 22: E(f"learn[{i}]: {len(x.split())} words; a goal is one short line (at most about 20 words), the explanation belongs to the theory")
     prior = inquiry.get("prior", [])
     if not isinstance(prior, list) or not all(isinstance(x, str) and x.strip() for x in prior): E("prior: a list of short strings (what the student already knows, with the lesson it comes from)")
     acts = inquiry.get("activities")
@@ -276,19 +282,20 @@ def choice_html(a, md, lid, aid):
     justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
     sol = f'<div class="solution-text">{md(a["solution"])}</div>' if a.get("solution") else ""
     pending = f'<p class="pending" tabindex="-1" hidden>{T("inquiry.pending")}</p>' if reveal else ""
-    return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{inline(md, a["prompt"])}</legend>{sol}'
+    return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{legend_html(inline(md, a["prompt"]))}</legend>{sol}'
             f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div>'
             f'{pending}<output aria-live="polite"></output></fieldset>')
 
 
 def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
-    sol = f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">{md(a["solution"])}</div></details>' if a.get("solution") else ""
-    return (f'<div class="numeric"><p class="task">{inline(md, a["prompt"])}</p>'
+    sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
+           f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
+    return (f'<div class="numeric">{task_text(inline(md, a["prompt"]))}'
             f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{T("inquiry.answer")}" placeholder="?">'
             + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
-            f'{hints_html([md(h) for h in a.get("hints", [])])}{sol}</div>')
+            f'{hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])])}{sol}</div>')
 
 
 def explain_html(a, md, aid):
@@ -300,7 +307,7 @@ def explain_html(a, md, aid):
     after = a.get("after") or []
     attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
-    return (f'<div class="explain"{attrs}><p class="task">{inline(md, a["prompt"])}</p><textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
+    return (f'<div class="explain"{attrs}>{task_text(inline(md, a["prompt"]))}<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
             f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model")}</button>{copy}</div>'
             f'<p class="explain-status" role="status" aria-live="polite"></p>'
             f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4><ul class="criteria">{crit}</ul></div></div>')
@@ -346,6 +353,89 @@ def sim_parts(a, md):
     return (md(text) if text else ""), (f'<div class="sim-info">{info}</div>' if info else "")
 
 
+def prior_html(item, md):
+    """One Pohjatiedot item: the fact, and the chapter it comes from as a quiet link ("(luku <title>)" in inquiry.json
+    -> a link to that lesson when it is in the curriculum; CLAUDE.md "Chapter names, not ids")."""
+    h = inline(md, item)
+    m = re.search(r"\s*\(" + re.escape(T("inquiry.prior_chapter")) + r"\s+(?:<em>)?(.+?)(?:</em>)?\)\s*\.?$", h)
+    if not m: return f"<li>{h}</li>"
+    title = _h.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
+    href = chapter_href(title)
+    ref = f'<a href="{href}">{esc(title)}</a>' if href else f"<em>{esc(title)}</em>"
+    return f'<li>{h[:m.start()].rstrip(" .;")}<span class="prior-ref">{T("inquiry.prior_chapter")} {ref}</span></li>'
+
+
+def chapter_href(title):
+    """The page of the lesson with this title (curriculum.json), or None."""
+    try:
+        import courses
+        for code, mod in courses.curriculum().items():
+            if code.startswith("_"): continue
+            for l in mod.get("lessons", []):
+                full = l.get("title", "").strip().lower()
+                if title.lower() in (full, full.split(":")[0].strip()):   # "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT"
+                    try: courses.find_lesson(l["id"])
+                    except SystemExit: return None
+                    return f'{l["id"]}.html'
+    except Exception: return None
+    return None
+
+
+def intro_html(intro, inquiry, n_opt, md):
+    """The opening (teacher 2026-10-27): the title and the Miksi question first, across the reading column; under them
+    the chapter's illustration and "Tällä tunnilla opit" (2–3 goals) side by side, both starting at the same height and
+    about as tall (.intro-row); then "Pohjatiedot" as a list and the core path in one quiet line (.intro-more). One
+    column on a phone: title, question, illustration, goals, prior knowledge."""
+    m = re.search(r"<p>\s*<svg\b", intro)
+    head, media = (intro[:m.start()], intro[m.start():]) if m else (intro, "")
+    learn = inquiry.get("learn")
+    goals = ("<ul>" + "".join(f"<li>{inline(md, x)}</li>" for x in learn) + "</ul>") if learn else f'<p>{inline(md, inquiry["contribution"])}</p>'
+    aside = f'<div class="learn"><h2 class="intro-h">{T("inquiry.learn")}</h2>{goals}</div>'
+    prior = inquiry.get("prior") or []
+    more = f'<div class="prior"><h2 class="intro-h">{T("inquiry.prior")}</h2><ul>' + "".join(prior_html(x, md) for x in prior) + "</ul></div>" if prior else ""
+    if n_opt: more += f'<p class="path-note">{T("inquiry.core_path", n=n_opt)}</p>'   # what is the path, what may be left (spec 2026-10-26)
+    row = (f'<div class="intro-row' + ("" if media else " no-media") + '">' + (f'<div class="intro-media">{media}</div>' if media else "")
+           + f'<aside class="intro-aside">{aside}</aside></div>')
+    return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
+
+
+SENT = re.compile(r"(?<=[.!])\s+(?=[A-ZÅÄÖ])")
+
+
+def split_prompt(html, words=28):
+    """A long task text as the situation and the question asked (teacher 2026-10-27, "tehtäväkortit"): the sentences
+    from the first one that asks something ("?") on are the question (.ask), the ones before it the situation
+    (.scenario). The text is not changed, only given a paragraph break; maths and tags are never cut, and a text
+    without a clear question, or a short one, stays whole."""
+    plain = re.sub(r"<[^>]+>|\$[^$]*\$", "", html)
+    if len(plain.split()) < words: return None
+    stash = []
+    safe = re.sub(r"\$[^$]*\$|<[^>]+>", lambda m: (stash.append(m.group(0)), f"\x00{len(stash) - 1}\x00")[1], html)
+    cuts = [m.end() for m in SENT.finditer(safe)]
+    q = safe.find("?")
+    if q < 0: return None
+    before = [c for c in cuts if c <= q]
+    if not before: return None
+    cut = before[-1]
+    back = lambda t: re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], t).strip()
+    a, b = back(safe[:cut]), back(safe[cut:])
+    if a.count("<") != a.count(">") or re.search(r"<(\w+)[^>]*>(?:(?!</\1>).)*$", a, re.S): return None   # an element open across the cut
+    return a, b
+
+
+def legend_html(html):
+    """A choice's prompt in its legend (the group's accessible name), split like task_text into two blocks."""
+    sp = split_prompt(html)
+    return f'<span class="scenario">{sp[0]}</span><span class="ask">{sp[1]}</span>' if sp else html
+
+
+def task_text(html, cls="task"):
+    """A task's prompt as <p class="task">, or as the situation and the question when it is long (split_prompt)."""
+    sp = split_prompt(html)
+    if not sp: return f'<p class="{cls}">{html}</p>'
+    return f'<p class="{cls} scenario">{sp[0]}</p><p class="{cls} ask">{sp[1]}</p>'
+
+
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
     (NAV); the side column on a wide screen shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
@@ -361,8 +451,8 @@ def render(folder, inquiry, parts, md):
 
     Order: the stages in STAGES order (empty ones left out), then the exercises in their own section "Tehtävät", last
     on the page whatever stage inquiry.json gives them. Layout hooks for templates/site.css, all single-column on a
-    phone: the title and the "new this lesson" box side by side (.intro-row); consecutive GRID_TYPES activities in an
-    .act-grid (two columns on a wide screen); the stage that holds the simulation as a .lab (the sim beside the
+    phone: the title and the Miksi question, then the illustration beside the lesson's goals and prior knowledge
+    (intro_html); every task in one reading column, never two side by side (flow); the stage that holds the simulation as a .lab (the sim beside the
     experiments that use it); the Ennusta stage inside a <details class="fold"> that starts closed and keeps its answers
     when closed; a theory figure beside its paragraph (build.py fig_rows); each CARD_TYPES task as one .task-card that
     holds its heading, instructions, answers and feedback (the three levels of the page: stage, task, what is inside a
@@ -380,13 +470,7 @@ def render(folder, inquiry, parts, md):
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
     elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
         last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
-    prior = inquiry.get("prior") or []
-    aside = f'<div class="contribution"><strong>{T("inquiry.new_this_lesson")}</strong> {inline(md, inquiry["contribution"])}</div>'
-    if prior: aside += f'<p class="prior"><strong>{T("inquiry.prior")}</strong> ' + "; ".join(inline(md, x) for x in prior) + '</p>'
-    n_opt = sum(1 for a in acts if a.get("optional"))
-    if n_opt:                                          # what is the path, what may be left (spec 2026-10-26: a core path)
-        aside += f'<p class="path-note">{T("inquiry.core_path", n=n_opt)}</p>'
-    body = [f'<div class="intro-row"><div class="intro-main">{parts["intro"]}</div><div class="intro-aside">{aside}</div></div>']
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md)]
 
     def act(a):
         t, aid = a["type"], a["id"]
@@ -412,7 +496,7 @@ def render(folder, inquiry, parts, md):
             content = lead + parts["sim"].replace("<!--sim-info-->", info)
         elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + (md(a["text"]) if a.get("text") else ""), 1)   # the heading first, then the lead
         else: content = ""
-        hints = hints_html([md(h) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
+        hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         if a.get("optional"):                          # a closed box, named, that a student may open or leave
             name = esc(a.get("title") or T(f"inquiry.optional_{t}"))
             return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">{T("inquiry.optional")}</span> {name}</summary>'
@@ -420,15 +504,11 @@ def render(folder, inquiry, parts, md):
         card = " task-card" if t in CARD_TYPES else ""
         return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
 
-    def flow(items, grid=True):
-        out, run = [], []
-        def flush():
-            out.append('<div class="act-grid">' + "".join(run) + '</div>' if len(run) > 1 else "".join(run)); run.clear()
-        for a in items:
-            if grid and a["type"] in GRID_TYPES and not a.get("optional"): run.append(act(a))
-            else: flush(); out.append(act(a))
-        flush()
-        return "".join(out)
+    def flow(items):
+        """The activities one under another in the reading column. Tasks never sit side by side: a card grows when
+        its feedback, hints, solution or model answer opens, and beside it the other column would be left with a
+        tall empty space and the next task pushed far down (teacher 2026-10-27, "avautuvat kortit")."""
+        return "".join(act(a) for a in items)
 
     toc, n = [], 0
     for sid, title in stages():
@@ -438,7 +518,7 @@ def render(folder, inquiry, parts, md):
         si = next((i for i, a in enumerate(items) if a["type"] == "sim"), None)
         if si is not None and si < len(items) - 1:     # the sim beside the activities that use it
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
-                     f'<div class="lab-main">{flow(items[si + 1:], grid=False)}</div></div>')
+                     f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")

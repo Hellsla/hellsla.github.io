@@ -170,6 +170,11 @@ def check_lesson_form(L, text):
         words = len(m.group(1).split())
         if words > 130:
             L.warn("lesson.md", text.count("\n", 0, m.start(1)) + 1, f"paragraph of {words} words; keep paragraphs under about 120 words and add a figure or a list (human rule 1)")
+    for m in re.finditer(r"^## (Ydinajatus|Yleinen virhekäsitys)[^\n]*\n(.*?)(?=^## |\Z)", text, flags=re.S | re.M):
+        prose = re.sub(r"<svg\b.*?</svg>|\$\$.*?\$\$|```.*?```", "", m.group(2), flags=re.S)
+        words, paras = len(prose.split()), len([p for p in re.split(r"\n\s*\n", prose) if p.strip() and not p.lstrip().startswith(("<", "|", "#"))])
+        if words > 320 and "\n### " not in m.group(2):
+            L.warn("lesson.md", text.count("\n", 0, m.start()) + 1, f"## {m.group(1)}: {words} words in {paras} paragraphs without a ### subheading; give each main idea a short subheading that names it (NOTES 8, teacher 2026-10-27)")
     body, line = section(text, "Esimerkki")
     if body:
         stages = body.count("<!-- vaihe -->")
