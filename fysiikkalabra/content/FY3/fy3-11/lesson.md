@@ -198,13 +198,13 @@ Pelkälle sähkölle $P_\text{hyöty} = P_\text{s}$ ja yhteistuotannolle $P_\tex
 \begin{aligned}
 \eta_1 &= \frac{P_\text{s}}{P_1} \\
 &= \frac{190\,\text{MW}}{500\,\text{MW}} \\
-&= 0{,}38 \\
+&= 0{,}380 \\
 P_{2,1} &= P_1 - P_\text{s} \\
 &= 500\,\text{MW} - 190\,\text{MW} \\
 &= 310\,\text{MW} \\[6pt]
 \eta_2 &= \frac{P_\text{s} + P_\text{k}}{P_1} \\
 &= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}} \\
-&= 0{,}88 \\
+&= 0{,}880 \\
 P_{2,2} &= P_1 - (P_\text{s} + P_\text{k}) \\
 &= 500\,\text{MW} - 440\,\text{MW} \\
 &= 60\,\text{MW}
@@ -213,7 +213,7 @@ P_{2,2} &= P_1 - (P_\text{s} + P_\text{k}) \\
 
 <!-- vaihe -->
 
-**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $38\,\%$ ja hukkalämpöä siirtyy mereen lauhduttimen kautta $310\,\text{MW}$. Yhteistuotannossa hyötysuhde on $88\,\%$ ja hukkalämpöä on vain $60\,\text{MW}$. Tehot on annettu täysinä megawatteina, joten erotukset $310\,\text{MW}$ ja $60\,\text{MW}$ tunnetaan megawatin tarkkuudella. Hyötysuhteet annetaan täysinä prosentteina eli kahdella numerolla, mikä on vähemmän kuin tehojen $150\,\text{MW}$, $190\,\text{MW}$ ja $290\,\text{MW}$ tarkkuus sallisi.
+**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $\eta_1 = 0{,}380 = 38{,}0\,\%$ ja hukkalämpöä siirtyy mereen lauhduttimen kautta $310\,\text{MW}$. Yhteistuotannossa hyötysuhde on $\eta_2 = 0{,}880 = 88{,}0\,\%$ ja hukkalämpöä on vain $60\,\text{MW}$. Tehot on annettu täysinä megawatteina, joten erotukset $310\,\text{MW}$ ja $60\,\text{MW}$ tunnetaan megawatin tarkkuudella. Hyötysuhteet ovat osamääriä, joten niissä on yhtä monta numeroa kuin epätarkimmassa tehossa: $190\,\text{MW}$, $150\,\text{MW}$, $290\,\text{MW}$ ja $500\,\text{MW}$ ovat kaikki kolmen numeron arvoja, joten hyötysuhteet annetaan kolmella numerolla.
 
 <!-- vaihe -->
 

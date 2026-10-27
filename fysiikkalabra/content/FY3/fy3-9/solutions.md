@@ -15,7 +15,7 @@
 **Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
 **Muunnokset:** Yksikköjä ei tarvitse muuntaa: kilopascalit supistuvat osamäärässä, ja tilavuus tulee suoraan litroina.
 **Sijoitus:** $V_2 = \dfrac{160{,}0\,\text{kPa} \cdot 24{,}0\,\textsf{l}}{280{,}0\,\text{kPa}} = 13{,}714\,\textsf{l}$
-**Vastaus:** $V_2 \approx 13{,}7\,\textsf{l}$, kolme merkitsevää numeroa. Kaikki kolme lähtötietoa ($24{,}0\,\textsf{l}$, $160{,}0\,\text{kPa}$ ja $280{,}0\,\text{kPa}$) on annettu kolmella numerolla.
+**Vastaus:** $V_2 \approx 13{,}7\,\textsf{l}$, kolme merkitsevää numeroa. Rajoittava tieto on tilavuus $24{,}0\,\textsf{l}$ (kolme numeroa); paineet $160{,}0\,\text{kPa}$ ja $280{,}0\,\text{kPa}$ on annettu neljällä numerolla, joten ne eivät rajoita.
 **Järkevyys:** Paine kasvaa, joten tilavuuden täytyy pienentyä. Painesuhde on $280/160 = 1{,}75$, ja $24{,}0\,\textsf{l} / 1{,}75 \approx 13{,}7\,\textsf{l}$. Tulo $pV$ on $3840\,\text{kPa}\cdot\textsf{l}$ alussa ja lopussa. Puristunut ilma toimii jousena, joka työntää vettä hanoihin, vaikka pumppu ei käy.
 
 ## fy3-9-L1-03
@@ -55,7 +55,7 @@
 **Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
 **Muunnokset:** Paineet samaan yksikköön: $p_1 = 300{,}0\,\text{bar} = 300{,}0 \cdot 100\,\text{kPa} = 30\,000\,\text{kPa}$ (kerroin $100\,\text{kPa/bar}$ on määritelmä eikä rajoita). Tulos tulee litroina, ja $1\,\text{m}^3 = 1000\,\textsf{l}$.
 **Sijoitus:** $V_2 = \dfrac{30\,000\,\text{kPa} \cdot 6{,}8\,\textsf{l}}{101\,\text{kPa}} = 2019{,}8\,\textsf{l} = 2{,}0198\,\text{m}^3$
-**Vastaus:** $V_2 \approx 2{,}0\,\text{m}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuus $6{,}8\,\textsf{l}$ (kaksi numeroa); paineet $300{,}0\,\text{bar}$ ja $101\,\text{kPa}$ ovat kolmen numeron arvoja.
+**Vastaus:** $V_2 \approx 2{,}0\,\text{m}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuus $6{,}8\,\textsf{l}$ (kaksi numeroa); paine $300{,}0\,\text{bar}$ on neljän ja $101\,\text{kPa}$ kolmen numeron arvo, joten kumpikaan ei rajoita.
 **Järkevyys:** Paine on noin 300-kertainen ilmanpaineeseen nähden, joten tilavuus on noin $300 \cdot 6{,}8\,\textsf{l} \approx 2000\,\textsf{l}$. Jos palomies hengittää 50 l minuutissa, ilma riittää noin 40 minuutiksi, mikä vastaa todellisia laitteita. Näin suuressa paineessa ilma ei enää noudata Boylen lakia tarkasti: tulo $pV$ on noin 10 % suurempi kuin laki ennustaa, joten todellinen tilavuus on noin $1{,}8\,\text{m}^3$.
 
 ## fy3-9-L2-02
@@ -72,10 +72,10 @@
 **Annettu:** taulukon mittaukset $V = 10{,}0;\ 12{,}5;\ 15{,}0;\ 20{,}0;\ 25{,}0;\ 30{,}0\,\text{ml}$ ja $p = 203;\ 159;\ 134;\ 99;\ 81;\ 66\,\text{kPa}$, lämpötila vakio
 **Kysytty:** $(1/V,\,p)$-kuvaajaan sovitetun suoran kulmakerroin $pV$ jouleina
 **Periaate:** Lämpötila ja ilman määrä pysyvät samoina, joten Boylen lain mukaan $pV$ on vakio. Silloin $p = pV \cdot \dfrac{1}{V}$ on verrannollisuus, ja $(1/V,\,p)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $pV$.
-**Kuvaajan lukeminen:** Lasketaan sarake $1/V$ ja piirretään pisteet $(1/V,\,p)$. Suora sovitetaan pisteisiin origon kautta, ja kulmakerroin luetaan suoralta eikä yksittäisestä mittauspisteestä, koska jokaisessa mittauksessa on virhettä. Suora kulkee pisteen $(0{,}100\,\tfrac{1}{\text{ml}};\ 201\,\text{kPa})$ kautta, ja $\tfrac{1}{\text{ml}}$ on akselin yksikkö.
+**Kuvaajan lukeminen:** Lasketaan sarake $1/V$ (ks. Muunnokset) ja piirretään pisteet $(1/V,\,p)$. Origon kautta kulkevan suoran kulmakerroin on $p/(1/V) = pV$, joten jokainen piste antaa oman arvonsa: $pV = 2030;\ 1988;\ 2010;\ 1980;\ 2025;\ 1980\,\text{kPa}\cdot\text{ml}$. Suora asetetaan niin, että pisteitä jää tasaisesti sen kummallekin puolelle, eli sen kulmakerroin on näiden arvojen keskiarvo $\dfrac{12\,013}{6}\,\text{kPa}\cdot\text{ml} \approx 2000\,\text{kPa}\cdot\text{ml}$. Kuvaajalta tarkistetaan: suora kulkee pisteen $(0{,}100\,\tfrac{1}{\text{ml}};\ 200\,\text{kPa})$ kautta, ja mittauspiste $(0{,}100;\ 203)$ on hieman sen yläpuolella. Kulmakerroin luetaan suoralta eikä yksittäisestä mittauspisteestä, koska jokaisessa mittauksessa on virhettä.
 **Kaava:** $k = \dfrac{\Delta p}{\Delta(1/V)} = \dfrac{p}{1/V} = pV$, joten $pV = \dfrac{p}{1/V}$
 **Muunnokset:** $1/V = 0{,}100;\ 0{,}0800;\ 0{,}0667;\ 0{,}0500;\ 0{,}0400;\ 0{,}0333\,\tfrac{1}{\text{ml}}$. Yksikkö: $1\,\text{kPa} \cdot 1\,\text{ml} = 1000\,\text{Pa} \cdot 10^{-6}\,\text{m}^3 = 0{,}001\,\text{J}$.
-**Sijoitus:** $pV = \dfrac{201\,\text{kPa}}{0{,}100\,\tfrac{1}{\text{ml}}} = 2010\,\text{kPa}\cdot\text{ml} = 2010 \cdot 0{,}001\,\text{J} = 2{,}01\,\text{J}$
+**Sijoitus:** Suoralta luettu piste: $pV = \dfrac{200\,\text{kPa}}{0{,}100\,\tfrac{1}{\text{ml}}} = 2000\,\text{kPa}\cdot\text{ml} = 2000 \cdot 0{,}001\,\text{J} = 2{,}00\,\text{J}$
 **Vastaus:** $pV \approx 2{,}0\,\text{J}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat taulukon paineet $99\,\text{kPa}$, $81\,\text{kPa}$ ja $66\,\text{kPa}$, jotka on annettu kahdella numerolla; tilavuudet on annettu kolmella numerolla, ja kolmen numeron paineet $203$, $159$ ja $134\,\text{kPa}$ eivät rajoita.
 **Järkevyys:** Tulon $pV$ arvot ovat $1980$–$2030\,\text{kPa}\cdot\text{ml}$, joten ne poikkeavat keskiarvosta alle 2 %. Suoran kulmakerroin on siis lähes sama kuin jokaisen pisteen $pV$, ja Boylen laki pätee mittaustarkkuuden rajoissa. Jos laki ei pätisi, pisteet eivät asettuisi suoralle.
 
