@@ -26,5 +26,6 @@ a["fy1-7-L3-03"] = V_wire / A_wire               # length L = V/A = 71,05 m -> 7
 # inquiry.json numeric tasks (not exercises; printed with their own keys)
 a["fy1-7-inq-metalli"] = (224.3 - 45.1) / (25.0 - 5.0)         # copper-like metal, slope between first and last point = 8,96 g/cm3
 a["fy1-7-inq-siirto"] = 0.187 / (70e-6)          # stone: 187 g, displaced 70 ml: rho = 0,187 kg / 70e-6 m3 = 2671 kg/m3 -> 2,7e3
-a["fy1-7-inq-tarkistus"] = 2.70 * 250   # aluminium 250 cm3: m = 2,70 g/cm3 · 250 cm3 = 675 g
+a["fy1-7-inq-virhe"] = 2.70 * 250   # Etsi virhe (not numeric): aluminium 250 cm3: m = 2,70 g/cm3 · 250 cm3 = 675 g
+a["fy1-7-inq-tarkistus-2"] = 500 * 0.200 ** 3   # pine cube: m = 500 kg/m3 · (0,200 m)^3 = 4,00 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

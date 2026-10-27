@@ -118,7 +118,7 @@
      {
       "text": "Suhde $m/V$ on joka rivillä lähes sama, noin $2{,}7\\,\\text{g/cm}^3$, joten massa on suoraan verrannollinen tilavuuteen. Pienet erot johtuvat mittausvirheestä.",
       "correct": true,
-      "feedback": "Oikein. Suhteet ovat $2{,}68$, $2{,}72$, $2{,}69$, $2{,}71$ ja $2{,}69\\,\\text{g/cm}^3$, ja ne poikkeavat toisistaan alle prosentin. Vakio suhde on aineen tiheys, ja se on alumiinille noin $2{,}7\\,\\text{g/cm}^3$."
+      "feedback": "Oikein. Suhteet ovat $2{,}68$, $2{,}72$, $2{,}69$, $2{,}71$ ja $2{,}69\\,\\text{g/cm}^3$, ja ne poikkeavat keskiarvostaan $2{,}70\\,\\text{g/cm}^3$ alle prosentin. Vakio suhde on aineen tiheys, ja se on alumiinille noin $2{,}7\\,\\text{g/cm}^3$."
      },
      {
       "text": "Erotus $m - V$ pysyy samana, joten massa on aina saman verran tilavuutta suurempi.",
@@ -126,7 +126,7 @@
      },
      {
       "text": "Suhde $m/V$ vaihtelee luvusta $2{,}68$ lukuun $2{,}72$, joten massa ei ole verrannollinen tilavuuteen.",
-      "feedback": "Mittaustuloksissa on aina pientä vaihtelua (luku *Mittaaminen ja mittauksen luotettavuus*). Vaihtelu on alle prosentin, eikä se ole systemaattista, joten suhde on käytännössä vakio."
+      "feedback": "Mittaustuloksissa on aina pientä vaihtelua (luku *Mittaaminen ja mittauksen luotettavuus*). Jokainen suhde poikkeaa keskiarvostaan alle prosentin, eikä se ole systemaattista, joten suhde on käytännössä vakio."
      }
     ]
    }
@@ -140,7 +140,7 @@
    "text": "Taulukossa on esimerkkiaineisto tuntemattomasta metallista tehdyistä paloista. Luvut ovat *esimerkkiarvoja*. Tiheyden voi laskea kahdella tavalla: yhden rivin suhteena $m/V$ tai kahden kaukana toisistaan olevan rivin erotusten suhteena $\\Delta m/\\Delta V$. Jälkimmäinen käyttää koko mittausaluetta.\n\n| Pala | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5,0 | 45,1 |\n| 2 | 10,0 | 89,2 |\n| 3 | 15,0 | 135,0 |\n| 4 | 20,0 | 178,9 |\n| 5 | 25,0 | 224,3 |",
    "question": {
     "type": "numeric",
-    "prompt": "Laske metallin tiheys käyttämällä ensimmäistä ja viimeistä riviä ja kaavaa $\\rho = \\Delta m/\\Delta V$. Vertaa tulosta lopuksi kirjan taulukkoon. Vastaa yksikössä $\\text{g/cm}^3$.",
+    "prompt": "Laske metallin tiheys käyttämällä ensimmäistä ja viimeistä riviä ja kaavaa $\\rho = \\Delta m/\\Delta V$. Vertaa tulosta lopuksi kirjan taulukkoon (luvun teoriaosa): alumiini $2{,}70$, rauta $7{,}87$, kupari $8{,}96$, lyijy $11{,}3$ ja kulta $19{,}3\\,\\text{g/cm}^3$. Vastaa yksikössä $\\text{g/cm}^3$.",
     "answer": 8.96,
     "unit": "g/cm³",
     "tolerance": 0.02,
@@ -198,13 +198,14 @@
    "stage": "tutki",
    "type": "explain",
    "title": "Johtopäätös: miten massa ja tilavuus liittyvät?",
-   "prompt": "Kirjoita kolmen taulukon perusteella: Mistä tiedät, että alumiinipalojen massa on suoraan verrannollinen tilavuuteen? Miten tuntemattoman metallin tiheys saatiin? Mitä pitää tehdä, jos nestettä mitataan astiassa?",
-   "model": "Alumiinipaloissa suhde $m/V$ oli joka rivillä noin $2{,}7\\,\\text{g/cm}^3$, joten massa on suoraan verrannollinen tilavuuteen ja suhde on aineen tiheys. Tuntemattoman metallin tiheys saatiin kahden kaukana toisistaan olevan pisteen erotuksista, $\\rho = \\Delta m/\\Delta V = 179{,}2\\,\\text{g}/20{,}0\\,\\text{cm}^3 = 8{,}96\\,\\text{g/cm}^3$, ja se vastasi kuparia. Nesteen kokonaismassa astian kanssa ei ole verrannollinen tilavuuteen, koska tyhjän astian massa on mukana. Siksi astian massa pitää vähentää kokonaismassasta tai tiheys pitää lukea suoran kulmakertoimesta, jolloin astian massa on suoran leikkauspiste. Aineistot olivat esimerkkiarvoja, joissa oli pientä mittausvirhettä.",
+   "prompt": "Kirjoita kolmen taulukon perusteella: Mistä tiedät, että alumiinipalojen massa on suoraan verrannollinen tilavuuteen? Miten tuntemattoman metallin tiheys saatiin? Kumpi suora, alumiinin vai tuntemattoman metallin, olisi koordinaatistossa jyrkempi ja miksi? Mitä pitää tehdä, jos nestettä mitataan astiassa?",
+   "model": "Alumiinipaloissa suhde $m/V$ oli joka rivillä noin $2{,}7\\,\\text{g/cm}^3$, joten massa on suoraan verrannollinen tilavuuteen ja suhde on aineen tiheys. Tuntemattoman metallin tiheys saatiin kahden kaukana toisistaan olevan pisteen erotuksista, $\\rho = \\Delta m/\\Delta V = 179{,}2\\,\\text{g}/20{,}0\\,\\text{cm}^3 = 8{,}96\\,\\text{g/cm}^3$, ja se vastasi kuparia. Kuparin suora on alumiinin suoraa jyrkempi, koska sen tiheys eli kulmakerroin on suurempi. Nesteen kokonaismassa astian kanssa ei ole verrannollinen tilavuuteen, koska tyhjän astian massa on mukana. Siksi astian massa pitää vähentää kokonaismassasta tai tiheys pitää lukea suoran kulmakertoimesta, jolloin astian massa on suoran leikkauspiste. Aineistot olivat esimerkkiarvoja, joissa oli pientä mittausvirhettä. Kuutioiden aine voidaan siis päätellä mittaamalla massa ja tilavuus ja laskemalla niistä tiheys.",
    "criteria": [
     "Perustelin verrannollisuuden suhteella $m/V$, en pelkällä massan kasvulla.",
     "Laskin tiheyden kahden kaukana toisistaan olevan pisteen avulla tai suhteena $m/V$.",
     "Selitin, että astian massa on vähennettävä tai että se näkyy leikkauspisteenä.",
-    "Mainitsin, että aineisto oli esimerkkiarvoja tai että mittauksissa on virhettä."
+    "Mainitsin, että aineisto oli esimerkkiarvoja tai että mittauksissa on virhettä.",
+    "Kerroin, kumman aineen suora on jyrkempi ja miksi, ja mitä kuutioista kannattaa mitata."
    ]
   },
   {

@@ -96,8 +96,8 @@
 $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Muunnokset:** Ei tarvita: tiheydet ovat samassa yksikössä ja massa $m$ supistuu pois.
 **Sijoitus:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}32$
-**Vastaus:** noin $3{,}3$ kertaa, kaksi merkitsevää numeroa, koska tiheyksiä käytetään taulukon tarkkuudella.
-**Järkevyys:** Alumiini on kevyempää, joten saman massan saamiseksi sitä tarvitaan enemmän tilavuutena. Tiheyksien suhde $9000 / 2700 \approx 3{,}3$ vahvistaa arvion.
+**Vastaus:** $3{,}32$ kertaa, kolme merkitsevää numeroa kuten taulukon tiheyksissä $8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$.
+**Järkevyys:** Alumiini on kevyempää, joten saman massan saamiseksi sitä tarvitaan enemmän tilavuutena. Pyöristetyillä luvuilla $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$, joten suhde $8960/2700$ on kolmen ja neljän välissä, lähempänä kolmea, kuten $3{,}32$.
 
 ## fy1-7-L3-02
 **Annettu:** alumiinia $V_1 = 100\,\text{cm}^3$, $\rho_1 = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$ ja rautaa $V_2 = 50\,\text{cm}^3$, $\rho_2 = 7{,}87\,\tfrac{\text{g}}{\text{cm}^3}$; tilavuudet lasketaan yhteen

@@ -47,7 +47,7 @@ Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikk�
   <line x1="395" y1="56" x2="395" y2="366" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
 
-Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuvaa **tiheys** $\rho$: se kertoo, kuinka paljon massaa aineessa on yhtä tilavuusyksikköä kohti. Rauta on noin viisitoista kertaa niin tiheää kuin mänty, joten sama tilavuus sisältää noin viisitoista kertaa niin paljon ainetta.
+Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuvaa **tiheys** $\rho$: se kertoo, kuinka paljon massaa aineessa on yhtä tilavuusyksikköä kohti. Rauta on noin kuusitoista kertaa niin tiheää kuin mänty, joten sama tilavuus sisältää noin kuusitoista kertaa niin paljon ainetta.
 
 ### Massa on suoraan verrannollinen tilavuuteen
 
@@ -152,9 +152,9 @@ Laskussa pidetään kaikki suureet samassa yksikköjärjestelmässä. Tilavuuden
 | --- | --- | --- |
 | mänty | 500 | 0,50 |
 | etanoli | 790 | 0,79 |
-| vesi | 1000 | 1,00 |
 | ruokaöljy | 920 | 0,92 |
 | jää | 920 | 0,92 |
+| vesi | 1000 | 1,00 |
 | alumiini | 2700 | 2,70 |
 | rauta | 7870 | 7,87 |
 | kupari | 8960 | 8,96 |
@@ -213,7 +213,7 @@ Säännöllisen kappaleen tilavuus lasketaan mitoista: kuution tilavuus on $a^3$
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-Mittalasin lukema tunnetaan vain asteikon tarkkuudella, joten kahden lukeman erotuksessa on vähemmän merkitseviä numeroita kuin kummassakaan lukemassa. Tämä rajoittaa tiheyden tarkkuutta.
+Mittalasin lukema tunnetaan vain asteikon tarkkuudella, joten kahden lukeman erotuksessa on voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa, koska kummankin lukeman virhe tulee mukaan. Tämä rajoittaa tiheyden tarkkuutta.
 
 ### Astian massa mittauksessa
 
@@ -265,7 +265,7 @@ m &= \rho a^2 L \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Palkin tilavuus on $1{,}92\,\text{dm}^3$ eli noin kaksi litraa, ja saman tilavuuden vesi olisi noin $1{,}9\,\text{kg}$. Rauta on noin 7,9-kertaisen tiheää veteen verrattuna, joten arvio on $7{,}9 \cdot 1{,}9\,\text{kg} \approx 15\,\text{kg}$. Tulos täsmää.
+**Järkevyys.** Palkin tilavuus on $1{,}92\,\text{dm}^3$ eli noin kaksi litraa, ja saman tilavuuden vesi olisi noin $1{,}9\,\text{kg}$. Rauta on noin 7,9 kertaa vettä tiheämpää, joten arvio on $7{,}9 \cdot 1{,}9\,\text{kg} \approx 15\,\text{kg}$. Tulos täsmää.
 
 ## Yleinen virhekäsitys
 
