@@ -1,8 +1,8 @@
 """Mechanical checks for a lesson folder, encoding the rules in CLAUDE.md and NOTES.md.
 
-  python scripts/lint_lesson.py <id>            lint one lesson (folder found under content/)
-  python scripts/lint_lesson.py content/FY3/fy3-3
-  python scripts/lint_lesson.py --all           every lesson except content/_gold
+  python scripts/lint_lesson.py <id>            lint one lesson (folder found under content/fi/)
+  python scripts/lint_lesson.py content/fi/FY3/fy3-3
+  python scripts/lint_lesson.py --all           every lesson of content/fi/ (content/_gold is the reference, not a lesson)
 
 Prints one line per finding, `ERROR file:line message` or `WARN file:line message`, and exits 1 when
 there is at least one ERROR. Run it before any reviewer starts: everything it catches used to cost a review
@@ -346,7 +346,7 @@ def check_meta(L, folder):
     if meta.get("id") != lid: L.err("meta.json", 1, f"id {meta.get('id')!r} does not match folder {lid!r}")
     code = courses.course_of(lid)
     if meta.get("course") != folder.parent.name or folder.parent.name != code:
-        L.err("meta.json", 1, f"course {meta.get('course')!r}, folder content/{folder.parent.name}/ and id prefix ({code}) must agree")
+        L.err("meta.json", 1, f"course {meta.get('course')!r}, folder content/{courses.lang_of(folder)}/{folder.parent.name}/ and id prefix ({code}) must agree")
     glossary = {e["term"] for e in json.loads((ROOT / "glossary.json").read_text())}
     for term in meta.get("glossary", []):
         if term not in glossary: L.err("meta.json", 1, f"glossary term {term!r} missing from glossary.json (add it, do not invent synonyms)")
@@ -372,14 +372,14 @@ def check_sim(L, folder, meta):
     if ".class('readout')" not in js and 'class("readout")' not in js and "readout" not in js:
         L.warn("sim.js", 1, "no DOM readout (.readout); numbers in the canvas are hard to read on a phone (NOTES 2)")
     if re.search(r"\bfetch\(|XMLHttpRequest|https?://", js): L.err("sim.js", 1, "no network requests from a simulation")
-    if not (folder / "sim-spec.md").exists(): L.err("sim-spec.md", 1, "a lesson with sim.js needs sim-spec.md")
+    if not courses.lesson_file(folder, "sim-spec.md").exists(): L.err("sim-spec.md", 1, "a lesson with sim.js needs sim-spec.md")
     t = ROOT / "tests" / "sims" / f"{folder.name}.json"
     if not t.exists(): L.err("tests/sims", 1, f"no tests/sims/{folder.name}.json; the developer writes it with the simulation")
     else:
         try: n = len(json.loads(t.read_text()))
         except json.JSONDecodeError as e: L.err(f"tests/sims/{folder.name}.json", e.lineno, "invalid JSON"); return
         if n < 3: L.err(f"tests/sims/{folder.name}.json", 1, f"only {n} assertions, at least 3 covering the spec")
-    check_text_rules(L, "sim-spec.md", (folder / "sim-spec.md").read_text()) if (folder / "sim-spec.md").exists() else None
+    check_text_rules(L, "sim-spec.md", courses.lesson_file(folder, "sim-spec.md").read_text()) if courses.lesson_file(folder, "sim-spec.md").exists() else None
     sim_rule = L.page if sim_edited(folder) else L.warn   # an old sim's notes are folded by sim-embed.js until the sim itself is edited
     for m in re.finditer(r"\bp\.text\(\s*(['\"`])((?:(?!\1)[^\\]|\\.)*)\1", js):   # a literal canvas label: LaTeX (teacher 2026-10-26)
         if "$" not in m.group(2) and m.group(2).strip():
@@ -405,11 +405,11 @@ def sim_edited(folder):
 
 
 def check_answers_py(L, folder, answers):
-    f = folder / "answers.py"
+    f = courses.lesson_file(folder, "answers.py")
     if not f.exists():
         L.warn("answers.py", 1, "no answers.py; the exercise author saves the Python that computed the answers so the gate can re-run it")
         return
-    r = subprocess.run([sys.executable, "-I", str(f)], capture_output=True, text=True, cwd=folder, timeout=60)
+    r = subprocess.run([sys.executable, "-I", str(f)], capture_output=True, text=True, cwd=f.parent, timeout=60)
     if r.returncode != 0: L.err("answers.py", 1, "failed: " + (r.stderr.strip().splitlines() or ["?"])[-1]); return
     try: got = json.loads(r.stdout.strip().splitlines()[-1])
     except (json.JSONDecodeError, IndexError): L.err("answers.py", 1, "must print a JSON object {exercise id: number} as its last line"); return

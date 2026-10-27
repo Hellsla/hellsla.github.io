@@ -248,7 +248,7 @@ if len(sys.argv) > 1:
 
 
 # ---------------------------------------------------------------- part 1: validation and rendering
-folder = ROOT / "content/FY3/fy3-2"
+folder = ROOT / "content/fi/FY3/fy3-2"
 good = json.loads((folder / "inquiry.json").read_text()); lesson_md = (folder / "lesson.md").read_text()
 check("pilot validates", inquiry.validate(folder, good, lesson_md) == [], str(inquiry.validate(folder, good, lesson_md)))
 
@@ -286,8 +286,9 @@ with tempfile.TemporaryDirectory() as tmp:
         src = ROOT / n
         if src.is_dir(): shutil.copytree(src, troot / n)
         elif src.exists(): shutil.copy(src, troot / n)
-    shutil.copytree(folder, troot / "content/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
-    (troot / "content/FY3/fy3-2/inquiry.json").unlink(); (troot / "content/FY3/fy3-2/lesson.md").write_text(named)
+    shutil.copytree(folder, troot / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
+    shutil.copytree(ROOT / "lessons/FY3/fy3-2", troot / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
+    (troot / "content/fi/FY3/fy3-2/inquiry.json").unlink(); (troot / "content/fi/FY3/fy3-2/lesson.md").write_text(named)
     env = {**os.environ, "FYSIIKKALABRA_ROOT": tmp}
     r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env=env)
     classic = (troot / "preview/fy3-2.html").read_text() if r.returncode == 0 else ""
@@ -300,7 +301,7 @@ with tempfile.TemporaryDirectory() as tmp:
 
 # a broken inquiry.json fails the build with the field named
 with tempfile.TemporaryDirectory() as tmp:
-    bad = pathlib.Path(tmp) / "content/FY3/fy3-2"; shutil.copytree(folder, bad)
+    bad = pathlib.Path(tmp) / "content/fi/FY3/fy3-2"; shutil.copytree(folder, bad)
     d = copy.deepcopy(good); d["activities"][2]["choices"][1].pop("feedback"); (bad / "inquiry.json").write_text(json.dumps(d))
     r = subprocess.run([PY, ROOT / "scripts/lint_lesson.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env={**__import__("os").environ, "FYSIIKKALABRA_ROOT": tmp})
     # lint_lesson resolves its own ROOT; validate directly instead

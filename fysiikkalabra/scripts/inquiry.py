@@ -1,4 +1,4 @@
-"""Inquiry-based lesson structure: validation and rendering of content/<course>/<id>/inquiry.json (format version 1).
+"""Inquiry-based lesson structure: validation and rendering of content/<lang>/<course>/<id>/inquiry.json (format version 1).
 
 A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella →
 Tarkista osaamisesi — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
@@ -460,8 +460,8 @@ def render(folder, inquiry, parts, md):
 if __name__ == "__main__":
     if len(sys.argv) != 2: sys.exit(__doc__)
     lid = sys.argv[1]
-    folder = next((f for f in ROOT.glob(f"content/*/{lid}") if (f / "meta.json").exists()), None)
-    if folder is None: sys.exit(f"no lesson {lid}")
+    import courses
+    folder = courses.find_lesson(lid)
     inq = load(folder)
     if inq is None: sys.exit(f"{lid}: no inquiry.json (the lesson renders in the classic layout)")
     errs = validate(folder, inq, (folder / "lesson.md").read_text())

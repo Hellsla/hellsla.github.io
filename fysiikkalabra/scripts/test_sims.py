@@ -12,6 +12,7 @@ import json, sys, pathlib, itertools
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 from courses import ROOT
+import i18n
 only = sys.argv[1] if len(sys.argv) > 1 else None
 OUT = ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # preview/ holds drafts + --all
 WIDTHS = (360, 390, 1280)
@@ -99,7 +100,7 @@ def sweep(b, page_file):
 fails = 0
 with sync_playwright() as pw:
     b = launch(pw)
-    for page_file in sorted(OUT.glob("*.html")):
+    for page_file in sorted(OUT.glob("*.html")) + [f for lang in i18n.languages()[1:] for f in sorted((OUT / lang).glob("*.html"))]:   # site/<lang>/ too
         lid = page_file.stem
         if only and lid != only: continue
         if 'id="sim-root"' not in page_file.read_text(): continue   # a lesson page with a simulation, wherever its sim.js lives
@@ -124,7 +125,7 @@ with sync_playwright() as pw:
         sweep_ok, sweep_note, sweep_bad = sweep(b, page_file) if state is not None else (True, "", [])
         ok = not errors and state is not None and not bad and sweep_ok
         fails += not ok
-        print("PASS" if ok else "FAIL", f"{OUT.name}/{lid}", "no simState (p5 not loaded?)" if state is None else f"{len(checks)} assertions, {sweep_note}")
+        print("PASS" if ok else "FAIL", f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()}", "no simState (p5 not loaded?)" if state is None else f"{len(checks)} assertions, {sweep_note}")
         for line in errors[:3] + bad + sweep_bad: print("     " + line)
     b.close()
 sys.exit(1 if fails else 0)

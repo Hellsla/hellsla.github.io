@@ -3,7 +3,8 @@
   "format": {
     "html_lang": "fi",
     "og_locale": "fi_FI",
-    "decimal": ","
+    "decimal": ",",
+    "language_name": "Suomi"
   },
   "sections": {
     "_about": "The ## headings of lesson.md as written in this language; the key is the name the build, inquiry.json and the checks use.",
@@ -44,7 +45,8 @@
     "home_tasks": "Tehtävät ja exit ticket",
     "home_tasks_text": "kolmella tasolla, vastaukset tarkistettavissa ja ratkaisut avattavissa.",
     "home_count": "{{built}} oppituntia valmiina, {{total}} suunnitteilla kaikkiaan. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.",
-    "home_description": "Teoria, simulaatiot ja tehtävät lukion fysiikkaan, LOPS 2019:n moduulit FY1–FY8."
+    "home_description": "Teoria, simulaatiot ja tehtävät lukion fysiikkaan, LOPS 2019:n moduulit FY1–FY8.",
+    "credits": "{{n}} op"
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",

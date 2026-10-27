@@ -1,7 +1,7 @@
 # Fysiikkalabra — house rules for every agent
 
 ## What this repo is
-A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simulations and exercises, one folder per lesson under `content/<course>/<lesson-id>/`. `scripts/build.py` renders the lessons whose reviews are current into `site/`, which is committed and served by GitHub Pages at `hellsla.github.io/fysiikkalabra/site/`. Previews (`build.py <id>` or `--all`) go to the git-ignored `preview/`.
+A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simulations and exercises, one folder per lesson under `content/fi/<course>/<lesson-id>/` (its texts; the language-neutral code is in `lessons/<course>/<lesson-id>/`, interface texts in `lang/fi.json`, README "Languages"). `scripts/build.py` renders the lessons whose reviews are current into `site/`, which is committed and served by GitHub Pages at `hellsla.github.io/fysiikkalabra/site/`. Previews (`build.py <id>` or `--all`) go to the git-ignored `preview/`.
 
 ## Courses and scope
 - `curriculum.json` is the single source for every course (FY1–FY8): its LOPS 2019 goals and central contents from `docs/lops2019/`, its lesson slots, and optional `scope_notes`, `exercise_levels`, `initialized`. `scripts/courses.py` turns a lesson id into its course, slot and folders; nothing else hardcodes a course.
@@ -42,22 +42,28 @@ lesson does 6, 9 and its half of 4. `lint_lesson.py` checks 4, 6 and 9 as errors
 6. **The formula section is named after its law**: `## Kaava: Lämpömäärä` shows "Lämpömäärä" (or Hydrostaattinen paine, Ideaalikaasun tilanyhtälö, by the lesson's content); "Kaava" stays the key that inquiry.json and the scripts use.
 7. **Exit ticket**, not "Lähtölippu", in every heading and link a student sees.
 8. **Tehtävät last**: the exercises close the page, after the exit ticket, with their levels, answer checks and solutions; predictions and the questions of the investigation stay where they are.
-9. **Textbook illustrations**: polished inline SVG in the figure palette (NOTES.md §3), recognisable materials, consistent strokes, room around things, labels that read on a phone; colour carries the physics (a temperature rise stands out) but never alone; quantities to scale. `content/FY3/fy3-6` is the model.
+9. **Textbook illustrations**: polished inline SVG in the figure palette (NOTES.md §3), recognisable materials, consistent strokes, room around things, labels that read on a phone; colour carries the physics (a temperature rise stands out) but never alone; quantities to scale. `content/fi/FY3/fy3-6` is the model.
 
 ## Exercise levels
 Level 1: one formula, values given, 5 problems. Level 2: two steps or a conversion or a rearrangement, 4. Level 3: reasoning, two ideas, or an unfamiliar context, 3 (other counts only where the course's `exercise_levels` says so). None repeats the worked example.
 
 ## Lesson folder and assets
+`content/fi/<course>/<id>/`, what a reader reads (another language has the same files under `content/<lang>/`):
 ```
 meta.json          id, course, title, goals, prerequisites, glossary, sim (true | "<sim folder>" | false), solutions (all; first and none are not used since 2026-10-27)
 lesson.md          Ydinajatus, Kaava, Esimerkki (staged), misconception, summary; inline SVG figures
 inquiry.json       the inquiry sequence: contribution, prior, activities by stage (format in docs/inquiry.md)
 exercises.json     three levels (schema in README)         solutions.md    one complete solution per exercise (CLAUDE.md Lesson form 7, NOTES §3)
-answers.py         computes every answer                   exit-ticket.json  3 quick checks
-sim-spec.md        the simulation's one-paragraph spec: what the student can find out with it
+exit-ticket.json   3 quick checks
 review/            science.md, pedagogy.md (legacy.md on a prototype), carry.tsv, developer.md, checks.txt, usage.tsv; packets and shots git-ignored
 ```
-Simulations live in `assets/sims/<course>/<name>/` (sim.js exposing `window.simState` and `defineSimAdapter()`, its sim.css and images; FY3's stay as `sim.js` in their lesson folders), pictures in `assets/pics/<course>/` referred to as `pics/<course>/<file>`; `assets/shared/` only for what several courses use (`assets/README.md`).
+`lessons/<course>/<id>/`, the same for every language:
+```
+answers.py         computes every answer                   figures.py      the lesson's figures (scripts/figures.py writes them into lesson.md)
+sim-spec.md        the simulation's one-paragraph spec: what the student can find out with it
+sim.js             FY3 only: the lesson's simulation (its visible texts are in lang/fi.json "sims", called with __('key'))
+```
+Simulations live in `assets/sims/<course>/<name>/` (sim.js exposing `window.simState` and `defineSimAdapter()`, its sim.css and images; FY3's stay as `sim.js` in `lessons/FY3/<id>/`; every text a simulation shows is in `lang/fi.json` under `sims.<name>`, never a literal in sim.js), pictures in `assets/pics/<course>/` referred to as `pics/<course>/<file>`; `assets/shared/` only for what several courses use (`assets/README.md`).
 
 ## Pipeline
 - **developer** writes and fixes, **science-reviewer** and **pedagogy-reviewer** judge independently; each works from a packet file (`scripts/review_packet.py`) that its prompt names. `/lesson <id>` (`.claude/commands/lesson.md` at the repository root, beside `.claude/agents/`: routing, budgets, steps) runs a round; `python scripts/check_lesson.py <id>` runs every deterministic check before any review.

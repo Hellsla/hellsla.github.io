@@ -30,12 +30,12 @@ session opened at the root, as a cloud session is, finds them; each starts by wo
 ## A new course
 ```
 /new-course FY4        # scripts/new_course.py FY4: checks curriculum.json against LOPS 2019, creates the folders
-/lesson fy4-1          # creates content/FY4/fy4-1/meta.json from the slot, then drafts, checks and reviews it
+/lesson fy4-1          # creates content/fi/FY4/fy4-1/meta.json from the slot, then drafts, checks and reviews it
 /lesson fy4-2
 ```
 Everything course-specific comes from the course's entry in `curriculum.json` (LOPS goals and central contents,
 lesson slots, `scope_notes`, optional `exercise_levels`); `scripts/courses.py` resolves a lesson id to its course and
-folders. Lessons go to `content/FY4/<id>/`, pictures to `assets/pics/fy4/` (text refers to `pics/fy4/<file>`),
+folders. Lesson texts go to `content/fi/FY4/<id>/`, their code (`answers.py`, `figures.py`) to `lessons/FY4/<id>/`, pictures to `assets/pics/fy4/` (text refers to `pics/fy4/<file>`),
 simulations to `assets/sims/fy4/<name>/` (published at `sims/fy4/<name>/`), shared assets to `assets/shared/`
 (`assets/README.md`). The course page `site/FY4.html` lists the slots and links each lesson once it is reviewed.
 
@@ -74,6 +74,40 @@ A lesson with `inquiry.json` is rendered as inquiry stages (Pohdinta → Ennusta
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }
 ```
-`answers.py` in the lesson folder computes every answer and prints `{id: value}`; the lint compares it with
+`answers.py` in `lessons/<course>/<id>/` computes every answer and prints `{id: value}`; the lint compares it with
 `exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
 Every exercise shows its complete worked solution from `solutions.md` behind its own *Näytä ratkaisu* button (`meta.solutions` is `all`, teacher 2026-10-27); `scripts/check_solutions.py --all` lists any missing or incomplete solution.
+
+## Languages
+Every text a visitor sees is outside the code, so a new language is two things and nothing else:
+
+```
+lang/<lang>.json                     short interface texts: menus, buttons, headings, messages, the simulations' labels
+content/<lang>/<COURSE>/<id>/        a lesson's texts: lesson.md, inquiry.json, exercises.json, solutions.md,
+                                     exit-ticket.json, meta.json (+ figures.json: the figures' words, below)
+content/<lang>/courses.json          course titles, goals and lesson titles ({"FY3": {"title", "tavoitteet", "lessons": {id: title}}})
+```
+
+Finnish (`fi`) is the source: `lang/fi.json`, `content/fi/` and `curriculum.json`. To add English, copy
+`lang/fi.json` to `lang/en.json` and translate the values (keep every `{{placeholder}}`, formula, number and unit;
+`format` sets `html_lang`, `og_locale`, the decimal sign and the language's own name for the language menu), then
+copy a lesson folder from `content/fi/` to `content/en/` (without `review/`) and translate its texts. The `##`
+headings of lesson.md are translated through `sections` in the language file; inquiry.json keeps the Finnish keys.
+The code half of a lesson (`lessons/<COURSE>/<id>/`: answers.py, figures.py, sim.js, sim-spec.md), the simulations,
+pictures, templates and scripts are shared by every language.
+
+- **Figures**: `figures.py` is written once. `content/<lang>/<COURSE>/<id>/figures.json` maps each Finnish text it
+  draws (the words in `\text{}` and each figure's description) to the translation, and
+  `python scripts/figures.py <id> --lang en` writes the figures into that language's lesson.md with its decimal sign.
+- **Check**: `python scripts/check_i18n.py` (CI) lists lessons not translated yet and fails when a language misses
+  a key, a course title or a figure text, or when a translation differs from the Finnish lesson in anything but its
+  texts: an answer, unit, tolerance, correct option, experiment setting, id, section, figure or formula.
+- **Reviews**: a translation is a lesson of its own for `reviews.py`: its hash covers its texts (and the simulation
+  with that language's labels), its reports go in its own `review/`, and `build.py` publishes it only when both
+  reviews pass, like a Finnish lesson.
+- **Build**: Finnish stays at `site/`; every other language is built into `site/<lang>/` with the same page names,
+  sharing the style, scripts, simulations and pictures of `site/`. While there is one language the pages have no
+  language menu; with two or more, each page links to the same page in the other languages (to their front page
+  when a lesson is not translated yet).
+- Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
+  reference lesson `content/_gold/`.

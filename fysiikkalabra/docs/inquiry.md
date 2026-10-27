@@ -7,7 +7,7 @@ ticket), byte for byte as before. The lesson's other files are unchanged by the 
 the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` the three quick checks, the simulation the physics.
 `inquiry.json` only says where those parts go and adds the activities between them.
 
-The pedagogical brief behind this format is `docs/inquiry-spec.md`. Pilot: `content/FY3/fy3-2/inquiry.json`.
+The pedagogical brief behind this format is `docs/inquiry-spec.md`. Pilot: `content/fi/FY3/fy3-2/inquiry.json`.
 
 Validate: `python scripts/inquiry.py <id>` (also run by `lint_lesson.py` and refused by `build.py`); errors name
 the lesson, the file and the field, e.g. `fy3-2 inquiry.json: activities[2].choices[1].feedback: every choice

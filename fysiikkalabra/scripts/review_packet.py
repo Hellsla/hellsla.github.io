@@ -52,7 +52,7 @@ def sim_code(folder, meta):
     """[(label, path)] of the simulation's text files (sim.js, sim.css...), wherever the course keeps them."""
     d = courses.sim_dir(folder, meta)
     if d is None: return []
-    if d[0] == "lesson": return [("sim.js", folder / "sim.js")]
+    if d[0] == "lesson": return [("sim.js", courses.lesson_file(folder, "sim.js"))]
     return [(f"{p.relative_to(ROOT).as_posix()}", p) for p in sorted(d[1].rglob("*")) if p.is_file() and p.suffix in (".js", ".css", ".json", ".md")]
 
 
@@ -80,7 +80,7 @@ def header(folder, role, mode):
             + (f"Not yet in glossary.json (the developer adds each, with a definition): {', '.join(t for t in meta.get('glossary', []) if t not in gl)}\n"
                if any(t not in gl for t in meta.get("glossary", [])) else ""))
     d = courses.sim_dir(folder, meta); users = courses.deps().get(d[2], []) if d and d[0] != "lesson" else []
-    sim_line = ("none" if d is None else f"`{(folder / 'sim.js').relative_to(ROOT)}` (lesson folder, FY3 layout)" if d[0] == "lesson"
+    sim_line = ("none" if d is None else f"`{courses.lesson_file(folder, 'sim.js').relative_to(ROOT)}` (lesson folder, FY3 layout)" if d[0] == "lesson"
                 else f"`{d[1].relative_to(ROOT)}/` ({d[0]}; used by {', '.join(users) or lid})")
     out += (f"\n## Assets\nSimulation: {sim_line}. Pictures folder of the course: `{c['paths']['pics'].relative_to(ROOT)}/` "
             f"(text refers to `pics/{c['slug']}/<file>`); pictures this lesson uses: {', '.join(courses.pic_refs(folder)) or 'none'}.\n"
@@ -139,16 +139,16 @@ def packet(folder, role, fix=False):
             else:
                 if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
                 if role == "science":
-                    for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md"): out += block(folder / n)
+                    for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md"): out += block(courses.lesson_file(folder, n))
                     for label, p in sim_code(folder, meta): out += block(p, label)
                 else:
-                    for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md"): out += block(folder / n, collapse_svg=(n == "lesson.md"))
+                    for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md"): out += block(courses.lesson_file(folder, n), collapse_svg=(n == "lesson.md"))
             out += shots(folder, role) + reviewer_rules(role, lid)
     else:
         mode = "fix" if fix else "draft"
         out, meta = header(folder, role, mode)
         c = courses.course(courses.course_of(lid)); d = courses.sim_dir(folder, meta)
-        has_sim = d is not None or (folder / "sim-spec.md").exists() or meta.get("sim")
+        has_sim = d is not None or courses.lesson_file(folder, "sim-spec.md").exists() or meta.get("sim")
         out += "\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n"
         if has_sim: out += "\n" + sections("NOTES.md", "4. Simulations and pages") + "\n"
         own = c["paths"]["sims"] / lid
@@ -168,8 +168,8 @@ def packet(folder, role, fix=False):
             if sims:
                 out += "\n## Simulations this course already has (reuse one when its model fits: meta.json `\"sim\": \"<name>\"`; changing one re-opens the review of every lesson that uses it)\n"
                 out += "\n".join(f"- `{p.relative_to(ROOT)}/` used by {', '.join(deps.get(f'sims/{c['slug']}/{p.name}', [])) or 'none'}" for p in sims) + "\n"
-            out += "\n## Reference lesson (content/_gold; for the inquiry shape see content/FY3/fy3-2/inquiry.json, not to be copied mechanically)\n" + block(ROOT / "content/_gold/lesson.md")
-        files = [(n, folder / n) for n in LESSON_FILES] + [(label, p) for label, p in sim_code(folder, meta) if label != "sim.js"] + [(f"tests/sims/{lid}.json", ROOT / "tests/sims" / f"{lid}.json")]
+            out += "\n## Reference lesson (content/_gold; for the inquiry shape see content/fi/FY3/fy3-2/inquiry.json, not to be copied mechanically)\n" + block(ROOT / "content/_gold/lesson.md")
+        files = [(n, courses.lesson_file(folder, n)) for n in LESSON_FILES] + [(label, p) for label, p in sim_code(folder, meta) if label != "sim.js"] + [(f"tests/sims/{lid}.json", ROOT / "tests/sims" / f"{lid}.json")]
         out += "\n## The lesson's files now (open the ones your task touches; Edit needs a Read first)\n" + "\n".join(
             f"- `{p.relative_to(ROOT)}` ({p.stat().st_size} bytes)" for n, p in files if p.is_file()) + "\n"
         out += block(folder / "meta.json")
