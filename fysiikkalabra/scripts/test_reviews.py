@@ -136,6 +136,13 @@ s_.write_text(s_.read_text() + "const yksi = 1;\n")
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("one line of sim.js code: full for both", out.count("full") == 2 and "simulation's code" in out, out)
 s_.write_text((SRC / "content/FY3" / LESSON / "sim.js").read_text())
+s_.write_text(s_.read_text().replace("p.text('$600\\\\,\\\\text{K}$', thx - 14", "p.text('$600\\\\,\\\\text{K}$', thx - 20", 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a sim's LaTeX canvas label nudged 6 units: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "label" in out, out)
+s_.write_text(s_.read_text().replace("p.textSize(ts(11)); p.text(", "p.textSize(ts(12)); p.text(", 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("the same line with its text size changed too: full for both", out.count("full") == 2, out)
+s_.write_text((SRC / "content/FY3" / LESSON / "sim.js").read_text())
 
 # 5b. change categories decide who looks again; a PASS carries over only what its reviewer need not see
 svg = [l for l in p.read_text().splitlines() if l.lstrip().startswith(("<text ", "<foreignObject ")) and ' x="' in l]   # labels are fig-tex foreignObjects since 2026-10-26
