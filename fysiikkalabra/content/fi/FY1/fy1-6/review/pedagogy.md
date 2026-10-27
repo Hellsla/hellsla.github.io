@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1587ffd88fdf3c0f
+CONTENT-HASH: a7b16d9cb53b5838
 
 ## Blocking
 (none)
 
 ## Polish
-- Alkutila shows "ympäristö = 0 (tyhjiö)"; acceptable, plain "tyhjiö" would be cleaner.
+1. Table row label is now "ilmanvastus" but the sim control is named *Ympäristö* (howto); consider "Ympäristö (ilmanvastus)".
 
 ## Checked
-- Round 1 blocking fixed: exit-ticket q3 now states vacuum premise, and the answer separates vacuum from air.
-- Data-task mistake 10 dropped; reflect and virhe optional; L2-02 is a new context (t from km/h) with a complete solution; L3-03 solution consistent.
-- Conclusion notes Koe 1-2 are model values. Nothing else touched by the fixes.
+batch delta review: row names/units ("ei ilmaa: tyhjiö", "ilmaa on") read clearly; the justification line in the solution is a plain, defensible comparison; sim and figures unchanged.
