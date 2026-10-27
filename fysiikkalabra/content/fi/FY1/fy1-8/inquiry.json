@@ -55,8 +55,8 @@
       "layout": "models",
       "choices": [
         {
-          "text": "Ryhmä A on laskenut väärin.",
-          "feedback": "Laskussa ei ole virhettä: $0{,}50\\,\\text{m} / 1{,}0\\,\\text{s} = 0{,}50\\,\\text{m/s}$. Ero syntyy mittauksesta, ei laskusta, ja siksi syytä pitää etsiä siitä, miten aika mitattiin."
+          "text": "Ryhmän B auto kulki hitaammin pitkällä matkalla.",
+          "feedback": "Tämä on testattava hypoteesi, mutta ryhmän B pöytäkirja (kohta Tutki) ei tue sitä: auton nopeus pysyy pitkilläkin matkoilla likimain samana, $0{,}42\\,\\text{m/s}$. Ero ei siis johdu matkasta, vaan siitä, miten aika mitattiin."
         },
         {
           "text": "Auton nopeus on lyhyellä matkalla suurempi kuin pitkällä matkalla.",
@@ -239,7 +239,7 @@
       "type": "explain",
       "title": "Suunnittele oma tutkimus",
       "prompt": "Valitse jokin ilmiö, jota voit tutkia koulussa tai kotona ja jossa suureet ovat mitattavissa: esimerkiksi kävelyn tai pallon vierimisen nopeus, veden jäähtyminen kupissa tai kumilenkin venyminen. Kirjoita suunnitelma: tutkimuskysymys, hypoteesi, muutettava, mitattava ja vakioitavat muuttujat, mittausalue ja toistot sekä se, miten teet pöytäkirjan.",
-      "model": "Tutkimuskysymys: miten pallon vierimiseen kuluva aika riippuu matkasta tasaisella lattialla? Pallo päästetään aina samasta kohdasta lyhyen lähtörampin yli, ja aika alkaa, kun pallo ohittaa lattialle merkityn alkuviivan, jolloin vauhti on jo tasaantunut. Hypoteesi: jos pallon nopeus lattialla on likimain vakio, kulkuaika on suoraan verrannollinen matkaan, $s = vt$. Jos aika kasvaa matkaa nopeammin, hypoteesi on väärä. Muutettava muuttuja on matka alkuviivasta (esimerkiksi $1{,}6$–$3{,}2\\,\\text{m}$ viidellä tasavälisellä arvolla), mitattava on aika käsikellolla, ja vakioidaan pallo, rampin korkeus ja lähtökohta, alusta sekä lähtötapa (pallo päästetään irti ilman työntöä). Esikokeessa pallon nopeus on noin $0{,}4\\,\\text{m/s}$. Käsikellon epävarmuus on noin $0{,}2\\,\\text{s}$, joten lyhimmällä matkalla aikaa pitää olla vähintään $4\\,\\text{s}$, jotta suhteellinen epävarmuus pysyy enintään $5\\,\\%$. Matka $1{,}6\\,\\text{m}$ antaa ajan $4\\,\\text{s}$. Teen jokaisesta matkasta kolme toistoa ja kirjaan pöytäkirjaan jokaisen lukeman yksiköineen sekä havainnot, kuten ”pallo osui seinään”. Esikoe kertoo, onko matka riittävä.",
+      "model": "Tutkimuskysymys: miten pallon vierimiseen kuluva aika riippuu matkasta tasaisella lattialla? Pallo päästetään aina samasta kohdasta lyhyen lähtörampin yli, ja aika alkaa, kun pallo ohittaa lattialle merkityn alkuviivan, jolloin vauhti on jo tasaantunut. Hypoteesi: jos pallon nopeus lattialla on likimain vakio, kulkuaika on suoraan verrannollinen matkaan, $s = vt$. Jos aika kasvaa matkaa nopeammin, hypoteesi on väärä. Muutettava muuttuja on matka alkuviivasta (esimerkiksi $1{,}6$–$3{,}2\\,\\text{m}$ viidellä tasavälisellä arvolla), mitattava on aika käsikellolla, ja vakioidaan pallo, rampin korkeus ja lähtökohta, alusta sekä lähtötapa (pallo päästetään irti ilman työntöä). Esikokeessa pallon nopeus on noin $0{,}4\\,\\text{m/s}$. Oikea pallo hidastuu vierimisen aikana hieman vierimisvastuksen takia, joten koe testaa myös sen, onko nopeus riittävän vakio. Käsikellon epävarmuus on noin $0{,}2\\,\\text{s}$, joten lyhimmällä matkalla aikaa pitää olla vähintään $4\\,\\text{s}$, jotta suhteellinen epävarmuus pysyy enintään $5\\,\\%$. Matka $1{,}6\\,\\text{m}$ antaa ajan $4\\,\\text{s}$. Teen jokaisesta matkasta kolme toistoa ja kirjaan pöytäkirjaan jokaisen lukeman yksiköineen sekä havainnot, kuten ”pallo osui seinään”. Esikoe kertoo, onko matka riittävä.",
       "criteria": [
         "Kysymys on mitattavissa, ja hypoteesista seuraa ennuste, joka voi osoittautua vääräksi.",
         "Nimesin muutettavan, mitattavan ja vähintään kaksi vakioitavaa muuttujaa.",

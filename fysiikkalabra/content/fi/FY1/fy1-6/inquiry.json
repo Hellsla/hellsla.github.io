@@ -132,12 +132,12 @@
       "vary": "t",
       "names": {
         "t": "hetki t",
-        "ilma": "ympäristö",
+        "ilma": "ilmanvastus",
         "mA": "massa m_A",
         "mB": "massa m_B"
       },
       "units": {
-        "ilma": "(tyhjiö)",
+        "ilma": "(ei ilmaa: tyhjiö)",
         "t": "s",
         "mA": "kg",
         "mB": "kg"
@@ -198,11 +198,11 @@
       "names": {
         "mB": "massa m_B",
         "t": "hetki t",
-        "ilma": "ympäristö",
+        "ilma": "ilmanvastus",
         "mA": "massa m_A"
       },
       "units": {
-        "ilma": "(tyhjiö)",
+        "ilma": "(ei ilmaa: tyhjiö)",
         "mB": "kg",
         "t": "s",
         "mA": "kg"
@@ -263,11 +263,11 @@
       "names": {
         "mB": "massa m_B",
         "t": "hetki t",
-        "ilma": "ympäristö",
+        "ilma": "ilmanvastus",
         "mA": "massa m_A"
       },
       "units": {
-        "ilma": "(ilma)",
+        "ilma": "(ilmaa on)",
         "mB": "kg",
         "t": "s",
         "mA": "kg"

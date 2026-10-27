@@ -58,7 +58,7 @@
           "feedback": "Esimerkkiaineisto kumoaa tämän. Murtoviivan osat nousisivat kulmakertoimilla $0{,}2$, $0{,}8$, $0{,}5$, $0{,}3$ ja $0{,}5\\,\\text{m/s}$, ikään kuin kärry vaihtaisi vauhtiaan jatkuvasti. Viiva seuraa myös satunnaisvirheitä. Kokeessa suora, jonka kulmakerroin on noin $0{,}5\\,\\text{m/s}$, sopii yhtä hyvin kaikkiin pisteisiin."
         },
         {
-          "text": "Origon kautta kulkeva suora, jonka molemmin puolin on pisteitä.",
+          "text": "Origon kautta kulkeva suora, joka kulkee lähellä kaikkia pisteitä ja jonka molemmin puolin on pisteitä.",
           "correct": true,
           "feedback": "Esimerkkiaineisto tukee tätä: keskimääräinen poikkeama $d$ on pienin, kun kulmakerroin on noin $0{,}5\\,\\text{m/s}$ ($d \\approx 0{,}12\\,\\text{m}$), ja pisteitä on suoran molemmin puolin. Suora ei kulje yhdenkään pisteen kautta, mutta se kuvaa liikkeen yleistä suuntaa."
         },
@@ -236,7 +236,8 @@
       "title": "Johtopäätös: miten löytyy sopiva suora",
       "after": [
         "koe-1",
-        "koe-2"
+        "koe-2",
+        "koe-3"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten löysit suoran, joka sopii pisteisiin parhaiten? Mitä kulmakertoimelle ja vakiotermille tapahtui? Mitä ne kertovat kärrystä ja mittalasista?",
       "model": "Kokeessa 1 keskimääräinen poikkeama oli pienin, kun kulmakerroin oli noin $0{,}5\\,\\text{m/s}$ ($d \\approx 0{,}12\\,\\text{m}$), ja se kasvoi molempiin suuntiin: $0{,}76\\,\\text{m}$ kulmakertoimella $0{,}30\\,\\text{m/s}$ ja $0{,}44\\,\\text{m}$ kulmakertoimella $0{,}60\\,\\text{m/s}$. Kulmakerroin kertoo, että kärry liikkui noin $0{,}5\\,\\text{m}$ jokaisessa sekunnissa. Kokeessa 2 poikkeama oli noin $61\\,\\text{g}$, kun $b = 0$, ja pieneni pienimpään arvoonsa noin $1\\,\\text{g}$, kun $b \\approx 61\\,\\text{g}$. Vakiotermi on siis tyhjän mittalasin massa, koska kun nestettä on nolla, jäljelle jää lasi. Suora ei kulkenut yhdenkään pisteen kautta, mutta pisteitä oli sen molemmin puolin. Arvot ovat esimerkkiaineiston mallin laskemia.",

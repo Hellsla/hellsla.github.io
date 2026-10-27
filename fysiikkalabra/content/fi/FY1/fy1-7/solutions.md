@@ -96,7 +96,7 @@
 $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Muunnokset:** Ei tarvita: tiheydet ovat samassa yksikössä ja massa $m$ supistuu pois.
 **Sijoitus:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}32$
-**Vastaus:** $3{,}32$ kertaa, kolme merkitsevää numeroa kuten taulukon tiheyksissä $8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$.
+**Vastaus:** $3{,}32$ kertaa, kolme merkitsevää numeroa kuten tiheyksissä $8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $2{,}70\cdot10^{3}\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Järkevyys:** Alumiini on kevyempää, joten saman massan saamiseksi sitä tarvitaan enemmän tilavuutena. Pyöristetyillä luvuilla $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$, joten suhde $8960/2700$ on kolmen ja neljän välissä, lähempänä kolmea, kuten $3{,}32$.
 
 ## fy1-7-L3-02

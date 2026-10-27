@@ -55,16 +55,16 @@
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_6}{n}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$. Kysytty on $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$
 **Muunnokset:** Ajat ovat sekunteina ja suhde on yksikötön. Se kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\bar{t} = \dfrac{11{,}19\,\text{s}}{6} = 1{,}865\,\text{s}$ ja $\Delta t = \dfrac{1{,}96\,\text{s} - 1{,}78\,\text{s}}{2} = 0{,}09\,\text{s}$, joten $\varepsilon = \dfrac{0{,}09\,\text{s}}{1{,}865\,\text{s}} \cdot 100\,\% = 4{,}83\,\%$
-**Vastaus:** $4{,}8\,\%$, kaksi merkitsevää numeroa kuten virhe-arviossa $0{,}09\,\text{s}$.
+**Vastaus:** $4{,}8\,\%$, kaksi merkitsevää numeroa. Suhteellisena virheenä se on noin viisi prosenttia, ja tarkempi arvo tulee vaihteluvälin tarkasta puolikkaasta.
 **Järkevyys:** Arvio karkeasti: $0{,}09\,\text{s}$ on noin $\tfrac{1}{20}$ ajasta $1{,}87\,\text{s}$, eli noin $5\,\%$. Käsin otetulle ajalle muutaman prosentin satunnaisvirhe on tavallinen.
 
 ## fy1-3-L2-02
 **Annettu:** sauvan pituus $L_0 = 1{,}000\,\text{m}$ ja nauhan lukemat $L_1 = 1{,}012\,\text{m}$, $L_2 = 1{,}009\,\text{m}$, $L_3 = 1{,}011\,\text{m}$
-**Kysytty:** nauhan keskimääräinen virhe $\Delta L$ yksikössä $\text{mm}$
+**Kysytty:** nauhan keskimääräinen virhe $\Delta L_\text{sys}$ yksikössä $\text{mm}$
 **Periaate:** Sauva on koko ajan yhtä pitkä, ja kulunut alkupää lisää jokaiseen lukemaan saman määrän: tämä on systemaattinen virhe. Lukemat vaihtelevat hieman satunnaisvirheen takia, joten virhe arvioidaan lukemien keskiarvon ja oikean arvon erotuksena.
-**Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ ja $\Delta L = \bar{L} - L_0$. Kysytty on $\Delta L = \bar{L} - L_0$
+**Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ ja $\Delta L_\text{sys} = \bar{L} - L_0$. Kysytty on $\Delta L_\text{sys} = \bar{L} - L_0$
 **Muunnokset:** Tulos tulee metreinä, ja $1\,\text{m} = 1000\,\text{mm}$, joten se kerrotaan tuhannella.
-**Sijoitus:** Summa on $1{,}012\,\text{m} + 1{,}009\,\text{m} + 1{,}011\,\text{m} = 3{,}032\,\text{m}$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m} = 10{,}67\,\text{mm}$
+**Sijoitus:** Summa on $1{,}012\,\text{m} + 1{,}009\,\text{m} + 1{,}011\,\text{m} = 3{,}032\,\text{m}$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L_\text{sys} = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m} = 10{,}67\,\text{mm}$
 **Vastaus:** $10{,}7\,\text{mm}$, kolme merkitsevää numeroa: lukemat ovat millimetrin tarkkuudella, ja kolmen lukeman keskiarvo kantaa yhden numeron lisää.
 **Järkevyys:** Jokainen lukema on $9\,\text{mm}$–$12\,\text{mm}$ liian suuri, joten keskiarvo $10{,}7\,\text{mm}$ on näiden välissä. Nauha näyttää noin $1\,\%$ liikaa, ja virheen etumerkki on positiivinen, koska lukemat ylittävät oikean arvon.
 

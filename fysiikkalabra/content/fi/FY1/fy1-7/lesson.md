@@ -213,7 +213,7 @@ Säännöllisen kappaleen tilavuus lasketaan mitoista: kuution tilavuus on $a^3$
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-Mittalasin lukema tunnetaan vain asteikon tarkkuudella, joten kahden lukeman erotuksessa on voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa, koska kummankin lukeman virhe tulee mukaan. Tämä rajoittaa tiheyden tarkkuutta.
+Mittalasin lukema tunnetaan vain asteikon tarkkuudella, joten kahden lukeman erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa, koska kummankin lukeman virhe tulee mukaan. Tämä rajoittaa tiheyden tarkkuutta.
 
 ### Astian massa mittauksessa
 

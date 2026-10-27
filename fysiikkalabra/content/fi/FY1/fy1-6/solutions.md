@@ -67,7 +67,7 @@
 **Muunnokset:** $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten $54{,}0\,\text{km/h} = \dfrac{54{,}0}{3{,}6}\,\text{m/s} = 15{,}0\,\text{m/s}$.
 **Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}529\,\text{s}$
 **Vastaus:** $1{,}53\,\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $54{,}0\,\text{km/h}$.
-**Järkevyys:** Nopeus $15\,\text{m/s}$ kasvaa noin $10\,\text{m/s}$ sekunnissa, joten siihen kuluu noin puolitoista sekuntia, mikä vastaa tulosta. Pudotuskorkeus olisi noin $11\,\text{m}$, kolmannen kerroksen ikkunan korkeus, joten tilanne on uskottava.
+**Järkevyys:** Nopeus $15\,\text{m/s}$ kasvaa noin $10\,\text{m/s}$ sekunnissa, joten siihen kuluu noin puolitoista sekuntia, mikä vastaa tulosta. Tämä vastaa putoamista noin neljännen kerroksen korkeudelta, joten tilanne on uskottava.
 
 ## fy1-6-L2-03
 **Annettu:** nopeus alussa $v_1 = 12{,}0\,\text{m/s}$, aikaväli $\Delta t = 1{,}50\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$, ei ilmanvastusta

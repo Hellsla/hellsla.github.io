@@ -1,8 +1,6 @@
 VERDICT: DONE
 
-Round 1 fix.
-- inquiry.json: tarkistus-2 now a patikkaretki; mistake 4.0 replaced by 5.5 (swapped k and b). ennuste-2 option 1 names k = 0,80 g/ml. koe-3 core (not optional), question now "Sopiiko suora? Mistä päättelet?" with four rewritten options. ennuste-1 and virhe: correct option no longer longest. New core task `kuvaajasta` (read two points off a plotted line, numeric, full solution with Kuvaajan lukeminen).
-- exercises.json: L2-04 wording.
-- solutions.md: L3-03 rounding justified from Δx; L3-01 states the extrapolation assumption.
-- figures.py: `reading()` figure for the new task (embedded in inquiry.json, not in lesson.md). answers.py: comment only.
-- koe-3 screenshot showed the conclusion because scripts/screenshot.py clicks .exp-start inside the closed "Valinnainen" box; not the lesson's doing, and moot now koe-3 is core.
+- lessons/FY1/fy1-4/figures.py reading(): description says "pyöräilijän matka", docstring id is now 'kuvaajasta'. reading() is not in FIGURES (the figure lives in inquiry.json); its output is byte-identical to the embedded SVG, so nothing to regenerate.
+- inquiry.json ennuste-1 correct option: again says the line passes near all points ("kulkee lähellä kaikkia pisteitä").
+- inquiry.json johtopaatos: `after` now includes koe-3.
+check_lesson.py: all ok.

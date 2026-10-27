@@ -2,7 +2,7 @@
 **Annettu:** hiuksen paksuus $l = 82\,\mu\text{m}$
 **Kysytty:** paksuus $l$ millimetreinä
 **Periaate:** Suure ei muutu, kun sen yksikkö vaihdetaan; vain lukuarvo muuttuu. Etuliite mikro tarkoittaa kerrointa $10^{-6}$ ja etuliite milli kerrointa $10^{-3}$, joten $1\,\mu\text{m} = 10^{-3}\,\text{mm}$.
-**Kaava:** $l = x\cdot 1\,\mu\text{m}$ ja $1\,\mu\text{m} = \dfrac{10^{-6}\,\text{m}}{10^{-3}\,\text{m/mm}}$, josta $l_\text{mm} = x\cdot 10^{-3}$
+**Kaava:** $l = x\cdot 1\,\mu\text{m}$ ja $1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-3}\,\text{mm}$, joten $l_\text{mm} = x\cdot 10^{-3}$
 **Muunnokset:** $1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-3}\,\text{mm}$.
 **Sijoitus:** $l = 82\cdot 10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$
 **Vastaus:** $0{,}082\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtöarvossa $82\,\mu\text{m}$ (johtava nolla ei ole merkitsevä).
@@ -75,7 +75,7 @@
 **Kaava:** $A_\text{ha} = \dfrac{A_{\text{km}^2}\cdot k_1}{k_2}$, missä $k_1$ muuntaa neliökilometrit neliömetreiksi ja $k_2$ neliömetrit hehtaareiksi
 **Muunnokset:** $k_1 = 10^{6}\,\text{m}^2/\text{km}^2$, joten $2{,}4\,\text{km}^2 = 2{,}4\cdot10^{6}\,\text{m}^2$. Yksi hehtaari on $10^{4}\,\text{m}^2$, eli $k_2 = 10^{4}\,\text{m}^2/\text{ha}$.
 **Sijoitus:** $A = \dfrac{2{,}4\cdot10^{6}\,\text{m}^2}{10^{4}\,\text{m}^2/\text{ha}} = 2{,}4\cdot10^{2}\,\text{ha} = 240\,\text{ha}$
-**Vastaus:** $240\,\text{ha}$, kaksi merkitsevää numeroa kuten lähtöarvossa $2{,}4\,\text{km}^2$.
+**Vastaus:** $240\,\text{ha}$, kirjoitettuna $2{,}4\cdot10^{2}\,\text{ha}$, kaksi merkitsevää numeroa kuten lähtöarvossa $2{,}4\,\text{km}^2$.
 **Järkevyys:** Neliökilometri on 100 hehtaaria, koska $10^{6}/10^{4} = 10^{2}$. Siksi 2,4 neliökilometriä on 2,4 sataa eli 240 hehtaaria.
 
 ## fy1-2-L2-04
@@ -95,7 +95,7 @@
 **Kaava:** $L = c\,t$ ja $L_\text{AU} = \dfrac{c\,t}{1\,\text{AU}}$
 **Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Matka kilometreinä jaetaan lopuksi arvolla $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$.
 **Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}461\cdot10^{12}\,\text{km}$ ja $L_\text{AU} = \dfrac{9{,}461\cdot10^{12}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 6{,}325\cdot10^{4}\,\text{AU}$
-**Vastaus:** $63\,250\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
+**Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
 **Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600/8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 
 ## fy1-2-L3-02
