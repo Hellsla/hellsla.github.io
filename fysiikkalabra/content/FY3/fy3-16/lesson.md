@@ -204,7 +204,11 @@ Retkellä kylmälaukussa on 1,0 kg:n jääpussi, jonka lämpötila on 0 °C, ja 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Jään massa $m_\text{jää} = 1{,}0\,\text{kg}$, juomien massa $m_\text{j} = 0{,}50\,\text{kg}$ ja niiden lämpötilan lasku $\Delta T_\text{j} = 20\,\text{K}$. Seinien $UA = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 0{,}80\,\text{m}^2$ ja lämpötilaero ulkoa sisään $\Delta T_\text{u} = 28\,\text{K}$. Kysytään aikaa $t$, jonka kuluttua jää on loppunut.
+**Tunnetut ja kysytty.** Jään massa $m_\text{jää} = 1{,}0\,\text{kg}$, juomien massa $m_\text{j} = 0{,}50\,\text{kg}$ ja niiden lämpötilan lasku $\Delta T_\text{j} = 20\,\text{K}$. Seinien $UA = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 0{,}80\,\text{m}^2$ ja lämpötilaero ulkoa sisään $\Delta T_\text{u} = 28\,\text{K}$. Taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$. Kysytään aikaa $t$, jonka kuluttua jää on loppunut.
+
+<!-- vaihe -->
+
+**Periaate.** Energia säilyy: jään sulattamiseen tarvittava energia $s\,m_\text{jää}$ tulee kahdesta lähteestä, jäähtyvistä juomista ja seinän läpi tulevasta lämmöstä. Kun jäätä on, sisällä pysyy $0\,{}^\circ\text{C}$, joten lämpötilaero $\Delta T_\text{u}$ ja seinän läpi tuleva teho $P = UA\Delta T_\text{u}$ pysyvät vakioina ja seinän energia on $P\,t$. Jää sulaa mutta pysyy $0\,{}^\circ\text{C}$:ssa, joten sulamiseen kuluu $s\,m_\text{jää}$ eikä lämpötilan nostoon mitään.
 
 <!-- vaihe -->
 
@@ -215,6 +219,10 @@ UA\Delta T_\text{u}\,t &= s\,m_\text{jää} - c\,m_\text{j}\Delta T_\text{j} \\
 t &= \frac{s\,m_\text{jää} - c\,m_\text{j}\Delta T_\text{j}}{UA\Delta T_\text{u}}
 \end{aligned}
 ```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Lämpötilan muutokset ovat samat kelvineinä ja celsiusasteina: juomat jäähtyvät $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$ ja seinän yli on $28\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 28\,\text{K}$. Sulamislämpö on $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, jotta energiat ovat joulejaan ja teho watteina. Lopuksi aika muutetaan sekunneista tunneiksi: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
 
@@ -242,10 +250,11 @@ t &= \frac{s\,m_\text{jää} - c\,m_\text{j}\Delta T_\text{j}}{UA\Delta T_\text{
 &\approx 2{,}4\,\text{h}
 \end{aligned}
 ```
+Jäätä riittää noin $2{,}4\,\text{h}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska jään massa $1{,}0\,\text{kg}$, juomien massa $0{,}50\,\text{kg}$ ja lämpötilan lasku $20\,\text{K}$ tunnetaan kahden numeron tarkkuudella.
 
 <!-- vaihe -->
 
-**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$, joten tulos on kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$. Kun jää on sulanut, laukussa on 1,5 kg vettä, jonka lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho nostaa sen lämpötilaa aluksi $\tfrac{33{,}6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, kuten kuvaaja näyttää.
+**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$, joten tulos on kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$, ja aika lyhenee saman osuuden: $2{,}8\,\text{h} \cdot 0{,}87 \approx 2{,}4\,\text{h}$. Kun jää on sulanut, laukussa on 1,5 kg vettä, jonka lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho nostaa sen lämpötilaa aluksi $\tfrac{33{,}6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, kuten kuvaaja näyttää.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että jää tuottaa kylmää, joka virtaa juomiin. Kylmyys ei virtaa: energia siirtyy aina lämpimästä kylmempään, ja jää jäähdyttää, koska se ottaa energiaa vastaan. Toinen virhe on olettaa, että lämpötila nousee tasaisesti koko ajan. Sulamisen aikana lämpötila pysyy vakiona, vaikka energiaa tulee koko ajan.

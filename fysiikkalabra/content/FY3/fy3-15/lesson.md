@@ -226,10 +226,16 @@ missä $P_\text{L}$ on lauhduttimesta veteen siirtyvä lämpöteho (W), $c$ on v
 Lauhdevoimalaitoksen polttoaineteho on 600 MW. Kattilan hyötysuhde on 0,910, höyrykierron 0,440 ja generaattorin ja muuntajan 0,950. Mikä on laitoksen sähköteho, mikä on koko laitoksen hyötysuhde ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?
 
 <!-- vaihe -->
-**Tunnetut ja kysytty.** Polttoaineteho $P_0 = 600\,\text{MW}$ ja vaiheiden hyötysuhteet $\eta_1 = 0{,}910$, $\eta_2 = 0{,}440$ ja $\eta_3 = 0{,}950$. Kysytään sähkötehoa $P_3$, koko ketjun hyötysuhdetta $\eta$ ja hukkalämmön tehoa $P_\text{h}$.
+
+**Tunnetut ja kysytty.** Polttoaineteho $P_0 = 600\,\text{MW}$ ja vaiheiden hyötysuhteet $\eta_1 = 0{,}910$ (kattila), $\eta_2 = 0{,}440$ (höyrykierto) ja $\eta_3 = 0{,}950$ (generaattori ja muuntaja). Kysytään sähkötehoa $P_3$, koko ketjun hyötysuhdetta $\eta$ ja hukkalämmön tehoa $P_\text{h}$.
 
 <!-- vaihe -->
-**Kaavat ratkaistuina.** Hyötysuhteet kerrotaan, ja hukkalämpö on se osa, joka ei muutu sähköksi:
+
+**Periaate.** Vaiheet ovat peräkkäin: kunkin vaiheen ulostuloteho on seuraavan sisäänmenoteho, ja kukin vaihe päästää läpi vain hyötysuhteensa verran siihen tulevasta tehosta. Laitos toimii tasaisesti ja energia säilyy, joten polttoaineteho on joko sähköä tai lämpönä ympäristöön siirtyvää hukkaa: $P_0 = P_3 + P_\text{h}$.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Hyötysuhteet kerrotaan, ja hukkalämpö on se osa, joka ei muutu sähköksi:
 ```latex
 \begin{aligned}
 P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
@@ -239,30 +245,28 @@ P_\text{h} &= P_0 - P_3
 ```
 
 <!-- vaihe -->
-**Sijoitus.** Vaiheiden jälkeiset tehot ovat $P_1 = \eta_1 P_0 = 546\,\text{MW}$ ja $P_2 = \eta_2 P_1 \approx 240\,\text{MW}$. Sähköteho on
+
+**Yksikkömuunnokset.** Hyötysuhteet ovat dimensiottomia lukuja ja kaikki tehot ovat megawatteina, joten muunnoksia ei tarvita. Vain hyötysuhde $\eta$ ilmoitetaan lopuksi myös prosentteina kertomalla se sadalla.
+
+<!-- vaihe -->
+
+**Sijoitus.** Hyötysuhteiden tulo on $0{,}910 \cdot 0{,}440 \cdot 0{,}950 = 0{,}38038$. Sähköteho on
 ```latex
 \begin{aligned}
 P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
-&= 0{,}910 \cdot 0{,}440 \cdot 0{,}950 \cdot 600\,\text{MW} \\
 &= 0{,}38038 \cdot 600\,\text{MW} \\
-&\approx 228\,\text{MW}
+&= 228{,}228\,\text{MW}
 \end{aligned}
 ```
+Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{,}38038$ ja hukkalämpö $P_\text{h} = 600\,\text{MW} - 228{,}228\,\text{MW} = 371{,}772\,\text{MW}$.
 
 <!-- vaihe -->
-**Tulos.** Koko ketjun hyötysuhde on tulo $0{,}38038$, joten
-```latex
-\begin{aligned}
-\eta &= \frac{P_3}{P_0} \\
-&\approx 0{,}380 = 38{,}0\,\% \\
-P_\text{h} &= P_0 - P_3 \\
-&= 600\,\text{MW} - 228\,\text{MW} \\
-&= 372\,\text{MW}
-\end{aligned}
-```
+
+**Tulos.** Sähköteho on $P_3 \approx 228\,\text{MW}$, hyötysuhde $\eta \approx 0{,}380 = 38{,}0\,\%$ ja hukkalämmön teho $P_\text{h} \approx 372\,\text{MW}$. Tulokset ilmoitetaan kolmella merkitsevällä numerolla, koska hyötysuhteet $0{,}910$, $0{,}440$ ja $0{,}950$ on annettu kolmella numerolla.
 
 <!-- vaihe -->
-**Järkevyys.** Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Lauhduttimeen siirtyy teho $P_1 - P_2 \approx 546\,\text{MW} - 240\,\text{MW} = 306\,\text{MW}$, eli yli puolet polttoaineen energiasta.
+
+**Järkevyys.** Arvio: $0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, mikä vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$, eli yli puolet polttoaineen energiasta.
 
 Kattilan häviö on vain 54 MW ja generaattorin ja muuntajan 12 MW, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 

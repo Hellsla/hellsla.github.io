@@ -35,7 +35,7 @@
     {
       "id": "fy3-15-L1-05",
       "level": 1,
-      "text": "Yhteistuotantolaitoksen polttoaineteho on 250 MW. Laitos tuottaa sähköä 75 MW ja kaukolämpöä 150 MW. Mikä on laitoksen kokonaishyötysuhde? Anna vastaus prosentteina.",
+      "text": "Yhteistuotantolaitoksen polttoaineteho on 250 MW. Laitos tuottaa sähköä 75,0 MW ja kaukolämpöä 150 MW. Mikä on laitoksen kokonaishyötysuhde? Anna vastaus prosentteina.",
       "answer": 90.0,
       "unit": "%",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy3-15-L2-04",
       "level": 2,
-      "text": "Rannikon lauhdevoimalaitoksen lauhduttimeen siirtyy lämpöä teholla 270 MW. Lauhdutinta jäähdyttävä merivesi lämpenee 9,0 K. Veden ominaislämpökapasiteetti on 4190 J/(kg·K). Kuinka monta tonnia vettä lauhduttimen läpi virtaa sekunnissa? Anna vastaus tonneina sekunnissa.",
+      "text": "Rannikon lauhdevoimalaitoksen lauhduttimeen siirtyy lämpöä teholla 270 MW. Lauhdutinta jäähdyttävä merivesi lämpenee 9,00 K. Veden ominaislämpökapasiteetti on 4190 J/(kg·K). Kuinka monta tonnia vettä lauhduttimen läpi virtaa sekunnissa? Anna vastaus tonneina sekunnissa.",
       "answer": 7.16,
       "unit": "t/s",
       "tolerance": 0.02
