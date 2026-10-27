@@ -1,24 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d591ace02c4d2860
+CONTENT-HASH: ca90d49523679b44
 
 ## Blocking
 (none)
 
 ## Polish
-1. inquiry.json, `siirto` solution, Vastaus — "190 W (tarkemmin 188 W)" gives two answers; the data (0,30 kg, 1 h) justifies two figures, but the field answer is 188 W. Write "$1{,}9\cdot10^{2}\,\text{W}$ (laskimen tulos 188 W)" or accept 188 W and say it is rounded to 190 W in the answer sentence only.
-2. lesson.md, Esimerkki step 7 — straight quotes around "kaikki energia veteen"; use Finnish typographic quotes ”kaikki energia veteen”.
-3. lesson.md, Esimerkki step 2 — $Q = Pt$ is used without recalling that power is energy per time; add "koska teho on energiaa aikayksikössä" (the prerequisite list names it, but a student who skipped it stalls here).
-4. solutions.md, L1-03 and L2-03 — the layer-thickness check uses density, which is not in the lesson's table; say "veden tiheys 1000 kg/m³" or drop the thickness sentence for the shorter "arvio $330\cdot45\approx15\,000\,\text{kJ}$".
-5. The captures show only the worked example with every stage revealed and no opened *Näytä ratkaisu*; the solution HTML (one paragraph per step, display equations on their own line) was read in preview instead. Add a capture of an opened solution at 390 px next round.
+1. solutions.md, L1-03 Järkevyys — "pakkasviikon aikana jäätyneeksi kerrokseksi" contradicts the task, which says "ensimmäisenä pakkasyönä"; the 4,5 cm check should match the task. Fix: "mikä on uskottava ohut jääkerros pakkasyön jälkeen" (or change the task to "pakkasviikon aikana").
+2. solutions.md, L1-03 — the thickness check uses the density 1000 kg/m³, which the student has not been given. Fix: "veden tiheys on $1000\,\text{kg/m}^3$" before the fraction, or drop the sentence.
+3. solutions.md, L1-03 Kaava — "ja $Q$ on jo ratkaistu: $Q = sm$" confuses a weak student. Fix: "$Q = sm$ (kaava antaa suoraan kysytyn suureen)".
+4. lesson.md, Esimerkki step 7 (capture example-390-2) — straight quotes "kaikki energia veteen" and "r:n" case; use ”kaikki energia veteen” (carried over from round 1).
+5. No capture of an opened *Näytä ratkaisu* at 390 px exists yet (only the worked example); the solution text was judged from the source. Add one capture of a solution box.
 
 ## Checked
-- Worked example: seven stages, one step each, bold lead-in; unit step, symbols-first, substitution with units, 3 s.f. reason, plausibility check; at 390 px the equation blocks fit, nothing clipped.
-- All 12 exercise solutions plus `siirto` and `check-2` (14 solution boxes in the preview) each carry given/asked, principle with reason, symbolic formula, conversions, substitution, rounded answer with s.f. reason, sanity check.
-- Graph tasks (L1-05, check-2): "Kuvaajan lukeminen" shows which readings are subtracted and why the first 2,0 min do not count.
-- L3-01, L3-03: the energy balance and the subtraction of two equations (loss term cancels) are explained, not just named; the "perustele" parts are answered in Järkevyys.
-- Arithmetic of every solution rechecked against answer, unit and tolerance; levels 5/4/3 as the rubric says; none repeats the example.
-- Learning path: opening question is answered in Ydinajatus and the reflect task; goals (olomuodon muutokset, höyrystymislämpö with immersion heater and balance, micro-model) all covered.
-- Predictions precede evidence; exp-1 and exp-2 vary one parameter, lock the other; wrong options' feedback repairs the misconception; the model-values caveat is stated.
-- Finnish and glossary terms (olomuoto, sulamislämpö, höyrystymislämpö, lämpenemiskäyrä, faasikaavio) correct; no ids shown to students.
-- Phone captures (390 px): example, Tarkista, Tehtävät levels readable; controls and buttons reachable.
+- Diff: inquiry.json `siirto` Vastaus now "1,9·10² W (laskimen tulos 188 W)": one answer, rounding reason stated (two s.f. like 0,30 kg); round-1 Polish 1 resolved.
+- L1-04 Vastaus now explains why the difference of two kJ readings keeps three s.f.; "lähes yhdeksän kertaa" is right (167/18,9 ≈ 8,8).
+- L2-03 Vastaus names the datum that limits the figures (erotus 106 g, three digits); a student can see why the answer is not 2,3.
+- Worked example at 390 px (example-390-2): steps 5-7 legible, equation block fits, plausibility step explains the direction of the error and checks against the table value.
+- Other solutions unchanged since my round-1 pass; learning path, activities, Finnish, phone usability as approved.
 - Hash unchanged at the end.

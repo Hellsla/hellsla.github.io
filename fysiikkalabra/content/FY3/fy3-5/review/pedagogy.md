@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bf9755f9a0d272c5
+CONTENT-HASH: 36f39a7f6c8d0487
 
 ## Blocking
 
 ## Polish
-- exercises L3-02 solution (Periaate) — uses "liike-energia" and "potentiaalienergia mgh", which are FY4 terms (FY3 scope note) — write: "punnuksen paino $G = mg$ tekee laskeutuessaan työn $W = Gh$, ja koko tämä työ siirtyy siipipyörän kautta veteen".
-- exercises L3-01 solution (Periaate) — "ideaalikaasu, jonka sisäenergia riippuu vain lämpötilasta" is asserted as a fact the student has not met in this course; say that the task states the temperature stays constant and the air amount does not change, so the U of this air does not change (micromodel from the prerequisite lesson).
-- exercises L3-03 solution (Vastaus) — "kolme merkitsevää numeroa" for 310 J is a shaky claim; say "yhteenlaskussa tulos on yhtä tarkka kuin tiedot, jotka on annettu täysinä jouleina".
-- lesson.md Esimerkki, stage 2 (Periaate) — "pätee, koska ilma on selvästi rajattu systeemi" is thin; add one clause: koska kaikki energia ylittää rajan vain työnä tai lämpönä, ei esim. aineen mukana.
-- exercises L2-03 — answer 800 J from 2,0 kJ and 1,2 kJ is ambiguous about figures; ask for the answer in kilojoules (0,80 kJ) or accept as is.
+- solutions.md, L3-04 Periaate (punnus ja siipipyörä) — "köysi ja siipipyörä tekevät veteen työn $W_1 = Fh$" does not say why none of the work is lost (friction ignored) — add: "kitka jätetään huomiotta, joten koko työ päätyy veteen".
+- solutions.md, L3-05 Periaate (kaasu, tapa A ja B) — "hiukkasten liike-energia ja siten sisäenergia" silently leaves out the interaction energy — write "kaasun sisäenergia riippuu tässä lämpötilasta ja määrästä (ideaalikaasun malli, kuten luvussa fy3-3)".
+- solutions.md, cooker Vastaus (160 kJ) — "kymmenen kilojoulen tarkkuudella" next to "kaksi merkitsevää numeroa" can puzzle a weaker student — add "(20 kJ → viimeinen kirjoitettu numero on kymmenien kilojoulien paikalla, joten 160 kJ:ssa on kaksi merkitsevää numeroa)".
 
 ## Checked
-- Worked example (390 px capture, all 7 stages): one step per stage, bold lead-in, symbols before numbers, units kept, sign decided in stage 4, limiting-case check in stage 7; a student who could not solve it can follow.
-- Every solution in solutions.md and the two inline numeric solutions follows the seven steps in the same order; the principle is explained (why the law applies, why a sign is negative), not only named; conversions (cm to m, kW to W, kJ to J) are shown.
-- Solutions sit behind their own Näytä ratkaisu button, render as separate lines and display equations in the built HTML (checked in preview/fy3-5.html); the Vastaus button is separate.
-- Level counts 5/4/3; none repeats the example; level 1 is sign practice, level 2 adds Fs, Pt or a rearrangement, level 3 adds reasoning (path independence, Joule's experiment); mistake feedback names the real slips (adding Q, cm as m).
-- Learning path: hook (pump heats) answered in reflect and check-1; predictions are three competing explanations the experiments can refute; core path is hook, 2 predictions, 2 experiments, conclusion, theory, example, exercises.
-- Exit ticket tests sign convention, the heat misconception and the isolated-system definition; matches the slot goals (first law, no second law).
-- Finnish: case after number+unit correct (75 N:n voimalla, 150 J:n työ), glossary terms used (lämpömäärä, sisäenergia, eristetty systeemi); text paragraphs under 120 words.
-- Phone captures (example, sovella, exercises, top) unclipped; display equations fit 366 px.
-- Not opened: figure and simulation captures beyond the example; inquiry mechanics are covered by the passed tests.
+- Dough Periaate: the new clause (all energy crosses the boundary only as work or heat) closes the earlier Polish; the sign reasoning is unchanged and still stated.
+- Pump (L3-01) Periaate: now rests on the task's own data (T constant, amount constant, so particle kinetic energy and U unchanged) instead of an unmet ideal-gas fact; Q = -W follows in the next sentence.
+- L3-02 Periaate: FY4 terms (liike-energia, potentiaalienergia) are gone; G = mg and W = Fh stay within the FY3 scope note.
+- L3-03 Vastaus: the 310 J line is now a plain addition rule, as I suggested; the Järkevyys balance is unchanged.
+- The new Vastaus lines name the datum that limits the figures (85 J in whole joules; 12 kJ for 40 s; 20 kJ for 160 kJ); L2-03 now gives 0,8 kJ and one significant figure, consistent with the Sijoitus line.
+- Each changed block keeps the seven stages in the same order, so no step has been skipped.
+- Finnish in the changed lines is correct (case after number and unit, glossary terms sisäenergia, lämpö, lämpömäärä).
+- Not opened: captures (only solution text changed, the page form is as approved); the diff touched no figure, simulation or inquiry file.
