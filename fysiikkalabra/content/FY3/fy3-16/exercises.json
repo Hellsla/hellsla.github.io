@@ -87,7 +87,7 @@
     {
       "id": "fy3-16-L3-02",
       "level": 3,
-      "text": "Eristettyyn astiaan sekoitetaan 0,50 kg jäätä, jonka lämpötila on 0 °C, ja 2,0 kg vettä, jonka lämpötila on 30 °C. Mikä on seoksen lämpötila, kun lämpötasapaino on saavutettu? Tarkista ensin, sulaako kaikki jää.",
+      "text": "Eristettyyn astiaan sekoitetaan 0,500 kg jäätä, jonka lämpötila on 0 °C, ja 2,00 kg vettä, jonka lämpötila on 30,0 °C. Mikä on seoksen lämpötila, kun lämpötasapaino on saavutettu? Tarkista ensin, sulaako kaikki jää.",
       "answer": 8.1,
       "unit": "°C",
       "tolerance": 0.02

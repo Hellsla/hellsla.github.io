@@ -101,7 +101,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Seuraa tehoa energiaketjussa",
-      "text": "Taulukossa on esimerkkilauhdevoimalaitoksen energiaketjun vaiheet. Turbiini ja lauhdutin muodostavat yhdessä höyrykierron. Tällä taulukolla testaat ensimmäisen ennusteesi: laske, kuinka suuri teho kussakin vaiheessa häviää. Polttoaineteho on $P_0 = 500\\,\\text{MW}$. Kattilan ulostuloteho on $\\eta_1 P_0$, höyrykierron ulostuloteho on $\\eta_2$ kertaa tämä, ja niin edelleen. Vaiheen häviö on sen sisään tulevan ja ulos tulevan tehon erotus.\n\n| Vaihe | Hyötysuhde |\n|---|---|\n| Kattila | 0,92 |\n| Höyrykierto | 0,46 |\n| Generaattori ja muuntaja | 0,945 |",
+      "text": "Taulukossa on esimerkkilauhdevoimalaitoksen energiaketjun vaiheet. Turbiini ja lauhdutin muodostavat yhdessä höyrykierron. Tällä taulukolla testaat ensimmäisen ennusteesi: laske, kuinka suuri teho kussakin vaiheessa häviää. Polttoaineteho on $P_0 = 500\\,\\text{MW}$. Kattilan ulostuloteho on $\\eta_1 P_0$, höyrykierron ulostuloteho on $\\eta_2$ kertaa tämä, ja niin edelleen. Vaiheen häviö on sen sisään tulevan ja ulos tulevan tehon erotus.\n\n| Vaihe | Hyötysuhde |\n|---|---|\n| Kattila | 0,920 |\n| Höyrykierto | 0,460 |\n| Generaattori ja muuntaja | 0,945 |",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka suuri teho häviää höyrykierrossa eli turbiinissa ja lauhduttimessa? Vastaa megawatteina.",
@@ -111,12 +111,12 @@
         "hints": [
           "Mikä on höyrykiertoon tuleva teho eli kattilasta ulos tuleva teho, kun polttoaineteho on 500 MW?",
           "Höyrykiertoon tulee $P_1 = \\eta_1 P_0$ ja siitä lähtee $P_2 = \\eta_2 P_1$. Häviö on $P_1 - P_2$.",
-          "$P_1 = 0{,}92 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}46 \\cdot 460\\,\\text{MW}$. Vähennä."
+          "$P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot 460\\,\\text{MW}$. Vähennä."
         ],
         "mistakes": [
           {
             "value": 270,
-            "feedback": "Laskit $0{,}54 \\cdot 500\\,\\text{MW}$ eli häviön osuuden koko polttoainetehosta. Höyrykiertoon tulee kuitenkin vain kattilan ulostuloteho $P_1 = 0{,}92 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$, joten häviö on $0{,}54 \\cdot 460\\,\\text{MW}$."
+            "feedback": "Laskit $0{,}540 \\cdot 500\\,\\text{MW}$ eli häviön osuuden koko polttoainetehosta. Höyrykiertoon tulee kuitenkin vain kattilan ulostuloteho $P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$, joten häviö on $0{,}540 \\cdot 460\\,\\text{MW}$."
           },
           {
             "value": 211.6,
@@ -128,10 +128,10 @@
           },
           {
             "value": 300,
-            "feedback": "Tämä on koko ketjun häviö $500\\,\\text{MW} - 200\\,\\text{MW}$. Kysytään vain höyrykierron osuutta siitä: $P_1 - P_2$, jossa $P_1 = 0{,}92 \\cdot 500\\,\\text{MW}$ ja $P_2 = 0{,}46 \\cdot P_1$."
+            "feedback": "Tämä on koko ketjun häviö $500\\,\\text{MW} - 200\\,\\text{MW}$. Kysytään vain höyrykierron osuutta siitä: $P_1 - P_2$, jossa $P_1 = 0{,}920 \\cdot 500\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot P_1$."
           }
         ],
-        "solution": "**Annettu:** polttoaineteho $P_0 = 500\\,\\text{MW}$, kattilan hyötysuhde $\\eta_1 = 0{,}92$ ja höyrykierron $\\eta_2 = 0{,}46$ (taulukosta)\n\n**Kysytty:** höyrykierrossa häviävä teho $P_\\text{häviö}$ megawatteina\n\n**Periaate:** Vaiheet ovat peräkkäin, ja kunkin ulostuloteho on seuraavan sisäänmenoteho. Energia säilyy, joten vaiheeseen tulevan ja siitä lähtevän tehon erotus ei katoa vaan siirtyy lämpönä ympäristöön. Höyrykiertoon tulee vain kattilan ulostuloteho, ei koko polttoaineteho.\n\n**Kaava:** $P_1 = \\eta_1 P_0$ ja $P_2 = \\eta_2 P_1$, joten\n\n$$P_\\text{häviö} = P_1 - P_2 = (1 - \\eta_2)\\,\\eta_1 P_0$$\n\n**Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_1 = 0{,}92 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}46 \\cdot 460\\,\\text{MW} = 211{,}6\\,\\text{MW}$, joten $P_\\text{häviö} = 460\\,\\text{MW} - 211{,}6\\,\\text{MW} = 248{,}4\\,\\text{MW}$\n\n**Vastaus:** $248\\,\\text{MW}$ eli noin $2{,}5 \\cdot 10^2\\,\\text{MW}$. Hyötysuhteet $0{,}92$ ja $0{,}46$ on annettu kahdella merkitsevällä numerolla, joten vain kaksi ensimmäistä numeroa on varmaa; kolmas pidetään mukana, jotta tulos on vertailukelpoinen taulukon laskun kanssa.\n\n**Järkevyys:** Arvio: $0{,}54 \\cdot 460\\,\\text{MW} \\approx 250\\,\\text{MW}$. Kattila häviää $500\\,\\text{MW} - 460\\,\\text{MW} = 40\\,\\text{MW}$ ja generaattori ja muuntaja noin $12\\,\\text{MW}$, joten höyrykierto häviää selvästi eniten: noin puolet polttoainetehosta. Tase: $40 + 248{,}4 + 11{,}6 + 200 = 500\\,\\text{MW}$, kun sähköteho on $0{,}945 \\cdot 211{,}6\\,\\text{MW} = 200\\,\\text{MW}$."
+        "solution": "**Annettu:** polttoaineteho $P_0 = 500\\,\\text{MW}$, kattilan hyötysuhde $\\eta_1 = 0{,}920$ ja höyrykierron $\\eta_2 = 0{,}460$ (taulukosta)\n\n**Kysytty:** höyrykierrossa häviävä teho $P_\\text{häviö}$ megawatteina\n\n**Periaate:** Vaiheet ovat peräkkäin, ja kunkin ulostuloteho on seuraavan sisäänmenoteho. Energia säilyy, joten vaiheeseen tulevan ja siitä lähtevän tehon erotus ei katoa vaan siirtyy lämpönä ympäristöön. Höyrykiertoon tulee vain kattilan ulostuloteho, ei koko polttoaineteho.\n\n**Kaava:** $P_1 = \\eta_1 P_0$ ja $P_2 = \\eta_2 P_1$, joten\n\n$$P_\\text{häviö} = P_1 - P_2 = (1 - \\eta_2)\\,\\eta_1 P_0$$\n\n**Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot 460\\,\\text{MW} = 211{,}6\\,\\text{MW}$, joten $P_\\text{häviö} = 460\\,\\text{MW} - 211{,}6\\,\\text{MW} = 248{,}4\\,\\text{MW}$\n\n**Vastaus:** $248\\,\\text{MW}$, kolme merkitsevää numeroa, koska hyötysuhteet $0{,}920$ ja $0{,}460$ ovat kolmella numerolla ja polttoaineteho $500\\,\\text{MW}$ on annettu megawatin tarkkuudella.\n\n**Järkevyys:** Arvio: $0{,}540 \\cdot 460\\,\\text{MW} \\approx 250\\,\\text{MW}$. Kattila häviää $500\\,\\text{MW} - 460\\,\\text{MW} = 40\\,\\text{MW}$ ja generaattori ja muuntaja noin $12\\,\\text{MW}$, joten höyrykierto häviää selvästi eniten: noin puolet polttoainetehosta. Tase: $40 + 248{,}4 + 11{,}6 + 200 = 500\\,\\text{MW}$, kun sähköteho on $0{,}945 \\cdot 211{,}6\\,\\text{MW} = 200\\,\\text{MW}$."
       },
       "source": "simulated",
       "source_note": "esimerkkilaitoksen hyötysuhteet"

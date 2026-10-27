@@ -25,7 +25,7 @@
 **Kaava:** $P = \eta P_\text{tulo} = \eta I A$
 **Muunnokset:** Yksiköt kulkevat mukana: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$, joten tulos tulee suoraan kilowatteina eikä muunnoksia tarvita.
 **Sijoitus:** $P = 0{,}210 \cdot 1{,}00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20{,}0\,\text{m}^2 = 0{,}210 \cdot 20{,}0\,\text{kW} = 4{,}20\,\text{kW}$
-**Vastaus:** $4{,}20\,\text{kW}$, kolme merkitsevää numeroa kuten kaikissa annetuissa arvoissa.
+**Vastaus:** $4{,}20\,\text{kW}$, kolme merkitsevää numeroa, koska pinta-ala $20{,}0\,\text{m}^2$, säteilyteho $1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$ ja hyötysuhde $0{,}210$ ovat kaikki kolmella numerolla.
 **Järkevyys:** Paneeliin osuu säteilyä $20{,}0\,\text{kW}$, josta noin viidennes ($0{,}210 \approx 0{,}2$) on $\approx 4\,\text{kW}$. Loput $20{,}0\,\text{kW} - 4{,}20\,\text{kW} = 15{,}8\,\text{kW}$ lämmittää paneelia tai heijastuu pois. Pientalon katolla 4 kW on tavallinen huipputeho kirkkaalla säällä.
 
 ## fy3-15-L1-04
@@ -35,7 +35,7 @@
 **Kaava:** $P_0 = P_\text{s} + P_\text{h}$, joten $P_\text{h} = P_0 - P_\text{s}$
 **Muunnokset:** Kummatkin tehot ovat jo megawatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $P_\text{h} = 800\,\text{MW} - 320\,\text{MW} = 480\,\text{MW}$
-**Vastaus:** $480\,\text{MW}$, kolme merkitsevää numeroa kuten annetuissa tehoissa $800\,\text{MW}$ ja $320\,\text{MW}$.
+**Vastaus:** $480\,\text{MW}$, kolme merkitsevää numeroa, koska molemmat tehot, $800\,\text{MW}$ ja $320\,\text{MW}$, on annettu megawatin tarkkuudella ja erotus säilyttää saman tarkkuuden.
 **Järkevyys:** Hyötysuhde on $\dfrac{320\,\text{MW}}{800\,\text{MW}} = 0{,}40$, mikä on lauhdevoimalaitokselle tavallista. Tase täsmää: $320\,\text{MW} + 480\,\text{MW} = 800\,\text{MW}$. Sähköksi muuttuvan 40 %:n lisäksi loput 60 % siirtyy lämpönä ympäristöön, suurin osa lauhduttimen kautta mereen.
 
 ## fy3-15-L1-05
@@ -45,7 +45,7 @@
 **Kaava:** $\eta_\text{kok} = \dfrac{P_\text{s} + P_\text{k}}{P_0}$
 **Muunnokset:** Kaikki tehot ovat megawatteina ja yksiköt supistuvat. Tulos kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\eta_\text{kok} = \dfrac{75{,}0\,\text{MW} + 150\,\text{MW}}{250\,\text{MW}} = \dfrac{225\,\text{MW}}{250\,\text{MW}} = 0{,}900 = 90{,}0\,\%$
-**Vastaus:** $90{,}0\,\%$, kolme merkitsevää numeroa kuten annetuissa tehoissa; summa $225\,\text{MW}$ on tarkka megawatin tarkkuudella.
+**Vastaus:** $90{,}0\,\%$, kolme merkitsevää numeroa, koska kaikki tehot on annettu megawatin tarkkuudella ja summa $75{,}0 + 150 = 225\,\text{MW}$ säilyttää saman tarkkuuden; osamäärässä $225/250$ on siis kolme numeroa.
 **Järkevyys:** Tulos on yhteistuotannon tavallisella välillä 85–90 %. Hukkalämmön teho on $250\,\text{MW} - 225\,\text{MW} = 25\,\text{MW}$, ja $225 + 25 = 250$ eli tase täsmää. Sähkön osuus on vain $\dfrac{75{,}0\,\text{MW}}{250\,\text{MW}} = 30\,\%$, joten sähköhyötysuhde on pienempi kuin lauhdevoimalaitoksessa.
 
 ## fy3-15-L2-01
@@ -55,7 +55,7 @@
 **Kaava:** $P_1 = \eta_1 P_0$, $P_2 = \eta_2 P_1$ ja $P_3 = \eta_3 P_2$, joten $P_3 = \eta_1 \eta_2 \eta_3 P_0$
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $P_3 = 0{,}880 \cdot 0{,}420 \cdot 0{,}980 \cdot 300\,\text{MW} = 0{,}362208 \cdot 300\,\text{MW} = 108{,}6624\,\text{MW}$
-**Vastaus:** $109\,\text{MW}$, kolme merkitsevää numeroa kuten hyötysuhteissa $0{,}880$, $0{,}420$ ja $0{,}980$.
+**Vastaus:** $109\,\text{MW}$, kolme merkitsevää numeroa, koska hyötysuhteet $0{,}880$, $0{,}420$ ja $0{,}980$ ovat kolmella numerolla ja polttoaineteho $300\,\text{MW}$ on annettu megawatin tarkkuudella.
 **Järkevyys:** Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 \cdot 300\,\text{MW} \approx 110\,\text{MW}$. Koko ketjun hyötysuhde on $0{,}362$ eli 36 %, vähemmän kuin heikoin vaihe ($0{,}420$) antaisi yksin. Kattilan ja höyrykierron häviöt vievät yhdessä $1 - 0{,}880 \cdot 0{,}420 = 0{,}630$ eli lähes kaksi kolmasosaa (noin 63 %) polttoaineen energiasta.
 
 ## fy3-15-L2-02
@@ -65,7 +65,7 @@
 **Kaava:** $\eta = \eta_1 \eta_2 \eta_3$, joten $\eta_2 = \dfrac{\eta}{\eta_1 \eta_3}$
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia lukuja, joten yksikkömuunnoksia ei tarvita. Lopuksi tulos kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\eta_2 = \dfrac{0{,}380}{0{,}900 \cdot 0{,}980} = \dfrac{0{,}380}{0{,}882} = 0{,}43084 = 43{,}08\,\%$
-**Vastaus:** $43{,}1\,\%$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa.
+**Vastaus:** $43{,}1\,\%$, kolme merkitsevää numeroa, koska kaikki kolme hyötysuhdetta, $0{,}380$, $0{,}900$ ja $0{,}980$, ovat kolmella numerolla.
 **Järkevyys:** Tarkistus: $0{,}900 \cdot 0{,}4308 \cdot 0{,}980 = 0{,}380$. Höyrykierron hyötysuhde on suurempi kuin koko ketjun $0{,}380$, kuten pitääkin, koska muut vaiheet vain pienentävät sitä. Se on myös lähellä lauhdevoimalaitoksen tavallista 40–45 %:n arvoa, ja se on ketjun heikoin lenkki.
 
 ## fy3-15-L2-03
@@ -75,7 +75,7 @@
 **Kaava:** $P_0 = \dfrac{P_\text{s}}{\eta}$ ja $P_0 = \dfrac{H m}{t}$, joten $m = \dfrac{P_\text{s}\, t}{\eta H}$
 **Muunnokset:** $150\,\text{MW} = 150 \cdot 10^6\,\text{W}$, $9{,}00\,\tfrac{\text{MJ}}{\text{kg}} = 9{,}00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$ ja $1\,\text{h} = 3600\,\text{s}$. Lopuksi $1\,\text{t} = 1000\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{150 \cdot 10^6\,\text{W} \cdot 3600\,\text{s}}{0{,}360 \cdot 9{,}00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}66667 \cdot 10^5\,\text{kg} = 166{,}67\,\text{t}$
-**Vastaus:** $167\,\text{t}$, kolme merkitsevää numeroa kuten hyötysuhteessa $0{,}360$ ja lämpöarvossa $9{,}00\,\tfrac{\text{MJ}}{\text{kg}}$.
+**Vastaus:** $167\,\text{t}$, kolme merkitsevää numeroa, koska hyötysuhde $0{,}360$ ja lämpöarvo $9{,}00\,\tfrac{\text{MJ}}{\text{kg}}$ ovat kolmella numerolla ja sähköteho $150\,\text{MW}$ on annettu megawatin tarkkuudella; tunti on tarkka ($3600\,\text{s}$) eikä rajoita.
 **Järkevyys:** Polttoaineteho on $\dfrac{150\,\text{MW}}{0{,}360} = 417\,\text{MW}$, ja massavirta $\dfrac{417 \cdot 10^6\,\text{W}}{9{,}00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 46\,\tfrac{\text{kg}}{\text{s}}$. Vuorokaudessa se on $46 \cdot 86\,400\,\text{kg} \approx 4000\,\text{t}$, mikä vaatii jatkuvaa rekka- tai junakuljetusta ja sopii isoon biovoimalaitokseen.
 
 ## fy3-15-L2-04
@@ -85,7 +85,7 @@
 **Kaava:** $P_\text{L} = \dfrac{Q}{t} = c\, q_m \Delta T$, joten $q_m = \dfrac{P_\text{L}}{c\, \Delta T}$
 **Muunnokset:** $270\,\text{MW} = 270 \cdot 10^6\,\text{W}$ ja $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$. Lämpötilan muutos $9{,}00\,\text{K}$ on sama kelvineinä ja celsiusasteina. Lopuksi $1\,\text{t} = 1000\,\text{kg}$.
 **Sijoitus:** $q_m = \dfrac{270 \cdot 10^6\,\text{W}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 9{,}00\,\text{K}} = 7159{,}9\,\tfrac{\text{kg}}{\text{s}} = 7{,}1599\,\tfrac{\text{t}}{\text{s}}$
-**Vastaus:** $7{,}16\,\tfrac{\text{t}}{\text{s}}$, kolme merkitsevää numeroa kuten lämpötilan muutoksessa $9{,}00\,\text{K}$ ja ominaislämpökapasiteetissa $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+**Vastaus:** $7{,}16\,\tfrac{\text{t}}{\text{s}}$, kolme merkitsevää numeroa, koska lämpötilan muutos $9{,}00\,\text{K}$ ja ominaislämpökapasiteetti $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ovat kolmella numerolla ja teho $270\,\text{MW}$ on annettu megawatin tarkkuudella.
 **Järkevyys:** Tarkistus: $4190 \cdot 7160 \cdot 9{,}00\,\text{W} = 2{,}70 \cdot 10^8\,\text{W}$. Vesivirta vastaa noin $7\,\tfrac{\text{m}^3}{\text{s}}$, mikä on pienen joen virtaama. Lauhdevoimalaitos tarvitsee rannalle suuren määrän jäähdytysvettä, ja siksi ne rakennetaan merenrannalle tai joen varteen.
 
 ## fy3-15-L3-01
@@ -95,7 +95,7 @@
 **Kaava:** $P_\text{s} = P_\text{s,0} - k P_\text{k}$, missä $k = \dfrac{P_\text{s,0} - P_\text{s,täysi}}{P_\text{k,täysi}}$, ja $\eta_\text{kok} = \dfrac{P_\text{s} + P_\text{k}}{P_0}$
 **Muunnokset:** Kaikki tehot ovat megawatteina ja $k$ on dimensioton luku, joten muunnoksia ei tarvita.
 **Sijoitus:** $k = \dfrac{240\,\text{MW} - 180\,\text{MW}}{348\,\text{MW}} = 0{,}17241$ ja $P_\text{s} = 240\,\text{MW} - 0{,}17241 \cdot 200\,\text{MW} = 205{,}517\,\text{MW}$. Sitten $\eta_\text{kok} = \dfrac{205{,}517\,\text{MW} + 200\,\text{MW}}{600\,\text{MW}} = 0{,}67586 = 67{,}6\,\%$.
-**Vastaus:** $P_\text{s} = 206\,\text{MW}$ ja $\eta_\text{kok} = 67{,}6\,\%$, kolme merkitsevää numeroa kuten annetuissa tehoissa.
+**Vastaus:** $P_\text{s} = 206\,\text{MW}$ ja $\eta_\text{kok} = 67{,}6\,\%$, kolme merkitsevää numeroa eli megawatin tarkkuus, koska kaikki tehot on annettu megawatin tarkkuudella: erotus $240 - 180 = 60\,\text{MW}$ on sillä tarkkuudella, ja vähennettävä $0{,}172 \cdot 200 \approx 34\,\text{MW}$ on ykkösten tarkkuudella.
 **Järkevyys:** Tulokset ovat ääritilojen välissä: sähköteho välillä $180$–$240\,\text{MW}$ ja hyötysuhde välillä $40\,\%$ ja $88\,\%$. Rajatapaus: kun $P_\text{k} = 348\,\text{MW}$, kaava antaa $240 - 60 = 180\,\text{MW}$. Jokaista kaukolämpömegawattia kohti sähköä menetetään $\tfrac{60}{348} = 0{,}17\,\text{MW}$. Yhteenlaskettu hyötysuhde ei kerro kannattavuutta, koska sähkö kelpaa kaikkeen mutta kaukolämpö vain lämmitykseen; kannattavuus riippuu tarpeesta ja hinnoista.
 
 ## fy3-15-L3-02
@@ -105,7 +105,7 @@
 **Kaava:** $E = \eta Q_1$ ja $Q_1 = H m$, joten $m = \dfrac{E}{\eta H}$
 **Muunnokset:** $E = 36{,}0 \cdot 3{,}60 \cdot 10^{12}\,\text{J} = 1{,}296 \cdot 10^{14}\,\text{J}$ ja $H = 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kt} = 10^6\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{1{,}296 \cdot 10^{14}\,\text{J}}{0{,}380 \cdot 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}3642 \cdot 10^7\,\text{kg} = 13{,}642\,\text{kt}$
-**Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa kuten annetuissa arvoissa.
+**Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa, koska sähköenergia $36{,}0\,\text{GWh}$, hyötysuhde $0{,}380$, lämpöarvo $25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$ ja muuntokerroin $3{,}60 \cdot 10^{12}\,\text{J}/\text{GWh}$ ovat kaikki kolmella numerolla.
 **Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu 50 t. Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu polttoaine, joka muuttuu hukkalämmöksi ja päästöiksi, mutta tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
 
 ## fy3-15-L3-03
@@ -115,5 +115,5 @@
 **Kaava:** $\varepsilon = \dfrac{Q}{E_\text{s}}$, joten $E_\text{s} = \dfrac{Q}{\varepsilon}$, ja $E_\text{polttoaine} = \dfrac{E_\text{s}}{\eta_\text{siirto}\, \eta_\text{voimala}}$, siis $E_\text{polttoaine} = \dfrac{Q}{\eta_\text{siirto}\, \eta_\text{voimala}\, \varepsilon}$
 **Muunnokset:** Kaikki energiat ovat kilowattitunteina ja kertoimet dimensiottomia, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{polttoaine} = \dfrac{100\,\text{kWh}}{0{,}950 \cdot 0{,}400 \cdot 3{,}00} = \dfrac{100\,\text{kWh}}{1{,}14} = 87{,}719\,\text{kWh}$
-**Vastaus:** $87{,}7\,\text{kWh}$, kolme merkitsevää numeroa kuten kertoimissa $0{,}950$, $0{,}400$ ja $3{,}00$.
+**Vastaus:** $87{,}7\,\text{kWh}$, kolme merkitsevää numeroa, koska kertoimet $0{,}950$, $0{,}400$ ja $3{,}00$ ovat kolmella numerolla ja lämmitystarve $100\,\text{kWh}$ on annettu kilowattitunnin tarkkuudella.
 **Järkevyys:** Suora sähkölämmitys vaatisi $\dfrac{100\,\text{kWh}}{0{,}380} = 263\,\text{kWh}$ polttoainetta ja öljykattila $\dfrac{100\,\text{kWh}}{0{,}900} = 111\,\text{kWh}$. Lämpöpumppu säästää polttoainetta eniten, koska se siirtää ulkoilman lämpöä sisälle sen sijaan, että muuttaisi sähkön lämmöksi. Suora sähkölämmitys on huonoin, koska sähkön tuotannossa on jo hukkaantunut yli 60 % polttoaineen energiasta.

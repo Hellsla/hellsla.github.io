@@ -250,7 +250,7 @@ t &= \frac{s\,m_\text{jää} - c\,m_\text{j}\Delta T_\text{j}}{UA\Delta T_\text{
 &\approx 2{,}4\,\text{h}
 \end{aligned}
 ```
-Jäätä riittää noin $2{,}4\,\text{h}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska jään massa $1{,}0\,\text{kg}$, juomien massa $0{,}50\,\text{kg}$ ja lämpötilan lasku $20\,\text{K}$ tunnetaan kahden numeron tarkkuudella.
+Jäätä riittää noin $2{,}4\,\text{h}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska kaikki lähtöarvot ovat kahdella numerolla: jään massa $1{,}0\,\text{kg}$, juomien massa $0{,}50\,\text{kg}$, niiden lämpötilan lasku $20\,\text{K}$, U-arvo $1{,}5$, pinta-ala $0{,}80\,\text{m}^2$ ja lämpötilaero $28\,\text{K}$.
 
 <!-- vaihe -->
 

@@ -249,7 +249,7 @@ Kalorimetrissä on 0,250 kg vettä, jonka lämpötila on 24,0 °C. Veteen pudote
 
 <!-- vaihe -->
 
-**Tulos.** Koska $Q_\text{v} = 25\,140\,\text{J} > Q_\text{j} = 17\,540\,\text{J}$, kaikki jää sulaa. Lopputilassa on 0,300 kg vettä lämpötilassa $6{,}0\,{}^\circ\text{C}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska jään massa $0{,}050\,\text{kg}$ ja sen lämpötilan muutos $8{,}0\,\text{K}$ tunnetaan vain kahden numeron tarkkuudella ja erotus $Q_\text{v} - Q_\text{j}$ menettää vielä numeroita.
+**Tulos.** Koska $Q_\text{v} = 25\,140\,\text{J} > Q_\text{j} = 17\,540\,\text{J}$, kaikki jää sulaa. Lopputilassa on 0,300 kg vettä lämpötilassa $6{,}0\,{}^\circ\text{C}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska jään massa $0{,}050\,\text{kg}$ tunnetaan vain kahden numeron tarkkuudella ja se määrää lämpömäärän $Q_\text{j} = 17\,540\,\text{J}$ tarkkuuden (sadat joulet); erotus $Q_\text{v} - Q_\text{j} = 7600\,\text{J}$ on siis kahden numeron luku.
 
 <!-- vaihe -->
 

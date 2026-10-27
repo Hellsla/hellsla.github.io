@@ -264,7 +264,7 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 
 <!-- vaihe -->
 
-**Tulos.** Absoluuttinen nollapiste on $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$. Epävarmuus ilmoitetaan kahdella merkitsevällä numerolla ($18{,}08 \approx 18$) ja tulos pyöristetään samaan tarkkuuteen eli yhden asteen tarkkuuteen.
+**Tulos.** Absoluuttinen nollapiste on $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$. Epävarmuus ilmoitetaan kahdella merkitsevällä numerolla ($18{,}08 \approx 18$), koska ääriviivojen nollapisteet $-259\,{}^\circ\text{C}$ ja $-295\,{}^\circ\text{C}$ tunnetaan kolmella numerolla ja niiden erotus $36\,{}^\circ\text{C}$ vain kahdella. Tulos pyöristetään samaan tarkkuuteen eli yhden asteen tarkkuuteen.
 
 <!-- vaihe -->
 

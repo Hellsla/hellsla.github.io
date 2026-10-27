@@ -36,7 +36,7 @@
 **Kaava:** $v = \dfrac{\Delta x}{\Delta t}$, missä $\Delta x = x_2 - x_1$ ja $\Delta t = t_2 - t_1$. Siis $v = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Lähtöpaikka $4{,}0\,\text{m}$ ei ole nolla, mutta se supistuu erotuksessa pois.
 **Sijoitus:** $v = \dfrac{24\,\text{m} - 4{,}0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = \dfrac{20\,\text{m}}{10\,\text{s}} = 2{,}0\,\text{m/s}$
-**Vastaus:** $2{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikassa $24\,\text{m}$ ja ajassa $10\,\text{s}$.
+**Vastaus:** $2{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska paikat $24\,\text{m}$ ja $4{,}0\,\text{m}$ on annettu metrin tarkkuudella, joten erotus $20\,\text{m}$ ja aika $10\,\text{s}$ ovat kahden numeron lukuja.
 **Järkevyys:** Kuvaaja nousee, joten nopeus on positiivinen. Tarkistus: $4{,}0\,\text{m} + 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 24\,\text{m}$, mikä on suoran toinen piste. Jos nopeudeksi laskettaisiin $\dfrac{24\,\text{m}}{10\,\text{s}} = 2{,}4\,\text{m/s}$, unohtuisi lähtöpaikka.
 
 ## fy4-1-L1-05
@@ -46,7 +46,7 @@
 **Kaava:** $x = x_0 + v\,t$. Kaava on jo ratkaistu paikan suhteen: $x = x_0 + v\,t$
 **Muunnokset:** Paikka on metreinä, nopeus yksikössä $\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $x = 15\,\text{m} + 1{,}5\,\text{m/s} \cdot 20\,\text{s} = 15\,\text{m} + 30\,\text{m} = 45\,\text{m}$
-**Vastaus:** $45\,\text{m}$, kaksi merkitsevää numeroa kuten lähtöarvoissa $15\,\text{m}$ ja $1{,}5\,\text{m/s}$.
+**Vastaus:** $45\,\text{m}$, kaksi merkitsevää numeroa, koska nopeus $1{,}5\,\text{m/s}$ ja aika $20\,\text{s}$ ovat kahdella numerolla ja summa $15\,\text{m} + 30\,\text{m}$ on metrin tarkkuudella.
 **Järkevyys:** Kävelijä siirtyy $30\,\text{m}$ eteenpäin, joten paikan pitää olla suurempi kuin $15\,\text{m}$, ja $45\,\text{m}$ on. Nopeus $1{,}5\,\text{m/s} \approx 5{,}4\,\text{km/h}$ on tavallista kävelyvauhtia. Pelkkä tulo $v\,t = 30\,\text{m}$ olisi siirtymä, ei paikka. Rajatapaus $t = 0$ antaa $x = x_0 = 15\,\text{m}$, kuten pitääkin.
 
 ## fy4-1-L2-01
@@ -56,7 +56,7 @@
 **Kaava:** $v = \dfrac{\Delta x}{\Delta t}$, joten $\Delta x = v\,\Delta t$
 **Muunnokset:** Yksi $\text{km/h}$ on $\dfrac{1000\,\text{m}}{3600\,\text{s}} = \dfrac{1}{3{,}6}\,\text{m/s}$, joten $90\,\text{km/h} = \dfrac{90}{3{,}6}\,\text{m/s} = 25\,\text{m/s}$.
 **Sijoitus:** $\Delta x = 25\,\text{m/s} \cdot 12\,\text{s} = 300\,\text{m}$
-**Vastaus:** $300\,\text{m}$ eli $3{,}0 \cdot 10^2\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $90\,\text{km/h}$ ja ajassa $12\,\text{s}$.
+**Vastaus:** $300\,\text{m}$ eli $3{,}0 \cdot 10^2\,\text{m}$, kaksi merkitsevää numeroa, koska nopeus $90\,\text{km/h}$ ja aika $12\,\text{s}$ ovat kahdella numerolla; muunnoskerroin $3{,}6$ on tarkka eikä rajoita.
 **Järkevyys:** Auto kulkee $25\,\text{m}$ joka sekunti, ja se on noin kuuden auton pituus. Kymmenessä sekunnissa matka olisi $250\,\text{m}$ ja kahdessatoista hieman enemmän, joten $300\,\text{m}$ sopii. Jos laskisi suoraan $90 \cdot 12 = 1080$, sekoittaisi yksiköt: se olisi $\text{km/h} \cdot \text{s}$, ei metrejä.
 
 ## fy4-1-L2-02
@@ -76,7 +76,7 @@
 **Kaava:** $v = \dfrac{\Delta x}{\Delta t}$, missä $\Delta x = x_2 - x_1$ ja $\Delta t = t_2 - t_1$. Siis $v = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Erotukset lasketaan aina loppu miinus alku.
 **Sijoitus:** $v = \dfrac{3{,}0\,\text{m} - 18\,\text{m}}{7{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{-15\,\text{m}}{5{,}0\,\text{s}} = -3{,}0\,\text{m/s}$
-**Vastaus:** $-3{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajan muutoksessa $5{,}0\,\text{s}$.
+**Vastaus:** $-3{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska paikkojen erotus $3{,}0\,\text{m} - 18\,\text{m} = -15\,\text{m}$ on metrin tarkkuudella (kaksi numeroa) ja ajan muutos $5{,}0\,\text{s}$ on myös kahdella.
 **Järkevyys:** Paikka pienenee, joten nopeuden pitää olla negatiivinen: kärry liikkuu kohti origoa. Takaisinlasku: $18\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} = 3{,}0\,\text{m}$, mikä on toinen annettu paikka. Vauhti on $3{,}0\,\text{m/s}$.
 
 ## fy4-1-L2-04
@@ -96,7 +96,7 @@
 **Kaava:** $v_\text{vauhti} = \dfrac{s}{\Delta t}$, missä $s = s_1 + s_2$ ja $\Delta t = \Delta t_1 + \Delta t_2$. Siis $v_\text{vauhti} = \dfrac{s_1 + s_2}{\Delta t_1 + \Delta t_2}$
 **Muunnokset:** $6{,}0\,\text{km} = 6000\,\text{m}$ ja $20\,\text{min} = 1200\,\text{s}$, $30\,\text{min} = 1800\,\text{s}$.
 **Sijoitus:** $v_\text{vauhti} = \dfrac{6000\,\text{m} + 6000\,\text{m}}{1200\,\text{s} + 1800\,\text{s}} = \dfrac{12\,000\,\text{m}}{3000\,\text{s}} = 4{,}0\,\text{m/s}$
-**Vastaus:** $4{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten matkoissa $6{,}0\,\text{km}$.
+**Vastaus:** $4{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska ajat $20\,\text{min}$ ja $30\,\text{min}$ (summa $50\,\text{min}$) ovat kahdella numerolla; matkat $6{,}0\,\text{km}$ ovat myös kahdella, ja niiden summa $12{,}0\,\text{km}$ rajoittaa vähemmän.
 **Järkevyys:** Arvo on menon vauhdin $5{,}0\,\text{m/s}$ ja paluun vauhdin $3{,}3\,\text{m/s}$ välissä, kuten keskivauhdin kuuluu. Pyöräilijä palasi lähtöpaikkaansa, joten siirtymä on $0$ ja keskinopeus $0\,\text{m/s}$, vaikka keskivauhti ei ole nolla. Noin $14\,\text{km/h}$ on rauhallista pyöräilyä.
 
 ## fy4-1-L3-02
@@ -106,7 +106,7 @@
 **Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{E} = x_{0\text{E}} + v_\text{E}\,t$. Ehdosta $x_\text{A} = x_\text{E}$ seuraa $t = \dfrac{x_{0\text{E}} - x_{0\text{A}}}{v_\text{A} - v_\text{E}}$, ja paikka on $x = x_{0\text{A}} + v_\text{A}\,t$
 **Muunnokset:** Kaikki suureet ovat yksiköissä $\text{m}$ ja $\text{m/s}$, joten muunnoksia ei tarvita. Eevan nopeus sijoitetaan negatiivisena, koska hän kulkee negatiiviseen suuntaan.
 **Sijoitus:** $t = \dfrac{90\,\text{m} - 0}{1{,}5\,\text{m/s} - (-1{,}2\,\text{m/s})} = \dfrac{90\,\text{m}}{2{,}7\,\text{m/s}} = 33{,}33\ldots\,\text{s}$ ja $x = 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} = 50\,\text{m}$
-**Vastaus:** $50\,\text{m}$ eli $5{,}0 \cdot 10^1\,\text{m}$, kaksi merkitsevää numeroa kuten lähtöarvoissa $1{,}5\,\text{m/s}$ ja $1{,}2\,\text{m/s}$.
+**Vastaus:** $50\,\text{m}$ eli $5{,}0 \cdot 10^1\,\text{m}$, kaksi merkitsevää numeroa, koska nopeudet $1{,}5\,\text{m/s}$ ja $-1{,}2\,\text{m/s}$ ovat kahdella numerolla ja niiden erotus $2{,}7\,\text{m/s}$ myös.
 **Järkevyys:** Eeva kulkee $1{,}2\,\text{m/s} \cdot 33{,}33\,\text{s} = 40\,\text{m}$, joten hänen paikkansa on $90\,\text{m} - 40\,\text{m} = 50\,\text{m}$, sama kuin Ainolla. Paikka on alku- ja loppupisteen välissä, ja koska Aino on nopeampi, kohtaaminen on lähempänä Eevan lähtöpaikkaa kuin puolivälissä ($45\,\text{m}$).
 
 ## fy4-1-L3-03
@@ -117,5 +117,5 @@
 **Kaava:** $v_\text{ka} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_\text{ka} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0{,}25\,\text{m/s}$
-**Vastaus:** $0{,}25\,\text{m/s}$, kaksi merkitsevää numeroa kuten loppupaikassa $10\,\text{m}$ ja ajassa $40\,\text{s}$.
+**Vastaus:** $0{,}25\,\text{m/s}$, kaksi merkitsevää numeroa, koska loppupaikka $10\,\text{m}$ ja aika $40\,\text{s}$ on annettu kahdella numerolla.
 **Järkevyys:** Robotti kulki $30\,\text{m}$ eteenpäin ja $20\,\text{m}$ takaisin, joten siirtymä on $30\,\text{m} - 20\,\text{m} = 10\,\text{m}$ vaikka matka oli $50\,\text{m}$. Etumerkki on positiivinen, koska robotti on lopussa suuremmassa $x$:ssä kuin alussa. Osanopeuksien $3{,}0\,\text{m/s}$, $0$ ja $-1{,}0\,\text{m/s}$ keskiarvo $\dfrac{3{,}0 + 0 - 1{,}0}{3} = 0{,}67\,\text{m/s}$ olisi väärä, koska osavälit eivät ole yhtä pitkiä.

@@ -262,7 +262,7 @@ Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{
 
 <!-- vaihe -->
 
-**Tulos.** Sähköteho on $P_3 \approx 228\,\text{MW}$, hyötysuhde $\eta \approx 0{,}380 = 38{,}0\,\%$ ja hukkalämmön teho $P_\text{h} \approx 372\,\text{MW}$. Tulokset ilmoitetaan kolmella merkitsevällä numerolla, koska hyötysuhteet $0{,}910$, $0{,}440$ ja $0{,}950$ on annettu kolmella numerolla.
+**Tulos.** Sähköteho on $P_3 \approx 228\,\text{MW}$, hyötysuhde $\eta \approx 0{,}380 = 38{,}0\,\%$ ja hukkalämmön teho $P_\text{h} \approx 372\,\text{MW}$. Tulokset ilmoitetaan kolmella merkitsevällä numerolla, koska hyötysuhteet $0{,}910$, $0{,}440$ ja $0{,}950$ on annettu kolmella numerolla ja polttoaineteho $600\,\text{MW}$ megawatin tarkkuudella.
 
 <!-- vaihe -->
 

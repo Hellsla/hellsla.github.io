@@ -210,7 +210,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$ ja paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$. Kuvaajasta luetut arvot ovat kahden numeron tarkkuudella, joten nopeus ja paikka ilmoitetaan kahdella tai kolmella merkitsevällä numerolla.
+**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$ ja paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$ eli $1{,}7 \cdot 10^2\,\text{m}$. Nopeudessa on kaksi merkitsevää numeroa, koska aikaväli $40\,\text{s}$ on kahdella numerolla. Paikassa tulo $2{,}5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ on myös kahdella numerolla, joten summa $20\,\text{m} + 150\,\text{m}$ tunnetaan vain kymmenien metrien tarkkuudella: $x = 1{,}7 \cdot 10^2\,\text{m}$.
 
 <!-- vaihe -->
 
