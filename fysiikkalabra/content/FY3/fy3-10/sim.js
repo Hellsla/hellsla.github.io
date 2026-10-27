@@ -104,16 +104,16 @@ new p5((p) => {
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
-    const btn = p.createButton('Nollaa mittaus').parent(controls);
+    const btn = p.createButton(__('nollaa_mittaus')).parent(controls);
     btn.elt.addEventListener('click', clearAvg);
     [sN, lN] = slider(controls, 20, 200, 100, 10);               // hiukkasmäärä N
     [sT, lT] = slider(controls, 100, 600, 300, 10);              // lämpötila T (K)
     [sV, lV] = slider(controls, 25, 100, 100, 5);                // tilavuus V (% täydestä)
     const ls = p.createDiv('').parent(controls).style('display', 'flex').style('flex-direction', 'column')
       .style('flex', '1 1 11rem').style('font-size', '.9rem');           // laid out like the slider labels
-    p.createSpan('Nopeus').parent(ls).id('fy3-10-speed');
+    p.createSpan(__('nopeus')).parent(ls).id('fy3-10-speed');
     sel = p.createSelect().parent(ls).style('min-height', '40px').attribute('aria-labelledby', 'fy3-10-speed');
-    sel.option('hidas (0,25×)', '0.25'); sel.option('normaali (0,5×)', '0.5'); sel.option('nopea (1×)', '1');
+    sel.option(__('hidas_0_25'), '0.25'); sel.option(__('normaali_0_5'), '0.5'); sel.option(__('nopea_1'), '1');
     sel.selected('0.5'); sel.changed(() => { speed = Number(sel.value()); });
     readout = p.createDiv('').parent('sim-root').class('readout');
     window.simAdvance = (s) => { sync(); advance(s); return update().pMeasured; };
@@ -131,9 +131,9 @@ new p5((p) => {
   p.draw = () => {
     sync(); advance(Math.min(p.deltaTime, 100) / 1000 * speed);   // simulated time = real time · speed
     const { Vrel, pMeasured: pm, tAvg, hitRate } = update();   // the model value pPredicted stays in simState, not on screen
-    lN.html(`Hiukkasmäärä $N = ${N}$`); lT.html(`Lämpötila $T = ${T}\\,\\text{K}$`); lV.html(`Tilavuus $V = ${tx(Vrel * 100, 0)}\\,\\%$`);
-    readout.html(`Mitattu paine <strong>$p/p_\\text{ref} = ${tx(pm, 2)}$</strong> (keskiarvo $${tx(tAvg, 1)}\\,\\text{s}$:n ajalta)` +
-      `<br>Osumia seiniin <strong>$${tx(hitRate, 0)}$</strong> sekunnissa`);
+    lN.html(__(`hiukkasmaara`, {n: N})); lT.html(__(`lampotila`, {t: T})); lV.html(__(`tilavuus`, {vrel: tx(Vrel * 100, 0)}));
+    readout.html(__(`mitattu_paine_keskiarvo`, {pm: tx(pm, 2), tavg: tx(tAvg, 1)}) +
+      __(`osumia_seiniin_sekunnissa`, {hitrate: tx(hitRate, 0)}));
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k), ctx = p.drawingContext;
@@ -201,9 +201,9 @@ new p5((p) => {
 
     // speed legend (top), volume as a dimension line and the flash legend (bottom)
     p.textSize(ts(12)); p.fill(40);
-    const lx0 = 84 + p.textWidth('$\\text{hidas}$') + 5, lw = k > 1.5 ? 32 : 44, xF = 404 - p.textWidth('$\\text{osuma seinään}$');
-    lab('$\\text{hidas}$', 84, yT); rect(lx0, yT - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.fill(40); lab('$\\text{nopea}$', lx0 + lw + 5, yT); lab('$\\text{osuma seinään}$', xF, 388);
+    const lx0 = 84 + p.textWidth(__('hidas')) + 5, lw = k > 1.5 ? 32 : 44, xF = 404 - p.textWidth(__('osuma_seinaan'));
+    lab(__('hidas'), 84, yT); rect(lx0, yT - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
+    p.fill(40); lab(__('nopea'), lx0 + lw + 5, yT); lab(__('osuma_seinaan'), xF, 388);
     p.fill(...FLASH); p.ellipse(xF - 10, 388 - ts(4), 5, 16); p.fill(255); p.ellipse(xF - 10, 388 - ts(4), 2, 8);
     p.textSize(ts(13)); const wV = p.textWidth('$V = 100\\,\\%$') / 2, yD = 368;      // V label between the left edge and the legend
     const xm = Math.min(xF - 30 - wV, Math.max(x0 + 2 + wV, (x0 + xp) / 2));
@@ -213,7 +213,7 @@ new p5((p) => {
 
     // wall hits per second (the flashes), top right; yL keeps the place of the axis name below it
     const yL = yT + 8 + ts(14);
-    p.textSize(ts(13)); lab(`$\\text{osumia/s} = ${tx(hitRate, 0)}$`, 590, yT, p.RIGHT);
+    p.textSize(ts(13)); lab(__(`osumia`, {hitrate: tx(hitRate, 0)}), 590, yT, p.RIGHT);
 
     // bar: measured relative pressure, axis scaled to the values shown, gridlines, reference line 1
     const Y = (x) => BAR.y0 - (BAR.y0 - BAR.y1) * Math.min(x, top * 1.05) / top;
@@ -228,7 +228,7 @@ new p5((p) => {
     for (let j = 0; j <= nT; j++) lab(j ? `$${tx(j * tStep, dec)}$` : '$0$', BAR.ax - 6, Y(j * tStep) + ts(4), p.RIGHT);   // ≥ 43 px apart
     const yName = yL + 14 + ts(13);                              // axis name p/p_ref
     p.textSize(ts(13)); lab('$p/p_\\text{ref}$', 590, yName, p.RIGHT);
-    const cols = [MEAS], vals = [pm], names = ['$\\text{mitattu}$'];          // one bar: the measured pressure only
+    const cols = [MEAS], vals = [pm], names = [__('mitattu')];          // one bar: the measured pressure only
     for (let i = 0; i < 1; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
       rect(bx, by, BAR.w, BAR.y0 - by, grad(bx, 0, bx + BAR.w, 0, [[0, rgb(c, 0.85)], [0.35, rgb(mix(c, [255, 255, 255], 0.35))], [1, rgb(mix(c, [0, 0, 0], 0.25))]]));

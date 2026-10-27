@@ -37,25 +37,25 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    btn = p.createButton('Käynnistä').parent(controls);
+    btn = p.createButton(__('kaynnista')).parent(controls);
     btn.elt.addEventListener('click', () => {
       if (running) { running = false; return; }
       if (tau >= T) { tau = 0; tmax = 0; }                                // replay from the start
       running = true;
     });
-    const bR = p.createButton('Alusta').parent(controls); bR.elt.addEventListener('click', restart);
-    lCase = p.createElement('label').parent(controls); p.createSpan('Tapaus').parent(lCase); selCase = p.createSelect().parent(lCase);
-    selCase.option('1: sama lähtöpaikka', '1'); selCase.option('2: eri lähtöpaikka', '2');
-    selCase.option('3: vastakkaiset suunnat', '3'); selCase.option('4: edestakainen liike', '4');
+    const bR = p.createButton(__('alusta')).parent(controls); bR.elt.addEventListener('click', restart);
+    lCase = p.createElement('label').parent(controls); p.createSpan(__('tapaus')).parent(lCase); selCase = p.createSelect().parent(lCase);
+    selCase.option(__('1_sama_lahtopaikka'), '1'); selCase.option(__('2_eri_lahtopaikka'), '2');
+    selCase.option(__('3_vastakkaiset_suunnat'), '3'); selCase.option(__('4_edestakainen_liike'), '4');
     const lt = p.createElement('label').parent(controls); lSl = p.createSpan('').parent(lt);
     sl = p.createSlider(0, T, 0, 0.5).parent(lt);
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus (toisto)').parent(lv); selSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) selSp.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus_toisto')).parent(lv); selSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) selSp.option(txt, v);
     selSp.selected('1');                                                  // pace only; every quantity follows simulated time
     for (const e of [selCase.elt]) { e.addEventListener('input', restart); e.addEventListener('change', restart); }
     const scrub = () => { running = false; toTime(sl.value()); };         // the student drags the clock: playback stops
     sl.elt.addEventListener('input', scrub); sl.elt.addEventListener('change', scrub);
-    p.createP('Nuolen suunta ja pituus näyttävät nopeuden. Pisteet merkitsevät kokonaisia sekunteja.').parent('sim-root').class('note');
+    p.createP(__('nuolen_suunta_ja')).parent('sim-root').class('note');
     p.textFont('Arial');
     restart();
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
@@ -70,10 +70,10 @@ new p5((p) => {
     const speed = Number(selSp.value()), cs = CASES[selCase.value()], B = cs.B;
     if (running) { toTime(tau + Math.min(p.deltaTime, 100) / 1000 * speed); sl.value(tau); if (tau >= T) running = false; }
     const xA = pos(CART_A, tau), xB = pos(B, tau), sA = path(CART_A, tau), sB = path(B, tau);
-    lSl.html(`Hetki $t = ${tx(tau, 1)}\\,\\text{s}$`);
-    const bt = running ? 'Tauko' : 'Käynnistä'; if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
-    readout.html(`<strong>$t = ${tx(tau, 1)}\\,\\text{s}$</strong><br>$\\text{A}$: paikka <strong>$x = ${tx(xA, 1)}\\,\\text{m}$</strong>, matka $s = ${tx(sA, 1)}\\,\\text{m}$<br>` +
-      `$\\text{${cs.name}}$: paikka <strong>$x = ${tx(xB, 1)}\\,\\text{m}$</strong>, matka $s = ${tx(sB, 1)}\\,\\text{m}$`);
+    lSl.html(__(`hetki`, {tau: tx(tau, 1)}));
+    const bt = running ? __('tauko') : __('kaynnista'); if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
+    readout.html(__(`paikka_matka`, {tau: tx(tau, 1), xa: tx(xA, 1), sa: tx(sA, 1)}) +
+      __(`paikka_matka_2`, {cs: cs.name, xb: tx(xB, 1), sb: tx(sB, 1)}));
     window.simState = { tapaus: selCase.value(), t: tau, xA, x2: xB, sA, s2: sB, vA: vel(CART_A, tau), v2: vel(B, tau), tmax, running, speed, labels: null };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));

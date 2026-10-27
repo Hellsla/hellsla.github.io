@@ -14,7 +14,7 @@ It also runs the lesson's `answers.py` when present (`python -I answers.py` prin
 import json, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-import courses
+import courses, i18n
 import check_solutions as solution_rules
 from courses import ROOT
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
@@ -366,7 +366,7 @@ def check_sim(L, folder, meta):
         L.err("sim.js", 1, f"a {c['code']} simulation lives in its own folder, {(c['paths']['sims'] / folder.name).relative_to(ROOT)}/ (sim.js, sim.css, images), not in the lesson folder")
     sim = where / "sim.js"
     if not sim.exists(): L.err("sim.js", 1, f"meta.sim is {meta.get('sim')!r} but {sim.relative_to(ROOT)} is missing"); return
-    js = sim.read_text()
+    js = i18n.resolved_sim(sim)                         # its labels and readouts from lang/fi.json in place
     if "window.simState" not in js: L.err("sim.js", 1, "sim must expose window.simState every frame (tester asserts on it)")
     if not re.search(r"createCanvas\(\s*600\s*,\s*400", js): L.warn("sim.js", 1, "canvas is not 600×400 (the embed scales that size)")
     if ".class('readout')" not in js and 'class("readout")' not in js and "readout" not in js:

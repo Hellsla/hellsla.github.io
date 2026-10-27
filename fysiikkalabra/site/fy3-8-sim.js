@@ -41,21 +41,21 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
     const ls = p.createElement('label').parent(controls);
-    p.createSpan('Aine').parent(ls);
+    p.createSpan(__('aine')).parent(ls);
     sel = p.createSelect().parent(ls);
     for (const [name, a] of MATERIALS) sel.option(name, name);
     sel.selected('teräs');
     [sL, lL] = slider(controls, 1, 100, 10, 1);                 // alkupituus L₀ (m)
     [sT, lT] = slider(controls, T_MIN, T_MAX, T_REF, 1);         // lämpötila T (°C)
-    btn = p.createButton('Pysäytä värähtely').parent(controls);
-    btn.elt.addEventListener('click', () => { running = !running; btn.html(running ? 'Pysäytä värähtely' : 'Jatka värähtelyä'); });
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    btn = p.createButton(__('pysayta_varahtely')).parent(controls);
+    btn.elt.addEventListener('click', () => { running = !running; btn.html(running ? __('pysayta_varahtely') : __('jatka_varahtelya')); });
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                           // pace of the vibration only
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { material: { input: sel.elt, unit: '' }, L0: { input: sL.elt, unit: 'm' }, T: { input: sT.elt, unit: '°C' } },
-      reset: () => { sel.selected('teräs'); sL.value(10); sT.value(T_REF); tAnim = 0; running = true; btn.html('Pysäytä värähtely'); },
+      reset: () => { sel.selected('teräs'); sL.value(10); sT.value(T_REF); tAnim = 0; running = true; btn.html(__('pysayta_varahtely')); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
@@ -74,13 +74,13 @@ new p5((p) => {
     if (running) tAnim += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value());
     const decL = dL === 0 ? 4 : Math.min(8, Math.max(4, Math.ceil(-Math.log10(Math.abs(dL))) + 1));   // show the change in L
 
-    lL.html(`Alkupituus $L_0 = ${L0}\\,\\text{m}$`); lT.html(`Lämpötila $T = ${tx(T, 0)}\\,{}^\\circ\\text{C}$`);
-    readout.html(`Aine: <strong>${material}</strong>, $\\alpha = ${fa(alpha)} \\cdot 10^{-6}\\,\\text{1/K}$, alkupituus $L_0 = ${L0}\\,\\text{m}$ (${'$20\\,{}^\\circ\\text{C}$'}:ssa)` +
-                 `<br>Lämpötilan muutos $\\Delta T = T - 20\\,{}^\\circ\\text{C} = ${tx(T, 0)}\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = ${tx(dT, 0)}\\,\\text{K}$` +
-                 `<br>Pituuden muutos $\\Delta L = \\alpha L_0 \\Delta T = ${sgn(dL * 1000)}\\,\\text{mm}$` +
-                 `<br>Uusi pituus $L = L_0 + \\Delta L = ${tx(L, decL)}\\,\\text{m}$` +
-                 `<br>Suhteellinen muutos $\\Delta L/L_0 = \\alpha \\Delta T = ${sgn(rel * 100)}\\,\\%$` +
-                 `<br>Kuvaajan $\\Delta L$-akseli $${tx(yMin, dec)}\\text{–}${tx(yMax, dec)}\\,\\text{mm}$, kun $L_0 = ${L0}\\,\\text{m}$.`);
+    lL.html(__(`alkupituus`, {l0: L0})); lT.html(__(`lampotila`, {t: tx(T, 0)}));
+    readout.html(__(`aine_alkupituus_ssa`, {material: __v(material), alpha: fa(alpha), l0: L0, circ: '$20\\,{}^\\circ\\text{C}$'}) +
+                 __(`lampotilan_muutos`, {t: tx(T, 0), dt: tx(dT, 0)}) +
+                 __(`pituuden_muutos`, {dl: sgn(dL * 1000)}) +
+                 __(`uusi_pituus`, {l: tx(L, decL)}) +
+                 __(`suhteellinen_muutos`, {rel: sgn(rel * 100)}) +
+                 __(`kuvaajan_akseli_kun`, {ymin: tx(yMin, dec), ymax: tx(yMax, dec), l0: L0}));
     window.simState = { material, alpha, L0, T, dT, dL, L, rel, E, spacing, amp, chartMin: yMin, chartMax: yMax, running, t: tAnim };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -88,11 +88,11 @@ new p5((p) => {
     p.background(250);
     const col = tempColor(T);
     p.noStroke(); p.fill(40); p.textAlign(p.CENTER); p.textSize(ts(13));
-    p.text(`$\\text{Pituuden muutokset liioiteltu }\\times ${E}$`, 300, 4 + ts(13));
+    p.text(__(`pituuden_muutokset_liioiteltu`, {e: E}), 300, 4 + ts(13));
 
     // micro model: 5 × 5 particles, mean spacing d₀(1 + EαΔT), each vibrating with amplitude ∝ √T
     const d = LAT.d0 * spacing, half = (LAT.n - 1) / 2, ref = 2 * half * LAT.d0;
-    p.textSize(ts(14)); p.text('$\\text{mikromalli}$', LAT.cx, 46 + ts(14));
+    p.textSize(ts(14)); p.text(__('mikromalli'), LAT.cx, 46 + ts(14));
     p.noFill(); p.stroke(150); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]);
     p.rect(LAT.cx - ref / 2, LAT.cy - ref / 2, ref, ref); p.drawingContext.setLineDash([]);
     p.stroke(255); p.strokeWeight(1.5); p.fill(col);
@@ -103,13 +103,13 @@ new p5((p) => {
       p.circle(x, y, 2 * LAT.r);
     }
     p.noStroke(); p.fill(60); p.textSize(ts(12));
-    p.text('$\\text{katkoviiva:}$', LAT.cx, 308 + ts(12));
+    p.text(__('katkoviiva'), LAT.cx, 308 + ts(12));
     p.text('$20\\,{}^\\circ\\text{C}$', LAT.cx, 308 + ts(12) + ts(15));
-    p.text(`$\\text{välit }${sgn(rel * 100)}\\,\\%$`, LAT.cx, 308 + ts(12) + 2 * ts(15));
+    p.text(__(`valit`, {rel: sgn(rel * 100)}), LAT.cx, 308 + ts(12) + 2 * ts(15));
 
     // rod with its left end fixed; dashed outline = length at 20 °C, solid = length now (change ×E)
     const wNow = ROD.w * spacing, xRef = ROD.x + ROD.w, xNow = ROD.x + wNow;
-    p.fill(40); p.textAlign(p.LEFT); p.textSize(ts(14)); p.text(`$\\text{sauva, }L_0 = ${L0}\\,\\text{m}$`, ROD.x - 10, 46 + ts(14));
+    p.fill(40); p.textAlign(p.LEFT); p.textSize(ts(14)); p.text(__(`sauva`, {l0: L0}), ROD.x - 10, 46 + ts(14));
     p.fill(110); p.rect(ROD.x - 10, ROD.y - 10, 10, ROD.h + 20);
     p.fill(col); p.stroke(60); p.strokeWeight(1.5); p.rect(ROD.x, ROD.y, wNow, ROD.h);
     p.noFill(); p.stroke(60); p.drawingContext.setLineDash([5, 4]); p.rect(ROD.x, ROD.y, ROD.w, ROD.h); p.drawingContext.setLineDash([]);

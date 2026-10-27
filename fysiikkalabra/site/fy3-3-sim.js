@@ -51,8 +51,8 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');
     [sT, lT] = slider(controls, 100, 600, 300, 10);           // lämpötila T (K)
     [sV, lV] = slider(controls, 0.5, 2, 1, 0.1);              // tilavuus V (dm³)
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                        // pace only: the physics runs in simulated time
     step(sT.value(), sV.value());                             // one step at once, so the pressure window is never empty
     p.textFont('Arial');
@@ -74,10 +74,10 @@ new p5((p) => {
     const pRef = N * V_REF * V_REF / (2 * PX * Hc);                        // same model at 300 K and 1,00 dm³ (effective width PX)
     const pRel = 100 * pMeas / pRef, pTheory = 100 * (T / 300) / V;
     const theta = T - 273.15;
-    lT.html(`Lämpötila $T = ${T}\\,\\text{K}$`); lV.html(`Tilavuus $V = ${tx(V, 1)}\\,\\text{dm}^3$`);
+    lT.html(__(`lampotila`, {t: T})); lV.html(__(`tilavuus`, {v: tx(V, 1)}));
     readout.html(`<strong>$T = ${T}\\,\\text{K} = ${tx(theta, 0)}\\,{}^\\circ\\text{C}$</strong>` +
-                 `<br>Hiukkasten keskinopeus: $v = ${tx(Math.sqrt(T / 300), 2)} \\cdot v_{300\\,\\text{K}}$` +
-                 `<br><strong>Paine $p \\approx ${tx(pRel, 0)}$</strong> (suhteellinen, $100$ = $300\\,\\text{K}$ ja $1{,}0\\,\\text{dm}^3$), teoria $${tx(pTheory, 0)}$`);
+                 __(`hiukkasten_keskinopeus`, {math: tx(Math.sqrt(T / 300), 2)}) +
+                 __(`paine_suhteellinen_ja`, {prel: tx(pRel, 0), ptheory: tx(pTheory, 0)}));
     window.simState = { T, theta, V, vRel: v / V_REF, pRel, pTheory, N, speedCheck: Math.hypot(parts[0].vx, parts[0].vy) * v };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));

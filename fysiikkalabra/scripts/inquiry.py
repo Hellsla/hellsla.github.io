@@ -10,16 +10,26 @@ decisions 2026-10-26, CLAUDE.md "Lesson page") is in render() and templates/site
   python scripts/inquiry.py <id>     validate one lesson's inquiry.json and print the errors (exit 1 on any)
 """
 import hashlib, html as _h, json, pathlib, random, re, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from i18n import t as T
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
-STAGES = [("herata", "Pohdinta"), ("ennusta", "Ennusta"), ("tutki", "Tutki"),
-          ("selita", "Teoriatiivistelmä"), ("sovella", "Sovella"), ("tarkista", "Tarkista osaamisesi")]   # ids are keys in inquiry.json, titles are what the student sees
-STAGE_IDS = [s for s, _ in STAGES]
-NAV = {"tarkista": "Tarkista"}                    # nav label when it differs from the stage title
-EXIT_TITLE, EXERCISES_TITLE = "Exit ticket", "Tehtävät"
-SIM_INFO = (("howto", "Käyttöohje"), ("model", "Mallin oletukset"), ("calc", "Laskennan selitys"))   # the sim activity's boxes, closed by default
-LEGACY_INFO = "Käyttöohje ja mallin oletukset"    # a long sim text written before 2026-10-26, shown behind one box
+STAGE_IDS = ["herata", "ennusta", "tutki", "selita", "sovella", "tarkista"]   # keys in inquiry.json; titles from lang "inquiry.stage_<id>"
+SIM_KEYS = ("howto", "model", "calc")             # the sim activity's boxes, closed by default
+
+
+# What the student sees comes from lang/<lang>.json (scripts/i18n.py) in the language being built; the
+# module-level names below are the Finnish ones, for the checks and tests that compare against a page.
+def stages(): return [(s, T(f"inquiry.stage_{s}")) for s in STAGE_IDS]
+def nav(): return {"tarkista": T("inquiry.nav_tarkista")}          # nav label when it differs from the stage title
+def exit_title(): return T("lesson.exit_ticket")
+def exercises_title(): return T("lesson.exercises")
+def sim_info(): return tuple((k, T(f"inquiry.sim_{k}")) for k in SIM_KEYS)
+def legacy_info(): return T("inquiry.sim_legacy")   # a long sim text written before 2026-10-26, shown behind one box
+
+
+STAGES, NAV, EXIT_TITLE, EXERCISES_TITLE, SIM_INFO, LEGACY_INFO = stages(), nav(), exit_title(), exercises_title(), sim_info(), legacy_info()
 LEAD_WORDS = 30                                   # a sim activity's visible lead is at most this long
 GRID_TYPES = ("choice", "numeric", "explain", "exit")   # consecutive ones sit side by side on a wide screen (the opening story reads on its own)
 CARD_TYPES = ("choice", "numeric", "explain", "experiment", "interpret", "reflect", "exit")   # a task: one card holds its heading, instructions, answers and feedback
@@ -27,18 +37,18 @@ TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explai
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
-OPTIONAL_NAMES = {"choice": "lisäkysymys", "numeric": "lisälasku", "explain": "lisäselitys", "reflect": "palaa ennusteisiisi",
-                  "interpret": "lisäaineisto", "experiment": "lisätutkimus", "theory": "syventävä teoria", "exit": "Exit ticket",
-                  "hook": "lisäesimerkki", "text": "lisätietoa"}   # a closed box's name when the activity has no title
-SOURCES = {"measured": "Mitattu aineisto", "simulated": "Simuloitu esimerkkiaineisto", "model": "Mallin laskemia arvoja"}   # interpret "source"
+SOURCES = ("measured", "simulated", "model")      # interpret "source"; its badge is lang "inquiry.source_<source>"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
 
 
 def heading(title):
     """(key, shown) of a lesson.md `## ` heading. The formula section is named after its law, `## Kaava: Lämpömäärä`:
-    the page shows "Lämpömäärä", while inquiry.json, the lint and the build keep using the key "Kaava"."""
-    m = re.match(r"(Kaava):\s*(\S.*)$", title.strip())
-    return (m.group(1), m.group(2).strip()) if m else (title.strip(), title.strip())
+    the page shows "Lämpömäärä", while inquiry.json, the lint and the build keep using the key "Kaava". A heading
+    written in another language (lang "sections", `## Core idea`) has the key of the section it translates."""
+    names = {v: k for k, v in T("sections").items() if not k.startswith("_")}
+    m = re.match(r"(.+?):\s*(\S.*)$", title.strip())
+    if m and names.get(m.group(1)) == "Kaava": return ("Kaava", m.group(2).strip())
+    return (names.get(title.strip(), title.strip()), title.strip())
 
 
 def section_keys(lesson_md): return {heading(t)[0] for t in re.findall(r"^## (.+)$", lesson_md, re.M)}
@@ -227,12 +237,12 @@ def inline(md, text):
 
 def hints_html(hints):
     if not hints: return ""
-    names = ["Vihje 1: ohjaava kysymys", "Vihje 2: mikä yhteys", "Vihje 3: välivaihe"]
+    names = [T(f"inquiry.hint_{i}") for i in (1, 2, 3)]
     return '<div class="hints">' + "".join(f'<details class="hint" data-n="{i + 1}"><summary>{names[i]}</summary><div>{h}</div></details>'
                                            for i, h in enumerate(hints)) + "</div>"
 
 
-_NO_ERROR = re.compile(r"\s*(Laskussa|Päättelyssä) ei ole virhettä")
+def _no_error(): return re.compile(r"\s*(?:" + "|".join(map(re.escape, T("inquiry.no_error").split("|"))) + ")")   # "Laskussa ei ole virhettä"
 
 
 def shuffle_salt(lid):
@@ -250,9 +260,10 @@ def choice_order(choices, lid, aid, salt=None):
     (scripts/check_choices.py) re-seeds the whole course without touching a lesson; without one the seed is the
     lesson and activity id alone, so FY3 keeps the order it was published with."""
     salt = shuffle_salt(lid) if salt is None else salt
-    rest = [c for c in choices if not _NO_ERROR.match(c["text"])]
+    no_error = _no_error()
+    rest = [c for c in choices if not no_error.match(c["text"])]
     random.Random(hashlib.sha256((f"{lid}:{aid}" + (f":{salt}" if salt else "")).encode()).hexdigest()).shuffle(rest)
-    return rest + [c for c in choices if _NO_ERROR.match(c["text"])]
+    return rest + [c for c in choices if no_error.match(c["text"])]
 
 
 def choice_html(a, md, lid, aid):
@@ -262,21 +273,21 @@ def choice_html(a, md, lid, aid):
                  f'<span>{inline(md, c["text"])}</span></label><div class="feedback" data-for="{i}" hidden>{md(c["feedback"])}</div></li>')
     reveal = a.get("reveal") or {}
     attrs = f' data-reveal="{esc(reveal["after"])}" data-reveal-min="{reveal.get("min", 1)}"' if reveal else ""
-    justify = ('<label class="justify">Perustelu (valinnainen)<textarea rows="2"></textarea></label>' if a.get("justify") else "")
+    justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
     sol = f'<div class="solution-text">{md(a["solution"])}</div>' if a.get("solution") else ""
-    pending = '<p class="pending" tabindex="-1" hidden>Ennusteesi on tallessa. Palaute näkyy, kun olet tehnyt mittaukset.</p>' if reveal else ""
+    pending = f'<p class="pending" tabindex="-1" hidden>{T("inquiry.pending")}</p>' if reveal else ""
     return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{inline(md, a["prompt"])}</legend>{sol}'
-            f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">Vastaa</button></div>'
+            f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div>'
             f'{pending}<output aria-live="polite"></output></fieldset>')
 
 
 def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
-    sol = f'<details class="solution"><summary>Näytä ratkaisu</summary><div class="steps">{md(a["solution"])}</div></details>' if a.get("solution") else ""
+    sol = f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">{md(a["solution"])}</div></details>' if a.get("solution") else ""
     return (f'<div class="numeric"><p class="task">{inline(md, a["prompt"])}</p>'
             f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
-            f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus" placeholder="?">'
-            + (f'<span class="unit">{unit}</span>' if unit else "") + '<button type="submit">Tarkista</button><output aria-live="polite"></output></form>'
+            f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{T("inquiry.answer")}" placeholder="?">'
+            + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
             f'{hints_html([md(h) for h in a.get("hints", [])])}{sol}</div>')
 
 
@@ -288,11 +299,11 @@ def explain_html(a, md, aid):
     pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
     after = a.get("after") or []
     attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
-    copy = '<button type="button" class="copy-notes">Kopioi muistiinpanoihin</button>' if after else ""
-    return (f'<div class="explain"{attrs}><p class="task">{inline(md, a["prompt"])}</p><textarea rows="4" aria-label="Oma vastaus"></textarea>{pair}'
-            f'<div class="choice-actions"><button type="button" class="show-model">Näytä mallivastaus ja arviointi</button>{copy}</div>'
+    copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
+    return (f'<div class="explain"{attrs}><p class="task">{inline(md, a["prompt"])}</p><textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
+            f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model")}</button>{copy}</div>'
             f'<p class="explain-status" role="status" aria-live="polite"></p>'
-            f'<div class="model" hidden><h4>Mallivastaus</h4>{md(a["model"])}<h4>Arvioi oma vastauksesi</h4><ul class="criteria">{crit}</ul></div></div>')
+            f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4><ul class="criteria">{crit}</ul></div></div>')
 
 
 def question_html(q, md, lid, aid):
@@ -306,10 +317,10 @@ def experiment_html(a, md, lid):
     units = a.get("units", {}); names = a.get("names", {})
     nm = lambda k: esc(names.get(k, k))
     tn = lambda k: tex_name(names.get(k, k))
-    fi = lambda v: str(v).replace(".", ",") if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
+    fi = lambda v: str(v).replace(".", T("format.decimal")) if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
     fmt = lambda k, v: f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(units[k])}" if units.get(k) else "") + "</span>"   # name, value and unit on one line
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
-    locked = ", ".join(tn(k) for k in a["locked"]) or "ei mitään"
+    locked = ", ".join(tn(k) for k in a["locked"]) or T("inquiry.nothing_locked")
     cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
     plain = [names.get(a["vary"], a["vary"]) + (f" ({units[a['vary']]})" if units.get(a["vary"]) else "")] + [m["label"] if isinstance(m, dict) else m for m in a["measure"]]
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
@@ -317,10 +328,10 @@ def experiment_html(a, md, lid):
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
             f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([names.get(k, k) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
             f'<div class="intro">{md(a["intro"])}</div>'
-            f'<p class="exp-setup"><strong>Alkutila:</strong> {init}. <strong>Vakiona:</strong> {locked}. <strong>Muutetaan:</strong> {tn(a["vary"])}.</p>'
-            f'<div class="exp-controls"><button type="button" class="exp-start">Aseta alkutila</button><button type="button" class="exp-record">Kirjaa mittaus</button>'
-            f'<button type="button" class="exp-reset">Nollaa</button></div>'
-            f'<table class="exp-table" data-cols=\'{esc(json.dumps(plain, ensure_ascii=False))}\'><caption>Simulaation lukemat</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
+            f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
+            f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
+            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button></div>'
+            f'<table class="exp-table" data-cols=\'{esc(json.dumps(plain, ensure_ascii=False))}\'><caption>{T("inquiry.exp_table")}</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 
@@ -329,8 +340,8 @@ def sim_parts(a, md):
     the lead is one or two sentences and the longer texts sit behind Käyttöohje, Mallin oletukset and Laskennan
     selitys. A long text written before 2026-10-26 without those fields goes behind one box (LEGACY_INFO)."""
     text = a.get("text") or ""
-    boxes = [(title, a[k]) for k, title in SIM_INFO if a.get(k)]
-    if text and not boxes and len(text.split()) > LEAD_WORDS: boxes, text = [(LEGACY_INFO, text)], ""
+    boxes = [(title, a[k]) for k, title in sim_info() if a.get(k)]
+    if text and not boxes and len(text.split()) > LEAD_WORDS: boxes, text = [(legacy_info(), text)], ""
     info = "".join(f'<details class="sim-box"><summary>{t}</summary><div>{md(x)}</div></details>' for t, x in boxes)
     return (md(text) if text else ""), (f'<div class="sim-info">{info}</div>' if info else "")
 
@@ -338,7 +349,7 @@ def sim_parts(a, md):
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
     (NAV); the side column on a wide screen shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
-    short = NAV.get(sid, title)
+    short = nav().get(sid, title)
     rest = title[len(short):] if title.startswith(short) else ""
     return (f'<a href="#{sid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{short}'
             + (f'<span class="toc-rest">{rest}</span>' if rest else "") + '</span></a>')
@@ -370,12 +381,11 @@ def render(folder, inquiry, parts, md):
     elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
         last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
     prior = inquiry.get("prior") or []
-    aside = f'<div class="contribution"><strong>Tällä tunnilla uutta:</strong> {inline(md, inquiry["contribution"])}</div>'
-    if prior: aside += '<p class="prior"><strong>Tarvitset:</strong> ' + "; ".join(inline(md, x) for x in prior) + '</p>'
+    aside = f'<div class="contribution"><strong>{T("inquiry.new_this_lesson")}</strong> {inline(md, inquiry["contribution"])}</div>'
+    if prior: aside += f'<p class="prior"><strong>{T("inquiry.prior")}</strong> ' + "; ".join(inline(md, x) for x in prior) + '</p>'
     n_opt = sum(1 for a in acts if a.get("optional"))
     if n_opt:                                          # what is the path, what may be left (spec 2026-10-26: a core path)
-        aside += ('<p class="path-note"><strong>Ydinpolku:</strong> tee kaikki, mitä ei ole suljettu <em>Valinnainen</em>-laatikkoon. '
-                  f'Valinnaisia lisätehtäviä on {n_opt}; ne syventävät ja tarjoavat lisäharjoitusta.</p>')
+        aside += f'<p class="path-note">{T("inquiry.core_path", n=n_opt)}</p>'
     body = [f'<div class="intro-row"><div class="intro-main">{parts["intro"]}</div><div class="intro-aside">{aside}</div></div>']
 
     def act(a):
@@ -388,13 +398,13 @@ def render(folder, inquiry, parts, md):
         elif t == "explain": content = explain_html(a, md, aid)
         elif t == "reflect":
             content = (f'<div class="reflect" data-predictions=\'{esc(json.dumps(a["predictions"]))}\'><p class="task">{inline(md, a["prompt"])}</p>'
-                       f'<ul class="my-predictions"></ul><p class="revise"><strong>Muuttaisitko ennustettasi?</strong> '
-                       f'<label><input type="radio" name="{esc(aid)}-rev" value="ei"> En</label> <label><input type="radio" name="{esc(aid)}-rev" value="kylla"> Kyllä</label></p>'
-                       f'<textarea rows="3" aria-label="Miksi?" placeholder="Miksi?"></textarea></div>')
+                       f'<ul class="my-predictions"></ul><p class="revise"><strong>{T("inquiry.revise")}</strong> '
+                       f'<label><input type="radio" name="{esc(aid)}-rev" value="ei"> {T("inquiry.revise_no")}</label> <label><input type="radio" name="{esc(aid)}-rev" value="kylla"> {T("inquiry.revise_yes")}</label></p>'
+                       f'<textarea rows="3" aria-label="{T("inquiry.why")}" placeholder="{T("inquiry.why")}"></textarea></div>')
         elif t == "experiment": content = experiment_html(a, md, lid)
         elif t == "interpret":
             src = a.get("source")
-            badge = (f'<p class="source" data-source="{src}"><strong>{SOURCES[src]}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
+            badge = (f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
             content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory": content = "".join(parts["sections"][s] for s in a["sections"])
         elif t == "sim":
@@ -404,8 +414,8 @@ def render(folder, inquiry, parts, md):
         else: content = ""
         hints = hints_html([md(h) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         if a.get("optional"):                          # a closed box, named, that a student may open or leave
-            name = esc(a.get("title") or OPTIONAL_NAMES[t])
-            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">Valinnainen</span> {name}</summary>'
+            name = esc(a.get("title") or T(f"inquiry.optional_{t}"))
+            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">{T("inquiry.optional")}</span> {name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""
         return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
@@ -421,7 +431,7 @@ def render(folder, inquiry, parts, md):
         return "".join(out)
 
     toc, n = [], 0
-    for sid, title in STAGES:
+    for sid, title in stages():
         items = by_stage[sid]
         if not items: continue
         n += 1
@@ -432,18 +442,18 @@ def render(folder, inquiry, parts, md):
         else: inner = flow(items)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
-            inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">Tee ennusteet ennen tutkimista</span> '
-                     f'<span class="fold-status" data-n="{k}">{k} {"kysymys" if k == 1 else "kysymystä"}</span></summary>'
+            inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
+                     f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
                      f'<div class="fold-body">{inner}</div></details>')
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
         toc.append(toc_link(sid, n, title))
-        if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit" class="toc-sub"><span class="toc-label">{EXIT_TITLE}</span></a>')
+        if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit" class="toc-sub"><span class="toc-label">{exit_title()}</span></a>')
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
         text = md(ex_act["text"]) if ex_act and ex_act.get("text") else ""
         aid = ex_act["id"] if ex_act else "harjoitukset"
-        body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{EXERCISES_TITLE}</h2>'
+        body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
-        toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{EXERCISES_TITLE}</span></a>')
+        toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{exercises_title()}</span></a>')
     return "\n".join(body), "".join(toc)
 
 

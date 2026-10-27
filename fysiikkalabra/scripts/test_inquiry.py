@@ -282,7 +282,7 @@ check("sim activity: a long text from before 2026-10-26 goes behind one box", le
 # a lesson without inquiry.json renders in the classic layout: build a copy of fy3-2 without the file in a temporary root
 with tempfile.TemporaryDirectory() as tmp:
     troot = pathlib.Path(tmp)
-    for n in ("templates", "curriculum.json", "glossary.json"):
+    for n in ("templates", "lang", "curriculum.json", "glossary.json"):
         src = ROOT / n
         if src.is_dir(): shutil.copytree(src, troot / n)
         elif src.exists(): shutil.copy(src, troot / n)

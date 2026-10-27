@@ -36,14 +36,14 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');   // controls first, then the readout
     readout = p.createDiv('').parent('sim-root').class('readout');
     const l1 = p.createElement('label').parent(controls);
-    lSel = p.createSpan('Taivaankappale').parent(l1);
+    lSel = p.createSpan(__('taivaankappale')).parent(l1);
     sel = p.createSelect().parent(l1);
     BODIES.forEach(([name]) => sel.option(name));
     sel.selected('Maa');
     const l2 = p.createElement('label').parent(controls);
     lM = p.createSpan('').parent(l2);
     sM = p.createSlider(1, 100, 10, 1).parent(l2);             // massa m (kg)
-    p.createP('Massa on sama kaikkialla. Vain paino muuttuu, koska vuorovaikutus taivaankappaleen kanssa on erilainen.')
+    p.createP(__('massa_on_sama'))
       .parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -59,11 +59,11 @@ new p5((p) => {
     const [body, g] = BODIES[idx];
     const G = m * g;                                           // weight in newtons
     const stretch = SPRING.maxLen * G / G_FULL;                // spring stretch (px), proportional to the weight G
-    lM.html(`Massa $m = ${m}\\,\\text{kg}$`);
+    lM.html(__(`massa`, {m: m}));
     const chartFull = m * G_MAX;                                // bar chart full scale: this mass on Jupiter
-    readout.html(`<strong>Massa $m = ${m}\\,\\text{kg}$</strong> (sama kaikkialla)<br>$g = ${tx(g, 2)}\\,\\text{m/s}^2$ (${body})` +
+    readout.html(__(`massa_sama_kaikkialla`, {m: m, g: tx(g, 2), body: __v(body)}) +
                  `<br><strong>$G = mg = ${tx(G, 1)}\\,\\text{N}$</strong>` +
-                 `<br>Palkkikaavion asteikko $0\\text{–}${tx(chartFull, chartFull < 100 ? 1 : 0)}\\,\\text{N}$ on tämän massan paino Jupiterissa.`);
+                 __(`palkkikaavion_asteikko_on`, {chartfull: tx(chartFull, chartFull < 100 ? 1 : 0)}));
     const arrow = ARROW_FULL * G / G_FULL;                     // weight arrow length (px), purely proportional to G
     const bars = BODIES.map(([, gg]) => (m * gg / chartFull) * (BARS.h - 30));   // bar heights (px), proportional to the weight at this mass
     window.simState = { m, body, g, G, stretch, arrow, bars, chartFull };
@@ -181,17 +181,17 @@ new p5((p) => {
       if (on) { p.stroke(120, 20, 20); p.strokeWeight(2); p.noFill(); p.rect(x, base - h, bw, h, 3, 3, 0, 0); }
       planet(i, x + bw / 2, base + 13, on ? 10 : 8, on);
       p.noStroke(); p.fill(on ? 20 : 70); p.textAlign(p.CENTER, p.BASELINE); p.textSize(ts(12)); p.textStyle(on ? p.BOLD : p.NORMAL);
-      p.text(`$\\text{${name}}$`, x + bw / 2, 336 + 0.75 * ts(12));
+      p.text(`$\\text{${__v(name)}}$`, x + bw / 2, 336 + 0.75 * ts(12));
       const vt = `$${tx(val, val < 100 ? 1 : 0)}\\,\\text{N}$`;                  // value label, shrunk if it would touch the neighbour's label
       if (p.textWidth(vt) > bw + 12) p.textSize(Math.max(10 * k, ts(12) * (bw + 12) / p.textWidth(vt)));   // never below 10 rendered px
       p.fill(on ? 120 : 70, on ? 20 : 70, on ? 20 : 70); p.text(vt, x + bw / 2, base - h - 6); p.textStyle(p.NORMAL);
     });
     p.noStroke(); p.fill(26, 77, 46); p.textAlign(p.CENTER, p.BASELINE); p.textSize(ts(13));   // title: shrunk to fit inside the canvas when scaled down
-    const title = '$\\text{Sama massa, paino eri paikoissa}$', titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
+    const title = __('sama_massa_paino'), titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
     p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
     p.fill(60); p.textSize(ts(11));                               // scale line: short, the explanation is in the readout
-    p.textAlign(p.LEFT); p.text(`$\\text{asteikko } 0\\text{–}${tx(chartFull, chartFull < 100 ? 1 : 0)}\\,\\text{N}$`, BARS.x + 9, top - ts(4));
+    p.textAlign(p.LEFT); p.text(__(`asteikko_0`, {chartfull: tx(chartFull, chartFull < 100 ? 1 : 0)}), BARS.x + 9, top - ts(4));
   }
 
   function planet(i, x, y, r, on) {                            // small shaded disc of the body, in its own colour
@@ -210,7 +210,7 @@ new p5((p) => {
 
   function drawLegend(idx) {                                   // colour key in a pill on the ground, bottom right
     p.textSize(ts(11)); p.textAlign(p.LEFT, p.CENTER);
-    const items = [['$\\text{paino } G$', RED], ['$\\text{massa } m$', [150, 156, 164]], [`$\\text{${BODIES[idx][0]}}$`, null]], y = 386, sw = 16 + 5, gap = 12;
+    const items = [[__('paino'), RED], [__('massa_2'), [150, 156, 164]], [`$\\text{${BODIES[idx][0]}}$`, null]], y = 386, sw = 16 + 5, gap = 12;
     const w = items.reduce((s, [t]) => s + sw + p.textWidth(t), 0) + gap * (items.length - 1) + 16, h = ts(11) + 8;
     let x = 594 - w + 8;
     p.noStroke(); p.fill(255, 235); p.rect(594 - w, y - h / 2, w, h, 6);

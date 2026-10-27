@@ -11,15 +11,18 @@
    5. Explanations: model answer and self-assessment criteria once the student has written an answer of their own; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
-   7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them. */
+   7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them.
+   Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
+  const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
+  const msg = (k, v) => { const s = (L10N.js || {})[k]; return typeof s === 'string' ? s.replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m)) : k; };   // lang/<lang>.json "js"
   const key = (id) => 'fl:' + location.pathname.split('/').pop() + ':' + id;
   const store = { get(id) { try { return JSON.parse(localStorage.getItem(key(id))); } catch (e) { return null; } },
                   set(id, v) { try { localStorage.setItem(key(id), JSON.stringify(v)); } catch (e) { /* private mode, blocked storage */ } } };
   const fi = (x) => {
     if (typeof x !== 'number' || !Number.isFinite(x)) return String(x);
     const a = Math.abs(x), s = a >= 100 ? x.toFixed(0) : a >= 10 ? x.toFixed(1) : a >= 1 ? x.toFixed(2) : x.toPrecision(3);
-    return s.replace('.', ',').replace('-', '−');
+    return s.replace('.', (L10N.format || {}).decimal || ',').replace('-', '−');
   };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
@@ -34,7 +37,7 @@
     const show = (i) => {
       feedbacks.forEach((f) => { f.hidden = f.dataset.for !== String(i); });
       const ok = radios[i].dataset.correct === '1';
-      out.textContent = ok ? 'Oikein.' : 'Ei aivan.'; out.dataset.state = ok ? 'ok' : 'no';
+      out.textContent = ok ? msg('correct') : msg('not_quite'); out.dataset.state = ok ? 'ok' : 'no';
       fs.dataset.state = ok ? 'ok' : 'no';
     };
     const commit = (i, silent) => {
@@ -50,7 +53,7 @@
     };
     btn.addEventListener('click', () => {
       const i = radios.findIndex((r) => r.checked);
-      if (i < 0) { out.textContent = 'Valitse ensin vaihtoehto.'; out.dataset.state = 'hint'; return; }
+      if (i < 0) { out.textContent = msg('choose_first'); out.dataset.state = 'hint'; return; }
       commit(i, false);
     });
     radios.forEach((r) => r.addEventListener('change', () => { if (!reveal) { feedbacks.forEach((f) => { f.hidden = true; }); out.textContent = ''; delete out.dataset.state; delete fs.dataset.state; } }));
@@ -70,7 +73,7 @@
     if (!status || !n) return;
     const update = () => {
       const done = sets.filter((f) => f.dataset.committed).length, shown = sets.filter((f) => f.dataset.state).length;
-      status.textContent = done ? `vastattu ${done}/${n}` + (shown ? ` · palaute ${shown}/${n}` : '') : `${n} ${n === 1 ? 'kysymys' : 'kysymystä'}`;
+      status.textContent = done ? msg('fold_answered', { done, n }) + (shown ? msg('fold_feedback', { shown, n }) : '') : msg(n === 1 ? 'fold_question_one' : 'fold_question_many', { n });
     };
     bus.addEventListener('fl:answered', update); bus.addEventListener('fl:measured', update); update();
   });
@@ -99,7 +102,7 @@
     const act = activeExp.ex.closest('.activity'); act.classList.add('is-active');
     if (simContext) {
       const title = act.querySelector('h3')?.textContent.trim() || '';
-      simContext.innerHTML = 'Käytössä: <a></a>'; const a = simContext.querySelector('a'); a.href = '#' + activeExp.id; a.textContent = title;
+      simContext.innerHTML = msg('sim_in_use'); const a = simContext.querySelector('a'); a.href = '#' + activeExp.id; a.textContent = title;
     }
   };
   const placeSim = () => {
@@ -112,8 +115,8 @@
     }
     const { ex, id } = activeExp;
     if (!ex.contains(simEl)) ex.querySelector('.exp-controls').before(simEl);
-    const title = ex.closest('.activity').querySelector('h3')?.textContent || 'kokeeseen';
-    simHome.innerHTML = 'Simulaatio on nyt kokeen kohdalla: <a></a>.';
+    const title = ex.closest('.activity').querySelector('h3')?.textContent || msg('sim_moved_default');
+    simHome.innerHTML = msg('sim_moved');
     const link = simHome.querySelector('a'); link.href = '#' + id; link.textContent = title;
     simHome.hidden = false;
   };
@@ -146,35 +149,35 @@
         });
       };
       if (!A) {
-        say('Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.');
+        say(msg('exp_no_sim'));
         if (question) question.hidden = false;
         measured[id] = Infinity; bus.dispatchEvent(new CustomEvent('fl:measured', { detail: { id, count: Infinity } }));   // nothing to wait for
         return;
       }
       const missing = Object.keys(initial).concat(locked, [vary]).filter((k) => !A.params || !A.params[k]);
-      if (missing.length) { say('Simulaatio ei tue tätä koetta (parametri ' + missing.join(', ') + ').'); return; }
+      if (missing.length) { say(msg('exp_unsupported', { params: missing.join(', ') })); return; }
       start.disabled = false;
       start.addEventListener('click', () => {
         A.set(initial); locked.forEach((k) => A.lock(k, true)); A.lock(vary, false);
         armed = true; rec.disabled = false;
-        say(`Alkutila asetettu. ${lockedNames.length ? 'Vakiona: ' + lockedNames.join(', ') + '. ' : ''}Säädä ${varyName}, anna simulaation pyöriä ja paina Kirjaa mittaus.`);
+        say(msg('exp_started', { locked: lockedNames.length ? msg('exp_started_locked', { names: lockedNames.join(', ') }) : '', vary: varyName }));
         bringSim(ex, id);
         if (besideLab()) ex.closest('.activity').scrollIntoView({ behavior: 'smooth', block: 'start' });   // the sim is level with it
         else rec.scrollIntoView({ behavior: 'smooth', block: 'end' });
       });
       rec.addEventListener('click', () => {
-        if (!armed) { say('Aseta ensin alkutila.'); return; }
+        if (!armed) { say(msg('exp_start_first')); return; }
         const S = A.get() || {};
-        if (!(vary in S) || measure.some((k) => !(k in S))) { say('Simulaatio ei anna mitattavaa arvoa.'); return; }
+        if (!(vary in S) || measure.some((k) => !(k in S))) { say(msg('exp_no_value')); return; }
         const row = { vary: S[vary] };
         measure.forEach((k) => { row[k] = S[k]; });
-        if (rows.length && rows[rows.length - 1].vary === row.vary) { say(`Sama ${varyName} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.`); return; }
+        if (rows.length && rows[rows.length - 1].vary === row.vary) { say(msg('exp_same_value', { vary: varyName })); return; }
         rows.push(row); render(); announce();
-        say(rows.length < min ? `Mittaus ${rows.length} kirjattu. Muuta ${varyName} ja kirjaa vielä ${min - rows.length}.` : `Mittaus ${rows.length} kirjattu. Vertaa tuloksia ennusteeseesi.`);
+        say(rows.length < min ? msg('exp_recorded_more', { n: rows.length, vary: varyName, left: min - rows.length }) : msg('exp_recorded_enough', { n: rows.length }));
       });
       reset.addEventListener('click', () => {
         locked.forEach((k) => A.lock(k, false)); A.reset(); rows = []; armed = false; rec.disabled = true; render(); announce();
-        say('Simulaatio ja taulukko nollattu.');
+        say(msg('exp_reset'));
       });
     });
   });
@@ -211,7 +214,7 @@
     let cols = []; try { cols = JSON.parse(tb.dataset.cols || '[]'); } catch (e) { cols = []; }
     const rows = [...tb.querySelectorAll('tbody tr')].map((tr) => [...tr.children].map((td) => td.textContent.trim()).join('\t'));
     const title = act.querySelector('h3')?.textContent.trim() || eid;
-    return [title, cols.join('\t'), ...(rows.length ? rows : ['(ei mittauksia)'])].join('\n');
+    return [title, cols.join('\t'), ...(rows.length ? rows : [msg('copy_no_rows')])].join('\n');
   };
   document.querySelectorAll('.explain').forEach((ex) => {
     const btn = ex.querySelector('.show-model'), model = ex.querySelector('.model'), ta = ex.querySelector('textarea');
@@ -224,14 +227,14 @@
     ta.addEventListener('input', () => { store.set(id, { text: ta.value }); if (status && status.textContent && ta.value.trim().length >= MIN_CHARS && !missing().length) say(''); });
     btn.addEventListener('click', () => {
       const m = missing();
-      if (m.length) { say('Tee ensin mittaukset: ' + m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') + '. Johtopäätös tehdään omista havainnoista.'); return; }
-      if (ta.value.trim().length < MIN_CHARS) { say('Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.'); ta.focus(); return; }
+      if (m.length) { say(msg('explain_measure_first', { experiments: m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') })); return; }
+      if (ta.value.trim().length < MIN_CHARS) { say(msg('explain_write_first')); ta.focus(); return; }
       say(''); model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.();
     });
     if (copy) copy.addEventListener('click', () => {
-      const title = ex.closest('.activity')?.querySelector('h3')?.textContent.trim() || 'Johtopäätös';
-      const text = [document.title, '', ...after.map(tableText).filter(Boolean).flatMap((t) => [t, '']), title + ':', ta.value.trim() || '(ei vielä kirjoitettu)'].join('\n');
-      copyText(text, (ok) => say(ok ? 'Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.' : 'Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.'));
+      const title = ex.closest('.activity')?.querySelector('h3')?.textContent.trim() || msg('copy_conclusion');
+      const text = [document.title, '', ...after.map(tableText).filter(Boolean).flatMap((t) => [t, '']), title + ':', ta.value.trim() || msg('copy_not_written')].join('\n');
+      copyText(text, (ok) => say(ok ? msg('copy_done') : msg('copy_failed')));
     });
   });
 
@@ -250,9 +253,9 @@
         if (saved && fs) {
           const ok = fs.querySelectorAll('input[type=radio]')[saved.choice]?.dataset.correct === '1';
           const revealed = fs.dataset.state !== undefined;
-          a.innerHTML = `<strong>Ennustit:</strong> ${saved.text}` + (saved.why ? ` <em>(${saved.why})</em>` : '') +
-            (revealed ? ` — ${ok ? 'aineisto tukee ennustettasi.' : 'aineisto ei tue ennustettasi.'}` : ' — tee vielä mittaukset, niin näet, pitikö ennuste.');
-        } else { a.innerHTML = `Et ole vielä vastannut: <a href="#${pid}">siirry ennusteeseen</a>.`; }
+          a.innerHTML = msg('reflect_you_predicted', { text: saved.text }) + (saved.why ? ` <em>(${saved.why})</em>` : '') +
+            (revealed ? ` — ${ok ? msg('reflect_supported') : msg('reflect_not_supported')}` : msg('reflect_measure_first'));
+        } else { a.innerHTML = msg('reflect_not_answered', { href: '#' + pid }); }
         li.appendChild(a); list.appendChild(li);
       });
     };

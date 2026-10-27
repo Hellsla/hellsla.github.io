@@ -17,7 +17,20 @@
    Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
    It also defines window.defineSimAdapter (docs/inquiry.md, "Simulation interface"): a sim that calls it once
    from setup exposes a small adapter that guided investigations (inquiry.js) use to read the state, set
-   parameters, lock controls, reset and pause. The physics stays in the sim; window.simState is untouched. */
+   parameters, lock controls, reset and pause. The physics stays in the sim; window.simState is untouched.
+   Texts: the page's #fl-strings block (build.py, from lang/<lang>.json) carries the simulation's own block of
+   "sims"; __('key') and __(`key`, {name: value}) give the sim its buttons, labels and readouts (scripts/i18n.py), and
+   __v(value) shows an identifier the sim also uses as a value (a material, a body) from that block's "values". An
+   option of a select whose label is such a value shows it the same way and keeps its value. */
+(() => {
+  let S = {};
+  try { S = JSON.parse(document.getElementById('fl-strings').textContent) || {}; } catch (e) { S = {}; }
+  const sim = S.sim || {}, values = sim.values || {}, own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+  const fill = (s, v) => s.replace(/\{\{(\w+)\}\}/g, (m, n) => (v && own(v, n) ? String(v[n]) : m));
+  window.__ = (key, v) => (typeof sim[key] === 'string' ? fill(sim[key], v) : key);
+  window.__v = (x) => (own(values, x) ? values[x] : x);
+  window.flMsg = (key) => { const s = (S.js || {})[key]; return typeof s === 'string' ? s : key; };
+})();
 (() => {
   const Base = window.p5;
   if (!Base || Base.__fysiikkalabra) return;
@@ -28,7 +41,7 @@
     let box = null;
     [...root.children].forEach((el) => {
       if (!(el.tagName === 'P' && el.classList.contains('note') && el.textContent.trim().split(/\s+/).length > 15)) { box = null; return; }
-      if (!box) { box = document.createElement('details'); box.className = 'note'; box.innerHTML = '<summary>Mallin oletukset ja selitys</summary>'; el.before(box); }
+      if (!box) { box = document.createElement('details'); box.className = 'note'; box.innerHTML = '<summary>' + window.flMsg('sim_note') + '</summary>'; el.before(box); }
       box.appendChild(el);
     });
   };
@@ -61,6 +74,15 @@
   class Embedded extends Base {
     constructor(sketch, node) {
       super((p) => {
+        const createSelect = p.createSelect;     // an option labelled with one of the sim's values: shown translated, value kept
+        p.createSelect = function (...a) {
+          const sel = createSelect.apply(this, a), option = sel && sel.option;
+          if (option) sel.option = function (name, value) {
+            const shown = typeof name === 'string' ? window.__v(name) : name;
+            return shown === name ? option.apply(this, arguments) : option.call(this, shown, value === undefined ? name : value);
+          };
+          return sel;
+        };
         sketch(p);
         const setup = p.setup, draw = p.draw;
         let s = 1;

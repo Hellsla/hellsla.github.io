@@ -75,17 +75,17 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    btn = p.createButton('Lämmitä').parent(controls); btn.elt.addEventListener('click', go);
-    const bR = p.createButton('Alusta').parent(controls); bR.elt.addEventListener('click', restart);
+    btn = p.createButton(__('lammita')).parent(controls); btn.elt.addEventListener('click', go);
+    const bR = p.createButton(__('alusta')).parent(controls); bR.elt.addEventListener('click', restart);
     [sQ, lQ] = slider(controls, 200, 1000, 500, 50);                     // heat given at constant pressure (J)
-    const ls = p.createElement('label').parent(controls); p.createSpan('Männän paluu').parent(ls); sel = p.createSelect().parent(ls);
-    sel.option('samassa paineessa', 'sama paine'); sel.option('jäähdytä ensin', 'jäähdytys ensin');
+    const ls = p.createElement('label').parent(controls); p.createSpan(__('mannan_paluu')).parent(ls); sel = p.createSelect().parent(ls);
+    sel.option(__('samassa_paineessa'), 'sama paine'); sel.option(__('jaahdyta_ensin'), 'jäähdytys ensin');
     [sP, lP] = slider(controls, 40, 180, 100, 10);                       // pressure after cooling, B only (kPa)
     for (const e of [sQ.elt, sP.elt, sel.elt]) { e.addEventListener('input', restart); e.addEventListener('change', restart); }
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sV = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.4], ['normaali', 1], ['nopea', 2]]) sV.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sV = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.4], [__('normaali'), 1], [__('nopea'), 2]]) sV.option(txt, v);
     sV.selected('1');                                                  // pace only; every quantity follows simulated time
-    p.createP('Oranssi: kaasun tekemä työ. Sininen: kaasuun tehty työ. Sama väri, sama energia.').parent('sim-root').class('note');
+    p.createP(__('oranssi_kaasun_tekema')).parent('sim-root').class('note');
     restart(); p.textFont('Arial');
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -105,9 +105,9 @@ new p5((p) => {
     const eta = done && Q1 > 0 ? 100 * W / Q1 : 0, returning = !['alku', 'lammitys', 'ylhaalla'].includes(phase);
 
     // controls: labels, hidden p₂ in mode A, main button text
-    lQ.html(`Lämpö $Q = ${P.Q}\\,\\text{J}$`); lP.html(`Paine jäähdytyksen jälkeen $p_2 = ${P.p2}\\,\\text{kPa}$`);
+    lQ.html(__(`lampo`, {p: P.Q})); lP.html(__(`paine_jaahdytyksen_jalkeen`, {p: P.p2}));
     lP.elt.parentElement.style.display = P.B ? '' : 'none';
-    const bt = phase === 'alku' ? 'Lämmitä' : phase === 'ylhaalla' ? 'Palauta mäntä' : phase === 'valmis' ? 'Uusi kierros' : (phase === 'lammitys' ? 'Lämmitetään…' : 'Palautetaan…');
+    const bt = phase === 'alku' ? __('lammita') : phase === 'ylhaalla' ? __('palauta_manta') : phase === 'valmis' ? __('uusi_kierros') : (phase === 'lammitys' ? __('lammitetaan') : __('palautetaan'));
     if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
     btn.elt.disabled = running();
 
@@ -122,13 +122,13 @@ new p5((p) => {
 
     // readout: at most four short lines
     const J = (x) => `${Math.round(x)}\\,\\text{J}`;
-    const lines = [`Lämmitys: $p = ${P1}\\,\\text{kPa}$, $\\Delta V = \\mathbf{${tx(dVh, 2)}}\\,\\text{l}$`,     // W_k is left for the student to compute (Koe 1)
+    const lines = [__(`lammitys`, {p1: P1, dvh: tx(dVh, 2)}),     // W_k is left for the student to compute (Koe 1)
       `$Q = ${J(Qh)}$, $\\Delta U = ${J(dU)}$`];
-    if (!returning) lines.push(phase === 'ylhaalla' ? 'Mäntä on ylhäällä. Palauta se alas.' : 'Lämmitä kaasua kuumalla levyllä.');
+    if (!returning) lines.push(phase === 'ylhaalla' ? __('manta_on_ylhaalla') : __('lammita_kaasua_kuumalla'));
     else {
-      lines.push(`Kierros${done ? '' : ' kesken'}: $Q_1 = ${J(Q1)}$, $Q_2 = ${J(Q2)}$`);
+      lines.push(__(`kierros`, {done: done ? '' : __('kesken'), q1: J(Q1), q2: J(Q2)}));
       lines.push(done ? `$W = Q_1 - Q_2 = \\mathbf{${Math.round(W)}}\\,\\text{J}$, $\\eta = W/Q_1 = \\mathbf{${Math.round(eta)}}\\,\\%$`
-        : `Nettotyö tähän asti $W = ${J(W)}$`);
+        : __(`nettotyo_tahan_asti`, {w: J(W)}));
     }
     readout.html(lines.join('<br>'));
     window.simState = { paluu: sel.value(), Qin: P.Q, p1: P1, p2: P.p2, V1, V2: P.V2, phase, u, done: done ? 1 : 0, V, p: pr,
@@ -148,7 +148,7 @@ new p5((p) => {
       p.noFill(); p.stroke(255, 255, 255, 170); p.strokeWeight(1.5); p.beginShape();
       for (let x = x0 - 10; x <= x1 + 10; x += 3) p.vertex(x, yb + 14 + 2 * Math.sin(x / 6 - 3 * t)); p.endShape();
     } else grect(x0 - 14, yb + 2, x1 - x0 + 28, 26, [[205, 205, 210], [160, 160, 168]], false, 3);
-    lab(`$\\text{${heat ? 'kuuma levy' : cool ? 'kylmä vesi' : 'eriste'}}$`, cx, yb + 28 + ts(16), 'c', ts(12));
+    lab(`$\\text{${heat ? __('kuuma_levy') : cool ? __('kylma_vesi') : __('eriste')}}$`, cx, yb + 28 + ts(16), 'c', ts(12));
     // gas: colour from pV (cold blue → warm orange), particles faster when pV is larger
     const f = Math.min(1, Math.max(0, (pr * V - 40) / 560)), gc = mix([90, 140, 225], [245, 130, 40], f);
     p.noStroke(); p.fill(...gc, 70); p.rect(x0, gt, x1 - x0, yb - gt);
@@ -284,7 +284,7 @@ new p5((p) => {
       lab(`$${tc('Q', COL.Q)}$`, BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
       lab(`$${tc('\\Delta U', COL.dU)} + ${tc('W_\\text{k}', COL.Wk)}$`, BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
     }
-    lab(done ? '$\\text{kierros}$' : '$\\text{lämmitys}$', BAR.x0, y2 + h + fz + 8, 'l', fz);
+    lab(done ? __('kierros_2') : __('lammitys_2'), BAR.x0, y2 + h + fz + 8, 'l', fz);
   }
 
   // every canvas text is one $…$ string drawn by KaTeX at p.text's place; its box (measured by p.textWidth) goes to simState.labels

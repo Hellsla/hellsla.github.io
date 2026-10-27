@@ -29,7 +29,7 @@ KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
 T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
 if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
 for f in ("curriculum.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content/_gold"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
+for d in ("scripts", "templates", "content/_gold", "lang"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
 shutil.copytree(SRC / "assets", T / "assets", ignore=shutil.ignore_patterns("fy4"))   # FY4 starts from scratch here, whatever the real project has
 c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized", None)
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
@@ -83,6 +83,8 @@ for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answer
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
 shutil.copy(src / "sim.js", S / "sim.js"); (S / "sim.css").write_text("#sim-root canvas { border-radius: 6px; }\n")
+lang = json.loads((T / "lang/fi.json").read_text()); lang["sims"]["fy4-1"] = lang["sims"]["fy3-2"]   # the copied sim keeps its texts
+(T / "lang/fi.json").write_text(json.dumps(lang, ensure_ascii=False, indent=2) + "\n")
 (T / "tests/sims/fy4-1.json").write_text((T / "tests/sims/fy3-2.json").read_text())
 (T / "assets/pics/fy4/kalteva-taso.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"><path d="M40 260 L560 260 L560 80 Z" fill="none" stroke="#333" stroke-width="4"/></svg>\n')
 md = (L / "lesson.md").read_text()

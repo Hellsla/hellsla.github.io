@@ -34,7 +34,7 @@ and fails if the change was not what the row says. A reviewer whose last verdict
 """
 import datetime, difflib, hashlib, json, os, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, inquiry
+import courses, i18n, inquiry
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy")
@@ -94,7 +94,20 @@ def git(*args, binary=False):
     return r.stdout if r.returncode == 0 else None
 
 
-class WorkTree:
+class Source:
+    def source(self, rel, binary=False):
+        """What the reviews judge of a file: a simulation's JavaScript with its texts from lang/fi.json put back in
+        place (i18n.resolve_js), so moving a text to the language file changes nothing here, while changing it there
+        changes the lesson like any other content change; every other file as it is."""
+        data = self.read(rel, binary)
+        if data is None or binary or not rel.endswith(".js"): return data
+        lang = self.read(f"lang/{i18n.SOURCE}.json")
+        try: table = json.loads(lang) if lang else {}
+        except json.JSONDecodeError: table = {}
+        return i18n.resolve_js(data, i18n.sim_strings(i18n.sim_key(rel), table=table))
+
+
+class WorkTree(Source):
     """Reads a lesson's sources from the working tree (paths relative to ROOT)."""
     def read(self, rel, binary=False):
         f = ROOT / rel
@@ -105,7 +118,7 @@ class WorkTree:
         return sorted(p.relative_to(ROOT).as_posix() for p in d.rglob("*") if p.is_file()) if d.is_dir() else []
 
 
-class Commit:
+class Commit(Source):
     """Reads the same sources as they were in a git commit."""
     def __init__(self, sha): self.sha = sha
     def read(self, rel, binary=False): return git("show", f"{self.sha}:./{rel}", binary=binary)   # ./ is relative to ROOT, not the repository
@@ -135,7 +148,7 @@ def hash_of(folder, src):
     """The content hash as `src` sees the lesson (None if the lesson did not exist there)."""
     h, found = hashlib.sha256(), False
     for name, rel, binary in entries(folder, src):
-        data = src.read(rel, binary)
+        data = src.source(rel, binary)
         if data is None: continue
         found = True
         h.update(name.encode() + b"\0" + (data if binary else normalized(data, name).encode()) + b"\0")
@@ -382,7 +395,7 @@ def changes(folder, base):
     paths = sorted({(rel, b) for _, rel, b in entries(folder, old) + entries(folder, new)})
     cats, diff, n = set(), [], 0
     for rel, binary in paths:
-        ra, rb = old.read(rel, binary), new.read(rel, binary)
+        ra, rb = old.source(rel, binary), new.source(rel, binary)
         a, b = _view(ra, rel, binary), _view(rb, rel, binary)
         if a == b: continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue

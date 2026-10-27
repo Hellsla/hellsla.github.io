@@ -27,10 +27,10 @@ new p5((p) => {
     [sF, lF] = slider(controls, 0, 100, 60, 1);      // voima F (N)
     [sS, lS] = slider(controls, 1, 20, 10, 0.5);     // matka s (m)
     [sT, lT] = slider(controls, 1, 20, 5, 0.5);      // aika t (s)
-    btn = p.createButton('Vedä').parent(controls);
+    btn = p.createButton(__('veda')).parent(controls);
     btn.mousePressed(() => { u = 0; running = true; });
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                         // pace only: the box covers s in the simulated time t
     p.textFont('Arial');
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset the three sliders
@@ -49,9 +49,9 @@ new p5((p) => {
     if (running) { u += Math.min(p.deltaTime, 100) / 1000 * speed / t; if (u >= 1) { u = 1; running = false; } }
     const Wdone = W * u;                   // constant force: work grows linearly with distance
 
-    lF.html(`Voima $F = ${F}\\,\\text{N}$`); lS.html(`Matka $s = ${tx(s, 1)}\\,\\text{m}$`); lT.html(`Aika $t = ${tx(t, 1)}\\,\\text{s}$`);
-    readout.html(`<strong>$W = Fs = ${tj(W)}\\,\\text{J}$</strong><br><strong>$P = W/t = ${tx(P, 1)}\\,\\text{W}$</strong>` +
-                 `<br><small>Tehty työ tähän mennessä: $${tj(Wdone)}\\,\\text{J}$, aikaa kulunut $${tx(u * t, 1)}\\,\\text{s}$</small>`);
+    lF.html(__(`voima`, {f: F})); lS.html(__(`matka`, {s: tx(s, 1)})); lT.html(__(`aika`, {t: tx(t, 1)}));
+    readout.html(__(`fs_p_t`, {w: tj(W), p: tx(P, 1)}) +
+                 __(`tehty_tyo_tahan`, {wdone: tj(Wdone), u: tx(u * t, 1)}));
     window.simState = { F, s, t, W, P, u, Wdone, running, tElapsed: u * t, speed };
 
     // The canvas is scaled down by CSS on narrow screens; enlarge canvas text so it stays near 11 px or more.
@@ -82,7 +82,7 @@ new p5((p) => {
     p.noStroke(); p.fill(90); p.textSize(ts(12)); p.textAlign(p.CENTER);
     p.text('$s\\ (\\text{m})$', G.x + G.w - 10, G.y + G.h + ts(30)); p.text(`$${tx(s, 1)}$`, xS, G.y + G.h + ts(15));
     p.textAlign(p.RIGHT); p.text('$F\\ (\\text{N})$', G.x + ts(20), G.y - 8); p.text(`$${F}$`, G.x - 6, yF + 4);
-    p.textAlign(p.RIGHT); p.fill(26, 77, 46); p.textSize(ts(13)); p.text('$W = \\text{pinta-ala}$', G.x + G.w + 10, Math.max(G.y - 8 - ts(14), ts(13) + 6));   // clear of the canvas top on a phone
+    p.textAlign(p.RIGHT); p.fill(26, 77, 46); p.textSize(ts(13)); p.text(__('pinta_ala'), G.x + G.w + 10, Math.max(G.y - 8 - ts(14), ts(13) + 6));   // clear of the canvas top on a phone
 
     // progress bar: filled fraction of the total work
     const barX = 20, barY = 330, barW = 560, barH = 16;

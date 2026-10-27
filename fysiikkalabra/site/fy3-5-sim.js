@@ -117,9 +117,9 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     const button = (text, fn) => { const b = p.createButton(text).parent(controls); b.elt.addEventListener('click', fn); return b; };
-    button('Työnnä mäntää', push);
-    button('Vedä ulos', () => { if (X < L0) move = 1; });
-    button('Alkuun', () => { restart(); update(); });
+    button(__('tyonna_mantaa'), push);
+    button(__('veda_ulos'), () => { if (X < L0) move = 1; });
+    button(__('alkuun'), () => { restart(); update(); });
     const select = (id, name, opts, val) => {
       const box = p.createDiv('').parent(controls).style('display', 'flex').style('flex-direction', 'column')
         .style('flex', '1 1 9rem').style('font-size', '.9rem');
@@ -128,12 +128,12 @@ new p5((p) => {
       for (const [t, v] of opts) s.option(t, v);
       s.selected(val); return s;
     };
-    selPush = select('fy3-5-push', 'Männän nopeus', [['hidas', 'hidas'], ['nopea', 'nopea']], 'hidas');
-    selWall = select('fy3-5-wall', 'Seinät', [['eristetty', 'eristetty'], ['johtava', 'johtava']], 'eristetty');
-    selAnim = select('fy3-5-speed', 'Animaatio', [['hidas (0,5×)', '0.5'], ['normaali (1×)', '1'], ['nopea (3×)', '3']], '1');
+    selPush = select('fy3-5-push', __('mannan_nopeus'), [[__('hidas'), 'hidas'], [__('nopea'), 'nopea']], 'hidas');
+    selWall = select('fy3-5-wall', __('seinat'), [[__('eristetty'), 'eristetty'], [__('johtava'), 'johtava']], 'eristetty');
+    selAnim = select('fy3-5-speed', __('animaatio'), [[__('hidas_0_5'), '0.5'], [__('normaali_1'), '1'], [__('nopea_3'), '3']], '1');
     selAnim.changed(() => { speed = Number(selAnim.value()); });
     readout = p.createDiv('').parent('sim-root').class('readout');
-    p.createP('Väri kertoo hiukkasen nopeuden; vihreä kehä: hiukkanen kimpoaa männästä nopeampana.').parent('sim-root').class('note');
+    p.createP(__('vari_kertoo_hiukkasen')).parent('sim-root').class('note');
     window.simAdvance = (s) => { advance(s); return update(); };
     window.simRestart = () => { restart(); update(); };
     window.simMove = (dir) => { if (dir < 0) push(); if (dir > 0 && X < L0) move = 1; return update(); };
@@ -152,9 +152,9 @@ new p5((p) => {
   p.draw = () => {
     advance(Math.min(p.deltaTime, 100) / 1000 * speed);
     const S = update(), { W, Q, dU, T } = S;
-    readout.html(`Männän työ kaasuun <strong>$W = ${txs(W, 1)}\\,\\text{J}$</strong>, lämpö seinien läpi <strong>$Q = ${txs(Q, 1)}\\,\\text{J}$</strong>` +
-      `<br>Sisäenergian muutos <strong>$\\Delta U = ${txs(dU, 1)}\\,\\text{J}$</strong>` +
-      `<br>Kaasu: <strong>$T = ${tx(T, 0)}\\,\\text{K}$</strong> ($\\Delta T = ${txs(T - T0, 0)}\\,\\text{K}$), $V = ${tx(S.V, 0)}\\,\\%$, paine $p = ${tx(S.p, 2)} \\cdot p_0$`);
+    readout.html(__(`mannan_tyo_kaasuun`, {w: txs(W, 1), q: txs(Q, 1)}) +
+      __(`sisaenergian_muutos`, {du: txs(dU, 1)}) +
+      __(`kaasu_paine`, {t: tx(T, 0), t2: txs(T - T0, 0), s: tx(S.V, 0), s2: tx(S.p, 2)}));
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
     const ts = (n) => Math.round(n * k), ctx = p.drawingContext;
@@ -234,14 +234,14 @@ new p5((p) => {
     p.fill(30); p.textSize(ts(17)); const sT = `$T = ${tx(T, 0)}\\,\\text{K}$`; lab(sT, x0 - WT, 36); const xT = x0 - WT + p.textWidth('$T = 000\\,\\text{K}$') + 18;
     p.textSize(ts(13)); const yD = y0 + h + WT + INS + 8, yV = yD + 4 + ts(12), xw = xr + 4;
     p.stroke(80); p.strokeWeight(1.2); p.line(x0, yD, xp, yD); p.line(x0, yD - 5, x0, yD + 5); p.line(xp, yD - 5, xp, yD + 5);
-    p.noStroke(); p.fill(40); const wl = cond ? '$\\text{johtava seinä}$' : '$\\text{eristetty seinä}$', xwl = xw - p.textWidth(wl);
+    p.noStroke(); p.fill(40); const wl = cond ? __('johtava_seina') : __('eristetty_seina'), xwl = xw - p.textWidth(wl);
     lab(wl, xw, yV, p.RIGHT);
     const sV = `$V = ${tx(S.V, 0)}\\,\\%$`, hV = p.textWidth(sV) / 2;
     lab(sV, Math.max(x0 + hV, Math.min(xwl - 10 - hV, (x0 + xp) / 2)), yV, p.CENTER);
     const lw = k > 1.5 ? 30 : 44; p.textSize(ts(13));                  // speed legend in the top row, right of T
-    lab('$\\text{hidas}$', xT, 36); const lx0 = xT + p.textWidth('$\\text{hidas}$') + 5;
+    lab(__('hidas_2'), xT, 36); const lx0 = xT + p.textWidth(__('hidas_2')) + 5;
     rect(lx0, 36 - ts(4) - 4, lw, 8, grad(lx0, 0, lx0 + lw, 0, [[0, rgb(SLOW)], [0.5, rgb(MID)], [1, rgb(FAST)]]));
-    p.fill(40); lab('$\\text{nopea}$', lx0 + lw + 5, 36);
+    p.fill(40); lab(__('nopea_2'), lx0 + lw + 5, 36);
 
     // energy bars Q, W, ΔU on one axis, zero in the middle, gridlines at the tick steps
     const v = Math.max(Math.abs(W), Math.abs(Q), Math.abs(dU));
@@ -252,7 +252,7 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(2); p.line(BAR.ax, BAR.y0 - 6, BAR.ax, BAR.y1 + 6); p.line(BAR.ax, ym, 592, ym);
     p.noStroke(); p.fill(60); p.textSize(ts(11));
     for (let j = -2; j <= 2; j++) lab(j ? `$${txs(j * tStep, 0)}$` : '$0$', BAR.ax - 5, Y(j * tStep) + ts(4), p.RIGHT);
-    p.textSize(ts(13)); p.fill(40); lab('$\\text{energia}\\ (\\text{J})$', 592, 40, p.RIGHT);
+    p.textSize(ts(13)); p.fill(40); lab(__('energia'), 592, 40, p.RIGHT);
     const vals = [Q, W, dU], cols = [COL_Q, COL_W, COL_U], names = ['$Q$', '$W$', '$\\Delta U$'], dec = k > 1.3 ? 0 : 1;
     for (let i = 0; i < 3; i++) {
       const bx = BAR.x[i] - BAR.w / 2, yv = Y(vals[i]), c = cols[i], y = Math.min(yv, ym), hb = Math.abs(yv - ym);

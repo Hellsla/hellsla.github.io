@@ -23,7 +23,7 @@ one agent start and one set of rules instead of one per lesson. Each lesson keep
 whose change needs a full review, or none, is left out and named."""
 import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses
+import courses, i18n
 from reviews import ROOT, find_lesson, content_hash, scope, SVG_LINE
 
 SVG = re.compile(r"(<svg\b[^>]*>).*?(</svg>)", re.S)
@@ -42,7 +42,7 @@ def sections(path, *names):
 
 def block(path, label=None, collapse_svg=False):
     if not path.is_file(): return ""
-    text = path.read_text()
+    text = i18n.resolved_sim(path) if path.suffix == ".js" else path.read_text()   # a simulation with its texts from lang/fi.json in place
     if collapse_svg: text = SVG.sub(lambda m: f"{m.group(1)}\n  <!-- figure body omitted: see the figure captures in review/shots.md -->\n{m.group(2)}", text)
     lang = {".json": "json", ".py": "python", ".js": "js", ".css": "css"}.get(path.suffix, "markdown")
     return f"\n### {label or path.name}\n```{lang}\n{text.rstrip()}\n```\n"

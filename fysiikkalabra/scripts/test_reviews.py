@@ -22,6 +22,7 @@ def project():
     shutil.copy(SRC / "tests/sims" / f"{LESSON}.json", tmp / "tests/sims")
     shutil.copytree(SRC / "scripts", tmp / "scripts", ignore=shutil.ignore_patterns("__pycache__"))
     shutil.copytree(SRC / "templates", tmp / "templates")
+    shutil.copytree(SRC / "lang", tmp / "lang")
     return tmp
 
 
