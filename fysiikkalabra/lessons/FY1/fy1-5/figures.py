@@ -1,0 +1,57 @@
+"""Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-5` writes them into lesson.md."""
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, COLD, COLD_LIGHT, HEAT, GLASS, IRON, n
+
+
+def cart(f, cx, cy):
+    """A small cart on the ground line y = cy: body, cabin and two wheels."""
+    f.rect(cx - 28, cy - 36, 56, 22, COLD_LIGHT, INK, 2.5, 4)
+    f.rect(cx - 13, cy - 52, 26, 16, GLASS, INK, 2.5, 3)
+    for wx in (cx - 16, cx + 16):
+        f.circle(wx, cy - 8, 8, INK)
+        f.circle(wx, cy - 8, 3, WHITE)
+
+
+def motion():
+    f = Fig("fy15-motion", 330, "Liikekuva, jossa sama kärry on piirretty viiden peräkkäisen sekunnin kohdalle ruudulle 0 s, 1 s, 2 s, 3 s ja 4 s. "
+            "Kärryjen välit ovat yhtä pitkät, ja jokaisen välin alla on yhtä pitkä sulku Δs: tasaisessa liikkeessä kappale kulkee yhtä pitkissä "
+            "ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa, kärryt ovat samankokoisia.")
+    ground = 150
+    f.line(24, ground, 576, ground, INK, 2.5)
+    xs = [70 + 115 * i for i in range(5)]
+    for i, x in enumerate(xs):
+        cart(f, x, ground)
+        f.line(x, ground, x, ground + 12, INK, 2)
+        f.tex(x, ground + 36, r"t = 0\,\text{s}" if i == 0 else rf"{i}\,\text{{s}}", "middle", w=100 if i == 0 else 60)
+    f.arrow(xs[0] + 6, 70, xs[0] + 66, 70, INK, 3, 14)
+    f.tex(xs[0] + 36, 46, "v", "middle")
+    for a, b in zip(xs, xs[1:]):
+        f.path(f"M{a},{ground + 62} V{ground + 74} H{b} V{ground + 62}", stroke=MUTED, w=2.5)
+        f.tex((a + b) / 2, ground + 100, r"\Delta s", "middle")
+    f.tex(300, 316, r"\text{yhtä pitkissä ajoissa yhtä pitkät matkat}", "middle", w=440)
+    return f.svg()
+
+
+def graph():
+    f = Fig("fy15-graph", 360, "Kuvaaja mittakaavassa: kaksi tasaista liikettä nopeudella 3 m/s esitetään (t, s)-koordinaatistossa suorina. "
+            "Alempi suora kulkee origon kautta (alkupaikka 0), ylempi alkaa paikasta s₀ = 5 m ja on alemman suoran kanssa yhdensuuntainen. "
+            "Alemmalle suoralle on piirretty kulmakolmio: 2 s:n aikana paikka kasvaa 6 m, joten kulmakerroin on 3 m/s eli nopeus.")
+    ax = Axes(f, (96, 300), (440, 60), x=(0, 5), y=(0, 25), xticks=[1, 2, 3, 4, 5], yticks=[10, 20],
+              xlabel=r"t\ (\text{s})", ylabel=r"s\ (\text{m})")
+    ax.line([(0, 0), (5, 15)], COLD, 3)
+    ax.line([(0, 5), (5, 20)], HEAT, 3)
+    # the starting position of the upper line: a tick and ring on the s axis
+    f.line(ax.X(0) - 7, ax.Y(5), ax.X(0), ax.Y(5), INK, 2)
+    f.tex(ax.X(0) - 12, ax.Y(5), r"s_0", "end")
+    ax.point(0, 5, HEAT)
+    # slope triangle on the lower line between t = 2 s and t = 4 s, right angle below the line
+    f.line(ax.X(2), ax.Y(6), ax.X(4), ax.Y(6), MUTED, 1.5, "6 5")
+    f.line(ax.X(4), ax.Y(6), ax.X(4), ax.Y(12), MUTED, 1.5, "6 5")
+    ax.point(2, 6, COLD); ax.point(4, 12, COLD)
+    f.tex(ax.X(3), ax.Y(6) + 24, r"\Delta t = 2\,\text{s}", "middle", w=130)
+    f.tex(ax.X(4) + 12, ax.Y(9), r"\Delta s = 6\,\text{m}", "start", w=130, bg=True)
+    f.tex(ax.X(5) + 8, ax.Y(15), r"s = vt", "start", COLD, w=80)
+    f.tex(ax.X(5) + 8, ax.Y(20), r"s = s_0 + vt", "start", HEAT, w=140)
+    return f.svg()
+
+
+FIGURES = {"motion": motion, "graph": graph}
