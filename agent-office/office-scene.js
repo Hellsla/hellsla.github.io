@@ -12,11 +12,13 @@ window.AgentOfficeScene = {
       {id:'teacher',x:18,y:535,w:310,h:247,title:'LAURI',sub:'ASSIGNS THE TOPIC AND TASK',floor:'#66543e',accent:C.gold},
       {id:'checks',x:342,y:535,w:306,h:247,title:'CHECK RUNNER',sub:'Build · tests · layout',floor:'#414f50',accent:C.amber},
       {id:'repository',x:662,y:535,w:240,h:247,title:'PUBLICATION DECISION',sub:'PUBLISHER PROPOSES, LAURI DECIDES',floor:'#4d5947',accent:C.green},
+      {id:'chatgpt',x:880,y:366,w:302,h:156,title:'EXTERNAL REVIEW',sub:'OPTIONAL · WHOLE WEBPAGE',floor:'#3c5955',accent:'#82cbb6'},
       {id:'site',x:916,y:535,w:266,h:247,title:'THE WEBSITE',sub:'A separate deployment',floor:'#4e525e',accent:'#c0b5db'}
     ];
-    const home = {checks:[495,668],teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
-    const colors = {checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
+    const home = {chatgpt:[1030,468],checks:[495,668],teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
+    const colors = {chatgpt:'#82cbb6',checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
     const looks = {
+      chatgpt:{skin:'#dbb89e',hair:'#263c39',shirt:'#82cbb6',jacket:'#4d8a7b',pants:'#40525b',hairStyle:'parted',glasses:true,scarf:true,scale:1},
       checks:{skin:'#c89678',hair:'#4a3432',shirt:'#d5b474',jacket:'#9b7763',pants:'#455266',hairStyle:'braid',glasses:true,scale:1},
       teacher:{skin:'#d5b399',hair:'#17191c',shirt:'#bb4541',pants:'#46575b',hairStyle:'crop',stubble:'#76645c',plaid:true,scale:1.04},
       developer:{skin:'#b9815a',hair:'#302d2b',shirt:'#d8ad61',pants:'#424b60',hairStyle:'crop',headphones:true,beard:'#4b332b',scale:1},
@@ -105,6 +107,7 @@ window.AgentOfficeScene = {
         if(look.beard){box(-7,-6,18,6,look.beard);box(-4,-1,12,3,look.beard);box(4,-5,5,2,look.skin);}
         if(look.glasses){box(-2,-15,7,2,'#3e4b4b');box(7,-15,7,2,'#3e4b4b');box(-2,-14,2,6,'#3e4b4b');box(4,-14,2,6,'#3e4b4b');box(7,-14,2,6,'#3e4b4b');box(13,-14,2,6,'#3e4b4b');box(0,-9,5,2,'#3e4b4b');box(9,-9,5,2,'#3e4b4b');box(5,-13,3,2,'#3e4b4b');}
       }
+      if(look.scarf){box(-14,-3,28,5,'#d6d5aa');box(7,1,6,13,'#d6d5aa');}
       if(look.headphones){box(-16,-24,30,3,'#cd8054');box(-18,-20,6,13,'#d89558');box(12,-20,6,13,'#d89558');}
       if(look.satchel){for(let i=0;i<6;i++)box(-12+i*4,1+i*3,4,4,'#77644f');box(7,13,15,14,'#b59163');box(10,17,9,2,'#dbc29b');}
       ctx.restore();
@@ -148,6 +151,8 @@ window.AgentOfficeScene = {
       decision:[[735,447],[789,502],[789,580],[849,690],[789,580],[789,502],[735,447]],
       websitePickup:[[1048,685],[1048,502],[789,502],[789,580],[849,690]]
     };
+    journeys.publicationVisit=[[150,668],[173,535],[380,505],[700,505],[724,580],[724,674]];
+    journeys.publicationReturn=journeys.publicationVisit.slice().reverse();
     journeys.scienceFeedback=[[605,202],[610,325],[230,325],[260,220],[230,325],[610,325],[605,202]];
     journeys.pedagogyFeedback=[[990,202],[990,346],[230,346],[260,220],[230,346],[990,346],[990,202]];
     journeys.retest=[...journeys.checks,...journeys.checks.slice().reverse().slice(1)];
@@ -206,17 +211,32 @@ window.AgentOfficeScene = {
       return {cycle,roles,received,needsRevision,ready:Boolean(state?.eligible) && received===2};
     }
     function nextHandoff(){
+      if(options.wholeWebReview?.())return [0,7,14,21,28,35].find(moment=>moment>options.phase()%42+.001) ?? 0;
       const review=reviewProgress(options.state());
       const moments=[0,7,14,21,28,31.5,32,34,35,38,39,40.5,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
       return [...new Set(moments)].sort((a,b)=>a-b).find(moment=>moment>review.cycle+.001) ?? 0;
     }
+    const webPaths={
+      request:[[150,668],[173,535],[380,505],[855,505],[855,340],[1030,340],[1030,435]],
+      page:[[1048,685],[1155,685],[1155,340],[1030,340],[1030,435]],
+      feedback:[[1030,468],[1030,340],[855,340],[855,505],[380,505],[173,535],[150,620]],
+      revision:[[150,668],[173,535],[380,505],[380,335],[230,335],[260,220]]
+    };
     function actors(state,review,coffee){
       const cycle=options.phase()%42,step=Math.floor(cycle/7),f=(cycle%7)/7;
       const positions=Object.fromEntries(Object.entries(home).map(([id,p])=>[id,[...p]]));
       const packets={};const moving={};const busy=new Set();
       const walk=(id,points,t,kind,color)=>{positions[id]=position(points,t);moving[id]=!options.still();busy.add(id);if(kind)packets[id]={kind,color:color||colors[id]};};
       const approved=publicationApproved(state,review);
-      if(state){
+      const web=options.wholeWebReview?.();
+      if(web){
+        coffee=null;
+        if(step===0)walk('teacher',webPaths.request,f,'QUESTION');
+        if(step===1)walk('site',webPaths.page,f,'WEBPAGE');
+        if(step===3)walk('chatgpt',webPaths.feedback,f,'SUGGESTIONS');
+        if(step===4)walk('teacher',webPaths.revision,f,'CHANGE BRIEF');
+        if(step===5)walk('developer',journeys.retest,f,f<.5?'RECHECK':null);
+      }else if(state){
         if(step===0 && !(options.round?.()?.index>0))walk('teacher',journeys.brief,f,'BRIEF');
         if(step===1){if(!(options.round?.()?.index>0))walk('teacher',journeys.briefReturn,f);walk('developer',journeys.checks,f,'MATERIAL');}
         if(step===2)walk('developer',journeys.checksReturn,f);
@@ -226,6 +246,11 @@ window.AgentOfficeScene = {
           if(r.delivering){const progress=(cycle-r.reportStart)/(r.reportEnd-r.reportStart);walk(role,journeys[role+(['FAIL','stale','invalid'].includes(r.status)?'Feedback':'Report')],progress,progress<.5?`${r.status.toUpperCase()} REPORT`:null,r.status==='PASS'?C.green:C.red);}
         }
         if(step===4){if(review.ready)walk('gatekeeper',journeys.decision,f,f<.5?'REVIEWED':null,C.green);else if(review.needsRevision)packets.developer={kind:'REVISING',color:C.red};}
+        if(review.ready && cycle>=31.5){
+          if(cycle<35)walk('teacher',journeys.publicationVisit,(cycle-31.5)/3.5);
+          else if(cycle<39){positions.teacher=[724,674];busy.add('teacher');}
+          else walk('teacher',journeys.publicationReturn,(cycle-39)/3);
+        }
         if(step===5 && review.needsRevision)walk('developer',journeys.retest,f,f<.5?'RETEST':null,C.amber);
         if(step===5 && review.ready){
           if(cycle<38)walk('site',journeys.websitePickup,(cycle-35)/3);
@@ -239,14 +264,14 @@ window.AgentOfficeScene = {
         else walk(coffee.role,journeys[coffee.role+'CoffeeReturn'],(coffee.f-2/3)*3);
       }
       figurePositions=[];
-      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site','checks']){
+      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site','checks','chatgpt']){
         const point=positions[id],[x,y]=point;
-        const working=!busy.has(id) && coffee?.role!==id && ['developer','science','pedagogy','teacher','checks','repository'].includes(id) && Math.hypot(x-home[id][0],y-home[id][1])<1;
+        const working=!busy.has(id) && coffee?.role!==id && ['developer','science','pedagogy','teacher','checks','repository','chatgpt'].includes(id) && Math.hypot(x-home[id][0],y-home[id][1])<1;
         person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0],working);
         figurePositions.push({id,x,y});
         const awayFromDesk=Math.hypot(x-home[id][0],y-home[id][1])>28;
-        if((moving[id] && awayFromDesk) || coffee?.role===id){const label=coffee?.role===id?'COFFEE BREAK':id==='gatekeeper'?'COORDINATOR':id==='site'?'WEB COURIER':id==='teacher'?'LAURI':id.toUpperCase();pill(label,x,y+54,colors[id],label.length*8+24);}
-        if(packets[id])pagePacket(x+(moving[id] && point.facing?.[0]<-.1?-26:26),y+11,state.id,packets[id].color,packets[id].kind);
+        if((moving[id] && awayFromDesk) || coffee?.role===id){const label=coffee?.role===id?'COFFEE BREAK':id==='gatekeeper'?'COORDINATOR':id==='site'?'WEB COURIER':id==='teacher'?'LAURI':id==='chatgpt'?'EXTERNAL REVIEW':id.toUpperCase();pill(label,x,y+54,colors[id],label.length*8+24);}
+        if(packets[id])pagePacket(x+(moving[id] && point.facing?.[0]<-.1?-26:26),y+11,web?'WEB':state.id,packets[id].color,packets[id].kind);
         if(coffee?.role===id && coffee.mug)mug(x+25,y+14);
       }
       return {step,positions,packets,coffee};
@@ -262,9 +287,10 @@ window.AgentOfficeScene = {
       previousChoices.set(message,choices.indexOf(chosen));currentSpeech={key,text:chosen};return chosen;
     }
     function speech(state,review,actors){
-      if(!state || options.speechEnabled?.()===false || options.phase()%6>4.5)return null;
+      if((!state && !options.wholeWebReview?.()) || options.speechEnabled?.()===false || options.phase()%6>4.5)return null;
       const {step,coffee,positions,packets}=actors;let speaker,message;
-      if(step===5 && review.needsRevision){speaker='checks';message='New version. Running the checks again.';}
+      if(options.wholeWebReview?.()){({speaker,message}=window.OfficeWebReview.frame(options.phase()));}
+      else if(step===5 && review.needsRevision){speaker='checks';message='New version. Running the checks again.';}
       else if(coffee?.seated){speaker=coffee.role;message=speaker==='developer'?'Refactoring my caffeine levels.':speaker==='teacher'?'A brief pause. The universe can wait.':'A peer review of this coffee is now in progress.';}
       else if(step===0 && options.round?.()?.index>0){speaker='developer';message='Next recorded stage. Back to the material.';}
       else if(step===0){speaker='teacher';message="Let's turn ‘why?’ into a material.";}
@@ -275,6 +301,7 @@ window.AgentOfficeScene = {
         if(bad){speaker=bad;message=review.roles[bad].status==='stale'?'New version? My old PASS just expired.':'Here are my corrections. A new version, please.';}
         else{speaker='gatekeeper';message=review.ready?'Two matching passes. My favourite duet.':'One PASS is not a quorum.';}
       }else if(step===4){speaker=review.needsRevision?'developer':'gatekeeper';message=review.needsRevision?'Back to the drawing board. Literally.':review.ready?'Two matching passes. My favourite duet.':'One PASS is not a quorum.';}
+      else if(review.ready && review.cycle<38){speaker='teacher';message='Let’s discuss the publication proposal first.';}
       else{speaker=review.ready?'site':'repository';message=packets.site?'Approved cargo. Still not a deployment receipt.':review.ready?'I deliver pages, not assumptions.':'Coffee is approved. Publication is still pending.';}
       const point=positions[speaker],quote=tr(variedSpeech(message,speaker)),width=242;ctx.font='12px monospace';
       const lines=[];let line='';
@@ -288,12 +315,12 @@ window.AgentOfficeScene = {
     }
     function publicationApproved(state,review){
       // A merge or HTML file alone does not establish the human decision.
-      return review.ready && state?.publicationDecision?.status==='approved' && state.publicationDecision.contentHash===state.hash;
+      return review.ready && review.cycle>=38 && state?.publicationDecision?.status==='approved' && state.publicationDecision.contentHash===state.hash;
     }
     function checks(state){
       const x=495;
       desk(x,656,C.amber,true);
-      text(state?.checks.failed?`${state.checks.failed} SAVED FAILURES`:state?.checks.passed?`${state.checks.passed} SAVED PASSES`:'NO SAVED RESULTS',x,718,state?.checks.failed?C.red:C.amber,12,'center');
+      text(options.wholeWebReview?.()?'CHECK AFTER CHANGES':state?.checks.failed?`${state.checks.failed} SAVED FAILURES`:state?.checks.passed?`${state.checks.passed} SAVED PASSES`:'NO SAVED RESULTS',x,718,state?.checks.failed?C.red:C.amber,12,'center');
       box(372,596,24,80,'#253239');for(let i=0;i<5;i++){box(376,602+i*13,15,8,'#556669');box(378,604+i*13,3,3,C.amber);}
     }
     function gate(state,review){
@@ -304,18 +331,18 @@ window.AgentOfficeScene = {
       box(701,419,17,24,'#ad946c');box(704,423,11,16,'#eee1bd');
       ['science','pedagogy'].forEach((r,i)=>box(706,426+i*6,6,3,!review.roles[r].arrived?C.muted:state?.[r].status==='PASS'?C.green:C.red));
       text('REVIEW DESK',768,385,C.ink,13,'center');
-      pill(review.ready?'READY':review.needsRevision?'REVISE':'WAITING',796,424,color,70);
+      pill(options.wholeWebReview?.()?'SEPARATE':review.ready?'READY':review.needsRevision?'REVISE':'WAITING',796,424,color,70);
     }
     function site(state){
       box(953,596,191,116,'#26323a');box(959,602,179,102,'#e1dfce');box(959,602,179,17,'#607d77');
       for(let i=0;i<3;i++)box(965+i*7,607,4,4,'#cfdfbd');
       text('FYSIIKKALABRA',1048,640,'#40544d',13,'center');
       box(974,651,68,40,'#b8c7b1');box(1049,651,74,5,'#9da99e');box(1049,663,65,4,'#b1b5a4');box(1049,674,71,4,'#b1b5a4');
-      text(state?.included?'HTML IN COMMIT':'NO HTML IN SNAPSHOT',1048,735,state?.included?C.green:C.muted,12,'center');
-      text('Deployment unverified',1048,754,C.amber,11,'center');
+      text(options.wholeWebReview?.()?'WEBPAGE TO REVIEW':state?.included?'HTML IN COMMIT':'NO HTML IN SNAPSHOT',1048,735,state?.included?C.green:C.muted,12,'center');
+      text(options.wholeWebReview?.()?'PUBLICATION SEPARATE':'Deployment unverified',1048,754,C.amber,11,'center');
     }
     function draw(){
-      const state=options.state();const active=options.active();const review=reviewProgress(state);const coffee=coffeeBreak(state,review);
+      const state=options.wholeWebReview?.()?null:options.state();const active=options.wholeWebReview?.()?new Set():options.active();const review=reviewProgress(state);const coffee=options.wholeWebReview?.()?null:coffeeBreak(state,review);
       ctx.imageSmoothingEnabled=false;box(0,0,1200,800,'#202c30');
       box(18,301,1164,221,'#8a7356');
       for(let y=306;y<522;y+=22)for(let x=20;x<1182;x+=68){box(x+(y%44?-20:0),y,65,1,'#a58c69');box(x,y,1,21,'#716148');}
@@ -326,16 +353,16 @@ window.AgentOfficeScene = {
       pill('1 · DEVELOP',212,257,C.gold,150);
       for(const [id,x] of [['science',605],['pedagogy',990]]){
         const status=state?.[id].status || 'NOT OBSERVED';
-        pill(status==='NOT OBSERVED'?'NO SNAPSHOT':status==='missing'?'NO REPORT RECORDED':`RECORDED ${status.toUpperCase()}`,x,254,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
-        text(coffee?.role===id?'COFFEE BREAK':state?review.roles[id].work:'WAITING FOR MATERIAL',x,277,C.muted,9,'center');
+        pill(options.wholeWebReview?.()?'LESSON REVIEWS SEPARATE':status==='NOT OBSERVED'?'NO SNAPSHOT':status==='missing'?'NO REPORT RECORDED':`RECORDED ${status.toUpperCase()}`,x,254,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
+        text(options.wholeWebReview?.()?'CLAUDE LESSON WORKFLOW':coffee?.role===id?'COFFEE BREAK':state?review.roles[id].work:'WAITING FOR MATERIAL',x,277,C.muted,9,'center');
       }
       plant(380,245);plant(753,245);plant(1148,245);
-      // The publication role is represented by a seated colleague throughout the journey.
+      // The publisher stays at the desk; Lauri visits before a decision is shown.
       desk(150,656,C.gold);box(42,595,34,42,'#d9d3ba');text('?',59,624,'#60756a',24,'center');
       shelf(207,595,90);plant(53,745);
-      desk(789,656,C.green);box(732,711,116,28,'#243631');text(publicationApproved(state,review)?'APPROVED':options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,publicationApproved(state,review)?C.green:C.amber,10,'center');
-      box(28,309,326,45,'#2f3e3e');text('TODAY’S MATERIAL',191,320,C.ink,9,'center');
-      const topic=state?.title || (state?state.id.toUpperCase():tr('SELECT A RECORDED MATERIAL'));
+      desk(789,656,C.green);box(732,711,116,28,'#243631');text(options.wholeWebReview?.()?'LAURI DECIDES':publicationApproved(state,review)?'APPROVED':options.event()?.merge?'MERGE RECORDED':'DECISION UNKNOWN',790,730,publicationApproved(state,review)?C.green:C.amber,10,'center');
+      box(28,309,326,45,'#2f3e3e');text(options.wholeWebReview?.()?'THE WHOLE WEBPAGE':'TODAY’S MATERIAL',191,320,C.ink,9,'center');
+      const topic=options.wholeWebReview?.()?tr('Structure · clarity · navigation · usability'):state?.title || (state?state.id.toUpperCase():tr('SELECT A RECORDED MATERIAL'));
       ctx.font='10px monospace';
       const topicLines=[];let topicLine='';
       for(const word of topic.split(' ')){
@@ -346,11 +373,15 @@ window.AgentOfficeScene = {
       // Fit the complete authored topic, including unusually long titles.
       const topicSize=Math.min(10,26/Math.max(1,topicLines.length));
       topicLines.forEach((line,i)=>text(line,191,332+i*topicSize,C.gold,topicSize,'center'));
+      box(950,422,118,34,'#25383b');box(955,427,108,24,'#b8d1c4');
+      text('WEBPAGE',1009,443,'#344c46',10,'center');box(943,458,144,9,'#ad9471');
+      text(options.wholeWebReview?.()?'WORKFLOW EXAMPLE':'BY REQUEST',1030,512,'#a8d7c8',10,'center');
       lounge();checks(state);site(state);gate(state,review);const activity=actors(state,review,coffee);const quote=speech(state,review,activity);
       if(!options.presentation?.()){box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);}
       return {step:activity.step,speech:quote,caption:this.caption(activity.step,state,review)};
     }
     function caption(step,state,review=reviewProgress(state)){
+      if(options.wholeWebReview?.())return window.OfficeWebReview.frame(options.phase()).caption;
       if(!state)return 'Choose a recorded material to explore its route through the office.';
       const name=role=>role==='science'?'Science':'Pedagogy';
       const first=Object.keys(review.roles).find(role=>review.roles[role].arrived);
@@ -361,17 +392,23 @@ window.AgentOfficeScene = {
         'The developer brings the material packet to automatic checks.',
         'The reviewers collect separate copies at different times and review independently, in parallel.',
         reportCaption,
-        review.ready?'The review coordinator delivers the reviewed material to the publication decision-maker, then returns to the review desk.':review.needsRevision?'The reviewers return their feedback separately. The developer revises the material before new checks and reviews.':`Still waiting for ${waiting.toLowerCase()} review. Nothing proceeds to the publication desk.`,
-        review.needsRevision?'The developer takes the revised material back to the test runner. New independent reviews must follow.':!review.ready?`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`:review.cycle<38?'The website courier comes to the publication desk to collect approved material.':review.cycle<39?(publicationApproved(state,review)?'Approval is recorded for this version. The website courier can collect the approved material.':'The website courier waits: publication approval is not recorded for this version.'):(publicationApproved(state,review)?'The website courier carries approved material to the website. Deployment itself remains unverified.':'No publication approval is recorded. The website courier returns without collecting material.')
+        review.ready?(review.cycle<31.5?'The review coordinator delivers the reviewed material to the publisher.':'Lauri walks to the publisher to discuss the material before the publication decision.'):review.needsRevision?'The reviewers return their feedback separately. The developer revises the material before new checks and reviews.':`Still waiting for ${waiting.toLowerCase()} review. Nothing proceeds to the publication desk.`,
+        review.needsRevision?'The developer takes the revised material back to the test runner. New independent reviews must follow.':!review.ready?`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`:review.cycle<38?'Lauri discusses the proposal with the publisher. The publication decision comes after this visit.':review.cycle<39?(publicationApproved(state,review)?'Approval is recorded for this version. The website courier can collect the approved material.':'The website courier waits: publication approval is not recorded for this version.'):(publicationApproved(state,review)?'The website courier carries approved material to the website. Deployment itself remains unverified.':'No publication approval is recorded. The website courier returns without collecting material.')
       ][step];
     }
     function hit(p){
-      const figure=figurePositions.find(f=>Math.abs(p.x-f.x)<27 && p.y>f.y-32 && p.y<f.y+40);
+      const figure=figurePositions.find(f=>Math.abs(p.x-f.x)<36 && p.y>f.y-40 && p.y<f.y+40);
       if(figure)return figure.id;
       if(p.x>=26 && p.x<=362 && p.y>=370 && p.y<=518)return 'lounge';
       if(p.x>=688 && p.x<=838 && p.y>=370 && p.y<=510)return 'gatekeeper';
       return stations.find(s=>p.x>=s.x && p.x<=s.x+s.w && p.y>=s.y && p.y<=s.y+s.h)?.id;
     }
-    return {draw,hit,caption,nextHandoff};
+    function portrait(id){
+      if(!looks[id])return false;
+      ctx.clearRect(0,0,canvas.width,canvas.height);ctx.imageSmoothingEnabled=false;
+      ctx.save();ctx.translate(canvas.width/2,canvas.height/2-6);ctx.scale(2,2);
+      person(0,0,id);ctx.restore();return true;
+    }
+    return {draw,hit,caption,nextHandoff,portrait};
   }
 };

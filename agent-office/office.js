@@ -6,7 +6,7 @@
     {id:'developer', name:'Developer', label:'THE MAKER', color:'#edba70', x:270, y:250, path:'.claude/agents/developer.md', description:'Writes and improves material text, exercises, figures and simulations. The existing developer workflow checks the material before it goes to independent review.'},
     {id:'science', name:'Science reviewer', label:'THE PHYSICS CHECK', color:'#8cb8e0', x:640, y:250, path:'.claude/agents/science-reviewer.md', description:'Independently checks physics, mathematics, units, numerical answers and simulation behaviour. Reviews the work without editing the material.'},
     {id:'pedagogy', name:'Pedagogy reviewer', label:'THE LEARNER’S VIEW', color:'#e9a1b4', x:270, y:430, path:'.claude/agents/pedagogy-reviewer.md', description:'Independently reviews the learning path, explanations, activities and usability on a phone and laptop. Reviews the work without editing the material.'},
-    {id:'repository', name:'Publication decision', label:'THE HUMAN DECISION', color:'#9ccb9b', path:'Git history · not an agent definition', description:'The colleague at this desk represents Lauri’s publication decision. Lauri receives reviewed work and decides what to merge. The build includes materials with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
+    {id:'repository', name:'Publisher', label:'LAURI MAKES THE DECISION', color:'#9ccb9b', path:'Git history · not an agent definition', description:'The publisher prepares a publication proposal. Lauri visits this desk to discuss the reviewed work before making the publication decision. The build includes materials with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
   ];
   const history = window.OFFICE_HISTORY || {events:[]};
   const gatekeeper = {id:'gatekeeper',name:'Review coordinator',label:'THE REVIEW DESK',color:'#719b95',path:'fysiikkalabra/scripts/reviews.py',description:'An ordinary office colleague represents the review approval check. Both independent reports must say PASS for the material’s current content hash. The coordinator delivers the reviewed packet to the decision-maker, then returns to the review desk. Missing, failed, invalid or stale reports cannot clear this step. The character illustrates an automatic rule, not an additional running agent.'};
@@ -14,7 +14,9 @@
   const checks = {id:'checks',name:'Automatic checks',label:'THE CHECK RUNNER',color:'#d7b474',path:'fysiikkalabra/scripts/ · .github/workflows/fysiikkalabra-ci.yml',description:'The material workflow builds the preview and checks content, mathematics, simulations and layout. Saved checks.txt results appear here, but have no content hash: their freshness and CI success remain unknown. The colleague at the computer illustrates automated testing, not an additional running agent.'};
   const website = {id:'site',name:'Website courier',label:'AFTER THE PUBLICATION DECISION',color:'#a69ac3',path:'fysiikkalabra/site/ · GitHub Pages',description:'Represents the publishing process, not an additional AI agent. The courier comes to the publication desk, waits for a recorded approval matching this material version, and collects only approved material. A merge or HTML file alone is not proof of that decision. Deployment remains unverified.'};
   const lounge={id:'lounge',name:'Coffee lounge',label:'A WELL-EARNED PAUSE',color:'#d7b474',path:'Illustrated break · no real agent is paused',description:'A coffee machine, a sofa and a little breathing room. An idle colleague occasionally takes a break and returns before their next handoff. Breaks and bubbles are illustrations; no real agent is paused and no materials are changed.'};
-  const officeRoles = [teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website,lounge];
+  const chatgpt={id:'chatgpt',name:'External review',label:'THE WHOLE-WEBPAGE VIEW',color:'#82cbb6',path:'External review · requested by Lauri',description:'Lauri sometimes asks an external reviewer to review the whole webpage: structure, clarity, consistency and usability across pages. An external reviewer offers another perspective alongside Claude’s lesson workflow. Lauri selects suggestions and briefs development. This is a user-described workflow; no conversation or completed review is inferred from Git. It does not replace science or pedagogy approval.'};
+  const wholeWebReview=()=>$('replay-mode').value==='website';
+  const officeRoles = [chatgpt,teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website,lounge];
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = [], minute = 0, playing = false, lastFrame = 0, lastPaint = 0, phase = 0;
@@ -23,10 +25,10 @@
   const roundInfo=()=>journeyIndex<0?null:{index:journeyIndex,total:journey.length,version:journey[journeyIndex].version,commit:journey[journeyIndex].event.id};
   const canvas = $('office');
   const dayLabel = day => i18n.dateLabel(day);
-  const time = m => `${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(Math.floor(m)%60).padStart(2,'0')}`;
+  const time = m => window.OfficeTime.replay(m);
   const roleNames = ids => ids.map(id=>id==='repository'?'Repository changes':roles.find(r=>r.id===id)?.name || id).join(' · ');
   const activeRoles = () => new Set(selected.filter(e=>e.minute<=minute && minute-e.minute<8).flatMap(e=>e.roles));
-  const scene = window.AgentOfficeScene.create(canvas,{state:()=>lessonState,event:()=>snapshotEvent,active:activeRoles,phase:()=>phase,still:()=>$('motion').checked,presentation:()=>document.body.classList.contains('office-only'),round:roundInfo,speechEnabled:()=>$('bubbles').checked});
+  const scene = window.AgentOfficeScene.create(canvas,{state:()=>lessonState,event:()=>snapshotEvent,active:activeRoles,phase:()=>phase,still:()=>$('motion').checked,presentation:()=>document.body.classList.contains('office-only'),round:roundInfo,wholeWebReview,speechEnabled:()=>$('bubbles').checked});
   const allMaterials = new Map((history.snapshots || []).flat().map(lesson=>[lesson.id,lesson.title]));
   for(const [id,title] of [...allMaterials].sort()){
     const option=document.createElement('option');option.value=id;option.textContent=`${id.toUpperCase()} · ${title}`;$('lesson').append(option);
@@ -43,6 +45,15 @@
     journeyIndex=-2;phase=0;
     syncJourney();
   }
+  function updateClock(){
+    const stage=$('replay-mode').value==='walkthrough';
+    const label=t(stage?'Commit time · Helsinki':'Replay time · Helsinki');
+    const value=stage?window.OfficeTime.commit(snapshotEvent?.timestamp):time(minute);
+    const title=stage && snapshotEvent?`${snapshotEvent.day} · ${snapshotEvent.timestamp}`:t('Day timeline · Europe/Helsinki');
+    if($('clock-label').textContent!==label)$('clock-label').textContent=label;
+    if($('clock').textContent!==value)$('clock').textContent=value;
+    if($('clock').title!==title)$('clock').title=title;
+  }
   function syncJourney(){
     const index=$('replay-mode').value==='walkthrough' && journey.length?Math.min(Math.floor(phase/42),journey.length-1):-1;
     const frame=index<0?selectedFrame:journey[index];
@@ -50,6 +61,7 @@
     if(index===journeyIndex && lessonState===frame.state && snapshotEvent===frame.event)return;
     journeyIndex=index;lessonState=frame.state;snapshotEvent=frame.event;
     evidence(lessonState,snapshotEvent);
+    updateClock();
   }
   function evidence(state,event){
     $('lesson-title').textContent=state?`${state.id.toUpperCase()} · ${state.title}`:'No material snapshot at this point in the recorded history.';
@@ -75,10 +87,16 @@
   }
   function showRole(role) {
     $('role-name').textContent = role.name;
+    const hasPortrait=role.id!=='lounge';
+    $('role-portrait-frame').hidden=!hasPortrait;
+    if(hasPortrait){
+      window.AgentOfficeScene.create($('role-portrait'),{phase:()=>0,still:()=>true}).portrait(role.id);
+      $('role-portrait-caption').textContent=role.name;
+    }
     $('role-label').textContent = role.label;
     $('role-description').textContent = i18n.roleDescription(role.id,role.description);
     $('role-path').textContent = role.path;
-    $('role-dialog').querySelector('.subtle').textContent=role.id==='gatekeeper'?(lessonState?`${lessonState.id.toUpperCase()}: science ${lessonState.science.status}; pedagogy ${lessonState.pedagogy.status}. Recorded review eligibility ${lessonState.eligible?'cleared':'blocked'}. `:'No material snapshot selected. ')+'The walkthrough desk separately waits for both report deliveries. Passing review clears only the review requirement; automated checks and Lauri’s publication decision are separate.':'Room activity comes from recorded file changes. Couriers and handoffs illustrate the workflow; they are not records of running agents, actual conversations or human approvals.';
+    $('role-dialog').querySelector('.subtle').textContent=role.id==='chatgpt'?'The whole-webpage review is an optional workflow described by Lauri. It is not recorded agent activity and does not change the selected material’s evidence.':role.id==='gatekeeper'?(lessonState?`${lessonState.id.toUpperCase()}: science ${lessonState.science.status}; pedagogy ${lessonState.pedagogy.status}. Recorded review eligibility ${lessonState.eligible?'cleared':'blocked'}. `:'No material snapshot selected. ')+'The walkthrough desk separately waits for both report deliveries. Passing review clears only the review requirement; automated checks and Lauri’s publication decision are separate.':'Room activity comes from recorded file changes. Couriers and handoffs illustrate the workflow; they are not records of running agents, actual conversations or human approvals.';
     if(!$('role-dialog').open)$('role-dialog').showModal();
     $('role-dialog').dataset.role=role.id;
   }
@@ -92,16 +110,16 @@
   for(const day of days){const option=document.createElement('option');option.value=day;option.textContent=dayLabel(day);$('day').append(option);}
   function setPlaying(value){
     if(value && $('replay-mode').value==='walkthrough' && journey.length && phase>=journey.length*42-.001)phase=0;
-    playing=value && selected.length>0;
+    playing=value && (wholeWebReview() || selected.length>0);
     $('play').replaceChildren(document.createTextNode(playing?'Ⅱ ':'▶ '),Object.assign(document.createElement('span'),{textContent:playing?'Pause':'Play'}));
-    $('play').setAttribute('aria-label',`${playing?'Pause':'Play'} ${$('replay-mode').value==='history'?'day history':'material journey'}`);
+    $('play').setAttribute('aria-label',`${playing?'Pause':'Play'} ${wholeWebReview()?'whole webpage review':$('replay-mode').value==='history'?'day history':'material journey'}`);
     $('play').setAttribute('aria-pressed',String(playing));
     $('presentation-play').textContent=playing?'Pause':'Play';
     $('presentation-play').setAttribute('aria-label',playing?'Pause':'Play');
   }
   function seek(value){minute=Math.max(0,Math.min(1439.999,Number(value)));update();draw();}
   function update(){
-    $('timeline').value=minute;$('clock').textContent=time(minute);
+    $('timeline').value=minute;updateClock();
     $('timeline').setAttribute('aria-valuetext',time(minute)+' Helsinki time');
     const active=activeRoles();
     for(const b of $('desks').children)b.classList.toggle('active',active.has(b.dataset.role));
@@ -125,7 +143,7 @@
     $('log-count').textContent=`${selected.length} commits`;$('empty').hidden=selected.length>0;
     selected.forEach(event=>{
       const li=document.createElement('li'),b=document.createElement('button'),t=document.createElement('time'),text=document.createElement('span'),meta=document.createElement('small');
-      b.type='button';t.textContent=time(event.minute);t.dateTime=event.timestamp;
+      b.type='button';t.textContent=window.OfficeTime.commit(event.timestamp);t.dateTime=event.timestamp;t.title=event.timestamp;
       const title=document.createElement('span');title.dataset.noI18n='';title.textContent=event.title;
       meta.textContent=`${event.id.slice(0,7)} · ${event.files} changed files · ${roleNames(event.roles)}`;
       text.append(title,meta);b.append(t,text);li.append(b);$('events').append(li);
@@ -140,8 +158,16 @@
   $('play').addEventListener('click',()=>{if($('replay-mode').value==='history' && minute>=1439.9)seek(0);setPlaying(!playing);});
   $('next').addEventListener('click',()=>{setPlaying(false);const event=selected.find(e=>e.minute>minute+0.001);seek(event?event.minute:1439.999);});
   $('next-stage').addEventListener('click',()=>{setPlaying(false);if(journey.length){phase=Math.min(Math.floor(phase/42)+1,journey.length-1)*42;draw();}});
-  $('next-handoff').addEventListener('click',()=>{setPlaying(false);const next=scene.nextHandoff();phase=Math.floor(phase/42)*42+next;if(next===0)phase+=42;if(journey.length && phase>=journey.length*42)phase=journey.length*42-.001;draw();});
-  $('replay-mode').addEventListener('change',()=>{setPlaying(false);phase=0;journeyIndex=-2;syncJourney();draw();$('mode-label').textContent=$('replay-mode').value==='history'?'DAY HISTORY':'MATERIAL WALKTHROUGH';});
+  $('next-handoff').addEventListener('click',()=>{setPlaying(false);const next=scene.nextHandoff();phase=Math.floor(phase/42)*42+next;if(next===0)phase+=42;if(!wholeWebReview() && journey.length && phase>=journey.length*42)phase=journey.length*42-.001;draw();});
+  $('replay-mode').addEventListener('change',()=>{
+    setPlaying(false);phase=0;journeyIndex=-2;syncJourney();
+    document.body.classList.toggle('website-review',wholeWebReview());
+    $('web-review').hidden=!wholeWebReview();
+    $('play').disabled=!wholeWebReview() && !selected.length;
+    $('data-source').textContent=wholeWebReview()?'Workflow described by Lauri · illustrative playback':`Git history · ${history.events.length} commits · Europe/Helsinki`;
+    $('mode-label').textContent=wholeWebReview()?'WEBPAGE REVIEW MODEL':$('replay-mode').value==='history'?'DAY HISTORY':'MATERIAL WALKTHROUGH';
+    draw();
+  });
   $('timeline').addEventListener('input',e=>{setPlaying(false);seek(e.target.value);});
   $('motion').checked=reduced;
   $('motion').addEventListener('change',()=>draw());
@@ -166,7 +192,11 @@
   canvas.addEventListener('mousemove',e=>{canvas.style.cursor=hit(point(e))?'pointer':'default';});
   function draw(){
     syncJourney();
+    updateClock();
     const result=scene.draw();
+    if(wholeWebReview())for(const [index,item] of [...$('web-review').querySelectorAll('li')].entries()){
+      if(index===result.step)item.setAttribute('aria-current','step');else item.removeAttribute('aria-current');
+    }
     const caption=t('Workflow illustration: {caption}',{caption:result.caption});
     if($('scene-story').textContent!==caption)$('scene-story').textContent=caption;
     const speech=result.speech?`${t(officeRoles.find(role=>role.id===result.speech.speaker)?.name || result.speech.speaker)}: ${result.speech.text}`:'';
