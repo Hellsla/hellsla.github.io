@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6167b77d298d349a
+CONTENT-HASH: 6dfb464fbab8578b
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md Esimerkki, vaihe "Kaava ratkaistuna" — the student is not told why the slope is taken from the end points (the points lie on one line, so any two give the same k; the end points are only the most accurate), nor what k means physically — add one sentence: "Pisteet ovat samalla suoralla, joten mitkä tahansa kaksi antavat saman kulmakertoimen; päätepisteet ovat pisimmällä toisistaan. Kulmakerroin kertoo, kuinka monta kilopascalia paine muuttuu yhtä celsiusastetta kohti."
-- solutions.md fy3-3-L2-03 Vastaus — "kaksi merkitsevää numeroa, koska ekstrapoloitu arvo on vain arvio" contradicts the rule that precision follows the data (110 and 137 kPa have three figures, 87 kPa is the 2-figure rounding of 86,86). Say: "87 kPa; ekstrapoloitu arvo on epävarmempi kuin mittaukset, joten kaksi numeroa riittää" or give 86,9 kPa.
-- solutions.md fy3-3-L2-02, L2-03 — the line k = 0,33 and p = ... is substituted in one step; show p = 90,0 + 11,55 = 101,55 kPa as a separate intermediate line for a weaker student.
-- inquiry.json check-2 duplicates the worked example's extrapolation (a table of model values, another zero-pressure temperature); acceptable as a transfer check, but it is the third extrapolation of the lesson (example, L2-03, check-2).
-- lesson.md Yleinen virhekäsitys — "Fysikaalisesti oikea vertailu tehdään kelvineinä" reads stiffly; "Oikea vertailu tehdään kelvineinä" is plainer.
+- solutions.md fy3-3-L2-03 Vastaus — "(lukemien erotuksella on erotuksen numerot)" is too terse for a student who could not do the task; say "(kahden lukeman erotuksessa on yhtä monta merkitsevää numeroa kuin erotuksessa 27 kPa)" or drop the parenthesis.
+- solutions.md fy3-3-L2-02, L2-03 Vastaus — the answer line now uses k rounded (0,33; 0,39; kθ ≈ 12; 23) while Sijoitus shows 11,55 and 0,385714; add "pyöristettynä" before the rounded values so the student does not think the calculation changed.
+- solutions.md fy3-3-L2-04 Vastaus — "100 K ja 400 K kelvinin tarkkuudella, kolme merkitsevää numeroa" is accurate only because the data are whole degrees; say "täysinä asteina annetut lämpötilat ovat 1 K:n tarkkuudella". exercises.json stores the answer as 4.0 while the solution says 4,00 (tolerance covers it).
+- inquiry.json check-2 solution — heading "Kuvaajan lukeminen" still sits over a text that now reads a table; rename to "Pisteiden lukeminen".
+- Carried from round 1, still open: Esimerkki "Kaava ratkaistuna" gives no reason for using the end points or meaning of k.
 
 ## Checked
-- Worked example: seven staged steps, one step each, lead-ins bold; 390 px capture shows formulas and units readable, symbolic solution before numbers, sensible check with an independent route.
-- All 12 exercise solutions plus the two numeric tasks (siirto, check-2) sit behind their own Näytä ratkaisu (14 buttons in the preview); each has Annettu, Kysytty, principle with reason, symbolic formula, conversions, substitution, rounded answer with sig-fig reason, sanity check.
-- Principles are explained, not just named (why kelvin: particle energy proportional to T; why Δ is equal in K and °C: constant cancels); a student who failed the task can follow.
-- Graph tasks (check-2, L2-03) show how the line is read and how the answer follows.
-- Arithmetic of all solutions rechecked (294,15; 76,85; 121,67; 101,55; 86,86; 3,9955; 320,8; 127,05; -126,575) and consistent with answers and tolerances.
-- Levels: 5/4/3, none repeats the example; L3 needs proportionality in kelvin or energy reasoning; exit ticket tests the core idea.
-- Inquiry: predictions before evidence, refutable by exp-1/exp-2, feedback repairs misconceptions; workload fits one lesson, optional items marked.
-- Finnish: glossary terms correct (systeemi, tilanmuuttuja, kelvin, absoluuttinen nollapiste); case after number+unit correct.
-- Phone captures: example, exercises stage collapse into levels, nothing clipped.
+- Diff reviewed: exit-ticket answer −273,15 °C (noin −273 °C) matches lesson.md and the glossary.
+- L1-02 and L2-05 (glossary-adjacent) Vastaus lines now say the exact 273,15 does not limit and show the one-decimal alternative: reads clearly, correct (−195,75 -> −196; −270,45 -> −270).
+- L2-02 and L2-03 sig-fig reasoning (Δp has two figures, sum/difference rounded to units) is followable and consistent with the arithmetic (101,55; 86,86).
+- L2-04 now 4,00 with a stated reason; arithmetic 3,9955 consistent.
+- L3 energy-halving Periaate now "pienimmillään (mallissa nolla)": consistent with the glossary and no longer overclaims.
+- check-2 "Taulukosta luetaan" matches the table the task shows.
+- Rest of the lesson unchanged since my round-1 PASS; example and phone captures not affected by the diff.

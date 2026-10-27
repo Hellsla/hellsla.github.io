@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4c0ea14d24c36a07
+CONTENT-HASH: b799bf141b539b27
 
 ## Blocking
 (none)
 
 ## Polish
-1. solutions.md fy3-6-L2-01 and L3 (kauha), Muunnokset — "painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran" is correct but abstract for a 17-year-old; say: "T on massoilla painotettu keskiarvo, ja keskiarvo siirtyy samalla tavalla kuin luvut".
-2. inquiry.json sovella (kylpyamme) — "80,0 kg", "30,0 °C" read as a measurement, but the 3-figure answer 29,1 kg is now consistent with the data; Vastaus line is fine. Optional: say "Lämpötilat on mitattu 0,1 asteen tarkkuudella" once in the solution to justify the figures.
-3. Earlier Polish items 1-5 (vaihe 3 division step, vaihe 7 length, P = E/t, L3-02 explicit sentence, return to opening question) are not in this diff and stand as before.
+1. inquiry.json siirto (kylpyamme), Vastaus — the sentence is correct but a student sees 80,0 and 22,0 (three figures) and may ask why two; add half a sentence: "erotus 38,0 − 30,0 on 8,0, ja erotuksessa on vähemmän merkitseviä numeroita kuin luvuissa itsessään".
+2. inquiry.json siirto — hint 3 and the Vastaus line differ in figures (29,09 shown, 29 asked); the numeric field accepts 29,1 and 29 (tolerance 0,02 around 29,1), so no student is marked wrong, but the feedback could say that 29,1 is also accepted.
+3. Earlier Polish items (weighted-mean wording in Muunnokset, vaihe 3 division step, vaihe 7 length, P = E/t, L3-02 explicit sentence, return to opening question) are outside this diff and stand as before.
 
 ## Checked
-- Hash at start and end equal (4c0ea14d24c36a07).
-- Diff is significant-figure consistency only: L1-04 (38,0 to 31,0 °C, ΔT -7,0 K, -35,2 MJ, answer -35 MJ, two figures justified by ΔT) is correct and matches answer/tolerance.
-- Sovella bath task: 80,0·8,0/22,0 = 29,09 kg, answer 29,1 kg (three figures, justified); hints, both mistake values (220, 21,3) and their feedback consistent with the new data.
-- Mistake 21,3 = 80,0·8,0/30,0, still repairs the real slip (wrong ΔT of hot water).
-- Ice task Järkevyys rewording (0,50 kg liquid water would need about twice the heat) is physically right and clearer than before.
-- Muunnokset addition (Celsius usable because T is a weighted mean) is correct; the 77,6 and 27,11 °C results are unchanged.
-- Steps and structure of all touched solutions still follow the seven stages; no step lost.
-- Finnish in the changed lines: decimal commas, spacing and cases correct.
+- Hash at start and end equal (b799bf141b539b27).
+- The diff is one line: the Vastaus line of the siirto solution, now 29 kg with two figures justified by the 8,0 K temperature change.
+- Justification names the right limiting datum (the difference T − T_a) in language a 17-year-old can follow.
+- Answer 29,1 and tolerance 0,02 still accept the two-figure answer 29 kg; hints, mistakes 220 and 21,3 unchanged and consistent.
+- The Järkevyys check (29,09 · 22,0 = 80,0 · 8,0 = 640 kg·K) keeps unrounded figures and is still a real check.
+- All seven stages of the solution remain; no step lost.
+- Finnish in the changed line: decimal comma, spacing, "kahden numeron tarkkuudella" correct.

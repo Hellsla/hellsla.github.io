@@ -1,5 +1,3 @@
 VERDICT: DONE
 
-solutions.md: all 12 solutions now have Periaate (conservation of energy and why it applies here: sign of Q and W, W = Fs for a constant mean force, Q = 0 for the insulated bath, Delta U from state only for an ideal gas) and Muunnokset (each conversion, or one sentence why none is needed). Kaava ends with the unknown solved in symbols; Vastaus gives value and unit, then the reason for the figures; Järkevyys now has real checks (balance recomputed, 1 kg of water warms only 0,24 K per 1000 J, limiting cases). No numeric error found in the old solutions; every value agrees with answers.py.
-lesson.md: the Esimerkki is now the seven stages (Periaate, Kaava ratkaistuna and Yksikkömuunnokset added; the problem text and figures untouched).
-inquiry.json: solutions added to the numeric tasks siirto (rewritten in the full step order) and check-2 (was missing). Nothing else changed.
+solutions.md only: L1-01 and example-style Periaate now says energy crosses the boundary only as work or heat (no mechanical energy claim); L1-05, L2-02, L2-03, L2-04, L3-03 Vastaus lines name the limiting datum/precision (L2-03 now 0,8 kJ, one figure); L3-02 Periaate uses F = G = mg and W1 = Fh (no E_k/E_p); L3-01 and L3-03 Periaate reason from the task stating constant temperature and amount (no asserted ideal-gas U(T) law). No numbers, answers.py or tasks changed.

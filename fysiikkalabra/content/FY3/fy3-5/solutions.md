@@ -1,7 +1,7 @@
 ## fy3-5-L1-01
 **Annettu:** systeemi on taikina; käsien tekemä työ $W = +450\,\text{J}$ (ympäristö tekee työtä taikinaan), käsistä siirtyvä lämpö $Q = +120\,\text{J}$ (lämpöä siirtyy taikinaan)
 **Kysytty:** taikinan sisäenergian muutos $\Delta U$
-**Periaate:** Energia säilyy: systeemin sisäenergia muuttuu täsmälleen sen verran kuin siihen siirtyy energiaa lämpönä ja työnä (termodynamiikan ensimmäinen pääsääntö). Laki pätee, koska taikina on selvästi rajattu systeemi eikä sen mekaaninen energia muutu. Molemmat siirrot tuovat energiaa systeemiin, joten molemmat ovat positiivisia.
+**Periaate:** Energia säilyy: systeemin sisäenergia muuttuu täsmälleen sen verran kuin siihen siirtyy energiaa lämpönä ja työnä (termodynamiikan ensimmäinen pääsääntö). Laki pätee, koska taikina on selvästi rajattu systeemi ja kaikki energia ylittää sen rajan vain työnä tai lämpönä. Molemmat siirrot tuovat energiaa systeemiin, joten molemmat ovat positiivisia.
 **Kaava:** $\Delta U = Q + W$, ja kysytty $\Delta U$ on jo yhtälön vasemmalla puolella
 **Muunnokset:** Ei tarvita: sekä $Q$ että $W$ on annettu jouleina, ja tulos halutaan jouleina.
 **Sijoitus:** $\Delta U = 120\,\text{J} + 450\,\text{J} = 570\,\text{J}$
@@ -45,7 +45,7 @@
 **Kaava:** $\Delta U = Q + W$, ja kysytty $\Delta U$ on jo yhtälön vasemmalla puolella
 **Muunnokset:** Ei tarvita: kumpikin siirto on annettu jouleina.
 **Sijoitus:** $\Delta U = 15\,\text{J} + (-85\,\text{J}) = -70\,\text{J}$
-**Vastaus:** $-70\,\text{J}$, kaksi merkitsevää numeroa kuten luvussa $85\,\text{J}$.
+**Vastaus:** $-70\,\text{J}$, kokonaisina jouleina, koska molemmat siirrot on annettu kokonaisina jouleina.
 **Järkevyys:** Laajenemistyö vie enemmän energiaa kuin lämpö tuo ($85\,\text{J} > 15\,\text{J}$), joten sisäenergian on pienennyttävä ja ilman jäähdyttävä. Siksi venttiili tuntuu kylmältä, kun ilmaa päästetään ulos.
 
 ## fy3-5-L2-01
@@ -65,7 +65,7 @@
 **Kaava:** vastuksen siirtämä energia $Q_\text{sis} = Pt$, nettolämpö $Q = Pt - Q_\text{ulos}$ ja $\Delta U = Q + W$, joten $\Delta U = Pt - Q_\text{ulos}$
 **Muunnokset:** $P = 2{,}0\,\text{kW} = 2000\,\text{W}$, jolloin $Pt$ tulee jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Pt = 2000\,\text{W} \cdot 90\,\text{s} = 180\,000\,\text{J} = 180\,\text{kJ}$. Siis $\Delta U = 180\,\text{kJ} - 20\,\text{kJ} + 0 = 160\,\text{kJ}$
-**Vastaus:** $160\,\text{kJ}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{kW}$ ja lämmössä $20\,\text{kJ}$ (kolmas numero on nolla).
+**Vastaus:** $160\,\text{kJ}$, kaksi merkitsevää numeroa: erotus $180\,\text{kJ} - 20\,\text{kJ}$ tunnetaan kymmenen kilojoulen tarkkuudella, koska lämpö $20\,\text{kJ}$ on annettu vain niin tarkasti.
 **Järkevyys:** Veteen jää $\tfrac{160}{180} \approx 89\,\%$ vastuksen energiasta ja vain pieni osa karkaa kuoren läpi, mikä sopii hyvin eristettyyn keittimeen. Karkeasti: 2 kW kahden minuutin ajan olisi 240 kJ, joten 90 s:ssa tulee noin kolme neljäsosaa siitä eli 180 kJ.
 
 ## fy3-5-L2-03
@@ -75,7 +75,7 @@
 **Kaava:** $\Delta U = Q + W$, joten $Q = \Delta U - W$
 **Muunnokset:** Vastaus halutaan jouleina: $\Delta U = -1{,}2\,\text{kJ} = -1200\,\text{J}$ ja $W = -2{,}0\,\text{kJ} = -2000\,\text{J}$.
 **Sijoitus:** $Q = -1200\,\text{J} - (-2000\,\text{J}) = 800\,\text{J}$
-**Vastaus:** $800\,\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}0\,\text{kJ}$ ja $1{,}2\,\text{kJ}$; vastaus on kokonaisina satoina jouleina.
+**Vastaus:** $800\,\text{J} = 0{,}8\,\text{kJ}$; erotus tunnetaan sadan joulen tarkkuudella kuten tiedot, joten yksi merkitsevä numero.
 **Järkevyys:** $Q$ on positiivinen, joten lämpöä siirtyy höyryyn. Höyry luovutti työnä 2000 J mutta sen sisäenergia pieneni vain 1200 J, joten puuttuvan 800 J:n on täytynyt tulla lämpönä sylinterin kuumista seinistä. Tase: $800\,\text{J} - 2000\,\text{J} = -1200\,\text{J}$.
 
 ## fy3-5-L2-04
@@ -85,13 +85,13 @@
 **Kaava:** $\Delta U = Q + W$, joten $W = \Delta U - Q$. Koska $P = \dfrac{W}{t}$, ratkeaa $t = \dfrac{W}{P} = \dfrac{\Delta U - Q}{P}$
 **Muunnokset:** Energiat kilojouleista jouleiksi, jotta tulos tulee sekunteina: $1\,\text{kJ} = 1000\,\text{J}$, joten $\Delta U = 12\,000\,\text{J}$ ja $Q = 2000\,\text{J}$. Tehon yksikkö $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$.
 **Sijoitus:** $W = 12\,\text{kJ} - 2{,}0\,\text{kJ} = 10\,\text{kJ} = 10\,000\,\text{J}$. Siis $t = \dfrac{10\,000\,\text{J}}{250\,\text{W}} = 40\,\text{s}$
-**Vastaus:** $40\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $12\,\text{kJ}$ ja $2{,}0\,\text{kJ}$.
+**Vastaus:** $40\,\text{s}$, kaksi merkitsevää numeroa, koska työ $W = 12\,\text{kJ} - 2{,}0\,\text{kJ} = 10\,\text{kJ}$ tunnetaan tarkkuudella $1\,\text{kJ}$ (sisäenergia $12\,\text{kJ}$ on annettu kokonaisina kilojouleina).
 **Järkevyys:** Alle minuutin sekoitus on tehosekoittimelle tavallinen aika. Tarkistus tehosta: $250\,\text{W} \cdot 40\,\text{s} = 10\,000\,\text{J}$, ja $10\,\text{kJ} + 2{,}0\,\text{kJ} = 12\,\text{kJ}$. Jos lämpöä ei siirtyisi, aikaa kuluisi $\tfrac{12\,000}{250} = 48\,\text{s}$, joten tulos on sitä lyhyempi, kuten pitääkin.
 
 ## fy3-5-L3-01
 **Annettu:** systeemi on pumpun ilma (määrä ei muutu); $F = 120\,\text{N}$, $s = 0{,}15\,\text{m}$, lämpötila pysyy vakiona
 **Kysytty:** ilmaan siirtyvä lämpömäärä $Q$ etumerkkeineen, ja miksi $\Delta U$ ei muutu
-**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Ilmaa voi pitää ideaalikaasuna, jonka sisäenergia riippuu vain lämpötilasta ja ainemäärästä. Kumpikaan ei muutu, joten $\Delta U = 0$. Silloin työn tuoma energia on siirryttävä pois lämpönä: $Q = -W$.
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Tehtävän mukaan lämpötila pysyy vakiona eikä ilman määrä muutu, joten hiukkasten liike-energia ja määrä ovat ennallaan ja ilman sisäenergia ei muutu: $\Delta U = 0$. Silloin työn tuoma energia on siirryttävä pois lämpönä: $Q = -W$.
 **Kaava:** $W = Fs$ ja $\Delta U = Q + W = 0$, joten $Q = -W = -Fs$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten tulo on jouleina.
 **Sijoitus:** $W = 120\,\text{N} \cdot 0{,}15\,\text{m} = 18\,\text{J}$ (työtä tehdään ilmaan, joten $W > 0$). Siis $Q = -18\,\text{J}$
@@ -101,7 +101,7 @@
 ## fy3-5-L3-02
 **Annettu:** systeemi on vesi; punnuksen massa $m = 5{,}0\,\text{kg}$, laskeutumisia $n = 12$, $\Delta U = 1{,}0\,\text{kJ}$, $g = 9{,}81\,\text{m/s}^2$, eristetty astia
 **Kysytty:** laskeutumiskorkeus $h$ yhdellä kerralla
-**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Astia on eristetty, joten lämpöä ei siirry ja $Q = 0$. Punnus laskeutuu tasaisella nopeudella, joten sen liike-energia ei muutu ja koko menetetty potentiaalienergia $mgh$ siirtyy siipipyörän työnä veteen. Silloin $\Delta U = W$.
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Astia on eristetty, joten lämpöä ei siirry ja $Q = 0$. Punnus laskeutuu tasaisella nopeudella, joten köysi vetää sitä voimalla $F = G = mg$ ja laskeutuessaan korkeuden $h$ köysi ja siipipyörä tekevät veteen työn $W_1 = Fh = mgh$. Silloin $\Delta U = W$.
 **Kaava:** yhden laskeutumisen työ $W_1 = mgh$, joten $\Delta U = nmgh$ ja $h = \dfrac{\Delta U}{nmg}$
 **Muunnokset:** $\Delta U = 1{,}0\,\text{kJ} = 1000\,\text{J}$. Lopuksi $1\,\text{J} = 1\,\text{N}\cdot\text{m}$ ja $1\,\text{N} = 1\,\tfrac{\text{kg}\cdot\text{m}}{\text{s}^2}$, joten osamäärän yksikkö on metri.
 **Sijoitus:** $h = \dfrac{1000\,\text{J}}{12 \cdot 5{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{1000\,\text{J}}{588{,}6\,\text{N}} = 1{,}6989\,\text{m}$
@@ -111,9 +111,9 @@
 ## fy3-5-L3-03
 **Annettu:** systeemi on kaasu; tapa A: $Q_\text{A} = +400\,\text{J}$, $W_\text{A} = -150\,\text{J}$ (kaasu tekee työtä); tapa B: $W_\text{B} = -60\,\text{J}$; sama alku- ja loppulämpötila, sama kaasun määrä
 **Kysytty:** lämpömäärä $Q_\text{B}$, ja miksi $\Delta U$ on kummassakin tavassa sama
-**Periaate:** Energia säilyy, joten $\Delta U = Q + W$ kummallekin tavalle. Kaasun sisäenergia riippuu vain lämpötilasta ja määrästä, ja ne ovat alussa ja lopussa samat. Siksi $\Delta U$ on sama kummassakin tavassa, vaikka lämpö ja työ eroavat: ne riippuvat reitistä, sisäenergia vain alku- ja lopputilasta.
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$ kummallekin tavalle. Tehtävän mukaan alku- ja lopputilassa kaasun lämpötila ja määrä ovat samat, joten hiukkasten liike-energia ja siten sisäenergia ovat samat. Siksi $\Delta U$ on sama kummassakin tavassa, vaikka lämpö ja työ eroavat: ne riippuvat reitistä, sisäenergia vain alku- ja lopputilasta.
 **Kaava:** $\Delta U_\text{A} = Q_\text{A} + W_\text{A}$ ja $\Delta U_\text{B} = \Delta U_\text{A}$, joten $Q_\text{B} = \Delta U_\text{A} - W_\text{B} = Q_\text{A} + W_\text{A} - W_\text{B}$
 **Muunnokset:** Ei tarvita: kaikki energiat on annettu jouleina.
 **Sijoitus:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. Siis $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$
-**Vastaus:** $310\,\text{J}$, kolme merkitsevää numeroa, koska yhteenlaskussa ja vähennyksessä kaikki arvot tunnetaan kokonaisina jouleina.
+**Vastaus:** $310\,\text{J}$; yhteenlaskussa tulos on yhtä tarkka kuin tiedot, jotka on annettu täysinä jouleina.
 **Järkevyys:** Tavassa B kaasu tekee vähemmän työtä, joten sama sisäenergian kasvu $250\,\text{J}$ syntyy pienemmällä lämmöllä kuin tavassa A: $310\,\text{J} < 400\,\text{J}$. Tase: $310\,\text{J} + (-60\,\text{J}) = 250\,\text{J} = \Delta U_\text{A}$.

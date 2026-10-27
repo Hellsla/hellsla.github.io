@@ -26,7 +26,7 @@
 **Muunnokset:** Tulos tulee kilojouleina: $15\,030\,\text{kJ}$. Lopuksi $1\,\text{MJ} = 1000\,\text{kJ}$, joten $15\,030\,\text{kJ} = 15{,}03\,\text{MJ}$.
 **Sijoitus:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} = 15\,030\,\text{kJ} = 15{,}03\,\text{MJ}$
 **Vastaus:** $15\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $45\,\text{kg}$.
-**Järkevyys:** Arvio: $330\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} \approx 15\,000\,\text{kJ}$. Vesikerroksen paksuus on $\dfrac{45\,\text{kg}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1\,\text{m}^2} = 4{,}5\,\text{cm}$, mikä sopii yhden pakkasyön jääkerrokseksi. Vapautuva lämpö hidastaa jäätymistä, joten järvi ei jäädy hetkessä.
+**Järkevyys:** Arvio: $330\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} \approx 15\,000\,\text{kJ}$. Vesikerroksen paksuus on $\dfrac{45\,\text{kg}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1\,\text{m}^2} = 4{,}5\,\text{cm}$, mikä sopii pakkasviikon aikana jäätyneeksi kerrokseksi. Vapautuva lämpö hidastaa jäätymistä, joten järvi ei jäädy hetkessä.
 
 ## fy3-7-L1-04
 **Annettu:** höyry, joka tiivistyy $100$-asteiseksi vedeksi, $m = 0{,}030\,\text{kg}$; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -46,8 +46,8 @@
 **Kaava:** $Q = E_2 - E_1$; sulaneen jään massa saadaan kaavasta $Q = sm$, eli $m = \dfrac{Q}{s}$
 **Muunnokset:** Ei tarvita: molemmat luvut luetaan kilojouleina. Tarkistuslaskussa $c_\text{jää}$ muunnetaan: $2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 2{,}1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$.
 **Sijoitus:** $Q = 186\,\text{kJ} - 19\,\text{kJ} = 167\,\text{kJ}$, ja $m = \dfrac{167\,\text{kJ}}{334\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}50\,\text{kg}$
-**Vastaus:** $167\,\text{kJ}$ ja jää sulaa. Kolme merkitsevää numeroa, koska käyrän luvut on annettu kolmen numeron tarkkuudella.
-**Järkevyys:** Jään lämmittäminen $18\,\text{K}$:lla vaatisi $2{,}1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 18\,\text{K} = 18{,}9\,\text{kJ} \approx 19\,\text{kJ}$, mikä täsmää käyrän alkuosaan. Sulaminen vie yli yhdeksän kertaa enemmän energiaa kuin lämpeneminen, siksi vaakasuora osa on niin pitkä.
+**Vastaus:** $167\,\text{kJ}$ ja jää sulaa. Molemmat lukemat ovat kilojoulen tarkkuudella, joten erotuskin on: $167\,\text{kJ}$, kolme merkitsevää numeroa.
+**Järkevyys:** Jään lämmittäminen $18\,\text{K}$:lla vaatisi $2{,}1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 18\,\text{K} = 18{,}9\,\text{kJ} \approx 19\,\text{kJ}$, mikä täsmää käyrän alkuosaan. Sulaminen vie lähes yhdeksän kertaa enemmän energiaa kuin lämpeneminen, siksi vaakasuora osa on niin pitkä.
 
 ## fy3-7-L2-01
 **Annettu:** $P = 2{,}0\,\text{kW}$, kiehuvasta vedestä höyrystyvä massa $m = 0{,}50\,\text{kg}$, kaikki levyn energia siirtyy veteen; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -116,5 +116,5 @@
 **Kaava:** $(P_1 - P_\text{h})t = r\Delta m_1$ ja $(P_2 - P_\text{h})t = r\Delta m_2$. Vähennetään yhtälöt: $(P_1 - P_2)t = r(\Delta m_1 - \Delta m_2)$, josta $r = \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}$
 **Muunnokset:** $t = 10{,}0\,\text{min} = 600\,\text{s}$, $\Delta m_1 = 0{,}196\,\text{kg}$ ja $\Delta m_2 = 0{,}0900\,\text{kg}$. Lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
 **Sijoitus:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0{,}196\,\text{kg} - 0{,}0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0{,}106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2{,}264\,\tfrac{\text{MJ}}{\text{kg}}$
-**Vastaus:** $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$, kolme merkitsevää numeroa kuten mittaustuloksissa.
+**Vastaus:** $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$, kolme merkitsevää numeroa: erotus $196\,\text{g} - 90{,}0\,\text{g} = 106\,\text{g}$ on gramman tarkkuudella ja sillä on kolme numeroa.
 **Järkevyys:** Ilmaan siirtyvä energia $P_\text{h}t$ on sama kummassakin mittauksessa ja kumoutuu erotuksesta. Yksittäiset mittaukset antaisivat $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0{,}196\,\text{kg}} \approx 2{,}45\,\tfrac{\text{MJ}}{\text{kg}}$ ja $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0{,}0900\,\text{kg}} \approx 2{,}67\,\tfrac{\text{MJ}}{\text{kg}}$, liian suuria, koska niissä myös ilmaan siirtynyt energia luettaisiin höyrystymiseen. Häviöteho on $800\,\text{W} - 2{,}264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0{,}196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, ja tulos on taulukon arvon $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ mukainen.

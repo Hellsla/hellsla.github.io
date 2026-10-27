@@ -1,25 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 6167b77d298d349a
+VERDICT: PASS
+CONTENT-HASH: 6dfb464fbab8578b
 
 ## Blocking
-- solutions.md:89 (L2-04) — The answer "4,0, two significant figures because the temperatures are given in whole degrees" does not follow. Whole degrees give T_yö = 100 K and T_päivä = 400 K to the kelvin, which is three figures each, so the quotient has three figures (4,00), as the house rule also says for 3-figure data. The stated reason is false. — Fix: give 4,00 and justify it ("kelvinlämpötilat 100 K ja 400 K tunnetaan kelvinin tarkkuudella, kolme numeroa"), or give a correct reason for 4,0.
-- solutions.md:79 (L2-03) — "Two significant figures because an extrapolated value is only an estimate" is not a precision argument. It also differs from the worked example, which uses the rule correctly. The 2 figures really come from the difference of readings: Δp = 137 − 110 = 27 kPa has two figures, so k = 0,39 kPa/°C and kΔθ ≈ 23 kPa, and 110 − 23 = 87 kPa to the whole kPa. — Fix: state that reason (NOTES §2: a difference of readings has the figures of the difference).
 
 ## Polish
-- solutions.md:28, 48 (L1-03, L1-05) — Adding the exact 273,15 keeps the reading's decimals (L1-01, L1-02 and L2-01 argue it that way), but these two argue from "significant figures like 77,4 K / 2,7 K". By the decimal rule the results would be −195,8 °C and −270,5 °C. The values given are allowed under the house 3-sf rule, but the reasoning contradicts L1-01/02. Use the house rule as the stated reason, or the decimal rule throughout.
-- solutions.md:68 (L2-02) — The number is right, but the reason "three figures like the given pressures" is not: Δp = 33 kPa has two figures, so k = 0,33 and k·35 ≈ 12 kPa, and 90,0 + 12 = 102 kPa to the kPa. Say this, as the worked example does.
-- solutions.md:115 (L3-03) — "absoluuttinen nollapiste, jossa liike-energia on nolla" contradicts the lesson's careful "pienimmillään" (lesson.md, glossary, check-3). Use "pienimmillään", or say "in the model".
-- inquiry.json:368 (check-2 solution) — "Kuvaajan lukeminen: Kuvaajasta luetaan…", but the task gives a table, not a graph. Say "taulukosta".
-- exit-ticket.json:12 — "−273 °C": write −273,15 °C (≈ −273 °C), consistent with the lesson.
+- answers.py:15 (L2-04) — `round(..., 1)` gives 4.0, but the solution now says 4,00 with three figures. The value is the same and inside the tolerance, but the code and the stated precision disagree. — Use `round(..., 2)` and update the comment.
+- inquiry.json:881 (siirto, Järkevyys) — "$0{,}20 \cdot 101\,\text{kPa} \approx 21\,\text{kPa}$": 0,20 · 101 is 20,2. The 21 comes from 60/293 = 0,205. — Write $0{,}205 \cdot 101 \approx 21$, or "noin 20 kPa, eli noin 121–122 kPa".
+- inquiry.json:940 (check-2) — The lead-in still says "Kuvaajan lukeminen", but the body now correctly reads from the table ("Taulukosta luetaan"). — Rename the lead-in to "Taulukon lukeminen".
 
 ## Checked
-- All 12 exercise answers recomputed independently: they match answers.py and exercises.json and sit inside their tolerances. The data are consistent with p ∝ T (L2-02 122,9; L2-03 137,2 kPa).
-- Worked example: the endpoint slope 0,37 gives −270 °C (least squares −271 °C). The 2-figure justification follows the difference rule. The check 136,6 vs 137 kPa is right.
-- siirto 121,7 → 122 kPa; mistakes 404 and 83,8 are correct; virhe 128 kPa, ≈7 %; check-2 −273 °C; pred-1 ratio 1,9995; the misconception's 1,035.
-- Each stated principle (constant V and n ⇒ p ∝ T; equal degree size ⇒ ΔT = Δθ) applies to its task, and the conversions are right.
-- sim.js: the pressure from wall impulse per length, averaged over both axes, is exactly N v²/(2·Wc·Hc), with no direction bias. pRef is consistent, p ∝ T/V, vRel = √(T/300), and the simulated-time window is independent of the speed setting.
-- exp-1 and exp-2 lock V or T respectively; the slider ranges and steps reach the suggested values; simState gives theta, vRel, pRel and pTheory.
-- All prediction keys and feedback numbers (100→200, 50→100, 1,41² ≈ 2) agree with the model.
-- The extrapolation figure is to scale (0,945 px/°C, 1,375 px/kPa, the axis at −300 °C), and so is the kelvin-scale figure (1,2008 px/K).
-- Model limits (2D, no collisions, equal speeds) are stated in `model`.
-- Scope is within FY3's central contents.
+- Round-1 Blocking L2-03 is fixed (solutions.md:79). The Vastaus line now says Δp = 27 kPa has two figures, so k = 0,39 kPa/°C, kΔθ ≈ 23 kPa and 110 − 23 = 87 kPa to the whole kPa. That is the difference rule, applied correctly.
+- Round-1 Blocking L2-04 is fixed (solutions.md:89). The answer is now 4,00, because whole degrees give 100 K and 400 K to the kelvin, three figures each. That is correct, and 3,9955 → 4,00.
+- The round-1 Polish items are addressed: L2-02 justifies by Δp = 33 kPa; L1-03 and L1-05 note the decimal-rule alternative; L3-03 says "pienimmillään (mallissa nolla)"; the exit ticket gives −273,15 °C.
+- I recomputed every answer in one script, and all twelve match answers.py: 294,15; 76,85; −195,75; 25; −270,45; 59,85; 101,55; 86,86; 3,9955; 320,82; 127,05; −126,575.
+- Worked example: −100/0,37 = −270,27 → −270 °C, with two figures from the 2-figure slope (Δp = 37 kPa). The independent check 100 · 373,15/273,15 = 136,6 vs 137 kPa is real.
+- Reasonableness checks recomputed: L2-03 by p ∝ T gives 86,7 kPa; L3-01 gives 20/288 · 300 ≈ 21 kPa; L3-02 gives p/T = 0,49975 both times and 36 °C by the Celsius ratio; L3-03 gives 283,15/293,15 = 0,966.
+- Numeric tasks: siirto 121,67 → 122 kPa, and its mistakes 404 and 83,84 are correct. check-2 gives −273 °C, with the correct 3-figure reason. virhe gives 128,19 kPa.
+- Every stated principle applies to its task: constant V and n means p ∝ T in kelvins, and the equal degree size means ΔT = Δθ. Every conversion is right, and every unknown is solved in symbols before substitution.
+- sim.js is unchanged in its physics: wall-impulse pressure ∝ N v²/(Wc·Hc), vRel = √(T/300), and the window runs on simulated time. exp-1 and exp-2 lock V and T respectively, and the predictions' numbers (100→200, 50→100, 1,41² ≈ 2) agree with the model.
+- Scope is inside FY3's contents "termodynaaminen systeemi ja tilanmuuttujat" and "lämpötila". The figures are to scale as stated.
