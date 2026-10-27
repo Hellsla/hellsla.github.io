@@ -270,26 +270,26 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Kylpyammeessa on 80 kg vettä, jonka lämpötila on 30 °C. Hanasta lasketaan lisää kuumaa vettä, jonka lämpötila on 60 °C, kunnes ammeen veden lämpötila on 38 °C. Kuinka monta kilogrammaa kuumaa vettä tarvitaan? Lämpöä ei oleteta siirtyvän ammeeseen eikä ilmaan. Vastaa kilogrammoina.",
+      "prompt": "Kylpyammeessa on 80,0 kg vettä, jonka lämpötila on 30,0 °C. Hanasta lasketaan lisää kuumaa vettä, jonka lämpötila on 60,0 °C, kunnes ammeen veden lämpötila on 38,0 °C. Kuinka monta kilogrammaa kuumaa vettä tarvitaan? Lämpöä ei oleteta siirtyvän ammeeseen eikä ilmaan. Vastaa kilogrammoina.",
       "answer": 29.1,
       "unit": "kg",
       "tolerance": 0.02,
       "hints": [
-        "Kuka luovuttaa lämpöä ja kuka vastaanottaa? Kuinka monta kelviniä kumpikin vesimäärä muuttuu, kun loppulämpötila on 38 °C?",
+        "Kuka luovuttaa lämpöä ja kuka vastaanottaa? Kuinka monta kelviniä kumpikin vesimäärä muuttuu, kun loppulämpötila on 38,0 °C?",
         "Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama: $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$. Sama $c$ supistuu pois.",
-        "$m_\\text{k} = \\dfrac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T} = \\dfrac{80\\,\\text{kg} \\cdot 8\\,\\text{K}}{22\\,\\text{K}}$."
+        "$m_\\text{k} = \\dfrac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}}$."
       ],
       "mistakes": [
         {
           "value": 220,
-          "feedback": "Lämpötilan muutokset ovat vaihtaneet paikkaa. Ammeen vesi lämpenee 8 K ja kuuma vesi jäähtyy 22 K; kuumaa vettä tarvitaan *vähemmän* kuin ammeessa on, koska sen lämpötila muuttuu enemmän."
+          "feedback": "Lämpötilan muutokset ovat vaihtaneet paikkaa. Ammeen vesi lämpenee 8,0 K ja kuuma vesi jäähtyy 22,0 K; kuumaa vettä tarvitaan *vähemmän* kuin ammeessa on, koska sen lämpötila muuttuu enemmän."
         },
         {
           "value": 21.3,
-          "feedback": "Laskit kuuman veden lämpötilan muutokseksi $60\\,{}^\\circ\\text{C} - 30\\,{}^\\circ\\text{C}$. Kuuma vesi jäähtyy loppulämpötilaan 38 °C asti, joten sen muutos on $60\\,{}^\\circ\\text{C} - 38\\,{}^\\circ\\text{C} = 22\\,\\text{K}$."
+          "feedback": "Laskit kuuman veden lämpötilan muutokseksi $60{,}0\\,{}^\\circ\\text{C} - 30{,}0\\,{}^\\circ\\text{C}$. Kuuma vesi jäähtyy loppulämpötilaan 38,0 °C asti, joten sen muutos on $60{,}0\\,{}^\\circ\\text{C} - 38{,}0\\,{}^\\circ\\text{C} = 22{,}0\\,\\text{K}$."
         }
       ],
-      "solution": "**Annettu:** ammeen vesi $m_\\text{a} = 80\\,\\text{kg}$, $T_\\text{a} = 30\\,{}^\\circ\\text{C}$; kuuma vesi $T_\\text{k} = 60\\,{}^\\circ\\text{C}$; loppulämpötila $T = 38\\,{}^\\circ\\text{C}$; ei lämpöhäviöitä\n\n**Kysytty:** kuuman veden massa $m_\\text{k}$\n\n**Periaate:** Energia säilyy: kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama. Kumpikin on vettä, joten sama $c$ supistuu pois.\n\n**Kaava:** $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$, josta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\\text{a} = 8\\,\\text{K}$ ja $T_\\text{k} - T = 22\\,\\text{K}$. Massa on jo kilogrammoina.\n\n**Sijoitus:** $m_\\text{k} = \\dfrac{80\\,\\text{kg} \\cdot 8\\,\\text{K}}{22\\,\\text{K}} = 29{,}09\\,\\text{kg}$\n\n**Vastaus:** $29\\,\\text{kg}$, kaksi merkitsevää numeroa kuten massassa $80\\,\\text{kg}$.\n\n**Järkevyys:** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu 22 K ja ammeen veden vain 8 K. Tarkistus: $29{,}09\\,\\text{kg} \\cdot 22\\,\\text{K} = 80\\,\\text{kg} \\cdot 8\\,\\text{K} = 640\\,\\text{kg}\\cdot\\text{K}$. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän.",
+      "solution": "**Annettu:** ammeen vesi $m_\\text{a} = 80{,}0\\,\\text{kg}$, $T_\\text{a} = 30{,}0\\,{}^\\circ\\text{C}$; kuuma vesi $T_\\text{k} = 60{,}0\\,{}^\\circ\\text{C}$; loppulämpötila $T = 38{,}0\\,{}^\\circ\\text{C}$; ei lämpöhäviöitä\n\n**Kysytty:** kuuman veden massa $m_\\text{k}$\n\n**Periaate:** Energia säilyy: kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama. Kumpikin on vettä, joten sama $c$ supistuu pois.\n\n**Kaava:** $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$, josta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\\text{a} = 8{,}0\\,\\text{K}$ ja $T_\\text{k} - T = 22{,}0\\,\\text{K}$. Massa on jo kilogrammoina.\n\n**Sijoitus:** $m_\\text{k} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}} = 29{,}09\\,\\text{kg}$\n\n**Vastaus:** $29{,}1\\,\\text{kg}$, kolme merkitsevää numeroa kuten massassa $80{,}0\\,\\text{kg}$ ja lämpötiloissa.\n\n**Järkevyys:** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu 22 K ja ammeen veden vain 8 K. Tarkistus: $29{,}09\\,\\text{kg} \\cdot 22{,}0\\,\\text{K} = 80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K} = 640\\,\\text{kg}\\cdot\\text{K}$. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän.",
       "optional": true
     },
     {

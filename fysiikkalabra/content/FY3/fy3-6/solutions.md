@@ -29,13 +29,13 @@
 **Järkevyys:** Sama lämpömäärä nostaisi 50 kg:n vesimäärän lämpötilaa vain noin 3,4 K, koska veden $c$ on viisinkertainen. Siksi hiekka kuumenee rannalla vettä nopeammin.
 
 ## fy3-6-L1-04
-**Annettu:** vesi, $m = 1200\,\text{kg}$, $T_\text{alku} = 38\,{}^\circ\text{C}$, $T_\text{loppu} = 31\,{}^\circ\text{C}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Annettu:** vesi, $m = 1200\,\text{kg}$, $T_\text{alku} = 38{,}0\,{}^\circ\text{C}$, $T_\text{loppu} = 31{,}0\,{}^\circ\text{C}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** veteen siirtyvä lämpömäärä $Q$ etumerkkeineen megajouleina
 **Periaate:** Vesi jäähtyy eikä sen olomuoto muutu. Kun $\Delta T$ lasketaan loppu miinus alku, kaava antaa jäähtymiselle negatiivisen $Q$:n: vesi luovuttaa lämpöä.
 **Kaava:** $Q = c m \Delta T$, missä $\Delta T = T_\text{loppu} - T_\text{alku}$
-**Muunnokset:** $\Delta T = 31\,{}^\circ\text{C} - 38\,{}^\circ\text{C} = -7\,\text{K}$, sama kelvineinä. Lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
-**Sijoitus:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1200\,\text{kg} \cdot (-7\,\text{K}) = -35\,196\,000\,\text{J} \approx -35{,}2\,\text{MJ}$
-**Vastaus:** $-35\,\text{MJ}$, kaksi merkitsevää numeroa, koska lämpötilat on annettu kokonaisina asteina.
+**Muunnokset:** $\Delta T = 31{,}0\,{}^\circ\text{C} - 38{,}0\,{}^\circ\text{C} = -7{,}0\,\text{K}$, sama kelvineinä. Lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
+**Sijoitus:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1200\,\text{kg} \cdot (-7{,}0\,\text{K}) = -35\,196\,000\,\text{J} \approx -35{,}2\,\text{MJ}$
+**Vastaus:** $-35\,\text{MJ}$, kaksi merkitsevää numeroa, koska lämpötilan muutos $7{,}0\,\text{K}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** $Q$ on negatiivinen, koska vesi jäähtyy. Paljussa on paljon vettä, joten jo muutaman kelvinin jäähtyminen vapauttaa kymmeniä megajouleja: $4\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 1200\,\text{kg} \cdot 7\,\text{K} \approx 34\,\text{MJ}$.
 
 ## fy3-6-L1-05
@@ -46,14 +46,14 @@
 **Muunnokset:** $\Delta T = -4{,}0\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 18\,\text{K}$, sama kelvineinä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 18\,\text{K} = 18\,900\,\text{J} = 18{,}9\,\text{kJ}$
 **Vastaus:** $19\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
-**Järkevyys:** Lämpötila nousee, joten $Q$ on positiivinen. Miinusmerkkisiä lukemia vähennettäessä on oltava tarkka: muutos on 18 K, ei 26 K. Jään $c$ on noin puolet veden arvosta, joten sama vesimäärä olisi vaatinut noin kaksinkertaisen lämpömäärän.
+**Järkevyys:** Lämpötila nousee, joten $Q$ on positiivinen. Miinusmerkkisiä lukemia vähennettäessä on oltava tarkka: muutos on 18 K, ei 26 K. Jään $c$ on noin puolet veden arvosta, joten saman lämpötilan muutoksen tekeminen 0,50 kg:lle nestemäistä vettä vaatisi noin kaksinkertaisen lämpömäärän.
 
 ## fy3-6-L2-01
 **Annettu:** kuuma vesi $m_1 = 160\,\text{g}$, $T_1 = 95\,{}^\circ\text{C}$; kylmä vesi $m_2 = 40\,\text{g}$, $T_2 = 8{,}0\,{}^\circ\text{C}$; molemmat vettä, ei lämpöhäviöitä
 **Kysytty:** tasapainolämpötila $T$
 **Periaate:** Energia säilyy: kun lämpöä ei siirry mukiin eikä ilmaan, kuuman veden luovuttama lämpömäärä on yhtä suuri kuin kylmän veden vastaanottama. Lopussa molemmilla on sama lämpötila $T$.
 **Kaava:** $c m_1 (T_1 - T) = c m_2 (T - T_2)$. Sama $c$ supistuu pois, ja $T$ ratkeaa: $T = \dfrac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$
-**Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi, koska massa on sekä osoittajassa että nimittäjässä ja yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina, koska yhtälössä on vain lämpötilaeroja.
+**Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi, koska massa on sekä osoittajassa että nimittäjässä ja yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina: tasapainoyhtälössä on vain lämpötilaeroja, ja ratkaistussa kaavassa painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8{,}0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77{,}6\,{}^\circ\text{C}$
 **Vastaus:** $78\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpötilassa $95\,{}^\circ\text{C}$ ja massassa $40\,\text{g}$.
 **Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä 95 °C:ta, koska kuumaa vettä on neljä kertaa enemmän. Energiatase toteutuu: $160\,\text{g} \cdot 17{,}4\,\text{K} = 40\,\text{g} \cdot 69{,}6\,\text{K}$.
@@ -83,7 +83,7 @@
 **Kysytty:** yhteinen loppulämpötila $T$
 **Periaate:** Energia säilyy: kauhan luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama, ja lopussa molemmilla on sama lämpötila. Aineet ovat eri, joten ominaislämpökapasiteetit eivät supistu.
 **Kaava:** $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$, josta $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
-**Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina, koska yhtälössä on vain lämpötilaeroja.
+**Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina: tasapainoyhtälössä on vain lämpötilaeroja, ja ratkaistussa kaavassa painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ ja $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27{,}11\,{}^\circ\text{C}$
 **Vastaus:** $27\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massoissa.
 **Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen kauhan lämpökapasiteettiin verrattuna, joten kauha jäähtyy noin 68 K mutta vesi lämpenee vain noin 9 K. Lämpötilojen keskiarvo 56,5 °C olisi väärin.

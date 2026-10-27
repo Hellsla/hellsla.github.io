@@ -207,50 +207,49 @@ missä $P$ on lämpöteho (W), $U$ rakennusosan U-arvo (W/(m²·K)), $A$ pinta-a
 Omakotitalon seinien pinta-ala on 120 m² ja U-arvo 0,17 W/(m²·K), ja ikkunoiden pinta-ala on 20 m² ja U-arvo 1,0 W/(m²·K). Sisällä on 21 °C ja ulkona −15 °C. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi, ja kuinka paljon energiaa se siirtää vuorokaudessa?
 
 <!-- vaihe -->
-**Lämpötilaero.** Lämpötilaero on sama kelvineinä ja celsiusasteina:
+
+**Tunnetut ja kysytty.** Seinät: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Ikkunat: $A_\text{i} = 20\,\text{m}^2$, $U_\text{i} = 1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Lämpötilat $T_\text{sisä} = 21\,{}^\circ\text{C}$ ja $T_\text{ulko} = -15\,{}^\circ\text{C}$. Kysytään lämpötehoa $P$ ja energiaa $E$ vuorokaudessa.
+
+<!-- vaihe -->
+
+**Periaate.** Lämpö johtuu rakenteen läpi lämpimästä kylmään, ja kun lämpötilat pysyvät vakioina, teho on verrannollinen pinta-alaan ja lämpötilaeroon: $P = UA\Delta T$. Seinät ja ikkunat johtavat lämpöä rinnakkain, joten niiden tehot lasketaan yhteen. Teho on vakio, joten energia on teho kerrottuna ajalla.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Ratkaistaan ensin teho ja sitten energia:
 ```latex
 \begin{aligned}
-\Delta T &= T_\text{sisä} - T_\text{ulko} \\
-&= 21\,{}^\circ\text{C} - (-15\,{}^\circ\text{C}) \\
-&= 36\,\text{K}
+&P = (U_\text{s} A_\text{s} \\
+&\quad + U_\text{i} A_\text{i})\,\Delta T \\[6pt]
+&E = Pt
 \end{aligned}
 ```
 
 <!-- vaihe -->
-**Kaava ratkaistuna.** Seinät ja ikkunat johtavat lämpöä rinnakkain, joten tehot lasketaan yhteen:
+
+**Yksikkömuunnokset.** Lämpötilaero on sama kelvineinä ja celsiusasteina: $\Delta T = 21\,{}^\circ\text{C} - (-15\,{}^\circ\text{C}) = 36\,\text{K}$. Aika on $t = 24\,\text{h}$, ja teho muutetaan kilowateiksi, jotta energia tulee kilowattitunteina.
+
+<!-- vaihe -->
+
+**Sijoitus.** Lasketaan teho ja sen jälkeen energia:
 ```latex
 \begin{aligned}
-P &= P_\text{seinä} + P_\text{ikkuna} \\
-&= (U_\text{s} A_\text{s} + U_\text{i} A_\text{i})\,\Delta T
+&P = (0{,}17 \cdot 120 \\
+&\quad + 1{,}0 \cdot 20)\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K} \\
+&= (20{,}4 + 20)\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K} \\
+&= 1454{,}4\,\text{W} \\
+&E = 1{,}4544\,\text{kW} \cdot 24\,\text{h} \\
+&= 34{,}9\,\text{kWh}
 \end{aligned}
 ```
 
 <!-- vaihe -->
-**Sijoitus.** Sijoitetaan arvot yksiköineen:
-```latex
-\begin{aligned}
-P_\text{seinä} &= U_\text{s} A_\text{s}\,\Delta T \\
-&= 0{,}17\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 120\,\text{m}^2 \cdot 36\,\text{K} \\
-&\approx 730\,\text{W} \\
-P_\text{ikkuna} &= U_\text{i} A_\text{i}\,\Delta T \\
-&= 1{,}0\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 20\,\text{m}^2 \cdot 36\,\text{K} \\
-&= 720\,\text{W}
-\end{aligned}
-```
-Yhteensä $P \approx 1450\,\text{W} \approx 1{,}5\,\text{kW}$.
+
+**Tulos.** Seinien ja ikkunoiden läpi johtuu teho $P \approx 1{,}5\,\text{kW}$, ja vuorokaudessa se siirtää energian $E \approx 35\,\text{kWh}$. Kaksi merkitsevää numeroa riittää, koska U-arvot on annettu kahdella numerolla.
 
 <!-- vaihe -->
-**Energia vuorokaudessa.** Energia on teho kertaa aika, $E = Pt$:
-```latex
-\begin{aligned}
-E &= P t \\
-&= 1{,}45\,\text{kW} \cdot 24\,\text{h} \\
-&\approx 35\,\text{kWh}
-\end{aligned}
-```
 
-<!-- vaihe -->
-**Järkevyys.** Ikkunoiden ala on vain kuudesosa seinien alasta, mutta niiden läpi menee yhtä paljon lämpöä, koska niiden U-arvo on lähes kuusinkertainen. Talon lämmitys korvaa tämän tehon, ja katto, lattia ja ilmanvaihto lisäävät tarvetta vielä.
+**Järkevyys.** Ikkunoiden ala on vain kuudesosa seinien alasta, mutta niiden läpi menee yhtä paljon lämpöä ($20\,\text{W/K}$ ja $20{,}4\,\text{W/K}$), koska niiden U-arvo on lähes kuusinkertainen. Pyöristetyillä luvuilla $40\,\text{W/K} \cdot 36\,\text{K} \approx 1{,}4\,\text{kW}$ ja $1{,}4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. Talon lämmitys korvaa tämän tehon, ja katto, lattia ja ilmanvaihto lisäävät tarvetta vielä.
 
 ## Yleinen virhekäsitys
 Moni sekoittaa kasvihuoneilmiön ja otsonikadon, vaikka ne ovat eri asioita: otsonikato päästää läpi enemmän ultraviolettisäteilyä, mutta ei juuri lämmitä maapalloa. Toinen virhe on ajatella, että kasvihuoneilmiö on kokonaan haitallinen. Luonnollinen kasvihuoneilmiö pitää Maan elinkelpoisena, ja ongelma on sen voimistuminen ihmisen päästöjen vuoksi. Kolmas virhe on luulla, että villapaita tuottaa lämpöä. Se vain hidastaa lämmön johtumista ja konvektiota kehosta, samoin kuin seinän eriste hidastaa lämmön karkaamista talosta.

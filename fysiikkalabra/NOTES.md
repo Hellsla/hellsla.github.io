@@ -48,6 +48,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - Compute every answer in `answers.py` (one commented line per step, prints `{id: value}`); the lint re-runs
   it. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
+- A difference of readings has the figures of the difference, not of the readings: 38 °C − 31 °C = 7 K has one
+  significant figure, so a task whose answer carries two gives its temperatures as 38,0 °C and 31,0 °C; a rounding
+  justification in a solution names the datum that really limits the result. (2026-10-27, fy3-6)
 - A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): "luvussa *Paine ja hydrostaattinen
   paine*", "(luku *Työ ja energia*)", not "oppitunnilla fy3-4", "(fy3-4)" or "edellisellä oppitunnilla". The
   chapter name is the lesson's `title` in meta.json (without a trailing formula). `lint_lesson.py` flags ids and
