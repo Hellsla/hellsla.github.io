@@ -1,8 +1,7 @@
 VERDICT: DONE
-Round 1, draft. Every check in `check_lesson.py fy1-5` is ok.
-- `lesson.md`: Ydinajatus, Kaava, staged Voyager 2 example (s = s0 + vt, sources NASA/JPL named, "mallin arvo", 145,6 AU on 5. marraskuuta 2026, 15. helmikuuta 2026 model 143,3 AU against JPL 143,05 AU), misconception, summary; two figures from `lessons/FY1/fy1-5/figures.py`.
-- `inquiry.json`: Voyager hook, two predictions with experiments (origin start; start at 6 m), conclusion, error-spotting, transfer task, three checks.
-- `exercises.json`, `solutions.md`, `exit-ticket.json`, `lessons/FY1/fy1-5/answers.py`: 12 exercises (L3 includes two Voyager 2 tasks), all solutions complete.
-- Simulation `assets/sims/fy1/fy1-5/sim.js` (cart, (t, s) graph), `tests/sims/fy1-5.json`, `sim-spec.md`, `lang/fi.json` (sims.fy1-5 only).
-- `glossary.json`: tasainen liike, matka, suoraan verrannollisuus; fy1-5 added to nopeus and paikka.
-- Dates are written out ("5. marraskuuta 2018") because the lint rejects "5.11.2018".
+
+Round 1 fix (five science Polish, three pedagogy Polish).
+- lesson.md: unit rule now "yhteensopiviin yksiköihin (yleensä SI)"; Voyager gap explained honestly (JPL figure is distance from Earth, Earth up to 1 AU nearer or farther than the Sun, Sun's gravity slows the probe slightly, model accurate to a fraction of a percent).
+- solutions.md: L3-02 adds Earth's motion (about 0,03 AU); L1-02 "huippujuoksijan vauhti"; L3-01 Järkevyys "noin 20 vuorokauden virhe".
+- inquiry.json: siirto prompt reworded; koe-1/koe-2 ask for t > 0; koe-1 adds "Katso myös, miten kuvaaja piirtyy."; conclusion model answer carries the same gap explanation.
+check_lesson.py: all ok.

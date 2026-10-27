@@ -126,7 +126,7 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
 </svg>
 
 ### Yksiköt
-Muunna aina ennen sijoitusta SI-yksiköihin: $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten $72\,\text{km/h} = 20\,\text{m/s}$, ja $1\,\text{min} = 60\,\text{s}$. Tähtitieteessä pitkät etäisyydet ilmoitetaan tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
+Muunna aina ennen sijoitusta yhteensopiviin yksiköihin (yleensä SI-yksiköihin): $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten $72\,\text{km/h} = 20\,\text{m/s}$, ja $1\,\text{min} = 60\,\text{s}$. Tähtitieteessä pitkät etäisyydet ilmoitetaan tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
 
 ## Esimerkki
 Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $s_0 = 119{,}7\,\text{AU}$ Auringosta (NASA/JPL). Luotaimen nopeus Aurinkoon nähden on $v = 15{,}341\,\text{km/s}$ (JPL:n Voyager-lentotilanne). Oletetaan nopeus vakioksi. Kuinka kaukana Auringosta luotain on mallin mukaan 5. marraskuuta 2026?
@@ -169,7 +169,7 @@ s &= s_0 + v t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin 26 AU ja $119{,}7 + 26 \approx 146\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 arvon $143{,}3\,\text{AU}$, ja JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\,\text{AU}$. Ero on noin $0{,}2\,\text{AU}$, alle $0{,}2\,\%$ etäisyydestä, joten vakionopeusmalli toimii tässä hyvin.
+**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin 26 AU ja $119{,}7 + 26 \approx 146\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 arvon $143{,}3\,\text{AU}$, ja JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\,\text{AU}$. Ero on noin $0{,}2\,\text{AU}$, alle $0{,}2\,\%$ etäisyydestä, joten vakionopeusmalli toimii tässä hyvin. JPL:n luku on luotaimen etäisyys Maasta, ja Maa on Auringon ympäri kiertäessään jopa $1\,\text{AU}$ lähempänä tai kauempana kuin Aurinko; lisäksi Auringon vetovoima hidastaa luotainta aivan vähän. Malli on siis tarkka murto-osan prosentista.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4\,\text{m}$ muuttuu $8\,\text{m}$:ksi. Toinen virhe on lukea nopeudeksi paikan arvo eikä paikan muutos aikaa kohti: nopeus on $\Delta s / \Delta t$, ei $s / t$, kun $s_0 \neq 0$.

@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{360\,\text{m}}{45\,\text{s}} = 8{,}0\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $8{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $45\,\text{s}$.
-**Järkevyys:** Tarkistus takaisin: $8{,}0\,\text{m/s} \cdot 45\,\text{s} = 360\,\text{m}$. Nopeus vastaa noin $29\,\text{km/h}$, mikä sopii nopeaan juoksuun.
+**Järkevyys:** Tarkistus takaisin: $8{,}0\,\text{m/s} \cdot 45\,\text{s} = 360\,\text{m}$. Nopeus vastaa noin $29\,\text{km/h}$, mikä vastaa huippujuoksijan vauhtia 400 metrin juoksussa.
 
 ## fy1-5-L1-03
 **Annettu:** nopeus $v = 1{,}4\,\text{m/s}$, matka $s = 560\,\text{m}$; liike on tasaista ja alkaa nollakohdasta
@@ -96,12 +96,12 @@
 **Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{vrk}} = 1\,325\,462\,\tfrac{\text{km}}{\text{vrk}}$, ja $\dfrac{1\,325\,462\,\text{km/vrk}}{149\,597\,870{,}7\,\text{km/AU}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
 **Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}7\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{30{,}3\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3419{,}8\,\text{vrk}$
 **Vastaus:** $3420\,\text{vrk}$, kolme merkitsevää numeroa, kun $150\,\text{AU}$ tulkitaan kolmen numeron tarkkuudella ja erotus on $30{,}3\,\text{AU}$.
-**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $30{,}3\,\text{AU}$ vie noin $30{,}3 / 3{,}2 \approx 9{,}5$ vuotta. Tulos $3420\,\text{vrk} \approx 9{,}4$ vuotta sopii tähän ja ajoittuu maaliskuuhun 2028. Malli on tarkka noin 0,2 AU:n sisällä muutaman vuoden ajan, joten ajankohdan virhe on korkeintaan joitakin kymmeniä vuorokausia.
+**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $30{,}3\,\text{AU}$ vie noin $30{,}3 / 3{,}2 \approx 9{,}5$ vuotta. Tulos $3420\,\text{vrk} \approx 9{,}4$ vuotta sopii tähän ja ajoittuu maaliskuuhun 2028. Malli poikkeaa JPL:n arvosta noin 0,2 AU, mikä vastaa noin 20 vuorokauden virhettä ajankohdassa.
 
 ## fy1-5-L3-02
 **Annettu:** etäisyys $d = 150\,\text{AU}$, signaalin nopeus $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$
 **Kysytty:** edestakaisen matkan kulkuaika $t$ tunteina
-**Periaate:** Radiosignaali etenee tyhjiössä vakionopeudella, joten sen kulkema matka on $s = ct$. Komento ja vastaus kulkevat kumpikin matkan $d$, joten kokonaismatka on $2d$. Luotain liikkuu tänä aikana noin $15\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \approx 2{,}3 \cdot 10^{6}\,\text{km} \approx 0{,}015\,\text{AU}$, mikä on vain $0{,}01\,\%$ etäisyydestä $150\,\text{AU}$, joten liikkeen voi jättää huomiotta.
+**Periaate:** Radiosignaali etenee tyhjiössä vakionopeudella, joten sen kulkema matka on $s = ct$. Komento ja vastaus kulkevat kumpikin matkan $d$, joten kokonaismatka on $2d$. Luotain liikkuu tänä aikana noin $15\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \approx 2{,}3 \cdot 10^{6}\,\text{km} \approx 0{,}015\,\text{AU}$, mikä on vain $0{,}01\,\%$ etäisyydestä $150\,\text{AU}$. Maa liikkuu samassa ajassa noin $30\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \approx 0{,}03\,\text{AU}$, vain noin $0{,}02\,\%$, joten kummankaan liikkeen voi jättää huomiotta.
 **Kaava:** $2d = ct$, josta $t = \dfrac{2d}{c}$
 **Muunnokset:** $d = 150 \cdot 149\,597\,870{,}7\,\text{km} = 2{,}2440 \cdot 10^{10}\,\text{km} = 2{,}2440 \cdot 10^{13}\,\text{m}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 2{,}2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1{,}497 \cdot 10^{5}\,\text{s} = \dfrac{1{,}497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41{,}58\,\text{h}$
