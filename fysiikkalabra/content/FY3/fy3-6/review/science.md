@@ -1,19 +1,19 @@
 VERDICT: FAIL
-CONTENT-HASH: f1c139c10781325d
+CONTENT-HASH: 4c0ea14d24c36a07
 
 ## Blocking
-- solutions.md:38 (L1-04; data exercises.json:30) — "kaksi merkitsevää numeroa, koska lämpötilat on annettu kokonaisina asteina" is wrong: 38 °C − 31 °C = 7 K has one significant figure. The worked example argues correctly that ΔT = 4,5 K limits the figures. By that rule the answer is −4·10¹ MJ, outside the tolerance. — Give 38,0 °C → 31,0 °C (ΔT = 7,0 K) and justify the two figures by ΔT = 7,0 K. The answer −35 MJ is unchanged.
-- inquiry.json:292 (siirto solution; prompt :272) — "kaksi merkitsevää numeroa kuten massassa 80 kg" ignores that 38 − 30 = 8 K has one figure. `answer` 29.1 also disagrees with the stated 29 kg. — Give 30,0 / 38,0 / 60,0 °C and 80,0 kg, and answer 29,1 kg with three figures (or two figures justified by 8,0 K).
+- inquiry.json siirto `solution` (Vastaus; prompt and `answer` 29.1) — "kolme merkitsevää numeroa kuten massassa 80,0 kg ja lämpötiloissa" ignores the limiting datum. The quantities used are the differences 38,0 − 30,0 = 8,0 K (two figures) and 22,0 K. The worked example (lesson.md, Tulos) and L1-04 justify the figures by ΔT, and by that rule the answer has two figures: a reading 0,1 K higher gives 29,6 kg, so the third figure means nothing. My round-1 fix wrongly allowed "29,1 kg with three figures". I correct that here. — Fix: either give "29 kg, kaksi merkitsevää numeroa, koska lämpötilan muutos 8,0 K tunnetaan kahden numeron tarkkuudella" and set `answer` 29, or change the data so that both ΔT have three figures (e.g. T_a = 25,0 °C: 13,0 K and 22,0 K → 47,3 kg; update hints and mistakes to match).
 
 ## Polish
-- solutions.md:49 (L1-05) — "sama vesimäärä olisi vaatinut…": liquid water cannot be between −22 °C and −4 °C. — Say "the same ΔT for 0,50 kg of liquid water".
-- solutions.md L2-01, L2-04 Muunnokset — "vain lämpötilaeroja" fits the balance equation, not the substituted weighted mean. — Add that the weights sum to the denominator, so a shift of scale carries through.
+- solutions.md L1-02 Vastaus — "kaksi merkitsevää numeroa kuten massassa 2,4 kg" is right. 195 K has three figures, so naming 2,4 kg as the limiting value would make the reason explicit. Optional.
+- solutions.md L1-04 Sijoitus — "≈ −35,2 MJ" followed by the answer −35 MJ is fine. The intermediate value could keep more digits (−35,196 MJ) to match the other solutions.
 
 ## Checked
-- 12 exercises recomputed in one script: all match answers.py and exercises.json within tolerance. Other rounding justifications follow from the data.
-- Every solution states principles with valid reasons (no phase change; isolated system; shared equilibrium T, so the stones stop at 40 °C), solves symbols first and converts correctly (kW→W, MJ→J, g cancels, ΔT °C = K). Reasonableness checks are real.
-- Worked example: 5656,5 J and 374,6 → 3,7·10² J/(kg·K). The 24,6 °C → 383 sensitivity, lossless copper 24,6 °C and 1257 vs 75 J/K are correct.
-- inquiry: ennuste-1 (26,8 / 44,0 °C, 8,5 / 30,2 kJ), ennuste-2 (40,0 / 55,0 / 63,1 °C), virhe (6,6 vs 30,0 °C), siirto 29,09 kg with mistakes 220 / 21,3, tarkistus-2 890,6 with mistakes 768 / 501, tarkistus-1 4500 vs 838 J/K.
-- Lesson (T derivation, 35 °C, ratio 9,3) and exit ticket (419 kJ, ≈ 9×, 65 °C).
-- Figures: water-sand rise ratio 5,25 vs c ratio 5,24; c-bars at 0,0933 px per J/(kg·K) throughout.
-- Sim: Teq and Q follow the lesson's formula, and the equal-τ relaxation conserves energy. koe-1 and koe-2 isolate their varied parameter, and simState carries Teq and CB.
+- All 12 exercises recomputed in one script: they match answers.py and exercises.json within tolerance. L1-04 now uses 38,0 / 31,0 °C, ΔT = 7,0 K, giving −35,2 → −35 MJ. Its rounding is now justified by ΔT, which is correct.
+- Every other solution's rounding follows from its least precise datum or ΔT (L1-05 18 K; L3-01 30 K; tarkistus-2 11,0 / 69,0 K → 891).
+- Siirto physics is correct: 80,0·8,0/22,0 = 29,09 kg. Mistakes 220 and 21,3 are correct. The symbols are solved first, and the 640 kg·K check is a real check.
+- Worked example: 5656,5 J and 374,6 → 3,7·10². The sensitivity case (24,6 °C → 383) is right, the lossless copper case gives 24,6 °C, and 1257 vs 75 J/K is right.
+- inquiry: ennuste-1 (26,8 / 44,0 °C, 8,5 / 30,2 kJ, 838 / 160 J/K), ennuste-2 (40,0 / 55,0 / 63,1 °C), virhe (6,6 vs 30,0 °C), tarkistus-1 (4500 vs 838 J/K), tarkistus-2 (890,6, mistakes 768 / 501, 838 vs 134 J/K).
+- Lesson: the T derivation and the 35 °C misconception example are right. The exit ticket is right (419 kJ, ≈9×, 65 °C).
+- Sim: Teq and Q match the lesson's formula, and the equal-τ relaxation conserves energy. koe-1 and koe-2 lock everything except cB or mB, and simState carries Teq and CB.
+- Scope stays inside FY3 "aineen lämpeneminen ja jäähtyminen". There are no phase changes, and L1-05 stays below 0 °C.
