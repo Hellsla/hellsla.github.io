@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 18cb6ea9366ee3fa
+CONTENT-HASH: fdcab429ebd8dd6e
 
 ## Blocking
 
 ## Polish
-- lesson.md Esimerkki, "Kaava ratkaistuna" — the rearrangement is shown as a result only. A student who could not solve for n does not see the step; add one line ("jaetaan yhtälön molemmat puolet tulolla RT"). The same bare "josta" stands in every exercise solution (L1-02, L1-03, L1-04, L2-02); one clause per solution naming the division would carry the slot's skill.
-- Solutions' Järkevyys use "0,041 mol per litre" (L1-01, L3-01, L2-02) without saying it is 1/24 mol/l from the example's "24 litraa"; a weak student cannot rebuild the number. Write "1/24 l/mol ≈ 0,041 mol/l" once in L1-01.
-- L3-01 Sijoitus at 390 px: the fraction with the unit 1/mol is clipped at the right edge (the unit shows as "mol"). Split the numerator over two lines or move N_A out of the fraction.
-- L2-03 Vastaus: "kelvinlämpötilasta 828 K vähennetty 273,15 K säilyttää yksiköt" is unclear; say that the 273,15 is exact so the figures of the kelvin value carry to °C.
-- Level 3 prompts ask "Perustele, miksi ..." but the numeric box checks only the number; the reason sits in the solution's Periaate. Say in the prompt that the reason is answered on paper and compared with the solution.
-- Carried from the previous review (still open): Tutki core has eight items; define the mole in one sentence before punnitus; siirto optional, so level 1 is the only compulsory practice of solving for a quantity.
+- inquiry.json laske-r solution, Vastaus — the limiting datum is "heliumin massa 0,83 g", but the Annettu line and the prompt give only n = 0,2075 mol. A student who has forgotten the punnitus table cannot see where 0,83 g comes from. Add "m = 0,83 g (punnituksesta)" to Annettu, or say "punnituksen massa 0,83 g" in Vastaus.
+- laske-r Vastaus — the student computes 8,302 and the line says 8,3 (two figures) while the next sentence calls the pressure and volume three-figure. Add one clause: "tulos on yhtä tarkka kuin heikoin lähtötieto" so the drop from 8,302 to 8,3 reads as a rule, not a surprise.
+- Carried from round 1 and still open (not touched by this diff): bare "josta" in the rearrangements of the example and L1-02..L2-02; "1/24 mol/l" in Järkevyys; clipped fraction in L3-01 at 390 px; L2-03 Vastaus wording; Level 3 "Perustele" prompts check only the number.
 
 ## Checked
-- Worked example at 390 px: seven numbered stages (Tunnetut, Periaate, Kaava, Muunnokset, Sijoitus, Tulos, Järkevyys); every conversion shown with its unit, the principle says why the model applies, the Tulos line names the limiting datum, the Järkevyys check is an independent estimate. Easy to follow.
-- Opened solution L3-01 at 390 px: the same labelled stages, readable, apart from the clipped fraction above. Read all 12 solutions in solutions.md: each has the stages, the Muunnokset line (or says none are needed and why), a Vastaus with the limiting datum, and a Järkevyys that differs from the calculation.
-- Solutions sit behind their own Näytä ratkaisu button (17 on the page: 12 exercises plus punnitus, exp-2, laske-r, siirto, check-2); exercises sit last in collapsed level boxes.
-- Slot goal (solve pV = nRT for each quantity) covered: n, p, V, T, M, N and a combined-law case across levels 1–3.
+- Delta is two solutions only (laske-r, balloon L3-0x); the rest is unchanged from the version I passed.
+- laske-r: the stages stay in order, answer 8,3 with tolerance 0,02 accepts the student's 8,30 or 8,302; hints and mistake values (121,7; 8302; 0,008302) match the stage-by-stage solution.
+- Balloon solution: 2644,8 kg in Sijoitus now rounds to the stated 2,64 · 10³ kg (the earlier 2645 gave an ambiguous rounding); 91 200 mol · 0,0290 kg/mol = 2644,8 recomputed.
+- Balloon Järkevyys (1,2 kg/m³ estimate, scaled by 293/373, about 700 kg lighter) remains independent of the calculation and followable.
 - Hash identical at start and end.
