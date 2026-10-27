@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-6-L1-01",
+      "level": 1,
+      "text": "Pallo päästetään putoamaan levosta, ja ilmanvastus jätetään huomiotta. Mikä on pallon nopeus, kun pudotuksen alusta on kulunut $3{,}0\\,\\text{s}$?",
+      "answer": 29.43,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-02",
+      "level": 1,
+      "text": "Omena irtoaa oksasta ja putoaa levosta maahan $0{,}80\\,\\text{s}$:ssa. Ilmanvastus jätetään huomiotta. Mikä on omenan nopeus maahan osuessa?",
+      "answer": 7.848,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-03",
+      "level": 1,
+      "text": "Kuun pinnalla putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Astronautti pudottaa kiven, joka putoaa levosta $4{,}0\\,\\text{s}$. Mikä on kiven nopeus tämän ajan kuluttua?",
+      "answer": 6.48,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-04",
+      "level": 1,
+      "text": "Vapaasti putoavan kappaleen $(t, v)$-kuvaaja on suora, joka kulkee pisteiden $(0\\,\\text{s};\\, 0\\,\\text{m/s})$ ja $(5{,}0\\,\\text{s};\\, 49\\,\\text{m/s})$ kautta. Mikä on putoamiskiihtyvyys?",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-05",
+      "level": 1,
+      "text": "Marsissa putoamiskiihtyvyys on $3{,}71\\,\\text{m/s}^2$. Kappale putoaa Marsissa levosta $6{,}0\\,\\text{s}$ ilman ilmanvastusta. Mikä on kappaleen nopeus?",
+      "answer": 22.26,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-6-L2-01",
+      "level": 2,
+      "text": "Pallo päästetään putoamaan levosta, ja se osuu maahan nopeudella $12{,}0\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka kauan pallo putosi?",
+      "answer": 1.223242,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-02",
+      "level": 2,
+      "text": "Hedelmä putoaa levosta ja osuu maahan $450\\,\\text{ms}$:n kuluttua. Ilmanvastus jätetään huomiotta. Mikä on hedelmän nopeus maahan osuessa yksikössä $\\text{km/h}$?",
+      "answer": 15.8922,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-03",
+      "level": 2,
+      "text": "Putoavan kappaleen nopeus on jollakin hetkellä $12{,}0\\,\\text{m/s}$, eikä ilmanvastusta ole. Kuinka suuri nopeus on $1{,}50\\,\\text{s}$ myöhemmin?",
+      "answer": 26.715,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-04",
+      "level": 2,
+      "text": "Vapaasti putoavan kappaleen nopeus mitataan kahdella hetkellä: $9{,}7\\,\\text{m/s}$ hetkellä $t = 1{,}0\\,\\text{s}$ ja $29{,}3\\,\\text{m/s}$ hetkellä $t = 3{,}0\\,\\text{s}$. Laske putoamiskiihtyvyys näistä mittauksista.",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-6-L3-01",
+      "level": 3,
+      "text": "Tyhjiökammiossa pudotetaan yhtä aikaa levosta kaksi palloa, joiden massat ovat $0{,}50\\,\\text{kg}$ ja $4{,}0\\,\\text{kg}$. Kuinka monta kertaa suurempi on raskaamman pallon nopeus kuin kevyemmän pallon nopeus, kun pudotuksen alusta on kulunut $1{,}5\\,\\text{s}$?",
+      "answer": 1.0,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L3-02",
+      "level": 3,
+      "text": "Tuntemattomalla planeetalla ei ole ilmakehää. Siellä levosta pudotetun kiven nopeus on $4{,}0\\,\\text{s}$:n kuluttua $14{,}8\\,\\text{m/s}$. Kuinka monen sekunnin kuluttua pudotuksen alusta kiven nopeus on $30{,}0\\,\\text{m/s}$?",
+      "answer": 8.108108,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L3-03",
+      "level": 3,
+      "text": "Pallo pudotetaan ilmassa levosta, ja sen nopeudeksi mitataan $3{,}0\\,\\text{s}$:n kuluttua $25{,}0\\,\\text{m/s}$. Kuinka monta $\\text{m/s}$ pienempi nopeus on kuin nopeus, joka pallolla olisi vapaassa pudotuksessa ilman ilmanvastusta?",
+      "answer": 4.43,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

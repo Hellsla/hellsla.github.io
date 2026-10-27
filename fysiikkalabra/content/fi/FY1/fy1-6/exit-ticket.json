@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Pallo päästetään putoamaan levosta tyhjiössä. Mikä on sen nopeus $2{,}0\\,\\text{s}$:n kuluttua, ja mitä luku $g = 9{,}81\\,\\text{m/s}^2$ kertoo?",
+    "a": "Nopeus on $v = g\\,t = 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} = 19{,}6\\,\\text{m/s}$. Luku $g$ kertoo, kuinka paljon nopeus kasvaa joka sekunti: $9{,}81\\,\\text{m/s}$ sekunnissa. Se ei ole pallon nopeus."
+  },
+  {
+    "q": "Vapaasti putoavan kappaleen $(t, v)$-kuvaaja on suora. Mitä sen kulmakerroin kertoo, ja kulkeeko suora origon kautta?",
+    "a": "Kulmakerroin $\\dfrac{\\Delta v}{\\Delta t}$ on putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Suora kulkee origon kautta, koska kappale lähtee levosta: hetkellä $t = 0$ nopeus on $v = 0$."
+  },
+  {
+    "q": "Raskas ja kevyt kuula putoavat samasta korkeudesta ilmassa lähes yhtä nopeasti, mutta höyhen ja vasara eivät. Miksi?",
+    "a": "Putoamiskiihtyvyys ei riipu massasta. Ilma hidastaa kuitenkin kevyttä ja leveää kappaletta, höyhentä, selvästi enemmän kuin pientä ja tiheää kappaletta, kuulaa. Tyhjiössä höyhen ja vasara putoaisivat yhtä nopeasti."
+  }
+]
