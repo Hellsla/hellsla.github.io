@@ -8,7 +8,8 @@
    found is listed for the teacher to check (the text extraction of the two-column PDF breaks some lines).
 3. Lesson slots: ids <slug>-N, unique; titles; prerequisites that exist; glossary terms missing from
    glossary.json are listed (the developer adds them when drafting the lesson, CLAUDE.md).
-4. Unless --check: creates content/<CODE>/, assets/pics/<slug>/ and assets/sims/<slug>/ (each with .gitkeep) and
+4. Unless --check: creates content/fi/<CODE>/, lessons/<CODE>/, assets/pics/<slug>/ and assets/sims/<slug>/ (each
+   with .gitkeep) and
    writes "initialized": <date> into the course's entry in curriculum.json. Running it again only validates.
 Lesson folders are not created here: /lesson <id> creates each one from its slot (courses.py init-lesson).
 Exit status 1 when essential data is missing or the slots are inconsistent."""
@@ -90,7 +91,7 @@ def validate(code):
 def initialize(code):
     c = courses.course(code)
     made = []
-    for d in (c["paths"]["content"], c["paths"]["pics"], c["paths"]["sims"]):
+    for d in (c["paths"]["content"], c["paths"]["code"], c["paths"]["pics"], c["paths"]["sims"]):
         if not d.exists(): d.mkdir(parents=True); made.append(d)
         if not any(d.iterdir()): (d / ".gitkeep").write_text("")
     if not c.get("initialized"):
@@ -122,7 +123,8 @@ if __name__ == "__main__":
     for m in initialize(code): print("made ", m.relative_to(courses.ROOT) if isinstance(m, pathlib.Path) else m)
     c = courses.course(code)
     print(f"{code} {c['title']}: {'already initialized ' + was + ', validated' if was else 'initialized'}; {len(c.get('lessons', []))} lesson slots")
-    print(f"  lessons   {c['paths']['content'].relative_to(courses.ROOT)}/<id>/       (created by /lesson <id> from the slot)")
+    print(f"  lessons   {c['paths']['content'].relative_to(courses.ROOT)}/<id>/    (created by /lesson <id> from the slot)")
+    print(f"  code      {c['paths']['code'].relative_to(courses.ROOT)}/<id>/       (answers.py, figures.py)")
     print(f"  pictures  {c['paths']['pics'].relative_to(courses.ROOT)}/  -> referred to as pics/{c['slug']}/<file>")
     print(f"  sims      {c['paths']['sims'].relative_to(courses.ROOT)}/<name>/  -> published at sims/{c['slug']}/<name>/")
     todo = [l["id"] for l in c.get("lessons", []) if not (c["paths"]["content"] / l["id"] / "meta.json").exists()]

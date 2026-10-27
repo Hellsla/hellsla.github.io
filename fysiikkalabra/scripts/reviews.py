@@ -34,7 +34,7 @@ and fails if the change was not what the row says. A reviewer whose last verdict
 """
 import datetime, difflib, hashlib, json, os, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, inquiry
+import courses, i18n, inquiry
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy")
@@ -94,7 +94,24 @@ def git(*args, binary=False):
     return r.stdout if r.returncode == 0 else None
 
 
-class WorkTree:
+LEGACY = re.compile(r"^(?:content/fi|lessons)/([^/]+/[^/]+/.+)$")
+
+
+class Source:
+    lang = i18n.SOURCE                               # the language whose lang/<lang>.json fills a simulation's texts
+    def source(self, rel, binary=False):
+        """What the reviews judge of a file: a simulation's JavaScript with its texts from lang/fi.json put back in
+        place (i18n.resolve_js), so moving a text to the language file changes nothing here, while changing it there
+        changes the lesson like any other content change; every other file as it is."""
+        data = self.read(rel, binary)
+        if data is None or binary or not rel.endswith(".js"): return data
+        lang = self.read(f"lang/{self.lang}.json")
+        try: table = json.loads(lang) if lang else {}
+        except json.JSONDecodeError: table = {}
+        return i18n.resolve_js(data, i18n.sim_strings(i18n.sim_key(rel), table=table))
+
+
+class WorkTree(Source):
     """Reads a lesson's sources from the working tree (paths relative to ROOT)."""
     def read(self, rel, binary=False):
         f = ROOT / rel
@@ -105,10 +122,16 @@ class WorkTree:
         return sorted(p.relative_to(ROOT).as_posix() for p in d.rglob("*") if p.is_file()) if d.is_dir() else []
 
 
-class Commit:
+class Commit(Source):
     """Reads the same sources as they were in a git commit."""
     def __init__(self, sha): self.sha = sha
-    def read(self, rel, binary=False): return git("show", f"{self.sha}:./{rel}", binary=binary)   # ./ is relative to ROOT, not the repository
+    def read(self, rel, binary=False):
+        """The file at rel, or, in a commit from before the languages, where it was then: content/<COURSE>/<id>/
+        held a lesson's texts and code together (content/fi/FY3/fy3-2/lesson.md and lessons/FY3/fy3-2/sim.js were
+        content/FY3/fy3-2/), so a review passed before the move still finds the version it passed."""
+        data = git("show", f"{self.sha}:./{rel}", binary=binary)   # ./ is relative to ROOT, not the repository
+        m = LEGACY.match(rel) if data is None else None
+        return git("show", f"{self.sha}:./content/{m.group(1)}", binary=binary) if m else data
     def files(self, reldir):
         out = git("ls-tree", "-r", "--name-only", "--full-name", self.sha, "--", reldir) or ""
         top = (git("rev-parse", "--show-prefix") or "").strip()
@@ -118,15 +141,15 @@ class Commit:
 def entries(folder, src):
     """[(name, relpath, binary)] of everything the reviews judge, as `src` sees it. FY3 lessons keep exactly the
     names they had before simulation folders and pictures existed, so their hashes did not change."""
-    rel = folder.relative_to(ROOT).as_posix(); lid = folder.name
-    out = [(n, f"{rel}/{n}", False) for n in CONTENT] + [(f"tests/sims/{lid}.json", f"tests/sims/{lid}.json", False)]
-    meta_text = src.read(f"{rel}/meta.json")
+    lid = folder.name; src.lang = courses.lang_of(folder); at = lambda n: courses.lesson_rel(folder, n)
+    out = [(n, at(n), False) for n in CONTENT] + [(f"tests/sims/{lid}.json", f"tests/sims/{lid}.json", False)]
+    meta_text = src.read(at("meta.json"))
     try: meta = json.loads(meta_text) if meta_text else {}
     except json.JSONDecodeError: meta = {}
-    loc = courses.sim_location(lid, meta.get("sim"), src.read(f"{rel}/sim.js") is not None)
+    loc = courses.sim_location(lid, meta.get("sim"), src.read(at("sim.js")) is not None)
     if loc and loc[0] != "lesson":
         out += [(f"{loc[2]}/{p[len(loc[1]) + 1:]}", p, p.lower().endswith(courses.BINARY)) for p in src.files(loc[1])]
-    refs = courses.pic_refs_in(src.read(f"{rel}/{n}") for n in courses.TEXT_FILES)
+    refs = courses.pic_refs_in(src.read(at(n)) for n in courses.TEXT_FILES)
     out += [(r, f"assets/{r}", r.lower().endswith(courses.BINARY)) for r in refs]
     return out
 
@@ -135,7 +158,7 @@ def hash_of(folder, src):
     """The content hash as `src` sees the lesson (None if the lesson did not exist there)."""
     h, found = hashlib.sha256(), False
     for name, rel, binary in entries(folder, src):
-        data = src.read(rel, binary)
+        data = src.source(rel, binary)
         if data is None: continue
         found = True
         h.update(name.encode() + b"\0" + (data if binary else normalized(data, name).encode()) + b"\0")
@@ -382,7 +405,7 @@ def changes(folder, base):
     paths = sorted({(rel, b) for _, rel, b in entries(folder, old) + entries(folder, new)})
     cats, diff, n = set(), [], 0
     for rel, binary in paths:
-        ra, rb = old.read(rel, binary), new.read(rel, binary)
+        ra, rb = old.source(rel, binary), new.source(rel, binary)
         a, b = _view(ra, rel, binary), _view(rb, rel, binary)
         if a == b: continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
@@ -405,8 +428,9 @@ def changes(folder, base):
 
 def scope(folder):
     """For each reviewer: {'mode': none|delta|full, 'base': commit|None, 'why': ..., 'diff': ..., 'categories': [...]}."""
-    rel, lid = folder.relative_to(ROOT), folder.name
-    log = (git("log", "--format=%H", "-n", "80", "--", str(rel), f"tests/sims/{lid}.json", "assets") or "").split()
+    lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
+    log = (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
+               legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json") or "").split()
     out, cache = {}, {}
     for name in REVIEWS:
         rep = report(folder, name)
@@ -473,8 +497,16 @@ def impact(ref):
     deps, lessons, tooling = courses.deps(), set(), []
     for n in sorted(names):
         if n.endswith((".gitkeep", "README.md")) and n.startswith("assets/"): continue
-        m = re.match(r"content/[^/]+/([^/]+)/", n)
-        if m and m.group(1) != "_gold" and "/review/" not in n: lessons.add(m.group(1)); continue
+        m = re.match(r"(?:content/[a-z]{2,3}/[^/]+|lessons/[^/]+)/([^/]+)/", n)
+        if m and "/review/" not in n: lessons.add(m.group(1)); continue
+        if re.fullmatch(r"lang/[a-z]{2,3}\.json", n):           # a simulation's texts: the lessons whose simulation block changed
+            old, new = (git("show", f"{ref}:./{n}") or "{}"), ((ROOT / n).read_text() if (ROOT / n).exists() else "{}")
+            sims = lambda t: json.loads(t).get("sims", {})
+            for key in sorted(set(sims(old)) | set(sims(new))):
+                if sims(old).get(key) != sims(new).get(key):
+                    users = [key] if any(f.name == key for f in courses.lessons()) else deps.get(next((d for d in deps if d.endswith(f"/{key}")), ""), [])
+                    lessons |= set(users); print(f"{n} sims.{key}: used by {', '.join(users) or 'no lesson yet'}")
+            tooling.append(n); continue
         m = re.match(r"tests/sims/([^/]+)\.json$", n)
         if m: lessons.add(m.group(1)); continue
         m = re.match(r"assets/((?:sims/[^/]+|shared/sims)/[^/]+)/", n) or re.match(r"assets/((?:pics/[^/]+|shared/pics)/[^/]+)$", n)

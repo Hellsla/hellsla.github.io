@@ -13,6 +13,7 @@ import sys, pathlib
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 from courses import ROOT
+import i18n
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 width = int(sys.argv[sys.argv.index("--width") + 1]) if "--width" in sys.argv else 360
 args = [a for a in args if a != str(width)]
@@ -65,7 +66,7 @@ JS = """() => {
 bad = 0
 with sync_playwright() as pw:
     b = launch(pw)
-    for page_file in sorted(OUT.glob("*.html")):
+    for page_file in sorted(OUT.glob("*.html")) + [f for lang in i18n.languages()[1:] for f in sorted((OUT / lang).glob("*.html"))]:   # site/<lang>/ too
         lid = page_file.stem
         if only and lid != only: continue
         if lid == "index" or "-" not in lid: continue
@@ -78,10 +79,10 @@ with sync_playwright() as pw:
         hard = [f for f in found if f['what'] != 'table']   # tables scroll sideways by design (NOTES 1)
         if hard:
             bad += 1
-            print(f"FAIL {OUT.name}/{lid} at {width} px")
+            print(f"FAIL {OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()} at {width} px")
             for f in found:
                 print(f"  {f['what']:8} {f['over']:4} px too wide  {f['text']}" + ("  (warning: scrolls)" if f['what'] == 'table' else ""))
         else:
-            print(f"OK   {OUT.name}/{lid} at {width} px" + (f"  ({len(found)} wide table, scrolls)" if found else ""))
+            print(f"OK   {OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()} at {width} px" + (f"  ({len(found)} wide table, scrolls)" if found else ""))
     b.close()
 sys.exit(1 if bad else 0)

@@ -1,7 +1,7 @@
 """Courses: the one place that turns a course code or a lesson id into its configuration and folders.
 
   python scripts/courses.py show <FY4 | fy4-1>     the resolved configuration of a course or a lesson (JSON)
-  python scripts/courses.py init-lesson <id>       write content/<COURSE>/<id>/meta.json from its curriculum slot (once)
+  python scripts/courses.py init-lesson <id>       write content/fi/<COURSE>/<id>/meta.json from its curriculum slot (once)
   python scripts/courses.py deps                   which lessons use which simulation folder and picture
 
 `curriculum.json` is the single source of truth. Each module (FY1–FY8) holds the LOPS 2019 data from the texts in
@@ -17,7 +17,11 @@
 Folders derived from the code (FY4, slug fy4), each published under site/ at the same relative path, so a page at
 site/fy4-1.html refers to them relatively and they work on GitHub Pages under any base path:
 
-  content/FY4/<lesson-id>/         the lesson folders
+  content/fi/FY4/<lesson-id>/      the lesson folders: the texts a visitor reads (lesson.md, inquiry.json, exercises.json,
+                                   solutions.md, exit-ticket.json, meta.json) and their reviews (review/); one tree per
+                                   language, content/<lang>/FY4/<lesson-id>/, Finnish (fi) the source (README "Languages")
+  lessons/FY4/<lesson-id>/         the lesson's language-neutral half, shared by every language: answers.py, figures.py,
+                                   sim.js (FY3) and sim-spec.md (CODE_FILES)
   assets/pics/fy4/<file>           pictures of the course; lesson text refers to them as pics/fy4/<file>
   assets/sims/fy4/<name>/          one simulation per folder: sim.js and its own sim.css and images; published as
                                    sims/fy4/<name>/ and found by the sim at document.getElementById('sim-root').dataset.base
@@ -25,7 +29,7 @@ site/fy4-1.html refers to them relatively and they work on GitHub Pages under an
 
 A lesson's simulation (meta.json "sim"): true is the lesson's own, `assets/sims/<slug>/<lesson-id>/`; a name reuses
 another folder of the course (`"fy4-2"`), `"<slug>/<name>"` one of another course, `"shared/<name>"` a shared one.
-FY3's simulations predate the folders and stay as `sim.js` in their lesson folders, published as `<id>-sim.js`;
+FY3's simulations predate the folders and stay as `sim.js` in lessons/FY3/<id>/, published as `<id>-sim.js`;
 they keep their URLs and their review hashes. A lesson's course is its id prefix (fy4-1 -> FY4)."""
 import datetime, functools, json, os, pathlib, re, sys
 
@@ -33,6 +37,8 @@ ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file_
 DEFAULT_LEVELS = {"level1": 5, "level2": 4, "level3": 3}
 LESSON_ID = re.compile(r"^([a-z]+)(\d+)-([0-9][0-9a-z]*)$")
 PIC_REF = re.compile(r"""(?:src=["']|\]\()((?:pics/[a-z0-9]+|shared/pics)/[^"')\s]+)""")
+CODE_FILES = ("answers.py", "figures.py", "sim.js", "sim-spec.md")
+SOURCE_LANG = "fi"
 BINARY = (".png", ".jpg", ".jpeg", ".webp", ".gif", ".avif", ".mp4", ".webm", ".woff2")
 
 
@@ -54,7 +60,7 @@ def course(code):
     if code not in cur or code.startswith("_"): sys.exit(f"unknown course {code!r}: curriculum.json has {', '.join(codes())}")
     c = dict(cur[code]); s = slug(code); p = c.get("paths", {})
     c.update(code=code, slug=s, paths={
-        "content": ROOT / p.get("content", f"content/{code}"),
+        "content": ROOT / p.get("content", f"content/{SOURCE_LANG}/{code}"), "code": ROOT / p.get("code", f"lessons/{code}"),
         "pics": ROOT / p.get("pics", f"assets/pics/{s}"), "sims": ROOT / p.get("sims", f"assets/sims/{s}"),
         "shared_pics": ROOT / "assets/shared/pics", "shared_sims": ROOT / "assets/shared/sims"})
     c.setdefault("exercise_levels", DEFAULT_LEVELS)
@@ -74,16 +80,41 @@ def slot(lid):
     return next((l for l in course(course_of(lid)).get("lessons", []) if l["id"] == lid), {})
 
 
-def lessons(code=None):
-    """Lesson folders (content/<COURSE>/<id>/ with meta.json), the reference lesson content/_gold excluded."""
-    out = [f.parent for f in sorted((ROOT / "content").glob("*/*/meta.json")) if f.parent.parent.name != "_gold"]
+def lessons(code=None, lang=SOURCE_LANG):
+    """Lesson folders of a language (content/<lang>/<COURSE>/<id>/ with meta.json)."""
+    out = [f.parent for f in sorted((ROOT / "content" / lang).glob("*/*/meta.json"))]
     return [f for f in out if code is None or f.parent.name == code]
 
 
-def find_lesson(lid):
-    for f in sorted((ROOT / "content").glob(f"*/{lid}")):
-        if f.parent.name != "_gold" and (f / "meta.json").exists(): return f
-    sys.exit(f"no lesson folder for {lid!r} (python scripts/courses.py init-lesson {lid} creates it from the curriculum slot)")
+def find_lesson(lid, lang=SOURCE_LANG):
+    for f in sorted((ROOT / "content" / lang).glob(f"*/{lid}")):
+        if (f / "meta.json").exists(): return f
+    sys.exit(f"no lesson folder for {lid!r} in content/{lang}/ (python scripts/courses.py init-lesson {lid} creates it from the curriculum slot)")
+
+
+def lang_of(folder):
+    """fi for content/fi/FY3/fy3-2 (the language of a lesson folder)."""
+    return folder.parent.parent.name
+
+
+def code_dir(folder):
+    """lessons/<COURSE>/<id>/: the lesson's answers.py, figures.py, sim.js and sim-spec.md, the same in every language."""
+    return ROOT / "lessons" / folder.parent.name / folder.name
+
+
+def lesson_file(folder, name):
+    """A file of the lesson by its name: a CODE_FILES name in lessons/<COURSE>/<id>/, a text in the lesson folder."""
+    return (code_dir(folder) if name in CODE_FILES else folder) / name
+
+
+def lesson_rel(folder, name):
+    """lesson_file relative to ROOT, as a posix path (what reviews.py reads from git)."""
+    return lesson_file(folder, name).relative_to(ROOT).as_posix()
+
+
+def translation(folder, lang):
+    """The same lesson's folder in another language (content/<lang>/<COURSE>/<id>/; it may not exist)."""
+    return ROOT / "content" / lang / folder.parent.name / folder.name
 
 
 def meta_of(folder):
@@ -108,9 +139,9 @@ def sim_location(lid, sim, lesson_has_sim_js):
 
 def sim_dir(folder, meta=None):
     """(kind, folder holding sim.js, published folder) or None; see sim_location."""
-    loc = sim_location(folder.name, (meta if meta is not None else meta_of(folder)).get("sim"), (folder / "sim.js").exists())
+    loc = sim_location(folder.name, (meta if meta is not None else meta_of(folder)).get("sim"), lesson_file(folder, "sim.js").exists())
     if loc is None: return None
-    return (loc[0], folder if loc[0] == "lesson" else ROOT / loc[1], loc[2])
+    return (loc[0], code_dir(folder) if loc[0] == "lesson" else ROOT / loc[1], loc[2])
 
 
 def sim_script(folder, meta=None):
@@ -124,7 +155,7 @@ def sim_files(folder, meta=None):
     """[(content name, path)] of the simulation's files, as the content hash and the packets see them."""
     d = sim_dir(folder, meta)
     if d is None: return []
-    if d[0] == "lesson": return [("sim.js", folder / "sim.js")]
+    if d[0] == "lesson": return [("sim.js", lesson_file(folder, "sim.js"))]
     return [(f"{d[2]}/{p.relative_to(d[1]).as_posix()}", p) for p in sorted(d[1].rglob("*")) if p.is_file()]
 
 
@@ -142,7 +173,7 @@ def pic_refs_in(texts):
 
 def pic_refs(folder):
     """Pictures the lesson's text refers to."""
-    return pic_refs_in((folder / n).read_text() for n in TEXT_FILES if (folder / n).exists())
+    return pic_refs_in(lesson_file(folder, n).read_text() for n in TEXT_FILES if lesson_file(folder, n).exists())
 
 
 def pic_source(ref):
@@ -161,7 +192,7 @@ def deps():
 
 
 def init_lesson(lid):
-    """content/<COURSE>/<id>/meta.json from the curriculum slot; refuses a lesson that is not planned there."""
+    """content/fi/<COURSE>/<id>/meta.json from the curriculum slot; refuses a lesson that is not planned there."""
     code = course_of(lid); c = course(code); s = slot(lid)
     if not c.get("initialized"): sys.exit(f"{code} is not initialized: run python scripts/new_course.py {code} first")
     if not s: sys.exit(f"{lid} is not a lesson slot of {code} in curriculum.json; add the slot there first (the teacher decides the sequence)")

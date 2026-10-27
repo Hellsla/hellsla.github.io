@@ -132,7 +132,7 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   A task whose text refers to a graph adds `**Kuvaajan lukeminen:**` after Periaate: which points or which area are
   read, at which values, and how the answer follows. A task answered in words (`answer` a string) has `**Kysytty:**`,
   `**Periaate:**` and `**Mallivastaus:**` with the reasoning. A complete solution is about 100–220 words. The model
-  is `content/FY3/fy3-6/solutions.md` and its inquiry tasks `siirto` and `tarkistus-2`. (2026-10-27, all lessons)
+  is `content/fi/FY3/fy3-6/solutions.md` and its inquiry tasks `siirto` and `tarkistus-2`. (2026-10-27, all lessons)
 - **Every language version is as complete** (teacher 2026-10-27). A translated or S2 (Finnish as a second language)
   version of a lesson keeps every solution step and justification; S2 writes shorter sentences, opens each concept
   the first time it appears ("ominaislämpökapasiteetti eli se, kuinka paljon energiaa yhden kilogramman lämmittäminen
@@ -181,7 +181,7 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 ## 5. Inquiry sequence (teacher's brief 2026-10-25)
 
 - `inquiry.json` (format and activity types: `docs/inquiry.md`; the brief: `docs/inquiry-spec.md`). The pilot
-  `content/FY3/fy3-2/inquiry.json` shows the shape; do not copy it mechanically — choose activities by what the
+  `content/fi/FY3/fy3-2/inquiry.json` shows the shape; do not copy it mechanically — choose activities by what the
   lesson's goals need. A lesson without a simulation investigates a table, a figure or competing explanations.
 - No fixed template (2026-10-26, after the FY3 review found twelve lessons with one sequence): vary what the student
   does by the topic: read a value off a graph, fit a line, extrapolate, handle noisy data, decide what to hold

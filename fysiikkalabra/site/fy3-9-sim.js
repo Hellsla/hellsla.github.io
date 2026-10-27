@@ -54,25 +54,25 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    p.createP('Välähdys on hiukkasen törmäys seinään; kaasun väri kertoo lämpötilan.').parent('sim-root').class('note');
+    p.createP(__('valahdys_on_hiukkasen')).parent('sim-root').class('note');
     table = p.createDiv('').parent('sim-root').class('sim-table');
     const btns = p.createDiv('').parent(controls).style('display', 'flex').style('flex-wrap', 'wrap').style('gap', '.5rem');
-    button(btns, 'Tallenna mittaus', () => {
+    button(btns, __('tallenna_mittaus'), () => {
       if (rows.length >= MAX_ROWS) { full = true; return; }
       const [V, pp, T] = state(); rows.push({ V: V * 1e-6, p: pp * 1000, T });   // SI units
     });
-    button(btns, 'Tyhjennä', () => { rows = []; full = false; });
+    button(btns, __('tyhjenna'), () => { rows = []; full = false; });
     const ls = p.createElement('label').parent(controls);
-    p.createSpan('Tilanmuutos').parent(ls); sel = p.createSelect().parent(ls);
-    sel.option('isoterminen (lämpötila vakio)', 'isoterminen'); sel.option('isobaarinen (paine vakio)', 'isobaarinen');
-    sel.option('isokoorinen (tilavuus vakio)', 'isokoorinen'); sel.elt.addEventListener('change', reset);
+    p.createSpan(__('tilanmuutos')).parent(ls); sel = p.createSelect().parent(ls);
+    sel.option(__('isoterminen_lampotila_vakio'), 'isoterminen'); sel.option(__('isobaarinen_paine_vakio'), 'isobaarinen');
+    sel.option(__('isokoorinen_tilavuus_vakio'), 'isokoorinen'); sel.elt.addEventListener('change', reset);
     [sV, lV] = slider(controls, 20, 100, V0, 1);                          // tilavuus V (ml)
     [sT, lT] = slider(controls, -50, 150, TC0, 1);                        // lämpötila T (°C)
     lChk = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.5rem').style('min-height', '40px');
     chk = p.createElement('input').attribute('type', 'checkbox').parent(lChk).style('width', '22px').style('height', '22px');
-    p.createSpan('Piirrä $p$ $1/V$:n funktiona').parent(lChk);
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    p.createSpan(__('piirra_funktiona')).parent(lChk);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                                    // pace of the particles only
     reset(); p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -106,21 +106,21 @@ new p5((p) => {
       flashes = flashes.filter((f) => (f.age += DT) < 0.25);
     }
 
-    lV.html(`Tilavuus $V = ${tx(V, 0)}\\,\\text{ml}$`);
-    lT.html(`Lämpötila $\\theta = ${tx(T - 273.15, 0)}\\,{}^\\circ\\text{C}$, $T = ${tx(T, 2)}\\,\\text{K}$`);
+    lV.html(__(`tilavuus`, {v: tx(V, 0)}));
+    lT.html(__(`lampotila`, {t: tx(T - 273.15, 0), t2: tx(T, 2)}));
     const cText = iso ? `pV = ${tx(pk, 1)}\\,\\text{kPa}\\cdot ${tx(V, 1)}\\,\\text{ml}` : mode === 'isobaarinen' ? `V/T = ${tx(V, 1)}\\,\\text{ml} / ${tx(T, 2)}\\,\\text{K}` : `p/T = ${tx(pk, 1)}\\,\\text{kPa} / ${tx(T, 2)}\\,\\text{K}`;
     const axText = (a) => `$${a[2]}$: $0\\text{–}${tx(a[0], inv && a === ax.x ? 2 : 0)}\\,${a[3]}$`;
-    readout.html(`Tilanmuutos: <strong>${mode}</strong> (${iso ? 'lämpötila' : mode === 'isobaarinen' ? 'paine' : 'tilavuus'} on vakio)` +
-                 `<br>Paine <strong>$p = ${tx(pk, 1)}\\,\\text{kPa}$</strong>, tilavuus <strong>$V = ${tx(V, 1)}\\,\\text{ml}$</strong>, ` +
-                 `lämpötila $\\theta = ${tx(T - 273.15, 0)}\\,{}^\\circ\\text{C}$, <strong>$T = ${tx(T, 2)}\\,\\text{K}$</strong>` +
-                 `<br>Vakio <strong>$${cText} = ${tx(c, cDec)}\\,${cUnit}$</strong>` +
-                 `<br>Kuvaajan akselit: ${axText(ax.x)}, ${axText(ax.y)}. ` +
-                 `Taulukossa ${rows.length}/${MAX_ROWS} mittausta${full ? ', taulukko on täynnä' : ''}.`);
+    readout.html(__(`tilanmuutos_on_vakio`, {mode: __v(mode), iso: iso ? __('lampotila_2') : mode === 'isobaarinen' ? __('paine') : __('tilavuus_2')}) +
+                 __(`paine_tilavuus`, {pk: tx(pk, 1), v: tx(V, 1)}) +
+                 __(`lampotila_3`, {t: tx(T - 273.15, 0), t2: tx(T, 2)}) +
+                 __(`vakio`, {ctext: cText, c: tx(c, cDec), cunit: cUnit}) +
+                 __(`kuvaajan_akselit`, {ax: axText(ax.x), ax2: axText(ax.y)}) +
+                 __(`taulukossa_mittausta`, {rows: rows.length, max_rows: MAX_ROWS, full: full ? __('taulukko_on_taynna') : ''}));
     const td = '<td style="padding:.4rem .25rem">', th = '<th style="padding:.4rem .25rem;letter-spacing:0">';   // narrow cells, five columns fit a phone
     let h = `<table><thead><tr>${th}$V$<br>$(\\text{ml})$</th>${th}$1/V$<br>$(1/\\text{ml})$</th>${th}$p$<br>$(\\text{kPa})$</th>${th}$T$<br>$(\\text{K})$</th>${th}$${cName}$<br>$(${cUnit})$</th></tr></thead><tbody>`;
     for (const r of rows) { const Vm = r.V * 1e6, pr = r.p / 1000;
       h += `<tr>${td}$${tx(Vm, 1)}$</td>${td}$${txs(1 / Vm)}$</td>${td}$${tx(pr, 1)}$</td>${td}$${tx(r.T, 2)}$</td>${td}$${tx(cFn(Vm, pr, r.T), cDec)}$</td></tr>`; }
-    if (!rows.length) h += '<tr><td colspan="5" style="padding:.4rem .25rem">Ei mittauksia. Paina ”Tallenna mittaus”.</td></tr>';
+    if (!rows.length) h += __('ei_mittauksia_paina');
     h += '</tbody></table>'; table.html(h);                          // re-rendered only when the string changes
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
     const ts = (n) => Math.round(n * k), labels = [];
@@ -154,7 +154,7 @@ new p5((p) => {
     } else if (piece === 'punnus') {
       paint(grad(mid - 40, 0, mid + 40, 0, [[0, '#3a3e44'], [0.3, '#7c838b'], [1, '#2c3035']]), (g) => g.roundRect(mid - 40, yP - 50, 80, 36, 4));
       p.fill(70, 75, 82); p.rect(mid - 8, yP - 58, 16, 9, 3);
-      p.textSize(ts(10)); p.fill(255); lab('$\\text{punnus}$', mid, yP - 27, p.CENTER);
+      p.textSize(ts(10)); p.fill(255); lab(__('punnus'), mid, yP - 27, p.CENTER);
     } else for (const x of [CYL.l - CYL.w - 10, CYL.r - 8]) {          // pins through both walls lock the piston
       paint(metal(0, yP - 27, 0, yP - 17), (g) => g.roundRect(x, yP - 27, 26, 10, 2)); p.fill(30); p.circle(x + (x < mid ? 5 : 21), yP - 22, 5);
     }

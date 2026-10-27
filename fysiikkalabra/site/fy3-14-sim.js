@@ -38,13 +38,13 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     // controls right under the canvas with Sekoita first, so canvas + button fit on one phone screen; the long readout follows
     const controls = p.createDiv('').parent('sim-root').class('controls');
-    p.createButton('Sekoita').parent(controls).mousePressed(() => { tAnim = 0; running = true; key = inputKey(); });
+    p.createButton(__('sekoita')).parent(controls).mousePressed(() => { tAnim = 0; running = true; key = inputKey(); });
     [sMW, lMW] = slider(controls, 0.10, 0.50, 0.30, 0.01);    // veden massa (kg)
     [sTW, lTW] = slider(controls, 0, 80, 20, 0.5);            // veden alkulämpötila (°C)
     [sMI, lMI] = slider(controls, 0.05, 0.50, 0.10, 0.01);    // jään massa (kg)
     [sTI, lTI] = slider(controls, -40, 0, 0, 1);              // jään alkulämpötila (°C)
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                         // pace only: not part of inputKey, so it never resets the run
     readout = p.createDiv('').parent('sim-root').class('readout');
     p.textFont('Arial');
@@ -96,11 +96,11 @@ new p5((p) => {
     const allMelted = tapaus === 1 && iceNow < 0.0005, TWd = allMelted ? (mW * TW + mI * Tmelt) / M : TW;
     const meltedG = (mI - iceLeft) * 1000;                      // net mass melted (g); negative when water freezes
 
-    lMW.html(`Veden massa $m_\\text{v} = ${tx(mW, 2)}\\,\\text{kg}$`); lTW.html(`Veden alkulämpötila $T_\\text{v} = ${tx(TW0, 1)}\\,${DEG}$`);
-    lMI.html(`Jään massa $m_\\text{j} = ${tx(mI, 2)}\\,\\text{kg}$`); lTI.html(`Jään alkulämpötila $T_\\text{j} = ${tx(TI0, 0)}\\,${DEG}$`);
-    readout.html(`Lopputila: <strong>$T = ${tx(Tf, 1)}\\,${DEG}$</strong>, jäätä jäljellä <strong>$${tx(iceLeft * 1000, 1)}\\,\\text{g}$</strong>` +
-                 `<br>Vesi luovuttaa jäähtyessään $0\\,${DEG}$:seen $${tk(Qv)}\\,\\text{kJ}$` +
-                 `<br>Jään lämmitys $0\\,${DEG}$:seen $${tk(Qwarm)}\\,\\text{kJ}$, kaiken jään sulatus $${tk(Qmelt)}\\,\\text{kJ}$`);
+    lMW.html(__(`veden_massa`, {mw: tx(mW, 2)})); lTW.html(__(`veden_alkulampotila`, {tw0: tx(TW0, 1), deg: DEG}));
+    lMI.html(__(`jaan_massa`, {mi: tx(mI, 2)})); lTI.html(__(`jaan_alkulampotila`, {ti0: tx(TI0, 0), deg: DEG}));
+    readout.html(__(`lopputila_jaata_jaljella`, {tf: tx(Tf, 1), deg: DEG, iceleft: tx(iceLeft * 1000, 1)}) +
+                 __(`vesi_luovuttaa_jaahtyessaan`, {deg: DEG, qv: tk(Qv)}) +
+                 __(`jaan_lammitys_seen`, {deg: DEG, qwarm: tk(Qwarm), qmelt: tk(Qmelt)}));
     const JMAX = SCALES.find((v) => v * 1000 >= Math.max(Qv, Qwarm + Qmelt)) || SCALES[SCALES.length - 1];   // chart axis max (kJ)
     window.simState = { mW, TW0, mI, TI0, Qv, Qwarm, Qmelt, Tf, iceLeftG: iceLeft * 1000, meltedG, tapaus, running, TW, TI, iceNowG: iceNow * 1000,
                         waterNowG: waterNow * 1000, q, Qend, JMAX, t: tAnim, labels: [] };
@@ -133,9 +133,9 @@ new p5((p) => {
     }
     // labels: temperatures top left, ice mass under the vessel
     p.noStroke();
-    lab(waterNow > 0.0005 ? `$\\text{vesi } ${tx(TWd, 1)}\\,${DEG}$` : '$\\text{vesi: jäätyi}$', 14, ts(18), 'l', ts(13), [30, 80, 160], 320);
-    lab(iceNow > 0.0005 ? `$\\text{jää } ${tx(TI, 1)}\\,${DEG}$` : '$\\text{jää: ei jäljellä}$', 14, ts(18) + ts(19), 'l', ts(13), [60, 120, 150], 320);
-    lab(`$\\text{jäätä } ${tx(iceNow * 1000, 0)}\\,\\text{g}$`, bx, VES.bottom + ts(15), 'c', ts(12));
+    lab(waterNow > 0.0005 ? __(`vesi`, {twd: tx(TWd, 1), deg: DEG}) : __('vesi_jaatyi'), 14, ts(18), 'l', ts(13), [30, 80, 160], 320);
+    lab(iceNow > 0.0005 ? __(`jaa`, {ti: tx(TI, 1), deg: DEG}) : __('jaa_ei_jaljella'), 14, ts(18) + ts(19), 'l', ts(13), [60, 120, 150], 320);
+    lab(__(`jaata`, {icenow: tx(iceNow * 1000, 0)}), bx, VES.bottom + ts(15), 'c', ts(12));
 
     // energy budget chart: bars to scale, gridlines, axis in kJ
     const Y = (J) => CH.y0 - (CH.y0 - CH.y1) * (J / 1000) / JMAX;
@@ -160,12 +160,12 @@ new p5((p) => {
     lab('$Q\\ (\\text{kJ})$', CH.ax - 6, CH.y1 - ts(18), 'l', ts(12), [60, 60, 60]);
     lab(`$${tk(Qv)}$`, xv + CH.bw / 2, Y(Qv) - 6, 'c', ts(11));
     lab(`$${tk(Qj)}$`, xj + CH.bw / 2, Y(Math.max(Qj, Qv)) - 8, 'c', ts(11));
-    lab('$\\text{vesi}$', xv + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
-    lab('$\\text{jää}$', xj + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
+    lab(__('vesi_2'), xv + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
+    lab(__('jaa_2'), xj + CH.bw / 2, CH.y0 + ts(16), 'c', ts(12));
     // one legend line: colour → what the bar says
     const ly = CH.y0 + ts(16) + ts(20);
     let lx = 250;
-    for (const [txt, col] of [['$\\text{luovuttaa}$', [232, 89, 12]], ['$\\text{lämmitys}$', [25, 113, 194]], ['$\\text{sulatus}$', [120, 185, 235]]]) {
+    for (const [txt, col] of [[__('luovuttaa'), [232, 89, 12]], [__('lammitys'), [25, 113, 194]], [__('sulatus'), [120, 185, 235]]]) {
       p.noStroke(); p.fill(...col); p.rect(lx, ly - ts(9), ts(9), ts(9), 2);
       lab(txt, lx + ts(12), ly, 'l', ts(10));
       const b = labels[labels.length - 1]; lx = b.x1 + ts(7);

@@ -1,30 +1,31 @@
 <!doctype html>
-<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{title}} — Fysiikkalabra</title>
+<html lang="{{t:format.html_lang}}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}} — {{t:site.name}}</title>
 <meta name="description" content="{{description}}">
 <link rel="canonical" href="{{url}}">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Fysiikkalabra">
-<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="{{t:site.name}}">
+<meta property="og:locale" content="{{t:format.og_locale}}">
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{description}}">
 <meta property="og:url" content="{{url}}">
 <meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="vendor/katex/katex.min.css">
 <link rel="stylesheet" href="site.css">
+{{strings}}
 </head><body>
 <div class="page lesson-page">
 <header class="top">
-  <a class="brand" href="index.html" aria-label="Fysiikkalabra, etusivu"><span class="brand-mark">F</span><span class="brand-name">Fysiikkalabra</span></a>
-  <nav aria-label="Päävalikko"><a href="index.html#moduulit">Moduulit</a><a class="pill" href="{{home}}">← Portfolio</a></nav>
+  <a class="brand" href="index.html" aria-label="{{t:site.home_aria}}"><span class="brand-mark">F</span><span class="brand-name">{{t:site.name}}</span></a>
+  <nav aria-label="{{t:site.main_menu}}"><a href="index.html#moduulit">{{t:site.modules}}</a><a class="pill" href="{{home}}">{{t:site.portfolio}}</a>{{languages}}</nav>
 </header>
-<nav class="crumbs" aria-label="Polku"><a href="index.html">Fysiikkalabra</a> › <a href="{{course}}.html">{{course}}</a> › {{title}}</nav>
+<nav class="crumbs" aria-label="{{t:site.breadcrumb}}"><a href="index.html">{{t:site.name}}</a> › <a href="{{course}}.html">{{course}}</a> › {{title}}</nav>
 {{notice}}
-<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>{{course}}</span>{{title}}</p>{{toc}}</nav>
+<nav class="toc" aria-label="{{t:lesson.steps_nav}}"><p class="toc-head"><span>{{course}}</span>{{title}}</p>{{toc}}</nav>
 <main class="reading lesson">
 {{main}}
 </main>
-<footer class="bottom"><span>Fysiikkalabra · lukion fysiikka, LOPS 2019</span><a href="{{course}}.html">← {{course}}-moduuli</a><a href="{{home}}">← Takaisin portfolioon</a></footer>
+<footer class="bottom"><span>{{t:site.footer}}</span><a href="{{course}}.html">{{back_to_course}}</a><a href="{{home}}">{{t:site.back_to_portfolio}}</a></footer>
 </div>
 <script src="vendor/katex/katex.min.js"></script>
 <script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>

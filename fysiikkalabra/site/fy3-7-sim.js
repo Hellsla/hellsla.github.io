@@ -22,8 +22,8 @@ new p5((p) => {
   const T0 = -20, T_END = 130, SPEED = 60;                               // start and stop temperature (°C), sim s per real s
   const CH = { x0: 335, x1: 565, y0: 315, y1: 60 };                      // chart area (axes at x0 and y0)
   const BK = { x: 50, w: 160, top: 95, bottom: 300 };                    // container
-  const PHASE_TEXT = { 'jää': 'jää lämpenee', 'sulaa': 'jää sulaa ($0\\,{}^\\circ\\text{C}$)', 'vesi': 'vesi lämpenee', 'kiehuu': 'vesi kiehuu ($100\\,{}^\\circ\\text{C}$)', 'höyry': 'höyry lämpenee' };
-  const CONTENT = { 'jää': 'jää', 'sulaa': 'jää ja vesi', 'vesi': 'vesi', 'kiehuu': 'vesi ja höyry', 'höyry': 'höyry' };
+  const PHASE_TEXT = { 'jää': __('jaa_lampenee'), 'sulaa': __('jaa_sulaa'), 'vesi': __('vesi_lampenee'), 'kiehuu': __('vesi_kiehuu'), 'höyry': __('hoyry_lampenee') };
+  const CONTENT = { 'jää': __('jaa'), 'sulaa': __('jaa_ja_vesi'), 'vesi': __('vesi'), 'kiehuu': __('vesi_ja_hoyry'), 'höyry': __('hoyry') };
   let sM, lM, sP, lP, sSp, note, readout, t = 0, running = false, labels = [];
 
   const slider = (parent, min, max, val, step) => {
@@ -52,13 +52,13 @@ new p5((p) => {
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
     const controls = p.createDiv('').parent('sim-root').class('controls');   // controls first: canvas and button fit one phone screen
-    button(controls, 'Lämmitä', () => { const m = Number(sM.value()), P = Number(sP.value()); if (t >= stages(m)[4] / P) t = 0; running = true; });
-    button(controls, 'Nollaa', () => { t = 0; running = false; });
+    button(controls, __('lammita'), () => { const m = Number(sM.value()), P = Number(sP.value()); if (t >= stages(m)[4] / P) t = 0; running = true; });
+    button(controls, __('nollaa'), () => { t = 0; running = false; });
     [sM, lM] = slider(controls, 0.1, 1, 0.5, 0.05);           // massa m (kg)
     [sP, lP] = slider(controls, 500, 3000, 1000, 100);        // teho P (W)
     [sM, sP].forEach((s) => s.elt.addEventListener('input', () => { t = 0; running = false; }));   // a new setting starts a new run
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                                     // pace only: never resets or locks the run
     readout = p.createDiv('').parent('sim-root').class('readout');
     note = p.createP('').parent('sim-root').class('note');                  // the one legend line: the time scale
@@ -77,7 +77,7 @@ new p5((p) => {
     const q = stages(m), tEnd = q[4] / P;                      // time to reach 130 °C
     const pace = SPEED * Number(sSp.value());                  // simulated seconds per real second
     if (running) t += Math.min(p.deltaTime, 100) / 1000 * pace;
-    note.html(`Aika kuluu nopeutettuna: $1\\,\\text{s}$ animaatiota vastaa $${pace}\\,\\text{s}$.`);
+    note.html(__(`aika_kuluu_nopeutettuna`, {pace: pace}));
     if (t >= tEnd) { t = tEnd; running = false; }
     const held = (s) => s.elt.getAttribute('aria-disabled') === 'true';   // a guided experiment may hold a slider (sim-embed adapter)
     sM.elt.disabled = running || held(sM); sP.elt.disabled = running || held(sP);   // locked while heating
@@ -86,12 +86,12 @@ new p5((p) => {
     const tMelt = S * m / P, tBoil = R * m / P;                // plateau lengths sm/P and rm/P
     const [tMax, step] = niceMax(tEnd);
 
-    lM.html(`Massa $m = ${tx(m, 2)}\\,\\text{kg}$`); lP.html(`Teho $P = ${P}\\,\\text{W}$`);
-    readout.html(`Vaihe: <strong>${PHASE_TEXT[phase]}</strong>, lämpötila $T =$ <strong>$${tx(T, 1)}\\,{}^\\circ\\text{C}$</strong>` +
-                 `<br>Siirtynyt energia $Q = Pt =$ <strong>$${tx(Q / 1000, 1)}\\,\\text{kJ}$</strong>, kulunut aika $t = ${tx(t, 0)}\\,\\text{s}$` +
-                 `<br>Sulaminen kestää $sm/P = ${fj(S * m)}\\,\\text{J} / ${P}\\,\\text{W} =$ <strong>$${tx(tMelt, 0)}\\,\\text{s}$</strong>` +
-                 `<br>Kiehuminen kestää $rm/P = ${fj(R * m)}\\,\\text{J} / ${P}\\,\\text{W} =$ <strong>$${tx(tBoil, 0)}\\,\\text{s}$</strong>` +
-                 `<br>Kuvaajan aika-akseli $0\\text{–}${tMax}\\,\\text{s}$, lämpötila-akseli $-20 \\ldots 130\\,{}^\\circ\\text{C}$.`);
+    lM.html(__(`massa`, {m: tx(m, 2)})); lP.html(__(`teho`, {p: P}));
+    readout.html(__(`vaihe_lampotila`, {phase_text: PHASE_TEXT[phase], t: tx(T, 1)}) +
+                 __(`siirtynyt_energia_kulunut`, {q: tx(Q / 1000, 1), t: tx(t, 0)}) +
+                 __(`sulaminen_kestaa`, {s: fj(S * m), p: P, tmelt: tx(tMelt, 0)}) +
+                 __(`kiehuminen_kestaa`, {r: fj(R * m), p: P, tboil: tx(tBoil, 0)}) +
+                 __(`kuvaajan_aika_akseli`, {tmax: tMax}));
     window.simState = { m, P, t, T, phase, Q, tMelt, tBoil, running, tEnd, tMax, content: CONTENT[phase], pace };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -135,7 +135,7 @@ new p5((p) => {
     // heater: glows while heating, brighter for a larger power; its label starts at the heater's left end
     const glow = running ? 0.4 + 0.6 * P / 3000 : 0;
     p.noStroke(); p.fill(90 + 160 * glow, 90 - 40 * glow, 90 - 50 * glow); p.rect(BK.x - 10, BK.bottom + 6, BK.w + 20, 16, 4);
-    p.fill(60); label(`$\\text{kuumennin } ${P}\\,\\text{W}$`, BK.x - 10, BK.bottom + 26 + ts(12), p.LEFT, ts(12));
+    p.fill(60); label(__(`kuumennin`, {p: P}), BK.x - 10, BK.bottom + 26 + ts(12), p.LEFT, ts(12));
 
     // thermometer, same −20…130 °C scale as the chart
     const thx = 258, Yt = (TT) => BK.bottom - 30 - (BK.bottom - 30 - BK.top) * (TT - T0) / (T_END - T0);
@@ -171,8 +171,8 @@ new p5((p) => {
     // plateau, kept left of the steam segment; both on a light background so the curve never runs through the text
     const green = [26, 77, 46];
     p.textSize(ts(12)); const capH = 0.7 * ts(12);
-    label(`$\\text{sulaa } ${tx(tMelt, 0)}\\,\\text{s}$`, X(pts[1][0]) + 4, (Y(0) + CH.y0) / 2 + capH / 2, p.LEFT, ts(12), green);
-    const kText = `$\\text{kiehuu } ${tx(tBoil, 0)}\\,\\text{s}$`, kw = box(kText, 0, 0, p.LEFT, ts(12)).x1;
+    label(__(`sulaa`, {tmelt: tx(tMelt, 0)}), X(pts[1][0]) + 4, (Y(0) + CH.y0) / 2 + capH / 2, p.LEFT, ts(12), green);
+    const kText = __(`kiehuu`, {tboil: tx(tBoil, 0)}), kw = box(kText, 0, 0, p.LEFT, ts(12)).x1;
     const kx = Math.max(CH.x0 + 6 + kw / 2, Math.min((X(pts[3][0]) + X(pts[4][0])) / 2, X(pts[4][0]) - 4 - kw / 2));
     label(kText, kx, Y(100) - 8, p.CENTER, ts(12), green);
     p.noStroke(); p.fill(200, 60, 40); p.circle(X(t), Y(T), 11);

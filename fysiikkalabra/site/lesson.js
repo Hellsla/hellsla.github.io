@@ -3,8 +3,11 @@
    2. Section nav: marks the section currently on screen.
    3. Worked example in stages: reveals the solution one stage at a time.
    4. Print: opens every collapsed block and every hidden stage while printing.
-   5. A link to something inside a closed box (the Ennusta box, a hint) opens the box, so the target shows. */
+   5. A link to something inside a closed box (the Ennusta box, a hint) opens the box, so the target shows.
+   Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
+  const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
+  const msg = (k, v) => { const s = (L10N.js || {})[k]; return typeof s === 'string' ? s.replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m)) : k; };   // lang/<lang>.json "js"
   const parse = (s) => {
     const t = s.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, '');
     return t === '' ? NaN : Number(t);
@@ -16,17 +19,17 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const v = parse(input.value);
-      if (Number.isNaN(v)) { out.textContent = 'Kirjoita luku, esimerkiksi 9,81.'; out.dataset.state = 'hint'; return; }
+      if (Number.isNaN(v)) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
       tries += 1;
       const limit = ans === 0 ? tol : tol * Math.abs(ans);
       const diff = Math.abs(v - ans);
       if (diff <= limit) {
-        out.textContent = 'Oikein.'; out.dataset.state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+        out.textContent = msg('correct'); out.dataset.state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
       } else {
         input.setAttribute('aria-invalid', 'true');
-        if (diff <= 3 * limit) out.textContent = 'Lähellä. Tarkista pyöristys ja yksikkö.';
-        else if (Math.abs(v) > 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = 'Suuruusluokka on väärä. Tarkista yksikkö.';
-        else out.textContent = tries >= 2 ? 'Ei vielä. Vastaus ja ratkaisu löytyvät alta.' : 'Ei aivan. Yritä uudelleen.';
+        if (diff <= 3 * limit) out.textContent = msg('check_close');
+        else if (Math.abs(v) > 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
+        else out.textContent = tries >= 2 ? msg('check_give_up') : msg('check_retry');
         out.dataset.state = 'no';
       }
     });
