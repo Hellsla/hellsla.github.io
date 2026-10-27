@@ -1,18 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 8f0b3f29f2c22cd5
+VERDICT: FAIL
+CONTENT-HASH: 0a0473c406c167f3
 
 ## Blocking
+- inquiry.json:377 (tarkistus-2 solution, Järkevyys) — "koska jäätä on vain viidesosa teen massasta" is wrong: 0,050 kg / 0,20 kg = 1/4 (ice is a fifth of the *total* 0,25 kg). The reasonableness check states a false ratio — fix: "neljäsosa".
 
 ## Polish
-- lesson.md (aria-labels of the energy-bar and graph figures) — they write "26.6 °C", "25.1 kJ" and "35.5 kJ" with a decimal point, while the rest of the lesson uses a decimal comma. — Use 26,6, 25,1 and 35,5.
+- inquiry.json:160, 231 (koe-1, koe-2) — `answer` 26.6 °C / 12.6 g carry three figures while each solution's Vastaus rounds to 27 °C / 13 g with two-figure data — align them or say why three figures are asked.
+- inquiry.json:322 (siirto, Muunnokset) — writes "$22\,{}^\circ\text{C} - 8{,}0\,{}^\circ\text{C} = 14\,\text{K}$", but Annettu and Vastaus use 22,0 and 14,0 K (the three figures the Vastaus relies on); write 22,0 − 8,0 = 14,0 K.
+- solutions.md:59 (L2-01, Järkevyys) — balance shown as 23,6 kJ vs 23,5 kJ "täsmäävät pyöristyksen tarkkuudella"; with T = 13,944 °C both are 23,55 kJ. Use 13,944 or give both as ≈ 23,5 kJ so the check visibly closes.
+- solutions.md:29 (L1-03, Järkevyys) — "jäätyminen vaatii paljon enemmän energiaa kuin jäähtyminen": freezing releases energy; say "olomuodon muutos sitoo/vapauttaa paljon enemmän energiaa kuin 20 K:n jäähtyminen".
+- sim-spec.md:1 — promises a readout line naming "mikä kolmesta tilanteesta toteutuu"; sim.js has four cases and no such line (howto describes four). Align the spec with the sim.
 
 ## Checked
-- The diff since round 1 is notation only: johtopaatos model and criteria now use \text{v}$ instead of $\theta_\text{v}$, in line with the Kaava section. The physics is unchanged.
-- All 12 exercise answers were recomputed independently and match answers.py and exercises.json within tolerance. L3-03 checked: the water gives at most 37,59 kJ, which is less than the 42,0 kJ the ice needs, so all the water freezes and T = −3,5 °C.
-- Worked example: Q_v = 25 140 J and Q_j = 17 540 J give T = 6,05 °C. The "noin 19 °C without fusion" (18,7–19,3) and the two-thirds share (16,7/25,1) both hold.
-- Inquiry numbers: ennuste-1 (75,3 g melted, 24,7 g left, limit 26,6 °C), ennuste-2 and koe-2 (5,9 g vs 18,5 g, difference 12,6 g, heating about 1/8 of melting), johtopaatos (62,4 g at 10 °C, 10,1 °C at 40 °C), virhe (−25,6 °C, 0,225 kg ice left), siirto 39,9 g (mistakes 43,9 and 438), tarkistus-2 40 °C (mistake 56), exit (66,8 kJ, 12,5 g).
-- Experiments isolate their varied parameter. koe-1 varies TW0 with mW, mI and TI0 locked; koe-2 varies TI0 with mW, TW0 and mI locked. simState provides Tf and iceLeftG.
-- sim.js: all four cases of solve() follow from energy conservation, including the all-frozen T formula and Qend. stateAt() orders cooling, freezing, warming and melting correctly. The illustrative time constant is stated in the model box.
-- SVGs: graph break at 26,6 °C (152,8 px) and 40,1 °C at 80 °C, and energy bars at 6 px/kJ (25,1; 2,1 + 33,4) are to scale as claimed. The before/after figure gives 0,375 kg water and 0,025 kg ice.
-- Solutions' sanity checks hold: L2-01 (25,6 °C without fusion, 46 %), L2-03 (6 %), L2-04 (T read to 0,1 K means about ±1 kJ/kg) and L3-01 (42 kJ/kg).
-- Formulas state their conditions (Q_v ≥ Q_j, the partial-melt range, freezing) and stay within FY3 contents.
+- All 12 exercise answers recomputed independently match answers.py and exercises.json.
+- Worked example: 25 140 / 17 540 / 7600 J, T = 6,05 → 6,0 °C; two-figure justification via Q_j precision correct; its check (≈19 °C, 2/3, 18,8 kJ) correct.
+- Every solution states the right principle (insulated, ice warms→melts→melt water warms; limit cases at 0 °C), solves symbolically first, conversions right; rounding lines name the limiting datum (L3-02 difference to the gram, L3-03 −4410 J to hundreds → 2 figures, L2-04 21,9 K).
+- inquiry.json and exit ticket: every number, correct option, feedback and mistake value recomputed (26,57 °C threshold, 12,6 g, 39,9 / 43,9 / 438 g, 40,06 / 56 / 35 °C, 12,5 g).
+- koe-1/koe-2 isolate TW0 / TI0; simState carries Tf and iceLeftG.
+- Figures: bar heights (6 px/kJ: 150,8, 12,6, 213), kink at 26,6 °C (152,8 px) and 40,07 °C at 80 °C, before/after masses 0,375 / 0,025 kg and cube areas to scale.
+- sim.js: four-case solve and Qend, sequential stateAt reaches Tf on both sides in every case; pace stated as illustration only.
+- Scope: inside FY3.

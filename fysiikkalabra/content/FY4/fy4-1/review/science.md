@@ -1,21 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: d1e3f3544f8c599a
+VERDICT: FAIL
+CONTENT-HASH: 0caa11574237ad86
 
 ## Blocking
-(none)
+- solutions.md:70 (L2-02 Järkevyys) — the check is false. At about 4,2 min/km, 1,2 km takes about 5 min, not "hieman yli neljä minuuttia", so the check contradicts the answer it accepts. — Fix: "kilometri kuluu noin 4,2 minuutissa, joten 1,2 km vie noin 1,2 · 4,2 min ≈ 5 min."
+- inquiry.json:343 (data, Kuvaajan lukeminen and Vastaus) — the solution reads 19,1 m as exact from a graph with 5 m gridlines and calls Δx = 15,0 m a three-figure value that "rajoittaa vähemmän". The hints themselves say "noin 19 m" and "noin 15 m". What really limits the answer is the reading precision and the scatter (fit slope 1,494 ± 0,029 m/s). — Fix: read about 19 m (Δx ≈ 15 m) and justify two figures by the reading precision and the scatter, not by "10 s on kahdella numerolla".
 
 ## Polish
-- solutions.md fy4-1-L2-01 — the task asks for "matka" but the solution names it "siirtymä $\Delta x$"; equal here (one direction), but in a lesson built on matka ≠ siirtymä write $s = v\,\Delta t$ or say why they coincide.
-- inquiry.json simulaatio `model` — "Kitkaa … ei huomioida" is unnecessary for carts that simply keep a constant velocity (forces are not in this lesson); "Kärryjen nopeus on vakio" says the assumption without inviting a force question.
+- solutions.md:19 (L1-02) — "koska kärry ei kääntynyt" is not given in the task; write "jos kärry ei käänny".
+- solutions.md:39 (L1-04) — 4,0 m is given to 0,1 m, not "metrin tarkkuudella"; 24 m is the datum that limits.
+- inquiry.json:332, :343 (data) — the mistake feedback subtracts 4,2 m where the solution uses the line's 4,1 m. The Järkevyys calls 1,5 m/s "kahden sekunnin välinen kasvu", but the increase per 2 s is about 3,0 m.
+- inquiry.json:197, :309 (exp-1, exp-3 Vastaus) — the readout shows 10,0 s and 40,0 m. Two figures is a convention for model values, so say that instead.
+- solutions.md:52 (L2-01) — "kuljettu matka eli siirtymä Δx": write s = vΔt or say why the two coincide.
 
 ## Checked
-- One Python run recomputed all 12 exercises and 12 inquiry/example numerics; answers.py matches (8,0 / −17 / 42 / 2,0 / 45 / 300 / 5,0 / −3,0 / 16 / 4,0 / 50 / 0,25; 4,0, −3,0, 1,49, 39, 13, 2,5, 170, 16) and stated answers are within tolerance.
-- Formulas Δx = x₂ − x₁, v_ka = Δx/Δt, x = x₀ + vt with symbols and the t = 0 condition; vector vs. component notation stated; within FY4 "tasainen suoraviivainen liike".
-- Displacement figure to scale (40 px/m: 2→8 m = +6 m, 8→3 m = −5 m); jogger graph to scale (20, 120, 170 m at 0, 40, 60 s).
-- Worked example symbolic first, 2,5 m/s ≈ 9 km/h, 170 m with independent check.
-- Robot data: least-squares slope 1,494 m/s, intercept 4,10 m; drawn line (0; 4,1)–(10; 19,1) and all six points at the right pixels; residuals ±0,3 m on both sides; answer 1,5 with 3 % tolerance; mistakes 1,91 / 1,3 / 0,67 correct.
-- Predictions: model values A 2 m/s, B 4 m/s, C x₀ = 20 m, D x₀ = 30 m, v = −3 m/s, A and D meet at 6 s, 12 m — all feedback numbers match sim.js CASES.
-- Experiments lock `tapaus`, vary `t`; simState exposes xA and x2 at the slider's 0,5 s steps; exp-1 4,0 m/s, exp-3 −3,0 m/s.
-- Round trip E: 8 m out, 2 s stop, back to 0 at 10 s; path 16 m, v_ka = 0; graph vertices at the right times; keskivauhti 1,6 m/s distinguished correctly.
-- sim.js pos/vel/path correct for all four cases; arrows scale with signed v; implements the lesson's model, limits stated.
-- Etsi virhe, siirto (39 m, mistakes 50/74/5,0), check-2 (13 m) and exit ticket correct; hash identical at start and end.
+- One script ran answers.py and my own formulas on all 12 exercises and every inquiry number: all match and are within tolerance.
+- Every principle applies and is justified. Solutions are symbolic first, conversions are right, and rounding follows the figures of a difference. The example's 1,7·10² m is right.
+- The other checks are real: back-substitutions, the sledge's x₀ = −11 m, check-2 via 4,8 s, L3-01 between 5,0 and 3,3 m/s.
+- The figures are to scale: data line 4,10 → 19,10 m, all six points, the jogger graph and graph E. Predictions match sim.js CASES. The experiments lock tapaus and vary t. pos, vel and path are correct. The hash was unchanged at the end.
