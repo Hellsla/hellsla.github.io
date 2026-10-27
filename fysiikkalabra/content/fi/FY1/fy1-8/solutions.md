@@ -39,14 +39,14 @@
 **Järkevyys:** Epävarmuus on kaksi millimetriä, mikä sopii viivoittimella tehtyyn mittaukseen, jossa pienin asteikkoväli on millimetri. Mittausten suurin poikkeama keskiarvosta $24{,}2\,\text{cm}$ on $0{,}2\,\text{cm}$.
 
 ## fy1-8-L1-05
-**Annettu:** kuusi matkaa, pienin $0{,}50\,\text{m}$ ja suurin $3{,}00\,\text{m}$, tasavälein
-**Kysytty:** kahden peräkkäisen matkan ero $\Delta s$ metreinä
-**Periaate:** Kuudella tasavälein olevalla matkalla on viisi väliä, koska ensimmäistä ja viimeistä matkaa ei lasketa kahteen kertaan. Koko väli jaetaan viiteen yhtä suureen osaan.
-**Kaava:** $\Delta s = \dfrac{s_\text{max} - s_\text{min}}{N - 1}$, missä $N$ on matkojen lukumäärä
-**Muunnokset:** Kaikki matkat ovat metreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $\Delta s = \dfrac{3{,}00\,\text{m} - 0{,}50\,\text{m}}{6 - 1} = \dfrac{2{,}50\,\text{m}}{5} = 0{,}50\,\text{m}$
-**Vastaus:** $0{,}50\,\text{m}$, kaksi merkitsevää numeroa kuten matkoissa.
-**Järkevyys:** Matkat ovat $0{,}50\,\text{m}$, $1{,}00\,\text{m}$, $1{,}50\,\text{m}$, $2{,}00\,\text{m}$, $2{,}50\,\text{m}$ ja $3{,}00\,\text{m}$. Niitä on kuusi ja suurin on pienin lisättynä viidellä välillä, joten luku täsmää.
+**Annettu:** pöytäkirjan rivillä matka $s = 2{,}00\,\text{m}$, aikojen keskiarvo $\bar{t} = 4{,}73\,\text{s}$ ja puolet vaihteluvälistä $\Delta t = 0{,}15\,\text{s}$
+**Kysytty:** ajan suhteellinen epävarmuus $\varepsilon$ prosentteina
+**Periaate:** Suhteellinen epävarmuus kertoo, kuinka suuri osa mitatusta ajasta epävarmuus on. Se saadaan jakamalla pöytäkirjaan kirjattu epävarmuus keskiajalla; matkaa ei tarvita.
+**Kaava:** $\varepsilon = \dfrac{\Delta t}{\bar{t}}$
+**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita. Osamäärä kerrotaan sadalla prosenteiksi.
+**Sijoitus:** $\varepsilon = \dfrac{0{,}15\,\text{s}}{4{,}73\,\text{s}} = 0{,}0317 = 3{,}2\,\%$
+**Vastaus:** $3{,}2\,\%$, kaksi merkitsevää numeroa kuten epävarmuudessa $0{,}15\,\text{s}$.
+**Järkevyys:** Karkea arvio: $0{,}15 / 4{,}7$ on noin $0{,}03$, eli noin $3\,\%$. Tulos täsmää pöytäkirjan taulukon arvoon $3{,}2\,\%$ ja on alle $5\,\%$, joten matka $2{,}00\,\text{m}$ riittää.
 
 ## fy1-8-L2-01
 **Annettu:** viisi aikaa $7{,}8\,\text{s}$, $8{,}2\,\text{s}$, $7{,}9\,\text{s}$, $8{,}1\,\text{s}$ ja $8{,}0\,\text{s}$

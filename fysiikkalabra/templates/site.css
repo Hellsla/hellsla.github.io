@@ -175,7 +175,9 @@ footer.bottom a{display:inline-flex;align-items:center;min-height:40px}
 .crumbs:empty{display:none}
 
 /* tables: a level-3 element, light frame, small sans heads; numbers in tabular figures */
-table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-variant-numeric:tabular-nums}
+table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;border:1px solid var(--line);border-radius:12px;font-variant-numeric:tabular-nums;
+  /* scroll cue: a soft shadow at an edge that has more columns behind it (covers move with the content) */
+  background:linear-gradient(to right,var(--surface) 30%,transparent) left/2.5rem 100% no-repeat local,linear-gradient(to left,var(--surface) 30%,transparent) right/2.5rem 100% no-repeat local,radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.2),transparent) left/.9rem 100% no-repeat scroll,radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.2),transparent) right/.9rem 100% no-repeat scroll,var(--surface)}
 th,td{padding:.45rem .8rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
 th{font:600 var(--fs-small) var(--sans);color:var(--ink-2);background:var(--bg-tint)}
 tr:last-child td{border-bottom:0}

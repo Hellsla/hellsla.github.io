@@ -1,24 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 320dd4262c607fdd
+VERDICT: PASS
+CONTENT-HASH: 42fa021ae8b29ad2
 
 ## Blocking
-- content/fi/FY1/fy1-8/inquiry.json:164 (`suunnittele` model) — the model plan says a ball released from rest down a slope ("päästetään irti ilman työntöä") has "likimain vakio" speed, so time is proportional to distance. A ball rolling down an incline from rest accelerates (s ∝ t², not s = vt), so the model answer presents a physically wrong hypothesis as the example. It also contradicts its own 4 s minimum: 0,50 m in 4 s down a slope is not realistic. — Fix: make the ball roll on a level floor after a short launch ramp, with timing started past the ramp, so constant speed is a fair assumption. Or keep the slope and frame the s = vt hypothesis as one the measurement is expected to refute.
-- content/fi/FY1/fy1-8/lesson.md:155 — "sitä lyhyempi mittaus ei kerro mitään, koska epävarmuus on yhtä suuri kuin mittaus itse" is false. Below the minimum distance the relative uncertainty only exceeds the chosen limit ε_max: at 2 s it is 10 %, not 100 %. — Fix: "sitä lyhyemmällä matkalla suhteellinen epävarmuus ylittää valitun rajan ε_max".
+None.
 
 ## Polish
-- inquiry.json:18 (hook) — group B runs 2,00 m "viisi kertaa" with a mean of 4,74 s, but B's table in Tutki has three repeats with a mean of 4,73 s. Make them match.
-- inquiry.json:95 — "pidemmillä matkoilla suhteellinen epävarmuus on alle 6 %", but the 1,00 m row has 6,1 %. Say "noin 6 % tai alle".
-- lesson.md:77 — "(ks. seuraava osa)" points to Mittauspöytäkirja; the relative-uncertainty rule is in the Kaava section.
-- lesson.md:155 — "pitkän tutkimuksen perusta" is unclear wording.
-- exercises L2-02 — "kolmen metrin matkan" is given in words, while the solution uses 3,0 m with two significant figures. Write "3,0 m" in the task.
+- inquiry.json `suunnittele` model — a ball rolling on a level floor slows slightly from rolling friction, so over 1,6–3,2 m the s = vt hypothesis may fail. The model now says that the hypothesis is refuted if the time grows faster than the distance, so this is a legitimate, falsifiable example. A note that a real ball slows a little would make the example richer.
 
 ## Checked
-- One script recomputed all 12 answers (my formulas, answers.py and exercises.json): all agree.
-- Table in Group B's measurement record (poytakirja): means, Δt, ε, v and v-uncertainties recomputed; all printed values are right. The 0,39 ± 0,05 m/s interval contains 0,42 m/s.
-- Opening question (hook) and Ennusta feedback: A gives 0,50 ± 0,10 m/s at ε = 20 %; B gives 0,42 m/s ± about 0,01 m/s.
-- Worked example: t_min = 4 s, s = 1,68 m → 1,7 m; the reasonableness check (4,05 s, 4,9 %; 0,50 m gives 17 %) is right.
-- Graph questions (graafi, virhe, siirto, tarkistus-2, exit ticket, kertaus): answers, mistake values and solutions are right.
-- Formula ε = Δt/t and t ≥ Δt/ε_max: correct, and inside FY1's "luotettavuuden arviointi".
-- SVG figures: set-up drawn to scale (150 px/m, s = 2,00 m); ε(t) curve hits 20 %, 5 % and 2 % at 1, 4 and 10 s; s–t graph points, ±Δt error bars and the fitted line (slope 0,419; least squares through the origin gives 0,419) are to scale.
-- Solutions: each one solves symbolically before substituting values; the L3-01 two-uncertainty argument and the L3-02 data (plausible for Newtonian cooling) are right.
-- Correct choice options (reilu-koe, tarkistus-1) are physically right.
+- Round-1 blocking 1 (`suunnittele`): the ball now rolls on a level floor after a launch ramp, and timing starts past the ramp. At 0,4 m/s, 1,6 m gives 4 s, and 0,2 s / 4 s = 5 % ("enintään 5 %"). The range 1,6–3,2 m gives five equally spaced values. The model states a falsification criterion. Fixed.
+- Round-1 blocking 2 (lesson.md:155): the text now says that a shorter distance makes the relative uncertainty exceed ε_max. Correct. Fixed.
+- Polish items: the hook now matches the Tutki table (five distances × 3 repeats, mean 4,73 s); "noin 6 % tai alle" matches the 6,1 % row; the cross-reference names the right section; L2-02 now gives "3,0 m". All fixed.
+- New L1-05: ε = 0,15 s / 4,73 s = 3,17 % → 3,2 %, which matches answers.py, exercises.json, the solution and the table row. The 2 % tolerance covers rounding. Its solution is symbolic first and complete.
+- Recomputed all 12 answers again in one script; all agree with answers.py and exercises.json.
+- Graph text: Δs/Δt = v needs t on the horizontal axis. Correct.
+- Reworded `reilu-koe` options and their feedback are physically right; the Ennusta correct option's feedback (20 %, 0,50 ± 0,10 m/s; B ±0,01 m/s) still holds.
+- Content hash matched the packet at start and end.

@@ -10,7 +10,7 @@ a["fy1-8-L1-02"] = (12.3 + 12.5 + 12.2 + 12.6 + 12.4) / 5   # mean = 62,0 s / 5 
 a["fy1-8-L1-03"] = 1.50 / 3.6                             # v = s / t = 1,50 m / 3,6 s = 0,4167 m/s -> 0,42 m/s
 l = [24.1, 24.4, 24.0, 24.3, 24.2]
 a["fy1-8-L1-04"] = (max(l) - min(l)) / 2                  # half of the range = (24,4 - 24,0) cm / 2 = 0,2 cm
-a["fy1-8-L1-05"] = (3.00 - 0.50) / (6 - 1)                # 6 points have 5 gaps: step = 2,50 m / 5 = 0,50 m
+a["fy1-8-L1-05"] = 0.15 / 4.73 * 100                      # record row: eps = dt / mean t = 0,15 s / 4,73 s = 0,0317 -> 3,2 %
 # Level 2: two steps, a conversion or a rearrangement
 t = [7.8, 8.2, 7.9, 8.1, 8.0]
 a["fy1-8-L2-01"] = (max(t) - min(t)) / 2 / (sum(t) / len(t)) * 100   # half-range 0,2 s, mean 8,0 s -> 0,2 / 8,0 = 2,5 %

@@ -35,9 +35,9 @@
     {
       "id": "fy1-8-L1-05",
       "level": 1,
-      "text": "Auton aika mitataan kuudella matkalla, joiden pituudet ovat tasavälein 0,50 m:stä 3,00 m:iin. Kuinka suuri on kahden peräkkäisen matkan ero?",
-      "answer": 0.5,
-      "unit": "m",
+      "text": "Mittauspöytäkirjan rivillä matka on 2,00 m, kolmen ajan keskiarvo 4,73 s ja puolet vaihteluvälistä $\\Delta t = 0{,}15\\,\\text{s}$. Kuinka suuri on ajan suhteellinen epävarmuus $\\varepsilon$ prosentteina?",
+      "answer": 3.2,
+      "unit": "%",
       "tolerance": 0.02
     }
   ],
@@ -53,7 +53,7 @@
     {
       "id": "fy1-8-L2-02",
       "level": 2,
-      "text": "Auto kulkee vakionopeudella 1,5 m/s kolmen metrin matkan, ja kulkuaika mitataan käsikellolla, jonka epävarmuus on 0,20 s. Kuinka suuri on mitatun ajan suhteellinen epävarmuus prosentteina?",
+      "text": "Auto kulkee vakionopeudella 1,5 m/s 3,0 m:n matkan, ja kulkuaika mitataan käsikellolla, jonka epävarmuus on 0,20 s. Kuinka suuri on mitatun ajan suhteellinen epävarmuus prosentteina?",
       "answer": 10,
       "unit": "%",
       "tolerance": 0.02

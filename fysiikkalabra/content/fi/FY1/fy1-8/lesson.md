@@ -74,7 +74,7 @@ Jos kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot, tuloksen
 ### Suunnittelu ennen mittausta
 Suunnitelma vastaa ennen mittausta kysymyksiin: mitä mitataan ja millä välineellä, mitkä arvot muutettavalle muuttujalle valitaan ja kuinka monta, montako toistoa kustakin arvosta tehdään ja mitä pidetään vakiona. Kokeile ensin esikokeella. Se kertoo, onko mittaus ylipäätään mahdollinen, ja antaa karkean arvion tuloksesta.
 
-Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mittauksen epävarmuus (ks. seuraava osa). Valitse arvoja tasavälein ja useita, koska yksi tai kaksi pistettä ei näytä, onko riippuvuus suora.
+Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mittauksen epävarmuus (ks. kohta *Suhteellinen epävarmuus ja mittausalueen valinta*). Valitse arvoja tasavälein ja useita, koska yksi tai kaksi pistettä ei näytä, onko riippuvuus suora.
 
 ### Mittauspöytäkirja
 **Mittauspöytäkirja** on kirjaus, joka tehdään kokeen aikana, ei muistista jälkikäteen. Siihen kirjataan tutkimuskysymys, päivämäärä, välineet ja niiden tarkkuus, vakioidut asiat, mittaukset taulukkona yksiköineen sekä havainnot, esimerkiksi "auto kääntyi sivuun".
@@ -152,7 +152,7 @@ missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina
   <foreignObject x="184" y="73.5" width="180" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\varepsilon = \dfrac{0{,}2\,\text{s}}{t}$</div></foreignObject>
 </svg>
 
-Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku *Graafinen esitys ja suoran sovittaminen*). Kun $t$ on vaaka-akselilla ja $s$ pystyakselilla, suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on pitkän tutkimuksen perusta: sitä lyhyempi mittaus ei kerro mitään, koska epävarmuus on yhtä suuri kuin mittaus itse.
+Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku *Graafinen esitys ja suoran sovittaminen*). Kun $t$ on vaaka-akselilla ja $s$ pystyakselilla, suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on se, jolla suhteellinen epävarmuus vielä pysyy valitussa rajassa $\varepsilon_\text{max}$. Sitä lyhyemmällä matkalla suhteellinen epävarmuus ylittää tämän rajan, ja tulos on liian epätarkka.
 
 ## Esimerkki
 Oppilaat tutkivat leluauton liikettä. Esikokeessa auton nopeus on noin $0{,}42\,\text{m/s}$. Aika mitataan käsikellolla, jonka epävarmuus on $\Delta t = 0{,}2\,\text{s}$. Mittauksen suhteellinen epävarmuus halutaan enintään $5{,}0\,\%$. Kuinka pitkä matka auton pitää vähintään kulkea?
