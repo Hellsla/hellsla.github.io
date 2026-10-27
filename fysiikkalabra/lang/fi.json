@@ -604,7 +604,28 @@
       "o_ly": "1 valovuosi",
       "o_proxima": "Proxima Centauri",
       "o_milky": "Linnunrata",
-      "o_universe": "havaittava maailmankaikkeus"
+      "o_universe": "havaittava maailmankaikkeus",
+      "o_quark": "kvarkki",
+      "o_henuc": "heliumydin",
+      "o_pbnuc": "lyijyydin",
+      "o_gamma": "gammasäteily",
+      "o_heatom": "heliumatomi",
+      "o_coin": "euron kolikko",
+      "o_ball": "jalkapallo",
+      "o_whale": "sinivalas",
+      "o_moon": "Kuu",
+      "o_jupiter": "Jupiter",
+      "o_helio": "heliopaussi",
+      "o_oort": "Oort-pilvi",
+      "o_orion": "Orionin sumu",
+      "o_arm": "Orionin haara",
+      "o_andromeda": "Andromeda",
+      "o_group": "Paikallinen ryhmä",
+      "o_virgo": "Virgon superparvi",
+      "o_laniakea": "Laniakea",
+      "o_space": "avaruuden raja",
+      "o_saturn": "Saturnuksen rata",
+      "o_lmc": "Suuri Magellanin pilvi"
     }
   }
 }

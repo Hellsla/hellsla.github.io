@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kirjoita pituus $0{,}000\\,042\\,\\text{m}$ kymmenpotenssimuodossa ja anna sen suuruusluokka.",
+    "a": "$0{,}000\\,042\\,\\text{m} = 4{,}2\\cdot10^{-5}\\,\\text{m}$. Kerroinosa $4{,}2$ on yli noin 3, joten suuruusluokka on seuraava kymmenpotenssi, $10^{-4}\\,\\text{m}$."
+  },
+  {
+    "q": "Kohteen $\\text{A}$ koon suuruusluokka on $10^{3}\\,\\text{m}$ ja kohteen $\\text{B}$ koon suuruusluokka $10^{8}\\,\\text{m}$. Kuinka monta kertaa suurempi $\\text{B}$ on suuruusluokan tarkkuudella?",
+    "a": "$k \\approx 10^{n_2 - n_1} = 10^{8-3} = 10^{5}$. Kohde $\\text{B}$ on noin satatuhatkertainen. Eroa viisi suuruusluokkaa ei saa lukea viisinkertaiseksi: yksi suuruusluokka on kymmenkertainen koko."
+  },
+  {
+    "q": "Miksi fysiikassa malli testataan kokeella, vaikka se olisi looginen ja kaunis?",
+    "a": "Looginenkin malli voi kuvata luontoa väärin. Vasta mittaus kertoo, vastaako mallista johdettu ennuste luontoa. Jos ei vastaa, mallia muutetaan tai se hylätään."
+  }
+]
