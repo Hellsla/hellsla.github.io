@@ -94,7 +94,10 @@
 **Periaate:** Tilanyhtälö antaa ainemäärän, ja Avogadron vakio muuttaa sen molekyylien lukumääräksi. Ilma on kaasuseos, mutta tilanyhtälössä on vain kaikkien hiukkasten yhteinen ainemäärä eikä moolimassaa. Siksi tietoa siitä, mistä kaasuista ilma koostuu, ei tarvita.
 **Kaava:** $pV = nRT$ ja $N = n N_\text{A}$, joten $n = \dfrac{pV}{RT}$ ja $N = \dfrac{pV N_\text{A}}{RT}$
 **Muunnokset:** $V = 0{,}55\,\textsf{l} = 0{,}00055\,\text{m}^3$, $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$ ja $T = (37 + 273{,}15)\,\text{K} = 310{,}15\,\text{K}$.
-**Sijoitus:** $N = \dfrac{101\,000\,\text{Pa} \cdot 0{,}00055\,\text{m}^3 \cdot 6{,}022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 310{,}15\,\text{K}} = 1{,}298 \cdot 10^{22}$
+**Sijoitus:** Osoittaja on $101\,000\,\text{Pa} \cdot 0{,}00055\,\text{m}^3 \cdot 6{,}022 \cdot 10^{23}\,\tfrac{1}{\text{mol}} = 3{,}345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}}$ ja nimittäjä $8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 310{,}15\,\text{K} = 2577\,\tfrac{\text{J}}{\text{mol}}$, joten
+
+$$N = \dfrac{3{,}345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}}}{2577\,\tfrac{\text{J}}{\text{mol}}} = 1{,}298 \cdot 10^{22}$$
+
 **Vastaus:** $1{,}3 \cdot 10^{22}$ molekyyliä, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuus $0{,}55\,\textsf{l}$ (kaksi numeroa); paine $101\,\text{kPa}$, lämpötila $310\,\text{K}$ (kokonaisasteesta $37\,{}^\circ\text{C}$) ja vakiot ovat kolmen tai useamman numeron arvoja.
 **Järkevyys:** Ainemäärä on $\dfrac{1{,}298 \cdot 10^{22}}{6{,}022 \cdot 10^{23}\,\text{1/mol}} = 0{,}0216\,\text{mol}$, mikä sopii siihen, että litra huoneenlämpöistä kaasua on noin $0{,}04\,\text{mol}$ ja ruumiinlämmössä hieman vähemmän: $0{,}55 \cdot 0{,}04 \approx 0{,}022\,\text{mol}$. Noin $21\,\%$ molekyyleistä on happea, eli hengenvedossa on noin $2{,}7 \cdot 10^{21}$ happimolekyyliä.
 
@@ -104,7 +107,12 @@
 **Periaate:** Välitila täytetään samassa paineessa ja lämpötilassa, joten tilavuus on sama ja kaasua on yhtä monta moolia kummallakin täytteellä. Massaero johtuu vain siitä, että argonin moolimassa on suurempi, joten ainemäärän saa massaerosta ja moolimassojen erotuksesta.
 **Kaava:** $\Delta m = n (M_\text{Ar} - M_\text{ilma})$, joten $n = \dfrac{\Delta m}{M_\text{Ar} - M_\text{ilma}}$. Tilanyhtälöstä $V = \dfrac{nRT}{p}$ ja $V = Ad$, joten $d = \dfrac{nRT}{pA} = \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{ilma})}$
 **Muunnokset:** $T = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$ ja $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. Massa ja moolimassat ovat grammoina, joten $n$ tulee suoraan moolina. Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** $n = \dfrac{6{,}0\,\text{g}}{40\,\text{g/mol} - 29\,\text{g/mol}} = 0{,}5455\,\text{mol}$. $d = \dfrac{0{,}5455\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293{,}15\,\text{K}}{101\,000\,\text{Pa} \cdot 1{,}20\,\text{m}^2} = 0{,}01096\,\text{m} = 10{,}96\,\text{mm}$
+**Sijoitus:** $n = \dfrac{6{,}0\,\text{g}}{40\,\text{g/mol} - 29\,\text{g/mol}} = 0{,}5455\,\text{mol}$.
+
+Osoittaja on $0{,}5455\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293{,}15\,\text{K} = 1328{,}9\,\text{J}$ ja nimittäjä $101\,000\,\text{Pa} \cdot 1{,}20\,\text{m}^2 = 121\,200\,\text{N}$, koska $\text{Pa}\cdot\text{m}^2 = \text{N}$. Siis
+
+$$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}01096\,\text{m} \\ &= 10{,}96\,\text{mm} \end{aligned}$$
+
 **Vastaus:** $11\,\text{mm}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat massaero $6{,}0\,\text{g}$ ja moolimassojen erotus $40\,\text{g/mol} - 29\,\text{g/mol} = 11\,\text{g/mol}$, kumpikin kaksi numeroa; mitat $1{,}20\,\text{m}$ ja $1{,}00\,\text{m}$, paine $101\,\text{kPa}$ ja $293\,\text{K}$ ovat kolmen numeron arvoja.
 **Järkevyys:** Eristyslasin välitila on tavallisesti $10\text{–}20\,\text{mm}$, joten tulos on uskottava. Massat tarkistetaan: argonia on $0{,}5455\,\text{mol} \cdot 40\,\text{g/mol} = 21{,}8\,\text{g}$ ja ilmaa $0{,}5455\,\text{mol} \cdot 29\,\text{g/mol} = 15{,}8\,\text{g}$, ja erotus on $6{,}0\,\text{g}$.
 

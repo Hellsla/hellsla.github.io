@@ -95,7 +95,10 @@
 **Periaate:** Energia säilyy, kun lämpöä ei siirry lasiin eikä ilmaan: mehun luovuttama lämpömäärä on yhtä suuri kuin jään sulamiseen ja sulamisveden lämmittämiseen kuluva. Jää sulaa kokonaan, jos mehu riittää: se luovuttaisi jäähtyessään $0\,{}^\circ\text{C}$:seen $36\,662{,}5\,\text{J}$, mutta sulaminen vaatii vain $20\,040\,\text{J}$.
 **Kaava:** $cm_1(T_1 - T) = sm_2 + cm_2(T - T_0)$, josta $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
 **Muunnokset:** $m_2 = 60\,\text{g} = 0{,}060\,\text{kg}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Koska $T_0 = 0\,{}^\circ\text{C}$, termi $cm_2T_0$ on nolla, ja lämpötilat voi sijoittaa celsiusasteina, koska kaava sisältää lämpötilaeroja.
-**Sijoitus:** $T = \dfrac{4190 \cdot 0{,}35 \cdot 25 - 334\,000 \cdot 0{,}060}{4190 \cdot 0{,}41}\,{}^\circ\text{C} = \dfrac{36\,662{,}5 - 20\,040}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}$
+**Sijoitus:** Osoittaja on $4190 \cdot 0{,}35 \cdot 25 - 334\,000 \cdot 0{,}060 = 36\,662{,}5 - 20\,040 = 16\,622{,}5$ ja nimittäjä $4190 \cdot 0{,}41 = 1717{,}9$, joten
+
+$$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}$$
+
 **Vastaus:** $9{,}7\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massassa $0{,}35\,\text{kg}$.
 **Järkevyys:** Tulos on välillä $0\,{}^\circ\text{C}$ ja $25\,{}^\circ\text{C}$. Jos $60\,\text{g}$ olisi jo $0$-asteista vettä, loppulämpötila olisi $\dfrac{0{,}35 \cdot 25}{0{,}41}\,{}^\circ\text{C} \approx 21\,{}^\circ\text{C}$. Jää jäähdyttää paljon enemmän, koska sulaminen sitoo $20\,040\,\text{J}$ lämpöä ilman lämpötilan muutosta: tämän takia juoma jäähtyy yli $11\,\text{K}$ lisää.
 

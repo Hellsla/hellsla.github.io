@@ -114,6 +114,9 @@
 **Periaate:** Moottori on lämpövoimakone: bensiinin palaessa vapautuva energia $Q_1$ jakautuu työksi $W = \eta Q_1$ ja hukkalämmöksi. Teho on työ jaettuna matkaan kuluneella ajalla, ja nopeus on tasainen, joten teho on vakio.
 **Kaava:** $Q_1 = \rho V H$ ja $t = \dfrac{s}{v}$, joten $P = \dfrac{W}{t} = \dfrac{\eta \rho V H}{t}$
 **Muunnokset:** $t = \dfrac{100\,\text{km}}{80{,}0\,\text{km/h}} = 1{,}25\,\text{h} = 4500\,\text{s}$ ja $43{,}0\,\tfrac{\text{MJ}}{\text{kg}} = 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** $P = \dfrac{0{,}280 \cdot 0{,}750\,\tfrac{\text{kg}}{\textsf{l}} \cdot 6{,}00\,\textsf{l} \cdot 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}}{4500\,\text{s}} = \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} = 12\,040\,\text{W} = 12{,}04\,\text{kW}$
+**Sijoitus:** Polttoaineen energiasta saatava työ on $W = 0{,}280 \cdot 0{,}750\,\tfrac{\text{kg}}{\textsf{l}} \cdot 6{,}00\,\textsf{l} \cdot 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} = 5{,}418 \cdot 10^7\,\text{J}$, joten
+
+$$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 12\,040\,\text{W} \\ &= 12{,}04\,\text{kW} \end{aligned}$$
+
 **Vastaus:** $12{,}0\,\text{kW}$, kolme merkitsevää numeroa. Kaikki tiedot ($6{,}00\,\textsf{l}$, $0{,}750\,\text{kg/l}$, $43{,}0\,\text{MJ/kg}$, $28{,}0\,\%$ ja $80{,}0\,\text{km/h}$) on annettu kolmella numerolla; matka $100\,\text{km}$ on kulutuksen vertailumatka eikä rajoita.
 **Järkevyys:** Polttoaineteho on $\tfrac{1{,}935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, joten $31\,\text{kW}$ poistuu hukkalämpönä pakokaasujen ja jäähdyttimen kautta. Bensiiniä kuluu $54\,\text{kWh}$, ja työ on siitä 28 % eli $15\,\text{kWh}$. Sähköauto tarvitsee saman työn tekemiseen noin $\tfrac{15\,\text{kWh}}{0{,}90} \approx 17\,\text{kWh}$ akusta, koska sen moottori muuttaa sähköä työksi 90 %:n hyötysuhteella eikä lämpöä tarvitse muuttaa työksi.
