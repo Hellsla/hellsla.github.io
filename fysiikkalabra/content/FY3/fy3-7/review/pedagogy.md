@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2027383a0b3b19e2
+CONTENT-HASH: 8dc08d0f5628bf05
 
 ## Blocking
 (none)
 
 ## Polish
-1. solutions.md L1-03 and L1-04 Kaava — "ja $Q$ on jo ratkaistu: $Q = sm$" (L1-04: "$Q = rm$") repeats the formula and confuses a weak student; write "$Q = sm$ (kaava antaa suoraan kysytyn suureen)". The same pattern probably recurs in other direct-formula solutions.
-2. solutions.md L1-03 Järkevyys — the density 1000 kg/m³ is used without being given; add "veden tiheys on $1000\,\text{kg/m}^3$" before the fraction.
-3. lesson.md Esimerkki step 7 — straight quotes "kaikki energia veteen"; use ”kaikki energia veteen” (carried over from round 1).
-4. No capture of an opened *Näytä ratkaisu* at 390 px exists; solutions were judged from source. Add one capture of a solution box.
+1. solutions.md L1-03 and L1-04 Kaava — "ja $Q$ on jo ratkaistu: $Q = sm$" repeats the formula; write "$Q = sm$ (kaava antaa suoraan kysytyn suureen)" (carried from round 2, not part of this diff).
+2. solutions.md L1-03 Järkevyys — give the density 1000 kg/m³ before it is used (carried).
+3. lesson.md Esimerkki step 7 — straight quotes "kaikki energia veteen"; use ”kaikki energia veteen” (carried).
+4. No capture of an opened Näytä ratkaisu at 390 px exists (carried); one capture of the L3-01 box would confirm the split Sijoitus fits.
 
 ## Checked
-- Diff: exercises.json L1-03 now says "ensimmäisellä pakkasviikolla"; it matches the solution's "pakkasviikon aikana" check, so round-2 Polish 1 is resolved. The answer 15 MJ and the unit are unchanged.
-- L1-03 solution reads in order Annettu, Kysytty, Periaate (why s and not ΔT, freezing releases what melting absorbs), Kaava, Muunnokset (kJ to MJ), Sijoitus, Vastaus (two s.f. from 45 kg), Järkevyys. A student can follow each step.
-- The 4,5 cm layer check now fits a week of frost; the remark that the released heat slows freezing is a useful sense check.
-- Other solutions and the worked example are unchanged since my last pass (example-390-2 legible).
-- Learning path, activities, Finnish and phone usability are as approved.
-- Hash unchanged at the end.
+- Diff (L3-01 Sijoitus): the one long fraction is now two intermediate values, numerator 16 622,5 and denominator 1717,9, then a short display $T = 16 622,5 / 1717,9$ = 9,68 °C. A student can follow each step and check each number with a calculator.
+- Arithmetic: 4190·0,35·25 = 36 662,5; 334 000·0,060 = 20 040; difference 16 622,5; 4190·0,41 = 1717,9; quotient 9,676, so 9,68 °C, then 9,7 °C. Matches the Vastaus line.
+- The numerator is built from the same terms the Kaava and Periaate lines name (36 662,5 and 20 040 already appear in Periaate), so no new number appears unexplained.
+- The Vastaus (two s.f. from 0,35 kg), Järkevyys (about 21 °C without the ice's melting; over 11 K of extra cooling) are unchanged and consistent with 9,68 °C.
+- The display-math line sits in its own paragraph after "joten", which fits a 360 px column far better than the earlier single line.
+- Learning path, activities, Finnish, other solutions and phone usability unchanged from the approved version.
+- Hash unchanged at the end (8dc08d0f5628bf05).
