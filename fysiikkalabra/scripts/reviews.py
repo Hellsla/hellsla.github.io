@@ -232,6 +232,38 @@ def _svg_pair(old, new):
     return "figure"
 
 
+NUM = re.compile(r"(?<![\w.])-?\d+(?:\.\d+)?")
+LABEL_CALL = re.compile(r"""\b(?:lab|p\.text)\(\s*(['"`])((?:(?!\1)[^\\]|\\.)*)\1""")
+
+
+def _label_args(line):
+    """Spans of the position arguments (the two after the text) of each canvas label call whose text is LaTeX."""
+    spans = []
+    for m in LABEL_CALL.finditer(line):
+        if "$" not in m.group(2): continue
+        i, depth, starts = m.end(), 0, []
+        while i < len(line):
+            c = line[i]
+            if c in "([{": depth += 1
+            elif c in ")]}":
+                if depth == 0: break
+                depth -= 1
+            elif c == "," and depth == 0:
+                starts.append(i)
+                if len(starts) == 3: break
+            i += 1
+        if len(starts) >= 2: spans.append((starts[0], starts[2] if len(starts) == 3 else i))
+    return spans
+
+
+def _js_label_pair(old, new):
+    """True when two sim.js lines differ only in numbers inside a LaTeX label's x, y arguments, each by at most 40."""
+    if NUM.sub("#", old) != NUM.sub("#", new): return False
+    a, b = list(NUM.finditer(old)), list(NUM.finditer(new)); spans = _label_args(old)
+    changed = [(x, y) for x, y in zip(a, b) if x.group() != y.group()]
+    return bool(changed) and all(abs(float(x.group()) - float(y.group())) <= 40 and any(s <= x.start() < e for s, e in spans) for x, y in changed)
+
+
 def _line(fname, body, lid):
     """Category of one added or removed line that is not a figure line."""
     s = body.lstrip()
@@ -277,6 +309,8 @@ def classify(path, diff_lines, lid):
             for o in [l for l in rem if l.startswith("## ")]:
                 n = next((l for l in add if l.startswith("## ") and inquiry.heading(l[3:])[0] == inquiry.heading(o[3:])[0] and l != o), None)
                 if n is not None: cats.add("section-name"); rem.remove(o); add.remove(n)
+        if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
+            cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it
         if code or py:
             for l in rem + add: cats.add("comments" if _comment(l, py) else "answers" if py else "simulation")
             return
