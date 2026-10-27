@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-2-L1-01",
+      "level": 1,
+      "text": "Ihmisen hiuksen paksuus on 82 µm. Ilmoita paksuus millimetreinä.",
+      "answer": 0.082,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-02",
+      "level": 1,
+      "text": "Kuun etäisyys Maasta on keskimäärin 384 400 km. Ilmoita etäisyys megametreinä, kun $1\\,\\text{Mm} = 10^{6}\\,\\text{m}$.",
+      "answer": 384.4,
+      "unit": "Mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-03",
+      "level": 1,
+      "text": "Pöydän pituus on 1,85 m ja leveys 0,92 m. Laske pöydän pinta-ala niin monella merkitsevällä numerolla kuin mittaustulokset oikeuttavat.",
+      "answer": 1.7,
+      "unit": "m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-04",
+      "level": 1,
+      "text": "Voyager 2 -luotaimen nopeus Auringon suhteen on 15,341 km/s. Ilmoita nopeus yksikössä m/s.",
+      "answer": 15341,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-05",
+      "level": 1,
+      "text": "Kuun halkaisija on 3474 km, ja se piirretään kuvaan yhden kuvapisteen levyiseksi. Aurinkoa vastaava ympyrä piirretään samassa mittakaavassa. Auringon halkaisija on $1{,}392\\cdot10^{6}\\,\\text{km}$. Kuinka monta kuvapistettä leveä Aurinko on?",
+      "answer": 400.7,
+      "unit": "px",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-2-L2-01",
+      "level": 2,
+      "text": "Jupiter on keskimäärin 5,20 AU:n etäisyydellä Auringosta. Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Kuinka monta minuuttia valolla kestää kulkea Auringosta Jupiteriin?",
+      "answer": 43.2,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-02",
+      "level": 2,
+      "text": "Bakteerin pituus on 2,0 µm. Kuinka monta tällaista bakteeria mahtuu peräkkäin 1,0 mm:n matkalle?",
+      "answer": 500,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-03",
+      "level": 2,
+      "text": "Pellon pinta-ala on $2{,}4\\,\\text{km}^2$. Ilmoita pinta-ala hehtaareina, kun $1\\,\\text{ha} = 10\\,000\\,\\text{m}^2$.",
+      "answer": 240,
+      "unit": "ha",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-04",
+      "level": 2,
+      "text": "Voyager 2:n nopeus on 15,341 km/s. Oleta nopeus vakioksi. Kuinka monta miljoonaa kilometriä luotain kulkee vuorokaudessa?",
+      "answer": 1.3255,
+      "unit": "milj. km",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-2-L3-01",
+      "level": 3,
+      "text": "Valovuosi on matka, jonka valo kulkee yhdessä vuodessa. Käytä arvoja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$, $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta astronomista yksikköä yksi valovuosi on?",
+      "answer": 63250,
+      "unit": "AU",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L3-02",
+      "level": 3,
+      "text": "Näytön leveys on 1920 px. Kuvassa Kuun halkaisija, 3474 km, on yksi kuvapiste. Auringosta Neptunukseen on 30,07 AU ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta näytön leveyttä peräkkäin tarvitaan, jotta Auringosta Neptunukseen ulottuva matka mahtuu kuvaan?",
+      "answer": 674,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L3-03",
+      "level": 3,
+      "text": "Ohjauskeskus lähettää komennon Voyager 2:lle, kun luotain on 145 AU:n päässä. Komento kulkee valon nopeudella, ja luotain lähettää vahvistuksen heti takaisin. Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Kuinka monta tuntia kuluu komennon lähettämisestä vahvistuksen saapumiseen?",
+      "answer": 40.2,
+      "unit": "h",
+      "tolerance": 0.02
+    }
+  ]
+}
