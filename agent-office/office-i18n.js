@@ -171,16 +171,16 @@
   "Play whole webpage review": "Toista koko verkkosivun arviointi",
   "Pause whole webpage review": "Keskeytä koko verkkosivun arviointi",
   "OPTIONAL · WHOLE WEBPAGE": "TARVITTAESSA · KOKO VERKKOSIVU",
-  "Another perspective: ChatGPT": "Toinen näkökulma: ChatGPT",
-  "Lauri sometimes asks ChatGPT to review the whole webpage, alongside Claude’s lesson development and independent reviews.": "Lauri pyytää välillä ChatGPT:tä arvioimaan koko verkkosivun Clauden oppimateriaalikehityksen ja riippumattomien arvioiden rinnalla.",
+  "Another perspective: external review": "Toinen näkökulma: ulkopuolinen tarkistus",
+  "Lauri sometimes asks an external reviewer to review the whole webpage, alongside Claude’s lesson development and independent reviews.": "Lauri pyytää välillä ulkopuolista arvioijaa arvioimaan koko verkkosivun Clauden oppimateriaalikehityksen ja riippumattomien arvioiden rinnalla.",
   "Whole webpage review workflow": "Koko verkkosivun arvioinnin työnkulku",
   "Lauri’s question": "Laurin kysymys",
   "Share the webpage": "Verkkosivu arvioitavaksi",
-  "ChatGPT review": "ChatGPT:n arvio",
+  "External review": "Ulkopuolinen tarkistus",
   "Lauri selects feedback": "Lauri valitsee huomiot",
   "Claude revises": "Claude korjaa",
   "Check and revisit": "Testit ja uusi arvio",
-  "Workflow illustration based on Lauri’s description. No ChatGPT conversation, findings or completed review is recorded here. This does not grant a lesson PASS or publication approval.": "Laurin kuvaaman työnkulun havainnollistus. Tässä ei ole tallennettua ChatGPT-keskustelua, löydöksiä tai valmistunutta arviota. Tämä ei anna oppimateriaalille PASSia tai julkaisulupaa.",
+  "Workflow illustration based on Lauri’s description. No external review conversation, findings or completed review is recorded here. This does not grant a lesson PASS or publication approval.": "Laurin kuvaaman työnkulun havainnollistus. Tässä ei ole tallennettua ulkopuolista arviointikeskustelua, löydöksiä tai valmistunutta arviota. Tämä ei anna oppimateriaalille PASSia tai julkaisulupaa.",
   "THE WHOLE-WEBPAGE VIEW": "KOKO VERKKOSIVUN NÄKÖKULMA",
   "External review · requested by Lauri": "Ulkopuolinen arvio · Laurin pyynnöstä",
   "The whole-webpage review is an optional workflow described by Lauri. It is not recorded agent activity and does not change the selected material’s evidence.": "Koko verkkosivun arviointi on Laurin kuvaama tarvittaessa käytettävä työnkulku. Se ei kuvaa tallennettua agenttitoimintaa eikä muuta valitun oppimateriaalin arviointitietoja.",
@@ -207,28 +207,33 @@
   "Which suggestions should we take forward?": "Mitkä ehdotukset viedään eteenpäin?",
   "A focused change brief, then back to development.": "Rajattu muutostehtävä ja takaisin kehitykseen.",
   "Changes need checks and another look.": "Muutokset tarvitsevat testit ja uuden tarkastelun.",
-  "Lauri asks ChatGPT for a whole-webpage review: structure, navigation, consistency and the experience across pages.": "Lauri pyytää ChatGPT:ltä koko verkkosivun arviota: rakenne, navigointi, johdonmukaisuus ja sivujen yhteinen käyttökokemus.",
-  "ChatGPT receives the webpage and Lauri’s question. This external perspective sits alongside the Claude lesson workflow.": "ChatGPT saa verkkosivun ja Laurin kysymyksen. Ulkopuolinen näkökulma täydentää Clauden oppimateriaalityötä.",
+  "Lauri asks an external reviewer for a whole-webpage review: structure, navigation, consistency and the experience across pages.": "Lauri pyytää ulkopuoliselta arvioijalta koko verkkosivun arviota: rakenne, navigointi, johdonmukaisuus ja sivujen yhteinen käyttökokemus.",
+  "The external reviewer receives the webpage and Lauri’s question. This external perspective sits alongside the Claude lesson workflow.": "Ulkopuolinen arvioija saa verkkosivun ja Laurin kysymyksen. Ulkopuolinen näkökulma täydentää Clauden oppimateriaalityötä.",
   "The external review considers the broader experience: clarity, visual hierarchy, mobile usability and how the parts fit together.": "Ulkopuolinen arvio tarkastelee kokonaisuutta: selkeyttä, visuaalista hierarkiaa, mobiilikäytettävyyttä ja osien yhteensopivuutta.",
-  "ChatGPT returns suggestions to Lauri. Lauri weighs them against teaching goals and decides what needs changing.": "ChatGPT palauttaa ehdotukset Laurille. Lauri punnitsee niitä opetustavoitteita vasten ja päättää muutoksista.",
+  "The external reviewer returns suggestions to Lauri. Lauri weighs them against teaching goals and decides what needs changing.": "Ulkopuolinen arvioija palauttaa ehdotukset Laurille. Lauri punnitsee niitä opetustavoitteita vasten ja päättää muutoksista.",
   "Lauri turns selected feedback into a change brief for Claude development. Suggestions are not automatic instructions or approvals.": "Lauri tekee valitusta palautteesta muutostehtävän Claudelle. Ehdotukset eivät ole automaattisia ohjeita tai hyväksyntöjä.",
   "The developer checks the changes. Affected lessons need current independent reviews; Lauri can request another whole-webpage review. Publication remains a separate decision.": "Kehittäjä tarkistaa muutokset. Muutetut oppimateriaalit tarvitsevat ajantasaiset riippumattomat arviot; Lauri voi pyytää uuden koko verkkosivun arvion. Julkaisu on erillinen päätös.",
-  "An illustrated office with development, review, publication, external ChatGPT review and coffee rooms.": "Havainnollistettu toimisto, jossa on kehitys-, arviointi-, julkaisu-, ChatGPT- ja kahvihuoneet.",
-  "The optional Whole webpage review mode shows Lauri requesting a broader review from ChatGPT, selecting feedback and briefing Claude to make changes. It illustrates a user-described practice, not a recorded conversation or a third lesson approval.": "Koko verkkosivun arviointi -tila näyttää, miten Lauri pyytää ChatGPT:ltä laajempaa arviota, valitsee huomioita ja antaa Claudelle muutostehtävän. Se havainnollistaa käyttäjän kuvaamaa käytäntöä, ei tallennettua keskustelua tai kolmatta oppimateriaalihyväksyntää."
+  "An illustrated office with development, review, publication, external review and coffee rooms.": "Havainnollistettu toimisto, jossa on kehitys-, arviointi-, julkaisu-, ulkopuolisen tarkistuksen huone sekä kahvihuoneet.",
+  "The optional Whole webpage review mode shows Lauri requesting a broader review from an external reviewer, selecting feedback and briefing Claude to make changes. It illustrates a user-described practice, not a recorded conversation or a third lesson approval.": "Koko verkkosivun arviointi -tila näyttää, miten Lauri pyytää ulkopuoliselta arvioijalta laajempaa arviota, valitsee huomioita ja antaa Claudelle muutostehtävän. Se havainnollistaa käyttäjän kuvaamaa käytäntöä, ei tallennettua keskustelua tai kolmatta oppimateriaalihyväksyntää."
 });
   Object.assign(fi, {'Workflow described by Lauri · illustrative playback':'Laurin kuvaama työnkulku · havainnollistava toisto'});
   Object.assign(fi, {
-    'Ember tinkerer':'Hiillosnikkari','Crystal owl':'Kristallipöllö','Bloom newt':'Kukkavesilisko',
-    'Circuit beetle':'Piirikuoriainen','Ledger tortoise':'Kirjanpitokilpikonna','Parcel moth':'Pakettiperhonen','Mint wisp':'Minttuhenki',
-    'Creatures carrying material packets illustrate the workflow. Review badges come from files in the selected commit; they are not live agent messages.':'Aineistopaketteja kantavat otukset havainnollistavat työnkulkua. Arviointimerkit tulevat valitun commitin tiedostoista, eivät suorista agenttiviesteistä.',
-    'Lauri stays human. Original little creatures represent the AI and automated roles: a tinkerer, an owl, a newt, a beetle, a tortoise, a moth and a wisp. Their shapes and colours help distinguish their jobs.':'Lauri pysyy ihmisenä. Omat pienet otukset kuvaavat tekoälyä ja automaattisia toimintoja: nikkari, pöllö, vesilisko, kuoriainen, kilpikonna, perhonen ja henki. Muodot ja värit auttavat erottamaan tehtävät.'
+    'Each role has a distinct human character, with different hair, clothing, colours and accessories. The publisher is a separate colleague; Lauri visits before making the publication decision.':'Jokaisella roolilla on erottuva ihmishahmo: omat hiukset, vaatetus, värit ja asusteet. Julkaisija on oma kollegansa, jonka luona Lauri käy ennen julkaisupäätöstä.'
+  });
+  Object.assign(fi, {
+    'External review':'Ulkopuolinen tarkistus','EXTERNAL REVIEW':'ULKOPUOLINEN TARKISTUS',
+    'Publisher':'Julkaisija','LAURI MAKES THE DECISION':'LAURI TEKEE PÄÄTÖKSEN',
+    'Let’s discuss the publication proposal first.':'Käydään julkaisuehdotus ensin yhdessä läpi.',
+    'The review coordinator delivers the reviewed material to the publisher.':'Arviointikoordinaattori vie tarkistetun aineiston julkaisijalle.',
+    'Lauri walks to the publisher to discuss the material before the publication decision.':'Lauri käy julkaisijan luona keskustelemassa aineistosta ennen julkaisupäätöstä.',
+    'Lauri discusses the proposal with the publisher. The publication decision comes after this visit.':'Lauri käy ehdotuksen läpi julkaisijan kanssa. Julkaisupäätös tulee tämän käynnin jälkeen.'
   });
   const descriptions = {
-    chatgpt:"Lauri pyytää välillä ChatGPT:tä arvioimaan koko verkkosivun rakennetta, selkeyttä, johdonmukaisuutta ja käytettävyyttä. Tämä näkökulma täydentää Clauden oppimateriaalityötä. Lauri valitsee ehdotukset ja antaa kehitystehtävän. Gitistä ei päätellä keskustelua tai valmistunutta arviota. Tämä ei korvaa tieteen tai pedagogiikan hyväksyntää.",
+    chatgpt:"Lauri pyytää välillä ulkopuolista arvioijaa arvioimaan koko verkkosivun rakennetta, selkeyttä, johdonmukaisuutta ja käytettävyyttä. Tämä näkökulma täydentää Clauden oppimateriaalityötä. Lauri valitsee ehdotukset ja antaa kehitystehtävän. Gitistä ei päätellä keskustelua tai valmistunutta arviota. Tämä ei korvaa tieteen tai pedagogiikan hyväksyntää.",
     developer:'Kirjoittaa ja korjaa oppimateriaalin tekstiä, tehtäviä, kuvia ja simulaatioita. Nykyinen kehittäjän työnkulku tarkistaa oppimateriaalin ennen riippumatonta arviointia.',
     science:'Tarkistaa riippumattomasti fysiikan, matematiikan, yksiköt, laskutulokset ja simulaation toiminnan. Arvioi työn muokkaamatta itse oppimateriaalia.',
     pedagogy:'Arvioi riippumattomasti oppimispolun, selitykset, toiminnalliset tehtävät ja käytettävyyden puhelimella ja tietokoneella. Ei muokkaa oppimateriaalia.',
-    repository:'Tämän pöydän hahmo kuvaa Laurin julkaisupäätöstä. Lauri päättää, mitä yhdistetään. Rakennus hyväksyy oppimateriaalit, joilla on molemmat voimassa olevat PASS-arviot tai legacy-poikkeus. CI tarkistaa sivuston erikseen. Yhdistäminen ei todista hyväksyjää tai onnistunutta julkaisua.',
+    repository:'Julkaisija valmistelee julkaisuehdotuksen. Lauri käy julkaisijan luona keskustelemassa tarkistetusta aineistosta ja tekee julkaisupäätöksen. Hahmon käynti havainnollistaa työnkulkua; se ei itsessään ole tallennettu hyväksyntä tai todiste onnistuneesta julkaisusta.',
     gatekeeper:'Tavallinen toimistohahmo kuvaa arvioiden hyväksyntätarkistusta. Molempien riippumattomien raporttien on annettava PASS nykyiselle sisältötiivisteelle. Koordinaattori vie tarkistetun paketin päätöksentekijälle ja palaa omalle pöydälleen. Puuttuva, hylätty, virheellinen tai vanhentunut raportti ei riitä. Hahmo havainnollistaa automaattista sääntöä, ei uutta käynnissä olevaa agenttia.',
     teacher:'Asettaa oppimateriaalin tavoitteet ja antaa kehitystehtävän. Laurin julkaisupäätös kuvataan erillisellä pöydällä. Hahmojen liikkuminen havainnollistaa työnkulkua; Git-historia ei tallenna Laurin todellisia liikkeitä tai yksityisiä ohjeita.',
     checks:'Oppimateriaalin työnkulku rakentaa esikatselun ja tarkistaa sisällön, matematiikan, simulaatiot ja ulkoasun. Tallennetut checks.txt-tulokset näkyvät tässä, mutta niissä ei ole sisältötiivistettä: niiden ajantasaisuus ja CI-tulos ovat tuntemattomia. Tietokoneella työskentelevä hahmo kuvaa automaattisten testien ajamista, ei uutta käynnissä olevaa agenttia.',

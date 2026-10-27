@@ -6,7 +6,7 @@
     {id:'developer', name:'Developer', label:'THE MAKER', color:'#edba70', x:270, y:250, path:'.claude/agents/developer.md', description:'Writes and improves material text, exercises, figures and simulations. The existing developer workflow checks the material before it goes to independent review.'},
     {id:'science', name:'Science reviewer', label:'THE PHYSICS CHECK', color:'#8cb8e0', x:640, y:250, path:'.claude/agents/science-reviewer.md', description:'Independently checks physics, mathematics, units, numerical answers and simulation behaviour. Reviews the work without editing the material.'},
     {id:'pedagogy', name:'Pedagogy reviewer', label:'THE LEARNER’S VIEW', color:'#e9a1b4', x:270, y:430, path:'.claude/agents/pedagogy-reviewer.md', description:'Independently reviews the learning path, explanations, activities and usability on a phone and laptop. Reviews the work without editing the material.'},
-    {id:'repository', name:'Publication decision', label:'THE HUMAN DECISION', color:'#9ccb9b', path:'Git history · not an agent definition', description:'The colleague at this desk represents Lauri’s publication decision. Lauri receives reviewed work and decides what to merge. The build includes materials with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
+    {id:'repository', name:'Publisher', label:'LAURI MAKES THE DECISION', color:'#9ccb9b', path:'Git history · not an agent definition', description:'The publisher prepares a publication proposal. Lauri visits this desk to discuss the reviewed work before making the publication decision. The build includes materials with two current passing reviews, or an eligible legacy marker; CI separately checks the site. A recorded merge does not prove who approved it or whether deployment succeeded.'}
   ];
   const history = window.OFFICE_HISTORY || {events:[]};
   const gatekeeper = {id:'gatekeeper',name:'Review coordinator',label:'THE REVIEW DESK',color:'#719b95',path:'fysiikkalabra/scripts/reviews.py',description:'An ordinary office colleague represents the review approval check. Both independent reports must say PASS for the material’s current content hash. The coordinator delivers the reviewed packet to the decision-maker, then returns to the review desk. Missing, failed, invalid or stale reports cannot clear this step. The character illustrates an automatic rule, not an additional running agent.'};
@@ -14,7 +14,7 @@
   const checks = {id:'checks',name:'Automatic checks',label:'THE CHECK RUNNER',color:'#d7b474',path:'fysiikkalabra/scripts/ · .github/workflows/fysiikkalabra-ci.yml',description:'The material workflow builds the preview and checks content, mathematics, simulations and layout. Saved checks.txt results appear here, but have no content hash: their freshness and CI success remain unknown. The colleague at the computer illustrates automated testing, not an additional running agent.'};
   const website = {id:'site',name:'Website courier',label:'AFTER THE PUBLICATION DECISION',color:'#a69ac3',path:'fysiikkalabra/site/ · GitHub Pages',description:'Represents the publishing process, not an additional AI agent. The courier comes to the publication desk, waits for a recorded approval matching this material version, and collects only approved material. A merge or HTML file alone is not proof of that decision. Deployment remains unverified.'};
   const lounge={id:'lounge',name:'Coffee lounge',label:'A WELL-EARNED PAUSE',color:'#d7b474',path:'Illustrated break · no real agent is paused',description:'A coffee machine, a sofa and a little breathing room. An idle colleague occasionally takes a break and returns before their next handoff. Breaks and bubbles are illustrations; no real agent is paused and no materials are changed.'};
-  const chatgpt={id:'chatgpt',name:'ChatGPT',label:'THE WHOLE-WEBPAGE VIEW',color:'#82cbb6',path:'External review · requested by Lauri',description:'Lauri sometimes asks ChatGPT to review the whole webpage: structure, clarity, consistency and usability across pages. ChatGPT offers another perspective alongside Claude’s lesson workflow. Lauri selects suggestions and briefs development. This is a user-described workflow; no conversation or completed review is inferred from Git. It does not replace science or pedagogy approval.'};
+  const chatgpt={id:'chatgpt',name:'External review',label:'THE WHOLE-WEBPAGE VIEW',color:'#82cbb6',path:'External review · requested by Lauri',description:'Lauri sometimes asks an external reviewer to review the whole webpage: structure, clarity, consistency and usability across pages. An external reviewer offers another perspective alongside Claude’s lesson workflow. Lauri selects suggestions and briefs development. This is a user-described workflow; no conversation or completed review is inferred from Git. It does not replace science or pedagogy approval.'};
   const wholeWebReview=()=>$('replay-mode').value==='website';
   const officeRoles = [chatgpt,teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website,lounge];
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
@@ -77,13 +77,11 @@
   }
   function showRole(role) {
     $('role-name').textContent = role.name;
-    const species=window.OfficeCreatures.names[role.id];
-    $('role-creature').hidden=!species;
-    if(species){
-      const portrait=$('role-portrait'),ctx=portrait.getContext('2d');
-      ctx.clearRect(0,0,portrait.width,portrait.height);ctx.imageSmoothingEnabled=false;
-      window.OfficeCreatures.draw(ctx,110,85,role.id,{still:true,scale:1.9});
-      $('creature-name').textContent=i18n.t(species);
+    const hasPortrait=role.id!=='lounge';
+    $('role-portrait-frame').hidden=!hasPortrait;
+    if(hasPortrait){
+      window.AgentOfficeScene.create($('role-portrait'),{phase:()=>0,still:()=>true}).portrait(role.id);
+      $('role-portrait-caption').textContent=role.name;
     }
     $('role-label').textContent = role.label;
     $('role-description').textContent = i18n.roleDescription(role.id,role.description);
