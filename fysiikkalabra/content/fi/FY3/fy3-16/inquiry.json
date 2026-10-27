@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Aiemmat tunnit antoivat osat: lämpömäärä $Q = cm\\Delta T$, sulamis- ja höyrystymislämpö sekä rakennusosan läpi johtuva teho $P = UA\\Delta T$. Tämä tunti yhdistää ne energiakirjanpidoksi arjen tilanteissa: tuleva energia kuluu lämpenemiseen tai olomuodon muutokseen, ja olomuodon muutoksen aikana lämpötila pysyy vakiona.",
+  "learn": ["Osaat yhdistää lämpömäärän, sulamis- ja höyrystymislämmön sekä rakennusosan läpi johtuvan tehon yhdeksi energiakirjanpidoksi.", "Osaat perustella, kuluuko tuleva energia lämpenemiseen vai olomuodon muutokseen.", "Osaat ratkaista arjen lämpöilmiöihin liittyviä monivaiheisia tehtäviä."],
   "prior": [
     "Lämpömäärä lämmittäessä on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen)",
     "Olomuodon muutos vaatii energiaa mutta ei muuta lämpötilaa, $Q = sm$ ja $Q = rm$ (luku Olomuodon muutokset)",

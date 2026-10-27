@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Kaasu tekee laajetessaan työn $W_\\text{k} = p\\,\\Delta V$, joka näkyy $(V, p)$-kuvaajan pinta-alana, ja mäntäkone, joka toistaa liikettään, voi muuttaa lämpöä työksi vain luovuttamalla osan lämmöstä kylmempään. Tämä rajaa hyötysuhdetta $\\eta = W/Q_1$ ja tekee yhteistuotannosta ja lämpöpumpuista kannattavia.",
+  "learn": ["Osaat laskea laajenevan kaasun tekemän työn ja tulkita sen paineen ja tilavuuden kuvaajan pinta-alana.", "Osaat selittää, miksi lämpövoimakone voi muuttaa lämpöä työksi vain luovuttamalla osan lämmöstä kylmempään.", "Osaat laskea lämpövoimakoneen hyötysuhteen."],
   "prior": [
     "Ensimmäinen pääsääntö $\\Delta U = Q + W$, jossa $W$ on ympäristön systeemiin tekemä työ, ja energian säilyminen (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
     "Isobaarinen tilanmuutos: vakiopaineessa kaasun tilavuus kasvaa, kun sen lämpötila nousee (luku *Kaasujen tilanmuutokset ja Boylen laki*)",

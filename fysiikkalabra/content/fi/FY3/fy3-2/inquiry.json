@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Sana *työ* saa tarkan merkityksen: liikkeen suuntainen voima kertaa matka, $W = Fs$, eli $(s, F)$-kuvaajan pinta-ala. Teho kertoo, kuinka nopeasti työ tehdään.",
+  "learn": ["Tunnistat, milloin voima tekee työtä fysiikan merkityksessä.", "Osaat laskea työn voimasta ja matkasta sekä voiman ja matkan kuvaajan pinta-alana.", "Osaat selittää, mitä teho kertoo työn tekemisestä."],
   "prior": [
     "Painovoima $G = mg$ ja voima vuorovaikutuksen mittana (luku *Voima vuorovaikutuksen mittana ja paino*)",
     "Kuvaajan lukeminen: akselit, yksiköt, suoran kulmakerroin"

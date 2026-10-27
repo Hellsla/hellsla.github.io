@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Lämpötasapainon laskuun tulee mukaan olomuodon muutos: jään sulamislämpö ratkaisee, sulaako kaikki jää, joten ennen lämpötilan laskemista vertaillaan veden luovuttamaa ja jään tarvitsemaa lämpömäärää.",
+  "learn": ["Osaat selittää, miksi jää viilentää juomaa sulaessaan niin tehokkaasti.", "Osaat päätellä lämpömääriä vertaamalla, sulaako kaikki jää.", "Osaat laskea lämpötasapainon lämpötilan, kun osa aineesta sulaa."],
   "prior": [
     "Lämpömäärä, joka tarvitaan lämpötilan muuttamiseen, on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen)",
     "Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama (luku Aineen lämpeneminen ja jäähtyminen)",

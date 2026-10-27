@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Kaasu nähdään termodynaamisena systeeminä, jonka tilaa kuvaavat lämpötila, paine ja tilavuus. Mikromalli selittää paineen hiukkasten törmäyksinä ja lämpötilan hiukkasten keskimääräisenä liike-energiana, ja siksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä.",
+  "learn": ["Osaat kuvata kaasun termodynaamisena systeeminä, jonka tilan kertovat lämpötila, paine ja tilavuus.", "Osaat selittää mikromallilla, mitä paine ja lämpötila ovat.", "Osaat perustella, miksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä."],
   "prior": [
     "Celsiusasteikko: vesi jäätyy 0 °C:ssa ja kiehuu 100 °C:ssa (yläkoulun fysiikka)",
     "Renkaaseen pumpattu lisäilma tekee siitä kovemman (arkikokemus)"
