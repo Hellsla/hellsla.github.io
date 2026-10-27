@@ -101,6 +101,7 @@ with sync_playwright() as pw:
             save(pg, f"stage-{sid}-390", f"inquiry stage {title}", locator=s)
         for ex in pg.locator(".experiment").all():
             aid = ex.evaluate("(e) => e.closest('.activity').id")
+            ex.evaluate("(e) => { for (let d = e.closest('details'); d; d = d.parentElement && d.parentElement.closest('details')) d.open = true; }")   # an optional experiment sits in a closed box
             start = ex.locator(".exp-start")
             if start.count() and start.is_visible(): start.click(); pg.wait_for_timeout(500)
             save(pg, f"exp-{aid}-390", f"experiment {aid} after Aseta alkutila: the sim next to its buttons and table", locator=ex.locator("xpath=ancestor::div[contains(@class,'activity')][1]"))

@@ -50,7 +50,7 @@
       "choices": [
         {
           "text": "Vaakasuora suora, koska nopeus ei muutu.",
-          "feedback": "Mallin arvot kumoavat tämän: paikka kasvaa 2,0 m jokaisessa sekunnissa, esimerkiksi hetkellä 4,0 s se on 8,0 m. Vaakasuora viiva kuvaisi kappaletta, joka pysyy paikallaan. Vakio nopeus näkyisi vaakasuorana viivana vasta nopeus–aika-kuvaajassa, ei paikka–aika-kuvaajassa."
+          "feedback": "Mallin arvot kumoavat tämän: paikka kasvaa 2,0 m jokaisessa sekunnissa, esimerkiksi hetkellä 4,0 s se on 8,0 m. Vaakasuora viiva kuvaisi kappaletta, joka pysyy paikallaan."
         },
         {
           "text": "Nouseva suora, joka kulkee origon kautta.",
@@ -379,7 +379,7 @@
         "Perustelin, miksi arvo on mallin arvo: nopeus ei ole täysin vakio, koska Auringon vetovoima hidastaa luotainta.",
         "Vertasin mallia JPL:n arvoon."
       ],
-      "model": "Luotaimen nopeus on lähes vakio, joten sen etäisyys Auringosta kasvaa yhtä paljon jokaista sekuntia kohti: $s = s_0 + vt$, missä $s_0 = 119{,}7\\,\\text{AU}$ heliopaussin ylityksen hetkellä 5. marraskuuta 2018 ja $v = 15{,}341\\,\\text{km/s}$. Tällä mallilla etäisyys on 5. marraskuuta 2026 noin $145{,}6\\,\\text{AU}$. Arvo on mallin arvo, koska nopeus ei ole täysin vakio: Auringon vetovoima hidastaa luotainta hieman. Malli antaa 15. helmikuuta 2026 arvon $143{,}3\\,\\text{AU}$, kun JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\\,\\text{AU}$. Ero on noin $0{,}2\\,\\text{AU}$. JPL:n luku on luotaimen etäisyys Maasta, ja Maa on jopa $1\\,\\text{AU}$ lähempänä tai kauempana kuin Aurinko; lisäksi Auringon vetovoima hidastaa luotainta hieman. Malli on tarkka murto-osan prosentista, joten se on hyvä muutaman vuoden tarkasteluun.",
+      "model": "Luotaimen nopeus on lähes vakio, joten sen etäisyys Auringosta kasvaa yhtä paljon jokaista sekuntia kohti: $s = s_0 + vt$, missä $s_0 = 119{,}7\\,\\text{AU}$ heliopaussin ylityksen hetkellä 5. marraskuuta 2018 ja $v = 15{,}341\\,\\text{km/s}$. Tällä mallilla etäisyys on 5. marraskuuta 2026 noin $145{,}6\\,\\text{AU}$. Arvo on mallin arvo, koska nopeus ei ole täysin vakio: Auringon vetovoima hidastaa luotainta hieman. Malli antaa 15. helmikuuta 2026 arvon $143{,}3\\,\\text{AU}$, kun JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\\,\\text{AU}$. Ero on noin $0{,}2\\,\\text{AU}$. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta hieman ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Malli on tarkka murto-osan prosentista, joten se on hyvä muutaman vuoden tarkasteluun.",
       "optional": true
     },
     {

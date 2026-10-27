@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{360\,\text{m}}{45\,\text{s}} = 8{,}0\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $8{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $45\,\text{s}$.
-**Järkevyys:** Tarkistus takaisin: $8{,}0\,\text{m/s} \cdot 45\,\text{s} = 360\,\text{m}$. Nopeus vastaa noin $29\,\text{km/h}$, mikä vastaa huippujuoksijan vauhtia 400 metrin juoksussa.
+**Järkevyys:** Tarkistus takaisin: $8{,}0\,\text{m/s} \cdot 45\,\text{s} = 360\,\text{m}$. Nopeus vastaa noin $29\,\text{km/h}$, mikä vastaa hyvän juoksijan vauhtia 400 metrin juoksussa.
 
 ## fy1-5-L1-03
 **Annettu:** nopeus $v = 1{,}4\,\text{m/s}$, matka $s = 560\,\text{m}$; liike on tasaista ja alkaa nollakohdasta
