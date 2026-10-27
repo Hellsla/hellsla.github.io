@@ -1,4 +1,5 @@
 VERDICT: DONE
-Both figures recoloured, geometry and text untouched; no label moved (all text already 24 px). Scope: relocated, section-name, style only.
-Colours: ink #1f2933 outlines and text; glass #eef5f9 container boxes; water blue #a9d1f0/#2f74b5 particles; muted #6b7480 gas motion lines, graph guide dashes; orange #e8590c heat flow (melting and evaporation arrows); red #c92a2a temperature curve.
-Open: check_lesson lint fails on sim.js:55 (23-word paragraph in the sim). Not in my allowed files; needs a separate fix.
+
+solutions.md: all 12 solutions now have Periaate (principle and why it applies: no temperature change at a phase change, energy balance, two stages) and Muunnokset, Kaava ends with the unknown solved in symbols, units written with \tfrac, Vastaus gives value, unit and the significant-figure reason, and Järkevyys is a real check (estimates, thickness of ice layer, energy shares, balance recomputed). L1-05 gained Kuvaajan lukeminen. Numbers were recomputed and agree with answers.py; no numeric error found in the old solutions.
+lesson.md: Esimerkki now has the seven stages (Periaate, Yksikkömuunnokset and Tulos added); result 2,34 MJ/kg and the 3,7 % comparison with the table value computed.
+inquiry.json: added solution for check-2 (graph reading) and completed siirto; nothing else changed.

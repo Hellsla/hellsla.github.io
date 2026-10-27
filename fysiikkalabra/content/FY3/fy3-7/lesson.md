@@ -220,14 +220,25 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetr
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Teho $P = 1000\,\text{W}$, aika $t = 300\,\text{s}$ ja höyrystynyt massa eli vaa'an lukeman muutos $\Delta m = 128\,\text{g} = 0{,}128\,\text{kg}$. Kysytään ominaishöyrystymislämpöä $r$. Oletetaan, että kuumentimen energia siirtyy kokonaan veteen.
+**Tunnetut ja kysytty.** Teho $P = 1000\,\text{W}$, aika $t = 300\,\text{s}$ ja höyrystynyt massa eli vaa'an lukeman muutos $\Delta m = 128\,\text{g}$. Vesi on kiehuvaa eli $100\,{}^\circ\text{C}$:ssa. Kysytään ominaishöyrystymislämpöä $r$. Oletetaan, että kuumentimen energia siirtyy kokonaan veteen.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Vesi kiehuu koko ajan, joten lämpötila ei nouse, ja kaikki kuumentimen energia $Q = Pt$ kuluu höyrystämiseen, $Q = r\,\Delta m$. Siis $Pt = r\,\Delta m$, josta
+**Periaate.** Vesi kiehuu koko ajan, joten sen lämpötila ei nouse ja kaikki kuumentimen antama energia $Q = Pt$ kuluu höyrystämiseen. Höyrystymiseen tarvittava lämpömäärä on verrannollinen höyrystyneeseen massaan, $Q = r\,\Delta m$. Energia säilyy, joten nämä kaksi ovat yhtä suuret.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Merkitään lämpömäärät yhtä suuriksi ja ratkaistaan $r$:
 ```latex
-r = \frac{Pt}{\Delta m}
+\begin{aligned}
+&Pt = r\,\Delta m \\
+&r = \frac{Pt}{\Delta m}
+\end{aligned}
 ```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Vaa'an lukeman muutos muunnetaan kilogrammoiksi: $128\,\text{g} = 0{,}128\,\text{kg}$. Teho ja aika ovat jo perusyksiköissä, ja $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lopuksi tulos muunnetaan megajouleiksi: $1\,\text{MJ} = 10^6\,\text{J}$.
 
 <!-- vaihe -->
 
@@ -236,14 +247,18 @@ r = \frac{Pt}{\Delta m}
 \begin{aligned}
 &r = \frac{Pt}{\Delta m} \\
 &= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0{,}128\,\text{kg}} \\
-&= \frac{300\,\text{kJ}}{0{,}128\,\text{kg}} \\
-&\approx 2{,}34\,\text{MJ/kg}
+&= \frac{300\,000\,\text{J}}{0{,}128\,\text{kg}} \\
+&= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Järkevyys.** Tulos 2,34 MJ/kg on hieman taulukkoarvoa 2,26 MJ/kg suurempi, koska oletus ei pidä täysin paikkaansa. Astia ei enää lämpene, koska vesi on jo kiehumispisteessä, mutta osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä. Tulos on silti muutaman prosentin tarkkuudella oikea.
+**Tulos.** Ominaishöyrystymislämpö on $2{,}34\,\tfrac{\text{MJ}}{\text{kg}}$. Tulos ilmoitetaan kolmella merkitsevällä numerolla, koska massan lukema $128\,\text{g}$ on annettu kolmella numerolla ja se rajoittaa tarkkuutta eniten.
+
+<!-- vaihe -->
+
+**Järkevyys.** Tulos $2{,}34\,\tfrac{\text{MJ}}{\text{kg}}$ on hieman taulukkoarvoa $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ suurempi, noin $3{,}7\,\%$. Se on odotettu suunta: osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä, joten oletus "kaikki energia veteen" antaa liian suuren $r$:n. Taulukkoarvolla höyrystyisi $\dfrac{300\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}133\,\text{kg}$ eli $133\,\text{g}$, vain $5\,\text{g}$ enemmän kuin mitattu, joten tulos on muutaman prosentin tarkkuudella oikea.
 
 ## Yleinen virhekäsitys
 Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Olomuodon muutoksessa lämpötila pysyy vakiona, vaikka energiaa siirtyy paljon: jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen 0 °C:sta 80 °C:seen. Toinen virhe on pitää 0-asteista jäätä ja 0-asteista vettä samanarvoisina jäähdyttäjinä. Jää viilentää juomaa paljon tehokkaammin, koska se ottaa sulaessaan paljon energiaa ennen kuin alkaa lämmetä. Kolmas virhe on ajatella, että vesi kiehuu aina 100 °C:ssa: kiehumispiste riippuu paineesta.
