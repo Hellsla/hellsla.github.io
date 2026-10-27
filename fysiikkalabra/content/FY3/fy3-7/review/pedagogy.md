@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ca90d49523679b44
+CONTENT-HASH: 2027383a0b3b19e2
 
 ## Blocking
 (none)
 
 ## Polish
-1. solutions.md, L1-03 Järkevyys — "pakkasviikon aikana jäätyneeksi kerrokseksi" contradicts the task, which says "ensimmäisenä pakkasyönä"; the 4,5 cm check should match the task. Fix: "mikä on uskottava ohut jääkerros pakkasyön jälkeen" (or change the task to "pakkasviikon aikana").
-2. solutions.md, L1-03 — the thickness check uses the density 1000 kg/m³, which the student has not been given. Fix: "veden tiheys on $1000\,\text{kg/m}^3$" before the fraction, or drop the sentence.
-3. solutions.md, L1-03 Kaava — "ja $Q$ on jo ratkaistu: $Q = sm$" confuses a weak student. Fix: "$Q = sm$ (kaava antaa suoraan kysytyn suureen)".
-4. lesson.md, Esimerkki step 7 (capture example-390-2) — straight quotes "kaikki energia veteen" and "r:n" case; use ”kaikki energia veteen” (carried over from round 1).
-5. No capture of an opened *Näytä ratkaisu* at 390 px exists yet (only the worked example); the solution text was judged from the source. Add one capture of a solution box.
+1. solutions.md L1-03 and L1-04 Kaava — "ja $Q$ on jo ratkaistu: $Q = sm$" (L1-04: "$Q = rm$") repeats the formula and confuses a weak student; write "$Q = sm$ (kaava antaa suoraan kysytyn suureen)". The same pattern probably recurs in other direct-formula solutions.
+2. solutions.md L1-03 Järkevyys — the density 1000 kg/m³ is used without being given; add "veden tiheys on $1000\,\text{kg/m}^3$" before the fraction.
+3. lesson.md Esimerkki step 7 — straight quotes "kaikki energia veteen"; use ”kaikki energia veteen” (carried over from round 1).
+4. No capture of an opened *Näytä ratkaisu* at 390 px exists; solutions were judged from source. Add one capture of a solution box.
 
 ## Checked
-- Diff: inquiry.json `siirto` Vastaus now "1,9·10² W (laskimen tulos 188 W)": one answer, rounding reason stated (two s.f. like 0,30 kg); round-1 Polish 1 resolved.
-- L1-04 Vastaus now explains why the difference of two kJ readings keeps three s.f.; "lähes yhdeksän kertaa" is right (167/18,9 ≈ 8,8).
-- L2-03 Vastaus names the datum that limits the figures (erotus 106 g, three digits); a student can see why the answer is not 2,3.
-- Worked example at 390 px (example-390-2): steps 5-7 legible, equation block fits, plausibility step explains the direction of the error and checks against the table value.
-- Other solutions unchanged since my round-1 pass; learning path, activities, Finnish, phone usability as approved.
+- Diff: exercises.json L1-03 now says "ensimmäisellä pakkasviikolla"; it matches the solution's "pakkasviikon aikana" check, so round-2 Polish 1 is resolved. The answer 15 MJ and the unit are unchanged.
+- L1-03 solution reads in order Annettu, Kysytty, Periaate (why s and not ΔT, freezing releases what melting absorbs), Kaava, Muunnokset (kJ to MJ), Sijoitus, Vastaus (two s.f. from 45 kg), Järkevyys. A student can follow each step.
+- The 4,5 cm layer check now fits a week of frost; the remark that the released heat slows freezing is a useful sense check.
+- Other solutions and the worked example are unchanged since my last pass (example-390-2 legible).
+- Learning path, activities, Finnish and phone usability are as approved.
 - Hash unchanged at the end.
