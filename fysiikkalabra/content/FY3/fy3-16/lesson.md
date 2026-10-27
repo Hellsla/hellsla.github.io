@@ -112,7 +112,7 @@ missä $U$ on U-arvo (W/(m²·K)), $A$ seinien yhteispinta-ala (m²) ja $\Delta 
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```
-Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilan mallilla laskettuna. Lämpötila pysyy 0 °C:ssa ajan $t_0$, kunnes jää on sulanut. Sen jälkeen vesi lämpenee kohti ulkolämpötilaa. Nousu on aluksi jyrkkä ja hidastuu, koska teho $UA\Delta T$ pienenee, kun lämpötilaero pienenee.
+Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilan mallilla laskettuna. Lämpötila pysyy 0 °C:ssa ajan $t_0$, kunnes jää on sulanut. Sen jälkeen vesi lämpenee kohti ulkolämpötilaa. Nousu on aluksi jyrkkä ja hidastuu, koska teho $UA\Delta T$ pienenee, kun lämpötilaero pienenee. Tämä on esimerkin laukku; Tutki-vaiheen laukun $UA$ on pienempi.
 
 <svg viewBox="0 0 600 372" role="img" aria-label="Kuvaaja kylmälaukun sisälämpötilasta ajan funktiona mallin mukaan. Lämpötila pysyy 0 °C:ssa noin 2,4 tuntia, kun jää sulaa, ja alkaa sen jälkeen nousta kohti ulkolämpötilaa 28 °C. Nousu on aluksi jyrkkä ja hidastuu, kun lämpötilaero pienenee. Akselit ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="84" y1="300.0" x2="516" y2="300.0" stroke="#e3dccb" stroke-width="1.5"/>

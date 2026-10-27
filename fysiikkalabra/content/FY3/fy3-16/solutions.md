@@ -26,7 +26,7 @@
 **Muunnokset:** Lämpötilaero on sama kelvineinä: $\Delta T = 30\,{}^\circ\text{C} - 2{,}0\,{}^\circ\text{C} = 28\,\text{K}$. Muuta ei tarvita, koska $\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot \text{m}^2 \cdot \text{K} = \text{W}$.
 **Sijoitus:** $P = 1{,}6\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 0{,}60\,\text{m}^2 \cdot 28\,\text{K} = 26{,}88\,\text{W}$
 **Vastaus:** $27\,\text{W}$, kaksi merkitsevää numeroa kuten arvoissa $1{,}6$ ja $0{,}60$ sekä erotuksessa $28\,\text{K}$.
-**Järkevyys:** Arvio: $1{,}6 \cdot 0{,}6 \approx 1\,\tfrac{\text{W}}{\text{K}}$, ja $28\,\text{K}$ antaa noin $28\,\text{W}$. Teho on positiivinen, koska lämpöä tulee ulkoa sisään. Se on pieni, koska seinä eristää hyvin, mutta tunnissa energiaa tulee silti $27\,\text{W} \cdot 3600\,\text{s} \approx 97\,\text{kJ}$, joka sulattaa jäätä tuntikausia.
+**Järkevyys:** Arvio: $1{,}6 \cdot 0{,}6 \approx 1\,\tfrac{\text{W}}{\text{K}}$, ja $28\,\text{K}$ antaa noin $28\,\text{W}$. Teho on positiivinen, koska lämpöä tulee ulkoa sisään. Se on pieni, koska seinä eristää hyvin, mutta tunnissa energiaa tulee silti $27\,\text{W} \cdot 3600\,\text{s} \approx 97\,\text{kJ}$, joka riittäisi sulattamaan noin $0{,}3\,\text{kg}$ jäätä tunnissa.
 
 ## fy3-16-L1-04
 **Annettu:** jää $m = 0{,}75\,\text{kg}$, sulamispisteessä $0\,{}^\circ\text{C}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -96,7 +96,7 @@
 **Muunnokset:** $\Delta T_\text{v} = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** $c_\text{v}\,\Delta T_\text{v} = 4190 \cdot 80\,\tfrac{\text{J}}{\text{kg}} = 335\,200\,\tfrac{\text{J}}{\text{kg}}$, $Q_\text{v} = 0{,}20\,\text{kg} \cdot (335\,200 + 2\,260\,000)\,\tfrac{\text{J}}{\text{kg}} = 519\,040\,\text{J}$ ja $\Delta T_\text{k} = \dfrac{519\,040\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 25\,\text{kg}} = 25{,}95\,\text{K}$
 **Vastaus:** $26\,\text{K}$, kaksi merkitsevää numeroa kuten massoissa $0{,}20\,\text{kg}$ ja $25\,\text{kg}$.
-**Järkevyys:** Höyrystyminen vie $452\,\text{kJ}$ eli $87\,\%$ energiasta, ja pelkkä lämpeneminen laskisi kivien lämpötilaa vain noin $3{,}4\,\text{K}$. Kivien lasku on pieni verrattuna niiden $300\,{}^\circ\text{C}$:n lämpötilaan, koska kiviä on paljon. Höyryn lämpeneminen jätettiin huomiotta ja suurentaisi laskua hieman, mutta kiuas lämmittää kiviä koko ajan ja pienentäisi sitä: $26\,\text{K}$ on lasku ilman kiukaan lämmitystä.
+**Järkevyys:** Höyrystyminen vie $452\,\text{kJ}$ eli $87\,\%$ energiasta, ja pelkkä lämpeneminen laskisi kivien lämpötilaa vain noin $3{,}4\,\text{K}$. Kivien lasku on pieni verrattuna niiden $300\,{}^\circ\text{C}$:n lämpötilaan, koska kiviä on paljon. Höyryn lämpeneminen kasvattaisi laskua hieman, ja kiuas, joka lämmittää kiviä koko ajan, pienentäisi sitä; $26\,\text{K}$ on lasku ilman kiukaan lämmitystä.
 
 ## fy3-16-L3-02
 **Annettu:** jää $m_\text{jää} = 0{,}500\,\text{kg}$, $0\,{}^\circ\text{C}$; vesi $m_\text{v} = 2{,}00\,\text{kg}$, $T_\text{v} = 30{,}0\,{}^\circ\text{C}$; astia on eristetty; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -114,6 +114,10 @@
 **Periaate:** Energia säilyy: jään täytyy 6,0 tunnin aikana ottaa vastaan seinän läpi tuleva energia sekä juomien luovuttama energia. Jää lämpenee ensin $-10\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen ($c_\text{jää}\,\Delta T_\text{jää}$) ja sulaa sitten ($s$). Sisällä on tehtävän oletuksen mukaan $0\,{}^\circ\text{C}$, joten seinän teho pysyy vakiona.
 **Kaava:** $m\,(c_\text{jää}\,\Delta T_\text{jää} + s) = U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}$, joten $m = \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{jää}\,\Delta T_\text{jää} + s}$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 21\,600\,\text{s}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Jään lämpötilan muutos on $\Delta T_\text{jää} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, sama kelvineinä.
-**Sijoitus:** $U A\,\Delta T\,t = 1{,}5 \cdot 0{,}50 \cdot 30 \cdot 21\,600\,\text{J} = 486\,000\,\text{J}$, $c\,m_\text{j}\,\Delta T_\text{j} = 4190 \cdot 0{,}50 \cdot 24\,\text{J} = 50\,280\,\text{J}$, $c_\text{jää}\,\Delta T_\text{jää} + s = 21\,000 + 334\,000 = 355\,000\,\tfrac{\text{J}}{\text{kg}}$, joten $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}511\,\text{kg}$
+**Sijoitus:**
+Seinän energia: $U A\,\Delta T\,t = 1{,}5 \cdot 0{,}50 \cdot 30 \cdot 21\,600\,\text{J} = 486\,000\,\text{J}$
+Juomien energia: $c\,m_\text{j}\,\Delta T_\text{j} = 4190 \cdot 0{,}50 \cdot 24\,\text{J} = 50\,280\,\text{J}$
+Jään energia kilogrammaa kohti: $c_\text{jää}\,\Delta T_\text{jää} + s = 21\,000 + 334\,000 = 355\,000\,\tfrac{\text{J}}{\text{kg}}$
+Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}511\,\text{kg}$
 **Vastaus:** $1{,}5\,\text{kg}$, kaksi merkitsevää numeroa, koska U-arvo $1{,}5$, pinta-ala $0{,}50\,\text{m}^2$, juomien massa $0{,}50\,\text{kg}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla.
-**Järkevyys:** Seinä tuo $486\,\text{kJ}$ ja juomat $50\,\text{kJ}$, yhteensä noin $536\,\text{kJ}$. Jos jää olisi jo $0\,{}^\circ\text{C}$:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie noin $\tfrac{21}{334} \approx 6\,\%$ enemmän energiaa kilogrammaa kohti, joten tarvittava massa on hieman pienempi, $1{,}5\,\text{kg}$. Tulos on samaa suuruusluokkaa kuin tehtävässä, jossa juomia ei ole.
+**Järkevyys:** Seinä tuo $486\,\text{kJ}$ ja juomat $50\,\text{kJ}$, yhteensä noin $536\,\text{kJ}$. Jos jää olisi jo $0\,{}^\circ\text{C}$:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie noin $\tfrac{21}{334} \approx 6\,\%$ enemmän energiaa kilogrammaa kohti, joten tarvittava massa on hieman pienempi, $1{,}51\,\text{kg}$ eli kahdella numerolla pienin sopiva massa $1{,}5\,\text{kg}$.
