@@ -16,7 +16,7 @@
 **Muunnokset:** Molemmat paikat ovat metreinä, joten yksiköitä ei tarvitse muuntaa.
 **Sijoitus:** $\Delta x = -5{,}0\,\text{m} - 12\,\text{m} = -17\,\text{m}$
 **Vastaus:** $-17\,\text{m}$, kaksi merkitsevää numeroa. Paikka $12\,\text{m}$ on tunnettu metrin tarkkuudella, joten erotus on sillä tarkkuudella.
-**Järkevyys:** Kärry liikkui negatiiviseen suuntaan, joten siirtymän pitää olla negatiivinen. Kärry kulki ensin $12\,\text{m}$ origoon ja sitten $5{,}0\,\text{m}$ sen yli, yhteensä $12\,\text{m} + 5{,}0\,\text{m} = 17\,\text{m}$. Matka ja siirtymän suuruus ovat tässä yhtä suuret, koska kärry ei kääntynyt.
+**Järkevyys:** Kärry liikkui negatiiviseen suuntaan, joten siirtymän pitää olla negatiivinen. Kärry kulki ensin $12\,\text{m}$ origoon ja sitten $5{,}0\,\text{m}$ sen yli, yhteensä $12\,\text{m} + 5{,}0\,\text{m} = 17\,\text{m}$. Matka ja siirtymän suuruus ovat tässä yhtä suuret, jos kärry ei käänny.
 
 ## fy4-1-L1-03
 **Annettu:** $v = 3{,}5\,\text{m/s}$, $\Delta t = 12\,\text{s}$; liike on tasaista ja positiiviseen suuntaan
@@ -32,11 +32,11 @@
 **Annettu:** suoran pisteet $(t_1;\, x_1) = (0\,\text{s};\, 4{,}0\,\text{m})$ ja $(t_2;\, x_2) = (10\,\text{s};\, 24\,\text{m})$
 **Kysytty:** kärryn nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Tasaisessa liikkeessä nopeus on vakio, joten $(t, x)$-kuvaaja on suora. Suoran kulmakerroin eli nousu jaettuna vaakasuuntaisella etenemisellä on paikan muutos jaettuna ajan muutoksella, eli nopeus.
-**Kuvaajan lukeminen:** Luetaan suoralta kaksi tunnettua pistettä: ensimmäisen paikka $x_1 = 4{,}0\,\text{m}$ hetkellä $t_1 = 0\,\text{s}$ ja toisen paikka $x_2 = 24\,\text{m}$ hetkellä $t_2 = 10\,\text{s}$. Pystysuuntainen nousu on $x_2 - x_1$ ja vaakasuuntainen eteneminen $t_2 - t_1$. Näiden suhde on nopeus.
+**Kuvaajan lukeminen:** Käytetään suoran kahta annettua pistettä: ensimmäisen paikka $x_1 = 4{,}0\,\text{m}$ hetkellä $t_1 = 0\,\text{s}$ ja toisen paikka $x_2 = 24\,\text{m}$ hetkellä $t_2 = 10\,\text{s}$. Pystysuuntainen nousu on $x_2 - x_1$ ja vaakasuuntainen eteneminen $t_2 - t_1$. Näiden suhde on nopeus.
 **Kaava:** $v = \dfrac{\Delta x}{\Delta t}$, missä $\Delta x = x_2 - x_1$ ja $\Delta t = t_2 - t_1$. Siis $v = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Lähtöpaikka $4{,}0\,\text{m}$ ei ole nolla, mutta se supistuu erotuksessa pois.
 **Sijoitus:** $v = \dfrac{24\,\text{m} - 4{,}0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = \dfrac{20\,\text{m}}{10\,\text{s}} = 2{,}0\,\text{m/s}$
-**Vastaus:** $2{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska paikat $24\,\text{m}$ ja $4{,}0\,\text{m}$ on annettu metrin tarkkuudella, joten erotus $20\,\text{m}$ ja aika $10\,\text{s}$ ovat kahden numeron lukuja.
+**Vastaus:** $2{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska paikka $24\,\text{m}$ on annettu metrin tarkkuudella ($4{,}0\,\text{m}$ desimetrin), joten erotus $20\,\text{m}$ on kahden numeron luku; aika $10\,\text{s}$ on myös kahdella numerolla.
 **Järkevyys:** Kuvaaja nousee, joten nopeus on positiivinen. Tarkistus: $4{,}0\,\text{m} + 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 24\,\text{m}$, mikä on suoran toinen piste. Jos nopeudeksi laskettaisiin $\dfrac{24\,\text{m}}{10\,\text{s}} = 2{,}4\,\text{m/s}$, unohtuisi lähtöpaikka.
 
 ## fy4-1-L1-05
@@ -51,7 +51,7 @@
 
 ## fy4-1-L2-01
 **Annettu:** $v = 90\,\text{km/h}$, $\Delta t = 12\,\text{s}$; liike on tasaista ja suoraa
-**Kysytty:** kuljettu matka eli siirtymä $\Delta x$ metreinä
+**Kysytty:** siirtymä $\Delta x$ metreinä; auto ajaa suoraa tietä yhteen suuntaan, joten matka $s = v\,\Delta t$ on yhtä suuri
 **Periaate:** Auto ajaa tasaisella nopeudella suoraa tietä yhteen suuntaan, joten siirtymä on nopeus kertaa aika. Nopeus ja aika on ensin saatava samaan yksikköjärjestelmään, jotta tulos tulee metreinä.
 **Kaava:** $v = \dfrac{\Delta x}{\Delta t}$, joten $\Delta x = v\,\Delta t$
 **Muunnokset:** Yksi $\text{km/h}$ on $\dfrac{1000\,\text{m}}{3600\,\text{s}} = \dfrac{1}{3{,}6}\,\text{m/s}$, joten $90\,\text{km/h} = \dfrac{90}{3{,}6}\,\text{m/s} = 25\,\text{m/s}$.
@@ -67,7 +67,7 @@
 **Muunnokset:** $1{,}2\,\text{km} = 1{,}2 \cdot 1000\,\text{m} = 1200\,\text{m}$, jotta yksiköt ovat $\text{m}$ ja $\text{m/s}$. Aika tulee sekunteina, ja $1\,\text{min} = 60\,\text{s}$, joten $\Delta t_\text{min} = \dfrac{\Delta t}{60}$.
 **Sijoitus:** $\Delta t = \dfrac{1200\,\text{m}}{4{,}0\,\text{m/s}} = 300\,\text{s} = \dfrac{300}{60}\,\text{min} = 5{,}0\,\text{min}$
 **Vastaus:** $5{,}0\,\text{min}$, kaksi merkitsevää numeroa kuten nopeudessa $4{,}0\,\text{m/s}$ ja matkassa $1{,}2\,\text{km}$.
-**Järkevyys:** Nopeus $4{,}0\,\text{m/s}$ on $14{,}4\,\text{km/h}$, jolloin kilometri kuluu noin neljässä minuutissa. Siis $1{,}2\,\text{km}$ vie hieman yli neljä minuuttia, ja $5{,}0\,\text{min}$ sopii. Aika on positiivinen, kuten pitääkin.
+**Järkevyys:** Nopeus $4{,}0\,\text{m/s}$ on $14{,}4\,\text{km/h}$, jolloin kilometri kuluu noin $4{,}2\,\text{min}$:ssa, joten $1{,}2\,\text{km}$ vie noin $1{,}2 \cdot 4{,}2\,\text{min} \approx 5\,\text{min}$, ja $5{,}0\,\text{min}$ sopii. Aika on positiivinen, kuten pitääkin.
 
 ## fy4-1-L2-03
 **Annettu:** $(t_1;\, x_1) = (2{,}0\,\text{s};\, 18\,\text{m})$ ja $(t_2;\, x_2) = (7{,}0\,\text{s};\, 3{,}0\,\text{m})$; liike on tasaista
@@ -97,15 +97,23 @@
 **Muunnokset:** $6{,}0\,\text{km} = 6000\,\text{m}$ ja $20\,\text{min} = 1200\,\text{s}$, $30\,\text{min} = 1800\,\text{s}$.
 **Sijoitus:** $v_\text{vauhti} = \dfrac{6000\,\text{m} + 6000\,\text{m}}{1200\,\text{s} + 1800\,\text{s}} = \dfrac{12\,000\,\text{m}}{3000\,\text{s}} = 4{,}0\,\text{m/s}$
 **Vastaus:** $4{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska ajat $20\,\text{min}$ ja $30\,\text{min}$ (summa $50\,\text{min}$) ovat kahdella numerolla; matkat $6{,}0\,\text{km}$ ovat myös kahdella, ja niiden summa $12{,}0\,\text{km}$ rajoittaa vähemmän.
-**Järkevyys:** Arvo on menon vauhdin $5{,}0\,\text{m/s}$ ja paluun vauhdin $3{,}3\,\text{m/s}$ välissä, kuten keskivauhdin kuuluu. Pyöräilijä palasi lähtöpaikkaansa, joten siirtymä on $0$ ja keskinopeus $0\,\text{m/s}$, vaikka keskivauhti ei ole nolla. Noin $14\,\text{km/h}$ on rauhallista pyöräilyä.
+**Järkevyys:** Menon vauhti on $\dfrac{6000\,\text{m}}{1200\,\text{s}} = 5{,}0\,\text{m/s}$ ja paluun vauhti $\dfrac{6000\,\text{m}}{1800\,\text{s}} \approx 3{,}3\,\text{m/s}$, ja arvo on niiden välissä, kuten keskivauhdin kuuluu. Pyöräilijä palasi lähtöpaikkaansa, joten siirtymä on $0$ ja keskinopeus $0\,\text{m/s}$, vaikka keskivauhti ei ole nolla. Noin $14\,\text{km/h}$ on rauhallista pyöräilyä.
 
 ## fy4-1-L3-02
 **Annettu:** Aino: $x_{0\text{A}} = 0$, $v_\text{A} = 1{,}5\,\text{m/s}$; Eeva: $x_{0\text{E}} = 90\,\text{m}$, $v_\text{E} = -1{,}2\,\text{m/s}$; molemmat lähtevät yhtä aikaa ja liike on tasaista
 **Kysytty:** kohtaamispaikka $x$ yksikössä $\text{m}$
 **Periaate:** Molempien liike on tasaista, joten kummankin paikka on muotoa $x_0 + v\,t$. He kohtaavat, kun heidän paikkansa ovat samat samalla hetkellä, ja siitä ehdosta ratkeaa ensin aika.
-**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{E} = x_{0\text{E}} + v_\text{E}\,t$. Ehdosta $x_\text{A} = x_\text{E}$ seuraa $t = \dfrac{x_{0\text{E}} - x_{0\text{A}}}{v_\text{A} - v_\text{E}}$, ja paikka on $x = x_{0\text{A}} + v_\text{A}\,t$
+**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{E} = x_{0\text{E}} + v_\text{E}\,t$. Ehdosta $x_\text{A} = x_\text{E}$ seuraa $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{E}} + v_\text{E}\,t$, joten $(v_\text{A} - v_\text{E})\,t = x_{0\text{E}} - x_{0\text{A}}$ ja
+
+$$t = \dfrac{x_{0\text{E}} - x_{0\text{A}}}{v_\text{A} - v_\text{E}}$$
+
+Paikka on $x = x_{0\text{A}} + v_\text{A}\,t$
 **Muunnokset:** Kaikki suureet ovat yksiköissä $\text{m}$ ja $\text{m/s}$, joten muunnoksia ei tarvita. Eevan nopeus sijoitetaan negatiivisena, koska hän kulkee negatiiviseen suuntaan.
-**Sijoitus:** $t = \dfrac{90\,\text{m} - 0}{1{,}5\,\text{m/s} - (-1{,}2\,\text{m/s})} = \dfrac{90\,\text{m}}{2{,}7\,\text{m/s}} = 33{,}33\ldots\,\text{s}$ ja $x = 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} = 50\,\text{m}$
+**Sijoitus:**
+
+$$\begin{aligned} t &= \dfrac{90\,\text{m} - 0}{1{,}5\,\text{m/s} - (-1{,}2\,\text{m/s})} \\ &= \dfrac{90\,\text{m}}{2{,}7\,\text{m/s}} \\ &= 33{,}33\ldots\,\text{s} \end{aligned}$$
+
+$$\begin{aligned} x &= 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} \\ &= 50\,\text{m} \end{aligned}$$
 **Vastaus:** $50\,\text{m}$ eli $5{,}0 \cdot 10^1\,\text{m}$, kaksi merkitsevää numeroa, koska nopeudet $1{,}5\,\text{m/s}$ ja $-1{,}2\,\text{m/s}$ ovat kahdella numerolla ja niiden erotus $2{,}7\,\text{m/s}$ myös.
 **Järkevyys:** Eeva kulkee $1{,}2\,\text{m/s} \cdot 33{,}33\,\text{s} = 40\,\text{m}$, joten hänen paikkansa on $90\,\text{m} - 40\,\text{m} = 50\,\text{m}$, sama kuin Ainolla. Paikka on alku- ja loppupisteen välissä, ja koska Aino on nopeampi, kohtaaminen on lähempänä Eevan lähtöpaikkaa kuin puolivälissä ($45\,\text{m}$).
 
@@ -113,7 +121,7 @@
 **Annettu:** $(t, x)$-kuvaajan osat: $x = 0$ hetkellä $0\,\text{s}$, $x = 30\,\text{m}$ hetkellä $10\,\text{s}$, $x = 30\,\text{m}$ hetkellä $20\,\text{s}$ ja $x = 10\,\text{m}$ hetkellä $40\,\text{s}$
 **Kysytty:** keskinopeus $v_\text{ka}$ koko $40\,\text{s}$:n ajalta etumerkkeineen yksikössä $\text{m/s}$
 **Periaate:** Keskinopeus on koko siirtymä jaettuna koko ajalla. Siirtymään vaikuttavat vain alku- ja loppupaikka, joten välivaiheet eli eteneminen, pysähdys ja paluu eivät vaikuta laskuun.
-**Kuvaajan lukeminen:** Luetaan kuvaajasta alkupiste $(0\,\text{s};\, 0\,\text{m})$ ja loppupiste $(40\,\text{s};\, 10\,\text{m})$. Välillä $10\text{–}20\,\text{s}$ kuvaaja on vaakasuora, koska robotti seisoo, eikä sen pisteitä tarvita. Keskinopeus on näiden kahden pisteen välisen suoran kulmakerroin.
+**Kuvaajan lukeminen:** Luetaan annetuista pisteistä alkupiste $(0\,\text{s};\, 0\,\text{m})$ ja loppupiste $(40\,\text{s};\, 10\,\text{m})$. Välillä $10\text{–}20\,\text{s}$ kuvaaja on vaakasuora, koska robotti seisoo, eikä sen pisteitä tarvita. Keskinopeus on näiden kahden pisteen välisen suoran kulmakerroin.
 **Kaava:** $v_\text{ka} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_\text{ka} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0{,}25\,\text{m/s}$

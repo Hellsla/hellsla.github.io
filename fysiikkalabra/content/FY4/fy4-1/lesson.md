@@ -204,7 +204,8 @@ v &= \frac{x_2 - x_1}{t_2 - t_1} \\
 \\[4pt]
 x &= x_1 + v\,t \\
 &= 20\,\text{m} + 2{,}5\,\text{m/s} \cdot 60\,\text{s} \\
-&= 20\,\text{m} + 150\,\text{m}
+&= 20\,\text{m} + 150\,\text{m} \\
+&= 170\,\text{m}
 \end{aligned}
 ```
 
