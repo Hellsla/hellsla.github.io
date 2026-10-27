@@ -1,4 +1,4 @@
-"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
+r"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
 
 Opens each page in preview/ (or site/) at a viewport (360 by default; CI also runs 1280 and 1920) and reports every
 element that is wider than its box: display formulas (.katex-display), inline formulas that cannot wrap (a long
@@ -71,6 +71,7 @@ with sync_playwright() as pw:
         if lid == "index" or "-" not in lid: continue
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
+        page.evaluate("document.fonts.ready.then(() => true)")   # measure with the page's own fonts, not a fallback
         page.wait_for_timeout(400)
         found = page.evaluate(JS)
         page.close()

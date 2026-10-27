@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1fd418b2cad4dd9b
+CONTENT-HASH: 82b128401cc8a8cf
 ## Blocking
 
 ## Polish
@@ -15,3 +15,6 @@ CONTENT-HASH: 1fd418b2cad4dd9b
 - Every solution has Annettu, Kysytty, Periaate (with a why), Kaava solved in symbols first, Muunnokset (or why none), Sijoitus with intermediate steps, Vastaus with the figures justified, Järkevyys with a real check. A student who cannot start can follow: L1 are short and explicit; L2-03 (ylipaine) and L3-02 (kelvin, condensation) justify the one non-obvious step; L3-03 explains the n criterion and causes.
 - Worked example has seven staged steps with bold lead-ins, one step each; numbers are consistent apart from the Polish items.
 - Exercise levels 5/4/3, none repeats the example.
+
+## Round 2 (delta)
+- Only inquiry.json feedback line changed: theta0 = 40 C - 116 kPa/(0,367 kPa/C) now uses \dfrac. Content unchanged and still correct (40 - 316,1 = -276 C); the stacked fraction wraps instead of overflowing at 360 px. No new findings. VERDICT stays PASS, 0 Blocking.
