@@ -191,7 +191,7 @@
         "hints": [
           "Valitse taulukosta Planckin pituuden ja maailmankaikkeuden rivit ja lue niiden $n$-arvot.",
           "Puoliväli on kahden luvun keskiarvo, $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$. Käytä eksponentteja, älä kokoja metreinä.",
-          "Jos $n_\\text{min} = -35$ ja $n_\\text{max} = 27$, niin $n_\\text{keski} = \\dfrac{-35 + 27}{2}$. Aseta sitten $L$ lähelle tulosta ja kirjaa kolmas rivi."
+          "Jos $n_\\text{min} = -35$ ja $n_\\text{max} = 27$, niin $n_\\text{keski} = \\dfrac{-35 + 27}{2}$. Aseta sitten $L = -4$ ja kirjaa kolmas rivi."
         ],
         "mistakes": [
           {

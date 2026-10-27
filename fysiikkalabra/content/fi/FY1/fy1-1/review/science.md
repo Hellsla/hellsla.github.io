@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 854339dfffa32b9d
+CONTENT-HASH: 6017709b8d465836
 
 ## Blocking
 
 ## Polish
-- lesson.md:46 — "Pienimmäksi mielekkääksi pituudeksi kutsutaan Planckin pituutta" claims more than is known. The Planck length is the scale at which current theories are expected to fail, not a proven smallest length. — Fix: "Planckin pituus, noin 1,6·10^-35 m, on mittakaava, jolla nykyiset teoriat lakkaavat toimimasta."
-- inquiry.json exp-2 hint 3 — "Aseta L lähelle tulosta" is ambiguous. mainObj picks the object nearest L + log10(150/560) ≈ L − 0,57, so the ×10 steps from 27,5 land on L = −4,5, where the nearest object is the red blood cell (n = −5). A student who records that row and types its n is marked wrong. — Fix: "Aseta $L = -4$" (the hair, n = −4).
 
 ## Checked
-- Round-1 blocking item fixed: the Milky Way is at exponent 21 in figures.py and lesson.md (marker x = 476,5 ≈ X(21) = 476,6; the aria-label says 21). It now agrees with check-3 and the sim (9,5·10^20 m).
-- Round-1 polish fixed. The exp-2 mistake is now 4,4·10^26, my recomputed mean of the sizes in metres. L2-04 gives 1,31 million with three figures (109,45³ = 1,311·10^6). The menetelmat item reads "Maan radan säde (1 AU)". helio and oort have the radius line (radiusLine at R = S/2, ext = 2m, so it matches the radius label). The refactored orbitPicture call is unchanged in behaviour.
-- New L1-04: Venus–Earth at closest approach, 4,10·10^10 m, is realistic (about 38–43 Gm). t = s/c = 136,7 s → 137 s (3 s.f.), as in answers.py and the solution. The symbolic step, the units and the reasonableness check (shorter than the Sun's 500 s) are correct.
-- exp-2 with min 3: at L = −4 the nearest object is the hair (log 7,0·10^-5 = −4,15, round to −4), so the solution's "hius, n = −4" and the answer −4 hold. The initial states and the controlled settings are unchanged.
-- Planck length 1,6·10^-35 m, "laskettu luonnonvakioista, ei mitattu suoraan": correct (√(ħG/c³)).
-- answers.py rerun: every value is unchanged except L1-04. Exercise and inquiry answers match.
-- The light-time figure (Moon 1,28 s, Sun 8,3 min, Proxima 4,2 a) is still correct.
-- check-3 marked optional: its physics is unchanged.
+- Scope of round 3: the diff touches only lesson.md:46 (Planck length wording) and inquiry.json exp-2 hint 3. Both apply my round-2 Polish items.
+- lesson.md:46: "Planckin pituus, noin 1,6·10^-35 m, on mittakaava, jota pienemmillä etäisyyksillä fyysikoiden mukaan nykyiset teoriat eivät enää toimi" is correct and properly hedged. It no longer claims a proven smallest length. The value 1,6·10^-35 m (√(ħG/c³)) and "not measured directly, computed from constants" are unchanged and correct.
+- inquiry.json exp-2 hint 3: (−35 + 27)/2 = −4, which matches the hint's L = −4.
+- sim.js mainObj at L = −4: the target is L + log10(150/560) = −4,572. Hair (7,0·10^-5 m, log −4,155) is at distance 0,417 and the red blood cell (7,5·10^-6 m, log −5,125) at 0,553, so the hair is the nearest object. Its n = −4 agrees with the solution and the answer.
+- L = −4 can be reached exactly: the slider runs from −34 with step 0,1, and the ±1 buttons from the reset value L = 1 land on integers.
+- No other content changed. answers.py, exercises and the simulation are untouched, so round-2 checks still hold.
 - Hash unchanged at the start and the end.

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 854339dfffa32b9d
+CONTENT-HASH: 6017709b8d465836
 
 ## Blocking
-- none. Round-1 blocker fixed: exp-2 and pred-2 now require three rows (min 3). The student computes the midpoint (-4), zooms there and reads the sim's nearest object (hair, the only object near n = -4: red cell -5, ant -3). Anyone who chose human, Earth or proton sees the sim contradict the choice before the reveal. The solution names the hair only behind its button.
+- none.
 
 ## Polish
-- exp-2 hint 3 gives -35 and 27 outright; acceptable as the last hint.
-- Goal 1 (kokeellisuus) still rests mostly on the two theory paragraphs and "menetelmat"; the reflect prompt now links sizes to measurements, which is enough for a 1 op course.
-- Workload is lighter (check-3 optional); 12 exercises plus the optional items remain the long tail.
+- inquiry.json exp-2 hint 3 now says "Aseta sitten $L = -4": the value is exactly what the student has just computed ((-35+27)/2), so it only tells how to set the control; acceptable as the last hint, and the hair is still not named before the reveal.
+- lesson.md line 46: "mittakaava, jota pienemmillä etäisyyksillä fyysikoiden mukaan nykyiset teoriat eivät enää toimi" is a heavy clause for a 16-year-old; lighter: "on pienin mielekäs mittakaava: sitä pienemmillä etäisyyksillä nykyiset teoriat eivät enää toimi."
 
 ## Checked
-- Round-1 items: "siroavat" fixed; Planck length introduced with "ei mitattu suoraan"; L1-04 now Venus (137 s, 3 figures, reasonable) so the light-time figure no longer gives the answer; Linnunrata figure at 21 matches the sim and aria-label; L2-04 solution rounding consistent.
-- Diff touches only those items; no new disclosure: pred feedback stays gated, reveal now needs the evidence.
-- Hash at start and end: 854339dfffa32b9d.
+- Diff 1 (hint 3): consistent with exp-2 (min 3 rows, midpoint -4); no disclosure of the nearest object, prediction feedback still gated.
+- Diff 2 (Planck length): the definition now says why it matters ("teoriat eivät enää toimi") and keeps "ei mitattu suoraan"; fits the slot goal on scale and on physics as a model-based science; value 1,6·10^-35 m matches the sim and the brief.
+- Paragraph stays under 120 words; glossary terms unchanged.
+- Hash at start and end: 6017709b8d465836.
