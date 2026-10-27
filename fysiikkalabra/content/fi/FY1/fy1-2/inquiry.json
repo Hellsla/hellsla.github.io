@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "NASAn Voyager 2 -luotain lähti matkaan vuonna 1977, ja se on nyt kaukana Aurinkokunnan ulkopuolella olevan tähtienvälisen avaruuden rajalla. Silti sen kanssa pidetään yhteyttä radiosignaaleilla. Luotaimen etäisyydestä kerrotaan välillä kilometreinä, välillä astronomisina yksikköinä ja välillä sillä ajalla, jonka signaali kulkee sen luota tänne.",
+      "text": "NASAn Voyager 2 -luotain lähti matkaan vuonna 1977, ja se on ylittänyt Auringon vaikutusalueen rajan ja liikkuu nyt tähtienvälisessä avaruudessa. Silti sen kanssa pidetään yhteyttä radiosignaaleilla. Luotaimen etäisyydestä kerrotaan välillä kilometreinä, välillä astronomisina yksikköinä ja välillä sillä ajalla, jonka signaali kulkee sen luota tänne.",
       "question": "Miksi sama etäisyys ilmoitetaan eri yksiköillä, ja mitä lukujen välillä pitää tehdä, jotta ne tarkoittavat samaa?"
     },
     {
@@ -113,7 +113,7 @@
       "type": "sim",
       "text": "Vieritä Aurinkokuntaa, jossa Kuun halkaisija on yksi kuvapiste. Hyppää kohteeseen, matkusta valon nopeudella ja lue etäisyys kilometreinä, AU:na ja valon kulkuaikana.",
       "howto": "Vieritä kuvaa vetämällä, hiiren pyörällä tai nuolinäppäimillä (Shift suurentaa askelta) tai nuolipainikkeilla: mitä pidempään painiketta pidät, sitä nopeammin kuva vierii. Liukusäädin siirtää näkymän etäisyydelle $d = 10^{n}\\,\\text{km}$ Auringosta, ja hyppypainikkeet vievät suoraan Aurinkoon, planeettaan tai Voyager 2:een. *Matkusta valon nopeudella* lähettää valopulssin näkymän keskikohdasta; *Nopeus* kertoo, moninkertaisella tahdilla aika kuluu (×1, ×100 tai ×10 000), ja kulunut aika sekä kuljettu matka näkyvät luvuissa. *Alusta* palauttaa näkymän Aurinkoon. Kenttä *Voyager 2 -päivä* valitsee päivän, jolle luotaimen paikka lasketaan; oletuksena se on tämä päivä. Näkymän keskikohdan etäisyys luetaan kolmella tavalla: kilometreinä, AU:na ja valon kulkuaikana.",
-      "model": "Kuva on todellisessa mittakaavassa etäisyyden suunnassa: yksi kuvapiste on Kuun halkaisija, $3474\\,\\text{km}$. Planeetat on piirretty yhdelle suoralle Auringosta lähtien niiden keskimääräisille etäisyyksille eli radan isoille puoliakseleille (JPL, *Approximate Positions of the Planets*), ja niiden koot ovat päiväntasaajan halkaisijoita (NASA). Todellisuudessa planeetat ovat Auringon eri puolilla. Voyager 2 on merkitty suurennetulla symbolilla, koska itse luotain on kuvassa paljon yhtä kuvapistettä pienempi.\n\nVoyager 2:n etäisyys, nopeus ja signaalin kulkuaika ovat **mallin laskemia arvoja** (lähteet: NASA/JPL), eivät mittauksia. Malli olettaa, että luotain etenee vakionopeudella $15{,}341\\,\\text{km/s}$ heliopaussin ylityksestä 2018-11-05 alkaen, jolloin etäisyys oli $119{,}7\\,\\text{AU}$; todellinen nopeus muuttuu hieman. Signaalin kulkuaika lasketaan Auringon etäisyydestä. Maa on enintään $1\\,\\text{AU}$ Aurinkoa lähempänä tai kauempana, joten signaalin kulkuaika Maahan poikkeaa näytetystä enintään noin kahdeksan minuuttia. Valon nopeus on $c = 299\\,792\\,458\\,\\text{m/s}$, ja *Nopeus* muuttaa vain animaation tahtia, ei kulunutta aikaa tai matkaa.",
+      "model": "Kuva on todellisessa mittakaavassa etäisyyden suunnassa: yksi kuvapiste on Kuun halkaisija, $3474\\,\\text{km}$. Planeetat on piirretty yhdelle suoralle Auringosta lähtien niiden keskimääräisille etäisyyksille eli radan isoille puoliakseleille (JPL, *Approximate Positions of the Planets*), ja niiden koot ovat päiväntasaajan halkaisijoita (NASA). Todellisuudessa planeetat ovat Auringon eri puolilla. Voyager 2 on merkitty suurennetulla symbolilla, koska itse luotain on kuvassa paljon yhtä kuvapistettä pienempi.\n\nVoyager 2:n etäisyys, nopeus ja signaalin kulkuaika ovat **mallin laskemia arvoja** (lähteet: NASA/JPL), eivät mittauksia. Malli olettaa, että luotain etenee vakionopeudella $15{,}341\\,\\text{km/s}$ heliopaussin eli Auringon vaikutusalueen rajan ylityksestä 2018-11-05 alkaen, jolloin etäisyys oli $119{,}7\\,\\text{AU}$; todellinen nopeus muuttuu hieman. Signaalin kulkuaika lasketaan Auringon etäisyydestä. Maa on enintään $1\\,\\text{AU}$ Aurinkoa lähempänä tai kauempana, joten signaalin kulkuaika Maahan poikkeaa näytetystä enintään noin kahdeksan minuuttia. Valon nopeus on $c = 299\\,792\\,458\\,\\text{m/s}$, ja *Nopeus* muuttaa vain animaation tahtia, ei kulunutta aikaa tai matkaa.",
       "calc": "Kuvapisteiden määrä saadaan jakamalla pituus Kuun halkaisijalla:\n\n$$N = \\frac{d}{3474\\,\\text{km}}\\cdot1\\,\\text{px}$$\n\nEsimerkiksi Auringon leveys on $\\tfrac{1{,}392\\cdot10^{6}\\,\\text{km}}{3474\\,\\text{km}}\\cdot1\\,\\text{px} = 401\\,\\text{px}$. Etäisyys AU:na on $\\tfrac{d}{1{,}496\\cdot10^{8}\\,\\text{km}}$, ja valon kulkuaika on\n\n$$t = \\frac{d}{c}\\qquad c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$$\n\nMatkustettaessa kuljettu matka on $s = ct$ ja kulunut aika $t = s/c$; nopeusvalinta kertoo vain, kuinka monta animaatiosekuntia kuluu sekunnissa. Voyager 2:n etäisyys päivänä $t$ on mallissa\n\n$$d = d_0 + v\\,(t - t_0)$$\n\nmissä $d_0 = 119{,}7\\,\\text{AU}$, $v = 15{,}341\\,\\text{km/s}$ ja $t_0$ on 2018-11-05. Kaavaa käytetään tässä valmiina mallina, eikä sitä tarvitse itse ratkaista."
     },
     {
@@ -175,7 +175,7 @@
       "title": "Voyager 2 -mallin lähtötiedot ja arvot",
       "source": "model",
       "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus 15,341 km/s; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
-      "text": "Simulaatio laskee Voyager 2:n paikan olettamalla, että luotain etenee heliopaussin ylityksen jälkeen vakionopeudella. Näin lasketut etäisyydet ja signaalin kulkuajat Auringosta (neljä päivää, ei mittauksia):\n\n| Päivä | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018-11-05 | $119{,}7$ | $1{,}79\\cdot10^{10}$ | $16{,}6$ |\n| 2022-11-05 | $132{,}6$ | $1{,}98\\cdot10^{10}$ | $18{,}4$ |\n| 2026-11-05 | $145{,}6$ | $2{,}18\\cdot10^{10}$ | $20{,}2$ |\n| 2030-11-05 | $158{,}5$ | $2{,}37\\cdot10^{10}$ | $22{,}0$ |\n\nSama etäisyys on kirjoitettu kolmella tavalla: AU:na, kilometreinä ja valon kulkuaikana tunteina.",
+      "text": "Simulaatio laskee Voyager 2:n paikan olettamalla, että luotain etenee heliopaussin ylityksen jälkeen vakionopeudella. Heliopaussi on raja, jonka ulkopuolella Auringon hiukkastuuli ei enää hallitse avaruutta. Näin lasketut etäisyydet ja signaalin kulkuajat Auringosta (neljä päivää, ei mittauksia):\n\n| Päivä | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018-11-05 | $119{,}7$ | $1{,}79\\cdot10^{10}$ | $16{,}6$ |\n| 2022-11-05 | $132{,}6$ | $1{,}98\\cdot10^{10}$ | $18{,}4$ |\n| 2026-11-05 | $145{,}6$ | $2{,}18\\cdot10^{10}$ | $20{,}2$ |\n| 2030-11-05 | $158{,}5$ | $2{,}37\\cdot10^{10}$ | $22{,}0$ |\n\nSama etäisyys on kirjoitettu kolmella tavalla: AU:na, kilometreinä ja valon kulkuaikana tunteina.",
       "question": {
         "type": "choice",
         "prompt": "Taulukon arvot ovat mallin laskemia arvoja. Mitä se tarkoittaa?",
@@ -187,7 +187,7 @@
           {
             "text": "Arvot on laskettu lähtötiedoista olettamalla vakionopeus. Todellinen etäisyys voi poiketa hieman, ja sen tarkkuus on lähtötietojen tarkkuus.",
             "correct": true,
-            "feedback": "Oikein. Malli antaa helmikuulle 2026 noin 143 AU, ja JPL:n ilmoittama arvo on 143,05 AU, joten malli sopii hyvin lähivuosille. Mallin lukuja ei silti pidä ilmoittaa useammalla merkitsevällä numerolla kuin lähtötiedoissa on."
+            "feedback": "Oikein. Signaalin kulkuaika on laskettu Auringosta, ei Maasta. Malli antaa helmikuulle 2026 noin 143 AU, ja JPL:n ilmoittama arvo on 143,05 AU, joten malli sopii hyvin lähivuosille. Mallin lukuja ei silti pidä ilmoittaa useammalla merkitsevällä numerolla kuin lähtötiedoissa on."
           },
           {
             "text": "Arvot on keksitty havainnollistamaan, eikä niillä ole yhteyttä todellisiin tietoihin.",
@@ -293,6 +293,33 @@
         {
           "text": "Laskussa ei ole virhettä, koska yksi kilometri on tuhat metriä.",
           "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten myös muunnoskerroin on kahden tuhannen tulo, $1000\\cdot1000 = 10^{6}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "merkitsevat",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Montako numeroa kirjoitetaan?",
+      "prompt": "Neptunuksen etäisyys Auringosta on $30{,}1\\,\\text{AU}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Laskin antaa tulokseksi $4{,}50296\\cdot10^{9}\\,\\text{km}$. Mikä tapa ilmoittaa tulos on oikea?",
+      "choices": [
+        {
+          "text": "$4{,}50\\cdot10^{9}\\,\\text{km}$",
+          "correct": true,
+          "feedback": "Oikein. Etäisyys $30{,}1\\,\\text{AU}$ on annettu kolmella merkitsevällä numerolla, ja se on tulon epätarkin tekijä ($1{,}496\\cdot10^{8}$ on neljällä), joten tulos ilmoitetaan kolmella: $4{,}50\\cdot10^{9}\\,\\text{km}$. Kymmenpotenssimuoto näyttää, että loppunolla on merkitsevä."
+        },
+        {
+          "text": "$4{,}50296\\cdot10^{9}\\,\\text{km}$, koska laskin antoi tämän.",
+          "feedback": "Laskin antaa kaikki numerot, mutta tulos ei voi olla tarkempi kuin lähtötieto. Etäisyys $30{,}1\\,\\text{AU}$ tunnetaan vain kolmella merkitsevällä numerolla, joten kuusi numeroa antaisi väärän kuvan tarkkuudesta."
+        },
+        {
+          "text": "$4{,}5\\cdot10^{9}\\,\\text{km}$",
+          "feedback": "Tämä on liian karkea: kaksi merkitsevää numeroa hukkaisi tarkkuutta, joka lähtötiedossa $30{,}1\\,\\text{AU}$ on. Kolmas numero, loppunolla, kuuluu mukaan."
+        },
+        {
+          "text": "$5\\cdot10^{9}\\,\\text{km}$",
+          "feedback": "Yksi merkitsevä numero on vielä karkeampi kuin lähtötiedon kolme. Pyöristyksessä säilytetään lähtötiedon merkitsevien numeroiden määrä, ei vähemmän."
         }
       ],
       "optional": true

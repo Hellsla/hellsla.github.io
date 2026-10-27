@@ -15,7 +15,7 @@
 **Kaava:** $s = x\,\text{km}$ ja $1\,\text{km} = 10^{-3}\,\text{Mm}$, josta $s_\text{Mm} = x\cdot 10^{-3}$
 **Muunnokset:** $1\,\text{Mm} = 10^{6}\,\text{m} = 10^{3}\,\text{km}$.
 **Sijoitus:** $s = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
-**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa, koska muunnoskerroin on tarkka ja lähtöarvo $384\,400\,\text{km}$ ilmoitetaan sadan kilometrin tarkkuudella.
+**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa. Kokonaisluvun $384\,400$ loppunollat ovat epäselviä, joten luku tulkitaan sadan kilometrin tarkkuudella, $3{,}844\cdot10^{5}\,\text{km}$, ja muunnoskerroin on tarkka.
 **Järkevyys:** Megametri on tuhat kilometriä, ja 384 400 on noin 400 tuhatta, joten tulos on noin 400 Mm. Etäisyyden kymmenpotenssi on $10^{8}\,\text{m} = 100\,\text{Mm}$ ja $10^{9}\,\text{m} = 1000\,\text{Mm}$ välissä, kuten pitääkin.
 
 ## fy1-2-L1-03
@@ -49,14 +49,14 @@
 **Järkevyys:** Karkeasti $\dfrac{1{,}4\cdot10^{6}}{3{,}5\cdot10^{3}} = 0{,}4\cdot10^{3} = 400$. Aurinko on halkaisijaltaan noin 400 Kuuta, mikä sopii siihen, että se on paljon Kuuta suurempi.
 
 ## fy1-2-L2-01
-**Annettu:** $a = 5{,}20\,\text{AU}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$, $c = 2{,}998\cdot10^{5}\,\text{km/s}$
-**Kysytty:** valon kulkuaika $t$ minuutteina
-**Periaate:** Valo etenee tyhjiössä tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan. Matka on ensin muunnettava kilometreiksi, jotta se sopii nopeuden yksikköön.
-**Kaava:** $s = a\cdot 1\,\text{AU}$ ja $t = \dfrac{s}{c}$, josta $t = \dfrac{a\cdot 1\,\text{AU}}{c}$
-**Muunnokset:** $s = 5{,}20\cdot 1{,}496\cdot10^{8}\,\text{km} = 7{,}779\cdot10^{8}\,\text{km}$. Lopuksi sekunnit minuuteiksi: $1\,\text{min} = 60\,\text{s}$.
-**Sijoitus:** $t = \dfrac{7{,}779\cdot10^{8}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 2595\,\text{s} = \dfrac{2595\,\text{s}}{60\,\text{s/min}} = 43{,}25\,\text{min}$
-**Vastaus:** $43{,}2\,\text{min}$, kolme merkitsevää numeroa kuten etäisyydessä $5{,}20\,\text{AU}$.
-**Järkevyys:** Valo kulkee yhden AU:n noin 8,3 minuutissa, joten 5,2 AU vie noin $5{,}2\cdot 8{,}3\,\text{min} = 43\,\text{min}$. Tulos täsmää arvion kanssa.
+**Annettu:** kellotaajuus $f = 3{,}2\,\text{GHz}$, aika $t = 5{,}0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ ja $1\,\text{Hz} = 1/\text{s}$
+**Kysytty:** kellojaksojen lukumäärä $N$
+**Periaate:** Taajuus kertoo, montako jaksoa tapahtuu sekunnissa. Kun taajuus on vakio, jaksojen lukumäärä on taajuuden ja ajan tulo. Taajuus ja aika on ilmoitettava samassa aikayksikössä, joten kumpikin muunnetaan SI-yksiköihin.
+**Kaava:** $N = f\,t$
+**Muunnokset:** $f = 3{,}2\,\text{GHz} = 3{,}2\cdot10^{9}\,\text{Hz} = 3{,}2\cdot10^{9}\,\text{1/s}$ ja $t = 5{,}0\,\text{ms} = 5{,}0\cdot10^{-3}\,\text{s}$.
+**Sijoitus:** $N = 3{,}2\cdot10^{9}\,\dfrac{1}{\text{s}}\cdot 5{,}0\cdot10^{-3}\,\text{s} = 16\cdot10^{6} = 1{,}6\cdot10^{7}$
+**Vastaus:** $16\,000\,000$ eli $1{,}6\cdot10^{7}$ jaksoa, kaksi merkitsevää numeroa kuten lähtöarvoissa $3{,}2\,\text{GHz}$ ja $5{,}0\,\text{ms}$.
+**Järkevyys:** Kolme gigahertsiä on noin kolme miljardia jaksoa sekunnissa. Millisekunti on sekunnin tuhannesosa, joten yhdessä millisekunnissa jaksoja on noin kolme miljoonaa ja viidessä noin $5\cdot 3 = 15$ miljoonaa. Tulos $16$ miljoonaa täsmää arvion kanssa.
 
 ## fy1-2-L2-02
 **Annettu:** bakteerin pituus $l = 2{,}0\,\mu\text{m}$, matka $L = 1{,}0\,\text{mm}$
@@ -99,13 +99,13 @@
 **Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600/8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 
 ## fy1-2-L3-02
-**Annettu:** näytön leveys $W = 1920\,\text{px}$; Kuun halkaisija $D = 3474\,\text{km} = 1\,\text{px}$; matka $a = 30{,}07\,\text{AU}$; $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
+**Annettu:** näytön leveys $W = 1920\,\text{px}$ (tarkka luku); Kuun halkaisija $D = 3474\,\text{km} = 1\,\text{px}$; matka $a = 30{,}07\,\text{AU}$; $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
 **Kysytty:** näyttöjen lukumäärä $N$
 **Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Näyttöjen lukumäärä on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
 **Kaava:** $N = \dfrac{a\cdot 1\,\text{AU}}{D}\cdot\dfrac{1\,\text{px}}{W}$
 **Muunnokset:** Matka kilometreinä: $30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Kuvapisteinä: $\dfrac{4{,}498\cdot10^{9}\,\text{km}}{3474\,\text{km/px}} = 1{,}295\cdot10^{6}\,\text{px}$.
 **Sijoitus:** $N = \dfrac{1{,}295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674{,}4$
-**Vastaus:** $674$ näytön leveyttä, kolme merkitsevää numeroa, koska näytön leveys $1920\,\text{px}$ on annettu kolmella.
+**Vastaus:** $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
 **Järkevyys:** Neptunus on noin 1,3 miljoonan kuvapisteen päässä, ja 1,3 miljoonaa jaettuna kahdella tuhannella on noin 650. Tulos on samaa suuruusluokkaa, joten matkaa ei voi vierittää kuvassa yhdellä vilkaisulla.
 
 ## fy1-2-L3-03

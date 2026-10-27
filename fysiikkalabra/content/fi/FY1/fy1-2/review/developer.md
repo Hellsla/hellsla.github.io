@@ -1,12 +1,9 @@
 VERDICT: DONE
 
-Changes (uncommitted):
-- assets/sims/fy1/fy1-2/sim.js: new true-scale solar system sim (1 px = 3474 km), drag/wheel/arrows/jump buttons, log slider 10^6-10^11 km, light-speed trip with hidas/normaali/nopea, Voyager 2 model by date (source: model), LaTeX labels, adapter params n, pvm, nopeus.
-- tests/sims/fy1-2.json: 62 assertions for controls, readouts, jumps, Voyager dates, trip, speed.
-- lang/fi.json: sims."fy1-2" block (own keys only).
-- glossary.json: 6 entries (suure, yksikkö, SI-järjestelmä, etuliite, merkitsevä numero, astronominen yksikkö).
-- lessons/FY1/fy1-2/: answers.py (all answers), figures.py (3 figures), sim-spec.md.
-- content/fi/FY1/fy1-2/: lesson.md (Ydinajatus, Kaava: Yksikkömuunnokset, 7-stage Esimerkki Neptune, misconception, summary), exercises.json (5/4/3), solutions.md (complete), exit-ticket.json, inquiry.json (19 activities, predictions with reveals, Voyager interpret as model).
-- meta.json untouched.
-
-check_lesson.py fy1-2: all ok.
+Round 1 fix.
+- lesson.md: sentence on ambiguous trailing zeros of whole numbers (3,844·10^5 km); prefix figure regenerated.
+- lessons/FY1/fy1-2/figures.py: prefix symbols upright (\text{n}, \text{µ}, m, k, M, G, T).
+- answers.py: L2-01 now 3,2 GHz x 5,0 ms (prefix conversion, replaces the Jupiter light-time task); L3-02 answer 674,4; comments fixed (1,3255).
+- exercises.json: L2-01 rewritten, L3-02 "tarkalleen 1920 px", answer 674.4.
+- solutions.md: L2-01 new full solution; L1-02 justification follows the zero rule; L3-02 four figures, 1920 px exact.
+- inquiry.json: hook rewording (crossed heliopause, in interstellar space); heliopause glossed in model and voyager-malli; correct option states the signal time is from the Sun; new optional choice "merkitsevat" (4,50·10^9 km).

@@ -45,9 +45,9 @@
     {
       "id": "fy1-2-L2-01",
       "level": 2,
-      "text": "Jupiter on keskimäärin 5,20 AU:n etäisyydellä Auringosta. Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Kuinka monta minuuttia valolla kestää kulkea Auringosta Jupiteriin?",
-      "answer": 43.2,
-      "unit": "min",
+      "text": "Tietokoneen prosessorin kellotaajuus on 3,2 GHz eli 3,2 miljardia jaksoa sekunnissa. Käytä arvoja $1\\,\\text{GHz} = 10^{9}\\,\\text{Hz}$ ja $1\\,\\text{Hz} = 1/\\text{s}$. Kuinka monta kellojaksoa prosessori ehtii suorittaa 5,0 ms:ssa?",
+      "answer": 16000000,
+      "unit": "kpl",
       "tolerance": 0.02
     },
     {
@@ -87,8 +87,8 @@
     {
       "id": "fy1-2-L3-02",
       "level": 3,
-      "text": "Näytön leveys on 1920 px. Kuvassa Kuun halkaisija, 3474 km, on yksi kuvapiste. Auringosta Neptunukseen on 30,07 AU ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta näytön leveyttä peräkkäin tarvitaan, jotta Auringosta Neptunukseen ulottuva matka mahtuu kuvaan?",
-      "answer": 674,
+      "text": "Näytön leveys on tarkalleen 1920 px. Kuvassa Kuun halkaisija, 3474 km, on yksi kuvapiste. Auringosta Neptunukseen on 30,07 AU ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta näytön leveyttä peräkkäin tarvitaan, jotta Auringosta Neptunukseen ulottuva matka mahtuu kuvaan?",
+      "answer": 674.4,
       "unit": "kpl",
       "tolerance": 0.02
     },

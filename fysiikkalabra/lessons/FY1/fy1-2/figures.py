@@ -51,8 +51,8 @@ def prefixes():
     f = Fig("fy12-p", 290, "Etuliitteet ovat kymmenpotenssien lyhenteitä. Kahdeksan laatikkoa kuvaa kerrointa nano $10^{-9}$, mikro $10^{-6}$, milli "
             "$10^{-3}$, ei etuliitettä $10^{0}$, kilo $10^{3}$, mega $10^{6}$, giga $10^{9}$ ja tera $10^{12}$. Nuolten välillä kerroin "
             "kasvaa joka askeleella tuhatkertaiseksi. Alimmalla rivillä etuliite on yhdistetty metriin.")
-    cols = [("n", -9, "nano", r"\text{nm}"), (r"\mu", -6, "mikro", r"\mu\text{m}"), ("m", -3, "milli", r"\text{mm}"), ("1", 0, "", r"\text{m}"),
-            ("k", 3, "kilo", r"\text{km}"), ("M", 6, "mega", r"\text{Mm}"), ("G", 9, "giga", r"\text{Gm}"), ("T", 12, "tera", r"\text{Tm}")]
+    cols = [(r"\text{n}", -9, "nano", r"\text{nm}"), (r"\text{µ}", -6, "mikro", r"\text{µm}"), (r"\text{m}", -3, "milli", r"\text{mm}"), ("1", 0, "", r"\text{m}"),
+            (r"\text{k}", 3, "kilo", r"\text{km}"), (r"\text{M}", 6, "mega", r"\text{Mm}"), (r"\text{G}", 9, "giga", r"\text{Gm}"), (r"\text{T}", 12, "tera", r"\text{Tm}")]
     xs = [48 + 72 * i for i in range(8)]
     for i, (sym, e, name, unit) in enumerate(cols):
         x = xs[i]
