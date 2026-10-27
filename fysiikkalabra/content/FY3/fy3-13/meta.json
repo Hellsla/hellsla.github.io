@@ -16,6 +16,6 @@
     "mittausepävarmuus"
   ],
   "sim": false,
-  "solutions": "first",
+  "solutions": "all",
   "image": false
 }

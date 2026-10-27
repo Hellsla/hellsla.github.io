@@ -15,10 +15,10 @@ import json, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 import courses
+import check_solutions as solution_rules
 from courses import ROOT
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 NUM = r"[−-]?\d+(?:,\d+)?"
-LABELS = ["Annettu", "Kysytty", "Kaava", "Sijoitus", "Vastaus", "Järkevyys"]
 
 
 # The figure palette (NOTES.md §3): one meaning per colour in every lesson's figures.
@@ -173,8 +173,8 @@ def check_lesson_form(L, text):
     body, line = section(text, "Esimerkki")
     if body:
         stages = body.count("<!-- vaihe -->")
-        if not 3 <= stages <= 6:
-            L.form("lesson.md", line, f"worked example has {stages} stages; write 3–6 stages separated by `<!-- vaihe -->` lines (human rule 4)")
+        if not 3 <= stages <= 7:
+            L.form("lesson.md", line, f"worked example has {stages} stages; write the 7 stages of check_solutions.py separated by `<!-- vaihe -->` lines (human rule 4)")
         start = text.find(body)
         for m in re.finditer(r"```latex\n(.*?)```|\$\$(.*?)\$\$", body, flags=re.S):
             frag = m.group(1) or m.group(2)
@@ -281,8 +281,6 @@ def check_solutions(L, folder, answers):
         start = text.find(f"## {eid}")
         line = text.count("\n", 0, start) + 1
         seen[eid] = body
-        for lab in LABELS:
-            if f"**{lab}" not in body: L.warn("solutions.md", line, f"{eid}: no '**{lab}:**' step")
         for lab in ("Kaava", "Sijoitus"):
             k = re.search(rf"\*\*{lab}:?\*\*:?(.*?)(?=\n\*\*|\Z)", body, re.S)   # the step runs to the next label: a display $$ block on the next line counts
             if k and "$" not in k.group(1):
@@ -294,7 +292,7 @@ def check_solutions(L, folder, answers):
         elif k and re.search(r"=[^=]*\d[,.]?\d*\s?(?:" + UNITS[3:-1] + r")\b", k.group(1).split(",")[-1]) and "Sijoitus" in body:
             L.warn("solutions.md", line, f"{eid}: numbers with units in the Kaava step; keep Kaava symbolic and put the numbers in Sijoitus (human rule 2)")
         words = len(body.split())
-        if words > 130: L.warn("solutions.md", line, f"{eid}: {words} words, solutions stay under 120 words")
+        if words > 260: L.warn("solutions.md", line, f"{eid}: {words} words; a complete solution is about 100–220 words, put long reasoning in Periaate and Järkevyys, not in Sijoitus")
         m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)", latex_plain(body))
         if m and eid in answers:
             ans, tol = answers[eid]
@@ -302,8 +300,6 @@ def check_solutions(L, folder, answers):
             except ValueError: continue
             if abs(got - ans) > max(tol, 0.005) * max(1, abs(ans)):
                 L.err("solutions.md", line, f"{eid}: Vastaus {m.group(1).strip()} does not match exercises.json answer {ans:g}")
-    for eid in answers:
-        if eid not in seen: L.err("solutions.md", 1, f"no solution for {eid}")
 
 
 def tex_plain(text):
@@ -351,7 +347,6 @@ def check_meta(L, folder):
     code = courses.course_of(lid)
     if meta.get("course") != folder.parent.name or folder.parent.name != code:
         L.err("meta.json", 1, f"course {meta.get('course')!r}, folder content/{folder.parent.name}/ and id prefix ({code}) must agree")
-    if meta.get("solutions", "first") not in ("first", "all", "none"): L.err("meta.json", 1, "solutions must be first, all or none")
     glossary = {e["term"] for e in json.loads((ROOT / "glossary.json").read_text())}
     for term in meta.get("glossary", []):
         if term not in glossary: L.err("meta.json", 1, f"glossary term {term!r} missing from glossary.json (add it, do not invent synonyms)")
@@ -442,6 +437,7 @@ def lint(folder):
     check_lesson_md(L, folder)
     answers = check_exercises(L, folder)
     check_solutions(L, folder, answers)
+    for name, line, msg in solution_rules.problems(folder): L.err(name, line, msg + " (complete solutions, teacher 2026-10-27, scripts/check_solutions.py)")
     check_exit_ticket(L, folder)
     check_sim(L, folder, meta)
     check_answers_py(L, folder, answers)

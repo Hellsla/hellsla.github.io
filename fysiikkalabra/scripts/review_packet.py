@@ -100,14 +100,14 @@ def shots(folder, role):
 def reviewer_rules(role, lid):
     what = ("1. Every formula: correct, conditions stated, inside the course's central contents and scope notes above.\n2. Units, magnitudes, signs; nothing unrealistic.\n"
             "3. answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare.\n"
-            "4. solutions.md and the worked example: reasoning right, unknown solved symbolically before substitution.\n"
+            "4. solutions.md, every numeric task's solution and the worked example: complete (NOTES §3 Complete solutions), reasoning right, the stated principle really applies and its reason is right, unknown solved symbolically before substitution, conversions right, rounding justified, the reasonableness check a real check.\n"
             "5. Figures (SVG numbers) and the simulation code: physically correct, the sim implements the lesson's model, its limits are said, nothing misleads.\n"
             "6. inquiry.json: every correct option, every feedback's physics and numbers, each experiment's setup isolates its varied parameter."
             if role == "science" else
             "1. Learning path: a 17-year-old with only the prerequisites can follow; the opening question is answered; the slot's goals, no more.\n"
             "2. The activities fit the topic: predictions before evidence where the topic allows, an investigation, data, a graph or a model that the student acts on; no simulation or game for its own sake; workload one lesson.\n"
             "3. Lesson form: figures next to the paragraphs they explain and legible in their captures; no wall of text; staged example, one step per stage.\n"
-            "4. Exercises: levels per the rubric; none repeats the example; feedback repairs misconceptions; the exit ticket tests the core idea.\n"
+            "4. Exercises: levels per the rubric; none repeats the example; feedback repairs misconceptions; the exit ticket tests the core idea; every solution can be followed step by step by a student who could not solve the task (the principle explained, not just named; nothing skipped).\n"
             "5. Finnish: grammar, glossary terms, case after number+unit (80 N:n voimalla), reading level; give the corrected sentence.\n"
             "6. Phone usability from the captures: nothing clipped, controls and readout understandable. The inquiry mechanics (gating, locking, "
             "reveal, option feedback, 360 px) are already tested (checks above); open the preview in Playwright only for what a capture cannot show, "

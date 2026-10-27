@@ -11,8 +11,8 @@ longer current is left out with a WARNING (an annotation on CI), never silently.
 Page anatomy (human decisions 2026-10-25 and 2026-10-26, CLAUDE.md "Lesson page"): the worked example is shown in
 stages split by `<!-- vaihe -->` lines (staged_example); the formula section `## Kaava: <law>` is headed by the
 law's name (named_sections); a figure sits beside the paragraph it explains on a wide screen (fig_rows). Each
-exercise gets a browser-side answer check and, depending on meta.solutions ("first" by default, "all", "none"),
-its worked solution from solutions.md; the exercises close the page, after the exit ticket.
+exercise gets a browser-side answer check and, its complete worked solution from solutions.md behind its
+own "Näytä ratkaisu" button (teacher 2026-10-27: every exercise, meta.solutions "all"; scripts/check_solutions.py); the exercises close the page, after the exit ticket.
 A lesson with inquiry.json (scripts/inquiry.py, docs/inquiry.md) is laid out as inquiry stages: the theory
 sections, simulation and exit ticket are placed where the stages say. Without it (the classic layout) the
 simulation goes after the formula section (before "## Esimerkki") or where lesson.md has a line `<!-- sim -->`.
@@ -140,13 +140,15 @@ def description_of(meta, lesson_md):
 
 
 def solutions_of(folder):
-    """{exercise id: html} from solutions.md, one `## id` block each, line breaks kept (nl2br)."""
+    """{exercise id: html} from solutions.md, one `## id` block each: every bold step (**Annettu:**, **Periaate:**, ...)
+    starts a paragraph of its own so the steps read one by one on a phone; other line breaks are kept (nl2br)."""
     f = folder / "solutions.md"
     if not f.exists(): return {}
     out = {}
     for block in re.split(r"^## ", f.read_text(), flags=re.M)[1:]:
         head, _, body = block.partition("\n")
-        out[head.strip()] = nbsp_units(render_md(body.strip(), extensions=["nl2br"]))
+        body = re.sub(r"\n(?=\*\*[^*\n]+?[:.]\*\*)", "\n\n", body.strip())
+        out[head.strip()] = nbsp_units(render_md(body, extensions=["nl2br"]))
     return out
 
 
@@ -160,7 +162,7 @@ def exercise_html(e, solution_html):
                  f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus tehtävään {esc(e["id"])}" placeholder="?">'
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + '<button type="submit">Tarkista</button><output aria-live="polite"></output></form>')
-    sol = f'<details class="solution"><summary>Ratkaisu</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
+    sol = f'<details class="solution"><summary>Näytä ratkaisu</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
     return (f'<li id="{e["id"]}"><p class="task">{nbsp_units(e["text"])}</p>{check}'
             f'<details class="answer"><summary>Vastaus</summary><p>{ans}</p></details>{sol}</li>')
 
@@ -189,7 +191,7 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     if missing:                                      # a draft still being written: skip it instead of failing the whole build
         print("skipped", meta["id"], "(missing " + ", ".join(missing) + ")"); continue
     ex = json.loads((folder / "exercises.json").read_text())
-    publish = meta.get("solutions", "first")
+    publish = meta.get("solutions", "all")
     solutions = solutions_of(folder) if publish != "none" else {}
     ex_html = ""
     for lvl, items in ex.items():
