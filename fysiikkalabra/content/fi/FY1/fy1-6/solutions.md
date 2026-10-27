@@ -60,14 +60,14 @@
 **Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa, joten nopeuteen $12\,\text{m/s}$ pääsemiseen menee hieman yli sekunti. Takaisinlasku: $9{,}81\,\text{m/s}^2 \cdot 1{,}22\,\text{s} = 12{,}0\,\text{m/s}$.
 
 ## fy1-6-L2-02
-**Annettu:** hedelmä lähtee levosta, $t = 450\,\text{ms}$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** nopeus $v$ osuessa yksikössä $\text{km/h}$
-**Periaate:** Ilmanvastus jätetään huomiotta, joten hedelmä on vapaassa pudotuksessa ja nopeus on $v = g\,t$ SI-yksiköissä. Tulos muunnetaan lopuksi yksikköön $\text{km/h}$.
-**Kaava:** $v = g\,t$ ja muunnos $v_\text{km/h} = 3{,}6 \cdot v$
-**Muunnokset:** $450\,\text{ms} = 0{,}450\,\text{s}$, koska $1\,\text{ms} = 10^{-3}\,\text{s}$. Lisäksi $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
-**Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 0{,}450\,\text{s} = 4{,}4145\,\text{m/s}$ ja $v_\text{km/h} = 3{,}6 \cdot 4{,}4145 = 15{,}89\,\text{km/h}$
-**Vastaus:** $15{,}9\,\text{km/h}$, kolme merkitsevää numeroa kuten ajassa $450\,\text{ms}$.
-**Järkevyys:** Vajaassa puolessa sekunnissa nopeus on noin $0{,}45 \cdot 10\,\text{m/s} = 4{,}5\,\text{m/s}$, ja kertominen luvulla $3{,}6$ antaa noin $16\,\text{km/h}$, eli kävelyä nopeampi mutta pikajuoksua hitaampi vauhti.
+**Annettu:** kivi lähtee levosta, osumisnopeus $v = 54{,}0\,\text{km/h}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** putoamisaika $t$ yksikössä $\text{s}$
+**Periaate:** Ilmanvastus jätetään huomiotta, joten kivi on vapaassa pudotuksessa ja levosta lähtevän kappaleen nopeus on $v = g\,t$. Aika saadaan ratkaisemalla kaava ajalle, kun nopeus on muunnettu SI-yksiköihin.
+**Kaava:** $v = g\,t$, joten $t = \dfrac{v}{g}$
+**Muunnokset:** $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten $54{,}0\,\text{km/h} = \dfrac{54{,}0}{3{,}6}\,\text{m/s} = 15{,}0\,\text{m/s}$.
+**Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}529\,\text{s}$
+**Vastaus:** $1{,}53\,\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $54{,}0\,\text{km/h}$.
+**Järkevyys:** Nopeus $15\,\text{m/s}$ kasvaa noin $10\,\text{m/s}$ sekunnissa, joten siihen kuluu noin puolitoista sekuntia, mikä vastaa tulosta. Pudotuskorkeus olisi noin $11\,\text{m}$, kolmannen kerroksen ikkunan korkeus, joten tilanne on uskottava.
 
 ## fy1-6-L2-03
 **Annettu:** nopeus alussa $v_1 = 12{,}0\,\text{m/s}$, aikaväli $\Delta t = 1{,}50\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$, ei ilmanvastusta
@@ -110,11 +110,11 @@
 **Järkevyys:** Nopeus $30{,}0\,\text{m/s}$ on noin kaksi kertaa nopeus $14{,}8\,\text{m/s}$, joten aika on noin kaksi kertaa $4{,}0\,\text{s}$ eli noin $8\,\text{s}$. Tulos $8{,}1\,\text{s}$ vastaa arviota. Planeetan $g = 3{,}70\,\text{m/s}^2$ on Marsin kaltainen.
 
 ## fy1-6-L3-03
-**Annettu:** mitattu nopeus ilmassa $v_\text{mitattu} = 25{,}0\,\text{m/s}$ hetkellä $t = 3{,}0\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** mitattu nopeus ilmassa $v_\text{mitattu} = 25{,}0\,\text{m/s}$ hetkellä $t = 3{,}00\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** erotus $\Delta v = v_\text{vapaa} - v_\text{mitattu}$ yksikössä $\text{m/s}$
 **Periaate:** Ilmanvastuksettomassa vapaassa pudotuksessa levosta lähtevän kappaleen nopeus olisi $v_\text{vapaa} = g\,t$. Ilma hidastaa palloa, joten mitattu nopeus on pienempi, ja erotus kertoo ilmanvastuksen aiheuttaman vajeen.
 **Kaava:** $v_\text{vapaa} = g\,t$ ja $\Delta v = g\,t - v_\text{mitattu}$
 **Muunnokset:** Aika on sekunteina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
-**Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} - 25{,}0\,\text{m/s} = 29{,}43\,\text{m/s} - 25{,}0\,\text{m/s} = 4{,}43\,\text{m/s}$
-**Vastaus:** $4{,}4\,\text{m/s}$. Erotuksella on yhtä monta desimaalia kuin mitatulla arvolla $25{,}0\,\text{m/s}$, ja luku $29{,}43$ pyöristyy samalle tarkkuudelle.
+**Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 3{,}00\,\text{s} - 25{,}0\,\text{m/s} = 29{,}43\,\text{m/s} - 25{,}0\,\text{m/s} = 4{,}43\,\text{m/s}$
+**Vastaus:** $4{,}4\,\text{m/s}$. Aika $3{,}00\,\text{s}$ antaa nopeudelle $29{,}43\,\text{m/s}$ kolme merkitsevää numeroa, mutta erotuksella on yhtä monta desimaalia kuin heikoimmalla luvulla eli mitatulla arvolla $25{,}0\,\text{m/s}$.
 **Järkevyys:** Erotus on positiivinen, koska ilma hidastaa palloa, ja se on pieni osa nopeudesta: $\dfrac{4{,}4}{29{,}4} \approx 15\,\%$. Kolmen sekunnin pudotuksessa ilmanvastus on jo merkittävä mutta ei hallitseva, mikä sopii pallolle.

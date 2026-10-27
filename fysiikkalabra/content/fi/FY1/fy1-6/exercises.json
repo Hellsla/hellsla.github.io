@@ -53,9 +53,9 @@
     {
       "id": "fy1-6-L2-02",
       "level": 2,
-      "text": "Hedelmä putoaa levosta ja osuu maahan $450\\,\\text{ms}$:n kuluttua. Ilmanvastus jätetään huomiotta. Mikä on hedelmän nopeus maahan osuessa yksikössä $\\text{km/h}$?",
-      "answer": 15.8922,
-      "unit": "km/h",
+      "text": "Kivi päästetään putoamaan levosta, ja se osuu veteen nopeudella $54{,}0\\,\\text{km/h}$. Ilmanvastus jätetään huomiotta. Kuinka kauan kivi putosi?",
+      "answer": 1.529052,
+      "unit": "s",
       "tolerance": 0.02
     },
     {
@@ -95,7 +95,7 @@
     {
       "id": "fy1-6-L3-03",
       "level": 3,
-      "text": "Pallo pudotetaan ilmassa levosta, ja sen nopeudeksi mitataan $3{,}0\\,\\text{s}$:n kuluttua $25{,}0\\,\\text{m/s}$. Kuinka monta $\\text{m/s}$ pienempi nopeus on kuin nopeus, joka pallolla olisi vapaassa pudotuksessa ilman ilmanvastusta?",
+      "text": "Pallo pudotetaan ilmassa levosta, ja sen nopeudeksi mitataan $3{,}00\\,\\text{s}$:n kuluttua $25{,}0\\,\\text{m/s}$. Kuinka monta $\\text{m/s}$ pienempi nopeus on kuin nopeus, joka pallolla olisi vapaassa pudotuksessa ilman ilmanvastusta?",
       "answer": 4.43,
       "unit": "m/s",
       "tolerance": 0.02

@@ -137,6 +137,7 @@
         "mB": "massa m_B"
       },
       "units": {
+        "ilma": "(tyhjiö)",
         "t": "s",
         "mA": "kg",
         "mB": "kg"
@@ -201,6 +202,7 @@
         "mA": "massa m_A"
       },
       "units": {
+        "ilma": "(tyhjiö)",
         "mB": "kg",
         "t": "s",
         "mA": "kg"
@@ -265,6 +267,7 @@
         "mA": "massa m_A"
       },
       "units": {
+        "ilma": "(ilma)",
         "mB": "kg",
         "t": "s",
         "mA": "kg"
@@ -325,10 +328,6 @@
         ],
         "mistakes": [
           {
-            "value": 10,
-            "feedback": "Laskit nopeuden viimeisestä pisteestä viivan ruudukkoviivaan pyöristäen ($5\\,\\text{m/s}$ jaettuna $0{,}5\\,\\text{s}$:lla). Lue suoran todellinen arvo: se on hieman alle $5\\,\\text{m/s}$."
-          },
-          {
             "value": 0.1,
             "feedback": "Jaoit ajan nopeudella. Kulmakerroin on nousu jaettuna etenemisellä: $\\dfrac{\\Delta v}{\\Delta t}$."
           }
@@ -353,7 +352,7 @@
         "Sanon, että ilmassa nopeus jää pienemmäksi kuin $gt$ ja että ero on suurempi kevyellä pallolla.",
         "Sanon, että luvut ovat simulaation mallin arvoja, en mittauksia."
       ],
-      "model": "Simulaation mallin arvojen mukaan nopeus kasvaa tyhjiössä joka sekunti saman verran: hetkillä $1{,}0\\,\\text{s}$, $2{,}0\\,\\text{s}$ ja $3{,}0\\,\\text{s}$ nopeus oli noin $9{,}8\\,\\text{m/s}$, $19{,}6\\,\\text{m/s}$ ja $29{,}4\\,\\text{m/s}$. Nopeuden kasvu sekunnissa on siis vakio, $g = 9{,}81\\,\\text{m/s}^2$, ja nopeus on $v = gt$. Pallon massa ei vaikuttanut: kun pallon B massa vaihtui, sen nopeus oli joka rivillä sama kuin pallon A nopeus. Ilmassa nopeus jäi pienemmäksi kuin $gt$: hetkellä $4{,}0\\,\\text{s}$ kevyen pallon ($0{,}1\\,\\text{kg}$) nopeus oli vain noin $10{,}5\\,\\text{m/s}$, kun taas raskaan ($10\\,\\text{kg}$) noin $37{,}5\\,\\text{m/s}$ ja kaavan arvo $39{,}2\\,\\text{m/s}$. Ero tulee ilmasta, ei massasta sellaisenaan."
+      "model": "Simulaation mallin arvojen mukaan nopeus kasvaa tyhjiössä joka sekunti saman verran: hetkillä $1{,}0\\,\\text{s}$, $2{,}0\\,\\text{s}$ ja $3{,}0\\,\\text{s}$ nopeus oli noin $9{,}8\\,\\text{m/s}$, $19{,}6\\,\\text{m/s}$ ja $29{,}4\\,\\text{m/s}$. Nopeuden kasvu sekunnissa on siis vakio, $g = 9{,}81\\,\\text{m/s}^2$, ja nopeus on $v = gt$. Pallon massa ei vaikuttanut: kun pallon B massa vaihtui, sen nopeus oli joka rivillä sama kuin pallon A nopeus. Ilmassa nopeus jäi pienemmäksi kuin $gt$: hetkellä $4{,}0\\,\\text{s}$ kevyen pallon ($0{,}1\\,\\text{kg}$) nopeus oli vain noin $10{,}5\\,\\text{m/s}$, kun taas raskaan ($10\\,\\text{kg}$) noin $37{,}5\\,\\text{m/s}$ ja kaavan arvo $39{,}2\\,\\text{m/s}$. Ero tulee ilmasta, ei massasta sellaisenaan. Kokeiden 1 ja 2 luvut ovat simulaation mallin arvoja, ja ne toistavat kaavan $v = gt$ eivätkä todista sitä; ilman vaikutus näkyy vasta kokeessa 3."
     },
     {
       "id": "theory",
@@ -368,6 +367,7 @@
       "id": "reflect",
       "stage": "selita",
       "type": "reflect",
+      "optional": true,
       "title": "Palaa ennusteisiisi",
       "prompt": "Vertaa ennusteitasi taulukoihin ja kuvaajiin. Mitä sait selville nopeuden kasvusta ja massan vaikutuksesta? Palaa myös alun vasaraan ja höyheneen: miksi ne putosivat Kuussa yhtä nopeasti mutta Maassa eri tavalla?",
       "predictions": [
@@ -387,6 +387,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
+      "optional": true,
       "title": "Etsi virhe",
       "prompt": "Opiskelija laskee, mikä on tyhjiössä levosta pudotetun pallon nopeus $2{,}0\\,\\text{s}$:n kuluttua. Hän kirjoittaa: \"Putoamiskiihtyvyys on $9{,}81\\,\\text{m/s}^2$, joten pallon nopeus on $9{,}81\\,\\text{m/s}$.\" Missä on virhe?",
       "choices": [

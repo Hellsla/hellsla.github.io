@@ -8,7 +8,7 @@
     "a": "Kulmakerroin $\\dfrac{\\Delta v}{\\Delta t}$ on putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Suora kulkee origon kautta, koska kappale lähtee levosta: hetkellä $t = 0$ nopeus on $v = 0$."
   },
   {
-    "q": "Raskas ja kevyt kuula putoavat samasta korkeudesta ilmassa lähes yhtä nopeasti, mutta höyhen ja vasara eivät. Miksi?",
-    "a": "Putoamiskiihtyvyys ei riipu massasta. Ilma hidastaa kuitenkin kevyttä ja leveää kappaletta, höyhentä, selvästi enemmän kuin pientä ja tiheää kappaletta, kuulaa. Tyhjiössä höyhen ja vasara putoaisivat yhtä nopeasti."
+    "q": "Tyhjiössä höyhen ja vasara putoavat yhtä nopeasti, mutta ilmassa höyhen putoaa hitaammin. Miksi?",
+    "a": "Tyhjiössä putoamiskiihtyvyys on sama kaikille kappaleille. Ilmassa ilma hidastaa kevyttä ja leveää kappaletta, höyhentä, selvästi enemmän kuin pientä ja tiheää kappaletta, vasaraa. Siksi ilmassa höyhen putoaa hitaammin, mutta tyhjiössä höyhen ja vasara putoaisivat yhtä nopeasti."
   }
 ]
