@@ -25,7 +25,7 @@
   const roundInfo=()=>journeyIndex<0?null:{index:journeyIndex,total:journey.length,version:journey[journeyIndex].version,commit:journey[journeyIndex].event.id};
   const canvas = $('office');
   const dayLabel = day => i18n.dateLabel(day);
-  const time = m => `${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(Math.floor(m)%60).padStart(2,'0')}`;
+  const time = m => window.OfficeTime.replay(m);
   const roleNames = ids => ids.map(id=>id==='repository'?'Repository changes':roles.find(r=>r.id===id)?.name || id).join(' · ');
   const activeRoles = () => new Set(selected.filter(e=>e.minute<=minute && minute-e.minute<8).flatMap(e=>e.roles));
   const scene = window.AgentOfficeScene.create(canvas,{state:()=>lessonState,event:()=>snapshotEvent,active:activeRoles,phase:()=>phase,still:()=>$('motion').checked,presentation:()=>document.body.classList.contains('office-only'),round:roundInfo,wholeWebReview,speechEnabled:()=>$('bubbles').checked});
@@ -45,6 +45,15 @@
     journeyIndex=-2;phase=0;
     syncJourney();
   }
+  function updateClock(){
+    const stage=$('replay-mode').value==='walkthrough';
+    const label=t(stage?'Commit time · Helsinki':'Replay time · Helsinki');
+    const value=stage?window.OfficeTime.commit(snapshotEvent?.timestamp):time(minute);
+    const title=stage && snapshotEvent?`${snapshotEvent.day} · ${snapshotEvent.timestamp}`:t('Day timeline · Europe/Helsinki');
+    if($('clock-label').textContent!==label)$('clock-label').textContent=label;
+    if($('clock').textContent!==value)$('clock').textContent=value;
+    if($('clock').title!==title)$('clock').title=title;
+  }
   function syncJourney(){
     const index=$('replay-mode').value==='walkthrough' && journey.length?Math.min(Math.floor(phase/42),journey.length-1):-1;
     const frame=index<0?selectedFrame:journey[index];
@@ -52,6 +61,7 @@
     if(index===journeyIndex && lessonState===frame.state && snapshotEvent===frame.event)return;
     journeyIndex=index;lessonState=frame.state;snapshotEvent=frame.event;
     evidence(lessonState,snapshotEvent);
+    updateClock();
   }
   function evidence(state,event){
     $('lesson-title').textContent=state?`${state.id.toUpperCase()} · ${state.title}`:'No material snapshot at this point in the recorded history.';
@@ -109,7 +119,7 @@
   }
   function seek(value){minute=Math.max(0,Math.min(1439.999,Number(value)));update();draw();}
   function update(){
-    $('timeline').value=minute;$('clock').textContent=time(minute);
+    $('timeline').value=minute;updateClock();
     $('timeline').setAttribute('aria-valuetext',time(minute)+' Helsinki time');
     const active=activeRoles();
     for(const b of $('desks').children)b.classList.toggle('active',active.has(b.dataset.role));
@@ -133,7 +143,7 @@
     $('log-count').textContent=`${selected.length} commits`;$('empty').hidden=selected.length>0;
     selected.forEach(event=>{
       const li=document.createElement('li'),b=document.createElement('button'),t=document.createElement('time'),text=document.createElement('span'),meta=document.createElement('small');
-      b.type='button';t.textContent=time(event.minute);t.dateTime=event.timestamp;
+      b.type='button';t.textContent=window.OfficeTime.commit(event.timestamp);t.dateTime=event.timestamp;t.title=event.timestamp;
       const title=document.createElement('span');title.dataset.noI18n='';title.textContent=event.title;
       meta.textContent=`${event.id.slice(0,7)} · ${event.files} changed files · ${roleNames(event.roles)}`;
       text.append(title,meta);b.append(t,text);li.append(b);$('events').append(li);
@@ -182,6 +192,7 @@
   canvas.addEventListener('mousemove',e=>{canvas.style.cursor=hit(point(e))?'pointer':'default';});
   function draw(){
     syncJourney();
+    updateClock();
     const result=scene.draw();
     if(wholeWebReview())for(const [index,item] of [...$('web-review').querySelectorAll('li')].entries()){
       if(index===result.step)item.setAttribute('aria-current','step');else item.removeAttribute('aria-current');

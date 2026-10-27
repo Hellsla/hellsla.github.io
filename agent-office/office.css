@@ -22,3 +22,5 @@
 .website-review .source-note{display:none}
 
 .role-portrait-frame{margin:0 0 18px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 60%,#36534b 0,#23342f 45%,#1b252b 75%);border:1px solid #405a52;border-radius:12px;overflow:hidden}.role-portrait-frame[hidden]{display:none}.role-portrait-frame canvas{width:220px;max-width:100%;height:auto;image-rendering:pixelated}.role-portrait-frame figcaption{color:#bdcfc2;font:12px monospace;letter-spacing:.04em;padding:0 10px 16px}
+
+.office-clock{display:flex;flex-direction:column;align-items:flex-end;margin-left:auto;gap:2px;max-width:100%}.office-clock>span{font:9px monospace;color:var(--muted)}.office-clock #clock{font-size:20px;margin-left:0;min-width:96px}.timing-note{margin:0;padding:0 20px 10px;font-size:11px;color:var(--muted)}#events button{grid-template-columns:65px 1fr}.website-review .office-clock,.website-review .timing-note,.office-only .timing-note{display:none}

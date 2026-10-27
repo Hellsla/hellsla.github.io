@@ -228,6 +228,13 @@
     'Lauri walks to the publisher to discuss the material before the publication decision.':'Lauri käy julkaisijan luona keskustelemassa aineistosta ennen julkaisupäätöstä.',
     'Lauri discusses the proposal with the publisher. The publication decision comes after this visit.':'Lauri käy ehdotuksen läpi julkaisijan kanssa. Julkaisupäätös tulee tämän käynnin jälkeen.'
   });
+  Object.assign(fi, {
+    'Commit time · Helsinki':'Commitin aika · Helsinki','Replay time · Helsinki':'Aikajanan aika · Helsinki',
+    'Day timeline · Europe/Helsinki':'Päivän aikajana · Europe/Helsinki',
+    'Step through an illustrated handoff; the commit time stays fixed':'Siirry seuraavaan havainnollistettuun luovutukseen; commitin aika pysyy samana',
+    'Show the next recorded version and its commit time':'Näytä seuraava tallennettu versio ja sen commitin aika',
+    'Commit times mark saved changes, not individual handoffs. Handoffs within one recorded version share its timestamp.':'Commitin aika kertoo tallennushetken, ei yksittäisen luovutuksen aikaa. Saman tallennetun version luovutuksilla on yhteinen aikaleima.'
+  });
   const descriptions = {
     chatgpt:"Lauri pyytää välillä ulkopuolista arvioijaa arvioimaan koko verkkosivun rakennetta, selkeyttä, johdonmukaisuutta ja käytettävyyttä. Tämä näkökulma täydentää Clauden oppimateriaalityötä. Lauri valitsee ehdotukset ja antaa kehitystehtävän. Gitistä ei päätellä keskustelua tai valmistunutta arviota. Tämä ei korvaa tieteen tai pedagogiikan hyväksyntää.",
     developer:'Kirjoittaa ja korjaa oppimateriaalin tekstiä, tehtäviä, kuvia ja simulaatioita. Nykyinen kehittäjän työnkulku tarkistaa oppimateriaalin ennen riippumatonta arviointia.',

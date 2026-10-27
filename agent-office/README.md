@@ -65,3 +65,6 @@ The publisher proposes; Lauri decides. In the material journey, Lauri walks to t
 After changing any office JavaScript, stylesheet or exported history, run `python3 agent-office/version_assets.py` and include the updated `index.html` in the same commit. The page uses content hashes in asset URLs so cached scripts from an older character renderer are not combined with a newer controller. No build or server-side code is required at runtime.
 
 Run `node agent-office/test-assets.cjs` to verify the asset versions before pushing.
+
+
+Commit timestamps are shown with seconds in Europe/Helsinki. In Material journey mode the main clock follows the displayed stage's commit, rather than staying on the selected day timeline endpoint. A handoff within the same stage keeps that timestamp; Next recorded stage advances to another saved version. Day history mode labels its clock as replay time. Full dated timestamps with UTC offsets are available on hover and in snapshot evidence, including the repeated hour when daylight saving ends. Run `node agent-office/test-time.cjs` to check formatting and both Helsinki clock changes.

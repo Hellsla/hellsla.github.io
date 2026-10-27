@@ -7,14 +7,15 @@
   <meta name="description" content="A pixel office replay of Fysiikkalabra's recorded development history.">
   <title>The agent office · Fysiikkalabra</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="office.css?v=70e7761a5cd2">
+  <link rel="stylesheet" href="office.css?v=ad6096596f63">
   <script defer src="history.js?v=7142df749999"></script>
   <script defer src="history-lineage.js?v=3d7f4c5d11b3"></script>
   <script defer src="office-journey.js?v=d61c814205da"></script>
-  <script defer src="office-i18n.js?v=a6816717f63b"></script>
+  <script defer src="office-i18n.js?v=f15a71d11af1"></script>
   <script defer src="office-web-review.js?v=e111dc29ef4b"></script>
   <script defer src="office-scene.js?v=fe2ced955566"></script>
-  <script defer src="office.js?v=48b3fb2ae738"></script>
+  <script defer src="office-time.js?v=b262bc4f2520"></script>
+  <script defer src="office.js?v=eaf7f8db756e"></script>
 </head>
 <body>
 <main id="app">
@@ -29,7 +30,7 @@
   <div class="workspace">
     <section class="studio" aria-label="Office replay">
       <div class="scene-heading"><span><i class="status-dot"></i> THE AGENT OFFICE</span><span id="office-date"></span></div>
-      <div class="transport"><button id="play" class="primary" aria-label="Play replay">▶ <span>Play</span></button><button id="next-handoff" title="Step through the illustrated material journey">Next handoff</button><button id="next-stage">Next recorded stage</button><button id="next" title="Jump to next recorded commit">Next commit</button><label class="speed-label">Play <select id="replay-mode" aria-label="Playback mode"><option value="walkthrough">Material journey</option><option value="history">Day history</option><option value="website">Whole webpage review</option></select></label><label class="speed-label">Speed <select id="speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><label class="speed-label">Office zoom <select id="zoom" aria-label="Office zoom"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><label class="motion-label"><input id="bubbles" type="checkbox" checked> Speech bubbles</label><label class="motion-label"><input id="motion" type="checkbox"> Still scene</label><button id="fullscreen" class="icon-button" aria-label="Toggle full screen">⛶</button><output id="clock" aria-live="off">00:00</output></div>
+      <div class="transport"><button id="play" class="primary" aria-label="Play replay">▶ <span>Play</span></button><button id="next-handoff" title="Step through an illustrated handoff; the commit time stays fixed">Next handoff</button><button id="next-stage" title="Show the next recorded version and its commit time">Next recorded stage</button><button id="next" title="Jump to next recorded commit">Next commit</button><label class="speed-label">Play <select id="replay-mode" aria-label="Playback mode"><option value="walkthrough">Material journey</option><option value="history">Day history</option><option value="website">Whole webpage review</option></select></label><label class="speed-label">Speed <select id="speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><label class="speed-label">Office zoom <select id="zoom" aria-label="Office zoom"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><label class="motion-label"><input id="bubbles" type="checkbox" checked> Speech bubbles</label><label class="motion-label"><input id="motion" type="checkbox"> Still scene</label><button id="fullscreen" class="icon-button" aria-label="Toggle full screen">⛶</button><div class="office-clock"><span id="clock-label">Replay time · Helsinki</span><output id="clock" aria-live="off">00:00:00</output></div></div>
       <div class="scene-focus"><label>Follow a material <select id="lesson" aria-label="Choose a material to follow"><option value="auto">Follow recorded activity</option></select></label><span>BRIEF · DEVELOP · CHECK · REVIEW · DECIDE</span></div>
       <section id="web-review" class="web-review" aria-labelledby="web-review-title" hidden>
         <p class="eyebrow">OPTIONAL · WHOLE WEBPAGE</p><h2 id="web-review-title">Another perspective: external review</h2>
@@ -39,6 +40,7 @@
       </section>
       <div class="scene"><canvas id="office" width="1200" height="800" tabindex="0" aria-describedby="speech-caption" aria-label="An illustrated office with development, review, publication, external review and coffee rooms."></canvas><span class="scene-note">WORKFLOW MODEL · RECORDED REVIEW EVIDENCE</span></div>
       <div class="timeline-box"><label for="timeline">DAY TIMELINE <span>Scrub to explore</span></label><div class="track"><div id="ticks" aria-hidden="true"></div><input id="timeline" type="range" min="0" max="1439.999" step="0.01" value="0" aria-label="Replay time"></div><div class="hours"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div></div>
+      <p class="timing-note">Commit times mark saved changes, not individual handoffs. Handoffs within one recorded version share its timestamp.</p>
       <p id="speech-caption" class="visually-hidden"></p>
       <p id="scene-story" class="scene-story" aria-live="polite">Choose a material to follow its journey.</p>
       <div id="desks" class="desks" aria-label="Inspect an office role"></div>
