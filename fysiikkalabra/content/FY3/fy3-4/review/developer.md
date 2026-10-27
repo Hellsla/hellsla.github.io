@@ -1,11 +1,11 @@
 VERDICT: DONE
 
-Lesson-form retrofit (lint: 2 errors -> 0 errors, 0 warnings).
+Complete model solutions (teacher 2026-10-27).
 
-lesson.md
-- Ydinajatus: new inline SVG after the paragraph deriving rho*g*h: a water column of base area A and height h in a pool, its weight G pressing on the base, with LaTeX labels (foreignObject .fig-tex) G = rho*A*h*g and p = G/A = rho*g*h; viewBox 0 0 600 300, currentColor, 24 px text, aria-label says it is a schematic.
-- Esimerkki: same problem and numbers, now in 5 stages separated by `<!-- vaihe -->`: Tunnetut ja kysytty, Kaavat ratkaistuina (p = p0 + rho*g*h, F = rho*g*h*A; why only the overpressure loads the window), Sijoitus (117 720 Pa = 117,72 kPa; p ~ 219 kPa, symbolic first row), Voima ikkunaan (~1,8 kN), Jarkevyys (2,2 x air pressure, ~180 kg, diver not crushed).
+solutions.md: all 15 blocks now have Annettu, Kysytty, Periaate (principle and why it fits: static incompressible fluid, weight spread evenly, layers added separately, overpressure vs. air pressure), Kaava ending with the unknown solved, Muunnokset (each conversion or why none), unrounded Sijoitus, Vastaus with value, unit and significant-figure reason, and a real Järkevyys (estimate, back-substitution, limiting case, comparison). Numbers unchanged; all agree with answers.py. No numeric error found in the old solutions; L2-04 no longer calls the given 1 bar = 100 kPa a table value.
 
-No change to solutions.md (Kaava lines already symbolic), inquiry.json (section titles unchanged), sim.js, exercises, answers, exit ticket or tests.
+lesson.md ## Esimerkki: same problem and numbers, now exactly seven stages (Tunnetut ja kysytty, Periaate, Kaava ratkaistuna, Yksikkömuunnokset, Sijoitus, Tulos, Järkevyys); one display block per stage, first row symbolic. Rest untouched.
 
-check_lesson.py: all ok; test_inquiry.py: 28 passed; 390 px screenshot: new figure renders without clipped or overlapping labels.
+inquiry.json: added solutions to exp-1 question (slope 9,81 kPa/m from the table), and rewrote siirto (0,757 m) and check-2 (892 kg/m³, with Kuvaajan lukeminen) in the full step format. Nothing else changed.
+
+check_solutions: ok. check_lesson: all ok.

@@ -143,11 +143,15 @@ Sukeltaja on järvessä 12 m:n syvyydessä vedenalaisen tarkkailuhuoneen ikkunan
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Syvyys $h = 12\,\text{m}$, ilmanpaine $p_0 = 101\,\text{kPa}$, tiheys $\rho = 1000\,\text{kg/m}^3$ ja ikkunan ala $A = 150\,\text{cm}^2 = 0{,}015\,\text{m}^2$. Kysytään kokonaispaine $p$ ja ikkunaan kohdistuva voima $F$.
+**Tunnetut ja kysytty.** Syvyys $h = 12\,\text{m}$, ilmanpaine $p_0 = 101\,\text{kPa}$, taulukosta tai tehtävästä veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$ ja ikkunan ala $A = 150\,\text{cm}^2$. Kysytään kokonaispaine $p$ sukeltajan ympärillä ja ikkunaan kohdistuva voima $F$.
 
 <!-- vaihe -->
 
-**Kaavat ratkaistuina.** Kokonaispaine on ilmanpaineen ja hydrostaattisen paineen summa. Ikkunaan vaikuttaa vain ylipaine $\rho g h$, koska huoneen ilmanpaine työntää ikkunaa sisältä yhtä paljon kuin pinnan ilmanpaine ulkoa. Voima on paine kertaa ala:
+**Periaate.** Vesi on levossa ja sen tiheys on vakio, joten paine kasvaa syvyyden mukana tasaisesti: kokonaispaine on pinnan ilmanpaine ja veden hydrostaattinen paine $\rho g h$ yhteensä. Ikkunaan vaikuttaa vain ylipaine $\rho g h$, koska huoneen ilmanpaine työntää ikkunaa sisältä yhtä paljon kuin pinnan ilmanpaine ulkoa. Voima on paine kertaa ala, koska paine on voima pinta-alaa kohti.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Molemmat tuntemattomat ovat jo yksin vasemmalla puolella:
 ```latex
 \begin{aligned}
 p &= p_0 + \rho g h \\
@@ -157,34 +161,36 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Sijoitus.** Lasketaan ensin hydrostaattinen paine ja sitten kokonaispaine:
+**Yksikkömuunnokset.** Ilmanpaine pascaleina on $101\,\text{kPa} = 101\,000\,\text{Pa}$. Ikkunan ala neliömetreinä on $150\,\text{cm}^2 = 150 \cdot 10^{-4}\,\text{m}^2 = 0{,}015\,\text{m}^2$, koska $1\,\text{cm}^2 = 10^{-4}\,\text{m}^2$. Muut suureet ovat jo SI-yksiköissä.
+
+<!-- vaihe -->
+
+**Sijoitus.** Lasketaan hydrostaattinen paine, kokonaispaine ja voima peräkkäin:
 ```latex
 \begin{aligned}
 &\rho g h \\
-&= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 1000\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\quad \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
 &\quad \cdot 12\,\text{m} \\
+&= 117\,720\,\text{Pa} \\[6pt]
+&p = p_0 + \rho g h \\
+&= 101\,000\,\text{Pa} \\
+&\quad + 117\,720\,\text{Pa} \\
+&= 218\,720\,\text{Pa} \\[6pt]
+&F = \rho g h \cdot A \\
 &= 117\,720\,\text{Pa} \\
-&= 117{,}72\,\text{kPa} \\
-&p \\
-&= 101\,\text{kPa} + 117{,}72\,\text{kPa} \\
-&\approx 219\,\text{kPa}
+&\quad \cdot 0{,}015\,\text{m}^2 \\
+&= 1765{,}8\,\text{N}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Voima ikkunaan.** Ylipaine kerrotaan ikkunan alalla:
-```latex
-\begin{aligned}
-F &= \rho g h \cdot A \\
-&= 117{,}72\,\text{kPa} \cdot 0{,}015\,\text{m}^2 \\
-&\approx 1{,}8\,\text{kN}
-\end{aligned}
-```
+**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}8\,\text{kN}$. Paine annetaan kolmella merkitsevällä numerolla kuten ilmanpaine $101\,\text{kPa}$. Voima annetaan kahdella, koska syvyys $12\,\text{m}$ ja ala $150\,\text{cm}^2$ on annettu kahdella numerolla.
 
 <!-- vaihe -->
 
-**Järkevyys.** Kokonaispaine on noin 2,2 kertaa ilmanpaine, mikä sopii siihen, että 10 metriä vettä lisää noin yhden ilmanpaineen. Voima vastaa noin 180 kg:n massan painoa, vaikka ikkuna on pieni. Sukeltajan kehoa paine ei litistä, koska vedessä sama paine vaikuttaa kehoon joka puolelta ja kehon nesteet välittävät sen myös sisälle. Vain kehon ilmatilojen, kuten korvien, paine on tasattava.
+**Järkevyys.** Kokonaispaine on noin 2,2 kertaa ilmanpaine, mikä sopii siihen, että 10 metriä vettä lisää noin yhden ilmanpaineen ja 12 metriä hieman enemmän. Arvio: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. Voima vastaa noin 180 kg:n massan painoa, vaikka ikkuna on pieni. Sukeltajan kehoa paine ei litistä, koska vedessä sama paine vaikuttaa kehoon joka puolelta ja kehon nesteet välittävät sen myös sisälle. Vain kehon ilmatilojen, kuten korvien, paine on tasattava.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astiassa on. Kapeassa putkessa ja leveässä altaassa, joissa vesi ulottuu samaan korkeuteen, pohjan paine on sama, vaikka altaassa on tuhatkertainen määrä vettä. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta. Toinen virhe on sekoittaa paine ja voima: nastan terävä kärki ei tuota suurempaa voimaa kuin kanta, vaan jakaa saman voiman pienemmälle alalle, jolloin paine on suurempi. Kolmas virhe on unohtaa ilmanpaine: pelkkä $\rho g h$ antaa vain ylipaineen, ja kokonaispaine veden alla on aina sitä suurempi.

@@ -1,4 +1,7 @@
 VERDICT: DONE
-Recoloured the three SVGs in lesson.md; scope shows only relocated, section-name, style. No label moved (text already 24 px).
-Colours: ink #1f2933 outlines, text, arrows, axes, data; glass #eef5f9 vessels; cold #1971c2 cold-gas particles, 0 K and 0 C ticks, -270 C point; hot #c92a2a hot-gas particles and 100 C tick; muted #6b7480 extrapolation line and axis numbers.
-Not fixable here: check_lesson lint error at sim.js:38 (28-word paragraph in the sim), outside my scope.
+
+solutions.md: all 12 solutions now have the full step set (Annettu, Kysytty, Periaate, Kaava solved in symbols, Muunnokset, Sijoitus, Vastaus with the significant-figure reason, Järkevyys as a real check). L2-03 also has Kuvaajan lukeminen. The Järkevyys checks are recomputed: back-conversion, estimates, p/T constant, p proportional to T for the extrapolation (86,7 kPa vs 86,86 kPa). No numeric errors found in the old solutions.
+
+lesson.md ## Esimerkki: the problem text and the figure are kept. The solution is now the seven stages (Tunnetut ja kysytty with the figure, Periaate, Kaava ratkaistuna, Yksikkömuunnokset, Sijoitus, Tulos, Järkevyys). The old Kulmakerroin stage moved into Kaava ratkaistuna and Sijoitus, and the Järkevyys gained an independent T-proportional check. Nothing else in lesson.md was touched.
+
+inquiry.json: rewrote the solution of the numeric tasks siirto and check-2 in the full format. No other field was changed. Both tasks already had solutions, but in the old short form.

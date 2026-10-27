@@ -275,6 +275,10 @@ Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?
 
 <!-- vaihe -->
 
+**Periaate.** Paino on vuorovaikutuksen voimakkuuden mitta: se on suoraan verrannollinen massaan, ja kerroin on sen taivaankappaleen $g$, jonka pinnalla robotti on. Robotin massa on sama kummassakin paikassa, joten vain $g$ vaihtuu.
+
+<!-- vaihe -->
+
 **Kaava ratkaistuna.** Kysytty paino on jo yksin kaavan vasemmalla puolella, joten kaavaa ei tarvitse muokata. Sama massa kerrotaan kummankin paikan putoamiskiihtyvyydellä:
 ```latex
 \begin{aligned}
@@ -285,20 +289,16 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Sijoitus Maassa.** Arvot sijoitetaan yksiköineen, ja kg · m/s² on newton:
+**Yksikkömuunnokset.** Massa on jo kilogrammoina ja $g$ yksikössä m/s², joten muunnoksia ei tarvita: $1\,\text{kg} \cdot 1\,\text{m/s}^2 = 1\,\text{N}$, ja tulos tulee suoraan newtoneina.
+
+<!-- vaihe -->
+
+**Sijoitus.** Arvot sijoitetaan yksiköineen kumpaankin kaavaan:
 ```latex
 \begin{aligned}
 &G_\text{Maa} = m g_\text{Maa} \\
 &= 120\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
-&= 1177{,}2\,\text{N}
-\end{aligned}
-```
-
-<!-- vaihe -->
-
-**Sijoitus Marsissa.** Massa on sama, vain $g$ vaihtuu:
-```latex
-\begin{aligned}
+&= 1177{,}2\,\text{N} \\[6pt]
 &G_\text{Mars} = m g_\text{Mars} \\
 &= 120\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \\
 &= 445{,}2\,\text{N}
@@ -307,7 +307,7 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Tulos.** Kolmen merkitsevän numeron tarkkuudella robotin paino Maassa on $G_\text{Maa} \approx 1180\,\text{N}$ eli noin 1,18 kN ja Marsissa $G_\text{Mars} \approx 445\,\text{N}$.
+**Tulos.** Kolmen merkitsevän numeron tarkkuudella robotin paino Maassa on $G_\text{Maa} \approx 1180\,\text{N}$ eli noin 1,18 kN ja Marsissa $G_\text{Mars} \approx 445\,\text{N}$. Kolme numeroa, koska massa $120\,\text{kg}$ ja $g$-arvot on annettu kolmella numerolla.
 
 <!-- vaihe -->
 

@@ -324,7 +324,7 @@
           "feedback": "Tulos on watteja, ei kilowatteja: $48\\,\\text{N} \\cdot 5{,}0\\,\\text{m/s} = 240\\,\\text{W}$."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** Yhdessä sekunnissa lauta kulkee matkan $s = vt$, joten\n\n$$P = \\frac{W}{t} = \\frac{Fs}{t} = Fv$$\n\n**Sijoitus.** $P = 48\\,\\text{N} \\cdot 5{,}0\\,\\text{m/s} = 240\\,\\text{W}$.\n\n**Järkevyys.** Reilu pari sataa wattia on tavallinen potkulaudan ajoteho tasaisella.",
+      "solution": "**Annettu:** voima $F = 48\\,\\text{N}$ (liikkeen suuntainen), nopeus $v = 5{,}0\\,\\text{m/s}$, liike tasaista\n\n**Kysytty:** moottorin teho $P$ watteina\n\n**Periaate:** Teho on työ aikayksikköä kohti. Lauta kulkee tasaisella nopeudella ja moottorin voima on liikkeen suuntainen vakio, joten sekunnissa kuljettu matka on $v$ ja sekunnissa tehty työ on $F v$.\n\n**Kaava:** $P = \\dfrac{W}{t}$, $W = F s$ ja $s = v t$, joten\n\n$$P = \\frac{F v t}{t} = F v$$\n\n**Muunnokset:** Voima on newtoneina ja nopeus metreinä sekunnissa, joten tulo tulee suoraan watteina: $1\\,\\text{N}\\cdot\\tfrac{\\text{m}}{\\text{s}} = 1\\,\\text{W}$.\n\n**Sijoitus:** $P = 48\\,\\text{N} \\cdot 5{,}0\\,\\tfrac{\\text{m}}{\\text{s}} = 240\\,\\text{W}$\n\n**Vastaus:** $240\\,\\text{W}$, kaksi merkitsevää numeroa kuten nopeudessa $5{,}0\\,\\text{m/s}$.\n\n**Järkevyys:** Tarkistus ajan kautta: yhdessä sekunnissa lauta kulkee $5{,}0\\,\\text{m}$, työ on $48\\,\\text{N} \\cdot 5{,}0\\,\\text{m} = 240\\,\\text{J}$ ja teho $\\tfrac{240\\,\\text{J}}{1\\,\\text{s}} = 240\\,\\text{W}$. Reilu pari sataa wattia on tavallinen potkulaudan ajoteho tasaisella.",
       "optional": true
     },
     {
@@ -379,7 +379,8 @@
           "feedback": "Unohdit jälkimmäisen osan. Kolmion pinta-ala on $\\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} = 60\\,\\text{J}$."
         }
       ],
-      "optional": true
+      "optional": true,
+      "solution": "**Annettu:** voima $F = 30\\,\\text{N}$ (liikkeen suuntainen) vakiona matkalla $s_1 = 4{,}0\\,\\text{m}$ (0–4,0 m); sitten voima laskee tasaisesti nollaan matkalla $s_2 = 4{,}0\\,\\text{m}$ (4,0–8,0 m)\n\n**Kysytty:** koko $8{,}0\\,\\text{m}$:n matkalla tehty työ $W$ jouleina\n\n**Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala, ja sen voi laskea osissa: vakiovoiman osuus on suorakulmio ja tasaisesti nollaan laskevan osuus kolmio.\n\n**Kuvaajan lukeminen:** Kuvaajassa on vaakasuora jana korkeudella $30\\,\\text{N}$ välillä $0\\ldots 4{,}0\\,\\text{m}$ ja sen jatkona suora jana alas nollaan välillä $4{,}0\\ldots 8{,}0\\,\\text{m}$. Suorakulmion korkeus on $30\\,\\text{N}$ ja leveys $4{,}0\\,\\text{m}$. Kolmion korkeus on $30\\,\\text{N}$ ja kanta $4{,}0\\,\\text{m}$.\n\n**Kaava:** $W = A_\\text{suorakulmio} + A_\\text{kolmio}$, joten\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Muunnokset:** Voima on newtoneina ja matkat metreinä, joten muunnoksia ei tarvita: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Sijoitus:** $W = 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Vastaus:** $180\\,\\text{J}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa $30\\,\\text{N}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Keskimääräinen voima on $\\tfrac{180\\,\\text{J}}{8{,}0\\,\\text{m}} = 22{,}5\\,\\text{N}$, joka on huippuarvon $30\\,\\text{N}$ ja nollan välissä. Työ on pienempi kuin $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m} = 240\\,\\text{J}$ ja suurempi kuin pelkkä suorakulmio $120\\,\\text{J}$, koska voima ei ole nolla jälkimmäisellä matkalla."
     },
     {
       "id": "check-3",

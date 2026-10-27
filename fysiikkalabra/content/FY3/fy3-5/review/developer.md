@@ -1,13 +1,5 @@
 VERDICT: DONE
 
-Lesson-form retrofit (lint: 2 errors -> 0).
-
-lesson.md
-- Ydinajatus: new inline SVG after the paragraph on the two ways to change internal energy (viewBox 0 0 600 300, currentColor, 24 px, aria-label, marked schematic). Left: piston pushed into a cylinder, arrow with $W \gt 0$ (fig-tex foreignObject), faster particles, "ilma kuumenee". Right: hot and cold blocks in contact, arrow with $Q$ from hot to cold, "kuumasta kylmään".
-- Esimerkki: staged into 4 stages with `<!-- vaihe -->`: Tunnetut ja kysytty (W = +150 J, Q = −40 J), Kaava (ΔU = Q + W), Sijoitus (aligned display, symbolic first row, = 110 J), Tulos ja järkevyys (unchanged text). Numbers and physics unchanged.
-
-solutions.md, inquiry.json, other files: unchanged (no findings; section titles unchanged).
-
-Checks: check_lesson.py all ok; test_inquiry.py 12 passed; screenshot 390 px shows the new figure without clipping or overlap.
-
-Not changed (out of this pass's scope, not flagged by lint): the existing Kaava figure still writes "ΔU = Q + W" and "Q < 0 tai W < 0" as plain <text> at 22 px rather than fig-tex at 24 px.
+solutions.md: all 12 solutions now have Periaate (conservation of energy and why it applies here: sign of Q and W, W = Fs for a constant mean force, Q = 0 for the insulated bath, Delta U from state only for an ideal gas) and Muunnokset (each conversion, or one sentence why none is needed). Kaava ends with the unknown solved in symbols; Vastaus gives value and unit, then the reason for the figures; Järkevyys now has real checks (balance recomputed, 1 kg of water warms only 0,24 K per 1000 J, limiting cases). No numeric error found in the old solutions; every value agrees with answers.py.
+lesson.md: the Esimerkki is now the seven stages (Periaate, Kaava ratkaistuna and Yksikkömuunnokset added; the problem text and figures untouched).
+inquiry.json: solutions added to the numeric tasks siirto (rewritten in the full step order) and check-2 (was missing). Nothing else changed.
