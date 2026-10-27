@@ -95,7 +95,7 @@
     {
       "id": "fy3-10-L3-03",
       "level": 3,
-      "text": "Autokorjaamon kompressorin paineilmasäiliön tilavuus on 200 l. Illalla säiliön painemittari näyttää 10,0 bar, mutta aamulla vain 7,0 bar, koska liitoksesta vuotaa ilmaa. Mittari näyttää ylipainetta eli sitä, kuinka paljon säiliön paine on ilmanpainetta suurempi (1 bar = 100 kPa). Korjaamon lämpötila on koko ajan 18 °C. Kuinka monta kilogrammaa ilmaa säiliöstä vuoti yön aikana? Ilman moolimassa on 29 g/mol, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Perustele, miksi tässä laskussa mittarin lukemia voi käyttää ilman, että niihin lisätään ilmanpaine.",
+      "text": "Autokorjaamon kompressorin paineilmasäiliön tilavuus on 200,0 l. Illalla säiliön painemittari näyttää 10,0 bar, mutta aamulla vain 7,0 bar, koska liitoksesta vuotaa ilmaa. Mittari näyttää ylipainetta eli sitä, kuinka paljon säiliön paine on ilmanpainetta suurempi (1 bar = 100 kPa). Korjaamon lämpötila on koko ajan 18 °C. Kuinka monta kilogrammaa ilmaa säiliöstä vuoti yön aikana? Ilman moolimassa on 29 g/mol, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Perustele, miksi tässä laskussa mittarin lukemia voi käyttää ilman, että niihin lisätään ilmanpaine.",
       "answer": 0.72,
       "unit": "kg",
       "tolerance": 0.02

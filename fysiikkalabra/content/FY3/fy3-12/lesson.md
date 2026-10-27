@@ -204,11 +204,11 @@ missä $P$ on lämpöteho (W), $U$ rakennusosan U-arvo (W/(m²·K)), $A$ pinta-a
 
 
 ## Esimerkki
-Omakotitalon seinien pinta-ala on 120 m² ja U-arvo 0,17 W/(m²·K), ja ikkunoiden pinta-ala on 20 m² ja U-arvo 1,0 W/(m²·K). Sisällä on 21 °C ja ulkona −15 °C. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi, ja kuinka paljon energiaa se siirtää vuorokaudessa?
+Omakotitalon seinien pinta-ala on 120 m² ja U-arvo 0,17 W/(m²·K), ja ikkunoiden pinta-ala on 20,0 m² ja U-arvo 1,0 W/(m²·K). Sisällä on 21 °C ja ulkona −15 °C. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi, ja kuinka paljon energiaa se siirtää vuorokaudessa?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Seinät: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Ikkunat: $A_\text{i} = 20\,\text{m}^2$, $U_\text{i} = 1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Lämpötilat $T_\text{sisä} = 21\,{}^\circ\text{C}$ ja $T_\text{ulko} = -15\,{}^\circ\text{C}$. Kysytään lämpötehoa $P$ ja energiaa $E$ vuorokaudessa.
+**Tunnetut ja kysytty.** Seinät: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Ikkunat: $A_\text{i} = 20{,}0\,\text{m}^2$, $U_\text{i} = 1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Lämpötilat $T_\text{sisä} = 21\,{}^\circ\text{C}$ ja $T_\text{ulko} = -15\,{}^\circ\text{C}$. Kysytään lämpötehoa $P$ ja energiaa $E$ vuorokaudessa.
 
 <!-- vaihe -->
 
@@ -235,8 +235,8 @@ Omakotitalon seinien pinta-ala on 120 m² ja U-arvo 0,17 W/(m²·K), ja ikkunoid
 ```latex
 \begin{aligned}
 &P = (0{,}17 \cdot 120 \\
-&\quad + 1{,}0 \cdot 20)\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K} \\
-&= (20{,}4 + 20)\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K} \\
+&\quad + 1{,}0 \cdot 20{,}0)\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K} \\
+&= (20{,}4 + 20{,}0)\,\tfrac{\text{W}}{\text{K}} \cdot 36\,\text{K} \\
 &= 1454{,}4\,\text{W} \\
 &E = 1{,}4544\,\text{kW} \cdot 24\,\text{h} \\
 &= 34{,}9\,\text{kWh}
@@ -245,11 +245,11 @@ Omakotitalon seinien pinta-ala on 120 m² ja U-arvo 0,17 W/(m²·K), ja ikkunoid
 
 <!-- vaihe -->
 
-**Tulos.** Seinien ja ikkunoiden läpi johtuu teho $P \approx 1{,}5\,\text{kW}$, ja vuorokaudessa se siirtää energian $E \approx 35\,\text{kWh}$. Kaksi merkitsevää numeroa riittää, koska U-arvot on annettu kahdella numerolla.
+**Tulos.** Seinien ja ikkunoiden läpi johtuu teho $P \approx 1{,}5\,\text{kW}$, ja vuorokaudessa se siirtää energian $E \approx 35\,\text{kWh}$. Tulos annetaan kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat U-arvot $0{,}17$ ja $1{,}0$ sekä lämpötilaero $36\,\text{K}$ (kokonaisasteiden erotus), kaikki kaksi numeroa; pinta-alat $120\,\text{m}^2$ ja $20{,}0\,\text{m}^2$ ovat tarkempia.
 
 <!-- vaihe -->
 
-**Järkevyys.** Ikkunoiden ala on vain kuudesosa seinien alasta, mutta niiden läpi menee yhtä paljon lämpöä ($20\,\text{W/K}$ ja $20{,}4\,\text{W/K}$), koska niiden U-arvo on lähes kuusinkertainen. Pyöristetyillä luvuilla $40\,\text{W/K} \cdot 36\,\text{K} \approx 1{,}4\,\text{kW}$ ja $1{,}4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. Talon lämmitys korvaa tämän tehon, ja katto, lattia ja ilmanvaihto lisäävät tarvetta vielä.
+**Järkevyys.** Ikkunoiden ala on vain kuudesosa seinien alasta, mutta niiden läpi menee yhtä paljon lämpöä ($20{,}0\,\text{W/K}$ ja $20{,}4\,\text{W/K}$), koska niiden U-arvo on lähes kuusinkertainen. Pyöristetyillä luvuilla $40\,\text{W/K} \cdot 36\,\text{K} \approx 1{,}4\,\text{kW}$ ja $1{,}4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. Talon lämmitys korvaa tämän tehon, ja katto, lattia ja ilmanvaihto lisäävät tarvetta vielä.
 
 ## Yleinen virhekäsitys
 Moni sekoittaa kasvihuoneilmiön ja otsonikadon, vaikka ne ovat eri asioita: otsonikato päästää läpi enemmän ultraviolettisäteilyä, mutta ei juuri lämmitä maapalloa. Toinen virhe on ajatella, että kasvihuoneilmiö on kokonaan haitallinen. Luonnollinen kasvihuoneilmiö pitää Maan elinkelpoisena, ja ongelma on sen voimistuminen ihmisen päästöjen vuoksi. Kolmas virhe on luulla, että villapaita tuottaa lämpöä. Se vain hidastaa lämmön johtumista ja konvektiota kehosta, samoin kuin seinän eriste hidastaa lämmön karkaamista talosta.

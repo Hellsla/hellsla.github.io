@@ -213,7 +213,7 @@ P_{2,2} &= P_1 - (P_\text{s} + P_\text{k}) \\
 
 <!-- vaihe -->
 
-**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $38\,\%$ ja hukkalämpöä siirtyy mereen lauhduttimen kautta $310\,\text{MW}$. Yhteistuotannossa hyötysuhde on $88\,\%$ ja hukkalämpöä on vain $60\,\text{MW}$. Tulokset annetaan kahdella merkitsevällä numerolla kuten tehot $500\,\text{MW}$ ja $190\,\text{MW}$.
+**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $38\,\%$ ja hukkalämpöä siirtyy mereen lauhduttimen kautta $310\,\text{MW}$. Yhteistuotannossa hyötysuhde on $88\,\%$ ja hukkalämpöä on vain $60\,\text{MW}$. Tehot on annettu täysinä megawatteina, joten erotukset $310\,\text{MW}$ ja $60\,\text{MW}$ tunnetaan megawatin tarkkuudella. Hyötysuhteet annetaan täysinä prosentteina eli kahdella numerolla, mikä on vähemmän kuin tehojen $150\,\text{MW}$, $190\,\text{MW}$ ja $290\,\text{MW}$ tarkkuus sallisi.
 
 <!-- vaihe -->
 

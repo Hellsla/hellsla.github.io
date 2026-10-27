@@ -452,7 +452,7 @@ m &= nM \\
 &\approx 0{,}83\,\text{g}
 \end{aligned}
 ```
-Pallossa on 0,21 mol heliumia, ja sen massa on 0,83 g. Tulokset annetaan kahdella merkitsevällä numerolla, koska tilavuus 5,0 l ja moolimassa 4,0 g/mol on annettu kahdella.
+Pallossa on 0,21 mol heliumia, ja sen massa on 0,83 g. Ainemäärän rajoittaa tilavuus 5,0 l ja massan lisäksi moolimassa 4,0 g/mol, kumpikin kaksi numeroa, joten tulokset annetaan kahdella merkitsevällä numerolla. Paine 101 kPa ja lämpötila 293 K ovat kolmen numeron arvoja eivätkä rajoita.
 
 <!-- vaihe -->
 

@@ -5,7 +5,7 @@
 **Kaava:** $P = UA\Delta T$, missä $\Delta T = T_\text{sisä} - T_\text{ulko}$; teho on valmiiksi ratkaistu: $P = UA(T_\text{sisä} - T_\text{ulko})$
 **Muunnokset:** Lämpötilaero on sama celsiusasteina ja kelvineinä, joten $\Delta T = 22\,{}^\circ\text{C} - (-18\,{}^\circ\text{C}) = 40\,\text{K}$. Muita muunnoksia ei tarvita, koska $U$ on jo yksikössä $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
 **Sijoitus:** $P = 0{,}24\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 45\,\text{m}^2 \cdot 40\,\text{K} = 432\,\text{W}$
-**Vastaus:** $430\,\text{W}$, kaksi merkitsevää numeroa kuten U-arvossa $0{,}24$.
+**Vastaus:** $430\,\text{W}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat U-arvo $0{,}24$, ala $45\,\text{m}^2$ ja kokonaisasteiden erotus $\Delta T = 40\,\text{K}$, kaikki kaksi numeroa, joten laskimen tulos $432\,\text{W}$ pyöristetään.
 **Järkevyys:** Pyöristetyillä luvuilla $0{,}25 \cdot 45 \cdot 40 \approx 450\,\text{W}$, joten $432\,\text{W}$ on oikea suuruusluokka. Yksiköt: $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot \text{m}^2 \cdot \text{K} = \text{W}$. Jos sisällä ja ulkona olisi sama lämpötila, $\Delta T = 0$ ja $P = 0$, kuten pitääkin. Teho vastaa pientä sähköpatteria, ja seinät, ikkunat ja lattia lisäävät mökin lämmöntarvetta vielä.
 
 ## fy3-12-L1-02
@@ -15,7 +15,7 @@
 **Kaava:** $P = UA\Delta T$, joten $U = \dfrac{P}{A\Delta T}$
 **Muunnokset:** Lämpötilaero on sama kelvineinä ja celsiusasteina: $\Delta T = 21\,{}^\circ\text{C} - (-19\,{}^\circ\text{C}) = 40\,\text{K}$. Muita muunnoksia ei tarvita, koska teho on watteina ja ala neliömetreinä.
 **Sijoitus:** $U = \dfrac{96\,\text{W}}{2{,}0\,\text{m}^2 \cdot 40\,\text{K}} = \dfrac{96\,\text{W}}{80\,\text{m}^2\cdot\text{K}} = 1{,}2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
-**Vastaus:** $1{,}2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, kaksi merkitsevää numeroa kuten pinta-alassa $2{,}0\,\text{m}^2$.
+**Vastaus:** $1{,}2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $96\,\text{W}$, ala $2{,}0\,\text{m}^2$ ja kokonaisasteiden erotus $\Delta T = 40\,\text{K}$, kaikki kaksi numeroa.
 **Järkevyys:** Tarkistus kaavalla: $1{,}2 \cdot 2{,}0 \cdot 40 = 96\,\text{W}$, kuten mitattu. Uuden ulko-oven U-arvo on noin $1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ ja nykyaikaisen seinän $0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, joten vanhan oven arvo on uuden oven luokkaa ja selvästi seinää huonompi, kuten odottaa sopii.
 
 ## fy3-12-L1-03
@@ -25,7 +25,7 @@
 **Kaava:** $P = UA\Delta T$, joten $\Delta T = \dfrac{P}{UA}$
 **Muunnokset:** Muunnoksia ei tarvita: teho on watteina, ala neliömetreinä ja $U$ yksikössä $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, joten tulos tulee suoraan kelvineinä. Lämpötilaero kelvineinä on sama kuin celsiusasteina.
 **Sijoitus:** $\Delta T = \dfrac{210\,\text{W}}{0{,}25\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 28\,\text{m}^2} = \dfrac{210\,\text{W}}{7{,}0\,\tfrac{\text{W}}{\text{K}}} = 30\,\text{K}$
-**Vastaus:** $30\,\text{K}$, kaksi merkitsevää numeroa kuten tehossa $210\,\text{W}$ ja U-arvossa $0{,}25$.
+**Vastaus:** $30\,\text{K}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $210\,\text{W}$, U-arvo $0{,}25$ ja ala $28\,\text{m}^2$, kaikki vähintään kaksi numeroa, joten tulos $30\,\text{K}$ on kahden numeron arvo.
 **Järkevyys:** Esimerkiksi sisällä $21\,{}^\circ\text{C}$ ja ulkona $-9\,{}^\circ\text{C}$ antaa eron $30\,\text{K}$, mikä on tavallinen talviyö. Takaisinlasku: $0{,}25 \cdot 28 \cdot 30 = 210\,\text{W}$. Yksiköt: $\text{W} / (\text{W/K}) = \text{K}$.
 
 ## fy3-12-L1-04
@@ -35,27 +35,27 @@
 **Kaava:** $E = Pt$
 **Muunnokset:** Muunnoksia ei tarvita, koska kilowatti kerrottuna tunnilla on suoraan kilowattitunti: $1\,\text{kW} \cdot 1\,\text{h} = 1\,\text{kWh}$. Jouleina vertailua varten $1\,\text{kWh} = 3{,}6\,\text{MJ}$.
 **Sijoitus:** $E = 3{,}5\,\text{kW} \cdot 14\,\text{h} = 49\,\text{kWh}$
-**Vastaus:** $49\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $3{,}5\,\text{kW}$.
+**Vastaus:** $49\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $3{,}5\,\text{kW}$ ja aika $14\,\text{h}$, kumpikin kaksi numeroa.
 **Järkevyys:** Pyöristetyillä luvuilla $3{,}5 \cdot 14 \approx 4 \cdot 12 = 48$, joten tulos on oikea. Jouleina energia on $49 \cdot 3{,}6\,\text{MJ} \approx 176\,\text{MJ}$. Koko pakkasvuorokauden kulutus olisi $3{,}5\,\text{kW} \cdot 24\,\text{h} = 84\,\text{kWh}$, mikä sopii sähkölämmitteiselle omakotitalolle.
 
 ## fy3-12-L1-05
-**Annettu:** $P_\text{tulo} = 340\,\tfrac{\text{W}}{\text{m}^2}$, heijastuva osuus $r = 30\,\% = 0{,}30$
+**Annettu:** $P_\text{tulo} = 340{,}0\,\tfrac{\text{W}}{\text{m}^2}$, heijastuva osuus $r = 30{,}0\,\% = 0{,}300$
 **Kysytty:** avaruuteen säteilty teho neliömetriä kohti $P_\text{säteily}$
 **Periaate:** Maapallon keskilämpötila pysyy vakiona, joten energia ei kerry eikä vähene: imeytyvä teho on yhtä suuri kuin avaruuteen lähtevä. Heijastunut osa ei lämmitä maapalloa, vaan vain loppu imeytyy.
 **Kaava:** Imeytyvä teho on $P_\text{im} = (1 - r)P_\text{tulo}$, ja tasapainossa $P_\text{säteily} = P_\text{im}$, joten $P_\text{säteily} = (1 - r)P_\text{tulo}$
-**Muunnokset:** Prosentti muutetaan desimaaliluvuksi: $30\,\% = 0{,}30$. Tehon yksikkö $\tfrac{\text{W}}{\text{m}^2}$ pysyy samana.
-**Sijoitus:** $P_\text{säteily} = (1 - 0{,}30) \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 0{,}70 \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 238\,\tfrac{\text{W}}{\text{m}^2}$
-**Vastaus:** $240\,\tfrac{\text{W}}{\text{m}^2}$, kaksi merkitsevää numeroa kuten heijastuvassa osuudessa $30\,\%$.
-**Järkevyys:** Tase kuntoon: heijastuu $0{,}30 \cdot 340 = 102\,\tfrac{\text{W}}{\text{m}^2}$ ja $102 + 238 = 340\,\tfrac{\text{W}}{\text{m}^2}$, joten kaikki tuleva teho on mukana. Rajatapaukset: jos $r = 0$, koko $340\,\tfrac{\text{W}}{\text{m}^2}$ imeytyisi, ja jos $r = 1$, ei mitään. Tulos on siis pienempi kuin tuleva teho, kuten kuuluu.
+**Muunnokset:** Prosentti muutetaan desimaaliluvuksi: $30{,}0\,\% = 0{,}300$. Tehon yksikkö $\tfrac{\text{W}}{\text{m}^2}$ pysyy samana.
+**Sijoitus:** $P_\text{säteily} = (1 - 0{,}300) \cdot 340{,}0\,\tfrac{\text{W}}{\text{m}^2} = 0{,}700 \cdot 340{,}0\,\tfrac{\text{W}}{\text{m}^2} = 238\,\tfrac{\text{W}}{\text{m}^2}$
+**Vastaus:** $238\,\tfrac{\text{W}}{\text{m}^2}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat tuleva teho $340{,}0\,\tfrac{\text{W}}{\text{m}^2}$ ja osuus $1 - 0{,}300 = 0{,}700$ (kolme numeroa, koska $1$ on tarkka luku).
+**Järkevyys:** Tase kuntoon: heijastuu $0{,}300 \cdot 340{,}0 = 102\,\tfrac{\text{W}}{\text{m}^2}$ ja $102 + 238 = 340\,\tfrac{\text{W}}{\text{m}^2}$, joten kaikki tuleva teho on mukana. Rajatapaukset: jos $r = 0$, koko $340\,\tfrac{\text{W}}{\text{m}^2}$ imeytyisi, ja jos $r = 1$, ei mitään. Tulos on siis pienempi kuin tuleva teho, kuten kuuluu.
 
 ## fy3-12-L2-01
-**Annettu:** seinät $A_\text{s} = 70\,\text{m}^2$, $U_\text{s} = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; yläpohja $A_\text{y} = 50\,\text{m}^2$, $U_\text{y} = 0{,}30\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; patterien teho $P = 2{,}0\,\text{kW}$; $T_\text{sisä} = 20\,{}^\circ\text{C}$
+**Annettu:** seinät $A_\text{s} = 70\,\text{m}^2$, $U_\text{s} = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; yläpohja $A_\text{y} = 50{,}0\,\text{m}^2$, $U_\text{y} = 0{,}30\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; patterien teho $P = 2{,}0\,\text{kW}$; $T_\text{sisä} = 20\,{}^\circ\text{C}$
 **Kysytty:** alin ulkolämpötila $T_\text{ulko}$, jossa patterit riittävät
 **Periaate:** Seinät ja yläpohja johtavat lämpöä rinnakkain, joten niiden tehot lasketaan yhteen. Sisälämpötila pysyy vakiona, kun patterien teho on yhtä suuri kuin johtuva teho. Alin ulkolämpötila vastaa tilannetta, jossa patterit toimivat täydellä teholla.
 **Kaava:** $P = (U_\text{s} A_\text{s} + U_\text{y} A_\text{y})(T_\text{sisä} - T_\text{ulko})$, joten $T_\text{ulko} = T_\text{sisä} - \dfrac{P}{U_\text{s} A_\text{s} + U_\text{y} A_\text{y}}$
 **Muunnokset:** Teho muutetaan watteiksi: $2{,}0\,\text{kW} = 2000\,\text{W}$. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten ulkolämpötila voidaan laskea suoraan celsiusasteina.
-**Sijoitus:** $U_\text{s} A_\text{s} + U_\text{y} A_\text{y} = 0{,}50 \cdot 70\,\tfrac{\text{W}}{\text{K}} + 0{,}30 \cdot 50\,\tfrac{\text{W}}{\text{K}} = 50\,\tfrac{\text{W}}{\text{K}}$. $T_\text{ulko} = 20\,{}^\circ\text{C} - \dfrac{2000\,\text{W}}{50\,\tfrac{\text{W}}{\text{K}}} = 20\,{}^\circ\text{C} - 40\,\text{K} = -20\,{}^\circ\text{C}$
-**Vastaus:** $-20\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{kW}$.
+**Sijoitus:** $U_\text{s} A_\text{s} + U_\text{y} A_\text{y} = 0{,}50 \cdot 70\,\tfrac{\text{W}}{\text{K}} + 0{,}30 \cdot 50{,}0\,\tfrac{\text{W}}{\text{K}} = 50\,\tfrac{\text{W}}{\text{K}}$. $T_\text{ulko} = 20\,{}^\circ\text{C} - \dfrac{2000\,\text{W}}{50\,\tfrac{\text{W}}{\text{K}}} = 20\,{}^\circ\text{C} - 40\,\text{K} = -20\,{}^\circ\text{C}$
+**Vastaus:** $-20\,{}^\circ\text{C}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $2{,}0\,\text{kW}$ ja johtumiskerroin $50\,\tfrac{\text{W}}{\text{K}}$ (summa $35 + 15{,}0$ säilyttää kaksi numeroa, koska seinän $0{,}50 \cdot 70$ on kahden numeron arvo), joten $\Delta T = 40\,\text{K}$ ja $T = 20\,{}^\circ\text{C} - 40\,\text{K} = -20\,{}^\circ\text{C}$ kokonaisasteina.
 **Järkevyys:** Takaisinlasku: $50\,\tfrac{\text{W}}{\text{K}} \cdot 40\,\text{K} = 2000\,\text{W}$, kuten patterien teho. Tulos on alle sisälämpötilan, kuten pitää. Kylmemmällä säällä häviö ylittää $2{,}0\,\text{kW}$, ja mökki jäähtyy, kunnes tasapaino asettuu alempaan sisälämpötilaan.
 
 ## fy3-12-L2-02
@@ -65,7 +65,7 @@
 **Kaava:** $P = UA\Delta T$, $E = Pt$ ja $H = hE$, joten $H = hUA\Delta T\,t$
 **Muunnokset:** Hinta on kilowattituntia kohti, joten teho muutetaan kilowateiksi ja aika tunneiksi: $t = 230 \cdot 24\,\text{h} = 5520\,\text{h}$ ja $P$ watteina jaetaan tuhannella.
 **Sijoitus:** $P = 0{,}090\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 130\,\text{m}^2 \cdot 21\,\text{K} = 245{,}7\,\text{W} = 0{,}2457\,\text{kW}$. $E = 0{,}2457\,\text{kW} \cdot 5520\,\text{h} = 1356{,}264\,\text{kWh}$. $H = 0{,}11\,\tfrac{\text{€}}{\text{kWh}} \cdot 1356{,}264\,\text{kWh} \approx 149{,}2\,\text{€}$
-**Vastaus:** $150\,\text{€}$, kaksi merkitsevää numeroa kuten U-arvossa $0{,}090$ ja hinnassa $0{,}11$.
+**Vastaus:** $150\,\text{€}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat U-arvo $0{,}090$, hinta $0{,}11\,\tfrac{\text{€}}{\text{kWh}}$ ja lämpötilaero $21\,\text{K}$, kaikki kaksi numeroa, joten laskimen tulos $149{,}2\,\text{€}$ pyöristetään.
 **Järkevyys:** Pyöristetyillä luvuilla $0{,}25\,\text{kW} \cdot 5500\,\text{h} \approx 1400\,\text{kWh}$ ja $1400 \cdot 0{,}11 \approx 150\,\text{€}$. Hyvin eristetty yläpohja vie suuresta alastaan huolimatta vain noin $250\,\text{W}$. Koko talon kaukolämpö maksaa tyypillisesti yli tuhat euroa vuodessa, joten yksi rakenneosa on vain pieni osa laskusta.
 
 ## fy3-12-L2-03
@@ -75,27 +75,27 @@
 **Kaava:** $\Delta P = U_\text{v} A\Delta T - U_\text{u} A\Delta T$, joten $E = \Delta P\,t = (U_\text{v} - U_\text{u})A\Delta T\,t$
 **Muunnokset:** Lämpötilaero on sama kelvineinä: $\Delta T = 21\,{}^\circ\text{C} - (-24\,{}^\circ\text{C}) = 45\,\text{K}$. Aika on $t = 7 \cdot 24\,\text{h} = 168\,\text{h}$, ja teho muutetaan kilowateiksi.
 **Sijoitus:** $\Delta P = (2{,}8 - 0{,}80)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 14\,\text{m}^2 \cdot 45\,\text{K} = 1260\,\text{W} = 1{,}26\,\text{kW}$. $E = 1{,}26\,\text{kW} \cdot 168\,\text{h} = 211{,}68\,\text{kWh}$
-**Vastaus:** $210\,\text{kWh}$, kaksi merkitsevää numeroa kuten U-arvoissa $2{,}8$ ja $0{,}80$.
+**Vastaus:** $210\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat U-arvojen erotus $2{,}8 - 0{,}80 = 2{,}0$ (erotuksella on epätarkemman luvun $2{,}8$ desimaalit, joten kaksi numeroa), ala $14\,\text{m}^2$ ja lämpötilaero $45\,\text{K}$, kaikki kaksi numeroa; aika $7\,\text{vrk} = 168\,\text{h}$ on tarkka.
 **Järkevyys:** Tase kuntoon: vanhoista ikkunoista karkasi $2{,}8 \cdot 14 \cdot 45\,\text{W} = 1{,}76\,\text{kW}$ ja uusista $0{,}80 \cdot 14 \cdot 45\,\text{W} = 0{,}50\,\text{kW}$, erotus $1{,}26\,\text{kW}$. Viikossa vanhat veisivät $296\,\text{kWh}$ ja uudet $85\,\text{kWh}$. Säästö on suurin pakkasella, kun $\Delta T$ on suuri.
 
 ## fy3-12-L2-04
-**Annettu:** $P_\text{tulo} = 340\,\tfrac{\text{W}}{\text{m}^2}$, $r_1 = 30\,\% = 0{,}30$, $r_2 = 29\,\% = 0{,}29$
+**Annettu:** $P_\text{tulo} = 340\,\tfrac{\text{W}}{\text{m}^2}$, $r_1 = 30{,}0\,\% = 0{,}300$, $r_2 = 29{,}0\,\% = 0{,}290$
 **Kysytty:** imeytyvän tehon kasvu neliömetriä kohti $\Delta P_\text{im}$ ja sen vertailu epätasapainoon $1{,}0\,\tfrac{\text{W}}{\text{m}^2}$
 **Periaate:** Tuleva teho jakautuu heijastuvaan ja imeytyvään osaan, ja vain imeytyvä osa lämmittää maapalloa. Kun heijastuva osuus pienenee ja Auringon teho pysyy samana, imeytyvä teho kasvaa.
 **Kaava:** $P_\text{im} = (1 - r)P_\text{tulo}$, joten $\Delta P_\text{im} = (1 - r_2)P_\text{tulo} - (1 - r_1)P_\text{tulo} = (r_1 - r_2)P_\text{tulo}$
-**Muunnokset:** Prosentit muutetaan desimaaliluvuiksi: $30\,\% = 0{,}30$ ja $29\,\% = 0{,}29$. Teho pysyy yksikössä $\tfrac{\text{W}}{\text{m}^2}$.
-**Sijoitus:** $\Delta P_\text{im} = (0{,}30 - 0{,}29) \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 0{,}01 \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 3{,}4\,\tfrac{\text{W}}{\text{m}^2}$
-**Vastaus:** $3{,}4\,\tfrac{\text{W}}{\text{m}^2}$, kaksi merkitsevää numeroa kuten tuloteholla ja prosenteilla. Se on $\dfrac{3{,}4}{1{,}0} = 3{,}4$-kertainen nykyiseen epätasapainoon verrattuna.
+**Muunnokset:** Prosentit muutetaan desimaaliluvuiksi: $30{,}0\,\% = 0{,}300$ ja $29{,}0\,\% = 0{,}290$. Teho pysyy yksikössä $\tfrac{\text{W}}{\text{m}^2}$.
+**Sijoitus:** $\Delta P_\text{im} = (0{,}300 - 0{,}290) \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 0{,}010 \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 3{,}4\,\tfrac{\text{W}}{\text{m}^2}$
+**Vastaus:** $3{,}4\,\tfrac{\text{W}}{\text{m}^2}$, kaksi merkitsevää numeroa. Rajoittavia tietoja on kaksi: erotus $0{,}300 - 0{,}290 = 0{,}010$ (kaksi numeroa, koska prosentit on annettu kymmenesosaprosentin tarkkuudella) ja tuleva teho $340\,\tfrac{\text{W}}{\text{m}^2}$ (vähintään kaksi numeroa). Jos prosentit olisi annettu vain kokonaislukuina, erotus $30 - 29 = 1$ olisi yhden numeron arvo. Tulos on $\dfrac{3{,}4}{1{,}0} = 3{,}4$-kertainen nykyiseen epätasapainoon verrattuna.
 **Järkevyys:** Erillinen lasku: imeytyvä teho kasvaa $238\,\tfrac{\text{W}}{\text{m}^2}$:stä $241{,}4\,\tfrac{\text{W}}{\text{m}^2}$:iin, ero $3{,}4\,\tfrac{\text{W}}{\text{m}^2}$. Kasvu on positiivinen, koska heijastuminen vähenee. Yhden prosenttiyksikön muutos on pieni, mutta suuri verrattuna epätasapainoon, ja lämpeneminen sulattaa jäätä, mikä lisää imeytymistä edelleen.
 
 ## fy3-12-L3-01
-**Annettu:** $m = 0{,}60\,\text{kg}$, $P = 1{,}4\,\text{W}$, $t = 10\,\text{h}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ (kahvi kuten vesi)
+**Annettu:** $m = 0{,}60\,\text{kg}$, $P = 1{,}4\,\text{W}$, $t = 10{,}0\,\text{h}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ (kahvi kuten vesi)
 **Kysytty:** kahvin jäähtyminen $\Delta T$ kelvineinä sekä selitys, mitä siirtymistapoja tyhjiö ja kiiltävät pinnat estävät ja minkä kautta lämpö silti karkaa
 **Periaate:** Kahvi luovuttaa lämpöä vain sen verran kuin pullosta karkaa, joten energia säilyy: kahvin sisäenergian pieneneminen on yhtä suuri kuin karkaava energia $Pt$. Kahvi vain jäähtyy eikä sen olomuoto muutu, joten käytetään $Q = cm\Delta T$.
 **Kaava:** $cm\Delta T = Pt$, joten $\Delta T = \dfrac{Pt}{cm}$
-**Muunnokset:** Aika muutetaan sekunneiksi, koska teho on watteina eli joulea sekunnissa: $t = 10 \cdot 3600\,\text{s} = 36\,000\,\text{s}$. Massa on jo kilogrammoina.
+**Muunnokset:** Aika muutetaan sekunneiksi, koska teho on watteina eli joulea sekunnissa: $t = 10{,}0 \cdot 3600\,\text{s} = 36\,000\,\text{s}$. Massa on jo kilogrammoina.
 **Sijoitus:** $\Delta T = \dfrac{1{,}4\,\text{W} \cdot 36\,000\,\text{s}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg}} = \dfrac{50\,400\,\text{J}}{2514\,\tfrac{\text{J}}{\text{K}}} \approx 20{,}05\,\text{K}$
-**Vastaus:** $20\,\text{K}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ ja tehossa $1{,}4\,\text{W}$. Tyhjiössä ei ole hiukkasia, joten lämpö ei johdu eikä kulkeudu konvektiolla seinästä toiseen. Kiiltävät pinnat heijastavat lämpösäteilyn takaisin. Lämpöä karkaa pääosin johtumalla pullon kaulan ja korkin kautta.
+**Vastaus:** $20\,\text{K}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat massa $0{,}60\,\text{kg}$ ja teho $1{,}4\,\text{W}$ (kumpikin kaksi numeroa); aika $10{,}0\,\text{h}$ ja ominaislämpökapasiteetti $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ovat kolmen numeron arvoja. Tyhjiössä ei ole hiukkasia, joten lämpö ei johdu eikä kulkeudu konvektiolla seinästä toiseen. Kiiltävät pinnat heijastavat lämpösäteilyn takaisin. Lämpöä karkaa pääosin johtumalla pullon kaulan ja korkin kautta.
 **Järkevyys:** Aamulla $90\,{}^\circ\text{C}$:n kahvi on illalla vielä noin $70\,{}^\circ\text{C}$:n lämpöistä, kuten hyvässä termospullossa. Tase: kahvin luovuttama $4190 \cdot 0{,}60 \cdot 20{,}05\,\text{J} \approx 50\,400\,\text{J}$ on yhtä suuri kuin karannut $1{,}4 \cdot 36\,000\,\text{J}$. Yksiköt: $\text{W} \cdot \text{s} = \text{J}$ ja $\tfrac{\text{J}}{\text{J}/\text{K}} = \text{K}$.
 
 ## fy3-12-L3-02
@@ -105,7 +105,7 @@
 **Kaava:** $E_\text{v} = IAt_\text{v}$ ja $cm\Delta T = 10fE_\text{v}$, joten $\Delta T = \dfrac{10fIAt_\text{v}}{cm}$
 **Muunnokset:** Vuosi sekunneiksi: $t_\text{v} = 365 \cdot 24 \cdot 3600\,\text{s} = 3{,}1536 \cdot 10^{7}\,\text{s}$. Kymmenen vuotta on kerroin $10$ kaavassa, ja prosentti on $90\,\% = 0{,}90$.
 **Sijoitus:** $E_\text{v} = 1{,}0\,\tfrac{\text{W}}{\text{m}^2} \cdot 5{,}1 \cdot 10^{14}\,\text{m}^2 \cdot 3{,}1536 \cdot 10^{7}\,\text{s} \approx 1{,}608 \cdot 10^{22}\,\text{J}$. $\Delta T = \dfrac{10 \cdot 0{,}90 \cdot 1{,}608 \cdot 10^{22}\,\text{J}}{4{,}0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2{,}6 \cdot 10^{20}\,\text{kg}} = \dfrac{1{,}447 \cdot 10^{23}\,\text{J}}{1{,}04 \cdot 10^{24}\,\tfrac{\text{J}}{\text{K}}} \approx 0{,}139\,\text{K}$
-**Vastaus:** $E_\text{v} = 1{,}6 \cdot 10^{22}\,\text{J}$ ja $\Delta T = 0{,}14\,\text{K}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Suuri vesimassa hidastaa lämpenemistä, koska suuri lämpökapasiteetti $cm$ vaatii paljon energiaa yhden kelvinin muutokseen.
+**Vastaus:** $E_\text{v} = 1{,}6 \cdot 10^{22}\,\text{J}$ ja $\Delta T = 0{,}14\,\text{K}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $1{,}0\,\tfrac{\text{W}}{\text{m}^2}$, pinta-ala $5{,}1 \cdot 10^{14}\,\text{m}^2$, massa $2{,}6 \cdot 10^{20}\,\text{kg}$ ja ominaislämpökapasiteetti $4{,}0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaikki kaksi numeroa; laskimen tulos $0{,}139\,\text{K}$ pyöristetään. Suuri vesimassa hidastaa lämpenemistä, koska suuri lämpökapasiteetti $cm$ vaatii paljon energiaa yhden kelvinin muutokseen.
 **Järkevyys:** Suuruusluokka: $10^{23}\,\text{J}$ jaettuna $10^{24}\,\tfrac{\text{J}}{\text{K}}$:lla on noin $0{,}1\,\text{K}$. Lämpökapasiteetti on $4{,}0 \cdot 10^{3} \cdot 2{,}6 \cdot 10^{20}\,\tfrac{\text{J}}{\text{K}} = 1{,}04 \cdot 10^{24}\,\tfrac{\text{J}}{\text{K}}$. Vertailuksi ilmakehän massa on vain noin $5 \cdot 10^{18}\,\text{kg}$, ja sama energia lämmittäisi sitä kymmeniä kelvinejä. Meri hidastaa lämpenemistä, mutta varastoitunut energia pitää sen käynnissä pitkään.
 
 ## fy3-12-L3-03
@@ -115,5 +115,5 @@
 **Kaava:** $Q = (U_1 - U_2)A\Delta T\,t$ ja $W = \dfrac{Q}{\varepsilon}$, joten $W = \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon}$
 **Muunnokset:** Aika on jo tunteina ja tulos halutaan kilowattitunteina, joten teho $\text{W}$ muutetaan kilowateiksi jakamalla tuhannella: $\text{Wh} / 1000 = \text{kWh}$.
 **Sijoitus:** $Q = (0{,}35 - 0{,}10)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 100\,\text{m}^2 \cdot 19\,\text{K} \cdot 5800\,\text{h} = 475\,\text{W} \cdot 5800\,\text{h} = 2\,755\,000\,\text{Wh} = 2755\,\text{kWh}$. $W = \dfrac{2755\,\text{kWh}}{2{,}8} \approx 983{,}9\,\text{kWh}$
-**Vastaus:** $980\,\text{kWh}$, kaksi merkitsevää numeroa kuten lämpökertoimessa $2{,}8$. Pumppu ei luo lämpöä vaan siirtää sitä sähköllä, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Siksi eristys kannattaa: pienempi lämmöntarve tarkoittaa pienempää sähkölaskua.
+**Vastaus:** $980\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat lämpökerroin $2{,}8$, U-arvojen erotus $0{,}35 - 0{,}10 = 0{,}25$ ja lämpötilaero $19\,\text{K}$, kaikki kaksi numeroa; ala $100\,\text{m}^2$ ja aika $5800\,\text{h}$ ovat vähintään kahden numeron arvoja. Laskimen tulos $983{,}9\,\text{kWh}$ pyöristetään. Pumppu ei luo lämpöä vaan siirtää sitä sähköllä, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Siksi eristys kannattaa: pienempi lämmöntarve tarkoittaa pienempää sähkölaskua.
 **Järkevyys:** Takaisinlasku: $983{,}9 \cdot 2{,}8 \approx 2755\,\text{kWh}$. Sähkösäästö on pienempi kuin lämpösäästö $2755\,\text{kWh}$, koska pumppu tuottaa $2{,}8$ kWh lämpöä yhdellä sähkökilowattitunnilla. Suoralla sähkölämmityksellä ($\varepsilon = 1$) säästö olisi koko $2755\,\text{kWh}$. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy, joten säästö on silloin suurin.

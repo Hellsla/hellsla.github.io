@@ -279,7 +279,7 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 
 <!-- vaihe -->
 
-**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja lämpötilat on annettu kahdella numerolla.
+**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$ (kumpikin kaksi numeroa); pituus $120\,\text{m}$ on vähintään kahden numeron arvo eikä rajoita.
 
 <!-- vaihe -->
 
