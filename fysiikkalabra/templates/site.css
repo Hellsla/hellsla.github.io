@@ -1,5 +1,17 @@
 /* Fysiikkalabra: matches the look of the main site (cream background, green accent, Fraunces + Plus Jakarta Sans).
-   Fonts are self-hosted from vendor/fonts, so no request goes to a third party. */
+   Fonts are self-hosted from vendor/fonts, so no request goes to a third party.
+
+   Design system (teacher's brief 2026-10-27, "desktop-UI ja visuaalinen hierarkia"):
+   - Three levels on a lesson page. 1 the stage (Pohdinta, Ennusta, Tutki ...): a numbered 24 px heading on a full-width
+     rule with room above it. 2 the task (Ennuste 1, Koe 1, a check question): one card that holds its heading, instructions,
+     answer fields, table and feedback. 3 what sits inside a task (hints, tables, feedback, model answers): tinted panels
+     in a smaller size that never compete with a heading.
+   - One type scale: lesson title 32–36 px Fraunces, stage 24 px, task 18 px, text and answers 17 px, meta 14 px, all
+     Plus Jakarta Sans except the title, the Miksi question and the opening story. Monospace is not used for prose.
+   - Layout by the width of the content (main is a container): one centred 38rem column on a phone and a tablet; from 60rem
+     of content a text track (38rem) and a margin track beside it for what belongs to the text (the "new this lesson"
+     box, a theory figure, the simulation beside the experiments); from 85rem of window the stage navigation moves from
+     the sticky chip bar to a sticky side column. Nothing breaks out of its box with negative margins. */
 @font-face{font-family:"Fraunces";font-style:normal;font-weight:100 900;font-display:swap;src:url(vendor/fonts/fraunces-latin-wght-normal.woff2) format("woff2")}
 @font-face{font-family:"Fraunces";font-style:italic;font-weight:100 900;font-display:swap;src:url(vendor/fonts/fraunces-latin-wght-italic.woff2) format("woff2")}
 @font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:200 800;font-display:swap;src:url(vendor/fonts/plus-jakarta-sans-latin-wght-normal.woff2) format("woff2")}
@@ -11,22 +23,35 @@
   --serif:"Fraunces","Iowan Old Style",Georgia,serif;
   --sans:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SF Mono",monospace;
-  --measure:38rem;--gap:2.5rem;   /* text column (about 70 characters) and the gutter between columns */
+  /* type scale: the size says how important the text is, not which component it is in */
+  --fs-title:clamp(2rem,1.55rem + 1.2vw,2.25rem);   /* lesson title, 32–36 px */
+  --fs-h2:1.5rem;        /* stage heading, 24 px */
+  --fs-h3:1.125rem;      /* task heading, 18 px */
+  --fs-body:1.0625rem;   /* text, instructions, answers, feedback, 17 px */
+  --fs-ui:.9375rem;      /* buttons and box summaries, 15 px */
+  --fs-small:.875rem;    /* meta: counts, captions, table heads, notes, 14 px */
+  --lh:1.65;--lh-head:1.25;   /* the body line height also sets p5's text metrics (measured in a span on the body), which the sims' label tests rely on */
+  /* spacing and measure */
+  --measure:38rem;--gap:2.5rem;   /* text column (about 70 characters) and the gutter between the text and margin tracks */
+  --stage-space:4.5rem;          /* above a stage */
+  --card-pad:1.25rem 1.5rem;--card-radius:16px;--inner-radius:10px;
+  --sticky-top:4.5rem;           /* below the sticky chip bar; the side column has no bar above the content */
   /* figure palette (NOTES.md §3): one meaning per colour across every lesson; text and patterns carry the same information */
   --fig-ink:#1f2933;--fig-muted:#6b7480;--fig-line:#c9c2b2;--fig-paper:#fffdf8;
   --fig-water:#2f74b5;--fig-water-light:#bcdcf3;--fig-sand:#d9b26a;--fig-sand-dark:#a97a35;--fig-sand-light:#f1dfb5;
   --fig-heat:#e8590c;--fig-hot:#c92a2a;--fig-hot-light:#ffd8cc;--fig-cold:#1971c2;--fig-cold-light:#d0e6fb;
   --fig-metal:#8a96a3;--fig-copper:#b8622d;--fig-ice:#a5d8ff;--fig-glass:#eef5f9;
 }
+@media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:3.25rem}}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;font:17px/1.65 var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
+body{margin:0;font:var(--fs-body)/var(--lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);background-repeat:no-repeat}
 a{color:var(--accent-deep);text-underline-offset:.18em}
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
-.page{width:min(80rem,calc(100% - 32px));margin:0 auto;padding:18px 0 40px;container:page / inline-size}
-main.reading{max-width:38rem;margin-inline:auto}
-@container page (min-width:68rem){main.reading{margin-inline:0}}   /* between a phone and the wide layout (a tablet, a narrow window) the text column is centred, not left with an empty strip on the right */
+.page{width:min(80rem,calc(100% - 32px));margin:0 auto;padding:18px 0 40px}
+main.reading{max-width:var(--measure);margin-inline:auto;container:content / inline-size}
+@media (min-width:64rem){main.lesson{max-width:none;margin:0}}   /* from a small laptop up the lesson uses the page width; its text tracks keep the measure */
 
 /* header */
 header.top{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;padding-bottom:12px;margin-bottom:8px;border-bottom:1px solid var(--line)}
@@ -34,18 +59,20 @@ header.top{display:flex;justify-content:space-between;align-items:center;gap:8px
 .brand-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:var(--ink);color:var(--bg);font:italic 400 1.14rem var(--serif);letter-spacing:-.02em}
 .brand-name{font:500 1.02rem var(--serif);letter-spacing:-.015em}
 header.top nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
-header.top nav a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;font-size:.86rem;color:var(--ink-2);text-decoration:none;border-radius:999px}
+header.top nav a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;font-size:var(--fs-small);color:var(--ink-2);text-decoration:none;border-radius:999px}
 header.top nav a:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav a.pill{background:var(--accent-deep);color:#fff;font-weight:700;margin-left:4px}
 header.top nav a.pill:hover{background:var(--accent)}
-.crumbs{font:.74rem var(--mono);letter-spacing:.04em;color:var(--ink-2);margin:.4rem 0 1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:0 .25rem}
+.crumbs{font-size:var(--fs-small);color:var(--ink-2);margin:.4rem 0 1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:0 .25rem}
 .crumbs a{color:var(--accent-deep);display:inline-flex;align-items:center;justify-content:center;min-height:40px;min-width:40px;padding:0 .3rem;margin:0 -.3rem;text-decoration:none}
 
-/* type */
-h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;color:var(--ink)}
-h1{font-size:clamp(2rem,5vw,2.9rem);line-height:1.1;margin:.2rem 0 1rem}
-h2{font-size:1.5rem;line-height:1.2;margin:2.4rem 0 .6rem}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font:.7rem var(--mono);color:var(--accent-deep);letter-spacing:.14em;text-transform:uppercase;margin:.4rem 0 .6rem}
+/* type: Fraunces for the titles and the opening question, Plus Jakarta Sans for every other heading */
+h1,h2,h3,h4{color:var(--ink);line-height:var(--lh-head)}
+h1{font:500 var(--fs-title)/1.12 var(--serif);letter-spacing:-.02em;margin:.2rem 0 1rem}
+h2{font:700 var(--fs-h2)/var(--lh-head) var(--sans);letter-spacing:-.01em;margin:2.4rem 0 .75rem}
+h3{font:700 var(--fs-h3)/var(--lh-head) var(--sans);margin:1.6rem 0 .5rem}
+.hero h1{font-size:clamp(2.2rem,5vw,2.9rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 var(--fs-small) var(--sans);color:var(--accent-deep);letter-spacing:.08em;text-transform:uppercase;margin:.4rem 0 .6rem}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
 .lead{font:400 1.2rem/1.5 var(--serif);color:var(--ink-2);max-width:36rem}
 blockquote{margin:1.4rem 0;padding:1rem 1.2rem;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;font:italic 400 1.15rem/1.5 var(--serif)}
@@ -53,7 +80,7 @@ blockquote p{margin:0}
 li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 @media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.08em) so the widest row (fy3-3) fits 360 px; at 390 px and up nothing overflows, so formulas stay full size */
-.notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:.95rem}
+.notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:var(--fs-small)}
 .fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
 .fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
@@ -61,222 +88,298 @@ article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;backgr
 
 /* front page and module pages */
 .hero{padding:1.6rem 0 .6rem}
-.latest{display:inline-block;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;margin:.4rem 0 1.2rem;font-size:.95rem}
+.latest{display:inline-block;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;margin:.4rem 0 1.2rem;font-size:var(--fs-ui)}
 .how{list-style:none;padding:0;margin:1rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.75rem}
-.how li{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.9rem 1.1rem;font-size:.96rem}
-.how strong{display:block;font:500 1.1rem var(--serif);margin-bottom:.15rem}
+.how li{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.9rem 1.1rem;font-size:var(--fs-ui)}
+.how strong{display:block;font:700 var(--fs-h3) var(--sans);margin-bottom:.15rem}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:.9rem;margin:1rem 0}
 .card{display:flex;flex-direction:column;gap:.3rem;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--ink);background:var(--surface);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 22px rgba(20,23,30,.08)}
 .card.live{border-color:var(--accent)}
-.card .code{align-self:flex-start;font:500 .75rem var(--mono);letter-spacing:.1em;color:var(--accent-deep);background:var(--accent-soft);border-radius:999px;padding:.15rem .65rem}
+.card .code{align-self:flex-start;font:700 .75rem var(--sans);letter-spacing:.08em;color:var(--accent-deep);background:var(--accent-soft);border-radius:999px;padding:.15rem .65rem}
 .card .ctitle{font:500 1.2rem/1.25 var(--serif);margin-top:.3rem}
-.card .meta,.card .state{font-size:.84rem;color:var(--ink-2)}
+.card .meta,.card .state{font-size:var(--fs-small);color:var(--ink-2)}
 .card .bar{display:block;height:6px;background:var(--bg-tint);border-radius:3px;overflow:hidden;margin-top:.35rem}
 .card .bar span{display:block;height:100%;background:var(--accent)}
 ol.lessons{padding-left:1.4rem}ol.lessons li{padding:.15rem 0}
 ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.live a{font-weight:600}
-.count{color:var(--ink-2);font-size:.84rem}
+.count{color:var(--ink-2);font-size:var(--fs-small);font-weight:400}
 .back{margin-top:2rem}
 
-/* exercises and exit ticket */
+/* boxes that open: one summary style, a level-3 element in 15 px */
 details{margin:.5rem 0}
 summary{cursor:pointer;min-height:40px;display:flex;align-items:center}
 summary::before{content:"▸";display:inline-block;width:1.2em;flex:none;color:var(--accent-deep)}
 details[open]>summary::before{content:"▾"}
-details.level{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.2rem 1rem;margin:.6rem 0}
-details.level>summary{font:500 1.1rem var(--serif)}
-details.level>summary .count{margin-left:.6rem;font:400 .84rem var(--sans)}
-details.answer{margin:.2rem 0 .7rem}
-details.answer>summary{color:var(--accent-deep);font-size:.88rem;font-weight:600}
+details.answer,details.solution{margin:.2rem 0 .6rem}
+details.answer>summary,details.solution>summary,.hints summary,details.sim-box>summary,#sim-root details.note>summary{color:var(--accent-deep);font:600 var(--fs-ui) var(--sans)}
 details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-radius:8px;padding:.35rem .7rem;display:inline-block}
-#exit{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1.4rem 1rem;margin-top:2.4rem}
-#exit h2{margin-top:1.2rem}
+details.solution .steps{margin:.3rem 0 0 1.2rem;padding:.7rem 1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:1rem;line-height:1.55}
+details.solution .steps p{margin:0}
+@media (max-width:600px){details.solution .steps{margin-left:0;padding:.6rem .7rem;font-size:.92rem}details.solution .steps .katex-display{padding:.6rem}details.opt{padding:0 .8rem}details.opt>.activity{margin:.8rem 0 1rem}}
 
-/* simulation */
-#sim{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1rem 1rem;margin:2.4rem 0}
-@media (min-width:720px){#sim{margin-inline:-1.1rem}.lab-side #sim{margin-inline:0}}   /* the card pokes out of the 38rem text column so the 600 px canvas keeps its native size */
-#sim h2{margin-top:1rem}
+/* simulation card */
+#sim{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);padding:.2rem 1rem 1rem;margin:2.4rem 0}
+#sim>h2{margin-top:1rem}
+#sim>h3{margin:.9rem 0 .6rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}   /* a label, not a heading that competes with the task's */
+.sim-context{margin:-.3rem 0 .6rem;font-size:var(--fs-small);color:var(--ink-2)}.sim-context:empty{display:none}
+.sim-context strong{color:var(--ink)}
 #sim-root{position:relative}#sim-root canvas{max-width:100%;height:auto!important;display:block;border-radius:10px}
-.sim-canvas{position:relative}.sim-tex-layer{position:absolute;inset:0;pointer-events:none;overflow:visible}.sim-tex{position:absolute;white-space:nowrap;line-height:1.15}.sim-tex .katex{font-size:1em}#sim-root .readout .katex,#sim-root label .katex{font-size:1.05em}
-#sim-root .readout{font-size:1rem;line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
-#sim-root .note{font-size:.9rem;color:var(--ink-2);margin:.5rem 0 0}
+.sim-canvas{position:relative;margin-inline:auto}.sim-tex-layer{position:absolute;inset:0;pointer-events:none;overflow:visible}.sim-tex{position:absolute;white-space:nowrap;line-height:1.15}.sim-tex .katex{font-size:1em}#sim-root .readout .katex,#sim-root label .katex{font-size:1.05em}
+#sim-root .readout{font-size:var(--fs-ui);line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
+#sim-root .note{font-size:var(--fs-small);color:var(--ink-2);margin:.5rem 0 0}
 #sim-root .controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.5rem 1.5rem;margin:.5rem 0}
-#sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;font-size:.9rem}
+#sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;font-size:var(--fs-ui)}
 #sim-root input[type=range]{width:100%;min-height:40px;margin:0;accent-color:var(--accent)}
-#sim-root button{font:600 .95rem var(--sans);min-height:40px;padding:0 1.4rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
+#sim-root button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1.4rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
 #sim-root button:hover{background:var(--accent)}
+#sim-root select{min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
+#sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}
+.sim-info{margin:.6rem 0 0;border-top:1px solid var(--line-2)}
+details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
+details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
 
-footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.84rem;color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
+footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
 footer.bottom a{display:inline-flex;align-items:center;min-height:40px}
 .crumbs:empty{display:none}
-table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-th,td{padding:.5rem .8rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
-th{font:500 .8rem var(--mono);letter-spacing:.04em;color:var(--ink-2);background:var(--bg-tint)}
+
+/* tables: a level-3 element, light frame, small sans heads; numbers in tabular figures */
+table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-variant-numeric:tabular-nums}
+th,td{padding:.45rem .8rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
+th{font:600 var(--fs-small) var(--sans);color:var(--ink-2);background:var(--bg-tint)}
 tr:last-child td{border-bottom:0}
-#sim-root select{min-height:40px;font:inherit;font-size:1rem;padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
 table thead,table tbody{display:table;width:100%}
 
-/* section nav: sticks under the top edge so every stage, the exit ticket and the exercises are one tap away */
+/* stage navigation. Phone to laptop: a bar of chips that sticks under the top edge. From 85rem of window: a side column
+   (below). Each stage shows its number, so the nav and the stage headings read as one sequence; the stage on screen
+   is marked (lesson.js sets aria-current). */
 nav.toc{position:sticky;top:0;z-index:5;display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;margin:0 -16px 1rem;padding:.4rem 16px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav.toc::-webkit-scrollbar{display:none}
-nav.toc a{flex:none;display:inline-flex;align-items:center;min-height:40px;padding:0 .9rem;border-radius:999px;font-size:.88rem;font-weight:600;color:var(--ink-2);text-decoration:none;border:1px solid transparent}
+nav.toc .toc-head{display:none}
+nav.toc a{flex:none;display:inline-flex;align-items:center;gap:.45rem;min-height:40px;padding:0 .9rem 0 .55rem;border-radius:999px;font-size:var(--fs-small);font-weight:600;color:var(--ink-2);text-decoration:none;border:1px solid transparent}
+nav.toc a:not(:has(.toc-no)){padding-left:.9rem}
+nav.toc .toc-no{display:inline-grid;place-items:center;width:1.45rem;height:1.45rem;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:.75rem;font-weight:700;color:var(--ink-2)}
+nav.toc .toc-rest{display:none}
 nav.toc a:hover{background:var(--bg-tint);color:var(--ink)}
 nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
+nav.toc a[aria-current] .toc-no{background:#fff;border-color:#fff;color:var(--accent-deep)}
 @media (min-width:1100px){nav.toc{margin-inline:0;padding-inline:0}}
-article h2,article h3,.stage,.activity{scroll-margin-top:3.6rem}#sim,#exercises,#exit{scroll-margin-top:3.4rem}
+article h2,article h3,.stage,.activity{scroll-margin-top:var(--sticky-top)}#sim,#exercises,#exit{scroll-margin-top:var(--sticky-top)}
 
 /* answer check: browser-side only, nothing is stored or sent */
-p.howto{font-size:.9rem;color:var(--ink-2);margin:0 0 .6rem}
+p.howto{font-size:var(--fs-small);color:var(--ink-2);margin:0 0 .8rem}
 li p.task{margin:.3rem 0 .4rem}
-form.check{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.2rem 0 .4rem}
+form.check{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.4rem 0}
 form.check input{width:7.5rem;min-height:40px;font:inherit;font-size:1rem;padding:0 .7rem;border:1px solid #767676;border-radius:10px;background:var(--surface);color:var(--ink);font-variant-numeric:tabular-nums}
 form.check input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
 form.check input[aria-invalid=true]{border-color:#b4532a}
-form.check .unit{font-size:.95rem;color:var(--ink-2)}
-form.check button{font:600 .9rem var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
-form.check button:hover{background:var(--accent)}
-form.check output{flex:1 1 100%;font-size:.92rem;min-height:1.3em}
+form.check .unit{font-size:var(--fs-body);color:var(--ink-2)}
+form.check button,.choice-actions button,.exp-controls button,.show-model,.worked .step-controls button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
+form.check button:hover,.choice-actions button:hover,.exp-controls button:hover,.worked .step-controls button.next-step:hover{background:var(--accent)}
+form.check output{flex:1 1 100%;font-size:var(--fs-ui);min-height:1.3em}
 form.check output[data-state=ok]{color:var(--accent-deep);font-weight:600}
 form.check output[data-state=no]{color:#8a3b1a}
 form.check output[data-state=hint]{color:var(--ink-2)}
 form.check.is-ok input{border-color:var(--accent);background:var(--accent-soft)}
-details.solution{margin:.2rem 0 .9rem}
-details.solution>summary{color:var(--accent-deep);font-size:.88rem;font-weight:600}
-details.solution .steps{margin:.3rem 0 0 1.2rem;padding:.6rem .9rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:.95rem;line-height:1.55}
-details.solution .steps p{margin:0}
-@media (max-width:600px){details.solution .steps{margin-left:0;font-size:.92rem}section#exercises ol{padding-left:1.2rem}details.level{padding:.2rem .7rem}}
 
 /* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */
 @media print{
   body{background:#fff;font-size:11pt}
   header.top,nav.crumbs,nav.toc,footer.bottom,#sim,form.check,p.howto{display:none!important}
-  .page{width:auto;padding:0}main.reading{max-width:none}
+  .page{width:auto;padding:0;display:block}main.reading{max-width:none}
   details>summary::before{content:""}details>summary{font-weight:600}
   details.level{border:0;padding:0;break-inside:avoid}li{break-inside:avoid}
   .katex-display{border:0;background:none}a{color:inherit;text-decoration:none}
   h2{break-after:avoid}
   .fig,article svg{break-inside:avoid}article svg{border:0;padding:0}
+  .activity.task-card{border:1px solid #ccc;box-shadow:none}
 }
-@media (prefers-reduced-motion:reduce){.card{transition:none}}
+@media (prefers-reduced-motion:reduce){.card{transition:none}html{scroll-behavior:auto}}
 
-/* worked example in stages (build.py staged_example, lesson.js) */
+/* worked example in stages (build.py staged_example, lesson.js): the problem in a framed box, the solution as numbered
+   steps on a rule beside it */
+.example{margin:.8rem 0 1.2rem}
+.example-task{padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
+.example-task>:last-child{margin-bottom:0}
+.example-label{margin:0 0 .3rem;font:700 var(--fs-small) var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
 .worked{margin:.8rem 0 1rem}
-.worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem .9rem;margin:.6rem 0}
+.worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem 1rem;margin:.7rem 0}
 .worked .step:focus{outline:none}
-.worked .step-label{margin:0 0 .2rem;font:600 .8rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--accent-deep)}
-.worked .step-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0}
-.worked .step-controls button{min-height:40px;padding:.4rem 1rem;border-radius:999px;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep);font:600 .9rem var(--sans);cursor:pointer}
+.worked .step-label{margin:0 0 .2rem;font:700 var(--fs-small) var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
+.worked .step-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0 0}
+.worked .step-controls button{background:var(--surface);color:var(--accent-deep)}
 .worked .step-controls button.next-step{background:var(--accent-deep);color:var(--surface)}
 .worked .step-controls button[hidden]{display:none}
 .worked:not(.js) .step-controls{display:none}
 @media print{.worked .step-controls{display:none}}
 
-/* inquiry layout (scripts/inquiry.py, inquiry.js): stages, activities, predictions, experiments, feedback */
-.contribution{margin:.4rem 0 1.4rem;padding:.6rem .9rem;background:var(--accent-soft);border-radius:10px;font-size:.95rem}
-.prior{font-size:.92rem;color:var(--ink-2);margin:-.8rem 0 1.4rem}
-.stage{margin:2.2rem 0 0;padding-top:.4rem;border-top:1px solid var(--line)}
-.stage>h2{display:flex;align-items:center;gap:.6rem}
-.stage-no{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--ink);color:var(--bg);font:600 .85rem var(--sans)}
-.activity{margin:1rem 0 1.6rem}.activity>h3{margin:.8rem 0 .4rem}.theory-h{margin-top:1.2rem}
-.hook{font:400 1.08rem/1.55 var(--serif)}.question{font-weight:600}
+/* ---- inquiry lesson (scripts/inquiry.py, inquiry.js) ---- */
+
+/* the opening: title and Miksi question, "new this lesson" beside it */
+.contribution{margin:.4rem 0 1rem;padding:.8rem 1rem;background:var(--accent-soft);border-radius:12px;font-size:var(--fs-body)}
+.prior,.path-note{font-size:var(--fs-small);color:var(--ink-2);margin:0 0 .8rem;line-height:1.55}
+.intro-aside .prior{margin:0 0 .8rem}
+
+/* level 1: the stage. A numbered heading on a full-width rule, with clear room above, so the start of each stage
+   shows while skimming */
+.stage{margin:var(--stage-space) 0 0}
+.stage>h2{display:flex;align-items:center;gap:.7rem;margin:0 0 1.25rem;padding-top:1.1rem;border-top:2px solid var(--ink)}
+.stage-no{display:inline-grid;place-items:center;flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--accent-deep);color:#fff;font:700 .95rem var(--sans)}
+.stage-practice>h2{border-top-color:var(--accent-deep)}
+
+/* level 2: the task. One card holds the heading, instructions, controls, table, answers and feedback. Reading
+   (the opening story, theory, a text) is not a card. */
+.activity{margin:0 0 1.25rem}
+.task-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);padding:var(--card-pad)}
+.task-card>h3:first-child{margin-top:0}
+.task-card>:last-child,.task-card>:last-child>:last-child{margin-bottom:0}
+.activity.is-active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}   /* the experiment that drives the simulation now */
+.act-theory>h3.theory-h:first-child{margin-top:0}
+.hook{font:400 1.125rem/1.6 var(--serif)}.hook>:first-child{margin-top:0}
+.question{font:500 1.25rem/1.4 var(--serif);color:var(--ink);margin:1rem 0 0;padding-left:1rem;border-left:4px solid var(--accent)}
 p.task{margin:.3rem 0 .5rem}
-fieldset.choice{margin:.6rem 0;padding:.7rem 1rem .8rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0}
-fieldset.choice legend{padding:0 .4rem;font-weight:600;float:left;width:100%;margin-bottom:.5rem}fieldset.choice legend+*{clear:both}
+
+/* choices: the card is the frame, so the fieldset itself is plain */
+fieldset.choice{margin:0;padding:0;border:0;min-width:0}
+fieldset.choice legend{padding:0;font-weight:500;float:left;width:100%;margin-bottom:.6rem}fieldset.choice legend+*{clear:both}
+.solution-text{margin:.3rem 0 .6rem}
 ul.choices{list-style:none;margin:0;padding:0}ul.choices li{margin:.15rem 0}
-ul.choices label{display:flex;gap:.6rem;align-items:flex-start;min-height:40px;padding:.3rem .5rem;border-radius:8px;cursor:pointer}
+ul.choices label{display:flex;gap:.6rem;align-items:flex-start;min-height:40px;padding:.35rem .5rem;border-radius:8px;cursor:pointer}
 ul.choices label:hover{background:var(--bg-tint)}ul.choices input{margin:.35rem 0 0;flex:none;width:1.1rem;height:1.1rem;accent-color:var(--accent)}
 ul.choices input:disabled+span{color:var(--ink-2)}ul.choices input:checked:disabled+span{color:var(--ink);font-weight:600}
 fieldset.choice.models ul.choices{display:grid;gap:.4rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
 fieldset.choice.models ul.choices label{border:1px solid var(--line);border-radius:10px;height:100%;box-sizing:border-box}
-.feedback{margin:.1rem 0 .4rem 2.3rem;padding:.45rem .7rem;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:.93rem}
+
+/* level 3: inside a task. Tinted panels, 15–16 px, no heading weight */
+.feedback{margin:.1rem 0 .4rem 2.3rem;padding:.5rem .8rem;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:1rem}
+.feedback>:first-child{margin-top:0}.feedback>:last-child{margin-bottom:0}
 fieldset.choice[data-state=no] .feedback{border-color:#b4532a;background:#fbf1ea}
-.choice-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0 0}
-.choice-actions button,.exp-controls button,.show-model{font:600 .9rem var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
-.choice-actions button:hover,.exp-controls button:hover{background:var(--accent)}
+.choice-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0 0}
 .exp-controls button:disabled{opacity:.5;cursor:not-allowed}
-fieldset.choice output{display:block;margin-top:.4rem;font-size:.92rem;min-height:1.3em}
+fieldset.choice output{display:block;margin-top:.4rem;font-size:var(--fs-ui);min-height:1.3em}
 fieldset.choice output[data-state=ok]{color:var(--accent-deep);font-weight:600}fieldset.choice output[data-state=no]{color:#8a3b1a;font-weight:600}fieldset.choice output[data-state=hint]{color:var(--ink-2)}
-.pending{margin:.5rem 0 0;font-size:.92rem;color:var(--ink-2)}
-.sim-moved{margin:.5rem 0;font-size:.92rem;color:var(--ink-2);font-style:italic}
-.justify{display:block;margin:.5rem 0 0;font-size:.92rem;color:var(--ink-2)}
+.pending{margin:.5rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}
+.sim-moved{margin:.5rem 0;font-size:var(--fs-ui);color:var(--ink-2);font-style:italic}
+.justify{display:block;margin:.6rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
 textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:inherit;font-size:1rem;padding:.5rem .7rem;border:1px solid #767676;border-radius:10px;background:var(--surface);color:var(--ink)}
 textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
-.solution-text{margin:.3rem 0 .6rem;font-size:.95rem}
-.experiment{margin:.6rem 0;padding:.7rem 1rem .8rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.exp-setup{font-size:.93rem;margin:.4rem 0}
-.exp-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0}
-.exp-controls .exp-reset{background:var(--surface);color:var(--accent-deep)}
-table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:500 .8rem var(--mono);letter-spacing:.04em;color:var(--ink-2);text-align:left;padding:.2rem .4rem}
-table.exp-table td{font-variant-numeric:tabular-nums}table.exp-table tbody:empty::after{content:"";display:block;height:.3rem}
-.exp-status{font-size:.92rem;color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
-#sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}
-.hints{margin:.4rem 0 .2rem}.hints details{margin:.2rem 0}.hints summary{font-size:.9rem;color:var(--accent-deep);font-weight:600}
-.hints details>div{margin:.2rem 0 .4rem 1.2rem;padding:.4rem .7rem;background:var(--bg-tint);border-radius:8px;font-size:.93rem}
-.explain .model{margin-top:.6rem;padding:.6rem .9rem;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.explain .model h4{margin:.2rem 0 .3rem;font:600 .8rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--accent-deep)}
+.experiment>.intro>:first-child{margin-top:0}
+.exp-setup{font-size:var(--fs-ui);margin:.6rem 0;padding:.5rem .8rem;background:var(--bg);border-radius:var(--inner-radius)}
+.exp-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0}
+.exp-controls .exp-reset,.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
+table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:600 var(--fs-small) var(--sans);color:var(--ink-2);text-align:left;padding:.3rem .8rem .1rem;white-space:nowrap}
+table.exp-table tbody:empty::after{content:"";display:block;height:.3rem}
+.exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
+.exp-question{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-2)}
+.hints{margin:.4rem 0 .2rem}.hints details{margin:.2rem 0}
+.hints details>div{margin:.2rem 0 .4rem 1.2rem;padding:.45rem .8rem;background:var(--bg-tint);border-radius:8px;font-size:1rem}
+.explain .model{margin-top:.8rem;padding:.7rem 1rem;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 var(--inner-radius) var(--inner-radius) 0}
+.explain .model h4{margin:.3rem 0 .3rem;font:700 var(--fs-small) var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
+.explain .model h4:focus{outline:none}
 ul.criteria{list-style:none;margin:0;padding:0}ul.criteria label{display:flex;gap:.6rem;align-items:flex-start;min-height:36px;padding:.2rem .3rem}ul.criteria input{margin-top:.35rem;accent-color:var(--accent)}
-.reflect{padding:.7rem 1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.my-predictions{margin:.3rem 0;padding-left:1.2rem}.my-predictions .rq{margin:.2rem 0 0;font-size:.92rem;color:var(--ink-2)}.my-predictions p{margin:.1rem 0 .4rem}
+.pair{font-size:var(--fs-ui);color:var(--ink-2)}
+.my-predictions{margin:.3rem 0;padding-left:1.2rem}.my-predictions .rq{margin:.2rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}.my-predictions p{margin:.1rem 0 .4rem}
 .revise label{margin-right:.8rem;min-height:40px;display:inline-flex;align-items:center;gap:.3rem}
-.inquiry #exercises,.inquiry #exit{margin-top:.6rem}.inquiry #exit{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.2rem 1.4rem 1rem}
-.inquiry #sim{margin-block:1rem}
-@media (max-width:600px){fieldset.choice,.experiment,.reflect{padding:.6rem .7rem}.feedback{margin-left:0}}
-/* optional activities (inquiry.json "optional": true): a closed, named box off the core path; a conclusion's status
-   line; the provenance of supplied data (interpret "source"); the core-path note beside the title */
-details.opt{margin:1rem 0;border:1px dashed var(--line);border-radius:14px;padding:0 1rem;background:var(--bg)}
-details.opt>summary{min-height:44px;font:600 .95rem var(--sans);color:var(--ink-2)}
-details.opt[open]>summary{border-bottom:1px dashed var(--line)}details.opt>.activity{margin:.6rem 0 1rem}
-.opt-tag{display:inline-block;font:600 .72rem var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--accent-deep);border:1px solid var(--accent-deep);border-radius:999px;padding:.05rem .5rem;margin-right:.3rem}
-.act-grid>details.opt{margin:0}
-.explain-status{font-size:.92rem;color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
-.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
-p.source{display:inline-block;margin:.2rem 0 .5rem;padding:.2rem .7rem;border-radius:999px;font-size:.85rem;background:var(--bg-tint);border:1px solid var(--line)}
-p.source[data-source=measured]{border-color:var(--accent-deep)}
-.path-note{font-size:.92rem;color:var(--ink-2);margin:0 0 1rem}
-@media print{.choice-actions,.exp-controls,.pending,.exp-status,.explain-status{display:none!important}}
+.inquiry #sim{margin:1rem 0}
+#exit>h3:first-child{margin-top:0}
 
-/* Lesson page layout (human decisions 2026-10-26, CLAUDE.md "Lesson page"). A phone gets one column, as before.
-   On a wide screen (.page at least 68rem, about 1100 px of window) the text keeps its 38rem column and the blocks
-   below break out to the full page width (100cqw of the .page container) to sit side by side: the title beside
-   "Tällä tunnilla uutta", a figure beside its paragraph, short activities two by two, the simulation beside the
-   experiments that use it, the exercises two by two. inquiry.js reads --wide to know which layout is on. */
+/* optional activities (inquiry.json "optional": true): a closed, named box off the core path; inside it the task needs
+   no second frame */
+details.opt{margin:0 0 1.25rem;border:1px dashed #cfc6b2;border-radius:var(--card-radius);padding:0 1rem;background:transparent}
+details.opt>summary{min-height:48px;gap:.2rem;font:600 var(--fs-ui) var(--sans);color:var(--ink-2)}
+details.opt[open]{background:var(--surface);border-style:solid;border-color:var(--line)}
+details.opt[open]>summary{border-bottom:1px solid var(--line-2)}details.opt>.activity{margin:.9rem .5rem 1.1rem}
+.opt-tag{display:inline-block;font:700 .72rem var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--accent-deep);border:1px solid var(--accent-deep);border-radius:999px;padding:.05rem .5rem;margin-right:.4rem}
+.act-grid>details.opt{margin:0}
+p.source{display:inline-block;margin:.2rem 0 .5rem;padding:.2rem .7rem;border-radius:999px;font-size:var(--fs-small);background:var(--bg-tint);border:1px solid var(--line)}
+p.source[data-source=measured]{border-color:var(--accent-deep)}
+@media print{.choice-actions,.exp-controls,.pending,.exp-status,.explain-status,.sim-context{display:none!important}}
+
+/* the Ennusta box: closed at first; open, it frames the predictions as one group */
+details.fold{margin:0;border:1px solid var(--line);border-radius:var(--card-radius);background:color-mix(in srgb,var(--accent-soft) 55%,var(--bg));padding:0 1.1rem}
+details.fold>summary{min-height:56px;gap:.2rem .7rem;flex-wrap:wrap;font:700 var(--fs-body) var(--sans);color:var(--accent-deep)}
+details.fold>summary .fold-status{font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
+details.fold[open]>summary{border-bottom:1px solid var(--line);margin-bottom:1.1rem}
+details.fold[open]{padding-bottom:.1rem}
+@media print{.fold-status{display:none}}
+
+/* exercises: each level a box, each exercise a numbered item on a rule */
+details.level{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);padding:0 1.2rem;margin:0 0 .8rem}
+details.level>summary{min-height:52px;font:700 var(--fs-h3) var(--sans)}
+details.level>summary .count{margin-left:.6rem}
+details.level[open]>summary{border-bottom:1px solid var(--line-2)}
+details.level>ol{margin:0;padding:0 0 .6rem 1.4rem}
+details.level>ol>li{margin:0;padding:.8rem 0;border-bottom:1px solid var(--line-2)}
+details.level>ol>li:last-child{border-bottom:0}
+details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
+@media (max-width:600px){details.level{padding:0 .8rem}details.level>ol{padding-left:1.2rem}.feedback{margin-left:0}}
+
+/* figures beside text (build.py fig_rows): under the paragraph in one column */
 .fig{margin:1rem 0}.fig svg{display:block;margin-inline:auto}
 .fig-row{display:flex;flex-direction:column}.fig-row>.fig{order:1}   /* the figure is first in the markup (build.py fig_rows) but shows under its paragraph */
 .fig-row .fig-text>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}
-.intro-aside .prior{margin:0 0 1rem}
-details.fold{margin:.8rem 0 0;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--accent-soft) 55%,var(--bg));padding:0 1rem}
-details.fold>summary{min-height:52px;gap:.2rem .7rem;flex-wrap:wrap;font:600 1rem var(--sans);color:var(--accent-deep)}
-details.fold>summary .fold-status{font:400 .86rem var(--sans);color:var(--ink-2)}
-details.fold[open]>summary{border-bottom:1px solid var(--line)}
-details.fold[open]{padding-bottom:.4rem}
-.sim-info{margin:.6rem 0 0;border-top:1px solid var(--line-2)}
-details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
-details.sim-box>summary,#sim-root details.note>summary{font:600 .92rem var(--sans);color:var(--accent-deep)}
-details.sim-box>div{font-size:.95rem;padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
-.lab-side #sim{margin-block:.6rem 0;margin-inline:0}   /* inside the lab the card stays in its column (768 px: it poked 18 px out) */
-@container page (min-width:68rem){
-  .reading{--wide:1}
-  .intro-row,.stage>.act-grid,.stage>.lab,.stage>.fold,.stage-practice details.level{width:100cqw}
-  .intro-row{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);column-gap:var(--gap)}
-  .intro-row{align-items:end}.intro-aside{padding-bottom:.4rem}.intro-aside .contribution{margin-top:0}
-  /* A theory figure floats in the right-hand column level with its paragraph, and the text column runs on
-     without the gap a two-column row left under a short paragraph beside a tall figure. Consecutive figures
-     stack (clear:right); the theory block grows to hold its last figure (flow-root). */
+
+/* ---- wide content (main at least 60rem): a text track and a margin track ----
+   inquiry.js reads --wide on .lab to know that the simulation sits beside the experiments. */
+@container content (min-width:60rem){
+  /* text never runs wider than a reading column, wherever it is */
+  .intro-main,.stage>.activity:not(.act-theory,.act-exercises,.act-sim),.stage>details.opt,.act-theory>*,.act-theory .fig-text,
+  .fold-body>details.opt,.fold-body>.activity,.stage-practice .act-exercises>p,article#teoria:not(.inquiry)>:not(.fig-row,#sim){max-width:var(--measure)}
+  .stage>.act-sim{max-width:40rem}
+  .intro-row{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);column-gap:var(--gap);align-items:end}
+  .intro-aside{padding-bottom:1.4rem}.intro-aside .contribution{margin-top:0}
+  /* Ennusta, Tarkista: short tasks of the same kind side by side, as one group */
+  .act-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem 1.5rem;align-items:start;margin-bottom:1.25rem}
+  .act-grid>.activity{min-width:0;margin:0}
+  .fold-body>.act-grid{align-items:stretch}
+  /* Tutki: the experiments in the text track, the simulation beside them in a column that stays in view (sticky) while
+     the student works through the experiments that use it; a panel taller than the window scrolls inside itself */
+  .stage>.lab{--wide:1;display:grid;grid-template-columns:minmax(min(30rem,50%),1fr) minmax(0,40rem);column-gap:2rem;align-items:start}   /* half and half on a small laptop; from 1280 px the 600 px canvas keeps its native size */
+  .lab-main{grid-column:1;grid-row:1;min-width:0}
+  .lab-side{grid-column:2;grid-row:1;min-width:0;position:sticky;top:var(--sticky-top);max-height:calc(100vh - var(--sticky-top) - .75rem);overflow-y:auto;overscroll-behavior:auto;scrollbar-width:thin;border-radius:var(--card-radius)}
+  .lab-side>.activity{margin:0}
+  .lab-side .act-sim>p{margin:0 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
+  .lab-side #sim,.inquiry .lab-side #sim{margin:0;padding:.1rem 1rem .8rem}
+  .lab-side .sim-canvas{max-width:calc((100vh - var(--sticky-top) - 25rem) * var(--sim-ar,1.5));min-width:min(100%,24rem)}   /* on a short laptop screen the picture shrinks so the controls stay in view */
+  /* Tehtävät: the exercises of a level two by two */
+  .stage-practice details.level>ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.5rem;align-items:start;padding-left:0;list-style:none;counter-reset:ex}
+  .stage-practice details.level>ol>li{counter-increment:ex;border-bottom:0;border-top:1px solid var(--line-2)}
+  .stage-practice details.level>ol>li:nth-child(-n+2){border-top:0}
+  .stage-practice details.level>ol>li>p.task:first-child::before{content:counter(ex) ". ";font-weight:700;color:var(--accent-deep)}
+}
+@container content (min-width:66rem){
+  /* Teoriatiivistelmä: a figure floats in the margin track level with its paragraph, and the text track runs on without
+     the gap a two-column row leaves under a short paragraph beside a tall figure. Consecutive figures stack (clear:right);
+     the block grows to hold its last figure (flow-root). */
   .act-theory,article#teoria{display:flow-root}
   .act-theory>.fig-row,article#teoria>.fig-row{display:contents}
-  .act-theory>.fig-row>.fig,article#teoria>.fig-row>.fig{float:right;clear:right;width:calc(100cqw - var(--measure) - var(--gap));
-    margin:.35rem calc(var(--measure) - 100cqw) 1.2rem 0}
+  .act-theory>.fig-row>.fig,article#teoria>.fig-row>.fig{float:right;clear:right;width:calc(100% - var(--measure) - var(--gap));margin:.35rem 0 1.4rem}
   .act-theory>.fig-row>.fig-text,article#teoria>.fig-row>.fig-text{margin:1rem 0}
-  .act-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--gap);align-items:start}
-  .fold-body>:not(.act-grid){max-width:var(--measure)}
-  .act-grid>.activity{min-width:0}
-  .stage>.lab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,40rem);column-gap:var(--gap);align-items:start}
-  .lab-main{grid-column:1;grid-row:1;min-width:0}
-  .lab-side{grid-column:2;grid-row:1;min-width:0}
-  .lab-side #sim,.inquiry .lab-side #sim{margin:0 0 .4rem;padding-inline:.8rem}
-  .stage-practice details.level>ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--gap);align-items:start}
-  .stage{border-top:0;padding-top:0}.stage::before{content:"";display:block;width:100cqw;border-top:1px solid var(--line);margin-bottom:.4rem}
+  /* Sovella: the problem beside its staged solution, the problem in view while the steps open */
+  .act-theory .example{max-width:none}
+  .example{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--gap);align-items:start}
+  .example-task{position:sticky;top:var(--sticky-top)}
+  .example>.worked{margin-top:0}
+  .example>.worked .step:first-child{margin-top:0}
 }
-@media print{.fold-status{display:none}}
+
+/* ---- the side column (window at least 85rem): the stage navigation leaves the top bar and stays beside the content */
+@media (min-width:85rem){
+  :root{--sticky-top:1.25rem}
+  .lesson-page{width:min(92rem,calc(100% - 48px));display:grid;grid-template-columns:12.5rem minmax(0,1fr);column-gap:3rem;align-items:start}
+  .lesson-page>header.top,.lesson-page>.crumbs,.lesson-page>.notice,.lesson-page>footer.bottom{grid-column:1/-1}
+  .lesson-page>nav.toc{grid-column:1;position:sticky;top:1.25rem;flex-direction:column;gap:.15rem;margin:0;padding:.2rem 0 1rem;overflow:visible;max-height:calc(100vh - 2.5rem);overflow-y:auto;
+    background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border:0}
+  .lesson-page>main.reading{grid-column:2;max-width:none;margin:0}
+  nav.toc .toc-head{display:block;margin:0 0 .8rem;padding:0 0 .8rem;border-bottom:1px solid var(--line);font:500 1rem/1.3 var(--serif);color:var(--ink)}
+  nav.toc .toc-head span{display:block;font:700 .75rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:.3rem}
+  nav.toc a{position:relative;border-radius:10px;min-height:42px;padding:.3rem .6rem;font-size:var(--fs-ui);line-height:1.3;white-space:normal}
+  nav.toc a:not(:has(.toc-no)){padding-left:2.6rem}
+  nav.toc .toc-rest{display:inline}
+  nav.toc .toc-no{width:1.6rem;height:1.6rem;font-size:.8rem;margin-right:.1rem}
+  nav.toc a.toc-sub{min-height:36px;font-weight:500}
+  nav.toc a.toc-end{margin-top:.5rem;border-top:1px solid var(--line);border-radius:0 0 10px 10px;padding-top:.6rem}
+  nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
+}
+@media (min-width:85rem) and (max-height:34rem){.lesson-page>nav.toc{position:static}}
 .nobr{white-space:nowrap}

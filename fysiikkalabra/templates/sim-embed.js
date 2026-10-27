@@ -66,14 +66,18 @@
         let s = 1;
         let layer = null, labels = [], used = 0;
         const text = p.text;
+        // the canvas and its KaTeX layer share a box (.sim-canvas); fit() sizes the canvas to that box, so the page can
+        // narrow it (site.css: on a short screen the simulation beside the experiments keeps its controls in view)
+        const wrapCanvas = () => {
+          if (layer || !p.canvas) return;
+          const wrap = document.createElement('div'); wrap.className = 'sim-canvas';
+          p.canvas.before(wrap); wrap.appendChild(p.canvas);
+          layer = document.createElement('div'); layer.className = 'sim-tex-layer'; layer.setAttribute('aria-hidden', 'true');
+          wrap.appendChild(layer);
+        };
         p.text = function (str, x, y, ...rest) {
           if (typeof str !== 'string' || !str.includes('$') || !window.katex || !p.canvas) return text.call(p, str, x, y, ...rest);
-          if (!layer) {
-            const wrap = document.createElement('div'); wrap.className = 'sim-canvas';
-            p.canvas.before(wrap); wrap.appendChild(p.canvas);
-            layer = document.createElement('div'); layer.className = 'sim-tex-layer'; layer.setAttribute('aria-hidden', 'true');
-            wrap.appendChild(layer);
-          }
+          if (!layer) wrapCanvas();
           const ctx = p.drawingContext, m = ctx.getTransform(), pd = p.pixelDensity();
           const k = (p.canvas.clientWidth || p.width) / p.width;        // CSS size of the canvas against its own size
           const al = p.textAlign();
@@ -121,6 +125,7 @@
           const simRoot = document.getElementById('sim-root');
           if (simRoot) foldNotes(simRoot);
           if (simRoot && window.renderMathInElement) window.renderMathInElement(simRoot, MATH);   // labels and legends set once
+          wrapCanvas();
           fit();
           if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root());
           else window.addEventListener('resize', fit);

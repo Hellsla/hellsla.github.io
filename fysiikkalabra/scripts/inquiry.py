@@ -21,7 +21,8 @@ EXIT_TITLE, EXERCISES_TITLE = "Exit ticket", "Tehtävät"
 SIM_INFO = (("howto", "Käyttöohje"), ("model", "Mallin oletukset"), ("calc", "Laskennan selitys"))   # the sim activity's boxes, closed by default
 LEGACY_INFO = "Käyttöohje ja mallin oletukset"    # a long sim text written before 2026-10-26, shown behind one box
 LEAD_WORDS = 30                                   # a sim activity's visible lead is at most this long
-GRID_TYPES = ("hook", "choice", "numeric", "explain", "exit")   # consecutive ones sit side by side on a wide screen
+GRID_TYPES = ("choice", "numeric", "explain", "exit")   # consecutive ones sit side by side on a wide screen (the opening story reads on its own)
+CARD_TYPES = ("choice", "numeric", "explain", "experiment", "interpret", "reflect", "exit")   # a task: one card holds its heading, instructions, answers and feedback
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
@@ -334,6 +335,15 @@ def sim_parts(a, md):
     return (md(text) if text else ""), (f'<div class="sim-info">{info}</div>' if info else "")
 
 
+def toc_link(sid, n, title):
+    """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
+    (NAV); the side column on a wide screen shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
+    short = NAV.get(sid, title)
+    rest = title[len(short):] if title.startswith(short) else ""
+    return (f'<a href="#{sid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{short}'
+            + (f'<span class="toc-rest">{rest}</span>' if rest else "") + '</span></a>')
+
+
 def render(folder, inquiry, parts, md):
     """(body html, toc html). parts: {'intro': html, 'sections': {key: html}, 'sim': html (with a <!--sim-info--> slot),
     'exercises': html, 'exit': html}.
@@ -343,7 +353,9 @@ def render(folder, inquiry, parts, md):
     phone: the title and the "new this lesson" box side by side (.intro-row); consecutive GRID_TYPES activities in an
     .act-grid (two columns on a wide screen); the stage that holds the simulation as a .lab (the sim beside the
     experiments that use it); the Ennusta stage inside a <details class="fold"> that starts closed and keeps its answers
-    when closed; a theory figure beside its paragraph (build.py fig_rows)."""
+    when closed; a theory figure beside its paragraph (build.py fig_rows); each CARD_TYPES task as one .task-card that
+    holds its heading, instructions, answers and feedback (the three levels of the page: stage, task, what is inside a
+    task; teacher's brief 2026-10-27)."""
     lid = folder.name
     acts = inquiry["activities"]
     by_stage = {s: [] for s in STAGE_IDS}
@@ -388,14 +400,15 @@ def render(folder, inquiry, parts, md):
         elif t == "sim":
             lead, info = sim_parts(a, md)
             content = lead + parts["sim"].replace("<!--sim-info-->", info)
-        elif t == "exit": content = (md(a["text"]) if a.get("text") else "") + parts["exit"]
+        elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + (md(a["text"]) if a.get("text") else ""), 1)   # the heading first, then the lead
         else: content = ""
         hints = hints_html([md(h) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         if a.get("optional"):                          # a closed box, named, that a student may open or leave
             name = esc(a.get("title") or OPTIONAL_NAMES[t])
             return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">Valinnainen</span> {name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
-        return f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
+        card = " task-card" if t in CARD_TYPES else ""
+        return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'
 
     def flow(items, grid=True):
         out, run = [], []
@@ -423,14 +436,14 @@ def render(folder, inquiry, parts, md):
                      f'<span class="fold-status" data-n="{k}">{k} {"kysymys" if k == 1 else "kysymystä"}</span></summary>'
                      f'<div class="fold-body">{inner}</div></details>')
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
-        toc.append(f'<a href="#{sid}">{NAV.get(sid, title)}</a>')
-        if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit">{EXIT_TITLE}</a>')
+        toc.append(toc_link(sid, n, title))
+        if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit" class="toc-sub"><span class="toc-label">{EXIT_TITLE}</span></a>')
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
         text = md(ex_act["text"]) if ex_act and ex_act.get("text") else ""
         aid = ex_act["id"] if ex_act else "harjoitukset"
         body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{EXERCISES_TITLE}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
-        toc.append(f'<a href="#exercises">{EXERCISES_TITLE}</a>')
+        toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{EXERCISES_TITLE}</span></a>')
     return "\n".join(body), "".join(toc)
 
 

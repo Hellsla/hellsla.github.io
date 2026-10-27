@@ -83,16 +83,18 @@ def staged_example(lesson_html):
     """Worked example in stages. In lesson.md the solution of `## Esimerkki` is split by lines `<!-- vaihe -->`:
     the part before the first marker is the problem, each later part one stage of the solution. The page shows
     the problem and stage 1, and a button reveals the next stage (lesson.js). Without JavaScript, and in print,
-    every stage is visible."""
+    every stage is visible. The problem sits in its own framed box (.example-task); on a wide screen it stays in view
+    beside the steps (site.css .example)."""
     m = re.search(r"(<h2[^>]*>Esimerkki</h2>)(.*?)(?=<h2|<section|\Z)", lesson_html, flags=re.S)
     if not m or STEP not in m.group(2): return lesson_html
     parts = [p.strip() for p in m.group(2).split(STEP)]
     n = len(parts) - 1
     steps = "".join(f'<div class="step" data-step="{i}"><p class="step-label">Vaihe {i}/{n}</p>{p}</div>'
                     for i, p in enumerate(parts[1:], 1))
-    body = (f'{parts[0]}<div class="worked" data-steps="{n}">{steps}'
+    body = (f'<div class="example"><div class="example-task"><p class="example-label">Tehtävä</p>{parts[0]}</div>'
+            f'<div class="worked" data-steps="{n}">{steps}'
             f'<p class="step-controls"><button type="button" class="next-step">Näytä seuraava vaihe</button> '
-            f'<button type="button" class="all-steps">Näytä kaikki</button></p></div>')
+            f'<button type="button" class="all-steps">Näytä kaikki</button></p></div></div>')
     return lesson_html[:m.start(2)] + body + lesson_html[m.end(2):]
 
 
@@ -163,6 +165,13 @@ def exercise_html(e, solution_html):
             f'<details class="answer"><summary>Vastaus</summary><p>{ans}</p></details>{sol}</li>')
 
 
+def sim_head(inq):
+    """The simulation card's heading. In an inquiry lesson it is a label over the panel, and a status line under it names
+    the experiment that drives the simulation now (inquiry.js), so the picture and the task it serves stay linked."""
+    if not inq: return "<h2>Simulaatio</h2>"
+    return '<h3>Simulaatio</h3><p class="sim-context" aria-live="polite"></p>'
+
+
 NOTICE = {"legacy": '<p class="notice" role="note">Prototyyppiversio: tämä oppitunti on julkaistu ennen nykyistä tarkistuskäytäntöä ja odottaa uudistusta. Sisältö voi vielä muuttua.</p>',
           "draft": '<p class="notice" role="note">Luonnos: tätä oppituntia ei ole vielä tarkistettu.</p>', "reviewed": ""}
 assets = []  # published asset paths (relative to the output folder), checked before the swap
@@ -204,14 +213,14 @@ for folder in sorted((ROOT / "content").glob("*/*/")):
     where = courses.sim_dir(folder, meta)
     if where and where[0] == "lesson":                # FY3: sim.js in the lesson folder, published as <id>-sim.js
         shutil.copy(folder / "sim.js", SITE / f"{meta['id']}-sim.js"); assets.append(f"{meta['id']}-sim.js")
-        sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}><div id="sim-root"></div>'
+        sim = (f'<section id="sim">{sim_head(inq)}<div id="sim-root"></div>'
                f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{meta["id"]}-sim.js"></script><!--sim-info--></section>')
     elif where:                                       # a simulation folder of the course (or shared): published whole
         src, pub = where[1], where[2]
         if not (src / "sim.js").is_file(): sys.exit(f"{meta['id']}: simulation folder {src.relative_to(ROOT)} has no sim.js")
         shutil.copytree(src, SITE / pub, dirs_exist_ok=True); assets.append(f"{pub}/sim.js")
         css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (src / "sim.css").is_file() else ""
-        sim = (f'<section id="sim"><{"h3" if inq else "h2"}>Simulaatio</{"h3" if inq else "h2"}>{css}<div id="sim-root" data-base="{pub}/"></div>'
+        sim = (f'<section id="sim">{sim_head(inq)}{css}<div id="sim-root" data-base="{pub}/"></div>'
                f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script><!--sim-info--></section>')
     for ref in courses.pic_refs(folder):              # pictures the text refers to, at the same relative path
         if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")

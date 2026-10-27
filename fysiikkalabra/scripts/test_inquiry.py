@@ -81,7 +81,7 @@ def page_form(pg, b, url, acts, page):
     names = pg.evaluate(NAMES)
     old = [n for n in names if any(n == o or n.startswith(o + " ") for o in OLD_NAMES)]
     check("no old stage or section names in the nav or headings (Pohdinta, Teoriatiivistelmä, Exit ticket)", not old, str(old))
-    toc = pg.evaluate("[...document.querySelectorAll('nav.toc a')].map((a) => a.textContent)")
+    toc = pg.evaluate("[...document.querySelectorAll('nav.toc a')].map((a) => { const l = (a.querySelector('.toc-label') || a).cloneNode(true); l.querySelectorAll('.toc-rest').forEach((e) => e.remove()); return l.textContent; })")   # the short name; the side column adds the rest of a long title
     want = []
     for sid, t in inquiry.STAGES:
         here = [a for a in acts if a["stage"] == sid and a["type"] != "exercises"]
@@ -100,7 +100,7 @@ def page_form(pg, b, url, acts, page):
         boxes = pg.evaluate("[...document.querySelectorAll('#sim details')].map((d) => [d.querySelector('summary').textContent.trim(), d.open])")
         check("the simulation's explanations sit behind closed, named boxes", all(t and not o for t, o in boxes), str(boxes))
         words = pg.evaluate("""() => { const a = document.querySelector('.act-sim'); if (!a) return 0; const c = a.cloneNode(true);
-          c.querySelectorAll('label, .readout, .controls, button, select, summary, table, canvas, script, h3, details:not([open]) > :not(summary), .sim-moved').forEach((e) => e.remove());
+          c.querySelectorAll('label, .readout, .controls, button, select, summary, table, canvas, script, h3, details:not([open]) > :not(summary), .sim-moved, .sim-context').forEach((e) => e.remove());
           return c.textContent.trim().split(/\\s+/).filter(Boolean).length; }""")
         check("the simulation shows little text: picture, controls and values first", words <= 50, f"{words} visible words beside the controls and the readout")
     for w in (1280, 1920):
@@ -323,7 +323,7 @@ order = [page_html.index(f'id="{sid}"') for sid, _ in inquiry.STAGES]; check("st
 check("theory sections placed once", page_html.count('class="theory-h">Ydinajatus') == 1 and page_html.count('class="theory-h">Esimerkki') == 1)
 check("unplaced sections land in Teoriatiivistelmä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
 check("the exercises come last, after the exit ticket", page_html.index('id="exit"') < page_html.index('<section class="stage stage-practice" id="exercises"') and page_html.count('id="exercises"') == 1
-      and '<a href="#exit">Exit ticket</a><a href="#exercises">Tehtävät</a></nav>' in page_html)
+      and re.search(r'<a href="#exit"[^>]*>(?:(?!</a>).)*Exit ticket(?:(?!</a>).)*</a><a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 check("exercises and exit ticket kept (5/4/3, 3 items)", page_html.count('class="level"') == 3 and page_html.count("<li>Nostat 10") == 1 and '<span class="count">5 tehtävää' in page_html and '<span class="count">3 tehtävää' in page_html)
