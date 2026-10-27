@@ -1,6 +1,7 @@
 VERDICT: DONE
-Round 1, simulation redone before review (coordinator's finding: one object at a time). check_lesson.py all ok; test_sims.py 205 assertions.
-- assets/sims/fy1/fy1-1/sim.js: "Scale of the Universe" layout. Every object from about 1/2000 to 3 times the view width is drawn at once, to scale, side by side on the ground in size order; a larger one is cropped (limb arc), under 4 px a dot with a leader line; smooth fades; staggered/shrunk labels never overlap or leave the canvas (scanned L = -34 … 27,5 in steps of 0,1 at 360/390/1280 px). The ±10 buttons and arrow keys glide one power of ten. 40 objects now (21 new, so 2–5 are in view at every L except the physical gaps below). Sun granules no longer flicker.
-- lang/fi.json sims.fy1-1: 21 new object names. tests/sims/fy1-1.json: visibility and glide tests updated, new tests per object and 2–5 objects at 14 scales.
-- inquiry.json (sim activity text, howto, model, calc) and sim-spec.md: wording follows the new behaviour.
-Known gaps: L = -31,5 … -15,3 shows 0–1 objects (no known sizes between the Planck length and the proton; readout says so).
+
+figures.py + lesson.md: Linnunrata at exponent 21 (marker and aria-label).
+inquiry.json: pred-2 reveal min 3; exp-2 min 3, third row (object nearest the midpoint) required, question and hint reworded, solution notes the hair; mistake value 4.4e+26; "siroavat"; "Maan radan säde (1 AU)"; reflect prompt ties sizes to measurement; check-3 optional.
+lesson.md: Planck length introduced (not measured directly).
+answers.py, exercises.json, solutions.md: L1-04 now Venus-Earth, 137 s (figure no longer repeats it); L2-04 solution 1,31 million, three figures.
+sim.js: orange radius line on helio and oort (shared radiusLine helper).

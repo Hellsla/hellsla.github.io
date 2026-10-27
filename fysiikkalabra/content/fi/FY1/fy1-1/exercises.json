@@ -27,8 +27,8 @@
     {
       "id": "fy1-1-L1-04",
       "level": 1,
-      "text": "Valo kulkee Kuusta Maahan matkan $3{,}84\\cdot10^{8}\\,\\text{m}$ tasaisella nopeudella $3{,}00\\cdot10^{8}\\,\\text{m/s}$. Kuinka kauan matka kestää?",
-      "answer": 1.28,
+      "text": "Valo kulkee Venuksesta Maahan, kun planeetat ovat lähimmillään, matkan $4{,}10\\cdot10^{10}\\,\\text{m}$ tasaisella nopeudella $3{,}00\\cdot10^{8}\\,\\text{m/s}$. Kuinka kauan matka kestää?",
+      "answer": 137,
       "unit": "s",
       "tolerance": 0.02
     },

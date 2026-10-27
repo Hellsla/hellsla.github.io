@@ -84,7 +84,7 @@
       "justify": true,
       "reveal": {
         "after": "exp-2",
-        "min": 2
+        "min": 3
       },
       "prompt": "Planckin pituus on noin $10^{-35}\\,\\text{m}$ ja havaittavan maailmankaikkeuden halkaisija noin $10^{27}\\,\\text{m}$. Mikä seuraavista kohteista on kymmenpotensseissa mitattuna näiden kahden puolivälissä?",
       "choices": [
@@ -166,7 +166,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: Planckin pituudesta maailmankaikkeuteen",
-      "intro": "Testaa ennuste 2. Alkutila asettaa $L = -34$, jolloin lähin kohde on Planckin pituus. Kirjaa rivi. Zoomaa sitten ulospäin aina maailmankaikkeuteen asti ($L = 27{,}5$) ja kirjaa toinen rivi, kun havaittava maailmankaikkeus on lähin kohde. Voit halutessasi kirjata kolmannen rivin kohteesta, jonka arvelet olevan puolivälissä.",
+      "intro": "Testaa ennuste 2. Alkutila asettaa $L = -34$, jolloin lähin kohde on Planckin pituus. Kirjaa rivi. Zoomaa sitten ulospäin aina maailmankaikkeuteen asti ($L = 27{,}5$) ja kirjaa toinen rivi, kun havaittava maailmankaikkeus on lähin kohde. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä.",
       "initial": {
         "L": -34
       },
@@ -181,17 +181,17 @@
           "label": "n"
         }
       ],
-      "min": 2,
+      "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Laske pienimmän ja suurimman kohteen $n$-arvojen keskiarvo eli puoliväli suuruusluokkien akselilla.",
+        "prompt": "Laske pienimmän ja suurimman kohteen $n$-arvojen keskiarvo eli puoliväli suuruusluokkien akselilla. Zoomaa sitten sen kohdalle, kirjaa kolmas rivi ja vastaa: mikä on simulaation lähimmän kohteen $n$? Merkitse myös kohteen nimi muistiin.",
         "answer": -4,
         "unit": "",
         "tolerance": 0.02,
         "hints": [
           "Valitse taulukosta Planckin pituuden ja maailmankaikkeuden rivit ja lue niiden $n$-arvot.",
           "Puoliväli on kahden luvun keskiarvo, $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$. Käytä eksponentteja, älä kokoja metreinä.",
-          "Jos $n_\\text{min} = -35$ ja $n_\\text{max} = 27$, niin $n_\\text{keski} = \\dfrac{-35 + 27}{2}$."
+          "Jos $n_\\text{min} = -35$ ja $n_\\text{max} = 27$, niin $n_\\text{keski} = \\dfrac{-35 + 27}{2}$. Aseta sitten $L$ lähelle tulosta ja kirjaa kolmas rivi."
         ],
         "mistakes": [
           {
@@ -199,11 +199,11 @@
             "feedback": "Tämä on etäisyys keskikohdasta kumpaankin päähän, eli montako suuruusluokkaa on keskikohdasta Planckin pituuteen. Kysyttiin keskikohdan paikkaa, joka saadaan keskiarvona: $\\dfrac{-35 + 27}{2}$."
           },
           {
-            "value": -4e+26,
+            "value": 4.4e+26,
             "feedback": "Otit keskiarvon kokoina metreinä, mikä antaa suunnilleen maailmankaikkeuden koon puolikkaan. Suuruusluokilla keskikohta lasketaan eksponenttien keskiarvona."
           }
         ],
-        "solution": "**Annettu:** taulukosta Planckin pituuden rivillä $n_\\text{min} = -35$ ja maailmankaikkeuden rivillä $n_\\text{max} = 27$\n\n**Kysytty:** puolivälin eksponentti $n_\\text{keski}$\n\n**Periaate:** Koot ovat monessa eri kymmenpotenssissa, joten \"puolivälissä\" tarkoittaa yhtä monta suuruusluokkaa kummastakin päästä. Se on eksponenttien keskiarvo, ei kokojen keskiarvo metreinä.\n\n**Kaava:** $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $n_\\text{keski} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Vastaus:** $-4$ eli koko noin $10^{-4}\\,\\text{m}$; kokonaisluku, koska eksponentit ovat kokonaislukuja.\n\n**Järkevyys:** Keskikohdasta on Planckin pituuteen $-4 - (-35) = 31$ suuruusluokkaa ja maailmankaikkeuteen $27 - (-4) = 31$ suuruusluokkaa, joten väli on symmetrinen. Koko $10^{-4}\\,\\text{m}$ on kymmenesosamillimetri, noin hiuksen paksuus."
+        "solution": "**Annettu:** taulukosta Planckin pituuden rivillä $n_\\text{min} = -35$ ja maailmankaikkeuden rivillä $n_\\text{max} = 27$\n\n**Kysytty:** puolivälin eksponentti $n_\\text{keski}$\n\n**Periaate:** Koot ovat monessa eri kymmenpotenssissa, joten \"puolivälissä\" tarkoittaa yhtä monta suuruusluokkaa kummastakin päästä. Se on eksponenttien keskiarvo, ei kokojen keskiarvo metreinä.\n\n**Kaava:** $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $n_\\text{keski} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Vastaus:** $-4$ eli koko noin $10^{-4}\\,\\text{m}$; kokonaisluku, koska eksponentit ovat kokonaislukuja. Kun zoomaat tähän, simulaation lähin kohde on hius, jonka $n = -4$: laskettu puoliväli ja simulaation kohde täsmäävät.\n\n**Järkevyys:** Keskikohdasta on Planckin pituuteen $-4 - (-35) = 31$ suuruusluokkaa ja maailmankaikkeuteen $27 - (-4) = 31$ suuruusluokkaa, joten väli on symmetrinen. Koko $10^{-4}\\,\\text{m}$ on kymmenesosamillimetri, noin hiuksen paksuus."
       }
     },
     {
@@ -211,7 +211,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Miten koot on saatu selville?",
-      "text": "Mikään simulaation koko ei ole yhden mittanauhan tulos. Jokainen koko on päätelty mittauksista ja mallista, ja menetelmä vaihtelee mittakaavan mukaan.\n\n- **Protoni**, $1{,}7\\cdot10^{-15}\\,\\text{m}$: elektronien sironta protoneista ja atomien energiatasojen mittaus.\n- **Virus**, $1{,}0\\cdot10^{-7}\\,\\text{m}$: elektronimikroskooppi.\n- **Maa**, $1{,}27\\cdot10^{7}\\,\\text{m}$: geodeettiset mittaukset ja satelliitit.\n- **Maan rata**, $1{,}5\\cdot10^{11}\\,\\text{m}$: tutkamittaus planeetoista ja luotaimista.\n- **Lähin tähti**, $4{,}0\\cdot10^{16}\\,\\text{m}$: tähden näennäinen siirtyminen, kun Maa kiertää Aurinkoa (paralaksi).\n- **Maailmankaikkeus**, $8{,}8\\cdot10^{26}\\,\\text{m}$: galaksien havainnot ja laajenemisen malli.",
+      "text": "Mikään simulaation koko ei ole yhden mittanauhan tulos. Jokainen koko on päätelty mittauksista ja mallista, ja menetelmä vaihtelee mittakaavan mukaan.\n\n- **Protoni**, $1{,}7\\cdot10^{-15}\\,\\text{m}$: elektronien sironta protoneista ja atomien energiatasojen mittaus.\n- **Virus**, $1{,}0\\cdot10^{-7}\\,\\text{m}$: elektronimikroskooppi.\n- **Maa**, $1{,}27\\cdot10^{7}\\,\\text{m}$: geodeettiset mittaukset ja satelliitit.\n- **Maan radan säde (1 AU)**, $1{,}5\\cdot10^{11}\\,\\text{m}$: tutkamittaus planeetoista ja luotaimista.\n- **Lähin tähti**, $4{,}0\\cdot10^{16}\\,\\text{m}$: tähden näennäinen siirtyminen, kun Maa kiertää Aurinkoa (paralaksi).\n- **Maailmankaikkeus**, $8{,}8\\cdot10^{26}\\,\\text{m}$: galaksien havainnot ja laajenemisen malli.",
       "question": {
         "type": "choice",
         "prompt": "Protonia ei voi nähdä edes tehokkaalla mikroskoopilla. Mistä sen koko siis tiedetään?",
@@ -221,7 +221,7 @@
             "feedback": "Mikään mittanauha ei ole näin pieni, eikä protoni ole valon aallonpituutta suurempi, joten sitä ei voi nähdä suurennuslasilla. Koko päätellään välillisesti kokeista."
           },
           {
-            "text": "Kokeissa on ammuttu hiukkasia protoneihin ja mitattu, miten ne sirontavat. Mallista lasketaan, minkä kokoinen protonin on oltava, jotta sironta näyttää tällaiselta.",
+            "text": "Kokeissa on ammuttu hiukkasia protoneihin ja mitattu, miten ne siroavat. Mallista lasketaan, minkä kokoinen protonin on oltava, jotta sironta näyttää tällaiselta.",
             "feedback": "Oikein. Koko on mittausten ja mallin yhteistulos: mittaus kertoo, kuinka hiukkaset poikkeavat, ja malli kertoo, mitä poikkeama merkitsee koosta. Siksi mallin tarkentuminen voi muuttaa kokoa.",
             "correct": true
           },
@@ -250,7 +250,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi taulukoihin ja simulaatioon. Mitä opit kymmenpotenssien lukumäärästä ja kokojen suhteesta? Missä kohdassa kokojen alue yllätti sinut?",
+      "prompt": "Vertaa ennusteitasi taulukoihin ja simulaatioon. Mitä opit kymmenpotenssien lukumäärästä ja kokojen suhteesta? Mikä mittaus tai havainto on minkin koon takana (katso luvun menetelmät)? Missä kohdassa kokojen alue yllätti sinut?",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -391,7 +391,8 @@
         "Perustelen laskemalla, että Linnunrata ($10^{21}\\,\\text{m}$) ja atomi ($10^{-10}\\,\\text{m}$) eroavat noin 31 suuruusluokkaa, joten kuvaan ei mahdu molempia.",
         "Sanon, että simulaatio on malli, joka näyttää yhden mittakaavan kerrallaan ja jonka koot ovat pyöristettyjä."
       ],
-      "model": "Suuruusluokkien ero $\\Delta n = n_2 - n_1$ kertoo, montako kymmenpotenssia kohteiden koot ovat toisistaan, ja kokojen suhde on noin $10^{\\Delta n}$. Jos ero on viisi, suurempi kohde on noin $10^{5}$ eli satatuhatta kertaa suurempi. Linnunrata on suuruusluokkaa $10^{21}\\,\\text{m}$ ja vetyatomi $10^{-10}\\,\\text{m}$, joten ero on $21 - (-10) = 31$ suuruusluokkaa. Jos Linnunrata täyttää kuvan, atomin koko olisi murto-osa pikselistä, ja päinvastoin. Siksi simulaatio on malli, joka piirtää kohteet oikeassa kokosuhteessa vain yhdelle mittakaavalle kerrallaan. Mallin koot ovat pyöristettyjä arvoja, ja niiden tarkkuus vaihtelee."
+      "model": "Suuruusluokkien ero $\\Delta n = n_2 - n_1$ kertoo, montako kymmenpotenssia kohteiden koot ovat toisistaan, ja kokojen suhde on noin $10^{\\Delta n}$. Jos ero on viisi, suurempi kohde on noin $10^{5}$ eli satatuhatta kertaa suurempi. Linnunrata on suuruusluokkaa $10^{21}\\,\\text{m}$ ja vetyatomi $10^{-10}\\,\\text{m}$, joten ero on $21 - (-10) = 31$ suuruusluokkaa. Jos Linnunrata täyttää kuvan, atomin koko olisi murto-osa pikselistä, ja päinvastoin. Siksi simulaatio on malli, joka piirtää kohteet oikeassa kokosuhteessa vain yhdelle mittakaavalle kerrallaan. Mallin koot ovat pyöristettyjä arvoja, ja niiden tarkkuus vaihtelee.",
+      "optional": true
     },
     {
       "id": "lahtolippu",

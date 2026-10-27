@@ -43,9 +43,9 @@ Tutkimus etenee kierroksina. Havainto herättää kysymyksen, kysymykseen ehdote
 
 ### Koot vaihtelevat kymmenpotenssien verran
 
-Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{-15}\,\text{m}$ ja havaittava maailmankaikkeus noin $8{,}8\cdot10^{26}\,\text{m}$. Näin laajaa aluetta ei voi kirjoittaa tavallisina lukuina. Siksi käytetään **kymmenpotenssimuotoa** $a\cdot10^{n}$, jossa $1 \le a < 10$ ja $n$ on kokonaisluku. Kun eksponentti $n$ kasvaa yhdellä, luku kymmenkertaistuu.
+Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{-15}\,\text{m}$ ja havaittava maailmankaikkeus noin $8{,}8\cdot10^{26}\,\text{m}$. Näin laajaa aluetta ei voi kirjoittaa tavallisina lukuina. Siksi käytetään **kymmenpotenssimuotoa** $a\cdot10^{n}$, jossa $1 \le a < 10$ ja $n$ on kokonaisluku. Kun eksponentti $n$ kasvaa yhdellä, luku kymmenkertaistuu. Pienimmäksi mielekkääksi pituudeksi kutsutaan **Planckin pituutta**, noin $1{,}6\cdot10^{-35}\,\text{m}$. Sitä ei ole mitattu suoraan, vaan se on laskettu luonnonvakioista.
 
-<svg data-fig="scale-axis" viewBox="0 0 600 346" role="img" aria-label="Kaavakuva, jossa koot on merkitty kymmenpotenssien akselille: vaaka-akselilla on koon d suuruusluokka kymmenpotensseina, akseli piirretty mittakaavassa. Vasemmalta oikealle protoni 10 potenssiin −15 metriä, vetyatomi −10, hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 20 ja maailmankaikkeus 27. Yksi askel oikealle tarkoittaa kymmenkertaista kokoa." style="max-width:100%;font-size:24px">
+<svg data-fig="scale-axis" viewBox="0 0 600 346" role="img" aria-label="Kaavakuva, jossa koot on merkitty kymmenpotenssien akselille: vaaka-akselilla on koon d suuruusluokka kymmenpotensseina, akseli piirretty mittakaavassa. Vasemmalta oikealle protoni 10 potenssiin −15 metriä, vetyatomi −10, hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 21 ja maailmankaikkeus 27. Yksi askel oikealle tarkoittaa kymmenkertaista kokoa." style="max-width:100%;font-size:24px">
   <line x1="24" y1="236" x2="572" y2="236" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M584,236 L571,242 L571,230 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="52" y1="232" x2="52" y2="241" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
@@ -80,9 +80,9 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
   <line x1="335" y1="230" x2="335" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="304.5" y="123.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Aurinko}$</div></foreignObject>
   <circle cx="335" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="465" y1="230" x2="465" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="393.5" y="173.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Linnunrata}$</div></foreignObject>
-  <circle cx="465" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="476.5" y1="230" x2="476.5" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="410" y="173.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Linnunrata}$</div></foreignObject>
+  <circle cx="476.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="547.5" y1="230" x2="547.5" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="378" y="73.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{maailmankaikkeus}$</div></foreignObject>
   <circle cx="547.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>

@@ -583,6 +583,7 @@ new p5((p) => {
       disc(cx, cy, R, rg(cx - 0.15 * R, cy, 0.1 * R, cx, cy, R, [[0, 'rgba(255,214,102,0.32)'], [0.8, 'rgba(255,170,80,0.2)'], [1, 'rgba(255,140,60,0.4)']]));
       const c = ctx(); c.save(); c.setLineDash([6, 5]); disc(cx, cy, R, null, 'rgba(232,118,28,0.95)', 2); disc(cx, cy, R * 0.25, null, f > 0.5 ? 'rgba(60,70,90,0.6)' : 'rgba(200,215,245,0.7)', 1.2); c.restore();
       disc(cx, cy, Math.max(3, S * 0.01), rg(cx, cy, 0, cx, cy, Math.max(3, S * 0.01), [[0, '#fff9db'], [1, '#f08c00']]), '#e67700', 1);
+      radiusLine(cx, cy, R, -0.5);
     },
     oort(cx, yb, S, f) {                                 // a shell of icy bodies; the planets' region is a speck in the middle
       const R = S / 2, cy = yb - R, c = ctx();
@@ -590,6 +591,7 @@ new p5((p) => {
       c.save(); c.fillStyle = f > 0.5 ? 'rgba(40,60,110,0.85)' : 'rgba(225,238,255,0.9)'; const s = Math.max(1, S * 0.006);
       COMET.forEach(([u, v, a]) => { c.globalAlpha *= 1; c.fillRect(cx + u * R - s / 2, cy + v * R - s / 2, s * a, s * a); }); c.restore();
       disc(cx, cy, Math.max(2.5, S * 0.012), '#ffd43b', '#fff', 1);
+      radiusLine(cx, cy, R, -0.5);
     },
     orion(cx, yb, S) {                                   // a glowing gas cloud where stars are born
       const R = S / 2, cy = yb - R * 0.8, c = ctx(), col = ['255,120,170', '120,160,255', '190,120,255'];
@@ -618,6 +620,12 @@ new p5((p) => {
     laniakea(cx, yb, S) { webPic(cx, yb, S, 'rgba(255,170,120,0.55)', true); },
   };
 
+  // the measured radius: a line from the centre to the edge at angle `ang`, in the measuring colour
+  function radiusLine(cx, cy, R, ang) {
+    const ex = cx + R * Math.cos(ang), ey = cy + R * Math.sin(ang), px = -Math.sin(ang) * 5, py = Math.cos(ang) * 5;
+    line(cx, cy, ex, ey, 'rgb(232,118,28)', 2.2); line(ex - px, ey - py, ex + px, ey + py, 'rgb(232,118,28)', 2.2, 'butt');
+  }
+
   // plan view of orbits around the Sun: `radii` in AU, outermost `rmax` AU is the picture's radius S / 2
   function orbitPicture(cx, yb, S, radii, rmax, f) {
     const R = S / 2, cy = yb - R, c = ctx(), colP = ['#adb5bd', '#e8c17a', '#339af0', '#e8590c', '#d9a066', '#e6cf9a', '#74c0fc', '#4263eb'];
@@ -627,8 +635,7 @@ new p5((p) => {
     disc(cx, cy, Math.max(3, S * 0.012), rg(cx, cy, 0, cx, cy, Math.max(3, S * 0.012), [[0, '#fff9db'], [1, '#f08c00']]), '#e67700', 1);
     disc(cx, cy, Math.max(7, S * 0.03), rg(cx, cy, 0, cx, cy, Math.max(7, S * 0.03), [[0, 'rgba(255,200,60,0.5)'], [1, 'rgba(255,200,60,0)']]));
     // the measured radius: from the Sun to the outermost planet, in the measuring colour
-    const ang = -0.5 - (radii.length - 1) * 0.75, ex = cx + R * Math.cos(ang), ey = cy + R * Math.sin(ang);
-    line(cx, cy, ex, ey, 'rgb(232,118,28)', 2.2); const px = -Math.sin(ang) * 5, py = Math.cos(ang) * 5; line(ex - px, ey - py, ex + px, ey + py, 'rgb(232,118,28)', 2.2, 'butt');
+    radiusLine(cx, cy, R, -0.5 - (radii.length - 1) * 0.75);
     radii.forEach((a, i) => { const an = -0.5 - i * 0.75, x = cx + R * a / rmax * Math.cos(an), y = cy + R * a / rmax * Math.sin(an); disc(x, y, 2.4 + (i > 3 ? 1.6 : 0.4) + (radii.length === 1 ? 1.6 : 0), colP[radii.length === 1 ? 2 : i], '#fff', 1); });
   }
 

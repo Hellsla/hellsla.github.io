@@ -8,7 +8,7 @@ a = {}
 a["fy1-1-L1-01"] = 7.5e-6 / 1e-6                     # red blood cell: 7,5·10⁻⁶ m / (10⁻⁶ m/µm) = 7,5 µm
 a["fy1-1-L1-02"] = -2 - (-10)                        # orders 10⁻² m (ant) and 10⁻¹⁰ m (atom): Δn = n₂ − n₁ = −2 − (−10) = 8
 a["fy1-1-L1-03"] = 1.27e7 / 1000                     # Earth: 1,27·10⁷ m / 1000 m/km = 1,27·10⁴ km = 12 700 km
-a["fy1-1-L1-04"] = 3.84e8 / 3.00e8                   # light Moon–Earth: t = s / c = 3,84·10⁸ m / 3,00·10⁸ m/s = 1,28 s
+a["fy1-1-L1-04"] = 4.10e10 / 3.00e8                  # light Venus–Earth (closest): t = s / c = 4,10·10¹⁰ m / 3,00·10⁸ m/s = 137 s
 a["fy1-1-L1-05"] = 7.0e-5 / 7.5e-6                   # hair / red blood cell: k = 7,0·10⁻⁵ / 7,5·10⁻⁶ = 9,33
 # Level 2: conversion, rearrangement or two steps
 c = 2.998e8; year = 3.156e7

@@ -29,14 +29,14 @@
 **Järkevyys:** Maan ympärysmitta on noin $40\,000\,\text{km}$, ja halkaisija on ympärysmitta jaettuna luvulla $\pi \approx 3{,}14$, siis noin $12\,700\,\text{km}$. Tulos täsmää.
 
 ## fy1-1-L1-04
-**Annettu:** matka $s = 3{,}84\cdot10^{8}\,\text{m}$ ja valon nopeus $c = 3{,}00\cdot10^{8}\,\text{m/s}$; nopeus on tasainen
+**Annettu:** matka $s = 4{,}10\cdot10^{10}\,\text{m}$ ja valon nopeus $c = 3{,}00\cdot10^{8}\,\text{m/s}$; nopeus on tasainen
 **Kysytty:** aika $t$ yksikössä $\text{s}$
 **Periaate:** Valo kulkee tasaisella nopeudella, joten matka on nopeuden ja ajan tulo. Aika saadaan jakamalla matka nopeudella.
 **Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$
 **Muunnokset:** Ei tarvita: matka on metreinä ja nopeus yksikössä $\text{m/s}$, joten tulos tulee sekunteina.
-**Sijoitus:** $t = \dfrac{3{,}84\cdot10^{8}\,\text{m}}{3{,}00\cdot10^{8}\,\text{m/s}} = \dfrac{3{,}84}{3{,}00}\cdot10^{8-8}\,\text{s} = 1{,}28\,\text{s}$
-**Vastaus:** $1{,}28\,\text{s}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.
-**Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa ja Kuu on noin $4\cdot10^{8}\,\text{m}$ päässä, joten aika on hieman yli sekunnin. Tämä vastaa tunnettua Kuun valoaikaa.
+**Sijoitus:** $t = \dfrac{4{,}10\cdot10^{10}\,\text{m}}{3{,}00\cdot10^{8}\,\text{m/s}} = \dfrac{4{,}10}{3{,}00}\cdot10^{10-8}\,\text{s} = 1{,}367\cdot10^{2}\,\text{s} = 137\,\text{s}$
+**Vastaus:** $137\,\text{s}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.
+**Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa ja Venus on noin $4\cdot10^{10}\,\text{m}$ päässä, joten aika on noin $\dfrac{4\cdot10^{10}}{3\cdot10^{8}} \approx 1{,}3\cdot10^{2}\,\text{s}$ eli vajaat kaksi ja puoli minuuttia. Se on lyhyempi kuin valon matka Auringosta (500 s), koska Venus on lähempänä kuin Aurinko.
 
 ## fy1-1-L1-05
 **Annettu:** hiuksen paksuus $d_2 = 7{,}0\cdot10^{-5}\,\text{m}$ ja punasolun halkaisija $d_1 = 7{,}5\cdot10^{-6}\,\text{m}$
@@ -85,7 +85,7 @@
 **Kaava:** $\dfrac{V_\text{A}}{V_\text{M}} = \left(\dfrac{d_\text{A}}{d_\text{M}}\right)^{3}$
 **Muunnokset:** Halkaisijat ovat samassa yksikössä, joten suhde on pelkkä luku. Vastaus annetaan miljoonina: $1\text{ miljoona} = 10^{6}$.
 **Sijoitus:** $\dfrac{d_\text{A}}{d_\text{M}} = \dfrac{1{,}39\cdot10^{9}}{1{,}27\cdot10^{7}} = 109{,}4$ ja $\left(109{,}4\right)^{3} = 1{,}31\cdot10^{6} = 1{,}31$ miljoonaa
-**Vastaus:** $1{,}3$ miljoonaa Maata eli $1{,}3\cdot10^{6}$, kaksi merkitsevää numeroa (tiedoissa on kolme, mutta tulos pyöristetään kahteen; kenttään sopii $1{,}31$).
+**Vastaus:** $1{,}31$ miljoonaa Maata eli $1{,}31\cdot10^{6}$, kolme merkitsevää numeroa kuten halkaisijoissa.
 **Järkevyys:** Halkaisijoiden suhde on noin $10^{2}$, joten tilavuuksien suhde on noin $\left(10^{2}\right)^{3} = 10^{6}$. Tulos $1{,}3\cdot10^{6}$ on tätä luokkaa: miljoona Maata mahtuisi Aurinkoon.
 
 ## fy1-1-L3-01

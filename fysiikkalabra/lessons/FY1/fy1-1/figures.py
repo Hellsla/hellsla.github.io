@@ -67,7 +67,7 @@ def hero():
 def scale_axis():
     f = Fig("fy11-axis", 346, "Kaavakuva, jossa koot on merkitty kymmenpotenssien akselille: vaaka-akselilla on koon d suuruusluokka "
             "kymmenpotensseina, akseli piirretty mittakaavassa. Vasemmalta oikealle protoni 10 potenssiin −15 metriä, vetyatomi −10, "
-            "hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 20 ja maailmankaikkeus 27. Yksi askel oikealle tarkoittaa kymmenkertaista kokoa.")
+            "hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 21 ja maailmankaikkeus 27. Yksi askel oikealle tarkoittaa kymmenkertaista kokoa.")
     y0, x0, step = 236, 40, 11.8                      # the axis: exponent n at x0 + (n + 16) step
     X = lambda n: x0 + (n + 16) * step
     f.arrow(24, y0, 584, y0, INK, 2.5, 13)
@@ -78,7 +78,7 @@ def scale_axis():
     f.tex(584, y0 + 66, r"d\ (\text{m})", "end")
     marks = [(-15, 1, "protoni", "middle", 62), (-10, 2, "vetyatomi", "middle", 120), (-4, 1, "hius", "middle", 184),
              (0, 3, "ihminen", "middle", 232), (7, 1, "Maa", "middle", X(7)), (9, 2, "Aurinko", "middle", 352),
-             (20, 1, "Linnunrata", "middle", 460), (27, 3, "maailmankaikkeus", "end", 586)]
+             (21, 1, "Linnunrata", "middle", X(21)), (27, 3, "maailmankaikkeus", "end", 586)]
     rows = {1: 188, 2: 138, 3: 88}
     for n, r, name, anchor, lx in marks:
         yl = rows[r]

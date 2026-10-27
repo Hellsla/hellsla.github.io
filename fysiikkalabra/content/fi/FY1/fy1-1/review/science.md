@@ -1,23 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: be18593c28fd79f4
+VERDICT: PASS
+CONTENT-HASH: 854339dfffa32b9d
 
 ## Blocking
-- lessons/FY1/fy1-1/figures.py:70,81 (lesson.md:48,83, figure `scale-axis`): the figure says its axis is to scale and that it plots each size's order of magnitude, but it puts the Milky Way at 10^20. Its size of about 9,5·10^20 m (the sim's value, 10^5 ly) is of order 10^21 under the lesson's own rule (a > about 3), and check-3's model answer uses 10^21 m. Fix: put it at exponent 21 (marker x ≈ 476.8) and change "Linnunrata 20" to "21" in the aria-label.
 
 ## Polish
-- inquiry.json:202: exp-2 mistake value `-4e+26` has the wrong sign. The mean of the two sizes in metres is +4,4·10^26 m, so this feedback never fires. Fix: use `4.4e+26`.
-- solutions.md:88 (L2-04): "tiedoissa on kolme, mutta tulos pyöristetään kahteen" gives no reason, and the house rule says three figures. Fix: give 1,31 miljoonaa (three significant figures).
-- inquiry.json `menetelmat`: "Maan rata 1,5·10^11 m" is the orbit's radius (1 AU), not the orbit's size. Fix: say "Maan radan säde (1 AU)".
-- sim.js `helio`/`oort`: unlike the planetary orbits, these have no radius marker, but their labels show the radius while the picture's width is the diameter. Fix: add the same orange radius line as `orbitPicture`.
+- lesson.md:46 — "Pienimmäksi mielekkääksi pituudeksi kutsutaan Planckin pituutta" claims more than is known. The Planck length is the scale at which current theories are expected to fail, not a proven smallest length. — Fix: "Planckin pituus, noin 1,6·10^-35 m, on mittakaava, jolla nykyiset teoriat lakkaavat toimimasta."
+- inquiry.json exp-2 hint 3 — "Aseta L lähelle tulosta" is ambiguous. mainObj picks the object nearest L + log10(150/560) ≈ L − 0,57, so the ×10 steps from 27,5 land on L = −4,5, where the nearest object is the red blood cell (n = −5). A student who records that row and types its n is marked wrong. — Fix: "Aseta $L = -4$" (the hair, n = −4).
 
 ## Checked
-- All 12 exercise answers, siirto (12 732 km and its three mistakes), check-2 (8,33 min) and the worked example (6,5·10^4, Δn = 5) were recomputed independently and match answers.py and the solutions.
-- Sim object sizes (40) against reference values: Planck length, proton (charge diameter), He and Pb nuclei, He and H atoms, DNA, virus, red blood cell, hair, 1 € coin, ball, blue whale, 828 m tower, Everest, Kármán line, Moon, Earth, Jupiter, Sun, 1 AU, Saturn and Neptune orbits, heliopause about 120 AU, Oort cloud about 10^5 AU, Proxima, Orion Nebula about 24 ly, LMC, Milky Way, Andromeda, Local Group, Virgo, Laniakea, observable universe. All are right to well within an order of magnitude.
-- To scale: every picture is drawn with S = ext/W·560 at one shared W. The layout spacing (slot, sc) moves pictures but never resizes them. Screenshots at L = 1 (human about 95 px, ball about 12 px, whale cropped) and L = −9 (H atom about 62 px, He atom about 35 px) agree. Orbits are drawn as diameters, and the radius marker matches the radius label.
-- Exaggerations are disclosed in `model`: the atom's nucleus, the stars in the Proxima picture, and the Planck grid as a symbol.
-- `kohdeExp = round(log10 m)` matches the "a ≈ 3" rule. The initial states give the right nearest object: L = −9 → H atom (−10), L = 1 → human (0), L = −34 → Planck (−35), L = 27,5 → universe (27). The answers 10 and −4 follow.
-- `calc` text: 0,3–1700 px matches fadeIn/fadeOut. The scale bar is 10^floor(L) m.
-- The light-time figure (1,28 s, 8,3 min, 4,2 a) and the light-year (9,46·10^15 m) are correct.
-- Every prediction's correct option and the numbers in its feedback, the Etsi virhe item (factor 109), check-1 (10^17) and the exit ticket are correct.
-- Scope: powers of ten, orders of magnitude and s = ct as a linear model are within FY1.
+- Round-1 blocking item fixed: the Milky Way is at exponent 21 in figures.py and lesson.md (marker x = 476,5 ≈ X(21) = 476,6; the aria-label says 21). It now agrees with check-3 and the sim (9,5·10^20 m).
+- Round-1 polish fixed. The exp-2 mistake is now 4,4·10^26, my recomputed mean of the sizes in metres. L2-04 gives 1,31 million with three figures (109,45³ = 1,311·10^6). The menetelmat item reads "Maan radan säde (1 AU)". helio and oort have the radius line (radiusLine at R = S/2, ext = 2m, so it matches the radius label). The refactored orbitPicture call is unchanged in behaviour.
+- New L1-04: Venus–Earth at closest approach, 4,10·10^10 m, is realistic (about 38–43 Gm). t = s/c = 136,7 s → 137 s (3 s.f.), as in answers.py and the solution. The symbolic step, the units and the reasonableness check (shorter than the Sun's 500 s) are correct.
+- exp-2 with min 3: at L = −4 the nearest object is the hair (log 7,0·10^-5 = −4,15, round to −4), so the solution's "hius, n = −4" and the answer −4 hold. The initial states and the controlled settings are unchanged.
+- Planck length 1,6·10^-35 m, "laskettu luonnonvakioista, ei mitattu suoraan": correct (√(ħG/c³)).
+- answers.py rerun: every value is unchanged except L1-04. Exercise and inquiry answers match.
+- The light-time figure (Moon 1,28 s, Sun 8,3 min, Proxima 4,2 a) is still correct.
+- check-3 marked optional: its physics is unchanged.
 - Hash unchanged at the start and the end.
