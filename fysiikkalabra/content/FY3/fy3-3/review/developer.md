@@ -1,7 +1,6 @@
 VERDICT: DONE
 
-solutions.md: all 12 solutions now have the full step set (Annettu, Kysytty, Periaate, Kaava solved in symbols, Muunnokset, Sijoitus, Vastaus with the significant-figure reason, Järkevyys as a real check). L2-03 also has Kuvaajan lukeminen. The Järkevyys checks are recomputed: back-conversion, estimates, p/T constant, p proportional to T for the extrapolation (86,7 kPa vs 86,86 kPa). No numeric errors found in the old solutions.
-
-lesson.md ## Esimerkki: the problem text and the figure are kept. The solution is now the seven stages (Tunnetut ja kysytty with the figure, Periaate, Kaava ratkaistuna, Yksikkömuunnokset, Sijoitus, Tulos, Järkevyys). The old Kulmakerroin stage moved into Kaava ratkaistuna and Sijoitus, and the Järkevyys gained an independent T-proportional check. Nothing else in lesson.md was touched.
-
-inquiry.json: rewrote the solution of the numeric tasks siirto and check-2 in the full format. No other field was changed. Both tasks already had solutions, but in the old short form.
+solutions.md: L2-03 and L2-04 Vastaus now name the limiting datum (difference 137-110 = 27 kPa, two figures; T = 100 K and 400 K, three figures, answer 4,00). L2-02 Vastaus names Δp = 33 kPa. L1-03 and L1-05 say the exact 273,15 does not limit and give the decimal-rule value. L3-03 "pienimmillään (mallissa nolla)".
+inquiry.json: check-2 solution "Taulukosta luetaan".
+exit-ticket.json: −273,15 °C (noin −273 °C).
+answers.py, exercises, sim unchanged.

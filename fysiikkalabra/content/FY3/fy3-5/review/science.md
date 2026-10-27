@@ -1,15 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: de5a8ebe1ca2e4cf
-
+VERDICT: FAIL
+CONTENT-HASH: bf9755f9a0d272c5
 ## Blocking
-
+- solutions.md:78 (L2-03) — wrong rounding claim: $-1{,}2\,\text{kJ} - (-2{,}0\,\text{kJ}) = 0{,}8\,\text{kJ}$ is known to 0,1 kJ, i.e. one significant figure, not "kaksi … kuten tiedoissa" (NOTES §2). — Fix: "$800\,\text{J} = 0{,}8\,\text{kJ}$; erotus tunnetaan sadan joulen tarkkuudella kuten tiedot, joten yksi merkitsevä numero."
+- solutions.md:104 (L3-02) — principle rests on "liike-energia ei muutu" and "potentiaalienergia $mgh$"; $E_k$, $E_p$ are FY4 (scope note). — Fix: constant speed, so the rope pulls with $F = G = mg$; over height $h$ the rope/wheel does $W_1 = Fh = mgh$ on the water.
 ## Polish
-- inquiry.json:113 (`kokeile.calc`) — "$v_x' = 2u - v_x$" is right only with the x axis along the piston's motion; the sim's piston is on the right and moves in −x (sim.js:3–4, `bounce = 2w − vx`, w = −u), where the same reflection reads $v_x' = -2u - v_x$. The axis is never stated, so a student who reads x from the picture gets a speed that shrinks by 2u — add "kun x-akseli osoittaa männän liikkeen suuntaan" (or write $|v_x'| = |v_x| + 2u$).
-- inquiry.json:112 — $T_2 = T_1(V_1/V_2)^{\gamma-1}$ is beyond FY3's central contents; acceptable inside the closed model box as a check of the model, keep it out of the theory and tasks.
-
+- solutions.md:48 (L1-05) — "kuten luvussa 85 J" is the product rule; say "kokonaisina jouleina, koska molemmat siirrot tunnetaan kokonaisina jouleina" as in L1-01/03/04.
+- solutions.md:68 (L2-02) — "(kolmas numero on nolla)" is unclear; say 180 kJ is known to 10 kJ, so 160 kJ has two figures.
+- L2-04 Vastaus — the reason for two figures is that $W = 10\,\text{kJ}$ is known to 1 kJ; say so.
 ## Checked
-- Diff since cb4b8f4: only `kokeile.model` and `kokeile.calc` changed; answers.py, exercises.json, lesson.md and sim.js unchanged, so the round-1 recomputation (12 exercises, transfer 5,4 J, check-2 30 J, exit ticket 180 J) still holds.
-- New model sentence: "työ vaihtelisi noin 11–15 J" with other random initial states matches the round-1 seed sweep (11,2–15,2 J); attributing the 330 K vs 329 K gap mainly to N = 40 is now correct.
-- Adiabat check 293 K · (4/3)^0,4 = 328,9 K; sim 329,7 K within that scatter.
-- `calc`: u/w mix-up of round 1 removed; remaining statements (W = force × distance, ΔU = Q + W, ΔT = W/C, piston 50× and 3,5× slower than particles) unchanged and correct.
-- Hash identical at start and end.
+- All 12 answers.py values, siirto 5,4 J, check-2 30 J, example 110 J, exit 180 J recomputed: all match; mistake values (6,6; 599,4; 230; 10) match their stated errors.
+- Sign convention ΔU = Q + W (work on the system) consistent across lesson, figures, inquiry, exercises, solutions, sim.
+- Sim run in Playwright: slow insulated W = ΔU = 13,14 J, T 329,7 K; fast 19,06 J, ΔT 53,1 K; slow conducting W 12,38 J, Q −12,38 J, T 293,15 K, p 1,333 p₀ — every number in pred-1/2, koe-2, johtopäätös holds; 1/0,359 = 2,79 K/J.
+- 293·(4/3)^0,4 = 328,9 K, C·ΔT = 12,8 J: model text right.
+- Sim physics: v' = 2w − v; cosine-law re-emission, Beta(3/2,3/2) split and Gamma(3/2) internal energy correct for 2+3 dof; conducting wall T₀/T scaling sound; speed ratios 1/53, 1/3,5 as stated.
+- Experiments isolate the varied parameter; simState gives measured keys.
+- Example and every solution: principle and reason, symbolic first, conversions right, real reasonableness checks.
+- L3-01/L3-03 ideal-gas U(T, n) reasoning right and in scope.
+- Figures qualitative, marked "ei mittakaavassa", signs right.

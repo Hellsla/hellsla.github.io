@@ -139,11 +139,11 @@ missä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), $\rho$ nesteen
 </svg>
 
 ## Esimerkki
-Sukeltaja on järvessä 12 m:n syvyydessä vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys 1000 kg/m³. Mikä on paine sukeltajan ympärillä, ja kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on 150 cm², kun huoneessa on ilmaa normaalipaineessa?
+Sukeltaja on järvessä 12,0 m:n syvyydessä vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys 1000 kg/m³. Mikä on paine sukeltajan ympärillä, ja kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on 150 cm², kun huoneessa on ilmaa normaalipaineessa?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Syvyys $h = 12\,\text{m}$, ilmanpaine $p_0 = 101\,\text{kPa}$, taulukosta tai tehtävästä veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$ ja ikkunan ala $A = 150\,\text{cm}^2$. Kysytään kokonaispaine $p$ sukeltajan ympärillä ja ikkunaan kohdistuva voima $F$.
+**Tunnetut ja kysytty.** Syvyys $h = 12{,}0\,\text{m}$, ilmanpaine $p_0 = 101\,\text{kPa}$, taulukosta tai tehtävästä veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$ ja ikkunan ala $A = 150\,\text{cm}^2$. Kysytään kokonaispaine $p$ sukeltajan ympärillä ja ikkunaan kohdistuva voima $F$.
 
 <!-- vaihe -->
 
@@ -171,7 +171,7 @@ F &= \rho g h \cdot A
 &\rho g h \\
 &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \\
 &\quad \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
-&\quad \cdot 12\,\text{m} \\
+&\quad \cdot 12{,}0\,\text{m} \\
 &= 117\,720\,\text{Pa} \\[6pt]
 &p = p_0 + \rho g h \\
 &= 101\,000\,\text{Pa} \\
@@ -186,7 +186,7 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}8\,\text{kN}$. Paine annetaan kolmella merkitsevällä numerolla kuten ilmanpaine $101\,\text{kPa}$. Voima annetaan kahdella, koska syvyys $12\,\text{m}$ ja ala $150\,\text{cm}^2$ on annettu kahdella numerolla.
+**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}8\,\text{kN}$. Paine annetaan kolmella merkitsevällä numerolla, koska syvyys $12{,}0\,\text{m}$ ja ilmanpaine $101\,\text{kPa}$ on annettu kolmella numerolla. Voima annetaan kahdella, koska ala $150\,\text{cm}^2$ on annettu kahdella numerolla.
 
 <!-- vaihe -->
 

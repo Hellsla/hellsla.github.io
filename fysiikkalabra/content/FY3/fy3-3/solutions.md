@@ -25,7 +25,7 @@
 **Kaava:** $T = \theta + 273{,}15$, josta $\theta = T - 273{,}15$
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = 77{,}4 - 273{,}15 = -195{,}75\,{}^\circ\text{C}$
-**Vastaus:** $-196\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten arvossa $77{,}4\,\text{K}$.
+**Vastaus:** $-196\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten arvossa $77{,}4\,\text{K}$ (tarkka vakio $273{,}15$ ei rajoita; desimaalin tarkkuudella tulos olisi $-195{,}8\,{}^\circ\text{C}$).
 **Järkevyys:** Typpi on ilman pääainesosa ja nesteytyy vasta hyvin kylmässä: tulos on selvästi alle veden jäätymispisteen $0\,{}^\circ\text{C}$ mutta yli absoluuttisen nollapisteen $-273{,}15\,{}^\circ\text{C}$. Takaisinlasku: $-195{,}75 + 273{,}15 = 77{,}4\,\text{K}$. Arvio: $77 - 273 \approx -196$.
 
 ## fy3-3-L1-04
@@ -45,7 +45,7 @@
 **Kaava:** $T = \theta + 273{,}15$, josta $\theta = T - 273{,}15$
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = 2{,}7 - 273{,}15 = -270{,}45\,{}^\circ\text{C}$
-**Vastaus:** $-270\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten arvossa $2{,}7\,\text{K}$.
+**Vastaus:** $-270\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten arvossa $2{,}7\,\text{K}$ (tarkka vakio $273{,}15$ ei rajoita; desimaalin tarkkuudella tulos olisi $-270{,}5\,{}^\circ\text{C}$).
 **Järkevyys:** Lämpötila on vain $2{,}7\,\text{K}$ absoluuttisen nollapisteen yläpuolella, joten sen täytyy olla vain vähän yli $-273{,}15\,{}^\circ\text{C}$: $-273{,}15 + 2{,}7 = -270{,}45$. Tulos ei alita absoluuttista nollapistettä, kuten ei saa.
 
 ## fy3-3-L2-01
@@ -65,7 +65,7 @@
 **Kaava:** kulmakerroin $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja suora $p = p_1 + k\theta$, koska $\theta_1 = 0\,{}^\circ\text{C}$; siis $p = p_1 + \dfrac{p_2 - p_1}{\theta_2 - \theta_1}\,\theta$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat samassa yksikössä, ja lämpötilaero $\theta_2 - \theta_1$ on sama celsiusasteina ja kelvineinä. Kulmakertoimen yksikkö on $\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
 **Sijoitus:** $k = \dfrac{(123 - 90{,}0)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 90{,}0\,\text{kPa} + 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 35\,{}^\circ\text{C} = 101{,}55\,\text{kPa}$
-**Vastaus:** $102\,\text{kPa}$, kolme merkitsevää numeroa kuten annetuissa paineissa.
+**Vastaus:** $102\,\text{kPa}$. Paine-ero $\Delta p = 123 - 90{,}0 = 33\,\text{kPa}$ on kaksinumeroinen, joten $k = 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $k\theta \approx 12\,\text{kPa}$; summa $90{,}0 + 12 = 102\,\text{kPa}$ pyöristyy kokonaisiin kilopascaleihin.
 **Järkevyys:** Lämpötila $35\,{}^\circ\text{C}$ on $35\,\%$ matkasta $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een, joten paineen pitää olla $35\,\%$ matkasta välillä $90{,}0\ldots123\,\text{kPa}$: $90{,}0 + 0{,}35 \cdot 33 = 101{,}55\,\text{kPa}$. Tulos on pisteiden paineiden välissä ja alle välin keskiarvon $106{,}5\,\text{kPa}$.
 
 ## fy3-3-L2-03
@@ -76,7 +76,7 @@
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$, joten $p = p_1 + \dfrac{p_2 - p_1}{\theta_2 - \theta_1}\,(\theta - \theta_1)$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina, ja lämpötilaerot ovat samat celsiusasteina ja kelvineinä.
 **Sijoitus:** $k = \dfrac{(137 - 110)\,\text{kPa}}{(80 - 10)\,{}^\circ\text{C}} = 0{,}385714\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 110\,\text{kPa} + 0{,}385714\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-50 - 10)\,{}^\circ\text{C} = 110\,\text{kPa} - 23{,}14\,\text{kPa} = 86{,}86\,\text{kPa}$
-**Vastaus:** $87\,\text{kPa}$, kaksi merkitsevää numeroa, koska ekstrapoloitu arvo on vain arvio.
+**Vastaus:** $87\,\text{kPa}$. Paine-ero $\Delta p = 137 - 110 = 27\,\text{kPa}$ on kaksinumeroinen, joten $k = 0{,}39\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $k\,\Delta\theta \approx 23\,\text{kPa}$; erotus $110 - 23 = 87\,\text{kPa}$ pyöristyy kokonaisiin kilopascaleihin (lukemien erotuksella on erotuksen numerot).
 **Järkevyys:** Kun lämpötila on mittausalueen alapuolella, paineen pitää olla pienempi kuin pienin mitattu $110\,\text{kPa}$, ja se on, mutta selvästi yli nollan. Riippumaton tarkistus: jos paine on verrannollinen kelvinlämpötilaan, $p \approx 110\,\text{kPa} \cdot \dfrac{223{,}15\,\text{K}}{283{,}15\,\text{K}} = 86{,}7\,\text{kPa}$, mikä on lähes sama.
 
 ## fy3-3-L2-04
@@ -86,7 +86,7 @@
 **Kaava:** $T = \theta + 273{,}15$, ja suhde $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{\theta_\text{päivä} + 273{,}15}{\theta_\text{yö} + 273{,}15}$
 **Muunnokset:** Molemmat lämpötilat muutetaan kelvineiksi lisäämällä $273{,}15$: $T_\text{yö} = -173 + 273{,}15 = 100{,}15\,\text{K}$ ja $T_\text{päivä} = 127 + 273{,}15 = 400{,}15\,\text{K}$.
 **Sijoitus:** $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{400{,}15\,\text{K}}{100{,}15\,\text{K}} = 3{,}9955$
-**Vastaus:** $4{,}0$ kertaa, kaksi merkitsevää numeroa, koska lämpötilat on annettu täysinä asteina.
+**Vastaus:** $4{,}00$ kertaa. Täydet asteet antavat kelvinlämpötilat $100\,\text{K}$ ja $400\,\text{K}$ kelvinin tarkkuudella, kolme merkitsevää numeroa kummassakin, joten osamäärässäkin on kolme.
 **Järkevyys:** Kelvineinä lämpötilat ovat noin $100\,\text{K}$ ja $400\,\text{K}$, joten suhde on noin $4$. Päiväpuoli on lämpimämpi, joten suhde on yli $1$. Celsiusasteiden suhde olisi $\tfrac{127}{-173} \approx -0{,}73$, mikä on mieletön vertailu.
 
 ## fy3-3-L3-01
@@ -112,7 +112,7 @@
 ## fy3-3-L3-03
 **Annettu:** $\theta_1 = 20{,}0\,{}^\circ\text{C}$ ja keskimääräinen liike-energia $E_2 = \tfrac{1}{2}E_1$
 **Kysytty:** loppulämpötila celsiusasteina, $\theta_2$
-**Periaate:** Hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan, koska kelvinasteikon nolla on absoluuttinen nollapiste, jossa liike-energia on nolla. Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
+**Periaate:** Hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan, koska kelvinasteikon nolla on absoluuttinen nollapiste, jossa liike-energia on pienimmillään (mallissa nolla). Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
 **Kaava:** $\dfrac{E_2}{E_1} = \dfrac{T_2}{T_1} = \dfrac{1}{2}$, josta $T_2 = \dfrac{T_1}{2}$, ja $\theta_2 = T_2 - 273{,}15$
 **Muunnokset:** Alkulämpötila muutetaan kelvineiksi: $T_1 = 20{,}0 + 273{,}15 = 293{,}15\,\text{K}$. Lopuksi $T_2$ muutetaan takaisin celsiusasteiksi vähentämällä $273{,}15$.
 **Sijoitus:** $T_2 = \dfrac{293{,}15\,\text{K}}{2} = 146{,}575\,\text{K}$, ja $\theta_2 = 146{,}575 - 273{,}15 = -126{,}575\,{}^\circ\text{C}$

@@ -65,7 +65,7 @@
 **Kaava:** $\Delta p = \rho g h$, josta $h = \dfrac{\Delta p}{\rho g}$
 **Muunnokset:** $350\,\text{kPa} = 350\,000\,\text{Pa}$, jotta yksiköt $\text{Pa} = \text{kg}/(\text{m}\cdot\text{s}^2)$ supistuvat metreiksi.
 **Sijoitus:** $h = \dfrac{350\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} = 35{,}678\,\text{m}$
-**Vastaus:** $35{,}7\,\text{m}$, kolme merkitsevää numeroa: ylipaine ja tiheys katsotaan kolmen numeron tarkkuudella annetuiksi.
+**Vastaus:** $35{,}7\,\text{m}$, kolme merkitsevää numeroa: ylipaine $350\,\text{kPa} = 3{,}50\cdot10^{2}\,\text{kPa}$ ja tiheys $1000\,\text{kg/m}^3$ ovat tässä kolmen numeron tarkkuudella annetut tiedot.
 **Järkevyys:** Vesi antaa noin $10\,\text{kPa}$ metriä kohti, joten $350\,\text{kPa}$ vastaa noin $35\,\text{m}$. Tarkka arvo on hieman suurempi, koska $g < 10\,\text{m/s}^2$. Takaisin laskettuna $\rho g h = 1000 \cdot 9{,}81 \cdot 35{,}7\,\text{Pa} \approx 350\,\text{kPa}$. Vesitornit ovat tämän korkuisia.
 
 ## fy3-4-L2-03
@@ -79,10 +79,10 @@
 **Järkevyys:** Öljy kelluu veden päällä, joten sen tiheyden pitää olla alle $1000\,\text{kg/m}^3$, ja tulos on. Takaisin laskettuna $920 \cdot 9{,}81 \cdot 0{,}800\,\text{Pa} \approx 7220\,\text{Pa}$. Jos öljyn tiheys olisi veden luokkaa, paine olisi noin $7{,}8\,\text{kPa}$.
 
 ## fy3-4-L2-04
-**Annettu:** ylipaine $p = 0{,}85\,\text{bar}$ (tehtävän mukaan $1\,\text{bar} = 100\,\text{kPa}$), kannen ala $A = 380\,\text{cm}^2$
+**Annettu:** ylipaine $\Delta p = 0{,}85\,\text{bar}$ (tehtävän mukaan $1\,\text{bar} = 100\,\text{kPa}$), kannen ala $A = 380\,\text{cm}^2$
 **Kysytty:** kanteen kohdistuva voima $F$ kilonewtoneina
 **Periaate:** Ylipaine työntää kantta sisältä päin joka kohdassa, ja paine on voima jaettuna alalla. Kokonaisvoima on siis ylipaine kerrottuna kannen alalla. Ulkoilman paine ei kuulu tähän, koska kysytään vain ylipaineen aiheuttamaa voimaa.
-**Kaava:** $p = \dfrac{F}{A}$, josta $F = pA$
+**Kaava:** $\Delta p = \dfrac{F}{A}$, josta $F = \Delta p\,A$
 **Muunnokset:** $0{,}85\,\text{bar} = 85\,\text{kPa} = 85\,000\,\text{Pa}$ ja $380\,\text{cm}^2 = 380 \cdot 10^{-4}\,\text{m}^2 = 0{,}0380\,\text{m}^2$. Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F = 85\,000\,\text{Pa} \cdot 0{,}0380\,\text{m}^2 = 3230\,\text{N} = 3{,}23\,\text{kN}$
 **Vastaus:** $3{,}2\,\text{kN}$, kaksi merkitsevää numeroa kuten ylipaineessa $0{,}85\,\text{bar}$.
@@ -115,5 +115,5 @@
 **Kaava:** kerrosten paineet lasketaan yhteen, joten $\Delta p = \rho_1 g h_1 + \rho_2 g h_2$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten paine tulee pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Sijoitus:** $\rho_1 g h_1 = 850\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}40\,\text{m} = 3335{,}4\,\text{Pa}$; $\rho_2 g h_2 = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}60\,\text{m} = 15\,696\,\text{Pa}$; $\Delta p = 3335{,}4\,\text{Pa} + 15\,696\,\text{Pa} = 19\,031{,}4\,\text{Pa}$
-**Vastaus:** $19\,\text{kPa}$, kaksi merkitsevää numeroa kuten öljykerroksen paksuudessa $0{,}40\,\text{m}$.
+**Vastaus:** $19{,}0\,\text{kPa}$ eli $19\,\text{kPa}$. Summassa desimaalit määräytyvät epätarkimman termin mukaan: öljykerroksen $3{,}3\,\text{kPa}$ (paksuus $0{,}40\,\text{m}$, kaksi numeroa) on tarkka desimaalin tarkkuudella, joten $3{,}3 + 15{,}7 = 19{,}0\,\text{kPa}$.
 **Järkevyys:** Jos koko $2{,}00\,\text{m}$ olisi vettä, ylipaine olisi $1000 \cdot 9{,}81 \cdot 2{,}00 = 19\,620\,\text{Pa}$. Öljy on kevyempää, joten tulos on pienempi: ero on $(1000 - 850) \cdot 9{,}81 \cdot 0{,}40\,\text{Pa} = 588{,}6\,\text{Pa}$ ja $19\,620 - 588{,}6 = 19\,031{,}4\,\text{Pa}$, kuten laskettiin.

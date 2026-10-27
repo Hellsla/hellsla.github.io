@@ -1,11 +1,5 @@
 VERDICT: DONE
 
-Complete model solutions (teacher 2026-10-27).
-
-solutions.md: all 15 blocks now have Annettu, Kysytty, Periaate (principle and why it fits: static incompressible fluid, weight spread evenly, layers added separately, overpressure vs. air pressure), Kaava ending with the unknown solved, Muunnokset (each conversion or why none), unrounded Sijoitus, Vastaus with value, unit and significant-figure reason, and a real Järkevyys (estimate, back-substitution, limiting case, comparison). Numbers unchanged; all agree with answers.py. No numeric error found in the old solutions; L2-04 no longer calls the given 1 bar = 100 kPa a table value.
-
-lesson.md ## Esimerkki: same problem and numbers, now exactly seven stages (Tunnetut ja kysytty, Periaate, Kaava ratkaistuna, Yksikkömuunnokset, Sijoitus, Tulos, Järkevyys); one display block per stage, first row symbolic. Rest untouched.
-
-inquiry.json: added solutions to exp-1 question (slope 9,81 kPa/m from the table), and rewrote siirto (0,757 m) and check-2 (892 kg/m³, with Kuvaajan lukeminen) in the full step format. Nothing else changed.
-
-check_solutions: ok. check_lesson: all ok.
+- inquiry.json: check-2 answer 890 (two figures, justified by Δp = 70 kPa and Δh = 8,0 m); exp-1 solution gives 9,80 kPa/m (49,0 kPa has three figures; depths written 5,0 m and 10,0 m), model value 9,81 named separately.
+- lesson.md Esimerkki: depth 12,0 m; Tulos justifies three figures for p by 12,0 m and 101 kPa, two for F by 150 cm².
+- solutions.md: L3-03 sum rule (3,3 + 15,7 = 19,0 kPa); L2-02 data stated with three figures; L2-04 overpressure written Δp.
