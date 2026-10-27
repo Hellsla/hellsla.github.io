@@ -118,17 +118,20 @@ new p5((p) => {
     p.drawingContext.setLineDash([6, 5]); p.stroke(...GREEN); p.strokeWeight(2.5); p.line(X(T), yT + 0.25 * fh + 2, X(T), yB); p.drawingContext.setLineDash([]);
     p.stroke(...INK); p.strokeWeight(2.5); p.line(X(mean), yM + 0.25 * fh + 2, X(mean), yB);
     // dots
-    const bins = {}, nb = Math.round((TMAX - TMIN) / BIN);
-    rs.forEach((v, i) => { const b = Math.max(0, Math.min(nb, Math.floor((v - TMIN) / BIN + 0.5 + 1e-9))); (bins[b] = bins[b] || []).push(i); });
-    const maxc = Math.max(...Object.values(bins).map((a) => a.length)), d = Math.min(10, (PX.x1 - PX.x0) / nb - 1), step = Math.min(d + 1.5, (yB - 3 - yTop) / maxc);
-    const placed = [];   // stack by collision: raise a dot until it no longer overlaps an earlier one
+    const nb = Math.round((TMAX - TMIN) / BIN), d = Math.min(10, (PX.x1 - PX.x0) / nb - 1);
+    const placed = [];   // stack by collision on integer levels (a level is one dot diameter), then squeeze the levels to fit the plot
     rs.forEach((v, i) => {
-      const last = i === rs.length - 1, cx = X(Math.max(TMIN, Math.min(TMAX, v)));
-      let cy = yB - 2 - d / 2;
-      while (placed.some((q) => Math.hypot(q.cx - cx, q.cy - cy) < d)) cy -= step;
-      placed.push({ cx, cy });
-      p.stroke(255); p.strokeWeight(1.5); p.fill(...(last ? ORANGE : BLUE)); p.circle(cx, cy, d);
+      const cx = X(Math.max(TMIN, Math.min(TMAX, v)));
+      let lv = 0;
+      while (placed.some((q) => Math.hypot(q.cx - cx, (q.lv - lv) * d) < d)) lv++;
+      placed.push({ cx, lv });
     });
+    const maxLv = Math.max(...placed.map((q) => q.lv)), yLow = yB - 2 - d / 2, yHigh = yTop + d / 2;
+    const step = maxLv > 0 ? Math.min(d + 1.5, (yLow - yHigh) / maxLv) : d + 1.5;   // the tallest stack ends at yTop, below the T and mean labels
+    placed.forEach((q, i) => {
+      p.stroke(255); p.strokeWeight(1.5); p.fill(...(i === rs.length - 1 ? ORANGE : BLUE)); p.circle(q.cx, yLow - q.lv * step, d);
+    });
+    window.simState.dotTop = yLow - maxLv * step - d / 2;                         // top edge of the highest dot (canvas y), for the tests
 
     // axis with arrowhead, ticks every 0,1 s, numbers every 0,4 s
     p.stroke(60); p.strokeWeight(2); p.line(PX.x0 - 12, yB, PX.x1 + 14, yB);

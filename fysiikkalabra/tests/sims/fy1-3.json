@@ -245,5 +245,26 @@
   "expected": 1,
   "tol": 0,
   "note": "readout shows the half-range, the smallest and largest reading and the signed difference from T"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; S(1,0); S(2,0); S(0,40);",
+  "expr": "(() => { const S=window.simState; const L=S.labels.filter(l=>l.s==='$T$'||l.s==='$\\\\bar{t}$'); const low=Math.max(...L.map(l=>l.y1)); return L.length===2 && S.dotTop>=low && S.dotTop>=0 && S.dotTop<338 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sat 0, n = 40: forty equal readings stack, yet the top dot stays below the T and mean labels"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; S(1,0.05); S(2,0); S(0,40);",
+  "expr": "(() => { const S=window.simState; const L=S.labels.filter(l=>l.s==='$T$'||l.s==='$\\\\bar{t}$'); const low=Math.max(...L.map(l=>l.y1)); return L.length===2 && S.dotTop>=low && S.dotTop>=0 && S.dotTop<338 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sat 0,05 s, n = 40 (exp-3 start): the stack stays below the T and mean labels"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; S(1,0); S(2,0.3); S(0,40);",
+  "expr": "(() => { const S=window.simState; const L=S.labels.filter(l=>l.s==='$T$'||l.s==='$\\\\bar{t}$'); const low=Math.max(...L.map(l=>l.y1)); return L.length===2 && S.dotTop>=low && S.dotTop>=0 && S.dotTop<338 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sat 0, sys +0,30 s, n = 40: the stack stays below the labels"
  }
 ]
