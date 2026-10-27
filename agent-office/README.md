@@ -58,3 +58,10 @@ This mode is an illustrative scenario, not exported review evidence. It does not
 Run `node agent-office/test-web-review.cjs` for external-review handoffs and isolation from recorded approval evidence.
 
 The publisher proposes; Lauri decides. In the material journey, Lauri walks to the publisher after the review handoff, stays for the proposal discussion, and returns afterward. An APPROVED label and courier pickup still require recorded approval matching the current content hash; the illustrated visit alone grants neither. The external-review room is labelled generically as **External review / Ulkopuolinen tarkistus**, covering other tools and people as well.
+
+
+### Updating static assets
+
+After changing any office JavaScript, stylesheet or exported history, run `python3 agent-office/version_assets.py` and include the updated `index.html` in the same commit. The page uses content hashes in asset URLs so cached scripts from an older character renderer are not combined with a newer controller. No build or server-side code is required at runtime.
+
+Run `node agent-office/test-assets.cjs` to verify the asset versions before pushing.
