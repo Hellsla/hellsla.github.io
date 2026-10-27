@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Lämpömäärä saa laskukaavan $Q = cm\\Delta T$: aineen ominaislämpökapasiteetti ratkaisee, kuinka paljon lämpötila muuttuu, ja energian säilymisestä saadaan kalorimetrin tasapainolämpötila ja tuntemattoman aineen $c$.",
+  "learn": ["Osaat laskea lämpömäärän, joka muuttaa aineen lämpötilaa.", "Osaat selittää, mitä ominaislämpökapasiteetti kertoo aineesta.", "Osaat laskea energian säilymisen avulla kalorimetrin tasapainolämpötilan tai tuntemattoman aineen ominaislämpökapasiteetin."],
   "prior": [
     "Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja siirtynyt energia on lämpömäärä $Q$ (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
     "Energia säilyy: eristetyn systeemin kokonaisenergia pysyy vakiona (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)"

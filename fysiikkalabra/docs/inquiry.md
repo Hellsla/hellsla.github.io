@@ -18,8 +18,9 @@ needs misconception-specific feedback`. Tests: `python scripts/test_inquiry.py`.
 ```json
 {
   "version": 1,
-  "contribution": "One sentence: what this lesson adds that earlier lessons did not (markdown, LaTeX allowed).",
-  "prior": ["What the student already knows and where it came from (fy3-1)", "..."],
+  "contribution": "One sentence for the reviewers: what this lesson adds that earlier lessons did not (not shown on the page).",
+  "learn": ["Osaat laskea …", "Osaat selittää …", "Tunnistat …"],
+  "prior": ["One fact the student already knows (luku *Chapter title*)", "..."],
   "activities": [ { "id": "pred-1", "stage": "ennusta", "type": "choice", "...": "..." } ]
 }
 ```
@@ -58,7 +59,7 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `exercises` | optional `text` | the three exercise levels (at most one) |
 | `exit` | optional `text` | the exit ticket (at most one) |
 
-Rules the validator enforces: `version` is 1; `contribution` is non-empty; ids are unique; every choice has
+Rules the validator enforces: `version` is 1; `contribution` is non-empty; `learn` holds two or three goals of at most about 20 words each, shown on the page under "Tällä tunnilla opit" (teacher 2026-10-27; `prior` shows as the list "Pohjatiedot", its "(luku …)" as a link to that chapter); ids are unique; every choice has
 feedback and exactly the correct options marked; `reveal.after` names an experiment; `locked` does not contain
 `vary`; `theory` sections exist in `lesson.md` and appear once; `reflect.predictions` are activity ids; hints
 are at most three. What it cannot check, the reviewers do (below).
@@ -115,7 +116,7 @@ offers free exploration.
 
 ## Migrating a lesson
 
-1. Read `meta.json` goals and prerequisites and the curriculum slot; write `contribution` and `prior`.
+1. Read `meta.json` goals and prerequisites and the curriculum slot; write `contribution`, `learn` (2–3 goals, NOTES.md §8) and `prior`.
 2. Decide which stages the lesson needs and what the student should do first. Not every lesson needs an
    experiment: a lesson without a sim uses `interpret` on a table or figure, or a competing-models `choice`.
 3. Write the predictions so that the investigation can refute them; write every wrong option's feedback as a

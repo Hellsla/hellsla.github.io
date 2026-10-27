@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ce39622129de7cc0
+CONTENT-HASH: 95f447a9c89c7a99
 
 ## Blocking
 (none)
 
 ## Polish
-1. solutions.md fy3-8-L2-03 Järkevyys, last sentence — physically right (each rail edge moves ½ΔL, so the gap closes by ΔL) but too dense for a student who could not solve the task: it assumes each rail is held at its middle ("kumpikin kisko pitenee kumpaankin suuntaansa" does not say so) and "tehtävän oletus pätee" is vague. Fix: "Naapurikisko pitenee myös. Jos kumpikin kisko on kiinni keskeltä, kummankin pää liikkuu rakoa kohti $\tfrac{1}{2}\Delta L$, joten rako kaventuu yhteensä $\Delta L$:n verran, ja tehtävän oletus (rako sulkeutuu yhden kiskon pidennyksellä) on järkevä."
-2. Earlier Polish items 1 to 5 (kokonaisasteiden erotus explained once in the example, L1-04 wording, L3-02 reason, siirto Järkevyys, exit-ticket item 1 solution) are not touched by this diff and still stand as optional.
+1. inquiry.json:4 (learn, 2nd goal) — "Tutkit kokeilla, mistä sauvan pituuden muutos riippuu." describes an activity, while the other two goals state what the student will be able to do; CLAUDE.md asks for goals from the student's side ("Osaat ..."). Fix: "Osaat päätellä kokeen avulla, mistä sauvan pituuden muutos riippuu."
+2. lesson.md, "Ydinajatus" — the paragraph under "### Miksi aine laajenee?" is two sentences and then a second paragraph; fine as is, but the figure (particles) now follows the paragraph about distance, which is the one it explains. No change needed; noted only so a later edit keeps the figure there.
+3. Earlier Polish items (L2-03 Järkevyys sentence and the five older items) are not touched by this diff and still stand as optional.
 
 ## Checked
-- Diff is one line (L2-03 Järkevyys); it replaces an unexplained "reality would close the gap sooner" with a correct argument, so the check no longer contradicts the stated assumption.
-- Task text ("Oleta, että rako sulkeutuu, kun kisko on pidentynyt raon leveyden verran") and Periaate match the new sentence; the answer 36 °C is unchanged and consistent.
-- Symbols, units and Finnish case forms in the new sentence read correctly (ΔL:n verran, yhden kiskon pidennys).
-- Rest of the lesson unchanged since the previous PASS; worked example and other solutions not affected.
+- Diff is a restructuring of "Ydinajatus" into three short "###" subsections plus a new `learn` list; no sentence lost a physical reason or causal step (the particle-repulsion/attraction asymmetry, water anomaly and liquid/gas reasoning are all intact).
+- Each paragraph now holds one idea and is well under 120 words; the "lämpölaajeneminen" term is bolded once at its definition, as house rules allow.
+- The particles figure still sits directly after the paragraph it explains.
+- Subheadings name their content (Miksi aine laajenee?, Lämpölaajeneminen arjessa, Eri aineiden lämpölaajeneminen) and match the glossary term.
+- `learn` has three one-line goals matching the slot (mikromalli; kiinteät aineet, nesteet, kaasut; laskeminen) and no more.
+- Finnish in the new and moved text reads correctly (case forms, no stray grammar).
+- Content hash unchanged at start and end of the review.

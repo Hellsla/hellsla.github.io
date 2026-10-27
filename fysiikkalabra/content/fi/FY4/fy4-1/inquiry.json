@@ -1,6 +1,7 @@
 {
   "version": 1,
   "contribution": "Liike kuvataan paikkana ajan funktiona: **paikka**, **siirtymä** $\\Delta x = x_2 - x_1$ ja **nopeus** $v = \\Delta x/\\Delta t$ ovat suoralla etumerkillä varustettuja vektorisuureita, ja tasaisen liikkeen $(t, x)$-kuvaaja on suora, jonka kulmakerroin on nopeus.",
+  "learn": ["Osaat kuvata liikkeen paikkana ajan funktiona.", "Osaat laskea siirtymän ja nopeuden etumerkkeineen.", "Osaat lukea tasaisen liikkeen nopeuden paikan ja ajan kuvaajan kulmakertoimesta."],
   "prior": [
     "Nopeus peruskoulusta: matka jaettuna ajalla, $v = s/t$",
     "Koordinaatiston lukeminen: akselit, yksiköt ja suoran jyrkkyys"

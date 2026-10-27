@@ -54,8 +54,11 @@ jobs:
         run: |
           python scripts/build.py
           if [ -n "$(git status --porcelain site/)" ]; then echo "site/ is not a fresh render of the reviewed sources (run build.py and commit):"; git status --short site/; exit 1; fi
-      - name: every published page fits a 360 px phone, its figure labels do not collide, and the wide layout keeps its columns and line length at 1280 and 1920 px
-        run: python scripts/check_layout.py --site && python scripts/check_layout.py --site --width 1280 && python scripts/check_layout.py --site --width 1920
+      - name: "every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
+        run: |
+          fail=0
+          for w in 360 390 640 768 1024 1280 1440 1920; do python scripts/check_layout.py --site --width $w > "/tmp/layout-$w.txt" 2>&1 || { fail=1; echo "::error::layout check failed at $w px"; grep -v "^OK" "/tmp/layout-$w.txt"; }; done
+          exit $fail
       - run: |
           for d in content/fi/*/*/; do
             case "$d" in *_gold*) continue;; esac

@@ -13,7 +13,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   with doubled backslashes in JSON. `solutions.md` is LaTeX too (teacher's rule 2026-10-26): every symbol, formula and
   value with its unit in inline `$...$` (`**Kaava:** $p = \dfrac{F}{A}$`, `**Sijoitus:** $p = \dfrac{720\,\text{N}}{0{,}30\,\text{m}^2} = 2400\,\text{Pa}$`),
   one `=` step after another on the Sijoitus line, words outside the maths; the lint reads the Vastaus value through
-  the LaTeX. Inline SVG labels are LaTeX as well (§3). A symbol or formula named in the student's text is inline maths
+  the LaTeX. Keep writing a calculation as one inline chain: the page shows a long chain (two or more `=`/`\approx`,
+  or a long side) as rows with the equals signs in one column, each row wrapping after an operator on a phone
+  (`scripts/mathlayout.py`, §8), so never hand-split a chain or rewrite it as display maths for the layout's sake. Inline SVG labels are LaTeX as well (§3). A symbol or formula named in the student's text is inline maths
   everywhere: `lesson.md`, `inquiry.json`, `exercises.json`, `exit-ticket.json` ("$T$:hen", "$(V, p)$-kuvaaja"); a
   number with its unit alone in prose stays plain ("98 N"). The experiments' Alkutila line and table headers turn
   a symbol in `names`/`measure` labels into maths at build time (scripts/inquiry.py `tex_name`). The simulation too
@@ -206,9 +208,8 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - The page (2026-10-26, CLAUDE.md "Lesson page"): stages Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella →
   Tarkista osaamisesi, then Tehtävät last, whatever stage the `exercises` activity names; Ennusta inside a box that
   starts closed (so a prediction's wording must make sense when the student reopens it after the investigation);
-  "Exit ticket" in headings and links. Consecutive short activities (hook, choice, numeric, explain, exit) sit two by
-  two on a wide screen, so each must read on its own in a half-width column. Look at the preview at 360, 1280 and
-  1920 px; `check_layout.py --width 1920` and `test_inquiry.py <id>` test the layout.
+  "Exit ticket" in headings and links. Every task stands in one reading column, never two side by side (§8). Look at
+  the preview at 360, 768 and 1280 px; `check_layout.py --width <w>` and `test_inquiry.py <id>` test the layout.
 - Core path (2026-10-26, FY3): retrieval, reflect, Etsi virhe, siirto, a third check and secondary experiments are
   `optional` unless the lesson's goal needs them; 1–2 predictions, the key investigation, a conclusion `explain` with
   `after` its experiments, and 1–2 checks stay. Lengths are not equalised. Example data carries `source`
@@ -223,7 +224,10 @@ paid only for what scripts cannot see. Deterministic coverage today: numbers (`a
 `exercises.json`, `Vastaus` lines, significant figures and tolerances, coefficient mantissas), LaTeX (KaTeX parse,
 `{,}`, `\textsf{l}`, `·` in `\text`), lesson form (figures, stages, symbolic first rows, paragraph length),
 complete solutions (`check_solutions.py`: every exercise and numeric task solved with all steps, the seven example stages, `solutions: all`),
-pages (formula, table, figure and page width at 360 px, SVG labels overlapping or leaving a figure),
+pages (`check_layout.py`, §8: overflow of formulas, tables, figures, columns and the page, SVG labels overlapping or
+leaving a figure, overlapping blocks, reading order, empty columns beside an opened card or a figure, line length,
+text and control size, headings under the sticky navigation; at eight widths, closed, with hints and with
+everything open),
 simulations (console errors, per-sim assertions, finite `simState` and label boxes at 360/390/1280 px over every
 control combination), inquiry (gating, locked parameters, reveal after the experiment, every rendered option with
 its own flag and feedback, navigation, 360 px, per lesson), the page form of 2026-10-26 (stage and section names, the
@@ -236,3 +240,41 @@ change categories and carried reviews, rebuild equality, atomic build).
 Exam files, if ever collected, live only in the git-ignored `docs/exams/` and are studied for patterns (task
 types, contexts, how points split between reasoning and calculation), never quoted or reworded. Every exercise is
 original.
+
+## 8. Readability and layout (teacher's brief 2026-10-27, "luettavuus ja taitto")
+The shared components carry the layout, so a writer never solves it per lesson and never adds CSS for one lesson.
+What the writer still owns:
+- **No text walls.** One main idea per paragraph, about 120 words at most (lint warns over 130). A theory section with
+  several ideas gets short, content-naming `###` subheadings ("Miksi aine laajenee?", "Lämpölaajeneminen arjessa"),
+  not one before every pair of sentences (model: `content/fi/FY3/fy3-8` Ydinajatus). Bold only a key definition or
+  conclusion, a few words, never a sentence run. No new coloured boxes: headings, spacing and type do the work.
+- **Never thin the physics to shorten text.** Keep the causal chain and the reasons (why the mean spacing of the
+  particles grows when they vibrate harder, not just "they move more"); restructure, do not cut.
+- **The opening** (`inquiry.json`): `learn` holds 2–3 goals from the student's side, each one line ("Osaat laskea …",
+  "Tunnistat …", "Osaat selittää …"); the explanation belongs to the theory. `prior` is a list, one fact per item,
+  ending with the chapter it comes from as `(luku *<chapter title>*)` (the page turns it into a quiet link; never an
+  id). The Miksi question is one question, or two short sentences when it has two ideas. `contribution` stays as the
+  reviewers' one-sentence statement of what the lesson adds; the page does not show it.
+- **A figure goes right after the paragraph, table or list it explains** and nowhere else. The build sets the two
+  side by side on a wide screen only when they are about as tall (`build.py fig_side`), otherwise the figure stands
+  under its text; after the unit the text runs on in the reading column. So keep the paragraph a figure explains
+  about the size the figure needs (roughly 40–110 words for a 600×330 figure), and put a figure that explains a
+  whole subsection after that subsection's last paragraph, not after a 200-word block.
+- **Calculations** stay in the source as one inline chain per step (§1, §3); the page splits long chains into
+  aligned rows. A multi-line calculation written as display maths uses `aligned` with the `&` before each `=`
+  (`Q &= cm\Delta T \\ &= …`); one written with every row starting `&` (`&Q = …`) is aligned at its first `=` by
+  the build when that does not make it wider. The answer (Vastaus) is shown set apart, its precision reasons after
+  it; Järkevyys is its own block, so it may say two things (an order-of-magnitude estimate and the energy balance).
+- **Task texts**: a long task (about 28 words or more) reads as the situation and then the question; the page breaks
+  it before the first sentence that asks something, so write the situation first and the question last, each a
+  sentence of its own. Options are whole clickable rows; a choice's feedback, a hint and a solution open inside
+  the task's own card and push the next task down, never sideways.
+- **What the checks prove** (`check_layout.py`, every lesson, in CI at 360, 390, 640 (1280 at 200 % zoom), 768, 1024,
+  1280, 1440 and 1920 px, each in three states: closed, first hints and solutions open, everything open): no
+  overflow of the page, a formula, a figure or a column; no overlapping blocks; task cards in reading order; no
+  two-column row with a large empty area beside the shorter column; text no wider than 44rem; reading text not
+  under 17 px and controls not under 40 px on any width; every stage heading clear of the sticky navigation after
+  its link. `screenshot.py <id>` adds rendered captures of the opening, the theory and the opened Ennusta, Tarkista,
+  exit ticket and exercises at 1280 px for a human look. What no script judges: whether a figure is the right
+  figure, whether a subheading names its content, whether a paragraph holds one idea, whether the goals match the
+  lesson; the reviewers and the teacher see those.

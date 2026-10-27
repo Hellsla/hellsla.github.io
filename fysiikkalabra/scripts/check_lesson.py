@@ -1,7 +1,8 @@
 """Every deterministic check of one lesson in one command. Usage: python scripts/check_lesson.py <id>
 
 Runs the lint, the KaTeX parse check, a preview build, the simulation tests (when the lesson has a sim), the
-inquiry tests and the answer-position check (when it has inquiry.json) and the 360 px layout check. Prints one
+inquiry tests and the answer-position check (when it has inquiry.json) and the layout check at 360, 768 and 1280 px
+(every state: closed, hints open, everything open). Prints one
 line per check and the output only of the ones that fail, then the lesson's review state. Exit status 1 if any
 check fails. The developer runs it until everything is ok before asking for a review, so the reviewers are paid
 only for what scripts cannot see; CI runs the same scripts over every lesson of every course."""
@@ -19,7 +20,8 @@ if courses.sim_dir(folder): steps.append(("sims", [PY, SCRIPTS / "test_sims.py",
 if (folder / "inquiry.json").exists():
     steps.append(("inquiry", [PY, SCRIPTS / "test_inquiry.py", lid]))
     steps.append(("answer positions", [PY, SCRIPTS / "check_choices.py", lid]))
-steps.append(("layout 360 px", [PY, SCRIPTS / "check_layout.py", lid]))
+for w in (360, 768, 1280):                       # closed, with hints and with everything open (check_layout.py, NOTES §8)
+    steps.append((f"layout {w} px", [PY, SCRIPTS / "check_layout.py", lid, "--width", str(w)]))
 failed = 0; lines = []
 for name, cmd in steps:
     r = subprocess.run([str(c) for c in cmd], capture_output=True, text=True, cwd=courses.ROOT)

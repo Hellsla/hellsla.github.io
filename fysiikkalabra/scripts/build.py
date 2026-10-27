@@ -25,7 +25,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-import courses, i18n, inquiry
+import courses, i18n, inquiry, mathlayout
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -59,7 +59,10 @@ def render_md(text, **kw):
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
     maths = []
     def stash(m):
-        maths.append(m.group(0)); return f"MATHTOKEN{len(maths) - 1}X"
+        x = m.group(0)
+        if x.startswith("$$"): x = "$$" + mathlayout.align_equals(x[2:-2]) + "$$"   # equals signs of a calculation in one column
+        else: x = mathlayout.split_list(x[1:-1]) or x                                # a list of values may wrap between its items
+        maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
     return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html)
@@ -114,11 +117,35 @@ FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>.*?</table>|<ul>(?:(?!<ul
 
 
 def fig_rows(html):
-    """A figure beside the paragraph, table or list it explains (NOTES.md §3 puts it right after that block). The
-    figure comes first in the row so that on a wide screen it can float beside the text column, level with its
-    paragraph, while the text runs on without gaps; on a phone and in print it shows under the text (site.css
-    .fig-row)."""
-    return FIG.sub(r'<div class="fig-row"><div class="fig">\2</div><div class="fig-text">\1</div></div>', html)
+    """A figure with the paragraph, table or list it explains (NOTES.md §3 puts it right after that block), as one
+    unit: the text first, then its figure (teacher 2026-10-27, "kuvien sijoittelu"). On a wide screen the two stand
+    side by side only when they are about as tall as each other (fig_side), so neither column is left with a long
+    empty stretch; otherwise the figure stands under its text in the reading column. After the unit the text runs on
+    in the reading column. On a phone and in print the figure is always under its text."""
+    def row(m):
+        side = fig_side(m.group(1), m.group(2))
+        return f'<div class="fig-row {"side" if side else "stack"}"><div class="fig-text">{m.group(1)}</div><div class="fig">{m.group(2)}</div></div>'
+    return FIG.sub(row, html)
+
+
+SIDE_FIG = 26 * 16          # px: the figure column of a side-by-side unit (site.css .fig-row.side)
+LINE, CHARS = 18 * 1.6, 72  # px per line and characters per line of the 38rem text column at 18 px (measured)
+
+
+def text_height(html):
+    """About how tall a block of text is in the reading column: its characters over the line length, maths counted
+    by a third of its source, a table row 42 px, a list item a little extra for its spacing."""
+    maths = sum(len(x) for x in re.findall(r"\$[^$]*\$", html))
+    plain = re.sub(r"<[^>]+>", " ", re.sub(r"\$[^$]*\$", "", html))
+    return (len(" ".join(plain.split())) + maths / 3) / CHARS * LINE + html.count("<tr") * 42 + html.count("<li") * LINE * 0.4
+
+
+def fig_side(text_html, svg):
+    """Side by side only when the text and the figure are of a similar height (0.6 to 1.5 times)."""
+    vb = re.search(r'viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"', svg)
+    if not vb: return False
+    fig_h = SIDE_FIG * float(vb.group(2)) / float(vb.group(1))
+    return 0.6 <= text_height(text_html) / fig_h <= 1.5
 
 
 def fi(x):
@@ -149,6 +176,25 @@ def description_of(meta, lesson_md):
     return (meta["title"] + ". " + (goals[0] if goals else "")).strip()
 
 
+def solution_html(text):
+    """A stepwise solution on the page (teacher 2026-10-27, "laskuratkaisujen luettavuus"): every step a block of its
+    own with its label on a line of its own, a long chain of equalities in aligned rows, the answer set apart from the
+    reasons for its precision (scripts/mathlayout.py). The source keeps the one-line-per-step form NOTES.md §3 asks for."""
+    body = mathlayout.solution_md(text, T("lesson.solution_display_steps"))
+    return mathlayout.steps_html(nbsp_units(render_md(body, extensions=["nl2br"])), T("lesson.solution_answer_step"))
+
+
+def example_md(lesson_md):
+    """The worked example's stages with their long chains in display rows, as in a solution (mathlayout)."""
+    m = re.search(rf"^## {re.escape(T('sections.Esimerkki'))}\n(.*?)(?=^## |\Z)", lesson_md, flags=re.S | re.M)
+    if not m or STEP not in m.group(1): return lesson_md
+    def stage(part):
+        h = re.match(r"\s*\*\*([^*\n]+?)[:.]\*\*", part)
+        if not h or h.group(1).strip() not in T("lesson.solution_display_steps"): return part
+        return part[:h.end()] + " " + mathlayout.display_chains(part[h.end():]) + "\n\n"
+    return lesson_md[:m.start(1)] + STEP.join(stage(p) for p in m.group(1).split(STEP)) + lesson_md[m.end(1):]
+
+
 def solutions_of(folder):
     """{exercise id: html} from solutions.md, one `## id` block each: every bold step (**Annettu:**, **Periaate:**, ...)
     starts a paragraph of its own so the steps read one by one on a phone; other line breaks are kept (nl2br)."""
@@ -157,8 +203,7 @@ def solutions_of(folder):
     out = {}
     for block in re.split(r"^## ", f.read_text(), flags=re.M)[1:]:
         head, _, body = block.partition("\n")
-        body = re.sub(r"\n(?=\*\*[^*\n]+?[:.]\*\*)", "\n\n", body.strip())
-        out[head.strip()] = nbsp_units(render_md(body, extensions=["nl2br"]))
+        out[head.strip()] = solution_html(body)
     return out
 
 
@@ -173,7 +218,7 @@ def exercise_html(e, solution_html):
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
-    return (f'<li id="{e["id"]}"><p class="task">{nbsp_units(e["text"])}</p>{check}'
+    return (f'<li id="{e["id"]}">{inquiry.task_text(nbsp_units(e["text"]))}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -269,10 +314,10 @@ def build_language(lang):
             ex_html += "</ol></details>"
         exit_q = json.loads((folder / "exit-ticket.json").read_text())
         exit_items = "<ol>" + "".join(
-            f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><p>{nbsp_units(q['a'])}</p></details></li>"
+            f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><div class=\"answer-body\">{nbsp_units(render_md(mathlayout.display_chains(q['a'])))}</div></details></li>"
             for q in exit_q) + "</ol>"
         lesson_md = (folder / "lesson.md").read_text()
-        lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(lesson_md)))))
+        lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(example_md(lesson_md))))))
         inq = inquiry.load(folder)
         if inq is not None:
             errs = inquiry.validate(folder, inq, lesson_md)
@@ -313,7 +358,8 @@ def build_language(lang):
             sections = {}
             for piece in pieces[1:] if intro or len(pieces) > 1 else []:
                 m = re.match(r'<h2(?: data-section="([^"]*)")?>(.*?)</h2>', piece)
-                if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>', piece, count=1)
+                if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
+                                                                     re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)   # a ### subheading under its section heading
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto}{ex_html}',
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))

@@ -93,7 +93,12 @@
 </svg>
 
 ## Ydinajatus
-Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. Ilmiötä sanotaan lämpölaajenemiseksi. Mikromalli selittää sen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu. Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan: lähekkäin puristuvat hiukkaset hylkivät toisiaan voimakkaasti, mutta loittonevien hiukkasten välinen veto heikkenee vähitellen. Siksi hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä, ja voimakkaammin värähtelevien hiukkasten keskimääräinen etäisyys kasvaa. Kun kaikki hiukkasvälit kasvavat, koko kappale laajenee.
+Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. Ilmiötä sanotaan **lämpölaajenemiseksi**.
+
+### Miksi aine laajenee?
+Mikromalli selittää lämpölaajenemisen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu.
+
+Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan: lähekkäin puristuvat hiukkaset hylkivät toisiaan voimakkaasti, mutta loittonevien hiukkasten välinen veto heikkenee vähitellen. Siksi hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä, ja voimakkaammin värähtelevien hiukkasten **keskimääräinen etäisyys kasvaa**. Kun kaikki hiukkasvälit kasvavat, koko kappale laajenee.
 
 <svg data-fig="particles" viewBox="0 0 600 316" role="img" aria-label="Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin ja niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀, mutta hiukkaset ovat yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="85.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kylmä}$</div></foreignObject>
@@ -149,11 +154,17 @@ Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. 
   <foreignObject x="143" y="281.5" width="445" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{hiukkaset yhtä suuria, välit liioiteltu}$</div></foreignObject>
 </svg>
 
+### Lämpölaajeneminen arjessa
 Muutos on pieni mutta voimakas. Teräksinen sauva pitenee vain noin sadastuhannesosan pituudestaan jokaista kelviniä kohti, mutta jos sauvan päät on kiinnitetty, laajeneva teräs työntää niitä valtavalla voimalla. Siksi pitkissä rakenteissa on liikuntasaumoja. Sillan teräskansi on talvipakkasella lyhyempi kuin kesähelteellä, ja kampamainen liitos sillan päässä antaa kannen liikkua vapaasti. Samasta syystä sähkölinjat roikkuvat helteellä alempana kuin pakkasella.
 
-Kappale laajenee kaikkiin suuntiin samassa suhteessa kuin valokuvaa suurennettaessa. Myös reikä levyssä suurenee, kun levy lämpenee. Tätä käytetään kutistusliitoksessa: kuumennettu teräsrengas pujotetaan akselille, ja jäähtyessään se puristuu tiukasti kiinni. Eri aineet laajenevat eri tavalla. Kaksoismetalliliuska, jossa kaksi eri metallia on liitetty toisiinsa, taipuu lämmetessään, koska toinen metalli pitenee enemmän. Sellainen liuska avaa ja sulkee virtapiirin vanhanmallisissa termostaateissa.
+Kappale laajenee kaikkiin suuntiin samassa suhteessa kuin valokuvaa suurennettaessa. Myös reikä levyssä suurenee, kun levy lämpenee. Tätä käytetään kutistusliitoksessa: kuumennettu teräsrengas pujotetaan akselille, ja jäähtyessään se puristuu tiukasti kiinni.
 
-Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut vielä paljon enemmän. Nesteen hiukkaset eivät pysy paikoillaan, ja niiden väliset sidokset ovat heikompia kuin kiinteässä aineessa, joten lämpötilan nousu loitontaa niitä toisistaan enemmän. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän. Kaasun tilavuus riippuu myös paineesta, ja siihen palataan luvussa *Kaasujen tilanmuutokset ja Boylen laki*. Nestelämpömittari perustuu nesteen laajenemiseen: kun lämpötila nousee, nestepatsas kohoaa ohuessa putkessa. Vesi on poikkeus: 0 °C:n ja 4 °C:n välillä se kutistuu lämmetessään, joten sen tiheys on suurin noin 4 °C:ssa. Tihein, 4-asteinen vesi painuu pohjalle, ja kylmempi vesi jää pinnalle ja jäätyy. Siksi järvi jäätyy pinnalta alkaen, ja pohjalla on talvellakin noin 4-asteista vettä, jossa kalat selviävät.
+### Eri aineiden lämpölaajeneminen
+Eri aineet laajenevat eri tavalla. Kaksoismetalliliuska, jossa kaksi eri metallia on liitetty toisiinsa, taipuu lämmetessään, koska toinen metalli pitenee enemmän. Sellainen liuska avaa ja sulkee virtapiirin vanhanmallisissa termostaateissa.
+
+Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut vielä paljon enemmän. Nesteen hiukkaset eivät pysy paikoillaan, ja niiden väliset sidokset ovat heikompia kuin kiinteässä aineessa, joten lämpötilan nousu loitontaa niitä toisistaan enemmän. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän. Kaasun tilavuus riippuu myös paineesta, ja siihen palataan luvussa *Kaasujen tilanmuutokset ja Boylen laki*. Nestelämpömittari perustuu nesteen laajenemiseen: kun lämpötila nousee, nestepatsas kohoaa ohuessa putkessa.
+
+Vesi on poikkeus: 0 °C:n ja 4 °C:n välillä se kutistuu lämmetessään, joten sen tiheys on suurin noin 4 °C:ssa. Tihein, 4-asteinen vesi painuu pohjalle, ja kylmempi vesi jää pinnalle ja jäätyy. Siksi järvi jäätyy pinnalta alkaen, ja pohjalla on talvellakin noin 4-asteista vettä, jossa kalat selviävät.
 
 ## Kaava: Pituuden ja tilavuuden lämpölaajeneminen
 Kun kappaleen lämpötila muuttuu $\Delta T$, sen pituus muuttuu

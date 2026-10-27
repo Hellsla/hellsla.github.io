@@ -68,11 +68,11 @@ WIDE = """() => {      // the wide layout as rendered: which blocks sit side by 
   const R = (e) => e.getBoundingClientRect(), beside = (a, b) => R(b).left >= R(a).right - 1 && Math.abs(R(a).top - R(b).top) < 400;
   const lab = document.querySelector('.lab'), rows = [...document.querySelectorAll('.act-theory > .fig-row, article#teoria > .fig-row')];
   const text = [...document.querySelectorAll('main p, main li')].filter((e) => e.offsetParent && !e.closest('#sim-root, .katex-display, table'));
-  const cells = [...document.querySelectorAll('.act-grid > *, .lab > *, .fig-row > *, .intro-row > *')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.className);
+  const cells = [...document.querySelectorAll('.lab > *, .fig-row > *, .intro-row > *')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.className);
   return { over: document.documentElement.scrollWidth - document.documentElement.clientWidth,
            lab: lab ? beside(lab.querySelector('.lab-main'), lab.querySelector('.lab-side')) : null,
-           figs: rows.map((r) => beside(r.querySelector('.fig-text'), r.querySelector('.fig'))),
-           widest: Math.max(0, ...text.map((e) => R(e).width)), rem: parseFloat(getComputedStyle(document.documentElement).fontSize), cells };
+           figs: rows.map((r) => beside(r.querySelector('.fig-text'), r.querySelector('.fig')) === r.classList.contains('side')),
+           sides: rows.map((r) => r.classList.contains('side')), widest: Math.max(0, ...text.map((e) => R(e).width)), rem: parseFloat(getComputedStyle(document.documentElement).fontSize), cells };
 }"""
 
 
@@ -88,7 +88,7 @@ def page_form(pg, b, url, acts, page):
         if here: want += [inquiry.NAV.get(sid, t)] + ([inquiry.EXIT_TITLE] if any(a["type"] == "exit" for a in here) else [])
     want.append(inquiry.EXERCISES_TITLE)
     check("nav names the stages, the exit ticket and the exercises", toc == want, f"{toc} != {want}")
-    order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro-row')].map((e) => e.id || e.className)")
+    order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
     check("the exercises close the page, after the exit ticket", order[-1:] == ["exercises"] and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(x.compareDocumentPosition(e) & 4); })()"), str(order))
     if any(a["stage"] == "ennusta" for a in acts):
         fold = pg.locator("#ennusta details.fold")
@@ -109,11 +109,11 @@ def page_form(pg, b, url, acts, page):
         check(f"{w} px: no horizontal overflow, no column spilling into its neighbour", L["over"] <= 0 and not L["cells"], str(L))
         check(f"{w} px: text no wider than a reading column (44rem)", L["widest"] <= 44 * L["rem"] + 1, f"{L['widest']:.0f} px")
         if L["lab"] is not None: check(f"{w} px: the simulation beside the experiments", L["lab"])
-        if L["figs"]: check(f"{w} px: every theory figure beside its paragraph", all(L["figs"]), str(L["figs"]))
+        if L["figs"]: check(f"{w} px: a theory figure beside its paragraph when the two are about as tall (.side), under it otherwise", all(L["figs"]), str(L["figs"]))
         q.close()
     q = b.new_page(viewport={"width": 360, "height": 740}); q.goto(url); q.wait_for_timeout(500)
     L = q.evaluate(WIDE)
-    check("360 px: one column", not L["lab"] and not any(L["figs"]), str(L))
+    check("360 px: one column", not L["lab"] and not any(L["figs"][i] and side for i, side in enumerate(L["sides"])), str(L))
     q.close()
 
 
