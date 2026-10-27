@@ -95,7 +95,7 @@
 **Kaava:** $s = kt + b$, josta $t = \dfrac{s - b}{k}$
 **Muunnokset:** Ei tarvita: paikka on metreinä ja kulmakerroin kertoo metrit sekunnissa.
 **Sijoitus:** $t = \dfrac{0 - 0{,}40\,\text{m}}{0{,}85\,\tfrac{\text{m}}{\text{s}}} = -0{,}4706\,\text{s}$
-**Vastaus:** $-0{,}47\,\text{s}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $0{,}85\,\tfrac{\text{m}}{\text{s}}$ ja vakiotermissä $0{,}40\,\text{m}$. Miinusmerkki tarkoittaa, että kärry oli radan alussa 0,47 s ennen kellon käynnistystä.
+**Vastaus:** $-0{,}47\,\text{s}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $0{,}85\,\tfrac{\text{m}}{\text{s}}$ ja vakiotermissä $0{,}40\,\text{m}$. Miinusmerkki tarkoittaa, että kärry oli radan alussa 0,47 s ennen kellon käynnistystä. Tulos olettaa, että kärry liikkui samalla nopeudella jo ennen kellon käynnistämistä, koska suoraa jatketaan mittausalueen ulkopuolelle ($t < 0$).
 **Järkevyys:** Tarkistus: kärry ehti 0,47 sekunnissa vauhdilla 0,85 m/s noin $0{,}85 \cdot 0{,}47 = 0{,}40\,\text{m}$, mikä on täsmälleen vakiotermi. Tulos on sama kuin tilanteessa, jossa kello olisi käynnistetty 0,47 s aiemmin ja vakiotermi olisi nolla.
 
 ## fy1-4-L3-02
@@ -115,5 +115,5 @@
 **Kaava:** $\dfrac{\delta k}{k} = \dfrac{2\delta}{\Delta y} = \dfrac{2\delta}{k\,\Delta x}$, joten $\dfrac{(\delta k/k)_\text{lähellä}}{(\delta k/k)_\text{kaukana}} = \dfrac{\Delta x_2}{\Delta x_1}$
 **Muunnokset:** Ei tarvita: suhde on yksikötön.
 **Sijoitus:** Lähellä $\Delta y = 2{,}0 \cdot 0{,}5 = 1{,}0$ ja $\dfrac{\delta k}{k} = \dfrac{0{,}2}{1{,}0} = 0{,}20$. Kaukana $\Delta y = 2{,}0 \cdot 8{,}0 = 16$ ja $\dfrac{\delta k}{k} = \dfrac{0{,}2}{16} = 0{,}0125$. Suhde on $\dfrac{0{,}20}{0{,}0125} = \dfrac{8{,}0}{0{,}5} = 16$.
-**Vastaus:** $16$ kertaa, kaksi merkitsevää numeroa kuten lukemavirheessä. Kaukana toisistaan olevat pisteet ovat parempi valinta, koska erotus $\Delta y$ on suuri verrattuna lukemavirheeseen.
+**Vastaus:** $16$ kertaa. Lukemavirhe supistuu pois suhteesta, joten luku määräytyy pelkästä $\Delta x$:n suhteesta $8{,}0 / 0{,}5 = 16$, joka on tarkka; kaksi merkitsevää numeroa riittää. Kaukana toisistaan olevat pisteet ovat parempi valinta, koska erotus $\Delta y$ on suuri verrattuna lukemavirheeseen.
 **Järkevyys:** Lähekkäisten pisteiden virhe 20 % on liian suuri, kaukana oleva noin 1,3 % on hyvä. Suhde 16 on sama kuin $\Delta x$:n suhde $8{,}0 / 0{,}5$, kuten kaavasta pitää seurata.

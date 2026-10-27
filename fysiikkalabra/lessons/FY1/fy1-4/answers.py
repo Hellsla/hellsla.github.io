@@ -22,5 +22,5 @@ a["fy1-4-L2-04"] = (4.0 + 2.5 * 10) / (4.0 + 2.5 * 5.0)   # taxi fare 29,0 € /
 a["fy1-4-L3-01"] = -0.40 / 0.85                           # s = 0,85 t + 0,40: s = 0 at t = −b/k = −0,47 s
 a["fy1-4-L3-02"] = ((72 - 90) / 10) / ((51 - 60) / 10)    # slopes −1,8 °C/min and −0,90 °C/min -> ratio 2,0
 a["fy1-4-L3-03"] = (0.2 / (2.0 * (4.5 - 4.0))) / (0.2 / (2.0 * (9.0 - 1.0)))   # relative error of k: 0,2/1,0 = 0,2 vs 0,2/16 = 0,0125 -> 16
-# Inquiry tasks (not in exercises.json): kettle example k = (60,0 − 20,0)/5,0 = 8,0 °C/min, t(40 °C) = (40 − 20)/8,0 = 2,5 min
+# Inquiry tasks (not in exercises.json): graph reading k = (50 − 20) km / (3,0 − 1,0) h = 15 km/h; walk tarkistus-2 k = 3,0 km/h, b = 4,0 km, t = 7,0 h (swapped k and b: (25 − 3,0)/4,0 = 5,5 h); kettle example k = (60,0 − 20,0)/5,0 = 8,0 °C/min, t(40 °C) = (40 − 20)/8,0 = 2,5 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

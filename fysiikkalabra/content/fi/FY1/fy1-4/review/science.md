@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 1b4acbfbd706de7c
+VERDICT: PASS
+CONTENT-HASH: f9d3b98d3c037ea9
 
 ## Blocking
-- inquiry.json:377 — tarkistus-2 mistake `value: 4.0` says "Vaihdoit kulmakertoimen ja vakiotermin", but swapping k and b gives s = 4,0 t + 3,0 → t = (25 − 3,0)/4,0 = 5,5 h, not 4,0.  — Set the value to 5.5 for this feedback, or keep 4.0 with feedback that the student gave the constant term b (4,0 km) instead of solving for t.
-- inquiry.json:362/381 — tarkistus-2 is a *pyöräretki* at 3,0 km/h for 7 h, and its own reasonableness check says "Vauhti 3,0 km/h on kävelyn luokkaa": the check exposes an unrealistic magnitude instead of confirming it. — Make it a walk/hike (patikkaretki), or scale the data to cycling speed (e.g. 15 km/h) and update answer, hints, mistakes and solution.
 
 ## Polish
-- inquiry.json ennuste-2 wrong option 1 — "Jos suora pakotetaan origon kautta, d ≈ 61 g" holds only with k locked at 0,80 g/ml (as in koe-2); say "kulmakertoimella 0,80 g/ml".
-- solutions.md fy1-4-L3-03 — "kaksi merkitsevää numeroa kuten lukemavirheessä": δ = 0,1 has one; the ratio 16 = 8,0/0,5 is exact from the x-values. Justify from Δx.
-- solutions.md fy1-4-L3-01 — state that the extrapolation to t < 0 assumes the cart moved at the same speed before the clock started.
+- lessons/FY1/fy1-4/figures.py:71-72 — `reading()` says "patikoijan matka" and id 'lue-kuvaajasta', but the embedded figure (inquiry.json:311) and task are a cyclist at 15 km/h (id `kuvaajasta`); regenerating would label a 15 km/h hiker. — Say "pyöräilijän" and the right id.
+- inquiry.json ennuste-1 correct option — shortened to "Origon kautta kulkeva suora, jonka molemmin puolin on pisteitä"; the glossary's other criterion (lähellä kaikkia pisteitä) is gone, so a too-steep line through the cloud also qualifies. — Consider restoring "lähellä kaikkia pisteitä".
 
 ## Checked
-- All 12 exercise answers recomputed independently; all match answers.py within tolerance (L2-04 1,758 → 1,8 inside 3 %).
-- Sim RMS values: D1 k = 0,30/0,50/0,60 → d = 0,76/0,12/0,44 m; D2 k = 0,80, b = 0 → 61 g, best b = 61,3 g → d ≈ 1,2 g; LS 0,787 g/ml, 62 g.
-- D3 with b = 80 locked: min d = 5,80 °C (k ≈ −1,90); LS residuals + − − − − + +, so the "ends above, middle below" pattern is true.
-- Experiments lock aineisto and b or k; simState gives d. Siirto 20 vrk, tarkistus-2 7,0 h, exit-ticket k = 1,5 m/s, b = 2,0 m; feedback numbers correct.
-- Worked example: 8,0 °C/min, 20 °C, 2,5 min; LS fit 7,85 °C/min, 20,5 °C confirms the eye fit; residuals ≤ 0,8 °C.
-- SVG figures measured: scatter points equal D1 and line s = 0,5 t (3 above, 3 below); slope figure k = 0,5, b = 1, P1 (2, 2), P2 (8, 5); kettle points, line and 2,5 min all to scale.
-- sim.js: RMS and least-squares formulas correct; limits stated; FY1 scope.
+- Round-1 blocking fixed: tarkistus-2 now a patikkaretki, 3,0 km/h consistent with its check; mistake 5,5 h = (25 − 3,0)/4,0 with correct feedback; 8,3 h and 7,0 h recomputed.
+- Round-1 polish fixed: ennuste-2 names k = 0,80 g/ml; L3-03 rounding justified from exact Δx ratio; L3-01 states the extrapolation assumption.
+- New task `kuvaajasta`: SVG measured to scale (X 106,9 px/h, Y 4 px/km); line s = 15t + 5 passes (1, 20) and (3, 50); answer 15 km/h, mistakes 16,7 (50/3) and 0,067 (Δt/Δs) correct; solution symbolic first, third-point check (2,0 h; 35 km) true; 15 km/h realistic cycling.
+- koe-3 (now core): b locked at 80, best k = −1,90, d = 5,80 °C; residuals +10,0 −0,9 −5,7 −6,2 −3,7 +0,9 +6,9 (LS fit same pattern), so the correct option "ylhäällä päissä, alhaalla keskellä" holds; new wrong options' feedback correct.
+- virhe item: reworded options keep correct physics (Δs/Δt, far points on fitted line give 0,50 m/s).
+- L2-04 rewording: ratio 29,0/16,5 = 1,76 → 1,8 within 3 %.
+- answers.py rerun: all 12 values unchanged and matching exercises.json; comment numbers correct.
+- Unchanged content (worked example, figures 1–4, sim.js, exit ticket) as verified in round 1; hash identical at start and end.

@@ -69,7 +69,7 @@
     {
       "id": "fy1-4-L2-04",
       "level": 2,
-      "text": "Taksimatkan hinta on alkumaksu $4{,}0\\,\\text{€}$ ja lisäksi $2{,}5\\,\\text{€}$ jokaiselta ajetulta kilometriltä. Kuinka monta kertaa kalliimpi 10 km:n matka on kuin 5,0 km:n matka? Hinta on matkan funktio $y = kx + b$. Anna vastaus lukuna.",
+      "text": "Taksimatkan hinta on alkumaksu $4{,}0\\,\\text{€}$ ja lisäksi $2{,}5\\,\\text{€}$ jokaiselta ajetulta kilometriltä. Hinta on matkan funktio $y = kx + b$. Kuinka monta kertaa niin kallis 10 km:n matka on kuin 5,0 km:n matka? Anna vastaus lukuna.",
       "answer": 1.8,
       "unit": "kertaa",
       "tolerance": 0.03

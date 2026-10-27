@@ -67,4 +67,17 @@ def kettle():
     return f.svg()
 
 
+def reading():
+    """Not in lesson.md: the graph of the inquiry task 'lue-kuvaajasta' (inquiry.json), a line s = 15 km/h t + 5 km read at two grid crossings."""
+    f = Fig("fy14-reading", 350, "Kuvaaja mittakaavassa: patikoijan matka s ajan t funktiona. Suora leikkaa pystyakselin kohdassa 5 km ja kulkee "
+            "ruudukon risteyskohtien (1,0 h; 20 km) ja (3,0 h; 50 km) kautta. Pisteet P₁ ja P₂ on merkitty suoralle.")
+    ax = Axes(f, (96, 300), (470, 60), x=(0, 3.5), y=(0, 60), xticks=[1, 2, 3], yticks=[10, 20, 30, 40, 50],
+              xlabel=r"t\ (\text{h})", ylabel=r"s\ (\text{km})")
+    ax.line([(0, 5), (3.5, 57.5)], INK, 3)
+    ax.point(1, 20, COLD); ax.point(3, 50, COLD)
+    f.tex(ax.X(1) + 16, ax.Y(20) + 30, r"P_1", "start", COLD, w=50)
+    f.tex(ax.X(3) - 16, ax.Y(50) + 30, r"P_2", "end", COLD, w=50)
+    return f.svg()
+
+
 FIGURES = {"scatter": scatter, "slope": slope, "kettle": kettle}
