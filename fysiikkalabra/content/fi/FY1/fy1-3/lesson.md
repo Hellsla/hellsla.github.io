@@ -3,7 +3,7 @@
 > **Miksi** kymmenen oppilasta saa samasta kuulan vierimisajasta kymmenen eri tulosta, vaikka kaikki käyttävät samaa kelloa?
 
 ## Ydinajatus
-**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos ei ole koskaan täsmälleen suureen oikea arvo, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $\Delta x = x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen, eikä se ole sama asia kuin moka, esimerkiksi väärin kirjattu luku. Fysiikassa virhe arvioidaan ja ilmoitetaan tuloksen mukana.
+**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos ei ole koskaan täsmälleen suureen oikea arvo, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $e = x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen, eikä se ole sama asia kuin moka, esimerkiksi väärin kirjattu luku. Fysiikassa virhe arvioidaan ja ilmoitetaan tuloksen mukana.
 
 Virheet jaetaan kahteen lajiin sen mukaan, miten ne käyttäytyvät, kun mittaus toistetaan.
 
@@ -255,4 +255,4 @@ Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen.
 - Satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy hajontana. Keskiarvo $\bar{x}$ vaimentaa sitä, ja sen suuruutta arvioidaan vaihteluvälin puolikkaalla $\Delta x$.
 - Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan, eikä toistaminen poista sitä. Se huomataan vertailuarvolla ja korjataan: $x = x_\text{lukema} - \Delta x_\text{sys}$.
 - Toistettavuus kertoo satunnaisvirheestä ja oikeellisuus systemaattisesta virheestä. Luotettava mittaus on sekä toistettava että oikea.
-- Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$ yksikköineen. Virhe-arvio pyöristetään yhteen merkitsevään numeroon, ja tulos samaan desimaaliin.
+- Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$ yksikköineen. Virhe-arvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja tulos samaan desimaaliin.

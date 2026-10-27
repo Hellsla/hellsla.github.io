@@ -7,8 +7,7 @@
     "Osaat korjata systemaattisen virheen ja arvioida, onko mittaus toistettava ja oikea."
   ],
   "prior": [
-    "Mittaustulos ilmoitetaan lukuarvona ja yksikkönä, ja merkitsevät numerot kertovat sen tarkkuudesta (luku *Suureet, yksiköt ja SI-järjestelmä*)",
-    "Keskiarvo lasketaan jakamalla lukujen summa lukujen määrällä"
+    "Mittaustulos ilmoitetaan lukuarvona ja yksikkönä, ja merkitsevät numerot kertovat sen tarkkuudesta (luku *Suureet, yksiköt ja SI-järjestelmä*)"
   ],
   "activities": [
     {
@@ -112,7 +111,7 @@
       "type": "sim",
       "text": "Kuula vierii rampilla, ja käsikello antaa joka kerta lukeman. Pisteet kasautuvat aika-akselille, ja näet keskiarvon ja oikean ajan. Liukusäätimillä valitset toistot ja kahden virheen suuruuden.",
       "howto": "Paina *Käynnistä*, niin mittauksia tehdään yksi kerrallaan. Voit myös vetää *Toistoja* -liukusäädintä, jolloin näet saman sarjan ensimmäiset $n$ tulosta. *Satunnaisvirhe* kertoo, kuinka paljon tulokset heittelevät, ja *Systemaattinen virhe* sen, kuinka paljon kello näyttää joka kerta liikaa (plus) tai liian vähän (miinus). Oranssi piste on viimeisin lukema, vihreä katkoviiva oikea aika ja musta viiva keskiarvo.",
-      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät oikean kokeen mittauksia. Kuulan oikea vierimisaika on $T = 2{,}40\\,\\text{s}$. Malli tuntee sen, mutta oikeassa kokeessa sitä ei tiedetä. Lukema on $t_i = T + \\delta_\\text{sys} + \\delta_\\text{sat}\\,g_i$ pyöristettynä sadasosasekuntiin, missä $g_i$ on kiinteä satunnaislukujen sarja. Sama sarja alkaa aina alusta, joten kokeen voi toistaa.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät oikean kokeen mittauksia. Kuulan oikea vierimisaika on $T = 2{,}40\\,\\text{s}$. Malli tuntee sen, mutta oikeassa kokeessa sitä ei tiedetä. Lukema on $t_i = T + \\delta_\\text{sys} + \\delta_\\text{sat}\\,g_i$ pyöristettynä sadasosasekuntiin, missä $g_i$ on kiinteä satunnaislukujen sarja. Sama sarja alkaa aina alusta, joten kokeen voi toistaa. Luku $\\delta_\\text{sat}$ on yksittäisen lukeman tyypillinen poikkeama; useamman lukeman vaihteluvälin puolikas on sitä suurempi.",
       "calc": "Keskiarvo $\\bar{t}$ on $n$ ensimmäisen lukeman summa jaettuna luvulla $n$. Vaihteluvälin puolikas on $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. Keskiarvon ero oikeaan aikaan on $\\bar{t} - T$, ja sen näkee vain mallissa, koska oikeaa aikaa ei yleensä tunneta."
     },
     {
@@ -151,7 +150,7 @@
         },
         {
           "key": "vir",
-          "label": "keskiarvon ero oikeaan (s)"
+          "label": "ero oikeaan (s)"
         }
       ],
       "min": 3,
@@ -160,7 +159,7 @@
         "prompt": "Mitä taulukko osoittaa, kun $n$ kasvaa?",
         "choices": [
           {
-            "text": "Keskiarvon ero oikeaan aikaan pienenee, mutta vaihteluvälin puolikas ei pienene vaan pysyy suunnilleen samana.",
+            "text": "Keskiarvon ero oikeaan aikaan pienenee, mutta vaihteluvälin puolikas ei pienene kohti nollaa vaan asettuu noin $0{,}25\\,\\text{s}$:iin (rivillä $n = 1$ se on nolla, koska tuloksia on vain yksi).",
             "correct": true,
             "feedback": "Oikein. Rivillä $n = 1$ keskiarvo on yksittäinen tulos ja ero oikeaan on $-0{,}22\\,\\text{s}$, rivillä $n = 40$ ero on alle $0{,}01\\,\\text{s}$. Vaihteluvälin puolikas pysyy noin $0{,}25\\,\\text{s}$:ssa, koska yksittäiset mittaukset heittelevät yhä."
           },
@@ -232,7 +231,7 @@
             "feedback": "Ero ei ole nolla. Satunnainen osa on vaimentunut, mutta systemaattinen virhe $+0{,}30\\,\\text{s}$ on yhä mukana jokaisessa tuloksessa ja siis keskiarvossa."
           }
         ],
-        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus $\\Delta t = \\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** $\\Delta t = \\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta t = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
+        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $e = \\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** $e = \\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $e = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
       }
     },
     {

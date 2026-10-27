@@ -1,21 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3a91930e0895b369
+CONTENT-HASH: 210c78e492d3e439
 
 ## Blocking
 (none)
 
 ## Polish
-1. inquiry.json exp-1 (n = 1, 5, 40) — row n = 1 has half-range 0,000 s, yet the correct answer says it "pysyy suunnilleen samana"; students may doubt the key. Use n = 5, 10, 40 or say "ei pienene, vaan asettuu noin 0,25 s:iin".
-2. inquiry.json `prior`, second item — lacks the required "(luku *...*)" ending. Add the chapter or move the item (keskiarvo is comprehensive-school knowledge).
-3. exercises L3-01 — constant start/stop delays are systematic here, while the theory says reaction time is random error; add one phrase ("viiveet ovat joka kerralla samat").
-4. lab-1280 capture — the sticky simulation's legend line looks cut at the bottom and its lead is cut at the top; check the sticky box height (shared component).
-5. exp tables scroll sideways at 390 px (columns clipped at the edge); acceptable, but a shorter column label ("ero oikeaan") would fit.
+1. Shared components (coordinator): sticky-sim legend crop at 1280 px and sideways table scroll at 390 px (column "vaihteluvälin puol..." still clipped); not judged here.
 
 ## Checked
-- Path: hook, retrieval, 2 predictions with justification, 2 experiments (each can refute its prediction; wrong-option feedback repairs the misconception), data item, conclusion, theory, reflect, staged example, transfer, checks; one lesson's workload, extras optional.
-- Slot goals (random/systematic error, repeatability) covered, nothing beyond FY1.
-- Figures 1-4 legible at 390 px, colour never alone, placed after their paragraphs; no text wall.
-- Example: seven stages, symbolic first, sound reasonableness check; not repeated in exercises.
-- Exercise levels 5/4/3, solutions complete and followable; exit ticket tests the core idea.
-- Finnish and glossary terms correct; model values called model values.
-- Simulation text behind Käyttöohje, Mallin oletukset, Laskennan selitys; phone usable.
+- Round-1 polish fixed: exp-1 key now explains n = 1 gives half-range 0 and the half-range settles near 0,25 s; the second `prior` item is gone and the remaining one ends "(luku *...*)"; L3-01 says the delays are the same every time (systematic); column label "ero oikeaan (s)".
+- Touched by fixes: symbol e for measurement error is consistent in lesson, summary and solutions; the "two figures if first digit is 1" rule is consistent with the example; sim dots at exact reading x show one dot at n = 1 and the readout matches; sim texts remain behind the three boxes.
+- Path, exercise levels 5/4/3, solutions, exit ticket, Finnish and glossary terms unchanged and sound; the lesson is an hour's work with extras optional.

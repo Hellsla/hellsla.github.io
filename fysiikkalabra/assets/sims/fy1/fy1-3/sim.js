@@ -111,7 +111,7 @@ new p5((p) => {
     lab(`$t_{${idx}}$`, 470, 100 + 0.2 * fh, 'c', fh, [245, 245, 245]);
   }
 
-  // --- the dot plot: readings stacked in 0,04 s bins, the mean and the true value ---
+  // --- the dot plot: readings stacked in 0,04 s bins (each dot drawn at its exact reading), the mean and the true value ---
   function plot(rs, mean, fh) {
     const yT = 178, yM = yT + fh + 3, yTop = yM + 0.25 * fh + 8, yB = PX.yB;
     // markers behind the dots: true value (green dashes) and mean (ink line)
@@ -122,7 +122,7 @@ new p5((p) => {
     rs.forEach((v, i) => { const b = Math.max(0, Math.min(nb, Math.floor((v - TMIN) / BIN + 0.5 + 1e-9))); (bins[b] = bins[b] || []).push(i); });
     const maxc = Math.max(...Object.values(bins).map((a) => a.length)), d = Math.min(10, (PX.x1 - PX.x0) / nb - 1), step = Math.min(d + 1.5, (yB - 3 - yTop) / maxc);
     for (const b in bins) bins[b].forEach((i, j) => {
-      const last = i === rs.length - 1, cx = X(TMIN + b * BIN), cy = yB - 2 - d / 2 - j * step;
+      const last = i === rs.length - 1, cx = X(Math.max(TMIN, Math.min(TMAX, rs[i]))), cy = yB - 2 - d / 2 - j * step;
       p.stroke(255); p.strokeWeight(1.5); p.fill(...(last ? ORANGE : BLUE)); p.circle(cx, cy, d);
     });
     // axis with arrowhead, ticks every 0,1 s, numbers every 0,4 s

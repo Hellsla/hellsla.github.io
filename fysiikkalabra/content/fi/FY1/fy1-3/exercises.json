@@ -79,7 +79,7 @@
     {
       "id": "fy1-3-L3-01",
       "level": 3,
-      "text": "Käsin otetussa ajanotossa kello käynnistetään aina 0,18 s liian myöhään ja pysäytetään aina 0,12 s liian myöhään. Mikä on ajanoton systemaattinen virhe eli lukema miinus oikea aika? Anna vastaus etumerkkeineen.",
+      "text": "Käsin otetussa ajanotossa kello käynnistetään aina 0,18 s liian myöhään ja pysäytetään aina 0,12 s liian myöhään (viiveet ovat joka kerralla samat). Mikä on ajanoton systemaattinen virhe eli lukema miinus oikea aika? Anna vastaus etumerkkeineen.",
       "answer": -0.06,
       "unit": "s",
       "tolerance": 0.02
