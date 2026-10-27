@@ -169,46 +169,55 @@ missä $Q_\text{sisälle}$ on sisälle luovutettu lämpö (J), $Q_\text{ulko}$ u
 Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla 500 MW. Kun laitos tuottaa pelkkää sähköä, sähköteho on 190 MW. Talvella sama laitos toimii yhteistuotantovoimalaitoksena: se tuottaa 150 MW sähköä ja 290 MW kaukolämpöä. Mikä on hyötysuhde kummassakin tapauksessa, ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?
 
 <!-- vaihe -->
-**Tunnetut ja kysytty.** Polttoaineteho $P_1 = 500\,\text{MW}$. Pelkkää sähköä tuotettaessa sähköteho $P_\text{s} = 190\,\text{MW}$; yhteistuotannossa $P_\text{s} = 150\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 290\,\text{MW}$. Kysytään hyötysuhteita ja hukkalämmön tehoa $P_2$. Hyötysuhde lasketaan tehoista samoin kuin energioista.
+
+**Tunnetut ja kysytty.** Polttoaineteho $P_1 = 500\,\text{MW}$. Pelkkää sähköä tuotettaessa sähköteho $P_\text{s} = 190\,\text{MW}$; yhteistuotannossa $P_\text{s} = 150\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 290\,\text{MW}$. Kysytään hyötysuhteita $\eta$ ja hukkalämmön tehoa $P_2$ kummassakin tapauksessa.
 
 <!-- vaihe -->
-**Kaavat ratkaistuina.** Hyötysuhde on hyödyksi saatu teho jaettuna syötetyllä teholla, ja energia säilyy, joten hukkalämpö on se osa, joka ei tule hyödyksi:
+
+**Periaate.** Hyötysuhde on hyödyksi saatu teho jaettuna syötetyllä teholla; se lasketaan tehoista samoin kuin energioista, koska molemmat ovat energiaa samassa ajassa. Energia säilyy, joten polttoaineteho jakautuu hyödyksi saatuun tehoon ja hukkalämpöön. Hyödyksi tulee pelkässä sähköntuotannossa vain sähkö, yhteistuotannossa sähkö ja kaukolämpö.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Ratkaistaan kysytyt suureet symboleilla ennen lukuja:
 ```latex
 \begin{aligned}
 \eta &= \frac{P_\text{hyöty}}{P_1} \\
 P_2 &= P_1 - P_\text{hyöty}
 \end{aligned}
 ```
+Pelkälle sähkölle $P_\text{hyöty} = P_\text{s}$ ja yhteistuotannolle $P_\text{hyöty} = P_\text{s} + P_\text{k}$.
 
 <!-- vaihe -->
-**Pelkkä sähkö.** Nyt hyödyksi saadaan vain sähkö, $P_\text{hyöty} = P_\text{s}$:
+
+**Yksikkömuunnokset.** Kaikki tehot on annettu megawatteina, joten muunnoksia ei tarvita: hyötysuhteessa yksikkö supistuu, ja hukkalämpö saadaan megawatteina. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla.
+
+<!-- vaihe -->
+
+**Sijoitus.** Pelkälle sähkölle ja yhteistuotannolle erikseen:
 ```latex
 \begin{aligned}
-\eta &= \frac{P_\text{s}}{P_1} \\
+\eta_1 &= \frac{P_\text{s}}{P_1} \\
 &= \frac{190\,\text{MW}}{500\,\text{MW}} \\
-&= 0{,}38 = 38\,\% \\
-P_2 &= P_1 - P_\text{s} \\
+&= 0{,}380 \\
+P_{2,1} &= P_1 - P_\text{s} \\
 &= 500\,\text{MW} - 190\,\text{MW} \\
-&= 310\,\text{MW}
-\end{aligned}
-```
-Hukkalämpö siirtyy lauhduttimen kautta mereen.
-
-<!-- vaihe -->
-**Yhteistuotanto.** Hyödyksi saadaan sähkö ja kaukolämpö, $P_\text{hyöty} = P_\text{s} + P_\text{k}$:
-```latex
-\begin{aligned}
-\eta &= \frac{P_\text{s} + P_\text{k}}{P_1} \\
+&= 310\,\text{MW} \\[6pt]
+\eta_2 &= \frac{P_\text{s} + P_\text{k}}{P_1} \\
 &= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}} \\
-&= 0{,}88 = 88\,\% \\
-P_2 &= P_1 - (P_\text{s} + P_\text{k}) \\
+&= 0{,}880 \\
+P_{2,2} &= P_1 - (P_\text{s} + P_\text{k}) \\
 &= 500\,\text{MW} - 440\,\text{MW} \\
 &= 60\,\text{MW}
 \end{aligned}
 ```
 
 <!-- vaihe -->
-**Järkevyys.** Sähköä saadaan yhteistuotannossa vähemmän, koska höyry lauhdutetaan korkeammassa lämpötilassa, jotta sen lämpö kelpaa kaukolämmöksi. Polttoaineen energia käytetään silti paljon paremmin hyödyksi, ja kumpikin hyötysuhde jää alle 100 %:n, kuten pitääkin.
+
+**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $\eta_1 = 0{,}380 = 38{,}0\,\%$ ja hukkalämpöä siirtyy mereen lauhduttimen kautta $310\,\text{MW}$. Yhteistuotannossa hyötysuhde on $\eta_2 = 0{,}880 = 88{,}0\,\%$ ja hukkalämpöä on vain $60\,\text{MW}$. Tehot on annettu täysinä megawatteina, joten erotukset $310\,\text{MW}$ ja $60\,\text{MW}$ tunnetaan megawatin tarkkuudella. Hyötysuhteet ovat osamääriä, joten niissä on yhtä monta numeroa kuin epätarkimmassa tehossa: $190\,\text{MW}$, $150\,\text{MW}$, $290\,\text{MW}$ ja $500\,\text{MW}$ ovat kaikki kolmen numeron arvoja, joten hyötysuhteet annetaan kolmella numerolla.
+
+<!-- vaihe -->
+
+**Järkevyys.** Kumpikin hyötysuhde jää alle 100 %:n, kuten pitääkin, ja energia säilyy: $190\,\text{MW} + 310\,\text{MW} = 500\,\text{MW}$ ja $150\,\text{MW} + 290\,\text{MW} + 60\,\text{MW} = 500\,\text{MW}$. Sähköä saadaan yhteistuotannossa vähemmän, koska höyry lauhdutetaan korkeammassa lämpötilassa, jotta sen lämpö kelpaa kaukolämmöksi. Polttoaineen energia käytetään silti paljon paremmin hyödyksi.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että parempi tekniikka voisi tehdä lämpövoimakoneesta lähes täydellisen, niin että kaikki lämpö muuttuisi työksi. Kitkan ja muiden häviöiden vähentäminen auttaa, mutta osa lämmöstä on aina luovutettava kylmempään ympäristöön, joten hyötysuhde jää selvästi alle 100 %:n. Simulaation kitkaton mäntä näyttää syyn: jotta mäntä saadaan alas pienemmällä työllä kuin se nousi, kaasua on jäähdytettävä, ja jäähdytyksessä lämpöä siirtyy kylmään veteen.

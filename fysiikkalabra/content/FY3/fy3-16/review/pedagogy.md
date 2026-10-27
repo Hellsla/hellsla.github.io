@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1d83eaa86fe1d6a7
+CONTENT-HASH: 824a4d20f0370c33
+
 ## Blocking
-None. (The packet shows "FAIL lint"; run now, lint_lesson.py gives 0 errors and 3 warnings: solutions L3-01..03 are 142, 157 and 217 words, limit 120. The packet result looks stale or counts warnings; shorten those solutions.)
+(none)
+
 ## Polish
-- Slot goal is three everyday cases (sauna, kylmälaukku, jäähdytysneste), but the core path investigates only the cooler bag; sauna sits in the optional loyly/siirto/check-3 and the coolant appears only in lesson text and exercises L1-05/L2-03. Add one short core item on coolant (e.g. flow rate from P = c(m/t)ΔT) or accept that the other two are practised in Tehtävät.
-- inquiry.json kayra — answer 333 kJ with 4 % tolerance depends on reading 3,7 h from a one-hour grid; a student reading 3,5 h (315 kJ) is marked wrong. Give the plateau end in the text or raise the tolerance to about 8 %.
-- lesson.md kuvaaja vs inquiry.json kayra — both show "1 kg ice, 28 °C" but one plateau is 2,4 h (UA 1,2 W/K, with drinks) and the other 3,7 h (UA 0,90 W/K); state UA and the drinks in the lesson graph's caption so students do not think one is wrong.
-- inquiry.json hook — "Alussa seinän läpi tulee koko ajan sama teho" already gives pred-1's reasoning; ask the question without the hint and let Cem's answer be the student's discovery.
-- exit-ticket.json item 2 repeats check-2's two-target calculation; swap for one on coolant/massflow to cover the third context.
+- solutions.md fy3-16-L3-01 and L3-03 — Sijoitus still packs several calculations into one run of text (carried from round 2). Fix: split into one labelled line per calculation, as now done in L3-02 and the inquiry siirto task.
+- solutions.md L3-02 Järkevyys, last sentence — "1,51 kg eli kahdella numerolla pienin sopiva massa 1,5 kg" is clumsy (carried). Fix: "1,51 kg, pyöristettynä 1,5 kg".
+
 ## Checked
-Core path clear: hook, 2 predictions (pred-1 models Aino/Bea/Cem/Dan, correct once; pred-2 refutes the tempting "−50 %" model by the table), kayra, taulukko, conclusion (explain, no experiment so no `after`; model answer only after own text; the model answer and both data items say "mallilla laskettu/esimerkkiarvot", `source: model`), 2 checks, exit; kertaus, loyly, reflect, Etsi virhe, siirto, check 3 in Valinnainen. Taulukko asks a Pt product per row: workable on two rows. Example staged, differs from the investigation. Exercises L1–L3 progress; Finnish good. No captures; judged from text.
+- Siirto task (inquiry.json) Sijoitus: the bracket is first evaluated on its own (335 200 + 2 260 000 = 2 595 200 J/kg), then t is shown as three short aligned lines. Each step is one operation a student can follow; units are carried throughout.
+- Arithmetic recomputed: 4190·80 = 335 200; 0,15·2 595 200 = 389 280 J; /6000 = 64,88 s, which matches the Vastaus (65 s).
+- L3-02 Sijoitus: numerator (251 400 − 167 000 = 84 400 J) and denominator (4190·2,50 = 10 475 J/K) are named separately, then the final quotient is shown on its own line. 84 400/10 475 = 8,057 matches the Vastaus and Järkevyys.
+- The two-significant-figure justification in L3-02 is unchanged and still names the subtraction as the limiting step.
+- The split makes each displayed line shorter, which is the aim for 360 px; the layout 360 px check is green.
+- No new term, no change to the Annettu, Periaate, Kaava or Muunnokset stages. Only wording and layout changed, so the earlier pass stands.
+- Hash differs from round 2 only by this diff and was the same at the start and the end.

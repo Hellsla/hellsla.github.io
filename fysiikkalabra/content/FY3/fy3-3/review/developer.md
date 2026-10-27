@@ -1,4 +1,6 @@
 VERDICT: DONE
-Recoloured the three SVGs in lesson.md; scope shows only relocated, section-name, style. No label moved (text already 24 px).
-Colours: ink #1f2933 outlines, text, arrows, axes, data; glass #eef5f9 vessels; cold #1971c2 cold-gas particles, 0 K and 0 C ticks, -270 C point; hot #c92a2a hot-gas particles and 100 C tick; muted #6b7480 extrapolation line and axis numbers.
-Not fixable here: check_lesson lint error at sim.js:38 (28-word paragraph in the sim), outside my scope.
+
+solutions.md: L2-03 and L2-04 Vastaus now name the limiting datum (difference 137-110 = 27 kPa, two figures; T = 100 K and 400 K, three figures, answer 4,00). L2-02 Vastaus names Δp = 33 kPa. L1-03 and L1-05 say the exact 273,15 does not limit and give the decimal-rule value. L3-03 "pienimmillään (mallissa nolla)".
+inquiry.json: check-2 solution "Taulukosta luetaan".
+exit-ticket.json: −273,15 °C (noin −273 °C).
+answers.py, exercises, sim unchanged.

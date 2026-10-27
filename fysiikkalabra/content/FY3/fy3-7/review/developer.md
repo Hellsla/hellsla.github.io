@@ -1,4 +1,5 @@
 VERDICT: DONE
-Both figures recoloured, geometry and text untouched; no label moved (all text already 24 px). Scope: relocated, section-name, style only.
-Colours: ink #1f2933 outlines and text; glass #eef5f9 container boxes; water blue #a9d1f0/#2f74b5 particles; muted #6b7480 gas motion lines, graph guide dashes; orange #e8590c heat flow (melting and evaporation arrows); red #c92a2a temperature curve.
-Open: check_lesson lint fails on sim.js:55 (23-word paragraph in the sim). Not in my allowed files; needs a separate fix.
+
+solutions.md: L1-05 Vastaus now says both readings are to the kilojoule so the difference is too (167 kJ, three figures); Jarkevyys "lahes yhdeksan kertaa". L1-03 Jarkevyys: layer is a frost-week layer, not one night. L3-03 Vastaus names the limiting difference 196 g - 90,0 g = 106 g.
+inquiry.json: siirto Vastaus states 1,9e2 W with calculator result 188 W (answer field 188 unchanged).
+No numbers, answers.py or tests changed.

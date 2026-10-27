@@ -405,16 +405,15 @@ Kun kaasun määrä ei muutu, $nR$ on vakio, ja tilanyhtälöstä seuraa yhdiste
 Juhlapallo täytetään heliumilla, kunnes sen tilavuus on 5,0 l. Pallossa paine on 101 kPa ja lämpötila 20 °C. Kuinka monta moolia heliumia pallossa on, ja mikä on heliumin massa? Heliumin moolimassa on 4,0 g/mol.
 
 <!-- vaihe -->
-**Tunnetut ja kysytty.** Muutetaan yksiköt perusyksiköiksi:
 
-- tilavuus $V = 5{,}0\,\textsf{l} = 0{,}0050\,\text{m}^3$
-- paine $p = 101\,\text{kPa}$, eli $p = 101\,000\,\text{Pa}$
-- lämpötila $T = (20 + 273{,}15)\,\text{K}$, eli $T = 293{,}15\,\text{K}$
-- moolimassa $M = 4{,}0\,\text{g/mol}$
-
-Kysytään ainemäärää $n$ ja massaa $m$.
+**Tunnetut ja kysytty.** Pallon tilavuus $V = 5{,}0\,\textsf{l}$, paine $p = 101\,\text{kPa}$, lämpötila $\theta = 20\,{}^\circ\text{C}$ ja heliumin moolimassa $M = 4{,}0\,\text{g/mol}$. Kysytään ainemäärää $n$ ja massaa $m$.
 
 <!-- vaihe -->
+
+**Periaate.** Pallossa on tietty määrä heliumia tietyssä tilavuudessa, paineessa ja lämpötilassa, ja helium käyttäytyy tavallisessa paineessa ja huoneenlämmössä ideaalikaasuna. Siksi tilanyhtälö $pV = nRT$ antaa ainemäärän, ja moolimassa muuttaa ainemäärän massaksi.
+
+<!-- vaihe -->
+
 **Kaava ratkaistuna.** Ratkaistaan tilanyhtälöstä ainemäärä ja yhtälöstä $n = m/M$ massa:
 ```latex
 \begin{aligned}
@@ -424,6 +423,16 @@ m &= nM
 ```
 
 <!-- vaihe -->
+
+**Yksikkömuunnokset.** Tilanyhtälö vaatii perusyksiköt:
+
+- tilavuus $V = 5{,}0\,\textsf{l} = 0{,}0050\,\text{m}^3$
+- paine $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$
+- lämpötila $T = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$
+- moolimassa jää arvoon $M = 4{,}0\,\text{g/mol}$, jolloin massa tulee grammoina
+
+<!-- vaihe -->
+
 **Sijoitus.** Sijoitetaan arvot yksiköineen:
 ```latex
 \begin{aligned}
@@ -434,6 +443,7 @@ n &= \frac{pV}{RT} \\
 ```
 
 <!-- vaihe -->
+
 **Tulos.** Heliumin massa lasketaan tarkemmalla ainemäärällä:
 ```latex
 \begin{aligned}
@@ -442,9 +452,10 @@ m &= nM \\
 &\approx 0{,}83\,\text{g}
 \end{aligned}
 ```
-Pallossa on 0,21 mol heliumia, ja sen massa on 0,83 g.
+Pallossa on 0,21 mol heliumia, ja sen massa on 0,83 g. Ainemäärän rajoittaa tilavuus 5,0 l ja massan lisäksi moolimassa 4,0 g/mol, kumpikin kaksi numeroa, joten tulokset annetaan kahdella merkitsevällä numerolla. Paine 101 kPa ja lämpötila 293 K ovat kolmen numeron arvoja eivätkä rajoita.
 
 <!-- vaihe -->
+
 **Järkevyys.** Yksi mooli kaasua vie huoneenlämmössä ja normaalipaineessa noin 24 litraa, joten 5,0 litrassa on noin 5,0/24 ≈ 0,21 mol kaasua. Samankokoisessa ilmapallossa on yhtä monta moolia ilmaa, mutta sen massa on noin 0,2073 mol · 29 g/mol ≈ 6,0 g. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä, ei siksi, että kaasua olisi vähemmän.
 
 ## Yleinen virhekäsitys

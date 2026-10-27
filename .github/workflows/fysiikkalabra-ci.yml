@@ -23,6 +23,8 @@ jobs:
         with: { node-version: "22" }
       - run: pip install markdown playwright && playwright install --with-deps chromium
       - run: python scripts/lint_lesson.py --all
+      - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
+        run: python scripts/check_solutions.py --all
       - run: python scripts/build.py --all
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py

@@ -261,11 +261,15 @@ Kalorimetrissä on 0,300 kg vettä, jonka lämpötila on 20,0 °C. Siihen upotet
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Vesi: $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $m_\text{v} = 0{,}300\,\text{kg}$, $T_\text{v} = 20{,}0\,{}^\circ\text{C}$. Metalli: $m_\text{m} = 0{,}200\,\text{kg}$, $T_\text{m} = 100{,}0\,{}^\circ\text{C}$. Tasapainolämpötila $T = 24{,}5\,{}^\circ\text{C}$. Kysytään metallin ominaislämpökapasiteettia $c_\text{m}$. Metalli jäähtyy 75,5 K ja vesi lämpenee 4,5 K.
+**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}300\,\text{kg}$, $T_\text{v} = 20{,}0\,{}^\circ\text{C}$ ja taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Metalli: $m_\text{m} = 0{,}200\,\text{kg}$, $T_\text{m} = 100{,}0\,{}^\circ\text{C}$. Tasapainolämpötila $T = 24{,}5\,{}^\circ\text{C}$. Kysytään metallin ominaislämpökapasiteettia $c_\text{m}$.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Ratkaistaan yhtälöstä $c_\text{m}$:
+**Periaate.** Energia säilyy. Kun kalorimetri ja ilma eivät ota lämpöä, metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Kumpikin vain lämpenee tai jäähtyy eikä olomuoto muutu, joten kummallekin pätee $Q = c m \Delta T$. Lopussa molemmat ovat samassa lämpötilassa $T$.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Merkitään lämpömäärät yhtä suuriksi ja ratkaistaan $c_\text{m}$:
 ```latex
 \begin{aligned}
 &c_\text{m} m_\text{m} (T_\text{m} - T) \\
@@ -273,6 +277,10 @@ Kalorimetrissä on 0,300 kg vettä, jonka lämpötila on 20,0 °C. Siihen upotet
 &c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}
 \end{aligned}
 ```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Massat ovat jo kilogrammoina. Lämpötilaero on sama kelvineinä ja celsiusasteina, joten metalli jäähtyy $T_\text{m} - T = 75{,}5\,\text{K}$ ja vesi lämpenee $T - T_\text{v} = 4{,}5\,\text{K}$.
 
 <!-- vaihe -->
 
@@ -284,8 +292,7 @@ Kalorimetrissä on 0,300 kg vettä, jonka lämpötila on 20,0 °C. Siihen upotet
 &= 5656{,}5\,\text{J} \\[6pt]
 &c_\text{m} = \frac{Q_\text{v}}{m_\text{m} (T_\text{m} - T)} \\
 &= \frac{5656{,}5\,\text{J}}{0{,}200\,\text{kg} \cdot 75{,}5\,\text{K}} \\
-&= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\
-&\approx 3{,}7 \cdot 10^2\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}
+&= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}
 \end{aligned}
 ```
 

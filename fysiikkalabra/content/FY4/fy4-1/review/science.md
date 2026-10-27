@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d1e3f3544f8c599a
+CONTENT-HASH: 210428203ba1fe2b
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md fy4-1-L2-01 — the task asks for "matka" but the solution names it "siirtymä $\Delta x$"; equal here (one direction), but in a lesson built on matka ≠ siirtymä write $s = v\,\Delta t$ or say why they coincide.
-- inquiry.json simulaatio `model` — "Kitkaa … ei huomioida" is unnecessary for carts that simply keep a constant velocity (forces are not in this lesson); "Kärryjen nopeus on vakio" says the assumption without inviting a force question.
+- inquiry.json:523, :635 (exp-1, exp-3 Vastaus) — "simulaation mallin arvot esitetään kahdella numerolla" is not what the page shows: the readout and table give 40,0 m and 10,0 s. — Fix: say that two figures is the convention chosen for the model values.
+- inquiry.json:647–669 (data) — tolerance 0,03 accepts readings x₂ = 18,6 … 19,5 m at t = 10 s, but the solution says the graph can be read "noin metrin tarkkuudella". — Fix: raise the tolerance to about 0,05, or say the reading is good to about half a metre.
+- lesson.md:308 (Esimerkki, Tulos) — the two figures of v are attributed to Δt = 40 s alone. Δx = 120 m − 20 m = 100 m is a difference of graph readings and limits just as much. — Fix: name both.
 
 ## Checked
-- One Python run recomputed all 12 exercises and 12 inquiry/example numerics; answers.py matches (8,0 / −17 / 42 / 2,0 / 45 / 300 / 5,0 / −3,0 / 16 / 4,0 / 50 / 0,25; 4,0, −3,0, 1,49, 39, 13, 2,5, 170, 16) and stated answers are within tolerance.
-- Formulas Δx = x₂ − x₁, v_ka = Δx/Δt, x = x₀ + vt with symbols and the t = 0 condition; vector vs. component notation stated; within FY4 "tasainen suoraviivainen liike".
-- Displacement figure to scale (40 px/m: 2→8 m = +6 m, 8→3 m = −5 m); jogger graph to scale (20, 120, 170 m at 0, 40, 60 s).
-- Worked example symbolic first, 2,5 m/s ≈ 9 km/h, 170 m with independent check.
-- Robot data: least-squares slope 1,494 m/s, intercept 4,10 m; drawn line (0; 4,1)–(10; 19,1) and all six points at the right pixels; residuals ±0,3 m on both sides; answer 1,5 with 3 % tolerance; mistakes 1,91 / 1,3 / 0,67 correct.
-- Predictions: model values A 2 m/s, B 4 m/s, C x₀ = 20 m, D x₀ = 30 m, v = −3 m/s, A and D meet at 6 s, 12 m — all feedback numbers match sim.js CASES.
-- Experiments lock `tapaus`, vary `t`; simState exposes xA and x2 at the slider's 0,5 s steps; exp-1 4,0 m/s, exp-3 −3,0 m/s.
-- Round trip E: 8 m out, 2 s stop, back to 0 at 10 s; path 16 m, v_ka = 0; graph vertices at the right times; keskivauhti 1,6 m/s distinguished correctly.
-- sim.js pos/vel/path correct for all four cases; arrows scale with signed v; implements the lesson's model, limits stated.
-- Etsi virhe, siirto (39 m, mistakes 50/74/5,0), check-2 (13 m) and exit ticket correct; hash identical at start and end.
+- One script ran answers.py and my own formulas on all 12 exercises and every inquiry number, mistake values included: all match and are within tolerance.
+- Both round-1 Blocking items are fixed. L2-02 now checks 1,2 · 4,2 min ≈ 5 min. The data solution now reads about 19 m (Δx ≈ 15 m) and justifies two figures by the reading precision and the scatter. The least-squares slope 1,494 ± 0,029 m/s and intercept 4,10 m are confirmed.
+- Every solution states the given and asked values, a principle that really applies, and the unknown in symbols before numbers. Conversions are right. The Vastaus lines name the limiting datum.
+- The reasonableness checks are real and correct: back-substitutions, x₀ = −11 m for the sledge, 4,8 s through the origin in check-2, L3-01 lying between 5,0 and 3,3 m/s, Eeva's 40 m in L3-02 (50 m > 45 m), the 0,67 m/s trap in L3-03, the km/h comparisons.
+- Figures are to scale: displacement axis (40 px/m), jogger graph (0/20/120/170 m), cart E graph, data points and line (4,10 → 19,10 m).
+- The predictions and their feedback match sim.js CASES at t = 0, 4, 6 and 10 s. The experiments lock tapaus and vary t, and simState gives xA and x2. pos, vel and path are correct, and the model's limits are stated in Mallin oletukset.
+- The hash was unchanged at the end of the review.

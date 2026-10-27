@@ -3,7 +3,7 @@
     {
       "id": "fy3-11-L1-01",
       "level": 1,
-      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
+      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480,0 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
       "answer": 12.0,
       "unit": "kJ",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-11-L1-03",
       "level": 1,
-      "text": "Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla 4300 MW, ja yksikön sähköteho on 1600 MW. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.",
+      "text": "Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla 4,30 · 10³ MW, ja yksikön sähköteho on 1,60 · 10³ MW. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.",
       "answer": 37.2,
       "unit": "%",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy3-11-L1-05",
       "level": 1,
-      "text": "Mökin aggregaatti tuottaa illan aikana 2,6 kWh sähköä. Samana aikana aggregaatin moottorissa palaneen bensiinin energia on 12 kWh. Mikä on aggregaatin hyötysuhde? Anna vastaus prosentteina.",
+      "text": "Mökin aggregaatti tuottaa illan aikana 2,60 kWh sähköä. Samana aikana aggregaatin moottorissa palaneen bensiinin energia on 12,0 kWh. Mikä on aggregaatin hyötysuhde? Anna vastaus prosentteina.",
       "answer": 21.7,
       "unit": "%",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla sylinterissä on ilmaa, jonka kevyesti liikkuva mäntä sulkee. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä 700 J. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$, jossa $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
+      "text": "Fysiikan tunnilla sylinterissä on ilmaa, jonka kevyesti liikkuva mäntä sulkee. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä 700,0 J. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$, jossa $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy3-11-L2-04",
       "level": 2,
-      "text": "Saaristolautan dieselmoottori pyörittää potkuria 480 kW:n mekaanisella teholla. Moottorin hyötysuhde on 40 %. Kuinka suuri lämpöteho siirtyy pakokaasujen ja jäähdytysveden mukana ympäristöön?",
+      "text": "Saaristolautan dieselmoottori pyörittää potkuria 480 kW:n mekaanisella teholla. Moottorin hyötysuhde on 40,0 %. Kuinka suuri lämpöteho siirtyy pakokaasujen ja jäähdytysveden mukana ympäristöön?",
       "answer": 720,
       "unit": "kW",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-11-L3-01",
       "level": 3,
-      "text": "Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta 320 MW:n teholla ja tuottaa samalla 96 MW sähköä ja 180 MW kaukolämpöä. Jos laitosta ei olisi, sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on 40 %, ja sama kaukolämpö lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä 90 %:n hyötysuhteella. Kuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.",
+      "text": "Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta 320 MW:n teholla ja tuottaa samalla 96 MW sähköä ja 180 MW kaukolämpöä. Jos laitosta ei olisi, sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on 40,0 %, ja sama kaukolämpö lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä 90,0 %:n hyötysuhteella. Kuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.",
       "answer": 120,
       "unit": "MW",
       "tolerance": 0.02
@@ -88,14 +88,14 @@
       "id": "fy3-11-L3-02",
       "level": 3,
       "text": "Omakotitalon lämmittämiseen kuluu vuodessa 16,0 MWh lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
-      "answer": 9.6,
+      "answer": 9.60,
       "unit": "MWh",
       "tolerance": 0.02
     },
     {
       "id": "fy3-11-L3-03",
       "level": 3,
-      "text": "Bensiiniauto kuluttaa 6,0 l bensiiniä 100 km:n matkalla, kun se ajaa maantiellä tasaisella 80 km/h:n nopeudella. Bensiinin tiheys on 0,75 kg/l ja lämpöarvo 43 MJ/kg. Moottorin hyötysuhde on 28 %. Kuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee, ja miksi sähköauto, jonka moottorin hyötysuhde on noin 90 %, tarvitsee samaan matkaan paljon vähemmän energiaa?",
+      "text": "Bensiiniauto kuluttaa 6,00 l bensiiniä 100 km:n matkalla, kun se ajaa maantiellä tasaisella 80,0 km/h:n nopeudella. Bensiinin tiheys on 0,750 kg/l ja lämpöarvo 43,0 MJ/kg. Moottorin hyötysuhde on 28,0 %. Kuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee, ja miksi sähköauto, jonka moottorin hyötysuhde on noin 90 %, tarvitsee samaan matkaan paljon vähemmän energiaa?",
       "answer": 12.0,
       "unit": "kW",
       "tolerance": 0.02

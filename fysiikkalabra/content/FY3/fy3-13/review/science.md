@@ -1,20 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 241b72b62e122e9c
+CONTENT-HASH: 82b128401cc8a8cf
 
 ## Blocking
 
 ## Polish
-- inquiry.json (siirto prompt) — "Toinen ryhmä käytti isompaa pulloa" suggests that bottle size raises the pressure. Pressure depends on the amount of gas per volume. — Say that the bottle was filled to a higher pressure.
-- solutions.md:15 (L1-02 Järkevyys) — "lukujen 105 kPa ja 127 kPa suhde": the slope comes from their difference, not their ratio. — Write "erotus 22 kPa 60 asteen välillä".
+- inquiry.json:149 (suora, Vastaus) — the figures are justified by "vähennys 20,0 − 296", a step the solution never shows (it goes through p₀ = 101,26 kPa and −p₀/k) — justify from the shown step: k has three figures, so −p₀/k has three.
+- inquiry.json:307 (siirto, Järkevyys) — "Suuremmassa pullossa paine ja kulmakerroin ovat suuremmat" implies that a larger volume raises the pressure, against p ∝ n/V and the solution's own "koolla ei ole väliä" — say "tämän ryhmän paine…".
+- solutions.md:59 (L2-01) — "yksi bar vastaa noin 270 °C": 80/0,310 ≈ 258 °C per bar; it is 1,050 bar that matches ≈ 271 °C.
+- solutions.md:119 (L3-03) — θ₀ came out too warm, so the slope was too steep. An air leak out of the bottle or the bottle expanding gives a shallower slope and a colder θ₀ — name causes that steepen it (moisture evaporating, a thermometer reading low when hot). Also, 6,00 limits the figures, not 11,15.
+- solutions.md:19 (L1-02) — "0,36…0,39 kPa/°C muissa tämän luvun kokeissa" is not true (siirto 0,433, L3-01 0,41) — widen the range or drop the claim.
 
 ## Checked
-- Round-1 blocker fixed: L2-01's check now blames the two points' measurement error, magnified by the 270 °C extrapolation. This is correct: rounding alone (±0,005 bar) moves θ₀ by about ±9 °C, and the data are 17 °C off.
-- New source/source_note fields on suora and epavarmuus correctly label the example data as simulated.
-- All 12 exercise answers were recomputed independently and match answers.py and exercises.json within tolerance (−272,2; 0,3667; 5,25; 13; 0,893; −256,0; 14,1; −270,0; 18; 20,3; 28,19; 1,86).
-- Least squares gives k = 0,3667 kPa/°C, p₀ = 101,26 kPa and θ₀ = −276,2 °C, which agree with the best line, points A and B, and the worked example (−276,0 °C).
-- Extreme lines 100,1 + 0,387θ and 102,3 + 0,347θ give −258,7 / −294,8 °C and Δθ₀ = 18 °C. The interval contains −273,15 °C.
-- Inquiry numbers: suora −275,8 (mistake −295,9), siirto −276,9 (−306,9), tarkistus-2 −282,9 (−297,9), virhe −276,1 vs −316, kertaus 1,068, exit 0,36 and −282…−258.
-- s₂ in the SVG is p ≈ 98,9 + 0,42θ and misses the bars at 10, 70, 85 and 100 °C. s₁ ≈ 100,1 + 0,387θ.
-- The to-scale formula figure checks out: θ₀ markers at −276, −259 and −295 °C, and the points and lines map correctly.
-- L3-02: N₂ at 0,366·T kPa meets its vapour-pressure curve at ≈ 67 K, as stated.
-- Formulas, their linear-range condition and the liquefaction limit are stated; everything is within FY3 scope.
+- Round 2 (base ab88e28): the only change is inquiry.json:264, which now uses \dfrac. It is the same expression, 40 − 116/0,367 = −276,1 ≈ −276 °C, and it agrees with θ₀ = θ₁ − p₁/k in the feedback.
+- All 12 exercise answers recomputed in one script: they agree with answers.py and the JSON, and each stays inside its tolerance after rounding.
+- Inquiry numbers agree: suora −275,8, siirto −276,9, tarkistus-2 −282,9, Δθ₀ 18,08 (exact 18,11), virhe −276,1, 313/293 = 1,068.
+- Least squares gives k 0,3667, p₀ 101,26: the best line is right. Residuals are at most 0,52 kPa, so the option "kaikki alle 1 kPa:n päässä" holds.
+- Brute force over lines through bar ends gives exactly the stated steepest and shallowest lines. s₂ misses the bars at 10, 70, 85 and 100 °C, as the feedback says.
+- SVG coordinates of figures 2–6 and 8 decoded: all to scale.
+- Worked example: seven stages, symbolic first. The rounding follows the difference of the extreme zeros (36 → two figures, NOTES §2), and the check is real.
+- L2-03: gauge-to-absolute conversion and the 5,5 °C gauge-zero check are right. L3-02: N₂ condensing at about 67 K at about 25 kPa agrees with its vapour-pressure curve.
+- Exit ticket, predictions and feedback are correct; FY3 scope.
+- Hash unchanged start to end.

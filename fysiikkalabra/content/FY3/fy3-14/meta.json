@@ -17,6 +17,6 @@
     "lämpötasapaino"
   ],
   "sim": true,
-  "solutions": "first",
+  "solutions": "all",
   "image": false
 }

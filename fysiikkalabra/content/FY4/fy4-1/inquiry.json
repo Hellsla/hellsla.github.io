@@ -194,7 +194,7 @@
             "feedback": "Tämä on B:n paikka hetkellä 10 s. Nopeus lasketaan paikan muutoksesta $\\Delta x$ jaettuna ajan muutoksella $\\Delta t$, ei paikasta."
           }
         ],
-        "solution": "**Ratkaisu symbolisesti.** $v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$.\n\n**Sijoitus.** Rivit $t = 0$ ja $t = 10\\,\\text{s}$: $v = \\dfrac{40\\,\\text{m} - 0}{10\\,\\text{s} - 0} = 4{,}0\\,\\text{m/s}$. Mitkä tahansa kaksi riviä antavat saman tuloksen, koska liike on tasaista. Vastaavasti A:lle saadaan $2{,}0\\,\\text{m/s}$."
+        "solution": "**Annettu:** kärryn B paikat taulukosta: $x_{1} = 0\\,\\text{m}$ hetkellä $t_1 = 0$ ja $x_{2} = 40\\,\\text{m}$ hetkellä $t_2 = 10\\,\\text{s}$; kärry liikkuu tasaisesti\n\n**Kysytty:** kärryn B nopeus $v_\\text{B}$ yksikössä $\\text{m/s}$\n\n**Periaate:** Kärryn liike on tasaista, joten paikka muuttuu yhtä paljon joka sekunti. Siksi mitkä tahansa kaksi taulukon riviä antavat saman nopeuden, ja nopeus on paikan muutos jaettuna ajan muutoksella.\n\n**Kaava:** $v = \\dfrac{\\Delta x}{\\Delta t}$, missä $\\Delta x = x_2 - x_1$ ja $\\Delta t = t_2 - t_1$. Siis $v = \\dfrac{x_2 - x_1}{t_2 - t_1}$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten tulos tulee suoraan yksikössä $\\text{m/s}$. Muunnoksia ei tarvita.\n\n**Sijoitus:** $v_\\text{B} = \\dfrac{40\\,\\text{m} - 0\\,\\text{m}}{10\\,\\text{s} - 0\\,\\text{s}} = 4{,}0\\,\\text{m/s}$\n\n**Vastaus:** $4{,}0\\,\\text{m/s}$, kaksi merkitsevää numeroa: simulaation mallin arvot esitetään kahdella numerolla, ja luvut $10\\,\\text{s}$ ja $40\\,\\text{m}$ on annettu tässä kahdella numerolla.\n\n**Järkevyys:** Kärry B on nopeampi kuin A ($2{,}0\\,\\text{m/s}$), ja niin sen paikka kasvaakin taulukossa nopeammin. Toinen rivipari antaa saman tuloksen: esimerkiksi $t = 4{,}0\\,\\text{s}$ hetkellä B on paikassa $16\\,\\text{m}$, ja $\\dfrac{16\\,\\text{m}}{4{,}0\\,\\text{s}} = 4{,}0\\,\\text{m/s}$. Nopeus on positiivinen, koska paikka kasvaa."
       }
     },
     {
@@ -306,7 +306,7 @@
             "feedback": "Tämä on D:n alkupaikka. Nopeus saadaan, kun paikan muutos $\\Delta x$ jaetaan ajan muutoksella $\\Delta t$."
           }
         ],
-        "solution": "**Ratkaisu symbolisesti.** $v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$.\n\n**Sijoitus.** Rivit $t = 0$ ja $t = 10\\,\\text{s}$: $v = \\dfrac{0 - 30\\,\\text{m}}{10\\,\\text{s} - 0} = -3{,}0\\,\\text{m/s}$. Etumerkki kertoo, että D liikkuu negatiiviseen suuntaan, ja kuvaaja laskee."
+        "solution": "**Annettu:** kärryn D paikat taulukosta: $x_1 = 30\\,\\text{m}$ hetkellä $t_1 = 0$ ja $x_2 = 0\\,\\text{m}$ hetkellä $t_2 = 10\\,\\text{s}$; kärry liikkuu tasaisesti\n\n**Kysytty:** kärryn D nopeus $v_\\text{D}$ etumerkkeineen yksikössä $\\text{m/s}$\n\n**Periaate:** Liike on tasaista, joten nopeus on paikan muutos jaettuna ajan muutoksella. Muutos lasketaan loppu miinus alku, jolloin etumerkki kertoo suunnan: kun paikka pienenee, nopeus on negatiivinen.\n\n**Kaava:** $v = \\dfrac{\\Delta x}{\\Delta t}$, missä $\\Delta x = x_2 - x_1$ ja $\\Delta t = t_2 - t_1$. Siis $v = \\dfrac{x_2 - x_1}{t_2 - t_1}$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Älä vaihda alku- ja loppupaikkaa, sillä silloin etumerkki kääntyisi.\n\n**Sijoitus:** $v_\\text{D} = \\dfrac{0\\,\\text{m} - 30\\,\\text{m}}{10\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{-30\\,\\text{m}}{10\\,\\text{s}} = -3{,}0\\,\\text{m/s}$\n\n**Vastaus:** $-3{,}0\\,\\text{m/s}$, kaksi merkitsevää numeroa: simulaation mallin arvot esitetään kahdella numerolla, ja luvut $30\\,\\text{m}$ ja $10\\,\\text{s}$ on annettu tässä kahdella numerolla.\n\n**Järkevyys:** Kärry D ajaa kohti origoa, joten paikka pienenee ja nopeuden pitää olla negatiivinen. Takaisinlasku: $30\\,\\text{m} + (-3{,}0\\,\\text{m/s}) \\cdot 10\\,\\text{s} = 0\\,\\text{m}$, mikä on taulukon loppupaikka. Vauhti on $3{,}0\\,\\text{m/s}$, ja se on positiivinen luku, vaikka nopeus on negatiivinen."
       }
     },
     {
@@ -329,7 +329,7 @@
         "mistakes": [
           {
             "value": 1.9,
-            "feedback": "Jaoit viimeisen paikan ajalla: $\\dfrac{19{,}1\\,\\text{m}}{10\\,\\text{s}}$. Suora ei lähde origosta, vaan paikasta noin 4 m, joten pitää käyttää paikan muutosta: $\\Delta x = 19{,}1\\,\\text{m} - 4{,}2\\,\\text{m}$."
+            "feedback": "Jaoit viimeisen paikan ajalla: $\\dfrac{19\\,\\text{m}}{10\\,\\text{s}}$. Suora ei lähde origosta, vaan paikasta noin 4 m, joten pitää käyttää paikan muutosta: $\\Delta x = 19\\,\\text{m} - 4{,}1\\,\\text{m}$."
           },
           {
             "value": 1.3,
@@ -340,7 +340,7 @@
             "feedback": "Jaoit ajan muutoksen paikan muutoksella. Nopeus on paikan muutos jaettuna ajan muutoksella, $v = \\dfrac{\\Delta x}{\\Delta t}$."
           }
         ],
-        "solution": "**Ratkaisu symbolisesti.** Sovitetun suoran kulmakerroin on $v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$.\n\n**Sijoitus.** Suora kulkee suunnilleen pisteiden $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$ ja $(10\\,\\text{s};\\, 19{,}1\\,\\text{m})$ kautta, joten $v = \\dfrac{19{,}1\\,\\text{m} - 4{,}1\\,\\text{m}}{10\\,\\text{s}} = 1{,}5\\,\\text{m/s}$.\n\n**Järkevyys.** Suoran leikkauskohta paikka-akselilla on alkupaikka $x_0 \\approx 4\\,\\text{m}$, ja paikan yhtälö on noin $x = 4\\,\\text{m} + 1{,}5\\,\\text{m/s} \\cdot t$."
+        "solution": "**Annettu:** sovitetun suoran alkupiste $(t_1;\\, x_1) = (0\\,\\text{s};\\, 4{,}1\\,\\text{m})$ ja kuvaajasta luettu toinen piste kaukana siitä $(t_2;\\, x_2) \\approx (10\\,\\text{s};\\, 19\\,\\text{m})$; robotti ajaa tasaisella nopeudella\n\n**Kysytty:** suoran kulmakerroin eli robotin nopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Robotti liikkuu tasaisella nopeudella, joten sen $(t, x)$-kuvaaja on suora, ja suoran kulmakerroin on nopeus. Mittauspisteissä on pieni virhe, joten nopeus lasketaan sovitetun suoran pisteistä eikä yksittäisistä mittauksista.\n\n**Kuvaajan lukeminen:** Alkupiste $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$ on annettu. Toinen piste luetaan hetkeltä $t = 10\\,\\text{s}$, kuvaajan oikeasta reunasta: mene tästä kohdasta ylös suoralle ja siitä vasemmalle $x$-akselille. Suora on hieman alle $20\\,\\text{m}$:n ruudukkoviivan, joten luetaan $x_2 \\approx 19\\,\\text{m}$. Piste luetaan siis ruudukkoviivojen $15\\,\\text{m}$ ja $20\\,\\text{m}$ väliltä. Ruudukkoviivojen väli on $5\\,\\text{m}$, joten arvon voi lukea noin metrin tarkkuudella. Kaukana toisistaan olevilla pisteillä tämä virhe on pieni verrattuna muutokseen. Pystysuora nousu on $x_2 - x_1$ ja vaakasuora eteneminen $t_2 - t_1$.\n\n**Kaava:** $v = \\dfrac{\\Delta x}{\\Delta t}$, missä $\\Delta x = x_2 - x_1$ ja $\\Delta t = t_2 - t_1$. Siis $v = \\dfrac{x_2 - x_1}{t_2 - t_1}$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Alkupaikka $4{,}1\\,\\text{m}$ ei ole nolla, mutta se supistuu erotuksessa.\n\n**Sijoitus:** $v = \\dfrac{19\\,\\text{m} - 4{,}1\\,\\text{m}}{10\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{14{,}9\\,\\text{m}}{10\\,\\text{s}} \\approx 1{,}5\\,\\text{m/s}$\n\n**Vastaus:** $1{,}5\\,\\text{m/s}$, kaksi merkitsevää numeroa, koska kuvaajasta luettu paikka $19\\,\\text{m}$ on tarkka vain noin metrin, jolloin $\\Delta x \\approx 15\\,\\text{m}$ on kahden numeron luku. Myös mittauspisteiden hajonta rajoittaa: pienimmän neliösumman suoran kulmakerroin on $1{,}49 \\pm 0{,}03\\,\\text{m/s}$.\n\n**Järkevyys:** Suora nousee, joten nopeus on positiivinen. Suoran paikan yhtälö on noin $x = 4{,}1\\,\\text{m} + 1{,}5\\,\\text{m/s} \\cdot t$, ja hetkellä $t = 10\\,\\text{s}$ se antaa $19{,}1\\,\\text{m}$, mikä vastaa luettua arvoa $19\\,\\text{m}$. Taulukon ensimmäisen ja viimeisen mittauksen välinen keskimääräinen nopeus on $\\dfrac{19{,}1\\,\\text{m} - 4{,}2\\,\\text{m}}{10\\,\\text{s}} = 1{,}49\\,\\text{m/s}$, ja kahdessa sekunnissa paikka kasvaa noin $1{,}5\\,\\text{m/s} \\cdot 2\\,\\text{s} = 3\\,\\text{m}$, kuten taulukon rivien välillä, joten tulos sopii mittauksiin. Jakaminen pelkällä loppupaikalla antaisi väärin $1{,}9\\,\\text{m/s}$."
       }
     },
     {
@@ -433,14 +433,14 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Pulkka liukuu suoraa rinnettä pitkin tasaisella nopeudella. Rinteessä on mittaustolppa, jonka kohdalla paikka on 0. Pulkka on hetkellä $t = 3{,}0\\,\\text{s}$ paikassa $4{,}0\\,\\text{m}$ ja hetkellä $t = 7{,}0\\,\\text{s}$ paikassa $24\\,\\text{m}$. Missä paikassa pulkka on hetkellä $t = 10\\,\\text{s}$? Vastaa metreinä.",
+      "prompt": "Pulkka liukuu suoraa rinnettä pitkin tasaisella nopeudella. Rinteessä on mittaustolppa, jonka kohdalla paikka on 0. Pulkka on hetkellä $t = 3{,}0\\,\\text{s}$ paikassa $4{,}0\\,\\text{m}$ ja hetkellä $t = 7{,}0\\,\\text{s}$ paikassa $24\\,\\text{m}$. Missä paikassa pulkka on hetkellä $t = 10{,}0\\,\\text{s}$? Vastaa metreinä.",
       "answer": 39,
       "unit": "m",
       "tolerance": 0.02,
       "hints": [
         "Selvitä ensin nopeus kahden annetun hetken avulla.",
         "Nopeus on $v = \\dfrac{x_2 - x_1}{t_2 - t_1}$. Sen jälkeen paikka myöhemmin on paikka yhdellä hetkellä plus nopeus kertaa kuluva aika: $x = x_2 + v\\,\\Delta t$.",
-        "$v = \\dfrac{24\\,\\text{m} - 4{,}0\\,\\text{m}}{7{,}0\\,\\text{s} - 3{,}0\\,\\text{s}}$, ja lisäaika hetkestä $7{,}0\\,\\text{s}$ hetkeen $10\\,\\text{s}$ on $3{,}0\\,\\text{s}$."
+        "$v = \\dfrac{24\\,\\text{m} - 4{,}0\\,\\text{m}}{7{,}0\\,\\text{s} - 3{,}0\\,\\text{s}}$, ja lisäaika hetkestä $7{,}0\\,\\text{s}$ hetkeen $10{,}0\\,\\text{s}$ on $3{,}0\\,\\text{s}$."
       ],
       "mistakes": [
         {
@@ -449,14 +449,14 @@
         },
         {
           "value": 74,
-          "feedback": "Lisäsit paikkaan $24\\,\\text{m}$ koko ajan $10\\,\\text{s}$ vaikutuksen. Paikka $24\\,\\text{m}$ on hetkellä $7{,}0\\,\\text{s}$, joten lisäaika on vain $10\\,\\text{s} - 7{,}0\\,\\text{s} = 3{,}0\\,\\text{s}$."
+          "feedback": "Lisäsit paikkaan $24\\,\\text{m}$ koko ajan $10{,}0\\,\\text{s}$ vaikutuksen. Paikka $24\\,\\text{m}$ on hetkellä $7{,}0\\,\\text{s}$, joten lisäaika on vain $10{,}0\\,\\text{s} - 7{,}0\\,\\text{s} = 3{,}0\\,\\text{s}$."
         },
         {
           "value": 5.0,
-          "feedback": "Tämä on pulkan nopeus. Kysyttiin paikkaa hetkellä 10 s, joten nopeudella pitää vielä laskea, kuinka paljon paikka muuttuu."
+          "feedback": "Tämä on pulkan nopeus. Kysyttiin paikkaa hetkellä 10,0 s, joten nopeudella pitää vielä laskea, kuinka paljon paikka muuttuu."
         }
       ],
-      "solution": "**Ratkaisu symbolisesti.** $v = \\dfrac{x_2 - x_1}{t_2 - t_1}$ ja $x = x_2 + v\\,(t - t_2)$.\n\n**Sijoitus.** $v = \\dfrac{24\\,\\text{m} - 4{,}0\\,\\text{m}}{7{,}0\\,\\text{s} - 3{,}0\\,\\text{s}} = 5{,}0\\,\\text{m/s}$ ja $x = 24\\,\\text{m} + 5{,}0\\,\\text{m/s} \\cdot 3{,}0\\,\\text{s} = 39\\,\\text{m}$.\n\n**Järkevyys.** Samalla tavalla alkupaikka on $x_0 = 4{,}0\\,\\text{m} - 5{,}0\\,\\text{m/s} \\cdot 3{,}0\\,\\text{s} = -11\\,\\text{m}$, ja $x = -11\\,\\text{m} + 5{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 39\\,\\text{m}$."
+      "solution": "**Annettu:** pulkan paikat: $x_1 = 4{,}0\\,\\text{m}$ hetkellä $t_1 = 3{,}0\\,\\text{s}$ ja $x_2 = 24\\,\\text{m}$ hetkellä $t_2 = 7{,}0\\,\\text{s}$; haluttu hetki $t = 10{,}0\\,\\text{s}$; nopeus on tasainen\n\n**Kysytty:** pulkan paikka $x$ hetkellä $t = 10{,}0\\,\\text{s}$ metreinä\n\n**Periaate:** Pulkka liukuu tasaisella nopeudella, joten sen nopeus saadaan kahdesta tunnetusta pisteestä ja paikka myöhemmällä hetkellä tunnetusta pisteestä nopeuden ja kuluneen ajan avulla. Alkuhetken paikka ei ole nolla, joten pelkkä $v\\,t$ ei kelpaa.\n\n**Kaava:** $v = \\dfrac{x_2 - x_1}{t_2 - t_1}$ ja $x = x_2 + v\\,(t - t_2)$. Sijoittamalla ensimmäinen toiseen saadaan $x = x_2 + \\dfrac{x_2 - x_1}{t_2 - t_1}\\,(t - t_2)$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Ajan muutos lasketaan erotuksena, ei hetkestä $t = 0$.\n\n**Sijoitus:** $v = \\dfrac{24\\,\\text{m} - 4{,}0\\,\\text{m}}{7{,}0\\,\\text{s} - 3{,}0\\,\\text{s}} = \\dfrac{20\\,\\text{m}}{4{,}0\\,\\text{s}} = 5{,}0\\,\\text{m/s}$ ja $x = 24\\,\\text{m} + 5{,}0\\,\\text{m/s} \\cdot (10{,}0\\,\\text{s} - 7{,}0\\,\\text{s}) = 24\\,\\text{m} + 15\\,\\text{m} = 39\\,\\text{m}$\n\n**Vastaus:** $39\\,\\text{m}$, kaksi merkitsevää numeroa kuten paikoissa $4{,}0\\,\\text{m}$ ja $24\\,\\text{m}$.\n\n**Järkevyys:** Pulkka etenee positiiviseen suuntaan, joten paikan pitää olla suurempi kuin $24\\,\\text{m}$. Toinen reitti: alkupaikka on $x_0 = 4{,}0\\,\\text{m} - 5{,}0\\,\\text{m/s} \\cdot 3{,}0\\,\\text{s} = -11\\,\\text{m}$, ja $x = -11\\,\\text{m} + 5{,}0\\,\\text{m/s} \\cdot 10{,}0\\,\\text{s} = 39\\,\\text{m}$, sama tulos. Nopeus $5{,}0\\,\\text{m/s}$ on $18\\,\\text{km/h}$, mikä sopii rinteessä liukuvalle pulkalle."
     },
     {
       "id": "tehtavat",
@@ -513,7 +513,8 @@
           "value": 37,
           "feedback": "Lisäsit alkupaikan luvun $12\\,\\text{m}$ positiivisena. Alkupaikka on negatiivinen, joten $x = -12\\,\\text{m} + 25\\,\\text{m}$."
         }
-      ]
+      ],
+      "solution": "**Annettu:** $x_0 = -12\\,\\text{m}$ hetkellä $t = 0$, $v = 2{,}5\\,\\text{m/s}$ positiiviseen suuntaan, haluttu hetki $t = 10\\,\\text{s}$\n\n**Kysytty:** kärryn paikka $x$ hetkellä $t = 10\\,\\text{s}$ etumerkkeineen metreinä\n\n**Periaate:** Kärryn liike on tasaista, joten paikka muuttuu nopeuden ja ajan tulon verran. Paikka on alkupaikka plus tämä siirtymä, ja alkupaikka on negatiivinen, joten sen etumerkki on otettava mukaan.\n\n**Kaava:** $x = x_0 + v\\,t$. Kaava on jo ratkaistu paikan suhteen: $x = x_0 + v\\,t$\n\n**Muunnokset:** Paikka on metreinä, nopeus yksikössä $\\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $x = -12\\,\\text{m} + 2{,}5\\,\\text{m/s} \\cdot 10\\,\\text{s} = -12\\,\\text{m} + 25\\,\\text{m} = 13\\,\\text{m}$\n\n**Vastaus:** $13\\,\\text{m}$, kaksi merkitsevää numeroa, koska nopeus $2{,}5\\,\\text{m/s}$ ja aika $10\\,\\text{s}$ ovat kahdella numerolla ja summa $-12\\,\\text{m} + 25\\,\\text{m}$ on metrin tarkkuudella.\n\n**Järkevyys:** Kärry siirtyy $25\\,\\text{m}$ eteenpäin, mikä on enemmän kuin alkuetäisyys origosta ($12\\,\\text{m}$), joten se ohittaa origon ja paikka on positiivinen. Origossa kärry on hetkellä $\\dfrac{12\\,\\text{m}}{2{,}5\\,\\text{m/s}} = 4{,}8\\,\\text{s}$, joten hetkellä $10\\,\\text{s}$ se on ohittanut origon ja kulkenut vielä $5{,}2\\,\\text{s} \\cdot 2{,}5\\,\\text{m/s} = 13\\,\\text{m}$."
     },
     {
       "id": "check-3",

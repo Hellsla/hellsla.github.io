@@ -169,7 +169,7 @@ def init_lesson(lid):
     if (folder / "meta.json").exists(): print(f"{folder.relative_to(ROOT)}/meta.json exists"); return folder
     folder.mkdir(parents=True, exist_ok=True)
     meta = {"id": lid, "course": code, "title": s["title"], "goals": s.get("goals", []), "prerequisites": s.get("prerequisites", []),
-            "glossary": s.get("glossary", []), "sim": bool(s.get("sim")), "solutions": "first", "image": False}
+            "glossary": s.get("glossary", []), "sim": bool(s.get("sim")), "solutions": "all", "image": False}
     (folder / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
     print(f"wrote {(folder / 'meta.json').relative_to(ROOT)} from the {code} slot ({datetime.date.today()})")
     return folder

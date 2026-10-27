@@ -149,23 +149,41 @@ Pumpun sylinterissä on ilmaa. Mäntää painetaan alas, jolloin ympäristö tek
 
 <!-- vaihe -->
 
-**Kaava.** Termodynamiikan ensimmäinen pääsääntö antaa kysytyn suureen suoraan: $\Delta U = Q + W$.
+**Periaate.** Energia säilyy: systeemin sisäenergia muuttuu täsmälleen sen verran kuin siihen siirtyy energiaa lämpönä ja työnä. Tämä on termodynamiikan ensimmäinen pääsääntö, ja se pätee, koska ilma on selvästi rajattu systeemi, jonka rajan yli energia siirtyy vain työnä ja lämpönä.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Kysytty $\Delta U$ on ensimmäisessä pääsäännössä jo yksin vasemmalla puolella, joten yhtälöä ei tarvitse muokata:
+
+```latex
+\begin{aligned}
+&\Delta U = Q + W
+\end{aligned}
+```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Ei tarvita: sekä $Q$ että $W$ on annettu jouleina, ja tulos halutaan jouleina. Etumerkit sen sijaan on päätettävä: energia systeemiin on positiivista ja systeemistä pois negatiivista.
 
 <!-- vaihe -->
 
 **Sijoitus.** Sijoitetaan arvot etumerkkeineen:
 
-$$
+```latex
 \begin{aligned}
 &\Delta U = Q + W \\
 &= -40\,\text{J} + 150\,\text{J} \\
 &= 110\,\text{J}
 \end{aligned}
-$$
+```
 
 <!-- vaihe -->
 
-**Tulos ja järkevyys.** Ilman sisäenergia kasvaa 110 J, joten sen lämpötila nousee. Jos sama 150 J:n työ tehtäisiin niin hitaasti, että kaikki työn tuoma energia ehtisi siirtyä lämpönä pois, olisi $Q = -150\,\text{J}$ ja $\Delta U = 0$, eikä lämpötila muuttuisi.
+**Tulos.** Ilman sisäenergia kasvaa $110\,\text{J}$. Tulos ilmoitetaan kokonaisina jouleina, koska sekä työ että lämpö on annettu kokonaisina jouleina.
+
+<!-- vaihe -->
+
+**Järkevyys.** Työ toi ilmaan 150 J ja lämpönä lähti vain 40 J, joten sisäenergian on kasvettava ja ilman lämpötilan noustava. Jos sama 150 J:n työ tehtäisiin niin hitaasti, että kaikki työn tuoma energia ehtisi siirtyä lämpönä pois, olisi $Q = -150\,\text{J}$ ja $\Delta U = 0$, eikä lämpötila muuttuisi. Nyt lämpöä lähtee vähemmän, joten tulos on tämän rajatapauksen ja pelkän työn $150\,\text{J}$ välissä.
 
 ## Yleinen virhekäsitys
 Arkikielessä sanotaan, että kappaleessa ”on lämpöä” tai että lämpö ”varastoituu”. Fysiikassa lämpö on energian siirtymistä lämpötilaeron vuoksi, ja se, mikä kappaleeseen varastoituu, on sisäenergiaa. Toinen virhe on pitää lämpötilaa ja sisäenergiaa samana asiana: kuuman kipinän lämpötila on tuhansia asteita, mutta sen sisäenergia on pieni, koska siinä on vähän ainetta. Kolmas virhe on ajatella, että sisäenergiaa voi muuttaa vain lämmittämällä. Pumpun ilma kuumenee ilman mitään lämmönlähdettä, koska siihen tehdään työtä.

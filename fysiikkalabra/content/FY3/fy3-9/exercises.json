@@ -11,7 +11,7 @@
     {
       "id": "fy3-9-L1-02",
       "level": 1,
-      "text": "Kesämökin vesijärjestelmän painesäiliön yläosassa on suljettu ilmatila. Kun säiliössä on vähän vettä, ilman tilavuus on 24,0 l ja kokonaispaine 160 kPa. Pumppu pumppaa säiliöön lisää vettä, jolloin ilma puristuu kokoon ja sen kokonaispaine nousee 280 kPa:iin. Ilman lämpötila pysyy samana. Mikä on ilman tilavuus nyt?",
+      "text": "Kesämökin vesijärjestelmän painesäiliön yläosassa on suljettu ilmatila. Kun säiliössä on vähän vettä, ilman tilavuus on 24,0 l ja kokonaispaine 160,0 kPa. Pumppu pumppaa säiliöön lisää vettä, jolloin ilma puristuu kokoon ja sen kokonaispaine nousee 280,0 kPa:iin. Ilman lämpötila pysyy samana. Mikä on ilman tilavuus nyt?",
       "answer": 13.7,
       "unit": "l",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-9-L2-01",
       "level": 2,
-      "text": "Palomiehen paineilmalaitteen pullon tilavuus on 6,8 l, ja täyteen pumpatussa pullossa ilman paine on 300 bar (1 bar = 100 kPa). Kuinka monta kuutiometriä tämä ilma veisi tilaa, jos se laskettaisiin ulos 101 kPa:n ilmanpaineeseen? Lämpötila pysyy samana. Oleta, että Boylen laki pätee myös näin suurella paineella.",
+      "text": "Palomiehen paineilmalaitteen pullon tilavuus on 6,8 l, ja täyteen pumpatussa pullossa ilman paine on 300,0 bar (1 bar = 100 kPa). Kuinka monta kuutiometriä tämä ilma veisi tilaa, jos se laskettaisiin ulos 101 kPa:n ilmanpaineeseen? Lämpötila pysyy samana. Oleta, että Boylen laki pätee myös näin suurella paineella.",
       "answer": 2.0,
       "unit": "m³",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "Auton renkaat täytetään 20 °C:n tallissa, ja rengaspainemittari näyttää 250 kPa. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
+      "text": "Auton renkaat täytetään 20 °C:n tallissa, ja rengaspainemittari näyttää 250,0 kPa. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy3-9-L3-03",
       "level": 3,
-      "text": "Polkupyörän pumpun sylinteri on 40,0 cm pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on 101 kPa. Renkaan ylipaine on 300 kPa. Pumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine. Kuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana ja letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
+      "text": "Polkupyörän pumpun sylinteri on 40,0 cm pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on 101 kPa. Renkaan ylipaine on 300,0 kPa. Pumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine. Kuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana ja letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
       "answer": 29.9,
       "unit": "cm",
       "tolerance": 0.02

@@ -48,6 +48,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - Compute every answer in `answers.py` (one commented line per step, prints `{id: value}`); the lint re-runs
   it. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
+- A difference of readings has the figures of the difference, not of the readings: 38 °C − 31 °C = 7 K has one
+  significant figure, so a task whose answer carries two gives its temperatures as 38,0 °C and 31,0 °C; a rounding
+  justification in a solution names the datum that really limits the result. (2026-10-27, fy3-6)
 - A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): "luvussa *Paine ja hydrostaattinen
   paine*", "(luku *Työ ja energia*)", not "oppitunnilla fy3-4", "(fy3-4)" or "edellisellä oppitunnilla". The
   chapter name is the lesson's `title` in meta.json (without a trailing formula). `lint_lesson.py` flags ids and
@@ -99,14 +102,41 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   whole or half pixels, consistent stroke widths (outlines 2–3, details 1,5), no element touching the figure's edge
   (12 px margin), arrows as filled paths, nothing clipped, no stray decoration. A theory point that has a picture
   (pressure as force on an area, a lever arm, a phase diagram) gets a simple one beside its paragraph.
-- **Symbolic first.** Worked example and every solution: name the unknown, write the formula, solve it with
-  symbols, substitute values with units, compute and round, check. In `solutions.md` the **Kaava:** line ends with
+- **Symbolic first.** Worked example and every solution: name the unknown, state the principle, write the formula,
+  solve it with symbols, convert units, substitute values with units, compute and round, check (Complete solutions below). In `solutions.md` the **Kaava:** line ends with
   the formula solved for the asked quantity and only **Sijoitus:** has numbers. In `lesson.md` the first row of a
   calculation is symbolic (`V_2 &= \frac{p_1 V_1}{p_2}`); the lint flags a first row with numbers.
-- **Staged example.** Under `## Esimerkki`: the problem, then 3–6 stages each after a line `<!-- vaihe -->`
-  (blank lines around it), typically **Tunnetut ja kysytty.** · **Kaava ratkaistuna.** · **Sijoitus.** ·
-  **Tulos.** · **Järkevyys.** One bold lead-in and at most one display block per stage. The page shows stage 1 and
-  reveals the rest; without JavaScript and in print all stages show.
+- **Staged example.** Under `## Esimerkki`: the problem, then seven stages each after a line `<!-- vaihe -->`
+  (blank lines around it), exactly **Tunnetut ja kysytty.** · **Periaate.** · **Kaava ratkaistuna.** ·
+  **Yksikkömuunnokset.** · **Sijoitus.** · **Tulos.** · **Järkevyys.** (teacher 2026-10-27; `check_solutions.py`).
+  One bold lead-in and at most one display block per stage. The page shows stage 1 and reveals the rest; without
+  JavaScript and in print all stages show.
+- **Complete solutions** (teacher 2026-10-27; CLAUDE.md "Lesson form" 7). Every exercise in `exercises.json` has its
+  `## <id>` block in `solutions.md`, and every `numeric` task in `inquiry.json` (the transfer task, the checks, an
+  experiment's question) has a `solution`, with these bold steps in this order, each on its own line (in JSON a
+  paragraph of its own), each with real content:
+  `**Annettu:**` the data with units, the table values used named as such ("taulukosta $c = …$");
+  `**Kysytty:**` the quantity, its symbol and the unit asked for;
+  `**Periaate:**` the law or principle and *why it applies here* (energy is conserved because no heat is lost; the
+  temperature stays constant, so Boyle's law; the ice does not melt, so no latent heat), one to three sentences;
+  `**Kaava:**` the starting equation, then the asked quantity solved in symbols (ends with `<unknown> = …`, no numbers);
+  `**Muunnokset:**` every conversion made (`2{,}4\,\text{kW} = 2400\,\text{W}`, °C to K where an absolute temperature
+  is needed, g to kg, MJ to J), or a sentence saying why none is needed (the unit cancels, a difference is the same in
+  °C and K);
+  `**Sijoitus:**` the values with units into the solved formula, intermediate results unrounded, one `=` step after
+  another;
+  `**Vastaus:**` the value first, then its unit and in a few words why that many significant figures
+  (`$0{,}63\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $1{,}8\,\text{kg}$`);
+  `**Järkevyys:**` a real check: an estimate with round numbers, the sign, a comparison with experience, the energy
+  balance recomputed, a limiting case, units. "Tulos on järkevä" alone is not a check.
+  A task whose text refers to a graph adds `**Kuvaajan lukeminen:**` after Periaate: which points or which area are
+  read, at which values, and how the answer follows. A task answered in words (`answer` a string) has `**Kysytty:**`,
+  `**Periaate:**` and `**Mallivastaus:**` with the reasoning. A complete solution is about 100–220 words. The model
+  is `content/FY3/fy3-6/solutions.md` and its inquiry tasks `siirto` and `tarkistus-2`. (2026-10-27, all lessons)
+- **Every language version is as complete** (teacher 2026-10-27). A translated or S2 (Finnish as a second language)
+  version of a lesson keeps every solution step and justification; S2 writes shorter sentences, opens each concept
+  the first time it appears ("ominaislämpökapasiteetti eli se, kuinka paljon energiaa yhden kilogramman lämmittäminen
+  yhdellä kelvinillä vaatii") and may add steps, never remove them.
 - **Visually rich simulations.** Keep the controls the spec asks for. Draw the situation, not boxes: gradients, a
   container that looks like one, particles that move, a heater that glows, levels, arrows whose length is the
   quantity. Colour carries meaning (cold-to-hot scale, the same colour for the same quantity in picture and chart,
@@ -192,6 +222,7 @@ add one dated line with the lesson id to the right heading above. Never both, ne
 paid only for what scripts cannot see. Deterministic coverage today: numbers (`answers.py` re-run against
 `exercises.json`, `Vastaus` lines, significant figures and tolerances, coefficient mantissas), LaTeX (KaTeX parse,
 `{,}`, `\textsf{l}`, `·` in `\text`), lesson form (figures, stages, symbolic first rows, paragraph length),
+complete solutions (`check_solutions.py`: every exercise and numeric task solved with all steps, the seven example stages, `solutions: all`),
 pages (formula, table, figure and page width at 360 px, SVG labels overlapping or leaving a figure),
 simulations (console errors, per-sim assertions, finite `simState` and label boxes at 360/390/1280 px over every
 control combination), inquiry (gating, locked parameters, reveal after the experiment, every rendered option with

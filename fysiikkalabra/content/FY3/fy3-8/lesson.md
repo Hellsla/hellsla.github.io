@@ -245,11 +245,25 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kannen pituus $L_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja lämpötilan muutos $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Kysytään pituuden muutosta $\Delta L$.
+**Tunnetut ja kysytty.** Kannen pituus $L_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu), pienin lämpötila $-30\,{}^\circ\text{C}$ ja suurin $+30\,{}^\circ\text{C}$. Kysytään kannen pituuden muutosta $\Delta L$ koko vuoden aikana.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Kysytty suure on jo yksin kaavan vasemmalla puolella, joten kaavaa ei tarvitse muokata: $\Delta L = \alpha L_0 \Delta T$.
+**Periaate.** Kiinteän aineen hiukkasten värähtely voimistuu lämmetessä ja niiden keskimääräinen etäisyys kasvaa, joten kansi pitenee. Teräs pysyy kiinteänä koko vuoden, ja kansi saa laajentua vapaasti, joten pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen: $\Delta L = \alpha L_0 \Delta T$.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Kysytty suure on jo yksin kaavan vasemmalla puolella, joten kaavaa ei tarvitse muokata:
+```latex
+\begin{aligned}
+&\Delta L = \alpha L_0 \Delta T \\
+&\Delta T = T_\text{max} - T_\text{min}
+\end{aligned}
+```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta L$ tulee metreinä; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 
@@ -258,13 +272,18 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 \begin{aligned}
 \Delta L &= \alpha L_0 \Delta T \\
 &= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K} \\
-&= 0{,}0864\,\text{m} \approx 86\,\text{mm}
+&= 0{,}0864\,\text{m} \\
+&= 86{,}4\,\text{mm}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Järkevyys.** Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä. Se on vain 0,07 % kannen pituudesta, mutta ilman liikuntasaumaa laajeneva teräs työntäisi sillan päitä niin suurella voimalla, että rakenteet vaurioituisivat. Siksi sillan päässä on kampamainen liitos, jonka hampaat liukuvat toistensa lomassa. Yksiköt: $\tfrac{1}{\text{K}} \cdot \text{m} \cdot \text{K} = \text{m}$.
+**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$ (kumpikin kaksi numeroa); pituus $120\,\text{m}$ on vähintään kahden numeron arvo eikä rajoita.
+
+<!-- vaihe -->
+
+**Järkevyys.** Karkea arvio: $10^{-5}\,\tfrac{1}{\text{K}} \cdot 100\,\text{m} \cdot 60\,\text{K} = 60\,\text{mm}$, joten tulos on oikeaa suuruusluokkaa. Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee. Se on vain $\alpha \Delta T = 0{,}072\,\%$ kannen pituudesta, mutta ilman liikuntasaumaa laajeneva teräs työntäisi sillan päitä niin suurella voimalla, että rakenteet vaurioituisivat. Siksi sillan päässä on kampamainen liitos, jonka hampaat liukuvat toistensa lomassa.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukkaset pysyvät samankokoisina, ja vain niiden keskimääräiset etäisyydet kasvavat. Toinen virhe on luulla, että levyn reikä pienenee, koska levy muka laajenee reunoiltaan reiän puolelle. Reikä suurenee samassa suhteessa kuin levy muutenkin. Kolmas virhe on olettaa, että kaikki aineet laajenevat aina lämmetessään: vesi kutistuu 0 °C:n ja 4 °C:n välillä, ja jäätyessään se laajenee. Siksi jää kelluu ja järvet jäätyvät pinnalta.

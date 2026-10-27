@@ -1,10 +1,12 @@
-"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
+r"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
 
 Opens each page in preview/ (or site/) at a viewport (360 by default; CI also runs 1280 and 1920) and reports every
-element that is wider than its box: display formulas (.katex-display), tables, inline SVG figures and the page
+element that is wider than its box: display formulas (.katex-display), inline formulas that cannot wrap (a long
+\dfrac), tables, inline SVG figures and the page
 itself, every text label inside an inline SVG that overlaps another label or leaves the figure (NOTES 3), and on a
 wide screen a column whose content spills into its neighbour and text wider than a reading column (44rem, about
-80 characters; CLAUDE.md "Lesson page").
+80 characters; CLAUDE.md "Lesson page"). Every <details> is opened first, so the solutions behind the
+Näytä ratkaisu buttons are measured too.
 A display formula that scrolls sideways on a phone is a web-designer FAIL, so writers run this
 before review (NOTES.md section 1). Exit status 1 if anything overflows."""
 import sys, pathlib
@@ -19,6 +21,7 @@ OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "pr
 
 JS = """() => {
   const out = [];
+  document.querySelectorAll('details').forEach((d) => { d.open = true; });   // solutions and optional boxes are measured open
   const el = document.scrollingElement;
   if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
   for (const d of document.querySelectorAll('.katex-display')) {
@@ -26,6 +29,12 @@ JS = """() => {
       const ann = d.querySelector('annotation');
       out.push({what: 'formula', over: d.scrollWidth - d.clientWidth, text: ann ? ann.textContent.slice(0, 90) : ''});
     }
+  }
+  for (const k of document.querySelectorAll('main .katex')) {
+    if (k.closest('.katex-display, table, svg, #sim-root')) continue;
+    const box = k.closest('p, li, .steps, .stage') || k.parentElement;
+    const over = Math.round(k.getBoundingClientRect().right - Math.min(box.getBoundingClientRect().right, document.documentElement.clientWidth));
+    if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   for (const t of document.querySelectorAll('table')) {
     if (t.closest('#sim-root')) continue;
@@ -62,6 +71,7 @@ with sync_playwright() as pw:
         if lid == "index" or "-" not in lid: continue
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
+        page.evaluate("document.fonts.ready.then(() => true)")   # measure with the page's own fonts, not a fallback
         page.wait_for_timeout(400)
         found = page.evaluate(JS)
         page.close()

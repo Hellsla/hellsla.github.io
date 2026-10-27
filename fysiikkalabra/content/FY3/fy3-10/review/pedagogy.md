@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5ef687e736a3bd38
+CONTENT-HASH: 1bfd6e4d506d0b05
 
 ## Blocking
 
 ## Polish
-- inquiry.json johtopaatos — `after` lists exp-1 and exp-2 only, but its model answer rests on "taulukko" (pV ∝ NT, V varied); add "taulukko" to `after`, or mention the table in the prompt.
-- Core Tutki carries eight items (punnitus, punnitus-vertailu, pred-1, sim, exp-1, exp-2, taulukko, laske-r, conclusion): more than an hour with a new concept; merge punnitus and punnitus-vertailu or make pred-n optional.
-- lesson.md Ydinajatus — the masses 0,83 g ... 9,10 g are stated as facts while the interpret calls them "keksityt esimerkkiarvot"; add "(esimerkkiarvoja)".
-- punnitus — define 1 mol = 6,022·10²³ hiukkasta in one sentence before the student uses n.
-- Solving pV = nRT for a quantity (the slot's skill) is practised in core only in the example; siirto is optional, so keep a level-1 exercise obligatory.
+- solutions.md L3-02 Sijoitus — "Osoittaja on ... = 1328,9 J" and the denominator "101 000 Pa · 1,20 m² = 121 200 N": the unit step is explained ("koska Pa·m² = N") but J/N = m is left implicit. Add "ja J/N = m" before the aligned block.
+- solutions.md L3-01 — the numerator carries "J/mol" (Pa·m³·1/mol) without a word on it; one clause "(Pa·m³ = J)" helps a student who got a different unit.
+- Carried from round 2 and untouched here: bare "josta" in the rearrangements; "1/24 mol/l" in Järkevyys; Level 3 "Perustele" prompts check only the number.
 
 ## Checked
-- Round-1 blocker fixed: "taulukko" is core, shows pV/(NT) ≈ 1 over five states with V changed (50 %, 25 %, 35 %), so laske-r's "pV/(NT) pysyi vakiona" is something a core student has seen; the step to R is followed.
-- Table carries the model badge; options and feedback repair misconceptions; the V-dependence comes from the table, not an unlocked experiment.
-- exp-1 emergent pressure from counted hits; exp-2 genuine challenge with per-mistake feedback and a falsifiable prediction.
-- Conclusion model answer separates model results from invented weighing data.
+- Delta is two Sijoitus lines (L3-01 molecules, L3-02 argon); the rest is unchanged from the version I passed.
+- L3-01: numerator 101 000 · 0,00055 · 6,022e23 = 3,345e25 and denominator 8,31 · 310,15 = 2577 recomputed; the quotient 1,298e22 matches the Vastaus (1,3e22) and the Järkevyys 0,0216 mol.
+- L3-02: 0,5455 · 8,31 · 293,15 = 1328,9 J, 101 000 · 1,20 = 121 200 N, 1328,9 / 121 200 = 0,010965 m = 10,96 mm recomputed; matches 11 mm.
+- The intermediate values are named (osoittaja, nimittäjä) in the order the student would key them into a calculator, so each line is one step and a student who could not solve the task can follow it.
+- Splitting keeps every line short for 360 px; layout 360 px check passes, and the aligned block is the same construct already used in lesson.md and inquiry.json.
 - Hash identical at start and end.

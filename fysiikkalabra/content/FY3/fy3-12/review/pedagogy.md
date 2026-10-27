@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 0ba56764ea9b7973
+CONTENT-HASH: f0ce272aeebed2a0
 
 ## Blocking
 
 ## Polish
-- inquiry.json — the slot's theme "rakentaminen ja energia kotona" reaches the student on the core path only through the worked example and the exercises: virhe, siirto (both P = UAΔT) and check-2 are optional, and nothing in Ennusta/Tutki uses the U-value; fix: make siirto core, or add one two-line prediction about window vs wall.
-- tase-ennusta — headed "Ennusta" but it is a calculation whose premises (390, 240) contain the answer, and "Ratkaisu" can be opened at once; rename "Laske: ilmakehän säteily alas" so the stage Ennusta holds only real predictions, and the next table then confirms rather than repeats 150.
-- pred-1 — the table cannot refute Aino (conduction); that is an argument about vacuum, and the options' feedback is a pointer to the table, not a repair of the misconception; fix: put the vacuum argument in Aino's feedback ("tyhjiössä ei ole hiukkasia, joten johtumista ei ole").
-- epatasapaino — values (3,6 W/m², 3,0 K) are labelled esimerkkiarvoja but the text says the real imbalance is about 1 W/m²; add "todellinen ylimäärä on noin 1 W/m²" beside the table so the student does not read 3 K as a forecast.
-- johtopaatos has no `after`, so its model answer can be opened without the tables; add `after` for the two interpret items, or keep as is and say so.
+- lesson.md Esimerkki, stages 4-5 — the example announces "teho muutetaan kilowateiksi" but the Sijoitus block jumps from `1454,4 W` to `1,4544 kW` without the ÷1000, and never shows why `W/(m²·K) · m²` becomes `W/K`; fix: add "= 1,4544 kW (1454,4 W / 1000)" and one clause "m²-yksiköt supistuvat" in stage 4 or 5.
+- lesson.md Esimerkki stage 7 — the check gives 34 kWh against the result 35 kWh; a weak student sees a mismatch; fix: say "40 W/K on karkea pyöristys, siksi 34 eikä 35".
+- solutions.md L3-01 and L3-02 (and the numeric tasks' Vastaus lines generally) — the verbal answers the task asks for (which transfer modes the vacuum and shiny surfaces stop; why the sea slows warming) sit after the significant-figure sentence in Vastaus, and "kiiltävät pinnat heijastavat" does not say why that stops radiation; fix: put the explanation in its own "Selitys:" paragraph after Vastaus and add one sentence on why a shiny surface emits and absorbs little radiation.
+- solutions.md Vastaus lines (L2-01 "summa 35 + 15,0 säilyttää kaksi numeroa", L2-04) — the rounding talk is dense for a 16-year-old; fix: one plain sentence first ("Pyöristetään kahteen numeroon, koska U-arvot on annettu kahdella") and the detail after.
+- inquiry.json tase-ennusta — still labelled Ennusta although it is a calculation and its solution opens at once; rename "Laske: ilmakehän säteily alas" (carried from the earlier review).
 
 ## Checked
-- Core path is clear: pred-1, pred-2, tase-ennusta, tase, epatasapaino, conclusion, theory, example, exercises, check-1, exit; retrieval, reflect, Etsi virhe, siirto, check-2 and check-3 are closed Valinnainen boxes.
-- Tables are badged "Mallin laskemia arvoja", text says "esimerkkiarvoja, eivät mittauksia"; the model answer repeats it; numbers check (240 + 150 = 390, 3,6/1,2 = 3,0 K).
-- Opening question (why +15 °C) and the cloud-night question are answered by the student's own table work and check-1; no answer disclosed before commitment.
-- Example staged (wall + window, 1450 W, 35 kWh); energy-balance figure legible at 390 px; wrong-answer feedback in numeric items names the slip.
-- Exercises include U-value, balance and heat-pump tasks at three levels; Finnish fine.
+- Worked example (captures 390 px): seven labelled stages, one idea each, formula solved before substitution, units and rounding named; a student can follow without the page.
+- Solution at 390 px (rendered tase-ennusta behind its Näytä ratkaisu): readable, nothing clipped, fractions and the display formula fit; each of the seven labelled parts present.
+- L1 solutions: principle explained (U-value as W per m² per K), conversion (ΔT in °C = K), substitution, sanity check by back-calculation or round numbers; no skipped step.
+- L2 solutions: parallel walls/roof sum, hours and kW conversion for price, savings as a difference of powers, all explained before use.
+- L3-03: COP is defined in the Periaate before use, and the argument for insulating with a heat pump is given.
+- Numeric tasks tase-ennusta, epatasapaino, siirto, check-2: solutions walk from the balance principle to the number and end with a real balance check.
+- Opening question and cloud-night question are answered by the student's own table work and check-1; nothing disclosed before commitment; core path about one lesson.
+- Finnish and number-unit forms fine; glossary terms used consistently.
+- Capture of exercise solutions not in review/shots; checked by rendering one solution in the preview at 390 px.

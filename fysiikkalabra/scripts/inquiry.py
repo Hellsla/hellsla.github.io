@@ -272,7 +272,7 @@ def choice_html(a, md, lid, aid):
 
 def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
-    sol = f'<details class="solution"><summary>Ratkaisu</summary><div class="steps">{md(a["solution"])}</div></details>' if a.get("solution") else ""
+    sol = f'<details class="solution"><summary>Näytä ratkaisu</summary><div class="steps">{md(a["solution"])}</div></details>' if a.get("solution") else ""
     return (f'<div class="numeric"><p class="task">{inline(md, a["prompt"])}</p>'
             f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Vastaus" placeholder="?">'

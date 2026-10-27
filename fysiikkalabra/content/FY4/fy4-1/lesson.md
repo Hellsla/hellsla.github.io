@@ -173,17 +173,25 @@ Hölkkääjän liike on tasaista. Kuvaajasta luetaan, että hän on hetkellä $t
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kuvaajasta: $t_1 = 0$, $x_1 = 20\,\text{m}$, $t_2 = 40\,\text{s}$ ja $x_2 = 120\,\text{m}$. Kysytään nopeutta $v$ ja paikkaa $x$ hetkellä $t = 60\,\text{s}$.
+**Tunnetut ja kysytty.** Kuvaajasta luetaan kaksi pistettä: $(t_1;\, x_1) = (0\,\text{s};\, 20\,\text{m})$ ja $(t_2;\, x_2) = (40\,\text{s};\, 120\,\text{m})$. Kysytään nopeutta $v$ ja paikkaa $x$ hetkellä $t = 60\,\text{s}$.
 
 <!-- vaihe -->
 
-**Nopeus symbolisesti.** Liike on tasaista, joten nopeus on paikan muutos jaettuna ajan muutoksella:
+**Periaate.** Hölkkääjän liike on tasaista, joten nopeus pysyy vakiona ja $(t, x)$-kuvaaja on suora. Silloin nopeus on suoran kulmakerroin eli paikan muutos jaettuna ajan muutoksella. Kun nopeus tunnetaan, paikan saa alkupaikasta lisäämällä nopeuden ja ajan tulon.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Nopeus ja paikka ratkaistaan symbolisesti ennen lukuja:
 ```latex
 \begin{aligned}
-v &= \frac{\Delta x}{\Delta t} \\
-&= \frac{x_2 - x_1}{t_2 - t_1}
+v &= \frac{x_2 - x_1}{t_2 - t_1} \\
+x &= x_1 + v\,t
 \end{aligned}
 ```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Paikat ovat metreinä ja ajat sekunteina, joten nopeus tulee suoraan yksikössä $\text{m/s}$. Muunnoksia ei tarvita. Alkupaikka on $x_1 = 20\,\text{m}$ hetkellä $t_1 = 0$, joten ajaksi $t$ kelpaa suoraan $60\,\text{s}$.
 
 <!-- vaihe -->
 
@@ -193,19 +201,17 @@ v &= \frac{\Delta x}{\Delta t} \\
 v &= \frac{x_2 - x_1}{t_2 - t_1} \\
 &= \frac{120\,\text{m} - 20\,\text{m}}{40\,\text{s} - 0\,\text{s}} \\
 &= 2{,}5\,\text{m/s}
+\\[4pt]
+x &= x_1 + v\,t \\
+&= 20\,\text{m} + 2{,}5\,\text{m/s} \cdot 60\,\text{s} \\
+&= 20\,\text{m} + 150\,\text{m} \\
+&= 170\,\text{m}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Paikka hetkellä 60 s.** Käytetään tasaisen liikkeen paikan kaavaa alkupaikasta $x_0 = 20\,\text{m}$ lähtien:
-```latex
-\begin{aligned}
-x &= x_0 + v\,t \\
-&= 20\,\text{m} + 2{,}5\,\text{m/s} \cdot 60\,\text{s} \\
-&= 170\,\text{m}
-\end{aligned}
-```
+**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$ ja paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$ eli $1{,}7 \cdot 10^2\,\text{m}$. Nopeudessa on kaksi merkitsevää numeroa, koska aikaväli $40\,\text{s}$ on kahdella numerolla. Paikassa tulo $2{,}5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ on myös kahdella numerolla, joten summa $20\,\text{m} + 150\,\text{m}$ tunnetaan vain kymmenien metrien tarkkuudella: $x = 1{,}7 \cdot 10^2\,\text{m}$.
 
 <!-- vaihe -->
 

@@ -310,7 +310,11 @@ Jousta venytetään 20 cm. Venyttävä voima kasvaa tasaisesti nollasta 40 newto
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Matka on $s = 20\,\text{cm} = 0{,}20\,\text{m}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään venyttävän voiman tekemää työtä $W$.
+**Tunnetut ja kysytty.** Jousen venytys eli voiman kulkema matka on $s = 20\,\text{cm}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään venyttävän voiman tekemää työtä $W$.
+
+<!-- vaihe -->
+
+**Periaate.** Työ on voiman ja matkan tulo vain, kun voima on vakio. Tässä voima kasvaa tasaisesti, joten työ saadaan $(s,F)$-kuvaajan pinta-alana: kuvaajan ja $s$-akselin väliin jäävä alue on kolmio. Voima on liikkeen suuntainen, joten työ on positiivinen.
 
 <!-- vaihe -->
 
@@ -321,6 +325,10 @@ W &= A_\text{kolmio} \\
 &= \frac{1}{2} F_\text{max}\, s
 \end{aligned}
 ```
+
+<!-- vaihe -->
+
+**Yksikkömuunnokset.** Matka on senttimetreinä, mutta työ lasketaan jouleina, joten matka muunnetaan metreiksi: $s = 20\,\text{cm} = 0{,}20\,\text{m}$. Voima on jo newtoneina, joten tulo $\text{N}\cdot\text{m}$ on suoraan jouleja.
 
 <!-- vaihe -->
 
@@ -336,7 +344,7 @@ W &= A_\text{kolmio} \\
 
 <!-- vaihe -->
 
-**Tulos.** Venyttävä voima tekee 4,0 J:n työn. Työ ei katoa, vaan energia tallentuu venyneeseen jouseen.
+**Tulos.** Venyttävä voima tekee 4,0 J:n työn, kaksi merkitsevää numeroa kuten annetuissa arvoissa $20\,\text{cm}$ ja $40\,\text{N}$. Työ ei katoa, vaan energia tallentuu venyneeseen jouseen.
 
 <!-- vaihe -->
 

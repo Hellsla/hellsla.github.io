@@ -76,4 +76,4 @@ A lesson with `inquiry.json` is rendered as inquiry stages (Pohdinta → Ennusta
 ```
 `answers.py` in the lesson folder computes every answer and prints `{id: value}`; the lint compares it with
 `exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
-`meta.solutions` (`first`, `all`, `none`) decides which worked solutions are rendered.
+Every exercise shows its complete worked solution from `solutions.md` behind its own *Näytä ratkaisu* button (`meta.solutions` is `all`, teacher 2026-10-27); `scripts/check_solutions.py --all` lists any missing or incomplete solution.

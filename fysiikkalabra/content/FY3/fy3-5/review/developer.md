@@ -1,13 +1,3 @@
 VERDICT: DONE
 
-Lesson-form retrofit (lint: 2 errors -> 0).
-
-lesson.md
-- Ydinajatus: new inline SVG after the paragraph on the two ways to change internal energy (viewBox 0 0 600 300, currentColor, 24 px, aria-label, marked schematic). Left: piston pushed into a cylinder, arrow with $W \gt 0$ (fig-tex foreignObject), faster particles, "ilma kuumenee". Right: hot and cold blocks in contact, arrow with $Q$ from hot to cold, "kuumasta kylmään".
-- Esimerkki: staged into 4 stages with `<!-- vaihe -->`: Tunnetut ja kysytty (W = +150 J, Q = −40 J), Kaava (ΔU = Q + W), Sijoitus (aligned display, symbolic first row, = 110 J), Tulos ja järkevyys (unchanged text). Numbers and physics unchanged.
-
-solutions.md, inquiry.json, other files: unchanged (no findings; section titles unchanged).
-
-Checks: check_lesson.py all ok; test_inquiry.py 12 passed; screenshot 390 px shows the new figure without clipping or overlap.
-
-Not changed (out of this pass's scope, not flagged by lint): the existing Kaava figure still writes "ΔU = Q + W" and "Q < 0 tai W < 0" as plain <text> at 22 px rather than fig-tex at 24 px.
+solutions.md only: L1-01 and example-style Periaate now says energy crosses the boundary only as work or heat (no mechanical energy claim); L1-05, L2-02, L2-03, L2-04, L3-03 Vastaus lines name the limiting datum/precision (L2-03 now 0,8 kJ, one figure); L3-02 Periaate uses F = G = mg and W1 = Fh (no E_k/E_p); L3-01 and L3-03 Periaate reason from the task stating constant temperature and amount (no asserted ideal-gas U(T) law). No numbers, answers.py or tasks changed.
