@@ -1,9 +1,6 @@
 VERDICT: DONE
-Recoloured the three SVG figures; geometry and text are unchanged, and no label moved.
-Ink #1f2933: outlines, axes, text, hit marks, data points.
-Glass #eef5f9: gas space.
-Piston: metal #c4ccd4 with an ink outline.
-Red #c92a2a: gas particles.
-Orange #e8590c: velocity arrows.
-Muted #6b7480: "T vakio" arrow, the 273 tick and the dashed extension to 0 K.
-Blue #2f74b5: p, V and the fitted lines, in the graphs.
+Complete model solutions (teacher 2026-10-27).
+- solutions.md: all 12 blocks now have Annettu, Kysytty, Periaate (why the law fits: which quantity is constant, closed sample), Kaava ending in the solved unknown, Muunnokset (or why none), unrounded Sijoitus, Vastaus with significant-figure reason, and a real Järkevyys. L2-03 has Kuvaajan lukeminen. L3-01/02/03 keep their justification parts (why breath is not held, why gauge pressure cannot be used directly, why hard tyres pump poorly).
+- lesson.md Esimerkki: seven stages (added Periaate and Yksikkömuunnokset, Tulos and Järkevyys now include the pV check); text and figures untouched.
+- inquiry.json: solutions of siirto and check-2 rewritten in the full step order (exp-2 and ruisku are choice questions, not numeric).
+- No numeric error found in the old solutions; all values match answers.py and exercises.json.

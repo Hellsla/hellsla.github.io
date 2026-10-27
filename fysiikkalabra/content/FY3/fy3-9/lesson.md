@@ -427,7 +427,11 @@ Sipsipussissa on lentokentällä 0,80 l ilmaa 101 kPa:n paineessa. Lennon aikana
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Lämpötila on vakio, joten tilanmuutos on isoterminen ja Boylen laki pätee. Tunnetaan $p_1 = 101\,\text{kPa}$, $V_1 = 0{,}80\,\textsf{l}$ ja $p_2 = 78\,\text{kPa}$. Kysytään lopputilavuutta $V_2$.
+**Tunnetut ja kysytty.** Tunnetaan $p_1 = 101\,\text{kPa}$, $V_1 = 0{,}80\,\textsf{l}$ ja $p_2 = 78\,\text{kPa}$. Lämpötila on sama. Kysytään lopputilavuutta $V_2$ litroina.
+
+<!-- vaihe -->
+
+**Periaate.** Pussi on suljettu, joten ilman määrä ei muutu, ja lämpötila pysyy samana. Tilanmuutos on siis isoterminen ja Boylen laki pätee: tulo $pV$ pysyy vakiona. Pussi laajenee vapaasti, joten sen sisällä on aina sama paine kuin matkustamossa.
 
 <!-- vaihe -->
 
@@ -441,21 +445,26 @@ V_2 &= \frac{p_1 V_1}{p_2}
 
 <!-- vaihe -->
 
-**Sijoitus.** Sijoitetaan arvot yksiköineen. Kilopascalit supistuvat, joten tilavuus tulee litroina eikä yksiköitä tarvitse muuntaa:
+**Yksikkömuunnokset.** Yksikköjä ei tarvitse muuntaa. Molemmat paineet ovat kilopascaleina, joten ne supistuvat osamäärässä, ja tilavuus tulee suoraan litroina.
+
+<!-- vaihe -->
+
+**Sijoitus.** Sijoitetaan arvot yksiköineen:
 ```latex
 \begin{aligned}
 V_2 &= \frac{p_1 V_1}{p_2} \\
-&= \frac{101\,\text{kPa} \cdot 0{,}80\,\textsf{l}}{78\,\text{kPa}}
+&= \frac{101\,\text{kPa} \cdot 0{,}80\,\textsf{l}}{78\,\text{kPa}} \\
+&= 1{,}036\,\textsf{l}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Tulos.** Laskin antaa $V_2 = 1{,}036\ldots\,\textsf{l} \approx 1{,}0\,\textsf{l}$, kahden merkitsevän numeron tarkkuudella kuten lähtötiedot. Ilman tilavuus kasvaa noin 30 %. Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi.
+**Tulos.** Ilman tilavuus on $V_2 \approx 1{,}0\,\textsf{l}$, kahden merkitsevän numeron tarkkuudella kuten lähtötiedot $0{,}80\,\textsf{l}$ ja $78\,\text{kPa}$. Tilavuus kasvaa noin 30 %. Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi.
 
 <!-- vaihe -->
 
-**Järkevyys.** Paine pienenee, joten tilavuuden täytyy kasvaa. Kasvukerroin on painesuhde $101/78 \approx 1{,}3$, ja $0{,}80\,\textsf{l} \cdot 1{,}3 \approx 1{,}0\,\textsf{l}$.
+**Järkevyys.** Paine pienenee, joten tilavuuden täytyy kasvaa. Kasvukerroin on painesuhde $101/78 \approx 1{,}3$, ja $0{,}80\,\textsf{l} \cdot 1{,}3 \approx 1{,}0\,\textsf{l}$. Tulo $pV$ on lopussa $78\,\text{kPa} \cdot 1{,}036\,\textsf{l} \approx 80{,}8\,\text{kPa}\cdot\textsf{l}$, sama kuin alussa $101\,\text{kPa} \cdot 0{,}80\,\textsf{l} = 80{,}8\,\text{kPa}\cdot\textsf{l}$.
 
 ## Yleinen virhekäsitys
 Kolme virhettä toistuu usein:
