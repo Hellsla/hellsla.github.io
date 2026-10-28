@@ -116,6 +116,8 @@ def check_math(L, name, text):
             L.err(name, line, "· inside \\text{} breaks KaTeX; write \\text{mol}\\cdot\\text{K} (NOTES 1): " + frag[:60])
         if re.search(r"\\(si|SI|unit)\b|\\newcommand", frag):
             L.err(name, line, "siunitx and \\newcommand do not work in KaTeX (NOTES 1.10)")
+        if re.search(r"\\times\b|×|\\div\b|÷", frag):
+            L.page(name, line, "multiplication is \\cdot and a written division a colon : (teacher 2026-10-28, NOTES 1): " + frag[:60])
         if re.search(r"(?<!\\)\*", frag):
             L.warn(name, line, "use \\cdot for multiplication, not * (NOTES 1.5)")
         if not display and "\\dfrac" in frag and name != "solutions.md":   # a solution line is a calculation of its own, a full-size fraction reads best there

@@ -1,0 +1,20 @@
+{
+  "id": "fy2-5",
+  "course": "FY2",
+  "title": "Polttoaineet ja lämpöarvo E = Hm",
+  "goals": [
+    "Temaattinen tarkastelu: kemiallinen energia energialähteenä",
+    "Täsmennys: energiantuotantoprosesseissa vapautunut energia lasketaan polttoaineiden lämpöarvojen H perusteella käyttäen lakia E = Hm"
+  ],
+  "prerequisites": [
+    "fy2-2"
+  ],
+  "glossary": [
+    "lämpöarvo",
+    "polttoaine",
+    "kemiallinen energia"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

@@ -29,6 +29,10 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   Inline maths stays on one line.
 - Units: `40\,\text{N}`, `9{,}81\,\text{m/s}^2`. Decimal comma inside maths is `{,}`. Multiplication `\cdot`,
   degrees `^\circ`, roots `\sqrt{2gh}`, `\frac` in display and `\tfrac` inline, Finnish words in `\text{}`.
+- Notation (teacher 2026-10-28, after FY1): multiplication is always `\cdot`, never `\times` or ×, also in powers of
+  ten (`3{,}6 \cdot 10^{6}\,\text{J}`); a division written as an operation in a sentence or a chain is a colon
+  (`7200\,\text{J} : 60\,\text{s}`), a formula keeps its fraction (`P = \dfrac{E}{t}`); never ÷. A measurement
+  error is `\Delta x` (`\Delta t`, `\Delta m`). The lint flags `\times`, ×, `\div` and ÷ in maths.
 - Works: `aligned`, `cases`, `\cancel`, `\boxed`, `\color`, Greek letters. Does not work: siunitx, `\( \)`,
   `\[ \]`, `\newcommand` over a built-in. A bad fragment does not fail the build; the page shows red source.
 - A `·` inside `\text{}` is a parse error: write `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}`. The litre is
@@ -51,6 +55,10 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   `lesson-answers.py` (one commented line per step, each prints `{id: value}`; 2026-10-28: the exercises are a part of
   their own, README "Exercises"); the lint re-runs both. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
+- Understanding before formulas (teacher 2026-10-28, FY1): a unit conversion substitutes the unit
+  (`4{,}2\,\text{km} = 4{,}2 \cdot 1000\,\text{m}`, `1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s}`), never a general
+  conversion formula; no helper quantities or ratio formulas the student does not need (the essential idea must not
+  drown in notation); a comparison is said in words with one division, not a coefficient formula. (2026-10-28, fy1-1, fy1-2)
 - A difference of readings has the figures of the difference, not of the readings: 38 °C − 31 °C = 7 K has one
   significant figure, so a task whose answer carries two gives its temperatures as 38,0 °C and 31,0 °C; a rounding
   justification in a solution names the datum that really limits the result. (2026-10-27, fy3-6)
