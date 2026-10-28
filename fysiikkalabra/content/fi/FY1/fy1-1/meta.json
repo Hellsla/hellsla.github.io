@@ -12,7 +12,13 @@
     "malli",
     "kymmenpotenssi",
     "suuruusluokka",
-    "valovuosi"
+    "valovuosi",
+    "molekyyli",
+    "atomiydin",
+    "alkeishiukkanen",
+    "galaksi",
+    "havaittava maailmankaikkeus",
+    "perusvuorovaikutus"
   ],
   "sim": true,
   "solutions": "all",

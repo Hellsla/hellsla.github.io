@@ -1,6 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-1` writes them into lesson.md."""
 import math
-from figlib import (Fig, INK, MUTED, RULE_LIGHT, WHITE, COLD, COLD_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, ALUMINIUM, GOOD, GOOD_LIGHT,
+from figlib import (Fig, INK, MUTED, RULE_LIGHT, WHITE, GLASS, COLD, COLD_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, ALUMINIUM, GOOD, GOOD_LIGHT,
                     WATER, WATER_LIGHT, ICE, SAND, SAND_LIGHT, IRON, PAPER, fi, n)
 import herolib as H
 
@@ -111,23 +111,197 @@ def ladder():
     return f.svg()
 
 
-def light_time():
-    f = Fig("fy11-light", 346, "Kaaviokuva, ei mittakaavassa: valo kulkee tyhjiössä nopeudella c ja matka on s = c t. Valo kulkee Kuusta Maahan "
-            "3,84 · 10 potenssiin 8 metriä noin 1,28 sekunnissa, Auringosta Maahan 1,50 · 10 potenssiin 11 metriä noin 8,3 minuutissa ja "
-            "Proxima Centaurista Maahan 4,0 · 10 potenssiin 16 metriä noin 4,2 vuodessa. Nuolten pituudet kuvaavat vain järjestystä.")
-    rows = [(70, "Kuu", ALUMINIUM, 290, r"s = 3{,}84\cdot10^{8}\,\text{m}", r"t = 1{,}28\,\text{s}"),
-            (170, "Aurinko", HEAT_LIGHT, 400, r"s = 1{,}50\cdot10^{11}\,\text{m}", r"t = 8{,}3\,\text{min}"),
-            (270, "Proxima", HOT_LIGHT, 500, r"s = 4{,}0\cdot10^{16}\,\text{m}", r"t = 4{,}2\,\text{a}")]
-    for y, name, col, xe, sd, td in rows:
-        f.tex(24, y - 34, rf"\text{{{name}}}", "start")
-        f.circle(34, y, 12, col, INK, 2.5)
-        f.block_arrow(58, y, xe - 18, y, HEAT_LIGHT, 12, 26, 22)
-        f.circle(xe, y, 12, COLD_LIGHT, COLD, 2.5)
-        f.tex(xe + 20, y, r"\text{Maa}", "start")
-        f.tex((58 + xe) / 2 + 40, y - 34, sd, "middle")
-        f.tex((58 + xe) / 2 + 40, y + 34, td, "middle", COLD)
-    f.tex(584, 330, r"\text{ei mittakaavassa}", "end", MUTED)
+# --- small pictures shared by the structure figures ---
+def _ball(f, x, y, r, col, edge):
+    f.circle(x, y, r, col, edge, 2)
+
+
+def _proton(f, x, y, r):
+    """A proton or neutron: a ball with three quarks inside."""
+    f.circle(x, y, r, HEAT_LIGHT, HEAT, 2.5)
+    for k, col in enumerate((HOT, GOOD, COLD)):
+        a = math.radians(-90 + 120 * k)
+        f.circle(x + 0.48 * r * math.cos(a), y + 0.48 * r * math.sin(a), max(3, 0.22 * r), col, WHITE, 1.5)
+
+
+def _nucleus(f, x, y, r, N=12, Z=6):
+    """A nucleus: N nucleons packed in a disc of radius r, protons red and neutrons grey."""
+    nr = r * 0.82 / math.sqrt(N)
+    for i in range(N - 1, -1, -1):
+        rr = (r - nr) * math.sqrt((i + 0.5) / N); a = i * 2.39996
+        pr = (i * 0.6180339) % 1 < Z / N
+        f.circle(x + rr * math.cos(a), y + rr * math.sin(a), round(nr, 1), HOT if pr else ALUMINIUM, INK, 1.5)
+
+
+def matter_ladder():
+    f = Fig("fy11-matter", 432, "Kaaviokuva, ei mittakaavassa: aineen rakenne portaittain ylhäältä alas. Vesimolekyyli, noin 3 · 10 potenssiin −10 metriä, "
+            "koostuu atomeista. Atomi, noin 10 potenssiin −10 metriä, koostuu ytimestä ja elektroneista. Ydin, 10 potenssiin −15 … −14 metriä, "
+            "koostuu protoneista ja neutroneista. Protoni ja neutroni, noin 10 potenssiin −15 metriä, koostuvat kolmesta kvarkista. "
+            "Kvarkit ja elektroni ovat alkeishiukkasia, pienempiä kuin noin 10 potenssiin −18 metriä. Jokaisen rivin kuva on suurennos edellisen rivin pienestä kohdasta.")
+    xi, r, ys = 66, 30, [76, 154, 232, 310, 388]
+    # zoom wedges: from a small spot in the picture above to the next picture
+    spots = [(xi - 2, ys[0] - 4, 9), (xi, ys[1], 5), (xi - 6, ys[2] - 6, 7), (xi + 9, ys[3] - 8, 6)]
+    for (sx, sy, sr), y2 in zip(spots, ys[1:]):
+        f.line(sx - sr, sy, xi - r, y2, MUTED, 1.5, "4 3"); f.line(sx + sr, sy, xi + r, y2, MUTED, 1.5, "4 3")
+    for (sx, sy, sr) in spots:
+        f.circle(sx, sy, sr, "none", HEAT, 2)
+    # 1 water molecule
+    y = ys[0]
+    for sg in (-1, 1):
+        f.circle(xi + sg * 19, y + 13, 12, WHITE, INK, 2)
+    f.circle(xi, y - 2, 19, HOT, INK, 2)
+    # 2 atom: an electron cloud around a nucleus drawn far too large
+    y = ys[1]
+    f.circle(xi, y, r, COLD_LIGHT, COLD, 2.5)
+    f.add(f'<circle cx="{n(xi)}" cy="{n(y)}" r="20" fill="{COLD}" fill-opacity="0.18"/>')
+    f.circle(xi, y, 4, HOT, WHITE, 1.5)
+    f.circle(xi + 21, y - 12, 4, COLD, WHITE, 1.5); f.circle(xi - 18, y + 15, 4, COLD, WHITE, 1.5)
+    # 3 nucleus
+    _nucleus(f, xi, ys[2], 27, 12, 6)
+    # 4 proton with three quarks
+    _proton(f, xi, ys[3], r)
+    # 5 quark and electron: points
+    y = ys[4]
+    f.circle(xi - 14, y, 6, HOT, WHITE, 1.5); f.circle(xi + 14, y, 6, COLD, WHITE, 1.5)
+    rows = [(r"\text{vesimolekyyli: kolme atomia yhdessä}", r"3\cdot10^{-10}\,\text{m}"),
+            (r"\text{atomi: ydin ja elektronit}", r"10^{-10}\,\text{m}"),
+            (r"\text{ydin: protonit ja neutronit}", r"10^{-15}\text{–}10^{-14}\,\text{m}"),
+            (r"\text{protoni tai neutroni: 3 kvarkkia}", r"10^{-15}\,\text{m}"),
+            (r"\text{kvarkki, elektroni: alkeishiukkasia}", r"{<}\,10^{-18}\,\text{m}")]
+    for (name, size), y in zip(rows, ys):
+        f.tex(116, y - 15, name, "start")
+        f.tex(116, y + 17, size, "start", COLD)
+    f.tex(584, 20, r"\text{ei mittakaavassa}", "end", MUTED)
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scale-axis": scale_axis, "ladder": ladder, "light-time": light_time}
+def atom_stadium():
+    f = Fig("fy11-stadium", 330, "Vertauskuva atomista ja sen ytimestä: jos atomi olisi jalkapallostadionin kokoinen, noin 200 metriä, "
+            "sen ydin olisi keskellä herneen kokoinen, noin 5 millimetriä. Herne on kuvassa piirretty aivan liian suureksi; "
+            "oikeassa suhteessa se olisi alle pikselin kokoinen. Atomin halkaisija on noin 10 potenssiin −10 metriä ja ytimen noin 10 potenssiin −15 metriä.")
+    cx, cy = 300, 172
+    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="250" ry="122" fill="{ALUMINIUM}" stroke="{INK}" stroke-width="2.5"/>')
+    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="214" ry="96" fill="{GOOD_LIGHT}" stroke="{GOOD}" stroke-width="2"/>')
+    f.rect(cx - 150, cy - 70, 300, 140, "none", WHITE, 2.5)
+    f.line(cx, cy - 70, cx, cy + 70, WHITE, 2.5)
+    f.add(f'<circle cx="{cx}" cy="{cy}" r="26" fill="none" stroke="{WHITE}" stroke-width="2.5"/>')
+    f.circle(cx, cy, 5, HOT, WHITE, 1.5)
+    f.arrow(cx + 120, cy - 40, cx + 12, cy - 4, HEAT, 2.5, 12)
+    f.tex(cx + 124, cy - 48, r"\text{ydin} \approx \text{herne}", "start", INK, bg=True)
+    f.tex(cx - 196, cy + 40, r"\text{atomi} \approx \text{stadion}", "start", INK, bg=True)
+    f.line(cx - 250, 312, cx + 250, 312, INK, 2); f.line(cx - 250, 304, cx - 250, 320, INK, 2); f.line(cx + 250, 304, cx + 250, 320, INK, 2)
+    f.tex(cx, 312, r"\approx 200\,\text{m}", "middle", INK, bg=True)
+    f.tex(584, 22, r"\text{herne piirretty liian suureksi}", "end", MUTED)
+    return f.svg()
+
+
+def cosmic_address():
+    f = Fig("fy11-address", 400, "Kaaviokuva, ei mittakaavassa: sisäkkäiset laatikot näyttävät Maan osoitteen maailmankaikkeudessa. "
+            "Uloimpana havaittava maailmankaikkeus, noin 10 potenssiin 27 metriä, sen sisällä Virgon superjoukko noin 10 potenssiin 24 metriä, "
+            "sen sisällä Paikallinen ryhmä noin 10 potenssiin 23 metriä, sen sisällä Linnunrata noin 10 potenssiin 21 metriä, sen sisällä "
+            "Aurinkokunnan planeettojen alue noin 10 potenssiin 13 metriä ja sisimpänä Maa ja Kuun rata noin 10 potenssiin 9 metriä.")
+    levels = [("havaittava maailmankaikkeus", "10^{27}", WHITE), ("Virgon superjoukko", "10^{24}", GLASS),
+              ("Paikallinen ryhmä", "10^{23}", COLD_LIGHT), ("Linnunrata", "10^{21}", ICE),
+              ("Aurinkokunta", "10^{13}", HEAT_LIGHT), ("Maa ja Kuu", "10^{9}", WHITE)]
+    step, dx = 56, 18
+    for i, (name, size, col) in enumerate(levels):
+        x0, y0 = 12 + i * dx, 12 + i * step
+        x1, y1 = 588 - i * dx, 388 - (0 if i == 0 else 0)
+        f.rect(x0, y0, x1 - x0, y1 - y0 - i * 6, col, COLD if i < 4 else (HEAT if i == 4 else COLD), 2, rx=10)
+        f.tex(x0 + 14, y0 + 26, rf"\text{{{name}}}", "start")
+        f.tex(x1 - 14, y0 + 26, size + r"\,\text{m}", "end", MUTED)
+    # the Earth and the Moon in the innermost box
+    ex, ey = 318, 324
+    f.add(f'<ellipse cx="{ex}" cy="{ey}" rx="44" ry="13" fill="none" stroke="{MUTED}" stroke-width="1.5" stroke-dasharray="4 3"/>')
+    f.circle(ex, ey, 11, WATER, INK, 2); f.circle(ex + 44, ey, 5, ALUMINIUM, INK, 1.5)
+    return f.svg()
+
+
+def object_types():
+    f = Fig("fy11-types", 340, "Kaaviokuva: tähtitieteellisten kohteiden tyyppejä kokoakselilla, jossa jokainen askel on kymmenkertainen koko. "
+            "Neutronitähti noin 2 · 10 potenssiin 4 metriä, planeetta Maa 1,3 · 10 potenssiin 7 metriä, tähti Aurinko 1,4 · 10 potenssiin 9 metriä, "
+            "musta aukko Sgr A* (tapahtumahorisontin halkaisija) 2,5 · 10 potenssiin 10 metriä, Orionin sumu 2 · 10 potenssiin 17 metriä ja "
+            "galaksi Linnunrata 10 potenssiin 21 metriä. Akselin paikat ovat mittakaavassa, kuvakkeiden koot eivät.")
+    y0, x0, st = 250, 36, 26.0
+    X = lambda e: x0 + (e - 3) * st
+    f.arrow(24, y0, 584, y0, INK, 2.5, 13)
+    for e in range(4, 24, 2):
+        f.line(X(e), y0 - 4, X(e), y0 + (8 if e % 4 == 0 else 5), INK, 2 if e % 4 == 0 else 1.5)
+    for e in (4, 8, 12, 16, 20):
+        f.tex(X(e), y0 + 28, rf"10^{{{e}}}", "middle", MUTED)
+    f.tex(584, y0 + 64, r"d\ (\text{m})", "end")
+    iy = 200
+    # name labels: (exponent, name, label row y, anchor, label x); a leader runs from under the label down to the icon
+    items = [(4.38, "neutronitähti", 50, "start", 14), (7.10, "planeetta", 104, "start", 96), (9.14, "tähti", 152, "end", 222),
+             (10.40, "musta aukko", 104, "start", 246), (17.36, "sumu", 50, "middle", None), (20.98, "galaksi", 104, "middle", None)]
+    for e, name, ly, anchor, lx in items:
+        x = X(e)
+        f.line(x, y0 - 6, x, iy + 12, MUTED, 1.5, "4 3")
+        f.circle(x, y0, 6, INK, WHITE, 2)
+        tip = iy - 18
+        if name == "musta aukko": f.line(lx + 4, ly + 16, x + 4, tip, MUTED, 1.5)
+        elif ly + 16 < tip - 2: f.line(x, ly + 16, x, tip, MUTED, 1.5)
+        f.tex(lx if lx is not None else x, ly, rf"\text{{{name}}}", anchor)
+    # icons (not to scale)
+    x = X(4.38); f.circle(x, iy, 10, COLD_LIGHT, COLD, 2.5)
+    x = X(7.10); f.circle(x, iy, 14, WATER, INK, 2); f.path(f"M{n(x - 7)},{iy - 5} L{n(x + 2)},{iy - 9} L{n(x + 6)},{iy - 2} L{n(x - 2)},{iy + 4} Z", GOOD_LIGHT, GOOD, 1.5)
+    x = X(9.14); f.circle(x, iy, 13, HEAT_LIGHT, HEAT, 2.5)
+    x = X(10.40); f.circle(x, iy, 15, HEAT_LIGHT, None); f.circle(x, iy, 10, INK, None)
+    x = X(17.36); f.add(f'<ellipse cx="{n(x)}" cy="{iy}" rx="22" ry="13" fill="{HOT_LIGHT}" fill-opacity="0.8"/><ellipse cx="{n(x + 6)}" cy="{iy - 3}" rx="13" ry="8" fill="{ICE}" fill-opacity="0.8"/>')
+    x = X(20.98); f.add(f'<ellipse cx="{n(x)}" cy="{iy}" rx="24" ry="8" fill="{ICE}" stroke="{COLD}" stroke-width="1.5"/>'); f.circle(x, iy, 4, HEAT_LIGHT, None)
+    f.tex(16, 322, r"\text{kuvakkeet eivät ole mittakaavassa}", "start", MUTED)
+    return f.svg()
+
+
+def interactions():
+    f = Fig("fy11-forces", 420, "Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. "
+            "Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit "
+            "pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetahajoamisessa neutroni muuttuu protoniksi, ja "
+            "syntyy elektroni ja antineutriino.")
+    W, H, g = 282, 196, 12
+    panels = [(12, 12, "gravitaatio"), (12 + W + g, 12, "sähkömagneettinen"), (12, 12 + H + g, "vahva"), (12 + W + g, 12 + H + g, "heikko")]
+    for x, y, name in panels:
+        f.rect(x, y, W, H, WHITE, RULE_LIGHT, 2, rx=8)
+        f.tex(x + 14, y + 22, rf"\text{{{name}}}", "start", COLD)
+    # gravitation: Sun, Earth on its orbit, the force towards the Sun
+    x, y = 12, 12
+    sx, sy = x + 120, y + 104
+    f.add(f'<ellipse cx="{sx}" cy="{sy}" rx="96" ry="44" fill="none" stroke="{MUTED}" stroke-width="1.5" stroke-dasharray="5 4"/>')
+    f.circle(sx, sy, 20, HEAT_LIGHT, HEAT, 2.5)
+    ex, ey = sx + 96, sy
+    f.circle(ex, ey, 10, WATER, INK, 2)
+    f.arrow(ex - 13, ey, sx + 32, sy, HOT, 3, 12)
+    f.tex(sx + 66, sy - 22, r"\mathbf{F}", "middle", HOT, w=30)
+    f.tex(x + W / 2, y + 176, r"\text{Maa kiertää Aurinkoa}", "middle")
+    # electromagnetic: a nucleus (+) and an electron (−) attract
+    x, y = 12 + W + g, 12
+    nx, ny = x + 92, y + 92
+    f.circle(nx, ny, 18, HOT, INK, 2); f.tex(nx, ny, r"+", "middle", WHITE, w=24)
+    ex = x + 210
+    f.circle(ex, ny, 11, COLD, INK, 2); f.tex(ex, ny, r"-", "middle", WHITE, w=20)
+    f.arrow(ex - 14, ny, ex - 52, ny, HOT, 3, 12); f.arrow(nx + 21, ny, nx + 59, ny, HOT, 3, 12)
+    f.tex(nx, ny + 38, r"\text{ydin}", "middle"); f.tex(ex, ny + 36, r"\text{elektroni}", "middle")
+    f.tex(x + W / 2, y + 176, r"\text{atomi pysyy koossa}", "middle")
+    # strong: a nucleus and, magnified, a proton with its quarks
+    x, y = 12, 12 + H + g
+    _nucleus(f, x + 78, y + 110, 34, 12, 6)
+    f.line(x + 92, y + 96, x + 168, y + 66, MUTED, 1.5, "4 3"); f.line(x + 92, y + 104, x + 168, y + 146, MUTED, 1.5, "4 3")
+    f.circle(x + 90, y + 100, 6, "none", HEAT, 2)
+    _proton(f, x + 210, y + 106, 40)
+    f.tex(x + W / 2, y + 174, r"\text{ydin pysyy koossa}", "middle")
+    # weak: beta decay n -> p + e- + antineutrino
+    x, y = 12 + W + g, 12 + H + g
+    f.circle(x + 50, y + 104, 18, ALUMINIUM, INK, 2); f.tex(x + 50, y + 104, r"\text{n}", "middle", INK, w=24)
+    f.arrow(x + 74, y + 104, x + 132, y + 104, INK, 2.5, 12)
+    f.circle(x + 160, y + 104, 18, HOT, INK, 2); f.tex(x + 160, y + 104, r"\text{p}", "middle", WHITE, w=24)
+    f.arrow(x + 176, y + 92, x + 226, y + 62, COLD, 2.5, 11); f.circle(x + 236, y + 56, 9, COLD, INK, 2)
+    f.tex(x + 254, y + 56, r"\text{e}^-", "start", INK, w=34)
+    f.add(f'<line x1="{n(x + 176)}" y1="{n(y + 116)}" x2="{n(x + 222)}" y2="{n(y + 144)}" stroke="{MUTED}" stroke-width="2" stroke-dasharray="4 3"/>')
+    f.tex(x + 240, y + 150, r"\bar{\nu}", "middle", MUTED, w=30)
+    f.tex(x + W / 2, y + 178, r"\text{beetahajoaminen}", "middle")
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scale-axis": scale_axis, "ladder": ladder,
+           "matter-ladder": matter_ladder, "atom-stadium": atom_stadium, "cosmic-address": cosmic_address,
+           "object-types": object_types, "interactions": interactions}

@@ -7,7 +7,7 @@
     "Osaat ilmoittaa saman etäisyyden kilometreinä, astronomisina yksikköinä ja valon kulkuaikana."
   ],
   "prior": [
-    "Koot vaihtelevat atomista maailmankaikkeuteen yli kuudellakymmenellä kymmenpotenssilla (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*)",
+    "Koot vaihtelevat Planckin pituudesta havaittavaan maailmankaikkeuteen yli kuudellakymmenellä kymmenpotenssilla (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*)",
     "Jokainen kymmenpotenssin askel kymmenkertaistaa pituuden tai pienentää sen kymmenesosaan (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*)"
   ],
   "activities": [
@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "NASAn Voyager 2 -luotain lähti matkaan vuonna 1977, ja se on ylittänyt Auringon vaikutusalueen rajan ja liikkuu nyt tähtienvälisessä avaruudessa. Silti sen kanssa pidetään yhteyttä radiosignaaleilla. Luotaimen etäisyydestä kerrotaan välillä kilometreinä, välillä astronomisina yksikköinä ja välillä sillä ajalla, jonka signaali kulkee sen luota tänne.",
+      "text": "NASAn Voyager 2 -luotain lähti matkaan vuonna 1977, ja se on ylittänyt heliopaussin eli aurinkotuulen puhaltaman kuplan rajan. Nyt se liikkuu tähtienvälisessä avaruudessa, vaikka on yhä Auringon painovoiman piirissä. Silti sen kanssa pidetään yhteyttä radiosignaaleilla. Luotaimen etäisyydestä kerrotaan välillä kilometreinä, välillä astronomisina yksikköinä ja välillä sillä ajalla, jonka signaali kulkee sen luota tänne.",
       "question": "Miksi sama etäisyys ilmoitetaan eri yksiköillä, ja mitä lukujen välillä pitää tehdä, jotta ne tarkoittavat samaa?"
     },
     {

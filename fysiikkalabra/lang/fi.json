@@ -621,11 +621,14 @@
       "o_arm": "Orionin haara",
       "o_andromeda": "Andromeda",
       "o_group": "Paikallinen ryhmä",
-      "o_virgo": "Virgon superparvi",
+      "o_virgo": "Virgon superjoukko",
       "o_laniakea": "Laniakea",
       "o_space": "avaruuden raja",
       "o_saturn": "Saturnuksen rata",
-      "o_lmc": "Suuri Magellanin pilvi"
+      "o_lmc": "Suuri Magellanin pilvi",
+      "o_water": "vesimolekyyli",
+      "o_nstar": "neutronitähti",
+      "o_bh": "musta aukko Sgr A*"
     }
   }
 }
