@@ -55,7 +55,7 @@
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_6}{n}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$. Kysytty on $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$
 **Muunnokset:** Ajat ovat sekunteina ja suhde on yksikötön. Se kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\bar{t} = \dfrac{11{,}19\,\text{s}}{6} = 1{,}865\,\text{s}$ ja $\Delta t = \dfrac{1{,}96\,\text{s} - 1{,}78\,\text{s}}{2} = 0{,}09\,\text{s}$, joten $\varepsilon = \dfrac{0{,}09\,\text{s}}{1{,}865\,\text{s}} \cdot 100\,\% = 4{,}83\,\%$
-**Vastaus:** $4{,}8\,\%$, kaksi merkitsevää numeroa. Suhteellisena virheenä se on noin viisi prosenttia, ja tarkempi arvo tulee vaihteluvälin tarkasta puolikkaasta.
+**Vastaus:** $5\,\%$, yksi merkitsevä numero kuten virhe-arviossa $0{,}09\,\text{s}$. Laskimen tarkempi arvo on $4{,}8\,\%$, mutta virhe-arvion tarkkuus ei riitä toiseen numeroon.
 **Järkevyys:** Arvio karkeasti: $0{,}09\,\text{s}$ on noin $\tfrac{1}{20}$ ajasta $1{,}87\,\text{s}$, eli noin $5\,\%$. Käsin otetulle ajalle muutaman prosentin satunnaisvirhe on tavallinen.
 
 ## fy1-3-L2-02

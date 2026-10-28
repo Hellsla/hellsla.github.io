@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d7c7d0d3dad93aab
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-3/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: 3f0dfa7324a244fc
 
 ## Blocking
-(none)
+- none.
 
 ## Polish
-1. Shared components (coordinator): sticky-sim legend crop at 1280 px and table scroll at 390 px, as in earlier rounds; not judged here.
+- exercises.json — no task on karkea virhe (the teacher missed it in the lesson too): the lesson defines it and the summary says it is checked and dropped, yet all 12 tasks are random/systematic/mean/range. Swap one L2 (e.g. L2-03, a pure conversion) for a series with one slip (3,52 s for 3,25 s): find it, drop it, average the rest.
+- solutions.md Kaava lines (L1-02, L2-03, L1-03 and others) — the sentence "Kaava on jo ratkaistu kysytyn suureen suhteen: …" repeats the same formula twice; delete the repetition.
+- solutions.md L2-01 Vastaus — "tarkempi arvo tulee vaihteluvälin tarkasta puolikkaasta" is unclear to a student; write "$0{,}09\,\text{s} : 1{,}865\,\text{s} = 4{,}8\,\%$".
+- solutions.md L1-02 / L3-01 — $\Delta x$ is the error in L1-02 (x minus true value) but the error estimate (half range) in L1-03 and L1-05, and $\Delta t_\text{sys}$ in L3-01; one sentence in L1-02 Periaate ("virhe kirjoitetaan $\Delta x$") would keep it from confusing.
 
 ## Checked
-- Round 4 focus: dot-plot stacking. Moved the sim at 1280 and 390 px: at n = 40 and satunnaisvirhe 0,05 s the stack now stays below the T and mean labels and the orange dot no longer covers them; 0,15 s and 0,30 s with +0,30 s offset are clean. The round 3 polish item is resolved.
-- Path, predictions, experiments, conclusion, exercises, exit ticket, Finnish and glossary unchanged since round 3 and sound; the sim text stays behind its three boxes.
+- Delta: L1-02 now writes the measurement error as $\Delta x$, consistently in Kysytty, Kaava and Sijoitus; arithmetic unchanged (+0,3 cm).
+- Other solutions already use $\Delta x$, $\Delta t$, $\Delta L_\text{sys}$ with descriptive subscripts; no e, no ×, no \times.
+- Counts 5/4/3; situation first, question last; school-lab contexts recognisable; no task repeats the worked example.
+- L2-03 converts by replacing the unit (0,125 m = 12,5 cm) and its Järkevyys shows why conversion is needed.
+- Finnish and case after number+unit correct.

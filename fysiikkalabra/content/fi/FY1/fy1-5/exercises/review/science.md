@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bf5a8408183fa8fb
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-5/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: ee7ae5a9163fd87e
 
 ## Blocking
 
 ## Polish
+- solutions.md L3-01 Järkevyys — "0,2 AU ≈ 20 vrk": the model–JPL difference 0,21 AU corresponds to ≈ 24 vrk; write "noin 25 vuorokautta".
 
 ## Checked
-- Hash bf5a8408183fa8fb at start and end. Since round 2, only lesson.md Järkevyys, the inquiry.json conclusion/tarkistus-3 `model`, ennuste-1 feedback and solutions.md L1-02 changed.
-- The Earth-distance claim is gone from lesson.md and inquiry.json; no other file repeats it. The JPL value 143,05 AU is now compared with the heliocentric model, which is consistent with the teacher's brief.
-- The new cause ("osin" solar deceleration plus 0,1 AU precision of s₀) is honest. Solar gravity at about 120–143 AU gives an order of 0,1 AU over the interval, so "osin" fits.
-- The model at 2026-02-15 (2659 d) gives 143,26 AU. The gap is 0,21 AU = 0,15 %, so "noin 0,2 AU" and "alle 0,2 %" are right.
-- Worked example: 2922 d, Δs = 25,89 AU, s = 145,59 AU, so 145,6 AU is right.
-- ennuste-1 wrong-option feedback with the v–t sentence removed is still correct (a horizontal s–t line means rest).
-- L1-02: 8,0 m/s as "hyvän juoksijan vauhti" is realistic.
-- answers.py recomputed: all 12 answers match exercises.json. L2-04 1,715 rounds to 1,7, which is inside the tolerance.
+- answers.py reproduces all 12 answers; independently recomputed: 110; 8,0; 400; 45; 3,5; 210; 450; 2,4; 1,7; 3420 vrk (date 17 Mar 2028, as stated); 41,6 h; 90 m.
+- L3-02 argument for neglecting motion: probe 0,015 AU (0,01 %), Earth 0,03 AU (0,02 %) in 1,5·10⁵ s — correct; light 499 s per AU.
+- L2-04 light time ≈ 6 µs, rule of thumb 3 s ≈ 1 km correct.
+- L3-03 catch-up solved symbolically, t = 60 s, s = 90 m, two independent checks.
+- All solutions complete (seven steps), conversions via 3,6 and 1000 correct, rounding justified.
+- Notation: \cdot throughout; colon divisions (18 m : 4,0 s; 4,5 km : 36 km/h; 1715 m : (3,0·10⁸ m/s); 60 : 3,0) unambiguous; no ×/δ.

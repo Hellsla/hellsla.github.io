@@ -62,9 +62,9 @@
 **Annettu:** matka $s = 4{,}0\cdot10^{16}\,\text{m}$, $c = 2{,}998\cdot10^{8}\,\text{m/s}$, yksi vuosi $3{,}156\cdot10^{7}\,\text{s}$
 **Kysytty:** valon matka-aika $t$ vuosina
 **Periaate:** Valo kulkee tasaisella nopeudella, joten aika on matka jaettuna nopeudella. Aika saadaan ensin sekunteina ja muutetaan sitten vuosiksi.
-**Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$ ja $t_\text{a} = \dfrac{t}{3{,}156\cdot10^{7}\,\text{s/a}}$
-**Muunnokset:** Sekunnit vuosiksi: $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$, joten sekuntien määrä jaetaan tällä luvulla.
-**Sijoitus:** $t = \dfrac{4{,}0\cdot10^{16}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}334\cdot10^{8}\,\text{s}$ ja $t_\text{a} = \dfrac{1{,}334\cdot10^{8}\,\text{s}}{3{,}156\cdot10^{7}\,\text{s/a}} = 4{,}23\,\text{a}$
+**Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$
+**Muunnokset:** Yksi vuosi on $3{,}156\cdot10^{7}\,\text{s}$, joten vuosien määrä saadaan, kun sekunnit jaetaan yhden vuoden sekunneilla: montako kertaa vuosi mahtuu aikaan.
+**Sijoitus:** $t = \dfrac{4{,}0\cdot10^{16}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}334\cdot10^{8}\,\text{s}$ ja vuosina $1{,}334\cdot10^{8}\,\text{s} : 3{,}156\cdot10^{7}\,\text{s} = 4{,}23$, eli $t = 4{,}23\,\text{a}$
 **Vastaus:** $4{,}2\,\text{a}$, kaksi merkitsevää numeroa kuten matkassa $4{,}0\cdot10^{16}\,\text{m}$ (kenttään sopii $4{,}23$).
 **Järkevyys:** Yksi valovuosi on $9{,}46\cdot10^{15}\,\text{m}$ ja matka on noin $4$ valovuotta ($4{,}0\cdot10^{16} : 9{,}46\cdot10^{15} \approx 4{,}2$), joten aika on noin $4$ vuotta. Tulos täsmää.
 
@@ -80,13 +80,13 @@
 
 ## fy1-1-L2-04
 **Annettu:** Auringon halkaisija $d_\text{A} = 1{,}39\cdot10^{9}\,\text{m}$, Maan halkaisija $d_\text{M} = 1{,}27\cdot10^{7}\,\text{m}$; tilavuus $V \propto d^{3}$
-**Kysytty:** tilavuuksien suhde $\dfrac{V_\text{A}}{V_\text{M}}$ miljoonina
+**Kysytty:** tilavuuksien suhde $\dfrac{V_\text{A}}{V_\text{M}}$ miljoonina eli kuinka monta Maan tilavuutta mahtuu Auringon tilavuuteen
 **Periaate:** Kun tilavuus on suoraan verrannollinen halkaisijan kuutioon, tilavuuksien suhde on halkaisijoiden suhteen kolmas potenssi. Halkaisijoiden suhde lasketaan ensin.
 **Kaava:** $\dfrac{V_\text{A}}{V_\text{M}} = \left(\dfrac{d_\text{A}}{d_\text{M}}\right)^{3}$
 **Muunnokset:** Halkaisijat ovat samassa yksikössä, joten suhde on pelkkä luku. Vastaus annetaan miljoonina: $1\text{ miljoona} = 10^{6}$.
 **Sijoitus:** $\dfrac{d_\text{A}}{d_\text{M}} = \dfrac{1{,}39\cdot10^{9}}{1{,}27\cdot10^{7}} = 109{,}4$ ja $\left(109{,}4\right)^{3} = 1{,}31\cdot10^{6} = 1{,}31$ miljoonaa
-**Vastaus:** $1{,}31$ miljoonaa Maata eli $1{,}31\cdot10^{6}$, kolme merkitsevää numeroa kuten halkaisijoissa.
-**Järkevyys:** Halkaisijoiden suhde on noin $10^{2}$, joten tilavuuksien suhde on noin $\left(10^{2}\right)^{3} = 10^{6}$. Tulos $1{,}3\cdot10^{6}$ on tätä luokkaa: miljoona Maata mahtuisi Aurinkoon.
+**Vastaus:** $1{,}31$ miljoonaa eli $1{,}31\cdot10^{6}$, kolme merkitsevää numeroa kuten halkaisijoissa. Auringon tilavuus on siis noin 1,3 miljoonaa Maan tilavuutta.
+**Järkevyys:** Halkaisijoiden suhde on noin $10^{2}$, joten tilavuuksien suhde on noin $\left(10^{2}\right)^{3} = 10^{6}$. Tulos $1{,}3\cdot10^{6}$ on tätä luokkaa. Kiinteinä palloina Maita mahtuisi vähemmän, koska pallojen väliin jää tyhjää tilaa; tilavuuksien suhde kertoo, kuinka moneen Maan tilavuuteen Auringon tilavuus riittää.
 
 ## fy1-1-L3-01
 **Annettu:** Maan halkaisija pienoismallissa $d_\text{malli} = 1{,}0\,\text{cm}$; todellinen halkaisija $d_\text{M} = 1{,}27\cdot10^{7}\,\text{m}$ ja etäisyys Auringosta $r = 1{,}50\cdot10^{11}\,\text{m}$

@@ -1,19 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: d7c7d0d3dad93aab
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-3/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+VERDICT: FAIL
+CONTENT-HASH: 3f0dfa7324a244fc
 
 ## Blocking
+- exercises/exercises.json fy1-3-L2-01 (tolerance 0.02) — the lesson rounds Δt to one figure (0,09 s) and ε to the figures of Δt, giving 5 %, which is 3,6 % off 4.83 and rejected — raise tolerance to 0.04 and in solutions.md:58 state 5 % as the strictly rounded answer (4,8 % unrounded) instead of "kaksi merkitsevää numeroa".
 
 ## Polish
-- assets/sims/fy1/fy1-3/sim.js:124–131 (plot) — at satunnaisvirhe 0 and n = 40 the squeezed column (≈3,2 px per dot, d = 8,6 px) no longer lets the eye count the dots; the readout carries n, so nothing is wrong — optionally print the count of identical readings beside a column taller than the plot.
+- solutions.md:68 (L2-02) — "kolmen lukeman keskiarvo kantaa yhden numeron lisää" is not a sound rule; justify 10,7 mm by the millimetre readings, or give 11 mm.
+- solutions.md L1-05 Järkevyys — "Virhe-arvio ei voi olla asteikkoväliä suurempi" is too absolute (a hard-to-read scale can need more); say "on tavallisesti enintään".
 
 ## Checked
-- Round-4 diff: sim.js stacking only (collision levels first, then step = min(d + 1,5, (yLow − yHigh)/maxLv)); rest passed in round 3.
-- Preview driven in Playwright at 1280 and 390 px for sat 0, 0,05, 0,15, 0,30; sys −0,30, 0, +0,30; n = 2, 10, 40: dotTop (simState) always ≥ 202,75 (k = 1) / 214 (phone), below the $\bar t$ label bottom (194,8 / 206,0).
-- Screenshots sat 0, sys +0,30, n = 40 (1280) and exp-3 state sat 0,05, n = 40 (390): all 40 dots on the canvas, none over the ramp, the $ or $\bar t$ labels.
-- Dot x positions still the exact readings; mean and $ markers unchanged; simState keys (mean, puoli, vir) unchanged.
-- Hash identical at start and end.
+- All 12 answers recomputed independently; all match answers.py within tolerance.
+- No × or ÷; products in \cdot; divisions as \frac; error symbols Δx, Δt_sys, ΔL_sys.
+- L3-01 signs (late start shortens, late stop lengthens; −0,06 s); L3-02 2,0 µm and the 100 µm paper check; L3-03 0,26 cm with 0,025 cm scatter.
+- Every solution has the seven parts, symbolic before numbers, conversions stated (L2-02, L2-03, L3-02).

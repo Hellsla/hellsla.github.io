@@ -1,20 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 38c778f449b232fd
+CONTENT-HASH: 2a7e930288c2b5a4
 
 ## Blocking
 
 ## Polish
-- lang/fi.json `rivi_nakyvissa` — at $L=-17$ and $L=-34$ the readout says "Näkyvissä $1$ kohdetta" (seen live). — Singular form for $n=1$ ("Näkyvissä $1$ kohde"), or "Kohteita näkyvissä: $n$".
-- inquiry.json:119 (sim `calc`) — "näkyy, kun sen koko on noin $\tfrac{1}{2000}$–$3$ kertaa näkymän leveys": the picture starts fading in at $0{,}25\,\text{px}$ ($\approx\tfrac{1}{2200}$), but the readout counts it as visible only from about $0{,}5\,\text{px}$ ($\approx\tfrac{1}{1200}$, `a >= 0.5`). — Say "noin $\tfrac{1}{1000}$–$3$" or "noin $10^{-3}$–$3$".
+- assets/sims/fy1/fy1-1/sim.js:42-47 — orbit objects (1 AU, Saturnus, Neptunus, heliopaussi, Oort) are drawn at their diameter (`ext`) but labelled with their radius, in a picture that otherwise shows true size ratios side by side; Mallin oletukset says so, but a student comparing the Sun with 1 AU by eye gets a factor of 2 wrong — label the drawn diameter or draw the radius.
+- templates/inquiry.js:22 (shared) — the experiment table shows the integer exponent n as "−10,0", "7,00", "13,0", which reads like a decimal measurement; show integers as integers.
+- lessons/FY1/fy1-1/sim-spec.md:1 — says objects show from about 1/2000 of the view; the Laskennan selitys says 1/1000 and the code (a ≥ 0,5) gives about 1/1200; align on "noin 1/1000".
+- lesson.md:46 — "nykyiset teoriat eivät enää toimi" is an untested expectation; "teorioiden odotetaan lakkaavan toimimasta" is safer.
 
 ## Checked
-- Round 1 Blocking fixed: in the rebuilt preview (Chromium, 12 values of $L$) the readout's object name, size, count and listed names all render as KaTeX, with no raw `$`.
-- Round 1 polish applied: "… radan säde" (with a radius line), "gammasäteilyn aallonpituus", the slider in the exp-1 intro, "likimain" for $\Delta n$, and the `model` fragment removed.
-- Live `simState` at every experiment value: $L=-9$ gives water ($n=-10$), $-9{,}4$ the hydrogen atom ($-10$), $-14{,}5$ the proton ($-15$), $-17$ the quark ($-18$); $7{,}7$ gives Earth ($7$), $9{,}7$ the Sun ($9$), $13{,}5$ Neptune's orbit ($13$), $21{,}5$ the Milky Way ($21$), $27{,}5$ the universe ($27$); $-34$ gives the Planck length ($-35$) and $-4$ the hair ($-4$). These match the predictions, the numeric answers 5 and −4 and the solutions.
-- All 12 exercises recomputed with my own formulas: they match answers.py and exercises.json, and every answer rounded to the data stays inside its tolerance.
-- Inquiry numbers right: siirto and its mistakes, check-2 and its inverse, the example, and the differences 8, 4, 6, 31, 42 and 62.
-- Magnitudes: Sgr A* horizon $2{,}54\cdot10^{10}\,\text{m}$ from $4{,}3\cdot10^{6}\,M_\odot$, observable universe 93 Gly, Proxima 4,2 ly, Sun/Earth 109, Pb nucleus 14 fm.
-- `calc` example: $62\,\text{px}$ at $L=-9$ is right. `kohdeExp = round(log10 m)` matches the glossary's rule of rounding at about 3.
-- Worked example and all 12 solutions follow the seven steps: symbolic first, conversions, rounding justified, a real reasonableness check.
-- Every correct option and its feedback in pred-1/2, exp-2, menetelmat, tunnista, vuorovaikutukset, virhe and check-1 is right, and so is the exit ticket.
-- Lesson facts (heliopause $120\,\text{AU}$, Oort cloud, nucleus holding >99,9 % of the mass, beta decay, the range of the strong force, EM/gravity $10^{36}$) and the figures' numbers are correct. The content stays within FY1 scope and the 2026-10-28 brief.
+- Teacher's 2026-10-28 rules: \cdot throughout, no × or \times; divisions as operations use ':' (lesson.md:444, inquiry exp-1 solution); k as \frac; no error quantity in this lesson; every canvas label and readout value goes through LaTeX.
+- Recomputed: example k = 6,47·10⁴, Δn = 5; exp-1 5; exp-3 −4; siirto 12 732 km (mistakes 40 000, 6366, 111); check-2 5,79·10⁴ (inverse 1,73·10⁻⁵); 10³⁶ e/g ratio; Sgr A* diameter 2,5·10¹⁰ m; 1 ly 9,46·10¹⁵ m.
+- All 43 object sizes realistic; kohdeExp = round(log₁₀ d) matches the glossary's "a about 3" rule.
+- Playwright at 360 px: every "Siirry kohteeseen" target lands on that object as nearest, all labels inside the canvas.
+- Experiments run in the page: exp-1 rows −10, −10, −15, −18; exp-2 7, 9, 13, 21 (names via kohdeNimi); exp-3 (now starting at L = 27,5) 27, −35, hius −4.
+- Predictions' correct options and every feedback's numbers (8 orders Neptune–Milky Way, 6 Milky Way–universe, 42/62 orders).
+- Figures: scale-axis and object-types positions to scale (11,8 and 26 px per decade); ladder, matter, cosmic address numbers right.
+- Physics: β-decay, residual strong force, Oort cloud, heliopause 120 AU, neutron star 20–25 km, observable universe 93 Gly with expansion.
+- Hash changed twice during review (kohdeNimi as varied key, i18n strings, exp-3 start); each diff re-reviewed.

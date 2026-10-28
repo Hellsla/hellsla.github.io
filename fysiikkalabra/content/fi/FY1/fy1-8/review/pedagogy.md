@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e0ca257609881513
-
+CONTENT-HASH: 3b526855315a1b03
 ## Blocking
 (none)
-
 ## Polish
-(none)
-
+- inquiry.json (virhe item) — "0,60 · 0,2 : 0,050 m" mixes · and : with no brackets; write "(0,60 · 0,2) : 0,050 m".
+- Δt here is an error (half range) while in fy1-4/5 Δ is a change; fine, but the lesson text could say so once.
 ## Checked
-batch delta review: the wrong-answer option is now a testable hypothesis whose feedback points to group B's data and back to the timing method (better repair); the model plan notes rolling-resistance slowing, acknowledging the constant-speed assumption.
+batch delta review: colon replaces / in ε = Δt : t̄, v = s : t̄, 5-step checks and Järkevyys; Δ for errors consistent; no new blocking.

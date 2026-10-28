@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: bf5a8408183fa8fb
-
+CONTENT-HASH: e78dc963eb683250
 ## Blocking
 (none)
-
 ## Polish
-(none)
-
+- inquiry.json hint 3 and feedback — "21,6 : 3,6 m/s" attaches the unit to the divisor; write "21,6 km/h : 3,6 = 6,0 m/s".
 ## Checked
-- Round 2 polish items all resolved: Earth-offset sentence removed (lesson.md:172, inquiry.json conclusion model); "hyvän juoksijan vauhtia" (solutions.md L1-02); v-t graph mention cut from ennuste-1 feedback.
-- New explanation (gravity slows the probe; initial distance given only to 0,1 AU) is accurate, in scope and consistent between lesson.md and the conclusion model.
-- ennuste-1 feedback still repairs the "horizontal line" misconception with model values.
-- Rest of lesson as previously approved.
+batch delta review: colon forms s : t, Δs : t, Δs : Δt consistent across lesson, inquiry and exit ticket; the mistaken-versus-correct contrast in Yleinen virhekäsitys stays clear.

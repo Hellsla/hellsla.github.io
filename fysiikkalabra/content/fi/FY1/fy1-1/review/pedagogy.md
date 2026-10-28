@@ -1,22 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 38c778f449b232fd
+VERDICT: FAIL
+CONTENT-HASH: 700f60a819aca0b5
 
 ## Blocking
-- none.
+- exit-ticket.json item 2 answer — `$\text{B}$` is written with a single backslash, so JSON turns `\t` into a tab and the page shows "Kohde extB siis noin" (capture open-exit-1280) — write `$\\text{B}$`.
+- inquiry.json exp-1/exp-2/exp-3 `names.L` ("leveyden eksponentti") — the recorded table still opens with an unexplained column of L values (-9,00, -9,10 ...) next to n; after "Siirry kohteeseen vetyatomi" L is -9,10 while n is -10, which contradicts the revision's aim (the teacher's complaint was L values). The status line also says "Säädä leveyden eksponentti" — hide or rename the column ("näkymän leveys, ei tarvita") and change the hint text so only n is the student's number.
 
 ## Polish
-- inquiry.json `learn` — still no goal for slot goal 1 (fysiikka mallintavana, kokeisiin nojautuvana tieteenä), although the exit ticket and check-3 test it. Add: "Osaat selittää, miksi malli testataan mittauksella."
-- exercises.json L1-04 — lead atom/nucleus ratio is the worked example's method and context; swap for a non-atomic pair (e.g. hius/virus) so no L1 task echoes the example.
-- inquiry.json `reflect` — it now answers the opening question (42 and 62), good; but it sits in the core path while exp-2's rows already carry pred-2. If the hour is tight, `reflect` is the next candidate to make optional, not the 42/62 line (move that line to Ydinajatus then).
+- The core path is clear: opening question, "Siirry kohteeseen" (menu readable at 390 px), pred-1 and pred-2, and the ladder figure ("5 askelta ⇒ 10^5 = 100 000 kertaa suurempi") are good. But predictions and exp-1 ask for "suuruusluokkaa" (steps), while the section asks "kuinka monta kertaa"; add one sentence linking the two (askeleet → kertoja) at the experiment's question.
+- Menu has 44 entries, including both "avaruuden raja" and "havaittava maailmankaikkeus"; the student only needs about 8 named in the experiments. Group or shorten the list.
+- Workload: 5 theory sections, 3 predictions or experiments, 2 interpret items and 4 Sovella tasks in one lesson; consider moving more to optional.
+- Formula k = d_suurempi/d_pienempi: say in a sentence that the colon form (d_suurempi : d_pienempi) means the same.
 
 ## Checked
-- Round-1 fixes verified: sim readout names are LaTeX ($W = 10^{L}\,\text{m}$, "Näkymän leveys $10^{7,7}$ m", sizes in LaTeX) at 390 px; "radan säde" in exp-2; exp-1 intro tells the student to use the slider and why the button skips the atom.
-- vuorovaikutukset now transfers: falling keys, fridge magnet, potassium-40 are new phenomena not in the theory text; helium nucleus kept; each wrong option's feedback repairs a specific confusion (gravity in nucleus, EM holding nucleus, strong doing beta decay).
-- Opening question fully answered on the core path: structure (theory), Earth's address (exp-2), 42 and 62 orders (reflect).
-- Optional now: retrieval, exp-3, size-methods interpret, Etsi virhe, siirto, check-3. Core path: 2 predictions, exp-1 and exp-2, theory (about 8 figures), reflect, example, tunnista, vuorovaikutukset, L1 (5), check-1, check-2, exit ticket (3).
-- Workload for FY1 (1 op, 8 lessons, so about 3 h of work per lesson including practice): core path about 70 min plus L1, which is manageable; the optional items are real extras, not hidden requirements.
-- Predictions arguable before evidence and refutable by the exp rows (n values); nothing disclosed before commitment.
-- Sim at 390 px readable, text behind closed Käyttöohje / Mallin oletukset / Laskennan selitys; controls not clipped.
-- Example seven stages; solutions complete (spot-checked L1-04, L2-04, L3-03, check-2).
-- Finnish: glossary terms right, no case slips after number+unit found.
-- Hash unchanged at end (38c778f449b232fd).
+- Shots were stale (before the edits); regenerated with screenshot.py.
+- No × as a multiplication sign in lesson.md, inquiry.json or the exit ticket; \cdot is used throughout.
+- Fig 2 and fig 3 (ladder) are legible and clear at 390 px.
+- exp-1 intro, the preview and the menu items for vetyatomi, protoni, kvarkki and Neptunuksen radan säde exist.
+- Example is staged in seven steps; its solution follows the rubric.
+- The hash was unchanged at the end.

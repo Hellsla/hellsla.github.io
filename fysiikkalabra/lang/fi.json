@@ -564,8 +564,8 @@
       "nopea": "nopea",
       "huomautus": "Katkoviiva on $v = gt$. Nuolen pituus on nopeus. Pisteet ovat kokonaisia sekunteja.",
       "rivi_t": "<strong>$t = {{tau}}\\,\\text{s}$</strong><br>",
-      "rivi": "$\\text{{{n}}}$: nopeus <strong>$v = {{v}}\\,\\text{m/s}$</strong>, $v/t = {{q}}\\,\\text{m/s}^2$<br>",
-      "rivi_alku": "$\\text{{{n}}}$: nopeus <strong>$v = 0\\,\\text{m/s}$</strong>, $v/t$ ei ole vielä määritelty<br>"
+      "rivi": "$\\text{{{n}}}$: nopeus <strong>$v = {{v}}\\,\\text{m/s}$</strong>, $v : t = {{q}}\\,\\text{m/s}^2$<br>",
+      "rivi_alku": "$\\text{{{n}}}$: nopeus <strong>$v = 0\\,\\text{m/s}$</strong>, $v : t$ ei ole vielä määritelty<br>"
     },
     "fy1-1": {
       "kaynnista": "Käynnistä",

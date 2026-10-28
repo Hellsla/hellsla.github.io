@@ -2,9 +2,9 @@
 **Annettu:** hiuksen paksuus $l = 82\,\mu\text{m}$
 **Kysytty:** paksuus $l$ millimetreinä
 **Periaate:** Suure ei muutu, kun sen yksikkö vaihdetaan; vain lukuarvo muuttuu. Etuliite mikro tarkoittaa kerrointa $10^{-6}$ ja etuliite milli kerrointa $10^{-3}$, joten $1\,\mu\text{m} = 10^{-3}\,\text{mm}$.
-**Kaava:** $l = x\cdot 1\,\mu\text{m}$ ja $1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-3}\,\text{mm}$, joten $l_\text{mm} = x\cdot 10^{-3}$
-**Muunnokset:** $1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-3}\,\text{mm}$.
-**Sijoitus:** $l = 82\cdot 10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$
+**Kaava:** $1\,\mu\text{m} = 10^{-3}\,\text{mm}$
+**Muunnokset:** Mikrometrin paikalle kirjoitetaan sen arvo millimetreinä, $10^{-3}\,\text{mm}$.
+**Sijoitus:** $l = 82\,\mu\text{m} = 82\cdot 10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$
 **Vastaus:** $0{,}082\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtöarvossa $82\,\mu\text{m}$ (johtava nolla ei ole merkitsevä).
 **Järkevyys:** Millimetri on tuhat kertaa suurempi yksikkö kuin mikrometri, joten lukuarvon on pienennyttävä tuhannesosaan: 82:sta 0,082:een. Hius on hieman alle kymmenesosamillimetrin paksuinen, mikä sopii kokemukseen.
 
@@ -12,10 +12,10 @@
 **Annettu:** Maan ja Kuun etäisyys $s = 384\,400\,\text{km}$; $1\,\text{Mm} = 10^{6}\,\text{m}$
 **Kysytty:** etäisyys $s$ megametreinä
 **Periaate:** Etäisyys on sama riippumatta yksiköstä. Etuliite mega on $10^{6}$ ja etuliite kilo $10^{3}$, joten $1\,\text{Mm} = 10^{3}\,\text{km}$.
-**Kaava:** $s = x\,\text{km}$ ja $1\,\text{km} = 10^{-3}\,\text{Mm}$, josta $s_\text{Mm} = x\cdot 10^{-3}$
-**Muunnokset:** $1\,\text{Mm} = 10^{6}\,\text{m} = 10^{3}\,\text{km}$.
-**Sijoitus:** $s = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
-**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa. Kokonaisluvun $384\,400$ loppunollat ovat epäselviä, joten luku tulkitaan sadan kilometrin tarkkuudella, $3{,}844\cdot10^{5}\,\text{km}$, ja muunnoskerroin on tarkka.
+**Kaava:** $1\,\text{km} = 10^{-3}\,\text{Mm}$
+**Muunnokset:** Megametri on tuhat kilometriä, joten kilometri on tuhannesosa megametristä. Kilometrin paikalle kirjoitetaan $10^{-3}\,\text{Mm}$.
+**Sijoitus:** $s = 384\,400\,\text{km} = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
+**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa. Kokonaisluvun $384\,400$ loppunollat ovat epäselviä, joten luku tulkitaan sadan kilometrin tarkkuudella, $3{,}844\cdot10^{5}\,\text{km}$, ja $1\,\text{km} = 10^{-3}\,\text{Mm}$ on tarkka.
 **Järkevyys:** Megametri on tuhat kilometriä, ja 384 400 on noin 400 tuhatta, joten tulos on noin 400 Mm. Etäisyyden kymmenpotenssi on $10^{8}\,\text{m} = 100\,\text{Mm}$ ja $10^{9}\,\text{m} = 1000\,\text{Mm}$ välissä, kuten pitääkin.
 
 ## fy1-2-L1-03
@@ -71,10 +71,10 @@
 ## fy1-2-L2-03
 **Annettu:** pinta-ala $A = 2{,}4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
 **Kysytty:** pinta-ala $A$ hehtaareina
-**Periaate:** Pinta-alan yksikkö on pituusyksikön neliö, joten myös muunnoskerroin on neliöitävä: $1\,\text{km}^2 = (1000\,\text{m})^2 = 10^{6}\,\text{m}^2$, ei $1000\,\text{m}^2$.
-**Kaava:** $A_\text{ha} = \dfrac{A_{\text{km}^2}\cdot k_1}{k_2}$, missä $k_1$ muuntaa neliökilometrit neliömetreiksi ja $k_2$ neliömetrit hehtaareiksi
-**Muunnokset:** $k_1 = 10^{6}\,\text{m}^2/\text{km}^2$, joten $2{,}4\,\text{km}^2 = 2{,}4\cdot10^{6}\,\text{m}^2$. Yksi hehtaari on $10^{4}\,\text{m}^2$, eli $k_2 = 10^{4}\,\text{m}^2/\text{ha}$.
-**Sijoitus:** $A = \dfrac{2{,}4\cdot10^{6}\,\text{m}^2}{10^{4}\,\text{m}^2/\text{ha}} = 2{,}4\cdot10^{2}\,\text{ha} = 240\,\text{ha}$
+**Periaate:** Yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä. Pinta-alan yksikkö on kahden pituuden tulo, joten $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$, ei $1000\,\text{m}^2$. Sen jälkeen lasketaan, montako hehtaaria neliömetrimäärään mahtuu.
+**Kaava:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ ja $1\,\text{ha} = 10^{4}\,\text{m}^2$, joten $1\,\text{km}^2 = 10^{6} : 10^{4}\,\text{ha} = 100\,\text{ha}$
+**Muunnokset:** Neliökilometrin paikalle kirjoitetaan $100\,\text{ha}$.
+**Sijoitus:** $A = 2{,}4\,\text{km}^2 = 2{,}4\cdot100\,\text{ha} = 240\,\text{ha}$
 **Vastaus:** $240\,\text{ha}$, kirjoitettuna $2{,}4\cdot10^{2}\,\text{ha}$, kaksi merkitsevää numeroa kuten lähtöarvossa $2{,}4\,\text{km}^2$.
 **Järkevyys:** Neliökilometri on 100 hehtaaria, koska $10^{6} : 10^{4} = 10^{2}$. Siksi 2,4 neliökilometriä on 2,4 sataa eli 240 hehtaaria.
 
@@ -92,9 +92,9 @@
 **Annettu:** $c = 2{,}998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
 **Kysytty:** yhden valovuoden pituus $L$ astronomisina yksikköinä
 **Periaate:** Valovuosi on pituusyksikkö, ei aikayksikkö: se on matka, jonka valo kulkee vuodessa. Valo etenee tasaisella nopeudella, joten annettu kaava $s = ct$ antaa matkan kilometreinä, ja sen jälkeen matka jaetaan AU:n pituudella.
-**Kaava:** $L = c\,t$ ja $L_\text{AU} = \dfrac{c\,t}{1\,\text{AU}}$
-**Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Matka kilometreinä jaetaan lopuksi arvolla $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$.
-**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $L_\text{AU} = \dfrac{9{,}462\cdot10^{12}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 6{,}325\cdot10^{4}\,\text{AU}$
+**Kaava:** $L = c\,t$
+**Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Astronomisina yksikköinä matka saadaan, kun lasketaan, montako AU:ta ($1{,}496\cdot10^{8}\,\text{km}$) siihen mahtuu.
+**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $9{,}462\cdot10^{12}\,\text{km} : 1{,}496\cdot10^{8}\,\text{km} = 6{,}325\cdot10^{4}$, eli $L = 6{,}325\cdot10^{4}\,\text{AU}$
 **Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
 **Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600 : 8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 

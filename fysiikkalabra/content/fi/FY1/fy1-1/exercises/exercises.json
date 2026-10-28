@@ -69,7 +69,7 @@
     {
       "id": "fy1-1-L2-04",
       "level": 2,
-      "text": "Auringon halkaisija on $1{,}39\\cdot10^{9}\\,\\text{m}$ ja Maan halkaisija $1{,}27\\cdot10^{7}\\,\\text{m}$. Pallon tilavuus on suoraan verrannollinen halkaisijan kolmanteen potenssiin. Kuinka monta Maan kokoista palloa mahtuisi Auringon tilavuuteen? Anna vastaus miljoonina.",
+      "text": "Auringon halkaisija on $1{,}39\\cdot10^{9}\\,\\text{m}$ ja Maan halkaisija $1{,}27\\cdot10^{7}\\,\\text{m}$. Pallon tilavuus on suoraan verrannollinen halkaisijan kolmanteen potenssiin. Kuinka monta kertaa suurempi Auringon tilavuus on kuin Maan tilavuus? Anna vastaus miljoonina.",
       "answer": 1.31,
       "unit": "miljoonaa kertaa",
       "tolerance": 0.02

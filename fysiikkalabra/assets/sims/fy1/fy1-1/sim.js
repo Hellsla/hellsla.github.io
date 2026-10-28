@@ -153,7 +153,7 @@ new p5((p) => {
     });
     sl.value(L);
     if (window.defineSimAdapter) window.defineSimAdapter({
-      params: { L: { input: sl.elt, unit: '' } },
+      params: { L: { input: sl.elt, unit: '' }, kohdeNimi: { input: selGo.elt, unit: '' } },   // kohdeNimi: the jump select; an experiment's table lists the nearest object by name
       reset: () => reset(),
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
@@ -187,7 +187,7 @@ new p5((p) => {
     geo = { mapTop: mapY - 16, yb };
     readout.html(__('rivi_leveys', { L: Lfmt(L) }) + '<br>' + __('rivi_kohde', { nimi: __('o_' + M.id), lat: M.lat }) + '<br>' +
       (vis.length ? __(vis.length === 1 ? 'rivi_nakyvissa_1' : 'rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => `$\\text{${__('o_' + it.o.id)}}$`).join(', ') }) : __('rivi_tyhja')));
-    window.simState = { L, logW: L, W, tavoite: tgt === null ? L : tgt, kohde: mi, kohdeLog: M.logM, kohdeId: M.id, kohdeExp: Math.round(M.logM), nVis: vis.length, nakyvat: vis.map((it) => it.o.id).join(','),
+    window.simState = { L, logW: L, W, tavoite: tgt === null ? L : tgt, kohde: mi, kohdeLog: M.logM, kohdeId: M.id, kohdeNimi: __('o_' + M.id), kohdeExp: Math.round(M.logM), nVis: vis.length, nakyvat: vis.map((it) => it.o.id).join(','),
       palkkiK: kk, palkkiPx: barPx, running, dir, speed, labels: null };
     labels = [];
     scene(ts, fh, items, { TB, mapY, ySb, ySbL, vb, nb, yb, kk, barPx });

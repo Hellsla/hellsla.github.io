@@ -299,12 +299,12 @@
       "hints": [
         "Mikä on alkupaikka, ja mikä on nopeus? Ovatko yksiköt yhteensopivia?",
         "Käytä kaavaa $s = s_0 + vt$. Muunna nopeus ensin yksikköön m/s: jaa luku 3,6:lla.",
-        "$v = 21{,}6 : 3{,}6\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
+        "$v = (21{,}6 : 3{,}6)\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
       ],
       "mistakes": [
         {
           "value": 1092,
-          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin: $21{,}6\\,\\text{km/h} = 21{,}6 : 3{,}6\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$."
+          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin: $21{,}6\\,\\text{km/h} = (21{,}6 : 3{,}6)\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$."
         },
         {
           "value": 270,

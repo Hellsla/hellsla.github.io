@@ -1,18 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 6e11a95160d708c6
+VERDICT: FAIL
+CONTENT-HASH: 62584511c014f39e
 
 ## Blocking
+- inquiry.json:117 (sim `calc`) — "kulunut aika $t = s/c$" writes a division as an operation with a slash, against the teacher's rule of 2026-10-28 — write $t = s : c$ (as in the rest of the file) or $t = \frac{s}{c}$.
+- inquiry.json:417 and :422 (tarkistus-3 model answer and criterion) — they teach conversion as "muunnoskerroin, joka on kahden yksikön suhde, $1{,}496\cdot10^{8}\,\text{km/AU}$", a general conversion-factor rule, against the teacher's rule (conversion by understanding: replace the unit by its value) and against the lesson's own Kaava section — say that the unit is replaced by its value, e.g. "AU:n paikalle kirjoitetaan $1{,}496\cdot10^{8}\,\text{km}$", and change the criterion to match.
+- inquiry.json:235 and :240 (johtopaatos model answer and criterion) — "muunnoskerroin vie yksiköstä toiseen" / "mainitsin muunnoskertoimen": same rule — "yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä".
+- inquiry.json:258 (pohdi) — "muunnoskaavaan" refers to a conversion formula that the lesson no longer has — "yksikkömuunnoksiin".
 
 ## Polish
-- lessons/FY1/fy1-2/answers.py:21 — the comment still says "9,461e12 km". 2,998·10⁵ · 3,156·10⁷ = 9,4617·10¹² km, so it should read 9,462e12 (solutions.md now says 9,462). The computed value is unaffected. Fix: change the comment to 9,462e12.
+- inquiry.json:351 (siirto solution) — "$s_\text{AU} = \dfrac{vt}{1\,\text{AU}}$" and dividing by "km/AU" is formula-like. Say how many AU fit in the distance: $4{,}842\cdot10^{8}\,\text{km} : 1{,}496\cdot10^{8}\,\text{km} = 3{,}236$, so the answer is 3,236 AU.
+- sim.js (slider vs view) — at the Sun (d = 0) the slider label reads $d = 10^{6{,}00}\,\text{km}$ while the readout says $d = 0\,\text{km}$. Mark the label as the slider's lower limit, or hide it below 10⁶ km.
 
 ## Checked
-- Hash 6e11a95160d708c6 at the start and at the end (full review, round 2).
-- Round-1 blocker fixed: inquiry.json:116 (Mallin oletukset) now says "heliopaussin eli aurinkotuulen kuplan rajan ylityksestä". This matches the hook ("aurinkotuulen puhaltaman kuplan rajan … yhä Auringon painovoiman piirissä") and `voyager-malli` ("Auringon hiukkastuuli ei enää hallitse"). No "vaikutusalue" is left in the built page.
-- solutions.md L3-01 now gives 9,462·10¹² km → 6,325·10⁴ AU, which is correct.
-- One Python run recomputed all 12 exercise answers independently. Each one matches exercises.json within tolerance (L1-03 1,702 → 1,7 m², L3-01 63 247 → 63 250 AU, L3-03 40,20 h). It also matched the worked example (4,503·10⁹ km, 15 020 s = 4,17 h), siirto 3,236 AU/a and tarkistus-2 193,1 s = 3,22 min.
-- Lesson physics: SI base table, the prefix ladder figure (n…T, ×10³ steps), and the km² = 10⁶ m² conversion. The scale table (H atom 0,11 nm, proton 1,7 fm, Earth 1,27·10⁷ m), 1 AU = 499 s = 8,32 min, and ly ≈ 9,46·10¹² km are all correct. The scope stays at s = ct and t = s/c.
-- Prediction feedback: 1 h ≈ 7,2 AU, 1 week ≈ 1212 AU, 1 ly ≈ 63 000 AU; the exit ticket gives 9,5 · 8,3 min = 79 min.
-- Voyager model (d0 = 119,7 AU on 2018-11-05, v = 15,341 km/s) gives 142,86 AU and 19,80 h on 1.1.2026, and 143,26 AU in mid-February 2026 (JPL gives 143,05). The table rows 119,7/132,6/145,6/158,5 AU and 16,6/18,4/20,2/22,0 h are right. The ≤ 8 min Earth–Sun caveat is correct.
-- In Playwright on the preview page: date 2026-01-01 → simState vAU 142,86 and vTh 19,80, as the feedback states. The slider at n = 7/8/9 gives dAU 0,0668/0,668/6,68 and tLight 33,4/334/3336 s, which matches koe-1 and johtopaatos. Koe-1 locks the date; neither experiment's measured keys depend on the other variable.
-- sim.js uses c = 299 792,458 km/s and 1 px = 3474 km (Sun 401 px, 86,3 px/s). The light pulse runs in simulated time, so the speed setting changes only the pace. Its limits are stated: planets on one line, an enlarged Voyager marker, and model values rather than measurements.
+- All numbers recomputed in one script (worked example, ennuste/koe values, Voyager table and 1.1.2026, siirto, Merkurius, mistakes, sim scale): every value agrees within rounding.
+- Voyager model matches the brief (119,7 AU, 15,341 km/s, 2018-11-05); the values are labelled as model values, Sun vs Earth light-time caveat stated.
+- No ×, \times or ÷ anywhere; multiplication is \cdot; other divisions use ":" or \frac.
+- The lesson's Kaava section teaches conversion by replacing the unit by its value (4,2 km = 4,2 · 1000 m); km² handled as (1000 m)².
+- Significant figures and scale examples correct.
+- SI table fully visible at 360 px (Playwright: 314 px wide in a 328 px column, KaTeX symbols render); Voyager table fits too.
+- SVG figure labels are LaTeX and their numbers are correct; sim canvas labels render as LaTeX.
+- The lesson has no measurement-error content, so the Δx rule and the gross-error (karkea virhe) point do not apply here.

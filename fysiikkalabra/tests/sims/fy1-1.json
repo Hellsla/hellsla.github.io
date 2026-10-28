@@ -36,10 +36,10 @@
   "note": "no Lisätietoja box; one legend line of at most 15 words (explanations live in the lesson's inquiry.json)"
  },
  {
-  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).join(',')==='L' ? 1 : 0 })()",
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).join(',')==='L,kohdeNimi' ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "adapter declares L"
+  "note": "adapter declares L and kohdeNimi (the Siirry kohteeseen select)"
  },
  {
   "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
@@ -1528,5 +1528,12 @@
   "expected": 1,
   "tol": 0,
   "note": "at L = -34 (the jump target rounded to the slider step) the nearest object is planck"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.kohdeNimi==='vetyatomi' && window.simState.kohdeExp===-10 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "simState.kohdeNimi is the Finnish name of the nearest object (an experiment table shows it)"
  }
 ]

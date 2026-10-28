@@ -37,7 +37,7 @@
         {
           "text": "$4{,}7\\,\\text{s} \\pm 0{,}2\\,\\text{s}$: keskiarvo ja epävarmuutena puolet vaihteluvälistä pyöristettynä ylöspäin.",
           "correct": true,
-          "feedback": "Oikein. Keskiarvo on $23{,}7\\,\\text{s} : 5 = 4{,}74\\,\\text{s} \\approx 4{,}7\\,\\text{s}$ ja puolet vaihteluvälistä on $(4{,}9 - 4{,}6) : 2\\,\\text{s} = 0{,}15\\,\\text{s} \\approx 0{,}2\\,\\text{s}$. Tänään suunnitellaan koe niin, että tämä epävarmuus on mittaukseen nähden pieni."
+          "feedback": "Oikein. Keskiarvo on $23{,}7\\,\\text{s} : 5 = 4{,}74\\,\\text{s} \\approx 4{,}7\\,\\text{s}$ ja puolet vaihteluvälistä on $(4{,}9\\,\\text{s} - 4{,}6\\,\\text{s}) : 2 = 0{,}15\\,\\text{s} \\approx 0{,}2\\,\\text{s}$. Tänään suunnitellaan koe niin, että tämä epävarmuus on mittaukseen nähden pieni."
         },
         {
           "text": "$4{,}7\\,\\text{s}$ ilman epävarmuutta, koska keskiarvo kertoo jo kaiken.",
@@ -192,9 +192,9 @@
       "prompt": "Oppilas suunnittelee kokeen, jossa auton nopeus on $0{,}60\\,\\text{m/s}$ ja ajan epävarmuus $0{,}2\\,\\text{s}$. Suhteellisen epävarmuuden raja on $5\\,\\%$. Hän laskee lyhimmän matkan:\n\n$$\\begin{aligned} s_\\text{min} &= \\frac{v\\,\\Delta t}{\\varepsilon_\\text{max}} \\\\ &= \\frac{0{,}60\\,\\text{m/s} \\cdot 0{,}2\\,\\text{s}}{5} \\\\ &= 0{,}024\\,\\text{m} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Prosenttia ei muutettu desimaaliluvuksi: $5\\,\\% = 0{,}050$, joten oikea matka on $0{,}60 \\cdot 0{,}2 : 0{,}050\\,\\text{m} = 2{,}4\\,\\text{m}$.",
+          "text": "Prosenttia ei muutettu desimaaliluvuksi: $5\\,\\% = 0{,}050$, joten oikea matka on $0{,}60\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0{,}2\\,\\text{s} : 0{,}050 = 2{,}4\\,\\text{m}$.",
           "correct": true,
-          "feedback": "Oikein. Suhteellinen epävarmuus $\\varepsilon$ on osamäärä, joten $5\\,\\%$ on sijoitettava lukuna $0{,}050$. Virheen olisi voinut huomata järkevyystarkistuksella: käsikellolla ei voi mitata millimetrien matkaa, kun aikaa on alle sekunti."
+          "feedback": "Oikein. Suhteellinen epävarmuus $\\varepsilon$ on osamäärä, joten $5\\,\\%$ on sijoitettava lukuna $0{,}050$. Virheen olisi voinut huomata järkevyystarkistuksella: käsikellolla ei voi mitata parin senttimetrin matkaa, kun aikaa on alle sekunti."
         },
         {
           "text": "Kaava on väärä: matka pitäisi laskea jakamalla epävarmuus nopeudella.",
@@ -228,7 +228,7 @@
         },
         {
           "value": 10,
-          "feedback": "Laskit vain lyhimmän ajan $0{,}3 : 0{,}030 = 10\\,\\text{s}$. Matka saadaan kertomalla aika nopeudella: $s = vt$."
+          "feedback": "Laskit vain lyhimmän ajan $0{,}3\\,\\text{s} : 0{,}030 = 10\\,\\text{s}$. Matka saadaan kertomalla aika nopeudella: $s = vt$."
         }
       ],
       "solution": "**Annettu:** nopeus $v = 1{,}4\\,\\text{m/s}$, ajan epävarmuus $\\Delta t = 0{,}3\\,\\text{s}$, suhteellisen epävarmuuden raja $\\varepsilon_\\text{max} = 3{,}0\\,\\% = 0{,}030$\n\n**Kysytty:** lyhin kelvollinen mittausmatka $s_\\text{min}$ metreinä\n\n**Periaate:** Käsikellon epävarmuus on sama pitkässä ja lyhyessä mittauksessa, joten suhteellinen epävarmuus pienenee, kun aika kasvaa. Kävely on likimain tasaista liikettä, joten matka saadaan mallista $s = vt$.\n\n**Kaava:** $t_\\text{min} = \\dfrac{\\Delta t}{\\varepsilon_\\text{max}}$ ja $s_\\text{min} = v\\, t_\\text{min} = \\dfrac{v\\,\\Delta t}{\\varepsilon_\\text{max}}$\n\n**Muunnokset:** Prosentti muutetaan desimaaliluvuksi: $3{,}0\\,\\% = 0{,}030$. Muita muunnoksia ei tarvita, koska aika on sekunteina ja nopeus yksikössä $\\text{m/s}$.\n\n**Sijoitus:** $t_\\text{min} = \\dfrac{0{,}3\\,\\text{s}}{0{,}030} = 10\\,\\text{s}$ ja $s_\\text{min} = 1{,}4\\,\\text{m/s} \\cdot 10\\,\\text{s} = 14\\,\\text{m}$\n\n**Vastaus:** $14\\,\\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa ja rajassa.\n\n**Järkevyys:** Kymmenen sekuntia on 33 kertaa epävarmuus $0{,}3\\,\\text{s}$, joten osuus on noin $\\tfrac{1}{33} \\approx 3{,}0\\,\\%$. Neljätoista metriä mahtuu koulun käytävälle tai pihalle, joten koe on toteutettavissa."

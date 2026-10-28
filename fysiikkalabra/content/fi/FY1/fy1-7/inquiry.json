@@ -56,7 +56,7 @@
    "choices": [
     {
      "text": "$94\\,\\text{g}$, koska tilavuus kasvaa $40\\,\\text{cm}^3$ ja massakin kasvaa saman luvun verran.",
-     "feedback": "Massa ei kasva yhtä monta grammaa kuin tilavuus kasvaa kuutiosenttimetrejä. Alumiinin jokaista kuutiosenttimetriä kohti on massaa $54\\,\\text{g} : 20\\,\\text{cm}^3 = 2{,}7\\,\\text{g}$, joten $40\\,\\text{cm}^3$ lisää massaa $108\\,\\text{g}$, ja yhteensä $162\\,\\text{g}$."
+     "feedback": "Massa ei kasva yhtä monta grammaa kuin tilavuus kasvaa kuutiosenttimetrejä. Alumiinin jokaista kuutiosenttimetriä kohti on massaa $54\\,\\text{g} : 20\\,\\text{cm}^3 = 2{,}7\\,\\text{g/cm}^3$, joten $40\\,\\text{cm}^3$ lisää massaa $108\\,\\text{g}$, ja yhteensä $162\\,\\text{g}$."
     },
     {
      "text": "$162\\,\\text{g}$, koska tilavuus kolminkertaistuu ja siksi myös massa kolminkertaistuu.",

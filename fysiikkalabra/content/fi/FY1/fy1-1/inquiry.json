@@ -121,15 +121,15 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: aineen portaat",
-      "intro": "Testaa ennuste 1. Alkutilassa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan vetyatomi, protoni ja kvarkki ja kirjaa rivi jokaisesta. Taulukon $n$ kertoo lähimmän kohteen suuruusluokan: kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja. Merkitse muistiin, mikä kohde kullakin rivillä on.",
+      "intro": "Testaa ennuste 1. Alkutilassa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan vetyatomi, protoni ja kvarkki ja kirjaa rivi jokaisesta. Taulukon $n$ kertoo lähimmän kohteen suuruusluokan: kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
       "initial": {
         "L": -9
       },
       "names": {
-        "L": "leveyden eksponentti"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
-      "vary": "L",
+      "vary": "kohdeNimi",
       "measure": [
         {
           "key": "kohdeExp",
@@ -170,15 +170,15 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: Maan osoite",
-      "intro": "Testaa ennuste 2. Alkutilassa kooltaan lähin kohde on Maa. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan Aurinko, Neptunuksen radan säde ja Linnunrata ja kirjaa rivi jokaisesta. Merkitse muistiin, mikä kohde kullakin rivillä on. Halutessasi jatka havaittavaan maailmankaikkeuteen asti.",
+      "intro": "Testaa ennuste 2. Alkutilassa kooltaan lähin kohde on Maa. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan Aurinko, Neptunuksen radan säde ja Linnunrata ja kirjaa rivi jokaisesta. Halutessasi jatka havaittavaan maailmankaikkeuteen asti.",
       "initial": {
         "L": 7.7
       },
       "names": {
-        "L": "leveyden eksponentti"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
-      "vary": "L",
+      "vary": "kohdeNimi",
       "measure": [
         {
           "key": "kohdeExp",
@@ -215,15 +215,15 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Valinnainen koe: missä on kokojen puoliväli?",
-      "intro": "Valitse valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa rivi. Valitse sitten havaittava maailmankaikkeus ja kirjaa toinen rivi. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
+      "intro": "Alkutilassa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
       "initial": {
-        "L": -34
+        "L": 27.5
       },
       "names": {
-        "L": "leveyden eksponentti"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
-      "vary": "L",
+      "vary": "kohdeNimi",
       "measure": [
         {
           "key": "kohdeExp",
@@ -233,7 +233,7 @@
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Laske pienimmän ja suurimman kohteen $n$-arvojen keskiarvo eli puoliväli suuruusluokkien akselilla. Zoomaa sitten sen kohdalle, kirjaa kolmas rivi ja vastaa: mikä on simulaation lähimmän kohteen $n$? Merkitse myös kohteen nimi muistiin.",
+        "prompt": "Laske pienimmän ja suurimman kohteen $n$-arvojen keskiarvo eli puoliväli suuruusluokkien akselilla. Zoomaa sitten sen kohdalle, kirjaa kolmas rivi ja vastaa: mikä on simulaation lähimmän kohteen $n$?",
         "answer": -4,
         "unit": "",
         "tolerance": 0.02,

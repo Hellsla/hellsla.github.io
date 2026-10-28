@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 21e9bac43306edcf
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-4/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: 829ef450183dcb7a
 
 ## Blocking
 
 ## Polish
-- inquiry.json `johtopaatos` — `after` now includes koe-3, but the model answer still covers only kokeet 1 and 2 — add one sentence: in koe 3 the smallest d ≈ 5,8 °C leaves points above the line at the ends and below in the middle, so the dependence is curved and a line does not fit.
+- solutions.md:115–117 (L3-03) — Δ now has two meanings in one formula (Δy = change, Δk and Δy_luku = error); name Δk explicitly in **Annettu/Periaate** ("kulmakertoimen virhe Δk") so the student does not read it as a change of k.
 
 ## Checked
-- Diff since PASS: inquiry.json (ennuste-1 correct option, johtopaatos `after`), figures.py `reading()` docstring and description.
-- ennuste-1 correct option now names both criteria (close to all points, points on both sides); the feedback (d ≈ 0,12 m at 0,5 m/s) still matches.
-- figures.py: cyclist and id `kuvaajasta` now match the embedded figure; s = 15 km/h·t + 5 km passes (1,0 h; 20 km) and (3,0 h; 50 km).
-- koe-3 is a required experiment, so gating the conclusion on it is consistent.
-- No change to answers, exercises, solutions or the simulation; earlier checks stand.
-- Hash identical at start and end.
+- answers.py reproduces all 12 answers; independently recomputed: 1,3; 27; 10; −1,5; 4,8; 2,5; 23; 0,9; 1,76→1,8 (inside 3 %); −0,47; 2,0; 16.
+- Every solution has the seven steps, symbolic solution before substitution, correct conversions (L1-05 kg→g, L2-01 km→m, min→s) and a real check.
+- Sign reasoning in L1-04 (negative slope) and L3-01 (negative clock reading, extrapolation stated) correct.
+- L3-02 middle slope −1,2 °C/min and the cooling explanation correct.
+- Notation: multiplication with \cdot, divisions with ':' (20 : 1,5; 6 : 0,6; 1,20 km : 8,0 min), errors with Δ (Δy_luku, Δk); none ambiguous.

@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 21e9bac43306edcf
-
+CONTENT-HASH: b1b91cc01b5e20a2
 ## Blocking
 (none)
-
 ## Polish
-(none)
-
+- (none)
 ## Checked
-batch delta review: correct option now says the line passes near all points with points on both sides (a stronger, fairer criterion); koe-3 added to the conclusion's after list, so the reflection draws on all three experiments; no answer disclosed early.
+batch delta review: / became : in slope formulas, hints, feedback and solution; Δs : Δt and (h − b) : k read clearly, parentheses keep precedence; no layout or figure change.

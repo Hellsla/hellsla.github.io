@@ -391,7 +391,7 @@
         },
         {
           "text": "Lisätä virhe-arvioon $\\Delta t$ tuloksen $4{,}31\\,\\text{s}$ verran, jotta kaikki tulokset mahtuvat väliin.",
-          "feedback": "Virhe-arvio kuvaa satunnaisvirhettä eli tavallista hajontaa. Karkea virhe ei ole hajontaa vaan erehdys, joten sen mukaan ottaminen paisuttaisi virhe-arvion noin kymmenkertaiseksi. Selvästi poikkeava tulos tarkistetaan ja jätetään pois."
+          "feedback": "Virhe-arvio kuvaa satunnaisvirhettä eli tavallista hajontaa. Karkea virhe ei ole hajontaa vaan erehdys, joten sen mukaan ottaminen paisuttaisi virhe-arvion noin seitsenkertaiseksi, $0{,}09\\,\\text{s}$:sta $0{,}62\\,\\text{s}$:iin. Selvästi poikkeava tulos tarkistetaan ja jätetään pois."
         }
       ]
     },
@@ -496,7 +496,7 @@
       "prompt": "Kuulan vierimisaika mitataan viisi kertaa ja tulokset ovat $2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$. Virhe-arvio on vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
       "answer": 2.1,
       "unit": "%",
-      "tolerance": 0.03,
+      "tolerance": 0.05,
       "hints": [
         "Laske ensin keskiarvo ja vaihteluvälin puolikas.",
         "Suhteellinen virhe on $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",
