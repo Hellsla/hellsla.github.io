@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "contribution": "The quantity of heat gets its formula $Q = cm\\Delta T$: the specific heat capacity of a substance decides how much its temperature changes, and conservation of energy gives the equilibrium temperature of a calorimeter and the $c$ of an unknown substance.",
+  "learn": [
+    "You can calculate the heat that changes the temperature of a substance.",
+    "You can explain what the specific heat capacity tells about a substance.",
+    "You can use conservation of energy to find a calorimeter's equilibrium temperature or an unknown substance's specific heat capacity."
+  ],
+  "prior": [
+    "Heat is energy that is transferred because of a temperature difference, and the energy transferred is the quantity of heat $Q$ (chapter *Internal energy, heat and conservation of energy*)",
+    "Energy is conserved: the total energy of an isolated system stays constant (chapter *Internal energy, heat and conservation of energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a July morning at eight o'clock, the sand on the beach and the shallow water by the shore are about equally warm. By noon the surface of the sand is so hot that you cannot stand on it barefoot, but the water has warmed by only a few degrees. The Sun has shone on the same beach for the same time, and both have received energy as heat.",
+      "question": "If energy is transferred as heat to two substances, what decides how much the temperature of each rises?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: heat and internal energy",
+      "prompt": "A hot copper object is lowered into cold water in an insulated container. Which description is physically correct?",
+      "choices": [
+        {
+          "text": "The heat of the copper flows into the water until the copper has no heat left.",
+          "feedback": "An object does not have heat (chapter *Internal energy, heat and conservation of energy*). Heat is the *transfer* of energy because of a temperature difference, and it stops when the temperatures are equal, not when some store runs empty. The copper still has internal energy."
+        },
+        {
+          "text": "Energy is transferred as heat from the copper to the water until the temperatures are equal. The internal energy of the copper decreases by as much as the internal energy of the water increases.",
+          "correct": true,
+          "feedback": "Correct. Heat is energy transferred because of a temperature difference, and in an insulated container energy is conserved: the heat given out by the copper is equal to the heat received by the water (chapter *Internal energy, heat and conservation of energy*). Today you calculate how large that heat is."
+        },
+        {
+          "text": "Cold is transferred from the water to the copper until the copper is as cold as the water was at the start.",
+          "feedback": "Cold is not a quantity that is transferred. Energy is always transferred from the hotter to the colder one, and the water warms too, so the final temperature is between the initial temperatures."
+        },
+        {
+          "text": "Energy is transferred until the internal energies of the copper and the water are equal.",
+          "feedback": "The transfer of heat stops when the *temperatures* are equal. Internal energy also depends on the amount and kind of substance, so in equilibrium the internal energies are usually different."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: sand or water",
+      "prompt": "A calorimeter contains 0.30 kg of water at a temperature of 20 °C. Either 0.20 kg of sand or 0.20 kg of water, each heated to 80 °C, is lowered into it. Which one raises the temperature of the water in the calorimeter more?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Both equally, because the masses and the initial temperatures are the same.",
+          "feedback": "The values of the model disprove this: the sand raises the temperature of the water by about 6.8 K (to 26.8 °C), the hot water by 24 K (to 44.0 °C). The same mass and the same temperature do not mean the same energy to give out; the substance is what matters."
+        },
+        {
+          "text": "The hot water heats more.",
+          "correct": true,
+          "feedback": "The values of the model support this: the hot water raises the water in the calorimeter to 44.0 °C and gives out about 30 kJ, the sand only to 26.8 °C and gives out about 8.5 kJ. The heat capacity of the object, $C = cm$, is 838 J/K for the water and 160 J/K for the sand."
+        },
+        {
+          "text": "The sand heats more, because sand heats up easily and therefore stores a lot of heat.",
+          "feedback": "The values of the model show the opposite: the sand raises the water only to 26.8 °C, the hot water to 44.0 °C. A substance that heats up with a little energy also gives out little energy for each kelvin when it cools."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: hot water into cold",
+      "prompt": "0.20 kg of water at 90 °C is poured into an insulated container that holds 0.50 kg of water at 20 °C. What does the common final temperature settle at?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "At the mean of the initial temperatures, 55 °C.",
+          "feedback": "The values of the model disprove this: 0.20 kg of hot water raises the temperature only to 40.0 °C. The mean 55 °C is obtained only when there are equal amounts of hot and cold water (0.50 kg and 0.50 kg). The temperatures are not averaged; the quantities of heat are equal."
+        },
+        {
+          "text": "Below 55 °C, closer to the temperature of the cold water.",
+          "correct": true,
+          "feedback": "The values of the model support this: the final temperature is 40.0 °C. The hot water cools by 50 K and the cold water warms by only 20 K, because there is 2.5 times as much cold water. When there is 0.50 kg of hot water, the result is 55.0 °C, and when there is 0.80 kg, 63.1 °C."
+        },
+        {
+          "text": "Above 55 °C, because the hot water is the active party that heats the cold.",
+          "feedback": "The values of the model disprove this: the result is 40.0 °C. The energy given out by the hot water is shared among a larger amount of water, so the temperature of the cold water rises less than that of the hot falls. Above 55 °C is obtained only when there is more hot water than cold."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Lower an object into water and follow how the temperatures of the water and the object approach each other.",
+      "howto": "Adjust the mass and initial temperature of the water and the substance, mass and initial temperature of the object, and press *Lower*. The object descends into the water, and the graph plots the temperature of the water (blue) and of the object (orange) as a function of time. The dashed line is the equilibrium temperature $T$. When you change any value, the object rises out of the water and the experiment starts again. *Speed* changes only the pace of the animation, not the temperatures or the quantities of heat.",
+      "model": "The container is fully insulated: no heat is transferred to the surroundings or to the container itself, so the heat given out by the object is equal to the heat received by the water. The temperature of the object stays between 0 and 100 °C, and the phase of neither changes. The equilibrium temperature and the quantities of heat are values calculated by the model, not measurements. The speed of the approach (time constant about 1.5 s) is only an illustration, not a physical model: in reality it depends on stirring and on the shape of the object.",
+      "calc": "The heat capacities are $C_\\text{w} = c_\\text{w} m_\\text{w}$ and $C_\\text{o} = c_\\text{o} m_\\text{o}$, where $c_\\text{w} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. The equilibrium temperature is a weighted mean of the initial temperatures:\n\n$$T = \\frac{C_\\text{w} T_\\text{w} + C_\\text{o} T_\\text{o}}{C_\\text{w} + C_\\text{o}}$$\n\nThe hotter one gives out the heat $Q = c m \\, |\\Delta T|$ and the colder one receives the same amount; when the object is hotter, $Q = c_\\text{o} m_\\text{o} (T_\\text{o} - T) = c_\\text{w} m_\\text{w} (T - T_\\text{w})$. The temperature scale of the graph starts and ends at the initial temperatures rounded to tens of degrees."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the substance changes",
+      "intro": "Testaa ennuste 1. Veden massa ja lämpötila sekä kappaleen massa ja alkulämpötila pysyvät vakioina; vaihda vain kappaleen ainetta. Kirjaa tasapainolämpötila ainakin hiekalla ja vedellä, halutessasi myös metalleilla. Paina välillä *Upota* ja seuraa, kumpi lämpömittari liikkuu enemmän.",
+      "initial": {
+        "mW": 0.3,
+        "TW0": 20,
+        "cB": "800",
+        "mB": 0.2,
+        "TB0": 80
+      },
+      "locked": [
+        "mW",
+        "TW0",
+        "mB",
+        "TB0"
+      ],
+      "vary": "cB",
+      "names": {
+        "mW": "veden massa",
+        "TW0": "veden alkulämpötila",
+        "cB": "aine, c",
+        "mB": "kappaleen massa",
+        "TB0": "kappaleen alkulämpötila"
+      },
+      "units": {
+        "mW": "kg",
+        "TW0": "°C",
+        "cB": "J/(kg·K)",
+        "mB": "kg",
+        "TB0": "°C"
+      },
+      "measure": [
+        {
+          "key": "Teq",
+          "label": "T (°C)"
+        },
+        {
+          "key": "CB",
+          "label": "C (J/K)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the amount of hot water changes",
+      "intro": "Testaa ennuste 2. Kappale on nyt vettä, jonka lämpötila on 90 °C, ja astiassa on 0,50 kg vettä lämpötilassa 20 °C. Muuta vain kuuman veden massaa. Kirjaa tasapainolämpötila ainakin kahdella massalla, esimerkiksi 0,20 kg, 0,50 kg ja 0,80 kg. Millä massalla tulos on alkulämpötilojen keskiarvo?",
+      "initial": {
+        "mW": 0.5,
+        "TW0": 20,
+        "cB": "4190",
+        "mB": 0.2,
+        "TB0": 90
+      },
+      "locked": [
+        "mW",
+        "TW0",
+        "cB",
+        "TB0"
+      ],
+      "vary": "mB",
+      "names": {
+        "mW": "kylmän veden massa",
+        "TW0": "kylmän veden alkulämpötila",
+        "cB": "aine, c",
+        "mB": "kuuman veden massa",
+        "TB0": "kuuman veden alkulämpötila"
+      },
+      "units": {
+        "mW": "kg",
+        "TW0": "°C",
+        "cB": "J/(kg·K)",
+        "mB": "kg",
+        "TB0": "°C"
+      },
+      "measure": [
+        {
+          "key": "Teq",
+          "label": "T (°C)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what decides the final temperature?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: why did the water object heat the water in the calorimeter more than a sand object of the same weight? At what mass was the final temperature the mean of the initial temperatures, and why? Which quantity decides whose temperature changes more?",
+      "model": "With the sand object the final temperature was about $27\\,{}^\\circ\\text{C}$, with the water object about $44\\,{}^\\circ\\text{C}$, although the masses and initial temperatures were the same. Water has a larger specific heat capacity, so $80$-degree water gives out much more energy when it cools than sand does. In experiment 2 the final temperature was the mean $55\\,{}^\\circ\\text{C}$ when there were equal amounts of hot and cold water ($0.50\\,\\text{kg}$). The heat given out by the hotter one is equal to the heat received by the colder one, so the temperature changes less for the one with the larger heat capacity $C = cm$. The values are calculated by the model: in the model no heat is transferred to the surroundings, and in a real calorimeter the final temperature is slightly lower.",
+      "criteria": [
+        "I compared the numbers and explained the difference with the specific heat capacity.",
+        "I explained when the final temperature is the mean.",
+        "I used the heat capacity $C = cm$ and conservation of energy.",
+        "I mentioned the assumption of the model that no heat is transferred to the surroundings."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the equation $Q = cm\\Delta T$. Then return to the question at the start: why does the sand on the beach get much hotter than the water during the morning, although both receive energy from the Sun? Also mention what other difference besides the substance there is in how sand and water warm.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student is solving what temperature a 0.20 kg aluminium object (100 °C) and 0.30 kg of water (20 °C) settle at in an insulated container. The heat capacities are $c_1 m_1 = 180\\,\\text{J/K}$ and $c_2 m_2 = 1257\\,\\text{J/K}$. She writes $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$ and solves from it\n\n$$\\begin{aligned} T &= \\frac{c_1 m_1 T_1 - c_2 m_2 T_2}{c_1 m_1 - c_2 m_2} \\\\ &= \\frac{180 \\cdot 100 - 1257 \\cdot 20}{180 - 1257}\\,{}^\\circ\\text{C} \\\\ &\\approx 6.6\\,{}^\\circ\\text{C} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The temperatures should have been converted to kelvins before substituting.",
+          "feedback": "The conversion does not change the result: when 273.15 is added to every temperature, the same addition goes straight into the result, and you again get 6.6 °C. The error is in solving the equation."
+        },
+        {
+          "text": "She moved the terms with $T$ to the same side without changing the signs correctly. The correct solution is $T = \\dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2} \\approx 30.0\\,{}^\\circ\\text{C}$.",
+          "correct": true,
+          "feedback": "Correct. When the brackets are multiplied out, you get $c_1 m_1 T_1 + c_2 m_2 T_2 = (c_1 m_1 + c_2 m_2)T$: both terms have plus signs. The result could have been seen to be wrong even without algebra: 6.6 °C is below both initial temperatures, and in an insulated container nothing can cool below the coldest part at the start."
+        },
+        {
+          "text": "The equation of the quantities of heat is written wrongly: on the right it should be $(T_2 - T)$.",
+          "feedback": "The original equation is correct: the cold water warms, so the heat it receives is $c_2 m_2 (T - T_2)$, and it is positive, like the left side. The error arises only when solving the equation."
+        },
+        {
+          "text": "There is no error in the calculation; the water cools, because the heat capacity of aluminium is small.",
+          "feedback": "The water is the colder party, so it can only warm. The final temperature must be between the initial temperatures 20 °C and 100 °C; 6.6 °C is an impossible result."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A bathtub contains 80.0 kg of water at a temperature of 30.0 °C. More hot water at a temperature of 60.0 °C is run from the tap until the temperature of the water in the tub is 38.0 °C. How many kilograms of hot water are needed? Assume that no heat is transferred to the tub or the air. Give the answer in kilograms.",
+      "answer": 29.1,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Who gives out heat and who receives it? By how many kelvins does each amount of water change when the final temperature is 38.0 °C?",
+        "The heat given out by the hot water is equal to the heat received by the water in the tub: $c\\, m_\\text{h} (T_\\text{h} - T) = c\\, m_\\text{t} (T - T_\\text{t})$. The same $c$ cancels.",
+        "$m_\\text{h} = \\dfrac{m_\\text{t}(T - T_\\text{t})}{T_\\text{h} - T} = \\dfrac{80.0\\,\\text{kg} \\cdot 8.0\\,\\text{K}}{22.0\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 220,
+          "feedback": "The changes in temperature have swapped places. The water in the tub warms by 8.0 K and the hot water cools by 22.0 K; *less* hot water is needed than there is in the tub, because its temperature changes more."
+        },
+        {
+          "value": 21.3,
+          "feedback": "You calculated the change in temperature of the hot water as $60.0\\,{}^\\circ\\text{C} - 30.0\\,{}^\\circ\\text{C}$. The hot water cools only down to the final temperature 38.0 °C, so its change is $60.0\\,{}^\\circ\\text{C} - 38.0\\,{}^\\circ\\text{C} = 22.0\\,\\text{K}$."
+        }
+      ],
+      "solution": "**Given:** water in the tub $m_\\text{t} = 80.0\\,\\text{kg}$, $T_\\text{t} = 30.0\\,{}^\\circ\\text{C}$; hot water $T_\\text{h} = 60.0\\,{}^\\circ\\text{C}$; final temperature $T = 38.0\\,{}^\\circ\\text{C}$; no heat losses\n\n**Find:** the mass of the hot water $m_\\text{h}$\n\n**Principle:** Energy is conserved: the heat given out by the hot water is equal to the heat received by the water in the tub. Both are water, so the same $c$ cancels.\n\n**Formula:** $c\\, m_\\text{h} (T_\\text{h} - T) = c\\, m_\\text{t} (T - T_\\text{t})$, from which\n\n$$m_\\text{h} = \\frac{m_\\text{t}(T - T_\\text{t})}{T_\\text{h} - T}$$\n\n**Conversions:** The temperature differences are the same in kelvins: $T - T_\\text{t} = 8.0\\,\\text{K}$ and $T_\\text{h} - T = 22.0\\,\\text{K}$. The mass is already in kilograms.\n\n**Substitution:** $m_\\text{h} = \\dfrac{80.0\\,\\text{kg} \\cdot 8.0\\,\\text{K}}{22.0\\,\\text{K}} = 29.09\\,\\text{kg}$\n\n**Answer:** $29\\,\\text{kg}$, two significant figures, because the change in temperature of the water in the tub, $8.0\\,\\text{K}$, is known to two figures.\n\n**Reasonableness:** Less hot water is needed than there is in the tub, because its temperature changes by 22 K and that of the water in the tub by only 8 K. Check: $29.09\\,\\text{kg} \\cdot 22.0\\,\\text{K} = 80.0\\,\\text{kg} \\cdot 8.0\\,\\text{K} = 640\\,\\text{kg}\\cdot\\text{K}$. In reality the tub and the air take some of the heat, so slightly more hot water is used.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. The exercises of level 1 use the formula $Q = cm\\Delta T$ directly, in the exercises of level 2 you solve the equilibrium temperature or another quantity, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "On the sauna stove there is a 10 kg iron pot, and on the table there is a glass with 0.20 kg of water. Raising the temperature of which one by one kelvin takes more energy?",
+      "choices": [
+        {
+          "text": "The water, because the specific heat capacity of water is much larger than that of iron.",
+          "feedback": "The specific heat capacity $c$ applies to one kilogram. The energy needed per kelvin to warm a whole object is the heat capacity $C = cm$: for the pot $450 \\cdot 10\\,\\text{J/K} = 4500\\,\\text{J/K}$, for the glass of water $4190 \\cdot 0.20\\,\\text{J/K} = 838\\,\\text{J/K}$."
+        },
+        {
+          "text": "The pot, because its heat capacity $C = cm$ is larger.",
+          "correct": true,
+          "feedback": "Correct. For the pot $C = 450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 10\\,\\text{kg} = 4500\\,\\text{J/K}$, for the glass of water $C = 838\\,\\text{J/K}$. The small $c$ of iron is not enough when the mass is 50 times as large."
+        },
+        {
+          "text": "The same, because the temperature of each rises by one kelvin.",
+          "feedback": "The same change in temperature does not mean the same quantity of heat: $Q = cm\\Delta T$ also depends on the substance and the mass. Compare the heat capacities $C = cm$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calorimetric measurement",
+      "prompt": "A calorimeter contains 0.200 kg of water at a temperature of 18.0 °C. A metal object of mass 0.150 kg, heated to 98.0 °C, is lowered into it. The temperature settles at 29.0 °C. Determine the specific heat capacity of the metal, ignoring the heat capacity of the calorimeter itself and heat losses. Give the answer in the unit J/(kg·K).",
+      "answer": 891,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.02,
+      "hints": [
+        "Which one gives out heat and which one receives it? By how much does the temperature of each change?",
+        "$c_\\text{m} m_\\text{m} (T_\\text{m} - T) = c_\\text{w} m_\\text{w} (T - T_\\text{w})$, from which $c_\\text{m} = \\dfrac{c_\\text{w} m_\\text{w} (T - T_\\text{w})}{m_\\text{m} (T_\\text{m} - T)}$.",
+        "The metal cools by 69.0 K and the water warms by 11.0 K: $c_\\text{m} = \\dfrac{4190 \\cdot 0.200 \\cdot 11.0}{0.150 \\cdot 69.0}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 768,
+          "feedback": "You used $98.0\\,{}^\\circ\\text{C} - 18.0\\,{}^\\circ\\text{C}$ as the change in temperature of the metal. The metal cools only down to the final temperature 29.0 °C, so its change is 69.0 K."
+        },
+        {
+          "value": 501,
+          "feedback": "The masses have swapped places: the mass of the water, 0.200 kg, belongs to the heat of the water, and the mass of the metal, 0.150 kg, to the heat of the metal."
+        }
+      ],
+      "solution": "**Given:** water $m_\\text{w} = 0.200\\,\\text{kg}$, $T_\\text{w} = 18.0\\,{}^\\circ\\text{C}$, $c_\\text{w} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$; metal $m_\\text{m} = 0.150\\,\\text{kg}$, $T_\\text{m} = 98.0\\,{}^\\circ\\text{C}$; equilibrium temperature $T = 29.0\\,{}^\\circ\\text{C}$\n\n**Find:** the specific heat capacity of the metal $c_\\text{m}$\n\n**Principle:** Energy is conserved: the heat given out by the metal is equal to the heat received by the water, when the calorimeter and the air take up no heat. At the end both are at the temperature $T$.\n\n**Formula:** $c_\\text{m} m_\\text{m} (T_\\text{m} - T) = c_\\text{w} m_\\text{w} (T - T_\\text{w})$, from which\n\n$$c_\\text{m} = \\frac{c_\\text{w} m_\\text{w} (T - T_\\text{w})}{m_\\text{m} (T_\\text{m} - T)}$$\n\n**Conversions:** The masses are in kilograms. The metal cools by $T_\\text{m} - T = 69.0\\,\\text{K}$ and the water warms by $T - T_\\text{w} = 11.0\\,\\text{K}$.\n\n**Substitution:** $c_\\text{m} = \\dfrac{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0.200\\,\\text{kg} \\cdot 11.0\\,\\text{K}}{0.150\\,\\text{kg} \\cdot 69.0\\,\\text{K}} = \\dfrac{9218\\,\\text{J}}{10.35\\,\\text{kg}\\cdot\\text{K}} = 890.6\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n\n**Answer:** $891\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, three significant figures as in the measurement results.\n\n**Reasonableness:** The value is close to the specific heat capacity of aluminium, $900\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, so the object is probably aluminium. The water warms much less than the metal cools, because the heat capacity of the water, $838\\,\\tfrac{\\text{J}}{\\text{K}}$, is more than six times the $134\\,\\tfrac{\\text{J}}{\\text{K}}$ of the metal."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "prompt": "On the shore of a large lake, autumn nights are often milder and spring days cooler than far inland. Explain the phenomenon using the concepts specific heat capacity and quantity of heat.",
+      "criteria": [
+        "I say that the specific heat capacity of water is large, about five times that of sand or soil.",
+        "I use the equation $Q = cm\\Delta T$: the same quantity of heat changes the temperature of water only a little, and when it cools, water gives out a lot of heat for each kelvin.",
+        "I link it to the surroundings of the lake: in autumn the lake gives out heat to the air, in spring it takes up heat and warms slowly.",
+        "I mention that there is also a lot of water in the lake, so its heat capacity $C = cm$ is large."
+      ],
+      "model": "The specific heat capacity of water, 4190 J/(kg·K), is about five times that of sand, and the lake holds an enormous amount of water, so the heat capacity of the lake $C = cm$ is very large. According to the equation $Q = cm\\Delta T$, a large quantity of heat changes its temperature only a little. In summer the lake stores a lot of energy, and in autumn it cools slowly and gives out heat to the air on the shore, so the nights are milder. In spring the lake is still cold and warms slowly, so it cools the air on the shore. Land, in contrast, warms and cools quickly.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. First answer them yourself and only then open the answer."
+    }
+  ]
+}

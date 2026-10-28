@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kuinka monta moolia kaasua on 10,0 litran astiassa, kun paine on 150 kPa ja lämpötila 27 °C ($R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$)?",
+    "a": "$T = (27 + 273{,}15)\\,\\text{K} = 300{,}15\\,\\text{K}$, ja $n = \\dfrac{pV}{RT} = \\dfrac{150\\,000\\,\\text{Pa} \\cdot 0{,}0100\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 300{,}15\\,\\text{K}} \\approx 0{,}601\\,\\text{mol}$."
+  },
+  {
+    "q": "Kaksi samankokoista ilmapalloa on samassa paineessa ja lämpötilassa. Toisessa on heliumia ja toisessa hiilidioksidia. Kummassa on enemmän kaasua ainemääränä mitattuna? Kumpi pallo on raskaampi?",
+    "a": "Ainemäärä on sama, koska $n = \\dfrac{pV}{RT}$ ei riipu kaasun laadusta. Hiilidioksidipallo on raskaampi, koska hiilidioksidin moolimassa 44 g/mol on paljon suurempi kuin heliumin 4,0 g/mol."
+  },
+  {
+    "q": "Suljetun astian kaasun kelvinlämpötila kaksinkertaistetaan. Tilavuus pidetään samana. Mitä paineelle tapahtuu? Perustele tilanyhtälöllä.",
+    "a": "Paine kaksinkertaistuu: $p = \\dfrac{nRT}{V}$. Suureet $n$, $R$ ja $V$ pysyvät samoina, joten $p$ on verrannollinen $T$:hen."
+  }
+]

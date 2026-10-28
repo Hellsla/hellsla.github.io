@@ -1,0 +1,14 @@
+[
+  {
+    "q": "You lift a 10 kg crate 1.0 m upwards and then carry it 5.0 m horizontally at a steady speed. How much work does your supporting force do in total?",
+    "a": "About 98 J. The lift does the work $W = mgh = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.0\\,\\text{m} \\approx 98\\,\\text{J}$. Carrying it horizontally does no work, because the force is perpendicular to the motion."
+  },
+  {
+    "q": "In an $(s, F)$ graph the force is a horizontal segment at the height 40 N from 0 to 0.50 m. What does the area between the graph and the $s$-axis tell you, and how large is it?",
+    "a": "The area tells you the work done by the force: $40\\,\\text{N} \\cdot 0.50\\,\\text{m} = 20\\,\\text{J}$."
+  },
+  {
+    "q": "Two lifts raise the same load to the same height, one twice as fast. Which one does more work, and which has the greater power?",
+    "a": "Both do the same work. The faster lift has twice the power."
+  }
+]

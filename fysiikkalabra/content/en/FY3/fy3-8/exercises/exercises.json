@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-8-L1-01",
+      "level": 1,
+      "text": "A detached house has a 6.0 m long gutter made of coated steel ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). On a summer day the sun heats the gutter from 15 °C in the morning to 55 °C in the afternoon. By how much does the gutter get longer? Give the answer in millimetres.",
+      "answer": 2.9,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-02",
+      "level": 1,
+      "text": "An aluminium overhead wire ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) between two electricity poles is 50.0 m long at 18 °C on a summer evening. On a frosty night the temperature of the wire drops to −27 °C. Calculate the change in the length of the wire $\\Delta L$ with its sign. Give the answer in millimetres.",
+      "answer": -52,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-03",
+      "level": 1,
+      "text": "In a physics lesson a copper tube ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is cooled with ice water to 0 °C, and its length is measured to be 500.0 mm. One end of the tube is fixed in a stand, and a dial gauge is placed against the other end. Then steam from boiling water is passed through the tube, and the tube warms up to 100 °C. By how much does the tube get longer, that is, by how much does the reading of the dial gauge change? Give the answer in millimetres.",
+      "answer": 0.85,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-04",
+      "level": 1,
+      "text": "On the roof of a summer cottage sauna there is a black 200.0-litre tank from which shower water is drawn. In the morning the temperature of the water is 12 °C, and in the afternoon the sun has heated it to 32 °C. The coefficient of volume expansion of water is $\\gamma = 0.21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. By how many litres does the volume of the water grow?",
+      "answer": 0.84,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-05",
+      "level": 1,
+      "text": "The living room window has a 1.5 m wide pane of ordinary glass ($\\alpha = 9.0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). On a summer day the sunshine heats the glass from 20 °C to 45 °C. By how much does the width of the glass grow? Give the answer in millimetres.",
+      "answer": 0.34,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-8-L2-01",
+      "level": 2,
+      "text": "A flexible bellows section is installed at the end of a straight section of a district heating pipe, and it can take up a change in length of at most 50.0 mm. The steel pipe ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is installed at 10 °C, and in use its temperature is 90 °C. What is the greatest length the straight section of the pipe may have? Give the answer in metres.",
+      "answer": 52,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L2-02",
+      "level": 2,
+      "text": "A steel kettlebell with a volume of 2.0 dm³ has been in a garage at −22 °C on a frosty night. It is brought inside, where it warms to 20 °C. The coefficient of linear expansion of steel is $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. By how many cubic centimetres does the volume of the kettlebell grow? Hint: for a solid $\\gamma \\approx 3\\alpha$.",
+      "answer": 3.0,
+      "unit": "cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L2-03",
+      "level": 2,
+      "text": "On an old-style railway, the steel rails ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) are 25.0 m long. When the track is built at 12 °C, a gap of 7.2 mm is left between the rails. Assume that the gap closes when a rail has lengthened by the width of the gap. At what temperature does the gap close?",
+      "answer": 36,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L2-04",
+      "level": 2,
+      "text": "The facade of an apartment building has a 3.00 m long metal strip. In the morning the temperature of the strip is 12 °C, and in the afternoon the sun has heated it to 42 °C. According to measurements the strip has lengthened by 2.07 mm. Calculate the coefficient of linear expansion $\\alpha$ of the strip in the unit 10⁻⁶ 1/K and use the table in the lesson to work out which metal the strip is made of (steel 12, aluminium 23, copper 17, all in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$).",
+      "answer": 23,
+      "unit": "10⁻⁶ 1/K",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-8-L3-01",
+      "level": 3,
+      "text": "In a farm machine workshop a steel gear is fitted on the axle of a tractor with a shrink fit. The diameter of the central hole of the gear is 75.000 mm at 20 °C and the diameter of the axle is 75.090 mm. For steel $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. To what temperature must the gear be heated at least so that it fits on the axle? Also justify why the hole gets bigger and not smaller when the gear warms up, and why the gear is held tightly in place after it has cooled.",
+      "answer": 120,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L3-02",
+      "level": 3,
+      "text": "The thermostat of an old-style electric sauna heater has a bimetallic strip in which copper and steel strips, each 50.0 mm long, are joined together (copper $\\alpha = 17.0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, steel $\\alpha = 12.0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). As the sauna warms up, the temperature of the strip rises from 20 °C to 100 °C. How much more would the copper strip lengthen than the steel strip if they were separate? Give the answer in micrometres, that is, thousandths of a millimetre. Justify which way the joined strip bends.",
+      "answer": 20,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L3-03",
+      "level": 3,
+      "text": "A 20.0-litre steel can for a motorboat is filled to the brim at a filling station with petrol at 10 °C and closed. On the jetty the sun heats the can and the petrol to 35 °C. For petrol $\\gamma = 0.95 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ and for steel $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. The inner volume of the can grows in the same way as the volume of a steel object of the same size. How many cubic centimetres of petrol would try to overflow if the cap is opened? Justify why a can is not filled to the brim even though the can also expands.",
+      "answer": 460,
+      "unit": "cm³",
+      "tolerance": 0.02
+    }
+  ]
+}

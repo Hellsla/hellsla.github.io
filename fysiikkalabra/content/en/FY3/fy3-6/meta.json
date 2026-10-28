@@ -1,0 +1,23 @@
+{
+  "id": "fy3-6",
+  "course": "FY3",
+  "title": "Heating and cooling of matter: Q = cmΔT",
+  "goals": [
+    "LOPS FY3: heating and cooling of matter",
+    "Experimental: calorimetric measurement",
+    "Skills: solving a formula that contains several terms"
+  ],
+  "prerequisites": [
+    "fy3-5"
+  ],
+  "glossary": [
+    "specific heat capacity",
+    "heat capacity",
+    "kalorimetri",
+    "thermal equilibrium",
+    "equilibrium temperature",
+    "quantity of heat"
+  ],
+  "sim": true,
+  "image": false
+}

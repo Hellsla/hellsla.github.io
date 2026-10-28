@@ -1,0 +1,14 @@
+[
+  {
+    "q": "The efficiencies of the steps of the energy chain of a power plant are $\\eta_1 = 0.90$, $\\eta_2 = 0.50$ and $\\eta_3 = 0.96$. What is the efficiency of the whole chain?",
+    "a": "The efficiencies are multiplied: $\\eta = \\eta_1 \\eta_2 \\eta_3 = 0.90 \\cdot 0.50 \\cdot 0.96 = 0.432 \\approx 43\\,\\%$. They are not added or averaged."
+  },
+  {
+    "q": "The fuel power of a combined heat and power plant is $100\\,\\text{MW}$, the electric power $30\\,\\text{MW}$ and the district heating power $55\\,\\text{MW}$. What is the overall efficiency and how large is the power of waste heat?",
+    "a": "$\\eta_\\text{tot} = (30\\,\\text{MW} + 55\\,\\text{MW})/100\\,\\text{MW} = 0.85 = 85\\,\\%$. The power of waste heat is $100\\,\\text{MW} - 85\\,\\text{MW} = 15\\,\\text{MW}$."
+  },
+  {
+    "q": "The efficiency of a hydropower plant is about 90%, but that of a condensing power plant about 40%. Why is the difference so big?",
+    "a": "A hydropower plant converts the kinetic energy of water directly into mechanical energy in the turbine, and it is not a heat engine. So it does not have to release heat to the colder surroundings. A condensing power plant is a heat engine, and a large part of the energy of the fuel always goes to its condenser."
+  }
+]

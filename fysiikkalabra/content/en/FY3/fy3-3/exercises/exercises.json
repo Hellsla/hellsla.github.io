@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-3-L1-01",
+      "level": 1,
+      "text": "The temperature of a room is 21 °C. What is the temperature in kelvins?",
+      "answer": 294,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-02",
+      "level": 1,
+      "text": "The temperature of a gas is 350 K. What is the temperature in degrees Celsius?",
+      "answer": 77,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-03",
+      "level": 1,
+      "text": "The boiling point of liquid nitrogen is 77.4 K. What is it in degrees Celsius?",
+      "answer": -196,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-04",
+      "level": 1,
+      "text": "The temperature of water rises from 20 °C to 45 °C. How large is the change in temperature in kelvins?",
+      "answer": 25,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-05",
+      "level": 1,
+      "text": "The temperature of the cosmic background radiation of the universe is 2.7 K. What is it in degrees Celsius?",
+      "answer": -270,
+      "unit": "°C",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-3-L2-01",
+      "level": 2,
+      "text": "The temperature of a gas is 288 K. The gas is heated, and its temperature rises by 45 K. What is the final temperature in degrees Celsius?",
+      "answer": 60,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L2-02",
+      "level": 2,
+      "text": "In a closed rigid container the pressure of a gas is 90.0 kPa at 0 °C and 123 kPa at 100 °C. Assume that the pressure depends linearly on the temperature. What is the pressure at 35 °C?",
+      "answer": 102,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L2-03",
+      "level": 2,
+      "text": "In a closed rigid container the pressure of a gas is 110 kPa at 10 °C and 137 kPa at 80 °C. Assume that the pressure depends linearly on the temperature. Continue the line outside the measured range and use extrapolation to find the pressure at −50 °C.",
+      "answer": 87,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L2-04",
+      "level": 2,
+      "text": "The temperature of the night side of the Moon is −173 °C and of the day side 127 °C. How many times greater is the temperature in kelvins of the day side than the temperature in kelvins of the night side?",
+      "answer": 4.0,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-3-L3-01",
+      "level": 3,
+      "text": "The total pressure (not gauge pressure) of the air in a bicycle tyre is 300 kPa at 15 °C. The tyre does not leak, and its volume stays the same. The pressure is directly proportional to the temperature in kelvins. What is the pressure in the tyre at 35 °C?",
+      "answer": 321,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L3-02",
+      "level": 3,
+      "text": "In a closed rigid container the pressure of a gas is 150 kPa at 27.0 °C. The container is heated until the pressure is 200 kPa. The pressure is directly proportional to the temperature in kelvins. What is the final temperature in degrees Celsius?",
+      "answer": 127,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L3-03",
+      "level": 3,
+      "text": "The temperature of a gas is 20.0 °C. The gas is cooled until the average kinetic energy of its particles is half of the original. The average kinetic energy is directly proportional to the temperature in kelvins. What is the final temperature in degrees Celsius?",
+      "answer": -127,
+      "unit": "°C",
+      "tolerance": 0.02
+    }
+  ]
+}

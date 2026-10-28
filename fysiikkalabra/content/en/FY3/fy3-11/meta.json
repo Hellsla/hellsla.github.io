@@ -1,0 +1,28 @@
+{
+  "id": "fy3-11",
+  "course": "FY3",
+  "title": "Work done by a gas and the heat engine",
+  "goals": [
+    "LOPS FY3: can apply the concepts and models of thermodynamics when examining solutions for energy production",
+    "Thematic study: by examining how heat engines work, solutions for energy production can be modelled and the concepts of thermodynamics applied; cyclic processes are not among the core contents"
+  ],
+  "prerequisites": [
+    "fy3-5",
+    "fy3-9"
+  ],
+  "glossary": [
+    "heat engine",
+    "efficiency",
+    "work done by a gas",
+    "refrigerator",
+    "heat pump",
+    "yhteistuotanto",
+    "coefficient of performance",
+    "heat of combustion",
+    "waste heat",
+    "district heating",
+    "lauhdevoimalaitos"
+  ],
+  "sim": true,
+  "image": false
+}

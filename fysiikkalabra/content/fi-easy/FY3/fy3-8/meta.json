@@ -1,0 +1,19 @@
+{
+  "id": "fy3-8",
+  "course": "FY3",
+  "title": "Lämpölaajeneminen",
+  "goals": [
+    "LOPS FY3: lämpölaajeneminen",
+    "Täsmennys: mikromalli lämpölaajenemiselle; kiinteät aineet, nesteet ja kaasut"
+  ],
+  "prerequisites": [
+    "fy3-3"
+  ],
+  "glossary": [
+    "lämpölaajeneminen",
+    "pituuden lämpötilakerroin",
+    "tilavuuden lämpötilakerroin"
+  ],
+  "sim": true,
+  "image": false
+}

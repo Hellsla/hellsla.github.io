@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-9-L1-01",
+      "level": 1,
+      "text": "Kertakäyttöruiskussa on 30,0 ml ilmaa 101 kPa:n paineessa. Ruiskun kärki suljetaan sormella. Mäntää vedetään hitaasti ulospäin, kunnes ilman tilavuus on 45,0 ml. Ilman lämpötila pysyy samana. Ilmaa ei pääse ruiskuun eikä sieltä pois. Mikä on ilman paine ruiskussa nyt?",
+      "answer": 67.3,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-02",
+      "level": 1,
+      "text": "Kesämökin vesijärjestelmän painesäiliön yläosassa on suljettu ilmatila. Kun säiliössä on vähän vettä, ilman tilavuus on 24,0 l ja kokonaispaine 160,0 kPa. Pumppu pumppaa säiliöön lisää vettä. Ilma puristuu kokoon, ja sen kokonaispaine nousee 280,0 kPa:iin. Ilman lämpötila pysyy samana. Mikä on ilman tilavuus nyt?",
+      "answer": 13.7,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-03",
+      "level": 1,
+      "text": "Koulun vesiraketti on 1,50 litran muovipullo. Pulloon on laskettu vettä ja pumpattu ilmaa. Laukaisuhetkellä pullossa on 1,00 l ilmaa, jonka paine on 430 kPa. Vesi suihkuaa ulos, ja ilma täyttää koko pullon. Silloin ilman tilavuus on 1,50 l. Oleta, että ilman lämpötila ei muutu. Oleta myös, että ilmaa ei ole vielä päässyt ulos. Mikä on ilman paine pullossa tällöin?",
+      "answer": 287,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-04",
+      "level": 1,
+      "text": "Syntymäpäiväjuhlien ilmapallossa on 3,0 l ilmaa 22 °C:n olohuoneessa. Pallo viedään parvekkeelle, jossa on −18 °C:n pakkanen. Pallon ilma jäähtyy ulkoilman lämpötilaan. Ilman paine pallossa pysyy samana. Mikä on pallon ilman tilavuus parvekkeella?",
+      "answer": 2.6,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-05",
+      "level": 1,
+      "text": "Arkkupakastimen kansi avataan, ja pakastimen ilmatila täyttyy 22 °C:n huoneilmalla. Kansi suljetaan tiiviisti. Silloin ilman paine pakastimessa on 101 kPa. Ilma jäähtyy −18 °C:seen, ja sen tilavuus pysyy samana. Mikä on ilman paine pakastimessa nyt? (Siksi kantta on vaikea avata uudelleen heti sulkemisen jälkeen.)",
+      "answer": 87.3,
+      "unit": "kPa",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-9-L2-01",
+      "level": 2,
+      "text": "Palomiehen paineilmalaitteen pullon tilavuus on 6,8 l. Täyteen pumpatussa pullossa ilman paine on 300,0 bar (1 bar = 100 kPa). Ilma lasketaan ulos 101 kPa:n ilmanpaineeseen. Kuinka monta kuutiometriä ilma silloin veisi tilaa? Lämpötila pysyy samana. Oleta, että Boylen laki pätee myös näin suurella paineella.",
+      "answer": 2.0,
+      "unit": "m³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-02",
+      "level": 2,
+      "text": "Tyhjä lasipullo suljetaan korkilla 20 °C:ssa. Silloin ilman paine pullossa on 101 kPa. Pullo unohtuu saunan lauteille. Korkki ponnahtaa irti, kun pullon ilman paine on 125 kPa. Pullon tilavuus pysyy samana. Missä lämpötilassa korkki ponnahtaa? Anna vastaus celsiusasteina.",
+      "answer": 90,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-03",
+      "level": 2,
+      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin. Ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana. Mitatut tilavuudet $V$ (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0. Niitä vastaavat paineet $p$ (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake $1/V$ ja piirrä $p$ $1/V$:n funktiona. Sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on $pV$. Anna se jouleina.",
+      "answer": 2.0,
+      "unit": "J",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy3-9-L2-04",
+      "level": 2,
+      "text": "Kuumailmapallon kuoren tilavuus on 2800 m³. Kuoren alaosassa on aukko. Kuori on täynnä 10 °C:n ilmaa. Poltin lämmittää ilman 100 °C:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Alun perin kuoressa ollut ilma lämpenee kokonaan 100 °C:seen. Kuinka monta kuutiometriä tästä 100 °C:n ilmasta ei mahdu kuoreen? Se on työntynyt ulos aukosta.",
+      "answer": 890,
+      "unit": "m³",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-9-L3-01",
+      "level": 3,
+      "text": "Sukeltaja on järvessä 20,0 m:n syvyydessä. Hän puhaltaa ilmakuplan, jonka tilavuus on 2,0 cm³. Kupla nousee pintaan. Ilmanpaine on 101 kPa ja veden tiheys 1000 kg/m³. Oleta, että veden lämpötila on sama koko matkalla. Oleta myös, että kuplan ilma ei liukene veteen. Mikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
+      "answer": 5.9,
+      "unit": "cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L3-02",
+      "level": 3,
+      "text": "Auton renkaat täytetään 20 °C:n tallissa, ja rengaspainemittari näyttää 250,0 kPa. Mittari näyttää ylipainetta. Ylipaine kertoo, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on 101 kPa. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy −20 °C:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
+      "answer": 202,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L3-03",
+      "level": 3,
+      "text": "Polkupyörän pumpun sylinteri on 40,0 cm pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on 101 kPa. Renkaan ylipaine on 300,0 kPa. Pumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine. Kuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana. Oleta myös, että letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
+      "answer": 29.9,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+ "Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin painava reppu selässään. Lattia on vaakasuora, ja katkoviivanuoli lattian suuntaisesti näyttää kulkusuunnan. Taustalla on kaappirivi ja ikkunoita.": "Illustration: a student walks along a level school corridor with a heavy backpack on their back. The floor is horizontal, and a dashed arrow parallel to the floor shows the direction of travel. In the background there is a row of lockers and some windows.",
+ "Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s.": "Diagram of two situations. On the left a backpack is carried sideways: the supporting force F points up but the motion is sideways, so the force does no work, W = 0. On the right the backpack is lifted up: the force F and the motion are in the same direction, so the force does work W = F s.",
+ "kanto sivulle": "carried sideways",
+ "nosto ylös": "lifted up",
+ "liike": "motion",
+ "Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi.": "Diagram of Joule's experiment. A falling weight pulls a string that passes over a pulley and turns a paddle wheel in a vessel of water. The force of the weight does work over the falling distance h, and the paddle wheel warms the water: work turns into heat.",
+ "työ": "work",
+ "lämpö": "heat",
+ "paino": "weight",
+ "vesi lämpenee": "water warms up",
+ "Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti ja pysyy sitten vakiona; työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂.": "Diagram of two (s,F) graphs. On the left the force is constant, and the work is the area of a rectangle F · s. On the right the force first increases steadily and then stays constant; the work is the area of a triangle A₁ plus the area of a rectangle A₂.",
+ "vakiovoima": "constant force",
+ "muuttuva voima": "varying force",
+ "(s,F)-kuvaaja mittakaavassa: voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä; kolmion pinta-ala on työ.": "(s,F) graph to scale: the force increases linearly from zero to 40 newtons over 0–0.20 metres; the area of the triangle is the work.",
+ "pinta-ala": "area",
+ "Kaavakuva nostotyöstä, ei mittakaavassa. Laatikko nostetaan tasaisella nopeudella maasta korkeudelle h. Nostovoima F osoittaa ylös ja laatikon paino G alas, ja nuolet ovat yhtä pitkät, F = G. Nostotyö on W = F h = G h.": "Diagram of lifting work, not to scale. A box is lifted at a steady speed from the ground to a height h. The lifting force F points up and the weight G of the box points down, and the arrows are equally long, F = G. The lifting work is W = F h = G h."
+}

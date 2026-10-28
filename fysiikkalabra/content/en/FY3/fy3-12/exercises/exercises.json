@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-12-L1-01",
+      "level": 1,
+      "text": "The roof of a log cabin has an area of 45 m² and a U-value of 0.24 W/(m²·K). It is 22 °C in the cabin and −18 °C outdoors. How large is the thermal power conducted out through the roof?",
+      "answer": 432,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-02",
+      "level": 1,
+      "text": "A measurement on the front door of an old detached house shows that heat is conducted through the door at a power of 96 W when it is 21 °C indoors and −19 °C outdoors. The area of the door is 2.0 m². What is the U-value of the door?",
+      "answer": 1.2,
+      "unit": "W/(m²·K)",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-03",
+      "level": 1,
+      "text": "The outer wall of a district-heated flat has an area of 28 m² and a U-value of 0.25 W/(m²·K). On a frosty night heat is conducted out through the wall at a power of 210 W. How large is the difference between the indoor and outdoor temperature?",
+      "answer": 30,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-04",
+      "level": 1,
+      "text": "On a frosty night heat is conducted out of a detached house at a mean power of 3.5 kW. How many kilowatt-hours of heat must the heating of the house produce during a 14-hour night for the indoor temperature to stay the same?",
+      "answer": 49,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-05",
+      "level": 1,
+      "text": "The Sun delivers a mean radiation power of 340.0 W to each square metre of the Earth. Of this, 30.0 % is reflected back into space and the rest is absorbed. How much power per square metre does the Earth radiate into space as thermal radiation when it is in energy balance?",
+      "answer": 238,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-12-L2-01",
+      "level": 2,
+      "text": "The walls of a summer cabin have an area of 70 m² and a U-value of 0.50 W/(m²·K). The roof has an area of 50.0 m² and a U-value of 0.30 W/(m²·K). Heat conducted through other structures is ignored. On a winter weekend the cabin is heated by electric radiators with a total power of 2.0 kW. What is the lowest outdoor temperature at which the radiators can keep the cabin at 20 °C?",
+      "answer": -20,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-02",
+      "level": 2,
+      "text": "The roof of a detached house has an area of 130 m² and a U-value of 0.090 W/(m²·K). The heating season lasts 230 days, and the difference between the indoor and outdoor temperature is on average 21 K during it. The house uses district heating, and the price of heat is 0.11 €/kWh. How much does the heat escaping through the roof cost during the heating season?",
+      "answer": 149,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-03",
+      "level": 2,
+      "text": "The old double-glazed windows of a post-war house have a U-value of 2.8 W/(m²·K). They are replaced with triple-glazed windows with a U-value of 0.80 W/(m²·K). The total area of the windows is 14 m². How many kilowatt-hours of heat does the replacement save during a frosty week (7 days), when it is 21 °C indoors and −24 °C outdoors for the whole week?",
+      "answer": 212,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-04",
+      "level": 2,
+      "text": "Snow and ice reflect sunlight much better than a dark sea surface or the ground. Suppose, hypothetically, that the reduction of snow and ice would decrease the fraction of the Sun's radiation reflected by the Earth from 30.0 % to 29.0 % (the real change is smaller). On average 340 W/m² arrives from the Sun. By how much would the power absorbed by the Earth per square metre increase? Compare the result with the current energy imbalance, which is about 1.0 W/m².",
+      "answer": 3.4,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-12-L3-01",
+      "level": 3,
+      "text": "0.60 kg of hot coffee is packed into a thermos flask for a ski trip. The flask has two nested walls with the air removed from between them, and the surfaces of the walls are shiny. Explain which ways of heat transfer the vacuum and the shiny surfaces prevent and how. Through which route does heat still escape? Heat escapes from the flask at a mean power of 1.4 W. By how many kelvins does the coffee cool in 10.0 hours? The specific heat capacity of coffee is the same as that of water, 4190 J/(kg·K).",
+      "answer": 20,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L3-02",
+      "level": 3,
+      "text": "Because of the increase in greenhouse gases, the Earth now receives on average 1.0 W/m² more power than it radiates into space. The surface area of the Earth is $5.1 \\cdot 10^{14}\\,\\text{m}^2$. How much extra energy accumulates on the Earth in a year (365 days)? About 90 % of it is stored in the oceans. Suppose that it warms evenly the top 700 metres of the oceans, whose mass is $2.6 \\cdot 10^{20}\\,\\text{kg}$ and whose specific heat capacity is $4.0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. By how many kelvins does the layer warm in ten years? Why does the large mass of water slow down the warming of the climate?",
+      "answer": 0.139,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L3-03",
+      "level": 3,
+      "text": "A detached house is heated by an air-to-water heat pump whose coefficient of performance is on average 2.8 over the heating season. More insulation wool is blown into the roof, and its U-value decreases from 0.35 W/(m²·K) to 0.10 W/(m²·K). The area of the roof is 100 m². The heating season lasts 5800 h, and the difference between the indoor and outdoor temperature is on average 19 K during it. How many kilowatt-hours of electricity does the extra insulation save over the heating season? A neighbour thinks insulation does not matter to the owner of a heat pump, because the pump gets its heat free from the outdoor air. Justify why insulation is still worthwhile.",
+      "answer": 984,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ]
+}

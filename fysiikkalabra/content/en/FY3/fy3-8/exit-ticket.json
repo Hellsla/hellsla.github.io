@@ -1,0 +1,14 @@
+[
+  {
+    "q": "By how much does a 25 m long copper pipe get longer when it warms up from 10 °C to 60 °C ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$)?",
+    "a": "$\\Delta L = \\alpha L_0 \\Delta T = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 25\\,\\text{m} \\cdot 50\\,\\text{K} \\approx 0.021\\,\\text{m}$, that is, about 21 mm."
+  },
+  {
+    "q": "A steel plate has a round hole. When the plate is heated, does the hole get bigger or smaller?",
+    "a": "The hole gets bigger. All the dimensions of the plate grow in the same proportion, as when a photograph is enlarged, including the diameter of the hole."
+  },
+  {
+    "q": "A steel ball expands when it warms up. Do the particles of the steel grow? Explain with the micro model.",
+    "a": "No. When they warm up, the particles vibrate more strongly, and because it is easier for them to move apart than to be squeezed together, their average distance grows. The particles stay the same size."
+  }
+]

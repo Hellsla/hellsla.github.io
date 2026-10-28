@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "contribution": "When a gas expands it does work $W_\\text{g} = p\\,\\Delta V$, which shows up as an area in the $(V, p)$ graph. A piston engine that repeats its motion can turn heat into work only by giving up part of the heat to something colder. This limits the efficiency $\\eta = W/Q_1$ and makes combined heat and power production and heat pumps worthwhile.",
+  "learn": [
+    "You can calculate the work done by an expanding gas and interpret it as an area in the pressure–volume graph.",
+    "You can explain why a heat engine turns heat into work only by releasing part of it to something colder.",
+    "You can calculate the efficiency of a heat engine."
+  ],
+  "prior": [
+    "The first law $\\Delta U = Q + W$, where $W$ is the work done on the system by the surroundings, and conservation of energy (chapter *Internal energy, heat and conservation of energy*)",
+    "Isobaric change of state: at constant pressure the volume of a gas grows when its temperature rises (chapter *Changes of state of a gas and Boyle's law*)",
+    "Work is force times distance, and the area under an $(s, F)$ graph (chapter *Work and energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In the cylinder of a museum locomotive, hot steam pushes a piston, and the piston turns the wheels of the locomotive. A large condensing power plant does basically the same thing: steam expands in a turbine and turns a generator. The plant is supplied with the energy of fuel at a rate of 1000 MW, but only about 400 MW goes to the electricity grid. Energy is still conserved, as the first law says.",
+      "question": "Could better technology turn all the energy of the fuel into electricity, and can the part that does not become electricity still be put to use?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review from earlier lessons",
+      "prompt": "A gas in a cylinder is heated so that its pressure stays constant (isobaric change of state, chapter *Changes of state of a gas and Boyle's law*). A quantity of heat $Q = 400\\,\\text{J}$ is transferred to the gas. The gas expands and pushes the piston, so the surroundings do work $W = -150\\,\\text{J}$ on the gas. By how much does the internal energy of the gas change (chapter *Internal energy, heat and conservation of energy*: $\\Delta U = Q + W$)?",
+      "choices": [
+        {
+          "text": "$\\Delta U = 550\\,\\text{J}$",
+          "feedback": "This is what you get when the sign of the work is ignored and the work is added to the internal energy. An expanding gas gives up energy when it pushes the piston, so $W$ is negative: $\\Delta U = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$."
+        },
+        {
+          "text": "$\\Delta U = 250\\,\\text{J}$",
+          "correct": true,
+          "feedback": "Correct: $\\Delta U = Q + W = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$. Part of the heat left as work when the gas pushed the piston. In this lesson the work done by the gas is written $W_\\text{g}$, so here $W_\\text{g} = 150\\,\\text{J}$ and $\\Delta U = Q - W_\\text{g}$. In this lesson you calculate how large that work is."
+        },
+        {
+          "text": "$\\Delta U = 400\\,\\text{J}$",
+          "feedback": "Besides heat, work also changes the internal energy. When the gas expands and pushes the piston, energy is transferred from it to the surroundings, so the internal energy grows less than the heat supplied: $\\Delta U = 400\\,\\text{J} - 150\\,\\text{J} = 250\\,\\text{J}$."
+        },
+        {
+          "text": "$\\Delta U = 0$, because the pressure stays constant.",
+          "feedback": "Constant pressure does not mean constant internal energy. In isobaric heating the temperature of the gas rises (chapter *Changes of state of a gas and Boyle's law*), so its internal energy grows: $\\Delta U = Q + W = 250\\,\\text{J}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: work done by a gas",
+      "prompt": "A gas in a cylinder is heated. Weights keep the pressure at $200\\,\\text{kPa}$, and the volume of the gas grows from $1.0\\,\\text{l}$ to $2.5\\,\\text{l}$. How much work $W_\\text{g}$ does the gas do when it lifts the piston? ($1\\,\\text{l} = 0.001\\,\\text{m}^3$)",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "$W_\\text{g} = 200\\,\\text{J}$, because the work is determined by the pressure, which stays at $200\\,\\text{kPa}$.",
+          "feedback": "In the experiment the pressure is 200 kPa on every row, but in the model $W_\\text{g}$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives 200 J and $\\Delta V = 1.50\\,\\text{l}$ gives 300 J. Pressure alone does no work; the piston does work only when it moves."
+        },
+        {
+          "text": "$W_\\text{g} = 300\\,\\text{J}$",
+          "correct": true,
+          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from 1.0 litres to 2.5 litres, the model gives $W_\\text{g} = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is 200 kPa high and 1.5 l wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+        },
+        {
+          "text": "$W_\\text{g} = 500\\,\\text{J}$",
+          "feedback": "This is the pressure times the final volume 2.5 l. In the experiment the orange rectangle in the $(V, p)$ graph starts at 1.0 l, because work is done only during the expansion. Its width is $\\Delta V = 1.5\\,\\text{l}$, and the model gives $W_\\text{g} = 300\\,\\text{J}$."
+        },
+        {
+          "text": "$W_\\text{g} = 300\\,000\\,\\text{J}$",
+          "feedback": "Here the pascals have been multiplied by litres. In the experiment the model gives $W_\\text{g} = 300\\,\\text{J}$ for an expansion of 1.5 litres: the volume must be converted to cubic metres, $1.5\\,\\text{l} = 0.0015\\,\\text{m}^3$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a gas is heated in a cylinder whose piston is pressed down by two weights; the pressure of the gas is $200\\,\\text{kPa}$.",
+      "howto": "Choose the heat $Q$ and press *Heat*: the piston rises, and the work done by the gas fills in the $(V, p)$ graph. Then press *Return the piston*. With the choice *at the same pressure* the weights push the piston back; with the choice *cool first* the gas first cools to the pressure $p_2$ (slider). *Speed* changes only the pace, not the results. The orange area is the work $W_\\text{g}$ done by the gas, and the blue area is the work done on the gas; in the bars the same colour means the same energy.",
+      "model": "The readings are values of the model: the cylinder contains a monatomic ideal gas. The piston is frictionless and weightless, and there is no air above it, so the pressure is caused by the weights: $200\\,\\text{kPa}$ with two weights, and the lower weight alone gives the pressure $p_2$. The hot plate is always hotter than the gas and the cold water colder. No heat escapes elsewhere. The initial volume is $V_1 = 1.00\\,\\text{l}$.",
+      "calc": "The change in internal energy is $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. At constant pressure $p_1$ the work done by the gas is $W_\\text{g} = p_1\\Delta V$ and $Q = \\Delta U + W_\\text{g} = \\tfrac{5}{2}p_1\\Delta V$, so $\\Delta V = \\dfrac{2Q}{5p_1}$. In the option *cool first* the upper weight is moved up onto a shelf and a new one is taken from below; when the piston is locked, the volume does not change. The net work of the cycle $W = (p_1 - p_2)\\Delta V$ is the energy used to lift the weight, and $Q_1 - Q_2 = W$. The efficiency is $\\eta = \\dfrac{W}{Q_1}$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: heating at constant pressure",
+      "intro": "Testaa ennuste 1. Paine pysyy 200 kPa:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi 500 J, 750 J ja 1000 J. Paina joka kerta *Lämmitä* ja kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
+      "initial": {
+        "Qin": 500,
+        "paluu": "sama paine",
+        "p2": 100
+      },
+      "names": {
+        "Qin": "lämpö Q",
+        "paluu": "männän paluu",
+        "p2": "paine p₂"
+      },
+      "units": {
+        "Qin": "J",
+        "p2": "kPa"
+      },
+      "locked": [
+        "paluu"
+      ],
+      "vary": "Qin",
+      "measure": [
+        {
+          "key": "dV",
+          "label": "ΔV (l)"
+        },
+        {
+          "key": "dU",
+          "label": "ΔU (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "From the change in volume on the row $Q = 1000\\,\\text{J}$, calculate the work done by the gas $W_\\text{g} = p\\,\\Delta V$ when $p = 200\\,\\text{kPa}$. Give the answer in joules.",
+        "answer": 400,
+        "unit": "J",
+        "tolerance": 0.02,
+        "hints": [
+          "The pressure stays constant, so the work is the area of the orange rectangle in the $(V, p)$ graph: height $p$, width $\\Delta V$.",
+          "Convert the units: $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ and $1\\,\\text{l} = 0.001\\,\\text{m}^3$.",
+          "On the row $\\Delta V = 2.00\\,\\text{l} = 0.002\\,00\\,\\text{m}^3$."
+        ],
+        "mistakes": [
+          {
+            "value": 400000,
+            "feedback": "You multiplied pascals by litres. First convert the volume to cubic metres: $2.00\\,\\text{l} = 0.002\\,00\\,\\text{m}^3$."
+          },
+          {
+            "value": 600,
+            "feedback": "This is the pressure times the final volume 3.0 l, and by coincidence also $\\Delta U$ on the row. Work is done only during the expansion, so use the change in volume $\\Delta V = 2.00\\,\\text{l}$."
+          },
+          {
+            "value": 1000,
+            "feedback": "This is the whole quantity of heat $Q$. The gas warms up, so part of the heat stays as its internal energy. The work is only $p\\,\\Delta V$."
+          }
+        ],
+        "solution": "**Given:** the measurement row with $Q = 1000\\,\\text{J}$ and constant pressure, $p = 200\\,\\text{kPa}$; from the table the change in volume $\\Delta V = 2.00\\,\\textsf{l}$\n\n**Find:** the work done by the gas $W_\\text{g}$ in joules\n\n**Principle:** The pressure stays constant because the weights do not change, so the force of the gas on the piston is the same throughout the expansion. Then the work is the pressure times the change in volume, that is, the area of the rectangle in the $(V, p)$ graph.\n\n**Formula:** $W_\\text{g} = p\\,\\Delta V$\n\n**Conversions:** $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ and $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$, so $2.00\\,\\textsf{l} = 0.00200\\,\\text{m}^3$. Then $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Substitution:** $W_\\text{g} = 200\\,000\\,\\text{Pa} \\cdot 0.00200\\,\\text{m}^3 = 400\\,\\text{J}$\n\n**Answer:** $400\\,\\text{J}$, three significant figures. The limiting value is the change in volume $2.00\\,\\textsf{l}$ (three figures); the pressure $200\\,\\text{kPa}$ is a setting of the simulation that is not measured, so it does not limit the precision.\n\n**Reasonableness:** Estimate: $200\\,\\text{kPa} \\cdot 2\\,\\textsf{l} = 2 \\cdot 10^5\\,\\text{Pa} \\cdot 2 \\cdot 10^{-3}\\,\\text{m}^3 = 400\\,\\text{J}$. The work is smaller than the whole quantity of heat $Q = 1000\\,\\text{J}$, as it should be, because part of the heat stays as internal energy: on the row $\\Delta U = 600\\,\\text{J}$ and $\\Delta U + W_\\text{g} = 1000\\,\\text{J} = Q$. For the monatomic gas of the model, $\\tfrac{2}{5}$ of the heat always goes into work at constant pressure."
+      }
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 2: all the heat into work?",
+      "prompt": "A gas that expands once is not yet a machine. A machine does work continuously only if it repeats its motion: the piston has to be brought back down, and at the end of the cycle the gas is again in its initial state. Can a machine do this so that all the heat it receives from the hot source becomes work? Four students answer.",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Aino: Yes. If the piston is pressed straight back down at the same pressure, the heat that went into internal energy comes back and the work of the gas is saved.",
+          "feedback": "Return method A in the experiment refutes this: the net work is $W = 0$. The weights press the piston down at the same pressure, so returning it takes the same 200 J of work that the gas did when it rose, and the gas gives up all the heat $Q_2 = 500\\,\\text{J}$ to the cold water."
+        },
+        {
+          "text": "Bea: No. To bring the piston down with less work than it took to raise it, the gas must first be cooled, and in cooling part of the heat is transferred to something colder.",
+          "correct": true,
+          "feedback": "The values of the model in the experiment support this: return method B gives a net work $W = 100\\,\\text{J}$, but of the heat $Q_1 = 650\\,\\text{J}$ received from the hot plate, $Q_2 = 550\\,\\text{J}$ goes to the cold water. In neither return method is $Q_2$ zero."
+        },
+        {
+          "text": "Cem: Yes, as long as friction is removed. Heat is wasted only because of friction.",
+          "feedback": "The piston of the simulation is frictionless, and still heat is transferred to the cold water in both return methods: 500 J in A and 550 J in B. Removing friction does not remove the heat $Q_2$, because without cooling the piston does not come back down with less work."
+        },
+        {
+          "text": "Daniel: No, because in a cycle part of the energy is used up.",
+          "feedback": "Energy is not used up. In return method B the model gives $Q_1 = 650\\,\\text{J}$ and $W + Q_2 = 100\\,\\text{J} + 550\\,\\text{J} = 650\\,\\text{J}$. All the energy is accounted for; part of it is just transferred as heat to the cold water."
+        }
+      ]
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: two ways to return the piston",
+      "intro": "Testaa ennuste 2. Lämpö $Q = 500\\,\\text{J}$ ja paine $p_2 = 100\\,\\text{kPa}$ lukitaan; muuta vain männän paluutapaa. Paina *Lämmitä*, sitten *Palauta mäntä*, ja kirjaa mittaus vasta, kun kierros on valmis. Hyötysuhde $\\eta$ näkyy vasta silloin, ja sillä vain vertaillaan tapoja A ja B.\n\n**Tapa A.** Punnukset painavat männän alas samassa paineessa.\n\n**Tapa B.**\n\n1. Mäntä lukitaan ylhäällä, ja ylempi punnus siirretään hyllylle.\n2. Kylmä vesi jäähdyttää kaasua. Tilavuus ei muutu, joten paine laskee arvoon $p_2$.\n3. Mäntä laskeutuu paineessa $p_2$.\n4. Alhaalla lisätään uusi punnus, ja kuuma levy lämmittää kaasun takaisin alkutilaan.\n\n$Q_1$ on kaikki lämpö kuumalta levyltä, $Q_2$ kaikki lämpö kylmään veteen ja $W$ kierroksen nettotyö.",
+      "initial": {
+        "Qin": 500,
+        "p2": 100,
+        "paluu": "sama paine"
+      },
+      "names": {
+        "Qin": "lämpö Q",
+        "paluu": "männän paluu",
+        "p2": "paine p₂"
+      },
+      "units": {
+        "Qin": "J",
+        "p2": "kPa"
+      },
+      "locked": [
+        "Qin",
+        "p2"
+      ],
+      "vary": "paluu",
+      "measure": [
+        {
+          "key": "Q1",
+          "label": "Q₁ (J)"
+        },
+        {
+          "key": "Q2",
+          "label": "Q₂ (J)"
+        },
+        {
+          "key": "W",
+          "label": "W (J)"
+        },
+        {
+          "key": "eta",
+          "label": "η (%)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "After cycle B, an orange rectangle remains in the $(V, p)$ graph between the pressures 100 kPa and 200 kPa. What does its area tell you?",
+        "choices": [
+          {
+            "text": "The net work of the cycle: $W = (p_1 - p_2)\\,\\Delta V = 100\\,\\text{kPa} \\cdot 1.0\\,\\text{l} = 100\\,\\text{J}$.",
+            "correct": true,
+            "feedback": "Correct. The gas did 200 J of work when it rose, and on the return at the pressure 100 kPa 100 J of work was done on it (blue). The difference 100 J equals $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, and it is the energy used to lift the weight."
+          },
+          {
+            "text": "The heat $Q_2$ transferred to the cold water.",
+            "feedback": "The model gives $Q_2 = 550\\,\\text{J}$, but the rectangle is 100 kPa high and 1.0 l wide, which is 100 J. An area in the $(V, p)$ graph is work, not heat; heat shows only in the bars."
+          },
+          {
+            "text": "The work done by the gas as the piston rises.",
+            "feedback": "As it rose, the gas did 200 J of work, whose area reaches all the way down to the $V$ axis. Its lower part is hatched in blue: that is the 100 J of work done on the gas on the return. The orange part that remains is the net work, 100 J."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: where does the heat go?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Use your own tables. Write briefly: (1) how the heat $Q$ of experiment 1 was divided, (2) which return method gave net work and why, and (3) whether a machine can turn all the heat it receives from the hot plate into work.",
+      "model": "In experiment 1 only part of the heat became work: for example, on the row $Q = 1000\\,\\text{J}$ the volume grew by $2.0\\,\\text{l}$, so the gas did the work $p\\,\\Delta V = 400\\,\\text{J}$, and the remaining $600\\,\\text{J}$ stayed as internal energy ($\\Delta U$). In experiment 2, method A returned the piston at the same pressure: the net work was $W = 0$, and all the heat went to the cold water. Method B cooled the gas first, so the piston came down at a lower pressure and the net work was $100\\,\\text{J}$; even then $Q_2 = 550\\,\\text{J}$ of the heat $Q_1 = 650\\,\\text{J}$ was transferred to the cold water, so $\\eta = 100/650 \\approx 15\\,\\%$. So a machine that works repeatedly cannot turn all the heat into work, even though energy is conserved: $Q_1 = W + Q_2$. The numbers are values of the simulation model; the model is frictionless, so the efficiency of a real machine is lower.",
+      "criteria": [
+        "I used my own readings (e.g. $\\Delta V$, $Q_1$, $Q_2$, $W$).",
+        "I said that only part of the heat becomes work and the rest is internal energy or is transferred to something cold.",
+        "I explained why method B gives net work but method A does not.",
+        "I stated that $Q_2$ is not zero even though energy is conserved."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Go back to your predictions",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formulas $W_\\text{g} = p\\,\\Delta V$, $W = Q_1 - Q_2$ and $\\eta = W/Q_1$. Then return to the opening question: where does the part of the fuel's energy that does not become electricity go, why can even better technology not turn all of it into electricity, and how can it still be put to use?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake",
+      "prompt": "A gas in a cylinder expands at the constant pressure $200\\,\\text{kPa}$, and its volume grows by $1.2\\,\\text{l}$. At the same time a quantity of heat $600\\,\\text{J}$ is transferred to the gas. A student calculates the change in internal energy like this: $W_\\text{g} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0.0012\\,\\text{m}^3 = 240\\,\\text{J}$, so $\\Delta U = Q + W_\\text{g} = 600\\,\\text{J} + 240\\,\\text{J} = 840\\,\\text{J}$. Where is the mistake?",
+      "choices": [
+        {
+          "text": "In the conversion of litres: $1.2\\,\\text{l}$ is $1.2\\,\\text{m}^3$.",
+          "feedback": "A litre is a cubic decimetre, and $1\\,\\text{l} = 0.001\\,\\text{m}^3$, so $1.2\\,\\text{l} = 0.0012\\,\\text{m}^3$. The conversion is correct, and the work done by the gas really is 240 J; the mistake is elsewhere."
+        },
+        {
+          "text": "In the sign of the work: a gas that does work gives up energy, so $\\Delta U = Q - W_\\text{g} = 360\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Correct. The gas does 240 J of work, so part of the heat supplied leaves as work: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. The same result comes from the form $\\Delta U = Q + W$ of the chapter *Internal energy, heat and conservation of energy*, when the work done on the gas by the surroundings is $W = -W_\\text{g} = -240\\,\\text{J}$."
+        },
+        {
+          "text": "In the sign of the heat: $Q$ is negative, because the gas gives up energy when it expands.",
+          "feedback": "The heat is transferred to the gas, so $Q = +600\\,\\text{J}$. The gas gives up energy as work, not as heat; that is why the work is subtracted: $\\Delta U = Q - W_\\text{g}$."
+        },
+        {
+          "text": "There is no mistake in the calculation.",
+          "feedback": "In experiment 1 the internal energy always grew less than the heat supplied, because the gas did work. The internal energy of a gas that does work cannot grow more than the heat supplied, 600 J: $\\Delta U = Q - W_\\text{g}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "suunnittele",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Design the energy production of a city",
+      "text": "A city needs 300 MW of electricity and 500 MW of district heating. Compare three options by how much fuel power each one needs. Assumptions:\n\n- **Condensing power plant:** electricity is 40 % of the fuel power.\n- **Electric heating:** 1 MW of electricity gives 1 MW of heat.\n- **Combined heat and power plant:** electricity is 45 % and district heat 40 % of the fuel power.\n- **Heat pump:** coefficient of performance 3.0.\n\nThe options:\n\n1. **Condensing power plant and electric heating.** The condensing power plant produces all the electricity, including that used for heating.\n2. **Combined heat and power.** The combined heat and power plant produces all the district heating, and at the same time more electricity is produced than the city needs.\n3. **Combined heat and power and a heat pump.** Part of the plant's electricity is used in a heat pump, which takes heat from purified waste water. The plant is sized so that the city gets exactly the electricity and heat it needs.\n\nThe assumption for the combined heat and power plant corresponds to a plant that burns natural gas; in a plant that burns wood the share of electricity is smaller, as in the Worked example.",
+      "question": {
+        "type": "numeric",
+        "prompt": "First calculate the fuel power of options 1 and 2. How much fuel power does option 3 need? Give the answer in megawatts.",
+        "answer": 800,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "Denote the fuel power of the combined heat and power plant by $P$ and the electric power of the heat pump by $P_\\text{pump}$. What two conditions must the electricity and heat of the city meet?",
+          "The city is left with electricity $0.45P - P_\\text{pump} = 300\\,\\text{MW}$, and heat comes from the plant and the pump: $0.40P + 3P_\\text{pump} = 500\\,\\text{MW}$.",
+          "From the first condition $P_\\text{pump} = 0.45P - 300\\,\\text{MW}$. Substitute it into the second condition: $0.40P + 1.35P - 900\\,\\text{MW} = 500\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2000,
+            "feedback": "This is the fuel power of option 1: the electricity needed is $300\\,\\text{MW} + 500\\,\\text{MW} = 800\\,\\text{MW}$, and $800\\,\\text{MW}/0.40 = 2000\\,\\text{MW}$. In option 3 the heat comes from combined production and from the heat pump."
+          },
+          {
+            "value": 1250,
+            "feedback": "This is the fuel power of option 2, $500\\,\\text{MW}/0.40$. In option 3 the heat pump produces part of the heat with the extra electricity of the plant, so the plant can be smaller."
+          },
+          {
+            "value": 941,
+            "feedback": "You divided the whole need of 800 MW by the overall efficiency of 85 %. But the heat pump brings in extra heat from the waste water, so even less fuel is needed. Write separate conditions for electricity and heat."
+          },
+          {
+            "value": 667,
+            "feedback": "You sized the plant by the electricity alone, without the heat pump: $300\\,\\text{MW}/0.45$. Then the heat would be only $0.40 \\cdot 667\\,\\text{MW} \\approx 267\\,\\text{MW}$, and the pump needs electricity too."
+          }
+        ],
+        "solution": "**Given:** the electricity need of the city $P_\\text{e} = 300\\,\\text{MW}$ and the district heating need $P_\\text{h} = 500\\,\\text{MW}$; the efficiency of the condensing power plant $0.40$, the combined heat and power plant gives electricity $0.45P$ and heat $0.40P$ from the fuel power $P$, the coefficient of performance of the heat pump $3.0$; option 3 is examined\n\n**Find:** the fuel power $P$ of option 3 in megawatts (for comparison, the fuel power of options 1 and 2)\n\n**Principle:** In options 1 and 2 a single plant meets the demand, and the fuel power is the useful power divided by the efficiency. In option 3 part of the plant's electricity goes to the heat pump, so the balances of electricity and heat must be written separately. Energy is conserved: the pump gives out heat equal to three times its electric power, and the difference comes from the waste water.\n\n**Formula:** Option 1: $P = \\dfrac{P_\\text{e} + P_\\text{h}}{0.40}$. Option 2: $P = \\dfrac{P_\\text{h}}{0.40}$. In option 3 the conditions are $0.45P - P_\\text{pump} = P_\\text{e}$ and $0.40P + 3P_\\text{pump} = P_\\text{h}$. Eliminating $P_\\text{pump}$:\n\n$$P = \\frac{P_\\text{h} + 3P_\\text{e}}{0.40 + 3 \\cdot 0.45}$$\n\n**Conversions:** All powers are in megawatts and the efficiencies are decimal numbers, so no conversions are needed.\n\n**Substitution:** Option 1: $P = \\dfrac{300\\,\\text{MW} + 500\\,\\text{MW}}{0.40} = 2000\\,\\text{MW}$. Option 2: $P = \\dfrac{500\\,\\text{MW}}{0.40} = 1250\\,\\text{MW}$, and the electricity produced is $0.45 \\cdot 1250\\,\\text{MW} = 562.5\\,\\text{MW}$, which is $262.5\\,\\text{MW}$ more than needed. Option 3: $P = \\dfrac{500\\,\\text{MW} + 3 \\cdot 300\\,\\text{MW}}{0.40 + 3 \\cdot 0.45} = \\dfrac{1400\\,\\text{MW}}{1.75} = 800\\,\\text{MW}$.\n\n**Answer:** $800\\,\\text{MW}$, two significant figures. The limiting values are the efficiencies $0.40$ and $0.45$ (two figures); the needs of the city $300\\,\\text{MW}$ and $500\\,\\text{MW}$ and the coefficient of performance $3.0$ are design values of the problem that are read as having at least two figures ($3.0 \\cdot 10^2$, $5.0 \\cdot 10^2$), so the result is $8.0 \\cdot 10^2\\,\\text{MW}$.\n\n**Reasonableness:** Check the balance again: the electric power of the pump is $0.45 \\cdot 800\\,\\text{MW} - 300\\,\\text{MW} = 60\\,\\text{MW}$ and it gives out heat $3 \\cdot 60\\,\\text{MW} = 180\\,\\text{MW}$, of which $120\\,\\text{MW}$ comes from the waste water. The plant gives heat $0.40 \\cdot 800\\,\\text{MW} = 320\\,\\text{MW}$, and together $320\\,\\text{MW} + 180\\,\\text{MW} = 500\\,\\text{MW}$, as needed. The losses of the plant, $0.15 \\cdot 800\\,\\text{MW} = 120\\,\\text{MW}$, are made up by the $120\\,\\text{MW}$ taken from the waste water. Option 3 needs only 40 % of the fuel of option 1."
+      }
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A large heat pump that produces district heating takes heat from purified waste water and gives it to the district heating network. The electric power of the pump is 9.00 MW and its coefficient of performance is 3.50. How much heat power does the pump take from the waste water? Give the answer in megawatts.",
+      "answer": 22.5,
+      "unit": "MW",
+      "tolerance": 0.03,
+      "hints": [
+        "From which two sources does the heat given to the district heating network come?",
+        "The coefficient of performance is $\\varepsilon = P_\\text{indoors}/P_\\text{pump}$, and energy is conserved: $P_\\text{indoors} = P_\\text{sewage} + P_\\text{pump}$.",
+        "The power given to the network is $P_\\text{indoors} = \\varepsilon P_\\text{pump} = 3.50 \\cdot 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$. Subtract the electric power from it."
+      ],
+      "mistakes": [
+        {
+          "value": 31.5,
+          "feedback": "This is the power given to the district heating network. Of it, 9.00 MW is electricity used by the pump, so the waste water supplies $31.5\\,\\text{MW} - 9.00\\,\\text{MW}$."
+        },
+        {
+          "value": 2.57,
+          "feedback": "You divided the electric power by the coefficient of performance. The coefficient of performance tells how many times as much heat power the pump gives out compared with its electric power, so the power given out is $3.5 \\cdot 9.0\\,\\text{MW}$."
+        }
+      ],
+      "solution": "**Given:** the electric power of the heat pump $P_\\text{pump} = 9.00\\,\\text{MW}$, coefficient of performance $\\varepsilon = 3.50$\n\n**Find:** the heat power taken from the waste water $P_\\text{sewage}$ in megawatts\n\n**Principle:** The coefficient of performance tells how many times as much heat power the pump gives to the network as its electric power. Energy is conserved: the power given to the network is the electric power of the pump and the power taken from the waste water together, because the pump only transfers heat.\n\n**Formula:** $P_\\text{indoors} = \\varepsilon P_\\text{pump}$ and $P_\\text{indoors} = P_\\text{sewage} + P_\\text{pump}$, so\n\n$$\\begin{aligned} &P_\\text{sewage} \\\\ &= P_\\text{indoors} - P_\\text{pump} \\\\ &= (\\varepsilon - 1) P_\\text{pump} \\end{aligned}$$\n\n**Conversions:** The power is already in megawatts and the coefficient of performance has no unit, so no conversions are needed.\n\n**Substitution:** $P_\\text{sewage} = (3.50 - 1) \\cdot 9.00\\,\\text{MW} = 2.50 \\cdot 9.00\\,\\text{MW} = 22.5\\,\\text{MW}$\n\n**Answer:** $22.5\\,\\text{MW}$, three significant figures. The limiting values are the electric power $9.00\\,\\text{MW}$ and the difference $\\varepsilon - 1 = 3.50 - 1 = 2.50$ (three figures, because the integer $1$ is exact); both are given with three figures.\n\n**Reasonableness:** The power going to the network is $3.50 \\cdot 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$, and $22.5\\,\\text{MW} + 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$ agrees. The power from the waste water is greater than the electric power, as it should be when the coefficient of performance is above 2. The pump does not create energy but transfers it.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further at three levels. Level 1 exercises use a single formula, and level 3 requires reasoning."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A steel gas cylinder contains compressed nitrogen at a pressure of $20\\,\\text{MPa}$. The cylinder stands on a shelf for a year. How much work does the gas do during that time?",
+      "choices": [
+        {
+          "text": "A lot of work, because the pressure is high and acts on the walls of the cylinder for the whole year.",
+          "feedback": "Pressure produces a force, but work is done only when the object the force acts on moves. The walls of the cylinder do not move and the volume of the gas does not change, so $W_\\text{g} = p\\,\\Delta V = 0$."
+        },
+        {
+          "text": "No work at all, because the volume of the gas does not change.",
+          "correct": true,
+          "feedback": "Correct. The work done by a gas is $W_\\text{g} = p\\,\\Delta V$, and here $\\Delta V = 0$. The pressure only tells you that the gas could do work if it were allowed to expand."
+        },
+        {
+          "text": "Work equal to the internal energy of the gas.",
+          "feedback": "Internal energy is energy stored in the gas, not work that has been done. Work transfers energy only when the volume changes; the gas in a cylinder standing on a shelf does no work at all."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Graph and calculation",
+      "prompt": "The $(V, p)$ graph of a gas is a horizontal line segment at the height $p = 150\\,\\text{kPa}$, starting at $V = 2.0\\,\\text{l}$ and ending at $V = 5.0\\,\\text{l}$. How much work $W_\\text{g}$ does the gas do? Give the answer in joules.",
+      "answer": 450,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "What does the area between the line segment and the $V$ axis mean, and what shape is it?",
+        "The area of the rectangle is $W_\\text{g} = p\\,\\Delta V$, where $\\Delta V = V_2 - V_1$.",
+        "$\\Delta V = 5.0\\,\\text{l} - 2.0\\,\\text{l} = 3.0\\,\\text{l} = 0.0030\\,\\text{m}^3$."
+      ],
+      "mistakes": [
+        {
+          "value": 450000,
+          "feedback": "You multiplied pascals by litres. Convert the volume to cubic metres: $3.0\\,\\text{l} = 0.0030\\,\\text{m}^3$."
+        },
+        {
+          "value": 750,
+          "feedback": "You used the final volume $5.0\\,\\text{l}$. The work is the area only during the expansion, so the width is the change in volume $\\Delta V = 3.0\\,\\text{l}$."
+        }
+      ],
+      "solution": "**Given:** the $(V, p)$ graph is a horizontal line segment with $p = 150\\,\\text{kPa}$, initial volume $V_1 = 2.0\\,\\textsf{l}$ and final volume $V_2 = 5.0\\,\\textsf{l}$\n\n**Find:** the work done by the gas $W_\\text{g}$ in joules\n\n**Principle:** The work done by a gas is the area between the $(V, p)$ graph and the $V$ axis. The pressure stays constant because the line segment is horizontal, so the region is a rectangle and the work is the pressure times the change in volume.\n\n**Reading the graph:** The height of the rectangle is the height of the line segment, $p = 150\\,\\text{kPa}$, and the width is the distance between the start and end points of the segment, $V_2 - V_1 = 5.0\\,\\textsf{l} - 2.0\\,\\textsf{l} = 3.0\\,\\textsf{l}$. The values of the start and end points are not multiplied together; their difference is the width.\n\n**Formula:** $W_\\text{g} = p\\,\\Delta V$, where $\\Delta V = V_2 - V_1$\n\n**Conversions:** $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$ and $\\Delta V = 3.0\\,\\textsf{l} = 3.0 \\cdot 10^{-3}\\,\\text{m}^3 = 0.0030\\,\\text{m}^3$. Then $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Substitution:** $W_\\text{g} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$\n\n**Answer:** $450\\,\\text{J}$, two significant figures. The limiting value is the change in volume $\\Delta V = 5.0\\,\\textsf{l} - 2.0\\,\\textsf{l} = 3.0\\,\\textsf{l}$ (the difference of the readings has one decimal and two figures); the pressure $150\\,\\text{kPa}$ has at least two figures.\n\n**Reasonableness:** The work is positive because the volume grows. Estimate: $1.5 \\cdot 10^5\\,\\text{Pa} \\cdot 3 \\cdot 10^{-3}\\,\\text{m}^3 \\approx 450\\,\\text{J}$. If the final volume $5.0\\,\\textsf{l}$ had been used, the result would be $750\\,\\text{J}$, which would correspond to the whole rectangle from zero volume. During the expansion work is done only between $2.0$ and $5.0\\,\\textsf{l}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "prompt": "Your friend suggests: “Let’s build such a good power plant that it needs no condenser at all. Then all the energy of the fuel becomes electricity.” Explain why this is not possible, and say how the heat of the condenser can still be put to use.",
+      "criteria": [
+        "I say that a heat engine must always give up part of the heat to a colder environment (the second law), so $\\eta < 100\\,\\%$.",
+        "I use conservation of energy: $Q_1 = W + Q_2$, so the heat given up is the part that does not become work.",
+        "I distinguish reducing losses (friction) from the fact that heat must be given up even in principle.",
+        "I say that in combined heat and power production the heat given up is led to the district heating network, which raises the overall efficiency to 85–90 %."
+      ],
+      "model": "A heat engine turns heat into work only when part of the heat is given up to a colder environment; this is the second law of thermodynamics. The piston of the simulation showed the reason: for the piston to be brought back with less work than it took to raise it, the gas has to be cooled. In a power plant the condenser does the same: without it the steam would not condense back into water, and the cycle could not continue. Energy is conserved, $Q_1 = W + Q_2$, so the part $W$ that becomes electricity is always smaller than the heat $Q_1$ obtained from the fuel. Reducing friction raises the efficiency somewhat, but the heat $Q_2$ that has to be given up cannot be removed. The heat of the condenser can, however, be led to the district heating network instead of being released into the sea. A combined heat and power plant of this kind gets 85–90 % of the energy of the fuel as useful electricity and heat together."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. First answer them yourself, and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+ "Kuvitus: järven uimaranta aamupäivällä. Aurinko paistaa sekä hiekkaan että veteen. Hiekan yllä väreilee kuumuus, ja hiekkaan pistetyn lämpömittarin punainen pylväs on korkealla. Rantaveteen pistetyn lämpömittarin pylväs on matalalla, koska vesi on vielä viileää.": "Illustration: a lakeside beach in the late morning. The Sun shines on both the sand and the water. Heat shimmers above the sand, and the red column of a thermometer stuck in the sand is high. The column of a thermometer stuck in the shallow water is low, because the water is still cool.",
+ "Kuvitus: saunan kiuas. Kuumille kiville heitetään kauhalla vettä, ja kivistä nousee löylyhöyryä. Taustalla on puiset lauteet.": "Illustration: a sauna stove. Water is thrown with a ladle onto the hot stones, and steam rises from the stones. Wooden benches are in the background.",
+ "Kaavakuva: yhtä suuriin massoihin vettä ja hiekkaa siirtyy sama lämpömäärä Q, mitä kuvaavat yhtä pitkät nuolet. Veden lämpömittarin lukema nousee vähän, hiekan noin viisi kertaa enemmän, koska hiekan ominaislämpökapasiteetti 800 J/(kg·K) on noin viidesosa veden arvosta 4190 J/(kg·K). Lämpötilan nousut on piirretty mittakaavassa ja korostettu punaisella. Hiekkaa on astiassa tilavuutena vähemmän, koska se on tiheämpää kuin vesi.": "Schematic: the same quantity of heat Q is transferred to equal masses of water and sand, shown by arrows of equal length. The reading of the water thermometer rises a little, that of the sand about five times as much, because the specific heat capacity of sand, 800 J/(kg·K), is about one fifth of that of water, 4190 J/(kg·K). The rises in temperature are drawn to scale and highlighted in red. The sand takes up less volume in its container, because it is denser than water.",
+ "sama ": "same ",
+ " ja sama ": " and the same ",
+ "vesi": "water",
+ "hiekka": "sand",
+ "Vaakapylväskaavio ominaislämpökapasiteeteista yksikössä J/(kg·K): vesi 4190, jää 2100, alumiini 900, hiekka 800, rauta 450 ja kupari 385. Pylväiden pituudet ovat mittakaavassa: veden pylväs on noin viisi kertaa hiekan pylvään pituinen.": "Horizontal bar chart of specific heat capacities in J/(kg·K): water 4190, ice 2100, aluminium 900, sand 800, iron 450 and copper 385. The lengths of the bars are to scale: the bar of water is about five times as long as that of sand.",
+ "J/(kg": "J/(kg",
+ "jää": "ice",
+ "alumiini": "aluminium",
+ "rauta": "iron",
+ "kupari": "copper",
+ "Kalorimetri ennen ja jälkeen lämpötasapainon, periaatekuva, ei mittakaavassa. Ennen: eristetyssä astiassa on 0,300 kg vettä 20,0 °C:ssa ja sen yläpuolella langasta roikkuu 0,200 kg:n metallikappale 100,0 °C:ssa. Jälkeen: kappale on vedessä, ja sekä vesi että kappale ovat lämpötilassa 24,5 °C. Metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama.": "Calorimeter before and after thermal equilibrium, schematic, not to scale. Before: an insulated container holds 0.300 kg of water at 20.0 °C, and above it a 0.200 kg metal object at 100.0 °C hangs from a thread. After: the object is in the water, and both the water and the object are at a temperature of 24.5 °C. The heat given out by the metal is equal to the heat received by the water.",
+ "ennen": "before",
+ "jälkeen": "after",
+ " kaikkialla": " everywhere",
+ "luovutettu": "given out",
+ "vastaanotettu": "received"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Jäämurskaa lämmitetään. Lämpötila nousee 0 °C:seen ja pysyy sitten 0 °C:ssa, kunnes kaikki jää on sulanut. Näin käy, vaikka energiaa siirtyy koko ajan. Selitä mikromallilla, mihin energia kuluu.",
+    "a": "Energia kuluu hiukkasten välisten sidosten purkamiseen. Toisin sanoen se kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Hiukkasten liike-energia ei kasva, joten lämpötila ei nouse, ennen kuin kaikki jää on sulanut."
+  },
+  {
+    "q": "Kattilassa vesi kiehuu. Liesi käännetään täysille. Mitä veden lämpötilalle tapahtuu? Mihin lisäenergia menee?",
+    "a": "Lämpötila pysyy 100 °C:ssa. Lisäenergia kuluu veden höyrystämiseen, joten vesi kiehuu pois nopeammin, mutta ei kuumene."
+  },
+  {
+    "q": "Lämpenemiskäyrässä on nousevia ja vaakasuoria osia. Mitä kummassakin tapahtuu? Mikä kaava pätee?",
+    "a": "Nousevilla osilla aine lämpenee ja $Q = cm\\Delta T$. Vaakasuorilla osilla aine muuttaa olomuotoaan vakiolämpötilassa ja $Q = sm$ (sulaminen) tai $Q = rm$ (höyrystyminen)."
+  }
+]

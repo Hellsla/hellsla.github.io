@@ -1,0 +1,23 @@
+{
+  "id": "fy3-12",
+  "course": "FY3",
+  "title": "Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos",
+  "goals": [
+    "LOPS FY3: tunnistaa energiatasapainon ja lämmönsiirtymisen merkityksen ilmastonmuutoksessa",
+    "Temaattinen tarkastelu: rakentaminen ja energia kotona, ilmastonmuutos",
+    "Laaja-alainen: eettisyys ja ympäristöosaaminen, kasvihuoneilmiön fysiikka"
+  ],
+  "prerequisites": [
+    "fy3-5"
+  ],
+  "glossary": [
+    "johtuminen",
+    "konvektio",
+    "lämpösäteily",
+    "energiatasapaino",
+    "kasvihuoneilmiö",
+    "U-arvo"
+  ],
+  "sim": false,
+  "image": false
+}

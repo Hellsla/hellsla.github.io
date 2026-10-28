@@ -1,0 +1,21 @@
+{
+  "id": "fy3-1",
+  "course": "FY3",
+  "title": "Force as a measure of interaction and weight G = mg",
+  "goals": [
+    "LOPS FY3: force as a measure of the strength of interaction",
+    "Clarification: we revise measuring force with a force meter and establish the connection between mass and weight, G = mg; force is not treated as the cause of a change in motion"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "voima",
+    "voimamittari",
+    "vuorovaikutus",
+    "paino",
+    "massa",
+    "newton",
+    "putoamiskiihtyvyys"
+  ],
+  "sim": true,
+  "image": false
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Seinän U-arvo on 0,20 W/(m²·K) ja pinta-ala 50 m². Sisällä on 20 °C ja ulkona −10 °C. Kuinka suuri lämpöteho siirtyy seinän läpi?",
+    "a": "$P = UA\\Delta T = 0{,}20\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 50\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 300\\,\\text{W}$."
+  },
+  {
+    "q": "Millä kolmella tavalla lämpö siirtyy? Anna jokaisesta yksi esimerkki kodista.",
+    "a": "Johtumalla, esimerkiksi seinän läpi. Konvektiolla eli virtaavan aineen mukana, esimerkiksi lämpimän ilman noustessa patterin yläpuolella. Säteilemällä, esimerkiksi takan hehkusta kasvoille."
+  },
+  {
+    "q": "Miksi ilmakehän hiilidioksidin lisääntyminen nostaa maanpinnan lämpötilaa, vaikka Auringosta tuleva teho ei muutu?",
+    "a": "Hiilidioksidi imee maanpinnan lähettämää lämpösäteilyä ja säteilee osan takaisin alas. Avaruuteen pääsee aluksi vähemmän energiaa kuin Auringosta tulee. Siksi maapallo lämpenee, kunnes energiatasapaino palautuu korkeammassa lämpötilassa."
+  }
+]

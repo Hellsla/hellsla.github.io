@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A syringe contains 40 ml of air at a pressure of 100 kPa. The plunger is pressed until the volume is 25 ml, and the temperature does not change. What is the pressure?",
+    "a": "By Boyle's law $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 40\\,\\text{ml} / 25\\,\\text{ml} = 160\\,\\text{kPa}$."
+  },
+  {
+    "q": "The $(V, p)$ points of the measurements lie on a curve. How is the table modified so that inverse proportionality shows as a straight line, and what must the line be like?",
+    "a": "A new column $1/V$ is calculated and $p$ is plotted as a function of $1/V$. If $p$ is inversely proportional to $V$, the points lie on a straight line through the origin whose slope is $pV$."
+  },
+  {
+    "q": "The air in a closed bottle warms from 7 °C to 35 °C. Does the pressure become five times as large? Justify.",
+    "a": "No. The pressure is proportional to the temperature in kelvins, which rises from 280 K to 308 K. The pressure increases only by the factor $308/280 = 1.1$, that is, about 10 %."
+  }
+]

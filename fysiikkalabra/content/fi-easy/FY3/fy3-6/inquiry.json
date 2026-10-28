@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "contribution": "Lämpömäärälle saadaan laskukaava $Q = cm\\Delta T$. Aineen ominaislämpökapasiteetti ratkaisee, kuinka paljon lämpötila muuttuu. Energian säilymisestä saadaan kalorimetrin tasapainolämpötila ja tuntemattoman aineen $c$.",
+  "learn": [
+    "Osaat laskea lämpömäärän, joka muuttaa aineen lämpötilaa.",
+    "Osaat selittää, mitä ominaislämpökapasiteetti kertoo aineesta.",
+    "Osaat laskea energian säilymisen avulla kalorimetrin tasapainolämpötilan tai tuntemattoman aineen ominaislämpökapasiteetin."
+  ],
+  "prior": [
+    "Lämpö on lämpötilaeron vuoksi siirtyvää energiaa, ja siirtynyt energia on lämpömäärä $Q$ (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
+    "Energia säilyy: eristetyn systeemin kokonaisenergia pysyy vakiona (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Heinäkuun aamuna kello kahdeksan rannan hiekka ja matala rantavesi ovat suunnilleen yhtä lämpimiä. Puoleenpäivään mennessä hiekan pinta on niin kuuma, ettei sillä voi seistä paljain jaloin. Vesi on lämmennyt vain muutaman asteen. Aurinko on paistanut samalle rannalle yhtä kauan. Kumpikin on saanut energiaa lämpönä.",
+      "question": "Kahteen aineeseen siirtyy lämpönä energiaa. Mikä ratkaisee, kuinka paljon kummankin lämpötila nousee?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: lämpö ja sisäenergia",
+      "prompt": "Kuuma kuparikappale upotetaan eristetyssä astiassa olevaan kylmään veteen. Mikä kuvaus on fysikaalisesti oikea?",
+      "choices": [
+        {
+          "text": "Kuparin lämpö siirtyy veteen, kunnes kuparissa ei ole enää lämpöä.",
+          "feedback": "Kappaleella ei ole lämpöä (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö on energian *siirtymistä* lämpötilaeron vuoksi. Siirtyminen loppuu, kun lämpötilat ovat samat. Se ei lopu siksi, että jokin varasto tyhjenee. Kuparilla on yhä sisäenergiaa."
+        },
+        {
+          "text": "Energiaa siirtyy lämpönä kuparista veteen, kunnes lämpötilat ovat samat. Kuparin sisäenergia pienenee yhtä paljon kuin veden sisäenergia kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Lämpö on lämpötilaeron vuoksi siirtyvää energiaa. Eristetyssä astiassa energia säilyy: kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Tänään lasketaan, kuinka suuri tuo lämpömäärä on."
+        },
+        {
+          "text": "Vedestä siirtyy kylmyyttä kupariin, kunnes kupari on yhtä kylmää kuin vesi oli alussa.",
+          "feedback": "Kylmyys ei ole suure, joka siirtyy. Energiaa siirtyy aina kuumemmasta kylmempään. Vesikin lämpenee, joten loppulämpötila on alkulämpötilojen välissä."
+        },
+        {
+          "text": "Energiaa siirtyy, kunnes kuparin ja veden sisäenergiat ovat yhtä suuret.",
+          "feedback": "Lämmön siirtyminen pysähtyy, kun *lämpötilat* ovat samat. Sisäenergia riippuu myös aineen määrästä ja laadusta. Siksi tasapainossa sisäenergiat ovat yleensä erisuuret."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: hiekkaa vai vettä",
+      "prompt": "Kalorimetrissä on 0,30 kg vettä, jonka lämpötila on 20 °C. Veteen upotetaan joko 0,20 kg hiekkaa tai 0,20 kg vettä. Kumpikin on lämmitetty 80 °C:seen. Kumpi nostaa kalorimetrin veden lämpötilaa enemmän?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Kumpikin yhtä paljon, koska massat ja alkulämpötilat ovat samat.",
+          "feedback": "Mallin arvot kumoavat tämän. Hiekka nostaa veden lämpötilaa noin 6,8 K (26,8 °C:seen). Kuuma vesi nostaa sitä 24 K (44,0 °C:seen). Sama massa ja sama lämpötila eivät tarkoita samaa luovutettavaa energiaa. Ratkaisevaa on aine."
+        },
+        {
+          "text": "Kuuma vesi lämmittää enemmän.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Kuuma vesi nostaa kalorimetrin veden 44,0 °C:seen ja luovuttaa noin 30 kJ. Hiekka nostaa veden vain 26,8 °C:seen ja luovuttaa noin 8,5 kJ. Kappaleen lämpökapasiteetti $C = cm$ on vedellä 838 J/K ja hiekalla 160 J/K."
+        },
+        {
+          "text": "Hiekka lämmittää enemmän, koska hiekka kuumenee helposti ja varastoi siksi paljon lämpöä.",
+          "feedback": "Mallin arvot näyttävät päinvastaista. Hiekka nostaa veden vain 26,8 °C:seen, kuuma vesi 44,0 °C:seen. Aine, joka kuumenee pienellä energialla, luovuttaa myös jäähtyessään vähän energiaa jokaista kelviniä kohti."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kuumaa vettä kylmään",
+      "prompt": "Eristettyyn astiaan, jossa on 0,50 kg vettä lämpötilassa 20 °C, kaadetaan 0,20 kg vettä lämpötilassa 90 °C. Mihin yhteinen loppulämpötila asettuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Alkulämpötilojen keskiarvoon, 55 °C:seen.",
+          "feedback": "Mallin arvot kumoavat tämän. Kuuma vesi, jota on 0,20 kg, nostaa lämpötilan vain 40,0 °C:seen. Keskiarvo 55 °C saadaan vain, kun kuumaa ja kylmää vettä on yhtä paljon (0,50 kg ja 0,50 kg). Lämpötilat eivät keskiarvoistu. Lämpömäärät ovat yhtä suuret."
+        },
+        {
+          "text": "Alle 55 °C:seen, lähemmäs kylmän veden lämpötilaa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Loppulämpötila on 40,0 °C. Kuuma vesi jäähtyy 50 K ja kylmä lämpenee vain 20 K, koska kylmää vettä on 2,5-kertainen määrä. Kun kuumaa vettä on 0,50 kg, tulos on 55,0 °C. Kun sitä on 0,80 kg, tulos on 63,1 °C."
+        },
+        {
+          "text": "Yli 55 °C:seen, koska kuuma vesi on aktiivinen osapuoli, joka lämmittää kylmää.",
+          "feedback": "Mallin arvot kumoavat tämän. Tulos on 40,0 °C. Kuuman veden luovuttama energia jakautuu suurempaan vesimäärään. Siksi kylmän veden lämpötila nousee vähemmän kuin kuuman laskee. Yli 55 °C saadaan vain, kun kuumaa vettä on enemmän kuin kylmää."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Upota kappale veteen ja seuraa, miten veden ja kappaleen lämpötilat lähestyvät toisiaan.",
+      "howto": "Säädä veden massa ja alkulämpötila. Säädä myös kappaleen aine, massa ja alkulämpötila. Paina sitten *Upota*. Kappale laskeutuu veteen. Kuvaaja piirtää veden (sininen) ja kappaleen (oranssi) lämpötilan ajan funktiona. Katkoviiva on tasapainolämpötila $T$. Kun muutat jotakin arvoa, kappale nousee pois vedestä ja koe alkaa alusta. *Nopeus* muuttaa vain animaation tahtia. Se ei muuta lämpötiloja eikä lämpömääriä.",
+      "model": "Astia on täysin eristetty. Lämpöä ei siirry ympäristöön eikä astiaan itseensä. Siksi kappaleen luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Kappaleen lämpötila pysyy välillä 0–100 °C, eikä kummankaan olomuoto muutu. Tasapainolämpötila ja lämpömäärät ovat mallin laskemia arvoja, eivät mittauksia. Lähestymisen nopeus (aikavakio noin 1,5 s) on vain havainnollistus, ei fysikaalinen malli. Todellisuudessa nopeus riippuu sekoittamisesta ja kappaleen muodosta.",
+      "calc": "Lämpökapasiteetit ovat $C_\\text{v} = c_\\text{v} m_\\text{v}$ ja $C_\\text{k} = c_\\text{k} m_\\text{k}$, missä $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Tasapainolämpötila on alkulämpötilojen painotettu keskiarvo:\n\n$$T = \\frac{C_\\text{v} T_\\text{v} + C_\\text{k} T_\\text{k}}{C_\\text{v} + C_\\text{k}}$$\n\nKuumempi luovuttaa lämpömäärän $Q = c m \\, |\\Delta T|$, ja kylmempi vastaanottaa saman verran. Kun kappale on kuumempi, $Q = c_\\text{k} m_\\text{k} (T_\\text{k} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$. Kuvaajan lämpötila-asteikko alkaa ja päättyy alkulämpötiloista pyöristettyihin kymmeniin asteisiin."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain aine muuttuu",
+      "intro": "Testaa ennuste 1. Veden massa ja lämpötila sekä kappaleen massa ja alkulämpötila pysyvät vakioina; vaihda vain kappaleen ainetta. Kirjaa tasapainolämpötila ainakin hiekalla ja vedellä, halutessasi myös metalleilla. Paina välillä *Upota* ja seuraa, kumpi lämpömittari liikkuu enemmän.",
+      "initial": {
+        "mW": 0.3,
+        "TW0": 20,
+        "cB": "800",
+        "mB": 0.2,
+        "TB0": 80
+      },
+      "locked": [
+        "mW",
+        "TW0",
+        "mB",
+        "TB0"
+      ],
+      "vary": "cB",
+      "names": {
+        "mW": "veden massa",
+        "TW0": "veden alkulämpötila",
+        "cB": "aine, c",
+        "mB": "kappaleen massa",
+        "TB0": "kappaleen alkulämpötila"
+      },
+      "units": {
+        "mW": "kg",
+        "TW0": "°C",
+        "cB": "J/(kg·K)",
+        "mB": "kg",
+        "TB0": "°C"
+      },
+      "measure": [
+        {
+          "key": "Teq",
+          "label": "T (°C)"
+        },
+        {
+          "key": "CB",
+          "label": "C (J/K)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain kuuman veden määrä muuttuu",
+      "intro": "Testaa ennuste 2. Kappale on nyt vettä, jonka lämpötila on 90 °C, ja astiassa on 0,50 kg vettä lämpötilassa 20 °C. Muuta vain kuuman veden massaa. Kirjaa tasapainolämpötila ainakin kahdella massalla, esimerkiksi 0,20 kg, 0,50 kg ja 0,80 kg. Millä massalla tulos on alkulämpötilojen keskiarvo?",
+      "initial": {
+        "mW": 0.5,
+        "TW0": 20,
+        "cB": "4190",
+        "mB": 0.2,
+        "TB0": 90
+      },
+      "locked": [
+        "mW",
+        "TW0",
+        "cB",
+        "TB0"
+      ],
+      "vary": "mB",
+      "names": {
+        "mW": "kylmän veden massa",
+        "TW0": "kylmän veden alkulämpötila",
+        "cB": "aine, c",
+        "mB": "kuuman veden massa",
+        "TB0": "kuuman veden alkulämpötila"
+      },
+      "units": {
+        "mW": "kg",
+        "TW0": "°C",
+        "cB": "J/(kg·K)",
+        "mB": "kg",
+        "TB0": "°C"
+      },
+      "measure": [
+        {
+          "key": "Teq",
+          "label": "T (°C)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä ratkaisee loppulämpötilan?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miksi vesikappale lämmitti kalorimetrin vettä enemmän kuin yhtä painava hiekkakappale? Millä massalla loppulämpötila oli alkulämpötilojen keskiarvo, ja miksi? Mikä suure ratkaisee, kumman lämpötila muuttuu enemmän?",
+      "model": "Hiekkakappaleella loppulämpötila oli noin $27\\,{}^\\circ\\text{C}$ ja vesikappaleella noin $44\\,{}^\\circ\\text{C}$. Massat ja alkulämpötilat olivat samat. Vedellä on suurempi ominaislämpökapasiteetti. Siksi $80$-asteinen vesi luovuttaa jäähtyessään paljon enemmän energiaa kuin hiekka. Kokeessa 2 loppulämpötila oli keskiarvo $55\\,{}^\\circ\\text{C}$, kun kuumaa ja kylmää vettä oli yhtä paljon ($0{,}50\\,\\text{kg}$). Kuumemman luovuttama lämpömäärä on yhtä suuri kuin kylmemmän vastaanottama. Siksi lämpötila muuttuu vähemmän sillä, jolla on suurempi lämpökapasiteetti $C = cm$. Arvot ovat mallin laskemia. Mallissa lämpöä ei siirry ympäristöön. Oikeassa kalorimetrissä loppulämpötila jää hieman pienemmäksi.",
+      "criteria": [
+        "Vertasin lukuja ja selitin eron ominaislämpökapasiteetilla.",
+        "Selitin, milloin loppulämpötila on keskiarvo.",
+        "Käytin lämpökapasiteettia $C = cm$ ja energian säilymistä.",
+        "Mainitsin mallin oletuksen, ettei lämpöä siirry ympäristöön."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $Q = cm\\Delta T$. Palaa sitten alun kysymykseen: miksi rannan hiekka kuumenee aamupäivän aikana paljon enemmän kuin vesi? Kumpikin saa auringosta energiaa. Mainitse myös, mitä muuta kuin ainetta hiekan ja veden lämpenemisessä on eroa.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija ratkaisee, mihin lämpötilaan 0,20 kg:n alumiinikappale (100 °C) ja 0,30 kg vettä (20 °C) asettuvat eristetyssä astiassa. Lämpökapasiteetit ovat $c_1 m_1 = 180\\,\\text{J/K}$ ja $c_2 m_2 = 1257\\,\\text{J/K}$. Hän kirjoittaa $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$ ja ratkaisee siitä\n\n$$\\begin{aligned} T &= \\frac{c_1 m_1 T_1 - c_2 m_2 T_2}{c_1 m_1 - c_2 m_2} \\\\ &= \\frac{180 \\cdot 100 - 1257 \\cdot 20}{180 - 1257}\\,{}^\\circ\\text{C} \\\\ &\\approx 6{,}6\\,{}^\\circ\\text{C} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Lämpötilat olisi pitänyt muuttaa kelvineiksi ennen sijoitusta.",
+          "feedback": "Muunnos ei muuta tulosta. Kun jokaiseen lämpötilaan lisätään 273,15, sama lisäys siirtyy suoraan tulokseen. Tulos on taas 6,6 °C. Virhe on yhtälön ratkaisemisessa."
+        },
+        {
+          "text": "Hän siirsi $T$:n termit samalle puolelle vaihtamatta etumerkkejä oikein. Oikea ratkaisu on $T = \\dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2} \\approx 30{,}0\\,{}^\\circ\\text{C}$.",
+          "correct": true,
+          "feedback": "Oikein. Kun sulut kerrotaan auki, saadaan $c_1 m_1 T_1 + c_2 m_2 T_2 = (c_1 m_1 + c_2 m_2)T$. Molemmat termit ovat plusmerkkisiä. Tuloksen olisi voinut huomata vääräksi jo ilman algebraa: 6,6 °C on alle kummankin alkulämpötilan. Eristetyssä astiassa mikään ei voi jäähtyä kylmemmäksi kuin kylmin osa oli alussa."
+        },
+        {
+          "text": "Lämpömäärien yhtälö on kirjoitettu väärin: oikealla pitäisi olla $(T_2 - T)$.",
+          "feedback": "Alkuperäinen yhtälö on oikein. Kylmä vesi lämpenee, joten sen vastaanottama lämpömäärä on $c_2 m_2 (T - T_2)$. Se on positiivinen, kuten vasen puolikin. Virhe syntyy vasta yhtälöä ratkaistaessa."
+        },
+        {
+          "text": "Laskussa ei ole virhettä; vesi jäähtyy, koska alumiinin lämpökapasiteetti on pieni.",
+          "feedback": "Vesi on kylmempi osapuoli, joten se voi vain lämmetä. Loppulämpötilan on oltava alkulämpötilojen 20 °C ja 100 °C välissä; 6,6 °C on mahdoton tulos."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kylpyammeessa on 80,0 kg vettä, jonka lämpötila on 30,0 °C. Hanasta lasketaan lisää kuumaa vettä, jonka lämpötila on 60,0 °C. Vettä lasketaan, kunnes ammeen veden lämpötila on 38,0 °C. Kuinka monta kilogrammaa kuumaa vettä tarvitaan? Oleta, ettei lämpöä siirry ammeeseen eikä ilmaan. Vastaa kilogrammoina.",
+      "answer": 29.1,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuka luovuttaa lämpöä ja kuka vastaanottaa? Kuinka monta kelviniä kumpikin vesimäärä muuttuu, kun loppulämpötila on 38,0 °C?",
+        "Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama: $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$. Sama $c$ supistuu pois.",
+        "$m_\\text{k} = \\dfrac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 220,
+          "feedback": "Lämpötilan muutokset ovat vaihtaneet paikkaa. Ammeen vesi lämpenee 8,0 K ja kuuma vesi jäähtyy 22,0 K. Kuumaa vettä tarvitaan *vähemmän* kuin ammeessa on, koska sen lämpötila muuttuu enemmän."
+        },
+        {
+          "value": 21.3,
+          "feedback": "Laskit kuuman veden lämpötilan muutokseksi $60{,}0\\,{}^\\circ\\text{C} - 30{,}0\\,{}^\\circ\\text{C}$. Kuuma vesi jäähtyy vain loppulämpötilaan 38,0 °C asti. Sen muutos on siis $60{,}0\\,{}^\\circ\\text{C} - 38{,}0\\,{}^\\circ\\text{C} = 22{,}0\\,\\text{K}$."
+        }
+      ],
+      "solution": "**Annettu:** ammeen vesi $m_\\text{a} = 80{,}0\\,\\text{kg}$, $T_\\text{a} = 30{,}0\\,{}^\\circ\\text{C}$; kuuma vesi $T_\\text{k} = 60{,}0\\,{}^\\circ\\text{C}$; loppulämpötila $T = 38{,}0\\,{}^\\circ\\text{C}$; ei lämpöhäviöitä\n\n**Kysytty:** kuuman veden massa $m_\\text{k}$\n\n**Periaate:** Energia säilyy: kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama. Kumpikin on vettä, joten sama $c$ supistuu pois.\n\n**Kaava:** $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$, josta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\\text{a} = 8{,}0\\,\\text{K}$ ja $T_\\text{k} - T = 22{,}0\\,\\text{K}$. Massa on jo kilogrammoina.\n\n**Sijoitus:** $m_\\text{k} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}} = 29{,}09\\,\\text{kg}$\n\n**Vastaus:** $29\\,\\text{kg}$, kaksi merkitsevää numeroa, koska ammeen veden lämpötilan muutos $8{,}0\\,\\text{K}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu 22 K ja ammeen veden vain 8 K. Tarkistus: $29{,}09\\,\\text{kg} \\cdot 22{,}0\\,\\text{K} = 80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K} = 640\\,\\text{kg}\\cdot\\text{K}$. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään kaavaa $Q = cm\\Delta T$ suoraan. Tason 2 tehtävissä ratkaistaan tasapainolämpötila tai muu suure. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Saunan kiukaalla on 10 kg:n rautapata. Pöydällä on lasi, jossa on 0,20 kg vettä. Kumman lämpötilan nostaminen yhdellä kelvinillä vaatii enemmän energiaa?",
+      "choices": [
+        {
+          "text": "Veden, koska veden ominaislämpökapasiteetti on paljon suurempi kuin raudan.",
+          "feedback": "Ominaislämpökapasiteetti $c$ koskee yhtä kilogrammaa. Koko kappaleen lämmittämiseen tarvittava energia kelviniä kohti on lämpökapasiteetti $C = cm$. Padalla se on $450 \\cdot 10\\,\\text{J/K} = 4500\\,\\text{J/K}$. Vesilasilla se on $4190 \\cdot 0{,}20\\,\\text{J/K} = 838\\,\\text{J/K}$."
+        },
+        {
+          "text": "Padan, koska sen lämpökapasiteetti $C = cm$ on suurempi.",
+          "correct": true,
+          "feedback": "Oikein. Padan $C = 450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 10\\,\\text{kg} = 4500\\,\\text{J/K}$ ja vesilasin $C = 838\\,\\text{J/K}$. Raudan pieni $c$ ei riitä, kun massaa on 50-kertaisesti."
+        },
+        {
+          "text": "Yhtä paljon, koska kummankin lämpötila nousee yhden kelvinin.",
+          "feedback": "Sama lämpötilan muutos ei tarkoita samaa lämpömäärää: $Q = cm\\Delta T$ riippuu myös aineesta ja massasta. Vertaa lämpökapasiteetteja $C = cm$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kalorimetrinen mittaus",
+      "prompt": "Kalorimetrissä on 0,200 kg vettä, jonka lämpötila on 18,0 °C. Veteen upotetaan 0,150 kg:n metallikappale, joka on lämmitetty 98,0 °C:seen. Lämpötila asettuu arvoon 29,0 °C. Määritä metallin ominaislämpökapasiteetti. Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta. Vastaa yksikössä J/(kg·K).",
+      "answer": 891,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.02,
+      "hints": [
+        "Kumpi luovuttaa lämpöä, kumpi vastaanottaa? Paljonko kummankin lämpötila muuttuu?",
+        "$c_\\text{m} m_\\text{m} (T_\\text{m} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$, josta $c_\\text{m} = \\dfrac{c_\\text{v} m_\\text{v} (T - T_\\text{v})}{m_\\text{m} (T_\\text{m} - T)}$.",
+        "Metalli jäähtyy 69,0 K ja vesi lämpenee 11,0 K: $c_\\text{m} = \\dfrac{4190 \\cdot 0{,}200 \\cdot 11{,}0}{0{,}150 \\cdot 69{,}0}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 768,
+          "feedback": "Käytit metallin lämpötilan muutoksena $98{,}0\\,{}^\\circ\\text{C} - 18{,}0\\,{}^\\circ\\text{C}$. Metalli jäähtyy vain loppulämpötilaan 29,0 °C asti. Sen muutos on siis 69,0 K."
+        },
+        {
+          "value": 501,
+          "feedback": "Massat ovat vaihtaneet paikkaa: veden massa 0,200 kg kuuluu veden lämpömäärään ja metallin massa 0,150 kg metallin lämpömäärään."
+        }
+      ],
+      "solution": "**Annettu:** vesi $m_\\text{v} = 0{,}200\\,\\text{kg}$, $T_\\text{v} = 18{,}0\\,{}^\\circ\\text{C}$, $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$; metalli $m_\\text{m} = 0{,}150\\,\\text{kg}$, $T_\\text{m} = 98{,}0\\,{}^\\circ\\text{C}$; tasapainolämpötila $T = 29{,}0\\,{}^\\circ\\text{C}$\n\n**Kysytty:** metallin ominaislämpökapasiteetti $c_\\text{m}$\n\n**Periaate:** Energia säilyy: metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama, kun kalorimetri ja ilma eivät ota lämpöä. Lopussa molemmat ovat lämpötilassa $T$.\n\n**Kaava:** $c_\\text{m} m_\\text{m} (T_\\text{m} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$, josta\n\n$$c_\\text{m} = \\frac{c_\\text{v} m_\\text{v} (T - T_\\text{v})}{m_\\text{m} (T_\\text{m} - T)}$$\n\n**Muunnokset:** Massat ovat kilogrammoina. Metalli jäähtyy $T_\\text{m} - T = 69{,}0\\,\\text{K}$ ja vesi lämpenee $T - T_\\text{v} = 11{,}0\\,\\text{K}$.\n\n**Sijoitus:** $c_\\text{m} = \\dfrac{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}200\\,\\text{kg} \\cdot 11{,}0\\,\\text{K}}{0{,}150\\,\\text{kg} \\cdot 69{,}0\\,\\text{K}} = \\dfrac{9218\\,\\text{J}}{10{,}35\\,\\text{kg}\\cdot\\text{K}} = 890{,}6\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n\n**Vastaus:** $891\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, kolme merkitsevää numeroa kuten mittaustuloksissa.\n\n**Järkevyys:** Arvo on lähellä alumiinin ominaislämpökapasiteettia $900\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, joten kappale on luultavasti alumiinia. Vesi lämpenee paljon vähemmän kuin metalli jäähtyy, koska veden lämpökapasiteetti $838\\,\\tfrac{\\text{J}}{\\text{K}}$ on yli kuusinkertainen metallin $134\\,\\tfrac{\\text{J}}{\\text{K}}$:iin verrattuna."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Suuren järven rannalla syksyn yöt ovat usein lauhempia ja kevään päivät viileämpiä kuin kaukana sisämaassa. Selitä ilmiö. Käytä käsitteitä ominaislämpökapasiteetti ja lämpömäärä.",
+      "criteria": [
+        "Sanon, että veden ominaislämpökapasiteetti on suuri, noin viisinkertainen hiekkaan tai maahan verrattuna.",
+        "Käytän yhtälöä $Q = cm\\Delta T$: sama lämpömäärä muuttaa veden lämpötilaa vähän, ja jäähtyessään vesi luovuttaa paljon lämpöä jokaista kelviniä kohti.",
+        "Kytken järven ympäristöön: syksyllä järvi luovuttaa lämpöä ilmaan, keväällä se sitoo lämpöä ja lämpenee hitaasti.",
+        "Mainitsen, että järvessä on myös paljon vettä, joten sen lämpökapasiteetti $C = cm$ on suuri."
+      ],
+      "model": "Veden ominaislämpökapasiteetti, 4190 J/(kg·K), on noin viisinkertainen hiekkaan verrattuna. Lisäksi järvessä on valtava määrä vettä. Siksi järven lämpökapasiteetti $C = cm$ on hyvin suuri. Yhtälön $Q = cm\\Delta T$ mukaan suuri lämpömäärä muuttaa sen lämpötilaa vain vähän. Kesällä järvi varastoi paljon energiaa. Syksyllä se jäähtyy hitaasti ja luovuttaa lämpöä rannan ilmaan, joten yöt ovat lauhempia. Keväällä järvi on vielä kylmä ja lämpenee hitaasti, joten se jäähdyttää rannan ilmaa. Maa sen sijaan lämpenee ja jäähtyy nopeasti.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

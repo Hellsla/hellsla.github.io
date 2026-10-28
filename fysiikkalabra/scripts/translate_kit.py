@@ -131,6 +131,11 @@ def apply(unit, lang, work):
         if figpy.is_file(): subprocess.run([sys.executable, str(ROOT / "scripts/figures.py"), unit, "--lang", lang])
         import check_i18n
         errs = []; check_i18n.check_lesson(courses.find_lesson(unit), tr, lang, errs)
+        import inquiry
+        if (tr / "inquiry.json").is_file():                # the build's own checks of the page, in the language
+            i18n.set_lang(lang)
+            errs += [f"inquiry.json: {e}" for e in inquiry.validate(tr, json.loads((tr / "inquiry.json").read_text()), (tr / "lesson.md").read_text())]
+            i18n.set_lang(i18n.SOURCE)
     same = [k for k, v in strings.items() if v == json.loads((src / "source.json").read_text()).get(k) and
             (len(re.findall(r"[a-zäö]{3,}", v)) >= 3 if lang == "en" else len(v) > 160)]
     if same: print(f"note: {len(same)} string(s) still as in Finnish: " + ", ".join(same[:20]))

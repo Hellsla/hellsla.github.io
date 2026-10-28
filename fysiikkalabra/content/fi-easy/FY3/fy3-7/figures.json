@@ -1,0 +1,19 @@
+{
+ "Kuvitus: keittiön liedellä kattila, jossa vesi kiehuu voimakkaasti. Levy hehkuu punaisena ja siitä siirtyy jatkuvasti energiaa kattilaan, vedessä on kuplia ja siitä nousee höyryä. Veteen upotetun lämpömittarin pylväs pysyy samalla korkeudella.": "Kuvitus: keittiön liedellä on kattila, jossa vesi kiehuu voimakkaasti. Levy hehkuu punaisena, ja siitä siirtyy koko ajan energiaa kattilaan. Vedessä on kuplia, ja siitä nousee höyryä. Veteen upotetun lämpömittarin pylväs pysyy samalla korkeudella.",
+ "Kuvitus: järvi jäätyy alkutalvella. Rannan puolella on jo ohut jääkansi, ulompana vesi on vielä sulana, ja rannalla on ensilumi.": "Kuvitus: järvi jäätyy alkutalvella. Rannan lähellä on jo ohut jääkansi. Kauempana vesi on vielä sulana. Rannalla on ensilumi.",
+ "Mikromalli, kaavakuva: kiinteässä aineessa hiukkaset ovat säännöllisessä järjestyksessä toisissaan kiinni, nesteessä ne ovat epäjärjestyksessä mutta yhä kosketuksissa, kaasussa ne ovat kaukana toisistaan ja liikkuvat vapaasti. Nuolet: kiinteä sulaa nesteeksi, neste höyrystyy kaasuksi.": "Mikromalli, kaavakuva: kiinteässä aineessa hiukkaset ovat säännöllisessä järjestyksessä ja kiinni toisissaan. Nesteessä ne ovat epäjärjestyksessä, mutta ne ovat yhä kosketuksissa. Kaasussa ne ovat kaukana toisistaan ja liikkuvat vapaasti. Nuolet: kiinteä sulaa nesteeksi, neste höyrystyy kaasuksi.",
+ "sulaa": "sulaa",
+ "höyrystyy": "höyrystyy",
+ "kiinteä": "kiinteä",
+ "neste": "neste",
+ "kaasu": "kaasu",
+ "Veden lämpenemiskäyrä, kaavakuva: lämpötila siirretyn energian Q funktiona. Jää lämpenee jyrkästi, sulaa vaakasuoralla osalla 0 asteessa (Q = sm), vesi lämpenee loivemmin 0:sta 100 asteeseen, kiehuu pitkällä vaakasuoralla osalla 100 asteessa (Q = rm) ja höyry lämpenee jyrkästi. Jään ja höyryn osien jyrkkyys on noin kaksinkertainen veden osaan verrattuna; vaakasuorien osien pituudet eivät ole mittakaavassa.": "Veden lämpenemiskäyrä, kaavakuva: lämpötila siirretyn energian Q funktiona. Jää lämpenee jyrkästi. Se sulaa vaakasuoralla osalla 0 asteessa (Q = sm). Vesi lämpenee loivemmin 0:sta 100 asteeseen. Se kiehuu pitkällä vaakasuoralla osalla 100 asteessa (Q = rm). Höyry lämpenee jyrkästi. Jään ja höyryn osat ovat noin kaksi kertaa jyrkempiä kuin veden osa. Vaakasuorien osien pituudet eivät ole mittakaavassa.",
+ "höyry": "höyry",
+ "jää": "jää",
+ "vesi": "vesi",
+ "kiehuu": "kiehuu",
+ "Faasikaavio, kaavakuva: paine p lämpötilan T funktiona. Käyrät erottavat kiinteän, nesteen ja kaasun alueet ja kohtaavat kolmoispisteessä. Kun paine on ilmanpaine, vesi kiehuu 100 asteessa; vuorella paine on pienempi ja kiehumispiste alempi.": "Faasikaavio, kaavakuva: paine p lämpötilan T funktiona. Käyrät erottavat kiinteän, nesteen ja kaasun alueet. Ne kohtaavat kolmoispisteessä. Kun paine on ilmanpaine, vesi kiehuu 100 asteessa. Vuorella paine on pienempi, ja kiehumispiste on alempi.",
+ "ilmanpaine": "ilmanpaine",
+ "vuori": "vuori",
+ "kolmoispiste": "kolmoispiste"
+}

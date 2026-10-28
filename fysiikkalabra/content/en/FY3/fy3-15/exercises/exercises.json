@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-15-L1-01",
+      "level": 1,
+      "text": "The turbine of a hydropower plant converts 92.0% of the kinetic energy of the water into mechanical energy, and the generator converts 98.0% of the energy of the turbine shaft into electricity. What is the efficiency of the whole plant? Give your answer as a percentage.",
+      "answer": 90.2,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-02",
+      "level": 1,
+      "text": "The power of the kinetic energy of the air flow swept by the rotor of a wind turbine is 2.50 MW, and the turbine delivers a power of 1.05 MW to the electricity grid. What is the efficiency of the turbine? Give your answer as a percentage.",
+      "answer": 42.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-03",
+      "level": 1,
+      "text": "The area of a solar panel installed on a roof is 20.0 m², and sunlight hits it with a power of 1.00 kW for every square metre. The efficiency of the panel is 0.210. How much electric power does the panel produce? Give your answer in kilowatts.",
+      "answer": 4.2,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-04",
+      "level": 1,
+      "text": "Fuel energy is brought into a condensing power plant at a power of 800 MW, and the electric power of the plant is 320 MW. How much power is transferred from the power plant to the surroundings as heat? Give your answer in megawatts.",
+      "answer": 480,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-05",
+      "level": 1,
+      "text": "The fuel power of a combined heat and power plant is 250 MW. The plant produces 75.0 MW of electricity and 150 MW of district heating. What is the overall efficiency of the plant? Give your answer as a percentage.",
+      "answer": 90.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-15-L2-01",
+      "level": 2,
+      "text": "The fuel power of a peat-burning condensing power plant is 300 MW. The efficiency of the boiler is 0.880, of the steam cycle (turbine and condenser) 0.420 and of the generator 0.980. How large is the electric power of the plant? Give your answer in megawatts.",
+      "answer": 109,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-02",
+      "level": 2,
+      "text": "The efficiency of the whole energy chain of a condensing power plant is 0.380. The efficiency of the boiler is 0.900 and of the generator 0.980. What is the efficiency of the steam cycle, that is of the turbine and the condenser? Give your answer as a percentage.",
+      "answer": 43.1,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-03",
+      "level": 2,
+      "text": "A condensing power plant burning wood chips produces electricity at an average power of 150 MW, and the efficiency of the whole plant is 0.360. The heat of combustion of wood chips is 9.00 MJ/kg. How many tonnes of chips does the plant burn in an hour? Give your answer in tonnes.",
+      "answer": 167,
+      "unit": "t",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-04",
+      "level": 2,
+      "text": "Heat is transferred to the condenser of a coastal condensing power plant at a power of 270 MW. The sea water cooling the condenser warms up by 9.00 K. The specific heat capacity of water is 4190 J/(kg·K). How many tonnes of water flow through the condenser per second? Give your answer in tonnes per second.",
+      "answer": 7.16,
+      "unit": "t/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-15-L3-01",
+      "level": 3,
+      "text": "The fuel power of a combined heat and power plant is 600 MW. When the plant produces only electricity, the electric power is 240 MW. When all the heat of the condenser is led into the district heating network, the electric power is 180 MW and the district heating power 348 MW. Between these modes the electric power decreases linearly as the district heating power increases. The district heating network now needs 200 MW of heat. How large is the electric power of the plant? Give your answer in megawatts. Also calculate the overall efficiency of the plant and justify why the combined efficiency of electricity and heat still does not tell which way of production is more worthwhile.",
+      "answer": 206,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L3-02",
+      "level": 3,
+      "text": "A wind farm produces 36.0 GWh of electricity in a year (1 GWh = 3.60 · 10¹² J). If the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is 25.0 MJ/kg, how many kilotonnes of coal (1 kt = 10⁶ kg) would be burned in a year? Also explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
+      "answer": 13.6,
+      "unit": "kt",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L3-03",
+      "level": 3,
+      "text": "Heating a house takes 100 kWh of heat. The electricity is produced in a condensing power plant with an efficiency of 0.400, and 5.0% of it is lost in power lines and transformers, so the house's electricity meter receives the fraction 0.950 · 0.400 = 0.380 of the energy of the fuel. The house has an air-source heat pump with a coefficient of performance of 3.00. How much fuel energy does heating with the pump require at the power plant? Give your answer in kilowatt-hours. Compare the result directly with electric heating and an oil boiler (efficiency 0.900) and conclude which way saves the most fuel.",
+      "answer": 87.7,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ]
+}

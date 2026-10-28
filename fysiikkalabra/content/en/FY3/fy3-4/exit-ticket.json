@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A drawing pin is pushed into a wall with a finger. Why does the sharp tip sink into the wall, although the same force acts on the tip and on the head?",
+    "a": "The area of the tip is very small, so the same force is spread over a small area and the pressure $p = F/A$ is large. At the head the same force is spread over a large area, so the pressure stays small."
+  },
+  {
+    "q": "How large is the hydrostatic pressure at a depth of 5.0 m in water ($\\rho = 1000\\,\\text{kg/m}^3$)? And the total pressure, when atmospheric pressure is 101 kPa?",
+    "a": "$\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 5.0\\,\\text{m} \\approx 49\\,\\text{kPa}$. The total pressure is $101\\,\\text{kPa} + 49\\,\\text{kPa} \\approx 150\\,\\text{kPa}$."
+  },
+  {
+    "q": "A narrow vertical tube and a wide pool are full of water to a height of 1.0 m. In which is the pressure at the bottom greater?",
+    "a": "The pressure is the same. Hydrostatic pressure depends only on the depth, the density of the liquid and the pressure at the surface, not on the shape of the container or the amount of water."
+  }
+]

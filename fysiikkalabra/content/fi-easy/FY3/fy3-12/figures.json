@@ -1,0 +1,21 @@
+{
+ "Kuvitus: Maa avaruudesta nähtynä, ympärillään ohut ilmakehä. Kuvan vasemmassa reunassa paistaa Aurinko, ja tähdet tuikkivat mustalla taivaalla.": "Kuvitus: Maa nähtynä avaruudesta. Maan ympärillä on ohut ilmakehä. Kuvan vasemmassa reunassa paistaa Aurinko. Mustalla taivaalla tuikkii tähtiä.",
+ "Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta, mitä kuvaavat oranssit nuolet. Maassa on lunta.": "Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta. Oranssit nuolet näyttävät sen. Maassa on lunta.",
+ "Kolme lämmön siirtymistapaa, periaatekuva. Johtuminen: lämpö kulkee metallitangon läpi kuumasta päästä kylmään. Konvektio: lämmin vesi nousee kattilassa keskellä ja jäähtynyt vajoaa reunoilla, joten vesi kiertää. Säteily: kuuma kappale lähettää säteilyä, joka kulkee tyhjän tilan läpi.": "Kolme lämmön siirtymistapaa, periaatekuva. Johtuminen: lämpö kulkee metallitangon läpi kuumasta päästä kylmään päähän. Konvektio: lämmin vesi nousee kattilassa keskellä. Jäähtynyt vesi vajoaa reunoilla. Vesi siis kiertää. Säteily: kuuma kappale lähettää säteilyä. Säteily kulkee tyhjän tilan läpi.",
+ "kuuma": "kuuma",
+ "kylmä": "kylmä",
+ "johtuminen": "johtuminen",
+ "konvektio": "konvektio",
+ "säteily": "säteily",
+ "Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän läpi maanpintaan; osa siitä heijastuu takaisin avaruuteen. Maanpinta säteilee lämpösäteilyä ylöspäin, ja ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas.": "Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän läpi maanpintaan. Osa säteilystä heijastuu takaisin avaruuteen. Maanpinta säteilee lämpösäteilyä ylöspäin. Ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas.",
+ "maanpinta": "maanpinta",
+ "ilmakehä": "ilmakehä",
+ "Aurinko": "Aurinko",
+ "heijastuu": "heijastuu",
+ "lämpösäteily": "lämpösäteily",
+ "takaisin": "takaisin",
+ "Seinän poikkileikkaus ja lämpötilan kulku, periaatekuva. Seinässä on ohut sisälevy, paksu eristekerros ja ohut ulkoverhous. Lämpötila laskee sisältä 21 asteesta ulos miinus 15 asteeseen eli 36 kelviniä, ja suurin osa laskusta tapahtuu eristeessä. Lämpöteho P kulkee seinän läpi sisältä ulos.": "Seinän poikkileikkaus ja lämpötilan kulku, periaatekuva. Seinässä on ohut sisälevy, paksu eristekerros ja ohut ulkoverhous. Lämpötila laskee sisällä olevasta 21 asteesta ulkona olevaan miinus 15 asteeseen. Lasku on 36 kelviniä. Suurin osa laskusta tapahtuu eristeessä. Lämpöteho P kulkee seinän läpi sisältä ulos.",
+ "eriste": "eriste",
+ "sisällä": "sisällä",
+ "ulkona": "ulkona"
+}

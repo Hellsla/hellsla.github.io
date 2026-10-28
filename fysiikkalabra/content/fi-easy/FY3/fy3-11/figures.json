@@ -1,0 +1,21 @@
+{
+ "Kuvitus: lauhdevoimalaitos järven rannalla. Voimalinjat vievät sähköä pois, jäähdytystornista nousee suuri höyrypilvi, ja lauhdevesi purkautuu järveen lämpimänä, mikä näkyy oranssina vyöhykkeenä vedessä. Suurin osa polttoaineen energiasta lähtee lämpönä ilmaan ja veteen.": "Kuvitus: lauhdevoimalaitos järven rannalla. Voimalinjat vievät sähköä pois. Jäähdytystornista nousee suuri höyrypilvi. Lauhdevesi purkautuu järveen lämpimänä, ja se näkyy oranssina vyöhykkeenä vedessä. Suurin osa polttoaineen energiasta lähtee lämpönä ilmaan ja veteen.",
+ "Kaasun tekemä työ männälle, periaatekuva. Sylinterin poikkipinta-ala on A. Kaasun paine p työntää mäntää voimalla F = pA, ja mäntä siirtyy matkan Δs oikealle. Kaasun tilavuus kasvaa varjostetun osan verran, ΔV = AΔs. Työ on W_k = FΔs = pAΔs = pΔV. Kuva ei ole mittakaavassa.": "Kaasun tekemä työ männälle, periaatekuva. Sylinterin poikkipinta-ala on A. Kaasun paine p työntää mäntää voimalla F = pA, ja mäntä siirtyy matkan Δs oikealle. Kaasun tilavuus kasvaa varjostetun osan verran, ΔV = AΔs. Työ on W_k = FΔs = pAΔs = pΔV. Kuva ei ole mittakaavassa.",
+ "kaasu": "kaasu",
+ "Lämpövoimakoneen energiavirrat nuolina, joiden leveys kuvaa energiavirtaa eli tehoa: kuumasta lähteestä, jonka lämpötila on T_1, tulee koneeseen lämpö Q_1. Kone tekee työn W, joka on 40 prosenttia Q_1:stä, ja luovuttaa loput, lämmön Q_2, kylmään ympäristöön, jonka lämpötila on T_2. Nuolten leveydet ovat mittakaavassa: Q_1 60, W 24 ja Q_2 36 yksikköä, joten Q_1-nuoli on yhtä leveä kuin W- ja Q_2-nuolet yhteensä.": "Lämpövoimakoneen energiavirrat nuolina. Nuolen leveys kuvaa energiavirtaa eli tehoa. Kuumasta lähteestä tulee koneeseen lämpö Q_1. Lähteen lämpötila on T_1. Kone tekee työn W, joka on 40 prosenttia Q_1:stä. Kone luovuttaa loput, lämmön Q_2, kylmään ympäristöön. Ympäristön lämpötila on T_2. Nuolten leveydet ovat mittakaavassa: Q_1 on 60, W on 24 ja Q_2 on 36 yksikköä. Q_1-nuoli on siis yhtä leveä kuin W- ja Q_2-nuolet yhteensä.",
+ "kuuma lähde": "kuuma lähde",
+ "kylmä ympäristö": "kylmä ympäristö",
+ "kone": "kone",
+ "nuolen leveys": "nuolen leveys",
+ "kuvaa tehoa": "kuvaa tehoa",
+ "Lämpöpumpun energiavirrat nuolina, joiden leveys kuvaa tehoa: sähköenergia E_s ja ulkoilmasta otettu lämpö Q_ulko tulevat pumppuun, ja pumppu luovuttaa sisälle lämmön Q_sisälle, joka on niiden summa. Nuolten leveydet ovat mittakaavassa: E_s 20, Q_ulko 40 ja Q_sisälle 60 yksikköä, joten sisälle lähtevä nuoli on yhtä leveä kuin kaksi tulevaa nuolta yhteensä ja kolme kertaa niin leveä kuin sähkön nuoli.": "Lämpöpumpun energiavirrat nuolina. Nuolen leveys kuvaa tehoa. Sähköenergia E_s ja ulkoilmasta otettu lämpö Q_ulko tulevat pumppuun. Pumppu luovuttaa sisälle lämmön Q_sisälle, joka on niiden summa. Nuolten leveydet ovat mittakaavassa: E_s on 20, Q_ulko on 40 ja Q_sisälle on 60 yksikköä. Sisälle lähtevä nuoli on siis yhtä leveä kuin kaksi tulevaa nuolta yhteensä. Se on kolme kertaa niin leveä kuin sähkön nuoli.",
+ "pumppu": "pumppu",
+ "sähkö": "sähkö",
+ "ulkoilman lämpö": "ulkoilman lämpö",
+ "ulko": "ulko",
+ "lämpö sisälle": "lämpö sisälle",
+ "sisälle": "sisälle",
+ "leveys kuvaa tehoa": "(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta. Paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2. Kuvaaja on siis vaakasuora jana, ja nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jää varjostettu suorakulmio. Sen leveys on tilavuuden muutos ΔV ja korkeus on p. Suorakulmion pinta-ala on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.",
+ "(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.": "(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.",
+ "kaasu laajenee": "kaasu laajenee"
+}

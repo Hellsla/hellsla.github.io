@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "contribution": "Paine $p = F/A$ kertoo, miten voima jakautuu pinnalle. Nesteessä paine kasvaa syvyyden mukana suorana $p = p_0 + \\rho g h$. Suoran vakiotermi on ilmanpaine ja kulmakerroin on $\\rho g$.",
+  "learn": [
+    "Osaat laskea paineen voimasta ja pinta-alasta ja selittää, miten voima jakautuu pinnalle.",
+    "Osaat laskea nesteen paineen eri syvyyksillä.",
+    "Tulkitset paineen ja syvyyden kuvaajan vakiotermin ja kulmakertoimen."
+  ],
+  "prior": [
+    "Paino on voima, $G = mg$, ja $g = 9{,}81\\,\\text{m/s}^2$ (luku *Voima vuorovaikutuksen mittana ja paino*)",
+    "Paine on tilanmuuttuja, joka syntyy mikromallissa hiukkasten törmäyksistä seinämään (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Sukellat uimahallin hyppyaltaan pohjaa kohti. Jo parin metrin syvyydessä korvissa tuntuu painetta. Mitä alemmas menet, sitä selvemmin sen tuntee. Pinnalla korvat eivät tunne mitään, vaikka ilmakehäkin painaa niitä. Padon muuria ja tärykalvoasi kuormittaa sama asia: yläpuolella oleva vesi.",
+      "question": "Miten paine muuttuu, kun nesteessä mennään syvemmälle, ja mistä kaikesta se riippuu?"
+    },
+    {
+      "id": "pr-paino",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: veden paino",
+      "prompt": "Kuutiometri vettä (tiheys $1000\\,\\text{kg/m}^3$) on massaltaan 1000 kg. Kuinka suuri on tämän vesimäärän paino $G = mg$?",
+      "choices": [
+        {
+          "text": "1000 N",
+          "feedback": "Massa ja paino menivät sekaisin. Paino on voima, ja se saadaan kertomalla massa putoamiskiihtyvyydellä: $G = mg = 1000\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 9810\\,\\text{N}$."
+        },
+        {
+          "text": "noin 9,8 kN",
+          "correct": true,
+          "feedback": "Oikein: $G = mg = 1000\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 9810\\,\\text{N} \\approx 9{,}8\\,\\text{kN}$. Tätä vesipatsaan painoa tarvitset tällä tunnilla."
+        },
+        {
+          "text": "102 N",
+          "feedback": "Jaoit massan putoamiskiihtyvyydellä. Paino on massa *kertaa* $g$: jokainen kilogramma painaa Maan pinnalla 9,81 N, joten 1000 kg painaa 9810 N."
+        },
+        {
+          "text": "1000 kg",
+          "feedback": "Kilogramma on massan yksikkö. Paino on voima, ja voiman yksikkö on newton: $G = mg = 9810\\,\\text{N}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: syvyys kaksinkertaistuu",
+      "prompt": "Järvessä on painemittari 5 m:n syvyydessä. Se lasketaan 10 m:n syvyyteen. Pinnalla vaikuttaa ilmanpaine 101 kPa. Mitä mittarin näyttämälle kokonaispaineelle tapahtuu?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Kokonaispaine kaksinkertaistuu, koska syvyys kaksinkertaistuu.",
+          "feedback": "Mittauksesi näyttävät, että kokonaispaine kasvaa noin 150 kPa:sta 199 kPa:iin. Se on vain noin 1,3-kertainen. Kaksinkertaistuu vain veden aiheuttama osa (noin 49 kPa → 98 kPa). Pinnan ilmanpaine 101 kPa on mukana kummassakin syvyydessä samana. Siksi kokonaispaine ei ole suoraan verrannollinen syvyyteen."
+        },
+        {
+          "text": "Kokonaispaine kasvaa, mutta vähemmän kuin kaksinkertaiseksi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: 5 m:ssä mallin kokonaispaine on noin 150 kPa ja 10 m:ssä noin 199 kPa. Veden aiheuttama osa kaksinkertaistuu (49 kPa → 98 kPa), mutta ilmanpaine 101 kPa pysyy samana vakioterminä."
+        },
+        {
+          "text": "Paine pysyy samana, koska vesi on samaa koko syvyydeltä.",
+          "feedback": "Mittauksesi näyttävät noin 49 kPa:n kasvun viiden metrin matkalla. Vesi on samaa, mutta syvemmällä sen yläpuolella on enemmän vettä, ja tämän vesipatsaan paino painaa mittaria."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: tiheämpi neste",
+      "prompt": "Mittari pidetään 10 m:n syvyydessä. Tavallinen vesi ($1000\\,\\text{kg/m}^3$) vaihdetaan Kuolleenmeren veteen ($1240\\,\\text{kg/m}^3$). Sen tiheys on 24 % suurempi. Mitä tapahtuu?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Mikään ei muutu, koska paine riippuu vain syvyydestä.",
+          "feedback": "Mallin arvot näyttävät, että veden aiheuttama paine kasvaa noin 98 kPa:sta 122 kPa:iin. Sama syvyys tiheämpää nestettä tarkoittaa raskaampaa nestepatsasta mittarin yläpuolella."
+        },
+        {
+          "text": "Veden aiheuttama paine pienenee, koska tiheämmässä vedessä kelluu paremmin.",
+          "feedback": "Mallin arvot näyttävät kasvun, ei pienenemistä: noin 98 kPa → 122 kPa. Kelluminen kertoo nosteesta, joka on eri asia. Mittarin yläpuolinen nestepatsas on tiheämpänä raskaampi, joten paine kasvaa."
+        },
+        {
+          "text": "Veden aiheuttama paine kasvaa 24 %, mutta kokonaispaine vähemmän.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: veden aiheuttama osa kasvaa noin 98 kPa:sta 122 kPa:iin (24 %), mutta kokonaispaine vain noin 199 kPa:sta 223 kPa:iin (noin 12 %), koska ilmanpaine 101 kPa ei muutu."
+        },
+        {
+          "text": "Kokonaispaine kasvaa 24 %, samassa suhteessa kuin tiheys.",
+          "feedback": "Mallin arvojen mukaan kokonaispaine kasvaa noin 199 kPa:sta 223 kPa:iin, eli noin 12 %. Tiheyden mukana kasvaa vain nesteen aiheuttama osa; ilmanpaine 101 kPa pysyy samana."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Ennuste 3: kapea putki ja leveä allas",
+      "prompt": "Kapea pystyputki ja leveä allas on täytetty vedellä samaan korkeuteen, 2,0 m. Altaassa on vettä tuhat kertaa enemmän kuin putkessa. Kolme opiskelijaa selittää, missä pohjan paine on suurempi. Kuka on oikeassa?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "Aino: altaassa, koska siinä on enemmän vettä ja vesi painaa enemmän.",
+          "feedback": "Altaan vesi painaa kokonaisuutena enemmän. Paino jakautuu kuitenkin myös tuhat kertaa suuremmalle pohjalle. Paine on voima jaettuna alalla, $p = F/A$. Teoriatiivistelmässä vesipatsaan paino jaetaan sen pohjan alalla. Katso, mitä alalle käy."
+        },
+        {
+          "text": "Bea: paine on sama, koska jokaisen pohjan kohdan yläpuolella on yhtä korkea vesipatsas.",
+          "correct": true,
+          "feedback": "Juuri näin: paine riippuu siitä, kuinka korkea ja kuinka tiheä nestepatsas kohdan yläpuolella on, ei astian leveydestä. Teoriatiivistelmä johtaa tämän vesipatsaan painosta: pinta-ala supistuu pois."
+        },
+        {
+          "text": "Cem: putkessa, koska kapea putki keskittää veden painon pienelle alalle.",
+          "feedback": "Putken vesi painaa vähemmän, ja se jakautuu pienemmälle alalle. Pienempi paino ja pienempi ala kumoavat toisensa täsmälleen, kun vesi on yhtä korkealla. Teoriatiivistelmässä näet, miksi pinta-ala supistuu pois."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa painemittari laskeutuu nesteeseen.",
+      "howto": "Säädä syvyyttä ja tiheyttä ja seuraa mittarin lukemaa ja $(h, p)$-kuvaajaa. Ruutu *Näytä vain ylipaine* jättää kuvaajasta pois ilmanpaineen.",
+      "model": "Ilmanpaine pinnalla on kiinteä 101 kPa. Neste on levossa ja yhtä tiheää kaikkialla. Nesteen kokoonpuristuminen jätetään huomiotta. Lukemat ovat mallin arvoja, eivät mittauksia oikeasta järvestä.",
+      "calc": "Paine kasvaa syvyyden mukana tasaisesti: $p = p_0 + \\rho g h$, joten jokainen metri lisää painetta $\\rho g \\cdot 1\\,\\text{m}$ verran. Suoran kulmakerroin $\\rho g$ riippuu tiheydestä, mutta pinnalla ($h = 0$) paine on aina ilmanpaine $p_0$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain syvyys muuttuu",
+      "intro": "Testaa ennuste 1. Neste on vettä, ja tiheys pysyy vakiona. Muuta vain syvyyttä ja kirjaa paineet ainakin kahdella syvyydellä, esimerkiksi 5 m, 10 m, 15 m ja 20 m. Vertaa, kasvaako kokonaispaine samassa suhteessa kuin syvyys ja kuinka paljon paine kasvaa jokaista viittä metriä kohti.",
+      "initial": {
+        "h": 5,
+        "rho": 1000
+      },
+      "units": {
+        "h": "m",
+        "rho": "kg/m³"
+      },
+      "locked": [
+        "rho"
+      ],
+      "vary": "h",
+      "measure": [
+        {
+          "key": "pOver",
+          "label": "ρgh (kPa)"
+        },
+        {
+          "key": "pTotal",
+          "label": "p (kPa)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta kilopascalia paine vedessä kasvaa jokaista syvyysmetriä kohti? Lue se mittauksistasi.",
+        "answer": 9.81,
+        "unit": "kPa",
+        "tolerance": 0.02,
+        "mistakes": [
+          {
+            "value": 9810,
+            "feedback": "Tämä on pascaleina. Kysyttiin kilopascaleja: $9810\\,\\text{Pa} = 9{,}81\\,\\text{kPa}$."
+          },
+          {
+            "value": 19.9,
+            "feedback": "Jaoit kokonaispaineen syvyydellä ($199{,}1\\,\\text{kPa} / 10\\,\\text{m}$). Kokonaispaineessa on mukana ilmanpaine, joka ei kasva syvyyden mukana. Laske kasvu kahden syvyyden erotuksesta: $(199{,}1 - 150{,}1)\\,\\text{kPa} / 5\\,\\text{m}$."
+          }
+        ],
+        "solution": "**Annettu:** vesi, $\\rho = 1000\\,\\text{kg/m}^3$ vakiona; mittaukset kahdella syvyydellä, joiden välillä $\\Delta h = 10{,}0\\,\\text{m} - 5{,}0\\,\\text{m} = 5{,}0\\,\\text{m}$: syvyydellä $5{,}0\\,\\text{m}$ kokonaispaine $p_1 = 150{,}1\\,\\text{kPa}$ ja syvyydellä $10{,}0\\,\\text{m}$ paine $p_2 = 199{,}1\\,\\text{kPa}$\n\n**Kysytty:** paineen kasvu syvyysmetriä kohti, $\\dfrac{\\Delta p}{\\Delta h}$, yksikössä $\\text{kPa/m}$\n\n**Periaate:** Nesteessä $p = p_0 + \\rho g h$, ja koska vain syvyys muuttuu ($\\rho$ ja $p_0$ pysyvät samoina), paine kasvaa tasaisesti: kasvu metriä kohti on aina sama luku $\\rho g$. Ilmanpaine $p_0$ ei muutu syvyyden mukana, joten se supistuu pois, kun lasketaan kahden syvyyden paineiden erotus.\n\n**Kaava:** $p_2 - p_1 = \\rho g (h_2 - h_1)$, joten\n\n$$\\frac{\\Delta p}{\\Delta h} = \\frac{p_2 - p_1}{h_2 - h_1} \\;(= \\rho g)$$\n\n**Muunnokset:** Paineet ovat jo kilopascaleina ja syvyydet metreinä, joten tulos tulee suoraan yksikössä $\\text{kPa/m}$ eikä muunnoksia tarvita. Vertailuksi $\\rho g = 1000 \\cdot 9{,}81\\,\\text{Pa/m} = 9{,}81\\,\\text{kPa/m}$.\n\n**Sijoitus:** $\\dfrac{\\Delta p}{\\Delta h} = \\dfrac{199{,}1\\,\\text{kPa} - 150{,}1\\,\\text{kPa}}{10{,}0\\,\\text{m} - 5{,}0\\,\\text{m}} = \\dfrac{49{,}0\\,\\text{kPa}}{5{,}0\\,\\text{m}} = 9{,}80\\,\\tfrac{\\text{kPa}}{\\text{m}}$\n\n**Vastaus:** $9{,}8\\,\\text{kPa/m}$ (lukemistasi), kaksi merkitsevää numeroa, koska syvyysero $5{,}0\\,\\text{m}$ tunnetaan kahden numeron tarkkuudella, vaikka paine-ero $49{,}0\\,\\text{kPa}$ on kolmen. Mallin arvo on $\\rho g = 9{,}81\\,\\text{kPa/m}$.\n\n**Järkevyys:** Kasvu on noin $10\\,\\text{kPa}$ metriä kohti, mikä sopii siihen, että $10\\,\\text{m}$ vettä lisää noin yhden ilmanpaineen ($101\\,\\text{kPa}$). Paine kasvaa samassa suhteessa syvyyden kanssa vain ylipaineella: $5\\,\\text{m}$ antaa $49\\,\\text{kPa}$ ja $10\\,\\text{m}$ antaa $98\\,\\text{kPa}$, eli kaksinkertaisen. Kokonaispaine ei kaksinkertaistu ($150 \\to 199\\,\\text{kPa}$), koska $101\\,\\text{kPa}$ on mukana molemmissa."
+      },
+      "names": {
+        "h": "syvyys h",
+        "rho": "tiheys ρ"
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Lisätutkimus: vain tiheys muuttuu",
+      "intro": "Testaa ennuste 2. Mittari pysyy 10 m:n syvyydessä, ja vain nesteen tiheys muuttuu. Kirjaa paineet ainakin kahdella tiheydellä, esimerkiksi bensiini 720, vesi 1000 ja Kuolleenmeren vesi 1240 kg/m³. Kumpi paineista kasvaa samassa suhteessa kuin tiheys?",
+      "initial": {
+        "h": 10,
+        "rho": 1000
+      },
+      "units": {
+        "h": "m",
+        "rho": "kg/m³"
+      },
+      "locked": [
+        "h"
+      ],
+      "vary": "rho",
+      "measure": [
+        {
+          "key": "pOver",
+          "label": "ρgh (kPa)"
+        },
+        {
+          "key": "pTotal",
+          "label": "p (kPa)"
+        }
+      ],
+      "min": 2,
+      "names": {
+        "h": "syvyys h",
+        "rho": "tiheys ρ"
+      },
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miten paine riippuu syvyydestä?",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Kirjoita mittaustesi perusteella, miten ylipaine $\\rho g h$ ja kokonaispaine $p$ riippuivat syvyydestä. Kaksinkertaistuiko kokonaispaine, kun syvyys kaksinkertaistui? Mitä kertovat $(h, p)$-kuvaajan suoran kulmakerroin ja leikkauskohta pystyakselilla?",
+      "model": "Ylipaine kasvoi suoraan verrannollisesti syvyyteen: $5\\,\\text{m}$:ssä noin $49\\,\\text{kPa}$ ja $10\\,\\text{m}$:ssä noin $98\\,\\text{kPa}$, eli noin $9{,}8\\,\\text{kPa}$ jokaista metriä kohti. Kokonaispaine kasvoi $150\\,\\text{kPa}$:sta $199\\,\\text{kPa}$:iin eikä kaksinkertaistunut, koska siihen sisältyy pinnan ilmanpaine $p_0 = 101\\,\\text{kPa}$, joka ei riipu syvyydestä. $(h, p)$-kuvaaja on suora, jonka kulmakerroin on $\\rho g$ ja joka leikkaa pystyakselin kohdassa $p_0$. Simulaatio laskee paineen kaavasta, joten se näyttää mallin; oikeat syvyysmittarit ja sukeltajien kokemus (noin yksi ilmakehän paine lisää jokaista $10\\,\\text{m}$ kohti) tukevat sitä.",
+      "criteria": [
+        "Kerroin, miten ylipaine riippui syvyydestä, ja käytin lukuja.",
+        "Selitin, miksi kokonaispaine ei kaksinkertaistunut.",
+        "Tulkitsin kulmakertoimen ja leikkauskohdan.",
+        "Erotin mallin laskemat arvot mittauksista."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi mittauksiisi ja malliin $p = p_0 + \\rho g h$. Mikä termi selittää, ettei kokonaispaine kaksinkertaistu syvyyden mukana? Palaa myös alun kysymykseen. Miten paine muuttuu syvemmälle mentäessä? Miksi padon muurin on oltava pohjalta paksuin?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Altaan vesi on 4,0 m syvää. Opiskelija laskee hydrostaattisen paineen kohdassa, joka on 1,0 m altaan pohjan yläpuolella: $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}0\\,\\text{m} \\approx 9{,}8\\,\\text{kPa}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Syvyys mitataan pinnasta, ei pohjasta: $h = 3{,}0\\,\\text{m}$, joten $\\rho g h \\approx 29\\,\\text{kPa}$.",
+          "correct": true,
+          "feedback": "Oikein. Paineen ratkaisee kohdan yläpuolinen vesipatsas, ja sen korkeus on $4{,}0\\,\\text{m} - 1{,}0\\,\\text{m} = 3{,}0\\,\\text{m}$. Siten $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{m} \\approx 29\\,\\text{kPa}$."
+        },
+        {
+          "text": "Ilmanpaine 101 kPa puuttuu.",
+          "feedback": "Kysyttiin hydrostaattista painetta eli ylipainetta $\\rho g h$, johon ilmanpaine ei kuulu. Kokonaispaineessa se olisi mukana. Virhe on siinä, mistä syvyys mitataan."
+        },
+        {
+          "text": "Tulos pitäisi kertoa pohjan pinta-alalla.",
+          "feedback": "Pinta-alalla kertominen antaisi voiman, $F = pA$, ei painetta. Paine $\\rho g h$ ei riipu pinta-alasta. Tarkista, mistä syvyys $h$ mitataan."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Lasku on oikein muodoltaan, mutta $h$ on väärä. Syvyys mitataan nesteen pinnasta alaspäin; 1,0 m pohjan yläpuolella oleva kohta on 3,0 m:n syvyydessä."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Elohopeailmapuntarissa on pystysuora lasiputki. Putken yläpää on suljettu, ja alapää on elohopea-astiassa. Putken yläosassa elohopean yläpuolella on tyhjiö, joten paine patsaan yläpinnalla on nolla. Ilmanpaine 101 kPa pitää elohopeapatsasta putkessa. Kuinka korkea patsas on? Elohopean tiheys on $13\\,600\\,\\text{kg/m}^3$. Vastaa metreinä.",
+      "answer": 0.757,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Astian pinnan tasolla paine putken sisällä on yhtä suuri kuin ulkona eli ilmanpaine. Mikä tuottaa tämän paineen putken sisällä?",
+        "Patsaan yläpinnalla paine on nolla, joten patsaan hydrostaattinen paine on ilmanpaineen suuruinen: $\\rho g h = p_0$, josta $h = \\dfrac{p_0}{\\rho g}$.",
+        "Sijoita pascaleina: $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10.3,
+          "feedback": "Käytit veden tiheyttä $1000\\,\\text{kg/m}^3$. Vesipatsas olisikin noin 10 m korkea, mutta elohopea on 13,6 kertaa tiheämpää, joten patsas on vastaavasti matalampi."
+        },
+        {
+          "value": 0.000757,
+          "feedback": "Sijoitit ilmanpaineen kilopascaleina. Kun tiheys on yksikössä $\\text{kg/m}^3$ ja $g$ yksikössä $\\text{m/s}^2$, paine on sijoitettava pascaleina: $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$."
+        }
+      ],
+      "solution": "**Annettu:** elohopean tiheys $\\rho = 13\\,600\\,\\text{kg/m}^3$ (tehtävässä annettu), ilmanpaine $p_0 = 101\\,\\text{kPa}$, paine patsaan yläpinnalla $0$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** elohopeapatsaan korkeus $h$ metreinä\n\n**Periaate:** Patsas on levossa, joten nestepinnan tasolla astiassa ja putken sisällä paine on sama. Astiassa se on ilmanpaine $p_0$, ja putkessa sen tuottaa elohopeapatsaan hydrostaattinen paine, koska patsaan yläpuolella on tyhjiö ($p = 0$) eikä mikään muu paina patsasta alaspäin. Siksi $p_0 = 0 + \\rho g h$.\n\n**Kaava:** $p_0 = \\rho g h$, josta\n\n$$h = \\frac{p_0}{\\rho g}$$\n\n**Muunnokset:** $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$, jotta yksiköt $\\text{Pa} = \\text{kg}/(\\text{m}\\cdot\\text{s}^2)$ supistuvat metreiksi.\n\n**Sijoitus:** $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2}} = \\dfrac{101\\,000\\,\\text{Pa}}{133\\,416\\,\\tfrac{\\text{kg}}{\\text{m}^2\\text{s}^2}} = 0{,}75703\\,\\text{m}$\n\n**Vastaus:** $0{,}757\\,\\text{m}$, kolme merkitsevää numeroa kuten tiheydessä $13\\,600\\,\\text{kg/m}^3$ ja ilmanpaineessa $101\\,\\text{kPa}$.\n\n**Järkevyys:** Vesipatsas olisi $101\\,\\text{kPa} / 9{,}81\\,\\text{kPa/m} \\approx 10{,}3\\,\\text{m}$ korkea, ja elohopea on $13{,}6$ kertaa tiheämpää, joten patsas on $10{,}3\\,\\text{m} / 13{,}6 \\approx 0{,}757\\,\\text{m}$. Takaisin laskettuna $13\\,600 \\cdot 9{,}81 \\cdot 0{,}757\\,\\text{Pa} \\approx 101\\,000\\,\\text{Pa}$. Noin $76\\,\\text{cm}$ on sopiva korkeus lasiputkelle.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii kahden asian yhdistämistä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Painemittarin anturikalvo käännetään 4,0 m:n syvyydessä vuorotellen osoittamaan ylös, sivulle ja alas. Neste on levossa. Mitä mittari näyttää?",
+      "choices": [
+        {
+          "text": "Suurimman lukeman, kun kalvo osoittaa ylös, koska vesi painaa alaspäin.",
+          "feedback": "Vesipatsaan paino määrää paineen suuruuden, mutta levossa olevassa nesteessä paine vaikuttaa joka suuntaan yhtä suurena. Jos sivulle vaikuttava paine olisi pienempi, vesi valuisi sivuun eikä pysyisi levossa."
+        },
+        {
+          "text": "Saman lukeman kaikissa asennoissa.",
+          "correct": true,
+          "feedback": "Oikein. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta, ja levossa olevassa nesteessä se vaikuttaa joka suuntaan yhtä suurena. Paineen aiheuttama voima on aina kohtisuorassa kalvoa vastaan."
+        },
+        {
+          "text": "Nollan, kun kalvo osoittaa sivulle, koska vesi ei paina sivulle.",
+          "feedback": "Vesi painaa myös sivulle: pullon kyljen reiästä vesi suihkuaa ulos, ja padon pystysuoraan seinään kohdistuu vaakasuora voima. Levossa olevassa nesteessä paine on joka suuntaan sama."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaaja ja laskeminen",
+      "prompt": "Tuntemattoman nesteen $(h, p)$-kuvaaja on suora, joka kulkee pisteiden (0 m, 101 kPa) ja (8,0 m, 171 kPa) kautta. Mikä on nesteen tiheys? Vastaa yksikössä kg/m³.",
+      "answer": 890,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitä kuvaajan kulmakerroin kertoo, kun $p = p_0 + \\rho g h$?",
+        "Kulmakerroin on $\\rho g = \\dfrac{\\Delta p}{\\Delta h}$, joten $\\rho = \\dfrac{\\Delta p}{g\\,\\Delta h}$.",
+        "$\\dfrac{\\Delta p}{\\Delta h} = \\dfrac{171\\,\\text{kPa} - 101\\,\\text{kPa}}{8{,}0\\,\\text{m}} = 8{,}75\\,\\text{kPa/m} = 8750\\,\\text{Pa/m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2180,
+          "feedback": "Jaoit kokonaispaineen 171 kPa syvyydellä. Kuvaajan vakiotermi 101 kPa on ilmanpaine, ei nesteen aiheuttamaa painetta. Käytä kulmakerrointa eli paineen muutosta: $(171 - 101)\\,\\text{kPa} / 8{,}0\\,\\text{m}$."
+        },
+        {
+          "value": 0.892,
+          "feedback": "Kulmakerroin oli kilopascaleina metriä kohti. Muunna pascaleiksi ennen jakamista: $8{,}75\\,\\text{kPa/m} = 8750\\,\\text{Pa/m}$."
+        }
+      ],
+      "solution": "**Annettu:** suoran kaksi pistettä $(h, p)$: $(0\\,\\text{m},\\ 101\\,\\text{kPa})$ ja $(8{,}0\\,\\text{m},\\ 171\\,\\text{kPa})$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** nesteen tiheys $\\rho$ yksikössä $\\text{kg/m}^3$\n\n**Periaate:** Nesteessä $p = p_0 + \\rho g h$, joten $(h, p)$-kuvaaja on suora, jonka vakiotermi on pinnan paine $p_0$ ja jonka kulmakerroin on $\\rho g$. Tiheys saadaan siis kulmakertoimesta, kun nesteen tiheys on vakio koko syvyydellä. Vakiotermi ei vaikuta tiheyteen.\n\n**Kuvaajan lukeminen:** Pisteestä $h = 0$ luetaan $p_0 = 101\\,\\text{kPa}$ (ilmanpaine pinnalla) ja pisteestä $h = 8{,}0\\,\\text{m}$ paine $171\\,\\text{kPa}$. Kulmakerroin on paineen muutos jaettuna syvyyden muutoksella: $\\Delta p = 171\\,\\text{kPa} - 101\\,\\text{kPa} = 70\\,\\text{kPa}$ ja $\\Delta h = 8{,}0\\,\\text{m}$.\n\n**Kaava:** kulmakerroin $\\dfrac{\\Delta p}{\\Delta h} = \\rho g$, josta\n\n$$\\rho = \\frac{\\Delta p}{g\\,\\Delta h}$$\n\n**Muunnokset:** $\\Delta p = 70\\,\\text{kPa} = 70\\,000\\,\\text{Pa}$, jotta tulos tulee yksikössä $\\text{kg/m}^3$. Samalla kulmakerroin on $\\dfrac{70\\,000\\,\\text{Pa}}{8{,}0\\,\\text{m}} = 8750\\,\\text{Pa/m}$.\n\n**Sijoitus:** $\\rho = \\dfrac{70\\,000\\,\\text{Pa}}{9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8{,}0\\,\\text{m}} = \\dfrac{70\\,000\\,\\text{Pa}}{78{,}48\\,\\tfrac{\\text{m}^2}{\\text{s}^2}} = 891{,}9\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Vastaus:** $890\\,\\text{kg/m}^3$, kaksi merkitsevää numeroa, koska paine-ero $\\Delta p = 70\\,\\text{kPa}$ ja syvyysero $\\Delta h = 8{,}0\\,\\text{m}$ on annettu kahdella numerolla.\n\n**Järkevyys:** Veden kulmakerroin olisi $9{,}81\\,\\text{kPa/m}$, joten $8{,}0\\,\\text{m}$ antaisi $78{,}5\\,\\text{kPa}$. Mitattu kasvu $70\\,\\text{kPa}$ on hieman pienempi, joten neste on vettä kevyempää, esimerkiksi öljyä. Takaisin laskettuna $890 \\cdot 9{,}81 \\cdot 8{,}0\\,\\text{Pa} \\approx 70\\,000\\,\\text{Pa}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Sukeltaja on 3,0 m:n syvyydessä, ja korvassa tuntuu painetta. Hän tasaa paineen päästämällä ilmaa nielusta välikorvaan. Sen jälkeen tunne katoaa. Selitä paineen avulla, miksi tärykalvoon kohdistuu aluksi voima ja miksi voima häviää tasauksessa. Käytä käsitteitä paine, ylipaine ja voima.",
+      "criteria": [
+        "Sanon, että ulkopuolinen paine on 3,0 m:ssä ilmanpainetta suurempi hydrostaattisen paineen $\\rho g h$ verran (noin 29 kPa).",
+        "Sanon, että välikorvan ilma on aluksi ilmanpaineessa, joten tärykalvon eri puolilla on eri paine.",
+        "Perustelen voiman paine-erolla ja pinta-alalla, $F = \\Delta p \\cdot A$, ja sanon voiman olevan kohtisuorassa kalvoa vastaan.",
+        "Selitän, että tasauksen jälkeen paine on kalvon molemmilla puolilla sama, joten voimat kumoavat toisensa."
+      ],
+      "model": "Pinnalla tärykalvon molemmilla puolilla on ilmanpaine, joten voimat kumoavat toisensa. Kolmen metrin syvyydessä ulkopuolinen paine on ilmanpainetta suurempi ylipaineen $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{m} \\approx 29\\,\\text{kPa}$ verran, mutta välikorvan ilma on yhä ilmanpaineessa. Paine-ero työntää kalvoa sisäänpäin, kohtisuoraan sen pintaa vastaan, voimalla $F = \\Delta p \\cdot A$; jos kalvon ala on noin $0{,}6\\,\\text{cm}^2$ (likiarvo), voima on noin 1,8 N. Kun sukeltaja päästää välikorvaan lisää ilmaa, sen paine nousee ulkopuolisen paineen suuruiseksi. Silloin kalvon eri puolilla on sama paine, voimat kumoavat toisensa ja tunne katoaa.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

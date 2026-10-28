@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "contribution": "Voimalaitos muuttaa energiaa vaihe vaiheelta. Koko ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3$. Lauhdevoimalaitoksen suurin häviö on lämpö, joka siirtyy höyrykierrosta lauhduttimeen. Yhteistuotannossa tämä lämpö käytetään kaukolämpönä. Silloin kokonaishyötysuhde nousee, mutta sähköä saadaan vähemmän.",
+  "learn": [
+    "Osaat laskea energiantuotannon ketjun hyötysuhteen vaiheiden hyötysuhteiden tulona.",
+    "Tunnistat lauhdevoimalaitoksen suurimman energiahäviön.",
+    "Osaat selittää, miksi yhteistuotannossa kokonaishyötysuhde nousee mutta sähköä saadaan vähemmän."
+  ],
+  "prior": [
+    "Hyötysuhde $\\eta = W/Q_1$ ja lämpövoimakoneen energiatase $Q_1 = W + Q_2$ (luku Kaasun tekemä työ ja lämpövoimakone)",
+    "Lämpömäärä $Q = cm\\,\\Delta T$ ja ominaislämpökapasiteetti (luku Aineen lämpeneminen ja jäähtyminen)",
+    "Teho on energia aikayksikköä kohti ja energia säilyy (luku Työ ja energia)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Lauhdevoimalaitoksen polttoaineteho on 500 MW. Sähköverkkoon lähtee kuitenkin vain 200 MW. Energia säilyy, joten se ei voi hävitä mihinkään. Laitoksen lauhduttimesta lähtevä jäähdytysvesi on lämpimämpää kuin sisään tuleva merivesi.",
+      "question": "Missä energiaketjun vaiheessa menee eniten polttoaineen energiaa muuhun kuin sähköön? Voisiko tämän energian käyttää hyödyksi?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa aiemmilta tunneilta",
+      "prompt": "Lämpövoimakone ottaa kuumasta lähteestä lämmön $Q_1 = 800\\,\\text{MJ}$. Se tekee työn $W = 280\\,\\text{MJ}$. Kuinka suuri lämpö $Q_2$ luovutetaan kylmempään ympäristöön? Kone toimii kierroksittain. Sen sisäenergia on siis kierroksen lopussa sama kuin alussa.",
+      "choices": [
+        {
+          "text": "$Q_2 = 1080\\,\\text{MJ}$",
+          "feedback": "Laskit lämmöt yhteen: $Q_1 + W$. Koneesta ulos tuleva energia ei voi olla suurempi kuin sinne tullut. Energian säilymisestä saadaan $Q_1 = W + Q_2$. Siis $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$."
+        },
+        {
+          "text": "$Q_2 = 520\\,\\text{MJ}$",
+          "correct": true,
+          "feedback": "Oikein: $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$. Koneen hyötysuhde on $\\eta = W/Q_1 = 0{,}35$. Tällä tunnilla lasket samalla tavalla koko voimalaitoksen ja sen vaiheiden hyötysuhteen."
+        },
+        {
+          "text": "$Q_2 = 280\\,\\text{MJ}$",
+          "feedback": "Tämä on koneen tekemä työ $W$. Kysytty lämpö luovutetaan kylmempään ympäristöön. Energian säilyminen sanoo $Q_1 = W + Q_2$, joten $Q_2 = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$."
+        },
+        {
+          "text": "$Q_2 = 0$, koska energia säilyy.",
+          "feedback": "Energian säilyminen ei tarkoita, että kaikki energia muuttuu työksi. Lämpövoimakoneen on luovutettava osa lämmöstä kylmempään ympäristöön. Juuri siksi energia säilyy: $800\\,\\text{MJ} = 280\\,\\text{MJ} + Q_2$, joten $Q_2 = 520\\,\\text{MJ}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: missä vaiheessa energiaa menee eniten?",
+      "justify": true,
+      "prompt": "Lauhdevoimalaitoksen ketju on polttoaine, kattila, turbiini ja lauhdutin, generaattori ja muuntaja, sähköverkko. Polttoaineteho on 500 MW ja sähköteho 200 MW. Ketjun varrella siirtyy siis ympäristöön lämpönä yhteensä 300 MW. Missä vaiheessa menee mielestäsi eniten?",
+      "choices": [
+        {
+          "text": "Kattilassa, kun savukaasut vievät osan polttoaineen energiasta.",
+          "feedback": "Savukaasut vievät osan energiasta. Kattila on kuitenkin yksi laitoksen tehokkaimmista osista. Nykyaikaisessa kattilassa yli 90 % polttoaineen energiasta siirtyy höyryyn. Tutki-osan taulukko näyttää, paljonko kukin vaihe todella häviää."
+        },
+        {
+          "text": "Turbiinissa ja lauhduttimessa: höyry laajenee turbiinissa ja tiivistyy lauhduttimessa.",
+          "correct": true,
+          "feedback": "Tutki-osan taulukko tukee tätä. Turbiinin ja lauhduttimen eli höyrykierron hyötysuhde on vain 0,46. Siinä menee siis noin puolet koko polttoaineen energiasta. Syy ei ole kitka. Syy on se, että lämpövoimakoneen on luovutettava lämpöä kylmempään ympäristöön."
+        },
+        {
+          "text": "Generaattorissa, kun pyörimisen energia muuttuu sähköksi.",
+          "feedback": "Generaattori on yksi tehokkaimmista koneista. Siinä ei ole lämpövoimakoneen pakollista häviötä. Vaiheiden luvut ovat Tutki-osan taulukossa."
+        },
+        {
+          "text": "Sähköverkon voimajohdoissa, kun sähkö siirtyy kuluttajille.",
+          "feedback": "Siirtohäviöt ovat vain muutaman prosentin. Sähkö siirretään suurella jännitteellä ja pienellä virralla. Suurempi häviö on jossakin aiemmassa vaiheessa. Tarkista Tutki-osan taulukosta."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Ennuste 2: mitä sähkölle käy yhteistuotannossa?",
+      "justify": true,
+      "prompt": "Laitos tuottaa pelkkää sähköä. Se muutetaan yhteistuotantolaitokseksi: lauhduttimen lämpö johdetaan kaukolämpöverkkoon kaupungin lämmitykseen. Polttoaineteho pysyy samana. Neljä opiskelijaa vastaa, mitä sähköteholle tapahtuu.",
+      "choices": [
+        {
+          "text": "Aino: Sähköteho pysyy samana, koska turbiini ja generaattori toimivat entiseen tapaan. Kaukolämpö on vain lämpöä, joka muuten menisi mereen.",
+          "feedback": "Kaukolämpö vaatii, että höyry lauhdutetaan niin kuumana, että sen lämpö kelpaa talojen lämmitykseen. Silloin höyryn paine- ja lämpötilaero turbiinin yli pienenee. Turbiini tekee vähemmän työtä. Tutki-osan toinen taulukko näyttää, kuinka paljon sähköä menetetään."
+        },
+        {
+          "text": "Bea: Sähköteho pienenee yhtä paljon kuin kaukolämpöä saadaan, koska polttoaineen energiaa on vain tietty määrä.",
+          "feedback": "Kaukolämpö otetaan lauhduttimen hukkalämmöstä, ei sähköstä. Jos sähköteho pienenisi yhtä paljon kuin lämpöä saadaan, yhteistuotannolla ei voitettaisi mitään. Tutki-osan taulukossa sähkö vähenee vain pienen osan siitä, mitä lämpöä lisätään."
+        },
+        {
+          "text": "Cem: Sähköteho pienenee, mutta paljon vähemmän kuin kaukolämpöä saadaan, koska lauhduttimen lämpö oli ennenkin hukkaan menevää.",
+          "correct": true,
+          "feedback": "Tutki-osan toinen taulukko tukee tätä. Kun kaukolämpöä otetaan 232 MW, sähköteho pienenee vain 40 MW. Jokaista kaukolämpömegawattia kohti sähköä menetetään noin 0,17 MW."
+        },
+        {
+          "text": "Daniel: Sähköteho kasvaa, koska kuumempi lauhdutin nostaa höyryn painetta ja turbiini saa enemmän työtä.",
+          "feedback": "Turbiinin työ riippuu siitä, kuinka paljon höyryn paine ja lämpötila laskevat turbiinin läpi. Kun lauhdutin on kuumempi, höyry poistuu turbiinista korkeammassa paineessa. Ero pienenee. Sähköä saadaan siis vähemmän, ei enemmän."
+        }
+      ]
+    },
+    {
+      "id": "ketju",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Seuraa tehoa energiaketjussa",
+      "text": "Taulukossa on esimerkkilauhdevoimalaitoksen energiaketjun vaiheet. Turbiini ja lauhdutin muodostavat yhdessä höyrykierron. Tällä taulukolla testaat ensimmäisen ennusteesi. Laske, kuinka suuri teho kussakin vaiheessa häviää. Polttoaineteho on $P_0 = 500\\,\\text{MW}$. Kattilan ulostuloteho on $\\eta_1 P_0$. Höyrykierron ulostuloteho on $\\eta_2$ kertaa tämä, ja niin edelleen. Vaiheen häviö on sisään tulevan ja ulos tulevan tehon erotus.\n\n| Vaihe | Hyötysuhde |\n|---|---|\n| Kattila | 0,920 |\n| Höyrykierto | 0,460 |\n| Generaattori ja muuntaja | 0,945 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri teho häviää höyrykierrossa eli turbiinissa ja lauhduttimessa? Vastaa megawatteina.",
+        "answer": 248,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "Mikä on höyrykiertoon tuleva teho eli kattilasta ulos tuleva teho, kun polttoaineteho on 500 MW?",
+          "Höyrykiertoon tulee $P_1 = \\eta_1 P_0$ ja siitä lähtee $P_2 = \\eta_2 P_1$. Häviö on $P_1 - P_2$.",
+          "$P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot 460\\,\\text{MW}$. Vähennä."
+        ],
+        "mistakes": [
+          {
+            "value": 270,
+            "feedback": "Laskit $0{,}540 \\cdot 500\\,\\text{MW}$ eli häviön osuuden koko polttoainetehosta. Höyrykiertoon tulee kuitenkin vain kattilan ulostuloteho $P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$. Häviö on siis $0{,}540 \\cdot 460\\,\\text{MW}$."
+          },
+          {
+            "value": 211.6,
+            "feedback": "Tämä on höyrykierrosta ulos tuleva teho $P_2$, ei häviö. Häviö on sisään tulevan ja ulos tulevan tehon erotus $P_1 - P_2 = 460\\,\\text{MW} - 211{,}6\\,\\text{MW}$."
+          },
+          {
+            "value": 288.4,
+            "feedback": "Vähensit $P_2$:n polttoainetehosta $P_0$. Silloin mukana on myös kattilan 40 MW:n häviö. Höyrykiertoon tulee kattilan ulostuloteho $P_1 = 460\\,\\text{MW}$, joten häviö on $P_1 - P_2$."
+          },
+          {
+            "value": 300,
+            "feedback": "Tämä on koko ketjun häviö $500\\,\\text{MW} - 200\\,\\text{MW}$. Kysytään vain höyrykierron osuutta siitä: $P_1 - P_2$. Tässä $P_1 = 0{,}920 \\cdot 500\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot P_1$."
+          }
+        ],
+        "solution": "**Annettu:** polttoaineteho $P_0 = 500\\,\\text{MW}$, kattilan hyötysuhde $\\eta_1 = 0{,}920$ ja höyrykierron $\\eta_2 = 0{,}460$ (taulukosta)\n\n**Kysytty:** höyrykierrossa häviävä teho $P_\\text{häviö}$ megawatteina\n\n**Periaate:** Vaiheet ovat peräkkäin. Kunkin vaiheen ulostuloteho on seuraavan vaiheen sisäänmenoteho. Energia säilyy. Vaiheeseen tulevan ja siitä lähtevän tehon erotus ei katoa, vaan siirtyy lämpönä ympäristöön. Höyrykiertoon tulee vain kattilan ulostuloteho, ei koko polttoaineteho.\n\n**Kaava:** $P_1 = \\eta_1 P_0$ ja $P_2 = \\eta_2 P_1$, joten\n\n$$P_\\text{häviö} = P_1 - P_2 = (1 - \\eta_2)\\,\\eta_1 P_0$$\n\n**Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot 460\\,\\text{MW} = 211{,}6\\,\\text{MW}$, joten $P_\\text{häviö} = 460\\,\\text{MW} - 211{,}6\\,\\text{MW} = 248{,}4\\,\\text{MW}$\n\n**Vastaus:** $248\\,\\text{MW}$, kolme merkitsevää numeroa. Hyötysuhteet $0{,}920$ ja $0{,}460$ ovat kolmella numerolla. Polttoaineteho $500\\,\\text{MW}$ on annettu megawatin tarkkuudella.\n\n**Järkevyys:** Arvio: $0{,}540 \\cdot 460\\,\\text{MW} \\approx 250\\,\\text{MW}$. Kattila häviää $500\\,\\text{MW} - 460\\,\\text{MW} = 40\\,\\text{MW}$. Generaattori ja muuntaja häviävät noin $12\\,\\text{MW}$. Höyrykierto häviää siis selvästi eniten: noin puolet polttoainetehosta. Tase: $40 + 248{,}4 + 11{,}6 + 200 = 500\\,\\text{MW}$, kun sähköteho on $0{,}945 \\cdot 211{,}6\\,\\text{MW} = 200\\,\\text{MW}$."
+      },
+      "source": "simulated",
+      "source_note": "esimerkkilaitoksen hyötysuhteet"
+    },
+    {
+      "id": "kaukolampo",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Sähkö ja kaukolämpö samasta polttoaineesta",
+      "text": "Yhteistuotantolaitoksen polttoaineteho on 400 MW. Taulukossa on laitoksen kaksi ääritilaa. Lämpö tarkoittaa kaukolämpötehoa ja sähkö sähkötehoa. Molemmat ovat megawatteina. Tilojen välissä sähköteho pienenee likimain lineaarisesti, kun kaukolämpöteho kasvaa. Tällä taulukolla testaat toisen ennusteesi.\n\n| Tila | Lämpö | Sähkö |\n|---|---|---|\n| Vain sähköä | 0 | 160 |\n| Täysi kaukolämpö | 232 | 120 |\n\nLaske täyden kaukolämmön tilassa hukkalämmön teho $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$. Tilan Vain sähköä lukuja tarvitset vain vertailuun.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri on hukkalämmön teho, kun laitos tuottaa täyttä kaukolämpöä? Vastaa megawatteina.",
+        "answer": 48,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "Energia säilyy: polttoaineteho jakautuu sähköksi, kaukolämmöksi ja hukkalämmöksi.",
+          "Hukkalämmön teho on se osa, joka ei tule hyödyksi: $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$.",
+          "$P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 280,
+            "feedback": "Vähensit polttoainetehosta vain sähkötehon. Kaukolämpö on myös hyödyksi saatua tehoa, joten vähennä myös se: $400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW}$."
+          },
+          {
+            "value": 168,
+            "feedback": "Vähensit polttoainetehosta vain kaukolämmön. Myös sähköteho $120\\,\\text{MW}$ on hyödyksi saatua tehoa, joten vähennä sekin."
+          },
+          {
+            "value": 240,
+            "feedback": "Tämä on hukkalämmön teho, kun laitos tuottaa vain sähköä: $400\\,\\text{MW} - 160\\,\\text{MW}$. Kysytään täyden kaukolämmön tilaa. Siinä sähköä on $120\\,\\text{MW}$ ja kaukolämpöä $232\\,\\text{MW}$."
+          }
+        ],
+        "solution": "**Annettu:** polttoaineteho $P_0 = 400\\,\\text{MW}$. Täyden kaukolämmön tilassa (taulukosta) sähköteho on $P_\\text{s} = 120\\,\\text{MW}$ ja kaukolämpöteho $P_\\text{k} = 232\\,\\text{MW}$\n\n**Kysytty:** hukkalämmön teho $P_\\text{h}$ megawatteina täyden kaukolämmön tilassa\n\n**Periaate:** Energia säilyy ja laitos toimii tasaisesti. Polttoaineteho jakautuu siis kokonaan sähköksi, kaukolämmöksi ja hukkalämmöksi. Sekä sähkö että kaukolämpö ovat hyödyksi saatua tehoa. Hukkaa on vain se, mitä jää jäljelle.\n\n**Kaava:** $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$, joten $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$\n\n**Muunnokset:** Kaikki tehot ovat megawatteina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW} = 48\\,\\text{MW}$\n\n**Vastaus:** $48\\,\\text{MW}$, kaksi merkitsevää numeroa. Tehot on annettu megawatin tarkkuudella. Vähennyslaskun tulos säilyttää saman tarkkuuden.\n\n**Järkevyys:** Tase täsmää: $120 + 232 + 48 = 400\\,\\text{MW}$. Kokonaishyötysuhde on $\\dfrac{120 + 232}{400} = 0{,}88$. Pelkässä sähköntuotannossa se on $\\dfrac{160}{400} = 0{,}40$ ja hukkalämpö $240\\,\\text{MW}$. Sähköä menetetään vain $40\\,\\text{MW}$, mutta hukkalämpö pienenee $192\\,\\text{MW}$. Kaukolämpö otetaan siis pääosin hukkalämmöstä."
+      },
+      "source": "simulated",
+      "source_note": "esimerkkilaitoksen luvut, eivät yhden laitoksen mittauksia"
+    },
+    {
+      "id": "kaukolampo-tarve",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kaukolämpöä tarpeen mukaan",
+      "text": "Sama laitos voi toimia myös ääritilojen välissä. Käytä edellisen taulukon lukuja.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kaupunki tarvitsee kaukolämpöä 174 MW. Kuinka suuri on laitoksen sähköteho tällöin? Vastaa megawatteina.",
+        "answer": 130,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "Kuinka monta prosenttia täyden yhteistuotannon kaukolämpötehosta 174 MW on?",
+          "Muutos on lineaarinen. Sähköteho on siis pienentynyt saman osuuden siitä 40 MW:n pudotuksesta, jonka täysi yhteistuotanto aiheuttaa.",
+          "$174/232 = 0{,}75$, joten sähköteho on $160\\,\\text{MW} - 0{,}75 \\cdot 40\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 160,
+            "feedback": "Tämä on pelkän sähkön tila, jossa kaukolämpöä ei oteta lainkaan. Kaukolämmön tuotanto pienentää sähkötehoa."
+          },
+          {
+            "value": 120,
+            "feedback": "Tämä on täyden yhteistuotannon sähköteho, kun kaukolämpöä otetaan 232 MW. Nyt kaukolämpöä tarvitaan vähemmän, joten sähköä menetetään vähemmän."
+          },
+          {
+            "value": 150,
+            "feedback": "Käytit osuutta $(232 - 174)/232 = 0{,}25$ eli menetit vain neljänneksen 40 MW:sta. Kaukolämpöteho 174 MW on $174/232 = 0{,}75$ täydestä yhteistuotannosta. Siksi menetetään kolme neljäsosaa 40 MW:sta."
+          }
+        ],
+        "solution": "**Annettu:** polttoaineteho $P_0 = 400\\,\\text{MW}$. Edellisen taulukon ääritilat: pelkkä sähkö $P_\\text{s,0} = 160\\,\\text{MW}$ ja täysi kaukolämpö $P_\\text{k,täysi} = 232\\,\\text{MW}$ sähköteholla $P_\\text{s,täysi} = 120\\,\\text{MW}$. Nyt $P_\\text{k} = 174\\,\\text{MW}$\n\n**Kysytty:** sähköteho $P_\\text{s}$ megawatteina\n\n**Periaate:** Tehtävän mukaan sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa. Välitilassa sähköteho on siis pudonnut saman osuuden täyden yhteistuotannon pudotuksesta kuin kaukolämpöteho on osuus täydestä kaukolämpötehosta.\n\n**Kaava:** $P_\\text{s} = P_\\text{s,0} - \\dfrac{P_\\text{k}}{P_\\text{k,täysi}}\\,(P_\\text{s,0} - P_\\text{s,täysi})$\n\n**Muunnokset:** Kaikki tehot ovat megawatteina ja osuus on dimensioton luku. Muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{s} = 160\\,\\text{MW} - \\dfrac{174\\,\\text{MW}}{232\\,\\text{MW}} \\cdot (160\\,\\text{MW} - 120\\,\\text{MW}) = 160\\,\\text{MW} - 0{,}75 \\cdot 40\\,\\text{MW} = 130\\,\\text{MW}$\n\n**Vastaus:** $130\\,\\text{MW}$, kolme merkitsevää numeroa. Tehot on annettu megawatin tarkkuudella, ja tulos on yhtä tarkka.\n\n**Järkevyys:** Tulos on ääritilojen $120\\,\\text{MW}$ ja $160\\,\\text{MW}$ välissä. Kaukolämpöteho $174\\,\\text{MW}$ on kolme neljäsosaa täydestä, joten sähköteho on kolme neljäsosaa matkaa kohti pienempää arvoa. Rajatapaus: kun $P_\\text{k} = 232\\,\\text{MW}$, kaava antaa $160 - 40 = 120\\,\\text{MW}$. Kokonaishyötysuhde on $\\dfrac{130 + 174}{400} = 0{,}76$. Se on tilojen $0{,}40$ ja $0{,}88$ välissä."
+      },
+      "optional": true
+    },
+    {
+      "id": "tyypit",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Vertaa voimalaitostyyppejä",
+      "text": "Taulukossa on voimalaitostyyppien tyypillisiä hyötysuhteita. Hyötysuhteen nimittäjä on laitokseen tuotu teho. Polttolaitoksessa se on polttoaineteho. Vesivoimalassa se on virtaavan veden teho. Tuulivoimalassa se on roottorin läpi virtaavan ilman teho. Aurinkopaneelissa se on paneeliin osuvan säteilyn teho.\n\n| Laitos | Hyötysuhde |\n|---|---|\n| Lauhdevoimala | 0,38–0,42 |\n| Ydinvoimala | noin 0,35 |\n| Yhteistuotanto, sähkö | 0,25–0,35 |\n| Yhteistuotanto, kaikki | 0,85–0,90 |\n| Vesivoimala | noin 0,90 |\n| Tuulivoimala | 0,40–0,45 |\n| Aurinkopaneeli | noin 0,20 |",
+      "question": {
+        "type": "choice",
+        "prompt": "Vesivoimalan hyötysuhde on yli kaksi kertaa lauhdevoimalaitoksen. Mikä selittää eron parhaiten?",
+        "choices": [
+          {
+            "text": "Vesivoimala ei ole lämpövoimakone, joten sen ei tarvitse luovuttaa lämpöä kylmempään ympäristöön. Turbiini ottaa veden liike-energian suoraan.",
+            "correct": true,
+            "feedback": "Oikein. Lauhdevoimalaitoksessa energia kulkee lämmön kautta. Lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen. Vesivoimalassa mekaaninen energia muuttuu mekaaniseksi ja sitten sähköksi. Häviöt tulevat vain kitkasta ja sähköisistä häviöistä."
+          },
+          {
+            "text": "Vesi on parempi energianlähde kuin polttoaine, koska sitä on enemmän.",
+            "feedback": "Energianlähteen määrä ei vaikuta hyötysuhteeseen. Hyötysuhde on lähtevän tehon suhde sisään tulevaan tehoon. Ero johtuu siitä, miten energia muuttuu sähköksi: polttolaitoksessa lämmön kautta, vesivoimalassa suoraan."
+          },
+          {
+            "text": "Vesivoimalan generaattori on paljon parempi kuin lauhdevoimalaitoksen generaattori.",
+            "feedback": "Generaattorit ovat samanlaisia, ja niiden hyötysuhde on kummassakin yli 0,95. Ero syntyy vaiheessa, joka tuottaa pyörimisliikkeen. Höyrykierrossa menee noin puolet energiasta. Vesiturbiinissa menee alle kymmenesosa."
+          },
+          {
+            "text": "Vesivoimalassa ei synny lainkaan häviöitä.",
+            "feedback": "Häviöitä on aina. Vesiturbiinissa on kitkaa ja virtaushäviöitä, ja generaattorissa on sähköisiä häviöitä. Siksi hyötysuhde on noin 0,90, ei 1."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: missä energia menetetään?",
+      "prompt": "Kirjoita taulukoiden perusteella lyhyesti, missä energiaketjun vaiheessa lauhdevoimalaitos menettää eniten tehoa ja miksi. Kerro myös, mitä yhteistuotanto muuttaa. Miksi vesivoimalan hyötysuhde voi olla paljon suurempi?",
+      "model": "Eniten tehoa häviää höyrykierrossa: $248\\,\\text{MW}$ eli noin puolet polttoainetehosta. Lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen, eikä parempi tekniikka poista tätä kokonaan. Yhteistuotannossa sama lämpö käytetään kaukolämpönä. Sähköteho pienenee $160\\,\\text{MW}$:sta $120\\,\\text{MW}$:iin, mutta kokonaishyötysuhde nousee $(120 + 232)/400 = 88\\,\\%$:iin. Vesivoimalassa energia ei kulje lämmön kautta, vaan mekaaninen energia muuttuu sähköksi. Häviöitä on siis vain kitkasta ja sähköisistä häviöistä. Taulukoiden luvut ovat esimerkki- ja tyyppiarvoja, eivät yhden laitoksen mittauksia.",
+      "criteria": [
+        "Nimesin höyrykierron suurimmaksi häviöksi ja perustelin sen lämpövoimakoneen rajoituksella.",
+        "Erotin sähkön hyötysuhteen ja kokonaishyötysuhteen yhteistuotannossa.",
+        "Selitin vesivoimalan eron sillä, ettei energia kulje lämmön kautta."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi Tutki-osan lukuihin ja kaavoihin $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3$ ja $P_\\text{h} = P_0 - P_\\text{hyöty}$. Palaa sitten alun kysymykseen. Missä energiaketjun vaiheessa menee eniten polttoaineen energiaa muuhun kuin sähköön? Miksi sitä ei voi välttää? Miten sen voi käyttää hyödyksi?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Voimalaitoksen kattilan hyötysuhde on $0{,}90$, höyrykierron $0{,}40$ ja generaattorin ja muuntajan $0{,}95$. Opiskelija laskee: ”Koko ketjun hyötysuhde on näiden keskiarvo, $(0{,}90 + 0{,}40 + 0{,}95)/3 = 0{,}75$. Siis 1000 MW:n polttoaineteholla sähköteho on 750 MW.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Hyötysuhteet pitäisi laskea yhteen: $0{,}90 + 0{,}40 + 0{,}95 = 2{,}25$.",
+          "feedback": "Hyötysuhde ei voi olla yli 1, koska laitos ei voi tuottaa enemmän kuin siihen tuodaan. Peräkkäisissä vaiheissa jokainen vaihe saa vain edellisen vaiheen ulostulon. Siksi kertoimet kerrotaan."
+        },
+        {
+          "text": "Hyötysuhteet kerrotaan: $0{,}90 \\cdot 0{,}40 \\cdot 0{,}95 = 0{,}342$, joten sähköteho on 342 MW.",
+          "correct": true,
+          "feedback": "Oikein. Kattila antaa ulos 900 MW, höyrykierto siitä 360 MW ja generaattori siitä 342 MW. Keskiarvo antaisi 750 MW, mikä olisi yli kaksinkertainen. Huonoin vaihe, höyrykierto, rajoittaa kaikkea sen jälkeen tulevaa."
+        },
+        {
+          "text": "Generaattorin hyötysuhde pitäisi jättää pois, koska se ei vaikuta tulokseen.",
+          "feedback": "Generaattori vaikuttaa. Se on yksi ketjun vaiheista, ja sen häviö puuttuu sähköverkkoon lähtevästä tehosta. Ilman sitä tulos olisi $0{,}90 \\cdot 0{,}40 \\cdot 1000\\,\\text{MW} = 360\\,\\text{MW}$, ei 342 MW."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska energia säilyy ja keskiarvo kuvaa koko ketjua.",
+          "feedback": "Energian säilyminen ei tarkoita, että keskiarvo kuvaisi ketjua. Jos sähköä olisi 750 MW, hukkalämpöä olisi vain 250 MW. Silti höyrykierto yksin luovuttaa lauhduttimeen 540 MW. Hyötysuhteet kerrotaan."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Lauhdevoimalaitoksen polttoaineteho on 400 MW. Kattilan hyötysuhde on $0{,}900$, höyrykierron $0{,}450$ ja generaattorin ja muuntajan $0{,}960$. Savukaasujen lämpö otetaan talteen, ja kattilan hyötysuhde nousee arvoon $0{,}950$. Polttoaineteho pysyy samana. Kuinka monta megawattia lisää sähköä laitos tuottaa? Vastaa megawatteina.",
+      "answer": 8.64,
+      "unit": "MW",
+      "tolerance": 0.03,
+      "hints": [
+        "Laske ensin sähköteho ennen parannusta ja sen jälkeen. Mikä ketjun hyötysuhde on kummassakin tapauksessa?",
+        "Ketjun hyötysuhde on kolmen vaiheen tulo, ja sähköteho on $P_3 = \\eta_1\\,\\eta_2\\,\\eta_3\\,P_0$. Vain $\\eta_1$ muuttuu.",
+        "Ennen: $0{,}90 \\cdot 0{,}45 \\cdot 0{,}96 = 0{,}3888$. Jälkeen: $0{,}95 \\cdot 0{,}45 \\cdot 0{,}96 = 0{,}4104$. Kerro polttoaineteholla ja vähennä."
+      ],
+      "mistakes": [
+        {
+          "value": 20,
+          "feedback": "Tämä on höyryn tehon lisäys kattilan jälkeen: $0{,}05 \\cdot 400\\,\\text{MW}$. Höyrykierto ja generaattori pienentävät lisäystä vielä. Siitä tulee sähkönä vain $0{,}45 \\cdot 0{,}96 = 0{,}432$ osa."
+        },
+        {
+          "value": 164,
+          "feedback": "Tämä on parannuksen jälkeinen sähköteho $0{,}4104 \\cdot 400\\,\\text{MW}$, ei lisäys. Vähennä siitä parannusta edeltävä sähköteho $0{,}3888 \\cdot 400\\,\\text{MW} = 155{,}5\\,\\text{MW}$."
+        }
+      ],
+      "solution": "**Annettu:** polttoaineteho $P_0 = 400\\,\\text{MW}$ (pysyy samana), höyrykierron hyötysuhde $\\eta_2 = 0{,}450$ ja generaattorin ja muuntajan $\\eta_3 = 0{,}960$. Kattilan hyötysuhde on ennen parannusta $\\eta_1 = 0{,}900$ ja sen jälkeen $\\eta_1' = 0{,}950$\n\n**Kysytty:** sähkötehon lisäys $\\Delta P$ megawatteina\n\n**Periaate:** Vaiheet ovat peräkkäin. Kukin vaihe päästää läpi vain hyötysuhteensa verran siihen tulevasta tehosta. Sähköteho on siis polttoaineteho kerrottuna kaikilla kolmella hyötysuhteella. Polttoaineteho ja kaksi viimeistä vaihetta pysyvät ennallaan. Siksi vain kattilan hyötysuhteen muutos vaikuttaa lisäykseen.\n\n**Kaava:** $P_3 = \\eta_1\\,\\eta_2\\,\\eta_3\\,P_0$ ennen ja $P_3' = \\eta_1'\\,\\eta_2\\,\\eta_3\\,P_0$ jälkeen, josta\n\n$$\\Delta P = P_3' - P_3 = (\\eta_1' - \\eta_1)\\,\\eta_2\\,\\eta_3\\,P_0$$\n\n**Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta P = (0{,}950 - 0{,}900) \\cdot 0{,}450 \\cdot 0{,}960 \\cdot 400\\,\\text{MW} = 0{,}050 \\cdot 172{,}8\\,\\text{MW} = 8{,}64\\,\\text{MW}$\n\n**Vastaus:** $8{,}6\\,\\text{MW}$, kaksi merkitsevää numeroa. Hyötysuhteiden erotus $0{,}950 - 0{,}900 = 0{,}050$ on annettu kahdella numerolla. Tarkka laskettu arvo on $8{,}64\\,\\text{MW}$.\n\n**Järkevyys:** Ennen parannusta sähköteho on $0{,}3888 \\cdot 400\\,\\text{MW} = 155{,}52\\,\\text{MW}$. Sen jälkeen se on $0{,}4104 \\cdot 400\\,\\text{MW} = 164{,}16\\,\\text{MW}$. Erotus on $8{,}64\\,\\text{MW}$. Lisäys on vain noin $5{,}6\\,\\%$ entisestä sähkötehosta. Höyryn lisäteho on $0{,}05 \\cdot 400\\,\\text{MW} = 20\\,\\text{MW}$. Höyrykierto ja generaattori muuttavat siitä sähköksi vain osuuden $0{,}450 \\cdot 0{,}960 = 0{,}432$.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Tuulivoimalan hyötysuhde on $0{,}42$ ja hiilellä toimivan lauhdevoimalaitoksen $0{,}40$. Opiskelija päättelee: ”Tuulivoimala on siis vain vähän parempi kuin hiilivoimala.” Mikä on päättelyn ongelma?",
+      "choices": [
+        {
+          "text": "Hyötysuhteiden nimittäjät ovat eri asioita. Hiilivoimalassa se on ostettu polttoaine. Tuulivoimalassa se on ilmavirran teho, jota ei osteta eikä kulu. Luvut eivät kerro polttoaineen käytöstä.",
+          "correct": true,
+          "feedback": "Oikein. Hiilivoimalan $\\eta = 0{,}40$ tarkoittaa, että poltettavaa hiiltä tarvitaan 2,5-kertainen määrä sähkön energiaan verrattuna. Tuulivoimalan $\\eta = 0{,}42$ kertoo, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi. Tuuli puhaltaa kuitenkin ilman, että mitään poltetaan. Vertailu vaatii polttoaineen käytön, päästöjen ja kustannusten tarkastelua."
+        },
+        {
+          "text": "Tuulivoimalan hyötysuhde on laskettu väärin, koska mikään voimala ei voi ylittää hyötysuhdetta 0,40.",
+          "feedback": "Tuulivoimala ei ole lämpövoimakone. Sen ei tarvitse luovuttaa lämpöä kylmempään ympäristöön. Lauhdevoimalaitoksen noin 40 %:n hyötysuhde ei siis ole sille raja."
+        },
+        {
+          "text": "Hiilivoimalan hyötysuhde pitäisi laskea yhteen sähkön ja kaukolämmön kanssa.",
+          "feedback": "Lauhdevoimalaitos tuottaa vain sähköä eikä kaukolämpöä. Sähkön ja lämmön yhteenlasku koskee yhteistuotantolaitosta. Silloinkin se on kokonaishyötysuhde, ei vertailu tuulivoimaan."
+        },
+        {
+          "text": "Päättelyssä ei ole ongelmaa: luvut kertovat suoraan, kumpi laitos on parempi.",
+          "feedback": "Luvut kuvaavat eri asioita. Tuulivoimalalla ei ole polttoainetta, joten hyötysuhde ei kerro, kuinka paljon polttoainetta säästyy. Tämä tehtävä jatkuu harjoitustehtävissä, joissa lasketaan polttoaineen määrä."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Yhteistuotantolaitoksen polttoaineteho on 360 MW, sähköteho 108 MW ja hukkalämmön teho 36 MW. Kuinka suuri on kaukolämpöteho? Vastaa megawatteina.",
+      "answer": 216,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin kolmeen osaan polttoaineteho jakautuu?",
+        "Energia säilyy: $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$. Ratkaise tästä $P_\\text{k}$.",
+        "$P_\\text{k} = P_0 - P_\\text{s} - P_\\text{h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 252,
+          "feedback": "Vähensit polttoainetehosta vain sähkötehon: $360\\,\\text{MW} - 108\\,\\text{MW} = 252\\,\\text{MW}$. Siitä osa, 36 MW, on hukkalämpöä. Vain loput menee kaukolämpöön."
+        },
+        {
+          "value": 324,
+          "feedback": "Tämä on $360\\,\\text{MW} - 36\\,\\text{MW}$, jossa sähköteho jäi vähentämättä. Osa polttoainetehosta muuttuu sähköksi, eikä se ole kaukolämpöä."
+        }
+      ],
+      "solution": "**Annettu:** polttoaineteho $P_0 = 360\\,\\text{MW}$, sähköteho $P_\\text{s} = 108\\,\\text{MW}$ ja hukkalämmön teho $P_\\text{h} = 36\\,\\text{MW}$\n\n**Kysytty:** kaukolämpöteho $P_\\text{k}$ megawatteina\n\n**Periaate:** Energia säilyy ja laitos toimii tasaisesti. Polttoaineteho jakautuu kokonaan kolmeen osaan: sähköön, kaukolämpöön ja hukkalämpöön. Mitään tehoa ei katoa eikä synny. Kaukolämpöteho on siis se, mitä jää, kun sähkö ja hukka vähennetään.\n\n**Kaava:** $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$, joten $P_\\text{k} = P_0 - P_\\text{s} - P_\\text{h}$\n\n**Muunnokset:** Kaikki tehot ovat jo megawatteina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{k} = 360\\,\\text{MW} - 108\\,\\text{MW} - 36\\,\\text{MW} = 216\\,\\text{MW}$\n\n**Vastaus:** $216\\,\\text{MW}$, kolme merkitsevää numeroa. Tehot on annettu megawatin tarkkuudella. Vähennyslaskussa tulos säilyttää saman tarkkuuden.\n\n**Järkevyys:** Tase täsmää: $108\\,\\text{MW} + 216\\,\\text{MW} + 36\\,\\text{MW} = 360\\,\\text{MW}$. Kokonaishyötysuhde on $\\dfrac{108\\,\\text{MW} + 216\\,\\text{MW}}{360\\,\\text{MW}} = 0{,}900$. Se on yhteistuotannon tavallisella välillä 85–90 %. Kaukolämpöteho on suurempi kuin sähköteho, kuten yhteistuotantolaitoksessa on tavallista."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja vertaa",
+      "prompt": "Kaupunki harkitsee voimalaitosta. Lauhdevoimalaitoksen hyötysuhde on 0,40. Yhteistuotantolaitoksen kokonaishyötysuhde on 0,88, mutta sähköä siitä on vain 0,30 polttoaineen tehosta. Selitä, miksi yhteistuotantolaitos ei ole yksinkertaisesti yli kaksi kertaa parempi kuin lauhdevoimalaitos. Kerro myös, mitä tietoa vertailuun tarvitaan.",
+      "criteria": [
+        "Sanon, että kokonaishyötysuhde laskee yhteen sähkön ja kaukolämmön. Ne ovat eri arvoisia energiamuotoja.",
+        "Huomaan, että yhteistuotantolaitos tuottaa sähköä vain 0,30 eikä 0,40 polttoaineen tehosta. Sähköä saadaan siis vähemmän.",
+        "Selitän, että kaukolämmön hyöty riippuu siitä, tarvitaanko lämpöä (vuodenaika, kaukolämpöverkko).",
+        "Mainitsen, että vertailussa pitää ottaa huomioon, mitä lämpö korvaa ja kuinka paljon polttoainetta kuluu kaiken kaikkiaan."
+      ],
+      "model": "Kokonaishyötysuhde $0{,}88$ lasketaan sähkön ja kaukolämmön summana, $(P_\\text{s} + P_\\text{k})/P_0$. Sähkö ja lämpö eivät ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa. Kaukolämpö kelpaa vain lämmitykseen ja vain lähelle. Sähkön osuus on yhteistuotantolaitoksessa pienempi, $0{,}30$, kun se lauhdevoimalaitoksessa on $0{,}40$. Samasta polttoaineesta saadaan siis vähemmän sähköä. Yhteistuotanto kannattaa, kun lämpöä todella tarvitaan. Muuten tarvittaisiin erillinen lämpökeskus, joka polttaa lisää polttoainetta. Vertailuun tarvitaan siis kaupungin sähkön ja lämmön tarve eri vuodenaikoina. Tarvitaan myös vaihtoehtoinen tapa tuottaa lämpöä ja sen hyötysuhde.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

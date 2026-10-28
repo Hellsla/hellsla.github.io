@@ -1,0 +1,25 @@
+{
+  "id": "fy3-10",
+  "course": "FY3",
+  "title": "Ideal gas law pV = nRT",
+  "goals": [
+    "LOPS FY3: equation of state of an ideal gas",
+    "Skills: solving for a quantity from the equation of state of an ideal gas",
+    "Clarification: the gas laws are also treated separately; simulations for investigating gas pressure at the level of the constituent particles"
+  ],
+  "prerequisites": [
+    "fy3-9"
+  ],
+  "glossary": [
+    "ideaalikaasu",
+    "equation of state",
+    "amount of substance",
+    "mooli",
+    "molar gas constant",
+    "moolimassa",
+    "Avogadro constant",
+    "combined gas law"
+  ],
+  "sim": true,
+  "image": false
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "The mass of an object is 3.0 kg. What happens to its mass and weight when it is taken from Earth to the Moon ($g = 1.62\\,\\text{m/s}^2$)?",
+    "a": "The mass stays 3.0 kg. The weight decreases from 29 N on Earth to 4.9 N on the Moon, that is, to about one sixth, because the interaction between the Moon and the object is weaker than between the Earth and the object."
+  },
+  {
+    "q": "The spring of a force meter stretches 3.0 cm when a force of 8.0 N acts on it. How much does the spring stretch with a force of 20 N?",
+    "a": "7.5 cm. The extension is directly proportional to the force, and the force is 2.5 times as great: $2.5 \\cdot 3.0\\,\\text{cm} = 7.5\\,\\text{cm}$."
+  },
+  {
+    "q": "A bottle contains 1.5 kg of water. What is the weight of the water on Earth, and why is the sentence \"the water weighs one and a half kilos\" imprecise in physics?",
+    "a": "$G = mg = 1.5\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. The kilogram is a unit of mass, but weight is a force whose unit is the newton: the sentence gives the mass, not the weight."
+  }
+]

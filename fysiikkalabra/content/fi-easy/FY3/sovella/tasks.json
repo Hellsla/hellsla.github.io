@@ -1,0 +1,421 @@
+{
+  "intro": "Nämä kolme tehtävää kokoavat moduulin asiat: energian, olomuodon muutokset ja kaasut. Jokaisessa tehtävässä päätät itse, mitkä ilmiöt ja mallit siihen kuuluvat.",
+  "tasks": [
+    {
+      "id": "fy3-s1",
+      "title": "Aurinkokeräin",
+      "source": "example",
+      "source_note": "Aineisto on laskettu mallista ja pyöristetty niin kuin mittauksessa. Se ei ole oikean mittauksen tulos.",
+      "text": "Opiskelijat rakensivat aurinkokeräimen. Se on matala musta laatikko, jonka päällä on lasilevy. Laatikossa on $4{,}00\\,\\text{kg}$ vettä. Keräin käännetään kohti aurinkoa. Mittari näyttää, että auringonsäteilyn teho on $800\\,\\text{W/m}^2$. Se tarkoittaa, että $800\\,\\text{W}$ osuu jokaiseen neliömetriin, joka on kohtisuorassa auringon suuntaa vastaan. Keräimen pinta-ala tähän suuntaan on $0{,}50\\,\\text{m}^2$. Vettä sekoitetaan koko ajan. Veden lämpötila mitataan $5\\,\\text{min}$:n välein. Ilman lämpötila on $20{,}0\\,{}^\\circ\\text{C}$.\n\n| $t\\ (\\text{min})$ | $T\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $0$ | $20{,}0$ |\n| $5$ | $24{,}1$ |\n| $10$ | $28{,}0$ |\n| $15$ | $31{,}6$ |\n| $20$ | $35{,}0$ |\n| $25$ | $38{,}0$ |\n| $30$ | $40{,}9$ |\n| $35$ | $43{,}8$ |\n| $40$ | $46{,}2$ |\n| $45$ | $48{,}5$ |\n| $50$ | $50{,}7$ |\n| $55$ | $52{,}8$ |\n| $60$ | $54{,}7$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 3,
+          "text": "Piirrä aineistosta $(t, T)$-kuvaaja. Sovita pisteisiin malli.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Pisteiden kautta kulkee tasainen käyrä, joka loivenee."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä, kuinka suurella teholla vesi saa energiaa auringonsäteilystä. Perustele, mistä kuvaajan kohdasta määrität tehon.",
+          "answer": {
+            "value": 240,
+            "unit": "W",
+            "tolerance": 0.08
+          },
+          "criteria": [
+            {
+              "text": "Määrittää lämpenemisnopeuden mittauksen alusta ja perustelee: kun vesi on ilman lämpöistä, lämpöä ei juuri siirry ympäristöön.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Alun kulmakerroin tangentista tai ensimmäisistä pisteistä, noin $0{,}8\\text{–}0{,}9\\,\\text{K/min}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$ ja $P = Q : t$ eli $P = cm \\cdot \\dfrac{\\Delta T}{\\Delta t}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 240\\,\\text{W}$. Myös tulos $220\\text{–}250\\,\\text{W}$ hyväksytään, kun se on saatu alun tangentista tai ensimmäisten $5\\text{–}10\\,\\text{min}$:n pisteistä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 2,
+          "text": "Laske keräimen hyötysuhde mittauksen alussa. Silloin vesi on vielä ilman lämpöistä.",
+          "answer": {
+            "value": 0.59,
+            "unit": "",
+            "tolerance": 0.08
+          },
+          "criteria": [
+            {
+              "text": "Laskee keräimeen tulevan säteilytehon $800\\,\\text{W/m}^2 \\cdot 0{,}50\\,\\text{m}^2 = 400\\,\\text{W}$. Laskee hyötysuhteen hyödyllisen tehon ja tulevan tehon suhteena.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 0{,}59$ eli noin $60\\,\\%$ (b-kohdan tuloksen mukaan)"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Miksi lämpötilan nousu hidastuu? Määritä lämpöhäviön teho hetkellä $50\\,\\text{min}$.",
+          "answer": {
+            "value": 120,
+            "unit": "W",
+            "tolerance": 0.15
+          },
+          "criteria": [
+            {
+              "text": "Selittää: mitä suurempi veden ja ilman lämpötilaero on, sitä enemmän lämpöä johtuu ja säteilee ympäristöön.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Päättelee, että veteen jäävä teho pienenee. Siksi lämpötila nousee yhä hitaammin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin hetkellä $50\\,\\text{min}$, noin $0{,}42\\,\\text{K/min}$."
+            },
+            {
+              "text": "Laskee häviön erotuksena: auringosta saatu teho miinus veteen jäävä teho. Tulos on noin $120\\,\\text{W}$.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Arvioi kahta oletusta, joita käytit b–d-kohdissa. Mihin suuntaan kukin oletus vaikuttaa tuloksiin?",
+          "criteria": [
+            {
+              "text": "Nimeää ensimmäisen oletuksen (mittauksen tai mallin) ja perustelee, mihin suuntaan se muuttaa tulosta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Nimeää toisen oletuksen ja perustelee, mihin suuntaan se muuttaa tulosta.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy3-13",
+        "math": "fy3-6",
+        "concept": "fy3-12",
+        "transfer": "fy3-6",
+        "experiment": "fy3-13"
+      }
+    },
+    {
+      "id": "fy3-s2",
+      "title": "Painekattila",
+      "source_note": "Taulukon arvot ovat veden mitattuja kiehumislämpötiloja taulukkokirjoista. Arvot on pyöristetty.",
+      "text": "Painekattilan kansi sulkeutuu tiiviisti. Kun vesi kuumenee, kattilan paine nousee. Lopulta venttiili alkaa päästää höyryä ulos. Venttiili pitää kattilan paineen $80\\,\\text{kPa}$ suurempana kuin ulkoilman paine. Ulkoilman paine on $101\\,\\text{kPa}$.\n\n| $p\\ (\\text{kPa})$ | $T_\\text{k}\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $70{,}2$ | $90$ |\n| $84{,}6$ | $95$ |\n| $101{,}3$ | $100$ |\n| $120{,}9$ | $105$ |\n| $143{,}4$ | $110$ |\n| $169{,}2$ | $115$ |\n| $198{,}7$ | $120$ |\n| $232{,}3$ | $125$ |\n\nTaulukossa on veden kiehumislämpötila $T_\\text{k}$ eri paineissa $p$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Mikä on veden lämpötila kattilassa, kun venttiili päästää höyryä ulos?",
+          "answer": {
+            "value": 117,
+            "unit": "°C",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Käyttää kattilan kokonaispainetta $101\\,\\text{kPa} + 80\\,\\text{kPa} = 181\\,\\text{kPa}$. Ei käytä pelkkää ylipainetta.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Lukee kiehumislämpötilan interpoloimalla taulukon kahden arvon välistä. Voi myös lukea sen taulukosta piirretyltä kuvaajalta.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 117\\,{}^\\circ\\text{C}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Selitä, miksi vesi kiehuu painekattilassa korkeammassa lämpötilassa kuin avoimessa kattilassa. Selitä myös, miksi ruoka kypsyy painekattilassa nopeammin.",
+          "criteria": [
+            {
+              "text": "Kytkee kiehumislämpötilan paineeseen. Faasikaavion höyrystymiskäyrä ja taulukko osoittavat: mitä suurempi paine on, sitä korkeammassa lämpötilassa vesi kiehuu.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee hiukkasmallilla: höyrykupla pysyy auki vain, jos sen höyryn paine on yhtä suuri kuin ympäröivä paine. Höyryn paine kasvaa lämpötilan mukana.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää nopeamman kypsymisen korkeammalla lämpötilalla: lämpö siirtyy ruoan sisään nopeammin, ja kypsyminen etenee nopeammin.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kattilassa on $1{,}50\\,\\text{kg}$ vettä ja lisäksi perunoita. Venttiili sihisee. Silloin levyn teho säädetään $300\\,\\text{W}$:iin. Tehosta $80\\,\\%$ siirtyy kattilan sisältöön ja loput ympäristöön. Kuinka paljon vettä höyrystyy $20$ minuutissa?",
+          "answer": {
+            "value": 0.13,
+            "unit": "kg",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Perustelee: lämpötila pysyy vakiona, joten kattilan sisältöön siirtyvä energia kuluu kokonaan veden höyrystämiseen.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta P t = rm$ ratkaistuna $m = \\dfrac{\\eta P t}{r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$0{,}80 \\cdot 300\\,\\text{W} \\cdot 1200\\,\\text{s} = 288\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 0{,}13\\,\\text{kg}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kypsennyksen jälkeen joku avaa kannen heti. Paine ei ole vielä laskenut. Selitä, mitä kattilassa tapahtuu. Kuinka suuri osa vedestä höyrystyy?",
+          "answer": {
+            "value": 0.031,
+            "unit": "",
+            "tolerance": 0.1
+          },
+          "criteria": [
+            {
+              "text": "Paine laskee ulkoilman paineeseen. Silloin kiehumislämpötila laskee $100\\,{}^\\circ\\text{C}$:seen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Vesi on kuumempaa kuin kiehumislämpötilansa. Siksi se kiehuu rajusti, kunnes se on jäähtynyt $100\\,{}^\\circ\\text{C}$:seen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Energian säilyminen: veden jäähtyessä vapautuva lämpö höyrystää osan vedestä, $c m \\Delta T = r m_\\text{h}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\dfrac{m_\\text{h}}{m} \\approx 0{,}03$ eli noin $3\\,\\%$"
+            },
+            {
+              "text": "Nimeää vaaran (höyry ja roiskuva kiehuva vesi polttavat) tai laskun oletuksen (perunoiden ja kattilan lämpö jätetään pois).",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-7",
+        "graph": "fy3-13",
+        "transfer": "fy3-14",
+        "math": "fy3-14",
+        "communication": "fy3-7"
+      }
+    },
+    {
+      "id": "fy3-s3",
+      "title": "Sukellus",
+      "text": "Sukeltaja on järvessä $15{,}0\\,\\text{m}$:n syvyydessä. Siellä veden lämpötila on $6{,}0\\,{}^\\circ\\text{C}$. Pinnalla veden lämpötila on $20{,}0\\,{}^\\circ\\text{C}$. Ilmanpaine on $101\\,\\text{kPa}$. Sukeltaja hengittää säiliöstä paineensäätimen kautta. Säädin antaa ilman samassa paineessa, joka on ympäröivässä vedessä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Sukeltajan uloshengittämän ilmakuplan tilavuus on pohjalla $4{,}0\\,\\text{cm}^3$. Kuinka suuri tilavuus kuplalla on pinnalla?",
+          "answer": {
+            "value": 10.3,
+            "unit": "cm³",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "text": "Perustelee mallin: kuplan ilmamäärä pysyy samana, ja kupla on saman lämpöinen kuin ympäröivä vesi. Siksi $\\dfrac{pV}{T}$ pysyy vakiona.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Laskee paineen syvyydessä: $p = p_0 + \\rho g h \\approx 248\\,\\text{kPa}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$V_2 = V_1 \\cdot \\dfrac{p_1}{p_2} \\cdot \\dfrac{T_2}{T_1}$ kelvinlämpötiloilla"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$V_2 \\approx 10\\,\\text{cm}^3$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Sukeltaja hengittää $15{,}0\\,\\text{m}$:n syvyydessä keuhkonsa täyteen. Keuhkoihin tulee $6{,}0\\,\\text{l}$ ilmaa. Miksi on vaarallista nousta pintaan hengitystä pidättäen? Perustele laskulla.",
+          "answer": {
+            "value": 14.7,
+            "unit": "l",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Valitsee vakiolämpötilan ja perustelee sen: keuhkoissa ilma on ruumiinlämpöistä syvyydestä riippumatta.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V_2 = 6{,}0\\,\\text{l} \\cdot \\dfrac{248\\,\\text{kPa}}{101\\,\\text{kPa}} \\approx 15\\,\\text{l}$"
+            },
+            {
+              "text": "Selittää vaaran: keuhkot eivät voi laajeta näin paljon, joten ilma vahingoittaa niitä. Noustessa on hengitettävä ulos.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Sukeltajan säiliön tilavuus on $12{,}0\\,\\text{l}$. Säiliön painemittari näyttää ylipainetta $200\\,\\text{bar}$, missä $1\\,\\text{bar} = 100\\,\\text{kPa}$. Sukeltaja kuluttaa $15{,}0\\,\\text{m}$:n syvyydessä $20\\,\\text{l}$ ilmaa minuutissa. Tämä tilavuus on mitattu syvyyden paineessa. Nousu aloitetaan, kun mittari näyttää $50\\,\\text{bar}$. Kuinka kauan sukeltaja voi olla tässä syvyydessä?",
+          "answer": {
+            "value": 36,
+            "unit": "min",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Perustelee mallin: ilman lämpötila pysyy samana, joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki).",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Käyttää kokonaispaineita tai perustelee, miksi ylipaineiden erotus $150\\,\\text{bar}$ on sama kuin kokonaispaineiden erotus.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee käytettävän ilman tilavuuden syvyyden paineessa. Tulos on noin $725\\,\\text{l}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: pinnalla sama ilma riittäisi noin $2{,}5$ kertaa pidempään, koska syvyydessä paine on noin $2{,}5$-kertainen."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 36\\,\\text{min}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Arvioi kahta c-kohdan laskun oletusta. Onko todellinen aika todennäköisesti lyhyempi vai pidempi kuin laskettu aika? Miten tulosta kannattaa käyttää?",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Ensimmäinen oletus ja sen vaikutuksen suunta."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Toinen oletus ja sen vaikutuksen suunta."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Laskettu aika on suuntaa antava arvio. Suunnitelmaan jätetään varaa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy3-10",
+        "math": "fy3-4",
+        "concept": "fy3-9",
+        "communication": "fy3-9"
+      }
+    }
+  ]
+}

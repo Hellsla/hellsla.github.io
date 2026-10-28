@@ -1,0 +1,25 @@
+{
+  "id": "fy3-15",
+  "course": "FY3",
+  "title": "Energy production and the efficiency of power plants",
+  "goals": [
+    "LOPS FY3: conservation of energy, internal energy, transfer of energy and quantity of heat",
+    "Thematic study: energy production",
+    "Clarification: energy chains and efficiencies of power plant types, condensing and combined heat and power production"
+  ],
+  "prerequisites": [
+    "fy3-11"
+  ],
+  "glossary": [
+    "efficiency",
+    "lauhdevoimalaitos",
+    "yhteistuotanto",
+    "waste heat",
+    "district heating",
+    "energiaketju",
+    "overall efficiency"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}
