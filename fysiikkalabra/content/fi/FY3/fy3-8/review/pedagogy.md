@@ -1,13 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: 6ba4aeb9d3f89329
+VERDICT: PASS
+CONTENT-HASH: ef7a66af29158d1e
 
-Delta review over the audit's PASS (bfbcfbf827b20b90): check-c2 (hole in a heated plate) converted from the exit ticket; titles renumbered; unit LaTeX.
+Round 2: the round-1 Blocking item (exit q2 repeated check-3 criterion 1) is fixed. Delta review of the diff: exit q2 removed, stage text 'Lopuksi yksi nopea kysymys'.
 
 ## Blocking
-- exit-ticket.json:6-7 — remaining question 2 ('Teräskuula laajenee. Kasvavatko hiukkaset? Selitä mikromallilla') is criterion 1 of check-3 (hiukkaset eivät kasva, keskimääräinen etäisyys kasvaa) in the same steel context. Repeat of a check: remove it ('Lopuksi yksi nopea kysymys') or ask something no check asks.
+- none
 ## Polish
-- exit q1 (21 mm for the 25 m copper pipe) is the same $\alpha L_0\Delta T$ calculation as check-2 and the exercises; Polish.
-- check-c2 (hole in a plate): correct option's phrase 'kuin kuvaa suurennettaisiin' is a good model; plain '21 mm' left in exit q1 'a'.
+- The one exit question (21 mm for the 25 m copper pipe) is the same $\alpha L_0\Delta T$ calculation as check-2 and the exercises; acceptable as the single quick item. Plain '21 mm' left in the answer.
 ## Checked
-- check-c2 tests the hole/plate misconception (a concept check-1, the water anomaly, does not): distractors 'hole shrinks' and 'hole stays' are the real ones; feedback repairs and none points at another option; titles 1-4.
-- Converted question (hole in steel plate) removed from the exit ticket; stage text 'Lopuksi kaksi' matches.
+- Round-1 Blocking: the steel-ball particle question is gone.
+- 17e-6 * 25 * 50 = 0,02125 m ~ 21 mm computed. Stage text 'yksi' matches one question.
+- check-c2 (hole in a plate) and titles 1-4 as in round 1.

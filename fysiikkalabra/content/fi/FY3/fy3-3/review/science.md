@@ -1,14 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 87410e134f8c60c4
+VERDICT: FAIL
+CONTENT-HASH: 6d8061bd4d988520
 
-Delta review over the audit's PASS (a8c5706f60d4138d): check-c2 added from the exit-ticket 10 → 20 °C question, exit ticket 3 → 2, titles renumbered.
+Round 2: exit ticket 2 → 1 (the 0 K question removed), stage text "Lopuksi yksi". The diff itself is correct; one guardrail break outside it, missed in round 1, is reported below.
 
 ## Blocking
-- none
+- inquiry.json:354 — (A, guardrail "Absolute zero", same error fixed in fy3-9 and fy3-10) check-c2 distractor feedback: "Celsiusasteikon nollakohta on valittu veden jäätymispisteeksi, ei tilaksi, jossa liike loppuu" implies a temperature (0 K) at which particle motion stops; the lesson (lesson.md:219) rightly says only that the mean kinetic energy is at its lowest. Fix: "…valittu veden jäätymispisteeksi, ei absoluuttiseksi nollapisteeksi."
 ## Polish
 - none
 ## Checked
-- check-c2 (10 → 20 °C): 293,15 K / 283,15 K = 1,0353, so +3,5 %; the doubling and 10 % distractors are wrong and their feedback (Celsius zero is not absolute zero; 10 K / 283,15 K ≈ 3,5 %) is true.
-- Air treated as a gas whose mean kinetic energy ∝ T: within the guardrail (ideal gas).
-- exit-ticket.json now 2 questions and the exit stage says "Lopuksi kaksi"; the removed question is the one converted into check-c2.
-- later tarkista titles renumbered 3. and 4.; LaTeX unit conversions in inquiry.json are mathematically unchanged.
+- Remaining exit question: heating at fixed volume → larger mean kinetic energy, faster particles, more frequent and harder wall hits → higher pressure; mechanism right.
+- Count 1 matches "Lopuksi yksi"; the 0 K value stays in lesson.md:231.
+- check-c2 numbers: 293,15/283,15 = 1,035 → +3,5 %.

@@ -1,16 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 2abb3dab682320c1
+VERDICT: PASS
+CONTENT-HASH: 719f2047818de2b8
 
-Delta review over the audit's PASS (b75319bc1ce1db3b): new choice check-c2 (cool bag with ice and water stays at 0 °C) from the exit ticket, checks renumbered, exit text "kaksi". The exercise part is not in this report (already reviewed for its hash).
+Round 2: check-c2 replaced by a new check (1,0 kg ice vs 1,0 kg water at 0 °C in a cooler bag); "learn" reformatted only. The round-1 blocking feedback is gone with the old check.
 
 ## Blocking
-- inquiry.json:334 — (A/B, guardrail "Melting and evaporation") distractor feedback: "Sulamisessa tuleva energia varastoituu veden hiukkasten sisäenergiaan" places the energy inside the particles; it goes into the water's internal energy as interaction energy between particles (bonds inside molecules do not break). Fix: "…varastoituu veden sisäenergiaan: se muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa", as fy3-14 and this chapter's solutions.md say.
+- none
 ## Polish
-- inquiry.json:326 — "muuttaa jään rakenteen nesteeksi": use the guardrail sentence for one wording across chapters.
+- inquiry.json (check-c2, "Vesi, koska vesi johtaa lämpöä paremmin") — the feedback leaves the distractor's premise standing; in fact ice conducts heat better than water (about 2,2 vs 0,6 W/(m·K)). Add "eikä vesi edes johda lämpöä jäätä paremmin".
 ## Checked
-- Correct option (energy goes into melting, Q = sm; temperature stays at the melting point until all ice has melted); true for ice-water at roughly constant pressure (C).
-- Distractor "eriste estää lämmön" wrong; feedback right (insulation slows, P = UAΔT).
-- Distractor "energia katoaa" wrong; feedback's conservation and release on freezing right.
-- Distractor "samassa lämpötilassa ei lämpene" wrong; feedback right.
-- Exactly one correct option.
-- Removed exit question is the one converted; two remain; "kaksi" matches.
+- Exactly one correct option (ice); "yhtä kauan", "vesi johtaa paremmin" and "jää on kylmempää" are wrong (both at 0 °C stated) and their feedbacks right.
+- Numbers: s m = 334 kJ/kg · 1,0 kg = 334 kJ; Q = 4190 · 1,0 · 8 = 33 520 J ≈ 34 kJ; 33,5/334 = 0,10 → "noin kymmenesosan". s = 334 kJ/kg and c = 4190 J/(kg·K) agree with lesson.md:105, 207.
+- Mechanism: incoming energy melts ice at constant 0 °C before warming (C at constant pressure); no particle-internal-energy claim (guardrail).
+- Old phrases ("hiukkasten sisäenergiaan", "rakenteen nesteeksi") no longer present; exit ticket still 2, "kaksi".

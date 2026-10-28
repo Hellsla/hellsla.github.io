@@ -335,7 +335,7 @@
         },
         {
           "text": "Vesi, koska vesi johtaa lämpöä paremmin ja jäähdyttää ruoat nopeammin.",
-          "feedback": "Hyvä lämmönjohtavuus tasaa lämpötilat nopeasti, mutta se ei kerro, kuinka paljon energiaa aine voi ottaa vastaan lämpenemättä. Jään sulaminen sitoo paljon enemmän energiaa kuin saman veden lämpeneminen muutamalla asteella."
+          "feedback": "Jää johtaa lämpöä itse asiassa paremmin kuin vesi. Lämmönjohtavuus kertoo kuitenkin vain, kuinka nopeasti lämpötilat tasoittuvat, eikä sitä, kuinka paljon energiaa aine voi ottaa vastaan lämpenemättä. Jään sulaminen sitoo paljon enemmän energiaa kuin saman veden lämpeneminen muutamalla asteella."
         },
         {
           "text": "Jää, koska jää on kylmempää kuin vesi.",

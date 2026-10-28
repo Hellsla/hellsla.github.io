@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6ba4aeb9d3f89329
+CONTENT-HASH: ef7a66af29158d1e
 
-Delta review over the audit's PASS (bfbcfbf827b20b90): check-c2 added from the exit-ticket hole question, exit ticket 3 → 2, titles renumbered.
+Round 2: exit ticket 2 → 1 (the "do particles grow" question removed), stage text "Lopuksi yksi".
 
 ## Blocking
 - none
 ## Polish
 - none
 ## Checked
-- check-c2 (reikä teräslevyssä): exactly one correct option (the hole grows, every distance scales); "pienenee" and "pysyy samana" are wrong and their feedback is true; the shrink-fit example agrees with exercise L3-01.
-- exit-ticket.json now 2 questions and the exit stage says "Lopuksi kaksi"; the removed question is the one converted into check-c2.
-- later tarkista titles renumbered 3. and 4.; LaTeX unit conversions in inquiry.json are mathematically unchanged.
+- Remaining exit question: ΔL = 17·10⁻⁶ 1/K · 25 m · 50 K = 0,02125 m ≈ 21 mm (recomputed).
+- Count 1 matches "Lopuksi yksi".

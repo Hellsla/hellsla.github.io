@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 2abb3dab682320c1
+VERDICT: PASS
+CONTENT-HASH: 719f2047818de2b8
 
-Delta review over the audit's PASS (b75319bc1ce1db3b): new check-c2 (temperature during melting, converted from an exit question), titles renumbered, one exit question removed.
+Round 2: the round-1 Blocking item (check-c2 only the other side of check-1) is fixed. Delta review of the diff: check-c2 replaced by 'Sulamislämpö kylmälaukussa' (1,0 kg ice vs 1,0 kg water at 0 °C); a 'learn' array only reformatted.
 
 ## Blocking
-- inquiry.json check-c2 — it does not test a concept check-1 does not. Both use the same cooler bag; check-1 asks what happens when the ice has just melted ("energia ei enää kulu jään sulattamiseen vaan veden lämmittämiseen"), check-c2 asks why the temperature stays at 0 °C while ice remains ("energia kuluu jään sulattamiseen"): the two sides of one idea, and check-1's correct feedback already states c2's answer. Replace check-c2 with another key concept of the chapter (for example why evaporation cools more than warming to 100 °C, energy balance in mixing, or heat per mass vs. temperature change) and keep the converted question out of the exit ticket only if it is truly asked elsewhere.
+- none
 ## Polish
-- if check-c2 is kept, change the scenario (a drink with ice cubes) so it is not the check-1 case and so that the exit's removed question is not a verbatim copy.
-- distractor 3 feedback: "irrottaa ne jäähilasta" — use "jäärakenteesta".
+- exit-ticket.json q2 (sauna: why rocks cool more when water evaporates than if it only warmed) is criteria 2 and 4 of check-3 and its model answer; by NOTES §11 a repeat. Not in the round-1 Blocking and check-3 is optional, so Polish: replace it, e.g. by a condensation or freezing item.
+- exit q1 (melt 0,40 kg ice and warm to 25 °C) is the check-2 skill; acceptable as a quick item.
+- check-c2 distractor 4 ('Jää, koska jää on kylmempää kuin vesi') picks the right object for a wrong reason; fine, its feedback repairs, but the prompt does not say how warm the surroundings are (the feedback assumes 8 °C); say 'kunnes sisältö lämpenee noin 8 °C:seen'.
+- distractor 3: option text about conduction is weaker than the others.
 ## Checked
-- Numbers none to verify; feedback physics right (Q = sm, melting stores energy as internal energy).
-- Distractors (insulation blocks heat, energy vanishes, same temperature means no warming) are real misconceptions; feedback repairs them; no option points at another.
-- Remaining exit questions (energy for melting + warming, sauna evaporation) are not check repeats except the sauna one is related to check-3: acceptable as a quick item.
-- LaTeX/Finnish fine; "kaksi" matches.
+- Round-1 Blocking: new check-c2 asks a different concept from check-1 (the size of the melting energy against warming water, not the temperature after the ice has melted); check-1's feedback no longer states its answer.
+- Computed: 4190 * 1,0 * 8 = 33 520 J ~ 34 kJ; 334 / 33,5 = 10,0 ('noin kymmenesosan') right. Physics right: 334 kJ/kg, ice absorbs far more energy.
+- Each wrong option is a real misconception (same temperature = same capacity, better conductor, colder = lasts longer); feedback of each repairs and none points at another. LaTeX; Finnish clear; titles 1-4; exit text 'kaksi' matches two questions.

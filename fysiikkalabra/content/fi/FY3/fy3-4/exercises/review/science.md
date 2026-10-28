@@ -1,13 +1,12 @@
-VERDICT: FAIL
-CONTENT-HASH: 7bc076f5030b1364
+VERDICT: PASS
+CONTENT-HASH: 71f841a0fe71562f
 
-Delta review over the audit's PASS (e421ffd346e680cb): L2-03 (oil density) replaced by figure task two-liquids, LaTeX units elsewhere.
+Round 2: L2-03 tolerance 0,03 → 0,04; the round-1 blocking item is fixed.
 
 ## Blocking
-- exercises.json:68 (fy3-4-L2-03) — solutions.md:79 says a value read by eye from 5,8 to 6,2 m is accepted, but tolerance 0,03 on 6,0 accepts only 5,82–6,18 m. A horizontal from B at 160 kPa (between the 150 and 175 kPa gridlines) to line A read on a 1 m grid easily gives 5,8 or 6,2, and the checker rejects them. Fix: tolerance 0.04 (5,76–6,24 m). The swapped ratio (2,7 m) stays rejected.
+- none
 ## Polish
 - none
 ## Checked
-- Recomputed: k_A = 100 kPa/10 m = 10 kPa/m, k_B = 150 kPa/10 m = 15 kPa/m, p_B(4,0 m) = 160 kPa, h_A = 60/10 = 6,0 m; answers.py 6,0.
-- Figure two-liquids: both lines start at (0; 100 kPa) and end on grid crossings (10; 200) and (10; 250); mid points (5; 150) and (5; 175) agree; implied densities 1019 and 1529 kg/m³ are plausible.
-- Solution's physics (same p0, slope ρg, the less dense liquid needs more depth) correct; Kuvaajan lukeminen present.
+- Tolerance 0,04 on 6,0 m accepts 5,76–6,24 m, which covers the solution's stated 5,8–6,2 m; the swapped ratio 4,0 · 10/15 = 2,7 m stays rejected.
+- Recomputed: k_A = 10 kPa/m, k_B = 15 kPa/m, p_B(4,0 m) = 160 kPa, h_A = 6,0 m.

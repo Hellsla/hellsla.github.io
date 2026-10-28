@@ -351,7 +351,7 @@
       "choices": [
         {
           "text": "Se kaksinkertaistuu, koska lämpötilan lukuarvo kaksinkertaistuu.",
-          "feedback": "Celsiusasteikon nollakohta on valittu veden jäätymispisteeksi, ei tilaksi, jossa liike loppuu. Liike-energia on verrannollinen kelvinlämpötilaan, ja kelvineinä lämpötila nousee vain arvosta $283\\,\\text{K}$ arvoon $293\\,\\text{K}$."
+          "feedback": "Celsiusasteikon nollakohta on valittu veden jäätymispisteeksi, ei absoluuttiseksi nollapisteeksi. Hiukkasten keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan, ja kelvineinä lämpötila nousee vain arvosta $283\\,\\text{K}$ arvoon $293\\,\\text{K}$."
         },
         {
           "text": "Se kasvaa noin $3{,}5\\,\\%$.",

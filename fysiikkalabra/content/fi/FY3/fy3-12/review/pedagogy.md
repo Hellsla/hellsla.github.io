@@ -1,15 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 060da49ab2ef0a3e
+VERDICT: PASS
+CONTENT-HASH: 3b497c3d74b89ea1
 
-Delta review over the audit's PASS (dabb1dac42fbf787): new check-c2 (heat transfer mode, converted from an exit question), titles renumbered, exit ticket cut to two questions.
+Round 2: the round-1 Blocking item (greenhouse question repeated check-3) is fixed. Delta review of the diff: exit q2 removed, stage text 'Lopuksi yksi nopea kysymys'.
 
 ## Blocking
-- exit-ticket.json:6-7 — "Miksi ilmakehän hiilidioksidin lisääntyminen nostaa maanpinnan lämpötilaa, vaikka Auringosta tuleva teho ei muutu?" repeats check-3, whose criteria 2-3 are exactly this answer (CO2 absorbs more, less leaves, warms until a new balance). Remove it (exit "yksi nopea kysymys") or replace it with a question no check asks.
+- none
 ## Polish
-- check-c2 has three options, the others at least four; the correct option is longest. A fourth distractor (heat "rises" so it cannot reach the face / the air carries it) would be a real misconception.
-- exit-ticket.json:2 — the U-value calculation is a standard L1 exercise; acceptable.
+- check-c2 has three options, the others at least four; the correct option is longest. A fourth distractor (heat 'rises' so it cannot reach the face) would be a real misconception.
+- The one exit question (U-value, $P = UA\Delta T$) is a standard L1 calculation; acceptable.
 ## Checked
-- check-c2 tests the three transfer modes in a real case (radiation through air), a key concept that check-1 (greenhouse effect) does not; not a calculation.
-- Distractors (conduction through air, convection) are real misconceptions; feedback gives an observable repair (air insulates; shielding stops the warmth at once); no option points at another.
-- Exit question on the three modes was removed because the check now asks it: right.
-- LaTeX/Finnish fine; renumbering and "kaksi" consistent.
+- Round-1 Blocking: the CO2 warming question is gone; check-3 asks it.
+- 0,20 * 50 * 30 = 300 W recomputed. Stage text 'yksi' matches one question.
+- check-c2 and titles 1-4 as in round 1.
