@@ -11,7 +11,7 @@
 ## fy3-13-L1-02
 **Annettu:** kaksi pistettä suoralta: $(\theta_1, p_1) = (20{,}0\,{}^\circ\text{C};\ 105{,}0\,\text{kPa})$ ja $(\theta_2, p_2) = (80{,}0\,{}^\circ\text{C};\ 127{,}0\,\text{kPa})$
 **Kysytty:** suoran kulmakerroin $k$ yksikössä $\tfrac{\text{kPa}}{{}^\circ\text{C}}$
-**Periaate:** Suljetussa astiassa paine on lämpötilan lineaarinen funktio, joten suoran kulmakerroin on kaikkialla sama: se kertoo, kuinka monta kilopascalia paine kasvaa yhtä celsiusastetta kohti. Sen voi siksi laskea mistä tahansa kahdesta suoran pisteestä.
+**Periaate:** Suljetussa jäykässä astiassa harvan kaasun paine on mittausalueella lämpötilan lineaarinen funktio, joten suoran kulmakerroin on kaikkialla sama: se kertoo, kuinka monta kilopascalia paine kasvaa yhtä celsiusastetta kohti. Sen voi siksi laskea mistä tahansa kahdesta suoran pisteestä.
 **Kaava:** $k = \dfrac{\Delta p}{\Delta\theta}$, missä $\Delta p = p_2 - p_1$ ja $\Delta\theta = \theta_2 - \theta_1$, joten $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$
 **Muunnokset:** Yksiköitä ei muunneta, sillä kulmakerroin kysytään yksikössä $\text{kPa}/{}^\circ\text{C}$. Lämpötilaero on $\Delta\theta = 80{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 60{,}0\,{}^\circ\text{C}$, ja se on sama kelvineinä.
 **Sijoitus:** $k = \dfrac{(127{,}0 - 105{,}0)\,\text{kPa}}{(80{,}0 - 20{,}0)\,{}^\circ\text{C}} = \dfrac{22{,}0\,\text{kPa}}{60{,}0\,{}^\circ\text{C}} = 0{,}36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
@@ -39,7 +39,7 @@
 **Järkevyys:** Välin keskikohta on $\dfrac{-258 + (-284)}{2}\,{}^\circ\text{C} = -271\,{}^\circ\text{C}$, ja siitä $13\,{}^\circ\text{C}$ kumpaankin suuntaan päästään täsmälleen ääriarvoihin $-258\,{}^\circ\text{C}$ ja $-284\,{}^\circ\text{C}$. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu väliin, joten tulos sopii sen kanssa yhteen.
 
 ## fy3-13-L1-05
-**Annettu:** painemittarin lukema $p = 112\,\text{kPa}$ ja mittarin epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
+**Annettu:** painemittarin lukema $p = 112\,\text{kPa}$ ja paineen lukeman arvioitu epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
 **Kysytty:** suhteellinen epävarmuus $\varepsilon$ prosentteina lukemasta
 **Periaate:** Epävarmuuden merkitys riippuu siitä, kuinka suuri se on mitattuun arvoon verrattuna. Suhteellinen epävarmuus on epävarmuuden ja lukeman osamäärä, ja kertomalla se luvulla $100\,\%$ saadaan prosentit.
 **Kaava:** $\varepsilon = \dfrac{\Delta p}{p} \cdot 100\,\%$
@@ -66,7 +66,7 @@
 **Muunnokset:** Muunnoksia ei tarvita: $p_0$ on kilopascaleina ja $k$ yksikössä $\text{kPa}/{}^\circ\text{C}$, joten osamäärä on celsiusasteina.
 **Sijoitus:** $\theta_{0,\text{max}} = -\dfrac{100\,\text{kPa}}{0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -263{,}16\,{}^\circ\text{C}$ ja $\theta_{0,\text{min}} = -\dfrac{102\,\text{kPa}}{0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -291{,}43\,{}^\circ\text{C}$. Siis $\Delta\theta_0 = \dfrac{-263{,}16\,{}^\circ\text{C} - (-291{,}43\,{}^\circ\text{C})}{2} = 14{,}14\,{}^\circ\text{C}$
 **Vastaus:** $14\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska nollapisteet $-263\,{}^\circ\text{C}$ ja $-291\,{}^\circ\text{C}$ tunnetaan kolmella numerolla eli kokonaisina asteina, ja niiden erotus $28\,{}^\circ\text{C}$ on vain kahden numeron luku; jakaja $2$ on tarkka.
-**Järkevyys:** Väli on $-277 \pm 14\,{}^\circ\text{C}$, sillä keskikohta on $\dfrac{-263{,}16 + (-291{,}43)}{2} = -277{,}3\,{}^\circ\text{C}$. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu väliin, joten tulos on sopusoinnussa. Suuruusluokka on sama kuin luvun esimerkissä ($18\,{}^\circ\text{C}$), kun pisteet ja painemittarin epävarmuus ovat samanlaiset.
+**Järkevyys:** Väli on $-277 \pm 14\,{}^\circ\text{C}$, sillä keskikohta on $\dfrac{-263{,}16 + (-291{,}43)}{2} = -277{,}3\,{}^\circ\text{C}$. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu väliin, joten tulos on sopusoinnussa. Suuruusluokka on sama kuin luvun esimerkissä ($18\,{}^\circ\text{C}$), kun pisteet ja paineen lukeman epävarmuus ovat samanlaiset.
 
 ## fy3-13-L2-03
 **Annettu:** ilmanpaine $p_\text{ilma} = 101{,}0\,\text{kPa}$; mittarin ylipaine $p_\text{y,1} = 9{,}0\,\text{kPa}$ lämpötilassa $\theta_1 = 30{,}0\,{}^\circ\text{C}$ ja $p_\text{y,2} = 31{,}0\,\text{kPa}$ lämpötilassa $\theta_2 = 90{,}0\,{}^\circ\text{C}$
@@ -81,12 +81,12 @@
 ## fy3-13-L2-04
 **Annettu:** lämpötilan lukematarkkuus $\Delta\theta = 0{,}50\,{}^\circ\text{C}$, suoran kulmakerroin $k = 0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja paineen epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
 **Kysytty:** lämpötilan epävarmuutta vastaava paineen muutos $\Delta p_\theta$ prosentteina epävarmuudesta $\Delta p$
-**Periaate:** Mittauspisteet ovat suoralla $p = p_0 + k\theta$, joten lämpötilan virhe $\Delta\theta$ siirtää pistettä suoraa pitkin ja vastaa paineen muutosta $k\,\Delta\theta$. Kun se muutetaan paineeksi, sitä voi verrata suoraan painemittarin epävarmuuteen.
+**Periaate:** Mittauspisteet ovat suoralla $p = p_0 + k\theta$, joten lämpötilan virhe $\Delta\theta$ siirtää pistettä vaakasuunnassa, ja suoran kohdalla se vastaa pystysuuntaista poikkeamaa $k\,\Delta\theta$. Kun se muutetaan paineeksi, sitä voi verrata suoraan paineen lukeman epävarmuuteen.
 **Kaava:** $\Delta p_\theta = k\,\Delta\theta$ ja osuus $s = \dfrac{\Delta p_\theta}{\Delta p} \cdot 100\,\%$
 **Muunnokset:** Muunnoksia ei tarvita: celsiusasteet supistuvat tulossa $k\,\Delta\theta$, ja kilopascalit supistuvat osamäärässä. Kertominen luvulla $100\,\%$ muuttaa suhdeluvun prosenteiksi.
 **Sijoitus:** $\Delta p_\theta = 0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 0{,}50\,{}^\circ\text{C} = 0{,}18\,\text{kPa}$ ja $s = \dfrac{0{,}18\,\text{kPa}}{1{,}0\,\text{kPa}} \cdot 100\,\% = 18\,\%$
 **Vastaus:** $18\,\%$, kaksi merkitsevää numeroa, koska kulmakerroin $0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on annettu kahdella numerolla; epävarmuudet $0{,}50\,{}^\circ\text{C}$ ja $1{,}0\,\text{kPa}$ ovat myös kahdella numerolla.
-**Järkevyys:** Lämpötilan virhe vastaa vain noin viidesosaa painemittarin epävarmuudesta, joten tuloksen tarkkuutta rajoittaa painemittari, ei lämpömittari. Rajatapaus: osuus olisi $100\,\%$, jos lämpötilan virhe olisi $1{,}0/0{,}36 = 2{,}8\,{}^\circ\text{C}$, eli lämpömittarin pitäisi olla paljon epätarkempi kuin nyt.
+**Järkevyys:** Lämpötilan virhe vastaa vain noin viidesosaa paineen lukeman epävarmuudesta, joten tuloksen tarkkuutta rajoittaa painemittari, ei lämpömittari. Rajatapaus: osuus olisi $100\,\%$, jos lämpötilan virhe olisi $1{,}0/0{,}36 = 2{,}8\,{}^\circ\text{C}$, eli lämpömittarin pitäisi olla paljon epätarkempi kuin nyt.
 
 ## fy3-13-L3-01
 **Annettu:** päätepisteet $106{,}0 \pm 1{,}0\,\text{kPa}$ lämpötilassa $20{,}0\,{}^\circ\text{C}$ ja $137{,}0 \pm 1{,}0\,\text{kPa}$ lämpötilassa $100{,}0\,{}^\circ\text{C}$. Jyrkin ääriviiva kulkee pisteiden $(20{,}0\,{}^\circ\text{C};\ 105{,}0\,\text{kPa})$ ja $(100{,}0\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$, loivin pisteiden $(20{,}0\,{}^\circ\text{C};\ 107{,}0\,\text{kPa})$ ja $(100{,}0\,{}^\circ\text{C};\ 136{,}0\,\text{kPa})$ kautta

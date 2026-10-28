@@ -196,7 +196,7 @@ Tehtävä etenee näin:
 1. Rajaa systeemi ja päätä, mistä energia tulee ja minne se menee.
 2. Kirjoita lähteen energia: $Pt$ tai luovuttavan aineen $cm\Delta T$.
 3. Käy vaiheet läpi lämpötilan mukaan: lämpeneminen sulamispisteeseen, sulaminen, lämpeneminen. Sulamisen aikana lämpötila on vakio.
-4. Tarkista, riittääkö energia: vertaa luovutettavaa energiaa siihen, mitä seuraava olomuodon muutos vaatii. Jos se ei riitä, muutos jää kesken ja lämpötila on sulamispiste.
+4. Tarkista, riittääkö energia: vertaa luovutettavaa energiaa siihen, mitä seuraava olomuodon muutos vaatii. Jos se ei riitä, muutos jää kesken ja lämpötila on sulamispiste. Jos se riittää juuri ja juuri, muutos ehtii loppuun ja lämpötila on tasan sulamispiste.
 5. Tarkista yksiköt ja suuruusluokka.
 
 ## Esimerkki

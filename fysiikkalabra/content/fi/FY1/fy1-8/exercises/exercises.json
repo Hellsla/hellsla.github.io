@@ -45,7 +45,7 @@
     {
       "id": "fy1-8-L2-01",
       "level": 2,
-      "text": "Leluauton ajoaikaa mitataan viisi kertaa, ja tulokset ovat $7{,}8\\,\\text{s}$, $8{,}2\\,\\text{s}$, $7{,}9\\,\\text{s}$, $8{,}1\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Epävarmuudeksi arvioidaan puolet vaihteluvälistä. Kuinka suuri on keskiarvon suhteellinen epävarmuus prosentteina?",
+      "text": "Leluauton ajoaikaa mitataan viisi kertaa, ja tulokset ovat $7{,}8\\,\\text{s}$, $8{,}2\\,\\text{s}$, $7{,}9\\,\\text{s}$, $8{,}1\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Epävarmuuden yksinkertaiseksi ja varovaiseksi arvioksi otetaan puolet vaihteluvälistä. Kuinka suuri on tuloksen suhteellinen epävarmuus prosentteina?",
       "answer": 2.5,
       "unit": "%",
       "tolerance": 0.02

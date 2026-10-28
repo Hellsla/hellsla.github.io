@@ -271,7 +271,7 @@ Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{
 Kattilan häviö on vain $54\,\text{MW}$ ja generaattorin ja muuntajan $12\,\text{MW}$, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei katoa: se siirtyy lämpönä mereen tai ilmaan, jossa sen lämpötila on niin matala, ettei sitä voi enää muuttaa sähköksi. Yhteistuotannossa sama lämpö johdetaan kaukolämpöverkkoon ja lämmittää koteja.
+Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei katoa: se siirtyy lämpönä mereen tai ilmaan, joka lämpenee vain vähän: niin lähellä ympäristön lämpötilaa olevasta vedestä tai ilmasta ei voi enää saada työtä eikä sähköä. Yhteistuotannossa sama lämpö johdetaan kaukolämpöverkkoon ja lämmittää koteja.
 
 Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kun kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945, ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta: sähköä voi käyttää kaikkeen, kaukolämpöä vain lämmitykseen.
 

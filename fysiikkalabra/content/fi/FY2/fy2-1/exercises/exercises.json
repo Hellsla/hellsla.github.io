@@ -69,7 +69,7 @@
     {
       "id": "fy2-1-L2-04",
       "level": 2,
-      "text": "Vedenkeittimeen tulee sähköenergiaa $360\\,\\text{kJ}$. Siitä $331\\,\\text{kJ}$ siirtyy veteen lämpöenergiana, ja loppu lämmittää keitintä ja ympäristöä. Kuinka monta joulea energiaa päätyy keittimeen ja ympäristöön?",
+      "text": "Vedenkeittimeen tulee sähköenergiaa $360\\,\\text{kJ}$. Siitä $331\\,\\text{kJ}$ siirtyy veteen lämpönä, ja loppu lämmittää keitintä ja ympäristöä. Kuinka monta joulea energiaa päätyy keittimeen ja ympäristöön?",
       "answer": 29000.0,
       "unit": "J",
       "tolerance": 0.02

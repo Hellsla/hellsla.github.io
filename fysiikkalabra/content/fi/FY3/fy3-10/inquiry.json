@@ -8,7 +8,7 @@
  ],
  "prior": [
   "Boylen laki $p_1V_1 = p_2V_2$ vakiolämpötilassa (luku *Kaasujen tilanmuutokset ja Boylen laki*)",
-  "Vakiotilavuudessa paine ja vakiopaineessa tilavuus ovat verrannollisia kelvinlämpötilaan (luku *Kaasujen tilanmuutokset ja Boylen laki*)"
+  "Kun kaasun määrä pysyy samana, harvan kaasun paine vakiotilavuudessa ja tilavuus vakiopaineessa ovat verrannollisia kelvinlämpötilaan (luku *Kaasujen tilanmuutokset ja Boylen laki*)"
  ],
  "activities": [
   {
@@ -122,7 +122,7 @@
     },
     {
      "text": "$m/M$ on suurin heliumilla, koska kevyttä kaasua mahtuu palloon enemmän.",
-     "feedback": "Heliumin $m/M = 0{,}83\\,\\text{g} / 4{,}00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0{,}2075\\,\\text{mol}$, ja muiden arvot ovat 0,2064–0,2076 mol. Ero on pienempi kuin punnituksen hajonta, joten heliumia ei ole enempää."
+     "feedback": "Heliumin $m/M = 0{,}83\\,\\text{g} / 4{,}00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0{,}2075\\,\\text{mol}$, ja muiden arvot ovat $0{,}2064$–$0{,}2076\\,\\text{mol}$. Ero on pienempi kuin punnituksen hajonta, joten mittaus ei osoita, että heliumia olisi enemmän: ainemäärät ovat samat mittaustarkkuuden rajoissa."
     },
     {
      "text": "$m/M$ on suurin hiilidioksidilla, koska sen massa on suurin.",

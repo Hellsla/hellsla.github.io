@@ -106,11 +106,11 @@
 **Kaava:** $k = \dfrac{\Delta T}{\Delta t}$ ja $\dfrac{|k_1|}{|k_3|}$
 **Muunnokset:** Ei tarvita: lämpötilojen erotus on sama celsiusasteina ja kelvineinä, ja aika on minuutteina.
 **Sijoitus:** $k_1 = \dfrac{72\,{}^\circ\text{C} - 90\,{}^\circ\text{C}}{10\,\text{min}} = -1{,}8\,\tfrac{{}^\circ\text{C}}{\text{min}}$ ja $k_3 = \dfrac{51\,{}^\circ\text{C} - 60\,{}^\circ\text{C}}{10\,\text{min}} = -0{,}90\,\tfrac{{}^\circ\text{C}}{\text{min}}$, joten $\dfrac{|k_1|}{|k_3|} = \dfrac{1{,}8}{0{,}90} = 2{,}0$
-**Vastaus:** $2{,}0$ kertaa, kaksi merkitsevää numeroa kuten lämpötilaerotuksissa. Yksi suora ei sovi, koska kulmakerroin ei ole vakio: kahvi jäähtyy ensin kaksi kertaa nopeammin kuin lopussa, ja väliltä $10\text{–}20\,\text{min}$ saadaan vielä kolmas arvo $-1{,}2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. Pisteet eivät asetu suoralle.
+**Vastaus:** $2{,}0$ kertaa, kaksi merkitsevää numeroa kuten lämpötilaerotuksissa. Yksi suora ei sovi, koska kulmakerroin ei ole vakio: kahvi jäähtyy ensin kaksi kertaa nopeammin kuin lopussa, ja väliltä 10–$20\,\text{min}$ saadaan vielä kolmas arvo $-1{,}2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. Pisteet eivät asetu suoralle.
 **Järkevyys:** Kulmakertoimet ovat negatiivisia, koska kahvi jäähtyy. Jäähtyminen hidastuu, koska kahvi lähestyy huoneen lämpötilaa ja lämpötilaero ympäristöön pienenee, mikä sopii kokemukseen kuuman juoman jäähtymisestä.
 
 ## fy1-4-L3-03
-**Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman virhe enintään $\Delta y_\text{luku} = 0{,}1$ ja kaksi lukemaa, joten erotuksen $\Delta y$ virhe on enintään $2\,\Delta y_\text{luku} = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
+**Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman epävarmuus on noin $\Delta y_\text{luku} = 0{,}1$, joten kahden lukeman erotuksen $\Delta y$ epävarmuus on varovaisesti arvioiden noin $2\,\Delta y_\text{luku} = 2 \cdot 0{,}1 = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
 **Kysytty:** kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna
 **Periaate:** Kulmakerroin on $k = \Delta y : \Delta x$. Kun $x$-arvot tunnetaan tarkasti, kulmakertoimen suhteellinen epävarmuus on yhtä suuri kuin erotuksen $\Delta y$ suhteellinen epävarmuus. Suoralla $\Delta y = k\,\Delta x$, joten erotus kasvaa matkan mukana, mutta lukemavirhe pysyy samana.
 **Kaava:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{luku}}{\Delta y} = \dfrac{2\,\Delta y_\text{luku}}{k\,\Delta x}$, joten $\dfrac{(\Delta k : k)_\text{lähellä}}{(\Delta k : k)_\text{kaukana}} = \dfrac{\Delta x_2}{\Delta x_1}$
