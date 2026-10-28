@@ -106,7 +106,7 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(1.5); p.line(X(XMIN), RULER_Y, X(XMAX), RULER_Y);
     for (let m = XMIN; m <= XMAX; m += 5) { p.strokeWeight(m % 10 === 0 ? 1.5 : 1); p.line(X(m), RULER_Y, X(m), RULER_Y + (m % 10 === 0 ? 7 : 4)); }
     for (let m = 0; m <= 40; m += 10) lab(`$${m}$`, X(m), RULER_Y + 8 + fh, 'c', fh);
-    lab('$x\\ (\\text{m})$', 546, RULER_Y + 8 + fh, 'l', fh);
+    lab('$x\\ (\\text{m})$', 598, RULER_Y + 8 + fh, 'r', fh);   // right-aligned at the edge: room for the larger phone label
   }
 
   // a cart: gradient body and cabin, two wheels with spokes that turn with the distance driven
