@@ -3,7 +3,7 @@
 > **Miksi** pomppiva pallo pysähtyy lopulta lattialle, vaikka energia ei koskaan katoa?
 
 ## Ydinajatus
-**Energia** on suure, jonka avulla kuvataan, mitä systeemissä tapahtuu, kun jokin liikkuu, lämpenee, loistaa tai muuttaa muotoaan. Energian tunnus on $E$ ja yksikkö on **joule**, $\text{J}$. Joule on pieni yksikkö: suklaapatukan kemiallinen energia on noin $1\,\text{MJ}$, ja koska etuliite mega tarkoittaa miljoonaa, $1\,\text{MJ} = 1 \cdot 10^{6}\,\text{J}$.
+**Energia** on suure, jonka avulla kuvataan, mitä systeemissä tapahtuu, kun jokin liikkuu, lämpenee, loistaa tai muuttaa muotoaan. Energian tunnus on $E$ ja yksikkö on **joule**, $\text{J}$. Joule on pieni yksikkö, joten energioita ilmoitetaan usein myös kilojouleina: etuliite kilo tarkoittaa tuhatta, joten $1\,\text{kJ} = 1000\,\text{J}$.
 
 Energiaa on monessa muodossa, ja jokaista muotoa sanotaan **energialajiksi**. Energialaji kertoo, mihin energia on sitoutunut tai miten se ilmenee.
 
@@ -100,9 +100,9 @@ Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\te
 </svg>
 
 ### Energia muuttaa muotoa
-Energia ei pysy samassa muodossa. Taskulampussa pariston kemiallinen energia muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian säteilyksi eli valoksi ja lämmöksi. Hehkulampussa suurin osa energiasta muuttuu lämpöenergiaksi ja vain pieni osa valoksi.
+Energia ei pysy samassa muodossa. Taskulampussa pariston kemiallinen energia muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Hehkulampussa suurin osa energiasta muuttuu lämpöenergiaksi ja vain pieni osa valoksi.
 
-<svg data-fig="energian-muuttuminen" viewBox="0 0 600 250" role="img" aria-label="Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian säteilyenergiaksi eli valoksi sekä lämpöenergiaksi. Suurin osa muuttuu lämmöksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="energian-muuttuminen" viewBox="0 0 600 250" role="img" aria-label="Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <foreignObject x="7.5" y="11.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
   <foreignObject x="32.5" y="41.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
   <rect x="59" y="90" width="42" height="74" rx="5" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
@@ -230,7 +230,7 @@ E_\text{lämpö} &= E_\text{p} - E_\text{k} \\
 Energia ei katoa eikä kulu loppuun. Kun pallo pysähtyy tai laite kuluttaa energiaa, energia on muuttunut toiseen muotoon, yleensä lämpöenergiaksi, joka on levinnyt ympäristöön. Toinen virhe on laskea vain mekaaninen energia. Kitkallisessa liikkeessä $E_\text{p} + E_\text{k}$ pienenee, mutta kokonaisenergia pysyy samana, kun lämpöenergia otetaan mukaan.
 
 ## Tiivistelmä
-- Energian tunnus on $E$ ja yksikkö joule $\text{J}$. Etuliitteillä $1\,\text{kJ} = 1000\,\text{J}$ ja $1\,\text{MJ} = 1000\,\text{kJ}$.
+- Energian tunnus on $E$ ja yksikkö joule $\text{J}$; $1\,\text{kJ} = 1000\,\text{J}$.
 - Energialajeja ovat potentiaalienergia, liike-energia (yhdessä mekaaninen energia), lämpöenergia, kemiallinen energia, säteilyenergia, sähköenergia ja ydinenergia.
 - Energia muuttaa muotoa ja siirtyy mutta ei synny eikä katoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$.
 - Kitka muuttaa mekaanista energiaa lämpöenergiaksi: $E_\text{p} + E_\text{k}$ pienenee, mutta kokonaisenergia ei muutu.

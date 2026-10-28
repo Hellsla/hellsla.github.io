@@ -10,10 +10,10 @@ a = {}
 a["inq-kuivain-MJ"] = 1800 * 300 / 1e6                # 540 000 J = 0,54 MJ
 a["inq-lamppu-MJ"] = 10 * 86400 / 1e6                 # 864 000 J = 0,864 MJ
 a["inq-lamppu-tunnit"] = 1800 * 300 / 10 / 3600        # t = E : P = 540 000 J : 10 W = 54 000 s = 15 h
-# Table of the meter readings (kJ at 60 s): kettle 2000 W, toaster 1000 W, television 100 W
+# Table of the meter readings (kJ at 60 s): kettle 2000 W, toaster 1000 W, television 80 W
 a["inq-vedenkeitin-60s-kJ"] = 2000 * 60 / 1000        # 120 kJ
 a["inq-tosteri-60s-kJ"] = 1000 * 60 / 1000            # 60 kJ
-a["inq-tv-60s-kJ"] = 100 * 60 / 1000                  # 6 kJ
+a["inq-tv-60s-kJ"] = 80 * 60 / 1000                   # 4,8 kJ
 a["inq-tosteri-teho"] = (60e3 - 20e3) / (60 - 20)     # 40 000 J : 40 s = 1000 W
 # Worked example: television 80 W, 4,0 h per day for 30 days, 20 snt/kWh
 t_h = 4.0 * 30                                        # 120 h
@@ -34,4 +34,6 @@ a["inq-check2-ilman-muunnosta"] = 1.2 / 90            # mistake: 1,2 kWh : 90 mi
 # Lamp comparison used in the text: 10 W 24 h in kWh
 a["text-lamppu-kWh"] = 0.010 * 24                     # 0,24 kWh
 a["text-kuivain-kWh"] = 1.8 * 5 / 60                  # 0,15 kWh
+# Power plant against a kettle: Olkiluoto 3, 1600 MW, in kettles of 2000 W
+a["text-ol3-keittimet"] = 1600e6 / 2000               # 800 000 kettles
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

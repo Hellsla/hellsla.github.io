@@ -2,7 +2,7 @@
 import json
 
 a = {}
-H_puu, H_bens, H_hiili, H_turve, H_pel, H_kaasu = 15, 43, 26, 10, 17, 49     # MJ/kg, lesson table
+H_puu, H_bens, H_hiili, H_turve, H_pel, H_kaasu = 15, 43, 26, 10, 17, 48     # MJ/kg, lesson table
 a["bensiini_puu_suhde"] = H_bens / H_puu                  # 43 : 15 = 2,87 (kertaa)
 a["esimerkki_E_MJ"] = H_puu * 6.0                         # 15 MJ/kg · 6,0 kg = 90 MJ (worked example)
 a["esimerkki_E_kWh"] = a["esimerkki_E_MJ"] / 3.6          # 1 kWh = 3,6 MJ: 90 : 3,6 = 25 kWh

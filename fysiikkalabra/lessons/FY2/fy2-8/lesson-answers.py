@@ -21,5 +21,9 @@ a["inq-siirto-ratio"] = 490 / 12                      # 41
 a["inq-trip-l"] = 120 / 100 * 6.0                     # 120 km: 7,2 l
 a["inq-trip-mj"] = 7.2 * 32                           # 230,4 MJ
 a["inq-trip-kg"] = 7.2 * 32 * 69 / 1e3                # 15 898 g = 15,9 kg -> 16 kg
+a["inq-trip-kg-per-l"] = 32 * 69 / 1e3              # check: one litre 2208 g = 2,2 kg
+a["inq-trip-check-kg"] = 7.2 * 2.2                   # 7,2 l · 2,2 kg = 15,84 kg -> 16 kg
+a["inq-siirto-gwh-slip-t"] = 490 * 100 / 1e6         # mistake: GWh kept: 49 000 g = 0,049 t
+a["inq-hake-ratio"] = 400 / 50                        # transport: 400 km vs 50 km, eight times the distance
 a["inq-trip-100km-kg"] = 6.0 * 32 * 69 / 1e3          # mistake: only 100 km, 13,2 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

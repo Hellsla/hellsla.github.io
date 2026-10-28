@@ -24,31 +24,31 @@ Energia ei katoa, mutta kaikki laitteeseen otettu energia ei muutu siihen muotoo
   <foreignObject x="186" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\eta = 5\,\%$</div></foreignObject>
 </svg>
 
-Energian kulkua laitteen läpi voi havainnollistaa energiavirtakuviolla eli Sankey-kuviolla. Kuviossa nuolen paksuus on verrannollinen energiaan: tuleva nuoli jakautuu ohueen hyötynuoleen ja paksuun häviönuoleen. Kun lamppu ottaa sähköenergiaa 100 J, valoksi muuttuu vain 5 J ja loput 95 J on lämpöä. Lähtevien nuolten paksuudet ovat yhteensä yhtä suuret kuin tulevan nuolen paksuus, koska energia säilyy.
+Energian kulkua laitteen läpi voi havainnollistaa energiavirtakuviolla eli Sankey-kuviolla. Kuviossa nuolen paksuus on verrannollinen energiaan: tuleva nuoli jakautuu ohueen hyötynuoleen ja paksuun häviönuoleen. Kun lamppu ottaa sähköenergiaa $100\,\text{J}$, valoksi muuttuu vain $5\,\text{J}$ ja loput $95\,\text{J}$ on lämpöä. Lähtevien nuolten paksuudet ovat yhteensä yhtä suuret kuin tulevan nuolen paksuus, koska energia säilyy.
 
 ### Häviö määräytyy laitteen tarkoituksesta
 Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden, ja häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö on sen sijaan aina häviötä, vaikka se lämmittäisi huonetta talvella, koska lampun tehtävä on valaista. Hyöty määräytyy siis laitteen tarkoituksesta.
 
 ### Hyötysuhde kertoo hyödyn osuuden
-Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Se on aina alle 100 %, koska osa energiasta muuttuu käytännössä aina lämmöksi esimerkiksi sähkövastuksessa tai kitkassa, ja lämpö leviää ympäristöön, josta sitä on vaikea ottaa talteen. Laitteiden hyötysuhteet vaihtelevat paljon:
+Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Se on aina alle $100\,\%$, koska osa energiasta muuttuu käytännössä aina lämmöksi esimerkiksi sähkövastuksessa tai kitkassa, ja lämpö leviää ympäristöön, josta sitä on vaikea ottaa talteen. Laitteiden hyötysuhteet vaihtelevat paljon:
 
-| Laite ja sen hyöty | $\eta$ |
+| Laite ja sen hyöty | tyypillinen $\eta$ |
 | --- | --- |
-| hehkulamppu: valo | 5 % |
-| ledilamppu: valo | 30 % |
-| vedenkeitin: veden lämpeneminen | 90 % |
-| sähkömoottori: liike | 90 % |
-| bensiinimoottori: auton liike | 25 % |
-| aurinkopaneeli: sähkö | 20 % |
+| hehkulamppu: valo | $5\,\%$ |
+| ledilamppu: valo | $30\,\%$ |
+| vedenkeitin: veden lämpeneminen | $90\,\%$ |
+| sähkömoottori: liike | $90\,\%$ |
+| bensiinimoottori: auton liike | $25\,\%$ |
+| aurinkopaneeli: sähkö | $20\,\%$ |
 
-Taulukon arvot ovat tyypillisiä pyöristettyjä arvoja. Todellinen hyötysuhde riippuu laitteen mallista ja käyttötilanteesta.
+Taulukon arvot ovat tyypillisiä pyöristettyjä arvoja, eivät minkään tietyn laitteen mittauksia. Todellinen hyötysuhde riippuu laitteen mallista ja käyttötilanteesta. Bensiinimoottorin arvo on tyypillinen tasaisessa maantieajossa; kaupunkiajossa ja muulla pienellä kuormalla hyötysuhde on selvästi pienempi. Sähkömoottorin hyötysuhde muuttuu vähän, kun se käy lähellä tehoa, jolle se on suunniteltu.
 
 ## Kaava: Hyötysuhde
 Hyötysuhde $\eta$ (eeta) on hyötyenergian ja laitteeseen otetun energian suhde. Kun laite käy tasaisella teholla, sama suhde saadaan myös tehoista:
 ```latex
 \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
-missä $\eta$ on hyötysuhde (suhdeluku, usein prosentteina), $E_\text{a}$ laitteen antama hyötyenergia (J), $E_\text{o}$ laitteeseen otettu energia (J), $P_\text{a}$ hyötyteho (W) ja $P_\text{o}$ laitteeseen otettu teho (W). Suhdeluku muutetaan prosenteiksi sijoittamalla $1 = 100\,\%$, esimerkiksi $0{,}30 = 30\,\%$.
+missä $\eta$ on hyötysuhde (suhdeluku, usein prosentteina), $E_\text{a}$ laitteen antama hyötyenergia (J), $E_\text{o}$ laitteeseen otettu energia (J), $P_\text{a}$ hyötyteho (W) ja $P_\text{o}$ laitteeseen otettu teho (W). Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\,\%$, esimerkiksi $0{,}30 \cdot 100\,\% = 30\,\%$. Kertominen ei muuta lukua, koska $1\,\% = 0{,}01$ ja siis $100\,\% = 100 \cdot 0{,}01 = 1$.
 
 Tehojen suhde on sama kuin energioiden suhde, koska tasaisella teholla energia on teho kerrottuna ajalla (luku *Teho*). Laitteen käydessä aikaa $t$ energiat ovat $E_\text{a} = P_\text{a} \cdot t$ ja $E_\text{o} = P_\text{o} \cdot t$, ja aika supistuu:
 ```latex
@@ -91,7 +91,7 @@ Lamppu, jonka hyötysuhde on pieni, tarvitsee saman hyödyn saamiseen suuremman 
   <foreignObject x="257" y="412.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P_\text{h} = 7\,\text{W}\ (\text{lämpö})$</div></foreignObject>
 </svg>
 
-Mittakaavaan piirretyssä kuviossa hyötysuhteen näkee suoraan: se on hyötynuolen paksuuden osuus tulevan nuolen paksuudesta. Jos tuleva nuoli on 5,0 cm ja hyötynuoli 4,0 cm paksu, hyötysuhde on $4{,}0 : 5{,}0 = 0{,}80$ eli $80\,\%$.
+Mittakaavaan piirretyssä kuviossa hyötysuhteen näkee suoraan: se on hyötynuolen paksuuden osuus tulevan nuolen paksuudesta. Jos tuleva nuoli on $5{,}0\,\text{cm}$ ja hyötynuoli $4{,}0\,\text{cm}$ paksu, hyötysuhde on $4{,}0 : 5{,}0 = 0{,}80$ eli $80\,\%$.
 
 ## Esimerkki
 Vedenkeittimen hyötysuhde on $90\,\%$, ja se ottaa sähköverkosta tehon $2{,}0\,\text{kW}$. Keitin on päällä $3{,}0\,\text{min}$. Kuinka paljon sähköenergiaa muuttuu häviöiksi eli lämmöksi, joka ei lämmitä vettä?
@@ -153,4 +153,4 @@ Toinen virhe on pitää suuritehoista laitetta tehokkaana. Hyötysuhde on suhdel
 - Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta: $\eta = \tfrac{E_\text{a}}{E_\text{o}} = \tfrac{P_\text{a}}{P_\text{o}}$. Se ilmoitetaan usein prosentteina ja on aina alle $100\,\%$.
 - Energia säilyy: $E_\text{o} = E_\text{a} + E_\text{h}$. Häviöt ovat yleensä lämpöä, joka leviää ympäristöön.
 - Energiavirtakuviossa nuolen paksuus on verrannollinen energiaan tai tehoon, ja hyötysuhde on hyötynuolen osuus tulevasta nuolesta.
-- Hyötysuhde on laitteen ominaisuus: se pysyy suunnilleen samana, vaikka otettu teho tai käyntiaika muuttuu.
+- Tasaisesti käyvän laitteen hyötysuhde ei riipu käyntiajasta, koska aika supistuu energioiden suhteesta. Käyttötilanne voi muuttaa sitä: esimerkiksi bensiinimoottorin hyötysuhde on pienellä kuormalla selvästi pienempi.

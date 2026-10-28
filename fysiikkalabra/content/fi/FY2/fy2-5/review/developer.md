@@ -1,11 +1,8 @@
 VERDICT: DONE
 
-Round 1 draft of fy2-5 (no simulation). Changed, file by file:
-
-- `content/fi/FY2/fy2-5/lesson.md`: Ydinajatus, Kaava (E = Hm, fuel table with source, ruoka subsection with Fineli table), staged Esimerkki (6,0 kg wood, MJ and kWh), misconception, summary; three inline SVG figures.
-- `lessons/FY2/fy2-5/figures.py`: figures energia, lampoarvot (bars to scale), etiketti.
-- `inquiry.json`: hook, two predictions (bensiini/puu, suklaa/puu), data-table interprets (fuel table, E vs m, label as H), explain, theory, reflect, error-spotting, transfer numeric (LPG with one efficiency), three checks, exit. `exit-ticket.json`: 3 checks.
-- `exercises/exercises.json`, `exercises/solutions.md`, `lessons/FY2/fy2-5/answers.py` (5/4/3, efficiency only in L2-03, L2-04, L3-03; one device); `lesson-answers.py`.
-- `glossary.json`: added polttoaine and kemiallinen energia; fy2-5 added to lämpöarvo.
-
-Heating values are rounded from memory of Tilastokeskus and Motiva and Fineli (THL): science review should verify them. check_lesson.py fy2-5: all ok.
+Round 1, lesson fy2-5 (check_lesson.py all ok).
+lesson.md: Miksi reworked (one kilogram of petrol releases almost three times the energy of air-dry wood); every quantity and unit in LaTeX; maakaasu 49 -> 48 (IPCC 2006, bar and labels redrawn); "kuiva" -> "ilmakuiva" (moisture 20-25 %), peat moisture 40-50 %; sources with years (Tilastokeskus Polttoaineluokitus 2017 for wood and peat; IPCC 2006 for gas; kivihiili, diesel, bensiini, pelletti and the food values labelled "tyypillinen arvo"; Fineli year not verifiable); kWh by substitution; 129 -> approx. 130 MJ; "tehollinen" explained; food label "vastaa lämpöarvoa" (metabolisable energy); misconceptions split into three bullets, sack/canister paragraph removed.
+inquiry.json: same data and LaTeX fixes, kWh substitution, units in the tarkistus-3 model answer, Teho added to prior, "rakenna" optional, error-spotting distractor replaced.
+exit-ticket.json: LaTeX, ilmakuiva.
+lesson-answers.py: maakaasu 48.
+Not verified online: IPCC values (from memory of the 2006 table), pellet and Fineli values.

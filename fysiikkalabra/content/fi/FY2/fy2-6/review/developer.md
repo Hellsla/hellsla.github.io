@@ -1,12 +1,8 @@
 VERDICT: DONE
-
-Round 1 draft; `check_lesson.py fy2-6` is ok on every line.
-
-- `lesson.md`: Ydinajatus (plants figure, renewable/non-renewable, three groups table, comparison criteria, Finland 2024 bar chart), Kaava: Voimalan energia (E = P·t, nominal vs average power, log-scale unit-power chart), staged Esimerkki (wind turbine 14 GWh, average power 1,6 MW = 32 %), misconception, summary.
-- `inquiry.json`: hook, optional retrieval, prediction (largest source), two data `interpret` tasks with numeric questions (Tilastokeskus 2024), conclusion explain, theory, optional reflect, example, optional error-spotting, transfer (OL3 maximum 14,0 TWh), exercises, three checks, exit. No sim.
-- `exit-ticket.json`: 3 checks.
-- `exercises/exercises.json` (5/4/3) and `solutions.md`: complete solutions.
-- `lessons/FY2/fy2-6/`: `answers.py`, `lesson-answers.py`, `figures.py` (3 figures).
-- `glossary.json`: six terms inserted at the start of the list.
-
-Data: Tilastokeskus 2024 (total 79,9 TWh; wind 20,2; hydro 14,1; fossil+peat 3,4; solar 0,9; nuclear about 31 and bio about 9,5 derived from percentages). Unit powers and household figures are rounded typical values or labelled examples.
+Round 1 fix.
+- inquiry.json: new Tutki item `data-viikko` (an invented, rounded winter week of consumption, nuclear and wind as daily mean powers, wind's nominal power about $8\,\text{GW}$, labelled as an example) with a numeric task (other sources on Thursday, $9{,}9\,\text{GW}$) and a complete solution, before the conclusion; the conclusion's prompt, model and criterion now use it. data-fi: "muut lähteet 0,8" row instead of "rounding"; answer $2{,}31\,\text{GW}$ with three figures; 2306 feedback says MW only. Virhe: "kymmeniä kertoja koko maailman voimaloiden keskiteho". Quantities in LaTeX (ennuste-1, data-yksikko table, siirto, tarkistus-3), conversions by substitution (data-fi, siirto, tarkistus-2). tarkistus-3 (criteria comparison) is on the core path now.
+- lesson.md: blank line before the criteria list; clearer Kuljetettavuus; "kapasiteettikerroin" dropped; LaTeX $80\,\text{TWh}$ and $5\,\text{MW}$; the group table shortened so all columns show at 360 px; the log-scale text no longer speaks of a "ruutu".
+- figures.py: plants redrawn (reactor vs boiler, generator G, solar without G, grey resource arrows, dark electricity arrows, labelled orange heat arrows); unit-power uses dots instead of bars; fi-bars aria says two fifths.
+- lesson-answers.py: the new numbers (muut, week, world mean power ratio 36).
+- exit-ticket.json: conversion by substitution.
+Not fixable here: the source-note pill (shared component).

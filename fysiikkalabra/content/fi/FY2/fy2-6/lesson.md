@@ -5,40 +5,67 @@
 ## Ydinajatus
 Voimalaitos ei tuota energiaa tyhjästä, vaan muuttaa luonnonvaran energian sähköksi ja usein myös lämmöksi. Putoavan veden ja tuulen liike-energia, auringon säteilyenergia, uraanin ydinenergia ja polttoaineen kemiallinen energia kulkevat turbiinin ja generaattorin tai aurinkopaneelin kautta sähköverkkoon. Energia säilyy, mutta osa siitä päätyy aina lämpönä ympäristöön (luku *Hyötysuhde*).
 
-<svg data-fig="plants" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva: viisi tapaa tuottaa sähköä. Putoava vesi pyörittää turbiinia, tuuli roottoria, auringonsäteily osuu aurinkopaneeliin, ydinpolttoaineen energia lämmittää höyryn höyryturbiinille ja polttoaineen kemiallinen energia lämmittää höyryn höyryturbiinille. Jokaisesta laitoksesta lähtee nuoli sähköverkkoon. Kuva on kaavamainen, nuolten pituus ei kuvaa tehoa." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy26-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <rect x="468" y="18" width="116" height="294" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="472" y="150.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sähkö}$</div></foreignObject>
-  <rect x="16" y="18" width="196" height="54" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="20" y="30.5" width="188" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{putoava vesi}$</div></foreignObject>
-  <path d="M214,51 L232,51 L232,58 L250,45 L232,32 L232,39 L214,39 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="252" y="18" width="176" height="54" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="256" y="30.5" width="168" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{turbiini}$</div></foreignObject>
-  <path d="M430,51 L448,51 L448,58 L466,45 L448,32 L448,39 L430,39 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="16" y="78" width="196" height="54" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="20" y="90.5" width="188" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tuuli}$</div></foreignObject>
-  <path d="M214,111 L232,111 L232,118 L250,105 L232,92 L232,99 L214,99 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="252" y="78" width="176" height="54" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="256" y="90.5" width="168" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{roottori}$</div></foreignObject>
-  <path d="M430,111 L448,111 L448,118 L466,105 L448,92 L448,99 L430,99 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="16" y="138" width="196" height="54" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="20" y="150.5" width="188" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{säteily}$</div></foreignObject>
-  <path d="M214,171 L232,171 L232,178 L250,165 L232,152 L232,159 L214,159 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="252" y="138" width="176" height="54" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="256" y="150.5" width="168" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{paneeli}$</div></foreignObject>
-  <path d="M430,171 L448,171 L448,178 L466,165 L448,152 L448,159 L430,159 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="16" y="198" width="196" height="54" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="20" y="210.5" width="188" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ydinpolttoaine}$</div></foreignObject>
-  <path d="M214,231 L232,231 L232,238 L250,225 L232,212 L232,219 L214,219 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="252" y="198" width="176" height="54" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="256" y="210.5" width="168" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{höyryturbiini}$</div></foreignObject>
-  <path d="M430,231 L448,231 L448,238 L466,225 L448,212 L448,219 L430,219 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="16" y="258" width="196" height="54" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="20" y="270.5" width="188" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{polttoaine}$</div></foreignObject>
-  <path d="M214,291 L232,291 L232,298 L250,285 L232,272 L232,279 L214,279 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
-  <rect x="252" y="258" width="176" height="54" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="256" y="270.5" width="168" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{höyryturbiini}$</div></foreignObject>
-  <path d="M430,291 L448,291 L448,298 L466,285 L448,272 L448,279 L430,279 Z" fill="url(#fy26-heat)" stroke-linejoin="round"/>
+<svg data-fig="plants" viewBox="0 0 600 366" role="img" aria-label="Kaavakuva: viisi tapaa tuottaa sähköä. Putoava vesi pyörittää vesiturbiinia, tuuli roottoria, ja kummankin akseli pyörittää generaattoria G. Auringonsäteily osuu aurinkopaneeliin, joka tuottaa sähköä suoraan ilman generaattoria. Uraanin ydinenergia lämmittää reaktorissa höyryn ja polttoaineen kemiallinen energia kattilassa höyryn, ja höyry pyörittää turbiinia ja generaattoria. Harmaat nuolet ovat luonnonvaran energiaa, tummat nuolet sähköä, ja jokaisesta laitoksesta lähtee alaspäin oranssi nuoli: osa energiasta päätyy lämpönä ympäristöön. Kuva on kaavamainen, nuolten pituus ei kuvaa tehoa." style="max-width:100%;font-size:24px">
+  <rect x="496" y="14" width="88" height="308" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="500" y="153.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sähkö}$</div></foreignObject>
+  <rect x="16" y="14" width="132" height="44" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="20" y="21.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vesi}$</div></foreignObject>
+  <path d="M150,42 L160,42 L160,48 L174,36 L160,24 L160,30 L150,30 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <rect x="176" y="14" width="236" height="44" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="180" y="21.5" width="228" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vesiturbiini}$</div></foreignObject>
+  <path d="M386,59 L386,67 L381,67 L390,77 L399,67 L394,67 L394,59 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="414" y1="36" x2="427" y2="36" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M438,36 L426,41.5 L426,30.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="456" cy="36" r="16" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="443" y="21.5" width="26" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$G$</div></foreignObject>
+  <line x1="474" y1="36" x2="483" y2="36" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M494,36 L482,41.5 L482,30.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="16" y="80" width="132" height="44" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="20" y="87.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tuuli}$</div></foreignObject>
+  <path d="M150,108 L160,108 L160,114 L174,102 L160,90 L160,96 L150,96 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <rect x="176" y="80" width="236" height="44" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="180" y="87.5" width="228" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{roottori}$</div></foreignObject>
+  <path d="M386,125 L386,133 L381,133 L390,143 L399,133 L394,133 L394,125 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="414" y1="102" x2="427" y2="102" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M438,102 L426,107.5 L426,96.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="456" cy="102" r="16" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="443" y="87.5" width="26" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$G$</div></foreignObject>
+  <line x1="474" y1="102" x2="483" y2="102" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M494,102 L482,107.5 L482,96.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="16" y="146" width="132" height="44" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="20" y="153.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{säteily}$</div></foreignObject>
+  <path d="M150,174 L160,174 L160,180 L174,168 L160,156 L160,162 L150,162 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <rect x="176" y="146" width="236" height="44" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="180" y="153.5" width="228" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{aurinkopaneeli}$</div></foreignObject>
+  <path d="M386,191 L386,199 L381,199 L390,209 L399,199 L394,199 L394,191 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="414" y1="168" x2="483" y2="168" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M494,168 L482,173.5 L482,162.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="16" y="212" width="132" height="44" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="20" y="219.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{uraani}$</div></foreignObject>
+  <path d="M150,240 L160,240 L160,246 L174,234 L160,222 L160,228 L150,228 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <rect x="176" y="212" width="236" height="44" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="180" y="219.5" width="228" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{reaktori, turbiini}$</div></foreignObject>
+  <path d="M386,257 L386,265 L381,265 L390,275 L399,265 L394,265 L394,257 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="414" y1="234" x2="427" y2="234" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M438,234 L426,239.5 L426,228.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="456" cy="234" r="16" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="443" y="219.5" width="26" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$G$</div></foreignObject>
+  <line x1="474" y1="234" x2="483" y2="234" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M494,234 L482,239.5 L482,228.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="16" y="278" width="132" height="44" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="20" y="285.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{polttoaine}$</div></foreignObject>
+  <path d="M150,306 L160,306 L160,312 L174,300 L160,288 L160,294 L150,294 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <rect x="176" y="278" width="236" height="44" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="180" y="285.5" width="228" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kattila, turbiini}$</div></foreignObject>
+  <path d="M386,323 L386,331 L381,331 L390,341 L399,331 L394,331 L394,323 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="414" y1="300" x2="427" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M438,300 L426,305.5 L426,294.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="456" cy="300" r="16" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="443" y="285.5" width="26" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$G$</div></foreignObject>
+  <line x1="474" y1="300" x2="483" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M494,300 L482,305.5 L482,294.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="16" y="323.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$G\text{: generaattori}$</div></foreignObject>
+  <foreignObject x="300" y="323.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{lämpö}$</div></foreignObject>
 </svg>
 
 ### Uusiutuva ja uusiutumaton energia
@@ -49,25 +76,26 @@ Sähköä ei voi varastoida suuria määriä suoraan verkkoon, joten tuotannon o
 
 | Ryhmä | Voimalat | Teho |
 |---|---|---|
-| Sääriippuvainen | tuuli, aurinko | vaihtelee sään mukaan |
-| Säädettävä | vesi, polttoaine | säädettävissä |
+| Sää&shy;riippuvainen | tuuli, aurinko | vaihtelee sään mukaan |
+| Säädettävä | vesi, poltto&shy;aine | voidaan säätää |
 | Perusvoima | ydinvoima | lähes vakio |
 
 Vesivoimalaitoksessa virtausta lisätään tai vähennetään nopeasti, mutta tuulta ja aurinkoa ei voi käskeä. Ydinvoimala käy mieluiten tasaisesti, koska sen tehon muuttaminen on hidasta.
 
 ### Vertailun kriteerit
 Eri tuotantotapoja vertaillaan samoilla kysymyksillä:
+
 - **Hinta:** kuinka paljon sähkö maksaa tuottaa.
 - **Teho:** kuinka suuri yksi voimala on.
-- **Kuljetettavuus:** voiko polttoaineen kuljettaa voimalaan (kyllä) vai pitääkö voimala rakentaa sinne, missä tuuli tai vesi on.
+- **Kuljetettavuus:** voiko energialähteen tuoda voimalaan, kuten polttoaineen, vai pitääkö voimala rakentaa sinne, missä tuuli tai virtaava vesi on.
 - **Varastoitavuus:** polttoaineen ja vesialtaan voi varastoida, tuulta ja auringonsäteilyä ei.
 - **Turvallisuus:** onnettomuuden vaikutus ja riski.
 - **Ympäristö:** päästöt, maankäyttö, luonto ja jätteet.
 
 ### Suomen sähköntuotanto
-Suomessa tuotettiin vuonna 2024 sähköä yhteensä noin 80 TWh (Tilastokeskus). Ydinvoima tuotti eniten, noin neljänneksen tuotti tuulivoima, ja fossiilisten polttoaineiden osuus oli vain muutama prosentti. Pylväät on piirretty mittakaavassa.
+Suomessa tuotettiin vuonna 2024 sähköä yhteensä noin $80\,\text{TWh}$ (Tilastokeskus). Ydinvoima tuotti eniten ja tuulivoima noin neljänneksen, ja fossiilisten polttoaineiden osuus oli vain muutama prosentti. Pylväät on piirretty mittakaavassa.
 
-<svg data-fig="fi-bars" viewBox="0 0 600 330" role="img" aria-label="Vaakapylväskaavio Suomen sähköntuotannosta vuonna 2024 energialähteittäin teravattitunteina (Tilastokeskus), mittakaavassa: ydinvoima 31, tuulivoima 20,2, vesivoima 14,1, bioperäiset polttoaineet 9,5, fossiiliset polttoaineet ja turve 3,4 ja aurinkosähkö 0,9. Ydinvoiman pylväs on noin kolmannes kokonaistuotannosta 79,9." style="max-width:100%;font-size:24px">
+<svg data-fig="fi-bars" viewBox="0 0 600 330" role="img" aria-label="Vaakapylväskaavio Suomen sähköntuotannosta vuonna 2024 energialähteittäin teravattitunteina (Tilastokeskus), mittakaavassa: ydinvoima 31, tuulivoima 20,2, vesivoima 14,1, bioperäiset polttoaineet 9,5, fossiiliset polttoaineet ja turve 3,4 ja aurinkosähkö 0,9. Ydinvoiman pylväs on noin kaksi viidesosaa kokonaistuotannosta 79,9." style="max-width:100%;font-size:24px">
   <foreignObject x="168" y="5.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E\ (\text{TWh})$</div></foreignObject>
   <line x1="275" y1="42" x2="275" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="380" y1="42" x2="380" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -111,12 +139,12 @@ E = P \cdot t
 missä $E$ on tuotettu energia, $P$ voimalan teho ja $t$ aika. Kun teho on kilowatteina ja aika tunteina, energia on kilowattitunteina. Vuodessa on $t = 8760\,\text{h}$. Suuret energiat ilmoitetaan usein gigawatti- ja teravattitunteina: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ ja $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
 
 ### Nimellisteho ja keskiteho
-Voimalan nimellisteho on suurin teho, jolla se voi toimia. Tuulivoimala ei tuota nimellisteholla koko vuotta, koska tuuli vaihtelee. Keskiteho on vuoden aikana tuotettu energia jaettuna vuoden tuntimäärällä. Keskiteho jaettuna nimellisteholla kertoo, kuinka suuri osa nimellistehosta on käytössä (kapasiteettikerroin).
+Voimalan nimellisteho on suurin teho, jolla se voi toimia. Tuulivoimala ei tuota nimellisteholla koko vuotta, koska tuuli vaihtelee. Keskiteho on vuoden aikana tuotettu energia jaettuna vuoden tuntimäärällä. Keskiteho jaettuna nimellisteholla kertoo, kuinka suuri osa nimellistehosta on keskimäärin käytössä.
 
 ### Suuruusluokat
-Yhden voimalan teho voi olla tuhatta kertaa suurempi kuin toisen. Siksi suuruusluokkia vertaillaan kymmenen potensseilla: jokainen ruutu kuvassa on kymmenkertainen edellisestä.
+Yhden voimalan teho voi olla tuhatta kertaa suurempi kuin toisen. Siksi suuruusluokkia vertaillaan kymmenen potensseilla. Kuvan vaaka-akselilla jokainen askel pystyviivalta seuraavalle on kymmenkertainen, joten pisteiden välimatka kertoo, montako kertaa kymmenen teho kasvaa.
 
-<svg data-fig="unit-power" viewBox="0 0 600 372" role="img" aria-label="Vaakapylväskaavio yksittäisten voimalaitosten tehoista logaritmisella asteikolla, jossa jokainen ruutu on kymmenkertainen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin 100 MW ja Olkiluoto 3 noin 1600 MW. Pylväiden pituudet ovat tehon logaritmin mukaiset, joten Olkiluoto 3 on noin 320 kertaa tuulivoimalaa suurempi, vaikka pylväs on vain vähän pidempi." style="max-width:100%;font-size:24px">
+<svg data-fig="unit-power" viewBox="0 0 600 372" role="img" aria-label="Pistekuvaaja yksittäisten voimalaitosten tehoista logaritmisella asteikolla, jossa jokainen pystyviiva on kymmenkertainen edelliseen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin 100 MW ja Olkiluoto 3 noin 1600 MW. Pisteen paikka kertoo tehon kymmenen potenssin, joten Olkiluoto 3 on noin 320 kertaa tuulivoimalaa suurempi, vaikka sen piste on vain kaksi ja puoli askelta oikeammalla." style="max-width:100%;font-size:24px">
   <foreignObject x="40" y="3.5" width="330" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P\ (\text{W})$</div></foreignObject>
   <line x1="40" y1="44" x2="40" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="110" y1="44" x2="110" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -126,17 +154,17 @@ Yhden voimalan teho voi olla tuhatta kertaa suurempi kuin toisen. Siksi suuruusl
   <line x1="390" y1="44" x2="390" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="460" y1="44" x2="460" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="44" y="41.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omakotitalon aurinkopaneelit}$</div></foreignObject>
-  <rect x="40" y="72" width="49" height="24" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <foreignObject x="97" y="69.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5\,\text{kW}$</div></foreignObject>
+  <circle cx="89" cy="84" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="103" y="69.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5\,\text{kW}$</div></foreignObject>
   <foreignObject x="44" y="105.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tuulivoimala}$</div></foreignObject>
-  <rect x="40" y="136" width="259" height="24" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <foreignObject x="307" y="133.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5\,\text{MW}$</div></foreignObject>
+  <circle cx="299" cy="148" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="313" y="133.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5\,\text{MW}$</div></foreignObject>
   <foreignObject x="44" y="169.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{suuri vesivoimalaitos}$</div></foreignObject>
-  <rect x="40" y="200" width="350" height="24" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <foreignObject x="398" y="197.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$100\,\text{MW}$</div></foreignObject>
+  <circle cx="390" cy="212" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="404" y="197.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$100\,\text{MW}$</div></foreignObject>
   <foreignObject x="44" y="233.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Olkiluoto 3}$</div></foreignObject>
-  <rect x="40" y="264" width="434.5" height="24" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <foreignObject x="482.5" y="261.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1600\,\text{MW}$</div></foreignObject>
+  <circle cx="474.5" cy="276" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="488.5" y="261.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1600\,\text{MW}$</div></foreignObject>
   <line x1="40" y1="300" x2="488" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M500,300 L487,306 L487,294 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="40" y1="42" x2="40" y2="302" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -201,7 +229,7 @@ P_\text{ka} &= E : t \\
 **Järkevyys.** Jos voimala toimisi koko vuoden nimellisteholla, se tuottaisi $5000\,\text{kW} \cdot 8760\,\text{h} = 43{,}8\,\text{GWh}$, ja $14 : 43{,}8 = 0{,}32$. Osuus on alle yksi, koska tuuli ei puhalla aina.
 
 ## Yleinen virhekäsitys
-Nimellisteho ei kerro, kuinka paljon sähköä voimala todella tuottaa. Tuulivoimala, jonka nimellisteho on 5 MW, tuottaa vuodessa vain noin kolmanneksen siitä, mitä tuottaisi, jos tuuli puhaltaisi aina oikealla nopeudella. Uusiutuva ei myöskään tarkoita jatkuvasti saatavaa: tuuli ja aurinko ovat uusiutuvia mutta sääriippuvaisia.
+Nimellisteho ei kerro, kuinka paljon sähköä voimala todella tuottaa. Tuulivoimala, jonka nimellisteho on $5\,\text{MW}$, tuottaa vuodessa vain noin kolmanneksen siitä, mitä tuottaisi, jos tuuli puhaltaisi aina oikealla nopeudella. Uusiutuva ei myöskään tarkoita jatkuvasti saatavaa: tuuli ja aurinko ovat uusiutuvia mutta sääriippuvaisia.
 
 ## Tiivistelmä
 - Voimalaitos muuttaa luonnonvaran energian sähköksi; energia säilyy, mutta osa muuttuu hukkalämmöksi.

@@ -18,7 +18,13 @@ a["ex-Ea"] = Ea
 a["ex-Eh"] = Eo - Ea                                       # 36 000 J = 36 kJ
 # Inquiry: retrieval, experiments (model values of the simulation), transfer and checks
 a["inq-kertaus"] = 40 * 30                                 # E = P t = 40 W · 30 s = 1200 J
-a["inq-koe1-eta"] = 15000 / 60000 * 100                    # engine: P_a / P_o at P_o = 60 kW, eta 25 %
+a["inq-koe1-Eo-10s"] = 60000 * 10                         # engine locked at P_o = 60 kW, t = 10 s: E_o = 600 000 J
+a["inq-koe1-Ea-10s"] = 0.25 * 60000 * 10                  # E_a = 150 000 J
+a["inq-koe1-Eh-10s"] = 60000 * 10 - 0.25 * 60000 * 10     # E_h = 450 000 J
+a["inq-koe1-eta"] = 150000 / 600000 * 100                  # eta = E_a / E_o = 25 %
+a["inq-koe1-Eo-20s"] = 60000 * 20                         # conclusion: t = 20 s: E_o = 1 200 000 J = 1200 kJ
+a["inq-koe1-Ea-20s"] = 0.25 * 60000 * 20                  # E_a = 300 000 J = 300 kJ
+a["inq-koe1-Pa"] = 0.25 * 60000                            # P_a = 15 kW, P_h = 45 kW (ennuste-1 feedback)
 a["inq-koe1-Ph"] = 60000 - 15000                           # 45 kW lost at 60 kW in
 a["inq-koe2-Eo-20s"] = 40 * 20                             # bulb 40 W, 20 s: E_o = 800 J
 a["inq-koe2-Ea-20s"] = 0.05 * 40 * 20                      # E_a = 40 J

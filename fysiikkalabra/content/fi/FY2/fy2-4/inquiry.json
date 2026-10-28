@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "contribution": "Energian säilymisestä ja tehosta edetään yhden laitteen hyötysuhteeseen: opiskelija erottaa hyötyenergian ja häviöt, lukee mittakaavaan piirretyn energiavirtakuvion, laskee hyötysuhteen energioista ja tehoista ja huomaa, että se on laitteen ominaisuus eikä riipu tehosta tai ajasta.",
+  "contribution": "Energian säilymisestä ja tehosta edetään yhden laitteen hyötysuhteeseen: opiskelija erottaa hyötyenergian ja häviöt, lukee mittakaavaan piirretyn energiavirtakuvion, laskee hyötysuhteen energioista ja tehoista ja huomaa, ettei se riipu käyntiajasta, kun laite käy tasaisella teholla, sekä erottaa mallin oletuksen todellisen laitteen käyttäytymisestä.",
   "learn": [
     "Osaat laskea laitteen hyötysuhteen energioiden tai tehojen suhteena.",
-    "Osaat selittää, miksi hyötysuhde on aina alle 100 %, vaikka energia säilyy.",
+    "Osaat selittää, miksi hyötysuhde on aina alle $100\\,\\%$, vaikka energia säilyy.",
     "Osaat lukea energiavirtakuviota ja päätellä siitä hyödyn ja häviöiden osuudet."
   ],
   "prior": [
@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Huoneessa palaa kaksi lamppua, hehkulamppu ja ledilamppu, ja ne valaisevat yhtä kirkkaasti. Hehkulamppu ottaa sähköverkosta tehon 60 W, ledilamppu vain 10 W. Kun lamppuja koskettaa hetken palamisen jälkeen, hehkulamppu on polttavan kuuma ja ledilamppu vain haalea.",
+      "text": "Huoneessa palaa kaksi lamppua, hehkulamppu ja ledilamppu, ja ne valaisevat yhtä kirkkaasti. Hehkulamppu ottaa sähköverkosta tehon $60\\,\\text{W}$, ledilamppu vain $10\\,\\text{W}$. Kun lamppuja koskettaa hetken palamisen jälkeen, hehkulamppu on polttavan kuuma ja ledilamppu vain haalea.",
       "question": "Mihin hehkulampun ottama sähköenergia menee, ja miten laitteen hyvyyttä voi mitata?"
     },
     {
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: bensiinimoottorin hyötysuhde",
-      "prompt": "Auton bensiinimoottori ottaa polttoaineen kemiallisesta energiasta tehon $60\\,\\text{kW}$. Kuinka suuri osa tästä tehosta muuttuu auton liikkumiseen tarvittavaksi hyötytehoksi?",
+      "prompt": "Auton bensiinimoottori ottaa polttoaineen kemiallisesta energiasta tehon $60\\,\\text{kW}$. Kuinka suuri osa tästä tehosta muuttuu auton liikkumiseen tarvittavaksi hyötytehoksi? Vihje: muista Pohdinnan kuuma hehkulamppu. Kuumenevatko auton moottori ja pakoputki ajossa?",
       "justify": true,
       "reveal": {
         "after": "koe-1",
@@ -59,20 +59,20 @@
       "choices": [
         {
           "text": "Noin $90\\,\\%$, koska nykyaikainen moottori hukkaa energiaa vain vähän.",
-          "feedback": "Simulaation malli kumoaa tämän. Noin $90\\,\\%$ on tyypillinen arvo sähkömoottorille ja vedenkeittimelle, mutta bensiinimoottorissa polttoaineen energiasta vapautuu suurin osa kuumina pakokaasuina ja moottorin lämpönä. Mallin arvo on noin $25\\,\\%$."
+          "feedback": "Ei osu. Bensiinimoottorin tyypillinen hyötysuhde on noin $25\\,\\%$ (simulaation mallin arvo). Noin $90\\,\\%$ on tyypillinen sähkömoottorille ja vedenkeittimelle, mutta bensiinimoottorissa suurin osa polttoaineen energiasta vapautuu kuumina pakokaasuina ja moottorin lämpönä."
         },
         {
           "text": "Noin $60\\,\\%$.",
-          "feedback": "Simulaation malli kumoaa tämän. Jos hyötysuhde olisi $60\\,\\%$, häviöitä olisi vain $24\\,\\text{kW}$. Pakokaasut ja jäähdytys vievät kuitenkin lämpönä suurimman osan polttoaineen energiasta, ja mallin hyötysuhde on noin $25\\,\\%$."
+          "feedback": "Ei osu. Jos hyötysuhde olisi $60\\,\\%$, häviöitä olisi vain $24\\,\\text{kW}$. Pakokaasut ja jäähdytys vievät kuitenkin lämpönä suurimman osan polttoaineen energiasta: tyypillinen hyötysuhde on noin $25\\,\\%$ (simulaation mallin arvo)."
         },
         {
           "text": "Noin $25\\,\\%$, koska suurin osa polttoaineen energiasta muuttuu lämmöksi.",
           "correct": true,
-          "feedback": "Simulaation malli tukee tätä: mallin hyötysuhde on $25\\,\\%$, joten hyötytehoa on $15\\,\\text{kW}$ ja häviötehoa $45\\,\\text{kW}$. Arvo on tyypillinen pyöristetty arvo; todellinen hyötysuhde vaihtelee ajotilanteen mukaan."
+          "feedback": "Osuu. Tyypillinen hyötysuhde on noin $25\\,\\%$ (simulaation mallin arvo), joten hyötytehoa on $15\\,\\text{kW}$ ja häviötehoa $45\\,\\text{kW}$. Todellinen hyötysuhde riippuu ajotilanteesta: pienellä kuormalla, kuten kaupunkiajossa, se on selvästi pienempi."
         },
         {
           "text": "Noin $5\\,\\%$, koska moottori kuumenee yhtä paljon kuin hehkulamppu.",
-          "feedback": "Simulaation malli kumoaa tämän. Hehkulampun hyötysuhde on noin $5\\,\\%$, mutta bensiinimoottorista suurempi osa, noin $25\\,\\%$, muuttuu liikkeeksi. Kuumeneminen on silti merkki häviöistä, joita on myös moottorissa."
+          "feedback": "Ei osu. Hehkulampun hyötysuhde on noin $5\\,\\%$, mutta bensiinimoottorin tyypillinen hyötysuhde on noin $25\\,\\%$ (simulaation mallin arvo). Kuumeneminen on silti merkki häviöistä, joita on myös moottorissa."
         }
       ]
     },
@@ -90,18 +90,19 @@
       "choices": [
         {
           "text": "Hyötysuhde kaksinkertaistuu, koska lamppu antaa valoa pidempään.",
-          "feedback": "Simulaation malli kumoaa tämän. Pidempään palava lamppu antaa enemmän valoenergiaa, mutta se myös ottaa enemmän sähköenergiaa. Molemmat energiat kasvavat kaksinkertaisiksi, joten niiden suhde ei muutu."
+          "feedback": "Ei osu. Pidempään palava lamppu antaa enemmän valoenergiaa, mutta se myös ottaa enemmän sähköenergiaa. Tasaisella teholla molemmat energiat ovat teho kerrottuna ajalla, $E = P \\cdot t$, joten ne kaksinkertaistuvat ja niiden suhde ei muutu."
         },
         {
           "text": "Hyötysuhde pysyy samana, koska hyötyenergia ja otettu energia kasvavat kumpikin kaksinkertaisiksi.",
           "correct": true,
-          "feedback": "Simulaation malli tukee tätä: molemmat energiat ovat teho kerrottuna ajalla, joten aika supistuu suhteesta. Todellisessa lampussa hyötysuhde voi muuttua hieman, kun lamppu lämpenee, mutta mallissa se on vakio."
+          "feedback": "Osuu. Tasaisella teholla $E_\\text{a} = P_\\text{a} \\cdot t$ ja $E_\\text{o} = P_\\text{o} \\cdot t$, joten aika supistuu suhteesta. Peruste on tämä lasku, ei simulaatio: simulaation malli olettaa hyötysuhteen vakioksi, joten se vain toistaa oletuksen. Todellinen lamppu käy tasaisesti, kun se on ensin lämmennyt."
         },
         {
           "text": "Hyötysuhde pienenee, koska lamppu kuumenee ja häviöt kasvavat.",
-          "feedback": "Simulaation malli kumoaa tämän. Häviöenergia kasvaa ajan mukana, mutta niin kasvaa myös hyötyenergia ja otettu energia. Häviöiden osuus otetusta energiasta pysyy samana, joten hyötysuhde pysyy samana."
+          "feedback": "Ajatus on fysikaalinen, mutta se ei osu tasaisesti palavaan lamppuun. Häviöenergia kasvaa ajan mukana, mutta samassa suhteessa kasvavat hyötyenergia ja otettu energia, koska tasaisella teholla $E = P \\cdot t$. Lamppu lämpenee vain syttymisen jälkeisen hetken; simulaation malli olettaa hyötysuhteen vakioksi, joten se ei voi testata tätä."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "simulaatio",
@@ -109,7 +110,7 @@
       "type": "sim",
       "text": "Valitse laite ja säädä otettua tehoa. Katso, miten tuleva nuoli jakautuu hyötyyn ja häviöihin.",
       "howto": "Valitse laite valikosta. Säädä otettua tehoa $P_\\text{o}$ ja aikaa $t$ liukusäätimillä. Vihreä nuoli on hyötyteho $P_\\text{a}$ ja oranssi nuoli häviöteho $P_\\text{h}$. Lukemat näyttävät tehot sekä energiat ajassa $t$. Nopeus muuttaa vain nuolissa kulkevien raitojen vauhtia.",
-      "model": "Kullakin laitteella on vakio hyötysuhde. Arvot ovat tyypillisiä pyöristettyjä arvoja, eivät minkään tietyn laitteen mittauksia: hehkulamppu $5\\,\\%$, ledilamppu $30\\,\\%$, vedenkeitin $90\\,\\%$, sähkömoottori $90\\,\\%$, auton bensiinimoottori $25\\,\\%$ ja aurinkopaneeli $20\\,\\%$. Todellisen laitteen hyötysuhde muuttuu hieman kuormituksen ja olosuhteiden mukaan. Malli olettaa laitteen käyvän tasaisella teholla. Häviöt ovat lämpöä, ja aurinkopaneelissa niihin kuuluu myös heijastunutta valoa. Simulaation lukemat ovat mallin arvoja, eivät mittauksia.",
+      "model": "Kullakin laitteella on mallissa vakio hyötysuhde. Arvot ovat tyypillisiä pyöristettyjä arvoja, eivät minkään tietyn laitteen mittauksia: hehkulamppu $5\\,\\%$, ledilamppu $30\\,\\%$, vedenkeitin $90\\,\\%$, sähkömoottori $90\\,\\%$, auton bensiinimoottori $25\\,\\%$ ja aurinkopaneeli $20\\,\\%$. Todellisen laitteen hyötysuhde riippuu kuormituksesta: bensiinimoottorilla voimakkaasti, sillä pienellä kuormalla se on selvästi pienempi, ja sähkömoottorilla vain vähän, kun se käy lähellä tehoa, jolle se on suunniteltu. Malli ei siis kerro, miten hyötysuhde riippuu otetusta tehosta. Malli olettaa laitteen käyvän tasaisella teholla. Häviöt ovat lämpöä, ja aurinkopaneelissa niihin kuuluu myös heijastunutta valoa. Simulaation lukemat ovat mallin arvoja, eivät mittauksia.",
       "calc": "Hyötyteho on $P_\\text{a} = \\eta \\cdot P_\\text{o}$ ja häviöteho $P_\\text{h} = P_\\text{o} - P_\\text{a}$. Ajassa $t$ energiat ovat $E_\\text{o} = P_\\text{o} \\cdot t$, $E_\\text{a} = \\eta \\cdot E_\\text{o}$ ja $E_\\text{h} = E_\\text{o} - E_\\text{a}$. Kuvassa tuleva nuoli on aina $100\\,\\text{px}$ paksu, hyötynuoli $\\eta \\cdot 100\\,\\text{px}$ ja häviönuoli $(1 - \\eta) \\cdot 100\\,\\text{px}$."
     },
     {
@@ -117,17 +118,17 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: bensiinimoottori",
-      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori, ja aika on lukittu. Muuta vain otettua tehoa $P_\\text{o}$ ja kirjaa vähintään kolme mittausta. Katso hyötytehoa $P_\\text{a}$ ja häviötehoa $P_\\text{h}$.",
+      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori, ja sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska todellisen moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$.",
       "initial": {
         "laite": "auto",
-        "Po": 20000,
+        "Po": 60000,
         "t": 10
       },
       "locked": [
         "laite",
-        "t"
+        "Po"
       ],
-      "vary": "Po",
+      "vary": "t",
       "names": {
         "laite": "laite",
         "Po": "otettu teho P_o",
@@ -140,37 +141,46 @@
       },
       "measure": [
         {
-          "key": "Pa",
-          "label": "P_a (W)"
+          "key": "Eo",
+          "label": "E_o (J)"
         },
         {
-          "key": "Ph",
-          "label": "P_h (W)"
+          "key": "Ea",
+          "label": "E_a (J)"
+        },
+        {
+          "key": "Eh",
+          "label": "E_h (J)"
         }
       ],
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Laske taulukon jokaiselle riville osamäärä $P_\\text{a} : P_\\text{o}$. Mikä on moottorin hyötysuhde? Vastaa prosentteina.",
+        "prompt": "Laske taulukon jokaiselle riville osamäärä $E_\\text{a} : E_\\text{o}$. Mikä on moottorin hyötysuhde mallissa? Vastaa prosentteina.",
         "answer": 25,
         "unit": "%",
         "tolerance": 0.02,
         "hints": [
-          "Hyötysuhde on hyötytehon osuus otetusta tehosta. Valitse yksi taulukon rivi ja lue siitä $P_\\text{o}$ ja $P_\\text{a}$.",
-          "Hyötysuhde on $\\eta = \\dfrac{P_\\text{a}}{P_\\text{o}}$. Muunna suhdeluku prosenteiksi kertomalla se luvulla $100\\,\\%$.",
-          "Esimerkiksi rivillä $P_\\text{o} = 20\\,000\\,\\text{W}$ hyötyteho on $5000\\,\\text{W}$, joten $\\eta = 5000 : 20\\,000 = 0{,}25$."
+          "Hyötysuhde on hyötyenergian osuus otetusta energiasta. Valitse yksi taulukon rivi ja lue siitä $E_\\text{o}$ ja $E_\\text{a}$.",
+          "Hyötysuhde on $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$. Muunna suhdeluku prosenteiksi kertomalla se luvulla $100\\,\\%$.",
+          "Esimerkiksi rivillä $t = 10\\,\\text{s}$ otettu energia on $600\\,000\\,\\text{J}$ ja hyötyenergia $150\\,000\\,\\text{J}$, joten $\\eta = 150\\,000 : 600\\,000 = 0{,}25$."
         ],
         "mistakes": [
           {
             "value": 75,
-            "feedback": "Laskit häviötehon osuuden $P_\\text{h} : P_\\text{o}$. Hyötysuhteessa jaetaan hyötyteho $P_\\text{a}$ otetulla teholla $P_\\text{o}$. Häviöiden osuus ja hyötyosuus ovat yhteensä $100\\,\\%$."
+            "feedback": "Laskit häviöiden osuuden $E_\\text{h} : E_\\text{o}$. Hyötysuhteessa jaetaan hyötyenergia $E_\\text{a}$ otetulla energialla $E_\\text{o}$. Häviöiden osuus ja hyötyosuus ovat yhteensä $100\\,\\%$."
           },
           {
             "value": 0.25,
-            "feedback": "Suhdeluku $0{,}25$ on oikein, mutta kysyttiin prosentteja. Muunna se prosenteiksi: $0{,}25 = 25\\,\\%$."
+            "feedback": "Suhdeluku $0{,}25$ on oikein, mutta kysyttiin prosentteja. Kerro se luvulla $100\\,\\%$: $0{,}25 \\cdot 100\\,\\% = 25\\,\\%$."
           }
         ],
-        "solution": "**Annettu:** taulukon rivi, jolla otettu teho $P_\\text{o} = 20\\,000\\,\\text{W}$ ja hyötyteho $P_\\text{a} = 5000\\,\\text{W}$ (mallin arvoja)\n\n**Kysytty:** moottorin hyötysuhde $\\eta$ prosentteina\n\n**Periaate:** Hyötysuhde on hyötytehon osuus laitteeseen otetusta tehosta. Jokaisella taulukon rivillä osuus on sama, koska mallissa hyötysuhde on laitteen vakio.\n\n**Kaava:** $\\eta = \\dfrac{P_\\text{a}}{P_\\text{o}}$\n\n**Muunnokset:** Ei tarvita: molemmat tehot ovat watteina, joten yksiköt supistuvat. Suhdeluku muutetaan prosenteiksi sijoittamalla $1 = 100\\,\\%$.\n\n**Sijoitus:** $\\eta = \\dfrac{5000\\,\\text{W}}{20\\,000\\,\\text{W}} = 0{,}25 = 0{,}25 \\cdot 100\\,\\% = 25\\,\\%$\n\n**Vastaus:** $25\\,\\%$, kaksi merkitsevää numeroa, koska mallin hyötysuhde on annettu kahden numeron tarkkuudella.\n\n**Järkevyys:** Hyötyteho on neljäsosa otetusta tehosta, ja häviöteho $15\\,000\\,\\text{W}$ on kolme neljäsosaa. Tulos on alle $100\\,\\%$ kuten pitää, ja se on selvästi pienempi kuin sähkömoottorin $90\\,\\%$."
+        "solution": "**Annettu:** taulukon rivi, jolla aika $t = 10\\,\\text{s}$, otettu energia $E_\\text{o} = 600\\,000\\,\\text{J}$ ja hyötyenergia $E_\\text{a} = 150\\,000\\,\\text{J}$ (mallin arvoja, otettu teho lukittu arvoon $60\\,\\text{kW}$)\n\n**Kysytty:** moottorin hyötysuhde $\\eta$ prosentteina\n\n**Periaate:** Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Jokaisella rivillä osuus on sama, koska moottori käy tasaisella teholla: kumpikin energia on teho kerrottuna ajalla, ja aika supistuu suhteesta.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$\n\n**Muunnokset:** Ei tarvita: molemmat energiat ovat jouleina, joten yksiköt supistuvat. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\\,\\%$.\n\n**Sijoitus:** $\\eta = \\dfrac{150\\,000\\,\\text{J}}{600\\,000\\,\\text{J}} = 0{,}25 = 0{,}25 \\cdot 100\\,\\% = 25\\,\\%$\n\n**Vastaus:** $25\\,\\%$, kaksi merkitsevää numeroa, koska mallin hyötysuhde on annettu kahden numeron tarkkuudella.\n\n**Järkevyys:** Häviöt $E_\\text{h} = 450\\,000\\,\\text{J}$ ovat kolme neljäsosaa otetusta energiasta, ja $150\\,000\\,\\text{J} + 450\\,000\\,\\text{J} = 600\\,000\\,\\text{J}$. Tulos on alle $100\\,\\%$ kuten pitää, ja se on selvästi pienempi kuin sähkömoottorin $90\\,\\%$."
+      },
+      "values": {
+        "laite": {
+          "auto": "auton bensiinimoottori"
+        }
       }
     },
     {
@@ -228,6 +238,12 @@
             "feedback": "Häviöenergia ja hyötyenergia kasvavat molemmat tasaisesti ajan mukana, ja niiden suhde pysyy samana. Tarkista laskemalla suhde kahdelta eri riviltä."
           }
         ]
+      },
+      "optional": true,
+      "values": {
+        "laite": {
+          "lamppu": "hehkulamppu"
+        }
       }
     },
     {
@@ -236,14 +252,13 @@
       "type": "explain",
       "title": "Johtopäätös: mistä hyötysuhde riippuu",
       "after": [
-        "koe-1",
-        "koe-2"
+        "koe-1"
       ],
-      "prompt": "Kirjoita taulukoidesi perusteella: miten hyötysuhde lasketaan tehoista ja energioista? Riippuiko se otetusta tehosta tai käyntiajasta? Mitä kokeet kertoivat bensiinimoottorista?",
-      "model": "Kokeessa 1 bensiinimoottorin hyötyteho oli aina neljäsosa otetusta tehosta, esimerkiksi $5000\\,\\text{W}$, kun $P_\\text{o} = 20\\,000\\,\\text{W}$, ja $15\\,000\\,\\text{W}$, kun $P_\\text{o} = 60\\,000\\,\\text{W}$. Hyötysuhde $P_\\text{a} : P_\\text{o} = 25\\,\\%$ ei siis muuttunut, kun otettu teho muuttui. Loput $75\\,\\%$ oli häviöitä eli lämpöä, ja häviöteho kasvoi otetun tehon mukana. Kokeessa 2 energiat kasvoivat ajan mukana, esimerkiksi $E_\\text{o} = 400\\,\\text{J}$ ja $E_\\text{a} = 20\\,\\text{J}$, kun $t = 10\\,\\text{s}$, mutta niiden suhde pysyi $5\\,\\%$:na, koska $E = P \\cdot t$ ja aika supistuu. Hyötysuhde on siis laitteen ominaisuus, joka ei riipu tehosta eikä ajasta. Arvot ovat simulaation mallin arvoja.",
+      "prompt": "Kirjoita taulukkosi perusteella: miten hyötysuhde lasketaan energioista ja tehoista? Muuttuiko se, kun käyntiaika muuttui, ja miksi? Mitä koe kertoi bensiinimoottorista?",
+      "model": "Kokeessa 1 bensiinimoottori otti tasaisen tehon $60\\,\\text{kW}$. Energiat kasvoivat ajan mukana: kun $t = 10\\,\\text{s}$, $E_\\text{o} = 600\\,\\text{kJ}$ ja $E_\\text{a} = 150\\,\\text{kJ}$, ja kun $t = 20\\,\\text{s}$, $E_\\text{o} = 1200\\,\\text{kJ}$ ja $E_\\text{a} = 300\\,\\text{kJ}$. Suhde $E_\\text{a} : E_\\text{o} = 25\\,\\%$ pysyi samana, koska tasaisella teholla $E = P \\cdot t$ ja aika supistuu. Sama suhde saadaan tehoista: $15\\,\\text{kW} : 60\\,\\text{kW} = 25\\,\\%$. Loput $75\\,\\%$ oli häviöitä eli lämpöä. Hyötysuhde ei siis riipu käyntiajasta, kun laite käy tasaisesti. Arvot ovat simulaation mallin arvoja. Mallissa hyötysuhde on vakio myös otetun tehon muuttuessa, mutta se on mallin oletus: todellisen moottorin hyötysuhde riippuu kuormasta.",
       "criteria": [
-        "Sanoin, että hyötysuhde on hyötytehon (tai -energian) osuus otetusta tehosta (tai energiasta), ja annoin laskun luvuilla.",
-        "Totesin, että hyötysuhde ei muuttunut, kun otettu teho tai käyntiaika muuttui.",
+        "Sanoin, että hyötysuhde on hyötyenergian (tai -tehon) osuus otetusta energiasta (tai tehosta), ja annoin laskun luvuilla.",
+        "Totesin, että hyötysuhde ei muuttunut, kun käyntiaika muuttui.",
         "Selitin, miksi energioista ja tehoista laskettu hyötysuhde on sama (aika supistuu).",
         "Sanoin, että bensiinimoottorin häviöt ovat suuri osa otetusta tehosta ja että ne ovat lämpöä."
       ]
@@ -353,7 +368,7 @@
         },
         {
           "text": "Hyötysuhde on pieni, koska laite on pienitehoinen.",
-          "feedback": "Hyötysuhde ei riipu laitteen tehosta. Suuritehoisella ja pienitehoisella laitteella voi olla sama hyötysuhde, koska hyötysuhde on hyödyn osuus otetusta energiasta."
+          "feedback": "Laitteen teho ei määrää sen hyötysuhdetta. Suuritehoisella ja pienitehoisella laitteella voi olla sama hyötysuhde, koska hyötysuhde on hyödyn osuus otetusta energiasta."
         },
         {
           "text": "Hyötysuhde nousee $100\\,\\%$:iin, kun laite on ollut päällä tarpeeksi pitkään.",
@@ -385,7 +400,7 @@
           "feedback": "Jaoit otetun energian hyötyenergialla ($2{,}5 : 2{,}0$). Suhde on väärin päin: hyötysuhteessa otettu energia on jakajana, ja tulos on aina alle $100\\,\\%$."
         }
       ],
-      "solution": "**Annettu:** otettu energia $E_\\text{o} = 2{,}5\\,\\text{kJ}$ ja häviöt $E_\\text{h} = 0{,}50\\,\\text{kJ}$\n\n**Kysytty:** moottorin hyötysuhde $\\eta$ prosentteina\n\n**Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta. Hyötyenergiaa ei annettu, mutta energia säilyy, joten se saadaan otetun energian ja häviöiden erotuksena.\n\n**Kaava:** $E_\\text{a} = E_\\text{o} - E_\\text{h}$ ja $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, joten $\\eta = \\dfrac{E_\\text{o} - E_\\text{h}}{E_\\text{o}}$\n\n**Muunnokset:** Ei tarvita: kaikki energiat ovat kilojouleina, joten yksiköt supistuvat. Suhdeluku muutetaan prosenteiksi sijoittamalla $1 = 100\\,\\%$.\n\n**Sijoitus:** $E_\\text{a} = 2{,}5\\,\\text{kJ} - 0{,}50\\,\\text{kJ} = 2{,}0\\,\\text{kJ}$, joten $\\eta = \\dfrac{2{,}0\\,\\text{kJ}}{2{,}5\\,\\text{kJ}} = 0{,}80 = 80\\,\\%$\n\n**Vastaus:** $80\\,\\%$, kaksi merkitsevää numeroa kuten annetuissa energioissa.\n\n**Järkevyys:** Häviöt ovat $0{,}50 : 2{,}5 = 20\\,\\%$ otetusta energiasta, ja $80\\,\\% + 20\\,\\% = 100\\,\\%$. Tulos on alle $100\\,\\%$ ja lähellä sähkömoottorin tyypillistä $90\\,\\%$."
+      "solution": "**Annettu:** otettu energia $E_\\text{o} = 2{,}5\\,\\text{kJ}$ ja häviöt $E_\\text{h} = 0{,}50\\,\\text{kJ}$\n\n**Kysytty:** moottorin hyötysuhde $\\eta$ prosentteina\n\n**Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta. Hyötyenergiaa ei annettu, mutta energia säilyy, joten se saadaan otetun energian ja häviöiden erotuksena.\n\n**Kaava:** $E_\\text{a} = E_\\text{o} - E_\\text{h}$ ja $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, joten $\\eta = \\dfrac{E_\\text{o} - E_\\text{h}}{E_\\text{o}}$\n\n**Muunnokset:** Ei tarvita: kaikki energiat ovat kilojouleina, joten yksiköt supistuvat. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\\,\\%$.\n\n**Sijoitus:** $E_\\text{a} = 2{,}5\\,\\text{kJ} - 0{,}50\\,\\text{kJ} = 2{,}0\\,\\text{kJ}$, joten $\\eta = \\dfrac{2{,}0\\,\\text{kJ}}{2{,}5\\,\\text{kJ}} = 0{,}80 = 0{,}80 \\cdot 100\\,\\% = 80\\,\\%$\n\n**Vastaus:** $80\\,\\%$, kaksi merkitsevää numeroa kuten annetuissa energioissa.\n\n**Järkevyys:** Häviöt ovat $0{,}50 : 2{,}5 = 20\\,\\%$ otetusta energiasta, ja $80\\,\\% + 20\\,\\% = 100\\,\\%$. Tulos on alle $100\\,\\%$ ja lähellä sähkömoottorin tyypillistä $90\\,\\%$."
     },
     {
       "id": "tarkistus-3",

@@ -70,7 +70,7 @@ Fields any activity may carry (2026-10-26):
 |---|---|---|
 | `optional: true` | any type but `sim` and `exercises` | the activity goes into a closed box "Valinnainen …" (its `title`, or the type's name) and the intro notes how many optional items there are; everything outside these boxes is the lesson's core path. A required `explain.after` or prediction `reveal.after` may not point at an optional experiment. |
 | `after: [experiment ids]` | `explain` | a conclusion from the student's own measurements: the model answer opens only when each listed experiment has its `min` rows and the student has written something (15 characters). Every `explain` waits for the student's own text; `after` adds a *Kopioi muistiinpanoihin* button that copies the tables and the answer. |
-| `source` (+ `source_note`) | `interpret` | provenance badge: `measured` (Mitattu aineisto; `source_note` naming where it was measured is required), `simulated` (Simuloitu esimerkkiaineisto) or `model` (Mallin laskemia arvoja). Invented data is never presented as measured. |
+| `source` (+ `source_note`) | `interpret` | provenance badge: `measured` (Mitattu aineisto; `source_note` naming where it was measured is required), `statistics` (Tilastoaineisto: official or published statistics; `source_note` naming the source and year is required), `simulated` (Simuloitu esimerkkiaineisto: produced by a simulation), `model` (Mallin laskemia arvoja) or `example` (Keksitty esimerkkiaineisto: invented, rounded numbers for a realistic situation; 2026-10-28, FY2). Invented data is never presented as measured. |
 
 Experiment tables are captioned *Simulaation lukemat*: values read from a model are not measurements.
 

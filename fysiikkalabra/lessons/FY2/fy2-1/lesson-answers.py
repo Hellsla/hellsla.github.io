@@ -65,9 +65,9 @@ ep, ek, el = energies(big, 16.0)                       # large friction, end of 
 a["inq-big-Ep"], a["inq-big-Ek"], a["inq-big-Eth"] = ep, ek, el
 # Inquiry data table: the bouncing ball (invented example): mechanical energy 0,60 J, 0,48 J, 0,38 J, 0,31 J after bounces 0 … 3
 a["inq-data"] = 0.60 - 0.31                            # converted to thermal energy in three bounces: 0,29 J
-# Transfer task: cyclist climbing at constant speed: 0,40 MJ = 400 kJ of chemical energy, 80 kJ of potential energy gained
-a["inq-siirto"] = 0.40 * 1000 - 80                     # 320 kJ of thermal energy
-# Check 2: a bulb takes 2,5 kJ of electrical energy and gives 0,12 kJ of radiation
+# Transfer task: cyclist climbing at constant speed: 420 kJ of chemical energy, 85 kJ of potential energy gained
+a["inq-siirto"] = 420 - 85                             # 335 kJ of thermal energy
+# Check 2: a bulb takes 2,5 kJ of electrical energy and gives 0,12 kJ of visible light
 a["inq-check2"] = (2.5 - 0.12) * 1000                  # 2380 J of thermal energy -> 2,4 · 10^3 J (two significant figures)
 # Worked example: potential energy 840 J at the rim, kinetic energy 0,72 kJ = 720 J at the bottom
 a["inq-example"] = 840 - 0.72 * 1000                   # 120 J of thermal energy

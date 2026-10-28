@@ -37,7 +37,7 @@ TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explai
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
-SOURCES = ("measured", "simulated", "model")      # interpret "source"; its badge is lang "inquiry.source_<source>"
+SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
 
 
@@ -172,8 +172,8 @@ def validate(folder, inquiry, lesson_md):
         elif t == "interpret":
             if not isinstance(a.get("text"), str) or not a["text"].strip(): errs.append(f"{path}.text: the representation (table, figure or measurements) in markdown/HTML")
             src = a.get("source")
-            if src is not None and src not in SOURCES: errs.append(f"{path}.source: one of {', '.join(SOURCES)} (what the numbers are: measured, simulated example data, or values computed from the model)")
-            if src == "measured" and not (isinstance(a.get("source_note"), str) and a["source_note"].strip()):
+            if src is not None and src not in SOURCES: errs.append(f"{path}.source: one of {', '.join(SOURCES)} (what the numbers are: measured, official statistics with their source, simulated example data, values computed from the model, or an invented example)")
+            if src in ("measured", "statistics") and not (isinstance(a.get("source_note"), str) and a["source_note"].strip()):
                 errs.append(f"{path}.source_note: measured data needs a note on who measured it and how (never present invented numbers as measurements)")
         if t == "explain" and "after" in a and not (isinstance(a["after"], list) and a["after"] and all(isinstance(x, str) for x in a["after"])):
             errs.append(f"{path}.after: the ids of the experiments whose measurements the conclusion rests on")

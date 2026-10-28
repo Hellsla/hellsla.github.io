@@ -3,9 +3,9 @@
     {
       "id": "fy2-6-L1-01",
       "level": 1,
-      "text": "Tuulivoimalan keskiteho vuoden aikana on $2{,}5\\,\\text{MW}$. Kuinka paljon sähköä se tuottaa vuodessa, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus gigawattitunteina.",
-      "answer": 22,
-      "unit": "GWh",
+      "text": "Tuulivoimalan keskiteho on viikon ($168\\,\\text{h}$) aikana $2{,}5\\,\\text{MW}$. Kuinka paljon sähköä se tuottaa viikossa? Anna vastaus megawattitunteina.",
+      "answer": 420,
+      "unit": "MWh",
       "tolerance": 0.02
     },
     {
@@ -28,16 +28,16 @@
       "id": "fy2-6-L1-04",
       "level": 1,
       "text": "Suomessa tuotettiin vuonna 2024 sähköä yhteensä $79{,}9\\,\\text{TWh}$, ja tuulivoiman osuus oli $20{,}2\\,\\text{TWh}$ (Tilastokeskus). Kuinka monta prosenttia sähköstä tuotettiin tuulivoimalla?",
-      "answer": 25,
+      "answer": 25.3,
       "unit": "%",
       "tolerance": 0.02
     },
     {
       "id": "fy2-6-L1-05",
       "level": 1,
-      "text": "Suomen ydinvoimalat tuottivat vuonna 2024 noin $31\\,\\text{TWh}$ sähköä (Tilastokeskus). Mikä oli niiden keskiteho vuoden aikana, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus gigawatteina.",
-      "answer": 3.5,
-      "unit": "GW",
+      "text": "Omakotitalon aurinkopaneelien teho on kesäpäivän keskellä $4{,}0\\,\\text{kW}$. Kuinka paljon sähköä paneelit tuottavat $3{,}5\\,\\text{h}$:ssa, kun teho pysyy samana? Anna vastaus kilowattitunteina.",
+      "answer": 14,
+      "unit": "kWh",
       "tolerance": 0.02
     }
   ],
@@ -45,9 +45,9 @@
     {
       "id": "fy2-6-L2-01",
       "level": 2,
-      "text": "Esimerkkinä oleva aurinkovoimala on mitoitettu teholle $100\\,\\text{MW}$ (nimellisteho). Se tuottaa vuodessa $95\\,\\text{GWh}$ sähköä. Kuinka monta prosenttia nimellistehosta sen keskiteho on?",
-      "answer": 11,
-      "unit": "%",
+      "text": "Esimerkkinä olevan tuulipuiston nimellisteho on $25\\,\\text{MW}$, ja sen keskiteho vuoden aikana on $32\\,\\%$ nimellistehosta. Kuinka paljon sähköä puisto tuottaa vuodessa, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus gigawattitunteina.",
+      "answer": 70,
+      "unit": "GWh",
       "tolerance": 0.02
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": "fy2-6-L3-02",
       "level": 3,
-      "text": "Tuulipuiston ja ydinvoimalan nimellisteho on sama, $600\\,\\text{MW}$. Tuulipuiston keskiteho on $33\\,\\%$ ja ydinvoimalan $90\\,\\%$ nimellistehosta. Kuinka monta kertaa suuremman energian ydinvoimala tuottaa vuodessa? Anna vastaus kertoimena.",
+      "text": "Esimerkkinä olevan tuulipuiston ja ydinvoimalan nimellisteho on sama, $600\\,\\text{MW}$. Tuulipuiston keskiteho on $33\\,\\%$ ja ydinvoimalan $90\\,\\%$ nimellistehosta. Kuinka monta kertaa suuremman energian ydinvoimala tuottaa vuodessa? Anna vastaus kertoimena.",
       "answer": 2.7,
       "unit": "kertaa",
       "tolerance": 0.02
@@ -95,9 +95,9 @@
     {
       "id": "fy2-6-L3-03",
       "level": 3,
-      "text": "Suomessa aurinkosähköä tuotettiin vuonna 2024 noin $0{,}90\\,\\text{TWh}$ (Tilastokeskus). Kuinka monta tuntia Olkiluoto 3 ($1{,}6\\,\\text{GW}$) tuottaisi saman energian täydellä teholla? Anna vastaus tunteina.",
-      "answer": 560,
-      "unit": "h",
+      "text": "Esimerkkinä oleva kunta ehdottaa aurinkopuistoa, joka korvaisi Olkiluoto 3:n ($1600\\,\\text{MW}$). Aurinkopuiston keskiteho vuoden aikana on $11\\,\\%$ ja Olkiluoto 3:n $90\\,\\%$ nimellistehosta. Kuinka suuri aurinkopuiston nimellistehon pitäisi olla, jotta se tuottaisi vuodessa yhtä paljon energiaa kuin Olkiluoto 3? Anna vastaus gigawatteina. Pohdi lisäksi, korvaisiko tällainen puisto Olkiluoto 3:n tammikuun iltana.",
+      "answer": 13,
+      "unit": "GW",
       "tolerance": 0.02
     }
   ]

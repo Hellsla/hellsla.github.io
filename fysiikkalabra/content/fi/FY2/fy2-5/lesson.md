@@ -1,6 +1,6 @@
 # Polttoaineet ja lämpöarvo E = Hm
 
-> **Miksi** kilogramma bensiiniä vie auton paljon pidemmälle kuin kilogramma polttopuuta lämmittäisi taloa, vaikka molemmat ovat vain palavaa ainetta?
+> **Miksi** kilogrammasta bensiiniä vapautuu lähes kolme kertaa enemmän energiaa kuin kilogrammasta ilmakuivaa polttopuuta, vaikka molemmat ovat vain palavaa ainetta?
 
 ## Ydinajatus
 Polttoaine on aine, jonka kemiallista energiaa vapautetaan polttamalla. Kemiallinen energia on energiaa, joka on varastoituna aineen atomien ja molekyylien väliseen rakenteeseen. Kun polttoaine palaa, rakenne muuttuu ja energiaa vapautuu lämpönä ja valona. Energiaa ei synny tyhjästä, vaan kemiallinen energia muuntuu toiseen muotoon. Sama pätee ruokaan: elimistö "polttaa" ravinnon hitaasti ja vapauttaa siitä energiaa.
@@ -27,7 +27,7 @@ Polttoaine on aine, jonka kemiallista energiaa vapautetaan polttamalla. Kemialli
   <foreignObject x="384" y="261.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpö ja valo}$</div></foreignObject>
 </svg>
 
-Eri polttoaineet sisältävät massaansa nähden eri määrän kemiallista energiaa. Suure, joka kertoo tämän, on lämpöarvo $H$. Se on polttoaineen palaessa vapautuva energia yhtä kilogrammaa kohti, ja sen yksikkö on esimerkiksi MJ/kg. Bensiinin lämpöarvo on noin 43 MJ/kg eli yhdestä kilogrammasta vapautuu noin 43 miljoonaa joulea. Kuivan polttopuun lämpöarvo on vain noin 15 MJ/kg, joten saman energian saamiseksi puuta tarvitaan lähes kolminkertainen massa.
+Eri polttoaineet sisältävät massaansa nähden eri määrän kemiallista energiaa. Suure, joka kertoo tämän, on lämpöarvo $H$. Se on polttoaineen palaessa vapautuva energia yhtä kilogrammaa kohti, ja sen yksikkö on esimerkiksi $\text{MJ/kg}$. Bensiinin lämpöarvo on noin $43\,\text{MJ/kg}$ eli yhdestä kilogrammasta vapautuu noin $43\,\text{MJ}$ (noin 43 miljoonaa joulea). Ilmakuivan polttopuun (kosteus $20\text{–}25\,\%$) lämpöarvo on vain noin $15\,\text{MJ/kg}$, joten saman energian saamiseksi puuta tarvitaan lähes kolminkertainen massa.
 
 Koska lämpöarvo on energia massayksikköä kohti, vapautuva energia on suoraan verrannollinen palaneen polttoaineen massaan: kaksi kertaa enemmän polttoainetta vapauttaa kaksi kertaa enemmän energiaa. Tästä saadaan laki, jolla vapautuva energia lasketaan.
 
@@ -36,23 +36,23 @@ Polttoaineesta palaessaan vapautuva energia on
 ```latex
 E = Hm
 ```
-missä $E$ on vapautuva energia (J tai MJ), $H$ polttoaineen lämpöarvo (MJ/kg) ja $m$ palaneen polttoaineen massa (kg). Massa on laskettava kilogrammoina, koska lämpöarvo on energia kilogrammaa kohti. Esimerkiksi $3{,}0\,\text{kg}$ bensiiniä vapauttaa $43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3{,}0\,\text{kg} = 129\,\text{MJ}$.
+missä $E$ on vapautuva energia ($\text{J}$ tai $\text{MJ}$), $H$ polttoaineen lämpöarvo ($\text{MJ/kg}$) ja $m$ palaneen polttoaineen massa ($\text{kg}$). Massa on laskettava kilogrammoina, koska lämpöarvo on energia kilogrammaa kohti. Esimerkiksi $3{,}0\,\text{kg}$ bensiiniä vapauttaa $43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3{,}0\,\text{kg} = 129\,\text{MJ} \approx 130\,\text{MJ}$, koska massa tunnetaan kahden numeron tarkkuudella.
 
-Taulukossa on yleisten polttoaineiden lämpöarvoja. Ne ovat tehollisia lämpöarvoja, joita energiatilastoissa käytetään, ja ne on pyöristetty: todellinen arvo vaihtelee polttoaine-erän mukaan.
+Taulukossa on yleisten polttoaineiden lämpöarvoja. Ne ovat tehollisia lämpöarvoja eli lämpöarvoja, joissa savukaasun vesihöyryn tiivistymislämpöä ei lasketa mukaan, ja energiatilastot käyttävät niitä. Arvot on pyöristetty: todellinen arvo vaihtelee polttoaine-erän mukaan.
 
 | Polttoaine | $H$ (MJ/kg) |
 | --- | --- |
-| maakaasu | 49 |
+| maakaasu | 48 |
 | bensiini | 43 |
 | diesel | 43 |
 | kivihiili | 26 |
 | puupelletti | 17 |
-| polttopuu (kuiva) | 15 |
+| polttopuu (ilmakuiva) | 15 |
 | turve (jyrsinturve) | 10 |
 
-Lähteet: Tilastokeskus, polttoaineluokitus; Motiva. Arvot on pyöristetty.
+Lähteet: polttopuu ($13\text{–}15\,\text{GJ/t}$, kosteus $20\text{–}25\,\%$) ja jyrsinturve ($9\text{–}11\,\text{GJ/t}$, kosteus $40\text{–}50\,\%$): Tilastokeskus, *Polttoaineluokitus, määritelmät* (2017). Maakaasu $48{,}0\,\text{MJ/kg}$: IPCC, *2006 Guidelines for National Greenhouse Gas Inventories*, osa 2, oletuslämpöarvojen taulukko (2006). Tyypillisiä arvoja: kivihiili (IPCC 2006: $25{,}8\,\text{MJ/kg}$), diesel (IPCC 2006: $43{,}0\,\text{MJ/kg}$), bensiini (IPCC 2006: $44{,}3\,\text{MJ/kg}$, kotimaisessa bensiinissä on etanolia, joten pyöristetty $43$:een) ja puupelletti (julkaistu tyypillinen arvo). Arvot on pyöristetty.
 
-<svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 49, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen." style="max-width:100%;font-size:24px">
+<svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="150" y="9.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$H\ \left(\text{MJ/kg}\right)$</div></foreignObject>
   <line x1="224" y1="48" x2="224" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -60,9 +60,9 @@ Lähteet: Tilastokeskus, polttoaineluokitus; Motiva. Arvot on pyöristetty.
   <line x1="360" y1="48" x2="360" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="428" y1="48" x2="428" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="496" y1="48" x2="496" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="156" y="52" width="333" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="52" width="326.4" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="4" y="50.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{maakaasu}$</div></foreignObject>
-  <foreignObject x="499" y="50.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$49$</div></foreignObject>
+  <foreignObject x="492.5" y="50.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$48$</div></foreignObject>
   <rect x="156" y="90" width="292.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="4" y="88.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{bensiini}$</div></foreignObject>
   <foreignObject x="458.5" y="88.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$43$</div></foreignObject>
@@ -98,10 +98,10 @@ Lähteet: Tilastokeskus, polttoaineluokitus; Motiva. Arvot on pyöristetty.
 </svg>
 
 ### Kosteus ja polttoaineen laatu
-Märkä puu antaa kilogrammaa kohti vähemmän energiaa kuin kuiva, koska osa vapautuvasta energiasta kuluu veden höyrystämiseen. Siksi taulukossa polttopuu on kuivaa ja turve on jyrsinturvetta, jonka kosteus on noin 40 %.
+Märkä puu antaa kilogrammaa kohti vähemmän energiaa kuin kuiva, koska osa vapautuvasta energiasta kuluu veden höyrystämiseen. Siksi taulukon polttopuu on ilmakuivaa (kosteus $20\text{–}25\,\%$) ja turve jyrsinturvetta, jonka kosteus on $40\text{–}50\,\%$. Täysin kuivan puun lämpöarvo olisi noin $19\,\text{MJ/kg}$.
 
 ### Ruoan energia on sama ajatus
-Ravintoarvomerkinnässä energia ilmoitetaan sadalle grammalle, esimerkiksi $2200\,\text{kJ}$ per $100\,\text{g}$. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, merkinnästä saadaan ruoan "lämpöarvo". Pakkauksen luku kertoo siis saman asian kuin lämpöarvo: kemiallisen energian määrän massayksikköä kohti.
+Ravintoarvomerkinnässä energia ilmoitetaan sadalle grammalle, esimerkiksi $2200\,\text{kJ}$ per $100\,\text{g}$. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, merkinnästä saadaan ruoan "lämpöarvo". Pakkauksen luku vastaa siis lämpöarvoa: se kertoo ravinnon kemiallisen energian massayksikköä kohti. Se on elimistön hyödyntämä energia, joten se on hieman pienempi kuin palamisessa vapautuva.
 
 <svg data-fig="etiketti" viewBox="0 0 600 300" role="img" aria-label="Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan lämpöarvoa vastaava luku 22 MJ/kg." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -120,17 +120,17 @@ Ravintoarvomerkinnässä energia ilmoitetaan sadalle grammalle, esimerkiksi $220
   <foreignObject x="350" y="175" width="200" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$H = 22\,\dfrac{\text{MJ}}{\text{kg}}$</div></foreignObject>
 </svg>
 
-| Ruoka | Energia (kJ / 100 g) | $H$ (MJ/kg) |
+| Ruoka | $\text{kJ}$ / $100\,\text{g}$ | $H$ ($\text{MJ/kg}$) |
 | --- | --- | --- |
-| peruna | 300 | 3 |
+| peruna, keitetty | 300 | 3 |
 | ruisleipä | 1000 | 10 |
 | maitosuklaa | 2200 | 22 |
 | voi | 3000 | 30 |
 
-Lähde: Fineli (THL), arvot pyöristetty.
+Tyypillisiä ravintoarvoja (vertailukohta Fineli, THL), pyöristetty ja vaihtelee tuotteittain.
 
 ## Esimerkki
-Takassa poltetaan 6,0 kg kuivaa polttopuuta, jonka lämpöarvo on $15\,\tfrac{\text{MJ}}{\text{kg}}$. Kuinka paljon energiaa puusta vapautuu? Anna vastaus megajouleina ja kilowattitunteina.
+Takassa poltetaan $6{,}0\,\text{kg}$ ilmakuivaa polttopuuta, jonka lämpöarvo on $15\,\tfrac{\text{MJ}}{\text{kg}}$. Kuinka paljon energiaa puusta vapautuu? Anna vastaus megajouleina ja kilowattitunteina.
 
 <!-- vaihe -->
 
@@ -149,7 +149,7 @@ E = Hm
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Massa on jo kilogrammoina, joten megajoulet voi laskea suoraan. Kilowattitunteja varten käytetään yhteyttä $1\,\text{kWh} = 3{,}6\,\text{MJ}$.
+**Yksikkömuunnokset.** Massa on jo kilogrammoina, joten megajoulet voi laskea suoraan. Kilowattitunteja varten käytetään yhteyttä $1\,\text{kWh} = 3{,}6\,\text{MJ}$, josta $1\,\text{MJ} = 1\,\text{kWh} : 3{,}6$.
 
 <!-- vaihe -->
 
@@ -161,7 +161,7 @@ E &= Hm \\
 &= 90\,\text{MJ}
 \end{aligned}
 ```
-Kilowattitunteina $E = 90 : 3{,}6\,\text{kWh} = 25\,\text{kWh}$.
+Kilowattitunteina $E = 90\,\text{MJ} = 90 \cdot (1\,\text{kWh} : 3{,}6) = 25\,\text{kWh}$.
 
 <!-- vaihe -->
 
@@ -169,17 +169,19 @@ Kilowattitunteina $E = 90 : 3{,}6\,\text{kWh} = 25\,\text{kWh}$.
 
 <!-- vaihe -->
 
-**Järkevyys.** Yksi kilogramma puuta antaa $15\,\text{MJ}$ eli noin $4\,\text{kWh}$, joten kuusi kilogrammaa antaa noin kuusi kertaa niin paljon: $6 \cdot 4\,\text{kWh} = 24\,\text{kWh}$, mikä sopii tulokseen. Energia vastaa yhden kilowatin lämmitintä, joka on päällä 25 tuntia. Takasta ei kuitenkaan saada koko määrää huoneen lämmöksi, koska osa lämmöstä poistuu savukaasujen mukana (luku *Hyötysuhde*).
+**Järkevyys.** Yksi kilogramma puuta antaa $15\,\text{MJ}$ eli noin $4\,\text{kWh}$, joten kuusi kilogrammaa antaa noin kuusi kertaa niin paljon: $6 \cdot 4\,\text{kWh} = 24\,\text{kWh}$, mikä sopii tulokseen. Energia vastaa yhden kilowatin ($1\,\text{kW}$) lämmitintä, joka on päällä $25\,\text{h}$. Takasta ei kuitenkaan saada koko määrää huoneen lämmöksi, koska osa lämmöstä poistuu savukaasujen mukana (luku *Hyötysuhde*).
 
 ## Yleinen virhekäsitys
-Moni luulee, että lämpöarvo kertoo, kuinka kuumana polttoaine palaa. Lämpöarvo on kuitenkin energia massayksikköä kohti, ei lämpötila. Toinen virhe on ajatella, että palaessa syntyy energiaa: energiaa ei synny, vaan polttoaineen kemiallinen energia muuntuu lämmöksi. Kolmas virhe on pitää vapautunutta energiaa samana asiana kuin hyödyksi saatu energia. Kattilassa, takassa ja moottorissa osa energiasta menee hukkaan, ja osuus lasketaan hyötysuhteella (luku *Hyötysuhde*).
+- **Lämpöarvo ei ole lämpötila.** Moni luulee, että lämpöarvo kertoo, kuinka kuumana polttoaine palaa. Se on kuitenkin energia massayksikköä kohti.
+- **Palaessa ei synny energiaa.** Polttoaineen kemiallinen energia muuntuu lämmöksi ja valoksi, mutta energiaa ei synny tyhjästä.
+- **Vapautunut energia ei ole hyötyenergia.** Kattilassa, takassa ja moottorissa osa energiasta menee hukkaan, ja hyödyn osuus lasketaan hyötysuhteella (luku *Hyötysuhde*).
 
-Polttoaineita vertaillaan massaa kohti, koska lämpöarvo on energia kilogrammaa kohti. Kymmenen kilon säkki polttopuuta vapauttaa $15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 10\,\text{kg} = 150\,\text{MJ}$, mutta kymmenen kilon bensiinikanisteri $43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 10\,\text{kg} = 430\,\text{MJ}$. Polttamisessa syntyy myös hiilidioksidia, jota käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
+Polttamisessa syntyy myös hiilidioksidia, jota käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
 
 ## Tiivistelmä
 - Polttoaineen kemiallinen energia vapautuu palaessa lämpönä ja valona. Energia ei synny vaan muuntuu.
-- Lämpöarvo $H$ on vapautuva energia yhtä kilogrammaa polttoainetta kohti, yksikkö MJ/kg.
+- Lämpöarvo $H$ on vapautuva energia yhtä kilogrammaa polttoainetta kohti, yksikkö $\text{MJ/kg}$.
 - Vapautuva energia on $E = Hm$, kun massa $m$ on kilogrammoina.
-- Bensiinin ja dieselin lämpöarvo on noin 43 MJ/kg, kivihiilen 26, puun 15 ja turpeen 10 MJ/kg.
-- Ruoan pakkausmerkinnän kJ / 100 g kertoo saman asian: kemiallisen energian määrän massaa kohti.
+- Bensiinin ja dieselin lämpöarvo on noin $43\,\text{MJ/kg}$, kivihiilen $26$, ilmakuivan puun $15$ ja turpeen $10\,\text{MJ/kg}$.
+- Ruoan pakkausmerkinnän $\text{kJ}$ per $100\,\text{g}$ vastaa lämpöarvoa: ravinnon kemiallisen energian määrän massaa kohti.
 - Vapautunut energia ei ole sama kuin hyöty: hyötyenergia saadaan hyötysuhteella.

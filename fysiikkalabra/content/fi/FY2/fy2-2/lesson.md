@@ -8,7 +8,7 @@ Energia on suure, jonka avulla kuvataan, mitä systeemissä voi tapahtua. Se esi
 
 Pyöräilijän ketju alkaa Auringosta. Säteilyenergia sitoutuu kasvissa kemialliseksi energiaksi, ja se päätyy kauraan ja aamupuuroon. Lihakset muuttavat puuron kemiallisesta energiasta osan pyörän liikkeeksi, ja liike muuttuu pysähtyessä lopulta lämmöksi renkaisiin, jarruihin ja ilmaan.
 
-<svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi sitoo sen kemialliseksi energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu on lämpöä. Joka vaiheessa osa energiasta muuttuu lämmöksi ympäristöön (oranssit nuolet alas), ja lopuksi myös liike muuttuu lämmöksi. Nuolten pituus ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi (kaura) sitoo sen kemialliseksi energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu on lämpöä. Joka vaiheessa osa energiasta muuttuu lämmöksi ympäristöön (oranssit nuolet alas), ja lopuksi myös liike muuttuu lämmöksi. Nuolten pituus ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="106" y1="100" x2="120" y2="100" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <line x1="97" y1="122" x2="107" y2="132" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <line x1="75" y1="131" x2="75" y2="145" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
@@ -48,6 +48,7 @@ Pyöräilijän ketju alkaa Auringosta. Säteilyenergia sitoutuu kasvissa kemiall
   <path d="M130,107 L158,107 L158,115 L180,100 L158,85 L158,93 L130,93 Z" fill="#ffc078" stroke-linejoin="round"/>
   <path d="M280,107 L308,107 L308,115 L330,100 L308,85 L308,93 L280,93 Z" fill="#ffc078" stroke-linejoin="round"/>
   <path d="M430,107 L458,107 L458,115 L480,100 L458,85 L458,93 L430,93 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <foreignObject x="136" y="29.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kasvi}$</div></foreignObject>
   <foreignObject x="5" y="157.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Aurinko}$</div></foreignObject>
   <foreignObject x="5" y="191.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{säteily}$</div></foreignObject>
   <foreignObject x="155" y="157.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Puuro}$</div></foreignObject>
@@ -63,21 +64,38 @@ Pyöräilijän ketju alkaa Auringosta. Säteilyenergia sitoutuu kasvissa kemiall
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
-Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka hajaantuu ympäristöön. Energiaa ei silti katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Lämpö hajaantuu niin laajalle, ettei sitä voi enää käyttää hyödyksi, ja siksi energia tuntuu "kuluvan loppuun".
+Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka hajaantuu ympäristöön. Energiaa ei silti katoa: kuten luvussa *Energialajit ja energian säilyminen* todettiin, ketjun alussa ja lopussa sitä on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämmöksi, ja osat ovat yhteensä yhtä paljon kuin alussa. Lämpö hajaantuu niin laajalle, ettei sitä voi enää käyttää hyödyksi, ja siksi energia tuntuu "kuluvan loppuun".
 
-### Joule ja kymmenpotenssit
-Energian symboli on $E$ ja yksikkö joule, jonka merkki on J. Yksi joule on pieni energia: se on suunnilleen se, mitä tarvitaan noin 0,1 kg:n omenan nostamiseen metrin verran. Yksiköllä on myös toinen määritelmä, $1\,\text{J} = 1\,\text{N}\cdot\text{m}$, mutta tässä luvussa riittää tuntea sen suuruus esimerkkien avulla.
+<svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämmöksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
+  <rect x="40" y="112" width="192" height="96" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <path d="M232,112 L400,112 L400,98 L452,124 L400,150 L400,136 L232,136 Z" fill="#ffc078" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M232,136 L304,136 L304,262 L326,262 L268,302 L210,262 L232,262 Z" fill="#f2a69c" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="100" y="23.5" width="400" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$800\,\text{kJ} = 200\,\text{kJ} + 600\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="52" y="129.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
+  <foreignObject x="52" y="167.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$800\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="244" y="63.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liike: }200\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="340" y="217.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lämpö: }600\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nuolen leveys kuvaa energian määrää}$</div></foreignObject>
+</svg>
 
-Arjen energiat ovat jouleina isoja lukuja, joten käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen niistä on tuhatkertainen edelliseen verrattuna, joten kilojoulessa on tuhat joulea ja megajoulessa tuhat kilojoulea.
+### Joule
+Energian symboli on $E$ ja yksikkö joule, jonka merkki on J. Yksi joule on pieni energia: se on suunnilleen se, mitä tarvitaan noin $0{,}1\,\text{kg}$:n omenan nostamiseen metrin verran. Tässä luvussa joulen suuruus opitaan esimerkkien avulla.
 
-| Merkki | Arvo | Esimerkki |
-| --- | --- | --- |
-| kJ | $1000\,\text{J}$ | tulitikku |
-| MJ | $1000\,\text{kJ}$ | päivän ruoka |
-| GJ | $1000\,\text{MJ}$ | bensiinitankki |
-| TJ | $1000\,\text{GJ}$ | voimalan vrk |
+## Kaava: Energian yksikkö ja kerrannaisyksiköt
+Arjen energiat ovat jouleina isoja lukuja, joten käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen niistä on tuhatkertainen edelliseen verrattuna:
+```latex
+\begin{aligned}
+1\,\text{kJ} &= 1000\,\text{J} \\
+1\,\text{MJ} &= 1000\,\text{kJ} \\
+1\,\text{GJ} &= 1000\,\text{MJ} \\
+1\,\text{TJ} &= 1000\,\text{GJ}
+\end{aligned}
+```
+missä J on joule, kJ kilojoule, MJ megajoule, GJ gigajoule ja TJ terajoule. Megajoulessa on siis $1000 \cdot 1000\,\text{J} = 1\,000\,000\,\text{J}$.
 
-Esimerkkien arvot ovat suuruusluokkia. Ne on koottu kuvaan, jossa jokainen väli on kymmenkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*).
+Muunnos tehdään korvaamalla etuliite sen arvolla: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J} = 2500\,\text{J}$. Toiseen suuntaan luku kirjoitetaan etuliitteen avulla: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Energioita lasketaan yhteen vain samassa yksikössä, joten ne muunnetaan ensin samaan yksikköön.
+
+Arjen energioiden suuruusluokat on koottu kuvaan, jossa jokainen väli on kymmenkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*). Kun kahden energian kertaluku on hyvin erilainen, vertailuun riittää yksi jakolasku: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
 
 <svg data-fig="tikapuut" viewBox="0 0 600 372" role="img" aria-label="Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin ja yli. Jokainen väli on kymmenkertainen. Omena metrin ylös on noin 1 J, palava tulitikku noin 1 kJ, päivän ruoka noin 10 MJ, 50 litran bensiinitankki noin 1,6 GJ ja ydinvoimala Olkiluoto 3 tuottaa vuorokaudessa noin 140 TJ sähköä." style="max-width:100%;font-size:24px">
   <line x1="66" y1="292" x2="574" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -119,30 +137,6 @@ Esimerkkien arvot ovat suuruusluokkia. Ne on koottu kuvaan, jossa jokainen väli
   <circle cx="565.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="215.5" y="85.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{Olkiluoto 3, vrk}\ 140\,\text{TJ}$</div></foreignObject>
 </svg>
-
-## Kaava: Energian säilyminen
-Eristetyssä systeemissä energian kokonaismäärä ei muutu, vaikka energia vaihtaisi muotoa:
-```latex
-E_\text{alussa} = E_\text{lopussa}
-```
-missä $E_\text{alussa}$ on kaikkien energiamuotojen yhteenlaskettu energia alussa ja $E_\text{lopussa}$ lopussa, jouleina. Kun ketjun vaiheessa kemiallista energiaa muuttuu liikkeeksi ja lämmöksi, summa pysyy samana. Tällöin lämmöksi muuttuneen energian saa vähentämällä alun energiasta muut muodot:
-```latex
-E_\text{lämpö} = E_\text{alussa} - E_\text{liike}
-```
-
-<svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa: pyöräilijän banaanin kemiallinen energia 450 kJ jakautuu liikkeeksi 110 kJ ja lämmöksi 340 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
-  <rect x="40" y="112" width="192" height="90" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
-  <path d="M232,112 L400,112 L400,98 L452,123 L400,148 L400,134 L232,134 Z" fill="#ffc078" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M232,134 L300,134 L300,262 L322,262 L266,302 L210,262 L232,262 Z" fill="#f2a69c" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="100" y="23.5" width="400" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$450\,\text{kJ} = 110\,\text{kJ} + 340\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="52" y="129.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
-  <foreignObject x="52" y="167.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$450\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="244" y="63.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liike: }110\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="336" y="217.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lämpö: }340\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nuolen leveys kuvaa energian määrää}$</div></foreignObject>
-</svg>
-
-Energioita lasketaan yhteen vain samassa yksikössä. Etuliite korvataan sen arvolla: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J} = 2500\,\text{J}$. Toiseen suuntaan luku kirjoitetaan etuliitteen avulla: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Kun kahden energian kertaluku on hyvin erilainen, vertailuun riittää yksi jakolasku: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
 
 Energian määrä ei vielä kerro, kuinka nopeasti energiaa käytetään. Sitä kuvataan seuraavassa luvussa *Teho*.
 
@@ -193,11 +187,11 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 ## Yleinen virhekäsitys
 Moni ajattelee, että energia kuluu loppuun, kun vauhti hidastuu tai akku tyhjenee. Energia ei kulu eikä katoa. Se muuttaa muotoa, ja suuri osa päätyy lämpönä ympäristöön, josta sitä ei voi kerätä takaisin hyödyksi.
 
-Toinen virhe on laskea yhteen energioita eri yksiköissä, esimerkiksi $2{,}2\,\text{MJ} + 800\,\text{kJ} = 802{,}2$. Etuliite on kerroin, joten energiat muunnetaan ensin samaan yksikköön.
+Toinen virhe on laskea yhteen energioita eri yksiköissä, esimerkiksi $1{,}5\,\text{MJ} + 300\,\text{kJ} = 301{,}5$. Etuliite on kerroin, joten energiat muunnetaan ensin samaan yksikköön.
 
 ## Tiivistelmä
 - Energia muuttuu ketjussa muodosta toiseen, esimerkiksi säteily, kemiallinen energia, liike ja lämpö.
-- Energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Osa muuttuu joka vaiheessa lämmöksi, joka hajaantuu ympäristöön.
-- Energian yksikkö on joule (J). Etuliitteet: kJ on $1000\,\text{J}$, MJ on $1\,000\,000\,\text{J}$, GJ on tuhat megajoulea ja TJ on tuhat gigajoulea.
+- Energia säilyy (luku *Energialajit ja energian säilyminen*). Osa muuttuu joka vaiheessa lämmöksi, joka hajaantuu ympäristöön.
+- Energian yksikkö on joule (J). Etuliitteet: $1\,\text{kJ} = 1000\,\text{J}$, $1\,\text{MJ} = 1000\,\text{kJ}$, $1\,\text{GJ} = 1000\,\text{MJ}$ ja $1\,\text{TJ} = 1000\,\text{GJ}$.
 - Etuliite korvataan arvollaan: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J}$. Energioita lasketaan yhteen samassa yksikössä.
 - Arjen energiat ulottuvat jouleista terajouleihin, ja vertailu tehdään kymmenpotensseina.

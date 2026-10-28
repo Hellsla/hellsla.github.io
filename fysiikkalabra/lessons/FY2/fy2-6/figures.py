@@ -4,30 +4,41 @@ from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, 
 
 
 def plants():
-    f = Fig("fy26-pl", 330, "Kaavakuva: viisi tapaa tuottaa sähköä. Putoava vesi pyörittää turbiinia, tuuli roottoria, auringonsäteily "
-            "osuu aurinkopaneeliin, ydinpolttoaineen energia lämmittää höyryn höyryturbiinille ja polttoaineen kemiallinen energia "
-            "lämmittää höyryn höyryturbiinille. Jokaisesta laitoksesta lähtee nuoli sähköverkkoon. Kuva on kaavamainen, nuolten "
-            "pituus ei kuvaa tehoa.")
-    f.defs_add(f'<linearGradient id="fy26-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></linearGradient>')
-    rows = [("putoava vesi", "turbiini"), ("tuuli", "roottori"), ("säteily", "paneeli"),
-            ("ydinpolttoaine", "höyryturbiini"), ("polttoaine", "höyryturbiini")]
-    f.rect(468, 18, 116, 294, GLASS, INK, 3, 10)
-    f.tex(526, 165, r"\text{sähkö}", "middle", size=24, w=108)
-    for i, (src, dev) in enumerate(rows):
-        y = 18 + 60 * i
-        f.rect(16, y, 196, 54, WHITE, INK, 2.5, 10)
-        f.tex(114, y + 27, r"\text{" + src + "}", "middle", size=24, w=188)
-        f.block_arrow(214, y + 27, 250, y + 27, "url(#fy26-heat)", 12, 26, 18)
-        f.rect(252, y, 176, 54, GLASS, INK, 2.5, 10)
-        f.tex(340, y + 27, r"\text{" + dev + "}", "middle", size=24, w=168)
-        f.block_arrow(430, y + 27, 466, y + 27, "url(#fy26-heat)", 12, 26, 18)
+    f = Fig("fy26-pl", 366, "Kaavakuva: viisi tapaa tuottaa sähköä. Putoava vesi pyörittää vesiturbiinia, tuuli roottoria, ja kummankin "
+            "akseli pyörittää generaattoria G. Auringonsäteily osuu aurinkopaneeliin, joka tuottaa sähköä suoraan ilman generaattoria. "
+            "Uraanin ydinenergia lämmittää reaktorissa höyryn ja polttoaineen kemiallinen energia kattilassa höyryn, ja höyry pyörittää "
+            "turbiinia ja generaattoria. Harmaat nuolet ovat luonnonvaran energiaa, tummat nuolet sähköä, ja jokaisesta laitoksesta "
+            "lähtee alaspäin oranssi nuoli: osa energiasta päätyy lämpönä ympäristöön. Kuva on kaavamainen, nuolten pituus ei kuvaa tehoa.")
+    rows = [("vesi", "vesiturbiini", True), ("tuuli", "roottori", True), ("säteily", "aurinkopaneeli", False),
+            ("uraani", "reaktori, turbiini", True), ("polttoaine", "kattila, turbiini", True)]
+    top, step, bh = 14, 66, 44
+    f.rect(496, top, 88, step * 4 + bh, GLASS, INK, 3, 10)
+    f.tex(540, top + (step * 4 + bh) / 2, r"\text{sähkö}", "middle", size=24, w=80)
+    for i, (src, dev, gen) in enumerate(rows):
+        y = top + step * i; cy = y + bh / 2
+        f.rect(16, y, 132, bh, WHITE, INK, 2.5, 10)
+        f.tex(82, cy, r"\text{" + src + "}", "middle", size=24, w=124)
+        f.block_arrow(150, cy, 174, cy, MUTED, 12, 24, 14)
+        f.rect(176, y, 236, bh, GLASS, INK, 2.5, 10)
+        f.tex(294, cy, r"\text{" + dev + "}", "middle", size=24, w=228)
+        f.block_arrow(390, y + bh + 1, 390, y + bh + 19, HEAT, 8, 18, 10)
+        if gen:
+            f.arrow(414, cy, 438, cy, INK, 3, 12)
+            f.circle(456, cy, 16, WHITE, INK, 2.5)
+            f.tex(456, cy, "G", "middle", size=24, w=26)
+            f.arrow(474, cy, 494, cy, INK, 3, 12)
+        else:
+            f.arrow(414, cy, 494, cy, INK, 3, 12)
+    yb = top + step * 4 + bh + 16
+    f.tex(16, yb, r"G\text{: generaattori}", "start", size=24, w=200)
+    f.tex(380, yb, r"\text{lämpö}", "end", size=24, w=80)
     return f.svg()
 
 
 def fi_bars():
     f = Fig("fy26-fi", 330, "Vaakapylväskaavio Suomen sähköntuotannosta vuonna 2024 energialähteittäin teravattitunteina (Tilastokeskus), "
             "mittakaavassa: ydinvoima 31, tuulivoima 20,2, vesivoima 14,1, bioperäiset polttoaineet 9,5, fossiiliset polttoaineet ja "
-            "turve 3,4 ja aurinkosähkö 0,9. Ydinvoiman pylväs on noin kolmannes kokonaistuotannosta 79,9.")
+            "turve 3,4 ja aurinkosähkö 0,9. Ydinvoiman pylväs on noin kaksi viidesosaa kokonaistuotannosta 79,9.")
     f.tex(168, 20, r"E\ (\text{TWh})", "start", w=120)
     x0, per = 170, 10.5                 # 10 TWh = 105 units
     rows = [("ydinvoima", 31), ("tuulivoima", 20.2), ("vesivoima", 14.1), ("bioperäiset", 9.5), ("fossiiliset", 3.4), ("aurinko", 0.9)]
@@ -49,10 +60,10 @@ def fi_bars():
 
 
 def unit_power():
-    f = Fig("fy26-up", 372, "Vaakapylväskaavio yksittäisten voimalaitosten tehoista logaritmisella asteikolla, jossa jokainen ruutu on "
-            "kymmenkertainen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin 100 MW "
-            "ja Olkiluoto 3 noin 1600 MW. Pylväiden pituudet ovat tehon logaritmin mukaiset, joten Olkiluoto 3 on noin 320 kertaa "
-            "tuulivoimalaa suurempi, vaikka pylväs on vain vähän pidempi.")
+    f = Fig("fy26-up", 372, "Pistekuvaaja yksittäisten voimalaitosten tehoista logaritmisella asteikolla, jossa jokainen pystyviiva on "
+            "kymmenkertainen edelliseen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin "
+            "100 MW ja Olkiluoto 3 noin 1600 MW. Pisteen paikka kertoo tehon kymmenen potenssin, joten Olkiluoto 3 on noin 320 kertaa "
+            "tuulivoimalaa suurempi, vaikka sen piste on vain kaksi ja puoli askelta oikeammalla.")
     x0, per = 40, 70                    # one decade = 70 units, the axis starts at 10^3 W
     f.tex(x0, 18, r"P\ (\text{W})", "start", size=24, w=330)
     for k in range(0, 7):
@@ -61,10 +72,10 @@ def unit_power():
             ("suuri vesivoimalaitos", 1e8, "100\\,\\text{MW}"), ("Olkiluoto 3", 1.6e9, "1600\\,\\text{MW}")]
     for i, (name, p, lab) in enumerate(rows):
         y = 44 + 64 * i
-        w = (math.log10(p) - 3) * per
+        x = x0 + (math.log10(p) - 3) * per
         f.tex(x0 + 4, y + 12, r"\text{" + name + "}", "start", size=24, w=300)
-        f.rect(x0, y + 28, w, 24, HEAT_LIGHT, HEAT, 1.5, 3)
-        f.tex(x0 + w + 8, y + 40, lab, "start", size=24, w=110)
+        f.circle(x, y + 40, 6.5, HEAT, WHITE, 2)
+        f.tex(x + 14, y + 40, lab, "start", size=24, w=110)
     f.arrow(x0, 300, x0 + 6 * per + 40, 300, INK, 2.5, 13)
     f.line(x0, 42, x0, 302, INK, 2.5)
     for k in range(0, 7):

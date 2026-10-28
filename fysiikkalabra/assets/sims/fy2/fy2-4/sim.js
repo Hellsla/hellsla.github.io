@@ -69,7 +69,7 @@ new p5((p) => {
       etaP: r.Pa / Po * 100, etaE: r.Ea / r.Eo * 100, nopeus: speed, labels: null };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    const fh = Math.round(13 * k);
+    const fh = Math.round(Math.max(20, 14 * k));                       // 20 canvas px or more: about 18 px on a wide screen, 14 px on a phone
     labels = [];
     p.background(250);
     picture(dev, key, Po, r, fh);
@@ -101,9 +101,9 @@ new p5((p) => {
     lab(`$\\text{${__('laite_' + key)}}$`, 220, 38, 'c', fh);
     lab(`$P_\\text{o} = ${fP(Po)}$`, XI, 90, 'l', fh);
     lab(`$\\text{${__('sisaan_' + dev.inn)}}$`, XI, YT + H + 26, 'l', fh);
-    lab(`$P_\\text{a} = ${fP(r.Pa)}\\ (\\text{${__('ulos_' + dev.out)}})$`, 395, YT - 17, 'c', fh, COL.okB);
+    lab(`$P_\\text{a} = ${fP(r.Pa)}\\ (\\text{${__('ulos_' + dev.out)}})$`, XTIP, YT - 30, 'r', fh, COL.okB);
     lab(`$P_\\text{h} = ${fP(r.Ph)}\\ (\\text{${__(dev.loss)}})$`, 395, YL + Th + 34, 'c', fh, [190, 66, 8]);
-    lab(`$\\eta = ${sig(dev.eta * 100)}\\,\\%$`, 220, 274, 'c', fh);
+    lab(`$\\eta = ${sig(dev.eta * 100)}\\,\\%$`, 200, 270, 'c', fh);
   }
 
   // a filled arrow outline with a horizontal gradient and no stroke yet (the stroke is drawn after the stripes)

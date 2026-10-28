@@ -1,12 +1,7 @@
 VERDICT: DONE
 
-Draft, round 1. check_lesson.py: every line ok (lint, latex, build, inquiry 44/44, layout 360/768/1280).
-
-- `meta.json`: added glossary term `päästökerroin`.
-- `lesson.md`: Ydinajatus (greenhouse effect qualitatively, fuels and CO2, life-cycle emissions, criteria list, kestävä energiatalous), Kaava: Hiilidioksidipäästö (m = e · E, IPCC AR5 WG3 Annex III table), staged household example, two misconceptions, summary; two figures.
-- `lessons/FY2/fy2-8/figures.py`: `greenhouse` (qualitative, not to scale) and `emissions` (bar chart to scale, 820 vs 12 g/kWh).
-- `inquiry.json`: hook, optional retrieval, two predictions (greenhouse without gases; coal vs wind factor), three `interpret` evidence items (data table with numeric, origin of wind's emissions, what the factor does not tell), reflect, error-spotting, transfer (100 GWh), structured five-part argument task with pair prompt and model answer, three checks, exit.
-- `exit-ticket.json`, `exercises/exercises.json` (5/4/3), `exercises/solutions.md` (complete), `answers.py`, `lesson-answers.py`.
-- `glossary.json`: hiilidioksidipäästö, päästökerroin, ilmastonmuutos, kestävä energiatalous added; kasvihuoneilmiö lists fy2-8.
-
-Notes: aurinkosähkö 41 (rooftop) used in L1-04; petrol/diesel factors (69, 74 g/MJ, IPCC 2006 defaults) and energy contents (32, 36 MJ/l) are given in the tasks as rounded typical values. Predictions have no reveal (no simulation), so feedback follows commitment.
+Round 1 fix (science FAIL, pedagogy FAIL).
+- inquiry.json: ennuste-1 per-mille claim now names CO2 (alle puoli promillea); ennuste-2 asks for the order (largest/smallest of coal, gas, biomass, wind) with arguable reasons, no number before the table and no alkupera answer in its feedback; muut-perusteet stem no longer lists the criteria, asks "Mitä muuta pitäisi tietää…", wrong options carry real arguments ($1\,\text{g/kWh}$ difference, price, measurement precision); new Sovella item `kuljetus` (wood chips 50 km vs 400 km: transport and land use); option lengths evened in kertaus, ennuste-1, alkupera, tarkistus-1 (correct no longer the longest); sunlight "suurelta osin läpi"; otsoni; siirto mistake 0.049 t with matching feedback; conversions by substitution (perustele model, tarkistus-2 check with 7,2 l); colon for written division; aineisto answer as two significant figures like 490.
+- lesson.md: sunlight = visible + near infrared, "suurelta osin"; "muinaisten eliöiden" (coal plants, oil/gas plankton); biomass 230 g/kWh note (dedicated crops, combustion CO2 counted zero, regrowth delay not shown); Ydinajatus sentence on why a small CO2 share matters; legend sentence; all numbers with units in LaTeX.
+- figures.py: greenhouse heat radiation red (sunlight orange), dashed layer "ilmakehä (kasvihuonekaasut)"; emissions legend fossiilinen/muu.
+- exit-ticket.json: wording and LaTeX. lesson-answers.py: new check numbers.

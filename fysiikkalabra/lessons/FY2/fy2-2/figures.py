@@ -44,7 +44,7 @@ def thermo(f, cx, cy):
 
 
 def ketju():
-    f = Fig("fy22-ketju", 370, "Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi sitoo sen kemialliseksi "
+    f = Fig("fy22-ketju", 370, "Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi (kaura) sitoo sen kemialliseksi "
             "energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu on lämpöä. Joka vaiheessa osa energiasta "
             "muuttuu lämmöksi ympäristöön (oranssit nuolet alas), ja lopuksi myös liike muuttuu lämmöksi. Nuolten pituus ei ole mittakaavassa.")
     xs = [75, 225, 375, 525]
@@ -53,6 +53,7 @@ def ketju():
         f.block_arrow(x, 100, x + 50, 100, HEAT_LIGHT, shaft=14, head=30, headlen=22)
     names = [r"\text{Aurinko}", r"\text{Puuro}", r"\text{Pyöräily}", r"\text{Ympäristö}"]
     forms = [r"\text{säteily}", r"\text{kemiallinen}", r"\text{liike}", r"\text{lämpö}"]
+    f.tex(xs[1] - 44, 44, r"\text{kasvi}", "middle", w=90)
     for x, a, b in zip(xs, names, forms):
         f.tex(x, 172, a, "middle", w=140)
         f.tex(x, 206, b, "middle", MUTED, w=140)
@@ -88,20 +89,20 @@ def tikapuut():
 
 
 def sailyminen():
-    f = Fig("fy22-sailyminen", 350, "Kaavakuva mittakaavassa: pyöräilijän banaanin kemiallinen energia 450 kJ jakautuu liikkeeksi 110 kJ ja "
-            "lämmöksi 340 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.")
-    k = 0.2   # px per kJ
-    hin, hm, hl = 450 * k, 110 * k, 340 * k
+    f = Fig("fy22-sailyminen", 350, "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat "
+            "liikkeeksi 200 kJ ja lämmöksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.")
+    k = 0.12   # px per kJ
+    hin, hm, hl = 800 * k, 200 * k, 600 * k
     top = 112
     f.rect(40, top, 192, hin, HEAT_LIGHT, HEAT, 2)
     f.path(f"M232,{n(top)} L400,{n(top)} L400,{n(top - 14)} L452,{n(top + hm / 2)} L400,{n(top + hm + 14)} L400,{n(top + hm)} L232,{n(top + hm)} Z", fill=HEAT_LIGHT, stroke=HEAT, w=2)
     xr = 232 + hl
     f.path(f"M232,{n(top + hm)} L{n(xr)},{n(top + hm)} L{n(xr)},262 L{n(xr + 22)},262 L{n((232 + xr) / 2)},302 L{n(232 - 22)},262 L232,262 Z", fill=HOT_LIGHT, stroke=HOT, w=2)
-    f.tex(300, 38, r"450\,\text{kJ} = 110\,\text{kJ} + 340\,\text{kJ}", "middle", w=400)
+    f.tex(300, 38, r"800\,\text{kJ} = 200\,\text{kJ} + 600\,\text{kJ}", "middle", w=400)
     f.tex(52, 144, r"\text{kemiallinen}", "start", w=170)
-    f.tex(52, 182, r"450\,\text{kJ}", "start", w=140)
-    f.tex(244, 78, r"\text{liike: }110\,\text{kJ}", "start", w=220)
-    f.tex(xr + 36, 232, r"\text{lämpö: }340\,\text{kJ}", "start", w=220)
+    f.tex(52, 182, r"800\,\text{kJ}", "start", w=140)
+    f.tex(244, 78, r"\text{liike: }200\,\text{kJ}", "start", w=220)
+    f.tex(xr + 36, 232, r"\text{lämpö: }600\,\text{kJ}", "start", w=220)
     f.tex(300, 332, r"\text{nuolen leveys kuvaa energian määrää}", "middle", MUTED, w=460)
     return f.svg()
 

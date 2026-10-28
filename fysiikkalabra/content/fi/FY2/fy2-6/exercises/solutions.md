@@ -1,12 +1,12 @@
 ## fy2-6-L1-01
-**Annettu:** keskiteho $P = 2{,}5\,\text{MW}$, aika $t = 8760\,\text{h}$
-**Kysytty:** vuodessa tuotettu energia $E$ gigawattitunteina
+**Annettu:** keskiteho $P = 2{,}5\,\text{MW}$, aika $t = 168\,\text{h}$
+**Kysytty:** viikossa tuotettu energia $E$ megawattitunteina
 **Periaate:** Keskiteho on teho, jolla voimala tuottaisi saman energian tasaisesti koko ajan, joten energia on keskiteho kerrottuna ajalla.
 **Kaava:** $E = P t$
-**Muunnokset:** $2{,}5\,\text{MW} = 2{,}5 \cdot 1000\,\text{kW} = 2500\,\text{kW}$. Lopuksi $1\,\text{GWh} = 10^{6}\,\text{kWh}$.
-**Sijoitus:** $E = 2500\,\text{kW} \cdot 8760\,\text{h} = 21\,900\,000\,\text{kWh} = 21{,}9\,\text{GWh}$
-**Vastaus:** $22\,\text{GWh}$, kaksi merkitsevää numeroa kuten tehossa $2{,}5\,\text{MW}$.
-**Järkevyys:** Arvio: $2{,}5\,\text{MW} \cdot 9000\,\text{h} \approx 22\,500\,\text{MWh} \approx 22\,\text{GWh}$. Yhden tuulivoimalan vuosienergia on siis kymmenien gigawattituntien luokkaa, ei satoja, mikä sopii yhden voimalan kokoon.
+**Muunnokset:** Ei tarvita: teho on megawatteina ja aika tunteina, joten tulo on suoraan megawattitunteina.
+**Sijoitus:** $E = 2{,}5\,\text{MW} \cdot 168\,\text{h} = 420\,\text{MWh}$
+**Vastaus:** $420\,\text{MWh}$, kaksi merkitsevää numeroa kuten tehossa $2{,}5\,\text{MW}$.
+**Järkevyys:** Arvio: $2{,}5\,\text{MW} \cdot 170\,\text{h} \approx 425\,\text{MWh}$. Viikko on noin $1 : 52$ vuodesta, joten vuodessa voimala tuottaisi samalla keskiteholla noin $52 \cdot 420\,\text{MWh} \approx 22\,000\,\text{MWh}$ eli kymmeniä gigawattitunteja, mikä sopii yhden tuulivoimalan kokoon.
 
 ## fy2-6-L1-02
 **Annettu:** teho $P = 120\,\text{MW}$, aika $t = 8{,}0\,\text{h}$
@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita: teho on gigawatteina ja aika tunteina, joten tulo on gigawattitunteina.
 **Sijoitus:** $E = 1{,}6\,\text{GW} \cdot 24\,\text{h} = 38{,}4\,\text{GWh}$
 **Vastaus:** $38\,\text{GWh}$, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
-**Järkevyys:** Arvio: $1{,}6 \cdot 25 = 40$, joten $38\,\text{GWh}$ on oikeaa suuruusluokkaa. Kun yksi voimala tuottaa vuorokaudessa 38 GWh, vuodessa se tuottaa yli 10 TWh.
+**Järkevyys:** Arvio: $1{,}6 \cdot 25 = 40$, joten $38\,\text{GWh}$ on oikeaa suuruusluokkaa. Kun yksi voimala tuottaa vuorokaudessa $38\,\text{GWh}$, vuodessa se tuottaa yli $10\,\text{TWh}$.
 
 ## fy2-6-L1-04
 **Annettu:** tuulivoima $20{,}2\,\text{TWh}$, kokonaistuotanto $79{,}9\,\text{TWh}$
@@ -35,28 +35,28 @@
 **Kaava:** $\text{osuus} = \dfrac{E_\text{tuuli}}{E_\text{yht}}$
 **Muunnokset:** Ei tarvita: molemmat ovat teravattitunteina, joten yksikkö supistuu. Prosentteina $1 = 100\,\%$.
 **Sijoitus:** $\text{osuus} = 20{,}2\,\text{TWh} : 79{,}9\,\text{TWh} = 0{,}2528 = 25{,}28\,\%$
-**Vastaus:** $25\,\%$, kaksi merkitsevää numeroa kuten tuulivoiman energiassa.
+**Vastaus:** $25{,}3\,\%$, kolme merkitsevää numeroa kuten energioissa $20{,}2\,\text{TWh}$ ja $79{,}9\,\text{TWh}$.
 **Järkevyys:** $20 : 80 = 0{,}25$, joten neljäsosa on oikein. Tuulivoiman osuus on selvästi alle puolet mutta suurempi kuin vesivoiman.
 
 ## fy2-6-L1-05
-**Annettu:** energia $E = 31\,\text{TWh}$, aika $t = 8760\,\text{h}$
-**Kysytty:** keskiteho $P$ gigawatteina
-**Periaate:** Keskiteho on vuoden aikana tuotettu energia jaettuna ajalla, koska $E = P t$.
-**Kaava:** $E = P t$, josta $P = \dfrac{E}{t}$
-**Muunnokset:** $31\,\text{TWh} = 31 \cdot 10^{9}\,\text{kWh}$. Tuloksen $\text{kW}$ muutetaan lopuksi gigawateiksi: $1\,\text{GW} = 10^{6}\,\text{kW}$.
-**Sijoitus:** $P = 31 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h} = 3\,538\,813\,\text{kW} = 3{,}54\,\text{GW}$
-**Vastaus:** $3{,}5\,\text{GW}$, kaksi merkitsevää numeroa kuten energiassa $31\,\text{TWh}$.
-**Järkevyys:** Olkiluoto 3:n teho yksin on $1{,}6\,\text{GW}$, ja Suomessa on viisi reaktoria, joten ydinvoiman keskiteho muutamia gigawatteja on järkevä.
+**Annettu:** teho $P = 4{,}0\,\text{kW}$, aika $t = 3{,}5\,\text{h}$
+**Kysytty:** tuotettu energia $E$ kilowattitunteina
+**Periaate:** Paneelien teho pysyy samana koko ajan, joten energia on teho kerrottuna ajalla.
+**Kaava:** $E = P t$
+**Muunnokset:** Ei tarvita: teho on kilowatteina ja aika tunteina, joten tulo on suoraan kilowattitunteina.
+**Sijoitus:** $E = 4{,}0\,\text{kW} \cdot 3{,}5\,\text{h} = 14\,\text{kWh}$
+**Vastaus:** $14\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $4{,}0\,\text{kW}$ ja ajassa $3{,}5\,\text{h}$.
+**Järkevyys:** Arvio: $4\,\text{kW} \cdot 4\,\text{h} = 16\,\text{kWh}$, ja aika on hieman alle neljä tuntia, joten hieman pienempi $14\,\text{kWh}$ sopii. Se on suunnilleen omakotitalon yhden päivän sähkönkulutus ilman sähkölämmitystä.
 
 ## fy2-6-L2-01
-**Annettu:** nimellisteho $P_\text{nim} = 100\,\text{MW}$, vuosienergia $E = 95\,\text{GWh}$, aika $t = 8760\,\text{h}$
-**Kysytty:** keskiteho prosentteina nimellistehosta
-**Periaate:** Keskiteho on vuosienergia jaettuna ajalla, koska $E = P t$. Osuus saadaan vertaamalla sitä nimellistehoon.
-**Kaava:** $P_\text{ka} = \dfrac{E}{t}$ ja $\text{osuus} = \dfrac{P_\text{ka}}{P_\text{nim}}$
-**Muunnokset:** $95\,\text{GWh} = 95 \cdot 10^{6}\,\text{kWh}$ ja $100\,\text{MW} = 100\,000\,\text{kW}$.
-**Sijoitus:** $P_\text{ka} = 95 \cdot 10^{6}\,\text{kWh} : 8760\,\text{h} = 10\,845\,\text{kW}$ ja $\text{osuus} = 10\,845\,\text{kW} : 100\,000\,\text{kW} = 0{,}1085 = 10{,}85\,\%$
-**Vastaus:** $11\,\%$, kaksi merkitsevää numeroa kuten energiassa $95\,\text{GWh}$.
-**Järkevyys:** Täydellä teholla voimala tuottaisi $100\,\text{MW} \cdot 8760\,\text{h} = 876\,\text{GWh}$, ja $95 : 876 \approx 0{,}11$. Aurinkovoimala ei tuota yöllä eikä talvella, joten pieni osuus on järkevä.
+**Annettu:** nimellisteho $P_\text{nim} = 25\,\text{MW}$, keskiteho $32\,\%$ nimellistehosta, aika $t = 8760\,\text{h}$
+**Kysytty:** vuodessa tuotettu energia $E$ gigawattitunteina
+**Periaate:** Tuulipuiston teho vaihtelee, mutta vuosienergia on sama kuin jos puisto toimisi koko vuoden keskiteholla. Keskiteho on annettu osuus nimellistehosta, ja energia on keskiteho kerrottuna ajalla.
+**Kaava:** $P_\text{ka} = 0{,}32 \cdot P_\text{nim}$ ja $E = P_\text{ka}\, t$
+**Muunnokset:** $32\,\% = 0{,}32$. Lopuksi megawattitunnit gigawattitunneiksi: $70\,080\,\text{MWh} = 70{,}08 \cdot 1000\,\text{MWh} = 70{,}08\,\text{GWh}$.
+**Sijoitus:** $P_\text{ka} = 0{,}32 \cdot 25\,\text{MW} = 8{,}0\,\text{MW}$ ja $E = 8{,}0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70{,}08\,\text{GWh}$
+**Vastaus:** $70\,\text{GWh}$, kaksi merkitsevää numeroa kuten nimellistehossa $25\,\text{MW}$ ja osuudessa $32\,\%$.
+**Järkevyys:** Täydellä teholla puisto tuottaisi $25\,\text{MW} \cdot 8760\,\text{h} = 219\,000\,\text{MWh} \approx 220\,\text{GWh}$, ja noin kolmannes siitä on noin $70\,\text{GWh}$. Tulos on pienempi kuin nimellistehon mukainen energia, koska tuuli vaihtelee.
 
 ## fy2-6-L2-02
 **Annettu:** energia $E = 14\,\text{TWh}$, teho $P = 1{,}6\,\text{GW}$
@@ -65,7 +65,7 @@
 **Kaava:** $E = P t$, josta $t = \dfrac{E}{P}$
 **Muunnokset:** $14\,\text{TWh} = 14 \cdot 10^{9}\,\text{kWh}$ ja $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$.
 **Sijoitus:** $t = 14 \cdot 10^{9}\,\text{kWh} : (1{,}6 \cdot 10^{6}\,\text{kW}) = 8750\,\text{h}$
-**Vastaus:** $8750\,\text{h}$, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
+**Vastaus:** $8800\,\text{h}$ eli $8{,}8 \cdot 10^{3}\,\text{h}$, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
 **Järkevyys:** Vuodessa on $8760\,\text{h}$, joten tulos on lähes koko vuosi: yksi suuri ydinvoimala tuottaisi täydellä teholla koko Suomen vesivoiman vuosienergian.
 
 ## fy2-6-L2-03
@@ -86,7 +86,7 @@
 **Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$, jolloin tulo kilowatin ja tunnin kanssa on kilowattitunteina.
 **Sijoitus:** $N = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh} = 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh} = 2\,803\,200$
 **Vastaus:** $2{,}8$ miljoonaa kotitaloutta, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
-**Järkevyys:** Tulos on samaa suuruusluokkaa kuin Suomen kotitalouksien lukumäärä (noin 2,8 miljoonaa). Yksi laitos ei silti kata maan sähköä, koska teollisuus ja palvelut käyttävät suuren osan siitä.
+**Järkevyys:** Tulos on samaa suuruusluokkaa kuin Suomen kotitalouksien lukumäärä (noin $2{,}86$ miljoonaa vuonna 2024, Tilastokeskus). Yksi laitos ei silti kata maan sähköä, koska teollisuus ja palvelut käyttävät suuren osan siitä.
 
 ## fy2-6-L3-01
 **Annettu:** kulutus $11\,\text{GW}$, ydinvoima $3{,}5\,\text{GW}$, tuulivoiman nimellisteho $9{,}0\,\text{GW}$ ja toteutunut teho $4{,}0\,\%$ siitä
@@ -109,11 +109,11 @@
 **Järkevyys:** Tarkistus vuosienergioilla: ydinvoima $0{,}90 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 4{,}7\,\text{TWh}$ ja tuulipuisto $0{,}33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 1{,}7\,\text{TWh}$, ja $4{,}7 : 1{,}7 \approx 2{,}7$. Sama nimellisteho ei siis tarkoita samaa vuosienergiaa.
 
 ## fy2-6-L3-03
-**Annettu:** aurinkosähkön energia $E = 0{,}90\,\text{TWh}$, Olkiluoto 3:n teho $P = 1{,}6\,\text{GW}$
-**Kysytty:** aika $t$ tunteina
-**Periaate:** Olkiluoto 3 tuottaisi täydellä vakioteholla energian $E = P t$, joten tuotantoaika saadaan jakamalla aurinkosähkön energia laitoksen teholla.
-**Kaava:** $E = P t$, josta $t = \dfrac{E}{P}$
-**Muunnokset:** $0{,}90\,\text{TWh} = 0{,}90 \cdot 10^{9}\,\text{kWh}$ ja $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$.
-**Sijoitus:** $t = 0{,}90 \cdot 10^{9}\,\text{kWh} : (1{,}6 \cdot 10^{6}\,\text{kW}) = 562{,}5\,\text{h}$
-**Vastaus:** $560\,\text{h}$, kaksi merkitsevää numeroa kuten aurinkosähkön energiassa $0{,}90\,\text{TWh}$.
-**Järkevyys:** Tulos on noin $560 : 24 \approx 23$ vuorokautta eli alle kuukausi. Koko Suomen aurinkosähkö vuodessa vastaa siis yhden suuren ydinvoimalan kolmen viikon tuotantoa, mikä näyttää aurinkosähkön osuuden pieneksi Suomessa vuonna 2024.
+**Annettu:** Olkiluoto 3:n nimellisteho $P_\text{O} = 1600\,\text{MW}$ ja keskiteho $90\,\%$ siitä, aurinkopuiston keskiteho $11\,\%$ nimellistehosta, molemmille sama aika $t$ (vuosi)
+**Kysytty:** aurinkopuiston nimellisteho $P_\text{a}$ gigawatteina, ja korvaisiko puisto Olkiluoto 3:n tammikuun iltana
+**Periaate:** Vuosienergia on keskiteho kerrottuna ajalla, $E = P_\text{ka} t$, ja keskiteho on annettu osuus $o$ nimellistehosta. Aika on molemmilla sama vuosi, joten vuosienergiat ovat yhtä suuret, kun keskitehot ovat yhtä suuret.
+**Kaava:** $o_\text{a} P_\text{a}\, t = o_\text{O} P_\text{O}\, t$, josta $P_\text{a} = \dfrac{o_\text{O} P_\text{O}}{o_\text{a}}$
+**Muunnokset:** $o_\text{O} = 90\,\% = 0{,}90$ ja $o_\text{a} = 11\,\% = 0{,}11$. Lopuksi megawatit gigawateiksi: $13\,091\,\text{MW} = 13{,}091 \cdot 1000\,\text{MW} = 13{,}1\,\text{GW}$.
+**Sijoitus:** $P_\text{a} = 0{,}90 \cdot 1600\,\text{MW} : 0{,}11 = 1440\,\text{MW} : 0{,}11 = 13\,091\,\text{MW} = 13{,}1\,\text{GW}$
+**Vastaus:** $13\,\text{GW}$, kaksi merkitsevää numeroa kuten osuuksissa $11\,\%$ ja $90\,\%$.
+**Järkevyys:** Arvio: $90 : 11 \approx 8$, joten nimellistehoa tarvitaan noin kahdeksan kertaa enemmän, $8 \cdot 1{,}6\,\text{GW} \approx 13\,\text{GW}$. Tammikuun iltana aurinko on laskenut, joten puisto ei tuota lainkaan, vaikka sen vuosienergia olisi sama kuin Olkiluoto 3:n. Silloin Olkiluoto 3:n tilalle tarvittaisiin säädettävää tuotantoa, kuten vesivoimaa ja polttoainevoimaloita, tai tuontisähköä ja energiavarastoja. Sama vuosienergia ei siis tarkoita, että voimala korvaa toisen joka hetki.

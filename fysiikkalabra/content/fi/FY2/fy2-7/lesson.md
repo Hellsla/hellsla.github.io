@@ -1,16 +1,16 @@
 # Energian siirtäminen: sähkö ja lämpö
 
-> **Miksi** voimalinjojen jännite on satoja kilovoltteja, vaikka pistorasiasta saa vain 230 V, ja miksi kaukolämpöputket kääritään paksuun eristeeseen?
+> **Miksi** voimalinjojen jännite on satoja kilovoltteja, vaikka pistorasiasta saa vain $230\,\text{V}$, ja miksi kaukolämpöputket kääritään paksuun eristeeseen?
 
 ## Ydinajatus
 
-Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos on kaupungin ulkopuolella, mutta lämmitin ja pistorasia ovat kotona. Energia täytyy siis siirtää käyttäjälle. Suomessa se tapahtuu kahdella tavalla: **sähköenergiana** sähköverkossa ja lämpöenergiana kaukolämpöverkon vesiputkissa.
+Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos on kaupungin ulkopuolella, mutta lämmitin ja pistorasia ovat kotona. Energia täytyy siis siirtää käyttäjälle. Suomessa se tapahtuu kahdella tavalla: **sähköenergiana** sähköverkossa ja **lämpöenergiana** kaukolämpöverkon vesiputkissa.
 
 ### Sähköverkko
 
-**Sähköverkko** vie sähköenergian voimalaitokselta kotiin. Pitkät matkat kulkevat kantaverkon voimalinjoissa, joiden jännite on 110–400 kV. Lähempänä käyttäjää jännite lasketaan ensin 20 kV:iin ja lopuksi pienjänniteverkon 0,4 kV:iin, josta kodin pistorasiat saavat 230 V. Jännitteen muuttaminen tapahtuu muuntajissa.
+**Sähköverkko** vie sähköenergian voimalaitokselta kotiin. Pitkät matkat kulkevat kantaverkon voimalinjoissa, joiden jännite on $110\text{–}400\,\text{kV}$. Lähempänä käyttäjää jännite lasketaan ensin $20\,\text{kV}$:iin ja lopuksi pienjänniteverkon $0{,}4\,\text{kV}$:iin, josta kodin pistorasiat saavat $230\,\text{V}$. Jännitteen muuttaminen tapahtuu muuntajissa.
 
-<svg data-fig="grid" viewBox="0 0 600 332" role="img" aria-label="Kaavakuva sähköverkon reitistä voimalaitokselta kotiin. Vasemmalta oikealle: voimalaitos ja muuntaja, kantaverkon voimalinja (jännite 110 kV:sta 400 kV:iin), sähköasema, jakeluverkon pylväät (20 kV) ja koti (0,4 kV, pistorasiassa 230 V). Alla oranssi nuoli kuvaa energian kulkua voimalaitokselta kotiin. Kuva ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="grid" viewBox="0 0 600 332" role="img" aria-label="Kaavakuva sähköverkon reitistä voimalaitokselta kotiin. Vasemmalta oikealle: voimalaitos ja sen muuntaja, kantaverkon voimalinja (jännite 110 kV:sta 400 kV:iin), sähköasema, jakeluverkon pylväät (20 kV) ja koti (0,4 kV, pistorasiassa 230 V). Alla oranssi nuoli kuvaa energian kulkua voimalaitokselta kotiin. Kuva ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="12" y1="206" x2="588" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <rect x="30" y="150" width="76" height="56" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="44" y="96" width="16" height="54" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
@@ -60,6 +60,8 @@ Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos 
   <foreignObject x="160" y="47.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$110\text{–}400\,\text{kV}$</div></foreignObject>
   <foreignObject x="426" y="93.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20\,\text{kV}$</div></foreignObject>
   <foreignObject x="506" y="47.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}4\,\text{kV}$</div></foreignObject>
+  <foreignObject x="90" y="92" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuntaja}$</div></foreignObject>
+  <line x1="135" y1="124" x2="135" y2="171" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
   <line x1="556" y1="82" x2="556" y2="130" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
   <foreignObject x="18" y="247.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{voimalaitos}$</div></foreignObject>
   <foreignObject x="175" y="247.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kantaverkko}$</div></foreignObject>
@@ -110,7 +112,7 @@ Muuntaja nostaa jännitteen voimalaitoksella ja laskee sen takaisin käyttäjän
 
 Kummassakin verkossa osa energiasta muuttuu matkalla lämmöksi ympäristöön eikä tule perille. Tätä kutsutaan **siirtohäviöksi**. Energia ei katoa (luku *Energialajit ja energian säilyminen*), mutta häviö on käyttäjälle hyödytöntä.
 
-Suomessa sähköverkon häviöt olivat vuonna 2024 noin 4 % sähkön kulutuksesta, kun kulutus oli noin 83 TWh (Energiateollisuus, Sähkövuosi 2024). Kaukolämmön verkkoon hankittiin vuonna 2024 noin 36 TWh ja asiakkaille käytettiin noin 32,7 TWh, joten noin 9 % jäi matkalle (Energiateollisuus, Kaukolämpötilasto 2024; osuus on laskettu erotuksesta, joten se on arvio). Kuuma vesi on ympäristöä selvästi lämpimämpää, ja siksi kaukolämmön häviö on suhteessa suurempi kuin sähkön.
+Suomessa sähköverkon häviöt olivat vuonna 2024 noin $4\,\%$ sähkön kulutuksesta, kun kulutus oli noin $83\,\text{TWh}$ (Energiateollisuus, Sähkövuosi 2024). Kaukolämmön verkkoon hankittiin vuonna 2024 noin $36\,\text{TWh}$ ja asiakkaille käytettiin noin $32{,}7\,\text{TWh}$, joten noin $9\,\%$ jäi matkalle (Energiateollisuus, Kaukolämpötilasto 2024; osuus on laskettu erotuksesta, joten se on arvio). Kaukolämmön häviö on suhteessa suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää: mitä suurempi lämpötilaero ympäristöön on, sitä enemmän lämpöä karkaa, ja lämpöä pääsee eristeen läpi koko putkiston pituudella.
 
 ### Energian siirtäminen ajassa: varastointi
 
@@ -134,12 +136,15 @@ Energiaa siirretään myös ajassa. Tuulivoimaa ja aurinkosähköä syntyy sillo
   <rect x="430" y="102" width="80" height="98" rx="8" fill="url(#fy27-hot)" stroke="#1f2933" stroke-width="2"/>
   <line x1="470" y1="82" x2="470" y2="92" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <line x1="470" y1="210" x2="470" y2="222" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <foreignObject x="55" y="237.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{akku}$</div></foreignObject>
-  <foreignObject x="160" y="237.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pumppuvoima}$</div></foreignObject>
-  <foreignObject x="375" y="237.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpövarasto}$</div></foreignObject>
+  <foreignObject x="55" y="252.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{akku}$</div></foreignObject>
+  <foreignObject x="160" y="252.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pumppuvoimala}$</div></foreignObject>
+  <foreignObject x="375" y="252.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpövarasto}$</div></foreignObject>
   <foreignObject x="25" y="25.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
-  <foreignObject x="185" y="25.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{potentiaali}$</div></foreignObject>
+  <foreignObject x="188" y="14" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{potentiaali-}$</div></foreignObject>
+  <foreignObject x="188" y="42" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
   <foreignObject x="420" y="25.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpö}$</div></foreignObject>
+  <foreignObject x="196" y="78" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{yläallas}$</div></foreignObject>
+  <foreignObject x="176" y="210" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{alaallas}$</div></foreignObject>
   <line x1="184" y1="20" x2="184" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="380" y1="20" x2="380" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
@@ -228,11 +233,11 @@ E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
 
 <!-- vaihe -->
 
-**Tulos.** Perille tulee noin $223\,\text{MWh}$ ja häviää noin $22{,}1\,\text{MWh}$. Tulokset ilmoitetaan kolmella merkitsevällä numerolla, koska lähtöenergia $245\,\text{MWh}$ ja häviöprosentti $9{,}0\,\%$ tunnetaan kolmen numeron tarkkuudella.
+**Tulos.** Perille tulee noin $223\,\text{MWh}$ ja häviää noin $22\,\text{MWh}$. Perille tuleva energia ilmoitetaan kolmella merkitsevällä numerolla, koska hyötysuhde $0{,}910$ ja lähtöenergia $245\,\text{MWh}$ tunnetaan kolmen numeron tarkkuudella. Häviö ilmoitetaan kahdella merkitsevällä numerolla, koska häviöprosentti $9{,}0\,\%$ tunnetaan vain kahden numeron tarkkuudella.
 
 <!-- vaihe -->
 
-**Järkevyys.** Kymmenen prosenttia energiasta $245\,\text{MWh}$ olisi $24{,}5\,\text{MWh}$, ja $9{,}0\,\%$ on hieman vähemmän, joten häviö $22{,}1\,\text{MWh}$ on oikean suuruinen. Lisäksi $222{,}95\,\text{MWh} + 22{,}05\,\text{MWh} = 245\,\text{MWh}$, eli energia säilyy.
+**Järkevyys.** Kymmenen prosenttia energiasta $245\,\text{MWh}$ olisi $24{,}5\,\text{MWh}$, ja $9{,}0\,\%$ on hieman vähemmän, joten häviö $22\,\text{MWh}$ on oikean suuruinen. Lisäksi $222{,}95\,\text{MWh} + 22{,}05\,\text{MWh} = 245\,\text{MWh}$, eli energia säilyy.
 
 ## Yleinen virhekäsitys
 
@@ -245,6 +250,6 @@ Kolmas virhe on ajatella, että häviö vähennetään yksikkönä prosentista: 
 ## Tiivistelmä
 
 - Sähköenergia siirretään sähköverkossa, pitkät matkat korkealla jännitteellä, koska silloin virta on pieni ja johtimien lämpenemisestä aiheutuva häviö vähäinen. Muuntajat nostavat ja laskevat jännitettä.
-- Lämpöenergia siirretään kaukolämpöverkossa kuumana vetenä eristetyissä putkissa. Suomessa sähköverkon häviöt olivat noin 4 % ja kaukolämpöverkon noin 9 % (Energiateollisuus, 2024).
+- Lämpöenergia siirretään kaukolämpöverkossa kuumana vetenä eristetyissä putkissa. Suomessa sähköverkon häviöt olivat noin $4\,\%$ ja kaukolämpöverkon noin $9\,\%$ (Energiateollisuus, 2024).
 - Siirtohäviö $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$ ja siirron hyötysuhde $\eta = E_\text{perille} : E_\text{lähtö}$. Häviöprosentti lasketaan lähtevästä energiasta.
 - Varastot (akku, pumppuvoimala, lämpövarasto) siirtävät energiaa ajassa, mutta niissäkin osa energiasta muuttuu lämmöksi.

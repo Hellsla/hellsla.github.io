@@ -16,33 +16,33 @@
    "id": "hook",
    "stage": "herata",
    "type": "hook",
-   "text": "Kotipihan pistorasiasta tulee 230 V, mutta pellon yli kulkevien voimalinjojen johdoissa jännite on satoja kilovoltteja. Talvella kadun reunassa nousee höyryä kaukolämpökaivosta: maan alla kulkee kuumaa vettä kilometrien matkan.",
+   "text": "Kotipihan pistorasiasta tulee $230\\,\\text{V}$, mutta pellon yli kulkevien voimalinjojen johdoissa jännite on satoja kilovoltteja. Talvella kadun reunassa nousee höyryä kaukolämpökaivosta: maan alla kulkee kuumaa vettä kilometrien matkan.",
    "question": "Miksi energia siirretään näin, ja kuinka suuri osa siitä menee matkalla hukkaan?"
   },
   {
    "id": "kertaus",
    "stage": "herata",
    "type": "choice",
-   "title": "Kertaa: teho ja energia",
+   "title": "Kertaa: hyötysuhde",
    "optional": true,
-   "prompt": "Lämmitin käyttää tasaisesti $2{,}0\\,\\text{kW}$:n tehoa $3{,}0\\,\\text{h}$. Kuinka paljon energiaa se käyttää?",
+   "prompt": "Pumppu ottaa sähköenergiaa $8{,}0\\,\\text{kWh}$, ja siitä $6{,}0\\,\\text{kWh}$ muuttuu hyödylliseksi energiaksi. Kuinka suuri on pumpun hyötysuhde?",
    "choices": [
     {
-     "text": "$6{,}0\\,\\text{kWh}$, koska energia on teho kertaa aika: $2{,}0\\,\\text{kW} \\cdot 3{,}0\\,\\text{h}$.",
+     "text": "$0{,}75$, koska hyötysuhde on hyödyksi saatu energia jaettuna käytetyllä energialla: $6{,}0\\,\\text{kWh} : 8{,}0\\,\\text{kWh}$.",
      "correct": true,
-     "feedback": "Oikein. Teho kertoo energian siirtymisen nopeuden, $P = \\Delta E : \\Delta t$, joten tasaisella teholla $\\Delta E = P \\cdot \\Delta t = 2{,}0\\,\\text{kW} \\cdot 3{,}0\\,\\text{h} = 6{,}0\\,\\text{kWh}$ (luku *Teho*). Tänään tehosta ja ajasta lasketaan myös verkossa häviävä energia."
+     "feedback": "Oikein. Hyötysuhde on hyödyksi saadun energian osuus käytetystä energiasta, $\\eta = E_\\text{hyöty} : E_\\text{käytetty} = 6{,}0 : 8{,}0 = 0{,}75$ eli $75\\,\\%$ (luku *Hyötysuhde*). Samalla tavalla lasketaan tänään siirron hyötysuhde: perille tuleva energia jaetaan lähtevällä."
     },
     {
-     "text": "$0{,}67\\,\\text{kWh}$, koska energia on teho jaettuna ajalla.",
-     "feedback": "Teho on energia jaettuna ajalla, ei toisin päin. Energia saadaan kertomalla: $E = P \\cdot t$ (luku *Teho*)."
+     "text": "$1{,}33$, koska käytetty energia jaetaan hyödyllä: $8{,}0\\,\\text{kWh} : 6{,}0\\,\\text{kWh}$.",
+     "feedback": "Hyötysuhde ei voi olla yli $1$, sillä hyötyä ei voi saada enemmän kuin energiaa käytetään. Jakajana on aina käytetty energia, ei hyöty."
     },
     {
-     "text": "$5{,}0\\,\\text{kWh}$, koska luvut lasketaan yhteen.",
-     "feedback": "Teho ja aika ovat eri suureita, joten niitä ei lasketa yhteen. Energia on niiden tulo, $2{,}0\\,\\text{kW} \\cdot 3{,}0\\,\\text{h}$."
+     "text": "$0{,}25$, koska hyötysuhde on häviävän energian osuus.",
+     "feedback": "$0{,}25$ on häviön osuus, $2{,}0 : 8{,}0$. Hyötysuhde kertoo hyödyksi saadun osuuden, joten se on $1 - 0{,}25 = 0{,}75$."
     },
     {
-     "text": "$6{,}0\\,\\text{kW}$, koska tulos pysyy kilowatteina.",
-     "feedback": "Teho ja aika kerrottuna antaa energian, jonka yksikkö on kilowattitunti, ei teho. Kilowatti kertaa tunti on kilowattitunti."
+     "text": "$2{,}0\\,\\text{kWh}$, koska hyötysuhde on käytetyn ja hyödyn erotus.",
+     "feedback": "Erotus $8{,}0\\,\\text{kWh} - 6{,}0\\,\\text{kWh} = 2{,}0\\,\\text{kWh}$ on häviävä energia. Hyötysuhde on osuus ilman yksikköä, ei energia."
     }
    ]
   },
@@ -52,7 +52,7 @@
    "type": "choice",
    "title": "Ennuste 1: kuinka paljon sähköä häviää",
    "justify": true,
-   "prompt": "Voimalaitos syöttää sähköä verkkoon, ja se kulkee kantaverkon, alueverkon ja jakeluverkon kautta pistorasiaan. Kuinka suuri osa verkkoon syötetystä sähköenergiasta arviolta häviää Suomessa matkalla?",
+   "prompt": "Voimalaitos syöttää sähköä verkkoon, ja se kulkee kantaverkon ja jakeluverkon kautta pistorasiaan. Kuinka suuri osa verkkoon syötetystä sähköenergiasta arviolta häviää Suomessa matkalla?",
    "choices": [
     {
      "text": "Noin $0{,}1\\,\\%$, koska sähköverkko on lähes häviötön.",
@@ -65,11 +65,11 @@
     },
     {
      "text": "Noin $25\\,\\%$, koska pitkällä matkalla neljännes energiasta ehtii hävitä.",
-     "feedback": "Näin suuri häviö olisi mahdoton kantaa: sähköverkko on suunniteltu niin, että suurin osa energiasta tulee perille. Siksi pitkät matkat siirretään korkealla jännitteellä, joka pitää häviön pienenä, noin $4\\,\\%$:ssa."
+     "feedback": "Jos neljännes lähtevästä energiasta muuttuisi lämmöksi, joka neljäs voimalaitosten tuottama yksikkö lämmittäisi vain johtimia ja muuntajia. Pitkät matkat siirretään korkealla jännitteellä juuri siksi, että häviö pysyy pienenä, Suomessa noin $4\\,\\%$:ssa."
     },
     {
      "text": "Noin puolet, koska energia häviää aina vähintään puolittain.",
-     "feedback": "Energian siirrossa ei ole puolikasta sääntöä. Sähköverkon häviöt riippuvat jännitteestä, matkasta ja johtimista, ja Suomessa ne ovat noin $4\\,\\%$."
+     "feedback": "Jos puolet hukkuisi, voimalaitosten pitäisi tuottaa kaksinkertaisesti se, mitä käyttäjät tarvitsevat. Häviö ei ole kiinteä osuus vaan riippuu jännitteestä, matkasta ja johtimista, ja Suomessa se on noin $4\\,\\%$."
     }
    ]
   },
@@ -80,7 +80,7 @@
    "title": "Ennuste 2: miksi korkea jännite",
    "justify": true,
    "layout": "models",
-   "prompt": "Pitkät sähkölinjat käyttävät jännitteitä $110$–$400\\,\\text{kV}$. Mikä selitys sopii parhaiten?",
+   "prompt": "Pitkät sähkölinjat käyttävät jännitteitä $110\\text{–}400\\,\\text{kV}$. Mikä selitys sopii parhaiten?",
    "choices": [
     {
      "text": "Korkealla jännitteellä voi siirtää enemmän energiaa kuin matalalla, koska korkea jännite on voimakkaampaa sähköä.",
@@ -106,7 +106,7 @@
    "stage": "tutki",
    "type": "interpret",
    "title": "Kaukolämpö: kuinka paljon jää matkalle?",
-   "source": "measured",
+   "source": "statistics",
    "source_note": "Energiateollisuus, Kaukolämpötilasto 2024 (luvut pyöristetty)",
    "text": "Suomen kaukolämpöverkkoihin hankittiin vuonna 2024 lämpöä, ja asiakkaat käyttivät siitä osan. Erotus on pääosin verkon häviötä, joten tulos on arvio.\n\n| | Energia (TWh) |\n|---|---|\n| Verkkoon hankittu lämpö | 36,0 |\n| Asiakkaiden käyttämä lämpö | 32,7 |\n\nLaske ensin häviö terawattitunteina ja sitten sen osuus verkkoon hankitusta lämmöstä.",
    "question": {
@@ -134,12 +134,44 @@
    }
   },
   {
+   "id": "sahko",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Sähköverkko ja kaukolämpö rinnakkain",
+   "source": "statistics",
+   "source_note": "Energiateollisuus, Sähkövuosi 2024 ja Kaukolämpötilasto 2024 (luvut pyöristetty)",
+   "text": "Taulukossa on sähköverkon ja kaukolämpöverkon häviö vuonna 2024. Sähköverkon häviö on noin $4\\,\\%$ kulutuksesta, kaukolämmön luku on edellisestä aineistosta.\n\n| | Verkkoon (TWh) | Häviö (TWh) | Osuus |\n|---|---|---|---|\n| Sähköverkko | noin 83 | noin 3 | noin 4 % |\n| Kaukolämpöverkko | 36,0 | 3,3 | 9,2 % |\n\nVertaa häviötä energiana ja osuutena lähtevästä energiasta.",
+   "question": {
+    "type": "choice",
+    "prompt": "Mikä päätelmä taulukosta on oikea?",
+    "choices": [
+     {
+      "text": "Energiana häviöt ovat suunnilleen yhtä suuret, mutta kaukolämmössä häviö on yli kaksi kertaa suurempi osuus lähtevästä energiasta.",
+      "correct": true,
+      "feedback": "Oikein. Molemmissa verkoissa häviää noin $3\\,\\text{TWh}$, mutta sähköverkkoon syötetään yli kaksi kertaa niin paljon energiaa kuin kaukolämpöverkkoon, joten sähkön osuus on $4\\,\\%$ ja kaukolämmön $9{,}2\\,\\%$. Sähköverkon häviö on tästä syystä merkittävä, vaikka osuus on pieni."
+     },
+     {
+      "text": "Sähköverkon häviö on pienempi, koska sen prosentti on pienempi.",
+      "feedback": "Prosentti kertoo osuuden, ei energian määrää. Sähköverkkoon syötetään paljon enemmän energiaa, joten pienikin osuus on energiana noin $3\\,\\text{TWh}$, yhtä paljon kuin kaukolämmössä."
+     },
+     {
+      "text": "Kaukolämpöverkon häviö on suhteessa pienempi, koska siihen syötetään vähemmän energiaa.",
+      "feedback": "Osuus lasketaan jakamalla häviö lähtevällä energialla: $3{,}3 : 36{,}0 = 9{,}2\\,\\%$. Pienempi lähtevä energia tekee osuudesta suuremman, ei pienemmän."
+     },
+     {
+      "text": "Häviöprosentti on molemmissa sama, koska molemmissa häviää noin $3\\,\\text{TWh}$.",
+      "feedback": "Sama häviö energiana ei tarkoita samaa osuutta: osuus riippuu siitä, kuinka paljon energiaa verkkoon syötetään. Sähkössä $3 : 83 \\approx 4\\,\\%$ ja kaukolämmössä $3{,}3 : 36{,}0 = 9{,}2\\,\\%$."
+     }
+    ]
+   }
+  },
+  {
    "id": "jannite",
    "stage": "tutki",
    "type": "interpret",
    "title": "Sama teho eri jännitteillä",
    "source": "model",
-   "text": "Taulukossa on mallin laskemia esimerkkiarvoja: $100\\,\\text{MW}$:n teho siirretään $10\\,\\text{km}$:n matka samanlaisilla johtimilla kolmella eri jännitteellä. Arvot ovat suuruusluokkaesimerkkejä, eivät todellisen linjan mittauksia. Mitä suurempi jännite, sitä pienempi sähkövirta tarvitaan saman tehon siirtoon.\n\n| Jännite (kV) | Häviävä teho (MW) |\n|---|---|\n| 20 | 8,0 |\n| 110 | 0,26 |\n| 400 | 0,020 |\n\nLaske, kuinka monta prosenttia siirrettävästä tehosta häviää jännitteellä $20\\,\\text{kV}$, ja vertaa muihin.",
+   "text": "Taulukossa on mallin laskemia esimerkkiarvoja: $10\\,\\text{MW}$:n teho siirretään $10\\,\\text{km}$:n matka samanlaisilla johtimilla kolmella eri jännitteellä. Arvot ovat suuruusluokkaesimerkkejä, eivät todellisen linjan mittauksia. Mitä suurempi jännite, sitä pienempi sähkövirta tarvitaan saman tehon siirtoon.\n\n| Jännite (kV) | Häviävä teho (MW) |\n|---|---|\n| 20 | 0,80 |\n| 110 | 0,026 |\n| 400 | 0,0020 |\n\nPäättele taulukosta, kuinka monta prosenttia siirrettävästä tehosta häviää kullakin jännitteellä, ja vertaa niitä.",
    "question": {
     "type": "choice",
     "prompt": "Mikä päätelmä taulukosta on oikea?",
@@ -147,11 +179,11 @@
      {
       "text": "Kun jännite kasvaa, saman tehon siirrossa häviävä teho pienenee, ja häviö pienenee paljon enemmän kuin jännite kasvaa.",
       "correct": true,
-      "feedback": "Oikein. Jännite kasvaa $20\\,\\text{kV}$:sta $400\\,\\text{kV}$:iin eli $20$-kertaiseksi, mutta häviävä teho pienenee $8{,}0\\,\\text{MW}$:sta $0{,}020\\,\\text{MW}$:iin eli $400$-kertaa pienemmäksi: $8{,}0 : 0{,}020 = 400$. Jännitteellä $20\\,\\text{kV}$ häviää $8{,}0\\,\\%$ siirrettävästä tehosta, jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\%$."
+      "feedback": "Oikein. Jännite kasvaa $20\\,\\text{kV}$:sta $400\\,\\text{kV}$:iin eli $20$-kertaiseksi, mutta häviävä teho pienenee $0{,}80\\,\\text{MW}$:sta $0{,}0020\\,\\text{MW}$:iin eli $400$-kertaa pienemmäksi: $0{,}80 : 0{,}0020 = 400$. Jännitteellä $20\\,\\text{kV}$ häviää $8{,}0\\,\\%$ siirrettävästä $10\\,\\text{MW}$:n tehosta, jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\%$."
      },
      {
       "text": "Häviävä teho kasvaa, kun jännite kasvaa, koska korkea jännite on voimakkaampaa.",
-      "feedback": "Taulukon luvut menevät toisin päin: jännitteellä $20\\,\\text{kV}$ häviää $8{,}0\\,\\text{MW}$ ja jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\text{MW}$. Korkealla jännitteellä sähkövirta on pieni, ja pieni virta lämmittää johdinta vähän."
+      "feedback": "Taulukon luvut menevät toisin päin: jännitteellä $20\\,\\text{kV}$ häviää $0{,}80\\,\\text{MW}$ ja jännitteellä $400\\,\\text{kV}$ vain $0{,}0020\\,\\text{MW}$. Korkealla jännitteellä sähkövirta on pieni, ja pieni virta lämmittää johdinta vähän."
      },
      {
       "text": "Häviävä teho pienenee samassa suhteessa kuin jännite kasvaa, joten kaksinkertainen jännite puolittaa häviön.",
@@ -159,7 +191,7 @@
      },
      {
       "text": "Häviö on kaikilla jännitteillä käytännössä yhtä suuri, koska teho on sama.",
-      "feedback": "Siirrettävä teho on sama, mutta häviö ei: $8{,}0\\,\\text{MW}$, $0{,}26\\,\\text{MW}$ ja $0{,}020\\,\\text{MW}$ ovat hyvin eri suuruisia."
+      "feedback": "Siirrettävä teho on sama, mutta häviö ei: $0{,}80\\,\\text{MW}$, $0{,}026\\,\\text{MW}$ ja $0{,}0020\\,\\text{MW}$ ovat hyvin eri suuruisia."
      }
     ]
    }
@@ -170,12 +202,12 @@
    "type": "explain",
    "title": "Johtopäätös: miksi energia siirretään näin?",
    "prompt": "Kirjoita aineistojen perusteella: Miksi voimalinjoissa käytetään korkeaa jännitettä? Kuinka suuri osa energiasta häviää sähköverkossa ja kaukolämpöverkossa? Mitä häviölle tapahtuu energiana?",
-   "model": "Sama teho siirtyy korkealla jännitteellä pienemmällä sähkövirralla, ja johdin lämpenee virran kasvaessa. Mallin esimerkissä $100\\,\\text{MW}$:n siirrosta häviää jännitteellä $20\\,\\text{kV}$ $8{,}0\\,\\%$, mutta jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\%$, joten pitkät matkat siirretään korkealla jännitteellä. Suomessa sähköverkon häviö oli vuonna 2024 noin $4\\,\\%$ ja kaukolämpöverkon noin $9\\,\\%$ (Energiateollisuus). Kaukolämmön häviö on suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää ja lämpöä karkaa eristeen läpi koko matkalla. Häviö ei katoa vaan muuttuu lämmöksi ympäristöön, joten energia säilyy, mutta käyttäjä ei saa sitä hyötyyn.",
+   "model": "Sama teho siirtyy korkealla jännitteellä pienemmällä sähkövirralla, ja johdin lämpenee virran kasvaessa. Mallin esimerkissä $10\\,\\text{MW}$:n siirrosta häviää jännitteellä $20\\,\\text{kV}$ $8{,}0\\,\\%$, mutta jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\%$, joten pitkät matkat siirretään korkealla jännitteellä. Suomessa sähköverkon häviö oli vuonna 2024 noin $4\\,\\%$ ja kaukolämpöverkon noin $9\\,\\%$ (Energiateollisuus). Kaukolämmön häviö on suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää ja lämpöä karkaa eristeen läpi koko matkalla. Häviö ei katoa vaan muuttuu lämmöksi ympäristöön, joten energia säilyy, mutta käyttäjä ei saa sitä hyötyyn.",
    "criteria": [
     "Selitin, että korkealla jännitteellä sama teho siirtyy pienemmällä sähkövirralla ja siksi johdin lämpenee vähemmän.",
     "Käytin lukuja: sähköverkon häviö noin $4\\,\\%$ ja kaukolämmön noin $9\\,\\%$.",
     "Sanoin, että häviö on lämpöä ympäristöön eikä energia katoa.",
-    "Mainitsin, että taulukon $100\\,\\text{MW}$:n arvot olivat mallin esimerkkejä."
+    "Mainitsin, että taulukon $10\\,\\text{MW}$:n arvot olivat mallin esimerkkejä."
    ]
   },
   {
@@ -297,26 +329,26 @@
    "stage": "tarkista",
    "type": "numeric",
    "title": "2. Laskutehtävä",
-   "prompt": "Kaukolämpöverkon kautta asiakkaille tulee $455\\,\\text{MWh}$ lämpöä viikossa. Verkon hyötysuhde on $91\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon? Vastaa megawattitunteina.",
+   "prompt": "Vanhassa kaukolämpöverkossa asiakkaille tulee $375\\,\\text{MWh}$ lämpöä viikossa (esimerkkitilanne). Verkon hyötysuhde on $75\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon? Vastaa megawattitunteina.",
    "answer": 500,
    "unit": "MWh",
    "tolerance": 0.02,
    "hints": [
     "Hyötysuhde kertoo, kuinka suuri osa lähtevästä energiasta tulee perille.",
-    "$\\eta = E_\\text{perille} : E_\\text{lähtö}$, josta $E_\\text{lähtö} = E_\\text{perille} : \\eta$. Muuta $91\\,\\%$ desimaaliluvuksi.",
-    "$E_\\text{lähtö} = 455\\,\\text{MWh} : 0{,}91$."
+    "$\\eta = E_\\text{perille} : E_\\text{lähtö}$, josta $E_\\text{lähtö} = E_\\text{perille} : \\eta$. Muuta $75\\,\\%$ desimaaliluvuksi.",
+    "$E_\\text{lähtö} = 375\\,\\text{MWh} : 0{,}75$."
    ],
    "mistakes": [
     {
-     "value": 414,
+     "value": 281,
      "feedback": "Kerroit perille tulevan energian hyötysuhteella. Lähtevän energian pitää olla suurempi kuin perille tuleva, joten jaa hyötysuhteella."
     },
     {
-     "value": 496,
-     "feedback": "Lisäsit perille tulevaan energiaan $9\\,\\%$ siitä. Häviöprosentti lasketaan lähtevästä energiasta, ei perille tulevasta, joten jaa luvulla $0{,}91$."
+     "value": 469,
+     "feedback": "Lisäsit perille tulevaan energiaan $25\\,\\%$ siitä. Häviöprosentti lasketaan lähtevästä energiasta, ei perille tulevasta, joten jaa luvulla $0{,}75$."
     }
    ],
-   "solution": "**Annettu:** perille tuleva energia $E_\\text{perille} = 455\\,\\text{MWh}$ ja hyötysuhde $\\eta = 91\\,\\%$\n\n**Kysytty:** verkkoon syötettävä energia $E_\\text{lähtö}$ megawattitunteina\n\n**Periaate:** Hyötysuhde on perille tulevan energian osuus lähtevästä energiasta. Kun perille tuleva energia ja hyötysuhde tunnetaan, lähtevä energia saadaan jakamalla.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{perille}}{E_\\text{lähtö}}$, josta $E_\\text{lähtö} = \\dfrac{E_\\text{perille}}{\\eta}$\n\n**Muunnokset:** $91\\,\\% = 91 : 100 = 0{,}91$. Energian yksikkö pysyy megawattitunteina.\n\n**Sijoitus:** $E_\\text{lähtö} = \\dfrac{455\\,\\text{MWh}}{0{,}91} = 500\\,\\text{MWh}$\n\n**Vastaus:** $5{,}0 \\cdot 10^2\\,\\text{MWh}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $91\\,\\%$.\n\n**Järkevyys:** Häviö on $500\\,\\text{MWh} - 455\\,\\text{MWh} = 45\\,\\text{MWh}$ eli $9\\,\\%$ luvusta $500\\,\\text{MWh}$. Lähtevä energia on perille tulevaa suurempi, kuten pitääkin."
+   "solution": "**Annettu:** perille tuleva energia $E_\\text{perille} = 375\\,\\text{MWh}$ ja hyötysuhde $\\eta = 75\\,\\%$\n\n**Kysytty:** verkkoon syötettävä energia $E_\\text{lähtö}$ megawattitunteina\n\n**Periaate:** Hyötysuhde on perille tulevan energian osuus lähtevästä energiasta. Kun perille tuleva energia ja hyötysuhde tunnetaan, lähtevä energia saadaan jakamalla.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{perille}}{E_\\text{lähtö}}$, josta $E_\\text{lähtö} = \\dfrac{E_\\text{perille}}{\\eta}$\n\n**Muunnokset:** $75\\,\\% = 75 : 100 = 0{,}75$. Energian yksikkö pysyy megawattitunteina.\n\n**Sijoitus:** $E_\\text{lähtö} = \\dfrac{375\\,\\text{MWh}}{0{,}75} = 500\\,\\text{MWh}$\n\n**Vastaus:** $5{,}0 \\cdot 10^2\\,\\text{MWh}$, kaksi merkitsevää numeroa, koska hyötysuhde $75\\,\\%$ on epätarkin tieto.\n\n**Järkevyys:** Häviö on $500\\,\\text{MWh} - 375\\,\\text{MWh} = 125\\,\\text{MWh}$ eli $25\\,\\%$ luvusta $500\\,\\text{MWh}$. Lähtevä energia on perille tulevaa suurempi, kuten pitääkin."
   },
   {
    "id": "tarkistus-3",

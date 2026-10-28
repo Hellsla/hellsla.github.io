@@ -1,7 +1,7 @@
 [
   {
     "q": "Laite ottaa energiaa $500\\,\\text{J}$ ja antaa siitä hyötyenergiaa $350\\,\\text{J}$. Mikä on sen hyötysuhde ja mihin loput energiasta menee?",
-    "a": "$\\eta = \\dfrac{350\\,\\text{J}}{500\\,\\text{J}} = 0{,}70 = 70\\,\\%$. Loput $500\\,\\text{J} - 350\\,\\text{J} = 150\\,\\text{J}$ on häviöitä, yleensä lämpöä, joka leviää ympäristöön. Energiaa ei ole kadonnut, koska $350\\,\\text{J} + 150\\,\\text{J} = 500\\,\\text{J}$."
+    "a": "$\\eta = \\dfrac{350\\,\\text{J}}{500\\,\\text{J}} = 0{,}70 = 0{,}70 \\cdot 100\\,\\% = 70\\,\\%$. Loput $500\\,\\text{J} - 350\\,\\text{J} = 150\\,\\text{J}$ on häviöitä, yleensä lämpöä, joka leviää ympäristöön. Energiaa ei ole kadonnut, koska $350\\,\\text{J} + 150\\,\\text{J} = 500\\,\\text{J}$."
   },
   {
     "q": "Laitteen hyötysuhde on $25\\,\\%$ ja se ottaa tehon $200\\,\\text{W}$. Kuinka suuri on hyötyteho ja kuinka suuri häviöteho?",
