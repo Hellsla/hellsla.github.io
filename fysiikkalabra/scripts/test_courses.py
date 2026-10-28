@@ -80,8 +80,16 @@ expect("init-lesson writes FY4's slot into meta.json", code == 0 and meta["cours
 # 3. the fixture body: fy3-2 relabelled, simulation and picture in FY4's folders
 src = T / "content/fi/FY3/fy3-2"; src_code = T / "lessons/FY3/fy3-2"
 def text_file(d, n): return d / "exercises" / n if n in ("exercises.json", "solutions.md") else d / n   # courses.lesson_file
+sys.path.insert(0, str(HERE)); from lint_lesson import PLAIN_QTY, strip_math_and_svg
+def maths_quantities(text):
+    """fy3-2 predates the 2026-10-28 rule that a number with its unit is maths; a new lesson meets it ($40$ N)."""
+    plain = re.sub(r'aria-label="[^"]*"', lambda m: " " * len(m.group(0)), strip_math_and_svg(text))
+    for m in reversed(list(PLAIN_QTY.finditer(plain))):
+        n = re.match(r"[\d ,]*\d", m.group(0)).group(0)
+        text = text[:m.start()] + "$" + n.replace(" ", "").replace(",", "{,}") + "$" + text[m.start() + len(n):]
+    return text
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(text_file(src, n).read_text().replace("fy3-2", "fy4-1"))
+    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(text_file(src, n).read_text().replace("fy3-2", "fy4-1")))
 for n in ("answers.py", "sim-spec.md"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
