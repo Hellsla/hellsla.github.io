@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, i18n, inquiry, mathlayout
+import courses, i18n, inquiry, mathlayout, practice
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -48,7 +48,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
@@ -369,19 +369,44 @@ def build_language(lang):
                 if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
                                                                      re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)   # a ### subheading under its section heading
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
-                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
+                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>',
+                     "selfcheck": practice.selfcheck_html(inq.get("learn"), lambda t: nbsp_units(render_md(t)), bool(ex))}   # Arvioi osaamistasi (teacher 2026-10-28)
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             main = f'<article id="teoria" class="inquiry">{body}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main)
-                .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
+                .replace("{{scripts}}", '<script src="inquiry.js"></script><script src="selfassess.js"></script>' if inq else "")
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
         (out / name).write_text(rebase(html))
         built.setdefault(meta["course"], []).append(meta)
         print("built", meta["id"], f"({meta['state']})")
+
+    # Sovella itsenäisesti: one page per course with module-end tasks (scripts/practice.py, teacher 2026-10-28), published
+    # like a lesson only when both its reviews pass; a preview builds it with `build.py <COURSE>-sovella` or --all.
+    practice_built = {}
+    for code in practice.courses_with(lang):
+        pname = practice.page_name(code)
+        if only and only != pname[:-5]: continue
+        ps = practice.status(code, lang)
+        if ps["state"] != "reviewed" and not (only or build_all):
+            if (LIVE / out.relative_to(SITE) / pname).is_file():
+                print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {pname} is on the live site but its reviews are not current; this build removes it")
+            continue
+        body, ptoc = practice.render(code, lang, lambda t: nbsp_units(render_md(t)), solution_html, T("practice.title"))
+        ptitle = T("practice.title")
+        html = (texts(tpl).replace("{{title}}", esc(ptitle)).replace("{{course}}", code).replace("{{notice}}", notice("reviewed" if ps["state"] == "reviewed" else "draft"))
+                .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
+                .replace("{{toc}}", ptoc).replace("{{main}}", f'<article id="teoria" class="inquiry practice">{body}</article>')
+                .replace("{{scripts}}", '<script src="selfassess.js"></script>')
+                .replace("{{description}}", esc(T("practice.description", code=code, title=course_text(code, curriculum[code])["title"]))).replace("{{url}}", URL + pname)
+                .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(pname)))
+        (out / pname).write_text(rebase(html))
+        tasks = practice.load(code, lang)["tasks"]
+        practice_built[code] = T("practice.course_count", n=len(tasks), points=sum(practice.total(t) for t in tasks if t.get("kind") != "own"))
+        print("built", pname, f"({ps['state']})")
 
     # Course pages and front page. Every module in curriculum.json gets a page; lessons built in this run are
     # links, the rest are listed as "tulossa" so students see the whole course and nav links always resolve.
@@ -412,7 +437,9 @@ def build_language(lang):
         body = (f'<span class="eyebrow">{code} · {T("site.credits", n=mod.get("op", ""))} · {kind}</span><h1>{esc(mod["title"])}</h1>'
                 f'<p class="lead">{T("site.lessons_ready", done=done, n=len(slots))}</p>'
                 + (f'<h2>{T("site.course_goals")}</h2><p>{T("site.course_goals_lead")}</p><ul>{goals}</ul>' if goals else "")
-                + f'<h2>{T("site.course_lessons")}</h2><ol class="lessons">{items}</ol>')
+                + f'<h2>{T("site.course_lessons")}</h2><ol class="lessons">{items}</ol>'
+                + (f'<h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
+                   f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul>' if code in practice_built else ""))
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
         (out / f"{code}.html").write_text(page(T("site.course_title", code=code, title=mod["title"]), body,
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", desc))
@@ -440,7 +467,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids])
+    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids] + [practice.page_name(c) for c in practice_built])
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
@@ -452,7 +479,7 @@ for lang in LANGS: build_language(lang)
 link_languages()
 i18n.set_lang(i18n.SOURCE)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js"] + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
