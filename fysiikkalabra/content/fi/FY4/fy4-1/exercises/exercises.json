@@ -3,7 +3,7 @@
     {
       "id": "fy4-1-L1-01",
       "level": 1,
-      "text": "Juoksija kulkee tasaisella nopeudella suoraa rataa pitkin 120 m:n matkan 15 s:ssa liikkeen suuntaan, joka on valittu positiiviseksi. Mikä on juoksijan nopeus?",
+      "text": "Juoksija kulkee tasaisella nopeudella suoraa rataa pitkin $120\\,\\text{m}$:n matkan $15\\,\\text{s}$:ssa liikkeen suuntaan, joka on valittu positiiviseksi. Mikä on juoksijan nopeus?",
       "answer": 8.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy4-1-L1-02",
       "level": 1,
-      "text": "Kärry on $x$-akselilla ensin paikassa 12 m ja liikkuu sitten paikkaan −5,0 m. Mikä on kärryn siirtymä? Anna vastaus etumerkkeineen.",
+      "text": "Kärry on $x$-akselilla ensin paikassa $12\\,\\text{m}$ ja liikkuu sitten paikkaan $-5{,}0\\,\\text{m}$. Mikä on kärryn siirtymä? Anna vastaus etumerkkeineen.",
       "answer": -17,
       "unit": "m",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy4-1-L1-03",
       "level": 1,
-      "text": "Kärry liikkuu tasaisella 3,5 m/s:n nopeudella positiiviseen suuntaan 12 s ajan. Kuinka suuri on kärryn siirtymä?",
+      "text": "Kärry liikkuu tasaisella $3{,}5\\,\\text{m/s}$:n nopeudella positiiviseen suuntaan $12\\,\\text{s}$ ajan. Kuinka suuri on kärryn siirtymä?",
       "answer": 42,
       "unit": "m",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy4-1-L1-05",
       "level": 1,
-      "text": "Kävelijä on hetkellä $t = 0\\,\\text{s}$ paikassa 15 m ja kulkee tasaisesti nopeudella 1,5 m/s positiiviseen suuntaan. Missä paikassa hän on hetkellä $t = 20\\,\\text{s}$?",
+      "text": "Kävelijä on hetkellä $t = 0\\,\\text{s}$ paikassa $15\\,\\text{m}$ ja kulkee tasaisesti nopeudella $1{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Missä paikassa hän on hetkellä $t = 20\\,\\text{s}$?",
       "answer": 45,
       "unit": "m",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy4-1-L2-01",
       "level": 2,
-      "text": "Auto ajaa suoraa tietä tasaisella nopeudella 90 km/h. Kuinka pitkän matkan se kulkee 12 s:ssa? Anna vastaus metreinä.",
+      "text": "Auto ajaa suoraa tietä tasaisella nopeudella $90\\,\\text{km/h}$. Kuinka pitkän matkan se kulkee $12\\,\\text{s}$:ssa? Anna vastaus metreinä.",
       "answer": 300,
       "unit": "m",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy4-1-L2-02",
       "level": 2,
-      "text": "Juoksija kulkee suoraa polkua tasaisella 4,0 m/s:n nopeudella. Kuinka monta minuuttia hänellä kestää 1,2 km:n matka?",
+      "text": "Juoksija kulkee suoraa polkua tasaisella $4{,}0\\,\\text{m/s}$:n nopeudella. Kuinka monta minuuttia hänellä kestää $1{,}2\\,\\text{km}$:n matka?",
       "answer": 5.0,
       "unit": "min",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy4-1-L2-03",
       "level": 2,
-      "text": "Kärry on hetkellä $t = 2{,}0\\,\\text{s}$ paikassa 18 m ja hetkellä $t = 7{,}0\\,\\text{s}$ paikassa 3,0 m. Kärry liikkuu tasaisesti. Laske kärryn nopeus etumerkkeineen.",
+      "text": "Kärry on hetkellä $t = 2{,}0\\,\\text{s}$ paikassa $18\\,\\text{m}$ ja hetkellä $t = 7{,}0\\,\\text{s}$ paikassa $3{,}0\\,\\text{m}$. Kärry liikkuu tasaisesti. Laske kärryn nopeus etumerkkeineen.",
       "answer": -3.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy4-1-L2-04",
       "level": 2,
-      "text": "Kärry on hetkellä $t = 0\\,\\text{s}$ paikassa −24 m ja kulkee tasaisesti nopeudella 1,5 m/s positiiviseen suuntaan. Milloin kärry on origossa eli paikassa $x = 0$?",
+      "text": "Kärry on hetkellä $t = 0\\,\\text{s}$ paikassa $-24\\,\\text{m}$ ja kulkee tasaisesti nopeudella $1{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Milloin kärry on origossa eli paikassa $x = 0$?",
       "answer": 16,
       "unit": "s",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy4-1-L3-01",
       "level": 3,
-      "text": "Pyöräilijä ajaa suoraa tietä itään 6,0 km ajassa 20 min ja kääntyy sitten heti takaisin ajaen saman 6,0 km:n matkan länteen ajassa 30 min. Laske koko matkan keskivauhti eli kuljettu matka jaettuna kuluneella ajalla. Anna vastaus yksikössä m/s.",
+      "text": "Pyöräilijä ajaa suoraa tietä itään $6{,}0\\,\\text{km}$ ajassa $20\\,\\text{min}$ ja kääntyy sitten heti takaisin ajaen saman $6{,}0\\,\\text{km}$:n matkan länteen ajassa $30\\,\\text{min}$. Laske koko matkan keskivauhti eli kuljettu matka jaettuna kuluneella ajalla. Anna vastaus yksikössä m/s.",
       "answer": 4.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy4-1-L3-02",
       "level": 3,
-      "text": "Aino ja Eeva lähtevät samaan aikaan kävelemään toisiaan kohti samalla suoralla. Aino lähtee paikasta 0 ja kulkee nopeudella 1,5 m/s positiiviseen suuntaan. Eeva lähtee paikasta 90 m ja kulkee nopeudella −1,2 m/s. Missä paikassa he kohtaavat?",
+      "text": "Aino ja Eeva lähtevät samaan aikaan kävelemään toisiaan kohti samalla suoralla. Aino lähtee paikasta 0 ja kulkee nopeudella $1{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Eeva lähtee paikasta $90\\,\\text{m}$ ja kulkee nopeudella $-1{,}2\\,\\text{m/s}$. Missä paikassa he kohtaavat?",
       "answer": 50,
       "unit": "m",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy4-1-L3-03",
       "level": 3,
-      "text": "Robotin $(t, x)$-kuvaaja koostuu kolmesta suorasta osasta: välillä 0–10 s paikka kasvaa arvosta 0 arvoon 30 m, välillä 10–20 s robotti on paikallaan ja välillä 20–40 s paikka pienenee arvoon 10 m. Mikä on robotin keskinopeus koko 40 s:n ajalta? Anna vastaus etumerkkeineen.",
+      "text": "Robotin $(t, x)$-kuvaaja koostuu kolmesta suorasta osasta: välillä 0–$10\\,\\text{s}$ paikka kasvaa arvosta 0 arvoon $30\\,\\text{m}$, välillä 10–$20\\,\\text{s}$ robotti on paikallaan ja välillä 20–$40\\,\\text{s}$ paikka pienenee arvoon $10\\,\\text{m}$. Mikä on robotin keskinopeus koko $40\\,\\text{s}$:n ajalta? Anna vastaus etumerkkeineen.",
       "answer": 0.25,
       "unit": "m/s",
       "tolerance": 0.02

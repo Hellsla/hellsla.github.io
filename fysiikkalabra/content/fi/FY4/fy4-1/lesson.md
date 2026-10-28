@@ -215,7 +215,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Ensimmäisten 40 sekunnin aikana paikka kasvoi 100 m, joten seuraavien 20 sekunnin aikana se kasvaa puolet siitä, 50 m. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus 2,5 m/s on noin 9 km/h, joka on hölkän vauhti. Nopeus on positiivinen, koska kuvaaja nousee.
+**Järkevyys.** Ensimmäisten 40 sekunnin aikana paikka kasvoi $100\,\text{m}$, joten seuraavien 20 sekunnin aikana se kasvaa puolet siitä, $50\,\text{m}$. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus $2{,}5\,\text{m/s}$ on noin $9\,\text{km/h}$, joka on hölkän vauhti. Nopeus on positiivinen, koska kuvaaja nousee.
 
 ## Yleinen virhekäsitys
 $(t,x)$-kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa. Toinen virhe on pitää negatiivista nopeutta hitaana nopeutena. Etumerkki kertoo vain suunnan: nopeus $-3\,\text{m/s}$ on suuruudeltaan suurempi kuin $+2\,\text{m/s}$. Kolmas virhe on päätellä paikasta nopeus: kappale voi olla edellä ja liikkua silti hitaammin.

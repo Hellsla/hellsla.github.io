@@ -8,7 +8,7 @@
     "a": "Kulmakerroin on nopeus. Jyrkemmin nouseva suora kuuluu suuremmalle nopeudelle positiiviseen suuntaan. Laskevan suoran kulmakerroin on negatiivinen, joten kolmas kärry liikkuu negatiiviseen suuntaan."
   },
   {
-    "q": "Kävelet suoraa katua 100 m itään ja palaat saman matkan takaisin lähtöpaikkaan. Mikä on kuljettu matka, siirtymä ja keskinopeus?",
-    "a": "Matka on 200 m, siirtymä on 0 ja keskinopeus $v_\\text{ka} = \\Delta x / \\Delta t = 0$. Siirtymä riippuu vain alku- ja loppupaikasta, ei reitistä."
+    "q": "Kävelet suoraa katua $100\\,\\text{m}$ itään ja palaat saman matkan takaisin lähtöpaikkaan. Mikä on kuljettu matka, siirtymä ja keskinopeus?",
+    "a": "Matka on $200\\,\\text{m}$, siirtymä on 0 ja keskinopeus $v_\\text{ka} = \\Delta x / \\Delta t = 0$. Siirtymä riippuu vain alku- ja loppupaikasta, ei reitistä."
   }
 ]

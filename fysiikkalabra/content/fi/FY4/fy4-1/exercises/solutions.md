@@ -6,7 +6,7 @@
 **Muunnokset:** Matka on metreinä ja aika sekunteina, joten tulos tulee suoraan yksikössä $\text{m/s}$. Muunnosta ei tarvita.
 **Sijoitus:** $v = \dfrac{120\,\text{m}}{15\,\text{s}} = 8{,}0\,\text{m/s}$
 **Vastaus:** $8{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $15\,\text{s}$ (matka $120\,\text{m}$ ei rajoita tarkemmin).
-**Järkevyys:** Arvio: $\dfrac{120\,\text{m}}{15\,\text{s}}$ on 8 m sekunnissa, ja 15 s:ssa $8\,\text{m/s} \cdot 15\,\text{s} = 120\,\text{m}$, joten laskun voi tarkistaa takaperin. Nopeus $8{,}0\,\text{m/s} \approx 29\,\text{km/h}$ on pikajuoksijan vauhtia, joten 120 m:n matkalla se on mahdollinen. Etumerkki on positiivinen, koska liike on positiiviseen suuntaan.
+**Järkevyys:** Arvio: $\dfrac{120\,\text{m}}{15\,\text{s}}$ on $8\,\text{m}$ sekunnissa, ja $15\,\text{s}$:ssa $8\,\text{m/s} \cdot 15\,\text{s} = 120\,\text{m}$, joten laskun voi tarkistaa takaperin. Nopeus $8{,}0\,\text{m/s} \approx 29\,\text{km/h}$ on pikajuoksijan vauhtia, joten $120\,\text{m}$:n matkalla se on mahdollinen. Etumerkki on positiivinen, koska liike on positiiviseen suuntaan.
 
 ## fy4-1-L1-02
 **Annettu:** alkupaikka $x_1 = 12\,\text{m}$, loppupaikka $x_2 = -5{,}0\,\text{m}$
@@ -26,7 +26,7 @@
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja aika sekunteina, joten sekunnit supistuvat ja tulos on metreinä. Muunnosta ei tarvita.
 **Sijoitus:** $\Delta x = 3{,}5\,\text{m/s} \cdot 12\,\text{s} = 42\,\text{m}$
 **Vastaus:** $42\,\text{m}$, kaksi merkitsevää numeroa kuten molemmissa lähtöarvoissa ($3{,}5\,\text{m/s}$ ja $12\,\text{s}$).
-**Järkevyys:** Yksikkö on oikein: $\text{m/s} \cdot \text{s} = \text{m}$. Arvio: noin $3\,\text{m/s} \cdot 12\,\text{s} = 36\,\text{m}$, joten $42\,\text{m}$ on oikeaa suuruusluokkaa. Nopeus $3{,}5\,\text{m/s}$ vastaa noin $13\,\text{km/h}$, eli hölkkää, ja 12 s:ssa hölkkääjä kulkee muutaman kymmenen metriä. Siirtymä on positiivinen, koska liike on positiiviseen suuntaan.
+**Järkevyys:** Yksikkö on oikein: $\text{m/s} \cdot \text{s} = \text{m}$. Arvio: noin $3\,\text{m/s} \cdot 12\,\text{s} = 36\,\text{m}$, joten $42\,\text{m}$ on oikeaa suuruusluokkaa. Nopeus $3{,}5\,\text{m/s}$ vastaa noin $13\,\text{km/h}$, eli hölkkää, ja $12\,\text{s}$:ssa hölkkääjä kulkee muutaman kymmenen metriä. Siirtymä on positiivinen, koska liike on positiiviseen suuntaan.
 
 ## fy4-1-L1-04
 **Annettu:** suoran pisteet $(t_1;\, x_1) = (0\,\text{s};\, 4{,}0\,\text{m})$ ja $(t_2;\, x_2) = (10\,\text{s};\, 24\,\text{m})$
@@ -87,7 +87,7 @@
 **Muunnokset:** Paikat ovat metreinä ja nopeus yksikössä $\text{m/s}$, joten aika tulee suoraan sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $t = \dfrac{0 - (-24\,\text{m})}{1{,}5\,\text{m/s}} = \dfrac{24\,\text{m}}{1{,}5\,\text{m/s}} = 16\,\text{s}$
 **Vastaus:** $16\,\text{s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa $24\,\text{m}$ ja $1{,}5\,\text{m/s}$.
-**Järkevyys:** Kärry on origon negatiivisella puolella ja liikkuu positiiviseen suuntaan, joten se saapuu origoon, ja aika on positiivinen. Takaisinlasku: $-24\,\text{m} + 1{,}5\,\text{m/s} \cdot 16\,\text{s} = -24\,\text{m} + 24\,\text{m} = 0$. Arvio: 1,5 m/s on noin 1 m jokaista 0,7 sekuntia kohden, ja 24 m vie noin 16 s.
+**Järkevyys:** Kärry on origon negatiivisella puolella ja liikkuu positiiviseen suuntaan, joten se saapuu origoon, ja aika on positiivinen. Takaisinlasku: $-24\,\text{m} + 1{,}5\,\text{m/s} \cdot 16\,\text{s} = -24\,\text{m} + 24\,\text{m} = 0$. Arvio: $1{,}5\,\text{m/s}$ on noin $1\,\text{m}$ jokaista 0,7 sekuntia kohden, ja $24\,\text{m}$ vie noin $16\,\text{s}$.
 
 ## fy4-1-L3-01
 **Annettu:** itään $s_1 = 6{,}0\,\text{km}$ ajassa $\Delta t_1 = 20\,\text{min}$ ja länteen $s_2 = 6{,}0\,\text{km}$ ajassa $\Delta t_2 = 30\,\text{min}$
