@@ -56,7 +56,7 @@
       "choices": [
         {
           "text": "A day's food, because it gives a person the strength to be active all day.",
-          "feedback": "The table values refute this: a day's food is about $10\\,\\text{MJ}$ and a litre of petrol about $32\\,\\text{MJ}$. Being able to keep going does not tell the amount of energy, because the body turns a large part of the energy of food into heat."
+          "feedback": "The table values refute this: a day's food is about $10\\,\\text{MJ}$ and a litre of petrol about $32\\,\\text{MJ}$. Being able to keep going does not show how much energy there is, because the body turns a large part of the energy of food into heat."
         },
         {
           "text": "A litre of petrol, about three times as much.",
@@ -65,7 +65,7 @@
         },
         {
           "text": "The same, because you can travel about the same distance with either.",
-          "feedback": "The values refute this: $32\\,\\text{MJ}$ and $10\\,\\text{MJ}$. Distance does not tell the amount of energy, because a large part of the energy of fuel turns into heat in the engine of the car."
+          "feedback": "The values refute this: $32\\,\\text{MJ}$ and $10\\,\\text{MJ}$. Distance does not show how much energy there is, because a large part of the energy of fuel turns into heat in the engine of the car."
         }
       ]
     },
@@ -272,7 +272,7 @@
         },
         {
           "value": 351,
-          "feedback": "You subtracted only the heat of the grid, $360\\,\\text{GJ} - 9\\,\\text{GJ}$. The energy used by consumers, $300\\,\\text{GJ}$, must also be removed before what is left for the battery."
+          "feedback": "You subtracted only the heat of the grid, $360\\,\\text{GJ} - 9\\,\\text{GJ}$. The energy used by consumers, $300\\,\\text{GJ}$, must also be subtracted to get the energy left for the battery."
         }
       ],
       "solution": "**Given:** electrical energy produced $E_\\text{produced} = 360\\,\\text{GJ}$, heat in the grid $E_\\text{heat} = 9\\,\\text{GJ}$, consumers $E_\\text{use} = 0.300\\,\\text{TJ}$\n\n**Find:** energy stored in the battery $E_\\text{battery}$ in gigajoules\n\n**Principle:** Energy is conserved: the energy produced is divided into heat, the consumers and the battery. Nothing disappears, so the parts together equal the energy produced.\n\n**Formula:** $E_\\text{produced} = E_\\text{heat} + E_\\text{use} + E_\\text{battery}$, so $E_\\text{battery} = E_\\text{produced} - E_\\text{heat} - E_\\text{use}$\n\n**Conversions:** Replace the terajoule with its value: $0.300\\,\\text{TJ} = 0.300 \\cdot 1000\\,\\text{GJ} = 300\\,\\text{GJ}$.\n\n**Substitution:** $E_\\text{battery} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ} = 51\\,\\text{GJ}$\n\n**Answer:** $51\\,\\text{GJ}$, to the accuracy of a whole gigajoule: in a subtraction the least precise value decides the accuracy, and all the data ($360\\,\\text{GJ}$, $9\\,\\text{GJ}$ and $0.300\\,\\text{TJ} = 300\\,\\text{GJ}$) are known to the accuracy of a gigajoule.\n\n**Reasonableness:** A small part of the energy produced is left for the battery, and the sum is correct: $9\\,\\text{GJ} + 300\\,\\text{GJ} + 51\\,\\text{GJ} = 360\\,\\text{GJ}$. The heat in the grid is the smallest item, which fits the fact that transmission losses are small."

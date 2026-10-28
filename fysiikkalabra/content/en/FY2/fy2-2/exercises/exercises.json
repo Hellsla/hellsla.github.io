@@ -87,7 +87,7 @@
     {
       "id": "fy2-2-L3-02",
       "level": 3,
-      "text": "In the reactor of a nuclear power plant unit, thermal energy of $370\\,\\text{TJ}$ is released per day. Of this, $140\\,\\text{TJ}$ turns into electricity, and the rest is carried into the sea by the cooling water. Heating a detached house takes, for example, $72\\,\\text{GJ}$ per year. For how many detached houses does the energy transferred to the sea in one day correspond to a year's heating?",
+      "text": "In the reactor of a nuclear power plant unit, thermal energy of $370\\,\\text{TJ}$ is released per day. Of this, $140\\,\\text{TJ}$ turns into electricity, and the rest is carried into the sea by the cooling water. Heating a detached house takes, for example, $72\\,\\text{GJ}$ per year. The energy transferred to the sea in one day corresponds to a year's heating for how many detached houses?",
       "answer": 3200,
       "unit": "kpl",
       "tolerance": 0.02

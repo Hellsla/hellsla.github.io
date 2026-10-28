@@ -95,7 +95,7 @@ missä J on joule, kJ kilojoule, MJ megajoule, GJ gigajoule ja TJ terajoule. Meg
 
 Muunnos tehdään näin: korvaa etuliite sen arvolla. Esimerkki: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J} = 2500\,\text{J}$. Toiseen suuntaan luku kirjoitetaan etuliitteen avulla: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Energioita lasketaan yhteen vain samassa yksikössä. Muunna ne siis ensin samaan yksikköön.
 
-Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymmenkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*). Joskus kahden energian kertaluku on hyvin erilainen. Silloin vertailuun riittää yksi jakolasku. Esimerkki: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
+Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymmenkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*). Joskus kahden energian suuruusluokka on hyvin erilainen. Silloin vertailuun riittää yksi jakolasku. Esimerkki: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
 
 <svg data-fig="tikapuut" viewBox="0 0 600 372" role="img" aria-label="Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin ja yli. Jokainen väli on kymmenkertainen. Omena metrin ylös on noin 1 J. Palava tulitikku on noin 1 kJ. Päivän ruoka on noin 10 MJ. 50 litran bensiinitankki on noin 1,6 GJ. Ydinvoimala Olkiluoto 3 tuottaa vuorokaudessa noin 140 TJ sähköä." style="max-width:100%;font-size:24px">
   <line x1="66" y1="292" x2="574" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
