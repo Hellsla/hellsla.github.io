@@ -1,8 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: da2cc58228b58e6a
+VERDICT: PASS
+CONTENT-HASH: 54faa4daccae4100
+
 ## Blocking
-- inquiry.json:301-307 (transfer task hints 2-3 and the mistake feedback for 1092) — the touched lines teach the km/h conversion as a formula: "jaa luku 3,6:lla", `(21,6 : 3,6)\,\text{m/s}`. The teacher's rule is conversion by substitution for understanding: write 1 km/h = 1000 m / 3600 s, so `21{,}6\,\text{km/h} = 21{,}6\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 6{,}0\,\text{m/s}`. Hint 2 should say "kirjoita km:n ja h:n paikalle niiden arvot m:ssä ja s:ssa", not "jaa 3,6:lla". The same factor-first style is in lesson.md:129 ("1 m/s = 3,6 km/h") and in the `solution` Muunnokset (line 314, `\dfrac{21{,}6}{3{,}6}`); fix them together.
+(none)
+
 ## Polish
-- The new parentheses `(21{,}6 : 3{,}6)` are correct and read well; keep them if the conversion is rewritten.
+- lesson.md:131 (Yksiköt) and inquiry.json siirto — the km/h → m/s substitution is now correct and taught once with a worked chain (72 km/h = 72·1000 m : 3600 s). The reverse direction appears unexplained in the siirto solution Järkevyys ("6 m/s on noin 22 km/h"). Add "koska 1 m/s on 3600 m tunnissa eli 3,6 km/h" or drop the km/h figure.
+- lesson.md Esimerkki, Yksikkömuunnokset — "jakamalla luvulla 149 597 870,7 km/AU" is a factor step; by substitution: "1 km = 1/149 597 870,7 AU". Works as is for a 17-year-old; consider the substitution wording for consistency.
+- inquiry.json ennuste-2 prompt gives the 2,0 s value (10 m) before asking for 4,0 s; fine as a scaffold, but the "20 m" lure is then very tempting. Keep.
+
 ## Checked
-batch delta review: diff judged in context; arithmetic correct (21,6 : 3,6 = 6,0), but the conversion method conflicts with the substitution rule above.
+- Round-2 blocker fixed: no "3,6", "jaa 3,6:lla" or `(21,6 : 3,6)` left in lesson.md, inquiry.json, exit ticket; hints, mistake feedback (1092 m = 120 + 21,6·45) and solution all use 1 km = 1000 m, 1 h = 3600 s. 21,6·1000 : 3600 = 6,0 m/s, answer 390 m.
+- Teacher's notation: products with \cdot, ":" for quotients in text and checks, no ×; display fractions only in formulas and the substitution chain.
+- Learning path: retrieval of slope, two predictions (shape; doubling time with s0 ≠ 0) before the experiments, which can refute them; the Voyager hook is answered by the example and the reflect item.
+- Slot goals (linear model, direct proportionality, s = vt) covered, nothing from FY2/FY4; workload one lesson, retrieval/reflect/explain optional.
+- Worked example: seven stages, one step each, AU/vrk conversion shown, reasonableness check against JPL.
+- Figures (motion strip, (t,s) graph): LaTeX labels checked in the source only; no captures were available in this packet, so legibility on a phone is taken from the passing layout checks.
+- Finnish: case endings after number+unit correct; glossary terms (matka, paikka, nopeus) used consistently.

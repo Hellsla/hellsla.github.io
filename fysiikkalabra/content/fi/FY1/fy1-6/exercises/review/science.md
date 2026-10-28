@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a7b16d9cb53b5838
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-6/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: c049419582c3b6e6
 
 ## Blocking
 
 ## Polish
+- solutions.md:67 (L2-02) — "**Muunnokset:** sijoitetaan" starts lower-case; style only.
+- solutions.md:90 (L2-04 Järkevyys) — divisions written as operations use `\dfrac` ("pelkällä jakolaskulla 9,7 m/s / 1,0 s"); the colon rule would give $9{,}7\,\text{m/s} : 1{,}0\,\text{s}$.
+- solutions.md:19 (L1-02 Järkevyys) — "0,80 · 9,81 ≈ 8" repeats the substitution; an independent bound (under 1 s → under 9,81 m/s) is already there, drop the repeat.
+- lessons/FY1/fy1-6/answers.py:17 — code uses `54.0 / 3.6`; not student-facing.
 
 ## Checked
-- Diff since PASS: inquiry.json experiment names/units for `ilma`, solutions.md L2-02 Järkevyys.
-- `ilma` labelled "ilmanvastus" with "(ei ilmaa: tyhjiö)" / "(ilmaa on)": matches each experiment's initial setting (vacuum in kokeet 1–2, air in koe 3).
-- L2-02: $t = 15{,}0/9{,}81 = 1{,}529\,\text{s}$ → 1,53 s; ½gt² = 11,5 m ≈ fourth floor, as now stated, and the formula itself is not used.
-- No change to answers, exercises or the simulation; earlier checks stand.
+- Round-3 change, solutions.md:67 (L2-02): 54,0 · 1000 m : 3600 s = 15,0 m/s, t = 15,0 : 9,81 = 1,529 → 1,53 s (3 s.f. from 54,0); ½gt² ≈ 11,5 m ≈ fourth floor, plausible.
+- answers.py reproduces all 12, recomputed: 29,43; 7,848; 6,48; 9,8; 22,26; 1,223; 1,529; 26,715; 9,8; 1,0; 8,108; 4,43; tolerances 2 % cover the rounded answers.
+- m/s → km/h estimates: 29,43 → 106 km/h, 7,8 → 28 km/h — correct.
+- L2-03 Δv = gΔt from non-rest start; L2-04 slope from two non-zero points; L3-02 g = 3,70 m/s² then t₂ = 8,1 s (limited by 4,0 s); L3-03 4,4 m/s by the decimal rule, 15 % — all right.
+- Scope: v = gt as a linear model, Moon/Mars g given in the tasks, no forces.
+- Notation: \cdot products, no ×/\times.
 - Hash identical at start and end.

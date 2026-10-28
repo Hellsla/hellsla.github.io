@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ee7ae5a9163fd87e
+CONTENT-HASH: f67273566e2625ad
 
 ## Blocking
 
 ## Polish
-- solutions.md L3-01 Järkevyys — "0,2 AU ≈ 20 vrk": the model–JPL difference 0,21 AU corresponds to ≈ 24 vrk; write "noin 25 vuorokautta".
+- lessons/FY1/fy1-5/answers.py:20–21 — comments and code still use `/ 3.6`; harmless (not student-facing), but `54 * 1000 / 3600` would mirror the solutions.
 
 ## Checked
-- answers.py reproduces all 12 answers; independently recomputed: 110; 8,0; 400; 45; 3,5; 210; 450; 2,4; 1,7; 3420 vrk (date 17 Mar 2028, as stated); 41,6 h; 90 m.
-- L3-02 argument for neglecting motion: probe 0,015 AU (0,01 %), Earth 0,03 AU (0,02 %) in 1,5·10⁵ s — correct; light 499 s per AU.
-- L2-04 light time ≈ 6 µs, rule of thumb 3 s ≈ 1 km correct.
-- L3-03 catch-up solved symbolically, t = 60 s, s = 90 m, two independent checks.
-- All solutions complete (seven steps), conversions via 3,6 and 1000 correct, rounding justified.
-- Notation: \cdot throughout; colon divisions (18 m : 4,0 s; 4,5 km : 36 km/h; 1715 m : (3,0·10⁸ m/s); 60 : 3,0) unambiguous; no ×/δ.
+- Round-3 change, solutions.md:56 (L2-01): 54 · 1000 m : 3600 s = 15 m/s, s = 15 m/s · 14 s = 210 m — correct.
+- solutions.md:66 (L2-02): 36 · 1000 m : 3600 s = 10 m/s, 4,5 km = 4500 m, t = 450 s; check 4,5 km : 36 km/h = 0,125 h = 450 s — correct.
+- No conversion-formula rule ("jaa 3,6:lla") left in student text; m/s → km/h only in reasonableness estimates (8,0 → 29; 1,4 → 5; 3,5 → 13; 1,5 → 5,4 km/h), all right.
+- answers.py reproduces all 12 answers, recomputed independently: 110; 8,0; 400; 45; 3,5; 210; 450; 2,4; 1,7; 3420 vrk; 41,6 h; 90 m; tolerances 2 %.
+- Notation: \cdot products, colon for written divisions, no ×/\times.
+- Other solutions unchanged since the PASS; symbolic first, rounding justified.
+- Hash identical at start and end.
