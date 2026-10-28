@@ -1,18 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: 496ce1f4ea7cc86f
+CONTENT-HASH: 109dbcc240d94859
 
 ## Blocking
-- lesson.md:43 (taulukon otsake `$H$ (MJ/kg)`); inquiry.json:139 (`15 MJ/kg`), :175 (`yksikössä MJ/kg`), :187 (`kJ`, `100 g`), :203 (`yksiköissä MJ/kg`), :226 (`kJ-luku`), :311 (`yksikkö MJ/kg`); exit-ticket.json:11 (`yksikössä MJ/kg`) — Problem: these units and quantities are plain text. The teacher's rule is everything in LaTeX. — Fix: write `$\text{MJ/kg}$`, `$100\,\text{g}$`, `$\text{kJ}$` and so on, as in the inquiry table at :107. While editing :139, also change "kuivan polttopuun" to "ilmakuivan polttopuun" so the note matches the 15 MJ/kg it cites.
+- lesson.md:30 — Problem: "(noin 43 miljoonaa joulea)" puts a number with its unit in prose without LaTeX. This breaks the teacher's rule. — Fix: write "(noin $43 \cdot 10^{6}\,\text{J}$)" or "($43\,000\,000\,\text{J}$)".
+- inquiry.json:194 (ruoka, Muunnokset) and exit-ticket.json:12 (q3) — Problem: "$100\,\text{g} = 0{,}100\,\text{kg}$" is stated as a bare equality, not a conversion by substitution. The exit ticket does the same with "$1500\,\text{kJ} = 1{,}5\,\text{MJ}$". The kJ step next to it on :194 does substitute. — Fix: write $100\,\text{g} = 100 \cdot (1 : 1000)\,\text{kg} = 0{,}100\,\text{kg}$, and the same for 1500 kJ.
 
 ## Polish
-- lesson-answers.py:19–20 — Problem: the line labelled "misconception: wet wood" computes 10 kg of *wood* (150 MJ). The only task that uses it, tarkistus-3 (inquiry.json:360), uses *pellets*: 17 · 10 = 170 MJ, with a ratio of 430 : 170 ≈ 2,5. Neither number is computed. The text the students see is correct. — Fix: compute `17 * 10` and `430 / 170` under a tarkistus-3 comment.
-- lesson-answers.py — Problem: lesson.md:39 (129 MJ) and exit-ticket q2–q3 (75 MJ, 15 MJ/kg) are not computed (all right). — Fix: add a line each.
-- lesson.md:53 — Problem: the bensiini note says ethanol is the reason for rounding to 43. It is plausible (E10 ≈ 42,5 MJ/kg) but unsourced. — Fix: keep it, but label it "tyypillinen arvo" as for the pellets, or cite Tilastokeskus' moottoribensiini value.
+- lesson.md:53 — Problem: "bensiini (IPCC 2006: $44{,}3\,\text{MJ/kg}$, tyypillinen arvo pyöristettynä: $43$)" reads as if 44,3 rounds to 43. — Fix: cite a source that gives 43 (Tilastokeskus' moottoribensiini value), or write "IPCC 2006: 44,3; tyypillinen kaupallinen bensiini noin 43".
+- inquiry.json:181 (hint 2), :249 (virhe, correct option); figure 3 (etiketti) — Problem: g → kg is shown as a bare equality. — Fix (optional): match the substitution form of the solutions.
+- lessons/FY2/fy2-5/lesson-answers.py:23 — Problem: the comment "lesson.md:39" is stale; the line is now 51. — Fix: name the section ("Kaava, 3,0 kg bensiiniä") instead.
 
 ## Checked
-- The data with a named source is verified. IPCC 2006 NCV (via EU MRR Annex VI): maakaasu 48,0, motor gasoline 44,3, gas/diesel oil 43,0 and other bituminous coal 25,8 TJ/Gg, all as cited. Tilastokeskus *Polttoaineluokitus*: jyrsinturve 9–11 GJ/t at 40–50 % moisture, halot/pilkkeet 13–15 GJ/t at 20–25 %, as cited. Pellet 17, food values and dry wood ≈ 19 MJ/kg are realistic.
-- Every lesson and inquiry number, the siirto and tarkistus-2 mistake values included, was recomputed in one script. All match.
-- Figure 2 is to scale at 6,8 px per MJ/kg, and every bar is right. Figures 1 and 3 are right.
-- Every correct option and feedback is physically right, and so is the food-label caveat.
-- The worked example has all seven stages. It is symbolic first, the kWh conversion is by substitution, its 2 s.f. are justified and its check is real.
-- Scope: E = Hm, one efficiency, P = E : t and kWh. There is no Q = cmΔT, no chain product and no FY3/FY4 content. There is no ×, division uses a colon, and the Miksi premise is fixed.
+- Hash 109dbcc240d94859 at the start and the end.
+- Every lesson, inquiry and exit-ticket number was recomputed in one script and matches lesson-answers.py: 2,87; 90 MJ and 25 kWh; 22 MJ/kg; 1500 kJ; 129 MJ; the 15, 30, 60 and 120 MJ table; 170 and 430 MJ with a ratio of 2,5; 75 MJ and 15 MJ/kg; 3,75 and 3750 MJ; siirto 10,58, 6,35 and 4,23 MJ and 6348; 11,94 and 154,8 kWh.
+- Figure 2 is to scale at 6,8 px per MJ/kg, with every bar within 0,4 px. Figures 1 and 3 are right.
+- The worked example is symbolic first. Its kWh conversion substitutes $1\,\text{MJ} = 1\,\text{kWh} : 3{,}6$, its 2 s.f. are justified, and its check is real.
+- Every correct option and every feedback is physically right. The food-label caveat (metabolisable energy is less than combustion) is right, and comparing 2200 kJ with 1500 kJ still holds.
+- The data is realistic (LPG 46 MJ/kg, dry wood about 19 MJ/kg, Fineli food values).
+- Scope: E = Hm, one efficiency, P = E : t and kWh. There is no chain product and no FY3 or FY4 content. No × appears, and written division uses a colon.

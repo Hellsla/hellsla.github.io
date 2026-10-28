@@ -1,18 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: fdfbc1a91389a62a
+VERDICT: PASS
+CONTENT-HASH: 87ea237c564217c5
 
 ## Blocking
-1. solutions.md:99 (fy2-5-L3-01, Järkevyys) — "erotus $8{,}0\,\text{kg} - 2{,}79\,\text{kg}$ on yli kaksi kertaa öljyn massa" on väärin: $5{,}21 : 2{,}79 \approx 1{,}87$, eli alle kaksi kertaa; väärä tarkistus opettaa vääränlaista järkevyysarviota — korjaa: "ja erotus on $2{,}87 - 1 = 1{,}87$ kertaa öljyn massa: $1{,}87 \cdot 2{,}79\,\text{kg} \approx 5{,}2\,\text{kg}$, kuten pitää."
 
 ## Polish
-1. exercises.json fy2-5-L3-02 — yksikkö "päivän annosta" on kömpelö — "annosta" tai kysy "kuinka monta päivää ruoka riittää, desimaalilukuna" ja pidä yksikkö "päivää".
-2. solutions.md L3-01 Vastaus — "kaksi merkitsevää numeroa kuten tiedoissa $120\,\text{MJ}$" — $120$ voi olla kolmen numeron luku; mainitse pelkästään lämpöarvot $15$ ja $43$.
-3. exercises.json L3-01 — "Selitä myös" ei tarkisteta vastauskentässä (vain kg); pidä mallivastauksessa selitys näkyvänä (on jo Vastaus-rivillä).
+1. exercises.json L2-03, L2-04, L3-03 — hyötysuhde ($\eta$) ja teho ovat tehtävissä ilman muistutusta; luku *Hyötysuhde* on vain viitattu, ei opetettu tässä luvussa. Lisää tehtävätekstiin lyhyt muistutus ("hyötysuhde on hyödyksi saadun energian osuus otetusta") tai varmista, että luku on edeltävä.
+2. L2-04 — "tarvitsee 100 km:n ajamiseen liikkumiseen hyötyenergiaa": toista sana poistuu. Parempi: "tarvitsee 100 km:n ajamiseen hyötyenergiaa $48\,\text{MJ}$."
+3. L3-02 — käytännössä yksi kaava ja jako, tasolle 3 kevyt; "perustele laskusi" ei tarkistu. Lisää kysymys, esim. riittääkö ruoka viidelle päivälle ja miksi (päättely).
+4. L3-03 — vihje "1 W = 1 J/s ja tunti on 3600 s" paljastaa tehon muunnoksen; sen voi jättää ratkaisuun, jotta taso 3 vaatii päättelyn.
+5. L1-01...05 — viisi samanrakenteista sijoitusta; L1-05 (ruoka) tuo vaihtelua, muuten tehtävät ovat vain eri polttoaineita. Hyväksyttävä tasolle 1.
 
 ## Checked
-- Edellisen kierroksen huomautukset korjattu: L1-03 ja L1-05 ovat nyt yhden kaavan tehtäviä ilman muunnoksia, L3-01 ei enää toista ennusteen 2,9:ää, L3-03:n Periaate perustelee jakamisen ajalla.
-- Maakaasun $48\,\text{MJ/kg}$ vastaa oppitunnin taulukkoa; vastaus $96\,\text{MJ}$ oikein ja answers.py yhdenmukainen.
-- L1-03 $310\,000\,\text{MJ}$ ($312\,000$ sisällä toleranssin) ja L1-05 $0{,}96\,\text{MJ}$ oikein, yksikkö sopii kysymykseen.
-- L3-01 $5{,}2\,\text{kg}$ ($8{,}0 - 2{,}79$) laskettu oikein, pyöristys tehtävän tarkkuudella.
-- L3-02 uusi muotoilu poistaa "3 täyttä päivää" -epäselvyyden.
-- Yksiköt ja luvut LaTeXina, kertominen pisteellä, jakaminen kaksoispisteellä; muunnoksessa $1200 \cdot (1 : 1000)$.
+- Määrät 5/4/3 ja tasot vastaavat sääntöä; mikään ei toista esimerkkiä (6,0 kg puuta) tai kaavan 3,0 kg bensiiniä.
+- Tehtävät harjoittavat luvun tavoitteita: $E = Hm$, kääntö massalle (L2-02, L3-01), ruoan merkintä (L2-01, L1-05).
+- Tehtävien tilanteet realistisia; keksityt tiedot merkitty esimerkkiarvoksi.
+- Ratkaisut: annettu, kysytty, periaate, symbolinen kaava, muunnos, sijoitus, merkitsevät numerot ja järkevyys kaikissa 12:ssa.
+- Vastaukset ja toleranssit: pyöristetyt arvot (310000, 4,5, 5,2, 580) pysyvät 2 %:n sisällä.
+- L2-03/L2-04: ratkaisu selittää hyötysuhteen suunnan (jako vs. kerto) ymmärrettävästi.
+- Poistumislippu ei kuulu tähän pakettiin.
+- Suomi: sijamuodot ja desimaalipilkku oikein; LaTeX yksiköissä.
+- Kuvat: tehtäväkaappaukset 1280 px eivät avattu; tekstipohjainen tarkastus.

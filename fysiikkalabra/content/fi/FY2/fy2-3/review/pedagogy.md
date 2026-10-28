@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 704ca126f528bedf
+CONTENT-HASH: 862bd2552b27cf19
 
 ## Blocking
 
 ## Polish
-- inquiry.json `ennuste-1` options ("Noin 15 tuntia.", "Noin 150 tuntia.", "Noin tunnin.", "Noin viisi minuuttia") and `aika` options/feedback ("24 tunnissa", "5 tunnissa") — numbers with units in plain text, against the everything-LaTeX rule — write `$15\,\text{h}$`, `$150\,\text{h}$`, `$1\,\text{h}$`, `$5\,\text{min}$`.
-- inquiry.json `hook` — "lamppu on usein päällä tuntikausia" still hints that the lamp wins in time, but the prediction now asks for a number, so it can be refuted; acceptable, softer wording ("pitkään") would be tidier.
-- lesson.md Esimerkki, stage Tulos — "teho ja päivittäinen käyttöaika on annettu" → "ovat annetut" (plural subject).
-- lesson.md Kilowattitunti — "Joulemuodossa tunti on" → "Jouleina laskettaessa tunti on".
-- Opening Miksi question ("sähkölaskua ei voi päätellä pelkästä laitteen tehosta") is answered, but the power-plant scale appears only as one OL3 sentence; fine for the slot, the later chapters carry it.
+- inquiry.json `hook` — "lamppu on usein päällä tuntikausia" hints that the lamp wins on time before the student commits; softer wording ("pitkään") would be tidier. The numeric prediction can still be refuted, so not blocking.
+- Opening Miksi question is answered through the prediction, two tables and `pohdi`; `pohdi` and `kertaus` are optional, so a student on the core path meets the explicit answer only in the conclusion's model answer and Ydinajatus. Acceptable.
+- lesson.md Tyypillisiä tehoja — the table is not used by any task in the inquiry path; a one-line prompt ("arvioi, mikä laite kuluttaa eniten kuukaudessa") would make it something the student acts on.
 
 ## Checked
-- Round 1 blocking fixed: the `mittari` table now shows all four columns at 390 px (stage-tutki-390-1), no scrolling.
-- Round 1 polish done: prediction asks for a duration, 15 h row removed from `aika`, television 80 W in both figures, table and example, OL3 line added.
-- Goals: P = ΔE/Δt, W, kWh, bill; no work, force or FY3 content; opening question answered via prediction, tables, `pohdi`.
-- Activities fit a simulation-free topic: committed numeric prediction, two data tables the student reads, conclusion `explain`, error-spotting, numeric transfer; one lesson of work, extras optional.
-- Figures: bar chart and E–t graph legible, LaTeX labels, scaled, right after their paragraphs (fig-1/2 390 px, theory-1280).
+- Round 2 polish done: option numbers and units in LaTeX, "ovat annetut", "Jouleina laskettaessa".
+- Goals: P = ΔE/Δt, watt, kWh, bill; no work, force or FY3 content; scope respected, prior chapters named by name.
+- Activities fit a simulation-free topic: committed numeric prediction with justification, two data tables read by the student, explain conclusion, error-spotting, numeric transfer with hints and mistake feedback; about one lesson of work, extras optional.
+- Figures: bar chart (fig-1 390 px) and E-t graph with Delta E and Delta t marked (fig-2) are legible, LaTeX labels, scaled, right after their paragraphs; clean at 1280 px (theory-1280-1).
+- Phone: mittari table fits 390 px without scrolling (stage-tutki-390-1); no text wall.
 - Worked example: seven stages, one step each, symbols before numbers, 2 s.f. justified, reasonableness check.
 - Feedback repairs misconceptions with numbers; nothing disclosed before commitment.
-- Exit ticket Q3 tests the core idea (power and time together); phone and 1280 px captures clean, no text wall.
+- Exit ticket Q3 tests the core idea (power and time together), with complete model answer.
 - Hash unchanged at end.

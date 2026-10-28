@@ -1,22 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 496ce1f4ea7cc86f
+VERDICT: FAIL
+CONTENT-HASH: 109dbcc240d94859
 
 ## Blocking
+1. lesson.md:53 — Lähteet-kappale sanoo bensiinistä "IPCC 2006: $44{,}3\,\text{MJ/kg}$, tyypillinen arvo pyöristettynä: $43$". 44,3 ei pyöristy lukuun 43; opiskelija voi tarkistaa ja huomaa virheen (taulukko ja kaikki tehtävät käyttävät 43). Kierroksen 2 selitys (kotimaisessa bensiinissä on etanolia) oli oikea ja poistui. Korjaus: palauta se, esim. "kotimaisessa bensiinissä on etanolia, joten taulukossa käytetään arvoa $43$", tai kirjoita "taulukon arvo $43$ on tyypillinen suomalaisen bensiinin arvo". Tieteellinen arvo on science-reviewerin; tässä virhe on opiskelijan nähtävissä.
 
 ## Polish
-1. inquiry.json (ennuste-2) — ennuste-1:n palaute antaa jo puun 15 MJ/kg, joten ennuste-2 (suklaa vs. puu) on osin laskettavissa ennen todistetta; ennustus on silti perusteltavissa ravinto vs. polttoaine -vastakohdalla — jos tunti käy ahtaaksi, tee ennuste-2 valinnaiseksi tai poista luvut ennuste-1:n palautteesta.
-2. inquiry.json (rakenna) — taulukko on laskettu itse kaavasta (vahvistaa aritmetiikan, ei fysiikkaa); jo valinnainen, pidä se niin. Jos se jää pois, "suoraan verrannollinen" -perustelu on vain Ydinajatuksen kappaleessa.
-3. lesson.md (Ydinajatus, 1280 px) — kuva 1 on kahden kappaleen korkuisen tekstin vieressä ja jättää oikealle tyhjää tilaa kappaleen 2 kohdalla; harkitse kuvan siirtoa ensimmäisen kappaleen jälkeen alle kapeammaksi (mallina fy3-6). Ei estä oppimista.
-4. lesson.md (Kaava, Lähteet) — lähdekappale on tiheä (kuusi lähdettä, GJ/t ja MJ/kg sekaisin); opiskelijalle riittäisi taulukon alle "Lähteet: Tilastokeskus (2017), IPCC (2006), pyöristetty", yksityiskohdat voi viedä suljetun laatikon taakse.
-5. lesson.md (Yleinen virhekäsitys) — viimeinen irrallinen lause hiilidioksidista on kappale ilman omaa ajatusta; siirrä viimeiseksi luetelmakohdaksi tai poista (ympäristö kuuluu seuraavaan lukuun).
+1. lesson.md:53 — Lähteet on yhä tiheä; yksityiskohdat suljetun laatikon taakse (kuten kierroksella 2).
+2. inquiry.json (ennuste-2, rakenna) ja lesson.md (kuva 1, Yleinen virhekäsitys) — kierroksen 2 huomautukset 1, 2, 3 ja 5 ennallaan, eivät estä.
 
 ## Checked
-- Kierroksen 1 huomautukset korjattu: 129 MJ ≈ 130 MJ, "tehollinen lämpöarvo" selitetty, virhekäsitykset luetelmana, Teho pohjatiedoissa.
-- Polku: hook, ennusteet, taulukkoaineisto, johtopäätös, teoria, esimerkki, siirto; seurattavissa fy2-2:n pohjalta, avauskysymykseen vastataan.
-- Ei simulaatiota, ja se sopii aiheeseen: taulukot ja pakkausmerkintä ovat toiminnan kohde.
-- Palautteet korjaavat virhekäsityksen (lämpötila, kesto, yksikkö); ennen sitoutumista mitään ei paljasteta.
-- Kuvat 1-3 (390 ja 1280 px): tunnistettavia, LaTeX-nimiöt, arvot pylväiden vieressä, väri ei ainoa koodaus, kuva 2 mittakaavassa.
-- Esimerkki: seitsemän vaihetta, yksi askel kussakin, symbolit ennen lukuja, yksikkömuunnos erikseen.
-- Siirto ja tarkistukset: ratkaisut seurattavissa, tolerancet sopivat pyöristykseen; poistumislippu testaa ydinajatuksen.
-- Suomi: glossaarin termit, luvut nimetty luvun nimellä, desimaalipilkku, LaTeX yksiköissä.
-- Työmäärä: ydinpolku mahtuu tuntiin valinnaiset pois jätettynä.
+- Diff: $\text{MJ/kg}$, $\text{kJ}$ ja $100\,\text{g}$ LaTeX-muotoon (exit-ticket, inquiry, taulukon otsikko) — johdonmukaista, ei muuta sisältöä.
+- Taulukon otsikko $H\ (\text{MJ/kg})$ mahtuu 360 px:ään (layout-testit ok).
+- lesson-answers.py: tark3 (170/430 MJ, suhde 2,5), 129 MJ ja lippu 75 MJ / 15 MJ/kg vastaavat tekstiä ja poistumislippua.
+- Poistumislipun tehtävä (1500 kJ / 100 g) ja vastaus ennallaan ja seurattavissa.
+- Polku, esimerkki, ennusteet ja palautteet kuten kierroksella 2 (PASS).

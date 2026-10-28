@@ -1,21 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: d032fc6ba7d117ce
+VERDICT: PASS
+CONTENT-HASH: 9276338c11c76304
 
 ## Blocking
-- lesson.md:183-188 (Esimerkki, vaihe 5 "Sijoitus") — in the 390 px capture the last row "osuus = 1598 kW : 5000 kW = 0,32" runs past the card edge and the final digit is cut ("0,3:"); the share is the second asked quantity. Fix in the shared mathlayout (wrap or align the row so it fits 360 px), not by hand-splitting the chain. Also vaihe 4: "14 ·" / "10^6 kWh" breaks mid-product; keep the factor together.
 
 ## Polish
-- inquiry.json data-yksikko — the power table has no `source`/badge although it states real plants (Olkiluoto 3) and typical sizes; mark as `statistics` with a source or as `example` ("tyypillisiä, pyöristettyjä").
-- Source-note box in Tutki (390 px) is still an oval pill with a multi-line note; shared component, make it a plain rounded box.
-- Figure "unit-power": the axis shows 10^3 ... 10^9 W only; add "1 kW", "1 MW", "1 GW" under three ticks so a student sees the powers of ten as units.
-- ennuste-1 is fact recall (which source is largest) that the table settles; acceptable, but the justify box invites "miksi", which the later data (viikko) is what really tests.
-- johtopaatos model answer names "säädettäviä voimaloita" before the groups are taught; fine as an inference, but say "voimaloita, joiden tehoa voi nostaa nopeasti".
+- Tutki, source-note box (data-fi, data-yksikko; 390 px capture) — still an oval pill with a multi-line note, text hugs the curved edge; shared component, make it a plain rounded box.
+- Figure "unit-power" — axis reads 10^3 ... 10^9 only; add "1 kW", "1 MW", "1 GW" under three ticks so the powers of ten are tied to units. Row labels sit over the gridlines; a little more room would help.
+- inquiry.json ennuste-1 — fact recall settled by the table; the justify box invites "miksi", which only the week table (data-viikko) really tests. Acceptable, optionally reword to "Mikä ominaisuus selittää…".
+- inquiry.json johtopaatos model — "säädettäviä voimaloita, kuten vesivoimaa" appears before the groups are taught in theory; say "voimaloita, joiden tehoa voi nostaa nopeasti, kuten vesivoimaa".
+- Esimerkki vaihe 4 (390 px) — "14 GWh = 14 · 10^6 kWh ja" then the second conversion drops into a separate block; fine, but the lead-in sentence reads broken across the break.
 
 ## Checked
-- Round 1 blockers fixed: criteria list renders as a list; Tutki tables fit 390 px with all columns visible; the conclusion now rests on the week table (tuuli 0,4-6,4 GW vs ydin 4,3 GW, nominal 8 GW); the "maailman" claim is now safe ("kymmeniä kertoja").
-- Opening question answered with evidence before the theory; slot goals covered, no FY3 content.
-- Example: seven stages, one step each, symbolic first, check present.
-- Figures (plants with generator and lämpö arrow, bars, log-axis dots) legible and beside their paragraphs at 390 and 1280 px.
-- Badges "Tilastoaineisto" and "Keksitty esimerkkiaineisto" present on data-fi and data-viikko; chapter names, not ids.
-- Exit ticket and checks test grouping, E = P t, nominal vs mean; workload one lesson.
-- Finnish and number+unit cases correct (5,0 MW:n, 1600 MW).
+- Round 2 blocker fixed: the worked example's Sijoitus at 390 px now fits, the "osuus" rows are aligned and "0,32" is whole; vaihe 4 and 7 blocks fit too.
+- Example: seven stages, one step each, symbolic first, units converted, answer rounded with reason, reasonableness check present; does not repeat the Tutki tasks.
+- Opening question answered with evidence (bars, power table, week table) before the theory; slot goals covered, no FY3 content (no chain efficiency, no heat engine).
+- Predictions can be refuted: ennuste-1 by the Tutki table, the week table shows nominal vs actual wind power; option feedback repairs the misconception.
+- Figures (plants, bars, log-axis dots) legible and beside their paragraphs at 390 and 1280 px; tables fit 390 px.
+- Badges Tilastoaineisto and Keksitty esimerkkiaineisto present; chapter names, not ids.
+- Tasks have three hints, mistake feedback and complete model solutions; exit ticket and checks test grouping, E = P t, nominal vs mean power.
+- Finnish and case after number+unit correct (5,0 MW:n); divisions written with colon, \cdot used.
+- Workload fits one lesson (optional items marked).
+- Hash unchanged at start and end.
