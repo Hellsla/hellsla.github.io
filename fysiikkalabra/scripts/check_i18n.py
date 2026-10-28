@@ -21,7 +21,8 @@ import courses, i18n
 ROOT = courses.ROOT
 TEXT_KEYS = {"text", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
-             "claim", "why", "predictions", "rubric", "note", "words"}
+             "claim", "why", "predictions", "rubric", "note", "words",
+             "solution", "contribution", "learn", "prior", "criteria", "pair"}
 JSON_FILES = ("meta.json", "exercises.json", "exit-ticket.json", "inquiry.json")
 
 
@@ -35,7 +36,7 @@ def same_data(a, b, path, errs, key=None):
         if not isinstance(b, list) or len(a) != len(b): errs.append(f"{path}: {len(a)} items in Finnish, {len(b) if isinstance(b, list) else 'not a list'} here"); return
         for i, (x, y) in enumerate(zip(a, b)): same_data(x, y, f"{path}[{i}]", errs, key)
     elif isinstance(a, str) and key in TEXT_KEYS:
-        if formulas(a) != formulas(b): errs.append(f"{path}: formulas {formulas(b)} differ from Finnish {formulas(a)}")
+        if formulas(a) != formulas(b): errs.append(f"{path}: formulas differ from Finnish: {formula_diff(a, b)}")
     elif a != b: errs.append(f"{path}: {b!r} differs from Finnish {a!r} (only texts are translated)")
 
 
@@ -43,7 +44,14 @@ def formulas(text):
     """The LaTeX of a text, \\text{} words set aside: what must stay exactly as it is in every language."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", str(text), flags=re.S)
     found = re.findall(r"\$\$(.*?)\$\$", text, re.S) + re.findall(r"(?<!\$)\$([^$\n]+?)\$(?!\$)", re.sub(r"\$\$.*?\$\$", "", text, flags=re.S))
-    return sorted(re.sub(r"\s+", "", re.sub(r"\\(text|mathrm)\{[^{}]*\}", r"\\\1{}", f)) for f in found)
+    return sorted(re.sub(r"\s+", "", re.sub(r"\\(text|mathrm)\{[^{}]*\}", r"\\\1{}", f)).replace("{,}", ".") for f in found)   # 4{,}2 = 4.2
+
+
+def formula_diff(a, b):
+    """What a translation lost (-) and added (+) of the Finnish formulas."""
+    from collections import Counter
+    fa, fb = Counter(formulas(a)), Counter(formulas(b))
+    return " ".join([f"-${f}$" for f in (fa - fb).elements()] + [f"+${f}$" for f in (fb - fa).elements()])
 
 
 def md_shape(text):
@@ -65,6 +73,7 @@ def check_lesson(fi, tr, lang, errs):
         else:
             sa, sb = md_shape(a.read_text()), md_shape(b.read_text())
             for k in sa:
+                if k == "formulas" and sa[k] != sb[k]: errs.append(f"{b.relative_to(ROOT)}: formulas differ from Finnish: {formula_diff(*(re.sub(r'<svg.*?</svg>', '', x.read_text(), flags=re.S) for x in (a, b)))}"[:600]); continue
                 if sa[k] != sb[k]: errs.append(f"{rel}/{n}: {k} differ from Finnish ({sb[k]} vs {sa[k]})"[:400])
             if n == "solutions.md" and re.findall(r"^## (\S+)", a.read_text(), re.M) != re.findall(r"^## (\S+)", b.read_text(), re.M):
                 errs.append(f"{rel}/exercises/solutions.md: the ## exercise ids differ from Finnish")

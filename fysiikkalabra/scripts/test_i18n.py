@@ -22,6 +22,8 @@ REAL = snapshot()
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
+for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
+    if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T)}
 
 
