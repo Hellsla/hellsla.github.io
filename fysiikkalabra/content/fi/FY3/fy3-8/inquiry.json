@@ -372,10 +372,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Reikä lämpiää",
+      "prompt": "Teräslevyssä on pyöreä reikä. Levyä lämmitetään tasaisesti. Mitä reiän halkaisijalle tapahtuu?",
+      "choices": [
+        {
+          "text": "Reikä pienenee, koska metalli laajenee ja täyttää reikää reunoilta.",
+          "feedback": "Tämä on yleinen ajatus, mutta reikä ei ole metallia, joka voisi laajeta. Jokainen etäisyys levyssä kasvaa samassa suhteessa, myös reiän vastakkaisten reunojen väli, joten reiän halkaisija kasvaa."
+        },
+        {
+          "text": "Reikä pysyy samana, koska laajeneminen koskee vain levyn ulkomittoja.",
+          "feedback": "Laajeneminen ei rajoitu ulkoreunoihin. Hiukkasten väli kasvaa joka kohdassa, joten myös reiän reunojen välinen etäisyys kasvaa. Muuten levyn kuvio ei pysyisi samanmuotoisena."
+        },
+        {
+          "text": "Reikä suurenee, koska kaikki levyn mitat kasvavat samassa suhteessa, kuin kuvaa suurennettaisiin.",
+          "correct": true,
+          "feedback": "Oikein. Kun levy lämpenee, kaikki sen pisteiden väliset etäisyydet kasvavat samassa suhteessa, myös reiän halkaisija. Siksi kuuma rengas mahtuu akselille ja kutistuu tiukasti kiinni jäähtyessään."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Taulukko ja laskeminen",
+      "title": "3. Taulukko ja laskeminen",
       "prompt": "Metallisauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $2{,}00\\,\\text{m}$. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin $\\alpha$. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
       "answer": 23,
       "unit": "10⁻⁶ 1/K",
@@ -401,7 +423,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Selitä mikromallin avulla, miksi teräskisko pitenee lämmetessään, ja miksi saman lämpötilan nousu kasvattaa vakiopaineisen ilman tilavuutta suhteessa paljon enemmän kuin kiskon tilavuutta.",
       "criteria": [
         "Sanon, että lämpötilan noustessa hiukkasten värähtely tai liike voimistuu, mutta hiukkaset itse eivät kasva.",
@@ -416,7 +438,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

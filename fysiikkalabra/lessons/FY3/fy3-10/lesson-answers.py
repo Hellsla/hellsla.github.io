@@ -39,5 +39,8 @@ a["inq-koe2-N-200-p"] = (200 / 100) * (600 / 300)         # mistake N = 200 at 6
 a["inq-koe2-N-25-p"] = (25 / 100) * (600 / 300)           # mistake N = 25 at 600 K: p/p_ref = 0,50
 # pred-N: N doubles at fixed T and V -> p/p_ref = 200/100 = 2
 a["inq-predN"] = 200 / 100
+# check-c2: rigid vessel heated from 20 °C to 40 °C: p2/p1 = T2/T1 = 313,15 / 293,15 = 1,068 -> about 7 %
+a["inq-c2-suhde"] = K(40) / K(20)                         # 1,068
+a["inq-c2-prosentti"] = (K(40) / K(20) - 1) * 100         # 6,8 % (mistakes: 100 % doubling, 20 % from the 20 degrees)
 
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

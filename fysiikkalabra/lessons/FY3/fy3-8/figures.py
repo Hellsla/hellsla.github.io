@@ -1,6 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-8` writes them into lesson.md."""
 import math
-from figlib import (Fig, INK, MUTED, WHITE, RULE, COLD, COLD_LIGHT, HOT, HOT_LIGHT, HEAT, GLASS, METAL_EDGE)
+from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, COLD, COLD_LIGHT, HOT, HOT_LIGHT, HEAT, GLASS, METAL_EDGE)
 import herolib as H
 
 
@@ -98,6 +98,21 @@ def volume_expansion():
     return f.svg()
 
 
+def length_graph():
+    """Task figure: the elongation of a 5,00 m metal beam against its temperature, a straight line from (20 °C; 0 mm) to (70 °C; 3,0 mm).
+    No alpha, no material: the student reads the grid points and works out alpha = ΔL/(L₀ΔT)."""
+    f = Fig("fy38-length-graph", 330, "Kuvaaja mittakaavassa: metallipalkin pituuden muutos ΔL millimetreinä lämpötilan T funktiona celsiusasteina. "
+            "Mittaus alkaa lämpötilassa 20 °C, jolloin ΔL on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin ΔL on 3,0 mm. Mittauspisteet "
+            "ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm.")
+    ax = Axes(f, (96, 280), (470, 56), x=(0, 80), y=(0, 3.5), xticks=[10, 20, 30, 40, 50, 60, 70, 80],
+              yticks=[0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5], xlabel=r"T\ ({}^\circ\text{C})", ylabel=r"\Delta L\ (\text{mm})",
+              xfmt=lambda v: fi(v), yfmt=lambda v: fi(v, 1))
+    ax.line([(20, 0), (70, 3.0)], HEAT, 3)
+    ax.point(20, 0, HEAT)
+    ax.point(70, 3.0, HEAT)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: a car driving over a bridge's comb-shaped expansion joint."""
     f = H.hero("fy38-hero", "Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee "
@@ -159,4 +174,11 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion}
+FIGURES = {"hero": hero, "scene": scene, "particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion, "length-graph": length_graph}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "particles": "safe: particles farther apart when warm, no values",
+    "rod-expansion": "safe: a longer warm rod, no values",
+    "volume-expansion": "safe: the liquid rises in the tube, no values",
+    "length-graph": "safe: elongation of a metal beam against temperature as a straight line, end points listed, no alpha or material",
+}

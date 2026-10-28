@@ -367,10 +367,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Miksi hyötysuhteet eroavat",
+      "prompt": "Vesivoimalaitoksen hyötysuhde on noin $0{,}9$, mutta lauhdevoimalaitoksen noin $0{,}4$. Mikä selittää eron?",
+      "choices": [
+        {
+          "text": "Vesivoimalaitos ei ole lämpövoimakone: turbiini muuttaa veden liike-energian suoraan mekaaniseksi energiaksi, eikä lämpöä tarvitse luovuttaa kylmempään. Lauhdevoimalaitoksessa suuri osa polttoaineen energiasta siirtyy lauhduttimessa jäähdytysveteen.",
+          "correct": true,
+          "feedback": "Oikein. Lämpövoimakoneen on luovutettava osa lämmöstä kylmempään ympäristöön, ja lauhdevoimalaitoksessa se tapahtuu lauhduttimessa. Vesivoimalaitoksessa ei ole tällaista pakollista lämmönluovutusta, joten häviöt jäävät kitkaan ja virtausvastuksiin."
+        },
+        {
+          "text": "Vesivoimalaitoksen koneissa on vähemmän kitkaa kuin lauhdevoimalaitoksen koneissa.",
+          "feedback": "Kitkaa on molemmissa vähän, eikä sen vähentäminen nostaisi lauhdevoimalaitoksen hyötysuhdetta lähelle vesivoimalaitoksen arvoa. Ero johtuu siitä, että lauhdevoimalaitos on lämpövoimakone ja sen on pakko luovuttaa lämpöä kylmempään ympäristöön."
+        },
+        {
+          "text": "Lauhdevoimalaitoksen kattila hukkaa suurimman osan polttoaineen energiasta.",
+          "feedback": "Kattila luovuttaa ympäristöön vain vähän: sen hyötysuhde on luvun esimerkissä $0{,}910$, kun höyrykierron hyötysuhde on $0{,}440$. Suurin häviö syntyy höyrykierrossa, kun lauhdutin luovuttaa lämpöä jäähdytysveteen."
+        },
+        {
+          "text": "Veden liike-energia on ilmaista, joten sen hyötysuhde lasketaan helpommin.",
+          "feedback": "Energian hinta ei vaikuta hyötysuhteen suuruuteen: se on hyödyksi saadun tehon suhde sisään tuotuun tehoon. Ero johtuu laitostyypin fysiikasta, siitä että lauhdevoimalaitos on lämpövoimakone ja vesivoimalaitos ei ole."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskeminen",
+      "title": "3. Laskeminen",
       "prompt": "Yhteistuotantolaitoksen polttoaineteho on $360\\,\\text{MW}$, sähköteho $108\\,\\text{MW}$ ja hukkalämmön teho $36\\,\\text{MW}$. Kuinka suuri on kaukolämpöteho? Vastaa megawatteina.",
       "answer": 216,
       "unit": "MW",
@@ -396,7 +422,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja vertaa",
+      "title": "4. Selitä ja vertaa",
       "prompt": "Kaupunki harkitsee voimalaitosta. Lauhdevoimalaitoksen hyötysuhde on 0,40. Yhteistuotantolaitoksen kokonaishyötysuhde on 0,88, mutta sähköä siitä on vain 0,30 polttoaineen tehosta. Selitä, miksi yhteistuotantolaitos ei ole yksinkertaisesti yli kaksi kertaa parempi kuin lauhdevoimalaitos, ja kerro, mitä tietoa vertailuun tarvitaan.",
       "criteria": [
         "Sanon, että kokonaishyötysuhde laskee yhteen sähkön ja kaukolämmön, jotka ovat eri arvoisia energiamuotoja.",
@@ -411,7 +437,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

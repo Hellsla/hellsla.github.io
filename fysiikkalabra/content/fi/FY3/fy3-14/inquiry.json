@@ -352,10 +352,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kylmä jääpala vedessä",
+      "prompt": "Eristetyssä astiassa on vettä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Veteen pudotetaan pakastimesta otettu jääpala, jonka lämpötila on $-18\\,{}^\\circ\\text{C}$. Mitä astiassa tapahtuu, kun lämpötilat alkavat tasoittua?",
+      "choices": [
+        {
+          "text": "Vettä jäätyy palan pinnalle. Jäätyessään vesi luovuttaa energiaa, joka lämmittää palaa kohti $0\\,{}^\\circ\\text{C}$:ta.",
+          "correct": true,
+          "feedback": "Oikein. Pala on vettä kylmempi, joten energiaa siirtyy vedestä palaan. Vesi ei voi jäähtyä alle $0\\,{}^\\circ\\text{C}$:n jäätymättä, joten se luovuttaa energiaa jäätymällä: jäätyminen vapauttaa $334\\,\\text{kJ}$ kilogrammaa kohti. Niin kauan kuin astiassa on vettä ja jäätä yhtä aikaa, lämpötila asettuu $0\\,{}^\\circ\\text{C}$:seen."
+        },
+        {
+          "text": "Pala alkaa heti sulaa, koska ympäröivä vesi on sitä lämpimämpää.",
+          "feedback": "Houkutteleva, koska lämpimämpi vesi tavallisesti sulattaa jäätä. Jää sulaa kuitenkin vasta $0\\,{}^\\circ\\text{C}$:ssa, ja $-18\\,{}^\\circ\\text{C}$:n pala täytyy ensin lämmittää sinne. Siihen tarvittavan energian luovuttaa vesi, joka on jo $0\\,{}^\\circ\\text{C}$:ssa ja voi luovuttaa energiaa vain jäätymällä."
+        },
+        {
+          "text": "Mitään ei tapahdu, koska $0\\,{}^\\circ\\text{C}$:n vesi ei voi luovuttaa enää lämpöä.",
+          "feedback": "Vesi ei voi jäähtyä nesteenä alle $0\\,{}^\\circ\\text{C}$:n tässä tilanteessa, mutta se voi luovuttaa energiaa jäätymällä. Jäätymisessä vapautuu yhtä paljon energiaa kuin sulamiseen kuluu, $334\\,\\text{kJ}$ kilogrammaa kohti. Lämpötilaero palaan saa energian siirtymään."
+        },
+        {
+          "text": "Vesi jäähtyy nesteenä alle $0\\,{}^\\circ\\text{C}$:n, ja pala lämpenee, kunnes lämpötilat ovat samat.",
+          "feedback": "Ajatus sopisi, jos olomuoto ei muuttuisi, kuten kahta vesimäärää sekoitettaessa. Kun vedessä on jäätä, vesi jäätyy $0\\,{}^\\circ\\text{C}$:ssa eikä jäähdy nesteenä sen alle. Siksi lämpötila asettuu $0\\,{}^\\circ\\text{C}$:seen niin kauan kuin astiassa on vettä."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskenta",
+      "title": "3. Laskenta",
       "prompt": "Kalorimetrissä on $0{,}20\\,\\text{kg}$ teetä, jonka lämpötila on $70\\,{}^\\circ\\text{C}$ ja jonka ominaislämpökapasiteetti on sama kuin veden. Teehen pudotetaan $0{,}050\\,\\text{kg}$ jäätä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Mikä on lämpötila, kun kaikki jää on sulanut ja lämpötasapaino on saavutettu? Vastaa celsiusasteina.",
       "answer": 40,
       "unit": "°C",
@@ -381,7 +407,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Juoman viilentämiseen käytetään jääkuutioita. Selitä, miksi 0-asteinen jää viilentää juomaa paljon tehokkaammin kuin sama massa 0-asteista vettä, ja miksi jäätä voi jäädä lasiin, vaikka juoma on huoneenlämpöistä.",
       "criteria": [
         "Sanon, että jään sulaminen ottaa energiaa $334\\,\\text{kJ}$ kilogrammaa kohti ja että lämpötila pysyy sulamisen aikana $0\\,{}^\\circ\\text{C}$:ssa.",
@@ -396,7 +422,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 52aa6a2eb19695e1
+CONTENT-HASH: b726ca376903e1f8
+
+Delta review over the audit's PASS (52aa6a2eb19695e1): new check-c2 (heat pump, converted from an exit question), titles renumbered, exit ticket cut to two questions.
+
 ## Blocking
+- none
 ## Polish
-- inquiry.json suunnittele — task is not optional yet needs two simultaneous conditions and a 4-way comparison; with hook, two predictions, two experiments, conclusion, example and three checks the lesson is long. Consider marking `suunnittele` optional or trimming to options 2 and 3.
-- lesson.md Ydinajatus — the paragraph is about 125 words and mixes F = pA, W = pΔV, the graph area, compression and the sign convention; split the sign convention (puristus, ΔU = Q − W_k) into its own short paragraph.
-- lesson.md "Mitä suurempi on kuuman lähteen ja kylmän ympäristön lämpötilaero kuuman lähteen lämpötilaan nähden" — heavy to parse for a first-time reader; e.g. "Mitä suurempi osa kuuman lähteen lämpötilasta on lämpötilaeroa kylmään ympäristöön, sitä suuremman osan …" or an example with numbers.
-- exp-1 — the sim computes ΔV = 2Q/(5p) and W_k is left to the student, so the experiment mostly confirms the formula; acceptable because Wₖ and ΔU are separated, but pred-1 could not be refuted by data (all options except the right one are arithmetic slips).
-- pred-2 — the prompt already states "mäntä on saatava takaisin alas"; fine, but the cue "kaasu on ensin jäähdytettävä" in Bea's option is the whole answer; it reads like a given hint. Acceptable as a competing-explanations item.
+- exit-ticket.json:2 — the 200 kPa, 0,50 l work question is the same calculation as check-2 (W = pΔV from a horizontal segment) and as three L1 exercises; replace with a conceptual question when convenient.
+- check-c2: the correct option is much longer than the others (a test-wise cue); trim it.
 ## Checked
-- Opening question (alle puolet sähköksi, minne loput) answered in Hyötysuhde and Esimerkki; hook does not disclose.
-- Slot goals met: gas work, heat engine, hyötysuhde, yhteistuotanto, lämpöpumppu; stays inside FY3 scope (no cycles computed).
-- Example has seven stages, symbolic first, units, check; does not repeat exercises.
-- Numbers verified: exp-2 B (Q1 650, Q2 550, W 100), suunnittele 800 MW and the distractors 2000/1250/941/667, siirto 22,5 MW, check-2 450 J.
-- Each multiple-choice item has exactly one correct option; feedback repairs the misconception (ΔU sign, litres, final volume).
-- Finnish and case endings after number+unit read correctly; glossary terms used.
-- Figures: only alt texts reviewed (no captures were available in the packet; "Screenshots: none yet"), so legibility and phone layout rest on the passing layout checks.
+- check-c2 tests energy conservation in a heat pump (Q_sisälle = Q_ulko + E_s, ε = 3,0), a key concept that check-1 (no work at constant volume) does not; no calculation needed.
+- Numbers: 3,0 − 1,0 = 2,0 kWh from outdoor air; ε = 3,0/1,0 = 3,0. Feedback right; "kolminkertainen hyötysuhde" is correctly refuted by separating ε from η.
+- Distractors are real (energy created, efficiency 3, friction heat), each feedback repairs; none points at another option.
+- LaTeX for all quantities; Finnish clear; exit ticket removed the heat-pump question that is now the check; "kaksi" matches.

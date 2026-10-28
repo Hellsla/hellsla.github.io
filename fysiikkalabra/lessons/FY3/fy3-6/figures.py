@@ -1,6 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-6` writes them into lesson.md."""
 import math
-from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, COLD, GOOD, ALUMINIUM, METAL_EDGE,
+from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, COLD, GOOD, ALUMINIUM, METAL_EDGE,
                     IRON, COPPER, ICE, ICE_EDGE, WATER, WATER_LIGHT, GLASS, SAND, SAND_LIGHT, SAND_DARK, GRAIN, HOT_LIGHT, COLD_LIGHT, n)
 import herolib as H
 
@@ -124,6 +124,21 @@ def calorimeter():
     return f.svg()
 
 
+def heating_line():
+    """Task figure: temperature of a metal block heated at constant power, a straight line from (0 s; 20 °C) to (180 s; 60 °C).
+    No slope or c written: the student reads two grid points and works out c from P, m and the temperature change."""
+    f = Fig("fy36-heating-line", 330, "Kuvaaja mittakaavassa: metallikappaleen lämpötila T celsiusasteina ajan t funktiona sekunteina, kun "
+            "kappaletta lämmitetään tasaisella teholla. Lämpötila nousee suoraviivaisesti pisteestä (0 s; 20 °C) pisteeseen (180 s; 60 °C). "
+            "Ruudukon väli on 20 s ja 10 °C.")
+    ax = Axes(f, (96, 280), (470, 56), x=(0, 200), y=(0, 70), xticks=[20, 40, 60, 80, 100, 120, 140, 160, 180, 200],
+              yticks=[10, 20, 30, 40, 50, 60, 70], xlabel=r"t\ (\text{s})", ylabel=r"T\ ({}^\circ\text{C})",
+              xfmt=lambda v: fi(v) if v % 40 == 0 else "")
+    ax.line([(0, 20), (180, 60)], HEAT, 3)
+    ax.point(0, 20, HEAT)
+    ax.point(180, 60, HEAT)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: a lake beach in the morning sun, the sand already hot, the water still cool."""
     f = Fig("fy36-hero", 600, "Kuvitus: järven uimaranta aamupäivällä. Aurinko paistaa sekä hiekkaan että veteen. Hiekan yllä "
@@ -225,4 +240,11 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "water-sand": water_sand, "c-bars": c_bars, "calorimeter": calorimeter}
+FIGURES = {"hero": hero, "scene": scene, "water-sand": water_sand, "c-bars": c_bars, "calorimeter": calorimeter, "heating-line": heating_line}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "water-sand": "reveals: sand warms about five times as much",
+    "c-bars": "safe: table values to read (c of six materials)",
+    "calorimeter": "reveals: the equilibrium temperature 24,5 °C",
+    "heating-line": "safe: temperature of a block heated at constant power as a straight line, end points listed, no slope or c",
+}

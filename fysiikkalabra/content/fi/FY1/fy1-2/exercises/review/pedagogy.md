@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4157a622aabadf49
+CONTENT-HASH: e66a67c219672d7e
+
+Delta review over the audit's PASS (4157a622aabadf49): one exercise replaced by a figure task, LaTeX units.
+
 ## Blocking
+- none
 ## Polish
-- solutions.md (L3 pixel task, Muunnokset) — "Jokainen 3474 km on yksi kuvapiste, joten kuvapisteitä on 4,498·10^9 km : 3474 km = 1,295·10^6" is a good substitution-style step; add the unit of the result ("px") so the Sijoitus line `1,295·10^6 px` does not appear from nowhere.
-- solutions.md (L3 round-trip task, Sijoitus) — `1,447·10^5 s : 3600 s = 40,2` correct; say "(koska 1 h = 3600 s)" in the same sentence so the conversion fact sits beside its use.
-- Carried, optional: "merkitsevät numerot" is practised mainly by L1-03; a rounding point in one level-2 task would balance the slot's goals.
+- exercises.json fy1-2-L1-04 is a two-step (difference of readings plus cm to mm) at L1; acceptable, but nearer L2. L3-02 still has plain '30,07 AU' and '1920 px'.
+- Ruler at 360 px: millimetre ticks are about 2 px apart, so 13,6 cm needs counting from the long tick at 13; the 3 % tolerance (+-3 mm) forgives a 1-2 mm slip.
 ## Checked
-- Delta round 3 read in context: both changed solutions replace division by a unit factor (km/px, s/h) with "how many fit" and `:` between like units, which matches the teacher's substitution-for-understanding and colon rules.
-- Numbers rechecked: 4,498·10^9 / 3474 = 1,295·10^6; /1920 = 674,4; 2·2,169·10^10 / 2,998·10^5 = 1,447·10^5 s; /3600 = 40,2 h.
-- Seven-step structure intact in both; \cdot never ×; principle still explained.
-- Counts 5/4/3, situations, Finnish and captures as approved in round 2; unchanged by the diff.
+- Figure needed: the text gives no lengths; 2,0 cm and 13,6 cm come from the ruler. Rod does not start at zero, which tests the key idea (difference of readings).
+- (13,6-2,0) cm = 11,6 cm = 116 mm correct; answers.py and solutions.md agree; **Kuvaajan lukeminen:** present.
+- Description lists the ends only in the aria-label, not in the task text; ruler labelled 0-15 with LaTeX numbers.

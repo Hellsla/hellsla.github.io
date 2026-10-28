@@ -473,10 +473,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Mitä g kertoo",
+      "prompt": "Levosta pudotetun, vapaasti putoavan pallon $(t, v)$-kuvaajan kulmakerroin on $g = 9{,}81\\,\\text{m/s}^2$. Mitä tämä luku kertoo pallon liikkeestä?",
+      "choices": [
+        {
+          "text": "Pallon nopeus on koko ajan $9{,}81\\,\\text{m/s}$.",
+          "feedback": "Luku $g$ ei ole nopeus. Jos nopeus olisi koko ajan sama, $(t, v)$-kuvaaja olisi vaakasuora. Putoavan pallon nopeus kasvaa: se on $v = g\\,t$, esimerkiksi $9{,}81\\,\\text{m/s}^2\\cdot 3{,}0\\,\\text{s} \\approx 29{,}4\\,\\text{m/s}$ kolmen sekunnin kuluttua."
+        },
+        {
+          "text": "Pallon nopeus kasvaa joka sekunti $9{,}81\\,\\text{m/s}$.",
+          "feedback": "Oikein. Kiihtyvyys on nopeuden muutos sekunnissa: $g = \\dfrac{\\Delta v}{\\Delta t}$. Siksi nopeus on yhden sekunnin kuluttua $9{,}81\\,\\text{m/s}$, kahden sekunnin kuluttua $19{,}6\\,\\text{m/s}$ ja niin edelleen.",
+          "correct": true
+        },
+        {
+          "text": "Pallo putoaa joka sekunti $9{,}81\\,\\text{m}$.",
+          "feedback": "Yksikkö $\\text{m/s}^2$ ei ole matka. Luku kertoo, kuinka paljon nopeus muuttuu sekunnissa, ei kuinka pitkän matkan pallo kulkee. Matkakin kasvaa joka sekunti, koska pallo kulkee yhä nopeammin."
+        },
+        {
+          "text": "Pallon nopeus kasvaa $9{,}81\\,\\text{m/s}$ ensimmäisellä sekunnilla, mutta sen jälkeen kasvu hidastuu.",
+          "feedback": "Ilman ilmanvastusta kiihtyvyys on vakio, joten nopeus kasvaa joka sekunti yhtä paljon. Siksi kuvaaja on suora: kahden sekunnin kuluttua nopeus on $2\\cdot9{,}81\\,\\text{m/s} \\approx 19{,}6\\,\\text{m/s}$, ei vähemmän."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskeminen",
+      "title": "3. Laskeminen",
       "prompt": "Pallo päästetään putoamaan levosta tyhjiössä. Kuinka monen sekunnin kuluttua pallon nopeus on $108\\,\\text{km/h}$? Vastaa sekunteina.",
       "answer": 3.058,
       "unit": "s",
@@ -506,7 +532,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä omin sanoin, miksi höyhen putoaa ilmassa hitaammin kuin vasara mutta tyhjiössä yhtä nopeasti, ja miten putoamiskiihtyvyyden voi lukea $(t, v)$-kuvaajasta.",
       "criteria": [
         "Sanon, että tyhjiössä kaikilla kappaleilla on sama putoamiskiihtyvyys $g$ massasta riippumatta.",
@@ -520,7 +546,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

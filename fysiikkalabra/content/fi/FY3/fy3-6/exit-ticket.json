@@ -6,9 +6,5 @@
   {
     "q": "Kilo vettä ja kilo rautaa saavat saunassa saman lämpömäärän. Kumman lämpötila nousee enemmän ja suunnilleen kuinka moninkertaisesti?",
     "a": "Raudan. Sen ominaislämpökapasiteetti $450\\,\\text{J/(kg}\\cdot\\text{K)}$ on noin yhdeksäsosa veden arvosta $4190\\,\\text{J/(kg}\\cdot\\text{K)}$, joten sama lämpömäärä nostaa raudan lämpötilaa noin yhdeksän kertaa enemmän."
-  },
-  {
-    "q": "Yhtä paljon 80-asteista ja 20-asteista vettä sekoitetaan eristetyssä astiassa. Mikä on loppulämpötila, ja miksi vastaus ei päde, jos kuumaa vettä on kolme kertaa enemmän?",
-    "a": "$50\\,{}^\\circ\\text{C}$, koska massat ja aine ovat samat ja luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Jos kuumaa on kolme kertaa enemmän, tasapaino on lähempänä $80\\,{}^\\circ\\text{C}$:ta ($65\\,{}^\\circ\\text{C}$), koska kuuman veden lämpökapasiteetti on kolminkertainen."
   }
 ]

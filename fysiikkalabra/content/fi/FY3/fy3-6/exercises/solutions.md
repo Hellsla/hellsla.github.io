@@ -59,14 +59,15 @@
 **Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä $95\,{}^\circ\text{C}$:ta, koska kuumaa vettä on neljä kertaa enemmän. Energiatase toteutuu: $160\,\text{g} \cdot 17{,}4\,\text{K} = 40\,\text{g} \cdot 69{,}6\,\text{K}$.
 
 ## fy3-6-L2-02
-**Annettu:** $P = 2{,}4\,\text{kW}$, vesi $m = 1{,}5\,\text{kg}$, $T_\text{alku} = 15\,{}^\circ\text{C}$, $T_\text{loppu} = 95\,{}^\circ\text{C}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Kysytty:** lämmitysaika $t$ sekunteina
-**Periaate:** Energia säilyy: kun kaikki keittimen energia siirtyy veteen, keittimen ajassa $t$ antama energia $Pt$ on yhtä suuri kuin veden lämmittämiseen tarvittava lämpömäärä $c m \Delta T$.
-**Kaava:** $P t = c m \Delta T$, missä $\Delta T = T_\text{loppu} - T_\text{alku}$, joten $t = \dfrac{c m \Delta T}{P}$
-**Muunnokset:** $P = 2{,}4\,\text{kW} = 2400\,\text{W} = 2400\,\tfrac{\text{J}}{\text{s}}$. $\Delta T = 95\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 80\,\text{K}$.
-**Sijoitus:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}5\,\text{kg} \cdot 80\,\text{K}}{2400\,\tfrac{\text{J}}{\text{s}}} = \dfrac{502\,800\,\text{J}}{2400\,\tfrac{\text{J}}{\text{s}}} = 209{,}5\,\text{s}$
-**Vastaus:** $210\,\text{s}$, kaksi merkitsevää numeroa kuten tehossa $2{,}4\,\text{kW}$ ja massassa $1{,}5\,\text{kg}$.
-**Järkevyys:** Noin 3,5 minuuttia vastaa kokemusta vedenkeittimestä. Todellisuudessa aika on hieman pidempi, koska osa energiasta lämmittää keitintä ja ilmaa. Yksiköt: $\dfrac{\text{J}}{\text{J/s}} = \text{s}$.
+**Annettu:** teho $P = 100\,\text{W}$, kappaleen massa $m = 0{,}50\,\text{kg}$, lämpötila ajan funktiona kuvaajassa; kaikki lämmittimen energia siirtyy kappaleeseen
+**Kysytty:** metallin ominaislämpökapasiteetti $c$
+**Periaate:** Energia säilyy: kun kaikki lämmittimen energia siirtyy kappaleeseen, lämmittimen ajassa $t$ antama energia $Pt$ on yhtä suuri kuin kappaleen lämmittämiseen tarvittava lämpömäärä $cm\Delta T$. Kuvaajasta saadaan aika ja lämpötilan muutos.
+**Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja päättyy risteykseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Lämmitysaika on siis $t = 180\,\text{s} - 0\,\text{s} = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,\text{K}$.
+**Kaava:** $Pt = cm\Delta T$, josta $c = \dfrac{Pt}{m\Delta T}$
+**Muunnokset:** Ei tarvita: $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lämpötilojen erotus celsiusasteina on sama kuin kelvineinä.
+**Sijoitus:** $c = \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0{,}50\,\text{kg} \cdot 40\,\text{K}} = \dfrac{18\,000\,\text{J}}{20\,\text{kg}\cdot\text{K}} = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Vastaus:** $900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Kuvaajan arvot luetaan tarkasti ruudukosta, joten hyväksytään $870\ldots930\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+**Järkevyys:** Arvo on sama kuin alumiinin ominaislämpökapasiteetti taulukossa, joten kappale voi olla alumiinia. Se on selvästi pienempi kuin veden $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, mikä sopii siihen, että metalli lämpenee nopeasti. Yksiköt: $\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
 
 ## fy3-6-L2-03
 **Annettu:** vesi $m = 80\,\text{kg}$, $T_\text{alku} = 9{,}0\,{}^\circ\text{C}$, $Q = 15\,\text{MJ}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä

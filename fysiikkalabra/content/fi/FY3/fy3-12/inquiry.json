@@ -306,10 +306,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämmön siirtymistapa",
+      "prompt": "Huoneen ilma on viileää, mutta takkatulen edessä istuvan kasvot tuntuvat heti lämpimiltä. Miten lämpö siirtyy tulesta kasvoihin?",
+      "choices": [
+        {
+          "text": "Johtumalla ilman kautta, koska lämpö etenee ilman hiukkasten törmäyksissä tulesta kasvoille.",
+          "feedback": "Ilma johtaa lämpöä hyvin huonosti, ja siksi sitä käytetään eristeenä, esimerkiksi ikkunalasien välissä ja villapaidan kuiduissa. Tulen lämpö ei kulje kasvoille ilman hiukkasten törmäyksissä vaan lämpösäteilynä."
+        },
+        {
+          "text": "Konvektiolla, koska tulen lämmittämä ilma virtaa kasvoille.",
+          "feedback": "Tulen lämmittämä ilma nousee ylös, savuhormiin, eikä virtaa sivulle kasvoille. Konvektio lämmittäisi huoneen ilmaa hitaasti, mutta kasvot lämpenevät heti, ja jos ne suojataan levyllä, lämmön tunne loppuu heti. Silloin kyseessä on lämpösäteily."
+        },
+        {
+          "text": "Lämpösäteilynä, koska tuli lähettää säteilyä, jonka kasvojen iho imee ja joka lämmittää ihoa suoraan.",
+          "correct": true,
+          "feedback": "Oikein. Lämpösäteily kulkee ilman läpi valon nopeudella eikä tarvitse väliainetta, eikä se lämmitä ilmaa juuri lainkaan. Kasvot lämpenevät, kun ne imevät säteilyä, kuten Auringon säteilyä imevä maanpinta. Levy tulen ja kasvojen välissä pysäyttäisi säteilyn heti."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Ilmakehän energiatase",
+      "title": "3. Ilmakehän energiatase",
       "prompt": "Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee $390\\,\\text{W/m}^2$. Siitä $100\\,\\text{W/m}^2$ pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle $150\\,\\text{W/m}^2$. Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä $240\\,\\text{W/m}^2$. Kuinka suuren tehon neliömetriä kohti ilmakehä säteilee ylöspäin avaruuteen? Luvut ovat esimerkkiarvoja.",
       "answer": 140,
       "unit": "W/m²",
@@ -336,7 +358,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Ystäväsi väittää: ”Maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta, joten lisähiilidioksidi ei voi muuttaa sen lämpötilaa. Sitä paitsi kasvihuoneilmiö on kokonaan haitallinen.” Selitä energiatasapainon ja lämpösäteilyn avulla, mikä väitteessä on oikein ja mikä väärin.",
       "criteria": [
         "Sanon, että tasapainossa tuleva ja lähtevä teho ovat yhtä suuret ja lämpötila pysyy vakiona.",
@@ -350,7 +372,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

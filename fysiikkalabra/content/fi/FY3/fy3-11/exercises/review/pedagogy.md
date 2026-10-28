@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7ade301110d15aed
+CONTENT-HASH: 2c3491834a24668e
+
+Delta review over the audit's PASS (7ade301110d15aed): L1-04 (chainsaw heat balance) replaced by a figure task fy3-11/pv-isobaari; L3-02 answer 9.60 → 9.6.
+
 ## Blocking
+- none
 ## Polish
-- exercises.json fy3-11-L1-02, L2-03 — within one text some quantities are now inline LaTeX and others are plain ("1,70 litraa", "101 kPa", "125 kPa:na", "1,60 litraa" next to "$700{,}0\,\text{J}$"); convert all or none per task so the numbers look alike on the page, e.g. "$125\,\text{kPa}$:n paineena".
-- solutions.md L1-03 Järkevyys — "kuten lämpövoimakoneella pitääkin" is added without saying why; fine for L1, but a short "(osa lämmöstä on luovutettava kylmempään)" as in L1-02 would repair the misconception.
+- L1-01, L1-02 and L1-04 are now all W = pΔV; the first-law bookkeeping Q1 = W + Q2 at L1 is gone (it remains only at higher levels and in the exit). Consider whether one L1 task on it is needed.
+- some quantities remain plain (480,0 kPa, 0,0250 m³, 101 kPa, 125 kPa).
 ## Checked
-- Delta (LaTeX conversion of numbers with units, "Ilmakuivan" birch wood, heater wording, "kylmempään ympäristöön, tavallisesti mereen") read in context: no number or unit changed, answers and tolerances untouched.
-- Case endings after math units are correct (`$45\,\text{kW}$:n`, `$90{,}0\,\%$:n`, `$100\,\text{km}$:n).
-- L3-02 reworded situation now states why resistive heating gives heat equal to electricity; the matching solution Periaate follows it.
-- L3-01 solution now says heat leaves to "kylmempään ympäristöön, tavallisesti mereen", consistent with the lesson.
-- Levels 5/4/3 kept; none repeats the biopower example.
-- No captures were available ("none yet"); phone readability rests on the passing layout checks.
+- Figure needed: the text gives no values; p = 250 kPa and V from 1,0 to 4,0 l come from the grid (description lists them). No shaded area, no work value.
+- W = 250 000 Pa · 0,0030 m³ = 750 J; tolerance 2 % gives 735-765 J as the solution says.
+- 360 px capture: horizontal line, two dots, arrow for the direction, axes readable.
+- Level L1 fits. Kuvaajan lukeminen present; Finnish clear; LaTeX in new text.

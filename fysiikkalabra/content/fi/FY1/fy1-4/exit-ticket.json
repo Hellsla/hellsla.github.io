@@ -1,9 +1,5 @@
 [
   {
-    "q": "Mittauspisteet asettuvat suurin piirtein suoralle, mutta eivät täsmälleen. Miten kuvaajaan piirretään suora ja miksi pisteitä ei yhdistetä murtoviivaksi?",
-    "a": "Suora piirretään niin, että se kulkee pisteiden joukon keskeltä: se on lähellä kaikkia pisteitä ja pisteitä on suoran molemmin puolin suunnilleen yhtä paljon. Murtoviiva yhdistäisi myös satunnaiset mittausvirheet, mutta suora kuvaa ilmiön yleistä riippuvuutta."
-  },
-  {
     "q": "Suora kulkee pisteiden $(2{,}0\\,\\text{s};\\ 5{,}0\\,\\text{m})$ ja $(6{,}0\\,\\text{s};\\ 11{,}0\\,\\text{m})$ kautta. Mikä on sen yhtälö $s = kt + b$?",
     "a": "$k = \\dfrac{11{,}0\\,\\text{m} - 5{,}0\\,\\text{m}}{6{,}0\\,\\text{s} - 2{,}0\\,\\text{s}} = 1{,}5\\,\\text{m/s}$ ja $b = 5{,}0\\,\\text{m} - 1{,}5\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 2{,}0\\,\\text{s} = 2{,}0\\,\\text{m}$, joten $s = 1{,}5\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 2{,}0\\,\\text{m}$."
   },

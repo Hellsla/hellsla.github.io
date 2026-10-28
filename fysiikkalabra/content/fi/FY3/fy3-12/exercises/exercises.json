@@ -35,8 +35,9 @@
     {
       "id": "fy3-12-L1-05",
       "level": 1,
-      "text": "Auringosta tulee maapallolle keskimäärin $340{,}0\\,\\text{W}$:n säteilyteho jokaista neliömetriä kohti. Siitä $30{,}0\\,\\%$ heijastuu takaisin avaruuteen, ja loppu imeytyy. Kuinka suuren tehon neliömetriä kohti maapallo säteilee avaruuteen lämpösäteilynä, kun se on energiatasapainossa?",
-      "answer": 238,
+      "text": "Kuvassa on maapallon energiavirtoja neliömetriä kohti ilmakehän ylärajalla. Maapallon keskilämpötila pysyy vakiona. Kuinka suuri teho neliömetriä kohti lähtee avaruuteen lämpösäteilynä? Lue tarvittavat arvot kuvasta.",
+      "figure": "fy3-12/earth-flows",
+      "answer": 239,
       "unit": "W/m²",
       "tolerance": 0.02
     }

@@ -335,10 +335,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kiehuva vesi",
+      "prompt": "Kattilassa vesi kiehuu tasaisesti $100\\,{}^\\circ\\text{C}$:ssa. Liesilevyn teho käännetään suuremmaksi. Mitä tapahtuu?",
+      "choices": [
+        {
+          "text": "Veden lämpötila nousee yli $100\\,{}^\\circ\\text{C}$:n, koska veteen siirtyy enemmän energiaa.",
+          "feedback": "Avoimessa kattilassa kiehuvan veden lämpötila ei nouse kiehumispisteen yli. Lisäenergia ei kasvata molekyylien liike-energiaa vaan irrottaa molekyylejä toisistaan, joten se kuluu höyrystymiseen."
+        },
+        {
+          "text": "Veden lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, mutta vettä höyrystyy joka sekunti enemmän.",
+          "correct": true,
+          "feedback": "Oikein. Höyrystymiseen kuluva energia on $Q = rm$, joten suurempi teho höyrystää saman ajassa suuremman massan. Lämpötila pysyy vakiona, kunnes vesi on kiehunut pois."
+        },
+        {
+          "text": "Veden kiehuminen hidastuu, koska energiaa tulee enemmän kuin vesi ehtii ottaa vastaan.",
+          "feedback": "Vesi ottaa vastaan kaiken siirtyvän energian: höyrystyminen vain nopeutuu. Energiaa ei jää käyttämättä, vaan jokainen lisäjoule höyrystää lisää vettä."
+        },
+        {
+          "text": "Mikään ei muutu, koska kiehuvan veden lämpötila ei muutu.",
+          "feedback": "Lämpötila todella pysyy samana, mutta höyrystymisen nopeus muuttuu. Siirtyvä energia ei katoa: se höyrystää enemmän vettä sekunnissa, joten vesi kiehuu pois nopeammin."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Lämpenemiskäyrä",
+      "title": "3. Lämpenemiskäyrä",
       "prompt": "Kattilaa lämmitetään $1500\\,\\text{W}$:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä $(t, T)$ lämpötila on $100\\,{}^\\circ\\text{C}$:ssa vaakasuora hetkestä $t = 2{,}0\\,\\text{min}$ hetkeen $t = 17{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
       "answer": 0.597,
       "unit": "kg",
@@ -364,7 +390,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Miksi 100-asteinen höyry polttaa ihoa pahemmin kuin sama massa 100-asteista vettä? Käytä selityksessä olomuodon muutosta ja energiaa.",
       "criteria": [
         "Sanon, että höyry tiivistyy iholla vedeksi ja luovuttaa silloin lämpömäärän $Q = rm$.",
@@ -379,7 +405,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

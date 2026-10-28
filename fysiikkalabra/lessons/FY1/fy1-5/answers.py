@@ -13,7 +13,7 @@ a = {}
 # Level 1: one formula, values given
 a["fy1-5-L1-01"] = 5.5 * 20                       # s = v t = 5,5 m/s · 20 s = 110 m
 a["fy1-5-L1-02"] = 360 / 45                       # v = s / t = 360 m / 45 s = 8,0 m/s
-a["fy1-5-L1-03"] = 560 / 1.4                      # t = s / v = 560 m / 1,4 m/s = 400 s
+a["fy1-5-L1-03"] = 150 / (20 / 8)                  # figure fy1-5/line-read: (0; 0) and (8 s; 20 m) -> v = 2,5 m/s; t = 150 m / 2,5 m/s = 60 s
 a["fy1-5-L1-04"] = 18 / 4.0 * 10                  # s0 = 0, so s / t is constant: s = (18 m / 4,0 s) · 10 s = 45 m
 a["fy1-5-L1-05"] = (21 - 7.0) / (6.0 - 2.0)       # v = Δs / Δt = (21 m − 7,0 m) / (6,0 s − 2,0 s) = 3,5 m/s
 # Level 2: a conversion or a rearrangement, or s = s0 + v t

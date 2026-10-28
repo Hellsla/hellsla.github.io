@@ -19,10 +19,11 @@
     {
       "id": "fy3-9-L1-03",
       "level": 1,
-      "text": "Koulun vesiraketti on 1,50 litran muovipullo, johon on laskettu vettä ja pumpattu ilmaa. Laukaisuhetkellä pullossa on $1{,}00\\,\\textsf{l}$ ilmaa, jonka paine on 430 kPa. Kun vesi on suihkunnut ulos, ilma täyttää koko pullon, jolloin sen tilavuus on $1{,}50\\,\\textsf{l}$. Oleta, että ilman lämpötila ei muutu ja ilmaa ei ole vielä päässyt ulos. Mikä on ilman paine pullossa tällöin?",
-      "answer": 287,
+      "text": "Kuvaajassa on esimerkkiaineisto: kertakäyttöruiskun ilman paine $p$ tilavuuden $V$ funktiona, kun ruiskun kärki on suljettu ja mäntää liikutetaan hitaasti, joten ilman lämpötila pysyy samana. Mikä on ilman paine, kun sen tilavuus on $25\\,\\text{ml}$? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-9/boyle-points",
+      "answer": 80,
       "unit": "kPa",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy3-9-L1-04",

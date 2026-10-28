@@ -59,14 +59,15 @@
 **Järkevyys:** Tulos on noin $2{,}5 \cdot 3{,}6 = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} : 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$, mikä on rauhallisen pyöräilyn vauhti.
 
 ## fy1-4-L2-02
-**Annettu:** suoran pisteet $(t_1;\ h_1) = (2{,}0\,\text{min};\ 7{,}0\,\text{cm})$ ja $(t_2;\ h_2) = (6{,}0\,\text{min};\ 15{,}0\,\text{cm})$; kysytty hetki $t = 10{,}0\,\text{min}$
-**Kysytty:** korkeus $h$ hetkellä $t = 10{,}0\,\text{min}$ senttimetreinä
-**Periaate:** Pinta nousee tasaisesti, joten korkeus noudattaa suoraa $h = kt + b$. Kulmakerroin lasketaan kahdesta pisteestä ja vakiotermi yhdestä pisteestä. Hetki $10{,}0\,\text{min}$ on mittausalueen ulkopuolella, joten ennuste olettaa, että nousu jatkuu samana.
-**Kaava:** $k = \dfrac{h_2 - h_1}{t_2 - t_1}$ ja $b = h_1 - k t_1$, joten $h = kt + b = h_1 + k\,(t - t_1)$
-**Muunnokset:** Ei tarvita: korkeudet ovat senttimetreinä ja ajat minuutteina.
-**Sijoitus:** $k = \dfrac{15{,}0\,\text{cm} - 7{,}0\,\text{cm}}{6{,}0\,\text{min} - 2{,}0\,\text{min}} = 2{,}0\,\tfrac{\text{cm}}{\text{min}}$ ja $b = 7{,}0\,\text{cm} - 2{,}0\,\tfrac{\text{cm}}{\text{min}} \cdot 2{,}0\,\text{min} = 3{,}0\,\text{cm}$, joten $h = 2{,}0\,\tfrac{\text{cm}}{\text{min}} \cdot 10{,}0\,\text{min} + 3{,}0\,\text{cm} = 23\,\text{cm}$
-**Vastaus:** $23\,\text{cm}$, kaksi merkitsevää numeroa, koska kulmakerroin $2{,}0\,\tfrac{\text{cm}}{\text{min}}$ on kahden numeron tarkkuudella.
-**Järkevyys:** Pinta nousee kahden sentin minuutissa, joten kuuden minuutin kohdan 15,0 cm jälkeen se nousee vielä neljässä minuutissa noin 8 cm: $15 + 8 = 23\,\text{cm}$.
+**Annettu:** kuvaajan mittauspisteet $(t;\ s)$: $(1\,\text{s};\ 0{,}6\,\text{m})$, $(2\,\text{s};\ 0{,}8\,\text{m})$, $(3\,\text{s};\ 1{,}6\,\text{m})$, $(4\,\text{s};\ 2{,}1\,\text{m})$, $(5\,\text{s};\ 2{,}4\,\text{m})$ ja $(6\,\text{s};\ 2{,}9\,\text{m})$; kysytty hetki $t = 8{,}0\,\text{s}$
+**Kysytty:** kärryn kulkema matka $s$ hetkellä $8{,}0\,\text{s}$ metreinä
+**Periaate:** Kärry liikkuu tasaisesti, joten matka kasvaa ajan mukana lineaarisesti ja pisteisiin sovitetaan suora $s = kt + b$. Pisteet poikkeavat suorasta satunnaisesti, joten suora piirretään pisteiden keskelle niin, että sen molemmille puolille jää pisteitä, eikä minkään kahden pisteen kautta. Ennuste olettaa, että liike jatkuu samanlaisena myös mittausalueen jälkeen.
+**Kuvaajan lukeminen:** Pisteiden keskelle piirretty suora kulkee lähes origon kautta, ja hetkellä $6{,}0\,\text{s}$ se on kohdassa $2{,}9\,\text{m}$. Luetaan suoralta nämä kaksi kaukana toisistaan olevaa pistettä, $(0\,\text{s};\ 0{,}0\,\text{m})$ ja $(6{,}0\,\text{s};\ 2{,}9\,\text{m})$, ja jatketaan suoraa hetkeen $8{,}0\,\text{s}$.
+**Kaava:** $k = \dfrac{s_2 - s_1}{t_2 - t_1}$ ja $s = s_1 + k\,(t - t_1)$
+**Muunnokset:** Ei tarvita: ajat ovat sekunteina ja matkat metreinä.
+**Sijoitus:** $k = \dfrac{2{,}9\,\text{m} - 0{,}0\,\text{m}}{6{,}0\,\text{s} - 0\,\text{s}} = 0{,}4833\,\tfrac{\text{m}}{\text{s}}$, joten $s = 0{,}0\,\text{m} + 0{,}4833\,\tfrac{\text{m}}{\text{s}} \cdot 8{,}0\,\text{s} = 3{,}87\,\text{m}$
+**Vastaus:** $s \approx 3{,}9\,\text{m}$, kaksi merkitsevää numeroa, koska suoralta luetut arvot ovat kahden numeron tarkkuudella. Silmämääräinen sovitus vaihtelee, joten noin $3{,}6\ldots4{,}2\,\text{m}$ on hyvä vastaus.
+**Järkevyys:** Kärry kulkee noin puoli metriä sekunnissa, joten hetken $6\,\text{s}$ noin $2{,}9\,\text{m}$:stä se etenee kahdessa sekunnissa vielä noin metrin: $2{,}9\,\text{m} + 1{,}0\,\text{m} \approx 3{,}9\,\text{m}$. Mittausalueen ulkopuolinen ennuste on epävarmempi kuin mittausalueen sisältä luettu arvo.
 
 ## fy1-4-L2-03
 **Annettu:** suoran pisteet $(V_1;\ m_1) = (3{,}0\,\textsf{l};\ 3{,}9\,\text{kg})$ ja $(V_2;\ m_2) = (9{,}0\,\textsf{l};\ 9{,}9\,\text{kg})$, missä $m$ on kanisterin ja veden yhteismassa

@@ -15,8 +15,7 @@ a["fy3-6-L1-05"] = c_jaa * 0.50 * (-4.0 - (-22)) / 1e3   # ice pack warms −22 
 # L2-01 tea water: 160 g at 95 °C + 40 g at 8,0 °C, both water, so c cancels and grams need no conversion:
 # c m1 (T1 − T) = c m2 (T − T2)  ->  T = (m1 T1 + m2 T2) / (m1 + m2) = (15 200 + 320) / 200 = 77,6 °C -> 78 °C
 a["fy3-6-L2-01"] = (160 * 95 + 40 * 8.0) / (160 + 40)
-Q_kettle = c_vesi * 1.5 * (95 - 15)                      # kettle water: Q = 4190 · 1,5 kg · 80 K = 502 800 J
-a["fy3-6-L2-02"] = Q_kettle / 2.4e3                      # P t = Q -> t = 502 800 J / 2400 W = 209,5 s -> 210 s
+a["fy3-6-L2-02"] = 100 * (180 - 0) / (0.50 * (60 - 20))  # figure fy3-6/heating-line: (0 s; 20 °C) to (180 s; 60 °C), c = P t/(m ΔT) = 18 000 J/(0,50 kg · 40 K) = 900 J/(kg·K)
 dT_tank = 15e6 / (c_vesi * 80)                           # water heater: ΔT = Q / (c m) = 15 000 000 J / (4190 · 80 kg) = 44,75 K
 a["fy3-6-L2-03"] = 9.0 + dT_tank                         # final temperature 9,0 °C + 44,75 K = 53,75 °C -> 54 °C
 C_kauha = c_al * 0.25                                    # aluminium ladle: C = c m = 900 · 0,25 kg = 225 J/K, start 95 °C

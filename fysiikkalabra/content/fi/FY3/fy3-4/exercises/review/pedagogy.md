@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e421ffd346e680cb
+CONTENT-HASH: 71f841a0fe71562f
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-4/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Round 2: no round-1 Blocking item. Delta review of the diff: figure task tolerance 0,03 to 0,04.
+
 ## Blocking
-
+- none
 ## Polish
-- The paragraph under 'Mistä paine syntyy?' is about 125 words; splitting it at the column derivation would help a phone reader.
+- Plain units left in other texts ('720 N', '98,5 kPa', '350 kPa', '100 kPa').
+- Figure at 360 px: A and B labelled at line ends and coloured blue/copper; lines are told apart by label, not colour alone; gridlines faint.
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well; the two new ### subheadings name their content and sit after the figure, not between a figure and its paragraph.
+- Round-1 Polish done: 0,04 * 6,0 = 0,24, so 5,76-6,24 m, which contains the documented range 5,8-6,2 m.
+- h_A = 15 / 10 * 4,0 = 6,0 m recomputed; task still needs the figure and tests slope = rho g with shared p0; Kuvaajan lukeminen present.

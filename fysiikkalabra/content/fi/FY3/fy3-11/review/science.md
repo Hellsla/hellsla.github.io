@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 52aa6a2eb19695e1
+CONTENT-HASH: b726ca376903e1f8
+
+Delta review over the audit's PASS (52aa6a2eb19695e1): new choice check-c2 (heat pump 1,0 kWh electricity, 3,0 kWh delivered) from the exit ticket, checks renumbered, exit text "kaksi", lesson-answers.py added.
 
 ## Blocking
-
+- none
 ## Polish
-- lesson.md:70 — "lämpötilaero kuuman lähteen lämpötilaan nähden" is the Carnot ratio, which holds only for absolute temperatures — add "(kelvineinä)" or "absoluuttisiin lämpötiloihin".
-- lesson.md:221 — "500 MW … kolmen numeron arvo" is a choice, not a fact (a trailing zero is ambiguous) — say the powers are read as three-digit values, or write 5,00 · 10² MW.
-- lessons/FY3/fy3-11/answers.py:12,14,34 — the comments end "-> 37 %", "-> 22 %", "-> 12 kW", but the answers are 37,2 %, 21,7 % and 12,0 kW — match the comments to exercises.json.
-- exercises/solutions.md:98 — typo "polttoatehon" — "polttoainetehon".
-
+- inquiry.json:429 — "Sähkövastus muuttaisi 1,0 kWh sähköä täsmälleen 1,0 kWh lämmöksi": the guardrail and exercise L3-02 say the resistor turns the electrical energy into internal energy that passes on as heat, efficiency "käytännössä 100 %". Suggest "…muuttaa käytännössä kaiken sähköenergian sisäenergiaksi, joka siirtyy lämpönä huoneeseen".
+- inquiry.json:433 — "Kitka ja häviöt muuttavat osan sähköstä lämmöksi": same wording point (sisäenergiaksi).
 ## Checked
-- Recomputed in one script: every exercise answer, exp-1 (ΔV = 2Q/(5p₁): 1,00/1,50/2,00 l, W_k 200/300/400 J, ΔU 600 J), the cycle B values Q₁ = 650 J, Q₂ = 550 J, W = 100 J, η ≈ 15 %, cycle A W = 0 with Q₂ = 500 J, suunnittele (2000/1250/800 MW, distractors 941 and 667), siirto 22,5 MW, check-2 450 J, exit ticket 100 J and 18/42 kW.
-- sim.js phaseAt matches the stated monatomic model; Q₁ − Q₂ = W holds in every phase; the η key appears only after the cycle is done.
-- Sign convention: ΔU = Q − W_k is tied to fy3-5's ΔU = Q + W with W = −W_k, the same in the theory, kertaus, virhe, the solutions and answers.py.
-- Efficiency guardrails: the CHP total efficiency is kept apart from the electrical efficiency (85–90 %, example 88 %); the heat pump's lämpökerroin is said not to be an efficiency; the resistance heater is "käytännössä" 100 %; the heat engine limit is stated with no false "unavoidable friction" cause.
-- Exactly one correct option in kertaus, pred-1, pred-2, exp-2 question, virhe and check-1; each distractor's feedback gives the right reason.
-- Flow-figure widths: 24/60 = 40 %; heat pump 20 + 40 = 60, COP 3.
-- Example: η₁ = 0,380, η₂ = 0,880, losses 310/60 MW; the balances close.
-- The sim's numbers are called model values in the feedback and the conclusion's model answer.
+- Q_ulko = 3,0 − 1,0 = 2,0 kWh; ε = 3,0 (symbol ε as in the lesson); energy balance Q_sisälle = Q_ulko + E_s right.
+- Distractor "luo energiaa" wrong; feedback right (energy conserved, taken from outdoor air).
+- Distractor "kolminkertainen hyötysuhde" wrong; feedback follows the guardrail (η ≤ 100 %, COP is not an efficiency).
+- Distractor "kitka" wrong; losses are part of the 1,0 kWh, cannot give 2 kWh more; right.
+- Exactly one correct option; lesson-answers.py reproduces 2,0 and 3,0.
+- Removed exit question is the one converted; two remain; "kaksi" matches.

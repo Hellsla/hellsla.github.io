@@ -19,14 +19,15 @@
 **Järkevyys:** Tarkistus takaisin: $8{,}0\,\text{m/s} \cdot 45\,\text{s} = 360\,\text{m}$. Nopeus vastaa noin $29\,\text{km/h}$, mikä vastaa hyvän juoksijan vauhtia 400 metrin juoksussa.
 
 ## fy1-5-L1-03
-**Annettu:** nopeus $v = 1{,}4\,\text{m/s}$, matka $s = 560\,\text{m}$; liike on tasaista ja alkaa nollakohdasta
-**Kysytty:** aika $t$ sekunteina
-**Periaate:** Nopeus on vakio, joten matka on verrannollinen aikaan ja aika saadaan jakamalla matka nopeudella.
-**Kaava:** $s = vt$, josta $t = \dfrac{s}{v}$
-**Muunnokset:** Ei tarvita: matka on metreinä ja nopeus m/s, joten metrit supistuvat ja jäljelle jää sekunti.
-**Sijoitus:** $t = \dfrac{560\,\text{m}}{1{,}4\,\tfrac{\text{m}}{\text{s}}} = 400\,\text{s}$
-**Vastaus:** $400\,\text{s}$, kaksi merkitsevää numeroa kuten nopeudessa $1{,}4\,\text{m/s}$.
-**Järkevyys:** Nopeus $1{,}4\,\text{m/s}$ on noin $5\,\text{km/h}$, jolla $0{,}56\,\text{km}$ kestää noin $0{,}11\,\text{h} \approx 6{,}7\,\text{min} \approx 400\,\text{s}$.
+**Annettu:** kuvaaja, jossa kävelijän paikka $s$ on ajan $t$ funktiona suora viiva origosta; liike jatkuu tasaisena kuvaajan ulkopuolella; matka $s = 150\,\text{m}$
+**Kysytty:** aika $t$ sekunteina, kun matka on $150\,\text{m}$
+**Periaate:** Suora viiva origosta tarkoittaa tasaista liikettä, ja viivan kulmakerroin on nopeus. Kun nopeus tunnetaan, aika kuvaajan ulkopuolellekin saadaan jakamalla matka nopeudella.
+**Kuvaajan lukeminen:** Viiva kulkee ruudukon risteyksen kautta, jossa $t_1 = 0\,\text{s}$ ja $s_1 = 0\,\text{m}$ (origo), sekä risteyksen kautta, jossa $t_2 = 8\,\text{s}$ ja $s_2 = 20\,\text{m}$. Muut risteykset ovat esimerkiksi $(4\,\text{s};\,10\,\text{m})$ ja $(10\,\text{s};\,25\,\text{m})$. Lukema on tarkka ruudukosta, joten vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
+**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = vt$, josta $t = \dfrac{s}{v}$
+**Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
+**Sijoitus:** $v = \dfrac{20\,\text{m} - 0\,\text{m}}{8\,\text{s} - 0\,\text{s}} = 2{,}5\,\dfrac{\text{m}}{\text{s}}$ ja $t = \dfrac{150\,\text{m}}{2{,}5\,\frac{\text{m}}{\text{s}}} = 60\,\text{s}$
+**Vastaus:** $60\,\text{s}$ eli yksi minuutti; nopeus on luettu kahdella merkitsevällä numerolla, joten vastaus on annettu samalla tarkkuudella.
+**Järkevyys:** Nopeus $2{,}5\,\text{m/s}$ on noin $9\,\text{km/h}$, reipas kävely tai hidas hölkkä. Kuvaajassa $10\,\text{s}$ vie $25\,\text{m}$, joten $150\,\text{m}$ eli kuusi kertaa pidempi matka vie kuusi kertaa pidemmän ajan, $60\,\text{s}$.
 
 ## fy1-5-L1-04
 **Annettu:** $s_1 = 18\,\text{m}$ ajassa $t_1 = 4{,}0\,\text{s}$; kysytty aika $t_2 = 10\,\text{s}$; liike alkaa lähtöpisteestä, joten $s_0 = 0$

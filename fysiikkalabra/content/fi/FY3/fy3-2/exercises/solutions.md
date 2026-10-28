@@ -6,7 +6,7 @@
 **Muunnokset:** Voima on newtoneina ja matka metreinä, joten tulo on suoraan jouleina ($1\,\text{J} = 1\,\text{N}\cdot\text{m}$). Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $W = 80\,\text{N} \cdot 25\,\text{m} = 2000\,\text{J} = 2{,}000\,\text{kJ}$
 **Vastaus:** $2{,}0\,\text{kJ}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa $80\,\text{N}$ ja $25\,\text{m}$.
-**Järkevyys:** Karkea arvio: $80\,\text{N} \approx 8\,\text{kg}$:n paino, ja $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. Sama työ nostaisi 20 kg:n kappaleen noin 10 m:n korkeuteen ($20\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2{,}0\,\text{kJ}$). $W$ on positiivinen, koska voima on liikkeen suuntainen.
+**Järkevyys:** Karkea arvio: $80\,\text{N} \approx 8\,\text{kg}$:n paino, ja $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. Sama työ nostaisi $20\,\text{kg}$:n kappaleen noin $10\,\text{m}$:n korkeuteen ($20\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2{,}0\,\text{kJ}$). $W$ on positiivinen, koska voima on liikkeen suuntainen.
 
 ## fy3-2-L1-02
 **Annettu:** paino $G = 150\,\text{N}$, nostokorkeus $h = 1{,}2\,\text{m}$, nosto hidas
@@ -16,7 +16,7 @@
 **Muunnokset:** Paino on newtoneina ja korkeus metreinä, joten muunnoksia ei tarvita: $\text{N}\cdot\text{m} = \text{J}$.
 **Sijoitus:** $W = 150\,\text{N} \cdot 1{,}2\,\text{m} = 180\,\text{J}$
 **Vastaus:** $180\,\text{J}$, kaksi merkitsevää numeroa kuten korkeudessa $1{,}2\,\text{m}$.
-**Järkevyys:** Karkea arvio: $150\,\text{N} \cdot 1\,\text{m} = 150\,\text{J}$, ja matka on hieman yli metrin. Paino $150\,\text{N}$ vastaa noin $\tfrac{150\,\text{N}}{9{,}81\,\text{m/s}^2} \approx 15\,\text{kg}$:n massaa, joten työ vastaa 15 kg:n hyllyn nostamista reilun metrin. $W$ on positiivinen, koska nostovoima ja liike ovat ylöspäin.
+**Järkevyys:** Karkea arvio: $150\,\text{N} \cdot 1\,\text{m} = 150\,\text{J}$, ja matka on hieman yli metrin. Paino $150\,\text{N}$ vastaa noin $\tfrac{150\,\text{N}}{9{,}81\,\text{m/s}^2} \approx 15\,\text{kg}$:n massaa, joten työ vastaa $15\,\text{kg}$:n hyllyn nostamista reilun metrin. $W$ on positiivinen, koska nostovoima ja liike ovat ylöspäin.
 
 ## fy3-2-L1-03
 **Annettu:** työ $W = 36\,\text{kJ}$, aika $t = 12\,\text{s}$
@@ -26,18 +26,18 @@
 **Muunnokset:** $36\,\text{kJ} = 36 \cdot 1000\,\text{J} = 36\,000\,\text{J}$, jotta tulos tulee watteina ($1\,\text{W} = 1\,\text{J/s}$). Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{36\,000\,\text{J}}{12\,\text{s}} = 3000\,\text{W} = 3{,}000\,\text{kW}$
 **Vastaus:** $3{,}0\,\text{kW}$, kaksi merkitsevää numeroa kuten ajassa $12\,\text{s}$.
-**Järkevyys:** Yksiköt kilojoule ja sekunti antavat suoraan kilowatin: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. Tällä teholla voisi nostaa noin 300 kg:n kuorman tasaisesti metrin sekunnissa ($300\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2{,}9\,\text{kW}$), mikä sopii hissin moottorille.
+**Järkevyys:** Yksiköt kilojoule ja sekunti antavat suoraan kilowatin: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. Tällä teholla voisi nostaa noin $300\,\text{kg}$:n kuorman tasaisesti metrin sekunnissa ($300\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2{,}9\,\text{kW}$), mikä sopii hissin moottorille.
 
 ## fy3-2-L1-04
-**Annettu:** voima $F = 35\,\text{N}$ vakiona ja liikkeen suuntainen, matka $s = 6{,}0\,\text{m}$
-**Kysytty:** voiman tekemä työ $W$ jouleina kuvaajan pinta-alana
-**Periaate:** Työ on $(s,F)$-kuvaajan ja $s$-akselin väliin jäävän alueen pinta-ala. Kun voima on vakio, kuvaaja on vaakasuora jana ja alue on suorakulmio.
-**Kuvaajan lukeminen:** Jana on korkeudella $F = 35\,\text{N}$ välillä $s = 0\ldots 6{,}0\,\text{m}$. Suorakulmion korkeus on $35\,\text{N}$ ja leveys $6{,}0\,\text{m}$.
-**Kaava:** $W = A_\text{suorakulmio} = F s$, jolloin työ on jo ratkaistu: $W = F s$
-**Muunnokset:** Voima on newtoneina ja matka metreinä, joten muunnoksia ei tarvita: $\text{N}\cdot\text{m} = \text{J}$.
-**Sijoitus:** $W = 35\,\text{N} \cdot 6{,}0\,\text{m} = 210\,\text{J}$
-**Vastaus:** $210\,\text{J}$, kaksi merkitsevää numeroa kuten matkassa $6{,}0\,\text{m}$.
-**Järkevyys:** Kaava $W = F s$ antaa saman tuloksen kuin pinta-ala, koska vakiovoimalla pinta-ala on suorakulmio. Karkea arvio: $35\,\text{N} \approx 40\,\text{N}$ ja $6\,\text{m}$ antavat noin $240\,\text{J}$, hieman enemmän kuin $210\,\text{J}$, koska $35\,\text{N} < 40\,\text{N}$. Yksikkö $\text{N}\cdot\text{m}$ on joule.
+**Annettu:** kuvaajasta luettuna voima $F_1 = 25\,\text{N}$ matkalla $0\ldots 6\,\text{m}$ ja $F_2 = 10\,\text{N}$ matkalla $6\ldots 10\,\text{m}$, voima on liikkeen suuntainen
+**Kysytty:** voiman tekemä kokonaistyö $W$ jouleina
+**Periaate:** Työ on $(s,F)$-kuvaajan ja $s$-akselin väliin jäävän alueen pinta-ala. Voima ei ole vakio koko matkalla, joten kaava $W = F s$ ei käy suoraan koko matkalle. Pinta-ala jakautuu kahteen suorakulmioon, joissa voima on vakio.
+**Kuvaajan lukeminen:** Ensimmäinen vaakasuora jana on ruudukon viivalla $F_1 = 25\,\text{N}$ ja ulottuu pisteestä $s = 0$ pisteeseen $s = 6\,\text{m}$, jossa se putoaa pystysuoraan. Toinen jana on viivalla $F_2 = 10\,\text{N}$ ja ulottuu pisteestä $s = 6\,\text{m}$ pisteeseen $s = 10\,\text{m}$. Toisen suorakulmion leveys on $s_2 = 10\,\text{m} - 6\,\text{m} = 4\,\text{m}$.
+**Kaava:** $W = W_1 + W_2$, joten $W = F_1 s_1 + F_2 s_2$
+**Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita: $\text{N}\cdot\text{m} = \text{J}$.
+**Sijoitus:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 150\,\text{J} + 40\,\text{J} = 190\,\text{J}$
+**Vastaus:** $190\,\text{J}$, kaksi merkitsevää numeroa, koska kuvaajan arvot on luettu ruudukon viivoilta kokonaislukuina.
+**Järkevyys:** Keskimääräinen voima koko $10\,\text{m}$:n matkalla on $\dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$, mikä on voiman pienimmän ($10\,\text{N}$) ja suurimman ($25\,\text{N}$) arvon välissä. Jos laskisit koko matkalle $25\,\text{N} \cdot 10\,\text{m} = 250\,\text{J}$, saisit liian suuren tuloksen, koska voima putoaa kesken matkan.
 
 ## fy3-2-L1-05
 **Annettu:** voima $F = 20\,\text{N}$ (liikkeen suuntainen), nopeus $v = 3{,}0\,\text{m/s}$, liike tasaista
@@ -67,7 +67,7 @@
 **Muunnokset:** $1{,}5\,\text{kW} = 1500\,\text{W}$ ja $4{,}0\,\text{min} = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$, jotta työ tulee jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $W = 1500\,\text{W} \cdot 240\,\text{s} = 360\,000\,\text{J} = 360\,\text{kJ}$
 **Vastaus:** $360\,\text{kJ}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5\,\text{kW}$ ja ajassa $4{,}0\,\text{min}$.
-**Järkevyys:** Toinen reitti: $1{,}5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0{,}10\,\text{kWh}$, ja $1\,\text{kWh} = 3600\,\text{kJ}$, joten $0{,}10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. Tällä työllä voisi nostaa 1000 kg:n vesimäärän noin 37 m:n korkeuteen ($\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} \approx 37\,\text{m}$).
+**Järkevyys:** Toinen reitti: $1{,}5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0{,}10\,\text{kWh}$, ja $1\,\text{kWh} = 3600\,\text{kJ}$, joten $0{,}10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. Tällä työllä voisi nostaa $1000\,\text{kg}$:n vesimäärän noin $37\,\text{m}$:n korkeuteen ($\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} \approx 37\,\text{m}$).
 
 ## fy3-2-L2-03
 **Annettu:** massa $m = 850\,\text{kg}$, nostokorkeus $h = 30\,\text{m}$, nosto hidas, $g = 9{,}81\,\text{m/s}^2$
@@ -80,7 +80,7 @@
 **Järkevyys:** Elementin paino on $850\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 8{,}3\,\text{kN}$. Karkea arvio: $8\,\text{kN} \cdot 30\,\text{m} = 240\,\text{kJ}$, lähellä tulosta. Kolmenkymmenen metrin korkeus vastaa kymmenkerroksista taloa, ja neljännesmegajoulen työ on uskottava nosturille.
 
 ## fy3-2-L2-04
-**Annettu:** voima $F_1 = 10\,\text{N}$ vakiona matkalla $s_1 = 2{,}0\,\text{m}$ (0–2,0 m); sitten voima kasvaa tasaisesti arvosta $F_1 = 10\,\text{N}$ arvoon $F_2 = 30\,\text{N}$ matkalla $s_2 = 4{,}0\,\text{m}$ (2,0–6,0 m)
+**Annettu:** voima $F_1 = 10\,\text{N}$ vakiona matkalla $s_1 = 2{,}0\,\text{m}$ ($0\text{–}2{,}0\,\text{m}$); sitten voima kasvaa tasaisesti arvosta $F_1 = 10\,\text{N}$ arvoon $F_2 = 30\,\text{N}$ matkalla $s_2 = 4{,}0\,\text{m}$ ($2{,}0\text{–}6{,}0\,\text{m}$)
 **Kysytty:** kokonaistyö $W$ jouleina
 **Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala, ja sen voi laskea osissa: vakiovoiman osuus on suorakulmio ja tasaisesti kasvavan osuus puolisuunnikas.
 **Kuvaajan lukeminen:** Kuvaajassa on vaakasuora jana korkeudella $10\,\text{N}$ välillä $0\ldots 2{,}0\,\text{m}$ ja sen jatkona suora jana korkeudesta $10\,\text{N}$ korkeuteen $30\,\text{N}$ välillä $2{,}0\ldots 6{,}0\,\text{m}$. Suorakulmion korkeus on $10\,\text{N}$ ja leveys $2{,}0\,\text{m}$. Puolisuunnikkaan yhdensuuntaiset sivut ovat $10\,\text{N}$ ja $30\,\text{N}$ ja korkeus (leveys $s$-akselilla) $4{,}0\,\text{m}$.
@@ -109,7 +109,7 @@
 **Muunnokset:** Massa on kilogrammoina ja korkeus metreinä, joten muunnoksia ei tarvita. Pudotusten lukumäärä $n = 20$ on pelkkä luku.
 **Sijoitus:** $W_1 = 2{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}5\,\text{m} = 29{,}43\,\text{J}$; $\Delta U = 20 \cdot 29{,}43\,\text{J} = 588{,}6\,\text{J}$
 **Vastaus:** $590\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$ ja korkeudessa $1{,}5\,\text{m}$.
-**Järkevyys:** Karkea arvio: paino on noin $20\,\text{N}$, joten yksi pudotus antaa noin $20\,\text{N} \cdot 1{,}5\,\text{m} = 30\,\text{J}$ ja 20 pudotusta noin $600\,\text{J}$. Tulos on sama kuin noin 60 kg:n kappaleen nostaminen metrin, eli pieni energiamäärä, joten veden lämpötila muuttui vain vähän ja mittaus vaati tarkkuutta. Siksi Joule toisti pudotuksia monta kertaa.
+**Järkevyys:** Karkea arvio: paino on noin $20\,\text{N}$, joten yksi pudotus antaa noin $20\,\text{N} \cdot 1{,}5\,\text{m} = 30\,\text{J}$ ja 20 pudotusta noin $600\,\text{J}$. Tulos on sama kuin noin $60\,\text{kg}$:n kappaleen nostaminen metrin, eli pieni energiamäärä, joten veden lämpötila muuttui vain vähän ja mittaus vaati tarkkuutta. Siksi Joule toisti pudotuksia monta kertaa.
 
 ## fy3-2-L3-03
 **Annettu:** paneelin teho $P = 180\,\text{W}$, veden massa $m = 1000\,\text{kg}$, nostokorkeus $h = 50\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$, kaikki energia menee nostamiseen

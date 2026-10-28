@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: eddc57610d8a36e9
+CONTENT-HASH: b8ad0d8a294d0e11
+
+Delta review over the audit's PASS (eddc57610d8a36e9): one exercise replaced by a figure task, LaTeX units.
 
 ## Blocking
-- none.
-
+- none
 ## Polish
-- solutions.md fy1-4-L3-02 Vastaus — "väliltä 10–$20\,\text{min}$" wraps only the second number; write "väliltä $10\,\text{min}$–$20\,\text{min}$" as the lesson does for ranges.
-- solutions.md fy1-4-L3-01 Järkevyys and L1-01 — a few quantities stay plain text: "0,47 sekunnissa", "noin 6 sekunnissa", "1,3 metriä sekunnissa". Words are acceptable for spelled-out units, but "ehti 0,47 sekunnissa" mixes with the neighbouring $0{,}85\,\text{m/s}$; write $0{,}47\,\text{s}$.
-- solutions.md fy1-4-L3-03 — the text now says "epävarmuus" in Annettu but "lukemavirhe" in Vastaus and Järkevyys ("virhe 20 %"). Use one term (lukeman epävarmuus) throughout, as in the lesson.
-- Earlier open items about Δ standing for differences and uncertainties in L3-03 are partly met by the new wording, but "Δk : k" still reuses Δ; one sentence "Δk on kulmakertoimen epävarmuus" would settle it.
-
+- Task says 'aseta viivoitin kuvan päälle': on a phone a ruler is awkward; 'piirrä silmämääräisesti suora' with the grid is enough.
+- The lesson's own scatter figure shows the same data with the fit s = 0,5 m/s t; a student who remembers it gets 4,0 m without the figure (inside the tolerance). Acceptable, the figure still is needed to read the points.
+- Level L2 fits (fit then extrapolate).
 ## Checked
-- Diff is LaTeX conversion of numbers with units (L1-01, L1-03, L2-03, L2-04, L3-01, L3-02, L3-03) and a wording change from "virhe-arvio" to "epävarmuus" in L3-03; no answer, unit or tolerance changed.
-- L2-04: 4,0 + 2,5 · 10 = 29,0 and 4,0 + 2,5 · 5,0 = 16,5; ratio 1,8 still correct; $10\,\text{km}$:n and $5{,}0\,\text{km}$:n have the right case.
-- L3-03: 0,2 : 1,0 = 0,20, 0,2 : 16 = 0,0125, ratio 16, and "20 %" and "1,3 %" are consistent; "varovaisesti arvioiden" correctly signals a conservative bound.
-- L3-02: slopes −1,8, −0,90 and −1,2 °C/min and ratio 2,0 are correct.
-- Counts 5/4/3 unchanged, situation first, contexts recognisable, no repeat of the worked example.
-- Hash unchanged at the end.
+- Figure needed: the text gives no values; the six points are only in the figure. 360 px: points clear, grid 1 s by 0,5 m, y axis labelled 1-4, axes extend to 9 s so extrapolation is possible.
+- Computed least-squares slope 8,4/17,5 = 0,48 m/s, s(8 s) = 1,733+0,48*4,5 = 3,89 m; tolerance 0,08 gives 3,6-4,2 m, matching the solution; the by-eye line through origin gives 3,87 m.
+- Solution has **Kuvaajan lukeminen:** and says the answer is a range; aria-label lists data not the fit.

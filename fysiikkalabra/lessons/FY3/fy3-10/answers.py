@@ -28,8 +28,10 @@ n_tuntematon = 101e3 * 1.00e-3 / (R * K(22))             # glass bulb 1,00 l at 
 a["fy3-10-L2-02"] = 1.15 / n_tuntematon                  # M = m/n = 1,15 g / 0,04118 mol = 27,93 g/mol -> 27,9 g/mol (typpi, 28)
 T2_diesel = K(30) * (4.60e6 * 0.0300) / (101e3 * 0.500)  # combined law T₂ = T₁ p₂V₂/(p₁V₁) = 303,15 K · 4,60 MPa · 0,0300 l / (101 kPa · 0,500 l) = 828,4 K
 a["fy3-10-L2-03"] = T2_diesel - 273.15                   # back to celsius: 555,3 °C -> 555 °C
-V_mooli = 1.00 * R * K(-30) / 102e3                      # one mole at −30 °C = 243,15 K and 102 kPa: V = nRT/p = 0,01981 m³
-a["fy3-10-L2-04"] = V_mooli * 1000                       # in litres: 19,81 l -> 19,8 l
+# fy3-10/pt-suorat (2,00 l vessels): A reads (400 K; 100 kPa), B reads (400 K; 60 kPa) off the gridlines
+n_A = 100e3 * 2.00e-3 / (R * 400)                        # n = pV/(RT) = 100 000 Pa · 0,00200 m³ / (8,31 · 400 K) = 0,06017 mol
+n_B = 60e3 * 2.00e-3 / (R * 400)                         # B: 60 000 Pa · 0,00200 m³ / (8,31 · 400 K) = 0,03610 mol
+a["fy3-10-L2-04"] = n_A - n_B                            # difference 0,02407 mol -> 0,024 mol
 # Level 3: reasoning or an unfamiliar context
 n_henkays = 101e3 * 0.55e-3 / (R * K(37))                # one breath 0,55 l at 101 kPa, 310,15 K: n = pV/(RT) = 0,02155 mol
 a["fy3-10-L3-01"] = n_henkays * N_A / 1e22               # N = n N_A = 1,298·10²² molecules; answer in units of 10²² -> 1,3

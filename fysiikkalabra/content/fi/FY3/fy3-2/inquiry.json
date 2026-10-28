@@ -357,10 +357,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kantaminen ja työ",
+      "prompt": "Nostat laatikon, jonka paino on $98{,}1\\,\\text{N}$, tasaisella nopeudella $1{,}0\\,\\text{m}$ ylös. Sen jälkeen kannat sitä $5{,}0\\,\\text{m}$ vaakasuoraan tasaisella vauhdilla. Kuinka suuren työn kannatteleva voimasi tekee yhteensä?",
+      "choices": [
+        {
+          "text": "Noin $98\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Oikein. Nostossa voima on ylöspäin ja liike ylöspäin, joten $W = G h = 98{,}1\\,\\text{N} \\cdot 1{,}0\\,\\text{m} \\approx 98\\,\\text{J}$. Vaakasuoralla kantamisella kannatteleva voima on pystysuora ja liike vaakasuora, eli voima on kohtisuorassa liikettä vastaan, joten se ei tee työtä."
+        },
+        {
+          "text": "Noin $590\\,\\text{J}$.",
+          "feedback": "Laskit voiman kertaa koko matkan, $98{,}1\\,\\text{N} \\cdot 6{,}0\\,\\text{m} \\approx 590\\,\\text{J}$. Työ on voiman ja liikkeen suuntaisen matkan tulo. Vaakasuoralla matkalla voima ei ole liikkeen suuntainen, joten sen osuus on nolla."
+        },
+        {
+          "text": "Noin $490\\,\\text{J}$, koska kantaminen on raskaampaa kuin nostaminen.",
+          "feedback": "Väsyminen ei ole fysiikan työtä. Vaakasuoralla kantamisella kannatteleva voima on kohtisuorassa liikettä vastaan, joten työ on nolla, vaikka lihakset väsyvät. Lukuarvo $490\\,\\text{J}$ olisi $98{,}1\\,\\text{N} \\cdot 5{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "$0\\,\\text{J}$, koska laatikon vauhti ei muutu.",
+          "feedback": "Voiman tekemä työ ei riipu siitä, muuttuuko vauhti. Nostossa kannatteleva voima ja siirtymä osoittavat samaan suuntaan, joten voima tekee positiivisen työn $98\\,\\text{J}$. Vain vaakasuoralla osuudella työ on nolla."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaaja ja laskeminen",
+      "title": "3. Kuvaaja ja laskeminen",
       "prompt": "$(s, F)$-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–$4{,}0\\,\\text{m}$ ja laskee sitten tasaisesti nollaan välillä 4,0–$8{,}0\\,\\text{m}$. Kuinka suuren työn voima tekee koko $8{,}0\\,\\text{m}$:n matkalla? Vastaa jouleina.",
       "answer": 180,
       "unit": "J",
@@ -387,7 +413,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Selitä omin sanoin, miksi hissin moottori tekee saman työn riippumatta nostonopeudesta, mutta tarvitsee nopeammassa nostossa suuremman tehon. Käytä käsitteitä työ, teho ja yksiköitä.",
       "criteria": [
         "Sanon, että työ $W = Fs$ riippuu nostovoimasta ja nostokorkeudesta, ei ajasta.",
@@ -402,7 +428,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

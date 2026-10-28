@@ -1,7 +1,11 @@
 {
   "version": 1,
   "contribution": "Aiemmat tunnit antoivat osat: lämpömäärä $Q = cm\\Delta T$, sulamis- ja höyrystymislämpö sekä rakennusosan läpi johtuva teho $P = UA\\Delta T$. Tämä tunti yhdistää ne energiakirjanpidoksi arjen tilanteissa: tuleva energia kuluu lämpenemiseen tai olomuodon muutokseen, ja olomuodon muutoksen aikana lämpötila pysyy vakiona.",
-  "learn": ["Osaat yhdistää lämpömäärän, sulamis- ja höyrystymislämmön sekä rakennusosan läpi johtuvan tehon yhdeksi energiakirjanpidoksi.", "Osaat perustella, kuluuko tuleva energia lämpenemiseen vai olomuodon muutokseen.", "Osaat ratkaista arjen lämpöilmiöihin liittyviä monivaiheisia tehtäviä."],
+  "learn": [
+    "Osaat yhdistää lämpömäärän, sulamis- ja höyrystymislämmön sekä rakennusosan läpi johtuvan tehon yhdeksi energiakirjanpidoksi.",
+    "Osaat perustella, kuluuko tuleva energia lämpenemiseen vai olomuodon muutokseen.",
+    "Osaat ratkaista arjen lämpöilmiöihin liittyviä monivaiheisia tehtäviä."
+  ],
   "prior": [
     "Lämpömäärä lämmittäessä on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen)",
     "Sulaminen ja höyrystyminen vaativat energiaa (jäätyminen ja tiivistyminen vapauttavat sitä), mutta lämpötila ei muutu, $Q = sm$ ja $Q = rm$ (luku Olomuodon muutokset)",
@@ -314,10 +318,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Sulamislämpö kylmälaukussa",
+      "prompt": "Kylmälaukkuun voi laittaa joko $1{,}0\\,\\text{kg}$ jäätä tai $1{,}0\\,\\text{kg}$ vettä, kumpikin lämpötilassa $0\\,{}^\\circ\\text{C}$. Kumpi pitää laukun sisällön kylmänä pidempään, ja miksi?",
+      "choices": [
+        {
+          "text": "Yhtä kauan, koska kumpikin on lämpötilassa $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Sama lämpötila ei tarkoita, että aine voi ottaa vastaan yhtä paljon energiaa. Jään on ensin sulattava, ja sulaminen sitoo $334\\,\\text{kJ}$ kilogrammaa kohti ennen kuin lämpötila voi nousta."
+        },
+        {
+          "text": "Jää, koska sen sulaminen sitoo noin $334\\,\\text{kJ}$ ennen kuin lämpötila alkaa nousta.",
+          "feedback": "Oikein. Laukkuun tuleva energia kuluu ensin jään sulattamiseen, ja lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa. Saman veden lämmittäminen $0\\,{}^\\circ\\text{C}$:sta $8\\,{}^\\circ\\text{C}$:seen sitoo vain $Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1{,}0\\,\\text{kg} \\cdot 8\\,\\text{K} \\approx 34\\,\\text{kJ}$, noin kymmenesosan.",
+          "correct": true
+        },
+        {
+          "text": "Vesi, koska vesi johtaa lämpöä paremmin ja jäähdyttää ruoat nopeammin.",
+          "feedback": "Jää johtaa lämpöä itse asiassa paremmin kuin vesi. Lämmönjohtavuus kertoo kuitenkin vain, kuinka nopeasti lämpötilat tasoittuvat, eikä sitä, kuinka paljon energiaa aine voi ottaa vastaan lämpenemättä. Jään sulaminen sitoo paljon enemmän energiaa kuin saman veden lämpeneminen muutamalla asteella."
+        },
+        {
+          "text": "Jää, koska jää on kylmempää kuin vesi.",
+          "feedback": "Tässä molemmat ovat lämpötilassa $0\\,{}^\\circ\\text{C}$, joten ero ei johdu lämpötilasta. Jää kestää pidempään, koska sen sulaminen sitoo energiaa ennen kuin lämpötila voi nousta."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kaksi energian kohdetta",
+      "title": "3. Kaksi energian kohdetta",
       "prompt": "Pakastimesta otettu $0{,}60\\,\\text{kg}$:n jääpussi on $-10\\,{}^\\circ\\text{C}$:ssa. Kuinka paljon energiaa tarvitaan, jotta jää lämpenee $0\\,{}^\\circ\\text{C}$:seen ja sulaa kokonaan vedeksi, jonka lämpötila on $0\\,{}^\\circ\\text{C}$? Jään ominaislämpökapasiteetti on $2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Vastaa kilojouleina.",
       "answer": 210,
       "unit": "kJ",
@@ -343,7 +373,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Löylyvettä heitetään $25\\,\\text{kg}$:n kiuaskiville. Selitä energian säilymisen ja olomuodon muutoksen avulla, miksi kivien lämpötila laskee heti ja miksi löyly tuntuu kuumalta iholla. Miksi tämä ei toimisi, jos veden höyrystyminen ei vaatisi energiaa?",
       "criteria": [
         "Sanon, että vesi saa energian kivistä, joten kivien sisäenergia ja lämpötila pienenevät.",
@@ -358,7 +388,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

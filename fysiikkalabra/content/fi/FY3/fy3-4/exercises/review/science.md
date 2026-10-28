@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e421ffd346e680cb
+CONTENT-HASH: 71f841a0fe71562f
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-4/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Round 2: L2-03 tolerance 0,03 → 0,04; the round-1 blocking item is fixed.
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: new `learn` goals (p = F/A, p = p0 + rho g h, intercept p0 and slope rho g) agree with the lesson and inquiry; new subheadings 'Mistä paine syntyy?' and 'Ilmanpaine ja ylipaine' head paragraphs that are about exactly that, no text changed; `Kaava: Paine ja hydrostaattinen paine` fits. Nothing in the diff changes the physics, numbers or answers.
+- Tolerance 0,04 on 6,0 m accepts 5,76–6,24 m, which covers the solution's stated 5,8–6,2 m; the swapped ratio 4,0 · 10/15 = 2,7 m stays rejected.
+- Recomputed: k_A = 10 kPa/m, k_B = 15 kPa/m, p_B(4,0 m) = 160 kPa, h_A = 6,0 m.

@@ -322,10 +322,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämpötasapaino",
+      "prompt": "Eristetyssä astiassa sekoitetaan $1{,}0\\,\\text{kg}$ vettä, jonka lämpötila on $80\\,{}^\\circ\\text{C}$, ja $3{,}0\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Mikä on veden lämpötila, kun lämpötila on tasoittunut?",
+      "choices": [
+        {
+          "text": "$50\\,{}^\\circ\\text{C}$, koska lämpötila asettuu alkulämpötilojen keskiarvoon.",
+          "feedback": "Keskiarvo toimisi vain, jos vettä olisi yhtä paljon. Kylmässä vedessä on kolme kertaa enemmän massaa, joten sen lämpötila muuttuu vähemmän. Lämpötila asettuu siihen, missä kuuman veden luovuttama lämpömäärä on yhtä suuri kuin kylmän veden vastaanottama."
+        },
+        {
+          "text": "$35\\,{}^\\circ\\text{C}$, koska luovutettu ja vastaanotettu lämpömäärä ovat yhtä suuret ja kylmää vettä on enemmän.",
+          "correct": true,
+          "feedback": "Oikein. Kuuma vesi luovuttaa lämpömäärän $c \\cdot 1{,}0\\,\\text{kg} \\cdot (80\\,{}^\\circ\\text{C} - T)$ ja kylmä vesi vastaanottaa $c \\cdot 3{,}0\\,\\text{kg} \\cdot (T - 20\\,{}^\\circ\\text{C})$. Kun nämä asetetaan yhtä suuriksi, $T = \\dfrac{1{,}0 \\cdot 80 + 3{,}0 \\cdot 20}{1{,}0 + 3{,}0}\\,{}^\\circ\\text{C} = 35\\,{}^\\circ\\text{C}$. Lämpötila on lähempänä sitä alkulämpötilaa, jota vastaavassa vedessä on enemmän massaa."
+        },
+        {
+          "text": "$65\\,{}^\\circ\\text{C}$, koska kuuma vesi määrää lämpötilan.",
+          "feedback": "Kuuma vesi ei määrää lämpötilaa, vaan massa ja ominaislämpökapasiteetti yhdessä. Tässä kylmää vettä on kolminkertainen määrä, joten sen lämpökapasiteetti on suurempi ja loppulämpötila jää lähemmäs $20\\,{}^\\circ\\text{C}$:ta. Tulos $65\\,{}^\\circ\\text{C}$ saataisiin, jos kuumaa vettä olisi kolminkertainen määrä."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kalorimetrinen mittaus",
+      "title": "3. Kalorimetrinen mittaus",
       "prompt": "Kalorimetrissä on $0{,}200\\,\\text{kg}$ vettä, jonka lämpötila on $18{,}0\\,{}^\\circ\\text{C}$. Siihen upotetaan $0{,}150\\,\\text{kg}$:n metallikappale, joka on lämmitetty $98{,}0\\,{}^\\circ\\text{C}$:seen. Lämpötila asettuu arvoon $29{,}0\\,{}^\\circ\\text{C}$. Määritä metallin ominaislämpökapasiteetti, kun kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta. Vastaa yksikössä J/(kg·K).",
       "answer": 891,
       "unit": "J/(kg·K)",
@@ -351,7 +373,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Suuren järven rannalla syksyn yöt ovat usein lauhempia ja kevään päivät viileämpiä kuin kaukana sisämaassa. Selitä ilmiö käyttämällä käsitteitä ominaislämpökapasiteetti ja lämpömäärä.",
       "criteria": [
         "Sanon, että veden ominaislämpökapasiteetti on suuri, noin viisinkertainen hiekkaan tai maahan verrattuna.",
@@ -366,7 +388,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

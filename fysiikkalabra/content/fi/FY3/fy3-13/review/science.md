@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4c5aa43d224fa957
+CONTENT-HASH: 5d476fe889e2eff9
+
+Delta review over the audit's PASS (4c5aa43d224fa957): new choice check-c2 (fitting a line to scattered points before extrapolating) from the exit ticket, checks renumbered, exit text "kaksi", numbers in feedback turned into LaTeX.
 
 ## Blocking
-
+- none
 ## Polish
-- inquiry.json:112 (aineisto, feedback of the "poistaa" option) — "kaikki pisteet ovat luotettavia" overclaims. A deviation smaller than the uncertainty gives no reason to reject a point, but it does not prove the point reliable — say "ei ole syytä hylätä yhtään pistettä".
-- lesson.md:323 and inquiry.json epavarmuus — the printed steep line 100,1 + 0,387θ gives 103,97 kPa at 10 °C, just under the bar end of 104 kPa (rounding of the exact 100,13 + 0,3867θ). This is harmless, but "koskettaa janan päätä" holds only to 0,03 kPa — print 0,3867 or say "likimain".
-- lessons/FY3/fy3-13/answers.py:22 — the key "L2-03-gauge-zero" is not an exercise id in the JSON that "the lint compares with exercises.json". Move it to a comment or to lesson-answers.py.
-
+- none
 ## Checked
-- Round 2: re-check of round-1 Blocking items against the fix diff. inquiry.json:116 now reads "ne ovat satunnaisia mittausvirheitä, jotka mahtuvat mittausepävarmuuden rajoihin": the error/uncertainty terms are kept apart, the sentence is grammatical, and the option is still a correct distractor with exactly one correct option in aineisto.
-- Recomputed in one script: the best line (0; 101,3)–(100; 138,0) gives k = 0,367 and θ₀ = −276,0 °C (a least-squares fit gives −276,2); the extreme lines give −258,66 and −294,81 °C, so Δθ₀ = 18,08 °C. The steep line touches the bars at 10 and 85 °C and the shallow one at 25 and 100 °C, and every residual of the best line is under 1 kPa. suora −275,8 °C; virhe −316 → −276 °C; siirto −276,9 °C; tarkistus-2 −282,9 °C; kertaus 313/293 = 1,068; s₂ misses the bars at 10, 70, 85 and 100 °C (measured from the SVG); the exit ticket gives 0,36 kPa/°C and −282…−258 °C.
-- The SVG coordinates of all four figures match the data and the lines. The main figure is to scale: −276, −259 and −295 °C.
-- Guardrails: the fit sentence ("yleensä"), uncertainty versus the manufacturer's error limit, the slope from two far points on the fitted line, the extrapolation range and its assumption, "todennäköisesti", and "the interval is an estimate, not a guaranteed limit" are all present and agree between the theory, the example, the inquiry and the summary.
-- Model conditions: closed rigid vessel, thin gas, liquefaction before 0 K; the absolute zero is stated as the minimum (not zero) particle energy.
-- Exactly one correct option in kertaus, ennuste-1, ennuste-2, aineisto, aariviiva, virhe and tarkistus-1. Each distractor's feedback gives the right reason.
-- The data are labelled model values with added scatter (source simulated).
+- Correct option (one fitted line through the error bars, then extrapolate) and its feedback use the guardrail sentence "…eivät yleensä sijaitse täsmälleen samalla suoralla…"; slope from two distant points on the line; a line may pass through a point.
+- Distractor "murtoviiva" wrong; feedback right (not a model, last segment from two neighbouring points).
+- Distractor "mittaus epäonnistui, pisteet aina samalla suoralla" wrong; feedback uses the guardrail outlier sentence.
+- Distractor "poistetaan poikkeavat" wrong; feedback uses "Tulosta ei poisteta pelkästään…, hylkääminen perusteltava ja dokumentoitava".
+- Exactly one correct option.
+- LaTeX conversions (20 kPa, 1 kPa, 108,6 kPa, 133,0 kPa, 18 kPa) keep their values.
+- Removed exit question (why the line misses points) is the one converted; two remain; "kaksi" matches.

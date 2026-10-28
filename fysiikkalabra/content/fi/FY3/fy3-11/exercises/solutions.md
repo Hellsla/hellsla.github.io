@@ -29,14 +29,15 @@
 **Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin, koska osa lämmöstä on luovutettava kylmempään, ja ydinvoimalaitoksen tyypillinen arvo on noin $35\,\%$. Energiatase: merivesi vie lauhduttimesta $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$, enemmän kuin yksikkö tuottaa sähköä. Arvio: $\tfrac{1600}{4300} \approx \tfrac{1}{2{,}7} \approx 0{,}37$.
 
 ## fy3-11-L1-04
-**Annettu:** polttoaineesta siirtyvä lämpö $Q_1 = 840\,\text{kJ}$ minuutissa, ympäristöön siirtyvä lämpö $Q_2 = 670\,\text{kJ}$ minuutissa
-**Kysytty:** moottorin tekemä työ $W$ minuutissa kilojouleina
-**Periaate:** Moottori toimii kierroksittain, joten sen sisäenergia ei kasva pitkällä aikavälillä. Energia säilyy: moottorin saama lämpö on yhtä suuri kuin ympäristöön siirtyvä lämpö ja tehty työ.
-**Kaava:** $Q_1 = W + Q_2$, joten $W = Q_1 - Q_2$
-**Muunnokset:** Molemmat lämmöt ovat kilojouleina ja samalta minuutilta, joten muunnosta ei tarvita.
-**Sijoitus:** $W = 840\,\text{kJ} - 670\,\text{kJ} = 170\,\text{kJ}$
-**Vastaus:** $170\,\text{kJ}$ minuutissa, kaksi merkitsevää numeroa. Lämmöt $840\,\text{kJ}$ ja $670\,\text{kJ}$ on annettu kymmenen kilojoulen tarkkuudella, joten niiden erotus tunnetaan kymmenien kilojoulejen tarkkuudella: $17 \cdot 10\,\text{kJ}$.
-**Järkevyys:** Työ on positiivinen ja pienempi kuin $Q_1$, kuten lämpövoimakoneella pitää. Teho on $\dfrac{170\,000\,\text{J}}{60\,\text{s}} \approx 2{,}8\,\text{kW}$, mikä sopii moottorisahalle. Hyötysuhde on $\dfrac{170}{840} \approx 20\,\%$, hieman huonompi kuin automoottorin.
+**Annettu:** kuvaajasta luettuna paine pysyy vakiona $p = 250\,\text{kPa}$, ja tilavuus kasvaa arvosta $V_1 = 1{,}0\,\textsf{l}$ arvoon $V_2 = 4{,}0\,\textsf{l}$
+**Kysytty:** kaasun tekemä työ $W_\text{k}$ jouleina
+**Periaate:** Paine on koko laajenemisen ajan sama, joten kaasun työ on paineen ja tilavuuden muutoksen tulo. Työ on positiivinen, koska kaasu laajenee ja työntää mäntää.
+**Kuvaajan lukeminen:** Jana on vaakasuora ja kulkee ruudukon viivalla $p = 250\,\text{kPa}$. Sen päät ovat ruudukon risteyksissä $V_1 = 1{,}0\,\textsf{l}$ ja $V_2 = 4{,}0\,\textsf{l}$, joten $\Delta V = V_2 - V_1 = 3{,}0\,\textsf{l}$.
+**Kaava:** $W_\text{k} = p\,\Delta V$
+**Muunnokset:** $p = 250\,\text{kPa} = 250\,000\,\text{Pa}$ ja $\Delta V = 3{,}0\,\textsf{l} = 0{,}0030\,\text{m}^3$, koska $1\,\textsf{l} = 10^{-3}\,\text{m}^3$.
+**Sijoitus:** $W_\text{k} = 250\,000\,\text{Pa} \cdot 0{,}0030\,\text{m}^3 = 750\,\text{J}$
+**Vastaus:** $W_\text{k} = 750\,\text{J}$, kaksi merkitsevää numeroa, koska tilavuudet $1{,}0\,\textsf{l}$ ja $4{,}0\,\textsf{l}$ luetaan kahden numeron tarkkuudella. Arvot luetaan ruudukon viivoilta, joten hyväksytty väli on $735$–$765\,\text{J}$.
+**Järkevyys:** Yksiköt täsmäävät: $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$. Tulos on sama kuin suorakulmion pinta-ala kuvaajassa: korkeus $250\,\text{kPa}$ ja leveys $3{,}0\,\textsf{l}$ antavat $250 \cdot 3{,}0 = 750\,\text{kPa}\cdot\textsf{l}$, ja $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$. Työ on positiivinen laajenemisessa, kuten pitääkin.
 
 ## fy3-11-L1-05
 **Annettu:** sähköenergia $W = 2{,}60\,\text{kWh}$, bensiinin energia $Q_1 = 12{,}0\,\text{kWh}$

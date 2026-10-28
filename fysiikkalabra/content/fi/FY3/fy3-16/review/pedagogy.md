@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b75319bc1ce1db3b
+CONTENT-HASH: a26a21e52a95ce0d
+
+Round 3: delta review of one feedback sentence set in check-c2 (kylmälaukku), option 'Vesi, koska vesi johtaa lämpöä paremmin': feedback now opens 'Jää johtaa lämpöä itse asiassa paremmin kuin vesi.'
+
 ## Blocking
+- none
 ## Polish
-- inquiry.json — the slot names three situations (sauna, kylmälaukku, jäähdytysneste), but the inquiry has activities only for the cooler (pred-1, pred-2, kayra, taulukko) and the sauna (loyly, siirto, check-3); the coolant appears only in the lesson text and figure. Add a short activity (e.g. an optional numeric on $P = c(m/t)\Delta T$ with a water versus glycol mixture) or confirm that the exercises cover it.
-- lesson.md Ydinajatus — three situations (kylmälaukku, sauna, jäähdytysneste) run as unlabelled paragraphs under one heading; add short `###` subheadings ("Kylmälaukku", "Sauna", "Jäähdytysneste") per house rules.
-- inquiry.json `prior` items and lesson.md Esimerkki — chapter names lack the italics of the house form ("(luku *Aineen lämpeneminen ja jäähtyminen*)"), and the example's "0,80 m²" is plain beside LaTeX values (`$0{,}80\,\text{m}^2$`).
-- lesson.md Esimerkki Järkevyys — "joten tulos on kohtuullisen vähän lyhyempi" is vague; "joten juomat lyhentävät aikaa vain noin $0{,}4\,\text{h}$".
+- exit-ticket.json q2 (sauna: why rocks cool more when water evaporates than if it only warmed) is criteria 2 and 4 of check-3 and its model answer; by NOTES §11 a repeat. Not Blocking, check-3 is optional: replace it, e.g. by a condensation or freezing item.
+- exit q1 (melt 0,40 kg ice and warm to 25 °C) is the check-2 skill; acceptable as a quick item.
+- check-c2 distractor 4 ('Jää, koska jää on kylmempää kuin vesi') picks the right object for a wrong reason; the prompt does not say how warm the surroundings are (the feedback assumes 8 °C); say 'kunnes sisältö lämpenee noin 8 °C:seen'.
 ## Checked
-- Opening question (why the cooler stays cold for hours then warms fast) is answered by the plateau, the table (Pt constant) and the example; the hook states the paradox without answering it.
-- Predictions precede the evidence: pred-1 is refuted or supported by the graph, pred-2 by the table, whose last row (36 K, 2,86 h) tests the tempting "50 % shorter" model.
-- Recomputed: 333 kJ, 8,59…2,86 h table, example 2,4 h and 19 K/h, loyly 86 % (14,3 / 6,0 distractors), siirto 65 s (8,4 / 56,5), check-2 213 kJ, virhe 63 kJ vs 267 kJ, exit ticket 175,5 kJ.
-- The example's laukku (UA 1,2 W/K, 2,4 h) and the Tutki laukku (UA 0,90 W/K, 3,7 h) are named as different in the text beside the graph.
-- Example has seven stages; the "juomat jäähtyvät heti" assumption is stated up front.
-- One correct option per choice item; feedback repairs (keskiarvo ignoring melting, "jää tuottaa kylmää", ratio of energies).
-- Finnish and case endings after math units read correctly.
-- Figures judged from alt texts only (no captures in the packet).
+- The fix is physically right (ice about 2,2 W/(m K), water about 0,6) and corrects the false premise in the option instead of half-accepting it; the sentence is short, plain Finnish. The following sentences separate conduction speed from energy capacity, so the feedback still repairs and leads to the melting-energy idea. The old 'weaker distractor 3' item is resolved by this.
+- Earlier checks stand: 4190 * 1,0 * 8 = 33 520 J ~ 34 kJ; 334 / 33,5 = 10,0; each other wrong option is a real misconception and its feedback repairs; LaTeX fine; titles 1-4; exit text 'kaksi' matches two questions.

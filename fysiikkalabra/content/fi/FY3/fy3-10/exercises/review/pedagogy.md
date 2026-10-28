@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1148bc79f3cd67b1
+CONTENT-HASH: d7d0fa102f301d1d
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-10/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Round 2: the round-1 Blocking item (tab character in the solutions tab) is fixed. Delta review of the diff: solutions.md Vastaus line.
+
 ## Blocking
-
-## Polish
 - none
+## Polish
+- many quantities are still plain (0,250 m³, 0,460 mol, 0,400 mol, 101 kPa, 4,60 MPa, 10,0 bar, 7,0 bar); the LaTeX conversion is incomplete.
+- the solution's first line could say that n is found from each line separately first.
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well.
+- Round-1 Blocking: line now reads '$0{,}0233$–$0{,}0247\,\text{mol}$'; no tab character remains in solutions.md (grep).
+- Recomputed: 40 000 * 0,00200 / (8,31 * 400) = 0,02407 mol; 3 % gives 0,0233-0,0247. Figure needed; level L2 fits; Kuvaajan lukeminen present.

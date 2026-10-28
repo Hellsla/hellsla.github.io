@@ -190,5 +190,30 @@ def hero():
     return f.svg()
 
 
+def pull_steps():
+    """A pulling force that drops in one step, for a task (scripts/figcat.py variant): the student reads the two force
+    levels and the two distances off the grid; the description lists the data, not the work."""
+    f = Fig("fy32-pull-steps", 330, "(s,F)-kuvaaja mittakaavassa: liikkeen suuntainen vetovoima on 25 N matkalla 0–6 m ja "
+            "putoaa sitten äkillisesti 10 N:iin, jossa se pysyy matkaan 10 m asti. Ruudukon väli on 1 m ja 5 N.")
+    ax = Axes(f, (92, 290), (500, 56), x=(0, 11), y=(0, 30), xticks=list(range(1, 11)), yticks=[5, 10, 15, 20, 25],
+              xlabel=r"s\ (\text{m})", ylabel=r"F\ (\text{N})",
+              xfmt=lambda v: fi(v) if v % 2 == 0 else "", yfmt=lambda v: fi(v))
+    ax.line([(0, 25), (6, 25)], HEAT, 3.5)
+    ax.line([(6, 10), (10, 10)], HEAT, 3.5)
+    ax.line([(6, 25), (6, 10)], HEAT, 3.5, "6 5")
+    ax.point(0, 25, HEAT)
+    ax.point(10, 10, HEAT)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "carry-lift": carry_lift, "joule": joule, "work-graphs": work_graphs, "spring-work": spring_work,
-           "lift-work": lift_work}
+           "lift-work": lift_work, "pull-steps": pull_steps}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "carry-lift": "reveals: carrying horizontally does no work",
+    "joule": "safe: Joule's setup, no values",
+    "work-graphs": "reveals: the work is the area under the graph",
+    "spring-work": "reveals: the triangle area under F = 0–40 N over 0,20 m",
+    "lift-work": "reveals: W = Gh at constant speed",
+    "pull-steps": "safe: a force of 25 N over 6 m then 10 N to 10 m, no work values; the description lists the levels",
+}

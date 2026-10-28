@@ -342,10 +342,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämpö ja sisäenergia",
+      "prompt": "Nuotiossa kuumentunut kivi lasketaan kylmään veteen. Mikä väite kuvaa tilannetta oikein?",
+      "choices": [
+        {
+          "text": "Kuumassa kivessä on paljon lämpöä, ja se siirtyy kivestä veteen.",
+          "feedback": "Tämä kuulostaa luontevalta, mutta lämpö ei ole kappaleen ominaisuus, jota kivessä olisi varastona. Kivessä on sisäenergiaa ja sillä on korkea lämpötila. Lämpö on energian siirtymistä, ja sitä on vain siirtymisen aikana."
+        },
+        {
+          "text": "Kivellä on veteen verrattuna korkeampi lämpötila, joten kivestä siirtyy veteen energiaa lämpönä. Kiven sisäenergia pienenee ja veden kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Lämpötilaero saa energian siirtymään kuumemmasta kylmempään, ja tätä siirtyvää energiaa sanotaan lämmöksi. Kiven sisäenergia pienenee ja veden kasvaa, ja energia säilyy."
+        },
+        {
+          "text": "Kun kivi ja vesi saavuttavat saman lämpötilan, lämpö on kadonnut.",
+          "feedback": "Energia ei katoa. Kiven luovuttama energia on päätynyt veteen ja kasvattanut sen sisäenergiaa. Lämpötilojen tasoituttua lämpöä ei enää siirry, mutta energiaa on edelleen yhtä paljon kuin alussa."
+        },
+        {
+          "text": "Kivestä siirtyy veteen lämpötilaa, kunnes lämpötilat ovat yhtä suuret.",
+          "feedback": "Lämpötila ei siirry mihinkään. Se mittaa hiukkasten keskimääräistä liike-energiaa. Siirtyvä suure on energia, jota sanotaan lämmöksi, ja sen seurauksena kiven lämpötila laskee ja veden nousee."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Energiakirjanpito",
+      "title": "3. Energiakirjanpito",
       "prompt": "Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua tehden siihen työn $80\\,\\text{J}$, ja kaasusta siirtyy seiniin lämpömäärä $30\\,\\text{J}$. Vaiheessa 2 kaasuun siirtyy lämpömäärä $50\\,\\text{J}$, ja kaasu laajenee tehden mäntään työn $70\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu kahden vaiheen aikana yhteensä? Vastaa jouleina.",
       "answer": 30,
       "unit": "J",
@@ -372,7 +398,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee nopeasti pumpatessa enemmän. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä $\\Delta U = Q + W$.",
       "criteria": [
         "Sanon, että työ siirtää ilmaan energiaa ja kasvattaa sen sisäenergiaa, mikä näkyy lämpötilan nousuna.",
@@ -387,7 +413,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

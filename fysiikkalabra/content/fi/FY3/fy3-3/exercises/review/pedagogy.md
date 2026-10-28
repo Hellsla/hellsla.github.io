@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d88a831999bf6f9a
-## Blocking
+CONTENT-HASH: 616b2bb1a2ffd6f2
 
+Round 2: the round-1 Blocking item (L2-03 tolerance too tight for a by-eye fit) is fixed. Delta review of the diff: tolerance 0,05 to 0,08.
+
+## Blocking
+- none
 ## Polish
-- exercises.json fy3-3-L2-02, L2-03, L3-01, L3-02 — temperatures are now LaTeX but the pressures in the same sentence stay plain ("90,0 kPa", "123 kPa", "110 kPa", "300 kPa", "150 kPa"); the line shows two number styles. Convert them to `$90{,}0\,\text{kPa}$` etc.
+- Level 2 fits (read, slope, extrapolate); the figure is readable at 360 px, but only 0 °C and 100 °C are labelled on x beyond -100/-50; the faint grid makes 102,5 hard to read.
+- The points are not exactly collinear (0,28 vs 0,26 kPa/°C), so the pair used changes the answer by about 2 kPa; now inside the tolerance.
 ## Checked
-- Delta judged in context: the exercise edits are unit-to-LaTeX conversions with correct Finnish case endings (`$20\,{}^\circ\text{C}$:sta … `$45\,{}^\circ\text{C}$:een`); each still has one unambiguous answer.
-- Answers re-derived: 294 K; 77 °C; -196 °C; 25 K; -270 °C; 60 °C; 102 kPa; 87 kPa; 400,15/100,15 = 4,0; 300·308,15/288,15 = 321 kPa; 127 °C; -127 °C; all inside the stated significant figures.
-- Levels 5/4/3 as in the course; none repeats the example (the example extrapolates to zero pressure, L2-03 extrapolates to a given temperature).
-- Solution edits: L1-02 now says "normaalipaineessa"; L2-04 Periaate no longer claims more than the lesson teaches; L3-03 Periaate states the proportionality as the task's premise, limited to dilute gas, then why it needs kelvins. All three read clearly and keep all seven steps.
-- L3-03 premise sentence is part of the task text, so a student can follow the solution without outside knowledge.
+- Round-1 Blocking: 0,08 * 47,5 = 3,8, so 43,7-51,3 kPa. A student reading the last point as 100 kPa gets 50 kPa (accepted); 45 kPa (the solution's low end) accepted; both ends of the solution's 45-50 inside.
+- 27,5 / 100 = 0,275 kPa/°C; 75 - 27,5 = 47,5 kPa recomputed; solution unchanged and consistent.

@@ -44,6 +44,7 @@ rows = []
 def save(pg, name, what, box=None, locator=None):
     """One capture (a locator, or a clip box in page coordinates), split into tiles when it is taller than TILE."""
     if locator is not None:
+        if not locator.is_visible(): return          # e.g. a task's figure inside a closed exercise level
         locator.scroll_into_view_if_needed(); pg.wait_for_timeout(150)
         b = locator.bounding_box()
         if not b or b["width"] < 2 or b["height"] < 2: return

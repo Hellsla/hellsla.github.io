@@ -118,4 +118,25 @@ def example_plot():
     return f.svg()
 
 
-FIGURES = {"error-types": error_types, "range-half": range_half, "zero-scale": zero_scale, "example-plot": example_plot}
+def pendulum_dots():
+    """A task-only picture: five repeated readings on a time axis, no mean and no range marked, to be read off."""
+    f = Fig("fy13-dots", 170, "Kuvaaja mittakaavassa: heilurin kymmenen heilahduksen aika t viidessä toistossa pisteinä aika-akselilla. "
+            "Akseli kulkee 12,0 sekunnista 13,0 sekuntiin, pystyviivat ja pienet merkit joka 0,1 sekunnin kohdalla ja numerot "
+            "joka 0,2 sekunnin kohdalla. Pisteet ovat kohdissa 12,2 s, 12,4 s, 12,6 s, 12,7 s ja 12,9 s.")
+    X = lambda t: 50 + (t - 12.0) * 440
+    ya = 110
+    for k in range(11):
+        t = 12.0 + k / 10
+        f.line(X(t), ya - 70, X(t), ya, RULE_LIGHT, 1.5)
+        f.line(X(t), ya, X(t), ya + 7, INK, 2)
+    _dots(f, X, ya, [12.4, 12.9, 12.6, 12.2, 12.7], 0.1)
+    _axis(f, X, ya, 12.0, 13.0, [12.0, 12.2, 12.4, 12.6, 12.8, 13.0])
+    return f.svg()
+
+
+FIGURES = {"error-types": error_types, "range-half": range_half, "zero-scale": zero_scale, "example-plot": example_plot,
+           "pendulum-dots": pendulum_dots}
+
+REUSE = {
+    "pendulum-dots": "safe: five repeated readings on a time axis, no mean or range marked",
+}

@@ -69,3 +69,8 @@ def epavarmuus():
 
 
 FIGURES = {"setup": setup, "epavarmuus": epavarmuus}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "setup": "safe: the setup with its variables, no results",
+    "epavarmuus": "reveals: the relative uncertainty for 1, 4 and 10 s",
+}

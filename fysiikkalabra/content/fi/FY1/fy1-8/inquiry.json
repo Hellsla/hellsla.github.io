@@ -286,10 +286,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Muuttujat",
+      "prompt": "Leluauto ajaa radalla lähtöviivalta maaliviivalle. Tutkija valitsee radan pituuden $s$ ja mittaa autolta kuluneen ajan $t$. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Matka on muutettava muuttuja ja aika mitattava muuttuja. Auto, paristot ja alusta pidetään vakioina.",
+          "feedback": "Oikein. Muutettavan muuttujan arvot valitsee tutkija, ja mitattavan muuttujan arvo luetaan mittarista. Muut asiat vakioidaan, jotta ajan muutoksen voi liittää matkan muutokseen.",
+          "correct": true
+        },
+        {
+          "text": "Aika on muutettava muuttuja, koska se muuttuu mittauksen aikana, ja matka on mitattava.",
+          "feedback": "Muutettava muuttuja ei tarkoita sitä, mikä muuttuu itsestään, vaan sitä, jonka arvon tutkija valitsee. Tässä tutkija valitsee radan pituuden, ja aika on tulos, joka luetaan kellosta."
+        },
+        {
+          "text": "Kaikkia asioita kannattaa muuttaa yhtä aikaa, jotta saadaan enemmän tietoa kerralla.",
+          "feedback": "Jos matkan lisäksi vaihdetaan esimerkiksi paristoja tai alustaa, ajan muutosta ei voi enää kytkeä yhteen syyhyn. Kerrallaan muutetaan vain yhtä muuttujaa ja muut pidetään samoina."
+        },
+        {
+          "text": "Vakioiden pitämistä ei tarvita, jos jokainen mittaus toistetaan useita kertoja.",
+          "feedback": "Toisto pienentää satunnaisvirheen vaikutusta, mutta ei korjaa sitä, että esimerkiksi paristojen varaus muuttuu mittauksesta toiseen. Muuttuva paristojen varaus voi vääristää kaikkia tuloksia samaan suuntaan."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Epävarmuuden laskeminen",
+      "title": "3. Epävarmuuden laskeminen",
       "prompt": "Oppilas mittaa kävelyajan viisi kertaa: $9{,}8\\,\\text{s}$, $10{,}2\\,\\text{s}$, $10{,}0\\,\\text{s}$, $9{,}9\\,\\text{s}$ ja $10{,}1\\,\\text{s}$. Tässä harjoituksessa epävarmuutta arvioidaan yksinkertaisesti ja varovaisesti puolella vaihteluvälistä. Mikä on tuloksen suhteellinen epävarmuus prosentteina, kun epävarmuutena käytetään tätä arviota?",
       "answer": 2.0,
       "unit": "%",
@@ -316,7 +342,7 @@
       "stage": "tarkista",
       "type": "explain",
       "optional": true,
-      "title": "3. Selitä johtopäätös",
+      "title": "4. Selitä johtopäätös",
       "prompt": "Oppilaan raportin johtopäätös kuuluu: ”Hypoteesi todistettiin oikeaksi, koska mittaus antoi nopeuden $0{,}42\\,\\text{m/s}$ kuten ennustettiin.” Selitä, mikä väitteessä on liian vahvaa ja miten johtopäätös pitäisi muotoilla.",
       "criteria": [
         "Sanon, että yksi koe ei todista hypoteesia, vaan antaa sille tukea tai kumoaa sen.",
@@ -330,7 +356,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

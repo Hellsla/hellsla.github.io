@@ -2,8 +2,8 @@
    1. The rubric of a Sovella itsenäisesti task (.rubric): the student picks the points each criterion earns (partial
       credit allowed); the total is shown as self-assessed points, never as a grade. A competency scored at most half
       shows its links to the chapters where it is practised (the task's `links`, written into the page by build.py).
-   2. Arvioi osaamistasi (.selfcheck) at the end of a chapter: Osaan / Tarvitsen vielä harjoitusta for each of the
-      chapter's own goals; the second shows where to go back to.
+   (The chapter-level "Arvioi osaamistasi", Osaan / Tarvitsen vielä harjoitusta, was removed by the teacher on
+   2026-10-28: a written answer is self-assessed against its model answer's criteria in inquiry.js instead.)
    Selections are kept in this browser only (localStorage, as inquiry.js keeps predictions); nothing is sent. The page
    works without storage and without this script: the criteria and choices are plain radio buttons. */
 (() => {
@@ -38,24 +38,6 @@
     };
     restore(crits, store.get(rubric.dataset.id));
     rubric.addEventListener('change', () => update(true));
-    update(false);
-  });
-
-  // 2. Arvioi osaamistasi: the chapter's goals, Osaan / Tarvitsen vielä harjoitusta
-  document.querySelectorAll('.selfcheck').forEach((box) => {
-    const items = [...box.querySelectorAll('li[data-goal]')], summary = box.querySelector('.selfcheck-summary');
-    const update = (save) => {
-      const state = {}; let ok = 0, n = 0;
-      items.forEach((li, i) => {
-        const sel = li.querySelector('input:checked');
-        if (sel) { state[i] = sel.value; n += 1; if (sel.value === 'ok') ok += 1; }
-        li.querySelector('.selfcheck-next').hidden = !(sel && sel.value === 'practice');
-      });
-      if (save) store.set(box.id, state);
-      summary.textContent = n ? msg('selfcheck_summary', { ok, n: items.length }) : '';
-    };
-    restore(items, store.get(box.id));
-    box.addEventListener('change', () => update(true));
     update(false);
   });
 })();
