@@ -3,7 +3,7 @@
  "Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s.": "Diagram of two situations. On the left a backpack is carried sideways: the supporting force F points up but the motion is sideways, so the force does no work, W = 0. On the right the backpack is lifted up: the force F and the motion are in the same direction, so the force does work W = F s.",
  "kanto sivulle": "carried sideways",
  "nosto ylös": "lifted up",
- "liike": "motion",
+ "liike": "path",
  "Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi.": "Diagram of Joule's experiment. A falling weight pulls a string that passes over a pulley and turns a paddle wheel in a vessel of water. The force of the weight does work over the falling distance h, and the paddle wheel warms the water: work turns into heat.",
  "työ": "work",
  "lämpö": "heat",

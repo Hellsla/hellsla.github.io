@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3e15af16ab2680c7
+CONTENT-HASH: 473d98cea0980914
 
 ## Blocking
 (none left; see Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 3e15af16ab2680c7
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Natural English, consistent terms (quantity of heat, specific latent heat of fusion, thermal equilibrium), step labels, button names in asterisks against the simulation, question wording and feedback matching options.
+- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.

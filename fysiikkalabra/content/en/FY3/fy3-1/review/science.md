@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2d9ad30df15e4ac6
+CONTENT-HASH: d436d035b2ff1d4b
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 2d9ad30df15e4ac6
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md prose, table, worked example (all steps, Given/Find/Principle/… labels), misconception and summary; meta.json; inquiry.json all fields incl. experiment intro/names/source_note, prediction choices and feedback (directions 'triples', 'at most', weight vs mass, cause of weight), solutions of the two worked tasks; exit-ticket.json; figures.json texts; sim labels sims.fy3-1 (lang/en.json). Decimal points, \cdot, units and numbers in prose match the Finnish.
+- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.

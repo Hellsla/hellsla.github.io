@@ -131,7 +131,7 @@ In everyday language, work means any kind of effort. In physics the word is more
   <foreignObject x="166" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
   <line x1="70" y1="240" x2="197" y2="240" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
   <path d="M214,240 L196,248 L196,232 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="100.5" y="251.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{motion}$</div></foreignObject>
+  <foreignObject x="113" y="251.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{path}$</div></foreignObject>
   <foreignObject x="127.5" y="291.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = 0$</div></foreignObject>
   <rect x="410" y="140" width="80" height="80" rx="14" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="422" y="184" width="56" height="26" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
@@ -142,7 +142,7 @@ In everyday language, work means any kind of effort. In physics the word is more
   <foreignObject x="414" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
   <line x1="520" y1="232" x2="520" y2="103" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
   <path d="M520,86 L528,104 L512,104 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="534" y="145.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{motion}$</div></foreignObject>
+  <foreignObject x="534" y="145.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{path}$</div></foreignObject>
   <foreignObject x="415" y="291.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,s$</div></foreignObject>
 </svg>
 
@@ -245,7 +245,7 @@ where $G$ is the weight (N), $m$ is the mass (kg), $g = 9.81\,\text{m/s}^2$ and 
   <foreignObject x="196" y="175.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$G$</div></foreignObject>
   <line x1="90" y1="262" x2="90" y2="143" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
   <path d="M90,126 L98,144 L82,144 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="-5" y="181.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{motion}$</div></foreignObject>
+  <foreignObject x="20" y="181.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{path}$</div></foreignObject>
   <line x1="224" y1="152" x2="290" y2="152" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="224" y1="292" x2="290" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="276" y1="222" x2="276" y2="165" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

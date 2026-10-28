@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 86518d97e5065bc9
+CONTENT-HASH: dc9ab482a9321a71
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: 86518d97e5065bc9
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md prose, formulas sections, worked example (all 7 steps), misconception and summary; meta.json; inquiry.json all fields incl. experiment intros, source_note, predictions (doubles / quarter / perpendicular force does no work), feedback, Joule table and both task solutions; exit-ticket.json; figures.json (every value translates its own key); sim labels Pull / Speed (sims.fy3-2). Physics terms (work, power, weight, internal energy, acceleration of free fall), decimal points, \cdot, units and numbers in prose match the Finnish; chapter reference uses the en courses.json title.
+- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.

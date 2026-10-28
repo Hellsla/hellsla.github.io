@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 22bb390878436407
+CONTENT-HASH: 8ad1172a09a6a164
 
 ## Blocking
 (none left; see Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 22bb390878436407
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared lesson.md (all sections, worked example steps, misconception), inquiry.json (hook, predictions, feedback, experiments incl. intro/names/units, explain model answers and criteria, error-finding, transfer task with hints, mistakes and solution), exit-ticket.json, figures.json (each value translates its own key; fi-easy is filled and simplified), meta.json; simulation labels via i18n.py resolve ({lang}: Immerse/Speed, Upota/Nopeus) and the chapter title from courses.json. Judged pedagogy: natural English for 16-18-year-olds, terms as in terms.md and lang labels.
+- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.

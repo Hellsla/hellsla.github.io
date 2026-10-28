@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 86518d97e5065bc9
+CONTENT-HASH: dc9ab482a9321a71
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 86518d97e5065bc9
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): natural English for 16–18-year-olds in lesson.md, inquiry.json (questions still ask the same thing, the correct option stays unambiguous, every feedback still matches its option, hints and criteria complete), exit-ticket.json and figure texts; terms consistent with terms.md and lang/en.json (Theory summary, Pull, Speed, Given/Find/Principle/… labels).
+- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.

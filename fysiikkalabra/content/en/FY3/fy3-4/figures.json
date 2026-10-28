@@ -6,8 +6,8 @@
  "kyljellään": "on its side",
  "Vesipatsas, jonka pohjan pinta-ala on A ja korkeus syvyys h. Patsaan paino G = ρAhg painaa pohjaa alaspäin, ja paine on paino jaettuna alalla, p = G/A = ρgh: pinta-ala supistuu pois. Kaaviokuva, ei mittakaavassa.": "A column of water whose base has area A and whose height is the depth h. The weight of the column, G = ρAhg, presses the base downwards, and the pressure is the weight divided by the area, p = G/A = ρgh: the area cancels. Schematic diagram, not to scale.",
  "vesipinta": "water surface",
- "patsaan paino": "weight of the column",
- "paine pohjalla": "pressure at the bottom",
+ "patsaan paino": "column's weight",
+ "paine pohjalla": "bottom pressure",
  "Kuvaaja mittakaavassa: veden paine p kilopascaleina syvyyden h funktiona, kun h on 0–10 m. Paine on nouseva suora: pinnalla paine on ilmanpaine 101 kPa ja 10 metrin syvyydessä noin 199 kPa. Suoran ja katkoviivan väli on hydrostaattinen paine ρgh.": "Graph to scale: the pressure p of water in kilopascals as a function of the depth h for h from 0 to 10 m. The pressure is a rising straight line: at the surface the pressure is atmospheric pressure, 101 kPa, and at a depth of 10 metres about 199 kPa. The gap between the line and the dashed line is the hydrostatic pressure ρgh.",
- "ilmanpaine": "atmospheric pressure"
+ "ilmanpaine": "air pressure"
 }

@@ -170,7 +170,7 @@ Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly t
   <path d="M180,115 L220,64.5 L227.5,70 L230,44 L205.5,52.5 L212.5,58 L172,109 Z" fill="#ffc078" stroke-linejoin="round"/>
   <foreignObject x="246" y="41.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{reflected}$</div></foreignObject>
   <path d="M396,228 L396,58 L405,58 L390,34 L375,58 L384,58 L384,228 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="412" y="55.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{thermal radiation}$</div></foreignObject>
+  <foreignObject x="412" y="55.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{heat radiation}$</div></foreignObject>
   <path d="M444,176 L444,204 L435,204 L450,226 L465,204 L456,204 L456,176 Z" fill="#f2a69c" stroke-linejoin="round"/>
   <foreignObject x="472" y="186.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{back}$</div></foreignObject>
 </svg>

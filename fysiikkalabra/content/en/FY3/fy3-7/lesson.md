@@ -161,7 +161,7 @@ The boiling point depends on pressure. A phase diagram shows the state of a subs
   <line x1="368" y1="185.5" x2="368" y2="296" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="96" y1="185.5" x2="368" y2="185.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="368" cy="185.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="382" y="179" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{atmospheric pressure}$</div></foreignObject>
+  <foreignObject x="382" y="179" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{air pressure}$</div></foreignObject>
   <line x1="308.5" y1="229" x2="308.5" y2="296" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="96" y1="229" x2="308.5" y2="229" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="308.5" cy="229" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>

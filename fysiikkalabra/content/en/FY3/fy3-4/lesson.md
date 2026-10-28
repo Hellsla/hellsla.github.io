@@ -69,9 +69,9 @@ According to the micro model, the pressure of a gas comes from particles collidi
   <line x1="267" y1="50" x2="283" y2="50" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="267" y1="220" x2="283" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="290" y="117" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$h$</div></foreignObject>
-  <foreignObject x="392" y="25.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{weight of the column}$</div></foreignObject>
+  <foreignObject x="392" y="25.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{column's weight}$</div></foreignObject>
   <foreignObject x="392" y="59" width="95" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$G = \rho A h g$</div></foreignObject>
-  <foreignObject x="392" y="115.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{pressure at the bottom}$</div></foreignObject>
+  <foreignObject x="392" y="115.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{bottom pressure}$</div></foreignObject>
   <foreignObject x="392" y="154.5" width="110" height="67" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$p = \dfrac{G}{A} = \rho g h$</div></foreignObject>
 </svg>
 
@@ -134,7 +134,7 @@ where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pr
   <polyline points="104,194.5 450,194.5" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
   <circle cx="104" cy="194.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="450" cy="106.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="116" y="210" width="374" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{atmospheric pressure}\ p_0 = 101\,\text{kPa}$</span></div></foreignObject>
+  <foreignObject x="116" y="210" width="274" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{air pressure}\ p_0 = 101\,\text{kPa}$</span></div></foreignObject>
   <foreignObject x="283" y="71.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$p = p_0 + \rho g h$</div></foreignObject>
   <path d="M466.0,106.6 H472.0 V194.5 H466.0" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="482" y="136" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\rho g h$</div></foreignObject>
