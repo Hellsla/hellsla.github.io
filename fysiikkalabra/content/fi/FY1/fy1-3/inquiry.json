@@ -31,7 +31,7 @@
         },
         {
           "text": "Nolla on turha ja sen voi jättää pois, sillä $2{,}4\\,\\text{s}$ on sama tulos.",
-          "feedback": "Lukuina arvot ovat samat, mutta mittaustuloksina eivät: $2{,}4\\,\\text{s}$ kertoo kymmenesosan tarkkuudesta ja $2{,}40\\,\\text{s}$ sadasosan. Loppunolla ilmoittaa, että sadasosat on oikeasti mitattu."
+          "feedback": "Lukuina arvot ovat samat, mutta mittaustuloksina eivät: $2{,}4\\,\\text{s}$ kertoo, että lukema on luettu kymmenesosina, ja $2{,}40\\,\\text{s}$, että kello näyttää sadasosat. Loppunollaa ei siis saa jättää pois. Lukeman tarkkuus ei silti ole sadasosa, kun aika otetaan käsin."
         },
         {
           "text": "Kuula vierii täsmälleen 2,40 sekuntia eikä yhtään enempää.",
@@ -231,7 +231,7 @@
             "feedback": "Ero ei ole nolla. Satunnainen osa on vaimentunut, mutta systemaattinen virhe $+0{,}30\\,\\text{s}$ on yhä mukana jokaisessa tuloksessa ja siis keskiarvossa."
           }
         ],
-        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $\\Delta t = \\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** $\\Delta t = \\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta t = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
+        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $\\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** erotus $\\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\bar{t} - T = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
       }
     },
     {

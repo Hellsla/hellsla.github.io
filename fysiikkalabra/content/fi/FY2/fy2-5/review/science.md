@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e86af0276dd261d7
+CONTENT-HASH: ae55f09d91206de5
 
 ## Blocking
 
 ## Polish
-- lesson.md (Kaava, sources paragraph) and inquiry.json (taulukko, source_note) — Problem: puupelletti ("julkaistu tyypillinen arvo" / "tyypillinen arvo") and the Finnish ethanol-blended bensiini value 43 name no publisher or year, which the FY2 data rule asks for. — Fix: name a source, e.g. Tilastokeskus, Polttoaineluokitus (2017) for moottoribensiini and puupelletti.
-- lessons/FY2/fy2-5/lesson-answers.py:23 — Problem: the comment still says "ratkaistu esimerkki", but the 3,0 kg petrol example is in the Kaava section; the worked example uses 6,0 kg of wood. — Fix: "lesson.md, Kaava: bensiini 3,0 kg".
+- content/fi/FY2/fy2-5/inquiry.json:60 and :64 — "Mittaukset kumoavat tämän" / "Mittausten mukaan" refer to the rounded table values the student has not measured; write "Taulukkoarvot" (guardrail: say whether a number is measured, tabulated or calculated).
+- content/fi/FY2/fy2-5/inquiry.json:96 — the "ei voi verrata" feedback compares the label's 2200 kJ and the wood's combustion 1500 kJ "suoraan"; add "suuruusluokaltaan" or the same caveat the correct option's feedback gives (label = usable energy, H = combustion energy), so the item stays consistent with the guardrail sentence in the theory.
+- content/fi/FY2/fy2-5/lesson.md:6 — "varastoituna aineen atomien ja molekyylien väliseen rakenteeseen" is vague; "atomien välisiin sidoksiin, jotka palaessa järjestyvät uudelleen" names the mechanism (C, not a finding).
 
 ## Checked
-- The hash was e86af0276dd261d7 at the start and the end.
-- The round-5 contradiction is gone. The taulukko source_note now matches lesson.md: IPCC 2006 for maakaasu, kivihiili and diesel; bensiini 43 MJ/kg as Finnish ethanol-blended petrol, with IPCC 44,3 MJ/kg for pure petrol. Ethanol (about 27 MJ/kg) lowers the blend to about 42–43 MJ/kg, so this is right.
-- I recomputed every number in lesson.md, inquiry.json and the exit ticket in one script, and all match lesson-answers.py: 2,87; 90 MJ and 25 kWh (with 4,17 kWh/kg ≈ 4 in the check); 129 ≈ 130 MJ; 22 MJ/kg; 1500 kJ; 15/30/60/120 MJ; 3,75 and 3750 MJ; siirto 10,58 → 6,348 → 6,3 MJ, with mistakes 10,6, 4,2 and 6350; tark-2 11,94 → 12 kWh, with mistake 154,8 ≈ 155; tark-3 170 and 430 MJ, ratio 2,5; exit 75 MJ and 15 MJ/kg.
-- Figure 2 is to scale at 6,80 px per MJ/kg, every bar within 0,01 px/(MJ/kg). The ticks and the "noin viisi kertaa" in the aria-label (48 : 10 = 4,8) are right. Figures 1 and 3 are physically correct.
-- The worked example has seven stages and solves symbolically first. Its kWh conversion substitutes, its 2 s.f. are justified, and its check is real.
-- Physics is right throughout: net (lower) heating values; the moisture explanation; dry wood about 19 MJ/kg; label energy is metabolisable and so slightly less than combustion energy; released energy differs from useful energy.
-- Every correct option and every feedback in kertaus, ennuste-1/2, taulukko, rakenna, virhe, tarkistus-1 and the explain model answers is physically right. No option is keyed wrong.
-- The numeric solutions (ruoka, siirto, tarkistus-2) are complete, solve symbolically first, convert by substitution and do a real check.
-- Scope is FY2: E = Hm, one efficiency, kWh. There is no Q = cmΔT, no efficiency chain and no FY4 content.
+- E = Hm with H as energy released per kilogram, mass in kg stated; proportionality argued from the table; "lämpöarvo ei ole lämpötila", "palaessa ei synny energiaa" and released ≠ useful energy (hyötysuhde) stated consistently in theory, misconceptions, summary and checks.
+- Nuclear fuel separated from chemical fuel; CO₂ attributed to carbon-containing fuels (guardrail).
+- Food and fuel guardrail sentence used verbatim in theory, the ruoka item, the conclusion, the summary and the exit ticket; the reason (not all food is absorbed) is right.
+- Table values checked against their cited sources (IPCC 2006: natural gas 48,0, coal 25,8, diesel 43,0, petrol 44,3; ethanol-blend petrol ≈ 43; Tilastokeskus wood 13–15 GJ/t, milled peat 9–11 GJ/t); net (tehollinen) heating value correctly defined; dry wood ≈ 19 MJ/kg and the moisture mechanism right.
+- Bar chart to scale at 6,8 px per MJ/kg (48 → 326,5 px … 10 → 68 px); food table (Fineli order of magnitude) right.
+- Worked example 15 · 6,0 = 90 MJ = 25 kWh, symbolic first, rounding and check right, flue-gas loss noted.
+- Every inquiry and exit-ticket number recomputed (2,9; 1500 vs 2200 kJ; 22 MJ/kg with mistakes 2200 and 0,022; 3,75 vs 3750 MJ; 6,348 → 6,3 MJ with mistakes 10,6, 4,2 and 6350; 11,94 → 12 kWh with 43 and 155; 170 vs 430 MJ; 75 MJ; 15 MJ/kg).
+- Each choice item has exactly one correct option, and every distractor's feedback names the actual error.

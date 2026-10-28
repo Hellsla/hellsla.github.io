@@ -187,7 +187,7 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 ### c)
 **Annettu:** säiliön tilavuus $V_\text{s} = 12{,}0\,\text{l}$, mittarin lukemat $200\,\text{bar}$ ja $50\,\text{bar}$ ylipainetta, kulutus $q = 20\,\text{l/min}$ syvyyden paineessa $p = 248\,\text{kPa}$
 **Kysytty:** aika $t$, jonka sukeltaja voi olla $15{,}0\,\text{m}$:n syvyydessä
-**Periaate:** Oletetaan, että ilman lämpötila on sama säiliössä ja keuhkoissa (d-kohdassa arvioidaan lämpenemisen vaikutus), joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki). Säiliöstä käytetty ilma vie syvyyden paineessa tilavuuden, joka hengitetään. Mittari näyttää ylipainetta. Kokonaispaineiden erotus on kuitenkin sama kuin ylipaineiden erotus, koska ilmanpaine kumoutuu.
+**Periaate:** Tehtävän mukaan ilman lämpötila on sama säiliössä ja keuhkoissa (d-kohdassa arvioidaan lämpenemisen vaikutus), joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki). Säiliöstä käytetty ilma vie syvyyden paineessa tilavuuden, joka hengitetään. Mittari näyttää ylipainetta. Kokonaispaineiden erotus on kuitenkin sama kuin ylipaineiden erotus, koska ilmanpaine kumoutuu.
 **Kaava:** $\Delta p_\text{s} V_\text{s} = p V$, josta $V = \dfrac{\Delta p_\text{s} V_\text{s}}{p}$, ja $t = \dfrac{V}{q}$
 **Muunnokset:** $\Delta p_\text{s} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. Tilavuudet voivat jäädä litroiksi.
 **Sijoitus:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12{,}0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ ja $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$

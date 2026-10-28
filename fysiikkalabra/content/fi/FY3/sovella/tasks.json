@@ -352,7 +352,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Sukeltajan säiliön tilavuus on $12{,}0\\,\\text{l}$, ja sen painemittari näyttää ylipainetta $200\\,\\text{bar}$, missä $1\\,\\text{bar} = 100\\,\\text{kPa}$. Sukeltaja kuluttaa $15{,}0\\,\\text{m}$:n syvyydessä minuutissa $20\\,\\text{l}$ ilmaa sen syvyyden paineessa. Nousu aloitetaan, kun mittari näyttää $50\\,\\text{bar}$. Kuinka kauan sukeltaja voi olla tässä syvyydessä?",
+          "text": "Sukeltajan säiliön tilavuus on $12{,}0\\,\\text{l}$, ja sen painemittari näyttää ylipainetta $200\\,\\text{bar}$, missä $1\\,\\text{bar} = 100\\,\\text{kPa}$. Sukeltaja kuluttaa $15{,}0\\,\\text{m}$:n syvyydessä minuutissa $20\\,\\text{l}$ ilmaa sen syvyyden paineessa. Nousu aloitetaan, kun mittari näyttää $50\\,\\text{bar}$. Oleta, että ilma on yhtä lämmintä säiliössä ja keuhkoissa. Kuinka kauan sukeltaja voi olla tässä syvyydessä?",
           "answer": {
             "value": 36,
             "unit": "min",
@@ -360,7 +360,7 @@
           },
           "criteria": [
             {
-              "text": "Perustelee mallin: olettaa ilman lämpötilan samaksi säiliössä ja keuhkoissa, joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki).",
+              "text": "Käyttää annettua oletusta: kun lämpötila on sama, ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki).",
               "tag": "transfer",
               "points": 1
             },

@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 250421b788f74ed6
+CONTENT-HASH: f4fca3b182c3189f
+
+Round 2 and 3: re-check of round-1 Blocking items against the fix diffs.
 
 ## Blocking
-- none.
+- none. L3-02 Sijoitus now reads $\dfrac{80{,}0\,{}^\circ\text{C} - 68{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{12{,}0\,\text{K}}{5{,}0\,\text{min}} = 2{,}4\,\text{K/min}$ (and the same for $r_2 = 1{,}0\,\text{K/min}$): temperatures in °C, the difference in K, correct and consistent with the Muunnokset line.
 
 ## Polish
-- solutions.md fy1-8-L3-02 Kaava/Sijoitus — $\Delta t$ is the 5,0 min time interval and $\Delta r = r_1 - r_2$ a difference of rates, while everywhere else in the set $\Delta t$, $\Delta x$, $\Delta v$ are errors (the teacher's convention); a student will read $\Delta r$ as an error. Write "$\text{laskunopeuksien erotus} = r_\text{alku} - r_\text{loppu}$" and "viiden minuutin aikana" instead of $\Delta t$, with descriptive subscripts instead of $r_1, r_2$.
-- solutions.md fy1-8-L2-04 Kaava — $v = \Delta s / \Delta t$ uses $\Delta$ for changes (as in the lesson's slope), again against the error meaning; add "muutos" in Periaate or keep to $s_2 - s_1$ and $t_2 - t_1$ only.
-- solutions.md L3-02 Järkevyys — "eikä tämä ero voi johtua pelkästä lukemavirheestä 0,1 K" shows the reasoning but not the numbers; add "ero 1,4 K/min on yli kymmenkertainen lukemavirheen vaikutukseen ($0{,}1\,\text{K} : 5{,}0\,\text{min} = 0{,}02\,\text{K/min}$)".
+- exercises.json fy1-8-L2-03 — "90 cm" and "342 cm" are still plain text beside LaTeX times; write `$90\,\text{cm}$` and `$342\,\text{cm}$`.
+- solutions.md fy1-8-L3-02 Kaava — $\Delta t$ and $\Delta r$ stand for an interval and a rate difference where elsewhere $\Delta$ is an uncertainty; use "viiden minuutin aikana" and "laskunopeuksien erotus".
+- solutions.md L2-01 and L3-01 — the added sentence "Vastauskenttä hyväksyy kummankin" is interface talk inside a solution; say "kumpikin pyöristys kelpaa" or drop it.
+- solutions.md L1-01 Vastaus — "$5\,\%$ (laskimen arvo $5{,}0\,\%$)" is the same number twice.
 
 ## Checked
-- Delta: "0,15 / 4,7" in L1 Järkevyys is now a colon ($0{,}15 : 4{,}7 \approx 0{,}03$); the value, 3 %, still matches the table (3,2 %).
-- Errors are written $\Delta t$, $\Delta x$, $\Delta v$ with the relative error $\varepsilon$; no e, no ×, no other " / " operation left.
-- Conversions in L2-04 are explicit (90 cm = 0,90 m); counts and contexts as previously passed.
-- Finnish and case after number+unit correct.
+- Tolerances now 0.21 (L2-01, answer 2.5, accepts 2,0–3,0 so the reported 3 % passes) and 0.1 (L3-01, answer 0.033, accepts 0,030–0,0363 so 0,03 passes); consistent with the relative-tolerance rule and with the solutions' rounded reports.
+- Rest of the set unchanged; earlier checks (L2-02, L1-03 Järkevyys, L3-01 argument) still hold.
+- Round 3: L2-01 tolerance 0.21 on answer 2.5 accepts 1,975–3,025, so both 2,5 and the reported 3 pass.
+- Hash unchanged at the end.

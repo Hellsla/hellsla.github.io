@@ -121,7 +121,7 @@ Boylen laki pätee hyvin ilmaan ja muihin kaasuihin tavallisissa paineissa ja l�
 
 Boylen laki voidaan todentaa kokeellisesti. Ruiskuun suljetaan ilmaa, ja ruisku liitetään painemittariin. Mäntää painetaan vaiheittain, ja jokaisella tilavuudella luetaan paine. Mittaus tehdään hitaasti, jotta ilman lämpötila ehtii palata huoneenlämpöön. Kun tulokset piirretään $(V, p)$-koordinaatistoon, pisteet asettuvat laskevalle kaarelle, josta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta. Siksi taulukkoon lasketaan uusi sarake $1/V$ ja piirretään $p$ $1/V$:n funktiona. Jos laki pätee, pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle, jonka kulmakerroin on vakio $pV$. Kokeile simulaatiossa: tallenna mittauksia eri tilavuuksilla ja valitse ”Piirrä p 1/V:n funktiona”.
 
-Kun kaasua lämmitetään, sen hiukkaset liikkuvat nopeammin. Jos mäntä pääsee liikkumaan niin, että paine pysyy vakiona (isobaarinen tilanmuutos), kaasu laajenee, ja sen tilavuus on suoraan verrannollinen kelvinlämpötilaan. Jos tilavuus taas pidetään vakiona (isokoorinen tilanmuutos), paine kasvaa, ja se on suoraan verrannollinen kelvinlämpötilaan. Molemmissa tapauksissa lämpötila on ilmoitettava kelvineinä, koska verrannollisuus alkaa absoluuttisesta nollapisteestä.
+Kun kaasua lämmitetään, sen hiukkaset liikkuvat nopeammin. Jos mäntä pääsee liikkumaan niin, että paine pysyy vakiona (isobaarinen tilanmuutos), kaasu laajenee. Kun kaasun määrä pysyy samana ja kaasu on harvaa, sen tilavuus on suoraan verrannollinen kelvinlämpötilaan. Jos tilavuus taas pidetään vakiona (isokoorinen tilanmuutos), paine kasvaa, ja se on suoraan verrannollinen kelvinlämpötilaan. Molemmissa tapauksissa lämpötila on ilmoitettava kelvineinä, koska verrannollisuus alkaa absoluuttisesta nollapisteestä.
 
 <svg data-fig="iso-processes" viewBox="0 0 600 412" role="img" aria-label="Kaksi tilanmuutosta, kaaviokuva. Vasemmalla isobaarinen: sylinterin mäntää kuormittaa vakiopainoinen kappale, joten kaasun lämmetessä lämpötilasta T₁ lämpötilaan T₂ mäntä nousee ja tilavuus kasvaa V₁:stä V₂:een; hiukkasten nopeusnuolet ovat pidempiä. Oikealla isokoorinen: jäykän, suljetun astian tilavuus V pysyy samana, ja kaasun lämmetessä paineenmittarin viisari kääntyy suuremman paineen p₂ kohdalle." style="max-width:100%;font-size:24px">
   <foreignObject x="77.5" y="11.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{isobaarinen}$</div></foreignObject>
@@ -337,7 +337,7 @@ Isobaarisessa ja isokoorisessa tilanmuutoksessa
 ```latex
 \frac{V_1}{T_1} = \frac{V_2}{T_2} \qquad \text{ja} \qquad \frac{p_1}{T_1} = \frac{p_2}{T_2}
 ```
-missä $T_1$ ja $T_2$ ovat kaasun lämpötilat kelvineinä (K) alku- ja lopputilassa. Tilavuus tai paine on siis suoraan verrannollinen kelvinlämpötilaan, ja $(T, V)$- tai $(T, p)$-kuvaajan suoran jatke kulkee origon eli absoluuttisen nollapisteen $0\,\text{K}$ kautta.
+missä $T_1$ ja $T_2$ ovat kaasun lämpötilat kelvineinä (K) alku- ja lopputilassa. Suljetun, harvan kaasun tilavuus tai paine on siis suoraan verrannollinen kelvinlämpötilaan, ja $(T, V)$- tai $(T, p)$-kuvaajan suoran jatke kulkee origon eli absoluuttisen nollapisteen $0\,\text{K}$ kautta. Jatke on mallin ennuste: todellinen kaasu tiivistyy nesteeksi ennen kuin $0\,\text{K}$ saavutetaan.
 
 Kelvinlämpötila saadaan celsiuslämpötilasta $\theta$ lisäämällä 273,15:
 ```latex
@@ -477,4 +477,4 @@ Kolme virhettä toistuu usein:
 - Tilanmuutoksessa kaasun paine, tilavuus ja lämpötila muuttuvat. Isotermisessä muutoksessa $T$ on vakio, isobaarisessa $p$ ja isokoorisessa $V$.
 - Boylen laki: isotermisessä tilanmuutoksessa $p_1 V_1 = p_2 V_2$, joten paine on kääntäen verrannollinen tilavuuteen.
 - Kääntäen verrannollisuus todennetaan laskemalla taulukkoon sarake $1/V$ ja piirtämällä $p$ $1/V$:n funktiona: pisteiden pitää asettua mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle.
-- Vakiopaineessa tilavuus ja vakiotilavuudessa paine ovat suoraan verrannollisia kelvinlämpötilaan. Lämpötilat ilmoitetaan näissä laskuissa aina kelvineinä.
+- Kun kaasun määrä pysyy samana, harvan kaasun tilavuus vakiopaineessa ja paine vakiotilavuudessa ovat suoraan verrannollisia kelvinlämpötilaan. Lämpötilat ilmoitetaan näissä laskuissa aina kelvineinä.

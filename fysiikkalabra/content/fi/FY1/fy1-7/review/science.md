@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c4c4cfd59fc96576
+CONTENT-HASH: f0597d02939082e7
 
 ## Blocking
 
 ## Polish
-- lesson.md:64 — "Suhteen ratkaiseminen massan ja tilavuuden suhteen" (still) reads awkwardly — "Kun yhtälö ratkaistaan massan tai tilavuuden suhteen, saadaan kaksi muuta muotoa".
-- lesson.md:7 — "Kaksi samankokoista kappaletta ovat eri painoisia, jos ne ovat eri ainetta" is not always true (jää and ruokaöljy share 920 kg/m³ in the lesson's own table) — "voivat olla eri painoisia".
-- lesson.md:283 — "tai se näkyy suoran vakiotermi $m_0$" — "vakioterminä $m_0$".
-- glossary.json "tiheys" still writes ρ = m/V — outside this lesson's files; align with the colon rule if the glossary is shown on the page.
+- inquiry.json:135 metalli (and :166 neste correct-option feedback) — the slope is taken from the first and last raw rows, while lesson.md:139 says to read two points from the (fitted) line. Not neighbouring points, so within the guardrail, but one clause ("ensimmäinen ja viimeinen rivi antavat kulmakertoimen likimain; sovitettu suora käyttäisi kaikkia pisteitä") would keep the two consistent.
+- lesson.md:139 — "tarkempi kuin yhden pisteen suhde m : V, koska se käyttää koko suoraa" holds for a line fitted to all points; say "sovitetulta suoralta" so the claim is not read as true for any two raw points.
+- lesson.md:283 — "se näkyy suoran vakiotermi $m_0$" → "vakioterminä $m_0$" (grammar).
+- lesson.md:64 — "Suhteen ratkaiseminen massan ja tilavuuden suhteen" is hard to parse (two senses of "suhde"); e.g. "Kun yhtälö ratkaistaan massan tai tilavuuden suhteen, saadaan kaksi muuta muotoa".
+- lesson.md table — mänty is not a pure substance and its density varies (about 400–600 kg/m³); "noin" or a footnote would keep it from contradicting "jokaisella puhtaalla aineella".
 
 ## Checked
-- Round-1 polish fixed: ennuste-1 feedback now `54 g : 20 cm³ = 2,7 g/cm³`; that is the only change since the PASS at d8159883.
-- Notation: division as an operation written with `:` throughout (m : V, Δm : ΔV, V : ρ, (105,1 − 42,1) g : 80 cm³); `\cdot` only, no `×`/`\times`; remaining `/` are unit fractions (incl. m³ · m³/kg in Etsi virhe).
-- Display formulas ρ = m/V, m = ρV, V = m/ρ correct; y = kx mapping and m_yht = ρV + m₀ correct; 1 g/cm³ = 1000 kg/m³ derivation correct.
-- Worked example: m = ρa²L symbolic first, 7870 · 0,040² · 1,20 = 15,11 → 15 kg (2 s.f. from 4,0 cm), check 7,9 · 1,9 kg ≈ 15 kg.
-- Inquiry recomputed: Al ratios 2,68/2,72/2,69/2,71/2,69 (mean 2,70), differences; metal 8,96 (mistakes 0,112, 7,17; one-row 8,97); liquid increments 15,8/15,6/16,1/15,5, ratios 2,9/1,8/1,5/1,3, slope 0,79, m₀ 42 g.
-- siirto 2671 → 2,7·10³ kg/m³ (mistakes 2,67, 984, 2,67·10⁶); tarkistus-1 5,0 and 5,4·10⁻⁴ m³; tarkistus-2 4,00 kg (mistakes 4·10⁶, 100); Etsi virhe 675 000 vs 0,675 kg; exit ticket 2,7 g/cm³ and 1,5 kg.
-- Figures to scale: cube bars 9,5 : 51,5 : 150 = 5,0 : 27 : 79 g; graph lines at 50 cm³ give 50/135/394 g; displacement 40 → 70 ml.
-- Density table values correct (ice 920, ethanol 790, lead 11 300, gold 19 300).
+- One-script recomputation: aluminium ratios 2,68/2,72/2,69/2,71/2,69 (mean 2,70, all within 0,8 %) and differences 16,8…84,6; metal Δm/ΔV = 179,2/20,0 = 8,96 g/cm³, mistakes 0,112 and 7,17, last-row check 8,97; liquid increments 15,8/15,6/16,1/15,5 g, slope 0,79 g/cm³, intercept 42,1 g, ratios 2,9/1,8/1,5/1,3; virhe 0,675 kg vs 675 000; siirto 2671 → 2,7·10³ kg/m³, mistakes 2,67/984/2,67·10⁶; tarkistus-2 4,00 kg, mistakes 4·10⁶/100; tarkistus-1 5,0 and 5,4·10⁻⁴ m³; worked example 15,11 → 15 kg; exit 2,7 g/cm³ and 1,5 kg. All agree.
+- Worked example symbolic first (m = ρa²L), conversion, rounding by the 2-figure side, real reasonableness check via water mass.
+- Figures to scale: cube mass bars 9,5/51,5/150 px ∝ 5,0/27/79 g; graph lines ρ = 1,00/2,70/7,87 g/cm³ and the iron triangle Δm ≈ 157 g over 20 cm³; displacement cylinders at 40 and 70 ml.
+- Unit conversions (1 g/cm³ = 1000 kg/m³, cm³/dm³/ml) correct; table densities agree with standard values.
+- Every choice item has exactly one correct option; each distractor's feedback names the actual error (incl. V/ρ unit m⁶/kg).
+- Origin line justified physically (zero volume, zero mass); container offset modelled as m_yht = ρV + m₀ consistently in theory, activity, misconception and summary.
+- Identification by density stated as probable, not certain (theory, tarkistus-3 model), consistent with the guardrails.
 - Hash identical at start and end.

@@ -169,7 +169,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Laske uusista mittauksista kummankin kuulan vierimisajan keskiarvo ja sen epävarmuus. Voiko mittausten perusteella sanoa, että kuulien vierimisajat eroavat?",
+          "text": "Laske uusista mittauksista kummankin kuulan vierimisajan keskiarvo ja arvioi tulosten epävarmuus. Voiko mittausten perusteella sanoa, että kuulien vierimisajat eroavat?",
           "answer": {
             "value": 0.03,
             "unit": "s"

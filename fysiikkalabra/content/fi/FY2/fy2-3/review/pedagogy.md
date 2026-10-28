@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a0ea33a66467fe5e
+CONTENT-HASH: a521877d291249c4
 
 ## Blocking
-(none)
 
 ## Polish
-- inquiry.json koe-1 intro — "nuolinäppäimillä" helps on a laptop, but a phone has no arrow keys, so hitting t_B = 900 min by touch is still hard. Fix: +/- minute buttons, or "likimain yhtä suuret".
-- Round 1 polish still open and not blocking: the 10 W lamp and 1000 W toaster missing from the power table; the johtopaatos criterion "Käytin yhtälöä E = P t" before the theory stage; the hours/minutes axis mismatch; the workload.
+- lesson.md Kaava paragraph — the new sentence sits between "Sanoin: ..." and "Kun laite käy tasaisesti ...", so "keskiteho" appears before the student has seen a constant-power case; consider swapping the order (uniform case first, then "Jos energiaa muuntuu epätasaisesti, kaava antaa aikavälin keskitehon") and add "keskiteho" in the lesson only if the glossary has it.
 
 ## Checked
-- The diff changes only the koe-1 intro (the arrow-key sentence) and puts the names and labels of the quantities in LaTeX (\text{A}$, \text{A}\ (\text{kJ})$), as the house rules require.
-- The new sentence does not disclose an answer and does not alter the experiment's set-up, locks or measures.
-- The LaTeX labels are consistent with the rest of the lesson's notation (sub-index in upright type).
-- Nothing else is touched; the round 1 conclusions still apply.
+- Delta is one sentence: "Jos energiaa muuntuu epätasaisesti, kaava antaa aikavälin $\Delta t$ keskitehon." Correct, grammatical Finnish, adds the unstated condition without new notation.
+- It does not disclose any inquiry answer and does not touch the experiment, tasks or exercises.
+- Paragraph stays well under 120 words; no figure or layout change; previous PASS conclusions hold.

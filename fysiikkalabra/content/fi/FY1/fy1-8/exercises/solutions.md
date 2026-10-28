@@ -55,7 +55,7 @@
 **Kaava:** $\bar{t} = \dfrac{\sum t_i}{5}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\varepsilon = \dfrac{\Delta t}{\bar{t}}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita. Osamäärä kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\bar{t} = \dfrac{40{,}0\,\text{s}}{5} = 8{,}0\,\text{s}$ ja $\Delta t = \dfrac{8{,}2\,\text{s} - 7{,}8\,\text{s}}{2} = 0{,}2\,\text{s}$, joten $\varepsilon = \dfrac{0{,}2\,\text{s}}{8{,}0\,\text{s}} = 0{,}025 = 2{,}5\,\%$
-**Vastaus:** $2{,}5\,\%$ (laskimen arvo). Epävarmuus $0{,}2\,\text{s}$ on yhden numeron karkea arvio, joten raportissa suhteellinen epävarmuus riittää pyöristää yhteen merkitsevään numeroon, noin $3\,\%$.
+**Vastaus:** $2{,}5\,\%$ (laskimen arvo). Epävarmuus $0{,}2\,\text{s}$ on yhden numeron karkea arvio, joten raportissa suhteellinen epävarmuus riittää pyöristää yhteen merkitsevään numeroon, noin $3\,\%$. Vastauskenttä hyväksyy kummankin.
 **Järkevyys:** Kahdeksan sekuntia on 40 kertaa epävarmuus $0{,}2\,\text{s}$, joten osuus on noin $\tfrac{1}{40} = 2{,}5\,\%$. Se on pienempi kuin $4{,}0\,\text{s}$:n mittauksen $5{,}0\,\%$, kuten pitkällä ajalla kuuluukin.
 
 ## fy1-8-L2-02
@@ -95,7 +95,7 @@
 **Kaava:** $v = \dfrac{v_\text{max} + v_\text{min}}{2}$ ja $\Delta v = \dfrac{v_\text{max} - v_\text{min}}{2}$
 **Muunnokset:** Kulmakertoimet ovat jo samassa yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta v = \dfrac{0{,}463\,\text{m/s} - 0{,}397\,\text{m/s}}{2} = \dfrac{0{,}066\,\text{m/s}}{2} = 0{,}033\,\text{m/s}$
-**Vastaus:** $0{,}033\,\text{m/s}$ (laskettu arvo; erotus $0{,}066\,\text{m/s}$ on kahden numeron luku). Ilmoitettuna epävarmuutena se pyöristetään yhteen merkitsevään numeroon, joten nopeus on $v = 0{,}43\,\text{m/s} \pm 0{,}03\,\text{m/s}$.
+**Vastaus:** $0{,}033\,\text{m/s}$ (laskettu arvo; erotus $0{,}066\,\text{m/s}$ on kahden numeron luku). Ilmoitettuna epävarmuutena se pyöristetään yhteen merkitsevään numeroon, joten nopeus on $v = 0{,}43\,\text{m/s} \pm 0{,}03\,\text{m/s}$. Vastauskenttä hyväksyy kummankin.
 **Järkevyys:** Epävarmuus on noin $\tfrac{0{,}033}{0{,}430} \approx 8\,\%$ nopeudesta, mikä sopii käsikellolla mitatulle liikkeelle. Jos hypoteesi ennustaisi $0{,}50\,\text{m/s}$, se olisi yli kaksi epävarmuutta mitattua arvoa suurempi: väli on $0{,}397$–$0{,}463\,\text{m/s}$, eikä ennuste mahdu siihen.
 
 ## fy1-8-L3-02
@@ -104,7 +104,7 @@
 **Periaate:** Hypoteesi "lämpötila laskee tasaisesti" ennustaa saman laskunopeuden joka kohdassa. Siksi lasketaan laskunopeus kahdessa jaksossa ja verrataan niitä. Lämpötilan muutos on sama kelvineinä ja celsiusasteina.
 **Kaava:** $r = \dfrac{T_\text{alku} - T_\text{loppu}}{\Delta t}$ ja $\Delta r = r_1 - r_2$
 **Muunnokset:** Lämpötilan lasku celsiusasteina on yhtä suuri kuin kelvineinä, joten $1\,{}^\circ\text{C}$ muutos on $1\,\text{K}$ eikä muunnosta tarvita.
-**Sijoitus:** $r_1 = \dfrac{80{,}0\,\text{K} - 68{,}0\,\text{K}}{5{,}0\,\text{min}} = 2{,}4\,\text{K/min}$ ja $r_2 = \dfrac{52{,}0\,\text{K} - 47{,}0\,\text{K}}{5{,}0\,\text{min}} = 1{,}0\,\text{K/min}$, joten $\Delta r = 2{,}4\,\text{K/min} - 1{,}0\,\text{K/min} = 1{,}4\,\text{K/min}$
+**Sijoitus:** $r_1 = \dfrac{80{,}0\,{}^\circ\text{C} - 68{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{12{,}0\,\text{K}}{5{,}0\,\text{min}} = 2{,}4\,\text{K/min}$ ja $r_2 = \dfrac{52{,}0\,{}^\circ\text{C} - 47{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{5{,}0\,\text{K}}{5{,}0\,\text{min}} = 1{,}0\,\text{K/min}$, joten $\Delta r = 2{,}4\,\text{K/min} - 1{,}0\,\text{K/min} = 1{,}4\,\text{K/min}$
 **Vastaus:** $1{,}4\,\text{K/min}$, kaksi merkitsevää numeroa, koska lämpötilojen erotukset ovat $12{,}0\,\text{K}$ ja $5{,}0\,\text{K}$.
 **Järkevyys:** Ensimmäinen laskunopeus on yli kaksinkertainen viimeiseen verrattuna, eikä tämä ero voi johtua pelkästä lukemavirheestä $0{,}1\,\text{K}$. Hypoteesi tasaisesta laskusta ei siis päde: lämpötila laskee sitä hitaammin, mitä lähempänä huoneen lämpötilaa vesi on.
 

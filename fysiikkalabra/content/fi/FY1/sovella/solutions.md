@@ -105,8 +105,8 @@ Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon 
 
 ### b)
 **Annettu:** teräskuulan ajat $2{,}31$; $2{,}45$; $2{,}38$; $2{,}29$; $2{,}42\,\text{s}$ ja muovikuulan ajat $2{,}40$; $2{,}33$; $2{,}47$; $2{,}36$; $2{,}44\,\text{s}$
-**Kysytty:** keskiarvot $\bar{t}$ ja niiden epävarmuudet $\Delta t$ sekä päätelmä erosta
-**Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta. Vaihteluvälin puolikas on yksinkertainen arvio yksittäisten mittausten hajonnasta, ja tässä sitä käytetään keskiarvon epävarmuuden varovaisena arviona: keskiarvon epävarmuus on yleensä tätä pienempi. Eron voi sanoa osoitetuksi vain, jos se on selvästi suurempi kuin keskiarvojen epävarmuudet.
+**Kysytty:** keskiarvot $\bar{t}$ ja tulosten epävarmuusarviot $\Delta t$ sekä päätelmä erosta
+**Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta. Vaihteluvälin puolikas on yksinkertainen arvio yksittäisten mittausten hajonnasta, ja tässä sitä käytetään yksinkertaisena, varovaisena epävarmuusarviona vertailussa. Keskiarvon oma epävarmuus on yleensä tätä pienempi. Eron voi sanoa osoitetuksi vain, jos se on selvästi suurempi kuin nämä epävarmuusarviot.
 **Kaava:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ ja $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Muunnokset:** Ei tarvita, kaikki ajat ovat sekunteina.
 **Sijoitus:** Teräs: $\bar{t} = \dfrac{11{,}85\,\text{s}}{5} = 2{,}37\,\text{s}$ ja $\Delta t = \dfrac{2{,}45\,\text{s} - 2{,}29\,\text{s}}{2} = 0{,}08\,\text{s}$.

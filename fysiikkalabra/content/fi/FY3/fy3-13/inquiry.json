@@ -113,7 +113,7 @@
           },
           {
             "text": "Pisteissä näkyy mutkia, joten paine ei riipu lämpötilasta suoraviivaisesti.",
-            "feedback": "Mutkaa vastaisi systemaattinen poikkeama, esimerkiksi pisteet, jotka ensin ovat suoran yläpuolella ja sitten alapuolella. Tässä poikkeamat vaihtelevat ylös ja alas, joten ne ovat mittausepävarmuutta."
+            "feedback": "Mutkaa vastaisi systemaattinen poikkeama, esimerkiksi pisteet, jotka ensin ovat suoran yläpuolella ja sitten alapuolella. Tässä poikkeamat vaihtelevat ylös ja alas, joten ne ovat satunnaisia mittausvirheitä, jotka mahtuvat mittausepävarmuuden rajoihin."
           }
         ]
       },

@@ -3,7 +3,7 @@
 > **Miksi** kymmenen oppilasta saa samasta kuulan vierimisajasta kymmenen eri tulosta, vaikka kaikki käyttävät samaa kelloa?
 
 ## Ydinajatus
-**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä hieman suureen oikeasta arvosta, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $\Delta x = x - x_\text{oikea}$. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Oikeaa arvoa ja siksi virhettäkään ei yleensä tunneta, joten fysiikassa arvioidaan, kuinka suuri virhe voi olla, ja tämä arvio eli mittausepävarmuus ilmoitetaan tuloksen mukana.
+**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä hieman suureen oikeasta arvosta, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Oikeaa arvoa ja siksi virhettäkään ei yleensä tunneta, joten fysiikassa arvioidaan, kuinka suuri virhe voi olla, ja tämä arvio eli mittausepävarmuus ilmoitetaan tuloksen mukana.
 
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
 
@@ -256,7 +256,7 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa ja saa tu
 Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä, ja hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe, joka etsitään ja jätetään pois vain perustellusta ja kirjatusta syystä, mutta satunnais- ja systemaattinen virhe kuuluvat myös taitavan mittaajan tulokseen, ja siksi ne arvioidaan ja ilmoitetaan. Kolmas on laskea keskiarvo erilaisissa yksiköissä olevista luvuista: tulokset muunnetaan ensin samaan yksikköön.
 
 ## Tiivistelmä
-- Mittausvirhe on tuloksen ja oikean arvon erotus, $\Delta x = x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen. Sitä ei yleensä tunneta, mutta sen mahdollinen suuruus arvioidaan mittausepävarmuutena ja ilmoitetaan tuloksen mukana.
+- Mittausvirhe on tuloksen ja oikean arvon erotus $x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen. Sitä ei yleensä tunneta, mutta sen mahdollinen suuruus arvioidaan mittausepävarmuutena ja ilmoitetaan tuloksen mukana.
 - Karkea virhe on yksittäinen erehdys, kuten väärin luettu tai kirjattu lukema. Se näkyy usein selvästi muista poikkeavana tuloksena, joka tarkistetaan; tulos jätetään pois vain, jos virheen syy löytyy, ja syy kirjataan.
 - Satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy hajontana. Keskiarvossa $\bar{x}$ satunnaisvirheen vaikutus vaimenee, vaikka yksittäisten tulosten hajonta ei pienene. Tässä kurssissa hajontaa arvioidaan likimääräisesti vaihteluvälin puolikkaalla $\Delta x$, joka on keskiarvolle varovainen epävarmuusarvio.
 - Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan, eikä toistaminen poista sitä. Se huomataan vertailuarvolla ja korjataan: $x = x_\text{lukema} - \Delta x_\text{sys}$.

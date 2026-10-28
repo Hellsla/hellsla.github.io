@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d429e7d288d64404
+CONTENT-HASH: 5ee0755d24f7360c
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta (lesson.md, Sijoitus stage): `245\,MWh - 222,95\,MWh` became `(245 - 222,95)\,MWh`; 245 - 222,95 = 22,05, so the result and the later reasonableness check are unchanged.
-- The step stays symbolic-first (E_häviö = E_lähtö - E_perille) and the stage keeps one step; the shared unit in parentheses is standard and readable at 17-year-old level.
-- Rest of the lesson as passed in the previous round; content hash identical at start and end.
+- Delta is one feedback sentence: "sen lämpö siirtyy" became "siitä siirtyy energiaa lämpönä", which avoids the misleading "lämpö" as a stored thing; grammatical Finnish and consistent with siirtohäviö (energy becomes heat in the environment).
+- The wrong option "Kumpikaan putki ei häviä" is still repaired (water stays, energy leaves through wall and insulation) and the 9 % loss reference is unchanged.
+- No option, answer, hint or experiment changed; the earlier PASS holds.
