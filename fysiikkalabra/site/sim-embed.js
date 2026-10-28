@@ -84,14 +84,17 @@
           const st = el.style;
           const lx = (m.a * x + m.c * y + m.e) / pd * k, ly = (m.b * x + m.d * y + m.f) / pd * k;
           st.display = Number.isFinite(lx) && Number.isFinite(ly) ? '' : 'none';   // a label at NaN (an empty average) is not drawn, as on the canvas
-          st.left = lx.toFixed(1) + 'px';
-          st.top = ly.toFixed(1) + 'px';
           const sz = p.textSize() * Math.hypot(m.a, m.b) / pd;   // in canvas pixels
-          st.fontSize = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
+          const fs = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
+          st.fontSize = fs;
           st.color = ctx.fillStyle;
-          const tx = { left: '0', center: '-50%', right: '-100%' }[al.horizontal] || '0';
-          const ty = { top: '0', center: '-50%', bottom: '-100%' }[al.vertical] || '-78%';   // alphabetic: baseline near 78 % of the line
-          st.transform = `translate(${tx},${ty})`;
+          if (el.__fs !== fs || el.__ms !== str || !el.__w) { el.__w = el.offsetWidth; el.__h = el.offsetHeight; el.__fs = fs; el.__ms = str; }   // measured only when the label or its size changes
+          const fx = { left: 0, center: -0.5, right: -1 }[al.horizontal] || 0;
+          const fy = { top: 0, center: -0.5, bottom: -1 }[al.vertical] ?? -0.78;   // alphabetic: baseline near 78 % of the line
+          const cw = p.canvas.clientWidth || p.width * k, ch = p.canvas.clientHeight || p.height * k;
+          // the larger phone labels are kept inside the canvas
+          st.left = Math.max(0, Math.min(lx + fx * el.__w, cw - el.__w)).toFixed(1) + 'px';
+          st.top = Math.max(0, Math.min(ly + fy * el.__h, ch - el.__h)).toFixed(1) + 'px';
           return p;
         };
         const textWidth = p.textWidth, widths = new Map();
