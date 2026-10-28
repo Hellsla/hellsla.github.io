@@ -45,7 +45,7 @@
   {
    "id": "fy1-7-L2-01",
    "level": 2,
-   "text": "Kultaharkon mitat ovat 10,0 cm × 5,0 cm × 2,0 cm. Kullan tiheys on 19 300 kg/m³. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
+   "text": "Kultaharkon mitat ovat $10{,}0\\,\\text{cm} \\cdot 5{,}0\\,\\text{cm} \\cdot 2{,}0\\,\\text{cm}$. Kullan tiheys on 19 300 kg/m³. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
    "answer": 1.9,
    "unit": "kg",
    "tolerance": 0.02

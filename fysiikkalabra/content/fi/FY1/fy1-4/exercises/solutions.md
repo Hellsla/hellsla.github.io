@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita: pituudet ovat senttimetreinä ja kulmakerroin kertoo senttimetrit vuorokaudessa.
 **Sijoitus:** $t = \dfrac{10\,\text{cm} - 4{,}0\,\text{cm}}{0{,}60\,\tfrac{\text{cm}}{\text{vrk}}} = \dfrac{6{,}0\,\text{cm}}{0{,}60\,\tfrac{\text{cm}}{\text{vrk}}} = 10\,\text{vrk}$
 **Vastaus:** $10\,\text{vrk}$, kaksi merkitsevää numeroa, koska $6{,}0\,\text{cm}$ ja $0{,}60\,\tfrac{\text{cm}}{\text{vrk}}$ ovat kahden numeron tarkkuudella.
-**Järkevyys:** Nurmikko kasvaa alun 4,0 cm:stä kuuden sentin verran, ja se kestää noin $6 / 0{,}6 = 10$ vuorokautta. Tarkistus: $0{,}60 \cdot 10 + 4{,}0 = 10\,\text{cm}$.
+**Järkevyys:** Nurmikko kasvaa alun 4,0 cm:stä kuuden sentin verran, ja se kestää noin $6 : 0{,}6 = 10$ vuorokautta. Tarkistus: $0{,}60 \cdot 10 + 4{,}0 = 10\,\text{cm}$.
 
 ## fy1-4-L1-04
 **Annettu:** suoran pisteet $(t_1;\ y_1) = (0{,}0\,\text{h};\ 20{,}0\,\text{cm})$ ja $(t_2;\ y_2) = (4{,}0\,\text{h};\ 14{,}0\,\text{cm})$, missä $y$ on kynttilän pituus
@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita: pituudet ovat senttimetreinä ja ajat tunteina.
 **Sijoitus:** $k = \dfrac{14{,}0\,\text{cm} - 20{,}0\,\text{cm}}{4{,}0\,\text{h} - 0{,}0\,\text{h}} = \dfrac{-6{,}0\,\text{cm}}{4{,}0\,\text{h}} = -1{,}5\,\tfrac{\text{cm}}{\text{h}}$
 **Vastaus:** $-1{,}5\,\text{cm/h}$, kaksi merkitsevää numeroa kuten erotuksissa $-6{,}0\,\text{cm}$ ja $4{,}0\,\text{h}$.
-**Järkevyys:** Miinusmerkki kuuluu tulokseen, koska kynttilän pituus pienenee. Kynttilä, jonka pituus on 20 cm, palaisi loppuun noin $20 / 1{,}5 \approx 13$ tunnissa, mikä sopii tavalliselle kynttilälle.
+**Järkevyys:** Miinusmerkki kuuluu tulokseen, koska kynttilän pituus pienenee. Kynttilä, jonka pituus on 20 cm, palaisi loppuun noin $20 : 1{,}5 \approx 13$ tunnissa, mikä sopii tavalliselle kynttilälle.
 
 ## fy1-4-L1-05
 **Annettu:** pinossa $N = 250$ arkkia ja massa $m = 1{,}2\,\text{kg}$; massa esitetään origon kautta kulkevalla suoralla
@@ -56,7 +56,7 @@
 **Muunnokset:** $\Delta s = 1{,}50\,\text{km} - 0{,}30\,\text{km} = 1{,}20\,\text{km} = 1200\,\text{m}$ ja $\Delta t = 10{,}0\,\text{min} - 2{,}0\,\text{min} = 8{,}0\,\text{min} = 480\,\text{s}$.
 **Sijoitus:** $k = \dfrac{1200\,\text{m}}{480\,\text{s}} = 2{,}5\,\text{m/s}$
 **Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa, koska aikaväli $8{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
-**Järkevyys:** Tulos on noin $2{,}5 \cdot 3{,}6 = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} / 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$, mikä on rauhallisen pyöräilyn vauhti.
+**Järkevyys:** Tulos on noin $2{,}5 \cdot 3{,}6 = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} : 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$, mikä on rauhallisen pyöräilyn vauhti.
 
 ## fy1-4-L2-02
 **Annettu:** suoran pisteet $(t_1;\ h_1) = (2{,}0\,\text{min};\ 7{,}0\,\text{cm})$ ja $(t_2;\ h_2) = (6{,}0\,\text{min};\ 15{,}0\,\text{cm})$; kysytty hetki $t = 10{,}0\,\text{min}$
@@ -109,11 +109,11 @@
 **Järkevyys:** Kulmakertoimet ovat negatiivisia, koska kahvi jäähtyy. Jäähtyminen hidastuu, koska kahvi lähestyy huoneen lämpötilaa ja lämpötilaero ympäristöön pienenee, mikä sopii kokemukseen kuuman juoman jäähtymisestä.
 
 ## fy1-4-L3-03
-**Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman virhe enintään $\delta = 0{,}1$ ja kaksi lukemaa, joten erotuksen $\Delta y$ virhe on enintään $2\delta = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
+**Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman virhe enintään $\Delta y_\text{luku} = 0{,}1$ ja kaksi lukemaa, joten erotuksen $\Delta y$ virhe on enintään $2\,\Delta y_\text{luku} = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
 **Kysytty:** kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna
-**Periaate:** Kulmakerroin on $k = \Delta y / \Delta x$. Kun $x$-arvot tunnetaan tarkasti, kulmakertoimen suhteellinen epävarmuus on yhtä suuri kuin erotuksen $\Delta y$ suhteellinen epävarmuus. Suoralla $\Delta y = k\,\Delta x$, joten erotus kasvaa matkan mukana, mutta lukemavirhe pysyy samana.
-**Kaava:** $\dfrac{\delta k}{k} = \dfrac{2\delta}{\Delta y} = \dfrac{2\delta}{k\,\Delta x}$, joten $\dfrac{(\delta k/k)_\text{lähellä}}{(\delta k/k)_\text{kaukana}} = \dfrac{\Delta x_2}{\Delta x_1}$
+**Periaate:** Kulmakerroin on $k = \Delta y : \Delta x$. Kun $x$-arvot tunnetaan tarkasti, kulmakertoimen suhteellinen epävarmuus on yhtä suuri kuin erotuksen $\Delta y$ suhteellinen epävarmuus. Suoralla $\Delta y = k\,\Delta x$, joten erotus kasvaa matkan mukana, mutta lukemavirhe pysyy samana.
+**Kaava:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{luku}}{\Delta y} = \dfrac{2\,\Delta y_\text{luku}}{k\,\Delta x}$, joten $\dfrac{(\Delta k : k)_\text{lähellä}}{(\Delta k : k)_\text{kaukana}} = \dfrac{\Delta x_2}{\Delta x_1}$
 **Muunnokset:** Ei tarvita: suhde on yksikötön.
-**Sijoitus:** Lähellä $\Delta y = 2{,}0 \cdot 0{,}5 = 1{,}0$ ja $\dfrac{\delta k}{k} = \dfrac{0{,}2}{1{,}0} = 0{,}20$. Kaukana $\Delta y = 2{,}0 \cdot 8{,}0 = 16$ ja $\dfrac{\delta k}{k} = \dfrac{0{,}2}{16} = 0{,}0125$. Suhde on $\dfrac{0{,}20}{0{,}0125} = \dfrac{8{,}0}{0{,}5} = 16$.
-**Vastaus:** $16$ kertaa. Lukemavirhe supistuu pois suhteesta, joten luku määräytyy pelkästä $\Delta x$:n suhteesta $8{,}0 / 0{,}5 = 16$, joka on tarkka; kaksi merkitsevää numeroa riittää. Kaukana toisistaan olevat pisteet ovat parempi valinta, koska erotus $\Delta y$ on suuri verrattuna lukemavirheeseen.
-**Järkevyys:** Lähekkäisten pisteiden virhe 20 % on liian suuri, kaukana oleva noin 1,3 % on hyvä. Suhde 16 on sama kuin $\Delta x$:n suhde $8{,}0 / 0{,}5$, kuten kaavasta pitää seurata.
+**Sijoitus:** Lähellä $\Delta y = 2{,}0 \cdot 0{,}5 = 1{,}0$ ja $\dfrac{\Delta k}{k} = \dfrac{0{,}2}{1{,}0} = 0{,}20$. Kaukana $\Delta y = 2{,}0 \cdot 8{,}0 = 16$ ja $\dfrac{\Delta k}{k} = \dfrac{0{,}2}{16} = 0{,}0125$. Suhde on $\dfrac{0{,}20}{0{,}0125} = \dfrac{8{,}0}{0{,}5} = 16$.
+**Vastaus:** $16$ kertaa. Lukemavirhe supistuu pois suhteesta, joten luku määräytyy pelkästä $\Delta x$:n suhteesta $8{,}0 : 0{,}5 = 16$, joka on tarkka; kaksi merkitsevää numeroa riittää. Kaukana toisistaan olevat pisteet ovat parempi valinta, koska erotus $\Delta y$ on suuri verrattuna lukemavirheeseen.
+**Järkevyys:** Lähekkäisten pisteiden virhe 20 % on liian suuri, kaukana oleva noin 1,3 % on hyvä. Suhde 16 on sama kuin $\Delta x$:n suhde $8{,}0 : 0{,}5$, kuten kaavasta pitää seurata.

@@ -198,7 +198,7 @@ s_\text{min} &= v\, t_\text{min} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Matkalla $1{,}7\,\text{m}$ auton kulkuaika on noin $1{,}7\,\text{m} / 0{,}42\,\text{m/s} \approx 4{,}05\,\text{s}$, jolloin $\varepsilon = 0{,}2\,\text{s} / 4{,}05\,\text{s} \approx 4{,}9\,\%$ eli tasan rajan sisällä. Matkalla $0{,}50\,\text{m}$ aika olisi vain $1{,}2\,\text{s}$ ja epävarmuus noin $17\,\%$, ja siksi lyhyt matka oli huono valinta.
+**Järkevyys.** Matkalla $1{,}7\,\text{m}$ auton kulkuaika on noin $1{,}7\,\text{m} : 0{,}42\,\text{m/s} \approx 4{,}05\,\text{s}$, jolloin $\varepsilon = 0{,}2\,\text{s} : 4{,}05\,\text{s} \approx 4{,}9\,\%$ eli tasan rajan sisällä. Matkalla $0{,}50\,\text{m}$ aika olisi vain $1{,}2\,\text{s}$ ja epävarmuus noin $17\,\%$, ja siksi lyhyt matka oli huono valinta.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tutkimus on epäonnistunut, jos mittaus ei tue hypoteesia. Näin ei ole: jos mittaus kumoaa hypoteesin, tutkija tietää jotakin, mitä hän ei aiemmin tiennyt. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään, koska muuttujia ei ole hallittu tai mittaukset ovat liian epävarmoja.
@@ -210,5 +210,5 @@ Toinen yleinen virhe on pitää yhtä mittausta riittävänä. Yksi lukema ei ke
 - Reilussa kokeessa muutetaan yhtä muuttujaa, mitataan toista ja pidetään muut vakioina.
 - Mittaus suunnitellaan etukäteen: mittausalue, pisteiden määrä, toistot ja vakioidut asiat. Esikoe tarkistaa suunnitelman.
 - Pöytäkirjaan kirjataan lukemat, yksiköt, välineet ja havainnot kokeen aikana. Mitään mittausta ei poisteta hiljaa.
-- Suhteellinen epävarmuus $\varepsilon = \Delta t / t$ pienenee, kun mitattava aika kasvaa; siksi aikaa on oltava vähintään $\Delta t / \varepsilon_\text{max}$.
+- Suhteellinen epävarmuus $\varepsilon = \Delta t : t$ pienenee, kun mitattava aika kasvaa; siksi aikaa on oltava vähintään $\Delta t : \varepsilon_\text{max}$.
 - Raportti kertoo kysymyksen, menetelmän, tulokset, pohdinnan ja johtopäätöksen niin, että toinen voi toistaa tutkimuksen.

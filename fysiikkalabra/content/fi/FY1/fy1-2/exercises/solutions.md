@@ -32,9 +32,9 @@
 **Annettu:** nopeus $v = 15{,}341\,\text{km/s}$
 **Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Nopeuden yksikkö $\text{km/s}$ on pituusyksikkö jaettuna aikayksiköllä; vain pituusyksikkö muuttuu, sekunti pysyy. Etuliite kilo on $10^{3}$, joten $1\,\text{km} = 1000\,\text{m}$.
-**Kaava:** $v_\text{m/s} = v_\text{km/s}\cdot k$, missä $k$ on muunnoskerroin metreistä kilometreihin
-**Muunnokset:** $k = \dfrac{1000\,\text{m}}{1\,\text{km}}$, koska $1\,\text{km} = 10^{3}\,\text{m}$; siis $1\,\text{km/s} = 10^{3}\,\text{m/s}$.
-**Sijoitus:** $v = 15{,}341\,\dfrac{\text{km}}{\text{s}}\cdot 1000\,\dfrac{\text{m}}{\text{km}} = 15\,341\,\dfrac{\text{m}}{\text{s}}$
+**Kaava:** $1\,\text{km} = 1000\,\text{m}$, joten $1\,\dfrac{\text{km}}{\text{s}} = 1000\,\dfrac{\text{m}}{\text{s}}$
+**Muunnokset:** Kilometrin paikalle kirjoitetaan $1000\,\text{m}$; sekunti pysyy.
+**Sijoitus:** $v = 15{,}341\,\dfrac{\text{km}}{\text{s}} = 15{,}341\cdot\dfrac{1000\,\text{m}}{\text{s}} = 15\,341\,\dfrac{\text{m}}{\text{s}}$
 **Vastaus:** $15\,341\,\text{m/s}$, viisi merkitsevää numeroa kuten lähtöarvossa $15{,}341\,\text{km/s}$.
 **Järkevyys:** Metri on pienempi yksikkö kuin kilometri, joten lukuarvon on kasvettava tuhatkertaiseksi. Noin 15 km/s on yli 40-kertainen äänen nopeuteen 340 m/s verrattuna, mikä sopii avaruusluotaimelle.
 
@@ -76,7 +76,7 @@
 **Muunnokset:** $k_1 = 10^{6}\,\text{m}^2/\text{km}^2$, joten $2{,}4\,\text{km}^2 = 2{,}4\cdot10^{6}\,\text{m}^2$. Yksi hehtaari on $10^{4}\,\text{m}^2$, eli $k_2 = 10^{4}\,\text{m}^2/\text{ha}$.
 **Sijoitus:** $A = \dfrac{2{,}4\cdot10^{6}\,\text{m}^2}{10^{4}\,\text{m}^2/\text{ha}} = 2{,}4\cdot10^{2}\,\text{ha} = 240\,\text{ha}$
 **Vastaus:** $240\,\text{ha}$, kirjoitettuna $2{,}4\cdot10^{2}\,\text{ha}$, kaksi merkitsevää numeroa kuten lähtöarvossa $2{,}4\,\text{km}^2$.
-**Järkevyys:** Neliökilometri on 100 hehtaaria, koska $10^{6}/10^{4} = 10^{2}$. Siksi 2,4 neliökilometriä on 2,4 sataa eli 240 hehtaaria.
+**Järkevyys:** Neliökilometri on 100 hehtaaria, koska $10^{6} : 10^{4} = 10^{2}$. Siksi 2,4 neliökilometriä on 2,4 sataa eli 240 hehtaaria.
 
 ## fy1-2-L2-04
 **Annettu:** nopeus $v = 15{,}341\,\text{km/s}$ (vakio), aika $t = 1\,\text{vrk}$
@@ -96,7 +96,7 @@
 **Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Matka kilometreinä jaetaan lopuksi arvolla $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$.
 **Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $L_\text{AU} = \dfrac{9{,}462\cdot10^{12}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 6{,}325\cdot10^{4}\,\text{AU}$
 **Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600/8{,}3 \approx 63\,000$ vahvistaa tuloksen.
+**Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600 : 8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 
 ## fy1-2-L3-02
 **Annettu:** näytön leveys $W = 1920\,\text{px}$ (tarkka luku); Kuun halkaisija $D = 3474\,\text{km} = 1\,\text{px}$; matka $a = 30{,}07\,\text{AU}$; $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$

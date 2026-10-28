@@ -10,11 +10,11 @@
 
 ## fy1-3-L1-02
 **Annettu:** oikea arvo (vertailupituus) $x_\text{oikea} = 20{,}0\,\text{cm}$, mittaustulos $x = 20{,}3\,\text{cm}$
-**Kysytty:** mittausvirhe $e$ etumerkkeineen yksikössä $\text{cm}$
+**Kysytty:** mittausvirhe $\Delta x$ etumerkkeineen yksikössä $\text{cm}$
 **Periaate:** Mittausvirhe on mittaustuloksen ja oikean arvon erotus. Etumerkki kertoo suunnan: plus tarkoittaa, että tulos on liian suuri, ja miinus, että se on liian pieni.
-**Kaava:** $e = x - x_\text{oikea}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $e = x - x_\text{oikea}$
+**Kaava:** $\Delta x = x - x_\text{oikea}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $\Delta x = x - x_\text{oikea}$
 **Muunnokset:** Molemmat pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $e = 20{,}3\,\text{cm} - 20{,}0\,\text{cm} = +0{,}3\,\text{cm}$
+**Sijoitus:** $\Delta x = 20{,}3\,\text{cm} - 20{,}0\,\text{cm} = +0{,}3\,\text{cm}$
 **Vastaus:** $0{,}3\,\text{cm}$ eli tulos on liian suuri. Erotus tunnetaan vain yhden desimaalin tarkkuudella, koska molemmat pituudet on annettu yhdellä desimaalilla.
 **Järkevyys:** Tulos $20{,}3\,\text{cm}$ on suurempi kuin oikea arvo $20{,}0\,\text{cm}$, joten virheen pitää olla positiivinen. Suhteessa pituuteen virhe on $\dfrac{0{,}3\,\text{cm}}{20{,}0\,\text{cm}} \approx 1{,}5\,\%$, mikä on mittanauhalle suuri virhe (nauha on tavallisesti tarkka noin millimetrin), joten syy on todennäköisesti systemaattinen, esimerkiksi venynyt nauha tai väärä nollakohta.
 

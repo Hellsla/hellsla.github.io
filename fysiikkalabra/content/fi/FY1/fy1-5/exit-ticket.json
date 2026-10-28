@@ -5,7 +5,7 @@
   },
   {
     "q": "Tasaista liikettä esittävä $(t, s)$-kuvaaja on suora. Se nousee 12 m, kun aika kasvaa 4,0 s, ja leikkaa $s$-akselin kohdassa 8 m. Mikä on nopeus ja mikä alkupaikka?",
-    "a": "Nopeus on kulmakerroin: $v = \\Delta s / \\Delta t = 12\\,\\text{m} / 4{,}0\\,\\text{s} = 3{,}0\\,\\text{m/s}$. Alkupaikka on leikkauskohta: $s_0 = 8\\,\\text{m}$."
+    "a": "Nopeus on kulmakerroin: $v = \\Delta s : \\Delta t = 12\\,\\text{m} : 4{,}0\\,\\text{s} = 3{,}0\\,\\text{m/s}$. Alkupaikka on leikkauskohta: $s_0 = 8\\,\\text{m}$."
   },
   {
     "q": "Miksi Voyager 2 -luotaimen etäisyydelle tasaisen liikkeen yhtälöllä laskettu arvo on mallin arvo eikä mittaus?",

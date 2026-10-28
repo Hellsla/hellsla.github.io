@@ -5,7 +5,7 @@
   },
   {
     "q": "Kuution tilavuus kaksinkertaistuu, mutta aine pysyy samana. Mitä tapahtuu kuution massalle ja tiheydelle?",
-    "a": "Massa kaksinkertaistuu, koska massa on suoraan verrannollinen tilavuuteen, $m = \\rho V$. Tiheys ei muutu, koska se on aineen ominaisuus ja suhde $m/V$ pysyy samana."
+    "a": "Massa kaksinkertaistuu, koska massa on suoraan verrannollinen tilavuuteen, $m = \\rho V$. Tiheys ei muutu, koska se on aineen ominaisuus ja suhde $m : V$ pysyy samana."
   },
   {
     "q": "Vesipullon tilavuus on $1{,}5\\,\\text{dm}^3$. Kuinka suuri on veden massa ($\\rho = 1000\\,\\text{kg/m}^3$)? Mitä muunnosta tarvitaan?",

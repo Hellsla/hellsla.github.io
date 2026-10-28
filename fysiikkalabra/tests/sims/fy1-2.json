@@ -18,10 +18,10 @@
   "note": "main button first (Matkusta valon nopeudella), then Alusta and the two arrow buttons"
  },
  {
-  "expr": "(() => { const o=[...document.querySelector('#sim-root select').options].map(x=>x.textContent+':'+x.value).join('|'); return o==='hidas (×1):1|normaali (×100):100|nopea (×10 000):10000' ? 1 : 0 })()",
+  "expr": "(() => { const o=[...document.querySelector('#sim-root select').options].map(x=>x.textContent+':'+x.value).join('|'); return o==='hidas (1-kertainen):1|normaali (100-kertainen):100|nopea (10 000-kertainen):10000' ? 1 : 0 })()",
   "expected": 1,
   "tol": 0.01,
-  "note": "speed select: hidas x1, normaali x100, nopea x10 000 (multiples of the speed of light)"
+  "note": "speed select: hidas 1-kertainen, normaali 100-kertainen, nopea 10 000-kertainen (multiples of the speed of light)"
  },
  {
   "expr": "(() => { const n=[...document.querySelectorAll('#sim-root .jumps button')].map(x=>x.textContent).join(','); return n==='Aurinko,Merkurius,Venus,Maa,Mars,Jupiter,Saturnus,Uranus,Neptunus,Voyager 2' ? 1 : 0 })()",

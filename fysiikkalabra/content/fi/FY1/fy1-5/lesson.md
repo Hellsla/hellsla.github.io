@@ -62,7 +62,7 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella: kappale kulkee yhtä 
 </svg>
 
 ### Suoraan verrannollisuus
-Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Kun tasainen liike alkaa nollakohdasta, kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia: kaksinkertainen aika antaa kaksinkertaisen matkan, ja suhde $s/t$ on nopeus $v$. (t, s)-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
+Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Kun tasainen liike alkaa nollakohdasta, kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia: kaksinkertainen aika antaa kaksinkertaisen matkan, ja suhde $s : t$ on nopeus $v$. (t, s)-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
 
 ### Lineaarinen malli
 Tasainen liike on malli, ei todellisuus. Pyöräilijä polkee epätasaisesti, ja Voyager 2 hidastuu hieman Auringon vetovoiman takia. Malli on silti hyvä, kun nopeus muuttuu vähän tarkasteltuun aikaan nähden. Sen kuvaaja on suora, ja suoraa kuvaa lineaarinen malli: paikka muuttuu yhtä paljon jokaista sekuntia kohti. Mallilla lasketut arvot ovat mallin arvoja, joita verrataan mittauksiin.
@@ -172,11 +172,11 @@ s &= s_0 + v t \\
 **Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin 26 AU ja $119{,}7 + 26 \approx 146\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 arvon $143{,}3\,\text{AU}$, ja JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\,\text{AU}$. Ero on noin $0{,}2\,\text{AU}$, alle $0{,}2\,\%$ etäisyydestä, joten vakionopeusmalli toimii tässä hyvin. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta aivan vähän ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Malli on siis tarkka murto-osan prosentista.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4\,\text{m}$ muuttuu $8\,\text{m}$:ksi. Toinen virhe on lukea nopeudeksi paikan arvo eikä paikan muutos aikaa kohti: nopeus on $\Delta s / \Delta t$, ei $s / t$, kun $s_0 \neq 0$.
+Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4\,\text{m}$ muuttuu $8\,\text{m}$:ksi. Toinen virhe on lukea nopeudeksi paikan arvo eikä paikan muutos aikaa kohti: nopeus on $\Delta s : \Delta t$, ei $s : t$, kun $s_0 \neq 0$.
 
 ## Tiivistelmä
 - Tasaisessa liikkeessä nopeus on vakio, ja kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat: $s = s_0 + vt$.
 - Kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s$ on verrannollinen aikaan vain, kun $s_0 = 0$.
-- (t, s)-kuvaaja on suora. Sen kulmakerroin $\Delta s / \Delta t$ on nopeus, ja $s$-akselin leikkauskohta on alkupaikka $s_0$.
+- (t, s)-kuvaaja on suora. Sen kulmakerroin $\Delta s : \Delta t$ on nopeus, ja $s$-akselin leikkauskohta on alkupaikka $s_0$.
 - Muunna yksiköt ennen laskemista: $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 - Tasainen liike on lineaarinen malli. Sen antamat arvot ovat mallin arvoja, joita voi verrata mittauksiin, kuten Voyager 2 -luotaimen etäisyyttä.

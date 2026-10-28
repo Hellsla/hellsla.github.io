@@ -3,9 +3,12 @@
 > **Miksi** kymmenen oppilasta saa samasta kuulan vierimisajasta kymmenen eri tulosta, vaikka kaikki käyttävät samaa kelloa?
 
 ## Ydinajatus
-**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos ei ole koskaan täsmälleen suureen oikea arvo, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $e = x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen, eikä se ole sama asia kuin moka, esimerkiksi väärin kirjattu luku. Fysiikassa virhe arvioidaan ja ilmoitetaan tuloksen mukana.
+**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos ei ole koskaan täsmälleen suureen oikea arvo, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $\Delta x = x - x_\text{oikea}$. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Fysiikassa virhe arvioidaan ja ilmoitetaan tuloksen mukana.
 
-Virheet jaetaan kahteen lajiin sen mukaan, miten ne käyttäytyvät, kun mittaus toistetaan.
+Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
+
+### Karkea virhe
+**Karkea virhe** on yksittäinen selvä erehdys: mittari luetaan väärin, luku kirjataan väärin (esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$), kello käynnistyy vasta, kun kuula on jo liikkeellä, tai tulos kirjataan väärässä yksikössä. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei arvioida eikä keskiarvoisteta, vaan se etsitään ja poistetaan: poikkeava tulos tarkistetaan, ja jos se on selvästi virheellinen, se jätetään pois laskuista ja mittaus tehdään uudelleen. Poisjätetty tulos ja sen syy kirjataan muistiin.
 
 ### Satunnaisvirhe
 **Satunnaisvirhe** vaihtelee mittauksesta toiseen sattumanvaraisesti ja voi olla kumpaan suuntaan tahansa. Käsikellolla kuulan vierimisaikaa mitattaessa se syntyy reaktioajasta: välillä kello käynnistyy hieman liian aikaisin ja välillä liian myöhään. Myös asteikon lukeminen kahden viivan väliltä tuo satunnaisvirhettä. Se näkyy hajontana: samasta suureesta saadaan joka kerta vähän eri luku. Toistamalla mittaus hajonta tulee näkyviin, ja keskiarvo vaimentaa sitä, koska liian suuret ja liian pienet tulokset kumoavat osin toisensa.
@@ -80,7 +83,7 @@ Virheet jaetaan kahteen lajiin sen mukaan, miten ne käyttäytyvät, kun mittaus
   <foreignObject x="351.5" y="239.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{keskiarvo}$</div></foreignObject>
   <line x1="205.5" y1="288" x2="327.5" y2="288" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
   <path d="M340.5,288 L326.5,294.5 L326.5,281.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="244" y="255.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\delta_\text{sys}$</div></foreignObject>
+  <foreignObject x="238" y="255.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\Delta t_\text{sys}$</div></foreignObject>
   <line x1="24" y1="206" x2="576" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
 </svg>
 
@@ -248,10 +251,11 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa ja saa tu
 **Järkevyys.** Väli $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$ eli $3{,}06\,\text{s}$–$3{,}30\,\text{s}$ kattaa viisi kuudesta tuloksesta. Tulos $3{,}31\,\text{s}$ jää juuri sen ulkopuolelle, mikä sopii siihen, että virhe-arvio on karkea. Suhteellinen virhe on muutaman prosentin, mikä on tavallista käsin otetulle ajalle. Toistot kuitenkin kertovat vain satunnaisvirheestä: systemaattisen virheen paljastaisi vasta vertailu toiseen mittaustapaan.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä, ja hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää virhettä huolimattomuutena: virhe kuuluu myös taitavan mittaajan tulokseen, ja siksi se ilmoitetaan. Kolmas on laskea keskiarvo erilaisissa yksiköissä olevista luvuista: tulokset muunnetaan ensin samaan yksikköön.
+Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä, ja hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe, joka poistetaan, mutta satunnais- ja systemaattinen virhe kuuluvat myös taitavan mittaajan tulokseen, ja siksi ne arvioidaan ja ilmoitetaan. Kolmas on laskea keskiarvo erilaisissa yksiköissä olevista luvuista: tulokset muunnetaan ensin samaan yksikköön.
 
 ## Tiivistelmä
-- Mittausvirhe on tuloksen ja oikean arvon erotus. Virhe kuuluu jokaiseen mittaukseen, ja se arvioidaan ja ilmoitetaan tuloksen mukana.
+- Mittausvirhe on tuloksen ja oikean arvon erotus, $\Delta x = x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen, ja se arvioidaan ja ilmoitetaan tuloksen mukana.
+- Karkea virhe on yksittäinen erehdys, kuten väärin luettu tai kirjattu lukema. Se näkyy selvästi muista poikkeavana tuloksena, joka tarkistetaan ja jätetään pois.
 - Satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy hajontana. Keskiarvo $\bar{x}$ vaimentaa sitä, ja sen suuruutta arvioidaan vaihteluvälin puolikkaalla $\Delta x$.
 - Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan, eikä toistaminen poista sitä. Se huomataan vertailuarvolla ja korjataan: $x = x_\text{lukema} - \Delta x_\text{sys}$.
 - Toistettavuus kertoo satunnaisvirheestä ja oikeellisuus systemaattisesta virheestä. Luotettava mittaus on sekä toistettava että oikea.

@@ -32,11 +32,11 @@
         {
           "text": "Kuinka paljon paikka muuttuu aikayksikköä kohti.",
           "correct": true,
-          "feedback": "Oikein. Kulmakerroin on $\\Delta s / \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*). Liikkeessä se on nopeus, ja sitä sovellat tänään."
+          "feedback": "Oikein. Kulmakerroin on $\\Delta s : \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*). Liikkeessä se on nopeus, ja sitä sovellat tänään."
         },
         {
           "text": "Kuinka pitkä suora on.",
-          "feedback": "Suoran pituudella ei ole merkitystä, koska suora jatkuu molempiin suuntiin. Kulmakerroin on kahden muutoksen suhde, $\\Delta s / \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*)."
+          "feedback": "Suoran pituudella ei ole merkitystä, koska suora jatkuu molempiin suuntiin. Kulmakerroin on kahden muutoksen suhde, $\\Delta s : \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*)."
         }
       ],
       "optional": true
@@ -102,14 +102,14 @@
       "text": "Kärry ajaa suoralla radalla vakionopeudella. Muuta alkupaikkaa ja nopeutta, käynnistä liike tai vedä hetkeä, ja katso, miten $(t, s)$-kuvaaja piirtyy.",
       "howto": "Säädä alkupaikka $s_0$ ja nopeus $v$ liukusäätimillä; aika palaa nollaan. *Käynnistä* toistaa liikkeen, *Tauko* pysäyttää sen ja *Alusta* palauttaa alun. Voit myös vetää *Hetki*-säädintä. Radalla oranssit pystyviivat ovat kärryn paikat kokonaisten sekuntien kohdalla, vihreä lippu on alkupaikka ja nuoli näyttää nopeuden. Kuvaajaan piirtyy suora hetkeen asti, jossa olet käynyt. Kun olet käynyt hetkessä 6 s, kuvaajaan ilmestyy kulmakolmio. *Nopeus (toisto)* muuttaa vain toiston tahtia.",
       "model": "Kärry liikkuu suoralla radalla vakionopeudella: ei kitkaa eikä kiihtyvyyttä, ja vauhti on heti alussa täysi. Radan paikat ja kuvaajan arvot ovat mallin laskemia arvoja, eivät mittauksia. Kärry etenee vain yhteen suuntaan, joten nopeus on positiivinen.",
-      "calc": "Paikka on $s = s_0 + vt$ ja kuljettu matka $\\Delta s = s - s_0 = vt$. Kuvaajan kulmakolmio kulkee hetkestä $t = 2\\,\\text{s}$ hetkeen $t = 6\\,\\text{s}$, joten $\\Delta t = 4{,}0\\,\\text{s}$, ja kulmakerroin $\\Delta s / \\Delta t$ on nopeus $v$."
+      "calc": "Paikka on $s = s_0 + vt$ ja kuljettu matka $\\Delta s = s - s_0 = vt$. Kuvaajan kulmakolmio kulkee hetkestä $t = 2\\,\\text{s}$ hetkeen $t = 6\\,\\text{s}$, joten $\\Delta t = 4{,}0\\,\\text{s}$, ja kulmakerroin $\\Delta s : \\Delta t$ on nopeus $v$."
     },
     {
       "id": "koe-1",
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: lähtö nollakohdasta",
-      "intro": "Testaa ennuste 1. Alkupaikka $s_0 = 0$ ja nopeus $v = 2{,}0\\,\\text{m/s}$ pysyvät vakioina. Muuta vain hetkeä $t$ ja kirjaa paikka ainakin kolmella hetkellä $t > 0$, esimerkiksi 2,0 s, 4,0 s ja 8,0 s. Laske jokaiselle riville osamäärä $s/t$. Katso myös, miten kuvaaja piirtyy.",
+      "intro": "Testaa ennuste 1. Alkupaikka $s_0 = 0$ ja nopeus $v = 2{,}0\\,\\text{m/s}$ pysyvät vakioina. Muuta vain hetkeä $t$ ja kirjaa paikka ainakin kolmella hetkellä $t > 0$, esimerkiksi 2,0 s, 4,0 s ja 8,0 s. Laske jokaiselle riville osamäärä $s : t$. Katso myös, miten kuvaaja piirtyy.",
       "initial": {
         "s0": 0,
         "v": 2,
@@ -139,16 +139,16 @@
       "min": 3,
       "question": {
         "type": "choice",
-        "prompt": "Mitä osamäärille $s/t$ tapahtuu, kun hetki $t$ kasvaa?",
+        "prompt": "Mitä osamäärille $s : t$ tapahtuu, kun hetki $t$ kasvaa?",
         "choices": [
           {
             "text": "Ne ovat kaikki samat, ja ne ovat yhtä suuria kuin nopeus.",
             "correct": true,
-            "feedback": "Oikein. Kun liike alkaa nollakohdasta, $s/t = 2{,}0\\,\\text{m/s}$ joka rivillä, esimerkiksi $4{,}0\\,\\text{m} / 2{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{m} / 4{,}0\\,\\text{s}$. Paikka on silloin suoraan verrannollinen aikaan, ja suhde on nopeus."
+            "feedback": "Oikein. Kun liike alkaa nollakohdasta, $s : t = 2{,}0\\,\\text{m/s}$ joka rivillä, esimerkiksi $4{,}0\\,\\text{m} : 2{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{m} : 4{,}0\\,\\text{s}$. Paikka on silloin suoraan verrannollinen aikaan, ja suhde on nopeus."
           },
           {
             "text": "Ne kasvavat, koska paikka kasvaa.",
-            "feedback": "Paikka kasvaa, mutta myös aika kasvaa: kaksinkertainen aika antaa kaksinkertaisen paikan, joten suhde ei muutu. Laske esimerkiksi $4{,}0/2{,}0$ ja $8{,}0/4{,}0$."
+            "feedback": "Paikka kasvaa, mutta myös aika kasvaa: kaksinkertainen aika antaa kaksinkertaisen paikan, joten suhde ei muutu. Laske esimerkiksi $4{,}0 : 2{,}0$ ja $8{,}0 : 4{,}0$."
           },
           {
             "text": "Ne pienenevät, koska aika kasvaa jakajassa.",
@@ -199,17 +199,17 @@
         "prompt": "Kumpi suure on suoraan verrannollinen aikaan, kun $s_0 = 6{,}0\\,\\text{m}$?",
         "choices": [
           {
-            "text": "Matka $\\Delta s$: osamäärä $\\Delta s / t$ on joka rivillä sama, $2{,}0\\,\\text{m/s}$.",
+            "text": "Matka $\\Delta s$: osamäärä $\\Delta s : t$ on joka rivillä sama, $2{,}0\\,\\text{m/s}$.",
             "correct": true,
-            "feedback": "Oikein. Esimerkiksi $4{,}0\\,\\text{m} / 2{,}0\\,\\text{s} = 8{,}0\\,\\text{m} / 4{,}0\\,\\text{s} = 2{,}0\\,\\text{m/s}$. Paikan osamäärä $s/t$ muuttuu ($10/2{,}0 = 5{,}0$, mutta $14/4{,}0 = 3{,}5$), joten paikka ei ole suoraan verrannollinen aikaan."
+            "feedback": "Oikein. Esimerkiksi $4{,}0\\,\\text{m} : 2{,}0\\,\\text{s} = 8{,}0\\,\\text{m} : 4{,}0\\,\\text{s} = 2{,}0\\,\\text{m/s}$. Paikan osamäärä $s : t$ muuttuu ($10 : 2{,}0 = 5{,}0$, mutta $14 : 4{,}0 = 3{,}5$), joten paikka ei ole suoraan verrannollinen aikaan."
           },
           {
             "text": "Paikka $s$, koska se on kuvaajan pystyakselilla.",
-            "feedback": "Pystyakselilla oleva suure ei ole automaattisesti verrannollinen aikaan. Laske osamäärät $s/t$: ne ovat eri suuria ($10/2{,}0 = 5{,}0$ ja $14/4{,}0 = 3{,}5$), joten suhde ei ole vakio."
+            "feedback": "Pystyakselilla oleva suure ei ole automaattisesti verrannollinen aikaan. Laske osamäärät $s : t$: ne ovat eri suuria ($10 : 2{,}0 = 5{,}0$ ja $14 : 4{,}0 = 3{,}5$), joten suhde ei ole vakio."
           },
           {
             "text": "Kumpikin, koska liike on tasaista.",
-            "feedback": "Tasaisuus ei riitä: paikka on verrannollinen aikaan vain, kun alkupaikka on nolla. Tässä $s/t$ vaihtelee ($5{,}0$ ja $3{,}5$), vaikka $\\Delta s / t$ on vakio."
+            "feedback": "Tasaisuus ei riitä: paikka on verrannollinen aikaan vain, kun alkupaikka on nolla. Tässä $s : t$ vaihtelee ($5{,}0$ ja $3{,}5$), vaikka $\\Delta s : t$ on vakio."
           }
         ]
       }
@@ -223,12 +223,12 @@
         "koe-1",
         "koe-2"
       ],
-      "prompt": "Kirjoita taulukoidesi perusteella: milloin paikka on suoraan verrannollinen aikaan, ja milloin vain matka? Mitä osamäärä $\\Delta s / t$ kertoo liikkeestä?",
-      "model": "Kokeessa 1 alkupaikka oli nolla, ja paikan ja ajan osamäärä $s/t$ oli joka rivillä $2{,}0\\,\\text{m/s}$ eli nopeus: paikka oli suoraan verrannollinen aikaan. Kokeessa 2 alkupaikka oli $6{,}0\\,\\text{m}$. Paikan osamäärä muuttui, esimerkiksi $10/2{,}0 = 5{,}0\\,\\text{m/s}$ ja $14/4{,}0 = 3{,}5\\,\\text{m/s}$, mutta matkan osamäärä $\\Delta s / t$ oli joka rivillä $2{,}0\\,\\text{m/s}$. Kuljettu matka on siis aina suoraan verrannollinen aikaan, ja paikka vain silloin, kun alkupaikka on nolla. Osamäärä $\\Delta s / t$ on nopeus. Arvot ovat mallin laskemia arvoja: malli olettaa vakionopeuden eikä kitkaa.",
+      "prompt": "Kirjoita taulukoidesi perusteella: milloin paikka on suoraan verrannollinen aikaan, ja milloin vain matka? Mitä osamäärä $\\Delta s : t$ kertoo liikkeestä?",
+      "model": "Kokeessa 1 alkupaikka oli nolla, ja paikan ja ajan osamäärä $s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$ eli nopeus: paikka oli suoraan verrannollinen aikaan. Kokeessa 2 alkupaikka oli $6{,}0\\,\\text{m}$. Paikan osamäärä muuttui, esimerkiksi $10 : 2{,}0 = 5{,}0\\,\\text{m/s}$ ja $14 : 4{,}0 = 3{,}5\\,\\text{m/s}$, mutta matkan osamäärä $\\Delta s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$. Kuljettu matka on siis aina suoraan verrannollinen aikaan, ja paikka vain silloin, kun alkupaikka on nolla. Osamäärä $\\Delta s : t$ on nopeus. Arvot ovat mallin laskemia arvoja: malli olettaa vakionopeuden eikä kitkaa.",
       "criteria": [
         "Sanoin, että paikka on verrannollinen aikaan vain, kun alkupaikka on nolla.",
-        "Käytin taulukon lukuja osamäärien $s/t$ ja $\\Delta s / t$ vertailuun.",
-        "Sanoin, että osamäärä $\\Delta s / t$ on nopeus.",
+        "Käytin taulukon lukuja osamäärien $s : t$ ja $\\Delta s : t$ vertailuun.",
+        "Sanoin, että osamäärä $\\Delta s : t$ on nopeus.",
         "Mainitsin, että arvot ovat mallin arvoja."
       ]
     },
@@ -299,12 +299,12 @@
       "hints": [
         "Mikä on alkupaikka, ja mikä on nopeus? Ovatko yksiköt yhteensopivia?",
         "Käytä kaavaa $s = s_0 + vt$. Muunna nopeus ensin yksikköön m/s: jaa luku 3,6:lla.",
-        "$v = 21{,}6 / 3{,}6\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
+        "$v = 21{,}6 : 3{,}6\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
       ],
       "mistakes": [
         {
           "value": 1092,
-          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin: $21{,}6\\,\\text{km/h} = 21{,}6 / 3{,}6\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$."
+          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin: $21{,}6\\,\\text{km/h} = 21{,}6 : 3{,}6\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$."
         },
         {
           "value": 270,
@@ -328,12 +328,12 @@
       "choices": [
         {
           "text": "Paikka $s$ on suoraan verrannollinen aikaan $t$.",
-          "feedback": "Suoraan verrannollisen suureen kuvaaja kulkee origon kautta, koska suhde $s/t$ on vakio. Tässä suora alkaa kohdasta $s_0 \\neq 0$, joten suhde $s/t$ muuttuu ajan mukana."
+          "feedback": "Suoraan verrannollisen suureen kuvaaja kulkee origon kautta, koska suhde $s : t$ on vakio. Tässä suora alkaa kohdasta $s_0 \\neq 0$, joten suhde $s : t$ muuttuu ajan mukana."
         },
         {
           "text": "Kuljettu matka $\\Delta s = s - s_0$ on suoraan verrannollinen aikaan $t$.",
           "correct": true,
-          "feedback": "Oikein. Suora on joka kohdassa yhtä jyrkkä, joten $\\Delta s = vt$ ja suhde $\\Delta s / t = v$ on vakio. Paikasta $s$ vähennetään alkupaikka $s_0$, ja jäljelle jäävä matka on verrannollinen aikaan."
+          "feedback": "Oikein. Suora on joka kohdassa yhtä jyrkkä, joten $\\Delta s = vt$ ja suhde $\\Delta s : t = v$ on vakio. Paikasta $s$ vähennetään alkupaikka $s_0$, ja jäljelle jäävä matka on verrannollinen aikaan."
         },
         {
           "text": "Kappale ei liiku tasaisesti, koska suora ei kulje origon kautta.",

@@ -110,7 +110,7 @@
       "text": "Simulaatiossa kaksi samankokoista palloa putoaa levosta, ja niiden nopeudet piirtyvät $(t, v)$-kuvaajaan.",
       "howto": "Paina *Pudota* tai vedä *Hetki $t$* -liukusäädintä ja katso, miten pallot putoavat ja miten kuvaaja piirtyy. Valitse *Ympäristö* (tyhjiö tai ilma) ja säädä pallojen massat. Nuolen pituus on nopeus, ja pisteet merkitsevät kokonaisia sekunteja. Katkoviiva on kaava $v = gt$.",
       "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Pallot ovat samankokoiset, ja ne lähtevät levosta. Tyhjiössä vaikuttaa vain putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Ilmassa pallon halkaisija on $0{,}20\\,\\text{m}$, ja ilma hidastaa palloa sitä enemmän, mitä nopeammin se liikkuu. Tuuli ja pallon pyöriminen jätetään huomiotta.",
-      "calc": "Tyhjiössä nopeus lasketaan kaavalla $v = gt$. Luku $v/t$ kertoo, kuinka paljon nopeus on kasvanut keskimäärin sekunnissa, kun pallo lähti levosta. Ilmassa nopeuden kasvu hidastuu nopeuden kasvaessa, ja nopeus lähestyy rajanopeutta. Kevyellä pallolla rajanopeus on pienempi kuin raskaalla, joten $v/t$ jää kevyellä pallolla pienemmäksi."
+      "calc": "Tyhjiössä nopeus lasketaan kaavalla $v = gt$. Luku $v : t$ kertoo, kuinka paljon nopeus on kasvanut keskimäärin sekunnissa, kun pallo lähti levosta. Ilmassa nopeuden kasvu hidastuu nopeuden kasvaessa, ja nopeus lähestyy rajanopeutta. Kevyellä pallolla rajanopeus on pienempi kuin raskaalla, joten $v : t$ jää kevyellä pallolla pienemmäksi."
     },
     {
       "id": "exp-1",

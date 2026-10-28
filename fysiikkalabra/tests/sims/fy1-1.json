@@ -12,22 +12,22 @@
   "note": "one slider: the exponent L of the view width, -34 to 27,5 in steps of 0,1"
  },
  {
-  "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); return document.querySelectorAll('#sim-root select').length===2 && o(0)==='1:loitonna|-1:lähennä' && o(1)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
+  "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); return document.querySelectorAll('#sim-root select').length===3 && o(0)==='1:loitonna|-1:lähennä' && o(1)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "two selects: direction (loitonna / lähennä) and speed hidas 0.5, normaali 1, nopea 2"
+  "note": "three selects: direction (loitonna / lähennä), speed hidas 0.5, normaali 1, nopea 2, and Siirry kohteeseen"
  },
  {
   "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===4 && b[0]==='Käynnistä' && b[1]==='Alusta' && b[2].startsWith('Lähennä') && b[3].startsWith('Loitonna') && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "four buttons: Käynnistä first, Alusta, Lähennä ×10, Loitonna ×10; DOM order canvas, controls, readout"
+  "note": "four buttons: Käynnistä first, Alusta, Lähennä 10-kertaisesti, Loitonna 10-kertaisesti; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')]; return l.length===3 && /^Näkymän leveys \\$10\\^\\{1\\}\\\\,\\\\text\\{m\\}\\$$/.test(simText(l[0])) && l[1].textContent.startsWith('Suunta') && l[2].textContent.startsWith('Nopeus') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')]; return l.length===4 && /^Näkymän leveys \\$10\\^\\{1\\}\\\\,\\\\text\\{m\\}\\$$/.test(simText(l[0])) && l[1].textContent.startsWith('Suunta') && l[2].textContent.startsWith('Nopeus') && l[3].textContent.startsWith('Siirry kohteeseen') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "three labelled controls: Näkymän leveys 10^L m, Suunta, Nopeus"
+  "note": "four labelled controls: Näkymän leveys 10^L m, Suunta, Nopeus, Siirry kohteeseen"
  },
  {
   "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
@@ -616,42 +616,42 @@
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
   "expected": 0,
   "tol": 1e-06,
-  "note": "Lähennä ×10 from L = 1 goes to L = 0"
+  "note": "Lähennä 10-kertaisesti from L = 1 goes to L = 0"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.4);B('Lähennä').click();",
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
   "expected": -4,
   "tol": 1e-06,
-  "note": "Lähennä ×10 from L = -3,4 goes to the next whole power, -4"
+  "note": "Lähennä 10-kertaisesti from L = -3,4 goes to the next whole power, -4"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.4);B('Loitonna').click();",
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
   "expected": -3,
   "tol": 1e-06,
-  "note": "Loitonna ×10 from L = -3,4 goes to -3"
+  "note": "Loitonna 10-kertaisesti from L = -3,4 goes to -3"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);B('Loitonna').click();",
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
   "expected": 2,
   "tol": 1e-06,
-  "note": "Loitonna ×10 from L = 1 goes to L = 2"
+  "note": "Loitonna 10-kertaisesti from L = 1 goes to L = 2"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27.5);B('Loitonna').click();",
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
   "expected": 27.5,
   "tol": 1e-06,
-  "note": "Loitonna ×10 stops at the end, L = 27,5"
+  "note": "Loitonna 10-kertaisesti stops at the end, L = 27,5"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);B('Lähennä').click();",
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
   "expected": -34,
   "tol": 1e-06,
-  "note": "Lähennä ×10 stops at the end, L = -34"
+  "note": "Lähennä 10-kertaisesti stops at the end, L = -34"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0);B('Lähennä').click();",
@@ -1375,7 +1375,7 @@
   "expr": "window.simState.L>1.02 && window.simState.L<1.99 ? 1 : 0",
   "expected": 1,
   "tol": 0,
-  "note": "Loitonna ×10 glides: shortly after the click L is between 1 and 2"
+  "note": "Loitonna 10-kertaisesti glides: shortly after the click L is between 1 and 2"
  },
  {
   "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 900))",
@@ -1396,5 +1396,137 @@
   "expected": 1,
   "tol": 0,
   "note": "L = 1,5 (between the whole powers): labels inside the canvas, at least two objects"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[2].options]; return o.length===44 && o[0].value==='' && o[0].textContent==='valitse kohde' && o[1].value==='planck' && o[43].value==='universe' && o.findIndex(x=>x.value==='atom')<o.findIndex(x=>x.value==='water') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen: a blank prompt and all 43 objects in size order, Planck first, the universe last"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('atom');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-9.3865))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen atom: the view glides towards L = -9.39, where atom is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('proton');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-14.1975))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen proton: the view glides towards L = -14.20, where proton is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('quark');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-17.4279))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen quark: the view glides towards L = -17.43, where quark is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('earth');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(7.6759))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen earth: the view glides towards L = 7.68, where earth is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('sun');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(9.7151))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen sun: the view glides towards L = 9.72, where sun is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('neptune');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(13.5263))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen neptune: the view glides towards L = 13.53, where neptune is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('milky');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(21.5498))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen milky: the view glides towards L = 21.55, where milky is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('universe');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(27.5000))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen universe: the view glides towards L = 27.50, where universe is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('planck');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-34.0000))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen planck: the view glides towards L = -34.00, where planck is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.kohdeId==='atom' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -9.4 (the jump target rounded to the slider step) the nearest object is atom"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-14.2);",
+  "expr": "window.simState.kohdeId==='proton' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -14.2 (the jump target rounded to the slider step) the nearest object is proton"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-17.4);",
+  "expr": "window.simState.kohdeId==='quark' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -17.4 (the jump target rounded to the slider step) the nearest object is quark"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(7.7);",
+  "expr": "window.simState.kohdeId==='earth' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 7.7 (the jump target rounded to the slider step) the nearest object is earth"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(9.7);",
+  "expr": "window.simState.kohdeId==='sun' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 9.7 (the jump target rounded to the slider step) the nearest object is sun"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(13.5);",
+  "expr": "window.simState.kohdeId==='neptune' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 13.5 (the jump target rounded to the slider step) the nearest object is neptune"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(21.5);",
+  "expr": "window.simState.kohdeId==='milky' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 21.5 (the jump target rounded to the slider step) the nearest object is milky"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27.5);",
+  "expr": "window.simState.kohdeId==='universe' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 27.5 (the jump target rounded to the slider step) the nearest object is universe"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);",
+  "expr": "window.simState.kohdeId==='planck' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -34 (the jump target rounded to the slider step) the nearest object is planck"
  }
 ]

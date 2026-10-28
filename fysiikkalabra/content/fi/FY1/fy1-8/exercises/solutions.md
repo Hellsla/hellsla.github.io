@@ -46,7 +46,7 @@
 **Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita. Osamäärä kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\varepsilon = \dfrac{0{,}15\,\text{s}}{4{,}73\,\text{s}} = 0{,}0317 = 3{,}2\,\%$
 **Vastaus:** $3{,}2\,\%$, kaksi merkitsevää numeroa kuten epävarmuudessa $0{,}15\,\text{s}$.
-**Järkevyys:** Karkea arvio: $0{,}15 / 4{,}7$ on noin $0{,}03$, eli noin $3\,\%$. Tulos täsmää pöytäkirjan taulukon arvoon $3{,}2\,\%$ ja on alle $5\,\%$, joten matka $2{,}00\,\text{m}$ riittää.
+**Järkevyys:** Karkea arvio: $0{,}15 : 4{,}7$ on noin $0{,}03$, eli noin $3\,\%$. Tulos täsmää pöytäkirjan taulukon arvoon $3{,}2\,\%$ ja on alle $5\,\%$, joten matka $2{,}00\,\text{m}$ riittää.
 
 ## fy1-8-L2-01
 **Annettu:** viisi aikaa $7{,}8\,\text{s}$, $8{,}2\,\text{s}$, $7{,}9\,\text{s}$, $8{,}1\,\text{s}$ ja $8{,}0\,\text{s}$
