@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 829ef450183dcb7a
+CONTENT-HASH: eddc57610d8a36e9
 
 ## Blocking
 - none.
 
 ## Polish
-- solutions.md fy1-4-L3-03 Annettu/Kaava — $\Delta$ now means three things in one solution: the difference $\Delta y$, $\Delta x$ (slope), the reading error $\Delta y_\text{luku}$ and the slope's error $\Delta k$; a 17-year-old will mix them. Keep $\Delta y$, $\Delta x$ for differences only and write the slope's error as "kulmakertoimen virhe-arvio $\Delta k$" with the reading error named once in words ("lukemavirhe $0{,}1$"), or add one sentence "Δ kirjoitetaan sekä erotukselle että virhe-arviolle: erotus on $y_2 - y_1$, virhe-arvio on pieni lisäys tulokseen".
-- solutions.md L3-03 Kaava — $\dfrac{(\Delta k : k)_\text{lähellä}}{(\Delta k : k)_\text{kaukana}}$ mixes a colon inside a fraction; write the ratio with the descriptive subscripts and in two steps (virhe lähellä = 0,20, virhe kaukana = 0,0125, suurempi : pienempi = 16), as the size-comparison rule asks.
-- exercises.json fy1-4-L3-03 — the task ends with an instruction and a justification request after the question; put the situation, the worst-case convention, then one question ("Kuinka monta kertaa suurempi … ? Perustele.").
+- solutions.md fy1-4-L3-02 Vastaus — "väliltä 10–$20\,\text{min}$" wraps only the second number; write "väliltä $10\,\text{min}$–$20\,\text{min}$" as the lesson does for ranges.
+- solutions.md fy1-4-L3-01 Järkevyys and L1-01 — a few quantities stay plain text: "0,47 sekunnissa", "noin 6 sekunnissa", "1,3 metriä sekunnissa". Words are acceptable for spelled-out units, but "ehti 0,47 sekunnissa" mixes with the neighbouring $0{,}85\,\text{m/s}$; write $0{,}47\,\text{s}$.
+- solutions.md fy1-4-L3-03 — the text now says "epävarmuus" in Annettu but "lukemavirhe" in Vastaus and Järkevyys ("virhe 20 %"). Use one term (lukeman epävarmuus) throughout, as in the lesson.
+- Earlier open items about Δ standing for differences and uncertainties in L3-03 are partly met by the new wording, but "Δk : k" still reuses Δ; one sentence "Δk on kulmakertoimen epävarmuus" would settle it.
 
 ## Checked
-- Delta: the four "/" divisions in Järkevyys (L1-03, L1-04, L1-05, L3-03) are now colons, with correct values (6 : 0,6 = 10; 20 : 1,5 ≈ 13; 1,20 km : 8,0 min = 0,15 km/min; 8,0 : 0,5 = 16).
-- L3-03 errors are written with $\Delta$ and the arithmetic stays correct (0,2 : 1,0 = 0,20; 0,2 : 16 = 0,0125; ratio 16).
-- No other " / " divisions remain in solutions.md.
-- No × or \times; multiplication is \cdot throughout.
-- Counts 5/4/3; situation first; contexts (kynttilä, taksi, kahvi, kopiopaperi) recognisable; L3-01 is a new context, not the worked example.
-- Finnish and case after number+unit correct.
+- Diff is LaTeX conversion of numbers with units (L1-01, L1-03, L2-03, L2-04, L3-01, L3-02, L3-03) and a wording change from "virhe-arvio" to "epävarmuus" in L3-03; no answer, unit or tolerance changed.
+- L2-04: 4,0 + 2,5 · 10 = 29,0 and 4,0 + 2,5 · 5,0 = 16,5; ratio 1,8 still correct; $10\,\text{km}$:n and $5{,}0\,\text{km}$:n have the right case.
+- L3-03: 0,2 : 1,0 = 0,20, 0,2 : 16 = 0,0125, ratio 16, and "20 %" and "1,3 %" are consistent; "varovaisesti arvioiden" correctly signals a conservative bound.
+- L3-02: slopes −1,8, −0,90 and −1,2 °C/min and ratio 2,0 are correct.
+- Counts 5/4/3 unchanged, situation first, contexts recognisable, no repeat of the worked example.
+- Hash unchanged at the end.

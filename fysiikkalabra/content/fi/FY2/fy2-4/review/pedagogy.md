@@ -1,23 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3d76e58b5c55fcf6
+CONTENT-HASH: d1b7eae9124ab56b
 
 ## Blocking
 
 ## Polish
-1. inquiry.json koe-1 and the sim readout — the readout still prints "Hyötysuhde (tyypillinen arvo) η = 25 %", so the share asked (E_h : E_o = 75 %) follows as 100 % − 25 % without the table. Fix: hide η in the readout while an experiment is active, or ask for something the readout lacks (e.g. E_h in kJ at t = 10 s from P_h · t).
-2. inquiry.json ennuste-1/koe-1 — the sim takes 25 % as input, so the experiment cannot refute the guess; it only shows that E_a : E_o stays constant. The text says this honestly ("simulaatio ei mittaa sitä"), so not blocking. Fix (optional): add one line to the reflect prompt that the 25 % comes from data, not from the simulation.
-3. inquiry.json ennuste-1 prompt — the hint sentence ends in a second question ("Kuumenevatko … ajossa?") after the main question, so the question is not last. Fix: put the hint before "Kuinka suuri osa …?".
-4. lesson.md "Hyötysuhde kertoo hyödyn osuuden" — the first paragraph is dense (about 90 words, four claims). Fix: split off "Sähkölämmittimessä …" under its own short ### subheading or into the following sentence of the table intro.
-5. inquiry.json koe-2 is optional and its numeric result (5 %) is given in the question; acceptable as an optional extension, no change needed.
+- lesson.md "Hyötysuhde kertoo hyödyn osuuden" — the rewritten paragraph (about 100 words) holds five claims and says "vaihtelee paljon" twice (before the motor/lamp sentence and in the line that introduces the table); "jäävät selvästi alle $100\,\%$:n" also hides that the motor is below 100 % too. Fix: cut "Kun laitteen hyöty on muuta kuin lämpöä, hyötysuhde vaihtelee paljon: ..." (the table shows it) and move the electric-heater and ideal-device sentences under their own short ### subheading.
+- lesson.md same paragraph — "Hyötysuhde on enintään 100 %, koska energia säilyy eikä hyötyä voi saada enemmän kuin energiaa otetaan" is correct; the earlier polish on density is still open.
+- Round 1 polish on koe-1 (the readout shows η = 25 %, so the share asked follows without measuring) is unchanged and still not blocking.
 
 ## Checked
-- Path: Pohdinta question (where the lamp energy goes, how to measure goodness) is answered by Ydinajatus, figure 1 and the pair figure; Teho is retrieved first; goals η = E_a/E_o = P_a/P_o met; no FY3 content (no chain of efficiencies, no heat engine).
-- Figures 1 and 2 at 390 px: print quality, LaTeX labels, colour plus text (valo/lämpö), arrow widths to scale, placed right after their paragraphs; figure beside paragraph at 1280.
-- Table of typical η labelled as typical rounded values; fits 360 px; bensiinimoottori caveat stated.
-- Worked example: seven stages, symbols before numbers, unit conversions, significant-figure reason, double check; does not repeat the exercises.
-- Sim at 390 and 1280 px: picture, controls, readout clear; Käyttöohje, Mallin oletukset, Laskennan selitys closed; koe-1 locks device and P_o, varies t; sim sticky beside experiments at 1280.
-- Predictions: ennuste-1 wrong options each repair their misconception; ennuste-2 (optional) reasoning-based and honest about the model's constant η.
-- Etsi virhe, transfer task (MJ to W, three hints, solution), three checks and exit ticket test share versus power and loss is not vanishing; solutions complete.
-- Workload: core path hook, retrieval, one prediction, one experiment, conclusion, error, transfer, exercises, two checks, exit ticket: about one lesson.
-- Finnish: glossary terms consistent, chapter names not ids, case after number+unit correct, decimal comma, \cdot and colon for division.
-- Exercises not judged (reviewed apart). Hash unchanged at end: 3d76e58b5c55fcf6.
+- Delta only rewords "aina alle 100 %" into "enintään 100 %; todellisissa laitteissa usein alle" in learn, lesson, summary, two feedbacks and the check-3 prompt; all consistent with the glossary and with each other.
+- The 100 % case is now explained (ideal device; electric heater nearly 100 %) without making any option in the choices correct or wrong differently: "Hyötysuhde nousee 100 %:iin" feedback still repairs the misconception (running time does not remove losses).
+- Etsi virhe: the correct option (ratio inverted, 330 %) still unique; the "mukaan myös lämpö" feedback now says why heat is a loss (valo defined as the benefit), which is clearer.
+- Check 3 prompt is now a statement plus "Selitä, miksi." with the question last; criteria still fit.
+- Hook/ennuste/koe not touched; previous PASS conclusions hold.

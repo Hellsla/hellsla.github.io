@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 35c3015164c2b5ea
+CONTENT-HASH: e13ddfe39bad5ca6
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:108 — The Vastaus line leads with "2083 s" and then claims two significant figures. Give the answer as $2{,}1 \cdot 10^{3}\,\text{s}$ (≈ 35 min), and keep 2083 s only as the intermediate. The stored 2083.33 is fine: 2100 is within the tolerance.
-- exercises/solutions.md:66, 86 — "30 % = 0,30", "5,0 % = 0,050" and "25 % = 0,25" are written without the substitution step that the other solutions show. Write them as $30\,\% = 30 \cdot 0{,}01 = 0{,}30$ (teacher's rule: conversions by substitution).
-- exercises/solutions.md:9 (L1-01, Järkevyys) — 85 % is compared with the "typical 90 %" of an electric motor. That is fine, but small motors of this size (400 J) are often 70–85 %, so "sopii" holds either way and nothing needs to change.
+- content/fi/FY2/fy2-4/exercises/solutions.md:101 — L3-02 "Vastaus: 2083 s eli noin 2,1·10³ s, kaksi merkitsevää numeroa": lead with the rounded value (2,1·10³ s, about 35 min) so the four-figure number is not read as the answer's precision.
 
 ## Checked
-- One Python run recomputed all 12 answers from the task text with my own formulas: 85, 30, 3,0, 2000, 4,0, 96, 54, 0,228, 45, 1,5, 2083 and 180. All of them match answers.py and exercises.json.
-- Each answers.py line computes the physics the task text describes: L2-02 holds light power equal, and L3-03 reads the Sankey bands as a ratio.
-- Every solution states the principle and why it applies, solves symbolically before substituting, carries units and ends with a real check (sum to 100 %, inverse product, or a scale check).
-- Students who round to 2 s.f. (0,23 kWh; 2,1·10³ s) stay inside the 2 % tolerance.
-- Device efficiencies used (LED 30 %, bulb 5 %, motor 80–90 %, panel 20 %, petrol engine 25 %) are realistic typical values.
-- Levels follow the rules: L1 needs one formula, L2 two steps or a conversion, L3 reasoning or an unfamiliar representation. None repeats the worked example (kettle losses).
-- Nothing from FY3/FY4: no product of chain efficiencies (L2-02 compares two lamps; it is not a chain), no work, no Q = cmΔT, no heat-engine theory, and "liike-energia" is only named as an energy form.
-- No ×, no slash division, and all mathematics is in LaTeX.
+- All 12 answers recomputed independently in one script and compared with answers.py and exercises.json: 85 %, 30 %, 3,0 W, 2000 J, 4,0 kJ, 96 kJ, 54 W, 0,228 → 0,23 kWh, 45 kW, 1,5, 2083 s, 180 J; all agree, and each rounded answer lies inside its 2 % tolerance.
+- Every task uses one device's efficiency η = E_a/E_o = P_a/P_o with E_o = E_a + E_h, inside FY2 scope (no chain products, no heat-engine cycle).
+- Steady power is stated or implied wherever P_a/P_o or E = P t is used (L1-02, L2-01, L2-03, L3-02).
+- L2-02 reasoning (equal light power → equal P_a) is right, and its check (10 W LED ≈ 60 W filament lamp) is realistic.
+- L3-01 handles mixed J and kJ correctly (each device's ratio in its own unit); L3-03 reads η from arrow thicknesses as the lesson teaches.
+- Data realistic (motor 85–90 %, LED 30 %, filament 5 %, petrol 25 %, panel 20 %); solutions complete in seven parts, symbolic first, conversions explicit, rounding justified, checks real.
+- Notation (E_a, E_o, E_h, P_a, P_o, P_h, η) the same as in the lesson.

@@ -1,20 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 9276338c11c76304
+CONTENT-HASH: aee5688129bd889b
+
 ## Blocking
+
 ## Polish
-- inquiry.json:79 (data-fi) — table header `$E$ (TWh)` leaves the unit outside LaTeX, while data-viikko writes `$(\text{GW})$`; write `$E\ (\text{TWh})$` for consistency with the teacher's LaTeX rule.
-- inquiry.json:82 (data-fi) — 2024 was a leap year ($8784\,\text{h}$); the prompt states $8760\,\text{h}$ so the answer is consistent ($2{,}30$ vs $2{,}31\,\text{GW}$, inside tolerance), but a sharp student may ask. Optionally say "noin $8760\,\text{h}$" or note it in the solution.
-- inquiry.json:165 (data-viikko Järkevyys) — Monday's "others" $0{,}6\,\text{GW}$ in January is only possible as a net value with heavy export (CHP and hydro run several GW in winter); and a daily mean wind of $6{,}4\,\text{GW}$ of $8\,\text{GW}$ is near the hourly record. Example-labelled, so fine; consider $5{,}5\,\text{GW}$ wind on Monday or call $P_\text{m}$ "muiden tuotanto ja nettotuonti".
-- inquiry.json:330 (tarkistus-3 model) — "Kumpaakaan ei voi säätää nopeasti" is not true downward for wind (turbines are curtailed in seconds); write "kumpaakaan ei voi nostaa nopeasti".
-- exit-ticket.json:8 — $17{,}52 \cdot 10^{6}\,\text{kWh} \approx 18\,\text{GWh}$ skips $= 17{,}52\,\text{GWh}$; add it so the conversion is a visible substitution, as in the worked example.
+- inquiry.json:330 — tarkistus-3 model answer "Kumpaakaan ei voi säätää nopeasti … tuulta ei voi lisätä": wind output can be cut quickly (curtailment), only not raised — say "Kumpaakaan ei voi nostaa nopeasti tarpeen mukaan" so the model answer does not contradict how wind is actually used in balancing.
+- lesson.md:83 — "Ydinvoimala käy mieluiten tasaisesti, koska sen tehon muuttaminen on hidasta": the main reason is economic (small fuel cost, large capital cost; OL3 does follow load to some extent). Consider "koska sen polttoainekustannus on pieni ja tehon muuttaminen on hidasta" (C at this level, so optional).
+- inquiry.json:101 — "vuoden tuntimäärä 8760 h on tarkka luku": 2024 was a leap year (8784 h). The prompt fixes 8760 h, so the answer stands; say "annettu" rather than "tarkka".
+- lesson.md:72 — "turve ovat fossiilisia" while the statistics row and figure label it "fossiiliset polttoaineet ja turve" separately; Statistics Finland classes peat as its own (hitaasti uusiutuva) fuel. Defensible via IPCC treatment; a half-clause would make the two consistent.
+- inquiry.json:228 — "energia kerrottiin ajalla tehon sijaan" is unclear; "energia kerrottiin ajalla, vaikka se olisi pitänyt jakaa".
+
 ## Checked
-- Hash unchanged start to end. Round-2 blocker fixed: worked example now shows $1598\,\text{kW} = 1{,}598 \cdot 1000\,\text{kW} \approx 1{,}6\,\text{MW}$ and $43\,800\,000\,\text{kWh} = 43{,}8 \cdot 10^{6}\,\text{kWh} = 43{,}8\,\text{GWh}$; round-2 polish taken (week consumption now $10{,}8$–$13{,}1\,\text{GW}$, below the winter peak; tarkistus-2 $9 \cdot 1000\,\text{MWh}$; table cells in LaTeX).
-- Recomputed all lesson-answers.py values independently in one script: 1598 kW, 0,320, 43,8 GWh, 2,306 GW, 320, 8,4 GW, 14,016 TWh, 17,5 %, 8,76 GWh, 17,52 GWh, world ratio 35,8; table sums to 79,9 TWh. All match.
-- Every numeric mistake value reproduces its stated wrong path (2306 MW, 0,0023, 0,0031, 8,8, 12,7, 0,6, 14016, 0,00018, 8760).
-- Sig-fig statements and tolerances: rounding to the data's figures stays inside 2 %.
-- Worked example: seven stages, $P_\text{ka} = E/t$ solved symbolically, colon division in substitution, conversions by substitution, 32 % capacity factor realistic.
-- Data: Tilastokeskus 2024 (nuclear 31 ≈ 39 %, wind 20,2 ≈ 25 %, fossil+peat 4,3 % = "muutama prosentti"), wind capacity ≈ 8 GW end 2024, OL3 1600 MW.
-- Figures: fi-bars 10,5 px/TWh exact; log chart 70 px/decade, points at log10 P (89, 299, 390, 474); "kaksi ja puoli askelta" = log10 320 = 2,51; plants figure has G for turbines, none for PV, heat arrow from every plant.
-- Correct options and feedback physics: nuclear largest; hydro fastest to raise; nuclear base load; error item E·t vs E:t, 123 000 GW ≈ 36 × world mean.
-- Formula $E = P \cdot t$ with constant-P condition; mean power defined; scope stays FY2 (no W = Fs, Q = cmΔT, chain efficiencies); no ×; fractions only in symbolic solutions.
-- Provenance: data-fi `statistics` with source_note; data-yksikko and data-viikko `example`.
+- Worked example recomputed: 14·10⁶ kWh : 8760 h = 1598 kW ≈ 1,6 MW, 0,32 of 5000 kW; check 43,8 GWh, 14 : 43,8 = 0,32; symbolic first, staged, two figures justified.
+- All inquiry numerics recomputed: wind 2,306 GW → 2,31; 320 turbines; Thursday 8,4 GW (mistakes 8,8 / 12,7 / 0,6 correct); OL3 14,0 TWh (mistakes 14 016 GWh, 0,00018); check-2 8,76 → 8,8 GWh (mistake 8760 MWh); exit ticket 17,52·10⁶ kWh ≈ 18 GWh.
+- "Kymmeniä kertoja maailman keskiteho": 122 640 : ≈3400 GW ≈ 36 — true.
+- Statistics table sums to 79,9 TWh; text's "noin neljännes" (25 %), "kaksi viidesosaa" (39 %), "muutama prosentti" (4 %) agree.
+- Bar chart to scale (10,5 px/TWh, every bar within 0,5 px); log chart points at the right decades, 2,5 decades = 320×.
+- 1 GWh = 10⁶ kWh, 1 TWh = 10⁹ kWh; E = Pt stated for constant power, keskiteho defined via E/t.
+- Week data realistic (nuclear 4,3 GW ≈ Finnish fleet, wind ≤ 0,8 of ~8 GW) and marked as invented.
+- Every choice item has exactly one correct option; distractor feedback says why each is wrong.
+- Grouping (sääriippuvainen / säädettävä / perusvoima) consistent across theory, summary, checks and exit ticket; misconception "noin kolmannes" matches 32 %.
+- Within FY2 scope: no chain efficiencies, no FY3 formulas; hash identical at start and end.

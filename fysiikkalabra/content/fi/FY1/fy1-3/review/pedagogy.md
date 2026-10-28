@@ -1,14 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: 76b9b8b3e6ff81b1
+VERDICT: FAIL
+CONTENT-HASH: b32be6c0168d0282
+
 ## Blocking
+- inquiry.json check-2 (id "check-2", answer 2.1, tolerance 0.05) and its solution — the solution's own answer is "$2\,\%$, yksi merkitsevä numero kuten virhearviossa $0{,}05\,\text{s}$ (laskimen arvo 2,08 %)", but the answer check accepts only 2,05–2,15, so a student who rounds as the solution and the lesson rule teach ("tulos samaan tarkkuuteen kuin virhe-arvio") types 2 and is marked wrong. Fix: answer 2, tolerance 0.15 (accepts 2,0–2,15), or change the solution to "$2{,}1\,\%$, kaksi numeroa" and drop the one-digit claim. The exit ticket's third item ("$\approx 2\,\%$") shows the same rounding, so pick one rule for both.
+
 ## Polish
-- lesson.md:104 — "Merkintä on sama kuin mittausvirheellä, koska virhearvio kertoo, kuinka suuri mittausvirhe tuloksessa arviolta on" is correct but a first-timer still meets one symbol for a signed error (line 257, Δx = x − x_oikea) and a positive estimate. Say it as contrast: "Mittausvirhe Δx = x − x_oikea voi olla negatiivinen; virhearvio Δx on sen suuruuden arvio, aina positiivinen."
-- lesson.md:104 vs 93/134/140 — "virhearvio" and "virhe-arvio" are both used (even in one paragraph); pick one spelling (glossary-consistent) throughout lesson, inquiry and exit ticket.
-- Carried, optional: karkea virhe is practised in one choice task only; a criterion in the explanation check ("karkea virhe poistetaan, ei keskiarvoisteta") would make it stick.
+- lesson.md Kaava — "Keskiarvon epävarmuus on yleensä sitä pienempi, ja sitä pienempi, mitä enemmän mittauksia on" is garbled. Write: "Keskiarvon epävarmuus on yleensä pienempi kuin yksittäisen tuloksen, ja sitä pienempi, mitä enemmän mittauksia on."
+- lesson.md — $\Delta x$ means the error ($x - x_\text{oikea}$) in Ydinajatus and the uncertainty (range half) in Kaava, and the text itself says they differ. Use another symbol for one (e.g. $u$ or $\delta x$ for the uncertainty), or a sentence at the Kaava saying the symbol is reused.
+- inquiry.json exp-3 (optional) — answer 6.2 with tolerance 0.03 is narrow for a ratio read from three-digit table values; 6,17 to 6,23 is fine, but 6 (the ratio of the settings) is already the mistake. Widen to 0.06 or ask for the ratio to the nearest whole number.
+- inquiry.json exp-1 question — the correct option is two lines long and discloses the plateau value; shorten to "Keskiarvon ero pienenee mutta vaihteluvälin puolikas ei" and keep the number in the feedback.
+- pred-2 prompt states the 0,30 s systematic error and its option set offers "noin 0,30 s" — students can answer by reading the prompt. Acceptable as a model-comprehension check, but a prompt without the number (only "kello näyttää liikaa") would leave the prediction open.
+
 ## Checked
-- Delta round 3 read in context: "kello käynnistetään kerran vahingossa" now makes the karkea-virhe example a one-off slip, which closes my round-2 polish (a recurring delay would be systematic).
-- Relative-error task (inquiry.json ~497): solution and exit ticket now round to one significant figure like the error estimate 0,05 s / 0,09 s; the calculator value 2,08 % is shown, so the student sees why 2 % is given.
-- Task answer 2,1 with relative tolerance 0,05 accepts 2,0–2,2, so a student who rounds to the data's precision (2) is accepted; arithmetic 0,05/2,40 = 2,08 % and 0,09/4,52 = 1,99 % verified.
-- Exit-ticket answer ties the figure count to the error estimate (principle explained, not just the rule); Finnish and units correct.
-- Section "Karkea virhe" stays one paragraph of about 100 words; no new figure or example touched by the diff.
-- Unchanged parts (figures, simulation, worked example, predictions) not re-opened.
+- Hand-checked numbers: example mean 3,1817 s, half-range 0,12 s, ε 3,8 %; karkea virhe feedback (+0,2 s, 0,09 s to 0,62 s); siirto 5,44 g; exp-2 0,30 s.
+- Example has seven stages, symbolic first, Järkevyys states the 3,31 s outlier honestly.
+- Predictions precede evidence, are revealed by experiments with min 3, and each wrong option repairs its misconception; both experiments can refute the predictions.
+- Choice items have exactly one correct option (karkea, virhe, check-1, data, pr-numerot).
+- Glossary terms match (karkea virhe, satunnaisvirhe, systemaattinen virhe, toistettavuus); case after number+unit correct.
+- Workload one lesson: exp-3, Etsi virhe and the third check are optional.
+- Opening question is answered in the reflect stage and conclusion.
+- Page captures were not present (review/shots missing), so figure legibility and 390 px sim fit were not judged visually.
+- Hash unchanged at the end.

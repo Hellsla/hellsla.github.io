@@ -1,11 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: b23b73f81e2a6b5b
+VERDICT: FAIL
+CONTENT-HASH: 9c0e2ae1f4be967f
+
 ## Blocking
+- exercises.json fy1-3-L2-02 (answer 10.67, tolerance 0.04) vs solutions.md L2-02 Vastaus — the solution now ends "noin $11\,\text{mm}$ (laskimen arvo $10{,}67\,\text{mm}$)" and the Järkevyys uses 11 mm, but the check accepts only 10,63–10,71 mm, so a student who gives the solution's own answer 11 is marked wrong (the same applies to 10,7). Fix: tolerance 0.4 (accepts 10,3–11,1 so 10,67, 10,7 and 11 pass), or return the solution to the stored precision.
+
 ## Polish
-- solutions.md L3-02 Sijoitus/Vastaus — the chain ends "= 2,0 µm" and the answer says "2 µm": a student sees two forms. Add "pyöristettynä yhteen merkitsevään numeroon 2 µm" to the Sijoitus end, or end the chain at "0{,}0020 mm = 2 µm". The exercise stores answer 2.0 with tolerance 0.02 (accepts 1,96–2,04 only if relative; if absolute, still accepts 2); fine either way.
-- Earlier unaddressed Polish still open (not part of this diff): repeated formula in every "Kaava" line (e.g. L3-03 "Kysytty on Δx_sys = …"), L3-03 duplicates L2-02's two steps and karkea virhe is not practised, intro sentence about units gives away L2-03, "kerrotaan tuhannella" without a written substitution in L3-02 Muunnokset.
+- exercises.json fy1-3-L2-03 text — "12,4 cm" and "123 mm" are left as plain text while "$0{,}125\,\text{m}$" is LaTeX; the three values should look alike. Write all three as `$12{,}4\,\text{cm}$`, `$0{,}125\,\text{m}$`, `$123\,\text{mm}$`.
+- solutions.md L1-05 Vastaus — "virhe-arvio on karkea arvio, joten se ilmoitetaan yhdellä merkitsevällä numerolla" still uses "virhe-arvio" while the task and Kysytty now say "epävarmuus"; write "lukeman epävarmuus on karkea arvio...".
+- exercises.json L1-05 prompt — "lukeman epävarmuudeksi arvioidaan puoli asteikkoväliä. Kuinka suuri on lukeman epävarmuus?" gives the question away in the situation sentence; shorten the situation to the scale interval and ask "Arvioi lukeman epävarmuus tällä tavalla."
+- Earlier open Polish (repeated formula in each Kaava line, L3-03 duplicating L2-02) still stands; not part of this diff.
+
 ## Checked
-- L1-02: "kulunut nauhan alkupää tai väärä nollakohta" is physically right for a reading that is too large (a worn start shifts the zero inward), so the earlier physics slip is fixed; the percentage and "suuri virhe mittanauhalle" reasoning is unchanged and consistent.
-- L3-02: answer now follows the lesson's rule (virhe-arvio yhteen merkitsevään numeroon) and the reason is stated; the reasonableness check (2 % of 0,1 mm, 500 % for one sheet) still holds.
-- L3-03: 0,025 cm ≈ 0,03 cm follows the same one-figure rule, "noin kymmenesosa" (0,03 vs 0,26) is correct, and the next sentence (7,98–8,03 cm) is unaffected.
-- Finnish of the three changed passages is correct; no new terms; answers in exercises.json unchanged and consistent.
+- LaTeX conversion of numbers with units in L1-01, L1-03, L1-04, L2-01, L2-02, L3-01 and L3-02: values and units unchanged, answers still consistent.
+- L1-05 and L3-02 now say "epävarmuus" for the reading instead of "virhe-arvio"; consistent with the lesson's Kaava text (half the smallest division, kokonaisepävarmuus may be larger).
+- L1-05 Järkevyys is now physically honest: the reading interval is 1,0 mm wide, total uncertainty may exceed it.
+- L2-02 reasoning (each reading 9–12 mm too large, mean between them, about 1 % too much) is correct.
+- Finnish of the changed passages is correct; no new terms.
+- Hash unchanged at the end.

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a74dfb2e59b19197
+CONTENT-HASH: a906e94302d67010
 
 ## Blocking
-(none)
+- none.
 
 ## Polish
-- lesson.md:159 — "Kilometreiksi tunnissa muunnetaan miettimällä…" is odd Finnish; write "Yksikköön $\text{km/h}$ muunnetaan miettimällä…". "Tämä sijoitetaan yksikön paikalle." is vague: "Sijoitetaan $1\,\text{m/s}$:n paikalle $3{,}6\,\text{km/h}$." tells the student what to do.
-- lesson.md:170 — the second aligned block restarts "v &=" after the m/s lines; label the line ("km/h-yksikössä") or keep it, since the \\[4pt] gap already separates it.
-- Round-2 polish on the t = 0 readout and the pred-1 hint still stands.
+- inquiry.json data-task solution, Järkevyys — "eli samaa suuruusluokkaa" for $9{,}8$ and $9{,}7\,\text{m/s}^2$ undersells the agreement and misuses "suuruusluokka" (a taught term in fy1-1). Write "eli lähes sama arvo kuin suoralta".
+- inquiry.json data-task — the figure's grid step is $1\,\text{m/s}$ and the solution says the value reads to a tenth; the instruction "luetaan $4{,}9$" is a judgement a 17-year-old may not trust. Add "(suora on noin yhden kymmenesosan ruudukkoviivan alapuolella)". Optional.
+- Earlier polish items (km/h wording at lesson.md:159, t = 0 readout, pred-1 hint) are untouched by this diff and still stand if not fixed.
 
 ## Checked
-- Round-2 blocker class fixed: m/s → km/h is now by meaning. 1 m/s gives 3600 m in 3600 s, which is 3,6 km in an hour, so 1 m/s = 3,6 km/h; the example then substitutes 14,715·1 m/s = 14,715·3,6 km/h = 52,97 km/h (right). The summary bullet carries the reasoning, not a bare factor.
-- km/h → m/s in the transfer task (inquiry.json hints 2-3, solution Muunnokset) uses 1 km = 1000 m and 1 h = 3600 s: 108·1000 m : 3600 s = 30,0 m/s, t = 3,06 s, correct; no "jakamalla luvulla 3,6" remains.
-- Unrounded value converted, not 15 m/s: kept in the Tulos stage.
-- Notation: \cdot for products, colon in the sim readout; no ×.
-- Rest of the lesson unchanged since the passed version; the diff touches nothing else.
+- The new sentence "Aika mitataan hetkestä, jolloin kuula päästettiin levosta, joten mallin $v = gt$ mukaan suora kulkee origon kautta" gives the right reason for the intercept (the clock starts at release) instead of the previous "lähti levosta", and does not disclose the task's answer.
+- Alt text and the text under the figure agree ("niihin origon kautta sovitettu suora"); the figure itself is unchanged.
+- Solution Vastaus now says the points deviate about $0{,}1\,\text{m/s}$ and the slope's uncertainty is roughly $0{,}2\,\text{m/s}^2$ ("karkeasti arvioiden"): $0{,}1 : 0{,}5 = 0{,}2$, consistent, and no longer claims a rigorous accuracy.
+- Reading $4{,}9\,\text{m/s}$ at $0{,}50\,\text{s}$ and $g = 9{,}8\,\text{m/s}^2$ match the table; check values $9{,}8$ and $9{,}7\,\text{m/s}^2$ are right.
+- Notation and Finnish of the changed passages are correct; the numeric item's answer, unit and tolerance are unchanged.
+- Hash unchanged at the end.

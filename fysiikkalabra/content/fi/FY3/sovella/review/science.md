@@ -1,17 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 23d9c75860e0f2df
+VERDICT: FAIL
+CONTENT-HASH: e4fe071f5de168b6
 
 ## Blocking
-None.
+- content/fi/FY3/sovella/tasks.json:355 (fy3-s3 c) — (B, guardrail "State the model's assumptions in the task", which names exactly this case: "the air at the same temperature from the tank to the lungs") the task text does not state that the air is assumed to be at the same temperature in the tank and in the lungs. The criterion at :363 instead awards a point for the student making that assumption, and the solution and d-part rely on it. — Add to the task text "Oleta, että ilma on yhtä lämmintä säiliössä ja keuhkoissa." and reword the criterion at :363 to "Käyttää annettua oletusta: kun lämpötila on sama, ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki)." d can still ask the student to judge this assumption; the model answer's third bullet (about 10 % longer) stays right.
 
 ## Polish
-- Round-1 points handled. c) is now 0,59 throughout. s2 now gives the water mass ("1,50 kg vettä ja lisäksi perunoita"; d uses ≈1,4 kg). Body-temperature breathing is now listed in s3 d).
-- s1 b: the rubric accepts 220–250 W, while the tolerance 0,08 accepts 221–259 W. This is harmless; widen the rubric to 260 W or leave it as is.
-- s3 c: the Periaate states "Ilman lämpötila pysyy samana, kun se virtaa ... keuhkoihin" as a fact, while d) now says (correctly) that the 20 l/min is measured at body temperature. Phrase c as an assumption ("oletetaan, että ...") so the two parts do not contradict each other.
+- solutions.md:95 — "$P = UA\Delta T$" brings in a U-value that the course never introduces; the sentence works without the formula ("sitä suuremmalla teholla, mitä suurempi lämpötilaero").
+- tasks.json (fy3-s3 a) / solutions.md:170 — the bubble is taken to have the water temperature already at the bottom; exhaled air starts near 37 °C. Saying in the task "kun kupla on jäähtynyt veden lämpöiseksi, sen tilavuus on 4,0 cm³" removes the ambiguity.
 
 ## Checked
-- s1: tangent 0,85 K/min gives 237 W. The 5 min secant (0,82 K/min) gives 229 W and the 10 min secant (0,80 K/min) gives 223 W, both inside 220–250 W. η = 237/400 = 0,593 ≈ 0,59. The 50 min chord gives 0,425 K/min → 119 W; loss 118 W ≈ 120 W. e) directions: box heating → true power larger (correct); a secant instead of the tangent → too small (correct); falling irradiance → d's loss overestimated (correct). The custom e) criteria match the prompt.
-- s2: the bubble criterion (vapour pressure = surrounding pressure) is correct physics. 181 kPa → 117,0 °C. 288 kJ / 2,26 MJ/kg gives 0,127 kg, and 0,130 kg with r = 2,21 MJ/kg; both round to 0,13 kg, so the "Hyväksytään myös" is correct. Flash fraction 0,0315; 1,37 kg × 0,0315 ≈ 43 g ≈ 2,4 mol ≈ 73 l, matching "noin 40 g, 70 l". Carry-over 116–118 °C gives 0,030–0,033.
-- s3: the "6,0 l" lung volume is consistent: 6,0 × 248,15/101 = 14,7 l. Body-temperature effect 310,15/279,15 = 1,11, i.e. "noin 10 %" longer (correct direction). The real-gas note (Z > 1 → less air) is correct and marked not required. c: 725 l → 36 min, surface 89 min unchanged.
-- Points: 15 + 15 + 15. Criteria sum per part. Scope unchanged (FY3 only).
-- Content hash 23d9c75860e0f2df at start and end.
+- One Python run recomputed every number: s1 237 W (tangent 0,85 K/min), 229 W and 223 W from the 5 and 10 min chords (inside the accepted 220–250 W and the tolerances), η = 0,594, late rate 0,425 K/min, loss 119 W, levelling near 80 °C; s2 181 kPa → 117,0 °C by interpolation, 288 kJ → 0,127 kg (0,130 kg with r = 2,21 MJ/kg), 3,15 % flashing, about 43 g ≈ 70 l of steam; s3 248,15 kPa, bubble 10,3 cm³, lungs 14,7 l, 725 l → 36 min, 89 min at the surface, 310/279 ≈ 1,11.
+- The collector data follow a Newton-type warming curve (T∞ ≈ 80 °C), are labelled as model-made, and the boiling table matches handbook values for water.
+- Guardrails: heating linear only while losses are small (b's reason), net heat transfer to the air, efficiency ≤ 1 with the useful power defined; the pressure cooker task states only steam under the lid and potatoes at the pot's temperature, and the solution says the cooker is opened only after the pressure has fallen; the diving safety sentence is the agreed wording.
+- Gauge vs absolute pressures handled correctly (s2 a, s3 c), with the reason why the gauge difference equals the absolute difference.
+- Rubrics: every criterion matches its part; points add up to 15 per task; other correct methods accepted (r at 117 °C, 116–118 °C carried into d).
+- Scope inside FY3 (pV = nRT, Q = cmΔT, Q = rm, hydrostatic pressure).
+- Hash identical at start and end.
