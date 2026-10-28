@@ -762,6 +762,47 @@
       "o_bh": "musta aukko Sgr A*",
       "siirry": "Siirry kohteeseen",
       "siirry_valitse": "valitse kohde"
+    },
+    "fy2-3": {
+      "laite_A": "Laite A",
+      "laite_B": "Laite B",
+      "d_lamppu": "lamppu",
+      "d_televisio": "televisio",
+      "d_jaakaappi": "jääkaappi",
+      "d_tosteri": "tosteri",
+      "d_kuivain": "hiustenkuivain",
+      "d_keitin": "vedenkeitin",
+      "d_kiuas": "sähkökiuas",
+      "aika": "Käyttöaika $t_\\text{{{X}}} = {{t}}\\,\\text{min} = {{h}}\\,\\text{h}$",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Sininen on laite A, oranssi laite B. Suoran jyrkkyys on teho.",
+      "rivi": "Laite {{X}}: $P_\\text{{{X}}} = {{P}}\\,\\text{W}$, $E_\\text{{{X}}} = {{E}} = {{kwh}}\\,\\text{kWh}$"
+    },
+    "fy2-8": {
+      "kaasut": "Kasvihuonekaasut",
+      "taso_ei": "ei kasvihuonekaasuja",
+      "taso_esi": "esiteollinen määrä",
+      "taso_nyt": "nykyinen määrä",
+      "taso_tupla": "hiilidioksidia kaksinkertaisesti",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Keltainen on auringon säteilyä, punainen lämpösäteilyä. Hehkuva molekyyli imee lämpösäteilyä.",
+      "aurinko": "Aurinko",
+      "avaruus": "avaruus",
+      "ilmakeha": "ilmakehä",
+      "maanpinta": "maanpinta",
+      "lukema_ei": "Ilmakehässä ei ole kasvihuonekaasuja, ei edes vesihöyryä.",
+      "lukema_taso": "Kasvihuonekaasut: {{taso}}, $\\text{CO}_2$-pitoisuus ${{c}}\\,\\text{ppm}$",
+      "lukema_T": "Maanpinnan keskilämpötila nyt $T = {{T}}$ ({{tila}})",
+      "lukema_Teq": "Lämpötila asettuu arvoon <strong>${{T}}$</strong>",
+      "lampenee": "lämpenee",
+      "jaahtyy": "jäähtyy",
+      "asettunut": "asettunut"
     }
   }
 }
