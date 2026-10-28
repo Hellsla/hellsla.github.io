@@ -1,11 +1,7 @@
 [
   {
-    "q": "A quantity of heat of 300 J is transferred to a gas, and the gas expands, doing 120 J of work on the piston. By how much does the internal energy of the gas change?",
-    "a": "$Q = +300\\,\\text{J}$ and $W = -120\\,\\text{J}$, because the system does work on the surroundings. $\\Delta U = 300\\,\\text{J} - 120\\,\\text{J} = 180\\,\\text{J}$, so the internal energy increases by 180 J."
-  },
-  {
-    "q": "Why is the sentence \"a hot stone has a lot of heat in it\" inaccurate in physics? What does the stone really have?",
-    "a": "Heat is the transfer of energy because of a temperature difference, not a property of an object. The stone has internal energy and a high temperature; heat is transferred only when the stone touches a colder object."
+    "q": "A quantity of heat of $300\\,\\text{J}$ is transferred to a gas, and the gas expands, doing $120\\,\\text{J}$ of work on the piston. By how much does the internal energy of the gas change?",
+    "a": "$Q = +300\\,\\text{J}$ and $W = -120\\,\\text{J}$, because the system does work on the surroundings. $\\Delta U = 300\\,\\text{J} - 120\\,\\text{J} = 180\\,\\text{J}$, so the internal energy increases by $180\\,\\text{J}$."
   },
   {
     "q": "Hot coffee has just been sealed in a thermos flask whose inner wall is still cool. The flask and its contents form an isolated system: no energy is transferred in or out, and no work is done on it. What happens to the internal energy of this system, and what can still happen to the internal energy of the coffee?",

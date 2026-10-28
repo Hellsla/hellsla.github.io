@@ -17,5 +17,6 @@
  "sisälle": "sisälle",
  "leveys kuvaa tehoa": "leveys kuvaa tehoa",
  "(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.": "(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta. Paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2. Kuvaaja on siis vaakasuora jana, ja nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jää varjostettu suorakulmio. Sen leveys on tilavuuden muutos ΔV ja korkeus on p. Suorakulmion pinta-ala on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.",
- "kaasu laajenee": "kaasu laajenee"
+ "kaasu laajenee": "kaasu laajenee",
+ "Kuvaaja mittakaavassa: sylinterissä olevan kaasun paine p tilavuuden V funktiona. Paine pysyy vakiona, kun kaasu laajenee: kuvaaja on vaakasuora jana pisteestä (1,0 l; 250 kPa) pisteeseen (4,0 l; 250 kPa), ja nuoli osoittaa laajenemisen suuntaa. Ruudukon väli on 1,0 l ja 50 kPa.": "Kuvaaja mittakaavassa. Sylinterissä olevan kaasun paine p on tilavuuden V funktiona. Paine pysyy vakiona, kun kaasu laajenee. Kuvaaja on vaakasuora jana pisteestä (1,0 l; 250 kPa) pisteeseen (4,0 l; 250 kPa). Nuoli osoittaa laajenemisen suuntaa. Ruudukon väli on 1,0 l ja 50 kPa."
 }

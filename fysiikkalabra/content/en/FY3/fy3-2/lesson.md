@@ -177,7 +177,7 @@ Work is a way of transferring energy. James Prescott Joule showed this in the 18
   <foreignObject x="81" y="289.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{water warms up}$</div></foreignObject>
 </svg>
 
-When you do work on an object, energy is transferred: the energy of a lifted object increases, a spring stretches and stores energy, and work done against friction warms the surfaces. Energy does not disappear; it changes form. Power tells you how fast work is done. Walking and running up the stairs you do the same work, but when running the power is greater. The 6 kW power of a sauna heater means that it turns electrical energy into heat at 6000 joules every second.
+When you do work on an object, energy is transferred: the energy of a lifted object increases, a spring stretches and stores energy, and work done against friction warms the surfaces. Energy does not disappear; it changes form. Power tells you how fast work is done. Walking and running up the stairs you do the same work, but when running the power is greater. The $6\,\text{kW}$ power of a sauna heater means that every second it turns 6000 joules of electrical energy into internal energy, which is transferred as heat to the stones and the air.
 
 ## Formula: Work and power
 When a constant force is in the direction of motion, the work done by the force is the product of force and distance:
@@ -344,7 +344,7 @@ W &= A_\text{triangle} \\
 
 <!-- vaihe -->
 
-**Result.** The stretching force does 4.0 J of work, two significant figures like the given values $20\,\text{cm}$ and $40\,\text{N}$. The work does not disappear; the energy is stored in the stretched spring.
+**Result.** The stretching force does $4.0\,\text{J}$ of work, two significant figures like the given values $20\,\text{cm}$ and $40\,\text{N}$. The work does not disappear; the energy is stored in the stretched spring.
 
 <!-- vaihe -->
 

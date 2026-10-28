@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 46efaf592ef6e039
+CONTENT-HASH: 92ed4655267e611e
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 46efaf592ef6e039
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Selkeä suomi throughout lesson.md (already simplified), inquiry.json, exit tickets and figure texts; physics terms kept (termodynaaminen systeemi, tilanmuuttuja, absoluuttinen nollapiste, ekstrapolointi); no step, hint or feedback dropped; correct options still unambiguous; Finnish step labels unchanged; sim names (*Nopeus*, *Mitattu*, *Teoria*) match the sim.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md (new Limits-of-the-model section, dilute-gas wording, LaTeX temperatures, extrapolation wording), inquiry.json (new check-c2 item with options and feedback, renumbered titles, LaTeX temperatures, explain model answer, exit intro), exit-ticket.json (trimmed to 1 question) and the new figure description; check_i18n and the page checks pass.

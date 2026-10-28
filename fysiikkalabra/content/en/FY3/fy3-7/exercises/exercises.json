@@ -3,7 +3,7 @@
     {
       "id": "fy3-7-L1-01",
       "level": 1,
-      "text": "On a trip to the cottage, a cool bag contains 1.20 kg of ice cubes at 0 °C. During the journey the ice cubes melt completely into water at 0 °C. What quantity of heat does the ice absorb as it melts? Give your answer in kilojoules.",
+      "text": "On a trip to the cottage, a cool bag contains $1.20\\,\\text{kg}$ of ice cubes at $0\\,{}^\\circ\\text{C}$. During the journey the ice cubes melt completely into water at 0 °C. What quantity of heat does the ice absorb as it melts? Give your answer in kilojoules.",
       "answer": 401,
       "unit": "kJ",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-7-L1-02",
       "level": 1,
-      "text": "Potatoes are boiled at the cottage without a lid. While they cook, 0.40 kg of water boils away from the pan. What quantity of heat is used to vaporise this amount of water? Give your answer in megajoules.",
+      "text": "Potatoes are boiled at the cottage without a lid. While they cook, $0.40\\,\\text{kg}$ of water boils away from the pan. What quantity of heat is used to vaporise this amount of water? Give your answer in megajoules.",
       "answer": 0.9,
       "unit": "MJ",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-7-L1-03",
       "level": 1,
-      "text": "During the first week of frost in autumn, 45 kg of water freezes at the surface of a lake for every square metre. The water is at 0 °C and turns into ice at 0 °C. What quantity of heat is released in the freezing for every square metre? Give your answer in megajoules.",
+      "text": "During the first week of frost in autumn, $45\\,\\text{kg}$ of water freezes at the surface of a lake for every square metre. The water is at 0 °C and turns into ice at 0 °C. What quantity of heat is released in the freezing for every square metre? Give your answer in megajoules.",
       "answer": 15,
       "unit": "MJ",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-7-L1-04",
       "level": 1,
-      "text": "At a café, steam at 100 °C is blown from the steam wand of an espresso machine into a jug of milk. While the milk is being frothed, 0.030 kg of steam condenses in the milk into water at 100 °C. What quantity of heat does the steam give out as it condenses? Give your answer in kilojoules.",
+      "text": "At a café, steam at 100 °C is blown from the steam wand of an espresso machine into a jug of milk. While the milk is being frothed, $0.030\\,\\text{kg}$ of steam condenses in the milk into water at 100 °C. What quantity of heat does the steam give out as it condenses? Give your answer in kilojoules.",
       "answer": 68,
       "unit": "kJ",
       "tolerance": 0.02
@@ -35,17 +35,18 @@
     {
       "id": "fy3-7-L1-05",
       "level": 1,
-      "text": "A piece of ice taken from the freezer is heated and its heating curve is drawn: temperature as a function of the energy transferred. The temperature rises from −18 °C to 0 °C when 19 kJ of energy has been transferred. After that the curve is horizontal at 0 °C until the energy transferred is 186 kJ, and only then does the temperature start to rise again. What happens on the horizontal part, and what quantity of heat does it take? Give your answer in kilojoules.",
-      "answer": 167,
-      "unit": "kJ",
-      "tolerance": 0.02
+      "text": "A $0.60\\,\\text{kg}$ piece of ice taken from the freezer is heated. The graph shows the temperature of the ice as a function of the energy transferred. Use the graph to determine the specific latent heat of fusion of ice. Read the values you need from the graph.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 333,
+      "unit": "kJ/kg",
+      "tolerance": 0.03
     }
   ],
   "level2": [
     {
       "id": "fy3-7-L2-01",
       "level": 2,
-      "text": "The hotplate of an electric cooker at a cottage has a power of 2.0 kW. A pan with boiling water stands on the plate and is forgotten on the hob. How long does it take before 0.50 kg of water has boiled away from the pan? Assume that all the energy from the plate goes into the water. Give your answer in minutes.",
+      "text": "The hotplate of an electric cooker at a cottage has a power of $2.0\\,\\text{kW}$. A pan with boiling water stands on the plate and is forgotten on the hob. How long does it take before $0.50\\,\\text{kg}$ of water has boiled away from the pan? Assume that all the energy from the plate goes into the water. Give your answer in minutes.",
       "answer": 9.4,
       "unit": "min",
       "tolerance": 0.02
@@ -53,7 +54,7 @@
     {
       "id": "fy3-7-L2-02",
       "level": 2,
-      "text": "750 g of ice at −18 °C is taken out of the freezer. What quantity of heat is needed to warm the ice to 0 °C and melt it completely into water at 0 °C? The specific heat capacity of ice is 2100 J/(kg·K). Give your answer in kilojoules.",
+      "text": "$750\\,\\text{g}$ of ice at −$18\\,{}^\\circ\\text{C}$ is taken out of the freezer. What quantity of heat is needed to warm the ice to $0\\,{}^\\circ\\text{C}$ and melt it completely into water at 0 °C? The specific heat capacity of ice is $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. Give your answer in kilojoules.",
       "answer": 280,
       "unit": "kJ",
       "tolerance": 0.02
@@ -61,7 +62,7 @@
     {
       "id": "fy3-7-L2-03",
       "level": 2,
-      "text": "In April the ice on a lake has already warmed to 0 °C. On a sunny day the ice receives 12 MJ of energy from the Sun for every square metre. Assume that all this energy is used to melt the ice. How many kilograms of ice melt during the day over each square metre?",
+      "text": "In April the ice on a lake has already warmed to 0 °C. On a sunny day the ice receives $12\\,\\text{MJ}$ of energy from the Sun for every square metre. Assume that all this energy is used to melt the ice. How many kilograms of ice melt during the day over each square metre?",
       "answer": 36,
       "unit": "kg",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy3-7-L2-04",
       "level": 2,
-      "text": "To cook pasta, 2.0 kg of water at 15 °C is put in a pan. The water is heated to the boiling point, that is, 100 °C, and boiled until 0.10 kg of water has vaporised from the pan. What is the total quantity of heat transferred to the water? Give your answer in megajoules.",
+      "text": "To cook pasta, $2.0\\,\\text{kg}$ of water at $15\\,{}^\\circ\\text{C}$ is put in a pan. The water is heated to the boiling point, that is, $100\\,{}^\\circ\\text{C}$, and boiled until $0.10\\,\\text{kg}$ of water has vaporised from the pan. What is the total quantity of heat transferred to the water? Give your answer in megajoules.",
       "answer": 0.94,
       "unit": "MJ",
       "tolerance": 0.02
@@ -79,7 +80,7 @@
     {
       "id": "fy3-7-L3-01",
       "level": 3,
-      "text": "Juice is being drunk on a jetty. The glass contains 0.35 kg of juice at 25 °C, and 60 g of melting ice cubes at 0 °C are dropped into it. The specific heat capacity of the juice is the same as that of water. What is the temperature of the drink when all the ice has melted and the contents of the glass are in thermal equilibrium? Assume that no heat passes to the glass or the air. Also justify why 60 g of water at 0 °C would not cool the juice as much.",
+      "text": "Juice is being drunk on a jetty. The glass contains $0.35\\,\\text{kg}$ of juice at $25\\,{}^\\circ\\text{C}$, and $60\\,\\text{g}$ of melting ice cubes at 0 °C are dropped into it. The specific heat capacity of the juice is the same as that of water. What is the temperature of the drink when all the ice has melted and the contents of the glass are in thermal equilibrium? Assume that no heat passes to the glass or the air. Also justify why $60\\,\\text{g}$ of water at 0 °C would not cool the juice as much.",
       "answer": 9.7,
       "unit": "°C",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-7-L3-02",
       "level": 3,
-      "text": "In a sauna, löyly is made by throwing a ladleful, that is, 0.25 kg of water at 20 °C, onto the heater. The water warms to 100 °C on the hot stones and vaporises completely. The heater contains 30 kg of stones with a specific heat capacity of 800 J/(kg·K). Assume that all the energy the water needs comes from the stones and that the heater does not warm them in the meantime. By how many kelvins does the temperature of the stones fall? Justify which stage, the warming of the water or its vaporisation, takes more energy.",
+      "text": "In a sauna, löyly is made by throwing a ladleful, that is, $0.25\\,\\text{kg}$ of water at $20\\,{}^\\circ\\text{C}$, onto the heater. The water warms to $100\\,{}^\\circ\\text{C}$ on the hot stones and vaporises completely. The heater contains $30\\,\\text{kg}$ of stones with a specific heat capacity of $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Assume that all the energy the water needs comes from the stones and that the heater does not warm them in the meantime. By how many kelvins does the temperature of the stones fall? Justify which stage, the warming of the water or its vaporisation, takes more energy.",
       "answer": 27,
       "unit": "K",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-7-L3-03",
       "level": 3,
-      "text": "A group measures the specific latent heat of vaporisation of water with two measurements. Water boils in an open vessel on a balance, and the water contains an immersion heater whose power can be adjusted. When the heater power is 800 W, the balance reading falls by 196 g in 10.0 minutes. When the power is 400 W, the reading falls by 90.0 g in 10.0 minutes. In both measurements the water is at 100 °C, so the same amount of energy passes from the vessel to the surrounding air every second. Calculate the specific latent heat of vaporisation using the difference of the two measurements. Justify why the energy passing to the air does not affect the result and why the value calculated from each measurement separately is too large. Give your answer in the unit MJ/kg.",
+      "text": "A group measures the specific latent heat of vaporisation of water with two measurements. Water boils in an open vessel on a balance, and the water contains an immersion heater whose power can be adjusted. When the heater power is $800\\,\\text{W}$, the balance reading falls by $196\\,\\text{g}$ in 10.0 minutes. When the power is $400\\,\\text{W}$, the reading falls by $90.0\\,\\text{g}$ in 10.0 minutes. In both measurements the water is at 100 °C, so the same amount of energy passes from the vessel to the surrounding air every second. Calculate the specific latent heat of vaporisation using the difference of the two measurements. Justify why the energy passing to the air does not affect the result and why the value calculated from each measurement separately is too large. Give your answer in the unit MJ/kg.",
       "answer": 2.26,
       "unit": "MJ/kg",
       "tolerance": 0.02

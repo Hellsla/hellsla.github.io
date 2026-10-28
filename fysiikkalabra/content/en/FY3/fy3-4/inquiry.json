@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review: the weight of water",
-      "prompt": "A cubic metre of water (density $1000\\,\\text{kg/m}^3$) has a mass of 1000 kg. What is the weight $G = mg$ of this amount of water?",
+      "prompt": "A cubic metre of water (density $1000\\,\\text{kg/m}^3$) has a mass of $1000\\,\\text{kg}$. What is the weight $G = mg$ of this amount of water?",
       "choices": [
         {
           "text": "1000 N",
@@ -36,10 +36,10 @@
         },
         {
           "text": "102 N",
-          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs 9.81 N at the Earth's surface, so 1000 kg weighs 9810 N."
+          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs 9.81 N at the Earth's surface, so $1000\\,\\text{kg}$ weighs 9810 N."
         },
         {
-          "text": "1000 kg",
+          "text": "$1000\\,\\text{kg}$",
           "feedback": "The kilogram is the unit of mass. Weight is a force, and the unit of force is the newton: $G = mg = 9810\\,\\text{N}$."
         }
       ],
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: the depth doubles",
-      "prompt": "A pressure gauge in a lake is at a depth of 5 m. It is lowered to a depth of 10 m. Atmospheric pressure of 101 kPa acts at the surface. What happens to the total pressure that the gauge shows?",
+      "prompt": "A pressure gauge in a lake is at a depth of $5\\,\\text{m}$. It is lowered to a depth of $10\\,\\text{m}$. Atmospheric pressure of 101 kPa acts at the surface. What happens to the total pressure that the gauge shows?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -64,7 +64,7 @@
         {
           "text": "The total pressure grows, but by less than a factor of two.",
           "correct": true,
-          "feedback": "The values of the model support this: at 5 m the total pressure in the model is about 150 kPa and at 10 m about 199 kPa. The part caused by the water doubles (49 kPa → 98 kPa), but the atmospheric pressure of 101 kPa stays the same as the constant term."
+          "feedback": "The values of the model support this: at $5\\,\\text{m}$ the total pressure in the model is about 150 kPa and at $10\\,\\text{m}$ about 199 kPa. The part caused by the water doubles (49 kPa → 98 kPa), but the atmospheric pressure of 101 kPa stays the same as the constant term."
         },
         {
           "text": "The pressure stays the same, because the water is the same all the way down.",
@@ -77,7 +77,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: a denser liquid",
-      "prompt": "The gauge is held at a depth of 10 m, but ordinary water ($1000\\,\\text{kg/m}^3$) is replaced by water from the Dead Sea ($1240\\,\\text{kg/m}^3$), whose density is 24 % greater. What happens?",
+      "prompt": "The gauge is held at a depth of $10\\,\\text{m}$, but ordinary water ($1000\\,\\text{kg/m}^3$) is replaced by water from the Dead Sea ($1240\\,\\text{kg/m}^3$), whose density is $24\\,\\%$ greater. What happens?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -93,13 +93,13 @@
           "feedback": "The values of the model show an increase, not a decrease: about 98 kPa → 122 kPa. Floating is about buoyancy, which is a different thing. The column of liquid above the gauge is heavier when it is denser, so the pressure grows."
         },
         {
-          "text": "The pressure caused by the water grows by 24 %, but the total pressure by less.",
+          "text": "The pressure caused by the water grows by $24\\,\\%$, but the total pressure by less.",
           "correct": true,
-          "feedback": "The values of the model support this: the part caused by the water grows from about 98 kPa to 122 kPa (24 %), but the total pressure only from about 199 kPa to 223 kPa (about 12 %), because the atmospheric pressure of 101 kPa does not change."
+          "feedback": "The values of the model support this: the part caused by the water grows from about 98 kPa to 122 kPa ($24\\,\\%$), but the total pressure only from about 199 kPa to 223 kPa (about $12\\,\\%$), because the atmospheric pressure of 101 kPa does not change."
         },
         {
-          "text": "The total pressure grows by 24 %, in the same proportion as the density.",
-          "feedback": "According to the values of the model, the total pressure grows from about 199 kPa to 223 kPa, that is, about 12 %. Only the part caused by the liquid grows with the density; the atmospheric pressure of 101 kPa stays the same."
+          "text": "The total pressure grows by $24\\,\\%$, in the same proportion as the density.",
+          "feedback": "According to the values of the model, the total pressure grows from about 199 kPa to 223 kPa, that is, about $12\\,\\%$. Only the part caused by the liquid grows with the density; the atmospheric pressure of 101 kPa stays the same."
         }
       ],
       "optional": true
@@ -110,7 +110,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Prediction 3: a narrow tube and a wide pool",
-      "prompt": "A narrow vertical tube and a wide pool are filled with water to the same height, 2.0 m. The pool holds a thousand times as much water as the tube. Three students explain where the pressure at the bottom is greater. Who is right?",
+      "prompt": "A narrow vertical tube and a wide pool are filled with water to the same height, $2.0\\,\\text{m}$. The pool holds a thousand times as much water as the tube. Three students explain where the pressure at the bottom is greater. Who is right?",
       "justify": true,
       "choices": [
         {
@@ -142,7 +142,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the depth changes",
-      "intro": "Test prediction 1. The liquid is water, and the density stays constant. Change only the depth and record the pressures at at least two depths, for example 5 m, 10 m, 15 m and 20 m. Compare whether the total pressure increases in the same ratio as the depth, and by how much the pressure increases for every five metres.",
+      "intro": "Test prediction 1. The liquid is water, and the density stays constant. Change only the depth and record the pressures at at least two depths, for example $5\\,\\text{m}$, $10\\,\\text{m}$, $15\\,\\text{m}$ and $20\\,\\text{m}$. Compare whether the total pressure increases in the same ratio as the depth, and by how much the pressure increases for every five metres.",
       "initial": {
         "h": 5,
         "rho": 1000
@@ -194,7 +194,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Further investigation: only the density changes",
-      "intro": "Test prediction 2. The gauge stays at a depth of 10 m, and only the density of the liquid changes. Record the pressures for at least two densities, for example petrol 720, water 1000 and Dead Sea water 1240 kg/m³. Which of the pressures increases in the same ratio as the density?",
+      "intro": "Test prediction 2. The gauge stays at a depth of $10\\,\\text{m}$, and only the density of the liquid changes. Record the pressures for at least two densities, for example petrol 720, water 1000 and Dead Sea water $1240\\,\\text{kg/m}^3$. Which of the pressures increases in the same ratio as the density?",
       "initial": {
         "h": 10,
         "rho": 1000
@@ -276,7 +276,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "The water in a pool is 4.0 m deep. A student calculates the hydrostatic pressure at a point 1.0 m above the bottom of the pool: $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.0\\,\\text{m} \\approx 9.8\\,\\text{kPa}$. Where is the error?",
+      "prompt": "The water in a pool is $4.0\\,\\text{m}$ deep. A student calculates the hydrostatic pressure at a point $1.0\\,\\text{m}$ above the bottom of the pool: $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.0\\,\\text{m} \\approx 9.8\\,\\text{kPa}$. Where is the error?",
       "choices": [
         {
           "text": "The depth is measured from the surface, not from the bottom: $h = 3.0\\,\\text{m}$, so $\\rho g h \\approx 29\\,\\text{kPa}$.",
@@ -293,7 +293,7 @@
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "The form of the calculation is correct, but $h$ is wrong. Depth is measured downwards from the surface of the liquid; a point 1.0 m above the bottom is at a depth of 3.0 m."
+          "feedback": "The form of the calculation is correct, but $h$ is wrong. Depth is measured downwards from the surface of the liquid; a point $1.0\\,\\text{m}$ above the bottom is at a depth of $3.0\\,\\text{m}$."
         }
       ],
       "optional": true
@@ -315,7 +315,7 @@
       "mistakes": [
         {
           "value": 10.3,
-          "feedback": "You used the density of water, $1000\\,\\text{kg/m}^3$. A column of water would indeed be about 10 m tall, but mercury is 13.6 times denser, so the column is correspondingly shorter."
+          "feedback": "You used the density of water, $1000\\,\\text{kg/m}^3$. A column of water would indeed be about $10\\,\\text{m}$ tall, but mercury is 13.6 times denser, so the column is correspondingly shorter."
         },
         {
           "value": 0.000757,
@@ -336,7 +336,7 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "The sensor membrane of a pressure gauge is turned at a depth of 4.0 m to point in turn up, sideways and down. The liquid is at rest. What does the gauge show?",
+      "prompt": "The sensor membrane of a pressure gauge is turned at a depth of $4.0\\,\\text{m}$ to point in turn up, sideways and down. The liquid is at rest. What does the gauge show?",
       "choices": [
         {
           "text": "The greatest reading when the membrane points up, because the water presses downwards.",
@@ -354,11 +354,33 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Shape of the container",
+      "prompt": "A narrow vertical tube and a wide pool are full of water to a height of $1.0\\,\\text{m}$. The pool holds a thousand times as much water as the tube. Where is the pressure at the bottom greater?",
+      "choices": [
+        {
+          "text": "In the pool, because it holds more water and so has a greater weight.",
+          "feedback": "The total weight of the water in the pool is greater, but it is also spread over a bottom area a thousand times as large. Pressure is force divided by area, and the pressure at the bottom depends only on the surface pressure, the density of the liquid and the depth, $p = p_0 + \\rho g h$."
+        },
+        {
+          "text": "In the tube, because the water is in a cramped space there.",
+          "feedback": "Being cramped does not increase pressure. The pressure at the bottom depends only on the depth, the density and the surface pressure. In the tube the column of water is as tall as in the pool, and its weight is spread over a small bottom area."
+        },
+        {
+          "text": "Equally great in both.",
+          "correct": true,
+          "feedback": "Correct. The depth $h$ is the same in both, the density is the same and the surface pressure is the same, so $p = p_0 + \\rho g h$ is the same. The width of the container does not matter: in the pool the greater weight is spread over a greater area."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Graph and calculation",
-      "prompt": "The $(h, p)$ graph of an unknown liquid is a straight line through the points (0 m, 101 kPa) and (8.0 m, 171 kPa). What is the density of the liquid? Give the answer in kg/m³.",
+      "title": "3. Graph and calculation",
+      "prompt": "The $(h, p)$ graph of an unknown liquid is a straight line through the points ($0\\,\\text{m}$, 101 kPa) and ($8.0\\,\\text{m}$, 171 kPa). What is the density of the liquid? Give the answer in kg/m³.",
       "answer": 890,
       "unit": "kg/m³",
       "tolerance": 0.02,
@@ -383,10 +405,10 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
-      "prompt": "A diver is at a depth of 3.0 m and feels pressure in an ear. When the diver equalises the pressure by letting air from the throat into the middle ear, the feeling goes away. Use pressure to explain why a force acts on the eardrum at first and why it disappears when the pressure is equalised. Use the concepts pressure, gauge pressure and force.",
+      "title": "4. Explain and transfer",
+      "prompt": "A diver is at a depth of $3.0\\,\\text{m}$ and feels pressure in an ear. When the diver equalises the pressure by letting air from the throat into the middle ear, the feeling goes away. Use pressure to explain why a force acts on the eardrum at first and why it disappears when the pressure is equalised. Use the concepts pressure, gauge pressure and force.",
       "criteria": [
-        "I say that at 3.0 m the outside pressure is greater than atmospheric pressure by the hydrostatic pressure $\\rho g h$ (about 29 kPa).",
+        "I say that at $3.0\\,\\text{m}$ the outside pressure is greater than atmospheric pressure by the hydrostatic pressure $\\rho g h$ (about 29 kPa).",
         "I say that the air in the middle ear is at first at atmospheric pressure, so the pressure on the two sides of the eardrum is different.",
         "I justify the force with the pressure difference and the area, $F = \\Delta p \\cdot A$, and say that the force is perpendicular to the membrane.",
         "I explain that after equalising, the pressure is the same on both sides of the membrane, so the forces cancel."
@@ -398,7 +420,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first by yourself and only then open the answer."
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
     }
   ]
 }

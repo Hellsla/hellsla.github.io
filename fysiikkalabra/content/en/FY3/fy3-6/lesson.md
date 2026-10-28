@@ -73,7 +73,7 @@
 </svg>
 
 ## Key idea
-When heat is transferred to an object, its internal energy increases and its temperature rises. Experiments show that the quantity of heat needed is directly proportional both to the change in temperature and to the mass of the object: a temperature rise twice as large needs twice the heat, and twice the amount of water needs twice the heat. In addition, the heat depends on the substance. Heating one kilogram of water by one degree takes about 4.2 kJ, but heating one kilogram of iron takes only about 0.45 kJ. The coefficient that is characteristic of a substance is the specific heat capacity $c$, whose unit is J/(kg·K). It tells how much energy is needed to heat one kilogram by one kelvin, and the same amount is released when the substance cools by one kelvin.
+When heat is transferred to an object and its phase does not change, its internal energy increases and its temperature rises. Experiments show that the quantity of heat needed is directly proportional both to the change in temperature and to the mass of the object: a temperature rise twice as large needs twice the heat, and twice the amount of water needs twice the heat. In addition, the heat depends on the substance. Heating one kilogram of water by one degree takes about $4.2\,\text{kJ}$, but heating one kilogram of iron takes only about $0.45\,\text{kJ}$. The coefficient that is characteristic of a substance is the specific heat capacity $c$, whose unit is J/(kg·K). It tells how much energy is needed to heat one kilogram by one kelvin, and the same amount is released when the substance cools by one kelvin.
 
 An important reason is that the specific heat capacity of water is exceptionally large: water warms slowly in the Sun and cools slowly in the evening, whereas sand, whose $c$ is about one fifth of that of water, gets many times hotter with the same energy. In addition, the Sun heats only a thin surface layer of the sand, whereas in water the warming reaches deeper. Because of their large specific heat capacity, lakes even out the temperatures of the coast, and water is a good heat-transfer medium in heating pipes.
 
@@ -171,7 +171,7 @@ When a hot and a cold object are put into one insulated container, heat is trans
 </svg>
 
 ## Formula: Heat and thermal equilibrium
-The quantity of heat needed to heat a mass $m$, or released when it cools, is
+When the phase of a substance does not change, the quantity of heat needed to heat a mass $m$, or released when it cools, is
 ```latex
 \begin{aligned}
 Q &= c m \Delta T \\
@@ -257,7 +257,7 @@ So the equilibrium temperature is a weighted mean of the initial temperatures, w
 </svg>
 
 ## Worked example
-A calorimeter contains 0.300 kg of water at a temperature of 20.0 °C. A metal object of mass 0.200 kg, heated in boiling water to a temperature of 100.0 °C, is lowered into it. After stirring, the temperature settles at 24.5 °C. What is the specific heat capacity of the metal? Ignore the heat capacity of the calorimeter itself and heat losses to the surroundings.
+A calorimeter contains $0.300\,\text{kg}$ of water at a temperature of $20.0\,{}^\circ\text{C}$. A metal object of mass $0.200\,\text{kg}$, heated in boiling water to a temperature of $100.0\,{}^\circ\text{C}$, is lowered into it. After stirring, the temperature settles at $24.5\,{}^\circ\text{C}$. What is the specific heat capacity of the metal? Ignore the heat capacity of the calorimeter itself and heat losses to the surroundings.
 
 <!-- vaihe -->
 
@@ -298,14 +298,14 @@ A calorimeter contains 0.300 kg of water at a temperature of 20.0 °C. A metal o
 
 <!-- vaihe -->
 
-**Result.** The specific heat capacity of the metal is about $3.7 \cdot 10^2\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. The result is given with two significant figures, because the temperature change of the water, 4.5 K, is known only to two figures: if the final reading were 0.1 K higher, that is 24.6 °C, the result would be 383 J/(kg·K).
+**Result.** The specific heat capacity of the metal is about $3.7 \cdot 10^2\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. The result is given with two significant figures, because the temperature change of the water, $4.5\,\text{K}$, is known only to two figures: if the final reading were $0.1\,\text{K}$ higher, that is $24.6\,{}^\circ\text{C}$, the result would be $383\,\text{J/(kg}\cdot\text{K)}$.
 
 <!-- vaihe -->
 
-**Reasonableness.** The value is close to the specific heat capacity of copper, 385 J/(kg·K), so the object is probably copper. In a lossless calorimeter a 0.200 kg copper object would raise the water to 24.6 °C (try it in the simulation); the measured reading, 0.1 K lower, is explained by the reading precision or by the fact that in reality some of the heat also went into the calorimeter vessel and the air. The water warmed by only 4.5 K although the metal cooled by 75.5 K: the heat capacity of the water is $0.300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$, which is much more than the heat capacity of the object, $0.200\,\text{kg} \cdot 374.6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
+**Reasonableness.** The value is close to the specific heat capacity of copper, $385\,\text{J/(kg}\cdot\text{K)}$, so the object is probably copper. In a lossless calorimeter a $0.200\,\text{kg}$ copper object would raise the water to $24.6\,{}^\circ\text{C}$ (try it in the simulation); the measured reading, $0.1\,\text{K}$ lower, is explained by the reading precision or by the fact that in reality some of the heat also went into the calorimeter vessel and the air. The water warmed by only $4.5\,\text{K}$ although the metal cooled by $75.5\,\text{K}$: the heat capacity of the water is $0.300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$, which is much more than the heat capacity of the object, $0.200\,\text{kg} \cdot 374.6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
 
 ## Common misconception
-Many people think that heat and temperature are the same thing, or that objects heated to the same temperature have received the same amount of energy. Heating a kilogram of water and a kilogram of iron from 20 °C to 60 °C takes almost ten times as much energy for the water. Another mistake is to calculate the equilibrium temperature as a mean. When 1.0 kg of 80-degree water is poured into 3.0 kg of 20-degree water, the specific heat capacity of water $c$ is on both sides of the equation and cancels:
+Many people think that heat and temperature are the same thing, or that objects heated to the same temperature have received the same amount of energy. Heating a kilogram of water and a kilogram of iron from $20\,{}^\circ\text{C}$ to $60\,{}^\circ\text{C}$ takes almost ten times as much energy for the water. Another mistake is to calculate the equilibrium temperature as a mean. When $1.0\,\text{kg}$ of 80-degree water is poured into $3.0\,\text{kg}$ of 20-degree water, the specific heat capacity of water $c$ is on both sides of the equation and cancels:
 ```latex
 \begin{aligned}
 &1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
@@ -315,12 +315,12 @@ Many people think that heat and temperature are the same thing, or that objects 
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-The hot water is on the left side, as in the general equation. On the third line the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not 50 °C but 35 °C, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = \tfrac{3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}}{4.0\,\text{kg}} = 35\,{}^\circ\text{C}$.
+The hot water is on the left side, as in the general equation. On the third line the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = \tfrac{3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}}{4.0\,\text{kg}} = 35\,{}^\circ\text{C}$.
 
 A third mistake is to convert $\Delta T$ to kelvins by adding 273: a change in temperature is the same on both scales.
 
 ## Summary
-- The quantity of heat is proportional to the mass and to the change in temperature: $Q = c m \Delta T$. The specific heat capacity $c$ depends on the substance, and for water it is large, 4190 J/(kg·K).
+- The quantity of heat is proportional to the mass and to the change in temperature: $Q = c m \Delta T$. The specific heat capacity $c$ depends on the substance, and for water it is large, $4190\,\text{J/(kg}\cdot\text{K)}$.
 - The heat capacity $C = cm$ tells how many joules it takes to heat the whole object by one kelvin.
 - In an insulated container the heat given out by the hot object is equal to the heat received by the cold one: $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$. The equilibrium temperature $T$ is solved by collecting the terms with $T$ on the same side; it is a mean weighted by the heat capacities, and usually not the ordinary mean of the initial temperatures.
 - A calorimetric measurement determines the specific heat capacity of an unknown substance with the help of water.

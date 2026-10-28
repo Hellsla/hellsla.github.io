@@ -11,7 +11,7 @@
 ## fy3-13-L1-02
 **Annettu:** kaksi pistettä suoralta: $(\theta_1, p_1) = (20{,}0\,{}^\circ\text{C};\ 105{,}0\,\text{kPa})$ ja $(\theta_2, p_2) = (80{,}0\,{}^\circ\text{C};\ 127{,}0\,\text{kPa})$
 **Kysytty:** suoran kulmakerroin $k$ yksikössä $\tfrac{\text{kPa}}{{}^\circ\text{C}}$
-**Periaate:** Suljetussa astiassa paine on lämpötilan lineaarinen funktio. Siksi suoran kulmakerroin on kaikkialla sama. Se kertoo, kuinka monta kilopascalia paine kasvaa yhtä celsiusastetta kohti. Voit laskea sen mistä tahansa kahdesta suoran pisteestä.
+**Periaate:** Suljetussa jäykässä astiassa harvan kaasun paine on mittausalueella lämpötilan lineaarinen funktio. Siksi suoran kulmakerroin on kaikkialla sama. Se kertoo, kuinka monta kilopascalia paine kasvaa yhtä celsiusastetta kohti. Voit laskea sen mistä tahansa kahdesta suoran pisteestä.
 **Kaava:** $k = \dfrac{\Delta p}{\Delta\theta}$, missä $\Delta p = p_2 - p_1$ ja $\Delta\theta = \theta_2 - \theta_1$, joten $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$
 **Muunnokset:** Yksiköitä ei muunneta, sillä kulmakerroin kysytään yksikössä $\text{kPa}/{}^\circ\text{C}$. Lämpötilaero on $\Delta\theta = 80{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 60{,}0\,{}^\circ\text{C}$. Se on sama kelvineinä.
 **Sijoitus:** $k = \dfrac{(127{,}0 - 105{,}0)\,\text{kPa}}{(80{,}0 - 20{,}0)\,{}^\circ\text{C}} = \dfrac{22{,}0\,\text{kPa}}{60{,}0\,{}^\circ\text{C}} = 0{,}36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
@@ -21,7 +21,7 @@
 ## fy3-13-L1-03
 **Annettu:** ryhmän tulos $\theta_0 = -267{,}90\,{}^\circ\text{C}$ ja hyväksytty arvo $\theta_\text{h} = -273{,}15\,{}^\circ\text{C}$
 **Kysytty:** poikkeama $d$ celsiusasteina
-**Periaate:** Mittaustuloksen virhe on sen etäisyys hyväksytystä arvosta. Etäisyys on aina positiivinen luku. Se on positiivinen riippumatta siitä, onko tulos hyväksytyn arvon ylä- vai alapuolella. Siksi otetaan erotuksen itseisarvo.
+**Periaate:** Mittausvirhe on tuloksen ja hyväksytyn arvon erotus. Sen etumerkki kertoo suunnan. Kysytty poikkeama on tämän erotuksen suuruus eli etäisyys. Se on positiivinen riippumatta siitä, onko tulos hyväksytyn arvon ylä- vai alapuolella. Siksi otetaan erotuksen itseisarvo.
 **Kaava:** $d = |\theta_0 - \theta_\text{h}|$
 **Muunnokset:** Molemmat arvot ovat celsiusasteina samalla asteikolla. Lämpötilojen erotus on sama celsiusasteina ja kelvineinä. Muunnoksia ei siis tarvita.
 **Sijoitus:** $d = |-267{,}90\,{}^\circ\text{C} - (-273{,}15\,{}^\circ\text{C})| = |5{,}25\,{}^\circ\text{C}| = 5{,}25\,{}^\circ\text{C}$
@@ -31,7 +31,7 @@
 ## fy3-13-L1-04
 **Annettu:** jyrkemmän ääriviivan nollapaineen lämpötila $\theta_{0,\text{max}} = -258\,{}^\circ\text{C}$ ja loivemman $\theta_{0,\text{min}} = -284\,{}^\circ\text{C}$
 **Kysytty:** tuloksen epävarmuus $\Delta\theta_0$ celsiusasteina
-**Periaate:** Kaikki suorat, jotka kulkevat kaikkien epävarmuusjanojen kautta, sopivat aineistoon yhtä hyvin. Niistä jyrkin ja loivin rajaavat välin, jolle todellinen nollapiste kuuluu. Tulos kirjoitetaan muotoon $\theta_0 \pm \Delta\theta_0$. Siksi epävarmuus on välin puolikas.
+**Periaate:** Kaikki suorat, jotka kulkevat kaikkien epävarmuusjanojen kautta, sopivat aineistoon yhtä hyvin. Niistä jyrkin ja loivin rajaavat välin, jolla todellinen nollapiste todennäköisesti on. Tulos kirjoitetaan muotoon $\theta_0 \pm \Delta\theta_0$. Siksi epävarmuus on välin puolikas.
 **Kaava:** $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Muunnokset:** Molemmat lämpötilat ovat celsiusasteina, ja niiden erotus on sama kelvineinä. Muunnoksia ei siis tarvita.
 **Sijoitus:** $\Delta\theta_0 = \dfrac{-258\,{}^\circ\text{C} - (-284\,{}^\circ\text{C})}{2} = \dfrac{26\,{}^\circ\text{C}}{2} = 13\,{}^\circ\text{C}$
@@ -39,7 +39,7 @@
 **Järkevyys:** Välin keskikohta on $\dfrac{-258 + (-284)}{2}\,{}^\circ\text{C} = -271\,{}^\circ\text{C}$. Keskikohdasta pääsee $13\,{}^\circ\text{C}$ kumpaankin suuntaan täsmälleen ääriarvoihin $-258\,{}^\circ\text{C}$ ja $-284\,{}^\circ\text{C}$. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu väliin. Tulos sopii siis sen kanssa yhteen.
 
 ## fy3-13-L1-05
-**Annettu:** painemittarin lukema $p = 112\,\text{kPa}$ ja mittarin epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
+**Annettu:** painemittarin lukema $p = 112\,\text{kPa}$ ja paineen lukeman arvioitu epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
 **Kysytty:** suhteellinen epävarmuus $\varepsilon$ prosentteina lukemasta
 **Periaate:** Epävarmuuden merkitys riippuu siitä, kuinka suuri se on mitattuun arvoon verrattuna. Suhteellinen epävarmuus on epävarmuuden ja lukeman osamäärä. Kerro se luvulla $100\,\%$, niin saat prosentit.
 **Kaava:** $\varepsilon = \dfrac{\Delta p}{p} \cdot 100\,\%$
@@ -61,12 +61,12 @@
 ## fy3-13-L2-02
 **Annettu:** kaksi ääriviivaa $p = 100\,\text{kPa} + 0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (jyrkempi) ja $p = 102\,\text{kPa} + 0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (loivempi)
 **Kysytty:** epävarmuus $\Delta\theta_0$ celsiusasteina
-**Periaate:** Molemmat suorat kulkevat kaikkien mittauspisteiden epävarmuusjanojen kautta. Todellinen suora on siis niiden välissä. Ääriviivojen nollapaineen lämpötilat rajaavat välin, jolle nollapiste kuuluu. Epävarmuus on tämän välin puolikas.
+**Periaate:** Molemmat suorat kulkevat kaikkien mittauspisteiden epävarmuusjanojen kautta. Todellinen suora on siis todennäköisesti niiden välissä. Ääriviivojen nollapaineen lämpötilat rajaavat nollapisteen arvioidun välin. Epävarmuus on tämän välin puolikas.
 **Kaava:** Kummankin viivan nollapaine saadaan ehdosta $0 = p_0 + k\theta_0$, eli $\theta_0 = -\dfrac{p_0}{k}$. Jyrkempi antaa arvon $\theta_{0,\text{max}}$ ja loivempi arvon $\theta_{0,\text{min}}$, ja $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Muunnokset:** Muunnoksia ei tarvita. Suure $p_0$ on kilopascaleina ja $k$ yksikössä $\text{kPa}/{}^\circ\text{C}$, joten osamäärä on celsiusasteina.
 **Sijoitus:** $\theta_{0,\text{max}} = -\dfrac{100\,\text{kPa}}{0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -263{,}16\,{}^\circ\text{C}$ ja $\theta_{0,\text{min}} = -\dfrac{102\,\text{kPa}}{0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -291{,}43\,{}^\circ\text{C}$. Siis $\Delta\theta_0 = \dfrac{-263{,}16\,{}^\circ\text{C} - (-291{,}43\,{}^\circ\text{C})}{2} = 14{,}14\,{}^\circ\text{C}$
 **Vastaus:** $14\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa. Nollapisteet $-263\,{}^\circ\text{C}$ ja $-291\,{}^\circ\text{C}$ tunnetaan kolmella numerolla eli kokonaisina asteina. Niiden erotus $28\,{}^\circ\text{C}$ on vain kahden numeron luku. Jakaja $2$ on tarkka.
-**Järkevyys:** Väli on $-277 \pm 14\,{}^\circ\text{C}$, sillä keskikohta on $\dfrac{-263{,}16 + (-291{,}43)}{2} = -277{,}3\,{}^\circ\text{C}$. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu väliin, joten tulos on sopusoinnussa. Suuruusluokka on sama kuin luvun esimerkissä ($18\,{}^\circ\text{C}$), kun pisteet ja painemittarin epävarmuus ovat samanlaiset.
+**Järkevyys:** Väli on $-277 \pm 14\,{}^\circ\text{C}$, sillä keskikohta on $\dfrac{-263{,}16 + (-291{,}43)}{2} = -277{,}3\,{}^\circ\text{C}$. Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu väliin, joten tulos on sopusoinnussa. Suuruusluokka on sama kuin luvun esimerkissä ($18\,{}^\circ\text{C}$), kun pisteet ja paineen lukeman epävarmuus ovat samanlaiset.
 
 ## fy3-13-L2-03
 **Annettu:** ilmanpaine $p_\text{ilma} = 101{,}0\,\text{kPa}$. Mittarin ylipaine on $p_\text{y,1} = 9{,}0\,\text{kPa}$ lämpötilassa $\theta_1 = 30{,}0\,{}^\circ\text{C}$ ja $p_\text{y,2} = 31{,}0\,\text{kPa}$ lämpötilassa $\theta_2 = 90{,}0\,{}^\circ\text{C}$.
@@ -81,12 +81,12 @@
 ## fy3-13-L2-04
 **Annettu:** lämpötilan lukematarkkuus $\Delta\theta = 0{,}50\,{}^\circ\text{C}$, suoran kulmakerroin $k = 0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja paineen epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
 **Kysytty:** lämpötilan epävarmuutta vastaava paineen muutos $\Delta p_\theta$ prosentteina epävarmuudesta $\Delta p$
-**Periaate:** Mittauspisteet ovat suoralla $p = p_0 + k\theta$. Lämpötilan virhe $\Delta\theta$ siirtää pistettä suoraa pitkin. Se vastaa paineen muutosta $k\,\Delta\theta$. Kun virhe on muutettu paineeksi, sitä voi verrata suoraan painemittarin epävarmuuteen.
+**Periaate:** Mittauspisteet ovat suoralla $p = p_0 + k\theta$. Lämpötilan virhe $\Delta\theta$ siirtää pistettä vaakasuunnassa. Suoran kohdalla se vastaa pystysuuntaista poikkeamaa $k\,\Delta\theta$. Kun virhe on muutettu paineeksi, sitä voi verrata suoraan paineen lukeman epävarmuuteen.
 **Kaava:** $\Delta p_\theta = k\,\Delta\theta$ ja osuus $s = \dfrac{\Delta p_\theta}{\Delta p} \cdot 100\,\%$
 **Muunnokset:** Muunnoksia ei tarvita. Celsiusasteet supistuvat tulossa $k\,\Delta\theta$, ja kilopascalit supistuvat osamäärässä. Kertominen luvulla $100\,\%$ muuttaa suhdeluvun prosenteiksi.
 **Sijoitus:** $\Delta p_\theta = 0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 0{,}50\,{}^\circ\text{C} = 0{,}18\,\text{kPa}$ ja $s = \dfrac{0{,}18\,\text{kPa}}{1{,}0\,\text{kPa}} \cdot 100\,\% = 18\,\%$
 **Vastaus:** $18\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska kulmakerroin $0{,}36\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on annettu kahdella numerolla. Epävarmuudet $0{,}50\,{}^\circ\text{C}$ ja $1{,}0\,\text{kPa}$ ovat myös kahdella numerolla.
-**Järkevyys:** Lämpötilan virhe vastaa vain noin viidesosaa painemittarin epävarmuudesta. Tuloksen tarkkuutta rajoittaa siis painemittari, ei lämpömittari. Rajatapaus: osuus olisi $100\,\%$, jos lämpötilan virhe olisi $1{,}0/0{,}36 = 2{,}8\,{}^\circ\text{C}$. Lämpömittarin pitäisi silloin olla paljon epätarkempi kuin nyt.
+**Järkevyys:** Lämpötilan virhe vastaa vain noin viidesosaa paineen lukeman epävarmuudesta. Tuloksen tarkkuutta rajoittaa siis painemittari, ei lämpömittari. Rajatapaus: osuus olisi $100\,\%$, jos lämpötilan virhe olisi $1{,}0/0{,}36 = 2{,}8\,{}^\circ\text{C}$. Lämpömittarin pitäisi silloin olla paljon epätarkempi kuin nyt.
 
 ## fy3-13-L3-01
 **Annettu:** päätepisteet $106{,}0 \pm 1{,}0\,\text{kPa}$ lämpötilassa $20{,}0\,{}^\circ\text{C}$ ja $137{,}0 \pm 1{,}0\,\text{kPa}$ lämpötilassa $100{,}0\,{}^\circ\text{C}$. Jyrkin ääriviiva kulkee pisteiden $(20{,}0\,{}^\circ\text{C};\ 105{,}0\,\text{kPa})$ ja $(100{,}0\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$ kautta. Loivin kulkee pisteiden $(20{,}0\,{}^\circ\text{C};\ 107{,}0\,\text{kPa})$ ja $(100{,}0\,{}^\circ\text{C};\ 136{,}0\,\text{kPa})$ kautta.
@@ -106,14 +106,14 @@
 **Muunnokset:** Muunna lähtölämpötila kelvineiksi: $T_0 = 0\,{}^\circ\text{C} = 273{,}15\,\text{K}$. Lämpötila $77{,}0\,\text{K}$ on jo kelvineinä. Suhteessa $T/T_0$ kelvinit supistuvat, joten paine jää kilopascaleiksi.
 **Sijoitus:** $p = 100{,}0\,\text{kPa} \cdot \dfrac{77{,}0\,\text{K}}{273{,}15\,\text{K}} = 28{,}19\,\text{kPa}$
 **Vastaus:** $28{,}2\,\text{kPa}$. Vastauksessa on kolme merkitsevää numeroa, koska lämpötila $77{,}0\,\text{K}$ on annettu kolmella numerolla. Luku $273{,}15\,\text{K}$ on määritelmä, eikä se rajoita. Suoraa ei voi jatkaa nollaan asti, koska typpi tiivistyy nesteeksi noin $67\,\text{K}$:ssä. Silloin kaasun ainemäärä pienenee ja paine putoaa nopeammin kuin suora ennustaa. Ehto "ainemäärä vakio" ei enää päde.
-**Järkevyys:** Lämpötila $77{,}0\,\text{K}$ on noin $0{,}28$-kertainen lämpötilaan $273{,}15\,\text{K}$ verrattuna. Paine on samassa suhteessa: noin $0{,}28 \cdot 100 = 28\,\text{kPa}$. Suora antaisi lämpötilassa $67\,\text{K}$ paineen $100 \cdot 67/273{,}15 = 24{,}5\,\text{kPa}$. Todellisuudessa kaasu on siellä jo nesteytynyt. Ekstrapolointi on siis luotettava vain niin pitkälle kuin oletus kaasusta pitää paikkansa.
+**Järkevyys:** Lämpötila $77{,}0\,\text{K}$ on noin $0{,}28$-kertainen lämpötilaan $273{,}15\,\text{K}$ verrattuna. Paine on samassa suhteessa: noin $0{,}28 \cdot 100 = 28\,\text{kPa}$. Suora antaisi lämpötilassa $67\,\text{K}$ paineen $100 \cdot 67/273{,}15 = 24{,}5\,\text{kPa}$. Noin siinä lämpötilassa kaasu alkaa tiivistyä nesteeksi. Sen jälkeen paine ei enää noudata suoraa. Ekstrapolointi on siis luotettava vain niin pitkälle kuin oletus kaasusta pitää paikkansa.
 
 ## fy3-13-L3-03
 **Annettu:** ryhmän A tulos $\theta_0 = -262{,}00\,{}^\circ\text{C}$ ja epävarmuus $\Delta\theta_0 = 6{,}00\,{}^\circ\text{C}$. Hyväksytty arvo on $\theta_\text{h} = -273{,}15\,{}^\circ\text{C}$.
 **Kysytty:** poikkeaman suhde epävarmuuteen $n$ (kuinka monta kertaa $\Delta\theta_0$ mahtuu tuloksen ja hyväksytyn arvon väliin) ja syy ristiriitaan
-**Periaate:** Tulos sopii yhteen hyväksytyn arvon kanssa, jos arvo kuuluu epävarmuusväliin $\theta_0 \pm \Delta\theta_0$. Silloin poikkeama on korkeintaan yksi epävarmuus. Suhde $n$ kertoo, kuinka paljon poikkeama ylittää tämän rajan.
+**Periaate:** Tässä luvussa tulosta pidetään sopusoinnussa hyväksytyn arvon kanssa, jos arvo kuuluu epävarmuusväliin $\theta_0 \pm \Delta\theta_0$. Silloin poikkeama on korkeintaan yksi epävarmuus. Suhde $n$ kertoo, kuinka moninkertainen poikkeama on epävarmuuteen verrattuna. Epävarmuus ei ole ehdoton raja. Siksi poikkeama ei yksin todista virhettä. Mitä suurempi $n$ on, sitä todennäköisemmin mittauksessa on systemaattinen virhe tai epävarmuus on arvioitu liian pieneksi.
 **Kaava:** $n = \dfrac{|\theta_0 - \theta_\text{h}|}{\Delta\theta_0}$
 **Muunnokset:** Kaikki lämpötilat ovat celsiusasteina, ja lämpötilaerot ovat samat kelvineinä. Suhde $n$ on dimensioton. Muunnoksia ei siis tarvita.
 **Sijoitus:** $n = \dfrac{|-262{,}00\,{}^\circ\text{C} - (-273{,}15\,{}^\circ\text{C})|}{6{,}00\,{}^\circ\text{C}} = \dfrac{11{,}15\,{}^\circ\text{C}}{6{,}00\,{}^\circ\text{C}} = 1{,}858$
 **Vastaus:** $1{,}86$ kertaa. Vastauksessa on kolme merkitsevää numeroa, koska erotus $11{,}15\,{}^\circ\text{C}$ ja epävarmuus $6{,}00\,{}^\circ\text{C}$ on annettu kolmella numerolla. Tulos $-262{,}00\,{}^\circ\text{C}$ ja hyväksytty arvo ovat sadasosan tarkkuudella.
-**Järkevyys:** Poikkeama $11{,}15\,{}^\circ\text{C}$ on lähes kaksi epävarmuutta ($2 \cdot 6{,}00 = 12{,}0$). Epävarmuusväli $-268\ldots -256\,{}^\circ\text{C}$ ei sisällä hyväksyttyä arvoa $-273{,}15\,{}^\circ\text{C}$. Tulos ei siis ole sopusoinnussa arvon kanssa. Syynä voi olla järjestelmällinen virhe, esimerkiksi epätarkka lämpömittari, ilmavuoto tai pullon tilavuuden muutos. Syynä voi olla myös liian pieneksi arvioitu epävarmuus. Tarkistus: $1{,}858 \cdot 6{,}00\,{}^\circ\text{C} = 11{,}15\,{}^\circ\text{C}$.
+**Järkevyys:** Poikkeama $11{,}15\,{}^\circ\text{C}$ on lähes kaksi epävarmuutta ($2 \cdot 6{,}00 = 12{,}0$). Epävarmuusväli $-268\ldots -256\,{}^\circ\text{C}$ ei sisällä hyväksyttyä arvoa $-273{,}15\,{}^\circ\text{C}$. Tämän säännön mukaan tulos ei siis ole sopusoinnussa arvon kanssa. Syynä voi olla systemaattinen virhe, esimerkiksi epätarkka lämpömittari, ilmavuoto tai pullon tilavuuden muutos. Syynä voi olla myös liian pieneksi arvioitu epävarmuus. Tarkistus: $1{,}858 \cdot 6{,}00\,{}^\circ\text{C} = 11{,}15\,{}^\circ\text{C}$.

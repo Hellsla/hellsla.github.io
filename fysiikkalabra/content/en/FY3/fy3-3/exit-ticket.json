@@ -2,13 +2,5 @@
   {
     "q": "Why does the pressure of a gas in a closed container increase when the gas warms up?",
     "a": "When the temperature rises, the average kinetic energy of the particles increases, that is, the particles move faster. They hit the wall more often and harder, so the pressure increases."
-  },
-  {
-    "q": "The temperature rises from 10 °C to 20 °C. Does the average kinetic energy of the particles double? Justify your answer.",
-    "a": "No. In kelvins the temperature rises from 283 K to 293 K, only about 3.5 %, and the kinetic energy depends on the temperature in kelvins."
-  },
-  {
-    "q": "What is the temperature 0 K in degrees Celsius, and why is it called absolute zero?",
-    "a": "−273.15 °C (about −273 °C). There is no colder temperature, because the average kinetic energy of the particles is then at its smallest."
   }
 ]

@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "A force meter is basically just a spring. Hang a 10 kg sample box on it on Earth, and the spring stretches a certain distance. Take the same box and the same meter to the Moon: the spring stretches much less. The box contains as much matter as before, and the spring has not changed either. Something else has changed.",
+      "text": "A force meter is basically just a spring. Hang a $10\\,\\text{kg}$ sample box on it on Earth, and the spring stretches a certain distance. Take the same box and the same meter to the Moon: the spring stretches much less. The box contains as much matter as before, and the spring has not changed either. Something else has changed.",
       "question": "What does the spring of a force meter actually measure, and what changes in it when the place changes?"
     },
     {
@@ -23,23 +23,23 @@
       "stage": "herata",
       "type": "choice",
       "title": "Revision from FY1: direct proportionality",
-      "prompt": "A cyclist rides at a constant speed and travels 2.0 km in 6.0 minutes. How far does the cyclist ride at the same speed in 18 minutes?",
+      "prompt": "A cyclist rides at a constant speed and travels $2.0\\,\\text{km}$ in 6.0 minutes. How far does the cyclist ride at the same speed in 18 minutes?",
       "choices": [
         {
-          "text": "6.0 km",
+          "text": "$6.0\\,\\text{km}$",
           "correct": true,
           "feedback": "Correct. In uniform motion, distance is directly proportional to time, $s = vt$: three times the time, three times the distance, $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$. You need the same reasoning in this lesson with the spring and weight."
         },
         {
-          "text": "14 km",
-          "feedback": "You added the difference in times (12 min) to the distance. In direct proportionality the quantities change by the same *ratio*, not by the same amount: the time triples, so the distance triples too, $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$."
+          "text": "$14\\,\\text{km}$",
+          "feedback": "You added the difference in times ($12\\,\\text{min}$) to the distance. In direct proportionality the quantities change by the same *ratio*, not by the same amount: the time triples, so the distance triples too, $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$."
         },
         {
-          "text": "18 km",
+          "text": "$18\\,\\text{km}$",
           "feedback": "The distance in kilometres is not the same number as the time in minutes. The speed is $2.0\\,\\text{km} / 6.0\\,\\text{min}$, that is, one third of a kilometre per minute; in 18 minutes the distance is $6.0\\,\\text{km}$."
         },
         {
-          "text": "4.0 km",
+          "text": "$4.0\\,\\text{km}$",
           "feedback": "The time grows from 6 minutes to 18 minutes, that is, it triples, not doubles. Multiply the distance by the same number: $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$."
         }
       ],
@@ -55,12 +55,12 @@
         "after": "exp-1",
         "min": 2
       },
-      "prompt": "On Earth, first a 10 kg object and then a 30 kg object are hung on a force meter. The place and the meter stay the same. How does the weight shown by the meter change?",
+      "prompt": "On Earth, first a $10\\,\\text{kg}$ object and then a $30\\,\\text{kg}$ object are hung on a force meter. The place and the meter stay the same. How does the weight shown by the meter change?",
       "choices": [
         {
           "text": "The weight triples.",
           "correct": true,
-          "feedback": "The values of the model support this: 10 kg weighs $98.1\\,\\text{N}$ on Earth and 30 kg weighs $294\\,\\text{N}$, that is, three times as much. In the same place, weight is directly proportional to mass."
+          "feedback": "The values of the model support this: $10\\,\\text{kg}$ weighs $98.1\\,\\text{N}$ on Earth and $30\\,\\text{kg}$ weighs $294\\,\\text{N}$, that is, three times as much. In the same place, weight is directly proportional to mass."
         },
         {
           "text": "The weight increases, but by less than a factor of three, because the spring gets stiffer as it stretches.",
@@ -68,7 +68,7 @@
         },
         {
           "text": "The weight increases by as many newtons as the mass increases in kilograms, that is, by 20 N.",
-          "feedback": "The values of the model show an increase from $98.1\\,\\text{N}$ to $294\\,\\text{N}$, that is, almost 200 N. Each kilogram adds about 9.8 N of weight on Earth, so 20 kg adds about 196 N. Weight and mass are different quantities in different units."
+          "feedback": "The values of the model show an increase from $98.1\\,\\text{N}$ to $294\\,\\text{N}$, that is, almost 200 N. Each kilogram adds about 9.8 N of weight on Earth, so $20\\,\\text{kg}$ adds about 196 N. Weight and mass are different quantities in different units."
         },
         {
           "text": "The weight stays the same, because weight depends only on the place.",
@@ -87,16 +87,16 @@
         "after": "exp-2",
         "min": 2
       },
-      "prompt": "The same 10 kg object and the same force meter are taken from Earth to Jupiter, where the acceleration of free fall is about 2.5 times that on Earth. What happens to the mass and the weight of the object?",
+      "prompt": "The same $10\\,\\text{kg}$ object and the same force meter are taken from Earth to Jupiter, where the acceleration of free fall is about 2.5 times that on Earth. What happens to the mass and the weight of the object?",
       "choices": [
         {
-          "text": "The mass stays 10 kg, and the weight increases by a factor of about 2.5.",
+          "text": "The mass stays $10\\,\\text{kg}$, and the weight increases by a factor of about 2.5.",
           "correct": true,
-          "feedback": "The values of the model support this: the mass is 10 kg everywhere, but the weight is $98.1\\,\\text{N}$ on Earth and $248\\,\\text{N}$ on Jupiter. Weight is the strength of the interaction between the object and the celestial body, and that interaction is stronger on Jupiter."
+          "feedback": "The values of the model support this: the mass is $10\\,\\text{kg}$ everywhere, but the weight is $98.1\\,\\text{N}$ on Earth and $248\\,\\text{N}$ on Jupiter. Weight is the strength of the interaction between the object and the celestial body, and that interaction is stronger on Jupiter."
         },
         {
           "text": "Both the mass and the weight increase by a factor of about 2.5.",
-          "feedback": "In the values of the model the mass is the same 10 kg everywhere, and only the weight changes ($98.1\\,\\text{N}$ → $248\\,\\text{N}$). Mass tells you how much matter an object contains; no matter is added on the way."
+          "feedback": "In the values of the model the mass is the same $10\\,\\text{kg}$ everywhere, and only the weight changes ($98.1\\,\\text{N}$ → $248\\,\\text{N}$). Mass tells you how much matter an object contains; no matter is added on the way."
         },
         {
           "text": "The mass and the weight stay the same, because weight is determined by mass.",
@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the mass changes",
-      "intro": "Test prediction 1. The celestial body is locked to the Earth, and only the mass changes. Record the weight for at least two masses, for example 10 kg, 20 kg and 30 kg. Also watch how the extension of the spring changes.",
+      "intro": "Test prediction 1. The celestial body is locked to the Earth, and only the mass changes. Record the weight for at least two masses, for example $10\\,\\text{kg}$, $20\\,\\text{kg}$ and $30\\,\\text{kg}$. Also watch how the extension of the spring changes.",
       "initial": {
         "body": "Maa",
         "m": 10
@@ -142,7 +142,7 @@
       "min": 2,
       "names": {
         "m": "mass m",
-        "body": "celestial body"
+        "body": "taivaankappale"
       }
     },
     {
@@ -150,7 +150,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the place changes",
-      "intro": "Test prediction 2. Now the mass is locked at 10 kg, and only the celestial body changes. Record the mass, the acceleration of free fall and the weight in at least two places, for example on the Earth and on Jupiter, and also try the Moon.",
+      "intro": "Test prediction 2. Now the mass is locked at $10\\,\\text{kg}$, and only the celestial body changes. Record the mass, the acceleration of free fall and the weight in at least two places, for example on the Earth and on Jupiter, and also try the Moon.",
       "initial": {
         "body": "Maa",
         "m": 10
@@ -179,7 +179,7 @@
       "min": 2,
       "names": {
         "m": "mass m",
-        "body": "celestial body"
+        "body": "taivaankappale"
       }
     },
     {
@@ -266,7 +266,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates the weight of a 500 g bag of flour on Earth like this: $G = mg = 500 \\cdot 9.81\\,\\text{m/s}^2 = 4905\\,\\text{N}$. Where is the error?",
+      "prompt": "A student calculates the weight of a $500\\,\\text{g}$ bag of flour on Earth like this: $G = mg = 500 \\cdot 9.81\\,\\text{m/s}^2 = 4905\\,\\text{N}$. Where is the error?",
       "choices": [
         {
           "text": "The mass must be converted to kilograms: $G = 0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.91\\,\\text{N}$.",
@@ -274,16 +274,16 @@
           "feedback": "Correct. The weight comes out in newtons only when the mass is in kilograms, because $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. The reasonableness check says the same: the weight of a half-kilo bag is about 5 N, not almost 5000 N."
         },
         {
-          "text": "The weight should be given in kilograms, so the answer is 500 g.",
-          "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is a unit of mass. The mass of the bag is 500 g, but its weight is $0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.91\\,\\text{N}$."
+          "text": "The weight should be given in kilograms, so the answer is $500\\,\\text{g}$.",
+          "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is a unit of mass. The mass of the bag is $500\\,\\text{g}$, but its weight is $0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.91\\,\\text{N}$."
         },
         {
-          "text": "The acceleration of free fall should be 1.62 m/s².",
+          "text": "The acceleration of free fall should be $1.62\\,\\text{m/s}^2$.",
           "feedback": "The value $1.62\\,\\text{m/s}^2$ applies to the Moon. The bag of flour is weighed on Earth, so $g = 9.81\\,\\text{m/s}^2$ is correct. The error is in the unit of mass."
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "Check the order of magnitude: the weight of 1 kg on Earth is about 10 N, so 500 g cannot weigh almost 5000 N. The mass was substituted in grams, although the formula needs kilograms."
+          "feedback": "Check the order of magnitude: the weight of 1 kg on Earth is about 10 N, so $500\\,\\text{g}$ cannot weigh almost 5000 N. The mass was substituted in grams, although the formula needs kilograms."
         }
       ],
       "optional": true
@@ -309,7 +309,7 @@
         },
         {
           "value": 117.72,
-          "feedback": "You treated the reading of 12 N as if it were a mass (12 kg). The reading on the Moon is a weight; the mass is $12\\,\\text{N} / 1.62\\,\\text{m/s}^2 \\approx 7.41\\,\\text{kg}$, and its weight on Earth is about 73 N."
+          "feedback": "You treated the reading of 12 N as if it were a mass ($12\\,\\text{kg}$). The reading on the Moon is a weight; the mass is $12\\,\\text{N} / 1.62\\,\\text{m/s}^2 \\approx 7.41\\,\\text{kg}$, and its weight on Earth is about 73 N."
         },
         {
           "value": 7.41,
@@ -352,10 +352,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Mass and weight in everyday language",
+      "prompt": "A shop scale shows a reading of $1.5\\,\\text{kg}$ for a bottle of water. Which of the following statements is correct in physics?",
+      "choices": [
+        {
+          "text": "The weight of the water is $1.5\\,\\text{kg}$, because the kilogram is a unit of weight.",
+          "feedback": "This is what people say in everyday language, but the kilogram is a unit of mass. Weight is a force, and its unit is the newton. So the statement gives the mass, not the weight."
+        },
+        {
+          "text": "The mass of the water is $1.5\\,\\text{kg}$ and its weight on Earth is about $15\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Correct. The mass is $1.5\\,\\text{kg}$ and weight is a force: $G = mg = 1.5\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. The scale shows kilograms because its scale has been made on Earth by dividing the force by $9.81\\,\\text{m/s}^2$."
+        },
+        {
+          "text": "The mass of the water is $1.5\\,\\text{kg}$ and its weight is $1.5\\,\\text{N}$, because the same number gives both.",
+          "feedback": "The number does not stay the same when the unit changes. You get the weight by multiplying the mass by the acceleration of free fall: $1.5\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$, not $1.5\\,\\text{N}$."
+        },
+        {
+          "text": "The mass of the water is $15\\,\\text{N}$ and its weight is $1.5\\,\\text{kg}$.",
+          "feedback": "The units have been swapped. The unit of mass is the kilogram and the unit of weight is the newton. The mass is $1.5\\,\\text{kg}$ and the weight is about $15\\,\\text{N}$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Graph and calculation",
+      "title": "3. Graph and calculation",
       "prompt": "Weights were measured for different masses on an unknown celestial body. The $(m, G)$ graph is a straight line through the origin that passes through the point $(50\\,\\text{kg}, 440\\,\\text{N})$. What is the acceleration of free fall on this celestial body? Answer in m/s².",
       "answer": 8.8,
       "unit": "m/s²",
@@ -381,7 +407,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "prompt": "Explain in your own words why an astronaut weighs only about one sixth as much on the Moon as on Earth, even though no part of the astronaut has gone missing. Use the concepts mass, weight and interaction, and the units.",
       "criteria": [
         "I say that mass tells you the amount of matter, is in kilograms and stays the same on the Moon and on Earth.",
@@ -389,14 +415,14 @@
         "I use the formula $G = mg$ and say that the Moon's $g$ is about one sixth of the Earth's value.",
         "I point out that a force meter measures weight, not mass."
       ],
-      "model": "The astronaut's mass, for example 80 kg, tells you how much matter he contains, and it stays the same everywhere. Weight is a force whose unit is the newton: it tells you how strongly the astronaut and the celestial body interact. Weight is calculated from the formula $G = mg$. The interaction between the Moon and the astronaut is weaker than between the Earth and the astronaut, and the Moon's $g = 1.62\\,\\text{m/s}^2$ is about one sixth of the Earth's value $9.81\\,\\text{m/s}^2$. So the same mass weighs about one sixth as much on the Moon as on Earth, and the spring of a force meter stretches one sixth as much.",
+      "model": "The astronaut's mass, for example $80\\,\\text{kg}$, tells you how much matter he contains, and it stays the same everywhere. Weight is a force whose unit is the newton: it tells you how strongly the astronaut and the celestial body interact. Weight is calculated from the formula $G = mg$. The interaction between the Moon and the astronaut is weaker than between the Earth and the astronaut, and the Moon's $g = 1.62\\,\\text{m/s}^2$ is about one sixth of the Earth's value $9.81\\,\\text{m/s}^2$. So the same mass weighs about one sixth as much on the Moon as on Earth, and the spring of a force meter stretches one sixth as much.",
       "optional": true
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first on your own and only then open the answer."
+      "text": "Finally, one quick question. Answer first on your own and only then open the answer."
     }
   ]
 }

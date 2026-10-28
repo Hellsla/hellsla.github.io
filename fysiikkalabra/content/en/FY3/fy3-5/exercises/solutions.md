@@ -6,7 +6,7 @@
 **Conversions:** None needed: both $Q$ and $W$ are given in joules, and the result is wanted in joules.
 **Substitution:** $\Delta U = 120\,\text{J} + 450\,\text{J} = 570\,\text{J}$
 **Answer:** $570\,\text{J}$, in whole joules, because both transfers are given in whole joules.
-**Reasonableness:** Both transfers bring energy into the dough, so the internal energy must increase, and the result 570 J is larger than either single transfer: $570\,\text{J} > 450\,\text{J} > 120\,\text{J}$. Kneaded dough warms up slightly, which fits experience.
+**Reasonableness:** Both transfers bring energy into the dough, so the internal energy must increase, and the result $570\,\text{J}$ is larger than either single transfer: $570\,\text{J} > 450\,\text{J} > 120\,\text{J}$. Kneaded dough warms up slightly, which fits experience.
 
 ## fy3-5-L1-02
 **Given:** the system is the coffee; $Q = -8.4\,\text{kJ}$ (heat is transferred out of the coffee), $W = 0$
@@ -16,7 +16,7 @@
 **Conversions:** None needed: $Q$ is given in kilojoules and the answer is wanted in kilojoules, so $W = 0\,\text{kJ}$ is enough.
 **Substitution:** $\Delta U = -8.4\,\text{kJ} + 0\,\text{kJ} = -8.4\,\text{kJ}$
 **Answer:** $-8.4\,\text{kJ}$, two significant figures, like the quantity of heat $8.4\,\text{kJ}$.
-**Reasonableness:** The sign is negative, because the coffee gives off energy and cools down. Energy is not lost: the same 8.4 kJ is transferred to the table and the room air, so the internal energy of the surroundings increases by $+8.4\,\text{kJ}$ and the sum for the whole is zero.
+**Reasonableness:** The sign is negative, because the coffee gives off energy and cools down. Energy is not lost: the same $8.4\,\text{kJ}$ is transferred to the table and the room air, so the internal energy of the surroundings increases by $+8.4\,\text{kJ}$ and the sum for the whole is zero.
 
 ## fy3-5-L1-03
 **Given:** the system is the air in the balloon; $Q = +350\,\text{J}$ (heat is transferred into the air), $W = -100\,\text{J}$ (the air does work on the surroundings as it expands)
@@ -26,7 +26,7 @@
 **Conversions:** None needed: both transfers are given in joules.
 **Substitution:** $\Delta U = 350\,\text{J} + (-100\,\text{J}) = 250\,\text{J}$
 **Answer:** $250\,\text{J}$, in whole joules, because the transfers are given in whole joules.
-**Reasonableness:** Part of the incoming energy goes into the expansion work, so the internal energy increases by less than 350 J: $250\,\text{J} < 350\,\text{J}$. The internal energy still increases, so the temperature of the air rises. Energy balance: $350\,\text{J}$ came in, $100\,\text{J}$ went out, $250\,\text{J}$ remained.
+**Reasonableness:** Part of the incoming energy goes into the expansion work, so the internal energy increases by less than $350\,\text{J}$: $250\,\text{J} < 350\,\text{J}$. The internal energy still increases, so the temperature of the air rises. Energy balance: $350\,\text{J}$ came in, $100\,\text{J}$ went out, $250\,\text{J}$ remained.
 
 ## fy3-5-L1-04
 **Given:** the system is the combustion gas; $W = -320\,\text{J}$ (the gas does work on the piston), $Q = -180\,\text{J}$ (heat is transferred from the gas to the walls)
@@ -49,14 +49,15 @@
 **Reasonableness:** The expansion work takes away more energy than the heat brings in ($85\,\text{J} > 15\,\text{J}$), so the internal energy must decrease and the air must cool. This is why the valve feels cold when air is let out.
 
 ## fy3-5-L2-01
-**Given:** the system is the air; $F = 300\,\text{N}$ (the piston pushes the air with a force in the direction of motion), $s = 0.20\,\text{m}$, $\Delta U = +45\,\text{J}$
+**Given:** the system is the air; the force of the piston on the air is given as a function of distance in the graph, $\Delta U = +45\,\text{J}$
 **Find:** the quantity of heat $Q$ transferred into the air, with its sign
-**Principle:** Energy is conserved, so $\Delta U = Q + W$. The work can be calculated, because the force and the displacement are in the same direction and the average force is given: $W = Fs$. The piston is part of the surroundings, which do work on the air, so $W$ is positive. The heat is found as the difference between the change in internal energy and the work.
-**Formula:** $W = Fs$ and $\Delta U = Q + W$, so $Q = \Delta U - W = \Delta U - Fs$
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. The force changes along the distance, so the work is not calculated as the product $Fs$ but as the area between the $(s,F)$ graph and the horizontal axis. The piston is part of the surroundings, which do work on the air, so $W$ is positive. The heat is found as the difference between the change in internal energy and the work.
+**Reading the graph:** The line starts at the grid intersection $(0\,\text{m};\ 200\,\text{N})$ and ends at the intersection $(0.20\,\text{m};\ 400\,\text{N})$. The area is a trapezoid whose parallel sides are $F_1 = 200\,\text{N}$ and $F_2 = 400\,\text{N}$ and whose height is $s = 0.20\,\text{m}$.
+**Formula:** $W = \dfrac{F_1 + F_2}{2}\, s$ and $\Delta U = Q + W$, so $Q = \Delta U - W$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
-**Substitution:** $Q = 45\,\text{J} - 300\,\text{N} \cdot 0.20\,\text{m} = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
-**Answer:** $-15\,\text{J}$, two significant figures, like the data $0.20\,\text{m}$ and $45\,\text{J}$.
-**Reasonableness:** The work brought 60 J into the air, but the internal energy increased by only 45 J, so 15 J must have left as heat and $Q$ is negative. This fits the fact that compressed air is warm and gives off heat to the cylinder walls. Balance: $-15\,\text{J} + 60\,\text{J} = 45\,\text{J}$.
+**Substitution:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0.20\,\text{m} = 300\,\text{N} \cdot 0.20\,\text{m} = 60\,\text{J}$, so $Q = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
+**Answer:** $-15\,\text{J}$, two significant figures, like the data $0.20\,\text{m}$ and $45\,\text{J}$. The values of the graph are read accurately from the grid, so $-14.5\ldots-15.5\,\text{J}$ is accepted.
+**Reasonableness:** The work brought $60\,\text{J}$ into the air, but the internal energy increased by only $45\,\text{J}$, so $15\,\text{J}$ must have left as heat and $Q$ is negative. This fits the fact that compressed air is warm and gives off heat to the cylinder walls. Balance: $-15\,\text{J} + 60\,\text{J} = 45\,\text{J}$.
 
 ## fy3-5-L2-02
 **Given:** the system is the water; power of the heating element $P = 2.0\,\text{kW}$, time $t = 90\,\text{s}$, heat transferred through the casing to the surroundings $20\,\text{kJ}$; no work is done, so $W = 0$
@@ -66,7 +67,7 @@
 **Conversions:** $P = 2.0\,\text{kW} = 2000\,\text{W}$, so that $Pt$ comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $Pt = 2000\,\text{W} \cdot 90\,\text{s} = 180\,000\,\text{J} = 180\,\text{kJ}$. So $\Delta U = 180\,\text{kJ} - 20\,\text{kJ} + 0 = 160\,\text{kJ}$
 **Answer:** $160\,\text{kJ}$, two significant figures: the difference $180\,\text{kJ} - 20\,\text{kJ}$ is known to within ten kilojoules, because the heat $20\,\text{kJ}$ is given only that precisely.
-**Reasonableness:** About $\tfrac{160}{180} \approx 89\,\%$ of the energy from the heating element stays in the water and only a small part escapes through the casing, which fits a well-insulated kettle. Roughly: 2 kW for two minutes would be 240 kJ, so 90 s gives about three quarters of that, or 180 kJ.
+**Reasonableness:** About $\tfrac{160}{180} \approx 89\,\%$ of the energy from the heating element stays in the water and only a small part escapes through the casing, which fits a well-insulated kettle. Roughly: $2\,\text{kW}$ for two minutes would be $240\,\text{kJ}$, so $90\,\text{s}$ gives about three quarters of that, or $180\,\text{kJ}$.
 
 ## fy3-5-L2-03
 **Given:** the system is the steam; $W = -2.0\,\text{kJ}$ (the steam does work), $\Delta U = -1.2\,\text{kJ}$
@@ -76,7 +77,7 @@
 **Conversions:** The answer is wanted in joules: $\Delta U = -1.2\,\text{kJ} = -1200\,\text{J}$ and $W = -2.0\,\text{kJ} = -2000\,\text{J}$.
 **Substitution:** $Q = -1200\,\text{J} - (-2000\,\text{J}) = 800\,\text{J}$
 **Answer:** $800\,\text{J} = 0.8\,\text{kJ}$; the difference is known to within a hundred joules, like the data, so one significant figure.
-**Reasonableness:** $Q$ is positive, so heat is transferred into the steam. The steam gave up 2000 J as work, but its internal energy decreased by only 1200 J, so the missing 800 J must have come as heat from the hot cylinder walls. Balance: $800\,\text{J} - 2000\,\text{J} = -1200\,\text{J}$.
+**Reasonableness:** $Q$ is positive, so heat is transferred into the steam. The steam gave up $2000\,\text{J}$ as work, but its internal energy decreased by only $1200\,\text{J}$, so the missing $800\,\text{J}$ must have come as heat from the hot cylinder walls. Balance: $800\,\text{J} - 2000\,\text{J} = -1200\,\text{J}$.
 
 ## fy3-5-L2-04
 **Given:** the system is the smoothie; power of the blade $P = 250\,\text{W}$, $Q = +2.0\,\text{kJ}$ (heat is transferred into the smoothie), $\Delta U = +12\,\text{kJ}$
@@ -91,7 +92,7 @@
 ## fy3-5-L3-01
 **Given:** the system is the air in the pump (the amount does not change); $F = 120\,\text{N}$, $s = 0.15\,\text{m}$, the temperature stays constant
 **Find:** the quantity of heat $Q$ transferred into the air, with its sign, and why $\Delta U$ does not change
-**Principle:** Energy is conserved, so $\Delta U = Q + W$. According to the problem, the temperature stays constant and the amount of air does not change, so the kinetic energy of the particles and their number are unchanged and the internal energy of the air does not change: $\Delta U = 0$. Then the energy brought in by the work must be transferred out as heat: $Q = -W$.
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. According to the problem, the temperature stays constant and the amount of air does not change, so the kinetic energy of the particles and their number are unchanged, and because the air can be treated as an ideal gas, its internal energy does not change: $\Delta U = 0$. Then the energy brought in by the work must be transferred out as heat: $Q = -W$.
 **Formula:** $W = Fs$ and $\Delta U = Q + W = 0$, so $Q = -W = -Fs$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so the product is in joules.
 **Substitution:** $W = 120\,\text{N} \cdot 0.15\,\text{m} = 18\,\text{J}$ (work is done on the air, so $W > 0$). So $Q = -18\,\text{J}$
@@ -111,7 +112,7 @@
 ## fy3-5-L3-03
 **Given:** the system is the gas; way A: $Q_\text{A} = +400\,\text{J}$, $W_\text{A} = -150\,\text{J}$ (the gas does work); way B: $W_\text{B} = -60\,\text{J}$; same initial and final temperature, same amount of gas
 **Find:** the quantity of heat $Q_\text{B}$, and why $\Delta U$ is the same in both ways
-**Principle:** Energy is conserved, so $\Delta U = Q + W$ for both ways. According to the problem, the temperature and the amount of gas are the same in the initial and final states, so the kinetic energy of the particles and therefore the internal energy are the same. So $\Delta U$ is the same in both ways, even though the heat and work differ: they depend on the path, while the internal energy depends only on the initial and final states.
+**Principle:** Energy is conserved, so $\Delta U = Q + W$ for both ways. According to the problem, the temperature and the amount of gas are the same in the initial and final states, so the kinetic energy of the particles is the same, and because the energy of the interactions is negligible in an ideal gas, the internal energy is the same too. So $\Delta U$ is the same in both ways, even though the heat and work differ: they depend on the path, while the internal energy depends only on the initial and final states.
 **Formula:** $\Delta U_\text{A} = Q_\text{A} + W_\text{A}$ and $\Delta U_\text{B} = \Delta U_\text{A}$, so $Q_\text{B} = \Delta U_\text{A} - W_\text{B} = Q_\text{A} + W_\text{A} - W_\text{B}$
 **Conversions:** None needed: all energies are given in joules.
 **Substitution:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. So $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$

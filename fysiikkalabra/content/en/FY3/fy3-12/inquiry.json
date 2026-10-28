@@ -23,11 +23,11 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review from the previous lesson",
-      "prompt": "In chapter *Internal energy, heat and conservation of energy*, the change in internal energy was written as $\\Delta U = Q + W$. Every minute, 600 J of heat transfers from the stove to the water in a pan, and every minute 600 J of heat transfers from the water to the surroundings. No work is done. What happens to the internal energy and the temperature of the water?",
+      "prompt": "In chapter *Internal energy, heat and conservation of energy*, the change in internal energy was written as $\\Delta U = Q + W$. Every minute, $600\\,\\text{J}$ of heat transfers from the stove to the water in a pan, and every minute $600\\,\\text{J}$ of heat transfers from the water to the surroundings. No work is done. What happens to the internal energy and the temperature of the water?",
       "choices": [
         {
           "text": "The internal energy increases, because heat keeps coming into the water.",
-          "feedback": "Only the net transfer changes the internal energy. 600 J comes into the water and 600 J leaves it every minute, so $Q = 600\\,\\text{J} - 600\\,\\text{J} = 0$ and $\\Delta U = 0$."
+          "feedback": "Only the net transfer changes the internal energy. $600\\,\\text{J}$ comes into the water and $600\\,\\text{J}$ leaves it every minute, so $Q = 600\\,\\text{J} - 600\\,\\text{J} = 0$ and $\\Delta U = 0$."
         },
         {
           "text": "The internal energy and the temperature stay constant.",
@@ -52,7 +52,7 @@
       "layout": "models",
       "justify": true,
       "title": "Prediction 1: why is the ground warmer?",
-      "prompt": "Without an atmosphere the mean temperature of the ground would be about −18 °C, but it is about +15 °C. Three students explain the difference. Whose explanation do you think is the best?",
+      "prompt": "Without an atmosphere the mean temperature of the ground would be about $-18\\,{}^\\circ\\text{C}$, but it is about +$15\\,{}^\\circ\\text{C}$. Three students explain the difference. Whose explanation do you think is the best?",
       "choices": [
         {
           "text": "Aino: The atmosphere is like a blanket that stops heat from being conducted from the ground into space.",
@@ -65,7 +65,7 @@
         },
         {
           "text": "Cem: The atmosphere stores the energy of the Sun and more and more of it accumulates all the time, so the ground is warm.",
-          "feedback": "If energy kept accumulating, the Earth would keep warming and its temperature would not stay at about +15 °C. At a steady temperature the power coming in and the power going out must be equal. In the table of the Investigate stage you can check whether these balances hold."
+          "feedback": "If energy kept accumulating, the Earth would keep warming and its temperature would not stay at about +$15\\,{}^\\circ\\text{C}$. At a steady temperature the power coming in and the power going out must be equal. In the table of the Investigate stage you can check whether these balances hold."
         }
       ]
     },
@@ -98,48 +98,48 @@
       "stage": "tutki",
       "type": "numeric",
       "title": "Predict the radiation of the atmosphere downwards",
-      "prompt": "Next you study a model of the energy balance of the ground, in which 240 W/m² is absorbed by the ground from the Sun and the ground gives out energy only as thermal radiation. Without an atmosphere the surface radiates 240 W/m² and is in balance (−18 °C). With an atmosphere the surface is in balance at +15 °C and radiates 390 W/m². How much power per square metre must the atmosphere radiate down to the ground?",
+      "prompt": "Next you study a model of the energy balance of the ground, in which $240\\,\\text{W/m}^2$ is absorbed by the ground from the Sun and the ground gives out energy only as thermal radiation. Without an atmosphere the surface radiates $240\\,\\text{W/m}^2$ and is in balance ($-18\\,{}^\\circ\\text{C}$). With an atmosphere the surface is in balance at +$15\\,{}^\\circ\\text{C}$ and radiates $390\\,\\text{W/m}^2$. How much power per square metre must the atmosphere radiate down to the ground?",
       "answer": 150,
       "unit": "W/m²",
       "tolerance": 0.02,
       "hints": [
         "When the ground is in balance, the power coming into it is equal to the power leaving it.",
-        "The ground receives 240 W/m² from the Sun and an unknown power from the atmosphere; the power leaving is 390 W/m²."
+        "The ground receives $240\\,\\text{W/m}^2$ from the Sun and an unknown power from the atmosphere; the power leaving is $390\\,\\text{W/m}^2$."
       ],
       "mistakes": [
         {
           "value": 390,
-          "feedback": "390 W/m² is the power radiated by the ground. Part of it is already covered by the 240 W/m² coming from the Sun, and the rest comes from the atmosphere."
+          "feedback": "$390\\,\\text{W/m}^2$ is the power radiated by the ground. Part of it is already covered by the $240\\,\\text{W/m}^2$ coming from the Sun, and the rest comes from the atmosphere."
         },
         {
           "value": 630,
-          "feedback": "You added the powers. In balance the power coming in is equal to the power leaving, 390 W/m², so the share of the atmosphere is the power leaving minus the power coming from the Sun."
+          "feedback": "You added the powers. In balance the power coming in is equal to the power leaving, $390\\,\\text{W/m}^2$, so the share of the atmosphere is the power leaving minus the power coming from the Sun."
         }
       ],
-      "solution": "**Given:** with the ground in balance, $P_\\text{sun} = 240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ is absorbed from the Sun and the surface radiates $P_\\text{rad} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$; the surface gives out energy only as thermal radiation\n\n**Find:** the power radiated down by the atmosphere $P_\\text{down}$ in $\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Principle:** The temperature of the surface stays constant (+15 °C), so energy neither accumulates in the surface nor decreases: the power coming into the surface is equal to the power leaving it. There are two inputs, the Sun and the thermal radiation radiated down by the atmosphere, and only one output, the radiation of the surface itself.\n\n**Formula:** In balance the power coming in is equal to the power leaving:\n\n$$P_\\text{sun} + P_\\text{down} = P_\\text{rad}$$\n\n$$P_\\text{down} = P_\\text{rad} - P_\\text{sun}$$\n\n**Conversions:** No conversions are needed, because all the powers are given in the same unit $\\tfrac{\\text{W}}{\\text{m}^2}$.\n\n**Substitution:** $P_\\text{down} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2} - 240\\,\\tfrac{\\text{W}}{\\text{m}^2} = 150\\,\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Answer:** $150\\,\\tfrac{\\text{W}}{\\text{m}^2}$, three significant figures. The example values $390$ and $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ are given as whole numbers, so the difference has the same precision in W/m²; no data limits it any further.\n\n**Reasonableness:** Check the balance: $240 + 150 = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$ comes in and $390\\,\\tfrac{\\text{W}}{\\text{m}^2}$ goes out. The result is positive and smaller than the radiation of the surface, because part of the power leaving is already covered by the Sun. Without an atmosphere $P_\\text{down} = 0$ and the surface would radiate only $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$, which corresponds to the colder situation."
+      "solution": "**Given:** with the ground in balance, $P_\\text{sun} = 240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ is absorbed from the Sun and the surface radiates $P_\\text{rad} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$; the surface gives out energy only as thermal radiation\n\n**Find:** the power radiated down by the atmosphere $P_\\text{down}$ in $\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Principle:** The temperature of the surface stays constant (+$15\\,{}^\\circ\\text{C}$), so energy neither accumulates in the surface nor decreases: the power coming into the surface is equal to the power leaving it. There are two inputs, the Sun and the thermal radiation radiated down by the atmosphere, and only one output, the radiation of the surface itself.\n\n**Formula:** In balance the power coming in is equal to the power leaving:\n\n$$P_\\text{sun} + P_\\text{down} = P_\\text{rad}$$\n\n$$P_\\text{down} = P_\\text{rad} - P_\\text{sun}$$\n\n**Conversions:** No conversions are needed, because all the powers are given in the same unit $\\tfrac{\\text{W}}{\\text{m}^2}$.\n\n**Substitution:** $P_\\text{down} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2} - 240\\,\\tfrac{\\text{W}}{\\text{m}^2} = 150\\,\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Answer:** $150\\,\\tfrac{\\text{W}}{\\text{m}^2}$, three significant figures. The example values $390$ and $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ are given as whole numbers, so the difference has the same precision in W/m²; no data limits it any further.\n\n**Reasonableness:** Check the balance: $240 + 150 = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$ comes in and $390\\,\\tfrac{\\text{W}}{\\text{m}^2}$ goes out. The result is positive and smaller than the radiation of the surface, because part of the power leaving is already covered by the Sun. Without an atmosphere $P_\\text{down} = 0$ and the surface would radiate only $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$, which corresponds to the colder situation."
     },
     {
       "id": "tase",
       "stage": "tutki",
       "type": "interpret",
       "title": "Energy balance of the ground without and with an atmosphere",
-      "text": "The table shows the energy balance of the ground as a mean over the whole Earth per square metre. The numbers are calculated with a simple model and are *example values*, not measurements. In the model the power absorbed from the Sun is absorbed entirely by the ground, and the ground gives out energy only as thermal radiation. In reality part of the sunlight is absorbed by the atmosphere, and the ground also gives out energy by convection and by the evaporation of water. In both cases a total of 240 W/m² leaves into space, as much as is absorbed from the Sun.\n\nThe column *without* is an Earth with no atmosphere, and the column *with* is an Earth with one. The powers are in W/m².\n\n| Ground | without | with |\n|---|---|---|\n| absorbed from the Sun | 240 | 240 |\n| comes down from the atmosphere | 0 | 150 |\n| surface radiates | 240 | 390 |\n| temperature | −18 °C | +15 °C |",
+      "text": "The table shows the energy balance of the ground as a mean over the whole Earth per square metre. The numbers are calculated with a simple model and are *example values*, not measurements. In the model the power absorbed from the Sun is absorbed entirely by the ground, and the ground gives out energy only as thermal radiation. In reality part of the sunlight is absorbed by the atmosphere, and the ground also gives out energy by convection and by the evaporation of water. In both cases a total of $240\\,\\text{W/m}^2$ leaves into space, as much as is absorbed from the Sun.\n\nThe column *without* is an Earth with no atmosphere, and the column *with* is an Earth with one. The powers are in W/m².\n\n| Ground | without | with |\n|---|---|---|\n| absorbed from the Sun | 240 | 240 |\n| comes down from the atmosphere | 0 | 150 |\n| surface radiates | 240 | 390 |\n| temperature | $-18\\,{}^\\circ\\text{C}$ | +$15\\,{}^\\circ\\text{C}$ |",
       "question": {
         "type": "choice",
         "prompt": "According to the table, what makes the ground warmer with an atmosphere?",
         "choices": [
           {
             "text": "More power is absorbed from the Sun when the atmosphere exists.",
-            "feedback": "The power absorbed from the Sun is the same 240 W/m² in both columns. The difference comes from the second row of the table: look at where else the ground gets energy."
+            "feedback": "The power absorbed from the Sun is the same $240\\,\\text{W/m}^2$ in both columns. The difference comes from the second row of the table: look at where else the ground gets energy."
           },
           {
-            "text": "150 W/m² comes down to the ground from the atmosphere, so the surface receives 390 W/m² in total, and in balance it must radiate the same 390 W/m², which requires a higher temperature.",
+            "text": "$150\\,\\text{W/m}^2$ comes down to the ground from the atmosphere, so the surface receives $390\\,\\text{W/m}^2$ in total, and in balance it must radiate the same $390\\,\\text{W/m}^2$, which requires a higher temperature.",
             "correct": true,
-            "feedback": "Correct. The ground receives $240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 = 390\\,\\text{W/m}^2$, and in balance the power leaving is equal. The hotter an object is, the more it radiates, so 390 W/m² corresponds to a higher temperature than 240 W/m². The atmosphere does not produce energy: it radiates down part of the radiation it has absorbed from the ground."
+            "feedback": "Correct. The ground receives $240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 = 390\\,\\text{W/m}^2$, and in balance the power leaving is equal. The hotter an object is, the more it radiates, so $390\\,\\text{W/m}^2$ corresponds to a higher temperature than $240\\,\\text{W/m}^2$. The atmosphere does not produce energy: it radiates down part of the radiation it has absorbed from the ground."
           },
           {
             "text": "With an atmosphere the ground radiates less, so more energy is left in the surface.",
-            "feedback": "In the table the ground radiates more with an atmosphere, 390 W/m² and not 240 W/m². A warmer surface radiates more. The surface still stays in balance, because it also receives more."
+            "feedback": "In the table the ground radiates more with an atmosphere, $390\\,\\text{W/m}^2$ and not $240\\,\\text{W/m}^2$. A warmer surface radiates more. The surface still stays in balance, because it also receives more."
           },
           {
             "text": "The atmosphere stops heat from being conducted from the ground into space.",
@@ -154,7 +154,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "When the balance is broken",
-      "text": "The carbon dioxide concentration of the atmosphere is raised all at once and then kept constant. There are more greenhouse gases, so they absorb more thermal radiation, and at first less power leaves into space than the Earth absorbs. The extra power warms the oceans, the land and the air. In the model the power leaving into space increases by 1.2 W/m² for every kelvin the Earth warms. The table shows the power leaving into space, the excess, that is, the difference between the absorbed power and the power leaving, and the warming $\\Delta T$ from the initial situation; the powers are in W/m². The Earth absorbs 240.0 W/m² all the time. The numbers are *example values*; in reality the warming takes decades, because the large heat capacity of the oceans slows it down.\n\n| Stage | Leaves | Excess | $\\Delta T$ (K) |\n|---|---|---|---|\n| before | 240.0 | 0.0 | 0.0 |\n| just after | 236.4 | 3.6 | 0.0 |\n| later | 237.6 | 2.4 | 1.0 |\n| later still | 238.8 | 1.2 | 2.0 |",
+      "text": "The carbon dioxide concentration of the atmosphere is raised all at once and then kept constant. There are more greenhouse gases, so they absorb more thermal radiation, and at first less power leaves into space than the Earth absorbs. The extra power warms the oceans, the land and the air. In the model the power leaving into space increases by $1.2\\,\\text{W/m}^2$ for every kelvin the Earth warms. The table shows the power leaving into space, the excess, that is, the difference between the absorbed power and the power leaving, and the warming $\\Delta T$ from the initial situation; the powers are in W/m². The Earth absorbs $240.0\\,\\text{W/m}^2$ all the time. The numbers are *example values*; in reality the warming takes decades, because the large heat capacity of the oceans slows it down.\n\n| Stage | Leaves | Excess | $\\Delta T$ (K) |\n|---|---|---|---|\n| before | 240.0 | 0.0 | 0.0 |\n| just after | 236.4 | 3.6 | 0.0 |\n| later | 237.6 | 2.4 | 1.0 |\n| later still | 238.8 | 1.2 | 2.0 |",
       "question": {
         "type": "numeric",
         "prompt": "The concentration stays constant from the row \"just after\" onwards. How many kelvins has the Earth warmed in total when the power leaving is again equal to the power absorbed?",
@@ -163,17 +163,17 @@
         "tolerance": 0.02,
         "hints": [
           "By how much must the power leaving still increase from the value in the row \"just after\" for the excess to be zero?",
-          "The power leaving increases by 1.2 W/m² for every kelvin of warming. Just after the change the excess is 3.6 W/m².",
+          "The power leaving increases by $1.2\\,\\text{W/m}^2$ for every kelvin of warming. Just after the change the excess is $3.6\\,\\text{W/m}^2$.",
           "The warming needed is $\\dfrac{3.6\\,\\text{W/m}^2}{1.2\\,\\text{W/(m}^2\\text{K)}}$."
         ],
         "mistakes": [
           {
             "value": 3.6,
-            "feedback": "3.6 is the extra power per square metre (W/m²), not the warming. The power leaving increases by 1.2 W/m² per kelvin, so divide the excess by this."
+            "feedback": "3.6 is the extra power per square metre (W/m²), not the warming. The power leaving increases by $1.2\\,\\text{W/m}^2$ per kelvin, so divide the excess by this."
           },
           {
             "value": 4.32,
-            "feedback": "You multiplied the excess and 1.2 W/m² per kelvin. The question asks how many kelvins are needed for the 3.6 W/m² excess to drop to zero: divide the excess by 1.2 W/m² per kelvin."
+            "feedback": "You multiplied the excess and $1.2\\,\\text{W/m}^2$ per kelvin. The question asks how many kelvins are needed for the $3.6\\,\\text{W/m}^2$ excess to drop to zero: divide the excess by $1.2\\,\\text{W/m}^2$ per kelvin."
           }
         ],
         "solution": "**Given:** row \"just after\" of the table: power leaving $236.4\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and excess $3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}$; absorbed power $240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$; in the model the power leaving increases by $k = 1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ for every kelvin of warming\n\n**Find:** the total warming $\\Delta T$ in kelvins when the power leaving is again equal to the power absorbed\n\n**Principle:** The concentration stays constant, so the absorbed power stays the same $240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. The Earth warms while the excess is positive, and as it warms it radiates more. Balance is reached when the warming has increased the power leaving by exactly the excess.\n\n**Formula:** The power leaving must increase by the excess $\\Delta P$, and the increase is $k\\,\\Delta T$:\n\n$$k\\,\\Delta T = \\Delta P \\quad\\Rightarrow\\quad \\Delta T = \\frac{\\Delta P}{k}$$\n\n**Conversions:** No conversions are needed, because the excess and the coefficient are given in the units $\\tfrac{\\text{W}}{\\text{m}^2}$ and $\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ and the square metres cancel.\n\n**Substitution:** $\\Delta T = \\dfrac{3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}}{1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}} = 3.0\\,\\text{K}$\n\n**Answer:** $3.0\\,\\text{K}$, two significant figures. The limiting data are the excess $240.0 - 236.4 = 3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}$ (the difference has one decimal and two figures) and the coefficient $1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ (two figures).\n\n**Reasonableness:** Check the balance: the power leaving is $236.4 + 1.2 \\cdot 3.0 = 240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$, equal to the power absorbed. The result fits the table: at two kelvins the excess is still $1.2\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and after the third kelvin it is zero. The warming therefore continues for a long time after the concentration has stopped increasing, but it stops at a new balance."
@@ -228,16 +228,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "The area of a window is 1.5 m² and its U-value is 1.0 W/(m²·K). It is 20 °C indoors and −10 °C outdoors. A student calculates: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ and $P = UA\\Delta T = 1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 10\\,\\text{K} = 15\\,\\text{W}$. Where is the error?",
+      "prompt": "The area of a window is 1.5 m² and its U-value is $1.0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. A student calculates: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ and $P = UA\\Delta T = 1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 10\\,\\text{K} = 15\\,\\text{W}$. Where is the error?",
       "choices": [
         {
           "text": "The temperatures should be converted to kelvins before subtracting.",
           "feedback": "A temperature difference is the same in kelvins and in degrees Celsius, so the conversion does not change the result. The error is in the sign of the outdoor temperature."
         },
         {
-          "text": "The outdoor temperature is −10 °C, so $\\Delta T = 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 30\\,\\text{K}$ and $P = 45\\,\\text{W}$.",
+          "text": "The outdoor temperature is $-10\\,{}^\\circ\\text{C}$, so $\\Delta T = 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 30\\,\\text{K}$ and $P = 45\\,\\text{W}$.",
           "correct": true,
-          "feedback": "Correct. The freezing temperature is subtracted with its sign, so the difference is 30 K and not 10 K. The power is $1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 45\\,\\text{W}$, three times the student's result."
+          "feedback": "Correct. The freezing temperature is subtracted with its sign, so the difference is $30\\,\\text{K}$ and not $10\\,\\text{K}$. The power is $1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 45\\,\\text{W}$, three times the student's result."
         },
         {
           "text": "You should divide by the U-value, because a good insulator lets less heat through.",
@@ -245,7 +245,7 @@
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "Check the temperature difference. From 20 °C indoors to −10 °C outdoors is more than 10 degrees: first 20 degrees down to zero and then another 10 degrees below freezing."
+          "feedback": "Check the temperature difference. From $20\\,{}^\\circ\\text{C}$ indoors to $-10\\,{}^\\circ\\text{C}$ outdoors is more than 10 degrees: first 20 degrees down to zero and then another 10 degrees below freezing."
         }
       ],
       "optional": true
@@ -255,7 +255,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The total area of the walls, door, top and bottom of a refrigerator is 4.0 m², and their mean U-value is 0.30 W/(m²·K). It is 5 °C in the refrigerator and 21 °C in the kitchen. Heat is conducted through the walls into the refrigerator, and for the temperature of the refrigerator to stay constant, its machinery must move the same energy back to the kitchen. How much heat is conducted into the refrigerator in one day? Assume that the door is not opened. Give the answer in kilowatt-hours.",
+      "prompt": "The total area of the walls, door, top and bottom of a refrigerator is 4.0 m², and their mean U-value is $0.30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $5\\,{}^\\circ\\text{C}$ in the refrigerator and $21\\,{}^\\circ\\text{C}$ in the kitchen. Heat is conducted through the walls into the refrigerator, and for the temperature of the refrigerator to stay constant, its machinery must move the same energy back to the kitchen. How much heat is conducted into the refrigerator in one day? Assume that the door is not opened. Give the answer in kilowatt-hours.",
       "answer": 0.461,
       "unit": "kWh",
       "tolerance": 0.02,
@@ -310,27 +310,49 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. How the heat is transferred",
+      "prompt": "The air in the room is cool, but the face of a person sitting in front of a fireplace feels warm at once. How does heat transfer from the fire to the face?",
+      "choices": [
+        {
+          "text": "By conduction through the air, because the heat passes from the fire to the face in collisions between air particles.",
+          "feedback": "Air conducts heat very poorly, which is why it is used as insulation, for example between window panes and in the fibres of a woollen jumper. The heat of the fire does not reach the face in collisions between air particles but as thermal radiation."
+        },
+        {
+          "text": "By convection, because the air warmed by the fire flows to the face.",
+          "feedback": "The air warmed by the fire rises up the chimney and does not flow sideways to the face. Convection would warm the air of the room slowly, but the face warms at once, and if it is shielded with a board, the feeling of warmth stops at once. Then the transfer is thermal radiation."
+        },
+        {
+          "text": "By thermal radiation, because the fire emits radiation that the skin of the face absorbs and that warms the skin directly.",
+          "correct": true,
+          "feedback": "Correct. Thermal radiation travels through air at the speed of light and needs no medium, and it hardly warms the air at all. The face warms when it absorbs the radiation, like the ground absorbing the radiation of the Sun. A board between the fire and the face would stop the radiation at once."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Energy balance of the atmosphere",
-      "prompt": "In the model of the first table of the Investigate stage the ground radiates 390 W/m². Of this, 100 W/m² passes straight through the atmosphere into space, and the atmosphere absorbs the rest. The atmosphere radiates 150 W/m² down to the ground. The whole Earth is in balance, so a total of 240 W/m² leaves into space. How much power per square metre does the atmosphere radiate upwards into space? The numbers are example values.",
+      "title": "3. Energy balance of the atmosphere",
+      "prompt": "In the model of the first table of the Investigate stage the ground radiates $390\\,\\text{W/m}^2$. Of this, $100\\,\\text{W/m}^2$ passes straight through the atmosphere into space, and the atmosphere absorbs the rest. The atmosphere radiates $150\\,\\text{W/m}^2$ down to the ground. The whole Earth is in balance, so a total of $240\\,\\text{W/m}^2$ leaves into space. How much power per square metre does the atmosphere radiate upwards into space? The numbers are example values.",
       "answer": 140,
       "unit": "W/m²",
       "tolerance": 0.02,
       "hints": [
-        "What two parts does the 240 W/m² leaving into space consist of?",
+        "What two parts does the $240\\,\\text{W/m}^2$ leaving into space consist of?",
         "What leaves into space is the radiation that passed straight through from the ground and the power radiated upwards by the atmosphere: $240\\,\\text{W/m}^2 = 100\\,\\text{W/m}^2 + P_\\text{up}$.",
         "Finally check the balance of the atmosphere itself: it absorbs $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$, and up and down together it must radiate the same amount."
       ],
       "mistakes": [
         {
           "value": 240,
-          "feedback": "240 W/m² is the power leaving the whole Earth into space. Of this, 100 W/m² is radiation from the ground that passes straight through the atmosphere, so the share of the atmosphere is smaller."
+          "feedback": "$240\\,\\text{W/m}^2$ is the power leaving the whole Earth into space. Of this, $100\\,\\text{W/m}^2$ is radiation from the ground that passes straight through the atmosphere, so the share of the atmosphere is smaller."
         },
         {
           "value": 150,
-          "feedback": "150 W/m² is the power radiated down by the atmosphere. The 240 W/m² leaving into space must consist of the 100 W/m² that passed straight through and the power radiated upwards by the atmosphere."
+          "feedback": "$150\\,\\text{W/m}^2$ is the power radiated down by the atmosphere. The $240\\,\\text{W/m}^2$ leaving into space must consist of the $100\\,\\text{W/m}^2$ that passed straight through and the power radiated upwards by the atmosphere."
         }
       ],
       "solution": "**Given:** radiation of the surface $390\\,\\tfrac{\\text{W}}{\\text{m}^2}$, of which $P_\\text{direct} = 100\\,\\tfrac{\\text{W}}{\\text{m}^2}$ passes straight into space; radiated down by the atmosphere $150\\,\\tfrac{\\text{W}}{\\text{m}^2}$; the total leaving into space is $P_\\text{tot} = 240\\,\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Find:** the power radiated upwards into space by the atmosphere $P_\\text{up}$ in $\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Principle:** The whole Earth is in balance, so the power leaving into space is equal to the power absorbed from the Sun, and it consists of two parts: radiation that passes straight through from the ground and radiation sent upwards by the atmosphere. Energy is conserved, and there is no other route out.\n\n**Formula:** The power leaving into space is the sum of the parts:\n\n$$P_\\text{direct} + P_\\text{up} = P_\\text{tot}$$\n\n$$P_\\text{up} = P_\\text{tot} - P_\\text{direct}$$\n\n**Conversions:** No conversions are needed, because all the powers are given in the unit $\\tfrac{\\text{W}}{\\text{m}^2}$.\n\n**Substitution:** $P_\\text{up} = 240\\,\\tfrac{\\text{W}}{\\text{m}^2} - 100\\,\\tfrac{\\text{W}}{\\text{m}^2} = 140\\,\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Answer:** $140\\,\\tfrac{\\text{W}}{\\text{m}^2}$, three significant figures. The example values $240$ and $100\\,\\tfrac{\\text{W}}{\\text{m}^2}$ are given as whole numbers, so the difference has the same precision in W/m²; no data limits it any further.\n\n**Reasonableness:** Check the balance of the atmosphere itself: it absorbs $390 - 100 = 290\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and radiates $150 + 140 = 290\\,\\tfrac{\\text{W}}{\\text{m}^2}$, so the atmosphere is in balance too. The result is smaller than $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$, because part of the power leaving into space comes straight from the surface. The atmosphere radiates slightly more down than up, because the lower air is warmer.",
@@ -340,21 +362,21 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "prompt": "Your friend claims: \"The Earth radiates as much energy into space as it absorbs from the Sun, so extra carbon dioxide cannot change its temperature. Besides, the greenhouse effect is entirely harmful.\" Use energy balance and thermal radiation to explain what is right and what is wrong in the claim.",
       "criteria": [
         "I say that in balance the power coming in and the power going out are equal and the temperature stays constant.",
         "I explain that extra carbon dioxide absorbs more of the thermal radiation of the ground, so for a while less leaves into space than is absorbed.",
         "I explain that the Earth warms until it again radiates as much as it absorbs, that is, a new balance settles at a higher temperature.",
-        "I state that the natural greenhouse effect keeps the ground at about +15 °C instead of about −18 °C, and the problem is its strengthening."
+        "I state that the natural greenhouse effect keeps the ground at about +$15\\,{}^\\circ\\text{C}$ instead of about $-18\\,{}^\\circ\\text{C}$, and the problem is its strengthening."
       ],
-      "model": "The first part of the claim is true in a state of balance: when the Earth radiates into space the same power as it absorbs from the Sun, its temperature stays constant. The balance is not permanent, however. When carbon dioxide is added, the atmosphere absorbs more of the thermal radiation of the ground and radiates part of it back down, and for a while less power leaves into space than the Earth absorbs. The extra power warms the oceans, the land and the air. A warmer Earth radiates more, so the warming continues until the power leaving is again equal to the power absorbed. A new balance therefore settles at a higher temperature. The greenhouse effect is not entirely harmful either: the natural greenhouse effect raises the mean temperature of the ground from about −18 °C to about +15 °C. The problem is its strengthening because of human emissions."
+      "model": "The first part of the claim is true in a state of balance: when the Earth radiates into space the same power as it absorbs from the Sun, its temperature stays constant. The balance is not permanent, however. When carbon dioxide is added, the atmosphere absorbs more of the thermal radiation of the ground and radiates part of it back down, and for a while less power leaves into space than the Earth absorbs. The extra power warms the oceans, the land and the air. A warmer Earth radiates more, so the warming continues until the power leaving is again equal to the power absorbed. A new balance therefore settles at a higher temperature. The greenhouse effect is not entirely harmful either: the natural greenhouse effect raises the mean temperature of the ground from about $-18\\,{}^\\circ\\text{C}$ to about +$15\\,{}^\\circ\\text{C}$. The problem is its strengthening because of human emissions."
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first yourself and open the answer only afterwards."
+      "text": "Finally, one quick question. Answer first yourself and open the answer only afterwards."
     }
   ]
 }

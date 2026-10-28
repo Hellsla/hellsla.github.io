@@ -15,5 +15,6 @@
  "Faasikaavio, kaavakuva: paine p lämpötilan T funktiona. Käyrät erottavat kiinteän, nesteen ja kaasun alueet ja kohtaavat kolmoispisteessä. Kun paine on ilmanpaine, vesi kiehuu 100 asteessa; vuorella paine on pienempi ja kiehumispiste alempi.": "Phase diagram, schematic diagram: pressure p as a function of temperature T. The curves separate the solid, liquid and gas regions and meet at the triple point. At atmospheric pressure, water boils at 100 degrees; on a mountain the pressure is lower and the boiling point is lower.",
  "ilmanpaine": "air pressure",
  "vuori": "mountain",
- "kolmoispiste": "triple point"
+ "kolmoispiste": "triple point",
+ "Kuvaaja mittakaavassa: jääpalan lämmityksessä jään lämpötila T celsiusasteina siirretyn energian Q funktiona kilojouleina. Lämpötila nousee pisteestä (0 kJ; −16 °C) pisteeseen (20 kJ; 0 °C), pysyy 0 °C:ssa pisteeseen (220 kJ; 0 °C) ja nousee sen jälkeen loivemmin. Ruudukon väli on 20 kJ ja 10 °C.": "Graph to scale: when a piece of ice is heated, the temperature T of the ice in degrees Celsius as a function of the energy transferred Q in kilojoules. The temperature rises from the point (0 kJ; −16 °C) to the point (20 kJ; 0 °C), stays at 0 °C up to the point (220 kJ; 0 °C) and then rises more gently. The grid spacing is 20 kJ and 10 °C."
 }

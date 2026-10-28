@@ -1,14 +1,6 @@
 [
   {
-    "q": "How many moles of gas are in a 10.0 litre container when the pressure is 150 kPa and the temperature is 27 °C ($R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$)?",
+    "q": "How many moles of gas are in a 10.0 litre container when the pressure is 150 kPa and the temperature is $27\\,{}^\\circ\\text{C}$ ($R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$)?",
     "a": "$T = (27 + 273.15)\\,\\text{K} = 300.15\\,\\text{K}$, and $n = \\dfrac{pV}{RT} = \\dfrac{150\\,000\\,\\text{Pa} \\cdot 0.0100\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 300.15\\,\\text{K}} \\approx 0.601\\,\\text{mol}$."
-  },
-  {
-    "q": "Two balloons of the same size are at the same pressure and temperature, one containing helium and the other carbon dioxide. Which contains more gas measured as an amount of substance, and which balloon is heavier?",
-    "a": "The amount of substance is the same, because $n = \\dfrac{pV}{RT}$ does not depend on the type of gas. The carbon dioxide balloon is heavier, because the molar mass of carbon dioxide, 44 g/mol, is much greater than that of helium, 4.0 g/mol."
-  },
-  {
-    "q": "The temperature in kelvins of a gas in a closed container is doubled and the volume is kept the same. What happens to the pressure? Justify with the equation of state.",
-    "a": "The pressure doubles: $p = \\dfrac{nRT}{V}$, and $n$, $R$ and $V$ stay the same, so $p$ is proportional to $T$."
   }
 ]

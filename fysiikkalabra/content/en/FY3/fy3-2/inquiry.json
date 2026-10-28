@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: weight",
-      "prompt": "The mass of the backpack is 10 kg. How large is the gravitational force $G = mg$ acting on it?",
+      "prompt": "The mass of the backpack is $10\\,\\text{kg}$. How large is the gravitational force $G = mg$ acting on it?",
       "choices": [
         {
           "text": "10 N",
@@ -35,7 +35,7 @@
           "feedback": "Correct: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. This is the force you need to hold the backpack up."
         },
         {
-          "text": "9.8 kg",
+          "text": "$9.8\\,\\text{kg}$",
           "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is the unit of mass."
         },
         {
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: the distance doubles",
-      "prompt": "A crate is pulled along the floor by a 60 N force in the direction of motion, first 10 m and then 20 m. The force stays the same. What happens to the work done by the force?",
+      "prompt": "A crate is pulled along the floor by a 60 N force in the direction of motion, first $10\\,\\text{m}$ and then $20\\,\\text{m}$. The force stays the same. What happens to the work done by the force?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -64,7 +64,7 @@
         {
           "text": "The work doubles.",
           "correct": true,
-          "feedback": "The model values support this: over 10 m $W = 600\\,\\text{J}$ and over 20 m $W = 1200\\,\\text{J}$. The same force over twice the distance does twice the work, $W = Fs$."
+          "feedback": "The model values support this: over $10\\,\\text{m}$ $W = 600\\,\\text{J}$ and over $20\\,\\text{m}$ $W = 1200\\,\\text{J}$. The same force over twice the distance does twice the work, $W = Fs$."
         },
         {
           "text": "The work becomes four times as large.",
@@ -78,7 +78,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: the same pull, more slowly",
-      "prompt": "The same pull (60 N, 10 m) is done first in 5 seconds and then in 20 seconds. What happens to the work and the power?",
+      "prompt": "The same pull (60 N, $10\\,\\text{m}$) is done first in 5 seconds and then in 20 seconds. What happens to the work and the power?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -87,20 +87,20 @@
       "choices": [
         {
           "text": "The slower pull does less work.",
-          "feedback": "According to the model values the work is the same, 600 J, for both times. The work $W = Fs$ does not depend on time; time affects the power."
+          "feedback": "According to the model values the work is the same, $600\\,\\text{J}$, for both times. The work $W = Fs$ does not depend on time; time affects the power."
         },
         {
           "text": "The work is the same, but the power falls to a quarter.",
           "correct": true,
-          "feedback": "The model values support this: $W = 600\\,\\text{J}$ in both, and the power $P = W/t$ drops from 120 W to 30 W when the time becomes four times as long."
+          "feedback": "The model values support this: $W = 600\\,\\text{J}$ in both, and the power $P = W/t$ drops from $120\\,\\text{W}$ to $30\\,\\text{W}$ when the time becomes four times as long."
         },
         {
           "text": "The work and the power stay the same.",
-          "feedback": "The work stays the same, but the power does not: according to the model values $P = W/t$ decreases from 120 W to 30 W. Power tells you how fast the work is done."
+          "feedback": "The work stays the same, but the power does not: according to the model values $P = W/t$ decreases from $120\\,\\text{W}$ to $30\\,\\text{W}$. Power tells you how fast the work is done."
         },
         {
           "text": "The slower pull does more work, because the force acts for longer.",
-          "feedback": "The model values show the same work, 600 J. Work is not determined by how long the force acts but by the distance moved in the direction of the force. A longer time means a smaller power."
+          "feedback": "The model values show the same work, $600\\,\\text{J}$. Work is not determined by how long the force acts but by the distance moved in the direction of the force. A longer time means a smaller power."
         }
       ]
     },
@@ -110,7 +110,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Prediction 3: the backpack in the corridor",
-      "prompt": "You carry a backpack that weighs 98 N for 20 m along a level corridor at a steady speed. Three students explain how much work your supporting force does on the backpack. Who is right? The simulation does not test this, because in it the force is always in the direction of motion; compare your prediction with the model and the figure in the Theory summary.",
+      "prompt": "You carry a backpack that weighs 98 N for $20\\,\\text{m}$ along a level corridor at a steady speed. Three students explain how much work your supporting force does on the backpack. Who is right? The simulation does not test this, because in it the force is always in the direction of motion; compare your prediction with the model and the figure in the Theory summary.",
       "justify": true,
       "choices": [
         {
@@ -123,7 +123,7 @@
           "feedback": "Exactly: a force perpendicular to the motion does no work. Your muscles still use energy to maintain the force, but that is not work done on the backpack. The evidence is in the figure and the model in the Theory summary: work is calculated only from the force in the direction of motion, and the supporting force has none."
         },
         {
-          "text": "Cem: The work is something between zero and 2.0 kJ, because part of the force is in the direction of motion.",
+          "text": "Cem: The work is something between zero and $2.0\\,\\text{kJ}$, because part of the force is in the direction of motion.",
           "feedback": "At a steady speed along a level corridor no horizontal force is needed on the backpack (air resistance is ignored), so the supporting force is vertical and its work is zero. The Theory summary returns to this."
         }
       ]
@@ -141,7 +141,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the distance changes",
-      "intro": "Test prediction 1. Keep the force and time constant and change only the distance. Record the work for at least two distances, for example 5 m, 10 m and 20 m. Press *Pull* before recording so that you see the area of the graph fill up.",
+      "intro": "Test prediction 1. Keep the force and time constant and change only the distance. Record the work for at least two distances, for example $5\\,\\text{m}$, $10\\,\\text{m}$ and $20\\,\\text{m}$. Press *Pull* before recording so that you see the area of the graph fill up.",
       "initial": {
         "F": 60,
         "s": 10,
@@ -170,7 +170,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the time changes",
-      "intro": "Test prediction 2. Now the force and distance are constant and only the time changes. Record the work and power for at least two times, for example 5 s, 10 s and 20 s. What happens to the work? And to the power?",
+      "intro": "Test prediction 2. Now the force and distance are constant and only the time changes. Record the work and power for at least two times, for example $5\\,\\text{s}$, $10\\,\\text{s}$ and $20\\,\\text{s}$. What happens to the work? And to the power?",
       "initial": {
         "F": 60,
         "s": 10,
@@ -233,7 +233,7 @@
           {
             "text": "The internal energy of the water increases (within the accuracy of the measurement) by as much as the weight does work: work transfers energy to the water.",
             "correct": true,
-            "feedback": "This is the result of Joule's experiment. The water was not heated; the weight did work, and the same warming could also have been produced by heating. So work and heat are two ways of transferring energy, and both are measured in joules. The small difference arises because some of the energy is transferred to the surroundings as heat. Joule himself measured in 1850 that about $4.16\\,\\text{J}$ of work warms one gram of water by one degree; the present value is $4.19\\,\\text{J}$."
+            "feedback": "This is the result of Joule's experiment. The water was not heated; the weight did work, and the same warming could also have been produced by heating. So work and heat are two ways of transferring energy, and both are measured in joules. The small difference is in the same direction in every row, so it probably arises because some of the energy is transferred to the surroundings as heat. Joule himself measured in 1850 that about $4.16\\,\\text{J}$ of work warms one gram of water by one degree; the present value is $4.19\\,\\text{J}$."
           },
           {
             "text": "The work turns into heat in the water, and the water stores this heat.",
@@ -241,7 +241,7 @@
           },
           {
             "text": "About half of the work ends up in the water.",
-            "feedback": "Compare the columns: 196 J and 194 J differ by only about one percent. Almost all of the work increases the internal energy of the water."
+            "feedback": "Compare the columns: $196\\,\\text{J}$ and $194\\,\\text{J}$ differ by only about one percent. Almost all of the work increases the internal energy of the water."
           }
         ]
       },
@@ -295,7 +295,7 @@
           "feedback": "Correct. $W = Fs$ holds for a constant force. When the force increases steadily from zero, the average force is half of the peak value, and the work is half of the student's result."
         },
         {
-          "text": "The distance should be 20 m, not 0.20 m.",
+          "text": "The distance should be $20\\,\\text{m}$, not $0.20\\,\\text{m}$.",
           "feedback": "The spring was stretched 20 cm, and $20\\,\\text{cm} = 0.20\\,\\text{m}$. The unit conversion is correct."
         },
         {
@@ -310,7 +310,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "An electric scooter travels at a steady 5.0 m/s. The motor pushes the scooter with a 48 N force in the direction of motion, which cancels friction and air resistance. How large is the power of the motor? Give your answer in watts.",
+      "prompt": "An electric scooter travels at a steady $5.0\\,\\text{m/s}$. The motor pushes the scooter with a 48 N force in the direction of motion, which cancels friction and air resistance. How large is the power of the motor? Give your answer in watts.",
       "answer": 240,
       "unit": "W",
       "tolerance": 0.02,
@@ -361,11 +361,37 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Carrying and work",
+      "prompt": "You lift a crate that weighs $98.1\\,\\text{N}$ upwards $1.0\\,\\text{m}$ at a steady speed. Then you carry it $5.0\\,\\text{m}$ horizontally at a steady speed. How much work does your supporting force do in total?",
+      "choices": [
+        {
+          "text": "About $98\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Correct. In the lift the force is upwards and the motion is upwards, so $W = G h = 98.1\\,\\text{N} \\cdot 1.0\\,\\text{m} \\approx 98\\,\\text{J}$. When carrying horizontally, the supporting force is vertical and the motion is horizontal, so the force is perpendicular to the motion and does no work."
+        },
+        {
+          "text": "About $590\\,\\text{J}$.",
+          "feedback": "You multiplied the force by the whole distance, $98.1\\,\\text{N} \\cdot 6.0\\,\\text{m} \\approx 590\\,\\text{J}$. Work is the product of the force and the distance moved in the direction of the force. Over the horizontal distance the force is not in the direction of motion, so its contribution is zero."
+        },
+        {
+          "text": "About $490\\,\\text{J}$, because carrying is harder than lifting.",
+          "feedback": "Getting tired is not work in the physics sense. When carrying horizontally, the supporting force is perpendicular to the motion, so the work is zero even though the muscles get tired. The value $490\\,\\text{J}$ would be $98.1\\,\\text{N} \\cdot 5.0\\,\\text{m}$."
+        },
+        {
+          "text": "$0\\,\\text{J}$, because the speed of the crate does not change.",
+          "feedback": "The work done by a force does not depend on whether the speed changes. In the lift the supporting force and the displacement point in the same direction, so the force does positive work, $98\\,\\text{J}$. Only over the horizontal part is the work zero."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Graph and calculation",
-      "prompt": "In an $(s, F)$ graph the force in the direction of motion is 30 N from 0 to 4.0 m and then falls steadily to zero from 4.0 to 8.0 m. How much work does the force do over the whole 8.0 m? Give your answer in joules.",
+      "title": "3. Graph and calculation",
+      "prompt": "In an $(s, F)$ graph the force in the direction of motion is 30 N from 0–$4.0\\,\\text{m}$ and then falls steadily to zero from 4.0–$8.0\\,\\text{m}$. How much work does the force do over the whole $8.0\\,\\text{m}$? Give your answer in joules.",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02,
@@ -385,13 +411,13 @@
         }
       ],
       "optional": true,
-      "solution": "**Given:** force $F = 30\\,\\text{N}$ (in the direction of motion) constant over the distance $s_1 = 4.0\\,\\text{m}$ (0–4.0 m); then the force falls steadily to zero over the distance $s_2 = 4.0\\,\\text{m}$ (4.0–8.0 m)\n\n**Find:** work $W$ done over the whole $8.0\\,\\text{m}$ in joules\n\n**Principle:** The force changes, so the formula $W = F s$ does not apply to the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the part falling steadily to zero is a triangle.\n\n**Reading the graph:** The graph has a horizontal segment at the height $30\\,\\text{N}$ from $0\\ldots 4.0\\,\\text{m}$ and, continuing from it, a straight segment down to zero from $4.0\\ldots 8.0\\,\\text{m}$. The rectangle has height $30\\,\\text{N}$ and width $4.0\\,\\text{m}$. The triangle has height $30\\,\\text{N}$ and base $4.0\\,\\text{m}$.\n\n**Formula:** $W = A_\\text{rectangle} + A_\\text{triangle}$, so\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Conversions:** The force is in newtons and the distances in metres, so no conversions are needed: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Substitution:** $W = 30\\,\\text{N} \\cdot 4.0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Answer:** $180\\,\\text{J}$, two significant figures like the given values $30\\,\\text{N}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** The average force is $\\tfrac{180\\,\\text{J}}{8.0\\,\\text{m}} = 22.5\\,\\text{N}$, which lies between the peak value $30\\,\\text{N}$ and zero. The work is less than $30\\,\\text{N} \\cdot 8.0\\,\\text{m} = 240\\,\\text{J}$ and greater than the rectangle alone, $120\\,\\text{J}$, because the force is not zero over the latter distance."
+      "solution": "**Given:** force $F = 30\\,\\text{N}$ (in the direction of motion) constant over the distance $s_1 = 4.0\\,\\text{m}$ (0–$4.0\\,\\text{m}$); then the force falls steadily to zero over the distance $s_2 = 4.0\\,\\text{m}$ (4.0–$8.0\\,\\text{m}$)\n\n**Find:** work $W$ done over the whole $8.0\\,\\text{m}$ in joules\n\n**Principle:** The force changes, so the formula $W = F s$ does not apply to the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the part falling steadily to zero is a triangle.\n\n**Reading the graph:** The graph has a horizontal segment at the height $30\\,\\text{N}$ from $0\\ldots 4.0\\,\\text{m}$ and, continuing from it, a straight segment down to zero from $4.0\\ldots 8.0\\,\\text{m}$. The rectangle has height $30\\,\\text{N}$ and width $4.0\\,\\text{m}$. The triangle has height $30\\,\\text{N}$ and base $4.0\\,\\text{m}$.\n\n**Formula:** $W = A_\\text{rectangle} + A_\\text{triangle}$, so\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Conversions:** The force is in newtons and the distances in metres, so no conversions are needed: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Substitution:** $W = 30\\,\\text{N} \\cdot 4.0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Answer:** $180\\,\\text{J}$, two significant figures like the given values $30\\,\\text{N}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** The average force is $\\tfrac{180\\,\\text{J}}{8.0\\,\\text{m}} = 22.5\\,\\text{N}$, which lies between the peak value $30\\,\\text{N}$ and zero. The work is less than $30\\,\\text{N} \\cdot 8.0\\,\\text{m} = 240\\,\\text{J}$ and greater than the rectangle alone, $120\\,\\text{J}$, because the force is not zero over the latter distance."
     },
     {
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "prompt": "Explain in your own words why the motor of a lift does the same work regardless of the lifting speed, but needs a greater power for a faster lift. Use the concepts work and power, and units.",
       "criteria": [
         "I say that the work $W = Fs$ depends on the lifting force and the lifting height, not on time.",
@@ -406,7 +432,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer them yourself first and only then open the answer."
+      "text": "Finally, one quick question. Answer it yourself first and only then open the answer."
     }
   ]
 }

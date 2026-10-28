@@ -17,5 +17,6 @@
  "sisälle": "indoors",
  "leveys kuvaa tehoa": "width shows power",
  "(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.": "(V, p) graph of a gas expanding at constant pressure: the pressure p stays constant while the volume grows from V_1 to V_2, so the graph is a horizontal line segment, and an arrow shows the direction of the expansion. The shaded rectangle between the segment and the V axis, whose width is the change in volume ΔV and whose height is p, is the work done by the gas W_g = p ΔV. Schematic diagram.",
- "kaasu laajenee": "gas expands"
+ "kaasu laajenee": "gas expands",
+ "Kuvaaja mittakaavassa: sylinterissä olevan kaasun paine p tilavuuden V funktiona. Paine pysyy vakiona, kun kaasu laajenee: kuvaaja on vaakasuora jana pisteestä (1,0 l; 250 kPa) pisteeseen (4,0 l; 250 kPa), ja nuoli osoittaa laajenemisen suuntaa. Ruudukon väli on 1,0 l ja 50 kPa.": "Graph to scale: the pressure p of the gas in a cylinder as a function of the volume V. The pressure stays constant while the gas expands: the graph is a horizontal line segment from the point (1.0 l; 250 kPa) to the point (4.0 l; 250 kPa), and an arrow shows the direction of the expansion. The grid spacing is 1.0 l and 50 kPa."
 }

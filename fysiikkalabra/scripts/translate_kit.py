@@ -49,8 +49,8 @@ def walk(o, keys, path=(), key=None, parent=None):
         for k, v in o.items(): yield from walk(v, keys, path + (k,), k, check_i18n.value_words(key, parent))
     elif isinstance(o, list):
         for i, v in enumerate(o): yield from walk(v, keys, path + (i,), key, parent)
-    elif isinstance(o, str) and o.strip() and not re.fullmatch(r"[a-z0-9_-]+", o) and \
-            (check_i18n.is_text(key, o, parent) if keys is TEXT_KEYS else key in keys): yield path, o   # not ids
+    elif isinstance(o, str) and o.strip() and (key == "glossary" or not re.fullmatch(r"[a-z0-9_-]+", o)) and \
+            (check_i18n.is_text(key, o, parent) if keys is TEXT_KEYS else key in keys): yield path, o   # not ids (a glossary word may look like one)
 
 
 def follow(fi, old, path):

@@ -11,7 +11,7 @@
     {
       "id": "fy3-2-L1-02",
       "level": 1,
-      "text": "Kirjahylly painaa 150 N. Hylly nostetaan hitaasti lattialta 1,2 m:n korkeuteen. Kuinka suuren työn nostovoima tekee?",
+      "text": "Kirjahylly painaa 150 N. Hylly nostetaan hitaasti lattialta $1{,}2\\,\\text{m}$:n korkeuteen. Kuinka suuren työn nostovoima tekee?",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-2-L1-03",
       "level": 1,
-      "text": "Hissin moottori tekee 36 kJ:n työn 12 sekunnissa. Mikä on moottorin teho?",
+      "text": "Hissin moottori tekee $36\\,\\text{kJ}$:n työn 12 sekunnissa. Mikä on moottorin teho?",
       "answer": 3.0,
       "unit": "kW",
       "tolerance": 0.02
@@ -27,15 +27,16 @@
     {
       "id": "fy3-2-L1-04",
       "level": 1,
-      "text": "Kelkkaa vedetään 6,0 m:n matka. Vetävä voima on koko matkalla 35 N ja liikkeen suuntainen. Siksi $(s, F)$-kuvaaja on vaakasuora jana. Laske voiman tekemä työ kuvaajan pinta-alana.",
-      "answer": 210,
+      "text": "Kuvaajassa on kelkkaa vetävän voiman suuruus kuljetun matkan funktiona. Voima on liikkeen suuntainen. Laske voiman tekemä kokonaistyö kuvaajan pinta-alana.",
+      "figure": "fy3-2/pull-steps",
+      "answer": 190,
       "unit": "J",
       "tolerance": 0.02
     },
     {
       "id": "fy3-2-L1-05",
       "level": 1,
-      "text": "Hiihtäjä vetää pulkkaa tasaisella 3,0 m/s:n nopeudella. Vetävä voima on 20 N ja liikkeen suuntainen. Mikä on vetävän voiman teho?",
+      "text": "Hiihtäjä vetää pulkkaa tasaisella $3{,}0\\,\\text{m/s}$:n nopeudella. Vetävä voima on 20 N ja liikkeen suuntainen. Mikä on vetävän voiman teho?",
       "answer": 60,
       "unit": "W",
       "tolerance": 0.02
@@ -45,7 +46,7 @@
     {
       "id": "fy3-2-L2-01",
       "level": 2,
-      "text": "Traktori vetää kuormaa liikkeen suuntaisella 1,5 kN:n voimalla. Traktori tekee 45 kJ:n työn. Kuinka pitkän matkan kuorma siirtyy?",
+      "text": "Traktori vetää kuormaa liikkeen suuntaisella 1,5 kN:n voimalla. Traktori tekee $45\\,\\text{kJ}$:n työn. Kuinka pitkän matkan kuorma siirtyy?",
       "answer": 30,
       "unit": "m",
       "tolerance": 0.02
@@ -53,7 +54,7 @@
     {
       "id": "fy3-2-L2-02",
       "level": 2,
-      "text": "Vesipumpun teho on 1,5 kW. Kuinka suuren työn pumppu tekee 4,0 minuutissa? Anna vastaus kilojouleina.",
+      "text": "Vesipumpun teho on $1{,}5\\,\\text{kW}$. Kuinka suuren työn pumppu tekee 4,0 minuutissa? Anna vastaus kilojouleina.",
       "answer": 360,
       "unit": "kJ",
       "tolerance": 0.02
@@ -61,7 +62,7 @@
     {
       "id": "fy3-2-L2-03",
       "level": 2,
-      "text": "Nosturi nostaa 850 kg:n betonielementin hitaasti 30 m:n korkeuteen. Kuinka suuren työn nostovoima tekee? Anna vastaus kilojouleina.",
+      "text": "Nosturi nostaa $850\\,\\text{kg}$:n betonielementin hitaasti $30\\,\\text{m}$:n korkeuteen. Kuinka suuren työn nostovoima tekee? Anna vastaus kilojouleina.",
       "answer": 250,
       "unit": "kJ",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy3-2-L2-04",
       "level": 2,
-      "text": "Vaunua työnnetään liikkeen suuntaisella voimalla. Voima on ensin 10 N matkalla 0–2,0 m. Sen jälkeen voima kasvaa tasaisesti 10 N:sta 30 N:iin matkalla 2,0–6,0 m. Laske voiman tekemä kokonaistyö $(s, F)$-kuvaajan pinta-alana.",
+      "text": "Vaunua työnnetään liikkeen suuntaisella voimalla. Aluksi voima on 10 N matkalla $0\\text{–}2{,}0\\,\\text{m}$. Sen jälkeen voima kasvaa tasaisesti 10 N:sta 30 N:iin matkalla $2{,}0\\text{–}6{,}0\\,\\text{m}$. Laske voiman tekemä kokonaistyö $(s, F)$-kuvaajan pinta-alana.",
       "answer": 100,
       "unit": "J",
       "tolerance": 0.02
@@ -79,7 +80,7 @@
     {
       "id": "fy3-2-L3-01",
       "level": 3,
-      "text": "Laatikkoa työnnetään liikkeen suuntaisella voimalla. Voima kasvaa tasaisesti nollasta 40 N:iin matkalla 0–0,50 m. Sitten voima pysyy 40 N:ssä matkalla 0,50–1,5 m. Lopuksi voima pienenee tasaisesti nollaan matkalla 1,5–2,0 m. Mikä on voiman matkan suhteen keskimääräinen suuruus koko 2,0 m:n matkalla? Vihje: laske ensin kokonaistyö kuvaajan pinta-alana.",
+      "text": "Laatikkoa työnnetään liikkeen suuntaisella voimalla. Voima kasvaa tasaisesti nollasta 40 N:iin matkalla $0\\text{–}0{,}50\\,\\text{m}$. Sitten voima pysyy 40 N:ssä matkalla $0{,}50\\text{–}1{,}5\\,\\text{m}$. Lopuksi voima pienenee tasaisesti nollaan matkalla $1{,}5\\text{–}2{,}0\\,\\text{m}$. Mikä on voiman matkan suhteen keskimääräinen suuruus koko $2{,}0\\,\\text{m}$:n matkalla? Vihje: laske ensin kokonaistyö kuvaajan pinta-alana.",
       "answer": 30,
       "unit": "N",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-2-L3-02",
       "level": 3,
-      "text": "Joulen kokeessa 2,0 kg:n paino putoaa 1,5 m ja pyörittää siipipyörää vedessä. Koe toistetaan 20 kertaa. Joka kerta paino nostetaan takaisin ylös. Oleta, että paino menettää pudotessaan nostotyön suuruisen energian. Oleta myös, että kaikki tämä energia jää veteen. Kuinka paljon veden sisäenergia kasvaa?",
+      "text": "Joulen kokeessa $2{,}0\\,\\text{kg}$:n paino putoaa $1{,}5\\,\\text{m}$ ja pyörittää siipipyörää vedessä. Koe toistetaan 20 kertaa. Joka kerta paino nostetaan takaisin ylös. Oleta, että paino menettää pudotessaan nostotyön suuruisen energian. Oleta myös, että kaikki tämä energia jää veteen. Kuinka paljon veden sisäenergia kasvaa?",
       "answer": 590,
       "unit": "J",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-2-L3-03",
       "level": 3,
-      "text": "Mökin aurinkopaneeli antaa auringonpaisteessa 180 W:n tehon. Energian pitää riittää 1000 kg:n veden nostamiseen 50 m:n korkeuteen. Kuinka monta minuuttia auringon pitää paistaa paneeliin? Oleta, että kaikki energia menee veden nostamiseen.",
+      "text": "Mökin aurinkopaneeli antaa auringonpaisteessa $180\\,\\text{W}$:n tehon. Energian pitää riittää $1000\\,\\text{kg}$:n veden nostamiseen $50\\,\\text{m}$:n korkeuteen. Kuinka monta minuuttia auringon pitää paistaa paneeliin? Oleta, että kaikki energia menee veden nostamiseen.",
       "answer": 45,
       "unit": "min",
       "tolerance": 0.02

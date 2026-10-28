@@ -16,5 +16,6 @@
  "puristus": "puristus",
  "laajeneminen": "laajeneminen",
  "ympäristö tekee työn": "ympäristö tekee työn",
- "kaasu tekee työn": "kaasu tekee työn"
+ "kaasu tekee työn": "kaasu tekee työn",
+ "(s,F)-kuvaaja mittakaavassa: männän ilmaan kohdistama voima F newtoneina männän kulkeman matkan s funktiona puristuksen aikana. Voima kasvaa suoraviivaisesti pisteestä (0 m; 200 N) pisteeseen (0,20 m; 400 N). Ruudukon väli on 0,05 m ja 50 N.": "(s,F)-kuvaaja mittakaavassa: männän ilmaan kohdistama voima F newtoneina männän kulkeman matkan s funktiona puristuksen aikana. Voima kasvaa suoraviivaisesti. Se alkaa pisteestä (0 m; 200 N) ja päättyy pisteeseen (0,20 m; 400 N). Ruudukon väli on 0,05 m ja 50 N."
 }

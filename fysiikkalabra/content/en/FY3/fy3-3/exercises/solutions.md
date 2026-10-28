@@ -16,7 +16,7 @@
 **Conversions:** The temperature in kelvins is converted to degrees Celsius with this formula; no other unit conversions are needed.
 **Substitution:** $\theta = 350 - 273.15 = 76.85\,{}^\circ\text{C}$
 **Answer:** $77\,{}^\circ\text{C}$, in whole degrees, because $350\,\text{K}$ is given in whole kelvins.
-**Reasonableness:** The boiling point of water is $373\,\text{K}$, or $100\,{}^\circ\text{C}$, and $350\,\text{K}$ is $23\,\text{K}$ below it, so the estimate is $100 - 23 = 77\,{}^\circ\text{C}$. The result is also above zero, because $350\,\text{K} > 273\,\text{K}$. Check by converting back: $76.85 + 273.15 = 350$.
+**Reasonableness:** The boiling point of water at normal pressure is $373\,\text{K}$, or $100\,{}^\circ\text{C}$, and $350\,\text{K}$ is $23\,\text{K}$ below it, so the estimate is $100 - 23 = 77\,{}^\circ\text{C}$. The result is also above zero, because $350\,\text{K} > 273\,\text{K}$. Check by converting back: $76.85 + 273.15 = 350$.
 
 ## fy3-3-L1-03
 **Given:** $T = 77.4\,\text{K}$
@@ -69,20 +69,20 @@
 **Reasonableness:** The temperature $35\,{}^\circ\text{C}$ is $35\,\%$ of the way from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$, so the pressure must be $35\,\%$ of the way through the range $90.0\ldots123\,\text{kPa}$: $90.0 + 0.35 \cdot 33 = 101.55\,\text{kPa}$. The result is between the pressures of the points and below the mean of the range, $106.5\,\text{kPa}$.
 
 ## fy3-3-L2-03
-**Given:** $(\theta_1,\, p_1) = (10\,{}^\circ\text{C},\ 110\,\text{kPa})$ and $(\theta_2,\, p_2) = (80\,{}^\circ\text{C},\ 137\,\text{kPa})$; the pressure depends linearly on the temperature
-**Find:** pressure $p$ at the temperature $\theta = -50\,{}^\circ\text{C}$ in kilopascals
-**Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. When the points are placed on a straight line, the line can be continued outside the measured range, that is, extrapolated.
-**Reading the graph:** On the graph the points $(10\,{}^\circ\text{C};\ 110\,\text{kPa})$ and $(80\,{}^\circ\text{C};\ 137\,\text{kPa})$ are on the same line. The line is continued to the left to $-50\,{}^\circ\text{C}$, which is $60\,{}^\circ\text{C}$ to the left of the point $\theta_1$, and the pressure is read there.
-**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$, so $p = p_1 + \dfrac{p_2 - p_1}{\theta_2 - \theta_1}\,(\theta - \theta_1)$
+**Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the pressure depends linearly on the temperature, also outside the measured range
+**Find:** pressure $p$ at the temperature $\theta = -100\,{}^\circ\text{C}$ in kilopascals
+**Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are on a straight line, so the line can be continued outside the measured range, that is, extrapolated.
+**Reading the graph:** The data points are at temperatures $0\ldots 100\,{}^\circ\text{C}$. The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$. From these two points the slope of the line is calculated, and the line is continued to the left to the temperature $-100\,{}^\circ\text{C}$. If you draw the line by eye, you get a value of $45$–$50\,\text{kPa}$, which is accepted.
+**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$
 **Conversions:** No conversions are needed: the pressures are in kilopascals, and the temperature differences are the same in degrees Celsius and in kelvins.
-**Substitution:** $k = \dfrac{(137 - 110)\,\text{kPa}}{(80 - 10)\,{}^\circ\text{C}} = 0.385714\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $p = 110\,\text{kPa} + 0.385714\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-50 - 10)\,{}^\circ\text{C} = 110\,\text{kPa} - 23.14\,\text{kPa} = 86.86\,\text{kPa}$
-**Answer:** $87\,\text{kPa}$. The pressure difference $\Delta p = 137 - 110 = 27\,\text{kPa}$ has two figures, so $k = 0.39\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and $k\,\Delta\theta \approx 23\,\text{kPa}$; the difference $110 - 23 = 87\,\text{kPa}$ is rounded to whole kilopascals (a difference of readings has the figures of the difference).
-**Reasonableness:** When the temperature is below the measured range, the pressure must be lower than the lowest measured value, $110\,\text{kPa}$, and it is, but clearly above zero. An independent check: if the pressure is proportional to the temperature in kelvins, $p \approx 110\,\text{kPa} \cdot \dfrac{223.15\,\text{K}}{283.15\,\text{K}} = 86.7\,\text{kPa}$, which is almost the same.
+**Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $p = 75\,\text{kPa} + 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} = 75\,\text{kPa} - 27.5\,\text{kPa} = 47.5\,\text{kPa}$
+**Answer:** $p \approx 48\,\text{kPa}$, two significant figures, because the pressure difference $27.5\,\text{kPa}$ read from the graph is a three-figure value but the reading accuracy is about $1\,\text{kPa}$.
+**Reasonableness:** The temperature is below the measured range, so the pressure must be lower than the lowest measured value, $75\,\text{kPa}$, but clearly above zero. An independent check: if the pressure is proportional to the temperature in kelvins, $p \approx 75\,\text{kPa} \cdot \dfrac{173.15\,\text{K}}{273.15\,\text{K}} = 47.5\,\text{kPa}$, which is the same.
 
 ## fy3-3-L2-04
 **Given:** $\theta_\text{night} = -173\,{}^\circ\text{C}$ and $\theta_\text{day} = 127\,{}^\circ\text{C}$
 **Find:** ratio of the temperatures in kelvins $\dfrac{T_\text{day}}{T_\text{night}}$
-**Principle:** The ratio is asked for the temperatures in kelvins, because only the zero of the Kelvin scale is absolute zero, and the kinetic energy of the particles is proportional to the temperature in kelvins. The ratio of Celsius temperatures has no physical meaning.
+**Principle:** The ratio is asked for the temperatures in kelvins, because only the zero of the Kelvin scale is absolute zero, the lowest possible temperature. The ratio of Celsius temperatures has no physical meaning.
 **Formula:** $T = \theta + 273.15$, and the ratio $\dfrac{T_\text{day}}{T_\text{night}} = \dfrac{\theta_\text{day} + 273.15}{\theta_\text{night} + 273.15}$
 **Conversions:** Both temperatures are converted to kelvins by adding $273.15$: $T_\text{night} = -173 + 273.15 = 100.15\,\text{K}$ and $T_\text{day} = 127 + 273.15 = 400.15\,\text{K}$.
 **Substitution:** $\dfrac{T_\text{day}}{T_\text{night}} = \dfrac{400.15\,\text{K}}{100.15\,\text{K}} = 3.9955$
@@ -112,7 +112,7 @@
 ## fy3-3-L3-03
 **Given:** $\theta_1 = 20.0\,{}^\circ\text{C}$ and average kinetic energy $E_2 = \tfrac{1}{2}E_1$
 **Find:** final temperature in degrees Celsius, $\theta_2$
-**Principle:** The average kinetic energy of the particles is directly proportional to the temperature in kelvins, because the zero of the Kelvin scale is absolute zero, where the kinetic energy is at its smallest (zero in the model). When the energy is halved, the temperature in kelvins is also halved. You must not halve the Celsius temperature.
+**Principle:** According to the task, the average kinetic energy of the particles of the gas is directly proportional to the temperature in kelvins; this is so in a dilute gas whose particles interact with each other only when they collide. The proportionality applies to the temperature in kelvins, because only the zero of the Kelvin scale is absolute zero. When the energy is halved, the temperature in kelvins is also halved. You must not halve the Celsius temperature.
 **Formula:** $\dfrac{E_2}{E_1} = \dfrac{T_2}{T_1} = \dfrac{1}{2}$, so $T_2 = \dfrac{T_1}{2}$, and $\theta_2 = T_2 - 273.15$
 **Conversions:** The initial temperature is converted to kelvins: $T_1 = 20.0 + 273.15 = 293.15\,\text{K}$. At the end $T_2$ is converted back to degrees Celsius by subtracting $273.15$.
 **Substitution:** $T_2 = \dfrac{293.15\,\text{K}}{2} = 146.575\,\text{K}$, and $\theta_2 = 146.575 - 273.15 = -126.575\,{}^\circ\text{C}$

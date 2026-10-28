@@ -9,5 +9,6 @@
  "patsaan paino": "column's weight",
  "paine pohjalla": "bottom pressure",
  "Kuvaaja mittakaavassa: veden paine p kilopascaleina syvyyden h funktiona, kun h on 0–10 m. Paine on nouseva suora: pinnalla paine on ilmanpaine 101 kPa ja 10 metrin syvyydessä noin 199 kPa. Suoran ja katkoviivan väli on hydrostaattinen paine ρgh.": "Graph to scale: the pressure p of water in kilopascals as a function of the depth h for h from 0 to 10 m. The pressure is a rising straight line: at the surface the pressure is atmospheric pressure, 101 kPa, and at a depth of 10 metres about 199 kPa. The gap between the line and the dashed line is the hydrostatic pressure ρgh.",
- "ilmanpaine": "air pressure"
+ "ilmanpaine": "air pressure",
+ "Kuvaaja mittakaavassa: kahden nesteen paine p kilopascaleina syvyyden h funktiona, kun h on 0–10 m. Molemmissa paine pinnalla on 100 kPa. Neste A: suora kulkee pisteiden (0 m; 100 kPa), (5 m; 150 kPa) ja (10 m; 200 kPa) kautta. Neste B: suora kulkee pisteiden (0 m; 100 kPa), (5 m; 175 kPa) ja (10 m; 250 kPa) kautta. Ruudukon väli on 1 m ja 25 kPa.": "Graph to scale: the pressure p of two liquids in kilopascals as a function of the depth h for h from 0 to 10 m. In both, the pressure at the surface is 100 kPa. Liquid A: the line passes through the points (0 m; 100 kPa), (5 m; 150 kPa) and (10 m; 200 kPa). Liquid B: the line passes through the points (0 m; 100 kPa), (5 m; 175 kPa) and (10 m; 250 kPa). The grid spacing is 1 m and 25 kPa."
 }

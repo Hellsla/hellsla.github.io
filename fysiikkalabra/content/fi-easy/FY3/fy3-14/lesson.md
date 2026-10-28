@@ -43,7 +43,7 @@
 </svg>
 
 ## Ydinajatus
-Eristettyyn astiaan laitetaan lämmintä vettä ja jäätä. Lämpöä siirtyy vedestä jäähän, kunnes lämpötilat ovat samat. Silloin astiassa on lämpötasapaino (lämpötilat eivät enää muutu). Energia säilyy, joten veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jään vastaanottama energia ei kuitenkaan vain nosta lämpötilaa. Jää lämpenee ensin 0 °C:seen ja sulaa sitten. Sulamisen aikana lämpötila pysyy vakiona. Silti jokainen kilogramma jäätä ottaa energiaa 334 kJ. Sama energia nostaisi kilogramman vettä lähes 80 K.
+Eristettyyn astiaan laitetaan lämmintä vettä ja jäätä. Lämpöä siirtyy vedestä jäähän, kunnes lämpötilat ovat samat. Silloin astiassa on lämpötasapaino (lämpötilat eivät enää muutu). Energia säilyy, joten veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jään vastaanottama energia ei kuitenkaan vain nosta lämpötilaa. Jää lämpenee ensin $0\,{}^\circ\text{C}$:seen ja sulaa sitten. Sulamisen aikana lämpötila pysyy vakiona. Silti jokainen kilogramma jäätä ottaa energiaa $334\,\text{kJ}$. Sama energia nostaisi kilogramman vettä lähes $80\,\text{K}$.
 
 <svg viewBox="0 0 600 344" role="img" aria-label="Kaavakuva ennen ja jälkeen: eristetyssä astiassa on aluksi 0,30 kg vettä lämpötilassa 20 °C ja 0,10 kg jäätä lämpötilassa 0 °C. Lämpöä Q siirtyy vedestä jäähän. Tasapainossa lämpömittari näyttää 0 °C, vettä on 0,375 kg ja jäätä on jäljellä enää 0,025 kg. Jääpalojen yhteenlaskettu pinta-ala on mittakaavassa jään massaan nähden." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy314-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy314-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -98,16 +98,17 @@ Eristettyyn astiaan laitetaan lämmintä vettä ja jäätä. Lämpöä siirtyy v
   <foreignObject x="353.0" y="309" width="244" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{jää } 0{,}025\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
 </svg>
 
-Siksi lopputilan lämpötilaa ei saa alkulämpötilojen keskiarvona. Lopputilanteita on kolme.
+Siksi lopputilan lämpötilaa ei saa alkulämpötilojen keskiarvona. Lopputilanteita on neljä.
 
-- Veden lämpö riittää sulattamaan kaiken jään. Silloin seos lämpenee yli 0 °C:n.
-- Veden lämpö ei riitä. Silloin astiaan jää sekä jäätä että vettä. Niin kauan kuin kumpaakin on, lämpötila on tasan 0 °C.
-- Jää on hyvin kylmää ja vettä on vähän. Silloin vesi voi jopa jäätyä.
+- Vesi voi jäähtyessään luovuttaa tarpeeksi lämpöä kaiken jään sulattamiseen. Silloin kaikki jää sulaa, ja seoksen lämpötila on vähintään $0\,{}^\circ\text{C}$. Lämpötila on tasan $0\,{}^\circ\text{C}$, jos lämpö riittää juuri ja juuri. Muuten lämpötila on yli $0\,{}^\circ\text{C}$:n.
+- Veden lämpö ei riitä. Silloin astiaan jää sekä jäätä että vettä. Niin kauan kuin kumpaakin on, lämpötila on tasan $0\,{}^\circ\text{C}$.
+- Jää on hyvin kylmää ja vettä on vähän. Silloin osa vedestä tai kaikki vesi jäätyy.
+- Vasta kun kaikki vesi on jäätynyt, lämpötila on alle $0\,{}^\circ\text{C}$:n.
 
 Ratkaisu alkaa aina samasta vertailusta. Lasketaan, paljonko lämpöä vesi voi luovuttaa. Lasketaan myös, paljonko jää tarvitsee sulaakseen kokonaan.
 
 ## Kaava: Lämpötasapaino ja sulaminen
-Eristetyssä astiassa on vettä ja jäätä. Veden massa on $m_\text{v}$ ja lämpötila $T_\text{v} > 0\,{}^\circ\text{C}$. Jään massa on $m_\text{j}$ ja lämpötila $T_\text{j} \le 0\,{}^\circ\text{C}$. Verrataan kahta lämpömäärää. Ensimmäinen on lämpömäärä, jonka vesi voi luovuttaa jäähtyessään 0 °C:seen. Toinen on lämpömäärä, jonka jää tarvitsee lämmetäkseen 0 °C:seen ja sulaakseen kokonaan:
+Eristetyssä astiassa on vettä ja jäätä. Veden massa on $m_\text{v}$ ja lämpötila $T_\text{v} > 0\,{}^\circ\text{C}$. Jään massa on $m_\text{j}$ ja lämpötila $T_\text{j} \le 0\,{}^\circ\text{C}$. Verrataan kahta lämpömäärää. Ensimmäinen on lämpömäärä, jonka vesi voi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen. Toinen on lämpömäärä, jonka jää tarvitsee lämmetäkseen $0\,{}^\circ\text{C}$:seen ja sulaakseen kokonaan:
 ```latex
 \begin{aligned}
 Q_\text{v} &= c_\text{v} m_\text{v} T_\text{v} \\
@@ -118,12 +119,12 @@ Merkinnät:
 
 - $Q_\text{v}$ on veden luovuttama lämpömäärä (J).
 - $c_\text{v}$ on veden ja $c_\text{j}$ jään ominaislämpökapasiteetti (J/(kg·K)).
-- $T_\text{v}$ on veden lämpötila celsiusasteina. Se on sama luku kuin lämpötilan muutos 0 °C:seen kelvineinä.
+- $T_\text{v}$ on veden lämpötila celsiusasteina. Se on sama luku kuin lämpötilan muutos $0\,{}^\circ\text{C}$:seen kelvineinä.
 - $Q_\text{j}$ on jään tarvitsema lämpömäärä (J).
 - $\Delta T_\text{j} = 0\,{}^\circ\text{C} - T_\text{j}$ on jään lämpötilan nousu (K).
 - $s$ on jään ominaissulamislämpö (J/kg).
 
-Kaavan ensimmäinen termi lämmittää jään 0 °C:seen. Toinen termi sulattaa jään.
+Kaavan ensimmäinen termi lämmittää jään $0\,{}^\circ\text{C}$:seen. Toinen termi sulattaa jään.
 
 <svg viewBox="0 0 600 392" role="img" aria-label="Energiataseen palkit mittakaavassa, kilojouleina: 0,30 kg vettä lämpötilassa 20 °C luovuttaa jäähtyessään 0 °C:seen 25.1 kJ. 0,10 kg jäätä lämpötilassa −10 °C tarvitsee lämpenemiseen 0 °C:seen 2.1 kJ ja sulamiseen 33.4 kJ eli yhteensä 35.5 kJ. Veden lämpö ei riitä: palkin vaalea osa kuvaa jäätä, joka ei ehdi sulaa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy314-heat2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -158,9 +159,9 @@ Kaavan ensimmäinen termi lämmittää jään 0 °C:seen. Toinen termi sulattaa 
 
 | Suure | Arvo |
 | --- | --- |
-| veden $c_\text{v}$ | 4190 J/(kg·K) |
-| jään $c_\text{j}$ | 2100 J/(kg·K) |
-| jään $s$ | 334 kJ/kg |
+| veden $c_\text{v}$ | $4190\,\text{J/(kg}\cdot\text{K)}$ |
+| jään $c_\text{j}$ | $2100\,\text{J/(kg}\cdot\text{K)}$ |
+| jään $s$ | $334\,\text{kJ/kg}$ |
 
 Jos $Q_\text{v} \ge Q_\text{j}$, kaikki jää sulaa. Silloin veden luovuttama lämpö kuluu jään lämmittämiseen ja sulattamiseen. Loput lämmittää koko vesimäärän $m_\text{v} + m_\text{j}$ lämpötilaan $T$. Energiatase on
 ```latex
@@ -174,13 +175,15 @@ Kaavassa vasen puoli on veden luovuttama lämpömäärä. Oikealla ovat jään l
 ```latex
 T = \frac{Q_\text{v} - Q_\text{j}}{c_\text{v} (m_\text{v} + m_\text{j})}
 ```
-Toinen mahdollisuus on, että $Q_\text{v} < Q_\text{j}$, mutta vesi riittää lämmittämään jään 0 °C:seen. Silloin kaikki jää ei ehdi sulaa. Astiassa on jäätä ja vettä yhtä aikaa, joten $T = 0\,{}^\circ\text{C}$. Sulaneen jään massa $m_\text{s}$ saadaan lämmöstä, joka jää jäljelle jään lämmittämisen jälkeen:
+Rajatapauksessa $Q_\text{v} = Q_\text{j}$ kaava antaa $T = 0\,{}^\circ\text{C}$. Silloin kaikki jää on juuri sulanut. Sulamisvesi ei kuitenkaan lämpene.
+
+Toinen mahdollisuus on, että $Q_\text{v} < Q_\text{j}$, mutta vesi riittää lämmittämään jään $0\,{}^\circ\text{C}$:seen. Silloin kaikki jää ei ehdi sulaa. Astiassa on jäätä ja vettä yhtä aikaa, joten $T = 0\,{}^\circ\text{C}$. Sulaneen jään massa $m_\text{s}$ saadaan lämmöstä, joka jää jäljelle jään lämmittämisen jälkeen:
 ```latex
 m_\text{s} = \frac{Q_\text{v} - c_\text{j} m_\text{j} \Delta T_\text{j}}{s}
 ```
-Jäljelle jäävän jään massa on $m_\text{j} - m_\text{s}$. Kuvaaja näyttää lopputilan lämpötilan. Lämpötila riippuu veden alkulämpötilasta. Vettä on 0,30 kg ja 0-asteista jäätä 0,10 kg. Niin kauan kuin veden lämpö ei riitä sulattamaan jäätä, lämpötila pysyy 0 °C:ssa. Sen jälkeen lämpötila nousee. Musta piste on ensimmäisen kuvan lasi, jossa vesi on 20-asteista.
+Jäljelle jäävän jään massa on $m_\text{j} - m_\text{s}$. Kuvaaja näyttää lopputilan lämpötilan. Lämpötila riippuu veden alkulämpötilasta. Vettä on $0{,}30\,\text{kg}$ ja 0-asteista jäätä $0{,}10\,\text{kg}$. Niin kauan kuin veden luovuttama lämpö ei riitä sulattamaan jäätä, lämpötila pysyy $0\,{}^\circ\text{C}$:ssa. Sen jälkeen lämpötila nousee. Musta piste on ensimmäisen kuvan lasi, jossa vesi on 20-asteista.
 
-<svg viewBox="0 0 600 394" role="img" aria-label="Kaavan kuvaaja: 0,30 kg veden ja 0,10 kg 0-asteisen jään lopputilan lämpötila T veden alkulämpötilan Tv funktiona. Kun Tv on enintään 26.6 °C, jäätä jää jäljelle ja T on 0 °C. Tämän jälkeen kaikki jää sulaa ja T nousee suoraviivaisesti, 40 °C:seen veden alkulämpötilassa 80 °C. Akselit on piirretty mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 394" role="img" aria-label="Kaavan kuvaaja: 0,30 kg veden ja 0,10 kg 0-asteisen jään lopputilan lämpötila T veden alkulämpötilan Tv funktiona. Kun Tv on alle 26,6 °C, jäätä jää jäljelle ja T on 0 °C. Rajalla kaikki jää juuri sulaa, ja T on yhä 0 °C. Tämän jälkeen kaikki jää sulaa ja T nousee suoraviivaisesti, 40 °C:seen veden alkulämpötilassa 80 °C. Akselit on piirretty mittakaavassa." style="max-width:100%;font-size:24px">
   <rect x="100" y="70" width="152.8" height="240" fill="#d0e6fb" fill-opacity="0.55"/>
   <line x1="100" y1="250.0" x2="560" y2="250.0" stroke="#e3dccb" stroke-width="1.5"/>
   <line x1="100" y1="190.0" x2="560" y2="190.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -214,10 +217,10 @@ Jäljelle jäävän jään massa on $m_\text{j} - m_\text{s}$. Kuvaaja näyttä�
   <foreignObject x="135.0" y="260.0" width="110" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{alun lasi}$</div></foreignObject>
 </svg>
 
-Kolmas mahdollisuus on, että $Q_\text{v}$ ei riitä edes jään lämmittämiseen 0 °C:seen. Silloin kylmä jää jäädyttää osan vedestä. Niin kauan kuin vettä jää, jäätä ja vettä on yhtä aikaa ja lämpötila on 0 °C. Vasta jos kaikki vesi jäätyy, jäämassa jäähtyy alle 0 °C:n. Sen lämpötila ratkaistaan samasta energiataseesta tason 3 tehtävässä.
+Kolmas mahdollisuus on, että $Q_\text{v}$ ei riitä edes jään lämmittämiseen $0\,{}^\circ\text{C}$:seen. Silloin kylmä jää jäädyttää osan vedestä. Niin kauan kuin vettä jää, jäätä ja vettä on yhtä aikaa ja lämpötila on $0\,{}^\circ\text{C}$. Vasta jos kaikki vesi jäätyy, jäämassa jäähtyy alle $0\,{}^\circ\text{C}$:n. Sen lämpötila ratkaistaan samasta energiataseesta tason 3 tehtävässä.
 
 ## Esimerkki
-Kalorimetrissä on 0,250 kg vettä. Veden lämpötila on 24,0 °C. Veteen pudotetaan 0,050 kg jäätä. Jään lämpötila on −8,0 °C. Sulaako kaikki jää? Mikä on kalorimetrin sisällön lämpötila lämpötasapainossa? Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta.
+Kalorimetrissä on $0{,}250\,\text{kg}$ vettä. Veden lämpötila on $24{,}0\,{}^\circ\text{C}$. Veteen pudotetaan $0{,}050\,\text{kg}$ jäätä. Jään lämpötila on $-8{,}0\,{}^\circ\text{C}$. Sulaako kaikki jää? Mikä on kalorimetrin sisällön lämpötila lämpötasapainossa? Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta.
 
 <!-- vaihe -->
 
@@ -225,11 +228,11 @@ Kalorimetrissä on 0,250 kg vettä. Veden lämpötila on 24,0 °C. Veteen pudote
 
 <!-- vaihe -->
 
-**Periaate.** Energia säilyy. Kalorimetri ei ota lämpöä, eikä lämpöä karkaa ympäristöön. Siksi veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jää lämpenee ensin 0 °C:seen. Sitten se sulaa vakiolämpötilassa. Lopuksi sulamisvesi lämpenee lopputilan lämpötilaan. Siksi on ensin tarkistettava, riittääkö veden luovuttama lämpö kaiken jään lämmittämiseen ja sulattamiseen. Jos riittää, jää sulaa kokonaan ja lämpötila nousee yli 0 °C:n.
+**Periaate.** Energia säilyy. Kalorimetri ei ota lämpöä, eikä lämpöä karkaa ympäristöön. Siksi veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jää lämpenee ensin $0\,{}^\circ\text{C}$:seen. Sitten se sulaa vakiolämpötilassa. Lopuksi sulamisvesi lämpenee lopputilan lämpötilaan. Siksi on ensin tarkistettava, riittääkö veden luovuttama lämpö kaiken jään lämmittämiseen ja sulattamiseen. Jos riittää, jää sulaa kokonaan. Silloin lopputilan lämpötila ei ole alle $0\,{}^\circ\text{C}$:n.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Vesi luovuttaa jäähtyessään 0 °C:seen lämpömäärän $Q_\text{v}$. Jää tarvitsee sulaakseen lämpömäärän $Q_\text{j}$. Kun $Q_\text{v} > Q_\text{j}$, ylijäämä lämmittää kaiken veden ($m_\text{v} + m_\text{j}$) lämpötilaan $T$:
+**Kaava ratkaistuna.** Vesi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen lämpömäärän $Q_\text{v}$. Jää tarvitsee sulaakseen lämpömäärän $Q_\text{j}$. Kun $Q_\text{v} > Q_\text{j}$, ylijäämä lämmittää kaiken veden ($m_\text{v} + m_\text{j}$) lämpötilaan $T$:
 ```latex
 \begin{aligned}
 &Q_\text{v} = c_\text{v} m_\text{v} T_\text{v} \\
@@ -264,14 +267,14 @@ Kalorimetrissä on 0,250 kg vettä. Veden lämpötila on 24,0 °C. Veteen pudote
 
 <!-- vaihe -->
 
-**Tulos.** Koska $Q_\text{v} = 25\,140\,\text{J} > Q_\text{j} = 17\,540\,\text{J}$, kaikki jää sulaa. Lopputilassa on 0,300 kg vettä lämpötilassa $6{,}0\,{}^\circ\text{C}$. Vastaus annetaan kahdella merkitsevällä numerolla. Jään massa $0{,}050\,\text{kg}$ tunnetaan vain kahden numeron tarkkuudella. Se määrää lämpömäärän $Q_\text{j} = 17\,540\,\text{J}$ tarkkuuden (sadat joulet). Erotus $Q_\text{v} - Q_\text{j} = 7600\,\text{J}$ on siis kahden numeron luku.
+**Tulos.** Koska $Q_\text{v} = 25\,140\,\text{J} > Q_\text{j} = 17\,540\,\text{J}$, kaikki jää sulaa. Lopputilassa on $0{,}300\,\text{kg}$ vettä lämpötilassa $6{,}0\,{}^\circ\text{C}$. Vastaus annetaan kahdella merkitsevällä numerolla. Jään massa $0{,}050\,\text{kg}$ tunnetaan vain kahden numeron tarkkuudella. Se määrää lämpömäärän $Q_\text{j} = 17\,540\,\text{J}$ tarkkuuden (sadat joulet). Erotus $Q_\text{v} - Q_\text{j} = 7600\,\text{J}$ on siis kahden numeron luku.
 
 <!-- vaihe -->
 
-**Järkevyys.** Tulos on alkulämpötilojen −8,0 °C ja 24,0 °C välissä. Se on kuitenkin niiden puolivälin 8,0 °C alapuolella, vaikka vettä on viisinkertainen määrä. Jään sulaminen painaa tulosta alas. Jos sulamislämpö unohdettaisiin, tulokseksi tulisi noin 19 °C. Sulaminen vie siis kaksi kolmasosaa veden luovuttamasta lämmöstä (16,7 kJ lämmöstä 25,1 kJ). Energiatase täsmää. Vesi luovuttaa yhteensä $4190 \cdot 0{,}250 \cdot (24{,}0 - 6{,}05) \approx 18{,}8\,\text{kJ}$. Jää vastaanottaa $840 + 16\,700 + 4190 \cdot 0{,}050 \cdot 6{,}05 \approx 18{,}8\,\text{kJ}$. Kokeile samoja arvoja simulaatiossa.
+**Järkevyys.** Tulos on alkulämpötilojen $-8{,}0\,{}^\circ\text{C}$ ja $24{,}0\,{}^\circ\text{C}$ välissä. Se on kuitenkin niiden puolivälin $8{,}0\,{}^\circ\text{C}$ alapuolella, vaikka vettä on viisinkertainen määrä. Jään sulaminen painaa tulosta alas. Jos sulamislämpö unohdettaisiin, tulokseksi tulisi noin $19\,{}^\circ\text{C}$. Sulaminen vie siis kaksi kolmasosaa veden luovuttamasta lämmöstä ($16{,}7\,\text{kJ}$ lämmöstä $25{,}1\,\text{kJ}$). Energiatase täsmää. Vesi luovuttaa yhteensä $4190 \cdot 0{,}250 \cdot (24{,}0 - 6{,}05) \approx 18{,}8\,\text{kJ}$. Jää vastaanottaa $840 + 16\,700 + 4190 \cdot 0{,}050 \cdot 6{,}05 \approx 18{,}8\,\text{kJ}$. Kokeile samoja arvoja simulaatiossa.
 
 ## Yleinen virhekäsitys
-Moni laskee lopputilan lämpötilan väärin. Hän käsittelee jäätä kuin kylmää vettä. Silloin sulamislämpö unohtuu. Sekoitetaan 0,30 kg vettä (20 °C) ja 0,10 kg jäätä (0 °C). Tällä tavalla saataisiin
+Moni laskee lopputilan lämpötilan väärin. Hän käsittelee jäätä kuin kylmää vettä. Silloin sulamislämpö unohtuu. Sekoitetaan $0{,}30\,\text{kg}$ vettä ($20\,{}^\circ\text{C}$) ja $0{,}10\,\text{kg}$ jäätä ($0\,{}^\circ\text{C}$). Tällä tavalla saataisiin
 ```latex
 \begin{aligned}
 T &= \frac{c_\text{v} m_\text{v} T_\text{v} + c_\text{v} m_\text{j} T_\text{j}}{c_\text{v} (m_\text{v} + m_\text{j})} \\
@@ -279,11 +282,11 @@ T &= \frac{c_\text{v} m_\text{v} T_\text{v} + c_\text{v} m_\text{j} T_\text{j}}{
 &= 15\,{}^\circ\text{C}
 \end{aligned}
 ```
-Todellisuudessa kaiken jään sulattaminen vaatisi 33,4 kJ. Vesi voi kuitenkin luovuttaa jäähtyessään vain 25,1 kJ. Lopputila on siis 0 °C, ja jäätä jää jäljelle 24,7 g. Toinen virhe on pitää lämpötilaa alle 0 °C:n, kun astiassa on yhä jäätä ja vettä. Niin kauan kuin molempia on, lämpötila on 0 °C. Jos laskusi antaa alle 0 °C:n lämpötilan, tarkista oletus. Kaava olettaa, että kaikki jää sulaa. Silloin oletus on väärä: jäätä jää, ja lämpötila on 0 °C. Poikkeus on hyvin kylmä jää, joka jäädyttää kaiken veden. Silloin astiassa on pelkkää jäätä, ja sen lämpötila on alle 0 °C.
+Todellisuudessa kaiken jään sulattaminen vaatisi $33{,}4\,\text{kJ}$. Vesi voi kuitenkin luovuttaa jäähtyessään vain $25{,}1\,\text{kJ}$. Lopputila on siis $0\,{}^\circ\text{C}$, ja jäätä jää jäljelle $24{,}7\,\text{g}$. Toinen virhe on pitää lämpötilaa alle $0\,{}^\circ\text{C}$:n, kun astiassa on yhä jäätä ja vettä. Niin kauan kuin molempia on, lämpötila on $0\,{}^\circ\text{C}$. Jos laskusi antaa alle $0\,{}^\circ\text{C}$:n lämpötilan, tarkista oletus. Kaava olettaa, että kaikki jää sulaa. Silloin oletus on väärä: jäätä jää, ja lämpötila on $0\,{}^\circ\text{C}$. Poikkeus on hyvin kylmä jää, joka jäädyttää kaiken veden. Silloin astiassa on pelkkää jäätä, ja sen lämpötila on alle $0\,{}^\circ\text{C}$.
 
 ## Tiivistelmä
-- Eristetyssä astiassa veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jää lämpenee ensin 0 °C:seen ja sulaa sitten. Sulamisen aikana lämpötila ei muutu.
-- Vertaa ensin lämpömääriä $Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$ ja $Q_\text{j} = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j}$. Jos $Q_\text{v} \ge Q_\text{j}$, kaikki jää sulaa ja $T = \tfrac{Q_\text{v} - Q_\text{j}}{c_\text{v}(m_\text{v} + m_\text{j})}$.
-- Jos $Q_\text{v} < Q_\text{j}$, jäätä jää jäljelle ja lämpötila on 0 °C. Sulaneen jään massa on $m_\text{s} = \tfrac{Q_\text{v} - c_\text{j} m_\text{j} \Delta T_\text{j}}{s}$. Poikkeus: jos jää on niin kylmää, että kaikki vesi jäätyy, lämpötila on alle 0 °C.
-- Veden ominaissulamislämpö on 334 kJ/kg. Yhden kilogramman jään sulattaminen vaatii saman energian kuin kilogramman veden lämmittäminen lähes 80 K.
-- Lopputilan lämpötila ei ole alkulämpötilojen keskiarvo. Jäätä ja vettä samassa astiassa on aina 0 °C.
+- Eristetyssä astiassa veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jää lämpenee ensin $0\,{}^\circ\text{C}$:seen ja sulaa sitten. Sulamisen aikana lämpötila ei muutu.
+- Vertaa ensin lämpömääriä $Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$ ja $Q_\text{j} = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j}$. Jos $Q_\text{v} \ge Q_\text{j}$, kaikki jää sulaa ja $T = \tfrac{Q_\text{v} - Q_\text{j}}{c_\text{v}(m_\text{v} + m_\text{j})}$. Rajatapauksessa $Q_\text{v} = Q_\text{j}$ lämpötila on tasan $0\,{}^\circ\text{C}$.
+- Jos $Q_\text{v} < Q_\text{j}$, jäätä jää jäljelle ja lämpötila on $0\,{}^\circ\text{C}$. Sulaneen jään massa on $m_\text{s} = \tfrac{Q_\text{v} - c_\text{j} m_\text{j} \Delta T_\text{j}}{s}$. Poikkeus: jos jää on niin kylmää, että kaikki vesi jäätyy, lämpötila on alle $0\,{}^\circ\text{C}$.
+- Veden ominaissulamislämpö on $334\,\text{kJ/kg}$. Yhden kilogramman jään sulattaminen vaatii saman energian kuin kilogramman veden lämmittäminen lähes $80\,\text{K}$.
+- Lopputilan lämpötila ei ole alkulämpötilojen keskiarvo. Kun jää ja vesi ovat samassa astiassa tasapainossa normaalipaineessa (tavallisessa ilmanpaineessa), lämpötila on $0\,{}^\circ\text{C}$.

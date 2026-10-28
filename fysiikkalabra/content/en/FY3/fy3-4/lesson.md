@@ -93,7 +93,7 @@ In a liquid at depth $h$ the pressure is
 ```latex
 p = p_0 + \rho g h
 ```
-where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pressure (Pa), $\rho$ the density of the liquid (kg/m³), $g$ = 9.81 m/s² and $h$ the depth below the surface (m). The term $\rho g h$ is the hydrostatic pressure, that is, the gauge pressure $\Delta p = p - p_0$, which tells how much greater the pressure is than the pressure at the surface. The graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$, as in the linear model $y = kx + b$ of FY1. For water $\rho$ = 1000 kg/m³, so the pressure grows by 9.81 kPa for every metre.
+where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pressure (Pa), $\rho$ the density of the liquid (kg/m³), $g$ = $9.81\,\text{m/s}^2$ and $h$ the depth below the surface (m). The term $\rho g h$ is the hydrostatic pressure, that is, the gauge pressure $\Delta p = p - p_0$, which tells how much greater the pressure is than the pressure at the surface. The graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$, as in the linear model $y = kx + b$ of FY1. For water $\rho$ = $1000\,\text{kg/m}^3$, so the pressure grows by 9.81 kPa for every metre.
 
 <svg data-fig="pressure-depth" viewBox="0 0 600 340" role="img" aria-label="Graph to scale: the pressure p of water in kilopascals as a function of the depth h for h from 0 to 10 m. The pressure is a rising straight line: at the surface the pressure is atmospheric pressure, 101 kPa, and at a depth of 10 metres about 199 kPa. The gap between the line and the dashed line is the hydrostatic pressure ρgh." style="max-width:100%;font-size:24px">
   <line x1="173" y1="285" x2="173" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -141,7 +141,7 @@ where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pr
 </svg>
 
 ## Worked example
-A diver is in a lake at a depth of 12.0 m, next to the window of an underwater observation room. Atmospheric pressure at the surface is 101 kPa and the density of water is 1000 kg/m³. What is the pressure around the diver, and how large is the force on a window of area 150 cm² when the room contains air at normal pressure?
+A diver is in a lake at a depth of $12.0\,\text{m}$, next to the window of an underwater observation room. Atmospheric pressure at the surface is 101 kPa and the density of water is $1000\,\text{kg/m}^3$. What is the pressure around the diver, and how large is the force on a window of area 150 cm² when the room contains air at normal pressure?
 
 <!-- vaihe -->
 
@@ -192,7 +192,7 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Reasonableness.** The total pressure is about 2.2 times atmospheric pressure, which fits the fact that 10 metres of water add about one atmosphere and 12 metres add a little more. Estimate: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. The force equals the weight of a mass of about 180 kg, although the window is small. The pressure does not crush the diver's body, because in water the same pressure acts on the body from all sides and the body fluids transmit it to the inside as well. Only the pressure in the body's air spaces, such as the ears, has to be equalised.
+**Reasonableness.** The total pressure is about 2.2 times atmospheric pressure, which fits the fact that 10 metres of water add about one atmosphere and 12 metres add a little more. Estimate: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. The force equals the weight of a mass of about $180\,\text{kg}$, although the window is small. The pressure does not crush the diver's body, because in water the same pressure acts on the body from all sides and the body fluids transmit it to the inside as well. Only the pressure in the body's air spaces, such as the ears, has to be equalised.
 
 ## Common misconception
 Many people think that the pressure at the bottom depends on how much water the container holds. In a narrow tube and a wide pool, where the water reaches the same height, the pressure at the bottom is the same, even though the pool holds a thousand times as much water. Pressure depends only on the depth, the density and the pressure at the surface. Another mistake is to confuse pressure and force: the sharp tip of a drawing pin does not produce a greater force than the head, but spreads the same force over a smaller area, so the pressure is greater. A third mistake is to forget atmospheric pressure: $\rho g h$ alone gives only the gauge pressure, and the total pressure under water is always greater than that.

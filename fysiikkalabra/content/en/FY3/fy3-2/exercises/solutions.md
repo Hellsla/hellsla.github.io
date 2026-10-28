@@ -6,7 +6,7 @@
 **Conversions:** The force is in newtons and the distance in metres, so the product is directly in joules ($1\,\text{J} = 1\,\text{N}\cdot\text{m}$). Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 80\,\text{N} \cdot 25\,\text{m} = 2000\,\text{J} = 2.000\,\text{kJ}$
 **Answer:** $2.0\,\text{kJ}$, two significant figures like the given values $80\,\text{N}$ and $25\,\text{m}$.
-**Reasonableness:** Rough estimate: $80\,\text{N} \approx 8\,\text{kg}$ in weight, and $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. The same work would lift a 20 kg object about 10 m ($20\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2.0\,\text{kJ}$). $W$ is positive because the force is in the direction of motion.
+**Reasonableness:** Rough estimate: $80\,\text{N} \approx 8\,\text{kg}$ in weight, and $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. The same work would lift a $20\,\text{kg}$ object about $10\,\text{m}$ ($20\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2.0\,\text{kJ}$). $W$ is positive because the force is in the direction of motion.
 
 ## fy3-2-L1-02
 **Given:** weight $G = 150\,\text{N}$, lifting height $h = 1.2\,\text{m}$, slow lift
@@ -16,7 +16,7 @@
 **Conversions:** The weight is in newtons and the height in metres, so no conversions are needed: $\text{N}\cdot\text{m} = \text{J}$.
 **Substitution:** $W = 150\,\text{N} \cdot 1.2\,\text{m} = 180\,\text{J}$
 **Answer:** $180\,\text{J}$, two significant figures like the height $1.2\,\text{m}$.
-**Reasonableness:** Rough estimate: $150\,\text{N} \cdot 1\,\text{m} = 150\,\text{J}$, and the distance is a little over a metre. A weight of $150\,\text{N}$ corresponds to a mass of about $\tfrac{150\,\text{N}}{9.81\,\text{m/s}^2} \approx 15\,\text{kg}$, so the work corresponds to lifting a 15 kg bookcase a little over a metre. $W$ is positive because the lifting force and the motion are both upwards.
+**Reasonableness:** Rough estimate: $150\,\text{N} \cdot 1\,\text{m} = 150\,\text{J}$, and the distance is a little over a metre. A weight of $150\,\text{N}$ corresponds to a mass of about $\tfrac{150\,\text{N}}{9.81\,\text{m/s}^2} \approx 15\,\text{kg}$, so the work corresponds to lifting a $15\,\text{kg}$ bookcase a little over a metre. $W$ is positive because the lifting force and the motion are both upwards.
 
 ## fy3-2-L1-03
 **Given:** work $W = 36\,\text{kJ}$, time $t = 12\,\text{s}$
@@ -26,18 +26,18 @@
 **Conversions:** $36\,\text{kJ} = 36 \cdot 1000\,\text{J} = 36\,000\,\text{J}$, so that the result comes out in watts ($1\,\text{W} = 1\,\text{J/s}$). Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = \dfrac{36\,000\,\text{J}}{12\,\text{s}} = 3000\,\text{W} = 3.000\,\text{kW}$
 **Answer:** $3.0\,\text{kW}$, two significant figures like the time $12\,\text{s}$.
-**Reasonableness:** The units kilojoule and second give kilowatts directly: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. With this power you could lift a load of about 300 kg at a steady one metre per second ($300\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2.9\,\text{kW}$), which suits the motor of a lift.
+**Reasonableness:** The units kilojoule and second give kilowatts directly: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. With this power you could lift a load of about $300\,\text{kg}$ at a steady one metre per second ($300\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2.9\,\text{kW}$), which suits the motor of a lift.
 
 ## fy3-2-L1-04
-**Given:** force $F = 35\,\text{N}$ constant and in the direction of motion, distance $s = 6.0\,\text{m}$
-**Find:** the work $W$ done by the force in joules as the area under the graph
-**Principle:** The work is the area between the $(s,F)$ graph and the $s$-axis. When the force is constant, the graph is a horizontal segment and the region is a rectangle.
-**Reading the graph:** The segment is at the height $F = 35\,\text{N}$ from $s = 0\ldots 6.0\,\text{m}$. The rectangle has height $35\,\text{N}$ and width $6.0\,\text{m}$.
-**Formula:** $W = A_\text{rectangle} = F s$, so the work is already solved for: $W = F s$
-**Conversions:** The force is in newtons and the distance in metres, so no conversions are needed: $\text{N}\cdot\text{m} = \text{J}$.
-**Substitution:** $W = 35\,\text{N} \cdot 6.0\,\text{m} = 210\,\text{J}$
-**Answer:** $210\,\text{J}$, two significant figures like the distance $6.0\,\text{m}$.
-**Reasonableness:** The formula $W = F s$ gives the same result as the area, because for a constant force the area is a rectangle. Rough estimate: $35\,\text{N} \approx 40\,\text{N}$ and $6\,\text{m}$ give about $240\,\text{J}$, a little more than $210\,\text{J}$, because $35\,\text{N} < 40\,\text{N}$. The unit $\text{N}\cdot\text{m}$ is the joule.
+**Given:** read from the graph, force $F_1 = 25\,\text{N}$ over $0\ldots 6\,\text{m}$ and $F_2 = 10\,\text{N}$ over $6\ldots 10\,\text{m}$, the force is in the direction of motion
+**Find:** the total work $W$ done by the force in joules
+**Principle:** The work is the area between the $(s,F)$ graph and the $s$-axis. The force is not constant over the whole distance, so the formula $W = F s$ does not apply directly to the whole distance. The area splits into two rectangles in which the force is constant.
+**Reading the graph:** The first horizontal segment is on the grid line $F_1 = 25\,\text{N}$ and extends from $s = 0$ to $s = 6\,\text{m}$, where it drops vertically. The second segment is on the line $F_2 = 10\,\text{N}$ and extends from $s = 6\,\text{m}$ to $s = 10\,\text{m}$. The width of the second rectangle is $s_2 = 10\,\text{m} - 6\,\text{m} = 4\,\text{m}$.
+**Formula:** $W = W_1 + W_2$, so $W = F_1 s_1 + F_2 s_2$
+**Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed: $\text{N}\cdot\text{m} = \text{J}$.
+**Substitution:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 150\,\text{J} + 40\,\text{J} = 190\,\text{J}$
+**Answer:** $190\,\text{J}$, two significant figures, because the values of the graph were read from the grid lines as whole numbers.
+**Reasonableness:** The average force over the whole $10\,\text{m}$ is $\dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$, which lies between the smallest ($10\,\text{N}$) and the largest ($25\,\text{N}$) value of the force. If you calculated $25\,\text{N} \cdot 10\,\text{m} = 250\,\text{J}$ for the whole distance, you would get too large a result, because the force drops partway through.
 
 ## fy3-2-L1-05
 **Given:** force $F = 20\,\text{N}$ (in the direction of motion), speed $v = 3.0\,\text{m/s}$, steady motion
@@ -67,7 +67,7 @@
 **Conversions:** $1.5\,\text{kW} = 1500\,\text{W}$ and $4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$, so that the work comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 1500\,\text{W} \cdot 240\,\text{s} = 360\,000\,\text{J} = 360\,\text{kJ}$
 **Answer:** $360\,\text{kJ}$, two significant figures like the power $1.5\,\text{kW}$ and the time $4.0\,\text{min}$.
-**Reasonableness:** Another route: $1.5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0.10\,\text{kWh}$, and $1\,\text{kWh} = 3600\,\text{kJ}$, so $0.10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. This work could lift 1000 kg of water to a height of about 37 m ($\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9.81\,\text{m/s}^2} \approx 37\,\text{m}$).
+**Reasonableness:** Another route: $1.5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0.10\,\text{kWh}$, and $1\,\text{kWh} = 3600\,\text{kJ}$, so $0.10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. This work could lift $1000\,\text{kg}$ of water to a height of about $37\,\text{m}$ ($\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9.81\,\text{m/s}^2} \approx 37\,\text{m}$).
 
 ## fy3-2-L2-03
 **Given:** mass $m = 850\,\text{kg}$, lifting height $h = 30\,\text{m}$, slow lift, $g = 9.81\,\text{m/s}^2$
@@ -80,7 +80,7 @@
 **Reasonableness:** The weight of the element is $850\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \approx 8.3\,\text{kN}$. Rough estimate: $8\,\text{kN} \cdot 30\,\text{m} = 240\,\text{kJ}$, close to the result. A height of thirty metres corresponds to a ten-storey building, and a work of a quarter of a megajoule is believable for a crane.
 
 ## fy3-2-L2-04
-**Given:** force $F_1 = 10\,\text{N}$ constant over the distance $s_1 = 2.0\,\text{m}$ (0–2.0 m); then the force increases steadily from $F_1 = 10\,\text{N}$ to $F_2 = 30\,\text{N}$ over the distance $s_2 = 4.0\,\text{m}$ (2.0–6.0 m)
+**Given:** force $F_1 = 10\,\text{N}$ constant over the distance $s_1 = 2.0\,\text{m}$ ($0\text{–}2.0\,\text{m}$); then the force increases steadily from $F_1 = 10\,\text{N}$ to $F_2 = 30\,\text{N}$ over the distance $s_2 = 4.0\,\text{m}$ ($2.0\text{–}6.0\,\text{m}$)
 **Find:** the total work $W$ in joules
 **Principle:** The force changes, so the formula $W = F s$ does not work for the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the steadily increasing part is a trapezium.
 **Reading the graph:** The graph has a horizontal segment at the height $10\,\text{N}$ from $0\ldots 2.0\,\text{m}$ and, continuing from it, a straight segment from the height $10\,\text{N}$ to the height $30\,\text{N}$ from $2.0\ldots 6.0\,\text{m}$. The rectangle has height $10\,\text{N}$ and width $2.0\,\text{m}$. The parallel sides of the trapezium are $10\,\text{N}$ and $30\,\text{N}$, and its height (the width along the $s$-axis) is $4.0\,\text{m}$.
@@ -109,7 +109,7 @@
 **Conversions:** The mass is in kilograms and the height in metres, so no conversions are needed. The number of drops $n = 20$ is just a number.
 **Substitution:** $W_1 = 2.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1.5\,\text{m} = 29.43\,\text{J}$; $\Delta U = 20 \cdot 29.43\,\text{J} = 588.6\,\text{J}$
 **Answer:** $590\,\text{J}$, two significant figures like the mass $2.0\,\text{kg}$ and the height $1.5\,\text{m}$.
-**Reasonableness:** Rough estimate: the weight is about $20\,\text{N}$, so one drop gives about $20\,\text{N} \cdot 1.5\,\text{m} = 30\,\text{J}$ and 20 drops about $600\,\text{J}$. The result is the same as lifting an object of about 60 kg by a metre, a small amount of energy, so the temperature of the water changed only a little and the measurement needed accuracy. That is why Joule repeated the drops many times.
+**Reasonableness:** Rough estimate: the weight is about $20\,\text{N}$, so one drop gives about $20\,\text{N} \cdot 1.5\,\text{m} = 30\,\text{J}$ and 20 drops about $600\,\text{J}$. The result is the same as lifting an object of about $60\,\text{kg}$ by a metre, a small amount of energy, so the temperature of the water changed only a little and the measurement needed accuracy. That is why Joule repeated the drops many times.
 
 ## fy3-2-L3-03
 **Given:** power of the panel $P = 180\,\text{W}$, mass of water $m = 1000\,\text{kg}$, lifting height $h = 50\,\text{m}$, $g = 9.81\,\text{m/s}^2$, all the energy goes into lifting

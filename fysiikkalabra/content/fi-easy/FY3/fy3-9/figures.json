@@ -12,5 +12,6 @@
  "jatke": "jatke",
  "Kaksi tilanmuutosta, kaaviokuva. Vasemmalla isobaarinen: sylinterin mäntää kuormittaa vakiopainoinen kappale, joten kaasun lämmetessä lämpötilasta T₁ lämpötilaan T₂ mäntä nousee ja tilavuus kasvaa V₁:stä V₂:een; hiukkasten nopeusnuolet ovat pidempiä. Oikealla isokoorinen: jäykän, suljetun astian tilavuus V pysyy samana, ja kaasun lämmetessä paineenmittarin viisari kääntyy suuremman paineen p₂ kohdalle.": "Kaksi tilanmuutosta, kaaviokuva. Vasemmalla on isobaarinen muutos. Sylinterin mäntää kuormittaa vakiopainoinen kappale. Kaasu lämpenee lämpötilasta T₁ lämpötilaan T₂. Mäntä nousee, ja tilavuus kasvaa V₁:stä V₂:een. Hiukkasten nopeusnuolet ovat pidempiä. Oikealla on isokoorinen muutos. Jäykän, suljetun astian tilavuus V pysyy samana. Kaasu lämpenee, ja paineenmittarin viisari kääntyy suuremman paineen p₂ kohdalle.",
  "isobaarinen": "isobaarinen",
- "isokoorinen": "isokoorinen"
+ "isokoorinen": "isokoorinen",
+ "Kuvaaja mittakaavassa: ilman paine p tilavuuden V funktiona vakiolämpötilassa, viisi mittauspistettä ilman piirrettyä käyrää. Pisteet ovat (10 ml; 200 kPa), (15 ml; 133 kPa), (20 ml; 100 kPa), (30 ml; 67 kPa) ja (40 ml; 50 kPa). Ruudukon väli on 5 ml ja 25 kPa.": "Kuvaaja mittakaavassa. Se näyttää ilman paineen p tilavuuden V funktiona vakiolämpötilassa. Kuvassa on viisi mittauspistettä, eikä käyrää ole piirretty. Pisteet ovat (10 ml; 200 kPa), (15 ml; 133 kPa), (20 ml; 100 kPa), (30 ml; 67 kPa) ja (40 ml; 50 kPa). Ruudukon väli on 5 ml ja 25 kPa."
 }

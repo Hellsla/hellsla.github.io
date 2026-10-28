@@ -4,11 +4,7 @@
     "a": "Kärjen pinta-ala on hyvin pieni. Sama voima jakautuu pienelle alalle, joten paine $p = F/A$ on suuri. Kannassa sama voima jakautuu suurelle alalle, joten paine jää pieneksi."
   },
   {
-    "q": "Kuinka suuri on hydrostaattinen paine 5,0 m:n syvyydessä vedessä ($\\rho = 1000\\,\\text{kg/m}^3$)? Entä kokonaispaine, kun ilmanpaine on 101 kPa?",
+    "q": "Kuinka suuri on hydrostaattinen paine $5{,}0\\,\\text{m}$:n syvyydessä vedessä ($\\rho = 1000\\,\\text{kg/m}^3$)? Entä kokonaispaine, kun ilmanpaine on 101 kPa?",
     "a": "$\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 5{,}0\\,\\text{m} \\approx 49\\,\\text{kPa}$. Kokonaispaine on $101\\,\\text{kPa} + 49\\,\\text{kPa} \\approx 150\\,\\text{kPa}$."
-  },
-  {
-    "q": "Kapea pystyputki ja leveä allas ovat täynnä vettä 1,0 m:n korkeuteen. Kummassa pohjan paine on suurempi?",
-    "a": "Paine on sama. Hydrostaattinen paine riippuu vain syvyydestä, nesteen tiheydestä ja pinnan paineesta. Se ei riipu astian muodosta eikä veden määrästä."
   }
 ]

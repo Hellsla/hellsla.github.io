@@ -167,7 +167,7 @@ Kun tutkit ilmiötä, rajaat tutkittavan osan erilleen muusta maailmasta. Rajatt
   <foreignObject x="412" y="105.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{ympäristö}$</div></foreignObject>
 </svg>
 
-Miksi näin käy? Sen selittää aineen mikromalli. Kaasu koostuu hiukkasista. Hiukkaset liikkuvat jatkuvasti joka suuntaan. Ne törmäilevät toisiinsa ja astian seinämiin. Lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Mitä kuumempaa kaasu on, sitä nopeammin hiukkaset liikkuvat keskimäärin. Paine syntyy, kun hiukkaset törmäävät seinämään. Jokainen törmäys työntää seinää hieman. Oletetaan, että tilavuus pienenee ja lämpötila pysyy samana. Silloin hiukkasilla on vähemmän tilaa, ja ne osuvat seinään useammin. Siksi paine kasvaa, mutta yksittäinen törmäys ei muutu kovemmaksi. Oletetaan sitten, että lämpötila nousee mutta tilavuus pysyy samana. Silloin hiukkaset osuvat seinään sekä useammin että kovempaa. Siksi paine kasvaa. Tästä syystä rengas tuntuu kesällä kovemmalta.
+Miksi näin käy? Sen selittää aineen mikromalli. Kaasu koostuu hiukkasista. Hiukkaset liikkuvat jatkuvasti joka suuntaan. Ne törmäilevät toisiinsa ja astian seinämiin. Kaasun lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Mitä kuumempaa kaasu on, sitä nopeammin hiukkaset liikkuvat keskimäärin. Paine syntyy, kun hiukkaset törmäävät seinämään. Jokainen törmäys työntää seinää hieman. Oletetaan, että tilavuus pienenee ja lämpötila pysyy samana. Silloin hiukkasilla on vähemmän tilaa, ja ne osuvat seinään useammin. Siksi paine kasvaa, mutta yksittäinen törmäys ei muutu kovemmaksi. Oletetaan sitten, että lämpötila nousee mutta tilavuus pysyy samana. Silloin hiukkaset osuvat seinään sekä useammin että kovempaa. Siksi paine kasvaa. Tästä syystä rengas tuntuu kesällä kovemmalta.
 
 <svg data-fig="micro-model" viewBox="0 0 600 300" role="img" aria-label="Kaaviokuva kaasun mikromallista. Kuvassa on kaksi suljettua astiaa. Astiat ovat yhtä suuret, ja niissä on yhtä monta hiukkasta. Nuolet kuvaavat hiukkasten nopeutta. Kylmässä kaasussa nuolet ovat lyhyitä. Kuumassa kaasussa nuolet ovat pitkiä. Kuuman kaasun paine p2 on suurempi kuin kylmän kaasun paine p1." style="max-width:100%;font-size:24px">
   <foreignObject x="88.5" y="25.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kylmä kaasu}$</div></foreignObject>
@@ -216,7 +216,10 @@ Miksi näin käy? Sen selittää aineen mikromalli. Kaasu koostuu hiukkasista. H
 
 Kuva on kaaviokuva: nuolen pituus kuvaa hiukkasen nopeutta. Astiat ovat yhtä suuret, ja niissä on yhtä monta hiukkasta.
 
-Lämpötilaa mitataan celsiusasteikolla ja kelvinasteikolla. Celsiusasteikolla 0 °C on veden jäätymispiste ja 100 °C on veden kiehumispiste normaalipaineessa. Kelvinasteikon nollapiste on absoluuttinen nollapiste. Se on alin mahdollinen lämpötila. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään, eikä kylmempää voi olla. Celsiusaste ja kelvin ovat yhtä suuria. Siksi lämpötilaero on sama kelvineinä ja celsiusasteina. Oletetaan, että tilavuus ja kaasun määrä pysyvät samoina. Silloin kaasun paine on suoraan verrannollinen kelvinlämpötilaan. Myös hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Siksi lämpötilojen suhteita verrataan kelvineinä. Paineen, tilavuuden ja lämpötilan yhteyttä tutkitaan tarkemmin luvussa *Kaasujen tilanmuutokset ja Boylen laki*.
+Lämpötilaa mitataan celsiusasteikolla ja kelvinasteikolla. Celsiusasteikolla $0\,{}^\circ\text{C}$ on veden jäätymispiste ja $100\,{}^\circ\text{C}$ on veden kiehumispiste normaalipaineessa. Kelvinasteikon nollapiste on absoluuttinen nollapiste. Se on alin mahdollinen lämpötila. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään, eikä kylmempää voi olla. Celsiusaste ja kelvin ovat yhtä suuria. Siksi lämpötilaero on sama kelvineinä ja celsiusasteina. Oletetaan, että tilavuus ja kaasun määrä pysyvät samoina. Oletetaan myös, että kaasu on harvaa eli kaukana nesteytymisestä. Silloin kaasun paine on suoraan verrannollinen kelvinlämpötilaan. Myös harvan kaasun hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Siksi lämpötilojen suhteita verrataan kelvineinä. Paineen, tilavuuden ja lämpötilan yhteyttä tutkitaan tarkemmin luvussa *Kaasujen tilanmuutokset ja Boylen laki*.
+
+### Mallin rajat
+Lause ”lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta” pätee sellaisenaan harvalle kaasulle. Harvassa kaasussa hiukkaset vaikuttavat toisiinsa vain törmätessään. Silloin lämpötila on verrannollinen hiukkasten etenemisliikkeen keskimääräiseen liike-energiaan. Nesteessä ja kiinteässä aineessa hiukkaset ovat lähellä toisiaan. Ne värähtelevät, ja naapurit vetävät niitä. Lämpötila kuvaa niissäkin hiukkasten lämpöliikkeen voimakkuutta. Aineen energiaan kuuluu kuitenkin myös hiukkasten välisten vuorovaikutusten energia. Siksi lämpötila ei ole sama asia kuin aineen energia. Jäällä ja vedellä voi olla sama lämpötila $0\,{}^\circ\text{C}$, mutta samamassaisessa vedessä on enemmän sisäenergiaa kuin jäässä (luvut *Sisäenergia, lämpömäärä ja energian säilyminen* ja *Olomuodon muutokset*). Absoluuttisessa nollapisteessäkään kaikki hiukkasten liike ei lakkaa. Sen energia on kuitenkin pienin mahdollinen.
 
 ## Kaava: Kelvinasteikko
 Celsiuslämpötila $\theta$ muutetaan kelvineiksi näin:
@@ -225,7 +228,7 @@ T = \theta + 273{,}15
 ```
 Tässä $T$ on lämpötila kelvineinä (K) ja $\theta$ on lämpötila celsiusasteina (°C). Käytännössä riittää usein luku 273. Kelvineille ei käytetä sanaa aste. Sanotaan ”300 kelviniä”, ei ”300 kelvinastetta”.
 
-Absoluuttinen nollapiste on siis 0 K = −273,15 °C. Kelvinlämpötila ei voi olla negatiivinen. Celsiuslämpötila voi olla negatiivinen.
+Absoluuttinen nollapiste on siis $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$. Kelvinlämpötila ei voi olla negatiivinen. Celsiuslämpötila voi olla negatiivinen.
 
 <svg data-fig="kelvin-scale" viewBox="0 0 600 250" role="img" aria-label="Kelvinasteikko ja celsiusasteikko rinnakkain mittakaavassa. 0 K on −273,15 °C (absoluuttinen nollapiste). 273,15 K on 0 °C (vesi jäätyy). 373,15 K on 100 °C (vesi kiehuu). Asteikkojen välit ovat yhtä suuret. Kelvinlukema saadaan, kun celsiuslukemaan lisätään 273,15." style="max-width:100%;font-size:24px">
   <line x1="58" y1="112" x2="533" y2="112" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -255,7 +258,7 @@ Absoluuttinen nollapiste on siis 0 K = −273,15 °C. Kelvinlämpötila ei voi o
   <foreignObject x="553" y="167.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
 </svg>
 
-Kuva on piirretty mittakaavassa. Yläasteikko on kelvinasteikko ja alaasteikko celsiusasteikko. Väli 0 °C:sta 100 °C:een on yhtä pitkä kuin väli 273,15 K:sta 373,15 K:iin.
+Kuva on piirretty mittakaavassa. Yläasteikko on kelvinasteikko ja alaasteikko celsiusasteikko. Väli $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een on yhtä pitkä kuin väli $273{,}15\,\text{K}$:sta $373{,}15\,\text{K}$:iin.
 
 ## Esimerkki
 Suljetussa jäykässä astiassa on kaasua. Siksi sen tilavuus ja aineen määrä pysyvät samoina. Kaasun paine mitataan eri lämpötiloissa:
@@ -322,15 +325,15 @@ Määritä ekstrapoloimalla lämpötila, jossa kaasun paine olisi nolla.
   <foreignObject x="413.5" y="152" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{mittaukset}$</span></div></foreignObject>
 </svg>
 
-Pystyakseli on piirretty kuvan vasempaan reunaan, noin −300 °C:n kohdalle, eikä kohtaan $\theta = 0$. Yhtenäinen suora on mittausalue ja katkoviiva on ekstrapolointi.
+Pystyakseli on piirretty kuvan vasempaan reunaan, noin $-300\,{}^\circ\text{C}$:n kohdalle, eikä kohtaan $\theta = 0$. Yhtenäinen suora on mittausalue ja katkoviiva on ekstrapolointi.
 
 <!-- vaihe -->
 
-**Periaate.** Astia on suljettu ja jäykkä. Siksi kaasun määrä ja tilavuus pysyvät samoina, ja paine riippuu vain lämpötilasta. Mittapisteet ovat suoralla, joten paine muuttuu lämpötilan mukana tasaisesti. Suoran yhtälö antaa paineen myös mittausalueen ulkopuolella. Nollapaine on kohdassa, jossa suora leikkaa lämpötila-akselin.
+**Periaate.** Astia on suljettu ja jäykkä. Siksi kaasun määrä ja tilavuus pysyvät samoina, ja paine riippuu vain lämpötilasta. Mittapisteet ovat suoralla, joten paine muuttuu lämpötilan mukana tasaisesti. Suoran yhtälö antaa arvion paineesta myös mittausalueen ulkopuolella. Arvio pätee, jos oletetaan, että riippuvuus pysyy samanlaisena. Nollapaine on kohdassa, jossa suora leikkaa lämpötila-akselin.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Kulmakerroin $k$ lasketaan mittausalueen päätepisteistä. Suoran yhtälössä $p_0$ on paine lämpötilassa $0\,{}^\circ\text{C}$. Asetetaan $p = 0$ ja ratkaistaan $\theta_0$:
+**Kaava ratkaistuna.** Kulmakerroin $k$ lasketaan kahdesta kaukana toisistaan olevasta suoran pisteestä. Tässä mittapisteet ovat lukutarkkuuden rajoissa suoralla. Siksi mittausalueen päätepisteet ovat myös suoran pisteitä. Suoran yhtälössä $p_0$ on paine lämpötilassa $0\,{}^\circ\text{C}$. Asetetaan $p = 0$ ja ratkaistaan $\theta_0$:
 ```latex
 \begin{aligned}
 &k = \frac{\Delta p}{\Delta \theta} \\[4pt]
@@ -367,14 +370,14 @@ Pystyakseli on piirretty kuvan vasempaan reunaan, noin −300 °C:n kohdalle, ei
 **Järkevyys.** Tulos on lähellä absoluuttista nollapistettä $-273{,}15\,{}^\circ\text{C}$. Ero on vain noin $3\,{}^\circ\text{C}$ eli yksi prosentti. Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, $p = 100\,\text{kPa}$ vastaa lämpötilaa $273{,}15\,\text{K}$. Silloin paine lämpötilassa $100\,{}^\circ\text{C}$ olisi $100\,\text{kPa} \cdot \tfrac{373{,}15}{273{,}15} = 136{,}6\,\text{kPa}$. Mitattu arvo on $137\,\text{kPa}$. Mikromallin mukaan nollapaineessa hiukkasten liike olisi niin vähäistä, ettei paine enää syntyisi. Todelliset kaasut nesteytyvät jo ennen tätä lämpötilaa. Siksi suoran jatke on vain malli, ja se kuvaa raja-arvoa.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että lämpötila kaksinkertaistuu, kun se nousee 10 °C:sta 20 °C:een. Fysikaalisesti oikea vertailu tehdään kelvineinä: 283 K:sta 293 K:iin. Lämpötilojen suhde on 293/283 ≈ 1,035, eli nousu on noin 3,5 %. Siksi hiukkasten keskimääräinen liike-energia ei kaksinkertaistu. Toinen virhe on pitää 0 °C:ta alimpana mahdollisena lämpötilana. Se on vain veden jäätymispiste. Alin mahdollinen lämpötila on 0 K.
+Moni ajattelee, että lämpötila kaksinkertaistuu, kun se nousee $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:een. Fysikaalisesti oikea vertailu tehdään kelvineinä: $283\,\text{K}$:sta $293\,\text{K}$:iin. Lämpötilojen suhde on 293/283 ≈ 1,035, eli nousu on noin $3{,}5\,\%$. Siksi hiukkasten keskimääräinen liike-energia ei kaksinkertaistu. Toinen virhe on pitää $0\,{}^\circ\text{C}$:ta alimpana mahdollisena lämpötilana. Se on vain veden jäätymispiste. Alin mahdollinen lämpötila on $0\,\text{K}$.
 
 ## Tiivistelmä
 - Termodynaaminen systeemi on rajattu osa maailmaa. Sen tilaa kuvaavat tilanmuuttujat: lämpötila, paine, tilavuus ja aineen määrä.
 - Kaasusysteemissä lämpötila, paine ja tilavuus riippuvat toisistaan. Jos yhtä muutetaan, vähintään yksi muista muuttuu myös.
-- Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Paine syntyy hiukkasten törmäyksistä seinämään.
-- Kun tilavuus ja aineen määrä pysyvät samoina, paine on suoraan verrannollinen kelvinlämpötilaan. Mittapisteiden suoran jatkaminen eli ekstrapolointi antaa absoluuttisen nollapisteen.
-- Muunnos on $T = \theta + 273{,}15$. Absoluuttinen nollapiste on 0 K = −273,15 °C.
+- Kaasun mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Paine syntyy hiukkasten törmäyksistä seinämään. Nesteessä ja kiinteässä aineessa energiaan kuuluu myös hiukkasten välisten vuorovaikutusten energia. Siksi lämpötila ei ole sama asia kuin aineen energia.
+- Kun tilavuus ja aineen määrä pysyvät samoina, harvan kaasun paine on suoraan verrannollinen kelvinlämpötilaan. Mittapisteiden suoran jatkaminen eli ekstrapolointi antaa arvion absoluuttisesta nollapisteestä.
+- Muunnos on $T = \theta + 273{,}15$. Absoluuttinen nollapiste on $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama polkupyörä on ulkona lumisena pakkasaamuna. Maassa ja satulalla on lunta. Tolpan lämpömittarin pylväs on matalalla." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>

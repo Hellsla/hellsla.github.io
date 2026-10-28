@@ -17,5 +17,7 @@
  "Seinän poikkileikkaus ja lämpötilan kulku, periaatekuva. Seinässä on ohut sisälevy, paksu eristekerros ja ohut ulkoverhous. Lämpötila laskee sisältä 21 asteesta ulos miinus 15 asteeseen eli 36 kelviniä, ja suurin osa laskusta tapahtuu eristeessä. Lämpöteho P kulkee seinän läpi sisältä ulos.": "Cross-section of a wall and the course of the temperature, schematic diagram. The wall has a thin inner board, a thick layer of insulation and a thin outer cladding. The temperature falls from 21 degrees indoors to minus 15 degrees outdoors, that is, by 36 kelvins, and most of the fall happens in the insulation. The thermal power P passes through the wall from the inside to the outside.",
  "eriste": "insulation",
  "sisällä": "indoors",
- "ulkona": "outdoors"
+ "ulkona": "outdoors",
+ "Kaavakuva maapallon energiavirroista neliömetriä kohti ilmakehän ylärajalla. Auringosta tulee maapalloon säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu. Maapallo on energiatasapainossa, joten sen lämpötila pysyy vakiona.": "Schematic diagram of the energy flows of the Earth per square metre at the top of the atmosphere. The Sun delivers 341 W/m² of radiation to the Earth, and 102 W/m² of it is reflected back into space. The power of the thermal radiation leaving into space is not given. The Earth is in energy balance, so its temperature stays constant.",
+ "maapallo": "Earth"
 }

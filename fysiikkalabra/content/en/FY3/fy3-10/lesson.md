@@ -35,7 +35,7 @@
 </svg>
 
 ## Key idea
-The gas laws in the chapter *Changes of state of a gas and Boyle's law* applied to a fixed amount of gas. Now we compare different amounts of gas and different gases. Fill a 5.00 litre balloon at a pressure of 101 kPa and a temperature of 20 °C, one after another, with helium, nitrogen, air and carbon dioxide. The masses of the gases are very different: 0.83 g, 5.78 g, 6.02 g and 9.10 g. But when you divide each mass by the molar mass of the gas, the result is about 0.207 mol every time. So at the same pressure and temperature, the same volume contains the same amount of gas, whatever the gas is. The helium balloon is lighter because helium particles are lighter, not because there is less gas.
+The gas laws in the chapter *Changes of state of a gas and Boyle's law* applied to a fixed amount of gas. Now we compare different amounts of gas and different gases. Fill a 5.00 litre balloon at a pressure of 101 kPa and a temperature of $20\,{}^\circ\text{C}$, one after another, with helium, nitrogen, air and carbon dioxide. In an example weighing (invented values with some scatter of weighing) the masses of the gases are very different: $0.83\,\text{g}$, $5.78\,\text{g}$, $6.02\,\text{g}$ and $9.10\,\text{g}$. But when you divide each mass by the molar mass of the gas, the result is about 0.207 mol every time. So at the same pressure and temperature, the same volume contains the same amount of gas, whatever the gas is. The helium balloon is lighter because helium particles are lighter, not because there is less gas.
 
 <svg data-fig="helium-ilma" viewBox="0 0 600 326" role="img" aria-label="Schematic picture with the particles enlarged: two gas balloons of the same size at the same pressure and temperature. Both contain the same number of particles and the amount of substance n = 0.21 mol. The mass of the gas in the helium balloon is m = 0.83 g and in the air balloon m = 6.0 g, because the particles of air are heavier. The arrows show the motion of the particles to scale: at the same temperature the light helium particles move faster, and the length of the arrow is the ratio of the speeds, 2.7 : 1." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy310-glass" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#ffffff"/><stop offset="0.7" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></radialGradient></defs>
@@ -153,7 +153,7 @@ The gas laws in the chapter *Changes of state of a gas and Boyle's law* applied 
   <foreignObject x="275.5" y="123.5" width="49" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$p,\ T$</div></foreignObject>
 </svg>
 
-Even a small amount of gas contains an enormous number of particles. So we do not count them one by one but in moles, in the same way as eggs are counted in dozens. One mole is $6.022 \cdot 10^{23}$ particles, and the number $N_\text{A} = 6.022 \cdot 10^{23}\,\text{1/mol}$ is called the Avogadro constant. The amount of substance $n$ tells you how many moles of particles there are. The mass of one mole is the molar mass $M$ of the substance: 4.00 g/mol for helium, 29.0 g/mol for air on average and 44.0 g/mol for carbon dioxide. So you can get the amount of substance both from the number of particles and from the mass:
+Even a small amount of gas contains an enormous number of particles. So we do not count them one by one but in moles, in the same way as eggs are counted in dozens. One mole is $6.022 \cdot 10^{23}$ particles, and the number $N_\text{A} = 6.022 \cdot 10^{23}\,\text{1/mol}$ is called the Avogadro constant. The amount of substance $n$ tells you how many moles of particles there are. The mass of one mole is the molar mass $M$ of the substance: $4.00\,\text{g/mol}$ for helium, $29.0\,\text{g/mol}$ for air on average and $44.0\,\text{g/mol}$ for carbon dioxide. So you can get the amount of substance both from the number of particles and from the mass:
 ```latex
 n = \frac{N}{N_\text{A}} = \frac{m}{M}
 ```
@@ -227,10 +227,10 @@ where $N$ is the number of particles, $m$ is the mass (g or kg) and $M$ is the m
   <foreignObject x="20" y="281.5" width="560" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{in each container }n = 1.00\,\text{mol},\ \text{same }p, T$</div></foreignObject>
 </svg>
 
-The ideal gas is a microscopic model. In it, the particles are thought of as points, and they interact with each other and with the walls of the container only when they collide. Pressure comes from collisions with the walls. It grows when there are more particles, when they move faster (that is, the temperature is higher) or when the volume is smaller. Real gases follow the model well in ordinary conditions. The model starts to fail at high pressures and low temperatures, when the particles are close together and the attraction between them condenses the gas into a liquid.
+The ideal gas is a microscopic model. In it, the particles are thought of as points, and they interact with each other and with the walls of the container only when they collide. So the energy of the interactions between the particles is negligible in the model, and the temperature in kelvins is directly proportional to the mean kinetic energy of the particles. Pressure comes from collisions with the walls. It grows when there are more particles, when they move faster (that is, the temperature is higher) or when the volume is smaller. Real gases follow the model well in ordinary conditions. The model starts to fail at high pressures and low temperatures, when the particles are close together and the attraction between them condenses the gas into a liquid.
 
 ## Formula: Equation of state of an ideal gas
-The weighing result gives a number that is the same for all gases: pressure multiplied by volume and divided by the amount of substance and the temperature in kelvins. With the mean amount of substance of the four gases, 0.2071 mol, it is
+The example weighing gives a number that is the same for all gases: pressure multiplied by volume and divided by the amount of substance and the temperature in kelvins. With the mean amount of substance of the four gases, 0.2071 mol, it is
 ```latex
 \begin{aligned}
 R &= \frac{pV}{nT} \\
@@ -242,7 +242,7 @@ Precise measurements give the value $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\
 ```latex
 pV = nRT
 ```
-where $p$ is the pressure (Pa), $V$ the volume (m³), $n$ the amount of substance (mol), $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ the molar gas constant and $T$ the temperature in kelvins (K). The type of gas does not appear in the equation at all. A temperature $\theta$ given in degrees Celsius is converted to kelvins by adding 273.15 to the numerical value. The pressure is always the total pressure in pascals and the volume is in cubic metres, because the unit of $R$ contains the joule: 1 Pa · m³ = 1 N/m² · m³ = 1 N · m = 1 J.
+where $p$ is the pressure (Pa), $V$ the volume (m³), $n$ the amount of substance (mol), $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ the molar gas constant and $T$ the temperature in kelvins (K). The type of gas does not appear in the equation at all. A temperature $\theta$ given in degrees Celsius is converted to kelvins by adding 273.15 to the numerical value. The pressure is always the total pressure in pascals and the volume is in cubic metres, because the unit of $R$ contains the joule: 1 Pa · m³ = 1 N/m² · m³ = 1 N · m = $1\,\text{J}$.
 
 When you solve the equation of state for pressure, you see that the pressure doubles when the number of particles or the temperature in kelvins doubles, or when the volume is halved. So the pressure is directly proportional to the number of particles and the temperature in kelvins and inversely proportional to the volume, that is, $p \propto NT/V$.
 
@@ -402,7 +402,7 @@ In the simulation you can investigate this at the particle level: change the num
 When the amount of gas does not change, $nR$ is constant, and the equation of state gives the combined gas law $p_1V_1/T_1 = p_2V_2/T_2$ (subscripts 1 and 2 are the initial and final state). From it you get every gas law of the chapter *Changes of state of a gas and Boyle's law* when one quantity is kept constant.
 
 ## Worked example
-A party balloon is filled with helium until its volume is 5.0 l. In the balloon the pressure is 101 kPa and the temperature is 20 °C. How many moles of helium are in the balloon, and what is the mass of the helium? The molar mass of helium is 4.0 g/mol.
+A party balloon is filled with helium until its volume is $5.0\,\textsf{l}$. In the balloon the pressure is 101 kPa and the temperature is $20\,{}^\circ\text{C}$. How many moles of helium are in the balloon, and what is the mass of the helium? The molar mass of helium is $4.0\,\text{g/mol}$.
 
 <!-- vaihe -->
 
@@ -452,16 +452,16 @@ m &= nM \\
 &\approx 0.83\,\text{g}
 \end{aligned}
 ```
-The balloon contains 0.21 mol of helium, and its mass is 0.83 g. The amount of substance is limited by the volume 5.0 l, and the mass by the molar mass 4.0 g/mol as well, each with two digits, so the results are given with two significant figures. The pressure 101 kPa and the temperature 293 K have three digits and do not limit the result.
+The balloon contains 0.21 mol of helium, and its mass is $0.83\,\text{g}$. The amount of substance is limited by the volume $5.0\,\textsf{l}$, and the mass by the molar mass $4.0\,\text{g/mol}$ as well, each with two digits, so the results are given with two significant figures. The pressure 101 kPa and the temperature $293\,\text{K}$ have three digits and do not limit the result.
 
 <!-- vaihe -->
 
-**Reasonableness.** One mole of gas takes up about 24 litres at room temperature and normal pressure, so 5.0 litres contain about 5.0/24 ≈ 0.21 mol of gas. An air balloon of the same size contains the same number of moles of air, but its mass is about 0.2073 mol · 29 g/mol ≈ 6.0 g. The helium balloon is lighter because helium particles are lighter, not because there is less gas.
+**Reasonableness.** One mole of gas takes up about 24 litres at room temperature and normal pressure, so 5.0 litres contain about 5.0/24 ≈ 0.21 mol of gas. An air balloon of the same size contains the same number of moles of air, but its mass is about 0.2073 mol · $29\,\text{g/mol}$ ≈ $6.0\,\text{g}$. The helium balloon is lighter because helium particles are lighter, not because there is less gas.
 
 ## Common misconception
 Three mistakes keep appearing in calculations with the equation of state:
 
-- **Degrees Celsius.** In the equation of state the temperature is always in kelvins. For example, 0 °C would give a pressure of zero, but a gas has a pressure at the freezing point too.
+- **Degrees Celsius.** In the equation of state the temperature is always in kelvins. For example, $0\,{}^\circ\text{C}$ would give a pressure of zero, but a gas has a pressure at the freezing point too.
 - **Mixed units.** If the pressure is in kilopascals but the volume in cubic metres, or the pressure in pascals but the volume in litres, the result is wrong by a factor of a thousand. The safest way is to convert all quantities to base units: pressure to pascals, volume to cubic metres and temperature to kelvins.
 - **Heavy gas.** Many people think that fewer moles of a heavier gas fit in the same volume. But the amount of substance depends only on the pressure, the volume and the temperature, not on the type of gas. The mass, on the other hand, depends on the molar mass.
 

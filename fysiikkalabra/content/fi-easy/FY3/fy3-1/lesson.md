@@ -198,7 +198,7 @@ Venymä on suoraan verrannollinen voimaan, kun jousta ei venytetä liikaa. Kaksi
   <foreignObject x="309.5" y="222.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{suora origon kautta}$</span></div></foreignObject>
 </svg>
 
-Voimamittarin asteikko pitää kalibroida. Se tarkoittaa, että asteikkoon merkitään oikeat lukemat. Kalibrointi tehdään näin: jouseen ripustetaan samanlaisia pieniä kappaleita. Kunkin kappaleen massa on noin 100 g ja paino noin 1 N:
+Voimamittarin asteikko pitää kalibroida. Se tarkoittaa, että asteikkoon merkitään oikeat lukemat. Kalibrointi tehdään näin: jouseen ripustetaan samanlaisia pieniä kappaleita. Kunkin kappaleen massa on noin $100\,\text{g}$ ja paino noin 1 N:
 
 - Yksi kappale venyttää jousta tietyn matkan, ja kohta merkitään 1 N:ksi.
 - Kukin kappale vetää jousta yhtä voimakkaasti. Kaksi kappaletta vetää sitä kaksinkertaisella voimalla ja venyttää sitä kaksinkertaisen matkan. Kohta merkitään 2 N:ksi, ja niin edelleen.
@@ -211,7 +211,7 @@ Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin p
 ```latex
 G = m g
 ```
-Tässä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys (m/s²). Maan pinnalla putoamiskiihtyvyys on 9,81 m/s². Kun massa on kilogrammoina ja $g$ yksikössä m/s², paino tulee newtoneina, sillä 1 N = 1 kg·m/s² (tämä perustellaan FY4:ssä). Yhden kilogramman massan paino Maassa on siis 9,81 N. Muualla $g$ on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa. Jupiterissa pinta tarkoittaa pilvien yläpintaa.
+Tässä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys (m/s²). Maan pinnalla putoamiskiihtyvyys on $9{,}81\,\text{m/s}^2$. Kun massa on kilogrammoina ja $g$ yksikössä m/s², paino tulee newtoneina, sillä 1 N = $1\,\text{kg}\cdot\text{m/s}^2$ (tämä perustellaan FY4:ssä). Yhden kilogramman massan paino Maassa on siis 9,81 N. Muualla $g$ on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa. Jupiterissa pinta tarkoittaa pilvien yläpintaa.
 
 | Taivaankappale | $g$ pinnalla (m/s²) |
 | --- | --- |
@@ -267,7 +267,7 @@ Kuvaajassa paino on piirretty massan funktiona. Jokaisella taivaankappaleella pa
 </svg>
 
 ## Esimerkki
-Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?
+Tutkimusrobotin massa on $120\,\text{kg}$. Mikä on sen paino Maassa ja Marsissa?
 
 <!-- vaihe -->
 
@@ -311,10 +311,10 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Järkevyys.** Yhden kilogramman massan paino Maassa on noin 10 N. Siksi 120 kg:n massan paino on noin 1200 N. Marsin $g$ on vähän yli kolmasosa Maan arvosta (3,71/9,81 ≈ 0,38). Myös 445 N on vähän yli kolmasosa 1180 N:sta. Marsissa paino on pienempi. Syy on se, että Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa paikoissa sama.
+**Järkevyys.** Yhden kilogramman massan paino Maassa on noin 10 N. Siksi $120\,\text{kg}$:n massan paino on noin 1200 N. Marsin $g$ on vähän yli kolmasosa Maan arvosta (3,71/9,81 ≈ 0,38). Myös 445 N on vähän yli kolmasosa 1180 N:sta. Marsissa paino on pienempi. Syy on se, että Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa paikoissa sama.
 
 ## Yleinen virhekäsitys
-Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on 70 kg ja paino Maassa noin 690 N. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että voimamittari mittaa voimaa, ei massaa. Sen lukema muuttuu, kun sama kappale viedään toiseen paikkaan. Kylpyhuonevaaka näyttää silti kilogrammoja. Se mittaa voimaa, ja sen asteikko on tehty Maassa jakamalla voima arvolla 9,81 m/s². Kuussa tällainen vaaka näyttäisi vain noin kuudesosan massasta.
+Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on $70\,\text{kg}$ ja paino Maassa noin 690 N. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että voimamittari mittaa voimaa, ei massaa. Sen lukema muuttuu, kun sama kappale viedään toiseen paikkaan. Kylpyhuonevaaka näyttää silti kilogrammoja. Se mittaa voimaa, ja sen asteikko on tehty Maassa jakamalla voima arvolla $9{,}81\,\text{m/s}^2$. Kuussa tällainen vaaka näyttäisi vain noin kuudesosan massasta.
 
 ## Tiivistelmä
 - Voima kertoo vuorovaikutuksen voimakkuuden, ja sen yksikkö on newton (N). Voimamittarin jousen venymä on suoraan verrannollinen voimaan.

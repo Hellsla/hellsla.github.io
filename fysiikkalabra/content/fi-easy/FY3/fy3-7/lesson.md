@@ -1,6 +1,6 @@
 # Olomuodon muutokset
 
-> **Miksi** kiehuvan veden lämpötila ei nouse yli 100 °C:n, vaikka liesi on täysillä ja kattilaan siirtyy koko ajan energiaa?
+> **Miksi** kiehuvan veden lämpötila ei nouse yli $100\,{}^\circ\text{C}$:n, vaikka liesi on täysillä ja kattilaan siirtyy koko ajan energiaa?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keittiön liedellä on kattila, jossa vesi kiehuu voimakkaasti. Levy hehkuu punaisena, ja siitä siirtyy koko ajan energiaa kattilaan. Vedessä on kuplia, ja siitä nousee höyryä. Veteen upotetun lämpömittarin pylväs pysyy samalla korkeudella." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy37h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy37h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy37h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#c92a2a"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy37h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
@@ -84,7 +84,7 @@
 </svg>
 
 ## Ydinajatus
-Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromallissa ainetta ajatellaan hiukkasina. Kiinteässä aineessa hiukkaset värähtelevät paikoillaan, koska ne sitovat toisensa. Nesteessä hiukkaset liikkuvat toistensa ohi, mutta ne pysyvät yhdessä. Kaasussa hiukkaset liikkuvat vapaasti ja törmäilevät vain harvoin. Olomuodon muutoksessa hiukkasten keskinäinen sidos muuttuu. Sulamisessa kiinteän aineen järjestys purkautuu. Höyrystymisessä hiukkaset irtoavat kokonaan toisistaan. Vastakkaiset muutokset ovat jähmettyminen ja tiivistyminen. Jää voi myös sublimoitua eli muuttua suoraan höyryksi. Niin käy pakkasella kuivuvalle pyykille.
+Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromallissa ainetta ajatellaan hiukkasina. Kiinteässä aineessa hiukkaset värähtelevät paikoillaan, koska ne sitovat toisensa. Nesteessä hiukkaset liikkuvat toistensa ohi, mutta ne pysyvät yhdessä. Kaasussa hiukkaset liikkuvat vapaasti ja törmäilevät vain harvoin. Olomuodon muutoksessa hiukkasten keskinäiset vuorovaikutukset muuttuvat. Sulamisessa kiinteän aineen säännöllinen järjestys purkautuu. Höyrystymisessä hiukkaset etääntyvät kauas toisistaan. Hiukkaset itse eivät muutu. Kun jää sulaa tai vesi kiehuu, vesimolekyylien sisäiset kemialliset sidokset eivät katkea. Vastakkaiset muutokset ovat jähmettyminen ja tiivistyminen. Jää voi myös sublimoitua eli muuttua suoraan höyryksi. Niin käy pakkasella kuivuvalle pyykille.
 
 <svg data-fig="micro-model" viewBox="0 0 600 306" role="img" aria-label="Mikromalli, kaavakuva: kiinteässä aineessa hiukkaset ovat säännöllisessä järjestyksessä ja kiinni toisissaan. Nesteessä ne ovat epäjärjestyksessä, mutta ne ovat yhä kosketuksissa. Kaasussa ne ovat kaukana toisistaan ja liikkuvat vapaasti. Nuolet: kiinteä sulaa nesteeksi, neste höyrystyy kaasuksi." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy37-ball" cx="0.35" cy="0.35" r="0.75"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a9d1f0"/></radialGradient></defs>
@@ -139,11 +139,14 @@ Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromall
   <foreignObject x="470" y="259.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaasu}$</div></foreignObject>
 </svg>
 
-Olomuodon muutos vaatii energiaa, mutta ei nosta lämpötilaa. Kun jäätä lämmitetään, sen lämpötila nousee 0 °C:seen asti. Sitten lämpötila pysyy vakiona, kunnes kaikki jää on sulanut. Näin käy, vaikka energiaa siirtyy koko ajan. Energia kuluu hiukkasten sidosten purkamiseen. Toisin sanoen se kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Se ei kiihdytä hiukkasten liikettä. Samasta syystä kiehuva vesi pysyy 100 °C:ssa, vaikka liesi on täysillä. Kaikki siirtyvä energia kuluu veden höyrystämiseen. Mitä suurempi teho on, sitä nopeammin vesi kiehuu pois. Vesi ei kuitenkaan tule sitä kuumemmaksi. Kun vesi höyrystyy, energia sitoutuu höyryyn. Kun höyry tiivistyy, sama energia vapautuu takaisin. Siksi 100-asteinen höyry polttaa pahemmin kuin 100-asteinen vesi.
+### Mihin energia menee?
+Sulaminen ja höyrystyminen vaativat energiaa, mutta eivät nosta lämpötilaa. Kun jäätä lämmitetään, sen lämpötila nousee $0\,{}^\circ\text{C}$:seen asti. Sitten lämpötila pysyy vakiona, kunnes kaikki jää on sulanut. Näin käy, vaikka energiaa siirtyy koko ajan. Sulamisen ja höyrystymisen aikana aineeseen siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia. Se kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Kun puhtaan aineen olomuoto muuttuu vakiopaineessa, lämpötila pysyy vakiona. Silloin hiukkasten keskimääräinen liike-energia ei kasva.
 
-Sulamiseen ja höyrystymiseen tarvittava lämpömäärä on suoraan verrannollinen massaan. Kertoimet ovat ominaisia kullekin aineelle. Ominaissulamislämpö $s$ kertoo, kuinka paljon energiaa yhden kilogramman sulattaminen vaatii. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon energiaa yhden kilogramman höyrystäminen vaatii. Vedelle $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$. Höyrystäminen vaatii siis lähes seitsemän kertaa enemmän energiaa kuin sulattaminen. Se vaatii myös yli viisi kertaa enemmän energiaa kuin veden lämmittäminen 0 °C:sta 100 °C:seen.
+Samasta syystä kiehuva vesi pysyy $100\,{}^\circ\text{C}$:ssa, vaikka liesi on täysillä. Siirtyvä energia höyrystää vettä. Se ei nosta veden lämpötilaa. Höyry vie noin 1700 kertaa enemmän tilaa kuin vesi. Kun höyry laajenee, se työntää ympäröivää ilmaa. Pieni osa höyrystämiseen tarvittavasta energiasta kuluu tähän työhön. Suurin osa energiasta kasvattaa molekyylien välistä vuorovaikutusenergiaa. Mitä suurempi teho on, sitä nopeammin vesi kiehuu pois. Vesi ei kuitenkaan tule sitä kuumemmaksi. Kun vesi höyrystyy, energia sitoutuu höyryyn. Kun höyry tiivistyy, sama energia vapautuu takaisin. Siksi 100-asteinen höyry polttaa pahemmin kuin 100-asteinen vesi.
 
-Kiehumispiste riippuu paineesta. Faasikaavio näyttää, missä olomuodossa aine on kussakin lämpötilassa ja paineessa. Sen käyrät yhdistävät sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa. Vuorella ilmanpaine on pienempi, ja vesi kiehuu alle 100 °C:n lämpötilassa. Painekattilassa paine nostaa kiehumispisteen yli 100 °C:n. Silloin ruoka kypsyy nopeammin.
+Sulamiseen ja höyrystymiseen tarvittava lämpömäärä on suoraan verrannollinen massaan. Kertoimet ovat ominaisia kullekin aineelle. Ominaissulamislämpö $s$ kertoo, kuinka paljon energiaa yhden kilogramman sulattaminen vaatii. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon energiaa yhden kilogramman höyrystäminen vaatii. Vedelle $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$. Höyrystäminen vaatii siis lähes seitsemän kertaa enemmän energiaa kuin sulattaminen. Se vaatii myös yli viisi kertaa enemmän energiaa kuin veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen.
+
+Kiehumispiste riippuu paineesta. Faasikaavio näyttää, missä olomuodossa aine on kussakin lämpötilassa ja paineessa. Sen käyrät yhdistävät sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa. Vuorella ilmanpaine on pienempi, ja vesi kiehuu alle $100\,{}^\circ\text{C}$:n lämpötilassa. Painekattilassa paine nostaa kiehumispisteen yli $100\,{}^\circ\text{C}$:n. Silloin ruoka kypsyy nopeammin.
 
 <svg data-fig="phase-diagram" viewBox="0 0 600 350" role="img" aria-label="Faasikaavio, kaavakuva: paine p lämpötilan T funktiona. Käyrät erottavat kiinteän, nesteen ja kaasun alueet. Ne kohtaavat kolmoispisteessä. Kun paine on ilmanpaine, vesi kiehuu 100 asteessa. Vuorella paine on pienempi, ja kiehumispiste on alempi." style="max-width:100%;font-size:24px">
   <line x1="95" y1="296" x2="490" y2="296" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -184,11 +187,11 @@ Tässä $Q$ on lämpömäärä (J), $s$ on aineen ominaissulamislämpö (J/kg) j
 
 | Vesi | Arvo |
 |---|---|
-| $s$ | 334 kJ/kg |
-| $r$ | 2260 kJ/kg |
-| $c$ (jää) | 2100 J/(kg·K) |
-| $c$ (vesi) | 4190 J/(kg·K) |
-| $c$ (vesihöyry) | 2000 J/(kg·K) |
+| $s$ | $334\,\text{kJ/kg}$ |
+| $r$ | $2260\,\text{kJ/kg}$ |
+| $c$ (jää) | $2100\,\text{J/(kg}\cdot\text{K)}$ |
+| $c$ (vesi) | $4190\,\text{J/(kg}\cdot\text{K)}$ |
+| $c$ (vesihöyry) | $2000\,\text{J/(kg}\cdot\text{K)}$ |
 
 Taulukossa $c$ on ominaislämpökapasiteetti. Se esiteltiin luvussa *Aineen lämpeneminen ja jäähtyminen*.
 
@@ -216,7 +219,7 @@ Lämpenemiskäyrä näyttää lämpötilan siirretyn energian funktiona. Nousevi
 </svg>
 
 ## Esimerkki
-Veden ominaishöyrystymislämpö määritetään kokeellisesti. Vaa'an päällä on avoin kalorimetri, jossa on kiehuvaa vettä. Vedessä on 1000 W:n uppokuumennin. Viiden minuutin (300 s) aikana vaa'an lukema pienenee 128 g. Luku on keksitty esimerkki, ei oikean mittauksen tulos. Mikä on veden ominaishöyrystymislämpö tämän lukeman mukaan?
+Veden ominaishöyrystymislämpö määritetään kokeellisesti. Vaa'an päällä on avoin kalorimetri, jossa on kiehuvaa vettä. Vedessä on $1000\,\text{W}$:n uppokuumennin. Viiden minuutin ($300\,\text{s}$) aikana vaa'an lukema pienenee $128\,\text{g}$. Luku on keksitty esimerkki, ei oikean mittauksen tulos. Mikä on veden ominaishöyrystymislämpö tämän lukeman mukaan?
 
 <!-- vaihe -->
 
@@ -261,11 +264,11 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Vaa'an päällä
 **Järkevyys.** Tulos $2{,}34\,\tfrac{\text{MJ}}{\text{kg}}$ on hieman suurempi kuin taulukkoarvo $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$. Ero on noin $3{,}7\,\%$. Suunta on odotettu. Osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä. Siksi oletus "kaikki energia veteen" antaa liian suuren $r$:n. Taulukkoarvolla höyrystyisi $\dfrac{300\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}133\,\text{kg}$ eli $133\,\text{g}$. Se on vain $5\,\text{g}$ enemmän kuin mitattu. Tulos on siis oikea muutaman prosentin tarkkuudella.
 
 ## Yleinen virhekäsitys
-Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Olomuodon muutoksessa lämpötila pysyy vakiona, vaikka energiaa siirtyy paljon. Jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen 0 °C:sta 80 °C:seen. Toinen virhe on pitää 0-asteista jäätä ja 0-asteista vettä yhtä hyvinä jäähdyttäjinä. Jää viilentää juomaa paljon tehokkaammin. Se ottaa sulaessaan paljon energiaa, ennen kuin se alkaa lämmetä. Kolmas virhe on ajatella, että vesi kiehuu aina 100 °C:ssa. Kiehumispiste riippuu paineesta.
+Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Kun puhtaan aineen olomuoto muuttuu vakiopaineessa, lämpötila pysyy vakiona, vaikka energiaa siirtyy paljon. Jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $80\,{}^\circ\text{C}$:seen. Toinen virhe on pitää 0-asteista jäätä ja 0-asteista vettä yhtä hyvinä jäähdyttäjinä. Jää viilentää juomaa paljon tehokkaammin. Se ottaa sulaessaan paljon energiaa, ennen kuin se alkaa lämmetä. Kolmas virhe on ajatella, että vesi kiehuu aina $100\,{}^\circ\text{C}$:ssa. Kiehumispiste riippuu paineesta.
 
 ## Tiivistelmä
-- Olomuodot ovat kiinteä, neste ja kaasu. Mikromallissa olomuodon muutos tarkoittaa, että hiukkasten väliset sidokset purkautuvat tai muodostuvat.
-- Olomuodon muutoksen aikana lämpötila pysyy vakiona. Sulattamiseen tarvitaan $Q = sm$ ja höyrystämiseen $Q = rm$. Vedelle $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
+- Olomuodot ovat kiinteä, neste ja kaasu. Mikromallissa olomuodon muutos muuttaa hiukkasten keskinäisiä vuorovaikutuksia. Sulaessa ja höyrystyessä hiukkasten välinen vuorovaikutusenergia kasvaa. Molekyylien sisäiset kemialliset sidokset eivät kuitenkaan katkea.
+- Kun paine pysyy vakiona, puhtaan aineen lämpötila pysyy vakiona olomuodon muutoksen aikana. Sulattamiseen tarvitaan $Q = sm$ ja höyrystämiseen $Q = rm$. Vedelle $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
 - Lämpenemiskäyrässä nousevat osat ovat lämpenemistä ($Q = cm\Delta T$). Vaakasuorat osat ovat olomuodon muutoksia.
 - Kiehumispiste riippuu paineesta. Faasikaavio kertoo aineen olomuodon lämpötilan ja paineen mukaan.
 - Ominaishöyrystymislämpö voidaan mitata kiehuttamalla vettä uppokuumentimella vaa'an päällä: $r = Pt/\Delta m$. Tässä $\Delta m$ on vaa'an lukeman muutos.

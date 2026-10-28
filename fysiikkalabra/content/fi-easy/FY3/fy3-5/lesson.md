@@ -46,7 +46,7 @@
 ## Ydinajatus
 Luvussa *Työ ja energia* opit, että työ siirtää energiaa. Joulen koe näytti, että mekaaninen työ voi lämmittää vettä. Painon työ kasvatti veden sisäenergiaa, vaikka vettä ei lämmitetty. Vesi ei sisällä ”lämpöä”.
 
-Systeemin sisäenergia $U$ on kahden energian summa. Ensimmäinen on hiukkasten liike-energia. Toinen on hiukkasten välisten vuorovaikutusten energia. (Systeemi on se kappale tai aine, jota tutkit.) Mikromallin mukaan lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Kun kaasun tai nesteen lämpötila nousee, sen sisäenergia kasvaa. Sisäenergia riippuu myös aineen määrästä. Iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
+Systeemin sisäenergia $U$ on kahden energian summa. Ensimmäinen on hiukkasten liike-energia. Toinen on hiukkasten välisten vuorovaikutusten energia. (Systeemi on se kappale tai aine, jota tutkit.) Luvussa *Energialajit ja energian säilyminen* tätä energiaa kutsuttiin lämpöenergiaksi. Tarkempi nimi on sisäenergia. Lämpötila kuvaa hiukkasten lämpöliikkeen voimakkuutta. Kaasussa lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Kun aineen lämpötila nousee eikä olomuoto muutu, hiukkasten liike voimistuu ja sisäenergia kasvaa. Lämpötila ja sisäenergia eivät silti ole sama asia. Kun olomuoto muuttuu, sisäenergia muuttuu, vaikka lämpötila pysyy samana. Esimerkiksi puhdas jää sulaa normaalipaineessa. Silloin sisäenergia kasvaa, mutta lämpötila pysyy $0\,{}^\circ\text{C}$:ssa. Sisäenergia riippuu myös aineen määrästä. Iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
 
 Systeemin sisäenergiaa voi muuttaa kahdella tavalla.
 
@@ -91,7 +91,7 @@ Toinen tapa on lämpö. Kaksi eri lämpötilassa olevaa kappaletta koskettaa toi
   <foreignObject x="344.5" y="261.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kuumasta kylmään}$</div></foreignObject>
 </svg>
 
-Energia säilyy. Kun systeemiin siirtyy energiaa lämpönä tai työnä, sen sisäenergia kasvaa täsmälleen siirtyneen energian verran. Kun energiaa siirtyy pois, sisäenergia pienenee yhtä paljon. Tämä on termodynamiikan ensimmäinen pääsääntö. Se on energian säilymisen laki kirjoitettuna lämmölle ja työlle.
+Energia säilyy. Oletetaan, että systeemin liike- ja potentiaalienergia eivät muutu. Kun systeemiin siirtyy energiaa lämpönä tai työnä, sen sisäenergia kasvaa täsmälleen siirtyneen energian verran. Kun energiaa siirtyy pois, sisäenergia pienenee yhtä paljon. Tämä on termodynamiikan ensimmäinen pääsääntö. Se on energian säilymisen laki kirjoitettuna lämmölle ja työlle.
 
 Eristetty systeemi on suljettu systeemi. Siihen ei siirry energiaa lämpönä eikä työnä, eikä siitä siirry pois. Sen kokonaisenergia pysyy vakiona. Energia voi silti vaihtaa muotoa systeemin sisällä.
 
@@ -154,7 +154,7 @@ Kaikki termit ovat jouleja. Työn yksikkö oli sama luvussa *Työ ja energia*. M
 </svg>
 
 ## Esimerkki
-Pumpun sylinterissä on ilmaa. Mäntää painetaan alas. Ympäristö tekee ilmaan työn 150 J. Samalla kuumenevasta ilmasta siirtyy sylinterin seinien kautta ympäristöön lämpömäärä 40 J. Kuinka paljon ilman sisäenergia muuttuu?
+Pumpun sylinterissä on ilmaa. Mäntää painetaan alas. Ympäristö tekee ilmaan työn $150\,\text{J}$. Samalla kuumenevasta ilmasta siirtyy sylinterin seinien kautta ympäristöön lämpömäärä $40\,\text{J}$. Kuinka paljon ilman sisäenergia muuttuu?
 
 <!-- vaihe -->
 
@@ -196,7 +196,7 @@ Pumpun sylinterissä on ilmaa. Mäntää painetaan alas. Ympäristö tekee ilmaa
 
 <!-- vaihe -->
 
-**Järkevyys.** Työ toi ilmaan 150 J. Lämpönä lähti vain 40 J. Siksi sisäenergian on kasvettava ja ilman lämpötilan on noustava. Tehdään nyt sama 150 J:n työ niin hitaasti, että kaikki työn tuoma energia ehtii siirtyä lämpönä pois. Silloin $Q = -150\,\text{J}$ ja $\Delta U = 0$, eikä lämpötila muutu. Esimerkissä lämpöä lähtee vähemmän. Tulos on siis tämän rajatapauksen ja pelkän työn $150\,\text{J}$ välissä.
+**Järkevyys.** Työ toi ilmaan $150\,\text{J}$. Lämpönä lähti vain $40\,\text{J}$. Siksi sisäenergian on kasvettava ja ilman lämpötilan on noustava. Tehdään nyt sama $150\,\text{J}$:n työ niin hitaasti, että kaikki työn tuoma energia ehtii siirtyä lämpönä pois. Silloin $Q = -150\,\text{J}$ ja $\Delta U = 0$, eikä lämpötila muutu. Esimerkissä lämpöä lähtee vähemmän. Tulos on siis tämän rajatapauksen ja pelkän työn $150\,\text{J}$ välissä.
 
 ## Yleinen virhekäsitys
 Arkikielessä sanotaan, että kappaleessa ”on lämpöä” tai että lämpö ”varastoituu”. Fysiikassa lämpö on energian siirtymistä lämpötilaeron vuoksi. Kappaleeseen varastoituu sisäenergiaa.
@@ -206,7 +206,7 @@ Toinen virhe on pitää lämpötilaa ja sisäenergiaa samana asiana. Kuuman kipi
 Kolmas virhe on ajatella, että sisäenergiaa voi muuttaa vain lämmittämällä. Pumpun ilma kuumenee ilman lämmönlähdettä, koska siihen tehdään työtä.
 
 ## Tiivistelmä
-- Sisäenergia $U$ on systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Se kasvaa, kun lämpötila nousee. Se riippuu myös aineen määrästä.
+- Sisäenergia $U$ on systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Se kasvaa, kun lämpötila nousee eikä olomuoto muutu. Se riippuu myös aineen määrästä. Lämpötila ja sisäenergia eivät ole sama asia.
 - Lämpö on energian siirtymistä kuumemmasta kylmempään lämpötilaeron vuoksi. Siirtynyt energia on lämpömäärä $Q$. Kappaleella ei ”ole lämpöä”.
 - Sisäenergiaa muuttavat lämpö ja työ: $\Delta U = Q + W$. Sisään siirtyvä energia on positiivista. Ulos siirtyvä energia on negatiivista.
 - Energia säilyy. Tämä on termodynamiikan ensimmäinen pääsääntö. Eristetyn systeemin kokonaisenergia pysyy vakiona.

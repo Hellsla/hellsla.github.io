@@ -1,6 +1,6 @@
 # Changes of state
 
-> **Why** does the temperature of boiling water not rise above 100 °C, even though the hob is on full and energy keeps flowing into the pan?
+> **Why** does the temperature of boiling water not rise above $100\,{}^\circ\text{C}$, even though the hob is on full and energy keeps flowing into the pan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a pan on a kitchen hob with water boiling vigorously. The hotplate glows red and energy keeps flowing from it into the pan. There are bubbles in the water and steam rises from it. The column of a thermometer dipped in the water stays at the same height." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy37h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy37h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy37h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#c92a2a"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy37h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
@@ -84,7 +84,7 @@
 </svg>
 
 ## Key idea
-Matter exists in three states: solid, liquid and gas. In the micro model, the particles of a solid vibrate in place, held together by each other. In a liquid, they move past each other but stay together. In a gas, they move freely and only rarely collide. In a change of state, the bonds between the particles change: in melting, the order of the solid breaks down, and in vaporisation, the particles break completely free of each other. The opposite changes are freezing and condensation. Ice can also sublimate straight into vapour, as in laundry drying in freezing weather.
+Matter exists in three states: solid, liquid and gas. In the micro model, the particles of a solid vibrate in place, held together by each other. In a liquid, they move past each other but stay together. In a gas, they move freely and only rarely collide. In a change of state, the interactions between the particles change: in melting, the regular order of the solid breaks down, and in vaporisation, the particles move far apart from each other. The particles themselves do not change: when ice melts or water boils, the chemical bonds inside the water molecules do not break. The opposite changes are freezing and condensation. Ice can also sublimate straight into vapour, as in laundry drying in freezing weather.
 
 <svg data-fig="micro-model" viewBox="0 0 600 306" role="img" aria-label="Micro model, schematic diagram: in a solid the particles are bound to each other in a regular arrangement, in a liquid they are disordered but still in contact, and in a gas they are far apart and move freely. Arrows: the solid melts into a liquid, the liquid vaporises into a gas." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy37-ball" cx="0.35" cy="0.35" r="0.75"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a9d1f0"/></radialGradient></defs>
@@ -139,11 +139,14 @@ Matter exists in three states: solid, liquid and gas. In the micro model, the pa
   <foreignObject x="482.5" y="259.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas}$</div></foreignObject>
 </svg>
 
-A change of state needs energy but does not raise the temperature. When ice is heated, its temperature rises up to 0 °C. Then the temperature stays constant until all the ice has melted, even though energy keeps being transferred: the energy is used to break the bonds between the particles, that is, to increase the interaction energy between the particles, not to speed up their motion. For the same reason, boiling water stays at 100 °C even when the hob is on full: all the energy transferred is used to vaporise the water. The greater the power, the faster the water boils away, but it does not get any hotter. The energy that was taken up when the water vaporised is released again when the vapour condenses, and that is why steam at 100 °C burns worse than water at 100 °C.
+### Where does the energy go?
+Melting and vaporisation need energy but do not raise the temperature. When ice is heated, its temperature rises up to $0\,{}^\circ\text{C}$. Then the temperature stays constant until all the ice has melted, even though energy keeps being transferred. During melting and vaporisation, the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. When a pure substance changes state at constant pressure, its temperature stays constant, so the average kinetic energy of the particles does not increase.
 
-The quantity of heat needed for melting and vaporisation is directly proportional to the mass. The coefficients are properties of the substance: the specific latent heat of fusion $s$ tells you how much energy it takes to melt one kilogram, and the specific latent heat of vaporisation $r$ how much it takes to vaporise one kilogram. For water, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$. So vaporising takes almost seven times as much energy as melting, and more than five times as much as heating water from 0 °C to 100 °C.
+For the same reason, boiling water stays at $100\,{}^\circ\text{C}$ even when the hob is on full: the energy transferred vaporises water and does not raise its temperature. Steam takes up about 1700 times as much space as water, so as it expands it pushes the surrounding air. A small part of the energy needed for vaporisation is used for this work, and most of it increases the interaction energy between the molecules. The greater the power, the faster the water boils away, but it does not get any hotter. The energy that was taken up when the water vaporised is released again when the vapour condenses, and that is why steam at 100 °C burns worse than water at 100 °C.
 
-The boiling point depends on pressure. A phase diagram shows the state of a substance at each temperature and pressure: its curves join the melting, boiling and sublimation points at different pressures. On a mountain, where the atmospheric pressure is lower, water boils below 100 °C, and in a pressure cooker the pressure raises the boiling point above 100 °C, so food cooks faster.
+The quantity of heat needed for melting and vaporisation is directly proportional to the mass. The coefficients are properties of the substance: the specific latent heat of fusion $s$ tells you how much energy it takes to melt one kilogram, and the specific latent heat of vaporisation $r$ how much it takes to vaporise one kilogram. For water, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$. So vaporising takes almost seven times as much energy as melting, and more than five times as much as heating water from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$.
+
+The boiling point depends on pressure. A phase diagram shows the state of a substance at each temperature and pressure: its curves join the melting, boiling and sublimation points at different pressures. On a mountain, where the atmospheric pressure is lower, water boils below $100\,{}^\circ\text{C}$, and in a pressure cooker the pressure raises the boiling point above $100\,{}^\circ\text{C}$, so food cooks faster.
 
 <svg data-fig="phase-diagram" viewBox="0 0 600 350" role="img" aria-label="Phase diagram, schematic diagram: pressure p as a function of temperature T. The curves separate the solid, liquid and gas regions and meet at the triple point. At atmospheric pressure, water boils at 100 degrees; on a mountain the pressure is lower and the boiling point is lower." style="max-width:100%;font-size:24px">
   <line x1="95" y1="296" x2="490" y2="296" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -184,11 +187,11 @@ where $Q$ is the quantity of heat (J), $s$ is the specific latent heat of fusion
 
 | Water | Value |
 |---|---|
-| $s$ | 334 kJ/kg |
-| $r$ | 2260 kJ/kg |
-| $c$ (ice) | 2100 J/(kg·K) |
-| $c$ (water) | 4190 J/(kg·K) |
-| $c$ (steam) | 2000 J/(kg·K) |
+| $s$ | $334\,\text{kJ/kg}$ |
+| $r$ | $2260\,\text{kJ/kg}$ |
+| $c$ (ice) | $2100\,\text{J/(kg}\cdot\text{K)}$ |
+| $c$ (water) | $4190\,\text{J/(kg}\cdot\text{K)}$ |
+| $c$ (steam) | $2000\,\text{J/(kg}\cdot\text{K)}$ |
 
 In the table, $c$ is the specific heat capacity, which was introduced in chapter *Heating and cooling of a substance*.
 
@@ -216,7 +219,7 @@ A heating curve shows the temperature as a function of the energy transferred. O
 </svg>
 
 ## Worked example
-The specific latent heat of vaporisation of water is determined experimentally. An open calorimeter containing boiling water stands on a balance, and the water contains a 1000 W immersion heater. During five minutes (300 s), the balance reading falls by 128 g (an invented figure, not the result of a real measurement). What is the specific latent heat of vaporisation of water according to this reading?
+The specific latent heat of vaporisation of water is determined experimentally. An open calorimeter containing boiling water stands on a balance, and the water contains a $1000\,\text{W}$ immersion heater. During five minutes ($300\,\text{s}$), the balance reading falls by $128\,\text{g}$ (an invented figure, not the result of a real measurement). What is the specific latent heat of vaporisation of water according to this reading?
 
 <!-- vaihe -->
 
@@ -261,11 +264,11 @@ The specific latent heat of vaporisation of water is determined experimentally. 
 **Reasonableness.** The result $2.34\,\tfrac{\text{MJ}}{\text{kg}}$ is slightly greater than the table value $2.26\,\tfrac{\text{MJ}}{\text{kg}}$, by about $3.7\,\%$. This is the expected direction: some of the heater's energy passes through the vessel into the surrounding air and does not vaporise water, so the assumption "all the energy goes into the water" gives too large an $r$. With the table value, $\dfrac{300\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0.133\,\text{kg}$, or $133\,\text{g}$, would vaporise, only $5\,\text{g}$ more than was measured, so the result is correct to within a few per cent.
 
 ## Common misconception
-Many people think that adding heat always raises the temperature. In a change of state the temperature stays constant even though a lot of energy is transferred: melting ice takes as much energy as heating the same water from 0 °C to 80 °C. Another mistake is to treat ice at 0 °C and water at 0 °C as equally good coolants. Ice cools a drink much more effectively, because as it melts it takes in a lot of energy before it starts to warm up. A third mistake is to think that water always boils at 100 °C: the boiling point depends on pressure.
+Many people think that adding heat always raises the temperature. When a pure substance changes state at constant pressure, the temperature stays constant even though a lot of energy is transferred: melting ice takes as much energy as heating the same water from $0\,{}^\circ\text{C}$ to $80\,{}^\circ\text{C}$. Another mistake is to treat ice at 0 °C and water at 0 °C as equally good coolants. Ice cools a drink much more effectively, because as it melts it takes in a lot of energy before it starts to warm up. A third mistake is to think that water always boils at $100\,{}^\circ\text{C}$: the boiling point depends on pressure.
 
 ## Summary
-- The states of matter are solid, liquid and gas. In the micro model, a change of state means that the bonds between the particles break or form.
-- During a change of state the temperature stays constant. Melting needs $Q = sm$ and vaporising needs $Q = rm$; for water, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$.
+- The states of matter are solid, liquid and gas. In the micro model, a change of state changes the interactions between the particles: in melting and vaporisation the interaction energy between the particles increases, but the chemical bonds inside the molecules do not break.
+- At constant pressure, the temperature of a pure substance stays constant during a change of state. Melting needs $Q = sm$ and vaporising needs $Q = rm$; for water, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$.
 - In a heating curve, the rising parts are warming ($Q = cm\Delta T$) and the horizontal parts are changes of state.
 - The boiling point depends on pressure; a phase diagram tells you the state of a substance from its temperature and pressure.
 - The specific latent heat of vaporisation can be measured by boiling water with an immersion heater on a balance: $r = Pt/\Delta m$, where $\Delta m$ is the change in the balance reading.

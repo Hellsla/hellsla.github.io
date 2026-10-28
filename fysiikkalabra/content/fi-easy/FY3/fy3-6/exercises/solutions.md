@@ -6,7 +6,7 @@
 **Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 96\,{}^\circ\text{C} - 12\,{}^\circ\text{C} = 84\,\text{K}$. Lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
 **Sijoitus:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}8\,\text{kg} \cdot 84\,\text{K} = 633\,528\,\text{J} = 0{,}633\,528\,\text{MJ}$
 **Vastaus:** $0{,}63\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $1{,}8\,\text{kg}$.
-**Järkevyys:** Yhden kilogramman lämmittäminen yhdellä kelvinillä vaatii noin 4 kJ, joten lähes kahden kilon lämmittäminen noin 80 K vaatii noin $4\,\text{kJ} \cdot 2 \cdot 80 \approx 0{,}6\,\text{MJ}$. $Q$ on positiivinen, koska vesi lämpenee.
+**Järkevyys:** Yhden kilogramman lämmittäminen yhdellä kelvinillä vaatii noin $4\,\text{kJ}$, joten lähes kahden kilon lämmittäminen noin $80\,\text{K}$ vaatii noin $4\,\text{kJ} \cdot 2 \cdot 80 \approx 0{,}6\,\text{MJ}$. $Q$ on positiivinen, koska vesi lämpenee.
 
 ## fy3-6-L1-02
 **Annettu:** rauta, $m = 2{,}4\,\text{kg}$, $T_\text{alku} = 220\,{}^\circ\text{C}$, $T_\text{loppu} = 25\,{}^\circ\text{C}$; taulukosta $c = 450\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -16,7 +16,7 @@
 **Muunnokset:** Lämpötilan lasku on $220\,{}^\circ\text{C} - 25\,{}^\circ\text{C} = 195\,\text{K}$, sama kelvineinä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q_\text{luov} = 450\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2{,}4\,\text{kg} \cdot 195\,\text{K} = 210\,600\,\text{J} = 210{,}6\,\text{kJ}$
 **Vastaus:** $210\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}4\,\text{kg}$.
-**Järkevyys:** Raudan $c$ on pieni. Siksi raskas pannu luovuttaa suuresta jäähtymisestä huolimatta vain noin kolmasosan siitä energiasta, joka tarvitaan kahvinkeittimen 1,8 kg:n vesimäärän lämmittämiseen ($0{,}63\,\text{MJ}$).
+**Järkevyys:** Raudan $c$ on pieni. Siksi raskas pannu luovuttaa suuresta jäähtymisestä huolimatta vain noin kolmasosan siitä energiasta, joka tarvitaan kahvinkeittimen $1{,}8\,\text{kg}$:n vesimäärän lämmittämiseen ($0{,}63\,\text{MJ}$).
 
 ## fy3-6-L1-03
 **Annettu:** hiekka, $m = 50\,\text{kg}$, $T_\text{alku} = 14\,{}^\circ\text{C}$, $T_\text{loppu} = 32\,{}^\circ\text{C}$; taulukosta $c = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -26,7 +26,7 @@
 **Muunnokset:** $\Delta T = 32\,{}^\circ\text{C} - 14\,{}^\circ\text{C} = 18\,\text{K}$, sama kelvineinä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 50\,\text{kg} \cdot 18\,\text{K} = 720\,000\,\text{J} = 720\,\text{kJ}$
 **Vastaus:** $720\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $50\,\text{kg}$ ja muutoksessa $18\,\text{K}$.
-**Järkevyys:** Sama lämpömäärä nostaisi 50 kg:n vesimäärän lämpötilaa vain noin 3,4 K, koska veden $c$ on viisinkertainen. Siksi hiekka kuumenee rannalla vettä nopeammin.
+**Järkevyys:** Sama lämpömäärä nostaisi $50\,\text{kg}$:n vesimäärän lämpötilaa vain noin $3{,}4\,\text{K}$, koska veden $c$ on viisinkertainen. Siksi hiekka kuumenee rannalla vettä nopeammin.
 
 ## fy3-6-L1-04
 **Annettu:** vesi, $m = 1200\,\text{kg}$, $T_\text{alku} = 38{,}0\,{}^\circ\text{C}$, $T_\text{loppu} = 31{,}0\,{}^\circ\text{C}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -46,7 +46,7 @@
 **Muunnokset:** $\Delta T = -4{,}0\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 18\,\text{K}$, sama kelvineinä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 18\,\text{K} = 18\,900\,\text{J} = 18{,}9\,\text{kJ}$
 **Vastaus:** $19\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
-**Järkevyys:** Lämpötila nousee, joten $Q$ on positiivinen. Ole tarkka, kun vähennät miinusmerkkisiä lukemia: muutos on 18 K, ei 26 K. Jään $c$ on noin puolet veden arvosta. Siksi sama lämpötilan muutos vaatisi 0,50 kg:lle nestemäistä vettä noin kaksinkertaisen lämpömäärän.
+**Järkevyys:** Lämpötila nousee, joten $Q$ on positiivinen. Ole tarkka, kun vähennät miinusmerkkisiä lukemia: muutos on $18\,\text{K}$, ei $26\,\text{K}$. Jään $c$ on noin puolet veden arvosta. Siksi sama lämpötilan muutos vaatisi $0{,}50\,\text{kg}$:lle nestemäistä vettä noin kaksinkertaisen lämpömäärän.
 
 ## fy3-6-L2-01
 **Annettu:** kuuma vesi $m_1 = 160\,\text{g}$, $T_1 = 95\,{}^\circ\text{C}$; kylmä vesi $m_2 = 40\,\text{g}$, $T_2 = 8{,}0\,{}^\circ\text{C}$; molemmat vettä, ei lämpöhäviöitä
@@ -56,27 +56,28 @@
 **Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi. Massa on sekä osoittajassa että nimittäjässä, joten yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina. Tasapainoyhtälössä on vain lämpötilaeroja. Ratkaistussa kaavassa painojen summa on nimittäjässä. Siksi asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8{,}0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77{,}6\,{}^\circ\text{C}$
 **Vastaus:** $78\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpötilassa $95\,{}^\circ\text{C}$ ja massassa $40\,\text{g}$.
-**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä 95 °C:ta. Kuumaa vettä on nimittäin neljä kertaa enemmän. Energiatase toteutuu: $160\,\text{g} \cdot 17{,}4\,\text{K} = 40\,\text{g} \cdot 69{,}6\,\text{K}$.
+**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä $95\,{}^\circ\text{C}$:ta. Kuumaa vettä on nimittäin neljä kertaa enemmän. Energiatase toteutuu: $160\,\text{g} \cdot 17{,}4\,\text{K} = 40\,\text{g} \cdot 69{,}6\,\text{K}$.
 
 ## fy3-6-L2-02
-**Annettu:** $P = 2{,}4\,\text{kW}$, vesi $m = 1{,}5\,\text{kg}$, $T_\text{alku} = 15\,{}^\circ\text{C}$, $T_\text{loppu} = 95\,{}^\circ\text{C}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Kysytty:** lämmitysaika $t$ sekunteina
-**Periaate:** Energia säilyy. Kaikki keittimen energia siirtyy veteen. Silloin keittimen ajassa $t$ antama energia $Pt$ on yhtä suuri kuin veden lämmittämiseen tarvittava lämpömäärä $c m \Delta T$.
-**Kaava:** $P t = c m \Delta T$, missä $\Delta T = T_\text{loppu} - T_\text{alku}$, joten $t = \dfrac{c m \Delta T}{P}$
-**Muunnokset:** $P = 2{,}4\,\text{kW} = 2400\,\text{W} = 2400\,\tfrac{\text{J}}{\text{s}}$. $\Delta T = 95\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 80\,\text{K}$.
-**Sijoitus:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}5\,\text{kg} \cdot 80\,\text{K}}{2400\,\tfrac{\text{J}}{\text{s}}} = \dfrac{502\,800\,\text{J}}{2400\,\tfrac{\text{J}}{\text{s}}} = 209{,}5\,\text{s}$
-**Vastaus:** $210\,\text{s}$, kaksi merkitsevää numeroa kuten tehossa $2{,}4\,\text{kW}$ ja massassa $1{,}5\,\text{kg}$.
-**Järkevyys:** Noin 3,5 minuuttia vastaa kokemusta vedenkeittimestä. Todellisuudessa aika on hieman pidempi. Osa energiasta lämmittää nimittäin keitintä ja ilmaa. Yksiköt: $\dfrac{\text{J}}{\text{J/s}} = \text{s}$.
+**Annettu:** teho $P = 100\,\text{W}$, kappaleen massa $m = 0{,}50\,\text{kg}$, lämpötila ajan funktiona kuvaajassa; kaikki lämmittimen energia siirtyy kappaleeseen
+**Kysytty:** metallin ominaislämpökapasiteetti $c$
+**Periaate:** Energia säilyy. Kaikki lämmittimen energia siirtyy kappaleeseen. Silloin lämmittimen ajassa $t$ antama energia $Pt$ on yhtä suuri kuin kappaleen lämmittämiseen tarvittava lämpömäärä $cm\Delta T$. Kuvaajasta saadaan aika ja lämpötilan muutos.
+**Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$. Se päättyy risteykseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Lämmitysaika on siis $t = 180\,\text{s} - 0\,\text{s} = 180\,\text{s}$. Lämpötilan muutos on $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,\text{K}$.
+**Kaava:** $Pt = cm\Delta T$, josta $c = \dfrac{Pt}{m\Delta T}$
+**Muunnokset:** Ei tarvita: $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lämpötilojen erotus on sama celsiusasteina ja kelvineinä.
+**Sijoitus:** $c = \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0{,}50\,\text{kg} \cdot 40\,\text{K}} = \dfrac{18\,000\,\text{J}}{20\,\text{kg}\cdot\text{K}} = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Vastaus:** $900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Kuvaajan arvot luetaan tarkasti ruudukosta. Siksi hyväksytään $870\ldots930\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+**Järkevyys:** Arvo on sama kuin alumiinin ominaislämpökapasiteetti taulukossa, joten kappale voi olla alumiinia. Arvo on selvästi pienempi kuin veden $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Se sopii siihen, että metalli lämpenee nopeasti. Yksiköt: $\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
 
 ## fy3-6-L2-03
 **Annettu:** vesi $m = 80\,\text{kg}$, $T_\text{alku} = 9{,}0\,{}^\circ\text{C}$, $Q = 15\,\text{MJ}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** loppulämpötila $T_\text{loppu}$
-**Periaate:** Kaikki vastuksen luovuttama lämpö jää veteen. Vesi lämpenee kiehumatta, joten $Q = c m \Delta T$. Ensin ratkaistaan lämpötilan muutos. Sitten se lisätään alkulämpötilaan.
+**Periaate:** Kaikki vastuksen luovuttama lämpö siirtyy veteen ja kasvattaa sen sisäenergiaa. Vesi lämpenee kiehumatta, joten $Q = c m \Delta T$. Ensin ratkaistaan lämpötilan muutos. Sitten se lisätään alkulämpötilaan.
 **Kaava:** $\Delta T = \dfrac{Q}{c m}$, joten $T_\text{loppu} = T_\text{alku} + \dfrac{Q}{c m}$
 **Muunnokset:** $Q = 15\,\text{MJ} = 15 \cdot 10^6\,\text{J} = 15\,000\,000\,\text{J}$. Kelvineinä saatu muutos lisätään suoraan celsiuslukemaan. Asteikkojen askel on nimittäin sama.
 **Sijoitus:** $\Delta T = \dfrac{15\,000\,000\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg}} = 44{,}75\,\text{K}$, joten $T_\text{loppu} = 9{,}0\,{}^\circ\text{C} + 44{,}75\,{}^\circ\text{C} = 53{,}75\,{}^\circ\text{C}$
 **Vastaus:** $54\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpömäärässä $15\,\text{MJ}$ ja massassa $80\,\text{kg}$.
-**Järkevyys:** Lämpötilan muutos lisätään alkulämpötilaan. Siksi vastaukseksi ei kelpaa pelkkä 45 K. Noin 54 °C on tavallinen lämminvesivaraajan lämpötila, ja vesi pysyy nesteenä.
+**Järkevyys:** Lämpötilan muutos lisätään alkulämpötilaan. Siksi vastaukseksi ei kelpaa pelkkä $45\,\text{K}$. Noin $54\,{}^\circ\text{C}$ on tavallinen lämminvesivaraajan lämpötila, ja vesi pysyy nesteenä.
 
 ## fy3-6-L2-04
 **Annettu:** alumiini $m_1 = 0{,}25\,\text{kg}$, $T_1 = 95\,{}^\circ\text{C}$; vesi $m_2 = 0{,}40\,\text{kg}$, $T_2 = 18\,{}^\circ\text{C}$; taulukosta $c_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
@@ -86,12 +87,12 @@
 **Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina. Tasapainoyhtälössä on vain lämpötilaeroja. Ratkaistussa kaavassa painojen summa on nimittäjässä. Siksi asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ ja $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27{,}11\,{}^\circ\text{C}$
 **Vastaus:** $27\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massoissa.
-**Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen kauhan lämpökapasiteettiin verrattuna. Siksi kauha jäähtyy noin 68 K, mutta vesi lämpenee vain noin 9 K. Lämpötilojen keskiarvo 56,5 °C olisi väärin.
+**Järkevyys:** Veden lämpökapasiteetti on noin 7,5-kertainen kauhan lämpökapasiteettiin verrattuna. Siksi kauha jäähtyy noin $68\,\text{K}$, mutta vesi lämpenee vain noin $9\,\text{K}$. Lämpötilojen keskiarvo $56{,}5\,{}^\circ\text{C}$ olisi väärin.
 
 ## fy3-6-L3-01
 **Annettu:** vesi $m_\text{v} = 20\,\text{kg}$, $T_\text{v} = 10\,{}^\circ\text{C}$, tavoite $T = 40\,{}^\circ\text{C}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kivet $T_\text{k} = 300\,{}^\circ\text{C}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei häviöitä eikä höyrystymistä
 **Kysytty:** kivien massa $m_\text{k}$
-**Periaate:** Energia säilyy. Kivien luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Tasapainossa kivet ja vesi ovat samassa lämpötilassa. Siksi kivet jäähtyvät 40 °C:seen asti, eivät 0 °C:seen.
+**Periaate:** Energia säilyy. Kivien luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Tasapainossa kivet ja vesi ovat samassa lämpötilassa. Siksi kivet jäähtyvät $40\,{}^\circ\text{C}$:seen asti, eivät $0\,{}^\circ\text{C}$:seen.
 **Kaava:** $c_\text{k} m_\text{k} (T_\text{k} - T) = c_\text{v} m_\text{v} (T - T_\text{v})$, josta $m_\text{k} = \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\text{v} = 30\,\text{K}$ ja $T_\text{k} - T = 260\,\text{K}$. Muut suureet ovat SI-yksiköissä.
 **Sijoitus:** $m_\text{k} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 20\,\text{kg} \cdot 30\,\text{K}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 260\,\text{K}} = \dfrac{2\,514\,000\,\text{J}}{208\,000\,\tfrac{\text{J}}{\text{kg}}} = 12{,}09\,\text{kg}$
@@ -110,8 +111,8 @@
 
 ## fy3-6-L3-03
 **Annettu:** vesi $V_\text{v} = 1{,}0\,\text{m}^3$, $m_\text{v} = 1000\,\text{kg}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; hiekka $1600\,\text{kg}$ kuutiometrissä, $c_\text{h} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kummallakin $20\,{}^\circ\text{C}$–$70\,{}^\circ\text{C}$
-**Kysytty:** hiekan tilavuus $V_\text{h}$, joka varastoi saman lämpömäärän
-**Periaate:** Varasto sitoo lämpömäärän $Q = c m \Delta T$. Kun $Q$ ja $\Delta T$ ovat samat, myös lämpökapasiteetit $c m$ ovat samat. Tilavuus saadaan massasta tiheyden avulla.
+**Kysytty:** hiekan tilavuus $V_\text{h}$, johon varastoituu yhtä paljon energiaa kuin vesivarastoon
+**Periaate:** Kun varastoon siirtyy lämpömäärä $Q = c m \Delta T$, sen sisäenergia kasvaa saman verran. Jäähtyessään se luovuttaa saman energian. Kun $Q$ ja $\Delta T$ ovat samat, myös lämpökapasiteetit $c m$ ovat samat. Tilavuus saadaan massasta tiheyden avulla.
 **Kaava:** $c_\text{h} m_\text{h} = c_\text{v} m_\text{v}$, joten $m_\text{h} = \dfrac{c_\text{v} m_\text{v}}{c_\text{h}}$ ja $V_\text{h} = \dfrac{m_\text{h}}{\rho_\text{h}}$
 **Muunnokset:** Hiekan tiheys on $\rho_\text{h} = 1600\,\tfrac{\text{kg}}{\text{m}^3}$. Lämpötila-alue $\Delta T = 50\,\text{K}$ supistuu pois, joten sitä ei tarvita.
 **Sijoitus:** $m_\text{h} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1000\,\text{kg}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}} = 5237{,}5\,\text{kg}$, joten $V_\text{h} = \dfrac{5237{,}5\,\text{kg}}{1600\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}27\,\text{m}^3$

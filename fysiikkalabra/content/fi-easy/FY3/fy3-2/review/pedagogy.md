@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 742d1e1e652bbe5c
+CONTENT-HASH: 8801de60ff3bed8c
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -10,9 +10,11 @@ CONTENT-HASH: 742d1e1e652bbe5c
 - inquiry.json activities[0].question — added a short explanation of "yksiselitteisesti"
 - lesson.md:225, 313, 317, 331, 359, 367 — lifting paragraph, example steps Tunnetut ja kysytty / Periaate / Yksikkömuunnokset, the 8,0 J warning and the summary bullet on energy transfer were dense → simplified
 - figures.json — the six figure descriptions (aria texts) were left identical to the Finnish → shorter sentences; figures redrawn
+- fy3-2 update: new long prose (L1-04 solution, check-c2 feedback, lesson stove paragraph) written in short sentences; two prompts that were still as in Finnish (check-c2 prompt, L2-04 text) split.
 
 ## Polish
 - Short labels, goals and criteria that were already simple are kept as in the Finnish.
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): every text block read for Selkeä suomi (short sentences, common words, physics terms kept); cognitive demand, hints, feedback-to-option match and correct answers unchanged; button names *Vedä*, *Nopeus* match the sim.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson text, check-c2 multiple-choice item, renumbered check items, trimmed exit ticket, new figure description and unit math.

@@ -1,6 +1,6 @@
 # Heat transfer, energy balance and climate change
 
-> **Why** is the mean temperature of the Earth about +15 °C and not below freezing, even though the Earth radiates as much energy into space as it receives from the Sun?
+> **Why** is the mean temperature of the Earth about +$15\,{}^\circ\text{C}$ and not below freezing, even though the Earth radiates as much energy into space as it absorbs from the Sun?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: the Earth seen from space, with a thin atmosphere around it. The Sun shines at the left edge of the picture, and stars twinkle in the black sky." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#ffc078"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy312h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy312h-clip"><circle cx="800" cy="300" r="210"/></clipPath></defs>
@@ -116,7 +116,9 @@
 </svg>
 
 ## Key idea
-Heat always transfers by itself from warmer to colder in three ways. In conduction, energy passes through matter from one particle to the next, as faster vibrating particles nudge their slower neighbours. Metals conduct heat well, and air and wool conduct it poorly. In convection, a warm liquid or gas flows and carries energy with it: warm air rises above a radiator, because it has expanded and is lighter than the surrounding air. In thermal radiation, an object emits electromagnetic radiation, which needs no medium. This is how the Sun's energy reaches the Earth through empty space, and how the glow of a fireplace warms your face. All objects radiate, and the hotter an object is, the more radiation it emits and the shorter the wavelengths of that radiation are.
+Because of a temperature difference, energy transfers by itself, as a net amount, from a warmer object to a colder one. Energy that transfers in this way is called heat, and it transfers in three ways. In conduction, energy passes through matter from one particle to the next, as faster vibrating particles nudge their slower neighbours. Metals conduct heat well, because in them free electrons also carry energy, and they carry most of it; air and wool conduct it poorly. In convection, a warm liquid or gas flows and carries energy with it: warm air rises above a radiator, because it has expanded and is lighter than the surrounding air.
+
+In thermal radiation, an object emits electromagnetic radiation, which needs no medium. This is how the Sun's energy reaches the Earth through empty space, and how the glow of a fireplace warms your face. All objects radiate, and the hotter an object is, the more radiation it emits and the shorter the wavelengths of that radiation are. Thermal radiation therefore leaves both objects, so the colder object also radiates towards the warmer one. The warmer one radiates more, however, so the net transfer of energy is to the colder object.
 
 <svg data-fig="heat-transfer" viewBox="0 0 600 300" role="img" aria-label="The three ways of heat transfer, schematic diagram. Conduction: heat travels through a metal rod from the hot end to the cold end. Convection: warm water rises in the middle of a pot and cooled water sinks at the edges, so the water circulates. Radiation: a hot object emits radiation, which travels through empty space." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy312-rod" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.35" stop-color="#f2a69c"/><stop offset="0.7" stop-color="#c4ccd4"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy312-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy312-hot" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></radialGradient></defs>
@@ -150,13 +152,13 @@ Heat always transfers by itself from warmer to colder in three ways. In conducti
 </svg>
 
 ### Heat losses of a building
-A large part of the heating energy of a house is used because heat is conducted out through the walls, roof, windows and floor. The heat insulation of a building part is described by its U-value, or thermal transmittance, which tells you how many watts of thermal power pass through one square metre when the difference between the indoor and outdoor temperature is one kelvin. The smaller the U-value, the better the structure insulates. The U-value of a modern wall is about 0.17 W/(m²·K), but even a good window has about 1.0 W/(m²·K), so a small window lets through as much heat as many times its area of wall. Good insulation saves energy and reduces the emissions from heating.
+A large part of the heating energy of a house is used because heat is conducted out through the walls, roof, windows and floor. The heat insulation of a building part is described by its U-value, or thermal transmittance, which tells you how many watts of thermal power pass through one square metre when the difference between the indoor and outdoor temperature is one kelvin. The smaller the U-value, the better the structure insulates. The U-value of a modern wall is about $0.17\,\text{W/(m}^2\text{}\cdot\text{K)}$, but even a good window has about $1.0\,\text{W/(m}^2\text{}\cdot\text{K)}$, so a small window lets through as much heat as many times its area of wall. Good insulation saves energy and reduces the emissions from heating.
 
 ### Energy balance
-The temperature of an object stays constant when the power coming into it is equal to the power leaving it. This is called energy balance. The Earth receives energy as radiation from the Sun, and about 30 % of it is reflected straight back into space by clouds, ice and light surfaces. The rest is absorbed, and the Earth radiates the same power away as long-wavelength thermal radiation. Without an atmosphere, the balance would settle at a mean temperature of about −18 °C.
+The temperature of an object stays constant when the power coming into it is equal to the power leaving it. This is called energy balance. The Earth receives energy as radiation from the Sun, and about $30\,\%$ of it is reflected straight back into space by clouds, ice and light surfaces. The rest is absorbed, and the Earth radiates the same power away as long-wavelength thermal radiation. Without an atmosphere, the balance would settle at a mean temperature of about $-18\,{}^\circ\text{C}$.
 
 ### Greenhouse effect
-Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly through, although about a fifth of it is absorbed in the atmosphere. They absorb the thermal radiation emitted by the ground and radiate part of it back down. The ground therefore receives more energy than from the Sun alone, and the balance settles at about +15 °C. This is called the greenhouse effect, and it answers the question at the start.
+Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly through, although about a fifth of it is absorbed in the atmosphere. They absorb the thermal radiation emitted by the ground and radiate part of it back down. The ground therefore receives more energy than from the Sun alone, and the balance settles at about +$15\,{}^\circ\text{C}$. This is called the greenhouse effect, and it answers the question at the start.
 
 <svg data-fig="energy-balance" viewBox="0 0 600 300" role="img" aria-label="Energy balance of the Earth, schematic diagram. Radiation from the Sun passes through the atmosphere to the ground; part of it is reflected back into space. The ground radiates thermal radiation upwards, and the greenhouse gases of the atmosphere radiate part of it back down." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy312-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy312-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><radialGradient id="fy312-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffc078"/></radialGradient></defs>
@@ -176,7 +178,7 @@ Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly t
 </svg>
 
 ### Climate change
-The use of fossil fuels has raised the carbon dioxide concentration of the atmosphere from about 280 parts per million to over 420 parts per million. When greenhouse gases are added, for a while less energy escapes into space than arrives from the Sun. Today the difference is about 1 W for every square metre of the Earth. The extra energy warms the oceans, the land and the air until a new balance settles at a higher temperature. This is called climate change. A power difference that looks small is huge over the whole area of the Earth, and most of it is stored in the oceans, whose large heat capacity slows the warming down but also keeps it going for a long time. Energy choices such as insulation, heat pumps and zero-emission power plants are therefore also ethical choices that affect future generations.
+Human activity, mainly the use of fossil fuels, has raised the carbon dioxide concentration of the atmosphere from about 280 parts per million to over 420 parts per million. When greenhouse gases are added, for a while less energy escapes into space than arrives from the Sun. Today the difference is about $1\,\text{W}$ for every square metre of the Earth. The extra energy warms the oceans, the land and the air until a new balance settles at a higher temperature. This is called climate change. A power difference that looks small is huge over the whole area of the Earth, and most of it is stored in the oceans, whose large heat capacity slows the warming down but also keeps it going for a long time. Energy choices such as insulation, heat pumps and zero-emission power plants are therefore also ethical choices that affect future generations.
 
 ## Formula: Thermal power and U-value
 The thermal power conducted through a building part is
@@ -208,7 +210,7 @@ where $P$ is the thermal power (W), $U$ is the U-value of the building part (W/(
 
 
 ## Worked example
-The walls of a detached house have an area of 120 m² and a U-value of 0.17 W/(m²·K), and the windows have an area of 20.0 m² and a U-value of 1.0 W/(m²·K). It is 21 °C indoors and −15 °C outdoors. How large is the thermal power conducted through the walls and windows, and how much energy does it transfer in one day?
+The walls of a detached house have an area of 120 m² and a U-value of $0.17\,\text{W/(m}^2\text{}\cdot\text{K)}$, and the windows have an area of 20.0 m² and a U-value of $1.0\,\text{W/(m}^2\text{}\cdot\text{K)}$. It is $21\,{}^\circ\text{C}$ indoors and $-15\,{}^\circ\text{C}$ outdoors. How large is the thermal power conducted through the walls and windows, and how much energy does it transfer in one day?
 
 <!-- vaihe -->
 
@@ -259,10 +261,10 @@ The walls of a detached house have an area of 120 m² and a U-value of 0.17 W/(m
 Many people mix up the greenhouse effect and ozone depletion, although they are different things: ozone depletion lets more ultraviolet radiation through, but it hardly warms the Earth. Another mistake is to think that the greenhouse effect is entirely harmful. The natural greenhouse effect keeps the Earth habitable, and the problem is its strengthening because of human emissions. A third mistake is to believe that a woollen sweater produces heat. It only slows down the conduction and convection of heat away from the body, just as the insulation in a wall slows down the escape of heat from a house.
 
 ## Summary
-- Heat transfers by conduction, convection and thermal radiation, always from warmer to colder.
+- Heat transfers by conduction, convection and thermal radiation, and because of a temperature difference the net transfer of energy is from the warmer object to the colder one. All objects emit thermal radiation, the colder one too.
 - The thermal power conducted through a building part is $P = UA\Delta T$. A small U-value means good heat insulation.
 - In energy balance the power coming in and the power going out are equal, and the temperature stays constant.
-- Greenhouse gases absorb the thermal radiation of the ground and radiate part of it back, which raises the equilibrium temperature of the ground from about −18 °C to about +15 °C.
+- Greenhouse gases absorb the thermal radiation of the ground and radiate part of it back, which raises the equilibrium temperature of the ground from about $-18\,{}^\circ\text{C}$ to about +$15\,{}^\circ\text{C}$.
 - An increase in greenhouse gases breaks the balance for a while, and the Earth warms until a new balance settles at a higher temperature.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a detached house on a winter night. Heat escapes outwards through the windows and the roof, shown by orange arrows. There is snow on the ground." style="max-width:100%;font-size:24px">

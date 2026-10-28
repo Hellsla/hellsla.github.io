@@ -1,11 +1,7 @@
 [
   {
-    "q": "Crushed ice is heated. The temperature rises to 0 °C and then stays at 0 °C until all the ice has melted, even though energy is transferred all the time. Use the micro model to explain where the energy goes.",
-    "a": "The energy is used to break the bonds between the particles, that is, to increase the interaction energy between the particles. The kinetic energy of the particles does not increase, so the temperature does not rise until all the ice has melted."
-  },
-  {
-    "q": "Water is boiling in a pan. The hob is turned up to full. What happens to the temperature of the water, and where does the extra energy go?",
-    "a": "The temperature stays at 100 °C. The extra energy is used to vaporise the water, so the water boils away faster but does not get hotter."
+    "q": "Crushed ice is heated. The temperature rises to $0\\,{}^\\circ\\text{C}$ and then stays at $0\\,{}^\\circ\\text{C}$ until all the ice has melted, even though energy is transferred all the time. Use the micro model to explain where the energy goes.",
+    "a": "The energy transferred during melting changes the interactions between the particles: the regular arrangement of the ice breaks down, and the interaction energy between the particles increases. The water molecules themselves stay intact. The temperature stays at $0\\,{}^\\circ\\text{C}$, so the average kinetic energy of the particles does not increase until all the ice has melted."
   },
   {
     "q": "A heating curve has rising and horizontal parts. What happens in each, and which formula applies?",

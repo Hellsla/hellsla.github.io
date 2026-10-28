@@ -73,7 +73,7 @@
 </svg>
 
 ## Ydinajatus
-Kun kappaleeseen siirtyy lämpöä, sen sisäenergia kasvaa ja lämpötila nousee. Kokeissa on havaittu, että tarvittava lämpömäärä on suoraan verrannollinen kahteen asiaan: lämpötilan muutokseen ja kappaleen massaan. Kaksi kertaa suurempi lämpötilan nousu vaatii kaksinkertaisen lämpömäärän. Kaksinkertainen vesimäärä vaatii myös kaksinkertaisen lämpömäärän. Lisäksi lämpömäärä riippuu aineesta. Kilogramman veden lämmittäminen yhdellä asteella vaatii noin 4,2 kJ. Kilogramman raudan lämmittäminen vaatii vain noin 0,45 kJ. Aineelle ominainen kerroin on ominaislämpökapasiteetti $c$. Sen yksikkö on J/(kg·K). Se kertoo, kuinka paljon energiaa tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä. Sama määrä energiaa vapautuu, kun aine jäähtyy yhden kelvinin.
+Kun kappaleeseen siirtyy lämpöä eikä sen olomuoto muutu, sen sisäenergia kasvaa ja lämpötila nousee. Kokeissa on havaittu, että tarvittava lämpömäärä on suoraan verrannollinen kahteen asiaan: lämpötilan muutokseen ja kappaleen massaan. Kaksi kertaa suurempi lämpötilan nousu vaatii kaksinkertaisen lämpömäärän. Kaksinkertainen vesimäärä vaatii myös kaksinkertaisen lämpömäärän. Lisäksi lämpömäärä riippuu aineesta. Kilogramman veden lämmittäminen yhdellä asteella vaatii noin $4{,}2\,\text{kJ}$. Kilogramman raudan lämmittäminen vaatii vain noin $0{,}45\,\text{kJ}$. Aineelle ominainen kerroin on ominaislämpökapasiteetti $c$. Sen yksikkö on J/(kg·K). Se kertoo, kuinka paljon energiaa tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä. Sama määrä energiaa vapautuu, kun aine jäähtyy yhden kelvinin.
 
 Tärkeä syy on tämä: veden ominaislämpökapasiteetti on poikkeuksellisen suuri. Vesi lämpenee auringossa hitaasti ja jäähtyy illalla hitaasti. Hiekan $c$ on noin viidesosa veden arvosta. Siksi hiekka kuumenee samalla energialla moninkertaisesti enemmän. Lisäksi aurinko lämmittää hiekasta vain ohuen pintakerroksen. Vedessä lämpeneminen ulottuu syvemmälle. Veden suuri ominaislämpökapasiteetti tasaa rannikon lämpötiloja järvien lähellä. Siksi vesi on myös hyvä lämmönsiirtoaine lämmitysputkissa.
 
@@ -171,7 +171,7 @@ Kuuma ja kylmä kappale laitetaan yhteen eristettyyn astiaan. Silloin lämpöä 
 </svg>
 
 ## Kaava: Lämpömäärä ja lämpötasapaino
-Lämpömäärä, joka tarvitaan massan $m$ lämmittämiseen, on
+Kun aineen olomuoto ei muutu, massan $m$ lämmittämiseen tarvittava lämpömäärä on
 ```latex
 \begin{aligned}
 Q &= c m \Delta T \\
@@ -257,7 +257,7 @@ Tasapainolämpötila on siis alkulämpötilojen painotettu keskiarvo. Painoina o
 </svg>
 
 ## Esimerkki
-Kalorimetrissä on 0,300 kg vettä. Veden lämpötila on 20,0 °C. Veteen upotetaan 0,200 kg:n metallikappale. Kappale on kuumennettu kiehuvassa vedessä 100,0 °C:n lämpötilaan. Sekoituksen jälkeen lämpötila asettuu arvoon 24,5 °C. Mikä on metallin ominaislämpökapasiteetti? Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta.
+Kalorimetrissä on $0{,}300\,\text{kg}$ vettä. Veden lämpötila on $20{,}0\,{}^\circ\text{C}$. Veteen upotetaan $0{,}200\,\text{kg}$:n metallikappale. Kappale on kuumennettu kiehuvassa vedessä $100{,}0\,{}^\circ\text{C}$:n lämpötilaan. Sekoituksen jälkeen lämpötila asettuu arvoon $24{,}5\,{}^\circ\text{C}$. Mikä on metallin ominaislämpökapasiteetti? Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta.
 
 <!-- vaihe -->
 
@@ -298,16 +298,16 @@ Kalorimetrissä on 0,300 kg vettä. Veden lämpötila on 20,0 °C. Veteen upotet
 
 <!-- vaihe -->
 
-**Tulos.** Metallin ominaislämpökapasiteetti on noin $3{,}7 \cdot 10^2\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Veden lämpötilan muutos 4,5 K tunnetaan nimittäin vain kahden numeron tarkkuudella. Jos loppulukema olisi 0,1 K suurempi eli 24,6 °C, tulos olisi 383 J/(kg·K).
+**Tulos.** Metallin ominaislämpökapasiteetti on noin $3{,}7 \cdot 10^2\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Veden lämpötilan muutos $4{,}5\,\text{K}$ tunnetaan nimittäin vain kahden numeron tarkkuudella. Jos loppulukema olisi $0{,}1\,\text{K}$ suurempi eli $24{,}6\,{}^\circ\text{C}$, tulos olisi $383\,\text{J/(kg}\cdot\text{K)}$.
 
 <!-- vaihe -->
 
-**Järkevyys.** Arvo on lähellä kuparin ominaislämpökapasiteettia 385 J/(kg·K). Kappale on siis luultavasti kuparia. Häviöttömässä kalorimetrissä 0,200 kg:n kuparikappale nostaisi veden 24,6 °C:seen (kokeile simulaatiossa). Mitattu lukema on 0,1 K pienempi. Syy voi olla lukematarkkuus. Syy voi olla myös se, että todellisuudessa osa lämmöstä siirtyi kalorimetrin astiaan ja ilmaan. Vesi lämpeni vain 4,5 K, vaikka metalli jäähtyi 75,5 K. Veden lämpökapasiteetti on $0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$. Se on paljon enemmän kuin kappaleen lämpökapasiteetti $0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
+**Järkevyys.** Arvo on lähellä kuparin ominaislämpökapasiteettia $385\,\text{J/(kg}\cdot\text{K)}$. Kappale on siis luultavasti kuparia. Häviöttömässä kalorimetrissä $0{,}200\,\text{kg}$:n kuparikappale nostaisi veden $24{,}6\,{}^\circ\text{C}$:seen (kokeile simulaatiossa). Mitattu lukema on $0{,}1\,\text{K}$ pienempi. Syy voi olla lukematarkkuus. Syy voi olla myös se, että todellisuudessa osa lämmöstä siirtyi kalorimetrin astiaan ja ilmaan. Vesi lämpeni vain $4{,}5\,\text{K}$, vaikka metalli jäähtyi $75{,}5\,\text{K}$. Veden lämpökapasiteetti on $0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$. Se on paljon enemmän kuin kappaleen lämpökapasiteetti $0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia. Moni ajattelee myös, että samaan lämpötilaan lämmitetyt kappaleet ovat saaneet saman määrän energiaa. Näin ei ole. Kilon veden ja kilon raudan lämmittäminen 20 °C:sta 60 °C:seen vaatii vedelle lähes kymmenkertaisen energian.
+Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia. Moni ajattelee myös, että samaan lämpötilaan lämmitetyt kappaleet ovat saaneet saman määrän energiaa. Näin ei ole. Kilon veden ja kilon raudan lämmittäminen $20\,{}^\circ\text{C}$:sta $60\,{}^\circ\text{C}$:seen vaatii vedelle lähes kymmenkertaisen energian.
 
-Toinen virhe on laskea tasapainolämpötila keskiarvona. Esimerkki: 1,0 kg 80-asteista vettä kaadetaan 3,0 kg:aan 20-asteista vettä. Veden ominaislämpökapasiteetti $c$ on yhtälön molemmilla puolilla, joten se supistuu pois:
+Toinen virhe on laskea tasapainolämpötila keskiarvona. Esimerkki: $1{,}0\,\text{kg}$ 80-asteista vettä kaadetaan $3{,}0\,\text{kg}$:aan 20-asteista vettä. Veden ominaislämpökapasiteetti $c$ on yhtälön molemmilla puolilla, joten se supistuu pois:
 ```latex
 \begin{aligned}
 &1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
@@ -317,12 +317,12 @@ Toinen virhe on laskea tasapainolämpötila keskiarvona. Esimerkki: 1,0 kg 80-as
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole 50 °C vaan 35 °C. Kylmää vettä on nimittäin kolme kertaa enemmän kuin kuumaa. Saman tuloksen saa painotetulla keskiarvolla: $T = \tfrac{3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}}{4{,}0\,\text{kg}} = 35\,{}^\circ\text{C}$.
+Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$. Kylmää vettä on nimittäin kolme kertaa enemmän kuin kuumaa. Saman tuloksen saa painotetulla keskiarvolla: $T = \tfrac{3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}}{4{,}0\,\text{kg}} = 35\,{}^\circ\text{C}$.
 
 Kolmas virhe on muuntaa $\Delta T$ kelvineiksi lisäämällä 273. Lämpötilan muutos on sama kummallakin asteikolla.
 
 ## Tiivistelmä
-- Lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen: $Q = c m \Delta T$. Ominaislämpökapasiteetti $c$ riippuu aineesta. Vedellä se on suuri, 4190 J/(kg·K).
+- Lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen: $Q = c m \Delta T$. Ominaislämpökapasiteetti $c$ riippuu aineesta. Vedellä se on suuri, $4190\,\text{J/(kg}\cdot\text{K)}$.
 - Lämpökapasiteetti $C = cm$ kertoo, kuinka monta joulea koko kappaleen lämmittäminen yhdellä kelvinillä vaatii.
 - Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama: $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$. Tasapainolämpötila $T$ ratkaistaan keräämällä $T$:n termit samalle puolelle. Se on lämpökapasiteeteilla painotettu keskiarvo. Se ei yleensä ole alkulämpötilojen tavallinen keskiarvo.
 - Kalorimetrisellä mittauksella määritetään tuntemattoman aineen ominaislämpökapasiteetti veden avulla.

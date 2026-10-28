@@ -162,22 +162,22 @@ Kappale laajenee kaikkiin suuntiin samassa suhteessa kuin valokuvaa suurennettae
 ### Eri aineiden lämpölaajeneminen
 Eri aineet laajenevat eri tavalla. Kaksoismetalliliuska, jossa kaksi eri metallia on liitetty toisiinsa, taipuu lämmetessään, koska toinen metalli pitenee enemmän. Sellainen liuska avaa ja sulkee virtapiirin vanhanmallisissa termostaateissa.
 
-Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut vielä paljon enemmän. Nesteen hiukkaset eivät pysy paikoillaan. Niiden väliset sidokset ovat heikompia kuin kiinteässä aineessa, joten lämpötilan nousu loitontaa niitä toisistaan enemmän. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän. Kaasun tilavuus riippuu myös paineesta. Siihen palataan luvussa *Kaasujen tilanmuutokset ja Boylen laki*. Nestelämpömittari perustuu nesteen laajenemiseen: kun lämpötila nousee, nestepatsas kohoaa ohuessa putkessa.
+Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut vielä paljon enemmän. Nesteen hiukkaset eivät pysy paikoillaan. Niiden väliset vuorovaikutukset ovat heikompia kuin kiinteässä aineessa, joten lämpötilan nousu loitontaa niitä toisistaan enemmän. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän. Kaasun tilavuus riippuu myös paineesta. Siihen palataan luvussa *Kaasujen tilanmuutokset ja Boylen laki*. Nestelämpömittari perustuu nesteen laajenemiseen: kun lämpötila nousee, nestepatsas kohoaa ohuessa putkessa.
 
-Vesi on poikkeus. Lämpötilojen 0 °C ja 4 °C välillä se kutistuu lämmetessään, joten sen tiheys on suurin noin 4 °C:ssa. Tihein, 4-asteinen vesi painuu pohjalle. Kylmempi vesi jää pinnalle ja jäätyy. Siksi järvi jäätyy pinnalta alkaen. Pohjalla on talvellakin noin 4-asteista vettä, jossa kalat selviävät.
+Vesi on poikkeus. Lämpötilojen $0\,{}^\circ\text{C}$ ja $4\,{}^\circ\text{C}$ välillä se kutistuu lämmetessään, joten sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa. Tihein, 4-asteinen vesi painuu pohjalle. Kylmempi vesi jää pinnalle ja jäätyy. Siksi järvi jäätyy pinnalta alkaen. Pohjalla on talvellakin noin 4-asteista vettä, jossa kalat selviävät.
 
 ## Kaava: Pituuden ja tilavuuden lämpölaajeneminen
 Kun kappaleen lämpötila muuttuu $\Delta T$, sen pituus muuttuu
 ```latex
 \Delta L = \alpha L_0 \Delta T
 ```
-missä $\Delta L$ on pituuden muutos (m), $\alpha$ pituuden lämpötilakerroin (1/K), $L_0$ alkuperäinen pituus (m) ja $\Delta T$ lämpötilan muutos (K). Pituuden lämpötilakerroin $\alpha$ kertoo, kuinka suuren osan pituudestaan kappale pitenee, kun sen lämpötila nousee 1 K. Siksi muutos on verrannollinen alkuperäiseen pituuteen. Kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, joten se pitenee kaksi kertaa enemmän. Taulukon luku 12 tarkoittaa, että $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. Uusi pituus on $L = L_0 + \Delta L$. Jäähtyessä $\Delta T$ on negatiivinen, joten myös $\Delta L$ on negatiivinen eli kappale lyhenee.
+missä $\Delta L$ on pituuden muutos (m), $\alpha$ pituuden lämpötilakerroin (1/K), $L_0$ alkuperäinen pituus (m) ja $\Delta T$ lämpötilan muutos (K). Pituuden lämpötilakerroin $\alpha$ kertoo, kuinka suuren osan pituudestaan kappale pitenee, kun sen lämpötila nousee $1\,\text{K}$. Siksi muutos on verrannollinen alkuperäiseen pituuteen. Kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, joten se pitenee kaksi kertaa enemmän. Taulukon luku 12 tarkoittaa, että $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. Uusi pituus on $L = L_0 + \Delta L$. Jäähtyessä $\Delta T$ on negatiivinen, joten myös $\Delta L$ on negatiivinen eli kappale lyhenee.
 
 Nesteiden (ja vakiopaineessa kaasujen) tilavuuden muutos lasketaan samalla tavalla:
 ```latex
 \Delta V = \gamma V_0 \Delta T
 ```
-missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilakerroin (1/K) ja $V_0$ alkuperäinen tilavuus (m³). Kiinteällä aineella $\gamma \approx 3\alpha$, koska kappale laajenee kaikkiin kolmeen suuntaan. Pituus, leveys ja korkeus kasvavat kukin suhteessa $\alpha \Delta T$. Kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa $3\alpha \Delta T$. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen, esimerkiksi enintään noin sata kelviniä.
+missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilakerroin (1/K) ja $V_0$ alkuperäinen tilavuus (m³). Kiinteällä aineella $\gamma \approx 3\alpha$, koska kappale laajenee kaikkiin kolmeen suuntaan. Pituus, leveys ja korkeus kasvavat kukin suhteessa $\alpha \Delta T$. Kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa $3\alpha \Delta T$. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen. Kiinteillä aineilla se tarkoittaa esimerkiksi enintään noin sataa kelviniä. Nesteillä, varsinkin vedellä, kerroin $\gamma$ muuttuu selvästi lämpötilan mukana. Siksi taulukon $20\,{}^\circ\text{C}$:n arvoja käytetään vain lähellä $20\,{}^\circ\text{C}$:ta.
 
 <svg data-fig="volume-expansion" viewBox="0 0 600 350" role="img" aria-label="Nesteen tilavuuden lämpölaajeneminen. Kolvissa on sama määrä nestettä. Kolvin kaulana on ohut putki. Kylmänä nesteen tilavuus on V₀, ja pinta on alempana. Lämpimänä neste on laajentunut, ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38-liq-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy38-liq-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
@@ -225,7 +225,7 @@ missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilaker
 | tavallinen lasi | 9 |
 | borosilikaattilasi | 3,3 |
 
-| Aine (20 °C) | $\gamma$ (10⁻³ 1/K) |
+| Aine ($20\,{}^\circ\text{C}$) | $\gamma$ (10⁻³ 1/K) |
 | --- | --- |
 | vesi | 0,21 |
 | etanoli | 1,1 |
@@ -252,7 +252,7 @@ missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilaker
 </svg>
 
 ## Esimerkki
-Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee vuoden aikana −30 °C:n pakkasesta +30 °C:n helteeseen, ja teräksen pituuden lämpötilakerroin on 12 · 10⁻⁶ 1/K. Kuinka paljon kannen pituus muuttuu, eli kuinka paljon liikuntasauman on vähintään annettava periksi?
+Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila vaihtelee vuoden aikana $-30\,{}^\circ\text{C}$:n pakkasesta +$30\,{}^\circ\text{C}$:n helteeseen, ja teräksen pituuden lämpötilakerroin on 12 · 10⁻⁶ 1/K. Kuinka paljon kannen pituus muuttuu, eli kuinka paljon liikuntasauman on vähintään annettava periksi?
 
 <!-- vaihe -->
 
@@ -297,14 +297,14 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 **Järkevyys.** Karkea arvio: $10^{-5}\,\tfrac{1}{\text{K}} \cdot 100\,\text{m} \cdot 60\,\text{K} = 60\,\text{mm}$, joten tulos on oikeaa suuruusluokkaa. Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee. Se on vain $\alpha \Delta T = 0{,}072\,\%$ kannen pituudesta. Ilman liikuntasaumaa laajeneva teräs kuitenkin työntäisi sillan päitä suurella voimalla. Silloin rakenteet vaurioituisivat. Siksi sillan päässä on kampamainen liitos. Sen hampaat liukuvat toistensa lomassa.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukkaset pysyvät samankokoisina, ja vain niiden keskimääräiset etäisyydet kasvavat. Toinen virhe on luulla, että levyn reikä pienenee. Silloin ajatellaan, että levy laajenee reunoiltaan reiän puolelle. Näin ei käy. Reikä suurenee samassa suhteessa kuin levy muutenkin. Kolmas virhe on olettaa, että kaikki aineet laajenevat aina lämmetessään. Vesi kutistuu 0 °C:n ja 4 °C:n välillä, ja jäätyessään se laajenee. Siksi jää kelluu ja järvet jäätyvät pinnalta.
+Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukkaset pysyvät samankokoisina, ja vain niiden keskimääräiset etäisyydet kasvavat. Toinen virhe on luulla, että levyn reikä pienenee. Silloin ajatellaan, että levy laajenee reunoiltaan reiän puolelle. Näin ei käy. Reikä suurenee samassa suhteessa kuin levy muutenkin. Kolmas virhe on olettaa, että kaikki aineet laajenevat aina lämmetessään. Vesi kutistuu $0\,{}^\circ\text{C}$:n ja $4\,{}^\circ\text{C}$:n välillä, ja jäätyessään se laajenee. Siksi jää kelluu ja järvet jäätyvät pinnalta.
 
 ## Tiivistelmä
 - Lämmetessä hiukkasten värähtely voimistuu ja niiden keskimääräinen etäisyys kasvaa, joten aine laajenee.
 - Pituuden muutos on $\Delta L = \alpha L_0 \Delta T$ ja tilavuuden muutos $\Delta V = \gamma V_0 \Delta T$. Kiinteällä aineella $\gamma \approx 3\alpha$.
 - Nesteet laajenevat enemmän kuin kiinteät aineet ja kaasut paljon enemmän kuin nesteet.
 - Kappale laajenee kaikkiin suuntiin samassa suhteessa, joten myös reiät suurenevat.
-- Vesi on poikkeus: sen tiheys on suurin noin 4 °C:ssa.
+- Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus. Kahden kiskon jatkoskohdassa on pieni rako, joka antaa kiskojen laajeta lämmetessään." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy38s-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>

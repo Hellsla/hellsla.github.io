@@ -36,7 +36,7 @@
 **Conversions:** The force is in newtons and the area in square metres, so the result comes in pascals. At the end $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Substitution:** $p = \dfrac{750\,\text{N}}{0.0025\,\text{m}^2} = 300\,000\,\text{Pa} = 300\,\text{kPa}$
 **Answer:** $300\,\text{kPa}$, two significant figures like the area $0.0025\,\text{m}^2$ (the zeros are place holders).
-**Reasonableness:** The area of one leg is $0.0025\,\text{m}^2 / 4 \approx 6\,\text{cm}^2$, for example $2.5\,\text{cm} \times 2.5\,\text{cm}$, which is a believable size for a leg. The pressure is about three atmospheres, so the legs of a heavy stove can sink into a soft floor. If the area were ten times greater, the pressure would be only a tenth.
+**Reasonableness:** The area of one leg is $0.0025\,\text{m}^2 / 4 \approx 6\,\text{cm}^2$, for example $2.5\,\text{cm} \cdot 2.5\,\text{cm}$, which is a believable size for a leg. The pressure is about three atmospheres, so the legs of a heavy stove can sink into a soft floor. If the area were ten times greater, the pressure would be only a tenth.
 
 ## fy3-4-L1-05
 **Given:** depth $h = 0.45\,\text{m}$, $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
@@ -69,14 +69,15 @@
 **Reasonableness:** Water gives about $10\,\text{kPa}$ per metre, so $350\,\text{kPa}$ corresponds to about $35\,\text{m}$. The exact value is slightly greater, because $g < 10\,\text{m/s}^2$. Checking backwards, $\rho g h = 1000 \cdot 9.81 \cdot 35.7\,\text{Pa} \approx 350\,\text{kPa}$. Water towers are about this tall.
 
 ## fy3-4-L2-03
-**Given:** hydrostatic pressure $\Delta p = 7.22\,\text{kPa}$, depth $h = 0.800\,\text{m}$, $g = 9.81\,\text{m/s}^2$
-**Find:** the density $\rho$ of rapeseed oil in $\text{kg/m}^3$
-**Principle:** The oil in the tank is at rest, so the hydrostatic pressure at the bottom is $\Delta p = \rho g h$. The pressure, the depth and $g$ are known, so the density is found by solving the formula for $\rho$.
-**Formula:** $\Delta p = \rho g h$, so $\rho = \dfrac{\Delta p}{g h}$
-**Conversions:** $7.22\,\text{kPa} = 7220\,\text{Pa}$, so that the result comes in $\text{kg/m}^3$.
-**Substitution:** $\rho = \dfrac{7220\,\text{Pa}}{9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0.800\,\text{m}} = \dfrac{7220\,\text{Pa}}{7.848\,\tfrac{\text{m}^2}{\text{s}^2}} = 919.98\,\tfrac{\text{kg}}{\text{m}^3}$
-**Answer:** $920\,\text{kg/m}^3$, three significant figures like the pressure $7.22\,\text{kPa}$ and the depth $0.800\,\text{m}$.
-**Reasonableness:** Oil floats on water, so its density must be less than $1000\,\text{kg/m}^3$, and the result is. Checking backwards, $920 \cdot 9.81 \cdot 0.800\,\text{Pa} \approx 7220\,\text{Pa}$. If the density of the oil were about that of water, the pressure would be about $7.8\,\text{kPa}$.
+**Given:** from the graph, in both liquids $p_0 = 100\,\text{kPa}$; line A passes through the point $(10\,\text{m};\ 200\,\text{kPa})$ and line B through the point $(10\,\text{m};\ 250\,\text{kPa})$; $h_\text{B} = 4.0\,\text{m}$
+**Find:** the depth $h_\text{A}$ at which the pressure in liquid A equals the pressure in liquid B at depth $h_\text{B}$
+**Principle:** In a liquid $p = p_0 + \rho g h$, so the $(h, p)$ graph is a straight line whose slope $k = \rho g$ is greater for the denser liquid. The densities do not have to be calculated; the slopes are read from the graph.
+**Reading the graph:** The lines start from the same point $(0\,\text{m};\ 100\,\text{kPa})$ and end at crossings of the grid. So $k_\text{A} = \dfrac{(200 - 100)\,\text{kPa}}{10\,\text{m}} = 10\,\tfrac{\text{kPa}}{\text{m}}$ and $k_\text{B} = \dfrac{(250 - 100)\,\text{kPa}}{10\,\text{m}} = 15\,\tfrac{\text{kPa}}{\text{m}}$.
+**Formula:** $p_0 + k_\text{A} h_\text{A} = p_0 + k_\text{B} h_\text{B}$, so $h_\text{A} = \dfrac{k_\text{B}}{k_\text{A}}\, h_\text{B}$
+**Conversions:** No conversions are needed: the kilopascals cancel in the ratio $k_\text{B}/k_\text{A}$.
+**Substitution:** $h_\text{A} = \dfrac{15\,\text{kPa/m}}{10\,\text{kPa/m}} \cdot 4.0\,\text{m} = 6.0\,\text{m}$
+**Answer:** $h_\text{A} = 6.0\,\text{m}$, two significant figures like the depth $4.0\,\text{m}$. A value read by eye in the range $5.8$–$6.2\,\text{m}$ is accepted.
+**Reasonableness:** Liquid A is less dense, so a greater depth than $4.0\,\text{m}$ is needed to reach the same pressure. Check: $100\,\text{kPa} + 10\,\tfrac{\text{kPa}}{\text{m}} \cdot 6.0\,\text{m} = 160\,\text{kPa} = 100\,\text{kPa} + 15\,\tfrac{\text{kPa}}{\text{m}} \cdot 4.0\,\text{m}$.
 
 ## fy3-4-L2-04
 **Given:** gauge pressure $\Delta p = 0.85\,\text{bar}$ (according to the problem $1\,\text{bar} = 100\,\text{kPa}$), area of the lid $A = 380\,\text{cm}^2$
@@ -96,7 +97,7 @@
 **Conversions:** $6.0\,\text{kPa} = 6000\,\text{Pa}$. The mass is already in kilograms.
 **Substitution:** $G = 85\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 833.85\,\text{N}$; $A = \dfrac{833.85\,\text{N}}{6000\,\text{Pa}} = 0.13898\,\text{m}^2$
 **Answer:** $0.14\,\text{m}^2$, two significant figures like the pressure $6.0\,\text{kPa}$ and the mass $85\,\text{kg}$.
-**Reasonableness:** Checking backwards, $833.85\,\text{N} / 0.14\,\text{m}^2 \approx 5960\,\text{Pa}$, which is less than $6000\,\text{Pa}$. The area is, for example, $25\,\text{cm} \times 56\,\text{cm}$, the size of an ordinary snowshoe. The area of the sole of an ordinary shoe is about $0.03\,\text{m}^2$, and with it the pressure would be about $28\,\text{kPa}$, so the shoe would sink.
+**Reasonableness:** Checking backwards, $833.85\,\text{N} / 0.14\,\text{m}^2 \approx 5960\,\text{Pa}$, which is less than $6000\,\text{Pa}$. The area is, for example, $25\,\text{cm} \cdot 56\,\text{cm}$, the size of an ordinary snowshoe. The area of the sole of an ordinary shoe is about $0.03\,\text{m}^2$, and with it the pressure would be about $28\,\text{kPa}$, so the shoe would sink.
 
 ## fy3-4-L3-02
 **Given:** height of the hose above the lid $h = 4.0\,\text{m}$, area of the lid $A = 0.25\,\text{m}^2$, $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$; amount of water in the hose $0.40\,\textsf{l}$

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 48c9187745f733f6
+CONTENT-HASH: a677b67338db26da
 
 ## Blocking
 (none left; see Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 48c9187745f733f6
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, hints, feedback, solutions, experiment names/intros), exit-ticket.json, meta.json, figures.json and the sim labels (lang/fi-easy.json sims.fy3-11). Pedagogy: natural reading level, term consistency with terms.md and the sim labels, fi-easy sentence length and explanations, no steps or hints dropped; correct choices and feedback still match.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 heat-pump item, units, feedback), exit ticket, figure description in Selkeä suomi.

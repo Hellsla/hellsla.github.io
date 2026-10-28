@@ -3,7 +3,7 @@
     {
       "id": "fy3-10-L1-01",
       "level": 1,
-      "text": "The volume of the inside of a fridge is 0.250 m³. When the door has been closed for a long time, the temperature of the air in the fridge is 278 K and the pressure is $1.01 \\cdot 10^5\\,\\text{Pa}$. How many moles of air are in the fridge? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
+      "text": "The volume of the inside of a fridge is 0.250 m³. When the door has been closed for a long time, the temperature of the air in the fridge is $278\\,\\text{K}$ and the pressure is $1.01 \\cdot 10^5\\,\\text{Pa}$. How many moles of air are in the fridge? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
       "answer": 10.9,
       "unit": "mol",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-10-L1-02",
       "level": 1,
-      "text": "The inside volume of a basketball is 0.00710 m³, and it contains 0.460 mol of air. The temperature of the sports hall is 293 K. What is the pressure of the air inside the ball? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in kilopascals.",
+      "text": "The inside volume of a basketball is 0.00710 m³, and it contains 0.460 mol of air. The temperature of the sports hall is $293\\,\\text{K}$. What is the pressure of the air inside the ball? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in kilopascals.",
       "answer": 158,
       "unit": "kPa",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-10-L1-03",
       "level": 1,
-      "text": "An automatic life jacket inflates when 0.400 mol of carbon dioxide is released from the cartridge of the jacket. The temperature of the gas in the jacket is 283 K and the pressure is $1.05 \\cdot 10^5\\,\\text{Pa}$. What is the volume of the gas in the jacket? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in cubic metres.",
+      "text": "An automatic life jacket inflates when 0.400 mol of carbon dioxide is released from the cartridge of the jacket. The temperature of the gas in the jacket is $283\\,\\text{K}$ and the pressure is $1.05 \\cdot 10^5\\,\\text{Pa}$. What is the volume of the gas in the jacket? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in cubic metres.",
       "answer": 0.00896,
       "unit": "m³",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy3-10-L1-05",
       "level": 1,
-      "text": "The gas cylinder of a home carbonation machine contains 425 g of carbon dioxide. The molar mass of carbon dioxide is 44 g/mol. How many moles of carbon dioxide are in the cylinder?",
+      "text": "The gas cylinder of a home carbonation machine contains $425\\,\\text{g}$ of carbon dioxide. The molar mass of carbon dioxide is $44\\,\\text{g/mol}$. How many moles of carbon dioxide are in the cylinder?",
       "answer": 9.7,
       "unit": "mol",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "The pressure gauge of the oxygen cylinder of an ambulance is broken. The volume of the cylinder is 10.0 l, and weighing shows that the cylinder contains 2.40 kg of oxygen. The temperature in the garage is 15 °C. What is the pressure of the oxygen in the cylinder in bars (1 bar = 100 kPa)? The molar mass of oxygen is 32.0 g/mol. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that oxygen obeys the equation of state of an ideal gas.",
+      "text": "The pressure gauge of the oxygen cylinder of an ambulance is broken. The volume of the cylinder is $10.0\\,\\textsf{l}$, and weighing shows that the cylinder contains $2.40\\,\\text{kg}$ of oxygen. The temperature in the garage is $15\\,{}^\\circ\\text{C}$. What is the pressure of the oxygen in the cylinder in bars (1 bar = 100 kPa)? The molar mass of oxygen is $32.0\\,\\text{g/mol}$. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that oxygen obeys the equation of state of an ideal gas.",
       "answer": 180,
       "unit": "bar",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy3-10-L2-02",
       "level": 2,
-      "text": "In a chemistry storeroom there is a gas cylinder whose label is worn illegible. A 1.00 l glass flask emptied with a vacuum pump is filled with the gas from the cylinder, and the mass of the flask increases by 1.15 g. The pressure of the gas in the flask is 101 kPa and the temperature is 22 °C. Calculate the molar mass of the gas in grams per mole. Which gas is it, when the options are helium (4.0 g/mol), nitrogen (28 g/mol), oxygen (32 g/mol), argon (40 g/mol) and carbon dioxide (44 g/mol)? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
+      "text": "In a chemistry storeroom there is a gas cylinder whose label is worn illegible. A $1.00\\,\\textsf{l}$ glass flask emptied with a vacuum pump is filled with the gas from the cylinder, and the mass of the flask increases by $1.15\\,\\text{g}$. The pressure of the gas in the flask is 101 kPa and the temperature is $22\\,{}^\\circ\\text{C}$. Calculate the molar mass of the gas in grams per mole. Which gas is it, when the options are helium ($4.0\\,\\text{g/mol}$), nitrogen ($28\\,\\text{g/mol}$), oxygen ($32\\,\\text{g/mol}$), argon ($40\\,\\text{g/mol}$) and carbon dioxide ($44\\,\\text{g/mol}$)? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
       "answer": 27.9,
       "unit": "g/mol",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-10-L2-03",
       "level": 2,
-      "text": "At the end of the intake stroke, the cylinder of a tractor's diesel engine contains 0.500 l of air. The pressure of the air is 101 kPa and the temperature is 30 °C. At the end of the compression stroke the volume of the air is 0.0300 l and the pressure is 4.60 MPa. The valves are closed, so no air can escape from the cylinder. What is the temperature of the air at the end of compression in degrees Celsius? Diesel fuel ignites by itself at a temperature of about 250 °C. Does the fuel injected into the cylinder ignite?",
+      "text": "At the end of the intake stroke, the cylinder of a tractor's diesel engine contains $0.500\\,\\textsf{l}$ of air. The pressure of the air is 101 kPa and the temperature is $30\\,{}^\\circ\\text{C}$. At the end of the compression stroke the volume of the air is $0.0300\\,\\textsf{l}$ and the pressure is 4.60 MPa. The valves are closed, so no air can escape from the cylinder. What is the temperature of the air at the end of compression in degrees Celsius? Diesel fuel ignites by itself at a temperature of about $250\\,{}^\\circ\\text{C}$. Does the fuel injected into the cylinder ignite?",
       "answer": 555,
       "unit": "°C",
       "tolerance": 0.02
@@ -69,17 +69,18 @@
     {
       "id": "fy3-10-L2-04",
       "level": 2,
-      "text": "In Lapland there is a frosty morning, when the temperature of the outdoor air is −30 °C and the atmospheric pressure is 102 kPa. What volume does 1.00 mol of air take up in these conditions? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in litres.",
-      "answer": 19.8,
-      "unit": "l",
-      "tolerance": 0.02
+      "text": "Two identical, closed and rigid containers, each with a volume of $2.00\\,\\textsf{l}$, contain gas samples A and B. When the containers are heated, their pressure is measured at different temperatures. The graph shows the measurement results. How many moles more gas is there in container A than in container B? Read the values you need from the graph. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that the gases obey the equation of state of an ideal gas.",
+      "figure": "fy3-10/pt-suorat",
+      "answer": 0.024,
+      "unit": "mol",
+      "tolerance": 0.03
     }
   ],
   "level3": [
     {
       "id": "fy3-10-L3-01",
       "level": 3,
-      "text": "At rest, a person breathes into the lungs with one inhalation air that takes up a volume of 0.55 l at a temperature of 37 °C. The pressure of the air in the lungs is 101 kPa. How many molecules are in one breath? The Avogadro constant is $6.022 \\cdot 10^{23}\\,\\tfrac{1}{\\text{mol}}$ and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in the form $a \\cdot 10^{22}$. Justify why the calculation does not need information about which gases the air consists of.",
+      "text": "At rest, a person breathes into the lungs with one inhalation air that takes up a volume of $0.55\\,\\textsf{l}$ at a temperature of $37\\,{}^\\circ\\text{C}$. The pressure of the air in the lungs is 101 kPa. How many molecules are in one breath? The Avogadro constant is $6.022 \\cdot 10^{23}\\,\\tfrac{1}{\\text{mol}}$ and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in the form $a \\cdot 10^{22}$. Justify why the calculation does not need information about which gases the air consists of.",
       "answer": 1.3,
       "unit": "· 10²²",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-10-L3-02",
       "level": 3,
-      "text": "In new windows the space between the panes is often filled with argon, because argon conducts heat worse than air. The panes of an insulating glass unit are 1.20 m × 1.00 m. According to the manufacturer, an argon filling makes the unit 6.0 g heavier than an air filling when the gap is filled at a pressure of 101 kPa and a temperature of 20 °C. How thick is the layer of gas between the panes? The molar mass of argon is 40 g/mol and that of air is 29 g/mol, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in millimetres.",
+      "text": "In new windows the space between the panes is often filled with argon, because argon conducts heat worse than air. The panes of an insulating glass unit are $1.20\\,\\text{m}$ × $1.00\\,\\text{m}$. According to the manufacturer, an argon filling makes the unit $6.0\\,\\text{g}$ heavier than an air filling when the gap is filled at a pressure of 101 kPa and a temperature of $20\\,{}^\\circ\\text{C}$. How thick is the layer of gas between the panes? The molar mass of argon is $40\\,\\text{g/mol}$ and that of air is $29\\,\\text{g/mol}$, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Give the answer in millimetres.",
       "answer": 11,
       "unit": "mm",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-10-L3-03",
       "level": 3,
-      "text": "The compressed air tank of a car workshop's compressor has a volume of 200.0 l. In the evening the pressure gauge of the tank shows 10.0 bar, but in the morning only 7.0 bar, because air leaks from a joint. The gauge shows gauge pressure, that is, how much greater the pressure in the tank is than atmospheric pressure (1 bar = 100 kPa). The temperature of the workshop is 18 °C the whole time. How many kilograms of air leaked from the tank during the night? The molar mass of air is 29 g/mol, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Justify why in this calculation the readings of the gauge can be used without adding atmospheric pressure to them.",
+      "text": "The compressed air tank of a car workshop's compressor has a volume of $200.0\\,\\textsf{l}$. In the evening the pressure gauge of the tank shows 10.0 bar, but in the morning only 7.0 bar, because air leaks from a joint. The gauge shows gauge pressure, that is, how much greater the pressure in the tank is than atmospheric pressure (1 bar = 100 kPa). The temperature of the workshop is $18\\,{}^\\circ\\text{C}$ the whole time. How many kilograms of air leaked from the tank during the night? The molar mass of air is $29\\,\\text{g/mol}$, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Justify why in this calculation the readings of the gauge can be used without adding atmospheric pressure to them.",
       "answer": 0.72,
       "unit": "kg",
       "tolerance": 0.02

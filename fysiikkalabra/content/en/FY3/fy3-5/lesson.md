@@ -44,7 +44,7 @@
 </svg>
 
 ## Key idea
-In chapter *Work and energy*, work was described as a way of transferring energy, and Joule's experiment showed that mechanical work can heat water: the work done by the weight increased the internal energy of the water, even though the water was not heated. Water does not contain "heat". The internal energy $U$ of a system is the sum of the kinetic energy of its particles and the energy of the interactions between the particles. According to the micro model, temperature tells you the average kinetic energy of the particles, so when the temperature of a gas or a liquid rises, its internal energy increases. Internal energy also depends on the amount of substance: a big lake contains much more internal energy than a cup of hot tea, even though the lake is colder.
+In chapter *Work and energy*, work was described as a way of transferring energy, and Joule's experiment showed that mechanical work can heat water: the work done by the weight increased the internal energy of the water, even though the water was not heated. Water does not contain "heat". The internal energy $U$ of a system is the sum of the kinetic energy of its particles and the energy of the interactions between the particles. In chapter *Forms of energy and conservation of energy*, this energy was called thermal energy; a more precise name is internal energy. Temperature describes how strongly the particles move because of thermal motion: in a gas, it tells you the average kinetic energy of the particles. When the temperature of a substance rises and its state of matter does not change, the particles move more strongly and the internal energy increases. Even so, temperature and internal energy are not the same thing, because when the state of matter changes, the internal energy changes even though the temperature stays the same: when, for example, pure ice melts at normal pressure, the internal energy increases, but the temperature stays at $0\,{}^\circ\text{C}$. Internal energy also depends on the amount of substance: a big lake contains much more internal energy than a cup of hot tea, even though the lake is colder.
 
 You can change the internal energy of a system in two ways. The first is work: when the piston of a pump compresses air, the surroundings do work on the gas, and the internal energy of the gas increases, because the moving piston hits the particles like a bat hits a ball and they bounce off faster. In the simulation you can see this at the particle level. This is why the pump gets hot. The second is heat: when two objects at different temperatures touch, energy transfers by itself from the hotter one to the colder one until the temperatures are the same. Energy transferred in this way is called heat, and the amount of energy transferred is the quantity of heat $Q$. So heat is a transfer of energy, not a property of matter: an object has a temperature and internal energy, but it does not have heat.
 
@@ -85,7 +85,7 @@ You can change the internal energy of a system in two ways. The first is work: w
   <foreignObject x="357" y="261.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{from hot to cold}$</div></foreignObject>
 </svg>
 
-Energy is conserved. When energy is transferred into a system as heat or work, its internal energy increases by exactly the amount of energy transferred, and when energy is transferred out, the internal energy decreases by the same amount. This is the first law of thermodynamics: the law of conservation of energy written for heat and work. An isolated system is a closed system into which, and out of which, no energy is transferred either as heat or as work. Its total energy stays constant, even if energy changes form inside it.
+Energy is conserved. When energy is transferred into a system as heat or work and the kinetic or potential energy of the system does not change, its internal energy increases by exactly the amount of energy transferred, and when energy is transferred out, the internal energy decreases by the same amount. This is the first law of thermodynamics: the law of conservation of energy written for heat and work. An isolated system is a closed system into which, and out of which, no energy is transferred either as heat or as work. Its total energy stays constant, even if energy changes form inside it.
 
 ## Formula: First law of thermodynamics
 The change in internal energy is the sum of the quantity of heat transferred into the system and the work done on the system:
@@ -141,7 +141,7 @@ where $\Delta U$ is the change in internal energy (J), $Q$ is the quantity of he
 </svg>
 
 ## Worked example
-A pump cylinder contains air. The piston is pushed down, so the surroundings do 150 J of work on the air. At the same time, a quantity of heat of 40 J is transferred from the warming air through the cylinder walls to the surroundings. By how much does the internal energy of the air change?
+A pump cylinder contains air. The piston is pushed down, so the surroundings do $150\,\text{J}$ of work on the air. At the same time, a quantity of heat of $40\,\text{J}$ is transferred from the warming air through the cylinder walls to the surroundings. By how much does the internal energy of the air change?
 
 <!-- vaihe -->
 
@@ -183,13 +183,13 @@ A pump cylinder contains air. The piston is pushed down, so the surroundings do 
 
 <!-- vaihe -->
 
-**Reasonableness.** The work brought 150 J into the air and only 40 J left as heat, so the internal energy must increase and the temperature of the air must rise. If the same 150 J of work were done so slowly that all the energy from the work had time to leave as heat, then $Q = -150\,\text{J}$ and $\Delta U = 0$, and the temperature would not change. Now less heat leaves, so the result lies between this limiting case and the work alone, $150\,\text{J}$.
+**Reasonableness.** The work brought $150\,\text{J}$ into the air and only $40\,\text{J}$ left as heat, so the internal energy must increase and the temperature of the air must rise. If the same $150\,\text{J}$ of work were done so slowly that all the energy from the work had time to leave as heat, then $Q = -150\,\text{J}$ and $\Delta U = 0$, and the temperature would not change. Now less heat leaves, so the result lies between this limiting case and the work alone, $150\,\text{J}$.
 
 ## Common misconception
 In everyday language we say that an object "has heat" or that heat is "stored". In physics, heat is the transfer of energy because of a temperature difference, and what is stored in an object is internal energy. Another mistake is to treat temperature and internal energy as the same thing: a hot spark has a temperature of thousands of degrees, but its internal energy is small, because it contains very little matter. A third mistake is to think that internal energy can be changed only by heating. The air in a pump gets hot without any heat source, because work is done on it.
 
 ## Summary
-- The internal energy $U$ is the sum of the kinetic energy of the particles of a system and the energy of the interactions between the particles. It increases when the temperature rises, and it also depends on the amount of substance.
+- The internal energy $U$ is the sum of the kinetic energy of the particles of a system and the energy of the interactions between the particles. It increases when the temperature rises while the state of matter stays the same, and it also depends on the amount of substance. Temperature and internal energy are not the same thing.
 - Heat is the transfer of energy from hotter to colder because of a temperature difference; the energy transferred is the quantity of heat $Q$. An object does not "have heat".
 - Heat and work change internal energy: $\Delta U = Q + W$. Energy transferred in is positive and energy transferred out is negative.
 - Energy is conserved: this is the first law of thermodynamics. The total energy of an isolated system stays constant.

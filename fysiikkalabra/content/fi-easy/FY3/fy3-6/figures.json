@@ -17,5 +17,6 @@
  "jälkeen": "jälkeen",
  " kaikkialla": " kaikkialla",
  "luovutettu": "luovutettu",
- "vastaanotettu": "vastaanotettu"
+ "vastaanotettu": "vastaanotettu",
+ "Kuvaaja mittakaavassa: metallikappaleen lämpötila T celsiusasteina ajan t funktiona sekunteina, kun kappaletta lämmitetään tasaisella teholla. Lämpötila nousee suoraviivaisesti pisteestä (0 s; 20 °C) pisteeseen (180 s; 60 °C). Ruudukon väli on 20 s ja 10 °C.": "Kuvaaja mittakaavassa: metallikappaleen lämpötila T celsiusasteina ajan t funktiona sekunteina. Kappaletta lämmitetään koko ajan samalla teholla. Lämpötila nousee suoraan viivaa pitkin pisteestä (0 s; 20 °C) pisteeseen (180 s; 60 °C). Ruudukon väli on 20 s ja 10 °C."
 }

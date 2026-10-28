@@ -7,7 +7,7 @@
     "You can calculate the change in the length and volume of an object when its temperature changes."
   ],
   "prior": [
-    "Temperature tells you the average kinetic energy of the particles (chapter *Thermodynamic system, state variables and temperature*)",
+    "Temperature describes how strongly the particles move in random thermal motion; in a gas it tells you the average kinetic energy of the particles (chapter *Thermodynamic system, state variables and temperature*)",
     "A change in temperature is the same in kelvins and in degrees Celsius, $T = \\theta + 273.15$ (chapter *Thermodynamic system, state variables and temperature*)"
   ],
   "activities": [
@@ -26,20 +26,20 @@
       "prompt": "A bridge deck is $-30\\,{}^\\circ\\text{C}$ on a frosty morning and $+30\\,{}^\\circ\\text{C}$ on a hot afternoon. How large is the change in temperature in kelvins?",
       "choices": [
         {
-          "text": "60 K",
+          "text": "$60\\,\\text{K}$",
           "correct": true,
           "feedback": "Correct. A kelvin and a degree Celsius are the same size, so the change is the same number: $\\Delta T = 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$. The conversion $+273.15$ cancels in the difference."
         },
         {
-          "text": "333 K",
+          "text": "$333\\,\\text{K}$",
           "feedback": "You added 273 to the *change* in temperature. The conversion $T = \\theta + 273.15$ applies to a single temperature; in a difference it cancels: $(303.15 - 243.15)\\,\\text{K} = 60\\,\\text{K}$."
         },
         {
-          "text": "0 K",
+          "text": "$0\\,\\text{K}$",
           "feedback": "The sum of 30 and −30 is zero, but the change is the final temperature minus the initial temperature: $30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$."
         },
         {
-          "text": "−60 K",
+          "text": "$-60\\,\\text{K}$",
           "feedback": "The sign tells the direction: the temperature rises, so the change is positive. Calculate final minus initial: $30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = +60\\,\\text{K}$."
         }
       ],
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: heating to a higher temperature",
-      "prompt": "A steel rod is 10 m long at 20 °C. The rod is heated first to 70 °C and then to 120 °C. How does the change in length $\\Delta L$ of the rod (compared with its length at 20 °C) at 120 °C compare with that at 70 °C?",
+      "prompt": "A steel rod is $10\\,\\text{m}$ long at $20\\,{}^\\circ\\text{C}$. The rod is heated first to $70\\,{}^\\circ\\text{C}$ and then to $120\\,{}^\\circ\\text{C}$. How does the change in length $\\Delta L$ of the rod (compared with its length at $20\\,{}^\\circ\\text{C}$) at $120\\,{}^\\circ\\text{C}$ compare with that at $70\\,{}^\\circ\\text{C}$?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -58,13 +58,13 @@
       },
       "choices": [
         {
-          "text": "About 1.7 times as large, because 120 °C is about 1.7 times 70 °C.",
-          "feedback": "The change in length does not depend on the temperature reading but on how much the temperature has changed from the starting point of 20 °C. The changes are $\\Delta T = 50\\,\\text{K}$ and $100\\,\\text{K}$, and the values from the model are $\\Delta L = 6.00\\,\\text{mm}$ and $12.0\\,\\text{mm}$: the ratio is 2. The ratio of the Celsius numbers is not even physical, because the zero point of the scale is a convention."
+          "text": "About 1.7 times as large, because $120\\,{}^\\circ\\text{C}$ is about 1.7 times $70\\,{}^\\circ\\text{C}$.",
+          "feedback": "The change in length does not depend on the temperature reading but on how much the temperature has changed from the starting point of $20\\,{}^\\circ\\text{C}$. The changes are $\\Delta T = 50\\,\\text{K}$ and $100\\,\\text{K}$, and the values from the model are $\\Delta L = 6.00\\,\\text{mm}$ and $12.0\\,\\text{mm}$: the ratio is 2. The ratio of the Celsius numbers is not even physical, because the zero point of the scale is a convention."
         },
         {
           "text": "Twice as large.",
           "correct": true,
-          "feedback": "The values from the model support this: at 70 °C $\\Delta L = 6.00\\,\\text{mm}$ and at 120 °C $12.0\\,\\text{mm}$. The change in temperature grew from 50 K to 100 K, that is, it doubled, and so did the change in length."
+          "feedback": "The values from the model support this: at $70\\,{}^\\circ\\text{C}$ $\\Delta L = 6.00\\,\\text{mm}$ and at $120\\,{}^\\circ\\text{C}$ $12.0\\,\\text{mm}$. The change in temperature grew from $50\\,\\text{K}$ to $100\\,\\text{K}$, that is, it doubled, and so did the change in length."
         },
         {
           "text": "Less than twice as large, because the gaps between the particles of steel that has already warmed up do not grow as easily any more.",
@@ -72,7 +72,7 @@
         },
         {
           "text": "The same, because the rod is the same steel and the same length.",
-          "feedback": "The substance and the initial length are the same, but the change in temperature is not: 50 K and 100 K. The values from the model are 6.00 mm and 12.0 mm, so a larger change in temperature lengthens the rod more."
+          "feedback": "The substance and the initial length are the same, but the change in temperature is not: $50\\,\\text{K}$ and $100\\,\\text{K}$. The values from the model are 6.00 mm and 12.0 mm, so a larger change in temperature lengthens the rod more."
         }
       ]
     },
@@ -81,7 +81,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: a longer rod",
-      "prompt": "Two steel rods are heated from 20 °C to 70 °C. Rod A is 10 m long at 20 °C and rod B is 20 m long. How does the change in length of B compare with the change in length of A?",
+      "prompt": "Two steel rods are heated from $20\\,{}^\\circ\\text{C}$ to $70\\,{}^\\circ\\text{C}$. Rod A is $10\\,\\text{m}$ long at $20\\,{}^\\circ\\text{C}$ and rod B is $20\\,\\text{m}$ long. How does the change in length of B compare with the change in length of A?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -90,12 +90,12 @@
       "choices": [
         {
           "text": "Equal, because the substance and the change in temperature are the same.",
-          "feedback": "The substance and the change in temperature determine the *relative* change $\\Delta L / L_0 = \\alpha \\Delta T$, which in the model is 0.0600 % for both. However, the longer rod has twice as many gaps between particles, and each grows by the same amount: A lengthens by 6.00 mm and B by 12.0 mm."
+          "feedback": "The substance and the change in temperature determine the *relative* change $\\Delta L / L_0 = \\alpha \\Delta T$, which in the model is $0.0600\\,\\%$ for both. However, the longer rod has twice as many gaps between particles, and each grows by the same amount: A lengthens by 6.00 mm and B by 12.0 mm."
         },
         {
           "text": "Twice as large.",
           "correct": true,
-          "feedback": "The values from the model support this: A lengthens by 6.00 mm and B by 12.0 mm, and the relative change $\\Delta L / L_0$ is the same 0.0600 % for both. A rod that is twice as long has twice as many gaps between particles, and they all grow by the same amount."
+          "feedback": "The values from the model support this: A lengthens by 6.00 mm and B by 12.0 mm, and the relative change $\\Delta L / L_0$ is the same $0.0600\\,\\%$ for both. A rod that is twice as long has twice as many gaps between particles, and they all grow by the same amount."
         },
         {
           "text": "Half as large, because a long rod warms up more slowly.",
@@ -140,8 +140,8 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Choose the substance, the initial length $L_0$ of the rod (measured at 20 °C) and the temperature $T$.",
-      "howto": "On the left is the micro model, on the right the rod and the $(T, \\Delta L)$ graph. The changes are drawn exaggerated a hundred times; the real changes are less than 0.3 %. The particles do not get bigger, but their average distance grows. The thin straight lines in the graph are the lines of the other substances: the steepest is aluminium, the gentlest is borosilicate glass. The dashed line is the situation at 20 °C. *Speed* changes only the pace of the vibration, not the lengths.",
+      "text": "Choose the substance, the initial length $L_0$ of the rod (measured at $20\\,{}^\\circ\\text{C}$) and the temperature $T$.",
+      "howto": "On the left is the micro model, on the right the rod and the $(T, \\Delta L)$ graph. The changes are drawn exaggerated a hundred times; the real changes are less than $0.3\\,\\%$. The particles do not get bigger, but their average distance grows. The thin straight lines in the graph are the lines of the other substances: the steepest is aluminium, the gentlest is borosilicate glass. The dashed line is the situation at $20\\,{}^\\circ\\text{C}$. *Speed* changes only the pace of the vibration, not the lengths.",
       "model": "The readings are values from the model, in which the coefficient $\\alpha$ is assumed to be constant, not measurements of a real rod. In the micro model the particles vibrate equally far in both directions in the drawing, and their average distance is set directly from the formula $\\Delta L/L_0 = \\alpha \\Delta T$. So the model shows *that* the distance grows, but not *why*; the reason is in the Theory summary."
     },
     {
@@ -149,14 +149,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the temperature changes",
-      "intro": "Test predictions 1 and 3. The substance and the initial length are constant, and only the temperature is changed. Record the change in length at at least two temperatures, for example 70 °C and 120 °C, and also try a freezing temperature, for example −30 °C. Also watch what happens to the particles of the micro model and the gaps between them.",
+      "intro": "Test predictions 1 and 3. The substance and the initial length are constant, and only the temperature is changed. Record the change in length at at least two temperatures, for example $70\\,{}^\\circ\\text{C}$ and $120\\,{}^\\circ\\text{C}$, and also try a freezing temperature, for example $-30\\,{}^\\circ\\text{C}$. Also watch what happens to the particles of the micro model and the gaps between them.",
       "initial": {
         "material": "teräs",
         "L0": 10,
         "T": 20
       },
       "names": {
-        "material": "substance",
+        "material": "aine",
         "L0": "initial length L₀",
         "T": "temperature T"
       },
@@ -186,14 +186,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Extra investigation: only the initial length changes",
-      "intro": "Test prediction 2. Now the substance and the temperature are constant, and only the initial length of the rod is changed. Record the change in length and the relative change for at least two initial lengths, for example 10 m, 20 m and 40 m. What changes, and what stays the same?",
+      "intro": "Test prediction 2. Now the substance and the temperature are constant, and only the initial length of the rod is changed. Record the change in length and the relative change for at least two initial lengths, for example $10\\,\\text{m}$, $20\\,\\text{m}$ and $40\\,\\text{m}$. What changes, and what stays the same?",
       "initial": {
         "material": "teräs",
         "L0": 10,
         "T": 70
       },
       "names": {
-        "material": "substance",
+        "material": "aine",
         "L0": "initial length L₀",
         "T": "temperature T"
       },
@@ -241,23 +241,23 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Solid, liquid and gas",
-      "text": "The table shows how much a litre of different substances expands when its temperature rises by 10 K. The values are calculated from the coefficients in the lesson's table with the formula $\\Delta V = \\gamma V_0 \\Delta T$ (for steel $\\gamma \\approx 3\\alpha$); they are values from a model, not measurements. The volume of air is calculated at constant pressure.\n\n| 1.00 l of substance | $\\Delta V$ (cm³) |\n|---|---|\n| steel (solid) | 0.36 |\n| water (liquid) | 2.1 |\n| ethanol (liquid) | 11 |\n| air (gas) | 34 |",
+      "text": "The table shows how much a litre of different substances expands when its temperature rises by $10\\,\\text{K}$. The values are calculated from the coefficients in the lesson's table with the formula $\\Delta V = \\gamma V_0 \\Delta T$ (for steel $\\gamma \\approx 3\\alpha$); they are values from a model, not measurements. The volume of air is calculated at constant pressure.\n\n| $1.00\\,\\textsf{l}$ of substance | $\\Delta V$ (cm³) |\n|---|---|\n| steel (solid) | 0.36 |\n| water (liquid) | 2.1 |\n| ethanol (liquid) | 11 |\n| air (gas) | 34 |",
       "question": {
         "type": "choice",
         "prompt": "Which feature of the micro model best explains why a gas expands the most and a solid the least?",
         "choices": [
           {
-            "text": "The more weakly the particles are bonded to each other, the more a rise in temperature moves them apart: in a solid the bonds are strongest, the particles of a gas are almost free.",
+            "text": "The weaker the interactions between the particles, the more a rise in temperature moves them apart: in a solid the interactions are strongest, the particles of a gas are almost free.",
             "correct": true,
-            "feedback": "Exactly. The particles of a solid vibrate around their equilibrium positions held by strong bonds, the bonds in a liquid are weaker, and the particles of a gas move almost freely. The order in the table is the same: 0.36 cm³, then 2.1 cm³ and 11 cm³, then 34 cm³."
+            "feedback": "Exactly. The particles of a solid vibrate around their equilibrium positions, held in place by the attractive forces of their neighbours, the particles of a liquid stay together but move past each other, and the particles of a gas move almost freely. The order in the table is the same: $0.36\\,\\text{cm}^3$, then $2.1\\,\\text{cm}^3$ and $11\\,\\text{cm}^3$, then $34\\,\\text{cm}^3$."
           },
           {
             "text": "The particles of a gas and a liquid grow more than the particles of a solid when they warm up.",
-            "feedback": "Particles do not grow in any state of matter; when they warm up, their motion and average distance change. The difference between the states of matter comes from how tightly the bonds between the particles hold them in place."
+            "feedback": "Particles do not grow in any state of matter; when they warm up, their motion and average distance change. The difference between the states of matter comes from how tightly the interactions between the particles hold them in place."
           },
           {
             "text": "A gas has more particles in the same volume, so there are more gaps that can expand.",
-            "feedback": "It is the other way round: in a gas the particles are far apart, so a litre of air has far fewer particles than a litre of water or steel. A gas expands the most because its particles are almost free, not held by bonds."
+            "feedback": "It is the other way round: in a gas the particles are far apart, so a litre of air has far fewer particles than a litre of water or steel. A gas expands the most because its particles are almost free, not held in place by the attractive forces of their neighbours."
           }
         ]
       },
@@ -298,24 +298,24 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "An aluminium ladder ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is 4.0 m long. A student calculates how much it gets longer when the temperature rises from 10 °C to 30 °C:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, so $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0.028\\,\\text{m} = 28\\,\\text{mm}$.\n\nWhere is the error?",
+      "prompt": "An aluminium ladder ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is $4.0\\,\\text{m}$ long. A student calculates how much it gets longer when the temperature rises from $10\\,{}^\\circ\\text{C}$ to $30\\,{}^\\circ\\text{C}$:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, so $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0.028\\,\\text{m} = 28\\,\\text{mm}$.\n\nWhere is the error?",
       "choices": [
         {
           "text": "The formula needs the change in temperature, not the final temperature in kelvins: $\\Delta T = 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 20\\,\\text{K}$, and $\\Delta L \\approx 1.8\\,\\text{mm}$.",
           "correct": true,
-          "feedback": "Correct. The student put the final temperature in kelvins in place of the change in temperature. The correct calculation is $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1.8\\,\\text{mm}$. Reasonableness check: 28 mm would be 0.7 % of the length of the ladder, which is far too much for thermal expansion."
+          "feedback": "Correct. The student put the final temperature in kelvins in place of the change in temperature. The correct calculation is $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1.8\\,\\text{mm}$. Reasonableness check: 28 mm would be $0.7\\,\\%$ of the length of the ladder, which is far too much for thermal expansion."
         },
         {
           "text": "The coefficient $\\alpha$ must be converted to the unit 1/°C before substituting.",
-          "feedback": "No conversion is needed: a kelvin and a degree Celsius are the same size, so $1/\\text{K}$ and $1/{}^\\circ\\text{C}$ are the same number. The error is in the change in temperature: the formula needs $\\Delta T = 20\\,\\text{K}$, not 303 K."
+          "feedback": "No conversion is needed: a kelvin and a degree Celsius are the same size, so $1/\\text{K}$ and $1/{}^\\circ\\text{C}$ are the same number. The error is in the change in temperature: the formula needs $\\Delta T = 20\\,\\text{K}$, not $303\\,\\text{K}$."
         },
         {
           "text": "The length must be substituted in millimetres so that the result comes out in millimetres.",
-          "feedback": "A length substituted in metres gives the result in metres, and the conversion to millimetres has been done correctly. The error is in the change in temperature: the temperature rises by only 20 K."
+          "feedback": "A length substituted in metres gives the result in metres, and the conversion to millimetres has been done correctly. The error is in the change in temperature: the temperature rises by only $20\\,\\text{K}$."
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "Check $\\Delta T$. The temperature rises from 10 °C to 30 °C, that is, by 20 K, but the student substituted the final temperature in kelvins. The result 28 mm is about fifteen times too large."
+          "feedback": "Check $\\Delta T$. The temperature rises from $10\\,{}^\\circ\\text{C}$ to $30\\,{}^\\circ\\text{C}$, that is, by $20\\,\\text{K}$, but the student substituted the final temperature in kelvins. The result 28 mm is about fifteen times too large."
         }
       ],
       "optional": true
@@ -325,7 +325,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The bulb of a liquid thermometer contains $0.20\\,\\text{cm}^3$ of ethanol ($\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$). A thin tube with a cross-sectional area of $0.050\\,\\text{mm}^2$ leads from the bulb. By how many millimetres does the liquid column rise when the temperature rises from 15 °C to 25 °C? The expansion of the glass is ignored (the $\\gamma \\approx 3\\alpha$ of glass is about forty times smaller than the coefficient of ethanol), and the expansion of the ethanol in the tube itself is small compared with the bulb.",
+      "prompt": "The bulb of a liquid thermometer contains $0.20\\,\\text{cm}^3$ of ethanol ($\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$). A thin tube with a cross-sectional area of $0.050\\,\\text{mm}^2$ leads from the bulb. By how many millimetres does the liquid column rise when the temperature rises from $15\\,{}^\\circ\\text{C}$ to $25\\,{}^\\circ\\text{C}$? The expansion of the glass is ignored (the $\\gamma \\approx 3\\alpha$ of glass is about forty times smaller than the coefficient of ethanol), and the expansion of the ethanol in the tube itself is small compared with the bulb.",
       "answer": 44,
       "unit": "mm",
       "tolerance": 0.03,
@@ -341,7 +341,7 @@
         },
         {
           "value": 110,
-          "feedback": "You used the final temperature 25 °C in place of the change in temperature. The temperature rises from 15 °C to 25 °C, so $\\Delta T = 10\\,\\text{K}$."
+          "feedback": "You used the final temperature $25\\,{}^\\circ\\text{C}$ in place of the change in temperature. The temperature rises from $15\\,{}^\\circ\\text{C}$ to $25\\,{}^\\circ\\text{C}$, so $\\Delta T = 10\\,\\text{K}$."
         }
       ],
       "solution": "**Given:** ethanol, $V_0 = 0.20\\,\\text{cm}^3$, $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ (given in the problem), cross-sectional area of the tube $A = 0.050\\,\\text{mm}^2$, $T_0 = 15\\,{}^\\circ\\text{C}$, $T = 25\\,{}^\\circ\\text{C}$\n\n**Find:** the rise $h$ of the liquid column in millimetres\n\n**Principle:** Ethanol is a liquid and expands when it warms up, so the change in its volume is proportional to the initial volume and the change in temperature: $\\Delta V = \\gamma V_0 \\Delta T$. The expansion of the glass is about forty times smaller and is ignored, so the whole increase in volume goes into the thin tube. The volume of the column rising in the tube is the volume of a cylinder, $\\Delta V = A h$.\n\n**Formula:** $\\Delta V = \\gamma V_0 \\Delta T$ and $\\Delta V = A h$, so $\\gamma V_0 \\Delta T = A h$, from which\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Conversions:** The area is in square millimetres, so the volume is converted: $V_0 = 0.20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$, because $1\\,\\text{cm}^3 = 1000\\,\\text{mm}^3$. The change in temperature is the same in kelvins: $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta V &= 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2.2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2.2\\,\\text{mm}^3}{0.050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Answer:** $h = 44\\,\\text{mm}$, two significant figures. There are four limiting data: $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, $V_0 = 0.20\\,\\text{cm}^3$, $A = 0.050\\,\\text{mm}^2$ and the difference of whole degrees $\\Delta T = 10\\,\\text{K}$ are all two-figure values.\n\n**Reasonableness:** The volume of the ethanol grows by only $\\gamma \\Delta T = 1.1\\,\\%$, but in a thin tube even a small volume is a long column: $44\\,\\text{mm} / 10\\,\\text{K} \\approx 4\\,\\text{mm}$ per kelvin, which is the order of magnitude of the scale of an ordinary thermometer. The column rises because the liquid warms up. If the expansion of the glass is taken into account, the column rises by about $43\\,\\text{mm}$.",
@@ -358,20 +358,42 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "In autumn the water in a lake cools from the surface. The whole lake has already cooled to 4 °C, and the surface water keeps cooling to 2 °C. What happens to the 2-degree surface water?",
+      "prompt": "In autumn the water in a lake cools from the surface. The whole lake has already cooled to $4\\,{}^\\circ\\text{C}$, and the surface water keeps cooling to $2\\,{}^\\circ\\text{C}$. What happens to the 2-degree surface water?",
       "choices": [
         {
           "text": "It sinks to the bottom, because colder water is always denser.",
-          "feedback": "This happens above 4 °C. Water is an exception, however: between 0 °C and 4 °C it expands when it cools, so the density of 2-degree water is lower than that of 4-degree water, and it stays at the surface."
+          "feedback": "This happens above $4\\,{}^\\circ\\text{C}$. Water is an exception, however: between $0\\,{}^\\circ\\text{C}$ and $4\\,{}^\\circ\\text{C}$ it expands when it cools, so the density of 2-degree water is lower than that of 4-degree water, and it stays at the surface."
         },
         {
-          "text": "It stays at the surface, because between 0 °C and 4 °C water expands when it cools and its density decreases.",
+          "text": "It stays at the surface, because between $0\\,{}^\\circ\\text{C}$ and $4\\,{}^\\circ\\text{C}$ water expands when it cools and its density decreases.",
           "correct": true,
-          "feedback": "Correct. The density of water is greatest at about 4 °C, so the densest water stays at the bottom and the colder water at the surface, where it finally freezes. That is why a lake freezes from the surface, and even in winter there is water at about 4 °C at the bottom."
+          "feedback": "Correct. The density of water is greatest at about $4\\,{}^\\circ\\text{C}$, so the densest water stays at the bottom and the colder water at the surface, where it finally freezes. That is why a lake freezes from the surface, and even in winter there is water at about 4 °C at the bottom."
         },
         {
-          "text": "It mixes with the whole lake, so the whole lake cools evenly to 0 °C and freezes from the bottom.",
-          "feedback": "Mixing would require the surface water to be denser than the water below. Between 0 °C and 4 °C water expands when it cools, so the cold surface water is less dense and stays at the surface. A lake freezes from the surface, not from the bottom."
+          "text": "It mixes with the whole lake, so the whole lake cools evenly to $0\\,{}^\\circ\\text{C}$ and freezes from the bottom.",
+          "feedback": "Mixing would require the surface water to be denser than the water below. Between $0\\,{}^\\circ\\text{C}$ and $4\\,{}^\\circ\\text{C}$ water expands when it cools, so the cold surface water is less dense and stays at the surface. A lake freezes from the surface, not from the bottom."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. The hole warms up",
+      "prompt": "A steel plate has a round hole. The plate is heated evenly. What happens to the diameter of the hole?",
+      "choices": [
+        {
+          "text": "The hole gets smaller, because the metal expands and fills the hole from its edges.",
+          "feedback": "This is a common idea, but the hole is not metal that could expand. Every distance in the plate grows in the same proportion, including the distance between opposite edges of the hole, so the diameter of the hole grows."
+        },
+        {
+          "text": "The hole stays the same, because the expansion only affects the outer dimensions of the plate.",
+          "feedback": "The expansion is not limited to the outer edges. The gap between particles grows everywhere, so the distance between the edges of the hole grows too. Otherwise the pattern of the plate would not stay the same shape."
+        },
+        {
+          "text": "The hole gets bigger, because all the dimensions of the plate grow in the same proportion, as when a picture is enlarged.",
+          "correct": true,
+          "feedback": "Correct. When the plate warms up, all the distances between its points grow in the same proportion, including the diameter of the hole. That is why a hot ring fits on a shaft and shrinks tightly onto it as it cools."
         }
       ]
     },
@@ -379,15 +401,15 @@
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Table and calculation",
-      "prompt": "A metal rod is 2.00 m long at 20 °C. The table gives example values of the change in length of the rod at different temperatures (calculated values, not measurements).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1.84 | 3.68 |\n\nCalculate the coefficient of linear expansion $\\alpha$ of the metal. Give the answer in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
+      "title": "3. Table and calculation",
+      "prompt": "A metal rod is $2.00\\,\\text{m}$ long at $20\\,{}^\\circ\\text{C}$. The table gives example values of the change in length of the rod at different temperatures (calculated values, not measurements).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1.84 | 3.68 |\n\nCalculate the coefficient of linear expansion $\\alpha$ of the metal. Give the answer in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
       "answer": 23,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.02,
       "hints": [
-        "By how much does $\\Delta L$ grow when the temperature rises by 40 K? Does the growth stay the same in every interval?",
-        "From the formula $\\Delta L = \\alpha L_0 \\Delta T$ you get $\\alpha = \\dfrac{\\Delta L}{L_0 \\Delta T}$. The change in temperature is calculated from 20 °C, where $L_0$ was measured.",
-        "For example from the 60 °C column: $\\alpha = \\dfrac{1.84 \\cdot 10^{-3}\\,\\text{m}}{2.00\\,\\text{m} \\cdot 40\\,\\text{K}}$."
+        "By how much does $\\Delta L$ grow when the temperature rises by $40\\,\\text{K}$? Does the growth stay the same in every interval?",
+        "From the formula $\\Delta L = \\alpha L_0 \\Delta T$ you get $\\alpha = \\dfrac{\\Delta L}{L_0 \\Delta T}$. The change in temperature is calculated from $20\\,{}^\\circ\\text{C}$, where $L_0$ was measured.",
+        "For example from the $60\\,{}^\\circ\\text{C}$ column: $\\alpha = \\dfrac{1.84 \\cdot 10^{-3}\\,\\text{m}}{2.00\\,\\text{m} \\cdot 40\\,\\text{K}}$."
       ],
       "mistakes": [
         {
@@ -396,7 +418,7 @@
         },
         {
           "value": 15.3,
-          "feedback": "You used the temperature 60 °C in place of the change in temperature. The length was measured at 20 °C, so $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$."
+          "feedback": "You used the temperature $60\\,{}^\\circ\\text{C}$ in place of the change in temperature. The length was measured at $20\\,{}^\\circ\\text{C}$, so $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$."
         }
       ],
       "solution": "**Given:** metal rod, $L_0 = 2.00\\,\\text{m}$ at $T_0 = 20\\,{}^\\circ\\text{C}$; from the table $\\Delta L = 1.84\\,\\text{mm}$ at $60\\,{}^\\circ\\text{C}$ and $\\Delta L = 3.68\\,\\text{mm}$ at $100\\,{}^\\circ\\text{C}$\n\n**Find:** the coefficient of linear expansion $\\alpha$ in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$\n\n**Principle:** The change in the length of a solid is proportional to the initial length and the change in temperature, and the constant of proportionality $\\alpha$ is a constant characteristic of the material. In the table $\\Delta L$ doubles when the change in temperature $\\Delta T$ ($40\\,\\text{K} \\to 80\\,\\text{K}$) doubles, so the proportionality holds and the rod does not change its state of matter.\n\n**Formula:** $\\Delta L = \\alpha L_0 \\Delta T$, from which\n\n$$\\alpha = \\frac{\\Delta L}{L_0 \\Delta T}$$\n\n**Conversions:** $\\Delta L = 1.84\\,\\text{mm} = 1.84 \\cdot 10^{-3}\\,\\text{m}$, so that the length units cancel. $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, the same in kelvins. The result is given in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\alpha &= \\frac{1.84 \\cdot 10^{-3}\\,\\text{m}}{2.00\\,\\text{m} \\cdot 40\\,\\text{K}} \\\\ &= 2.3 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{K}} \\\\ &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\end{aligned}$$\n\n**Answer:** $\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, two significant figures. The limiting datum is the temperature difference $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, which as a difference of whole degrees is a two-figure value; $\\Delta L = 1.84\\,\\text{mm}$ and $L_0 = 2.00\\,\\text{m}$ are three-figure values and do not limit the result.\n\n**Reasonableness:** The other column gives the same: $\\dfrac{3.68 \\cdot 10^{-3}\\,\\text{m}}{2.00\\,\\text{m} \\cdot 80\\,\\text{K}} = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. The value equals the $\\alpha$ of aluminium in the table and is in the usual range of metals, $10$–$25 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. If $60\\,\\text{K}$ were used in place of $\\Delta T$, the result would be $15 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, which would not fit the other column."
@@ -405,7 +427,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "prompt": "Use the micro model to explain why a steel rail gets longer when it warms up, and why the same rise in temperature increases the volume of air at constant pressure proportionally much more than the volume of the rail.",
       "criteria": [
         "I say that when the temperature rises the vibration or motion of the particles gets stronger, but the particles themselves do not grow.",
@@ -420,7 +442,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. First answer them yourself and only then open the answer."
+      "text": "Finally, one quick question. First answer it yourself and only then open the answer."
     }
   ]
 }

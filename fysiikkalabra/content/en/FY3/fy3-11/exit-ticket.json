@@ -4,11 +4,7 @@
     "a": "$W_\\text{g} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0.000\\,50\\,\\text{m}^3 = 100\\,\\text{J}$."
   },
   {
-    "q": "The energy of fuel is supplied to a car engine at a power of 60 kW, and the efficiency of the engine is 30 %. What is the mechanical power, and where does the rest of the energy go?",
-    "a": "The mechanical power is 0.30 · 60 kW = 18 kW. The remaining 42 kW is transferred as heat to the surroundings through the exhaust gases and the radiator."
-  },
-  {
-    "q": "An air-source heat pump gives out about three times as much heat indoors as the electricity it uses. Why does this not break conservation of energy?",
-    "a": "The pump does not produce heat out of nothing but transfers it from the outdoor air to the inside. The heat given out indoors is the sum of the heat taken from outside and the electricity, so energy is conserved."
+    "q": "The energy of fuel is supplied to a car engine at a power of $60\\,\\text{kW}$, and the efficiency of the engine is $30\\,\\%$. What is the mechanical power, and where does the rest of the energy go?",
+    "a": "The mechanical power is 0.30 · $60\\,\\text{kW}$ = $18\\,\\text{kW}$. The remaining $42\\,\\text{kW}$ is transferred as heat to the surroundings through the exhaust gases and the radiator."
   }
 ]

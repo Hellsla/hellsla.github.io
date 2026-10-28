@@ -39,15 +39,15 @@
 **Järkevyys:** Arvio: $2300\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}03\,\text{kg} \approx 69\,\text{kJ}$. Tämä lämpömäärä lämmittäisi $0{,}3\,\text{kg}$ maitoa noin $\dfrac{67{,}8\,\text{kJ}}{4{,}19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}3\,\text{kg}} \approx 54\,\text{K}$. Pieni höyrymäärä lämmittää siis kannullisen maitoa. Samasta syystä höyry polttaa ihoa pahemmin kuin yhtä kuuma vesi.
 
 ## fy3-7-L1-05
-**Annettu:** lämpenemiskäyrän vaakasuora osa $0\,{}^\circ\text{C}$:ssa alkaa energian kohdalta $E_1 = 19\,\text{kJ}$ ja päättyy kohtaan $E_2 = 186\,\text{kJ}$; jää lämpeni ensin $-18\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$ ja $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Kysytty:** mitä vaakasuoralla osalla tapahtuu, ja siihen kuluva lämpömäärä $Q$ kilojouleina
-**Periaate:** Vaakasuoralla osalla lämpötila ei muutu, vaikka energiaa siirtyy. Aine muuttaa olomuotoaan. Lämpötila on $0\,{}^\circ\text{C}$, joten jää sulaa. Siirtyvä energia kuluu sulamiseen, $Q = sm$.
-**Kuvaajan lukeminen:** Vaaka-akselilla on siirretty energia. Vaakasuora osa alkaa kohdasta $19\,\text{kJ}$ ja päättyy kohtaan $186\,\text{kJ}$. Sulamiseen kuluva energia on näiden kahden arvon erotus.
-**Kaava:** $Q = E_2 - E_1$; sulaneen jään massa saadaan kaavasta $Q = sm$, eli $m = \dfrac{Q}{s}$
-**Muunnokset:** Ei tarvita. Molemmat luvut luetaan kilojouleina. Tarkistuslaskussa $c_\text{jää}$ muunnetaan: $2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 2{,}1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$.
-**Sijoitus:** $Q = 186\,\text{kJ} - 19\,\text{kJ} = 167\,\text{kJ}$, ja $m = \dfrac{167\,\text{kJ}}{334\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}50\,\text{kg}$
-**Vastaus:** $167\,\text{kJ}$ ja jää sulaa. Molemmat lukemat ovat kilojoulen tarkkuudella, joten erotuskin on. Vastaus on $167\,\text{kJ}$, kolme merkitsevää numeroa.
-**Järkevyys:** Jään lämmittäminen $18\,\text{K}$:lla vaatisi $2{,}1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 18\,\text{K} = 18{,}9\,\text{kJ} \approx 19\,\text{kJ}$, ja se täsmää käyrän alkuosaan. Sulaminen vie lähes yhdeksän kertaa enemmän energiaa kuin lämpeneminen. Siksi vaakasuora osa on niin pitkä.
+**Annettu:** jään massa $m = 0{,}60\,\text{kg}$; lämpötila siirretyn energian funktiona kuvaajassa
+**Kysytty:** jään ominaissulamislämpö $s$
+**Periaate:** Kuvaajan vaakasuorassa osassa lämpötila pysyy vakiona $0\,{}^\circ\text{C}$:ssa, vaikka energiaa siirtyy. Jää sulaa, ja kaikki siirtyvä energia kuluu sulamiseen, $Q = sm$. Sulamiseen kuluva energia on vaakasuoran osan pituus vaaka-akselilla.
+**Kuvaajan lukeminen:** Vaakasuora osa alkaa ruudukon risteyksestä $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Se päättyy risteykseen $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. Sulamiseen kuluva energia on siis $Q = 220\,\text{kJ} - 20\,\text{kJ} = 200\,\text{kJ}$.
+**Kaava:** $Q = sm$, josta $s = \dfrac{Q}{m}$
+**Muunnokset:** Ei tarvita. Energia luetaan kilojouleina, ja vastaus pyydetään yksikössä $\tfrac{\text{kJ}}{\text{kg}}$.
+**Sijoitus:** $s = \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} = 333\,\tfrac{\text{kJ}}{\text{kg}}$
+**Vastaus:** $333\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa. Arvot luetaan tarkasti ruudukosta, joten hyväksytään $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$.
+**Järkevyys:** Tulos on lähellä taulukon arvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$. Sulamiseen kuluu $200\,\text{kJ}$. Jään lämmittämiseen ennen sulamista kului vain $20\,\text{kJ}$. Siksi vaakasuora osa on pitkä. Sulamisen jälkeen lämpötila nousee loivemmin, koska veden ominaislämpökapasiteetti on suurempi kuin jään.
 
 ## fy3-7-L2-01
 **Annettu:** $P = 2{,}0\,\text{kW}$, kiehuvasta vedestä höyrystyvä massa $m = 0{,}50\,\text{kg}$, kaikki levyn energia siirtyy veteen; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$

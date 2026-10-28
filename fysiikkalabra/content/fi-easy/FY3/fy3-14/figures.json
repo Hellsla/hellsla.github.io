@@ -1,3 +1,8 @@
 {
- "Kuvitus: pöydällä on korkea lasi kylmää juomaa, jossa kelluu jääpaloja ja pilli. Lasin ulkopinnalle on tiivistynyt vesipisaroita, ja lasin vieressä on jääpalarasia.": "Kuva: pöydällä on korkea lasi kylmää juomaa. Lasissa kelluu jääpaloja ja pilli. Lasin ulkopinnalle on tiivistynyt vesipisaroita. Lasin vieressä on jääpalarasia."
+ "Kuvitus: pöydällä on korkea lasi kylmää juomaa, jossa kelluu jääpaloja ja pilli. Lasin ulkopinnalle on tiivistynyt vesipisaroita, ja lasin vieressä on jääpalarasia.": "Kuva: pöydällä on korkea lasi kylmää juomaa. Lasissa kelluu jääpaloja ja pilli. Lasin ulkopinnalle on tiivistynyt vesipisaroita. Lasin vieressä on jääpalarasia.",
+ "Pylväskuvaaja mittakaavassa: kolme lämpömäärää kilojouleina samasta seoksesta, jossa on vettä ja pakkasessa ollutta jäätä. Ruudukon väli on 5 kJ ja numerot joka 10 kJ:n kohdalla. Ylin pylväs, veden luovuttama lämpömäärä sen jäähtyessä 0 °C:seen, päättyy kohtaan 25 kJ. Keskimmäinen, jään lämmittämiseen 0 °C:seen tarvittava lämpömäärä, päättyy kohtaan 5 kJ. Alin, kaiken jään sulattamiseen tarvittava lämpömäärä, päättyy kohtaan 60 kJ.": "Pylväskuvaaja mittakaavassa: kolme lämpömäärää kilojouleina samasta seoksesta. Seoksessa on vettä ja pakkasessa ollutta jäätä. Ruudukon väli on 5 kJ, ja numerot ovat joka 10 kJ:n kohdalla. Ylin pylväs on veden luovuttama lämpömäärä sen jäähtyessä 0 °C:seen. Se päättyy kohtaan 25 kJ. Keskimmäinen pylväs on lämpömäärä, joka tarvitaan jään lämmittämiseen 0 °C:seen. Se päättyy kohtaan 5 kJ. Alin pylväs on lämpömäärä, joka tarvitaan kaiken jään sulattamiseen. Se päättyy kohtaan 60 kJ.",
+ "vesi luovuttaa jäähtyessään ": "vesi luovuttaa jäähtyessään ",
+ ":seen": ":seen",
+ "jään lämmittäminen ": "jään lämmittäminen ",
+ "kaiken jään sulattaminen": "kaiken jään sulattaminen"
 }

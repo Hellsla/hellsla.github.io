@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d436d035b2ff1d4b
+CONTENT-HASH: 03d80ed870e7662d
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: d436d035b2ff1d4b
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): English reads naturally for 16–18-year-olds; terms match terms.md (force meter, extension, acceleration of free fall, celestial body, weight/mass); stage and step labels match lang/en.json; experiment intros name the right controls (mass m, celestial body); correct choices unambiguous and each feedback matches its option.
 - Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked unit-in-math wrapping, the new check-c2 item, trimmed exit ticket, new figure description, lesson text.

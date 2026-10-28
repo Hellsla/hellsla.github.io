@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Boyle's law $p_1V_1 = p_2V_2$ at constant temperature (chapter *Changes of state of a gas and Boyle's law*)",
-    "At constant volume the pressure, and at constant pressure the volume, is proportional to the temperature in kelvins (chapter *Changes of state of a gas and Boyle's law*)"
+    "When the amount of gas stays the same, the pressure of a dilute gas at constant volume and its volume at constant pressure are proportional to the temperature in kelvins (chapter *Changes of state of a gas and Boyle's law*)"
   ],
   "activities": [
     {
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction: twice as many particles",
-      "prompt": "A box contains 100 particles at a temperature of 300 K. Particles are added until there are 200. The temperature and the volume stay the same. How does the pressure of the gas change?",
+      "prompt": "A box contains 100 particles at a temperature of $300\\,\\text{K}$. Particles are added until there are 200. The temperature and the volume stay the same. How does the pressure of the gas change?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -81,7 +81,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Weigh the flasks",
-      "text": "A thin-walled 5.00 litre glass flask is weighed first pumped empty and then filled with different gases. Each time the gas pressure is 101 kPa and the temperature is 20 °C. A mole is always the same, a certain number of particles, and the molar mass $M$ is the mass of one mole. The table shows the masses of the gases (*example values* with the usual scatter of weighing, about ±0.02 g) and the molar masses.\n\n| gas | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0.83 | 4.00 |\n| nitrogen N₂ | 5.78 | 28.0 |\n| air | 6.02 | 29.0 |\n| carbon dioxide CO₂ | 9.10 | 44.0 |\n\nFirst calculate the quotient of the mass and the molar mass, $m/M$, for helium.",
+      "text": "A thin-walled 5.00 litre glass flask is weighed first pumped empty and then filled with different gases. Each time the gas pressure is 101 kPa and the temperature is $20\\,{}^\\circ\\text{C}$. A mole is always the same, a certain number of particles, and the molar mass $M$ is the mass of one mole. The table shows the masses of the gases (*example values* with the usual scatter of weighing, about ±$0.02\\,\\text{g}$) and the molar masses.\n\n| gas | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0.83 | 4.00 |\n| nitrogen N₂ | 5.78 | 28.0 |\n| air | 6.02 | 29.0 |\n| carbon dioxide CO₂ | 9.10 | 44.0 |\n\nFirst calculate the quotient of the mass and the molar mass, $m/M$, for helium.",
       "question": {
         "type": "numeric",
         "prompt": "What is $m/M$ for helium?",
@@ -118,11 +118,11 @@
         {
           "text": "$m/M$ is almost the same for all the gases.",
           "correct": true,
-          "feedback": "Exactly: helium 0.2075 mol, nitrogen 0.2064 mol, air 0.2076 mol and carbon dioxide 0.2068 mol. The differences are under 1 %, that is, the scatter of weighing. The quotient $m/M$ is the amount of substance in moles, so at the same pressure, volume and temperature all these gases contain the same number of moles."
+          "feedback": "Exactly: helium 0.2075 mol, nitrogen 0.2064 mol, air 0.2076 mol and carbon dioxide 0.2068 mol. The differences are under $1\\,\\%$, that is, the scatter of weighing. The quotient $m/M$ is the amount of substance in moles, so at the same pressure, volume and temperature all these gases contain the same number of moles."
         },
         {
           "text": "$m/M$ is greatest for helium, because more of a light gas fits into the flask.",
-          "feedback": "For helium $m/M = 0.83\\,\\text{g} / 4.00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0.2075\\,\\text{mol}$, and the values for the others are 0.2064–0.2076 mol. The difference is smaller than the scatter of weighing, so there is no more helium."
+          "feedback": "For helium $m/M = 0.83\\,\\text{g} / 4.00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0.2075\\,\\text{mol}$, and the values for the others are $0.2064$–$0.2076\\,\\text{mol}$. The difference is smaller than the scatter of weighing, so the measurement does not show that there is more helium: the amounts of substance are the same within the measurement accuracy."
         },
         {
           "text": "$m/M$ is greatest for carbon dioxide, because its mass is the greatest.",
@@ -143,12 +143,12 @@
       "choices": [
         {
           "text": "The air balloon, because the air balloon is heavier.",
-          "feedback": "In the weighing the mass of air was about 7 times the mass of helium (6.02 g and 0.83 g), but when the mass is divided by the molar mass, both give almost the same amount of substance, 0.2076 mol and 0.2075 mol. A mole is always the same number of particles, so there are the same number of particles. Mass tells the number of particles only if the particles are all alike."
+          "feedback": "In the weighing the mass of air was about 7 times the mass of helium ($6.02\\,\\text{g}$ and $0.83\\,\\text{g}$), but when the mass is divided by the molar mass, both give almost the same amount of substance, 0.2076 mol and 0.2075 mol. A mole is always the same number of particles, so there are the same number of particles. Mass tells the number of particles only if the particles are all alike."
         },
         {
           "text": "The same number.",
           "correct": true,
-          "feedback": "Correct. In the weighing $m/M$ was almost the same for all four gases, and a mole is always the same number of particles. So at the same pressure, volume and temperature the gases contain the same number of particles. The helium balloon is lighter because a helium particle is lighter: its molar mass is 4.00 g/mol, and that of air is 29.0 g/mol."
+          "feedback": "Correct. In the weighing $m/M$ was almost the same for all four gases, and a mole is always the same number of particles. So at the same pressure, volume and temperature the gases contain the same number of particles. The helium balloon is lighter because a helium particle is lighter: its molar mass is $4.00\\,\\text{g/mol}$, and that of air is $29.0\\,\\text{g/mol}$."
         },
         {
           "text": "The helium balloon, because the small, fast helium particles fit more tightly.",
@@ -174,7 +174,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the number of particles changes",
-      "intro": "Test your prediction. The temperature and volume are locked, and only the number of particles changes. Record the pressure for at least two particle numbers, for example $N = 50$, $100$ and $200$; the row $N = 100$ is still needed in Experiment 2. *Measured pressure* and the hits are moving averages: after you have changed the control, press *Reset measurement* and wait until the reading shows the mean over about 2 s (at normal speed about 4 seconds). Only then record.",
+      "intro": "Test your prediction. The temperature and volume are locked, and only the number of particles changes. Record the pressure for at least two particle numbers, for example $N = 50$, $100$ and $200$; the row $N = 100$ is still needed in Experiment 2. *Measured pressure* and the hits are moving averages: after you have changed the control, press *Reset measurement* and wait until the reading shows the mean over about $2\\,\\text{s}$ (at normal speed about 4 seconds). Only then record.",
       "initial": {
         "N": 100,
         "T": 300,
@@ -212,7 +212,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: hotter gas, same pressure",
-      "intro": "Solve the challenge. The temperature is now 600 K, which is twice the reference state 300 K. First record the row $N = 100$ and compare the pressure with the row $N = 100$ of Experiment 1. Then find the number of particles for which the measured pressure is again about 1.00, and record it. After every change, press *Reset measurement* and wait for a mean over about 2 s before recording.",
+      "intro": "Solve the challenge. The temperature is now $600\\,\\text{K}$, which is twice the reference state $300\\,\\text{K}$. First record the row $N = 100$ and compare the pressure with the row $N = 100$ of Experiment 1. Then find the number of particles for which the measured pressure is again about 1.00, and record it. After every change, press *Reset measurement* and wait for a mean over about $2\\,\\text{s}$ before recording.",
       "initial": {
         "N": 100,
         "T": 600,
@@ -242,19 +242,19 @@
       "min": 2,
       "question": {
         "type": "numeric",
-        "prompt": "The temperature was doubled to 600 K. With what number of particles does the pressure stay at $p/p_\\text{ref} = 1.00$?",
+        "prompt": "The temperature was doubled to $600\\,\\text{K}$. With what number of particles does the pressure stay at $p/p_\\text{ref} = 1.00$?",
         "answer": 50,
         "unit": "",
         "tolerance": 0.02,
         "hints": [
           "Did raising the temperature increase the pressure, and by what factor? Look at the row $N = 100$.",
           "According to experiment 1 the pressure is proportional to the number of particles. How much must the number of particles be changed for the doubled pressure to return to its original value?",
-          "At 600 K and with 100 particles $p/p_\\text{ref} \\approx 2.0$. The pressure is halved when the number of particles is halved."
+          "At $600\\,\\text{K}$ and with 100 particles $p/p_\\text{ref} \\approx 2.0$. The pressure is halved when the number of particles is halved."
         ],
         "mistakes": [
           {
             "value": 200,
-            "feedback": "When the temperature rises, the pressure grows by itself. The number of particles must be reduced, not increased: with 200 particles at 600 K the pressure would be 4.00."
+            "feedback": "When the temperature rises, the pressure grows by itself. The number of particles must be reduced, not increased: with 200 particles at $600\\,\\text{K}$ the pressure would be 4.00."
           },
           {
             "value": 71,
@@ -265,7 +265,7 @@
             "feedback": "The temperature doubled once, so the pressure doubled once. The number of particles is halved once: with 25 particles the pressure would be 0.50."
           }
         ],
-        "solution": "**Given:** temperature $T_2 = 600\\,\\text{K}$, that is, twice the temperature of the reference state $T_1 = 300\\,\\text{K}$; the volume $V = 100\\,\\%$ stays the same; in the reference state $N_1 = 100$ and $p/p_\\text{ref} = 1.00$\n\n**Find:** the number of particles $N_2$ for which $p/p_\\text{ref}$ is again $1.00$\n\n**Principle:** The volume is constant, so by the equation of state the pressure is proportional to the product of the number of particles and the temperature in kelvins: $p \\propto NT$. Experiment 1 showed that $p \\propto N$, and the row $N = 100$ shows the pressure doubling at 600 K, so $p \\propto T$. The pressure stays the same when the product $NT$ stays the same.\n\n**Formula:** $N_1 T_1 = N_2 T_2$, so $N_2 = N_1 \\cdot \\dfrac{T_1}{T_2}$\n\n**Conversions:** The temperatures are already in kelvins and the units cancel in the ratio, so no conversions are needed.\n\n**Substitution:** $N_2 = 100 \\cdot \\dfrac{300\\,\\text{K}}{600\\,\\text{K}} = 50$\n\n**Answer:** $N_2 = 50$ particles. The numbers of particles $N$ are exact counts and the temperature was doubled exactly ($300\\,\\text{K} \\to 600\\,\\text{K}$), so the ratio $300/600 = 1/2$ is exact and does not limit the result; the answer is an exact number.\n\n**Reasonableness:** The temperature doubled, so the pressure would double, and halving the number of particles brings it back: $\\tfrac{50}{100} \\cdot \\tfrac{600\\,\\text{K}}{300\\,\\text{K}} = 1.00$. The number of particles must be reduced, not increased, because hotter particles hit the wall both more often and more forcefully."
+        "solution": "**Given:** temperature $T_2 = 600\\,\\text{K}$, that is, twice the temperature of the reference state $T_1 = 300\\,\\text{K}$; the volume $V = 100\\,\\%$ stays the same; in the reference state $N_1 = 100$ and $p/p_\\text{ref} = 1.00$\n\n**Find:** the number of particles $N_2$ for which $p/p_\\text{ref}$ is again $1.00$\n\n**Principle:** The volume is constant, so by the equation of state the pressure is proportional to the product of the number of particles and the temperature in kelvins: $p \\propto NT$. Experiment 1 showed that $p \\propto N$, and the row $N = 100$ shows the pressure doubling at $600\\,\\text{K}$, so $p \\propto T$. The pressure stays the same when the product $NT$ stays the same.\n\n**Formula:** $N_1 T_1 = N_2 T_2$, so $N_2 = N_1 \\cdot \\dfrac{T_1}{T_2}$\n\n**Conversions:** The temperatures are already in kelvins and the units cancel in the ratio, so no conversions are needed.\n\n**Substitution:** $N_2 = 100 \\cdot \\dfrac{300\\,\\text{K}}{600\\,\\text{K}} = 50$\n\n**Answer:** $N_2 = 50$ particles. The numbers of particles $N$ are exact counts and the temperature was doubled exactly ($300\\,\\text{K} \\to 600\\,\\text{K}$), so the ratio $300/600 = 1/2$ is exact and does not limit the result; the answer is an exact number.\n\n**Reasonableness:** The temperature doubled, so the pressure would double, and halving the number of particles brings it back: $\\tfrac{50}{100} \\cdot \\tfrac{600\\,\\text{K}}{300\\,\\text{K}} = 1.00$. The number of particles must be reduced, not increased, because hotter particles hit the wall both more often and more forcefully."
       }
     },
     {
@@ -273,13 +273,13 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "What stays the same?",
-      "text": "The table shows *example values* from the simulation for five states in which the number of particles, the temperature and the volume change at the same time. $p/p_\\text{ref}$ is the measured pressure, a 2 s average at the end of a 20 s run. In the last column the measured pressure is multiplied by the volume and divided by the number of particles and the temperature, all relative to the reference state ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$).\n\n| $N$ | $T$ (K) | $V$ (%) | $p/p_\\text{ref}$ | $pV/(NT)$ |\n|---|---|---|---|---|\n| 100 | 300 | 100 | 1.05 | 1.05 |\n| 200 | 300 | 100 | 2.00 | 1.00 |\n| 100 | 600 | 50 | 3.91 | 0.98 |\n| 50 | 150 | 25 | 0.98 | 0.98 |\n| 180 | 300 | 35 | 5.11 | 0.99 |",
+      "text": "The table shows *example values* from the simulation for five states in which the number of particles, the temperature and the volume change at the same time. $p/p_\\text{ref}$ is the pressure calculated by the simulation from the collisions, a $2\\,\\text{s}$ average at the end of a $20\\,\\text{s}$ run. In the last column this pressure is multiplied by the volume and divided by the number of particles and the temperature, all relative to the reference state ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$).\n\n| $N$ | $T$ (K) | $V$ (%) | $p/p_\\text{ref}$ | $pV/(NT)$ |\n|---|---|---|---|---|\n| 100 | 300 | 100 | 1.05 | 1.05 |\n| 200 | 300 | 100 | 2.00 | 1.00 |\n| 100 | 600 | 50 | 3.91 | 0.98 |\n| 50 | 150 | 25 | 0.98 | 0.98 |\n| 180 | 300 | 35 | 5.11 | 0.99 |",
       "question": {
         "type": "choice",
         "prompt": "What does the last column tell you?",
         "choices": [
           {
-            "text": "The quantity $pV/(NT)$ is almost the same in all states, about 1. The differences are random variation in the measurement.",
+            "text": "The quantity $pV/(NT)$ is almost the same in all states, about 1. The differences are random variation in the pressure of the simulation.",
             "correct": true,
             "feedback": "Exactly: although the pressure varies from 0.98 to 5.11, the quantity $pV/(NT)$ stays within a few percent of 1. When the number of particles is expressed as the amount of substance $n$, this constant becomes the molar gas constant $R$ and the equation becomes $pV = nRT$."
           },
@@ -289,7 +289,7 @@
           },
           {
             "text": "The quantity $pV/(NT)$ depends on which quantity was changed.",
-            "feedback": "The rows where different quantities were changed, or many at once, all give about 1. The small differences (0.98–1.05) are because the measured pressure is an average over a short time, not because of the quantity that was changed."
+            "feedback": "The rows where different quantities were changed, or many at once, all give about 1. The small differences (0.98–1.05) are because the pressure of the simulation is an average over a short time, not because of the quantity that was changed."
           }
         ]
       },
@@ -300,7 +300,7 @@
       "stage": "tutki",
       "type": "numeric",
       "title": "Calculate the constant from the weighing",
-      "prompt": "In the simulation $pV/(NT)$ stayed constant. Let us calculate the same quantity for a real gas. In the weighing the amount of substance of helium was $n = m/M = 0.2075\\,\\text{mol}$, the pressure 101 kPa, the volume 5.00 l and the temperature 20 °C. Calculate $pV/(nT)$ in SI units.",
+      "prompt": "In the simulation $pV/(NT)$ stayed constant. Let us calculate the same quantity from weighing data that resemble a measurement of a real gas. In the weighing the amount of substance of helium was $n = m/M = 0.2075\\,\\text{mol}$, the pressure 101 kPa, the volume $5.00\\,\\textsf{l}$ and the temperature $20\\,{}^\\circ\\text{C}$. Calculate $pV/(nT)$ in SI units.",
       "answer": 8.3,
       "unit": "J/(mol·K)",
       "tolerance": 0.02,
@@ -323,7 +323,7 @@
           "feedback": "You substituted the pressure in kilopascals. The SI unit is the pascal: $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$."
         }
       ],
-      "solution": "**Given:** helium, from the table $m/M = n = 0.2075\\,\\text{mol}$; $p = 101\\,\\text{kPa}$, $V = 5.00\\,\\textsf{l}$, $\\theta = 20\\,{}^\\circ\\text{C}$\n\n**Find:** the quantity $\\dfrac{pV}{nT}$ in SI units\n\n**Principle:** In the simulation this quotient stayed constant when the number of particles, the temperature and the volume were changed. The same ratio is now calculated for a real gas for which all three quantities and the amount of substance are known. It is a constant for all gases, because the gas laws hold regardless of the type of gas.\n\n**Formula:** $\\dfrac{pV}{nT}$, and from the equation of state $pV = nRT$ it follows that $R = \\dfrac{pV}{nT}$\n\n**Conversions:** $p = 101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$, $V = 5.00\\,\\textsf{l} = 0.00500\\,\\text{m}^3$ and $T = (20 + 273.15)\\,\\text{K} = 293.15\\,\\text{K}$.\n\n**Substitution:** $\\dfrac{pV}{nT} = \\dfrac{101\\,000\\,\\text{Pa} \\cdot 0.00500\\,\\text{m}^3}{0.2075\\,\\text{mol} \\cdot 293.15\\,\\text{K}} = 8.302\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Answer:** $8.3\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$, two significant figures. The limiting datum is the mass of helium $0.83\\,\\text{g}$ (two digits), from which the amount of substance $n = 0.2075\\,\\text{mol}$ was calculated; its four digits are only an intermediate result. The pressure $101\\,\\text{kPa}$, the volume $5.00\\,\\textsf{l}$ and the temperature $293\\,\\text{K}$ have three digits. This is the molar gas constant $R$.\n\n**Reasonableness:** The result is close to the table value $8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$, and the difference is under $0.2\\,\\%$. For the other gases you get almost the same number, because $m/M$ was almost the same for them. The unit is correct, because $\\text{Pa}\\cdot\\text{m}^3 = \\text{J}$."
+      "solution": "**Given:** helium, from the table $m/M = n = 0.2075\\,\\text{mol}$; $p = 101\\,\\text{kPa}$, $V = 5.00\\,\\textsf{l}$, $\\theta = 20\\,{}^\\circ\\text{C}$\n\n**Find:** the quantity $\\dfrac{pV}{nT}$ in SI units\n\n**Principle:** In the simulation this quotient stayed constant when the number of particles, the temperature and the volume were changed. The same ratio is now calculated for the gas of the weighing data, for which all three quantities and the amount of substance are known. It is the same for all ideal gases, because the gas laws do not depend on the type of gas, and dilute real gases obey them well.\n\n**Formula:** $\\dfrac{pV}{nT}$, and from the equation of state $pV = nRT$ it follows that $R = \\dfrac{pV}{nT}$\n\n**Conversions:** $p = 101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$, $V = 5.00\\,\\textsf{l} = 0.00500\\,\\text{m}^3$ and $T = (20 + 273.15)\\,\\text{K} = 293.15\\,\\text{K}$.\n\n**Substitution:** $\\dfrac{pV}{nT} = \\dfrac{101\\,000\\,\\text{Pa} \\cdot 0.00500\\,\\text{m}^3}{0.2075\\,\\text{mol} \\cdot 293.15\\,\\text{K}} = 8.302\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Answer:** $8.3\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$, two significant figures. The limiting datum is the mass of helium $0.83\\,\\text{g}$ (two digits), from which the amount of substance $n = 0.2075\\,\\text{mol}$ was calculated; its four digits are only an intermediate result. The pressure $101\\,\\text{kPa}$, the volume $5.00\\,\\textsf{l}$ and the temperature $293\\,\\text{K}$ have three digits. This is the molar gas constant $R$.\n\n**Reasonableness:** The result is close to the table value $8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$, and the difference is under $0.2\\,\\%$. For the other gases you get almost the same number, because $m/M$ was almost the same for them. The unit is correct, because $\\text{Pa}\\cdot\\text{m}^3 = \\text{J}$."
     },
     {
       "id": "johtopaatos",
@@ -377,7 +377,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates how many moles of air are in a 2.0 litre bottle when the pressure is 101 kPa and the temperature is 20 °C:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1.2\\,\\text{mol} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "A student calculates how many moles of air are in a 2.0 litre bottle when the pressure is 101 kPa and the temperature is $20\\,{}^\\circ\\text{C}$:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1.2\\,\\text{mol} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "The pressure should be substituted in kilopascals, 101 kPa.",
@@ -386,10 +386,10 @@
         {
           "text": "The temperature is in degrees Celsius. In kelvins $T = 293.15\\,\\text{K}$, and $n \\approx 0.083\\,\\text{mol}$.",
           "correct": true,
-          "feedback": "Correct. In the equation of state the temperature is always in kelvins: $n = 101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 / (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293.15\\,\\text{K}) \\approx 0.083\\,\\text{mol}$. Reasonableness check: a mole takes up about 24 l at room temperature, so 2.0 litres contain about 0.08 mol."
+          "feedback": "Correct. In the equation of state the temperature is always in kelvins: $n = 101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 / (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293.15\\,\\text{K}) \\approx 0.083\\,\\text{mol}$. Reasonableness check: a mole takes up about $24\\,\\textsf{l}$ at room temperature, so 2.0 litres contain about 0.08 mol."
         },
         {
-          "text": "The volume should be substituted in litres, 2.0 l.",
+          "text": "The volume should be substituted in litres, $2.0\\,\\textsf{l}$.",
           "feedback": "The cubic metre is correct: $2.0\\,\\text{l} = 0.0020\\,\\text{m}^3$, and only it matches the units of the pascal and $R$. The error is elsewhere."
         },
         {
@@ -404,7 +404,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The volume of the envelope of a hot-air balloon is $2.80 \\cdot 10^3\\,\\text{m}^3$. The lower part of the envelope is open, so the pressure of the air inside is the same as that outside, 101 kPa. The burner heats the air inside to 100 °C. How many kilograms of air are inside the envelope? The molar mass of air is 29.0 g/mol, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Assume that air is an ideal gas.",
+      "prompt": "The volume of the envelope of a hot-air balloon is $2.80 \\cdot 10^3\\,\\text{m}^3$. The lower part of the envelope is open, so the pressure of the air inside is the same as that outside, 101 kPa. The burner heats the air inside to $100\\,{}^\\circ\\text{C}$. How many kilograms of air are inside the envelope? The molar mass of air is $29.0\\,\\text{g/mol}$, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Assume that air is an ideal gas.",
       "answer": 2640,
       "unit": "kg",
       "tolerance": 0.02,
@@ -459,11 +459,37 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Temperature in kelvins",
+      "prompt": "Air is sealed in a rigid, closed container, and its temperature is $20\\,{}^\\circ\\text{C}$. The container is heated until the temperature of the air is $40\\,{}^\\circ\\text{C}$. What happens to the pressure of the air?",
+      "choices": [
+        {
+          "text": "The pressure doubles, because the temperature doubles.",
+          "feedback": "This is tempting, because the numbers $20$ and $40$ seem to double. But the pressure is proportional to the temperature in kelvins, not in degrees Celsius. In kelvins the temperature changes from $293.15\\,\\text{K}$ to $313.15\\,\\text{K}$, so the pressure grows by only about $7\\,\\%$."
+        },
+        {
+          "text": "The pressure grows by about $7\\,\\%$, because the temperature in kelvins grows from $293\\,\\text{K}$ to $313\\,\\text{K}$.",
+          "correct": true,
+          "feedback": "Correct. The volume and the amount of substance stay the same, so $p = nRT/V$ is proportional to the temperature in kelvins and $p_2/p_1 = T_2/T_1 = 313.15\\,\\text{K} / 293.15\\,\\text{K} \\approx 1.07$. The temperature must be in kelvins, because only the zero point of the kelvin scale is the absolute zero: the pressure of a gas is proportional to the temperature only when the temperature is measured from that point."
+        },
+        {
+          "text": "The pressure does not change, because the volume of the container and the amount of air stay the same.",
+          "feedback": "The volume and the amount of substance stay the same, but besides them the pressure depends on the temperature: $p = nRT/V$. When the temperature rises, the particles move faster and hit the wall more often and more forcefully, so the pressure grows by about $7\\,\\%$."
+        },
+        {
+          "text": "The pressure grows by $20\\,\\%$, because the temperature rises by $20$ degrees.",
+          "feedback": "A rise of temperature in degrees is not a percentage. The relative change of the pressure is the ratio of the temperatures in kelvins minus one: $(313.15 - 293.15)\\,\\text{K} / 293.15\\,\\text{K} \\approx 0.068$, that is, about $7\\,\\%$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Prediction for a state of the simulation",
-      "prompt": "In the reference state of the simulation ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$) the pressure is $p/p_\\text{ref} = 1.00$. The number of particles is increased to 150, the temperature is raised to 450 K and the volume is reduced to 75 %. What is the prediction of the equation of state for $p/p_\\text{ref}$?",
+      "title": "3. Prediction for a state of the simulation",
+      "prompt": "In the reference state of the simulation ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$) the pressure is $p/p_\\text{ref} = 1.00$. The number of particles is increased to 150, the temperature is raised to $450\\,\\text{K}$ and the volume is reduced to $75\\,\\%$. What is the prediction of the equation of state for $p/p_\\text{ref}$?",
       "answer": 3.0,
       "unit": "",
       "tolerance": 0.02,
@@ -488,7 +514,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain using the weighing",
+      "title": "4. Explain using the weighing",
       "prompt": "Using the weighing and the equation of state, explain why two containers of the same size, at the same pressure and temperature, contain the same number of moles of gas, whatever the gas is. Why do the gases still weigh different amounts?",
       "criteria": [
         "I say that in the weighing $m/M$, that is, the amount of substance, was almost the same for all the gases.",
@@ -503,7 +529,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first yourself and open the answer only then."
+      "text": "Finally, one quick question. Answer first yourself and open the answer only then."
     }
   ]
 }

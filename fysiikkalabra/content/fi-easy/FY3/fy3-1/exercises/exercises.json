@@ -3,7 +3,7 @@
     {
       "id": "fy3-1-L1-01",
       "level": 1,
-      "text": "Kappaleen massa on 4,0 kg. Mikä on sen paino Maassa?",
+      "text": "Kappaleen massa on $4{,}0\\,\\text{kg}$. Mikä on sen paino Maassa?",
       "answer": 39,
       "unit": "N",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-1-L1-03",
       "level": 1,
-      "text": "Kuun pinnalle jätetyn mittalaitteen massa on 30 kg. Mikä on sen paino Kuussa? Lue $g$:n arvo oppitunnin taulukosta.",
+      "text": "Kuun pinnalle jätetyn mittalaitteen massa on $30\\,\\text{kg}$. Mikä on sen paino Kuussa? Lue $g$:n arvo oppitunnin taulukosta.",
       "answer": 49,
       "unit": "N",
       "tolerance": 0.02
@@ -27,15 +27,16 @@
     {
       "id": "fy3-1-L1-04",
       "level": 1,
-      "text": "Voimamittarin jousi venyy 2,5 cm, kun siihen vaikuttaa 4,0 N:n voima. Kuinka suuri voima venyttää jousta 6,0 cm?",
-      "answer": 9.6,
+      "text": "Kuvaajassa ovat erään voimamittarin jousen kalibrointimittaukset. Kun jouseen ripustetaan tuntematon kappale, jousi venyy $3{,}5\\,\\text{cm}$. Kuinka suuri voima venyttää jousta?",
+      "figure": "fy3-1/spring-points",
+      "answer": 7.0,
       "unit": "N",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy3-1-L1-05",
       "level": 1,
-      "text": "Kappaleen massa on 2,5 kg. Mikä on sen paino Jupiterissa, missä $g = 24{,}8\\,\\text{m/s}^2$?",
+      "text": "Kappaleen massa on $2{,}5\\,\\text{kg}$. Mikä on sen paino Jupiterissa, missä $g = 24{,}8\\,\\text{m/s}^2$?",
       "answer": 62,
       "unit": "N",
       "tolerance": 0.02
@@ -53,7 +54,7 @@
     {
       "id": "fy3-1-L2-02",
       "level": 2,
-      "text": "Kananmunan massa on 60 g. Mikä on sen paino Maassa newtoneina?",
+      "text": "Kananmunan massa on $60\\,\\text{g}$. Mikä on sen paino Maassa newtoneina?",
       "answer": 0.59,
       "unit": "N",
       "tolerance": 0.02
@@ -61,7 +62,7 @@
     {
       "id": "fy3-1-L2-03",
       "level": 2,
-      "text": "Astronautin massa varusteineen on 145 kg. Kuinka paljon pienempi hänen painonsa on Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) kuin Maassa ($g = 9{,}81\\,\\text{m/s}^2$)?",
+      "text": "Astronautin massa varusteineen on $145\\,\\text{kg}$. Kuinka paljon pienempi hänen painonsa on Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) kuin Maassa ($g = 9{,}81\\,\\text{m/s}^2$)?",
       "answer": 1190,
       "unit": "N",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy3-1-L2-04",
       "level": 2,
-      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa 0,20 kg:n kappale. Kuinka suuri voima venyttää jousta 4,5 cm?",
+      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa $0{,}20\\,\\text{kg}$:n kappale. Kuinka suuri voima venyttää jousta 4,5 cm?",
       "answer": 5.9,
       "unit": "N",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-1-L3-02",
       "level": 3,
-      "text": "Nostaja jaksaa Maassa nostaa korkeintaan 22,0 kg:n massan. Hän jaksaa siis tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) samalla voimalla?",
+      "text": "Nostaja jaksaa Maassa nostaa korkeintaan $22{,}0\\,\\text{kg}$:n massan. Hän jaksaa siis tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) samalla voimalla?",
       "answer": 133,
       "unit": "kg",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-1-L3-03",
       "level": 3,
-      "text": "Voimamittarin asteikko on tehty Maassa. Mittari näyttää kilogrammoina luvun, joka saadaan jakamalla voima arvolla 9,81 m/s². Marsissa ($g = 3{,}71\\,\\text{m/s}^2$) mittari näyttää siihen ripustetulle kappaleelle 26 kg. Mikä on kappaleen massa?",
+      "text": "Voimamittarin asteikko on tehty Maassa. Mittari näyttää kilogrammoina luvun, joka saadaan jakamalla voima arvolla $9{,}81\\,\\text{m/s}^2$. Marsissa ($g = 3{,}71\\,\\text{m/s}^2$) mittari näyttää siihen ripustetulle kappaleelle $26\\,\\text{kg}$. Mikä on kappaleen massa?",
       "answer": 69,
       "unit": "kg",
       "tolerance": 0.02

@@ -6,7 +6,7 @@
 **Conversions:** The efficiencies are fractions of a whole: $92.0\,\% = 0.920$ and $98.0\,\% = 0.980$. At the end the result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta = 0.920 \cdot 0.980 = 0.9016 = 90.16\,\%$
 **Answer:** $90.2\,\%$, three significant figures like the given efficiencies $92.0\,\%$ and $98.0\,\%$.
-**Reasonableness:** The product is smaller than either efficiency, as it should be when the factors are less than 1. Estimate: $0.92 \cdot 0.98 \approx 0.92 - 0.02 \cdot 0.92 \approx 0.90$. A hydropower plant is not a heat engine, so its efficiency can be over 90%.
+**Reasonableness:** The product is smaller than either efficiency, as it should be when the factors are less than 1. Estimate: $0.92 \cdot 0.98 \approx 0.92 - 0.02 \cdot 0.92 \approx 0.90$. A hydropower plant is not a heat engine, so its efficiency can be over $90\,\%$.
 
 ## fy3-15-L1-02
 **Given:** power of the kinetic energy of the air flow $P_\text{wind} = 2.50\,\text{MW}$ and electric power $P_\text{elec} = 1.05\,\text{MW}$
@@ -16,7 +16,7 @@
 **Conversions:** Both powers are in megawatts, so the units cancel. The result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta = \dfrac{1.05\,\text{MW}}{2.50\,\text{MW}} = 0.420 = 42.0\,\%$
 **Answer:** $42.0\,\%$, three significant figures like the powers $2.50\,\text{MW}$ and $1.05\,\text{MW}$.
-**Reasonableness:** Estimate: $1 / 2.5 = 0.4$, which matches the result. The efficiency of a modern wind turbine is at best about 40–45%. You cannot take all the energy from the wind, because the air has to keep moving after the rotor too; the rest is lost to friction and electrical losses.
+**Reasonableness:** Estimate: $1 / 2.5 = 0.4$, which matches the result. The efficiency of a modern wind turbine is at best about 40–$45\,\%$. You cannot take all the energy from the wind, because the air has to keep moving after the rotor too. Part of the energy taken by the rotor turns into internal energy in friction and electrical losses, and this is transferred to the surroundings as heat.
 
 ## fy3-15-L1-03
 **Given:** area $A = 20.0\,\text{m}^2$, radiation power per unit area $I = 1.00\,\tfrac{\text{kW}}{\text{m}^2}$, efficiency $\eta = 0.210$
@@ -26,17 +26,18 @@
 **Conversions:** The units go along with the numbers: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$, so the result comes directly in kilowatts and no conversions are needed.
 **Substitution:** $P = 0.210 \cdot 1.00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20.0\,\text{m}^2 = 0.210 \cdot 20.0\,\text{kW} = 4.20\,\text{kW}$
 **Answer:** $4.20\,\text{kW}$, three significant figures, because the area $20.0\,\text{m}^2$, the radiation power $1.00\,\tfrac{\text{kW}}{\text{m}^2}$ and the efficiency $0.210$ all have three figures.
-**Reasonableness:** Radiation of $20.0\,\text{kW}$ hits the panel, and about a fifth of it ($0.210 \approx 0.2$) is $\approx 4\,\text{kW}$. The rest, $20.0\,\text{kW} - 4.20\,\text{kW} = 15.8\,\text{kW}$, heats the panel or is reflected away. On the roof of a detached house 4 kW is a usual peak power in clear weather.
+**Reasonableness:** Radiation of $20.0\,\text{kW}$ hits the panel, and about a fifth of it ($0.210 \approx 0.2$) is $\approx 4\,\text{kW}$. The rest, $20.0\,\text{kW} - 4.20\,\text{kW} = 15.8\,\text{kW}$, heats the panel or is reflected away. On the roof of a detached house $4\,\text{kW}$ is a usual peak power in clear weather.
 
 ## fy3-15-L1-04
-**Given:** fuel power $P_0 = 800\,\text{MW}$ and electric power $P_\text{s} = 320\,\text{MW}$
-**Find:** the power $P_\text{h}$ transferred from the power plant to the surroundings as heat, in megawatts
-**Principle:** Energy is conserved and the plant runs steadily, so the power going in equals the power going out. Only electricity and heat go out, so the part of the fuel power that does not turn into electricity is transferred to the surroundings as heat.
-**Formula:** $P_0 = P_\text{s} + P_\text{h}$, so $P_\text{h} = P_0 - P_\text{s}$
-**Conversions:** Both powers are already in megawatts, so no conversions are needed.
-**Substitution:** $P_\text{h} = 800\,\text{MW} - 320\,\text{MW} = 480\,\text{MW}$
-**Answer:** $480\,\text{MW}$, three significant figures, because both powers, $800\,\text{MW}$ and $320\,\text{MW}$, are given to the nearest megawatt and the difference keeps the same precision.
-**Reasonableness:** The efficiency is $\dfrac{320\,\text{MW}}{800\,\text{MW}} = 0.40$, which is usual for a condensing power plant. The balance works out: $320\,\text{MW} + 480\,\text{MW} = 800\,\text{MW}$. In addition to the 40% that turns into electricity, the other 60% is transferred to the surroundings as heat, most of it through the condenser to the sea.
+**Given:** read from the bars of the figure: $P_0 = 400\,\text{MW}$, $P_1 = 350\,\text{MW}$, $P_2 = 150\,\text{MW}$ and $P_3 = 140\,\text{MW}$
+**Find:** the step in which the power decreases the most, and the power transferred to the surroundings as heat in that step
+**Principle:** The power plant runs steadily and energy is conserved, so when the power decreases in a step, the difference is transferred to the surroundings as heat. The power coming out of a step is smaller than the power going in, and the difference is the waste heat produced in it.
+**Reading the graph:** The tops of the bars $P_0$, $P_1$ and $P_2$ are on the gridlines, and they give the powers $400$, $350$ and $150\,\text{MW}$. The electric power $P_3$ is a little below the line $150\,\text{MW}$, about $140\,\text{MW}$; it is not needed for the answer. The decrease of power step by step is $P_0 - P_1 = 50\,\text{MW}$ in the boiler, $P_1 - P_2 = 200\,\text{MW}$ in the steam cycle and $P_2 - P_3 = 10\,\text{MW}$ in the generator and transformer. The biggest drop is between the bars $P_1$ and $P_2$, that is in the steam cycle.
+**Formula:** $P_\text{h} = P_\text{in} - P_\text{out}$, here $P_\text{h} = P_1 - P_2$
+**Conversions:** Not needed: all powers are in megawatts.
+**Substitution:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
+**Answer:** The power decreases the most in the steam cycle, where $200\,\text{MW}$ is transferred to the surroundings as heat. The values are read from the gridlines as whole megawatts, so the result to three significant figures is $200\,\text{MW}$.
+**Reasonableness:** The losses of the steps add up to $50 + 200 + 10 = 260\,\text{MW} = P_0 - P_3 = 400\,\text{MW} - 140\,\text{MW}$, so the balance works out. The efficiency of the steam cycle is $150 / 350 \approx 0.43$, which suits a steam cycle, and its loss is over $75\,\%$ of the waste heat of the whole plant.
 
 ## fy3-15-L1-05
 **Given:** fuel power $P_0 = 250\,\text{MW}$, electric power $P_\text{s} = 75.0\,\text{MW}$ and district heating power $P_\text{k} = 150\,\text{MW}$
@@ -46,7 +47,7 @@
 **Conversions:** All powers are in megawatts and the units cancel. The result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta_\text{tot} = \dfrac{75.0\,\text{MW} + 150\,\text{MW}}{250\,\text{MW}} = \dfrac{225\,\text{MW}}{250\,\text{MW}} = 0.900 = 90.0\,\%$
 **Answer:** $90.0\,\%$, three significant figures, because all powers are given to the nearest megawatt and the sum $75.0 + 150 = 225\,\text{MW}$ keeps the same precision; so the quotient $225/250$ has three figures.
-**Reasonableness:** The result is in the usual range of 85–90% for combined production. The power of waste heat is $250\,\text{MW} - 225\,\text{MW} = 25\,\text{MW}$, and $225 + 25 = 250$, so the balance works out. The share of electricity is only $\dfrac{75.0\,\text{MW}}{250\,\text{MW}} = 30\,\%$, so the electrical efficiency is lower than in a condensing power plant.
+**Reasonableness:** The result is in the usual range of 85–$90\,\%$ for combined production. The power of waste heat is $250\,\text{MW} - 225\,\text{MW} = 25\,\text{MW}$, and $225 + 25 = 250$, so the balance works out. The share of electricity is only $\dfrac{75.0\,\text{MW}}{250\,\text{MW}} = 30\,\%$, so the electrical efficiency is lower than in a condensing power plant.
 
 ## fy3-15-L2-01
 **Given:** fuel power $P_0 = 300\,\text{MW}$, efficiency of the boiler $\eta_1 = 0.880$, of the steam cycle $\eta_2 = 0.420$ and of the generator $\eta_3 = 0.980$
@@ -56,7 +57,7 @@
 **Conversions:** The efficiencies are dimensionless and the power is already in megawatts, so no conversions are needed.
 **Substitution:** $P_3 = 0.880 \cdot 0.420 \cdot 0.980 \cdot 300\,\text{MW} = 0.362208 \cdot 300\,\text{MW} = 108.6624\,\text{MW}$
 **Answer:** $109\,\text{MW}$, three significant figures, because the efficiencies $0.880$, $0.420$ and $0.980$ have three figures and the fuel power $300\,\text{MW}$ is given to the nearest megawatt.
-**Reasonableness:** Estimate: $0.9 \cdot 0.4 \cdot 1.0 \cdot 300\,\text{MW} \approx 110\,\text{MW}$. The efficiency of the whole chain is $0.362$ or 36%, less than the weakest step ($0.420$) would give alone. The losses of the boiler and the steam cycle together take $1 - 0.880 \cdot 0.420 = 0.630$, that is almost two thirds (about 63%) of the energy of the fuel.
+**Reasonableness:** Estimate: $0.9 \cdot 0.4 \cdot 1.0 \cdot 300\,\text{MW} \approx 110\,\text{MW}$. The efficiency of the whole chain is $0.362$ or $36\,\%$, less than the weakest step ($0.420$) would give alone. The losses of the boiler and the steam cycle together take $1 - 0.880 \cdot 0.420 = 0.630$, that is almost two thirds (about $63\,\%$) of the energy of the fuel.
 
 ## fy3-15-L2-02
 **Given:** efficiency of the whole chain $\eta = 0.380$, of the boiler $\eta_1 = 0.900$ and of the generator $\eta_3 = 0.980$
@@ -66,7 +67,7 @@
 **Conversions:** The efficiencies are dimensionless numbers, so no unit conversions are needed. At the end the result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta_2 = \dfrac{0.380}{0.900 \cdot 0.980} = \dfrac{0.380}{0.882} = 0.43084 = 43.08\,\%$
 **Answer:** $43.1\,\%$, three significant figures, because all three efficiencies, $0.380$, $0.900$ and $0.980$, have three figures.
-**Reasonableness:** Check: $0.900 \cdot 0.4308 \cdot 0.980 = 0.380$. The efficiency of the steam cycle is greater than that of the whole chain, $0.380$, as it should be, because the other steps only reduce it. It is also close to the usual 40–45% of a condensing power plant, and it is the weakest link of the chain.
+**Reasonableness:** Check: $0.900 \cdot 0.4308 \cdot 0.980 = 0.380$. The efficiency of the steam cycle is greater than that of the whole chain, $0.380$, as it should be, because the other steps only reduce it. It is a little greater than the usual efficiency of a whole condensing power plant (about $40\,\%$, typically $38$–$42\,\%$), because the losses of the boiler and the generator are not included in it, and it is the weakest link of the chain.
 
 ## fy3-15-L2-03
 **Given:** electric power $P_\text{s} = 150\,\text{MW}$, efficiency $\eta = 0.360$, heat of combustion $H = 9.00\,\tfrac{\text{MJ}}{\text{kg}}$, time $t = 1\,\text{h}$
@@ -106,7 +107,7 @@
 **Conversions:** $E = 36.0 \cdot 3.60 \cdot 10^{12}\,\text{J} = 1.296 \cdot 10^{14}\,\text{J}$ and $H = 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. At the end $1\,\text{kt} = 10^6\,\text{kg}$.
 **Substitution:** $m = \dfrac{1.296 \cdot 10^{14}\,\text{J}}{0.380 \cdot 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1.3642 \cdot 10^7\,\text{kg} = 13.642\,\text{kt}$
 **Answer:** $13.6\,\text{kt}$, three significant figures, because the electrical energy $36.0\,\text{GWh}$, the efficiency $0.380$, the heat of combustion $25.0\,\tfrac{\text{MJ}}{\text{kg}}$ and the conversion factor $3.60 \cdot 10^{12}\,\text{J}/\text{GWh}$ all have three figures.
-**Reasonableness:** Estimate: $\tfrac{1.3 \cdot 10^{14}\,\text{J}}{0.4 \cdot 2.5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1.3 \cdot 10^7\,\text{kg}$. The amount corresponds to about 270 wagonloads of coal, when a wagon holds 50 t. The efficiencies cannot be compared directly: in a coal power plant the denominator is bought fuel, which turns into waste heat and emissions, but the energy of the wind is not a store that gets used up. The efficiency of a wind farm only tells what fraction of the kinetic energy of the air flowing through the rotors is turned into electricity.
+**Reasonableness:** Estimate: $\tfrac{1.3 \cdot 10^{14}\,\text{J}}{0.4 \cdot 2.5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1.3 \cdot 10^7\,\text{kg}$. The amount corresponds to about 270 wagonloads of coal, when a wagon holds $50\,\text{t}$. The efficiencies cannot be compared directly: in a coal power plant the denominator is bought fuel, which gets used up: about $38\,\%$ of its energy turns into electricity and the rest into waste heat, and burning produces emissions, but the energy of the wind is not a store that gets used up. The efficiency of a wind farm only tells what fraction of the kinetic energy of the air flowing through the rotors is turned into electricity.
 
 ## fy3-15-L3-03
 **Given:** heating need $Q = 100\,\text{kWh}$, coefficient of performance $\varepsilon = 3.00$, efficiency of the power plant $\eta_\text{plant} = 0.400$ and share left after transmission $\eta_\text{transm} = 0.950$
@@ -116,4 +117,4 @@
 **Conversions:** All energies are in kilowatt-hours and the factors are dimensionless, so no conversions are needed.
 **Substitution:** $E_\text{fuel} = \dfrac{100\,\text{kWh}}{0.950 \cdot 0.400 \cdot 3.00} = \dfrac{100\,\text{kWh}}{1.14} = 87.719\,\text{kWh}$
 **Answer:** $87.7\,\text{kWh}$, three significant figures, because the factors $0.950$, $0.400$ and $3.00$ have three figures and the heating need $100\,\text{kWh}$ is given to the nearest kilowatt-hour.
-**Reasonableness:** Direct electric heating would need $\dfrac{100\,\text{kWh}}{0.380} = 263\,\text{kWh}$ of fuel and an oil boiler $\dfrac{100\,\text{kWh}}{0.900} = 111\,\text{kWh}$. The heat pump saves the most fuel, because it moves heat from the outside air into the house instead of turning electricity into heat. Direct electric heating is the worst, because over 60% of the energy of the fuel has already been wasted in producing the electricity.
+**Reasonableness:** Direct electric heating would need $\dfrac{100\,\text{kWh}}{0.380} = 263\,\text{kWh}$ of fuel and an oil boiler $\dfrac{100\,\text{kWh}}{0.900} = 111\,\text{kWh}$. The heat pump saves the most fuel, because in addition to the electricity used, heat transferred from the outside air comes into the house, so electricity is needed for only a third of the heat. Direct electric heating is the worst, because over $60\,\%$ of the energy of the fuel has already been wasted in producing the electricity.

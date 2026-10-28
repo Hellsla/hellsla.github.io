@@ -137,7 +137,7 @@ In a closed rigid container, the volume and the amount of gas do not change, so 
 <line x1="316" y1="270" x2="254" y2="270" stroke="#1f2933" stroke-width="2"/>
 </svg>
 
-When you plot the measurements on a graph, the points lie almost on a straight line: the pressure rises by almost the same amount for every degree Celsius. The points are still not exactly on the line, because every reading is imprecise. Measurement uncertainty tells you how much a reading can differ from the true value at most; here the uncertainty of the pressure gauge is $\pm 1\,\text{kPa}$. So you draw the line through the middle of the group of points, so that it passes through the uncertainty bars, not necessarily through every point.
+When you plot the measurements on a graph, the points lie almost on a straight line: the pressure rises by almost the same amount for every degree Celsius. In real data sets the points are usually not exactly on one line, because of measurement uncertainty. Measurement uncertainty describes the uncertainty attached to a measurement result. It does not usually mean an absolute maximum possible deviation from the true value. Here the uncertainty of the pressure reading is estimated as $\pm 1\,\text{kPa}$. The error limit that a manufacturer states for a gauge is a different thing: it is a property of the device, and the uncertainty of the measurement is also affected by, for example, reading the scale and the bath temperature settling. So you draw the line through the middle of the group of points, so that it passes through the uncertainty bars, not necessarily through every point.
 
 You extend the line beyond the measurement range towards colder temperatures until the pressure is zero. This is called extrapolation: the result comes from a region where nothing has been measured. According to the microscopic model, pressure comes from particles colliding with the wall. In the ideal gas model, the pressure would be zero at the temperature where the average kinetic energy of the particles is at its lowest. The temperature where the line meets zero pressure is the experiment's estimate of absolute zero. It is only an estimate: a real gas liquefies before that point, and the extension is a model.
 
@@ -166,7 +166,7 @@ You estimate the uncertainty by drawing two limit lines that still pass through 
 ```latex
 \Delta\theta_0 = \frac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}
 ```
-where $\theta_{0,\text{max}}$ is the larger (less negative) and $\theta_{0,\text{min}}$ the smaller temperature at zero pressure. The result has the form $\theta_0 \pm \Delta\theta_0$.
+where $\theta_{0,\text{max}}$ is the larger (less negative) and $\theta_{0,\text{min}}$ the smaller temperature at zero pressure. The result has the form $\theta_0 \pm \Delta\theta_0$. The interval is an estimate, not a guaranteed limit: it takes into account the uncertainty of the points but not whether the dependence stays linear outside the measurement range.
 
 <svg viewBox="0 0 600 368" role="img" aria-label="Gas pressure as a function of temperature over the whole range from −300 °C to 100 °C. The measurement points are only in the range 10–100 °C. The best-fit line and its dashed extension extrapolate to zero pressure at a temperature θ₀ ≈ −276 °C. The steepest and shallowest limit lines meet the p = 0 axis at about −259 °C and −295 °C, which gives the uncertainty interval. The picture is to scale; the ±1 kPa error bars are about the size of the points." style="max-width:100%;font-size:24px">
 <line x1="78.0" y1="270.0" x2="78.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -209,7 +209,7 @@ where $\theta_{0,\text{max}}$ is the larger (less negative) and $\theta_{0,\text
 The picture is drawn to scale. The limit lines run close to each other in the measurement range but move apart when you extrapolate, so the uncertainty grows as you extend the line. A more precise pressure gauge, more measurement points and a wider measurement range reduce the uncertainty. Once the result is known, the zero of the kelvin scale is placed there: the temperature in kelvins is $T = \theta - \theta_0$.
 
 ## Worked example
-The example data give the pressure of the air in a sealed flask at seven temperatures, as a gas thermometer would measure them. The values have been calculated from the ideal gas model, and scatter corresponding to measurement imprecision has been added; they are not the results of a real measurement. The uncertainty of the pressure gauge is $\pm 1\,\text{kPa}$.
+The example data give the pressure of the air in a sealed flask at seven temperatures, as a gas thermometer would measure them. The values have been calculated from the ideal gas model, and scatter corresponding to measurement imprecision has been added; they are not the results of a real measurement. The uncertainty of the pressure reading is estimated as $\pm 1\,\text{kPa}$.
 
 | θ (°C) | p (kPa) |
 | --- | --- |
@@ -221,7 +221,7 @@ The example data give the pressure of the air in a sealed flask at seven tempera
 | 85 | 132 |
 | 100 | 138 |
 
-Determine absolute zero by extrapolation and estimate the uncertainty of the result. The best-fit line through the points is in the figure above; its steepest and shallowest alternatives, which still pass through all the uncertainty bars, are $p = 100.1\,\text{kPa} + 0.387\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ and $p = 102.3\,\text{kPa} + 0.347\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$. The steepest touches the ends of the uncertainty bars at 10 °C and 85 °C, the shallowest at 25 °C and 100 °C.
+Determine absolute zero by extrapolation and estimate the uncertainty of the result. The best-fit line through the points is in the figure above; its steepest and shallowest alternatives, which still pass through all the uncertainty bars, are $p = 100.1\,\text{kPa} + 0.387\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ and $p = 102.3\,\text{kPa} + 0.347\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$. The steepest touches the ends of the uncertainty bars at $10\,{}^\circ\text{C}$ and $85\,{}^\circ\text{C}$, the shallowest at $25\,{}^\circ\text{C}$ and $100\,{}^\circ\text{C}$.
 
 <!-- vaihe -->
 
@@ -229,7 +229,7 @@ Determine absolute zero by extrapolation and estimate the uncertainty of the res
 
 <!-- vaihe -->
 
-**Principle.** The flask is sealed and rigid, so the amount and volume of the gas stay constant, and within the measurement range the pressure is a linear function of temperature, $p = p_0 + k\theta$. So you can extend the line to the point where $p = 0$. The uncertainty comes from the limit lines: they pass through all the uncertainty bars, so they fit the data just as well as the best-fit line, and their zero-pressure points bound the interval that contains the true absolute zero.
+**Principle.** The flask is sealed and rigid, so the amount and volume of the gas stay constant, and within the measurement range the pressure is a linear function of temperature, $p = p_0 + k\theta$. So you can extend the line to the point where $p = 0$. The uncertainty comes from the limit lines: they pass through all the uncertainty bars, so they fit the data just as well as the best-fit line, and their zero-pressure points bound the interval where the true absolute zero probably lies.
 
 <!-- vaihe -->
 
@@ -271,10 +271,10 @@ For the limit lines $\theta_{0,\text{max}} = -\tfrac{100.1}{0.387}\,{}^\circ\tex
 **Reasonableness.** The accepted value $-273.15\,{}^\circ\text{C}$ lies in the interval $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$, so the result agrees with it; the deviation is about $3\,{}^\circ\text{C}$ and the uncertainty is $18\,{}^\circ\text{C}$. An estimate in your head: the pressure rises by about $0.37\,\text{kPa}$ per degree, so $101\,\text{kPa}$ runs out after about $101/0.37 \approx 270$ degrees. The uncertainty is large because the measurement was made more than $270\,{}^\circ\text{C}$ away from zero pressure, and the uncertainty of the points, $1\,\text{kPa}$, is about one percent of the reading.
 
 ## Common misconception
-Many people think that absolute zero has been measured because it is on the graph. Only the seven points in the range 10–100 °C are measured; the rest is an extension of the line, and the extension is an assumption that the pressure behaves in the same way at colder temperatures. Another mistake is to consider the result a failure if it is not exactly $-273.15\,{}^\circ\text{C}$. The result $-276\,{}^\circ\text{C}$ differs from the accepted value by about 3 degrees when the uncertainty is 18 degrees, so it agrees with the value. A third mistake is to draw a wiggly line through every point: the variation of the points up and down is measurement uncertainty, and the line should be drawn through the middle of the group of points.
+Many people think that absolute zero has been measured because it is on the graph. Only the seven points in the range 10–$100\,{}^\circ\text{C}$ are measured; the rest is an extension of the line, and the extension is an assumption that the pressure behaves in the same way at colder temperatures. Another mistake is to consider the result a failure if it is not exactly $-273.15\,{}^\circ\text{C}$. The result $-276\,{}^\circ\text{C}$ differs from the accepted value by about 3 degrees when the uncertainty is 18 degrees, so it agrees with the value. A third mistake is to draw a wiggly line through every point: the variation of the points up and down is caused by measurement uncertainty, and the line should be drawn through the middle of the group of points.
 
 ## Summary
-- In a closed container, the pressure of a gas is a linear function of temperature within the measurement range: $p = p_0 + k\theta$. You turn the measurement data into a straight line by plotting $p$ as a function of temperature and drawing the line through the middle of the group of points.
-- Measurement uncertainty tells you how much a reading can differ from the true value. The line does not have to hit every point, only pass through the uncertainty bars.
+- In a closed rigid container, the pressure of a dilute gas is a linear function of temperature within the measurement range: $p = p_0 + k\theta$. You turn the measurement data into a straight line by plotting $p$ as a function of temperature and drawing the line through the middle of the group of points.
+- Measurement uncertainty describes the uncertainty attached to a measurement result, and it is not usually an absolute maximum possible deviation from the true value. The line does not have to hit every point, only pass through the uncertainty bars.
 - Extrapolation extends the line beyond the measurement range: the temperature at zero pressure is $\theta_0 = -p_0/k$.
 - You estimate the uncertainty from the limit lines: $\Delta\theta_0 = (\theta_{0,\text{max}} - \theta_{0,\text{min}})/2$. The result $\theta_0 \pm \Delta\theta_0$ agrees with the accepted value $-273.15\,{}^\circ\text{C}$ if that value lies in the interval.

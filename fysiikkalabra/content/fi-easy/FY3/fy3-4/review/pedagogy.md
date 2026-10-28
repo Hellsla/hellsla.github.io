@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0b1bcf6f6ee616f8
+CONTENT-HASH: 5b5822ca16a3232f
 
 ## Blocking
 (none left)
@@ -13,3 +13,4 @@ CONTENT-HASH: 0b1bcf6f6ee616f8
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Lesson.md, meta, inquiry.json (incl. sim labels via i18n resolve: *Show gauge pressure only* matches the sim; experiment intro/names/solutions), exit-ticket.json, figures.json (each value translates its own key) read against the reviewed Finnish.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (incl. new check-c2 items), exit ticket and figure texts against the new Finnish; no issues found.

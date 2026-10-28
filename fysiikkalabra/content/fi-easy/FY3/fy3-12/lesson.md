@@ -1,6 +1,6 @@
 # Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos
 
-> **Miksi** maapallon keskilämpötila on noin +15 °C eikä pakkasen puolella? Maapallo säteilee avaruuteen yhtä paljon energiaa kuin saa Auringosta.
+> **Miksi** maapallon keskilämpötila on noin +$15\,{}^\circ\text{C}$ eikä pakkasen puolella? Maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta.
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: Maa nähtynä avaruudesta. Maan ympärillä on ohut ilmakehä. Kuvan vasemmassa reunassa paistaa Aurinko. Mustalla taivaalla tuikkii tähtiä." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#ffc078"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy312h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy312h-clip"><circle cx="800" cy="300" r="210"/></clipPath></defs>
@@ -116,13 +116,13 @@
 </svg>
 
 ## Ydinajatus
-Lämpö siirtyy aina itsestään lämpimämmästä kylmempään. Se siirtyy kolmella tavalla.
+Lämpötilaero saa energiaa siirtymään itsestään. Kun siirrot lasketaan yhteen, energiaa siirtyy lämpimämmästä kappaleesta kylmempään. Näin siirtyvää energiaa sanotaan lämmöksi. Lämpö siirtyy kolmella tavalla.
 
-Ensimmäinen tapa on johtuminen. Siinä energia siirtyy aineen läpi hiukkasesta toiseen. Nopeammin värähtelevät hiukkaset tönivät hitaampia naapureitaan. Metallit johtavat lämpöä hyvin. Ilma ja villa johtavat sitä huonosti.
+Ensimmäinen tapa on johtuminen. Siinä energia siirtyy aineen läpi hiukkasesta toiseen. Nopeammin värähtelevät hiukkaset tönivät hitaampia naapureitaan. Metallit johtavat lämpöä hyvin. Niissä energiaa kuljettavat myös vapaat elektronit, ja pääosin juuri ne. Ilma ja villa johtavat lämpöä huonosti.
 
 Toinen tapa on konvektio. Siinä lämmin neste tai kaasu virtaa ja kuljettaa energiaa mukanaan. Esimerkiksi lämmin ilma nousee patterin yläpuolella. Se on laajentunut, ja siksi se on kevyempää kuin ympäröivä ilma.
 
-Kolmas tapa on lämpösäteily. Siinä kappale lähettää sähkömagneettista säteilyä. Säteily ei tarvitse väliainetta. Näin Auringon energia tulee Maahan tyhjän avaruuden läpi. Näin myös takan hehku lämmittää kasvoja. Kaikki kappaleet säteilevät. Mitä kuumempi kappale on, sitä enemmän se säteilee. Se lähettää silloin myös lyhytaaltoisempaa säteilyä.
+Kolmas tapa on lämpösäteily. Siinä kappale lähettää sähkömagneettista säteilyä. Säteily ei tarvitse väliainetta. Näin Auringon energia tulee Maahan tyhjän avaruuden läpi. Näin myös takan hehku lämmittää kasvoja. Kaikki kappaleet säteilevät. Mitä kuumempi kappale on, sitä enemmän se säteilee. Se lähettää silloin myös lyhytaaltoisempaa säteilyä. Lämpösäteilyä lähtee molemmista kappaleista. Myös kylmempi kappale säteilee lämpimämpää kohti. Lämpimämpi kappale säteilee kuitenkin enemmän. Siksi kun siirrot lasketaan yhteen, energiaa siirtyy kylmempään kappaleeseen.
 
 <svg data-fig="heat-transfer" viewBox="0 0 600 300" role="img" aria-label="Kolme lämmön siirtymistapaa, periaatekuva. Johtuminen: lämpö kulkee metallitangon läpi kuumasta päästä kylmään päähän. Konvektio: lämmin vesi nousee kattilassa keskellä. Jäähtynyt vesi vajoaa reunoilla. Vesi siis kiertää. Säteily: kuuma kappale lähettää säteilyä. Säteily kulkee tyhjän tilan läpi." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy312-rod" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.35" stop-color="#f2a69c"/><stop offset="0.7" stop-color="#c4ccd4"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy312-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy312-hot" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></radialGradient></defs>
@@ -156,13 +156,13 @@ Kolmas tapa on lämpösäteily. Siinä kappale lähettää sähkömagneettista s
 </svg>
 
 ### Rakennuksen lämpöhäviöt
-Talon lämmitysenergiasta suuri osa kuluu siihen, että lämpö johtuu ulos. Lämpö johtuu seinien, katon, ikkunoiden ja lattian läpi. Rakennusosan lämmöneristävyyttä kuvaa U-arvo eli lämmönläpäisykerroin. U-arvo kertoo, kuinka monta wattia lämpötehoa siirtyy yhden neliömetrin läpi. Tämä pätee, kun sisä- ja ulkolämpötilan ero on yksi kelvin. Mitä pienempi U-arvo on, sitä paremmin rakenne eristää. Nykyaikaisen seinän U-arvo on noin 0,17 W/(m²·K). Hyvänkin ikkunan U-arvo on noin 1,0 W/(m²·K). Siksi pieni ikkuna päästää läpi yhtä paljon lämpöä kuin moninkertainen ala seinää. Hyvä eristys säästää energiaa ja vähentää lämmityksen päästöjä.
+Talon lämmitysenergiasta suuri osa kuluu siihen, että lämpö johtuu ulos. Lämpö johtuu seinien, katon, ikkunoiden ja lattian läpi. Rakennusosan lämmöneristävyyttä kuvaa U-arvo eli lämmönläpäisykerroin. U-arvo kertoo, kuinka monta wattia lämpötehoa siirtyy yhden neliömetrin läpi. Tämä pätee, kun sisä- ja ulkolämpötilan ero on yksi kelvin. Mitä pienempi U-arvo on, sitä paremmin rakenne eristää. Nykyaikaisen seinän U-arvo on noin $0{,}17\,\text{W/(m}^2\text{}\cdot\text{K)}$. Hyvänkin ikkunan U-arvo on noin $1{,}0\,\text{W/(m}^2\text{}\cdot\text{K)}$. Siksi pieni ikkuna päästää läpi yhtä paljon lämpöä kuin moninkertainen ala seinää. Hyvä eristys säästää energiaa ja vähentää lämmityksen päästöjä.
 
 ### Energiatasapaino
-Kappaleen lämpötila pysyy vakiona, kun siihen tulee yhtä suuri teho kuin siitä lähtee. Tätä sanotaan energiatasapainoksi. Maapallo saa energiaa Auringon säteilynä. Noin 30 % siitä heijastuu suoraan takaisin avaruuteen. Heijastajia ovat pilvet, jää ja vaaleat pinnat. Loppu säteilystä imeytyy. Maapallo säteilee saman tehon pois pitkäaaltoisena lämpösäteilynä. Ilman ilmakehää tasapaino asettuisi noin −18 °C:n keskilämpötilaan.
+Kappaleen lämpötila pysyy vakiona, kun siihen tulee yhtä suuri teho kuin siitä lähtee. Tätä sanotaan energiatasapainoksi. Maapallo saa energiaa Auringon säteilynä. Noin $30\,\%$ siitä heijastuu suoraan takaisin avaruuteen. Heijastajia ovat pilvet, jää ja vaaleat pinnat. Loppu säteilystä imeytyy. Maapallo säteilee saman tehon pois pitkäaaltoisena lämpösäteilynä. Ilman ilmakehää tasapaino asettuisi noin $-18\,{}^\circ\text{C}$:n keskilämpötilaan.
 
 ### Kasvihuoneilmiö
-Ilmakehässä on vesihöyryä, hiilidioksidia ja metaania. Ne päästävät auringonvalon pääosin läpi. Noin viidesosa valosta kuitenkin imeytyy ilmakehään. Samat kaasut imevät maanpinnan lähettämää lämpösäteilyä. Ne säteilevät osan siitä takaisin alas. Maanpinta saa siksi enemmän energiaa kuin pelkästä Auringosta. Tasapaino asettuu noin +15 °C:een. Tätä sanotaan kasvihuoneilmiöksi. Se vastaa alun kysymykseen.
+Ilmakehässä on vesihöyryä, hiilidioksidia ja metaania. Ne päästävät auringonvalon pääosin läpi. Noin viidesosa valosta kuitenkin imeytyy ilmakehään. Samat kaasut imevät maanpinnan lähettämää lämpösäteilyä. Ne säteilevät osan siitä takaisin alas. Maanpinta saa siksi enemmän energiaa kuin pelkästä Auringosta. Tasapaino asettuu noin +$15\,{}^\circ\text{C}$:een. Tätä sanotaan kasvihuoneilmiöksi. Se vastaa alun kysymykseen.
 
 <svg data-fig="energy-balance" viewBox="0 0 600 300" role="img" aria-label="Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän läpi maanpintaan. Osa säteilystä heijastuu takaisin avaruuteen. Maanpinta säteilee lämpösäteilyä ylöspäin. Ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy312-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy312-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><radialGradient id="fy312-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffc078"/></radialGradient></defs>
@@ -182,7 +182,7 @@ Ilmakehässä on vesihöyryä, hiilidioksidia ja metaania. Ne päästävät auri
 </svg>
 
 ### Ilmastonmuutos
-Fossiilisten polttoaineiden käyttö on nostanut ilmakehän hiilidioksidipitoisuutta. Aiemmin pitoisuus oli noin 280 miljoonasosaa. Nyt se on yli 420 miljoonasosaa. Kun kasvihuonekaasuja lisätään, avaruuteen pääsee hetkellisesti vähemmän energiaa kuin Auringosta tulee. Ero on nykyään noin 1 W jokaista maapallon neliömetriä kohti. Ylimääräinen energia lämmittää valtameriä, maata ja ilmaa. Lämpeneminen jatkuu, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan. Tätä sanotaan ilmastonmuutokseksi.
+Ihmisen toiminta on nostanut ilmakehän hiilidioksidipitoisuutta. Pääosin syy on fossiilisten polttoaineiden käyttö. Aiemmin pitoisuus oli noin 280 miljoonasosaa. Nyt se on yli 420 miljoonasosaa. Kun kasvihuonekaasuja lisätään, avaruuteen pääsee hetkellisesti vähemmän energiaa kuin Auringosta tulee. Ero on nykyään noin $1\,\text{W}$ jokaista maapallon neliömetriä kohti. Ylimääräinen energia lämmittää valtameriä, maata ja ilmaa. Lämpeneminen jatkuu, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan. Tätä sanotaan ilmastonmuutokseksi.
 
 Tehoero näyttää pieneltä. Koko maapallon alalla se on kuitenkin valtava. Suurin osa energiasta varastoituu meriin. Merien lämpökapasiteetti on suuri. Siksi lämpeneminen on hidasta, mutta se myös jatkuu pitkään. Energiaratkaisut ovat siksi myös eettisiä valintoja, jotka vaikuttavat tuleviin sukupolviin. Tällaisia ratkaisuja ovat eristäminen, lämpöpumput ja päästöttömät voimalaitokset.
 
@@ -216,7 +216,7 @@ Tässä $P$ on lämpöteho (W). Suure $U$ on rakennusosan U-arvo (W/(m²·K)). S
 
 
 ## Esimerkki
-Omakotitalon seinien pinta-ala on 120 m² ja U-arvo 0,17 W/(m²·K). Ikkunoiden pinta-ala on 20,0 m² ja U-arvo 1,0 W/(m²·K). Sisällä on 21 °C ja ulkona −15 °C. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi? Kuinka paljon energiaa se siirtää vuorokaudessa?
+Omakotitalon seinien pinta-ala on 120 m² ja U-arvo $0{,}17\,\text{W/(m}^2\text{}\cdot\text{K)}$. Ikkunoiden pinta-ala on 20,0 m² ja U-arvo $1{,}0\,\text{W/(m}^2\text{}\cdot\text{K)}$. Sisällä on $21\,{}^\circ\text{C}$ ja ulkona $-15\,{}^\circ\text{C}$. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi? Kuinka paljon energiaa se siirtää vuorokaudessa?
 
 <!-- vaihe -->
 
@@ -271,10 +271,10 @@ Toinen virhe on ajatella, että kasvihuoneilmiö on kokonaan haitallinen. Luonno
 Kolmas virhe on luulla, että villapaita tuottaa lämpöä. Se vain hidastaa lämmön johtumista ja konvektiota kehosta pois. Samoin seinän eriste hidastaa lämmön karkaamista talosta.
 
 ## Tiivistelmä
-- Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä. Se siirtyy aina lämpimämmästä kylmempään.
+- Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä. Lämpötilaeron vuoksi energiaa siirtyy lämpimämmästä kappaleesta kylmempään. Kaikki kappaleet lähettävät lämpösäteilyä, myös kylmempi.
 - Rakennusosan läpi johtuva lämpöteho on $P = UA\Delta T$. Pieni U-arvo tarkoittaa hyvää lämmöneristystä.
 - Energiatasapainossa tuleva ja lähtevä teho ovat yhtä suuret. Silloin lämpötila pysyy vakiona.
-- Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin. Siksi maanpinnan tasapainolämpötila nousee noin −18 °C:sta noin +15 °C:een.
+- Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin. Siksi maanpinnan tasapainolämpötila nousee noin $-18\,{}^\circ\text{C}$:sta noin +$15\,{}^\circ\text{C}$:een.
 - Kasvihuonekaasujen lisääntyminen rikkoo tasapainon hetkellisesti. Maapallo lämpenee, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta. Oranssit nuolet näyttävät sen. Maassa on lunta." style="max-width:100%;font-size:24px">

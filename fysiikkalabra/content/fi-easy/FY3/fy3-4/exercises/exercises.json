@@ -11,7 +11,7 @@
     {
       "id": "fy3-4-L1-02",
       "level": 1,
-      "text": "Päijänteen syvin kohta on noin 95 m:n syvyydessä. Kuinka suuri on hydrostaattinen paine siellä? Veden tiheys on 1000 kg/m³. Anna vastaus kilopascaleina.",
+      "text": "Päijänteen syvin kohta on noin $95\\,\\text{m}$:n syvyydessä. Kuinka suuri on hydrostaattinen paine siellä? Veden tiheys on $1000\\,\\text{kg/m}^3$. Anna vastaus kilopascaleina.",
       "answer": 930,
       "unit": "kPa",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-4-L1-03",
       "level": 1,
-      "text": "Järven pohjaan 18,0 m:n syvyyteen on asennettu painemittari. Ilmanpaine järven pinnalla on 98,5 kPa, koska on matalapaine. Mikä on kokonaispaine mittarin kohdalla? Veden tiheys on 1000 kg/m³.",
+      "text": "Järven pohjaan $18{,}0\\,\\text{m}$:n syvyyteen on asennettu painemittari. Ilmanpaine järven pinnalla on 98,5 kPa, koska on matalapaine. Mikä on kokonaispaine mittarin kohdalla? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
       "answer": 275,
       "unit": "kPa",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy3-4-L1-05",
       "level": 1,
-      "text": "Saunan vesisaavissa veden syvyys on 0,45 m. Kuinka suuri on hydrostaattinen paine saavin pohjalla? Veden tiheys on 1000 kg/m³.",
+      "text": "Saunan vesisaavissa veden syvyys on $0{,}45\\,\\text{m}$. Kuinka suuri on hydrostaattinen paine saavin pohjalla? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
       "answer": 4400,
       "unit": "Pa",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy3-4-L2-02",
       "level": 2,
-      "text": "Talo saa vetensä vesitornista. Hanat ovat kiinni. Silloin painemittari näyttää kellarin hanan kohdalla ylipaineen 350 kPa. Kuinka korkealla tornin vedenpinta on hanan yläpuolella? Veden tiheys on 1000 kg/m³.",
+      "text": "Talo saa vetensä vesitornista. Hanat ovat kiinni. Silloin painemittari näyttää kellarin hanan kohdalla ylipaineen 350 kPa. Kuinka korkealla tornin vedenpinta on hanan yläpuolella? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
       "answer": 35.7,
       "unit": "m",
       "tolerance": 0.02
@@ -61,10 +61,11 @@
     {
       "id": "fy3-4-L2-03",
       "level": 2,
-      "text": "Öljynpuristamon säiliössä on rypsiöljyä. Säiliön pohjalla öljyn hydrostaattinen paine on 7,22 kPa. Pohja on 0,800 m:n syvyydessä. Laske rypsiöljyn tiheys.",
-      "answer": 920,
-      "unit": "kg/m³",
-      "tolerance": 0.02
+      "text": "Kuvaajassa ovat kahden nesteen, A:n ja B:n, paineet syvyyden funktiona. Pinnalla paine on molemmissa sama. Missä syvyydessä nesteessä A paine on yhtä suuri kuin nesteessä B syvyydessä $4{,}0\\,\\text{m}$?",
+      "figure": "fy3-4/two-liquids",
+      "answer": 6.0,
+      "unit": "m",
+      "tolerance": 0.04
     },
     {
       "id": "fy3-4-L2-04",
@@ -79,7 +80,7 @@
     {
       "id": "fy3-4-L3-01",
       "level": 3,
-      "text": "Retkeilijän massa on rinkan kanssa 85 kg. Upottava hanki kantaa, jos paine siihen on enintään 6,0 kPa. Kävellessä retkeilijä on hetkittäin vain yhden jalan varassa. Kuinka suuri yhden lumikengän pinta-alan on vähintään oltava? Silloin retkeilijä ei uppoa.",
+      "text": "Retkeilijän massa on rinkan kanssa $85\\,\\text{kg}$. Upottava hanki kantaa, jos paine siihen on enintään 6,0 kPa. Kävellessä retkeilijä on hetkittäin vain yhden jalan varassa. Kuinka suuri yhden lumikengän pinta-alan on vähintään oltava? Silloin retkeilijä ei uppoa.",
       "answer": 0.14,
       "unit": "m²",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-4-L3-02",
       "level": 3,
-      "text": "Mökin sadevesitynnyri on täynnä vettä. Sen tiivis kansi on vettä vasten. Kannen pinta-ala on 0,25 m². Kannen läpi asennetaan ohut pystysuora letku. Letku täytetään vedellä 4,0 m:n korkeuteen kannen yläpuolelle. Letkuun mahtuu vain 0,40 l vettä. Kuinka paljon kasvaa voima, jolla tynnyrin vesi painaa kantta? Anna vastaus kilonewtoneina.",
+      "text": "Mökin sadevesitynnyri on täynnä vettä. Sen tiivis kansi on vettä vasten. Kannen pinta-ala on 0,25 m². Kannen läpi asennetaan ohut pystysuora letku. Letku täytetään vedellä $4{,}0\\,\\text{m}$:n korkeuteen kannen yläpuolelle. Letkuun mahtuu vain $0{,}40\\,\\textsf{l}$ vettä. Kuinka paljon kasvaa voima, jolla tynnyrin vesi painaa kantta? Anna vastaus kilonewtoneina.",
       "answer": 9.8,
       "unit": "kN",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-4-L3-03",
       "level": 3,
-      "text": "Huoltoaseman öljynerotuskaivon pohjalla on 1,60 m:n kerros vettä. Veden päällä on 0,40 m:n kerros öljyä, jonka tiheys on 850 kg/m³. Kuinka suuri on ylipaine kaivon pohjalla? Veden tiheys on 1000 kg/m³. Anna vastaus kilopascaleina.",
+      "text": "Huoltoaseman öljynerotuskaivon pohjalla on $1{,}60\\,\\text{m}$:n kerros vettä. Veden päällä on $0{,}40\\,\\text{m}$:n kerros öljyä, jonka tiheys on $850\\,\\text{kg/m}^3$. Kuinka suuri on ylipaine kaivon pohjalla? Veden tiheys on $1000\\,\\text{kg/m}^3$. Anna vastaus kilopascaleina.",
       "answer": 19,
       "unit": "kPa",
       "tolerance": 0.02

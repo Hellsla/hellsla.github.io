@@ -198,7 +198,7 @@ The extension is directly proportional to the force as long as the spring is not
   <foreignObject x="309.5" y="222.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{line through origin}$</span></div></foreignObject>
 </svg>
 
-The scale is calibrated by hanging identical small objects on the spring, each with a mass of about 100 g, that is, a weight of about 1 N:
+The scale is calibrated by hanging identical small objects on the spring, each with a mass of about $100\,\text{g}$, that is, a weight of about 1 N:
 
 - One object stretches the spring by a certain distance, and the position is marked 1 N.
 - Each object pulls on the spring equally hard, so two objects pull with double the force and stretch it double the distance. This position is marked 2 N, and so on.
@@ -211,7 +211,7 @@ Two identical objects stretch the spring of a force meter twice as much as one, 
 ```latex
 G = m g
 ```
-where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall (m/s²), 9.81 m/s² on the surface of the Earth. When mass is in kilograms and $g$ in m/s², the weight comes out in newtons, because 1 N = 1 kg·m/s² (this is justified in FY4). So the weight of a 1 kg mass on Earth is 9.81 N. Elsewhere $g$ is different. The values in the table apply to the surface of the celestial body (for Jupiter, the level of the cloud tops):
+where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall (m/s²), $9.81\,\text{m/s}^2$ on the surface of the Earth. When mass is in kilograms and $g$ in m/s², the weight comes out in newtons, because 1 N = $1\,\text{kg}\cdot\text{m/s}^2$ (this is justified in FY4). So the weight of a 1 kg mass on Earth is 9.81 N. Elsewhere $g$ is different. The values in the table apply to the surface of the celestial body (for Jupiter, the level of the cloud tops):
 
 | Celestial body | $g$ at the surface (m/s²) |
 | --- | --- |
@@ -267,7 +267,7 @@ In the graph, weight is plotted as a function of mass. For each celestial body, 
 </svg>
 
 ## Worked example
-A research robot has a mass of 120 kg. What is its weight on Earth and on Mars?
+A research robot has a mass of $120\,\text{kg}$. What is its weight on Earth and on Mars?
 
 <!-- vaihe -->
 
@@ -311,10 +311,10 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Reasonableness.** The weight of a 1 kg mass on Earth is about 10 N, so the weight of a 120 kg mass is about 1200 N. Mars's $g$ is a little over one third of the Earth's value (3.71/9.81 ≈ 0.38), and 445 N is a little over one third of 1180 N. On Mars the weight is smaller because the interaction between Mars and the robot is weaker than between the Earth and the robot. The mass is the same in both.
+**Reasonableness.** The weight of a 1 kg mass on Earth is about 10 N, so the weight of a $120\,\text{kg}$ mass is about 1200 N. Mars's $g$ is a little over one third of the Earth's value (3.71/9.81 ≈ 0.38), and 445 N is a little over one third of 1180 N. On Mars the weight is smaller because the interaction between Mars and the robot is weaker than between the Earth and the robot. The mass is the same in both.
 
 ## Common misconception
-In everyday language people say "I weigh 70 kilos", but the kilogram is a unit of mass, not of weight. In physics the mass is 70 kg and the weight on Earth is about 690 N. Another mistake is to think that an object's mass changes on the Moon. The mass stays the same, and only the weight decreases. Note also that a force meter measures force, not mass: its reading changes when the same object is taken to another place. A bathroom scale still shows kilograms, because it measures force and its scale has been made on Earth by dividing the force by 9.81 m/s². On the Moon such a scale would show only about one sixth of the mass.
+In everyday language people say "I weigh 70 kilos", but the kilogram is a unit of mass, not of weight. In physics the mass is $70\,\text{kg}$ and the weight on Earth is about 690 N. Another mistake is to think that an object's mass changes on the Moon. The mass stays the same, and only the weight decreases. Note also that a force meter measures force, not mass: its reading changes when the same object is taken to another place. A bathroom scale still shows kilograms, because it measures force and its scale has been made on Earth by dividing the force by $9.81\,\text{m/s}^2$. On the Moon such a scale would show only about one sixth of the mass.
 
 ## Summary
 - Force tells you the strength of an interaction, and its unit is the newton (N). The extension of a force meter's spring is directly proportional to the force.

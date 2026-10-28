@@ -31,7 +31,7 @@
 ## fy3-16-L1-04
 **Given:** ice $m = 0.75\,\text{kg}$, at the melting point $0\,{}^\circ\text{C}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** quantity of heat $Q$ needed to melt the ice, in kilojoules
-**Principle:** The ice is already at the melting point, and while it melts it stays at $0\,{}^\circ\text{C}$. So the energy does not raise the temperature but breaks down the structure of the ice, and we need the specific latent heat of fusion $s$, not $c\,\Delta T$.
+**Principle:** The ice is already at the melting point, and while it melts it stays at $0\,{}^\circ\text{C}$. So the energy does not raise the temperature but changes the interactions between the particles: the regular arrangement of the ice breaks down and the interaction energy between the particles increases, and we need the specific latent heat of fusion $s$, not $c\,\Delta T$.
 **Formula:** $Q = s\,m$
 **Conversions:** Not needed: $s$ is in kilojoules per kilogram and the mass is in kilograms.
 **Substitution:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.75\,\text{kg} = 250.5\,\text{kJ}$

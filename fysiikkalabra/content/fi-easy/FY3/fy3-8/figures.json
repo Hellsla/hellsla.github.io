@@ -11,5 +11,6 @@
  "laajeneminen liioiteltu": "laajeneminen liioiteltu",
  "Nesteen tilavuuden lämpölaajeneminen. Sama nestemäärä kolvissa, jonka kaulana on ohut putki: kylmänä nesteen tilavuus on V₀ ja pinta on alempana, lämpimänä neste on laajentunut ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.": "Nesteen tilavuuden lämpölaajeneminen. Kolvissa on sama määrä nestettä. Kolvin kaulana on ohut putki. Kylmänä nesteen tilavuus on V₀, ja pinta on alempana. Lämpimänä neste on laajentunut, ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.",
  "kylmä, ": "kylmä, ",
- "pinta": "pinta"
+ "pinta": "pinta",
+ "Kuvaaja mittakaavassa: metallipalkin pituuden muutos ΔL millimetreinä lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, jolloin ΔL on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin ΔL on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm.": "Kuvaaja mittakaavassa. Se näyttää metallipalkin pituuden muutoksen ΔL millimetreinä. Muutos on lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, ja silloin ΔL on 0 mm. Mittaus päättyy lämpötilaan 70 °C, ja silloin ΔL on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm."
 }

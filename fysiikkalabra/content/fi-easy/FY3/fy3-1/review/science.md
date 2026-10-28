@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1bdecf4db91bb5f9
+CONTENT-HASH: 34e4c1e8b25e449f
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: 1bdecf4db91bb5f9
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md prose, table, worked example steps, misconception, summary; inquiry.json all fields incl. intros, names, source_note, choices/feedback and the two solutions; exit-ticket.json; figures.json (was empty, now filled with simplified descriptions; figures redrawn). Comma decimals, numbers, units and physics unchanged.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked unit-in-math wrapping, the new check-c2 item, trimmed exit ticket, new figure description, lesson text.

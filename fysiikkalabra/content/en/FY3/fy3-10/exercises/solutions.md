@@ -79,14 +79,15 @@
 **Reasonableness:** The volume is about $17$ times smaller and the pressure about $46$ times greater ($0.500/0.0300 \approx 16.7$ and $4600/101 \approx 45.5$), so the product $pV$ and with it the temperature in kelvins grow by a factor of about $45.5 / 16.7 \approx 2.73$: $303\,\text{K} \cdot 2.73 \approx 828\,\text{K}$. The result agrees, and the temperature rises when a gas is compressed, so a diesel engine does not need a spark plug.
 
 ## fy3-10-L2-04
-**Given:** air, $n = 1.00\,\text{mol}$, $\theta = -30\,{}^\circ\text{C}$, $p = 102\,\text{kPa}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
-**Find:** volume $V$ in litres
-**Principle:** The amount of substance, the pressure and the temperature of the air are known, so the equation of state gives the volume. Even in freezing weather air behaves as an ideal gas, because it is far from liquefying.
-**Formula:** $pV = nRT$, so $V = \dfrac{nRT}{p}$
-**Conversions:** $T = (-30 + 273.15)\,\text{K} = 243.15\,\text{K}$ and $p = 102\,\text{kPa} = 102\,000\,\text{Pa}$. Finally $1\,\text{m}^3 = 1000\,\textsf{l}$.
-**Substitution:** $V = \dfrac{1.00\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 243.15\,\text{K}}{102\,000\,\text{Pa}} = 0.01981\,\text{m}^3 = 19.81\,\textsf{l}$
-**Answer:** $19.8\,\textsf{l}$, three significant figures. All the data ($1.00\,\text{mol}$, $102\,\text{kPa}$ and $R = 8.31$) are given with three digits, and $243\,\text{K}$ (from the whole degrees $-30\,{}^\circ\text{C}$) also has three digits.
-**Reasonableness:** At the same pressure, a mole of air at $20\,{}^\circ\text{C}$ would take up $\dfrac{8.31 \cdot 293.15}{102\,000} = 0.0239\,\text{m}^3 = 23.9\,\textsf{l}$. The ratio of the temperatures in kelvins is $243.15 / 293.15 \approx 0.83$, and $0.83 \cdot 23.9\,\textsf{l} \approx 19.8\,\textsf{l}$. So cold air takes up about $17\,\%$ less space, as it should.
+**Given:** the volume of each container $V = 2.00\,\textsf{l}$; the measurement points of the graph at grid crossings, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Find:** the difference of the amounts of substance $n_\text{A} - n_\text{B}$
+**Principle:** The containers are closed and rigid, so the amount of gas and the volume stay the same and the lines of the graph follow the equation of state. When the pressure of both series is read at the same temperature, the equation of state gives both amounts of substance, and the difference is obtained by subtracting.
+**Reading the graph:** Both series are read at the same temperature $T = 400\,\text{K}$, which is a vertical grid line: gas A $p_\text{A} = 100\,\text{kPa}$ and gas B $p_\text{B} = 60\,\text{kPa}$. The pressures of the points at $T = 200\,\text{K}$ are half of these, so the lines pass through the origin, as $p = nRT/V$ requires.
+**Formula:** $pV = nRT$, so $n = \dfrac{pV}{RT}$ and $n_\text{A} - n_\text{B} = \dfrac{(p_\text{A} - p_\text{B})\,V}{RT}$
+**Conversions:** $p_\text{A} - p_\text{B} = (100 - 60)\,\text{kPa} = 40\,\text{kPa} = 40\,000\,\text{Pa}$ and $V = 2.00\,\textsf{l} = 0.00200\,\text{m}^3$. The temperature is already in kelvins.
+**Substitution:** $n_\text{A} - n_\text{B} = \dfrac{40\,000\,\text{Pa} \cdot 0.00200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{80\,\text{J}}{3324\,\tfrac{\text{J}}{\text{mol}}} = 0.0241\,\text{mol}$
+**Answer:** $n_\text{A} - n_\text{B} \approx 0.024\,\text{mol}$, two significant figures, because the volume and the pressure readings from the graph are known to two digits. Separately $n_\text{A} \approx 0.060\,\text{mol}$ and $n_\text{B} \approx 0.036\,\text{mol}$. The points are read from grid crossings, so the accepted range is narrow: $0.0233$–$0.0247\,\text{mol}$.
+**Reasonableness:** The slope of line A is greater, so there is more gas in A and the difference is positive. The ratio of the pressures $100 : 60$ is also the ratio of the amounts of substance: $0.060 / 0.036 \approx 1.7$.
 
 ## fy3-10-L3-01
 **Given:** air in the lungs, $V = 0.55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6.022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$

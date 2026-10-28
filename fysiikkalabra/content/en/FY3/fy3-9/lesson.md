@@ -119,9 +119,9 @@ So in an isothermal change the pressure is inversely proportional to the volume,
 
 Boyle's law works well for air and other gases at ordinary pressures and temperatures. The amount of gas must stay the same, so no gas may leak out or come in. The pressure used is the total pressure of the gas, not the gauge pressure shown by a meter.
 
-Boyle's law can be verified experimentally. Air is sealed in a syringe, and the syringe is connected to a pressure gauge. The plunger is pressed in steps, and the pressure is read at each volume. The measurement is done slowly so that the temperature of the air has time to return to room temperature. When the results are plotted in a $(V, p)$ coordinate system, the points lie on a falling curve, and it is hard to see from it whether the relationship is exactly inverse proportionality. So a new column $1/V$ is calculated in the table, and $p$ is plotted as a function of $1/V$. If the law holds, the points lie on a straight line through the origin, and the slope of the line is the constant $pV$. Try it in the simulation: save measurements at different volumes and choose “Plot p as a function of 1/V”.
+Boyle's law can be verified experimentally. Air is sealed in a syringe, and the syringe is connected to a pressure gauge. The plunger is pressed in steps, and the pressure is read at each volume. The measurement is done slowly so that the temperature of the air has time to return to room temperature. When the results are plotted in a $(V, p)$ coordinate system, the points lie on a falling curve, and it is hard to see from it whether the relationship is exactly inverse proportionality. So a new column $1/V$ is calculated in the table, and $p$ is plotted as a function of $1/V$. If the law holds, within the measurement uncertainty the points lie on a straight line through the origin, and the slope of the line is the constant $pV$. Try it in the simulation: save measurements at different volumes and choose “Plot p as a function of 1/V”.
 
-When a gas is heated, its particles move faster. If the piston can move so that the pressure stays constant (an isobaric change), the gas expands, and its volume is directly proportional to the temperature in kelvins. If the volume is instead kept constant (an isochoric change), the pressure rises, and it is directly proportional to the temperature in kelvins. In both cases the temperature must be given in kelvins, because the proportionality starts from absolute zero.
+When a gas is heated, its particles move faster. If the piston can move so that the pressure stays constant (an isobaric change), the gas expands. When the amount of gas stays the same and the gas is dilute, its volume is directly proportional to the temperature in kelvins. If the volume is instead kept constant (an isochoric change), the pressure rises, and it is directly proportional to the temperature in kelvins. In both cases the temperature must be given in kelvins, because the proportionality starts from absolute zero.
 
 <svg data-fig="iso-processes" viewBox="0 0 600 412" role="img" aria-label="Two changes of state, schematic picture. On the left, an isobaric change: the piston of the cylinder is loaded by an object of constant weight, so when the gas warms from temperature T₁ to temperature T₂, the piston rises and the volume increases from V₁ to V₂; the velocity arrows of the particles are longer. On the right, an isochoric change: the volume V of a rigid, closed container stays the same, and when the gas warms, the needle of the pressure gauge turns to the greater pressure p₂." style="max-width:100%;font-size:24px">
   <foreignObject x="96" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{isobaric}$</div></foreignObject>
@@ -337,13 +337,13 @@ In an isobaric and in an isochoric change
 ```latex
 \frac{V_1}{T_1} = \frac{V_2}{T_2} \qquad \text{and} \qquad \frac{p_1}{T_1} = \frac{p_2}{T_2}
 ```
-where $T_1$ and $T_2$ are the temperatures of the gas in kelvins (K) in the initial and final state. So the volume or the pressure is directly proportional to the temperature in kelvins, and the extension of the straight line in a $(T, V)$ or $(T, p)$ graph passes through the origin, that is, through absolute zero, 0 K.
+where $T_1$ and $T_2$ are the temperatures of the gas in kelvins (K) in the initial and final state. So the volume or the pressure of a closed, dilute gas is directly proportional to the temperature in kelvins, and the extension of the straight line in a $(T, V)$ or $(T, p)$ graph passes through the origin, that is, through absolute zero, $0\,\text{K}$. The extension is a prediction of the model: a real gas condenses into a liquid before $0\,\text{K}$ is reached.
 
 The temperature in kelvins is obtained from the Celsius temperature $\theta$ by adding 273.15:
 ```latex
 T = \theta + 273.15\,\text{K}
 ```
-where $\theta$ is the temperature in degrees Celsius as a number; in calculations 273 K is enough.
+where $\theta$ is the temperature in degrees Celsius as a number; in calculations $273\,\text{K}$ is enough.
 
 <svg data-fig="absolute-zero" viewBox="0 0 600 622" role="img" aria-label="Graphs to scale when T is 0–400 K. Above, the volume of a gas at constant pressure, below, the pressure of a gas at constant volume, as a function of the temperature in kelvins. The measurement points between 253 and 373 K are on a straight line. The extension of the line, drawn dashed, passes through the origin: the volume or the pressure would be zero at absolute zero, 0 K, that is, −273 °C." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="240" x2="179.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -423,7 +423,7 @@ where $\theta$ is the temperature in degrees Celsius as a number; in calculation
 </svg>
 
 ## Worked example
-At the airport, a bag of crisps contains 0.80 l of air at a pressure of 101 kPa. During the flight the cabin pressure is 78 kPa. What is the volume of the air in the bag during the flight, if the temperature stays the same and the bag can expand freely?
+At the airport, a bag of crisps contains $0.80\,\textsf{l}$ of air at a pressure of 101 kPa. During the flight the cabin pressure is 78 kPa. What is the volume of the air in the bag during the flight, if the temperature stays the same and the bag can expand freely?
 
 <!-- vaihe -->
 
@@ -460,7 +460,7 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 
 <!-- vaihe -->
 
-**Result.** The volume of the air is $V_2 \approx 1.0\,\textsf{l}$, to two significant figures like the initial data $0.80\,\textsf{l}$ and $78\,\text{kPa}$. The volume increases by about 30 %. If the bag is already almost full, it swells tight.
+**Result.** The volume of the air is $V_2 \approx 1.0\,\textsf{l}$, to two significant figures like the initial data $0.80\,\textsf{l}$ and $78\,\text{kPa}$. The volume increases by about $30\,\%$. If the bag is already almost full, it swells tight.
 
 <!-- vaihe -->
 
@@ -470,11 +470,11 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 Three mistakes are often repeated:
 
 - **Inverse proportionality is not a falling straight line.** When the volume doubles, the pressure halves, so the $(V, p)$ graph is a curve that approaches the axes but never meets them. A straight line is obtained only when $p$ is plotted as a function of $1/V$.
-- **Celsius degrees do not work in a ratio of temperatures.** When 1.00 l of air is heated at constant pressure from 10 °C to 20 °C, its volume does not double. Calculated in kelvins, $V_2 = V_1 T_2 / T_1 = 1.00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1.04\,\textsf{l}$, so the volume increases by only about 3.5 %.
+- **Celsius degrees do not work in a ratio of temperatures.** When $1.00\,\textsf{l}$ of air is heated at constant pressure from $10\,{}^\circ\text{C}$ to $20\,{}^\circ\text{C}$, its volume does not double. Calculated in kelvins, $V_2 = V_1 T_2 / T_1 = 1.00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1.04\,\textsf{l}$, so the volume increases by only about $3.5\,\%$.
 - **The pressure of a gas in a closed container does not come from the weight of the gas.** In a small container the weight of the gas is negligible, and the pressure comes from the collisions of the particles, so it is equal everywhere in the container.
 
 ## Summary
 - In a change of state, the pressure, volume and temperature of a gas change. In an isothermal change $T$ is constant, in an isobaric change $p$, and in an isochoric change $V$.
 - Boyle's law: in an isothermal change $p_1 V_1 = p_2 V_2$, so the pressure is inversely proportional to the volume.
-- Inverse proportionality is verified by calculating a column $1/V$ in the table and plotting $p$ as a function of $1/V$: the points must lie on a straight line through the origin.
-- At constant pressure the volume, and at constant volume the pressure, is directly proportional to the temperature in kelvins. In these calculations the temperatures are always given in kelvins.
+- Inverse proportionality is verified by calculating a column $1/V$ in the table and plotting $p$ as a function of $1/V$: the points must lie on a straight line through the origin, within the measurement uncertainty.
+- When the amount of gas stays the same, the volume of a dilute gas at constant pressure, and the pressure at constant volume, is directly proportional to the temperature in kelvins. In these calculations the temperatures are always given in kelvins.

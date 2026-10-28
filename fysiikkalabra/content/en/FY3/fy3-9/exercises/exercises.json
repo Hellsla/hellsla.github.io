@@ -11,7 +11,7 @@
     {
       "id": "fy3-9-L1-02",
       "level": 1,
-      "text": "The pressure tank of a summer cottage's water system has a sealed air space at the top. When the tank has little water, the volume of the air is 24.0 l and the total pressure is 160.0 kPa. The pump pumps more water into the tank, so the air is compressed and its total pressure rises to 280.0 kPa. The temperature of the air stays the same. What is the volume of the air now?",
+      "text": "The pressure tank of a summer cottage's water system has a sealed air space at the top. When the tank has little water, the volume of the air is $24.0\\,\\textsf{l}$ and the total pressure is 160.0 kPa. The pump pumps more water into the tank, so the air is compressed and its total pressure rises to 280.0 kPa. The temperature of the air stays the same. What is the volume of the air now?",
       "answer": 13.7,
       "unit": "l",
       "tolerance": 0.02
@@ -19,15 +19,16 @@
     {
       "id": "fy3-9-L1-03",
       "level": 1,
-      "text": "The school's water rocket is a 1.50-litre plastic bottle into which water has been poured and air pumped. At the moment of launch the bottle contains 1.00 l of air at a pressure of 430 kPa. When the water has squirted out, the air fills the whole bottle, so its volume is 1.50 l. Assume that the temperature of the air does not change and that no air has escaped yet. What is the air pressure in the bottle then?",
-      "answer": 287,
+      "text": "The graph shows example data: the pressure $p$ of the air in a disposable syringe as a function of the volume $V$, when the tip of the syringe is closed and the plunger is moved slowly, so the temperature of the air stays the same. What is the air pressure when its volume is $25\\,\\text{ml}$? Read the values you need from the graph.",
+      "figure": "fy3-9/boyle-points",
+      "answer": 80,
       "unit": "kPa",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy3-9-L1-04",
       "level": 1,
-      "text": "A balloon at a birthday party contains 3.0 l of air in a living room at 22 °C. The balloon is taken to the balcony in a frost of −18 °C, where its air cools to the temperature of the outside air. The air pressure in the balloon stays the same. What is the volume of the air in the balloon on the balcony?",
+      "text": "A balloon at a birthday party contains $3.0\\,\\textsf{l}$ of air in a living room at $22\\,{}^\\circ\\text{C}$. The balloon is taken to the balcony in a frost of $-18\\,{}^\\circ\\text{C}$, where its air cools to the temperature of the outside air. The air pressure in the balloon stays the same. What is the volume of the air in the balloon on the balcony?",
       "answer": 2.6,
       "unit": "l",
       "tolerance": 0.02
@@ -35,7 +36,7 @@
     {
       "id": "fy3-9-L1-05",
       "level": 1,
-      "text": "The lid of a chest freezer is opened, and the air space of the freezer fills with room air at 22 °C. The lid is closed tight, so the air pressure in the freezer is 101 kPa. The air cools to −18 °C, and its volume stays the same. What is the air pressure in the freezer now? (This is why the lid is hard to open again right after closing it.)",
+      "text": "The lid of a chest freezer is opened, and the air space of the freezer fills with room air at $22\\,{}^\\circ\\text{C}$. The lid is closed tight, so the air pressure in the freezer is 101 kPa. The air cools to $-18\\,{}^\\circ\\text{C}$, and its volume stays the same. What is the air pressure in the freezer now? (This is why the lid is hard to open again right after closing it.)",
       "answer": 87.3,
       "unit": "kPa",
       "tolerance": 0.02
@@ -45,7 +46,7 @@
     {
       "id": "fy3-9-L2-01",
       "level": 2,
-      "text": "The cylinder of a firefighter's breathing apparatus has a volume of 6.8 l, and in a fully filled cylinder the air pressure is 300.0 bar (1 bar = 100 kPa). How many cubic metres would this air take up if it were released to an atmospheric pressure of 101 kPa? The temperature stays the same. Assume that Boyle's law holds even at such a high pressure.",
+      "text": "The cylinder of a firefighter's breathing apparatus has a volume of $6.8\\,\\textsf{l}$, and in a fully filled cylinder the air pressure is 300.0 bar (1 bar = 100 kPa). How many cubic metres would this air take up if it were released to an atmospheric pressure of 101 kPa? The temperature stays the same. Assume that Boyle's law holds even at such a high pressure.",
       "answer": 2.0,
       "unit": "m³",
       "tolerance": 0.02
@@ -53,7 +54,7 @@
     {
       "id": "fy3-9-L2-02",
       "level": 2,
-      "text": "An empty glass bottle is closed with a cork at 20 °C, so the air pressure in the bottle is 101 kPa. The bottle is forgotten on the sauna bench. The cork pops out when the air pressure in the bottle is 125 kPa. The volume of the bottle stays the same. At what temperature does the cork pop out? Give the answer in degrees Celsius.",
+      "text": "An empty glass bottle is closed with a cork at $20\\,{}^\\circ\\text{C}$, so the air pressure in the bottle is 101 kPa. The bottle is forgotten on the sauna bench. The cork pops out when the air pressure in the bottle is 125 kPa. The volume of the bottle stays the same. At what temperature does the cork pop out? Give the answer in degrees Celsius.",
       "answer": 90,
       "unit": "°C",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy3-9-L2-04",
       "level": 2,
-      "text": "The envelope of a hot-air balloon has a volume of 2800 m³, and there is an opening at the bottom of the envelope. The envelope is full of air at 10 °C, which is heated with a burner to 100 °C. The pressure inside the envelope stays equal to the outside air pressure. All the air that was originally in the envelope warms to 100 °C. How many cubic metres of this 100 °C air do not fit in the envelope but have been pushed out through the opening?",
+      "text": "The envelope of a hot-air balloon has a volume of 2800 m³, and there is an opening at the bottom of the envelope. The envelope is full of air at $10\\,{}^\\circ\\text{C}$, which is heated with a burner to $100\\,{}^\\circ\\text{C}$. The pressure inside the envelope stays equal to the outside air pressure. All the air that was originally in the envelope warms to $100\\,{}^\\circ\\text{C}$. How many cubic metres of this $100\\,{}^\\circ\\text{C}$ air do not fit in the envelope but have been pushed out through the opening?",
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02
@@ -79,7 +80,7 @@
     {
       "id": "fy3-9-L3-01",
       "level": 3,
-      "text": "A diver is in a lake at a depth of 20.0 m and blows an air bubble whose volume is 2.0 cm³. The bubble rises to the surface. The atmospheric pressure is 101 kPa and the density of water is 1000 kg/m³. Assume that the temperature of the water is the same all the way and that the air of the bubble does not dissolve in water. What is the volume of the bubble at the surface? Using the result, justify why a person diving with compressed air must not hold their breath when rising to the surface.",
+      "text": "A diver is in a lake at a depth of $20.0\\,\\text{m}$ and blows an air bubble whose volume is 2.0 cm³. The bubble rises to the surface. The atmospheric pressure is 101 kPa and the density of water is $1000\\,\\text{kg/m}^3$. Assume that the temperature of the water is the same all the way and that the air of the bubble does not dissolve in water. What is the volume of the bubble at the surface? Using the result, justify why a person diving with compressed air must not hold their breath when rising to the surface.",
       "answer": 5.9,
       "unit": "cm³",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "The tyres of a car are filled in a garage at 20 °C, and the tyre pressure gauge shows 250.0 kPa. The gauge shows gauge pressure, that is, how much greater the air pressure in the tyre is than the atmospheric pressure. The atmospheric pressure is 101 kPa. At night the car stands in the yard, and the air in the tyre cools to −20 °C. The volume of the tyre stays practically the same, and no air escapes. What does the gauge show on a frosty morning? Justify why the reading of the gauge cannot be substituted directly into the formula $p_1/T_1 = p_2/T_2$.",
+      "text": "The tyres of a car are filled in a garage at $20\\,{}^\\circ\\text{C}$, and the tyre pressure gauge shows 250.0 kPa. The gauge shows gauge pressure, that is, how much greater the air pressure in the tyre is than the atmospheric pressure. The atmospheric pressure is 101 kPa. At night the car stands in the yard, and the air in the tyre cools to $-20\\,{}^\\circ\\text{C}$. The volume of the tyre stays practically the same, and no air escapes. What does the gauge show on a frosty morning? Justify why the reading of the gauge cannot be substituted directly into the formula $p_1/T_1 = p_2/T_2$.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02

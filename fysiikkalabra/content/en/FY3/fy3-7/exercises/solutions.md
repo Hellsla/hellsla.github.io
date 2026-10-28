@@ -39,15 +39,15 @@
 **Reasonableness:** Estimate: $2300\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.03\,\text{kg} \approx 69\,\text{kJ}$. This quantity of heat would warm $0.3\,\text{kg}$ of milk by about $\dfrac{67.8\,\text{kJ}}{4.19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.3\,\text{kg}} \approx 54\,\text{K}$, so a small amount of steam warms a whole jug of milk. For the same reason steam burns skin worse than water that is just as hot.
 
 ## fy3-7-L1-05
-**Given:** the horizontal part of the heating curve at $0\,{}^\circ\text{C}$ starts at the energy $E_1 = 19\,\text{kJ}$ and ends at $E_2 = 186\,\text{kJ}$; the ice first warmed from $-18\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$ and $c_\text{ice} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Find:** what happens on the horizontal part, and the quantity of heat $Q$ it takes, in kilojoules
-**Principle:** On the horizontal part the temperature does not change even though energy is transferred: the substance is changing state. The temperature is $0\,{}^\circ\text{C}$, so the ice is melting, and the energy transferred is used for melting, $Q = sm$.
-**Reading the graph:** The horizontal axis shows the energy transferred. The horizontal part starts at $19\,\text{kJ}$ and ends at $186\,\text{kJ}$, so the energy used for melting is the difference between these two values.
-**Formula:** $Q = E_2 - E_1$; the mass of ice that melted comes from $Q = sm$, that is, $m = \dfrac{Q}{s}$
-**Conversions:** None needed: both numbers are read in kilojoules. In the check calculation, $c_\text{ice}$ is converted: $2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 2.1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$.
-**Substitution:** $Q = 186\,\text{kJ} - 19\,\text{kJ} = 167\,\text{kJ}$, and $m = \dfrac{167\,\text{kJ}}{334\,\tfrac{\text{kJ}}{\text{kg}}} = 0.50\,\text{kg}$
-**Answer:** $167\,\text{kJ}$ and the ice melts. Both readings are given to the nearest kilojoule, so the difference is too: $167\,\text{kJ}$, three significant figures.
-**Reasonableness:** Warming the ice by $18\,\text{K}$ would take $2.1\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 18\,\text{K} = 18.9\,\text{kJ} \approx 19\,\text{kJ}$, which matches the first part of the curve. Melting takes almost nine times as much energy as warming, which is why the horizontal part is so long.
+**Given:** mass of the ice $m = 0.60\,\text{kg}$; the temperature as a function of the energy transferred in the graph
+**Find:** the specific latent heat of fusion of ice $s$
+**Principle:** On the horizontal part of the graph the temperature stays constant at $0\,{}^\circ\text{C}$ even though energy is transferred: the ice melts, and all the energy transferred is used for melting, $Q = sm$. The energy used for melting is the length of the horizontal part on the horizontal axis.
+**Reading the graph:** The horizontal part starts at the grid crossing $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ and ends at the crossing $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. So the energy used for melting is $Q = 220\,\text{kJ} - 20\,\text{kJ} = 200\,\text{kJ}$.
+**Formula:** $Q = sm$, from which $s = \dfrac{Q}{m}$
+**Conversions:** None needed: the energy is read in kilojoules, and the answer is requested in the unit $\tfrac{\text{kJ}}{\text{kg}}$.
+**Substitution:** $s = \dfrac{200\,\text{kJ}}{0.60\,\text{kg}} = 333\,\tfrac{\text{kJ}}{\text{kg}}$
+**Answer:** $333\,\tfrac{\text{kJ}}{\text{kg}}$, three significant figures. The values are read exactly from the grid, so $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$ is accepted.
+**Reasonableness:** The result is close to the table value $334\,\tfrac{\text{kJ}}{\text{kg}}$. Melting takes $200\,\text{kJ}$, whereas warming the ice before melting took only $20\,\text{kJ}$, so the horizontal part is long, and the temperature rises more gently after melting because the specific heat capacity of water is greater than that of ice.
 
 ## fy3-7-L2-01
 **Given:** $P = 2.0\,\text{kW}$, mass vaporised from boiling water $m = 0.50\,\text{kg}$, all the energy from the hotplate goes into the water; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$

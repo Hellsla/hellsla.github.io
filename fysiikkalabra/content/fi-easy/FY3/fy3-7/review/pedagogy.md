@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bc8640e3d7a70163
+CONTENT-HASH: e050b2ed1cf05329
 
 ## Blocking
 (none left; see Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: bc8640e3d7a70163
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, figures.json (each value translates its own key). Pedagogy: naturalness and consistent terms (terms.md, lang labels, **Given:** … step labels); question/option/feedback correspondence; Selkeä suomi level (short sentences, terms kept and explained), no lowered demand; 
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (incl. the new check-c2 item, wording of the particle-model explanations, math-wrapped units), exit-ticket.json (now two questions), figures.json (new melting-curve text).

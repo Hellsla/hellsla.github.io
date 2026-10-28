@@ -39,14 +39,15 @@
 **Järkevyys:** Pyöristetyillä luvuilla $3{,}5 \cdot 14 \approx 4 \cdot 12 = 48$, joten tulos on oikea. Jouleina energia on $49 \cdot 3{,}6\,\text{MJ} \approx 176\,\text{MJ}$. Koko pakkasvuorokauden kulutus olisi $3{,}5\,\text{kW} \cdot 24\,\text{h} = 84\,\text{kWh}$. Se sopii sähkölämmitteiselle omakotitalolle.
 
 ## fy3-12-L1-05
-**Annettu:** $P_\text{tulo} = 340{,}0\,\tfrac{\text{W}}{\text{m}^2}$, heijastuva osuus $r = 30{,}0\,\% = 0{,}300$
-**Kysytty:** avaruuteen säteilty teho neliömetriä kohti $P_\text{säteily}$
-**Periaate:** Maapallon keskilämpötila pysyy vakiona. Energia ei siis kerry eikä vähene. Imeytyvä teho on yhtä suuri kuin avaruuteen lähtevä teho. Heijastunut osa ei lämmitä maapalloa. Vain loppu imeytyy.
-**Kaava:** Imeytyvä teho on $P_\text{im} = (1 - r)P_\text{tulo}$. Tasapainossa $P_\text{säteily} = P_\text{im}$, joten $P_\text{säteily} = (1 - r)P_\text{tulo}$
-**Muunnokset:** Prosentti muutetaan desimaaliluvuksi: $30{,}0\,\% = 0{,}300$. Tehon yksikkö $\tfrac{\text{W}}{\text{m}^2}$ pysyy samana.
-**Sijoitus:** $P_\text{säteily} = (1 - 0{,}300) \cdot 340{,}0\,\tfrac{\text{W}}{\text{m}^2} = 0{,}700 \cdot 340{,}0\,\tfrac{\text{W}}{\text{m}^2} = 238\,\tfrac{\text{W}}{\text{m}^2}$
-**Vastaus:** $238\,\tfrac{\text{W}}{\text{m}^2}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat tuleva teho $340{,}0\,\tfrac{\text{W}}{\text{m}^2}$ ja osuus $1 - 0{,}300 = 0{,}700$. Osuudessa on kolme numeroa, koska $1$ on tarkka luku.
-**Järkevyys:** Tase kuntoon: heijastuu $0{,}300 \cdot 340{,}0 = 102\,\tfrac{\text{W}}{\text{m}^2}$ ja $102 + 238 = 340\,\tfrac{\text{W}}{\text{m}^2}$. Kaikki tuleva teho on siis mukana. Rajatapaukset: jos $r = 0$, koko $340\,\tfrac{\text{W}}{\text{m}^2}$ imeytyisi. Jos $r = 1$, ei mitään imeytyisi. Tulos on siis pienempi kuin tuleva teho, kuten kuuluu.
+**Annettu:** kuvasta luettuna Auringosta tulee $341\,\tfrac{\text{W}}{\text{m}^2}$. Siitä heijastuu $102\,\tfrac{\text{W}}{\text{m}^2}$. Maapallon keskilämpötila pysyy vakiona.
+**Kysytty:** avaruuteen lämpösäteilynä lähtevä teho neliömetriä kohti $P_\text{säteily}$
+**Periaate:** Lämpötila pysyy vakiona. Maapallo on siis energiatasapainossa. Sen imemä teho on yhtä suuri kuin avaruuteen lähtevä lämpösäteily. Heijastunut säteily ei lämmitä maapalloa. Imeytyvä osa on siis tuleva teho miinus heijastunut teho.
+**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$. Ylempi oikea nuoli kertoo heijastuvan tehon $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$. Alempi oikea nuoli on kysytty lämpösäteily. Sen arvona on kysymysmerkki.
+**Kaava:** $P_\text{im} = P_\text{tulo} - P_\text{heij}$. Tasapainossa $P_\text{säteily} = P_\text{im}$.
+**Muunnokset:** Ei tarvita. Kaikki tehot ovat yksikössä $\tfrac{\text{W}}{\text{m}^2}$.
+**Sijoitus:** $P_\text{säteily} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$
+**Vastaus:** $239\,\tfrac{\text{W}}{\text{m}^2}$, kolme merkitsevää numeroa. Luetut tehot $341$ ja $102$ on annettu täysinä watteina neliömetriä kohti. Erotus tunnetaan samalla tarkkuudella.
+**Järkevyys:** Tase kuntoon: $102 + 239 = 341\,\tfrac{\text{W}}{\text{m}^2}$. Kaikki tuleva teho on siis mukana. Heijastunut osuus on $102 / 341 \approx 0{,}30$, eli noin $30\,\%$ tulevasta säteilystä. Tulos on pienempi kuin tuleva teho, kuten kuuluu.
 
 ## fy3-12-L2-01
 **Annettu:** seinät $A_\text{s} = 70\,\text{m}^2$, $U_\text{s} = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; yläpohja $A_\text{y} = 50{,}0\,\text{m}^2$, $U_\text{y} = 0{,}30\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; patterien teho $P = 2{,}0\,\text{kW}$; $T_\text{sisä} = 20\,{}^\circ\text{C}$
@@ -111,9 +112,9 @@
 ## fy3-12-L3-03
 **Annettu:** lämpökerroin $\varepsilon = 2{,}8$, $U_1 = 0{,}35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $U_2 = 0{,}10\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $A = 100\,\text{m}^2$, $\Delta T = 19\,\text{K}$, $t = 5800\,\text{h}$
 **Kysytty:** lisäeristyksen säästämä sähköenergia $W$ kilowattitunteina. Lisäksi perustelu: miksi eristäminen kannattaa lämpöpumpun kanssa.
-**Periaate:** Eristys pienentää yläpohjan läpi johtuvaa lämpöä. Lämpöpumpun on silloin tuotettava vähemmän lämpöä. Lämpökerroin kertoo, että pumppu tuottaa lämpöä $\varepsilon$ kertaa käyttämänsä sähköenergian verran. Sähkö on siis lämpö jaettuna $\varepsilon$:lla.
+**Periaate:** Eristys pienentää yläpohjan läpi johtuvaa lämpöä. Lämpöpumpun on silloin luovutettava sisälle vähemmän lämpöä. Lämpökerroin kertoo, että pumppu luovuttaa lämpöä $\varepsilon$ kertaa käyttämänsä sähköenergian verran. Sähkö on siis lämpö jaettuna $\varepsilon$:lla.
 **Kaava:** $Q = (U_1 - U_2)A\Delta T\,t$ ja $W = \dfrac{Q}{\varepsilon}$, joten $W = \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon}$
 **Muunnokset:** Aika on jo tunteina, ja tulos halutaan kilowattitunteina. Siksi teho $\text{W}$ muutetaan kilowateiksi jakamalla tuhannella: $\text{Wh} / 1000 = \text{kWh}$.
 **Sijoitus:** $Q = (0{,}35 - 0{,}10)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 100\,\text{m}^2 \cdot 19\,\text{K} \cdot 5800\,\text{h} = 475\,\text{W} \cdot 5800\,\text{h} = 2\,755\,000\,\text{Wh} = 2755\,\text{kWh}$. $W = \dfrac{2755\,\text{kWh}}{2{,}8} \approx 983{,}9\,\text{kWh}$
 **Vastaus:** $980\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat lämpökerroin $2{,}8$, U-arvojen erotus $0{,}35 - 0{,}10 = 0{,}25$ ja lämpötilaero $19\,\text{K}$. Kaikissa niissä on kaksi numeroa. Ala $100\,\text{m}^2$ ja aika $5800\,\text{h}$ ovat vähintään kahden numeron arvoja. Laskimen tulos $983{,}9\,\text{kWh}$ pyöristetään. Pumppu ei luo lämpöä. Se siirtää lämpöä sähköllä. Sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Siksi eristys kannattaa: pienempi lämmöntarve tarkoittaa pienempää sähkölaskua.
-**Järkevyys:** Takaisinlasku: $983{,}9 \cdot 2{,}8 \approx 2755\,\text{kWh}$. Sähkösäästö on pienempi kuin lämpösäästö $2755\,\text{kWh}$, koska pumppu tuottaa $2{,}8$ kWh lämpöä yhdellä sähkökilowattitunnilla. Suoralla sähkölämmityksellä ($\varepsilon = 1$) säästö olisi koko $2755\,\text{kWh}$. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy. Säästö on silloin suurin.
+**Järkevyys:** Takaisinlasku: $983{,}9 \cdot 2{,}8 \approx 2755\,\text{kWh}$. Sähkösäästö on pienempi kuin lämpösäästö $2755\,\text{kWh}$, koska pumppu luovuttaa $2{,}8$ kWh lämpöä yhdellä sähkökilowattitunnilla. Sähkön lisäksi lämpöä tulee ulkoilmasta. Suoralla sähkölämmityksellä ($\varepsilon = 1$) säästö olisi koko $2755\,\text{kWh}$. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy. Säästö on silloin suurin.

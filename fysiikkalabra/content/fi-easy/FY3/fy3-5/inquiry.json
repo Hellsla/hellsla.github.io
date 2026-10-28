@@ -7,7 +7,7 @@
   ],
   "prior": [
     "Työ $W = Fs$ siirtää energiaa. Joulen kokeessa työ lämmitti vettä (luku *Työ ja energia*)",
-    "Mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
+    "Kaasun mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
   ],
   "activities": [
     {
@@ -55,16 +55,16 @@
       "choices": [
         {
           "text": "Aino: Puristuksessa ilman paine kasvaa. Hiukkaset törmäävät seiniin entistä tiheämmin. Korkea paine nostaa ilman lämpötilaa.",
-          "feedback": "Kokeen 2 johtavassa sylinterissä ilma puristui samaan tilavuuteen 75 %. Sen paine kasvoi 1,33-kertaiseksi, mutta lämpötila palasi 293 K:iin. Korkea paine ei siis yksin tee kaasusta kuumaa. Lämpötilan nousun ratkaisee se, kuinka paljon energiaa kaasuun jää."
+          "feedback": "Kokeen 2 johtavassa sylinterissä ilma puristui samaan tilavuuteen $75\\,\\%$. Sen paine kasvoi 1,33-kertaiseksi, mutta lämpötila palasi $293\\,\\text{K}$:iin. Korkea paine ei siis yksin tee kaasusta kuumaa. Lämpötilan nousun ratkaisee se, kuinka paljon energiaa kaasuun jää."
         },
         {
           "text": "Bea: Mäntä tekee ilmaan työtä. Työ siirtää ilmaan energiaa, joten ilman sisäenergia kasvaa ja lämpötila nousee.",
           "correct": true,
-          "feedback": "Kokeet tukevat tätä. Eristetyssä sylinterissä männän työ $W \\approx +13{,}1\\,\\text{J}$ jäi kokonaan kaasuun ($\\Delta U = W$). Lämpötila nousi noin 37 K. Katso hiukkasta, joka osuu liikkuvaan mäntään: se kimpoaa nopeampana. Oikeassa pumpussa myös männän ja sylinterin välinen kitka lämmittää hieman. Simulaatiossa kitkaa ei ole."
+          "feedback": "Kokeet tukevat tätä. Eristetyssä sylinterissä männän työ $W \\approx +13{,}1\\,\\text{J}$ jäi kokonaan kaasuun ($\\Delta U = W$). Lämpötila nousi noin $37\\,\\text{K}$. Katso hiukkasta, joka osuu liikkuvaan mäntään: se kimpoaa nopeampana. Oikeassa pumpussa myös männän ja sylinterin välinen kitka lämmittää hieman. Simulaatiossa kitkaa ei ole."
         },
         {
           "text": "Cem: Ilmassa on tietty määrä lämpöä. Puristuksessa sama lämpö tiivistyy pienempään tilaan. Siksi ilma tuntuu kuumemmalta.",
-          "feedback": "Selitys pitää lämpöä aineena, jota ilmassa on tietty määrä. Silloin sama puristus lämmittäisi aina yhtä paljon. Kokeessa 2 puristus oli molemmilla kerroilla sama. Eristetyssä sylinterissä lämpötila nousi noin 37 K. Johtavassa sylinterissä se palasi 293 K:iin, koska seinien kautta siirtyi pois lämpömäärä noin 12 J."
+          "feedback": "Selitys pitää lämpöä aineena, jota ilmassa on tietty määrä. Silloin sama puristus lämmittäisi aina yhtä paljon. Kokeessa 2 puristus oli molemmilla kerroilla sama. Eristetyssä sylinterissä lämpötila nousi noin $37\\,\\text{K}$. Johtavassa sylinterissä se palasi $293\\,\\text{K}$:iin, koska seinien kautta siirtyi pois lämpömäärä noin $12\\,\\text{J}$."
         }
       ],
       "reveal": {
@@ -86,20 +86,20 @@
       "choices": [
         {
           "text": "Männän nopeus itse: nopea liike kuumentaa kaasua, vaikka työ olisi sama.",
-          "feedback": "Mallin lukemissa nopea työntö lämmitti enemmän ($\\Delta T$ noin 53 K, hitaalla 37 K). Myös työ oli suurempi: 19,1 J ja 13,1 J. Jaa $\\Delta T$ työllä. Saat kummallakin noin 2,8 K/J. Nopeus vaikuttaa vain työn kautta: lämpötila nousi täsmälleen sen verran kuin työtä tehtiin."
+          "feedback": "Mallin lukemissa nopea työntö lämmitti enemmän ($\\Delta T$ noin $53\\,\\text{K}$, hitaalla $37\\,\\text{K}$). Myös työ oli suurempi: $19{,}1\\,\\text{J}$ ja $13{,}1\\,\\text{J}$. Jaa $\\Delta T$ työllä. Saat kummallakin noin $2{,}8\\,\\text{K/J}$. Nopeus vaikuttaa vain työn kautta: lämpötila nousi täsmälleen sen verran kuin työtä tehtiin."
         },
         {
           "text": "Työntöjen määrä: hitaassa työnnössä hiukkaset ehtivät osua mäntään useammin, joten kaasu lämpenee enemmän.",
-          "feedback": "Hitaassa työnnössä osumia on enemmän, mutta jokainen osuma kiihdyttää hiukkasta vähemmän. Mallin lukemissa hidas työntö lämmitti vähemmän: $\\Delta T$ noin 37 K ja $W = +13{,}1\\,\\text{J}$. Nopealla työnnöllä lämpötila nousi noin 53 K ja työ $+19{,}1\\,\\text{J}$. Lämpötilan nousu seurasi työtä."
+          "feedback": "Hitaassa työnnössä osumia on enemmän, mutta jokainen osuma kiihdyttää hiukkasta vähemmän. Mallin lukemissa hidas työntö lämmitti vähemmän: $\\Delta T$ noin $37\\,\\text{K}$ ja $W = +13{,}1\\,\\text{J}$. Nopealla työnnöllä lämpötila nousi noin $53\\,\\text{K}$ ja työ $+19{,}1\\,\\text{J}$. Lämpötilan nousu seurasi työtä."
         },
         {
           "text": "Pelkkä työntömatka: matka on sama, joten työ ja lämpötilan nousu ovat täsmälleen samat.",
-          "feedback": "Matka oli sama, mutta työ ei ollut. Hitaalla työnnöllä $W = +13{,}1\\,\\text{J}$ ja nopealla $+19{,}1\\,\\text{J}$. Työ on voima kertaa matka. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla voimalla. Siksi myös lämpötila nousi nopealla työnnöllä enemmän: 53 K eikä 37 K."
+          "feedback": "Matka oli sama, mutta työ ei ollut. Hitaalla työnnöllä $W = +13{,}1\\,\\text{J}$ ja nopealla $+19{,}1\\,\\text{J}$. Työ on voima kertaa matka. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, joten kaasu vastustaa sitä suuremmalla voimalla. Siksi myös lämpötila nousi nopealla työnnöllä enemmän: $53\\,\\text{K}$ eikä $37\\,\\text{K}$."
         },
         {
           "text": "Tehty työ: eristetyssä sylinterissä sisäenergia kasvaa työn verran ($\\Delta U = W$). Kaasu lämpenee enemmän sillä kerralla, jolla työtä tehdään enemmän.",
           "correct": true,
-          "feedback": "Mallin lukemat tukevat tätä. Hitaalla työnnöllä $W = \\Delta U = +13{,}1\\,\\text{J}$ ja $\\Delta T$ on noin 37 K. Nopealla työnnöllä $W = \\Delta U = +19{,}1\\,\\text{J}$ ja $\\Delta T$ on noin 53 K. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella. Siksi kaasu vastustaa sitä enemmän ja työ kasvaa. Lämpötilan nousu työtä kohden on kummallakin noin 2,8 K/J: nopeus vaikuttaa vain työn kautta."
+          "feedback": "Mallin lukemat tukevat tätä. Hitaalla työnnöllä $W = \\Delta U = +13{,}1\\,\\text{J}$ ja $\\Delta T$ on noin $37\\,\\text{K}$. Nopealla työnnöllä $W = \\Delta U = +19{,}1\\,\\text{J}$ ja $\\Delta T$ on noin $53\\,\\text{K}$. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella. Siksi kaasu vastustaa sitä enemmän ja työ kasvaa. Lämpötilan nousu työtä kohden on kummallakin noin $2{,}8\\,\\text{K/J}$: nopeus vaikuttaa vain työn kautta."
         },
         {
           "text": "Ei kumpikaan: lämpötila ei nouse kummallakaan kerralla, koska eristettyyn sylinteriin ei tule lämpöä.",
@@ -112,7 +112,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa on sylinteri ja mäntä. Sylinterissä on 40 kaasun hiukkasta. Kokeile vapaasti, myös männän vetämistä ulos.",
-      "howto": "*Työnnä mäntää* puristaa kaasun tilavuuteen 75 %. *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän. Silloin se kimpoaa nopeampana. Pylväät näyttävät kolme asiaa: männän kaasuun tekemän työn $W$, seinien läpi kaasuun siirtyneen lämpömäärän $Q$ ja sisäenergian muutoksen $\\Delta U$. *Männän nopeus* valitsee hitaan tai nopean työnnön. *Seinät* valitsee eristetyt tai johtavat seinät. *Animaatio* muuttaa vain tahtia, ei lukemia. Malli on täysin toistettava, koska työntö alkutilasta alkaa aina samasta kaasun tilasta.",
+      "howto": "*Työnnä mäntää* puristaa kaasun tilavuuteen $75\\,\\%$. *Vedä ulos* palauttaa männän. Hiukkasen väri kertoo sen nopeuden. Kun hiukkanen osuu liikkuvaan mäntään, se saa hetkeksi pitkän jäljen ja vihreän kehän. Silloin se kimpoaa nopeampana. Pylväät näyttävät kolme asiaa: männän kaasuun tekemän työn $W$, seinien läpi kaasuun siirtyneen lämpömäärän $Q$ ja sisäenergian muutoksen $\\Delta U$. *Männän nopeus* valitsee hitaan tai nopean työnnön. *Seinät* valitsee eristetyt tai johtavat seinät. *Animaatio* muuttaa vain tahtia, ei lukemia. Malli on täysin toistettava, koska työntö alkutilasta alkaa aina samasta kaasun tilasta.",
       "model": "Luvut ovat mallin arvoja, eivät mittauksia oikeasta pumpusta. Mallin kaasu vastaa $0{,}50\\,\\text{g}$:aa ilmaa. Sen sisäenergia kasvaa $0{,}359\\,\\text{J}$ jokaista kelviniä kohden. Kaasussa on $40$ hiukkasta. Ne liikkuvat tasossa eivätkä törmää toisiinsa. Ilman molekyylit myös pyörivät. Siksi jokaisella hiukkasella on liike-energian lisäksi pyörimisen energiaa, jota kuva ei näytä. Kiinteä seinä palauttaa siihen osuvan hiukkasen satunnaiseen suuntaan. Se jakaa hiukkasen energian uudelleen liikkeen ja pyörimisen kesken. Eristetty seinä ei muuta hiukkasen kokonaisenergiaa. Näin kaasu pysyy tasapainossa. Hidas eristetty työntö vastaa ilman hidasta puristusta ilman lämmönsiirtoa. Sille fysiikka antaa $T_2 = T_1 (V_1/V_2)^{\\gamma - 1} = 293\\,\\text{K} \\cdot (4/3)^{0{,}4} \\approx 329\\,\\text{K}$, kun ilmalle $\\gamma \\approx 1{,}4$. Simulaatio antaa $330\\,\\text{K}$. Pieni ero johtuu lähinnä siitä, että hiukkasia on vain $40$. Toisella satunnaisella alkutilalla työ vaihtelisi noin $11$–$15\\,\\text{J}$. Oikeassa pumpussa mäntä on paljon hitaampi kuin molekyylit (noin $500\\,\\text{m/s}$). Siellä ero syntyy lähinnä siitä, ehtiikö lämpö siirtyä pois.",
       "calc": "Mäntään osuva hiukkanen kimpoaa kuin pallo mailasta. Mäntä liikkuu hiukkasta vastaan nopeudella $u$. Silloin hiukkasen nopeus männän suunnassa kasvaa $2u$:n verran: $v_x' = 2u - v_x$. Männän työ $W$ on hiukkasten näin saama liike-energia. Se on yhtä suuri kuin männän voima kertaa matka. Kun mäntä vedetään ulos, hiukkaset kimpoavat hitaampina ja $W$ on negatiivinen. Eristetyssä sylinterissä $Q = 0$ ja $\\Delta U = W$. Johtava seinä on huoneen lämpötilassa $293\\,\\text{K}$. Seinään osuva hiukkanen kimpoaa pienemmällä energialla, jos kaasu on huonetta lämpimämpää. Se kimpoaa suuremmalla energialla, jos kaasu on kylmempää. Näin siirtynyt energia on lämpömäärä $Q$, ja $\\Delta U = Q + W$. Hidas mäntä liikkuu noin $50$ kertaa hitaammin kuin hiukkaset keskimäärin. Nopea mäntä liikkuu vain noin $3{,}5$ kertaa hitaammin. Nopeaan mäntään hiukkaset osuvat suuremmalla suhteellisella nopeudella, eikä energia ehdi jakautua tasaisesti. Siksi kaasu vastustaa mäntää enemmän, ja samalla matkalla työ on suurempi. Eristetyssä sylinterissä lämpötila nousee täsmälleen työn verran enemmän, $\\Delta T = W/C$. Lämpötila lasketaan hiukkasten kokonaisenergiasta. Paine $p/p_0$ lasketaan lämpötilasta ja tilavuudesta."
     },
@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain männän nopeus muuttuu",
-      "intro": "Testaa ennuste 2. Seinät on lukittu eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt ($V = 75\\,\\%$), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus. Paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta $\\Delta U$, työtä $W$ ja lämpötilan nousua $\\Delta T$. Hidas työntö kestää noin 19 s. *Animaatio: nopea* nopeuttaa katselua. Lukemat eivät muutu.",
+      "intro": "Testaa ennuste 2. Seinät on lukittu eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt ($V = 75\\,\\%$), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus. Paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta $\\Delta U$, työtä $W$ ja lämpötilan nousua $\\Delta T$. Hidas työntö kestää noin $19\\,\\text{s}$. *Animaatio: nopea* nopeuttaa katselua. Lukemat eivät muutu.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -155,7 +155,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain seinät muuttuvat",
-      "intro": "Testaa ennuste 1. Männän nopeus on lukittu hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*). Kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi. Paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes $T$ on noin 293 K. Kirjaa vasta sitten. Seuraa samalla pylväitä. Ylöspäin osoittava pylväs on kaasuun tullutta energiaa. Alaspäin osoittava pylväs on kaasusta lähtenyttä energiaa.",
+      "intro": "Testaa ennuste 1. Männän nopeus on lukittu hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*). Kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi. Paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes $T$ on noin $293\\,\\text{K}$. Kirjaa vasta sitten. Seuraa samalla pylväitä. Ylöspäin osoittava pylväs on kaasuun tullutta energiaa. Alaspäin osoittava pylväs on kaasusta lähtenyttä energiaa.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -193,16 +193,16 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Katso johtavan seinän mittausta ja pylväitä, kun lämpötila on palannut 293 K:iin. Mikä kuvaus sopii pylväisiin?",
+        "prompt": "Katso johtavan seinän mittausta ja pylväitä, kun lämpötila on palannut $293\\,\\text{K}$:iin. Mikä kuvaus sopii pylväisiin?",
         "choices": [
           {
             "text": "$W$ osoittaa ylöspäin, $Q$ on yhtä pitkä alaspäin, ja $\\Delta U$ on lähes nolla.",
             "correct": true,
-            "feedback": "Oikein. Männän työ toi kaasuun noin 12,4 J. Yhtä suuri energia lähti lämpönä seinien läpi, joten $Q \\approx -12{,}4\\,\\text{J}$ ja $\\Delta U = Q + W \\approx 0$. Ylöspäin osoittava pylväs on positiivinen, eli kaasuun tullut energia. Alaspäin osoittava pylväs on negatiivinen, eli kaasusta lähtenyt energia."
+            "feedback": "Oikein. Männän työ toi kaasuun noin $12{,}4\\,\\text{J}$. Yhtä suuri energia lähti lämpönä seinien läpi, joten $Q \\approx -12{,}4\\,\\text{J}$ ja $\\Delta U = Q + W \\approx 0$. Ylöspäin osoittava pylväs on positiivinen, eli kaasuun tullut energia. Alaspäin osoittava pylväs on negatiivinen, eli kaasusta lähtenyt energia."
           },
           {
             "text": "$W$ osoittaa ylöspäin, $Q$ on nolla, ja $\\Delta U$ on yhtä suuri kuin $W$.",
-            "feedback": "Näin kävi eristetyssä sylinterissä. Johtavassa sylinterissä $Q$:n pylväs osoitti alaspäin, noin −12,4 J, koska kuumasta kaasusta siirtyi energiaa seiniin."
+            "feedback": "Näin kävi eristetyssä sylinterissä. Johtavassa sylinterissä $Q$:n pylväs osoitti alaspäin, noin $-12{,}4\\,\\text{J}$, koska kuumasta kaasusta siirtyi energiaa seiniin."
           },
           {
             "text": "$W$ ja $Q$ osoittavat molemmat ylöspäin, ja $\\Delta U$ on niiden summa.",
@@ -267,7 +267,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Sylinterissä olevaan kaasuun siirtyy lämpömäärä 250 J. Kaasu laajenee ja tekee mäntään työn 90 J. Opiskelija laskee: $\\Delta U = Q + W = 250\\,\\text{J} + 90\\,\\text{J} = 340\\,\\text{J}$. Missä on virhe?",
+      "prompt": "Sylinterissä olevaan kaasuun siirtyy lämpömäärä $250\\,\\text{J}$. Kaasu laajenee ja tekee mäntään työn $90\\,\\text{J}$. Opiskelija laskee: $\\Delta U = Q + W = 250\\,\\text{J} + 90\\,\\text{J} = 340\\,\\text{J}$. Missä on virhe?",
       "choices": [
         {
           "text": "$Q$:n pitäisi olla negatiivinen, koska kaasu laajenee.",
@@ -294,7 +294,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Tulimännässä on suljettu sylinteri, jonka pohjalla on taulaa. Mäntä painetaan kämmenellä nopeasti alas. Puristuva ilma kuumenee niin, että taula syttyy. Kämmen työntää mäntää keskimäärin 75 N:n voimalla 8,0 cm:n matkan. Puristuksen aikana ilmasta ehtii siirtyä seiniin lämpömäärä 0,60 J. Kuinka paljon ilman sisäenergia kasvaa? Oleta, että koko kämmenen työ tehdään ilmaan (kitka jätetään pois). Vastaa jouleina.",
+      "prompt": "Tulimännässä on suljettu sylinteri, jonka pohjalla on taulaa. Mäntä painetaan kämmenellä nopeasti alas. Puristuva ilma kuumenee niin, että taula syttyy. Kämmen työntää mäntää keskimäärin 75 N:n voimalla 8,0 cm:n matkan. Puristuksen aikana ilmasta ehtii siirtyä seiniin lämpömäärä $0{,}60\\,\\text{J}$. Kuinka paljon ilman sisäenergia kasvaa? Oleta, että koko kämmenen työ tehdään ilmaan (kitka jätetään pois). Vastaa jouleina.",
       "answer": 5.4,
       "unit": "J",
       "tolerance": 0.02,
@@ -313,7 +313,7 @@
           "feedback": "Matka on muutettava metreiksi ennen kertolaskua: $8{,}0\\,\\text{cm} = 0{,}080\\,\\text{m}$. Silloin $W = 6{,}0\\,\\text{J}$. Joule on newtonmetri, $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$."
         }
       ],
-      "solution": "**Annettu:** systeemi on sylinterin ilma; kämmenen voima $F = 75\\,\\text{N}$ (keskimäärin), matka $s = 8{,}0\\,\\text{cm}$, ilmasta seiniin siirtyvä lämpö $0{,}60\\,\\text{J}$; kitka jätetään pois\n\n**Kysytty:** ilman sisäenergian kasvu $\\Delta U$ jouleina\n\n**Periaate:** Energia säilyy, joten sisäenergian muutos on systeemiin siirtyneiden lämmön ja työn summa. Mäntä on ympäristöä, ja se tekee ilmaan työn $W = Fs$. Kaava pätee, koska voima ja siirtymä ovat samansuuntaiset ja keskimääräinen voima tunnetaan. Lämpöä siirtyy ilmasta pois, joten $Q$ on negatiivinen.\n\n**Kaava:**\n\n$$\\Delta U = Q + W = Q + Fs$$\n\n**Muunnokset:** Matka metreiksi: $s = 8{,}0\\,\\text{cm} = 0{,}080\\,\\text{m}$. Silloin $Fs$ tulee jouleina ($1\\,\\text{N}\\cdot\\text{m} = 1\\,\\text{J}$).\n\n**Sijoitus:** $\\Delta U = -0{,}60\\,\\text{J} + 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = -0{,}60\\,\\text{J} + 6{,}0\\,\\text{J} = 5{,}4\\,\\text{J}$\n\n**Vastaus:** $5{,}4\\,\\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}60\\,\\text{J}$ ja $8{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Puristus on niin nopea, että vain pieni osa työstä ehtii siirtyä pois. Se osa on $0{,}60\\,\\text{J}$ eli $10\\,\\%$ luvusta $6{,}0\\,\\text{J}$. Siksi $\\Delta U$ on lähellä työtä 6,0 J ja positiivinen. Muutama joule riittää kuumentamaan sylinterin pienen ilmamäärän taulan syttymislämpötilaan. Jos lämpöä ei siirtyisi lainkaan, tulos olisi 6,0 J.",
+      "solution": "**Annettu:** systeemi on sylinterin ilma; kämmenen voima $F = 75\\,\\text{N}$ (keskimäärin), matka $s = 8{,}0\\,\\text{cm}$, ilmasta seiniin siirtyvä lämpö $0{,}60\\,\\text{J}$; kitka jätetään pois\n\n**Kysytty:** ilman sisäenergian kasvu $\\Delta U$ jouleina\n\n**Periaate:** Energia säilyy, joten sisäenergian muutos on systeemiin siirtyneiden lämmön ja työn summa. Mäntä on ympäristöä, ja se tekee ilmaan työn $W = Fs$. Kaava pätee, koska voima ja siirtymä ovat samansuuntaiset ja keskimääräinen voima tunnetaan. Lämpöä siirtyy ilmasta pois, joten $Q$ on negatiivinen.\n\n**Kaava:**\n\n$$\\Delta U = Q + W = Q + Fs$$\n\n**Muunnokset:** Matka metreiksi: $s = 8{,}0\\,\\text{cm} = 0{,}080\\,\\text{m}$. Silloin $Fs$ tulee jouleina ($1\\,\\text{N}\\cdot\\text{m} = 1\\,\\text{J}$).\n\n**Sijoitus:** $\\Delta U = -0{,}60\\,\\text{J} + 75\\,\\text{N} \\cdot 0{,}080\\,\\text{m} = -0{,}60\\,\\text{J} + 6{,}0\\,\\text{J} = 5{,}4\\,\\text{J}$\n\n**Vastaus:** $5{,}4\\,\\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}60\\,\\text{J}$ ja $8{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Puristus on niin nopea, että vain pieni osa työstä ehtii siirtyä pois. Se osa on $0{,}60\\,\\text{J}$ eli $10\\,\\%$ luvusta $6{,}0\\,\\text{J}$. Siksi $\\Delta U$ on lähellä työtä $6{,}0\\,\\text{J}$ ja positiivinen. Muutama joule riittää kuumentamaan sylinterin pienen ilmamäärän taulan syttymislämpötilaan. Jos lämpöä ei siirtyisi lainkaan, tulos olisi $6{,}0\\,\\text{J}$.",
       "optional": true
     },
     {
@@ -345,11 +345,37 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämpö ja sisäenergia",
+      "prompt": "Nuotiossa kuumentunut kivi lasketaan kylmään veteen. Mikä väite kuvaa tilannetta oikein?",
+      "choices": [
+        {
+          "text": "Kuumassa kivessä on paljon lämpöä. Lämpö siirtyy kivestä veteen.",
+          "feedback": "Tämä kuulostaa luontevalta. Lämpö ei kuitenkaan ole kappaleen ominaisuus, jota kivessä olisi varastona. Kivessä on sisäenergiaa, ja sillä on korkea lämpötila. Lämpö on energian siirtymistä. Lämpöä on vain siirtymisen aikana."
+        },
+        {
+          "text": "Kiven lämpötila on korkeampi kuin veden lämpötila. Siksi kivestä siirtyy veteen energiaa lämpönä. Kiven sisäenergia pienenee ja veden sisäenergia kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Lämpötilaero saa energian siirtymään kuumemmasta kylmempään. Tätä siirtyvää energiaa sanotaan lämmöksi. Kiven sisäenergia pienenee ja veden sisäenergia kasvaa. Energia säilyy."
+        },
+        {
+          "text": "Kun kivi ja vesi saavuttavat saman lämpötilan, lämpö on kadonnut.",
+          "feedback": "Energia ei katoa. Kiven luovuttama energia on päätynyt veteen. Se on kasvattanut veden sisäenergiaa. Kun lämpötilat ovat tasoittuneet, lämpöä ei enää siirry. Energiaa on silti yhtä paljon kuin alussa."
+        },
+        {
+          "text": "Kivestä siirtyy veteen lämpötilaa, kunnes lämpötilat ovat yhtä suuret.",
+          "feedback": "Lämpötila ei siirry mihinkään. Se mittaa hiukkasten keskimääräistä liike-energiaa. Siirtyvä suure on energia, jota sanotaan lämmöksi. Sen seurauksena kiven lämpötila laskee ja veden lämpötila nousee."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Energiakirjanpito",
-      "prompt": "Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua ja tekee siihen työn 80 J. Kaasusta siirtyy seiniin lämpömäärä 30 J. Vaiheessa 2 kaasuun siirtyy lämpömäärä 50 J. Kaasu laajenee ja tekee mäntään työn 70 J. Kuinka paljon kaasun sisäenergia muuttuu kahden vaiheen aikana yhteensä? Vastaa jouleina.",
+      "title": "3. Energiakirjanpito",
+      "prompt": "Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua ja tekee siihen työn $80\\,\\text{J}$. Kaasusta siirtyy seiniin lämpömäärä $30\\,\\text{J}$. Vaiheessa 2 kaasuun siirtyy lämpömäärä $50\\,\\text{J}$. Kaasu laajenee ja tekee mäntään työn $70\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu kahden vaiheen aikana yhteensä? Vastaa jouleina.",
       "answer": 30,
       "unit": "J",
       "tolerance": 0.02,
@@ -375,7 +401,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee enemmän nopeassa pumppauksessa. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä $\\Delta U = Q + W$.",
       "criteria": [
         "Sanon, että työ siirtää ilmaan energiaa ja kasvattaa sen sisäenergiaa. Se näkyy lämpötilan nousuna.",
@@ -390,7 +416,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

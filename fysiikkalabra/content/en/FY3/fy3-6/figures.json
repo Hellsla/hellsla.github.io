@@ -17,5 +17,6 @@
  "jälkeen": "after",
  " kaikkialla": " everywhere",
  "luovutettu": "given out",
- "vastaanotettu": "received"
+ "vastaanotettu": "received",
+ "Kuvaaja mittakaavassa: metallikappaleen lämpötila T celsiusasteina ajan t funktiona sekunteina, kun kappaletta lämmitetään tasaisella teholla. Lämpötila nousee suoraviivaisesti pisteestä (0 s; 20 °C) pisteeseen (180 s; 60 °C). Ruudukon väli on 20 s ja 10 °C.": "Graph to scale: the temperature T of a metal object in degrees Celsius as a function of time t in seconds, when the object is heated at a constant power. The temperature rises in a straight line from the point (0 s; 20 °C) to the point (180 s; 60 °C). The grid spacing is 20 s and 10 °C."
 }

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6c08e750921db941
+CONTENT-HASH: 1b59c496bdf29ca7
 
 ## Blocking
 (none left; see Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 6c08e750921db941
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md (all 12 exercises, step labels, numbers, units, rounding statements) against the Finnish.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json, solutions.md (unit markup, new figure task fy3-12-L1-05, heat pump wording) against the new Finnish.

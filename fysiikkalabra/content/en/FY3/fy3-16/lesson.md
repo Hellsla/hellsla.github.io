@@ -55,7 +55,7 @@
 ## Key idea
 Everyday heat phenomena, such as heating a sauna, a cool bag staying cold and cooling an engine, are solved with the same principle: energy bookkeeping. Energy is conserved, so every joule needs a source and a destination. The source is a power, which means energy per second, or another object that gives out heat. There are two destinations. The energy raises the temperature, $Q = cm\Delta T$, or it changes the state of matter, $Q = sm$ or $Q = rm$. During a change of state the temperature does not change. When ice melts or water boils, all the energy goes into the change, and the temperature rises only after the change is over.
 
-A power $P = UA\Delta T$ flows into the cool bag through its walls, even though the insulation is good. As long as there is ice left, all this energy melts ice and the inside stays at 0 °C. Melting takes a lot of energy: melting one kilogram of ice takes 334 kJ, the same as heating the same amount of water by 80 kelvins. When the ice has melted, the same power starts to raise the temperature of the water, and the drinks warm up. This is why it is worth putting ice in the bag and not just cold water.
+A power $P = UA\Delta T$ flows into the cool bag through its walls, even though the insulation is good. As long as there is ice left, all this energy melts ice and the inside stays at $0\,{}^\circ\text{C}$. Melting takes a lot of energy: melting one kilogram of ice takes $334\,\text{kJ}$, the same as heating the same amount of water by 80 kelvins. When the ice has melted, the same power starts to raise the temperature of the water, and the drinks warm up. This is why it is worth putting ice in the bag and not just cold water.
 
 <svg viewBox="0 0 600 340" role="img" aria-label="Illustration of a cool bag and of energy needed. On the left is a cross-section of the cool bag: it is 28 °C outside, inside there is an ice pack and drink bottles at 0 °C, and a heat power P flows in through the walls, shown by two arrows of equal size. On the right are bars at the same scale for a mass of one kilogram: melting the ice takes 334 kJ, heating water by 10 K takes 42 kJ and by 80 K takes 335 kJ, so melting takes as much energy as warming by 80 kelvins." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316a-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy316a-heatv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy316a-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -88,11 +88,11 @@ A power $P = UA\Delta T$ flows into the cool bag through its walls, even though 
   <line x1="392" y1="116.5" x2="546" y2="116.5" stroke="#6b7480" stroke-width="2" stroke-dasharray="5 5"/>
 </svg>
 
-A sauna stove heats stones with a specific heat capacity of about 800 J/(kg·K). When you throw water on the hot stones, the water warms up and evaporates, and the energy is taken from the stones. Most of it goes into vaporisation: 0.20 kg of water warms from 20 °C to 100 °C with 67 kJ of energy, but vaporising it takes 452 kJ. This is why the stones cool down at once and the stove has to heat them again. When the steam condenses on your skin, the same energy is released again, and this is why the steam feels hot.
+A sauna stove heats stones with a specific heat capacity of about $800\,\text{J/(kg}\cdot\text{K)}$. When you throw water on the hot stones, the water warms up and evaporates, and the energy is taken from the stones. Most of it goes into vaporisation: $0.20\,\text{kg}$ of water warms from $20\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ with $67\,\text{kJ}$ of energy, but vaporising it takes $452\,\text{kJ}$. This is why the stones cool down at once and the stove has to heat them again. When the steam condenses on your skin, the same energy is released again, and this is why the steam feels hot.
 
-A car's coolant carries the waste heat of the engine to the radiator. Power is energy per second, so the power transferred depends on the mass of liquid carried per second and on its rise in temperature in the engine. With the same power, a larger mass flow means a smaller rise in temperature. Water has a large specific heat capacity, 4190 J/(kg·K), but it freezes in frost and boils easily, so glycol is mixed with it. The mixture withstands frost and heat, but its specific heat capacity is lower, about 3500 J/(kg·K).
+A car's coolant carries the waste heat of the engine to the radiator. Power is energy per second, so the power transferred depends on the mass of liquid carried per second and on its rise in temperature in the engine. With the same power, a larger mass flow means a smaller rise in temperature. Water has a large specific heat capacity, $4190\,\text{J/(kg}\cdot\text{K)}$, but it freezes in frost and boils easily, so glycol is mixed with it. The mixture withstands frost and heat, but its specific heat capacity is lower, about $3500\,\text{J/(kg}\cdot\text{K)}$.
 
-## Formula: Thermal energy balance
+## Formula: Energy balance
 When energy is transferred into a system with power $P$ during a time $t$, the energy $Pt$ is shared between the heating of the parts of the system and the changes of state:
 ```latex
 \begin{aligned}
@@ -108,11 +108,11 @@ The power conducted through a building part, such as the wall of a cool bag, is
 ```latex
 P = U A \Delta T
 ```
-where $U$ is the U-value (W/(m²·K)), $A$ is the total area of the walls (m²) and $\Delta T$ is the difference between the outside and inside temperatures (K). As long as there is ice in the bag, the inside temperature is 0 °C and $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice, $UA\Delta T\,t = sm$, and the time the ice lasts is
+where $U$ is the U-value (W/(m²·K)), $A$ is the total area of the walls (m²) and $\Delta T$ is the difference between the outside and inside temperatures (K). As long as there is ice in the bag, the inside temperature is $0\,{}^\circ\text{C}$ and $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice, $UA\Delta T\,t = sm$, and the time the ice lasts is
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```
-The graph shows an example of the inside temperature of a cool bag calculated with the model. The temperature stays at 0 °C for a time $t_0$, until the ice has melted. After that the water warms up towards the outside temperature. The rise is steep at first and slows down, because the power $UA\Delta T$ becomes smaller as the temperature difference becomes smaller. This is the bag of the example; the bag in the Investigate step has a smaller $UA$.
+The graph shows an example of the inside temperature of a cool bag calculated with the model. The temperature stays at $0\,{}^\circ\text{C}$ for a time $t_0$, until the ice has melted. After that the water warms up towards the outside temperature. The rise is steep at first and slows down, because the power $UA\Delta T$ becomes smaller as the temperature difference becomes smaller. This is the bag of the example; the bag in the Investigate step has a smaller $UA$.
 
 <svg viewBox="0 0 600 372" role="img" aria-label="Graph of the inside temperature of a cool bag as a function of time, according to the model. The temperature stays at 0 °C for about 2.4 hours while the ice melts, and then starts to rise towards the outside temperature of 28 °C. The rise is steep at first and slows down as the temperature difference becomes smaller. The axes are to scale." style="max-width:100%;font-size:24px">
   <line x1="84" y1="300.0" x2="516" y2="300.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -157,7 +157,7 @@ P = c\,\frac{m}{t}\,\Delta T
 ```
 where $m/t$ is the mass of liquid carried per second (kg/s) and $\Delta T = T_2 - T_1$ is the rise in the temperature of the liquid in the engine (K). In steady running the radiator gives the same power $P$ out to the air, so the temperatures $T_1$ and $T_2$ of the liquid stay constant.
 
-<svg viewBox="0 0 600 340" role="img" aria-label="Schematic of the cooling circuit of an engine. The waste heat produced inside the engine is transferred to the liquid as a heat power P. The liquid travels along the upper pipe to the radiator at temperature T2 and returns along the lower pipe through the pump at temperature T1, and the radiator gives the same power P out to the air. The mass flow of the liquid is m/t. The picture is a diagram and not to scale." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 340" role="img" aria-label="Schematic of the cooling circuit of an engine. Waste heat from the engine is transferred to the liquid as a heat power P. The liquid travels along the upper pipe to the radiator at temperature T2 and returns along the lower pipe through the pump at temperature T1, and the radiator gives the same power P out to the air. The mass flow of the liquid is m/t. The picture is a diagram and not to scale." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316c-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <path d="M190,130 H408" stroke="#1f2933" stroke-width="20" fill="none"/>
   <path d="M190,130 H408" stroke="#c92a2a" stroke-width="13" fill="none"/>
@@ -196,11 +196,11 @@ The problem goes like this:
 1. Define the system and decide where the energy comes from and where it goes.
 2. Write the energy of the source: $Pt$ or $cm\Delta T$ of the substance that gives out heat.
 3. Go through the stages in order of temperature: warming up to the melting point, melting, warming up. During melting the temperature is constant.
-4. Check whether the energy is enough: compare the energy available with what the next change of state needs. If it is not enough, the change stays unfinished and the temperature is the melting point.
+4. Check whether the energy is enough: compare the energy available with what the next change of state needs. If it is not enough, the change stays unfinished and the temperature is the melting point. If it is just enough, the change finishes and the temperature is exactly the melting point.
 5. Check the units and the order of magnitude.
 
 ## Worked example
-On a trip, a cool bag contains a 1.0 kg ice pack at 0 °C and 0.50 kg of drinks in bottles at 20 °C. The total area of the walls of the bag is 0.80 m² and the U-value is 1.5 W/(m²·K), and it is 28 °C outside. Assume that the drinks cool to 0 °C at once, melting ice, and that the inside stays at 0 °C until the ice has melted. How long does the ice last? The specific heat capacity of the drinks is the value for water.
+On a trip, a cool bag contains a $1.0\,\text{kg}$ ice pack at $0\,{}^\circ\text{C}$ and $0.50\,\text{kg}$ of drinks in bottles at $20\,{}^\circ\text{C}$. The total area of the walls of the bag is 0.80 m² and the U-value is $1.5\,\text{W/(m}^2\text{}\cdot\text{K)}$, and it is $28\,{}^\circ\text{C}$ outside. Assume that the drinks cool to $0\,{}^\circ\text{C}$ at once, melting ice, and that the inside stays at $0\,{}^\circ\text{C}$ until the ice has melted. How long does the ice last? The specific heat capacity of the drinks is the value for water.
 
 <!-- vaihe -->
 
@@ -254,12 +254,12 @@ The ice lasts about $2.4\,\text{h}$. The result is given with two significant fi
 
 <!-- vaihe -->
 
-**Reasonableness.** Without the warm drinks the ice would last $\tfrac{334\,000\,\text{J}}{33.6\,\text{W}} \approx 9940\,\text{s} \approx 2.8\,\text{h}$, so the result is moderately shorter. Cooling the drinks melts a share $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0.13 = 13\,\%$ of the ice, and the time becomes shorter by the same share: $2.8\,\text{h} \cdot 0.87 \approx 2.4\,\text{h}$. When the ice has melted, the bag contains 1.5 kg of water with a heat capacity of $4190 \cdot 1.5 = 6285\,\text{J/K}$. At first the power raises its temperature by $\tfrac{33.6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, as the graph shows.
+**Reasonableness.** Without the warm drinks the ice would last $\tfrac{334\,000\,\text{J}}{33.6\,\text{W}} \approx 9940\,\text{s} \approx 2.8\,\text{h}$, so the result is moderately shorter. Cooling the drinks melts a share $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0.13 = 13\,\%$ of the ice, and the time becomes shorter by the same share: $2.8\,\text{h} \cdot 0.87 \approx 2.4\,\text{h}$. When the ice has melted, the bag contains $1.5\,\text{kg}$ of water with a heat capacity of $4190 \cdot 1.5 = 6285\,\text{J/K}$. At first the power raises its temperature by $\tfrac{33.6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, as the graph shows.
 
 ## Common misconception
-Many people think that ice produces cold that flows into the drinks. Cold does not flow: energy always moves from the warmer object to the colder one, and ice cools things because it takes in energy. Another mistake is to assume that the temperature rises steadily all the time. During melting the temperature stays constant, even though energy keeps coming in.
+Many people think that ice produces cold that flows into the drinks. Cold does not flow: because of the temperature difference, energy moves on net from the warmer object to the colder one, and ice cools things because it takes in energy. Another mistake is to assume that the temperature rises steadily all the time. During melting the temperature stays constant, even though energy keeps coming in.
 
-A third mistake in a mixing problem is to assume that the ice always melts completely and that the end result is an average. When 1.0 kg of ice and 1.5 kg of water at 20 °C are mixed, the water can give out at most
+A third mistake in a mixing problem is to assume that the ice always melts completely and that the end result is an average. When $1.0\,\text{kg}$ of ice and $1.5\,\text{kg}$ of water at 20 °C are mixed, the water can give out at most
 ```latex
 \begin{aligned}
 Q_\text{water} &= c\,m\,\Delta T \\
@@ -267,11 +267,11 @@ Q_\text{water} &= c\,m\,\Delta T \\
 &\approx 126\,\text{kJ}
 \end{aligned}
 ```
-but melting all the ice takes 334 kJ. The ice melts only partly, and the temperature of the mixture is 0 °C.
+but melting all the ice takes $334\,\text{kJ}$. The ice melts only partly, and the temperature of the mixture is $0\,{}^\circ\text{C}$.
 
 ## Summary
 - An everyday heat phenomenon is solved with energy bookkeeping: the incoming energy ($Pt$ or the quantity of heat given out by another object) is used for heating, $Q = cm\Delta T$, or for a change of state, $Q = sm$ or $Q = rm$.
 - During a change of state the temperature stays constant. Melting ice takes as much energy as heating the same amount of water by 80 kelvins.
 - The power coming through the wall of a cool bag is $P = UA\Delta T$, and the time the ice lasts is $t = sm/(UA\Delta T)$.
 - The power transferred by coolant is $P = c\,(m/t)\,\Delta T$. A lower specific heat capacity needs a larger mass flow to transfer the same power.
-- In a mixing problem, first check whether the energy given out is enough to melt all the ice. If it is not, the temperature is 0 °C.
+- In a mixing problem, first check whether the energy given out is enough to melt all the ice. When the ice is at $0\,{}^\circ\text{C}$ at the start and the energy is not enough, the temperature is $0\,{}^\circ\text{C}$.

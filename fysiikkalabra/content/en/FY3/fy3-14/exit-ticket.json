@@ -1,14 +1,10 @@
 [
   {
-    "q": "How much heat is needed to melt 0.20 kg of ice at 0 °C (s = 334 kJ/kg)?",
+    "q": "How much heat is needed to melt $0.20\\,\\text{kg}$ of ice at $0\\,{}^\\circ\\text{C}$ ($s = 334\\,\\text{kJ/kg}$)?",
     "a": "$Q = sm = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 0.20\\,\\text{kg} = 66.8\\,\\text{kJ} \\approx 67\\,\\text{kJ}$. The temperature does not change during melting."
   },
   {
-    "q": "An insulated container holds water and ice in thermal equilibrium. What is the temperature, and how do you know without calculating?",
-    "a": "0 °C. Ice and water are present together only at the melting point: if the temperature were higher, the ice would melt, and if it were lower, the water would freeze."
-  },
-  {
-    "q": "0.10 kg of water (10 °C) and 0.10 kg of ice (0 °C) are mixed. Does all the ice melt? Justify with numbers.",
-    "a": "No. As it cools to 0 °C the water can give out $Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0.10\\,\\text{kg} \\cdot 10\\,\\text{K} \\approx 4.2\\,\\text{kJ}$, but melting all the ice needs $sm = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 0.10\\,\\text{kg} = 33.4\\,\\text{kJ}$. Only about 12.5 g melts, and the temperature is 0 °C."
+    "q": "Mix $0.10\\,\\text{kg}$ of water ($10\\,{}^\\circ\\text{C}$) and $0.10\\,\\text{kg}$ of ice ($0\\,{}^\\circ\\text{C}$). Does all the ice melt? Justify with numbers.",
+    "a": "No. As it cools to $0\\,{}^\\circ\\text{C}$ the water can give out $Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0.10\\,\\text{kg} \\cdot 10\\,\\text{K} \\approx 4.2\\,\\text{kJ}$, but melting all the ice needs $sm = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 0.10\\,\\text{kg} = 33.4\\,\\text{kJ}$. Only about $12.5\\,\\text{g}$ melts, and the temperature is $0\\,{}^\\circ\\text{C}$."
   }
 ]

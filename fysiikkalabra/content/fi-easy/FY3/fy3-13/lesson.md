@@ -137,7 +137,7 @@ Suljettu jäykkä astia ei muuta muotoaan. Siksi kaasun tilavuus ja ainemäärä
 <line x1="316" y1="270" x2="254" y2="270" stroke="#1f2933" stroke-width="2"/>
 </svg>
 
-Piirrä mittaustulokset kuvaajaan. Pisteet asettuvat lähes suoralle: paine kasvaa lähes yhtä paljon jokaista celsiusastetta kohti. Pisteet eivät kuitenkaan ole täsmälleen suoralla, koska jokainen lukema on epätarkka. Mittausepävarmuus (luvun epätarkkuus) kertoo, kuinka paljon lukema voi enintään poiketa todellisesta arvosta. Tässä painemittarin epävarmuus on $\pm 1\,\text{kPa}$. Piirrä suora siksi pisteiden joukon keskeltä. Suoran pitää kulkea epävarmuusvälien kautta. Sen ei tarvitse kulkea jokaisen pisteen kautta.
+Piirrä mittaustulokset kuvaajaan. Pisteet asettuvat lähes suoralle: paine kasvaa lähes yhtä paljon jokaista celsiusastetta kohti. Oikeissa mittauksissa pisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Mittausepävarmuus kertoo, kuinka epävarma mittaustulos on. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta. Tässä paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$. Valmistajan ilmoittama virheraja mittarille on eri asia. Se on laitteen ominaisuus. Mittauksen epävarmuuteen vaikuttavat lisäksi esimerkiksi lukeminen ja hauteen lämpötilan tasaantuminen. Piirrä suora siksi pisteiden joukon keskeltä. Suoran pitää kulkea epävarmuusvälien kautta. Sen ei tarvitse kulkea jokaisen pisteen kautta.
 
 Jatka suoraa mittausalueen ulkopuolelle kohti kylmempää, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi (suoran jatkamiseksi): tulos saadaan alueelta, jolla ei ole mitattu mitään. Mikromallin mukaan paine syntyy hiukkasten törmäyksistä seinään. Ideaalikaasun mallissa paine olisi nolla siinä lämpötilassa, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Lämpötila, jossa suora osuu nollapaineeseen, on kokeen antama arvio absoluuttiselle nollapisteelle. Se on vain arvio. Todellinen kaasu nesteytyy jo ennen sitä, ja jatke on malli.
 
@@ -166,7 +166,7 @@ Arvioi epävarmuus piirtämällä kaksi ääriviivaa. Molempien pitää vielä k
 ```latex
 \Delta\theta_0 = \frac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}
 ```
-Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$.
+Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$. Väli on arvio, ei taattu raja. Se ottaa huomioon pisteiden epävarmuuden. Se ei ota huomioon sitä, pysyykö riippuvuus suorana mittausalueen ulkopuolella.
 
 <svg viewBox="0 0 600 368" role="img" aria-label="Kaasun paine lämpötilan funktiona koko lämpötila-alueella −300 °C … 100 °C. Mittauspisteet ovat vain alueella 10–100 °C. Paras suora ja sen katkoviivajatke ekstrapoloivat nollapaineeseen. Se on lämpötilassa θ₀ ≈ −276 °C. Jyrkin ja loivin ääriviiva osuvat p = 0 -akselille lämpötiloissa noin −259 °C ja −295 °C. Siitä saadaan epävarmuusväli. Kuva on mittakaavassa. Virhejanat (±1 kPa) ovat pisteiden kokoisia." style="max-width:100%;font-size:24px">
 <line x1="78.0" y1="270.0" x2="78.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -209,7 +209,7 @@ Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta
 Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittausalueella, mutta eroavat ekstrapoloitaessa. Siksi epävarmuus kasvaa, kun suoraa jatketaan. Epävarmuutta pienentävät tarkempi painemittari, useampi mittauspiste ja leveämpi mittausalue. Kun tulos tunnetaan, kelvinasteikon nollapiste asetetaan siihen. Lämpötila kelvineinä on $T = \theta - \theta_0$.
 
 ## Esimerkki
-Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa. Arvot ovat sellaisia kuin kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista. Niihin on lisätty hajontaa, joka vastaa mittausepätarkkuutta. Ne eivät ole oikean mittauksen tuloksia. Painemittarin epävarmuus on $\pm 1\,\text{kPa}$.
+Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa. Arvot ovat sellaisia kuin kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista. Niihin on lisätty hajontaa, joka vastaa mittausepätarkkuutta. Ne eivät ole oikean mittauksen tuloksia. Paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$.
 
 | θ (°C) | p (kPa) |
 | --- | --- |
@@ -221,7 +221,7 @@ Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa
 | 85 | 132 |
 | 100 | 138 |
 
-Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarmuus. Pisteisiin sovitettu paras suora on kuvassa yllä. Sen jyrkin ja loivin vaihtoehto kulkevat vielä kaikkien epävarmuusvälien kautta. Ne ovat $p = 100{,}1\,\text{kPa} + 0{,}387\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ ja $p = 102{,}3\,\text{kPa} + 0{,}347\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$. Jyrkin koskettaa epävarmuusjanojen päitä lämpötiloissa 10 °C ja 85 °C. Loivin koskettaa niitä lämpötiloissa 25 °C ja 100 °C.
+Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarmuus. Pisteisiin sovitettu paras suora on kuvassa yllä. Sen jyrkin ja loivin vaihtoehto kulkevat vielä kaikkien epävarmuusvälien kautta. Ne ovat $p = 100{,}1\,\text{kPa} + 0{,}387\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ ja $p = 102{,}3\,\text{kPa} + 0{,}347\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$. Jyrkin koskettaa epävarmuusjanojen päitä lämpötiloissa $10\,{}^\circ\text{C}$ ja $85\,{}^\circ\text{C}$. Loivin koskettaa niitä lämpötiloissa $25\,{}^\circ\text{C}$ ja $100\,{}^\circ\text{C}$.
 
 <!-- vaihe -->
 
@@ -229,7 +229,7 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 
 <!-- vaihe -->
 
-**Periaate.** Pullo on suljettu ja jäykkä. Siksi kaasun ainemäärä ja tilavuus pysyvät vakioina, ja paine on mittausalueella lämpötilan lineaarinen funktio $p = p_0 + k\theta$. Siksi suoraa voi jatkaa kohtaan, jossa $p = 0$. Epävarmuus saadaan ääriviivoista. Ne kulkevat kaikkien epävarmuusjanojen kautta, joten ne sopivat aineistoon yhtä hyvin kuin paras suora. Niiden nollakohdat rajaavat välin, jolle todellinen nollapiste kuuluu.
+**Periaate.** Pullo on suljettu ja jäykkä. Siksi kaasun ainemäärä ja tilavuus pysyvät vakioina, ja paine on mittausalueella lämpötilan lineaarinen funktio $p = p_0 + k\theta$. Siksi suoraa voi jatkaa kohtaan, jossa $p = 0$. Epävarmuus saadaan ääriviivoista. Ne kulkevat kaikkien epävarmuusjanojen kautta, joten ne sopivat aineistoon yhtä hyvin kuin paras suora. Niiden nollakohdat rajaavat välin, jolla todellinen nollapiste todennäköisesti on.
 
 <!-- vaihe -->
 
@@ -271,10 +271,10 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 **Järkevyys.** Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu välille $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$. Tulos sopii siis yhteen sen kanssa. Poikkeama on noin $3\,{}^\circ\text{C}$ ja epävarmuus $18\,{}^\circ\text{C}$. Arvio päässä: paine kasvaa noin $0{,}37\,\text{kPa}$ astetta kohti. Siksi $101\,\text{kPa}$ loppuu noin $101/0{,}37 \approx 270$ asteessa. Epävarmuus on suuri, koska mittaus tehtiin yli $270\,{}^\circ\text{C}$:n päässä nollapaineesta. Lisäksi pisteiden epävarmuus $1\,\text{kPa}$ on noin yksi prosentti lukemasta.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että nollapiste on mitattu, koska se on kuvaajassa. Mitattuja ovat vain seitsemän pistettä välillä 10–100 °C. Loppu on suoran jatketta. Jatke on oletus siitä, että paine käyttäytyy samoin kylmemmässä. Toinen virhe on pitää tulosta epäonnistuneena, jos se ei ole täsmälleen $-273{,}15\,{}^\circ\text{C}$. Tulos $-276\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta noin 3 astetta, kun epävarmuus on 18 astetta. Se sopii siis yhteen arvon kanssa. Kolmas virhe on vetää mutkitteleva viiva kaikkien pisteiden kautta. Pisteiden vaihtelu ylös ja alas on mittausepävarmuutta. Vedä suora pisteiden joukon keskeltä.
+Moni ajattelee, että nollapiste on mitattu, koska se on kuvaajassa. Mitattuja ovat vain seitsemän pistettä välillä 10–$100\,{}^\circ\text{C}$. Loppu on suoran jatketta. Jatke on oletus siitä, että paine käyttäytyy samoin kylmemmässä. Toinen virhe on pitää tulosta epäonnistuneena, jos se ei ole täsmälleen $-273{,}15\,{}^\circ\text{C}$. Tulos $-276\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta noin 3 astetta, kun epävarmuus on 18 astetta. Se sopii siis yhteen arvon kanssa. Kolmas virhe on vetää mutkitteleva viiva kaikkien pisteiden kautta. Pisteiden vaihtelu ylös ja alas johtuu mittausepävarmuudesta. Vedä suora pisteiden joukon keskeltä.
 
 ## Tiivistelmä
-- Suljetussa astiassa kaasun paine on mittausalueella lineaarinen funktio lämpötilasta: $p = p_0 + k\theta$. Piirrä $p$ lämpötilan funktiona ja vedä suora pisteiden joukon keskeltä. Silloin mittausaineisto muuttuu suoraksi.
-- Mittausepävarmuus kertoo, kuinka paljon lukema voi poiketa todellisesta arvosta. Suoran ei tarvitse osua jokaiseen pisteeseen. Sen pitää kulkea epävarmuusvälien kautta.
+- Suljetussa jäykässä astiassa harvan kaasun paine on mittausalueella lineaarinen funktio lämpötilasta: $p = p_0 + k\theta$. Piirrä $p$ lämpötilan funktiona ja vedä suora pisteiden joukon keskeltä. Silloin mittausaineisto muuttuu suoraksi.
+- Mittausepävarmuus kertoo, kuinka epävarma mittaustulos on. Se ei yleensä ole ehdoton suurin mahdollinen poikkeama oikeasta arvosta. Suoran ei tarvitse osua jokaiseen pisteeseen. Sen pitää kulkea epävarmuusvälien kautta.
 - Ekstrapolointi jatkaa suoraa mittausalueen ulkopuolelle: nollapaineen lämpötila on $\theta_0 = -p_0/k$.
 - Epävarmuus arvioidaan ääriviivoista: $\Delta\theta_0 = (\theta_{0,\text{max}} - \theta_{0,\text{min}})/2$. Tulos $\theta_0 \pm \Delta\theta_0$ sopii yhteen hyväksytyn arvon $-273{,}15\,{}^\circ\text{C}$ kanssa, jos arvo kuuluu väliin.

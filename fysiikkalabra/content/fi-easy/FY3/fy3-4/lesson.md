@@ -95,7 +95,7 @@ Nesteessä syvyydessä $h$ paine on
 ```latex
 p = p_0 + \rho g h
 ```
-Tässä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa). Lisäksi $\rho$ on nesteen tiheys (kg/m³), $g$ = 9,81 m/s² ja $h$ on syvyys pinnasta (m). Termi $\rho g h$ on hydrostaattinen paine eli ylipaine $\Delta p = p - p_0$. Ylipaine kertoo, kuinka paljon paine on suurempi kuin paine pinnalla. Kuvaaja $(h, p)$ on suora. Suoran kulmakerroin on $\rho g$ ja vakiotermi on $p_0$, kuten FY1:n lineaarisessa mallissa $y = kx + b$. Vedelle $\rho$ = 1000 kg/m³. Silloin paine kasvaa 9,81 kPa jokaista metriä kohti.
+Tässä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa). Lisäksi $\rho$ on nesteen tiheys (kg/m³), $g$ = $9{,}81\,\text{m/s}^2$ ja $h$ on syvyys pinnasta (m). Termi $\rho g h$ on hydrostaattinen paine eli ylipaine $\Delta p = p - p_0$. Ylipaine kertoo, kuinka paljon paine on suurempi kuin paine pinnalla. Kuvaaja $(h, p)$ on suora. Suoran kulmakerroin on $\rho g$ ja vakiotermi on $p_0$, kuten FY1:n lineaarisessa mallissa $y = kx + b$. Vedelle $\rho$ = $1000\,\text{kg/m}^3$. Silloin paine kasvaa 9,81 kPa jokaista metriä kohti.
 
 <svg data-fig="pressure-depth" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: veden paine p kilopascaleina syvyyden h funktiona, kun h on 0–10 m. Paine on nouseva suora. Pinnalla paine on ilmanpaine 101 kPa. 10 metrin syvyydessä paine on noin 199 kPa. Suoran ja katkoviivan väli on hydrostaattinen paine ρgh." style="max-width:100%;font-size:24px">
   <line x1="173" y1="285" x2="173" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -143,7 +143,7 @@ Tässä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa). Lisäksi $\rh
 </svg>
 
 ## Esimerkki
-Sukeltaja on järvessä 12,0 m:n syvyydessä. Hän on vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys on 1000 kg/m³. Huoneessa on ilmaa normaalipaineessa. Mikä on paine sukeltajan ympärillä? Kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on 150 cm²?
+Sukeltaja on järvessä $12{,}0\,\text{m}$:n syvyydessä. Hän on vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys on $1000\,\text{kg/m}^3$. Huoneessa on ilmaa normaalipaineessa. Mikä on paine sukeltajan ympärillä? Kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on 150 cm²?
 
 <!-- vaihe -->
 
@@ -194,7 +194,7 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Järkevyys.** Kokonaispaine on noin 2,2 kertaa ilmanpaine. Tämä sopii siihen, että 10 metriä vettä lisää noin yhden ilmanpaineen ja 12 metriä hieman enemmän. Arvio: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. Voima vastaa noin 180 kg:n massan painoa, vaikka ikkuna on pieni. Paine ei litistä sukeltajan kehoa. Vedessä sama paine vaikuttaa kehoon joka puolelta, ja kehon nesteet välittävät sen myös sisälle. Vain kehon ilmatilojen, kuten korvien, paine on tasattava.
+**Järkevyys.** Kokonaispaine on noin 2,2 kertaa ilmanpaine. Tämä sopii siihen, että 10 metriä vettä lisää noin yhden ilmanpaineen ja 12 metriä hieman enemmän. Arvio: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. Voima vastaa noin $180\,\text{kg}$:n massan painoa, vaikka ikkuna on pieni. Paine ei litistä sukeltajan kehoa. Vedessä sama paine vaikuttaa kehoon joka puolelta, ja kehon nesteet välittävät sen myös sisälle. Vain kehon ilmatilojen, kuten korvien, paine on tasattava.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astiassa on. Näin ei ole. Otetaan kapea putki ja leveä allas, joissa vesi ulottuu samaan korkeuteen. Pohjan paine on sama, vaikka altaassa on tuhatkertainen määrä vettä. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta.

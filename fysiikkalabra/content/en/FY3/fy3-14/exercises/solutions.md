@@ -19,14 +19,15 @@
 **Reasonableness:** A quarter of a kilogram of water gives out a quarter of $334\,\text{kJ}$, that is about $334\,\text{kJ} / 4 \approx 84\,\text{kJ}$. The same mass of ice would need exactly the same quantity of heat when melting, so the freezer must remove $84\,\text{kJ}$ even though the temperature of the water does not fall.
 
 ## fy3-14-L1-03
-**Given:** water, $m = 0.30\,\text{kg}$, $T_\text{initial} = 20\,{}^\circ\text{C}$, $T_\text{final} = 0\,{}^\circ\text{C}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Find:** the quantity of heat $Q$ given out by the water, in kilojoules
-**Principle:** The water cools to $0\,{}^\circ\text{C}$ but does not freeze yet, so the state does not change and the latent heat is not needed. The quantity of heat given out is then proportional to the mass and to the fall in temperature.
-**Formula:** $Q = c m \Delta T$, where $\Delta T = T_\text{initial} - T_\text{final}$, so the quantity to find is directly $Q = c m \Delta T$
-**Conversions:** The fall in temperature is the same in degrees Celsius and in kelvins: $\Delta T = 20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.30\,\text{kg} \cdot 20\,\text{K} = 25\,140\,\text{J} = 25.14\,\text{kJ}$
-**Answer:** $25\,\text{kJ}$, two significant figures, because the mass $0.30\,\text{kg}$ and the temperature change $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$ have two figures (the table value $4190$ has three).
-**Reasonableness:** Estimate with round numbers: $4\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.3\,\text{kg} \cdot 20\,\text{K} = 24\,\text{kJ}$. The same heat would be enough to melt only about $25\,\text{kJ} / 334\,\tfrac{\text{kJ}}{\text{kg}} \approx 75\,\text{g}$ of ice, so melting needs much more energy than cooling the same water by $20\,\text{K}$.
+**Given:** from the graph, the heat given out by the water as it cools to $0\,{}^\circ\text{C}$ is $Q_\text{w} = 25\,\text{kJ}$, the heat needed to warm the ice to $0\,{}^\circ\text{C}$ is $c_\text{i} m_\text{i} \Delta T_\text{i} = 5\,\text{kJ}$ and the heat needed to melt all the ice is $s m_\text{i} = 60\,\text{kJ}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** the mass $m_\text{melt}$ of ice that melts, in grams
+**Principle:** Energy is conserved in the insulated container: the heat given out by the water first warms the ice to $0\,{}^\circ\text{C}$, and the rest melts ice. Because $5\,\text{kJ} \le 25\,\text{kJ} < 5\,\text{kJ} + 60\,\text{kJ}$, the water is enough to warm the ice but not to melt all of it. Some ice is left, and the final temperature is $0\,{}^\circ\text{C}$.
+**Reading the graph:** The grid spacing is $5\,\text{kJ}$. The top bar ends at the line halfway between the numbers $20$ and $30$, that is at $25\,\text{kJ}$, the middle one at the first line, that is at $5\,\text{kJ}$, and the bottom one at the number $60$.
+**Formula:** $m_\text{melt} = \dfrac{Q_\text{w} - c_\text{i} m_\text{i} \Delta T_\text{i}}{s}$
+**Conversions:** The quantities of heat and the latent heat are in kilojoules, so kJ cancels. Finally $1\,\text{kg} = 1000\,\text{g}$.
+**Substitution:** $m_\text{melt} = \dfrac{25\,\text{kJ} - 5\,\text{kJ}}{334\,\tfrac{\text{kJ}}{\text{kg}}} = \dfrac{20\,\text{kJ}}{334\,\tfrac{\text{kJ}}{\text{kg}}} = 0.05988\,\text{kg} = 59.88\,\text{g}$
+**Answer:** $60\,\text{g}$, two significant figures, because the difference $25\,\text{kJ} - 5\,\text{kJ} = 20\,\text{kJ}$ read from the graph is known to two figures.
+**Reasonableness:** $20\,\text{kJ}$ is left for melting, which is a third of the $60\,\text{kJ}$ that melting all the ice would need, so about a third of the ice melts. Energy balance: the water gives out $25\,\text{kJ}$, and the ice takes in $5\,\text{kJ} + 0.05988\,\text{kg} \cdot 334\,\tfrac{\text{kJ}}{\text{kg}} = 25\,\text{kJ}$.
 
 ## fy3-14-L1-04
 **Given:** ice at a temperature of $0\,{}^\circ\text{C}$, transferred quantity of heat $Q = 60\,\text{kJ}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -66,7 +67,7 @@
 **Conversions:** The fall in temperature is the same in kelvins: $\Delta T = 18\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 18\,\text{K}$. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{kg} = 1000\,\text{g}$.
 **Substitution:** $m_\text{i} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.30\,\text{kg} \cdot 18\,\text{K}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{22\,626\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 0.06774\,\text{kg} = 67.74\,\text{g}$
 **Answer:** $68\,\text{g}$, two significant figures, because the mass $0.30\,\text{kg}$ and the temperature change $18\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 18\,\text{K}$ have two figures.
-**Reasonableness:** Estimate: the water gives out about $4 \cdot 0.3 \cdot 18 \approx 22\,\text{kJ}$, and $22\,\text{kJ} / 334\,\tfrac{\text{kJ}}{\text{kg}} \approx 0.066\,\text{kg}$. About 68 g is two or three ice cubes, which is little compared with the amount of water, because melting takes a lot of energy.
+**Reasonableness:** Estimate: the water gives out about $4 \cdot 0.3 \cdot 18 \approx 22\,\text{kJ}$, and $22\,\text{kJ} / 334\,\tfrac{\text{kJ}}{\text{kg}} \approx 0.066\,\text{kg}$. About $68\,\text{g}$ is two or three ice cubes, which is little compared with the amount of water, because melting takes a lot of energy.
 
 ## fy3-14-L2-03
 **Given:** ice $m = 0.40\,\text{kg}$, $T_\text{initial} = -10\,{}^\circ\text{C}$, finally water at $0\,{}^\circ\text{C}$; power $P = 800\,\text{W}$; from the table $c_\text{i} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -92,7 +93,7 @@ $$\begin{aligned} t &= \dfrac{8400\,\text{J} + 133\,600\,\text{J}}{800\,\tfrac{\
 $$\begin{aligned} s &= \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3.975\,\text{kg}\cdot\text{K}}{0.0500\,\text{kg}} \\ &= 333\,105\,\tfrac{\text{J}}{\text{kg}} \\ &= 333.1\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
 
 **Answer:** $333\,\tfrac{\text{kJ}}{\text{kg}}$, three significant figures, because the mass of the ice $0.0500\,\text{kg}$, the mass of the water $0.200\,\text{kg}$ and the temperature difference $30.0\,{}^\circ\text{C} - 8.1\,{}^\circ\text{C} = 21.9\,\text{K}$ have three figures.
-**Reasonableness:** The result is close to the table value $334\,\tfrac{\text{kJ}}{\text{kg}}$ (a difference of less than $0.3\,\%$). The small difference comes from the temperature being read only to $0.1\,\text{K}$: a reading of $8.0\,{}^\circ\text{C}$ would give about $335\,\tfrac{\text{kJ}}{\text{kg}}$. The result is positive, as a latent heat of fusion should be.
+**Reasonableness:** The result is close to the table value $334\,\tfrac{\text{kJ}}{\text{kg}}$ (a difference of less than $0.3\,\%$). The small difference is already within the limits of the reading precision of the temperature ($0.1\,\text{K}$), and in a real experiment the heat capacity of the calorimeter and heat losses would also have an effect: a reading of $8.0\,{}^\circ\text{C}$ would give about $335\,\tfrac{\text{kJ}}{\text{kg}}$. The result is positive, as a latent heat of fusion should be.
 
 ## fy3-14-L3-01
 **Given:** water $m_\text{w} = 0.600\,\text{kg}$, $T_\text{w} = 35.0\,{}^\circ\text{C}$; ice $T_\text{i} = -20\,{}^\circ\text{C}$; final state $0\,{}^\circ\text{C}$ with all the ice just melted; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{i} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$

@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: painovoima",
-      "prompt": "Repun massa on 10 kg. Kuinka suuri painovoima $G = mg$ reppuun vaikuttaa?",
+      "prompt": "Repun massa on $10\\,\\text{kg}$. Kuinka suuri painovoima $G = mg$ reppuun vaikuttaa?",
       "choices": [
         {
           "text": "10 N",
@@ -35,7 +35,7 @@
           "feedback": "Oikein: $G = mg = 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. Tätä voimaa tarvitset kannattelemaan reppua."
         },
         {
-          "text": "9,8 kg",
+          "text": "$9{,}8\\,\\text{kg}$",
           "feedback": "Paino on voima, ja voiman yksikkö on newton. Kilogramma on massan yksikkö."
         },
         {
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: matka kaksinkertaistuu",
-      "prompt": "Laatikkoa vedetään lattialla 60 N:n voimalla. Voima on liikkeen suuntainen. Laatikkoa vedetään ensin 10 m ja sitten 20 m. Voima pysyy samana. Mitä voiman tekemälle työlle tapahtuu?",
+      "prompt": "Laatikkoa vedetään lattialla 60 N:n voimalla. Voima on liikkeen suuntainen. Laatikkoa vedetään ensin $10\\,\\text{m}$ ja sitten $20\\,\\text{m}$. Voima pysyy samana. Mitä voiman tekemälle työlle tapahtuu?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -64,7 +64,7 @@
         {
           "text": "Työ kaksinkertaistuu.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: 10 m:n matkalla $W = 600\\,\\text{J}$ ja 20 m:n matkalla $W = 1200\\,\\text{J}$. Sama voima tekee kaksinkertaisella matkalla kaksinkertaisen työn, $W = Fs$."
+          "feedback": "Mallin arvot tukevat tätä: $10\\,\\text{m}$:n matkalla $W = 600\\,\\text{J}$ ja $20\\,\\text{m}$:n matkalla $W = 1200\\,\\text{J}$. Sama voima tekee kaksinkertaisella matkalla kaksinkertaisen työn, $W = Fs$."
         },
         {
           "text": "Työ nelinkertaistuu.",
@@ -78,7 +78,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 2: sama veto hitaammin",
-      "prompt": "Sama veto (60 N, 10 m) tehdään ensin 5 sekunnissa. Sitten se tehdään 20 sekunnissa. Mitä tapahtuu työlle ja teholle?",
+      "prompt": "Sama veto (60 N, $10\\,\\text{m}$) tehdään ensin 5 sekunnissa. Sitten se tehdään 20 sekunnissa. Mitä tapahtuu työlle ja teholle?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -87,20 +87,20 @@
       "choices": [
         {
           "text": "Hitaampi veto tekee vähemmän työtä.",
-          "feedback": "Mallin arvojen mukaan työ on sama, 600 J, molemmilla ajoilla. Työ $W = Fs$ ei riipu ajasta. Aika vaikuttaa tehoon."
+          "feedback": "Mallin arvojen mukaan työ on sama, $600\\,\\text{J}$, molemmilla ajoilla. Työ $W = Fs$ ei riipu ajasta. Aika vaikuttaa tehoon."
         },
         {
           "text": "Työ on sama, mutta teho pienenee neljäsosaan.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $W = 600\\,\\text{J}$ molemmissa. Aika nelinkertaistuu, joten teho $P = W/t$ putoaa 120 W:sta 30 W:iin."
+          "feedback": "Mallin arvot tukevat tätä: $W = 600\\,\\text{J}$ molemmissa. Aika nelinkertaistuu, joten teho $P = W/t$ putoaa $120\\,\\text{W}$:sta $30\\,\\text{W}$:iin."
         },
         {
           "text": "Työ ja teho pysyvät samoina.",
-          "feedback": "Työ pysyy samana, mutta teho ei. Mallin arvojen mukaan $P = W/t$ pienenee 120 W:sta 30 W:iin. Teho kertoo, kuinka nopeasti työ tehdään."
+          "feedback": "Työ pysyy samana, mutta teho ei. Mallin arvojen mukaan $P = W/t$ pienenee $120\\,\\text{W}$:sta $30\\,\\text{W}$:iin. Teho kertoo, kuinka nopeasti työ tehdään."
         },
         {
           "text": "Hitaampi veto tekee enemmän työtä, koska voima vaikuttaa pidempään.",
-          "feedback": "Mallin arvot näyttävät saman työn, 600 J. Työn määrää matka voiman suunnassa. Työn määrää ei se, kuinka kauan voima vaikuttaa. Pidempi aika tarkoittaa pienempää tehoa."
+          "feedback": "Mallin arvot näyttävät saman työn, $600\\,\\text{J}$. Työn määrää matka voiman suunnassa. Työn määrää ei se, kuinka kauan voima vaikuttaa. Pidempi aika tarkoittaa pienempää tehoa."
         }
       ]
     },
@@ -110,7 +110,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Ennuste 3: reppu käytävällä",
-      "prompt": "Kannat reppua, jonka paino on 98 N. Kuljet 20 m vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, koska siinä voima on aina liikkeen suuntainen. Vertaa ennustettasi Teoriatiivistelmän malliin ja kuvaan.",
+      "prompt": "Kannat reppua, jonka paino on 98 N. Kuljet $20\\,\\text{m}$ vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, koska siinä voima on aina liikkeen suuntainen. Vertaa ennustettasi Teoriatiivistelmän malliin ja kuvaan.",
       "justify": true,
       "choices": [
         {
@@ -123,7 +123,7 @@
           "feedback": "Juuri näin. Liikettä vastaan kohtisuora voima ei tee työtä. Lihaksesi kuluttavat silti energiaa, kun ne pitävät voimaa yllä. Se ei kuitenkaan ole reppuun tehtyä työtä. Todiste on Teoriatiivistelmän kuvassa ja mallissa. Työ lasketaan vain liikkeen suuntaisesta voimasta. Kannattelevassa voimassa ei ole liikkeen suuntaista osaa."
         },
         {
-          "text": "Cem: Työ on jotain nollan ja 2,0 kJ:n väliltä, koska osa voimasta on liikkeen suuntainen.",
+          "text": "Cem: Työ on jotain nollan ja $2{,}0\\,\\text{kJ}$:n väliltä, koska osa voimasta on liikkeen suuntainen.",
           "feedback": "Kuljet vaakasuoraa käytävää tasaisella vauhdilla. Silloin reppuun ei tarvita vaakasuoraa voimaa (ilmanvastusta ei oteta huomioon). Kannatteleva voima on siis pystysuora, ja sen työ on nolla. Teoriatiivistelmä palaa tähän."
         }
       ]
@@ -141,7 +141,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain matka muuttuu",
-      "intro": "Testaa ennuste 1. Pidä voima ja aika samoina. Muuta vain matkaa. Kirjaa työ ainakin kahdella matkalla, esimerkiksi 5 m, 10 m ja 20 m. Paina *Vedä* ennen kirjaamista. Silloin näet, kuinka kuvaajan pinta-ala täyttyy.",
+      "intro": "Testaa ennuste 1. Pidä voima ja aika samoina. Muuta vain matkaa. Kirjaa työ ainakin kahdella matkalla, esimerkiksi $5\\,\\text{m}$, $10\\,\\text{m}$ ja $20\\,\\text{m}$. Paina *Vedä* ennen kirjaamista. Silloin näet, kuinka kuvaajan pinta-ala täyttyy.",
       "initial": {
         "F": 60,
         "s": 10,
@@ -170,7 +170,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain aika muuttuu",
-      "intro": "Testaa ennuste 2. Nyt voima ja matka ovat samoja, ja vain aika muuttuu. Kirjaa työ ja teho ainakin kahdella ajalla, esimerkiksi 5 s, 10 s ja 20 s. Mitä työlle tapahtuu? Entä teholle?",
+      "intro": "Testaa ennuste 2. Nyt voima ja matka ovat samoja, ja vain aika muuttuu. Kirjaa työ ja teho ainakin kahdella ajalla, esimerkiksi $5\\,\\text{s}$, $10\\,\\text{s}$ ja $20\\,\\text{s}$. Mitä työlle tapahtuu? Entä teholle?",
       "initial": {
         "F": 60,
         "s": 10,
@@ -233,7 +233,7 @@
           {
             "text": "Veden sisäenergia kasvaa yhtä paljon kuin paino tekee työtä (mittaustarkkuuden rajoissa). Työ siirtää energiaa veteen.",
             "correct": true,
-            "feedback": "Tämä on Joulen kokeen tulos. Vettä ei lämmitetty. Paino teki työtä. Sama lämpeneminen olisi saatu myös lämmittämällä. Työ ja lämpö ovat siis kaksi tapaa siirtää energiaa. Molempia mitataan jouleina. Pieni ero syntyy, koska osa energiasta siirtyy lämpönä ympäristöön. Joule itse mittasi vuonna 1850, että noin $4{,}16\\,\\text{J}$ työtä lämmittää gramman vettä yhden asteen. Nykyinen arvo on $4{,}19\\,\\text{J}$."
+            "feedback": "Tämä on Joulen kokeen tulos. Vettä ei lämmitetty. Paino teki työtä. Sama lämpeneminen olisi saatu myös lämmittämällä. Työ ja lämpö ovat siis kaksi tapaa siirtää energiaa. Molempia mitataan jouleina. Pieni ero on joka rivillä samansuuntainen. Siksi se syntyy luultavasti siitä, että osa energiasta siirtyy lämpönä ympäristöön. Joule itse mittasi vuonna 1850, että noin $4{,}16\\,\\text{J}$ työtä lämmittää gramman vettä yhden asteen. Nykyinen arvo on $4{,}19\\,\\text{J}$."
           },
           {
             "text": "Työ muuttuu veteen lämmöksi, ja vesi varastoi tämän lämmön.",
@@ -241,7 +241,7 @@
           },
           {
             "text": "Noin puolet työstä päätyy veteen.",
-            "feedback": "Vertaa sarakkeita: 196 J ja 194 J eroavat vain noin prosentin. Lähes koko työ kasvattaa veden sisäenergiaa."
+            "feedback": "Vertaa sarakkeita: $196\\,\\text{J}$ ja $194\\,\\text{J}$ eroavat vain noin prosentin. Lähes koko työ kasvattaa veden sisäenergiaa."
           }
         ]
       },
@@ -295,7 +295,7 @@
           "feedback": "Oikein. $W = Fs$ pätee vakiovoimalle. Tässä voima kasvaa tasaisesti nollasta. Silloin keskimääräinen voima on puolet huippuarvosta. Työ on siis puolet opiskelijan tuloksesta."
         },
         {
-          "text": "Matkan pitäisi olla 20 m, ei 0,20 m.",
+          "text": "Matkan pitäisi olla $20\\,\\text{m}$, ei $0{,}20\\,\\text{m}$.",
           "feedback": "Jousta venytettiin 20 cm, ja $20\\,\\text{cm} = 0{,}20\\,\\text{m}$. Yksikkömuunnos on oikein."
         },
         {
@@ -310,7 +310,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Sähköpotkulauta kulkee tasaisella 5,0 m/s:n nopeudella. Moottori työntää lautaa liikkeen suuntaisella 48 N:n voimalla. Voima kumoaa kitkan ja ilmanvastuksen. Kuinka suuri on moottorin teho? Vastaa watteina.",
+      "prompt": "Sähköpotkulauta kulkee tasaisella $5{,}0\\,\\text{m/s}$:n nopeudella. Moottori työntää lautaa liikkeen suuntaisella 48 N:n voimalla. Voima kumoaa kitkan ja ilmanvastuksen. Kuinka suuri on moottorin teho? Vastaa watteina.",
       "answer": 240,
       "unit": "W",
       "tolerance": 0.02,
@@ -361,11 +361,37 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kantaminen ja työ",
+      "prompt": "Nostat laatikon, jonka paino on $98{,}1\\,\\text{N}$. Nostat sen tasaisella nopeudella $1{,}0\\,\\text{m}$ ylös. Sen jälkeen kannat laatikkoa $5{,}0\\,\\text{m}$ vaakasuoraan tasaisella vauhdilla. Kuinka suuren työn kannatteleva voimasi tekee yhteensä?",
+      "choices": [
+        {
+          "text": "Noin $98\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Oikein. Nostossa voima on ylöspäin ja liike on ylöspäin, joten $W = G h = 98{,}1\\,\\text{N} \\cdot 1{,}0\\,\\text{m} \\approx 98\\,\\text{J}$. Vaakasuoralla kantamisella kannatteleva voima on pystysuora ja liike on vaakasuora. Voima on siis kohtisuorassa liikettä vastaan, eikä se tee työtä."
+        },
+        {
+          "text": "Noin $590\\,\\text{J}$.",
+          "feedback": "Laskit voiman kertaa koko matkan, $98{,}1\\,\\text{N} \\cdot 6{,}0\\,\\text{m} \\approx 590\\,\\text{J}$. Työ on voiman ja liikkeen suuntaisen matkan tulo. Vaakasuoralla matkalla voima ei ole liikkeen suuntainen. Siksi sen osuus on nolla."
+        },
+        {
+          "text": "Noin $490\\,\\text{J}$, koska kantaminen on raskaampaa kuin nostaminen.",
+          "feedback": "Väsyminen ei ole fysiikan työtä. Vaakasuoralla kantamisella kannatteleva voima on kohtisuorassa liikettä vastaan. Siksi työ on nolla, vaikka lihakset väsyvät. Lukuarvo $490\\,\\text{J}$ olisi $98{,}1\\,\\text{N} \\cdot 5{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "$0\\,\\text{J}$, koska laatikon vauhti ei muutu.",
+          "feedback": "Voiman tekemä työ ei riipu siitä, muuttuuko vauhti. Nostossa kannatteleva voima ja siirtymä osoittavat samaan suuntaan. Siksi voima tekee positiivisen työn $98\\,\\text{J}$. Vain vaakasuoralla osuudella työ on nolla."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaaja ja laskeminen",
-      "prompt": "$(s, F)$-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–4,0 m. Sen jälkeen voima laskee tasaisesti nollaan välillä 4,0–8,0 m. Kuinka suuren työn voima tekee koko 8,0 m:n matkalla? Vastaa jouleina.",
+      "title": "3. Kuvaaja ja laskeminen",
+      "prompt": "$(s, F)$-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–$4{,}0\\,\\text{m}$. Sen jälkeen voima laskee tasaisesti nollaan välillä 4,0–$8{,}0\\,\\text{m}$. Kuinka suuren työn voima tekee koko $8{,}0\\,\\text{m}$:n matkalla? Vastaa jouleina.",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02,
@@ -385,13 +411,13 @@
         }
       ],
       "optional": true,
-      "solution": "**Annettu:** voima $F = 30\\,\\text{N}$ (liikkeen suuntainen) vakiona matkalla $s_1 = 4{,}0\\,\\text{m}$ (0–4,0 m); sitten voima laskee tasaisesti nollaan matkalla $s_2 = 4{,}0\\,\\text{m}$ (4,0–8,0 m)\n\n**Kysytty:** koko $8{,}0\\,\\text{m}$:n matkalla tehty työ $W$ jouleina\n\n**Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala. Sen voi laskea osissa. Vakiovoiman osa on suorakulmio. Tasaisesti nollaan laskevan voiman osa on kolmio.\n\n**Kuvaajan lukeminen:** Kuvaajassa on ensin vaakasuora jana korkeudella $30\\,\\text{N}$ välillä $0\\ldots 4{,}0\\,\\text{m}$. Sen jatkona on suora jana, joka laskee nollaan välillä $4{,}0\\ldots 8{,}0\\,\\text{m}$. Suorakulmion korkeus on $30\\,\\text{N}$ ja leveys $4{,}0\\,\\text{m}$. Kolmion korkeus on $30\\,\\text{N}$ ja kanta $4{,}0\\,\\text{m}$.\n\n**Kaava:** $W = A_\\text{suorakulmio} + A_\\text{kolmio}$, joten\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Muunnokset:** Voima on newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Sijoitus:** $W = 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Vastaus:** $180\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetuissa arvoissa $30\\,\\text{N}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Keskimääräinen voima on $\\tfrac{180\\,\\text{J}}{8{,}0\\,\\text{m}} = 22{,}5\\,\\text{N}$. Se on huippuarvon $30\\,\\text{N}$ ja nollan välissä. Työ on pienempi kuin $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m} = 240\\,\\text{J}$. Työ on suurempi kuin pelkkä suorakulmio $120\\,\\text{J}$, koska voima ei ole nolla jälkimmäisellä matkalla."
+      "solution": "**Annettu:** voima $F = 30\\,\\text{N}$ (liikkeen suuntainen) vakiona matkalla $s_1 = 4{,}0\\,\\text{m}$ (0–$4{,}0\\,\\text{m}$); sitten voima laskee tasaisesti nollaan matkalla $s_2 = 4{,}0\\,\\text{m}$ (4,0–$8{,}0\\,\\text{m}$)\n\n**Kysytty:** koko $8{,}0\\,\\text{m}$:n matkalla tehty työ $W$ jouleina\n\n**Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala. Sen voi laskea osissa. Vakiovoiman osa on suorakulmio. Tasaisesti nollaan laskevan voiman osa on kolmio.\n\n**Kuvaajan lukeminen:** Kuvaajassa on ensin vaakasuora jana korkeudella $30\\,\\text{N}$ välillä $0\\ldots 4{,}0\\,\\text{m}$. Sen jatkona on suora jana, joka laskee nollaan välillä $4{,}0\\ldots 8{,}0\\,\\text{m}$. Suorakulmion korkeus on $30\\,\\text{N}$ ja leveys $4{,}0\\,\\text{m}$. Kolmion korkeus on $30\\,\\text{N}$ ja kanta $4{,}0\\,\\text{m}$.\n\n**Kaava:** $W = A_\\text{suorakulmio} + A_\\text{kolmio}$, joten\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Muunnokset:** Voima on newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Sijoitus:** $W = 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Vastaus:** $180\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetuissa arvoissa $30\\,\\text{N}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Keskimääräinen voima on $\\tfrac{180\\,\\text{J}}{8{,}0\\,\\text{m}} = 22{,}5\\,\\text{N}$. Se on huippuarvon $30\\,\\text{N}$ ja nollan välissä. Työ on pienempi kuin $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m} = 240\\,\\text{J}$. Työ on suurempi kuin pelkkä suorakulmio $120\\,\\text{J}$, koska voima ei ole nolla jälkimmäisellä matkalla."
     },
     {
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Selitä omin sanoin, miksi hissin moottori tekee saman työn nostonopeudesta riippumatta. Selitä myös, miksi nopeampi nosto vaatii suuremman tehon. Käytä käsitteitä työ ja teho sekä yksiköitä.",
       "criteria": [
         "Sanon, että työ $W = Fs$ riippuu nostovoimasta ja nostokorkeudesta, ei ajasta.",
@@ -406,7 +432,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+      "text": "Lopuksi on yksi nopea kysymys. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
     }
   ]
 }

@@ -119,9 +119,9 @@ Isotermisessä tilanmuutoksessa paine on siis kääntäen verrannollinen tilavuu
 
 Boylen laki pätee hyvin ilmaan ja muihin kaasuihin tavallisissa paineissa ja lämpötiloissa. Kaasun määrän täytyy pysyä samana. Kaasua ei saa vuotaa pois eikä sitä saa tulla lisää. Paineena käytetään kaasun kokonaispainetta. Mittarin näyttämää ylipainetta ei käytetä.
 
-Boylen lain voi todentaa kokeella. Ruiskuun suljetaan ilmaa, ja ruisku liitetään painemittariin. Mäntää painetaan vaiheittain. Jokaisella tilavuudella luetaan paine. Mittaus tehdään hitaasti, jotta ilman lämpötila ehtii palata huoneenlämpöön. Tulokset piirretään $(V, p)$-koordinaatistoon. Pisteet asettuvat laskevalle kaarelle. Kaarelta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta. Siksi taulukkoon lasketaan uusi sarake $1/V$. Sitten piirretään $p$ $1/V$:n funktiona. Jos laki pätee, pisteet ovat origon kautta kulkevalla suoralla. Suoran kulmakerroin (suoran jyrkkyys) on vakio $pV$. Kokeile simulaatiossa: tallenna mittauksia eri tilavuuksilla ja valitse ”Piirrä p 1/V:n funktiona”.
+Boylen lain voi todentaa kokeella. Ruiskuun suljetaan ilmaa, ja ruisku liitetään painemittariin. Mäntää painetaan vaiheittain. Jokaisella tilavuudella luetaan paine. Mittaus tehdään hitaasti, jotta ilman lämpötila ehtii palata huoneenlämpöön. Tulokset piirretään $(V, p)$-koordinaatistoon. Pisteet asettuvat laskevalle kaarelle. Kaarelta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta. Siksi taulukkoon lasketaan uusi sarake $1/V$. Sitten piirretään $p$ $1/V$:n funktiona. Jos laki pätee, pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle. Suoran kulmakerroin (suoran jyrkkyys) on vakio $pV$. Kokeile simulaatiossa: tallenna mittauksia eri tilavuuksilla ja valitse ”Piirrä p 1/V:n funktiona”.
 
-Kun kaasua lämmitetään, sen hiukkaset liikkuvat nopeammin. Oletetaan, että mäntä pääsee liikkumaan niin, että paine pysyy vakiona (isobaarinen tilanmuutos). Silloin kaasu laajenee. Sen tilavuus on suoraan verrannollinen kelvinlämpötilaan. Se tarkoittaa, että kun kelvinlämpötila kaksinkertaistuu, tilavuus kaksinkertaistuu. Oletetaan sitten, että tilavuus pidetään vakiona (isokoorinen tilanmuutos). Silloin paine kasvaa. Paine on suoraan verrannollinen kelvinlämpötilaan. Molemmissa tapauksissa lämpötila pitää ilmoittaa kelvineinä, koska verrannollisuus alkaa absoluuttisesta nollapisteestä.
+Kun kaasua lämmitetään, sen hiukkaset liikkuvat nopeammin. Oletetaan, että mäntä pääsee liikkumaan niin, että paine pysyy vakiona (isobaarinen tilanmuutos). Silloin kaasu laajenee. Kun kaasun määrä pysyy samana ja kaasu on harvaa (hiukkaset ovat kaukana toisistaan), sen tilavuus on suoraan verrannollinen kelvinlämpötilaan. Se tarkoittaa, että kun kelvinlämpötila kaksinkertaistuu, tilavuus kaksinkertaistuu. Oletetaan sitten, että tilavuus pidetään vakiona (isokoorinen tilanmuutos). Silloin paine kasvaa. Paine on suoraan verrannollinen kelvinlämpötilaan. Molemmissa tapauksissa lämpötila pitää ilmoittaa kelvineinä, koska verrannollisuus alkaa absoluuttisesta nollapisteestä.
 
 <svg data-fig="iso-processes" viewBox="0 0 600 412" role="img" aria-label="Kaksi tilanmuutosta, kaaviokuva. Vasemmalla on isobaarinen muutos. Sylinterin mäntää kuormittaa vakiopainoinen kappale. Kaasu lämpenee lämpötilasta T₁ lämpötilaan T₂. Mäntä nousee, ja tilavuus kasvaa V₁:stä V₂:een. Hiukkasten nopeusnuolet ovat pidempiä. Oikealla on isokoorinen muutos. Jäykän, suljetun astian tilavuus V pysyy samana. Kaasu lämpenee, ja paineenmittarin viisari kääntyy suuremman paineen p₂ kohdalle." style="max-width:100%;font-size:24px">
   <foreignObject x="77.5" y="11.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{isobaarinen}$</div></foreignObject>
@@ -337,13 +337,13 @@ Isobaarisessa ja isokoorisessa tilanmuutoksessa
 ```latex
 \frac{V_1}{T_1} = \frac{V_2}{T_2} \qquad \text{ja} \qquad \frac{p_1}{T_1} = \frac{p_2}{T_2}
 ```
-Tässä $T_1$ ja $T_2$ ovat kaasun lämpötilat kelvineinä (K) alku- ja lopputilassa. Tilavuus tai paine on siis suoraan verrannollinen kelvinlämpötilaan. $(T, V)$- tai $(T, p)$-kuvaajan suoran jatke kulkee origon kautta. Origo on absoluuttinen nollapiste 0 K.
+Tässä $T_1$ ja $T_2$ ovat kaasun lämpötilat kelvineinä (K) alku- ja lopputilassa. Suljetun, harvan kaasun tilavuus tai paine on siis suoraan verrannollinen kelvinlämpötilaan. $(T, V)$- tai $(T, p)$-kuvaajan suoran jatke kulkee origon kautta. Origo on absoluuttinen nollapiste $0\,\text{K}$. Jatke on mallin ennuste. Todellinen kaasu tiivistyy nesteeksi ennen kuin $0\,\text{K}$ saavutetaan.
 
 Kelvinlämpötilan saa celsiuslämpötilasta $\theta$ lisäämällä 273,15:
 ```latex
 T = \theta + 273{,}15\,\text{K}
 ```
-Tässä $\theta$ on lämpötila celsiusasteina lukuarvona. Laskuissa riittää 273 K.
+Tässä $\theta$ on lämpötila celsiusasteina lukuarvona. Laskuissa riittää $273\,\text{K}$.
 
 <svg data-fig="absolute-zero" viewBox="0 0 600 622" role="img" aria-label="Kuvaajat mittakaavassa, kun T on 0–400 K. Ylhäällä on kaasun tilavuus vakiopaineessa. Alhaalla on kaasun paine vakiotilavuudessa. Molemmat ovat kelvinlämpötilan funktioita. Mittauspisteet välillä 253–373 K ovat suoralla. Suoran jatke on piirretty katkoviivalla, ja se kulkee origon kautta. Tilavuus tai paine olisi nolla absoluuttisessa nollapisteessä 0 K eli −273 °C." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="240" x2="179.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -423,7 +423,7 @@ Tässä $\theta$ on lämpötila celsiusasteina lukuarvona. Laskuissa riittää 2
 </svg>
 
 ## Esimerkki
-Sipsipussissa on lentokentällä 0,80 l ilmaa 101 kPa:n paineessa. Lennon aikana matkustamon paine on 78 kPa. Kuinka suuri on pussissa olevan ilman tilavuus lennolla? Lämpötila pysyy samana, ja pussi pääsee laajenemaan vapaasti.
+Sipsipussissa on lentokentällä $0{,}80\,\textsf{l}$ ilmaa 101 kPa:n paineessa. Lennon aikana matkustamon paine on 78 kPa. Kuinka suuri on pussissa olevan ilman tilavuus lennolla? Lämpötila pysyy samana, ja pussi pääsee laajenemaan vapaasti.
 
 <!-- vaihe -->
 
@@ -460,7 +460,7 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 
 <!-- vaihe -->
 
-**Tulos.** Ilman tilavuus on $V_2 \approx 1{,}0\,\textsf{l}$. Tulos on annettu kahdella merkitsevällä numerolla, kuten lähtötiedot $0{,}80\,\textsf{l}$ ja $78\,\text{kPa}$. Tilavuus kasvaa noin 30 %. Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi.
+**Tulos.** Ilman tilavuus on $V_2 \approx 1{,}0\,\textsf{l}$. Tulos on annettu kahdella merkitsevällä numerolla, kuten lähtötiedot $0{,}80\,\textsf{l}$ ja $78\,\text{kPa}$. Tilavuus kasvaa noin $30\,\%$. Jos pussi on valmiiksi lähes täynnä, se pullistuu kireäksi.
 
 <!-- vaihe -->
 
@@ -470,11 +470,11 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 Nämä kolme virhettä toistuvat usein:
 
 - **Kääntäen verrannollisuus ei ole laskeva suora.** Kun tilavuus kaksinkertaistuu, paine puolittuu. Siksi $(V, p)$-kuvaaja on kaari. Kaari lähestyy akseleita, mutta ei koskaan kohtaa niitä. Suora syntyy vasta, kun $p$ piirretään $1/V$:n funktiona.
-- **Celsiusasteet eivät kelpaa lämpötilojen suhteeseen.** Oletetaan, että 1,00 l ilmaa lämpenee vakiopaineessa 10 °C:sta 20 °C:seen. Sen tilavuus ei kaksinkertaistu. Kelvineinä laskettuna $V_2 = V_1 T_2 / T_1 = 1{,}00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1{,}04\,\textsf{l}$. Tilavuus kasvaa siis vain noin 3,5 %.
+- **Celsiusasteet eivät kelpaa lämpötilojen suhteeseen.** Oletetaan, että $1{,}00\,\textsf{l}$ ilmaa lämpenee vakiopaineessa $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:seen. Sen tilavuus ei kaksinkertaistu. Kelvineinä laskettuna $V_2 = V_1 T_2 / T_1 = 1{,}00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1{,}04\,\textsf{l}$. Tilavuus kasvaa siis vain noin $3{,}5\,\%$.
 - **Suljetun astian kaasun paine ei johdu kaasun painosta.** Pienessä astiassa kaasun paino on mitätön. Paine syntyy hiukkasten törmäyksistä. Siksi paine on yhtä suuri kaikkialla astiassa.
 
 ## Tiivistelmä
 - Tilanmuutoksessa kaasun paine, tilavuus ja lämpötila muuttuvat. Isotermisessä muutoksessa $T$ on vakio, isobaarisessa $p$ ja isokoorisessa $V$.
 - Boylen laki: isotermisessä tilanmuutoksessa $p_1 V_1 = p_2 V_2$. Paine on siis kääntäen verrannollinen tilavuuteen.
-- Kääntäen verrannollisuus todennetaan näin: taulukkoon lasketaan sarake $1/V$ ja $p$ piirretään $1/V$:n funktiona. Pisteiden pitää olla origon kautta kulkevalla suoralla.
-- Vakiopaineessa tilavuus on suoraan verrannollinen kelvinlämpötilaan. Vakiotilavuudessa paine on suoraan verrannollinen kelvinlämpötilaan. Näissä laskuissa lämpötilat ilmoitetaan aina kelvineinä.
+- Kääntäen verrannollisuus todennetaan näin: taulukkoon lasketaan sarake $1/V$ ja $p$ piirretään $1/V$:n funktiona. Pisteiden pitää asettua mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle.
+- Kun kaasun määrä pysyy samana, harvan kaasun tilavuus vakiopaineessa on suoraan verrannollinen kelvinlämpötilaan. Vakiotilavuudessa paine on suoraan verrannollinen kelvinlämpötilaan. Näissä laskuissa lämpötilat ilmoitetaan aina kelvineinä.

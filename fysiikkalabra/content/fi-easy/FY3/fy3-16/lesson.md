@@ -57,7 +57,7 @@ Arjessa on monia lämpöilmiöitä. Esimerkkejä ovat saunan lämmitys, kylmäla
 
 Lähde on joko teho tai toinen kappale. Teho on energiaa sekunnissa. Toinen kappale luovuttaa lämpöä. Kohteita on kaksi. Ensimmäinen kohde on lämpötilan nousu, $Q = cm\Delta T$. Toinen kohde on olomuodon muutos, $Q = sm$ tai $Q = rm$. Olomuodon muutoksen aikana lämpötila ei muutu. Kun jää sulaa tai vesi kiehuu, kaikki energia kuluu muutokseen. Lämpötila nousee vasta, kun muutos on loppu.
 
-Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$. Eriste on hyvä, mutta teho ei ole nolla. Niin kauan kuin jäätä on jäljellä, kaikki tämä energia sulattaa jäätä. Silloin sisällä pysyy 0 °C. Sulattaminen vaatii paljon energiaa. Yhden kilogramman jään sulattaminen vaatii 334 kJ. Saman vesimäärän lämmittäminen 80 kelvinillä vaatii yhtä paljon. Kun jää on sulanut, sama teho alkaa nostaa veden lämpötilaa. Silloin juomat lämpenevät. Siksi laukkuun kannattaa laittaa jäätä eikä vain kylmää vettä.
+Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$. Eriste on hyvä, mutta teho ei ole nolla. Niin kauan kuin jäätä on jäljellä, kaikki tämä energia sulattaa jäätä. Silloin sisällä pysyy $0\,{}^\circ\text{C}$. Sulattaminen vaatii paljon energiaa. Yhden kilogramman jään sulattaminen vaatii $334\,\text{kJ}$. Saman vesimäärän lämmittäminen 80 kelvinillä vaatii yhtä paljon. Kun jää on sulanut, sama teho alkaa nostaa veden lämpötilaa. Silloin juomat lämpenevät. Siksi laukkuun kannattaa laittaa jäätä eikä vain kylmää vettä.
 
 <svg viewBox="0 0 600 340" role="img" aria-label="Kuva kylmälaukusta ja energiasta. Vasemmalla on kylmälaukun poikkileikkaus. Ulkona on 28 °C. Sisällä on jääpussi ja juomapulloja 0 °C:ssa. Seinien läpi virtaa sisään lämpöteho P kahdella yhtä suurella nuolella. Oikealla ovat pylväät samassa mittakaavassa yhdelle kilogrammalle. Jään sulattaminen vaatii 334 kJ. Veden lämmittäminen 10 K:lla vaatii 42 kJ ja 80 K:lla 335 kJ. Sulaminen vie siis yhtä paljon energiaa kuin 80 kelvinin lämpeneminen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316a-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy316a-heatv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy316a-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -90,11 +90,11 @@ Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$. Eriste on hyv�
   <line x1="392" y1="116.5" x2="546" y2="116.5" stroke="#6b7480" stroke-width="2" stroke-dasharray="5 5"/>
 </svg>
 
-Saunan kiuas lämmittää kiviä. Kivien ominaislämpökapasiteetti on noin 800 J/(kg·K). Kun kuumille kiville heitetään löylyvettä, vesi lämpenee ja höyrystyy. Energia otetaan kivistä. Suurin osa energiasta kuluu höyrystymiseen. Esimerkiksi 0,20 kg vettä lämpenee 20 °C:sta 100 °C:seen 67 kJ:n energialla. Sen höyrystäminen vaatii 452 kJ. Siksi kivet jäähtyvät heti, ja kiukaan täytyy lämmittää ne uudelleen. Kun höyry tiivistyy ihoon, sama energia vapautuu takaisin. Siksi löyly tuntuu kuumalta.
+Saunan kiuas lämmittää kiviä. Kivien ominaislämpökapasiteetti on noin $800\,\text{J/(kg}\cdot\text{K)}$. Kun kuumille kiville heitetään löylyvettä, vesi lämpenee ja höyrystyy. Energia otetaan kivistä. Suurin osa energiasta kuluu höyrystymiseen. Esimerkiksi $0{,}20\,\text{kg}$ vettä lämpenee $20\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen $67\,\text{kJ}$:n energialla. Sen höyrystäminen vaatii $452\,\text{kJ}$. Siksi kivet jäähtyvät heti, ja kiukaan täytyy lämmittää ne uudelleen. Kun höyry tiivistyy ihoon, sama energia vapautuu takaisin. Siksi löyly tuntuu kuumalta.
 
-Auton jäähdytysneste kuljettaa moottorin hukkalämmön jäähdyttimeen. Teho on energiaa sekunnissa. Siirtyvä teho riippuu kahdesta asiasta. Ensimmäinen on nesteen massa, joka kulkee sekunnissa. Toinen on nesteen lämpötilan nousu moottorissa. Samalla teholla suurempi massavirta tarkoittaa pienempää lämpötilan nousua. Veden ominaislämpökapasiteetti on suuri, 4190 J/(kg·K). Vesi kuitenkin jäätyy pakkasella ja kiehuu helposti. Siksi veteen sekoitetaan glykolia. Seos kestää pakkasta ja kuumuutta. Sen ominaislämpökapasiteetti on kuitenkin pienempi, noin 3500 J/(kg·K).
+Auton jäähdytysneste kuljettaa moottorin hukkalämmön jäähdyttimeen. Teho on energiaa sekunnissa. Siirtyvä teho riippuu kahdesta asiasta. Ensimmäinen on nesteen massa, joka kulkee sekunnissa. Toinen on nesteen lämpötilan nousu moottorissa. Samalla teholla suurempi massavirta tarkoittaa pienempää lämpötilan nousua. Veden ominaislämpökapasiteetti on suuri, $4190\,\text{J/(kg}\cdot\text{K)}$. Vesi kuitenkin jäätyy pakkasella ja kiehuu helposti. Siksi veteen sekoitetaan glykolia. Seos kestää pakkasta ja kuumuutta. Sen ominaislämpökapasiteetti on kuitenkin pienempi, noin $3500\,\text{J/(kg}\cdot\text{K)}$.
 
-## Kaava: Lämpöenergian tase
+## Kaava: Energiatase
 Systeemiin siirtyy energiaa teholla $P$ ajan $t$ kuluessa. Silloin energia $Pt$ jakautuu systeemin osien lämpenemiseen ja olomuodon muutoksiin:
 ```latex
 \begin{aligned}
@@ -110,11 +110,11 @@ Rakennusosan läpi johtuva teho on
 ```latex
 P = U A \Delta T
 ```
-Tässä $U$ on U-arvo (W/(m²·K)) ja $A$ on seinien yhteispinta-ala (m²). Rakennusosa on esimerkiksi kylmälaukun seinä. Lämpötilaero $\Delta T$ on ulko- ja sisälämpötilan erotus (K). Niin kauan kuin laukussa on jäätä, sisälämpötila on 0 °C. Silloin $\Delta T$ on ulkolämpötila celsiusasteina. Kaikki seinän läpi tuleva energia sulattaa jäätä, $UA\Delta T\,t = sm$. Jään kestoaika on
+Tässä $U$ on U-arvo (W/(m²·K)) ja $A$ on seinien yhteispinta-ala (m²). Rakennusosa on esimerkiksi kylmälaukun seinä. Lämpötilaero $\Delta T$ on ulko- ja sisälämpötilan erotus (K). Niin kauan kuin laukussa on jäätä, sisälämpötila on $0\,{}^\circ\text{C}$. Silloin $\Delta T$ on ulkolämpötila celsiusasteina. Kaikki seinän läpi tuleva energia sulattaa jäätä, $UA\Delta T\,t = sm$. Jään kestoaika on
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```
-Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilasta. Se on laskettu mallilla. Lämpötila pysyy 0 °C:ssa ajan $t_0$, kunnes jää on sulanut. Sen jälkeen vesi lämpenee kohti ulkolämpötilaa. Nousu on aluksi jyrkkä. Sitten se hidastuu, koska teho $UA\Delta T$ pienenee, kun lämpötilaero pienenee. Kuvaaja on esimerkin laukulle. Tutki-vaiheen laukun $UA$ on pienempi.
+Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilasta. Se on laskettu mallilla. Lämpötila pysyy $0\,{}^\circ\text{C}$:ssa ajan $t_0$, kunnes jää on sulanut. Sen jälkeen vesi lämpenee kohti ulkolämpötilaa. Nousu on aluksi jyrkkä. Sitten se hidastuu, koska teho $UA\Delta T$ pienenee, kun lämpötilaero pienenee. Kuvaaja on esimerkin laukulle. Tutki-vaiheen laukun $UA$ on pienempi.
 
 <svg viewBox="0 0 600 372" role="img" aria-label="Kuvaaja kylmälaukun sisälämpötilasta ajan funktiona mallin mukaan. Lämpötila pysyy 0 °C:ssa noin 2,4 tuntia, kun jää sulaa. Sen jälkeen lämpötila alkaa nousta kohti ulkolämpötilaa 28 °C. Nousu on aluksi jyrkkä ja hidastuu, kun lämpötilaero pienenee. Akselit ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="84" y1="300.0" x2="516" y2="300.0" stroke="#e3dccb" stroke-width="1.5"/>
@@ -159,7 +159,7 @@ P = c\,\frac{m}{t}\,\Delta T
 ```
 Tässä $m/t$ on nesteen sekunnissa kuljettama massa (kg/s). Lämpötilan nousu on $\Delta T = T_2 - T_1$ (K), eli nesteen lämpötilan nousu moottorissa. Tasaisessa käynnissä jäähdytin luovuttaa ilmaan saman tehon $P$. Siksi nesteen lämpötilat $T_1$ ja $T_2$ pysyvät vakioina.
 
-<svg viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva moottorin jäähdytyspiiristä. Moottorin sisällä syntyvä hukkalämpö siirtyy nesteeseen lämpötehona P. Neste kulkee yläputkea pitkin jäähdyttimelle lämpötilassa T2. Se palaa alaputkea pitkin pumpun kautta lämpötilassa T1. Jäähdytin luovuttaa saman tehon P ilmaan. Nesteen massavirta on m/t. Kuva on kaavio eikä mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva moottorin jäähdytyspiiristä. Moottorista siirtyy hukkalämpöä nesteeseen lämpötehona P. Neste kulkee yläputkea pitkin jäähdyttimelle lämpötilassa T2. Se palaa alaputkea pitkin pumpun kautta lämpötilassa T1. Jäähdytin luovuttaa saman tehon P ilmaan. Nesteen massavirta on m/t. Kuva on kaavio eikä mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316c-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <path d="M190,130 H408" stroke="#1f2933" stroke-width="20" fill="none"/>
   <path d="M190,130 H408" stroke="#c92a2a" stroke-width="13" fill="none"/>
@@ -198,11 +198,11 @@ Tehtävä etenee näin:
 1. Rajaa systeemi. Päätä, mistä energia tulee ja minne se menee.
 2. Kirjoita lähteen energia: $Pt$ tai luovuttavan aineen $cm\Delta T$.
 3. Käy vaiheet läpi lämpötilan mukaan: lämpeneminen sulamispisteeseen, sulaminen, lämpeneminen. Sulamisen aikana lämpötila on vakio.
-4. Tarkista, riittääkö energia. Vertaa luovutettavaa energiaa siihen, mitä seuraava olomuodon muutos vaatii. Jos energia ei riitä, muutos jää kesken. Silloin lämpötila on sulamispiste.
+4. Tarkista, riittääkö energia. Vertaa luovutettavaa energiaa siihen, mitä seuraava olomuodon muutos vaatii. Jos energia ei riitä, muutos jää kesken. Silloin lämpötila on sulamispiste. Jos energia riittää juuri ja juuri, muutos ehtii loppuun. Silloin lämpötila on tasan sulamispiste.
 5. Tarkista yksiköt ja suuruusluokka.
 
 ## Esimerkki
-Retkellä kylmälaukussa on 1,0 kg:n jääpussi. Sen lämpötila on 0 °C. Pulloissa on 0,50 kg juomaa, jonka lämpötila on 20 °C. Laukun seinien yhteispinta-ala on 0,80 m² ja U-arvo 1,5 W/(m²·K). Ulkona on 28 °C. Oletetaan, että juomat jäähtyvät heti 0 °C:seen ja sulattavat jäätä. Oletetaan myös, että sisällä pysyy 0 °C, kunnes jää on sulanut. Kuinka kauan jäätä riittää? Juomien ominaislämpökapasiteetti on veden arvo.
+Retkellä kylmälaukussa on $1{,}0\,\text{kg}$:n jääpussi. Sen lämpötila on $0\,{}^\circ\text{C}$. Pulloissa on $0{,}50\,\text{kg}$ juomaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Laukun seinien yhteispinta-ala on 0,80 m² ja U-arvo $1{,}5\,\text{W/(m}^2\text{}\cdot\text{K)}$. Ulkona on $28\,{}^\circ\text{C}$. Oletetaan, että juomat jäähtyvät heti $0\,{}^\circ\text{C}$:seen ja sulattavat jäätä. Oletetaan myös, että sisällä pysyy $0\,{}^\circ\text{C}$, kunnes jää on sulanut. Kuinka kauan jäätä riittää? Juomien ominaislämpökapasiteetti on veden arvo.
 
 <!-- vaihe -->
 
@@ -256,12 +256,12 @@ Jäätä riittää noin $2{,}4\,\text{h}$. Tulos ilmoitetaan kahdella merkitsev�
 
 <!-- vaihe -->
 
-**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$. Tulos on siis kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$. Aika lyhenee saman osuuden: $2{,}8\,\text{h} \cdot 0{,}87 \approx 2{,}4\,\text{h}$. Kun jää on sulanut, laukussa on 1,5 kg vettä. Sen lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho nostaa veden lämpötilaa aluksi $\tfrac{33{,}6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$. Kuvaaja näyttää saman.
+**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$. Tulos on siis kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$. Aika lyhenee saman osuuden: $2{,}8\,\text{h} \cdot 0{,}87 \approx 2{,}4\,\text{h}$. Kun jää on sulanut, laukussa on $1{,}5\,\text{kg}$ vettä. Sen lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho nostaa veden lämpötilaa aluksi $\tfrac{33{,}6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$. Kuvaaja näyttää saman.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että jää tuottaa kylmää ja kylmä virtaa juomiin. Kylmyys ei virtaa. Energia siirtyy aina lämpimästä kylmempään. Jää jäähdyttää, koska se ottaa energiaa vastaan. Toinen virhe on ajatella, että lämpötila nousee tasaisesti koko ajan. Sulamisen aikana lämpötila pysyy vakiona, vaikka energiaa tulee koko ajan.
+Moni ajattelee, että jää tuottaa kylmää ja kylmä virtaa juomiin. Kylmyys ei virtaa. Lämpötilaeron takia energiaa siirtyy kaiken kaikkiaan lämpimästä kylmempään. Jää jäähdyttää, koska se ottaa energiaa vastaan. Toinen virhe on ajatella, että lämpötila nousee tasaisesti koko ajan. Sulamisen aikana lämpötila pysyy vakiona, vaikka energiaa tulee koko ajan.
 
-Kolmas virhe tulee sekoitustehtävässä. Virheessä ajatellaan, että jää sulaa aina kokonaan ja lopputulos on keskiarvo. Sekoitetaan 1,0 kg jäätä ja 1,5 kg 20-asteista vettä. Vesi voi luovuttaa enintään
+Kolmas virhe tulee sekoitustehtävässä. Virheessä ajatellaan, että jää sulaa aina kokonaan ja lopputulos on keskiarvo. Sekoitetaan $1{,}0\,\text{kg}$ jäätä ja $1{,}5\,\text{kg}$ 20-asteista vettä. Vesi voi luovuttaa enintään
 ```latex
 \begin{aligned}
 Q_\text{vesi} &= c\,m\,\Delta T \\
@@ -269,11 +269,11 @@ Q_\text{vesi} &= c\,m\,\Delta T \\
 &\approx 126\,\text{kJ}
 \end{aligned}
 ```
-Kaiken jään sulattaminen vaatii kuitenkin 334 kJ. Jää sulaa vain osittain, ja seoksen lämpötila on 0 °C.
+Kaiken jään sulattaminen vaatii kuitenkin $334\,\text{kJ}$. Jää sulaa vain osittain, ja seoksen lämpötila on $0\,{}^\circ\text{C}$.
 
 ## Tiivistelmä
 - Arjen lämpöilmiö ratkeaa energiakirjanpidolla. Tuleva energia ($Pt$ tai toisen kappaleen luovuttama lämpömäärä) kuluu lämpenemiseen, $Q = cm\Delta T$, tai olomuodon muutokseen, $Q = sm$ tai $Q = rm$.
 - Olomuodon muutoksen aikana lämpötila pysyy vakiona. Jään sulattaminen vaatii yhtä paljon energiaa kuin saman vesimäärän lämmittäminen 80 kelvinillä.
 - Kylmälaukun seinän läpi tuleva teho on $P = UA\Delta T$. Jään kestoaika on $t = sm/(UA\Delta T)$.
 - Jäähdytysnesteen siirtämä teho on $P = c\,(m/t)\,\Delta T$. Pienempi ominaislämpökapasiteetti vaatii saman tehon siirtoon suuremman massavirran.
-- Sekoitustehtävässä tarkista ensin, riittääkö luovutettu energia sulattamaan kaiken jään. Jos energia ei riitä, lämpötila on 0 °C.
+- Sekoitustehtävässä tarkista ensin, riittääkö luovutettu energia sulattamaan kaiken jään. Kun jää on aluksi $0\,{}^\circ\text{C}$:ssa ja energia ei riitä, lämpötila on $0\,{}^\circ\text{C}$.

@@ -3,7 +3,7 @@
     {
       "id": "fy3-3-L1-01",
       "level": 1,
-      "text": "Huoneen lämpötila on 21 °C. Mikä lämpötila on kelvineinä?",
+      "text": "Huoneen lämpötila on $21\\,{}^\\circ\\text{C}$. Mikä lämpötila on kelvineinä?",
       "answer": 294,
       "unit": "K",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-3-L1-02",
       "level": 1,
-      "text": "Kaasun lämpötila on 350 K. Mikä lämpötila on celsiusasteina?",
+      "text": "Kaasun lämpötila on $350\\,\\text{K}$. Mikä lämpötila on celsiusasteina?",
       "answer": 77,
       "unit": "°C",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-3-L1-03",
       "level": 1,
-      "text": "Nestemäisen typen kiehumispiste on 77,4 K. Mikä se on celsiusasteina?",
+      "text": "Nestemäisen typen kiehumispiste on $77{,}4\\,\\text{K}$. Mikä se on celsiusasteina?",
       "answer": -196,
       "unit": "°C",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-3-L1-04",
       "level": 1,
-      "text": "Veden lämpötila nousee 20 °C:sta 45 °C:een. Kuinka suuri lämpötilan muutos on kelvineinä?",
+      "text": "Veden lämpötila nousee $20\\,{}^\\circ\\text{C}$:sta $45\\,{}^\\circ\\text{C}$:een. Kuinka suuri lämpötilan muutos on kelvineinä?",
       "answer": 25,
       "unit": "K",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy3-3-L1-05",
       "level": 1,
-      "text": "Maailmankaikkeuden taustasäteilyn lämpötila on 2,7 K. Mikä se on celsiusasteina?",
+      "text": "Maailmankaikkeuden taustasäteilyn lämpötila on $2{,}7\\,\\text{K}$. Mikä se on celsiusasteina?",
       "answer": -270,
       "unit": "°C",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-3-L2-01",
       "level": 2,
-      "text": "Kaasun lämpötila on 288 K. Kaasua lämmitetään, ja sen lämpötila nousee 45 K. Mikä on loppulämpötila celsiusasteina?",
+      "text": "Kaasun lämpötila on $288\\,\\text{K}$. Kaasua lämmitetään, ja sen lämpötila nousee $45\\,\\text{K}$. Mikä on loppulämpötila celsiusasteina?",
       "answer": 60,
       "unit": "°C",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy3-3-L2-02",
       "level": 2,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 90,0 kPa lämpötilassa 0 °C. Lämpötilassa 100 °C paine on 123 kPa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa 35 °C?",
+      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 90,0 kPa lämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpötilassa $100\\,{}^\\circ\\text{C}$ paine on 123 kPa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 102,
       "unit": "kPa",
       "tolerance": 0.02
@@ -61,15 +61,16 @@
     {
       "id": "fy3-3-L2-03",
       "level": 2,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 110 kPa lämpötilassa 10 °C. Lämpötilassa 80 °C paine on 137 kPa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Jatka suoraa mittausalueen ulkopuolelle. Määritä näin ekstrapoloimalla paine lämpötilassa −50 °C.",
-      "answer": 87,
+      "text": "Kuvaajassa on mitattu kaasun paine eri lämpötiloissa. Kaasu on suljetussa jäykässä astiassa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Oletus pätee myös mittausalueen ulkopuolella. Mikä olisi paine lämpötilassa $-100\\,{}^\\circ\\text{C}$?",
+      "figure": "fy3-3/extrapolation-points",
+      "answer": 47.5,
       "unit": "kPa",
-      "tolerance": 0.02
+      "tolerance": 0.08
     },
     {
       "id": "fy3-3-L2-04",
       "level": 2,
-      "text": "Kuun yöpuolen lämpötila on −173 °C. Päiväpuolen lämpötila on 127 °C. Laske molemmat lämpötilat kelvineinä. Kuinka monta kertaa suurempi päiväpuolen kelvinlämpötila on kuin yöpuolen kelvinlämpötila?",
+      "text": "Kuun yöpuolen lämpötila on $-173\\,{}^\\circ\\text{C}$. Päiväpuolen lämpötila on $127\\,{}^\\circ\\text{C}$. Laske molemmat lämpötilat kelvineinä. Kuinka monta kertaa suurempi päiväpuolen kelvinlämpötila on kuin yöpuolen kelvinlämpötila?",
       "answer": 4.0,
       "unit": "kertaa",
       "tolerance": 0.02
@@ -79,7 +80,7 @@
     {
       "id": "fy3-3-L3-01",
       "level": 3,
-      "text": "Pyörän renkaassa ilman kokonaispaine on 300 kPa lämpötilassa 15 °C. (Kokonaispaine ei ole ylipaine.) Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa 35 °C?",
+      "text": "Pyörän renkaassa ilman kokonaispaine on 300 kPa lämpötilassa $15\\,{}^\\circ\\text{C}$. (Kokonaispaine ei ole ylipaine.) Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 321,
       "unit": "kPa",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-3-L3-02",
       "level": 3,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 150 kPa lämpötilassa 27,0 °C. Astiaa lämmitetään, kunnes paine on 200 kPa. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä on loppulämpötila celsiusasteina?",
+      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 150 kPa lämpötilassa $27{,}0\\,{}^\\circ\\text{C}$. Astiaa lämmitetään, kunnes paine on 200 kPa. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä on loppulämpötila celsiusasteina?",
       "answer": 127,
       "unit": "°C",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-3-L3-03",
       "level": 3,
-      "text": "Kaasun lämpötila on 20,0 °C. Kaasu jäähdytetään. Jäähdytys jatkuu, kunnes kaasun hiukkasten keskimääräinen liike-energia on puolet alkuperäisestä. Keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Mikä on lopullinen lämpötila celsiusasteina?",
+      "text": "Kaasun lämpötila on $20{,}0\\,{}^\\circ\\text{C}$. Kaasu jäähdytetään. Jäähdytys jatkuu, kunnes kaasun hiukkasten keskimääräinen liike-energia on puolet alkuperäisestä. Keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Mikä on lopullinen lämpötila celsiusasteina?",
       "answer": -127,
       "unit": "°C",
       "tolerance": 0.02

@@ -79,14 +79,15 @@
 **Järkevyys:** Tilavuus on noin $17$ kertaa pienempi ja paine noin $46$ kertaa suurempi ($0{,}500/0{,}0300 \approx 16{,}7$ ja $4600/101 \approx 45{,}5$). Siksi tulo $pV$ kasvaa noin $45{,}5 / 16{,}7 \approx 2{,}73$-kertaiseksi. Kelvinlämpötila kasvaa samoin: $303\,\text{K} \cdot 2{,}73 \approx 828\,\text{K}$. Tulos täsmää. Lämpötila nousee, kun kaasua puristetaan. Siksi dieselmoottori ei tarvitse sytytystulppaa.
 
 ## fy3-10-L2-04
-**Annettu:** ilma, $n = 1{,}00\,\text{mol}$, $\theta = -30\,{}^\circ\text{C}$, $p = 102\,\text{kPa}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
-**Kysytty:** tilavuus $V$ litroina
-**Periaate:** Ilman ainemäärä, paine ja lämpötila tunnetaan. Siksi tilanyhtälö antaa tilavuuden. Ilma käyttäytyy ideaalikaasuna pakkasessakin, koska se on kaukana nesteytymisestä.
-**Kaava:** $pV = nRT$, josta $V = \dfrac{nRT}{p}$
-**Muunnokset:** $T = (-30 + 273{,}15)\,\text{K} = 243{,}15\,\text{K}$ ja $p = 102\,\text{kPa} = 102\,000\,\text{Pa}$. Lopuksi $1\,\text{m}^3 = 1000\,\textsf{l}$.
-**Sijoitus:** $V = \dfrac{1{,}00\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 243{,}15\,\text{K}}{102\,000\,\text{Pa}} = 0{,}01981\,\text{m}^3 = 19{,}81\,\textsf{l}$
-**Vastaus:** $19{,}8\,\textsf{l}$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $1{,}00\,\text{mol}$, $102\,\text{kPa}$ ja $R = 8{,}31$. Myös lämpötila $243\,\text{K}$ on kolmen numeron arvo. Se saatiin kokonaisasteista $-30\,{}^\circ\text{C}$.
-**Järkevyys:** Samassa paineessa mooli $20\,{}^\circ\text{C}$:n ilmaa veisi $\dfrac{8{,}31 \cdot 293{,}15}{102\,000} = 0{,}0239\,\text{m}^3 = 23{,}9\,\textsf{l}$. Kelvinlämpötilojen suhde on $243{,}15 / 293{,}15 \approx 0{,}83$. Sen avulla $0{,}83 \cdot 23{,}9\,\textsf{l} \approx 19{,}8\,\textsf{l}$. Kylmä ilma vie siis noin $17\,\%$ vähemmän tilaa, kuten pitääkin.
+**Annettu:** kummankin astian tilavuus $V = 2{,}00\,\textsf{l}$; kuvaajan mittauspisteet ovat ruudukon risteyksissä, $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Kysytty:** ainemäärien erotus $n_\text{A} - n_\text{B}$
+**Periaate:** Astiat ovat suljettuja ja jäykkiä. Siksi kaasun määrä ja tilavuus pysyvät samoina, ja kuvaajan suorat ovat tilanyhtälön mukaisia. Luetaan kummastakin sarjasta paine samassa lämpötilassa. Silloin tilanyhtälö antaa kummankin ainemäärän. Erotus saadaan vähentämällä.
+**Kuvaajan lukeminen:** Luetaan molemmat sarjat samasta lämpötilasta $T = 400\,\text{K}$. Se on ruudukon pystyviiva. Kaasu A: $p_\text{A} = 100\,\text{kPa}$. Kaasu B: $p_\text{B} = 60\,\text{kPa}$. Pisteiden $T = 200\,\text{K}$ paineet ovat puolet näistä. Suorat kulkevat siis origon kautta, kuten $p = nRT/V$ vaatii.
+**Kaava:** $pV = nRT$, josta $n = \dfrac{pV}{RT}$ ja $n_\text{A} - n_\text{B} = \dfrac{(p_\text{A} - p_\text{B})\,V}{RT}$
+**Muunnokset:** $p_\text{A} - p_\text{B} = (100 - 60)\,\text{kPa} = 40\,\text{kPa} = 40\,000\,\text{Pa}$ ja $V = 2{,}00\,\textsf{l} = 0{,}00200\,\text{m}^3$. Lämpötila on jo kelvineinä.
+**Sijoitus:** $n_\text{A} - n_\text{B} = \dfrac{40\,000\,\text{Pa} \cdot 0{,}00200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{80\,\text{J}}{3324\,\tfrac{\text{J}}{\text{mol}}} = 0{,}0241\,\text{mol}$
+**Vastaus:** $n_\text{A} - n_\text{B} \approx 0{,}024\,\text{mol}$, kaksi merkitsevää numeroa. Tilavuus ja paineiden lukemat ovat kuvaajasta kahden numeron tarkkuudella. Erikseen $n_\text{A} \approx 0{,}060\,\text{mol}$ ja $n_\text{B} \approx 0{,}036\,\text{mol}$. Pisteet luetaan ruudukon risteyksistä, joten hyväksytty väli on kapea: $0{,}0233$–$0{,}0247\,\text{mol}$.
+**Järkevyys:** Suoran A kulmakerroin on suurempi. Siksi A:ssa on enemmän kaasua, ja erotus on positiivinen. Paineiden suhde $100 : 60$ on myös ainemäärien suhde: $0{,}060 / 0{,}036 \approx 1{,}7$.
 
 ## fy3-10-L3-01
 **Annettu:** keuhkojen ilma, $V = 0{,}55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6{,}022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$

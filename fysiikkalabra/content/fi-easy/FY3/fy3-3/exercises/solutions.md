@@ -16,7 +16,7 @@
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla. Muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = 350 - 273{,}15 = 76{,}85\,{}^\circ\text{C}$
 **Vastaus:** $77\,{}^\circ\text{C}$. Vastaus annetaan täysinä asteina, koska $350\,\text{K}$ on annettu täysinä kelvineinä.
-**Järkevyys:** Veden kiehumispiste on $373\,\text{K}$ eli $100\,{}^\circ\text{C}$. Lämpötila $350\,\text{K}$ on $23\,\text{K}$ sen alapuolella. Arvio on siis $100 - 23 = 77\,{}^\circ\text{C}$. Tulos on myös yli nollan, koska $350\,\text{K} > 273\,\text{K}$. Lasketaan vielä takaisin: $76{,}85 + 273{,}15 = 350$.
+**Järkevyys:** Veden kiehumispiste normaalipaineessa on $373\,\text{K}$ eli $100\,{}^\circ\text{C}$. Lämpötila $350\,\text{K}$ on $23\,\text{K}$ sen alapuolella. Arvio on siis $100 - 23 = 77\,{}^\circ\text{C}$. Tulos on myös yli nollan, koska $350\,\text{K} > 273\,\text{K}$. Lasketaan vielä takaisin: $76{,}85 + 273{,}15 = 350$.
 
 ## fy3-3-L1-03
 **Annettu:** $T = 77{,}4\,\text{K}$
@@ -69,20 +69,20 @@
 **Järkevyys:** Lämpötila $35\,{}^\circ\text{C}$ on $35\,\%$ matkasta $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een. Siksi paineen pitää olla $35\,\%$ matkasta välillä $90{,}0\ldots123\,\text{kPa}$: $90{,}0 + 0{,}35 \cdot 33 = 101{,}55\,\text{kPa}$. Tulos on pisteiden paineiden välissä. Se on myös alle välin keskiarvon $106{,}5\,\text{kPa}$.
 
 ## fy3-3-L2-03
-**Annettu:** $(\theta_1,\, p_1) = (10\,{}^\circ\text{C},\ 110\,\text{kPa})$ ja $(\theta_2,\, p_2) = (80\,{}^\circ\text{C},\ 137\,\text{kPa})$. Paine riippuu lämpötilasta lineaarisesti.
-**Kysytty:** paine $p$ lämpötilassa $\theta = -50\,{}^\circ\text{C}$ kilopascaleina
-**Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina. Siksi paine riippuu vain lämpötilasta. Kun pisteet asetetaan suoralle, suoraa voi jatkaa mittausalueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi.
-**Kuvaajan lukeminen:** Kuvaajassa pisteet $(10\,{}^\circ\text{C};\ 110\,\text{kPa})$ ja $(80\,{}^\circ\text{C};\ 137\,\text{kPa})$ ovat samalla suoralla. Suoraa jatketaan vasemmalle arvoon $-50\,{}^\circ\text{C}$. Se on $60\,{}^\circ\text{C}$ pisteen $\theta_1$ vasemmalla puolella. Paine luetaan siitä kohdasta.
-**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$, joten $p = p_1 + \dfrac{p_2 - p_1}{\theta_2 - \theta_1}\,(\theta - \theta_1)$
+**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Paine riippuu lämpötilasta lineaarisesti, myös mittausalueen ulkopuolella.
+**Kysytty:** paine $p$ lämpötilassa $\theta = -100\,{}^\circ\text{C}$ kilopascaleina
+**Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina. Siksi paine riippuu vain lämpötilasta. Pisteet ovat suoralla, joten suoraa voi jatkaa mittausalueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi.
+**Kuvaajan lukeminen:** Mittauspisteet ovat lämpötiloissa $0\ldots 100\,{}^\circ\text{C}$. Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$. Näistä kahdesta pisteestä lasketaan suoran kulmakerroin. Sitten suoraa jatketaan vasemmalle lämpötilaan $-100\,{}^\circ\text{C}$. Jos piirrät suoran silmämääräisesti, saat arvon $45$–$50\,\text{kPa}$. Se hyväksytään.
+**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$
 **Muunnokset:** Muunnoksia ei tarvita. Paineet ovat kilopascaleina. Lämpötilaerot ovat samat celsiusasteina ja kelvineinä.
-**Sijoitus:** $k = \dfrac{(137 - 110)\,\text{kPa}}{(80 - 10)\,{}^\circ\text{C}} = 0{,}385714\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 110\,\text{kPa} + 0{,}385714\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-50 - 10)\,{}^\circ\text{C} = 110\,\text{kPa} - 23{,}14\,\text{kPa} = 86{,}86\,\text{kPa}$
-**Vastaus:** $87\,\text{kPa}$. Paine-ero $\Delta p = 137 - 110 = 27\,\text{kPa}$ on kaksinumeroinen. Siksi $k = 0{,}39\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $k\,\Delta\theta \approx 23\,\text{kPa}$. Erotus $110 - 23 = 87\,\text{kPa}$ pyöristetään kokonaisiin kilopascaleihin. (Kun kaksi lukemaa vähennetään toisistaan, merkitsevät numerot lasketaan erotuksesta.)
-**Järkevyys:** Lämpötila on mittausalueen alapuolella. Siksi paineen pitää olla pienempi kuin pienin mitattu paine $110\,\text{kPa}$. Niin onkin, mutta paine on silti selvästi yli nollan. Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, $p \approx 110\,\text{kPa} \cdot \dfrac{223{,}15\,\text{K}}{283{,}15\,\text{K}} = 86{,}7\,\text{kPa}$. Tulos on lähes sama.
+**Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 75\,\text{kPa} + 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} = 75\,\text{kPa} - 27{,}5\,\text{kPa} = 47{,}5\,\text{kPa}$
+**Vastaus:** $p \approx 48\,\text{kPa}$. Vastaus annetaan kahdella merkitsevällä numerolla. Kuvaajasta luettu paine-ero $27{,}5\,\text{kPa}$ on kolmen numeron arvo, mutta lukutarkkuus on vain noin $1\,\text{kPa}$.
+**Järkevyys:** Lämpötila on mittausalueen alapuolella. Siksi paineen pitää olla pienempi kuin pienin mitattu paine $75\,\text{kPa}$. Paineen pitää kuitenkin olla selvästi yli nollan. Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, $p \approx 75\,\text{kPa} \cdot \dfrac{173{,}15\,\text{K}}{273{,}15\,\text{K}} = 47{,}5\,\text{kPa}$. Tulos on sama.
 
 ## fy3-3-L2-04
 **Annettu:** $\theta_\text{yö} = -173\,{}^\circ\text{C}$ ja $\theta_\text{päivä} = 127\,{}^\circ\text{C}$
 **Kysytty:** kelvinlämpötilojen suhde $\dfrac{T_\text{päivä}}{T_\text{yö}}$
-**Periaate:** Suhde lasketaan kelvinlämpötiloista. Vain kelvinasteikon nolla on absoluuttinen nollapiste. Lisäksi hiukkasten liike-energia on verrannollinen kelvinlämpötilaan. Celsiusasteiden suhteella ei ole fysikaalista merkitystä.
+**Periaate:** Suhde lasketaan kelvinlämpötiloista. Vain kelvinasteikon nolla on absoluuttinen nollapiste. Se on alin mahdollinen lämpötila. Celsiusasteiden suhteella ei ole fysikaalista merkitystä.
 **Kaava:** $T = \theta + 273{,}15$, ja suhde $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{\theta_\text{päivä} + 273{,}15}{\theta_\text{yö} + 273{,}15}$
 **Muunnokset:** Molemmat lämpötilat muutetaan kelvineiksi lisäämällä $273{,}15$: $T_\text{yö} = -173 + 273{,}15 = 100{,}15\,\text{K}$ ja $T_\text{päivä} = 127 + 273{,}15 = 400{,}15\,\text{K}$.
 **Sijoitus:** $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{400{,}15\,\text{K}}{100{,}15\,\text{K}} = 3{,}9955$
@@ -112,7 +112,7 @@
 ## fy3-3-L3-03
 **Annettu:** $\theta_1 = 20{,}0\,{}^\circ\text{C}$ ja keskimääräinen liike-energia $E_2 = \tfrac{1}{2}E_1$
 **Kysytty:** loppulämpötila celsiusasteina, $\theta_2$
-**Periaate:** Hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Syy on se, että kelvinasteikon nolla on absoluuttinen nollapiste, jossa liike-energia on pienimmillään (mallissa nolla). Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
+**Periaate:** Tehtävän mukaan kaasun hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Näin on harvassa kaasussa, jossa hiukkaset vaikuttavat toisiinsa vain törmätessään. Verrannollisuus koskee kelvinlämpötilaa. Syy on se, että vain kelvinasteikon nolla on absoluuttinen nollapiste. Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
 **Kaava:** $\dfrac{E_2}{E_1} = \dfrac{T_2}{T_1} = \dfrac{1}{2}$, josta $T_2 = \dfrac{T_1}{2}$, ja $\theta_2 = T_2 - 273{,}15$
 **Muunnokset:** Alkulämpötila muutetaan kelvineiksi: $T_1 = 20{,}0 + 273{,}15 = 293{,}15\,\text{K}$. Lopuksi $T_2$ muutetaan takaisin celsiusasteiksi vähentämällä $273{,}15$.
 **Sijoitus:** $T_2 = \dfrac{293{,}15\,\text{K}}{2} = 146{,}575\,\text{K}$, ja $\theta_2 = 146{,}575 - 273{,}15 = -126{,}575\,{}^\circ\text{C}$

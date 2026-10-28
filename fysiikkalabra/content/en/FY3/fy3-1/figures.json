@@ -8,5 +8,6 @@
  "Jupiter": "Jupiter",
  "Maa": "Earth",
  "Mars": "Mars",
- "Kuu": "Moon"
+ "Kuu": "Moon",
+ "Kuvaaja mittakaavassa: erään jousen venymä x senttimetreinä voiman F funktiona. Viisi mittauspistettä ilman piirrettyä suoraa: (2 N; 1 cm), (4 N; 2 cm), (6 N; 3 cm), (8 N; 4 cm) ja (10 N; 5 cm). Ruudukon väli on 1 N ja 1 cm.": "Graph to scale: extension x of a spring in centimetres as a function of force F. Five measurement points without a drawn line: (2 N; 1 cm), (4 N; 2 cm), (6 N; 3 cm), (8 N; 4 cm) and (10 N; 5 cm). The grid spacing is 1 N and 1 cm."
 }

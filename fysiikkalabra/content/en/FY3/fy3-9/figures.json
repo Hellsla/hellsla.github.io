@@ -12,5 +12,6 @@
  "jatke": "extension",
  "Kaksi tilanmuutosta, kaaviokuva. Vasemmalla isobaarinen: sylinterin mäntää kuormittaa vakiopainoinen kappale, joten kaasun lämmetessä lämpötilasta T₁ lämpötilaan T₂ mäntä nousee ja tilavuus kasvaa V₁:stä V₂:een; hiukkasten nopeusnuolet ovat pidempiä. Oikealla isokoorinen: jäykän, suljetun astian tilavuus V pysyy samana, ja kaasun lämmetessä paineenmittarin viisari kääntyy suuremman paineen p₂ kohdalle.": "Two changes of state, schematic picture. On the left, an isobaric change: the piston of the cylinder is loaded by an object of constant weight, so when the gas warms from temperature T₁ to temperature T₂, the piston rises and the volume increases from V₁ to V₂; the velocity arrows of the particles are longer. On the right, an isochoric change: the volume V of a rigid, closed container stays the same, and when the gas warms, the needle of the pressure gauge turns to the greater pressure p₂.",
  "isobaarinen": "isobaric",
- "isokoorinen": "isochoric"
+ "isokoorinen": "isochoric",
+ "Kuvaaja mittakaavassa: ilman paine p tilavuuden V funktiona vakiolämpötilassa, viisi mittauspistettä ilman piirrettyä käyrää. Pisteet ovat (10 ml; 200 kPa), (15 ml; 133 kPa), (20 ml; 100 kPa), (30 ml; 67 kPa) ja (40 ml; 50 kPa). Ruudukon väli on 5 ml ja 25 kPa.": "Graph to scale: air pressure p as a function of volume V at constant temperature, five measurement points without a drawn curve. The points are (10 ml; 200 kPa), (15 ml; 133 kPa), (20 ml; 100 kPa), (30 ml; 67 kPa) and (40 ml; 50 kPa). The grid spacing is 5 ml and 25 kPa."
 }

@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "In the cylinder of a museum locomotive, hot steam pushes a piston, and the piston turns the wheels of the locomotive. A large condensing power plant does basically the same thing: steam expands in a turbine and turns a generator. The plant is supplied with the energy of fuel at a rate of 1000 MW, but only about 400 MW goes to the electricity grid. Energy is still conserved, as the first law says.",
+      "text": "In the cylinder of a museum locomotive, hot steam pushes a piston, and the piston turns the wheels of the locomotive. A large condensing power plant does basically the same thing: steam expands in a turbine and turns a generator. The plant is supplied with the energy of fuel at a rate of $1000\\,\\text{MW}$, but only about $400\\,\\text{MW}$ goes to the electricity grid. Energy is still conserved, as the first law says.",
       "question": "Could better technology turn all the energy of the fuel into electricity, and can the part that does not become electricity still be put to use?"
     },
     {
@@ -60,16 +60,16 @@
       "choices": [
         {
           "text": "$W_\\text{g} = 200\\,\\text{J}$, because the work is determined by the pressure, which stays at $200\\,\\text{kPa}$.",
-          "feedback": "In the experiment the pressure is 200 kPa on every row, but in the model $W_\\text{g}$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives 200 J and $\\Delta V = 1.50\\,\\text{l}$ gives 300 J. Pressure alone does no work; the piston does work only when it moves."
+          "feedback": "In the experiment the pressure is 200 kPa on every row, but in the model $W_\\text{g}$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives $200\\,\\text{J}$ and $\\Delta V = 1.50\\,\\text{l}$ gives $300\\,\\text{J}$. Pressure alone does no work; the piston does work only when it moves."
         },
         {
           "text": "$W_\\text{g} = 300\\,\\text{J}$",
           "correct": true,
-          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from 1.0 litres to 2.5 litres, the model gives $W_\\text{g} = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is 200 kPa high and 1.5 l wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from 1.0 litres to 2.5 litres, the model gives $W_\\text{g} = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is 200 kPa high and $1.5\\,\\textsf{l}$ wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
         },
         {
           "text": "$W_\\text{g} = 500\\,\\text{J}$",
-          "feedback": "This is the pressure times the final volume 2.5 l. In the experiment the orange rectangle in the $(V, p)$ graph starts at 1.0 l, because work is done only during the expansion. Its width is $\\Delta V = 1.5\\,\\text{l}$, and the model gives $W_\\text{g} = 300\\,\\text{J}$."
+          "feedback": "This is the pressure times the final volume $2.5\\,\\textsf{l}$. In the experiment the orange rectangle in the $(V, p)$ graph starts at $1.0\\,\\textsf{l}$, because work is done only during the expansion. Its width is $\\Delta V = 1.5\\,\\text{l}$, and the model gives $W_\\text{g} = 300\\,\\text{J}$."
         },
         {
           "text": "$W_\\text{g} = 300\\,000\\,\\text{J}$",
@@ -91,7 +91,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: heating at constant pressure",
-      "intro": "Test prediction 1. The pressure stays at 200 kPa, because the weights do not change. Change only the heat $Q$, for example 500 J, 750 J and 1000 J. Press *Heat* each time and record the measurement only when the piston has stopped. Record at least the row $Q = 1000\\,\\text{J}$.",
+      "intro": "Test prediction 1. The pressure stays at 200 kPa, because the weights do not change. Change only the heat $Q$, for example $500\\,\\text{J}$, $750\\,\\text{J}$ and $1000\\,\\text{J}$. Press *Heat* each time and record the measurement only when the piston has stopped. Record at least the row $Q = 1000\\,\\text{J}$.",
       "initial": {
         "Qin": 500,
         "paluu": "sama paine",
@@ -139,7 +139,7 @@
           },
           {
             "value": 600,
-            "feedback": "This is the pressure times the final volume 3.0 l, and by coincidence also $\\Delta U$ on the row. Work is done only during the expansion, so use the change in volume $\\Delta V = 2.00\\,\\text{l}$."
+            "feedback": "This is the pressure times the final volume $3.0\\,\\textsf{l}$, and by coincidence also $\\Delta U$ on the row. Work is done only during the expansion, so use the change in volume $\\Delta V = 2.00\\,\\text{l}$."
           },
           {
             "value": 1000,
@@ -164,7 +164,7 @@
       "choices": [
         {
           "text": "Aino: Yes. If the piston is pressed straight back down at the same pressure, the heat that went into internal energy comes back and the work of the gas is saved.",
-          "feedback": "Return method A in the experiment refutes this: the net work is $W = 0$. The weights press the piston down at the same pressure, so returning it takes the same 200 J of work that the gas did when it rose, and the gas gives up all the heat $Q_2 = 500\\,\\text{J}$ to the cold water."
+          "feedback": "Return method A in the experiment refutes this: the net work is $W = 0$. The weights press the piston down at the same pressure, so returning it takes the same $200\\,\\text{J}$ of work that the gas did when it rose, and the gas gives up all the heat $Q_2 = 500\\,\\text{J}$ to the cold water."
         },
         {
           "text": "Bea: No. To bring the piston down with less work than it took to raise it, the gas must first be cooled, and in cooling part of the heat is transferred to something colder.",
@@ -173,7 +173,7 @@
         },
         {
           "text": "Cem: Yes, as long as friction is removed. Heat is wasted only because of friction.",
-          "feedback": "The piston of the simulation is frictionless, and still heat is transferred to the cold water in both return methods: 500 J in A and 550 J in B. Removing friction does not remove the heat $Q_2$, because without cooling the piston does not come back down with less work."
+          "feedback": "The piston of the simulation is frictionless, and still heat is transferred to the cold water in both return methods: $500\\,\\text{J}$ in A and $550\\,\\text{J}$ in B. Removing friction does not remove the heat $Q_2$, because without cooling the piston does not come back down with less work."
         },
         {
           "text": "Daniel: No, because in a cycle part of the energy is used up.",
@@ -232,15 +232,15 @@
           {
             "text": "The net work of the cycle: $W = (p_1 - p_2)\\,\\Delta V = 100\\,\\text{kPa} \\cdot 1.0\\,\\text{l} = 100\\,\\text{J}$.",
             "correct": true,
-            "feedback": "Correct. The gas did 200 J of work when it rose, and on the return at the pressure 100 kPa 100 J of work was done on it (blue). The difference 100 J equals $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, and it is the energy used to lift the weight."
+            "feedback": "Correct. The gas did $200\\,\\text{J}$ of work when it rose, and on the return at the pressure 100 kPa $100\\,\\text{J}$ of work was done on it (blue). The difference $100\\,\\text{J}$ equals $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, and it is the energy used to lift the weight."
           },
           {
             "text": "The heat $Q_2$ transferred to the cold water.",
-            "feedback": "The model gives $Q_2 = 550\\,\\text{J}$, but the rectangle is 100 kPa high and 1.0 l wide, which is 100 J. An area in the $(V, p)$ graph is work, not heat; heat shows only in the bars."
+            "feedback": "The model gives $Q_2 = 550\\,\\text{J}$, but the rectangle is 100 kPa high and $1.0\\,\\textsf{l}$ wide, which is $100\\,\\text{J}$. An area in the $(V, p)$ graph is work, not heat; heat shows only in the bars."
           },
           {
             "text": "The work done by the gas as the piston rises.",
-            "feedback": "As it rose, the gas did 200 J of work, whose area reaches all the way down to the $V$ axis. Its lower part is hatched in blue: that is the 100 J of work done on the gas on the return. The orange part that remains is the net work, 100 J."
+            "feedback": "As it rose, the gas did $200\\,\\text{J}$ of work, whose area reaches all the way down to the $V$ axis. Its lower part is hatched in blue: that is the $100\\,\\text{J}$ of work done on the gas on the return. The orange part that remains is the net work, $100\\,\\text{J}$."
           }
         ]
       }
@@ -301,12 +301,12 @@
       "choices": [
         {
           "text": "In the conversion of litres: $1.2\\,\\text{l}$ is $1.2\\,\\text{m}^3$.",
-          "feedback": "A litre is a cubic decimetre, and $1\\,\\text{l} = 0.001\\,\\text{m}^3$, so $1.2\\,\\text{l} = 0.0012\\,\\text{m}^3$. The conversion is correct, and the work done by the gas really is 240 J; the mistake is elsewhere."
+          "feedback": "A litre is a cubic decimetre, and $1\\,\\text{l} = 0.001\\,\\text{m}^3$, so $1.2\\,\\text{l} = 0.0012\\,\\text{m}^3$. The conversion is correct, and the work done by the gas really is $240\\,\\text{J}$; the mistake is elsewhere."
         },
         {
           "text": "In the sign of the work: a gas that does work gives up energy, so $\\Delta U = Q - W_\\text{g} = 360\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Correct. The gas does 240 J of work, so part of the heat supplied leaves as work: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. The same result comes from the form $\\Delta U = Q + W$ of the chapter *Internal energy, heat and conservation of energy*, when the work done on the gas by the surroundings is $W = -W_\\text{g} = -240\\,\\text{J}$."
+          "feedback": "Correct. The gas does $240\\,\\text{J}$ of work, so part of the heat supplied leaves as work: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. The same result comes from the form $\\Delta U = Q + W$ of the chapter *Internal energy, heat and conservation of energy*, when the work done on the gas by the surroundings is $W = -W_\\text{g} = -240\\,\\text{J}$."
         },
         {
           "text": "In the sign of the heat: $Q$ is negative, because the gas gives up energy when it expands.",
@@ -314,7 +314,7 @@
         },
         {
           "text": "There is no mistake in the calculation.",
-          "feedback": "In experiment 1 the internal energy always grew less than the heat supplied, because the gas did work. The internal energy of a gas that does work cannot grow more than the heat supplied, 600 J: $\\Delta U = Q - W_\\text{g}$."
+          "feedback": "In experiment 1 the internal energy always grew less than the heat supplied, because the gas did work. The internal energy of a gas that does work cannot grow more than the heat supplied, $600\\,\\text{J}$: $\\Delta U = Q - W_\\text{g}$."
         }
       ],
       "optional": true
@@ -324,7 +324,7 @@
       "stage": "sovella",
       "type": "interpret",
       "title": "Design the energy production of a city",
-      "text": "A city needs 300 MW of electricity and 500 MW of district heating. Compare three options by how much fuel power each one needs. Assumptions:\n\n- **Condensing power plant:** electricity is 40 % of the fuel power.\n- **Electric heating:** 1 MW of electricity gives 1 MW of heat.\n- **Combined heat and power plant:** electricity is 45 % and district heat 40 % of the fuel power.\n- **Heat pump:** coefficient of performance 3.0.\n\nThe options:\n\n1. **Condensing power plant and electric heating.** The condensing power plant produces all the electricity, including that used for heating.\n2. **Combined heat and power.** The combined heat and power plant produces all the district heating, and at the same time more electricity is produced than the city needs.\n3. **Combined heat and power and a heat pump.** Part of the plant's electricity is used in a heat pump, which takes heat from purified waste water. The plant is sized so that the city gets exactly the electricity and heat it needs.\n\nThe assumption for the combined heat and power plant corresponds to a plant that burns natural gas; in a plant that burns wood the share of electricity is smaller, as in the Worked example.",
+      "text": "A city needs $300\\,\\text{MW}$ of electricity and $500\\,\\text{MW}$ of district heating. Compare three options by how much fuel power each one needs. Assumptions:\n\n- **Condensing power plant:** electricity is $40\\,\\%$ of the fuel power.\n- **Electric heating:** $1\\,\\text{MW}$ of electricity gives $1\\,\\text{MW}$ of heat.\n- **Combined heat and power plant:** electricity is $45\\,\\%$ and district heat $40\\,\\%$ of the fuel power.\n- **Heat pump:** coefficient of performance 3.0.\n\nThe options:\n\n1. **Condensing power plant and electric heating.** The condensing power plant produces all the electricity, including that used for heating.\n2. **Combined heat and power.** The combined heat and power plant produces all the district heating, and at the same time more electricity is produced than the city needs.\n3. **Combined heat and power and a heat pump.** Part of the plant's electricity is used in a heat pump, which takes heat from purified waste water. The plant is sized so that the city gets exactly the electricity and heat it needs.\n\nThe assumption for the combined heat and power plant corresponds to a plant that burns natural gas; in a plant that burns wood the share of electricity is smaller, as in the Worked example.",
       "question": {
         "type": "numeric",
         "prompt": "First calculate the fuel power of options 1 and 2. How much fuel power does option 3 need? Give the answer in megawatts.",
@@ -347,14 +347,14 @@
           },
           {
             "value": 941,
-            "feedback": "You divided the whole need of 800 MW by the overall efficiency of 85 %. But the heat pump brings in extra heat from the waste water, so even less fuel is needed. Write separate conditions for electricity and heat."
+            "feedback": "You divided the whole need of $800\\,\\text{MW}$ by the overall efficiency of $85\\,\\%$. But the heat pump brings in extra heat from the waste water, so even less fuel is needed. Write separate conditions for electricity and heat."
           },
           {
             "value": 667,
             "feedback": "You sized the plant by the electricity alone, without the heat pump: $300\\,\\text{MW}/0.45$. Then the heat would be only $0.40 \\cdot 667\\,\\text{MW} \\approx 267\\,\\text{MW}$, and the pump needs electricity too."
           }
         ],
-        "solution": "**Given:** the electricity need of the city $P_\\text{e} = 300\\,\\text{MW}$ and the district heating need $P_\\text{h} = 500\\,\\text{MW}$; the efficiency of the condensing power plant $0.40$, the combined heat and power plant gives electricity $0.45P$ and heat $0.40P$ from the fuel power $P$, the coefficient of performance of the heat pump $3.0$; option 3 is examined\n\n**Find:** the fuel power $P$ of option 3 in megawatts (for comparison, the fuel power of options 1 and 2)\n\n**Principle:** In options 1 and 2 a single plant meets the demand, and the fuel power is the useful power divided by the efficiency. In option 3 part of the plant's electricity goes to the heat pump, so the balances of electricity and heat must be written separately. Energy is conserved: the pump gives out heat equal to three times its electric power, and the difference comes from the waste water.\n\n**Formula:** Option 1: $P = \\dfrac{P_\\text{e} + P_\\text{h}}{0.40}$. Option 2: $P = \\dfrac{P_\\text{h}}{0.40}$. In option 3 the conditions are $0.45P - P_\\text{pump} = P_\\text{e}$ and $0.40P + 3P_\\text{pump} = P_\\text{h}$. Eliminating $P_\\text{pump}$:\n\n$$P = \\frac{P_\\text{h} + 3P_\\text{e}}{0.40 + 3 \\cdot 0.45}$$\n\n**Conversions:** All powers are in megawatts and the efficiencies are decimal numbers, so no conversions are needed.\n\n**Substitution:** Option 1: $P = \\dfrac{300\\,\\text{MW} + 500\\,\\text{MW}}{0.40} = 2000\\,\\text{MW}$. Option 2: $P = \\dfrac{500\\,\\text{MW}}{0.40} = 1250\\,\\text{MW}$, and the electricity produced is $0.45 \\cdot 1250\\,\\text{MW} = 562.5\\,\\text{MW}$, which is $262.5\\,\\text{MW}$ more than needed. Option 3: $P = \\dfrac{500\\,\\text{MW} + 3 \\cdot 300\\,\\text{MW}}{0.40 + 3 \\cdot 0.45} = \\dfrac{1400\\,\\text{MW}}{1.75} = 800\\,\\text{MW}$.\n\n**Answer:** $800\\,\\text{MW}$, two significant figures. The limiting values are the efficiencies $0.40$ and $0.45$ (two figures); the needs of the city $300\\,\\text{MW}$ and $500\\,\\text{MW}$ and the coefficient of performance $3.0$ are design values of the problem that are read as having at least two figures ($3.0 \\cdot 10^2$, $5.0 \\cdot 10^2$), so the result is $8.0 \\cdot 10^2\\,\\text{MW}$.\n\n**Reasonableness:** Check the balance again: the electric power of the pump is $0.45 \\cdot 800\\,\\text{MW} - 300\\,\\text{MW} = 60\\,\\text{MW}$ and it gives out heat $3 \\cdot 60\\,\\text{MW} = 180\\,\\text{MW}$, of which $120\\,\\text{MW}$ comes from the waste water. The plant gives heat $0.40 \\cdot 800\\,\\text{MW} = 320\\,\\text{MW}$, and together $320\\,\\text{MW} + 180\\,\\text{MW} = 500\\,\\text{MW}$, as needed. The losses of the plant, $0.15 \\cdot 800\\,\\text{MW} = 120\\,\\text{MW}$, are made up by the $120\\,\\text{MW}$ taken from the waste water. Option 3 needs only 40 % of the fuel of option 1."
+        "solution": "**Given:** the electricity need of the city $P_\\text{e} = 300\\,\\text{MW}$ and the district heating need $P_\\text{h} = 500\\,\\text{MW}$; the efficiency of the condensing power plant $0.40$, the combined heat and power plant gives electricity $0.45P$ and heat $0.40P$ from the fuel power $P$, the coefficient of performance of the heat pump $3.0$; option 3 is examined\n\n**Find:** the fuel power $P$ of option 3 in megawatts (for comparison, the fuel power of options 1 and 2)\n\n**Principle:** In options 1 and 2 a single plant meets the demand, and the fuel power is the useful power divided by the efficiency. In option 3 part of the plant's electricity goes to the heat pump, so the balances of electricity and heat must be written separately. Energy is conserved: the pump gives out heat equal to three times its electric power, and the difference comes from the waste water.\n\n**Formula:** Option 1: $P = \\dfrac{P_\\text{e} + P_\\text{h}}{0.40}$. Option 2: $P = \\dfrac{P_\\text{h}}{0.40}$. In option 3 the conditions are $0.45P - P_\\text{pump} = P_\\text{e}$ and $0.40P + 3P_\\text{pump} = P_\\text{h}$. Eliminating $P_\\text{pump}$:\n\n$$P = \\frac{P_\\text{h} + 3P_\\text{e}}{0.40 + 3 \\cdot 0.45}$$\n\n**Conversions:** All powers are in megawatts and the efficiencies are decimal numbers, so no conversions are needed.\n\n**Substitution:** Option 1: $P = \\dfrac{300\\,\\text{MW} + 500\\,\\text{MW}}{0.40} = 2000\\,\\text{MW}$. Option 2: $P = \\dfrac{500\\,\\text{MW}}{0.40} = 1250\\,\\text{MW}$, and the electricity produced is $0.45 \\cdot 1250\\,\\text{MW} = 562.5\\,\\text{MW}$, which is $262.5\\,\\text{MW}$ more than needed. Option 3: $P = \\dfrac{500\\,\\text{MW} + 3 \\cdot 300\\,\\text{MW}}{0.40 + 3 \\cdot 0.45} = \\dfrac{1400\\,\\text{MW}}{1.75} = 800\\,\\text{MW}$.\n\n**Answer:** $800\\,\\text{MW}$, two significant figures. The limiting values are the efficiencies $0.40$ and $0.45$ (two figures); the needs of the city $300\\,\\text{MW}$ and $500\\,\\text{MW}$ and the coefficient of performance $3.0$ are design values of the problem that are read as having at least two figures ($3.0 \\cdot 10^2$, $5.0 \\cdot 10^2$), so the result is $8.0 \\cdot 10^2\\,\\text{MW}$.\n\n**Reasonableness:** Check the balance again: the electric power of the pump is $0.45 \\cdot 800\\,\\text{MW} - 300\\,\\text{MW} = 60\\,\\text{MW}$ and it gives out heat $3 \\cdot 60\\,\\text{MW} = 180\\,\\text{MW}$, of which $120\\,\\text{MW}$ comes from the waste water. The plant gives heat $0.40 \\cdot 800\\,\\text{MW} = 320\\,\\text{MW}$, and together $320\\,\\text{MW} + 180\\,\\text{MW} = 500\\,\\text{MW}$, as needed. The losses of the plant, $0.15 \\cdot 800\\,\\text{MW} = 120\\,\\text{MW}$, are made up by the $120\\,\\text{MW}$ taken from the waste water. Option 3 needs only $40\\,\\%$ of the fuel of option 1."
       }
     },
     {
@@ -362,7 +362,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A large heat pump that produces district heating takes heat from purified waste water and gives it to the district heating network. The electric power of the pump is 9.00 MW and its coefficient of performance is 3.50. How much heat power does the pump take from the waste water? Give the answer in megawatts.",
+      "prompt": "A large heat pump that produces district heating takes heat from purified waste water and gives it to the district heating network. The electric power of the pump is $9.00\\,\\text{MW}$ and its coefficient of performance is 3.50. How much heat power does the pump take from the waste water? Give the answer in megawatts.",
       "answer": 22.5,
       "unit": "MW",
       "tolerance": 0.03,
@@ -374,7 +374,7 @@
       "mistakes": [
         {
           "value": 31.5,
-          "feedback": "This is the power given to the district heating network. Of it, 9.00 MW is electricity used by the pump, so the waste water supplies $31.5\\,\\text{MW} - 9.00\\,\\text{MW}$."
+          "feedback": "This is the power given to the district heating network. Of it, $9.00\\,\\text{MW}$ is electricity used by the pump, so the waste water supplies $31.5\\,\\text{MW} - 9.00\\,\\text{MW}$."
         },
         {
           "value": 2.57,
@@ -413,10 +413,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Heat pump",
+      "prompt": "A heat pump uses $1.0\\,\\text{kWh}$ of electricity and at the same time gives $3.0\\,\\text{kWh}$ of heat to the house. Which statement is true?",
+      "choices": [
+        {
+          "text": "The pump creates an extra $2.0\\,\\text{kWh}$ of energy, because it is such an efficient device.",
+          "feedback": "No device creates energy out of nothing: energy is always conserved. The pump is effective because it transfers heat, not because it produces it. The extra $2.0\\,\\text{kWh}$ has been taken from the outdoor air."
+        },
+        {
+          "text": "The pump takes $2.0\\,\\text{kWh}$ of heat from the outdoor air, and the heat given out indoors is the sum of the heat taken from outside and the electrical energy.",
+          "correct": true,
+          "feedback": "Correct. By conservation of energy, $Q_\\text{indoors} = Q_\\text{outdoors} + E_\\text{el}$, so $Q_\\text{outdoors} = 3.0\\,\\text{kWh} - 1.0\\,\\text{kWh} = 2.0\\,\\text{kWh}$. The pump transfers heat from the cold outdoor air to the warm indoors, and this takes electricity. The coefficient of performance is $\\varepsilon = 3.0\\,\\text{kWh} / 1.0\\,\\text{kWh} = 3.0$."
+        },
+        {
+          "text": "In the pump, electricity turns into heat with a threefold efficiency.",
+          "feedback": "Efficiency cannot be over $100\\,\\%$, because you cannot get more energy out of electricity than went in. An electric resistor would turn $1.0\\,\\text{kWh}$ of electricity into exactly $1.0\\,\\text{kWh}$ of heat. The coefficient of performance $3.0$ of a heat pump is not the same as efficiency, because most of the heat given out has been transferred from outside."
+        },
+        {
+          "text": "The extra heat comes from friction and other losses in the pump.",
+          "feedback": "Friction and losses do turn part of the electricity into heat, but that is part of the electrical energy $1.0\\,\\text{kWh}$, and it cannot explain two extra kilowatt-hours. Most of the heat given out is heat that has been transferred from the outdoor air."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Graph and calculation",
+      "title": "3. Graph and calculation",
       "prompt": "The $(V, p)$ graph of a gas is a horizontal line segment at the height $p = 150\\,\\text{kPa}$, starting at $V = 2.0\\,\\text{l}$ and ending at $V = 5.0\\,\\text{l}$. How much work $W_\\text{g}$ does the gas do? Give the answer in joules.",
       "answer": 450,
       "unit": "J",
@@ -442,21 +468,21 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "prompt": "Your friend suggests: “Let’s build such a good power plant that it needs no condenser at all. Then all the energy of the fuel becomes electricity.” Explain why this is not possible, and say how the heat of the condenser can still be put to use.",
       "criteria": [
         "I say that a heat engine must always give up part of the heat to a colder environment (the second law), so $\\eta < 100\\,\\%$.",
         "I use conservation of energy: $Q_1 = W + Q_2$, so the heat given up is the part that does not become work.",
         "I distinguish reducing losses (friction) from the fact that heat must be given up even in principle.",
-        "I say that in combined heat and power production the heat given up is led to the district heating network, which raises the overall efficiency to 85–90 %."
+        "I say that in combined heat and power production the heat given up is led to the district heating network, which raises the overall efficiency to 85–$90\\,\\%$."
       ],
-      "model": "A heat engine turns heat into work only when part of the heat is given up to a colder environment; this is the second law of thermodynamics. The piston of the simulation showed the reason: for the piston to be brought back with less work than it took to raise it, the gas has to be cooled. In a power plant the condenser does the same: without it the steam would not condense back into water, and the cycle could not continue. Energy is conserved, $Q_1 = W + Q_2$, so the part $W$ that becomes electricity is always smaller than the heat $Q_1$ obtained from the fuel. Reducing friction raises the efficiency somewhat, but the heat $Q_2$ that has to be given up cannot be removed. The heat of the condenser can, however, be led to the district heating network instead of being released into the sea. A combined heat and power plant of this kind gets 85–90 % of the energy of the fuel as useful electricity and heat together."
+      "model": "A heat engine turns heat into work only when part of the heat is given up to a colder environment; this is the second law of thermodynamics. The piston of the simulation showed the reason: for the piston to be brought back with less work than it took to raise it, the gas has to be cooled. In a power plant the condenser does the same: without it the steam would not condense back into water, and the cycle could not continue. Energy is conserved, $Q_1 = W + Q_2$, so the part $W$ that becomes electricity is always smaller than the heat $Q_1$ obtained from the fuel. Reducing friction raises the efficiency somewhat, but the heat $Q_2$ that has to be given up cannot be removed. The heat of the condenser can, however, be led to the district heating network instead of being released into the sea. A combined heat and power plant of this kind gets 85–$90\\,\\%$ of the energy of the fuel as useful electricity and heat together. This is the overall efficiency: the heat $Q_2$ is still given up, but it is put to use, and no more electricity is obtained."
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. First answer them yourself, and only then open the answer."
+      "text": "Finally, two quick questions. First answer them yourself, and only then open the answer."
     }
   ]
 }

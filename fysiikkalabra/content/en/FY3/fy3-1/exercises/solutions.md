@@ -29,14 +29,15 @@
 **Reasonableness:** On Earth the instrument's weight would be $30\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 294.3\,\text{N}$. The Moon's $g$ is about one sixth of the Earth's value, and $\dfrac{294.3\,\text{N}}{6} \approx 49\,\text{N}$, so the result agrees.
 
 ## fy3-1-L1-04
-**Given:** $F_1 = 4.0\,\text{N}$ and its extension $x_1 = 2.5\,\text{cm}$; a new extension $x = 6.0\,\text{cm}$
+**Given:** the measurement points of the graph at grid crossings; the extension of the spring with the object $x = 3.5\,\text{cm}$
 **Find:** the force $F$ in newtons
-**Principle:** The extension of the spring is directly proportional to the force (the spring is not stretched too far), so the ratio of extension to force stays the same. That is why the known pair $(F_1, x_1)$ lets us work out the force at the second extension.
-**Formula:** $\dfrac{F}{F_1} = \dfrac{x}{x_1}$, so $F = \dfrac{F_1 x}{x_1}$
+**Principle:** The extension of the spring is directly proportional to the force (the spring is not stretched too far), so the points lie on a straight line through the origin and the ratio $x/F$ is the same everywhere. The unknown force does not have to be read between the points by eye: it is calculated from the ratio.
+**Reading the graph:** Read two points from the grid crossings: $(4\,\text{N};\ 2\,\text{cm})$ and $(10\,\text{N};\ 5\,\text{cm})$. In both, $x/F = 0.5\,\text{cm/N}$, so the points lie on the same straight line through the origin. The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm})$ and $(8\,\text{N};\ 4\,\text{cm})$, so the force must be between $6\,\text{N}$ and $8\,\text{N}$. An answer read by eye, $6.8$–$7.2\,\text{N}$, is accepted.
+**Formula:** $\dfrac{x}{F} = \dfrac{x_1}{F_1}$, so $F = \dfrac{F_1 x}{x_1}$
 **Conversions:** No conversions are needed: the centimetres cancel in the ratio $\dfrac{x}{x_1}$ and the force comes out in newtons.
-**Substitution:** $F = \dfrac{4.0\,\text{N} \cdot 6.0\,\text{cm}}{2.5\,\text{cm}} = 9.6\,\text{N}$
-**Answer:** $9.6\,\text{N}$, two significant figures like the given values.
-**Reasonableness:** The extension is $\dfrac{6.0}{2.5} = 2.4$ times as great, so the force must be $2.4 \cdot 4.0\,\text{N} = 9.6\,\text{N}$ too. The order of magnitude is right: the extension is more than double, so the force is almost $10\,\text{N}$, more than double $4.0\,\text{N}$.
+**Substitution:** $F = \dfrac{4\,\text{N} \cdot 3.5\,\text{cm}}{2\,\text{cm}} = 7.0\,\text{N}$
+**Answer:** $F = 7.0\,\text{N}$, two significant figures like the extension $3.5\,\text{cm}$.
+**Reasonableness:** The extension $3.5\,\text{cm}$ is $1.75$ times that of the point $(4\,\text{N};\ 2\,\text{cm})$, and $1.75 \cdot 4\,\text{N} = 7.0\,\text{N}$. The result is between $6\,\text{N}$ and $8\,\text{N}$, as it should be.
 
 ## fy3-1-L1-05
 **Given:** $m = 2.5\,\text{kg}$, $g_\text{Jupiter} = 24.8\,\text{m/s}^2$

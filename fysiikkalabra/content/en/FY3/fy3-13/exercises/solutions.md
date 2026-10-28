@@ -11,7 +11,7 @@
 ## fy3-13-L1-02
 **Given:** two points on the line: $(\theta_1, p_1) = (20.0\,{}^\circ\text{C};\ 105.0\,\text{kPa})$ and $(\theta_2, p_2) = (80.0\,{}^\circ\text{C};\ 127.0\,\text{kPa})$
 **Find:** the slope $k$ of the line in the unit $\tfrac{\text{kPa}}{{}^\circ\text{C}}$
-**Principle:** In a closed container, the pressure is a linear function of temperature, so the slope of the line is the same everywhere: it tells you how many kilopascals the pressure rises per degree Celsius. So you can calculate it from any two points on the line.
+**Principle:** In a closed rigid container, the pressure of a dilute gas is a linear function of temperature within the measurement range, so the slope of the line is the same everywhere: it tells you how many kilopascals the pressure rises per degree Celsius. So you can calculate it from any two points on the line.
 **Formula:** $k = \dfrac{\Delta p}{\Delta\theta}$, where $\Delta p = p_2 - p_1$ and $\Delta\theta = \theta_2 - \theta_1$, so $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$
 **Conversions:** No units are converted, because the slope is asked for in the unit $\text{kPa}/{}^\circ\text{C}$. The temperature difference is $\Delta\theta = 80.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 60.0\,{}^\circ\text{C}$, and it is the same in kelvins.
 **Substitution:** $k = \dfrac{(127.0 - 105.0)\,\text{kPa}}{(80.0 - 20.0)\,{}^\circ\text{C}} = \dfrac{22.0\,\text{kPa}}{60.0\,{}^\circ\text{C}} = 0.36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
@@ -21,7 +21,7 @@
 ## fy3-13-L1-03
 **Given:** the group's result $\theta_0 = -267.90\,{}^\circ\text{C}$ and the accepted value $\theta_\text{acc} = -273.15\,{}^\circ\text{C}$
 **Find:** the deviation $d$ in degrees Celsius
-**Principle:** The error of a measurement result is its distance from the accepted value. A distance is always a positive number, whether the result is above or below the accepted value, so you take the absolute value of the difference.
+**Principle:** The error of a measurement is the difference between the result and the accepted value, and its sign tells the direction. The deviation asked for here is the magnitude of this difference, that is, the distance, which is positive whether the result is above or below the accepted value, so you take the absolute value of the difference.
 **Formula:** $d = |\theta_0 - \theta_\text{acc}|$
 **Conversions:** Both values are in degrees Celsius on the same scale. The difference of temperatures is the same in degrees Celsius and in kelvins, so no conversions are needed.
 **Substitution:** $d = |-267.90\,{}^\circ\text{C} - (-273.15\,{}^\circ\text{C})| = |5.25\,{}^\circ\text{C}| = 5.25\,{}^\circ\text{C}$
@@ -31,7 +31,7 @@
 ## fy3-13-L1-04
 **Given:** the temperature at zero pressure of the steeper limit line $\theta_{0,\text{max}} = -258\,{}^\circ\text{C}$ and of the shallower one $\theta_{0,\text{min}} = -284\,{}^\circ\text{C}$
 **Find:** the uncertainty of the result $\Delta\theta_0$ in degrees Celsius
-**Principle:** All the lines that pass through all the uncertainty bars fit the data equally well. The steepest and the shallowest of them bound the interval that contains the true absolute zero. The result is written in the form $\theta_0 \pm \Delta\theta_0$, so the uncertainty is half of the interval.
+**Principle:** All the lines that pass through all the uncertainty bars fit the data equally well. The steepest and the shallowest of them bound the interval where the true absolute zero probably lies. The result is written in the form $\theta_0 \pm \Delta\theta_0$, so the uncertainty is half of the interval.
 **Formula:** $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Conversions:** Both temperatures are in degrees Celsius, and their difference is the same in kelvins, so no conversions are needed.
 **Substitution:** $\Delta\theta_0 = \dfrac{-258\,{}^\circ\text{C} - (-284\,{}^\circ\text{C})}{2} = \dfrac{26\,{}^\circ\text{C}}{2} = 13\,{}^\circ\text{C}$
@@ -39,7 +39,7 @@
 **Reasonableness:** The midpoint of the interval is $\dfrac{-258 + (-284)}{2}\,{}^\circ\text{C} = -271\,{}^\circ\text{C}$, and $13\,{}^\circ\text{C}$ in each direction from it reaches exactly the limit values $-258\,{}^\circ\text{C}$ and $-284\,{}^\circ\text{C}$. The accepted value $-273.15\,{}^\circ\text{C}$ lies in the interval, so the result agrees with it.
 
 ## fy3-13-L1-05
-**Given:** the pressure gauge reading $p = 112\,\text{kPa}$ and the uncertainty of the gauge $\Delta p = 1.0\,\text{kPa}$
+**Given:** the pressure gauge reading $p = 112\,\text{kPa}$ and the estimated uncertainty of the pressure reading $\Delta p = 1.0\,\text{kPa}$
 **Find:** the relative uncertainty $\varepsilon$ as a percentage of the reading
 **Principle:** What an uncertainty means depends on how large it is compared with the measured value. The relative uncertainty is the quotient of the uncertainty and the reading, and multiplying it by $100\,\%$ gives the percentage.
 **Formula:** $\varepsilon = \dfrac{\Delta p}{p} \cdot 100\,\%$
@@ -61,12 +61,12 @@
 ## fy3-13-L2-02
 **Given:** two limit lines $p = 100\,\text{kPa} + 0.380\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (steeper) and $p = 102\,\text{kPa} + 0.350\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (shallower)
 **Find:** the uncertainty $\Delta\theta_0$ in degrees Celsius
-**Principle:** Both lines pass through the uncertainty bars of all the measurement points, so the true line lies between them. The temperatures at zero pressure of the limit lines bound the interval that contains absolute zero, and the uncertainty is half of this interval.
+**Principle:** Both lines pass through the uncertainty bars of all the measurement points, so the true line probably lies between them. The temperatures at zero pressure of the limit lines bound the estimated interval for the zero point, and the uncertainty is half of this interval.
 **Formula:** The zero pressure of each line follows from the condition $0 = p_0 + k\theta_0$, that is, $\theta_0 = -\dfrac{p_0}{k}$. The steeper line gives the value $\theta_{0,\text{max}}$ and the shallower one the value $\theta_{0,\text{min}}$, and $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Conversions:** No conversions are needed: $p_0$ is in kilopascals and $k$ in the unit $\text{kPa}/{}^\circ\text{C}$, so the quotient is in degrees Celsius.
 **Substitution:** $\theta_{0,\text{max}} = -\dfrac{100\,\text{kPa}}{0.380\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -263.16\,{}^\circ\text{C}$ and $\theta_{0,\text{min}} = -\dfrac{102\,\text{kPa}}{0.350\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -291.43\,{}^\circ\text{C}$. So $\Delta\theta_0 = \dfrac{-263.16\,{}^\circ\text{C} - (-291.43\,{}^\circ\text{C})}{2} = 14.14\,{}^\circ\text{C}$
 **Answer:** $14\,{}^\circ\text{C}$, two significant figures, because the zero points $-263\,{}^\circ\text{C}$ and $-291\,{}^\circ\text{C}$ are known to three figures, that is, in whole degrees, and their difference $28\,{}^\circ\text{C}$ is only a two-figure number; the divisor $2$ is exact.
-**Reasonableness:** The interval is $-277 \pm 14\,{}^\circ\text{C}$, since the midpoint is $\dfrac{-263.16 + (-291.43)}{2} = -277.3\,{}^\circ\text{C}$. The accepted value $-273.15\,{}^\circ\text{C}$ lies in the interval, so the result is consistent. The order of magnitude is the same as in the worked example of the chapter ($18\,{}^\circ\text{C}$), when the points and the uncertainty of the pressure gauge are similar.
+**Reasonableness:** The interval is $-277 \pm 14\,{}^\circ\text{C}$, since the midpoint is $\dfrac{-263.16 + (-291.43)}{2} = -277.3\,{}^\circ\text{C}$. The accepted value $-273.15\,{}^\circ\text{C}$ lies in the interval, so the result is consistent. The order of magnitude is the same as in the worked example of the chapter ($18\,{}^\circ\text{C}$), when the points and the uncertainty of the pressure reading are similar.
 
 ## fy3-13-L2-03
 **Given:** atmospheric pressure $p_\text{air} = 101.0\,\text{kPa}$; the gauge pressure from the gauge $p_\text{g,1} = 9.0\,\text{kPa}$ at the temperature $\theta_1 = 30.0\,{}^\circ\text{C}$ and $p_\text{g,2} = 31.0\,\text{kPa}$ at the temperature $\theta_2 = 90.0\,{}^\circ\text{C}$
@@ -81,12 +81,12 @@
 ## fy3-13-L2-04
 **Given:** the reading precision of the temperature $\Delta\theta = 0.50\,{}^\circ\text{C}$, the slope of the line $k = 0.36\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and the uncertainty of the pressure $\Delta p = 1.0\,\text{kPa}$
 **Find:** the change in pressure $\Delta p_\theta$ corresponding to the temperature uncertainty, as a percentage of the uncertainty $\Delta p$
-**Principle:** The measurement points lie on the line $p = p_0 + k\theta$, so an error $\Delta\theta$ in temperature moves the point along the line and corresponds to a pressure change $k\,\Delta\theta$. Once it is converted to a pressure, you can compare it directly with the uncertainty of the pressure gauge.
+**Principle:** The measurement points lie on the line $p = p_0 + k\theta$, so an error $\Delta\theta$ in temperature moves the point horizontally, and at the line it corresponds to a vertical deviation $k\,\Delta\theta$. Once it is converted to a pressure, you can compare it directly with the uncertainty of the pressure reading.
 **Formula:** $\Delta p_\theta = k\,\Delta\theta$ and the proportion $s = \dfrac{\Delta p_\theta}{\Delta p} \cdot 100\,\%$
 **Conversions:** No conversions are needed: the degrees Celsius cancel in the product $k\,\Delta\theta$, and the kilopascals cancel in the quotient. Multiplying by $100\,\%$ turns the ratio into a percentage.
 **Substitution:** $\Delta p_\theta = 0.36\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 0.50\,{}^\circ\text{C} = 0.18\,\text{kPa}$ and $s = \dfrac{0.18\,\text{kPa}}{1.0\,\text{kPa}} \cdot 100\,\% = 18\,\%$
 **Answer:** $18\,\%$, two significant figures, because the slope $0.36\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ is given to two figures; the uncertainties $0.50\,{}^\circ\text{C}$ and $1.0\,\text{kPa}$ also have two figures.
-**Reasonableness:** The temperature error corresponds to only about a fifth of the uncertainty of the pressure gauge, so the precision of the result is limited by the pressure gauge, not by the thermometer. Limiting case: the proportion would be $100\,\%$ if the temperature error were $1.0/0.36 = 2.8\,{}^\circ\text{C}$, so the thermometer would have to be much less precise than it is now.
+**Reasonableness:** The temperature error corresponds to only about a fifth of the uncertainty of the pressure reading, so the precision of the result is limited by the pressure gauge, not by the thermometer. Limiting case: the proportion would be $100\,\%$ if the temperature error were $1.0/0.36 = 2.8\,{}^\circ\text{C}$, so the thermometer would have to be much less precise than it is now.
 
 ## fy3-13-L3-01
 **Given:** the end points $106.0 \pm 1.0\,\text{kPa}$ at the temperature $20.0\,{}^\circ\text{C}$ and $137.0 \pm 1.0\,\text{kPa}$ at the temperature $100.0\,{}^\circ\text{C}$. The steepest limit line passes through the points $(20.0\,{}^\circ\text{C};\ 105.0\,\text{kPa})$ and $(100.0\,{}^\circ\text{C};\ 138.0\,\text{kPa})$, the shallowest through the points $(20.0\,{}^\circ\text{C};\ 107.0\,\text{kPa})$ and $(100.0\,{}^\circ\text{C};\ 136.0\,\text{kPa})$
@@ -106,14 +106,14 @@
 **Conversions:** The initial temperature is converted to kelvins: $T_0 = 0\,{}^\circ\text{C} = 273.15\,\text{K}$. The temperature $77.0\,\text{K}$ is already in kelvins. In the ratio $T/T_0$ the kelvins cancel, so the pressure stays in kilopascals.
 **Substitution:** $p = 100.0\,\text{kPa} \cdot \dfrac{77.0\,\text{K}}{273.15\,\text{K}} = 28.19\,\text{kPa}$
 **Answer:** $28.2\,\text{kPa}$, three significant figures, because the temperature $77.0\,\text{K}$ is given to three figures ($273.15\,\text{K}$ is a definition and does not limit). The line cannot be extended all the way to zero, because nitrogen condenses into a liquid at about $67\,\text{K}$. Then the amount of gas decreases, the pressure falls faster than the line predicts, and the condition "amount of substance constant" no longer holds.
-**Reasonableness:** The temperature $77.0\,\text{K}$ is about $0.28$ times the temperature $273.15\,\text{K}$, and the pressure is in the same proportion: about $0.28 \cdot 100 = 28\,\text{kPa}$. At the temperature $67\,\text{K}$ the line would give a pressure of $100 \cdot 67/273.15 = 24.5\,\text{kPa}$, but in reality the gas has already liquefied there. So extrapolation is reliable only as far as the assumption of a gas holds true.
+**Reasonableness:** The temperature $77.0\,\text{K}$ is about $0.28$ times the temperature $273.15\,\text{K}$, and the pressure is in the same proportion: about $0.28 \cdot 100 = 28\,\text{kPa}$. At the temperature $67\,\text{K}$ the line would give a pressure of $100 \cdot 67/273.15 = 24.5\,\text{kPa}$, but at about that temperature the gas starts to condense into a liquid, and after that the pressure no longer follows the line. So extrapolation is reliable only as far as the assumption of a gas holds true.
 
 ## fy3-13-L3-03
 **Given:** group A's result $\theta_0 = -262.00\,{}^\circ\text{C}$ and uncertainty $\Delta\theta_0 = 6.00\,{}^\circ\text{C}$; the accepted value $\theta_\text{acc} = -273.15\,{}^\circ\text{C}$
 **Find:** the ratio $n$ of the deviation to the uncertainty (how many times $\Delta\theta_0$ fits between the result and the accepted value) and the reason for the disagreement
-**Principle:** A result agrees with the accepted value if the value lies in the uncertainty interval $\theta_0 \pm \Delta\theta_0$, that is, when the deviation is at most one uncertainty. The ratio $n$ tells you how much the deviation exceeds this limit.
+**Principle:** In this chapter a result is considered consistent with the accepted value if the value lies in the uncertainty interval $\theta_0 \pm \Delta\theta_0$, that is, when the deviation is at most one uncertainty. The ratio $n$ tells you how many times larger the deviation is than the uncertainty. The uncertainty is not an absolute limit, so a deviation alone does not prove an error, but the larger $n$ is, the more likely it is that the measurement has a systematic error or that the uncertainty was estimated too small.
 **Formula:** $n = \dfrac{|\theta_0 - \theta_\text{acc}|}{\Delta\theta_0}$
 **Conversions:** All temperatures are in degrees Celsius, and temperature differences are the same in kelvins. The ratio $n$ is dimensionless, so no conversions are needed.
 **Substitution:** $n = \dfrac{|-262.00\,{}^\circ\text{C} - (-273.15\,{}^\circ\text{C})|}{6.00\,{}^\circ\text{C}} = \dfrac{11.15\,{}^\circ\text{C}}{6.00\,{}^\circ\text{C}} = 1.858$
 **Answer:** $1.86$ times, three significant figures, because the difference $11.15\,{}^\circ\text{C}$ and the uncertainty $6.00\,{}^\circ\text{C}$ are given to three figures (the result $-262.00\,{}^\circ\text{C}$ and the accepted value are given to the hundredth).
-**Reasonableness:** The deviation $11.15\,{}^\circ\text{C}$ is almost two uncertainties ($2 \cdot 6.00 = 12.0$). The uncertainty interval $-268\ldots -256\,{}^\circ\text{C}$ does not contain the accepted value $-273.15\,{}^\circ\text{C}$, so the result is not consistent with it. The cause may be a systematic error, for example an imprecise thermometer, an air leak or a change in the volume of the flask, or an uncertainty that was estimated too small. Check: $1.858 \cdot 6.00\,{}^\circ\text{C} = 11.15\,{}^\circ\text{C}$.
+**Reasonableness:** The deviation $11.15\,{}^\circ\text{C}$ is almost two uncertainties ($2 \cdot 6.00 = 12.0$). The uncertainty interval $-268\ldots -256\,{}^\circ\text{C}$ does not contain the accepted value $-273.15\,{}^\circ\text{C}$, so by this rule the result is not consistent with it. The cause may be a systematic error, for example an imprecise thermometer, an air leak or a change in the volume of the flask, or an uncertainty that was estimated too small. Check: $1.858 \cdot 6.00\,{}^\circ\text{C} = 11.15\,{}^\circ\text{C}$.

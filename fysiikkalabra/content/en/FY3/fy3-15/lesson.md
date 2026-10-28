@@ -95,9 +95,9 @@ In a condensing power plant the chain is fuel, boiler, turbine and condenser, ge
   <foreignObject x="70" y="368" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$=100\,\text{MW}$</div></foreignObject>
 </svg>
 
-The biggest loss is not caused by friction or poor technology. It is the waste heat of the steam cycle, which a heat engine cannot avoid: part of the heat must be released to a colder environment, as was seen in the chapter Work done by a gas and the heat engine. A hydropower plant, a wind turbine and a solar panel are not heat engines, so they do not have this compulsory loss: the efficiency of a hydropower plant is about 90 %, of a wind turbine 40–45 % and of a solar panel about 20 %. However, the denominator of these numbers is the power of flowing water, wind or radiation and not bought fuel, so they cannot be compared directly with the efficiency of a combustion plant.
+The biggest loss is not mainly caused by friction or poor technology. Most of it is the waste heat of the steam cycle, which a heat engine cannot avoid completely: part of the heat must be released to a colder environment, as was seen in the chapter Work done by a gas and the heat engine. A hydropower plant, a wind turbine and a solar panel are not heat engines, so they do not have this compulsory loss: the efficiency of a hydropower plant is about $90\,\%$, of a wind turbine $40$–$45\,\%$ and of a solar panel about $20\,\%$. However, the denominator of these numbers is the power of flowing water, wind or radiation and not bought fuel, so they cannot be compared directly with the efficiency of a combustion plant.
 
-In combined heat and power production the heat of the condenser is led into the district heating network. For the water to warm up enough, the steam is condensed at a higher temperature, and less electricity is obtained from the turbine. The graph shows an example plant with a fuel power of 400 MW: as the district heating power grows, the electric power decreases a little, but the waste heat decreases much more. In the graph the vertical distance across a layer is power, and the total height of the three layers is always 400 MW.
+In combined heat and power production the heat of the condenser is led into the district heating network. For the water to warm up enough, the steam is condensed at a higher temperature, and less electricity is obtained from the turbine. The graph shows an example plant with a fuel power of $400\,\text{MW}$: as the district heating power grows, the electric power decreases a little, but the waste heat decreases much more. In the graph the vertical distance across a layer is power, and the total height of the three layers is always $400\,\text{MW}$.
 
 <svg viewBox="0 0 600 380" role="img" aria-label="Stacked area graph of a combined heat and power plant with a fuel power of 400 MW. The horizontal axis shows the district heating power 0–250 MW and the vertical axis shows power. As the district heating power grows from zero to 232 MW, the electric power decreases from 160 MW to 120 MW, district heating grows and waste heat decreases from 240 MW to 48 MW. The total height of the three layers is always 400 MW. The graph is to scale, and the dependence of electricity and heat is approximately a straight line." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy315-waste" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#ffffff"/><line x1="0" y1="0" x2="0" y2="10" stroke="#c9c2b2" stroke-width="3"/></pattern></defs>
@@ -140,7 +140,7 @@ In combined heat and power production the heat of the condenser is led into the 
   <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_0 = 400\,\text{MW}$</div></foreignObject>
 </svg>
 
-The overall efficiency rises in combined production to as much as 85–90 %, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is good only for heating, and its network reaches only a town. That is why the ratio of electricity to heat in a combined heat and power plant is chosen according to the need for heat: in summer little heat is needed and the plant produces almost only electricity, in winter in frosty weather a lot of heat is needed.
+The overall efficiency rises in combined production to as much as 85–$90\,\%$, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is good only for heating, and its network reaches only a town. That is why the ratio of electricity to heat in a combined heat and power plant is chosen according to the need for heat: in summer little heat is needed and the plant produces almost only electricity, in winter in frosty weather a lot of heat is needed.
 
 ## Formula: Efficiency of a power plant
 The efficiency of one step or of the whole plant is the ratio of the useful power to the power brought in, and the power of waste heat is the part that is not put to use:
@@ -162,7 +162,7 @@ Substituting the upper equation into the lower one gives the efficiency of the w
 ```latex
 \eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3
 ```
-where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler, steam cycle, generator and transformer) and $P_3$ is the electric power. The efficiencies are multiplied, not added. Because every factor is less than 1, the efficiency of the chain is less than that of the weakest step. In the figure the bars $P_1$, $P_2$ and $P_3$ are obtained from the previous bar by multiplying it by the efficiency of the step, $\eta_1$, $\eta_2$ or $\eta_3$.
+where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler, steam cycle, generator and transformer) and $P_3$ is the electric power. The efficiencies are multiplied, not added. In a real power plant every factor is less than 1, so the efficiency of the chain is less than that of the weakest step. In the figure the bars $P_1$, $P_2$ and $P_3$ are obtained from the previous bar by multiplying it by the efficiency of the step, $\eta_1$, $\eta_2$ or $\eta_3$.
 
 <svg viewBox="0 0 600 480" role="img" aria-label="Bar chart of how power decreases along an energy chain. The fuel power P0 is 500 MW, after the boiler P1 is 460 MW, after the steam cycle P2 is 212 MW and after the generator and transformer P3 is 200 MW. Each bar is lower than the previous one, and the pale part on top of a bar, bounded by a dashed line, is the power lost in the previous step; the loss is marked on each: 40 MW in the boiler, 248 MW in the steam cycle and 12 MW in the generator and transformer. The efficiencies of the steps are 0.92, 0.46 and 0.945, and their product is 0.40. The bars are to scale." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -201,7 +201,7 @@ where $P_\text{s}$ is the electric power (W) and $P_\text{k}$ is the district he
 ```latex
 P_\text{L} = c\,q_m\,\Delta T
 ```
-where $P_\text{L}$ is the heat power transferred from the condenser to the water (W), $c$ is the specific heat capacity of water (4190 J/(kg·K)), $q_m = m/t$ is the water flow (kg/s) and $\Delta T$ is the rise in the temperature of the water (K). The heat power of the condenser is most of the waste heat but not all of the waste heat $P_\text{h}$: part of the waste heat leaves with the flue gases and as the losses of the generator and transformer.
+where $P_\text{L}$ is the heat power transferred from the condenser to the water (W), $c$ is the specific heat capacity of water ($4190\,\text{J/(kg}\cdot\text{K)}$), $q_m = m/t$ is the water flow (kg/s) and $\Delta T$ is the rise in the temperature of the water (K). The heat power of the condenser is most of the waste heat but not all of the waste heat $P_\text{h}$: part of the waste heat leaves with the flue gases and as the losses of the generator and transformer.
 
 <svg viewBox="0 0 600 310" role="img" aria-label="Schematic diagram of a condenser. Sea water flows in a pipe from left to right through the condenser, and its temperature rises from T1 to T2. The colour of the pipe changes from blue to red. The steam in the upper part of the condenser releases heat to the water with power P_L, shown by the orange arrow, and the steam condenses into water in the lower part. The water flow q_m is the same at both ends. Schematic diagram, not to scale." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-pipe" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="400" y2="0"><stop offset="0" stop-color="#1971c2"/><stop offset="0.25" stop-color="#1971c2"/><stop offset="0.75" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy315-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -223,7 +223,7 @@ where $P_\text{L}$ is the heat power transferred from the condenser to the water
 </svg>
 
 ## Worked example
-The fuel power of a condensing power plant is 600 MW. The efficiency of the boiler is 0.910, of the steam cycle 0.440 and of the generator and transformer 0.950. What is the electric power of the plant, what is the efficiency of the whole plant, and how much power is transferred to the surroundings as waste heat?
+The fuel power of a condensing power plant is $600\,\text{MW}$. The efficiency of the boiler is 0.910, of the steam cycle 0.440 and of the generator and transformer 0.950. What is the electric power of the plant, what is the efficiency of the whole plant, and how much power is transferred to the surroundings as waste heat?
 
 <!-- vaihe -->
 
@@ -266,21 +266,21 @@ From this the efficiency is $\eta = \tfrac{228.228\,\text{MW}}{600\,\text{MW}} =
 
 <!-- vaihe -->
 
-**Reasonableness.** Estimate: $0.9 \cdot 0.45 \cdot 0.95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, which matches the result. The efficiency is smaller than that of the weakest step, 0.440, as a product should be, and fits the usual 35–45 % of a condensing power plant. The balance works out: the electricity $228\,\text{MW}$ and the waste $372\,\text{MW}$ add up to $600\,\text{MW}$. The power transferred to the condenser is $P_1 - P_2 = 546\,\text{MW} - 240.24\,\text{MW} \approx 306\,\text{MW}$, which is over half of the energy of the fuel.
+**Reasonableness.** Estimate: $0.9 \cdot 0.45 \cdot 0.95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, which matches the result. The efficiency is smaller than that of the weakest step, 0.440, as a product should be, and fits the usual efficiency of a condensing power plant of about $40\,\%$ (typically $38$–$42\,\%$). The balance works out: the electricity $228\,\text{MW}$ and the waste $372\,\text{MW}$ add up to $600\,\text{MW}$. The power transferred to the condenser is $P_1 - P_2 = 546\,\text{MW} - 240.24\,\text{MW} \approx 306\,\text{MW}$, which is over half of the energy of the fuel.
 
-The loss of the boiler is only 54 MW and that of the generator and transformer 12 MW, so improvements should be aimed at the steam cycle and after that at the use of the heat of the condenser.
+The loss of the boiler is only $54\,\text{MW}$ and that of the generator and transformer $12\,\text{MW}$, so improvements should be aimed at the steam cycle and after that at the use of the heat of the condenser.
 
 ## Common misconception
-Many people think that waste heat is energy that has been lost. Energy does not disappear: it is transferred as heat to the sea or the air, where its temperature is so low that it can no longer be turned into electricity. In combined production the same heat is led into the district heating network and heats homes.
+Many people think that waste heat is energy that has been lost. Energy does not disappear: it is transferred as heat to the sea or the air, which warms up only a little: from water or air so close to the temperature of the surroundings no work or electricity can be obtained any more. In combined production the same heat is led into the district heating network and heats homes.
 
-Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of 88 % of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating only for heating.
+Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of $88\,\%$ of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating only for heating.
 
 ## Summary
 - A power plant converts energy step by step in an energy chain, and in each step part of it is transferred to the surroundings as heat.
 - Efficiency is $\eta = P_\text{useful}/P_0$, and the power of waste heat is $P_\text{h} = P_0 - P_\text{useful}$.
 - The efficiency of the chain is the product of the efficiencies of the steps, $\eta = \eta_1\,\eta_2\,\eta_3$, and it is smaller than that of the weakest step.
-- The biggest loss of a condensing power plant is the heat transferred to the condenser of the steam cycle, which a heat engine cannot avoid. The efficiency is about 40 %.
-- In combined heat and power production the heat of the condenser is led into the district heating network, and the overall efficiency is $\eta_\text{tot} = (P_\text{s} + P_\text{k})/P_0$, about 85–90 %. Then less electricity is obtained.
+- The biggest loss of a condensing power plant is the heat transferred to the condenser of the steam cycle, which a heat engine cannot avoid completely. The efficiency of electricity production is about $40\,\%$ (typically $38$–$42\,\%$).
+- In combined heat and power production the heat of the condenser is led into the district heating network, and the overall efficiency is $\eta_\text{tot} = (P_\text{s} + P_\text{k})/P_0$, about 85–$90\,\%$. Then less electricity is obtained.
 - A hydropower plant, a wind turbine and a solar panel are not heat engines, but the denominator of their efficiencies is the power of flowing water, wind or radiation, not bought fuel.
 - The cooling water of the condenser receives the heat power $P_\text{L} = c\,q_m\,\Delta T$, which is most of the waste heat.
 

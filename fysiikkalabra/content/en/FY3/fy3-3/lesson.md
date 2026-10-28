@@ -167,7 +167,7 @@ When you study a phenomenon, you separate the part of the world you are looking 
   <foreignObject x="412" y="105.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{surroundings}$</div></foreignObject>
 </svg>
 
-The micro model of matter explains why this happens. A gas consists of particles that move all the time in all directions and collide with each other and with the walls of the container. Temperature tells you the average kinetic energy of the particles: the hotter the gas, the faster the particles move on average. Pressure arises when particles hit the wall and each collision pushes the wall a little. When the volume decreases and the temperature stays the same, the particles have less room and hit the wall more often, so the pressure increases, but a single collision does not become harder. When the temperature rises but the volume stays the same, the particles hit the wall both more often and harder, so the pressure increases. This is why the tyre feels harder in summer.
+The micro model of matter explains why this happens. A gas consists of particles that move all the time in all directions and collide with each other and with the walls of the container. The temperature of a gas tells you the average kinetic energy of the particles: the hotter the gas, the faster the particles move on average. Pressure arises when particles hit the wall and each collision pushes the wall a little. When the volume decreases and the temperature stays the same, the particles have less room and hit the wall more often, so the pressure increases, but a single collision does not become harder. When the temperature rises but the volume stays the same, the particles hit the wall both more often and harder, so the pressure increases. This is why the tyre feels harder in summer.
 
 <svg data-fig="micro-model" viewBox="0 0 600 300" role="img" aria-label="Schematic diagram of the micro model of a gas: two closed containers of the same size with the same number of particles. In the cold gas the arrows showing speed are short, in the hot gas they are long, and the pressure p2 of the hot gas is greater than the pressure p1 of the cold gas." style="max-width:100%;font-size:24px">
   <foreignObject x="107.5" y="25.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{cold gas}$</div></foreignObject>
@@ -216,7 +216,10 @@ The micro model of matter explains why this happens. A gas consists of particles
 
 The figure is schematic: the length of an arrow shows the speed of a particle. The containers are the same size and contain the same number of particles.
 
-Temperature is measured on the Celsius scale, where 0 °C is the freezing point of water and 100 °C is the boiling point of water at normal pressure, and on the Kelvin scale. The zero of the Kelvin scale is absolute zero, the lowest possible temperature. At absolute zero the average kinetic energy of the particles is at its smallest, and nothing can be colder. A Celsius degree and a kelvin are the same size, so a temperature difference is the same in kelvins and in degrees Celsius. When the volume and the amount of gas stay the same, the pressure of the gas is directly proportional to the temperature in kelvins. The average kinetic energy of the particles is also directly proportional to the temperature in kelvins, so ratios of temperatures are compared in kelvins. The connection between pressure, volume and temperature is studied in more detail in the chapter *Changes of state of a gas and Boyle's law*.
+Temperature is measured on the Celsius scale, where $0\,{}^\circ\text{C}$ is the freezing point of water and $100\,{}^\circ\text{C}$ is the boiling point of water at normal pressure, and on the Kelvin scale. The zero of the Kelvin scale is absolute zero, the lowest possible temperature. At absolute zero the average kinetic energy of the particles is at its smallest, and nothing can be colder. A Celsius degree and a kelvin are the same size, so a temperature difference is the same in kelvins and in degrees Celsius. When the volume and the amount of gas stay the same and the gas is dilute, that is, far from liquefying, the pressure of the gas is directly proportional to the temperature in kelvins. The average kinetic energy of the particles of a dilute gas is also directly proportional to the temperature in kelvins, so ratios of temperatures are compared in kelvins. The connection between pressure, volume and temperature is studied in more detail in the chapter *Changes of state of a gas and Boyle's law*.
+
+### Limits of the model
+The statement "temperature tells you the average kinetic energy of the particles" holds as such for a dilute gas whose particles interact with each other only when they collide. Then the temperature is proportional to the average kinetic energy of the translational motion of the particles. In a liquid and in a solid the particles are close to each other and vibrate, pulled by their neighbours. Temperature describes the strength of the thermal motion of the particles in them too, but the energy of the substance also includes the energy of the interactions between the particles. So temperature is not the same thing as the energy of a substance: ice and water can have the same temperature $0\,{}^\circ\text{C}$, although water of the same mass has more internal energy than ice (chapters *Internal energy, heat and conservation of energy* and *Changes of state*). Even at absolute zero not all motion of the particles stops, but its energy is the smallest possible.
 
 ## Formula: Kelvin scale
 The conversion of a Celsius temperature $\theta$ to kelvins is:
@@ -225,7 +228,7 @@ T = \theta + 273.15
 ```
 where $T$ is the temperature in kelvins (K) and $\theta$ is the temperature in degrees Celsius (°C). In practice the number 273 is often enough. For kelvins you do not use the word degree: you say "300 kelvins", not "300 degrees kelvin".
 
-Absolute zero is therefore 0 K = −273.15 °C. A temperature in kelvins cannot be negative, but a Celsius temperature can.
+Absolute zero is therefore $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$. A temperature in kelvins cannot be negative, but a Celsius temperature can.
 
 <svg data-fig="kelvin-scale" viewBox="0 0 600 250" role="img" aria-label="The Kelvin scale and the Celsius scale side by side to scale: 0 K is −273.15 °C (absolute zero), 273.15 K is 0 °C (water freezes) and 373.15 K is 100 °C (water boils). The intervals of the scales are the same size, and you get the reading in kelvins by adding 273.15 to the Celsius reading." style="max-width:100%;font-size:24px">
   <line x1="58" y1="112" x2="533" y2="112" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -255,7 +258,7 @@ Absolute zero is therefore 0 K = −273.15 °C. A temperature in kelvins cannot 
   <foreignObject x="553" y="167.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
 </svg>
 
-The figure is drawn to scale. The upper scale is the Kelvin scale and the lower scale is the Celsius scale; the interval from 0 °C to 100 °C is as long as the interval from 273.15 K to 373.15 K.
+The figure is drawn to scale. The upper scale is the Kelvin scale and the lower scale is the Celsius scale; the interval from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ is as long as the interval from $273.15\,\text{K}$ to $373.15\,\text{K}$.
 
 ## Worked example
 A closed rigid container holds gas, so its volume and the amount of substance stay the same. The pressure of the gas is measured at different temperatures:
@@ -322,15 +325,15 @@ Use extrapolation to find the temperature at which the pressure of the gas would
   <foreignObject x="413.5" y="152" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{measurements}$</span></div></foreignObject>
 </svg>
 
-The vertical axis is drawn at the left edge of the figure, at about −300 °C, and not at $\theta = 0$. The solid line is the measured range and the dashed line is the extrapolation.
+The vertical axis is drawn at the left edge of the figure, at about $-300\,{}^\circ\text{C}$, and not at $\theta = 0$. The solid line is the measured range and the dashed line is the extrapolation.
 
 <!-- vaihe -->
 
-**Principle.** The container is closed and rigid, so the amount of gas and the volume stay the same, and the pressure depends only on the temperature. The data points are on a straight line, so the pressure changes steadily with the temperature, and the equation of the line gives the pressure also outside the measured range. The pressure is zero where the line crosses the temperature axis.
+**Principle.** The container is closed and rigid, so the amount of gas and the volume stay the same, and the pressure depends only on the temperature. The data points are on a straight line, so the pressure changes steadily with the temperature. The equation of the line gives an estimate of the pressure also outside the measured range, if you assume that the dependence stays the same. The pressure is zero where the line crosses the temperature axis.
 
 <!-- vaihe -->
 
-**Rearranged formula.** The slope $k$ is calculated from the end points of the measured range. In the equation of the line, $p_0$ is the pressure at $0\,{}^\circ\text{C}$. Set $p = 0$ and solve for $\theta_0$:
+**Rearranged formula.** The slope $k$ is calculated from two points of the line that are far apart. Here the data points lie on the line within the reading accuracy, so the end points of the measured range are also points of the line. In the equation of the line, $p_0$ is the pressure at $0\,{}^\circ\text{C}$. Set $p = 0$ and solve for $\theta_0$:
 ```latex
 \begin{aligned}
 &k = \frac{\Delta p}{\Delta \theta} \\[4pt]
@@ -367,14 +370,14 @@ The vertical axis is drawn at the left edge of the figure, at about −300 °C, 
 **Reasonableness.** The result is close to absolute zero, $-273.15\,{}^\circ\text{C}$: only about $3\,{}^\circ\text{C}$, or one per cent, away from it. An independent check: if the pressure is proportional to the temperature in kelvins, $p = 100\,\text{kPa}$ corresponds to $273.15\,\text{K}$, so the pressure at $100\,{}^\circ\text{C}$ would be $100\,\text{kPa} \cdot \tfrac{373.15}{273.15} = 136.6\,\text{kPa}$, and the measured value is $137\,\text{kPa}$. According to the micro model, at zero pressure the motion of the particles would be so small that no pressure would arise any more. Real gases liquefy before this temperature is reached, so the continuation of the line is only a model and describes a limiting value.
 
 ## Common misconception
-Many people think that the temperature doubles when it rises from 10 °C to 20 °C. The physically correct comparison is made in kelvins: from 283 K to 293 K. The ratio of the temperatures is 293/283 ≈ 1.035, so the increase is about 3.5 %. This is why the average kinetic energy of the particles does not double. Another mistake is to think that 0 °C is the lowest possible temperature. It is only the freezing point of water, and the lowest possible temperature is 0 K.
+Many people think that the temperature doubles when it rises from $10\,{}^\circ\text{C}$ to $20\,{}^\circ\text{C}$. The physically correct comparison is made in kelvins: from $283\,\text{K}$ to $293\,\text{K}$. The ratio of the temperatures is 293/283 ≈ 1.035, so the increase is about $3.5\,\%$. This is why the average kinetic energy of the particles does not double. Another mistake is to think that $0\,{}^\circ\text{C}$ is the lowest possible temperature. It is only the freezing point of water, and the lowest possible temperature is $0\,\text{K}$.
 
 ## Summary
 - A thermodynamic system is a separated part of the world. Its state is described by state variables: temperature, pressure, volume and amount of substance.
 - In a gas system, temperature, pressure and volume depend on each other: if you change one, at least one of the others changes too.
-- Micro model: temperature tells you the average kinetic energy of the particles, and pressure arises from the collisions of the particles with the wall.
-- When the volume and the amount of substance stay the same, the pressure is directly proportional to the temperature in kelvins. Continuing the line through the data points, that is, extrapolation, gives absolute zero.
-- The conversion is $T = \theta + 273.15$. Absolute zero is 0 K = −273.15 °C.
+- Micro model of a gas: temperature tells you the average kinetic energy of the particles, and pressure arises from the collisions of the particles with the wall. In a liquid and in a solid the energy also includes the energy of the interactions between the particles, so temperature is not the same thing as the energy of a substance.
+- When the volume and the amount of substance stay the same, the pressure of a dilute gas is directly proportional to the temperature in kelvins. Continuing the line through the data points, that is, extrapolation, gives an estimate of absolute zero.
+- The conversion is $T = \theta + 273.15$. Absolute zero is $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: the same bicycle on a snowy frosty morning. There is snow on the ground and on the saddle, and the column of the thermometer on the post is low." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>

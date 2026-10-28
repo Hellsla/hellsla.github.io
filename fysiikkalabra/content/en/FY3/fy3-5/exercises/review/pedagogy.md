@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c4cab6e63feeff8f
+CONTENT-HASH: 1cf4b7863abb805b
 
 ## Blocking
 (none left; see Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: c4cab6e63feeff8f
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md with content/fi/FY3/fy3-5. Naturalness for the target reader, consistent terms with terms.md and lang labels, no lost steps/hints/feedback, options and feedback still match. Figure texts each translate their own key.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json, solutions.md (incl. the graph task and its figure text) against the new Finnish.

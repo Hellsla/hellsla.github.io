@@ -11,7 +11,7 @@
     {
       "id": "fy3-13-L1-02",
       "level": 1,
-      "text": "The pressure of a gas in a closed container is 105.0 kPa at 20.0 °C and 127.0 kPa at 80.0 °C. Calculate the slope of the line through these points in the unit kPa/°C.",
+      "text": "The pressure of a dilute gas in a sealed rigid container is $105.0\\,\\text{kPa}$ at $20.0\\,{}^\\circ\\text{C}$ and $127.0\\,\\text{kPa}$ at $80.0\\,{}^\\circ\\text{C}$. Calculate the slope of the line through these points in the unit kPa/°C.",
       "answer": 0.367,
       "unit": "kPa/°C",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy3-13-L1-05",
       "level": 1,
-      "text": "The pressure gauge reading is 112 kPa, and the uncertainty of the gauge is $\\pm 1.0\\,\\text{kPa}$. What percentage of the reading is the uncertainty?",
+      "text": "The pressure gauge reading is $112\\,\\text{kPa}$, and the uncertainty of the pressure reading is estimated as $1.0\\,\\text{kPa}$. What percentage of the reading is the uncertainty?",
       "answer": 0.89,
       "unit": "%",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-13-L2-01",
       "level": 2,
-      "text": "The pressure of the air in a flask was measured at two temperatures: at 15.0 °C the pressure was 1.050 bar and at 95.0 °C it was 1.360 bar. Assume that the pressure depends linearly on temperature. At what temperature does the line give zero pressure? Give your answer in degrees Celsius.",
+      "text": "The pressure of the air in a flask was measured at two temperatures: at $15.0\\,{}^\\circ\\text{C}$ the pressure was $1.050\\,\\text{bar}$ and at $95.0\\,{}^\\circ\\text{C}$ it was $1.360\\,\\text{bar}$. Assume that the pressure depends linearly on temperature. At what temperature does the line give zero pressure? Give your answer in degrees Celsius.",
       "answer": -256,
       "unit": "°C",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-13-L2-03",
       "level": 2,
-      "text": "In the experiment, a pressure gauge was used that shows the gauge pressure compared with the surrounding atmospheric pressure. The atmospheric pressure was 101.0 kPa. The gauge reading was 9.0 kPa at 30.0 °C and 31.0 kPa at 90.0 °C. At what temperature would the absolute pressure of the gas be zero, when the pressure depends linearly on temperature? Give your answer in degrees Celsius.",
+      "text": "In the experiment, a pressure gauge was used that shows the gauge pressure compared with the surrounding atmospheric pressure. The atmospheric pressure was $101.0\\,\\text{kPa}$. The gauge reading was $9.0\\,\\text{kPa}$ at $30.0\\,{}^\\circ\\text{C}$ and $31.0\\,\\text{kPa}$ at $90.0\\,{}^\\circ\\text{C}$. At what temperature would the absolute pressure of the gas be zero, when the pressure depends linearly on temperature? Give your answer in degrees Celsius.",
       "answer": -270,
       "unit": "°C",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-13-L3-01",
       "level": 3,
-      "text": "The measurement range is 20.0–100.0 °C. At 20.0 °C the pressure is $106.0 \\pm 1.0\\,\\text{kPa}$ and at 100.0 °C it is $137.0 \\pm 1.0\\,\\text{kPa}$. The steepest limit line passes through the points (20.0 °C; 105.0 kPa) and (100.0 °C; 138.0 kPa), and the shallowest through the points (20.0 °C; 107.0 kPa) and (100.0 °C; 136.0 kPa). Determine the uncertainty of absolute zero $\\Delta\\theta_0$ and deduce why limit lines based on the end points alone give a larger uncertainty than the seven-point data.",
+      "text": "The measurement range is 20.0–$100.0\\,{}^\\circ\\text{C}$. At $20.0\\,{}^\\circ\\text{C}$ the pressure is $106.0 \\pm 1.0\\,\\text{kPa}$ and at $100.0\\,{}^\\circ\\text{C}$ it is $137.0 \\pm 1.0\\,\\text{kPa}$. The steepest limit line passes through the points ($20.0\\,{}^\\circ\\text{C}$; $105.0\\,\\text{kPa}$) and ($100.0\\,{}^\\circ\\text{C}$; $138.0\\,\\text{kPa}$), and the shallowest through the points ($20.0\\,{}^\\circ\\text{C}$; $107.0\\,\\text{kPa}$) and ($100.0\\,{}^\\circ\\text{C}$; $136.0\\,\\text{kPa}$). Determine the uncertainty of absolute zero $\\Delta\\theta_0$ and deduce why limit lines based on the end points alone give a larger uncertainty than the seven-point data.",
       "answer": 20.3,
       "unit": "°C",
       "tolerance": 0.03
@@ -87,7 +87,7 @@
     {
       "id": "fy3-13-L3-02",
       "level": 3,
-      "text": "The pressure of nitrogen gas in a rigid container is 100.0 kPa at 0 °C, and the pressure is directly proportional to the temperature in kelvins. What pressure would the line give at 77.0 K, where nitrogen boils at normal pressure? At such a low pressure, nitrogen gas condenses into a liquid only at about 67 K. Justify why the line cannot be extended all the way to absolute zero. Give your answer as a pressure in kilopascals.",
+      "text": "The pressure of nitrogen gas in a rigid container is $100.0\\,\\text{kPa}$ at $0\\,{}^\\circ\\text{C}$, and the pressure is directly proportional to the temperature in kelvins. What pressure would the line give at $77.0\\,\\text{K}$, where nitrogen boils at normal pressure? At such a low pressure, nitrogen gas condenses into a liquid only at about $67\\,\\text{K}$. Justify why the line cannot be extended all the way to absolute zero. Give your answer as a pressure in kilopascals.",
       "answer": 28.2,
       "unit": "kPa",
       "tolerance": 0.02
@@ -97,7 +97,7 @@
       "level": 3,
       "text": "The result of group A's measurement is $\\theta_0 = -262.00 \\pm 6.00\\,{}^\\circ\\text{C}$. The accepted value is $-273.15\\,{}^\\circ\\text{C}$. How many times does the uncertainty $\\Delta\\theta_0$ fit between the result and the accepted value? Deduce a reason why the result does not agree with the accepted value.",
       "answer": 1.86,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ]

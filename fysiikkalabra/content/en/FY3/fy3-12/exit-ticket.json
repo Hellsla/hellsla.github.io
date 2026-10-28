@@ -1,14 +1,6 @@
 [
   {
-    "q": "The U-value of a wall is 0.20 W/(m²·K) and its area is 50 m². It is 20 °C indoors and −10 °C outdoors. How large is the thermal power transferred through the wall?",
+    "q": "The U-value of a wall is $0.20\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$ and its area is 50 m². It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. How large is the thermal power transferred through the wall?",
     "a": "$P = UA\\Delta T = 0.20\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 50\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 300\\,\\text{W}$."
-  },
-  {
-    "q": "In which three ways does heat transfer? Give one example of each from a home.",
-    "a": "By conduction, for example through a wall; by convection, that is, with a flowing substance, for example when warm air rises above a radiator; and by radiation, for example from the glow of a fireplace to your face."
-  },
-  {
-    "q": "Why does an increase in carbon dioxide in the atmosphere raise the temperature of the ground, even though the power coming from the Sun does not change?",
-    "a": "Carbon dioxide absorbs the thermal radiation emitted by the ground and radiates part of it back down. At first less energy leaves into space than comes from the Sun, so the Earth warms until energy balance is restored at a higher temperature."
   }
 ]

@@ -21,22 +21,23 @@
 ## fy3-11-L1-03
 **Given:** thermal power of the reactor $P_\text{heat} = 4.30 \cdot 10^3\,\text{MW}$, electric power $P_\text{el} = 1.60 \cdot 10^3\,\text{MW}$
 **Find:** the efficiency $\eta$ as a percentage
-**Principle:** A heat engine turns part of the thermal energy it receives into work, that is, electricity. Efficiency is the share of the energy supplied that is put to use, and it can also be calculated from powers, because both powers are energy in the same time.
+**Principle:** A heat engine turns part of the heat it receives into work, that is, electricity. Efficiency is the share of the energy supplied that is put to use, and it can also be calculated from powers, because both powers are energy in the same time.
 **Formula:** $\eta = \dfrac{P_\text{el}}{P_\text{heat}}$
 **Conversions:** Both powers are in megawatts, so the unit cancels and no conversion is needed. A decimal number is changed to a percentage by multiplying by one hundred.
 **Substitution:** $\eta = \dfrac{1.60 \cdot 10^3\,\text{MW}}{4.30 \cdot 10^3\,\text{MW}} = 0.3721 = 37.21\,\%$
 **Answer:** $37.2\,\%$, three significant figures. Both powers ($1.60 \cdot 10^3\,\text{MW}$ and $4.30 \cdot 10^3\,\text{MW}$) are given with three figures.
-**Reasonableness:** The efficiency is below 100 %, as it should be, and the typical value for a nuclear power plant is about 35 %. Energy balance: the seawater takes $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$ from the condenser, more than the unit produces as electricity. Estimate: $\tfrac{1600}{4300} \approx \tfrac{1}{2.7} \approx 0.37$.
+**Reasonableness:** The efficiency is below $100\,\%$, as it should be for a heat engine, because part of the heat has to be given up to something colder, and the typical value for a nuclear power plant is about $35\,\%$. Energy balance: the seawater takes $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$ from the condenser, more than the unit produces as electricity. Estimate: $\tfrac{1600}{4300} \approx \tfrac{1}{2.7} \approx 0.37$.
 
 ## fy3-11-L1-04
-**Given:** heat transferred from the fuel $Q_1 = 840\,\text{kJ}$ per minute, heat transferred to the surroundings $Q_2 = 670\,\text{kJ}$ per minute
-**Find:** the work $W$ done by the engine per minute in kilojoules
-**Principle:** The engine works in cycles, so its internal energy does not grow in the long run. Energy is conserved: the heat received by the engine equals the heat transferred to the surroundings plus the work done.
-**Formula:** $Q_1 = W + Q_2$, so $W = Q_1 - Q_2$
-**Conversions:** Both quantities of heat are in kilojoules and for the same minute, so no conversion is needed.
-**Substitution:** $W = 840\,\text{kJ} - 670\,\text{kJ} = 170\,\text{kJ}$
-**Answer:** $170\,\text{kJ}$ per minute, two significant figures. The quantities of heat $840\,\text{kJ}$ and $670\,\text{kJ}$ are given to the nearest ten kilojoules, so their difference is known to the nearest ten kilojoules: $17 \cdot 10\,\text{kJ}$.
-**Reasonableness:** The work is positive and smaller than $Q_1$, as it must be for a heat engine. The power is $\dfrac{170\,000\,\text{J}}{60\,\text{s}} \approx 2.8\,\text{kW}$, which suits a chainsaw. The efficiency is $\dfrac{170}{840} \approx 20\,\%$, slightly worse than that of a car engine.
+**Given:** read from the graph, the pressure stays constant at $p = 250\,\text{kPa}$, and the volume grows from $V_1 = 1.0\,\textsf{l}$ to $V_2 = 4.0\,\textsf{l}$
+**Find:** the work $W_\text{g}$ done by the gas in joules
+**Principle:** The pressure is the same throughout the expansion, so the work of the gas is the product of the pressure and the change in volume. The work is positive, because the gas expands and pushes the piston.
+**Reading the graph:** The segment is horizontal and runs along the grid line $p = 250\,\text{kPa}$. Its ends are at grid crossings, $V_1 = 1.0\,\textsf{l}$ and $V_2 = 4.0\,\textsf{l}$, so $\Delta V = V_2 - V_1 = 3.0\,\textsf{l}$.
+**Formula:** $W_\text{g} = p\,\Delta V$
+**Conversions:** $p = 250\,\text{kPa} = 250\,000\,\text{Pa}$ and $\Delta V = 3.0\,\textsf{l} = 0.0030\,\text{m}^3$, because $1\,\textsf{l} = 10^{-3}\,\text{m}^3$.
+**Substitution:** $W_\text{g} = 250\,000\,\text{Pa} \cdot 0.0030\,\text{m}^3 = 750\,\text{J}$
+**Answer:** $W_\text{g} = 750\,\text{J}$, two significant figures, because the volumes $1.0\,\textsf{l}$ and $4.0\,\textsf{l}$ are read to two figures. The values are read from the grid lines, so the accepted range is $735$–$765\,\text{J}$.
+**Reasonableness:** The units match: $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$. The result equals the area of the rectangle in the graph: a height of $250\,\text{kPa}$ and a width of $3.0\,\textsf{l}$ give $250 \cdot 3.0 = 750\,\text{kPa}\cdot\textsf{l}$, and $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$. The work is positive in an expansion, as it should be.
 
 ## fy3-11-L1-05
 **Given:** electrical energy $W = 2.60\,\text{kWh}$, energy of the petrol $Q_1 = 12.0\,\text{kWh}$
@@ -46,7 +47,7 @@
 **Conversions:** Both energies are in kilowatt-hours, so the unit cancels and there is no need to convert to joules. A decimal number is changed to a percentage by multiplying by one hundred.
 **Substitution:** $\eta = \dfrac{2.60\,\text{kWh}}{12.0\,\text{kWh}} = 0.2167 = 21.67\,\%$
 **Answer:** $21.7\,\%$, three significant figures. Both energies ($2.60\,\text{kWh}$ and $12.0\,\text{kWh}$) are given with three figures.
-**Reasonableness:** The efficiency is below 100 %. A small engine falls short of the roughly 30 % of a car engine. Energy balance: the remaining $12.0\,\text{kWh} - 2.60\,\text{kWh} = 9.4\,\text{kWh}$ is transferred as heat to the surroundings, and $\tfrac{9.4}{12.0} \approx 78\,\%$ completes the efficiency to one hundred per cent.
+**Reasonableness:** The efficiency is below $100\,\%$, as it should be for a heat engine. A small engine falls short of the roughly $30\,\%$ of a car engine. Energy balance: the remaining $12.0\,\text{kWh} - 2.60\,\text{kWh} = 9.4\,\text{kWh}$ is transferred as heat to the surroundings, and $\tfrac{9.4}{12.0} \approx 78\,\%$ completes the efficiency to one hundred per cent.
 
 ## fy3-11-L2-01
 **Given:** electrical energy $W = 3830\,\text{MWh}$, energy of the fuel $Q_1 = 33.6\,\text{TJ} = 33.6 \cdot 10^{12}\,\text{J}$, in a day
@@ -56,7 +57,7 @@
 **Conversions:** $1\,\text{MWh} = 10^6\,\text{W} \cdot 3600\,\text{s} = 3.6 \cdot 10^9\,\text{J}$, so $W = 3830 \cdot 3.6 \cdot 10^9\,\text{J} = 1.3788 \cdot 10^{13}\,\text{J}$. Also $33.6\,\text{TJ} = 3.36 \cdot 10^{13}\,\text{J}$.
 **Substitution:** $\eta = \dfrac{1.3788 \cdot 10^{13}\,\text{J}}{3.36 \cdot 10^{13}\,\text{J}} = 0.4104 = 41.04\,\%$
 **Answer:** $41.0\,\%$, three significant figures. Both values ($3830\,\text{MWh}$ and $33.6\,\text{TJ}$) are given with at least three figures, and the factor $3.6 \cdot 10^9\,\text{J/MWh}$ adds no uncertainty because it is a definition.
-**Reasonableness:** The efficiency of a condensing power plant is typically about 40 %, so the result is believable. Estimate: $\tfrac{3.8 \cdot 3.6}{33.6} \approx \tfrac{13.7}{33.6} \approx 0.41$. The average electric power is $\dfrac{3830\,\text{MWh}}{24\,\text{h}} \approx 160\,\text{MW}$, and the fuel power $\tfrac{160}{0.41} \approx 390\,\text{MW}$.
+**Reasonableness:** The efficiency of a condensing power plant is typically about $40\,\%$, so the result is believable. Estimate: $\tfrac{3.8 \cdot 3.6}{33.6} \approx \tfrac{13.7}{33.6} \approx 0.41$. The average electric power is $\dfrac{3830\,\text{MWh}}{24\,\text{h}} \approx 160\,\text{MW}$, and the fuel power $\tfrac{160}{0.41} \approx 390\,\text{MW}$.
 
 ## fy3-11-L2-02
 **Given:** mass of firewood $m = 120\,\text{kg}$ per hour, heat of combustion $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, power of the steam engine $P = 45\,\text{kW}$, time $t = 1\,\text{h}$
@@ -66,7 +67,7 @@
 **Conversions:** $45\,\text{kW} = 45\,000\,\text{W}$, $1\,\text{h} = 3600\,\text{s}$ and $15\,\tfrac{\text{MJ}}{\text{kg}} = 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$, so that both energies are in joules.
 **Substitution:** $\eta = \dfrac{45\,000\,\text{W} \cdot 3600\,\text{s}}{120\,\text{kg} \cdot 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{1.62 \cdot 10^8\,\text{J}}{1.8 \cdot 10^9\,\text{J}} = 0.090 = 9.0\,\%$
 **Answer:** $9.0\,\%$, two significant figures. The limiting values are the power $45\,\text{kW}$ and the heat of combustion $15\,\tfrac{\text{MJ}}{\text{kg}}$ (both two figures); the mass $120\,\text{kg}$ has at least two figures and does not limit the precision, and $3600\,\text{s/h}$ is a definition.
-**Reasonableness:** The efficiency of old steam engines is 5–10 %, so the result fits. The fuel power is $\tfrac{1.8 \cdot 10^9\,\text{J}}{3600\,\text{s}} = 500\,\text{kW}$, of which only $45\,\text{kW}$ becomes work and the remaining $455\,\text{kW}$ leaves through the chimney and with the exhaust steam. That is why steamships were replaced by diesel engines.
+**Reasonableness:** The efficiency of old steam engines is 5–$10\,\%$, so the result fits. The fuel power is $\tfrac{1.8 \cdot 10^9\,\text{J}}{3600\,\text{s}} = 500\,\text{kW}$, of which only $45\,\text{kW}$ becomes work and the remaining $455\,\text{kW}$ leaves through the chimney and with the exhaust steam. That is why steamships were replaced by diesel engines.
 
 ## fy3-11-L2-03
 **Given:** heat transferred to the air $Q = 700.0\,\text{J}$, the pressure stays $p = 125\,\text{kPa}$, increase in volume $\Delta V = 1.60\,\textsf{l}$
@@ -86,7 +87,7 @@
 **Conversions:** Efficiency $40.0\,\% = \tfrac{40.0}{100} = 0.400$. The powers are already in kilowatts, so no other conversion is needed.
 **Substitution:** $P_\text{in} = \dfrac{480\,\text{kW}}{0.400} = 1200\,\text{kW}$, so $P_\text{waste} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
 **Answer:** $720\,\text{kW}$, two significant figures. The limiting value is the mechanical power $480\,\text{kW}$, whose first two figures are certain; the efficiency $40.0\,\%$ has three figures and does not limit the precision.
-**Reasonableness:** 60 % is wasted and 40 % is put to use, so there is $\tfrac{60}{40} = 1.5$ times as much waste heat as mechanical power: $1.5 \cdot 480\,\text{kW} = 720\,\text{kW}$. The fuel power is greater than the mechanical power, as it should be. Part of the waste heat can be used to heat the passenger cabin.
+**Reasonableness:** $60\,\%$ is wasted and $40\,\%$ is put to use, so there is $\tfrac{60}{40} = 1.5$ times as much waste heat as mechanical power: $1.5 \cdot 480\,\text{kW} = 720\,\text{kW}$. The fuel power is greater than the mechanical power, as it should be. Part of the waste heat can be used to heat the passenger cabin.
 
 ## fy3-11-L3-01
 **Given:** in combined production fuel power $P_\text{CHP} = 320\,\text{MW}$, electric power $P_\text{e} = 96\,\text{MW}$, district heating power $P_\text{dh} = 180\,\text{MW}$; in separate production the efficiency of the condensing plant $\eta_\text{cond} = 0.400$ and of the heating plant $\eta_\text{h} = 0.900$
@@ -96,12 +97,12 @@
 **Conversions:** The efficiencies are $40.0\,\% = 0.400$ and $90.0\,\% = 0.900$. All powers are in megawatts, so no other conversion is needed.
 **Substitution:** $\Delta P = \dfrac{96\,\text{MW}}{0.400} + \dfrac{180\,\text{MW}}{0.900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$
 **Answer:** $120\,\text{MW}$, two significant figures. The limiting value is the electric power $96\,\text{MW}$ (two figures): it determines the fuel power of the condensing plant, $240\,\text{MW}$, to the nearest ten megawatts, and the difference $440\,\text{MW} - 320\,\text{MW}$ keeps this precision. The efficiencies $40.0\,\%$ and $90.0\,\%$ have three figures and do not limit the precision.
-**Reasonableness:** The overall efficiency is $\dfrac{96 + 180}{320} \approx 86\,\%$ in combined production and $\dfrac{276}{440} \approx 63\,\%$ in separate production, so separate production needs more fuel. A heating plant does not turn heat into work, so its losses are only in the flue gases. A condensing power plant turns heat into work, and then part of the heat must always be given up to the sea.
+**Reasonableness:** The overall efficiency is $\dfrac{96 + 180}{320} \approx 86\,\%$ in combined production and $\dfrac{276}{440} \approx 63\,\%$ in separate production, so separate production needs more fuel. A heating plant does not turn heat into work, so its losses are only in the flue gases. A condensing power plant turns heat into work, and then part of the heat must always be given up to a colder environment, usually the sea.
 
 ## fy3-11-L3-02
 **Given:** yearly heat demand $Q = 16.0\,\text{MWh}$, coefficient of performance of the heat pump $\varepsilon = 2.50$, current heating is direct electric heating
 **Find:** the electrical energy saved $\Delta E$ and the heat taken from the outdoor air $Q_\text{outdoors}$ in megawatt-hours, and a justification for why the pump is not a perpetual motion machine
-**Principle:** The coefficient of performance tells how many times as much heat the pump gives out as the electricity it uses. Direct electric heating turns all the electricity into heat, so it needs as much electricity as heat. Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
+**Principle:** The coefficient of performance tells how many times as much heat the pump gives out as the electricity it uses. In direct electric heating the resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room, so it needs as much electricity as heat. Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
 **Formula:** $\varepsilon = \dfrac{Q}{E_\text{el}}$, so $E_\text{el} = \dfrac{Q}{\varepsilon}$. The saving is $\Delta E = Q - E_\text{el}$ and from conservation of energy $Q_\text{outdoors} = Q - E_\text{el}$, so $\Delta E = Q_\text{outdoors} = Q - \dfrac{Q}{\varepsilon}$.
 **Conversions:** All energies are in megawatt-hours and the coefficient of performance has no unit, so no conversions are needed.
 **Substitution:** $E_\text{el} = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_\text{outdoors} = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
@@ -119,4 +120,4 @@
 $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 12\,040\,\text{W} \\ &= 12.04\,\text{kW} \end{aligned}$$
 
 **Answer:** $12.0\,\text{kW}$, three significant figures. All the values ($6.00\,\textsf{l}$, $0.750\,\text{kg/l}$, $43.0\,\text{MJ/kg}$, $28.0\,\%$ and $80.0\,\text{km/h}$) are given with three figures; the distance $100\,\text{km}$ is the reference distance for consumption and does not limit the precision.
-**Reasonableness:** The fuel power is $\tfrac{1.935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, so $31\,\text{kW}$ leaves as waste heat through the exhaust gases and the radiator. The petrol used is $54\,\text{kWh}$ of energy, and the work is 28 % of that, $15\,\text{kWh}$. An electric car needs about $\tfrac{15\,\text{kWh}}{0.90} \approx 17\,\text{kWh}$ from the battery to do the same work, because its motor turns electricity into work with an efficiency of 90 % and no heat has to be turned into work.
+**Reasonableness:** The fuel power is $\tfrac{1.935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, so $31\,\text{kW}$ leaves as waste heat through the exhaust gases and the radiator. The petrol used is $54\,\text{kWh}$ of energy, and the work is $28\,\%$ of that, $15\,\text{kWh}$. An electric car needs about $\tfrac{15\,\text{kWh}}{0.90} \approx 17\,\text{kWh}$ from the battery to do the same work, because its motor turns electricity into work with an efficiency of $90\,\%$ and no heat has to be turned into work.

@@ -3,7 +3,7 @@
     {
       "id": "fy3-7-L1-01",
       "level": 1,
-      "text": "Mökkireissulla kylmälaukussa on 1,20 kg jääpaloja, joiden lämpötila on 0 °C. Matkan aikana jääpalat sulavat kokonaan 0-asteiseksi vedeksi. Kuinka suuren lämpömäärän jää ottaa vastaan sulaessaan? Anna vastaus kilojouleina.",
+      "text": "Mökkireissulla kylmälaukussa on $1{,}20\\,\\text{kg}$ jääpaloja, joiden lämpötila on $0\\,{}^\\circ\\text{C}$. Matkan aikana jääpalat sulavat kokonaan 0-asteiseksi vedeksi. Kuinka suuren lämpömäärän jää ottaa vastaan sulaessaan? Anna vastaus kilojouleina.",
       "answer": 401,
       "unit": "kJ",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-7-L1-02",
       "level": 1,
-      "text": "Mökillä keitetään perunoita ilman kantta. Keittämisen aikana kattilasta kiehuu pois 0,40 kg vettä. Kuinka suuri lämpömäärä kuluu tämän vesimäärän höyrystämiseen? Anna vastaus megajouleina.",
+      "text": "Mökillä keitetään perunoita ilman kantta. Keittämisen aikana kattilasta kiehuu pois $0{,}40\\,\\text{kg}$ vettä. Kuinka suuri lämpömäärä kuluu tämän vesimäärän höyrystämiseen? Anna vastaus megajouleina.",
       "answer": 0.9,
       "unit": "MJ",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-7-L1-03",
       "level": 1,
-      "text": "Syksyn ensimmäisellä pakkasviikolla järven pintaan jäätyy 45 kg vettä jokaista neliömetriä kohti. Vesi on 0-asteista ja muuttuu 0-asteiseksi jääksi. Kuinka suuri lämpömäärä vapautuu jäätymisessä jokaista neliömetriä kohti? Anna vastaus megajouleina.",
+      "text": "Syksyn ensimmäisellä pakkasviikolla järven pintaan jäätyy $45\\,\\text{kg}$ vettä jokaista neliömetriä kohti. Vesi on 0-asteista ja muuttuu 0-asteiseksi jääksi. Kuinka suuri lämpömäärä vapautuu jäätymisessä jokaista neliömetriä kohti? Anna vastaus megajouleina.",
       "answer": 15,
       "unit": "MJ",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-7-L1-04",
       "level": 1,
-      "text": "Kahvilan espressokeittimen höyryputkesta puhalletaan 100-asteista vesihöyryä maitokannuun. Maitoa vaahdotetaan, ja sen aikana 0,030 kg höyryä tiivistyy maidossa 100-asteiseksi vedeksi. Kuinka suuren lämpömäärän höyry luovuttaa tiivistyessään? Anna vastaus kilojouleina.",
+      "text": "Kahvilan espressokeittimen höyryputkesta puhalletaan 100-asteista vesihöyryä maitokannuun. Maitoa vaahdotetaan, ja sen aikana $0{,}030\\,\\text{kg}$ höyryä tiivistyy maidossa 100-asteiseksi vedeksi. Kuinka suuren lämpömäärän höyry luovuttaa tiivistyessään? Anna vastaus kilojouleina.",
       "answer": 68,
       "unit": "kJ",
       "tolerance": 0.02
@@ -35,17 +35,18 @@
     {
       "id": "fy3-7-L1-05",
       "level": 1,
-      "text": "Pakastimesta otettua jääpalaa lämmitetään, ja sen lämpenemiskäyrä piirretään. Käyrä näyttää lämpötilan siirretyn energian funktiona. Lämpötila nousee −18 °C:sta 0 °C:seen, kun energiaa on siirtynyt 19 kJ. Sen jälkeen käyrä on vaakasuora 0 °C:ssa, kunnes siirtynyt energia on 186 kJ. Vasta sitten lämpötila alkaa taas nousta. Mitä vaakasuoralla osalla tapahtuu? Kuinka suuri lämpömäärä siihen kuluu? Anna vastaus kilojouleina.",
-      "answer": 167,
-      "unit": "kJ",
-      "tolerance": 0.02
+      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaissulamislämpö. Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 333,
+      "unit": "kJ/kg",
+      "tolerance": 0.03
     }
   ],
   "level2": [
     {
       "id": "fy3-7-L2-01",
       "level": 2,
-      "text": "Mökin sähköhellan keittolevyn teho on 2,0 kW. Levyllä on kattila, jossa vesi kiehuu. Kattila unohtuu liedelle. Kuinka kauan kestää, ennen kuin kattilasta on kiehunut pois 0,50 kg vettä? Oleta, että kaikki levyn energia siirtyy veteen. Anna vastaus minuutteina.",
+      "text": "Mökin sähköhellan keittolevyn teho on $2{,}0\\,\\text{kW}$. Levyllä on kattila, jossa vesi kiehuu. Kattila unohtuu liedelle. Kuinka kauan kestää, ennen kuin kattilasta on kiehunut pois $0{,}50\\,\\text{kg}$ vettä? Oleta, että kaikki levyn energia siirtyy veteen. Anna vastaus minuutteina.",
       "answer": 9.4,
       "unit": "min",
       "tolerance": 0.02
@@ -53,7 +54,7 @@
     {
       "id": "fy3-7-L2-02",
       "level": 2,
-      "text": "Pakastimesta otetaan 750 g jäätä, jonka lämpötila on −18 °C. Kuinka suuri lämpömäärä tarvitaan, jotta jää lämpenee 0 °C:seen ja sulaa kokonaan 0-asteiseksi vedeksi? Jään ominaislämpökapasiteetti on 2100 J/(kg·K). Anna vastaus kilojouleina.",
+      "text": "Pakastimesta otetaan $750\\,\\text{g}$ jäätä, jonka lämpötila on −$18\\,{}^\\circ\\text{C}$. Kuinka suuri lämpömäärä tarvitaan, jotta jää lämpenee $0\\,{}^\\circ\\text{C}$:seen ja sulaa kokonaan 0-asteiseksi vedeksi? Jään ominaislämpökapasiteetti on $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. Anna vastaus kilojouleina.",
       "answer": 280,
       "unit": "kJ",
       "tolerance": 0.02
@@ -61,7 +62,7 @@
     {
       "id": "fy3-7-L2-03",
       "level": 2,
-      "text": "Huhtikuussa järven jää on jo lämmennyt 0-asteiseksi. Aurinkoisena päivänä jää saa auringosta energiaa 12 MJ jokaista neliömetriä kohti. Oleta, että kaikki tämä energia kuluu jään sulattamiseen. Kuinka monta kilogrammaa jäätä sulaa päivän aikana jokaisen neliömetrin alalta?",
+      "text": "Huhtikuussa järven jää on jo lämmennyt 0-asteiseksi. Aurinkoisena päivänä jää saa auringosta energiaa $12\\,\\text{MJ}$ jokaista neliömetriä kohti. Oleta, että kaikki tämä energia kuluu jään sulattamiseen. Kuinka monta kilogrammaa jäätä sulaa päivän aikana jokaisen neliömetrin alalta?",
       "answer": 36,
       "unit": "kg",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy3-7-L2-04",
       "level": 2,
-      "text": "Pastan keittämistä varten kattilaan laitetaan 2,0 kg vettä, jonka lämpötila on 15 °C. Vesi lämmitetään kiehumispisteeseen eli 100 °C:seen. Sitä keitetään, kunnes kattilasta on höyrystynyt 0,10 kg vettä. Kuinka suuri lämpömäärä veteen siirtyy kaikkiaan? Anna vastaus megajouleina.",
+      "text": "Pastan keittämistä varten kattilaan laitetaan $2{,}0\\,\\text{kg}$ vettä, jonka lämpötila on $15\\,{}^\\circ\\text{C}$. Vesi lämmitetään kiehumispisteeseen eli $100\\,{}^\\circ\\text{C}$:seen. Sitä keitetään, kunnes kattilasta on höyrystynyt $0{,}10\\,\\text{kg}$ vettä. Kuinka suuri lämpömäärä veteen siirtyy kaikkiaan? Anna vastaus megajouleina.",
       "answer": 0.94,
       "unit": "MJ",
       "tolerance": 0.02
@@ -79,7 +80,7 @@
     {
       "id": "fy3-7-L3-01",
       "level": 3,
-      "text": "Laiturilla juodaan mehua. Lasissa on 0,35 kg mehua, jonka lämpötila on 25 °C. Siihen pudotetaan 60 g sulamassa olevia 0-asteisia jääpaloja. Mehun ominaislämpökapasiteetti on sama kuin veden. Mikä on juoman lämpötila, kun kaikki jää on sulanut ja lasin sisältö on lämpötasapainossa? Oleta, että lämpöä ei siirry lasiin eikä ilmaan. Perustele myös, miksi 60 g 0-asteista vettä ei jäähdyttäisi mehua yhtä paljon.",
+      "text": "Laiturilla juodaan mehua. Lasissa on $0{,}35\\,\\text{kg}$ mehua, jonka lämpötila on $25\\,{}^\\circ\\text{C}$. Siihen pudotetaan $60\\,\\text{g}$ sulamassa olevia 0-asteisia jääpaloja. Mehun ominaislämpökapasiteetti on sama kuin veden. Mikä on juoman lämpötila, kun kaikki jää on sulanut ja lasin sisältö on lämpötasapainossa? Oleta, että lämpöä ei siirry lasiin eikä ilmaan. Perustele myös, miksi $60\\,\\text{g}$ 0-asteista vettä ei jäähdyttäisi mehua yhtä paljon.",
       "answer": 9.7,
       "unit": "°C",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy3-7-L3-02",
       "level": 3,
-      "text": "Saunassa heitetään kiukaalle löylyä: kauhallinen eli 0,25 kg vettä, jonka lämpötila on 20 °C. Vesi lämpenee kuumilla kivillä 100 °C:seen ja höyrystyy kokonaan. Kiukaassa on 30 kg kiviä, joiden ominaislämpökapasiteetti on 800 J/(kg·K). Oleta, että kaikki veden tarvitsema energia tulee kivistä. Oleta myös, ettei kiuas lämmitä kiviä sillä välin. Kuinka monta kelviniä kivien lämpötila laskee? Perustele, kumpi vaihe vie enemmän energiaa: veden lämpeneminen vai höyrystyminen.",
+      "text": "Saunassa heitetään kiukaalle löylyä: kauhallinen eli $0{,}25\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Vesi lämpenee kuumilla kivillä $100\\,{}^\\circ\\text{C}$:seen ja höyrystyy kokonaan. Kiukaassa on $30\\,\\text{kg}$ kiviä, joiden ominaislämpökapasiteetti on $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Oleta, että kaikki veden tarvitsema energia tulee kivistä. Oleta myös, ettei kiuas lämmitä kiviä sillä välin. Kuinka monta kelviniä kivien lämpötila laskee? Perustele, kumpi vaihe vie enemmän energiaa: veden lämpeneminen vai höyrystyminen.",
       "answer": 27,
       "unit": "K",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy3-7-L3-03",
       "level": 3,
-      "text": "Ryhmä mittaa veden ominaishöyrystymislämpöä kahdella mittauksella. Vaa'an päällä on avoin astia, jossa vesi kiehuu. Vedessä on uppokuumennin, jonka tehoa voi säätää. Kun kuumentimen teho on 800 W, vaa'an lukema pienenee 10,0 minuutissa 196 g. Kun teho on 400 W, lukema pienenee 10,0 minuutissa 90,0 g. Vesi on kummassakin mittauksessa 100-asteista. Siksi astiasta siirtyy ympäröivään ilmaan joka sekunti yhtä paljon energiaa. Laske ominaishöyrystymislämpö kahden mittauksen erotuksen avulla. Perustele, miksi ilmaan siirtyvä energia ei vaikuta tulokseen. Perustele myös, miksi kummastakin mittauksesta erikseen laskettu arvo on liian suuri. Anna vastaus yksikössä MJ/kg.",
+      "text": "Ryhmä mittaa veden ominaishöyrystymislämpöä kahdella mittauksella. Vaa'an päällä on avoin astia, jossa vesi kiehuu. Vedessä on uppokuumennin, jonka tehoa voi säätää. Kun kuumentimen teho on $800\\,\\text{W}$, vaa'an lukema pienenee 10,0 minuutissa $196\\,\\text{g}$. Kun teho on $400\\,\\text{W}$, lukema pienenee 10,0 minuutissa $90{,}0\\,\\text{g}$. Vesi on kummassakin mittauksessa 100-asteista. Siksi astiasta siirtyy ympäröivään ilmaan joka sekunti yhtä paljon energiaa. Laske ominaishöyrystymislämpö kahden mittauksen erotuksen avulla. Perustele, miksi ilmaan siirtyvä energia ei vaikuta tulokseen. Perustele myös, miksi kummastakin mittauksesta erikseen laskettu arvo on liian suuri. Anna vastaus yksikössä MJ/kg.",
       "answer": 2.26,
       "unit": "MJ/kg",
       "tolerance": 0.02

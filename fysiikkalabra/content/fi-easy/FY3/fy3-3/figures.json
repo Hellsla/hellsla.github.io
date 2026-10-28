@@ -14,5 +14,6 @@
  "vesi kiehuu": "vesi kiehuu",
  "Kaasun paine lämpötilan funktiona suljetussa astiassa: mittapisteet lämpötila-alueella 0–100 °C asettuvat suoralle, ja ekstrapoloitu suora kohtaa nollapaineen lämpötilassa noin −270 °C. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C.": "Kuvaaja näyttää, miten kaasun paine riippuu lämpötilasta suljetussa astiassa. Mittapisteet ovat lämpötila-alueella 0–100 °C, ja ne ovat suoralla. Suoraa on jatkettu eli ekstrapoloitu. Jatkettu suora kohtaa nollapaineen noin −270 °C:ssa. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C.",
  "ekstrapolointi": "ekstrapolointi",
- "mittaukset": "mittaukset"
+ "mittaukset": "mittaukset",
+ "Kaasun paine lämpötilan funktiona suljetussa jäykässä astiassa: viisi mittauspistettä ilman piirrettyä suoraa. Pisteet ovat (0 °C; 75 kPa), (25 °C; 82 kPa), (50 °C; 89 kPa), (75 °C; 96 kPa) ja (100 °C; 102,5 kPa). Vaaka-akseli ulottuu −150 °C:een; ruudukon väli on 25 °C ja 25 kPa.": "Kaasun paine lämpötilan funktiona suljetussa jäykässä astiassa. Kuvassa on viisi mittauspistettä. Suoraa ei ole piirretty. Pisteet ovat (0 °C; 75 kPa), (25 °C; 82 kPa), (50 °C; 89 kPa), (75 °C; 96 kPa) ja (100 °C; 102,5 kPa). Vaaka-akseli ulottuu −150 °C:een. Ruudukon väli on 25 °C ja 25 kPa."
 }

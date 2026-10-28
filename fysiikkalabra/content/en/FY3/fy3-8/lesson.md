@@ -162,22 +162,22 @@ An object expands in all directions in the same proportion, as when a photograph
 ### Thermal expansion of different substances
 Different substances expand differently. A bimetallic strip, in which two different metals are joined together, bends when it warms up, because one metal lengthens more. Such a strip opens and closes an electric circuit in old-style thermostats.
 
-Liquids usually expand clearly more than solids, and gases much more still. The particles of a liquid do not stay in place, and the bonds between them are weaker than in a solid, so a rise in temperature moves them farther apart. The particles of a gas are far apart and almost free, so at constant pressure the volume of a gas grows much more. The volume of a gas also depends on pressure, and we return to this in the chapter *Changes of state of a gas and Boyle's law*. A liquid thermometer is based on the expansion of a liquid: when the temperature rises, the liquid column rises in a thin tube.
+Liquids usually expand clearly more than solids, and gases much more still. The particles of a liquid do not stay in place, and the interactions between them are weaker than in a solid, so a rise in temperature moves them farther apart. The particles of a gas are far apart and almost free, so at constant pressure the volume of a gas grows much more. The volume of a gas also depends on pressure, and we return to this in the chapter *Changes of state of a gas and Boyle's law*. A liquid thermometer is based on the expansion of a liquid: when the temperature rises, the liquid column rises in a thin tube.
 
-Water is an exception: between 0 °C and 4 °C it contracts when it warms up, so its density is greatest at about 4 °C. The densest, 4-degree water sinks to the bottom, and colder water stays at the surface and freezes. That is why a lake freezes from the surface, and even in winter there is water at about 4 °C at the bottom, where fish survive.
+Water is an exception: between $0\,{}^\circ\text{C}$ and $4\,{}^\circ\text{C}$ it contracts when it warms up, so its density is greatest at about $4\,{}^\circ\text{C}$. The densest, 4-degree water sinks to the bottom, and colder water stays at the surface and freezes. That is why a lake freezes from the surface, and even in winter there is water at about 4 °C at the bottom, where fish survive.
 
 ## Formula: Thermal expansion of length and volume
 When the temperature of an object changes by $\Delta T$, its length changes by
 ```latex
 \Delta L = \alpha L_0 \Delta T
 ```
-where $\Delta L$ is the change in length (m), $\alpha$ is the coefficient of linear expansion (1/K), $L_0$ is the original length (m) and $\Delta T$ is the change in temperature (K). The coefficient of linear expansion $\alpha$ tells you what fraction of its length an object lengthens when its temperature rises by 1 K. So the change is proportional to the original length: a rod twice as long has twice as many gaps between particles, so it lengthens twice as much. The number 12 in the table means that $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. The new length is $L = L_0 + \Delta L$. When the object cools, $\Delta T$ is negative, so $\Delta L$ is also negative, that is, the object gets shorter.
+where $\Delta L$ is the change in length (m), $\alpha$ is the coefficient of linear expansion (1/K), $L_0$ is the original length (m) and $\Delta T$ is the change in temperature (K). The coefficient of linear expansion $\alpha$ tells you what fraction of its length an object lengthens when its temperature rises by $1\,\text{K}$. So the change is proportional to the original length: a rod twice as long has twice as many gaps between particles, so it lengthens twice as much. The number 12 in the table means that $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. The new length is $L = L_0 + \Delta L$. When the object cools, $\Delta T$ is negative, so $\Delta L$ is also negative, that is, the object gets shorter.
 
 The change in the volume of liquids (and of gases at constant pressure) is calculated in the same way:
 ```latex
 \Delta V = \gamma V_0 \Delta T
 ```
-where $\Delta V$ is the change in volume (m³), $\gamma$ is the coefficient of volume expansion (1/K) and $V_0$ is the original volume (m³). For a solid $\gamma \approx 3\alpha$, because an object expands in all three directions: length, width and height each grow in proportion $\alpha \Delta T$, and when the changes are small, the relative growth in volume is almost the sum of these, $3\alpha \Delta T$. The formulas are good models when the change in temperature is moderate, for example at most about a hundred kelvins.
+where $\Delta V$ is the change in volume (m³), $\gamma$ is the coefficient of volume expansion (1/K) and $V_0$ is the original volume (m³). For a solid $\gamma \approx 3\alpha$, because an object expands in all three directions: length, width and height each grow in proportion $\alpha \Delta T$, and when the changes are small, the relative growth in volume is almost the sum of these, $3\alpha \Delta T$. The formulas are good models when the change in temperature is moderate. For solids that means, for example, at most about a hundred kelvins. For liquids, especially water, the coefficient $\gamma$ changes clearly with temperature, so the values in the table at $20\,{}^\circ\text{C}$ are used only close to $20\,{}^\circ\text{C}$.
 
 <svg data-fig="volume-expansion" viewBox="0 0 600 350" role="img" aria-label="Thermal expansion of the volume of a liquid. The same amount of liquid in a flask with a thin tube as its neck: when cold, the volume of the liquid is V₀ and the surface is lower; when warm, the liquid has expanded and the surface rises in the thin tube. The change in volume ΔV is marked in the tube. The expansion is drawn exaggerated." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38-liq-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy38-liq-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
@@ -225,7 +225,7 @@ where $\Delta V$ is the change in volume (m³), $\gamma$ is the coefficient of v
 | ordinary glass | 9 |
 | borosilicate glass | 3.3 |
 
-| Substance (20 °C) | $\gamma$ (10⁻³ 1/K) |
+| Substance ($20\,{}^\circ\text{C}$) | $\gamma$ (10⁻³ 1/K) |
 | --- | --- |
 | water | 0.21 |
 | ethanol | 1.1 |
@@ -252,7 +252,7 @@ where $\Delta V$ is the change in volume (m³), $\gamma$ is the coefficient of v
 </svg>
 
 ## Worked example
-The deck of a steel bridge is 120 m long. At the location the temperature varies during the year from a frost of −30 °C to a heatwave of +30 °C, and the coefficient of linear expansion of steel is 12 · 10⁻⁶ 1/K. By how much does the length of the deck change, that is, how much must the expansion joint give at least?
+The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperature varies during the year from a frost of $-30\,{}^\circ\text{C}$ to a heatwave of +$30\,{}^\circ\text{C}$, and the coefficient of linear expansion of steel is 12 · 10⁻⁶ 1/K. By how much does the length of the deck change, that is, how much must the expansion joint give at least?
 
 <!-- vaihe -->
 
@@ -297,14 +297,14 @@ The deck of a steel bridge is 120 m long. At the location the temperature varies
 **Reasonableness.** A rough estimate: $10^{-5}\,\tfrac{1}{\text{K}} \cdot 100\,\text{m} \cdot 60\,\text{K} = 60\,\text{mm}$, so the result is of the right order of magnitude. The deck gets almost nine centimetres longer by summer, because the temperature rises. That is only $\alpha \Delta T = 0.072\,\%$ of the length of the deck, but without an expansion joint the expanding steel would push on the ends of the bridge with such a large force that the structures would be damaged. That is why there is a comb-shaped joint at the end of the bridge, with teeth that slide between each other.
 
 ## Common misconception
-Many people think that when a substance warms up, its particles themselves grow. In the micro model the particles stay the same size, and only their average distances grow. Another mistake is to think that a hole in a plate gets smaller because the plate supposedly expands from its edges towards the hole. The hole gets bigger in the same proportion as the plate does everywhere else. A third mistake is to assume that all substances always expand when they warm up: water contracts between 0 °C and 4 °C, and when it freezes it expands. That is why ice floats and lakes freeze from the surface.
+Many people think that when a substance warms up, its particles themselves grow. In the micro model the particles stay the same size, and only their average distances grow. Another mistake is to think that a hole in a plate gets smaller because the plate supposedly expands from its edges towards the hole. The hole gets bigger in the same proportion as the plate does everywhere else. A third mistake is to assume that all substances always expand when they warm up: water contracts between $0\,{}^\circ\text{C}$ and $4\,{}^\circ\text{C}$, and when it freezes it expands. That is why ice floats and lakes freeze from the surface.
 
 ## Summary
 - When a substance warms up, the vibration of its particles gets stronger and their average distance grows, so the substance expands.
 - The change in length is $\Delta L = \alpha L_0 \Delta T$ and the change in volume is $\Delta V = \gamma V_0 \Delta T$. For a solid $\gamma \approx 3\alpha$.
 - Liquids expand more than solids, and gases much more than liquids.
 - An object expands in all directions in the same proportion, so holes also get bigger.
-- Water is an exception: its density is greatest at about 4 °C.
+- Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: railway rails in a heatwave. Heat shimmers above the rails, and at the joint between two rails there is a small gap to allow for thermal expansion." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy38s-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
