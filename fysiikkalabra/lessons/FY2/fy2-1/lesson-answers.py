@@ -63,7 +63,7 @@ for t in (0.0, 8.0, 16.0):                             # experiment 2, small fri
 big = run(2.0, 0.10)
 ep, ek, el = energies(big, 16.0)                       # large friction, end of the run
 a["inq-big-Ep"], a["inq-big-Ek"], a["inq-big-Eth"] = ep, ek, el
-# Inquiry data table: the bouncing ball (invented example): mechanical energy 0,60 J, 0,48 J, 0,38 J, 0,31 J after bounces 0 … 3
+# Inquiry data table: the bouncing ball (simulated example data, as inquiry.json labels it): mechanical energy 0,60 J, 0,48 J, 0,38 J, 0,31 J after bounces 0 … 3
 a["inq-data"] = 0.60 - 0.31                            # converted to thermal energy in three bounces: 0,29 J
 # Transfer task: cyclist climbing at constant speed: 420 kJ of chemical energy, 85 kJ of potential energy gained
 a["inq-siirto"] = 420 - 85                             # 335 kJ of thermal energy
