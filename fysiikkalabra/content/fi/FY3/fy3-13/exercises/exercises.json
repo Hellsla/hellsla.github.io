@@ -11,7 +11,7 @@
     {
       "id": "fy3-13-L1-02",
       "level": 1,
-      "text": "Kaasun paine on suljetussa astiassa $20{,}0\\,{}^\\circ\\text{C}$:ssa 105,0 kPa ja $80{,}0\\,{}^\\circ\\text{C}$:ssa 127,0 kPa. Laske näiden pisteiden kautta kulkevan suoran kulmakerroin yksikössä kPa/°C.",
+      "text": "Harvan kaasun paine on suljetussa jäykässä astiassa $20{,}0\\,{}^\\circ\\text{C}$:ssa $105{,}0\\,\\text{kPa}$ ja $80{,}0\\,{}^\\circ\\text{C}$:ssa $127{,}0\\,\\text{kPa}$. Laske näiden pisteiden kautta kulkevan suoran kulmakerroin yksikössä kPa/°C.",
       "answer": 0.367,
       "unit": "kPa/°C",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy3-13-L1-05",
       "level": 1,
-      "text": "Painemittarin lukema on 112 kPa, ja mittarin epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Kuinka monta prosenttia lukemasta epävarmuus on?",
+      "text": "Painemittarin lukema on $112\\,\\text{kPa}$, ja paineen lukeman epävarmuudeksi arvioidaan $1{,}0\\,\\text{kPa}$. Kuinka monta prosenttia lukemasta epävarmuus on?",
       "answer": 0.89,
       "unit": "%",
       "tolerance": 0.02

@@ -213,7 +213,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Vertaa voimalaitostyyppejä",
-      "text": "Taulukossa on voimalaitostyyppien tyypillisiä hyötysuhteita. Hyötysuhteen nimittäjä on laitokseen tuotu teho: polttolaitoksessa polttoaineteho, vesivoimalassa virtaavan veden teho, tuulivoimalassa roottorin läpi virtaavan ilman teho ja aurinkopaneelissa paneeliin osuvan säteilyn teho.\n\n| Laitos | Hyötysuhde |\n|---|---|\n| Lauhdevoimala | 0,38–0,42 |\n| Ydinvoimala | noin 0,35 |\n| Yhteistuotanto, sähkö | 0,25–0,35 |\n| Yhteistuotanto, kaikki | 0,85–0,90 |\n| Vesivoimala | noin 0,90 |\n| Tuulivoimala | 0,40–0,45 |\n| Aurinkopaneeli | noin 0,20 |",
+      "text": "Taulukossa on voimalaitostyyppien tyypillisiä hyötysuhteita. Hyötysuhteen nimittäjä on laitokseen tuotu teho: polttolaitoksessa polttoaineteho, vesivoimalassa virtaavan veden teho, tuulivoimalassa roottorin läpi virtaavan ilman teho ja aurinkopaneelissa paneeliin osuvan säteilyn teho.\n\n| Laitos | Hyötysuhde |\n|---|---|\n| Lauhdevoimala | 0,38–0,42 |\n| Ydinvoimala | noin 0,35 |\n| Yhteistuotanto (kiinteä polttoaine), sähkö | 0,25–0,35 |\n| Yhteistuotanto, kaikki | 0,85–0,90 |\n| Vesivoimala | noin 0,90 |\n| Tuulivoimala | 0,40–0,45 |\n| Aurinkopaneeli | noin 0,20 |",
       "question": {
         "type": "choice",
         "prompt": "Vesivoimalan hyötysuhde on yli kaksi kertaa lauhdevoimalaitoksen. Mikä selittää eron parhaiten?",
@@ -221,7 +221,7 @@
           {
             "text": "Vesivoimala ei ole lämpövoimakone, joten sen ei tarvitse luovuttaa lämpöä kylmempään ympäristöön. Turbiini ottaa veden liike-energian suoraan.",
             "correct": true,
-            "feedback": "Oikein. Lauhdevoimalaitoksessa energia kulkee lämmön kautta, ja lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen. Vesivoimalassa mekaaninen energia muuttuu mekaaniseksi ja sitten sähköksi, ja häviöt tulevat vain kitkasta ja sähköisistä häviöistä."
+            "feedback": "Oikein. Lauhdevoimalaitoksessa energia kulkee lämmön kautta, ja lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen. Vesivoimalassa mekaaninen energia muuttuu mekaaniseksi ja sitten sähköksi, ja häviöt tulevat vain kitkasta, virtaushäviöistä ja sähköisistä häviöistä."
           },
           {
             "text": "Vesi on parempi energianlähde kuin polttoaine, koska sitä on enemmän.",
@@ -244,7 +244,7 @@
       "type": "explain",
       "title": "Johtopäätös: missä energia menetetään?",
       "prompt": "Kirjoita taulukoiden perusteella lyhyesti, missä energiaketjun vaiheessa lauhdevoimalaitos menettää eniten tehoa ja miksi, ja mitä yhteistuotanto muuttaa. Miksi vesivoimalan hyötysuhde voi olla paljon suurempi?",
-      "model": "Eniten tehoa häviää höyrykierrossa, $248\\,\\text{MW}$ eli noin puolet polttoainetehosta: lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen, eikä parempi tekniikka poista tätä kokonaan. Yhteistuotannossa sama lämpö käytetään kaukolämpönä: sähköteho pienenee $160\\,\\text{MW}$:sta $120\\,\\text{MW}$:iin, mutta kokonaishyötysuhde nousee $(120 + 232)/400 = 88\\,\\%$:iin. Vesivoimalassa energia ei kulje lämmön kautta, vaan mekaaninen energia muuttuu sähköksi, joten häviöitä on vain kitkasta ja sähköisistä häviöistä. Taulukoiden luvut ovat esimerkki- ja tyyppiarvoja, eivät yhden laitoksen mittauksia.",
+      "model": "Eniten tehoa häviää höyrykierrossa, $248\\,\\text{MW}$ eli noin puolet polttoainetehosta: lämpövoimakone luovuttaa aina osan lämmöstä lauhduttimeen, eikä parempi tekniikka poista tätä kokonaan. Yhteistuotannossa sama lämpö käytetään kaukolämpönä: sähköteho pienenee $160\\,\\text{MW}$:sta $120\\,\\text{MW}$:iin, mutta kokonaishyötysuhde nousee $(120 + 232)/400 = 88\\,\\%$:iin. Vesivoimalassa energia ei kulje lämmön kautta, vaan mekaaninen energia muuttuu sähköksi, joten häviöitä on vain kitkasta, virtaushäviöistä ja sähköisistä häviöistä. Taulukoiden luvut ovat esimerkki- ja tyyppiarvoja, eivät yhden laitoksen mittauksia.",
       "criteria": [
         "Nimesin höyrykierron suurimmaksi häviöksi ja perustelin sen lämpövoimakoneen rajoituksella.",
         "Erotin sähkön hyötysuhteen ja kokonaishyötysuhteen yhteistuotannossa.",

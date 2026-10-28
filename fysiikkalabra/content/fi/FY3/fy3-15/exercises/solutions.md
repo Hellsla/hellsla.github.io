@@ -16,7 +16,7 @@
 **Muunnokset:** Molemmat tehot ovat megawatteina, joten yksiköt supistuvat. Tulos kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\eta = \dfrac{1{,}05\,\text{MW}}{2{,}50\,\text{MW}} = 0{,}420 = 42{,}0\,\%$
 **Vastaus:** $42{,}0\,\%$, kolme merkitsevää numeroa kuten tehoissa $2{,}50\,\text{MW}$ ja $1{,}05\,\text{MW}$.
-**Järkevyys:** Arvio: $1 / 2{,}5 = 0{,}4$, mikä vastaa tulosta. Nykyaikaisen tuulivoimalan hyötysuhde on parhaimmillaan noin 40–$45\,\%$. Tuulesta ei voi ottaa kaikkea energiaa, koska ilman on liikuttava vielä roottorin jälkeenkin; loput häviää kitkaan ja sähköhäviöihin.
+**Järkevyys:** Arvio: $1 / 2{,}5 = 0{,}4$, mikä vastaa tulosta. Nykyaikaisen tuulivoimalan hyötysuhde on parhaimmillaan noin 40–$45\,\%$. Tuulesta ei voi ottaa kaikkea energiaa, koska ilman on liikuttava vielä roottorin jälkeenkin. Osa roottorin ottamasta energiasta muuttuu kitkassa ja sähköisissä häviöissä sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 
 ## fy3-15-L1-03
 **Annettu:** pinta-ala $A = 20{,}0\,\text{m}^2$, säteilyn teho pinta-alaa kohti $I = 1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$, hyötysuhde $\eta = 0{,}210$
@@ -106,7 +106,7 @@
 **Muunnokset:** $E = 36{,}0 \cdot 3{,}60 \cdot 10^{12}\,\text{J} = 1{,}296 \cdot 10^{14}\,\text{J}$ ja $H = 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kt} = 10^6\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{1{,}296 \cdot 10^{14}\,\text{J}}{0{,}380 \cdot 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}3642 \cdot 10^7\,\text{kg} = 13{,}642\,\text{kt}$
 **Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa, koska sähköenergia $36{,}0\,\text{GWh}$, hyötysuhde $0{,}380$, lämpöarvo $25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$ ja muuntokerroin $3{,}60 \cdot 10^{12}\,\text{J}/\text{GWh}$ ovat kaikki kolmella numerolla.
-**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu polttoaine, joka muuttuu hukkalämmöksi ja päästöiksi, mutta tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
+**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu: sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput hukkalämmöksi, ja palamisessa syntyy päästöjä, mutta tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
 
 ## fy3-15-L3-03
 **Annettu:** lämmitystarve $Q = 100\,\text{kWh}$, lämpökerroin $\varepsilon = 3{,}00$, voimalan hyötysuhde $\eta_\text{voimala} = 0{,}400$ ja siirron osuus $\eta_\text{siirto} = 0{,}950$
@@ -116,4 +116,4 @@
 **Muunnokset:** Kaikki energiat ovat kilowattitunteina ja kertoimet dimensiottomia, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{polttoaine} = \dfrac{100\,\text{kWh}}{0{,}950 \cdot 0{,}400 \cdot 3{,}00} = \dfrac{100\,\text{kWh}}{1{,}14} = 87{,}719\,\text{kWh}$
 **Vastaus:** $87{,}7\,\text{kWh}$, kolme merkitsevää numeroa, koska kertoimet $0{,}950$, $0{,}400$ ja $3{,}00$ ovat kolmella numerolla ja lämmitystarve $100\,\text{kWh}$ on annettu kilowattitunnin tarkkuudella.
-**Järkevyys:** Suora sähkölämmitys vaatisi $\dfrac{100\,\text{kWh}}{0{,}380} = 263\,\text{kWh}$ polttoainetta ja öljykattila $\dfrac{100\,\text{kWh}}{0{,}900} = 111\,\text{kWh}$. Lämpöpumppu säästää polttoainetta eniten, koska se siirtää energiaa ulkoilmasta sisälle sen sijaan, että muuttaisi sähkön lämmöksi. Suora sähkölämmitys on huonoin, koska sähkön tuotannossa on jo hukkaantunut yli $60\,\%$ polttoaineen energiasta.
+**Järkevyys:** Suora sähkölämmitys vaatisi $\dfrac{100\,\text{kWh}}{0{,}380} = 263\,\text{kWh}$ polttoainetta ja öljykattila $\dfrac{100\,\text{kWh}}{0{,}900} = 111\,\text{kWh}$. Lämpöpumppu säästää polttoainetta eniten, koska sisälle tulee käytetyn sähkön lisäksi ulkoilmasta siirretty lämpö, joten sähköä tarvitaan vain kolmasosa lämmöstä. Suora sähkölämmitys on huonoin, koska sähkön tuotannossa on jo hukkaantunut yli $60\,\%$ polttoaineen energiasta.

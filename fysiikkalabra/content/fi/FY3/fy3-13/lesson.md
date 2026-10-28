@@ -209,7 +209,7 @@ missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_
 Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittausalueella mutta eroavat ekstrapoloitaessa, joten epävarmuus kasvaa jatkettaessa. Epävarmuutta pienentävät tarkempi painemittari, useampi mittauspiste ja leveämpi mittausalue. Kun tulos tunnetaan, kelvinasteikon nollapiste asetetaan siihen: lämpötila kelvineinä on $T = \theta - \theta_0$.
 
 ## Esimerkki
-Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa, kuten kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista ja niihin on lisätty mittausepätarkkuutta vastaavaa hajontaa; ne eivät ole oikean mittauksen tuloksia. Painemittarin epävarmuus on $\pm 1\,\text{kPa}$.
+Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa, kuten kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista ja niihin on lisätty mittausepätarkkuutta vastaavaa hajontaa; ne eivät ole oikean mittauksen tuloksia. Paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$.
 
 | θ (°C) | p (kPa) |
 | --- | --- |
@@ -274,7 +274,7 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 Moni ajattelee, että nollapiste on mitattu, koska se on kuvaajassa. Mitattuja ovat vain seitsemän pistettä välillä 10–$100\,{}^\circ\text{C}$; loppu on suoran jatketta, ja jatke on oletus siitä, että paine käyttäytyy samoin kylmemmässä. Toinen virhe on pitää tulosta epäonnistuneena, jos se ei ole täsmälleen $-273{,}15\,{}^\circ\text{C}$. Tulos $-276\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta noin 3 astetta, kun epävarmuus on 18 astetta, eli se sopii yhteen arvon kanssa. Kolmas virhe on vetää suora kaikkien pisteiden kautta mutkitellen: pisteiden vaihtelu ylös ja alas johtuu mittausepävarmuudesta, ja suora kuuluu vetää pisteiden joukon keskeltä.
 
 ## Tiivistelmä
-- Suljetussa astiassa kaasun paine on mittausalueella lineaarinen funktio lämpötilasta: $p = p_0 + k\theta$. Mittausaineisto muuttuu suoraksi piirtämällä $p$ lämpötilan funktiona ja vetämällä suora pisteiden joukon keskeltä.
+- Suljetussa jäykässä astiassa harvan kaasun paine on mittausalueella lineaarinen funktio lämpötilasta: $p = p_0 + k\theta$. Mittausaineisto muuttuu suoraksi piirtämällä $p$ lämpötilan funktiona ja vetämällä suora pisteiden joukon keskeltä.
 - Mittausepävarmuus kuvaa mittaustulokseen liittyvää epävarmuutta, eikä se yleensä ole ehdoton suurin mahdollinen poikkeama oikeasta arvosta. Suoran ei tarvitse osua jokaiseen pisteeseen vaan kulkea epävarmuusvälien kautta.
 - Ekstrapolointi jatkaa suoraa mittausalueen ulkopuolelle: nollapaineen lämpötila on $\theta_0 = -p_0/k$.
 - Epävarmuus arvioidaan ääriviivoista: $\Delta\theta_0 = (\theta_{0,\text{max}} - \theta_{0,\text{min}})/2$. Tulos $\theta_0 \pm \Delta\theta_0$ sopii yhteen hyväksytyn arvon $-273{,}15\,{}^\circ\text{C}$ kanssa, jos se kuuluu väliin.

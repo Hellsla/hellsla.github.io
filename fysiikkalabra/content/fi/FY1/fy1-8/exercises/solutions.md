@@ -50,7 +50,7 @@
 
 ## fy1-8-L2-01
 **Annettu:** viisi aikaa $7{,}8\,\text{s}$, $8{,}2\,\text{s}$, $7{,}9\,\text{s}$, $8{,}1\,\text{s}$ ja $8{,}0\,\text{s}$
-**Kysytty:** keskiarvon suhteellinen epävarmuus $\varepsilon$ prosentteina
+**Kysytty:** tuloksen suhteellinen epävarmuus $\varepsilon$ prosentteina, kun epävarmuutena on puolet vaihteluvälistä
 **Periaate:** Lasketaan ensin keskiarvo ja epävarmuuden yksinkertainen arvio, puolet vaihteluvälistä. Suhteellinen epävarmuus on epävarmuus jaettuna keskiarvolla, joten se kertoo mittauksen laadun riippumatta yksiköstä.
 **Kaava:** $\bar{t} = \dfrac{\sum t_i}{5}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\varepsilon = \dfrac{\Delta t}{\bar{t}}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita. Osamäärä kerrotaan sadalla prosenteiksi.

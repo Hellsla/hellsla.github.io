@@ -243,17 +243,17 @@
         "prompt": "Mikä mikromallin piirre selittää parhaiten, miksi kaasu laajenee eniten ja kiinteä aine vähiten?",
         "choices": [
           {
-            "text": "Mitä heikommin hiukkaset ovat sidoksissa toisiinsa, sitä enemmän lämpötilan nousu loitontaa niitä: kiinteässä aineessa sidokset ovat vahvimpia, kaasun hiukkaset ovat lähes vapaita.",
+            "text": "Mitä heikompia hiukkasten väliset vuorovaikutukset ovat, sitä enemmän lämpötilan nousu loitontaa niitä: kiinteässä aineessa vuorovaikutukset ovat vahvimpia, kaasun hiukkaset ovat lähes vapaita.",
             "correct": true,
-            "feedback": "Juuri näin. Kiinteän aineen hiukkaset värähtelevät tasapainoasemiensa ympärillä vahvojen sidosten pitäminä, nesteen sidokset ovat heikompia, ja kaasun hiukkaset liikkuvat lähes vapaasti. Taulukossa järjestys on sama: 0,36 cm³, 2,1 cm³ ja 11 cm³, 34 cm³."
+            "feedback": "Juuri näin. Kiinteän aineen hiukkaset värähtelevät tasapainoasemiensa ympärillä naapuriensa vetovoimien pitäminä, nesteen hiukkaset pysyvät yhdessä mutta liikkuvat toistensa ohi, ja kaasun hiukkaset liikkuvat lähes vapaasti. Taulukossa järjestys on sama: $0{,}36\\,\\text{cm}^3$, $2{,}1\\,\\text{cm}^3$ ja $11\\,\\text{cm}^3$, $34\\,\\text{cm}^3$."
           },
           {
             "text": "Kaasun ja nesteen hiukkaset kasvavat lämmetessään enemmän kuin kiinteän aineen hiukkaset.",
-            "feedback": "Hiukkaset eivät kasva missään olomuodossa; lämmetessä muuttuu niiden liike ja keskimääräinen etäisyys. Ero olomuotojen välillä tulee siitä, kuinka tiukasti hiukkasten väliset sidokset pitävät niitä paikoillaan."
+            "feedback": "Hiukkaset eivät kasva missään olomuodossa; lämmetessä muuttuu niiden liike ja keskimääräinen etäisyys. Ero olomuotojen välillä tulee siitä, kuinka tiukasti hiukkasten väliset vuorovaikutukset pitävät niitä paikoillaan."
           },
           {
             "text": "Kaasussa on samassa tilavuudessa enemmän hiukkasia, joten laajenevia hiukkasvälejä on enemmän.",
-            "feedback": "Asia on päinvastoin: kaasussa hiukkaset ovat kaukana toisistaan, joten litrassa ilmaa on paljon vähemmän hiukkasia kuin litrassa vettä tai terästä. Kaasu laajenee eniten, koska sen hiukkaset ovat lähes vapaita, eivät sidosten pitämiä."
+            "feedback": "Asia on päinvastoin: kaasussa hiukkaset ovat kaukana toisistaan, joten litrassa ilmaa on paljon vähemmän hiukkasia kuin litrassa vettä tai terästä. Kaasu laajenee eniten, koska sen hiukkaset ovat lähes vapaita, eivät naapuriensa vetovoimien pitämiä."
           }
         ]
       },

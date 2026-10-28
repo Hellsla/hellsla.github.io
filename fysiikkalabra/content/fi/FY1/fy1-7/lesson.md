@@ -53,7 +53,7 @@ Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuva
 
 Kun mitataan saman aineen eri kokoisia paloja, havaitaan säännönmukaisuus: kaksinkertainen tilavuus antaa kaksinkertaisen massan, ja puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen, eli suhde $m : V$ pysyy samana. Tuo vakio suhde on aineen tiheys.
 
-Jos mittaustulokset piirretään koordinaatistoon, jossa vaaka-akselilla on tilavuus ja pystyakselilla massa, pisteet asettuvat suoralle, joka kulkee origon kautta (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
+Jos mittaustulokset piirretään koordinaatistoon, jossa vaaka-akselilla on tilavuus ja pystyakselilla massa, pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
 
 ### Tiheys kertoo, mistä aineesta on kyse
 

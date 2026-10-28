@@ -74,7 +74,7 @@
 **Järkevyys:** Jokainen heilahdus jää edellistä matalammaksi, koska osa mekaanisesta energiasta muuttuu lämpöenergiaksi, ja lopulta kaikki $360\,\text{J}$ on lämpöenergiaa. Se leviää ilmaan ja kiinnityksiin niin laajalle, ettei lämpenemistä huomaa, mutta energiaa ei ole kadonnut.
 
 ## fy2-1-L2-04
-**Annettu:** keittimeen tuleva sähköenergia $E_\text{sähkö} = 360\,\text{kJ}$, veteen siirtyvä lämpöenergia $E_\text{vesi} = 331\,\text{kJ}$
+**Annettu:** keittimeen tuleva sähköenergia $E_\text{sähkö} = 360\,\text{kJ}$, veteen lämpönä siirtyvä energia $E_\text{vesi} = 331\,\text{kJ}$
 **Kysytty:** keittimeen ja ympäristöön päätyvä energia $E_\text{muu}$ yksikössä $\text{J}$
 **Periaate:** Sähköenergia muuttuu lämpöenergiaksi, ja osa siitä päätyy veteen ja loput keittimeen ja ympäristöön. Energiaa ei synny eikä katoa, joten $E_\text{alussa} = E_\text{lopussa}$.
 **Kaava:** $E_\text{sähkö} = E_\text{vesi} + E_\text{muu}$, joten $E_\text{muu} = E_\text{sähkö} - E_\text{vesi}$

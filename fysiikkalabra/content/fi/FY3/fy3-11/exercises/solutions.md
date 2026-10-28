@@ -101,7 +101,7 @@
 ## fy3-11-L3-02
 **Annettu:** vuotuinen lämmöntarve $Q = 16{,}0\,\text{MWh}$, lämpöpumpun lämpökerroin $\varepsilon = 2{,}50$, nykyinen lämmitys suora sähkölämmitys
 **Kysytty:** säästetty sähköenergia $\Delta E$ ja ulkoilmasta otettu lämpö $Q_\text{ulko}$ megawattitunteina sekä perustelu, miksi pumppu ei ole ikiliikkuja
-**Periaate:** Lämpökerroin kertoo, kuinka monta kertaa niin paljon lämpöä pumppu luovuttaa kuin se käyttää sähköä. Suora sähkölämmitys muuttaa kaiken sähkön lämmöksi, joten se tarvitsee sähköä saman verran kuin lämpöä. Energia säilyy: taloon tuleva lämpö on pumpun sähkö ja ulkoilmasta otettu lämpö yhteensä.
+**Periaate:** Lämpökerroin kertoo, kuinka monta kertaa niin paljon lämpöä pumppu luovuttaa kuin se käyttää sähköä. Suoran sähkölämmityksen vastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi, joka siirtyy lämpönä huoneeseen, joten se tarvitsee sähköä saman verran kuin lämpöä. Energia säilyy: taloon tuleva lämpö on pumpun sähkö ja ulkoilmasta otettu lämpö yhteensä.
 **Kaava:** $\varepsilon = \dfrac{Q}{E_\text{s}}$, joten $E_\text{s} = \dfrac{Q}{\varepsilon}$. Säästö on $\Delta E = Q - E_\text{s}$ ja energian säilymisestä $Q_\text{ulko} = Q - E_\text{s}$, eli $\Delta E = Q_\text{ulko} = Q - \dfrac{Q}{\varepsilon}$.
 **Muunnokset:** Kaikki energiat ovat megawattitunteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{s} = \dfrac{16{,}0\,\text{MWh}}{2{,}50} = 6{,}40\,\text{MWh}$, joten $\Delta E = Q_\text{ulko} = 16{,}0\,\text{MWh} - 6{,}40\,\text{MWh} = 9{,}60\,\text{MWh}$, eli suoraan $\Delta E = Q\left(1 - \dfrac{1}{\varepsilon}\right) = 16{,}0\,\text{MWh} \cdot 0{,}600 = 9{,}60\,\text{MWh}$

@@ -4,4 +4,6 @@ ok   build
 ok   inquiry (44 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
-fy3-12: draft (science=stale, pedagogy=stale)
+ok   layout 768 px
+ok   layout 1280 px
+fy3-12: draft (science=stale, pedagogy=stale); exercises: draft (science=stale, pedagogy=stale)

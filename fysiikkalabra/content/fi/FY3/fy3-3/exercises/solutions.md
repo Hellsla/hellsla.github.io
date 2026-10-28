@@ -16,7 +16,7 @@
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = 350 - 273{,}15 = 76{,}85\,{}^\circ\text{C}$
 **Vastaus:** $77\,{}^\circ\text{C}$, täysinä asteina, koska $350\,\text{K}$ on annettu täysinä kelvineinä.
-**Järkevyys:** Veden kiehumispiste on $373\,\text{K}$ eli $100\,{}^\circ\text{C}$, ja $350\,\text{K}$ on $23\,\text{K}$ sen alapuolella, joten arvio on $100 - 23 = 77\,{}^\circ\text{C}$. Tulos on myös yli nollan, koska $350\,\text{K} > 273\,\text{K}$. Takaisinlasku: $76{,}85 + 273{,}15 = 350$.
+**Järkevyys:** Veden kiehumispiste normaalipaineessa on $373\,\text{K}$ eli $100\,{}^\circ\text{C}$, ja $350\,\text{K}$ on $23\,\text{K}$ sen alapuolella, joten arvio on $100 - 23 = 77\,{}^\circ\text{C}$. Tulos on myös yli nollan, koska $350\,\text{K} > 273\,\text{K}$. Takaisinlasku: $76{,}85 + 273{,}15 = 350$.
 
 ## fy3-3-L1-03
 **Annettu:** $T = 77{,}4\,\text{K}$

@@ -10,7 +10,7 @@ Energiaa on monessa muodossa, ja jokaista muotoa sanotaan **energialajiksi**. En
 ### Seitsemän energialajia
 - **Potentiaalienergia** $E_\text{p}$ on kappaleen asemaan sidottua energiaa, tässä painovoiman potentiaalienergiaa. Mitä korkeammalla kappale on ja mitä suurempi sen massa on, sitä enemmän sillä on potentiaalienergiaa. Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia.
 - **Liike-energia** $E_\text{k}$ on liikkuvan kappaleen energiaa. Mitä nopeammin kappale liikkuu ja mitä suurempi sen massa on, sitä enemmän sillä on liike-energiaa. Levossa olevalla kappaleella sitä ei ole.
-- **Lämpöenergia** $E_\text{lämpö}$ on aineen hiukkasten liikkeeseen ja niiden välisiin vuorovaikutuksiin liittyvää energiaa. Kun kappale lämpenee, sen hiukkaset liikkuvat enemmän ja sen lämpöenergia kasvaa. Lämpöenergia riippuu myös aineen määrästä, joten se ei ole sama asia kuin lämpötila. Sana **lämpö** taas tarkoittaa fysiikassa energiaa, joka *siirtyy* lämpimämmästä kylmempään lämpötilaeron vuoksi: kappaleella on lämpöenergiaa, ja lämpönä energiaa siirtyy kappaleesta toiseen.
+- **Lämpöenergia** $E_\text{lämpö}$ on aineen hiukkasten liikkeeseen ja niiden välisiin vuorovaikutuksiin liittyvää energiaa. Kun kappale lämpenee, sen hiukkaset liikkuvat enemmän ja sen lämpöenergia kasvaa. Lämpöenergia riippuu myös aineen määrästä, joten se ei ole sama asia kuin lämpötila. Sana **lämpö** taas tarkoittaa fysiikassa energiaa, joka *siirtyy* lämpötilaeron vuoksi: energiaa siirtyy nettomääräisesti lämpimämmästä kappaleesta kylmempään. Kappaleella on lämpöenergiaa, ja lämpönä energiaa siirtyy kappaleesta toiseen.
 - **Kemiallinen energia** on aineiden kemiallisiin sidoksiin varastoitunutta energiaa. Sitä on ravinnossa, polttoaineissa ja paristoissa, ja se vapautuu esimerkiksi palamisessa ja aineenvaihdunnassa.
 - **Säteilyenergia** on säteilyn mukana kulkevaa energiaa, esimerkiksi auringonvaloa. Se siirtyy myös tyhjiön läpi.
 - **Sähköenergia** on sähkövirran mukana siirtyvää energiaa, esimerkiksi sähköverkossa.
@@ -233,5 +233,5 @@ Energia ei katoa eikä kulu loppuun. Kun pallo pysähtyy tai laite kuluttaa ener
 - Energialajeja ovat potentiaalienergia, liike-energia (yhdessä mekaaninen energia), lämpöenergia, kemiallinen energia, säteilyenergia, sähköenergia ja ydinenergia.
 - Energia muuttaa muotoa ja siirtyy mutta ei synny eikä katoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$.
 - Kitka ei luo energiaa vaan muuttaa mekaanista energiaa lämpöenergiaksi: $E_\text{p} + E_\text{k}$ pienenee, mutta kokonaisenergia ei muutu.
-- Kappaleella on lämpöenergiaa; lämpö on energiaa, joka siirtyy lämpötilaeron vuoksi lämpimämmästä kylmempään.
+- Kappaleella on lämpöenergiaa; lämpö on energiaa, joka siirtyy lämpötilaeron vuoksi, nettomääräisesti lämpimämmästä kylmempään.
 - Energian kuluttaminen tarkoittaa sen muuttumista muotoon, jota on vaikea hyödyntää, yleensä lämpöenergiaksi.

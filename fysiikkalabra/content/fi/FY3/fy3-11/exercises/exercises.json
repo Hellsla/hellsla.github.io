@@ -87,7 +87,7 @@
     {
       "id": "fy3-11-L3-02",
       "level": 3,
-      "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
+      "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi, joka siirtyy lämpönä huoneeseen. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
       "answer": 9.60,
       "unit": "MWh",
       "tolerance": 0.02

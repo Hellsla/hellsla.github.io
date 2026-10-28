@@ -106,7 +106,7 @@
 **Muunnokset:** Korvataan terajoulen etuliite sen arvolla: $230\,\text{TJ} = 230 \cdot 1000\,\text{GJ} = 230\,000\,\text{GJ}$
 **Sijoitus:** $E_\text{meri} = 370\,\text{TJ} - 140\,\text{TJ} = 230\,\text{TJ} = 230\,000\,\text{GJ}$, ja $N = 230\,000\,\text{GJ} : 72\,\text{GJ} = 3194$
 **Vastaus:** Noin $3200$ omakotitaloa, kaksi merkitsevää numeroa kuten tiedoissa $72\,\text{GJ}$, $140\,\text{TJ}$ ja $370\,\text{TJ}$.
-**Järkevyys:** Mereen menee enemmän energiaa kuin sähköksi, kuten lämmöllä toimivissa voimaloissa yleensä: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Arvio: $200\,000 : 70 \approx 3000$, joten tuhansia taloja on oikea suuruusluokka. Yhden vuorokauden hukkalämpö riittäisi siis kokonaisen pikkukaupungin vuoden lämmitykseen.
+**Järkevyys:** Mereen menee enemmän energiaa kuin sähköksi, kuten lämmöllä toimivissa voimaloissa yleensä: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Arvio: $200\,000 : 70 \approx 3000$, joten tuhansia taloja on oikea suuruusluokka. Energiamäärä vastaa siis pikkukaupungin vuoden lämmitystä, mutta mereen menevä lämpö on liian viileää kaukolämmöksi; yhteistuotannossa höyry lauhdutetaan kuumempana, jolloin lämpö saadaan talteen ja sähköä syntyy hieman vähemmän.
 
 ## fy2-2-L3-03
 **Annettu:** reaktorin energia vuorokaudessa $E = 370\,\text{TJ}$, uraani-235:tä $4{,}5\,\text{kg}$ ja bensiinin energia litraa kohti $E_\text{litra} = 32\,\text{MJ}/\textsf{l}$

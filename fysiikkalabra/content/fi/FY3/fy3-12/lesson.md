@@ -1,6 +1,6 @@
 # Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos
 
-> **Miksi** maapallon keskilämpötila on noin +$15\,{}^\circ\text{C}$ eikä pakkasen puolella, vaikka maapallo säteilee avaruuteen yhtä paljon energiaa kuin saa Auringosta?
+> **Miksi** maapallon keskilämpötila on noin +$15\,{}^\circ\text{C}$ eikä pakkasen puolella, vaikka maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: Maa avaruudesta nähtynä, ympärillään ohut ilmakehä. Kuvan vasemmassa reunassa paistaa Aurinko, ja tähdet tuikkivat mustalla taivaalla." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#ffc078"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy312h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy312h-clip"><circle cx="800" cy="300" r="210"/></clipPath></defs>
@@ -116,7 +116,7 @@
 </svg>
 
 ## Ydinajatus
-Lämpötilaeron vuoksi energiaa siirtyy itsestään nettomääräisesti lämpimämmästä kappaleesta kylmempään. Näin siirtyvää energiaa sanotaan lämmöksi, ja se siirtyy kolmella tavalla. Johtumisessa energia siirtyy aineen läpi hiukkasesta toiseen, kun nopeammin värähtelevät hiukkaset tönivät hitaampia naapureitaan. Metallit johtavat lämpöä hyvin, ilma ja villa huonosti. Konvektiossa lämmin neste tai kaasu virtaa ja kuljettaa energiaa mukanaan: lämmin ilma nousee patterin yläpuolella, koska se on laajentunut ja kevyempää kuin ympäröivä ilma.
+Lämpötilaeron vuoksi energiaa siirtyy itsestään nettomääräisesti lämpimämmästä kappaleesta kylmempään. Näin siirtyvää energiaa sanotaan lämmöksi, ja se siirtyy kolmella tavalla. Johtumisessa energia siirtyy aineen läpi hiukkasesta toiseen, kun nopeammin värähtelevät hiukkaset tönivät hitaampia naapureitaan. Metallit johtavat lämpöä hyvin, koska niissä energiaa kuljettavat lisäksi ja pääosin vapaat elektronit; ilma ja villa johtavat huonosti. Konvektiossa lämmin neste tai kaasu virtaa ja kuljettaa energiaa mukanaan: lämmin ilma nousee patterin yläpuolella, koska se on laajentunut ja kevyempää kuin ympäröivä ilma.
 
 Lämpösäteilyssä kappale lähettää sähkömagneettista säteilyä, joka ei tarvitse väliainetta. Näin Auringon energia tulee Maahan tyhjän avaruuden läpi, ja näin takan hehku lämmittää kasvoja. Kaikki kappaleet säteilevät, ja mitä kuumempi kappale on, sitä enemmän ja sitä lyhytaaltoisempaa säteilyä se lähettää. Lämpösäteilyä lähtee siis molemmista kappaleista, joten myös kylmempi kappale säteilee lämpimämpää kohti. Lämpimämpi säteilee kuitenkin enemmän, joten energiaa siirtyy nettona kylmempään.
 
@@ -178,7 +178,7 @@ Ilmakehän vesihöyry, hiilidioksidi ja metaani päästävät auringonvalon pä�
 </svg>
 
 ### Ilmastonmuutos
-Fossiilisten polttoaineiden käyttö on nostanut ilmakehän hiilidioksidipitoisuuden noin 280 miljoonasosasta yli 420 miljoonasosaan. Kun kasvihuonekaasuja lisätään, avaruuteen pääsee hetkellisesti vähemmän energiaa kuin Auringosta tulee. Ero on nykyään noin $1\,\text{W}$ jokaista maapallon neliömetriä kohti. Ylimääräinen energia lämmittää valtameriä, maata ja ilmaa, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan. Tätä sanotaan ilmastonmuutokseksi. Pieneltä näyttävä tehoero on koko maapallon alalla valtava, ja suurin osa siitä varastoituu meriin, joiden suuri lämpökapasiteetti hidastaa lämpenemistä mutta myös pitää sen käynnissä pitkään. Energiaratkaisut, kuten eristäminen, lämpöpumput ja päästöttömät voimalaitokset, ovat siksi myös eettisiä valintoja, jotka vaikuttavat tuleviin sukupolviin.
+Ihmisen toiminta, pääosin fossiilisten polttoaineiden käyttö, on nostanut ilmakehän hiilidioksidipitoisuuden noin 280 miljoonasosasta yli 420 miljoonasosaan. Kun kasvihuonekaasuja lisätään, avaruuteen pääsee hetkellisesti vähemmän energiaa kuin Auringosta tulee. Ero on nykyään noin $1\,\text{W}$ jokaista maapallon neliömetriä kohti. Ylimääräinen energia lämmittää valtameriä, maata ja ilmaa, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan. Tätä sanotaan ilmastonmuutokseksi. Pieneltä näyttävä tehoero on koko maapallon alalla valtava, ja suurin osa siitä varastoituu meriin, joiden suuri lämpökapasiteetti hidastaa lämpenemistä mutta myös pitää sen käynnissä pitkään. Energiaratkaisut, kuten eristäminen, lämpöpumput ja päästöttömät voimalaitokset, ovat siksi myös eettisiä valintoja, jotka vaikuttavat tuleviin sukupolviin.
 
 ## Kaava: Lämpöteho ja U-arvo
 Rakennusosan läpi johtuva lämpöteho on
