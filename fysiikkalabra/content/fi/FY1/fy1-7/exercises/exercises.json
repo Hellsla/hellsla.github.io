@@ -61,9 +61,9 @@
   {
    "id": "fy1-7-L2-03",
    "level": 2,
-   "text": "Metallikappaleen massa on $57{,}0\\,\\text{g}$. Kuvassa on mittalasi ennen kappaleen upottamista ja sen jälkeen. Kuinka suuri on kappaleen aineen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
+   "text": "Metallikappaleen massa on $89{,}0\\,\\text{g}$. Kuvassa on mittalasi ennen kappaleen upottamista ja sen jälkeen. Kuinka suuri on kappaleen aineen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
    "figure": "fy1-7/cylinders-read",
-   "answer": 7125,
+   "answer": 8900,
    "unit": "kg/m³",
    "tolerance": 0.03
   },

@@ -98,10 +98,10 @@ def displacement():
 
 def cylinders_read():
     """A task-only variant of `displacement`: two measuring cylinders with a fine scale and no values written; the student reads both levels."""
-    f = Fig("fy17-cyl", 372, "Kuva mittalasista ennen ja jälkeen metallikappaleen upottamisen. Asteikko on 0–100 ml, numerot joka 20 ml:n kohdalla ja "
-            "pienet viivat joka 2 ml:n kohdalla. Vasemmassa mittalasissa vesi yltää merkkiin 46 ml. Kun kappale on upotettu, vesi yltää oikeassa mittalasissa merkkiin 54 ml.")
+    f = Fig("fy17-cyl", 404, "Kuva mittalasista ennen ja jälkeen metallikappaleen upottamisen. Asteikko on 0–100 ml, numerot joka 20 ml:n kohdalla ja "
+            "pienet viivat joka 2 ml:n kohdalla. Vasemmassa mittalasissa vesi yltää merkkiin 40 ml. Kun kappale on upotettu, vesi yltää oikeassa mittalasissa merkkiin 50 ml.")
     f.defs_add(f'<linearGradient id="fy17-water2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></linearGradient>')
-    top, bot, w = 30, 340, 80            # cylinder from 0 ml (bottom) to 100 ml (top)
+    top, bot, w = 50, 360, 80            # cylinder from 0 ml (bottom) to 100 ml (top)
     per = (bot - top) / 100
     def cyl(cx, ml, piece):
         x0, x1 = cx - w / 2, cx + w / 2
@@ -117,10 +117,11 @@ def cylinders_read():
             f.line(x0 - (10 if k % 10 == 0 else 5), yy, x0, yy, INK, 2 if k % 10 == 0 else 1.2)
         for k in range(20, 101, 20):
             f.tex(x0 - 16, bot - k * per, str(k), "end", MUTED, w=48)
-    cyl(150, 46, False)
-    cyl(400, 54, True)
-    f.tex(150, 366, r"\text{ennen}", "middle", w=100)
-    f.tex(400, 366, r"\text{jälkeen}", "middle", w=100)
+        f.tex(x0 - 16, top - 30, r"\text{ml}", "end", MUTED, w=48)
+    cyl(150, 40, False)
+    cyl(400, 50, True)
+    f.tex(150, 388, r"\text{ennen}", "middle", w=100)
+    f.tex(400, 388, r"\text{jälkeen}", "middle", w=100)
     return f.svg()
 
 

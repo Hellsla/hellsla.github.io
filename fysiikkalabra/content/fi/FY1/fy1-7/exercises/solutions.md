@@ -69,15 +69,15 @@
 **Järkevyys:** Kaksi ja puoli litraa vettä on $2{,}5\,\text{kg}$. Etanoli on vettä kevyempää, joten sen massa on hieman pienempi, noin $0{,}79 \cdot 2{,}5\,\text{kg} \approx 2{,}0\,\text{kg}$.
 
 ## fy1-7-L2-03
-**Annettu:** metallikappaleen massa $m = 57{,}0\,\text{g}$; kuva mittalasista ennen ja jälkeen kappaleen upottamisen
+**Annettu:** metallikappaleen massa $m = 89{,}0\,\text{g}$; kuva mittalasista ennen ja jälkeen kappaleen upottamisen
 **Kysytty:** kappaleen aineen tiheys $\rho$ yksikössä $\text{kg/m}^3$
 **Periaate:** Upotettu kappale syrjäyttää oman tilavuutensa verran vettä, joten kappaleen tilavuus on veden lukemien erotus. Tiheys on massa tilavuutta kohti.
-**Kuvaajan lukeminen:** Asteikon numeroidut viivat ovat $20\,\text{ml}$ välein, ja pienet viivat ovat $2\,\text{ml}$ välein. Ennen upotusta vesi yltää kohtaan $V_1 = 46\,\text{ml}$ (kolme pientä viivaa merkin $40\,\text{ml}$ yläpuolella). Upotuksen jälkeen vesi yltää kohtaan $V_2 = 54\,\text{ml}$ (kaksi pientä viivaa merkin $50\,\text{ml}$ yläpuolella). Lukemat ovat tarkkoja asteikosta, ja vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
+**Kuvaajan lukeminen:** Asteikon numerot ovat $20\,\text{ml}$ välein, pitkät viivat $10\,\text{ml}$ välein ja pienet viivat $2\,\text{ml}$ välein. Ennen upotusta vesi yltää merkkiin $V_1 = 40\,\text{ml}$. Upotuksen jälkeen vesi yltää pitkään viivaan numeroiden $40$ ja $60$ puolivälissä, $V_2 = 50\,\text{ml}$. Vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
 **Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V}$
-**Muunnokset:** $V = 54\,\text{ml} - 46\,\text{ml} = 8\,\text{ml} = 8\,\text{cm}^3 = 8 \cdot 10^{-6}\,\text{m}^3$ ja $57{,}0\,\text{g} = 0{,}0570\,\text{kg}$.
-**Sijoitus:** $\rho = \dfrac{0{,}0570\,\text{kg}}{8 \cdot 10^{-6}\,\text{m}^3} = 7125\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $7100\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska lukemien erotus $8\,\text{ml}$ on yhden numeron luku mutta asteikon $2\,\text{ml}$ tarkkuudella lukemat tunnetaan kahden numeron tarkkuudella.
-**Järkevyys:** Arvio: $57\,\text{g} : 8\,\text{cm}^3 \approx 7\,\tfrac{\text{g}}{\text{cm}^3}$, mikä on $7000\,\tfrac{\text{kg}}{\text{m}^3}$ ja sama suuruusluokka. Tulos on lähellä raudan ja sinkin tiheyttä, joten kappale voi olla metallia.
+**Muunnokset:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 1{,}0 \cdot 10^{-5}\,\text{m}^3$ ja $89{,}0\,\text{g} = 0{,}0890\,\text{kg}$.
+**Sijoitus:** $\rho = \dfrac{0{,}0890\,\text{kg}}{1{,}0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
+**Vastaus:** $8900\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska tilavuus $10\,\text{ml}$ luetaan asteikolta noin $1\,\text{ml}$:n tarkkuudella.
+**Järkevyys:** Arvio: $89\,\text{g} : 10\,\text{cm}^3 \approx 9\,\tfrac{\text{g}}{\text{cm}^3}$, mikä on $9000\,\tfrac{\text{kg}}{\text{m}^3}$. Tulos on lähellä kuparin tiheyttä $8960\,\tfrac{\text{kg}}{\text{m}^3}$, joten kappale voi olla kuparia.
 
 ## fy1-7-L2-04
 **Annettu:** tyhjän pullon massa $m_0 = 215\,\text{g}$, nesteen tilavuus $V = 250\,\text{cm}^3$ ja pullon sekä nesteen yhteismassa $m_\text{yht} = 412\,\text{g}$
