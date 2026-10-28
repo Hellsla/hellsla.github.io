@@ -72,7 +72,9 @@ def content_hash(code, lang=i18n.SOURCE):
     import figcat
     h = hashlib.sha256()
     for name, path in files(code, lang):
-        if path.is_file(): h.update(name.encode() + b"\0" + normalized(path.read_text(), name).encode() + b"\0")
+        if not path.is_file(): continue
+        text = figcat.without_reuse(path.read_text()) if name == "figures.py" else path.read_text()   # the REUSE note draws nothing
+        h.update(name.encode() + b"\0" + normalized(text, name).encode() + b"\0")
     tasks = folder(code, lang) / "tasks.json"           # a figure of another chapter that a task refers to: the code that draws it
     for fid in figcat.refs_in(tasks.read_text() if tasks.is_file() else ""):
         if figcat.code_rel(fid) == (code_folder(code) / "figures.py").relative_to(ROOT).as_posix(): continue   # already in figures.py above

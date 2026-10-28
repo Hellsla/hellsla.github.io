@@ -152,6 +152,20 @@ def source_slice(text, name):
     return "\n\n".join(parts + [f"FIGURES[{name!r}] = {ast.get_source_segment(text, entry)}"])
 
 
+def without_reuse(text):
+    """figures.py without its REUSE note (and the comment above it): the note says what a figure would give away in a
+    task, it draws nothing, so a hash over the whole figures.py (a Sovella set's) does not move when it is written."""
+    try: tree = ast.parse(text)
+    except SyntaxError: return text
+    lines = text.split("\n")
+    for node in reversed(tree.body):
+        if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == "REUSE" for t in node.targets):
+            start = node.lineno - 1
+            if start and lines[start - 1].startswith("# What each figure would give away"): start -= 1
+            del lines[start:node.end_lineno]
+    return "\n".join(lines)
+
+
 def refs_in(text):
     """Figure ids a text refers to with "figure": "<id>" (exercises.json, inquiry.json, tasks.json)."""
     return list(dict.fromkeys(REF.findall(text or "")))

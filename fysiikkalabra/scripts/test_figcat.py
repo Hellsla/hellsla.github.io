@@ -79,6 +79,11 @@ FIG.write_text(FORIG.replace("CART = [(1, 0.6)", "CART = [(1, 0.7)")); h2, l2 = 
 expect("the referenced figure's data changes the exercise hash", h2 != h0, (h0, h2))
 expect("and leaves the lesson's hash alone", l2 == l0, (l0, l2))
 FIG.write_text(FORIG)
+SOV = T / "lessons/FY3/sovella/figures.py"; SORIG = SOV.read_text()
+p0 = run(S / "practice.py", "status")[1]
+SOV.write_text(SORIG.replace('"reveals: the model graph', '"safe: the model graph'))
+expect("a Sovella set's hash ignores the REUSE note", run(S / "practice.py", "status")[1] == p0, p0)
+SOV.write_text(SORIG)
 sys.path.insert(0, str(S)); os.environ["FYSIIKKALABRA_ROOT"] = str(T)
 import reviews
 expect("a changed figure slice is the review category figure", reviews.classify("figure:fy1-4/scatter-points", ["-x", "+y"], "fy1-4") == {"figure"})
