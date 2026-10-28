@@ -83,7 +83,7 @@
         {
           "text": "Suurimmat kivihiilellä ja pienimmät tuulivoimalla, koska tuulivoimala ei polta mitään.",
           "correct": true,
-          "feedback": "Oikein. Polttaminen vapauttaa hiilidioksidia jokaista tuotettua kilowattituntia kohti, ja kivihiilen energia tulee lähes kokonaan hiilen palamisesta. Maakaasussa on hiilen lisäksi paljon vetyä, joka palaa vedeksi, joten sen päästö on pienempi. Tuulivoimala ei polta mitään. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
+          "feedback": "Oikein. Polttaminen vapauttaa hiilidioksidia jokaista tuotettua kilowattituntia kohti, ja kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta. Maakaasussa on hiilen lisäksi paljon vetyä, joka palaa vedeksi, joten sen päästö on pienempi. Tuulivoimala ei polta mitään. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
         },
         {
           "text": "Suurimmat biomassalla ja pienimmät tuulivoimalla, koska puussa on enemmän hiiltä kuin kivihiilessä.",
@@ -91,7 +91,7 @@
         },
         {
           "text": "Suurimmat maakaasulla ja pienimmät biomassalla, koska kaasu karkaa helposti ja puu kasvaa uudelleen.",
-          "feedback": "Kaasuvuodot lisäävät maakaasun päästöjä, mutta kivihiili tuottaa samaa energiaa kohti vielä enemmän hiilidioksidia, koska sen energia tulee lähes kokonaan hiilen palamisesta. Biomassan päästöt eivät ole pienimmät: viljely, korjuu ja kuljetus aiheuttavat päästöjä, ja tuulivoimala ei polta mitään."
+          "feedback": "Kaasuvuodot lisäävät maakaasun päästöjä, mutta kivihiili tuottaa samaa energiaa kohti vielä enemmän hiilidioksidia, koska sen energia tulee suurimmaksi osaksi hiilen palamisesta. Biomassan päästöt eivät ole pienimmät: viljely, korjuu ja kuljetus aiheuttavat päästöjä, ja tuulivoimala ei polta mitään."
         },
         {
           "text": "Kaikilla suunnilleen yhtä suuret, koska jokaisella tuotetaan sama määrä sähköenergiaa.",

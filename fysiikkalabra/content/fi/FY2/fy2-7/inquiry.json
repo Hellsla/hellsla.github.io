@@ -179,7 +179,7 @@
      {
       "text": "Kun jännite kasvaa, saman tehon siirrossa häviävä teho pienenee, ja häviö pienenee paljon enemmän kuin jännite kasvaa.",
       "correct": true,
-      "feedback": "Oikein. Jännite kasvaa $20\\,\\text{kV}$:sta $400\\,\\text{kV}$:iin eli $20$-kertaiseksi, mutta häviävä teho pienenee $0{,}80\\,\\text{MW}$:sta $0{,}0020\\,\\text{MW}$:iin eli $400$-kertaa pienemmäksi: $0{,}80 : 0{,}0020 = 400$. Jännitteellä $20\\,\\text{kV}$ häviää $8{,}0\\,\\%$ siirrettävästä $10\\,\\text{MW}$:n tehosta, jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\%$."
+      "feedback": "Oikein. Jännite kasvaa $20\\,\\text{kV}$:sta $400\\,\\text{kV}$:iin eli $20$-kertaiseksi, mutta häviävä teho pienenee $0{,}80\\,\\text{MW}$:sta $0{,}0020\\,\\text{MW}$:iin eli $400$ kertaa pienemmäksi: $0{,}80 : 0{,}0020 = 400$. Jännitteellä $20\\,\\text{kV}$ häviää $8{,}0\\,\\%$ siirrettävästä $10\\,\\text{MW}$:n tehosta, jännitteellä $400\\,\\text{kV}$ vain $0{,}020\\,\\%$."
      },
      {
       "text": "Häviävä teho kasvaa, kun jännite kasvaa, koska korkea jännite on voimakkaampaa.",
