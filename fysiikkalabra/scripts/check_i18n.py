@@ -16,7 +16,7 @@ A lesson not translated yet is listed, not an error: build.py publishes a langua
 after its own two reviews (reviews.py; the review files live in the language's folder). Exit 1 on any error."""
 import json, re, subprocess, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n
+import courses, i18n, inquiry
 
 ROOT = courses.ROOT
 TEXT_KEYS = {"text", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
@@ -75,6 +75,11 @@ def check_lesson(fi, tr, lang, errs):
             for k in sa:
                 if k == "formulas" and sa[k] != sb[k]: errs.append(f"{b.relative_to(ROOT)}: formulas differ from Finnish: {formula_diff(*(re.sub(r'<svg.*?</svg>', '', x.read_text(), flags=re.S) for x in (a, b)))}"[:600]); continue
                 if sa[k] != sb[k]: errs.append(f"{rel}/{n}: {k} differ from Finnish ({sb[k]} vs {sa[k]})"[:400])
+            if n == "lesson.md":
+                i18n.set_lang(lang); kb = [inquiry.heading(h)[0] for h in re.findall(r"^## (.+)$", b.read_text(), re.M)]
+                i18n.set_lang(i18n.SOURCE); ka = [inquiry.heading(h)[0] for h in re.findall(r"^## (.+)$", a.read_text(), re.M)]
+                if ka != kb: errs.append(f"{b.relative_to(ROOT)}: section keys {[k for k in kb if k not in ka]} are not Finnish ones; "
+                                         "name a lesson's own section's Finnish heading at its end: `## The structure of matter {Aineen rakenne}`")
             if n == "solutions.md" and re.findall(r"^## (\S+)", a.read_text(), re.M) != re.findall(r"^## (\S+)", b.read_text(), re.M):
                 errs.append(f"{rel}/exercises/solutions.md: the ## exercise ids differ from Finnish")
     if courses.lesson_file(fi, "figures.py").exists():

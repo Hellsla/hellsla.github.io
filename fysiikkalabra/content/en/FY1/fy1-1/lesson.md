@@ -146,7 +146,7 @@ Powers of ten let you estimate the ratio in your head. Each step from one power 
 
 Distances between stars are so large that the metre is impractical. A **light-year** is the distance that light travels in a vacuum in one year, about $9.46\cdot10^{15}\,\text{m}$. So it is a length, not a time. Light travel times and the astronomical units of length are covered in more detail in the chapter *Quantities, units and the SI system*.
 
-## The structure of matter
+## The structure of matter {Aineen rakenne}
 
 ### Matter consists of nested structures
 
@@ -226,7 +226,7 @@ The diameter of an atom is about $10^{-10}\,\text{m}$, but that of the nucleus i
   <foreignObject x="376" y="7.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{pea drawn too large}$</div></foreignObject>
 </svg>
 
-## Structures of the universe
+## Structures of the universe {Maailmankaikkeuden rakenteet}
 
 ### Earth's address in the universe
 
@@ -327,7 +327,7 @@ A **black hole** is a region from which, because of gravity, nothing, not even l
 
 The **observable universe** is the part of the universe from which light has had time to reach us during the age of the universe, about 13.8 billion years. Its diameter is about $8.8\cdot10^{26}\,\text{m}$, or about 93 billion light-years. The number is greater than twice 13.8 billion light-years because space has expanded during the light's journey. The boundary of the observable universe is not the edge of the universe but the limit of our horizon: for an observer in another galaxy, the observable universe is a sphere around that observer. The size of the whole universe is not known, and it may be infinite.
 
-## Fundamental interactions
+## Fundamental interactions {Perusvuorovaikutukset}
 
 ### Four fundamental interactions
 
