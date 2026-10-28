@@ -16,3 +16,21 @@ assert.equal(build(history,{},events.at(-1),'sample').length,1,'Missing lineage 
 assert.equal(build(history,{...lineage,a:'e'},events.at(-1),'sample').length,4,'Bad cyclic metadata cannot hang playback');
 assert.equal(build(history,lineage,events.at(-1),'absent').length,0);
 console.log('PASS: correction stages follow ancestry, exclude other branches, invalidate old passes, deduplicate and stop at recorded evidence');
+
+const extra={events:['x','y','z'].map((id,snapshot)=>({id,snapshot})),snapshots:[
+  [{...material('same-lesson','PASS','PASS'),work:{entries:1},exercises:{hash:'e1'}}],
+  [{...material('same-lesson','PASS','PASS'),work:{entries:2},exercises:{hash:'e1'}}],
+  [{...material('same-lesson','PASS','PASS'),work:{entries:2},exercises:{hash:'e2'}}]
+]};
+const independent=build(extra,{z:'y',y:'x'},extra.events[2],'sample');
+assert.equal(independent.length,3,'Recorded work and exercise changes are not lost when the lesson hash stays fixed');
+assert.deepEqual(Array.from(independent,f=>f.version),[1,1,1],'Exercise edits do not invent new lesson versions');
+console.log('PASS: work records and independent exercise updates remain visible without changing the lesson version');
+
+const branches={events:[{id:'root',snapshot:0},{id:'main',snapshot:1},{id:'review1',snapshot:2},{id:'review2',snapshot:3},{id:'merge',snapshot:3}],snapshots:[
+  [material('initial','missing','missing')],[material('initial','missing','missing')],
+  [material('revised','FAIL','PASS')],[material('revised','PASS','PASS')]
+]};
+const merged=build(branches,{merge:'main',main:'root',review2:'review1',review1:'root',_parents:{merge:['main','review2']}},branches.events.at(-1),'sample');
+assert.deepEqual(Array.from(merged,f=>f.event.id),['root','review1','review2'],'A real merge follows the branch carrying this material, including its correction rounds');
+console.log('PASS: merged material journeys retain review rounds from their actual source branch');

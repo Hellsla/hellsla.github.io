@@ -6,6 +6,8 @@ window.AgentOfficeScene = {
     const tr=value=>window.OfficeI18n?.t(value) ?? value;
     const C = {ink:'#ece4ce',muted:'#b8b8a9',gold:'#edba70',blue:'#8cb8e0',pink:'#e9a1b4',green:'#9ccb9b',red:'#e89885',amber:'#d7b474'};
     const stations = [
+      {id:'orchestrator',x:18,y:812,w:570,h:220,title:'COORDINATION',sub:'Packets · review scope · correction rounds',floor:'#514f47',accent:'#c2ad80'},
+      {id:'support',x:602,y:812,w:580,h:220,title:'GENERAL SUPPORT',sub:'Additional agent work recorded in usage files',floor:'#484e60',accent:'#a9b5db'},
       {id:'developer',x:18,y:18,w:398,h:270,title:'DEVELOPMENT WORKSHOP',sub:'Drafts of texts, exercises and simulations.',floor:'#4b5350',accent:C.gold},
       {id:'science',x:430,y:18,w:357,h:270,title:'SCIENCE REVIEW',sub:'Independent physics & mathematics',floor:'#415861',accent:C.blue},
       {id:'pedagogy',x:801,y:18,w:381,h:270,title:'PEDAGOGY REVIEW',sub:'Independent learning & usability',floor:'#5b4d5b',accent:C.pink},
@@ -15,9 +17,11 @@ window.AgentOfficeScene = {
       {id:'chatgpt',x:880,y:366,w:302,h:156,title:'EXTERNAL REVIEW',sub:'OPTIONAL · WHOLE WEBPAGE',floor:'#3c5955',accent:'#82cbb6'},
       {id:'site',x:916,y:535,w:266,h:247,title:'THE WEBSITE',sub:'A separate deployment',floor:'#4e525e',accent:'#c0b5db'}
     ];
-    const home = {chatgpt:[1030,468],checks:[495,668],teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
-    const colors = {chatgpt:'#82cbb6',checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
+    const home = {orchestrator:[300,945],support:[890,945],chatgpt:[1030,468],checks:[495,668],teacher:[150,668],developer:[212,202],science:[605,202],pedagogy:[990,202],repository:[789,668],gatekeeper:[735,447],site:[1048,685]};
+    const colors = {orchestrator:'#c2ad80',support:'#a9b5db',chatgpt:'#82cbb6',checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
     const looks = {
+      orchestrator:{skin:'#b78d6b',hair:'#3b3840',shirt:'#d7c39a',jacket:'#8a7762',pants:'#454b56',hairStyle:'parted',glasses:true,scale:1.02},
+      support:{skin:'#d4a98b',hair:'#3f3f65',shirt:'#c1c9e3',jacket:'#7e88b2',pants:'#464965',hairStyle:'curls',headphones:true,scale:.98},
       chatgpt:{skin:'#dbb89e',hair:'#263c39',shirt:'#82cbb6',jacket:'#4d8a7b',pants:'#40525b',hairStyle:'parted',glasses:true,scarf:true,scale:1},
       checks:{skin:'#c89678',hair:'#4a3432',shirt:'#d5b474',jacket:'#9b7763',pants:'#455266',hairStyle:'braid',glasses:true,scale:1},
       teacher:{skin:'#d5b399',hair:'#17191c',shirt:'#bb4541',pants:'#46575b',hairStyle:'crop',stubble:'#76645c',plaid:true,scale:1.04},
@@ -264,9 +268,9 @@ window.AgentOfficeScene = {
         else walk(coffee.role,journeys[coffee.role+'CoffeeReturn'],(coffee.f-2/3)*3);
       }
       figurePositions=[];
-      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site','checks','chatgpt']){
+      for(const id of ['developer','science','pedagogy','teacher','repository','gatekeeper','site','checks','chatgpt','orchestrator','support']){
         const point=positions[id],[x,y]=point;
-        const working=!busy.has(id) && coffee?.role!==id && ['developer','science','pedagogy','teacher','checks','repository','chatgpt'].includes(id) && Math.hypot(x-home[id][0],y-home[id][1])<1;
+        const working=!busy.has(id) && coffee?.role!==id && ['developer','science','pedagogy','teacher','checks','repository','chatgpt','orchestrator','support'].includes(id) && Math.hypot(x-home[id][0],y-home[id][1])<1;
         person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0],working);
         figurePositions.push({id,x,y});
         const awayFromDesk=Math.hypot(x-home[id][0],y-home[id][1])>28;
@@ -343,17 +347,22 @@ window.AgentOfficeScene = {
     }
     function draw(){
       const state=options.wholeWebReview?.()?null:options.state();const active=options.wholeWebReview?.()?new Set():options.active();const review=reviewProgress(state);const coffee=options.wholeWebReview?.()?null:coffeeBreak(state,review);
-      ctx.imageSmoothingEnabled=false;box(0,0,1200,800,'#202c30');
+      ctx.imageSmoothingEnabled=false;box(0,0,1200,1050,'#202c30');
       box(18,301,1164,221,'#8a7356');
       for(let y=306;y<522;y+=22)for(let x=20;x<1182;x+=68){box(x+(y%44?-20:0),y,65,1,'#a58c69');box(x,y,1,21,'#716148');}
+      box(18,790,1164,22,'#8a7356');
       stations.forEach(room);
+      shelf(45,880,110);shelf(435,880,110);shelf(625,880,110);shelf(1040,880,110);
+      desk(300,933,colors.orchestrator);desk(890,933,colors.support);
+      text(options.wholeWebReview?.()?'WORKFLOW EXAMPLE':`${state?.work?.orchestration || 0} RECORDED ENTRIES`,300,1015,C.muted,12,'center');
+      text(options.wholeWebReview?.()?'WORKFLOW EXAMPLE':`${state?.work?.support || 0} RECORDED ENTRIES`,890,1015,C.muted,12,'center');
       // Distinct rooms make the split into two independent reviewers visible.
       shelf(40,78,125);shelf(252,78,135);shelf(455,78,124);shelf(636,78,124);shelf(827,78,124);shelf(1022,78,130);
       desk(212,190,C.gold,active.has('developer'));desk(605,190,C.blue,active.has('science'));desk(990,190,C.pink,active.has('pedagogy'));
       pill('1 · DEVELOP',212,257,C.gold,150);
       for(const [id,x] of [['science',605],['pedagogy',990]]){
         const status=state?.[id].status || 'NOT OBSERVED';
-        pill(options.wholeWebReview?.()?'LESSON REVIEWS SEPARATE':status==='NOT OBSERVED'?'NO SNAPSHOT':status==='missing'?'NO REPORT RECORDED':`RECORDED ${status.toUpperCase()}`,x,254,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
+        pill(options.wholeWebReview?.()?'LESSON REVIEWS SEPARATE':status==='NOT OBSERVED'?'NO SNAPSHOT':status==='missing'?'NO REPORT RECORDED':state?.[id].carried?'CARRIED PASS':`RECORDED ${status.toUpperCase()}`,x,254,status==='PASS'?C.green:status==='FAIL'?C.red:C.amber,198);
         text(options.wholeWebReview?.()?'CLAUDE LESSON WORKFLOW':coffee?.role===id?'COFFEE BREAK':state?review.roles[id].work:'WAITING FOR MATERIAL',x,277,C.muted,9,'center');
       }
       plant(380,245);plant(753,245);plant(1148,245);
@@ -377,7 +386,7 @@ window.AgentOfficeScene = {
       text('WEBPAGE',1009,443,'#344c46',10,'center');box(943,458,144,9,'#ad9471');
       text(options.wholeWebReview?.()?'WORKFLOW EXAMPLE':'BY REQUEST',1030,512,'#a8d7c8',10,'center');
       lounge();checks(state);site(state);gate(state,review);const activity=actors(state,review,coffee);const quote=speech(state,review,activity);
-      if(!options.presentation?.()){box(22,786,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,795,'#c1c5b7',9);}
+      if(!options.presentation?.()){box(22,1037,1156,11,'#202c30');text('WORKFLOW ILLUSTRATION · COURIER MOVEMENT IS NOT A SESSION LOG',30,1046,'#c1c5b7',9);}
       return {step:activity.step,speech:quote,caption:this.caption(activity.step,state,review)};
     }
     function caption(step,state,review=reviewProgress(state)){

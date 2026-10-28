@@ -16,7 +16,9 @@
   const lounge={id:'lounge',name:'Coffee lounge',label:'A WELL-EARNED PAUSE',color:'#d7b474',path:'Illustrated break · no real agent is paused',description:'A coffee machine, a sofa and a little breathing room. An idle colleague occasionally takes a break and returns before their next handoff. Breaks and bubbles are illustrations; no real agent is paused and no materials are changed.'};
   const chatgpt={id:'chatgpt',name:'External review',label:'THE WHOLE-WEBPAGE VIEW',color:'#82cbb6',path:'External review · requested by Lauri',description:'Lauri sometimes asks an external reviewer to review the whole webpage: structure, clarity, consistency and usability across pages. An external reviewer offers another perspective alongside Claude’s lesson workflow. Lauri selects suggestions and briefs development. This is a user-described workflow; no conversation or completed review is inferred from Git. It does not replace science or pedagogy approval.'};
   const wholeWebReview=()=>$('replay-mode').value==='website';
-  const officeRoles = [chatgpt,teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website,lounge];
+  const orchestrator={id:'orchestrator',name:'Orchestrator',label:'THE COORDINATION DESK',color:'#c2ad80',path:'.claude/commands/lesson.md · .claude/commands/exercises.md',description:'Coordinates packets, checks, parallel reviewers, correction rounds and review scope. Committed usage files record orchestrator entries. This is coordination work performed by the command session, not a fourth dedicated agent definition. No private conversations or exact working times are inferred.'};
+  const support={id:'support',name:'General-purpose agent',label:'RECORDED SUPPORT WORK',color:'#a9b5db',path:'Committed review/usage.tsv · agent=general-purpose',description:'Committed usage files include additional general-purpose agent work. The log does not establish a permanent specialty or its exact brief, so this office shows recorded support work without inventing a reviewer or an approval role.'};
+  const officeRoles = [orchestrator,support,chatgpt,teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website,lounge];
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = [], minute = 0, playing = false, lastFrame = 0, lastPaint = 0, phase = 0;
@@ -68,19 +70,35 @@
     const labels={PASS:'PASS · current version',FAIL:'FAIL · revision needed',stale:'STALE · content changed',missing:'Waiting for review',invalid:'Invalid report · blocked'};
     for(const role of ['science','pedagogy']){
       const report=state?.[role];const status=report?.status || 'missing';
-      $(role+'-status').textContent=state?(labels[status] || 'Not observed'):'Not observed';
+      $(role+'-status').textContent=state?(report?.carried?'PASS · recorded carry':labels[status] || 'Not observed'):'Not observed';
       $(role+'-card').dataset.state=status;
-      $(role+'-evidence').textContent=report?.hash?`Report: ${report.hash}${status==='stale'?' · no longer matches':''}`:state?'No valid matching report in this snapshot.':'';
+      $(role+'-evidence').textContent=report?.hash?`Report: ${report.hash}${report.carried?' · recorded carry: '+report.carried.categories:status==='stale'?' · no longer matches':''}`:state?'No valid matching report in this snapshot.':'';
     }
     $('stage-draft').dataset.state=state?'PASS':'missing';
     $('stage-checks').dataset.state=state?.checks.failed?'FAIL':'unknown';
     $('checks-status').textContent=state?.checks.failed?`${state.checks.failed} saved failures · freshness unknown`:state?.checks.passed?`${state.checks.passed} saved passes · freshness unknown`:'No check results observed';
     $('stage-reviews').dataset.state=state?.eligible?'PASS':state && [state.science.status,state.pedagogy.status].includes('FAIL')?'FAIL':'unknown';
     $('stage-gate').dataset.state=state?(state.eligible?'PASS':'FAIL'):'unknown';
-    $('gate-status').textContent=state?(state.eligible?'OPEN · both PASS on current hash':'CLOSED · both current approvals required'):'No material selected';
+    $('gate-status').textContent=state?(state.eligible?'OPEN · current or recorded carried PASS':'CLOSED · both current approvals required'):'No material selected';
     $('stage-publish').dataset.state='unknown';
     const statuses=state?[state.science.status,state.pedagogy.status]:[];
     $('handoff-status').textContent=!state?'Select an event or a different material to inspect the gate.':state.eligible?'Review gate cleared. Automated checks and Lauri’s publication decision remain separate.':statuses.includes('FAIL')?'Return to developer: a reviewer found a blocking issue. Fix it, run checks and request independent review again.':statuses.includes('stale')?'Return to review: the material changed after approval. Earlier PASS reports cannot open this gate.':'Waiting for both independent reviewers. A missing or invalid approval keeps the gate closed.';
+    const work=state?.work;
+    $('work-stats').replaceChildren();
+    for(const [key,label] of [['development','Development entries'],['fixes','Correction entries'],['science','Science review entries'],['pedagogy','Pedagogy review entries'],['full','Full review entries'],['delta','Partial review entries'],['orchestration','Coordination entries'],['support','Support entries']]){
+      const item=document.createElement('div'),value=document.createElement('b'),name=document.createElement('span');
+      value.textContent=work?.entries?String(work[key] || 0):'—';name.textContent=t(label);item.append(value,name);$('work-stats').append(item);
+    }
+    const exercises=state?.exercises;
+    const describe=report=>report?.carried?'PASS · recorded carry':report?.status || 'missing';
+    $('exercise-status').textContent=exercises?t('Exercise set: science {science}; pedagogy {pedagogy}. Separate content hash: {hash}.',{science:describe(exercises.science),pedagogy:describe(exercises.pedagogy),hash:exercises.hash}):t('This snapshot predates separate exercise approvals.');
+    $('work-evidence').textContent=work?.entries?t('{count} recorded usage entries. Highest recorded round: {round}.',{count:work.entries,round:work.round || '—'}):t('No committed usage entries for this material in this snapshot.');
+    $('usage-sources').replaceChildren();
+    for(const path of work?.sources || []){
+      const item=document.createElement('li'),link=document.createElement('a');
+      link.textContent=path;link.href=`https://github.com/Hellsla/hellsla.github.io/blob/${event.id}/${path}`;
+      link.target='_blank';link.rel='noopener noreferrer';item.append(link);$('usage-sources').append(item);
+    }
     $('snapshot-evidence').textContent=event?`Commit ${event.id.slice(0,7)} · ${event.timestamp}. ${state?.hash?'Material content hash: '+state.hash+'.':''} This is the displayed stage’s committed snapshot, including its branch context.`:'No commit at the current replay time.';
     $('files-evidence').textContent=state?`Material packet: ${state.files.join(', ')}. Reviewers return separate reports; they do not take ownership of or edit the material.`:'';
     $('site-evidence').textContent=state?(state.included?'This material has an HTML page in this commit’s site/ snapshot. That does not establish a fresh build or successful deployment.':'This material has no HTML page in this commit’s site/ snapshot.')+(state.legacy.status==='PASS'?'\nA current legacy marker allows the earlier prototype exception; it does not clear the two-review gate.':''):'';
@@ -215,6 +233,8 @@
     if(animating || now-lastPaint>250){draw();lastPaint=now;}
     requestAnimationFrame(frame);
   }
+  const latestEvent=history.events.at(-1);
+  $('history-freshness').textContent=latestEvent?t('Recorded through {day} {time} · Helsinki. Static history snapshot.',{day:latestEvent.day,time:window.OfficeTime.commit(latestEvent.timestamp)}):t('No recorded history.');
   $('data-source').textContent=`Git history · ${history.events.length} commits · Europe/Helsinki`;
   let controlsTimer;
   function revealControls(){

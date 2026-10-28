@@ -235,7 +235,36 @@
     'Show the next recorded version and its commit time':'Näytä seuraava tallennettu versio ja sen commitin aika',
     'Commit times mark saved changes, not individual handoffs. Handoffs within one recorded version share its timestamp.':'Commitin aika kertoo tallennushetken, ei yksittäisen luovutuksen aikaa. Saman tallennetun version luovutuksilla on yhteinen aikaleima.'
   });
+  Object.assign(fi, {
+    'Orchestrator':'Orkestroija','General-purpose agent':'Yleisagentti',
+    'THE COORDINATION DESK':'KOORDINOINTIPÖYTÄ','RECORDED SUPPORT WORK':'TALLENNETTU TUKITYÖ',
+    'COORDINATION':'KOORDINOINTI','GENERAL SUPPORT':'YLEINEN TUKITYÖ',
+    'Packets · review scope · correction rounds':'Tehtäväpaketit · arvioinnin rajaus · korjauskierrokset',
+    'Additional agent work recorded in usage files':'Käyttölokeihin tallennettu muu agenttityö',
+    '{count} RECORDED ENTRIES':'{count} TALLENNETTUA MERKINTÄÄ','CARRIED PASS':'SIIRRETTY PASS',
+    'The work behind this version':'Tämän version taustalla oleva työ',
+    'Development entries':'Kehitysmerkintöjä','Correction entries':'Korjausmerkintöjä',
+    'Science review entries':'Fysiikan arviointimerkintöjä','Pedagogy review entries':'Pedagogisia arviointimerkintöjä',
+    'Full review entries':'Koko arvioinnin merkintöjä','Partial review entries':'Osittaisen arvioinnin merkintöjä',
+    'Coordination entries':'Koordinointimerkintöjä','Support entries':'Tukityön merkintöjä',
+    'PASS · recorded carry':'PASS · tallennettu siirto',
+    'OPEN · current or recorded carried PASS':'AUKI · ajantasaiset tai siirretyt PASS-arviot',
+    'Exercise set: science {science}; pedagogy {pedagogy}. Separate content hash: {hash}.':'Tehtäväsarja: fysiikka {science}; pedagogiikka {pedagogy}. Oma sisältötiiviste: {hash}.',
+    'This snapshot predates separate exercise approvals.':'Tämä tilannekuva edeltää tehtäväsarjojen erillisiä arviointeja.',
+    '{count} recorded usage entries. Highest recorded round: {round}.':'{count} tallennettua käyttömerkintää. Suurin lokiin merkitty kierros: {round}.',
+    'No committed usage entries for this material in this snapshot.':'Tämän oppimateriaalin käyttömerkintöjä ei ole tallennettu tähän tilannekuvaan.',
+    'Counts come from committed usage entries at this snapshot. They are cumulative records with overlapping categories, not live activity or measured handoff times. Lesson and exercise approvals are tracked separately.':'Luvut perustuvat tähän tilannekuvaan tallennettuihin käyttömerkintöihin. Ne ovat kertyneitä merkintöjä osin päällekkäisissä ryhmissä, eivät suoraa toimintaa tai mitattuja luovutusaikoja. Oppimateriaalin ja tehtävien hyväksynnät ovat erilliset.',
+    'Recorded through {day} {time} · Helsinki. Static history snapshot.':'Tallennettu {day} klo {time} asti · Helsinki. Historiasta tehty tilannekuva.',
+    'No recorded history.':'Tallennettua historiaa ei ole.'
+  });
+  Object.assign(fi, {
+    'Recorded usage sources':'Tallennettujen käyttömerkintöjen lähteet',
+    'Both must say PASS for the current content hash or have a recorded carry to that hash. The office shows saved carry evidence; CI verification remains separate.':'Molempien on annettava PASS nykyiselle sisältötiivisteelle tai hyväksynnällä on oltava tallennettu siirto siihen. Toimisto näyttää siirtomerkinnät; CI:n tarkistus on erillinen.'
+  });
   const descriptions = {
+    orchestrator:'Koordinoi tehtäväpaketit, testit, rinnakkaiset arvioijat, korjauskierrokset ja arvioinnin laajuuden. Käyttölokeissa on orkestroijan merkintöjä. Tämä on komentoa ajavan istunnon koordinointityötä, ei neljäs erikseen määritelty agentti. Yksityisiä keskusteluja tai tarkkoja työaikoja ei päätellä.',
+    support:'Tallennetuissa käyttölokeissa on myös yleisagenttien työtä. Lokista ei selviä pysyvää erikoisalaa tai täsmällistä toimeksiantoa. Huone kuvaa tallennettua tukityötä, ei keksittyä arvioijaa tai hyväksyntäroolia.',
+
     chatgpt:"Lauri pyytää välillä ulkopuolista arvioijaa arvioimaan koko verkkosivun rakennetta, selkeyttä, johdonmukaisuutta ja käytettävyyttä. Tämä näkökulma täydentää Clauden oppimateriaalityötä. Lauri valitsee ehdotukset ja antaa kehitystehtävän. Gitistä ei päätellä keskustelua tai valmistunutta arviota. Tämä ei korvaa tieteen tai pedagogiikan hyväksyntää.",
     developer:'Kirjoittaa ja korjaa oppimateriaalin tekstiä, tehtäviä, kuvia ja simulaatioita. Nykyinen kehittäjän työnkulku tarkistaa oppimateriaalin ennen riippumatonta arviointia.',
     science:'Tarkistaa riippumattomasti fysiikan, matematiikan, yksiköt, laskutulokset ja simulaation toiminnan. Arvioi työn muokkaamatta itse oppimateriaalia.',
