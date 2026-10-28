@@ -11,7 +11,7 @@
     {
       "id": "fy3-13-L1-02",
       "level": 1,
-      "text": "Kaasun paine on suljetussa astiassa 20,0 °C:ssa 105,0 kPa ja 80,0 °C:ssa 127,0 kPa. Laske näiden pisteiden kautta kulkevan suoran kulmakerroin yksikössä kPa/°C.",
+      "text": "Kaasun paine on suljetussa astiassa $20{,}0\\,{}^\\circ\\text{C}$:ssa 105,0 kPa ja $80{,}0\\,{}^\\circ\\text{C}$:ssa 127,0 kPa. Laske näiden pisteiden kautta kulkevan suoran kulmakerroin yksikössä kPa/°C.",
       "answer": 0.367,
       "unit": "kPa/°C",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-13-L2-01",
       "level": 2,
-      "text": "Pullossa olevan ilman paine mitattiin kahdessa lämpötilassa: 15,0 °C:ssa paine oli 1,050 bar ja 95,0 °C:ssa 1,360 bar. Oleta, että paine riippuu lämpötilasta lineaarisesti. Missä lämpötilassa suora antaa nollapaineen? Vastaa celsiusasteina.",
+      "text": "Pullossa olevan ilman paine mitattiin kahdessa lämpötilassa: $15{,}0\\,{}^\\circ\\text{C}$:ssa paine oli 1,050 bar ja $95{,}0\\,{}^\\circ\\text{C}$:ssa 1,360 bar. Oleta, että paine riippuu lämpötilasta lineaarisesti. Missä lämpötilassa suora antaa nollapaineen? Vastaa celsiusasteina.",
       "answer": -256,
       "unit": "°C",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-13-L2-03",
       "level": 2,
-      "text": "Kokeessa käytettiin painemittaria, joka näyttää ylipainetta ympäröivään ilmanpaineeseen verrattuna. Ilmanpaine oli 101,0 kPa. Mittarin lukema oli 30,0 °C:ssa 9,0 kPa ja 90,0 °C:ssa 31,0 kPa. Missä lämpötilassa kaasun absoluuttinen paine olisi nolla, kun paine riippuu lämpötilasta lineaarisesti? Vastaa celsiusasteina.",
+      "text": "Kokeessa käytettiin painemittaria, joka näyttää ylipainetta ympäröivään ilmanpaineeseen verrattuna. Ilmanpaine oli 101,0 kPa. Mittarin lukema oli $30{,}0\\,{}^\\circ\\text{C}$:ssa 9,0 kPa ja $90{,}0\\,{}^\\circ\\text{C}$:ssa 31,0 kPa. Missä lämpötilassa kaasun absoluuttinen paine olisi nolla, kun paine riippuu lämpötilasta lineaarisesti? Vastaa celsiusasteina.",
       "answer": -270,
       "unit": "°C",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy3-13-L3-01",
       "level": 3,
-      "text": "Mittausalue on 20,0–100,0 °C. Pisteessä 20,0 °C paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä 100,0 °C $137{,}0 \\pm 1{,}0\\,\\text{kPa}$. Jyrkin ääriviiva kulkee pisteiden (20,0 °C; 105,0 kPa) ja (100,0 °C; 138,0 kPa) kautta, loivin pisteiden (20,0 °C; 107,0 kPa) ja (100,0 °C; 136,0 kPa) kautta. Määritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
+      "text": "Mittausalue on 20,0–$100{,}0\\,{}^\\circ\\text{C}$. Pisteessä $20{,}0\\,{}^\\circ\\text{C}$ paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä $100{,}0\\,{}^\\circ\\text{C}$ $137{,}0 \\pm 1{,}0\\,\\text{kPa}$. Jyrkin ääriviiva kulkee pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; 105,0 kPa) ja ($100{,}0\\,{}^\\circ\\text{C}$; 138,0 kPa) kautta, loivin pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; 107,0 kPa) ja ($100{,}0\\,{}^\\circ\\text{C}$; 136,0 kPa) kautta. Määritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
       "answer": 20.3,
       "unit": "°C",
       "tolerance": 0.03
@@ -87,7 +87,7 @@
     {
       "id": "fy3-13-L3-02",
       "level": 3,
-      "text": "Typpikaasun paine on jäykässä astiassa 100,0 kPa lämpötilassa 0 °C, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa 77,0 K, jossa typpi kiehuu normaalipaineessa? Näin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin 67 K:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
+      "text": "Typpikaasun paine on jäykässä astiassa 100,0 kPa lämpötilassa $0\\,{}^\\circ\\text{C}$, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa $77{,}0\\,\\text{K}$, jossa typpi kiehuu normaalipaineessa? Näin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin $67\\,\\text{K}$:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
       "answer": 28.2,
       "unit": "kPa",
       "tolerance": 0.02

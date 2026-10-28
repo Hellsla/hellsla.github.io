@@ -25,7 +25,7 @@ a["fy1-3-L1-01"] = mean([0.52, 0.48, 0.55, 0.49])                  # mean = 2,04
 a["fy1-3-L1-02"] = 20.3 - 20.0                                     # error = result − true = 20,3 cm − 20,0 cm = +0,3 cm
 a["fy1-3-L1-03"] = half([12.4, 12.9, 12.6, 12.2, 12.7])            # (12,9 s − 12,2 s) / 2 = 0,35 s
 a["fy1-3-L1-04"] = 48.7 - 1.2                                      # zero correction: m = 48,7 g − 1,2 g = 47,5 g
-a["fy1-3-L1-05"] = 1.0 / 2                                         # reading error = half the smallest division = 1 mm / 2 = 0,5 mm
+a["fy1-3-L1-05"] = 1.0 / 2                                         # reading uncertainty estimated as half the smallest division = 1 mm / 2 = 0,5 mm
 # Level 2: conversion, two steps or a rearrangement
 t6 = [1.84, 1.91, 1.78, 1.88, 1.96, 1.82]
 a["fy1-3-L2-01"] = half(t6) / mean(t6) * 100                       # relative error = Δt / mean = 0,09 s / 1,865 s = 4,8 %

@@ -4,7 +4,7 @@
 
 ## Ydinajatus
 
-Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie; sen SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta ovat eri painoisia, jos ne ovat eri ainetta: kymmenen kuutiosenttimetrin mäntykuutio on kevyt, alumiinikuutio selvästi raskaampi ja rautakuutio raskain.
+Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie; sen SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta voivat olla eri painoisia, jos ne ovat eri ainetta: kymmenen kuutiosenttimetrin mäntykuutio on kevyt, alumiinikuutio selvästi raskaampi ja rautakuutio raskain.
 
 <svg data-fig="cubes" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: kolme yhtä suurta kuutiota, joiden tilavuus on kullakin 10 cm³, ovat mäntyä, alumiinia ja rautaa. Kuutiot ovat samankokoiset, mutta niiden massat ovat 5,0 g, 27 g ja 79 g. Massaa kuvaavien vaakapylväiden pituudet ovat mittakaavassa: rautakuution pylväs on yli kymmenen kertaa mäntykuution pylvään pituinen." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy17-grain" width="14" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#a97a35"/><circle cx="10" cy="8" r="1" fill="#a97a35"/></pattern><linearGradient id="fy17-pine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -57,7 +57,7 @@ Jos mittaustulokset piirretään koordinaatistoon, jossa vaaka-akselilla on tila
 
 ### Tiheys kertoo, mistä aineesta on kyse
 
-Jokaisella puhtaalla aineella on oma tiheytensä, joten tiheys on kuin aineen sormenjälki: kun kappaleen massa ja tilavuus on mitattu, laskettu tiheys voidaan verrata taulukkoarvoihin. Päättely ei ole varma. Mittauksissa on aina virhettä (luku *Mittaaminen ja mittauksen luotettavuus*), ja joillakin aineilla on lähes sama tiheys, joten tulos kertoo vain, mitä aineita kappale voi olla.
+Jokaisella puhtaalla aineella on tietyssä olomuodossa ja lämpötilassa oma tiheytensä, joten tiheys on kuin aineen sormenjälki: kun kappaleen massa ja tilavuus on mitattu, laskettu tiheys voidaan verrata taulukkoarvoihin. Päättely ei ole varma. Mittauksissa on aina virhettä (luku *Mittaaminen ja mittauksen luotettavuus*), ja joillakin aineilla on lähes sama tiheys, joten tulos kertoo vain, mitä aineita kappale voi olla.
 
 ## Kaava: Tiheys
 
@@ -213,7 +213,7 @@ Säännöllisen kappaleen tilavuus lasketaan mitoista: kuution tilavuus on $a^3$
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-Mittalasin lukema tunnetaan vain asteikon tarkkuudella, joten kahden lukeman erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa, koska kummankin lukeman virhe tulee mukaan. Tämä rajoittaa tiheyden tarkkuutta.
+Mittalasin lukemassa on epävarmuutta, esimerkiksi asteikon ja nestepinnan kaarevuuden lukemisesta. Kahden lukeman erotus on pienempi luku kuin lukemat itse, mutta siihen tulee kummankin lukeman epävarmuus, joten erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa. Tämä rajoittaa tiheyden tarkkuutta.
 
 ### Astian massa mittauksessa
 
@@ -221,7 +221,7 @@ Jos nestettä mitataan astiassa ja vaaka näyttää astian ja nesteen yhteismass
 
 ## Esimerkki
 
-Massiivisen rautapalkin pituus on 1,20 m, ja sen poikkileikkaus on neliö, jonka sivu on 4,0 cm. Mikä on palkin massa?
+Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$, ja sen poikkileikkaus on neliö, jonka sivu on 4,0 cm. Mikä on palkin massa?
 
 <!-- vaihe -->
 

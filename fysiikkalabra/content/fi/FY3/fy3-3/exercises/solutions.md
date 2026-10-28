@@ -82,7 +82,7 @@
 ## fy3-3-L2-04
 **Annettu:** $\theta_\text{yö} = -173\,{}^\circ\text{C}$ ja $\theta_\text{päivä} = 127\,{}^\circ\text{C}$
 **Kysytty:** kelvinlämpötilojen suhde $\dfrac{T_\text{päivä}}{T_\text{yö}}$
-**Periaate:** Suhdetta kysytään kelvinlämpötiloista, koska vain kelvinasteikon nolla on absoluuttinen nollapiste, ja hiukkasten liike-energia on verrannollinen kelvinlämpötilaan. Celsiusasteiden suhteella ei ole fysikaalista merkitystä.
+**Periaate:** Suhdetta kysytään kelvinlämpötiloista, koska vain kelvinasteikon nolla on absoluuttinen nollapiste, alin mahdollinen lämpötila. Celsiusasteiden suhteella ei ole fysikaalista merkitystä.
 **Kaava:** $T = \theta + 273{,}15$, ja suhde $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{\theta_\text{päivä} + 273{,}15}{\theta_\text{yö} + 273{,}15}$
 **Muunnokset:** Molemmat lämpötilat muutetaan kelvineiksi lisäämällä $273{,}15$: $T_\text{yö} = -173 + 273{,}15 = 100{,}15\,\text{K}$ ja $T_\text{päivä} = 127 + 273{,}15 = 400{,}15\,\text{K}$.
 **Sijoitus:** $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{400{,}15\,\text{K}}{100{,}15\,\text{K}} = 3{,}9955$
@@ -112,7 +112,7 @@
 ## fy3-3-L3-03
 **Annettu:** $\theta_1 = 20{,}0\,{}^\circ\text{C}$ ja keskimääräinen liike-energia $E_2 = \tfrac{1}{2}E_1$
 **Kysytty:** loppulämpötila celsiusasteina, $\theta_2$
-**Periaate:** Hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan, koska kelvinasteikon nolla on absoluuttinen nollapiste, jossa liike-energia on pienimmillään (mallissa nolla). Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
+**Periaate:** Tehtävän mukaan kaasun hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan; näin on harvassa kaasussa, jonka hiukkaset vaikuttavat toisiinsa vain törmätessään. Verrannollisuus koskee kelvinlämpötilaa, koska vain kelvinasteikon nolla on absoluuttinen nollapiste. Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
 **Kaava:** $\dfrac{E_2}{E_1} = \dfrac{T_2}{T_1} = \dfrac{1}{2}$, josta $T_2 = \dfrac{T_1}{2}$, ja $\theta_2 = T_2 - 273{,}15$
 **Muunnokset:** Alkulämpötila muutetaan kelvineiksi: $T_1 = 20{,}0 + 273{,}15 = 293{,}15\,\text{K}$. Lopuksi $T_2$ muutetaan takaisin celsiusasteiksi vähentämällä $273{,}15$.
 **Sijoitus:** $T_2 = \dfrac{293{,}15\,\text{K}}{2} = 146{,}575\,\text{K}$, ja $\theta_2 = 146{,}575 - 273{,}15 = -126{,}575\,{}^\circ\text{C}$

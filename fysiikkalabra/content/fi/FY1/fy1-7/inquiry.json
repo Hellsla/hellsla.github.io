@@ -1,6 +1,6 @@
 {
  "version": 1,
- "contribution": "Massa on suoraan verrannollinen tilavuuteen, ja verrannollisuuskerroin on aineen tiheys: m = ρV on FY1:n ensimmäinen lineaarinen malli, josta ratkaistaan massa, tilavuus tai tiheys sekä luetaan kulmakertoimena mittauksista, myös astian massan ollessa mukana.",
+ "contribution": "Massa on suoraan verrannollinen tilavuuteen, ja verrannollisuuskerroin on aineen tiheys: m = ρV on lineaarinen malli, josta ratkaistaan massa, tilavuus tai tiheys sekä luetaan kulmakertoimena mittauksista, myös astian massan ollessa mukana.",
  "learn": [
   "Osaat laskea kappaleen massan, tilavuuden tai tiheyden kaavalla $m = \\rho V$.",
   "Osaat selittää, miksi massa on suoraan verrannollinen tilavuuteen ja mitä suoran kulmakerroin kertoo.",

@@ -61,7 +61,7 @@
     {
       "id": "fy2-2-L2-03",
       "level": 2,
-      "text": "Led-lamppu saa sähköenergiaa $6{,}0\\,\\text{kJ}$. Se muuttaa siitä valoksi $1{,}5\\,\\text{kJ}$ ja loppu muuttuu lampun lämmöksi. Valo osuu huoneen seiniin ja pintoihin ja imeytyy niihin. Kuinka paljon lämpöenergiaa huoneeseen on lopulta syntynyt? Anna vastaus kilojouleina.",
+      "text": "Led-lamppu saa sähköenergiaa $6{,}0\\,\\text{kJ}$. Se muuttaa siitä valoksi $1{,}5\\,\\text{kJ}$ ja loppu muuttuu lampun lämpöenergiaksi. Valo osuu huoneen seiniin ja pintoihin ja imeytyy niihin. Kuinka paljon energiaa on lopulta muuttunut huoneessa lämpöenergiaksi? Anna vastaus kilojouleina.",
       "answer": 6.0,
       "unit": "kJ",
       "tolerance": 0.02

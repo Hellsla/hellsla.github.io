@@ -45,8 +45,8 @@ def thermo(f, cx, cy):
 
 def ketju():
     f = Fig("fy22-ketju", 370, "Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi (kaura) sitoo sen kemialliseksi "
-            "energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu on lämpöä. Joka vaiheessa osa energiasta "
-            "muuttuu lämmöksi ympäristöön (oranssit nuolet alas), ja lopuksi myös liike muuttuu lämmöksi. Nuolten pituus ei ole mittakaavassa.")
+            "energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu muuttuu lämpöenergiaksi. Joka vaiheessa osa energiasta "
+            "siirtyy lämpönä ympäristöön (oranssit nuolet alas), ja lopuksi myös liike-energia muuttuu lämpöenergiaksi. Nuolten pituus ei ole mittakaavassa.")
     xs = [75, 225, 375, 525]
     sun(f, xs[0], 100); porridge(f, xs[1] + 4, 108); bike(f, xs[2], 98); thermo(f, xs[3], 96)
     for x in (130, 280, 430):
@@ -90,7 +90,7 @@ def tikapuut():
 
 def sailyminen():
     f = Fig("fy22-sailyminen", 350, "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat "
-            "liikkeeksi 200 kJ ja lämmöksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.")
+            "liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.")
     k = 0.12   # px per kJ
     hin, hm, hl = 800 * k, 200 * k, 600 * k
     top = 112

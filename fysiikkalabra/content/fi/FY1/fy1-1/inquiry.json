@@ -457,7 +457,7 @@
       "choices": [
         {
           "text": "$10^{16}\\,\\text{m}$",
-          "feedback": "Jätit kerroinosan huomiotta. Kun kerroinosa on yli noin 3, lähin kymmenpotenssi on seuraava: luku $4{,}0\\cdot10^{16}$ on lähempänä arvoa $10^{17}$ kuin arvoa $10^{16}$."
+          "feedback": "Jätit kerroinosan huomiotta. Kun kerroinosa on yli noin 3, lähin kymmenpotenssi on seuraava: kymmenpotenssien akselilla luku $4{,}0\\cdot10^{16}$ on lähempänä kohtaa $10^{17}$ kuin kohtaa $10^{16}$."
         },
         {
           "text": "$10^{17}\\,\\text{m}$",

@@ -21,12 +21,12 @@
 ## fy3-11-L1-03
 **Annettu:** reaktorin lämpöteho $P_\text{lämpö} = 4{,}30 \cdot 10^3\,\text{MW}$, sähköteho $P_\text{sähkö} = 1{,}60 \cdot 10^3\,\text{MW}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
-**Periaate:** Lämpövoimakone muuttaa osan saamastaan lämpöenergiasta työksi eli sähköksi. Hyötysuhde on hyödyksi saatu osuus syötetystä energiasta, ja se voidaan laskea myös tehoista, koska molemmat tehot ovat energiaa samassa ajassa.
+**Periaate:** Lämpövoimakone muuttaa osan saamastaan lämmöstä työksi eli sähköksi. Hyötysuhde on hyödyksi saatu osuus syötetystä energiasta, ja se voidaan laskea myös tehoista, koska molemmat tehot ovat energiaa samassa ajassa.
 **Kaava:** $\eta = \dfrac{P_\text{sähkö}}{P_\text{lämpö}}$
 **Muunnokset:** Molemmat tehot ovat megawatteina, joten yksikkö supistuu eikä muunnosta tarvita. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{1{,}60 \cdot 10^3\,\text{MW}}{4{,}30 \cdot 10^3\,\text{MW}} = 0{,}3721 = 37{,}21\,\%$
 **Vastaus:** $37{,}2\,\%$, kolme merkitsevää numeroa. Molemmat tehot ($1{,}60 \cdot 10^3\,\text{MW}$ ja $4{,}30 \cdot 10^3\,\text{MW}$) on annettu kolmella numerolla.
-**Järkevyys:** Hyötysuhde on alle 100 %, kuten pitääkin, ja ydinvoimalaitoksen tyypillinen arvo on noin 35 %. Energiatase: merivesi vie lauhduttimesta $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$, enemmän kuin yksikkö tuottaa sähköä. Arvio: $\tfrac{1600}{4300} \approx \tfrac{1}{2{,}7} \approx 0{,}37$.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin, koska osa lämmöstä on luovutettava kylmempään, ja ydinvoimalaitoksen tyypillinen arvo on noin $35\,\%$. Energiatase: merivesi vie lauhduttimesta $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$, enemmän kuin yksikkö tuottaa sähköä. Arvio: $\tfrac{1600}{4300} \approx \tfrac{1}{2{,}7} \approx 0{,}37$.
 
 ## fy3-11-L1-04
 **Annettu:** polttoaineesta siirtyvä lämpö $Q_1 = 840\,\text{kJ}$ minuutissa, ympäristöön siirtyvä lämpö $Q_2 = 670\,\text{kJ}$ minuutissa
@@ -46,7 +46,7 @@
 **Muunnokset:** Kummatkin energiat ovat kilowattitunteina, joten yksikkö supistuu eikä jouleiksi muuntamista tarvita. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{2{,}60\,\text{kWh}}{12{,}0\,\text{kWh}} = 0{,}2167 = 21{,}67\,\%$
 **Vastaus:** $21{,}7\,\%$, kolme merkitsevää numeroa. Molemmat energiat ($2{,}60\,\text{kWh}$ ja $12{,}0\,\text{kWh}$) on annettu kolmella numerolla.
-**Järkevyys:** Hyötysuhde on alle 100 %. Pieni moottori jää alle automoottorin noin 30 %:n. Energiatase: loput $12{,}0\,\text{kWh} - 2{,}60\,\text{kWh} = 9{,}4\,\text{kWh}$ siirtyy lämpönä ympäristöön, ja $\tfrac{9{,}4}{12{,}0} \approx 78\,\%$ täydentää hyötysuhteen sataan prosenttiin.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin. Pieni moottori jää alle automoottorin noin $30\,\%$:n. Energiatase: loput $12{,}0\,\text{kWh} - 2{,}60\,\text{kWh} = 9{,}4\,\text{kWh}$ siirtyy lämpönä ympäristöön, ja $\tfrac{9{,}4}{12{,}0} \approx 78\,\%$ täydentää hyötysuhteen sataan prosenttiin.
 
 ## fy3-11-L2-01
 **Annettu:** sähköenergia $W = 3830\,\text{MWh}$, polttoaineen energia $Q_1 = 33{,}6\,\text{TJ} = 33{,}6 \cdot 10^{12}\,\text{J}$, vuorokaudessa
@@ -56,7 +56,7 @@
 **Muunnokset:** $1\,\text{MWh} = 10^6\,\text{W} \cdot 3600\,\text{s} = 3{,}6 \cdot 10^9\,\text{J}$, joten $W = 3830 \cdot 3{,}6 \cdot 10^9\,\text{J} = 1{,}3788 \cdot 10^{13}\,\text{J}$. Lisäksi $33{,}6\,\text{TJ} = 3{,}36 \cdot 10^{13}\,\text{J}$.
 **Sijoitus:** $\eta = \dfrac{1{,}3788 \cdot 10^{13}\,\text{J}}{3{,}36 \cdot 10^{13}\,\text{J}} = 0{,}4104 = 41{,}04\,\%$
 **Vastaus:** $41{,}0\,\%$, kolme merkitsevää numeroa. Molemmat tiedot ($3830\,\text{MWh}$ ja $33{,}6\,\text{TJ}$) on annettu vähintään kolmella numerolla, ja tuloon $3{,}6 \cdot 10^9\,\text{J/MWh}$ ei liity epätarkkuutta, koska se on määritelmä.
-**Järkevyys:** Lauhdevoimalaitoksen hyötysuhde on tyypillisesti noin 40 %, joten tulos on uskottava. Arvio: $\tfrac{3{,}8 \cdot 3{,}6}{33{,}6} \approx \tfrac{13{,}7}{33{,}6} \approx 0{,}41$. Keskimääräinen sähköteho on $\dfrac{3830\,\text{MWh}}{24\,\text{h}} \approx 160\,\text{MW}$, ja polttoaineteho $\tfrac{160}{0{,}41} \approx 390\,\text{MW}$.
+**Järkevyys:** Lauhdevoimalaitoksen hyötysuhde on tyypillisesti noin $40\,\%$, joten tulos on uskottava. Arvio: $\tfrac{3{,}8 \cdot 3{,}6}{33{,}6} \approx \tfrac{13{,}7}{33{,}6} \approx 0{,}41$. Keskimääräinen sähköteho on $\dfrac{3830\,\text{MWh}}{24\,\text{h}} \approx 160\,\text{MW}$, ja polttoaineteho $\tfrac{160}{0{,}41} \approx 390\,\text{MW}$.
 
 ## fy3-11-L2-02
 **Annettu:** polttopuun massa $m = 120\,\text{kg}$ tunnissa, lämpöarvo $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, höyrykoneen teho $P = 45\,\text{kW}$, aika $t = 1\,\text{h}$
@@ -66,7 +66,7 @@
 **Muunnokset:** $45\,\text{kW} = 45\,000\,\text{W}$, $1\,\text{h} = 3600\,\text{s}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}} = 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$, jotta kumpikin energia tulee jouleina.
 **Sijoitus:** $\eta = \dfrac{45\,000\,\text{W} \cdot 3600\,\text{s}}{120\,\text{kg} \cdot 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{1{,}62 \cdot 10^8\,\text{J}}{1{,}8 \cdot 10^9\,\text{J}} = 0{,}090 = 9{,}0\,\%$
 **Vastaus:** $9{,}0\,\%$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $45\,\text{kW}$ ja lämpöarvo $15\,\tfrac{\text{MJ}}{\text{kg}}$ (kumpikin kaksi numeroa); massa $120\,\text{kg}$ on vähintään kahden numeron arvo eikä rajoita, ja $3600\,\text{s/h}$ on määritelmä.
-**Järkevyys:** Vanhojen höyrykoneiden hyötysuhde on 5–10 %, joten tulos sopii. Polttoaineteho on $\tfrac{1{,}8 \cdot 10^9\,\text{J}}{3600\,\text{s}} = 500\,\text{kW}$, josta vain $45\,\text{kW}$ tulee työksi ja loput $455\,\text{kW}$ poistuu savupiipusta ja poistohöyryn mukana. Siksi höyrylaivat korvattiin dieselmoottoreilla.
+**Järkevyys:** Vanhojen höyrykoneiden hyötysuhde on 5–$10\,\%$, joten tulos sopii. Polttoaineteho on $\tfrac{1{,}8 \cdot 10^9\,\text{J}}{3600\,\text{s}} = 500\,\text{kW}$, josta vain $45\,\text{kW}$ tulee työksi ja loput $455\,\text{kW}$ poistuu savupiipusta ja poistohöyryn mukana. Siksi höyrylaivat korvattiin dieselmoottoreilla.
 
 ## fy3-11-L2-03
 **Annettu:** ilmaan siirtyvä lämpö $Q = 700{,}0\,\text{J}$, paine pysyy $p = 125\,\text{kPa}$, tilavuuden kasvu $\Delta V = 1{,}60\,\textsf{l}$
@@ -86,7 +86,7 @@
 **Muunnokset:** Hyötysuhde $40{,}0\,\% = \tfrac{40{,}0}{100} = 0{,}400$. Tehot ovat jo kilowatteina, joten muuta muunnosta ei tarvita.
 **Sijoitus:** $P_\text{in} = \dfrac{480\,\text{kW}}{0{,}400} = 1200\,\text{kW}$, joten $P_\text{hukka} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
 **Vastaus:** $720\,\text{kW}$, kaksi merkitsevää numeroa. Rajoittava tieto on mekaaninen teho $480\,\text{kW}$, jonka kaksi ensimmäistä numeroa ovat varmoja; hyötysuhde $40{,}0\,\%$ on kolmen numeron arvo eikä rajoita.
-**Järkevyys:** Hukkaan menee 60 % ja hyödyksi 40 %, joten hukkalämpöä on $\tfrac{60}{40} = 1{,}5$ kertaa niin paljon kuin mekaanista tehoa: $1{,}5 \cdot 480\,\text{kW} = 720\,\text{kW}$. Polttoaineteho on suurempi kuin mekaaninen teho, kuten pitääkin. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
+**Järkevyys:** Hukkaan menee $60\,\%$ ja hyödyksi $40\,\%$, joten hukkalämpöä on $\tfrac{60}{40} = 1{,}5$ kertaa niin paljon kuin mekaanista tehoa: $1{,}5 \cdot 480\,\text{kW} = 720\,\text{kW}$. Polttoaineteho on suurempi kuin mekaaninen teho, kuten pitääkin. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
 
 ## fy3-11-L3-01
 **Annettu:** yhteistuotannossa polttoaineteho $P_\text{pa} = 320\,\text{MW}$, sähköteho $P_\text{s} = 96\,\text{MW}$, kaukolämpöteho $P_\text{kl} = 180\,\text{MW}$; erillistuotannossa lauhdevoimalan hyötysuhde $\eta_\text{lauh} = 0{,}400$ ja lämpökeskuksen $\eta_\text{k} = 0{,}900$
@@ -96,7 +96,7 @@
 **Muunnokset:** Hyötysuhteet $40{,}0\,\% = 0{,}400$ ja $90{,}0\,\% = 0{,}900$. Kaikki tehot ovat megawatteina, joten muuta muunnosta ei tarvita.
 **Sijoitus:** $\Delta P = \dfrac{96\,\text{MW}}{0{,}400} + \dfrac{180\,\text{MW}}{0{,}900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$
 **Vastaus:** $120\,\text{MW}$, kaksi merkitsevää numeroa. Rajoittava tieto on sähköteho $96\,\text{MW}$ (kaksi numeroa): se määrää lauhdevoimalan polttoatehon $240\,\text{MW}$ kymmenien megawattien tarkkuudelle, ja erotus $440\,\text{MW} - 320\,\text{MW}$ säilyttää tämän tarkkuuden. Hyötysuhteet $40{,}0\,\%$ ja $90{,}0\,\%$ ovat kolmen numeron arvoja eivätkä rajoita.
-**Järkevyys:** Kokonaishyötysuhde on yhteistuotannossa $\dfrac{96 + 180}{320} \approx 86\,\%$ ja erillistuotannossa $\dfrac{276}{440} \approx 63\,\%$, joten erillinen tuotanto tarvitsee enemmän polttoainetta. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava mereen.
+**Järkevyys:** Kokonaishyötysuhde on yhteistuotannossa $\dfrac{96 + 180}{320} \approx 86\,\%$ ja erillistuotannossa $\dfrac{276}{440} \approx 63\,\%$, joten erillinen tuotanto tarvitsee enemmän polttoainetta. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava kylmempään ympäristöön, tavallisesti mereen.
 
 ## fy3-11-L3-02
 **Annettu:** vuotuinen lämmöntarve $Q = 16{,}0\,\text{MWh}$, lämpöpumpun lämpökerroin $\varepsilon = 2{,}50$, nykyinen lämmitys suora sähkölämmitys
@@ -119,4 +119,4 @@
 $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 12\,040\,\text{W} \\ &= 12{,}04\,\text{kW} \end{aligned}$$
 
 **Vastaus:** $12{,}0\,\text{kW}$, kolme merkitsevää numeroa. Kaikki tiedot ($6{,}00\,\textsf{l}$, $0{,}750\,\text{kg/l}$, $43{,}0\,\text{MJ/kg}$, $28{,}0\,\%$ ja $80{,}0\,\text{km/h}$) on annettu kolmella numerolla; matka $100\,\text{km}$ on kulutuksen vertailumatka eikä rajoita.
-**Järkevyys:** Polttoaineteho on $\tfrac{1{,}935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, joten $31\,\text{kW}$ poistuu hukkalämpönä pakokaasujen ja jäähdyttimen kautta. Bensiiniä kuluu $54\,\text{kWh}$, ja työ on siitä 28 % eli $15\,\text{kWh}$. Sähköauto tarvitsee saman työn tekemiseen noin $\tfrac{15\,\text{kWh}}{0{,}90} \approx 17\,\text{kWh}$ akusta, koska sen moottori muuttaa sähköä työksi 90 %:n hyötysuhteella eikä lämpöä tarvitse muuttaa työksi.
+**Järkevyys:** Polttoaineteho on $\tfrac{1{,}935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, joten $31\,\text{kW}$ poistuu hukkalämpönä pakokaasujen ja jäähdyttimen kautta. Bensiiniä kuluu $54\,\text{kWh}$, ja työ on siitä $28\,\%$ eli $15\,\text{kWh}$. Sähköauto tarvitsee saman työn tekemiseen noin $\tfrac{15\,\text{kWh}}{0{,}90} \approx 17\,\text{kWh}$ akusta, koska sen moottori muuttaa sähköä työksi $90\,\%$:n hyötysuhteella eikä lämpöä tarvitse muuttaa työksi.

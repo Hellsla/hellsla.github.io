@@ -1,10 +1,10 @@
 ok   lint
 ok   latex
-ok   build
-ok   sims
-ok   inquiry (76 passed, 0 failed)
+FAIL build
+FAIL sims
+FAIL inquiry
 ok   answer positions
-ok   layout 360 px
-ok   layout 768 px
-ok   layout 1280 px
-fy1-1: draft (science=PASS, pedagogy=stale); exercises: draft (science=PASS, pedagogy=stale)
+FAIL layout 360 px
+FAIL layout 768 px
+FAIL layout 1280 px
+fy1-1: draft (science=stale, pedagogy=stale); exercises: reviewed (science=PASS, pedagogy=PASS)

@@ -27,10 +27,10 @@ Energia ei katoa, mutta kaikki laitteeseen otettu energia ei muutu siihen muotoo
 Energian kulkua laitteen läpi voi havainnollistaa energiavirtakuviolla eli Sankey-kuviolla. Kuviossa nuolen paksuus on verrannollinen energiaan: tuleva nuoli jakautuu ohueen hyötynuoleen ja paksuun häviönuoleen. Kun lamppu ottaa sähköenergiaa $100\,\text{J}$, valoksi muuttuu vain $5\,\text{J}$ ja loput $95\,\text{J}$ on lämpöä. Lähtevien nuolten paksuudet ovat yhteensä yhtä suuret kuin tulevan nuolen paksuus, koska energia säilyy.
 
 ### Häviö määräytyy laitteen tarkoituksesta
-Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden, ja häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö on sen sijaan aina häviötä, vaikka se lämmittäisi huonetta talvella, koska lampun tehtävä on valaista. Hyöty määräytyy siis laitteen tarkoituksesta.
+Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden, ja häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö lasketaan sen sijaan häviöksi, vaikka se lämmittäisi huonetta talvella, koska lampun hyödyksi on määritelty valo. Hyöty määräytyy siis laitteen tarkoituksesta, ja hyötysuhteen arvo riippuu siitä, mikä määritellään hyödyksi ja mitä laitteeseen luetaan kuuluvaksi.
 
 ### Hyötysuhde kertoo hyödyn osuuden
-Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Se on alle $100\,\%$, koska osa energiasta muuttuu käytännössä aina lämmöksi esimerkiksi sähkövastuksessa tai kitkassa, ja lämpö leviää ympäristöön, josta sitä on vaikea ottaa talteen. Kun laitteen hyöty on muuta kuin lämpöä, hyötysuhde jää selvästi alle $100\,\%$. Sähkölämmittimessä hyöty on itse lämpö, ja hyötysuhde on lähellä $100\,\%$, mutta sekin on alle, koska osa lämmöstä karkaa hyödyttömään paikkaan. Laitteiden hyötysuhteet vaihtelevat paljon:
+Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Hyötysuhde on enintään $100\,\%$, koska energia säilyy eikä hyötyä voi saada enemmän kuin energiaa otetaan. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen: se muuttuu esimerkiksi kitkassa tai johtimissa lämmöksi, joka leviää ympäristöön. Kun laitteen hyöty on muuta kuin lämpöä, hyötysuhde jää yleensä selvästi alle $100\,\%$. Sähkölämmittimessä hyöty on itse lämpö: käytännössä kaikki sähköenergia muuttuu huonetta lämmittäväksi lämmöksi, joten hyötysuhde on lähes $100\,\%$. Ihanteellisen, häviöttömän laitteen hyötysuhde olisi $100\,\%$. Laitteiden hyötysuhteet vaihtelevat paljon:
 
 | Laite ja sen hyöty | tyypillinen $\eta$ |
 | --- | --- |
@@ -150,7 +150,7 @@ Moni ajattelee, että häviöissä energia katoaa. Energia säilyy kuitenkin kai
 Toinen virhe on pitää suuritehoista laitetta tehokkaana. Hyötysuhde on suhdeluku, ei määrä. $100\,\text{W}$:n hehkulamppu antaa valoa $5\,\text{W}$ ja $60\,\text{W}$:n lamppu $3\,\text{W}$, mutta molempien hyötysuhde on $5\,\%$. Suuritehoinen laite käyttää enemmän energiaa, mutta teho ei kerro, kuinka suuri osa energiasta on hyötyä.
 
 ## Tiivistelmä
-- Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta: $\eta = \tfrac{E_\text{a}}{E_\text{o}} = \tfrac{P_\text{a}}{P_\text{o}}$. Se ilmoitetaan usein prosentteina ja on alle $100\,\%$ (sähkölämmittimellä lähes $100\,\%$).
+- Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta: $\eta = \tfrac{E_\text{a}}{E_\text{o}} = \tfrac{P_\text{a}}{P_\text{o}}$. Se ilmoitetaan usein prosentteina ja on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa energiasta ei päädy hyötyyn; sähkölämmittimellä se on lähes $100\,\%$.
 - Energia säilyy: $E_\text{o} = E_\text{a} + E_\text{h}$. Häviöt ovat yleensä lämpöä, joka leviää ympäristöön.
 - Energiavirtakuviossa nuolen paksuus on verrannollinen energiaan tai tehoon, ja hyötysuhde on hyötynuolen osuus tulevasta nuolesta.
 - Tasaisesti käyvän laitteen hyötysuhde ei riipu käyntiajasta, koska aika supistuu energioiden suhteesta. Käyttötilanne voi muuttaa sitä: esimerkiksi bensiinimoottorin hyötysuhde on pienellä kuormalla selvästi pienempi.

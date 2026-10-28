@@ -1,7 +1,7 @@
 [
   {
-    "q": "Kaasuun siirtyy lämpömäärä 300 J, ja kaasu laajenee tehden mäntään työn 120 J. Kuinka paljon kaasun sisäenergia muuttuu?",
-    "a": "$Q = +300\\,\\text{J}$ ja $W = -120\\,\\text{J}$, koska systeemi tekee työtä ympäristöön. $\\Delta U = 300\\,\\text{J} - 120\\,\\text{J} = 180\\,\\text{J}$, eli sisäenergia kasvaa 180 J."
+    "q": "Kaasuun siirtyy lämpömäärä $300\\,\\text{J}$, ja kaasu laajenee tehden mäntään työn $120\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu?",
+    "a": "$Q = +300\\,\\text{J}$ ja $W = -120\\,\\text{J}$, koska systeemi tekee työtä ympäristöön. $\\Delta U = 300\\,\\text{J} - 120\\,\\text{J} = 180\\,\\text{J}$, eli sisäenergia kasvaa $180\\,\\text{J}$."
   },
   {
     "q": "Miksi lause ”kuumassa kivessä on paljon lämpöä” on fysiikan kannalta epätarkka? Mitä kivessä oikeasti on?",

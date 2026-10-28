@@ -4,7 +4,7 @@
 **Kysytty:** aineiston $(t, s)$-kuvaaja
 **Kuvaaja:** Vaaka-akselilla on aika $t\ (\text{s})$ ja pystyakselilla paikka $s$. Paikat kannattaa muuntaa metreiksi, esimerkiksi $1439{,}6\,\text{mm} = 1{,}4396\,\text{m}$, jolloin kulmakerroin saadaan suoraan yksikössä $\text{m/s}$. Jokainen rivi on yksi erillinen piste.
 
-<svg data-fig="fy1-s1-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: pallon paikka s metreinä ajan t funktiona. Kolme ensimmäistä pistettä ovat rampilta ja kaartuvat ylöspäin. Lattialla otetut pisteet ovat suoralla, jonka kulmakerroin on 0,80 m/s. Suoralta on luettu pisteet (0,6 s; 0,32 m) ja (2,0 s; 1,44 m)." style="max-width:100%;font-size:24px">
+<svg data-fig="fy1-s1-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: pallon paikka s metreinä ajan t funktiona. Kaksi ensimmäistä pistettä ovat rampilta ja jäävät suoran yläpuolelle; hetkellä 0,4 s pallo on rampin alapäässä. Lattialla otetut pisteet ovat suoralla, jonka kulmakerroin on 0,80 m/s. Suoralta on luettu pisteet (0,6 s; 0,32 m) ja (2,0 s; 1,44 m)." style="max-width:100%;font-size:24px">
   <line x1="156.5" y1="370" x2="156.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="232.5" y1="370" x2="232.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="309" y1="370" x2="309" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -75,13 +75,13 @@
 
 ### c)
 **Kysytty:** paikan todellinen tarkkuus ja nopeuden perusteltu tarkkuus
-**Periaate:** Mittaus ei voi olla tarkempi kuin sen pienin erottuva yksityiskohta. Videolla se on yksi kuvapiste, ja pallon reunan paikka voi heittää kuvapisteen tai kaksi.
+**Periaate:** Näytön numerot eivät kerro mittauksen tarkkuutta. Videolla paikan epävarmuutta voi arvioida kuvapisteen koosta: pallon reunan paikka voi heittää kuvapisteen tai kaksi.
 **Mallivastaus:** Yksi kuvapiste vastaa $2{,}5\,\text{mm}$:ä, joten pallon paikka tunnetaan noin $\Delta s \approx 3\,\text{mm}$:n tarkkuudella. Sovellus laskee pallon keskipisteen sen reunan kuvapisteistä ja voi antaa paikan kuvapisteen osina, mutta reuna on liikkuvassa pallossa hieman sumea. Sovelluksen näyttämä $0{,}1\,\text{mm}$:n numero syntyy laskennasta, kun kuvapisteet muunnetaan millimetreiksi, eikä se kerro mitään mittauksen tarkkuudesta: jo millimetrien numero on epävarma. Sama näkyy pisteiden sironnassa: lattialla pisteet poikkeavat sovitetusta suorasta muutaman millimetrin. Nopeus määritettiin $1{,}12\,\text{m}$:n matkasta, jonka epävarmuus on muutama millimetri eli alle prosentti, joten nopeus ilmoitetaan muodossa $v = 0{,}80\,\text{m/s}$. Pienimmän neliösumman sovitus antaa $0{,}799\,\text{m/s}$: kolmas merkitsevä numero on vielä perusteltavissa, mutta neljäs ei ole.
 
 ### d)
 **Kysytty:** arvio ekstrapoloinnista ja selitys suoran vakiotermille
 **Periaate:** Malli on testattu vain sillä välillä, jolla mitattiin. Sovitetun suoran vakiotermi on suoran ja $s$-akselin leikkauskohta.
-**Mallivastaus:** Päätelmä ei ole luotettava. Suora on testattu vain välillä $0{,}4\text{–}2{,}0\,\text{s}$ eli $1{,}6\,\text{s}$:n ajalta, ja päätelmä jatkaa sitä yli kuusi kertaa pidemmälle. Todellisuudessa vierimisvastus hidastaa palloa vähitellen, ja $7{,}8\,\text{m}$:n matkalla pallo luultavasti osuu seinään tai huonekaluun. Siksi tasaisen liikkeen malli voi jatkua vain, jos se testataan pidemmällä mittauksella.
+**Mallivastaus:** Päätelmä ei ole luotettava. Suora on testattu vain välillä $0{,}4\text{–}2{,}0\,\text{s}$ eli $1{,}6\,\text{s}$:n ajalta, ja päätelmä jatkaa sitä yli kuusi kertaa pidemmälle. Todellisuudessa vierimisvastus hidastaa palloa vähitellen, ja $7{,}8\,\text{m}$:n matkalla pallo luultavasti osuu seinään tai huonekaluun. Tasaisen liikkeen mallia voi siksi käyttää pidemmälle ajalle vasta, kun se on testattu pidemmällä mittauksella.
 Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon paikka hetkellä $0\,\text{s}$, sillä pallo lähti kohdasta $s = 0$. Rampilla pallo kulki aluksi hitaammin kuin lattialla. Jos se olisi liikkunut koko ajan lattianopeudella $0{,}80\,\text{m/s}$, se olisi ehtinyt pidemmälle. Siksi lattialiikettä kuvaava suora on siirtynyt alaspäin ja leikkaa $s$-akselin origon alapuolella.
 
 ### Yleisiä virheitä
@@ -106,19 +106,19 @@ Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon 
 ### b)
 **Annettu:** teräskuulan ajat $2{,}31$; $2{,}45$; $2{,}38$; $2{,}29$; $2{,}42\,\text{s}$ ja muovikuulan ajat $2{,}40$; $2{,}33$; $2{,}47$; $2{,}36$; $2{,}44\,\text{s}$
 **Kysytty:** keskiarvot $\bar{t}$ ja niiden epävarmuudet $\Delta t$ sekä päätelmä erosta
-**Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta, ja vaihteluvälin puolikas on yksinkertainen arvio sen epävarmuudesta. Ero on todellinen vain, jos se on selvästi suurempi kuin epävarmuudet.
+**Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta. Vaihteluvälin puolikas on yksinkertainen arvio yksittäisten mittausten hajonnasta, ja tässä sitä käytetään keskiarvon epävarmuuden varovaisena arviona: keskiarvon epävarmuus on yleensä tätä pienempi. Eron voi sanoa osoitetuksi vain, jos se on selvästi suurempi kuin keskiarvojen epävarmuudet.
 **Kaava:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ ja $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Muunnokset:** Ei tarvita, kaikki ajat ovat sekunteina.
 **Sijoitus:** Teräs: $\bar{t} = \dfrac{11{,}85\,\text{s}}{5} = 2{,}37\,\text{s}$ ja $\Delta t = \dfrac{2{,}45\,\text{s} - 2{,}29\,\text{s}}{2} = 0{,}08\,\text{s}$.
 Muovi: $\bar{t} = \dfrac{12{,}00\,\text{s}}{5} = 2{,}40\,\text{s}$ ja $\Delta t = \dfrac{2{,}47\,\text{s} - 2{,}33\,\text{s}}{2} = 0{,}07\,\text{s}$.
 Keskiarvojen ero on $2{,}40\,\text{s} - 2{,}37\,\text{s} = 0{,}03\,\text{s}$.
-**Vastaus:** Teräskuula $t = (2{,}37 \pm 0{,}08)\,\text{s}$ ja muovikuula $t = (2{,}40 \pm 0{,}07)\,\text{s}$, sadasosasekunnin tarkkuudella kuten mittaukset. Ero $0{,}03\,\text{s}$ on pienempi kuin kumpikaan epävarmuus, ja välit menevät päällekkäin. Mittausten perusteella vierimisajat eivät eroa.
+**Vastaus:** Teräskuula $t = (2{,}37 \pm 0{,}08)\,\text{s}$ ja muovikuula $t = (2{,}40 \pm 0{,}07)\,\text{s}$, sadasosasekunnin tarkkuudella kuten mittaukset. Ero $0{,}03\,\text{s}$ on pienempi kuin kumpikaan epävarmuus, ja välit menevät päällekkäin. Mittausten perusteella vierimisaikojen eroa ei voida osoittaa tällä mittaustarkkuudella. Päätelmä ei muutu, vaikka keskiarvojen epävarmuus arvioitaisiin tarkemmin: viiden toiston keskiarvoille se on noin $0{,}03\,\text{s}$, eikä ero ole sitä selvästi suurempi.
 **Järkevyys:** Toistojen vaihtelu, noin $0{,}1\,\text{s}$, on käsin otetun ajan reaktioajan luokkaa, joten epävarmuuden suuruus on uskottava.
 
 ### c)
 **Kysytty:** tutkimuskysymykseen vastaava, epävarmuuden huomioiva johtopäätös
 **Periaate:** Johtopäätös vastaa tutkimuskysymykseen, kertoo tuloksen epävarmuuksineen ja rajaa päätelmän olosuhteisiin, joissa mitattiin.
-**Mallivastaus:** Kuulan massa ei vaikuttanut vierimisaikaan mittaustarkkuuden rajoissa. Teräskuulan ($110\,\text{g}$) vierimisaika oli $(2{,}37 \pm 0{,}08)\,\text{s}$ ja muovikuulan ($16\,\text{g}$) $(2{,}40 \pm 0{,}07)\,\text{s}$. Ero $0{,}03\,\text{s}$ on pienempi kuin mittausten epävarmuus, joten hypoteesi raskaan kuulan nopeammasta vierimisestä ei saanut tukea. Tulos koskee samankokoisia umpinaisia kuulia tällä rampilla. Pienemmän eron havaitsemiseen tarvittaisiin tarkempi ajanotto, esimerkiksi valoportit.
+**Mallivastaus:** Mittauksissa ei havaittu, että kuulan massa vaikuttaisi vierimisaikaan: mahdollinen ero jäi mittausepävarmuutta pienemmäksi. Teräskuulan ($110\,\text{g}$) vierimisaika oli $(2{,}37 \pm 0{,}08)\,\text{s}$ ja muovikuulan ($16\,\text{g}$) $(2{,}40 \pm 0{,}07)\,\text{s}$. Ero $0{,}03\,\text{s}$ on pienempi kuin mittausten epävarmuus, joten hypoteesi raskaan kuulan nopeammasta vierimisestä ei saanut tukea. Tulos koskee samankokoisia umpinaisia kuulia tällä rampilla. Pienemmän eron havaitsemiseen tarvittaisiin tarkempi ajanotto, esimerkiksi valoportit.
 
 ### Hyväksytään myös
 - Epävarmuuden voi arvioida muullakin perustellulla tavalla, esimerkiksi keskiarvon keskivirheellä. Päätelmä on sama: ero on epävarmuutta pienempi.

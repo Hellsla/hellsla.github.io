@@ -95,9 +95,9 @@ Lauhdevoimalaitoksessa ketju on polttoaine, kattila, turbiini ja lauhdutin, gene
   <foreignObject x="70" y="368" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$=100\,\text{MW}$</div></foreignObject>
 </svg>
 
-Suurin häviö ei johdu kitkasta tai huonosta tekniikasta. Se on höyrykierron hukkalämpö, jota lämpövoimakone ei voi välttää: osa lämmöstä on luovutettava kylmempään ympäristöön, kuten luvussa Kaasun tekemä työ ja lämpövoimakone nähtiin. Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, joten niillä tätä pakollista häviötä ei ole: vesivoimalan hyötysuhde on noin 90 %, tuulivoimalan 40–45 % ja aurinkopaneelin noin 20 %. Näiden lukujen nimittäjä on kuitenkin virtaavan veden, tuulen tai säteilyn teho eikä ostettu polttoaine, joten ne eivät ole suoraan verrattavissa polttolaitoksen hyötysuhteeseen.
+Suurin häviö ei johdu pääosin kitkasta tai huonosta tekniikasta. Suurin osa siitä on höyrykierron hukkalämpöä, jota lämpövoimakone ei voi kokonaan välttää: osa lämmöstä on luovutettava kylmempään ympäristöön, kuten luvussa Kaasun tekemä työ ja lämpövoimakone nähtiin. Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, joten niillä tätä pakollista häviötä ei ole: vesivoimalan hyötysuhde on noin $90\,\%$, tuulivoimalan $40$–$45\,\%$ ja aurinkopaneelin noin $20\,\%$. Näiden lukujen nimittäjä on kuitenkin virtaavan veden, tuulen tai säteilyn teho eikä ostettu polttoaine, joten ne eivät ole suoraan verrattavissa polttolaitoksen hyötysuhteeseen.
 
-Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon. Jotta vesi lämpenee riittävästi, höyry lauhdutetaan korkeammassa lämpötilassa, ja turbiinista saadaan vähemmän sähköä. Kuvaaja näyttää esimerkkilaitoksen, jonka polttoaineteho on 400 MW: kun kaukolämpöteho kasvaa, sähköteho pienenee vähän, mutta hukkalämpö pienenee paljon enemmän. Kuvaajassa pystysuora matka kerrosten välillä on teho, ja kolmen kerroksen yhteenlaskettu korkeus on aina 400 MW.
+Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon. Jotta vesi lämpenee riittävästi, höyry lauhdutetaan korkeammassa lämpötilassa, ja turbiinista saadaan vähemmän sähköä. Kuvaaja näyttää esimerkkilaitoksen, jonka polttoaineteho on $400\,\text{MW}$: kun kaukolämpöteho kasvaa, sähköteho pienenee vähän, mutta hukkalämpö pienenee paljon enemmän. Kuvaajassa pystysuora matka kerrosten välillä on teho, ja kolmen kerroksen yhteenlaskettu korkeus on aina $400\,\text{MW}$.
 
 <svg viewBox="0 0 600 380" role="img" aria-label="Pinottu pinta-alakuvaaja yhteistuotantolaitoksesta, jonka polttoaineteho on 400 MW. Vaaka-akselilla on kaukolämpöteho 0–250 MW, pystyakselilla teho. Kun kaukolämpöteho kasvaa nollasta 232 MW:iin, sähköteho pienenee 160 MW:sta 120 MW:iin, kaukolämpö kasvaa ja hukkalämpö pienenee 240 MW:sta 48 MW:iin. Kolmen kerroksen yhteenlaskettu korkeus on aina 400 MW. Kuvaaja on mittakaavassa, ja sähkön ja lämmön riippuvuus on likimain suora." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy315-waste" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#ffffff"/><line x1="0" y1="0" x2="0" y2="10" stroke="#c9c2b2" stroke-width="3"/></pattern></defs>
@@ -140,7 +140,7 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämp
   <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_0 = 400\,\text{MW}$</div></foreignObject>
 </svg>
 
-Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–90 %:iin, mutta sähkö ja lämpö eivät ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpö kelpaa vain lämmitykseen, ja sen verkko ulottuu vain kaupunkiin. Siksi yhteistuotantolaitoksen sähkön ja lämmön suhde valitaan lämmön tarpeen mukaan: kesällä lämpöä tarvitaan vähän ja laitos tuottaa lähes pelkkää sähköä, talvella pakkasella lämpöä tarvitaan paljon.
+Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin, mutta sähkö ja lämpö eivät ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpö kelpaa vain lämmitykseen, ja sen verkko ulottuu vain kaupunkiin. Siksi yhteistuotantolaitoksen sähkön ja lämmön suhde valitaan lämmön tarpeen mukaan: kesällä lämpöä tarvitaan vähän ja laitos tuottaa lähes pelkkää sähköä, talvella pakkasella lämpöä tarvitaan paljon.
 
 ## Kaava: Voimalaitoksen hyötysuhde
 Yhden vaiheen tai koko laitoksen hyötysuhde on hyödyksi saadun tehon suhde sisään tuotuun tehoon, ja hukkalämmön teho on se osa, joka ei tule hyödyksi:
@@ -162,7 +162,7 @@ Sijoittamalla ylempi yhtälö alempaan saadaan koko ketjun hyötysuhde:
 ```latex
 \eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3
 ```
-missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, höyrykierto, generaattori ja muuntaja) ja $P_3$ on sähköteho. Hyötysuhteet kerrotaan keskenään, ei lasketa yhteen. Koska jokainen tekijä on pienempi kuin 1, ketjun hyötysuhde on pienempi kuin heikoimman vaiheen. Kuvassa pylväät $P_1$, $P_2$ ja $P_3$ saadaan edellisestä pylväästä kertomalla se vaiheen hyötysuhteella $\eta_1$, $\eta_2$ tai $\eta_3$.
+missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, höyrykierto, generaattori ja muuntaja) ja $P_3$ on sähköteho. Hyötysuhteet kerrotaan keskenään, ei lasketa yhteen. Todellisessa voimalaitoksessa jokainen tekijä on pienempi kuin 1, joten ketjun hyötysuhde on pienempi kuin heikoimman vaiheen. Kuvassa pylväät $P_1$, $P_2$ ja $P_3$ saadaan edellisestä pylväästä kertomalla se vaiheen hyötysuhteella $\eta_1$, $\eta_2$ tai $\eta_3$.
 
 <svg viewBox="0 0 600 480" role="img" aria-label="Pylväskuvaaja siitä, miten teho pienenee energiaketjussa. Polttoaineteho P0 on 500 MW, kattilan jälkeen P1 on 460 MW, höyrykierron jälkeen P2 on 212 MW ja generaattorin ja muuntajan jälkeen P3 on 200 MW. Jokainen pylväs on edellistä matalampi, ja pylvään päällä oleva vaalea katkoviivalla rajattu osa on edellisessä vaiheessa hukkaan mennyt teho, ja jokaiseen on merkitty häviö: kattilassa 40 MW, höyrykierrossa 248 MW ja generaattorissa ja muuntajassa 12 MW. Vaiheiden hyötysuhteet ovat 0,92, 0,46 ja 0,945, ja niiden tulo on 0,40. Pylväät ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -201,7 +201,7 @@ missä $P_\text{s}$ on sähköteho (W) ja $P_\text{k}$ kaukolämpöteho (W). Lau
 ```latex
 P_\text{L} = c\,q_m\,\Delta T
 ```
-missä $P_\text{L}$ on lauhduttimesta veteen siirtyvä lämpöteho (W), $c$ on veden ominaislämpökapasiteetti (4190 J/(kg·K)), $q_m = m/t$ vesivirta (kg/s) ja $\Delta T$ veden lämpötilan nousu (K). Lauhduttimen lämpöteho on hukkalämmön suurin osa mutta ei koko hukkalämpö $P_\text{h}$: osa hukkalämmöstä lähtee savukaasujen mukana ja generaattorin ja muuntajan häviöinä.
+missä $P_\text{L}$ on lauhduttimesta veteen siirtyvä lämpöteho (W), $c$ on veden ominaislämpökapasiteetti ($4190\,\text{J/(kg}\cdot\text{K)}$), $q_m = m/t$ vesivirta (kg/s) ja $\Delta T$ veden lämpötilan nousu (K). Lauhduttimen lämpöteho on hukkalämmön suurin osa mutta ei koko hukkalämpö $P_\text{h}$: osa hukkalämmöstä lähtee savukaasujen mukana ja generaattorin ja muuntajan häviöinä.
 
 <svg viewBox="0 0 600 310" role="img" aria-label="Lauhduttimen kaaviokuva. Merivesi virtaa putkessa vasemmalta oikealle lauhduttimen läpi, ja sen lämpötila nousee arvosta T1 arvoon T2. Putken väri vaihtuu sinisestä punaiseen. Lauhduttimen yläosassa oleva höyry luovuttaa lämpöä veteen teholla P_L, jota kuvaa oranssi nuoli, ja höyry tiivistyy alaosaan vedeksi. Vesivirta q_m on molemmissa päissä sama. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-pipe" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="400" y2="0"><stop offset="0" stop-color="#1971c2"/><stop offset="0.25" stop-color="#1971c2"/><stop offset="0.75" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy315-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -223,7 +223,7 @@ missä $P_\text{L}$ on lauhduttimesta veteen siirtyvä lämpöteho (W), $c$ on v
 </svg>
 
 ## Esimerkki
-Lauhdevoimalaitoksen polttoaineteho on 600 MW. Kattilan hyötysuhde on 0,910, höyrykierron 0,440 ja generaattorin ja muuntajan 0,950. Mikä on laitoksen sähköteho, mikä on koko laitoksen hyötysuhde ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?
+Lauhdevoimalaitoksen polttoaineteho on $600\,\text{MW}$. Kattilan hyötysuhde on 0,910, höyrykierron 0,440 ja generaattorin ja muuntajan 0,950. Mikä on laitoksen sähköteho, mikä on koko laitoksen hyötysuhde ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?
 
 <!-- vaihe -->
 
@@ -266,21 +266,21 @@ Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{
 
 <!-- vaihe -->
 
-**Järkevyys.** Arvio: $0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, mikä vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen 35–45 %:iin. Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$, eli yli puolet polttoaineen energiasta.
+**Järkevyys.** Arvio: $0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, mikä vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin, ja sopii lauhdevoimalaitoksen tavalliseen noin $40\,\%$:n hyötysuhteeseen (tyypillisesti $38$–$42\,\%$). Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$, eli yli puolet polttoaineen energiasta.
 
-Kattilan häviö on vain 54 MW ja generaattorin ja muuntajan 12 MW, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
+Kattilan häviö on vain $54\,\text{MW}$ ja generaattorin ja muuntajan $12\,\text{MW}$, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei katoa: se siirtyy lämpönä mereen tai ilmaan, jossa sen lämpötila on niin matala, ettei sitä voi enää muuttaa sähköksi. Yhteistuotannossa sama lämpö johdetaan kaukolämpöverkkoon ja lämmittää koteja.
 
-Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kun kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945, ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon 88 %:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta: sähköä voi käyttää kaikkeen, kaukolämpöä vain lämmitykseen.
+Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kun kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945, ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta: sähköä voi käyttää kaikkeen, kaukolämpöä vain lämmitykseen.
 
 ## Tiivistelmä
 - Voimalaitos muuttaa energiaa vaihe vaiheelta energiaketjussa, ja jokaisessa vaiheessa osa siirtyy lämpönä ympäristöön.
 - Hyötysuhde on $\eta = P_\text{hyöty}/P_0$, ja hukkalämmön teho on $P_\text{h} = P_0 - P_\text{hyöty}$.
 - Ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo, $\eta = \eta_1\,\eta_2\,\eta_3$, ja se on pienempi kuin heikoimman vaiheen.
-- Lauhdevoimalaitoksen suurin häviö on höyrykierron lauhduttimeen siirtyvä lämpö, jota lämpövoimakone ei voi välttää. Hyötysuhde on noin 40 %.
-- Yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon, ja kokonaishyötysuhde on $\eta_\text{kok} = (P_\text{s} + P_\text{k})/P_0$, noin 85–90 %. Sähköä saadaan silloin vähemmän.
+- Lauhdevoimalaitoksen suurin häviö on höyrykierron lauhduttimeen siirtyvä lämpö, jota lämpövoimakone ei voi kokonaan välttää. Sähköntuotannon hyötysuhde on noin $40\,\%$ (tyypillisesti $38$–$42\,\%$).
+- Yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon, ja kokonaishyötysuhde on $\eta_\text{kok} = (P_\text{s} + P_\text{k})/P_0$, noin 85–$90\,\%$. Sähköä saadaan silloin vähemmän.
 - Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, mutta niiden hyötysuhteiden nimittäjä on virtaavan veden, tuulen tai säteilyn teho, ei ostettu polttoaine.
 - Lauhduttimen jäähdytysvesi saa lämpötehon $P_\text{L} = c\,q_m\,\Delta T$, joka on hukkalämmön suurin osa.
 

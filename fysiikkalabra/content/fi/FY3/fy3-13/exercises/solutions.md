@@ -21,7 +21,7 @@
 ## fy3-13-L1-03
 **Annettu:** ryhmän tulos $\theta_0 = -267{,}90\,{}^\circ\text{C}$ ja hyväksytty arvo $\theta_\text{h} = -273{,}15\,{}^\circ\text{C}$
 **Kysytty:** poikkeama $d$ celsiusasteina
-**Periaate:** Mittaustuloksen virhe on sen etäisyys hyväksytystä arvosta. Etäisyys on aina positiivinen luku riippumatta siitä, onko tulos hyväksytyn arvon ylä- vai alapuolella, joten otetaan erotuksen itseisarvo.
+**Periaate:** Mittausvirhe on tuloksen ja hyväksytyn arvon erotus, ja sen etumerkki kertoo suunnan. Kysytty poikkeama on tämän erotuksen suuruus eli etäisyys, joka on positiivinen riippumatta siitä, onko tulos hyväksytyn arvon ylä- vai alapuolella, joten otetaan erotuksen itseisarvo.
 **Kaava:** $d = |\theta_0 - \theta_\text{h}|$
 **Muunnokset:** Molemmat arvot ovat celsiusasteina samalla asteikolla. Lämpötilojen erotus on sama celsiusasteina ja kelvineinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $d = |-267{,}90\,{}^\circ\text{C} - (-273{,}15\,{}^\circ\text{C})| = |5{,}25\,{}^\circ\text{C}| = 5{,}25\,{}^\circ\text{C}$
@@ -31,7 +31,7 @@
 ## fy3-13-L1-04
 **Annettu:** jyrkemmän ääriviivan nollapaineen lämpötila $\theta_{0,\text{max}} = -258\,{}^\circ\text{C}$ ja loivemman $\theta_{0,\text{min}} = -284\,{}^\circ\text{C}$
 **Kysytty:** tuloksen epävarmuus $\Delta\theta_0$ celsiusasteina
-**Periaate:** Kaikki suorat, jotka kulkevat kaikkien epävarmuusjanojen kautta, sopivat aineistoon yhtä hyvin. Jyrkin ja loivin niistä rajaavat välin, jolle todellinen nollapiste kuuluu. Tulos kirjoitetaan muotoon $\theta_0 \pm \Delta\theta_0$, joten epävarmuus on välin puolikas.
+**Periaate:** Kaikki suorat, jotka kulkevat kaikkien epävarmuusjanojen kautta, sopivat aineistoon yhtä hyvin. Jyrkin ja loivin niistä rajaavat välin, jolla todellinen nollapiste todennäköisesti on. Tulos kirjoitetaan muotoon $\theta_0 \pm \Delta\theta_0$, joten epävarmuus on välin puolikas.
 **Kaava:** $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Muunnokset:** Molemmat lämpötilat ovat celsiusasteina, ja niiden erotus on sama kelvineinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta\theta_0 = \dfrac{-258\,{}^\circ\text{C} - (-284\,{}^\circ\text{C})}{2} = \dfrac{26\,{}^\circ\text{C}}{2} = 13\,{}^\circ\text{C}$
@@ -61,7 +61,7 @@
 ## fy3-13-L2-02
 **Annettu:** kaksi ääriviivaa $p = 100\,\text{kPa} + 0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (jyrkempi) ja $p = 102\,\text{kPa} + 0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (loivempi)
 **Kysytty:** epävarmuus $\Delta\theta_0$ celsiusasteina
-**Periaate:** Molemmat suorat kulkevat kaikkien mittauspisteiden epävarmuusjanojen kautta, joten todellinen suora on niiden välissä. Ääriviivojen nollapaineen lämpötilat rajaavat välin, jolle nollapiste kuuluu, ja epävarmuus on tämän välin puolikas.
+**Periaate:** Molemmat suorat kulkevat kaikkien mittauspisteiden epävarmuusjanojen kautta, joten todellinen suora on todennäköisesti niiden välissä. Ääriviivojen nollapaineen lämpötilat rajaavat nollapisteen arvioidun välin, ja epävarmuus on tämän välin puolikas.
 **Kaava:** Kummankin viivan nollapaine saadaan ehdosta $0 = p_0 + k\theta_0$, eli $\theta_0 = -\dfrac{p_0}{k}$. Jyrkempi antaa arvon $\theta_{0,\text{max}}$ ja loivempi arvon $\theta_{0,\text{min}}$, ja $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Muunnokset:** Muunnoksia ei tarvita: $p_0$ on kilopascaleina ja $k$ yksikössä $\text{kPa}/{}^\circ\text{C}$, joten osamäärä on celsiusasteina.
 **Sijoitus:** $\theta_{0,\text{max}} = -\dfrac{100\,\text{kPa}}{0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -263{,}16\,{}^\circ\text{C}$ ja $\theta_{0,\text{min}} = -\dfrac{102\,\text{kPa}}{0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -291{,}43\,{}^\circ\text{C}$. Siis $\Delta\theta_0 = \dfrac{-263{,}16\,{}^\circ\text{C} - (-291{,}43\,{}^\circ\text{C})}{2} = 14{,}14\,{}^\circ\text{C}$
@@ -106,14 +106,14 @@
 **Muunnokset:** Lähtölämpötila muunnetaan kelvineiksi: $T_0 = 0\,{}^\circ\text{C} = 273{,}15\,\text{K}$. Lämpötila $77{,}0\,\text{K}$ on jo kelvineinä. Suhteessa $T/T_0$ kelvinit supistuvat, joten paine jää kilopascaleiksi.
 **Sijoitus:** $p = 100{,}0\,\text{kPa} \cdot \dfrac{77{,}0\,\text{K}}{273{,}15\,\text{K}} = 28{,}19\,\text{kPa}$
 **Vastaus:** $28{,}2\,\text{kPa}$, kolme merkitsevää numeroa, koska lämpötila $77{,}0\,\text{K}$ on annettu kolmella numerolla ($273{,}15\,\text{K}$ on määritelmä eikä rajoita). Suoraa ei voi jatkaa nollaan asti, koska typpi tiivistyy nesteeksi noin $67\,\text{K}$:ssä. Silloin kaasun ainemäärä pienenee, paine putoaa nopeammin kuin suora ennustaa, eikä ehto "ainemäärä vakio" enää päde.
-**Järkevyys:** Lämpötila $77{,}0\,\text{K}$ on noin $0{,}28$-kertainen lämpötilaan $273{,}15\,\text{K}$ verrattuna, ja paine on samassa suhteessa: noin $0{,}28 \cdot 100 = 28\,\text{kPa}$. Suora antaisi lämpötilassa $67\,\text{K}$ paineen $100 \cdot 67/273{,}15 = 24{,}5\,\text{kPa}$, mutta todellisuudessa kaasu on siellä jo nesteytynyt. Ekstrapolointi on siis luotettava vain niin pitkälle kuin oletus kaasusta pitää paikkansa.
+**Järkevyys:** Lämpötila $77{,}0\,\text{K}$ on noin $0{,}28$-kertainen lämpötilaan $273{,}15\,\text{K}$ verrattuna, ja paine on samassa suhteessa: noin $0{,}28 \cdot 100 = 28\,\text{kPa}$. Suora antaisi lämpötilassa $67\,\text{K}$ paineen $100 \cdot 67/273{,}15 = 24{,}5\,\text{kPa}$, mutta noin siinä lämpötilassa kaasu alkaa tiivistyä nesteeksi, eikä paine sen jälkeen enää noudata suoraa. Ekstrapolointi on siis luotettava vain niin pitkälle kuin oletus kaasusta pitää paikkansa.
 
 ## fy3-13-L3-03
 **Annettu:** ryhmän A tulos $\theta_0 = -262{,}00\,{}^\circ\text{C}$ ja epävarmuus $\Delta\theta_0 = 6{,}00\,{}^\circ\text{C}$; hyväksytty arvo $\theta_\text{h} = -273{,}15\,{}^\circ\text{C}$
 **Kysytty:** poikkeaman suhde epävarmuuteen $n$ (kuinka monta kertaa $\Delta\theta_0$ mahtuu tuloksen ja hyväksytyn arvon väliin) ja syy ristiriitaan
-**Periaate:** Tulos sopii yhteen hyväksytyn arvon kanssa, jos arvo kuuluu epävarmuusväliin $\theta_0 \pm \Delta\theta_0$, eli kun poikkeama on korkeintaan yksi epävarmuus. Suhde $n$ kertoo, kuinka paljon poikkeama ylittää tämän rajan.
+**Periaate:** Tässä luvussa tulosta pidetään sopusoinnussa hyväksytyn arvon kanssa, jos arvo kuuluu epävarmuusväliin $\theta_0 \pm \Delta\theta_0$, eli kun poikkeama on korkeintaan yksi epävarmuus. Suhde $n$ kertoo, kuinka moninkertainen poikkeama on epävarmuuteen verrattuna. Epävarmuus ei ole ehdoton raja, joten poikkeama ei yksin todista virhettä, mutta mitä suurempi $n$ on, sitä todennäköisemmin mittauksessa on järjestelmällinen virhe tai epävarmuus on arvioitu liian pieneksi.
 **Kaava:** $n = \dfrac{|\theta_0 - \theta_\text{h}|}{\Delta\theta_0}$
 **Muunnokset:** Kaikki lämpötilat ovat celsiusasteina, ja lämpötilaerot ovat samat kelvineinä. Suhde $n$ on dimensioton, joten muunnoksia ei tarvita.
 **Sijoitus:** $n = \dfrac{|-262{,}00\,{}^\circ\text{C} - (-273{,}15\,{}^\circ\text{C})|}{6{,}00\,{}^\circ\text{C}} = \dfrac{11{,}15\,{}^\circ\text{C}}{6{,}00\,{}^\circ\text{C}} = 1{,}858$
 **Vastaus:** $1{,}86$ kertaa, kolme merkitsevää numeroa, koska erotus $11{,}15\,{}^\circ\text{C}$ ja epävarmuus $6{,}00\,{}^\circ\text{C}$ on annettu kolmella numerolla (tulos $-262{,}00\,{}^\circ\text{C}$ ja hyväksytty arvo ovat sadasosan tarkkuudella).
-**Järkevyys:** Poikkeama $11{,}15\,{}^\circ\text{C}$ on lähes kaksi epävarmuutta ($2 \cdot 6{,}00 = 12{,}0$). Epävarmuusväli $-268\ldots -256\,{}^\circ\text{C}$ ei sisällä hyväksyttyä arvoa $-273{,}15\,{}^\circ\text{C}$, joten tulos ei ole sopusoinnussa. Syynä voi olla järjestelmällinen virhe, esimerkiksi epätarkka lämpömittari, ilmavuoto tai pullon tilavuuden muutos, tai liian pieneksi arvioitu epävarmuus. Tarkistus: $1{,}858 \cdot 6{,}00\,{}^\circ\text{C} = 11{,}15\,{}^\circ\text{C}$.
+**Järkevyys:** Poikkeama $11{,}15\,{}^\circ\text{C}$ on lähes kaksi epävarmuutta ($2 \cdot 6{,}00 = 12{,}0$). Epävarmuusväli $-268\ldots -256\,{}^\circ\text{C}$ ei sisällä hyväksyttyä arvoa $-273{,}15\,{}^\circ\text{C}$, joten tulos ei tämän säännön mukaan ole sopusoinnussa. Syynä voi olla järjestelmällinen virhe, esimerkiksi epätarkka lämpömittari, ilmavuoto tai pullon tilavuuden muutos, tai liian pieneksi arvioitu epävarmuus. Tarkistus: $1{,}858 \cdot 6{,}00\,{}^\circ\text{C} = 11{,}15\,{}^\circ\text{C}$.

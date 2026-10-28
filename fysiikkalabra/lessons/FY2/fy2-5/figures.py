@@ -48,14 +48,14 @@ def energia():
 
 
 def lampoarvot():
-    f = Fig("fy25-bars", 372, "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 49, bensiini 43, "
-            "diesel 43, kivihiili 26, puupelletti 17, polttopuu 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on "
+    f = Fig("fy25-bars", 372, "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, "
+            "diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on "
             "noin viisi kertaa turpeen pylvään pituinen.")
     defs(f)
     f.tex(150, 24, r"H\ \left(\text{MJ/kg}\right)", "start", w=190)
     x0, per = 156, 6.8
     top, step, bh = 52, 38, 26
-    rows = [("maakaasu", 49), ("bensiini", 43), ("diesel", 43), ("kivihiili", 26), ("puupelletti", 17), ("polttopuu", 15), ("turve", 10)]
+    rows = [("maakaasu", 48), ("bensiini", 43), ("diesel", 43), ("kivihiili", 26), ("puupelletti", 17), ("polttopuu", 15), ("turve", 10)]
     ybase = top + step * len(rows) + 2
     for t in (10, 20, 30, 40, 50):
         f.line(x0 + t * per, top - 4, x0 + t * per, ybase, RULE_LIGHT, 1.5)
@@ -75,7 +75,7 @@ def lampoarvot():
 
 def etiketti():
     f = Fig("fy25-label", 300, "Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa "
-            "grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan lämpöarvoa vastaava luku 22 MJ/kg.")
+            "grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan ruoan energiasisältö 22 MJ/kg.")
     defs(f)
     f.rect(30, 30, 230, 220, WHITE, INK, 2.5, 8)
     f.tex(145, 66, r"\text{Ravintoarvo}", "middle", w=200)
@@ -89,7 +89,7 @@ def etiketti():
     f.block_arrow(280, 140, 340, 140, "url(#fy25-heat)", 14, 30, 22)
     f.tex(350, 96, r"2200\,\text{kJ} = 2{,}2\,\text{MJ}", "start", w=230)
     f.tex(350, 140, r"100\,\text{g} = 0{,}100\,\text{kg}", "start", w=230)
-    f.tex(350, 204, r"H = 22\,\dfrac{\text{MJ}}{\text{kg}}", "start", GOOD, w=200)
+    f.tex(350, 204, r"e = 22\,\dfrac{\text{MJ}}{\text{kg}}", "start", GOOD, w=200)
     return f.svg()
 
 

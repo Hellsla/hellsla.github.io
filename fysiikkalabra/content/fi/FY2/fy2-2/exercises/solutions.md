@@ -70,13 +70,13 @@
 
 ## fy2-2-L2-03
 **Annettu:** sähköenergia $E_\text{sähkö} = 6{,}0\,\text{kJ}$, valoksi muuttunut energia $E_\text{valo} = 1{,}5\,\text{kJ}$; valo imeytyy huoneen pintoihin
-**Kysytty:** huoneeseen syntynyt lämpöenergia $E_\text{lämpö}$ kilojouleina
-**Periaate:** Energia säilyy. Lampun lämpö on $E_\text{sähkö} - E_\text{valo}$, ja imeytyessään valo muuttuu myös lämmöksi. Energiaa ei poistu huoneesta valona.
+**Kysytty:** huoneessa lämpöenergiaksi muuttunut energia $E_\text{lämpö}$ kilojouleina
+**Periaate:** Energia säilyy. Lampun lämpöenergia on $E_\text{sähkö} - E_\text{valo}$, ja imeytyessään valo muuttuu myös lämpöenergiaksi. Energiaa ei poistu huoneesta valona.
 **Kaava:** $E_\text{lämpö} = (E_\text{sähkö} - E_\text{valo}) + E_\text{valo} = E_\text{sähkö}$
 **Muunnokset:** Ei tarvita: kaikki energiat on annettu kilojouleina.
 **Sijoitus:** $E_\text{lämpö} = (6{,}0\,\text{kJ} - 1{,}5\,\text{kJ}) + 1{,}5\,\text{kJ} = 4{,}5\,\text{kJ} + 1{,}5\,\text{kJ} = 6{,}0\,\text{kJ}$
 **Vastaus:** $6{,}0\,\text{kJ}$, kaksi merkitsevää numeroa kuten annetussa sähköenergiassa.
-**Järkevyys:** Koko sähköenergia päätyy lopulta lämmöksi, kuten ketjun lopussa aina, kun mitään ei varastoida. Valo ei säily mihinkään vaan lämmittää pintoja.
+**Järkevyys:** Koko sähköenergia päätyy lopulta lämpöenergiaksi, kuten ketjun lopussa aina, kun mitään ei varastoida. Valo ei säily mihinkään vaan lämmittää pintoja.
 
 ## fy2-2-L2-04
 **Annettu:** TNT-tonni $E_\text{TNT} = 4{,}2\,\text{GJ}$ ja suklaalevy ($200\,\text{g}$) $E_\text{suklaa} = 4{,}4\,\text{MJ}$

@@ -5,10 +5,10 @@
   },
   {
     "q": "Mittausten $(V, p)$-pisteet asettuvat kaarelle. Miten taulukkoa muokataan, jotta kääntäen verrannollisuus näkyy suorana, ja millainen suoran pitää olla?",
-    "a": "Lasketaan uusi sarake $1/V$ ja piirretään $p$ $1/V$:n funktiona. Jos $p$ on kääntäen verrannollinen $V$:hen, pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $pV$."
+    "a": "Lasketaan uusi sarake $1/V$ ja piirretään $p$ $1/V$:n funktiona. Jos $p$ on kääntäen verrannollinen $V$:hen, pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle, jonka kulmakerroin on $pV$."
   },
   {
-    "q": "Suljetun pullon ilma lämpenee 7 °C:sta 35 °C:seen. Kasvaako paine viisinkertaiseksi? Perustele.",
-    "a": "Ei kasva. Paine on verrannollinen kelvinlämpötilaan, joka kasvaa 280 K:stä 308 K:iin. Paine kasvaa vain kertoimella $308/280 = 1{,}1$ eli noin 10 %."
+    "q": "Suljetun pullon ilma lämpenee $7\\,{}^\\circ\\text{C}$:sta $35\\,{}^\\circ\\text{C}$:seen. Kasvaako paine viisinkertaiseksi? Perustele.",
+    "a": "Ei kasva. Paine on verrannollinen kelvinlämpötilaan, joka kasvaa $280\\,\\text{K}$:stä $308\\,\\text{K}$:iin. Paine kasvaa vain kertoimella $308/280 = 1{,}1$ eli noin $10\\,\\%$."
   }
 ]

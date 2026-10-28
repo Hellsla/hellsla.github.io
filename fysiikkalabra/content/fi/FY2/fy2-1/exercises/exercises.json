@@ -11,7 +11,7 @@
     {
       "id": "fy2-1-L1-02",
       "level": 1,
-      "text": "Kasvin lehteen imeytyy auringon säteilyenergiaa $245\\,\\text{J}$. Lehti muuttaa siitä yhteyttämällä kemialliseksi energiaksi $6{,}0\\,\\text{J}$, ja loppu muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy?",
+      "text": "Kasvin lehteen imeytyy auringon säteilyenergiaa $245\\,\\text{J}$. Lehti muuttaa siitä yhteyttämällä kemialliseksi energiaksi $6{,}0\\,\\text{J}$, ja loppu muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi?",
       "answer": 239.0,
       "unit": "J",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "Aurinkopaneeli vastaanottaa säteilyenergiaa $800\\,\\text{J}$ ja muuttaa siitä sähköenergiaksi $160\\,\\text{J}$. Loppu muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy?",
+      "text": "Aurinkopaneeli vastaanottaa säteilyenergiaa $800\\,\\text{J}$ ja muuttaa siitä sähköenergiaksi $160\\,\\text{J}$. Loppu muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi?",
       "answer": 640.0,
       "unit": "J",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy2-1-L2-01",
       "level": 2,
-      "text": "Sähköpotkulauta lähtee liikkeelle. Sen akusta vapautuu kemiallista energiaa $3{,}00\\,\\text{kJ}$, ja potkulauta ja kuljettaja saavat siitä liike-energiaa $2150\\,\\text{J}$. Loppu muuttuu akussa, moottorissa ja renkaissa lämpöenergiaksi. Kuinka monta joulea lämpöenergiaa syntyy?",
+      "text": "Sähköpotkulauta lähtee liikkeelle. Sen akusta vapautuu kemiallista energiaa $3{,}00\\,\\text{kJ}$, ja potkulauta ja kuljettaja saavat siitä liike-energiaa $2150\\,\\text{J}$. Loppu muuttuu akussa, moottorissa ja renkaissa lämpöenergiaksi. Kuinka monta joulea energiaa muuttuu lämpöenergiaksi?",
       "answer": 850.0,
       "unit": "J",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy2-1-L2-03",
       "level": 2,
-      "text": "Keinussa istuva lapsi vedetään sivulle ja päästetään levosta. Ylimmässä kohdassa lapsen ja keinun potentiaalienergia on $0{,}36\\,\\text{kJ}$, kun nollataso on keinun alin kohta. Keinu heilahtelee yhä pienemmin heilahduksin, kunnes se pysähtyy alimpaan kohtaan. Ääntä ei oteta huomioon. Kuinka monta joulea lämpöenergiaa syntyy yhteensä?",
+      "text": "Keinussa istuva lapsi vedetään sivulle ja päästetään levosta. Ylimmässä kohdassa lapsen ja keinun potentiaalienergia on $0{,}36\\,\\text{kJ}$, kun nollataso on keinun alin kohta. Keinu heilahtelee yhä pienemmin heilahduksin, kunnes se pysähtyy alimpaan kohtaan. Ääntä ei oteta huomioon. Kuinka monta joulea energiaa muuttuu yhteensä lämpöenergiaksi?",
       "answer": 360.0,
       "unit": "J",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy2-1-L3-01",
       "level": 3,
-      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa. Kohdassa A skeittari on levossa ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy kohtien B ja C välillä?",
+      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa. Kohdassa A skeittari on levossa ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi kohtien B ja C välillä?",
       "answer": 130,
       "unit": "J",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy2-1-L3-02",
       "level": 3,
-      "text": "Kumipallo pudotetaan lattialle. Pallon mekaaninen energia on pudotushetkellä $5{,}00\\,\\text{J}$, ensimmäisen pompun jälkeen $4{,}00\\,\\text{J}$ ja toisen pompun jälkeen $3{,}20\\,\\text{J}$. Kuinka paljon enemmän lämpöenergiaa syntyy ensimmäisessä pompussa kuin toisessa?",
+      "text": "Kumipallo pudotetaan lattialle. Pallon mekaaninen energia on pudotushetkellä $5{,}00\\,\\text{J}$, ensimmäisen pompun jälkeen $4{,}00\\,\\text{J}$ ja toisen pompun jälkeen $3{,}20\\,\\text{J}$. Kuinka paljon enemmän energiaa muuttuu lämpöenergiaksi ensimmäisessä pompussa kuin toisessa?",
       "answer": 0.2,
       "unit": "J",
       "tolerance": 0.02

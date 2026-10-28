@@ -4,11 +4,11 @@
     "a": "Lämpötilan noustessa hiukkasten keskimääräinen liike-energia kasvaa, eli hiukkaset liikkuvat nopeammin. Ne osuvat seinään useammin ja kovempaa, joten paine kasvaa."
   },
   {
-    "q": "Lämpötila nousee 10 °C:sta 20 °C:een. Kaksinkertaistuuko hiukkasten keskimääräinen liike-energia? Perustele.",
-    "a": "Ei. Kelvineinä lämpötila nousee 283 K:sta 293 K:iin, eli vain noin 3,5 %, ja liike-energia riippuu kelvinlämpötilasta."
+    "q": "Lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $20\\,{}^\\circ\\text{C}$:een. Kaksinkertaistuuko hiukkasten keskimääräinen liike-energia? Perustele.",
+    "a": "Ei. Kelvineinä lämpötila nousee $283\\,\\text{K}$:sta $293\\,\\text{K}$:iin, eli vain noin $3{,}5\\,\\%$, ja liike-energia riippuu kelvinlämpötilasta."
   },
   {
-    "q": "Mikä on lämpötila 0 K celsiusasteina, ja miksi sitä sanotaan absoluuttiseksi nollapisteeksi?",
-    "a": "−273,15 °C (noin −273 °C). Kylmempää lämpötilaa ei ole, koska hiukkasten keskimääräinen liike-energia on silloin pienimmillään."
+    "q": "Mikä on lämpötila $0\\,\\text{K}$ celsiusasteina, ja miksi sitä sanotaan absoluuttiseksi nollapisteeksi?",
+    "a": "$-273{,}15\\,{}^\\circ\\text{C}$ (noin $-273\\,{}^\\circ\\text{C}$). Kylmempää lämpötilaa ei ole, koska hiukkasten keskimääräinen liike-energia on silloin pienimmillään."
   }
 ]

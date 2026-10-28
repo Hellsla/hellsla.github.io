@@ -177,7 +177,7 @@ Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvul
   <foreignObject x="81" y="289.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vesi lämpenee}$</div></foreignObject>
 </svg>
 
-Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasvaa, jousi venyy ja tallentaa energiaa, ja kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Portaat ylös kävellen ja juosten teet saman työn, mutta juosten teho on suurempi. Kiukaan 6 kW:n teho tarkoittaa, että se muuttaa sähköenergiaa lämmöksi 6000 joulea joka sekunti.
+Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasvaa, jousi venyy ja tallentaa energiaa, ja kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Portaat ylös kävellen ja juosten teet saman työn, mutta juosten teho on suurempi. Kiukaan $6\,\text{kW}$:n teho tarkoittaa, että se muuttaa joka sekunti 6000 joulea sähköenergiaa sisäenergiaksi, joka siirtyy lämpönä kiviin ja ilmaan.
 
 ## Kaava: Työ ja teho
 Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan tulo:
@@ -344,7 +344,7 @@ W &= A_\text{kolmio} \\
 
 <!-- vaihe -->
 
-**Tulos.** Venyttävä voima tekee 4,0 J:n työn, kaksi merkitsevää numeroa kuten annetuissa arvoissa $20\,\text{cm}$ ja $40\,\text{N}$. Työ ei katoa, vaan energia tallentuu venyneeseen jouseen.
+**Tulos.** Venyttävä voima tekee $4{,}0\,\text{J}$:n työn, kaksi merkitsevää numeroa kuten annetuissa arvoissa $20\,\text{cm}$ ja $40\,\text{N}$. Työ ei katoa, vaan energia tallentuu venyneeseen jouseen.
 
 <!-- vaihe -->
 

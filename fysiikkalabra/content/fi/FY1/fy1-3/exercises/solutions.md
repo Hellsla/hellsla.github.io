@@ -40,13 +40,13 @@
 
 ## fy1-3-L1-05
 **Annettu:** pienin asteikkoväli $d = 1{,}0\,\text{mm}$
-**Kysytty:** yksittäisen lukeman virhe-arvio $\Delta x$ yksikössä $\text{mm}$
-**Periaate:** Lukema luetaan asteikolta lähimmän asteikkoviivan mukaan. Todellinen arvo voi olla mikä tahansa kahden viivan välillä, joten lukema voi olla väärin enintään puoli asteikkoväliä.
+**Kysytty:** lukeman epävarmuus $\Delta x$ yksikössä $\text{mm}$
+**Periaate:** Lukema luetaan asteikolta lähimmän asteikkoviivan mukaan. Yksinkertaisessa tilanteessa lukeman epävarmuudeksi arvioidaan puoli asteikkoväliä; kokonaisepävarmuus voi olla suurempi, jos esimerkiksi kappaleen reuna on epäselvä tai asteikkoa katsotaan vinosti.
 **Kaava:** $\Delta x = \dfrac{d}{2}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $\Delta x = \dfrac{d}{2}$
 **Muunnokset:** Asteikkoväli on jo millimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta x = \dfrac{1{,}0\,\text{mm}}{2} = 0{,}5\,\text{mm}$
 **Vastaus:** $0{,}5\,\text{mm}$; virhe-arvio on karkea arvio, joten se ilmoitetaan yhdellä merkitsevällä numerolla.
-**Järkevyys:** Jos viivaimelta luetaan $23{,}0\,\text{mm}$, oikea pituus on välillä $22{,}5\,\text{mm}$–$23{,}5\,\text{mm}$, ja tämä väli on yhden asteikkovälin eli $1{,}0\,\text{mm}$ levyinen. Virhe-arvio ei voi olla asteikkoväliä suurempi.
+**Järkevyys:** Jos viivaimelta luetaan $23{,}0\,\text{mm}$, lukeman perusteella pituus on arviolta välillä $22{,}5\,\text{mm}$–$23{,}5\,\text{mm}$, ja tämä väli on yhden asteikkovälin eli $1{,}0\,\text{mm}$ levyinen. Lukeman epävarmuus on siis pienempi kuin asteikkoväli, mutta mittauksen kokonaisepävarmuus voi olla tätä suurempi.
 
 ## fy1-3-L2-01
 **Annettu:** $t = 1{,}84\,\text{s}$, $1{,}91\,\text{s}$, $1{,}78\,\text{s}$, $1{,}88\,\text{s}$, $1{,}96\,\text{s}$ ja $1{,}82\,\text{s}$; $n = 6$, $t_\text{min} = 1{,}78\,\text{s}$, $t_\text{max} = 1{,}96\,\text{s}$
@@ -65,8 +65,8 @@
 **Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ ja $\Delta L_\text{sys} = \bar{L} - L_0$. Kysytty on $\Delta L_\text{sys} = \bar{L} - L_0$
 **Muunnokset:** Tulos tulee metreinä, ja $1\,\text{m} = 1000\,\text{mm}$, joten se kerrotaan tuhannella.
 **Sijoitus:** Summa on $1{,}012\,\text{m} + 1{,}009\,\text{m} + 1{,}011\,\text{m} = 3{,}032\,\text{m}$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L_\text{sys} = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m} = 10{,}67\,\text{mm}$
-**Vastaus:** $10{,}7\,\text{mm}$, kolme merkitsevää numeroa: lukemat ovat millimetrin tarkkuudella, ja kolmen lukeman keskiarvo kantaa yhden numeron lisää.
-**Järkevyys:** Jokainen lukema on $9\,\text{mm}$–$12\,\text{mm}$ liian suuri, joten keskiarvo $10{,}7\,\text{mm}$ on näiden välissä. Nauha näyttää noin $1\,\%$ liikaa, ja virheen etumerkki on positiivinen, koska lukemat ylittävät oikean arvon.
+**Vastaus:** noin $11\,\text{mm}$ (laskimen arvo $10{,}67\,\text{mm}$): lukemat vaihtelevat noin $\pm 1{,}5\,\text{mm}$, joten keskiarvoa ei kannata ilmoittaa millimetriä tarkemmin.
+**Järkevyys:** Jokainen lukema on $9\,\text{mm}$–$12\,\text{mm}$ liian suuri, joten keskiarvo $11\,\text{mm}$ on näiden välissä. Nauha näyttää noin $1\,\%$ liikaa, ja virheen etumerkki on positiivinen, koska lukemat ylittävät oikean arvon.
 
 ## fy1-3-L2-03
 **Annettu:** $L_1 = 12{,}4\,\text{cm}$, $L_2 = 0{,}125\,\text{m}$, $L_3 = 123\,\text{mm}$
