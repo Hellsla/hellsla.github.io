@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The position of a trolley is measured on a track every second, and the results are plotted on a graph. The points lie roughly along a straight line, but no line passes through all of them. Two students draw different lines, and each claims that her line shows the speed of the trolley.",
+      "text": "The position of a trolley is measured on a track every second, and the results are plotted on a graph. The points lie roughly along a straight line, but no line passes through all of them. Two students draw different lines, and each claims that their line shows the speed of the trolley.",
       "question": "How do you decide which line describes the measurements best, and what does the slope of the line tell you?"
     },
     {
@@ -82,7 +82,7 @@
       "choices": [
         {
           "text": "At $m = 0\\,\\text{g}$, because without liquid there is no mass.",
-          "feedback": "The example data refute this. What was weighed was the combined mass of the cylinder and the liquid, and an empty cylinder has weight too. If the line is forced through the origin with a slope of $0.80\\,\\text{g/ml}$, the mean deviation is about $61\\,\\text{g}$, whereas with the correct constant term it is only about $1\\,\\text{g}$."
+          "feedback": "The example data refute this. What was weighed was the combined mass of the cylinder and the liquid, and an empty cylinder has mass too. If the line is forced through the origin with a slope of $0.80\\,\\text{g/ml}$, the mean deviation is about $61\\,\\text{g}$, whereas with the correct constant term it is only about $1\\,\\text{g}$."
         },
         {
           "text": "At the mass of the empty measuring cylinder, because when the amount of liquid is zero, only the cylinder remains.",
@@ -109,7 +109,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: find the slope",
-      "intro": "Testaa ennuste 1. Aineisto on kärryn mittaus ja suora kulkee origon kautta ($b = 0$). Muuta vain kulmakerrointa $k$ ja kirjaa vähintään kolme mittausta: yksi, jossa suora on mielestäsi parhaimmillaan, sekä sen molemmin puolin. Katso samalla, kuinka punaiset janat lyhenevät ja pitenevät.",
+      "intro": "Test prediction 1. The data set is the trolley measurements, and the line passes through the origin ($b = 0$). Change only the slope $k$ and record at least three measurements: one where you think the line is at its best, and one on each side of it. Also watch how the red segments get shorter and longer.",
       "initial": {
         "aineisto": "1",
         "k": 0.3,
@@ -121,9 +121,9 @@
       ],
       "vary": "k",
       "names": {
-        "aineisto": "aineisto",
-        "k": "kulmakerroin k",
-        "b": "vakiotermi b"
+        "aineisto": "data set",
+        "k": "slope k",
+        "b": "constant term b"
       },
       "units": {
         "aineisto": "",
@@ -143,7 +143,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: find the constant term",
-      "intro": "Testaa ennuste 2. Aineisto on mittalasin ja nesteen yhteismassa. Kulmakerroin on lukittu arvoon $0{,}80\\,\\text{g/ml}$, ja suora lähtee origosta ($b = 0$). Muuta vain vakiotermiä $b$ ja kirjaa vähintään kolme mittausta, joiden joukossa on pienin löytämäsi poikkeama $d$.",
+      "intro": "Test prediction 2. The data set is the combined mass of a measuring cylinder and a liquid. The slope is locked at $0.80\\,\\text{g/ml}$ and the line starts from the origin ($b = 0$). Change only the constant term $b$ and record at least three measurements, one of which has the smallest deviation $d$ you can find.",
       "initial": {
         "aineisto": "2",
         "k": 0.8,
@@ -155,9 +155,9 @@
       ],
       "vary": "b",
       "names": {
-        "aineisto": "aineisto",
-        "k": "kulmakerroin k",
-        "b": "vakiotermi b"
+        "aineisto": "data set",
+        "k": "slope k",
+        "b": "constant term b"
       },
       "units": {
         "aineisto": "",
@@ -177,7 +177,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 3: coffee cools",
-      "intro": "Tässä aineistossa kahvikupin lämpötila on mitattu ajan funktiona. Vakiotermi on lukittu arvoon $80\\,{}^\\circ\\text{C}$. Muuta kulmakerrointa ja kirjaa vähintään kolme mittausta, joiden joukossa on pienin löytämäsi poikkeama $d$. Laita myös valintaruutu päälle ja katso, missä kohdissa pisteet ovat parhaan suoran ylä- ja alapuolella.",
+      "intro": "In this data set the temperature of a coffee cup has been measured as a function of time. The constant term is locked at $80\\,{}^\\circ\\text{C}$. Change the slope and record at least three measurements, one of which has the smallest deviation $d$ you can find. Also tick the checkbox and see where the points are above and below the best-fit line.",
       "initial": {
         "aineisto": "3",
         "k": -1,
@@ -189,9 +189,9 @@
       ],
       "vary": "k",
       "names": {
-        "aineisto": "aineisto",
-        "k": "kulmakerroin k",
-        "b": "vakiotermi b"
+        "aineisto": "data set",
+        "k": "slope k",
+        "b": "constant term b"
       },
       "units": {
         "aineisto": "",
@@ -341,7 +341,7 @@
       "title": "Apply to a new situation",
       "prompt": "The height $h$ of a plant was followed as a function of days $t$, and the line fitted to the data points passes through the points $(2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$. On which day from the start of the measurements is the plant 20 cm tall according to the line, when the line is extended beyond the measured range? Give the answer in days.",
       "answer": 20,
-      "unit": "vrk",
+      "unit": "d",
       "tolerance": 0.02,
       "hints": [
         "What is the slope of the line and what unit does it use? Calculate it from two points on the line.",

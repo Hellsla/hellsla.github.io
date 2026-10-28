@@ -140,7 +140,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain teho muuttuu",
-      "intro": "Testaa ennuste 1. Massa on lukittu 0,50 kg:aan; muuta vain tehoa. Kirjaa sulamisen ja kiehumisen kestot ainakin kahdella teholla, esimerkiksi 1000 W ja 2000 W. Kestot ovat mallin laskemia ($t = Q/P$) ja näkyvät heti. Paina kummallakin teholla myös *Lämmitä* ja katso, millä lämpötilalla kuvaajan pitkä vaakasuora osa on.",
+      "intro": "Testaa ennuste 1. Massa on lukittu 0,50 kg:aan. Muuta vain tehoa. Kirjaa sulamisen ja kiehumisen kestot ainakin kahdella teholla, esimerkiksi 1000 W ja 2000 W. Kestot ovat mallin laskemia ($t = Q/P$), ja ne näkyvät heti. Paina kummallakin teholla myös *Lämmitä*. Katso, millä lämpötilalla kuvaajan pitkä vaakasuora osa on.",
       "initial": {
         "m": 0.5,
         "P": 1000
@@ -174,7 +174,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain massa muuttuu",
-      "intro": "Testaa ennusteet 2 ja 3. Teho on lukittu 1000 W:iin; muuta vain massaa. Kirjaa kestot ainakin kahdella massalla, esimerkiksi 0,25 kg ja 0,50 kg, ja vertaa kiehumisen kestoa sulamisen kestoon. Lämmitä kerran ja katso, missä vaiheessa astiassa on yhtä aikaa kahta olomuotoa.",
+      "intro": "Testaa ennusteet 2 ja 3. Teho on lukittu 1000 W:iin. Muuta vain massaa. Kirjaa kestot ainakin kahdella massalla, esimerkiksi 0,25 kg ja 0,50 kg. Vertaa kiehumisen kestoa sulamisen kestoon. Lämmitä kerran ja katso, missä vaiheessa astiassa on yhtä aikaa kahta olomuotoa.",
       "initial": {
         "m": 0.25,
         "P": 1000

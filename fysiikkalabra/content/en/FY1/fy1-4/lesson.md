@@ -1,6 +1,6 @@
 # Graphing and fitting a straight line
 
-> **Why** can data points never land exactly on one straight line, and yet a single line drawn through them can reveal a law of nature?
+> **Why** do data points never land exactly on one straight line, and yet a single line drawn through them can reveal a law of nature?
 
 ## Key idea
 ### A graph brings the measurements together

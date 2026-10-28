@@ -175,7 +175,7 @@
         "solution": "**Annettu:** polttoaineteho $P_0 = 400\\,\\text{MW}$. Täyden kaukolämmön tilassa (taulukosta) sähköteho on $P_\\text{s} = 120\\,\\text{MW}$ ja kaukolämpöteho $P_\\text{k} = 232\\,\\text{MW}$\n\n**Kysytty:** hukkalämmön teho $P_\\text{h}$ megawatteina täyden kaukolämmön tilassa\n\n**Periaate:** Energia säilyy ja laitos toimii tasaisesti. Polttoaineteho jakautuu siis kokonaan sähköksi, kaukolämmöksi ja hukkalämmöksi. Sekä sähkö että kaukolämpö ovat hyödyksi saatua tehoa. Hukkaa on vain se, mitä jää jäljelle.\n\n**Kaava:** $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$, joten $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$\n\n**Muunnokset:** Kaikki tehot ovat megawatteina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW} = 48\\,\\text{MW}$\n\n**Vastaus:** $48\\,\\text{MW}$, kaksi merkitsevää numeroa. Tehot on annettu megawatin tarkkuudella. Vähennyslaskun tulos säilyttää saman tarkkuuden.\n\n**Järkevyys:** Tase täsmää: $120 + 232 + 48 = 400\\,\\text{MW}$. Kokonaishyötysuhde on $\\dfrac{120 + 232}{400} = 0{,}88$. Pelkässä sähköntuotannossa se on $\\dfrac{160}{400} = 0{,}40$ ja hukkalämpö $240\\,\\text{MW}$. Sähköä menetetään vain $40\\,\\text{MW}$, mutta hukkalämpö pienenee $192\\,\\text{MW}$. Kaukolämpö otetaan siis pääosin hukkalämmöstä."
       },
       "source": "simulated",
-      "source_note": "esimerkkilaitoksen luvut, eivät yhden laitoksen mittauksia"
+      "source_note": "esimerkkilaitoksen luvut, eivät yhden oikean laitoksen mittauksia"
     },
     {
       "id": "kaukolampo-tarve",

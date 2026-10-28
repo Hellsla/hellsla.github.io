@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: aineen portaat",
-      "intro": "Testaa ennuste 1. Alkutilassa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan vetyatomi, protoni ja kvarkki ja kirjaa rivi jokaisesta. Taulukon $n$ kertoo lähimmän kohteen suuruusluokan: kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
+      "intro": "Testaa ennuste 1. Alussa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* yksi kerrallaan vetyatomi, protoni ja kvarkki. Kirjaa rivi jokaisesta. Taulukon luku $n$ kertoo lähimmän kohteen suuruusluokan. Kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
       "initial": {
         "L": -9
       },
@@ -170,7 +170,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: Maan osoite",
-      "intro": "Testaa ennuste 2. Alkutilassa kooltaan lähin kohde on Maa. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan Aurinko, Neptunuksen radan säde ja Linnunrata ja kirjaa rivi jokaisesta. Halutessasi jatka havaittavaan maailmankaikkeuteen asti.",
+      "intro": "Testaa ennuste 2. Alussa kooltaan lähin kohde on Maa. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* yksi kerrallaan Aurinko, Neptunuksen radan säde ja Linnunrata. Kirjaa rivi jokaisesta. Voit jatkaa havaittavaan maailmankaikkeuteen asti.",
       "initial": {
         "L": 7.7
       },
@@ -215,7 +215,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Valinnainen koe: missä on kokojen puoliväli?",
-      "intro": "Alkutilassa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
+      "intro": "Alussa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske kysymyksessä näiden kahden koon puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä. Kirjaa kolmas rivi. Simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
       "initial": {
         "L": 27.5
       },
@@ -439,7 +439,7 @@
           "feedback": "Tämä on yhden asteen pituus Maan pinnalla, $\\dfrac{800\\,\\text{km}}{7{,}2}$. Koko ympärysmitassa on 360 astetta. Halkaisija saadaan vasta ympärysmitasta."
         }
       ],
-      "solution": "**Annettu:** mittaajien välimatka $s = 8{,}0\\cdot10^{2}\\,\\text{km}$ ja kaarikulma $\\alpha = 7{,}2^\\circ$; Maa on pallo\n\n**Kysytty:** Maan halkaisija $d$ kilometreinä\n\n**Periaate:** Mittaajien väli on yhtä suuri osa ympärysmitasta kuin kulma $7{,}2^\\circ$ on koko kierroksesta $360^\\circ$. Ympärysmitasta halkaisija saadaan, koska ympyrän ympärysmitta on $\\pi$ kertaa halkaisija.\n\n**Kaava:** $\\dfrac{s}{C} = \\dfrac{\\alpha}{360^\\circ}$, joten $C = \\dfrac{360^\\circ}{\\alpha}\\,s$, ja $C = \\pi d$, joten $d = \\dfrac{C}{\\pi} = \\dfrac{360^\\circ\\,s}{\\pi\\,\\alpha}$\n\n**Muunnokset:** Ei tarvita. välimatka on jo kilometreinä ja kulmat samassa yksikössä (asteina), joten kulmayksiköt supistuvat pois.\n\n**Sijoitus:** $d = \\dfrac{360^\\circ\\cdot8{,}0\\cdot10^{2}\\,\\text{km}}{\\pi\\cdot7{,}2^\\circ} = \\dfrac{4{,}0\\cdot10^{4}\\,\\text{km}}{\\pi} = 1{,}27\\cdot10^{4}\\,\\text{km}$\n\n**Vastaus:** $1{,}3\\cdot10^{4}\\,\\text{km}$ eli noin $13\\,000\\,\\text{km}$, kaksi merkitsevää numeroa kuten annetuissa mitoissa (kenttään sopii $12\\,700$).\n\n**Järkevyys:** Tunnettu Maan halkaisija on $1{,}27\\cdot10^{7}\\,\\text{m} = 1{,}27\\cdot10^{4}\\,\\text{km}$, ja tulos täsmää. Ympärysmitta $4{,}0\\cdot10^{4}\\,\\text{km}$ on suuruusluokkaa $10^{4}\\,\\text{km}$, mikä vastaa maapallon kokoa.",
+      "solution": "**Annettu:** mittaajien välimatka $s = 8{,}0\\cdot10^{2}\\,\\text{km}$ ja kaarikulma $\\alpha = 7{,}2^\\circ$; Maa on pallo\n\n**Kysytty:** Maan halkaisija $d$ kilometreinä\n\n**Periaate:** Mittaajien väli on yhtä suuri osa ympärysmitasta kuin kulma $7{,}2^\\circ$ on koko kierroksesta $360^\\circ$. Ympärysmitasta halkaisija saadaan, koska ympyrän ympärysmitta on $\\pi$ kertaa halkaisija.\n\n**Kaava:** $\\dfrac{s}{C} = \\dfrac{\\alpha}{360^\\circ}$, joten $C = \\dfrac{360^\\circ}{\\alpha}\\,s$, ja $C = \\pi d$, joten $d = \\dfrac{C}{\\pi} = \\dfrac{360^\\circ\\,s}{\\pi\\,\\alpha}$\n\n**Muunnokset:** Ei tarvita. Välimatka on jo kilometreinä ja kulmat samassa yksikössä (asteina), joten kulmayksiköt supistuvat pois.\n\n**Sijoitus:** $d = \\dfrac{360^\\circ\\cdot8{,}0\\cdot10^{2}\\,\\text{km}}{\\pi\\cdot7{,}2^\\circ} = \\dfrac{4{,}0\\cdot10^{4}\\,\\text{km}}{\\pi} = 1{,}27\\cdot10^{4}\\,\\text{km}$\n\n**Vastaus:** $1{,}3\\cdot10^{4}\\,\\text{km}$ eli noin $13\\,000\\,\\text{km}$, kaksi merkitsevää numeroa kuten annetuissa mitoissa (kenttään sopii $12\\,700$).\n\n**Järkevyys:** Tunnettu Maan halkaisija on $1{,}27\\cdot10^{7}\\,\\text{m} = 1{,}27\\cdot10^{4}\\,\\text{km}$, ja tulos täsmää. Ympärysmitta $4{,}0\\cdot10^{4}\\,\\text{km}$ on suuruusluokkaa $10^{4}\\,\\text{km}$, mikä vastaa maapallon kokoa.",
       "optional": true
     },
     {

@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The wall socket in your yard gives $230\\,\\text{V}$, but in the wires of the power lines across the field the voltage is hundreds of kilovolts. In winter steam rises from a district heating manhole at the edge of the street: hot water runs underground for kilometres.",
+      "text": "The wall socket at home gives $230\\,\\text{V}$, but in the wires of the power lines across the field the voltage is hundreds of kilovolts. In winter steam rises from a district heating manhole at the edge of the street: hot water runs underground for kilometres.",
       "question": "Why is energy transferred like this, and how much of it is wasted on the way?"
     },
     {
@@ -107,7 +107,7 @@
       "type": "interpret",
       "title": "District heating: how much is left on the way?",
       "source": "statistics",
-      "source_note": "Energiateollisuus, Kaukolämpötilasto 2024 (luvut pyöristetty)",
+      "source_note": "Finnish Energy, District heating statistics 2024 (figures rounded)",
       "text": "In 2024 heat was supplied to the district heating networks of Finland, and customers used part of it. The difference is mostly the loss of the network, so the result is an estimate.\n\n| | Energy (TWh) |\n|---|---|\n| Heat supplied to the network | $36.0$ |\n| Heat used by customers | $32.7$ |\n\nFirst calculate the loss in terawatt-hours and then its share of the heat supplied to the network.",
       "question": {
         "type": "numeric",
@@ -139,7 +139,7 @@
       "type": "interpret",
       "title": "Electricity grid and district heating side by side",
       "source": "statistics",
-      "source_note": "Energiateollisuus, Sähkövuosi 2024 ja Kaukolämpötilasto 2024 (luvut pyöristetty)",
+      "source_note": "Finnish Energy, Electricity year 2024 and District heating statistics 2024 (figures rounded)",
       "text": "The table shows the loss of the electricity grid and of the district heating network in 2024. The loss of the electricity grid is about $4\\,\\%$ of electricity consumption, which is used here as the energy sent into the grid; the figure for district heating is from the previous data. The figures for electricity are rounded.\n\n| | Sent (TWh) | Loss (TWh) | Share (%) |\n|---|---|---|---|\n| Electricity grid | $83$ | $3$ | $4$ |\n| District heating network | $36.0$ | $3.3$ | $9.2$ |\n\nCompare the loss as energy and as a share of the sent energy.",
       "question": {
         "type": "choice",
@@ -296,7 +296,7 @@
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Practise at three levels. Level 1 exercises use the formulas directly, level 2 exercises solve the sent energy or convert units, and level 3 requires reasoning."
+      "text": "Practise at three levels. Level 1 exercises use the formulas directly, level 2 exercises solve for the sent energy or convert units, and level 3 requires reasoning."
     },
     {
       "id": "tarkistus-1",

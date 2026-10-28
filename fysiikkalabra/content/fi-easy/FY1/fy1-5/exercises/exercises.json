@@ -27,7 +27,7 @@
     {
       "id": "fy1-5-L1-04",
       "level": 1,
-      "text": "Kappale liikkuu tasaisesti lähtöpisteestään ja kulkee ajassa 4,0 s matkan 18 m. Kuinka pitkän matkan se kulkee ajassa 10 s?",
+      "text": "Kappale lähtee lähtöpisteestään ja liikkuu tasaisesti. Se kulkee ajassa 4,0 s matkan 18 m. Kuinka pitkän matkan se kulkee ajassa 10 s?",
       "answer": 45,
       "unit": "m",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy1-5-L1-05",
       "level": 1,
-      "text": "Tasaisesti liikkuvan kärryn paikka lähtöpisteestä mitattuna on hetkellä 2,0 s kohdassa 7,0 m ja hetkellä 6,0 s kohdassa 21 m. Laske kärryn nopeus paikan muutoksen ja aikavälin avulla.",
+      "text": "Kärry liikkuu tasaisesti. Sen paikka mitataan lähtöpisteestä. Hetkellä 2,0 s kärry on kohdassa 7,0 m ja hetkellä 6,0 s kohdassa 21 m. Laske kärryn nopeus. Käytä paikan muutosta ja aikaväliä.",
       "answer": 3.5,
       "unit": "m/s",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy1-5-L2-03",
       "level": 2,
-      "text": "Retkeilijä on kohdassa, joka on 1,5 km:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin tasaisesti nopeudella 1,5 m/s. Kuinka kaukana mökistä hän on 10 minuutin kuluttua? Vastaa kilometreinä.",
+      "text": "Retkeilijä on 1,5 km:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin. Hänen nopeutensa on tasainen 1,5 m/s. Kuinka kaukana mökistä hän on 10 minuutin kuluttua? Vastaa kilometreinä.",
       "answer": 2.4,
       "unit": "km",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy1-5-L2-04",
       "level": 2,
-      "text": "Salaman jälkeen ukkosen jyrähdys kuuluu 5,0 s kuluttua. Ääni etenee ilmassa tasaisesti nopeudella 343 m/s, ja valon kulkuaika on niin pieni, että se jätetään huomiotta. Kuinka kaukana salama iski? Vastaa kilometreinä.",
+      "text": "Salama välähtää. Ukkosen jyrähdys kuuluu 5,0 s myöhemmin. Ääni etenee ilmassa tasaisesti nopeudella 343 m/s. Valon kulkuaika on hyvin pieni, joten se jätetään huomiotta. Kuinka kaukana salama iski? Vastaa kilometreinä.",
       "answer": 1.7,
       "unit": "km",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy1-5-L3-03",
       "level": 3,
-      "text": "Koulun ovelta lähtee kaksi ystävää samaa suoraa katua pitkin samaan suuntaan. Ensimmäinen kävelee tasaisesti nopeudella 1,5 m/s. Toinen lähtee ovelta 40 s myöhemmin pyörällä ja ajaa tasaisesti nopeudella 4,5 m/s. Kuinka kaukana ovelta pyöräilijä saavuttaa kävelijän?",
+      "text": "Kaksi ystävää lähtee koulun ovelta samaa suoraa katua pitkin samaan suuntaan. Ensimmäinen kävelee tasaisesti nopeudella 1,5 m/s. Toinen lähtee ovelta 40 s myöhemmin pyörällä. Hän ajaa tasaisesti nopeudella 4,5 m/s. Kuinka kaukana ovelta pyöräilijä saavuttaa kävelijän?",
       "answer": 90,
       "unit": "m",
       "tolerance": 0.02

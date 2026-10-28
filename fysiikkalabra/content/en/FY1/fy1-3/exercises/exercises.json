@@ -71,7 +71,7 @@
       "level": 2,
       "text": "The same length is measured five times with two instruments. Instrument A gives the results 5.2 cm, 5.6 cm, 5.4 cm, 5.3 cm and 5.5 cm. Instrument B gives the results 5.40 cm, 5.43 cm, 5.41 cm, 5.42 cm and 5.44 cm. How many times larger is half of the range of the results of instrument A than that of instrument B?",
       "answer": 10,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     }
   ],
@@ -87,7 +87,7 @@
     {
       "id": "fy1-3-L3-02",
       "level": 3,
-      "text": "There are 250 similar sheets in a stack of paper. The thickness of the stack is measured with a ruler whose smallest scale division is 1.0 mm, and the error estimate of the reading is half of a scale division. What is the error estimate of the thickness of one sheet, when all sheets are equally thick? Give the answer in micrometres, when one micrometre is a thousandth of a millimetre.",
+      "text": "There are 250 similar sheets in a stack of paper. The thickness of the stack is measured with a ruler whose smallest scale division is 1.0 mm, and the error estimate of the reading is half of a scale division. What is the error estimate of the thickness of one sheet, when all sheets are equally thick? Give the answer in micrometres, where one micrometre is a thousandth of a millimetre.",
       "answer": 2.0,
       "unit": "µm",
       "tolerance": 0.02

@@ -109,7 +109,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: etsi kulmakerroin",
-      "intro": "Testaa ennuste 1. Aineisto on kärryn mittaus ja suora kulkee origon kautta ($b = 0$). Muuta vain kulmakerrointa $k$ ja kirjaa vähintään kolme mittausta: yksi, jossa suora on mielestäsi parhaimmillaan, sekä sen molemmin puolin. Katso samalla, kuinka punaiset janat lyhenevät ja pitenevät.",
+      "intro": "Testaa ennuste 1. Aineisto on kärryn mittaus. Suora kulkee origon kautta ($b = 0$). Muuta vain kulmakerrointa $k$. Kirjaa vähintään kolme mittausta: yksi, jossa suora on mielestäsi parhaimmillaan, ja yksi sen kummallakin puolella. Katso samalla, miten punaiset janat lyhenevät ja pitenevät.",
       "initial": {
         "aineisto": "1",
         "k": 0.3,
@@ -143,7 +143,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: etsi vakiotermi",
-      "intro": "Testaa ennuste 2. Aineisto on mittalasin ja nesteen yhteismassa. Kulmakerroin on lukittu arvoon $0{,}80\\,\\text{g/ml}$, ja suora lähtee origosta ($b = 0$). Muuta vain vakiotermiä $b$ ja kirjaa vähintään kolme mittausta, joiden joukossa on pienin löytämäsi poikkeama $d$.",
+      "intro": "Testaa ennuste 2. Aineisto on mittalasin ja nesteen yhteismassa. Kulmakerroin on lukittu arvoon $0{,}80\\,\\text{g/ml}$. Suora lähtee origosta ($b = 0$). Muuta vain vakiotermiä $b$. Kirjaa vähintään kolme mittausta. Yhdessä niistä pitää olla pienin löytämäsi poikkeama $d$.",
       "initial": {
         "aineisto": "2",
         "k": 0.8,
@@ -177,7 +177,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 3: kahvi jäähtyy",
-      "intro": "Tässä aineistossa kahvikupin lämpötila on mitattu ajan funktiona. Vakiotermi on lukittu arvoon $80\\,{}^\\circ\\text{C}$. Muuta kulmakerrointa ja kirjaa vähintään kolme mittausta, joiden joukossa on pienin löytämäsi poikkeama $d$. Laita myös valintaruutu päälle ja katso, missä kohdissa pisteet ovat parhaan suoran ylä- ja alapuolella.",
+      "intro": "Tässä aineistossa kahvikupin lämpötila on mitattu ajan funktiona. Vakiotermi on lukittu arvoon $80\\,{}^\\circ\\text{C}$. Muuta kulmakerrointa. Kirjaa vähintään kolme mittausta. Yhdessä niistä pitää olla pienin löytämäsi poikkeama $d$. Laita myös valintaruutu päälle. Katso, missä kohdissa pisteet ovat parhaan suoran ylä- ja alapuolella.",
       "initial": {
         "aineisto": "3",
         "k": -1,
@@ -331,7 +331,7 @@
             "feedback": "Jaoit aikaeron matkaerolla ($\\Delta t : \\Delta s$). Kulmakerroin on pystysuuntainen muutos jaettuna vaakasuuntaisella muutoksella, eli $\\Delta s : \\Delta t$. Sen yksikkö on km/h."
           }
         ],
-        "solution": "**Annettu:** kuvaajan suora, jolla ovat merkityt pisteet $P_1$ ja $P_2$; akseleilla matka $s$ (km) ja aika $t$ (h)\n\n**Kysytty:** suoran kulmakerroin $k$ eli pyöräilijän nopeus yksikössä km/h\n\n**Periaate:** Matka-aikakuvaajan suoran kulmakerroin on nopeus, ja se on $\\Delta s : \\Delta t$ millä tahansa kahdella suoran pisteellä. Luetaan sovitetulta suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Silloin lukemavirhe vaikuttaa tulokseen vähän.\n\n**Kuvaajan lukeminen:** Piste $P_1$ on ruudukon risteyksessä, jossa $t_1 = 1{,}0\\,\\text{h}$ ja $s_1 = 20\\,\\text{km}$ (vaaka-akselin luku suoraan alapuolella, pystyakselin luku suoraan vasemmalla). Piste $P_2$ on risteyksessä $t_2 = 3{,}0\\,\\text{h}$ ja $s_2 = 50\\,\\text{km}$. Kulmakerroin lasketaan näistä lukemista.\n\n**Kaava:** $k = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Ei tarvita. Matkat ovat kilometreinä ja ajat tunteina. Tulos kysytään yksikössä km/h.\n\n**Sijoitus:** $k = \\dfrac{50\\,\\text{km} - 20\\,\\text{km}}{3{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = \\dfrac{30\\,\\text{km}}{2{,}0\\,\\text{h}} = 15\\,\\tfrac{\\text{km}}{\\text{h}}$\n\n**Vastaus:** $15\\,\\text{km/h}$, kaksi merkitsevää numeroa. Syy on se, että ajat on luettu kahden numeron tarkkuudella ($1{,}0\\,\\text{h}$ ja $3{,}0\\,\\text{h}$).\n\n**Järkevyys:** Tarkistus kolmannella pisteellä: kun $t = 2{,}0\\,\\text{h}$, suora on kuvaajassa noin $35\\,\\text{km}$, ja $15\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 2{,}0\\,\\text{h} + 5\\,\\text{km} = 35\\,\\text{km}$. Nopeus $15\\,\\text{km/h}$ on tavallisen pyöräilyn luokkaa."
+        "solution": "**Annettu:** kuvaajan suora, jolla ovat merkityt pisteet $P_1$ ja $P_2$; akseleilla matka $s$ (km) ja aika $t$ (h)\n\n**Kysytty:** suoran kulmakerroin $k$ eli pyöräilijän nopeus yksikössä km/h\n\n**Periaate:** Matka-aikakuvaajan suoran kulmakerroin on nopeus, ja se on $\\Delta s : \\Delta t$ millä tahansa kahdella suoran pisteellä. Luetaan sovitetulta suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Silloin lukemavirhe vaikuttaa tulokseen vähän.\n\n**Kuvaajan lukeminen:** Piste $P_1$ on ruudukon risteyksessä, jossa $t_1 = 1{,}0\\,\\text{h}$ ja $s_1 = 20\\,\\text{km}$ Vaaka-akselin luku on suoraan pisteen alapuolella. Pystyakselin luku on suoraan pisteen vasemmalla puolella. Piste $P_2$ on risteyksessä $t_2 = 3{,}0\\,\\text{h}$ ja $s_2 = 50\\,\\text{km}$. Kulmakerroin lasketaan näistä lukemista.\n\n**Kaava:** $k = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Ei tarvita. Matkat ovat kilometreinä ja ajat tunteina. Tulos kysytään yksikössä km/h.\n\n**Sijoitus:** $k = \\dfrac{50\\,\\text{km} - 20\\,\\text{km}}{3{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = \\dfrac{30\\,\\text{km}}{2{,}0\\,\\text{h}} = 15\\,\\tfrac{\\text{km}}{\\text{h}}$\n\n**Vastaus:** $15\\,\\text{km/h}$, kaksi merkitsevää numeroa. Syy on se, että ajat on luettu kahden numeron tarkkuudella ($1{,}0\\,\\text{h}$ ja $3{,}0\\,\\text{h}$).\n\n**Järkevyys:** Tarkistus kolmannella pisteellä: kun $t = 2{,}0\\,\\text{h}$, suora on kuvaajassa noin $35\\,\\text{km}$, ja $15\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 2{,}0\\,\\text{h} + 5\\,\\text{km} = 35\\,\\text{km}$. Nopeus $15\\,\\text{km/h}$ on tavallisen pyöräilyn luokkaa."
       }
     },
     {

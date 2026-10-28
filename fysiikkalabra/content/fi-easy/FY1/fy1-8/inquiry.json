@@ -16,7 +16,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "Kaksi ryhmää mittaa saman leluauton nopeuden käsikellolla. Ryhmä A ajaa auton yhden kerran $0{,}50\\,\\text{m}$:n matkan. Ryhmä A saa ajaksi $1{,}0\\,\\text{s}$ ja laskee nopeudeksi $0{,}50\\,\\text{m/s}$. Ryhmä B ajaa viisi eri matkaa, kolme kertaa kutakin. Matkalla $2{,}00\\,\\text{m}$ keskiaika on $4{,}73\\,\\text{s}$, ja ryhmä B laskee nopeudeksi $0{,}42\\,\\text{m/s}$. Auto ja paristot ovat samat.",
-      "question": "Miksi tulokset eroavat, ja miten tutkimus pitäisi suunnitella, jotta sen tulokseen voi luottaa?"
+      "question": "Miksi tulokset eroavat? Miten tutkimus pitäisi suunnitella, jotta sen tulokseen voi luottaa?"
     },
     {
       "id": "kertaus",
@@ -79,7 +79,7 @@
       "type": "interpret",
       "title": "Ryhmän B mittauspöytäkirja",
       "source": "simulated",
-      "text": "Ryhmä B ajoi autoa viidellä matkalla ja mittasi kullakin kolme aikaa käsikellolla. Taulukossa on aikojen keskiarvo $\\bar{t}$, puolet vaihteluvälistä $\\Delta t$, suhteellinen epävarmuus $\\varepsilon = \\Delta t : \\bar{t}$ ja nopeus $v = s : \\bar{t}$.\n\n| $s\\ (\\text{m})$ | $t_1\\ (\\text{s})$ | $t_2\\ (\\text{s})$ | $t_3\\ (\\text{s})$ | $\\bar{t}\\ (\\text{s})$ | $\\Delta t\\ (\\text{s})$ | $\\varepsilon$ | $v\\ (\\text{m/s})$ |\n|---|---|---|---|---|---|---|---|\n| 0,50 | 1,3 | 1,1 | 1,4 | 1,27 | 0,15 | 12 % | 0,39 |\n| 1,00 | 2,5 | 2,3 | 2,6 | 2,47 | 0,15 | 6,1 % | 0,41 |\n| 1,50 | 3,7 | 3,5 | 3,6 | 3,60 | 0,10 | 2,8 % | 0,42 |\n| 2,00 | 4,9 | 4,6 | 4,7 | 4,73 | 0,15 | 3,2 % | 0,42 |\n| 2,50 | 5,8 | 6,1 | 5,9 | 5,93 | 0,15 | 2,5 % | 0,42 |\n",
+      "text": "Ryhmä B ajoi autoa viidellä matkalla. Jokaisella matkalla ryhmä mittasi kolme aikaa käsikellolla. Taulukossa on aikojen keskiarvo $\\bar{t}$, puolet vaihteluvälistä $\\Delta t$, suhteellinen epävarmuus $\\varepsilon = \\Delta t : \\bar{t}$ ja nopeus $v = s : \\bar{t}$.\n\n| $s\\ (\\text{m})$ | $t_1\\ (\\text{s})$ | $t_2\\ (\\text{s})$ | $t_3\\ (\\text{s})$ | $\\bar{t}\\ (\\text{s})$ | $\\Delta t\\ (\\text{s})$ | $\\varepsilon$ | $v\\ (\\text{m/s})$ |\n|---|---|---|---|---|---|---|---|\n| 0,50 | 1,3 | 1,1 | 1,4 | 1,27 | 0,15 | 12 % | 0,39 |\n| 1,00 | 2,5 | 2,3 | 2,6 | 2,47 | 0,15 | 6,1 % | 0,41 |\n| 1,50 | 3,7 | 3,5 | 3,6 | 3,60 | 0,10 | 2,8 % | 0,42 |\n| 2,00 | 4,9 | 4,6 | 4,7 | 4,73 | 0,15 | 3,2 % | 0,42 |\n| 2,50 | 5,8 | 6,1 | 5,9 | 5,93 | 0,15 | 2,5 % | 0,42 |\n",
       "question": {
         "id": "poytakirja-kysymys",
         "type": "choice",
@@ -92,7 +92,7 @@
           {
             "text": "Nopeus on kaikilla matkoilla sama epävarmuuden rajoissa, noin $0{,}42\\,\\text{m/s}$. Epävarmuus on suurin lyhimmällä matkalla.",
             "correct": true,
-            "feedback": "Oikein. Lyhimmän matkan arvo $0{,}39 \\pm 0{,}05\\,\\text{m/s}$ sisältää arvon $0{,}42\\,\\text{m/s}$, ja pidemmillä matkoilla suhteellinen epävarmuus on noin $6\\,\\%$ tai alle. Pisteet noudattavat tasaisen liikkeen mallia $s = vt$."
+            "feedback": "Oikein. Lyhimmän matkan arvo $0{,}39 \\pm 0{,}05\\,\\text{m/s}$ sisältää arvon $0{,}42\\,\\text{m/s}$. Pidemmillä matkoilla suhteellinen epävarmuus on noin $6\\,\\%$ tai alle. Pisteet noudattavat tasaisen liikkeen mallia $s = vt$."
           },
           {
             "text": "Nopeudesta ei voi sanoa mitään, koska saman matkan kolme aikaa eroavat toisistaan.",
@@ -130,7 +130,7 @@
             "feedback": "Luit pelkän matkan. Nopeus on matkan ja ajan suhde, joten matka $2{,}1\\,\\text{m}$ pitää jakaa ajalla $5{,}0\\,\\text{s}$."
           }
         ],
-        "solution": "**Annettu:** suoran piste $(t, s) = (5{,}0\\,\\text{s};\\ 2{,}1\\,\\text{m})$, ja suora kulkee origon $(0, 0)$ kautta\n\n**Kysytty:** auton nopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Auton liike on tasaista, joten matka on suoraan verrannollinen aikaan, $s = vt$, ja $(t, s)$-kuvaajan suora kulkee origon kautta. Suoran kulmakerroin on nopeus.\n\n**Kuvaajan lukeminen:** Luetaan suoralta piste, jonka koordinaatit tunnetaan tarkasti: kun $t = 5{,}0\\,\\text{s}$, suora on korkeudella $s = 2{,}1\\,\\text{m}$. Toinen piste on origo. Kulmakerroin lasketaan näiden pisteiden välillä.\n\n**Kaava:** $v = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v = \\dfrac{2{,}1\\,\\text{m} - 0\\,\\text{m}}{5{,}0\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{2{,}1\\,\\text{m}}{5{,}0\\,\\text{s}} = 0{,}42\\,\\text{m/s}$\n\n**Vastaus:** $0{,}42\\,\\text{m/s}$, kaksi merkitsevää numeroa, koska kuvaajalta luettu matka $2{,}1\\,\\text{m}$ on luettavissa kahden numeron tarkkuudella.\n\n**Järkevyys:** Tulos täsmää taulukon nopeuksiin $0{,}42\\,\\text{m/s}$ pidemmillä matkoilla. Kuvaajan viimeinen piste antaa $2{,}50\\,\\text{m} : 5{,}93\\,\\text{s} = 0{,}42\\,\\text{m/s}$, joten suora kuvaa pisteitä hyvin."
+        "solution": "**Annettu:** suoran piste $(t, s) = (5{,}0\\,\\text{s};\\ 2{,}1\\,\\text{m})$, ja suora kulkee origon $(0, 0)$ kautta\n\n**Kysytty:** auton nopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Auton liike on tasaista. Siksi matka on suoraan verrannollinen aikaan, $s = vt$. Silloin $(t, s)$-kuvaajan suora kulkee origon kautta. Suoran kulmakerroin on nopeus.\n\n**Kuvaajan lukeminen:** Luetaan suoralta piste, jonka koordinaatit tunnetaan tarkasti. Kun $t = 5{,}0\\,\\text{s}$, suora on korkeudella $s = 2{,}1\\,\\text{m}$. Toinen piste on origo. Kulmakerroin lasketaan näiden pisteiden välillä.\n\n**Kaava:** $v = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v = \\dfrac{2{,}1\\,\\text{m} - 0\\,\\text{m}}{5{,}0\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{2{,}1\\,\\text{m}}{5{,}0\\,\\text{s}} = 0{,}42\\,\\text{m/s}$\n\n**Vastaus:** $0{,}42\\,\\text{m/s}$, kaksi merkitsevää numeroa. Syy: kuvaajalta luettu matka $2{,}1\\,\\text{m}$ voidaan lukea kahden numeron tarkkuudella.\n\n**Järkevyys:** Tulos täsmää taulukon nopeuksiin $0{,}42\\,\\text{m/s}$ pidemmillä matkoilla. Kuvaajan viimeinen piste antaa $2{,}50\\,\\text{m} : 5{,}93\\,\\text{s} = 0{,}42\\,\\text{m/s}$. Suora kuvaa siis pisteitä hyvin."
       }
     },
     {
@@ -138,7 +138,7 @@
       "stage": "tutki",
       "type": "choice",
       "title": "Reilu koe?",
-      "prompt": "Ryhmä C tutkii, miten paristojen määrä vaikuttaa leluauton nopeuteen. Se ajaa ensin uuden auton kahdella paristolla lattialla ja sitten vanhan auton neljällä paristolla matolla. Nopeus on toisella kerralla pienempi. Mikä on suunnitelman olennaisin puute?",
+      "prompt": "Ryhmä C tutkii, miten paristojen määrä vaikuttaa leluauton nopeuteen. Ensin ryhmä ajaa uudella autolla, jossa on kaksi paristoa. Auto ajaa lattialla. Sitten ryhmä ajaa vanhalla autolla, jossa on neljä paristoa. Tämä auto ajaa matolla. Nopeus on toisella kerralla pienempi. Mikä on suunnitelman olennaisin puute?",
       "choices": [
         {
           "text": "Useampi asia muuttuu yhtä aikaa: paristot, auto ja alusta. Nopeuden muutoksen syytä ei voi päätellä.",
@@ -151,7 +151,7 @@
         },
         {
           "text": "Mittauksia on vain kaksi, joten tuloksia ei voi verrata.",
-          "feedback": "Kaksi pistettä on todella vähän, ja useampi arvo ja toistot olisivat parempia. Silti kahden pisteen vertailukin olisi järkevä, jos muut muuttujat olisivat samat. Olennainen puute on, että vertailu ei ole reilu."
+          "feedback": "Kaksi pistettä on todella vähän. Useampi arvo ja toistot olisivat parempia. Silti kahden pisteen vertailukin olisi järkevä, jos muut muuttujat olisivat samat. Olennainen puute on, että vertailu ei ole reilu."
         }
       ]
     },
@@ -170,7 +170,7 @@
       "type": "reflect",
       "optional": true,
       "title": "Palaa ennusteeseesi",
-      "prompt": "Vertaa ennustettasi ryhmän B pöytäkirjaan ja suhteellisen epävarmuuden kaavaan. Palaa sitten alun kysymykseen: miksi ryhmän A ja ryhmän B tulokset eroavat, ja miten tutkimus pitäisi suunnitella, jotta tulokseen voi luottaa?",
+      "prompt": "Vertaa ennustettasi ryhmän B pöytäkirjaan ja suhteellisen epävarmuuden kaavaan. Palaa sitten alun kysymykseen. Miksi ryhmän A ja ryhmän B tulokset eroavat? Miten tutkimus pitäisi suunnitella, jotta tulokseen voi luottaa?",
       "predictions": [
         "ennuste-1"
       ]
@@ -218,7 +218,7 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä ajan pituus tekee suhteellisesta epävarmuudesta $3{,}0\\,\\%$, kun epävarmuus on $0{,}3\\,\\text{s}$?",
-        "Lyhin aika on $t_\\text{min} = \\dfrac{\\Delta t}{\\varepsilon_\\text{max}}$, ja prosentti pitää sijoittaa desimaalilukuna. Matka saadaan mallista $s = vt$.",
+        "Lyhin aika on $t_\\text{min} = \\dfrac{\\Delta t}{\\varepsilon_\\text{max}}$. Prosentti pitää sijoittaa desimaalilukuna. Matka saadaan mallista $s = vt$.",
         "$t_\\text{min} = \\dfrac{0{,}3\\,\\text{s}}{0{,}030} = 10\\,\\text{s}$, ja $s = 1{,}4\\,\\text{m/s} \\cdot 10\\,\\text{s}$."
       ],
       "mistakes": [
@@ -238,12 +238,12 @@
       "stage": "sovella",
       "type": "explain",
       "title": "Suunnittele oma tutkimus",
-      "prompt": "Valitse jokin ilmiö, jota voit tutkia koulussa tai kotona ja jossa suureet ovat mitattavissa: esimerkiksi kävelyn tai pallon vierimisen nopeus, veden jäähtyminen kupissa tai kumilenkin venyminen. Kirjoita suunnitelma: tutkimuskysymys, hypoteesi, muutettava, mitattava ja vakioitavat muuttujat, mittausalue ja toistot sekä se, miten teet pöytäkirjan.",
+      "prompt": "Valitse jokin ilmiö, jota voit tutkia koulussa tai kotona. Ilmiön suureiden pitää olla mitattavissa. Esimerkkejä ovat kävelyn tai pallon vierimisen nopeus, veden jäähtyminen kupissa tai kumilenkin venyminen. Kirjoita suunnitelma. Siinä on nämä osat: tutkimuskysymys, hypoteesi, muutettava, mitattava ja vakioitavat muuttujat, mittausalue ja toistot sekä se, miten teet pöytäkirjan.",
       "model": "Tutkimuskysymys: miten pallon vierimiseen kuluva aika riippuu matkasta tasaisella lattialla? Pallo päästetään aina samasta kohdasta lyhyen lähtörampin yli. Aika alkaa, kun pallo ohittaa lattialle merkityn alkuviivan. Silloin vauhti on jo tasaantunut. Hypoteesi: jos pallon nopeus lattialla on likimain vakio, kulkuaika on suoraan verrannollinen matkaan, $s = vt$. Jos aika kasvaa matkaa nopeammin, hypoteesi on väärä. Muutettava muuttuja on matka alkuviivasta (esimerkiksi $1{,}6$–$3{,}2\\,\\text{m}$ viidellä tasavälisellä arvolla). Mitattava muuttuja on aika käsikellolla. Vakioidaan pallo, rampin korkeus ja lähtökohta, alusta sekä lähtötapa (pallo päästetään irti ilman työntöä). Esikokeessa pallon nopeus on noin $0{,}4\\,\\text{m/s}$. Oikea pallo hidastuu vierimisen aikana hieman vierimisvastuksen takia. Koe testaa siis myös sen, onko nopeus riittävän vakio. Käsikellon epävarmuus on noin $0{,}2\\,\\text{s}$. Lyhimmällä matkalla aikaa pitää siis olla vähintään $4\\,\\text{s}$, jotta suhteellinen epävarmuus pysyy enintään $5\\,\\%$. Matka $1{,}6\\,\\text{m}$ antaa ajan $4\\,\\text{s}$. Teen jokaisesta matkasta kolme toistoa. Kirjaan pöytäkirjaan jokaisen lukeman yksiköineen sekä havainnot, kuten ”pallo osui seinään”. Esikoe kertoo, onko matka riittävä.",
       "criteria": [
         "Kysymys on mitattavissa, ja hypoteesista seuraa ennuste, joka voi osoittautua vääräksi.",
         "Nimesin muutettavan, mitattavan ja vähintään kaksi vakioitavaa muuttujaa.",
-        "Valitsin mittausalueen ja usean arvon tasavälein sekä toistot, ja perustelin ne epävarmuudella.",
+        "Valitsin mittausalueen, useita arvoja tasavälein ja toistot. Perustelin ne epävarmuudella.",
         "Kuvasin, mitä pöytäkirjaan kirjataan: lukemat, yksiköt, välineet ja havainnot."
       ]
     },
@@ -273,7 +273,7 @@
         {
           "text": "Jos auton akselit öljytään, auto kulkee saman matkan lyhyemmässä ajassa kuin ennen öljyämistä.",
           "correct": true,
-          "feedback": "Oikein. Hypoteesi ennustaa mitattavan eron (aika lyhenee), ja mittaus voi osoittaa sen vääräksi. Reilussa kokeessa auto, matka ja alusta pidetään samoina."
+          "feedback": "Oikein. Hypoteesi ennustaa mitattavan eron (aika lyhenee). Mittaus voi osoittaa sen vääräksi. Reilussa kokeessa auto, matka ja alusta pidetään samoina."
         },
         {
           "text": "Tutkitaan, mitä auton akseleille tapahtuu öljyn kanssa.",
@@ -317,7 +317,7 @@
       "type": "explain",
       "optional": true,
       "title": "3. Selitä johtopäätös",
-      "prompt": "Oppilaan raportin johtopäätös kuuluu: ”Hypoteesi todistettiin oikeaksi, koska mittaus antoi nopeuden $0{,}42\\,\\text{m/s}$ kuten ennustettiin.” Selitä, mikä väitteessä on liian vahvaa ja miten johtopäätös pitäisi muotoilla.",
+      "prompt": "Oppilaan raportin johtopäätös on tämä: ”Hypoteesi todistettiin oikeaksi, koska mittaus antoi nopeuden $0{,}42\\,\\text{m/s}$ kuten ennustettiin.” Selitä, mikä väitteessä on liian vahvaa. Kerro myös, miten johtopäätös pitäisi muotoilla.",
       "criteria": [
         "Sanon, että yksi koe ei todista hypoteesia, vaan antaa sille tukea tai kumoaa sen.",
         "Mainitsen, että tulokseen kuuluu epävarmuus ja että johtopäätös on vain niin vahva kuin aineisto.",

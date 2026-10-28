@@ -91,16 +91,16 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: heating at constant pressure",
-      "intro": "Testaa ennuste 1. Paine pysyy 200 kPa:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi 500 J, 750 J ja 1000 J. Paina joka kerta *Lämmitä* ja kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
+      "intro": "Test prediction 1. The pressure stays at 200 kPa, because the weights do not change. Change only the heat $Q$, for example 500 J, 750 J and 1000 J. Press *Heat* each time and record the measurement only when the piston has stopped. Record at least the row $Q = 1000\\,\\text{J}$.",
       "initial": {
         "Qin": 500,
         "paluu": "sama paine",
         "p2": 100
       },
       "names": {
-        "Qin": "lämpö Q",
-        "paluu": "männän paluu",
-        "p2": "paine p₂"
+        "Qin": "heat Q",
+        "paluu": "piston return",
+        "p2": "pressure p₂"
       },
       "units": {
         "Qin": "J",
@@ -186,16 +186,16 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: two ways to return the piston",
-      "intro": "Testaa ennuste 2. Lämpö $Q = 500\\,\\text{J}$ ja paine $p_2 = 100\\,\\text{kPa}$ lukitaan; muuta vain männän paluutapaa. Paina *Lämmitä*, sitten *Palauta mäntä*, ja kirjaa mittaus vasta, kun kierros on valmis. Hyötysuhde $\\eta$ näkyy vasta silloin, ja sillä vain vertaillaan tapoja A ja B.\n\n**Tapa A.** Punnukset painavat männän alas samassa paineessa.\n\n**Tapa B.**\n\n1. Mäntä lukitaan ylhäällä, ja ylempi punnus siirretään hyllylle.\n2. Kylmä vesi jäähdyttää kaasua. Tilavuus ei muutu, joten paine laskee arvoon $p_2$.\n3. Mäntä laskeutuu paineessa $p_2$.\n4. Alhaalla lisätään uusi punnus, ja kuuma levy lämmittää kaasun takaisin alkutilaan.\n\n$Q_1$ on kaikki lämpö kuumalta levyltä, $Q_2$ kaikki lämpö kylmään veteen ja $W$ kierroksen nettotyö.",
+      "intro": "Test prediction 2. The heat $Q = 500\\,\\text{J}$ and the pressure $p_2 = 100\\,\\text{kPa}$ are locked; change only the way the piston returns. Press *Heat*, then *Return the piston*, and record the measurement only when the cycle is complete. The efficiency $\\eta$ is shown only then, and it is used only to compare ways A and B.\n\n**Way A.** The weights press the piston down at the same pressure.\n\n**Way B.**\n\n1. The piston is locked at the top, and the upper weight is moved onto a shelf.\n2. Cold water cools the gas. The volume does not change, so the pressure drops to $p_2$.\n3. The piston descends at the pressure $p_2$.\n4. At the bottom a new weight is added, and a hot plate heats the gas back to the initial state.\n\n$Q_1$ is all the heat from the hot plate, $Q_2$ all the heat to the cold water and $W$ the net work of the cycle.",
       "initial": {
         "Qin": 500,
         "p2": 100,
         "paluu": "sama paine"
       },
       "names": {
-        "Qin": "lämpö Q",
-        "paluu": "männän paluu",
-        "p2": "paine p₂"
+        "Qin": "heat Q",
+        "paluu": "piston return",
+        "p2": "pressure p₂"
       },
       "units": {
         "Qin": "J",

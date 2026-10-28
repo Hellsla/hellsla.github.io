@@ -81,7 +81,7 @@
       "level": 3,
       "text": "A copper object and an aluminium object have the same mass. How many times as large is the volume of the aluminium object compared with the volume of the copper object? Use the densities in the table.",
       "answer": 3.32,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     },
     {

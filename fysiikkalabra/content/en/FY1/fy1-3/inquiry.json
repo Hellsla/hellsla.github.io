@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "A measurement result is an estimate that has an error: **random error** scatters the results and is reduced by taking the mean, **systematic error** shifts all results in the same direction and is not removed by repeating, and reliability means both repeatability and correctness.",
+  "contribution": "A measurement result is an estimate that has an error: **random error** scatters the results and is reduced by taking the mean, **systematic error** shifts all results in the same direction and is not removed by repeating, and reliability means both repeatability and accuracy.",
   "learn": [
     "You can tell gross error, random error and systematic error apart and recognise their sources.",
     "You can calculate a mean and estimate the error of a result using half of the range.",
-    "You can correct a systematic error and judge whether a measurement is repeatable and correct."
+    "You can correct a systematic error and judge whether a measurement is repeatable and accurate."
   ],
   "prior": [
     "A measurement result is given as a numerical value and a unit, and significant figures tell how precise it is (chapter *Quantities, units and the SI system*)"
@@ -110,7 +110,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "The ball rolls down the ramp, and the hand stopwatch gives a reading every time. The points pile up on the time axis, and you see the mean and the true time. With the sliders you choose the number of repeats and the size of the two errors.",
-      "howto": "Press *Start* and the measurements are made one at a time. You can also drag the *Repeats* slider, and you see the first $n$ results of the same series. *Random error* tells how much the results fluctuate, and *Systematic error* how much the stopwatch shows too much (plus) or too little (minus) every time. The orange point is the latest reading, the green dashed line is the true time and the black line is the mean.",
+      "howto": "Press *Start* and the measurements are made one at a time. You can also drag the *Repetitions* slider to see the first $n$ results of the same series. *Random error* tells how much the results fluctuate, and *Systematic error* how much the stopwatch shows too much (plus) or too little (minus) every time. The orange point is the latest reading, the green dashed line is the true time and the black line is the mean.",
       "model": "The values are model values calculated by the simulation, not measurements of a real experiment. The true rolling time of the ball is $T = 2.40\\,\\text{s}$. The model knows it, but in a real experiment it is not known. A reading is $t_i = T + \\Delta t_\\text{sys} + \\Delta t_\\text{ran}\\,g_i$ rounded to hundredths of a second, where $g_i$ is a fixed series of random numbers. The same series always starts from the beginning, so the experiment can be repeated. The number $\\Delta t_\\text{ran}$ is the typical deviation of a single reading; half of the range of many readings is larger than it.",
       "calc": "The mean $\\bar{t}$ is the sum of the first $n$ readings divided by $n$. Half of the range is $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. The difference of the mean from the true time is $\\bar{t} - T$, and you can see it only in the model, because the true time is not usually known."
     },
@@ -119,16 +119,16 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: random error and the mean",
-      "intro": "Testaa ennuste 1. Alkutila asettaa satunnaisvirheeksi $0{,}15\\,\\text{s}$ ja systemaattiseksi virheeksi nollan. Vedä *Toistoja* -liukusäädintä ja kirjaa mittaus, kun $n = 1$, $n = 5$ ja $n = 40$. Katso, mitä keskiarvolle ja vaihteluvälille tapahtuu.",
+      "intro": "Test prediction 1. The initial state sets the random error to $0.15\\,\\text{s}$ and the systematic error to zero. Drag the *Repetitions* slider and record a measurement when $n = 1$, $n = 5$ and $n = 40$. Look at what happens to the mean and the range.",
       "initial": {
         "n": 1,
         "sat": 0.15,
         "sys": 0
       },
       "names": {
-        "n": "toistoja n",
-        "sat": "satunnaisvirhe",
-        "sys": "systemaattinen virhe"
+        "n": "repetitions n",
+        "sat": "random error",
+        "sys": "systematic error"
       },
       "units": {
         "sat": "s",
@@ -183,16 +183,16 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: a systematic error does not cancel",
-      "intro": "Testaa ennuste 2. Alkutila asettaa satunnaisvirheeksi $0{,}15\\,\\text{s}$ ja systemaattiseksi virheeksi $+0{,}30\\,\\text{s}$. Kirjaa mittaus, kun $n = 1$, $n = 10$ ja $n = 40$. Oikea aika on $T = 2{,}40\\,\\text{s}$, jonka malli tuntee mutta oikeassa kokeessa ei tunnettaisi.",
+      "intro": "Test prediction 2. The initial state sets the random error to $0.15\\,\\text{s}$ and the systematic error to $+0.30\\,\\text{s}$. Record a measurement when $n = 1$, $n = 10$ and $n = 40$. The true time is $T = 2.40\\,\\text{s}$, which the model knows but which would not be known in a real experiment.",
       "initial": {
         "n": 1,
         "sat": 0.15,
         "sys": 0.3
       },
       "names": {
-        "n": "toistoja n",
-        "sat": "satunnaisvirhe",
-        "sys": "systemaattinen virhe"
+        "n": "repetitions n",
+        "sat": "random error",
+        "sys": "systematic error"
       },
       "units": {
         "sat": "s",
@@ -240,16 +240,16 @@
       "type": "experiment",
       "optional": true,
       "title": "Experiment 3: the size of the random error",
-      "intro": "Selvitä, miten tulosten hajonta riippuu satunnaisvirheen suuruudesta. Alkutila asettaa $n = 40$ ja systemaattisen virheen nollaksi. Kirjaa mittaus, kun satunnaisvirhe on $0{,}05\\,\\text{s}$, $0{,}15\\,\\text{s}$ ja $0{,}30\\,\\text{s}$.",
+      "intro": "Find out how the spread of the results depends on the size of the random error. The initial state sets $n = 40$ and the systematic error to zero. Record a measurement when the random error is $0.05\\,\\text{s}$, $0.15\\,\\text{s}$ and $0.30\\,\\text{s}$.",
       "initial": {
         "n": 40,
         "sat": 0.05,
         "sys": 0
       },
       "names": {
-        "n": "toistoja n",
-        "sat": "satunnaisvirhe",
-        "sys": "systemaattinen virhe"
+        "n": "repetitions n",
+        "sat": "random error",
+        "sys": "systematic error"
       },
       "units": {
         "sat": "s",
@@ -275,7 +275,7 @@
         "type": "numeric",
         "prompt": "How many times larger is half of the range when the random error is $0.30\\,\\text{s}$ than when it is $0.05\\,\\text{s}$?",
         "answer": 6.2,
-        "unit": "kertaa",
+        "unit": "times",
         "tolerance": 0.03,
         "hints": [
           "Read from the table half of the range for both values of random error.",
@@ -313,7 +313,7 @@
           },
           {
             "text": "No error, because the readings are almost the same.",
-            "feedback": "Almost equal readings tell about repeatability, not correctness. The true value is $0\\,{}^\\circ\\text{C}$, and every reading is more than one degree away from it."
+            "feedback": "Almost equal readings tell about repeatability, not accuracy. The true value is $0\\,{}^\\circ\\text{C}$, and every reading is more than one degree away from it."
           },
           {
             "text": "Random error and systematic error are about equally large.",
@@ -418,7 +418,7 @@
         },
         {
           "text": "There is no error, because the readings are almost the same and so the ruler is accurate.",
-          "feedback": "Almost equal readings tell about repeatability, not correctness. The zero end of the ruler is worn, so every reading is too large."
+          "feedback": "Almost equal readings tell about repeatability, not accuracy. The zero end of the ruler is worn, so every reading is too large."
         }
       ]
     },
@@ -443,7 +443,7 @@
         },
         {
           "value": 27.2,
-          "feedback": "This is the corrected total mass of five coins. The question asked for one coin, so divide by five still."
+          "feedback": "This is the corrected total mass of five coins. The question asked for one coin, so you still need to divide by five."
         },
         {
           "value": 4.8,
@@ -470,7 +470,7 @@
       "prompt": "The same quantity is measured ten times with an instrument. All readings are very close to each other, but all are clearly larger than the known reference value. What can you conclude?",
       "choices": [
         {
-          "text": "Repeatability is good, but the measurement has a systematic error, so the result is not correct.",
+          "text": "Repeatability is good, but the measurement has a systematic error, so the result is not accurate.",
           "correct": true,
           "feedback": "Correct. Readings close to each other mean a small random error. The fact that all are on the same side of the reference value reveals a systematic error."
         },
@@ -480,7 +480,7 @@
         },
         {
           "text": "The measurement is reliable, because the results repeat.",
-          "feedback": "Repeating tells only about repeatability. A reliable measurement must also be correct, and here all readings are off in the same way."
+          "feedback": "Repeating tells only about repeatability. A reliable measurement must also be accurate, and here all readings are off in the same way."
         },
         {
           "text": "A systematic error disappears when the mean of the results is calculated.",
@@ -523,20 +523,20 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Explain",
-      "prompt": "Explain in your own words how you tell random and systematic error apart, what repeating does to them, and what repeatability and correctness mean.",
+      "prompt": "Explain in your own words how you tell random and systematic error apart, what repeating does to them, and what repeatability and accuracy mean.",
       "criteria": [
         "I say that random error varies from one measurement to the next and shows as scatter in the results, whereas a systematic error is in the same direction in every measurement.",
         "I say that the mean damps random error but not systematic error.",
-        "I say that repeatability tells how close to each other the results are, and correctness tells how close to the true value the result is.",
+        "I say that repeatability tells how close to each other the results are, and accuracy tells how close to the true value the result is.",
         "I say how a systematic error can be noticed: by comparing with a known value or with another method."
       ],
-      "model": "Random error varies each time and in either direction, so it shows as scatter in the results, for example the reaction time of a hand stopwatch. A systematic error is in the same direction in every measurement, for example a wrong zero. Repeating and the mean damp random error, because results that are too large and too small cancel each other, but a systematic error is just as large in the mean too. Repeatability tells how close to each other repeated results land, that is, how small the random error is. Correctness tells how close to the true value the mean is, that is, how small the systematic error is. A systematic error can be noticed only by comparing the result with a known reference value or with another method of measurement."
+      "model": "Random error varies each time and in either direction, so it shows as scatter in the results, for example the reaction time of a hand stopwatch. A systematic error is in the same direction in every measurement, for example a wrong zero. Repeating and the mean damp random error, because results that are too large and too small cancel each other, but a systematic error is just as large in the mean too. Repeatability tells how close to each other repeated results land, that is, how small the random error is. Accuracy tells how close to the true value the mean is, that is, how small the systematic error is. A systematic error can be noticed only by comparing the result with a known reference value or with another method of measurement."
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first yourself and open the answer only then."
+      "text": "Finally, three quick questions. Answer them yourself first, and only then open the answers."
     }
   ]
 }

@@ -91,7 +91,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: lämmitys vakiopaineessa",
-      "intro": "Testaa ennuste 1. Paine pysyy 200 kPa:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi 500 J, 750 J ja 1000 J. Paina joka kerta *Lämmitä* ja kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
+      "intro": "Testaa ennuste 1. Paine pysyy 200 kPa:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi 500 J, 750 J ja 1000 J. Paina joka kerta *Lämmitä*. Kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
       "initial": {
         "Qin": 500,
         "paluu": "sama paine",
@@ -186,7 +186,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: kaksi tapaa palauttaa mäntä",
-      "intro": "Testaa ennuste 2. Lämpö $Q = 500\\,\\text{J}$ ja paine $p_2 = 100\\,\\text{kPa}$ lukitaan; muuta vain männän paluutapaa. Paina *Lämmitä*, sitten *Palauta mäntä*, ja kirjaa mittaus vasta, kun kierros on valmis. Hyötysuhde $\\eta$ näkyy vasta silloin, ja sillä vain vertaillaan tapoja A ja B.\n\n**Tapa A.** Punnukset painavat männän alas samassa paineessa.\n\n**Tapa B.**\n\n1. Mäntä lukitaan ylhäällä, ja ylempi punnus siirretään hyllylle.\n2. Kylmä vesi jäähdyttää kaasua. Tilavuus ei muutu, joten paine laskee arvoon $p_2$.\n3. Mäntä laskeutuu paineessa $p_2$.\n4. Alhaalla lisätään uusi punnus, ja kuuma levy lämmittää kaasun takaisin alkutilaan.\n\n$Q_1$ on kaikki lämpö kuumalta levyltä, $Q_2$ kaikki lämpö kylmään veteen ja $W$ kierroksen nettotyö.",
+      "intro": "Testaa ennuste 2. Lämpö $Q = 500\\,\\text{J}$ ja paine $p_2 = 100\\,\\text{kPa}$ on lukittu. Muuta vain sitä, miten mäntä palaa. Paina *Lämmitä* ja sitten *Palauta mäntä*. Kirjaa mittaus vasta, kun kierros on valmis. Hyötysuhde $\\eta$ näkyy vasta silloin. Sillä vain vertaillaan tapoja A ja B.\n\n**Tapa A.** Punnukset painavat männän alas samassa paineessa.\n\n**Tapa B.**\n\n1. Mäntä lukitaan ylös, ja ylempi punnus siirretään hyllylle.\n2. Kylmä vesi jäähdyttää kaasua. Tilavuus ei muutu, joten paine laskee arvoon $p_2$.\n3. Mäntä laskeutuu paineessa $p_2$.\n4. Alhaalla lisätään uusi punnus. Kuuma levy lämmittää kaasun takaisin alkutilaan.\n\n$Q_1$ on kaikki lämpö kuumalta levyltä. $Q_2$ on kaikki lämpö kylmään veteen. $W$ on kierroksen nettotyö.",
       "initial": {
         "Qin": 500,
         "p2": 100,

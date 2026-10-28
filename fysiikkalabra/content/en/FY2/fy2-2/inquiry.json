@@ -110,14 +110,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: petrol and food",
-      "intro": "Testaa ennuste 1. Valitse *Kohde*-valikosta ensin päivän ruoka ja sitten litra bensiiniä ja kirjaa kummankin energia megajouleina. Voit kirjata myös banaanin ja suklaalevyn.",
+      "intro": "Test prediction 1. In the *Item* menu, select first a day's food and then a litre of petrol, and record the energy of each in megajoules. You can also record a banana and a chocolate bar.",
       "initial": {
         "kohde": "päivän ruoka"
       },
       "locked": [],
       "vary": "kohde",
       "names": {
-        "kohde": "kohde"
+        "kohde": "item"
       },
       "measure": [
         {
@@ -132,14 +132,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: the Sun and humankind",
-      "intro": "Testaa ennuste 2. Valitse *Kohde*-valikosta ensin Auringon säteily Maahan yhdessä tunnissa ja sitten ihmiskunnan energiankäyttö vuodessa, ja kirjaa kummankin energia eksajouleina ($1\\,\\text{EJ} = 10^{18}\\,\\text{J}$). Vertaa lukuja keskenään.",
+      "intro": "Test prediction 2. In the *Item* menu, select first the solar radiation reaching the Earth in one hour and then humankind's energy use in a year, and record the energy of each in exajoules ($1\\,\\text{EJ} = 10^{18}\\,\\text{J}$). Compare the numbers with each other.",
       "initial": {
         "kohde": "Aurinko Maahan tunnissa"
       },
       "locked": [],
       "vary": "kohde",
       "names": {
-        "kohde": "kohde"
+        "kohde": "item"
       },
       "measure": [
         {
@@ -312,7 +312,7 @@
       "title": "2. Comparison",
       "prompt": "A lightning strike releases on average about $1.0\\,\\text{GJ}$ of energy, and the energy of a day's food is $10\\,\\text{MJ}$. How many days' food does the energy of a lightning strike correspond to?",
       "answer": 100,
-      "unit": "kpl",
+      "unit": "pcs",
       "tolerance": 0.02,
       "hints": [
         "Both energies must be in the same unit so that they can be compared.",

@@ -103,7 +103,7 @@
       "type": "interpret",
       "title": "Heats of combustion of fuels",
       "source": "statistics",
-      "source_note": "Polttopuu ja jyrsinturve: Tilastokeskus, Polttoaineluokitus (2017); maakaasu, kivihiili ja diesel: IPCC 2006 Guidelines, osa 2, oletuslämpöarvojen taulukko (2006); bensiini: suomalaisen etanolia sisältävän bensiinin tyypillinen arvo (puhtaalle bensiinille IPCC 2006 antaa $44{,}3\\,\\text{MJ/kg}$); puupelletti: tyypillinen arvo. Tehollisia lämpöarvoja, pyöristetty",
+      "source_note": "Firewood and milled peat: Statistics Finland, Fuel Classification (2017); natural gas, coal and diesel: IPCC 2006 Guidelines, Volume 2, table of default calorific values (2006); petrol: typical value for Finnish petrol containing ethanol (for pure petrol IPCC 2006 gives $44.3\\,\\text{MJ/kg}$); wood pellet: typical value. Net calorific values, rounded",
       "text": "The table gives the heats of combustion $H$ of common fuels. The heat of combustion is the energy released from one kilogram of fuel.\n\n| Fuel | $H$ ($\\text{MJ/kg}$) |\n|---|---|\n| natural gas | 48 |\n| petrol | 43 |\n| diesel | 43 |\n| coal | 26 |\n| wood pellets | 17 |\n| firewood (air-dried) | 15 |\n| peat (milled peat) | 10 |\n",
       "question": {
         "type": "choice",
@@ -136,7 +136,7 @@
       "optional": true,
       "title": "How does energy depend on mass?",
       "source": "model",
-      "source_note": "esimerkki: ilmakuivan polttopuun poltosta lasketut arvot lämpöarvolla $15\\,\\text{MJ/kg}$",
+      "source_note": "example: values calculated from burning air-dried firewood with a heat of combustion of $15\\,\\text{MJ/kg}$",
       "text": "Different amounts of air-dried firewood are burnt. The table gives the mass $m$ of the wood burnt and the energy $E$ released from it.\n\n| $m$ ($\\text{kg}$) | $E$ ($\\text{MJ}$) |\n|---|---|\n| 1.0 | 15 |\n| 2.0 | 30 |\n| 4.0 | 60 |\n| 8.0 | 120 |\n",
       "question": {
         "type": "choice",
@@ -168,7 +168,7 @@
       "type": "interpret",
       "title": "A package label as a heat of combustion",
       "source": "example",
-      "source_note": "esimerkkimerkintä, ei oikean tuotteen tietoja",
+      "source_note": "example label, not the data of a real product",
       "text": "The packaging of a chocolate bar says:\n\n| Nutritional value | per 100 g |\n|---|---|\n| energy | $2200\\,\\text{kJ}$ |\n\nWhen you convert the energy to megajoules and the mass to kilograms, the label gives you the heat of combustion of the chocolate.\n",
       "question": {
         "type": "numeric",

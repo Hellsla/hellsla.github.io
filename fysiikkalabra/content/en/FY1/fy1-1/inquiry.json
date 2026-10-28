@@ -112,7 +112,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Zoom from the Planck length to the observable universe. All the objects that fit in the picture are shown at the same time in the right proportions of size, and the bar at the bottom shows how long a power of ten of metres is on this scale.",
-      "howto": "Choose an object from the menu *Go to object*, and the picture slides to the scale where that object is the nearest in size. The buttons *Zoom in $10$-fold* and *Zoom out $10$-fold* change the width of the view to a tenth or ten times as much. The objects stand side by side by size: the smallest on the left, and an object larger than the picture is cut off at the edge of the picture. An object a few pixels in size is a dot, and a line points from it to its name. You can also drag the *Width of view* slider, drag the picture sideways or click a place on the map. *Start* zooms automatically, and *Direction* and *Speed* choose the direction and the pace. The dots on the map are objects, and the light band shows which sizes fit in the picture now.",
+      "howto": "Choose an object from the menu *Go to object*, and the picture slides to the scale where that object is the nearest in size. The buttons *Zoom in by a factor of $10$* and *Zoom out by a factor of $10$* change the width of the view to a tenth or ten times as much. The objects stand side by side by size: the smallest on the left, and an object larger than the picture is cut off at the edge of the picture. An object a few pixels in size is a dot, and a line points from it to its name. You can also drag the *Width of the view* slider, drag the picture sideways or click a place on the map. *Start* zooms automatically, and *Direction* and *Speed* choose the direction and the pace. The dots on the map are objects, and the light band shows which sizes fit in the picture now.",
       "model": "The sizes are rounded order-of-magnitude values, not exact measurement results. The values are rounded model values from the literature: the Planck length is a quantity calculated from constants of nature, the astronomical unit $1\\,\\text{AU}$ and the light-year are agreed definitions, the sizes of the proton and the atom are based on scattering experiments and the quantum mechanical model, the size of the Milky Way is an estimate (about $10^{5}$ light-years, uncertainty tens of percent) and the diameter of the universe is inferred from observations with a cosmological model. The sizes of a hair, a red blood cell, an ant, a coin, a ball, a whale and a person are typical values, and individuals vary. The size of a quark is an upper limit obtained from observations. The size of a water molecule is a typical value, the diameter of a neutron star is a typical value based on observations and models (about $20$–$25\\,\\text{km}$), and for the black hole Sgr A* at the centre of the Milky Way the size drawn is the diameter of its event horizon, calculated from its mass (about $4.3$ million solar masses). A black hole is not a solid sphere: the boundary drawn is the event horizon, and the gas glowing around it and the radiation beams of a neutron star are illustrations. The sizes of nuclei, atoms and the Moon and Jupiter are rounded table values. The drawings are illustrations. At the Planck length the grid is only a symbol, because there are no observations of the structure of length. The electron cloud of a hydrogen atom is a probability picture, and its nucleus is drawn too large. On the orbits, stars and planets are enlarged dots, and the size marked for the orbits is their radius, although the picture is drawn by diameter. The Milky Way and the universe are artists' impressions.",
       "calc": "The width of the view $W$ corresponds to $560$ pixels in the picture. An object of size $d$ is drawn in the picture with a width of $\\dfrac{d}{W}\\cdot560$ pixels. For example, when the width of the view is $10^{-9}\\,\\text{m}$, a hydrogen atom is $\\dfrac{1.1\\cdot10^{-10}\\,\\text{m}}{10^{-9}\\,\\text{m}}\\cdot560 \\approx 62$ pixels wide. An object is visible when its size is about $\\dfrac{1}{1000}$–$3$ times the width of the view: an object under $4$ pixels is a dot, and an object larger than the picture is cut off at the edge. The number on the slider is the exponent of the width: the number $-9$ means a width of $10^{-9}\\,\\text{m}$. When the view zooms out tenfold, all objects shrink to a tenth."
     },
@@ -121,12 +121,12 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: the steps of matter",
-      "intro": "Testaa ennuste 1. Alkutilassa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan vetyatomi, protoni ja kvarkki ja kirjaa rivi jokaisesta. Taulukon $n$ kertoo lähimmän kohteen suuruusluokan: kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
+      "intro": "Test prediction 1. In the initial state the nearest object in size is the water molecule. Press *Record measurement*. Then use the *Go to object* menu to select a hydrogen atom, a proton and a quark in turn, and record a row for each. The $n$ in the table gives the order of magnitude of the nearest object: the size of the object is about $10^{n}\\,\\text{m}$. The value for the quark is an upper limit.",
       "initial": {
         "L": -9
       },
       "names": {
-        "kohdeNimi": "kohde"
+        "kohdeNimi": "object"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -141,7 +141,7 @@
         "type": "numeric",
         "prompt": "Use the rows of the hydrogen atom and the proton in the table. By how many orders of magnitude is the hydrogen atom larger than its nucleus?",
         "answer": 5,
-        "unit": "suuruusluokkaa",
+        "unit": "orders of magnitude",
         "tolerance": 0.02,
         "hints": [
           "From the table you get the exponent $n$ of the order of magnitude of both objects. The nucleus of a hydrogen atom is a single proton.",
@@ -170,12 +170,12 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: Earth's address",
-      "intro": "Testaa ennuste 2. Alkutilassa kooltaan lähin kohde on Maa. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan Aurinko, Neptunuksen radan säde ja Linnunrata ja kirjaa rivi jokaisesta. Halutessasi jatka havaittavaan maailmankaikkeuteen asti.",
+      "intro": "Test prediction 2. In the initial state the nearest object in size is Earth. Record a row. Then use the *Go to object* menu to select the Sun, the radius of Neptune's orbit and the Milky Way in turn, and record a row for each. If you like, continue all the way to the observable universe.",
       "initial": {
         "L": 7.7
       },
       "names": {
-        "kohdeNimi": "kohde"
+        "kohdeNimi": "object"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -215,12 +215,12 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Optional experiment: where is the midpoint of the sizes?",
-      "intro": "Alkutilassa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
+      "intro": "In the initial state the nearest object in size is the observable universe. Record a row. Then use the *Go to object* menu to select the Planck length and record a second row. In the question, calculate the midpoint between these two. Then zoom to the object in the model whose size is closest to this midpoint, and record a third row: the simulation shows which object is in the middle. Guess first: is the human in the middle of the sizes?",
       "initial": {
         "L": 27.5
       },
       "names": {
-        "kohdeNimi": "kohde"
+        "kohdeNimi": "object"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -376,7 +376,7 @@
         },
         {
           "text": "1 electromagnetic, 2 electromagnetic, 3 strong, 4 weak",
-          "feedback": "The bunch of keys and Earth are as wholes almost electrically neutral, so there is no significant electric force between them. The fall is due to gravity, which acts between all masses and is always attractive."
+          "feedback": "As a whole, the bunch of keys and Earth are each almost electrically neutral, so there is no significant electric force between them. The fall is due to gravity, which acts between all masses and is always attractive."
         },
         {
           "text": "1 gravity, 2 electromagnetic, 3 strong, 4 strong",
@@ -481,7 +481,7 @@
       "title": "2. Calculation",
       "prompt": "The diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$ and the diameter of a neutron star is about $2.4\\cdot10^{4}\\,\\text{m}$, although the mass of a neutron star is greater than that of the Sun. How many times larger is the diameter of the Sun than the diameter of the neutron star?",
       "answer": 57917,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02,
       "hints": [
         "The question \"how many times larger\" is a division: divide the larger size by the smaller.",
@@ -519,7 +519,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first yourself, and only then open the answer."
+      "text": "Finally, three quick questions. Answer them yourself first, and only then open the answer."
     }
   ]
 }

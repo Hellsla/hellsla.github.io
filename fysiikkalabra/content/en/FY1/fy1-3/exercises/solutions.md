@@ -86,7 +86,7 @@
 **Conversions:** All lengths are in centimetres. In the ratio the units cancel, so no conversions are needed.
 **Substitution:** $\Delta x_\text{A} = \dfrac{5.6\,\text{cm} - 5.2\,\text{cm}}{2} = 0.2\,\text{cm}$ and $\Delta x_\text{B} = \dfrac{5.44\,\text{cm} - 5.40\,\text{cm}}{2} = 0.02\,\text{cm}$, so $k = \dfrac{0.2\,\text{cm}}{0.02\,\text{cm}} = 10$
 **Answer:** $10$ times; the differences $0.4\,\text{cm}$ and $0.04\,\text{cm}$ are one-figure numbers, so the ratio is given with one significant figure.
-**Reasonableness:** The results of instrument B fit in an interval $0.04\,\text{cm}$ wide and the results of instrument A in one $0.4\,\text{cm}$ wide, that is, ten times wider. Good repeatability still does not tell whether the mean of instrument B is correct.
+**Reasonableness:** The results of instrument B fit in an interval $0.04\,\text{cm}$ wide and the results of instrument A in one $0.4\,\text{cm}$ wide, that is, ten times wider. Good repeatability still does not tell whether the mean of instrument B is accurate.
 
 ## fy1-3-L3-01
 **Given:** starting delay $\tau_1 = 0.18\,\text{s}$ (the stopwatch starts too late), stopping delay $\tau_2 = 0.12\,\text{s}$ (the stopwatch stops too late)
@@ -111,7 +111,7 @@
 ## fy1-3-L3-03
 **Given:** true value $x_\text{true} = 8.00\,\text{cm}$; readings $8.24$, $8.27$, $8.25$, $8.29$ and $8.25\,\text{cm}$; $n = 5$
 **Find:** the estimate of the systematic error $\Delta x_\text{sys}$ in the unit $\text{cm}$
-**Principle:** The readings are tightly close to each other but all clearly above the true value. The mean reduces random error, so its difference from the true value describes the systematic error that remains.
+**Principle:** The readings are close together but all clearly above the true value. The mean reduces random error, so its difference from the true value describes the systematic error that remains.
 **Formula:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ and $\Delta x_\text{sys} = \bar{x} - x_\text{true}$. The quantity to find is $\Delta x_\text{sys} = \bar{x} - x_\text{true}$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
 **Substitution:** The sum is $8.24\,\text{cm} + 8.27\,\text{cm} + 8.25\,\text{cm} + 8.29\,\text{cm} + 8.25\,\text{cm} = 41.30\,\text{cm}$, so $\bar{x} = \dfrac{41.30\,\text{cm}}{5} = 8.26\,\text{cm}$ and $\Delta x_\text{sys} = 8.26\,\text{cm} - 8.00\,\text{cm} = 0.26\,\text{cm}$

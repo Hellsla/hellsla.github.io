@@ -149,7 +149,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain lämpötila muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Aine ja alkupituus ovat vakioita, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi 70 °C ja 120 °C, ja kokeile myös pakkasta, esimerkiksi −30 °C. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
+      "intro": "Testaa ennusteet 1 ja 3. Aine ja alkupituus ovat samoja, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi 70 °C ja 120 °C. Kokeile myös pakkasta, esimerkiksi −30 °C. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
       "initial": {
         "material": "teräs",
         "L0": 10,
@@ -186,7 +186,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Lisätutkimus: vain alkupituus muuttuu",
-      "intro": "Testaa ennuste 2. Nyt aine ja lämpötila ovat vakioita, ja vain sauvan alkupituutta muutetaan. Kirjaa pituuden muutos ja suhteellinen muutos ainakin kahdella alkupituudella, esimerkiksi 10 m, 20 m ja 40 m. Mikä muuttuu, mikä pysyy samana?",
+      "intro": "Testaa ennuste 2. Nyt aine ja lämpötila ovat samoja, ja vain sauvan alkupituutta muutetaan. Kirjaa pituuden muutos ja suhteellinen muutos ainakin kahdella alkupituudella, esimerkiksi 10 m, 20 m ja 40 m. Mikä muuttuu? Mikä pysyy samana?",
       "initial": {
         "material": "teräs",
         "L0": 10,

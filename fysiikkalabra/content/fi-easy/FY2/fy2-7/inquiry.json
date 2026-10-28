@@ -65,7 +65,7 @@
         },
         {
           "text": "Noin $25\\,\\%$, koska pitkällä matkalla neljännes energiasta ehtii hävitä.",
-          "feedback": "Jos neljännes lähtevästä energiasta muuttuisi lämmöksi, joka neljäs voimalaitosten tuottama yksikkö lämmittäisi vain johtimia ja muuntajia. Pitkät matkat siirretään korkealla jännitteellä juuri siksi, että häviö pysyy pienenä. Suomessa häviö on noin $4\\,\\%$."
+          "feedback": "Ajattele, että neljännes lähtevästä energiasta muuttuisi lämmöksi. Silloin joka neljäs voimalaitosten tuottama energiayksikkö lämmittäisi vain johtimia ja muuntajia. Pitkät matkat siirretään korkealla jännitteellä juuri siksi, että häviö pysyy pienenä. Suomessa häviö on noin $4\\,\\%$."
         },
         {
           "text": "Noin puolet, koska energia häviää aina vähintään puolittain.",
@@ -84,7 +84,7 @@
       "choices": [
         {
           "text": "Korkealla jännitteellä voi siirtää enemmän energiaa kuin matalalla, koska korkea jännite on voimakkaampaa sähköä.",
-          "feedback": "Siirrettävä teho voi olla sama matalallakin jännitteellä. Ratkaisevaa on, kuinka suuri sähkövirta tarvitaan. Tarvittava teho saadaan joko suurella jännitteellä ja pienellä virralla tai pienellä jännitteellä ja suurella virralla."
+          "feedback": "Siirrettävä teho voi olla sama matalallakin jännitteellä. Ratkaisevaa on, kuinka suuri sähkövirta tarvitaan. Tarvittava teho saadaan kahdella tavalla: suurella jännitteellä ja pienellä virralla tai pienellä jännitteellä ja suurella virralla."
         },
         {
           "text": "Sama teho siirtyy korkealla jännitteellä pienemmällä sähkövirralla, ja johdin lämpenee vähemmän, joten häviö on pienempi.",
@@ -107,7 +107,7 @@
       "type": "interpret",
       "title": "Kaukolämpö: kuinka paljon jää matkalle?",
       "source": "statistics",
-      "source_note": "Energiateollisuus, Kaukolämpötilasto 2024 (luvut pyöristetty)",
+      "source_note": "Energiateollisuus, Kaukolämpötilasto 2024 (luvut on pyöristetty)",
       "text": "Suomen kaukolämpöverkkoihin hankittiin vuonna 2024 lämpöä. Asiakkaat käyttivät siitä osan. Erotus on pääosin verkon häviötä, joten tulos on arvio.\n\n| | Energia (TWh) |\n|---|---|\n| Verkkoon hankittu lämpö | $36{,}0$ |\n| Asiakkaiden käyttämä lämpö | $32{,}7$ |\n\nLaske ensin häviö terawattitunteina. Laske sitten sen osuus verkkoon hankitusta lämmöstä.",
       "question": {
         "type": "numeric",
@@ -130,7 +130,7 @@
             "feedback": "Tämä on häviö terawattitunteina, ei prosenttina. Jaa häviö lähtevällä energialla ja ilmoita osuus prosentteina."
           }
         ],
-        "solution": "**Annettu:** verkkoon hankittu energia $E_\\text{lähtö} = 36{,}0\\,\\text{TWh}$ ja asiakkaiden käyttämä energia $E_\\text{perille} = 32{,}7\\,\\text{TWh}$ (Energiateollisuus, 2024)\n\n**Kysytty:** häviön osuus lähtevästä energiasta prosentteina\n\n**Periaate:** Energia ei katoa. Se, mikä lähtee mutta ei tule asiakkaille, on muuttunut lämmöksi ympäristöön eli on siirtohäviötä. Osuus lasketaan lähtevästä energiasta, koska prosentti kertoo, kuinka suuri osa verkkoon syötetystä lämmöstä hävisi.\n\n**Kaava:** $E_\\text{häviö} = E_\\text{lähtö} - E_\\text{perille}$ ja $\\text{osuus} = \\dfrac{E_\\text{häviö}}{E_\\text{lähtö}}$\n\n**Muunnokset:** Ei yksikkömuunnoksia, koska molemmat energiat ovat terawattitunteina. Osuus muutetaan prosentiksi kertomalla sadalla: $0{,}0917 = 0{,}0917 \\cdot 100\\,\\% = 9{,}17\\,\\%$.\n\n**Sijoitus:** $E_\\text{häviö} = 36{,}0\\,\\text{TWh} - 32{,}7\\,\\text{TWh} = 3{,}3\\,\\text{TWh}$, ja $\\text{osuus} = 3{,}3\\,\\text{TWh} : 36{,}0\\,\\text{TWh} = 0{,}0917 = 9{,}17\\,\\%$\n\n**Vastaus:** $9{,}2\\,\\%$, kaksi merkitsevää numeroa, koska erotus $3{,}3\\,\\text{TWh}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kymmenen prosenttia luvusta $36{,}0\\,\\text{TWh}$ olisi $3{,}6\\,\\text{TWh}$, ja häviö $3{,}3\\,\\text{TWh}$ on vähän pienempi, joten noin $9\\,\\%$ on oikean suuruinen. Se on yli kaksi kertaa sähköverkon noin $4\\,\\%$:n häviö."
+        "solution": "**Annettu:** verkkoon hankittu energia $E_\\text{lähtö} = 36{,}0\\,\\text{TWh}$ ja asiakkaiden käyttämä energia $E_\\text{perille} = 32{,}7\\,\\text{TWh}$ (Energiateollisuus, 2024)\n\n**Kysytty:** häviön osuus lähtevästä energiasta prosentteina\n\n**Periaate:** Energia ei katoa. Osa energiasta lähtee mutta ei tule asiakkaille. Tämä osa on muuttunut lämmöksi ympäristöön. Se on siirtohäviötä. Osuus lasketaan lähtevästä energiasta. Prosentti kertoo, kuinka suuri osa verkkoon syötetystä lämmöstä hävisi.\n\n**Kaava:** $E_\\text{häviö} = E_\\text{lähtö} - E_\\text{perille}$ ja $\\text{osuus} = \\dfrac{E_\\text{häviö}}{E_\\text{lähtö}}$\n\n**Muunnokset:** Yksikkömuunnoksia ei tarvita, koska molemmat energiat ovat terawattitunteina. Osuus muutetaan prosentiksi. Se kerrotaan sadalla: $0{,}0917 = 0{,}0917 \\cdot 100\\,\\% = 9{,}17\\,\\%$.\n\n**Sijoitus:** $E_\\text{häviö} = 36{,}0\\,\\text{TWh} - 32{,}7\\,\\text{TWh} = 3{,}3\\,\\text{TWh}$, ja $\\text{osuus} = 3{,}3\\,\\text{TWh} : 36{,}0\\,\\text{TWh} = 0{,}0917 = 9{,}17\\,\\%$\n\n**Vastaus:** $9{,}2\\,\\%$, kaksi merkitsevää numeroa. Syy on, että erotus $3{,}3\\,\\text{TWh}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kymmenen prosenttia luvusta $36{,}0\\,\\text{TWh}$ olisi $3{,}6\\,\\text{TWh}$. Häviö $3{,}3\\,\\text{TWh}$ on vähän pienempi. Siksi noin $9\\,\\%$ on oikean suuruinen. Se on yli kaksi kertaa sähköverkon noin $4\\,\\%$:n häviö."
       }
     },
     {
@@ -139,7 +139,7 @@
       "type": "interpret",
       "title": "Sähköverkko ja kaukolämpö rinnakkain",
       "source": "statistics",
-      "source_note": "Energiateollisuus, Sähkövuosi 2024 ja Kaukolämpötilasto 2024 (luvut pyöristetty)",
+      "source_note": "Energiateollisuus, Sähkövuosi 2024 ja Kaukolämpötilasto 2024 (luvut on pyöristetty)",
       "text": "Taulukossa on sähköverkon ja kaukolämpöverkon häviö vuonna 2024. Sähköverkon häviö on noin $4\\,\\%$ sähkön kulutuksesta. Kulutusta käytetään tässä verkon lähtevänä energiana. Kaukolämmön luku on edellisestä aineistosta. Sähkön luvut ovat pyöristettyjä.\n\n| | Lähtö (TWh) | Häviö (TWh) | Osuus (%) |\n|---|---|---|---|\n| Sähköverkko | $83$ | $3$ | $4$ |\n| Kaukolämpöverkko | $36{,}0$ | $3{,}3$ | $9{,}2$ |\n\nVertaa häviötä energiana ja osuutena lähtevästä energiasta.",
       "question": {
         "type": "choice",
@@ -254,7 +254,7 @@
         },
         {
           "text": "Häviö pitää laskea perille tulevasta energiasta eikä lähtevästä.",
-          "feedback": "Häviöprosentti lasketaan lähtevästä energiasta, koska se kertoo, kuinka suuri osa verkkoon syötetystä energiasta hävisi. Perille tuleva energia ei ole tiedossa ennen laskua."
+          "feedback": "Häviöprosentti lasketaan lähtevästä energiasta. Se kertoo, kuinka suuri osa verkkoon syötetystä energiasta hävisi. Perille tuleva energia ei ole tiedossa ennen laskua."
         },
         {
           "text": "Energia ei vähene lainkaan, koska energia ei katoa.",
@@ -278,7 +278,7 @@
       "hints": [
         "Akku on varasto: se siirtää energiaa ajassa. Mikä on varastoon viety ja mikä takaisin saatu energia?",
         "Energia ei katoa, joten häviö on viety energia miinus takaisin saatu energia: $12{,}0\\,\\text{kWh} - 10{,}2\\,\\text{kWh}$.",
-        "Osuus lasketaan viedystä energiasta: $1{,}8\\,\\text{kWh} : 12{,}0\\,\\text{kWh}$, ja tulos kerrotaan sadalla prosentin saamiseksi."
+        "Osuus lasketaan viedystä energiasta: $1{,}8\\,\\text{kWh} : 12{,}0\\,\\text{kWh}$, Kerro lopuksi tulos sadalla, niin saat prosentin."
       ],
       "mistakes": [
         {
@@ -290,7 +290,7 @@
           "feedback": "Jaoit häviön takaisin saadulla energialla $10{,}2\\,\\text{kWh}$. Osuus lasketaan varastoon viedystä energiasta $12{,}0\\,\\text{kWh}$."
         }
       ],
-      "solution": "**Annettu:** varastoon viety energia $E_\\text{lähtö} = 12{,}0\\,\\text{kWh}$ ja takaisin saatu energia $E_\\text{perille} = 10{,}2\\,\\text{kWh}$\n\n**Kysytty:** lämmöksi muuttuvan energian osuus viedystä energiasta prosentteina\n\n**Periaate:** Akku siirtää energiaa ajassa, ja osa energiasta muuttuu latauksessa ja purussa lämmöksi. Energia säilyy, joten häviö on viedyn ja takaisin saadun energian erotus. Osuus lasketaan viedystä energiasta.\n\n**Kaava:** $E_\\text{häviö} = E_\\text{lähtö} - E_\\text{perille}$ ja $\\text{osuus} = \\dfrac{E_\\text{häviö}}{E_\\text{lähtö}}$\n\n**Muunnokset:** Ei yksikkömuunnoksia, koska molemmat energiat ovat kilowattitunteina. Osuus muutetaan prosentiksi kertomalla sadalla.\n\n**Sijoitus:** $E_\\text{häviö} = 12{,}0\\,\\text{kWh} - 10{,}2\\,\\text{kWh} = 1{,}8\\,\\text{kWh}$, ja $\\text{osuus} = 1{,}8\\,\\text{kWh} : 12{,}0\\,\\text{kWh} = 0{,}150 = 0{,}150 \\cdot 100\\,\\% = 15\\,\\%$\n\n**Vastaus:** $15\\,\\%$, kaksi merkitsevää numeroa, koska erotus $1{,}8\\,\\text{kWh}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Takaisin saatu osuus on $10{,}2 : 12{,}0 = 0{,}85$ eli $85\\,\\%$, ja $85\\,\\% + 15\\,\\% = 100\\,\\%$. Häviö on suurempi kuin sähköverkon ja kaukolämpöverkon häviö, mikä on uskottavaa varastolle, jossa energia muunnetaan kahdesti."
+      "solution": "**Annettu:** varastoon viety energia $E_\\text{lähtö} = 12{,}0\\,\\text{kWh}$ ja takaisin saatu energia $E_\\text{perille} = 10{,}2\\,\\text{kWh}$\n\n**Kysytty:** lämmöksi muuttuvan energian osuus viedystä energiasta prosentteina\n\n**Periaate:** Akku siirtää energiaa ajassa. Kun akkua ladataan ja puretaan, osa energiasta muuttuu lämmöksi. Energia säilyy. Siksi häviö on viedyn ja takaisin saadun energian erotus. Osuus lasketaan viedystä energiasta.\n\n**Kaava:** $E_\\text{häviö} = E_\\text{lähtö} - E_\\text{perille}$ ja $\\text{osuus} = \\dfrac{E_\\text{häviö}}{E_\\text{lähtö}}$\n\n**Muunnokset:** Yksikkömuunnoksia ei tarvita, koska molemmat energiat ovat kilowattitunteina. Osuus muutetaan prosentiksi. Se kerrotaan sadalla.\n\n**Sijoitus:** $E_\\text{häviö} = 12{,}0\\,\\text{kWh} - 10{,}2\\,\\text{kWh} = 1{,}8\\,\\text{kWh}$, ja $\\text{osuus} = 1{,}8\\,\\text{kWh} : 12{,}0\\,\\text{kWh} = 0{,}150 = 0{,}150 \\cdot 100\\,\\% = 15\\,\\%$\n\n**Vastaus:** $15\\,\\%$, kaksi merkitsevää numeroa. Syy on, että erotus $1{,}8\\,\\text{kWh}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Takaisin saatu osuus on $10{,}2 : 12{,}0 = 0{,}85$ eli $85\\,\\%$, ja $85\\,\\% + 15\\,\\% = 100\\,\\%$. Häviö on suurempi kuin sähköverkon ja kaukolämpöverkon häviö. Se on uskottavaa, koska varastossa energia muunnetaan kahdesti."
     },
     {
       "id": "harjoitukset",
@@ -312,7 +312,7 @@
         },
         {
           "text": "Paksulla eristeellä varustetun putken, koska eriste ottaa itseensä energiaa.",
-          "feedback": "Eriste ei kuluta energiaa. Sen tehtävä on hidastaa lämmön pääsyä ympäristöön, joten paksu eriste pienentää häviötä."
+          "feedback": "Eriste ei kuluta energiaa. Sen tehtävä on hidastaa lämmön pääsyä ympäristöön. Siksi paksu eriste pienentää häviötä."
         },
         {
           "text": "Häviö on sama, koska siirretty energia on sama.",
@@ -348,7 +348,7 @@
           "feedback": "Lisäsit perille tulevaan energiaan $25\\,\\%$ siitä. Häviöprosentti lasketaan lähtevästä energiasta, ei perille tulevasta. Jaa siis luvulla $0{,}75$."
         }
       ],
-      "solution": "**Annettu:** perille tuleva energia $E_\\text{perille} = 375\\,\\text{MWh}$ ja hyötysuhde $\\eta = 75\\,\\%$\n\n**Kysytty:** verkkoon syötettävä energia $E_\\text{lähtö}$ megawattitunteina\n\n**Periaate:** Hyötysuhde on perille tulevan energian osuus lähtevästä energiasta. Kun perille tuleva energia ja hyötysuhde tunnetaan, lähtevä energia saadaan jakamalla.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{perille}}{E_\\text{lähtö}}$, josta $E_\\text{lähtö} = \\dfrac{E_\\text{perille}}{\\eta}$\n\n**Muunnokset:** $75\\,\\% = 75 : 100 = 0{,}75$. Energian yksikkö pysyy megawattitunteina.\n\n**Sijoitus:** $E_\\text{lähtö} = 375\\,\\text{MWh} : 0{,}75 = 500\\,\\text{MWh}$\n\n**Vastaus:** $5{,}0 \\cdot 10^2\\,\\text{MWh}$, kaksi merkitsevää numeroa, koska hyötysuhde $75\\,\\%$ on epätarkin tieto.\n\n**Järkevyys:** Häviö on $500\\,\\text{MWh} - 375\\,\\text{MWh} = 125\\,\\text{MWh}$ eli $25\\,\\%$ luvusta $500\\,\\text{MWh}$. Lähtevä energia on perille tulevaa suurempi, kuten pitääkin."
+      "solution": "**Annettu:** perille tuleva energia $E_\\text{perille} = 375\\,\\text{MWh}$ ja hyötysuhde $\\eta = 75\\,\\%$\n\n**Kysytty:** verkkoon syötettävä energia $E_\\text{lähtö}$ megawattitunteina\n\n**Periaate:** Hyötysuhde on perille tulevan energian osuus lähtevästä energiasta. Tässä tunnetaan perille tuleva energia ja hyötysuhde. Silloin lähtevä energia saadaan jakamalla.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{perille}}{E_\\text{lähtö}}$, josta $E_\\text{lähtö} = \\dfrac{E_\\text{perille}}{\\eta}$\n\n**Muunnokset:** $75\\,\\% = 75 : 100 = 0{,}75$. Energian yksikkö pysyy megawattitunteina.\n\n**Sijoitus:** $E_\\text{lähtö} = 375\\,\\text{MWh} : 0{,}75 = 500\\,\\text{MWh}$\n\n**Vastaus:** $5{,}0 \\cdot 10^2\\,\\text{MWh}$, kaksi merkitsevää numeroa. Syy on, että hyötysuhde $75\\,\\%$ on epätarkin tieto.\n\n**Järkevyys:** Häviö on $500\\,\\text{MWh} - 375\\,\\text{MWh} = 125\\,\\text{MWh}$ eli $25\\,\\%$ luvusta $500\\,\\text{MWh}$. Lähtevä energia on perille tulevaa suurempi, kuten pitääkin."
     },
     {
       "id": "tarkistus-3",

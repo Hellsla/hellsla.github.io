@@ -103,7 +103,7 @@
       "type": "interpret",
       "title": "Polttoaineiden lämpöarvot",
       "source": "statistics",
-      "source_note": "Polttopuu ja jyrsinturve: Tilastokeskus, Polttoaineluokitus (2017); maakaasu, kivihiili ja diesel: IPCC 2006 Guidelines, osa 2, oletuslämpöarvojen taulukko (2006); bensiini: suomalaisen etanolia sisältävän bensiinin tyypillinen arvo (puhtaalle bensiinille IPCC 2006 antaa $44{,}3\\,\\text{MJ/kg}$); puupelletti: tyypillinen arvo. Tehollisia lämpöarvoja, pyöristetty",
+      "source_note": "Polttopuu ja jyrsinturve: Tilastokeskus, Polttoaineluokitus (2017). Maakaasu, kivihiili ja diesel: IPCC 2006 Guidelines, osa 2, oletuslämpöarvojen taulukko (2006). Bensiini: suomalaisen etanolia sisältävän bensiinin tyypillinen arvo (puhtaalle bensiinille IPCC 2006 antaa $44{,}3\\,\\text{MJ/kg}$). Puupelletti: tyypillinen arvo. Arvot ovat tehollisia lämpöarvoja, ja ne on pyöristetty.",
       "text": "Taulukossa on yleisten polttoaineiden lämpöarvot $H$. Lämpöarvo on energia, joka vapautuu yhdestä kilogrammasta polttoainetta.\n\n| Polttoaine | $H$ ($\\text{MJ/kg}$) |\n|---|---|\n| maakaasu | 48 |\n| bensiini | 43 |\n| diesel | 43 |\n| kivihiili | 26 |\n| puupelletti | 17 |\n| polttopuu (ilmakuiva) | 15 |\n| turve (jyrsinturve) | 10 |\n",
       "question": {
         "type": "choice",
@@ -136,7 +136,7 @@
       "optional": true,
       "title": "Kuinka energia riippuu massasta?",
       "source": "model",
-      "source_note": "esimerkki: ilmakuivan polttopuun poltosta lasketut arvot lämpöarvolla $15\\,\\text{MJ/kg}$",
+      "source_note": "esimerkki: lasketut arvot ilmakuivan polttopuun poltosta, kun lämpöarvo on $15\\,\\text{MJ/kg}$",
       "text": "Ilmakuivaa polttopuuta poltetaan eri määriä. Taulukossa on poltetun puun massa $m$ ja siitä vapautuva energia $E$.\n\n| $m$ ($\\text{kg}$) | $E$ ($\\text{MJ}$) |\n|---|---|\n| 1,0 | 15 |\n| 2,0 | 30 |\n| 4,0 | 60 |\n| 8,0 | 120 |\n",
       "question": {
         "type": "choice",

@@ -151,15 +151,15 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the volume changes",
-      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy 20 °C:ssa. Muuta vain tilavuutta ja kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin, mutta paineen pascaleina (100 kPa = 100 000 Pa) ja tulon $pV$ jouleina ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0{,}001\\,\\text{J}$).",
+      "intro": "Test predictions 1 and 3. The change of state is isothermal, so the temperature stays at 20 °C. Change only the volume and record a measurement at least at the volumes 50 ml, 25 ml and 100 ml. The table shows the volume in millilitres, like the slider, but the pressure in pascals (100 kPa = 100 000 Pa) and the product $pV$ in joules ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0.001\\,\\text{J}$).",
       "initial": {
         "mode": "isoterminen",
         "Tc": 20,
         "Vml": 50
       },
       "names": {
-        "mode": "tilanmuutos",
-        "Vml": "tilavuus V",
+        "mode": "change of state",
+        "Vml": "volume V",
         "Tc": "θ"
       },
       "units": {
@@ -188,14 +188,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the temperature changes, the pressure stays the same",
-      "intro": "Testaa ennuste 2. Mäntä pääsee liikkumaan, ja sen päällä oleva paino pitää paineen 100 kPa:ssa, joten tilanmuutos on isobaarinen. Muuta vain lämpötilaa ja kirjaa mittaus ainakin lämpötiloissa 20 °C ja 80 °C, mielellään myös 150 °C ja −50 °C. Katso $(T, V)$-kuvaajasta, mihin kohtaan pisteiden kautta piirretty suora osuisi, jos sitä jatkettaisiin. Taulukko näyttää säätämäsi celsiuslämpötilan $\\theta$, kelvinlämpötilan $T$, ilman tilavuuden millilitroina ja suhteen $V/T$ yksikössä ml/K.",
+      "intro": "Test prediction 2. The piston is free to move, and the weight on top of it keeps the pressure at 100 kPa, so the change of state is isobaric. Change only the temperature and record a measurement at least at temperatures 20 °C and 80 °C, preferably also 150 °C and −50 °C. In the $(T, V)$ graph, see where a line drawn through the points would hit if it were extended. The table shows the Celsius temperature $\\theta$ you set, the kelvin temperature $T$, the volume of the air in millilitres and the ratio $V/T$ in ml/K.",
       "initial": {
         "mode": "isobaarinen",
         "Tc": 20
       },
       "names": {
-        "mode": "tilanmuutos",
-        "Vml": "tilavuus V",
+        "mode": "change of state",
+        "Vml": "volume V",
         "Tc": "θ"
       },
       "units": {
@@ -275,7 +275,7 @@
         ]
       },
       "source": "simulated",
-      "source_note": "keksityt, oikeaa ruiskukoetta muistuttavat esimerkkiarvot"
+      "source_note": "invented example values resembling a real syringe experiment"
     },
     {
       "id": "johtopaatos",

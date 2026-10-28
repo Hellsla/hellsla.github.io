@@ -89,7 +89,7 @@
       "level": 3,
       "text": "A hiker carries food with an energy content of $18\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (example value). There is $2.4\\,\\text{kg}$ of food, and the hiker needs $12\\,\\text{MJ}$ of energy from food per day. How many daily rations does the food provide? Give the answer as a decimal number and justify your calculation.",
       "answer": 3.6,
-      "unit": "päivän annosta",
+      "unit": "daily portions",
       "tolerance": 0.02
     },
     {

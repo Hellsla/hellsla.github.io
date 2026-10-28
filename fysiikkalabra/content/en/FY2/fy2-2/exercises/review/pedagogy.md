@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b9e13ffaab2fbbc6
+CONTENT-HASH: f9aec5781d92f5c4
 
 ## Blocking
 (none left)
@@ -12,3 +12,4 @@ CONTENT-HASH: b9e13ffaab2fbbc6
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): natural English and consistent step labels in all solutions; tasks ask the same thing at the same level of demand.
+- Update 2026-10-28: reviewed the newly checked fields (experiment intros with *Kohde*/*Item* matching the sim label, column names, word units kpl/pcs, string answers); all correct, no changes; re-hashed.

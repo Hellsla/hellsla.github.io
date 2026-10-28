@@ -137,26 +137,26 @@ missä $v$ on nopeus alaspäin ($\text{m/s}$), $g = 9{,}81\,\text{m/s}^2$ on put
 Putoavan kappaleen $(t, v)$-kuvaaja on siis origon kautta kulkeva nouseva suora. Suoran kulmakerroin $\tfrac{\Delta v}{\Delta t}$ on putoamiskiihtyvyys. Voit siis lukea $g$:n kuvaajasta kahdesta pisteestä, jotka ovat kaukana toisistaan. Kiihtyvyys on vakio, joten mille tahansa aikavälille pätee $\Delta v = g\,\Delta t$. Nopeus kasvaa sekunnissa $9{,}81\,\text{m/s}$ myös silloin, kun kappale ei lähtenyt levosta.
 
 ## Esimerkki
-Kivi pudotetaan levosta sillalta, ja se osuu veteen $1{,}5\,\text{s}$ myöhemmin. Mikä on kiven nopeus veteen osuessa yksiköissä $\text{m/s}$ ja $\text{km/h}$? Ilmanvastus jätetään huomiotta.
+Kivi pudotetaan levosta sillalta. Se osuu veteen $1{,}5\,\text{s}$ myöhemmin. Mikä on kiven nopeus, kun se osuu veteen? Anna nopeus yksiköissä $\text{m/s}$ ja $\text{km/h}$. Ilmanvastus jätetään huomiotta.
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Pudotuksen kesto on $t = 1{,}5\,\text{s}$, kivi lähtee levosta ja putoamiskiihtyvyys on $g = 9{,}81\,\text{m/s}^2$. Kysytään nopeutta $v$ osuman hetkellä ensin yksikössä $\text{m/s}$ ja sitten yksikössä $\text{km/h}$.
+**Tunnetut ja kysytty.** Pudotus kestää $t = 1{,}5\,\text{s}$. Kivi lähtee levosta. Putoamiskiihtyvyys on $g = 9{,}81\,\text{m/s}^2$. Kysytään nopeutta $v$ sillä hetkellä, kun kivi osuu veteen. Nopeus lasketaan ensin yksikössä $\text{m/s}$ ja sitten yksikössä $\text{km/h}$.
 
 <!-- vaihe -->
 
-**Periaate.** Kivi on vapaassa pudotuksessa, koska ilmanvastus jätetään huomiotta, ja se lähtee levosta. Silloin nopeus kasvaa joka sekunti saman verran, joten nopeus on suoraan verrannollinen aikaan: $v = g\,t$.
+**Periaate.** Ilmanvastus jätetään huomiotta. Siksi kivi on vapaassa pudotuksessa. Lisäksi kivi lähtee levosta. Silloin nopeus kasvaa joka sekunti saman verran. Nopeus on siis suoraan verrannollinen aikaan: $v = g\,t$.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Kaava on jo ratkaistu kysytyn suureen suhteen:
+**Kaava ratkaistuna.** Kaava on jo valmiiksi oikeassa muodossa. Kysytty nopeus on yksin vasemmalla puolella:
 ```latex
 v = g\,t
 ```
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Aika on sekunteina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee yksikössä $\text{m/s}$ ilman muunnosta. Kilometreiksi tunnissa muunnetaan miettimällä, mitä $1\,\text{m/s}$ tarkoittaa: tunnissa ($3600\,\text{s}$) kertyy $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$. Tämä sijoitetaan yksikön paikalle.
+**Yksikkömuunnokset.** Aika on sekunteina ja $g$ on yksikössä $\text{m/s}^2$. Siksi tulos tulee suoraan yksikössä $\text{m/s}$. Muunnosta ei tarvita. Sitten tulos muunnetaan kilometreiksi tunnissa. Mieti, mitä $1\,\text{m/s}$ tarkoittaa. Tunnissa ($3600\,\text{s}$) kappale kulkee $3600\,\text{m} = 3{,}6\,\text{km}$. Siis $1\,\text{m/s} = 3{,}6\,\text{km/h}$. Tämä sijoitetaan laskussa yksikön paikalle.
 
 <!-- vaihe -->
 
@@ -175,11 +175,11 @@ v &= 14{,}715 \cdot 1\,\text{m/s} \\
 
 <!-- vaihe -->
 
-**Tulos.** Nopeus on $v \approx 15\,\text{m/s}$ eli $v \approx 53\,\text{km/h}$. Kaksi merkitsevää numeroa, koska aika $1{,}5\,\text{s}$ on annettu kahdella numerolla. Muunnos tehdään pyöristämättömästä arvosta, ei pyöristetystä $15\,\text{m/s}$.
+**Tulos.** Nopeus on $v \approx 15\,\text{m/s}$ eli $v \approx 53\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa. Syy on se, että aika $1{,}5\,\text{s}$ on annettu kahdella numerolla. Muunnos tehdään pyöristämättömästä arvosta. Sitä ei tehdä pyöristetystä arvosta $15\,\text{m/s}$.
 
 <!-- vaihe -->
 
-**Järkevyys.** Kuvaajasta nähdään sama: hetkellä $1\,\text{s}$ nopeus on $9{,}8\,\text{m/s}$ ja hetkellä $2\,\text{s}$ se on $19{,}6\,\text{m/s}$, joten väliltä $1{,}5\,\text{s}$ osuu noin $15\,\text{m/s}$. Nopeus $53\,\text{km/h}$ on kaupunkiliikenteen autolle tavallinen vauhti, ja se on järkevä tulos pudotukselle, joka kestää vain puolitoista sekuntia.
+**Järkevyys.** Kuvaaja näyttää saman. Hetkellä $1\,\text{s}$ nopeus on $9{,}8\,\text{m/s}$. Hetkellä $2\,\text{s}$ se on $19{,}6\,\text{m/s}$. Hetki $1{,}5\,\text{s}$ on näiden välissä, joten nopeus on noin $15\,\text{m/s}$. Nopeus $53\,\text{km/h}$ on tavallinen vauhti autolle kaupungissa. Se on järkevä tulos pudotukselle, joka kestää vain puolitoista sekuntia.
 
 ## Yleinen virhekäsitys
 Raskas kappale ei putoa nopeammin kuin kevyt. Kun ilmanvastusta ei ole, kaikilla kappaleilla on sama $g$. Arkikokemus näyttää toista, koska ilmassa kevyt ja leveä kappale hidastuu eniten. Toinen virhe on pitää lukua $g = 9{,}81\,\text{m/s}^2$ nopeutena. Se kertoo, kuinka paljon nopeus kasvaa joka sekunti. Nopeus itse on $g\,t$.
@@ -188,5 +188,5 @@ Raskas kappale ei putoa nopeammin kuin kevyt. Kun ilmanvastusta ei ole, kaikilla
 - Vapaassa pudotuksessa ei ole ilmanvastusta. Kappaleen nopeus kasvaa joka sekunti yhtä paljon.
 - Putoamiskiihtyvyys on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$, ja se on sama kaikille kappaleille massasta riippumatta.
 - Levosta lähteneen kappaleen nopeus on $v = g\,t$, ja $(t, v)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $g$.
-- Ilmassa kevyt ja leveä kappale hidastuu eniten, joten $v = g\,t$ ei päde ilman ilmanvastuksen huomiotta jättämistä.
+- Ilmassa kevyt ja leveä kappale hidastuu eniten. Siksi kaava $v = g\,t$ pätee vain, kun ilmanvastus jätetään huomiotta.
 - Muunnos: tunnissa $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.

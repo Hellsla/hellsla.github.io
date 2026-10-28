@@ -81,7 +81,7 @@
       "level": 3,
       "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of 119.7 AU from the Sun (NASA/JPL), and its speed relative to the Sun is 15.341 km/s (JPL). Assume the speed is constant. How many days after the heliopause crossing is the probe, according to the model, 150 AU from the Sun? Use the values 1 AU = 149 597 870.7 km and 1 day = 86 400 s. The result is a model value.",
       "answer": 3420,
-      "unit": "vrk",
+      "unit": "d",
       "tolerance": 0.02
     },
     {

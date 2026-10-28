@@ -100,7 +100,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "A trolley moves along a straight track at constant speed. Change the initial position and the speed, start the motion or drag the moment, and see how the $(t, s)$ graph is drawn.",
-      "howto": "Set the initial position $s_0$ and the speed $v$ with the sliders; the time returns to zero. *Start* plays the motion, *Pause* stops it and *Reset* returns to the beginning. You can also drag the *Moment* slider. On the track, the orange vertical lines are the positions of the trolley at whole seconds, the green flag is the initial position and the arrow shows the speed. A straight line is drawn in the graph up to the moment you have reached. When you have reached the moment 6 s, a slope triangle appears in the graph. *Speed (playback)* changes only the pace of the playback.",
+      "howto": "Set the initial position $s_0$ and the speed $v$ with the sliders; the time returns to zero. *Start* plays the motion, *Pause* stops it and *Reset* returns to the beginning. You can also drag the *Moment* slider. On the track, the orange vertical lines are the positions of the trolley at whole seconds, the green flag is the initial position and the arrow shows the speed. A straight line is drawn in the graph up to the moment you have reached. When you have reached the moment 6 s, a slope triangle appears in the graph. *Speed (replay)* changes only the pace of the replay.",
       "model": "The trolley moves along a straight track at constant speed: no friction and no acceleration, and the full speed is reached right at the start. The positions on the track and the values in the graph are values calculated by the model, not measurements. The trolley moves in one direction only, so the speed is positive.",
       "calc": "The position is $s = s_0 + vt$ and the distance travelled is $\\Delta s = s - s_0 = vt$. The slope triangle in the graph goes from the moment $t = 2\\,\\text{s}$ to the moment $t = 6\\,\\text{s}$, so $\\Delta t = 4.0\\,\\text{s}$, and the slope $\\Delta s : \\Delta t$ is the speed $v$."
     },
@@ -109,7 +109,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: starting from the zero point",
-      "intro": "Testaa ennuste 1. Alkupaikka $s_0 = 0$ ja nopeus $v = 2{,}0\\,\\text{m/s}$ pysyvät vakioina. Muuta vain hetkeä $t$ ja kirjaa paikka ainakin kolmella hetkellä $t > 0$, esimerkiksi 2,0 s, 4,0 s ja 8,0 s. Laske jokaiselle riville osamäärä $s : t$. Katso myös, miten kuvaaja piirtyy.",
+      "intro": "Test prediction 1. The initial position $s_0 = 0$ and the speed $v = 2.0\\,\\text{m/s}$ stay constant. Change only the moment $t$ and record the position at at least three moments $t > 0$, for example 2.0 s, 4.0 s and 8.0 s. For each row, calculate the quotient $s : t$. Also look at how the graph is drawn.",
       "initial": {
         "s0": 0,
         "v": 2,
@@ -121,9 +121,9 @@
       ],
       "vary": "t",
       "names": {
-        "s0": "alkupaikka",
-        "v": "nopeus",
-        "t": "hetki"
+        "s0": "initial position",
+        "v": "speed",
+        "t": "moment"
       },
       "units": {
         "s0": "m",
@@ -162,7 +162,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: starting from 6.0 metres",
-      "intro": "Testaa ennuste 2. Nyt alkupaikka on $s_0 = 6{,}0\\,\\text{m}$ ja nopeus yhä $2{,}0\\,\\text{m/s}$. Muuta vain hetkeä $t$ ja kirjaa paikka $s$ ja matka $\\Delta s$ ainakin kolmella hetkellä $t > 0$, esimerkiksi 2,0 s, 4,0 s ja 8,0 s. Laske kummastakin sarakkeesta osamäärä (paikka tai matka) jaettuna ajalla $t$.",
+      "intro": "Test prediction 2. Now the initial position is $s_0 = 6.0\\,\\text{m}$ and the speed is still $2.0\\,\\text{m/s}$. Change only the moment $t$ and record the position $s$ and the distance $\\Delta s$ at at least three moments $t > 0$, for example 2.0 s, 4.0 s and 8.0 s. For both columns, calculate the quotient (position or distance) divided by the time $t$.",
       "initial": {
         "s0": 6,
         "v": 2,
@@ -174,9 +174,9 @@
       ],
       "vary": "t",
       "names": {
-        "s0": "alkupaikka",
-        "v": "nopeus",
-        "t": "hetki"
+        "s0": "initial position",
+        "v": "speed",
+        "t": "moment"
       },
       "units": {
         "s0": "m",
@@ -283,7 +283,7 @@
         },
         {
           "text": "There is no error in the calculation, because in uniform motion the position and the time are proportional.",
-          "feedback": "The distance and the time are proportional, not the position when the initial position is not zero. Check by substituting $t = 6.0\\,\\text{s}$ directly: $5.0 + 3.0 \\cdot 6.0 = 23\\,\\text{m}$, not $33\\,\\text{m}$."
+          "feedback": "When the initial position is not zero, the distance is proportional to time, but the position is not. Check by substituting $t = 6.0\\,\\text{s}$ directly: $5.0 + 3.0 \\cdot 6.0 = 23\\,\\text{m}$, not $33\\,\\text{m}$."
         }
       ]
     },

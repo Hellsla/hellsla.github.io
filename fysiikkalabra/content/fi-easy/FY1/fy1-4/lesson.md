@@ -4,7 +4,7 @@
 
 ## Ydinajatus
 ### Kuvaaja kokoaa mittaukset yhteen
-Mittaat kaksi suuretta. Esimerkiksi mittaat kärryn kulkeman matkan $s$ eri ajanhetkillä $t$. Jokainen mittaus on kuvaajassa yksi piste. Pisteen vaakakoordinaatti on toisen suureen arvo. Pystykoordinaatti on toisen suureen arvo. Vaaka-akselille laitetaan yleensä se suure, jonka arvon mittaaja valitsee. Siihen laitetaan myös suure, joka etenee tasaisesti, kuten aika. Pystyakselille laitetaan mitattava suure.
+Mittaat kaksi suuretta. Esimerkiksi mittaat kärryn kulkeman matkan $s$ eri ajanhetkillä $t$. Jokainen mittaus on kuvaajassa yksi piste. Pisteen vaakakoordinaatti on yhden suureen arvo. Pystykoordinaatti on toisen suureen arvo. Vaaka-akselille laitetaan yleensä se suure, jonka arvon mittaaja itse valitsee. Se voi olla myös suure, joka kasvaa tasaisesti, kuten aika. Pystyakselille laitetaan mitattava suure.
 
 Kuvaajassa on akselit. Akselin päähän kirjoitetaan suure ja sen yksikkö, kuten $s\ (\text{m})$. Asteikon pitää olla tasavälinen, ja jakoviivoja pitää olla riittävän tiheässä. Valitse asteikko niin, että pisteet täyttävät suurimman osan kuvaajasta.
 
@@ -135,7 +135,7 @@ Tässä $\Delta y$ on pisteiden välinen $y$:n muutos. $\Delta x$ on pisteiden v
   <foreignObject x="167.5" y="105.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$y = kx + b$</span></div></foreignObject>
 </svg>
 
-Kaksi asiaa vaikuttaa tulokseen. Ensimmäinen: lue pisteet sovitetulta suoralta, älä mittauspisteistä. Toinen: valitse pisteet kaukana toisistaan. Silloin lukemavirhe vaikuttaa kulmakertoimeen vähän. Vakiotermi $b$ luetaan suoran ja pystyakselin leikkauskohdasta. Sen voi myös laskea yhdestä suoran pisteestä: $b = y_1 - kx_1$. Jos haluat $x$:n ja $y$ tunnetaan, ratkaise yhtälöstä: $x = \tfrac{y - b}{k}$.
+Kaksi asiaa vaikuttaa tulokseen. Ensimmäinen: lue pisteet sovitetulta suoralta, älä mittauspisteistä. Toinen: valitse pisteet kaukana toisistaan. Silloin lukemavirhe vaikuttaa kulmakertoimeen vähän. Vakiotermi $b$ luetaan suoran ja pystyakselin leikkauskohdasta. Sen voi myös laskea yhdestä suoran pisteestä: $b = y_1 - kx_1$. Joskus $y$ tunnetaan ja halutaan $x$. Silloin ratkaise yhtälöstä: $x = \tfrac{y - b}{k}$.
 
 Kulmakertoimen merkki kertoo suunnan. Kun kulmakerroin on positiivinen, suora nousee. Kun kulmakerroin on negatiivinen, suora laskee. Kulmakertoimella on yleensä fysikaalinen merkitys. Matka-aikakuvaajassa se on nopeus. Massa-tilavuuskuvaajassa se on tiheys.
 
@@ -258,7 +258,7 @@ Moni yhdistää mittauspisteet toisiinsa viivalla. Moni myös pakottaa suoran ku
 
 Toinen virhe on laskea kulmakerroin kahdesta mittauspisteestä. Silloin kummankin pisteen virhe vaikuttaa tulokseen. Jos pisteet ovat vielä lähellä toisiaan, tulos on epävarma. Lue pisteet sovitetulta suoralta ja kauas toisistaan.
 
-Kolmas virhe on olettaa, että suora kulkee aina origon kautta. Vakiotermi ei aina ole nolla. Silloin suureet eivät ole suoraan verrannolliset. Tällöin $b$ kertoo, mitä $y$ on silloin, kun $x$ on nolla.
+Kolmas virhe on olettaa, että suora kulkee aina origon kautta. Jos vakiotermi ei ole nolla, suureet eivät ole suoraan verrannolliset. Silloin $b$ kertoo, mitä $y$ on silloin, kun $x$ on nolla.
 
 ## Tiivistelmä
 - Kuvaajan akseleilla ovat suureet yksikköineen. Asteikko on tasavälinen. Mittauspisteitä ei yhdistetä toisiinsa.

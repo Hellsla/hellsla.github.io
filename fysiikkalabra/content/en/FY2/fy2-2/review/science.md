@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 07e21535a1f214c9
+CONTENT-HASH: 49312002adec9bb2
 
 ## Blocking
 (none left)
@@ -12,3 +12,4 @@ CONTENT-HASH: 07e21535a1f214c9
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (all prose, worked example steps, misconception, summary), inquiry.json (all activities, choices, feedback, hints, mistakes, solutions), exit-ticket.json, meta.json and figures.json compared line by line with content/fi/FY2/fy2-2. Physics meaning, conservation statements, prefix factors, ratios (≈3, 3.2, 100, 66 MJ, 51 GJ), decimal points, \cdot and chapter titles (courses.json) all match.
+- Update 2026-10-28: reviewed the newly checked fields (experiment intros with *Kohde*/*Item* matching the sim label, column names, word units kpl/pcs, string answers); all correct, no changes; re-hashed.

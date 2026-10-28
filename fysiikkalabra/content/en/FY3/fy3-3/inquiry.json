@@ -145,7 +145,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the temperature changes",
-      "intro": "Testaa ennusteet 1 ja 3. Tilavuus on lukittu 1,0 dm³:iin, ja vain lämpötila muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdessa lämpötilassa, esimerkiksi 150 K, 300 K ja 600 K. Odota säädön jälkeen pari sekuntia, jotta mitattu paine ehtii asettua uuteen arvoonsa. Vertaa kelvinlämpötilojen suhdetta paineiden suhteeseen.",
+      "intro": "Test predictions 1 and 3. The volume is locked at 1.0 dm³, and only the temperature changes. Record the pressure and the mean speed $v$ of the particles (relative to the mean speed at 300 K) at at least two temperatures, for example 150 K, 300 K and 600 K. After adjusting, wait a couple of seconds so that the measured pressure has time to settle to its new value. Compare the ratio of the kelvin temperatures with the ratio of the pressures.",
       "initial": {
         "T": 300,
         "V": 1
@@ -183,7 +183,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Further investigation: only the volume changes",
-      "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
+      "intro": "Test prediction 2. The temperature is locked at 300 K, and only the volume changes. Record the pressure and the mean speed $v$ of the particles (relative to the mean speed at 300 K) at at least two volumes, for example 2.0 dm³ and 1.0 dm³. Wait a couple of seconds after adjusting before recording. Does the speed of the particles change? What then increases the pressure?",
       "initial": {
         "T": 300,
         "V": 2

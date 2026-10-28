@@ -22,20 +22,30 @@ ROOT = courses.ROOT
 TEXT_KEYS = {"text", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
              "claim", "why", "predictions", "rubric", "note", "words",
-             "solution", "contribution", "learn", "prior", "criteria", "pair"}
+             "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer"}
+WORD_UNIT = re.compile(r"kpl|milj|vrk|kertaa|toistoa|tuhatta|suuruusluokkaa|ihmistä|annosta|ilma")   # a unit that is Finnish words
+
+
+def is_text(key, value, parent=None):
+    """Is this string a text a translation translates? An experiment's column names ({"names": {var: name}}) and a
+    unit written in words (kpl, milj. km) are; numbers, ids, symbol units and settings are not."""
+    if not isinstance(value, str): return False
+    if parent == "names": return True
+    if key in ("unit", "units") or parent == "units": return bool(WORD_UNIT.search(value))
+    return key in TEXT_KEYS
 JSON_FILES = ("meta.json", "exercises.json", "exit-ticket.json", "inquiry.json")
 
 
-def same_data(a, b, path, errs, key=None):
+def same_data(a, b, path, errs, key=None, parent=None):
     """b is a translation of a: everything but the texts is identical."""
     if isinstance(a, dict):
         if not isinstance(b, dict) or set(a) != set(b):
             errs.append(f"{path}: keys {sorted(set(a) ^ set(b if isinstance(b, dict) else {}))} differ from Finnish"); return
-        for k in a: same_data(a[k], b[k], f"{path}.{k}", errs, k)
+        for k in a: same_data(a[k], b[k], f"{path}.{k}", errs, k, key)
     elif isinstance(a, list):
         if not isinstance(b, list) or len(a) != len(b): errs.append(f"{path}: {len(a)} items in Finnish, {len(b) if isinstance(b, list) else 'not a list'} here"); return
-        for i, (x, y) in enumerate(zip(a, b)): same_data(x, y, f"{path}[{i}]", errs, key)
-    elif isinstance(a, str) and key in TEXT_KEYS:
+        for i, (x, y) in enumerate(zip(a, b)): same_data(x, y, f"{path}[{i}]", errs, key, parent)
+    elif is_text(key, a, parent):
         if formulas(a) != formulas(b): errs.append(f"{path}: formulas differ from Finnish: {formula_diff(a, b)}")
     elif a != b: errs.append(f"{path}: {b!r} differs from Finnish {a!r} (only texts are translated)")
 

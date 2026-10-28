@@ -96,7 +96,7 @@
       "id": "fy2-1-L3-03",
       "level": 3,
       "text": "Ydinvoimalassa reaktorin ydinreaktiot kuumentavat vettä höyryksi. Höyry pyörittää turbiinia, ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Turbiinista tuleva höyry jäähdytetään merivedellä, joka lämpenee. a) Nimeä energialajit ketjun jokaisessa vaiheessa. b) Voimala tuottaa sähköenergiaksi vain noin kolmanneksen reaktorissa vapautuvasta ydinenergiasta. Selitä energian säilymislain avulla, mihin loput energiasta menee ja miksi se ei ole kadonnut.",
-      "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmannesta päätyy lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
+      "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmasosaa muuttuu lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
       "unit": "",
       "tolerance": 0.02
     }

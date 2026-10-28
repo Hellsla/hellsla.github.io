@@ -75,7 +75,7 @@
       "type": "interpret",
       "title": "Suomen sähköntuotanto 2024",
       "source": "statistics",
-      "source_note": "Tilastokeskus: Sähkön ja lämmön tuotanto 2024 (ydinvoiman ja bioperäisten polttoaineiden luvut johdettu prosenttiosuuksista, pyöristetty; muut lähteet = kokonaistuotanto vähennettynä muilla riveillä).",
+      "source_note": "Tilastokeskus: Sähkön ja lämmön tuotanto 2024. Ydinvoiman ja bioperäisten polttoaineiden luvut on laskettu prosenttiosuuksista ja pyöristetty. Muut lähteet = kokonaistuotanto, josta on vähennetty muut rivit.",
       "text": "Taulukossa on Suomen sähköntuotanto vuonna 2024 energialähteittäin. Kokonaistuotanto oli $79{,}9\\,\\text{TWh}$. Siihen kuuluu myös pieniä muita lähteitä. Ne on koottu viimeiselle riville.\n\n| Lähde | $E$ (TWh) |\n|---|---|\n| ydinvoima | $31$ |\n| tuulivoima | $20{,}2$ |\n| vesivoima | $14{,}1$ |\n| bioperäiset polttoaineet | $9{,}5$ |\n| fossiiliset polttoaineet ja turve | $3{,}4$ |\n| aurinkosähkö | $0{,}9$ |\n| muut lähteet | $0{,}8$ |",
       "question": {
         "type": "numeric",
@@ -107,7 +107,7 @@
       "type": "interpret",
       "title": "Yhden voimalan teho",
       "source": "example",
-      "source_note": "Tyypillisiä, pyöristettyjä tehoja; Olkiluoto 3 on Suomen suurin voimalayksikkö.",
+      "source_note": "Tyypillisiä, pyöristettyjä tehoja. Olkiluoto 3 on Suomen suurin voimalayksikkö.",
       "text": "Taulukossa on tyypillisiä yksittäisten voimalaitosten tehoja. Arvot ovat likimääräisiä ja pyöristettyjä.\n\n| Voimala | Teho |\n|---|---|\n| omakotitalon aurinkopaneelit | $5\\,\\text{kW}$ |\n| tuulivoimala | $5\\,\\text{MW}$ |\n| suuri vesivoimalaitos | $100\\,\\text{MW}$ |\n| Olkiluoto 3 | $1600\\,\\text{MW}$ |",
       "question": {
         "type": "numeric",
@@ -135,7 +135,7 @@
       "type": "interpret",
       "title": "Tuuli ja ydinvoima viikon aikana",
       "source": "example",
-      "source_note": "Keksitty, pyöristetty esimerkkiviikko; suuruusluokat vastaavat Suomen talvea. Tuulivoiman nimellisteho: Suomen Tuulivoimayhdistys 2024.",
+      "source_note": "Keksitty, pyöristetty esimerkkiviikko. Suuruusluokat vastaavat Suomen talvea. Tuulivoiman nimellisteho: Suomen Tuulivoimayhdistys 2024.",
       "text": "Taulukossa on esimerkkiviikko tammikuussa. Siinä on kulutuksen, ydinvoiman ja tuulivoiman teho vuorokauden keskiarvona gigawatteina. Suomen tuulivoimaloiden yhteenlaskettu nimellisteho oli vuoden 2024 lopussa noin $8\\,\\text{GW}$.\n\n| Päivä | Kulutus $(\\text{GW})$ | Ydin $(\\text{GW})$ | Tuuli $(\\text{GW})$ |\n|---|---|---|---|\n| ma | $11{,}3$ | $4{,}3$ | $6{,}4$ |\n| ti | $11{,}9$ | $4{,}3$ | $5{,}1$ |\n| ke | $12{,}6$ | $4{,}3$ | $2{,}2$ |\n| to | $13{,}1$ | $4{,}3$ | $0{,}4$ |\n| pe | $12{,}7$ | $4{,}3$ | $1{,}1$ |\n| la | $11{,}4$ | $4{,}3$ | $3{,}6$ |\n| su | $10{,}8$ | $4{,}3$ | $5{,}8$ |",
       "question": {
         "type": "numeric",

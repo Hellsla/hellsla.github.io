@@ -5,7 +5,7 @@
 ## Ydinajatus
 Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Nopeus kertoo, kuinka pitkän matkan kappale kulkee yhdessä sekunnissa. Siksi nopeuden yksikkö on metri sekunnissa (m/s). Jos kärry etenee joka sekunti kaksi metriä, sen nopeus on 2 m/s.
 
-<svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Liikekuva, jossa sama kärry on piirretty viiden peräkkäisen sekunnin kohdalle ruudulle 0 s, 1 s, 2 s, 3 s ja 4 s. Kärryjen välit ovat yhtä pitkät, ja jokaisen välin alla on yhtä pitkä sulku Δs: tasaisessa liikkeessä kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa, kärryt ovat samankokoisia." style="max-width:100%;font-size:24px">
+<svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Liikekuva. Samaa kärryä on piirretty viiden peräkkäisen sekunnin kohdalle: 0 s, 1 s, 2 s, 3 s ja 4 s. Kärryjen välit ovat yhtä pitkät. Jokaisen välin alla on yhtä pitkä sulku Δs. Kuva näyttää, että tasaisessa liikkeessä kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa. Kärryt ovat samankokoisia." style="max-width:100%;font-size:24px">
   <line x1="24" y1="150" x2="576" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <rect x="42" y="114" width="56" height="22" rx="4" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="57" y="98" width="26" height="16" rx="3" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
@@ -81,7 +81,7 @@ v = \frac{\Delta s}{\Delta t}
 ```
 missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora leikkaa $s$-akselin alkupaikan $s_0$ kohdalla. Jos $s_0 = 0$, paikka on suoraan verrannollinen aikaan: $s = vt$. Jos $s_0 \neq 0$, suora on yhtä jyrkkä, mutta se on siirtynyt ylös tai alas. Silloin vain matka $\Delta s$ on suoraan verrannollinen aikaan. Paikka $s$ ei ole.
 
-<svg data-fig="graph" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: kaksi tasaista liikettä nopeudella 3 m/s esitetään (t, s)-koordinaatistossa suorina. Alempi suora kulkee origon kautta (alkupaikka 0), ylempi alkaa paikasta s₀ = 5 m ja on alemman suoran kanssa yhdensuuntainen. Alemmalle suoralle on piirretty kulmakolmio: 2 s:n aikana paikka kasvaa 6 m, joten kulmakerroin on 3 m/s eli nopeus." style="max-width:100%;font-size:24px">
+<svg data-fig="graph" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja on mittakaavassa. Siinä on kaksi tasaista liikettä, joiden nopeus on 3 m/s. Liikkeet näkyvät (t, s)-koordinaatistossa suorina. Alempi suora kulkee origon kautta, eli alkupaikka on 0. Ylempi suora alkaa paikasta s₀ = 5 m. Suorat ovat yhdensuuntaiset. Alemmalle suoralle on piirretty kulmakolmio. Ajassa 2 s paikka kasvaa 6 m. Siksi kulmakerroin on 3 m/s. Se on nopeus." style="max-width:100%;font-size:24px">
   <line x1="165" y1="300" x2="165" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="233.5" y1="300" x2="233.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="302.5" y1="300" x2="302.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

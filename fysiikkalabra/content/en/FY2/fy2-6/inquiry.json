@@ -75,7 +75,7 @@
       "type": "interpret",
       "title": "Electricity production in Finland in 2024",
       "source": "statistics",
-      "source_note": "Tilastokeskus: Sähkön ja lämmön tuotanto 2024 (ydinvoiman ja bioperäisten polttoaineiden luvut johdettu prosenttiosuuksista, pyöristetty; muut lähteet = kokonaistuotanto vähennettynä muilla riveillä).",
+      "source_note": "Statistics Finland: Electricity and heat production 2024 (figures for nuclear power and bio-based fuels derived from percentages, rounded; other sources = total production minus the other rows).",
       "text": "The table shows electricity production in Finland in 2024 by energy source. Total production was $79.9\\,\\text{TWh}$. It also includes small other sources, which are collected on the last row.\n\n| Source | $E$ (TWh) |\n|---|---|\n| nuclear power | $31$ |\n| wind power | $20.2$ |\n| hydropower | $14.1$ |\n| biofuels | $9.5$ |\n| fossil fuels and peat | $3.4$ |\n| solar power | $0.9$ |\n| other sources | $0.8$ |",
       "question": {
         "type": "numeric",
@@ -107,13 +107,13 @@
       "type": "interpret",
       "title": "The power of a single power plant",
       "source": "example",
-      "source_note": "Tyypillisiä, pyöristettyjä tehoja; Olkiluoto 3 on Suomen suurin voimalayksikkö.",
+      "source_note": "Typical, rounded powers; Olkiluoto 3 is the largest power plant unit in Finland.",
       "text": "The table shows typical powers of individual power plants. The values are indicative and rounded.\n\n| Power plant | Power |\n|---|---|\n| solar panels of a detached house | $5\\,\\text{kW}$ |\n| wind turbine | $5\\,\\text{MW}$ |\n| large hydropower plant | $100\\,\\text{MW}$ |\n| Olkiluoto 3 | $1600\\,\\text{MW}$ |",
       "question": {
         "type": "numeric",
         "prompt": "How many $5.0\\,\\text{MW}$ wind turbines are needed for their rated power to be equal to the rated power of Olkiluoto 3, $1600\\,\\text{MW}$?",
         "answer": 320,
-        "unit": "kpl",
+        "unit": "pcs",
         "tolerance": 0.02,
         "hints": [
           "We compare the same quantity, power: how many times does $5.0\\,\\text{MW}$ fit into $1600\\,\\text{MW}$?",
@@ -135,7 +135,7 @@
       "type": "interpret",
       "title": "Wind and nuclear power over a week",
       "source": "example",
-      "source_note": "Keksitty, pyöristetty esimerkkiviikko; suuruusluokat vastaavat Suomen talvea. Tuulivoiman nimellisteho: Suomen Tuulivoimayhdistys 2024.",
+      "source_note": "An invented, rounded example week; the orders of magnitude correspond to a Finnish winter. Rated power of wind power: Finnish Wind Power Association 2024.",
       "text": "The table shows an example week in January: the power of consumption, nuclear power and wind power as daily averages in gigawatts. The combined rated power of Finnish wind turbines was about $8\\,\\text{GW}$ at the end of 2024.\n\n| Day | Consumption $(\\text{GW})$ | Nuclear $(\\text{GW})$ | Wind $(\\text{GW})$ |\n|---|---|---|---|\n| Mon | $11.3$ | $4.3$ | $6.4$ |\n| Tue | $11.9$ | $4.3$ | $5.1$ |\n| Wed | $12.6$ | $4.3$ | $2.2$ |\n| Thu | $13.1$ | $4.3$ | $0.4$ |\n| Fri | $12.7$ | $4.3$ | $1.1$ |\n| Sat | $11.4$ | $4.3$ | $3.6$ |\n| Sun | $10.8$ | $4.3$ | $5.8$ |",
       "question": {
         "type": "numeric",

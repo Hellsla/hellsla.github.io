@@ -156,7 +156,7 @@ v = g\,t
 
 <!-- vaihe -->
 
-**Unit conversions.** The time is in seconds and $g$ in $\text{m/s}^2$, so the result comes in $\text{m/s}$ without a conversion. To convert to kilometres per hour, think about what $1\,\text{m/s}$ means: in an hour ($3600\,\text{s}$) $3600\,\text{m} = 3.6\,\text{km}$ accumulates, so $1\,\text{m/s} = 3.6\,\text{km/h}$. This is substituted in place of the unit.
+**Unit conversions.** The time is in seconds and $g$ in $\text{m/s}^2$, so the result comes in $\text{m/s}$ without a conversion. To convert to kilometres per hour, think about what $1\,\text{m/s}$ means: in an hour ($3600\,\text{s}$) an object at this speed covers $3600\,\text{m} = 3.6\,\text{km}$, so $1\,\text{m/s} = 3.6\,\text{km/h}$. This is substituted in place of the unit.
 
 <!-- vaihe -->
 

@@ -14,7 +14,7 @@
     "watti",
     "kilowattitunti"
   ],
-  "sim": false,
+  "sim": true,
   "solutions": "all",
   "image": false
 }

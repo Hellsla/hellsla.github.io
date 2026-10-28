@@ -113,7 +113,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the substance changes",
-      "intro": "Testaa ennuste 1. Veden massa ja lämpötila sekä kappaleen massa ja alkulämpötila pysyvät vakioina; vaihda vain kappaleen ainetta. Kirjaa tasapainolämpötila ainakin hiekalla ja vedellä, halutessasi myös metalleilla. Paina välillä *Upota* ja seuraa, kumpi lämpömittari liikkuu enemmän.",
+      "intro": "Test prediction 1. The mass and temperature of the water and the mass and initial temperature of the object stay constant; change only the substance of the object. Record the equilibrium temperature for at least sand and water, and for metals too if you like. Press *Immerse* in between and watch which thermometer moves more.",
       "initial": {
         "mW": 0.3,
         "TW0": 20,
@@ -129,11 +129,11 @@
       ],
       "vary": "cB",
       "names": {
-        "mW": "veden massa",
-        "TW0": "veden alkulämpötila",
-        "cB": "aine, c",
-        "mB": "kappaleen massa",
-        "TB0": "kappaleen alkulämpötila"
+        "mW": "water mass",
+        "TW0": "initial water temperature",
+        "cB": "substance, c",
+        "mB": "object mass",
+        "TB0": "initial object temperature"
       },
       "units": {
         "mW": "kg",
@@ -159,7 +159,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the amount of hot water changes",
-      "intro": "Testaa ennuste 2. Kappale on nyt vettä, jonka lämpötila on 90 °C, ja astiassa on 0,50 kg vettä lämpötilassa 20 °C. Muuta vain kuuman veden massaa. Kirjaa tasapainolämpötila ainakin kahdella massalla, esimerkiksi 0,20 kg, 0,50 kg ja 0,80 kg. Millä massalla tulos on alkulämpötilojen keskiarvo?",
+      "intro": "Test prediction 2. The object is now water at a temperature of 90 °C, and the container has 0.50 kg of water at a temperature of 20 °C. Change only the mass of the hot water. Record the equilibrium temperature for at least two masses, for example 0.20 kg, 0.50 kg and 0.80 kg. At what mass is the result the mean of the initial temperatures?",
       "initial": {
         "mW": 0.5,
         "TW0": 20,
@@ -175,11 +175,11 @@
       ],
       "vary": "mB",
       "names": {
-        "mW": "kylmän veden massa",
-        "TW0": "kylmän veden alkulämpötila",
-        "cB": "aine, c",
-        "mB": "kuuman veden massa",
-        "TB0": "kuuman veden alkulämpötila"
+        "mW": "cold water mass",
+        "TW0": "initial cold water temperature",
+        "cB": "substance, c",
+        "mB": "hot water mass",
+        "TB0": "initial hot water temperature"
       },
       "units": {
         "mW": "kg",

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 07e21535a1f214c9
+CONTENT-HASH: 49312002adec9bb2
 
 ## Blocking
 (none left)
@@ -14,3 +14,4 @@ CONTENT-HASH: 07e21535a1f214c9
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): tone and readability for 16–18-year-olds in all lesson and inquiry texts; questions ask the same thing, correct choices unchanged and unambiguous, feedback matches each option, hints and solution steps complete.
+- Update 2026-10-28: reviewed the newly checked fields (experiment intros with *Kohde*/*Item* matching the sim label, column names, word units kpl/pcs, string answers); all correct, no changes; re-hashed.

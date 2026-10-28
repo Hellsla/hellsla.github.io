@@ -71,7 +71,7 @@
       "level": 2,
       "text": "The temperature of the night side of the Moon is −173 °C and of the day side 127 °C. How many times greater is the temperature in kelvins of the day side than the temperature in kelvins of the night side?",
       "answer": 4.0,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     }
   ],

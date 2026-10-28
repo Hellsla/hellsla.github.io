@@ -103,7 +103,7 @@ Muuntaja nostaa jännitteen voimalaitoksella. Se laskee jännitteen takaisin kä
   <foreignObject x="331" y="79.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{eriste}$</div></foreignObject>
   <line x1="376" y1="108" x2="376" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="-7" y="247.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpölaitos}$</div></foreignObject>
-  <foreignObject x="505" y="247.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Kaavakuva kolmesta energiavarastosta. Vasemmalla on akku, jossa energia on kemiallista. Keskellä on pumppuvoimala: ylempi allas, alempi allas ja putki, jossa vesi virtaa alas. Oikealla on lämpövarasto. Se on eristetty säiliö, joka on täynnä kuumaa vettä. Kuva ei ole mittakaavassa.}$</div></foreignObject>
+  <foreignObject x="505" y="247.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{koti}$</div></foreignObject>
 </svg>
 
 ### Siirtohäviö
@@ -116,7 +116,7 @@ Suomessa sähköverkon häviöt olivat vuonna 2024 noin $4\,\%$ sähkön kulutuk
 
 Energiaa siirretään myös ajassa. Tuulivoimaa ja aurinkosähköä syntyy silloin, kun tuulee tai paistaa. Sähköä tarvitaan kuitenkin muulloinkin. Varasto ottaa energiaa vastaan silloin, kun sitä on liikaa. Se luovuttaa energian myöhemmin.
 
-<svg data-fig="storage" viewBox="0 0 600 300" role="img" aria-label="Kaavakuva kolmesta energiavarastosta. Vasemmalla akku, jossa energia on kemiallista. Keskellä pumppuvoimala: ylempi allas, alempi allas ja putki, jossa vesi virtaa alas. Oikealla lämpövarasto, eristetty säiliö täynnä kuumaa vettä. Kuva ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="storage" viewBox="0 0 600 300" role="img" aria-label="Kaavakuva kolmesta energiavarastosta. Vasemmalla on akku, jossa energia on kemiallista. Keskellä on pumppuvoimala: ylempi allas, alempi allas ja putki, jossa vesi virtaa alas. Oikealla on lämpövarasto. Se on eristetty säiliö, joka on täynnä kuumaa vettä. Kuva ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy27-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy27-hot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
   <rect x="60" y="100" width="80" height="110" rx="8" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
   <rect x="84" y="88" width="32" height="12" fill="#1f2933"/>
@@ -138,7 +138,7 @@ Energiaa siirretään myös ajassa. Tuulivoimaa ja aurinkosähköä syntyy sillo
   <foreignObject x="160" y="237.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pumppuvoima}$</div></foreignObject>
   <foreignObject x="375" y="237.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpövarasto}$</div></foreignObject>
   <foreignObject x="25" y="25.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
-  <foreignObject x="185" y="25.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Energiavirtakuva mittakaavassa. Ylhäällä on sähköverkko: lähtevästä energiasta 96 % tulee perille ja 4 % häviää. Alhaalla on kaukolämpöverkko: 91 % tulee perille ja 9 % häviää. Virran leveys kertoo energian määrän. Lähtevän energian virta on molemmissa yhtä leveä.}$</div></foreignObject>
+  <foreignObject x="185" y="25.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{potentiaali}$</div></foreignObject>
   <foreignObject x="420" y="25.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpö}$</div></foreignObject>
   <line x1="184" y1="20" x2="184" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="380" y1="20" x2="380" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -159,7 +159,7 @@ E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
 
 Kaavassa $E_\text{lähtö}$ on verkkoon syötetty energia ja $E_\text{perille}$ on käyttäjälle asti tullut energia. Symboli $E_\text{häviö}$ on matkalla lämmöksi muuttunut energia. Symboli $\eta$ on siirron hyötysuhde. Hyötysuhde annetaan prosentteina tai desimaalilukuna.
 
-<svg data-fig="sankey" viewBox="0 0 600 330" role="img" aria-label="Energiavirtakuva mittakaavassa. Ylhäällä sähköverkko: lähtevästä energiasta 96 % tulee perille ja 4 % häviää. Alhaalla kaukolämpöverkko: 91 % tulee perille ja 9 % häviää. Virran leveys on verrannollinen energiaan; lähtevän energian leveys on molemmissa sama." style="max-width:100%;font-size:24px">
+<svg data-fig="sankey" viewBox="0 0 600 330" role="img" aria-label="Energiavirtakuva mittakaavassa. Ylhäällä on sähköverkko: lähtevästä energiasta 96 % tulee perille ja 4 % häviää. Alhaalla on kaukolämpöverkko: 91 % tulee perille ja 9 % häviää. Virran leveys kertoo energian määrän. Lähtevän energian virta on molemmissa yhtä leveä." style="max-width:100%;font-size:24px">
   <foreignObject x="12" y="17.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{sähkö}$</div></foreignObject>
   <rect x="150" y="52" width="121" height="80" fill="#e8590c"/>
   <polygon points="270,52 470,52 470,44 500,90.5 470,137 470,129 270,129" fill="#e8590c"/>

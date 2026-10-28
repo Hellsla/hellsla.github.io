@@ -3,7 +3,7 @@
 > **Why** do ten students get ten different results for the rolling time of the same ball, even though they all use the same stopwatch?
 
 ## Key idea
-A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result is never exactly the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference between the result and the true value is the **measurement error** $\Delta x = x - x_\text{true}$. A small error belongs to every measurement, also to the result of a skilled measurer. In physics the error is estimated and stated together with the result.
+A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result is never exactly the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference between the result and the true value is the **measurement error** $\Delta x = x - x_\text{true}$. Every measurement has a small error, even one made by a skilled measurer. In physics the error is estimated and stated together with the result.
 
 Errors are divided into three kinds: gross error, random error and systematic error. You can tell them apart by how they behave when the measurement is repeated.
 
@@ -87,8 +87,8 @@ A **systematic error** is almost the same in direction and size in every measure
   <line x1="24" y1="206" x2="576" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
 </svg>
 
-### Repeatability and correctness
-The reliability of a measurement is described by two things. **Repeatability** tells how close to each other repeated measurements land, and it is weakened by random error. **Correctness** tells how close the mean is to the true value, and it is weakened by systematic error. A measurement can be repeatable but not correct, like the lower series in the figure. A reliable measurement has both.
+### Repeatability and accuracy
+The reliability of a measurement is described by two things. **Repeatability** tells how close to each other repeated measurements land, and it is weakened by random error. **Accuracy** tells how close the mean is to the true value, and it is weakened by systematic error. A measurement can be repeatable but not accurate, like the lower series in the figure. A reliable measurement has both.
 
 ## Formula: Mean and error estimate
 The best estimate of a repeated measurement is the mean of the results:
@@ -251,12 +251,12 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 **Reasonableness.** The interval $3.18\,\text{s} \pm 0.12\,\text{s}$, that is, $3.06\,\text{s}$–$3.30\,\text{s}$, covers five of the six results. The result $3.31\,\text{s}$ falls just outside it, which fits the fact that the error estimate is rough. The relative error is a few percent, which is usual for a hand-timed measurement. However, the repeats tell only about random error: a systematic error would be revealed only by comparison with another method of measurement.
 
 ## Common misconception
-Many people think that an accurate instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about correctness. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is removed, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
+Many people think that a precise instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is removed, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
 
 ## Summary
 - A measurement error is the difference between the result and the true value, $\Delta x = x - x_\text{true}$. An error belongs to every measurement, and it is estimated and stated together with the result.
 - A gross error is a single mistake, such as a wrongly read or recorded reading. It shows up as a result that clearly differs from the others, which is checked and left out.
 - A random error varies from one measurement to the next and shows up as scatter. The mean $\bar{x}$ damps it, and its size is estimated by half of the range $\Delta x$.
 - A systematic error shifts all results in the same direction, and repeating does not remove it. It is noticed with a reference value and corrected: $x = x_\text{reading} - \Delta x_\text{sys}$.
-- Repeatability tells about random error and correctness about systematic error. A reliable measurement is both repeatable and correct.
+- Repeatability tells about random error and accuracy about systematic error. A reliable measurement is both repeatable and accurate.
 - The result is stated in the form $\bar{x} \pm \Delta x$ with its unit. The error estimate is rounded to one significant figure (two if the first figure is 1), and the result to the same decimal place.

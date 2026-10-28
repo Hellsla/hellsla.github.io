@@ -150,7 +150,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain paikka muuttuu",
-      "intro": "Testaa ennuste 2. Nyt massa on lukittu 10 kg:ksi, ja vain taivaankappale vaihtuu. Kirjaa massa, putoamiskiihtyvyys ja paino ainakin kahdessa paikassa, esimerkiksi Maassa ja Jupiterissa, ja kokeile myös Kuuta.",
+      "intro": "Testaa ennuste 2. Nyt massa on lukittu 10 kg:ksi, ja vain taivaankappale vaihtuu. Kirjaa massa, putoamiskiihtyvyys ja paino ainakin kahdessa paikassa, esimerkiksi Maassa ja Jupiterissa. Kokeile myös Kuuta.",
       "initial": {
         "body": "Maa",
         "m": 10

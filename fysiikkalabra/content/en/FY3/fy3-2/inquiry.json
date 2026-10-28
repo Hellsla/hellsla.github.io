@@ -141,7 +141,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the distance changes",
-      "intro": "Testaa ennuste 1. Pidä voima ja aika vakioina ja muuta vain matkaa. Kirjaa työ ainakin kahdella matkalla, esimerkiksi 5 m, 10 m ja 20 m. Paina *Vedä* ennen kirjaamista, niin näet kuvaajan pinta-alan täyttyvän.",
+      "intro": "Test prediction 1. Keep the force and time constant and change only the distance. Record the work for at least two distances, for example 5 m, 10 m and 20 m. Press *Pull* before recording so that you see the area of the graph fill up.",
       "initial": {
         "F": 60,
         "s": 10,
@@ -170,7 +170,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the time changes",
-      "intro": "Testaa ennuste 2. Nyt voima ja matka ovat vakioita ja vain aika muuttuu. Kirjaa työ ja teho ainakin kahdella ajalla, esimerkiksi 5 s, 10 s ja 20 s. Mitä käy työlle? Entä teholle?",
+      "intro": "Test prediction 2. Now the force and distance are constant and only the time changes. Record the work and power for at least two times, for example 5 s, 10 s and 20 s. What happens to the work? And to the power?",
       "initial": {
         "F": 60,
         "s": 10,
@@ -246,7 +246,7 @@
         ]
       },
       "source": "simulated",
-      "source_note": "keksityt Joulen kokeen tapaiset arvot, eivät Joulen omia mittauksia"
+      "source_note": "invented values similar to Joule's experiment, not Joule's own measurements"
     },
     {
       "id": "theory",

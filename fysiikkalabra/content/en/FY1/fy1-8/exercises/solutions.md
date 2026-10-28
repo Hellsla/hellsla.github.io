@@ -81,7 +81,7 @@
 ## fy1-8-L2-04
 **Given:** speed predicted by the hypothesis $v_\text{pred} = 0.50\,\text{m/s}$, measured speed $v_\text{meas} = 0.42\,\text{m/s}$
 **Find:** the deviation of the measured value from the predicted value as a percentage
-**Principle:** A hypothesis is tested by comparing the measurement with its prediction. The deviation is compared with the prediction, so that the difference can be compared with the uncertainty of the measurement regardless of the unit.
+**Principle:** A hypothesis is tested by comparing the measurement with its prediction. The deviation is expressed relative to the prediction, so that the difference can be compared with the uncertainty of the measurement regardless of the unit.
 **Formula:** $\delta = \dfrac{\left| v_\text{pred} - v_\text{meas} \right|}{v_\text{pred}}$
 **Conversions:** Both speeds are in $\text{m/s}$, so the units cancel. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $\delta = \dfrac{\left| 0.50\,\text{m/s} - 0.42\,\text{m/s} \right|}{0.50\,\text{m/s}} = \dfrac{0.08}{0.50} = 0.16 = 16\,\%$

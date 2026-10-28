@@ -264,7 +264,7 @@ The Solar System has no single sharp edge. Particles flow out from the Sun, the 
 
 ### Types of objects, not steps
 
-Not all astronomical objects are steps in the same nesting. They are inside galaxies, among the stars. A **nebula** is a cloud of gas and dust; for example, new stars are forming in the Orion Nebula. A **neutron star** is the remnant of the explosion of a massive star. Its mass is usually greater than that of the Sun, but its diameter is only about $20$–$25\,\text{km}$, because the matter has been squeezed into almost pure neutrons.
+Not all astronomical objects are steps in the same nested series. Instead, they are found inside galaxies, among the stars. A **nebula** is a cloud of gas and dust; for example, new stars are forming in the Orion Nebula. A **neutron star** is the remnant of the explosion of a massive star. Its mass is usually greater than that of the Sun, but its diameter is only about $20$–$25\,\text{km}$, because the matter has been squeezed into almost pure neutrons.
 
 A **black hole** is a region from which, because of gravity, nothing, not even light, can escape. It has no surface: its size is given as the diameter of its boundary, the **event horizon**, which grows with the mass. The black hole at the centre of the Milky Way has a mass of about four million solar masses and an event horizon diameter of about $2.5\cdot10^{10}\,\text{m}$. So size does not tell the type of object: a neutron star is smaller than Earth, and this black hole is larger than the Sun.
 

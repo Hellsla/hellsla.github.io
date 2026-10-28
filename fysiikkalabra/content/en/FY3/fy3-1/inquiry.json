@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the mass changes",
-      "intro": "Testaa ennuste 1. Taivaankappale on lukittu Maaksi, ja vain massa muuttuu. Kirjaa paino ainakin kahdella massalla, esimerkiksi 10 kg, 20 kg ja 30 kg. Katso samalla, miten jousen venymä muuttuu.",
+      "intro": "Test prediction 1. The celestial body is locked to the Earth, and only the mass changes. Record the weight for at least two masses, for example 10 kg, 20 kg and 30 kg. Also watch how the extension of the spring changes.",
       "initial": {
         "body": "Maa",
         "m": 10
@@ -141,8 +141,8 @@
       ],
       "min": 2,
       "names": {
-        "m": "massa m",
-        "body": "taivaankappale"
+        "m": "mass m",
+        "body": "celestial body"
       }
     },
     {
@@ -150,7 +150,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the place changes",
-      "intro": "Testaa ennuste 2. Nyt massa on lukittu 10 kg:ksi, ja vain taivaankappale vaihtuu. Kirjaa massa, putoamiskiihtyvyys ja paino ainakin kahdessa paikassa, esimerkiksi Maassa ja Jupiterissa, ja kokeile myös Kuuta.",
+      "intro": "Test prediction 2. Now the mass is locked at 10 kg, and only the celestial body changes. Record the mass, the acceleration of free fall and the weight in at least two places, for example on the Earth and on Jupiter, and also try the Moon.",
       "initial": {
         "body": "Maa",
         "m": 10
@@ -178,8 +178,8 @@
       ],
       "min": 2,
       "names": {
-        "m": "massa m",
-        "body": "taivaankappale"
+        "m": "mass m",
+        "body": "celestial body"
       }
     },
     {
@@ -230,7 +230,7 @@
         ]
       },
       "source": "simulated",
-      "source_note": "keksityt esimerkkiarvot, eivät oikean mittauksen tuloksia"
+      "source_note": "invented example values, not the results of a real measurement"
     },
     {
       "id": "theory",

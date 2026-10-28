@@ -141,7 +141,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain matka muuttuu",
-      "intro": "Testaa ennuste 1. Pidä voima ja aika vakioina ja muuta vain matkaa. Kirjaa työ ainakin kahdella matkalla, esimerkiksi 5 m, 10 m ja 20 m. Paina *Vedä* ennen kirjaamista, niin näet kuvaajan pinta-alan täyttyvän.",
+      "intro": "Testaa ennuste 1. Pidä voima ja aika samoina. Muuta vain matkaa. Kirjaa työ ainakin kahdella matkalla, esimerkiksi 5 m, 10 m ja 20 m. Paina *Vedä* ennen kirjaamista. Silloin näet, kuinka kuvaajan pinta-ala täyttyy.",
       "initial": {
         "F": 60,
         "s": 10,
@@ -170,7 +170,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain aika muuttuu",
-      "intro": "Testaa ennuste 2. Nyt voima ja matka ovat vakioita ja vain aika muuttuu. Kirjaa työ ja teho ainakin kahdella ajalla, esimerkiksi 5 s, 10 s ja 20 s. Mitä käy työlle? Entä teholle?",
+      "intro": "Testaa ennuste 2. Nyt voima ja matka ovat samoja, ja vain aika muuttuu. Kirjaa työ ja teho ainakin kahdella ajalla, esimerkiksi 5 s, 10 s ja 20 s. Mitä työlle tapahtuu? Entä teholle?",
       "initial": {
         "F": 60,
         "s": 10,
@@ -246,7 +246,7 @@
         ]
       },
       "source": "simulated",
-      "source_note": "keksityt Joulen kokeen tapaiset arvot, eivät Joulen omia mittauksia"
+      "source_note": "keksityt arvot, jotka muistuttavat Joulen koetta. Ne eivät ole Joulen omia mittauksia"
     },
     {
       "id": "theory",

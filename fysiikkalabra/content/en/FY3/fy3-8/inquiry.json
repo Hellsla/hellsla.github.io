@@ -149,16 +149,16 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the temperature changes",
-      "intro": "Testaa ennusteet 1 ja 3. Aine ja alkupituus ovat vakioita, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi 70 °C ja 120 °C, ja kokeile myös pakkasta, esimerkiksi −30 °C. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
+      "intro": "Test predictions 1 and 3. The substance and the initial length are constant, and only the temperature is changed. Record the change in length at at least two temperatures, for example 70 °C and 120 °C, and also try a freezing temperature, for example −30 °C. Also watch what happens to the particles of the micro model and the gaps between them.",
       "initial": {
         "material": "teräs",
         "L0": 10,
         "T": 20
       },
       "names": {
-        "material": "aine",
-        "L0": "alkupituus L₀",
-        "T": "lämpötila T"
+        "material": "substance",
+        "L0": "initial length L₀",
+        "T": "temperature T"
       },
       "units": {
         "L0": "m",
@@ -186,16 +186,16 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Extra investigation: only the initial length changes",
-      "intro": "Testaa ennuste 2. Nyt aine ja lämpötila ovat vakioita, ja vain sauvan alkupituutta muutetaan. Kirjaa pituuden muutos ja suhteellinen muutos ainakin kahdella alkupituudella, esimerkiksi 10 m, 20 m ja 40 m. Mikä muuttuu, mikä pysyy samana?",
+      "intro": "Test prediction 2. Now the substance and the temperature are constant, and only the initial length of the rod is changed. Record the change in length and the relative change for at least two initial lengths, for example 10 m, 20 m and 40 m. What changes, and what stays the same?",
       "initial": {
         "material": "teräs",
         "L0": 10,
         "T": 70
       },
       "names": {
-        "material": "aine",
-        "L0": "alkupituus L₀",
-        "T": "lämpötila T"
+        "material": "substance",
+        "L0": "initial length L₀",
+        "T": "temperature T"
       },
       "units": {
         "L0": "m",

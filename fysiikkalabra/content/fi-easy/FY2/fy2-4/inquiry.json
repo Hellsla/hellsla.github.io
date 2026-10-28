@@ -118,7 +118,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: bensiinimoottori",
-      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori, ja sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska todellisen moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$. Mallin hyötysuhde $25\\,\\%$ on tyypillinen arvo, jonka malli saa lähtötietona: simulaatio ei mittaa sitä moottorista vaan laskee sen avulla energiat.",
+      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori. Sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska oikean moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$. Kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$. Mallin hyötysuhde $25\\,\\%$ on tyypillinen arvo, jonka malli saa lähtötietona. Simulaatio ei mittaa sitä moottorista. Se laskee sen avulla energiat.",
       "initial": {
         "laite": "auto",
         "Po": 60000,
@@ -188,7 +188,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: energia ja teho",
-      "intro": "Testaa ennuste 2. Laite on hehkulamppu ja sen otettu teho on lukittu arvoon $40\\,\\text{W}$. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso otettua energiaa $E_\\text{o}$ ja hyötyenergiaa $E_\\text{a}$.",
+      "intro": "Testaa ennuste 2. Laite on hehkulamppu. Sen otettu teho on lukittu arvoon $40\\,\\text{W}$. Muuta vain aikaa $t$. Kirjaa vähintään kolme mittausta. Katso otettua energiaa $E_\\text{o}$ ja hyötyenergiaa $E_\\text{a}$.",
       "initial": {
         "laite": "lamppu",
         "Po": 40,

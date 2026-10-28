@@ -18,7 +18,7 @@ Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten lelua
 
 Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Silloin ei voi päätellä, mikä muutti tulosta. Siksi koe on reilu vasta, kun vain muutettava muuttuja vaihtuu.
 
-<svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva kokeen asetelmasta: leluauto ajaa pöydän tasaisella radalla lähtöviivalta maaliviivalle. Radan vieressä on matka-asteikko metreinä, ja lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Käsikello mittaa aikaa t, joka on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
+<svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva kokeen asetelmasta. Leluauto ajaa pöydällä tasaisella radalla lähtöviivalta maaliviivalle. Radan vieressä on matka-asteikko metreinä. Lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Käsikello mittaa aikaa t. Aika on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy18-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
   <foreignObject x="24" y="13.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{muutettava: } s$</div></foreignObject>
   <foreignObject x="24" y="47.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{mitattava: } t$</div></foreignObject>
@@ -118,7 +118,7 @@ t &\ge \frac{\Delta t}{\varepsilon_\text{max}}
 ```
 missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina), $\Delta t$ ajan epävarmuus (s) ja $t$ mitattu aika (s). Esimerkki: epävarmuus on $\Delta t = 0{,}2\,\text{s}$ ja raja on $5\,\%$. Silloin aikaa pitää olla vähintään $4\,\text{s}$.
 
-<svg data-fig="epavarmuus" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja suhteellisesta epävarmuudesta ajan funktiona, kun ajan epävarmuus on 0,2 s: kun aika on 1 s, epävarmuus on 20 %, kun aika on 4 s, se on 5,0 %, ja kun aika on 10 s, se on 2,0 %. Vihreä alue kuvaa mittauksia, joiden epävarmuus on enintään 5,0 %: ne vaativat vähintään 4 s:n ajan. Kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="epavarmuus" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja näyttää suhteellisen epävarmuuden ajan funktiona. Ajan epävarmuus on 0,2 s. Kun aika on 1 s, epävarmuus on 20 %. Kun aika on 4 s, epävarmuus on 5,0 %. Kun aika on 10 s, epävarmuus on 2,0 %. Vihreä alue näyttää mittaukset, joiden epävarmuus on enintään 5,0 %. Ne vaativat vähintään 4 s:n ajan. Kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="176" y1="286" x2="176" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="256" y1="286" x2="256" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="336" y1="286" x2="336" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

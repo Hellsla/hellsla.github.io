@@ -28,7 +28,7 @@
       "id": "fy2-1-L1-04",
       "level": 1,
       "text": "In each situation, name the form of energy that the energy is in at the start and the useful form of energy that it changes into. a) Firewood burns in a fireplace and warms a room. b) A solar panel produces electricity. c) Water flows down from a reservoir into a turbine that turns a generator.",
-      "answer": "a) kemiallinen energia → lämpöenergia; b) säteilyenergia → sähköenergia; c) veden potentiaalienergia → (liike-energia →) sähköenergia",
+      "answer": "a) chemical energy → thermal energy; b) radiant energy → electrical energy; c) potential energy of water → (kinetic energy →) electrical energy",
       "unit": "",
       "tolerance": 0.02
     },
@@ -96,7 +96,7 @@
       "id": "fy2-1-L3-03",
       "level": 3,
       "text": "In a nuclear power plant, the nuclear reactions in the reactor heat water into steam, the steam turns a turbine and the turbine turns a generator, which produces electricity. The steam leaving the turbine is cooled with seawater, which warms up. a) Name the forms of energy at each stage of the chain. b) The plant turns only about a third of the nuclear energy released in the reactor into electrical energy. Use the law of conservation of energy to explain where the rest of the energy goes and why it has not been lost.",
-      "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmannesta päätyy lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
+      "answer": "a) nuclear energy → thermal energy → kinetic energy of steam and turbine → electrical energy; b) about two thirds ends up as thermal energy in the sea and the surroundings, and the total energy is conserved",
       "unit": "",
       "tolerance": 0.02
     }

@@ -117,7 +117,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: does the speed increase steadily",
-      "intro": "Testaa ennuste 1. Alkutila valitsee tyhjiön ja asettaa pallojen massoiksi $1{,}0\\,\\text{kg}$ ja $8{,}0\\,\\text{kg}$. Paina *Pudota* ja seuraa, miten kuvaaja piirtyy. Pysäytä sitten kello vetämällä *Hetki $t$* -liukusäädintä ja kirjaa nopeudet vähintään kolmella hetkellä, esimerkiksi $1{,}0\\,\\text{s}$, $2{,}0\\,\\text{s}$ ja $3{,}0\\,\\text{s}$.",
+      "intro": "Test prediction 1. The initial state selects a vacuum and sets the masses of the balls to $1.0\\,\\text{kg}$ and $8.0\\,\\text{kg}$. Press *Drop* and watch how the graph is drawn. Then stop the clock by dragging the *Moment $t$* slider and record the speeds at three or more moments, for example $1.0\\,\\text{s}$, $2.0\\,\\text{s}$ and $3.0\\,\\text{s}$.",
       "initial": {
         "ilma": "0",
         "mA": 1,
@@ -131,13 +131,13 @@
       ],
       "vary": "t",
       "names": {
-        "t": "hetki t",
-        "ilma": "ilmanvastus",
-        "mA": "massa m_A",
-        "mB": "massa m_B"
+        "t": "moment t",
+        "ilma": "air resistance",
+        "mA": "mass m_A",
+        "mB": "mass m_B"
       },
       "units": {
-        "ilma": "(ei ilmaa: tyhjiö)",
+        "ilma": "(no air: vacuum)",
         "t": "s",
         "mA": "kg",
         "mB": "kg"
@@ -182,7 +182,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: does mass matter in a vacuum",
-      "intro": "Testaa ennuste 2. Alkutila valitsee tyhjiön ja hetken $t = 3{,}0\\,\\text{s}$ ja asettaa pallon A massaksi $1{,}0\\,\\text{kg}$. Muuta pallon B massaa liukusäätimellä ja kirjaa nopeudet vähintään kolmella massalla, esimerkiksi $0{,}5\\,\\text{kg}$, $3{,}0\\,\\text{kg}$ ja $8{,}0\\,\\text{kg}$.",
+      "intro": "Test prediction 2. The initial state selects a vacuum and the moment $t = 3.0\\,\\text{s}$ and sets the mass of ball A to $1.0\\,\\text{kg}$. Change the mass of ball B with the slider and record the speeds for at least three masses, for example $0.5\\,\\text{kg}$, $3.0\\,\\text{kg}$ and $8.0\\,\\text{kg}$.",
       "initial": {
         "ilma": "0",
         "t": 3,
@@ -196,13 +196,13 @@
       ],
       "vary": "mB",
       "names": {
-        "mB": "massa m_B",
-        "t": "hetki t",
-        "ilma": "ilmanvastus",
-        "mA": "massa m_A"
+        "mB": "mass m_B",
+        "t": "moment t",
+        "ilma": "air resistance",
+        "mA": "mass m_A"
       },
       "units": {
-        "ilma": "(ei ilmaa: tyhjiö)",
+        "ilma": "(no air: vacuum)",
         "mB": "kg",
         "t": "s",
         "mA": "kg"
@@ -247,7 +247,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 3: what about in air",
-      "intro": "Nyt ilma on mukana. Alkutila valitsee ilman ja hetken $t = 4{,}0\\,\\text{s}$ ja asettaa pallon A massaksi $1{,}0\\,\\text{kg}$. Pallot ovat samankokoiset. Muuta pallon B massaa ja kirjaa nopeudet vähintään kolmella massalla, esimerkiksi $0{,}1\\,\\text{kg}$, $1{,}0\\,\\text{kg}$ ja $10\\,\\text{kg}$. Vertaa lukuja arvoon $gt = 39{,}2\\,\\text{m/s}$.",
+      "intro": "Now air is included. The initial state selects air and the moment $t = 4.0\\,\\text{s}$ and sets the mass of ball A to $1.0\\,\\text{kg}$. The balls are the same size. Change the mass of ball B and record the speeds for at least three masses, for example $0.1\\,\\text{kg}$, $1.0\\,\\text{kg}$ and $10\\,\\text{kg}$. Compare the numbers with the value $gt = 39.2\\,\\text{m/s}$.",
       "initial": {
         "ilma": "1",
         "t": 4,
@@ -261,13 +261,13 @@
       ],
       "vary": "mB",
       "names": {
-        "mB": "massa m_B",
-        "t": "hetki t",
-        "ilma": "ilmanvastus",
-        "mA": "massa m_A"
+        "mB": "mass m_B",
+        "t": "moment t",
+        "ilma": "air resistance",
+        "mA": "mass m_A"
       },
       "units": {
-        "ilma": "(ilmaa on)",
+        "ilma": "(air present)",
         "mB": "kg",
         "t": "s",
         "mA": "kg"
@@ -467,7 +467,7 @@
           "feedback": "The curve would get steeper if the increase in speed per second grew. It is constant, however, so the graph is a straight line."
         },
         {
-          "text": "A falling line, because the object falls downwards.",
+          "text": "A descending straight line, because the object falls downwards.",
           "feedback": "The graph is not the path of the object. The magnitude of the speed increases, so the $(t, v)$ graph rises."
         }
       ]

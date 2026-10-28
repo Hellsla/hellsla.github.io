@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain männän nopeus muuttuu",
-      "intro": "Testaa ennuste 2. Seinät lukitaan eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt ($V = 75\\,\\%$), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus, paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta $\\Delta U$ ja työtä $W$ sekä lämpötilan nousua $\\Delta T$. Hidas työntö kestää noin 19 s; *Animaatio: nopea* nopeuttaa katselua muuttamatta lukemia.",
+      "intro": "Testaa ennuste 2. Seinät on lukittu eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt ($V = 75\\,\\%$), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus. Paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta $\\Delta U$, työtä $W$ ja lämpötilan nousua $\\Delta T$. Hidas työntö kestää noin 19 s. *Animaatio: nopea* nopeuttaa katselua. Lukemat eivät muutu.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -155,7 +155,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain seinät muuttuvat",
-      "intro": "Testaa ennuste 1. Männän nopeus lukitaan hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*) ja kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi, paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes $T$ on noin 293 K, ja kirjaa vasta sitten. Seuraa samalla pylväitä: ylöspäin osoittava pylväs on kaasuun tullutta energiaa, alaspäin osoittava kaasusta lähtenyttä.",
+      "intro": "Testaa ennuste 1. Männän nopeus on lukittu hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*). Kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi. Paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes $T$ on noin 293 K. Kirjaa vasta sitten. Seuraa samalla pylväitä. Ylöspäin osoittava pylväs on kaasuun tullutta energiaa. Alaspäin osoittava pylväs on kaasusta lähtenyttä energiaa.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"

@@ -106,7 +106,7 @@
         "solution": "**Given:** helium, from the table $m = 0.83\\,\\text{g}$ and $M = 4.00\\,\\text{g/mol}$\n\n**Find:** the quotient $m/M$ in mol\n\n**Principle:** The molar mass is the mass of one mole, so the mass of the gas divided by the molar mass tells how many moles of gas are in the flask. The calculation needs neither pressure nor temperature, because the mass and the molar mass determine the amount of substance directly.\n\n**Formula:** $M = \\dfrac{m}{n}$, so $n = \\dfrac{m}{M}$\n\n**Conversions:** No conversions are needed, because the mass and the molar mass are both in grams. The grams cancel, and the mole is left.\n\n**Substitution:** $\\dfrac{m}{M} = \\dfrac{0.83\\,\\text{g}}{4.00\\,\\text{g/mol}} = 0.2075\\,\\text{mol}$\n\n**Answer:** $0.21\\,\\text{mol}$, two significant figures. The limiting datum is the mass $0.83\\,\\text{g}$ (two digits); the molar mass $4.00\\,\\text{g/mol}$ has three digits. The intermediate result $0.2075\\,\\text{mol}$ of the substitution is kept with four digits for the next calculation.\n\n**Reasonableness:** At the same pressure and temperature, $5.00\\,\\textsf{l}$ contains about $5.00 \\cdot 0.041 \\approx 0.21\\,\\text{mol}$ of any gas, so the result is believable. Checking backwards: $0.2075\\,\\text{mol} \\cdot 4.00\\,\\text{g/mol} = 0.83\\,\\text{g}$."
       },
       "source": "simulated",
-      "source_note": "keksityt esimerkkiarvot, joihin on lisätty punnituksen tavallista hajontaa"
+      "source_note": "invented example values to which the usual spread of weighing has been added"
     },
     {
       "id": "punnitus-vertailu",
@@ -174,7 +174,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the number of particles changes",
-      "intro": "Testaa ennusteesi. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi $N = 50$, $100$ ja $200$; rivi $N = 100$ tarvitaan vielä Kokeessa 2. *Mitattu paine* ja osumat ovat liukuvia keskiarvoja: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten.",
+      "intro": "Test your prediction. The temperature and volume are locked, and only the number of particles changes. Record the pressure for at least two particle numbers, for example $N = 50$, $100$ and $200$; the row $N = 100$ is still needed in Experiment 2. *Measured pressure* and the hits are moving averages: after you have changed the control, press *Reset measurement* and wait until the reading shows the mean over about 2 s (at normal speed about 4 seconds). Only then record.",
       "initial": {
         "N": 100,
         "T": 300,
@@ -186,9 +186,9 @@
       ],
       "vary": "N",
       "names": {
-        "N": "hiukkasmäärä N",
-        "T": "lämpötila T",
-        "V": "tilavuus V"
+        "N": "particle number N",
+        "T": "temperature T",
+        "V": "volume V"
       },
       "units": {
         "N": "",
@@ -212,7 +212,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: hotter gas, same pressure",
-      "intro": "Ratkaise haaste. Lämpötila on nyt 600 K eli kaksi kertaa vertailutilan 300 K. Kirjaa ensin rivi $N = 100$ ja vertaa painetta Kokeen 1 riviin $N = 100$. Etsi sitten hiukkasmäärä, jolla mitattu paine on taas noin 1,00, ja kirjaa se. Paina joka muutoksen jälkeen *Nollaa mittaus* ja odota noin 2 s:n keskiarvo ennen kirjaamista.",
+      "intro": "Solve the challenge. The temperature is now 600 K, which is twice the reference state 300 K. First record the row $N = 100$ and compare the pressure with the row $N = 100$ of Experiment 1. Then find the number of particles for which the measured pressure is again about 1.00, and record it. After every change, press *Reset measurement* and wait for a mean over about 2 s before recording.",
       "initial": {
         "N": 100,
         "T": 600,
@@ -224,9 +224,9 @@
       ],
       "vary": "N",
       "names": {
-        "N": "hiukkasmäärä N",
-        "T": "lämpötila T",
-        "V": "tilavuus V"
+        "N": "particle number N",
+        "T": "temperature T",
+        "V": "volume V"
       },
       "units": {
         "N": "",

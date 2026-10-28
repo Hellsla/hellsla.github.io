@@ -140,14 +140,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the power changes",
-      "intro": "Testaa ennuste 1. Massa on lukittu 0,50 kg:aan; muuta vain tehoa. Kirjaa sulamisen ja kiehumisen kestot ainakin kahdella teholla, esimerkiksi 1000 W ja 2000 W. Kestot ovat mallin laskemia ($t = Q/P$) ja näkyvät heti. Paina kummallakin teholla myös *Lämmitä* ja katso, millä lämpötilalla kuvaajan pitkä vaakasuora osa on.",
+      "intro": "Test prediction 1. The mass is locked at 0.50 kg; change only the power. Record the durations of melting and boiling for at least two powers, for example 1000 W and 2000 W. The durations are calculated by the model ($t = Q/P$) and are shown immediately. At both powers also press *Heat* and see at what temperature the long horizontal part of the graph is.",
       "initial": {
         "m": 0.5,
         "P": 1000
       },
       "names": {
-        "m": "massa m",
-        "P": "teho P"
+        "m": "mass m",
+        "P": "power P"
       },
       "units": {
         "m": "kg",
@@ -174,14 +174,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the mass changes",
-      "intro": "Testaa ennusteet 2 ja 3. Teho on lukittu 1000 W:iin; muuta vain massaa. Kirjaa kestot ainakin kahdella massalla, esimerkiksi 0,25 kg ja 0,50 kg, ja vertaa kiehumisen kestoa sulamisen kestoon. Lämmitä kerran ja katso, missä vaiheessa astiassa on yhtä aikaa kahta olomuotoa.",
+      "intro": "Test predictions 2 and 3. The power is locked at 1000 W; change only the mass. Record the durations for at least two masses, for example 0.25 kg and 0.50 kg, and compare the duration of boiling with the duration of melting. Heat once and see at what stage there are two phases in the container at the same time.",
       "initial": {
         "m": 0.25,
         "P": 1000
       },
       "names": {
-        "m": "massa m",
-        "P": "teho P"
+        "m": "mass m",
+        "P": "power P"
       },
       "units": {
         "m": "kg",

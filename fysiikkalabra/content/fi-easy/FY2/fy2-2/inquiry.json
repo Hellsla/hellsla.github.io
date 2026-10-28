@@ -110,7 +110,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: bensiini ja ruoka",
-      "intro": "Testaa ennuste 1. Valitse *Kohde*-valikosta ensin päivän ruoka ja sitten litra bensiiniä ja kirjaa kummankin energia megajouleina. Voit kirjata myös banaanin ja suklaalevyn.",
+      "intro": "Testaa ennuste 1. Valitse *Kohde*-valikosta ensin päivän ruoka ja sitten litra bensiiniä. Kirjaa kummankin energia megajouleina. Voit kirjata myös banaanin ja suklaalevyn.",
       "initial": {
         "kohde": "päivän ruoka"
       },
@@ -132,7 +132,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: Aurinko ja ihmiskunta",
-      "intro": "Testaa ennuste 2. Valitse *Kohde*-valikosta ensin Auringon säteily Maahan yhdessä tunnissa ja sitten ihmiskunnan energiankäyttö vuodessa, ja kirjaa kummankin energia eksajouleina ($1\\,\\text{EJ} = 10^{18}\\,\\text{J}$). Vertaa lukuja keskenään.",
+      "intro": "Testaa ennuste 2. Valitse *Kohde*-valikosta ensin Auringon säteily Maahan yhdessä tunnissa. Valitse sitten ihmiskunnan energiankäyttö vuodessa. Kirjaa kummankin energia eksajouleina ($1\\,\\text{EJ} = 10^{18}\\,\\text{J}$). Vertaa lukuja keskenään.",
       "initial": {
         "kohde": "Aurinko Maahan tunnissa"
       },

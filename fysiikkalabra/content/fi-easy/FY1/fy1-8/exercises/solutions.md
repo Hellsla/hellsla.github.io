@@ -116,4 +116,4 @@
 **Muunnokset:** Kaikki ajat ovat minuutteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $n = \dfrac{60\,\text{min} - 12\,\text{min}}{6 \cdot 2{,}0\,\text{min}} = \dfrac{48\,\text{min}}{12\,\text{min}} = 4{,}0$
 **Vastaus:** $4{,}0$ toistoa, kaksi merkitsevää numeroa kuten toiston kestossa. Toistojen määrän pitää olla kokonaisluku. Tässä tulos on tasan neljä.
-**Järkevyys:** Neljä toistoa kuudella matkalla on 24 mittausta. Summa $24 \cdot 2{,}0\,\text{min} = 48\,\text{min}$ ja valmistelun $12\,\text{min}$ on $60\,\text{min}$. Aikaa ei jää hukkaan eikä se ylity.
+**Järkevyys:** Neljä toistoa kuudella matkalla on 24 mittausta. Mittauksiin kuluu $24 \cdot 2{,}0\,\text{min} = 48\,\text{min}$. Kun siihen lisätään valmistelun $12\,\text{min}$, summa on $60\,\text{min}$. Aikaa ei jää hukkaan, eikä aika ylity.

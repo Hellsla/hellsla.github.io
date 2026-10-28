@@ -94,7 +94,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: half-pipe without friction",
-      "intro": "Testaa ennuste 1. Alkutila valitsee half-pipen ilman kitkaa ja alkukorkeuden $2{,}0\\,\\text{m}$ ja asettaa kellon nollaan. Siirrä *Hetki $t$* -liukusäädintä ja kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 1{,}0\\,\\text{s}$, $t = 2{,}0\\,\\text{s}$ ja $t = 3{,}0\\,\\text{s}$. Hetkellä $t = 1{,}0\\,\\text{s}$ skeittari on lähellä pohjaa. Energiat ovat jouleina, ja sarake $E$ on kolmen energian summa. Katso, mitä se kertoo.",
+      "intro": "Test prediction 1. The initial state selects a half-pipe without friction and an initial height of $2.0\\,\\text{m}$ and sets the clock to zero. Move the *Moment $t$* slider and record the energies at at least three moments, for example $t = 1.0\\,\\text{s}$, $t = 2.0\\,\\text{s}$ and $t = 3.0\\,\\text{s}$. At $t = 1.0\\,\\text{s}$ the skateboarder is near the bottom. The energies are in joules, and the column $E$ is the sum of the three energies. See what it tells you.",
       "initial": {
         "kitka": 0,
         "h0": 2.0,
@@ -107,8 +107,8 @@
       "vary": "t",
       "names": {
         "t": "t",
-        "kitka": "kitka",
-        "h0": "alkukorkeus $h_0$"
+        "kitka": "friction",
+        "h0": "initial height $h_0$"
       },
       "units": {
         "t": "s",
@@ -167,7 +167,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: with friction",
-      "intro": "Testaa ennuste 2. Alkutila valitsee pienen kitkan ja alkukorkeuden $2{,}0\\,\\text{m}$ ja asettaa kellon nollaan. Siirrä *Hetki $t$* -liukusäädintä ja kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 0\\,\\text{s}$, $t = 8{,}0\\,\\text{s}$ ja $t = 16{,}0\\,\\text{s}$. Energiat ovat jouleina, ja sarake $E$ on kolmen energian summa. Vertaa mekaanista energiaa $E_\\text{p} + E_\\text{k}$ ja lämpöenergiaa riveillä.",
+      "intro": "Test prediction 2. The initial state selects a small friction and an initial height of $2.0\\,\\text{m}$ and sets the clock to zero. Move the *Moment $t$* slider and record the energies at at least three moments, for example $t = 0\\,\\text{s}$, $t = 8.0\\,\\text{s}$ and $t = 16.0\\,\\text{s}$. The energies are in joules, and the column $E$ is the sum of the three energies. Compare the mechanical energy $E_\\text{p} + E_\\text{k}$ and the thermal energy on the rows.",
       "initial": {
         "kitka": 1,
         "h0": 2.0,
@@ -180,8 +180,8 @@
       "vary": "t",
       "names": {
         "t": "t",
-        "kitka": "kitka",
-        "h0": "alkukorkeus $h_0$"
+        "kitka": "friction",
+        "h0": "initial height $h_0$"
       },
       "units": {
         "t": "s",

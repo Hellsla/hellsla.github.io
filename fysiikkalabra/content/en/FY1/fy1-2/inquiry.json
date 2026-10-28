@@ -112,7 +112,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Scroll through the Solar System, where the diameter of the Moon is one pixel. Jump to an object, travel at the speed of light and read the distance in kilometres, in AU and as the travel time of light.",
-      "howto": "Scroll the picture by dragging, with the mouse wheel or with the arrow keys (Shift enlarges the step) or with the arrow buttons: the longer you hold a button, the faster the picture scrolls. The slider moves the view to a distance $d = 10^{n}\\,\\text{km}$ from the Sun, and the jump buttons take you straight to the Sun, a planet or Voyager 2. *Travel at the speed of light* sends a pulse of light from the centre of the view; *Speed* tells how many times faster than real time the time passes (1, 100 or 10 000 times), and the elapsed time and the distance travelled are shown in the numbers. *Reset* returns the view to the Sun. The field *Voyager 2 date* chooses the day for which the position of the probe is calculated; by default it is today. The distance of the centre of the view is read in three ways: in kilometres, in AU and as the travel time of light.",
+      "howto": "Scroll the picture by dragging, with the mouse wheel or with the arrow keys (Shift enlarges the step) or with the arrow buttons: the longer you hold a button, the faster the picture scrolls. The slider moves the view to a distance $d = 10^{n}\\,\\text{km}$ from the Sun, and the jump buttons take you straight to the Sun, a planet or Voyager 2. *Travel at the speed of light* sends a pulse of light from the centre of the view; *Speed* tells how many times faster than real time the time passes (1, 100 or 10 000 times), and the elapsed time and the distance travelled are shown in the numbers. *Reset* returns the view to the Sun. The field *Voyager 2 day* chooses the day for which the position of the probe is calculated; by default it is today. The distance of the centre of the view is read in three ways: in kilometres, in AU and as the travel time of light.",
       "model": "The picture is to true scale in the direction of the distance: one pixel is the diameter of the Moon, $3474\\,\\text{km}$. The planets are drawn on one straight line starting from the Sun at their mean distances, that is the semi-major axes of their orbits (JPL, *Approximate Positions of the Planets*), and their sizes are equatorial diameters (NASA). In reality the planets are on different sides of the Sun. Voyager 2 is marked with an enlarged symbol, because the probe itself is much smaller than one pixel in the picture.\n\nThe distance, speed and signal travel time of Voyager 2 are **values calculated by the model** (sources: NASA/JPL), not measurements. The model assumes that the probe moves at a constant speed of $15.341\\,\\text{km/s}$ starting from the crossing of the heliopause, the edge of the bubble of the solar wind, on 2018-11-05, when the distance was $119.7\\,\\text{AU}$; the real speed changes slightly. The signal travel time is calculated from the distance to the Sun. The Earth is at most $1\\,\\text{AU}$ nearer to or farther from the Sun, so the signal travel time to the Earth differs from the one shown by at most about eight minutes. The speed of light is $c = 299\\,792\\,458\\,\\text{m/s}$, and *Speed* changes only the pace of the animation, not the elapsed time or the distance.",
       "calc": "The number of pixels is obtained by dividing the length by the diameter of the Moon:\n\n$$N = \\frac{d}{3474\\,\\text{km}}\\cdot1\\,\\text{px}$$\n\nFor example, the width of the Sun is $\\tfrac{1.392\\cdot10^{6}\\,\\text{km}}{3474\\,\\text{km}}\\cdot1\\,\\text{px} = 401\\,\\text{px}$. The distance in AU is $\\tfrac{d}{1.496\\cdot10^{8}\\,\\text{km}}$, and the travel time of light is\n\n$$t = \\frac{d}{c}\\qquad c = 2.998\\cdot10^{5}\\,\\text{km/s}$$\n\nWhen travelling, the distance travelled is $s = ct$ and the elapsed time $t = s : c$; the speed setting only tells how many animation seconds pass per second. The distance of Voyager 2 on day $t$ in the model is\n\n$$d = d_0 + v\\,(t - t_0)$$\n\nwhere $d_0 = 119.7\\,\\text{AU}$, $v = 15.341\\,\\text{km/s}$ and $t_0$ is 2018-11-05. The formula is used here as a ready-made model, and you do not need to solve it yourself."
     },
@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: the power of ten of the distance",
-      "intro": "Testaa ennuste 2. Liu'uta etäisyyttä $d = 10^{n}\\,\\text{km}$ ja kirjaa arvoille $n = 7$, $n = 8$ ja $n = 9$ etäisyys AU:na ja valon kulkuaika sekunteina. Siirrä liukua niin, että liukusäätimen otsikossa lukee täsmälleen $n = 8{,}00$ (ja niin edelleen), ja paina sitten *Kirjaa mittaus*. Katso, mitä taulukon luvuille tapahtuu, kun $n$ kasvaa yhdellä.",
+      "intro": "Test prediction 2. Drag the slider for the distance $d = 10^{n}\\,\\text{km}$ and record the distance in AU and the light travel time in seconds for $n = 7$, $n = 8$ and $n = 9$. Move the slider so that the slider title reads exactly $n = 8.00$ (and so on), and then press *Record measurement*. Look at what happens to the numbers in the table when $n$ increases by one.",
       "initial": {
         "n": 7
       },
@@ -130,8 +130,8 @@
       ],
       "vary": "n",
       "names": {
-        "n": "etäisyyden kymmenpotenssi n",
-        "pvm": "Voyager 2 -päivä"
+        "n": "power of ten of the distance n",
+        "pvm": "Voyager 2 day"
       },
       "measure": [
         {
@@ -174,8 +174,8 @@
       "type": "interpret",
       "title": "The initial data and values of the Voyager 2 model",
       "source": "model",
-      "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus 15,341 km/s; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
-      "text": "The simulation calculates the position of Voyager 2 by assuming that after crossing the heliopause the probe moves at a constant speed. The heliopause is the boundary beyond which the particle wind of the Sun no longer dominates space. The distances and signal travel times from the Sun calculated this way (four days, not measurements):\n\n| Year | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119.7$ | $1.79\\cdot10^{10}$ | $16.6$ |\n| 2022 | $132.6$ | $1.98\\cdot10^{10}$ | $18.4$ |\n| 2026 | $145.6$ | $2.18\\cdot10^{10}$ | $20.2$ |\n| 2030 | $158.5$ | $2.37\\cdot10^{10}$ | $22.0$ |\n\nThe values are for 5 November of each year. The same distance is written in three ways: in AU, in kilometres and as the travel time of light in hours.",
+      "source_note": "NASA/JPL: heliopause crossing on 2018-11-05 at a distance of 119.7 AU, speed 15.341 km/s; $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
+      "text": "The simulation calculates the position of Voyager 2 by assuming that after crossing the heliopause the probe moves at a constant speed. The heliopause is the boundary beyond which the stream of particles from the Sun, the solar wind, no longer dominates space. The distances and signal travel times from the Sun calculated this way (four days, not measurements):\n\n| Year | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119.7$ | $1.79\\cdot10^{10}$ | $16.6$ |\n| 2022 | $132.6$ | $1.98\\cdot10^{10}$ | $18.4$ |\n| 2026 | $145.6$ | $2.18\\cdot10^{10}$ | $20.2$ |\n| 2030 | $158.5$ | $2.37\\cdot10^{10}$ | $22.0$ |\n\nThe values are for 5 November of each year. The same distance is written in three ways: in AU, in kilometres and as the travel time of light in hours.",
       "question": {
         "type": "choice",
         "prompt": "The values in the table are values calculated by the model. What does that mean?",
@@ -201,14 +201,14 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: Voyager 2 on different days",
-      "intro": "Testaa ennuste 1. Paina *Voyager 2* -hyppypainiketta, niin näkymän keskikohta on luotaimen luona. Kirjaa luotaimen etäisyys AU:na ja signaalin kulkuaika tunteina päivälle 2026-01-01 ja sen jälkeen ainakin yhdelle toiselle päivälle, esimerkiksi 2030-01-01. Vaihda päivä kenttään *Voyager 2 -päivä*. Arvot ovat mallin laskemia.",
+      "intro": "Test prediction 1. Press the *Voyager 2* jump button so that the centre of the view is at the probe. Record the distance of the probe in AU and the signal travel time in hours for the date 2026-01-01 and then for at least one other date, for example 2030-01-01. Change the date in the *Voyager 2 day* field. The values are calculated by the model.",
       "initial": {
         "pvm": "2026-01-01"
       },
       "locked": [],
       "vary": "pvm",
       "names": {
-        "pvm": "päivämäärä"
+        "pvm": "date"
       },
       "measure": [
         {

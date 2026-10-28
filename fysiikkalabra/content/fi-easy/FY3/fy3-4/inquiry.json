@@ -142,7 +142,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain syvyys muuttuu",
-      "intro": "Testaa ennuste 1. Neste on vettä, ja tiheys pysyy vakiona. Muuta vain syvyyttä ja kirjaa paineet ainakin kahdella syvyydellä, esimerkiksi 5 m, 10 m, 15 m ja 20 m. Vertaa, kasvaako kokonaispaine samassa suhteessa kuin syvyys ja kuinka paljon paine kasvaa jokaista viittä metriä kohti.",
+      "intro": "Testaa ennuste 1. Neste on vettä, ja tiheys pysyy samana. Muuta vain syvyyttä. Kirjaa paineet ainakin kahdella syvyydellä, esimerkiksi 5 m, 10 m, 15 m ja 20 m. Vertaa kahta asiaa. Kasvaako kokonaispaine samassa suhteessa kuin syvyys? Kuinka paljon paine kasvaa jokaista viittä metriä kohti?",
       "initial": {
         "h": 5,
         "rho": 1000

@@ -94,7 +94,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: half-pipe ilman kitkaa",
-      "intro": "Testaa ennuste 1. Alkutila valitsee half-pipen ilman kitkaa ja alkukorkeuden $2{,}0\\,\\text{m}$ ja asettaa kellon nollaan. Siirrä *Hetki $t$* -liukusäädintä ja kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 1{,}0\\,\\text{s}$, $t = 2{,}0\\,\\text{s}$ ja $t = 3{,}0\\,\\text{s}$. Hetkellä $t = 1{,}0\\,\\text{s}$ skeittari on lähellä pohjaa. Energiat ovat jouleina, ja sarake $E$ on kolmen energian summa. Katso, mitä se kertoo.",
+      "intro": "Testaa ennuste 1. Alussa half-pipessä ei ole kitkaa, alkukorkeus on $2{,}0\\,\\text{m}$ ja kello on nollassa. Siirrä *Hetki $t$* -liukusäädintä. Kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 1{,}0\\,\\text{s}$, $t = 2{,}0\\,\\text{s}$ ja $t = 3{,}0\\,\\text{s}$. Hetkellä $t = 1{,}0\\,\\text{s}$ skeittari on lähellä pohjaa. Energiat ovat jouleina. Sarake $E$ on kolmen energian summa. Katso, mitä se kertoo.",
       "initial": {
         "kitka": 0,
         "h0": 2.0,
@@ -167,7 +167,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: kitka mukana",
-      "intro": "Testaa ennuste 2. Alkutila valitsee pienen kitkan ja alkukorkeuden $2{,}0\\,\\text{m}$ ja asettaa kellon nollaan. Siirrä *Hetki $t$* -liukusäädintä ja kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 0\\,\\text{s}$, $t = 8{,}0\\,\\text{s}$ ja $t = 16{,}0\\,\\text{s}$. Energiat ovat jouleina, ja sarake $E$ on kolmen energian summa. Vertaa mekaanista energiaa $E_\\text{p} + E_\\text{k}$ ja lämpöenergiaa riveillä.",
+      "intro": "Testaa ennuste 2. Alussa kitka on pieni, alkukorkeus on $2{,}0\\,\\text{m}$ ja kello on nollassa. Siirrä *Hetki $t$* -liukusäädintä. Kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 0\\,\\text{s}$, $t = 8{,}0\\,\\text{s}$ ja $t = 16{,}0\\,\\text{s}$. Energiat ovat jouleina. Sarake $E$ on kolmen energian summa. Vertaa riveillä mekaanista energiaa $E_\\text{p} + E_\\text{k}$ ja lämpöenergiaa.",
       "initial": {
         "kitka": 1,
         "h0": 2.0,

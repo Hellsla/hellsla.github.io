@@ -21,6 +21,7 @@ new or changed text is translated again."""
 import copy, json, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, i18n, figlib, importlib.util
+import check_i18n
 from check_i18n import TEXT_KEYS
 
 ROOT = courses.ROOT
@@ -43,12 +44,27 @@ def unit_files(unit, lang):
     return out, courses.lesson_file(fi, "figures.py"), tr
 
 
-def walk(o, keys, path=(), key=None):
+def walk(o, keys, path=(), key=None, parent=None):
     if isinstance(o, dict):
-        for k, v in o.items(): yield from walk(v, keys, path + (k,), k)
+        for k, v in o.items(): yield from walk(v, keys, path + (k,), k, key)
     elif isinstance(o, list):
-        for i, v in enumerate(o): yield from walk(v, keys, path + (i,), key)
-    elif isinstance(o, str) and key in keys and o.strip() and not re.fullmatch(r"[a-z0-9_-]+", o): yield path, o   # not ids
+        for i, v in enumerate(o): yield from walk(v, keys, path + (i,), key, parent)
+    elif isinstance(o, str) and o.strip() and not re.fullmatch(r"[a-z0-9_-]+", o) and \
+            (check_i18n.is_text(key, o, parent) if keys is TEXT_KEYS else key in keys): yield path, o   # not ids
+
+
+def follow(fi, old, path):
+    """The text at `path` of the Finnish data in the old translation: list items with an id are matched by id, so
+    an activity added or removed in Finnish does not shift the translations of the others."""
+    a, b = fi, old
+    try:
+        for p in path:
+            if isinstance(p, int) and isinstance(a[p], dict) and "id" in a[p]:
+                b = next(x for x in b if isinstance(x, dict) and x.get("id") == a[p]["id"])
+            else: b = b[p]
+            a = a[p]
+    except (KeyError, IndexError, TypeError, StopIteration): return None
+    return b
 
 
 def put(o, path, v):
@@ -89,11 +105,7 @@ def extract(unit, lang, work):
             fi = json.loads(a.read_text()); old = json.loads(b.read_text()) if b.exists() else None
             for path, s in walk(fi, keys):
                 k = pathkey(name, path); source[k] = s
-                prev = old
-                if prev is not None:
-                    try:
-                        for p in path: prev = prev[p]
-                    except (KeyError, IndexError, TypeError): prev = None
+                prev = follow(fi, old, path) if old is not None else None
                 strings[k] = prev if isinstance(prev, str) else s
         else:
             (out / name).write_text(stub((b if b.exists() else a).read_text(), figs))

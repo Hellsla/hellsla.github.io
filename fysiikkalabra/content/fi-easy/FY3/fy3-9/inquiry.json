@@ -151,7 +151,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain tilavuus muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy 20 °C:ssa. Muuta vain tilavuutta ja kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin, mutta paineen pascaleina (100 kPa = 100 000 Pa) ja tulon $pV$ jouleina ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0{,}001\\,\\text{J}$).",
+      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy 20 °C:ssa. Muuta vain tilavuutta. Kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin. Paine on pascaleina (100 kPa = 100 000 Pa). Tulo $pV$ on jouleina ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0{,}001\\,\\text{J}$).",
       "initial": {
         "mode": "isoterminen",
         "Tc": 20,
@@ -188,7 +188,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain lämpötila muuttuu, paine pysyy samana",
-      "intro": "Testaa ennuste 2. Mäntä pääsee liikkumaan, ja sen päällä oleva paino pitää paineen 100 kPa:ssa, joten tilanmuutos on isobaarinen. Muuta vain lämpötilaa ja kirjaa mittaus ainakin lämpötiloissa 20 °C ja 80 °C, mielellään myös 150 °C ja −50 °C. Katso $(T, V)$-kuvaajasta, mihin kohtaan pisteiden kautta piirretty suora osuisi, jos sitä jatkettaisiin. Taulukko näyttää säätämäsi celsiuslämpötilan $\\theta$, kelvinlämpötilan $T$, ilman tilavuuden millilitroina ja suhteen $V/T$ yksikössä ml/K.",
+      "intro": "Testaa ennuste 2. Mäntä pääsee liikkumaan. Sen päällä oleva paino pitää paineen 100 kPa:ssa, joten tilanmuutos on isobaarinen. Muuta vain lämpötilaa. Kirjaa mittaus ainakin lämpötiloissa 20 °C ja 80 °C, mielellään myös 150 °C ja −50 °C. Katso $(T, V)$-kuvaajasta, mihin kohtaan pisteiden kautta piirretty suora osuisi, jos sitä jatkettaisiin. Taulukko näyttää celsiuslämpötilan $\\theta$, jonka säädät, ja kelvinlämpötilan $T$. Se näyttää myös ilman tilavuuden millilitroina ja suhteen $V/T$ yksikössä ml/K.",
       "initial": {
         "mode": "isobaarinen",
         "Tc": 20
@@ -275,7 +275,7 @@
         ]
       },
       "source": "simulated",
-      "source_note": "keksityt, oikeaa ruiskukoetta muistuttavat esimerkkiarvot"
+      "source_note": "keksityt esimerkkiarvot, jotka muistuttavat oikeaa ruiskukoetta"
     },
     {
       "id": "johtopaatos",

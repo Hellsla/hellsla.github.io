@@ -346,7 +346,7 @@
       "type": "explain",
       "title": "3. Explain and justify",
       "optional": true,
-      "prompt": "A student measures the mass and volume of an unknown piece of metal and calculates a density of $8.9\\,\\text{g/cm}^3$. She says: \"The piece is copper.\" Explain why density is a good way to identify a substance and why the conclusion is still not completely certain.",
+      "prompt": "A student measures the mass and volume of an unknown piece of metal and calculates a density of $8.9\\,\\text{g/cm}^3$. The student says: \"The piece is copper.\" Explain why density is a good way to identify a substance and why the conclusion is still not completely certain.",
       "criteria": [
         "I say that density is a property of the substance and does not depend on the size of the object.",
         "I compare the result with the table value: the density of copper is $8.96\\,\\text{g/cm}^3$.",

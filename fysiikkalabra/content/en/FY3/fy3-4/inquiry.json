@@ -142,7 +142,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the depth changes",
-      "intro": "Testaa ennuste 1. Neste on vettä, ja tiheys pysyy vakiona. Muuta vain syvyyttä ja kirjaa paineet ainakin kahdella syvyydellä, esimerkiksi 5 m, 10 m, 15 m ja 20 m. Vertaa, kasvaako kokonaispaine samassa suhteessa kuin syvyys ja kuinka paljon paine kasvaa jokaista viittä metriä kohti.",
+      "intro": "Test prediction 1. The liquid is water, and the density stays constant. Change only the depth and record the pressures at at least two depths, for example 5 m, 10 m, 15 m and 20 m. Compare whether the total pressure increases in the same ratio as the depth, and by how much the pressure increases for every five metres.",
       "initial": {
         "h": 5,
         "rho": 1000
@@ -185,8 +185,8 @@
         "solution": "**Given:** water, $\\rho = 1000\\,\\text{kg/m}^3$ constant; measurements at two depths with $\\Delta h = 10.0\\,\\text{m} - 5.0\\,\\text{m} = 5.0\\,\\text{m}$ between them: at the depth $5.0\\,\\text{m}$ the total pressure is $p_1 = 150.1\\,\\text{kPa}$ and at the depth $10.0\\,\\text{m}$ the pressure is $p_2 = 199.1\\,\\text{kPa}$\n\n**Find:** the increase in pressure per metre of depth, $\\dfrac{\\Delta p}{\\Delta h}$, in $\\text{kPa/m}$\n\n**Principle:** In a liquid $p = p_0 + \\rho g h$, and because only the depth changes ($\\rho$ and $p_0$ stay the same), the pressure grows steadily: the increase per metre is always the same number $\\rho g$. Atmospheric pressure $p_0$ does not change with depth, so it cancels when we take the difference between the pressures at two depths.\n\n**Formula:** $p_2 - p_1 = \\rho g (h_2 - h_1)$, so\n\n$$\\frac{\\Delta p}{\\Delta h} = \\frac{p_2 - p_1}{h_2 - h_1} \\;(= \\rho g)$$\n\n**Conversions:** The pressures are already in kilopascals and the depths in metres, so the result comes directly in $\\text{kPa/m}$ and no conversions are needed. For comparison, $\\rho g = 1000 \\cdot 9.81\\,\\text{Pa/m} = 9.81\\,\\text{kPa/m}$.\n\n**Substitution:** $\\dfrac{\\Delta p}{\\Delta h} = \\dfrac{199.1\\,\\text{kPa} - 150.1\\,\\text{kPa}}{10.0\\,\\text{m} - 5.0\\,\\text{m}} = \\dfrac{49.0\\,\\text{kPa}}{5.0\\,\\text{m}} = 9.80\\,\\tfrac{\\text{kPa}}{\\text{m}}$\n\n**Answer:** $9.8\\,\\text{kPa/m}$ (from your readings), two significant figures, because the depth difference $5.0\\,\\text{m}$ is known to two figures, although the pressure difference $49.0\\,\\text{kPa}$ has three. The value of the model is $\\rho g = 9.81\\,\\text{kPa/m}$.\n\n**Reasonableness:** The increase is about $10\\,\\text{kPa}$ per metre, which fits the fact that $10\\,\\text{m}$ of water adds about one atmosphere ($101\\,\\text{kPa}$). Pressure grows in the same proportion as depth only for the gauge pressure: $5\\,\\text{m}$ gives $49\\,\\text{kPa}$ and $10\\,\\text{m}$ gives $98\\,\\text{kPa}$, which is double. The total pressure does not double ($150 \\to 199\\,\\text{kPa}$), because $101\\,\\text{kPa}$ is included in both."
       },
       "names": {
-        "h": "syvyys h",
-        "rho": "tiheys ρ"
+        "h": "depth h",
+        "rho": "density ρ"
       }
     },
     {
@@ -194,7 +194,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Further investigation: only the density changes",
-      "intro": "Testaa ennuste 2. Mittari pysyy 10 m:n syvyydessä, ja vain nesteen tiheys muuttuu. Kirjaa paineet ainakin kahdella tiheydellä, esimerkiksi bensiini 720, vesi 1000 ja Kuolleenmeren vesi 1240 kg/m³. Kumpi paineista kasvaa samassa suhteessa kuin tiheys?",
+      "intro": "Test prediction 2. The gauge stays at a depth of 10 m, and only the density of the liquid changes. Record the pressures for at least two densities, for example petrol 720, water 1000 and Dead Sea water 1240 kg/m³. Which of the pressures increases in the same ratio as the density?",
       "initial": {
         "h": 10,
         "rho": 1000
@@ -219,8 +219,8 @@
       ],
       "min": 2,
       "names": {
-        "h": "syvyys h",
-        "rho": "tiheys ρ"
+        "h": "depth h",
+        "rho": "density ρ"
       },
       "optional": true
     },

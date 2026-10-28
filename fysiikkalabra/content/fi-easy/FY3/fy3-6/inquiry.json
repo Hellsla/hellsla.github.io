@@ -113,7 +113,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain aine muuttuu",
-      "intro": "Testaa ennuste 1. Veden massa ja lämpötila sekä kappaleen massa ja alkulämpötila pysyvät vakioina; vaihda vain kappaleen ainetta. Kirjaa tasapainolämpötila ainakin hiekalla ja vedellä, halutessasi myös metalleilla. Paina välillä *Upota* ja seuraa, kumpi lämpömittari liikkuu enemmän.",
+      "intro": "Testaa ennuste 1. Veden massa ja lämpötila sekä kappaleen massa ja alkulämpötila pysyvät samoina. Vaihda vain kappaleen ainetta. Kirjaa tasapainolämpötila ainakin hiekalla ja vedellä. Voit kirjata myös metallit. Paina välillä *Upota* ja seuraa, kumpi lämpömittari liikkuu enemmän.",
       "initial": {
         "mW": 0.3,
         "TW0": 20,
@@ -159,7 +159,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain kuuman veden määrä muuttuu",
-      "intro": "Testaa ennuste 2. Kappale on nyt vettä, jonka lämpötila on 90 °C, ja astiassa on 0,50 kg vettä lämpötilassa 20 °C. Muuta vain kuuman veden massaa. Kirjaa tasapainolämpötila ainakin kahdella massalla, esimerkiksi 0,20 kg, 0,50 kg ja 0,80 kg. Millä massalla tulos on alkulämpötilojen keskiarvo?",
+      "intro": "Testaa ennuste 2. Kappale on nyt vettä, jonka lämpötila on 90 °C. Astiassa on 0,50 kg vettä, jonka lämpötila on 20 °C. Muuta vain kuuman veden massaa. Kirjaa tasapainolämpötila ainakin kahdella massalla, esimerkiksi 0,20 kg, 0,50 kg ja 0,80 kg. Millä massalla tulos on alkulämpötilojen keskiarvo?",
       "initial": {
         "mW": 0.5,
         "TW0": 20,

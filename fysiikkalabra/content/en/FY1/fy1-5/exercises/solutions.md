@@ -94,9 +94,9 @@
 **Principle:** The speed is assumed constant, so the uniform motion model $s = s_0 + vt$ applies. The result is a model value, because the Sun's gravity slows the probe slightly and the real time is therefore a little longer.
 **Formula:** $s = s_0 + vt$, so $t = \dfrac{s - s_0}{v}$
 **Conversions:** The speed in astronomical units per day: $v = 15.341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{day}} = 1\,325\,462\,\tfrac{\text{km}}{\text{day}}$, and $\dfrac{1\,325\,462\,\text{km/day}}{149\,597\,870.7\,\text{km/AU}} = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
-**Substitution:** $t = \dfrac{150\,\text{AU} - 119.7\,\text{AU}}{0.0088602\,\text{AU/day}} = \dfrac{30.3\,\text{AU}}{0.0088602\,\text{AU/day}} = 3419.8\,\text{day}$
-**Answer:** $3420\,\text{day}$, three significant figures, when $150\,\text{AU}$ is interpreted as accurate to three figures and the difference is $30.3\,\text{AU}$.
-**Reasonableness:** The rate is about $3.2\,\text{AU}$ per year, so $30.3\,\text{AU}$ takes about $30.3 : 3.2 \approx 9.5$ years. The result $3420\,\text{day} \approx 9.4$ years fits this and falls in March 2028. The model differs from the JPL value by about 0.2 AU, which corresponds to an error of about 20 days in the date.
+**Substitution:** $t = \dfrac{150\,\text{AU} - 119.7\,\text{AU}}{0.0088602\,\text{AU/day}} = \dfrac{30.3\,\text{AU}}{0.0088602\,\text{AU/day}} = 3419.8\,\text{days}$
+**Answer:** $3420\,\text{days}$, three significant figures, when $150\,\text{AU}$ is interpreted as accurate to three figures and the difference is $30.3\,\text{AU}$.
+**Reasonableness:** The rate is about $3.2\,\text{AU}$ per year, so $30.3\,\text{AU}$ takes about $30.3 : 3.2 \approx 9.5$ years. The result $3420\,\text{days} \approx 9.4$ years fits this and falls in March 2028. The model differs from the JPL value by about 0.2 AU, which corresponds to an error of about 20 days in the date.
 
 ## fy1-5-L3-02
 **Given:** distance $d = 150\,\text{AU}$, speed of the signal $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$

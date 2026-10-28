@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the piston speed changes",
-      "intro": "Testaa ennuste 2. Seinät lukitaan eristetyiksi, ja vain männän nopeus muuttuu. Paina simulaatiossa *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt ($V = 75\\,\\%$), paina *Kirjaa mittaus*. Vaihda sitten männän nopeus, paina taas *Alkuun* ja *Työnnä mäntää*, ja kirjaa uudelleen. Vertaa kummallakin kerralla sisäenergian muutosta $\\Delta U$ ja työtä $W$ sekä lämpötilan nousua $\\Delta T$. Hidas työntö kestää noin 19 s; *Animaatio: nopea* nopeuttaa katselua muuttamatta lukemia.",
+      "intro": "Test prediction 2. The walls are locked as insulated, and only the speed of the piston changes. In the simulation press *To the start* and *Push the piston*. When the piston has stopped ($V = 75\\,\\%$), press *Record measurement*. Then change the speed of the piston, press *To the start* and *Push the piston* again, and record again. Compare, for both runs, the change in internal energy $\\Delta U$ and the work $W$ and the temperature rise $\\Delta T$. A slow push takes about 19 s; *Animation: fast* speeds up the viewing without changing the readings.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -131,8 +131,8 @@
       ],
       "vary": "push",
       "names": {
-        "push": "männän nopeus",
-        "wall": "seinät"
+        "push": "piston speed",
+        "wall": "walls"
       },
       "measure": [
         {
@@ -155,7 +155,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the walls change",
-      "intro": "Testaa ennuste 1. Männän nopeus lukitaan hitaaksi, ja vain seinät muuttuvat. Tee ensin työntö eristetyssä sylinterissä (*Alkuun*, *Työnnä mäntää*) ja kirjaa, kun mäntä on pysähtynyt. Vaihda sitten seinät johtaviksi, paina *Alkuun* ja *Työnnä mäntää*. Kun mäntä on pysähtynyt, odota, kunnes $T$ on noin 293 K, ja kirjaa vasta sitten. Seuraa samalla pylväitä: ylöspäin osoittava pylväs on kaasuun tullutta energiaa, alaspäin osoittava kaasusta lähtenyttä.",
+      "intro": "Test prediction 1. The speed of the piston is locked to slow, and only the walls change. First do the push in an insulated cylinder (*To the start*, *Push the piston*) and record when the piston has stopped. Then change the walls to conducting, press *To the start* and *Push the piston*. When the piston has stopped, wait until $T$ is about 293 K, and only then record. Also watch the bars: the bar pointing up is energy that has entered the gas, the bar pointing down is energy that has left the gas.",
       "initial": {
         "push": "hidas",
         "wall": "eristetty"
@@ -165,8 +165,8 @@
       ],
       "vary": "wall",
       "names": {
-        "push": "männän nopeus",
-        "wall": "seinät"
+        "push": "piston speed",
+        "wall": "walls"
       },
       "measure": [
         {

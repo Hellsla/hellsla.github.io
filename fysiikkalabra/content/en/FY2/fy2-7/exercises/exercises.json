@@ -87,7 +87,7 @@
     {
       "id": "fy2-7-L3-02",
       "level": 3,
-      "text": "Two district heating networks serve similar customers. Network A is sent $500\\,\\text{MWh}$ per week and its efficiency is $91.0\\,\\%$. Network B is sent $520\\,\\text{MWh}$ per week and its efficiency is $85.0\\,\\%$. Which network brings more heat to customers and how many megawatt-hours more? Give the size of the difference in megawatt-hours as your answer.",
+      "text": "Two district heating networks serve similar customers. $500\\,\\text{MWh}$ is sent into network A per week, and its efficiency is $91.0\\,\\%$. $520\\,\\text{MWh}$ is sent into network B per week, and its efficiency is $85.0\\,\\%$. Which network brings more heat to customers and how many megawatt-hours more? Give the size of the difference in megawatt-hours as your answer.",
       "answer": 13.0,
       "unit": "MWh",
       "tolerance": 0.02
@@ -95,9 +95,9 @@
     {
       "id": "fy2-7-L3-03",
       "level": 3,
-      "text": "The loss power of a district heating pipework is steadily $150\\,\\text{kW}$. The heating of one detached house uses $20\\,\\text{MWh}$ in a year. The loss of the pipework in a year corresponds to the annual heating energy of how many houses, when a year has $8760\\,\\text{h}$?",
+      "text": "The loss power of a district heating pipework is steadily $150\\,\\text{kW}$. The heating of one detached house uses $20\\,\\text{MWh}$ in a year. The annual loss of the pipework equals the annual heating energy of how many houses, when a year has $8760\\,\\text{h}$?",
       "answer": 66,
-      "unit": "kpl",
+      "unit": "pcs",
       "tolerance": 0.02
     }
   ]

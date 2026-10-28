@@ -148,7 +148,7 @@ s = s_0 + v t
 
 <!-- vaihe -->
 
-**Unit conversions.** The time is already in days, $t = 2922\,\text{day}$, so the speed is converted to AU/day: $v = 15.341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{day}} = 1\,325\,462\,\tfrac{\text{km}}{\text{day}}$, and dividing by $149\,597\,870.7\,\text{km/AU}$ gives $v = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
+**Unit conversions.** The time is already in days, $t = 2922\,\text{days}$, so the speed is converted to AU/day: $v = 15.341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{day}} = 1\,325\,462\,\tfrac{\text{km}}{\text{day}}$, and dividing by $149\,597\,870.7\,\text{km/AU}$ gives $v = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
 
 <!-- vaihe -->
 
@@ -157,7 +157,7 @@ s = s_0 + v t
 \begin{aligned}
 s &= s_0 + v t \\
 &= 119.7\,\text{AU} \\
-&\quad + 0.0088602\,\tfrac{\text{AU}}{\text{day}} \cdot 2922\,\text{day} \\
+&\quad + 0.0088602\,\tfrac{\text{AU}}{\text{day}} \cdot 2922\,\text{days} \\
 &= 119.7\,\text{AU} + 25.89\,\text{AU} \\
 &= 145.59\,\text{AU}
 \end{aligned}

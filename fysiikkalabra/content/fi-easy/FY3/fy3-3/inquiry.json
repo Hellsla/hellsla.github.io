@@ -145,7 +145,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain lämpötila muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Tilavuus on lukittu 1,0 dm³:iin, ja vain lämpötila muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdessa lämpötilassa, esimerkiksi 150 K, 300 K ja 600 K. Odota säädön jälkeen pari sekuntia, jotta mitattu paine ehtii asettua uuteen arvoonsa. Vertaa kelvinlämpötilojen suhdetta paineiden suhteeseen.",
+      "intro": "Testaa ennusteet 1 ja 3. Tilavuus on lukittu 1,0 dm³:iin, ja vain lämpötila muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ ainakin kahdessa lämpötilassa, esimerkiksi 150 K, 300 K ja 600 K. Keskinopeus on suhteessa 300 K:n keskinopeuteen. Odota säädön jälkeen pari sekuntia. Silloin mitattu paine ehtii asettua uuteen arvoonsa. Vertaa kelvinlämpötilojen suhdetta paineiden suhteeseen.",
       "initial": {
         "T": 300,
         "V": 1
@@ -183,7 +183,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Lisätutkimus: vain tilavuus muuttuu",
-      "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ (suhteessa 300 K:n keskinopeuteen) ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
+      "intro": "Testaa ennuste 2. Lämpötila on lukittu 300 K:iin, ja vain tilavuus muuttuu. Kirjaa paine ja hiukkasten keskinopeus $v$ ainakin kahdella tilavuudella, esimerkiksi 2,0 dm³ ja 1,0 dm³. Keskinopeus on suhteessa 300 K:n keskinopeuteen. Odota säädön jälkeen pari sekuntia ennen kirjaamista. Muuttuuko hiukkasten nopeus? Mikä silloin kasvattaa painetta?",
       "initial": {
         "T": 300,
         "V": 2

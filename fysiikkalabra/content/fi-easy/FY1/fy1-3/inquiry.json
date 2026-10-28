@@ -119,7 +119,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: satunnaisvirhe ja keskiarvo",
-      "intro": "Testaa ennuste 1. Alkutila asettaa satunnaisvirheeksi $0{,}15\\,\\text{s}$ ja systemaattiseksi virheeksi nollan. Vedä *Toistoja* -liukusäädintä ja kirjaa mittaus, kun $n = 1$, $n = 5$ ja $n = 40$. Katso, mitä keskiarvolle ja vaihteluvälille tapahtuu.",
+      "intro": "Testaa ennuste 1. Alussa satunnaisvirhe on $0{,}15\\,\\text{s}$ ja systemaattinen virhe on nolla. Vedä *Toistoja* -liukusäädintä. Kirjaa mittaus, kun $n = 1$, $n = 5$ ja $n = 40$. Katso, mitä keskiarvolle ja vaihteluvälille tapahtuu.",
       "initial": {
         "n": 1,
         "sat": 0.15,
@@ -183,7 +183,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: systemaattinen virhe ei kumoudu",
-      "intro": "Testaa ennuste 2. Alkutila asettaa satunnaisvirheeksi $0{,}15\\,\\text{s}$ ja systemaattiseksi virheeksi $+0{,}30\\,\\text{s}$. Kirjaa mittaus, kun $n = 1$, $n = 10$ ja $n = 40$. Oikea aika on $T = 2{,}40\\,\\text{s}$, jonka malli tuntee mutta oikeassa kokeessa ei tunnettaisi.",
+      "intro": "Testaa ennuste 2. Alussa satunnaisvirhe on $0{,}15\\,\\text{s}$ ja systemaattinen virhe on $+0{,}30\\,\\text{s}$. Kirjaa mittaus, kun $n = 1$, $n = 10$ ja $n = 40$. Oikea aika on $T = 2{,}40\\,\\text{s}$. Malli tietää sen, mutta oikeassa kokeessa sitä ei tiedettäisi.",
       "initial": {
         "n": 1,
         "sat": 0.15,
@@ -240,7 +240,7 @@
       "type": "experiment",
       "optional": true,
       "title": "Koe 3: satunnaisvirheen suuruus",
-      "intro": "Selvitä, miten tulosten hajonta riippuu satunnaisvirheen suuruudesta. Alkutila asettaa $n = 40$ ja systemaattisen virheen nollaksi. Kirjaa mittaus, kun satunnaisvirhe on $0{,}05\\,\\text{s}$, $0{,}15\\,\\text{s}$ ja $0{,}30\\,\\text{s}$.",
+      "intro": "Selvitä, miten tulosten hajonta riippuu satunnaisvirheen suuruudesta. Alussa $n = 40$ ja systemaattinen virhe on nolla. Kirjaa mittaus, kun satunnaisvirhe on $0{,}05\\,\\text{s}$, $0{,}15\\,\\text{s}$ ja $0{,}30\\,\\text{s}$.",
       "initial": {
         "n": 40,
         "sat": 0.05,
@@ -525,9 +525,9 @@
       "title": "3. Selitä",
       "prompt": "Selitä omin sanoin, miten erotat toisistaan satunnaisen ja systemaattisen virheen. Selitä myös, mitä toistaminen niille tekee ja mitä toistettavuus ja oikeellisuus tarkoittavat.",
       "criteria": [
-        "Sanon, että satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy tulosten hajontana, kun taas systemaattinen virhe on joka mittauksessa samaan suuntaan.",
+        "Sanon, että satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy tulosten hajontana. Systemaattinen virhe taas on joka mittauksessa samaan suuntaan.",
         "Sanon, että keskiarvo vaimentaa satunnaisvirhettä mutta ei systemaattista virhettä.",
-        "Sanon, että toistettavuus kertoo tulosten lähellä toisiaan olemisesta ja oikeellisuus siitä, kuinka lähellä oikeaa arvoa tulos on.",
+        "Sanon, että toistettavuus kertoo, kuinka lähellä toisiaan tulokset ovat. Oikeellisuus kertoo, kuinka lähellä oikeaa arvoa tulos on.",
         "Sanon, mistä systemaattisen virheen voi huomata: vertailusta tunnettuun arvoon tai toiseen menetelmään."
       ],
       "model": "Satunnaisvirhe vaihtelee kerta kerralta ja voi olla kumpaan suuntaan tahansa. Siksi se näkyy tulosten hajontana, esimerkiksi käsikellon reaktioaikana. Systemaattinen virhe on joka mittauksessa samaan suuntaan, esimerkiksi väärä nollakohta. Toistaminen ja keskiarvo vaimentavat satunnaisvirhettä, koska liian suuret ja liian pienet tulokset kumoavat toisensa. Systemaattinen virhe on kuitenkin yhtä suuri myös keskiarvossa. Toistettavuus kertoo, kuinka lähelle toisiaan toistetut tulokset osuvat. Se kertoo siis, kuinka pieni satunnaisvirhe on. Oikeellisuus kertoo, kuinka lähellä keskiarvo on oikeaa arvoa. Se kertoo siis, kuinka pieni systemaattinen virhe on. Systemaattisen virheen voi huomata vain vertaamalla tulosta tunnettuun vertailuarvoon tai toiseen mittaustapaan."

@@ -118,7 +118,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: petrol engine",
-      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori, ja sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska todellisen moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$. Mallin hyötysuhde $25\\,\\%$ on tyypillinen arvo, jonka malli saa lähtötietona: simulaatio ei mittaa sitä moottorista vaan laskee sen avulla energiat.",
+      "intro": "Test prediction 1. The device is a petrol engine of a car, and its input power is locked at $60\\,\\text{kW}$, because the efficiency of a real engine depends on the load. Change only the time $t$ and record at least three measurements. Look at the energies $E_\\text{o}$, $E_\\text{a}$ and $E_\\text{h}$. The model efficiency $25\\,\\%$ is a typical value that the model receives as initial data: the simulation does not measure it from the engine but uses it to calculate the energies.",
       "initial": {
         "laite": "auto",
         "Po": 60000,
@@ -130,9 +130,9 @@
       ],
       "vary": "t",
       "names": {
-        "laite": "laite",
-        "Po": "otettu teho P_o",
-        "t": "aika t"
+        "laite": "device",
+        "Po": "input power P_o",
+        "t": "time t"
       },
       "units": {
         "laite": "",
@@ -188,7 +188,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: energy and power",
-      "intro": "Testaa ennuste 2. Laite on hehkulamppu ja sen otettu teho on lukittu arvoon $40\\,\\text{W}$. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso otettua energiaa $E_\\text{o}$ ja hyötyenergiaa $E_\\text{a}$.",
+      "intro": "Test prediction 2. The device is an incandescent lamp and its input power is locked at $40\\,\\text{W}$. Change only the time $t$ and record at least three measurements. Look at the input energy $E_\\text{o}$ and the useful energy $E_\\text{a}$.",
       "initial": {
         "laite": "lamppu",
         "Po": 40,
@@ -200,9 +200,9 @@
       ],
       "vary": "t",
       "names": {
-        "laite": "laite",
-        "Po": "otettu teho P_o",
-        "t": "aika t"
+        "laite": "device",
+        "Po": "input power P_o",
+        "t": "time t"
       },
       "units": {
         "laite": "",

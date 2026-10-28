@@ -17,7 +17,7 @@
     "ilmastonmuutos",
     "sustainable energy economy"
   ],
-  "sim": false,
+  "sim": true,
   "solutions": "all",
   "image": false
 }

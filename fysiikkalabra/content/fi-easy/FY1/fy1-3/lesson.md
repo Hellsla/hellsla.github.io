@@ -5,10 +5,10 @@
 ## Ydinajatus
 **Mittaus** tarkoittaa suureen arvon määrittämistä. Arvoa verrataan yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos ei ole koskaan täsmälleen suureen oikea arvo. Mittarin lukeminen, mittaustapa ja olosuhteet tuovat tulokseen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $\Delta x = x - x_\text{oikea}$. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Fysiikassa virhe arvioidaan, ja se ilmoitetaan tuloksen mukana.
 
-Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
+Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Lajit eroavat toisistaan siinä, miten ne käyttäytyvät, kun mittaus toistetaan.
 
 ### Karkea virhe
-**Karkea virhe** on yksittäinen selvä erehdys. Mittari luetaan väärin. Luku kirjataan väärin, esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$. Kello käynnistetään vahingossa vasta, kun kuula on jo liikkeellä. Tulos voidaan myös kirjata väärässä yksikössä. Karkea virhe näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Sitä ei arvioida eikä siitä lasketa keskiarvoa. Sen sijaan se etsitään ja poistetaan. Poikkeava tulos tarkistetaan. Jos se on selvästi virheellinen, se jätetään pois laskuista ja mittaus tehdään uudelleen. Poisjätetty tulos ja sen syy kirjataan muistiin.
+**Karkea virhe** on yksittäinen selvä erehdys. Mittari luetaan väärin. Luku kirjataan väärin, esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$. Kerran kello käynnistetään vahingossa vasta, kun kuula on jo liikkeellä. Tulos voidaan myös kirjata väärässä yksikössä. Karkea virhe näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Sitä ei arvioida eikä siitä lasketa keskiarvoa. Sen sijaan se etsitään ja poistetaan. Poikkeava tulos tarkistetaan. Jos se on selvästi virheellinen, se jätetään pois laskuista ja mittaus tehdään uudelleen. Poisjätetty tulos ja sen syy kirjataan muistiin.
 
 ### Satunnaisvirhe
 **Satunnaisvirhe** vaihtelee mittauksesta toiseen sattumanvaraisesti. Se voi olla kumpaan suuntaan tahansa. Kun kuulan vierimisaikaa mitataan käsikellolla, satunnaisvirhe syntyy reaktioajasta. Välillä kello käynnistyy hieman liian aikaisin ja välillä liian myöhään. Myös asteikon lukeminen kahden viivan väliltä tuo satunnaisvirhettä. Satunnaisvirhe näkyy hajontana: samasta suureesta saadaan joka kerta vähän eri luku. Kun mittaus toistetaan, hajonta tulee näkyviin. Keskiarvo vaimentaa hajontaa, koska liian suuret ja liian pienet tulokset kumoavat osin toisensa.
@@ -16,7 +16,7 @@ Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja syst
 ### Systemaattinen virhe
 **Systemaattinen virhe** on joka mittauksessa suunnaltaan ja suuruudeltaan lähes sama. Se syntyy esimerkiksi väärästä nollakohdasta (vaaka näyttää tyhjänä $1{,}2\,\text{g}$). Se voi syntyä myös huonosti säädetystä mittarista tai mittaustavasta, kuten asteikon katsomisesta vinosti. Kaikki tulokset siirtyvät samaan suuntaan. Siksi ne voivat olla tiiviisti ryhmässä mutta väärässä paikassa. Toistaminen ja keskiarvo eivät poista systemaattista virhettä. Se huomataan vertaamalla tulosta tunnettuun vertailuarvoon tai toiseen mittaustapaan. Sen jälkeen se korjataan.
 
-<svg data-fig="error-types" viewBox="0 0 600 400" role="img" aria-label="Kaavakuva samasta mittauksesta kahdella tavalla, aikaakseli mittakaavassa. Ylhäällä on satunnaisvirhe: kymmenen tulosta hajaantuu oikean arvon 2,40 s molemmin puolin, ja keskiarvo 2,41 s on lähellä oikeaa arvoa. Alhaalla on systemaattinen virhe: kymmenen tulosta on tiiviissä ryhmässä, mutta ryhmä on kokonaan oikean arvon oikealla puolella ja keskiarvo 2,59 s on noin 0,19 s liian suuri." style="max-width:100%;font-size:24px">
+<svg data-fig="error-types" viewBox="0 0 600 400" role="img" aria-label="Kaavakuva samasta mittauksesta kahdella tavalla, aikaakseli mittakaavassa. Ylhäällä on satunnaisvirhe. Kymmenen tulosta on hajallaan oikean arvon 2,40 s molemmin puolin. Keskiarvo 2,41 s on lähellä oikeaa arvoa. Alhaalla on systemaattinen virhe. Kymmenen tulosta on tiiviissä ryhmässä. Ryhmä on kuitenkin kokonaan oikean arvon oikealla puolella. Keskiarvo 2,59 s on noin 0,19 s liian suuri." style="max-width:100%;font-size:24px">
   <foreignObject x="14" y="11.5" width="432" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Satunnaisvirhe: tulokset hajaantuvat}$</div></foreignObject>
   <line x1="203.5" y1="158" x2="203.5" y2="72" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
   <line x1="208.5" y1="158" x2="208.5" y2="72" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -95,7 +95,7 @@ Toistetun mittauksen paras arvio on tulosten keskiarvo:
 ```latex
 \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
 ```
-missä $\bar{x}$ on keskiarvo, $x_1, x_2, \dots, x_n$ ovat yksittäiset mittaustulokset ja $n$ on mittausten lukumäärä. Keskiarvo summaa tulokset ja jakaa summan lukumäärällä. Siksi yhden tuloksen heitto vaikuttaa keskiarvoon sitä vähemmän, mitä enemmän mittauksia on.
+missä $\bar{x}$ on keskiarvo, $x_1, x_2, \dots, x_n$ ovat yksittäiset mittaustulokset ja $n$ on mittausten lukumäärä. Keskiarvo summaa tulokset ja jakaa summan lukumäärällä. Siksi yhden tuloksen poikkeama vaikuttaa keskiarvoon sitä vähemmän, mitä enemmän mittauksia on.
 
 Satunnaisvirheen suuruus arvioidaan vaihteluvälin puolikkaana:
 ```latex
@@ -103,7 +103,7 @@ Satunnaisvirheen suuruus arvioidaan vaihteluvälin puolikkaana:
 ```
 missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin tulos. Merkintä on sama kuin mittausvirheellä. Virhearvio kertoo, kuinka suuri mittausvirhe tuloksessa arviolta on. Virhearvio on aina positiivinen. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio on karkea arvio, ei tarkka raja. Yksittäinen tulos voi joskus jäädä sen ulkopuolelle.
 
-<svg data-fig="range-half" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja: kuusi mittaustulosta aika-akselilla. Suurin tulos t_max ja pienin tulos t_min rajaavat vaihteluvälin, jonka pituus on t_max − t_min. Keskiarvo on merkitty pystyviivalla. Vaihteluvälin puolikas Δt on arvio satunnaisvirheestä, ja tulos ilmoitetaan muodossa keskiarvo plus miinus Δt." style="max-width:100%;font-size:24px">
+<svg data-fig="range-half" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja: kuusi mittaustulosta aika-akselilla. Suurin tulos t_max ja pienin tulos t_min ovat vaihteluvälin päät. Vaihteluvälin pituus on t_max − t_min. Keskiarvo on merkitty pystyviivalla. Vaihteluvälin puolikas Δt on arvio satunnaisvirheestä. Tulos ilmoitetaan muodossa keskiarvo plus miinus Δt." style="max-width:100%;font-size:24px">
   <circle cx="143.5" cy="158" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="196" cy="158" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="227.5" cy="158" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
@@ -131,7 +131,7 @@ missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin 
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
 
-Virhe-arvio pyöristetään yhteen merkitsevään numeroon. Jos ensimmäinen numero on 1, se pyöristetään kahteen. Tulos pyöristetään samaan desimaaliin: $3{,}18 \pm 0{,}12\,\text{s}$ eikä $3{,}1817 \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, jotka virhe jo sotkee. Joskus mittaus tehdään vain kerran. Silloin virhe-arvio on puoli asteikkoväliä $d$:
+Virhe-arvio pyöristetään yhteen merkitsevään numeroon. Jos sen ensimmäinen numero on 1, virhe-arvio pyöristetään kahteen merkitsevään numeroon. Tulos pyöristetään samaan desimaaliin: $3{,}18 \pm 0{,}12\,\text{s}$ eikä $3{,}1817 \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, jotka virhe jo sotkee. Joskus mittaus tehdään vain kerran. Silloin virhe-arvio on puoli asteikkoväliä $d$:
 ```latex
 \Delta x = \frac{d}{2}
 ```
@@ -152,7 +152,7 @@ missä $\bar{x}_\text{vertailu}$ on vertailumittausten keskiarvo ja $x_\text{oik
 x = x_\text{lukema} - \Delta x_\text{sys}
 ```
 
-<svg data-fig="zero-scale" viewBox="0 0 600 392" role="img" aria-label="Kaavakuva, ei mittakaavassa: keittiövaaka kahdesti. Vasemmalla pannu on tyhjä, mutta vaaka näyttää 1,2 g, joten nollakohta on väärin. Oikealla pannulla on rautakappale ja vaaka näyttää 48,7 g. Kappaleen massa saadaan vähentämällä nollalukema lukemasta: 48,7 g miinus 1,2 g on 47,5 g." style="max-width:100%;font-size:24px">
+<svg data-fig="zero-scale" viewBox="0 0 600 392" role="img" aria-label="Kaavakuva, ei mittakaavassa: keittiövaaka kahdesti. Vasemmalla pannu on tyhjä, mutta vaaka näyttää 1,2 g. Nollakohta on siis väärin. Oikealla pannulla on rautakappale, ja vaaka näyttää 48,7 g. Kappaleen massa saadaan, kun nollalukema vähennetään lukemasta: 48,7 g miinus 1,2 g on 47,5 g." style="max-width:100%;font-size:24px">
   <rect x="50" y="206" width="200" height="100" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="74" y="188" width="152" height="18" rx="6" fill="#8a96a3" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="90" y="238" width="120" height="44" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
@@ -173,7 +173,7 @@ x = x_\text{lukema} - \Delta x_\text{sys}
 ## Esimerkki
 Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa tulokset $3{,}12\,\text{s}$, $3{,}25\,\text{s}$, $3{,}07\,\text{s}$, $3{,}31\,\text{s}$, $3{,}19\,\text{s}$ ja $3{,}15\,\text{s}$. Mikä on mittaustulos virhe-arvion kanssa? Kuinka suuri on suhteellinen virhe?
 
-<svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla." style="max-width:100%;font-size:24px">
+<svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s. Keskiarvo on 3,18 s. Tulos 3,18 s ± 0,12 s on merkitty vihreällä palkilla." style="max-width:100%;font-size:24px">
   <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="196" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="332.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
@@ -221,7 +221,7 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Niitä ei tarvita. Kaikki ajat ovat sekunteina. Suhteellinen virhe on yksikötön luku, jonka kerrotaan sadalla prosenteiksi.
+**Yksikkömuunnokset.** Niitä ei tarvita. Kaikki ajat ovat sekunteina. Suhteellinen virhe on yksikötön luku. Se kerrotaan sadalla, jolloin saadaan prosentteja.
 
 <!-- vaihe -->
 

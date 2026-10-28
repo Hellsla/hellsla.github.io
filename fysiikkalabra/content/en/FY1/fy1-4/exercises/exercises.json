@@ -21,7 +21,7 @@
       "level": 1,
       "text": "The height $h$ of a lawn was followed as a function of days $t$, and the fitted line is $h = 0.60\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot t + 4.0\\,\\text{cm}$. On which day from the start of the measurements is the lawn 10 cm tall? Give the answer in days.",
       "answer": 10,
-      "unit": "vrk",
+      "unit": "d",
       "tolerance": 0.02
     },
     {
@@ -71,7 +71,7 @@
       "level": 2,
       "text": "The price of a taxi ride is a starting charge of $4.0\\,\\text{€}$ plus $2.5\\,\\text{€}$ for every kilometre driven. The price is a function of the distance, $y = kx + b$. How many times as expensive is a 10 km ride as a 5.0 km ride? Give the answer as a number.",
       "answer": 1.8,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.03
     }
   ],
@@ -89,7 +89,7 @@
       "level": 3,
       "text": "The temperature $T$ of coffee was measured as a function of time $t$: $0\\,\\text{min}$: $90\\,{}^\\circ\\text{C}$, $10\\,\\text{min}$: $72\\,{}^\\circ\\text{C}$, $20\\,\\text{min}$: $60\\,{}^\\circ\\text{C}$ and $30\\,\\text{min}$: $51\\,{}^\\circ\\text{C}$. How many times greater is the change in temperature per minute (the absolute value of the slope) in the first ten-minute interval than in the last? Justify why one line does not describe all the measurements.",
       "answer": 2.0,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     },
     {
@@ -97,7 +97,7 @@
       "level": 3,
       "text": "Two points are read from the line $y = 2.0\\,x$, and the reading error of each $y$ value is at most $0.1$ units. The slope is calculated either from the points $x = 4.0$ and $x = 4.5$ or from the points $x = 1.0$ and $x = 9.0$. How many times greater is the relative uncertainty of the slope when it is calculated from the close points? Use the worst case, in which the reading errors add up in the difference $\\Delta y$. Justify why points far apart are the better choice.",
       "answer": 16,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     }
   ]

@@ -123,7 +123,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: veden lämpötila muuttuu",
-      "intro": "Testaa ennuste 1. Veden massa sekä jään massa ja lämpötila pysyvät vakioina; muuta vain veden lämpötilaa. Kirjaa lopputilan lämpötila ja jäljelle jäävän jään massa ainakin kolmella lämpötilalla, esimerkiksi 10 °C, 20 °C ja 40 °C. Paina välillä *Sekoita* ja seuraa, mitä jäälle tapahtuu.",
+      "intro": "Testaa ennuste 1. Veden massa sekä jään massa ja lämpötila pysyvät samoina. Muuta vain veden lämpötilaa. Kirjaa lopputilan lämpötila ja jäljelle jäävän jään massa ainakin kolmella lämpötilalla, esimerkiksi 10 °C, 20 °C ja 40 °C. Paina välillä *Sekoita* ja seuraa, mitä jäälle tapahtuu.",
       "initial": {
         "mW": 0.3,
         "TW0": 20,
@@ -194,7 +194,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: jään lämpötila muuttuu",
-      "intro": "Testaa ennuste 2. Vesi (0,30 kg, 25 °C) ja jään massa (0,10 kg) pysyvät vakioina; muuta vain jään alkulämpötilaa. Kirjaa jäljelle jäävän jään massa ainakin kahdella lämpötilalla, esimerkiksi 0 °C ja −20 °C.",
+      "intro": "Testaa ennuste 2. Veden massa 0,30 kg ja lämpötila 25 °C sekä jään massa 0,10 kg pysyvät samoina. Muuta vain jään alkulämpötilaa. Kirjaa jäljelle jäävän jään massa ainakin kahdella lämpötilalla, esimerkiksi 0 °C ja −20 °C.",
       "initial": {
         "mW": 0.3,
         "TW0": 25,

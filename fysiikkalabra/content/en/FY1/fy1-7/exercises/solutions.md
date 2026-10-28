@@ -12,7 +12,7 @@
 **Given:** volume of the aluminium plate $V = 35.0\,\text{cm}^3$ and density $\rho = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the mass $m$ of the plate in grams
 **Principle:** The mass of a given substance is directly proportional to volume, and the constant of proportionality is the density. The plate is aluminium all the way through.
-**Formula:** Solve the mass from the definition of density $\rho = \dfrac{m}{V}$: $m = \rho V$
+**Formula:** Solve for the mass from the definition of density $\rho = \dfrac{m}{V}$: $m = \rho V$
 **Conversions:** Not needed: the density is in $\text{g/cm}^3$ and the volume in $\text{cm}^3$, so the mass comes out directly in grams.
 **Substitution:** $m = 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 35.0\,\text{cm}^3 = 94.5\,\text{g}$
 **Answer:** $94.5\,\text{g}$, three significant figures like the given values.
@@ -22,7 +22,7 @@
 **Given:** mass of the ethanol $m = 316\,\text{g}$ and density $\rho = 0.79\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the volume $V$ of the liquid in cubic centimetres
 **Principle:** Density is mass per unit of volume, so when the mass and the density are known, the volume is obtained by dividing the mass by the density.
-**Formula:** Solve the volume from $\rho = \dfrac{m}{V}$: $V = \dfrac{m}{\rho}$
+**Formula:** Solve for the volume from $\rho = \dfrac{m}{V}$: $V = \dfrac{m}{\rho}$
 **Conversions:** Not needed: the mass is in grams and the density in $\text{g/cm}^3$, so the gram cancels and $\text{cm}^3$ remains.
 **Substitution:** $V = \dfrac{316\,\text{g}}{0.79\,\tfrac{\text{g}}{\text{cm}^3}} = 400\,\text{cm}^3$
 **Answer:** $400\,\text{cm}^3$, two significant figures, because the density $0.79\,\tfrac{\text{g}}{\text{cm}^3}$ is known to two figures.

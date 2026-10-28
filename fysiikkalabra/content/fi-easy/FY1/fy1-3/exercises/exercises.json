@@ -19,7 +19,7 @@
     {
       "id": "fy1-3-L1-03",
       "level": 1,
-      "text": "Heilurin kymmenen heilahduksen aika mitataan käsikellolla viisi kertaa, ja tulokset ovat 12,4 s, 12,9 s, 12,6 s, 12,2 s ja 12,7 s. Mikä on tulosten vaihteluvälin puolikas?",
+      "text": "Heilurin kymmenen heilahduksen aika mitataan käsikellolla viisi kertaa. Tulokset ovat 12,4 s, 12,9 s, 12,6 s, 12,2 s ja 12,7 s. Mikä on tulosten vaihteluvälin puolikas?",
       "answer": 0.35,
       "unit": "s",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy1-3-L1-04",
       "level": 1,
-      "text": "Keittiövaaka näyttää tyhjänä lukeman 1,2 g, vaikka sen päällä ei ole mitään. Vaa'alle pannaan kappale, ja vaaka näyttää 48,7 g. Mikä on kappaleen massa?",
+      "text": "Keittiövaaka näyttää lukeman 1,2 g, vaikka sen päällä ei ole mitään. Vaa'alle pannaan kappale, ja vaaka näyttää 48,7 g. Mikä on kappaleen massa?",
       "answer": 47.5,
       "unit": "g",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy1-3-L2-02",
       "level": 2,
-      "text": "Mittanauhan alkupää on kulunut. Tarkasti 1,000 m pitkä sauva mitataan nauhalla kolme kertaa, ja lukemat ovat 1,012 m, 1,009 m ja 1,011 m. Kuinka monta millimetriä liikaa nauha keskimäärin näyttää?",
+      "text": "Mittanauhan alkupää on kulunut. Sauvan pituus on tarkasti 1,000 m. Sauva mitataan nauhalla kolme kertaa. Lukemat ovat 1,012 m, 1,009 m ja 1,011 m. Kuinka monta millimetriä liikaa nauha keskimäärin näyttää?",
       "answer": 10.67,
       "unit": "mm",
       "tolerance": 0.04
@@ -69,7 +69,7 @@
     {
       "id": "fy1-3-L2-04",
       "level": 2,
-      "text": "Sama pituus mitataan viisi kertaa kahdella mittarilla. Mittari A antaa tulokset 5,2 cm, 5,6 cm, 5,4 cm, 5,3 cm ja 5,5 cm. Mittari B antaa tulokset 5,40 cm, 5,43 cm, 5,41 cm, 5,42 cm ja 5,44 cm. Kuinka moninkertainen on mittarin A tulosten vaihteluvälin puolikas mittarin B vastaavaan verrattuna?",
+      "text": "Sama pituus mitataan viisi kertaa kahdella mittarilla. Mittari A antaa tulokset 5,2 cm, 5,6 cm, 5,4 cm, 5,3 cm ja 5,5 cm. Mittari B antaa tulokset 5,40 cm, 5,43 cm, 5,41 cm, 5,42 cm ja 5,44 cm. Laske kummankin mittarin tulosten vaihteluvälin puolikas. Kuinka monta kertaa suurempi mittarin A puolikas on kuin mittarin B puolikas?",
       "answer": 10,
       "unit": "kertaa",
       "tolerance": 0.02

@@ -97,7 +97,7 @@
       "level": 3,
       "text": "The result of group A's measurement is $\\theta_0 = -262.00 \\pm 6.00\\,{}^\\circ\\text{C}$. The accepted value is $-273.15\\,{}^\\circ\\text{C}$. How many times does the uncertainty $\\Delta\\theta_0$ fit between the result and the accepted value? Deduce a reason why the result does not agree with the accepted value.",
       "answer": 1.86,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     }
   ]

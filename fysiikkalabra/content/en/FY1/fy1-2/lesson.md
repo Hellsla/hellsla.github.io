@@ -356,7 +356,7 @@ t &= \frac{s}{c} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** For light, one AU is $8.3\,\text{min}$, so $30$ AU is about $30\cdot 8.3\,\text{min} = 250\,\text{min} \approx 4.2\,\text{h}$. This agrees with the result, and the distance is of the order of billions of kilometres, as suits an outer planet.
+**Reasonableness.** Light travels one AU in $8.3\,\text{min}$, so $30$ AU is about $30\cdot 8.3\,\text{min} = 250\,\text{min} \approx 4.2\,\text{h}$. This agrees with the result, and the distance is of the order of billions of kilometres, as suits an outer planet.
 
 ## Common misconception
 The numerical value and the unit belong together. When the unit changes, the numerical value changes inversely: a larger unit means a smaller numerical value, and the quantity itself stays the same.
@@ -371,4 +371,4 @@ The light-year is not a unit of time, even though the name contains the word yea
 - A prefix is a power of ten: kilo $10^{3}$, mega $10^{6}$, giga $10^{9}$, milli $10^{-3}$, micro $10^{-6}$.
 - In a unit conversion, the old unit is replaced by its value in the new unit, for example $4.2\,\text{km} = 4.2\cdot1000\,\text{m}$. For a square unit the conversion is done twice: $1\,\text{km}^2 = 10^{6}\,\text{m}^2$.
 - The result is given with as many significant figures as the least precise factor has.
-- The travel time of light is $t = \tfrac{s}{c}$: for light, one AU is about $8.3\,\text{min}$.
+- The travel time of light is $t = \tfrac{s}{c}$. Light travels one AU in about $8.3\,\text{min}$.

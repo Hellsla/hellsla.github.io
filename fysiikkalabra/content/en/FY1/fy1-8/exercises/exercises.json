@@ -97,7 +97,7 @@
       "level": 3,
       "text": "60 minutes have been set aside for an investigation. Assembling and testing the equipment takes 12 minutes, and the measurement is made at six different distances. Each measurement repeat takes 2.0 minutes, including returning to the start and recording. How many repeats can be done for each distance, when the number of repeats is the same at every distance?",
       "answer": 4.0,
-      "unit": "toistoa",
+      "unit": "repeats",
       "tolerance": 0.02
     }
   ]

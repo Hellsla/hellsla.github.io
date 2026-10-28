@@ -47,7 +47,7 @@
       "level": 2,
       "text": "The clock frequency of a computer processor is 3.2 GHz, that is 3.2 billion cycles per second. Use the values $1\\,\\text{GHz} = 10^{9}\\,\\text{Hz}$ and $1\\,\\text{Hz} = 1/\\text{s}$. How many clock cycles can the processor perform in 5.0 ms?",
       "answer": 16000000,
-      "unit": "kpl",
+      "unit": "pcs",
       "tolerance": 0.02
     },
     {
@@ -55,7 +55,7 @@
       "level": 2,
       "text": "The length of a bacterium is 2.0 µm. How many such bacteria fit one after another along a distance of 1.0 mm?",
       "answer": 500,
-      "unit": "kpl",
+      "unit": "pcs",
       "tolerance": 0.02
     },
     {
@@ -71,7 +71,7 @@
       "level": 2,
       "text": "The speed of Voyager 2 is 15.341 km/s. Assume the speed is constant. How many million kilometres does the probe travel in a day?",
       "answer": 1.3255,
-      "unit": "milj. km",
+      "unit": "million km",
       "tolerance": 0.02
     }
   ],
@@ -89,7 +89,7 @@
       "level": 3,
       "text": "The width of a screen is exactly 1920 px. In a picture the diameter of the Moon, 3474 km, is one pixel. From the Sun to Neptune is 30.07 AU and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. How many screen widths side by side are needed for the distance from the Sun to Neptune to fit in the picture?",
       "answer": 674.4,
-      "unit": "kpl",
+      "unit": "pcs",
       "tolerance": 0.02
     },
     {

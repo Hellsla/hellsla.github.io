@@ -106,7 +106,7 @@
         "solution": "**Annettu:** helium, taulukosta $m = 0{,}83\\,\\text{g}$ ja $M = 4{,}00\\,\\text{g/mol}$\n\n**Kysytty:** osamäärä $m/M$ yksikössä mol\n\n**Periaate:** Moolimassa on yhden moolin massa. Kun kaasun massa jaetaan moolimassalla, saadaan pallossa olevien moolien määrä. Laskuun ei tarvita painetta eikä lämpötilaa. Massa ja moolimassa määräävät ainemäärän suoraan.\n\n**Kaava:** $M = \\dfrac{m}{n}$, josta $n = \\dfrac{m}{M}$\n\n**Muunnokset:** Muunnoksia ei tarvita. Massa ja moolimassa ovat molemmat grammoina. Grammat supistuvat, ja jäljelle jää mooli.\n\n**Sijoitus:** $\\dfrac{m}{M} = \\dfrac{0{,}83\\,\\text{g}}{4{,}00\\,\\text{g/mol}} = 0{,}2075\\,\\text{mol}$\n\n**Vastaus:** $0{,}21\\,\\text{mol}$, kaksi merkitsevää numeroa. Rajoittava tieto on massa $0{,}83\\,\\text{g}$, jossa on kaksi numeroa. Moolimassa $4{,}00\\,\\text{g/mol}$ on kolmen numeron arvo. Sijoituksen välitulos $0{,}2075\\,\\text{mol}$ on pidetty neljällä numerolla seuraavaa laskua varten.\n\n**Järkevyys:** Samassa paineessa ja lämpötilassa $5{,}00\\,\\textsf{l}$ sisältää noin $5{,}00 \\cdot 0{,}041 \\approx 0{,}21\\,\\text{mol}$ mitä tahansa kaasua. Tulos on siis uskottava. Tarkistus takaisin: $0{,}2075\\,\\text{mol} \\cdot 4{,}00\\,\\text{g/mol} = 0{,}83\\,\\text{g}$."
       },
       "source": "simulated",
-      "source_note": "keksityt esimerkkiarvot, joihin on lisätty punnituksen tavallista hajontaa"
+      "source_note": "keksityt esimerkkiarvot, joihin on lisätty punnituksen tavallista vaihtelua"
     },
     {
       "id": "punnitus-vertailu",
@@ -174,7 +174,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain hiukkasmäärä muuttuu",
-      "intro": "Testaa ennusteesi. Lämpötila ja tilavuus lukitaan, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi $N = 50$, $100$ ja $200$; rivi $N = 100$ tarvitaan vielä Kokeessa 2. *Mitattu paine* ja osumat ovat liukuvia keskiarvoja: kun olet muuttanut säädintä, paina *Nollaa mittaus* ja odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten.",
+      "intro": "Testaa ennusteesi. Lämpötila ja tilavuus on lukittu, ja vain hiukkasmäärä muuttuu. Kirjaa paine ainakin kahdella hiukkasmäärällä, esimerkiksi $N = 50$, $100$ ja $200$. Rivi $N = 100$ tarvitaan vielä Kokeessa 2. *Mitattu paine* ja osumat ovat liukuvia keskiarvoja. Kun olet muuttanut säädintä, paina *Nollaa mittaus*. Odota, kunnes lukema näyttää keskiarvon noin 2 s:n ajalta (normaalinopeudella noin 4 sekuntia). Kirjaa vasta sitten.",
       "initial": {
         "N": 100,
         "T": 300,
@@ -212,7 +212,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: kuumempi kaasu, sama paine",
-      "intro": "Ratkaise haaste. Lämpötila on nyt 600 K eli kaksi kertaa vertailutilan 300 K. Kirjaa ensin rivi $N = 100$ ja vertaa painetta Kokeen 1 riviin $N = 100$. Etsi sitten hiukkasmäärä, jolla mitattu paine on taas noin 1,00, ja kirjaa se. Paina joka muutoksen jälkeen *Nollaa mittaus* ja odota noin 2 s:n keskiarvo ennen kirjaamista.",
+      "intro": "Ratkaise haaste. Lämpötila on nyt 600 K eli kaksi kertaa vertailutilan 300 K. Kirjaa ensin rivi $N = 100$. Vertaa painetta Kokeen 1 riviin $N = 100$. Etsi sitten hiukkasmäärä, jolla mitattu paine on taas noin 1,00, ja kirjaa se. Paina jokaisen muutoksen jälkeen *Nollaa mittaus*. Odota noin 2 s:n keskiarvo ennen kirjaamista.",
       "initial": {
         "N": 100,
         "T": 600,
