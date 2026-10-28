@@ -83,7 +83,10 @@ Jos laite muuntaa energiaa tasaisesti, energia ajan funktiona on suora, joka lä
 ### Kilowattitunti
 Sähköenergia laskutetaan kilowattitunteina (kWh). Yksi kilowattitunti on energia, jonka $1\,\text{kW}$:n teholla toimiva laite muuntaa tunnissa. Jouleina laskettaessa tunti on $3600\,\text{s}$ ja kilowatti $1000\,\text{W}$, joten
 ```latex
-1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\text{J}
+\begin{aligned}
+&1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s}\\
+&= 3\,600\,000\,\text{J}
+\end{aligned}
 ```
 Kilowattitunti on siis energian yksikkö, ei tehon. Kaava $E = P\,t$ antaa suoraan kilowattitunteja, kun teho on kilowatteina ja aika tunteina: $\text{kW} \cdot \text{h} = \text{kWh}$.
 
