@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-2-L1-01",
+      "level": 1,
+      "text": "Älypuhelimen akkuun on varastoitu energiaa 54 kJ. Ilmoita energia jouleina.",
+      "answer": 54000,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-02",
+      "level": 1,
+      "text": "Suklaalevyn energiasisältö on 4,4 MJ. Ilmoita energia kilojouleina.",
+      "answer": 4400,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-03",
+      "level": 1,
+      "text": "Voimala tuottaa vuorokaudessa sähköenergiaa 0,14 TJ. Ilmoita energia gigajouleina.",
+      "answer": 140,
+      "unit": "GJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-04",
+      "level": 1,
+      "text": "Kaasuliedellä poltetaan kaasua, jonka kemiallinen energia on 12 MJ. Kattilan veteen siirtyy siitä 9,0 MJ, ja loppu lämmittää keittiön ilmaa. Kuinka paljon energiaa siirtyy keittiön ilmaan? Anna vastaus megajouleina.",
+      "answer": 3.0,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-05",
+      "level": 1,
+      "text": "Aikuisen päivän ruoan energia on noin 10 MJ. Yhden banaanin energia on 450 kJ. Kuinka monta banaania vastaa energialtaan päivän ruokaa?",
+      "answer": 22,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-2-L2-01",
+      "level": 2,
+      "text": "Retkellä syöt suklaalevyn, jonka energia on 2,2 MJ, ja pähkinäpussin, jonka energia on 800 kJ. Kuinka paljon energiaa saat yhteensä? Anna vastaus megajouleina.",
+      "answer": 3.0,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-02",
+      "level": 2,
+      "text": "Autossa on 40 litraa bensiiniä, ja yksi litra bensiiniä sisältää energiaa 32 MJ. Kuinka paljon energiaa tankissa on? Anna vastaus gigajouleina.",
+      "answer": 1.3,
+      "unit": "GJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-03",
+      "level": 2,
+      "text": "Led-lamppu saa sähköenergiaa 6,0 kJ. Se muuttaa siitä valoksi 1,5 kJ ja loppu muuttuu lampun lämmöksi. Valo osuu huoneen seiniin ja pintoihin ja imeytyy niihin. Kuinka paljon lämpöenergiaa huoneeseen on lopulta syntynyt? Anna vastaus kilojouleina.",
+      "answer": 6.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-04",
+      "level": 2,
+      "text": "Salamanisku vapauttaa keskimäärin noin 1,0 GJ energiaa, ja banaanin energia on 450 kJ. Kuinka monta banaania salaman energia vastaa?",
+      "answer": 2200,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-2-L3-01",
+      "level": 3,
+      "text": "Suomessa kulutetaan sähköenergiaa keskimäärin noin 790 TJ vuorokaudessa (Tilastokeskuksen vuoden 2023 tiedoista laskettu). Olkiluoto 3 -ydinvoimalayksikkö tuottaa vuorokaudessa sähköenergiaa 140 TJ. Kuinka monta samanlaista yksikköä tarvittaisiin kattamaan koko kulutus, jos jokainen tuottaisi saman verran?",
+      "answer": 5.6,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L3-02",
+      "level": 3,
+      "text": "Ydinvoimalayksikön reaktorissa vapautuu vuorokaudessa lämpöenergiaa 370 TJ. Siitä 140 TJ muuttuu sähköksi. Loppu menee jäähdytysveden kautta ympäristöön. Kuinka monta terajoulea energiaa siirtyy ympäristöön vuorokaudessa?",
+      "answer": 230,
+      "unit": "TJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L3-03",
+      "level": 3,
+      "text": "Yksi kilogramma uraani-235:tä vapauttaa halkeamisessa energiaa 82 TJ. Ydinvoimalayksikön reaktorissa vapautuu vuorokaudessa energiaa 370 TJ. Kuinka monta kilogrammaa uraani-235:tä halkeaa vuorokaudessa? Vertaa tulosta siihen, että saman energian saamiseksi pitäisi polttaa bensiiniä, jota on 32 MJ litraa kohti.",
+      "answer": 4.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ]
+}

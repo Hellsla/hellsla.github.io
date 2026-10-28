@@ -1,5 +1,77 @@
 [
   {
+    "term": "energiantuotanto",
+    "definition": "Luonnonvaran, kuten veden, tuulen, auringonsäteilyn, ydinpolttoaineen tai polttoaineen, energian muuttaminen sähköksi ja lämmöksi voimalaitoksessa. Energiaa ei synny tyhjästä, vaan se muuttaa muotoaan.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "uusiutuva energia",
+      "ydinvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "uusiutuva energia",
+    "definition": "Energia, jonka lähde ei ehdy ihmisen mittakaavassa tai uusiutuu nopeasti: vesi, tuuli, auringonsäteily ja bioperäiset polttoaineet. Uraani ja fossiiliset polttoaineet eivät uusiudu.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "tuulivoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ydinvoima",
+    "definition": "Sähköntuotanto, jossa uraanin ydinreaktioissa vapautuva energia lämmittää höyryn, joka pyörittää turbiinia. Ydinvoimala käy tasaisesti lähes nimellisteholla, joten se on perusvoimaa.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vesivoima",
+    "definition": "Sähköntuotanto, jossa putoava vesi pyörittää turbiinia. Vesivoima on uusiutuvaa ja hyvin säädettävää, koska vesivirtaa voi lisätä tai vähentää sekunneissa.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tuulivoima",
+    "definition": "Sähköntuotanto, jossa tuuli pyörittää roottoria ja generaattoria. Teho riippuu säästä, joten tuulivoima on sääriippuvaista ja sen keskiteho on selvästi pienempi kuin nimellisteho.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aurinkoenergia",
+    "definition": "Auringonsäteilyn energia, jonka aurinkopaneeli muuttaa suoraan sähköksi tai aurinkokeräin lämmöksi. Aurinkosähkön teho riippuu säteilystä: se on suurimmillaan kesäpäivän keskellä ja nolla yöllä.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
     "term": "(t,x)-kuvaaja",
     "definition": "(t,x)-kuvaajassa vaaka-akselilla on aika t ja pystyakselilla paikka x. Tasaisen liikkeen kuvaaja on suora, jonka kulmakerroin on nopeus ja jonka alkukohta on alkupaikka x₀: x = x₀ + vt.",
     "lessons": [
@@ -209,6 +281,32 @@
     "locked": false
   },
   {
+    "term": "energialaji",
+    "definition": "Muoto, jossa energia on tai jossa se ilmenee. Energialajeja ovat potentiaalienergia, liike-energia, lämpöenergia, kemiallinen energia, säteilyenergia, sähköenergia ja ydinenergia; potentiaali- ja liike-energia yhdessä ovat mekaanista energiaa.",
+    "lessons": [
+      "fy2-1"
+    ],
+    "see_also": [
+      "energia",
+      "mekaaninen energia",
+      "lämpöenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energian säilyminen",
+    "definition": "Periaate, jonka mukaan energiaa ei synny eikä katoa, vaan se muuttaa muotoa tai siirtyy. Eristetyssä systeemissä kaikkien energialajien energioiden summa on sama alussa ja lopussa: E_alussa = E_lopussa.",
+    "lessons": [
+      "fy2-1"
+    ],
+    "see_also": [
+      "energia",
+      "eristetty systeemi",
+      "energialaji"
+    ],
+    "locked": false
+  },
+  {
     "term": "energiatasapaino",
     "definition": "Tila, jossa kappaleeseen tuleva ja siitä lähtevä teho ovat yhtä suuret, joten sen lämpötila pysyy vakiona. Maapallon lämpötila määräytyy sen energiatasapainosta.",
     "lessons": [
@@ -269,13 +367,38 @@
   },
   {
     "term": "hyötysuhde",
-    "definition": "Hyödyksi saadun energian tai tehon suhde koneeseen tuotuun energiaan tai tehoon, η = W/Q₁. Hyötysuhde ilmoitetaan usein prosentteina, ja se on aina alle 100 %.",
+    "definition": "Hyödyksi saadun energian tai tehon suhde laitteeseen otettuun energiaan tai tehoon: η = E_a/E_o = P_a/P_o (lämpövoimakoneella η = W/Q₁). Hyötysuhde ilmoitetaan usein prosentteina, ja se on aina alle 100 %.",
     "lessons": [
+      "fy2-4",
       "fy3-11"
     ],
     "see_also": [
       "lämpövoimakone",
       "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hyötyenergia",
+    "definition": "Se osa laitteeseen otetusta energiasta, joka muuttuu laitteen tarkoituksen mukaiseen muotoon, esimerkiksi lampun valo tai moottorin liike. Merkitään E_a.",
+    "lessons": [
+      "fy2-4"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "häviöt"
+    ],
+    "locked": false
+  },
+  {
+    "term": "häviöt",
+    "definition": "Se osa laitteeseen otetusta energiasta, joka ei muutu hyödyksi vaan yleensä lämmöksi ympäristöön. Energia ei katoa: otettu energia on hyötyenergia ja häviöt yhteensä, E_o = E_a + E_h.",
+    "lessons": [
+      "fy2-4"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "hyötyenergia"
     ],
     "locked": false
   },
@@ -416,11 +539,61 @@
     "term": "kasvihuoneilmiö",
     "definition": "Ilmiö, jossa ilmakehän kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas. Se nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een.",
     "lessons": [
+      "fy2-8",
       "fy3-12"
     ],
     "see_also": [
       "energiatasapaino",
-      "lämpösäteily"
+      "lämpösäteily",
+      "ilmastonmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hiilidioksidipäästö",
+    "definition": "Polttoaineen palamisessa tai muussa toiminnassa ilmakehään vapautuva hiilidioksidi. Sähköntuotannossa päästöt ilmoitetaan yleensä grammoina hiilidioksidiekvivalenttia tuotettua kilowattituntia kohti.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "päästökerroin",
+      "ilmastonmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "päästökerroin",
+    "definition": "Luku, joka kertoo, kuinka paljon hiilidioksidiekvivalenttia syntyy tuotettua tai käytettyä energiayksikköä kohti, esimerkiksi grammoina kilowattituntia kohti. Päästö saadaan kertomalla päästökerroin energialla.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "hiilidioksidipäästö",
+      "kilowattitunti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ilmastonmuutos",
+    "definition": "Maapallon ilmaston pitkäaikainen muutos, jota nykyisin kiihdyttää ihmisen toiminta. Hiilidioksidin ja metaanin päästöt voimistavat kasvihuoneilmiötä ja nostavat maapallon keskilämpötilaa.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "kasvihuoneilmiö",
+      "hiilidioksidipäästö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kestävä energiatalous",
+    "definition": "Tapa tuottaa ja käyttää energiaa niin, että nykyisten tarpeiden tyydyttäminen ei heikennä tulevien sukupolvien mahdollisuuksia. Siinä otetaan huomioon ympäristö, talous ja yhteiskunta.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "ilmastonmuutos",
+      "energiantuotanto"
     ],
     "locked": false
   },
@@ -428,10 +601,24 @@
     "term": "kaukolämpö",
     "definition": "Voimalaitoksessa tai lämpölaitoksessa lämmitetty vesi, joka johdetaan putkia pitkin rakennusten lämmitykseen.",
     "lessons": [
+      "fy2-7",
       "fy3-11"
     ],
     "see_also": [
       "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kilowattitunti",
+    "definition": "Energian yksikkö kWh, jolla sähköenergia mitataan ja laskutetaan. 1 kWh on energia, jonka 1 kW:n teholla toimiva laite käyttää tunnissa: 1 kWh = 1000 W · 3600 s = 3 600 000 J = 3,6 MJ. Energia kilowattitunteina on teho kilowatteina kerrottuna ajalla tunteina.",
+    "lessons": [
+      "fy2-3"
+    ],
+    "see_also": [
+      "energia",
+      "joule",
+      "teho"
     ],
     "locked": false
   },
@@ -583,9 +770,34 @@
     "locked": false
   },
   {
+    "term": "polttoaine",
+    "definition": "Aine, jonka kemiallista energiaa vapautetaan polttamalla, esimerkiksi polttopuu, turve, kivihiili, maakaasu tai bensiini.",
+    "lessons": [
+      "fy2-5"
+    ],
+    "see_also": [
+      "lämpöarvo",
+      "kemiallinen energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kemiallinen energia",
+    "definition": "Aineen rakenteeseen varastoitunut energia, joka vapautuu esimerkiksi palaessa tai ruoan hajotessa elimistössä. Se muuntuu pääasiassa lämmöksi ja valoksi.",
+    "lessons": [
+      "fy2-5"
+    ],
+    "see_also": [
+      "polttoaine",
+      "lämpöarvo"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpöarvo",
     "definition": "Polttoaineen palaessa vapautuva energia massayksikköä kohti, yksikkö esimerkiksi MJ/kg. Esimerkiksi bensiinin lämpöarvo on noin 43 MJ/kg.",
     "lessons": [
+      "fy2-5",
       "fy3-11"
     ],
     "see_also": [
@@ -976,8 +1188,9 @@
   },
   {
     "term": "teho",
-    "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv; yksikkö on watti (W), joka on yksi joule sekunnissa.",
+    "definition": "Teho kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy: P = ΔE/Δt. Yksikkö on watti (W), joka on yksi joule sekunnissa. Kun energia siirtyy työnä, P = W/t, ja tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv.",
     "lessons": [
+      "fy2-3",
       "fy3-2"
     ],
     "see_also": [
@@ -1082,6 +1295,19 @@
     "see_also": [
       "energia",
       "teho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "watti",
+    "definition": "Tehon SI-yksikkö W. Yksi watti on yksi joule sekunnissa: 1 W = 1 J/s. Suuremmat yksiköt ovat kilowatti (1 kW = 1000 W) ja megawatti (1 MW = 10^6 W).",
+    "lessons": [
+      "fy2-3"
+    ],
+    "see_also": [
+      "teho",
+      "joule",
+      "kilowattitunti"
     ],
     "locked": false
   },
@@ -1687,6 +1913,66 @@
     "see_also": [
       "heikko vuorovaikutus",
       "neutroni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähköenergia",
+    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä takaisin esimerkiksi lämmöksi, valoksi tai liikkeeksi; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
+    "lessons": [
+      "fy2-7"
+    ],
+    "see_also": [
+      "sähköverkko",
+      "kilowattitunti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähköverkko",
+    "definition": "Voimalinjojen, muuntajien ja sähköasemien muodostama verkko, joka siirtää sähköenergian voimalaitoksilta käyttäjille. Pitkät matkat siirretään kantaverkossa korkealla jännitteellä, ja jakeluverkko vie sähkön kuluttajille.",
+    "lessons": [
+      "fy2-7"
+    ],
+    "see_also": [
+      "siirtohäviö",
+      "sähköenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "siirtohäviö",
+    "definition": "Energia, joka muuttuu energian siirrossa lämmöksi ympäristöön eikä tule käyttäjälle asti: E_häviö = E_lähtö − E_perille. Siirron hyötysuhde on perille tulevan energian osuus lähtevästä energiasta, η = E_perille : E_lähtö.",
+    "lessons": [
+      "fy2-7"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "kaukolämpö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mekaaninen energia",
+    "definition": "Kappaleen liikkeeseen ja asemaan liittyvä energia, eli liike-energia ja potentiaalienergia. Mekaaninen energia voi muuttua esimerkiksi lämpöenergiaksi kitkan vaikutuksesta.",
+    "lessons": [
+      "fy2-2"
+    ],
+    "see_also": [
+      "energia",
+      "lämpöenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpöenergia",
+    "definition": "Aineen hiukkasten satunnaiseen liikkeeseen liittyvä energia. Energiaketjun jokaisessa vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka hajaantuu ympäristöön eikä ole enää helposti hyödynnettävissä.",
+    "lessons": [
+      "fy2-2"
+    ],
+    "see_also": [
+      "energia",
+      "mekaaninen energia"
     ],
     "locked": false
   }

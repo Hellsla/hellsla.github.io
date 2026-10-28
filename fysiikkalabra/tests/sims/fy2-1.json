@@ -1,0 +1,305 @@
+[
+ {
+  "expr": "(() => { const S=window.simState, r=[...document.querySelectorAll('#sim-root input[type=range]')].map(x=>x.value), s=[...document.querySelectorAll('#sim-root select')].map(x=>x.value); return S.t===0 && S.h0===2 && S.kitka===0 && S.speed===1 && S.running===false && r.join()==='0,2' && s.join()==='0,1' && S.Ep===981 && S.Ek===0 && S.Eth===0 && S.Ekok===981 && S.Emek===981 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load (must run before any setup): t = 0, h0 = 2,0 m, no friction, speed normaali, Ep = 981 J = 50 kg · 9,81 m/s² · 2,0 m, Ek = 0, Eth = 0, total 981 J"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className.split(' ')[0]), c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const bs=[...document.querySelectorAll('#sim-root .controls > button')]; return bs.length===2 && bs[0].textContent==='Aloita' && bs[1].textContent==='Alusta' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first (Aloita), then Alusta"
+ },
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], l=[...document.querySelectorAll('#sim-root label')]; return r.length===2 && r[0].min==='0' && r[0].max==='16' && r[0].step==='0.5' && r[1].min==='1' && r[1].max==='3' && r[1].step==='0.5' && /^Hetki \\$t = 0\\{,\\}0 ?\\\\,\\\\text\\{s\\}\\$/.test(simText(l[0])) && /^Alkukorkeus \\$h_0 = 2\\{,\\}0 ?\\\\,\\\\text\\{m\\}\\$/.test(simText(l[1])) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: Hetki t 0-16 s in steps of 0,5 s and Alkukorkeus h0 1,0-3,0 m in steps of 0,5 m, with their labels"
+ },
+ {
+  "expr": "(() => { const s=[...document.querySelectorAll('#sim-root select')], o=(e)=>[...e.options].map(x=>x.value+':'+x.textContent).join('|'); return s.length===2 && o(s[0])==='0:ei kitkaa|1:pieni kitka|2:suuri kitka' && o(s[1])==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: Kitka (ei kitkaa, pieni, suuri) and Nopeus (hidas, normaali, nopea)"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='h0,kitka,t' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares t, h0 and kitka"
+ },
+ {
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return ['$E_\\\\text{p}$','$E_\\\\text{k}$','$E_\\\\text{lämpö}$','$E\\\\ (\\\\text{J})$','$t\\\\ (\\\\text{s})$','$h = 0$','$E = 981\\\\,\\\\text{J}$','$h_0 = 2{,}0\\\\,\\\\text{m}$'].every(s=>L.includes(s)) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas labels in LaTeX: the three symbols of the legend, both axis titles, the zero level, the total and the start height"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setK('0'); setH('2'); setT('2');",
+  "expr": "window.simState.t",
+  "expected": 2,
+  "tol": 0.001,
+  "note": "slider t sets simState.t"
+ },
+ {
+  "expr": "window.simState.Ep",
+  "expected": 862,
+  "tol": 0.002,
+  "note": "no friction, t = 2,0 s: Ep = 862 J (model value)"
+ },
+ {
+  "expr": "window.simState.Ek",
+  "expected": 119,
+  "tol": 0.01,
+  "note": "no friction, t = 2,0 s: Ek = 119 J"
+ },
+ {
+  "expr": "window.simState.Eth",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "no friction: Eth = 0"
+ },
+ {
+  "expr": "window.simState.Ekok",
+  "expected": 981,
+  "tol": 0.001,
+  "note": "no friction: total 981 J"
+ },
+ {
+  "expr": "window.simState.Ep + window.simState.Ek + window.simState.Eth",
+  "expected": 981,
+  "tol": 0.0005,
+  "note": "the displayed parts add up to the displayed total"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return Math.abs(S.Ep - 50*9.81*S.h) < 1 && Math.abs(S.Ek - 0.5*50*S.v*S.v) < 1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Ep follows the height (50 kg · 9,81 m/s² · h) and Ek the speed (½ · 50 kg · v²)"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setT('3');",
+  "expr": "window.simState.Ep",
+  "expected": 424,
+  "tol": 0.002,
+  "note": "no friction, t = 3,0 s: Ep = 424 J, Ek = 557 J"
+ },
+ {
+  "expr": "window.simState.Ek",
+  "expected": 557,
+  "tol": 0.002,
+  "note": "no friction, t = 3,0 s: Ek = 557 J"
+ },
+ {
+  "expr": "(() => { const x=simText('#sim-root .readout'); return /^\\$t = 3\\{,\\}0 ?\\\\,\\\\text\\{s\\}\\$, korkeus \\$h = [0-9{},]+ ?\\\\,\\\\text\\{m\\}\\$, nopeus \\$v = [0-9{},]+ ?\\\\,\\\\text\\{m\\/s\\}\\$/.test(x) && x.includes('E_\\\\text{p} = 424') && x.includes('E_\\\\text{k} = 557') && /E_\\\\text\\{lämpö\\} = 0/.test(x) && /= 981 ?\\\\,\\\\text\\{J\\}\\$/.test(x) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout: t, h, v, the three energies and their sum 981 J"
+ },
+ {
+  "expr": "window.simState.h0",
+  "expected": 2,
+  "tol": 0.001,
+  "note": "no friction, h0 = 2,0 m"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setK('1'); setH('2'); setT('8');",
+  "expr": "window.simState.kitka",
+  "expected": 1,
+  "tol": 0,
+  "note": "select Kitka sets simState.kitka"
+ },
+ {
+  "expr": "window.simState.Ep",
+  "expected": 89,
+  "tol": 0.01,
+  "note": "small friction, t = 8,0 s: Ep = 89 J"
+ },
+ {
+  "expr": "window.simState.Ek",
+  "expected": 380,
+  "tol": 0.002,
+  "note": "small friction, t = 8,0 s: Ek = 380 J"
+ },
+ {
+  "expr": "window.simState.Eth",
+  "expected": 512,
+  "tol": 0.002,
+  "note": "small friction, t = 8,0 s: Eth = 512 J"
+ },
+ {
+  "expr": "window.simState.Emek",
+  "expected": 469,
+  "tol": 0.002,
+  "note": "mechanical energy Ep + Ek = 469 J"
+ },
+ {
+  "expr": "window.simState.Ekok",
+  "expected": 981,
+  "tol": 0.001,
+  "note": "total 981 J"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setT('16');",
+  "expr": "window.simState.Eth",
+  "expected": 838,
+  "tol": 0.001,
+  "note": "small friction, t = 16 s: Eth = 838 J, Ep = 21 J, Ek = 122 J"
+ },
+ {
+  "expr": "window.simState.Ek",
+  "expected": 122,
+  "tol": 0.01,
+  "note": "small friction, t = 16 s: Ek = 122 J"
+ },
+ {
+  "expr": "window.simState.Ekok",
+  "expected": 981,
+  "tol": 0.001,
+  "note": "total still 981 J"
+ },
+ {
+  "expr": "window.simState.tmax",
+  "expected": 16,
+  "tol": 0.001,
+  "note": "tmax follows the latest time visited"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setT('4');",
+  "expr": "window.simState.tmax",
+  "expected": 16,
+  "tol": 0.001,
+  "note": "tmax is kept when the slider goes back to t = 4 s"
+ },
+ {
+  "expr": "window.simState.t",
+  "expected": 4,
+  "tol": 0.001,
+  "note": "slider t back to 4,0 s"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setK('2'); setH('2'); setT('16');",
+  "expr": "window.simState.Eth",
+  "expected": 980,
+  "tol": 0.002,
+  "note": "large friction, t = 16 s (the skateboarder has stopped at the bottom): Eth = 980 J"
+ },
+ {
+  "expr": "window.simState.Ek",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "large friction, t = 16 s: Ek = 0"
+ },
+ {
+  "expr": "window.simState.Ekok",
+  "expected": 981,
+  "tol": 0.001,
+  "note": "total 981 J"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setK('0'); setH('3');",
+  "expr": "window.simState.Ep",
+  "expected": 1472,
+  "tol": 0.001,
+  "note": "h0 = 3,0 m, t = 0: Ep = 50 kg · 9,81 m/s² · 3,0 m = 1472 J"
+ },
+ {
+  "expr": "window.simState.Ekok",
+  "expected": 1472,
+  "tol": 0.001,
+  "note": "h0 = 3,0 m: total 1472 J"
+ },
+ {
+  "expr": "window.simState.t",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "changing h0 puts the clock back to 0"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setH('1.5');",
+  "expr": "window.simState.Ep",
+  "expected": 736,
+  "tol": 0.002,
+  "note": "h0 = 1,5 m, t = 0: Ep = 736 J"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setH('2'); setT('3'); setK('1');",
+  "expr": "window.simState.t",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "changing the friction puts the clock back to 0"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setSp('2');",
+  "expr": "window.simState.speed",
+  "expected": 2,
+  "tol": 0,
+  "note": "select Nopeus sets simState.speed"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setSp('0.5');",
+  "expr": "window.simState.speed",
+  "expected": 0.5,
+  "tol": 0,
+  "note": "speed hidas = 0,5"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; setK('0'); setH('2'); setT('0'); setSp('2'); B[0].click();",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Aloita starts the run"
+ },
+ {
+  "expr": "window.simState.t > 0.05 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "time advances while the run is playing"
+ },
+ {
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls > button'); return b.textContent==='Tauko' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the main button reads Tauko while running"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; B[0].click();",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "the button pauses the run"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; B[0].click(); setT('6');",
+  "expr": "window.simState.running ? 0 : 1",
+  "expected": 1,
+  "tol": 0,
+  "note": "dragging the time slider stops the playback"
+ },
+ {
+  "setup": "const q=(s)=>document.querySelector(s), R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')], B=[...document.querySelectorAll('#sim-root .controls > button')], ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setT=(v)=>{R[0].value=v;ev(R[0]);}, setH=(v)=>{R[1].value=v;ev(R[1]);}, setK=(v)=>{S[0].value=v;ev(S[0]);}, setSp=(v)=>{S[1].value=v;ev(S[1]);}; B[1].click();",
+  "expr": "window.simState.t",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "Alusta puts the clock back to 0 and stops"
+ },
+ {
+  "expr": "window.simState.running ? 0 : 1",
+  "expected": 1,
+  "tol": 0,
+  "note": "Alusta stops the run"
+ }
+]

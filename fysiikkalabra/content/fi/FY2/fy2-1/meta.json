@@ -12,7 +12,11 @@
     "energialaji",
     "liike-energia",
     "potentiaalienergia",
-    "energian säilyminen"
+    "energian säilyminen",
+    "mekaaninen energia",
+    "lämpöenergia",
+    "eristetty systeemi",
+    "joule"
   ],
   "sim": true,
   "solutions": "all",

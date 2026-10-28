@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-1-L1-01",
+      "level": 1,
+      "text": "Kivi on levossa korkealla kalliolla, ja sen potentiaalienergia on $50\\,\\text{J}$. Kivi putoaa maahan, jonka tasolla potentiaalienergia on nolla. Ilmanvastus jätetään huomiotta. Kuinka suuri on kiven liike-energia juuri ennen maahan osumista?",
+      "answer": 50.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-02",
+      "level": 1,
+      "text": "Hehkulamppu ottaa sähköenergiaa $60{,}0\\,\\text{J}$ ja muuttaa sen säteilyenergiaksi ja lämpöenergiaksi. Säteilyenergiaa syntyy $3{,}0\\,\\text{J}$. Kuinka paljon lämpöenergiaa syntyy?",
+      "answer": 57.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-03",
+      "level": 1,
+      "text": "Aurinkopaneeli vastaanottaa säteilyenergiaa $800\\,\\text{J}$ ja muuttaa siitä sähköenergiaksi $120\\,\\text{J}$. Loppu muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy?",
+      "answer": 680.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-04",
+      "level": 1,
+      "text": "Pyöräilijän ja pyörän liike-energia on $1800\\,\\text{J}$. Pyöräilijä jarruttaa ja pysähtyy, ja kaikki liike-energia muuttuu jarruissa ja renkaissa lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy?",
+      "answer": 1800.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-05",
+      "level": 1,
+      "text": "Pulkka lähtee levosta mäen päältä. Ylhäällä sen potentiaalienergia on $600\\,\\text{J}$, ja mäkeä laskiessa kitka muuttaa $90\\,\\text{J}$ energiaa lämpöenergiaksi. Mäen alla potentiaalienergia on nolla. Kuinka suuri on pulkan liike-energia mäen alla?",
+      "answer": 510.0,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-1-L2-01",
+      "level": 2,
+      "text": "Leluauton paristosta vapautuu kemiallista energiaa $2{,}00\\,\\text{kJ}$. Auto saa siitä liike-energiaa $450\\,\\text{J}$, ja loppu muuttuu lämpöenergiaksi. Kuinka monta joulea lämpöenergiaa syntyy?",
+      "answer": 1550.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-02",
+      "level": 2,
+      "text": "Lapsi lähtee levosta vesiliukumäen yläpäästä. Alapäässä hänen liike-energiansa on $2{,}4\\,\\text{kJ}$, ja matkalla kitka on muuttanut $0{,}60\\,\\text{kJ}$ energiaa lämpöenergiaksi. Alapää on potentiaalienergian nollataso. Kuinka suuri oli lapsen potentiaalienergia yläpäässä? Vastaa kilojouleina.",
+      "answer": 3.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-03",
+      "level": 2,
+      "text": "Kumipallon potentiaalienergia on pudotushetkellä $490\\,\\text{mJ}$. Pallo pomppii, kunnes se jää makaamaan lattialle. Ääntä ei oteta huomioon. Kuinka paljon pallon ja lattian lämpöenergia on yhteensä kasvanut? Vastaa jouleina.",
+      "answer": 0.49,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-04",
+      "level": 2,
+      "text": "Vedenkeittimeen tulee sähköenergiaa $0{,}360\\,\\text{MJ}$. Siitä $0{,}331\\,\\text{MJ}$ siirtyy veteen lämpöenergiana, ja loppu lämmittää keitintä ja ympäristöä. Kuinka monta kilojoulea energiaa päätyy keittimeen ja ympäristöön?",
+      "answer": 29.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-1-L3-01",
+      "level": 3,
+      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa. Kohdassa A skeittari on levossa ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy kohtien B ja C välillä?",
+      "answer": 130,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-02",
+      "level": 3,
+      "text": "Kumipallo pudotetaan lattialle. Jokaisen pompun jälkeen pallolla on mekaanista energiaa $80\\,\\%$ siitä, mitä sillä oli juuri ennen pomppua. Pudotushetkellä mekaaninen energia on $5{,}0\\,\\text{J}$. Kuinka paljon energiaa on muuttunut lämpöenergiaksi kahden pompun jälkeen?",
+      "answer": 1.8,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-03",
+      "level": 3,
+      "text": "Ydinvoimalan reaktorissa vapautuu ydinenergiaa $3{,}0\\,\\text{GJ}$. Turbiini ja generaattori muuttavat siitä sähköenergiaksi $1{,}0\\,\\text{GJ}$, ja loppu siirtyy lämpöenergiana jäähdytysveteen. Kuinka monta megajoulea energiaa päätyy jäähdytysveteen?",
+      "answer": 2000,
+      "unit": "MJ",
+      "tolerance": 0.02
+    }
+  ]
+}

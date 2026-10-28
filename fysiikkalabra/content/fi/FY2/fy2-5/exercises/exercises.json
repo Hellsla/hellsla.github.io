@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-5-L1-01",
+      "level": 1,
+      "text": "Moottorisahan huoltoasemalta ostettiin 2,0 kg bensiiniä. Bensiinin lämpöarvo on $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka paljon energiaa bensiinin palaessa vapautuu? Anna vastaus megajouleina.",
+      "answer": 86,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-02",
+      "level": 1,
+      "text": "Kaasukattilassa poltetaan talvipäivänä 2,0 kg maakaasua, jonka lämpöarvo on $49\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka paljon energiaa kaasusta vapautuu? Anna vastaus megajouleina.",
+      "answer": 98,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-03",
+      "level": 1,
+      "text": "Kivihiilivoimalaitos polttaa tunnissa 12 t kivihiiltä, jonka lämpöarvo on $26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka paljon energiaa kivihiilestä vapautuu tunnissa? Anna vastaus gigajouleina.",
+      "answer": 310,
+      "unit": "GJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-04",
+      "level": 1,
+      "text": "Lämpölaitoksen varastosta kuljetetaan polttoon 400 kg jyrsinturvetta, jonka lämpöarvo on $10\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka paljon energiaa turpeesta vapautuu? Anna vastaus megajouleina.",
+      "answer": 4000,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-05",
+      "level": 1,
+      "text": "Retkeilijän pähkinäsekoituksen energiapitoisuus on $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (esimerkkiarvo). Kourallinen pähkinöitä painaa 0,040 kg. Kuinka paljon energiaa kourallisesta saadaan? Anna vastaus kilojouleina.",
+      "answer": 960,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-5-L2-01",
+      "level": 2,
+      "text": "Leipäpaketin ravintoarvomerkinnässä (esimerkki) lukee: energia 1200 kJ sadassa grammassa. Leipäviipale painaa 40 g. Kuinka paljon energiaa viipaleessa on? Anna vastaus kilojouleina.",
+      "answer": 480,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-02",
+      "level": 2,
+      "text": "Työmaan dieselgeneraattorin pitää saada polttoaineesta vapautumaan energiaa 1,8 GJ. Dieselin lämpöarvo on $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka monta kilogrammaa dieseliä on poltettava? Anna vastaus kilogrammoina.",
+      "answer": 42,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-03",
+      "level": 2,
+      "text": "Omakotitalon pelletinpolttimessa poltetaan 40 kg puupellettejä, joiden lämpöarvo on $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kattilan hyötysuhde on 85 %. Kuinka paljon pelleteistä saadaan talon lämmitykseen hyötyenergiaa? Anna vastaus megajouleina.",
+      "answer": 580,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-04",
+      "level": 2,
+      "text": "Henkilöauto tarvitsee 100 km:n ajamiseen liikkumiseen hyötyenergiaa 48 MJ. Moottorin hyötysuhde on 25 %. Bensiinin lämpöarvo on $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka monta kilogrammaa bensiiniä 100 km:n matkalla kuluu? Anna vastaus kilogrammoina.",
+      "answer": 4.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-5-L3-01",
+      "level": 3,
+      "text": "Mökin lämmitykseen tarvitaan energiaa 120 MJ. Energia voidaan saada joko kuivasta polttopuusta ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) tai kevyestä polttoöljystä ($43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$). Laske kummankin polttoaineen tarvittava massa ja kerro, kuinka monta kertaa suurempi puun massa on kuin öljyn massa. Selitä myös, miksi puuta tarvitaan enemmän. Anna vastaus lukuna.",
+      "answer": 2.9,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L3-02",
+      "level": 3,
+      "text": "Vaeltaja kantaa mukanaan ruokaa, jonka energiapitoisuus on $18\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (esimerkkiarvo). Ruokaa on 2,4 kg, ja hän tarvitsee päivässä ruoasta energiaa 12 MJ. Kuinka monta päivää ruoka riittää? Perustele laskusi. Anna vastaus päivinä.",
+      "answer": 3.6,
+      "unit": "päivää",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L3-03",
+      "level": 3,
+      "text": "Turvevoimalaitos polttaa tunnissa 36 t jyrsinturvetta, jonka lämpöarvo on $10\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Laitoksen hyötysuhde sähköntuotannossa on 35 %. Kuinka suuri on voimalaitoksen sähköteho? Anna vastaus megawatteina. Muista: $1\\,\\text{W} = 1\\,\\text{J/s}$ ja yksi tunti on 3600 s.",
+      "answer": 35,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ]
+}

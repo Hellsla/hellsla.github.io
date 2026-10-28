@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Mihin ryhmään tuulivoima kuuluu ja miksi se ei yksin riitä pitämään sähköverkkoa käynnissä?",
+    "a": "Tuulivoima on sääriippuvaista: teho vaihtelee tuulen mukaan eikä sitä voi lisätä tarpeen mukaan. Verkossa tuotannon pitää vastata kulutusta joka hetki, joten tarvitaan myös hyvin säädettävää tuotantoa, kuten vesivoimaa, ja tasaista perusvoimaa."
+  },
+  {
+    "q": "Voimalan keskiteho on $2{,}0\\,\\text{MW}$. Kuinka paljon energiaa se tuottaa vuodessa ($8760\\,\\text{h}$)?",
+    "a": "$E = P t = 2000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 17\\,520\\,000\\,\\text{kWh} \\approx 18\\,\\text{GWh}$."
+  },
+  {
+    "q": "Tuulivoimalan nimellisteho on $5\\,\\text{MW}$, mutta se tuottaa vuodessa vain kolmanneksen siitä energiasta, jonka se tuottaisi koko ajan nimellisteholla. Miksi?",
+    "a": "Tuuli ei puhalla koko ajan sopivalla nopeudella, joten voimala toimii suuren osan ajasta nimellistehoa pienemmällä teholla. Sen keskiteho on noin kolmasosa nimellistehosta."
+  }
+]

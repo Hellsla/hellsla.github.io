@@ -145,8 +145,8 @@ def display_chains(text):
     def flush():
         if pending: out.append("\n\n" + chain_html(pending, set(gaps)) + "\n\n"); pending.clear(); gaps.clear()
     for p in parts:
-        if p.startswith("$") and not p.startswith("$$") and is_long(p[1:-1]):
-            rows = chain_rows(p[1:-1])
+        rows = chain_rows(p[1:-1]) if p.startswith("$") and not p.startswith("$$") and is_long(p[1:-1]) else None
+        if rows:   # a formula with no left side ("= 5 J" after "ja") stays inline (2026-10-28, fy2-5, fy2-6)
             if pending: gaps.append(len(pending))
             pending.extend(rows)
         elif pending and re.fullmatch(r"\s*(?:ja|sekä|,)?\s*", p): continue   # "… ja …" between two calculations
@@ -196,6 +196,7 @@ def steps_html(html, answer_label="Vastaus"):
 if __name__ == "__main__":                                          # quick self-test
     assert chain_rows(r"Q = cm\Delta T = 4190 \cdot 0{,}20 = 58\,660\,\text{J}") == [("Q", "= cm\\Delta T"), ("", "= 4190 \\cdot 0{,}20"), ("", "= 58\\,660\\,\\text{J}")]
     assert chain_rows(r"\left(a = b\right)") is None and chain_rows(r"a & = b") is None
+    assert "chain" not in display_chains(r"ja $= 4190 \cdot 0{,}20 \cdot 1000 \cdot 3600 \cdot 7{,}5 \cdot 10^{6}\,\text{J} \approx 1\,\text{J}$ eli")
     assert chain_rows(r"T = \dfrac{x = 1}{2} \approx 3") == [("T", "= \\dfrac{x = 1}{2}"), ("", "\\approx 3")]
     assert vis_len(r"4190\,\tfrac{\text{J}}{\text{kg}}") == 6
     assert _top_relations(r"\left. a \right|_{x=1} = 2") == [(len(r"\left. a \right|_{x=1} "), len(r"\left. a \right|_{x=1} ") + 1)]

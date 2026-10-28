@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "contribution": "Teho on energian muuntumisen tai siirtymisen nopeus, $P = \\Delta E : \\Delta t$, ja kilowattitunti on teho kertaa aika: sähkölasku selitetään laitteen tehosta ja käyttöajasta ilman työn käsitettä.",
+  "learn": [
+    "Osaat laskea tehon, energian tai ajan kaavalla $P = E : t$.",
+    "Osaat selittää, miksi sähkölasku riippuu sekä tehosta että ajasta.",
+    "Osaat laskea sähköenergian kilowattitunteina ja sen hinnan."
+  ],
+  "prior": [
+    "Energia mitataan jouleina, ja se muuntuu muodosta toiseen (luku *Energian muuntuminen ja yksikkö joule*)",
+    "Energia ei synny eikä katoa (luku *Energialajit ja energian säilyminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Keittiössä vedenkeitin humisee ja vesi kuumenee parissa minuutissa. Samaan aikaan eteisessä palaa pieni lamppu, jonka valoa kukaan ei tarvitse. Sähkömittari pyörii molemmista, mutta keittimen kohdalla se pyörii selvästi nopeammin. Silti lamppu on usein päällä tuntikausia, kun keitin on päällä vain hetken.",
+      "question": "Kumpi käyttää sähköenergiaa enemmän, nopeasti toimiva laite vai pitkään päällä oleva laite, ja miten sitä voi verrata?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: energia ja joule",
+      "prompt": "Lamppu muuntaa sähköenergiaa valoksi ja lämmöksi. Mikä väite on oikea (luku *Energian muuntuminen ja yksikkö joule*)?",
+      "choices": [
+        {
+          "text": "Sähköenergia katoaa, kun lamppu palaa.",
+          "feedback": "Energia ei katoa. Luvussa *Energialajit ja energian säilyminen* sovittiin, että energia vain muuntuu toiseen muotoon: lampussa sähköenergia muuttuu valoksi ja lämmöksi."
+        },
+        {
+          "text": "Energia mitataan jouleina, ja sähköenergia muuntuu lampussa toisiin energialajeihin.",
+          "correct": true,
+          "feedback": "Oikein. Energian yksikkö on joule (J), ja kokonaisenergia säilyy: sähköenergia muuntuu valoksi ja lämmöksi. Tänään lisätään mukaan aika: kuinka nopeasti tämä muuntuminen tapahtuu."
+        },
+        {
+          "text": "Joule on se nopeus, jolla energia muuntuu.",
+          "feedback": "Joule on energian yksikkö, ei nopeuden. Nopeudesta kertoo uusi suure, teho, jonka yksikkö on joule sekunnissa."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste: hiustenkuivain vai lamppu",
+      "prompt": "Hiustenkuivaimen teho on 1800 W, ja sitä käytetään 5,0 minuuttia. Eteisen lampun teho on 10 W, ja se jää palamaan vuorokaudeksi eli 24 tunniksi. Kumpi muuntaa sähköenergiaa enemmän?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "Hiustenkuivain, koska sen teho on 180-kertainen.",
+          "feedback": "Teho on vain vauhti. Kuivain muuntaa $1800\\,\\text{J/s} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$ eli $0{,}54\\,\\text{MJ}$, mutta lamppu palaa 288 kertaa pidempään ja muuntaa $10\\,\\text{J/s} \\cdot 86\\,400\\,\\text{s} = 864\\,000\\,\\text{J}$ eli $0{,}86\\,\\text{MJ}$. Lamppu muuntaa enemmän."
+        },
+        {
+          "text": "Lamppu, koska se on päällä paljon pidempään.",
+          "correct": true,
+          "feedback": "Oikein, kun luvut lasketaan nimellistehoista: kuivain muuntaa $1800\\,\\text{J/s} \\cdot 300\\,\\text{s} = 0{,}54\\,\\text{MJ}$ ja lamppu $10\\,\\text{J/s} \\cdot 86\\,400\\,\\text{s} = 0{,}86\\,\\text{MJ}$. Energia riippuu sekä tehosta että ajasta."
+        },
+        {
+          "text": "Yhtä paljon, koska kumpikin vain muuntaa sähköenergiaa.",
+          "feedback": "Molemmat muuntavat sähköenergiaa, mutta eri määrän. Kuivain muuntaa $0{,}54\\,\\text{MJ}$ ja lamppu $0{,}86\\,\\text{MJ}$, koska energia on teho kertaa aika."
+        },
+        {
+          "text": "Niitä ei voi verrata, koska laitteet tekevät eri asioita.",
+          "feedback": "Voi verrata: energia mitataan molemmille jouleina, vaikka laitteet tekevät eri asioita. Silloin lasketaan, paljonko kumpikin muuntaa: $0{,}54\\,\\text{MJ}$ ja $0{,}86\\,\\text{MJ}$."
+        }
+      ]
+    },
+    {
+      "id": "mittari",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Energiamittarin lukemat",
+      "source": "model",
+      "source_note": "Laskettu laitteiden nimellistehoista (vedenkeitin 2000 W, tosteri 1000 W, televisio 100 W); esimerkkiaineisto, ei mittaus.",
+      "text": "Kolmeen laitteeseen kytketään energiamittari, ja lukema merkitään 20 sekunnin välein. Taulukossa on mittarin lukema laitteen käynnistämisen jälkeen.\n\n| $t$ (s) | keitin (kJ) | tosteri (kJ) | televisio (kJ) |\n| --- | --- | --- | --- |\n| 0 | 0 | 0 | 0 |\n| 20 | 40 | 20 | 2 |\n| 40 | 80 | 40 | 4 |\n| 60 | 120 | 60 | 6 |\n\nLukema kasvaa tasaisesti. Piirrettynä aikaa vastaan lukemat muodostavat suoran, jonka jyrkkyyden voi lukea taulukosta.",
+      "question": {
+        "type": "choice",
+        "prompt": "Mistä taulukon luvuista nähdään, kuinka nopeasti tosteri muuntaa energiaa?",
+        "choices": [
+          {
+            "text": "Lukemasta 60 kJ, koska se on tosterin suurin energia.",
+            "feedback": "Lukema 60 kJ kertoo vain, kuinka paljon energiaa on muuntunut 60 sekunnissa. Nopeus saadaan, kun energia jaetaan ajalla."
+          },
+          {
+            "text": "Energian lisäyksestä jaettuna ajalla: $20\\,\\text{kJ}$ jokaisessa 20 sekunnin välissä, eli $1000\\,\\text{J}$ sekunnissa.",
+            "correct": true,
+            "feedback": "Oikein. Energian lisäys $\\Delta E = 20\\,000\\,\\text{J}$ jaettuna ajalla $\\Delta t = 20\\,\\text{s}$ on $1000\\,\\text{J/s} = 1000\\,\\text{W}$. Sama osamäärä saadaan mistä tahansa aikavälistä, koska kasvu on tasaista."
+          },
+          {
+            "text": "Ajasta 60 s, koska pitkä aika tarkoittaa suurta tehoa.",
+            "feedback": "Aika yksin ei kerro tehoa. Teho on energia aikaa kohti: sama teho tuottaa lisää energiaa koko ajan."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aika",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Lampun energia ajan kuluessa",
+      "source": "model",
+      "source_note": "Laskettu lampun nimellistehosta 10 W ja kuivaimen tehosta 1800 W; esimerkkiaineisto, ei mittaus.",
+      "text": "Hiustenkuivain muuntaa 5,0 minuutissa $0{,}54\\,\\text{MJ}$ sähköenergiaa. Taulukossa on 10 W:n lampun muuntama energia, kun se palaa yhtäjaksoisesti.\n\n| aika | lampun energia (MJ) |\n| --- | --- |\n| 1 h | 0,036 |\n| 5 h | 0,18 |\n| 15 h | 0,54 |\n| 24 h | 0,86 |\n\nLampun teho on koko ajan sama 10 W. Silti sen muuntama energia kasvaa ajan mukana.",
+      "question": {
+        "type": "choice",
+        "prompt": "Kuinka kauan lampun täytyy palaa, jotta se on muuntanut saman energian kuin kuivain viidessä minuutissa?",
+        "choices": [
+          {
+            "text": "Viisi minuuttia, koska energian pitää kertyä samassa ajassa.",
+            "feedback": "Samassa ajassa lamppu muuntaa vain $10\\,\\text{W} \\cdot 300\\,\\text{s} = 3000\\,\\text{J}$, koska sen teho on pieni. Pienellä teholla sama energia vie paljon pidempään."
+          },
+          {
+            "text": "Noin 15 tuntia.",
+            "correct": true,
+            "feedback": "Oikein: $t = E : P = 540\\,000\\,\\text{J} : 10\\,\\text{W} = 54\\,000\\,\\text{s} = 15\\,\\text{h}$. Taulukosta sama nähdään lukemasta $0{,}54\\,\\text{MJ}$."
+          },
+          {
+            "text": "Noin 5 tuntia.",
+            "feedback": "Viidessä tunnissa lamppu on muuntanut vasta $0{,}18\\,\\text{MJ}$, kolmasosan kuivaimen $0{,}54\\,\\text{MJ}$:sta. Taulukossa $0{,}54\\,\\text{MJ}$ kohdalla lukee 15 h."
+          },
+          {
+            "text": "Noin 24 tuntia.",
+            "feedback": "24 tunnissa lamppu muuntaa $0{,}86\\,\\text{MJ}$, mikä on enemmän kuin kuivaimen $0{,}54\\,\\text{MJ}$. Sama energia saavutetaan jo aiemmin, 15 tunnissa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: teho ja aika",
+      "prompt": "Kirjoita taulukoiden perusteella: miksi 10 W:n lamppu voi muuntaa enemmän energiaa kuin 1800 W:n hiustenkuivain? Miten teho ja aika ratkaisevat yhdessä muuntuneen energian?",
+      "model": "Teho kertoo, kuinka paljon energiaa muuntuu sekunnissa: kuivaimella $1800\\,\\text{J}$ ja lampulla $10\\,\\text{J}$. Muuntunut energia on teho kertaa aika, joten pieni teho riittää, kun aikaa on paljon: lamppu muuntaa vuorokaudessa $0{,}86\\,\\text{MJ}$ ja kuivain viidessä minuutissa $0{,}54\\,\\text{MJ}$. Lampun täytyy palaa noin 15 tuntia, jotta se saavuttaa kuivaimen viiden minuutin energian. Luvut on laskettu nimellistehoista, eivät mitattu.",
+      "criteria": [
+        "Sanoin, että teho on energia sekunnissa.",
+        "Käytin yhtälöä $E = P\\,t$ ja otin ajan huomioon.",
+        "Perustelin lukuarvoilla, että lamppu muuntaa enemmän.",
+        "Muistin, että luvut ovat nimellistehoista laskettuja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteeseesi",
+      "prompt": "Vertaa ennustettasi lukuihin $E = P\\,t$. Mitä teho kertoo ja mitä se ei kerro? Palaa alun kysymykseen: miksi sähkölaskua ei voi päätellä pelkästä tehosta?",
+      "predictions": [
+        "ennuste-1"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee, mitä 1500 W:n lämmitin maksaa, kun se on päällä 3,0 tuntia ja hinta on 20 snt/kWh. Hän kirjoittaa $E = 1500 \\cdot 3{,}0\\,\\text{kWh} = 4500\\,\\text{kWh}$ ja hinnaksi $4500 \\cdot 0{,}20\\,\\text{€} = 900\\,\\text{€}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Tehoa ei muutettu kilowateiksi: oikein $E = 1{,}5\\,\\text{kW} \\cdot 3{,}0\\,\\text{h} = 4{,}5\\,\\text{kWh}$, ja hinta on $0{,}90\\,\\text{€}$.",
+          "correct": true,
+          "feedback": "Oikein. Kilowattituntia saadaan vain, kun teho on kilowatteina: $1500\\,\\text{W} = 1{,}5\\,\\text{kW}$. Virheen huomaa myös järkevyydestä: 900 euroa kolmen tunnin lämmityksestä olisi mahdoton."
+        },
+        {
+          "text": "Aika olisi pitänyt muuttaa sekunneiksi ennen laskua.",
+          "feedback": "Sekunteja tarvitaan, kun energia lasketaan jouleina. Kilowattitunteihin sopii aika tunteina, kunhan teho on kilowatteina. Virhe on tehon yksikössä."
+        },
+        {
+          "text": "Hinta pitäisi jakaa kolmella, koska lämmitin oli päällä kolme tuntia.",
+          "feedback": "Kolme tuntia on jo mukana energiassa. Jakaminen ei korjaisi virhettä: tulos olisi yhä kaukana oikeasta $0{,}90\\,\\text{€}$:sta, koska teho jäi watteihin."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Tulos 900 euroa on mahdoton: lämmitys maksaisi kolmessa tunnissa enemmän kuin kuukauden sähkö. Teho jäi watteihin, vaikka kWh vaatii kilowatit."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Valmiustila vuoden ajan",
+      "prompt": "Televisio ja pelikonsoli ovat valmiustilassa yhteensä teholla 2,5 W koko vuoden, 365 vuorokautta. Paljonko energiaa tämä kuluttaa vuodessa? Vastaa kilowattitunteina.",
+      "answer": 21.9,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Onko teho vakio? Kuinka monta tuntia vuodessa on?",
+        "Käytä $E = P\\,t$. Muuta teho kilowateiksi, jotta tulos tulee kilowattitunteina.",
+        "$E = 0{,}0025\\,\\text{kW} \\cdot 8760\\,\\text{h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 21900,
+          "feedback": "Teho jäi watteihin. Kilowattitunteja varten $2{,}5\\,\\text{W} = 0{,}0025\\,\\text{kW}$; tulos 21 900 olisi wattitunteja."
+        },
+        {
+          "value": 0.9125,
+          "feedback": "Käytit aikana 365 tuntia. Vuodessa on 365 vuorokautta eli $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$."
+        }
+      ],
+      "solution": "**Annettu:** teho $P = 2{,}5\\,\\text{W}$ (vakio), aika 365 vuorokautta\n\n**Kysytty:** energia $E$ kilowattitunteina\n\n**Periaate:** Valmiustilan teho on tasainen, joten muuntunut energia on teho kertaa aika.\n\n**Kaava:** $E = P\\,t$\n\n**Muunnokset:** $2{,}5\\,\\text{W} = 2{,}5 : 1000\\,\\text{kW} = 0{,}0025\\,\\text{kW}$ ja $365\\,\\text{vrk} = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$.\n\n**Sijoitus:** $E = 0{,}0025\\,\\text{kW} \\cdot 8760\\,\\text{h} = 21{,}9\\,\\text{kWh}$\n\n**Vastaus:** $22\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $2{,}5\\,\\text{W}$.\n\n**Järkevyys:** Vuorokaudessa kuluu noin $2{,}5\\,\\text{W} \\cdot 24\\,\\text{h} = 60\\,\\text{Wh} = 0{,}06\\,\\text{kWh}$, ja 365 päivässä noin 22 kWh. Hinta olisi noin $22 \\cdot 0{,}20\\,\\text{€} \\approx 4{,}4\\,\\text{€}$: pieni mutta turha."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään kaavaa $P = E : t$ suoraan, tason 2 tehtävissä muunnetaan yksiköitä ja lasketaan hintoja, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Laite A on päällä teholla 500 W neljä tuntia. Laite B on päällä teholla 1500 W yhden tunnin. Kumpi muuntaa enemmän sähköenergiaa?",
+      "choices": [
+        {
+          "text": "Laite B, koska sen teho on suurempi.",
+          "feedback": "Teho ei yksin ratkaise. Laite B muuntaa $1{,}5\\,\\text{kW} \\cdot 1\\,\\text{h} = 1{,}5\\,\\text{kWh}$, mutta laite A muuntaa pidemmässä ajassa $0{,}5\\,\\text{kW} \\cdot 4\\,\\text{h} = 2{,}0\\,\\text{kWh}$."
+        },
+        {
+          "text": "Laite A, koska $0{,}5\\,\\text{kW} \\cdot 4\\,\\text{h} = 2{,}0\\,\\text{kWh}$ on enemmän kuin $1{,}5\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Oikein. Energia on teho kertaa aika, ja pitkä aika kompensoi pienemmän tehon: A muuntaa $2{,}0\\,\\text{kWh}$ ja B $1{,}5\\,\\text{kWh}$."
+        },
+        {
+          "text": "Yhtä paljon, koska molempien teho kertaa aika on 1500.",
+          "feedback": "Tulot eivät ole yhtä suuret: $500\\,\\text{W} \\cdot 4\\,\\text{h} = 2000\\,\\text{Wh}$ ja $1500\\,\\text{W} \\cdot 1\\,\\text{h} = 1500\\,\\text{Wh}$, eli A muuntaa enemmän."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Pesukoneen teho",
+      "prompt": "Pesukone kuluttaa pesuohjelman aikana energiaa 1,2 kWh 90 minuutin aikana. Mikä on sen keskiteho? Vastaa watteina.",
+      "answer": 800,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Teho on energia jaettuna ajalla. Missä yksiköissä energia ja aika pitää olla, jotta tulos on wateissa?",
+        "$P = E : t$. Muunna $1{,}2\\,\\text{kWh}$ jouleiksi ja 90 min sekunneiksi.",
+        "$1{,}2\\,\\text{kWh} = 1{,}2 \\cdot 3\\,600\\,000\\,\\text{J}$ ja $90\\,\\text{min} = 5400\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.8,
+          "feedback": "Laskit energian kilowattitunteina ja ajan tunteina, jolloin tulos on kilowatteina: $1{,}2\\,\\text{kWh} : 1{,}5\\,\\text{h} = 0{,}8\\,\\text{kW}$. Kysyttiin watteja, joten kerro 1000:lla."
+        },
+        {
+          "value": 13.3,
+          "feedback": "Jaoit tunteina annetun energian minuuteilla ($1200\\,\\text{Wh} : 90\\,\\text{min}$). Aika pitää muuttaa tunneiksi, $90\\,\\text{min} = 1{,}5\\,\\text{h}$, tai energia jouleiksi ja aika sekunneiksi."
+        }
+      ],
+      "solution": "**Annettu:** energia $E = 1{,}2\\,\\text{kWh}$, aika $t = 90\\,\\text{min}$\n\n**Kysytty:** keskiteho $P$ watteina\n\n**Periaate:** Teho on muuntunut energia jaettuna siihen kuluneella ajalla; keskiteho kuvaa pesun koko ajalta.\n\n**Kaava:** $P = \\dfrac{E}{t}$\n\n**Muunnokset:** $1{,}2\\,\\text{kWh} = 1{,}2 \\cdot 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 4\\,320\\,000\\,\\text{J}$ ja $90\\,\\text{min} = 90 \\cdot 60\\,\\text{s} = 5400\\,\\text{s}$.\n\n**Sijoitus:** $P = \\dfrac{4\\,320\\,000\\,\\text{J}}{5400\\,\\text{s}} = 800\\,\\dfrac{\\text{J}}{\\text{s}} = 800\\,\\text{W}$\n\n**Vastaus:** $8{,}0 \\cdot 10^{2}\\,\\text{W}$, kaksi merkitsevää numeroa kuten energiassa $1{,}2\\,\\text{kWh}$.\n\n**Järkevyys:** Kilowattitunteina ja tunteina $1{,}2\\,\\text{kWh} : 1{,}5\\,\\text{h} = 0{,}8\\,\\text{kW} = 800\\,\\text{W}$. Se on pienempi kuin vedenkeittimen 2000 W mutta suurempi kuin television, mikä sopii pesukoneeseen, joka lämmittää vettä vain osan ajasta."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Perhe haluaa pienentää sähkölaskuaan. Selitä, miksi sekä laitteen teho että käyttöaika pitää ottaa huomioon, ja anna kaksi keinoa vähentää kulutusta.",
+      "criteria": [
+        "Sanon, että energia on teho kertaa aika, $E = P\\,t$.",
+        "Mainitsen, että laskun suuruus riippuu kWh-määrästä ja hinnasta.",
+        "Annan kaksi keinoa: esimerkiksi pienempi teho tai lyhyempi käyttöaika.",
+        "Mainitsen valmiustilan tai pitkään päällä olevan pienen laitteen."
+      ],
+      "model": "Sähkölasku on kulutettu energia kilowattitunteina kertaa hinta, ja energia on teho kertaa aika. Siksi suuri teho lyhyen aikaa, kuten hiustenkuivain, ja pieni teho pitkään, kuten valmiustilassa oleva laite, voivat kuluttaa yhtä paljon. Kulutusta voi vähentää valitsemalla pienitehoisen laitteen, esimerkiksi LED-lampun $8\\,\\text{W}$ hehkulampun $60\\,\\text{W}$ tilalle, tai lyhentämällä aikaa sammuttamalla valo ja laitteet, joita ei käytetä. Valmiustilan voi katkaista virtakytkimestä.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

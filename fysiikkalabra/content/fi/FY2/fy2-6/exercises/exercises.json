@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-6-L1-01",
+      "level": 1,
+      "text": "Tuulivoimalan keskiteho vuoden aikana on $2{,}5\\,\\text{MW}$. Kuinka paljon sähköä se tuottaa vuodessa, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus gigawattitunteina.",
+      "answer": 22,
+      "unit": "GWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-02",
+      "level": 1,
+      "text": "Vesivoimalaitos toimii $8{,}0\\,\\text{h}$ ajan teholla $120\\,\\text{MW}$, kun sähkön kulutus on illalla suuri. Kuinka paljon energiaa laitos tuottaa tänä aikana? Anna vastaus megawattitunteina.",
+      "answer": 960,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-03",
+      "level": 1,
+      "text": "Olkiluoto 3 -ydinvoimalan teho on $1{,}6\\,\\text{GW}$. Kuinka paljon energiaa laitos tuottaa vuorokaudessa, kun se toimii koko ajan tällä teholla? Anna vastaus gigawattitunteina.",
+      "answer": 38,
+      "unit": "GWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-04",
+      "level": 1,
+      "text": "Suomessa tuotettiin vuonna 2024 sähköä yhteensä $79{,}9\\,\\text{TWh}$, ja tuulivoiman osuus oli $20{,}2\\,\\text{TWh}$ (Tilastokeskus). Kuinka monta prosenttia sähköstä tuotettiin tuulivoimalla?",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-05",
+      "level": 1,
+      "text": "Suomen ydinvoimalat tuottivat vuonna 2024 noin $31\\,\\text{TWh}$ sähköä (Tilastokeskus). Mikä oli niiden keskiteho vuoden aikana, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus gigawatteina.",
+      "answer": 3.5,
+      "unit": "GW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-6-L2-01",
+      "level": 2,
+      "text": "Esimerkkinä oleva aurinkovoimala on mitoitettu teholle $100\\,\\text{MW}$ (nimellisteho). Se tuottaa vuodessa $95\\,\\text{GWh}$ sähköä. Kuinka monta prosenttia nimellistehosta sen keskiteho on?",
+      "answer": 11,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L2-02",
+      "level": 2,
+      "text": "Suomen vesivoima tuotti vuonna 2024 noin $14\\,\\text{TWh}$ sähköä (Tilastokeskus). Kuinka monta tuntia Olkiluoto 3 ($1{,}6\\,\\text{GW}$) joutuisi toimimaan täydellä teholla tuottaakseen saman energian? Anna vastaus tunteina.",
+      "answer": 8750,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L2-03",
+      "level": 2,
+      "text": "Ydinvoimalat tuottivat vuonna 2024 noin $31\\,\\text{TWh}$ sähköä. Esimerkkinä oleva tuulivoimala tuottaa vuodessa $12\\,\\text{GWh}$. Kuinka monta tällaista tuulivoimalaa tarvittaisiin tuottamaan sama vuosienergia kuin ydinvoimalat tuottivat?",
+      "answer": 2600,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L2-04",
+      "level": 2,
+      "text": "Olkiluoto 3 ($1{,}6\\,\\text{GW}$) toimii koko vuoden ($8760\\,\\text{h}$) täydellä teholla. Esimerkkinä oleva sähkölämmittämätön kotitalous kuluttaa vuodessa $5000\\,\\text{kWh}$. Kuinka monen kotitalouden vuosikulutuksen laitos kattaisi? Anna vastaus miljoonina kotitalouksina.",
+      "answer": 2.8,
+      "unit": "milj.",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-6-L3-01",
+      "level": 3,
+      "text": "Esimerkkinä oleva pakkasilta: Suomen sähkön kulutus on $11\\,\\text{GW}$. Ydinvoimaloita toimii teholla $3{,}5\\,\\text{GW}$. Tuulivoimaloiden nimellisteho on yhteensä $9{,}0\\,\\text{GW}$, mutta tuuli on heikko ja ne tuottavat vain $4{,}0\\,\\%$ nimellistehostaan. Kuinka suuren tehon muiden voimalaitosten ja sähkön tuonnin on tuotettava? Anna vastaus gigawatteina.",
+      "answer": 7.1,
+      "unit": "GW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L3-02",
+      "level": 3,
+      "text": "Tuulipuiston ja ydinvoimalan nimellisteho on sama, $600\\,\\text{MW}$. Tuulipuiston keskiteho on $33\\,\\%$ ja ydinvoimalan $90\\,\\%$ nimellistehosta. Kuinka monta kertaa suuremman energian ydinvoimala tuottaa vuodessa? Anna vastaus kertoimena.",
+      "answer": 2.7,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L3-03",
+      "level": 3,
+      "text": "Suomessa aurinkosähköä tuotettiin vuonna 2024 noin $0{,}90\\,\\text{TWh}$ (Tilastokeskus). Kuinka monta tuntia Olkiluoto 3 ($1{,}6\\,\\text{GW}$) tuottaisi saman energian täydellä teholla? Anna vastaus tunteina.",
+      "answer": 560,
+      "unit": "h",
+      "tolerance": 0.02
+    }
+  ]
+}

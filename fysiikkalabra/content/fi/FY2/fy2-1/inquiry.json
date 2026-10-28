@@ -1,0 +1,479 @@
+{
+  "version": 1,
+  "contribution": "Kurssin ensimmäinen luku antaa energian peruskäsitteet: seitsemän energialajia, joulen ja energian säilymislain eristetyssä systeemissä. Simulaatiossa kokonaisenergian vakiona pysyminen näkyy joulina, kun kitka muuttaa mekaanisen energian lämpöenergiaksi.",
+  "learn": [
+    "Osaat nimetä energialajit ja tunnistaa, missä muodossa energiaa on.",
+    "Osaat laskea tuntemattoman energian säilymislain $E_\\text{alussa} = E_\\text{lopussa}$ avulla.",
+    "Osaat selittää, miksi energian kuluminen on muuttumista eikä häviämistä."
+  ],
+  "prior": [
+    "Etuliitteet kilo ja mega tarkoittavat tuhatta ja miljoonaa, joten $1\\,\\text{kJ} = 1000\\,\\text{J}$ (luku *Suureet, yksiköt ja SI-järjestelmä*)",
+    "Nopeus kertoo, kuinka paljon matkaa kappale kulkee sekunnissa (luku *Tasainen liike: s = vt*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pomppiva pallo pudotetaan lattialle. Ensimmäinen pomppu nousee melkein yhtä korkealle kuin mistä pallo pudotettiin, seuraava pomppu on matalampi ja seuraava vielä matalampi. Lopulta pallo makaa lattialla paikallaan. Alussa pallolla oli korkealla paljon energiaa, mutta lopussa se ei ole korkealla eikä liiku.",
+      "question": "Minne pallon energia meni?"
+    },
+    {
+      "id": "pr-etuliite",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa pohjatiedot",
+      "prompt": "Suklaapatukan kemiallinen energia on noin $1{,}0\\,\\text{MJ}$. Montako joulea se on?",
+      "choices": [
+        {
+          "text": "$1000\\,\\text{J}$",
+          "feedback": "Etuliite kilo tarkoittaa tuhatta, mutta mega tarkoittaa miljoonaa. Sijoita $1\\,\\text{MJ} = 1 \\cdot 10^{6}\\,\\text{J}$."
+        },
+        {
+          "text": "$1\\,000\\,000\\,\\text{J}$",
+          "feedback": "Oikein. Etuliite mega tarkoittaa miljoonaa, joten $1{,}0\\,\\text{MJ} = 1{,}0 \\cdot 10^{6}\\,\\text{J} = 1\\,000\\,000\\,\\text{J}$.",
+          "correct": true
+        },
+        {
+          "text": "$1\\,000\\,000\\,000\\,\\text{J}$",
+          "feedback": "Miljardia tarkoittaa etuliite giga, ei mega. Mega on miljoona, $10^{6}$."
+        },
+        {
+          "text": "$0{,}000001\\,\\text{J}$",
+          "feedback": "Tämä on mikrojoule. Etuliite mikro pienentää yksikköä, mutta mega suurentaa sitä miljoonakertaiseksi."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: half-pipe ilman kitkaa",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "Skeittari päästetään levosta half-pipen reunalta, ja kitkaa ei ole. Reunalla hänen potentiaalienergiansa on $981\\,\\text{J}$ ja liike-energiansa nolla. Potentiaalienergian nollataso on half-pipen pohja. Mitä energiaa skeittarilla on, kun hän on pohjalla?",
+      "choices": [
+        {
+          "text": "Potentiaalienergia on nolla ja liike-energia on $981\\,\\text{J}$.",
+          "feedback": "Mallin arvot tukevat tätä: kitkattomassa half-pipessä potentiaalienergia muuttuu pohjalla kokonaan liike-energiaksi, ja summa $E_\\text{p} + E_\\text{k}$ pysyy $981\\,\\text{J}$:na.",
+          "correct": true
+        },
+        {
+          "text": "Sekä potentiaalienergia että liike-energia ovat nolla, koska skeittari on alimmassa kohdassa.",
+          "feedback": "Pohjalla vauhti on suurimmillaan, joten liike-energiaa on paljon. Taulukossa liike-energia kasvaa, kun potentiaalienergia pienenee."
+        },
+        {
+          "text": "Liike-energia on suurempi kuin $981\\,\\text{J}$, koska vauhti on kasvanut.",
+          "feedback": "Liike-energia ei voi ylittää alkuenergiaa, koska energiaa ei synny. Taulukossa kokonaisenergia pysyy samana, vaikka vauhti kasvaa."
+        },
+        {
+          "text": "Liike-energia on pienempi kuin $981\\,\\text{J}$, koska liikkuminen kuluttaa energiaa.",
+          "feedback": "Ilman kitkaa mikään ei muuta energiaa lämmöksi, joten mitään ei kulu. Taulukossa liike-energia ja potentiaalienergia yhdessä ovat aina $981\\,\\text{J}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Ennuste 2: miksi liike loppuu",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "Kitkallisessa half-pipessä skeittari liukuu edestakaisin, ja jokainen nousu jää edellistä matalammaksi, kunnes hän pysähtyy pohjalle. Mikä selitys sopii energiaan parhaiten?",
+      "choices": [
+        {
+          "text": "Liike kuluttaa energiaa, ja energia häviää kokonaan, kun skeittari pysähtyy.",
+          "feedback": "Taulukossa kokonaisenergia pysyy samana koko ajan. Mekaaninen energia pienenee, mutta lämpöenergia kasvaa saman verran, joten mitään ei häviä."
+        },
+        {
+          "text": "Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten mekaaninen energia pienenee mutta kokonaisenergia pysyy samana.",
+          "feedback": "Mallin arvot tukevat tätä: kuvaajassa punainen lämpöenergia kasvaa juuri sen verran kuin sininen ja oranssi yhdessä pienenevät, ja yläreuna pysyy vaakasuorana.",
+          "correct": true
+        },
+        {
+          "text": "Pysähtyneellä skeittarilla ei ole energiaa, koska energia on vain liikkuvilla kappaleilla.",
+          "feedback": "Energiaa on muissakin muodoissa kuin liike-energiana. Pysähtyneessä skeittarissa, half-pipessä ja ilmassa on lämpöenergiaa, ja kokonaisenergia on yhtä suuri kuin alussa."
+        },
+        {
+          "text": "Kitka siirtää energian half-pipeen, jossa se on edelleen potentiaalienergiaa.",
+          "feedback": "Half-pipe ei ole noussut korkeammalle, joten potentiaalienergia ei ole kasvanut. Energia on muuttunut lämpöenergiaksi, jota näkyy kuvaajassa punaisena."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa $50\\,\\text{kg}$:n skeittari lähtee levosta half-pipen reunalta. Pylväs ja kuvaaja näyttävät joulina potentiaalienergian, liike-energian ja lämpöenergian.",
+      "howto": "Paina *Aloita* ja katso skeittarin liikettä ja energioita. Voit myös vetää *Hetki $t$* -liukusäädintä ja pysäyttää kuvan haluamaasi hetkeen. Valitse *Kitka* (ei kitkaa, pieni tai suuri) sekä *Alkukorkeus $h_0$* ja *Nopeus*. Pylvään sininen osa on $E_\\text{p}$, oranssi osa $E_\\text{k}$ ja punainen viivoitettu osa $E_\\text{lämpö}$. Pylvään vieressä oleva katkoviiva näyttää kokonaisenergian.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Skeittarin massa on $50\\,\\text{kg}$, ja hän lähtee levosta half-pipen reunalta. Half-pipen reunat ovat $3{,}0\\,\\text{m}$ korkealla, ja nollataso on pohja. Kitka vastustaa liikettä aina yhtä suurella voimalla, ja ilmanvastus jätetään huomiotta. Kitka muuttaa liikkeen energiaa lämpöenergiaksi sitä enemmän, mitä pidemmän matkan skeittari liukuu.",
+      "calc": "Simulaatio laskee skeittarin liikkeen pienin aika-askelin. Potentiaalienergia lasketaan korkeudesta, liike-energia nopeudesta ja lämpöenergia siitä, kuinka paljon kitka on muuttanut liikkeen energiaa matkan varrella. Näiden kaavoja ei tarvita tässä luvussa. Kolme energiaa lasketaan erikseen ja lasketaan vasta sitten yhteen, joten summan pysyminen samana on laskennan tulos eikä oletus. Näytetyt luvut pyöristetään kokonaisiksi jouleiksi."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: half-pipe ilman kitkaa",
+      "intro": "Testaa ennuste 1. Alkutila valitsee half-pipen ilman kitkaa ja alkukorkeuden $2{,}0\\,\\text{m}$ ja asettaa kellon nollaan. Siirrä *Hetki $t$* -liukusäädintä ja kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 1{,}0\\,\\text{s}$, $t = 2{,}0\\,\\text{s}$ ja $t = 3{,}0\\,\\text{s}$. Energiat ovat jouleina, ja sarake $E$ on kolmen energian summa. Katso, mitä se kertoo.",
+      "initial": {
+        "kitka": "0",
+        "h0": 2,
+        "t": 0
+      },
+      "locked": [
+        "kitka",
+        "h0"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "t",
+        "kitka": "kitka",
+        "h0": "alkukorkeus h₀"
+      },
+      "units": {
+        "t": "s",
+        "h0": "m",
+        "kitka": "(ei kitkaa)"
+      },
+      "measure": [
+        {
+          "key": "Ep",
+          "label": "E_p"
+        },
+        {
+          "key": "Ek",
+          "label": "E_k"
+        },
+        {
+          "key": "Eth",
+          "label": "$E_\\text{lämpö}$"
+        },
+        {
+          "key": "Ekok",
+          "label": "E"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä taulukko osoittaa half-pipessä ilman kitkaa?",
+        "choices": [
+          {
+            "text": "Kun $E_\\text{p}$ pienenee, $E_\\text{k}$ kasvaa saman verran, ja kokonaisenergia pysyy samana.",
+            "feedback": "Oikein. Joka rivillä summa $E_\\text{p} + E_\\text{k} + E_\\text{lämpö}$ on $981\\,\\text{J}$. Energia vain vaihtaa muotoa potentiaalienergian ja liike-energian välillä, eikä lämpöenergiaa synny.",
+            "correct": true
+          },
+          {
+            "text": "Kokonaisenergia kasvaa, koska skeittari saa vauhtia.",
+            "feedback": "Sarake $E$ on joka rivillä sama. Vauhti kasvaa, koska potentiaalienergiaa muuttuu liike-energiaksi, ei koska energiaa tulisi lisää."
+          },
+          {
+            "text": "Liike-energia on aina yhtä suuri kuin potentiaalienergia.",
+            "feedback": "Sarakkeiden $E_\\text{p}$ ja $E_\\text{k}$ arvot ovat eri riveillä erilaisia. Vain niiden summa pysyy samana."
+          },
+          {
+            "text": "Kokonaisenergia pienenee, koska liike-energiaa syntyy.",
+            "feedback": "Liike-energia ei synny tyhjästä vaan potentiaalienergiasta. Kokonaisenergia ei pienene, vaan sarake $E$ pysyy samana."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kitka mukana",
+      "intro": "Testaa ennuste 2. Alkutila valitsee pienen kitkan ja alkukorkeuden $2{,}0\\,\\text{m}$ ja asettaa kellon nollaan. Siirrä *Hetki $t$* -liukusäädintä ja kirjaa energiat vähintään kolmella hetkellä, esimerkiksi $t = 0\\,\\text{s}$, $t = 8{,}0\\,\\text{s}$ ja $t = 16{,}0\\,\\text{s}$. Energiat ovat jouleina, ja sarake $E$ on kolmen energian summa. Vertaa mekaanista energiaa $E_\\text{p} + E_\\text{k}$ ja lämpöenergiaa riveillä.",
+      "initial": {
+        "kitka": "1",
+        "h0": 2,
+        "t": 0
+      },
+      "locked": [
+        "kitka",
+        "h0"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "t",
+        "kitka": "kitka",
+        "h0": "alkukorkeus h₀"
+      },
+      "units": {
+        "t": "s",
+        "h0": "m",
+        "kitka": "(pieni kitka)"
+      },
+      "measure": [
+        {
+          "key": "Ep",
+          "label": "E_p"
+        },
+        {
+          "key": "Ek",
+          "label": "E_k"
+        },
+        {
+          "key": "Eth",
+          "label": "$E_\\text{lämpö}$"
+        },
+        {
+          "key": "Ekok",
+          "label": "E"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä taulukko osoittaa mekaanisesta energiasta $E_\\text{p} + E_\\text{k}$, lämpöenergiasta ja kokonaisenergiasta?",
+        "choices": [
+          {
+            "text": "Mekaaninen energia pienenee ja lämpöenergia kasvaa, ja kokonaisenergia pysyy samana.",
+            "feedback": "Oikein. Mekaaninen energia pienenee noin $981\\,\\text{J}$:sta noin $143\\,\\text{J}$:iin, ja lämpöenergia kasvaa nollasta noin $838\\,\\text{J}$:iin. Kokonaisenergia pysyy $981\\,\\text{J}$:na.",
+            "correct": true
+          },
+          {
+            "text": "Mekaaninen energia pysyy samana, mutta kokonaisenergia pienenee.",
+            "feedback": "Sarakkeista nähdään päinvastoin: mekaaninen energia $E_\\text{p} + E_\\text{k}$ pienenee, mutta sarake $E$ pysyy samana."
+          },
+          {
+            "text": "Sekä mekaaninen energia että kokonaisenergia pienenevät, koska kitka kuluttaa energiaa.",
+            "feedback": "Kitka muuttaa energiaa, ei kuluta sitä. Kokonaisenergia pysyy samana, kun lämpöenergia lasketaan mukaan."
+          },
+          {
+            "text": "Lämpöenergia pienenee, koska skeittari hidastuu.",
+            "feedback": "Lämpöenergia ei pienene vaan kasvaa joka kerta, kun skeittari liukuu kitkaa vastaan. Sarake $E_\\text{lämpö}$ kasvaa ajan kuluessa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "source": "simulated",
+      "title": "Esimerkkiaineisto: pomppiva pallo",
+      "text": "Kumipallo pudotetaan lattialle. Taulukossa on pallon mekaaninen energia pudotushetkellä ja kunkin pompun jälkeen (simuloitu esimerkkiaineisto, ei oikea koe). Pallo ja lattia muodostavat eristetyn systeemin, ja ääntä ei oteta huomioon.\n\n| Pomppuja | Mekaaninen energia (J) |\n|---|---|\n| 0 | 0,60 |\n| 1 | 0,48 |\n| 2 | 0,38 |\n| 3 | 0,31 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka paljon mekaanista energiaa on muuttunut lämpöenergiaksi kolmen pompun aikana? Vastaa jouleina.",
+        "answer": 0.29,
+        "unit": "J",
+        "tolerance": 0.02,
+        "hints": [
+          "Mitä mekaaniselle energialle ja lämpöenergialle tapahtuu pompun aikana? Mihin energia mekaanisesta energiasta menee?",
+          "Energia säilyy, joten mekaanisen energian pieneneminen on yhtä suuri kuin lämpöenergian kasvu: $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{lopussa}$.",
+          "Lue taulukosta alkuarvo ($0$ pomppua) ja loppuarvo ($3$ pomppua) ja vähennä: $0{,}60\\,\\text{J} - 0{,}31\\,\\text{J}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.31,
+            "feedback": "Tämä on mekaaninen energia kolmannen pompun jälkeen, ei muuttunut energia. Vähennä se alkuenergiasta $0{,}60\\,\\text{J}$."
+          },
+          {
+            "value": 0.6,
+            "feedback": "Tämä on pallon alkuenergia. Kolmen pompun jälkeen pallolla on vielä mekaanista energiaa $0{,}31\\,\\text{J}$, joten vain osa alkuenergiasta on muuttunut."
+          },
+          {
+            "value": 0.12,
+            "feedback": "Tämä on ensimmäisen pompun aikana muuttunut energia, $0{,}60\\,\\text{J} - 0{,}48\\,\\text{J}$. Kysyttiin kolmea pomppua, joten käytä loppuarvona kolmannen pompun jälkeistä arvoa."
+          }
+        ],
+        "solution": "**Annettu:** mekaaninen energia pudotushetkellä $E_\\text{alussa} = 0{,}60\\,\\text{J}$ ja kolmen pompun jälkeen $E_\\text{mek} = 0{,}31\\,\\text{J}$ (taulukosta, simuloitua esimerkkiaineistoa)\n\n**Kysytty:** lämpöenergiaksi muuttunut energia $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Pallo ja lattia muodostavat eristetyn systeemin, joten energia säilyy: $E_\\text{alussa} = E_\\text{lopussa}$. Mekaaninen energia, joka pallolta puuttuu, ei ole kadonnut vaan muuttunut lämpöenergiaksi.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{mek} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{mek}$\n\n**Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $E_\\text{lämpö} = 0{,}60\\,\\text{J} - 0{,}31\\,\\text{J} = 0{,}29\\,\\text{J}$\n\n**Vastaus:** $0{,}29\\,\\text{J}$, kaksi merkitsevää numeroa ja kaksi desimaalia kuten taulukon arvoissa.\n\n**Järkevyys:** Mekaanista energiaa on kolmen pompun jälkeen vielä $0{,}31\\,\\text{J}$, ja $0{,}31\\,\\text{J} + 0{,}29\\,\\text{J} = 0{,}60\\,\\text{J}$ on alkuenergia. Jokaisessa pompussa lämmöksi muuttuu noin viidesosa jäljellä olevasta energiasta ($0{,}12\\,\\text{J}$, $0{,}10\\,\\text{J}$, $0{,}07\\,\\text{J}$), ja nämä kolme yhteensä ovat $0{,}29\\,\\text{J}$."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "title": "Johtopäätös kokeista",
+      "prompt": "Kirjoita kokeidesi perusteella johtopäätös: Mitä tapahtui potentiaalienergialle ja liike-energialle? Mitä kitka muutti? Mitä kokonaisenergialle tapahtui? Käytä taulukkojesi lukuja.",
+      "criteria": [
+        "Sanon, että ilman kitkaa potentiaalienergia ja liike-energia muuttuvat toisikseen ja niiden summa pysyy samana.",
+        "Sanon, että kitkan kanssa mekaaninen energia pienenee ja lämpöenergia kasvaa saman verran.",
+        "Sanon, että kokonaisenergia, jossa lämpöenergia on mukana, pysyy samana, ja että energia muuttuu muotoa mutta ei katoa.",
+        "Käytän taulukkojen lukuja ja sanon, että ne ovat simulaation mallin arvoja eivätkä mittauksia."
+      ],
+      "model": "Simulaation mallin arvojen mukaan kokonaisenergia pysyi kitkattomassa half-pipessä koko ajan samana, $981\\,\\text{J}$. Hetkellä $1{,}0\\,\\text{s}$ oli $E_\\text{p} = 63\\,\\text{J}$ ja $E_\\text{k} = 918\\,\\text{J}$, hetkellä $2{,}0\\,\\text{s}$ vastaavasti $862\\,\\text{J}$ ja $119\\,\\text{J}$ ja hetkellä $3{,}0\\,\\text{s}$ $424\\,\\text{J}$ ja $557\\,\\text{J}$. Kun potentiaalienergia pieneni, liike-energia kasvoi saman verran. Pienen kitkan kanssa mekaaninen energia $E_\\text{p} + E_\\text{k}$ pieneni: se oli $981\\,\\text{J}$ hetkellä $0\\,\\text{s}$, $469\\,\\text{J}$ hetkellä $8{,}0\\,\\text{s}$ ja $143\\,\\text{J}$ hetkellä $16{,}0\\,\\text{s}$. Lämpöenergia kasvoi samalla nollasta $512\\,\\text{J}$:iin ja $838\\,\\text{J}$:iin, joten kokonaisenergia pysyi $981\\,\\text{J}$:na. Energia ei siis kadonnut vaan muuttui kitkassa lämpöenergiaksi. Luvut ovat mallin arvoja, eivät mittauksia."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "optional": true,
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi taulukoihin ja kuvaajaan. Mitä sait selville energian säilymisestä? Palaa myös alun pomppivaan palloon: minne sen energia meni?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija sanoo: ”Kun auto jarruttaa ja pysähtyy, sen liike-energia häviää, koska auto ei enää liiku.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Liike-energia ei häviä vaan muuttuu jarruissa ja renkaissa lämpöenergiaksi, ja energia säilyy.",
+          "feedback": "Oikein. Pysähtyneellä autolla ei ole liike-energiaa, mutta jarrut ja renkaat ovat lämmenneet. Lämpöenergia on yhtä suuri kuin auton alkuperäinen liike-energia.",
+          "correct": true
+        },
+        {
+          "text": "Liike-energia muuttuu potentiaalienergiaksi, koska auto pysähtyy.",
+          "feedback": "Auto ei ole noussut korkeammalle, joten potentiaalienergia ei ole kasvanut. Energia on muuttunut lämpöenergiaksi."
+        },
+        {
+          "text": "Virhettä ei ole, koska levossa olevalla kappaleella ei ole energiaa.",
+          "feedback": "Levossa olevalla kappaleella ei ole liike-energiaa, mutta sillä on muita energialajeja, ja kokonaisenergia säilyy. Jarrutuksessa energia siirtyy lämpöenergiaksi."
+        },
+        {
+          "text": "Liike-energia muuttuu jarrutuksessa kemialliseksi energiaksi.",
+          "feedback": "Jarrutuksessa ei tapahdu kemiallisia reaktioita. Jarrujen kitka muuttaa liike-energian lämpöenergiaksi."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pyöräilijä nousee mäkeä ylös tasaisella nopeudella. Hänen lihaksissaan vapautuu kemiallista energiaa $0{,}40\\,\\text{MJ}$. Hänen ja pyörän potentiaalienergia kasvaa $80\\,\\text{kJ}$, ja liike-energia ei muutu. Loppu energia muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy? Vastaa kilojouleina.",
+      "answer": 320,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin energialajeihin lihasten kemiallinen energia muuttuu? Nimeä ne kaikki.",
+        "Kirjoita energian säilymislaki sanoin: kemiallinen energia on potentiaalienergian kasvu plus lämpöenergia. Ratkaise siitä lämpöenergia.",
+        "Muunna ensin megajoulet kilojouleiksi: $0{,}40\\,\\text{MJ} = 0{,}40 \\cdot 1000\\,\\text{kJ}$. Vähennä sitten potentiaalienergian kasvu."
+      ],
+      "mistakes": [
+        {
+          "value": 480,
+          "feedback": "Laskit energiat yhteen. Kemiallinen energia jakautuu kahteen osaan, joten lämpöenergia on kemiallinen energia miinus potentiaalienergian kasvu."
+        },
+        {
+          "value": 0.32,
+          "feedback": "Tämä on oikea määrä megajouleina. Kysyttiin kilojouleina, joten kerro tuhannella: $0{,}32\\,\\text{MJ} = 320\\,\\text{kJ}$."
+        },
+        {
+          "value": -79.6,
+          "feedback": "Vähensit luvun $80$ luvusta $0{,}40$ ilman, että muunsit yksiköt samoiksi. Sijoita ensin $0{,}40\\,\\text{MJ} = 400\\,\\text{kJ}$."
+        }
+      ],
+      "solution": "**Annettu:** kemiallinen energia $E_\\text{kem} = 0{,}40\\,\\text{MJ}$, potentiaalienergian kasvu $E_\\text{p} = 80\\,\\text{kJ}$, liike-energian muutos $0\\,\\text{kJ}$\n\n**Kysytty:** syntyvä lämpöenergia $E_\\text{lämpö}$ yksikössä $\\text{kJ}$\n\n**Periaate:** Pyöräilijä, pyörä ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy: $E_\\text{alussa} = E_\\text{lopussa}$. Vauhti ei muutu, joten liike-energia ei muutu. Kemiallinen energia muuttuu potentiaalienergiaksi ja lämpöenergiaksi.\n\n**Kaava:** $E_\\text{kem} = E_\\text{p} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{kem} - E_\\text{p}$\n\n**Muunnokset:** Mega on tuhat kertaa kilo, joten $1\\,\\text{MJ} = 1000\\,\\text{kJ}$. Sijoitetaan $0{,}40\\,\\text{MJ} = 0{,}40 \\cdot 1000\\,\\text{kJ} = 400\\,\\text{kJ}$.\n\n**Sijoitus:** $E_\\text{lämpö} = 400\\,\\text{kJ} - 80\\,\\text{kJ} = 320\\,\\text{kJ}$\n\n**Vastaus:** $320\\,\\text{kJ}$ eli $3{,}2 \\cdot 10^{2}\\,\\text{kJ}$, kaksi merkitsevää numeroa kuten kemiallisessa energiassa $0{,}40\\,\\text{MJ}$.\n\n**Järkevyys:** Potentiaalienergiaksi päätyy $80\\,\\text{kJ}$ ja lämpöenergiaksi $320\\,\\text{kJ}$, ja ne ovat yhteensä $400\\,\\text{kJ}$ eli yhtä paljon kuin lihasten kemiallinen energia. Lämpöä syntyy moninkertaisesti enemmän kuin hyötyä, ja ihmisen lihakset ovat tunnetusti tehottomia: pyöräilijä hikoilee."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä käytetään yhtä energiatasetta, ja taso 3 vaatii päättelyä. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 ovat vapaaehtoisia ja syventäviä, joten tee ne, jos taso 1 sujuu. Kirjoita aina ensin energian säilymislaki sanoin tai symbolein."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Ydinvoimalassa reaktorin ydinreaktiot lämmittävät vettä, kuuma höyry pyörittää turbiinia ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Missä järjestyksessä energia on eri lajeina?",
+      "choices": [
+        {
+          "text": "Ydinenergia, lämpöenergia, liike-energia, sähköenergia.",
+          "feedback": "Oikein. Ydinreaktiot vapauttavat ydinenergiaa lämpönä, höyry kuljettaa energian liike-energiana turbiinille, ja generaattori muuttaa liike-energian sähköenergiaksi. Jokaisessa vaiheessa osa jää lämpöenergiaksi ympäristöön.",
+          "correct": true
+        },
+        {
+          "text": "Kemiallinen energia, liike-energia, lämpöenergia, sähköenergia.",
+          "feedback": "Ydinvoimala ei polta polttoainetta, joten alkuun ei kuulu kemiallinen energia. Energia on atomiytimiin sitoutunutta ydinenergiaa."
+        },
+        {
+          "text": "Säteilyenergia, lämpöenergia, sähköenergia, liike-energia.",
+          "feedback": "Ydinvoimala ei saa energiaansa säteilystä. Lisäksi sähköenergia syntyy vasta lopussa, kun generaattori muuttaa pyörimisen sähköksi."
+        },
+        {
+          "text": "Sähköenergia, liike-energia, lämpöenergia, ydinenergia.",
+          "feedback": "Tämä on päinvastainen järjestys. Voimala tuottaa sähköä, ei ota sitä käyttöönsä alussa, ja ydinenergia on lähtökohta."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Hehkulamppu ottaa sähköenergiaa $2{,}5\\,\\text{kJ}$ ja muuttaa siitä säteilyenergiaksi $0{,}12\\,\\text{kJ}$. Loppu muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy? Vastaa jouleina.",
+      "answer": 2380,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin lampun sähköenergia muuttuu? Mikä tieto sinulla on valosta?",
+        "Energian säilymislaki: $E_\\text{sähkö} = E_\\text{säteily} + E_\\text{lämpö}$. Ratkaise siitä $E_\\text{lämpö}$. Katso lopuksi, missä yksikössä vastaus kysytään.",
+        "Muunna ensin jouleiksi: $2{,}5\\,\\text{kJ} = 2{,}5 \\cdot 1000\\,\\text{J}$ ja $0{,}12\\,\\text{kJ} = 0{,}12 \\cdot 1000\\,\\text{J}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.38,
+          "feedback": "Tämä on oikea määrä kilojouleina. Kysyttiin jouleina, joten kerro tuhannella."
+        },
+        {
+          "value": 120,
+          "feedback": "Tämä on valoksi muuttunut energia jouleina. Kysyttiin lämpöenergiaa, joten vähennä se sähköenergiasta."
+        },
+        {
+          "value": 2620,
+          "feedback": "Laskit sähköenergian ja valon yhteen. Sähköenergia jakautuu kahteen osaan, joten vähennä valo sähköenergiasta."
+        }
+      ],
+      "solution": "**Annettu:** sähköenergia $E_\\text{sähkö} = 2{,}5\\,\\text{kJ}$, säteilyenergia $E_\\text{säteily} = 0{,}12\\,\\text{kJ}$\n\n**Kysytty:** syntyvä lämpöenergia $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Lamppu muuttaa sähköenergian säteilyksi ja lämmöksi. Energiaa ei synny eikä katoa, joten $E_\\text{alussa} = E_\\text{lopussa}$.\n\n**Kaava:** $E_\\text{sähkö} = E_\\text{säteily} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{sähkö} - E_\\text{säteily}$\n\n**Muunnokset:** Etuliite kilo tarkoittaa tuhatta, joten $2{,}5\\,\\text{kJ} = 2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ ja $0{,}12\\,\\text{kJ} = 0{,}12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Sijoitus:** $E_\\text{lämpö} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Vastaus:** $2{,}4 \\cdot 10^{3}\\,\\text{J}$, kaksi merkitsevää numeroa, koska sähköenergia $2{,}5\\,\\text{kJ}$ on annettu sadan joulen tarkkuudella ja rajoittaa erotusta.\n\n**Järkevyys:** Valoksi muuttuu vain $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0{,}05$ eli noin viisi prosenttia, mikä on hehkulampulle tavallista, ja loput on lämpöä. Takaisinlasku: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä omin sanoin, miksi pomppiva pallo pysähtyy lopulta, vaikka energia ei katoa. Kerro, mitä energialajeja tapahtumassa on ja mitä energian säilymislaki sanoo.",
+      "criteria": [
+        "Sanon, että pallon alussa oleva potentiaalienergia muuttuu liike-energiaksi ja pompuissa osa muuttuu lämpöenergiaksi.",
+        "Sanon, että pysähtyneen pallon mekaaninen energia on muuttunut lämpöenergiaksi, joka on levinnyt palloon, lattiaan ja ilmaan.",
+        "Sanon, että eristetyssä systeemissä $E_\\text{alussa} = E_\\text{lopussa}$, eli kokonaisenergia pysyy samana.",
+        "Sanon, että kun energiaa sanotaan kuluvan, se tarkoittaa muuttumista muotoon, jota on vaikea hyödyntää."
+      ],
+      "model": "Kun pallo on pudotettu, sillä on korkealla potentiaalienergiaa. Putoamisen aikana potentiaalienergia muuttuu liike-energiaksi, ja törmäyksessä lattiaan osa liike-energiasta muuttuu lämpöenergiaksi, jolloin pallo ja lattia lämpenevät hieman. Siksi seuraava pomppu on aina matalampi. Lopulta pallon mekaaninen energia on kokonaan muuttunut lämpöenergiaksi, jolloin pallo on levossa. Energia ei kuitenkaan ole kadonnut: pallon, lattian ja ilman muodostamassa eristetyssä systeemissä $E_\\text{alussa} = E_\\text{lopussa}$, joten kokonaisenergia on sama kuin alussa. Energian kuluminen tarkoittaa tässä sitä, että hyödyllinen mekaaninen energia on muuttunut ympäristöön levinneeksi lämpöenergiaksi."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

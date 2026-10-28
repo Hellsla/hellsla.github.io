@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-8-L1-01",
+      "level": 1,
+      "text": "Esimerkkitalous käyttää sähköä 3000 kWh vuodessa. Sähkö tuotetaan vesivoimalla, jonka elinkaaren päästökerroin on 24 g/kWh. Kuinka paljon hiilidioksidiekvivalenttia talouden sähkönkäytöstä syntyy vuodessa? Anna vastaus kilogrammoina.",
+      "answer": 72,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L1-02",
+      "level": 1,
+      "text": "Sähkökiuas kuluttaa yhdellä saunomiskerralla sähköä 3,0 kWh. Sähkö tuotetaan kivihiilellä, jonka elinkaaren päästökerroin on 820 g/kWh. Kuinka paljon hiilidioksidiekvivalenttia yhdestä saunomiskerrasta syntyy? Anna vastaus kilogrammoina.",
+      "answer": 2.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L1-03",
+      "level": 1,
+      "text": "Sähköauto kuluttaa 100 km:n matkalla sähköä 18 kWh. Auton lataamiseen käytetty sähkö on tuotettu tuulivoimalla, jonka elinkaaren päästökerroin on 12 g/kWh. Kuinka paljon hiilidioksidiekvivalenttia 100 km:n matkaa kohti syntyy? Anna vastaus grammoina.",
+      "answer": 220,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L1-04",
+      "level": 1,
+      "text": "Omakotitalon katolla olevat aurinkopaneelit tuottavat vuodessa sähköä 4200 kWh. Kattopaneelien elinkaaren päästökerroin on 41 g/kWh. Kuinka paljon hiilidioksidiekvivalenttia paneelien tuottamasta sähköstä syntyy vuodessa? Anna vastaus kilogrammoina.",
+      "answer": 170,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L1-05",
+      "level": 1,
+      "text": "Pyykkikone ja kuivausrumpu kuluttavat yhdessä yhden pyykkikerran aikana sähköä 2,4 kWh. Sähkö tuotetaan maakaasulla, jonka elinkaaren päästökerroin on 490 g/kWh. Kuinka paljon hiilidioksidiekvivalenttia yhdestä pyykkikerrasta syntyy? Anna vastaus kilogrammoina.",
+      "answer": 1.2,
+      "unit": "kg",
+      "tolerance": 0.03
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-8-L2-01",
+      "level": 2,
+      "text": "Biomassaa käyttävä voimala tuottaa kuukaudessa sähköä 2,0 GWh. Biomassasähkön elinkaaren päästökerroin on 230 g/kWh. Kuinka monta tonnia hiilidioksidiekvivalenttia kuukauden sähköntuotannosta syntyy? Anna vastaus tonneina.",
+      "answer": 460,
+      "unit": "t",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L2-02",
+      "level": 2,
+      "text": "Esimerkkitalous käyttää sähköä 3600 kWh vuodessa. Sähkö tuotettiin ensin kivihiilellä (820 g/kWh), mutta talous siirtyy ostamaan tuulisähköä (12 g/kWh). Kuinka monta tonnia hiilidioksidiekvivalenttia vuosittaiset päästöt pienenevät? Anna vastaus tonneina.",
+      "answer": 2.9,
+      "unit": "t",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L2-03",
+      "level": 2,
+      "text": "Pienen tehtaan sähköntuotannosta syntyi vuoden aikana hiilidioksidiekvivalenttia 12 t. Sähkö tuotettiin maakaasulla, jonka päästökerroin on 490 g/kWh. Kuinka paljon sähköä tehdas tuotti? Anna vastaus kilowattitunteina.",
+      "answer": 24000,
+      "unit": "kWh",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy2-8-L2-04",
+      "level": 2,
+      "text": "Bensiinin palamisen päästökerroin on 69 g/MJ. Ilmoita päästökerroin yksikössä g/kWh, kun $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$. Lasketaan vain polttaminen, ei koko elinkaarta.",
+      "answer": 250,
+      "unit": "g/kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-8-L3-01",
+      "level": 3,
+      "text": "Bensiiniauto kuluttaa 6,0 litraa 100 km:llä. Bensiinin energiasisältö on 32 MJ/l ja palamisen päästökerroin 69 g/MJ. Sähköauto kuluttaa 100 km:llä sähköä 18 kWh. Millä sähkön päästökertoimella sähköauton 100 km:n matkan päästö olisi yhtä suuri kuin bensiiniauton? Anna vastaus yksikössä g/kWh. (Vertailu on karkea: bensiiniautolle lasketaan vain polttaminen, sähköautolle sähkön elinkaaren päästöt.)",
+      "answer": 740,
+      "unit": "g/kWh",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy2-8-L3-02",
+      "level": 3,
+      "text": "Kaupunki tuottaa vuodessa sähköä 100 GWh: 60 GWh tuulivoimalla (12 g/kWh) ja 40 GWh maakaasulla (490 g/kWh). Kuinka monta tonnia hiilidioksidiekvivalenttia kaupungin sähköntuotannosta syntyy vuodessa? Anna vastaus tonneina.",
+      "answer": 20000,
+      "unit": "t",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L3-03",
+      "level": 3,
+      "text": "Esimerkkitilanne: kaupunkibussi kuluttaa 30 litraa dieseliä 100 km:llä, ja siinä on 25 matkustajaa. Dieselin energiasisältö on 36 MJ/l ja palamisen päästökerroin 74 g/MJ. Yksin ajava bensiiniauto kuluttaa 6,0 litraa 100 km:llä (32 MJ/l ja 69 g/MJ). Kuinka moninkertainen on auton polttamisesta syntyvä päästö matkustajaa kohti bussin päästöön verrattuna?",
+      "answer": 4.1,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ]
+}
