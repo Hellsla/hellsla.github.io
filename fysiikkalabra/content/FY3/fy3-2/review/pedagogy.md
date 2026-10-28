@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: d31013346dd6f94d
+CONTENT-HASH: a0884c77f1e7ec8a
 
 ## Blocking
-(none) Round-1 blockers are fixed: pred-3 now points to Teoriatiivistelmä (the stage that exists), the activity texts and the experiments' Alkutila lines and table headers carry symbols as maths, and the "W = pinta-ala" label no longer sits on the canvas top in the plain sim capture.
+(none)
 
 ## Polish
-- Simulation canvas and DOM readout (W = F · s, "Voima F = 60 N", axis labels) stay plain interface text; per NOTES.md §1 this awaits the teacher's decision, not a defect of the lesson.
-- fy3-2-exp-exp-1-390.png — in the experiment's embedded sim at 390 px the "W = pinta-ala" label still overlaps the "F (N)" axis label (clear only in fy3-2-sim-390.png) — shorten the label or move it right of the axis title.
-- Experiments' Alkutila line: "Vakiona: F, t ." leaves a stray space before the full stop at 390 px (a maths-span/line-wrap artefact) — keep the full stop inside the sentence's nowrap run.
-- Both experiments only compute W = Fs and P = W/t, so they check the program's arithmetic more than the physics; the Joule table (interpret) is what carries real measurement. Acceptable for this slot; a later round could add noisy data to the table.
-- Exit ticket question 1 asks "kuinka suuren työn kannatteleva voimasi tekee yhteensä" and answers about 98 J although only the lifting phase counts; consider "kuinka suuren työn nostovoima ja kannatteleva voima tekevät yhteensä" so the wording matches the answer.
+1. sim.js canvas (fy3-2-sim-390.png) — at 366 px the KaTeX tick labels ("0 m, 5 m, 10 m, 15 m, 20 m", "10,0", "0 J", "600 J", "F (N)") render at roughly 8-9 px, noticeably smaller than the readout under the canvas; legible but strained, and the 5 m–20 m ticks sit close together. Raise the canvas label size on narrow widths, or drop the 5 m and 15 m ticks on a phone. No overlaps at 390 or 1280 px.
+2. sim readout — "Tehty työ tähän mennessä: 0 J, aikaa kulunut 0,0 s" and the labels "Nopeus" and "Vedä" are plain text while the rest is KaTeX; the numbers inside are KaTeX but the sentence is not. Fine for readability, but it is not the "kaikki latexilla" the teacher asked for; the mix of KaTeX serif numbers and sans words in one line looks slightly uneven.
+3. inquiry.json pred-2, third option — feedback says "mittausten mukaan", while the rest of the lesson calls the sim's numbers "mallin arvot" (the lesson rule: model values vs. measurements). Change to "mallin arvojen mukaan".
+4. exp-1 / exp-2 — the sim computes W = Fs and P = W/t directly, so the experiments confirm the formula's arithmetic rather than letting a result emerge. They can still refute a wrong prediction, so acceptable; the Joule table carries the real empirical content. Also exp-1 intro at 390 px wraps with a stray line start (". Muutetaan: s.") after "Vakiona: F, t".
+5. Finnish/exercises — fy3-2-L3-01 "voiman matkan suhteen keskimääräinen suuruus" is clumsy: "voiman keskiarvo matkan suhteen (matkan yli keskiarvoistettuna)". L3-02 answer shown as 590 J while the solution gives 588,6 J (three s.f. would be 589 J); tolerance covers it.
 
 ## Checked
-- Path Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella → Tarkista → Tehtävät; hook question answered by pred-3, reflect and the figure.
-- Predictions refutable by exp-1 and exp-2 (min 2); pred-3 honestly marked as not testable in the sim.
-- Wrong-option feedback repairs the misconception without disclosing the answer beforehand.
-- Worked example staged one step per stage, with a plausibility check; error-spotting item targets the 8,0 J slip.
-- Exercises levels 1-3 differ from the example; exit ticket tests the core idea.
-- Joule table labelled as example values, simulation values as model values; model simplifications stated.
-- Speed control: howto states it changes only the animation pace, W and P unchanged.
-- Phone captures at 390 px: no clipping, controls readable; 1280 px lab layout puts experiments beside the sim.
-- Finnish and case after number+unit correct in the text I read.
+- Learning path: hook, retrieval of G = mg, three predictions, sim, Joule table, theory, example, error spotting, transfer; the opening question is answered in Ydinajatus and revisited in reflect. Slot goals (W = Fs, Joule, graphical integration) covered; no FY4 content (no E_k, E_p, cos α).
+- Predictions 1 and 2 are refutable by exp-1 and exp-2 (revealed after min 2); pred-3 is argued from the figure, and the prompt says openly that the sim does not test it. Wrong-option feedback repairs the misconception without disclosing the answer early.
+- Sim at 390 and 1280 px: picture, controls, readout understandable; locked sliders show "(vakio)"; Käyttöohje and Mallin oletukset closed; no Laskennan selitys box, which is fine since there is no computation beyond W = Fs.
+- 1280 px lab: sim beside the experiments, readable, no clipping.
+- Figures (fig-3, example graph): clean, colour plus labels and hatching, legible on a phone.
+- Worked example: five stages, symbolic first, units on substitution, sanity check by average force.
+- Exercise levels 5/4/3 per rubric; none repeats the spring example; exit ticket tests carrying (W = 0), area and work, work vs. power.
+- Workload is on the heavy side (3 predictions, 2 experiments, 12 exercises, 3 checks) but fits one lesson.
+- Finnish and glossary terms (työ, teho, joule, energia) correct; case forms after number+unit correct.

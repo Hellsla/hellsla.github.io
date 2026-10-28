@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 706bdc1c984c1ed5
+CONTENT-HASH: 105250496aeacbbe
 
 ## Blocking
-(none) Round-1 blocking finding is fixed: pred-3 feedback now sends the student to Teoriatiivistelmä, where the column weight is derived and A cancels; no answer is disclosed before commitment.
+(none)
 
 ## Polish
-- inquiry.json pred-3 — the only prediction with no experiment or reveal; the simulation cannot test narrow tube vs wide basin, so it is settled by derivation only. Consider a one-line note in the reflect prompt, or a "kaksi astiaa" mode later.
-- simulation canvas and DOM readout ("Syvyys h = 5,0 m", "ρgh", "p = p₀ + ρgh") are plain interface text, not maths; per NOTES.md §1 this stays until the teacher decides. Visible mismatch with the maths-typeset Alkutila line and table headers next to it.
-- simulation panel shows two separate boxes, "Mallin oletukset ja selitys" and "Mallin oletukset", with overlapping content; merge or rename so the student does not open both.
-- pred-2 prompt at 390 px breaks the line after "(" before the inline maths ("vesi ( / 1000 kg/m³ )"); rephrase so the unit is not at a line start, e.g. "tavallinen vesi, tiheys $1000\,\text{kg/m}^3$,".
-- exp-2 has no numeric question (exp-1 has); one such as "Kuinka monta prosenttia kokonaispaine kasvoi, kun tiheys kasvoi 24 %?" would make the refutation of "kokonaispaine kasvaa 24 %" explicit.
+- sim canvas labels at 390 px (sim-390, exp-exp-1-390) — axis ticks, "ilma, p₀ = 101 kPa", "p₀ = 101 kPa" and the h label render at roughly 7–8 px, and in the experiment view (canvas about 290 px wide) smaller still; legible but at the limit for a phone. The "0 m" tick sits against the tank wall and "15 m"/"20 m" touch it. Fix: keep KaTeX label size at least about 10 px rendered (scale the font up when the canvas is narrow) and add left margin for the depth ticks.
+- sim readout at 390 px — "Kokonaispaine p = p₀ + ρgh = 101 kPa +" breaks after the plus and continues on the next line (exp-1 capture breaks after "=" ). Readable, but build the line as separate spans or put the sum on its own line so the equation is not split mid-expression.
+- Mixed type: the canvas and readout are serif KaTeX while the sliders' captions, "Näytä vain ylipaine" and the box titles are sans. Acceptable, but "Syvyys h = 10,0 m" slider label repeats the readout's first line; drop one.
+- inquiry.json pred-3 — still the only prediction with no experiment or reveal; the sim cannot test tube vs basin. A one-line reflect note would close it.
+- exp-2 has no numeric question (exp-1 has); "Kuinka monta prosenttia kokonaispaine kasvoi, kun tiheys kasvoi 24 %?" would make refuting the "24 %" option explicit.
 
 ## Checked
 - Hash unchanged at start and end; no lesson file edited.
-- Opening question (muurin paksuus) is answered after the derivation, via ylipaine; the slot's goals (p = F/A, p = p₀ + ρgh as a line with constant term, scalar force) are covered, no more.
-- pred-1 and pred-2 can be refuted by exp-1/exp-2 (min 2); wrong-option feedback repairs the misconception (constant p₀ term, buoyancy confusion).
-- Experiments: locked and varied parameters, Alkutila line and table headers render symbols as maths; density slider visibly locked in exp-1 capture.
-- 1280 px: simulation beside the experiments, readable; 390 px: ennusta, exp-1 not clipped.
-- Worked example is staged one step per stage, differs from the exercises, ends with a sanity check.
-- Exercises: three levels, L3 combines two ideas (snowshoe, tank cover, layered liquids); solutions in LaTeX with Järkevyys.
-- Exit ticket tests the core idea (area, hydrostatic and total pressure, tube vs basin).
-- Finnish reads correctly; "Teoriatiivistelmä" naming consistent.
+- Round-1 items fixed: howto/model/calc now in three closed boxes with no duplicated "Mallin oletukset"; Alkutila line and table headers typeset as maths.
+- LaTeX canvas at 1280 px (sim-1280, lab-1280): no overlaps; tank, gauge, arrows, graph labels, "199 kPa" marker and p₀ dashed line all clear and legible.
+- 390 px sim: tank and graph labels do not collide with the curve or each other; readout lines wrap without clipping; sliders and checkbox usable; locked density slider shown greyed with "(vakio)" in exp-1.
+- Readout values consistent with the model (98,1 + 101 = 199,1 kPa; ratio 1,97).
+- Opening question answered after the derivation; slot goals covered, no more.
+- pred-1/pred-2 can be refuted by exp-1/exp-2 (min 2); wrong-option feedback repairs the misconception.
+- Worked example staged one step per stage; exercises at three levels; exit ticket tests the core idea.
+- Finnish reads correctly.

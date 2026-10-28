@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 706bdc1c984c1ed5
+CONTENT-HASH: 105250496aeacbbe
 
 ## Blocking
 
 ## Polish
-- solutions.md:13–14 — the substitution ends "≈ 932 kPa" and the answer is "930 kPa" with no word on why (95 m has two significant figures) — add "(kaksi merkitsevää numeroa)" or end the substitution at 931 950 Pa.
-- solutions.md:7 — "kenkien pohjat noin kuudesosa suksien alasta": two shoe soles (≈ 2 × 0,03 m²) are nearer a fifth of 0,30 m² — say "viidesosa–kuudesosa" or "noin viidesosa".
+- sim.js:1075 — `meas` takes the label width from `p.textWidth` of the TeX source (`$\text{ilma, } p_0 = …$`), much wider than the KaTeX output; layout only, physics unaffected — measure the rendered KaTeX box via the overlay, or a stripped string; drop the now unused `fi`.
+- solutions.md:777 — writes "≈ 932 kPa" and then answers 930 kPa — round once, to the two significant figures of 95 m.
+- sim.js:1007 — at h = 20 m the gauge circle is drawn centred on the floor line (half below the pool) — clamp gy to TANK.bottom − 10.
 
 ## Checked
-- Round-2 conversion (git diff since the figure pass): exit-ticket a1/q2/a2, inquiry pred-3 feedbacks ("Selitä-vaihe" → "Teoriatiivistelmä"), sim howto and check-2 prompt "(h, p)" → "$(h, p)$": every number, unit, formula and meaning unchanged (ρ = 1000 kg/m³, 9,81 m/s², 5,0 m, ≈ 49 kPa, 101 + 49 ≈ 150 kPa, p = F/A). The renamed reference points to the theory activity, which holds the ρAhg/A derivation, so it still says the true thing.
-- answers.py and an independent recomputation agree for all 12 exercises (2400 Pa, 931,95→930 kPa, 275,08 kPa, 300 kPa, 4414,5 Pa, 4,0 MPa, 35,68 m, 919,98 kg/m³, 3,23 kN, 0,139 m², 9,81 kN, 19,03 kPa); solutions symbolic first, LaTeX values match.
-- Formulas p = F/A and p = p₀ + ρgh with conditions (liquid at rest, uniform density, force normal to the surface); derivation via G = mg, m = ρV inside FY3 scope.
-- Worked example: ρgh = 117,72 kPa, p ≈ 219 kPa, F ≈ 1,77 kN ≈ 1,8 kN (≈ 180 kg weight).
-- Prose: 10 m ≈ 98 kPa ≈ one atmosphere; dam 30 m → 294 kPa ≈ "noin 290 kPa".
-- Figures: pressure-depth to scale (0,895 px/kPa: 101 kPa at y 194,5, 199 kPa at y 106,5; 10 m at x 450); bricks 40 vs 120 px = 3A₁; water column G = ρAhg, p = G/A = ρgh; LaTeX labels render correctly.
-- inquiry pred-1 (150 → 199 kPa), pred-2 (ρgh 98 → 122 kPa, +24 %; total 199 → 223 kPa, +12 %), pred-3: correct options and feedback numbers right.
-- exp-1 locks ρ, varies h; exp-2 locks h, varies ρ; simState has pOver, pTotal; numeric 9,81 kPa/m, mistakes 9810 and 19,9 right.
-- virhe 29 kPa; siirto 0,757 m (mistakes 10,3 m, 0,000757 m); check-2 892 kg/m³ (mistakes 2180, 0,892); check-3 model 29 kPa, ≈ 1,8 N.
-- sim.js implements p = p₀ + ρgh (p₀ = 101 kPa, g = 9,81), equal arrows in all directions; model limits stated in the inquiry.
+- Formulas p = F/A, p = p₀ + ρgh correct, conditions stated (lesson, sim `model`), derivation symbolic, inside FY3 scope and the slot's line-with-intercept skill.
+- answers.py and all 12 exercises recomputed independently: every answer within 0.2 % (L1-02 931.95→930, L3-03 19.03→19); units and significant figures fit the data.
+- solutions.md and the staged worked example: symbolic first, then units; 117,72 kPa, 219 kPa, F = ρghA ≈ 1,8 kN (≈180 kg), 2,2 × p₀ — correct; ρgh alone on the window justified.
+- Figures: brick contact areas 40 vs 120 px (A₂ = 3A₁) to scale; pressure-depth graph line 101 → 199 kPa matches axes within 1 px.
+- inquiry.json numbers recomputed: pred-1 150→199 kPa (×1,33), pred-2 98→122 kPa and 199→223 kPa (+24 %, +12 %), exp-1 9,81 kPa/m with mistakes 9810 and 19,9, virhe 29 kPa, siirto 0,757 m (mistakes 10,3 and 0,000757), check-2 892 kg/m³ (mistakes 2180, 0,892), check-3 29 kPa and ≈1,8 N and the prior item; every correct option right.
+- Experiments: exp-1 locks ρ and varies h, exp-2 locks h and varies ρ; 720/1000/1240 reachable with step 5; simState exposes pOver and pTotal.
+- sim.js physics unchanged by the LaTeX pass (only label strings and text measuring changed): pOver = ρgh/1000, pTotal = 101 + pOver, slope ρg, chart base 0 or p₀; arrows equal in all four directions.
+- tests/sims/fy3-4.json: all 22 numeric simState assertions untouched; the 4 changed ones read the same values (117,7, 218,7, 2,17, 356,1, 3,53, 0–400 kPa, h = 12,0 m, ρ = 1025 kg/m³, liquid names) from the TeX via simText — no physics check lost.
+- Shots at 390/1280 px consistent (98,1 / 199,1 kPa, 1,97 × p₀, 0–300 kPa); the former sim note now in `calc`/`model` is correct.

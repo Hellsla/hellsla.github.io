@@ -1,19 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 35c7e28697874a1d
+CONTENT-HASH: fe26daef07ff0e1c
 
 ## Blocking
 
 ## Polish
-- lesson.md:6 — the derivation says the piston moves "matkan $s$", but figure 1 and its formula use $\Delta s$ — write $\Delta s$ in the prose too (carried from round 1).
-- lesson.md:54 (heat-engine figure) — the arrows are labelled $Q_1$, $W$, $Q_2$ (energies per cycle), but the legend says "nuolen leveys kuvaa tehoa" — say "energiaa (tai tehoa)", or relabel (carried).
-- lesson.md:39 — "lämpötilaero kuuman lähteen lämpötilaan nähden" holds only for absolute temperatures — add "(kelvineinä)" (carried).
-- solutions.md:22 — Vastaus $37\,\%$, while the key and the Sijoitus line give 37,2 % — give 37,2 % (carried).
-- solutions.md:10, 90 (and L2-03) — the litre is `\textsf{l}`, but inquiry and lesson use `\text{l}` — use one style (carried).
+- sim.js:296 — the label box width comes from `p.textWidth` of the TeX source (for example `$\textcolor{#93…}{Q_1}$`), not the typeset width, so the overlap assertions on `simState.labels` no longer measure what the student sees. This does not affect the physics. Measure the KaTeX box in the overlay, or have the overlap test read rendered boxes.
+- lesson.md:6 — the prose has "matkan $s$", but figure 1 uses $\Delta s$. Write $\Delta s$ (carried).
+- lesson.md:54 — the heat-engine arrows are energies per cycle ($Q_1$, $W$, $Q_2$), but the legend says "kuvaa tehoa". Say "energiaa (tai tehoa)" (carried).
+- lesson.md:39 — "lämpötilaero … kuuman lähteen lämpötilaan nähden" holds only for absolute temperatures. Add "(kelvineinä)" (carried).
+- solutions.md:22 — Vastaus is 37 %, but the key and the Sijoitus give 37,2 %. Give 37,2 % (carried; `\textsf{l}` vs `\text{l}` also still mixed).
 
 ## Checked
-- The diff since the passed version (d1ddfcf, commit 0bbacb9) touches only exercises.json L2-01 and nine strings in inquiry.json. Every change wraps $(V, p)$, $(s, F)$, $V$-akseli or $1\,\text{TJ} = 10^{12}\,\text{J}$ in maths. No number, formula, option, `correct` flag or meaning changed.
-- Experiment names and headers as rendered by `tex_name`: lämpö $Q$, paine $p_2$, männän paluu (plain), $\Delta V$ (l), $\Delta U$ (J), $Q_1$ (J), $Q_2$ (J), $W$ (J), $\eta$ (%). Every symbol and unit is the same as before, and no Finnish word was turned into maths. The exp-2 capture shows them as typeset.
-- I recomputed all 12 exercise answers independently. They match answers.py and exercises.json: 12,0 kJ; 172 J; 37,2 %; 170 kJ; 21,7 %; 41,0 %; 9,0 %; 500 J; 720 kW; 120 MW; 9,6 MWh; 12,0 kW.
-- Inquiry numbers are unchanged and recomputed: exp-1 at Q = 1000 J gives ΔV = 2,00 l, W_k = 400 J and ΔU = 600 J. In pred-1, Q = 750 J gives 1,0 → 2,5 l and 300 J. Exp-2 path B gives W = 100 J and η ≈ 15 %. Check-2 gives 450 J. The exit ticket gives 100 J, 18 kW and 42 kW.
-- The exp-2 setup still isolates `paluu`: Qin and p2 are locked.
-- lesson.md, solutions.md, answers.py, sim.js, figures and exit-ticket.json have not changed since the round-1 full review. The judgements in that review still stand: the formulas and their conditions, the sign convention tied to fy3-5, the to-scale figures, the sim's model and its stated limits, and the scope.
+- Diff since the passed version (46aa00b): sim.js changes only the label and readout strings (plain text to `$…$`, `fi` to `tx`, `labSub` to one `lab`). `phaseAt`, `advance`, `geometry`, `areas`, the bars and `simState` are unchanged. `Math.round(eta)` gives the same value as `fi(eta,0)`.
+- Test changes: both readout assertions (Q = 750 J gives ΔV = 1,50 l and ΔU = 450 J; cycle B gives Q₁ 650, Q₂ 550, W 100 J, η 15 %) still check the same numbers, now in TeX. `!t.includes('W_')` still keeps W_k out of the readout. The replaced Lisätietoja assertion checked text, not physics. Its content (ideal gas, model values) now sits in inquiry.json `model`. No physics check was lost.
+- inquiry.json howto/model/calc: ΔU = (3/2)Δ(pV), ΔV = 2Q/(5p₁), Q = (5/2)p₁ΔV, W = (p₁ − p₂)ΔV = the raised weight's energy, and Q₁ − Q₂ = W are all correct and match the code. Every assumption from the old Lisätietoja box survives (frictionless, massless piston, vacuum above, plate and water temperatures, latch).
+- I recomputed all 12 exercise answers independently. They match answers.py (171,7 → 172; 21,67 → 21,7; 12,04 → 12,0 are inside tolerance).
+- Inquiry recomputed: kertaus 250 J; pred-1 300 J (Q = 750 J); exp-1 ΔV = 2,00 l, W_k = 400 J, ΔU = 600 J; exp-2 path A W = 0, Q₂ = 500 J; path B Q₁ 650, Q₂ 550, W 100, η 15 %; virhe 360 J; suunnittele 2000/1250/800 MW, pump 60 MW, 120 MW from wastewater; siirto 22,5 MW; check-2 450 J; exit 100 J and 18/42 kW. Every mistake value and its feedback is right.
+- Experiments: exp-1 varies only Qin (paluu locked) and measures dV and dU, both in simState. Exp-2 locks Qin and p2, varies paluu, and measures Q1, Q2, W and eta (eta only when the cycle is done).
+- Worked example 38 % / 310 MW and 88 % / 60 MW. Every solution is symbolic first.
+- Figures to scale: arrow widths 60 = 24 + 36 (engine) and 20 + 40 = 60 (pump).
+- Sim range: the largest bar is 1240 J, under the 1250 J scale. V₂ ≤ 3 l fits the axis. Captures show the KaTeX labels rendered (390 px, 1280 px).
+- Scope: cycles are qualitative only, as the slot says. The sign convention is tied to fy3-5.

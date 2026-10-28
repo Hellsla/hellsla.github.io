@@ -1,21 +1,24 @@
-VERDICT: PASS
-CONTENT-HASH: 89861521952abfbd
+VERDICT: FAIL
+CONTENT-HASH: edd01c91e24f237e
 
 ## Blocking
-(none) Round-2 blocker fixed: inquiry.json exp-1 intro now has "tulon $pV$ jouleina" and the unit relation in maths; git diff shows no other lesson change.
+- content/FY3/fy3-9/sim.js (canvas labels) — at 390 px (fy3-9-sim-390.png, fy3-9-exp-exp-2-390-1.png) the KaTeX labels shrink with the canvas to about 7 px: the thermometer ticks (150 °C … −50 °C), the graph axis numbers (50, 100, 200, 40, 80, 200, 400) and the gauge scale (0/200/300 and "kPa") cannot be read, and in the gauge the "kPa" and the figure "100" sit under the needle hub. The graph is the point of the lesson (read p off the curve, follow the dashed line to the origin in exp-2), so a phone student cannot do it. Fix: draw canvas text at a size that is at least about 11 px after scaling (scale font by the canvas-to-CSS ratio, fewer ticks: 0/100/200/300 and 0/50/100 ml), put the gauge unit outside the dial, and keep the live values in the text readout below, which is legible.
+- Same cause at 1280 px (fy3-9-lab-1280-1.png): in the narrow sim column tick labels are about 9 px and the gauge "100" collides with the needle; fix with the same minimum size.
 
 ## Polish
-- Simulation canvas (text in the canvas), DOM readout ("T = 20 °C", "Vakio pV = ...", "V 0…100 ml") and the table under the canvas (V, 1/V, p, T, pV headers in monospace) stay plain interface text per NOTES.md §1; the experiment table headers do render V, p, pV, θ, T as maths. Revisit when the teacher decides.
-- fy3-9-fig-5: the "−273 °C" label sits on the bottom edge of the viewBox; add margin.
-- Gauge scale numbers "100" and "200" are overlapped by the needle at 390 px; enlarge the dial or drop one label.
-- solutions.md L2-01: the real-gas remark (about 1,8 m³) contradicts the answer 2,0 m³ asked under "oleta, että Boylen laki pätee"; move to a separate "Huomio" line.
-- inquiry.json "ruisku": the student is told to compute a pV column but has nowhere to enter it; it is a mental check only. Say so, or accept as is.
+- Readout, 390 px: "Vakio pV = 100,0 kPa · 50,0 ml = 5000 kPa · ml" breaks between "·" and "ml"; use a non-breaking thin space, or wrap the whole product.
+- exp-1 table shows p in Pa while the simulation readout shows kPa; the intro explains it, but one unit throughout (kPa, pV in kPa·ml) would remove the conversion the student must hold.
+- Ennusta 1/2 feedback says "Mallin arvoissa ..." for every option, which is repetitive; a shorter lead ("Koe 1 antoi ...") reads better.
+- exp-2 question mixes two tasks (compute ml/K and the relative share) with a choice about the origin of γ; consider splitting so the calculation is a numeric item.
+- ruisku item: the 30 ml row's "nopea puristus" is given in the text, so the diagnosis is partly disclosed; remove "Yhden mittauksen kohdalla ..." sentence's cause and let the choice carry it.
 
 ## Checked
-- Round-1 blockers fixed: symbols in inquiry.json (pairs, 1/V, p₁V₁, θ), exercises.json and exit-ticket.json are maths; the Alkutila line and exp-2 table headers render symbols as maths (1280 px capture).
-- Simulation speed control ("Nopeus"): clear label, note states it changes only pace, not p, V or T; the 390 px layout is not cramped.
-- Learning path: hook, retrieval, three predictions each refutable by exp-1 or exp-2 (reveal after min 2/3), wrong-option feedback repairs the misconception, no answer given before commitment.
-- Slot goals met: Boylen laki experimentally, p = vakio·1/V graphically, new column 1/V, noisy-data item with a real cause (heating).
-- Figures 2-5 legible in captures, each beside its paragraph; worked example in five stages, symbolic first.
-- Exercises: three levels, none repeats the example; check-3 has model answer and criteria; exit ticket tests the core idea; workload one lesson; Finnish reads well.
-- Phone captures at 390 px: nothing clipped; lab at 1280 px puts the simulation beside the experiments.
+- Learning path: hook, retrieval (F = pA), three predictions, two guided experiments, syringe data with a 1/V column, theory, example, transfer, three checks, matches the slot goals (Boylen todentaminen, 1/V graph, new column); one lesson's workload.
+- Predictions are refutable by exp-1/exp-2; options carry their own feedback; no answer shown before commitment.
+- Experiments lock the controlled quantities and vary one; the sim's computed values are called model values, and the syringe data are labelled example values.
+- Figures (micro-boyle, iso-processes, boyle-graphs, absolute-zero) are placed after their paragraphs and legible in the 390 px captures.
+- Worked example has five stages, symbolic first, units, sanity check; not repeated in exercises.
+- Exercises: 5/4/3, contexts varied, level 3 needs two ideas; exit ticket tests the core ideas (Boyle, 1/V graph, kelvin).
+- Finnish: terms agree with the glossary; case after number+unit correct in the text read.
+- 1280 px wide layout: sim beside experiments, readable line width, no overlap outside the canvas.
+- Only the canvas text legibility blocks; hash unchanged at end.

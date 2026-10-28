@@ -1,22 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 904c78c89b385b5a
+CONTENT-HASH: d5016cfcfdfdcdd5
 
 ## Blocking
 (none)
 
 ## Polish
-- sim canvas and DOM readout (sim-390.png, exp-exp-2-390.png) — "Massa m = 10 kg", "g = 9,81 m/s²", "G = m · g = 98,1 N" and the canvas labels (G (N), Kuu, Mars, asteikko 0–248 N) remain plain interface text (NOTES.md §1: teacher to decide). Canvas bar labels are about 8 px at 390 px; enlarge when the decision comes.
-- sim.js (spring scale) — the scale now reads in N (0–2500, every 500), but 98,1 N and 248 N sit within the first tick, so the pointer reads near 0 and the number comes only from the readout. The fixed scale keeps the stretch growing visibly with mass, so acceptable; consider a second, zoomed scale or a note "asteikko kattaa 100 kg:n painon Jupiterissa".
-- lesson.md:101 — "Tässä vaiheessa kiinnostaa vain voiman suuruus, ja kuvissa nuoli näyttää, mihin suuntaan voima osoittaa" is cryptic in the first paragraph; say "Nuoli kuvassa näyttää, mihin suuntaan voima osoittaa."
-- Fig. 3 — the Jupiter line leaves the frame without a value; label "Jupiter, 100 kg: 2480 N (kuvan ulkopuolella)".
-- pred-2 feedback names the model value only; naming what the experiment's table will show ("kirjaa G kahdessa paikassa") would tie it to Koe 2.
+1. Koe 2 table at 390 px (exp-exp-2-390.png): the table scrolls sideways (scrollWidth 383 > 332) and the G (N) column, the quantity the prediction is about, starts out of view. Shorten the column labels (e.g. "kappale", "g", "G") or let the table wrap so all three columns show.
+2. Canvas at 390 px (sim-390.png): the meter scale runs 0–2500 N, so at 10 kg the pointer sits at "0" and the spring barely stretches; the first experiment's "katso jousen venymä" shows little at 10→30 kg. The readout and the bar chart carry the quantity, so this is not blocking. Consider a meter scale that follows the chosen mass, or a one-line intro hint to read G from the bars.
+3. Canvas at 390 px: the bar-chart axis labels (150, 100, 50), "asteikko 0–248 N" and the "G (N)" title sit close together and are small (about 9 px), though not overlapping; the Kuu/Mars/Maa/Jupiter labels are legible. At 1280 px the text is small relative to the canvas but clear. Raise the tick and caption font a step on narrow canvases.
+4. inquiry.json:pred-1 and pred-2 feedback say "Mallin arvot tukevat…" but the student reads this before Tutki when the box is reopened; "mallin arvot" is clear after the experiment, so no fix is needed. Check only that the wording still reads well when the box is reopened later.
+5. exercises.json fy3-1-L3-03: "mittari näyttää 26 kg" (a force meter scaled in kg) is a hard reading for a first-time student. The idea is good and matches the misconception section, but a sentence saying "asteikko on vain nimeltään kilogrammoina" would help.
 
 ## Checked
-- Round-1 blocking findings: spring scale in N (fy3-1-sim-390.png); activity texts carry symbols as maths (fy3-1-stage-ennusta-390-1.png); Alkutila line and table headers m, g render as maths (fy3-1-exp-exp-2-390.png). All resolved.
-- Figures 1–3: LaTeX labels, uncluttered, colour with labels, legible at 365 px.
-- Opening question answered by the Kuu paragraph and g table; scope held to G = mg.
-- Predictions can be refuted: Koe 1 varies only m, Koe 2 locks m and varies body; each option's feedback repairs its misconception.
-- Example staged in six steps, repeats no exercise; solutions in LaTeX with sanity checks.
-- Exercise levels ascend, L3 needs reasoning; exit ticket tests mass vs weight and proportionality.
-- Finnish: case after number+unit correct; no lesson ids in prose.
-- Phone and 1280 px layouts read; Ennusta box and two-by-two items stand alone.
+- All LaTeX canvas labels and readouts ($m$, $g$, $G = mg$, units) render in KaTeX at 390 and 1280 px; no overlaps between spring, arrow, meter and bar chart; the legend is one line.
+- Sim moved by hand (m=30, 100 kg, Earth): spring, arrow, pointer and bars follow G proportionally; the bar scale changes with mass and is stated.
+- The sims check now passes (the packet's FAIL was stale); inquiry 62/62.
+- Learning path: FY1 retrieval, then the hook, two predictions with justifications, two controlled experiments (one variable locked each), calibration table, theory, reflection; only G = mg and force as a measure, no Newton's laws (in scope).
+- The opening question about the astronaut is answered in theory, reflection and check 3.
+- Predictions can be refuted: the experiments record G at min 2 values; the wrong options' feedback repairs the misconception.
+- Worked example has six single-step stages, symbolic first; it is not repeated in the exercises.
+- Exercises: 5/4/3 levels, original, with unit and tolerance; the exit ticket tests mass versus weight and proportionality.
+- Finnish and terms are correct (case after number+unit, glossary terms); the howto/model text sits behind Käyttöohje and Mallin oletukset, and the visible lead is short.
+- Workload is on the heavy side (12 exercises and 3 checks after a long inquiry) but still one lesson.
