@@ -7,7 +7,7 @@ Kun laite muuntaa energiaa, on kaksi tärkeää asiaa: kuinka paljon energiaa mu
 
 Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho on energia aikayksikköä kohti. Jos laite muuntaa joka sekunti $2000\,\text{J}$, sen teho on $2000\,\text{J/s} = 2000\,\text{W}$.
 
-<svg data-fig="bars" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 100 W vain 100 J. Pylvään pituus on suoraan verrannollinen tehoon." style="max-width:100%;font-size:24px">
+<svg data-fig="bars" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa. Vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeittimen teho on 2000 W, ja se muuntaa 2000 J. Tosterin teho on 1000 W, ja se muuntaa 1000 J. Television teho on 100 W, ja se muuntaa vain 100 J. Pylvään pituus on suoraan verrannollinen tehoon." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy23-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="96.5" y="11.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energiaa muuntuu yhdessä sekunnissa}$</div></foreignObject>
   <foreignObject x="30" y="75.5" width="261" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vedenkeitin},\ P = 2000\,\text{W}$</div></foreignObject>
@@ -25,7 +25,7 @@ Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho
 Teho ei kerro, kuinka paljon energiaa laite yhteensä käyttää. Sen kertoo vasta teho yhdessä ajan kanssa. Pieni teho pitkään voi muuntaa saman energian kuin suuri teho lyhyen hetken. Siksi sähkölasku riippuu sekä laitteen tehosta että käyttöajasta.
 
 ## Kaava: Teho
-Teho on muuntuneen tai siirtyneen energian ja siihen kuluneen ajan osamäärä:
+Teho on muuntuneen tai siirtyneen energian ja siihen kuluneen ajan osamäärä. Energia siis jaetaan ajalla:
 ```latex
 P = \frac{\Delta E}{\Delta t}
 ```
@@ -40,7 +40,7 @@ Tehon yksikkö on watti: $1\,\text{W} = 1\,\text{J/s}$. Etuliitteet toimivat kut
 
 Jos laite muuntaa energiaa tasaisesti, energia ajan funktiona on suora, joka lähtee origosta. Suoran jyrkkyys on teho. Mitä suurempi teho, sitä jyrkemmin energia kasvaa. Kuvassa vedenkeittimen suoralla energia kasvaa $40\,\text{kJ}$ aikavälillä $20\,\text{s}$. Sijoitetaan $1\,\text{kJ} = 1000\,\text{J}$: $40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$, joten $P = 40\,000\,\text{J} : 20\,\text{s} = 2000\,\text{W}$.
 
-<svg data-fig="graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: energia ajan funktiona kolmelle laitteelle, jotka muuntavat energiaa tasaisesti. Vedenkeittimen 2000 W suora nousee jyrkimmin, tosterin 1000 W suora puolet loivemmin ja television 80 W suora lähes vaakasuoraan. Suoran kulmakerroin on teho: vedenkeittimen suoralla 40 kJ kuluu 20 sekunnissa. Asteikot ovat tasavälisiä ja kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: energia ajan funktiona kolmelle laitteelle. Laitteet muuntavat energiaa tasaisesti. Vedenkeittimen suora (2000 W) nousee jyrkimmin. Tosterin suora (1000 W) nousee puolet loivemmin. Television suora (80 W) on lähes vaakasuora. Suoran kulmakerroin on teho. Vedenkeittimen suoralla 40 kJ kuluu 20 sekunnissa. Asteikot ovat tasavälisiä, ja kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="212.5" y1="290" x2="212.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="341.5" y1="290" x2="341.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="470" y1="290" x2="470" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -150,11 +150,11 @@ E &= P\,t \\
 
 <!-- vaihe -->
 
-**Tulos.** Television katsominen maksaa noin $1{,}9\,\text{€}$ kuukaudessa. Tulos on annettu kahdella merkitsevällä numerolla, koska teho ja päivittäinen käyttöaika ovat annetut kahdella numerolla.
+**Tulos.** Television katsominen maksaa noin $1{,}9\,\text{€}$ kuukaudessa. Tulos on annettu kahdella merkitsevällä numerolla. Syy on se, että teho ja päivittäinen käyttöaika on annettu kahdella numerolla.
 
 <!-- vaihe -->
 
-**Järkevyys.** Yksi kilowattitunti kattaa $80\,\text{W}$:n television noin $12\,\text{h}$:ksi, ja kuukaudessa katsotaan $120\,\text{h}$, eli noin kymmenen kilowattituntia. Se maksaa noin kymmenen kertaa $20\,\text{snt}$ eli noin kaksi euroa.
+**Järkevyys.** Yksi kilowattitunti kattaa $80\,\text{W}$:n television noin $12\,\text{h}$:ksi. Kuukaudessa katsotaan $120\,\text{h}$. Se on noin kymmenen kilowattituntia. Se maksaa noin kymmenen kertaa $20\,\text{snt}$ eli noin kaksi euroa.
 
 ## Yleinen virhekäsitys
 Moni luulee, että suuri teho tarkoittaa suurta energiankulutusta. Teho kertoo vain vauhdin. Kulutettu energia on teho kertaa aika. Hiustenkuivain ($1800\,\text{W}$) käy viisi minuuttia ja kuluttaa $0{,}15\,\text{kWh}$. Mutta $10\,\text{W}$:n lamppu, joka palaa vuorokauden, kuluttaa $0{,}24\,\text{kWh}$. Toinen virhe on sekoittaa yksiköt. Watti on tehon yksikkö ja kilowattitunti energian yksikkö. Siksi "teho on $2\,\text{kWh}$" on virhe. Oikein teho on $2\,\text{kW}$.
@@ -163,4 +163,4 @@ Moni luulee, että suuri teho tarkoittaa suurta energiankulutusta. Teho kertoo v
 - Teho kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy: $P = \tfrac{\Delta E}{\Delta t}$. Yksikkö on watti, $1\,\text{W} = 1\,\text{J/s}$.
 - Tasaisella teholla $E = P\,t$ ja $t = E : P$. Energia–aika-kuvaajassa suoran jyrkkyys on teho.
 - $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Kilowattitunti on energian yksikkö, ja sähkölasku on energia kWh kertaa yksikköhinta.
-- Suuri teho lyhyen aikaa ja pieni teho pitkään voivat käyttää yhtä paljon energiaa; valmiustila kuluttaa energiaa kaiken aikaa.
+- Suuri teho lyhyen aikaa ja pieni teho pitkään voivat käyttää yhtä paljon energiaa. Valmiustila kuluttaa energiaa kaiken aikaa.

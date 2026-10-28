@@ -1,1 +1,8 @@
-{}
+{
+ "Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 100 W vain 100 J. Pylvään pituus on suoraan verrannollinen tehoon.": "Kuvaaja mittakaavassa. Vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeittimen teho on 2000 W, ja se muuntaa 2000 J. Tosterin teho on 1000 W, ja se muuntaa 1000 J. Television teho on 100 W, ja se muuntaa vain 100 J. Pylvään pituus on suoraan verrannollinen tehoon.",
+ "energiaa muuntuu yhdessä sekunnissa": "energiaa muuntuu yhdessä sekunnissa",
+ "vedenkeitin": "vedenkeitin",
+ "tosteri": "tosteri",
+ "televisio": "televisio",
+ "Kuvaaja: energia ajan funktiona kolmelle laitteelle, jotka muuntavat energiaa tasaisesti. Vedenkeittimen 2000 W suora nousee jyrkimmin, tosterin 1000 W suora puolet loivemmin ja television 80 W suora lähes vaakasuoraan. Suoran kulmakerroin on teho: vedenkeittimen suoralla 40 kJ kuluu 20 sekunnissa. Asteikot ovat tasavälisiä ja kuvaaja on mittakaavassa.": "Kuvaaja: energia ajan funktiona kolmelle laitteelle. Laitteet muuntavat energiaa tasaisesti. Vedenkeittimen suora (2000 W) nousee jyrkimmin. Tosterin suora (1000 W) nousee puolet loivemmin. Television suora (80 W) on lähes vaakasuora. Suoran kulmakerroin on teho. Vedenkeittimen suoralla 40 kJ kuluu 20 sekunnissa. Asteikot ovat tasavälisiä, ja kuvaaja on mittakaavassa."
+}

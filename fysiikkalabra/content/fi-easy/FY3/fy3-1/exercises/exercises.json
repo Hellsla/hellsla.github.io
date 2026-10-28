@@ -11,7 +11,7 @@
     {
       "id": "fy3-1-L1-02",
       "level": 1,
-      "text": "Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan kappale, jonka paino on 4,0 N. Kuinka monta senttimetriä jousi venyy, kun siihen ripustetaan kappale, jonka paino on 12 N?",
+      "text": "Voimamittariin ripustetaan kappale, jonka paino on 4,0 N. Jousi venyy 2,0 cm. Sitten siihen ripustetaan kappale, jonka paino on 12 N. Kuinka monta senttimetriä jousi nyt venyy?",
       "answer": 6.0,
       "unit": "cm",
       "tolerance": 0.02

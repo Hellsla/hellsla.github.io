@@ -36,7 +36,7 @@
 **Muunnokset:** Muunnoksia ei tarvita: senttimetrit supistuvat suhteessa $\dfrac{x}{x_1}$ ja voima ratkeaa newtoneina.
 **Sijoitus:** $F = \dfrac{4{,}0\,\text{N} \cdot 6{,}0\,\text{cm}}{2{,}5\,\text{cm}} = 9{,}6\,\text{N}$
 **Vastaus:** $9{,}6\,\text{N}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Venymä on $\dfrac{6{,}0}{2{,}5} = 2{,}4$-kertainen, joten voimankin pitää olla $2{,}4 \cdot 4{,}0\,\text{N} = 9{,}6\,\text{N}$. Suuruusluokka on oikea: venymä on yli kaksinkertainen, joten voima on lähes $10\,\text{N}$ eli yli kaksinkertainen verrattuna $4{,}0\,\text{N}$:iin.
+**Järkevyys:** Venymä on $\dfrac{6{,}0}{2{,}5} = 2{,}4$-kertainen, joten voimankin pitää olla $2{,}4 \cdot 4{,}0\,\text{N} = 9{,}6\,\text{N}$. Suuruusluokka on oikea. Venymä on yli kaksinkertainen. Siksi myös voima on yli kaksinkertainen verrattuna $4{,}0\,\text{N}$:iin, eli lähes $10\,\text{N}$.
 
 ## fy3-1-L1-05
 **Annettu:** $m = 2{,}5\,\text{kg}$, $g_\text{Jupiter} = 24{,}8\,\text{m/s}^2$
@@ -66,7 +66,7 @@
 **Muunnokset:** $1\,\text{g} = 0{,}001\,\text{kg}$, joten $m = 60\,\text{g} = 0{,}060\,\text{kg}$. Näin tulos tulee newtoneina.
 **Sijoitus:** $G = 0{,}060\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}5886\,\text{N}$
 **Vastaus:** $0{,}59\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $60\,\text{g}$.
-**Järkevyys:** Noin $100\,\text{g}$:n kappaleen paino on $1\,\text{N}$, joten $60\,\text{g}$:n paino on noin $0{,}6\,\text{N}$. Jos massaa ei olisi muunnettu, olisi saatu $60 \cdot 9{,}81 \approx 589$, tuhatkertainen arvo, joka on mahdoton munalle.
+**Järkevyys:** Noin $100\,\text{g}$:n kappaleen paino on $1\,\text{N}$, joten $60\,\text{g}$:n paino on noin $0{,}6\,\text{N}$. Jos massaa ei olisi muunnettu, tulos olisi $60 \cdot 9{,}81 \approx 589$. Se on tuhat kertaa liian suuri. Muna ei voi painaa niin paljon.
 
 ## fy3-1-L2-03
 **Annettu:** $m = 145\,\text{kg}$; taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$
@@ -76,7 +76,7 @@
 **Muunnokset:** Massa on kilogrammoina ja $g$-arvot yksikössä $\text{m/s}^2$, joten tulos tulee newtoneina eikä muunnoksia tarvita.
 **Sijoitus:** $\Delta G = 145\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 1{,}62\,\text{m/s}^2) = 145\,\text{kg} \cdot 8{,}19\,\text{m/s}^2 = 1187{,}55\,\text{N}$
 **Vastaus:** $1190\,\text{N}$, kolme merkitsevää numeroa kuten massassa $145\,\text{kg}$.
-**Järkevyys:** Maassa paino on noin $145 \cdot 9{,}81\,\text{N} \approx 1422\,\text{N}$ ja Kuussa noin $145 \cdot 1{,}62\,\text{N} \approx 235\,\text{N}$, ja erotus on $1422\,\text{N} - 235\,\text{N} \approx 1187\,\text{N}$. Kuussa paino on $\dfrac{1{,}62}{9{,}81} \approx \dfrac{1}{6}$ Maan painosta, joten se pienenee noin $\dfrac{5}{6}$ eli $83\,\%$.
+**Järkevyys:** Maassa paino on noin $145 \cdot 9{,}81\,\text{N} \approx 1422\,\text{N}$ ja Kuussa noin $145 \cdot 1{,}62\,\text{N} \approx 235\,\text{N}$. Erotus on $1422\,\text{N} - 235\,\text{N} \approx 1187\,\text{N}$. Kuussa paino on $\dfrac{1{,}62}{9{,}81} \approx \dfrac{1}{6}$ Maan painosta. Paino siis pienenee noin $\dfrac{5}{6}$ eli $83\,\%$.
 
 ## fy3-1-L2-04
 **Annettu:** $m = 0{,}20\,\text{kg}$ ja sen venymä $x_1 = 1{,}5\,\text{cm}$ Maassa; uusi venymä $x = 4{,}5\,\text{cm}$; taulukosta $g = 9{,}81\,\text{m/s}^2$
@@ -96,12 +96,12 @@
 **Muunnokset:** Muunnoksia ei tarvita: $\dfrac{\text{m/s}^2}{\text{m/s}^2}$ supistuu, ja paino jää newtoneiksi.
 **Sijoitus:** $m = \dfrac{18\,\text{N}}{9{,}81\,\text{m/s}^2} = 1{,}835\,\text{kg}$, joten $G_\text{Mars} = 1{,}835\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 = 6{,}807\,\text{N}$
 **Vastaus:** $6{,}8\,\text{N}$, kaksi merkitsevää numeroa kuten painossa $18\,\text{N}$.
-**Järkevyys:** Marsin $g$ on $\dfrac{3{,}71}{9{,}81} \approx 0{,}38$ Maan arvosta, ja $0{,}38 \cdot 18\,\text{N} \approx 6{,}8\,\text{N}$. Paino pienenee, koska Marsin vuorovaikutus on heikompi, ja mittarin pitää siksi näyttää vähemmän kuin Maassa.
+**Järkevyys:** Marsin $g$ on $\dfrac{3{,}71}{9{,}81} \approx 0{,}38$ Maan arvosta, ja $0{,}38 \cdot 18\,\text{N} \approx 6{,}8\,\text{N}$. Paino pienenee, koska Marsin ja kappaleen vuorovaikutus on heikompi. Siksi mittarin pitää näyttää Marsissa vähemmän kuin Maassa.
 
 ## fy3-1-L3-02
 **Annettu:** $m_\text{Maa} = 22{,}0\,\text{kg}$; taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$
 **Kysytty:** nostettava massa Kuussa $m_\text{Kuu}$ kilogrammoina
-**Periaate:** Nostaja jaksaa tuottaa saman voiman $F$ molemmissa paikoissa. Nostettavan massan paino saa olla enintään tämä voima. Kuussa $g$ on pienempi, joten sama voima riittää suuremmalle massalle.
+**Periaate:** Nostaja jaksaa tuottaa saman voiman $F$ molemmissa paikoissa. Nostettavan massan paino saa olla enintään yhtä suuri kuin tämä voima. Kuussa $g$ on pienempi, joten sama voima riittää suuremmalle massalle.
 **Kaava:** $F = m_\text{Maa} g_\text{Maa}$ ja $F = m_\text{Kuu} g_\text{Kuu}$, joten $m_\text{Kuu} = \dfrac{m_\text{Maa} g_\text{Maa}}{g_\text{Kuu}}$
 **Muunnokset:** Massa on kilogrammoina ja $g$-arvot yksikössä $\text{m/s}^2$, joten voima tulee newtoneina ja massa kilogrammoina ilman muunnoksia.
 **Sijoitus:** $m_\text{Kuu} = \dfrac{22{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}62\,\text{m/s}^2} = \dfrac{215{,}82\,\text{N}}{1{,}62\,\text{m/s}^2} = 133{,}2\,\text{kg}$
@@ -113,7 +113,7 @@
 **Kysytty:** kappaleen todellinen massa $m$ kilogrammoina
 **Periaate:** Mittari mittaa voimaa, ei massaa. Sen asteikko on tehty Maassa jakamalla voima luvulla $9{,}81\,\text{m/s}^2$. Marsissa lukemasta pitää siis ensin päätellä voima eli kappaleen paino. Massa saadaan jakamalla paino Marsin $g$:llä.
 **Kaava:** $L = \dfrac{G}{g_\text{Maa}}$, joten $G = L g_\text{Maa}$. Marsissa $G = m g_\text{Mars}$, joten $m = \dfrac{L g_\text{Maa}}{g_\text{Mars}}$
-**Muunnokset:** Lukema $26\,\text{kg}$ tulkitaan asteikon luvuksi: voima on $G = 26\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$ newtoneina. Muita muunnoksia ei tarvita.
+**Muunnokset:** Lukema $26\,\text{kg}$ on vain asteikon luku, ei massa. Voima newtoneina on $G = 26\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$. Muita muunnoksia ei tarvita.
 **Sijoitus:** $m = \dfrac{26\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{3{,}71\,\text{m/s}^2} = \dfrac{255{,}06\,\text{N}}{3{,}71\,\text{m/s}^2} = 68{,}75\,\text{kg}$
 **Vastaus:** $69\,\text{kg}$, kaksi merkitsevää numeroa kuten lukemassa $26\,\text{kg}$.
-**Järkevyys:** Marsissa $g$ on $\dfrac{3{,}71}{9{,}81} \approx 0{,}38$ Maan arvosta, joten lukema on vain noin $0{,}38$-kertainen massaan nähden. Massan pitää olla noin $\dfrac{26\,\text{kg}}{0{,}38} \approx 69\,\text{kg}$, selvästi lukemaa suurempi. Palautuslasku: $69\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \approx 256\,\text{N}$ ja $\dfrac{256\,\text{N}}{9{,}81\,\text{m/s}^2} \approx 26\,\text{kg}$.
+**Järkevyys:** Marsissa $g$ on $\dfrac{3{,}71}{9{,}81} \approx 0{,}38$ Maan arvosta, Siksi lukema on vain noin $0{,}38$-kertainen massaan verrattuna. Massan pitää olla noin $\dfrac{26\,\text{kg}}{0{,}38} \approx 69\,\text{kg}$. Massa on siis selvästi suurempi kuin lukema. Palautuslasku: $69\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \approx 256\,\text{N}$ ja $\dfrac{256\,\text{N}}{9{,}81\,\text{m/s}^2} \approx 26\,\text{kg}$.

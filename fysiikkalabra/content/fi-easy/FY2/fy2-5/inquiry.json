@@ -10,7 +10,7 @@
     "Energia ei synny eikä häviä, vaan muuntuu muodosta toiseen (luku *Energialajit ja energian säilyminen*)",
     "Energian yksikkö on joule, ja $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$ (luku *Energian muuntuminen ja yksikkö joule*)",
     "Hyötysuhde kertoo, kuinka suuri osa otetusta energiasta on hyötyä (luku *Hyötysuhde*)",
-    "Teho on energia aikayksikköä kohti (luku *Teho*)"
+    "Teho on energia aikayksikköä kohti (luku *Teho P = ΔE/Δt*)"
   ],
   "activities": [
     {
@@ -57,7 +57,7 @@
       "choices": [
         {
           "text": "Kummastakin vapautuu yhtä paljon energiaa, koska massa on sama.",
-          "feedback": "Mittaukset kumoavat tämän. Bensiinistä vapautuu noin $43\\,\\text{MJ}$ ja ilmakuivasta puusta noin $15\\,\\text{MJ}$. Sama massa ei tarkoita samaa energiaa. Aineet sisältävät eri määrän kemiallista energiaa saman massan kohti."
+          "feedback": "Mittaukset kumoavat tämän. Bensiinistä vapautuu noin $43\\,\\text{MJ}$ ja ilmakuivasta puusta noin $15\\,\\text{MJ}$. Sama massa ei tarkoita samaa energiaa. Aineet sisältävät eri määrän kemiallista energiaa samaa massaa kohti."
         },
         {
           "text": "Puusta vapautuu enemmän, koska puuta palaa kauemmin.",
@@ -292,7 +292,7 @@
           "feedback": "Syötit massan grammoina. Lämpöarvo on energia kilogrammaa kohti, joten massa on $0{,}230\\,\\text{kg}$."
         }
       ],
-      "solution": "**Annettu:** nestekaasun massa $m = 0{,}230\\,\\text{kg}$, lämpöarvo $H = 46\\,\\text{MJ/kg}$ ja keittimen hyötysuhde $\\eta = 60\\,\\% = 0{,}60$\n\n**Kysytty:** hyötyenergia $E_\\text{hyöty}$ megajouleina\n\n**Periaate:** Kun kaasu palaa, sen kemiallinen energia vapautuu lämpöarvon mukaan. Vapautuneesta energiasta vain hyötysuhteen osoittama osuus on hyötyä (luku *Hyötysuhde*), koska osa lämmöstä menee ympäristöön.\n\n**Kaava:** $E_\\text{sisään} = Hm$ ja $\\eta = \\dfrac{E_\\text{hyöty}}{E_\\text{sisään}}$, josta $E_\\text{hyöty} = \\eta\\, E_\\text{sisään}$\n\n**Muunnokset:** Ei tarvita: massa on kilogrammoina ja $60\\,\\% = 0{,}60$.\n\n**Sijoitus:** $E_\\text{sisään} = 46\\,\\text{MJ/kg} \\cdot 0{,}230\\,\\text{kg} = 10{,}58\\,\\text{MJ}$ ja $E_\\text{hyöty} = 0{,}60 \\cdot 10{,}58\\,\\text{MJ} = 6{,}348\\,\\text{MJ}$\n\n**Vastaus:** $6{,}3\\,\\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $46\\,\\text{MJ/kg}$ ja $60\\,\\%$.\n\n**Järkevyys:** Vapautuva energia $10{,}6\\,\\text{MJ}$ on oikeaa suuruusluokkaa, koska neljäsosa kilogrammaa polttoainetta antaa noin $0{,}25 \\cdot 46\\,\\text{MJ} \\approx 11\\,\\text{MJ}$. Hyötyenergia on sitä pienempi, noin kuusi kymmenesosaa, kuten hyötysuhde $60\\,\\%$ vaatii."
+      "solution": "**Annettu:** nestekaasun massa $m = 0{,}230\\,\\text{kg}$, lämpöarvo $H = 46\\,\\text{MJ/kg}$ ja keittimen hyötysuhde $\\eta = 60\\,\\% = 0{,}60$\n\n**Kysytty:** hyötyenergia $E_\\text{hyöty}$ megajouleina\n\n**Periaate:** Kun kaasu palaa, sen kemiallinen energia vapautuu lämpöarvon mukaan. Vapautuneesta energiasta vain osa on hyötyä. Hyötysuhde kertoo, kuinka suuri tämä osuus on (luku *Hyötysuhde*). Loput lämmöstä menee ympäristöön.\n\n**Kaava:** $E_\\text{sisään} = Hm$ ja $\\eta = \\dfrac{E_\\text{hyöty}}{E_\\text{sisään}}$, josta $E_\\text{hyöty} = \\eta\\, E_\\text{sisään}$\n\n**Muunnokset:** Ei tarvita: massa on kilogrammoina ja $60\\,\\% = 0{,}60$.\n\n**Sijoitus:** $E_\\text{sisään} = 46\\,\\text{MJ/kg} \\cdot 0{,}230\\,\\text{kg} = 10{,}58\\,\\text{MJ}$ ja $E_\\text{hyöty} = 0{,}60 \\cdot 10{,}58\\,\\text{MJ} = 6{,}348\\,\\text{MJ}$\n\n**Vastaus:** $6{,}3\\,\\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $46\\,\\text{MJ/kg}$ ja $60\\,\\%$.\n\n**Järkevyys:** Neljäsosa kilogrammaa polttoainetta antaa noin $0{,}25 \\cdot 46\\,\\text{MJ} \\approx 11\\,\\text{MJ}$. Vapautuva energia $10{,}6\\,\\text{MJ}$ on siis oikeaa suuruusluokkaa. Hyötyenergia on pienempi, noin kuusi kymmenesosaa siitä. Näin pitää olla, kun hyötysuhde on $60\\,\\%$."
     },
     {
       "id": "harjoitukset",
@@ -308,7 +308,7 @@
       "choices": [
         {
           "text": "Kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta palaessaan.",
-          "feedback": "Oikein. Lämpöarvon yksikkö $\\text{MJ/kg}$ kertoo energian massayksikköä kohti, ja koko energia saadaan kertomalla se massalla: $E = Hm$.",
+          "feedback": "Oikein. Lämpöarvon yksikkö $\\text{MJ/kg}$ kertoo energian massayksikköä kohti. Koko energia saadaan, kun lämpöarvo kerrotaan massalla: $E = Hm$.",
           "correct": true
         },
         {
@@ -321,7 +321,7 @@
         },
         {
           "text": "Kuinka nopeasti polttoaine palaa.",
-          "feedback": "Palamisnopeus liittyy tehoon (luku *Teho*), ei lämpöarvoon. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu. Se ei kerro, kuinka nopeasti."
+          "feedback": "Palamisnopeus liittyy tehoon (luku *Teho P = ΔE/Δt*), ei lämpöarvoon. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu. Se ei kerro, kuinka nopeasti."
         }
       ]
     },
@@ -349,7 +349,7 @@
           "feedback": "Kerroit luvulla $3{,}6$. Yksi kilowattitunti on kuitenkin suuri energia, $3{,}6\\,\\text{MJ}$. Kilowattitunteja on siis vähemmän kuin megajoulea."
         }
       ],
-      "solution": "**Annettu:** bensiinin lämpöarvo $H = 43\\,\\text{MJ/kg}$ ja massa $m = 1{,}0\\,\\text{kg}$\n\n**Kysytty:** vapautuva energia $E$ kilowattitunteina\n\n**Periaate:** Bensiinin kemiallinen energia vapautuu palaessa. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Ensin lasketaan energia megajouleina. Sitten se muutetaan kilowattitunneiksi.\n\n**Kaava:** $E = Hm$\n\n**Muunnokset:** $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3{,}6\\,\\text{MJ}$, joten $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3{,}6$.\n\n**Sijoitus:** $E = 43\\,\\text{MJ/kg} \\cdot 1{,}0\\,\\text{kg} = 43\\,\\text{MJ} = 43 \\cdot (1\\,\\text{kWh} : 3{,}6) = 11{,}94\\,\\text{kWh}$\n\n**Vastaus:** $12\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tiedoissa $43\\,\\text{MJ/kg}$ ja $1{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Kilowattitunti on suuri yksikkö, joten lukua tulee vähemmän kuin megajoulea. Arvio: $3{,}6 \\cdot 12 = 43{,}2$, mikä on $43\\,\\text{MJ}$. Tulos $12\\,\\text{kWh}$ on siis oikein."
+      "solution": "**Annettu:** bensiinin lämpöarvo $H = 43\\,\\text{MJ/kg}$ ja massa $m = 1{,}0\\,\\text{kg}$\n\n**Kysytty:** vapautuva energia $E$ kilowattitunteina\n\n**Periaate:** Bensiinin kemiallinen energia vapautuu palaessa. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Ensin lasketaan energia megajouleina. Sitten se muutetaan kilowattitunneiksi.\n\n**Kaava:** $E = Hm$\n\n**Muunnokset:** $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3{,}6\\,\\text{MJ}$, joten $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3{,}6$.\n\n**Sijoitus:** $E = 43\\,\\text{MJ/kg} \\cdot 1{,}0\\,\\text{kg} = 43\\,\\text{MJ} = 43 \\cdot (1\\,\\text{kWh} : 3{,}6) = 11{,}94\\,\\text{kWh}$\n\n**Vastaus:** $12\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tiedoissa $43\\,\\text{MJ/kg}$ ja $1{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Kilowattitunti on suuri yksikkö, joten lukua tulee vähemmän kuin megajoulea. Tarkistus: $3{,}6 \\cdot 12 = 43{,}2$, mikä on $43\\,\\text{MJ}$. Tulos $12\\,\\text{kWh}$ on siis oikein."
     },
     {
       "id": "tarkistus-3",

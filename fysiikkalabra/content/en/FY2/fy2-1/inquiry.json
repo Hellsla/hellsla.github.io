@@ -116,7 +116,7 @@
       },
       "values": {
         "kitka": {
-          "0": "ei kitkaa"
+          "0": "no friction"
         }
       },
       "measure": [
@@ -167,7 +167,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: with friction",
-      "intro": "Test prediction 2. The initial state selects a small friction and an initial height of $2.0\\,\\text{m}$ and sets the clock to zero. Move the *Moment $t$* slider and record the energies at at least three moments, for example $t = 0\\,\\text{s}$, $t = 8.0\\,\\text{s}$ and $t = 16.0\\,\\text{s}$. The energies are in joules, and the column $E$ is the sum of the three energies. Compare the mechanical energy $E_\\text{p} + E_\\text{k}$ and the thermal energy on the rows.",
+      "intro": "Test prediction 2. The initial state selects small friction and an initial height of $2.0\\,\\text{m}$ and sets the clock to zero. Move the *Moment $t$* slider and record the energies at at least three moments, for example $t = 0\\,\\text{s}$, $t = 8.0\\,\\text{s}$ and $t = 16.0\\,\\text{s}$. The energies are in joules, and the column $E$ is the sum of the three energies. Compare the mechanical energy $E_\\text{p} + E_\\text{k}$ and the thermal energy on the rows.",
       "initial": {
         "kitka": 1,
         "h0": 2.0,
@@ -189,7 +189,7 @@
       },
       "values": {
         "kitka": {
-          "1": "pieni kitka"
+          "1": "small friction"
         }
       },
       "measure": [
@@ -249,7 +249,7 @@
         "unit": "J",
         "tolerance": 0.02,
         "hints": [
-          "What happens to the mechanical energy and the thermal energy during a bounce? Where does the energy go from the mechanical energy?",
+          "What happens to the mechanical energy and the thermal energy during a bounce? Where does the energy that leaves the mechanical energy go?",
           "Energy is conserved, so the decrease of the mechanical energy equals the increase of the thermal energy: $E_\\text{thermal} = E_\\text{initial} - E_\\text{mech}$, where $E_\\text{mech}$ is the mechanical energy of the ball at the end.",
           "Read the starting value ($0$ bounces) and the final value ($3$ bounces) from the table and subtract: $0.60\\,\\text{J} - 0.31\\,\\text{J}$."
         ],
@@ -354,7 +354,7 @@
       "tolerance": 0.02,
       "hints": [
         "Into which forms of energy does the chemical energy of the muscles change? Name them all.",
-        "Write the law of conservation of energy in words: the chemical energy is the increase in potential energy plus the thermal energy. Solve the thermal energy from it.",
+        "Write the law of conservation of energy in words: the chemical energy is the increase in potential energy plus the thermal energy. Solve it for the thermal energy.",
         "Both energies are in kilojoules, so you can subtract directly: chemical energy minus the increase in potential energy."
       ],
       "mistakes": [
@@ -415,8 +415,8 @@
       "unit": "J",
       "tolerance": 0.02,
       "hints": [
-        "Into what does the electrical energy of the bulb change? What do you know about the light?",
-        "The law of conservation of energy: $E_\\text{elec} = E_\\text{light} + E_\\text{thermal}$. Solve $E_\\text{thermal}$ from it. Finally, check in which unit the answer is asked.",
+        "What does the electrical energy of the bulb change into? What do you know about the light?",
+        "The law of conservation of energy: $E_\\text{elec} = E_\\text{light} + E_\\text{thermal}$. Solve it for $E_\\text{thermal}$. Finally, check in which unit the answer is asked.",
         "First convert to joules: $2.5\\,\\text{kJ} = 2.5 \\cdot 1000\\,\\text{J}$ and $0.12\\,\\text{kJ} = 0.12 \\cdot 1000\\,\\text{J}$."
       ],
       "mistakes": [

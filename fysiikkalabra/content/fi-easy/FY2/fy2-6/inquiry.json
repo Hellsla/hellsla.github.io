@@ -225,7 +225,7 @@
         },
         {
           "text": "Teho olisi pitänyt ilmoittaa megawatteina, ja kaava on muuten oikein.",
-          "feedback": "Yksikkö ei korjaa tulosta. Oikein laskettuna teho olisi $1{,}6\\,\\text{MW}$. Kertolasku antaa väärän suureen, koska energia kerrottiin ajalla."
+          "feedback": "Yksikkö ei korjaa tulosta. Oikein laskettuna teho olisi $1{,}6\\,\\text{MW}$. Kertolasku antaa väärän suureen eikä tehoa. Syy on se, että energia kerrottiin ajalla eikä jaettu ajalla."
         },
         {
           "text": "Laskussa ei ole virhettä, koska voimala on iso.",

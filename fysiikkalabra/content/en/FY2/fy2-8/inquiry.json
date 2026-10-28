@@ -91,7 +91,7 @@
         },
         {
           "text": "Largest with biomass and smallest with wind power, because wood contains more carbon than coal.",
-          "feedback": "Coal contains more carbon per mass than wood. The carbon of biomass was also bound into plants only recently, and new growth binds it back, so the emission of biomass is smaller than that of fossil fuels but not zero. Check the order from the table in the next step."
+          "feedback": "Coal contains more carbon per unit mass than wood. The carbon of biomass was also bound into plants only recently, and new growth binds it back, so the emission of biomass is smaller than that of fossil fuels but not zero. Check the order from the table in the next step."
         },
         {
           "text": "Largest with natural gas and smallest with biomass, because gas leaks easily and wood grows back.",
@@ -131,10 +131,10 @@
       },
       "values": {
         "co2": {
-          "0": "ei kasvihuonekaasuja, ei vesihöyryäkään",
-          "280": "esiteollinen määrä",
-          "420": "nykyinen määrä",
-          "560": "hiilidioksidia kaksinkertaisesti"
+          "0": "no greenhouse gases, not even water vapour",
+          "280": "pre-industrial amount",
+          "420": "present amount",
+          "560": "double carbon dioxide"
         }
       },
       "measure": [
@@ -228,8 +228,8 @@
       "id": "muut-perusteet",
       "stage": "tutki",
       "type": "interpret",
-      "title": "What does the emission factor not tell?",
-      "text": "The emission factors of nuclear power and wind power are almost equally small in the table, about $12\\,\\text{g/kWh}$. Even so, both are discussed eagerly.",
+      "title": "What does the emission factor not tell you?",
+      "text": "The emission factors of nuclear power and wind power are almost equally small in the table, about $12\\,\\text{g/kWh}$. Even so, both are much debated.",
       "question": {
         "type": "choice",
         "prompt": "What else should you know before you can say which is the better choice?",
@@ -454,7 +454,7 @@
         "I explained that burning releases carbon dioxide, so more radiation-absorbing gases remain in the atmosphere.",
         "I linked the strengthening to climate change, that is, to the rise of the mean temperature."
       ],
-      "model": "The Sun warms the ground with radiation that the greenhouse gases of the atmosphere let mostly through. The warm ground sends out energy as thermal radiation, which the greenhouse gases absorb and partly radiate back down. That is why the ground is at about $+15\\,{}^\\circ\\text{C}$ and not at about $-18\\,{}^\\circ\\text{C}$, and the effect keeps the Earth habitable. When fuels burn, carbon combines with oxygen and is released as carbon dioxide. When there is more of the gas, thermal radiation escapes more and more slowly, so the effect gets stronger and the mean temperature rises: that is climate change."
+      "model": "The Sun warms the ground with radiation that the greenhouse gases of the atmosphere let mostly through. The warm ground sends out energy as thermal radiation, which the greenhouse gases absorb and partly radiate back down. That is why the ground is at about $+15\\,{}^\\circ\\text{C}$ and not at about $-18\\,{}^\\circ\\text{C}$, and the effect keeps the Earth habitable. When fuels burn, carbon combines with oxygen and is released as carbon dioxide. When there is more of the gas, thermal radiation escapes more slowly than before, so the effect gets stronger and the mean temperature rises: that is climate change."
     },
     {
       "id": "lahtolippu",

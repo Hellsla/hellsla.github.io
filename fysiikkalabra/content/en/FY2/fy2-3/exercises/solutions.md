@@ -36,7 +36,7 @@
 **Conversions:** In place of the kilowatt we write its value in watts, $1000\,\text{W}$.
 **Substitution:** $P = 3.5\,\text{kW} = 3.5 \cdot 1000\,\text{W} = 3500\,\text{W}$
 **Answer:** $3500\,\text{W}$ (that is $3.5 \cdot 10^{3}\,\text{W}$), two significant figures as in the given value $3.5\,\text{kW}$.
-**Reasonableness:** A watt is a thousand times smaller unit than a kilowatt, so the numerical value must be a thousand times greater: from 3.5 to 3500.
+**Reasonableness:** A watt is a unit a thousand times smaller than a kilowatt, so the numerical value must be a thousand times greater: from 3.5 to 3500.
 
 ## fy2-3-L1-05
 **Given:** power $P = 1.5\,\text{kW}$, time $t = 2.0\,\text{h}$

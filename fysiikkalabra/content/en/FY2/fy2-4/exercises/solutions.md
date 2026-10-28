@@ -31,7 +31,7 @@
 ## fy2-4-L1-04
 **Given:** efficiency $\eta = 90\,\%$ and useful energy $E_\text{a} = 1800\,\text{J}$
 **Find:** the electrical energy $E_\text{o}$ taken by the motor in joules
-**Principle:** The useful energy is the share given by the efficiency of the energy taken. So the energy taken is larger than the useful energy, and it is found by dividing the useful energy by the efficiency.
+**Principle:** The efficiency tells what share of the energy taken becomes useful energy. So the energy taken is larger than the useful energy, and it is found by dividing the useful energy by the efficiency.
 **Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{o} = \dfrac{E_\text{a}}{\eta}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $90\,\% = 90 \cdot 0.01 = 0.90$.
 **Substitution:** $E_\text{o} = \dfrac{1800\,\text{J}}{0.90} = 2000\,\text{J}$
@@ -51,7 +51,7 @@
 ## fy2-4-L2-01
 **Given:** power taken $P_\text{o} = 1.0\,\text{kW}$, efficiency $\eta = 80\,\%$ and running time $t = 2.0\,\text{min}$
 **Find:** the kinetic energy given by the motor, that is, the useful energy $E_\text{a}$ in kilojoules
-**Principle:** The motor runs at constant power, so the energy taken is power multiplied by time. The useful energy is the share given by the efficiency of the energy taken.
+**Principle:** The motor runs at constant power, so the energy taken is power multiplied by time. The efficiency tells what share of the energy taken is useful energy.
 **Formula:** $E_\text{o} = P_\text{o} \cdot t$ and $E_\text{a} = \eta \cdot E_\text{o}$, so $E_\text{a} = \eta \cdot P_\text{o} \cdot t$
 **Conversions:** $1.0\,\text{kW} = 1.0 \cdot 1000\,\text{W} = 1000\,\text{W}$, $2.0\,\text{min} = 2.0 \cdot 60\,\text{s} = 120\,\text{s}$ and $80\,\% = 80 \cdot 0.01 = 0.80$.
 **Substitution:** $E_\text{o} = 1000\,\text{W} \cdot 120\,\text{s} = 120\,000\,\text{J}$, so $E_\text{a} = 0.80 \cdot 120\,000\,\text{J} = 96\,000\,\text{J} = 96\,\text{kJ}$
@@ -71,7 +71,7 @@
 ## fy2-4-L2-03
 **Given:** power taken $P_\text{o} = 60\,\text{W}$, efficiency $\eta = 5.0\,\%$ and burning time $t = 4.0\,\text{h}$
 **Find:** the electrical energy that becomes heat, that is, the loss energy $E_\text{h}$ in kilowatt-hours
-**Principle:** The lamp burns at constant power, so the energy taken is power multiplied by time. The share given by the efficiency becomes light, and the rest is losses, that is, heat, because energy is conserved.
+**Principle:** The lamp burns at constant power, so the energy taken is power multiplied by time. The efficiency tells what share becomes light, and the rest is losses, that is, heat, because energy is conserved.
 **Formula:** $E_\text{o} = P_\text{o} \cdot t$ and $E_\text{h} = E_\text{o} - \eta \cdot E_\text{o} = (1 - \eta) \cdot E_\text{o}$
 **Conversions:** Power to kilowatts: $60\,\text{W} = 60 \cdot 0.001\,\text{kW} = 0.060\,\text{kW}$. When the power is in kilowatts and the time in hours, the energy is obtained directly in kilowatt-hours. In addition, $5.0\,\% = 5.0 \cdot 0.01 = 0.050$.
 **Substitution:** $E_\text{o} = 0.060\,\text{kW} \cdot 4.0\,\text{h} = 0.24\,\text{kWh}$, so $E_\text{h} = (1 - 0.050) \cdot 0.24\,\text{kWh} = 0.228\,\text{kWh}$
@@ -101,7 +101,7 @@
 ## fy2-4-L3-02
 **Given:** power taken $P_\text{o} = 1.2\,\text{kW}$, efficiency $\eta = 20\,\%$ and electrical energy to be produced $E_\text{a} = 0.50\,\text{MJ}$
 **Find:** the time $t$ in seconds
-**Principle:** The useful power of the panel is the share given by the efficiency of the power taken. At constant power the useful energy is useful power multiplied by time, so the time is found by dividing the useful energy by the useful power.
+**Principle:** The efficiency tells what share of the power taken becomes the useful power of the panel. At constant power the useful energy is useful power multiplied by time, so the time is found by dividing the useful energy by the useful power.
 **Formula:** $P_\text{a} = \eta \cdot P_\text{o}$ and $E_\text{a} = P_\text{a} \cdot t$, so $t = \dfrac{E_\text{a}}{\eta \cdot P_\text{o}}$
 **Conversions:** $1.2\,\text{kW} = 1.2 \cdot 1000\,\text{W} = 1200\,\text{W}$, $0.50\,\text{MJ} = 0.50 \cdot 10^{6}\,\text{J} = 500\,000\,\text{J}$ and $20\,\% = 20 \cdot 0.01 = 0.20$.
 **Substitution:** $t = \dfrac{500\,000\,\text{J}}{0.20 \cdot 1200\,\text{W}} = \dfrac{500\,000\,\text{J}}{240\,\text{W}} = 2083\,\text{s}$

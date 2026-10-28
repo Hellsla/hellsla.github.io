@@ -179,7 +179,7 @@
       },
       "values": {
         "laite": {
-          "auto": "auton bensiinimoottori"
+          "auto": "car petrol engine"
         }
       }
     },
@@ -242,7 +242,7 @@
       "optional": true,
       "values": {
         "laite": {
-          "lamppu": "hehkulamppu"
+          "lamppu": "incandescent lamp"
         }
       }
     },

@@ -46,7 +46,7 @@ def unit_files(unit, lang):
 
 def walk(o, keys, path=(), key=None, parent=None):
     if isinstance(o, dict):
-        for k, v in o.items(): yield from walk(v, keys, path + (k,), k, key)
+        for k, v in o.items(): yield from walk(v, keys, path + (k,), k, check_i18n.value_words(key, parent))
     elif isinstance(o, list):
         for i, v in enumerate(o): yield from walk(v, keys, path + (i,), key, parent)
     elif isinstance(o, str) and o.strip() and not re.fullmatch(r"[a-z0-9_-]+", o) and \

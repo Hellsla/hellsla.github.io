@@ -103,7 +103,7 @@
       "type": "interpret",
       "title": "Heats of combustion of fuels",
       "source": "statistics",
-      "source_note": "Firewood and milled peat: Statistics Finland, Fuel Classification (2017); natural gas, coal and diesel: IPCC 2006 Guidelines, Volume 2, table of default calorific values (2006); petrol: typical value for Finnish petrol containing ethanol (for pure petrol IPCC 2006 gives $44.3\\,\\text{MJ/kg}$); wood pellet: typical value. Net calorific values, rounded",
+      "source_note": "Firewood and milled peat: Statistics Finland, Fuel Classification (2017); natural gas, coal and diesel: IPCC 2006 Guidelines, Volume 2, table of default heating values (2006); petrol: typical value for Finnish petrol containing ethanol (for pure petrol IPCC 2006 gives $44.3\\,\\text{MJ/kg}$); wood pellets: typical value. Net heats of combustion, rounded",
       "text": "The table gives the heats of combustion $H$ of common fuels. The heat of combustion is the energy released from one kilogram of fuel.\n\n| Fuel | $H$ ($\\text{MJ/kg}$) |\n|---|---|\n| natural gas | 48 |\n| petrol | 43 |\n| diesel | 43 |\n| coal | 26 |\n| wood pellets | 17 |\n| firewood (air-dried) | 15 |\n| peat (milled peat) | 10 |\n",
       "question": {
         "type": "choice",
@@ -119,7 +119,7 @@
             "feedback": "The table disproves this: the heats of combustion vary from $10$ to $48\\,\\text{MJ/kg}$. Not every burning substance contains the same amount of energy."
           },
           {
-            "text": "Peat is the most effective fuel, because the most of it is needed.",
+            "text": "Peat is the most effective fuel, because the largest amount of it is needed.",
             "feedback": "The fact that a lot of peat is needed points to a small heat of combustion. A small $H$ means that little energy is released per kilogram, and more mass is needed to get the same energy."
           },
           {
@@ -191,7 +191,7 @@
             "feedback": "You divided the energy in megajoules by the number $100$, that is by grams, although the mass must be in kilograms: $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$."
           }
         ],
-        "solution": "**Given:** energy $2200\\,\\text{kJ}$ per mass $100\\,\\text{g}$\n\n**Find:** heat of combustion $H$ in $\\text{MJ/kg}$\n\n**Principle:** The heat of combustion is the energy per kilogram, and the label gives the energy for a hundred grams. So the label is converted to megajoules per kilogram.\n\n**Formula:** $H = \\dfrac{E}{m}$\n\n**Conversions:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.\n\n**Substitution:** $H = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Answer:** $22\\,\\text{MJ/kg}$, two significant figures like $2200\\,\\text{kJ}$ in the chapter.\n\n**Reasonableness:** The heat of combustion of firewood is $15\\,\\text{MJ/kg}$ and that of petrol $43\\,\\text{MJ/kg}$. The heat of combustion of chocolate lies between them, which is a believable result: chocolate contains a lot of fat and sugar."
+        "solution": "**Given:** energy $2200\\,\\text{kJ}$ per mass $100\\,\\text{g}$\n\n**Find:** heat of combustion $H$ in $\\text{MJ/kg}$\n\n**Principle:** The heat of combustion is the energy per kilogram, and the label gives the energy for a hundred grams. So the label is converted to megajoules per kilogram.\n\n**Formula:** $H = \\dfrac{E}{m}$\n\n**Conversions:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.\n\n**Substitution:** $H = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Answer:** $22\\,\\text{MJ/kg}$, two significant figures, as in the number $2200\\,\\text{kJ}$.\n\n**Reasonableness:** The heat of combustion of firewood is $15\\,\\text{MJ/kg}$ and that of petrol $43\\,\\text{MJ/kg}$. The heat of combustion of chocolate lies between them, which is a believable result: chocolate contains a lot of fat and sugar."
       }
     },
     {

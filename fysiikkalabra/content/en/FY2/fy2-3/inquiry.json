@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "In the kitchen a kettle hums and the water heats up in a couple of minutes. At the same time a small lamp is burning in the hallway, and nobody needs its light. The reading of the electricity meter rises because of both, but it rises clearly faster because of the kettle. Still, the lamp is often on for hours, while the kettle is on only for a moment.",
+      "text": "In the kitchen a kettle hums and the water heats up in a couple of minutes. At the same time a small lamp is on in the hallway, and nobody needs its light. The reading of the electricity meter rises because of both, but it rises clearly faster because of the kettle. Still, the lamp is often on for hours, while the kettle is on only for a moment.",
       "question": "Which uses more electrical energy, a device that works fast or a device that is on for a long time, and how can you compare them?"
     },
     {
@@ -124,10 +124,10 @@
       "min": 3,
       "values": {
         "A": {
-          "kuivain": "hiustenkuivain"
+          "kuivain": "hair dryer"
         },
         "B": {
-          "lamppu": "lamppu"
+          "lamppu": "lamp"
         }
       },
       "question": {
@@ -181,7 +181,7 @@
           },
           {
             "text": "From the time $60\\,\\text{s}$, because a long time means a high power.",
-            "feedback": "Time alone does not tell the power. Power is energy per unit of time: the same power produces more energy all the time."
+            "feedback": "Time alone does not tell the power. Power is energy per unit of time: the same power keeps adding more energy as time goes on."
           }
         ]
       }
@@ -226,10 +226,10 @@
       "min": 3,
       "values": {
         "A": {
-          "keitin": "vedenkeitin"
+          "keitin": "kettle"
         },
         "B": {
-          "lamppu": "lamppu"
+          "lamppu": "lamp"
         }
       },
       "question": {
@@ -358,7 +358,7 @@
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Practise at three levels. Level 1 tasks use the formula $P = E : t$ directly, level 2 tasks convert units and calculate prices, and level 3 requires reasoning."
+      "text": "Practise at three levels. Level 1 exercises use the formula $P = E : t$ directly, level 2 exercises convert units and calculate prices, and level 3 requires reasoning."
     },
     {
       "id": "tarkistus-1",
@@ -403,7 +403,7 @@
         },
         {
           "value": 13.3,
-          "feedback": "You divided the energy given in hours by minutes ($1200\\,\\text{Wh} : 90\\,\\text{min}$). The time has to be converted to hours, $90\\,\\text{min} = 1.5\\,\\text{h}$, or the energy to joules and the time to seconds."
+          "feedback": "You divided the energy given in watt-hours by minutes ($1200\\,\\text{Wh} : 90\\,\\text{min}$). The time has to be converted to hours, $90\\,\\text{min} = 1.5\\,\\text{h}$, or the energy to joules and the time to seconds."
         }
       ],
       "solution": "**Given:** energy $E = 1.2\\,\\text{kWh}$, time $t = 90\\,\\text{min}$\n\n**Find:** average power $P$ in watts\n\n**Principle:** Power is the energy transformed divided by the time it takes; the average power describes the whole wash.\n\n**Formula:** $P = \\dfrac{E}{t}$\n\n**Conversions:** $1.2\\,\\text{kWh} = 1.2 \\cdot 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 4\\,320\\,000\\,\\text{J}$ and $90\\,\\text{min} = 90 \\cdot 60\\,\\text{s} = 5400\\,\\text{s}$.\n\n**Substitution:** $P = \\dfrac{4\\,320\\,000\\,\\text{J}}{5400\\,\\text{s}} = 800\\,\\dfrac{\\text{J}}{\\text{s}} = 800\\,\\text{W}$\n\n**Answer:** $8.0 \\cdot 10^{2}\\,\\text{W}$, two significant figures as in the energy $1.2\\,\\text{kWh}$.\n\n**Reasonableness:** In kilowatt-hours and hours $1.2\\,\\text{kWh} : 1.5\\,\\text{h} = 0.8\\,\\text{kW} = 800\\,\\text{W}$. This is smaller than the $2000\\,\\text{W}$ of a kettle but greater than the $80\\,\\text{W}$ of a television, which fits a washing machine that heats water only part of the time."

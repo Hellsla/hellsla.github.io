@@ -115,5 +115,5 @@
 **Formula:** $\Delta U_\text{A} = Q_\text{A} + W_\text{A}$ and $\Delta U_\text{B} = \Delta U_\text{A}$, so $Q_\text{B} = \Delta U_\text{A} - W_\text{B} = Q_\text{A} + W_\text{A} - W_\text{B}$
 **Conversions:** None needed: all energies are given in joules.
 **Substitution:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. So $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$
-**Answer:** $310\,\text{J}$; in addition, the result is as precise as the data, which are given in whole joules.
+**Answer:** $310\,\text{J}$; in the addition the result is as precise as the data, which are given in whole joules.
 **Reasonableness:** In way B the gas does less work, so the same increase in internal energy $250\,\text{J}$ needs less heat than in way A: $310\,\text{J} < 400\,\text{J}$. Balance: $310\,\text{J} + (-60\,\text{J}) = 250\,\text{J} = \Delta U_\text{A}$.

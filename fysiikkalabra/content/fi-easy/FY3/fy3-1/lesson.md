@@ -2,7 +2,7 @@
 
 > **Miksi** astronautti painaa Kuussa vain kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: astronautti loikkaa Kuun harmaalla pinnalla, ja hänen jalanjälkensä näkyvät pölyssä. Mustalla taivaalla näkyy Maa, jossa on meriä, mantereita ja pilviä." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: astronautti loikkaa Kuun harmaalla pinnalla. Hänen jalanjälkensä näkyvät pölyssä. Mustalla taivaalla näkyy Maa. Maassa näkyy meriä, mantereita ja pilviä." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy31h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy31h-clip"><circle cx="930" cy="150" r="80"/></clipPath><linearGradient id="fy31h-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy31h-visor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#1f2933"/>
   <circle cx="323.5" cy="120.5" r="1.51288" fill="#ffffff"/>
@@ -116,7 +116,7 @@ Kun kaksi kappaletta vaikuttaa toisiinsa, ne ovat vuorovaikutuksessa. Esimerkiks
 
 Voiman voi mitata voimamittarilla. Siinä on jousi. Jousi venyy sitä enemmän, mitä suurempi voima siihen vaikuttaa.
 
-<svg data-fig="forcemeter" viewBox="0 0 600 410" role="img" aria-label="Voimamittari, periaatekuva, ei mittakaavassa. Kaksi samanlaista jousta ripustettu telineeseen: vasemmanpuoleiseen on ripustettu kappale, jonka massa on m, oikeanpuoleiseen kaksi samanlaista kappaletta. Kaksinkertainen paino venyttää jousta kaksinkertaisen matkan. Kunkin kappaleen paino G on alaspäin osoittava nuoli." style="max-width:100%;font-size:24px">
+<svg data-fig="forcemeter" viewBox="0 0 600 410" role="img" aria-label="Voimamittari, periaatekuva, ei mittakaavassa. Telineessä on kaksi samanlaista jousta. Vasemmassa jousessa riippuu kappale, jonka massa on m. Oikeassa jousessa riippuu kaksi samanlaista kappaletta. Kaksinkertainen paino venyttää jousta kaksinkertaisen matkan. Kunkin kappaleen paino G on nuoli, joka osoittaa alaspäin." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy31-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="2"/></pattern></defs>
   <rect x="60" y="20" width="420" height="16" fill="url(#fy31-hatch)"/>
   <line x1="60" y1="36" x2="480" y2="36" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -153,7 +153,7 @@ Voiman voi mitata voimamittarilla. Siinä on jousi. Jousi venyy sitä enemmän, 
 
 Venymä on suoraan verrannollinen voimaan, kun jousta ei venytetä liikaa. Kaksinkertainen voima venyttää jousta kaksinkertaisen matkan. Kuvaaja (voima, venymä) on siis suora, joka kulkee origon kautta. Näin on myös FY1:n suoraan verrannollisissa malleissa, esimerkiksi tasaisessa liikkeessä $s = v t$. Jos 5,0 N venyttää jousta 2,0 cm, niin 10 N venyttää sitä 4,0 cm. Silloin 2,5 N venyttää sitä 1,0 cm.
 
-<svg data-fig="force-extension" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa: jousen venymä x senttimetreinä voiman F funktiona, kun F on 0–11 N. Mittauspisteet 2,5 N ja 1,0 cm, 5,0 N ja 2,0 cm sekä 10 N ja 4,0 cm ovat samalla origon kautta kulkevalla suoralla; katkoviivat näyttävät pisteiden arvot akseleilla." style="max-width:100%;font-size:24px">
+<svg data-fig="force-extension" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa: jousen venymä x senttimetreinä voiman F funktiona, kun F on 0–11 N. Kuvaajassa on kolme mittauspistettä: 2,5 N ja 1,0 cm, 5,0 N ja 2,0 cm sekä 10 N ja 4,0 cm. Pisteet ovat samalla suoralla, joka kulkee origon kautta. Katkoviivat näyttävät pisteiden arvot akseleilla." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="290" x2="179.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="267.5" y1="290" x2="267.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="355" y1="290" x2="355" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -198,13 +198,13 @@ Venymä on suoraan verrannollinen voimaan, kun jousta ei venytetä liikaa. Kaksi
   <foreignObject x="309.5" y="222.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{suora origon kautta}$</span></div></foreignObject>
 </svg>
 
-Asteikko kalibroidaan eli tehdään näin: jouseen ripustetaan samanlaisia pieniä kappaleita. Kunkin kappaleen massa on noin 100 g ja paino noin 1 N.
+Voimamittarin asteikko pitää kalibroida. Se tarkoittaa, että asteikkoon merkitään oikeat lukemat. Kalibrointi tehdään näin: jouseen ripustetaan samanlaisia pieniä kappaleita. Kunkin kappaleen massa on noin 100 g ja paino noin 1 N:
 
 - Yksi kappale venyttää jousta tietyn matkan, ja kohta merkitään 1 N:ksi.
 - Kukin kappale vetää jousta yhtä voimakkaasti. Kaksi kappaletta vetää sitä kaksinkertaisella voimalla ja venyttää sitä kaksinkertaisen matkan. Kohta merkitään 2 N:ksi, ja niin edelleen.
 - Sen jälkeen venymästä voi lukea voiman suoraan newtoneina.
 
-Kappaleen paino kertoo, kuinka voimakas Maan ja kappaleen välinen vuorovaikutus on. Paino on voima, ja sen yksikkö on newton. Massa on aivan eri asia. Massa kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on paljon pienempi taivaankappale kuin Maa. Siksi Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin. Astronautti painaa Kuussa vähemmän.
+Kappaleen paino kertoo, kuinka voimakas Maan ja kappaleen välinen vuorovaikutus on. Paino on voima, ja sen yksikkö on newton. Massa on aivan eri asia. Massa kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on paljon pienempi taivaankappale kuin Maa. Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin. Siksi astronautti painaa Kuussa vähemmän.
 
 ## Kaava: Paino
 Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin paljon kuin yksi. Siksi paino on suoraan verrannollinen massaan:
@@ -224,7 +224,7 @@ Kuun $g$ on noin Maan arvon kuudesosa (1,62/9,81 ≈ 0,17 ≈ 1/6). Siksi sama m
 
 Kuvaajassa paino on piirretty massan funktiona. Jokaisella taivaankappaleella paino on suoraan verrannollinen massaan, joten kuvaaja on origon kautta kulkeva suora. Mitä suurempi $g$ on, sitä jyrkempi suora on. Samalla massalla paino on Jupiterissa suurin ja Kuussa pienin.
 
-<svg data-fig="weight-mass" viewBox="0 0 600 336" role="img" aria-label="Kuvaaja mittakaavassa: paino G newtoneina massan m funktiona, kun m on 0–100 kg. Neljä origon kautta kulkevaa suoraa, jyrkimmästä loivimpaan: Jupiter (suora jatkuu kuvan yläreunan yli), Maa (100 kg painaa 981 N), Mars (371 N) ja Kuu (162 N)." style="max-width:100%;font-size:24px">
+<svg data-fig="weight-mass" viewBox="0 0 600 336" role="img" aria-label="Kuvaaja mittakaavassa: paino G newtoneina massan m funktiona, kun m on 0–100 kg. Kuvaajassa on neljä suoraa, jotka kulkevat origon kautta. Jyrkin suora on Jupiter. Se jatkuu kuvan yläreunan yli. Sitten tulevat Maa (100 kg painaa 981 N), Mars (371 N) ja Kuu (162 N). Kuun suora on loivin." style="max-width:100%;font-size:24px">
   <line x1="185" y1="300" x2="185" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="270" y1="300" x2="270" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="355" y1="300" x2="355" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -279,7 +279,7 @@ Tutkimusrobotin massa on 120 kg. Mikä on sen paino Maassa ja Marsissa?
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Kysytty paino on jo yksin kaavan vasemmalla puolella, joten kaavaa ei tarvitse muokata. Sama massa kerrotaan kummankin paikan putoamiskiihtyvyydellä:
+**Kaava ratkaistuna.** Kysytty paino on jo yksin kaavan vasemmalla puolella. Siksi kaavaa ei tarvitse muokata. Sama massa kerrotaan kummankin paikan putoamiskiihtyvyydellä:
 ```latex
 \begin{aligned}
 G_\text{Maa} &= m g_\text{Maa} \\
@@ -311,7 +311,7 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Järkevyys.** Yhden kilogramman massan paino Maassa on noin 10 N, joten 120 kg:n massan paino on noin 1200 N. Marsin $g$ on vähän yli kolmasosa Maan arvosta (3,71/9,81 ≈ 0,38), ja 445 N on vähän yli kolmasosa 1180 N:sta. Marsissa paino on pienempi, koska Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa sama.
+**Järkevyys.** Yhden kilogramman massan paino Maassa on noin 10 N. Siksi 120 kg:n massan paino on noin 1200 N. Marsin $g$ on vähän yli kolmasosa Maan arvosta (3,71/9,81 ≈ 0,38). Myös 445 N on vähän yli kolmasosa 1180 N:sta. Marsissa paino on pienempi. Syy on se, että Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa paikoissa sama.
 
 ## Yleinen virhekäsitys
 Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on 70 kg ja paino Maassa noin 690 N. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että voimamittari mittaa voimaa, ei massaa. Sen lukema muuttuu, kun sama kappale viedään toiseen paikkaan. Kylpyhuonevaaka näyttää silti kilogrammoja. Se mittaa voimaa, ja sen asteikko on tehty Maassa jakamalla voima arvolla 9,81 m/s². Kuussa tällainen vaaka näyttäisi vain noin kuudesosan massasta.
@@ -321,7 +321,7 @@ Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikk�
 - Paino on voima: $G = m g$. Massa kertoo, kuinka paljon ainetta kappaleessa on, ja se on sama kaikkialla.
 - $g = 9{,}81\,\text{m/s}^2$ Maan pinnalla, joten yhden kilogramman massan paino Maassa on 9,81 N. Kuussa $g = 1{,}62\,\text{m/s}^2$ ja Marsissa $3{,}71\,\text{m/s}^2$.
 
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama reppu riippuu jousivaa&#x27;assa Maassa ja Kuussa. Maassa jousi venyy pitkäksi, Kuussa vain kuudesosan siitä, koska Kuu vetää reppua kuusi kertaa heikommin. Venymät on piirretty mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama reppu riippuu jousivaa&#x27;assa Maassa ja Kuussa. Maassa jousi venyy pitkäksi. Kuussa jousi venyy vain kuudesosan siitä, koska Kuu vetää reppua kuusi kertaa heikommin. Venymät on piirretty mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy31s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy31s-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy31s-clip"><circle cx="540" cy="60" r="26"/></clipPath></defs>
   <rect x="0" y="0" width="300" height="360" fill="url(#fy31s-sky)"/>
   <rect x="300" y="0" width="300" height="360" fill="#1f2933"/>

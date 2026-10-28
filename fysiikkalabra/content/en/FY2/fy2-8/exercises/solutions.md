@@ -96,7 +96,7 @@
 **Substitution:** $m_\text{petrol} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Answer:** $740\,\text{g/kWh}$, two significant figures like the consumption $6.0\,\textsf{l}$ and $18\,\text{kWh}$.
 **Reasonableness:** The limit is close to the $820\,\text{g/kWh}$ of coal but below it: with coal electricity the electric car would be slightly worse, and with natural gas electricity ($490\,\text{g/kWh}$) and wind electricity ($12\,\text{g/kWh}$) clearly better. With rounded numbers $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
-**Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is larger than the limit $740\,\text{g/kWh}$, so an electric car charged with coal electricity would not reduce emissions, but they would be slightly larger than with the petrol car. The climate benefit of the electric car appears only when the electricity is produced with low emissions. The comparison is rough, because only burning has been counted for petrol.
+**Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is larger than the limit $740\,\text{g/kWh}$, so an electric car charged with coal electricity would not reduce emissions; they would be slightly larger than with the petrol car. The climate benefit of the electric car appears only when the electricity is produced with low emissions. The comparison is rough, because only burning has been counted for petrol.
 
 ## fy2-8-L3-02
 **Given:** energy $E = 100\,\text{GWh}$ per year; yield of the solar park $q_\text{a} = 0.50\,\text{GWh/ha}$ and yield of the energy field $q_\text{b} = 0.010\,\text{GWh/ha}$ per year; $1\,\text{ha} = 0.01\,\text{km}^2$
@@ -105,7 +105,7 @@
 **Formula:** $E = q \cdot A$, so $A = \dfrac{E}{q}$, and the ratio is $A_\text{b} : A_\text{a}$
 **Conversions:** The gigawatt-hours cancel, so the area comes out in hectares. Hectares are converted into square kilometres by substituting $1\,\text{ha} = 0.01\,\text{km}^2$.
 **Substitution:** $A_\text{b} = 100\,\text{GWh} : 0.010\,\text{GWh/ha} = 10\,000\,\text{ha} = 10\,000 \cdot 0.01\,\text{km}^2 = 100\,\text{km}^2$, and $A_\text{a} = 100\,\text{GWh} : 0.50\,\text{GWh/ha} = 200\,\text{ha} = 200 \cdot 0.01\,\text{km}^2 = 2.0\,\text{km}^2$, so $A_\text{b} : A_\text{a} = 100\,\text{km}^2 : 2.0\,\text{km}^2 = 50$
-**Answer:** $50$ times the area of the solar park is needed as field area ($100\,\text{km}^2$ and $2.0\,\text{km}^2$), two significant figures like the yields $0.50\,\text{GWh/ha}$ and $0.010\,\text{GWh/ha}$.
+**Answer:** the field area needed is $50$ times the area of the solar park ($100\,\text{km}^2$ and $2.0\,\text{km}^2$), two significant figures like the yields $0.50\,\text{GWh/ha}$ and $0.010\,\text{GWh/ha}$.
 **Reasonableness:** $100\,\text{km}^2$ is a square with a side of $10\,\text{km}$. The ratio of the areas $100 : 2.0 = 50$ is the same as the ratio of the yields $0.50 : 0.010 = 50$, as it should be, because the energy is the same.
 **Conclusion:** Biomass electricity needs about $50$ times the area of a solar park, a square of field with a side of ten kilometres, which could otherwise grow food or forest. The emission factor tells only the greenhouse gases per kilowatt-hour; it does not tell how much land a way of producing energy takes from food production, nature and the landscape. That is why land use must be weighed separately.
 ## fy2-8-L3-03

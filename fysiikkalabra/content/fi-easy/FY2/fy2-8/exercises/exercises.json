@@ -3,7 +3,7 @@
     {
       "id": "fy2-8-L1-01",
       "level": 1,
-      "text": "Esimerkkitalous käyttää sähköä $3000\\,\\text{kWh}$ vuodessa. Sähkö tuotetaan vesivoimalla, jonka elinkaaren päästökerroin on $24\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia talouden sähkönkäytöstä syntyy vuodessa? Anna vastaus kilogrammoina.",
+      "text": "Esimerkkitalous käyttää sähköä $3000\\,\\text{kWh}$ vuodessa. Sähkö tuotetaan vesivoimalla. Vesivoiman elinkaaren päästökerroin on $24\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia talouden sähkönkäytöstä syntyy vuodessa? Anna vastaus kilogrammoina.",
       "answer": 72,
       "unit": "kg",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy2-8-L1-02",
       "level": 1,
-      "text": "Sähkökiuas kuluttaa yhdellä saunomiskerralla sähköä $3{,}0\\,\\text{kWh}$. Sähkö tuotetaan kivihiilellä, jonka elinkaaren päästökerroin on $820\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia yhdestä saunomiskerrasta syntyy? Anna vastaus kilogrammoina.",
+      "text": "Sähkökiuas kuluttaa yhdellä saunomiskerralla sähköä $3{,}0\\,\\text{kWh}$. Sähkö tuotetaan kivihiilellä. Kivihiilen elinkaaren päästökerroin on $820\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia yhdestä saunomiskerrasta syntyy? Anna vastaus kilogrammoina.",
       "answer": 2.5,
       "unit": "kg",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy2-8-L1-03",
       "level": 1,
-      "text": "Sähköauto kuluttaa $100\\,\\text{km}$:n matkalla sähköä $18\\,\\text{kWh}$. Auton lataamiseen käytetty sähkö on tuotettu tuulivoimalla, jonka elinkaaren päästökerroin on $12\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia $100\\,\\text{km}$:n matkaa kohti syntyy? Anna vastaus grammoina.",
+      "text": "Sähköauto kuluttaa $100\\,\\text{km}$:n matkalla sähköä $18\\,\\text{kWh}$. Auton lataamiseen käytetty sähkö on tuotettu tuulivoimalla. Tuulivoiman elinkaaren päästökerroin on $12\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia $100\\,\\text{km}$:n matkaa kohti syntyy? Anna vastaus grammoina.",
       "answer": 220,
       "unit": "g",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy2-8-L1-05",
       "level": 1,
-      "text": "Pyykkikone ja kuivausrumpu kuluttavat yhdessä yhden pyykkikerran aikana sähköä $2{,}4\\,\\text{kWh}$. Sähkö tuotetaan maakaasulla, jonka elinkaaren päästökerroin on $490\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia yhdestä pyykkikerrasta syntyy? Anna vastaus kilogrammoina.",
+      "text": "Pyykkikone ja kuivausrumpu kuluttavat yhdessä yhden pyykkikerran aikana sähköä $2{,}4\\,\\text{kWh}$. Sähkö tuotetaan maakaasulla. Maakaasun elinkaaren päästökerroin on $490\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia yhdestä pyykkikerrasta syntyy? Anna vastaus kilogrammoina.",
       "answer": 1.2,
       "unit": "kg",
       "tolerance": 0.03
@@ -61,7 +61,7 @@
     {
       "id": "fy2-8-L2-03",
       "level": 2,
-      "text": "Pienen tehtaan sähköntuotannosta syntyi vuoden aikana hiilidioksidiekvivalenttia $12\\,\\text{t}$. Sähkö tuotettiin maakaasulla, jonka päästökerroin on $490\\,\\text{g/kWh}$. Kuinka paljon sähköä tehdas tuotti? Anna vastaus kilowattitunteina.",
+      "text": "Pieni tehdas tuotti sähköä. Vuoden aikana siitä syntyi hiilidioksidiekvivalenttia $12\\,\\text{t}$. Sähkö tuotettiin maakaasulla. Maakaasun päästökerroin on $490\\,\\text{g/kWh}$. Kuinka paljon sähköä tehdas tuotti? Anna vastaus kilowattitunteina.",
       "answer": 24000,
       "unit": "kWh",
       "tolerance": 0.03
@@ -87,7 +87,7 @@
     {
       "id": "fy2-8-L3-02",
       "level": 3,
-      "text": "Esimerkkikaupunki tarvitsee sähköä $100\\,\\text{GWh}$ vuodessa ja vertailee kahta tapaa. Aurinkopuisto tuottaa sähköä noin $0{,}50\\,\\text{GWh}$ vuodessa hehtaaria kohti. Energiaksi kasvatetusta pellosta saadaan voimalassa sähköä noin $0{,}010\\,\\text{GWh}$ vuodessa hehtaaria kohti. (Luvut ovat pyöristettyjä esimerkkiarvoja; $1\\,\\text{ha} = 0{,}01\\,\\text{km}^2$.) Kuinka moninkertaisen peltoalan biomassasähkö tarvitsisi aurinkopuiston alaan verrattuna? Mitä maankäyttö kertoo tuotantotavoista sellaista, mitä päästökerroin ei kerro?",
+      "text": "Esimerkkikaupunki tarvitsee sähköä $100\\,\\text{GWh}$ vuodessa ja vertailee kahta tapaa. Aurinkopuisto tuottaa sähköä noin $0{,}50\\,\\text{GWh}$ vuodessa hehtaaria kohti. Energiaksi kasvatetusta pellosta saadaan voimalassa sähköä noin $0{,}010\\,\\text{GWh}$ vuodessa hehtaaria kohti. (Luvut ovat pyöristettyjä esimerkkiarvoja; $1\\,\\text{ha} = 0{,}01\\,\\text{km}^2$.) Biomassasähkö tarvitsee peltoa. Kuinka moninkertainen peltoala tarvittaisiin aurinkopuiston alaan verrattuna? Mitä maankäyttö kertoo tuotantotavoista sellaista, mitä päästökerroin ei kerro?",
       "answer": 50,
       "unit": "kertaa",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy2-8-L3-03",
       "level": 3,
-      "text": "Esimerkkitilanne: kaupunkibussi kuluttaa $30$ litraa dieseliä $100\\,\\text{km}$:llä, ja siinä on $25$ matkustajaa. Dieselin energiasisältö on $36\\,\\text{MJ/}\\textsf{l}$ ja palamisen päästökerroin $74\\,\\text{g/MJ}$. Yksin ajava bensiiniauto kuluttaa $6{,}0$ litraa $100\\,\\text{km}$:llä ($32\\,\\text{MJ/}\\textsf{l}$ ja $69\\,\\text{g/MJ}$). Kuinka moninkertainen on auton polttamisesta syntyvä päästö matkustajaa kohti bussin päästöön verrattuna?",
+      "text": "Esimerkkitilanne: kaupunkibussi kuluttaa $30$ litraa dieseliä $100\\,\\text{km}$:llä, ja siinä on $25$ matkustajaa. Dieselin energiasisältö on $36\\,\\text{MJ/}\\textsf{l}$ ja palamisen päästökerroin $74\\,\\text{g/MJ}$. Yksin ajava bensiiniauto kuluttaa $6{,}0$ litraa $100\\,\\text{km}$:llä ($32\\,\\text{MJ/}\\textsf{l}$ ja $69\\,\\text{g/MJ}$). Tarkastellaan vain polttamisesta syntyvää päästöä matkustajaa kohti. Kuinka moninkertainen auton päästö on bussin päästöön verrattuna?",
       "answer": 4.1,
       "unit": "kertaa",
       "tolerance": 0.02

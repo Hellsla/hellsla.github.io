@@ -58,7 +58,7 @@ The greenhouse effect is treated with calculations on the FY3 course in the chap
 ### Fuels link energy and climate
 A fossil fuel, such as coal, oil or natural gas, is chemical energy from ancient living things: coal formed mostly from plants, oil and natural gas from marine plankton. When a fuel burns, its carbon combines with oxygen: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. The chemical energy is released as heat (chapter *Fuels and heat of combustion E = Hm*), and the carbon dioxide leaves with the flue gases into the atmosphere. The more energy we get by burning, the more carbon dioxide is released.
 
-The carbon of a fossil fuel has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of biomass, for example wood, was bound into plants only over a few decades. Even so, burning biomass is not emission-free: the carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transport cause their own emissions.
+The carbon of a fossil fuel has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of biomass, for example wood, was bound into plants only during the last few decades. Even so, burning biomass is not emission-free: the carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transport cause their own emissions.
 
 ### Ways of producing energy are compared by life-cycle emissions
 Emissions come from more than just burning. A power plant must be built from steel, concrete and copper, the fuel must be mined or collected and transported, and in the end the plant is dismantled. That is why ways of producing energy are compared by **life-cycle emissions**: the emissions of all stages are added together and divided by the energy produced over the whole life cycle.
@@ -69,7 +69,7 @@ For comparison, methane and other greenhouse gases are converted into carbon dio
 Besides the effect on the climate, ways of producing energy are weighed by land use, transport, waste and safety:
 
 - **Coal and natural gas:** the largest emissions. The fuels are mined and transported by ship, train or pipeline, and the flue gases also contain other pollutants.
-- **Biomass:** takes up forest and field area. Biomass is bulky and its energy content per mass is small, so it is not worth transporting far.
+- **Biomass:** takes up forest and field area. Biomass is bulky and its energy content per unit mass is small, so it is not worth transporting far.
 - **Solar and wind power:** need a lot of area per unit of energy produced, and wind power affects the landscape and birds. Production depends on the weather, so regulating power or storage is needed.
 - **Hydropower:** dams and reservoirs change the river environment and block the passage of fish, but production can be regulated.
 - **Nuclear power:** needs little area, and only a small mass of fuel, so there is little transport. Spent fuel is radioactive waste that must be isolated for a long time, and the consequences of an accident could be serious, although the risk is small.
@@ -84,7 +84,7 @@ m = e \cdot E
 ```
 where $m$ is the emission ($\text{g}$ or $\text{kg}$ of carbon dioxide equivalent), $e$ is the **emission factor** ($\text{g/kWh}$) and $E$ is the energy ($\text{kWh}$).
 
-The emission factor tells how many grams of carbon dioxide equivalent are produced per kilowatt-hour. The unit comes along: when $\text{g/kWh}$ is multiplied by kilowatt-hours, grams are left. The kilowatt-hour is a unit of energy, $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The emission of a fuel is calculated in the same way when the factor is, for example, $\text{g/MJ}$ and the energy is in megajoules.
+The emission factor tells how many grams of carbon dioxide equivalent are produced per kilowatt-hour. The units carry through the calculation: when $\text{g/kWh}$ is multiplied by kilowatt-hours, grams are left. The kilowatt-hour is a unit of energy, $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The emission of a fuel is calculated in the same way when the factor is, for example, $\text{g/MJ}$ and the energy is in megajoules.
 
 | Way of producing energy | $e\ (\text{g/kWh})$ |
 |---|---|

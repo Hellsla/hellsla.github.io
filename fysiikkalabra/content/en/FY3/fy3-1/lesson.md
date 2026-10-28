@@ -1,6 +1,6 @@
 # Force as a measure of interaction and weight G = mg
 
-> **Why** does an astronaut weigh only one sixth on the Moon of what he weighs on Earth, even though nothing has disappeared from him?
+> **Why** does an astronaut weigh only one sixth as much on the Moon as on Earth, even though no part of the astronaut has gone missing?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: an astronaut leaps across the grey surface of the Moon, and his footprints show in the dust. The Earth, with oceans, continents and clouds, is visible in the black sky." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy31h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy31h-clip"><circle cx="930" cy="150" r="80"/></clipPath><linearGradient id="fy31h-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy31h-visor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>

@@ -72,7 +72,7 @@ Voimalaitos ei tee energiaa tyhjästä. Se muuttaa luonnonvaran energian sähkö
 Vesi, tuuli ja auringonsäteily ovat uusiutuvia. Ne eivät lopu, kun niitä käytetään. Bioperäiset polttoaineet, kuten puu, ovat myös uusiutuvia, koska uusi metsä kasvaa tilalle. Kivihiili, öljy, maakaasu ja turve ovat fossiilisia. Uraani on myös uusiutumaton luonnonvara. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
 
 ### Kolme ryhmää: miten voimala toimii verkossa
-Suuria määriä sähköä ei voi varastoida suoraan verkkoon. Siksi tuotannon on vastattava kulutusta joka hetki. Voimalat jaetaan ryhmiin sen mukaan, voiko niiden tehoa säätää.
+Suuria määriä sähköä ei voi varastoida suoraan verkkoon. Siksi tuotannon on vastattava kulutusta joka hetki. Voimalat jaetaan ryhmiin sen mukaan, miten niiden tehoa voi muuttaa.
 
 | Ryhmä | Voimalat | Teho |
 |---|---|---|
@@ -95,7 +95,7 @@ Eri tuotantotapoja vertaillaan samoilla kysymyksillä:
 ### Suomen sähköntuotanto
 Suomessa tuotettiin vuonna 2024 sähköä yhteensä noin $80\,\text{TWh}$ (Tilastokeskus). Ydinvoima tuotti eniten. Tuulivoima tuotti noin neljänneksen. Fossiilisten polttoaineiden osuus oli vain muutama prosentti. Pylväät on piirretty mittakaavassa.
 
-<svg data-fig="fi-bars" viewBox="0 0 600 330" role="img" aria-label="Vaakapylväskaavio Suomen sähköntuotannosta vuonna 2024 energialähteittäin teravattitunteina (Tilastokeskus), mittakaavassa: ydinvoima 31, tuulivoima 20,2, vesivoima 14,1, bioperäiset polttoaineet 9,5, fossiiliset polttoaineet ja turve 3,4 ja aurinkosähkö 0,9. Ydinvoiman pylväs on noin kaksi viidesosaa kokonaistuotannosta 79,9." style="max-width:100%;font-size:24px">
+<svg data-fig="fi-bars" viewBox="0 0 600 330" role="img" aria-label="Vaakapylväskaavio Suomen sähköntuotannosta vuonna 2024 (Tilastokeskus). Jokainen pylväs on yksi energialähde. Luvut ovat teravattitunteja, ja pylväät on piirretty mittakaavassa. Ydinvoima 31, tuulivoima 20,2, vesivoima 14,1, bioperäiset polttoaineet 9,5, fossiiliset polttoaineet ja turve 3,4 ja aurinkosähkö 0,9. Kokonaistuotanto oli 79,9. Ydinvoiman pylväs on noin kaksi viidesosaa siitä." style="max-width:100%;font-size:24px">
   <foreignObject x="168" y="5.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E\ (\text{TWh})$</div></foreignObject>
   <line x1="275" y1="42" x2="275" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="380" y1="42" x2="380" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -142,7 +142,7 @@ missä $E$ on tuotettu energia, $P$ voimalan teho ja $t$ aika. Jos teho on kilow
 Voimalan nimellisteho on suurin teho, jolla se voi toimia. Tuulivoimala ei tuota nimellisteholla koko vuotta, koska tuuli vaihtelee. Keskiteho saadaan, kun vuoden aikana tuotettu energia jaetaan vuoden tuntimäärällä. Kun keskiteho jaetaan nimellisteholla, saadaan osuus. Osuus kertoo, kuinka suuri osa nimellistehosta on keskimäärin käytössä.
 
 ### Suuruusluokat
-Yhden voimalan teho voi olla tuhat kertaa suurempi kuin toisen. Siksi suuruusluokkia vertaillaan kymmenen potensseilla. Kuvan vaaka-akselilla jokainen askel pystyviivalta seuraavalle on kymmenkertainen. Pisteiden välimatka kertoo, montako kertaa kymmenen teho kasvaa.
+Yhden voimalan teho voi olla tuhat kertaa suurempi kuin toisen. Siksi suuruusluokkia vertaillaan kymmenen potensseilla. Katso kuvan vaaka-akselia. Kun siirryt pystyviivalta seuraavalle, teho kasvaa kymmenkertaiseksi. Pisteiden välimatka kertoo siis, montako kertaa teho kasvaa kymmenkertaiseksi.
 
 <svg data-fig="unit-power" viewBox="0 0 600 372" role="img" aria-label="Pistekuvaaja yksittäisten voimalaitosten tehoista logaritmisella asteikolla. Jokainen pystyviiva on kymmenkertainen edelliseen verrattuna. Omakotitalon aurinkopaneelit ovat noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin 100 MW ja Olkiluoto 3 noin 1600 MW. Pisteen paikka kertoo tehon kymmenen potenssin. Olkiluoto 3 on noin 320 kertaa tuulivoimalaa suurempi, vaikka sen piste on vain kaksi ja puoli askelta oikeammalla." style="max-width:100%;font-size:24px">
   <foreignObject x="40" y="3.5" width="330" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P\ (\text{W})$</div></foreignObject>
@@ -231,7 +231,7 @@ P_\text{ka} &= E : t \\
 **Järkevyys.** Oletetaan, että voimala toimisi koko vuoden nimellisteholla. Silloin se tuottaisi $5000\,\text{kW} \cdot 8760\,\text{h} = 43\,800\,000\,\text{kWh} = 43{,}8 \cdot 10^{6}\,\text{kWh} = 43{,}8\,\text{GWh}$, ja $14 : 43{,}8 = 0{,}32$. Osuus on alle yksi, koska tuuli ei puhalla aina.
 
 ## Yleinen virhekäsitys
-Nimellisteho ei kerro, kuinka paljon sähköä voimala todella tuottaa. Tuulivoimala, jonka nimellisteho on $5\,\text{MW}$, tuottaa vuodessa vain noin kolmanneksen siitä, mitä se tuottaisi, jos tuuli puhaltaisi aina oikealla nopeudella. Uusiutuva ei myöskään tarkoita, että energiaa on saatavilla koko ajan. Tuuli ja aurinko ovat uusiutuvia, mutta ne riippuvat säästä.
+Nimellisteho ei kerro, kuinka paljon sähköä voimala todella tuottaa. Ajatellaan tuulivoimalaa, jonka nimellisteho on $5\,\text{MW}$. Oletetaan, että tuuli puhaltaisi aina oikealla nopeudella. Todellisuudessa voimala tuottaa vuodessa vain noin kolmanneksen siitä energiasta. Uusiutuva ei myöskään tarkoita, että energiaa on saatavilla koko ajan. Tuuli ja aurinko ovat uusiutuvia, mutta ne riippuvat säästä.
 
 ## Tiivistelmä
 - Voimalaitos muuttaa luonnonvaran energian sähköksi. Energia säilyy, mutta osa muuttuu hukkalämmöksi.

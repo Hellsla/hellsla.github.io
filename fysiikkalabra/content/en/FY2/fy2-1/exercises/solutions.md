@@ -51,7 +51,7 @@
 **Conversions:** The chemical energy is in kilojoules and the kinetic energy in joules. The prefix kilo means a thousand, so we substitute $3.00\,\text{kJ} = 3.00 \cdot 1000\,\text{J} = 3000\,\text{J}$.
 **Substitution:** $E_\text{thermal} = 3000\,\text{J} - 2150\,\text{J} = 850\,\text{J}$
 **Answer:** $850\,\text{J}$, to the nearest ten joules, because the chemical energy $3.00\,\text{kJ}$ is given to the nearest ten joules.
-**Reasonableness:** $2150\,\text{J} : 3000\,\text{J} \approx 0.72$, a little under three quarters, ends up as kinetic energy and the rest is heat, which suits an electric motor, which is much more efficient than a combustion engine. Checking backwards: $2150\,\text{J} + 850\,\text{J} = 3000\,\text{J}$.
+**Reasonableness:** $2150\,\text{J} : 3000\,\text{J} \approx 0.72$, a little under three quarters, ends up as kinetic energy and the rest is heat. This suits an electric motor, which is much more efficient than a combustion engine. Checking backwards: $2150\,\text{J} + 850\,\text{J} = 3000\,\text{J}$.
 
 ## fy2-1-L2-02
 **Given:** kinetic energy at the bottom $E_\text{k} = 2400\,\text{J}$, thermal energy produced by friction $E_\text{thermal} = 0.60\,\text{kJ}$, potential energy at the bottom $0\,\text{J}$, the child starts from rest

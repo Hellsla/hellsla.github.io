@@ -51,17 +51,17 @@ Kasvihuonekaasut päästävät siis auringon säteilyn läpi, mutta hidastavat l
   <foreignObject x="288" y="97.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{avaruuteen}$</div></foreignObject>
 </svg>
 
-Ongelma on se, että ilmiö voimistuu. Ihminen lisää ilmakehään hiilidioksidia ja metaania. Silloin lämpösäteily pääsee pois entistä hitaammin ja maapallon keskilämpötila nousee. Tätä pitkäaikaista muutosta sanotaan **ilmastonmuutokseksi**. Hiilidioksidin pitoisuus ilmakehässä on kasvanut noin $280\,\text{ppm}$:stä (ennen teollistumista) noin $420\,\text{ppm}$:ään (NOAA:n mittaukset, 2023). Hiilidioksidia on silti alle puoli promillea ilmasta. Pieni osuus riittää. Ilman pääkaasut, typpi ja happi, eivät juuri imetä lämpösäteilyä. Lämpösäteilyn pääsyn pois ratkaisevat juuri harvat kasvihuonekaasumolekyylit.
+Ongelma on se, että ilmiö voimistuu. Ihminen lisää ilmakehään hiilidioksidia ja metaania. Silloin lämpösäteily pääsee pois entistä hitaammin ja maapallon keskilämpötila nousee. Tätä pitkäaikaista muutosta sanotaan **ilmastonmuutokseksi**. Hiilidioksidin pitoisuus ilmakehässä on kasvanut noin $280\,\text{ppm}$:stä (ennen teollistumista) noin $420\,\text{ppm}$:ään (NOAA:n mittaukset, 2023). Hiilidioksidia on silti alle puoli promillea ilmasta. Pieni osuus riittää, koska ilman pääkaasut typpi ja happi eivät juuri ime lämpösäteilyä. Siksi juuri harvat kasvihuonekaasumolekyylit ratkaisevat, kuinka helposti lämpösäteily pääsee pois.
 
-Kasvihuoneilmiötä käsitellään laskemalla FY3-kurssilla luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*. Tässä riittää ymmärtää, mitä kaasut tekevät säteilylle ja mistä lisäkaasut tulevat.
+FY3-kurssilla kasvihuoneilmiötä käsitellään myös laskuilla. Se tehdään luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*. Tässä luvussa riittää ymmärtää kaksi asiaa: mitä kaasut tekevät säteilylle ja mistä lisäkaasut tulevat.
 
 ### Polttoaineet yhdistävät energian ja ilmaston
-Fossiilinen polttoaine on esimerkiksi kivihiili, öljy tai maakaasu. Se on muinaisten eliöiden kemiallista energiaa. Kivihiili on syntynyt enimmäkseen kasveista. Öljy ja maakaasu ovat syntyneet meren planktonista. Kun polttoaine palaa, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo*). Hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla, sitä enemmän hiilidioksidia vapautuu.
+Fossiilinen polttoaine on esimerkiksi kivihiili, öljy tai maakaasu. Se on muinaisten eliöiden kemiallista energiaa. Kivihiili on syntynyt enimmäkseen kasveista. Öljy ja maakaasu ovat syntyneet meren planktonista. Kun polttoaine palaa, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo E = Hm*). Hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla, sitä enemmän hiilidioksidia vapautuu.
 
 Fossiilisen polttoaineen hiili on ollut maan alla miljoonia vuosia. Siksi sen polttaminen lisää ilmakehän hiilidioksidia. Biomassan, esimerkiksi puun, hiili on sitoutunut kasveihin vasta vuosikymmenten aikana. Biomassan poltto ei silti ole päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu sitoo sen takaisin. Siihen menee vuosikymmeniä. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä.
 
 ### Tuotantotapoja verrataan elinkaaren päästöillä
-Päästöjä syntyy muustakin kuin polttamisesta. Voimala on rakennettava teräksestä, betonista ja kuparista. Polttoaine on kaivettava tai kerättävä ja kuljetettava. Lopuksi voimala puretaan. Siksi tuotantotavat vertaillaan **elinkaaren päästöillä**. Silloin kaikkien vaiheiden päästöt lasketaan yhteen. Summa jaetaan energialla, jonka voimala tuottaa koko elinkaarensa aikana.
+Päästöjä syntyy muustakin kuin polttamisesta. Voimala on rakennettava teräksestä, betonista ja kuparista. Polttoaine on kaivettava tai kerättävä ja kuljetettava. Lopuksi voimala puretaan. Siksi tuotantotapoja verrataan **elinkaaren päästöillä**. Elinkaari on voimalan koko ikä rakentamisesta purkamiseen. Silloin kaikkien vaiheiden päästöt lasketaan yhteen. Summa jaetaan energialla, jonka voimala tuottaa koko elinkaarensa aikana.
 
 Vertailua varten metaani ja muut kasvihuonekaasut muutetaan hiilidioksidiekvivalenteiksi ($\text{CO}_2$-ekv.). Se tarkoittaa sellaista hiilidioksidin määrää, jolla on sama lämmittävä vaikutus.
 
@@ -74,7 +74,7 @@ Ilmastovaikutuksen lisäksi tuotantotapoja punnitaan maankäytön, kuljetusten, 
 - **Vesivoima:** padot ja altaat muuttavat jokiympäristöä ja estävät kalojen kulun. Tuotantoa voi kuitenkin säätää.
 - **Ydinvoima:** pinta-alaa kuluu vähän. Polttoainetta tarvitaan massana vähän, joten kuljetuksia on vähän. Käytetty polttoaine on radioaktiivista jätettä. Se on eristettävä pitkäksi aikaa. Onnettomuuden seuraukset voisivat olla vakavia, vaikka riski on pieni.
 
-**Kestävä energiatalous** tuottaa ja käyttää energiaa niin, että nykyisten tarpeiden tyydyttäminen ei vie tulevilta sukupolvilta mahdollisuuksia. Parasta voimalaa ei ole. Valinnassa punnitaan ilmastovaikutusta, maankäyttöä, jätettä, turvallisuutta ja hintaa. Punnitaan myös sitä, että sähköä on aina saatavilla (luku *Energiantuotantotavat ja niiden vertailu*).
+**Kestävä energiatalous** tarkoittaa, että energiaa tuotetaan ja käytetään järkevästi. Nykyiset tarpeet tyydytetään, mutta tulevilta sukupolvilta ei viedä mahdollisuuksia. Parasta voimalaa ei ole. Valinnassa punnitaan ilmastovaikutusta, maankäyttöä, jätettä, turvallisuutta ja hintaa. Punnitaan myös sitä, että sähköä on aina saatavilla (luku *Energiantuotantotavat ja niiden vertailu*).
 
 ## Kaava: Hiilidioksidipäästö
 Päästö saadaan, kun käytetty tai tuotettu energia kerrotaan päästökertoimella:

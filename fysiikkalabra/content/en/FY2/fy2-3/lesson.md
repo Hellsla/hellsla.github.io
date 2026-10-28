@@ -36,11 +36,11 @@ E &= P\,t \\
 t &= \frac{E}{P}
 \end{aligned}
 ```
-The unit of power is the watt: $1\,\text{W} = 1\,\text{J/s}$. Prefixes work as with other quantities (chapter *Quantities, units and the SI system*): $1\,\text{kW} = 1000\,\text{W}$ and $1\,\text{MW} = 10^{6}\,\text{W}$. The power of power plants is measured in megawatts: the electrical power of the Olkiluoto 3 nuclear power unit is about $1600\,\text{MW}$ (TVO), which equals about $800\,000$ kettles.
+The unit of power is the watt: $1\,\text{W} = 1\,\text{J/s}$. Prefixes work as with other quantities (chapter *Quantities, units and the SI system*): $1\,\text{kW} = 1000\,\text{W}$ and $1\,\text{MW} = 10^{6}\,\text{W}$. The power of power plants is measured in megawatts: the electrical power of the Olkiluoto 3 nuclear power unit is about $1600\,\text{MW}$ (TVO), as much as about $800\,000$ kettles.
 
 If a device transforms energy steadily, energy as a function of time is a straight line starting from the origin. The slope of the line is the power: the greater the power, the more steeply the energy grows. In the figure, on the kettle's line the energy grows by $40\,\text{kJ}$ in a time interval of $20\,\text{s}$. Substituting $1\,\text{kJ} = 1000\,\text{J}$: $40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$, so $P = 40\,000\,\text{J} : 20\,\text{s} = 2000\,\text{W}$.
 
-<svg data-fig="graph" viewBox="0 0 600 340" role="img" aria-label="Graph: energy as a function of time for three devices that transform energy steadily. The 2000 W line of the kettle rises most steeply, the 1000 W line of the toaster half as gently and the 80 W line of the television almost horizontally. The slope of a line is the power: on the kettle&#x27;s line 40 kJ is used in 20 seconds. The scales are evenly spaced and the graph is to scale." style="max-width:100%;font-size:24px">
+<svg data-fig="graph" viewBox="0 0 600 340" role="img" aria-label="Graph: energy as a function of time for three devices that transform energy steadily. The 2000 W line of the kettle rises most steeply, the 1000 W line of the toaster rises half as steeply and the 80 W line of the television is almost horizontal. The slope of a line is the power: on the kettle&#x27;s line 40 kJ is used in 20 seconds. The scales are evenly spaced and the graph is to scale." style="max-width:100%;font-size:24px">
   <line x1="212.5" y1="290" x2="212.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="341.5" y1="290" x2="341.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="470" y1="290" x2="470" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -91,14 +91,14 @@ Electrical energy is billed in kilowatt-hours (kWh). One kilowatt-hour is the en
 A kilowatt-hour is therefore a unit of energy, not of power. The formula $E = P\,t$ gives kilowatt-hours directly when power is in kilowatts and time in hours: $\text{kW} \cdot \text{h} = \text{kWh}$.
 
 ### Typical powers and the electricity bill
-The table shows typical powers of household appliances, rounded from the typical values given by manufacturers. The power of a real appliance is on its rating plate. The power of a fridge is the power while the compressor runs, and the compressor does not run all the time.
+The table shows typical powers of household appliances, rounded from the typical values given by manufacturers. The power of a real appliance is on its rating plate. The power of a refrigerator is the power while its compressor runs, and the compressor does not run all the time.
 
 | Appliance | Power |
 | --- | --- |
 | LED lamp | $8\,\text{W}$ |
 | laptop | $50\,\text{W}$ |
 | television | $80\,\text{W}$ |
-| fridge | $100\,\text{W}$ |
+| refrigerator | $100\,\text{W}$ |
 | hair dryer | $1800\,\text{W}$ |
 | kettle | $2000\,\text{W}$ |
 | electric sauna heater | $8\,\text{kW}$ |
@@ -157,7 +157,7 @@ E &= P\,t \\
 **Reasonableness.** One kilowatt-hour covers an $80\,\text{W}$ television for about $12\,\text{h}$, and in a month we watch for $120\,\text{h}$, which is about ten kilowatt-hours. That costs about ten times $20\,\text{c}$, which is about two euros.
 
 ## Common misconception
-Many people think that a high power means high energy consumption. Power only tells the rate: the energy consumed is power times time. A hair dryer ($1800\,\text{W}$) runs for five minutes and consumes $0.15\,\text{kWh}$, but a $10\,\text{W}$ lamp that burns for a day consumes $0.24\,\text{kWh}$. Another mistake is to mix up the units: the watt is the unit of power and the kilowatt-hour the unit of energy, so "the power is $2\,\text{kWh}$" is wrong: the correct statement is that the power is $2\,\text{kW}$.
+Many people think that a high power means high energy consumption. Power only tells the rate: the energy consumed is power times time. A hair dryer ($1800\,\text{W}$) runs for five minutes and consumes $0.15\,\text{kWh}$, but a $10\,\text{W}$ lamp that is on for a day consumes $0.24\,\text{kWh}$. Another mistake is to mix up the units: the watt is the unit of power and the kilowatt-hour the unit of energy, so "the power is $2\,\text{kWh}$" is wrong: the correct statement is that the power is $2\,\text{kW}$.
 
 ## Summary
 - Power tells how fast energy is transformed or transferred: $P = \tfrac{\Delta E}{\Delta t}$. The unit is the watt, $1\,\text{W} = 1\,\text{J/s}$.

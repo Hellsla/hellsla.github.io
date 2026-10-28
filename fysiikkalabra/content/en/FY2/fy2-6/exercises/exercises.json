@@ -69,7 +69,7 @@
     {
       "id": "fy2-6-L2-04",
       "level": 2,
-      "text": "Olkiluoto 3 ($1.6\\,\\text{GW}$) runs at full power for the whole year ($8760\\,\\text{h}$). A household without electric heating in the example uses $5000\\,\\text{kWh}$ in a year. The annual consumption of how many households would the plant cover? Give the answer in millions of households.",
+      "text": "Olkiluoto 3 ($1.6\\,\\text{GW}$) runs at full power for the whole year ($8760\\,\\text{h}$). A household without electric heating in the example uses $5000\\,\\text{kWh}$ in a year. How many households' annual consumption would the plant cover? Give the answer in millions of households.",
       "answer": 2.8,
       "unit": "million",
       "tolerance": 0.02

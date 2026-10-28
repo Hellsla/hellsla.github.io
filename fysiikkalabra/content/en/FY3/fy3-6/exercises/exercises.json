@@ -45,7 +45,7 @@
     {
       "id": "fy3-6-L2-01",
       "level": 2,
-      "text": "160 g of water at a temperature of 95 °C is poured into a large mug. The tea is too hot to drink, so 40 g of cold water at a temperature of 8.0 °C is added. What is the temperature of the water after mixing? Assume that no heat is transferred to the mug or the air.",
+      "text": "160 g of water at a temperature of 95 °C is poured into a mug. The tea is too hot to drink, so 40 g of cold water at a temperature of 8.0 °C is added. What is the temperature of the water after mixing? Assume that no heat is transferred to the mug or the air.",
       "answer": 78,
       "unit": "°C",
       "tolerance": 0.02

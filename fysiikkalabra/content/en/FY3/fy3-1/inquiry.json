@@ -382,7 +382,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Explain and transfer",
-      "prompt": "Explain in your own words why an astronaut weighs only about one sixth on the Moon of what he weighs on Earth, even though nothing has disappeared from him. Use the concepts mass, weight and interaction, and the units.",
+      "prompt": "Explain in your own words why an astronaut weighs only about one sixth as much on the Moon as on Earth, even though no part of the astronaut has gone missing. Use the concepts mass, weight and interaction, and the units.",
       "criteria": [
         "I say that mass tells you the amount of matter, is in kilograms and stays the same on the Moon and on Earth.",
         "I say that weight is a force, in newtons, and tells you the strength of the interaction between the astronaut and the celestial body.",

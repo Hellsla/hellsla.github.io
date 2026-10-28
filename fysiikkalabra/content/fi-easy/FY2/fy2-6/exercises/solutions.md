@@ -1,7 +1,7 @@
 ## fy2-6-L1-01
 **Annettu:** keskiteho $P = 2{,}5\,\text{MW}$, aika $t = 168\,\text{h}$
 **Kysytty:** viikossa tuotettu energia $E$ megawattitunteina
-**Periaate:** Keskiteho on teho, jolla voimala tuottaisi saman energian tasaisesti koko ajan, joten energia on keskiteho kerrottuna ajalla.
+**Periaate:** Keskiteho on teho, jolla voimala tuottaisi saman energian, jos teho olisi koko ajan sama. Siksi energia on keskiteho kerrottuna ajalla.
 **Kaava:** $E = P t$
 **Muunnokset:** Ei tarvita: teho on megawatteina ja aika tunteina, joten tulo on suoraan megawattitunteina.
 **Sijoitus:** $E = 2{,}5\,\text{MW} \cdot 168\,\text{h} = 420\,\text{MWh}$
@@ -31,7 +31,7 @@
 ## fy2-6-L1-04
 **Annettu:** tuulivoima $20{,}2\,\text{TWh}$, kokonaistuotanto $79{,}9\,\text{TWh}$
 **Kysytty:** tuulivoiman osuus prosentteina
-**Periaate:** Osuus kertoo, kuinka suuri osa kokonaisuudesta osa on, joten osa jaetaan kokonaisuudella ja tulos ilmoitetaan prosentteina.
+**Periaate:** Osuus kertoo, kuinka suuri osa kokonaisuudesta jokin osa on. Osa jaetaan kokonaisuudella. Tulos ilmoitetaan prosentteina.
 **Kaava:** $\text{osuus} = \dfrac{E_\text{tuuli}}{E_\text{yht}}$
 **Muunnokset:** Ei tarvita: molemmat ovat teravattitunteina, joten yksikkö supistuu. Prosentteina $1 = 100\,\%$.
 **Sijoitus:** $\text{osuus} = 20{,}2\,\text{TWh} : 79{,}9\,\text{TWh} = 0{,}2528 = 25{,}28\,\%$
@@ -71,7 +71,7 @@
 ## fy2-6-L2-03
 **Annettu:** ydinvoiman energia $31\,\text{TWh}$, yhden tuulivoimalan vuosienergia $12\,\text{GWh}$
 **Kysytty:** tuulivoimaloiden lukumäärä $N$
-**Periaate:** Yhteinen energia on voimaloiden lukumäärä kertaa yhden voimalan energia, joten lukumäärä saadaan jakamalla ydinvoiman energia yhden tuulivoimalan energialla.
+**Periaate:** Voimaloiden yhteinen energia on lukumäärä kertaa yhden voimalan energia. Siksi lukumäärä saadaan näin: ydinvoiman energia jaetaan yhden tuulivoimalan energialla.
 **Kaava:** $E_\text{ydin} = N E_\text{tuuli}$, josta $N = \dfrac{E_\text{ydin}}{E_\text{tuuli}}$
 **Muunnokset:** $31\,\text{TWh} = 31 \cdot 10^{9}\,\text{kWh}$ ja $12\,\text{GWh} = 12 \cdot 10^{6}\,\text{kWh}$.
 **Sijoitus:** $N = 31 \cdot 10^{9}\,\text{kWh} : (12 \cdot 10^{6}\,\text{kWh}) = 2583$
@@ -83,7 +83,7 @@
 **Kysytty:** kotitalouksien lukumäärä miljoonina
 **Periaate:** Ensin lasketaan laitoksen vuosienergia kaavalla $E = P t$, koska teho on vakio. Sitten energia jaetaan yhden kotitalouden kulutuksella.
 **Kaava:** $N = \dfrac{P t}{E_\text{koti}}$
-**Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$, jolloin tulo kilowatin ja tunnin kanssa on kilowattitunteina.
+**Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$, Kun kilowatit kerrotaan tunneilla, tulos on kilowattitunteina.
 **Sijoitus:** $N = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh} = 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh} = 2\,803\,200$
 **Vastaus:** $2{,}8$ miljoonaa kotitaloutta, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
 **Järkevyys:** Tulos on samaa suuruusluokkaa kuin Suomen kotitalouksien lukumäärä (noin $2{,}86$ miljoonaa vuonna 2024, Tilastokeskus). Yksi laitos ei silti kata koko maan sähköä. Teollisuus ja palvelut käyttävät suuren osan sähköstä.
@@ -91,7 +91,7 @@
 ## fy2-6-L3-01
 **Annettu:** kulutus $11\,\text{GW}$, ydinvoima $3{,}5\,\text{GW}$, tuulivoiman nimellisteho $9{,}0\,\text{GW}$ ja toteutunut teho $4{,}0\,\%$ siitä
 **Kysytty:** muiden voimaloiden ja tuonnin tuotettava teho $P_\text{muut}$ gigawatteina
-**Periaate:** Sähköverkossa tuotannon ja kulutuksen on oltava yhtä suuret joka hetki, joten puuttuva teho on kulutus miinus sääriippuvan ja tasaisen tuotannon teho.
+**Periaate:** Sähköverkossa tuotannon ja kulutuksen on oltava yhtä suuret joka hetki. Puuttuva teho on siis kulutus miinus sääriippuvan ja tasaisen tuotannon teho.
 **Kaava:** $P_\text{muut} = P_\text{kulutus} - P_\text{ydin} - 0{,}040 \cdot P_\text{tuuli,nim}$
 **Muunnokset:** Ei tarvita: kaikki tehot ovat gigawatteina. Prosentti on $4{,}0\,\% = 0{,}040$.
 **Sijoitus:** $P_\text{muut} = 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}040 \cdot 9{,}0\,\text{GW} = 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}36\,\text{GW} = 7{,}14\,\text{GW}$
@@ -101,7 +101,7 @@
 ## fy2-6-L3-02
 **Annettu:** nimellisteho molemmilla $600\,\text{MW}$, tuulipuiston keskiteho $33\,\%$ ja ydinvoimalan $90\,\%$ nimellistehosta
 **Kysytty:** vuosienergioiden suhde $E_\text{ydin} : E_\text{tuuli}$
-**Periaate:** Kummankin vuosienergia on keskiteho kertaa sama vuoden pituus, $E = P_\text{ka} t$. Nimellisteho ja aika ovat samat, joten suhde riippuu vain keskitehojen osuuksista.
+**Periaate:** Kummankin voimalan vuosienergia on keskiteho kertaa vuoden pituus, $E = P_\text{ka} t$. Vuoden pituus on sama molemmille. Myös nimellisteho on sama. Siksi suhde riippuu vain siitä, kuinka suuri osa nimellistehosta keskiteho on.
 **Kaava:** $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = \dfrac{0{,}90 \cdot 600\,\text{MW} \cdot t}{0{,}33 \cdot 600\,\text{MW} \cdot t}$
 **Muunnokset:** Ei tarvita: nimellisteho ja aika supistuvat pois.
 **Sijoitus:** $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = 0{,}90 : 0{,}33 = 2{,}727$
@@ -111,9 +111,9 @@
 ## fy2-6-L3-03
 **Annettu:** Olkiluoto 3:n nimellisteho $P_\text{O} = 1600\,\text{MW}$ ja keskiteho $90\,\%$ siitä, aurinkopuiston keskiteho $11\,\%$ nimellistehosta, molemmille sama aika $t$ (vuosi)
 **Kysytty:** aurinkopuiston nimellisteho $P_\text{a}$ gigawatteina, ja korvaisiko puisto Olkiluoto 3:n tammikuun iltana
-**Periaate:** Vuosienergia on keskiteho kerrottuna ajalla, $E = P_\text{ka} t$, ja keskiteho on annettu osuus $o$ nimellistehosta. Aika on molemmilla sama vuosi, joten vuosienergiat ovat yhtä suuret, kun keskitehot ovat yhtä suuret.
+**Periaate:** Vuosienergia on keskiteho kerrottuna ajalla, $E = P_\text{ka} t$. Keskiteho on annettu osuus $o$ nimellistehosta. Aika on molemmilla sama vuosi. Siksi vuosienergiat ovat yhtä suuret, kun keskitehot ovat yhtä suuret.
 **Kaava:** $o_\text{a} P_\text{a}\, t = o_\text{O} P_\text{O}\, t$, josta $P_\text{a} = \dfrac{o_\text{O} P_\text{O}}{o_\text{a}}$
 **Muunnokset:** $o_\text{O} = 90\,\% = 0{,}90$ ja $o_\text{a} = 11\,\% = 0{,}11$. Lopuksi megawatit gigawateiksi: $13\,091\,\text{MW} = 13{,}091 \cdot 1000\,\text{MW} = 13{,}1\,\text{GW}$.
 **Sijoitus:** $P_\text{a} = 0{,}90 \cdot 1600\,\text{MW} : 0{,}11 = 1440\,\text{MW} : 0{,}11 = 13\,091\,\text{MW} = 13{,}1\,\text{GW}$
 **Vastaus:** $13\,\text{GW}$, kaksi merkitsevää numeroa kuten osuuksissa $11\,\%$ ja $90\,\%$.
-**Järkevyys:** Arvio: $90 : 11 \approx 8$, joten nimellistehoa tarvitaan noin kahdeksan kertaa enemmän, $8 \cdot 1{,}6\,\text{GW} \approx 13\,\text{GW}$. Tammikuun iltana aurinko on laskenut. Silloin puisto ei tuota lainkaan, vaikka sen vuosienergia olisi sama kuin Olkiluoto 3:n. Olkiluoto 3:n tilalle tarvittaisiin silloin säädettävää tuotantoa, kuten vesivoimaa ja polttoainevoimaloita. Tarvittaisiin myös tuontisähköä ja energiavarastoja. Sama vuosienergia ei siis tarkoita, että voimala korvaa toisen joka hetki.
+**Järkevyys:** Arvio: $90 : 11 \approx 8$, joten nimellistehoa tarvitaan noin kahdeksan kertaa enemmän, $8 \cdot 1{,}6\,\text{GW} \approx 13\,\text{GW}$. Tammikuun iltana aurinko on laskenut. Silloin puisto ei tuota lainkaan, vaikka sen vuosienergia olisi sama kuin Olkiluoto 3:n. Olkiluoto 3:n tilalle tarvittaisiin silloin säädettävää tuotantoa, kuten vesivoimaa ja polttoainevoimaloita. Toinen vaihtoehto on tuontisähkö ja energiavarastot. Sama vuosienergia ei siis tarkoita, että voimala korvaa toisen joka hetki.

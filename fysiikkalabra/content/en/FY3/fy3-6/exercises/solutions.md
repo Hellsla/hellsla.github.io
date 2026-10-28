@@ -41,7 +41,7 @@
 ## fy3-6-L1-05
 **Given:** ice, $m = 0.50\,\text{kg}$, $T_\text{initial} = -22\,{}^\circ\text{C}$, $T_\text{final} = -4.0\,{}^\circ\text{C}$; from the table $c = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the quantity of heat $Q$ transferred to the ice, in kilojoules
-**Principle:** The ice warms but does not melt, because the final temperature is below $0\,{}^\circ\text{C}$. So $Q = c m \Delta T$ with the specific heat capacity of ice is enough, and no latent heat of fusion is needed.
+**Principle:** The ice warms but does not melt, because the final temperature is below $0\,{}^\circ\text{C}$. So it is enough to use $Q = c m \Delta T$ with the specific heat capacity of ice, and no latent heat of fusion is needed.
 **Formula:** $Q = c m \Delta T$, where $\Delta T = T_\text{final} - T_\text{initial}$
 **Conversions:** $\Delta T = -4.0\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 18\,\text{K}$, the same in kelvins. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $Q = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 18\,\text{K} = 18\,900\,\text{J} = 18.9\,\text{kJ}$

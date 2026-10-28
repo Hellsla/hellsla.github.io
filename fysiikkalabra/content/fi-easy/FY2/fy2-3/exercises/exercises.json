@@ -87,7 +87,7 @@
     {
       "id": "fy2-3-L3-02",
       "level": 3,
-      "text": "Kotitalous kuluttaa vuodessa sähköenergiaa $3{,}0 \\cdot 10^{3}\\,\\text{kWh}$. Vuodessa on $8760\\,\\text{h}$. Laske kotitalouden keskiteho watteina. Onko se suurempi vai pienempi kuin kotitalouden laitteiden nimellistehojen summa, ja miksi?",
+      "text": "Kotitalous kuluttaa vuodessa sähköenergiaa $3{,}0 \\cdot 10^{3}\\,\\text{kWh}$. Vuodessa on $8760\\,\\text{h}$. Laske kotitalouden keskiteho watteina. Vertaa sitä kotitalouden laitteiden nimellistehojen summaan. Nimellisteho on laitteeseen merkitty teho. Onko keskiteho suurempi vai pienempi kuin summa? Miksi?",
       "answer": 340,
       "unit": "W",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy2-3-L3-03",
       "level": 3,
-      "text": "Sähköauto kuluttaa ajettaessa $18\\,\\text{kWh}$ sadalla kilometrillä. Auto ladataan pistorasiasta teholla $2{,}3\\,\\text{kW}$ ajan $8{,}0\\,\\text{h}$. Kuinka pitkän matkan latausenergia riittää, kun lataushäviöt jätetään huomiotta?",
+      "text": "Sähköauto kuluttaa ajettaessa $18\\,\\text{kWh}$ sadalla kilometrillä. Auto ladataan pistorasiasta teholla $2{,}3\\,\\text{kW}$. Lataus kestää $8{,}0\\,\\text{h}$. Kuinka pitkän matkan auto voi ajaa tällä latausenergialla? Lataushäviöt jätetään huomiotta.",
       "answer": 100,
       "unit": "km",
       "tolerance": 0.03

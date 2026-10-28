@@ -30,9 +30,14 @@ def is_text(key, value, parent=None):
     """Is this string a text a translation translates? An experiment's column names ({"names": {var: name}}) and a
     unit written in words (kpl, milj. km) are; numbers, ids, symbol units and settings are not."""
     if not isinstance(value, str): return False
-    if parent == "names": return True
+    if parent in ("names", "values"): return True   # values: {param: {value: words}}, a select's option in words
     if key in ("unit", "units") or parent == "units": return bool(WORD_UNIT.search(value))
     return key in TEXT_KEYS
+
+
+def value_words(key, parent):
+    """The parent key a dict's items are judged under: the words of "values" sit two levels down ({param: {value: words}})."""
+    return "values" if parent == "values" else key
 JSON_FILES = ("meta.json", "exercises.json", "exit-ticket.json", "inquiry.json")
 
 
@@ -41,7 +46,7 @@ def same_data(a, b, path, errs, key=None, parent=None):
     if isinstance(a, dict):
         if not isinstance(b, dict) or set(a) != set(b):
             errs.append(f"{path}: keys {sorted(set(a) ^ set(b if isinstance(b, dict) else {}))} differ from Finnish"); return
-        for k in a: same_data(a[k], b[k], f"{path}.{k}", errs, k, key)
+        for k in a: same_data(a[k], b[k], f"{path}.{k}", errs, k, value_words(key, parent))
     elif isinstance(a, list):
         if not isinstance(b, list) or len(a) != len(b): errs.append(f"{path}: {len(a)} items in Finnish, {len(b) if isinstance(b, list) else 'not a list'} here"); return
         for i, (x, y) in enumerate(zip(a, b)): same_data(x, y, f"{path}[{i}]", errs, key, parent)

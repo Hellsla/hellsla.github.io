@@ -75,7 +75,7 @@
       "type": "interpret",
       "title": "Electricity production in Finland in 2024",
       "source": "statistics",
-      "source_note": "Statistics Finland: Electricity and heat production 2024 (figures for nuclear power and bio-based fuels derived from percentages, rounded; other sources = total production minus the other rows).",
+      "source_note": "Statistics Finland: Electricity and heat production 2024 (figures for nuclear power and biofuels derived from percentages, rounded; other sources = total production minus the other rows).",
       "text": "The table shows electricity production in Finland in 2024 by energy source. Total production was $79.9\\,\\text{TWh}$. It also includes small other sources, which are collected on the last row.\n\n| Source | $E$ (TWh) |\n|---|---|\n| nuclear power | $31$ |\n| wind power | $20.2$ |\n| hydropower | $14.1$ |\n| biofuels | $9.5$ |\n| fossil fuels and peat | $3.4$ |\n| solar power | $0.9$ |\n| other sources | $0.8$ |",
       "question": {
         "type": "numeric",
@@ -225,7 +225,7 @@
         },
         {
           "text": "The power should have been given in megawatts, and the formula is otherwise correct.",
-          "feedback": "The unit does not fix the result. If the power were calculated correctly, you would get $1.6\\,\\text{MW}$; the multiplication gives the wrong quantity, because the energy was multiplied by time instead of power."
+          "feedback": "The unit does not fix the result. If the power were calculated correctly, you would get $1.6\\,\\text{MW}$; the multiplication gives the wrong quantity, because the energy was multiplied by time instead of being divided by it."
         },
         {
           "text": "There is no mistake in the calculation, because the power plant is big.",
@@ -324,7 +324,7 @@
       "criteria": [
         "I compare at least three criteria.",
         "I say that nuclear power runs steadily and wind power varies with the weather.",
-        "I justify choosing base load by saying that production is predictable.",
+        "I justify the choice of base load by the fact that its production is predictable.",
         "I mention at least one environmental effect of each."
       ],
       "model": "The unit power of a nuclear power plant is large (Olkiluoto 3 about $1600\\,\\text{MW}$), and it runs steadily at almost rated power, so its annual production is large. A wind turbine is smaller (about $5\\,\\text{MW}$) and its power varies with the wind, so its average power is only a part of its rated power. Neither can be adjusted quickly: adjusting nuclear power is slow and you cannot add wind. Nuclear power is suitable as base load, because its production is steady and predictable. Wind power produces no carbon dioxide in use, and nuclear power produces radioactive waste, which must be stored safely."
