@@ -177,11 +177,26 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation}
+def extrapolation_points():
+    """Measurements of a gas at constant volume, for a task (scripts/figcat.py variant): the points without the
+    fitted line or its extension, on axes reaching below 0 °C; the description lists the points, not the extrapolated value."""
+    f = Fig("fy33-extrap-points", 330, "Kaasun paine lämpötilan funktiona suljetussa jäykässä astiassa: viisi mittauspistettä "
+            "ilman piirrettyä suoraa. Pisteet ovat (0 °C; 75 kPa), (25 °C; 82 kPa), (50 °C; 89 kPa), (75 °C; 96 kPa) ja "
+            "(100 °C; 102,5 kPa). Vaaka-akseli ulottuu −150 °C:een; ruudukon väli on 25 °C ja 25 kPa.")
+    ax = Axes(f, (92, 290), (500, 56), x=(-150, 110), y=(0, 125), xticks=list(range(-125, 101, 25)),
+              yticks=[25, 50, 75, 100], xlabel=r"\theta\ (^\circ\text{C})", ylabel=r"p\ (\text{kPa})",
+              xfmt=lambda v: (("-" if v < 0 else "") + fi(abs(v))) if v % 50 == 0 else "", origin_label=False)
+    for th, pr in [(0, 75), (25, 82), (50, 89), (75, 96), (100, 102.5)]:
+        ax.point(th, pr, WATER)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation, "extrapolation-points": extrapolation_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "system": "safe: a gas as a system and its state variables",
     "micro-model": "reveals: the hot gas has the higher pressure",
     "kelvin-scale": "reveals: the K–°C conversions",
     "extrapolation": "reveals: the zero-pressure temperature about −270 °C",
+    "extrapolation-points": "safe: five (θ, p) points of a gas at constant volume without the line or its extension; the description lists the points",
 }

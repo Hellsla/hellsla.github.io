@@ -69,10 +69,11 @@
     {
       "id": "fy3-8-L2-04",
       "level": 2,
-      "text": "Kerrostalon julkisivussa on 3,00 m pitkä metallinen lista. Aamulla listan lämpötila on 12 °C, ja iltapäivällä aurinko on lämmittänyt sen 42 °C:seen. Mittausten mukaan lista on pidentynyt 2,07 mm. Laske listan pituuden lämpötilakerroin $\\alpha$ yksikössä 10⁻⁶ 1/K ja päättele oppitunnin taulukosta, mistä metallista lista on tehty (teräs 12, alumiini 23, kupari 17, kaikki yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$).",
-      "answer": 23,
+      "text": "Siltarakenteessa käytettävää metallipalkkia, jonka pituus on $20\\,{}^\\circ\\text{C}$:ssa $5{,}00\\,\\text{m}$, lämmitetään ja sen pituuden muutosta mitataan. Kuvaajassa on pituuden muutos $\\Delta L$ lämpötilan funktiona. Laske palkin aineen pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$ ja päättele oppitunnin taulukosta, mistä metallista palkki on tehty (teräs 12, alumiini 23, kupari 17, kaikki yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$). Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-8/length-graph",
+      "answer": 12,
       "unit": "10⁻⁶ 1/K",
-      "tolerance": 0.02
+      "tolerance": 0.03
     }
   ],
   "level3": [

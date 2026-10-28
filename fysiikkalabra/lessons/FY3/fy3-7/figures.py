@@ -78,6 +78,21 @@ def phase_diagram():
     return f.svg()
 
 
+def melting_curve():
+    """Task variant of the heating curve, to scale: 0,60 kg of ice, T against the energy transferred Q in kJ. Points
+    (0; -16), (20; 0), (220; 0) and (300; 31,9): no label says which part is melting and no s is written."""
+    f = Fig("fy37-melting-curve", 330, "Kuvaaja mittakaavassa: jääpalan lämmityksessä jään lämpötila T celsiusasteina siirretyn energian Q "
+            "funktiona kilojouleina. Lämpötila nousee pisteestä (0 kJ; −16 °C) pisteeseen (20 kJ; 0 °C), pysyy 0 °C:ssa pisteeseen "
+            "(220 kJ; 0 °C) ja nousee sen jälkeen loivemmin. Ruudukon väli on 20 kJ ja 10 °C.")
+    ax = Axes(f, (96, 280), (470, 56), x=(0, 320), y=(-20, 40), xticks=list(range(20, 321, 20)),
+              yticks=[-10, 0, 10, 20, 30, 40], xlabel=r"Q\ (\text{kJ})", ylabel=r"T\ ({}^\circ\text{C})",
+              xfmt=lambda v: fi(v) if v % 40 == 0 else "")
+    ax.line([(0, -16), (20, 0), (220, 0), (300, 80 / 251 * 100)], HOT, 3)
+    for q, t in [(0, -16), (20, 0), (220, 0)]:
+        ax.point(q, t, HOT)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: water boiling hard on a hot plate, the thermometer stuck at the boiling point."""
     from figlib import WHITE, INK, RULE, RULE_LIGHT, IRON, ALUMINIUM, METAL_EDGE, n
@@ -148,10 +163,11 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram}
+FIGURES = {"hero": hero, "scene": scene, "micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram, "melting-curve": melting_curve}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "micro-model": "safe: the three phases as particles",
     "heating-curve": "reveals: which part is melting and which boiling",
     "phase-diagram": "reveals: a lower pressure lowers the boiling point",
+    "melting-curve": "safe: heating curve of 0,60 kg ice to scale, the end points of the flat part on grid crossings, no part named, no s",
 }

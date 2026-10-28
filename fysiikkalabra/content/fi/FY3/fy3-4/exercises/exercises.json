@@ -61,10 +61,11 @@
     {
       "id": "fy3-4-L2-03",
       "level": 2,
-      "text": "Öljynpuristamon säiliössä on rypsiöljyä. Säiliön pohjalla, 0,800 m:n syvyydessä, öljyn hydrostaattinen paine on 7,22 kPa. Laske rypsiöljyn tiheys.",
-      "answer": 920,
-      "unit": "kg/m³",
-      "tolerance": 0.02
+      "text": "Kuvaajassa ovat kahden nesteen, A:n ja B:n, paineet syvyyden funktiona. Pinnalla paine on molemmissa sama. Missä syvyydessä nesteessä A paine on yhtä suuri kuin nesteessä B syvyydessä $4{,}0\\,\\text{m}$?",
+      "figure": "fy3-4/two-liquids",
+      "answer": 6.0,
+      "unit": "m",
+      "tolerance": 0.03
     },
     {
       "id": "fy3-4-L2-04",

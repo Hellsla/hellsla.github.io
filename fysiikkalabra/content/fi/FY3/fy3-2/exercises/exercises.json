@@ -27,8 +27,9 @@
     {
       "id": "fy3-2-L1-04",
       "level": 1,
-      "text": "Kelkkaa vedetään 6,0 m:n matka. Vetävä voima on koko matkalla 35 N ja liikkeen suuntainen, joten $(s, F)$-kuvaaja on vaakasuora jana. Laske voiman tekemä työ kuvaajan pinta-alana.",
-      "answer": 210,
+      "text": "Kuvaajassa on kelkkaa vetävän, liikkeen suuntaisen voiman suuruus kuljetun matkan funktiona. Laske voiman tekemä kokonaistyö kuvaajan pinta-alana.",
+      "figure": "fy3-2/pull-steps",
+      "answer": 190,
       "unit": "J",
       "tolerance": 0.02
     },

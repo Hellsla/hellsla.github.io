@@ -1,385 +1,414 @@
 {
-  "version": 1,
-  "contribution": "Lämpömäärä ei aina nosta lämpötilaa: puhtaan aineen olomuodon muuttuessa vakiopaineessa siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia vakiolämpötilassa, ja siihen tarvittava lämpömäärä on $Q = sm$ tai $Q = rm$.",
-  "learn": ["Osaat selittää, mihin energia menee, kun puhtaan aineen olomuoto muuttuu vakiopaineessa ja lämpötila pysyy vakiona.", "Osaat laskea sulamiseen ja höyrystymiseen tarvittavan lämpömäärän."],
-  "prior": [
-    "Lämpömäärä $Q = cm\\Delta T$ ja veden ominaislämpökapasiteetti $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (luku *Aineen lämpeneminen ja jäähtyminen*)",
-    "Teho kertoo, kuinka nopeasti energiaa siirtyy: $Q = Pt$ (luku *Työ ja energia*)"
-  ],
-  "activities": [
+ "version": 1,
+ "contribution": "Lämpömäärä ei aina nosta lämpötilaa: puhtaan aineen olomuodon muuttuessa vakiopaineessa siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia vakiolämpötilassa, ja siihen tarvittava lämpömäärä on $Q = sm$ tai $Q = rm$.",
+ "learn": [
+  "Osaat selittää, mihin energia menee, kun puhtaan aineen olomuoto muuttuu vakiopaineessa ja lämpötila pysyy vakiona.",
+  "Osaat laskea sulamiseen ja höyrystymiseen tarvittavan lämpömäärän."
+ ],
+ "prior": [
+  "Lämpömäärä $Q = cm\\Delta T$ ja veden ominaislämpökapasiteetti $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (luku *Aineen lämpeneminen ja jäähtyminen*)",
+  "Teho kertoo, kuinka nopeasti energiaa siirtyy: $Q = Pt$ (luku *Työ ja energia*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Laitat kattilaan pakastimen jääpaloja, kytket levyn päälle ja työnnät lämpömittarin jäiden sekaan. Levy antaa koko ajan saman tehon. Lämpömittarin lukema alkaa pakkasen puolelta ja nousee – mutta nouseeko se tasaisesti koko ajan, kunnes kattila on tyhjä?",
+   "question": "Mihin levyltä tuleva energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu?"
+  },
+  {
+   "id": "pr-lampo",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Kertaa: lämpömäärä",
+   "prompt": "Kattilassa on $0{,}50\\,\\text{kg}$ vettä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Kuinka suuri lämpömäärä tarvitaan, jotta vesi lämpenee $100\\,{}^\\circ\\text{C}$:seen? Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+   "choices": [
     {
-      "id": "hook",
-      "stage": "herata",
-      "type": "hook",
-      "text": "Laitat kattilaan pakastimen jääpaloja, kytket levyn päälle ja työnnät lämpömittarin jäiden sekaan. Levy antaa koko ajan saman tehon. Lämpömittarin lukema alkaa pakkasen puolelta ja nousee – mutta nouseeko se tasaisesti koko ajan, kunnes kattila on tyhjä?",
-      "question": "Mihin levyltä tuleva energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu?"
+     "text": "noin $2{,}1\\,\\text{kJ}$",
+     "feedback": "Tämä on lämpömäärä yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$, joten $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
     },
     {
-      "id": "pr-lampo",
-      "stage": "herata",
-      "type": "choice",
-      "title": "Kertaa: lämpömäärä",
-      "prompt": "Kattilassa on $0{,}50\\,\\text{kg}$ vettä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Kuinka suuri lämpömäärä tarvitaan, jotta vesi lämpenee $100\\,{}^\\circ\\text{C}$:seen? Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
-      "choices": [
-        {
-          "text": "noin $2{,}1\\,\\text{kJ}$",
-          "feedback": "Tämä on lämpömäärä yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$, joten $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
-        },
-        {
-          "text": "noin $210\\,\\text{kJ}$",
-          "correct": true,
-          "feedback": "Oikein: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. Tätä lukua voit verrata tämän tunnin olomuodon muutoksiin."
-        },
-        {
-          "text": "noin $419\\,\\text{kJ}$",
-          "feedback": "Massa jäi pois. Ominaislämpökapasiteetti kertoo lämpömäärän *kilogrammaa* kohti, joten se kerrotaan massalla: $Q = cm\\Delta T = 4190 \\cdot 0{,}50 \\cdot 100\\,\\text{J} \\approx 210\\,\\text{kJ}$."
-        }
-      ],
-      "optional": true
+     "text": "noin $210\\,\\text{kJ}$",
+     "correct": true,
+     "feedback": "Oikein: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. Tätä lukua voit verrata tämän tunnin olomuodon muutoksiin."
     },
     {
-      "id": "pred-1",
-      "stage": "ennusta",
-      "type": "choice",
-      "title": "Ennuste 1: teho kaksinkertaistuu",
-      "prompt": "Kattilassa on $0{,}50\\,\\text{kg}$ vettä, joka kiehuu $1000\\,\\text{W}$:n kuumentimella. Kuumentimen teho nostetaan $2000\\,\\text{W}$:iin. Mitä veden lämpötilalle ja kiehumisen kestolle (aika, jossa kaikki vesi kiehuu pois) tapahtuu?",
-      "justify": true,
-      "reveal": {
-        "after": "exp-1",
-        "min": 2
-      },
-      "choices": [
-        {
-          "text": "Vesi kuumenee yli $100\\,{}^\\circ\\text{C}$:n, koska siihen tulee energiaa nopeammin.",
-          "feedback": "Animaatiossa kiehumisen vaakasuora osa on $100\\,{}^\\circ\\text{C}$:ssa kummallakin teholla. Kiehuessa lämpötila pysyy vakiona, joten hiukkasten keskimääräinen liike-energia ei kasva; lisäenergia höyrystää vettä, eli molekyylit etääntyvät toisistaan ja niiden välinen vuorovaikutusenergia kasvaa. Vesi höyrystyy nopeammin, mutta ei kuumene. Taulukossa kiehumisen kesto puolittuu, $1130\\,\\text{s}$:sta $565\\,\\text{s}$:iin."
-        },
-        {
-          "text": "Lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, mutta vesi kiehuu pois puolessa ajassa.",
-          "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: kiehumisen kesto puolittuu $1130\\,\\text{s}$:sta $565\\,\\text{s}$:iin, ja animaatiossa vaakasuora osa on kummallakin teholla $100\\,{}^\\circ\\text{C}$:ssa. Höyrystämiseen tarvitaan aina sama energia, ja kaksinkertainen teho siirtää sen puolessa ajassa."
-        },
-        {
-          "text": "Lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, ja kiehuminen kestää yhtä kauan, koska vettä on yhtä paljon.",
-          "feedback": "Lämpötila pysyy kyllä $100\\,{}^\\circ\\text{C}$:ssa, mutta kesto ei: taulukossa se putoaa $1130\\,\\text{s}$:sta $565\\,\\text{s}$:iin. Vesimäärän höyrystämiseen tarvitaan tietty energia, ja suurempi teho siirtää sen nopeammin, $t = Q/P$."
-        }
-      ]
-    },
-    {
-      "id": "pred-2",
-      "stage": "ennusta",
-      "type": "choice",
-      "title": "Ennuste 2: sulaminen ja kiehuminen",
-      "prompt": "Sama kuumennin ($1000\\,\\text{W}$) sulattaa jään ja myöhemmin kiehuttaa saman veden pois. Kuinka sulamisen ja kiehumisen kestot suhtautuvat toisiinsa, ja muuttuuko suhde, kun massa kaksinkertaistetaan $0{,}25\\,\\text{kg}$:sta $0{,}50\\,\\text{kg}$:aan?",
-      "justify": true,
-      "reveal": {
-        "after": "exp-2",
-        "min": 2
-      },
-      "choices": [
-        {
-          "text": "Ne kestävät suunnilleen yhtä kauan, koska molemmat ovat olomuodon muutoksia.",
-          "feedback": "Mallin mukaan kiehuminen kestää noin seitsemän kertaa pidempään kuin sulaminen ($565\\,\\text{s}$ ja noin $84\\,\\text{s}$, kun $m = 0{,}25\\,\\text{kg}$). Sulamisessa hiukkaset pysyvät lähellä toisiaan ja vain niiden järjestys purkautuu, mutta höyrystymisessä ne etääntyvät kauas toisistaan, ja niiden välinen vuorovaikutusenergia kasvaa paljon enemmän kilogrammaa kohti."
-        },
-        {
-          "text": "Kiehuminen kestää noin seitsemän kertaa pidempään, ja suhde on sama kummallakin massalla.",
-          "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $0{,}25\\,\\text{kg}$:lla kestot ovat noin $84\\,\\text{s}$ ja $565\\,\\text{s}$, $0{,}50\\,\\text{kg}$:lla $167\\,\\text{s}$ ja $1130\\,\\text{s}$. Kumpikin kesto kaksinkertaistuu massan mukana, joten suhde pysyy noin 6,8:ssa. Jokainen kilogramma tarvitsee sulaakseen ja höyrystyäkseen aina saman energian."
-        },
-        {
-          "text": "Kiehuminen kestää pidempään, ja ero kasvaa suhteessa, kun massa kasvaa.",
-          "feedback": "Kiehuminen kestää pidempään, mutta suhde ei muutu: $0{,}25\\,\\text{kg}$:lla $565/83{,}5 \\approx 6{,}8$ ja $0{,}50\\,\\text{kg}$:lla $1130/167 \\approx 6{,}8$. Kumpikin kesto on suoraan verrannollinen massaan, joten niiden suhde ei riipu massasta."
-        },
-        {
-          "text": "Sulaminen kestää pidempään, koska kylmää jäätä on vaikeampi lämmittää.",
-          "feedback": "Sulamisen aikana jää on jo 0-asteista, eikä sen lämpötila muutu. Mallin mukaan sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (noin $84\\,\\text{s}$ ja $565\\,\\text{s}$, kun $m = 0{,}25\\,\\text{kg}$)."
-        }
-      ],
-      "optional": true
-    },
-    {
-      "id": "pred-3",
-      "stage": "ennusta",
-      "type": "choice",
-      "layout": "models",
-      "title": "Ennuste 3: miksi lämpötila ei nouse?",
-      "prompt": "Sulamisen aikana jään ja veden seoksen lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, vaikka kuumennin toimii koko ajan. Kolme opiskelijaa selittää ilmiön. Kenen selitys sopii siihen, että vakio-osan kesto kasvaa massan mukana?",
-      "justify": true,
-      "reveal": {
-        "after": "exp-2",
-        "min": 2
-      },
-      "choices": [
-        {
-          "text": "Aino: Energia karkaa astiasta ilmaan yhtä nopeasti kuin sitä tulee, joten aine ei lämpene.",
-          "feedback": "Jos energiaa karkaisi yhtä nopeasti kuin sitä tulee, vaakasuora osa ei loppuisi koskaan. Se kuitenkin loppuu, kun kaikki jää on sulanut, ja sen kesto kasvaa massan mukana: jokainen kilogramma tarvitsee oman energiansa. Häviöt hidastavat lämpenemistä, mutta ne eivät selitä, miksi lämpötila pysähtyy juuri sulamispisteeseen."
-        },
-        {
-          "text": "Bea: Energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa, joten hiukkasten keskimääräinen liike-energia ei kasva eikä lämpötila nouse.",
-          "correct": true,
-          "feedback": "Tämä selitys sopii havaintoihin: lämpötila pysähtyy aina sulamispisteeseen, ja vakio-osan kesto on suoraan verrannollinen massaan, koska jokaisen kilogramman sulaminen kasvattaa hiukkasten välistä vuorovaikutusenergiaa yhtä paljon. Simulaation malli on rakennettu tämän selityksen varaan, joten se ei yksin todista sitä; ratkaisevaa on, että selitys ennustaa vakio-osan pituuden oikein. Vesimolekyylit pysyvät ehjinä: muuttuvat vain molekyylien väliset vuorovaikutukset, eivät molekyylien sisäiset kemialliset sidokset."
-        },
-        {
-          "text": "Cem: Hiukkasten liike nopeutuu koko ajan, mutta lämpömittari ei ehdi reagoida ennen kuin jää on sulanut.",
-          "feedback": "Lämpömittarin viive on sekunteja, mutta sulaminen kestää minuutteja, ja vakio-osa on sitä pidempi, mitä enemmän jäätä on. Viive ei selitä kumpaakaan. Lisäksi lämpötila kuvaa hiukkasten liikettä: jos liike nopeutuisi, lämpötila nousisi. Vaakasuoran osan aikana siirtyvä energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa."
-        }
-      ]
-    },
-    {
-      "id": "simulaatio",
-      "stage": "tutki",
-      "type": "sim",
-      "text": "Simulaatiossa jäätä lämmitetään $-20\\,{}^\\circ\\text{C}$:sta vakioteholla normaalissa ilmanpaineessa, kunnes se on 130-asteista höyryä.",
-      "howto": "Paina *Lämmitä* ja seuraa $(t, T)$-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan?",
-      "model": "Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen ja paine pysyy normaalissa ilmanpaineessa $p = 101\\,\\text{kPa}$. Astiaa sulkee kevyt, vapaasti liikkuva mäntä, eikä höyry poistu astiasta vaan laajenee männän alla; kuva ei ole mittakaavassa, sillä höyryn tilavuus on noin 1700-kertainen veteen verrattuna. Siksi vesi kiehuu $100\\,{}^\\circ\\text{C}$:ssa, ja höyryn lämpenemiseen käytetään vakiopaineen ominaislämpökapasiteettia $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$. Avoimessa kattilassa höyry karkaisi eikä lämpenisi $130\\,{}^\\circ\\text{C}$:seen. Suljetussa jäykässä astiassa paine kasvaisi höyryn muodostuessa, kiehumislämpötila nousisi, eikä käyrässä olisi vaakasuoraa osaa tasan $100\\,{}^\\circ\\text{C}$:ssa. Ruudun arvot ovat mallin laskemia, eivät mittauksia oikeasta astiasta."
-    },
-    {
-      "id": "exp-1",
-      "stage": "tutki",
-      "type": "experiment",
-      "title": "Koe 1: vain teho muuttuu",
-      "intro": "Testaa ennuste 1. Massa on lukittu $0{,}50\\,\\text{kg}$:aan; muuta vain tehoa. Kirjaa sulamisen ja kiehumisen kestot ainakin kahdella teholla, esimerkiksi $1000\\,\\text{W}$ ja $2000\\,\\text{W}$. Kestot ovat mallin laskemia ($t = Q/P$) ja näkyvät heti. Paina kummallakin teholla myös *Lämmitä* ja katso, millä lämpötilalla kuvaajan pitkä vaakasuora osa on.",
-      "initial": {
-        "m": 0.5,
-        "P": 1000
-      },
-      "names": {
-        "m": "massa m",
-        "P": "teho P"
-      },
-      "units": {
-        "m": "kg",
-        "P": "W"
-      },
-      "locked": [
-        "m"
-      ],
-      "vary": "P",
-      "measure": [
-        {
-          "key": "tMelt",
-          "label": "sulaa (s)"
-        },
-        {
-          "key": "tBoil",
-          "label": "kiehuu (s)"
-        }
-      ],
-      "min": 2
-    },
-    {
-      "id": "exp-2",
-      "stage": "tutki",
-      "type": "experiment",
-      "title": "Koe 2: vain massa muuttuu",
-      "intro": "Testaa ennusteet 2 ja 3. Teho on lukittu $1000\\,\\text{W}$:iin; muuta vain massaa. Kirjaa kestot ainakin kahdella massalla, esimerkiksi $0{,}25\\,\\text{kg}$ ja $0{,}50\\,\\text{kg}$, ja vertaa kiehumisen kestoa sulamisen kestoon. Lämmitä kerran ja katso, missä vaiheessa astiassa on yhtä aikaa kahta olomuotoa.",
-      "initial": {
-        "m": 0.25,
-        "P": 1000
-      },
-      "names": {
-        "m": "massa m",
-        "P": "teho P"
-      },
-      "units": {
-        "m": "kg",
-        "P": "W"
-      },
-      "locked": [
-        "P"
-      ],
-      "vary": "m",
-      "measure": [
-        {
-          "key": "tMelt",
-          "label": "sulaa (s)"
-        },
-        {
-          "key": "tBoil",
-          "label": "kiehuu (s)"
-        }
-      ],
-      "min": 2
-    },
-    {
-      "id": "johtopaatos",
-      "stage": "tutki",
-      "type": "explain",
-      "title": "Johtopäätös: mihin energia menee tasanteella?",
-      "after": [
-        "exp-1",
-        "exp-2"
-      ],
-      "prompt": "Kirjoita kuvaajan ja taulukoidesi perusteella lyhyt johtopäätös. Millä lämpötilalla kiehumisen vaakasuora osa oli eri tehoilla? Miten sulamisen ja kiehumisen kestot riippuivat massasta ja tehosta, ja mitä se kertoo olomuodon muutokseen tarvittavasta energiasta? Kenen selitys ennusteessa 3 sopii tähän?",
-      "model": "Kiehumisen vaakasuora osa oli $100\\,{}^\\circ\\text{C}$:ssa kummallakin teholla; suurempi teho vain lyhensi sitä ($0{,}50\\,\\text{kg}$: $1130\\,\\text{s}$ teholla $1000\\,\\text{W}$ ja $565\\,\\text{s}$ teholla $2000\\,\\text{W}$). Kestot kaksinkertaistuivat massan mukana, joten tarvittava energia $Q = Pt$ on suoraan verrannollinen massaan: $Q = sm$ ja $Q = rm$. Kiehuminen kesti noin $6{,}8$ kertaa pidempään kuin sulaminen, koska $r/s \\approx 6{,}8$. Tasanteella lämpötila pysyy vakiona, joten hiukkasten keskimääräinen liike-energia ei kasva; siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa (Bean selitys). Höyrystyessä pieni osa energiasta kuluu myös työhön, kun höyry laajenee ja työntää mäntää. Simulaatio laskee kestot taulukkoarvoista $s$ ja $r$, joten se havainnollistaa mallia mutta ei mittaa niitä. Oikeassa kokeessa $r$ määritetään mittaamalla esimerkiksi kiehuvan veden massan pieneneminen vaa'alla.",
-      "criteria": [
-        "Kerroin, että tasanne pysyi $100\\,{}^\\circ\\text{C}$:ssa tehosta riippumatta.",
-        "Perustelin taulukon lukemilla, että energia on verrannollinen massaan.",
-        "Selitin tasanteen hiukkasmallilla: energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa, ei keskimääräistä liike-energiaa.",
-        "Erotin mallin laskemat kestot oikeasta mittauksesta."
-      ]
-    },
-    {
-      "id": "theory",
-      "stage": "selita",
-      "type": "theory",
-      "sections": [
-        "Ydinajatus",
-        "Kaava"
-      ]
-    },
-    {
-      "id": "reflect",
-      "stage": "selita",
-      "type": "reflect",
-      "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi mittauksiin ja malliin $Q = sm$, $Q = rm$. Palaa sitten alun kysymykseen: mihin levyn energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu, ja miksi kiehuvan veden lämpötila ei nouse, vaikka liesi on täysillä?",
-      "predictions": [
-        "pred-1",
-        "pred-2",
-        "pred-3"
-      ],
-      "optional": true
-    },
-    {
-      "id": "example",
-      "stage": "sovella",
-      "type": "theory",
-      "sections": [
-        "Esimerkki"
-      ]
-    },
-    {
-      "id": "virhe",
-      "stage": "sovella",
-      "type": "choice",
-      "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee, kuinka suuri lämpömäärä tarvitaan sulattamaan $0{,}20\\,\\text{kg}$ 0-asteista jäätä 0-asteiseksi vedeksi: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. Hän päättelee, että jää sulaa ilman energiaa. Missä on virhe?",
-      "choices": [
-        {
-          "text": "Jään ominaislämpökapasiteetin tilalle pitäisi sijoittaa veden arvo $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
-          "feedback": "Kertoimen vaihtaminen ei auta: kun $\\Delta T = 0$, tulo on yhä nolla. Virhe on itse kaavan valinnassa."
-        },
-        {
-          "text": "Kaava $Q = cm\\Delta T$ koskee lämpenemistä. Olomuodon muutoksessa lämpötila ei muutu, ja lämpömäärä on $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0{,}20\\,\\text{kg} \\approx 66{,}8\\,\\text{kJ}$.",
-          "correct": true,
-          "feedback": "Oikein. Lämpenemiskäyrän vaakasuoralla osalla $\\Delta T = 0$, mutta energiaa siirtyy koko ajan: se purkaa hiukkasten välisiä sidoksia. Siksi sulamiseen käytetään omaa kaavaa $Q = sm$."
-        },
-        {
-          "text": "Lämpötilan muutokseksi pitäisi ottaa $273\\,\\text{K}$, koska $0\\,{}^\\circ\\text{C}$ on $273\\,\\text{K}$.",
-          "feedback": "Lämpötilan *muutos* on sama kelvineinä ja celsiusasteina, ja tässä alku- ja loppulämpötila ovat molemmat $0\\,{}^\\circ\\text{C}$, joten $\\Delta T = 0$. Virhe on siinä, että sulamiseen tarvitaan kaava $Q = sm$."
-        },
-        {
-          "text": "Laskussa ei ole virhettä: jää sulaa $0\\,{}^\\circ\\text{C}$:ssa itsestään.",
-          "feedback": "0-asteinen jää ei sula, ellei siihen siirry energiaa; kylmälaukussa jää sulaa juuri siksi, että se ottaa lämpöä ympäristöstä. Sulamiseen tarvitaan $Q = sm$."
-        }
-      ],
-      "optional": true
-    },
-    {
-      "id": "siirto",
-      "stage": "sovella",
-      "type": "numeric",
-      "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Höyrystävä ilmankostutin keittää vettä höyryksi. Sen säiliöstä höyrystyy tunnissa $0{,}30\\,\\text{kg}$ vettä, joka on jo valmiiksi 100-asteista. Kuinka suuri on kostuttimen höyrystämiseen käyttämä teho? Lämpöhäviöitä ei huomioida. Vastaa watteina.",
-      "answer": 188,
-      "unit": "W",
-      "tolerance": 0.02,
-      "hints": [
-        "Kuinka suuri lämpömäärä tarvitaan $0{,}30\\,\\text{kg}$:n vettä höyrystämiseen, ja kuinka pitkässä ajassa se siirretään?",
-        "Höyrystämiseen tarvitaan $Q = rm$, ja teho on $P = \\dfrac{Q}{t} = \\dfrac{rm}{t}$.",
-        "Sijoita: $P = \\dfrac{2260\\,\\text{kJ/kg} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}}$. Muista, että $1\\,\\text{J/s} = 1\\,\\text{W}$."
-      ],
-      "mistakes": [
-        {
-          "value": 27.8,
-          "feedback": "Käytit ominaissulamislämpöä $334\\,\\text{kJ/kg}$. Vesi ei sula vaan höyrystyy, joten tarvitaan ominaishöyrystymislämpö $r = 2260\\,\\text{kJ/kg}$."
-        },
-        {
-          "value": 11300,
-          "feedback": "Jaoit 60:llä. Tunti on $3600\\,\\text{s}$, ei $60\\,\\text{s}$, ja teho on joulea sekunnissa."
-        }
-      ],
-      "solution": "**Annettu:** höyrystyvä vesi $m = 0{,}30\\,\\text{kg}$ ajassa $t = 1\\,\\text{h}$, vesi on jo $100\\,{}^\\circ\\text{C}$:ssa, ei lämpöhäviöitä; taulukosta $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Kysytty:** höyrystämiseen käytettävä teho $P$ watteina\n\n**Periaate:** Vesi on jo kiehumispisteessä, joten sitä ei tarvitse lämmittää ja kaikki energia kuluu höyrystämiseen, $Q = rm$. Kun häviöitä ei ole, energia säilyy, ja teho on energia jaettuna ajalla.\n\n**Kaava:** $P = \\dfrac{Q}{t}$ ja $Q = rm$, joten\n\n$$P = \\frac{rm}{t}$$\n\n**Muunnokset:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ ja $t = 1\\,\\text{h} = 3600\\,\\text{s}$. Näin tulos tulee yksikössä $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Sijoitus:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188{,}3\\,\\text{W}$\n\n**Vastaus:** $1{,}9\\cdot10^{2}\\,\\text{W}$ (laskimen tulos $188\\,\\text{W}$), kaksi merkitsevää numeroa kuten massassa $0{,}30\\,\\text{kg}$.\n\n**Järkevyys:** Arvio: $0{,}7\\,\\text{MJ}$ tunnissa on noin $700\\,000\\,\\text{J} / 3600\\,\\text{s} \\approx 190\\,\\text{W}$. Pari sataa wattia on tavallinen kotikäyttöisen höyrykostuttimen teho. Todellinen ottoteho on hieman suurempi, koska osa energiasta siirtyy ympäristöön, ja teho on pienempi kuin keittolevyn $2000\\,\\text{W}$, koska höyryä syntyy hitaasti.",
-      "optional": true
-    },
-    {
-      "id": "tehtavat",
-      "stage": "sovella",
-      "type": "exercises",
-      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 yhdistää lämpenemisen ja olomuodon muutoksen."
-    },
-    {
-      "id": "check-1",
-      "stage": "tarkista",
-      "type": "choice",
-      "title": "1. Käsite",
-      "prompt": "Vesi kiehuu $100\\,{}^\\circ\\text{C}$:ssa. Mitä vesimolekyyleille tapahtuu, kun vesi höyrystyy?",
-      "choices": [
-        {
-          "text": "Molekyylien liike nopeutuu, joten niiden liike-energia kasvaa.",
-          "feedback": "Lämpötila kuvaa hiukkasten liikettä, ja kiehumisen aikana se pysyy $100\\,{}^\\circ\\text{C}$:ssa. Molekyylien keskimääräinen liike-energia ei siis kasva; siirtyvä energia kasvattaa molekyylien välistä vuorovaikutusenergiaa, kun ne etääntyvät toisistaan."
-        },
-        {
-          "text": "Molekyylit etääntyvät toisistaan, ja niiden välinen vuorovaikutusenergia kasvaa.",
-          "correct": true,
-          "feedback": "Oikein. Nesteessä molekyylit pysyvät lähellä toisiaan toistensa vetäminä; höyrystyessä ne etääntyvät kauas toisistaan, ja höyry laajenee. Tähän tarvitaan energia $Q = rm$, vaikka lämpötila ei nouse. Vesimolekyylit itse pysyvät ehjinä."
-        },
-        {
-          "text": "Molekyylit hajoavat vedyksi ja hapeksi.",
-          "feedback": "Olomuodon muutos ei muuta ainetta: höyry on yhä vesimolekyylejä. Vain molekyylien väliset vuorovaikutukset muuttuvat; molekyylin sisäiset kemialliset sidokset eivät katkea."
-        },
-        {
-          "text": "Molekyylit laajenevat, ja siksi höyry vie enemmän tilaa.",
-          "feedback": "Molekyylit eivät itse kasva. Höyry vie enemmän tilaa, koska molekyylien väliset etäisyydet kasvavat."
-        }
-      ]
-    },
-    {
-      "id": "check-2",
-      "stage": "tarkista",
-      "type": "numeric",
-      "title": "2. Lämpenemiskäyrä",
-      "prompt": "Kattilaa lämmitetään $1500\\,\\text{W}$:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä $(t, T)$ lämpötila on $100\\,{}^\\circ\\text{C}$:ssa vaakasuora hetkestä $t = 2{,}0\\,\\text{min}$ hetkeen $t = 17{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
-      "answer": 0.597,
-      "unit": "kg",
-      "tolerance": 0.02,
-      "hints": [
-        "Mitä vaakasuoran osan aikana tapahtuu, ja kuinka pitkään se kestää?",
-        "Vaakasuoralla osalla kaikki energia $Q = Pt$ kuluu höyrystämiseen, $Q = rm$, joten $m = \\dfrac{Pt}{r}$.",
-        "Kesto on $17{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 15{,}0\\,\\text{min} = 900\\,\\text{s}$, joten $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2260\\,\\text{kJ/kg}}$."
-      ],
-      "mistakes": [
-        {
-          "value": 0.677,
-          "feedback": "Käytit koko aikaa $17{,}0\\,\\text{min}$. Ensimmäiset 2,0 minuuttia vesi vasta lämpeni; höyrystymistä on vain vaakasuoran osan aika, $15{,}0\\,\\text{min}$."
-        },
-        {
-          "value": 4.04,
-          "feedback": "Käytit ominaissulamislämpöä $334\\,\\text{kJ/kg}$. Vaakasuora osa $100\\,{}^\\circ\\text{C}$:ssa on kiehumista, joten tarvitaan $r = 2260\\,\\text{kJ/kg}$."
-        }
-      ],
-      "solution": "**Annettu:** kuumentimen teho $P = 1500\\,\\text{W}$, kaikki energia siirtyy veteen; lämpenemiskäyrän $(t, T)$ vaakasuora osa $100\\,{}^\\circ\\text{C}$:ssa on hetkestä $t_1 = 2{,}0\\,\\text{min}$ hetkeen $t_2 = 17{,}0\\,\\text{min}$; taulukosta $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Kysytty:** pois kiehuneen veden massa $m$ kilogrammoina\n\n**Periaate:** Vaakasuoralla osalla lämpötila ei muutu, vaikka energiaa siirtyy: vesi kiehuu ja muuttuu höyryksi. Silloin kaikki kuumentimen energia $Pt$ kuluu höyrystämiseen, $Q = rm$. Energia säilyy, koska häviöitä ei ole.\n\n**Kuvaajan lukeminen:** Vaakasuora osa alkaa kohdasta $t_1 = 2{,}0\\,\\text{min}$ ja päättyy kohtaan $t_2 = 17{,}0\\,\\text{min}$. Höyrystymisaika on näiden erotus $t = t_2 - t_1 = 15{,}0\\,\\text{min}$. Ensimmäiset $2{,}0\\,\\text{min}$ vesi vasta lämpenee, eikä niitä lasketa mukaan.\n\n**Kaava:** $Pt = rm$, josta\n\n$$m = \\frac{Pt}{r}$$\n\n**Muunnokset:** $t = 15{,}0\\,\\text{min} = 900\\,\\text{s}$ ja $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$, jolloin $\\text{W} \\cdot \\text{s} = \\text{J}$.\n\n**Sijoitus:** $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = \\dfrac{1\\,350\\,000\\,\\text{J}}{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 0{,}597\\,\\text{kg}$\n\n**Vastaus:** $0{,}597\\,\\text{kg}$, kolme merkitsevää numeroa, koska aikojen erotus $15{,}0\\,\\text{min}$ ja teho $1500\\,\\text{W}$ on annettu kolmella numerolla.\n\n**Järkevyys:** Arvio: $1{,}35\\,\\text{MJ}$ energiaa ja noin $2{,}3\\,\\text{MJ}$ yhtä kilogrammaa kohti antavat noin $0{,}6\\,\\text{kg}$. Vesi vei lämpenemiseen vain $2{,}0\\,\\text{min}$ eli $180\\,000\\,\\text{J}$, mikä riittäisi lämmittämään noin $\\dfrac{180\\,000\\,\\text{J}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K}} \\approx 0{,}54\\,\\text{kg}$ vettä $20\\,{}^\\circ\\text{C}$:sta kiehumispisteeseen, eli samaa suuruusluokkaa kuin kattilan alkuperäinen vesimäärä. Höyrystäminen kesti yli seitsemän kertaa pidempään kuin lämmittäminen, koska $r$ on suuri."
-    },
-    {
-      "id": "check-3",
-      "stage": "tarkista",
-      "type": "explain",
-      "title": "3. Selitä ja siirrä",
-      "prompt": "Miksi 100-asteinen höyry polttaa ihoa pahemmin kuin sama massa 100-asteista vettä? Käytä selityksessä olomuodon muutosta ja energiaa.",
-      "criteria": [
-        "Sanon, että höyry tiivistyy iholla vedeksi ja luovuttaa silloin lämpömäärän $Q = rm$.",
-        "Sanon, että vesi luovuttaa vain jäähtyessään $Q = cm\\Delta T$, ja höyry luovuttaa tämän lisäksi tiivistymislämmön.",
-        "Vertaan suuruuksia: tiivistymislämpö on moninkertainen jäähtymisessä vapautuvaan lämpöön nähden.",
-        "Käytän mikromallia: tiivistyessä molekyylit vetäytyvät lähelle toisiaan, niiden välinen vuorovaikutusenergia pienenee ja energia siirtyy iholle."
-      ],
-      "model": "Kun höyry osuu iholle, se tiivistyy vedeksi. Tiivistyessä molekyylit sitoutuvat toisiinsa, ja höyrystämiseen sitoutunut energia vapautuu: $Q = rm$. Sen jälkeen syntynyt vesi jäähtyy ihon lämpötilaan kuten tavallinen kuuma vesi. Yksi gramma höyryä luovuttaa tiivistyessään $2260\\,\\text{J}$ ja jäähtyessään $100\\,{}^\\circ\\text{C}$:sta $37\\,{}^\\circ\\text{C}$:seen vielä noin $264\\,\\text{J}$, yhteensä noin $2{,}5\\,\\text{kJ}$. Sama gramma 100-asteista vettä luovuttaa vain jäähtymisen osuuden, noin $264\\,\\text{J}$, eli lähes kymmenen kertaa vähemmän.",
-      "optional": true
-    },
-    {
-      "id": "lahtolippu",
-      "stage": "tarkista",
-      "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+     "text": "noin $419\\,\\text{kJ}$",
+     "feedback": "Massa jäi pois. Ominaislämpökapasiteetti kertoo lämpömäärän *kilogrammaa* kohti, joten se kerrotaan massalla: $Q = cm\\Delta T = 4190 \\cdot 0{,}50 \\cdot 100\\,\\text{J} \\approx 210\\,\\text{kJ}$."
     }
-  ]
+   ],
+   "optional": true
+  },
+  {
+   "id": "pred-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 1: teho kaksinkertaistuu",
+   "prompt": "Kattilassa on $0{,}50\\,\\text{kg}$ vettä, joka kiehuu $1000\\,\\text{W}$:n kuumentimella. Kuumentimen teho nostetaan $2000\\,\\text{W}$:iin. Mitä veden lämpötilalle ja kiehumisen kestolle (aika, jossa kaikki vesi kiehuu pois) tapahtuu?",
+   "justify": true,
+   "reveal": {
+    "after": "exp-1",
+    "min": 2
+   },
+   "choices": [
+    {
+     "text": "Vesi kuumenee yli $100\\,{}^\\circ\\text{C}$:n, koska siihen tulee energiaa nopeammin.",
+     "feedback": "Animaatiossa kiehumisen vaakasuora osa on $100\\,{}^\\circ\\text{C}$:ssa kummallakin teholla. Kiehuessa lämpötila pysyy vakiona, joten hiukkasten keskimääräinen liike-energia ei kasva; lisäenergia höyrystää vettä, eli molekyylit etääntyvät toisistaan ja niiden välinen vuorovaikutusenergia kasvaa. Vesi höyrystyy nopeammin, mutta ei kuumene. Taulukossa kiehumisen kesto puolittuu, $1130\\,\\text{s}$:sta $565\\,\\text{s}$:iin."
+    },
+    {
+     "text": "Lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, mutta vesi kiehuu pois puolessa ajassa.",
+     "correct": true,
+     "feedback": "Mallin arvot tukevat tätä: kiehumisen kesto puolittuu $1130\\,\\text{s}$:sta $565\\,\\text{s}$:iin, ja animaatiossa vaakasuora osa on kummallakin teholla $100\\,{}^\\circ\\text{C}$:ssa. Höyrystämiseen tarvitaan aina sama energia, ja kaksinkertainen teho siirtää sen puolessa ajassa."
+    },
+    {
+     "text": "Lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, ja kiehuminen kestää yhtä kauan, koska vettä on yhtä paljon.",
+     "feedback": "Lämpötila pysyy kyllä $100\\,{}^\\circ\\text{C}$:ssa, mutta kesto ei: taulukossa se putoaa $1130\\,\\text{s}$:sta $565\\,\\text{s}$:iin. Vesimäärän höyrystämiseen tarvitaan tietty energia, ja suurempi teho siirtää sen nopeammin, $t = Q/P$."
+    }
+   ]
+  },
+  {
+   "id": "pred-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 2: sulaminen ja kiehuminen",
+   "prompt": "Sama kuumennin ($1000\\,\\text{W}$) sulattaa jään ja myöhemmin kiehuttaa saman veden pois. Kuinka sulamisen ja kiehumisen kestot suhtautuvat toisiinsa, ja muuttuuko suhde, kun massa kaksinkertaistetaan $0{,}25\\,\\text{kg}$:sta $0{,}50\\,\\text{kg}$:aan?",
+   "justify": true,
+   "reveal": {
+    "after": "exp-2",
+    "min": 2
+   },
+   "choices": [
+    {
+     "text": "Ne kestävät suunnilleen yhtä kauan, koska molemmat ovat olomuodon muutoksia.",
+     "feedback": "Mallin mukaan kiehuminen kestää noin seitsemän kertaa pidempään kuin sulaminen ($565\\,\\text{s}$ ja noin $84\\,\\text{s}$, kun $m = 0{,}25\\,\\text{kg}$). Sulamisessa hiukkaset pysyvät lähellä toisiaan ja vain niiden järjestys purkautuu, mutta höyrystymisessä ne etääntyvät kauas toisistaan, ja niiden välinen vuorovaikutusenergia kasvaa paljon enemmän kilogrammaa kohti."
+    },
+    {
+     "text": "Kiehuminen kestää noin seitsemän kertaa pidempään, ja suhde on sama kummallakin massalla.",
+     "correct": true,
+     "feedback": "Mallin arvot tukevat tätä: $0{,}25\\,\\text{kg}$:lla kestot ovat noin $84\\,\\text{s}$ ja $565\\,\\text{s}$, $0{,}50\\,\\text{kg}$:lla $167\\,\\text{s}$ ja $1130\\,\\text{s}$. Kumpikin kesto kaksinkertaistuu massan mukana, joten suhde pysyy noin 6,8:ssa. Jokainen kilogramma tarvitsee sulaakseen ja höyrystyäkseen aina saman energian."
+    },
+    {
+     "text": "Kiehuminen kestää pidempään, ja ero kasvaa suhteessa, kun massa kasvaa.",
+     "feedback": "Kiehuminen kestää pidempään, mutta suhde ei muutu: $0{,}25\\,\\text{kg}$:lla $565/83{,}5 \\approx 6{,}8$ ja $0{,}50\\,\\text{kg}$:lla $1130/167 \\approx 6{,}8$. Kumpikin kesto on suoraan verrannollinen massaan, joten niiden suhde ei riipu massasta."
+    },
+    {
+     "text": "Sulaminen kestää pidempään, koska kylmää jäätä on vaikeampi lämmittää.",
+     "feedback": "Sulamisen aikana jää on jo 0-asteista, eikä sen lämpötila muutu. Mallin mukaan sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (noin $84\\,\\text{s}$ ja $565\\,\\text{s}$, kun $m = 0{,}25\\,\\text{kg}$)."
+    }
+   ],
+   "optional": true
+  },
+  {
+   "id": "pred-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "layout": "models",
+   "title": "Ennuste 3: miksi lämpötila ei nouse?",
+   "prompt": "Sulamisen aikana jään ja veden seoksen lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, vaikka kuumennin toimii koko ajan. Kolme opiskelijaa selittää ilmiön. Kenen selitys sopii siihen, että vakio-osan kesto kasvaa massan mukana?",
+   "justify": true,
+   "reveal": {
+    "after": "exp-2",
+    "min": 2
+   },
+   "choices": [
+    {
+     "text": "Aino: Energia karkaa astiasta ilmaan yhtä nopeasti kuin sitä tulee, joten aine ei lämpene.",
+     "feedback": "Jos energiaa karkaisi yhtä nopeasti kuin sitä tulee, vaakasuora osa ei loppuisi koskaan. Se kuitenkin loppuu, kun kaikki jää on sulanut, ja sen kesto kasvaa massan mukana: jokainen kilogramma tarvitsee oman energiansa. Häviöt hidastavat lämpenemistä, mutta ne eivät selitä, miksi lämpötila pysähtyy juuri sulamispisteeseen."
+    },
+    {
+     "text": "Bea: Energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa, joten hiukkasten keskimääräinen liike-energia ei kasva eikä lämpötila nouse.",
+     "correct": true,
+     "feedback": "Tämä selitys sopii havaintoihin: lämpötila pysähtyy aina sulamispisteeseen, ja vakio-osan kesto on suoraan verrannollinen massaan, koska jokaisen kilogramman sulaminen kasvattaa hiukkasten välistä vuorovaikutusenergiaa yhtä paljon. Simulaation malli on rakennettu tämän selityksen varaan, joten se ei yksin todista sitä; ratkaisevaa on, että selitys ennustaa vakio-osan pituuden oikein. Vesimolekyylit pysyvät ehjinä: muuttuvat vain molekyylien väliset vuorovaikutukset, eivät molekyylien sisäiset kemialliset sidokset."
+    },
+    {
+     "text": "Cem: Hiukkasten liike nopeutuu koko ajan, mutta lämpömittari ei ehdi reagoida ennen kuin jää on sulanut.",
+     "feedback": "Lämpömittarin viive on sekunteja, mutta sulaminen kestää minuutteja, ja vakio-osa on sitä pidempi, mitä enemmän jäätä on. Viive ei selitä kumpaakaan. Lisäksi lämpötila kuvaa hiukkasten liikettä: jos liike nopeutuisi, lämpötila nousisi. Vaakasuoran osan aikana siirtyvä energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa."
+    }
+   ]
+  },
+  {
+   "id": "simulaatio",
+   "stage": "tutki",
+   "type": "sim",
+   "text": "Simulaatiossa jäätä lämmitetään $-20\\,{}^\\circ\\text{C}$:sta vakioteholla normaalissa ilmanpaineessa, kunnes se on 130-asteista höyryä.",
+   "howto": "Paina *Lämmitä* ja seuraa $(t, T)$-kuvaajaa: missä kohdissa lämpötila nousee ja missä se pysyy paikallaan?",
+   "model": "Malli olettaa, että kaikki kuumentimen energia siirtyy aineeseen ja paine pysyy normaalissa ilmanpaineessa $p = 101\\,\\text{kPa}$. Astiaa sulkee kevyt, vapaasti liikkuva mäntä, eikä höyry poistu astiasta vaan laajenee männän alla; kuva ei ole mittakaavassa, sillä höyryn tilavuus on noin 1700-kertainen veteen verrattuna. Siksi vesi kiehuu $100\\,{}^\\circ\\text{C}$:ssa, ja höyryn lämpenemiseen käytetään vakiopaineen ominaislämpökapasiteettia $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$. Avoimessa kattilassa höyry karkaisi eikä lämpenisi $130\\,{}^\\circ\\text{C}$:seen. Suljetussa jäykässä astiassa paine kasvaisi höyryn muodostuessa, kiehumislämpötila nousisi, eikä käyrässä olisi vaakasuoraa osaa tasan $100\\,{}^\\circ\\text{C}$:ssa. Ruudun arvot ovat mallin laskemia, eivät mittauksia oikeasta astiasta."
+  },
+  {
+   "id": "exp-1",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 1: vain teho muuttuu",
+   "intro": "Testaa ennuste 1. Massa on lukittu $0{,}50\\,\\text{kg}$:aan; muuta vain tehoa. Kirjaa sulamisen ja kiehumisen kestot ainakin kahdella teholla, esimerkiksi $1000\\,\\text{W}$ ja $2000\\,\\text{W}$. Kestot ovat mallin laskemia ($t = Q/P$) ja näkyvät heti. Paina kummallakin teholla myös *Lämmitä* ja katso, millä lämpötilalla kuvaajan pitkä vaakasuora osa on.",
+   "initial": {
+    "m": 0.5,
+    "P": 1000
+   },
+   "names": {
+    "m": "massa m",
+    "P": "teho P"
+   },
+   "units": {
+    "m": "kg",
+    "P": "W"
+   },
+   "locked": [
+    "m"
+   ],
+   "vary": "P",
+   "measure": [
+    {
+     "key": "tMelt",
+     "label": "sulaa (s)"
+    },
+    {
+     "key": "tBoil",
+     "label": "kiehuu (s)"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "exp-2",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 2: vain massa muuttuu",
+   "intro": "Testaa ennusteet 2 ja 3. Teho on lukittu $1000\\,\\text{W}$:iin; muuta vain massaa. Kirjaa kestot ainakin kahdella massalla, esimerkiksi $0{,}25\\,\\text{kg}$ ja $0{,}50\\,\\text{kg}$, ja vertaa kiehumisen kestoa sulamisen kestoon. Lämmitä kerran ja katso, missä vaiheessa astiassa on yhtä aikaa kahta olomuotoa.",
+   "initial": {
+    "m": 0.25,
+    "P": 1000
+   },
+   "names": {
+    "m": "massa m",
+    "P": "teho P"
+   },
+   "units": {
+    "m": "kg",
+    "P": "W"
+   },
+   "locked": [
+    "P"
+   ],
+   "vary": "m",
+   "measure": [
+    {
+     "key": "tMelt",
+     "label": "sulaa (s)"
+    },
+    {
+     "key": "tBoil",
+     "label": "kiehuu (s)"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "johtopaatos",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Johtopäätös: mihin energia menee tasanteella?",
+   "after": [
+    "exp-1",
+    "exp-2"
+   ],
+   "prompt": "Kirjoita kuvaajan ja taulukoidesi perusteella lyhyt johtopäätös. Millä lämpötilalla kiehumisen vaakasuora osa oli eri tehoilla? Miten sulamisen ja kiehumisen kestot riippuivat massasta ja tehosta, ja mitä se kertoo olomuodon muutokseen tarvittavasta energiasta? Kenen selitys ennusteessa 3 sopii tähän?",
+   "model": "Kiehumisen vaakasuora osa oli $100\\,{}^\\circ\\text{C}$:ssa kummallakin teholla; suurempi teho vain lyhensi sitä ($0{,}50\\,\\text{kg}$: $1130\\,\\text{s}$ teholla $1000\\,\\text{W}$ ja $565\\,\\text{s}$ teholla $2000\\,\\text{W}$). Kestot kaksinkertaistuivat massan mukana, joten tarvittava energia $Q = Pt$ on suoraan verrannollinen massaan: $Q = sm$ ja $Q = rm$. Kiehuminen kesti noin $6{,}8$ kertaa pidempään kuin sulaminen, koska $r/s \\approx 6{,}8$. Tasanteella lämpötila pysyy vakiona, joten hiukkasten keskimääräinen liike-energia ei kasva; siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa (Bean selitys). Höyrystyessä pieni osa energiasta kuluu myös työhön, kun höyry laajenee ja työntää mäntää. Simulaatio laskee kestot taulukkoarvoista $s$ ja $r$, joten se havainnollistaa mallia mutta ei mittaa niitä. Oikeassa kokeessa $r$ määritetään mittaamalla esimerkiksi kiehuvan veden massan pieneneminen vaa'alla.",
+   "criteria": [
+    "Kerroin, että tasanne pysyi $100\\,{}^\\circ\\text{C}$:ssa tehosta riippumatta.",
+    "Perustelin taulukon lukemilla, että energia on verrannollinen massaan.",
+    "Selitin tasanteen hiukkasmallilla: energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa, ei keskimääräistä liike-energiaa.",
+    "Erotin mallin laskemat kestot oikeasta mittauksesta."
+   ]
+  },
+  {
+   "id": "theory",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "reflect",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Palaa ennusteisiisi",
+   "prompt": "Vertaa ennusteitasi mittauksiin ja malliin $Q = sm$, $Q = rm$. Palaa sitten alun kysymykseen: mihin levyn energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu, ja miksi kiehuvan veden lämpötila ei nouse, vaikka liesi on täysillä?",
+   "predictions": [
+    "pred-1",
+    "pred-2",
+    "pred-3"
+   ],
+   "optional": true
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "virhe",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe",
+   "prompt": "Opiskelija laskee, kuinka suuri lämpömäärä tarvitaan sulattamaan $0{,}20\\,\\text{kg}$ 0-asteista jäätä 0-asteiseksi vedeksi: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. Hän päättelee, että jää sulaa ilman energiaa. Missä on virhe?",
+   "choices": [
+    {
+     "text": "Jään ominaislämpökapasiteetin tilalle pitäisi sijoittaa veden arvo $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+     "feedback": "Kertoimen vaihtaminen ei auta: kun $\\Delta T = 0$, tulo on yhä nolla. Virhe on itse kaavan valinnassa."
+    },
+    {
+     "text": "Kaava $Q = cm\\Delta T$ koskee lämpenemistä. Olomuodon muutoksessa lämpötila ei muutu, ja lämpömäärä on $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0{,}20\\,\\text{kg} \\approx 66{,}8\\,\\text{kJ}$.",
+     "correct": true,
+     "feedback": "Oikein. Lämpenemiskäyrän vaakasuoralla osalla $\\Delta T = 0$, mutta energiaa siirtyy koko ajan: se purkaa hiukkasten välisiä sidoksia. Siksi sulamiseen käytetään omaa kaavaa $Q = sm$."
+    },
+    {
+     "text": "Lämpötilan muutokseksi pitäisi ottaa $273\\,\\text{K}$, koska $0\\,{}^\\circ\\text{C}$ on $273\\,\\text{K}$.",
+     "feedback": "Lämpötilan *muutos* on sama kelvineinä ja celsiusasteina, ja tässä alku- ja loppulämpötila ovat molemmat $0\\,{}^\\circ\\text{C}$, joten $\\Delta T = 0$. Virhe on siinä, että sulamiseen tarvitaan kaava $Q = sm$."
+    },
+    {
+     "text": "Laskussa ei ole virhettä: jää sulaa $0\\,{}^\\circ\\text{C}$:ssa itsestään.",
+     "feedback": "0-asteinen jää ei sula, ellei siihen siirry energiaa; kylmälaukussa jää sulaa juuri siksi, että se ottaa lämpöä ympäristöstä. Sulamiseen tarvitaan $Q = sm$."
+    }
+   ],
+   "optional": true
+  },
+  {
+   "id": "siirto",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Sovella uuteen tilanteeseen",
+   "prompt": "Höyrystävä ilmankostutin keittää vettä höyryksi. Sen säiliöstä höyrystyy tunnissa $0{,}30\\,\\text{kg}$ vettä, joka on jo valmiiksi 100-asteista. Kuinka suuri on kostuttimen höyrystämiseen käyttämä teho? Lämpöhäviöitä ei huomioida. Vastaa watteina.",
+   "answer": 188,
+   "unit": "W",
+   "tolerance": 0.02,
+   "hints": [
+    "Kuinka suuri lämpömäärä tarvitaan $0{,}30\\,\\text{kg}$:n vettä höyrystämiseen, ja kuinka pitkässä ajassa se siirretään?",
+    "Höyrystämiseen tarvitaan $Q = rm$, ja teho on $P = \\dfrac{Q}{t} = \\dfrac{rm}{t}$.",
+    "Sijoita: $P = \\dfrac{2260\\,\\text{kJ/kg} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}}$. Muista, että $1\\,\\text{J/s} = 1\\,\\text{W}$."
+   ],
+   "mistakes": [
+    {
+     "value": 27.8,
+     "feedback": "Käytit ominaissulamislämpöä $334\\,\\text{kJ/kg}$. Vesi ei sula vaan höyrystyy, joten tarvitaan ominaishöyrystymislämpö $r = 2260\\,\\text{kJ/kg}$."
+    },
+    {
+     "value": 11300,
+     "feedback": "Jaoit 60:llä. Tunti on $3600\\,\\text{s}$, ei $60\\,\\text{s}$, ja teho on joulea sekunnissa."
+    }
+   ],
+   "solution": "**Annettu:** höyrystyvä vesi $m = 0{,}30\\,\\text{kg}$ ajassa $t = 1\\,\\text{h}$, vesi on jo $100\\,{}^\\circ\\text{C}$:ssa, ei lämpöhäviöitä; taulukosta $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Kysytty:** höyrystämiseen käytettävä teho $P$ watteina\n\n**Periaate:** Vesi on jo kiehumispisteessä, joten sitä ei tarvitse lämmittää ja kaikki energia kuluu höyrystämiseen, $Q = rm$. Kun häviöitä ei ole, energia säilyy, ja teho on energia jaettuna ajalla.\n\n**Kaava:** $P = \\dfrac{Q}{t}$ ja $Q = rm$, joten\n\n$$P = \\frac{rm}{t}$$\n\n**Muunnokset:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ ja $t = 1\\,\\text{h} = 3600\\,\\text{s}$. Näin tulos tulee yksikössä $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Sijoitus:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188{,}3\\,\\text{W}$\n\n**Vastaus:** $1{,}9\\cdot10^{2}\\,\\text{W}$ (laskimen tulos $188\\,\\text{W}$), kaksi merkitsevää numeroa kuten massassa $0{,}30\\,\\text{kg}$.\n\n**Järkevyys:** Arvio: $0{,}7\\,\\text{MJ}$ tunnissa on noin $700\\,000\\,\\text{J} / 3600\\,\\text{s} \\approx 190\\,\\text{W}$. Pari sataa wattia on tavallinen kotikäyttöisen höyrykostuttimen teho. Todellinen ottoteho on hieman suurempi, koska osa energiasta siirtyy ympäristöön, ja teho on pienempi kuin keittolevyn $2000\\,\\text{W}$, koska höyryä syntyy hitaasti.",
+   "optional": true
+  },
+  {
+   "id": "tehtavat",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 yhdistää lämpenemisen ja olomuodon muutoksen."
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Vesi kiehuu $100\\,{}^\\circ\\text{C}$:ssa. Mitä vesimolekyyleille tapahtuu, kun vesi höyrystyy?",
+   "choices": [
+    {
+     "text": "Molekyylien liike nopeutuu, joten niiden liike-energia kasvaa.",
+     "feedback": "Lämpötila kuvaa hiukkasten liikettä, ja kiehumisen aikana se pysyy $100\\,{}^\\circ\\text{C}$:ssa. Molekyylien keskimääräinen liike-energia ei siis kasva; siirtyvä energia kasvattaa molekyylien välistä vuorovaikutusenergiaa, kun ne etääntyvät toisistaan."
+    },
+    {
+     "text": "Molekyylit etääntyvät toisistaan, ja niiden välinen vuorovaikutusenergia kasvaa.",
+     "correct": true,
+     "feedback": "Oikein. Nesteessä molekyylit pysyvät lähellä toisiaan toistensa vetäminä; höyrystyessä ne etääntyvät kauas toisistaan, ja höyry laajenee. Tähän tarvitaan energia $Q = rm$, vaikka lämpötila ei nouse. Vesimolekyylit itse pysyvät ehjinä."
+    },
+    {
+     "text": "Molekyylit hajoavat vedyksi ja hapeksi.",
+     "feedback": "Olomuodon muutos ei muuta ainetta: höyry on yhä vesimolekyylejä. Vain molekyylien väliset vuorovaikutukset muuttuvat; molekyylin sisäiset kemialliset sidokset eivät katkea."
+    },
+    {
+     "text": "Molekyylit laajenevat, ja siksi höyry vie enemmän tilaa.",
+     "feedback": "Molekyylit eivät itse kasva. Höyry vie enemmän tilaa, koska molekyylien väliset etäisyydet kasvavat."
+    }
+   ]
+  },
+  {
+   "id": "check-c2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Kiehuva vesi",
+   "prompt": "Kattilassa vesi kiehuu tasaisesti $100\\,{}^\\circ\\text{C}$:ssa. Liesilevyn teho käännetään suuremmaksi. Mitä tapahtuu?",
+   "choices": [
+    {
+     "text": "Veden lämpötila nousee yli $100\\,{}^\\circ\\text{C}$:n, koska veteen siirtyy enemmän energiaa.",
+     "feedback": "Avoimessa kattilassa kiehuvan veden lämpötila ei nouse kiehumispisteen yli. Lisäenergia ei kasvata molekyylien liike-energiaa vaan irrottaa molekyylejä toisistaan, joten se kuluu höyrystymiseen."
+    },
+    {
+     "text": "Veden lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, mutta vettä höyrystyy joka sekunti enemmän.",
+     "correct": true,
+     "feedback": "Oikein. Höyrystymiseen kuluva energia on $Q = rm$, joten suurempi teho höyrystää saman ajassa suuremman massan. Lämpötila pysyy vakiona, kunnes vesi on kiehunut pois."
+    },
+    {
+     "text": "Veden kiehuminen hidastuu, koska energiaa tulee enemmän kuin vesi ehtii ottaa vastaan.",
+     "feedback": "Vesi ottaa vastaan kaiken siirtyvän energian: höyrystyminen vain nopeutuu. Energiaa ei jää käyttämättä, vaan jokainen lisäjoule höyrystää lisää vettä."
+    },
+    {
+     "text": "Mikään ei muutu, koska kiehuvan veden lämpötila ei muutu.",
+     "feedback": "Lämpötila todella pysyy samana, mutta höyrystymisen nopeus muuttuu. Siirtyvä energia ei katoa: se höyrystää enemmän vettä sekunnissa, joten vesi kiehuu pois nopeammin."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "3. Lämpenemiskäyrä",
+   "prompt": "Kattilaa lämmitetään $1500\\,\\text{W}$:n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä $(t, T)$ lämpötila on $100\\,{}^\\circ\\text{C}$:ssa vaakasuora hetkestä $t = 2{,}0\\,\\text{min}$ hetkeen $t = 17{,}0\\,\\text{min}$, jolloin kattila on tyhjä. Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.",
+   "answer": 0.597,
+   "unit": "kg",
+   "tolerance": 0.02,
+   "hints": [
+    "Mitä vaakasuoran osan aikana tapahtuu, ja kuinka pitkään se kestää?",
+    "Vaakasuoralla osalla kaikki energia $Q = Pt$ kuluu höyrystämiseen, $Q = rm$, joten $m = \\dfrac{Pt}{r}$.",
+    "Kesto on $17{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 15{,}0\\,\\text{min} = 900\\,\\text{s}$, joten $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2260\\,\\text{kJ/kg}}$."
+   ],
+   "mistakes": [
+    {
+     "value": 0.677,
+     "feedback": "Käytit koko aikaa $17{,}0\\,\\text{min}$. Ensimmäiset 2,0 minuuttia vesi vasta lämpeni; höyrystymistä on vain vaakasuoran osan aika, $15{,}0\\,\\text{min}$."
+    },
+    {
+     "value": 4.04,
+     "feedback": "Käytit ominaissulamislämpöä $334\\,\\text{kJ/kg}$. Vaakasuora osa $100\\,{}^\\circ\\text{C}$:ssa on kiehumista, joten tarvitaan $r = 2260\\,\\text{kJ/kg}$."
+    }
+   ],
+   "solution": "**Annettu:** kuumentimen teho $P = 1500\\,\\text{W}$, kaikki energia siirtyy veteen; lämpenemiskäyrän $(t, T)$ vaakasuora osa $100\\,{}^\\circ\\text{C}$:ssa on hetkestä $t_1 = 2{,}0\\,\\text{min}$ hetkeen $t_2 = 17{,}0\\,\\text{min}$; taulukosta $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Kysytty:** pois kiehuneen veden massa $m$ kilogrammoina\n\n**Periaate:** Vaakasuoralla osalla lämpötila ei muutu, vaikka energiaa siirtyy: vesi kiehuu ja muuttuu höyryksi. Silloin kaikki kuumentimen energia $Pt$ kuluu höyrystämiseen, $Q = rm$. Energia säilyy, koska häviöitä ei ole.\n\n**Kuvaajan lukeminen:** Vaakasuora osa alkaa kohdasta $t_1 = 2{,}0\\,\\text{min}$ ja päättyy kohtaan $t_2 = 17{,}0\\,\\text{min}$. Höyrystymisaika on näiden erotus $t = t_2 - t_1 = 15{,}0\\,\\text{min}$. Ensimmäiset $2{,}0\\,\\text{min}$ vesi vasta lämpenee, eikä niitä lasketa mukaan.\n\n**Kaava:** $Pt = rm$, josta\n\n$$m = \\frac{Pt}{r}$$\n\n**Muunnokset:** $t = 15{,}0\\,\\text{min} = 900\\,\\text{s}$ ja $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$, jolloin $\\text{W} \\cdot \\text{s} = \\text{J}$.\n\n**Sijoitus:** $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = \\dfrac{1\\,350\\,000\\,\\text{J}}{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 0{,}597\\,\\text{kg}$\n\n**Vastaus:** $0{,}597\\,\\text{kg}$, kolme merkitsevää numeroa, koska aikojen erotus $15{,}0\\,\\text{min}$ ja teho $1500\\,\\text{W}$ on annettu kolmella numerolla.\n\n**Järkevyys:** Arvio: $1{,}35\\,\\text{MJ}$ energiaa ja noin $2{,}3\\,\\text{MJ}$ yhtä kilogrammaa kohti antavat noin $0{,}6\\,\\text{kg}$. Vesi vei lämpenemiseen vain $2{,}0\\,\\text{min}$ eli $180\\,000\\,\\text{J}$, mikä riittäisi lämmittämään noin $\\dfrac{180\\,000\\,\\text{J}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K}} \\approx 0{,}54\\,\\text{kg}$ vettä $20\\,{}^\\circ\\text{C}$:sta kiehumispisteeseen, eli samaa suuruusluokkaa kuin kattilan alkuperäinen vesimäärä. Höyrystäminen kesti yli seitsemän kertaa pidempään kuin lämmittäminen, koska $r$ on suuri."
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Selitä ja siirrä",
+   "prompt": "Miksi 100-asteinen höyry polttaa ihoa pahemmin kuin sama massa 100-asteista vettä? Käytä selityksessä olomuodon muutosta ja energiaa.",
+   "criteria": [
+    "Sanon, että höyry tiivistyy iholla vedeksi ja luovuttaa silloin lämpömäärän $Q = rm$.",
+    "Sanon, että vesi luovuttaa vain jäähtyessään $Q = cm\\Delta T$, ja höyry luovuttaa tämän lisäksi tiivistymislämmön.",
+    "Vertaan suuruuksia: tiivistymislämpö on moninkertainen jäähtymisessä vapautuvaan lämpöön nähden.",
+    "Käytän mikromallia: tiivistyessä molekyylit vetäytyvät lähelle toisiaan, niiden välinen vuorovaikutusenergia pienenee ja energia siirtyy iholle."
+   ],
+   "model": "Kun höyry osuu iholle, se tiivistyy vedeksi. Tiivistyessä molekyylit sitoutuvat toisiinsa, ja höyrystämiseen sitoutunut energia vapautuu: $Q = rm$. Sen jälkeen syntynyt vesi jäähtyy ihon lämpötilaan kuten tavallinen kuuma vesi. Yksi gramma höyryä luovuttaa tiivistyessään $2260\\,\\text{J}$ ja jäähtyessään $100\\,{}^\\circ\\text{C}$:sta $37\\,{}^\\circ\\text{C}$:seen vielä noin $264\\,\\text{J}$, yhteensä noin $2{,}5\\,\\text{kJ}$. Sama gramma 100-asteista vettä luovuttaa vain jäähtymisen osuuden, noin $264\\,\\text{J}$, eli lähes kymmenen kertaa vähemmän.",
+   "optional": true
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
 }

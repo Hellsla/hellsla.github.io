@@ -27,10 +27,11 @@
     {
       "id": "fy3-1-L1-04",
       "level": 1,
-      "text": "Voimamittarin jousi venyy 2,5 cm, kun siihen vaikuttaa 4,0 N:n voima. Kuinka suuri voima venyttää jousta 6,0 cm?",
-      "answer": 9.6,
+      "text": "Kuvaajassa ovat erään voimamittarin jousen kalibrointimittaukset. Kun jouseen ripustetaan tuntematon kappale, jousi venyy $3{,}5\\,\\text{cm}$. Kuinka suuri voima venyttää jousta?",
+      "figure": "fy3-1/spring-points",
+      "answer": 7.0,
       "unit": "N",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy3-1-L1-05",

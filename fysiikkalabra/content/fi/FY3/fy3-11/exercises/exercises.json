@@ -1,104 +1,105 @@
 {
-  "level1": [
-    {
-      "id": "fy3-11-L1-01",
-      "level": 1,
-      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480,0 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
-      "answer": 12.0,
-      "unit": "kJ",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L1-02",
-      "level": 1,
-      "text": "Saunan kiukaalle heitetään löylyvettä. Kun gramma vettä höyrystyy, syntyvä $100\\,{}^\\circ\\text{C}$:n höyry vie 1,70 litraa enemmän tilaa kuin vesi vei. Höyrystyminen tapahtuu ilmanpaineessa, joka on 101 kPa. Kuinka suuren työn höyry tekee, kun se työntää ympäröivää ilmaa tieltään?",
-      "answer": 172,
-      "unit": "J",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L1-03",
-      "level": 1,
-      "text": "Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla 4,30 · 10³ MW, ja yksikön sähköteho on 1,60 · 10³ MW. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.",
-      "answer": 37.2,
-      "unit": "%",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L1-04",
-      "level": 1,
-      "text": "Moottorisahan moottorissa palavasta polttoaineesta siirtyy minuutissa lämpö $840\\,\\text{kJ}$. Samassa ajassa moottorista siirtyy pakokaasujen ja kuumien pintojen kautta ympäristöön lämpö $670\\,\\text{kJ}$. Kuinka suuren työn moottori tekee minuutissa?",
-      "answer": 170,
-      "unit": "kJ",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L1-05",
-      "level": 1,
-      "text": "Mökin aggregaatti tuottaa illan aikana $2{,}60\\,\\text{kWh}$ sähköä. Samana aikana aggregaatin moottorissa palaneen bensiinin energia on $12{,}0\\,\\text{kWh}$. Mikä on aggregaatin hyötysuhde? Anna vastaus prosentteina.",
-      "answer": 21.7,
-      "unit": "%",
-      "tolerance": 0.02
-    }
-  ],
-  "level2": [
-    {
-      "id": "fy3-11-L2-01",
-      "level": 2,
-      "text": "Puuhaketta ja turvetta polttava lauhdevoimalaitos tuottaa vuorokauden aikana sähköä $3\\,830\\,\\text{MWh}$. Samana aikana kattilassa palaneen polttoaineen energia on $33{,}6\\,\\text{TJ}$ ($1\\,\\text{TJ} = 10^{12}\\,\\text{J}$). Mikä on laitoksen hyötysuhde? Anna vastaus prosentteina.",
-      "answer": 41.0,
-      "unit": "%",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L2-02",
-      "level": 2,
-      "text": "Saimaalla liikennöivän vanhan höyrylaivan kattilassa poltetaan tunnissa $120\\,\\text{kg}$ koivuhalkoja. Ilmakuivan koivupuun lämpöarvo on $15\\,\\text{MJ/kg}$, eli kilogramman palaessa vapautuu energiaa $15\\,\\text{MJ}$. Laivan höyrykone tekee työtä keskimäärin $45\\,\\text{kW}$:n teholla. Mikä on kattilan ja höyrykoneen yhteinen hyötysuhde? Anna vastaus prosentteina.",
-      "answer": 9.0,
-      "unit": "%",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L2-03",
-      "level": 2,
-      "text": "Fysiikan tunnilla sylinterissä on ilmaa, jonka kevyesti liikkuva mäntä sulkee. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$, jossa $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
-      "answer": 500,
-      "unit": "J",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L2-04",
-      "level": 2,
-      "text": "Saaristolautan dieselmoottori pyörittää potkuria $480\\,\\text{kW}$:n mekaanisella teholla. Moottorin hyötysuhde on $40{,}0\\,\\%$. Kuinka suuri lämpöteho siirtyy pakokaasujen ja jäähdytysveden mukana ympäristöön?",
-      "answer": 720,
-      "unit": "kW",
-      "tolerance": 0.02
-    }
-  ],
-  "level3": [
-    {
-      "id": "fy3-11-L3-01",
-      "level": 3,
-      "text": "Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta $320\\,\\text{MW}$:n teholla ja tuottaa samalla $96\\,\\text{MW}$ sähköä ja $180\\,\\text{MW}$ kaukolämpöä. Jos laitosta ei olisi, sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on $40{,}0\\,\\%$, ja sama kaukolämpö lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä $90{,}0\\,\\%$:n hyötysuhteella. Kuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.",
-      "answer": 120,
-      "unit": "MW",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L3-02",
-      "level": 3,
-      "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
-      "answer": 9.60,
-      "unit": "MWh",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy3-11-L3-03",
-      "level": 3,
-      "text": "Bensiiniauto kuluttaa $6{,}00\\,\\textsf{l}$ bensiiniä $100\\,\\text{km}$:n matkalla, kun se ajaa maantiellä tasaisella $80{,}0\\,\\text{km/h}$:n nopeudella. Bensiinin tiheys on $0{,}750\\,\\text{kg/l}$ ja lämpöarvo $43{,}0\\,\\text{MJ/kg}$. Moottorin hyötysuhde on $28{,}0\\,\\%$. Kuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee, ja miksi sähköauto, jonka moottorin hyötysuhde on noin $90\\,\\%$, tarvitsee samaan matkaan paljon vähemmän energiaa?",
-      "answer": 12.0,
-      "unit": "kW",
-      "tolerance": 0.02
-    }
-  ]
+ "level1": [
+  {
+   "id": "fy3-11-L1-01",
+   "level": 1,
+   "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä, joka työntää mäntää. Männän liikkuessa höyryn paine pysyy 480,0 kPa:na, ja höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
+   "answer": 12.0,
+   "unit": "kJ",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L1-02",
+   "level": 1,
+   "text": "Saunan kiukaalle heitetään löylyvettä. Kun gramma vettä höyrystyy, syntyvä $100\\,{}^\\circ\\text{C}$:n höyry vie 1,70 litraa enemmän tilaa kuin vesi vei. Höyrystyminen tapahtuu ilmanpaineessa, joka on 101 kPa. Kuinka suuren työn höyry tekee, kun se työntää ympäröivää ilmaa tieltään?",
+   "answer": 172,
+   "unit": "J",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L1-03",
+   "level": 1,
+   "text": "Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla 4,30 · 10³ MW, ja yksikön sähköteho on 1,60 · 10³ MW. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.",
+   "answer": 37.2,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L1-04",
+   "level": 1,
+   "text": "Pienen kaasumoottorin sylinterissä olevaa kaasua lämmitetään, ja kaasu työntää mäntää eteenpäin. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona laajenemisen aikana. Kuinka suuren työn kaasu tekee laajetessaan? Lue tarvittavat arvot kuvaajasta. Anna vastaus jouleina.",
+   "figure": "fy3-11/pv-isobaari",
+   "answer": 750,
+   "unit": "J",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L1-05",
+   "level": 1,
+   "text": "Mökin aggregaatti tuottaa illan aikana $2{,}60\\,\\text{kWh}$ sähköä. Samana aikana aggregaatin moottorissa palaneen bensiinin energia on $12{,}0\\,\\text{kWh}$. Mikä on aggregaatin hyötysuhde? Anna vastaus prosentteina.",
+   "answer": 21.7,
+   "unit": "%",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy3-11-L2-01",
+   "level": 2,
+   "text": "Puuhaketta ja turvetta polttava lauhdevoimalaitos tuottaa vuorokauden aikana sähköä $3\\,830\\,\\text{MWh}$. Samana aikana kattilassa palaneen polttoaineen energia on $33{,}6\\,\\text{TJ}$ ($1\\,\\text{TJ} = 10^{12}\\,\\text{J}$). Mikä on laitoksen hyötysuhde? Anna vastaus prosentteina.",
+   "answer": 41.0,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L2-02",
+   "level": 2,
+   "text": "Saimaalla liikennöivän vanhan höyrylaivan kattilassa poltetaan tunnissa $120\\,\\text{kg}$ koivuhalkoja. Ilmakuivan koivupuun lämpöarvo on $15\\,\\text{MJ/kg}$, eli kilogramman palaessa vapautuu energiaa $15\\,\\text{MJ}$. Laivan höyrykone tekee työtä keskimäärin $45\\,\\text{kW}$:n teholla. Mikä on kattilan ja höyrykoneen yhteinen hyötysuhde? Anna vastaus prosentteina.",
+   "answer": 9.0,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L2-03",
+   "level": 2,
+   "text": "Fysiikan tunnilla sylinterissä on ilmaa, jonka kevyesti liikkuva mäntä sulkee. Ilmaa lämmitetään, jolloin siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$, jossa $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
+   "answer": 500,
+   "unit": "J",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L2-04",
+   "level": 2,
+   "text": "Saaristolautan dieselmoottori pyörittää potkuria $480\\,\\text{kW}$:n mekaanisella teholla. Moottorin hyötysuhde on $40{,}0\\,\\%$. Kuinka suuri lämpöteho siirtyy pakokaasujen ja jäähdytysveden mukana ympäristöön?",
+   "answer": 720,
+   "unit": "kW",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy3-11-L3-01",
+   "level": 3,
+   "text": "Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta $320\\,\\text{MW}$:n teholla ja tuottaa samalla $96\\,\\text{MW}$ sähköä ja $180\\,\\text{MW}$ kaukolämpöä. Jos laitosta ei olisi, sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on $40{,}0\\,\\%$, ja sama kaukolämpö lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä $90{,}0\\,\\%$:n hyötysuhteella. Kuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.",
+   "answer": 120,
+   "unit": "MW",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L3-02",
+   "level": 3,
+   "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat kaiken sähkön lämmöksi. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
+   "answer": 9.6,
+   "unit": "MWh",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy3-11-L3-03",
+   "level": 3,
+   "text": "Bensiiniauto kuluttaa $6{,}00\\,\\textsf{l}$ bensiiniä $100\\,\\text{km}$:n matkalla, kun se ajaa maantiellä tasaisella $80{,}0\\,\\text{km/h}$:n nopeudella. Bensiinin tiheys on $0{,}750\\,\\text{kg/l}$ ja lämpöarvo $43{,}0\\,\\text{MJ/kg}$. Moottorin hyötysuhde on $28{,}0\\,\\%$. Kuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee, ja miksi sähköauto, jonka moottorin hyötysuhde on noin $90\\,\\%$, tarvitsee samaan matkaan paljon vähemmän energiaa?",
+   "answer": 12.0,
+   "unit": "kW",
+   "tolerance": 0.02
+  }
+ ]
 }

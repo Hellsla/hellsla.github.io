@@ -29,15 +29,15 @@
 **Järkevyys:** Yksiköt kilojoule ja sekunti antavat suoraan kilowatin: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. Tällä teholla voisi nostaa noin 300 kg:n kuorman tasaisesti metrin sekunnissa ($300\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2{,}9\,\text{kW}$), mikä sopii hissin moottorille.
 
 ## fy3-2-L1-04
-**Annettu:** voima $F = 35\,\text{N}$ vakiona ja liikkeen suuntainen, matka $s = 6{,}0\,\text{m}$
-**Kysytty:** voiman tekemä työ $W$ jouleina kuvaajan pinta-alana
-**Periaate:** Työ on $(s,F)$-kuvaajan ja $s$-akselin väliin jäävän alueen pinta-ala. Kun voima on vakio, kuvaaja on vaakasuora jana ja alue on suorakulmio.
-**Kuvaajan lukeminen:** Jana on korkeudella $F = 35\,\text{N}$ välillä $s = 0\ldots 6{,}0\,\text{m}$. Suorakulmion korkeus on $35\,\text{N}$ ja leveys $6{,}0\,\text{m}$.
-**Kaava:** $W = A_\text{suorakulmio} = F s$, jolloin työ on jo ratkaistu: $W = F s$
-**Muunnokset:** Voima on newtoneina ja matka metreinä, joten muunnoksia ei tarvita: $\text{N}\cdot\text{m} = \text{J}$.
-**Sijoitus:** $W = 35\,\text{N} \cdot 6{,}0\,\text{m} = 210\,\text{J}$
-**Vastaus:** $210\,\text{J}$, kaksi merkitsevää numeroa kuten matkassa $6{,}0\,\text{m}$.
-**Järkevyys:** Kaava $W = F s$ antaa saman tuloksen kuin pinta-ala, koska vakiovoimalla pinta-ala on suorakulmio. Karkea arvio: $35\,\text{N} \approx 40\,\text{N}$ ja $6\,\text{m}$ antavat noin $240\,\text{J}$, hieman enemmän kuin $210\,\text{J}$, koska $35\,\text{N} < 40\,\text{N}$. Yksikkö $\text{N}\cdot\text{m}$ on joule.
+**Annettu:** kuvaajasta luettuna voima $F_1 = 25\,\text{N}$ matkalla $0\ldots 6\,\text{m}$ ja $F_2 = 10\,\text{N}$ matkalla $6\ldots 10\,\text{m}$, voima on liikkeen suuntainen
+**Kysytty:** voiman tekemä kokonaistyö $W$ jouleina
+**Periaate:** Työ on $(s,F)$-kuvaajan ja $s$-akselin väliin jäävän alueen pinta-ala. Voima ei ole vakio koko matkalla, joten kaava $W = F s$ ei käy suoraan koko matkalle. Pinta-ala jakautuu kahteen suorakulmioon, joissa voima on vakio.
+**Kuvaajan lukeminen:** Ensimmäinen vaakasuora jana on ruudukon viivalla $F_1 = 25\,\text{N}$ ja ulottuu pisteestä $s = 0$ pisteeseen $s = 6\,\text{m}$, jossa se putoaa pystysuoraan. Toinen jana on viivalla $F_2 = 10\,\text{N}$ ja ulottuu pisteestä $s = 6\,\text{m}$ pisteeseen $s = 10\,\text{m}$. Toisen suorakulmion leveys on $s_2 = 10\,\text{m} - 6\,\text{m} = 4\,\text{m}$.
+**Kaava:** $W = W_1 + W_2$, joten $W = F_1 s_1 + F_2 s_2$
+**Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita: $\text{N}\cdot\text{m} = \text{J}$.
+**Sijoitus:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 150\,\text{J} + 40\,\text{J} = 190\,\text{J}$
+**Vastaus:** $190\,\text{J}$, kaksi merkitsevää numeroa, koska kuvaajan arvot on luettu ruudukon viivoilta kokonaislukuina.
+**Järkevyys:** Keskimääräinen voima koko $10\,\text{m}$:n matkalla on $\dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$, mikä on voiman pienimmän ($10\,\text{N}$) ja suurimman ($25\,\text{N}$) arvon välissä. Jos laskisit koko matkalle $25\,\text{N} \cdot 10\,\text{m} = 250\,\text{J}$, saisit liian suuren tuloksen, koska voima putoaa kesken matkan.
 
 ## fy3-2-L1-05
 **Annettu:** voima $F = 20\,\text{N}$ (liikkeen suuntainen), nopeus $v = 3{,}0\,\text{m/s}$, liike tasaista

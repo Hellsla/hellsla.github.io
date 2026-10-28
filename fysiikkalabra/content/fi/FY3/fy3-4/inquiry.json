@@ -1,7 +1,11 @@
 {
   "version": 1,
   "contribution": "Paine $p = F/A$ kertoo, miten voima jakautuu pinnalle, ja nesteessä paine kasvaa syvyyden mukana suorana $p = p_0 + \\rho g h$, jonka vakiotermi on ilmanpaine ja kulmakerroin $\\rho g$.",
-  "learn": ["Osaat laskea paineen voimasta ja pinta-alasta ja selittää, miten voima jakautuu pinnalle.", "Osaat laskea nesteen paineen eri syvyyksillä.", "Tulkitset paineen ja syvyyden kuvaajan vakiotermin ja kulmakertoimen."],
+  "learn": [
+    "Osaat laskea paineen voimasta ja pinta-alasta ja selittää, miten voima jakautuu pinnalle.",
+    "Osaat laskea nesteen paineen eri syvyyksillä.",
+    "Tulkitset paineen ja syvyyden kuvaajan vakiotermin ja kulmakertoimen."
+  ],
   "prior": [
     "Paino on voima, $G = mg$, ja $g = 9{,}81\\,\\text{m/s}^2$ (luku *Voima vuorovaikutuksen mittana ja paino*)",
     "Paine on tilanmuuttuja, joka syntyy mikromallissa hiukkasten törmäyksistä seinämään (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
@@ -350,10 +354,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Astian muoto",
+      "prompt": "Kapea pystyputki ja leveä allas ovat täynnä vettä $1{,}0\\,\\text{m}$:n korkeuteen. Altaassa on tuhatkertainen määrä vettä putkeen verrattuna. Kummassa pohjan paine on suurempi?",
+      "choices": [
+        {
+          "text": "Altaassa, koska siinä on enemmän vettä ja siis suurempi paino.",
+          "feedback": "Altaan veden kokonaispaino on suurempi, mutta se jakautuu myös tuhatkertaiselle pohjan alalle. Paine on voima jaettuna alalla, ja pohjan paineeseen vaikuttaa vain pinnan paine, nesteen tiheys ja syvyys, $p = p_0 + \\rho g h$."
+        },
+        {
+          "text": "Putkessa, koska vesi on siinä ahtaassa tilassa.",
+          "feedback": "Ahtaus ei kasvata painetta. Paine pohjalla riippuu vain syvyydestä, tiheydestä ja pinnan paineesta. Putkessa vesipatsas on yhtä korkea kuin altaassa, ja sen paino jakautuu pienelle pohjan alalle."
+        },
+        {
+          "text": "Yhtä suuri kummassakin.",
+          "correct": true,
+          "feedback": "Oikein. Syvyys $h$ on molemmissa sama, tiheys on sama ja pinnan paine on sama, joten $p = p_0 + \\rho g h$ on sama. Astian leveys ei vaikuta: altaassa suurempi paino jakautuu suuremmalle alalle."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaaja ja laskeminen",
+      "title": "3. Kuvaaja ja laskeminen",
       "prompt": "Tuntemattoman nesteen $(h, p)$-kuvaaja on suora, joka kulkee pisteiden (0 m, 101 kPa) ja (8,0 m, 171 kPa) kautta. Mikä on nesteen tiheys? Vastaa yksikössä kg/m³.",
       "answer": 890,
       "unit": "kg/m³",
@@ -379,7 +405,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Sukeltaja on 3,0 m:n syvyydessä, ja korvassa tuntuu painetta. Kun hän tasaa paineen päästämällä ilmaa nielusta välikorvaan, tunne katoaa. Selitä paineen avulla, miksi tärykalvoon kohdistuu aluksi voima ja miksi se häviää tasauksessa. Käytä käsitteitä paine, ylipaine ja voima.",
       "criteria": [
         "Sanon, että ulkopuolinen paine on 3,0 m:ssä ilmanpainetta suurempi hydrostaattisen paineen $\\rho g h$ verran (noin 29 kPa).",
@@ -394,7 +420,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

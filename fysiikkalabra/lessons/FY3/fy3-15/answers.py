@@ -9,7 +9,7 @@ a = {}
 a["fy3-15-L1-01"] = 0.920 * 0.980 * 100            # hydro: η = η_turbiini · η_generaattori = 0,920 · 0,980 = 0,9016 -> 90,2 %
 a["fy3-15-L1-02"] = 1.05 / 2.50 * 100              # wind: η = P_sähkö/P_tuuli = 1,05 MW / 2,50 MW = 0,420 -> 42,0 %
 a["fy3-15-L1-03"] = 0.210 * 1.00 * 20.0            # solar: P = η·I·A = 0,210 · 1,00 kW/m² · 20,0 m² = 4,20 kW
-a["fy3-15-L1-04"] = 800 - 320                      # condensing: P_h = P₀ − P_s = 800 MW − 320 MW = 480 MW
+a["fy3-15-L1-04"] = 350 - 150                       # fy3-15/chain-bars: drops 50, 200, 10 MW; the largest, in the steam cycle: P_h = P₁ − P₂ = 350 MW − 150 MW = 200 MW
 a["fy3-15-L1-05"] = (75 + 150) / 250 * 100         # CHP: η_kok = (P_s + P_k)/P₀ = 225 MW / 250 MW = 0,900 -> 90 %
 # Level 2: two steps or a conversion or a rearrangement
 a["fy3-15-L2-01"] = 300 * 0.880 * 0.420 * 0.980    # peat plant: P₃ = η₁η₂η₃P₀ = 300 MW · 0,880 · 0,420 · 0,980 = 108,66 MW -> 109 MW

@@ -14,7 +14,7 @@ a["fy1-6-L1-04"] = (49 - 0) / (5.0 - 0)              # slope of the (t,v) line t
 a["fy1-6-L1-05"] = 3.71 * 6.0                        # Mars g = 3,71 m/s²: v = 3,71 · 6,0 = 22,26 m/s -> 22 m/s
 # Level 2: one conversion, one rearrangement or two steps
 a["fy1-6-L2-01"] = 12.0 / g                          # v = g t -> t = v / g = 12,0 m/s / 9,81 m/s² = 1,223 s -> 1,22 s
-a["fy1-6-L2-02"] = (54.0 / 3.6) / g                  # 54,0 km/h = 15,0 m/s: t = v / g = 15,0 / 9,81 = 1,529 s -> 1,53 s
+a["fy1-6-L2-02"] = (20 / 5.0) * 5.0 / (40 / 5.0)       # figure fy1-6/two-planets: g_A = 20/5,0 = 4,0 and g_B = 40/5,0 = 8,0 m/s²; v_A(5,0 s) = 20 m/s; t_B = 20 / 8,0 = 2,5 s
 a["fy1-6-L2-03"] = 12.0 + g * 1.50                   # speed gain in 1,50 s is g Δt = 14,715 m/s: v₂ = 12,0 + 14,715 = 26,715 m/s -> 26,7 m/s
 a["fy1-6-L2-04"] = (29.3 - 9.7) / (3.0 - 1.0)        # g = Δv / Δt = (29,3 − 9,7) m/s / (3,0 − 1,0) s = 9,8 m/s²
 # Level 3: reasoning or an unfamiliar context

@@ -54,9 +54,21 @@ def graph():
     return f.svg()
 
 
-FIGURES = {"motion": motion, "graph": graph}
+def line_read():
+    """A task-only variant of `graph`: one uniform motion as a straight line through the origin, no slope triangle, no
+    values written on it; the student reads two grid crossings (scripts/figcat.py variant)."""
+    f = Fig("fy15-line-read", 360, "Kuvaaja mittakaavassa: kävelijän paikka s ajan t funktiona, suora viiva origosta. Ruudukon väli on 1 s ja 5 m. "
+            "Suora kulkee ruudukon risteyskohtien (2 s; 5 m), (4 s; 10 m), (6 s; 15 m), (8 s; 20 m) ja (10 s; 25 m) kautta.")
+    ax = Axes(f, (96, 300), (470, 60), x=(0, 10), y=(0, 25), xticks=list(range(1, 11)), yticks=[5, 10, 15, 20, 25],
+              xlabel=r"t\ (\text{s})", ylabel=r"s\ (\text{m})", xfmt=lambda v: str(int(v)) if v % 2 == 0 else "")
+    ax.line([(0, 0), (10, 25)], COLD, 3)
+    return f.svg()
+
+
+FIGURES = {"motion": motion, "graph": graph, "line-read": line_read}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "motion": "safe: equal spacing at equal times, no distances",
     "graph": "reveals: the slope 3 m/s of both lines and s0 = 5 m",
+    "line-read": "safe: one straight line through the origin, grid crossings to read, no slope marked (graph is the lesson figure)",
 }

@@ -6,9 +6,5 @@
   {
     "q": "Voimamittarin jousi venyy 3,0 cm, kun siihen vaikuttaa 8,0 N:n voima. Kuinka paljon jousi venyy 20 N:n voimalla?",
     "a": "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: $2{,}5 \\cdot 3{,}0\\,\\text{cm} = 7{,}5\\,\\text{cm}$."
-  },
-  {
-    "q": "Pullossa on 1,5 kg vettä. Mikä on veden paino Maassa, ja miksi lause ”vesi painaa puolitoista kiloa” on fysiikan kannalta epätarkka?",
-    "a": "$G = mg = 1{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. Kilogramma on massan yksikkö, mutta paino on voima, jonka yksikkö on newton: lause kertoo massan, ei painon."
   }
 ]

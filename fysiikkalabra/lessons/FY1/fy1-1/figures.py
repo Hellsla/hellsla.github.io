@@ -301,9 +301,32 @@ def interactions():
     return f.svg()
 
 
+def scale_marks():
+    """A task-only variant of `scale-axis`: a power-of-ten axis from 10^-12 to 10^2 with two named objects and no values;
+    the student reads the exponents off the gridlines (scripts/figcat.py variant)."""
+    f = Fig("fy11-marks", 250, "Kaavakuva: koon d kymmenpotenssiakseli, jolla on kaksi nimettyä kohdetta. Akseli kulkee arvosta 10 potenssiin −12 metriä "
+            "arvoon 10 potenssiin 2 metriä, ja jokaisen kymmenpotenssin kohdalla on pystyviiva. Numerot on merkitty joka toisen viivan kohdalle "
+            "(−12, −10, −8, …, 2). Kohteet ovat vetyatomi ja muurahainen, kumpikin viivan kohdalla, ja askelten väli on mittakaavassa.")
+    y0, x0, step = 170, 36, 36.0                      # exponent n at x0 + (n + 12) step
+    X = lambda e: x0 + (e + 12) * step
+    for e in range(-12, 3):
+        f.line(X(e), y0, X(e), 64, RULE_LIGHT, 1.5)
+    f.arrow(24, y0, 584, y0, INK, 2.5, 13)
+    for e in range(-12, 3):
+        f.line(X(e), y0, X(e), y0 + 7, INK, 2)
+        if e % 2 == 0:
+            f.tex(X(e), y0 + 28, rf"10^{{{e}}}" if e else "10^{0}", "middle")
+    f.tex(584, y0 + 62, r"d\ (\text{m})", "end")
+    for e, name, ly in ((-10, "vetyatomi", 40), (-2, "muurahainen", 40)):
+        f.line(X(e), y0 - 6, X(e), ly + 18, MUTED, 1.5, "5 4")
+        f.tex(X(e), ly, rf"\text{{{name}}}", "middle")
+        f.circle(X(e), y0, 7, COLD, WHITE, 2)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "scale-axis": scale_axis, "ladder": ladder,
            "matter-ladder": matter_ladder, "atom-stadium": atom_stadium, "cosmic-address": cosmic_address,
-           "object-types": object_types, "interactions": interactions}
+           "object-types": object_types, "interactions": interactions, "scale-marks": scale_marks}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "scale-axis": "reveals: the sizes from proton to universe as powers of ten",
@@ -313,4 +336,5 @@ REUSE = {
     "cosmic-address": "reveals: the sizes of the nested structures",
     "object-types": "reveals: the sizes of the objects",
     "interactions": "safe: the four interactions, no values",
+    "scale-marks": "safe: a power-of-ten axis with two named marks, exponents to be read off the gridlines (scale-axis is the lesson figure)",
 }

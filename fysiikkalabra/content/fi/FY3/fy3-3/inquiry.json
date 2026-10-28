@@ -1,7 +1,11 @@
 {
   "version": 1,
   "contribution": "Kaasu nähdään termodynaamisena systeeminä, jonka tilaa kuvaavat lämpötila, paine ja tilavuus. Mikromalli selittää paineen hiukkasten törmäyksinä ja lämpötilan hiukkasten keskimääräisenä liike-energiana, ja siksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä.",
-  "learn": ["Osaat kuvata kaasun termodynaamisena systeeminä, jonka tilan kertovat lämpötila, paine ja tilavuus.", "Osaat selittää mikromallilla, mitä paine ja lämpötila ovat.", "Osaat perustella, miksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä."],
+  "learn": [
+    "Osaat kuvata kaasun termodynaamisena systeeminä, jonka tilan kertovat lämpötila, paine ja tilavuus.",
+    "Osaat selittää mikromallilla, mitä paine ja lämpötila ovat.",
+    "Osaat perustella, miksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä."
+  ],
   "prior": [
     "Celsiusasteikko: vesi jäätyy $0\\,{}^\\circ\\text{C}$:ssa ja kiehuu $100\\,{}^\\circ\\text{C}$:ssa (yläkoulun fysiikka)",
     "Renkaaseen pumpattu lisäilma tekee siitä kovemman (arkikokemus)"
@@ -343,10 +347,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämpötilan kasvu",
+      "prompt": "Ilman lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $20\\,{}^\\circ\\text{C}$:een. Mitä tapahtuu hiukkasten keskimääräiselle liike-energialle?",
+      "choices": [
+        {
+          "text": "Se kaksinkertaistuu, koska lämpötilan lukuarvo kaksinkertaistuu.",
+          "feedback": "Celsiusasteikon nollakohta on valittu veden jäätymispisteeksi, ei tilaksi, jossa liike loppuu. Liike-energia on verrannollinen kelvinlämpötilaan, ja kelvineinä lämpötila nousee vain arvosta $283\\,\\text{K}$ arvoon $293\\,\\text{K}$."
+        },
+        {
+          "text": "Se kasvaa noin $3{,}5\\,\\%$.",
+          "correct": true,
+          "feedback": "Oikein. Keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan, joten sen suhde on $\\dfrac{293{,}15\\,\\text{K}}{283{,}15\\,\\text{K}} \\approx 1{,}035$, eli kasvu on noin $3{,}5\\,\\%$."
+        },
+        {
+          "text": "Se kasvaa $10\\,\\%$, koska lämpötila nousee kymmenellä asteella.",
+          "feedback": "Lämpötilan muutos $10\\,\\text{K}$ ei ole sellaisenaan prosentteina. Suhteellinen kasvu saadaan vertaamalla kelvinlämpötiloja: $10\\,\\text{K}/283{,}15\\,\\text{K} \\approx 3{,}5\\,\\%$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Taulukko ja ekstrapolointi",
+      "title": "3. Taulukko ja ekstrapolointi",
       "prompt": "Taulukossa ovat simulaation teoria-arvot paineelle (suhteellinen luku), kun tilavuus on 1,0 dm³. Ne ovat mallin arvoja, eivät mittauksia.\n\n| $\\theta$ (°C) | −123 | 27 | 177 |\n|---|---|---|---|\n| $p$ (suht.) | 50 | 100 | 150 |\n\nPisteet ovat samalla suoralla. Jatka suoraa ja määritä lämpötila, jossa paine olisi nolla. Vastaa celsiusasteina.",
       "answer": -273,
       "unit": "°C",
@@ -372,7 +398,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä mikromallin avulla, miksi lämpötilojen suhteita verrataan kelvineinä eikä celsiusasteina ja miksi kelvinlämpötila ei voi olla negatiivinen.",
       "criteria": [
         "Sanon, että kaasun lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta.",
@@ -387,7 +413,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

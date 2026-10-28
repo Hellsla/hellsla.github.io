@@ -69,10 +69,11 @@
     {
       "id": "fy3-10-L2-04",
       "level": 2,
-      "text": "Lapissa on pakkasaamu, jolloin ulkoilman lämpötila on −30 °C ja ilmanpaine 102 kPa. Kuinka suuren tilavuuden 1,00 mol ilmaa vie näissä oloissa? Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Anna vastaus litroina.",
-      "answer": 19.8,
-      "unit": "l",
-      "tolerance": 0.02
+      "text": "Kaksi samanlaista, suljettua ja jäykkää astiaa, joiden tilavuus on kummankin $2{,}00\\,\\textsf{l}$, sisältää kaasunäytteet A ja B. Kun astioita lämmitetään, niiden paine mitataan eri lämpötiloissa. Kuvaajassa on mittaustulokset. Kuinka monta moolia enemmän kaasua on astiassa A kuin astiassa B? Lue tarvittavat arvot kuvaajasta. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ ja oleta, että kaasut noudattavat ideaalikaasun tilanyhtälöä.",
+      "figure": "fy3-10/pt-suorat",
+      "answer": 0.024,
+      "unit": "mol",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -4,10 +4,6 @@
     "a": "Sulamisen aikana siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia: jään säännöllinen järjestys purkautuu, ja hiukkasten välinen vuorovaikutusenergia kasvaa. Vesimolekyylit itse pysyvät ehjinä. Lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, joten hiukkasten keskimääräinen liike-energia ei kasva, ennen kuin kaikki jää on sulanut."
   },
   {
-    "q": "Kattilassa vesi kiehuu. Liesi käännetään täysille. Mitä veden lämpötilalle tapahtuu ja mihin lisäenergia menee?",
-    "a": "Lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa. Lisäenergia höyrystää vettä: se kasvattaa molekyylien välistä vuorovaikutusenergiaa, ja pieni osa kuluu työhön, kun höyry laajenee ja työntää ilmaa. Suurempi teho vain nopeuttaa höyrystymistä, joten vesi kiehuu pois nopeammin, mutta ei kuumene."
-  },
-  {
     "q": "Lämpenemiskäyrässä on nousevia ja vaakasuoria osia. Mitä kummassakin tapahtuu ja mikä kaava pätee?",
     "a": "Nousevilla osilla aine lämpenee ja $Q = cm\\Delta T$. Vaakasuorilla osilla aine muuttaa olomuotoaan vakiolämpötilassa ja $Q = sm$ (sulaminen) tai $Q = rm$ (höyrystyminen)."
   }

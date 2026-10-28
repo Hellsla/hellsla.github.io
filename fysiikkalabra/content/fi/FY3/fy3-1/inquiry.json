@@ -1,7 +1,11 @@
 {
   "version": 1,
   "contribution": "Voima saa merkityksen vuorovaikutuksen voimakkuuden mittana, jota voimamittarin jousi mittaa newtoneina, ja paino erotetaan massasta: $G = mg$ riippuu sekä kappaleesta että taivaankappaleesta.",
-  "learn": ["Osaat selittää, miksi voima on vuorovaikutuksen voimakkuuden mitta ja miten voimamittari mittaa sitä newtoneina.", "Erotat painon ja massan toisistaan.", "Osaat laskea kappaleen painon sen massasta eri taivaankappaleilla."],
+  "learn": [
+    "Osaat selittää, miksi voima on vuorovaikutuksen voimakkuuden mitta ja miten voimamittari mittaa sitä newtoneina.",
+    "Erotat painon ja massan toisistaan.",
+    "Osaat laskea kappaleen painon sen massasta eri taivaankappaleilla."
+  ],
   "prior": [
     "Suoraan verrannollisuus ja origon kautta kulkeva suora, esimerkiksi $s = vt$ (FY1)",
     "Arkikokemus: painava ja kevyt esine, venyvä jousi tai kuminauha (arkitieto, ei edeltävää oppituntia)"
@@ -348,10 +352,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Massa ja paino arkikielessä",
+      "prompt": "Kaupan vaaka näyttää pullolliselle vettä lukeman $1{,}5\\,\\text{kg}$. Mikä seuraavista väitteistä on fysiikan kannalta oikein?",
+      "choices": [
+        {
+          "text": "Veden paino on $1{,}5\\,\\text{kg}$, koska kilogramma on painon yksikkö.",
+          "feedback": "Arkikielessä näin sanotaan, mutta kilogramma on massan yksikkö. Paino on voima, ja sen yksikkö on newton. Lause kertoo siis massan, ei painoa."
+        },
+        {
+          "text": "Veden massa on $1{,}5\\,\\text{kg}$ ja paino Maassa noin $15\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Oikein. Massa on $1{,}5\\,\\text{kg}$ ja paino on voima: $G = mg = 1{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. Vaaka näyttää kilogrammoja, koska sen asteikko on tehty Maassa jakamalla voima arvolla $9{,}81\\,\\text{m/s}^2$."
+        },
+        {
+          "text": "Veden massa on $1{,}5\\,\\text{kg}$ ja paino $1{,}5\\,\\text{N}$, koska sama luku kertoo molemmat.",
+          "feedback": "Luku ei pysy samana, kun yksikkö vaihtuu. Painon saa kertomalla massan putoamiskiihtyvyydellä: $1{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$, ei $1{,}5\\,\\text{N}$."
+        },
+        {
+          "text": "Veden massa on $15\\,\\text{N}$ ja paino $1{,}5\\,\\text{kg}$.",
+          "feedback": "Yksiköt ovat vaihtuneet keskenään. Massan yksikkö on kilogramma ja painon newton. Massa on $1{,}5\\,\\text{kg}$ ja paino noin $15\\,\\text{N}$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaaja ja laskeminen",
+      "title": "3. Kuvaaja ja laskeminen",
       "prompt": "Tuntemattomalla taivaankappaleella mitattiin painoja eri massoille. $(m, G)$-kuvaaja on origon kautta kulkeva suora, joka kulkee pisteen $(50\\,\\text{kg}, 440\\,\\text{N})$ kautta. Mikä on putoamiskiihtyvyys tällä taivaankappaleella? Vastaa yksikössä m/s².",
       "answer": 8.8,
       "unit": "m/s²",
@@ -377,7 +407,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Selitä omin sanoin, miksi astronautti painaa Kuussa vain noin kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään. Käytä käsitteitä massa, paino ja vuorovaikutus sekä yksiköitä.",
       "criteria": [
         "Sanon, että massa kertoo ainemäärän, on kilogrammoina ja pysyy samana Kuussa ja Maassa.",
@@ -392,7 +422,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

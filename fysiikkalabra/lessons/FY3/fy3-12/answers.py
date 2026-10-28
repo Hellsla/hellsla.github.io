@@ -13,7 +13,7 @@ dT_ovi = 21 - (-19)                                  # door: ΔT = 40 K
 a["fy3-12-L1-02"] = 96 / (2.0 * dT_ovi)              # U = P/(AΔT) = 96 W / (2,0 m² · 40 K) = 1,2 W/(m²·K)
 a["fy3-12-L1-03"] = 210 / (0.25 * 28)                # ΔT = P/(UA) = 210 W / (0,25 · 28 W/K) = 30 K
 a["fy3-12-L1-04"] = 3.5 * 14                         # E = Pt = 3,5 kW · 14 h = 49 kWh
-a["fy3-12-L1-05"] = (1 - 0.30) * 340                 # emitted = absorbed = (1 − r)·P_tulo = 0,70 · 340 = 238 W/m² -> 240
+a["fy3-12-L1-05"] = 341 - 102                         # fy3-12/earth-flows: balance, emitted = absorbed = 341 − 102 = 239 W/m²
 # Level 2: two steps, a conversion or a rearrangement
 UA_mokki = 0.50 * 70 + 0.30 * 50                     # walls + ceiling in parallel: 35 + 15 = 50 W/K
 dT_max = 2000 / UA_mokki                             # largest ΔT the 2,0 kW heaters can hold: 40 K

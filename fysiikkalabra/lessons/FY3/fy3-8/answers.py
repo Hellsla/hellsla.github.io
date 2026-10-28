@@ -19,7 +19,7 @@ gamma_teras = 3 * a_teras                                    # solid steel: γ �
 a["fy3-8-L2-02"] = gamma_teras * (2.0 * 1000) * (20 - (-22)) # kettlebell 2,0 dm³ = 2000 cm³, −22 -> 20 °C: ΔV = 36e-6 · 2000 · 42 = 3,024 cm³ -> 3,0 cm³
 dT_kisko = (7.2 / 1000) / (a_teras * 25.0)                   # rail gap closes when ΔL = 7,2 mm: ΔT = 0,0072 m / (12e-6 · 25,0 m) = 24 K
 a["fy3-8-L2-03"] = 12 + dT_kisko                             # T = 12 °C + 24 K = 36 °C
-a["fy3-8-L2-04"] = (2.07 / 1000) / (3.00 * (42 - 12)) / 1e-6 # facade strip: α = ΔL / (L₀ ΔT) = 0,00207 m / (3,00 m · 30 K) = 23e-6 1/K -> aluminium
+a["fy3-8-L2-04"] = (3.0 / 1000) / (5.00 * (70 - 20)) / 1e-6   # figure fy3-8/length-graph: (20 °C; 0 mm) to (70 °C; 3,0 mm), α = ΔL / (L₀ ΔT) = 0,0030 m / (5,00 m · 50 K) = 12e-6 1/K -> steel
 # Level 3: reasoning or an unfamiliar context
 dT_rengas = (75.09 - 75.00) / (a_teras * 75.00)              # shrink fit: the hole must grow 0,09 mm, ΔT = 0,09 mm / (12e-6 · 75,00 mm) = 100 K
 a["fy3-8-L3-01"] = 20 + dT_rengas                            # ring temperature T = 20 °C + 100 K = 120 °C

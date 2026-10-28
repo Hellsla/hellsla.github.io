@@ -11,7 +11,7 @@ a["fy3-7-L1-01"] = s * 1.20 / 1e3                      # cool-box ice melts: Q =
 a["fy3-7-L1-02"] = r * 0.40 / 1e6                      # potato pot boils off 0,40 kg: Q = 2260 kJ/kg · 0,40 kg = 904 kJ -> 0,90 MJ
 a["fy3-7-L1-03"] = s * 45 / 1e6                        # lake water freezes, 45 kg per m², heat released = 334 kJ/kg · 45 kg = 15 030 kJ -> 15 MJ
 a["fy3-7-L1-04"] = r * 0.030 / 1e3                     # milk-frother steam condenses: Q = 2260 kJ/kg · 0,030 kg = 67,8 kJ -> 68 kJ
-a["fy3-7-L1-05"] = 186 - 19                            # heating curve: plateau at 0 °C runs from 19 kJ to 186 kJ -> melting takes 167 kJ
+a["fy3-7-L1-05"] = (220 - 20) / 0.60                    # figure fy3-7/melting-curve: flat part at 0 °C from 20 kJ to 220 kJ, s = Q/m = 200 kJ/0,60 kg = 333 kJ/kg
 # Level 2: two steps, one conversion or one rearrangement
 a["fy3-7-L2-01"] = r * 0.50 / 2.0e3 / 60               # hotplate: P t = r m -> t = 2260 kJ/kg · 0,50 kg / 2000 W = 565 s = 9,42 min -> 9,4 min
 Q_jaa_lampenee = c_jaa * (750 / 1000) * (0 - (-18))     # 750 g = 0,750 kg ice warms −18 -> 0 °C: 2100 · 0,750 · 18 = 28 350 J

@@ -130,11 +130,27 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "piston-work": piston_work, "heat-engine": heat_engine, "heat-pump": heat_pump, "pv-work": pv_work}
+def pv_isobar():
+    """Task figure (no lesson.md block): a gas expands at constant pressure, drawn with numbers on the gridlines and
+    without the shaded area, the work or the formula. p = 250 kPa, V from 1,0 l to 4,0 l; the description lists these data."""
+    f = Fig("fy311-pv-isobar", 330, "Kuvaaja mittakaavassa: sylinterissä olevan kaasun paine p tilavuuden V funktiona. Paine pysyy vakiona, "
+            "kun kaasu laajenee: kuvaaja on vaakasuora jana pisteestä (1,0 l; 250 kPa) pisteeseen (4,0 l; 250 kPa), ja nuoli osoittaa "
+            "laajenemisen suuntaa. Ruudukon väli on 1,0 l ja 50 kPa.")
+    ax = Axes(f, (96, 280), (470, 56), x=(0, 5), y=(0, 300), xticks=[1, 2, 3, 4, 5], yticks=[50, 100, 150, 200, 250, 300],
+             xlabel=r"V\ (\textsf{l})", ylabel=r"p\ (\text{kPa})")
+    ax.line([(1, 250), (4, 250)], INK, 4.5)
+    for v in (1, 4):
+        ax.point(v, 250, HEAT)
+    f.arrow(ax.X(2.5) - 14, ax.Y(250) - 22, ax.X(2.5) + 14, ax.Y(250) - 22, INK, 4.5, 20)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "piston-work": piston_work, "heat-engine": heat_engine, "heat-pump": heat_pump, "pv-work": pv_work, "pv-isobaari": pv_isobar}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "piston-work": "reveals: the derivation W = pΔV",
     "heat-engine": "reveals: the efficiency 40 %",
     "heat-pump": "reveals: Q_sisälle = 3 E_s",
     "pv-work": "reveals: the work is the area under the line",
+    "pv-isobaari": "safe: a constant-pressure expansion with the end points on gridlines; no area, no work value",
 }

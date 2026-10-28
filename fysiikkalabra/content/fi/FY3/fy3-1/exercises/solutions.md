@@ -29,14 +29,15 @@
 **Järkevyys:** Maassa laitteen paino olisi $30\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 294{,}3\,\text{N}$. Kuun $g$ on noin kuudesosa Maan arvosta, ja $\dfrac{294{,}3\,\text{N}}{6} \approx 49\,\text{N}$, joten tulos täsmää.
 
 ## fy3-1-L1-04
-**Annettu:** $F_1 = 4{,}0\,\text{N}$ ja sen venymä $x_1 = 2{,}5\,\text{cm}$; uusi venymä $x = 6{,}0\,\text{cm}$
+**Annettu:** kuvaajan mittauspisteet ruudukon risteyksissä; jousen venymä kappaleella $x = 3{,}5\,\text{cm}$
 **Kysytty:** voima $F$ newtoneina
-**Periaate:** Jousen venymä on suoraan verrannollinen voimaan (jousta ei venytetä liikaa), joten venymän ja voiman suhde pysyy samana. Siksi tunnetusta parista $(F_1, x_1)$ voi päätellä voiman toisella venymällä.
-**Kaava:** $\dfrac{F}{F_1} = \dfrac{x}{x_1}$, joten $F = \dfrac{F_1 x}{x_1}$
+**Periaate:** Jousen venymä on suoraan verrannollinen voimaan (jousta ei venytetä liikaa), joten pisteet ovat origon kautta kulkevalla suoralla ja suhde $x/F$ on sama kaikkialla. Tuntematonta voimaa ei tarvitse lukea pisteiden väliin silmällä: se lasketaan suhteesta.
+**Kuvaajan lukeminen:** Luetaan kaksi pistettä ruudukon risteyksistä: $(4\,\text{N};\ 2\,\text{cm})$ ja $(10\,\text{N};\ 5\,\text{cm})$. Molemmissa $x/F = 0{,}5\,\text{cm/N}$, joten pisteet ovat samalla origon kautta kulkevalla suoralla. Venymä $3{,}5\,\text{cm}$ on pisteiden $(6\,\text{N};\ 3\,\text{cm})$ ja $(8\,\text{N};\ 4\,\text{cm})$ välissä, joten voiman pitää olla $6\,\text{N}$ ja $8\,\text{N}$ välissä. Silmällä luettu vastaus $6{,}8$–$7{,}2\,\text{N}$ hyväksytään.
+**Kaava:** $\dfrac{x}{F} = \dfrac{x_1}{F_1}$, josta $F = \dfrac{F_1 x}{x_1}$
 **Muunnokset:** Muunnoksia ei tarvita: senttimetrit supistuvat suhteessa $\dfrac{x}{x_1}$ ja voima ratkeaa newtoneina.
-**Sijoitus:** $F = \dfrac{4{,}0\,\text{N} \cdot 6{,}0\,\text{cm}}{2{,}5\,\text{cm}} = 9{,}6\,\text{N}$
-**Vastaus:** $9{,}6\,\text{N}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Venymä on $\dfrac{6{,}0}{2{,}5} = 2{,}4$-kertainen, joten voimankin pitää olla $2{,}4 \cdot 4{,}0\,\text{N} = 9{,}6\,\text{N}$. Suuruusluokka on oikea: venymä on yli kaksinkertainen, joten voima on lähes $10\,\text{N}$ eli yli kaksinkertainen verrattuna $4{,}0\,\text{N}$:iin.
+**Sijoitus:** $F = \dfrac{4\,\text{N} \cdot 3{,}5\,\text{cm}}{2\,\text{cm}} = 7{,}0\,\text{N}$
+**Vastaus:** $F = 7{,}0\,\text{N}$, kaksi merkitsevää numeroa kuten venymässä $3{,}5\,\text{cm}$.
+**Järkevyys:** Venymä $3{,}5\,\text{cm}$ on $1{,}75$-kertainen pisteeseen $(4\,\text{N};\ 2\,\text{cm})$ verrattuna, ja $1{,}75 \cdot 4\,\text{N} = 7{,}0\,\text{N}$. Tulos on pisteiden $6\,\text{N}$ ja $8\,\text{N}$ välissä, kuten pitääkin.
 
 ## fy3-1-L1-05
 **Annettu:** $m = 2{,}5\,\text{kg}$, $g_\text{Jupiter} = 24{,}8\,\text{m/s}^2$

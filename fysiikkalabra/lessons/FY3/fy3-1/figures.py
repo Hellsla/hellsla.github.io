@@ -139,10 +139,25 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass}
+def spring_points():
+    """Calibration points of a spring for a task (scripts/figcat.py variant of `force-extension`): the student reads the
+    points off a grid and uses the proportionality; the description lists the points, not the ratio."""
+    f = Fig("fy31-spring-points", 330, "Kuvaaja mittakaavassa: erään jousen venymä x senttimetreinä voiman F funktiona. "
+            "Viisi mittauspistettä ilman piirrettyä suoraa: (2 N; 1 cm), (4 N; 2 cm), (6 N; 3 cm), (8 N; 4 cm) ja (10 N; 5 cm). "
+            "Ruudukon väli on 1 N ja 1 cm.")
+    ax = Axes(f, (92, 290), (500, 70), x=(0, 11), y=(0, 6), xticks=list(range(1, 11)), yticks=[1, 2, 3, 4, 5],
+              xlabel=r"F\ (\text{N})", ylabel=r"x\ (\text{cm})",
+              xfmt=lambda v: fi(v) if v % 2 == 0 else "", yfmt=lambda v: fi(v))
+    for F in [2, 4, 6, 8, 10]:
+        ax.point(F, F / 2, WATER)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass, "spring-points": spring_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "forcemeter": "safe: double weight, double extension, no values",
     "force-extension": "reveals: the points and x/F = 0,4 cm/N",
     "weight-mass": "reveals: the weights of 100 kg on Earth, Mars and the Moon",
+    "spring-points": "safe: five (F, x) calibration points of a spring without the line; the description lists the points",
 }

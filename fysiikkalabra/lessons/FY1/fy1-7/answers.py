@@ -14,8 +14,8 @@ a["fy1-7-L1-05"] = 36.8 / 0.0400                 # ice block: rho = 36,8 kg / 0,
 V_bar = 10.0 * 5.0 * 2.0                         # gold bar: V = 10,0 cm · 5,0 cm · 2,0 cm = 100 cm3 = 100e-6 m3
 a["fy1-7-L2-01"] = rho["kulta"] * V_bar * 1e-6   # m = 19 300 kg/m3 · 100e-6 m3 = 1,93 kg -> 1,9 kg
 a["fy1-7-L2-02"] = rho["etanoli"] * 2.5e-3       # 2,5 dm3 = 2,5e-3 m3: m = 790 · 2,5e-3 = 1,975 kg -> 2,0 kg
-dV = 54.2 - 50.0                                 # steel ball: displaced volume 4,2 ml = 4,2 cm3
-a["fy1-7-L2-03"] = 33.0e-3 / (dV * 1e-6)         # rho = 0,0330 kg / 4,2e-6 m3 = 7857 kg/m3 -> 7900 kg/m3 (two figures)
+dV = 54 - 46                                    # figure fy1-7/cylinders-read: levels 46 ml and 54 ml -> displaced volume 8 ml = 8 cm3
+a["fy1-7-L2-03"] = 57.0e-3 / (dV * 1e-6)         # rho = 0,0570 kg / 8e-6 m3 = 7125 kg/m3 -> 7100 kg/m3 (two figures)
 a["fy1-7-L2-04"] = (412 - 215) / 250 * 1000      # liquid: m = 412 g − 215 g = 197 g; rho = 197/250 g/cm3 = 0,788 g/cm3 = 788 kg/m3
 # Level 3: reasoning or an unfamiliar context
 a["fy1-7-L3-01"] = rho["kupari"] / rho["alumiini"]   # equal masses: V_Al / V_Cu = rho_Cu / rho_Al = 8960 / 2700 = 3,32

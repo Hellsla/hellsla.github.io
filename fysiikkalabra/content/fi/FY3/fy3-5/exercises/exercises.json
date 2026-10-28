@@ -45,10 +45,11 @@
     {
       "id": "fy3-5-L2-01",
       "level": 2,
-      "text": "Kompressorin mäntä liikkuu $0{,}20\\,\\text{m}$:n matkan sylinteriin ja puristaa ilmaa. Mäntä työntää ilmaa liikkeen suuntaisella keskimääräisellä 300 N:n voimalla. Ilman sisäenergia kasvaa puristuksessa $45\\,\\text{J}$. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Anna vastaus etumerkkeineen: negatiivinen $Q$ tarkoittaa, että lämpöä siirtyy ilmasta pois.",
+      "text": "Kompressorin mäntä puristaa sylinterissä olevaa ilmaa. Kuvaajassa on männän ilmaan kohdistama voima $F$ männän kulkeman matkan $s$ funktiona puristuksen aikana. Ilman sisäenergia kasvaa puristuksessa $45\\,\\text{J}$. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Lue tarvittavat arvot kuvaajasta ja anna vastaus etumerkkeineen: negatiivinen $Q$ tarkoittaa, että lämpöä siirtyy ilmasta pois.",
+      "figure": "fy3-5/piston-force",
       "answer": -15,
       "unit": "J",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy3-5-L2-02",

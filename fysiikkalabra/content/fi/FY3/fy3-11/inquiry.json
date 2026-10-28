@@ -409,10 +409,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämpöpumppu",
+      "prompt": "Lämpöpumppu käyttää sähköä $1{,}0\\,\\text{kWh}$ ja luovuttaa samalla taloon lämpöä $3{,}0\\,\\text{kWh}$. Mikä väite pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Pumppu luo ylimääräiset $2{,}0\\,\\text{kWh}$ energiaa, koska se on niin tehokas laite.",
+          "feedback": "Mikään laite ei luo energiaa tyhjästä: energia säilyy aina. Pumppu on tehokas siksi, että se siirtää lämpöä, eikä siksi, että se tuottaisi sitä. Ylimääräinen $2{,}0\\,\\text{kWh}$ on otettu ulkoilmasta."
+        },
+        {
+          "text": "Pumppu ottaa ulkoilmasta lämpöä $2{,}0\\,\\text{kWh}$, ja sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähköenergian summa.",
+          "correct": true,
+          "feedback": "Oikein. Energian säilymisen mukaan $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$, joten $Q_\\text{ulko} = 3{,}0\\,\\text{kWh} - 1{,}0\\,\\text{kWh} = 2{,}0\\,\\text{kWh}$. Pumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisälle, ja siihen tarvitaan sähköä. Lämpökerroin on $\\varepsilon = 3{,}0\\,\\text{kWh} / 1{,}0\\,\\text{kWh} = 3{,}0$."
+        },
+        {
+          "text": "Sähkö muuttuu lämmöksi pumpussa kolminkertaisella hyötysuhteella.",
+          "feedback": "Hyötysuhde ei voi olla yli $100\\,\\%$, koska sähköstä ei saa enempää energiaa kuin sitä tuli. Sähkövastus muuttaisi $1{,}0\\,\\text{kWh}$ sähköä täsmälleen $1{,}0\\,\\text{kWh}$ lämmöksi. Lämpöpumpun lämpökerroin $3{,}0$ on eri asia kuin hyötysuhde, koska suurin osa luovutetusta lämmöstä on siirretty ulkoa."
+        },
+        {
+          "text": "Ylimääräinen lämpö syntyy pumpun kitkasta ja muista häviöistä.",
+          "feedback": "Kitka ja häviöt muuttavat osan sähköstä lämmöksi, mutta se on osa sähköenergiaa $1{,}0\\,\\text{kWh}$, eikä se voi selittää kahta lisäkilowattituntia. Suurin osa luovutetusta lämmöstä on lämpöä, joka on siirretty ulkoilmasta."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaaja ja laskeminen",
+      "title": "3. Kuvaaja ja laskeminen",
       "prompt": "Kaasun $(V, p)$-kuvaaja on vaakasuora jana korkeudella $p = 150\\,\\text{kPa}$, ja se alkaa kohdasta $V = 2{,}0\\,\\text{l}$ ja päättyy kohtaan $V = 5{,}0\\,\\text{l}$. Kuinka suuren työn $W_\\text{k}$ kaasu tekee? Vastaa jouleina.",
       "answer": 450,
       "unit": "J",
@@ -438,7 +464,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Ystäväsi ehdottaa: ”Rakennetaan niin hyvä voimalaitos, ettei se tarvitse lauhdutinta lainkaan. Silloin kaikki polttoaineen energia muuttuu sähköksi.” Selitä, miksi tämä ei onnistu, ja kerro, miten lauhduttimen lämmön voi silti käyttää hyödyksi.",
       "criteria": [
         "Sanon, että lämpövoimakoneen on aina luovutettava osa lämmöstä kylmempään ympäristöön (toinen pääsääntö), joten $\\eta < 100\\,\\%$.",
@@ -452,7 +478,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

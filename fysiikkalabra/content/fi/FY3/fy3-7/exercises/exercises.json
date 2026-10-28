@@ -12,7 +12,7 @@
       "id": "fy3-7-L1-02",
       "level": 1,
       "text": "Mökillä keitetään perunoita ilman kantta. Keittämisen aikana kattilasta kiehuu pois 0,40 kg vettä. Kuinka suuri lämpömäärä kuluu tämän vesimäärän höyrystämiseen? Anna vastaus megajouleina.",
-      "answer": 0.90,
+      "answer": 0.9,
       "unit": "MJ",
       "tolerance": 0.02
     },
@@ -35,10 +35,11 @@
     {
       "id": "fy3-7-L1-05",
       "level": 1,
-      "text": "Pakastimesta otettua jääpalaa lämmitetään ja sen lämpenemiskäyrä piirretään: lämpötila siirretyn energian funktiona. Lämpötila nousee −18 °C:sta 0 °C:seen, kun energiaa on siirtynyt 19 kJ. Sen jälkeen käyrä on vaakasuora 0 °C:ssa, kunnes siirtynyt energia on 186 kJ, ja vasta sitten lämpötila alkaa taas nousta. Mitä vaakasuoralla osalla tapahtuu, ja kuinka suuri lämpömäärä siihen kuluu? Anna vastaus kilojouleina.",
-      "answer": 167,
-      "unit": "kJ",
-      "tolerance": 0.02
+      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaissulamislämpö. Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 333,
+      "unit": "kJ/kg",
+      "tolerance": 0.03
     }
   ],
   "level2": [

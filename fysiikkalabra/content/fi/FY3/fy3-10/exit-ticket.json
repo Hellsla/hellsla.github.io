@@ -6,9 +6,5 @@
   {
     "q": "Kahdessa samankokoisessa ilmapallossa on samassa paineessa ja lämpötilassa toisessa heliumia ja toisessa hiilidioksidia. Kummassa on enemmän kaasua ainemääränä mitattuna, ja kumpi pallo on raskaampi?",
     "a": "Ainemäärä on sama, koska $n = \\dfrac{pV}{RT}$ ei riipu kaasun laadusta. Hiilidioksidipallo on raskaampi, koska hiilidioksidin moolimassa $44\\,\\text{g/mol}$ on paljon suurempi kuin heliumin $4{,}0\\,\\text{g/mol}$."
-  },
-  {
-    "q": "Suljetun astian kaasun kelvinlämpötila kaksinkertaistetaan ja tilavuus pidetään samana. Mitä paineelle tapahtuu? Perustele tilanyhtälöllä.",
-    "a": "Paine kaksinkertaistuu: $p = \\dfrac{nRT}{V}$, ja $n$, $R$ ja $V$ pysyvät samoina, joten $p$ on verrannollinen $T$:hen."
   }
 ]

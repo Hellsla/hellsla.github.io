@@ -142,10 +142,32 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature}
+def earth_flows():
+    """Task figure (no lesson.md block): the radiation power per square metre at the top of the atmosphere, with the
+    thermal radiation to space left as a question mark. In 341 W/m², reflected 102 W/m² (balance: 239 W/m² out)."""
+    f = Fig("fy312-flows", 280, "Kaavakuva maapallon energiavirroista neliömetriä kohti ilmakehän ylärajalla. Auringosta tulee maapalloon "
+            "säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu. "
+            "Maapallo on energiatasapainossa, joten sen lämpötila pysyy vakiona.", width=640)
+    f.circle(56, 140, 26, "#ffe8cc", HEAT, 2.5)
+    f.tex(56, 190, r"\text{Aurinko}", "middle")
+    f.circle(300, 140, 62, COLD_LIGHT, INK, 3)
+    f.tex(300, 140, r"\text{maapallo}", "middle")
+    f.block_arrow(98, 140, 232, 140, HEAT, 14, 34, 26)
+    f.tex(165, 104, r"341\,\text{W/m}^2", "middle")
+    f.block_arrow(350, 90, 438, 36, HEAT_LIGHT, 12, 30, 22)
+    f.tex(448, 30, r"102\,\text{W/m}^2", "start")
+    f.tex(448, 64, r"\text{heijastuu}", "start")
+    f.block_arrow(366, 176, 452, 214, HOT, 14, 34, 26)
+    f.tex(462, 190, r"?\,\text{W/m}^2", "start")
+    f.tex(462, 224, r"\text{lämpösäteily}", "start")
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature, "earth-flows": earth_flows}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "heat-transfer": "reveals: which mechanism is which",
     "energy-balance": "safe: the Earth's energy flows, no values",
     "wall-temperature": "reveals: the temperature drop is mostly in the insulation",
+    "earth-flows": "safe: incoming 341 and reflected 102 W/m2 as labels; the outgoing thermal radiation is a question mark",
 }

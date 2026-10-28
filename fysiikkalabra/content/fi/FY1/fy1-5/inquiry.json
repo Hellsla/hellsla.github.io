@@ -342,10 +342,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kuvaajan tulkinta",
+      "prompt": "Kappaleen $(t, s)$-kuvaaja on vaakasuora suora kohdassa $s = 4\\,\\text{m}$. Mitä kappale tekee?",
+      "choices": [
+        {
+          "text": "Kappale liikkuu tasaisella nopeudella $4\\,\\text{m/s}$.",
+          "feedback": "Tämä houkuttelee, koska vaakasuora suora $(t, v)$-kuvaajassa tarkoittaa tasaista nopeutta. Tässä pystyakselilla on kuitenkin paikka $s$, ei nopeus. Nopeus on $(t, s)$-kuvaajan kulmakerroin, ja vaakasuoran suoran kulmakerroin on nolla."
+        },
+        {
+          "text": "Kappale on paikallaan kohdassa $s = 4\\,\\text{m}$.",
+          "feedback": "Oikein. Paikka ei muutu ajan kuluessa, joten $\\Delta s = 0$ ja nopeus $v = \\Delta s : \\Delta t = 0$. Vaakasuoran suoran kulmakerroin on nolla.",
+          "correct": true
+        },
+        {
+          "text": "Kappale liikkuu tasaisesti, koska kuvaaja on suora.",
+          "feedback": "Tasaisen liikkeen $(t, s)$-kuvaaja on suora, mutta suoruus ei yksin kerro, liikkuuko kappale. Nopeus on suoran kulmakerroin $\\Delta s : \\Delta t$, ja vaakasuorassa suorassa $\\Delta s = 0$, joten nopeus on nolla."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaajan lukeminen",
+      "title": "3. Kuvaajan lukeminen",
       "prompt": "Tasaista liikettä esittävän $(t, s)$-kuvaajan suora kulkee pisteiden $(1{,}0\\,\\text{s};\\ 7{,}0\\,\\text{m})$ ja $(5{,}0\\,\\text{s};\\ 19\\,\\text{m})$ kautta. Mikä on liikkeen alkupaikka $s_0$? Vastaa metreinä.",
       "answer": 4.0,
       "unit": "m",
@@ -371,7 +393,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja arvioi mallia",
+      "title": "4. Selitä ja arvioi mallia",
       "prompt": "Selitä, miksi Voyager 2 -luotaimen etäisyys Auringosta voidaan laskea lineaarisella mallilla, ja miksi laskettu arvo on mallin arvo eikä mittaus.",
       "criteria": [
         "Kirjoitin yhtälön $s = s_0 + vt$ ja nimesin sen suureet.",

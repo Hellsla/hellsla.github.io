@@ -408,10 +408,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kelvinlämpötila",
+      "prompt": "Suljetun pullon ilma lämpenee $7\\,{}^\\circ\\text{C}$:sta $35\\,{}^\\circ\\text{C}$:seen. Pullon tilavuus ei muutu. Mitä paineelle tapahtuu?",
+      "choices": [
+        {
+          "text": "Paine kasvaa viisinkertaiseksi, koska lämpötila kasvaa viisinkertaiseksi.",
+          "feedback": "Luku $35$ on viisi kertaa luku $7$, mutta paine on verrannollinen kelvinlämpötilaan, ei celsiusasteisiin. Celsiusasteikon nollakohta ei ole lämpötilan nollakohta, joten celsiusarvojen suhteella ei voi laskea. Kelvineinä lämpötila muuttuu arvosta $280{,}15\\,\\text{K}$ arvoon $308{,}15\\,\\text{K}$, joten paine kasvaa noin $10\\,\\%$."
+        },
+        {
+          "text": "Paine kasvaa noin $10\\,\\%$, koska kelvinlämpötila kasvaa arvosta $280\\,\\text{K}$ arvoon $308\\,\\text{K}$.",
+          "correct": true,
+          "feedback": "Oikein. Kun tilavuus ja kaasun määrä pysyvät samoina, paine on verrannollinen kelvinlämpötilaan: $p_2/p_1 = T_2/T_1 = 308{,}15\\,\\text{K} / 280{,}15\\,\\text{K} \\approx 1{,}10$. Suhde lasketaan kelvineinä, koska vasta kelvinasteikon nollakohdassa hiukkasten liike loppuu."
+        },
+        {
+          "text": "Paine kasvaa $28\\,\\%$, koska lämpötila nousee $28$ astetta.",
+          "feedback": "Lämpötilan nousu asteina ei ole prosentti. Paineen suhteellinen muutos on lämpötilanousu jaettuna alkulämpötilalla kelvineinä: $28\\,\\text{K} / 280{,}15\\,\\text{K} \\approx 0{,}10$ eli noin $10\\,\\%$."
+        },
+        {
+          "text": "Paine ei muutu, koska pullon tilavuus ei muutu.",
+          "feedback": "Tilavuus ei muutu, mutta paine riippuu lämpötilasta. Lämpimässä ilmassa hiukkaset liikkuvat nopeammin ja osuvat pullon seinämiin useammin ja kovempaa, joten paine kasvaa noin $10\\,\\%$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Kuvaaja ja laskeminen",
+      "title": "3. Kuvaaja ja laskeminen",
       "prompt": "Ruiskun ilman mittauksista piirretty $(1/V, p)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on 3,6 kPa·l. Mikä on ilman paine, kun sen tilavuus on 30,0 ml? Lämpötila pysyy samana. Vastaa kilopascaleina.",
       "answer": 120,
       "unit": "kPa",
@@ -437,7 +463,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä koe",
+      "title": "4. Selitä koe",
       "prompt": "Boylen lakia todennetaan ruiskulla ja painemittarilla. Selitä, miksi mäntää liikutetaan hitaasti ja miksi tulokset piirretään $(1/V, p)$-koordinaatistoon eikä pelkästään $(V, p)$-koordinaatistoon.",
       "criteria": [
         "Sanon, että Boylen laki koskee isotermistä tilanmuutosta, ja nopea puristus lämmittää ilmaa, jolloin paine on liian suuri.",
@@ -451,7 +477,7 @@
       "id": "loppukysymykset",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

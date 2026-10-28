@@ -29,14 +29,15 @@
 **Järkevyys:** Paneeliin osuu säteilyä $20{,}0\,\text{kW}$, josta noin viidennes ($0{,}210 \approx 0{,}2$) on $\approx 4\,\text{kW}$. Loput $20{,}0\,\text{kW} - 4{,}20\,\text{kW} = 15{,}8\,\text{kW}$ lämmittää paneelia tai heijastuu pois. Pientalon katolla $4\,\text{kW}$ on tavallinen huipputeho kirkkaalla säällä.
 
 ## fy3-15-L1-04
-**Annettu:** polttoaineteho $P_0 = 800\,\text{MW}$ ja sähköteho $P_\text{s} = 320\,\text{MW}$
-**Kysytty:** voimalaitoksesta ympäristöön lämpönä siirtyvä teho $P_\text{h}$ megawatteina
-**Periaate:** Energia säilyy, ja laitos toimii tasaisesti, joten sisään tuleva teho on yhtä suuri kuin ulos lähtevä. Ulos lähtee vain sähköä ja lämpöä, joten polttoainetehosta se osa, joka ei muutu sähköksi, siirtyy lämpönä ympäristöön.
-**Kaava:** $P_0 = P_\text{s} + P_\text{h}$, joten $P_\text{h} = P_0 - P_\text{s}$
-**Muunnokset:** Kummatkin tehot ovat jo megawatteina, joten muunnoksia ei tarvita.
-**Sijoitus:** $P_\text{h} = 800\,\text{MW} - 320\,\text{MW} = 480\,\text{MW}$
-**Vastaus:** $480\,\text{MW}$, kolme merkitsevää numeroa, koska molemmat tehot, $800\,\text{MW}$ ja $320\,\text{MW}$, on annettu megawatin tarkkuudella ja erotus säilyttää saman tarkkuuden.
-**Järkevyys:** Hyötysuhde on $\dfrac{320\,\text{MW}}{800\,\text{MW}} = 0{,}40$, mikä on lauhdevoimalaitokselle tavallista. Tase täsmää: $320\,\text{MW} + 480\,\text{MW} = 800\,\text{MW}$. Sähköksi muuttuvan $40\,\%$:n lisäksi loput $60\,\%$ siirtyy lämpönä ympäristöön, suurin osa lauhduttimen kautta mereen.
+**Annettu:** kuvan pylväistä luettuna $P_0 = 400\,\text{MW}$, $P_1 = 350\,\text{MW}$, $P_2 = 150\,\text{MW}$ ja $P_3 = 140\,\text{MW}$
+**Kysytty:** vaihe, jossa teho pienenee eniten, ja siinä ympäristöön lämpönä siirtyvä teho
+**Periaate:** Voimalaitos toimii tasaisesti ja energia säilyy, joten kun teho pienenee vaiheessa, ero siirtyy lämpönä ympäristöön. Vaiheessa ulos tuleva teho on pienempi kuin sisään tuleva, ja ero on siinä syntyvä hukkalämpö.
+**Kuvaajan lukeminen:** Pylväiden päät ovat ruudukon viivoilla, ja ne kertovat tehot $400$, $350$, $150$ ja $140\,\text{MW}$. Tehon pieneneminen vaiheittain on $P_0 - P_1 = 50\,\text{MW}$ kattilassa, $P_1 - P_2 = 200\,\text{MW}$ höyrykierrossa ja $P_2 - P_3 = 10\,\text{MW}$ generaattorissa ja muuntajassa. Suurin pudotus on pylväiden $P_1$ ja $P_2$ välissä eli höyrykierrossa.
+**Kaava:** $P_\text{h} = P_\text{sisään} - P_\text{ulos}$, tässä $P_\text{h} = P_1 - P_2$
+**Muunnokset:** Ei tarvita: kaikki tehot ovat megawatteina.
+**Sijoitus:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
+**Vastaus:** Eniten teho pienenee höyrykierrossa, jossa lämpönä ympäristöön siirtyy $200\,\text{MW}$. Arvot luetaan ruudukon viivoilta täysinä megawatteina, joten tulos on kolmen numeron tarkkuudella $200\,\text{MW}$.
+**Järkevyys:** Vaiheiden häviöt ovat yhteensä $50 + 200 + 10 = 260\,\text{MW} = P_0 - P_3 = 400\,\text{MW} - 140\,\text{MW}$, joten tase täsmää. Höyrykierron hyötysuhde on $150 / 350 \approx 0{,}43$, joka sopii höyrykierrolle, ja sen häviö on yli $75\,\%$ koko laitoksen hukkalämmöstä.
 
 ## fy3-15-L1-05
 **Annettu:** polttoaineteho $P_0 = 250\,\text{MW}$, sähköteho $P_\text{s} = 75{,}0\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 150\,\text{MW}$

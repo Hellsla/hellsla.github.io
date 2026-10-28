@@ -49,14 +49,15 @@
 **Järkevyys:** Laajenemistyö vie enemmän energiaa kuin lämpö tuo ($85\,\text{J} > 15\,\text{J}$), joten sisäenergian on pienennyttävä ja ilman jäähdyttävä. Siksi venttiili tuntuu kylmältä, kun ilmaa päästetään ulos.
 
 ## fy3-5-L2-01
-**Annettu:** systeemi on ilma; $F = 300\,\text{N}$ (mäntä työntää ilmaa liikkeen suuntaisella voimalla), $s = 0{,}20\,\text{m}$, $\Delta U = +45\,\text{J}$
+**Annettu:** systeemi on ilma; männän voima ilmaan on kuvaajassa matkan funktiona, $\Delta U = +45\,\text{J}$
 **Kysytty:** ilmaan siirtyvä lämpömäärä $Q$ etumerkkeineen
-**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Työ voidaan laskea, koska voima ja siirtymä ovat samansuuntaiset ja keskimääräinen voima on annettu: $W = Fs$. Mäntä on ympäristöä, joka tekee työtä ilmaan, joten $W$ on positiivinen. Lämpö saadaan sisäenergian muutoksen ja työn erotuksena.
-**Kaava:** $W = Fs$ ja $\Delta U = Q + W$, joten $Q = \Delta U - W = \Delta U - Fs$
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Voima muuttuu matkalla, joten työtä ei lasketa tulona $Fs$ vaan $(s,F)$-kuvaajan ja vaaka-akselin väliin jäävänä pinta-alana. Mäntä on ympäristöä, joka tekee työtä ilmaan, joten $W$ on positiivinen. Lämpö saadaan sisäenergian muutoksen ja työn erotuksena.
+**Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{m};\ 200\,\text{N})$ ja päättyy risteykseen $(0{,}20\,\text{m};\ 400\,\text{N})$. Pinta-ala on puolisuunnikas, jonka yhdensuuntaiset sivut ovat $F_1 = 200\,\text{N}$ ja $F_2 = 400\,\text{N}$ ja korkeus $s = 0{,}20\,\text{m}$.
+**Kaava:** $W = \dfrac{F_1 + F_2}{2}\, s$ ja $\Delta U = Q + W$, joten $Q = \Delta U - W$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
-**Sijoitus:** $Q = 45\,\text{J} - 300\,\text{N} \cdot 0{,}20\,\text{m} = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
-**Vastaus:** $-15\,\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}20\,\text{m}$ ja $45\,\text{J}$.
-**Järkevyys:** Työ toi ilmaan $60\,\text{J}$, mutta sisäenergia kasvoi vain $45\,\text{J}$, joten $15\,\text{J}$:n on täytynyt lähteä lämpönä pois ja $Q$ on negatiivinen. Tulos sopii siihen, että puristettu ilma on lämmintä ja luovuttaa lämpöä sylinterin seiniin. Tase: $-15\,\text{J} + 60\,\text{J} = 45\,\text{J}$.
+**Sijoitus:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0{,}20\,\text{m} = 300\,\text{N} \cdot 0{,}20\,\text{m} = 60\,\text{J}$, joten $Q = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
+**Vastaus:** $-15\,\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}20\,\text{m}$ ja $45\,\text{J}$. Kuvaajan arvot luetaan tarkasti ruudukosta, joten hyväksytään $-14{,}5\ldots-15{,}5\,\text{J}$.
+**Järkevyys:** Työ toi ilmaan 60 J, mutta sisäenergia kasvoi vain 45 J, joten 15 J:n on täytynyt lähteä lämpönä pois ja $Q$ on negatiivinen. Tulos sopii siihen, että puristettu ilma on lämmintä ja luovuttaa lämpöä sylinterin seiniin. Tase: $-15\,\text{J} + 60\,\text{J} = 45\,\text{J}$.
 
 ## fy3-5-L2-02
 **Annettu:** systeemi on vesi; vastuksen teho $P = 2{,}0\,\text{kW}$, aika $t = 90\,\text{s}$, kuoren läpi ympäristöön siirtyvä lämpö $20\,\text{kJ}$; työtä ei tehdä, joten $W = 0$

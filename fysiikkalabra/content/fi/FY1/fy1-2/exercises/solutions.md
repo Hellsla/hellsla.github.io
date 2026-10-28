@@ -29,14 +29,15 @@
 **Järkevyys:** Pyöristetyillä luvuilla $2\,\text{m}\cdot 1\,\text{m} = 2\,\text{m}^2$, ja tulos 1,7 on hieman pienempi, koska kumpikin sivu pyöristettiin ylöspäin. Neliömetri on pinta-alan yksikkö, kuten pitää.
 
 ## fy1-2-L1-04
-**Annettu:** nopeus $v = 15{,}341\,\text{km/s}$
-**Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
-**Periaate:** Nopeuden yksikkö $\text{km/s}$ on pituusyksikkö jaettuna aikayksiköllä; vain pituusyksikkö muuttuu, sekunti pysyy. Etuliite kilo on $10^{3}$, joten $1\,\text{km} = 1000\,\text{m}$.
-**Kaava:** $1\,\text{km} = 1000\,\text{m}$, joten $1\,\dfrac{\text{km}}{\text{s}} = 1000\,\dfrac{\text{m}}{\text{s}}$
-**Muunnokset:** Kilometrin paikalle kirjoitetaan $1000\,\text{m}$; sekunti pysyy.
-**Sijoitus:** $v = 15{,}341\,\dfrac{\text{km}}{\text{s}} = 15{,}341\cdot\dfrac{1000\,\text{m}}{\text{s}} = 15\,341\,\dfrac{\text{m}}{\text{s}}$
-**Vastaus:** $15\,341\,\text{m/s}$, viisi merkitsevää numeroa kuten lähtöarvossa $15{,}341\,\text{km/s}$.
-**Järkevyys:** Metri on pienempi yksikkö kuin kilometri, joten lukuarvon on kasvettava tuhatkertaiseksi. Noin 15 km/s on yli 40-kertainen äänen nopeuteen 340 m/s verrattuna, mikä sopii avaruusluotaimelle.
+**Annettu:** kuva, jossa alumiinitanko on viivaimen vieressä ja tangon päät ovat viivaimen asteikon kohdalla
+**Kysytty:** tangon pituus $l$ millimetreinä
+**Periaate:** Tanko ei ala viivaimen nollakohdasta, joten pituus ei ole oikean pään lukema vaan päiden lukemien erotus. Suure ei muutu, kun yksikkö vaihdetaan, joten senttimetrin paikalle kirjoitetaan sen arvo millimetreinä.
+**Kuvaajan lukeminen:** Vasen pää on kohdassa $x_1 = 2{,}0\,\text{cm}$ (kaksi pitkää viivaa nollasta). Oikea pää on kohdassa $x_2 = 13{,}6\,\text{cm}$ (kolmetoista pitkää viivaa ja kuusi millimetriviivaa sen jälkeen). Lukema on tarkka millimetrin viivoista.
+**Kaava:** $l = x_2 - x_1$
+**Muunnokset:** Yksi senttimetri on kymmenen millimetriä, joten senttimetrin paikalle kirjoitetaan $10\,\text{mm}$.
+**Sijoitus:** $l = 13{,}6\,\text{cm} - 2{,}0\,\text{cm} = 11{,}6\,\text{cm} = 11{,}6\cdot10\,\text{mm} = 116\,\text{mm}$
+**Vastaus:** $116\,\text{mm}$, kolme merkitsevää numeroa kuten lukemat, jotka on luettu millimetrin tarkkuudella.
+**Järkevyys:** Millimetri on pienempi yksikkö kuin senttimetri, joten lukuarvon on kasvettava kymmenkertaiseksi: 11,6:sta 116:een. Tanko on noin kymmenen senttimetriä pitkä, kuten kuvasta näkee.
 
 ## fy1-2-L1-05
 **Annettu:** Kuun halkaisija $D_\text{Kuu} = 3474\,\text{km}$ vastaa yhtä kuvapistettä; Auringon halkaisija $D_\text{Aurinko} = 1{,}392\cdot10^{6}\,\text{km}$
